@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio 中的数据科学和分析应用程序工作负载 | Microsoft Docs"
 ms.custom: 
-ms.date: 9/5/2017
+ms.date: 09/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -10,16 +10,15 @@ ms.technology:
 - devlang-fsharp
 ms.tgt_pltfrm: 
 ms.topic: landing-page
-ms.assetid: 018069f3-6d1a-4143-a851-d86d2ff5fbfc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 976bd73c7740e474e4fa7ea3e4cf89f880c7900c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5e7738d03fa0c9b8b460fe1b2fb4bc17076fa3b5
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>数据科学和分析应用程序工作负载
 
@@ -42,17 +41,16 @@ R 和 Python 是用于数据科学的两大脚本语言。 这两种语言易于
 
 - F# 语言支持
 - Python：
-    - Python 语言支持
-    - Python Web 支持
-    - [Anaconda3 64 位](https://www.continuum.io)（Python 分发版本，包含大量数据科学库和一个 Python 解释器）
-    - Cookiecutter 模板支持
+  - Python 语言支持
+  - Python Web 支持
+  - [Anaconda3 64 位](https://www.continuum.io)（Python 分发版本，包含大量数据科学库和一个 Python 解释器）
+  - Cookiecutter 模板支持
 - R:
-    - R 语言支持    
-    - [Microsoft R Client](https://msdn.microsoft.com/microsoft-r/r-client-get-started)（完全兼容、受社区支持且包含多个 ScaleR 库的 Microsoft R 解释器，可加快单个节点或群集上的计算。 也可使用来自 [CRAN](https://cran.r-project.org/) 的任何 R。）
-    - R 开发工具运行时支持
+  - R 语言支持
+  - [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)（完全兼容、受社区支持且包含多个 ScaleR 库的 Microsoft R 解释器，可加快单个节点或群集上的计算。 也可使用来自 [CRAN](https://cran.r-project.org/) 的任何 R。）
+  - R 开发工具运行时支持
 
-> [!Note]
-> 尽管其他许多工作负载附带 F#，Python 也有属于自己的工作负载，但数据科学和分析应用程序仍然是目前唯一一个包含 R 的 工作负载。这三个 R 组件独立于该工作负载，也可在安装程序的“单个组件”选项卡中进行选择。 选择选项“开发活动”>“R 语言支持”、“开发活动”>“Microsoft R Client”以及“编译器、生成工具和运行时”>“对 R 开发工具的运行时支持”。
+尽管其他许多工作负载附带 F#，Python 也有属于自己的工作负载，但数据科学和分析应用程序仍然是目前唯一一个包含 R 的 工作负载。这三个 R 组件独立于该工作负载，也可在安装程序的“单个组件”选项卡中进行选择。 选择选项“开发活动”>“R 语言支持”、“开发活动”>“Microsoft R Client”以及“编译器、生成工具和运行时”>“对 R 开发工具的运行时支持”。
 
 ## <a name="sql-server-integration"></a>SQL Server 集成
 
@@ -73,7 +71,6 @@ SQL Server 支持使用 R 和 Python 直接在 SQL Server 内执行高级分析�
 若要充分利用 SQL Server 集成，还应安装具有“SQL Server Data Tools”选项的**数据存储和处理**工作负载。 此选项支持 SQL IntelliSense、语法突出显示和部署。
 
 ![数据存储和处理工作负载](media/data-storage-workload.png) &nbsp;&nbsp; &nbsp;&nbsp; ![数据存储和处理工作负载选项](media/data-storage-workload-options.png)
-
 
 更多相关信息：
 
