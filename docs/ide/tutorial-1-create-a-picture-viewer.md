@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 3ebe300aa4e2a7314b55f8418bcfa0ad9fafdc59
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 73c9289d95c7df352819546eab6d95084576215c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教程 1：创建图片查看器
 在本教程中，您将生成一个从文件加载图片并将其显示在窗口中的程序。 您将学习如何拖动控件（如窗体上的按钮和图片框）、设置控件属性，以及如何使用容器来平滑地调整窗体的大小。 您还将开始编写代码。 您将学习如何：  
@@ -53,19 +37,19 @@ ms.lasthandoff: 05/24/2017
   
  当您完成时，程序将类似下图所示。  
   
- ![本教程中创建的图片](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
+ ![在本教程中创建的图片](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 你在本教程中创建的图片  
   
  若要下载完整的示例版本，请参阅 [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)（图片查看器教程的完整示例）。  
   
- ![视频链接](~/data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请参阅[如何在 Visual Basic 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205207) 或[如何在 C# 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205198)。  
+ ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请参阅[如何在 Visual Basic 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205207) 或[如何在 C# 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205198)。  
   
 > [!NOTE]
 >  这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。 本教程中同时涉及 Visual C# 和 Visual Basic，因此请关注特定于您所用编程语言的信息。  
 >   
->  若要查看适用于 Visual Basic 的代码，请在代码块顶部选择“VB”选项卡；若要查看适用于 Visual C# 的代码，请选择“C#”选项卡。 如果有兴趣了解 Visual C++，请参阅[入门](../ide/getting-started-with-cpp-in-visual-studio.md)和 [C++ 语言教程](http://www.cplusplus.com/doc/tutorial/)。  
+>  若要查看适用于 Visual Basic 的代码，请在代码块顶部选择“VB”选项卡；若要查看适用于 Visual C# 的代码，请选择“C#”选项卡。如果有兴趣了解 Visual C++，请参阅[入门](../ide/getting-started-with-cpp-in-visual-studio.md)和 [C++ 语言教程](http://www.cplusplus.com/doc/tutorial/)。  
 >   
->  如果有兴趣了解如何为 Windows 应用商店编写 Visual C# 或 Visual Basic 应用，请参阅[使用 C# 或 Visual Basic 创建你的第一个 Windows 应用商店应用](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx)。 有关针对 Windows 应用商店创建 JavaScript 应用的信息，请参阅[使用 JavaScript 创建你的第一个 Windows 应用商店应用](http://msdn.microsoft.com/library/windows/apps/br211385.aspx)。  
+>  如果有兴趣了解如何编写 Visual C# 或 Visual Basic UWP 应用，请参阅[构建 UWP 应用](https://developer.microsoft.com/windows/apps)。
   
 ## <a name="related-topics"></a>相关主题  
   

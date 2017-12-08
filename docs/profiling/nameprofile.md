@@ -1,103 +1,104 @@
 ---
-title: "NameProfile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "NameProfile"
-  - "NameProfileA"
+title: NameProfile | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- NameProfile
+- NameProfileA
 ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 474ba0510194590a199c9a418eef2a46888342f8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# NameProfile
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="nameprofile"></a>NameProfile
 `NameProfile` 函数会将字符串分配给指定的进程或线程。  
   
- NameProfile API 仅用于检测分析。  NameProfile API 不用于取样分析。  
+ NameProfile API 仅可用于检测分析。 NameProfile API 不支持用于采样分析。  
   
-## 语法  
+## <a name="syntax"></a>语法  
   
 ```  
 PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(  
-                                   LPCTSTR pszName,   
-                                   PROFILE_CONTROL_LEVEL Level,  
-                                   unsigned int dwId);  
+                                   LPCTSTR pszName,   
+                                   PROFILE_CONTROL_LEVEL Level,  
+                                   unsigned int dwId);  
 ```  
   
-#### 参数  
+#### <a name="parameters"></a>参数  
  `pszName`  
   
- 分析元素的名称。  名称无效（导致 NameProfileA 返回 NAME\_ERROR\_INVALID\_NAME）的原因：  
+ 分析元素的名称。 以下情况下，名称无效（导致 NameProfileA 返回 NAME_ERROR_INVALID_NAME）：  
   
--   传入 NameProfileA 的指针是一个 NULL 值  
+-   传递到 NameProfileA 的指针为 NULL 值  
   
 -   pszName 的字符串数据以数字开头  
   
 -   pszName 的字符串数据包含空格  
   
--   pszName 的字符串数据包含以下任意字符: ,;.\`~\!@\#$%^&\*\(\)\=\[\]{}&#124;\\?\/\<\>  
+-   pszName 的字符串数据包含以下任意字符：,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
   
  `Level`  
   
- 指示性能数据集合可应用到的分析级别。  下面的 **PROFILE\_CONTROL\_LEVEL** 值可用于指示性能数据集合可应用到的三个级别之一：  
+ 指示性能数据集合可应用到的分析级别。 以下 PROFILE_CONTROL_LEVEL 值可用于指示性能数据集合可应用到的三个级别之一：  
   
-|Enumerator|说明|  
-|----------------|--------|  
-|PROFILE\_GLOBALLEVEL|全局级别设置影响分析运行中的所有进程和线程。|  
-|PROFILE\_PROCESSLEVEL|进程级别设置影响指定进程包含的所有线程。|  
-|PROFILE\_THREADLEVEL|线程分析级别设置影响指定的线程。|  
+|枚举器|描述|  
+|----------------|-----------------|  
+|PROFILE_GLOBALLEVEL|全局级别设置影响分析运行中的所有进程和线程。|  
+|PROFILE_PROCESSLEVEL|进程级别设置影响指定进程包含的所有线程。|  
+|PROFILE_THREADLEVEL|线程分析级别设置影响指定的线程。|  
   
  `dwId`  
   
- 分析级别标识符。  使用系统生成的进程或线程标识符。  
+ 分析级别标识符。 使用由系统生成的进程或线程标识符。  
   
-## 属性值\/返回值  
- 该函数使用 **PROFILE\_COMMAND\_STATUS** 枚举指示成功或失败。  返回值可以是下列值之一：  
+## <a name="property-valuereturn-value"></a>属性值/返回值  
+ 函数通过使用 **PROFILE_COMMAND_STATUS** 枚举来指示成功或失败。 返回值可以是下列值之一：  
   
-|Enumerator|说明|  
-|----------------|--------|  
-|NAME\_ERROR\_ID\_NOEXIST|指定的分析元素不存在。|  
-|NAME\_ERROR\_INVALID\_NAME|名称无效。|  
-|NAME\_ERROR\_LEVEL\_NOEXIST|指定的分析级别不存在。|  
-|NAME\_ERROR\_NO\_SUPPORT|不支持指定的操作。|  
-|NAME\_ERROR\_OUTOFMEMORY|内存不可用于记录事件。|  
-|NAME\_ERROR\_REDEFINITION|已经为分析元素分配了名称。  此函数中的名称被忽略。|  
-|NAME\_ERROR\_TEXTTRUNCATED|包括 null 字符在内的名称文本超过 32 个字符，所以被截断。|  
-|NAME\_OK|名称已成功注册。|  
+|枚举器|描述|  
+|----------------|-----------------|  
+|NAME_ERROR_ID_NOEXIST|指定的分析元素不存在。|  
+|NAME_ERROR_INVALID_NAME|名称无效。|  
+|NAME_ERROR_LEVEL_NOEXIST|指定的配置文件级别不存在。|  
+|NAME_ERROR_NO_SUPPORT|不支持指定的操作。|  
+|NAME_ERROR_OUTOFMEMORY|内存不可用来记录事件。|  
+|NAME_ERROR_REDEFINITION|名称已分配给配置文件元素。 忽略此函数中的名称。|  
+|NAME_ERROR_TEXTTRUNCATED|名称文本超过 32 个字符（包括空字符），因此已截断。|  
+|NAME_OK|成功注册了名称。|  
   
-## 备注  
- 只能为每个进程或线程分配一个名称。  命名分析元素后，会忽略对该元素的 NameProfile 的后续调用。  
+## <a name="remarks"></a>备注  
+ 只有一个名称可以分配给每个进程或线程。 命名分析元素后，忽略对该元素的 NameProfile 的后续调用。  
   
- 如果为不同线程或进程指定了相同名称，则报告中将包含来自该级别中所有具有该名称的元素的数据。  
+ 如果为不同的线程或进程提供了相同的名称，则报表会包含该级别下具有该名称的所有元素的数据。  
   
- 如果指定当前进程或线程以外的进程或线程，则必须确保在命名之前该进程或线程已初始化并已开始运行。  否则，NameProfile 方法会失败。  
+ 如果指定当前进程或线程以外的进程或线程，则必须先确保它已初始化并开始运行，然后才能对其命名。 否则，NameProfile 方法会失败。  
   
 > [!IMPORTANT]
->  CreateProcess\(\) 和 CreateThread\(\) API 函数可在初始化其创建的线程或进程之前返回。  
+>  CreateProcess() 和 CreateThread() API 函数可以在初始化线程或进程前返回。  
   
-## .NET Framework 等效项  
+## <a name="net-framework-equivalent"></a>.NET Framework 等效项  
  Microsoft.VisualStudio.Profiler.dll  
   
-## 函数信息  
+## <a name="function-information"></a>函数信息  
   
 |||  
 |-|-|  
-|**Header**|包含 VSPerf.h|  
-|**库**|使用 VSPerf.lib|  
-|**Unicode**|作为 `NameProfileW` \(Unicode\) 和 `NameProfileA` \(ANSI\) 实现。|  
+|**Header**|包括 VSPerf.h|  
+|**Library**|使用 VSPerf.lib|  
+|**Unicode**|作为 `NameProfileW` (Unicode) 和 `NameProfileA` (ANSI) 实现。|  
   
-## 示例  
- 下面的代码演示 NameProfile 函数调用。  该示例使用 Win32 字符串宏和 ANSI 编译器设置，确定代码是否调用启用了 ANSI 的函数。  
+## <a name="example"></a>示例  
+ 下面的代码阐释了 NameProfile 函数调用。 该示例假设使用 Win32 字符串宏和 ANSI 编译器设置，确定代码是否调用启用了 ANSI 的函数。  
   
 ```  
 void ExerciseNameProfile()  
@@ -134,5 +135,5 @@ void ExerciseNameProfile()
 }  
 ```  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 探查器 API 参考（本机）](../profiling/visual-studio-profiler-api-reference-native.md)

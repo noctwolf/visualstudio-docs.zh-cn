@@ -1,27 +1,24 @@
 ---
 title: "针对 Visual Studio 的 R 工具中的工作区 | Microsoft Docs"
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d610279c-d6c3-4084-939a-bf042f64d4dd
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 559f5832be6d4fa87be39941401f2222e075b7a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 4764fb9fc6b0cd2e6160540fdec3f33370d81128
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>控制 R 代码在工作区中的运行位置
 
 在针对 Visual Studio 的 R 工具 (RTVS) 中的工作区可以配置 R 会话运行的位置，既可以在本地计算机运行，也可以在远程计算机运。 其目的是让你在工作时获得不相上下的用户体验，同时能够利用潜在的、更强大的基于云的计算机。
@@ -37,6 +34,7 @@ ms.lasthandoff: 07/12/2017
 - [保存和重置工作区](#saving-and-resetting-a-workspace)
 - [本地工作区](#local-workspaces)
 - [远程工作区](#remote-workspaces)
+- [远程工作区登录](#remote-workspace-logon)
 - [在工作区间进行切换](#switching-between-workspaces)
 - [本地和远程计算机上的目录](#directories-on-local-and-remote-computers)
 - [将项目文件复制到远程工作区](#copying-project-files-to-remote-workspaces)
@@ -75,6 +73,17 @@ Visual Studio 不会自动检测远程工作区，因此必须使用“工作区
 > [!Note]
 > 远程工作区在预览中有效。 我们正在努力解决文件同步问题，希望在未来版本中实现优化，欢迎提供想法和反馈。
 
+## <a name="remote-workspace-logon"></a>远程工作区登录
+
+必须使用用户名和密码才能登录到远程工作区。
+
+### <a name="logon-to-windows-workspace"></a>登录到 Windows 工作区
+
+如果远程计算机设置为使用域帐户，则可以使用域登录名访问远程工作区。 如果不是，则必须使用远程计算机上的计算机帐户以 `machine-name\username` 格式登录。
+
+### <a name="logon-to-linux-workspace"></a>登录到 Linux 工作区
+
+若要登录到 Linux 帐户，请使用 `<<unix>>\username` 格式。 例如，如果帐户名称为 `ruser`，则应以 `<<unix>>\ruser` 的形式键入用户名。
 
 ## <a name="switching-between-workspaces"></a>在工作区间进行切换
 
@@ -139,4 +148,3 @@ RTVS 一次仅绑定到一个工作区中。 绑定的工作区通过“工作�
 ## <a name="copying-files-from-a-remote-workspace"></a>从远程工作区复制文件
 
 如果 R 脚本在服务器中生成了文件，可使用 `rtvs::fetch_file` 函数将它们复制回客户端。 此函数至少会接受要复制到计算机的文件的远程路径，并选择性接受计算机上的目标路径。 如果不指定路径，则将文件复制到 `%userprofile%\Downloads` 文件夹。
-

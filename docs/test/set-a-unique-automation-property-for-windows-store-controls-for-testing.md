@@ -1,40 +1,24 @@
 ---
-title: "为 Windows 应用商店控件设置唯一自动化属性以供测试使用 | Microsoft Docs"
+title: "为 UWP 控件设置唯一的自动化属性以进行测试 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
-caps.latest.revision: 10
+caps.latest.revision: "10"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 3038f70405239d69f0924be022040bcc8c7db9a4
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e931c898147cb93683ae618f96eed53ae13607ea
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>为 Windows 应用商店控件设置唯一的自动化属性以进行测试
-必须有可标识每个控件的唯一自动化属性，才能对基于 XAML 的 Windows 应用商店应用运行编码的 UI 测试。  
+# <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>为 UWP 控件设置唯一的自动化属性以进行测试
+若想针对基于 XAML 的 UWP 应用程序运行编码的 UI 测试，必须具有可标识每个控件的唯一的自动化属性。  
   
  可以根据应用中 XAML 控件的类型分配唯一自动化属性。 下面介绍了如何在以下情况分配此唯一自动化属性：  
   
@@ -219,5 +203,4 @@ private void CreateCheckBox(string txt, StackPanel panel)
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [使用编码的 UI 测试来测试 Windows UWP 和应用商店 8.1 应用](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)
-
+ [使用编码的 UI 测试来测试 Windows UWP 应用](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)

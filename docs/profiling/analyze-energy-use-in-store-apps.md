@@ -1,11 +1,10 @@
 ---
-title: "分析应用商店应用中的能量使用 | Microsoft Docs"
+title: "分析 UWP 应用中的能量使用 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,34 +13,18 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
-caps.latest.revision: 34
+caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 3a78a0d9afc766d316957b27d70269518f2d9d33
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: bcdebabac1197317b5e282be8bd648168f201673
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/11/2017
 ---
-# <a name="analyze-energy-use-in-store-apps"></a>分析应用商店应用中的能量使用
-Visual Studio 的 **“能耗”** 探查器可以帮助你分析低功率平板设备上的 Windows 应用商店应用的功率和能耗情况，这些低功率平板设备在所有时间或部分时间内靠自有电池运行。 在电池供电的设备上，如果应用程序使用过多的能量，可能导致客户非常不满，最终客户甚至可能将其卸载。 能量利用的优化可使更多的客户选择并使用你的应用程序。  
+# <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
+Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备上的 UWP 应用的功率和能耗情况，这些低功率平板设备在所有时间或部分时间内靠自有电池运行。 在电池供电的设备上，如果应用程序使用过多的能量，可能导致客户非常不满，最终客户甚至可能将其卸载。 能量利用的优化可使更多的客户选择并使用你的应用程序。  
   
 ##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> “能量消耗”探查器的定义、工作机制和测量内容  
  “能耗”探查器在分析会话期间捕获设备的显示器、CPU 和网络连接的活动。 然后生成这些活动所使用功率的估计值和分析会话使用的总能量。  
@@ -95,10 +78,10 @@ if (performance && performance.mark) {
  *markDescription* 是包含要在用户标记工具提示中显示的消息的字符串。  
   
 ##  <a name="BKMK_Configure_your_environment_for_profiling"></a> 配置要分析的环境  
- 若要获取合理估计值，你需要分析由电池供电的低功率设备上的应用程序的能量使用情况。 由于 Visual Studio 不能在大多数的此类设备上运行，因此你需要使用 Visual Studio 远程工具将 Visual Studio 计算机连接到此类设备。 若要连接到远程设备，需要配置 Visual Studio 项目和此远程设备。 有关详细信息，请参阅[在远程计算机上运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
+ 若要获取合理估计值，你需要分析由电池供电的低功率设备上的应用程序的能量使用情况。 由于 Visual Studio 不能在大多数的此类设备上运行，因此你需要使用 Visual Studio 远程工具将 Visual Studio 计算机连接到此类设备。 若要连接到远程设备，需要配置 Visual Studio 项目和此远程设备。 有关详细信息，请参阅[在远程计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
   
 > [!TIP]
->  -   我们建议不要在 Windows 应用商店模拟器或 Visual Studio 计算机上进行能量分析。 在实际的设备上进行分析可获得更加真实的数据。  
+>  -   我们建议不要在 UWP 模拟器或 Visual Studio 计算机上进行能量分析。 在实际的设备上进行分析可获得更加真实的数据。  
 > -   在由电池供电的目标设备上进行分析。  
 > -   关闭可能使用相同资源（网络、CPU 或显示屏）的其他应用程序。  
   
@@ -165,11 +148,12 @@ if (performance && performance.mark) {
   
 ##  <a name="BKMK_Other_resources"></a> 其他资源  
   
--   Windows 开发人员中心中 **C#/VB/C++ 和 XAML** 和 [JavaScript 和 HTML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) 的“连接状态和成本管理” [](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) 部分介绍了提供网络连接信息的 Windows API，你的应用程序可以使用这些信息最大程度降低网络通信成本。  
+-   Windows 开发人员中心中 [C#/VB/C++ 和 XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) 和 [JavaScript 和 HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) 的“连接状态和成本管理”  部分介绍了提供网络连接信息的 Windows API，你的应用程序可以使用这些信息最大程度降低网络通信成本。  
   
-     使用 Windows 应用商店应用程序的 Visual Studio 模拟器可以模拟网络信息 API 的数据连接属性。 请参见 [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md)  
+     使用 UWP 应用的 Visual Studio 模拟器可以模拟网络信息 API 的数据连接属性。 请参阅[在模拟器中运行 UWP 应用](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
 -   **“JavaScript 函数计时”** 和 **“CPU 使用量”** 工具有助于降低由低效函数导致的 CPU 负载。 请参阅[分析 CPU 使用情况](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md)。
 
 ## <a name="see-also"></a>另请参阅
- [Visual Studio 中的分析](../profiling/index.md) [分析功能简介](../profiling/profiling-feature-tour.md)
+ [使用 Visual Studio 分析](../profiling/index.md)  
+ [分析功能简介](../profiling/profiling-feature-tour.md)

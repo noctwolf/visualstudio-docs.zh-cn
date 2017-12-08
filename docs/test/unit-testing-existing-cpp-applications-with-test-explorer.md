@@ -1,23 +1,12 @@
 ---
-title: "使用测试资源管理器对现有 C++ 应用进行单元测试 | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
-caps.latest.revision: "11"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 665e16720466faff5dd52635066198e36d58d117
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/test/how-to-use-microsoft-test-framework-for-cpp
+ms.openlocfilehash: 7ab917a55d9a2d00a8d4635e2de45cd43cbe02f2
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="unit-testing-existing-c-applications-with-test-explorer"></a>用测试资源管理器对现有的 C++ 应用程序进行单元测试
+# <a name="how-to-use-the-microsoft-unit-testing-framework-for-c"></a>如何使用适用于 C++ 的 Microsoft 单元测试框架
 我们建议在更改现有应用程序之前，请确保单元测试中已覆盖其各种情况。 如此，你便有信心保证你的更改不会引入 bug。 如果应用程序尚没有单元测试，可使用本主题演示的方法自己添加。 本主题介绍如何为现有 Visual C++ 代码添加单元测试 - 从确定测试代码的方法，直到测试的创建、编写和最终运行。  
   
 ## <a name="deciding-how-to-test-your-code"></a>确定测试代码的方法  
@@ -29,7 +18,7 @@ ms.lasthandoff: 10/27/2017
   
  测试产品代码有多种方式，具体视其是否显示要测试的接口而定。 选择以下方式之一：  
   
- **单元测试仅使用从受测代码导出的函数：**  
+ **单元测试只能调用从受测代码导出的函数：**  
  添加单独的测试项目。 在测试项目中，添加对所测试项目的引用。  
   
  转到过程[从测试项目引用导出的函数的具体步骤](#projectRef)。  
@@ -46,7 +35,7 @@ ms.lasthandoff: 10/27/2017
   
  转到过程[将受测代码更改为静态库的具体步骤](#staticLink)。  
   
- **单元测试必须使用私有函数和数据，并且受测代码必须生成为动态链接库 (DLL)：**  
+ **单元测试必须使用私有成员函数和数据，并且受测代码必须生成为动态链接库 (DLL)：**  
  在产品代码所在项目中添加单元测试。  
   
  转到过程[在同一项目中添加单元测试的具体步骤](#sameProject)。  
@@ -65,9 +54,9 @@ ms.lasthandoff: 10/27/2017
   
  继续执行过程[将测试与对象或库文件相关联的具体步骤](#objectRef)。  
   
-###  <a name="projectRef"></a>从测试项目引用导出的函数的具体步骤  
+###  <a name="projectRef"></a>从测试项目引用导出的 DLL 函数的具体步骤  
   
--   如果所测试项目将导出你要测试的函数，则可添加对测试项目中该代码项目的引用。  
+-   如果所测试项目将导出你要测试的函数的 DLL，则可添加对测试项目中该代码项目的引用。  
   
     1.  创建 C++ 测试项目。  
   
@@ -162,8 +151,11 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="run-the-tests"></a>运行测试  
   
-1.  在 **“查看”** 菜单中，依次选择 **“其他窗口”**、 **“测试资源管理器”**。  
+1.  在“测试”菜单中，依次选择“窗口”、“测试资源管理器”。  
+2. 如果所有测试都在窗口中都不可见，则通过“解决方案资源管理器”中右键单击其节点并选择“生成”或“重新生成”，来生成测试项目。
   
-2.  在“测试资源管理器”中，选择 **“全部运行”**。  
+2.  在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。
   
- 有关详细信息，请参阅[快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)。
+## <a name="see-also"></a>另请参阅
+[快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)
+

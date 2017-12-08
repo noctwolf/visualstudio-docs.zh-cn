@@ -4,44 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 6f4db48b7e1f90654643efbfcfd41acbdcceaec8
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 1740beb4c671b2e66e249827c2db678f6b6f7da3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步骤 4：使用 TableLayoutPanel 控件设置窗体布局
 在此步骤中，向窗体添加一个 `TableLayoutPanel` 控件。 TableLayoutPanel 可帮助在窗体中正确地对齐您稍后将添加的控件。  
   
- ![视频链接](~/data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请观看[Tutorial 1: Create a Picture Viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211)（教程 1：用 Visual Basic 创建图片查看器 - 视频 2）或 [Tutorial 1: Create a Picture Viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200)（教程 1：用 C# 创建图片查看器 - 视频 2）。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。  
+ ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请观看[Tutorial 1: Create a Picture Viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211)（教程 1：用 Visual Basic 创建图片查看器 - 视频 2）或 [Tutorial 1: Create a Picture Viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200)（教程 1：用 C# 创建图片查看器 - 视频 2）。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。  
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>使用 TableLayoutPanel 控件设置窗体布局  
   
-1.  在 Visual Studio IDE 左侧，找到“工具箱”选项卡。 选择“工具箱”选项卡，随即将显示工具箱。 （或者，在菜单栏上，依次选择“视图”、“工具箱”。）  
+1.  在 Visual Studio IDE 左侧，找到“工具箱”选项卡。选择“工具箱”选项卡，随即将显示工具箱。 （或者，在菜单栏上，依次选择“视图”、“工具箱”。）  
   
 2.  选择“容器”组旁边的小三角形符号打开该组，如下图所示。  
   
@@ -58,7 +42,7 @@ TableLayoutPanel 控件
   
      请注意当选择“工具箱”选项卡时工具箱是如何展开以覆盖窗体的，以及当选择工具箱外部的任何位置后它是如何关闭的。 这就是 IDE 自动隐藏功能。 通过选择窗口右上角的图钉图标在自动隐藏和就地锁定之间切换，您可为任何窗口打开或关闭工具箱。 图钉图标如下所示。  
   
-     ![“图钉”图标](~/ide/media/express_pushpintoolbox.png "Express_PushpinToolbox")  
+     ![“图钉”图标](../ide/media/express_pushpintoolbox.png "Express_PushpinToolbox")  
 “图钉”图标  
   
 4.  通过选择“TableLayoutPanel”来确保将它选中。 可以通过查看“属性”窗口顶部的下拉列表来验证选定哪个控件，如下图所示。  
@@ -82,14 +66,14 @@ TableLayoutPanel 控件
   
 8.  TableLayoutPanel 当前具有两个大小相等的行和两个大小相等的列。 您需要调整它们，以使顶部行和右侧列更大一些。 在 Windows 窗体设计器中选择“TableLayoutPanel”。 在右上角有一个小的黑色三角形按钮，如下所示。  
   
-     ![“三角形”按钮](~/ide/media/express_iconblacktriangle.gif "Express_IconBlackTriangle")  
+     ![“三角形”按钮](../ide/media/express_iconblacktriangle.gif "Express_IconBlackTriangle")  
 “三角形”按钮  
   
      此按钮指示该控件具有帮助你自动设置其属性的任务。  
   
 9. 选择三角形以显示控件的任务列表，如下图所示。  
   
-     ![TableLayoutPanel 任务](~/ide/media/express_tablepanel.png "Express_TablePanel")  
+     ![TableLayoutPanel 任务](../ide/media/express_tablepanel.png "Express_TablePanel")  
 TableLayoutPanel 任务  
   
 10. 选择“编辑行和列”任务，显示“列和行样式”窗口。 选择“Column1”，确保选中“百分比”按钮并在“百分比”框中输入 `15`，以将此控件的大小设置为 15%。 （这是将在后面的教程中使用的 `NumericUpDown` 控件。）选择“Column2”并将其设置为 85%。 先不要选择“确定”按钮，因为这将关闭此窗口。 （但如果这样做，你可以使用任务列表重新打开它。）  

@@ -1,23 +1,24 @@
 ---
-title: "线程视图（并行性能） | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.view.threadblocking"
-helpviewer_keywords: 
-  - "并发可视化工具, 线程视图（并行性能）"
+title: "“线程”视图（并行性能） | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.view.threadblocking
+helpviewer_keywords: Concurrency Visualizer, Threads View (Parallel Performance)
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bdad50eff09e96c5d9c0513be1f571a901278871
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="threads-view-parallel-performance"></a>线程视图（并行性能）
 “线程”视图在并发可视化工具中最详细且功能最丰富的视图。 使用此视图可以确定线程是在执行还是由于同步、I/O 或某些其他原因而阻塞。  
@@ -66,14 +67,14 @@ caps.handback.revision: 21
   
  下面是“线程”视图的图示：  
   
- ![线程视图](~/profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+ ![“线程”视图](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
 线程视图  
   
  最初，线程按创建顺序进行排序，以便主应用程序线程处于第一位。 可以使用视图左上角的排序选项按其他条件对线程排序（例如，按执行最多执行工作）。  
   
  可以通过在左侧列中选择未在执行工作的线程的名称，然后选择工具栏上的“隐藏所选线程”按钮，来隐藏这些线程。 我们建议隐藏完全受阻的线程，因为其统计信息不相关，可能会阻碍报告。  
   
- 若要确定要隐藏的其他线程，请在活动图例中，选择“分析报告”选项卡上的“每线程摘要”报告。 这会显示执行细分图，其中显示当前所选时间间隔的线程状态。 在某些缩放级别，某些线程可能不会显示。 发生这种情况时，省略号会显示在右侧。  
+ 若要确定要隐藏的其他线程，请在活动图例中，选择“分析报告”选项卡上的“每线程摘要”报告。这会显示执行细分图，其中显示当前所选时间间隔的线程状态。 在某些缩放级别，某些线程可能不会显示。 发生这种情况时，省略号会显示在右侧。  
   
  选择了时间间隔及其中的某些线程之后，可以启动性能分析。  
   
@@ -91,7 +92,7 @@ caps.handback.revision: 21
 ### <a name="thread-execution-details"></a>线程执行详细信息  
  在线程的时间线关系图中，绿色段在该线程在执行代码时显示。 可以获取有关执行段的更多详细信息。  
   
- 选择执行段中的一个点时，并发可视化工具会在相关调用堆栈上查找该时间点，然后在执行段中所选点上方显示黑色脱字号，并在“当前堆栈”选项卡上显示调用堆栈本身。 可以在执行段上选择多个点。  
+ 选择执行段中的一个点时，并发可视化工具会在相关调用堆栈上查找该时间点，然后在执行段中所选点上方显示黑色脱字号，并在“当前堆栈”选项卡上显示调用堆栈本身。可以在执行段上选择多个点。  
   
 > [!NOTE]
 >  并发可视化工具可能无法解析执行段上的选择。 通常，当段的持续时间小于一毫秒时，会发生这种情况。  
@@ -148,8 +149,3 @@ caps.handback.revision: 21
   
 ## <a name="see-also"></a>另请参阅  
  [并发可视化工具](../profiling/concurrency-visualizer.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

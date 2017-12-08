@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,31 +13,15 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: 24238fc0-40b8-4079-8579-698211db9a26
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: caa4a551c437a6d0479ff1a6fdd5526c6837721a
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: 7dea60ba0f6a443b8db94611460442bd08a8cf95
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="memory-usage-without-the-debugger"></a>不使用调试器情况下的内存使用率
 可以在不调试的情况下使用**内存使用率**执行以下操作  
@@ -220,5 +203,8 @@ ms.lasthandoff: 06/30/2017
 |“非独占大小(字节)”|主要快照中对象的大小，其中包括对象中包含的对象的大小。|  
   
 ## <a name="see-also"></a>另请参阅  
- [JavaScript 内存](../profiling/javascript-memory.md) [Visual Studio 中的分析](../profiling/index.md) [分析功能教程](../profiling/profiling-feature-tour.md) [使用 C++、C# 和 Visual Basic 的 Windows 应用商店应用的性能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [JavaScript 内存](../profiling/javascript-memory.md)  
+ [使用 Visual Studio 分析](../profiling/index.md)  
+ [分析功能简介](../profiling/profiling-feature-tour.md)  
+ [使用 C++、C# 和 Visual Basic 的 UWP 应用的性能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)（在 Visual Studio 中使用新的内存使用情况工具诊断内存问题）

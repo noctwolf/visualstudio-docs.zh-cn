@@ -1,11 +1,10 @@
 ---
 title: "在低带宽或不可靠的网络环境中安装 | Microsoft Docs"
 description: "介绍了 Visual Studio 安装程序在不可靠的网络条件下的运行方式，以及如何在开始安装前下载安装文件。"
-ms.date: 04/14/2017
-ms.reviewer: 
+ms.date: 08/30/2017
+ms.reviewer: tims
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,41 +14,27 @@ ms.assetid: 44DB1998-68CD-4560-870A-EE5B993DCF6E
 author: timsneath
 ms.author: tims
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 9dbe70bce6c246416df64de304b06cd211320f2a
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/10/2017
-
+ms.openlocfilehash: 57665c39c875b57a1e90c4f57de68f069823cc86
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/11/2017
 ---
-
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>在低带宽或不可靠的网络环境中安装 Visual Studio 2017
-我们精心设计了新的 Visual Studio 2017 安装程序，它非常适合在各种网络和计算机条件下安装 Visual Studio。
 
-- 由于安装 Visual Studio 所需的文件发布在全球传送网络上，因此我们可以从本地服务器为你获取这些文件；
-- 在安装过程中，我们会尝试三种不同的下载技术（WebClient、BITS 和 WinInet），以最大限度地减少对防病毒和代理软件的干扰；
-- 基于工作负载的新模型的推出意味着，需要安装的内容比旧版 Visual Studio 少。
+建议尝试使用 Visual Studio Web 安装程序 &mdash; 使用体验一定会让你在大多数情况下感到满意。
 
-因此，建议尝试使用新的 Web 安装程序，使用体验一定会让你感到满意。 不过，如果要确保在开始安装 Visual Studio 前已成功下载安装文件，我们已为你提供了相应对策。 开始安装前，可以使用命令行创建所需文件的本地缓存。
+ > [!div class="button"]
+ > [下载 Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+<br/>
 
-操作方法如下。
+但是，如果 Internet 连接不可用或不可靠，则可以使用命令行创建完成脱机安装所需的文件的本地缓存。 操作方法如下。
 
-## <a name="download-the-visual-studio-bootstrapper"></a>下载 Visual Studio 引导程序
+> [!NOTE]
+> 如果你是企业管理员，并且要将 Visual Studio 2017 部署到客户端工作站网络（与 Internet 之间设有防火墙），请参阅我们的[创建 Visual Studio 2017 的网络安装](../install/create-a-network-installation-of-visual-studio.md)和[在脱机环境中安装 Visual Studio 的特殊注意事项](../install/install-visual-studio-in-offline-environment.md)页面。
+
+## <a name="step-1---download-the-visual-studio-bootstrapper"></a>步骤 1 - 下载 Visual Studio 引导程序
+
 首先，下载选定 Visual Studio 版本的 Visual Studio 引导程序。
 
 安装程序文件（具体而言是引导程序文件）将是下列项之一，或与之类似。
@@ -60,47 +45,51 @@ ms.lasthandoff: 05/10/2017
 | Visual Studio Professional | [vs_professional.exe](https://aka.ms/vs/15/release/vs_professional.exe) |
 | Visual Studio Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/15/release/vs_enterprise.exe)     |
 
-## <a name="create-a-local-install-cache"></a>创建本地安装缓存
-若要创建本地布局，请打开命令提示符，然后运行以下示例中的一个命令。 下面的示例假定已下载 Visual Studio Community 引导程序：请根据你的版本相应调整命令。
+## <a name="step-2---create-a-local-install-cache"></a>步骤 2 - 创建本地安装缓存
+
+必须具有 Internet 连接才能完成此步骤。 若要创建本地布局，请打开命令提示符，然后使用以下示例中的命令之一：下面的示例假定用户使用的是 Visual Studio 社区版；请根据版本相应调整命令。
 
 - 对于 .NET Web 和.NET 桌面开发，请运行：
-  ```
-  vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
-  ```
-- 对于 .NET 桌面和 Office 开发，请运行：
-  ```
-  vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
-  ```
-- 对于 C++ 桌面开发，请运行：
-  ```
-  vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
-  ```
 
-- 若要创建包含所有功能的完整本地布局（耗时将很长，因为我们提供的功能_非常多_！），请运行：
-  ```
-  vs_community.exe --layout c:\vs2017layout --lang en-US
-  ```
+   ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
+
+- 对于 .NET 桌面和 Office 开发，请运行：
+
+   ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US```
+
+- 对于 C++ 桌面开发，请运行：
+
+   ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US```
+
+- 若要创建包含所有功能的完整本地布局（耗时将很长 &mdash; 我们提供的功能_非常多_！），请运行：
+
+   ```vs_community.exe --layout c:\vs2017layout --lang en-US```
 
 如果要安装非英语语言，请从此页底部的列表中将 `en-US` 更改为相应的区域设置。 请使用此[可用组件和工作负载列表](workload-and-component-ids.md)，根据需要进一步自定义安装缓存。
 
-## <a name="install-from-the-local-cache"></a>从本地缓存安装
-当你从本地安装缓存运行时，我们将使用其中每个文件的本地版本。 不过，如果你在安装过程中选择的组件不在缓存中，我们将尝试从 Internet 下载。
+> [!IMPORTANT]
+> 完整的 Visual Studio 2017 布局至少需要 35 GB 磁盘空间，可能需要一段时间才能下载完成。 有关如何创建仅具有要安装的组件的布局的信息，请参阅[使用命令行参数安装 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)。
+
+## <a name="step-3---install-visual-studio-from-the-local-cache"></a>步骤 3 - 从本地缓存安装 Visual Studio
+
+> [!TIP]
+> 当你从本地安装缓存运行时，安装程序会使用其中每个文件的本地版本。 不过，如果你在安装过程中选择的组件不在缓存中，我们会尝试从 Internet 下载。
 
 为了确保只安装已下载的文件，请使用在创建布局缓存时所用的相同命令行选项。 例如，如果使用以下命令创建了布局缓存：
 
-```
-vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
-```
+```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
 
 请使用以下命令运行安装布局：
 
-```
-c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
-```
+```c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional```
+
+  > [!NOTE]
+  > 如果你遇到签名无效的错误，则必须安装更新的证书。 在脱机缓存中打开证书文件夹。 双击每个证书文件，然后单击完成证书管理器向导。 如果看到输入密码提示，请将密码留空。
 
 ## <a name="list-of-language-locales"></a>语言区域设置列表
+
 | **语言-区域设置** | **语言** |
-| ----------------------- | --------------- |  
+| ----------------------- | --------------- |
 | cs-CZ | 捷克语 |
 | de-DE | 德语 |
 | zh-CN | 英语 |
@@ -116,8 +105,10 @@ c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDe
 | zh-CN | 中文 - 简体 |
 | zh-TW | 中文 - 繁体 |
 
-## <a name="see-also"></a>另请参阅
+## <a name="get-support"></a>获取支持
+有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级失败疑难解答](troubleshooting-installation-issues.md)页面，查看疑难解答提示。 也可以通过 Visual Studio IDE 中的[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具向我们报告产品问题，或在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享建议。 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)（需要 [GitHub](https://github.com/) 帐户）与我们和其他 Visual Studio 开发者进行交流。
+
+## <a name="see-also"></a>请参阅
 * [安装 Visual Studio](install-visual-studio.md)
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-

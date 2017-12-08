@@ -1,9 +1,8 @@
 ---
 title: "Live Unit Testing 常见问题解答 | Microsoft Docs"
-ms.date: 2017-08-15
+ms.date: 2017-10-03
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,47 +11,54 @@ helpviewer_keywords:
 ms.assetid: 61baf3bb-646f-4c5a-b7c0-a6bdff68f21c
 author: rpetrusha
 ms.author: ronpet
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: de3ddc4288f2e14f0657f6bfb0ff3ee49ff7b5c9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c6a2c3b313aca87a77f7ad5b12a3d99c82c042b2
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常见问题解答
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>适用于 Visual Studio 2017 版本 15.3 的 Live Unit Testing 中有哪些新增功能？ 
+## <a name="live-unit-testing-is-improved-and-enhanced-regularly-how-can-i-find-information-about-the-latest-new-features-and-enhancements"></a>Live Unit Testing 定期进行改进和增强。 如何查找有关最新功能和增强功能的信息？
 
 **答：**
 
-- 支持 .NET Core/.NET Standard 和性能提升是两处主要改进。 可以发现，在“Live Unit Testing”下首次完整生成并运行测试后，性能大大提升。 同时还会发现，对于同一解决方案，在后续启动 Live Unit Testing 时的性能也有显著提升。 我们现在可以保留 Live Unit Testing 生成的数据，并在检查结果是最新的情况下尽可能重用这些数据。 除了这些主要新增功能外，Live Unit Testing 还进行了以下改进： 
+若要了解从 Visual Studio 2017 版本 15.3 开始 Live Unit Testing 的新增功能和增强功能，请参阅 [Live Unit Testing 中的新增功能](live-unit-testing-whats-new.md)。
 
-  - 当前使用了全新的烧杯图标来区分测试方法和常规方法。 空烧杯图标表示 Live Unit Testing 中没有特定测试。 
 
-  - 从 Live Unit Testing 覆盖图标的弹出 UI 窗口单击测试方法时，可通过 UI 窗口中的上下文直接调试测试，而无需离开代码编辑器。 这在查看未通过测试时特别有用。  
+## <a name="what-test-frameworks-does-live-unit-testing-support-and-what-are-the-minimum-supported-versions"></a>Live Unit Testing 支持哪些测试框架和最低版本？  
 
-  - “工具/选项/Live Unit Testing/常规”中额外添加了一些可配置的选项。 可设置用于 Live Unit Testing 的内存上限。 还可以为未结解决方案指定 Live Unit Testing 永久性数据的文件路径。 
+**答：**
 
-  - “测试/Live Unit Testing”的菜单栏下额外添加了一些菜单项。 “重置清理”可以删除永久性数据，并能重新生成这些数据。 “选项”跳转到“工具/选项/Live Unit Testing/常规”。
-  
-  - 现在可以使用以下属性，在源代码中指定要从 Live Unit Testing 中排除的目标测试方法：
-    - 对于 xUnit：`[Trait("Category", "SkipWhenLiveUnitTesting")]`
-    - 对于 NUnit：`[Category("SkipWhenLiveUnitTesting")]`
-    - 对于 MSTest：`[TestCategory("SkipWhenLiveUnitTesting")]`
+Live Unit Testing 适用于下表中列出的三个常用的单元测试框架。 表中还列出了其适配器和框架支持的最低版本。 单元测试框架都可从 NuGet.org 获得。
+ 
+<table> 
+<tr>
+   <th>测试框架</th>
+   <th>Visual Studio 适配器最低版本</th>
+   <th>Framework 最低版本</th>
+</tr>
+<tr>
+   <td>xUnit.net</td>
+   <td> xunit.runner.visualstudio 版本 2.2.0-beta3-build1187</td>
+   <td>xunit 1.9.2</td> 
+</tr>
+<tr>
+   <td>NUnit</td>
+   <td>NUnit3TestAdapter 版本 3.5.1</td>  
+   <td>NUnit 版本 3.5.0</td>
+</tr>
+<tr>
+   <td>MSTest</td>
+   <td>MSTest.TestAdapter 1.1.4-预览版</td>
+   <td>MSTest.TestFramework 1.0.5-预览版</td>
+</tr>
+</table>
+
+如果你有引用 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的测试项目（该项目是基于较旧的 MSTest），并且不想移动到较新的 MSTest NuGet 包，请升级到 Visual Studio 2017 版本 15.4。 
+
+在某些情况下，可能需要显式还原解决方案中项目引用的 NuGet 包，以便 Live Unit Testing 可正常运行。 你可以先通过显式生成解决方案（从顶级 Visual Studio 菜单中选择“生成”>“重新生成解决方案”）或通过还原解决方案中的包（右键单击解决方案并选择“还原 NuGet 包”）实现此操作，然后再启用 Living Unit Testing。 
+
 
 ## <a name="does-live-unit-testing-work-with-net-core"></a>Live Unit Testing 是否适用于 .NET Core？  
 
@@ -262,4 +268,3 @@ Visual Studio 2017 版本 15.3 已修复此问题，再也不会遇到了。 请
 
 [实时单元测试](live-unit-testing.md)
  
-

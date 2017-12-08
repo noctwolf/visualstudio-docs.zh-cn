@@ -1,52 +1,53 @@
 ---
 title: "如何：替换模板中的参数 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "模板参数, 代替"
-  - "Visual Studio 模板, 使用参数"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- template parameters, substituting
+- Visual Studio templates, using parameters
 ms.assetid: a62924a7-4ba0-413d-b606-fdbe1fcf2807
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e6e13e704502443c371021c515c7a9578497f829
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：替换模板中的参数
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-创建基于模板的文件时，可能会替换模板参数，比如类名称和命名空间。  有关模板参数的完整列表，请参阅[模板参数](../ide/template-parameters.md)。  
+# <a name="how-to-substitute-parameters-in-a-template"></a>如何：替换模板中的参数
+创建基于模板的文件时，可能会替换模板参数，比如类名和命名空间。 有关模板参数的完整列表，请参阅[模板参数](../ide/template-parameters.md)。  
   
-## 过程  
- 每当创建基于模板的项目时，均可以替换模板的文件中的参数。  此过程说明使用模板创建新项目时，如何创建一个将命名空间名称替换为安全的项目名称的模板。  
+## <a name="procedure"></a>过程  
+ 每当创建基于模板的项目时，均可以替换模板的文件中的参数。 此过程说明使用模板创建新项目时，如何创建一个将命名空间名称替换为安全的项目名称的模板。  
   
-#### 使用参数将命名空间名称替换为项目名称  
+#### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>使用参数将命名空间名称替换为项目名称  
   
-1.  将参数插入模板中的一个或多个代码文件中。  例如:  
+1.  将参数插入模板中的一个或多个代码文件中。 例如:   
   
     ```  
     namespace $safeprojectname$  
     ```  
   
     > [!NOTE]
-    >  模板参数是以 $*参数*$ 格式编写的。  
+    >  模板参数是以 $参数$ 格式编写的。  
   
 2.  在模板的 .vstemplate 文件中，找到包括此文件的 `ProjectItem` 元素。  
   
-3.  将 `ProjectItem` 元素的 `ReplaceParameters` 特性设置为 `true`。  例如:  
+3.  将 `ProjectItem` 元素的 `ReplaceParameters` 特性设置为 `true`。 例如:   
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  
     ```  
   
-## 请参阅  
- [创建自定义项目和项模板](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>另请参阅  
+ [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [模板参数](../ide/template-parameters.md)   
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [ProjectItem 元素（Visual Studio 项模板）](../extensibility/projectitem-element-visual-studio-item-templates.md)

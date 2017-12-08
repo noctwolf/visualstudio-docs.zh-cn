@@ -1,5 +1,5 @@
 ---
-title: "使用 Xamarin 进行调试"
+title: "使用 Xamarin 进行调试 | Microsoft Docs"
 description: "调试是编程中常见且必要的部分。 Visual Studio for Mac 作为成熟的 IDE，具有一整套方便调试的功能。 本文将介绍如何在 Visual Studio for Mac 中充分使用调试功能，包括从安全调试到数据可视化效果。"
 author: asb3993
 ms.author: amburns
@@ -7,15 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
+ms.openlocfilehash: 6d85c318b60e065be86d242bf3199b3716c59ada
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: d416c0967daa3354e09660e3b618e0cc6f3b49f7
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
-
 # <a name="debugging-with-xamarin"></a>使用 Xamarin 进行调试
 
 
@@ -103,4 +100,3 @@ Xamarin 产品随附用于 Mono 类库的源代码，可使用此代码在调试
 若要启用此功能，请浏览到“Visual Studio for Mac”>“首选项”>“调试器”，并确保“仅调试项目代码；不单步执行框架代码”。 选项“未选定”，如下所示：
 
  ![不单步执行框架代码选项](media/debugging-image8.png)
-

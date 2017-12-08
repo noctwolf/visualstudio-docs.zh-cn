@@ -1,34 +1,34 @@
 ---
 title: "增量生成 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "msbuild, 增量生成"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 978f1d43e278a6e8a112151221bda0a828b92f7c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 增量生成
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-增量生成已经过优化，这样，如果目标所具有的输出文件相对于其对应的输入文件而言是最新的，则该目标不会执行。  目标元素既可以具有 `Inputs` 特性（指明目标预计作为输入的项），也可以具有 `Outputs` 特性（指明目标作为输出所生成的项）。  MSBuild 将尝试查找这些特性值之间的 1 对 1 映射。  如果存在 1 对 1 映射，则 MSBuild 会将每个输入项的时间戳与其对应输出项的时间戳进行比较。  没有 1 对 1 映射的输出文件将与所有输入文件进行比较。  如果某项的输出文件的时间戳与该项的一个或多个输入文件相同，或与之相比较新，则将该项视为最新。  
+# <a name="incremental-builds"></a>增量生成
+增量生成是经过优化的生成。优化后，如果目标具有的输出文件相对于其相应的输入文件保持为最新，则系统不会执行该目标。 目标元素可同时具有 `Inputs` 属性（指示目标要预期为输入的项）和 `Outputs` 属性（指示目标要生成为输出的项）。 MSBuild 尝试在这些属性的值之间找到一对一映射。 如果存在一对一映射，MSBuild 比较每个输入项的时间戳和其对应的输出项的时间戳。 不具有一对一映射的输出文件则与所有输入文件进行对比。 如果某项的输出文件的时间戳与该项的一个或多个输入文件相同，或与之相比较新，则将该项视为最新。  
   
- 如果所有输出项均为最新，则 MSBuild 将跳过目标。  目标的这种增量生成可以显著提高生成速度。  如果只有部分文件为最新，则 MSBuild 将执行目标，但会跳过最新的项，从而使所有项均成为最新项。  这称为“部分增量生成”。  
+ 如果所有输出项均为最新，MSBuild 就跳过目标。 目标的这种增量生成可以显著提高生成速度。 如果只有部分文件保持为最新，MSBuild 会执行目标，但跳过最新的项，从而使所有项均保持为最新。 这叫做“部分增量生成”。  
   
- 1 对 1 映射通常由项转换生成。  有关详细信息，请参阅[转换](../msbuild/msbuild-transforms.md)。  
+ 项转换通常会生成一对一映射。 有关详细信息，请参阅[转换](../msbuild/msbuild-transforms.md)。  
   
- 请看下面的目标。  
+ 请看下列代码。  
   
-```  
+```xml  
 <Target Name="Backup" Inputs="@(Compile)"   
     Outputs="@(Compile->'$(BackupFolder)%(Identity).bak')">  
     <Copy SourceFiles="@(Compile)" DestinationFiles=  
@@ -36,49 +36,49 @@ caps.handback.revision: 8
 </Target>  
 ```  
   
- 系统会将由 `Compile` 项类型表示的文件集复制到备份目录。  备份文件的文件扩展名为 .bak。  如果在 Backup 目标运行后未删除或修改由 `Compile` 项类型表示的文件或对应的备份文件，则会在后面的生成中跳过 Backup 目标。  
+ 由 `Compile` 项目类型表示的文件集会被复制到备份目录。 备份文件的文件扩展名为 .bak。 如果运行备份目标后未删除或修改由 `Compile` 项目类型表示的文件或相应的备份文件，则后续生成中将跳过备份目标。  
   
-## 输出推理  
- MSBuild 将比较目标的 `Inputs` 和 `Outputs` 特性，以确定目标是否必须执行。  理想情况下，不管是否执行了关联的目标，增量生成完成后存在的文件集应保持不变。  由于任务所创建或更改的属性和项可能会影响生成，因此 MSBuild 必须推断出其值，即使跳过了影响这些值的目标，情况也是如此。  这称为“输出推理”。  
+## <a name="output-inference"></a>输出推理  
+ MSBuild 通过比较目标的 `Inputs` 和 `Outputs` 属性来确定是否执行该目标。 理想情况下，无论是否执行相关目标，增量生成完成后存在的文件集应保持不变。 由任务创建或修改的属性和项会影响生成，因此即使跳过会造成影响的目标，MSBuild 也必须推断这些属性或项的值。 这叫做“输出推理”。  
   
- 有三种情况：  
+ 共有三种情况：  
   
--   目标具有计算结果为 `false` 的 `Condition` 特性。  在这种情况下，目标不会运行，并且对生成没有影响。  
+-   目标具有计算结果为 `false` 的 `Condition` 属性。 这种情况不运行目标且不影响生成。  
   
--   目标具有过时的输出，并且目标已运行以使输出成为最新。  
+-   目标具有过时的输出，将运行目标，让这些输出保持为最新。  
   
--   目标没有过时的输出，并且已跳过目标。  MSBuild 将计算目标，并对项和属性进行更改，就好像目标已运行一样。  
+-   目标没有过时的输出，将跳过目标。 MSBuild 会像已运行目标一样，计算目标并更改项和属性。  
   
- 要支持增量编译，任务必须确保任何 `Output` 元素的 `TaskParameter` 特性值均与任务输入参数相等。  下面是一些示例：  
+ 要支持增量编译，任务必须确保所有 `Output` 元素的 `TaskParameter` 属性值与某个任务输入参数相等。 下面是一些可能的恶意活动：  
   
-```  
+```xml  
 <CreateProperty Value="123">  
     <Output PropertyName="Easy" TaskParameter="Value" />  
 </CreateProperty>  
 ```  
   
- 此示例将创建属性 Easy，不管是否执行或跳过了目标，该属性的值均为“123”。  
+ 无论是执行还是跳过目标，此代码都将创建值为“123”的 Easy 属性。  
   
-```  
+```xml  
 <CreateItem Include="a.cs;b.cs">  
     <Output ItemName="Simple" TaskParameter="Include" />  
 </CreateItem>  
 ```  
   
- 此示例将创建项类型 Simple，不管是否执行或跳过了目标，该项类型都包含两项：“a.cs”和“b.cs”。  
+ 无论是执行还是跳过目标，此代码都将创建 Simple 项目类型。该项目类型具有“a.cs”和“b.cs”两个项。  
   
- 开始于 MSBuild 3.5 中，将对目标中的项和属性组自动执行输出推理。  无需在目标中执行 `CreateItem` 任务，并且应避免该任务。  此外，只有在要确定目标是否已执行时，才应在目标中使用 `CreateProperty` 任务。  
+ 从 MSBuild 3.5 开始，将对目标中的项和属性组自动执行输出推理。 目标中无需 `CreateItem` 任务，应避免该任务。 此外，目标中只能将 `CreateProperty` 任务用于确认是否执行了目标。  
   
-## 确定目标是否已运行  
- 由于输出推理的原因，您必须在目标中添加 `CreateProperty` 任务，才能检查属性和项，以便能够确定目标是否已执行。  向目标中添加 `CreateProperty` 任务，并为其指定 `TaskParameter` 为“ValueSetByTask”的 `Output` 元素。  
+## <a name="determining-whether-a-target-has-been-run"></a>确认是否运行了某个目标  
+ 因输出推理，必须向目标添加 `CreateProperty` 任务，以检查属性和项，从而确定是否执行了该目标。 向目标添加 `CreateProperty` 任务，并为其提供 `Output` 元素，该元素的 `TaskParameter` 为 “ValueSetByTask”。  
   
-```  
+```xml  
 <CreateProperty Value="true">  
     <Output TaskParameter="ValueSetByTask" PropertyName="CompileRan" />  
 </CreateProperty>  
 ```  
   
- 此示例将创建属性 CompileRan，并为其指定值 `true`，但只有在目标已执行时才会这样做。  如果跳过了目标，则不会创建 CompileRan。  
+ 该操作会创建 CompileRan 属性并为其赋予值 `true`，但仅当执行了目标时如此操作。 如果跳过目标，则不会创建 CompileRan。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [目标](../msbuild/msbuild-targets.md)

@@ -1,82 +1,82 @@
 ---
-title: "“项目设计器”-&gt;“调试”页 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vb.ProjectPropertiesDebug"
-helpviewer_keywords: 
-  - "项目设计器，“调试”页"
-  - "项目设计器中的“调试”页"
+title: "“项目设计器”->“调试”页 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vb.ProjectPropertiesDebug
+helpviewer_keywords:
+- Project Designer, Debug page
+- Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-caps.latest.revision: 32
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+caps.latest.revision: "32"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 39b19b6e418203a33c410173d46e190bbd6c01e1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# “项目设计器”-&gt;“调试”页
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="debug-page-project-designer"></a>“项目设计器”->“调试”页
 > [!WARNING]
->  本主题不适用于 Windows 存储 app。  参见 Windows 开发人员中心的 [启动调试会话（VB、C\#、C\+\+ 和 XAML）](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。  
+>  本主题不适用于 UWP 应用。 请参阅 Windows 开发人员中心的[启动调试会话 (VB, C#, C++ and XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。  
   
- 使用 **项目设计器** 的 **调试** 页设置调试的行为属性在 Visual Basic 或 C\#项目。  
+ 使用项目设计器的“调试”页为 Visual Basic 或 C# 项目中的调试行为设置属性。  
   
- 访问 **调试** 页上，选择在 **解决方案资源管理器**的项目节点。  在 **项目** 菜单中，选择 *ProjectName***属性**。  当 **项目设计器** 出现时，单击 **调试** 选项。  
+ 要访问“调试”页，请在解决方案资源管理器中选择项目节点。 在“项目”菜单上，选择 ProjectName 属性。 当项目设计器出现时，请单击“调试”选项卡。  
   
-## 配置和平台  
- 以下选项允许您选择要显示或修改的配置和平台。  
+## <a name="configuration-and-platform"></a>配置和平台  
+ 通过以下选项，可选择要显示或修改的配置和平台。  
   
  **配置**  
- 指定要显示或修改的配置设置。  设置可以是 **调试** \(默认值\)，**发布**或 **所有配置**。  有关更多信息，请参见[Debug and Release Project Configurations](http://msdn.microsoft.com/zh-cn/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要显示或修改的配置设置。 设置可以为“调试”（默认）、“发布”或“所有配置”。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
   
  **平台**  
- 指定要显示或修改的平台设置。  选择可能包括 **任何 CPU**  \(默认值\)，**x64**和 **x86**。  有关更多信息，请参见[Debug and Release Project Configurations](http://msdn.microsoft.com/zh-cn/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要显示或修改的平台设置。 这些选择包括“任何 CPU”（默认）、“x64”和“x86”。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
   
-## 启动操作  
- **“启动操作”**指示调试应用程序时要启动的项：项目、自定义程序、URL 或不启动任何项。  默认情况下，此选项设置为 **启动项目**。  将 **调试** 页的 **启动操作** 确定 `StartAction` 属性的值。  
+## <a name="start-action"></a>启动操作  
+ “启动操作”指示应用程序调试时要启动的项：项目、自定义程序、URL 或不启动任何项。 默认情况下，此选项设置为“启动项目”。 “调试”页上的“启动操作”设置确定 `StartAction` 属性的值。  
   
  **启动项目**  
- 选择此选项指定应启动可执行文件\(对于 Windows 应用程序和控制台应用程序项目\)，在调试应用程序时。  默认情况下此选项处于选中状态。  
+ 选择此选项可指定调试应用程序时应启动（适用于 Windows 应用程序和控制台应用程序项目的）可执行文件。 默认情况下选择此选项。  
   
  **启动外部程序**  
- 选择此选项指定应启动特定的程序，当调试应用程序时。  
+ 选择此选项可指定调试应用程序时应启动特定程序。  
   
  **使用 URL 启动浏览器**  
- 选择此选项指定应获取特定 URL，在调试应用程序时。  
+ 选择此选项可指定调试应用程序时应访问特定 URL。  
   
-## 启动选项  
+## <a name="start-options"></a>启动选项  
  **命令行参数**  
- 在此文本框中，输入要用于调试的命令行参数。  
+ 在此文本框中，输入用于调试的命令行参数。  
   
  **工作目录**  
- 在此文本框中，输入将从其中启动项目的目录。  或者单击浏览按钮\(**…** \)选择内容。  
+ 在此文本框中，输入将从其中启动项目的目录。 或单击“浏览”按钮 (...) 选择目录。  
   
  **使用远程计算机**  
- 若要调试应用程序从远程计算机，请选中此复选框，然后输入路径到远程计算机上的文本框。  
+ 要从远程计算机调试应用程序，请选中此复选框，然后在文本框中输入该远程计算机的路径。  
   
-## 启用调试器  
+## <a name="enable-debuggers"></a>启用调试器  
  **启用非托管代码调试**  
- 此选项指定是否支持本机代码调试。  选择此复选框，则调用 COM 对象，或者如果启动调用您的项目，您必须调试本机代码的本机代码编写的自定义程序。  清除此复选框可禁用非托管代码调试。  默认情况下清除此复选框。  
+ 该选项指定是否支持本机代码调试。 如果正在调用 COM 对象或启动以调用项目的本机代码编写的自定义程序，请选中此复选框并且必须调试此本机代码。 清除此复选框可禁用非托管代码调试。 默认情况下清除此复选框。  
   
  **启用 SQL Server 调试**  
- 选中或清除此复选框启用或禁用 SQL 从 Visual Basic 应用程序中。  默认情况下清除此复选框。  
+ 选中或清除此复选框，从 Visual Basic 应用程序启用或禁用 SQL 过程调试。 默认情况下清除此复选框。  
   
- **启用 Visual Studio 承载进程**  
- 选中此复选框以启用 Visual Studio 承载进程。  默认情况下选中此复选框。  有关更多信息，请参见[承载进程 \(vshost.exe\)](../../ide/hosting-process-vshost-exe.md)。  
+ **启用 Visual Studio 托管进程**  
+ 选中此复选框可启用 Visual Studio 托管进程。 默认情况下选中此复选框。 有关详细信息，请参阅[托管进程 (vshost.exe)](../../ide/hosting-process-vshost-exe.md)。  
   
- 将"安全区域"若要调试，您必须启用此选项和 **使用选定权限集调试此应用程序** 在 [“高级安全设置”对话框](../../ide/reference/advanced-security-settings-dialog-box.md)。  
+ 要在安全区域调试，必须启用此选项并在[“高级安全设置”对话框](../../ide/reference/advanced-security-settings-dialog-box.md)中启用“使用所选的权限集调试此应用程序”。  
   
-## 请参阅  
- [使用 Visual Studio 进行调试](../../debugger/debugging-in-visual-studio.md)   
- [C\# 调试配置的项目设置](../../debugger/project-settings-for-csharp-debug-configurations.md)   
+## <a name="see-also"></a>另请参阅  
+ [在 Visual Studio 中进行调试](../../debugger/debugging-in-visual-studio.md)   
+ [C# 调试配置的项目设置](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic 调试配置的项目设置](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Managing Debugging Properties](http://msdn.microsoft.com/zh-cn/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [管理调试属性](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
  [如何：使用受限权限对 ClickOnce 应用程序进行调试](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [如何：创建和编辑配置](../../ide/how-to-create-and-edit-configurations.md)

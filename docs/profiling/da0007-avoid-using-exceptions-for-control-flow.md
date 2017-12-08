@@ -1,47 +1,48 @@
 ---
 title: "DA0007：避免使用控制流异常 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.rules.DAExceptionsThrown"
-  - "vs.performance.7"
-  - "vs.performance.rules.DA0007"
-  - "vs.performance.DA0007"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.rules.DAExceptionsThrown
+- vs.performance.7
+- vs.performance.rules.DA0007
+- vs.performance.DA0007
 ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1bf6ce50519fc3021197de5ca8f76ca55500e6e0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# DA0007：避免使用控制流异常
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007：避免使用控制流异常
 |||  
 |-|-|  
 |规则 ID|DA0007|  
-|类别|.NET Framework 使用|  
+|类别|.NET Framework 使用情况|  
 |分析方法|全部|  
-|消息|正在持续引发大量的异常。  请考虑在程序逻辑中减少对异常的使用。|  
+|消息|持续引发大量异常。 请考虑减少使用程序逻辑中的异常。|  
 |消息类型|警告|  
   
- 在使用采样、.NET 内存或资源争用方法进行分析时，必须收集至少 25 个样本才能触发此规则。  
+ 使用采样法、.NET 内存或资源争用方法进行分析时，必须至少收集 25 个样本才能触发此规则。  
   
-## 原因  
- 分析数据中 .NET Framework 异常处理程序的调用率高。  请考虑使用其他控制流逻辑来减少引发的异常数。  
+## <a name="cause"></a>原因  
+ 分析数据中调用了速率较高的 .NET Framework 异常处理程序。 请考虑使用其他控制流逻辑，以便减少引发的异常数。  
   
-## 规则说明  
- 虽然使用异常处理程序来中断程序执行的错误和其他事件是一个不错的办法，但作为常规程序执行逻辑一部分的异常处理程序的使用可能很昂贵，并且应当避免。  在大多数情况中，只应将异常用于很少出现并是预期之外的情况。  异常不应作为典型程序流程的一部分来返回值。  在很多的情况中，可以通过验证值和使用条件逻辑暂停导致问题的语句的执行以避免引发异常。  
+## <a name="rule-description"></a>规则说明  
+ 虽然使用异常处理程序捕获错误和中断程序执行的其他事件是一个好的做法，但在常规程序执行逻辑中使用异常处理程序成本很高，应当避免。 大多数情况下，异常应仅用于不经常出现且意外的情况... 异常不应用于在典型程序流中返回值。 在许多情况下，可以验证值和使用条件逻辑来暂停执行引起问题的语句，从而避免引发异常。  
   
- 有关更多信息请参见MSDN 上**Microsoft Patterns and Practices**库中**Improving .NET Application Performance and Scalability** 卷内**Chapter 5 — Improving Managed Code Performance** 的 [托管异常](http://go.microsoft.com/fwlink/?LinkID=177825) 部分。  
+ 有关详细信息，请参阅 MSDN 上 **Microsoft 模式和做法**库**“提高 .NET 应用程序性能和可扩展性”**卷中**第 5 章 - 提高托管代码性能”**的[异常管理](http://go.microsoft.com/fwlink/?LinkID=177825)部分。  
   
-## 如何调查警告  
- 双击“错误列表”窗口中的该消息以导航到标记视图。  查找包含 **.NET CLR Exceptions\(@ProcessInstance\)\\\# of Exceps Thrown \/ sec** 度量的列。  确定程序执行过程中是否有一些特定阶段的异常处理多于其他处理。  使用采样分析，尝试识别产生频繁异常的 throw 语句和 try\/catch 块。  如有必要，向 catch 块添加逻辑以帮助您了解最频繁处理的是哪些异常。  如果可能，将经常执行的 throw 语句或 catch 块替换为简单的流控制逻辑或验证代码。  
+## <a name="how-to-investigate-a-warning"></a>如何调查警告  
+ 双击“错误列表”窗口中的消息，导航到“标记”视图。 查找包含 .NET CLR Exceptions(@ProcessInstance)\\# of Exceps Thrown / sec 度量的列。 确定是否存在异常处理更频繁的程序执行特定阶段。 使用采样分析，尝试标识生成频繁异常的 throw 语句和 try/catch 块。 如有必要，请向 catch 块添加逻辑，以便了解处理最频繁的异常。 如有可能，使用简单的流控制逻辑或验证代码替换频繁执行的 throw 语句或 catch 块。  
   
- 例如，如果发现应用程序频繁处理 DivideByZeroException 异常，则向您的程序添加逻辑以检查具有零值的分母将提高应用程序的性能。
+ 例如，如果发现应用程序正在处理频繁的 DivideByZeroException 异常，则向程序添加逻辑以便检查为零值的分母将改进应用程序的性能。

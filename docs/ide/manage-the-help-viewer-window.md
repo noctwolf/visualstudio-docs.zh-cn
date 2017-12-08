@@ -1,35 +1,27 @@
 ---
-title: "管理帮助查看器窗口 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Help Viewer 2.0, 重新排列窗口"
-  - "Help Viewer 2.0, 还原默认窗口布局"
-ms.assetid: 98625016-acce-46c9-9b5a-2107d2939a5e
-caps.latest.revision: 7
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+redirect_url: /visualstudio/ide/customize-the-help-viewer
+ms.openlocfilehash: ac58c2d345a87dc872eae56f0ee0fdcdcb85a3db
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/07/2017
 ---
-# 管理帮助查看器窗口
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+title: "管理 Help Viewer 窗口 | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "Help Viewer，重新排列窗口"
+  - "Help Viewer，还原默认窗口布局" ms.assetid: 98625016-acce-46c9-9b5a-2107d2939a5e caps.latest.revision: 7 author: "gewarren" ms.author: "gewarren" manager: ghogen
+---
+# <a name="manage-the-help-viewer-window"></a>管理 Help Viewer 窗口
+可以自定义 Help Viewer 的窗口布局。 若要将 Help Viewer 窗口还原为默认布局，请打开“查看器选项”对话框，然后选择“重置”按钮。  
 
-在“帮助查看器”中，可以自定义窗口布局。  
+## <a name="docking-tabs"></a>停靠选项卡
+Help Viewer 支持标准停靠功能。 默认情况下，Help Viewer 中的所有选项卡都处于停靠状态，不过你可以移动它们、调整其大小、将它们停靠在其他位置以及使它们“浮动”以便它们显示为独立的子窗口。
   
-## 停靠选项卡  
- “帮助查看器”支持标准停靠功能。  默认情况下，停靠的帮助查看器中所有选项卡，您可以移动它们，调整它们在其他位置停靠，以及使其显示为独立的子窗口浮动样式。  
+## <a name="opening-a-topic-in-a-new-tab"></a>在新选项卡中打开主题
+在任意导航选项卡上选择主题，然后按 **Ctrl+Enter**。
   
- 若要还原帮助查看器窗口到其默认布局，打开**“查看器选项”** 对话框，然后选择**“重置”**按钮。  
-  
-## 打开新选项卡中的主题。  
- 选择任何导航选项上的主题，然后选择Ctrl \+ Enter键。  
-  
-## 最小化导航选项卡  
- 通过选择导航选项的图钉图标来创建查看主题的更多的空间。  当最小化这些选项卡时，只有它们的标签显示在窗口的最近边缘。  若要还原选项卡，选择所有选项卡标签，然后再次选择图钉图标。
+## <a name="minimize-a-navigation-tab"></a>最小化导航选项卡
+选择导航选项卡的图钉图标，释放更多空间以便查看主题。 最小化这些选项卡后，只会在窗口的最近边缘上显示其标签。 若要还原选项卡，请选择任意选项卡的标签，然后再次选择图钉图标。
+
+## <a name="see-also"></a>请参阅
+[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

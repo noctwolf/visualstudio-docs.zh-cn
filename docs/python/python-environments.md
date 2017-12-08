@@ -1,28 +1,24 @@
 ---
 title: "Visual Studio 中的 Python 环境| Microsoft Docs"
 ms.custom: 
-ms.date: 7/25/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8876f8c1-4770-44dc-97d8-bf0035ae8196
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 34e6898ce5c45033c8ac984d014d462a34552776
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: fa8a7616fe88f024ab299e5d115b66f8656e7cb3
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="python-environments"></a>Python 环境
 
 Visual Studio 中的 Python 使管理多个 Python 环境更加简单，并且对于不同的项目可轻松在各环境间切换。 
@@ -46,9 +42,9 @@ Visual Studio 中的 Python 使管理多个 Python 环境更加简单，并且�
 - [管理所需的包](#managing-required-packages)
 - [搜索路径](#search-paths)
 
-有关视频介绍，请参阅[深度分析：Python 解释器](https://youtu.be/KY1GEOo3qy0)（youtube.com，13m27s）。
+有关视频介绍，请观看[管理 Python 环境](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)（Microsoft Virtual Academy，2 分 35 秒）。
 
-> [!VIDEO https://www.youtube.com/embed/KY1GEOo3qy0]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
 
 ## <a name="selecting-and-installing-python-interpreters"></a>选择并安装 Python 解释程序
 
@@ -56,7 +52,7 @@ Python 支持除了随 Visual Studio 2017 提供外，并未随 Python 解释器
 
 | 解释器 | 说明 | 
 | --- | --- | 
-| [CPython](https://www.python.org/) | 最常用的“本机”解释器，32 位和 64 位版本可用（建议使用 32 位）。 包括最新的语言功能、最大的 Python 包兼容性、完整的调试支持以及与 [IPython](http://ipython.org/) 的互操作。 另请参阅：[应使用 Python 2 还是 Python 3？](http://wiki.python.org/moin/Python2orPython3) |
+| [CPython](https://www.python.org/) | 最常用的“本机”解释器，32 位和 64 位版本可用（建议使用 32 位）。 包括最新的语言功能、最大的 Python 包兼容性、完整的调试支持以及与 [IPython](http://ipython.org/) 的互操作。 另请参阅：[Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3)（应使用 Python 2 还是 Python 3？） 请注意，Visual Studio 2015 及更早版本不支持 Python 3.6，并且会生成错误“不支持 Python 版本 3.6”。 请改用 Python 3.5 或更早版本。 |
 | [IronPython](https://github.com/IronLanguages/main) | Python 的 .NET 实现，32 位和 64 位版本可用，提供 C#/F#/Visual Basic 互操作、对 .NET API 的访问、标准 Python 调试（但不是 C++ 混合模式调试）和混合 IronPython/C# 调试。 但 IronPython 不支持虚拟环境。 | 
 | [Anaconda](https://www.continuum.io) | Python 提供技术支持的开放式数据科学平台，包括最新版本的 CPython 和大部分难以安装的包。 如果你不能做出决定，我们建议使用它。 |
 | [PyPy](http://www.pypy.org/) | Python 的高性能跟踪 JIT 实现，适用于长时间运行的程序以及识别性能问题但找不到其他解决方法的情况。 可与 Visual Studio 配合使用，但对高级调试功能的支持有限。 |
@@ -99,7 +95,7 @@ Visual Studio 通常通过检查注册表（下面的 [Windows 注册表中的 P
 1. 在“前缀路径”字段输入或浏览到解释器的路径。
 1. 选择“自动检测”让 Visual Studio 完成余下的字段，或手动完成它们。
 1. 选择“应用”保存环境。
-1. 如果需要删除环境，请在“配置”选项卡上选择“删除”命令。 自动检测环境不提供此选项。 有关详细信息，请参阅下一节。
+1. 如果需要删除环境，请在“配置”选项卡上选择“删除”命令。自动检测环境不提供此选项。 有关详细信息，请参阅下一节。
 
 ### <a name="moving-an-existing-interpreter"></a>移动现有的解释器
 
@@ -197,7 +193,7 @@ Visual Studio 对所有新项目使用默认环境，用于执行、调试、检
 
 若要为项目激活其他环境，右键单击该环境，选择“激活环境”。
 
-可通过右键单击“Python 环境”并选择“添加/删除 Python 环境...”，添加任何全局环境作为项目环境。 从显示的列表中，可以选择或取消选择项目中可用的那些环境。
+可通过右键单击“Python 环境”并选择“添加/删除 Python 环境...”，添加任何全局环境作为项目环境。从显示的列表中，可以选择或取消选择项目中可用的那些环境。
 
 ![“添加/删除 Python 环境”对话框](media/environments-add-remove.png)
 
@@ -234,7 +230,7 @@ Visual Studio 对所有新项目使用默认环境，用于执行、调试、检
 
     ![添加现有的虚拟环境](media/environments-add-virtual-2.png)
 
-也可以通过在解决方案资源管理器中右键单击“Python 环境”，并选择“添加现有的虚拟环境...”来添加现有的虚拟环境。 Visual Studio 会使用环境的 `lib` 目录中的 `orig-prefix.txt` 文件自动检测基础解释器。
+也可以通过在解决方案资源管理器中右键单击“Python 环境”，并选择“添加现有的虚拟环境...”来添加现有的虚拟环境。Visual Studio 会使用环境的 `lib` 目录中的 `orig-prefix.txt` 文件自动检测基础解释器。
 
 将虚拟环境添加到项目后，它将出现在“Python 环境”窗口中，可像激活任何其他环境一样激活它，且可以管理其包。 右键单击该环境并选择“删除”可删除对该环境的引用或删除该环境以及磁盘上它的所有文件（但不会删除基础解释器）。
 
@@ -301,10 +297,9 @@ Visual Studio 中的 Python 支持提供一种方法，可直接在环境和项�
 
 若要添加搜索路径，请在解决方案资源管理器中右键单击“搜索路径”，选择“将文件夹添加到搜索路径...”，并选择要包括的文件夹。 此路径将用于与该项目关联的任何环境。
 
-通过选择“将 Zip 存档添加到搜索路径的...”，还可将具有 `.zip` 或 `.egg` 扩展的文件添加为搜索路径。 与文件夹一样，将扫描这些文件的内容，并使其对 IntelliSense 可用。
+通过选择“将 Zip 存档添加到搜索路径的...”，还可将具有 `.zip` 或 `.egg` 扩展的文件添加为搜索路径。与文件夹一样，将扫描这些文件的内容，并使其对 IntelliSense 可用。
 
 > [!Note]
 > 使用 Python 3.3 时，可将搜索路径添加到 Python 2.7 模块，但可能会看到错误是最后的结果。
 
 如果定期使用相同的搜索路径，且内容不经常更改，则将其安装到 site-packages 文件夹会更高效。 它随后会进行分析并存储在 IntelliSense 数据库中、会始终与预期的环境关联且不需要为每个项目添加搜索路径。
-

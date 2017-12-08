@@ -1,32 +1,29 @@
 ---
 title: "在 Visual Studio 中编译和生成 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 5918c0070be747f7ebdca9d789d5706820b93e20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 1a2db8a10664e1d4b38b1d6867c5a3bad1532b39
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/10/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中编译和生成
 
-在开发周期内随时从源代码中运行生成创建程序集和可执行的应用程序。 一般情况下，生成过程在许多不同的项目类型（如 Windows、ASP.NET、移动应用和其他类型）中非常相似。 生成过程在诸如 C#、Visual Basic、C++ 和 F# 等编程语言之间也非常相似。 
+运行生成会在开发周期内随时从源代码创建程序集和可执行应用程序。 一般情况下，生成过程在许多不同的项目类型（如 Windows、ASP.NET、移动应用和其他类型）中非常相似。 生成过程在诸如 C#、Visual Basic、C++ 和 F# 等编程语言之间也非常相似。 
 
 通过经常生成你的代码，你可以快速识别编译时错误，如不正确的语法、拼错的关键字和类型不匹配项。 还可以通过频繁生成并运行调试版本的代码来快速检测和纠正运行时错误，如逻辑错误和语义错误。  
 
@@ -61,4 +58,3 @@ ms.lasthandoff: 08/10/2017
 ## <a name="see-also"></a>另请参阅  
 
 - [生成（编译）网站项目](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
-

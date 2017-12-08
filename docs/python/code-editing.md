@@ -1,28 +1,24 @@
 ---
 title: "在 Visual Studio 中编辑 Python 代码 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/10/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 03effe56-d6f6-461d-9005-e43c15bf537c
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 134442008dccbeac12dd328ed3b01c2b3a1a2e8c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: d16b8fcae5b7d1a14c8f6068dfd7103115cba291
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="editing-python-code"></a>编辑 Python 代码
 
 开发人员需要花费大量时间埋头于代码编辑器，因此可借助 [Visual Studio 中的 Python 的支持](installation.md)中的功能来提高工作效率。 这些功能包括 IntelliSense 语法突出显示、自动完成、签名帮助、方法重写、搜索和导航。 
@@ -35,11 +31,11 @@ ms.lasthandoff: 07/18/2017
 
 有关在 Visual Studio 中编辑代码的常规文档，请参阅[在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)。 另请参阅 [Visual Studio 中的大纲显示](../ide/outlining.md)，方便你将重点放在代码的特定部分。 Python 支持包括使用 Visual Studio 对象浏览器（“视图”>“其他窗口”>“对象浏览器”或 Ctrl+W、J）检查每个模块中定义的类及这些类中定义的函数。 
 
-编辑器还集成了 Visual Studio 中的交互式窗口，便于在两者之间交换代码。 请参阅[入门 - 使用交互式 REPL 窗口](getting-started.md#using-the-interactive-repl-window)和[使用交互式窗口 - 将代码发送给交互式命令](interactive-repl.md#send-code-to-interactive-command)了解有关详细信息。
+编辑器还集成了 Visual Studio 中的交互式窗口，便于在两者之间交换代码。 请参阅[教程步骤 3：使用 REPL 交互窗口](vs-tutorial-01-03.md)和[使用交互窗口：将代码发送到交互命令](interactive-repl.md#send-code-to-interactive-command)了解详细信息。
 
-有关编辑 Python 代码的简介，请参阅 [ Visual Studio 中的 Python 入门，第 3 部分：编辑](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)（youtube.com，3 分 48 秒）：
+有关如何编辑 Python 代码的介绍，请观看[编辑 Python 代码](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)（Microsoft Virtual Academy，2 分 30 秒）：
 
-> [!VIDEO https://www.youtube.com/embed/uZGZNEyyeKs]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
 
 ## <a name="intellisense"></a>IntelliSense
 
@@ -123,8 +119,7 @@ IntelliSense 可提供[完成](#completions)、[签名帮助](#signature-help)�
 
 ![代码片段管理器](media/code-editing-code-snippets-manager.png)
 
-若要创建自己的代码段，请参阅[演练：创建代码段](../ide/walkthrough-creating-a-code-snippet.md)。
-通过[创建代码段](https://msdn.microsoft.com/library/ms165394.aspx)并导入可自定义代码片段 
+若要创建自己的代码段，请参阅[演练：创建代码段](../ide/walkthrough-creating-a-code-snippet.md)。 
 
 如果编写优质的代码片段并且想要将其共享，请随时发布到 gist 并[告诉我们](https://github.com/Microsoft/PTVS/issues)。 我们可能将其包含在 Visual Studio 的未来版本中。
 

@@ -1,13 +1,15 @@
 ---
 title: "Visual Studio 2017 中的新增功能 | Microsoft Docs"
 ms.custom: 
-ms.date: 08/22/2017
+ms.date: 11/06/2017
 ms.reviewer: 
 ms.suite: 
+ms.technology:
+- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.StartPage.WhatsNew
+f1_keywords: VS.StartPage.WhatsNew
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,31 +17,29 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.technology:
-- vs-acquisition
+ms.openlocfilehash: 1e616fb0c223a30152b9cd18e6ea53e989690f9b
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
 ms.translationtype: HT
-ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
-ms.openlocfilehash: 5bf00b7e5ed79f8679b837d0dcabf03550d2b849
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
-#### <a name="updated-for-the-153-release"></a>版本 15.3 的更新内容
-为任何开发、应用和平台提供无与伦比的效率。 使用 Visual Studio 2017 开发适用于 Android、iOS、Windows、Linux、Web 和云的应用。 快速编码、轻松调试和诊断、时常测试，并且可以放心地进行发布。 还可通过构建自己的扩展，以便扩展和自定义 Visual Studio。 此版本发布之后，可使用版本控制、更具敏捷性且可高效协作！
+#### <a name="updated-for-the-154-release"></a>版本 15.4 的更新内容
+想从 Visual Studio 早期版本升级？ Visual Studio 2017 提供以下优势：为任何开发、应用和平台提供无与伦比的效率。 使用 Visual Studio 2017 开发适用于 Android、iOS、Windows、Linux、Web 和云的应用。 快速编码、轻松调试和诊断、时常测试，并且可以放心地进行发布。 还可通过构建自己的扩展，以便扩展和自定义 Visual Studio。 此版本发布之后，可使用版本控制、更具敏捷性且可高效协作！
 
-以下是我们所做更改的高级扼要重述：
+以下是我们自上一版本 Visual Studio 2015 以来所做更改的高级扼要重述：
 
 * **重新定义了基础知识**。 新的安装体验意味着安装速度更快，并且能够在需要时立即安装。 无论是要加载大型解决方案和项目，还是要处理代码文件夹或单个代码文件，Visual Studio 的启动速度都比以前更快。 Visual Studio 还可帮助你掌控全局，特别是对使用 DevOp 的团队而言。
 * **性能和工作效率**。 我们专注于新型、现代化的移动、云和桌面开发功能。 此外，还改进了总体采集、性能和常规开发人员工作效率体验。 与以前相比，现在的 Visual Studio 启动速度更快、响应能力更强、使用的内存更少。
 * **使用 Azure 开发云应用**。 通过内置的 Azure 工具套件，可以轻松地创建由 Microsoft Azure 提供支持的云优先应用。 借助 Visual Studio，可以轻松配置、构建、调试、打包和部署 Azure 上的应用和服务。
 * **移动应用开发**。 在 Visual Studio 2017 中，可以使用 Xamarin 进行创新并快速得出结果。Xamarin 通过使用一个核心基本代码和技能集统一你的多平台移动需求。 利用现有的团队、技术投资和 C# 代码，在预算范围内提前实现优质的用户体验。 加速移动生命周期的每一步，提供一流的用户体验或一系列可提高员工工作效率的工作效率应用。
-* 跨平台开发可向任意目标平台无缝提供软件。 通过 Redgate 数据工具将 DevOps 流程扩展到 SQL Server 中，并在 Visual Studio 中安全地自动处理数据库部署。 使用 Visual Studio Tools for Unity 开发和发布多平台游戏。 或使用 .NET Core 编写在 Windows、Linux 和 macOS 操作系统上运行的未修改的应用和库。 （15.3 中的新增功能：获取 .NET Core 2.0 SDK 的并排支持。）
+* **跨平台开发**。 向任意目标平台无缝提供软件。 通过 Redgate 数据工具将 DevOps 流程扩展到 SQL Server 中，并在 Visual Studio 中安全地自动处理数据库部署。 或使用 .NET Core 编写在 Windows、Linux 和 macOS 操作系统上运行的未修改的应用和库。 （**15.3 中的新增功能**：获取 .NET Core 2.0 SDK 的并排支持。）
+* **游戏开发**。 借助 Visual Studio Tools Unity (VSTU)，可以使用 Visual Studio 在 C# 中编写游戏和编辑器脚本，随后使用其功能强大的调试器查找和修复错误。 VSTU 的最新版本包括用于 Unity 的 ShaderLab 着色器语言的语法着色、更好的调试器可视化效果以及针对 MonoBehavior 向导的改进的代码生成。 VSTU 还提供 Unity 项目文件、控制台消息以及在 Visual studio 中启动游戏的功能，从而使你可以在编写代码时花费更少的时间与 Unity 编辑器进行切换。
 
 > [!NOTE]
 > 有关 Visual Studio 2017 中新增功能的完整列表，请参阅[发行说明](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)。
 
-以下是关于 Visual Studio 2017 中最值得关注的改进及新增功能的详细信息。
+以下是关于 Visual Studio 2017 中最值得关注的改进及新增功能的更多详细信息。
 
 ## <a name="redefined-fundamentals"></a>重新定义了基础知识
 ### <a name="a-new-setup-experience"></a>新的安装体验
@@ -58,9 +58,14 @@ ms.lasthandoff: 09/06/2017
 
 若要更深入地了解新的安装体验，包括指导你进行演练的分步说明，请参阅[安装 Visual Studio](../install/install-visual-studio.md) 页。
 
+### <a name="a-focus-on-accessibility"></a>聚焦辅助功能
+**15.3 中的新增功能**：我们进行了超过 1,700 处目标修补，以提高 Visual Studio 与我们许多客户使用的辅助技术的兼容性。 在十几种情况下，我们提高了与屏幕阅读器、高对比度主题和其他辅助技术的兼容性，比以往更兼容。 同时，我们还对调试程序、编辑器和 shell 进行了重大改进。
+
+有关详细信息，请参阅博文 [Visual Studio 2017 版本 15.3 中的辅助功能改进](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)。
+
 ## <a name="performance-and-productivity"></a>性能和工作效率
 ### <a name="sign-in-across-multiple-accounts"></a>使用多个帐户登录  
-我们在 Visual Studio 中引入了新的标识服务，用户可在团队资源管理器、Azure 工具、Windows 应用商店发布等之间共享用户帐户。
+我们在 Visual Studio 中引入了新的标识服务，用户可在团队资源管理器、Azure 工具、Microsoft Store 发布等之间共享用户帐户。
 
 你还能在更长的时间内保持登录状态。 Visual Studio 不会每隔 12 小时就要求你再次登录。 若要了解详细信息，请参阅 [Fewer Visual Studio Sign-in Prompts](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/)（更少的 Visual Studio 登录提示）博客文章。
 
@@ -110,7 +115,7 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 ![实时单元测试](../ide/media/lut-codewindow.png "Visual Studio 的 Enterprise 版本中新增的实时单元测试功能的示例")
 
-有关详细信息，请参阅 [Visual Studio 2017 Enterprise 中的实时单元测试](https://blogs.msdn.microsoft.com/visualstudio/2017/03/09/live-unit-testing-in-visual-studio-2017-enterprise/)博文。
+有关详细信息，请参阅 [Live Unit Testing 简介](../test/live-unit-testing-intro.md)。 有关 Visual Studio Enterprise 2017 各个版本的新增功能列表，请参阅 [ Live Unit Testing 中的新增功能](../test/live-unit-testing-whats-new.md)。
 
 #### <a name="set-up-a-cicd-pipeline-to-run-automated-tests-efficiently"></a>设置 CI/CD 管道以高效运行自动测试
 自动测试是任何 DevOps 管道的重要组成部分。 用户可以在更短的周期内，持续且可靠地测试并发布解决方案。 CI/CD（持续集成和持续交付）流有助于改善进程效率。
@@ -119,14 +124,9 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 此外，若要详细了解[用于 Visual Studio 的持续交付工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 扩展中的新增功能，请参阅博文[有把握提交：提交时代码质量](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/)。
 
-### <a name="a-focus-on-accessibility"></a>聚焦辅助功能
-在 15.3 中，我们进行了超过 1,700 处目标修补，以提高 Visual Studio 与我们许多客户使用的辅助技术的兼容性。 在十几种情况下，我们提高了与屏幕阅读器、高对比度主题和其他辅助技术的兼容性，比以往更兼容。 同时，我们还对调试程序、编辑器和 shell 进行了重大改进。
-
-有关详细信息，请参阅博文 [Visual Studio 2017 版本 15.3 中的辅助功能改进](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)。
-
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE 增强功能
 #### <a name="use-new-refactorings"></a>使用新的重构
-在 15.3 中，我们添加了几种新的重构，其中包括：
+**15.3 中的新增功能**：我们添加了几种新的重构，其中包括：
 *   解决合并冲突
 *   添加参数（从 CallSite 添加）
 *   生成重写函数
@@ -137,25 +137,21 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 *   转换 if-to-switch
 *   删除未使用的变量
 
-有关详细信息，请参阅 [Visual Studio 中的重构、代码生成和快速操作](refactoring-code-generation-quick-actions.md)页。
-
+有关详细信息，请参阅 [Visual Studio 中的重构、代码生成和快速操作](refactoring-code-generation-quick-actions.md)页。  
 
 #### <a name="interact-with-git"></a>与 Git 进行交互
 在 Visual Studio 中处理项目时，可以对代码进行设置，并将代码快速提交和发布到 Git 服务。 还可以通过单击 IDE 右下角的按钮调出菜单来管理 Git 存储库。
 
 ![Visual Studio 2017 与 Git 进行交互对话框](../ide/media/vsIDE-GitInteraction.png "Visual Studio IDE 中的 Git 工具")
 
-#### <a name="view-and-navigate-code-with-structure-visualizer"></a>通过结构可视化工具查看和导航代码
-结构可视化工具可以在代码上绘制结构参考线（也称为 缩进参考线）。 使用该工具，无需滚动即可将代码可视化，并随时了解当前位于哪一代码块。 悬停在行上时将显示工具提示，通过工具提示可以看到该代码段的开头及其父级。 通过 TextMate 语法以及 C#、Visual Basic 和 XAML 支持的所有语言都可以使用该工具。
-
-![Visual Studio 2017 结构可视化工具](../ide/media/vsIDE-StructureVisualizer.png "Visual Studio 中的结构可视化工具")
-
 #### <a name="experience-improved-navigation-controls"></a>体验改进的导航控件
 我们改善了导航体验，可让你更自信地从 A 导航到 B，同时减少此过程中的干扰。
 
-* **转到** (Ctrl + F12) &ndash; 从任何基类型或成员转到其各种实现。
+* **15.4 中的新增功能**：**转到定义（Ctrl+单击或 F12）**&ndash; 鼠标用户按 **Ctrl**，然后单击成员，可以更轻松地导航到成员定义。 通过按 **Ctrl** 并将鼠标悬停在代码符号上方，可在符号下方加下划线并将其转换为链接。 有关详细信息，请参阅[转到定义和查看定义](../ide/go-to-and-peek-definition.md)。  
 
-* **转到全部**（Ctrl+T 或 Ctrl+,）&ndash;直接导航到任何文件/类型/成员/符号声明。 可以筛选结果列表，也可以使用查询语法（例如使用“f searchTerm”导航到文件，使用“t searchTerm”导航到类型等）。
+* **转到实现 (Ctrl+F12)** &ndash; 从任何基类型或基成员转到各种实现。
+
+* **转到全部（Ctrl+T 或 Ctrl+,）**&ndash; 直接导航到任何文件/类型/成员/符号声明。 可以筛选结果列表，也可以使用查询语法（例如使用“f searchTerm”导航到文件，使用“t searchTerm”导航到类型等）。
 
  ![改进后的“转到全部”](../ide/media/vs2017ide-navigation-go-to.png "改进后的“转到全部”功能的示例")
 
@@ -163,7 +159,9 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
  ![新的“查找所有引用”工具](../ide/media/vs2017ide-find-all-references.png "新的“查找所有引用”工具的示例")
 
-* **缩进参考线** &ndash; 灰色的垂直虚线，作为代码中的结构参考线，可在你的可视范围内提供上下文。 可以通过热门的 Productivity Power Tool 进行识别。
+* **结构可视化工具** &ndash; 灰色的竖虚线（缩进参考线）可以在代码中起到关键点的作用，方便用户获得可视范围内的上下文。 可以通过热门的 Productivity Power Tool 进行识别。 使用该工具，无需滚动即可将代码可视化，并随时了解当前位于哪一代码块。 将鼠标悬停在行上时会显示工具提示，通过工具提示可以看到该代码块的开头及其父级。 通过 TextMate 语法以及 C#、Visual Basic 和 XAML 支持的所有语言都可以使用该工具。  
+
+![Visual Studio 2017 结构可视化工具](../ide/media/vsIDE-StructureVisualizer.png "Visual Studio 中的结构可视化工具")
 
 若要深入了解新增的工作效率功能的详细信息，请参阅由 Mark Wilson-Thomas 发布的 [Productivity in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/)（使用 Visual Studio 2017 提高工作效率）博客文章。
 
@@ -206,7 +204,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 ## <a name="cross-platform-development"></a>跨平台开发
 ### <a name="redgate-data-tools"></a>Redgate 数据工具
-现在可以在以下版本的 Visual Studio 2017 中使用 Redgate Data Tools，将 DevOps 功能扩展到 SQL Server 数据库开发。
+现在可以在 Visual Studio 中使用 Redgate 数据工具，将 DevOps 功能扩展到 SQL Server 数据库开发。
 
 Visual Studio 2017 Enterprise 随附：
 - [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) 有助于开发迁移脚本、使用源代码管理功能来管理数据库更改，并安全地自动部署 SQL Server 数据库更改和应用更改。
@@ -217,32 +215,33 @@ Visual Studio 2017 所有版本随附：
 
 若要了解详细信息，请参阅我们的 [Visual Studio 2017 中的 Redgate Data Tools](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) 博文。
 
-### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
-作为“适用于 Unity 的游戏开发”工作负载的一部分，我们添加了有助于跨平台开发的工具， 可用于创作 2D 和 3D 游戏及交互内容。 使用 Visual Studio 2017 和 Unity 5.6，一次创建即可发布到 21 个平台，包括所有移动平台、WebGL、Mac、PC 和 Linux 桌面、Web 或主机。
-
-有关详细信息，请参阅 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 页。
-
 ### <a name="net-core"></a>.NET 核心
 .NET Core 是 .NET 标准的常规用途、模块化、跨平台和开放源代码实现，且包含许多与 .NET Framework 相同的 API。
 
 .NET Core 平台由一些组件构成，其中包括托管的编译器、运行时、基类库和大量应用程序模型，如 ASP.NET 核心。 .NET Core 支持三种主要的操作系统 (OS)：Windows、 Linux 和 macOS。 可以在设备、云和嵌入式/IoT 方案中使用 .NET Core。
 
-当前，它还包括了 Docker 支持
+当前，它还包括 Docker 支持。  
 
-15.3 中的新增功能：Visual Studio 2017 版本 15.3 支持 .NET Core 2.0 开发。 （在 15.3 中，使用 .NET Core 2.0 前需分别下载并安装 .NET Core 2.0 SDK。）
+15.3 中的新增功能：Visual Studio 2017 版本 15.3 支持 .NET Core 2.0 开发。 使用 .NET Core 2.0 前需分别下载并安装 .NET Core 2.0 SDK。  
 
 有关详细信息，请参阅 [.NET Core 指南](https://docs.microsoft.com/dotnet/core/index)页。
 
-## <a name="talk-to-us"></a>与我们交流  
- 为什么将反馈发送至 Visual Studio 团队？ 因为我们认真对待客户反馈：正是它激励我们的行为。
+## <a name="games-development"></a>游戏开发
+### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
+作为“适用于 Unity 的游戏开发”工作负载的一部分，我们添加了有助于跨平台开发的工具， 可用于创作 2D 和 3D 游戏及交互内容。 使用 Visual Studio 2017 和 Unity 5.6，一次创建即可发布到 21 个平台，包括所有移动平台、WebGL、Mac、PC 和 Linux 桌面、Web 或主机。
 
-如果有关于如何改进 Visual Studio 的建议，或想报告问题，请参阅[与我们交流](../ide/talk-to-us.md)页，了解详细信息。
+有关详细信息，请参阅 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 页。
+
+## <a name="talk-to-us"></a>与我们交流  
+ 为什么将反馈发送至 Visual Studio 团队？ 因为我们严肃对待客户反馈。 这会给予我们巨大的行事动力。  
+
+如果有关于如何改进 Visual Studio 的建议，或想报告问题，请参阅[与我们交流](../ide/talk-to-us.md)页。  
 
 ### <a name="report-a-problem"></a>报告问题  
- 有时，一条消息不足以说明所遇问题的总体影响。 如果遇到挂起、崩溃或其他性能问题，可利用“报告问题”工具与我们轻松共享重现步骤和支持文件（如屏幕快照以及跟踪和堆转储文件）。 有关如何使用此工具的详细信息，请参阅[如何报告问题](how-to-report-a-problem-with-visual-studio-2017.md)页。
+ 有时，一条消息不足以说明所遇问题的总体影响。 如果遇到挂起、崩溃或其他性能问题，可利用“报告问题”工具与我们轻松共享重现步骤和支持文件（如屏幕截图以及跟踪和堆转储文件）。 有关如何使用此工具的详细信息，请参阅[如何报告问题](how-to-report-a-problem-with-visual-studio-2017.md)页。  
 
 ### <a name="track-your-issue-in-connect"></a>在“连接”中跟踪你的问题  
- 要跟踪 Visual Studio 反馈的状态，请转至[连接](http://connect.microsoft.com/)，并在此处报告 bug。 报告后，可返回至“连接”来跟踪其状态。
+ 要跟踪 Visual Studio 反馈的状态，请转至[连接](http://connect.microsoft.com/)，并在此处报告 bug。 报告后，可返回至“连接”来跟踪其状态。  
 
 ## <a name="see-also"></a>另请参阅
 * [Visual Studio 2017 发行说明](https://www.visualstudio.com/news/vs2015-vs)
@@ -250,4 +249,3 @@ Visual Studio 2017 所有版本随附：
 * [C# 中的新增功能](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
 * [Team Foundation Server 中的新增功能](https://www.visualstudio.com/docs/whats-new)
 * [Visual Studio for Mac 中的新增功能](https://www.visualstudio.com/vs/visual-studio-mac/)
-

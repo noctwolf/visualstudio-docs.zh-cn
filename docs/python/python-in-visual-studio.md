@@ -1,34 +1,36 @@
 ---
 title: "Visual Studio 中的 Python | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 09/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 652d69ed30c101e7ea8d9b85d9b71e597975d555
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 082ac09fcc1bb466de891d0daa7178e505c35770
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-python-in-visual-studio"></a>在 Visual Studio 中使用 Python
 
 Python 是一种受欢迎的编程语言，它可靠、灵活、易于学习、可在所有操作系统上免费使用，并且强大的开发人员社区和很多免费库都支持它。 Python 支持所有开发方式，包括 Web 应用程序、Web 服务、桌面应用、脚本编写和科学计算，许多高校人员、科学家、业余和专业开发人员都在使用 Python。 可以在 [python.org](https://www.python.org) 和 [Python for Beginners](https://www.python.org/about/gettingstarted/)（面向初学者的 Python）中了解有关该语言的详细信息。
 
 Windows 上的 Visual Studio 通过 Python 开发和数据科学工作负载 (Visual Studio 2017) 和免费的针对 Visual Studio 的 Python 工具扩展（Visual Studio 2015 及更早版本），为 Python 语言提供[开源代码](https://github.com/Microsoft/ptvs)支持。 Python 目前不支持在 Visual Studio for Mac 中使用，但可通过 Visual Studio Code 在 Mac 和 Linux 上使用（请参阅[下面的问题解答](#questions-and-answers)）。
 
-请按照[安装说明](installation.md)设置 Python 工作负载，然后使用下方的链接详细了解与 Python 相关的功能，以及 Visual Studio 本身的功能。
+若要开始使用 Python，请执行以下操作：
+
+- 按照[安装说明](installation.md)安装 Python 工作负载
+- 阅读一个或多个指导如何创建项目的快速入门教程。 如果不确定，可先从[从模板创建项目](quickstart-02-project-from-template.md)开始。
+- 按照[在 Visual Studio 中使用 Python](vs-tutorial-01-01.md) 教程操作，获得完整的端到端体验。
+- 然后使用下方链接了解与 Python 相关的功能，以及 Visual Studio 本身的功能。
 
 | 功能 | 说明 | Visual Studio 常规文档 | 
 | --- | --- | --- |
@@ -44,9 +46,10 @@ Windows 上的 Visual Studio 通过 Python 开发和数据科学工作负载 (Vi
 
 Python 工作负载还包括[用于 Python 的 Azure SDK](azure-sdk-for-python.md)，它用于简化从 Windows、Mac OS X 和 Linux 应用使用 Azure 服务的过程。
 
-YouTube 上的[入门和进阶视频](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)系列概述了主要功能。
+有关视频介绍，请观看 Microsoft Virtual Academy 上的短期课程[针对 Visual Studio 的 Python 工具](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)（总共 22 分钟左右）。 
 
-[![Python 工具视频](media/video-general.png)](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+
 
 ## <a name="questions-and-answers"></a>问题和解答
 
@@ -195,4 +198,3 @@ Visual Studio 各版本支持的功能：
 - [IIS 和 Python 之间 WFastCGI 桥](https://pypi.python.org/pypi/wfastcgi) (python.org)
 - [Microsoft Virtual Academy 上的免费 Phthon 课程](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 - [Microsoft Virtual Academy 上的“Python 最常见问题”](https://aka.ms/mva-top-python-questions)
-

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,37 +22,21 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: f43b470f07e8b90c62d17c7905ad458a22d41ff1
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 2e66af6d2d38685bdd905b7991c6e8f782e4f696
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
 通过本主题中的过程，学会生成、重新生成或清除解决方案中的所有/部分项目/项目项。 有关分步教程，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。  
   
 > [!NOTE]
->  你的 Visual Studio 版本中的 UI 可能与此主题中描述的有所不同，具体取决于现用的设置。 若要更改设置，请打开“工具”菜单并选择“导入和导出设置”。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
+> 你的 Visual Studio 版本中的 UI 可能与此主题中描述的有所不同，具体取决于现用的设置。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具”，“导入和导出设置”，然后选择“重置所有设置”。
   
 ### <a name="to-build-rebuild-or-clean-an-entire-solution"></a>生成、重新生成或清理整个解决方案  
   
@@ -96,7 +79,7 @@ ms.lasthandoff: 05/24/2017
   
     -   在菜单栏上，依次选择“生成”和“生成解决方案”(CTRL+SHIFT+B)。  
   
-     清理此复选框后，运行以上任一命令时，会生成所有项目、项目依赖项和解决方案文件。 默认情况下清除此复选框。  
+    清理此复选框后，运行以上任一命令时，会生成所有项目、项目依赖项和解决方案文件。 默认情况下清除此复选框。  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>仅生成选定的 Visual C++ 项目  
   
@@ -110,13 +93,13 @@ ms.lasthandoff: 05/24/2017
   
     -   **仅链接** *ProjectName*  
   
-     这些命令仅适用于所选的 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目，而不会生成、重新生成、清理或链接任何项目依赖项或解决方案文件。 根据 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的版本，“仅项目”子菜单可能包含更多命令。  
+    这些命令仅适用于所选的 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目，而不会生成、重新生成、清理或链接任何项目依赖项或解决方案文件。 根据 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的版本，“仅项目”子菜单可能包含更多命令。  
   
 ### <a name="to-compile-multiple-c-project-items"></a>编译多个 C++ 项目项  
   
 1.  在“解决方案资源管理器”中，选择多个具有可编译操作的文件，打开某个文件的快捷菜单，然后选择“编译”。  
   
-     如果文件具有依赖项，则按依赖顺序编译文件。 如果编译时无法提供文件所需的预编译标头，编译操作将失败。 编译操作使用当前的活动解决方案配置。  
+    如果文件具有依赖项，则按依赖顺序编译文件。 如果编译时无法提供文件所需的预编译标头，编译操作将失败。 编译操作使用当前的活动解决方案配置。  
   
 ### <a name="to-stop-a-build"></a>停止生成  
   
@@ -126,12 +109,12 @@ ms.lasthandoff: 05/24/2017
   
     -   选择 Ctrl + Break 键。  
   
-## <a name="see-also"></a>另请参阅  
- [如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)   
- [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [编译和生成](../ide/compiling-and-building-in-visual-studio.md)   
- [了解生成配置](../ide/understanding-build-configurations.md)   
- [调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [C/C++ 生成参考](/cpp/build/reference/c-cpp-building-reference)   
- [Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)   
- [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
+## <a name="see-also"></a>请参阅
+[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)   
+[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)   
+[编译和生成](../ide/compiling-and-building-in-visual-studio.md)   
+[了解生成配置](../ide/understanding-build-configurations.md)   
+[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
+[C/C++ 生成参考](/cpp/build/reference/c-cpp-building-reference)   
+[Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)   
+[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)

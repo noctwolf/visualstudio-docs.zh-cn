@@ -1,34 +1,34 @@
 ---
 title: "使用针对 Visual Studio 的 R 工具的远程工作区 | Microsoft Docs"
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5778c9cf-564d-47b0-8d64-e5dc09162479
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: aaea147589f274a5b3e1de4071f980b05e8f6745
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: b708aa33b490cb01ad1e1f31664804f658f1aa55
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="setting-up-remote-workspaces"></a>设置远程工作区
 
 本主题说明如何使用 SSL 和相应的 R 服务配置远程服务器。 这使针对 Visual Studio 的 R 工具 (RTVS) 可以连接到该服务器上的远程工作区。 
 
 - [远程计算机要求](#remote-computer-requirements)
 - [安装 SSL 证书](#install-an-ssl-certificate)
-- [安装 R 服务](#install-r-services)
+- [在 Windows 上安装 SSL 证书](#install-an-ssl-certificate-on-windows)
+- [在 Ubuntu 上安装 SSL 证书](#install-an-ssl-certificate-on-ubuntu)
+- [在 Windows 上安装 R 服务](#install-r-services-on-windows)
+- [在 Ubuntu 上安装 R 服务](#install-r-services-on-ubuntu)
 - [配置 R 服务](#configure-r-services)
 - [疑难解答](#troubleshooting)
 
@@ -49,9 +49,12 @@ RTVS 要求通过 HTTP 实现所有与远程服务器的通信，这就要求服
 
 有关详细背景信息，请参阅维基百科中的[公钥证书](https://en.wikipedia.org/wiki/Public_key_certificate)。
 
+## <a name="install-an-ssl-certificate-on-windows"></a>在 Windows 上安装 SSL 证书
+必须在 Windows 上手动安装 SSL 证书。 请按照以下说明安装 SSL 证书。
+
 ### <a name="obtaining-a-self-signed-certificate"></a>获取自签名证书
 
-和来自受信任证书颁发机构的证书相比，自签名证书更像是为自己创建一张身份证。 当然，比起使用受信任的颁发机构，此过程要简便许多，但是同样缺少强身份验证。这意味着攻击者可将自己的证书替换为未签名的证书，捕获客户端和服务器之间的所有流量。 因此，仅可在测试方案和受信任的网络中使用自签名证书，而不应在生产中使用它。
+如有可信证书，则跳过此部分。 和来自受信任证书颁发机构的证书相比，自签名证书更像是为自己创建一张身份证。 当然，比起使用受信任的颁发机构，此过程要简便许多，但是同样缺少强身份验证。这意味着攻击者可将自己的证书替换为未签名的证书，捕获客户端和服务器之间的所有流量。 因此，仅可在测试方案和受信任的网络中使用自签名证书，而不应在生产中使用它。
 
 为此，在使用自签名证书连接服务器时，RTVS 总会发出下列警告：
 
@@ -94,8 +97,48 @@ RTVS 要求通过 HTTP 实现所有与远程服务器的通信，这就要求服
 
 1. 连续选择“确定”两次以消除对话框，并提交更改。
 
+## <a name="install-an-ssl-certificate-on-ubuntu"></a>在 Ubuntu 上安装 SSL 证书
+`rtvs-daemon` 程序包将在安装过程中默认安装自签名证书。
 
-## <a name="install-r-services"></a>安装 R 服务
+### <a name="obtaining-a-self-signed-certificate"></a>获取自签名证书
+
+有关使用自签名证书的好处和风险，请参阅 Windows 说明。 `rtvs-daemon` 程序包在安装期间会生成并配置自签名证书。 仅在需要替换自动生成的自签名证书时，才需执行此操作。
+
+若要自行颁发自签名证书，请执行以下操作：
+1. 使用 SSH 连接到或登录到 Linux 计算机。
+2. 安装 `ssl-cert` 程序包：
+    ```sh
+    sudo apt-get install ssl-cert
+    ```
+3. 运行 `make-ssl-cert` 以生成默认的自签名 SSL 证书：
+    ```sh
+    sudo make-ssl-cert generate-default-snakeoil --force-overwrite
+    ```
+4. 将生成的密钥和 PEM 文件转换为 PFX。 生成的 PFX 应位于主文件夹中：
+    ```sh
+    openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
+    ```
+
+### <a name="configuring-rtvs-daemon"></a>配置 RTVS 守护程序
+
+必须在 `/etc/rtvs/rtvsd.config.json` 中设置 SSL 证书文件路径（PFX 的路径）。 分别使用文件路径和密码更新 `X509CertificateFile` 和 `X509CertificatePassword`。
+
+    ```json
+    {
+      "logging": { "logFolder": "/tmp" },
+      "security": {
+        "allowedGroup": "",
+        "X509CertificateFile": "/etc/rtvs/ssl-cert-snakeoil.pfx",
+        "X509CertificatePassword": "SnakeOil"
+      },
+      "startup": { "name": "rtvsd" },
+      "urls": "https://0.0.0.0:5444"
+    }
+    ```
+
+保存该文件并重新启动守护程序 (`sudo systemctl restart rtvsd`)。
+    
+## <a name="install-r-services-on-windows"></a>在 Windows 上安装 R 服务
 
 要运行 R 代码，远程计算机必须安装 R 解释器，如下所示：
 
@@ -108,10 +151,10 @@ RTVS 要求通过 HTTP 实现所有与远程服务器的通信，这就要求服
 
 1. 运行 [R 服务安装程序](https://aka.ms/rtvs-services)并根据提示重启。 安装程序执行如下操作：
 
-    -   在 `%PROGRAMFILES%\R Tools for Visual Studio\1.0\` 中创建一个文件夹，并复制所有必需的二进制文件。
-    -   安装 `RHostBrokerService` 和 `RUserProfileService` 并配置为自动启动。
-    -   将 `seclogon` 服务配置为自动启动。
-    -   将 `Microsoft.R.Host.exe` 和 `Microsoft.R.Host.Broker.exe` 添加到默认端口 5444 上的防火墙入站规则。
+    - 在 `%PROGRAMFILES%\R Tools for Visual Studio\1.0\` 中创建一个文件夹，并复制所有必需的二进制文件。
+    - 安装 `RHostBrokerService` 和 `RUserProfileService` 并配置为自动启动。
+    - 将 `seclogon` 服务配置为自动启动。
+    - 将 `Microsoft.R.Host.exe` 和 `Microsoft.R.Host.Broker.exe` 添加到默认端口 5444 上的防火墙入站规则。
 
 重启计算机时，R 服务会自动启动：
 
@@ -119,6 +162,33 @@ RTVS 要求通过 HTTP 实现所有与远程服务器的通信，这就要求服
 - R 用户配置文件服务是处理 Windows 用户配置文件创建的特权组件。 新用户首次登陆 R 服务器计算机时调用该服务。
 
 在服务管理控制台 (`compmgmt.msc`) 中可以看到这些服务。  
+
+## <a name="install-r-services-on-ubuntu"></a>在 Ubuntu 上安装 R 服务
+
+要运行 R 代码，远程计算机必须安装 R 解释器，如下所示：
+
+1. 下载并安装下列内容之一：
+
+    - [Microsoft R Open](https://mran.microsoft.com/open/)
+    - [CRAN R for Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+
+    虽然二者功能相同，但 Microsoft R Open 另外还受益于 [Intel Math Kernel 库](https://software.intel.com/intel-mkl)的附加硬件加速线性代数库。
+
+1. 下载、提取并运行安装脚本 [RTVS 守护程序包](https://aka.ms/r-remote-services-linux-binary-current)。 此过程应当安装必需的程序包、其依赖项和 RTVS 守护程序：
+
+    - 下载：`wget -O rtvs-daemon.tar.gz https://aka.ms/rtvs-daemon-current`
+    - 提取：`tar -xvzf rtvs-daemon.tar.gz`
+    - 运行安装程序：`sudo ./rtvs-install`。 Dotnet 程序包安装要求添加新的可信签名密钥。 若要以无提示方式安装或自动安装，请使用此命令 `sudo ./rtvs-install -s`。
+    
+
+1. 启用并启动守护程序：
+
+    - 启用：`sudo systemctl enable rtvsd`
+    - 启动守护程序：`sudo systemctl start rtvsd`
+
+1. 检查守护程序是否正在运行，运行此命令 `ps -A -f | grep rtvsd`。 应该能看到一个以 `rtvssvc` 用户身份运行的进程。 现在应能够从针对 Visual Studio 的 R 工具连接到此守护程序，并将 URL 发送到此 Linux 计算机。
+
+若要配置 `rtvs-daemon`，请参阅 `man rtvsd`。
 
 ## <a name="configure-r-services"></a>配置 R 服务
 
@@ -177,4 +247,3 @@ RTVS 要求通过 HTTP 实现所有与远程服务器的通信，这就要求服
 **问：我已尝试上述解决方案，但仍不起作用。现在该怎么办？**
 
 请查看 `C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp` 中的日志文件。 对于运行的 R 代理服务的每个实例，此文件夹都有一个单独的日志文件。 每当服务重启时，都会创建新的日志文件。 检查最新的日志文件，查找有关可能发生哪些错误的线索。
-

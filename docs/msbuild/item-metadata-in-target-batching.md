@@ -1,35 +1,36 @@
 ---
 title: "目标批处理中的项元数据 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "批处理 [MSBuild]"
-  - "MSBuild, 目标批处理"
-  - "目标批处理 [MSBuild]"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- batching [MSBuild]
+- MSBuild, target batching
+- target batching [MSBuild]
 ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: d24400bc3889d5f7fbe691d3e75b7fd7ad155e01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 目标批处理中的项元数据
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够对生成目标的输入和输出执行依赖项分析。  如果确定了目标的输入或输出是最新的，将跳过该目标并继续生成过程。  `Target` 元素使用 `Inputs` 和 `Outputs` 特性来指定在依赖项分析过程中要检查的项。  
+# <a name="item-metadata-in-target-batching"></a>目标批处理中的项元数据
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够对生成目标的输入和输出执行依赖项分析。 如果确定了目标的输入或输出是最新的，将跳过该目标并继续生成过程。 `Target` 元素使用 `Inputs` 和 `Outputs` 属性指定要在依赖项分析过程中检查的项。  
   
- 如果目标包含使用批处理的项作为输入或输出的任务，该目标的 `Target` 元素应当在其 `Inputs` 特性或 `Outputs` 特性中使用批处理，以便 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够跳过已经是最新的项批。  
+ 如果目标包含使用批处理的项作为输入或输出的任务，该目标的 `Target` 元素应在其 `Inputs` 或 `Outputs` 属性中使用批处理，以便 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够跳过最新的项批。  
   
-## 批处理目标  
- 下面的示例包含一个名为 `Res` 的项列表，该项集合根据 `Culture` 项元数据被划分为两个批。  其中每个批分别传递到 `AL` 任务中，该任务为每个批分别创建一个输出程序集。  通过对 `Target` 元素的 `Outputs` 特性使用批处理，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以在运行目标之前确定各个批是否是最新的。  如果不使用目标批处理，在每次执行目标时，任务都会运行这两个项批。  
+## <a name="batching-targets"></a>批处理目标  
+ 下面的示例包含名为 `Res` 的项列表，该列表根据 `Culture` 项元数据划分为两个批。 其中每个批分别传递到 `AL` 任务中，该任务为每个批创建一个输出程序集。 通过对 `Target` 元素的 `Outputs` 属性使用批处理，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可在运行目标之前确定各个批是否是最新的。 如果不使用目标批处理，在每次执行目标时，任务都会运行这两个项批。  
   
-```  
+```xml  
 <Project  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
@@ -67,8 +68,8 @@ caps.handback.revision: 6
 </Project>  
 ```  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [如何：增量生成](../msbuild/how-to-build-incrementally.md)   
  [批处理](../msbuild/msbuild-batching.md)   
- [Target 元素 \(MSBuild\)](../msbuild/target-element-msbuild.md)   
+ [Target 元素 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [任务批处理中的项元数据](../msbuild/item-metadata-in-task-batching.md)

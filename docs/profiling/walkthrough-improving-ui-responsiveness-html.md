@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,38 +13,23 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- performance tools, JavaScript [Store apps]
-- performance, JavaScript [Store apps]
-- performance, HTML [Store apps]
-- performance tools, HTML [Store apps]
+- performance tools, JavaScript [UWP apps]
+- performance, JavaScript [UWP apps]
+- performance, HTML [UWP apps]
+- performance tools, HTML [UWP apps]
 ms.assetid: 7e5a2524-dbf5-4a40-b5d6-2d1ed7fff3de
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 753b4abd76b56ff46406b3a2f5ab5b8fb008c526
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cf4747a1e2c0d9d7c20fe0856becb4cd42d1e847
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>演练： 改进 UI 响应能力 (HTML)
-本演练引导你使用 [HTML UI 响应能力探查器](../profiling/html-ui-responsiveness.md)确定并修复性能问题。 探查器可用于 Visual Studio 中的使用 JavaScript 的 Windows Universal 和 Windows 应用商店应用。 在此方案中，你将创建一个过于频繁地更新 DOM 元素的性能测试应用，并使用探查器确定并修复此问题。  
+本演练引导你使用 [HTML UI 响应能力探查器](../profiling/html-ui-responsiveness.md)确定并修复性能问题。 探查器可用于 Visual Studio 中的使用 JavaScript 的 Windows Universal 和 UWP 应用。 在此方案中，你将创建一个过于频繁地更新 DOM 元素的性能测试应用，并使用探查器确定并修复此问题。  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>创建并运行性能测试应用  
   
@@ -200,13 +184,13 @@ ms.lasthandoff: 02/22/2017
   
 7.  在“CPU 使用率”图的中间选择一个一到两秒的部分（单击并拖动或使用 Tab 键和箭头键）。 下图显示了做出选择后的“CPU 使用率”图。 非共享区域为选定内容。  
   
-     ![CPU 使用率图](~/profiling/media/js_htmlviz_app_cpu.png "JS_HTMLViz_App_CPU")  
+     ![CPU 使用率图](../profiling/media/js_htmlviz_app_cpu.png "JS_HTMLViz_App_CPU")  
   
 8.  选择“放大”。  
   
      此图将更改，更详细地显示选定时间段。 下图显示了放大后的“CPU 使用率”图。 （具体数据可能不同，但常规模式是明显的。）  
   
-     ![放大视图](~/profiling/media/js_htmlviz_app_zoom.png "JS_HTMLViz_App_Zoom")  
+     ![放大视图](../profiling/media/js_htmlviz_app_zoom.png "JS_HTMLViz_App_Zoom")  
   
      下方窗格中的“时间线详细信息”显示选定时间段的详细信息的示例。  
   

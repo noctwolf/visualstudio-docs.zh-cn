@@ -4,36 +4,19 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: a8d9473804b42169b5b33795b023832b753837d0
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: 412b6c2a1dede7438fd5c1564229a0e67f5cf845
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP 应用中的网络使用情况
 Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http API](/uwp/api/windows.web.http) 执行的网络操作的数据。 分析数据可以帮助你解决问题（如访问和身份验证问题、不正确的缓存用法和不良的显示和下载性能）。  
@@ -48,7 +31,7 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
   
 1.  在 Visual Studio 中打开项目。  
   
-2.  在菜单上，单击“调试/性能探查器...”。 选择“网络”，然后选择“启动”。  
+2.  在菜单上，单击“调试/性能探查器...”。选择“网络”，然后选择“启动”。  
   
 3.  网络工具开始收集应用的 HTTP 流量。  
   
@@ -91,5 +74,8 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
 3.  响应整齐打印按钮（位于“正文”选项卡内）可通过提高内容的可读性帮助你分析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 响应负载。  
   
 ## <a name="see-also"></a>另请参阅  
- [运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md) [Visual Studio 博客：Visual Studio 的网络检查器简介](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [第 9 频道视频：VS 诊断工具 – 新的网络探查器](http://channel9.msdn.com/Series/ConnectOn-Demand/206) [Visual Studio 中的分析](../profiling/index.md) [分析功能简介](../profiling/profiling-feature-tour.md)
+ [运行带/不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
+ [Visual Studio 博客：Visual Studio 网络检查器简介](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [第 9 频道视频：VS 诊断工具 – 新的网络探查器](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [使用 Visual Studio 分析](../profiling/index.md)  
+ [分析功能简介](../profiling/profiling-feature-tour.md)

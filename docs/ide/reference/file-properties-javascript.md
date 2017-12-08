@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,30 +25,15 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 6c2b3c577685fcb09cd9e9c7eeee955b75e76e27
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: f732a23631de181524382914e954ad50a7f0385d
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="file-properties-javascript"></a>文件属性，JavaScript
 文件属性可用于指示项目系统应对文件执行的操作。 例如，可以设置文件属性，指示是否应将文件作为资源文件添加到包。  
@@ -73,7 +57,7 @@ ms.lasthandoff: 06/23/2017
 
 -   资源 - 文件未包含在程序包清单中。 但是，文件的内容在程序包清单的包资源索引 (PRI) 中建立了索引。 通常用于资源文件。  
 
- “包操作”的默认值取决于添加到解决方案的文件的扩展名。  
+“包操作”的默认值取决于添加到解决方案的文件的扩展名。  
 
 ### <a name="file-name-property"></a>“文件名”属性  
  以只读值的方式显示文件名。 若要重命名文件，必须在解决方案资源管理器中右键单击该文件，选择“重命名”。  
@@ -82,7 +66,7 @@ ms.lasthandoff: 06/23/2017
  以只读值的形式显示文件的完整路径。 若要更改文件的路径，可以在解决方案资源管理器中拖放文件。  
 
 ## <a name="reference-file-properties"></a>“引用文件”属性  
- 本部分介绍从 [!INCLUDE[win8_app_js](../../ide/reference/includes/win8_app_js_md.md)] 引用的文件的共同属性。 在解决方案资源管理器中选择 .winmd 文件、SDK 引用、项目到项目的引用或程序集引用等引用时，其他属性会根据文件类型显示在“属性”窗口中。  
+ 本部分介绍从使用 JavaScript 生成的 UWP 应用引用的文件的共同属性。 在解决方案资源管理器中选择 .winmd 文件、SDK 引用、项目到项目的引用或程序集引用等引用时，其他属性会根据文件类型显示在“属性”窗口中。  
 
 ### <a name="culture"></a>区域性  
  显示与引用相关联的语言。  
@@ -113,4 +97,3 @@ ms.lasthandoff: 06/23/2017
 
 ## <a name="see-also"></a>另请参阅  
  [管理项目和解决方案属性](../../ide/managing-project-and-solution-properties.md)
-

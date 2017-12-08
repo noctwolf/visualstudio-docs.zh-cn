@@ -1,99 +1,101 @@
 ---
 title: "运算符 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "JavaScript，运算符"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: JavaScript, operators
 ms.assetid: b8602b69-aba9-46e8-86e1-cb533ad41410
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c9d0a098418399dba19b77a12c057a3fba334e31
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
-# 运算符 (JavaScript)
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 具有丰富多样的运算符，包括算术运算符、逻辑运算符、按位运算符、赋值运算符以及一些其他运算符。  有关说明和示例，请参见有关特定运算符的主题。  
+# <a name="operators-javascript"></a>运算符 (JavaScript)
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 具有各种运算符，包括算术、逻辑、按位、赋值，以及一些其他运算符。 有关说明和示例，请参阅特定运算符的相关主题。  
   
-## 算术运算符  
-  
-|描述|符号|  
-|--------|--------|  
-|[一元求反](../javascript/reference/subtraction-operator-decrement-javascript.md)|\-|  
-|[递增](../javascript/reference/increment-and-decrement-operators-javascript.md)|\+\+|  
-|[递减](../javascript/reference/increment-and-decrement-operators-javascript.md)|\-\-|  
-|[乘法](../javascript/reference/multiplication-operator-decrement-javascript.md)|\*|  
-|[除法](../javascript/reference/division-operator-decrement-javascript.md)|\/|  
-|[取模算法](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
-|[添加](../javascript/reference/addition-operator-decrement-javascript.md)|\+|  
-|[减法](../javascript/reference/subtraction-operator-decrement-javascript.md)|\-|  
-  
-## 逻辑运算符  
+## <a name="computational-operators"></a>算术运算符  
   
 |描述|符号|  
-|--------|--------|  
-|[逻辑“非”](../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|\!|  
+|-----------------|------------|  
+|[一元求反](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
+|[递增](../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[递减](../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
+|[乘法](../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
+|[除法](../javascript/reference/division-operator-decrement-javascript.md)|/|  
+|[取模算术](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[加法](../javascript/reference/addition-operator-decrement-javascript.md)|+|  
+|[减法](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
+  
+## <a name="logical-operators"></a>逻辑运算符  
+  
+|描述|符号|  
+|-----------------|------------|  
+|[逻辑“非”](../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[小于](../javascript/reference/comparison-operators-javascript.md)|\<|  
-|[大于](../javascript/reference/comparison-operators-javascript.md)|\>|  
-|[小于或等于](../javascript/reference/comparison-operators-javascript.md)|\<\=|  
-|[大于或等于](../javascript/reference/comparison-operators-javascript.md)|\>\=|  
-|[相等](../javascript/reference/comparison-operators-javascript.md)|\=\=|  
-|[不相等](../javascript/reference/comparison-operators-javascript.md)|\!\=|  
+|[大于](../javascript/reference/comparison-operators-javascript.md)|>|  
+|[小于或等于](../javascript/reference/comparison-operators-javascript.md)|\<=|  
+|[大于或等于](../javascript/reference/comparison-operators-javascript.md)|>=|  
+|[相等](../javascript/reference/comparison-operators-javascript.md)|==|  
+|[不相等](../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[逻辑“与”](../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
 |[逻辑“或”](../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
-|[有条件的（三元）](../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
+|[条件（三元）](../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
 |[逗号](../javascript/reference/comma-operator-decrement-javascript.md)|,|  
-|[严格相等](../javascript/reference/comparison-operators-javascript.md)|\=\=\=|  
-|[严格不等](../javascript/reference/comparison-operators-javascript.md)|\!\=\=|  
+|[全等](../javascript/reference/comparison-operators-javascript.md)|===|  
+|[不全等](../javascript/reference/comparison-operators-javascript.md)|!==|  
   
-## 位运算符  
+## <a name="bitwise-operators"></a>位运算符  
   
 |描述|符号|  
-|--------|--------|  
+|-----------------|------------|  
 |[按位“非”](../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
-|[按位左移](../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|\<\<|  
-|[按位右移](../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|\>\>|  
-|[无符号右移](../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|\>\>\>|  
+|[按位左移](../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
+|[按位右移](../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|>>|  
+|[无符号右移](../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|>>>|  
 |[按位“与”](../javascript/reference/bitwise-and-operator-decrement-javascript.md)|&|  
 |[按位“异或”](../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
 |[按位“或”](../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
   
-## 赋值运算符  
+## <a name="assignment-operators"></a>赋值运算符  
   
 |描述|符号|  
-|--------|--------|  
-|[赋值](../javascript/reference/assignment-operator-decrement-equal-javascript.md)|\=|  
-|[复合赋值](../javascript/reference/compound-assignment-operators-javascript.md)|*OP*\=（如 \+\= 和 &\=）|  
+|-----------------|------------|  
+|[赋值](../javascript/reference/assignment-operator-decrement-equal-javascript.md)|=|  
+|[复合赋值](../javascript/reference/compound-assignment-operators-javascript.md)|OP=（如 += 和 &=）|  
   
-## 其他运算符  
+## <a name="miscellaneous-operators"></a>其他运算符  
   
 |描述|符号|  
-|--------|--------|  
-|[删除](../javascript/reference/delete-operator-decrementjavascript.md)|删除|  
+|-----------------|------------|  
+|[delete](../javascript/reference/delete-operator-decrementjavascript.md)|删除|  
 |[typeof](../javascript/reference/typeof-operator-decrementjavascript.md)|typeof|  
 |[void](../javascript/reference/void-operator-decrementjavascript.md)|void|  
 |[instanceof](../javascript/reference/instanceof-operator-decrementjavascript.md)|instanceof|  
 |[new](../javascript/reference/new-operator-decrementjavascript.md)|new|  
-|[in](../javascript/reference/in-operator-decrementjavascript.md)|in|  
+|[in](../javascript/reference/in-operator-decrementjavascript.md)|中的|  
   
-## 相等和全等  
- \=\=（相等）和 \=\=\=（全等）之间的差异是相等运算符将在检查是否相等之前强制转换其他类型的值。  例如，将字符串“1”与数字 1 进行比较，比较结果将为 true。  另一方面，全等运算符不会将值强制转换为其他类型，因此字符串“1”的比较结果将不为数字 1。  
+## <a name="equality-and-strict-equality"></a>相等和全等  
+ ==（相等）和 ===（全等）之间的差异在于检查等同性之前，相等运算符将值强制转换为不同的类型。 例如，将字符串“1”与数字 1 作比较得到的结果将为 true。 另一方面，全等运算符不会强制将值转换为不同的类型，因此字符串“1”与数字1 相比得到的结果将不相等。  
   
- 基元字符串、数字和布尔值通过值进行比较。  如果它们的值相同，则它们相等。  对象（包括 `Array`、`Function`、`String`、**Number**、`Boolean`、**Error**、`Date` 和 `RegExp` 对象）是根据引用来进行比较的。  即使这些类型的两个变量具有相同的值，也只有当引用完全相同的对象时，它们才相等。  
+ 基元字符串、数字和布尔按值进行比较。 如果它们具有相同的值，则相等。 对象（包括 `Array`、`Function`、`String`、Number、`Boolean`、Error、`Date` 和 `RegExp` 对象）按引用进行比较。 即使这些类型的两个变量具有相同的值，但也只有在引用完全相同的对象时它们才相等。  
   
  例如：  
   
-```javascript  
+```JavaScript  
 // Two strings with the same value.  
 var string1 = "Hello";  
 var string2 = "Hello";  

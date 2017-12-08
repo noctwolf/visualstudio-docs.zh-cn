@@ -1,19 +1,17 @@
 ---
-title: "在 Visual Studio for Mac 中设置 Subversion 存储库"
+title: "在 Visual Studio for Mac 中设置 Subversion 存储库 | Microsoft Docs"
 description: "使用 Visual Studio for Mac 中的 Git 和 Subversion。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
+ms.openlocfilehash: 0757ad29b8614a86f059f525f6ffe3100595d09b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: ea2dffed0b9091dae61792783eb83c103ca9375c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="setting-up-a-subversion-repository"></a>设置 Subversion 存储库
 
 Subversion 是一个集中式版本控制系统。 这表示，有一个服务器包含所有文件和修订，用户可从中签出任何文件的任何版本。 从远程 Subversion 存储库中签出文件时，用户将收到该时间点的存储库快照。
@@ -45,5 +43,4 @@ Subversion 是一个集中式版本控制系统。 这表示，有一个服务�
     ![](media/version-control-subversion5.png)
 
 8.  现在，在版本控制菜单中，应可见所有可用的版本控制命令。
-
 

@@ -1,40 +1,41 @@
 ---
 title: "代码段函数 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "代码段 [Visual Studio], 函数"
-  - "IntelliSense 代码段, 函数"
-  - "代码段 [Visual Studio], 函数"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code snippets [Visual Studio], functions
+- snippets [Visual Studio], functions
+- IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 代码段函数
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-可以对 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 代码段使用三个函数。  函数是在代码段的 [Function](http://msdn.microsoft.com/zh-cn/572c5549-5821-4e15-8ecd-0fa86c1c65df) 元素中指定的。  有关创建代码段的信息，请参见[代码段](../ide/code-snippets.md)。  
+# <a name="code-snippet-functions"></a>代码段函数
+有三个函数可与 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 代码片段一起使用。 函数在代码片段的 [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) 元素中指定。 有关创建代码片段的详细信息，请参阅[代码片段](../ide/code-snippets.md)。  
   
-## 函数  
- 下表描述了可用于代码段中的 `Function` 元素的函数。  
+## <a name="functions"></a>函数  
+ 下表介绍可与代码片段中的 `Function` 元素一起使用的函数。  
   
-|功能|说明|Language|  
-|--------|--------|--------------|  
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|为 `EnumerationLiteral` 参数指定的枚举成员生成一个 switch 语句和一组 case 语句。  `EnumerationLiteral` 参数必须是对枚举文本或枚举类型的引用。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`ClassName()`|返回包含已插入代码段的类的名称。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`SimpleTypeName(` `TypeName` `)`|在已调用该代码段的上下文中将 *TypeName* 参数缩减为其最简单的形式。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|函数|描述|语言|  
+|--------------|-----------------|--------------|  
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|为 `EnumerationLiteral` 参数指定的枚举成员生成一个switch 语句和一组 case 语句。 `EnumerationLiteral` 参数必须是枚举文本的引用或是枚举类型。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`ClassName()`|返回包含插入的代码片段的类的名称。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`SimpleTypeName(` `TypeName` `)`|在已调用该代码片段的上下文中将 TypeName 参数缩减为其最简单的形式。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
   
-## 示例  
- 下面的示例演示如何使用 `GenerateSwitchCases` 函数。  插入此代码段并将枚举输入到 `$switch_on$` 文本中时，`$cases$` 文本将为枚举中的每个值都生成一个 `case` 语句。  
+## <a name="example"></a>示例  
+ 下面的示例演示了如何使用 `GenerateSwitchCases` 函数。 在插入此代码片段并将枚举输入到 `$switch_on$` 文本中时，`$cases$` 文本为枚举中的每个值生成一个 `case` 语句。  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -74,8 +75,8 @@ caps.handback.revision: 11
 </CodeSnippets>  
 ```  
   
-## 示例  
- 下面的示例演示如何使用 `ClassName` 函数。  插入此代码段时，`$classname$` 文本将替换为代码文件中处于该位置的封闭类的名称。  
+## <a name="example"></a>示例  
+ 下面的示例演示了如何使用 `ClassName` 函数。 在插入此代码片段时，`$classname$` 文本会替换为代码文件中该位置的封闭类的名称。  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -120,8 +121,8 @@ caps.handback.revision: 11
 </CodeSnippets>  
 ```  
   
-## 示例  
- 此示例演示如何使用 `SimpleTypeName` 函数。  将此代码段插入到代码文件中时，`$SystemConsole$` 文本将替换为调用该代码段的上下文中的 <xref:System.Console> 类型的最简单形式。  
+## <a name="example"></a>示例  
+ 此示例演示如何使用 `SimpleTypeName` 函数。 在此代码片段插入到代码文件中时，`$SystemConsole$` 文本会替换为在其中调用该代码片段的上下文中 <xref:System.Console> 类型的最简单形式。  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -152,6 +153,6 @@ caps.handback.revision: 11
 </CodeSnippets>  
 ```  
   
-## 请参阅  
- [Function Element \(Intellisense Code Snippets\)](http://msdn.microsoft.com/zh-cn/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
- [代码段架构参考](../ide/code-snippets-schema-reference.md)
+## <a name="see-also"></a>另请参阅  
+ [Function 元素 （IntelliSense 代码片段）](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [代码片段架构参考](../ide/code-snippets-schema-reference.md)

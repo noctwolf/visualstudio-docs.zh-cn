@@ -1,27 +1,24 @@
 ---
 title: "Visual Studio 中的 Python 交互式 REPL | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 642dc47e-c265-44ea-a77d-3db14170a36f
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 0e524208684afa38916af858e6ec3a8adb1f5932
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 69943d19c0eec4702285d255ce0c26defde79b1c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-the-python-interactive-window"></a>使用 Python 交互窗口
 
 Visual Studio 为每个 Python 环境提供交互式读取-评估-打印-循环 (REPL) 窗口，改进了在命令行中运行 `python.exe` 获得的 REPL。 借助交互窗口（通过“视图”>“其他窗口”>“&lt;环境&gt;交互式”菜单命令打开），可以输入任意 Python 代码，并查看即时结果。 这种编码方式有助于了解与实验 API 和库，并以交互方式开发要包含在项目中的工作代码。
@@ -39,9 +36,9 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 
 本主题介绍**标准** REPL 模式和**调试** REPL 模式。 有关 IPython 模式的详细信息，请参阅[使用 IPython REPL](interactive-repl-ipython.md)。
 
-有关包含示例的详细演练，包括与编辑器的交互（如 Ctrl+Enter），请参阅[入门 - 使用交互式 REPL 窗口](getting-started.md#using-the-interactive-repl-window)。 有关视频介绍，请观看 [Visual Studio 中的 Python 入门，第 5 部分：交互式 REPL](https://youtu.be/yc2CROtTsC0?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)（youtube.com，2 分 51 秒）。
+有关包含示例的详细演练，包括与编辑器的交互（如 Ctrl+Enter），请参阅[教程步骤 3：使用 REPL 交互窗口](vs-tutorial-01-03.md)。 有关视频介绍，请观看 [Python 交互窗口](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)（Microsoft Virtual Academy，2 分 22 秒）。
 
-> [!VIDEO https://www.youtube.com/embed/yc2CROtTsC0]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 
 ## <a name="opening-an-interactive-window"></a>打开交互窗口
 
@@ -131,4 +128,3 @@ Visual Studio 还会检测以 `# In[1]:` 等注释开头的代码单元，将 Ju
 与代码编辑器中 IntelliSense 仅基于源代码分析不同，交互窗口中，IntelliSense 基于活动的对象。 这些建议在交互窗口中更为正确，尤其是在使用动态生成代码的情况下。 缺点是具有副作用（如记录消息）的函数可能会影响开发体验。
 
 如果此行为造成了困扰，请在“完成模式”组的“工具”>“选项”>“Python 工具”>“交互窗口”下更改设置，如[选项 - 交互窗口选项](options.md#interactive-windows-options)所述。
-

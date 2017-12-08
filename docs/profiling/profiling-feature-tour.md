@@ -4,38 +4,20 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debugger
+helpviewer_keywords: debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: b4f4e312fb7717edfe950cf6977279a1bd67a458
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="profiling-feature-tour"></a>分析功能简介
 
@@ -114,7 +96,7 @@ CPU 使用率和内存使用量等分析工具可以与调试器配合使用（�
 
 ## <a name="analyze-resource-consumption-xaml"></a>分析资源消耗情况 (XAML)
 
-在如 Windows 桌面 WPF 应用和 Windows 应用商店应用等 XAML 应用等 XAML 应用中，你可以使用应用程序时间线工具分析资源消耗情况。 例如，你可以分析应用程序准备 UI 框架（布局和呈现）以及为网络和磁盘请求提供服务所花费的时间，以及在应用程序启动、页面加载以及调整窗口大小等应用场景中花费的时间。 若要使用该工具，请在性能探查器中选择“应用程序时间线”，然后选择“开始”。 在应用中，浏览资源消耗存在可疑问题的应用场景，然后选择“停止收集”生成报表。
+在 XAML 应用（例如 Windows 桌面 WPF 应用和 UWP 应用）中，可以使用应用程序时间线工具分析资源消耗情况。 例如，你可以分析应用程序准备 UI 框架（布局和呈现）以及为网络和磁盘请求提供服务所花费的时间，以及在应用程序启动、页面加载以及调整窗口大小等应用场景中花费的时间。 若要使用该工具，请在性能探查器中选择“应用程序时间线”，然后选择“开始”。 在应用中，浏览资源消耗存在可疑问题的应用场景，然后选择“停止收集”生成报表。
 
 **可视吞吐量**关系图中的帧速率低可能对应运行应用时看到的视觉问题。 与此类似，**UI 线程使用率**关系图中的高数值也可能对应 UI 响应能力问题。 在报表中，你可以选择出现可疑性能问题的时间段，然后在“时间线”详细信息视图（下方窗格）中检查详细的 UI 线程活动。
 
@@ -160,7 +142,7 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 
 ## <a name="analyze-performance-legacy-tools"></a>分析性能（旧工具）
 
-如果你需要 CPU 使用率或内存使用量工具中当前不存在的功能（如检测），当你在运行桌面或 ASP.NET 应用时，可使用性能资源管理器进行分析。 （UWP 应用中不支持）。 有关详细信息，请参阅[性能资源管理器](../profiling/performance-explorer.md)
+如果你需要 CPU 使用率或内存使用量工具中当前不存在的功能（如检测），当你在运行桌面或 ASP.NET 应用时，可使用性能资源管理器进行分析。 （UWP 应用中不支持）。 有关详细信息，请参阅[性能资源管理器](../profiling/performance-explorer.md)。
 
 ![性能资源管理器工具](../profiling/media/prof-tour-performance-explorer.png "Performance Explorer")
 

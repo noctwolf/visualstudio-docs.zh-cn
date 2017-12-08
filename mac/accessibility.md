@@ -1,19 +1,17 @@
 ---
-title: "可访问性"
+title: "辅助功能 | Microsoft Docs"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 08/15/2017
 ms.topic: article
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
+ms.openlocfilehash: 13c69a1c13507a0f856bc652f7ffa0e5ab233081
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
-ms.openlocfilehash: e0d893f155982ecd95f25ebdab768e810005b167
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/07/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="accessibility"></a>可访问性
 
 除了 macOS 中的功能和实用工具，Visual Studio for Mac 还提供下列功能，旨在更方便残障人士使用：
@@ -78,4 +76,3 @@ VoiceOver 会读出控件名称、一些相关详情和具体用法。
 
 - [VoiceOver 入门](https://help.apple.com/voiceover/info/guide/10.12/)
 - [macOS 中的 VoiceOver 命令](http://lab.dotjay.com/notes/voiceover-commands/)
-

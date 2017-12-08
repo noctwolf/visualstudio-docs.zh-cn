@@ -1,36 +1,36 @@
 ---
-title: "PROFILE_CURRENTID | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "PROFILE_CURRENTID"
+title: PROFILE_CURRENTID | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: PROFILE_CURRENTID
 ms.assetid: 55ccf665-a05e-48c3-adf7-7714c0a9aaef
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: eaf85776b08f6df56b5e441d9e0c99e239bf8ca6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# PROFILE_CURRENTID
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-在调用 NameProfile、StartProfile、StopProfile、SuspendProfile 和 ResumeProfile 函数时，PROFILE\_CURRENTID 会返回线程 ID 或进程 ID 的伪标记。  使用此属性可使函数在当前线程或进程上运行，而不是在具体指示的线程或进程上运行。  
+# <a name="profilecurrentid"></a>PROFILE_CURRENTID
+在调用 NameProfile、StartProfile、StopProfile、SuspendProfile 和 ResumeProfile 函数时，PROFILE_CURRENTID 会返回线程 ID 或进程 ID 的伪标记。 使用此属性可使函数在当前线程或进程上运行，而不是在具体指示的线程或进程上运行。  
   
-## 示例  
- PROFILE\_CURRENTID 在 VSPerf.h 中定义为：  
+## <a name="example"></a>示例  
+ PROFILE_CURRENTID 在 VSPerf.h 中定义为：  
   
 ```  
 static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;  
 ```  
   
-## 示例  
- 下面的示例演示 PROFILE\_CURRENTID。  该示例将 PROFILE\_CURRENTID 用作 [StartProfile](../profiling/startprofile.md) 函数调用中标识当前线程的参数。  
+## <a name="example"></a>示例  
+ 下面的示例演示 PROFILE_CURRENTID。 该示例将 PROFILE_CURRENTID 用作 [StartProfile](../profiling/startprofile.md) 函数调用中标识当前线程的参数。  
   
 ```  
 void ExerciseProfileCurrentID()  
@@ -59,7 +59,7 @@ void ExerciseProfileCurrentID()
 }  
 ```  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 探查器 API 参考（本机）](../profiling/visual-studio-profiler-api-reference-native.md)   
  [NameProfile](../profiling/nameprofile.md)   
  [ResumeProfile](../profiling/resumeprofile.md)   

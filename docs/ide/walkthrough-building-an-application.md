@@ -1,41 +1,25 @@
 ---
 title: "演练：生成应用程序 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 09/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
-caps.latest.revision: 8
-author: kempb
-ms.author: kempb
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: dc4bcdcc11e357979641268ae77a8e39f8408f7a
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: a06bd1eb1ced8305425a9e3698e66f0d19438463
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-building-an-application"></a>演练：生成应用程序
-完成本演练后，你会更熟悉使用 Visual Studio 生成应用程序时可配置的多个选项。 你将为示例应用程序创建自定义生成配置、隐藏特定警告消息、增加生成输出信息以及执行其他任务。  
+完成本演练后，你会更熟悉使用 Visual Studio 生成应用程序时可配置的多个选项。 将为示例应用程序创建自定义生成配置、隐藏特定警告消息以及增加生成输出信息。  
   
  本主题包含以下各节：  
   
@@ -52,43 +36,7 @@ ms.lasthandoff: 05/30/2017
  [创建版本生成](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)  
   
 ##  <a name="BKMK_installapp"></a> 安装示例应用程序  
- 使用“扩展和更新”对话框，在 Microsoft 网站上的示例库中找到 [Introduction to Building WPF Applications](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE)（生成 WPF 应用程序简介）示例并进行安装。 示例库提供各种各样的示例项目和代码，你可以在计划和开发应用程序时下载和查看。  
-  
-#### <a name="to-install-the-sample-application"></a>安装示例应用程序  
-  
-1.  在菜单栏上，选择“工具”，再选择“扩展和更新”。  
-  
-2.  选择“联机”类别，然后选择“示例库”类别。  
-  
-3.  在搜索框中指定 `Introduction`，找到该示例。  
-  
-     ![“扩展和更新”对话框](../ide/media/buildwalk_extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")  
-  
-4.  在结果列表中，选择“生成 WPF 应用程序 (Visual C#) 简介”或“生成 WPF 应用程序 (Visual Basic) 简介”。  
-  
-5.  选择“下载”按钮，然后选择“关闭”按钮。  
-  
- “生成 WPF 应用程序简介”示例将显示在“新建项目”对话框中。  
-  
-#### <a name="to-create-a-solution-for-the-sample-application"></a>创建示例应用程序的解决方案  
-  
-1.  打开“新建项目”对话框。  
-  
-     ![在菜单栏上，依次选择“文件”、“新建”、“项目”](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
-  
-2.  在“已安装”类别中，选择“示例”类别，显示“生成 WPF 应用程序简介”示例。  
-  
-3.  为 Visual C# 的解决方案 `IntroWPFcsharp` 命名。  
-  
-     ![“新建项目”对话框，已安装示例](../ide/media/buildwalk_newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")  
-  
-     或  
-  
-     为 Visual Basic 的解决方案 `IntroWPFvb` 命名。  
-  
-     ![“新建项目”对话框，Visual Basic 示例](../ide/media/buildwalk_newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")  
-  
-4.  选择“确定”  按钮。  
+下载 [Introduction to Building WPF Applications](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419)（生成 WPF 应用程序简介）示例。 选择 C# 或 Visual Basic。 下载 .zip 文件后，将它解压缩并使用 Visual Studio 打开 ExpenseItIntro.sln 文件。  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> 创建自定义生成配置  
  创建解决方案时，调试和发布生成配置，并为解决方案自动定义它们的默认平台目标。 然后，可以自定义这些配置，或创建自己的配置。 生成配置指定生成类型。 生成平台指定应用程序为该配置定向的操作系统。 有关详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)、[了解生成平台](../ide/understanding-build-platforms.md)以及[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
@@ -101,17 +49,17 @@ ms.lasthandoff: 05/30/2017
   
      ![“生成”菜单->“配置管理器”命令](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")  
   
-2.  在“活动解决方案配置”列表中，选择“新建”。  
+2.  在“活动解决方案配置”列表中，选择“\<新建...\>”。  
   
 3.  在“新建解决方案配置”对话框中，命名新配置 `Test`，复制现有“调试”配置中的设置，然后选择“确定”按钮。  
   
-     ![“新建解决方案配置”对话框](~/ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
+     ![“新建解决方案配置”对话框](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
   
-4.  在“活动解决方案平台”列表中，选择“新建”。  
+4.  在“活动解决方案平台”列表中，选择“\<新建...\>”。  
   
 5.  在“新建解决方案平台”对话框中，选择“x64”，且不要复制 x86 平台中的设置。  
   
-     ![“新建解决方案平台”对话框](~/ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
+     ![“新建解决方案平台”对话框](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
 6.  选择“确定”  按钮。  
   
@@ -119,9 +67,11 @@ ms.lasthandoff: 05/30/2017
   
  ![具有测试配置的“配置管理器”](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")  
   
- 使用“标准”工具栏上的“解决方案配置”列表，可快速验证或更改“活动解决方案配置”。  
+7. 选择“关闭”。  
+
+使用“标准”工具栏上的“解决方案配置”列表，可快速验证或更改“活动解决方案配置”。  
   
- ![“标准”工具栏->“解决方案配置”选项](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")  
+![“标准”工具栏->“解决方案配置”选项](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")  
   
 ##  <a name="BKMK_building"></a> 生成应用程序  
  接下来将生成具有自定义生成配置的解决方案。  
@@ -130,19 +80,31 @@ ms.lasthandoff: 05/30/2017
   
 -   在菜单栏上，依次选择 **“生成”**、 **“生成解决方案”**。  
   
- “输出”窗口将显示生成的结果。 生成成功，但生成了数个警告消息。  
+    “输出”窗口将显示生成的结果。 成功生成。  
   
+##  <a name="BKMK_hidewarning"></a> 隐藏编译器警告  
+接下来将介绍一些会导致编译器生成警告的代码。  
+
+1. 在 C# 项目中，打开 ExpenseReportPage.xaml.cs 文件。 在 ExpenseReportPage 方法中，添加以下代码：`int i;`。  
+
+    或
+
+    在 Visual Basic 项目中，打开 ExpenseReportPage.xaml.vb 文件。 在自定义的构造函数“Public Sub New...”中，添加以下代码：`Dim i`。  
+
+2. 生成解决方案。  
+
+“输出”窗口将显示生成的结果。 成功生成，但生成了警告：  
+
  图 1：Visual Basic 警告  
   
- ![“输出”窗口 Visual Basic](~/ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
+ ![“输出”窗口 Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
  图 2：Visual C# 警告  
   
  ![“输出”窗口 Visual C#](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
-##  <a name="BKMK_hidewarning"></a> 隐藏编译器警告  
- 可在生成期间暂时隐藏某些警告消息，而不是使其扰乱生成输出。  
-  
+可在生成期间暂时隐藏某些警告消息，而不是使其扰乱生成输出。  
+
 #### <a name="to-hide-a-specific-visual-c-warning"></a>隐藏特定的 Visual C# 警告  
   
 1.  在“解决方案资源管理器”中，选择顶级项目节点。  
@@ -151,7 +113,7 @@ ms.lasthandoff: 05/30/2017
   
      将打开“项目设计器”。  
   
-3.  选择“生成”页，然后在“禁止显示警告”框中，指定警告编号 `1762`。  
+3.  选择“生成”页，然后在“禁止显示警告”框中，指定警告编号“0168”。  
   
      ![“项目设计器”->“生成”页](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
   
@@ -181,7 +143,7 @@ ms.lasthandoff: 05/30/2017
   
  “输出”窗口仅显示生成的摘要信息。  
   
- ![“Visual Basic 生成警告”->“输出”窗口](~/ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
+ ![“Visual Basic 生成警告”->“输出”窗口](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
   
  有关详细信息，请参阅[如何：禁止显示编译器警告](../ide/how-to-suppress-compiler-warnings.md)。  
   
@@ -205,7 +167,7 @@ ms.lasthandoff: 05/30/2017
   
 5.  生成解决方案，然后查看“输出”窗口中的信息。  
   
-     生成信息包括生成开始的时间（位于开头）、处理文件的顺序，以及完成该进程所用的时间量（位于结尾）。 此信息还包括生成期间 Visual Studio 运行的实际的编译器语法。  
+     生成信息包括生成开始的时间（位于开头）和处理文件的顺序。 此信息还包括生成期间 Visual Studio 运行的实际的编译器语法。  
   
      例如，在 Visual C# 生成中，[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 选项列出了本主题前面部分随其他三个警告一起指定的警告代码 1762。  
   
@@ -214,7 +176,7 @@ ms.lasthandoff: 05/30/2017
     > [!TIP]
     >  通过选择 Ctrl + F 键，显示“查找”窗口，可以搜索“输出”窗口的内容。  
   
- 有关详细信息，请参阅[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。  
+有关详细信息，请参阅[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。  
   
 ##  <a name="BKMK_releasebuild"></a> 创建版本生成  
  可以生成针对交付进行了优化的示例应用程序版本。 对于版本生成，需指定在启动生成前，将可执行文件复制到网络共享。  
@@ -263,16 +225,17 @@ ms.lasthandoff: 05/30/2017
     > [!IMPORTANT]
     >  可能会出现一个消息框，警告指定的网络共享位置可能不受信任。 如果信任指定的位置，请在消息框中选择“确定”按钮。  
   
-6.  生成应用程序。  
+6.  在“标准工具栏”上，将解决方案配置设置为“发布”，将解决方案平台设置为“x86”。  
+
+7.  生成应用程序。  
   
      ![“生成”菜单上的“生成解决方案”命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
  可执行文件已复制到指定的网络路径。 其路径为 \\\myserver\builds\\*FileName*.exe。  
   
- 祝贺：你已成功完成此演练。  
+祝贺：你已成功完成此演练。  
   
 ## <a name="see-also"></a>另请参阅  
  [演练：生成项目(C++)](/cpp/ide/walkthrough-building-a-project-cpp)   
  [ASP.NET Web 应用程序项目预编译概述](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
  [演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)
-

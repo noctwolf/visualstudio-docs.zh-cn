@@ -1,47 +1,47 @@
 ---
 title: "VCMessage 任务 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc.task.vcmessage"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-  - "C++"
-helpviewer_keywords: 
-  - "MSBuild (Visual C++), VCMessage 任务"
-  - "VCMessage 任务 (MSBuild (Visual C++))"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vc.task.vcmessage
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+- C++
+helpviewer_keywords:
+- VCMessage task (MSBuild (Visual C++))
+- MSBuild (Visual C++), VCMessage task
 ms.assetid: 956675fd-05dc-40b4-856f-616145103498
-caps.latest.revision: 7
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 16ed7f4207a65915afbf18a496a0152e04e9a8d0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# VCMessage 任务
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-生成期间产生的警告和错误消息日志。  
+# <a name="vcmessage-task"></a>VCMessage 任务
+记录生成期间的警告消息和错误消息。  
   
-## 备注  
- 此任务可以帮助实现 Visual C\+\+ 的 MSBuild 并不应由用户调用。  有关更多信息，请参见 <xref:Microsoft.Build.Utilities.TaskLoggingHelper>。  
+## <a name="remarks"></a>备注  
+ 此任务可帮助实现 Visual C++ 的 MSBuild，不能由用户调用。 有关详细信息，请参阅<xref:Microsoft.Build.Utilities.TaskLoggingHelper>。  
   
-## 参数  
- 下表描述了 **VCMessage** 任务的参数。  
+## <a name="parameters"></a>参数  
+ 下表描述了 VCMessage 任务的参数。  
   
-|Parameter|说明|  
-|---------------|--------|  
-|**Arguments**|可选 **String** 参数。<br /><br /> 要显示的以分号分隔信息的列表。|  
-|**Code**|必选 **String** 参数。<br /><br /> 限定消息的错误号码。|  
-|**Type**|可选 **String** 参数。<br /><br /> 指定要发出的消息的种类。  指定`“警告”`以发出警告信息，或指定`“错误”`发出错误信息。|  
+|参数|描述|  
+|---------------|-----------------|  
+|**参数**|可选 **String** 参数。<br /><br /> 要显示的消息列表（以分号分隔）。|  
+|**代码**|必需的 **String** 参数。<br /><br /> 限定消息的错误号。|  
+|**类型**|可选 **String** 参数。<br /><br /> 指定要发出的消息类型。 指定 `"Warning"` 发出一条警告消息，或指定 `"Error"` 发出一条错误消息。|  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)

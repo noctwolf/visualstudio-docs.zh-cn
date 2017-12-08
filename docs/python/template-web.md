@@ -1,33 +1,31 @@
 ---
 title: "Visual Studio 中适用于 Python 的 Web 项目模板 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 401e7725-8be5-4e67-862c-bf0690a529e3
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 2a21c43e039d9a1109f1870516e9b3d4ea3c644b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: e46dd1012d220015b1840c0c50332dbe45e43a1e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="python-web-project-templates"></a>Python Web 项目模板
 
-Visual Studio 中的 Python 支持在 Bottle、Django 和 Flask 等框架中通过项目模板和可配置为处理不同框架的调试启动程序开发 Web 项目。 但是，Visual Studio 不包括框架本身，而必须通过右键单击该项目并选择“Python”>“安装/升级框架...”来单独安装。
+Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过项目模板和可配置为处理不同框架的调试启动程序开发 Web 项目。 也可以使用其他框架（如 Pyramid）的通用“Web 项目”模板。
 
-每个模板（通过“文件”>“新建”>“项目...”访问）在随机选择的本地端口中启动 Web 服务器、调试时打开默认浏览器，并允许直接发布到 [Microsoft Azure](http://www.azure.com)。 提供用于 Bottle、Flask 和 Django 的模板，且你可以对 Pyramid 等其他框架使用常规“Web 项目”模板。
+Visual Studio 不包括框架本身。 必须通过右键单击项目并选择“Python”>“安装/升级框架...”来单独安装框架。
+
+运行时，从模板创建的项目（通过“文件”>“新建”>“项目...”访问）在随机选择的本地端口中启动 Web 服务器、调试时打开默认浏览器，并允许直接发布到 Microsoft Azure。
 
 ![新建 Web 项目模板](media/template-web-new-project.png)
 
@@ -40,10 +38,6 @@ Visual Studio 中的 Python 支持在 Bottle、Django 和 Flask 等框架中通�
 部署到 Microsoft Azure App Service 时，选择一个 Python 版本作为[站点扩展](https://aka.ms/PythonOnAppService)并手动安装包。 此外，因为 Azure 应用服务从 Visual Studio 部署时**不会**自动安装 `requirements.txt` 中的包，请遵照 [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService) 上的配置详细信息操作。
 
 Microsoft Azure 云服务支持 `requirements.txt` 文件。 详见 [Azure 云服务项目](template-azure-cloud-service.md)。
-
-有关 Python Web 项目的简介，请参阅 [PTVS 入门第 6 部分：网站](https://youtu.be/FJx5mutt1uk?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)（youtube.com，3m10s）。
-
-> [!VIDEO https://www.youtube.com/embed/FJx5mutt1uk]
 
 ## <a name="debugging"></a>调试
 
@@ -178,4 +172,3 @@ c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 “转换为 Microsoft Azure 云服务项目”命令（见下图）会将云服务项目添加到解决方案。 此项目包括要使用的虚拟机和服务的部署设置和配置。 使用云项目上的“发布”命令部署到云服务；Python 项目上的“发布”命令仍会部署到网站。 请参阅 [Azure 云服务项目](template-azure-cloud-service.md)了解详细信息。
 
 ![转换为 Microsoft Azure 云服务项目命令](media/template-web-convert-menu.png)
-

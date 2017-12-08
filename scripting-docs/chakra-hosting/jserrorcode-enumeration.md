@@ -1,38 +1,40 @@
 ---
 title: "JsErrorCode 枚举 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsErrorCode"
-helpviewer_keywords: 
-  - "JsErrorCode 枚举"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsErrorCode
+helpviewer_keywords: JsErrorCode enumeration
 ms.assetid: 4902f3f3-47a5-4e74-9c29-f96eeecbcda9
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b09babd38505c5619f414d2e349cd52b3596ceac
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
-# JsErrorCode 枚举
+# <a name="jserrorcode-enumeration"></a>JsErrorCode 枚举
 从 Chakra 托管 API 返回了错误代码。  
   
-## 语法  
+## <a name="syntax"></a>语法  
   
 ```  
 enum JsErrorCode : unsigned int;  
 ```  
   
-## 成员  
+## <a name="members"></a>成员  
   
-### 值  
+### <a name="values"></a>值  
   
 |名称|描述|  
-|--------|--------|  
+|----------|-----------------|  
 |`JsErrorAlreadyDebuggingContext`|无法将上下文置于调试状态，因为它已处于调试状态。|  
 |`JsErrorAlreadyProfilingContext`|上下文无法启动分析，因为已经开始分析。|  
 |`JsErrorArgumentNotObject`|调用处理对象值的托管 API 时提供了非对象值。|  
@@ -57,8 +59,8 @@ enum JsErrorCode : unsigned int;
 |`JsErrorNullArgument`|托管 API 的参数在上下文中为空，但该上下文不允许存在空值。|  
 |`JsErrorObjectNotInspectable`|对象不能为解包到 `IInspectable` 指针。<br /><br /> 此枚举值仅在边缘模式下受到支持。|  
 |`JsErrorOutOfMemory`|Chakra 引擎内存不足。|  
-|`JsErrorPropertyNotSymbol`|一种托管 API，对符号属性 ID 起作用，但调用时使用非符号属性 ID。 如果使用非符号属性 ID 调用函数，`JsGetSymbolFromPropertyId` 将返回错误代码。<br /><br /> 此枚举值仅在边缘模式下受到支持。|  
-|`JsErrorPropertyNotString`|一种托管 API，对字符串属性 ID 起作用，但调用时使用非字符串属性 ID。 如果使用非字符串属性 ID 调用函数，`JsGetPropertyNamefromId` 将返回错误代码。<br /><br /> 此枚举值仅在边缘模式下受到支持。|  
+|`JsErrorPropertyNotSymbol`|一种托管 API，对符号属性 ID 起作用，但调用时使用非符号属性 ID。如果使用非符号属性 ID 调用函数， `JsGetSymbolFromPropertyId` 将返回错误代码。<br /><br /> 此枚举值仅在边缘模式下受到支持。|  
+|`JsErrorPropertyNotString`|一种托管 API，对字符串属性 ID 起作用，但调用时使用非字符串属性 ID。如果使用非字符串属性 ID 调用函数， `JsGetPropertyNamefromId` 将返回错误代码。<br /><br /> 此枚举值仅在边缘模式下受到支持。|  
 |`JsErrorRuntimeInUse`|不能释放仍在使用的运行时。|  
 |`JsErrorScriptCompile`|JavaScript 编译失败。|  
 |`JsErrorScriptEvalDisabled`|脚本已终止，因为它尝试使用 `eval` 或 `function` 而 eval 处于禁用状态。|  
@@ -68,8 +70,8 @@ enum JsErrorCode : unsigned int;
 |`JsErrorWrongThread`|调用托管 API 的线程有误。|  
 |`JsNoError`|成功时的错误代码。|  
   
-## 要求  
- **标头：**jsrt.h  
+## <a name="requirements"></a>要求  
+ **标头：** jsrt.h  
   
-## 请参阅  
- [参考（JavaScript 运行时）](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>另请参阅  
+ [引用（JavaScript 运行时）](../chakra-hosting/reference-javascript-runtime.md)

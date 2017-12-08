@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#Csc
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Csc
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 9057a6bd209d4761c147577888dffa2933bbf4c8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0e36e4c9e01d7ee8f12a59f2fd72ee4ef6b83e9a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="csc-task"></a>Csc 任务
 包装 CSC.exe，生成可执行 (.exe) 文件、动态链接库（.dll文件）或者代码模块（.netmodule文件）。 有关 CSC.exe 的详细信息，请参阅 [C# 编译器选项](/dotnet/csharp/language-reference/compiler-options/index)。  
@@ -97,7 +81,7 @@ ms.lasthandoff: 02/22/2017
 |`Win32Resource`|可选 `String` 参数。<br /><br /> 在输出文件中插入 Win32 资源 (.res) 文件。 有关详细信息，请参阅 [/win32res（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)。|  
   
 ## <a name="remarks"></a>备注  
- 除了上面列出的参数，此任务还从 `Microsoft.Build.Tasks.ManagedCompiler` 类继承参数，该类继承自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类，后者又继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类。 有关这些其他参数及其说明的列表，请参阅 [ToolTaskExtension 基类](../msbuild/tooltaskextension-base-class.md)。  
+ 除上面列出的参数外，此任务还从 `Microsoft.Build.Tasks.ManagedCompiler` 类继承参数，该类继承自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类（它自身继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类）。 有关这些其他参数及其说明的列表，请参阅 [ToolTaskExtension 基类](../msbuild/tooltaskextension-base-class.md)。  
   
 ## <a name="example"></a>示例  
  以下示例使用 `Csc` 任务来编译 `Compile` 项集合的源文件中的可执行文件。  

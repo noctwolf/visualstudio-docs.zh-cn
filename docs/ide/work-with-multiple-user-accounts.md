@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 592cde9dac7ea7b49934200469e85caf1fd58f82
-ms.contentlocale: zh-cn
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 42a66b69bb2c1736ddf3cb4c07e8ef8be86ed4d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="work-with-multiple-user-accounts"></a>使用多个用户帐户
 如果有多个 Microsoft 帐户和/或工作或学校帐户，可将它们全部添加到 Visual Studio，以便可从任何帐户访问资源，而无需单独登录到这些帐户。 目前，Azure、Application Insights、Team Foundation Server 和 Office 365 服务支持简化的登录体验。 随着时间的推移，可能会提供其他服务。
@@ -61,12 +44,12 @@ ms.lasthandoff: 02/22/2017
 
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>通过“添加连接的服务”对话框，访问你的 Azure 帐户  
 
-1.  用 C# 创建通用应用项目。  
+1.  使用 C# 创建 UWP 应用项目。  
 
 2.  选择解决方案资源管理器中的项目节点，然后选择“添加 -> 连接的服务”。 随即出现“添加连接的服务”向导，其中显示与 Visual Studio 登录 ID 相关联的 Azure 帐户中的服务列表。 请注意：无需单独登录 Azure。 但是，第一次尝试从给定计算机访问其资源时，你需要登录到其他帐户。  
 
     > [!WARNING]
-    >  如果是第一次在特定计算机上的 Visual Studio 中创建应用商店应用，则将提示你通过转到计算机上的“设置 | 更新和安全 | 面向开发人员”来启用设备的开发模式。 有关详细信息，请参阅[启用设备进行开发](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx)。  
+    >  如果是第一次在特定计算机上的 Visual Studio 中创建 UWP 应用，则系统会提示你通过转到计算机上的“设置 &#124; 更新和安全 &#124; 面向开发人员”来启用设备的开发模式。 有关详细信息，请参阅[启用设备进行开发](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx)。  
 
 ###  <a name="access_azure"></a> 在 Web 项目中访问 Azure Active Directory  
  Azure AD 支持 ASP.NET MVC web 应用程序中的最终用户单一登录或 Web API 服务中的 AD 身份验证。 域身份验证不同于单个用户帐户身份验证；有权访问 Active Directory 域的用户可以使用其现有的 Azure AD 帐户连接到你的 web 应用程序。 Office 365 应用还可以使用域身份验证。 为此，创建一个 Web 应用程序（“文件 -> 新建项目 -> C# -> 云 -> ASP.NET Web 应用程序”）。 在“新的 ASP.NET 项目”对话框中，选择 **“更改身份验证”**。 身份验证向导随即显示，你能够选择要在你的应用程序中使用的身份验证类型。  
@@ -88,5 +71,7 @@ ms.lasthandoff: 02/22/2017
  ![帐户管理器](../ide/media/vs2015_accountmanager.gif "VS2015_AccountManager")  
 
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>重新访问“添加连接的服务”向导和服务器资源管理器  
- 现在，再次转到 **“服务器资源管理器”** ，右键单击 Azure 节点并选择 **“管理和筛选订阅”**。 通过单击当前帐户旁的下拉箭头选择新的帐户，然后选择想要在服务器资源管理器中显示的订阅。 你应看到与指定订阅相关联的所有服务。即使你当前不使用第二个帐户登录到 Visual Studio IDE，也可登录到该帐户的服务和资源。 “项目 -> 添加连接的服务”和“团队 -> 连接到 Team Foundation Server”也是如此。
+ 现在，再次转到 **“服务器资源管理器”** ，右键单击 Azure 节点并选择 **“管理和筛选订阅”**。 通过单击当前帐户旁的下拉箭头选择新的帐户，然后选择想要在服务器资源管理器中显示的订阅。 你应看到与指定订阅相关联的所有服务。即使你当前不使用第二个帐户登录到 Visual Studio IDE，也可登录到该帐户的服务和资源。 “项目 -> 添加连接的服务”和“团队 -> 连接到 Team Foundation Server”也是如此。  
 
+ ## <a name="see-also"></a>请参阅  
+[连接的环境](../ide/connected-environment.md)  

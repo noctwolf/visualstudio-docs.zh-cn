@@ -1,59 +1,59 @@
 ---
 title: "ShowWebBrowser 命令 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "view.showwebbrowser"
-helpviewer_keywords: 
-  - "ShowWebBrowser 命令"
-  - "View.ShowWebBrowser 命令"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: view.showwebbrowser
+helpviewer_keywords:
+- ShowWebBrowser command
+- View.ShowWebBrowser command
 ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4a54023892d1432639fd1211273195b941e8f081
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# ShowWebBrowser 命令
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-在集成开发环境 \(IDE\) 内或 IDE 外显示在 Web 浏览器窗口中指定的 URL。  
+# <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
+在集成开发环境 (IDE) 中或 IDE 外部显示在 Web 浏览器窗口中指定的 URL。  
   
-## 语法  
+## <a name="syntax"></a>语法  
   
 ```  
 View.ShowWebBrowser URL [/new][/ext]  
 ```  
   
-## 参数  
+## <a name="arguments"></a>参数  
  `URL`  
- 必选。  网站的 URL（统一资源定位器）。  
+ 必需。 网站的 URL（统一资源定位器）。  
   
-## 开关  
- \/new  
- 可选。  指定在 Web 浏览器的新实例中显示页。  
+## <a name="switches"></a>开关  
+ /new  
+ 可选。 指定在 Web 浏览器的新实例中显示页。  
   
- \/ext  
- 可选。  指定在 IDE 之外的默认 Web 浏览器中显示页。  
+ /ext  
+ 可选。 指定在 IDE 外部的默认 Web 浏览器中显示页。  
   
-## 备注  
- **ShowWebBrowser** 命令的别名为 **navigate** 或 **nav**。  
+## <a name="remarks"></a>备注  
+ ShowWebBrowser 命令的别名是“导航”或“nav”。  
   
-## 示例  
- 下面的示例在 IDE 之外的 Web 浏览器中显示 MSDN Online 主页。  如果已经打开 Web 浏览器的一个实例，则使用此实例；否则，启动新实例。  
+## <a name="example"></a>示例  
+ 以下示例显示在 IDE 外部的 Web 浏览器中的 MSDN Online 主页。 如果 Web 浏览器的实例已打开，则使用它；否则启动一个新实例。  
   
 ```  
 >View.ShowWebBrowser http://msdn.microsoft.com /ext  
 ```  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
- [“查找\/命令”框](../../ide/find-command-box.md)   
+ [“查找/命令”框](../../ide/find-command-box.md)   
  [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,40 +1,24 @@
 ---
-title: "对应用商店应用的 Visual C++ DLL 进行单元测试 | Microsoft Docs"
+title: "对 UWP 应用的 Visual C++ DLL 进行单元测试 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 571ea6daab6ea9cbfb30976514e163b5dcbe398d
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: a900c779401277e4b8694e75f69203fee82d73f0
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>对应用商店应用的 Visual C++ DLL 进行单元测试
-本主题介绍一种为 Windows 应用商店应用创建针对 C++ DLL 的单元测试的方法。RooterLib DLL 可通过实现计算给定数平方根的估计值的函数，演示微积分极限理论的模糊内存。 然后，可能会将 DLL 包括在一个 Windows 应用商店应用中，向用户展示可通过数学完成的有趣操作。  
+# <a name="unit-testing-a-visual-c-dll-for-uwp-apps"></a>对 UWP 应用的 Visual C++ DLL 进行单元测试
+本主题介绍一种为 UWP 应用创建针对 C++ DLL 的单元测试的方法。RooterLib DLL 可通过实现计算给定数平方根的估计值的函数，演示微积分极限理论的模糊内存。 然后，可能会将 DLL 包括在一个 UWP 应用中，向用户展示可通过数学完成的有趣操作。  
   
  本主题演示如何使用单元测试作为开发的第一步。 在此方法中，首先编写验证要测试的系统的特定行为的测试方法，然后编写通过测试的代码。 通过按照以下过程的顺序进行更改，您可调转此策略的顺序，即先编写要测试的代码，然后编写单元测试。  
   
@@ -61,13 +45,13 @@ ms.lasthandoff: 04/04/2017
   
 1.  在“文件”菜单上选择“新建”，然后选择“新建项目”。  
   
-2.  在“新建项目”对话框中，展开“已安装”，然后展开“Visual C++”，并选择“Windows 应用商店”。 然后从项目模板列表中选择“单元测试库(Windows 应用商店应用)”。  
+2.  在“新建项目”对话框中，展开“已安装”，然后展开“Visual C++”，并选择“Windows 通用”。 然后从项目模板列表中选择“单元测试库(通用 Windows)”。  
   
      ![创建 C&#43;&#43; 单元测试库](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
   
 3.  将项目命名为 `RooterLibTests`；指定位置；将解决方案命名为 `RooterLib`；确保选中了“创建解决方案的目录”。  
   
-     ![指定解决方案和项目名称和位置](~/test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")  
+     ![指定解决方案和项目名称和位置](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")  
   
 4.  在新项目中，打开 **unittest1.cpp**。  
   
@@ -100,7 +84,7 @@ ms.lasthandoff: 04/04/2017
   
      将生成并运行测试项目。 随即显示“测试资源管理器”窗口，并且测试列出在“通过的测试”下。 窗口底部的“摘要”窗格将提供有关所选测试的其他详细信息。  
   
-     ![测试资源管理器](~/test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
+     ![测试资源管理器](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
 ##  <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> 向解决方案添加 DLL 项目  
   
@@ -108,7 +92,7 @@ ms.lasthandoff: 04/04/2017
   
      ![创建 RooterLib 项目](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")  
   
-2.  在“添加新项目”对话框中，选择“DLL (Windows 应用商店应用)”。  
+2.  在“添加新项目”对话框中，选择“DLL (UWP 应用)”。  
   
 3.  将以下代码添加到 **RooterLib.h** 文件中：  
   
@@ -211,7 +195,7 @@ ms.lasthandoff: 04/04/2017
   
 5.  在“测试资源管理器”中，选择 **“全部运行”**。  
   
-     ![已通过基本测试](~/test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+     ![已通过基本测试](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
  你已设置测试和代码项目，并已验证可运行测试（运行测试项目中的函数）。 现在可以开始编写实际测试和代码。  
   
@@ -364,4 +348,3 @@ ms.lasthandoff: 04/04/2017
     >  一组稳定的优良单元测试可保证你在更改代码时不会引入 Bug。  
     >   
     >  将重构更改与其他更改分开。
-

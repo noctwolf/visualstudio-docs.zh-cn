@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 18627c9f14e82bef85ff433eea14d99653f78e68
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="code-snippets-schema-reference"></a>代码段架构参考
 IntelliSense 代码段是预编写的代码段，你可以随时使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将这些代码段插入到你的应用程序中。 可以通过提供代码段来减少键入重复代码或搜索示例所用的时间，从而提高工作效率。 可以使用 IntelliSense 代码段 XML 架构创建自己的代码段，并将它们添加到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 已包含的代码段中。  
@@ -58,10 +42,7 @@ IntelliSense 代码段是预编写的代码段，你可以随时使用 [!INCLUDE
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|[Reference 元素](../ide/code-snippets-schema-reference.md#reference)||  
   
 ##  <a name="assembly"></a> Assembly 元素  
- 指定代码段引用的程序集的名称。  
-  
-> [!NOTE]
->  只有 Visual Basic 代码段支持 `Assembly` 元素。  
+ 指定代码段引用的程序集的名称。
   
  **Assembly** 元素的文本值可以是程序集的友好文本名称（如 `System.dll`），也可以是程序集的强名称（如 `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`）。  
   
@@ -83,8 +64,7 @@ IntelliSense 代码段是预编写的代码段，你可以随时使用 [!INCLUDE
 ```xml  
 <Author>  
    Code Snippet Author  
-</Author>  
-  
+</Author>    
 ```  
   
 |父元素|说明|  
@@ -93,36 +73,39 @@ IntelliSense 代码段是预编写的代码段，你可以随时使用 [!INCLUDE
   
  需要一个文本值。 此文本指定代码段的作者。  
   
-##  <a name="code"></a> Code 元素  
- 为短代码块提供一个容器。  
+## <a name="a-namecode--code-element"></a><a name="code" /> Code 元素  
+为短代码块提供一个容器。  
   
- 两个保留字可在 `Code` 元素的文本中使用：`$end$` 和 `$selected$`。 `$end$` 标记在插入代码段之后用于放置光标的位置。 `$selected$` 表示在文档中选择的要在调用时插入代码段的文本。 例如，指定一个代码段，使其包括：  
+### <a name="keywords"></a>关键字
+两个保留字可在 `Code` 元素的文本中使用：`$end$` 和 `$selected$`。 `$end$` 标记在插入代码段之后用于放置光标的位置。 `$selected$` 表示在文档中选择的要在调用时插入代码段的文本。 例如，指定一个代码段，使其包括：  
   
-```xml  
+```  
 $selected$ is a great color.  
 ```  
   
- 如果用户在调用模板时选择了“蓝色”一词，结果为：  
+如果用户在调用模板时选择了“蓝色”一词，结果为：  
   
-```xml  
+```  
 Blue is a great color.  
 ```  
   
- 你不能在一个代码段中多次使用 `$end$` 或 `$selected$`。 如果要这么做，只能识别第二个实例。 指定代码段，使其包括：  
+你不能在一个代码段中多次使用 `$end$` 或 `$selected$`。 如果要这么做，只能识别第二个实例。 指定代码段，使其包括：  
   
 ```  
 $selected$ is a great color. I love $selected$.  
 ```  
   
- 如果选择了“蓝色”一词，结果为：  
+如果选择了“蓝色”一词，结果为：  
   
 ```  
-is a great color. I love Blue.  
+ is a great color. I love Blue.  
 ```  
   
- 由于 `$selected$` 和 `is` 之间存在空格，所以出现了初始空格。  
+由于 `$selected$` 和 `is` 之间存在空格，所以出现了初始空格。  
   
- 所有其他 `$` 关键字将在 `<Literal>` 和 `<Object>` 标记中自动定义。  
+所有其他 `$` 关键字将在 `<Literal>` 和 `<Object>` 标记中自动定义。  
+
+以下是 Code 元素的结构：
   
 ```xml  
 <Code Language="Language"  
@@ -130,37 +113,41 @@ is a great color. I love Blue.
     Delimiter="Delimiter">  
     Code to insert  
 </Code>  
-```  
-  
-|特性|描述|  
-|---------------|-----------------|  
-|`Delimiter`|可选特性。 指定用于描述代码中的文本和对象的分隔符。 默认情况下，分隔符为 `$`。|  
-|`Kind`|可选特性。 指定代码段包含的代码的类型，以及编译代码段时代码段必须插入的位置。 可用的值有 `method body`、`method decl`、`type decl`、`file` 和 `any`。|  
-|`Language`|必需的特性。 指定代码段的语言。|  
-  
-|类型特性值|描述|  
-|--------------------------|-----------------|  
-|`method body`|指定代码段为方法体，因此必须插入到方法声明中。|  
-|`method decl`|指定代码段为方法，因此必须插入到类或模块中。|  
-|`type decl`|指定代码段为类型，因此必须插入到类、模块或命名空间中。|  
-|`file`|指定代码段为完整的代码文件。 这些代码段可单独插入到代码文件或命名空间中。|  
-|`any`|指定代码段可插入到任何位置。 此标记可用于上下文独立的代码段（例如注释）。|  
-  
-|语言特性值|描述|  
-|------------------------------|-----------------|  
-|`VB`|标识 Visual Basic 代码段。|  
-|`CSharp`|标识 C# 代码段。|  
-|`CPP`|标识 C++ 代码段。|  
-|`XML`|标识 XML 代码段。|  
-|`JavaScript`|标识 JavaScript 代码段。|  
-|`SQL`|标识 SQL 代码段。|  
-|`HTML`|标识 HTML 代码段。|  
-  
+```
+
+需要一个文本值。 此文本指定在将此代码片段插入到代码文件中时可以使用的代码以及文本和对象。  
+
+### <a name="attributes"></a>特性
+以下三种属性可用于 Code 元素：
+
+- **语言**  -  该必选属性用于指定代码片段的语言。 值可以是下列任一值：
+
+   |值|描述|  
+   |-----|-----------|  
+   |`VB`|标识 Visual Basic 代码段。|  
+   |`CSharp`|标识 C# 代码段。|  
+   |`CPP`|标识 C++ 代码段。|  
+   |`XML`|标识 XML 代码段。|  
+   |`JavaScript`|标识 JavaScript 代码段。|  
+   |`SQL`|标识 SQL 代码段。|  
+   |`HTML`|标识 HTML 代码段。|
+ 
+- **类型**  -  该可选属性用于指定代码片段包含的代码的类型，以及编译代码片段时代码片段必须插入的位置。 值可以是下列任一值：
+
+   |值|描述|  
+   |-----|-----------|  
+   |`method body`|指定代码段为方法体，因此必须插入到方法声明中。|  
+   |`method decl`|指定代码段为方法，因此必须插入到类或模块中。|  
+   |`type decl`|指定代码段为类型，因此必须插入到类、模块或命名空间中。|  
+   |`file`|指定代码段为完整的代码文件。 这些代码段可单独插入到代码文件或命名空间中。|  
+   |`any`|指定代码段可插入到任何位置。 此标记可用于上下文独立的代码段（例如注释）。|
+
+- **分隔符**  -  该可选属性用于指定用于描述代码中的文本和对象的分隔符。 默认情况下，分隔符为 `$`。
+
+### <a name="parent-element"></a>父元素
 |父元素|描述|  
 |--------------------|-----------------|  
-|[Snippet 元素](../ide/code-snippets-schema-reference.md#snippet)|包含用于代码段的引用、导入、声明和代码。|  
-  
- 需要一个文本值。 此文本指定在将此代码段插入到项目中时可以使用的代码以及文本和对象。  
+|[Snippet 元素](../ide/code-snippets-schema-reference.md#snippet)|包含用于代码段的引用、导入、声明和代码。|
   
 ##  <a name="codesnippet"></a> CodeSnippet 元素  
  允许你指定一个标题和多个 IntelliSense 代码段，你可以将其插入 Visual Studio 代码文件中。  
@@ -170,7 +157,6 @@ is a great color. I love Blue.
     <Header>... </Header>  
     <Snippet>... </Snippet>  
 </CodeSnippet>  
-  
 ```  
   
 |特性|描述|  
@@ -193,7 +179,6 @@ is a great color. I love Blue.
 <CodeSnippets>  
     <CodeSnippet>... </CodeSnippet>  
 </CodeSnippets>  
-  
 ```  
   
 |子元素|描述|  
@@ -208,7 +193,6 @@ is a great color. I love Blue.
     <Literal>... </Literal>  
     <Object>... </Object>  
 </Declarations>  
-  
 ```  
   
 |子元素|描述|  
@@ -227,7 +211,6 @@ is a great color. I love Blue.
 <Default>  
     Default value  
 </Default>  
-  
 ```  
   
 |父元素|描述|  
@@ -284,7 +267,6 @@ is a great color. I love Blue.
     <Keywords>... </Keywords>  
     <Shortcut>... </Shortcut>  
 </Header>  
-  
 ```  
   
 |子元素|说明|  
@@ -311,7 +293,6 @@ is a great color. I love Blue.
 <HelpUrl>  
     www.microsoft.com  
 </HelpUrl>  
-  
 ```  
   
 |父元素|说明|  
@@ -327,7 +308,6 @@ is a great color. I love Blue.
 <ID>  
     Unique Identifier  
 </ID>  
-  
 ```  
   
 |父元素|描述|  
@@ -347,7 +327,6 @@ is a great color. I love Blue.
 <Import>  
     <Namespace>... </Namespace>  
 </Import>  
-  
 ```  
   
 |子元素|说明|  
@@ -488,10 +467,7 @@ is a great color. I love Blue.
 |[Declarations 元素](../ide/code-snippets-schema-reference.md#declarations)|包含代码段的可编辑文本和对象。|  
   
 ##  <a name="reference"></a> Reference 元素  
- 指定有关代码段所需的程序集引用的信息。  
-  
-> [!NOTE]
->  只有 Visual Basic 项目支持 `Reference` 元素。  
+ 指定有关代码段所需的程序集引用的信息。 
   
 ```xml  
 <Reference>  
@@ -511,9 +487,6 @@ is a great color. I love Blue.
   
 ##  <a name="references"></a> References 元素  
  对单个 `Reference` 元素进行分组。  
-  
-> [!NOTE]
->  只有 Visual Basic 项目支持 `References` 元素。  
   
 ```xml  
 <References>  
@@ -556,8 +529,7 @@ is a great color. I love Blue.
     <Imports>... </Imports>  
     <Declarations>... </Declarations>  
     <Code>... </Code>  
-</Snippet>  
-  
+</Snippet>    
 ```  
   
 |子元素|说明|  

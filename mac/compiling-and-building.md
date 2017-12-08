@@ -1,19 +1,17 @@
 ---
-title: "在 Visual Studio for Mac 中编译和生成"
+title: "在 Visual Studio for Mac 中编译和生成 | Microsoft Docs"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
+ms.openlocfilehash: 9005cf64f4b72f39923d6525e78de745d79c3953
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: ea98f80d037a03912cf3d8212588ebb7520b4bbb
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中编译和生成
 
 Visual Studio for Mac 可用于在项目开发过程中生成应用程序和创建程序集。 请务必提早且经常编译和生成代码，以便确定类型不匹配和其他编译时错误。
@@ -46,9 +44,9 @@ Visual Studio for Mac 还可用于执行以下操作：
 
 可使用 MSBuild 生成引擎通过命令行生成应用程序。
 
-请参阅 [MSBuild](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild) 内容，了解有关使用 MSBuild 的详细信息。
+请参阅 [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild) 内容，了解有关使用 MSBuild 的详细信息。
 
 ### <a name="using-visual-studio-team-services"></a>使用 Visual Studio Team Services
 
-* [生成 Xamarin 应用](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin)
+* [生成 Xamarin 应用](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
 * [与 Xamarin 持续集成](https://developer.xamarin.com/guides/cross-platform/ci/)

@@ -1,79 +1,57 @@
 ---
 title: "开发面向通用 Windows 平台 (UWP) 的应用 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 10/24/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-caps.latest.revision: 48
+caps.latest.revision: "48"
 author: stevehoag
 ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 74e8c8dcdeb0ae7796a89a2e1277404cbfd51f90
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+manager: ghogen
+ms.openlocfilehash: acf69e6cddabad98a68c870ccfaeafa9b420cac7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发面向通用 Windows 平台 (UWP) 的应用
-使用通用 Windows 平台和我们的一项 Windows 核心，可在任何 Windows 10 设备上（从电话到桌面）运行同一应用。 使用 Visual Studio 2015 和通用 Windows 应用开发工具创建这些通用 Windows 应用。  
+# <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发通用 Windows 平台 (UWP) 的应用
+使用通用 Windows 平台和我们的一项 Windows 核心，可在任何 Windows 10 设备上（从电话到桌面）运行同一应用。 使用 Visual Studio 和通用 Windows 应用开发工具创建这些通用 Windows 应用。  
   
- ![通用 Windows 平台](~/cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")  
+ ![通用 Windows 平台](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")  
   
  在 Windows 10 手机、Windows 10 台式机或 Xbox 上运行应用。 它是相同的应用包！ 通过引入 Windows 10 的单个统一核心，一个应用程序包可以跨所有平台运行。 多个平台都具有可添加到应用以利用平台特定行为的扩展 SDK。 例如，用于移动功能的扩展 SDK 控制 Windows phone 上按下的后退按钮。 如果在项目中引用扩展 SDK，只需添加运行时检查来测试该 SDK 是否可在该平台上可用。 这就是对每个平台使用相同应用包的方法！  
   
- **什么是 Windows 核心？**  
+ 什么是 Windows 核心？  
   
- 这是首次将 Windows 重构从而跨所有 Windows 10 平台共用一个核心。 存在一个共用源、一个共用 Windows 内核、一个文件 I/O 堆栈和一个应用模型。 对于 UI，只有一个 XAML UI 框架和一个 HTML UI 框架。 因此你可专注于创建出色的应用，因为我们已让在不同的 Windows 10 设备上运行应用变得容易。  
+ 这是首次将 Windows 重构从而跨所有 Windows 10 平台共用一个核心。 存在一个共用源、一个共用 Windows 内核、一个文件 I/O 堆栈和一个应用模型。 对于 UI，只有一个 XAML UI 框架和一个 HTML UI 框架。 你可专注于创建出色的应用，因为我们已让在不同的 Windows 10 设备上运行应用变得容易。  
   
  **究竟什么是通用 Windows 平台？**  
   
- 它只是一个协定和版本的集合。 使你能够定位应用运行的环境。 不用再定位到操作系统。 现在你可以将应用定位到一个或多个设备系列。 通过此 [平台指南](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx)了解更多详细信息。  
+通用 Windows 平台只是一系列的协定和版本。 使你能够定位应用运行的环境。 你面向的不再是操作系统；现在你面向的是一个或多个设备系列。 请参阅[通用 Windows 平台简介](/windows/uwp/get-started/universal-application-platform-guide)，了解详细信息。  
   
 ## <a name="requirements"></a>要求  
  通用 Windows 应用开发工具附带了仿真程序，可用于查看应用在不同设备上的显示效果。 如果想要使用这些仿真程序，需要在物理计算机上安装此软件。 物理计算机必须运行 Windows 8.1 (x64) Professional 版本或更高版本，并具有支持客户端 Hyper-V 和二级地址转换 (SLAT) 的处理器。 当 Visual Studio 安装在虚拟机上时，则无法使用仿真程序。  
   
  下面是所需软件的列表：  
   
--   [Windows 10](http://windows.microsoft.com/windows/downloads)  
+-   [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2017 只在 Windows 10 上支持 UWP 开发。 有关详细信息，请参阅[平台目标](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)和[系统要求](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs)。   
   
--   [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725)。 请确保可选功能列表中，通用 Windows 应用开发工具处于选中状态。 没有这些工具，你将无法创建通用应用。  
+-   [Visual Studio](https://www.visualstudio.com/downloads/)。 你还需要通用 Windows 平台开发工作负荷（可选）。  
+
+     ![UWP 工作负荷](media/uwp_workload.png)
   
- 在安装此软件之后，你需要 [启用 Windows 10 设备](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) 以进行开发。 （不再需要每个 Windows 10 设备的开发人员许可证。）  
-  
- **Windows 8.1 和 Windows 7 支持**  
-  
- 如果选择使用 Visual Studio 2015 在除 Windows 10 外的平台上开发通用 Windows 应用，存在以下限制：  
-  
--   Windows 8.1：无法在本地运行应用（仅在远程 Windows 10 设备上运行）。 可使用 Visual Studio 中的仿真程序，但不能使用模拟器。  
-  
--   Windows 7：无法在本地运行应用（仅在远程 Windows 10 设备上运行）。 无法使用 Visual Studio 中的仿真程序或模拟器。  
-  
- 如果开发平台是 Windows 10，只能使用 XAML 设计器。  
-  
+安装此软件后，需要启用 Windows 10 设备以进行开发。 请参阅[启用设备进行开发](/windows/uwp/get-started/enable-your-device-for-development)。 不再需要每个 Windows 10 设备的开发者许可证。  
+    
 ## <a name="universal-windows-apps"></a>通用 Windows 应用  
- 从 C#、Visual Basic、C++ 或 JavaScript 中选择首选的开发语言以 [为 Windows 10 设备创建通用 Windows 应用](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 或者，监视 [此入门视频](http://channel9.msdn.com/Series/ConnectOn-Demand/229)。  
+从 C#、Visual Basic、C++ 或 JavaScript 中选择首选的开发语言用来为 Windows 10 设备创建通用 Windows 平台应用。 请参阅[创建你的第一个应用](/windows/uwp/get-started/your-first-app)或观看 [Tools for Windows 10 Overview](http://channel9.msdn.com/Series/ConnectOn-Demand/229)（Windows 10 工具概述）视频。
   
- 如果你有现有的 Windows 应用商店 8.1 应用、Windows Phone 8.1 应用或使用 Visual Studio 2015 RC 创建的通用 Windows 应用，则 [移植这些现有的应用](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 以使用最新的通用 Windows 平台。  
+如果你目前已有通过 Visual Studio 2015 创建的 Windows 应用商店 8.1 应用、Windows Phone 8.1 应用或通用 Windows 应用，则需移植这些应用，以使用最新的通用 Windows 平台。 请参阅[从 Windows 运行时 8.x 移动到 UWP](/windows/uwp/porting/w8x-to-uwp-root)。
   
- 创建通用 Windows 应用后，必须 [将应用打包](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) 以将其安装在 Windows 10 设备或提交到 Windows 应用商店。
+创建通用 Windows 应用后，必须将应用打包，以将其安装在 Windows 10 设备上或提交到 Windows 应用商店。 请参阅[打包应用](/windows/uwp/packaging/index)。
+
+## <a name="see-also"></a>请参阅
+[Visual Studio 中的跨平台移动开发](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)  

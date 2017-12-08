@@ -1,20 +1,18 @@
 ---
-title: "自定义 IDE"
+title: "自定义 IDE | Microsoft Docs"
 description: "可以通过多种方式自定义 Visual Studio for Mac，因此用户可以在满足效率和美观需求的环境中开发应用。 本主题将探讨调整 Visual Studio for Mac 的各种方式以满足你的需要。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
+ms.openlocfilehash: f0192b63c76fe4c3fe51c0f5aa6700e072fb80d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 514f758718105db366363cd1c9e69163a9872dc7
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
-#<a name="customizing-the-ide"></a>自定义 IDE
+# <a name="customizing-the-ide"></a>自定义 IDE
 
 可以通过多种方式自定义 Visual Studio for Mac，因此用户可以在同时满足效率和美观需求的环境中开发应用。 本主题将探讨调整 Visual Studio for Mac 的各种方式以满足不的需要。
 
@@ -131,4 +129,3 @@ Visual Studio for Mac 提供包含其他信息、工具和导航帮助的面板�
  ![与其他选项卡并行的 2 列](media/customizing-the-ide-sbs2.png)
 
 若要还原单一的打开编辑器，请选择“视图”>“编辑器列”>“1 列”。
-

@@ -1,23 +1,26 @@
 ---
-title: "如何：分析网页中的 JavaScript (ECMA) 代码 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "JavaScript 性能分析"
-  - "分析工具, JavaScript"
-  - "网站性能分析"
+title: "如何：分析网页中的 JavaScript 代码 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- JavaScript performance profiling
+- Profiling Tools,JavaScript
+- web site performance profiling
 ms.assetid: 37d02aad-ca4d-4eb0-bf66-ca3ecef31fbe
-caps.latest.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 27
+caps.latest.revision: "27"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8e33605b75dfe80bf755081692bc8a4991def801
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析网页中的 JavaScript 代码
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具可以通过使用检测分析方法收集在 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序、任意网页或 JavaScript 应用程序中执行的 JavaScript 代码的性能数据。  
@@ -29,7 +32,7 @@ caps.handback.revision: 27
 -   Internet Explorer 8 或更高版本。  
   
 > [!WARNING]
->  若要分析 Windows 应用商店应用中的 JavaScript，请参阅 [JavaScript 内存](../profiling/javascript-memory.md) 
+>  若要分析 UWP 应用中的 JavaScript，请参阅 [JavaScript 内存](../profiling/javascript-memory.md) 
   
  可以使用“分析向导”创建性能会话。 指定检测方法，然后在该性能会话的属性对话框的“检测”页上指定 JavaScript 分析选项。  
   
@@ -41,7 +44,7 @@ caps.handback.revision: 27
   
 ### <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>分析 ASP.NET Web 应用程序项目中的 JavaScript  
   
-1.  在 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 中，打开 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 项目。  
+1.  在 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]中，打开 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 项目。  
   
 2.  在“分析”  菜单上，单击“启动性能向导” 。  
   
@@ -78,8 +81,3 @@ caps.handback.revision: 27
 7.  练习要分析的功能。  
   
 8.  若要结束分析会话，请关闭浏览器。
-
-
-<!--HONumber=Feb17_HO4-->
-
-

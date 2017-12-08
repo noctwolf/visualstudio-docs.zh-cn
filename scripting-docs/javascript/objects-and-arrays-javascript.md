@@ -1,30 +1,33 @@
 ---
 title: "对象和数组 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "数组 [JavaScript]"
-  - "组数 [JavaScript]，对象"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arrays [JavaScript]
+- arrays [JavaScript], objects
 ms.assetid: f5106284-1240-4f47-8c3b-5a45e227e5e1
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6776701ba108ae0ecefc2331c2b12272e0c1be19
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
-# 对象和数组 (JavaScript)
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 对象是属性和方法的集合。  方法是作为对象成员的函数。  属性是作为对象成员的一个值或一组值（以数组或对象的形式）。  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 支持四种对象：  
+# <a name="objects-and-arrays-javascript"></a>对象和数组 (JavaScript)
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 对象是属性和方法的集合。 方法是作为对象成员的函数。 属性是作为对象成员的一个值或一组值（以数组或对象的形式）。 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 支持四种对象：  
   
 -   内部对象（如 `Array` 和 `String`）。  
   
@@ -34,10 +37,10 @@ caps.handback.revision: 15
   
 -   ActiveX 对象。  
   
-## Expando 属性和方法  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 中的所有对象均支持 expando 属性和方法，这些属性和方法可在运行时动态添加和移除。  这些属性和方法可以有任何名称，并可用数字标识。  如果属性或方法的名称是简单的标识符，则可在对象名称与句点之后加入该属性，如以下代码中的 `myObj.name`、`myObj.age` 和 `myObj.getAge`：  
+## <a name="expando-properties-and-methods"></a>Expando 属性和方法  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 中的所有对象均支持 expando 属性和方法，这些属性和方法可在运行时动态添加和移除。 这些属性和方法可以有任何名称，并可用数字标识。 如果属性或方法的名称是简单的标识符，则可在对象名称与句点之后加入该属性，如以下代码中的 `myObj.name`、`myObj.age` 和 `myObj.getAge`：  
   
-```javascript  
+```JavaScript  
 var myObj = new Object();  
 myObj.name = "Fred";  
 myObj.age = 42;  
@@ -60,9 +63,9 @@ document.write(myObj.getAge());
   
 ```  
   
- 如果属性或方法的名称不是简单的标识符，或在编写脚本时不知道该属性，则可在方括号内使用表达式作为属性的索引。  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 中所有 expando 属性的名称在添加到对象之前都被转换为字符串。  
+ 如果属性或方法的名称不是简单的标识符，或在编写脚本时不知道该属性，则可在方括号内使用表达式作为属性的索引。 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 中所有 expando 属性的名称在添加到对象之前都被转换为字符串。  
   
-```javascript  
+```JavaScript  
 var myObj = new Object();  
   
 // Add two expando properties that cannot be written in the  
@@ -76,14 +79,14 @@ myObj["not a valid identifier"] = "This is the property value";
 myObj[100] = "100";  
 ```  
   
- 有关从定义创建对象的信息，请参见[Creating 对象](../javascript/creating-objects-javascript.md)。  
+ 有关根据定义创建对象的信息，请参阅[创建对象](../javascript/creating-objects-javascript.md)。  
   
-## 作为对象的数组  
- 在 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 中，对象和数组的处理方式几乎相同，因为数组仅是一类特殊的对象。  对象和数组都可以具有属性和方法。  
+## <a name="arrays-as-objects"></a>作为对象的数组  
+ 在 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 中，对象和数组的处理方式几乎相同，因为数组仅是一类特殊的对象。 对象和数组都可以具有属性和方法。  
   
- 数组具有 `length` 属性，而对象没有。  当你将值分配给索引大于其本身长度的数组的元素（例如 `myArray[100] = "hello"`）时，`length` 属性将自动增加到新的长度。  同样，如果使 `length` 属性变小，索引超过数组长度的所有元素将被删除。  
+ 数组具有 `length` 属性，而对象没有。 当你将值分配给索引大于其本身长度的数组的元素（例如 `myArray[100] = "hello"`）时，`length` 属性将自动增加到新的长度。 同样，如果使 `length` 属性变小，索引超过数组长度的所有元素将被删除。  
   
-```javascript  
+```JavaScript  
 // An array with three elements  
 var myArray = new Array(3);  
   
@@ -108,9 +111,9 @@ document.write("new length is : " + myArray.length);
   
 ```  
   
- 数组提供方法对成员进行循环访问和操作。  以下示例演示如何获得存储在数组中的对象的属性。  
+ 数组提供方法对成员进行循环访问和操作。 以下示例演示如何获得存储在数组中的对象的属性。  
   
-```javascript  
+```JavaScript  
 var myArray = new Array(3);  
   
 // Add some data  
@@ -128,10 +131,10 @@ myArray.forEach(function (item) {
 // 2003  
 ```  
   
-## 多维数组  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 不直接支持多维数组，但你可将多维数组存储在另一数组的元素中，从而获得多维数组的行为。（你可以在数组元素内部存储任何类型的数据，包括其他数组。）例如，以下代码为最大为 5 的数字生成一个乘法表。  
+## <a name="multi-dimensional-arrays"></a>多维数组  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 不直接支持多维数组，但你可将多维数组存储在另一数组的元素中，从而获得多维数组的行为。 （你可以在数组元素内部存储任何类型的数据，包括其他数组。）例如，以下代码为最大为 5 的数字生成一个乘法表。  
   
-```javascript  
+```JavaScript  
 // The size of the table.  
 var iMaxNum = 5;  
 // Loop counters.  

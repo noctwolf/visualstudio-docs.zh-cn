@@ -1,35 +1,38 @@
 ---
 title: "类型化数组 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: fa82c562-0ebf-4559-aecc-166e59f7fb64
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5fc3b29a4593e7c627a6e606242229e87fa5be54
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
-# 类型化数组 (JavaScript)
-可以使用类型化数组来处理来自网络协议、二进制文件格式和原始图形缓冲区等源的二进制数据。  类型化数组还可用于管理具有已知字节布局的内存中二进制数据。  
+# <a name="typed-arrays-javascript"></a>类型化数组 (JavaScript)
+可以使用类型化数组来处理来自网络协议、二进制文件格式和原始图形缓冲区等源的二进制数据。 类型化数组还可用于管理具有已知字节布局的内存中二进制数据。  
   
-## 示例  
- 以下代码显示如何将 [ArrayBuffer 对象](../../javascript/reference/arraybuffer-object.md)用作 [XMLHttpRequest](http://msdn.microsoft.com/library/ie/ms535874\(v=vs.85\).aspx) 的响应。  可以通过使用 [DataView 对象](../../javascript/reference/dataview-object.md)的不同方法，或通过将字节复制到适当的类型化数组，来操作响应中的字节。  
+## <a name="example"></a>示例  
+ 以下代码显示如何将 [ArrayBuffer 对象](../../javascript/reference/arraybuffer-object.md)用作 [XMLHttpRequest](http://msdn.microsoft.com/library/ie/ms535874\(v=vs.85\).aspx) 的响应。 可以通过使用 [DataView 对象](../../javascript/reference/dataview-object.md)的不同方法，或通过将字节复制到适当的类型化数组中来操作响应中的字节。  
   
 > [!TIP]
->  有关使用具有 `XmlHttpRequest` 的不同响应类型的详细信息，请参阅 [XMLHttpRequest.responseType](http://msdn.microsoft.com/zh-cn/8d7738d1-4bfd-4cf1-8015-174def089556)、[XMLHttpRequest 增强功能](http://msdn.microsoft.com/zh-cn/be09137c-6546-441b-b953-dcbf72b77069)和[下载不同类型的内容（Windows 应用商店应用）](http://msdn.microsoft.com/zh-cn/c0006bbd-17f9-4c6a-af81-2acaf109111d)。  
+>  有关使用具有 `XmlHttpRequest` 的不同响应类型的详细信息，请参阅 [XMLHttpRequest.responseType](http://msdn.microsoft.com/en-us/8d7738d1-4bfd-4cf1-8015-174def089556)、[XMLHttpRequest 增强功能](http://msdn.microsoft.com/en-us/be09137c-6546-441b-b953-dcbf72b77069)和[下载不同类型的内容（Windows 应用商店应用）](http://msdn.microsoft.com/en-us/c0006bbd-17f9-4c6a-af81-2acaf109111d)。  
   
-```javascript  
+```JavaScript  
 ...  
 <div id="xhrDiv"></div>  
 ...  
@@ -52,14 +55,14 @@ if (req.readyState == req.DONE) {
 req.send();  
 ```  
   
-## ArrayBuffer  
- [ArrayBuffer 对象](../../javascript/reference/arraybuffer-object.md)表示用于存储不同类型化数组的数据的原始数据缓冲区。  无法读取或写入 `ArrayBuffer`，但可以将它传递给类型化数组或 [DataView 对象](../../javascript/reference/dataview-object.md) 来解释原始缓冲区。  可以使用 `ArrayBuffer` 来存储任何类型的数据（或混合类型的数据）。  
+## <a name="arraybuffer"></a>ArrayBuffer  
+ [ArrayBuffer 对象](../../javascript/reference/arraybuffer-object.md)表示原始数据的缓冲区，可用于存储不同类型化数组的数据。 无法读取或写入 `ArrayBuffer`，但可以将它传递给类型化数组或 [DataView 对象](../../javascript/reference/dataview-object.md)来解释原始缓冲区。 可以使用 `ArrayBuffer` 来存储任何类型的数据（或混合类型的数据）。  
   
-## DataView  
+## <a name="dataview"></a>DataView  
  可以使用 [DataView 对象](../../javascript/reference/dataview-object.md)来读取不同类型的二进制数据，并将它写入 `ArrayBuffer` 中的任何位置。  
   
-## 类型化数组  
- 类型化数组的类型表示可对其创建索引和进行操作的 [ArrayBuffer 对象](../../javascript/reference/arraybuffer-object.md)的视图。  所有数组类型都具有固定长度。  
+## <a name="typed-arrays"></a>类型化数组  
+ 类型化数组的类型表示 [ArrayBuffer 对象](../../javascript/reference/arraybuffer-object.md)的视图。该对象可供索引和操作。 所有数组类型都具有固定长度。  
   
 ||||  
 |-|-|-|  

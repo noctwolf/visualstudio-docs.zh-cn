@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.cv.markers.flag
+f1_keywords: vs.cv.markers.flag
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0095311f5188260bf1207e4094c1ceb87b1bbb86
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 646faaa3c80a01565540bd05850b76286121203a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="flag-markers"></a>标志标记
 标志标记表示某一瞬间在应用中发生的事。 标志可以表示许多应用程序事件。 例如，标志可以显示特定工作项的计划时间或引发异常的时间。 诸如任务并行库等运行时也可以生成标志。  
@@ -43,19 +25,19 @@ ms.lasthandoff: 05/13/2017
 ## <a name="flag-importance"></a>标志重要性  
  标志以不同的大小显示，具体取决于它们的重要性。 与所有标记一样，重要性可以是低、常规、高或重要。  此图按重要性级别显示各标记的外观：  
   
- ![“低”、“正常”、“高”和“严重”重要性标记](~/profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
+ ![“低”、“正常”、“高”和“严重”重要性标记](../profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
 显示标志重要性的标记  
   
 ## <a name="flag-category"></a>标志类别  
  标志显示为五种不同的颜色，具体取决于其类别。 如果有 5 个以上的类别，则会重复使用颜色。 不能选择颜色。 与所有标记一样，类别可以是任意整数。 下一个插图显示前 5 个类别的颜色。  
   
- ![类别标记的 5 种颜色](~/profiling/media/cvmarkercategory.png "CVMarkerCategory")  
+ ![类别标记的 5 种颜色](../profiling/media/cvmarkercategory.png "CVMarkerCategory")  
 显示类别的标记  
   
 ## <a name="alerts"></a>警报  
  警报是一种表示重要应用程序事件（例如，异常）的红色标志。  以下是一个警报：  
   
- ![并发可视化工具警报标记](~/profiling/media/cvmarkeralert.png "CVMarkerAlert")  
+ ![并发可视化工具警报标记](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
 警报标记  
   
 ## <a name="aggregation-flags"></a>聚合标志  
@@ -63,7 +45,7 @@ ms.lasthandoff: 05/13/2017
   
  聚合标志以不同的大小绘制。 标志的大小取决于聚合中最重要的标志所具有的重要性级别。 下图按重要性从低到高显示聚合标志。  
   
- ![聚合显示 4 个重要性级别的标志](~/profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
+ ![聚合显示 4 个重要性级别的标志](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 不同重要性级别的聚合标志  
   
 ## <a name="see-also"></a>另请参阅  

@@ -1,19 +1,17 @@
 ---
-title: "扩展 Visual Studio for Mac 演练"
+title: "扩展 Visual Studio for Mac 演练 | Microsoft Docs"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
+ms.openlocfilehash: 30571e0f83d2b54fdb5346030cc7cc4430901797
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 7d267051abbf0341b3842b24906e10e0906a0a72
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>扩展 Visual Studio for Mac 演练
 
 本主题介绍如何生成[一个简单的扩展包](https://github.com/mjh4/AddIns/tree/master/DateInserter)。 扩展包将在 Visual Studio for Mac 的“编辑”菜单中创建新命令，用户通过该命令可以将当前的日期和时间插入到打开的文本文档中。
@@ -137,4 +135,3 @@ ms.lasthandoff: 08/11/2017
 15.   最后，请运行扩展包以进行测试。 在 Visual Studio for Mac 新实例中，选择“编辑”>“插入日期”。 在脱字号处插入当前的日期和时间，如下方的屏幕截图所示：
 
   ![插入日期屏幕截图](media/extending-visual-studio-mac-addin12.png)
-

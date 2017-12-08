@@ -1,64 +1,50 @@
 ---
-title: "索引搜索提示 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "hv_index"
-helpviewer_keywords: 
-  - "Help Viewer 2.0, 索引搜索提示"
-  - "索引搜索提示 [Help Viewer 2.0]"
-ms.assetid: f9ffa8e9-3ece-419d-a465-f9c2c21fd4ba
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+redirect_url: /visualstudio/ide/how-to-find-topics-in-the-index
+ms.openlocfilehash: cd82fd88987f74af1c2949ff8c352da3a0ea1c00
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/07/2017
 ---
-# 索引搜索提示
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-您可以通过进入关键在“索引”中定位信息。  本主题建议使用有用的索引方式搜索“帮助”。  
+title: "索引搜索提示 | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "article" f1_keywords: 
+  - "hv_index" helpviewer_keywords: 
+  - "索引搜索提示 [Help Viewer]"
+  - "Help Viewer，索引搜索提示" ms.assetid: f9ffa8e9-3ece-419d-a465-f9c2c21fd4ba caps.latest.revision: 6 author: "gewarren" ms.author: "gewarren" manager: ghogen
+---
+# <a name="index-search-tips"></a>索引搜索提示
+可以输入关键字来查找索引中的信息。 本主题针对如何使用索引搜索帮助推荐了一些有用的方法。  
   
-## 索引搜索提示  
- 使用索引是直接的进程；但是，了解输入关键字可以提高索引搜索的工作效率的最佳方式。  
+## <a name="index-search-tips"></a>索引搜索提示  
+使用索引是一个简单的过程；但是，了解如何以最佳方式输入关键字可以使索引搜索更高效。  
   
-### 通用准则  
+### <a name="general-guidelines"></a>通用准则  
   
--   在索引项中滚动。  并非所有主题都用相同方式已编制索引，且最能够帮助您的主题在列表中可能比预期的高或低。  
+-   滚动浏览索引条目。 并非所有主题的索引编制方式都相同，最能为用户提供帮助的主题在列表中的排名可能会高于或低于预期。  
   
--   因为索引的忽略，省略如 "an" 或 "the" 的文章。  
+-   省略“an”或“the”等文章，因为索引会忽略它们。  
   
--   如果未找到预期的项，则反转您输入的单词。  
+-   如果没有找到期望的条目，可以颠倒输入的字词顺序。  
   
-     例如，如果“调试内联程序集代码”不显示任何相关项，尝试键入“assembly code, debugging inline”。  
+     例如，如果“debugging inline assembly code”没有显示任何相关条目，请尝试键入“assembly code, debugging inline”。  
   
--   筛选器与**“索引”**选项卡一起使用，以减少结果数。  
+-   使用带“索引”选项卡的筛选器可以减少结果数。  
   
-### 语法提示  
- 如果找不到您输入的词或词组，请尝试以下操作:  
+### <a name="syntax-tips"></a>语法提示  
+如果没有找到输入的单词或短语条目，请尝试以下操作：  
   
--   键入单词的前几个字母或根。  通过输入一个部分字符串，可以获取对索引单复数形式的关键字的主题。  
+-   键入单词的前几个字母或根。 通过输入部分字符串，可以获取已使用单数或复数关键字编入索引的主题。  
   
-     例如，输入“propert”开始对 properties 和 property 的搜索。  
+     例如，输入“propert”以开始对 properties 和 property 的搜索。  
   
--   输入要完成任务的谓词的动名词\(\-ing\)形式。  若要查找更为具体的索引项，请追加您想要的准确描述的单词。  
+-   为要完成的任务输入动词的动名词 (-ing) 形式。 若要查找更具体的索引条目，请追加一个精确描述所需内容的单词。  
   
-     例如，键入“running”获得更多项 或键入“running programs”则获取的更少。  
+     例如，键入“running”可获取更多条目，键入“running programs”可获取更少条目。  
   
--   输入独立的形容词。  若要缩小结果，请追加您想要准确描述的单词。  
+-   输入独立的形容词。 若要缩小结果范围，请追加一个精确描述所需内容的单词。  
   
-     例如，输入“COM\+”得到广泛的结果项而用“COM\+组件”获取更少。  
+     例如，输入“COM+”可获取大量条目，输入“COM+ components”可获取较少条目。  
   
--   输入要查找的同义词或动词。  
+-   输入正在查找的词或动词的同义词。  
   
-     例如，如果输入了“building”动名词尝试代替“creating”。  
-  
-## 请参阅  
- [全文搜索提示](../ide/full-text-search-tips.md)   
- [找到信息](../ide/locate-information.md)
+     例如，如果输入了“building”一词，请尝试改用“creating”。  

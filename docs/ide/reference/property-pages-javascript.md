@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,39 +16,24 @@ f1_keywords:
 - javascript.project.property.debugging.machinename
 - javascript.project.property.debugging.allowlocalnetworkloopback
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 5d69e9d8d81ed36bb5933c42f3d8e9a499cd0b9d
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 1540667f1ed5356587837e83d30307901de4d15c
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="property-pages-javascript"></a>属性页，JavaScript
 “属性页”提供对项目设置的访问。 可使用“属性页”中显示的页面来更改项目属性。  
 
- 若要访问项目属性，请在“解决方案资源管理器”中选择项目节点。 在“项目”菜单上，单击“属性”。  
+若要访问项目属性，请在“解决方案资源管理器”中选择项目节点。 在“项目”菜单上，单击“属性”。  
 
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
 
- 以下页面和选项显示在“属性页”中。  
+以下页面和选项显示在“属性页”中。  
 
 ## <a name="configuration-and-platform-page"></a>配置和平台页  
  使用以下选项选择要显示或修改的配置和平台。  
@@ -64,7 +48,7 @@ ms.lasthandoff: 06/23/2017
  使用以下选项来设置项目的常规属性。  
 
 > [!NOTE]
->  某些选项仅在 Windows 应用商店应用程序中可用。  
+>  某些选项仅可用于 UWP 应用。  
 
  输出路径  
  指定项目的配置的输出文件的位置。 该路径是相对；如果输入绝对路径，绝对路径会保存在项目中。 默认路径为 bin\Debug。  
@@ -78,7 +62,7 @@ ms.lasthandoff: 06/23/2017
  使用以下选项来设置项目中调试行为的属性。  
 
 > [!NOTE]
->  某些选项仅在 Windows 应用商店应用程序中可用。  
+>  某些选项仅可用于 UWP 应用。  
 
  要启动的调试器  
  指定调试器的默认主机。  
@@ -89,18 +73,17 @@ ms.lasthandoff: 06/23/2017
 
 -   选择“远程计算机”可在远程计算机上启动应用程序。 有关远程调试的详细信息，请参阅[在远程计算机上运行应用](http://go.microsoft.com/fwlink/?LinkId=234914)。  
 
- 启动应用程序  
- 指定按 F5 或依次单击“调试”、“启动调试”时是否启动应用程序。 选择“是”则启动应用程序；否则，请选择“否”。 如果选择“否”，而使用另一种方法来启动，则仍然可以调试应用程序。  
+启动应用程序  
+指定按 F5 或依次单击“调试”、“启动调试”时是否启动应用程序。 选择“是”则启动应用程序；否则，请选择“否”。 如果选择“否”，而使用另一种方法来启动，则仍然可以调试应用程序。  
 
- 调试器类型  
- 指定要调试的代码的类型。 选择“仅限脚本”可调试 JavaScript 代码。 选择“仅限托管”可调试由公共语言运行时托管的代码。 选择“仅限本机”可调试 C++ 代码。 选择“本机(带脚本)”可调试 C++ 和 JavaScript。 选择“混合(托管和本机)”可调试托管代码和 C++ 代码。  
+调试器类型  
+指定要调试的代码的类型。 选择“仅限脚本”可调试 JavaScript 代码。 选择“仅限托管”可调试由公共语言运行时托管的代码。 选择“仅限本机”可调试 C++ 代码。 选择“本机(带脚本)”可调试 C++ 和 JavaScript。 选择“混合(托管和本机)”可调试托管代码和 C++ 代码。  
 
- **允许本地网络环回**  
- 指定是否允许应用测试访问 IP 环回地址。 如果客户端应用位于运行服务器应用程序的同一台计算机上，请选择“是”，允许使用环回地址；否则，请选择“否”。 此属性仅当“要启动的调试器”属性设置为“远程计算机”时可用。  
+**允许本地网络环回**  
+指定是否允许应用测试访问 IP 环回地址。 如果客户端应用位于运行服务器应用程序的同一台计算机上，请选择“是”，允许使用环回地址；否则，请选择“否”。 此属性仅当“要启动的调试器”属性设置为“远程计算机”时可用。  
 
- 计算机名称  
- 指定远程计算机的名称，以承载调试器。 此属性仅当“要启动的调试器”设置为“远程计算机”时可用。  
+计算机名称  
+指定远程计算机的名称，以承载调试器。 此属性仅当“要启动的调试器”设置为“远程计算机”时可用。  
 
- 要求身份验证  
- 指定远程计算机是否需要身份验证。 此属性仅当“要启动的调试器”设置为“远程计算机”时可用。
-
+要求身份验证  
+指定远程计算机是否需要身份验证。 此属性仅当“要启动的调试器”设置为“远程计算机”时可用。

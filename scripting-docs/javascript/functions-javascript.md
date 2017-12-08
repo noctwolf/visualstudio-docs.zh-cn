@@ -1,49 +1,51 @@
 ---
 title: "函数 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "内部 JavaScript 函数"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: intrinsic JavaScript functions
 ms.assetid: e2a72b5a-3edd-43d8-95e8-91721b38c1c1
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fd5626af6417b5f0010545874bd15c86b30a303a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
-# 函数 (JavaScript)
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 函数执行操作，还可返回值。  有时返回的是计算或比较的结果。  函数也称为“全局方法”。  
+# <a name="functions-javascript"></a>函数 (JavaScript)
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 函数执行操作，还可返回值。 有时返回的是计算或比较的结果。 函数也称为“全局方法”。  
   
- 函数将多个操作合并到一个名称下。  这样可以简化你的代码。  还可以写出一组语句并对其命名，然后通过调用它并向它传递其所需的任何信息来执行整个组。  
+ 函数将多个操作合并到一个名称下。 这样可以简化你的代码。 还可以写出一组语句并对其命名，然后通过调用它并向它传递其所需的任何信息来执行整个组。  
   
- 通过将信息放入函数名后的括号内，将信息传递给函数。  传递给函数的信息片段称为形参或实参。  某些函数不采用任何参数，而另一些则采用一个或多个参数。  在某些函数中，参数的数量取决于函数的使用方式。  
+ 通过将信息放入函数名后的括号内，将信息传递给函数。 传递给函数的信息片段称为形参或实参。 某些函数不采用任何参数，而另一些则采用一个或多个参数。 在某些函数中，自变量的数量取决于函数的使用方式。  
   
  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 支持两种类型的函数：内置于语言的函数和你自行创建的函数。  
   
-## 内置函数  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 语言包含几个内置函数。  一些用于处理表达式和特殊字符，另一些则用于将字符串转换为数值。  
+## <a name="built-in-functions"></a>内置函数  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 语言包含几个内置函数。 一些用于处理表达式和特殊字符，另一些则用于将字符串转换为数值。  
   
  请参阅 [JavaScript 方法](../javascript/reference/javascript-methods.md)，获取这些内置函数的相关信息。  
   
-## 创建你自己的函数  
- 可以创建你自己的函数，并在适当位置使用它们。  函数定义由 function 语句和 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 语句块组成。  
+## <a name="creating-your-own-functions"></a>创建你自己的函数  
+ 可以创建你自己的函数，并在适当位置使用它们。 函数定义由 function 语句和 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 语句块组成。  
   
- 以下示例中的 **checkTriplet** 函数采用三角形的边长作为其参数。  它通过检查三个数字是否构成毕达哥拉斯三元数组（直角三角形斜边长度的平方等于其余两边长度的平方和）来计算此三角形是否为直角三角形。  checkTriplet 函数通过调用另外两个函数中的一个来进行实际测试。  
+ 下例中的 checkTriplet 函数采用三角形的边长作为其参数。 它通过检查三个数字是否构成毕达哥拉斯三元数组（直角三角形斜边长度的平方等于其余两边长度的平方和）来计算此三角形是否为直角三角形。 checkTriplet 函数通过调用另外两个函数中的一个来进行实际测试。  
   
- 请注意，在测试的浮点版本中，使用极小的数字 \("epsilon"\) 作为测试变量。  由于浮点计算中的不确定性和舍入误差，直接测试三个数字是否构成毕达哥拉斯三元数组并不可行，除非已知待测试的三个值都是整数。  由于直接测试更准确，所以此示例中的代码将确定是否适合直接测试，如果适合则使用它。  
+ 请注意，在测试的浮点版本中，使用极小的数字 ("epsilon") 作为测试变量。 由于浮点计算中的不确定性和舍入误差，直接测试三个数字是否构成毕达哥拉斯三元数组并不可行，除非已知待测试的三个值都是整数。 由于直接测试更准确，所以此示例中的代码将确定是否适合直接测试，如果适合则使用它。  
   
-```javascript  
+```JavaScript  
 var epsilon = 0.00000000001; // Some very small number to test against.  
   
 // The test function for integers.  
@@ -119,23 +121,23 @@ var result = checkTriplet(sideA, sideB, sideC);
 ```  
   
 <a name="Arrow"></a>   
-## 箭头函数  
- 箭头函数语法 `=>` 提供了一种指定匿名函数的速记方法。  箭头函数语法如下所示。  
+## <a name="arrow-functions"></a>箭头函数  
+ 箭头函数语法 `=>` 提供了一种指定匿名函数的速记方法。 箭头函数语法如下所示。  
   
-```javascript  
+```JavaScript  
 ([arg] [, arg]) => {  
     statements  
 }  
 ```  
   
- 箭头左侧的值（可能由括号括起）指定传递给函数的参数。  函数的单个参数不要求使用括号。  如果未传入任何参数，则要求使用括号。  箭头右侧的函数定义可以是表达式（如 `v + 1`）或括在大括号 \({}\) 中的语句块。  
+ 箭头左侧的值（可能由括号括起）指定传递给函数的自变量。 函数的单个参数不要求使用括号。 如果未传入任何参数，则要求使用括号。 箭头右侧的函数定义可以是表达式（如 `v + 1`）或括在大括号 ({}) 中的语句块。  
   
 > [!IMPORTANT]
 >  箭头函数语法仅在 [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] 中受支持。  
   
  不能将 `new` 运算符和箭头函数一起使用。  
   
- 下面的代码示例显示了如何将箭头函数与作为函数定义的表达式一起使用。  在第一个示例中，v 作为参数传递给表达式。  在第二个示例中，v 和 i 作为参数传递给表达式。  
+ 下面的代码示例显示了如何将箭头函数与作为函数定义的表达式一起使用。 在第一个示例中，v 作为参数传递给表达式。 在第二个示例中，v 和 i 作为自变量传递给表达式。  
   
 ```  
 var evens = [2, 4, 6, 8];  
@@ -163,7 +165,7 @@ console.log(nums);
   
  下面的代码示例显示如何将箭头函数与语句块一起使用。  
   
-```javascript  
+```JavaScript  
 var fives = new Array();  
   
 // Statement block, re-using nums array from previous example.  
@@ -184,7 +186,7 @@ console.log(fives);
   
  以下示例演示了箭头函数内 `this` 对象的值与外层代码中的相同（仍引用 `bob` 变量）。  
   
-```javascript  
+```JavaScript  
 var bob = {  
   _name: "Bob",  
   _friends: ["Pete", "Joe", "Larry"],  
@@ -203,15 +205,15 @@ var bob = {
  箭头函数也与外层代码共享相同的词法 `arguments` 对象（类似于 `this` 对象）。  
   
 <a name="Default"></a>   
-## 默认参数  
- 可以通过为参数分配初始值，指定它在函数中的默认值。  默认值可能是常数值或表达式。  
+## <a name="default-parameters"></a>默认参数  
+ 可以通过为参数分配初始值，指定它在函数中的默认值。 默认值可能是常数值或表达式。  
   
 > [!IMPORTANT]
 >  默认参数仅在 [!INCLUDE[jsv12textExp](../javascript/includes/jsv12textexp-md.md)] 中受支持。  
   
- 在以下示例中，y 的默认值为 10，z 的默认值为 20。  函数将使用 10 作为 y 的值，除非调用方传入不同值（或未定义的值）作为第二个参数。  函数将使用 20 作为 z 的值，除非调用方传入不同值（或未定义的值）作为第三个参数。  
+ 在以下示例中，y 的默认值为 10，z 的默认值为 20。 函数将使用 10 作为 y 的值，除非调用方传入不同值（或未定义的值）作为第二个参数。 函数将使用 20 作为 z 的值，除非调用方传入不同值（或未定义的值）作为第三个自变量。  
   
-```javascript  
+```JavaScript  
 var val = 20;  
   
 function f(x, y=10, z=val) {  
@@ -229,10 +231,10 @@ console.log(f(3, 3, 3));
 ```  
   
 <a name="Rest"></a>   
-## Rest 参数  
- 通过 Rest 参数（由 spread 运算符                       ``  指定），可以将函数调用中的连续参数转换为数组。  
+## <a name="rest-parameters"></a>Rest 参数  
+ 通过由展开运算符 () 指定的 Rest 形参，可以将函数调用中的连续实参转换为数组。  
   
- Rest 参数使不再需要 `arguments` 对象。  Rest 参数与 `arguments` 对象有几个方面的区别，例如：  
+ Rest 参数使不再需要 `arguments` 对象。 Rest 参数与 `arguments` 对象有几个方面的区别，例如：  
   
 -   Rest 参数是实际数组实例，因此支持可在数组上执行的操作。  
   
@@ -241,9 +243,9 @@ console.log(f(3, 3, 3));
 > [!IMPORTANT]
 >  Rest 参数和 spread 算符仅在 [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)]中受支持。  
   
- 在以下代码示例中，“hello”和 true 作为数组值传入并存储在 y 参数中。  Rest 参数必须为函数的最后一个参数。  
+ 在以下代码示例中，“hello”和 true 作为数组值传入并存储在 y 参数中。 Rest 参数必须为函数的最后一个参数。  
   
-```javascript  
+```JavaScript  
 function f(x, ...y) {  
   // y is an array.  
   return x * y.length;  
@@ -256,7 +258,7 @@ console.log(f(3, "hello", true));
   
 ```  
   
- 有关 Spread 运算符的其他用法，请参阅 [Spread 运算符](../javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md)。  
+ 有关展开运算符的其他用法，请参阅[展开运算符](../javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md)。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [JavaScript 语言参考](../javascript/javascript-language-reference.md)

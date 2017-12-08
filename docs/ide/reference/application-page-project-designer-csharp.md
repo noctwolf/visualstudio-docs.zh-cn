@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,38 +14,22 @@ helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
 ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
-caps.latest.revision: 56
-author: kempb
-ms.author: kempb
+caps.latest.revision: "56"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
-ms.openlocfilehash: 3f0056a62dc11c5584e38e9912ccd94f5b9e9b0e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: 5f32dceca8a6b14e6b1777e5c525327f46adca47
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="application-page-project-designer-c"></a>“项目设计器”->“应用程序”页 (C#)
 使用“项目设计器”的“应用程序”页指定项目的应用程序设置和属性。  
   
- 若要访问“应用程序”页，请在**解决方案资源管理器**中选择项目节点（而非“解决方案”节点）。 然后在菜单栏上依次选择“项目”、“属性”。 当项目设计器出现时，单击“应用程序”选项卡。  
+若要访问“应用程序”页，请在**解决方案资源管理器**中选择项目节点（而非“解决方案”节点）。 然后在菜单栏上依次选择“项目”、“属性”。 当项目设计器出现时，单击“应用程序”选项卡。  
   
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="general-application-settings"></a>常规应用程序设置  
  以下选项用于配置应用程序的常规设置。  
@@ -72,7 +55,7 @@ ms.lasthandoff: 05/26/2017
  有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和 [Visual Studio 多目标概述](../../ide/visual-studio-multi-targeting-overview.md)。  
   
  **应用程序类型**  
- 指定要生成的应用程序类型。 对于 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 应用，可以指定“Windows 应用商店应用”、“类库”或“WinMD 文件”。 对于其他大多数应用程序类型，可以指定“Windows 应用程序”、“控制台应用程序”、“类库”、“Windows 服务”或“Web 控件库”。  
+ 指定要生成的应用程序类型。 对于 Windows 8.x 应用，可以指定“Windows 应用商店应用”、“类库”或“WinMD 文件”。 对于其他大多数应用程序类型，可以指定“Windows 应用程序”、“控制台应用程序”、“类库”、“Windows 服务”或“Web 控件库”。  
   
  对于 Web 应用程序项目，必须指定“类库”。  
   
@@ -111,11 +94,11 @@ ms.lasthandoff: 05/26/2017
   
 -   **Properties\app.manifest**。 此选项对通过 ClickOnce 或 Registration-Free COM 部署的应用程序而言是必需的。 如果通过使用 ClickOnce 部署发布应用程序，“清单”会自动设置为此选项。  
   
- **资源文件**  
- 若要为项目提供资源文件，则选中此单选按钮。 选择此选项会禁用“图标”和“清单”选项。  
+**资源文件**  
+若要为项目提供资源文件，则选中此单选按钮。 选择此选项会禁用“图标”和“清单”选项。  
   
- 输入路径名或使用“浏览”按钮 (**...**)，以向项目添加 Win32 资源文件。  
+输入路径名或使用“浏览”按钮 (**...**)，以向项目添加 Win32 资源文件。  
   
 ## <a name="see-also"></a>另请参阅  
 [管理应用程序属性](../../ide/application-properties.md)  
- [在 Office 解决方案中编写代码](/office-dev/office-dev/writing-code-in-office-solutions)
+[在 Office 解决方案中编写代码](/office-dev/office-dev/writing-code-in-office-solutions)

@@ -1,35 +1,30 @@
 ---
 title: "在 Visual Studio 中调试 Python | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2192dc77-b5da-4332-b753-fa20f03f81e0
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 8d17c0a3a1d376f7b44e5fb78f362fc49458462e
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 92fd0f30dfbb09f0eca8d2c9bc98d7904d81353c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="debugging-your-python-code"></a>调试 Python 代码
 
 Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行的进程，在监视窗口和即时窗口中计算表达式，检查局部变量、断点、单步执行/单步跳出/单步跳过语句、设置下一语句等。 
 
-有关调试概述，请参阅[PTVS 入门，第 4 部分：调试](https://youtu.be/bO7wpzgy74A?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)（youtube.com，3 分 30 秒）。
+有关调试概述，请观看[调试 Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)（Microsoft Virtual Academy，3 分 32 秒）。
 
-> [!VIDEO https://www.youtube.com/embed/bO7wpzgy74A]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567]
 
 在本主题中：
 
@@ -44,13 +39,15 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 - [Python/C++ 混合模式调试](debugging-mixed-mode.md)
 - [混合模式调试的符号](debugging-symbols-for-mixed-mode.md)
 
-<a name="debugging-without-a-project"</a>
+<a name="debugging-without-a-project"></a>
+
 > [!Tip]
-> Visual Studio 中的 Python 支持不含项目进行调试。 打开独立的 Python 文件后，在编辑器中单击右键，选择“开始调试”，Visual Studio 将使用全局默认环境且不使用参数（请参阅 [Python 环境](python-environments.md)）启动脚本。 之后，你就获得完整的调试支持。
+> Visual Studio 中的 Python 支持不含项目进行调试。 打开独立的 Python 文件后，在编辑器中单击右键，选择“开始调试”，Visual Studio 会使用全局默认环境（请参阅 [Python 环境](python-environments.md)）且不使用参数启动脚本。 之后，你就获得完整的调试支持。
 >
 > 若要控制环境和参数，请为代码创建一个项目，可使用[从现有 Python 代码](python-projects.md#creating-a-project-from-existing-files)项目模板即可轻松完成此操作。
 
-<a name="debugging-with-a-project"</a>
+<a name="debugging-with-a-project"></a>
+
 ## <a name="basic-debugging"></a>基础调试
 
 基础调试工作流包括如以下各节中所述的设置断点、逐句通过代码、检查值以及处理异常。 有关 Visual Studio 调试器的完整详细信息，请参阅 [Visual Studio 中的调试](../debugger/debugging-in-visual-studio.md)。

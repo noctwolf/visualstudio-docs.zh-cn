@@ -1,5 +1,5 @@
 ---
-title: "卸载 Visual Studio for Mac"
+title: "卸载 Visual Studio for Mac | Microsoft Docs"
 description: "卸载 Visual Studio for Mac 和相关工具的说明。"
 author: asb3993
 ms.author: amburns
@@ -7,14 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
+ms.openlocfilehash: 193eebd4849e6a133ade1d14cb17d5b345199811
+ms.sourcegitcommit: 24f81b8fb59722cf4a856005227f6a29bb2990cd
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 6d021192e8104ec520aa057173d9dec41a62dfd3
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/17/2017
 ---
-
 # <a name="uninstalling-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
 
 许多 Xamarin 产品支持跨平台应用程序开发，包括 Visual Studio for Mac 等独立应用。
@@ -43,8 +41,8 @@ ms.lasthandoff: 08/11/2017
 3. 使脚本可执行，并通过 **sudo** 运行它：
 
     ```bash
-    $ chmod +x ./xamarin_uninstall.sh
-    $ sudo ./xamarin_uninstall.sh
+    $ chmod +x ./uninstall-vsmac.sh
+    $ sudo ./uninstall-vsmac.sh
     ```
 4. 最后，删除卸载脚本。
 
@@ -67,6 +65,7 @@ rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Developer/Xamarin
+rm -rf "~/Library/Application Support/VisualStudio"
 ```
 
 ## <a name="uninstall-mono-sdk-mdk"></a>卸载 Mono SDK (MDK)
@@ -183,4 +182,3 @@ rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
-

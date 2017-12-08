@@ -1,19 +1,17 @@
 ---
-title: "在 Visual Studio for Mac 中设置 Git 存储库"
+title: "在 Visual Studio for Mac 中设置 Git 存储库 | Microsoft Docs"
 description: "使用 Visual Studio for Mac 中的 Git 和 Subversion。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
+ms.openlocfilehash: 2f6c06ff640007f28cfaed6512fdedc5dcb16e65
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 9f25eda17648ba7eb3c264660ee0eb3b8eee166c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="setting-up-a-git-repository"></a>设置 Git 存储库
 
 Git 是分布式版本控制系统，使团队可以同时在同一文档上工作。 这意味着有一个单一服务器包含所有文件，但从此中央源中签出存储库时，整个存储库都会被克隆到本地计算机。
@@ -85,14 +83,35 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 
 ![将更改推送到远程存储库](media/version-control-git12.png)
 
+## <a name="checkout-an-existing-repository"></a>签出现有存储库
+
+用户要使用的 GitHub 存储库很有可能仅存在于远程计算机上，而不在本地计算机上。 Visual Studio for Mac 允许快速签出此存储库。 请按以下步骤将其克隆到计算机上：
+
+1. 在菜单栏中，选择“版本控制“>”签出...”：
+
+2. 随即显示“连接到存储库”选项卡：
+
+    ![输入了详细信息的“连接到存储库”选项卡](media/version-control-git13.png)
+
+3. 在远程存储库的 GitHub 页上，按“克隆或下载”按钮，然后复制提供的 URL：
+
+    ![显示 github url](media/version-control-git14.png)
+
+4. 在“连接到存储库”选项卡中替换掉 **URL** 输入字段中的所有文本。这将为用户填充此选项卡中的其他大多数字段，如步骤 2 中的图像所示。
+
+5. 输入要将存储库克隆到的目录并按“签出”。
+
+> [!NOTE]
+如果存储库大小超过 4 GB，可能会遇到问题。
+
 ## <a name="troubleshooting"></a>疑难解答
 
-如果在使用空远程存储库初始化项目时遇到问题，可尝试执行以下步骤：
+如果在使用空的远程存储库初始化项目时遇到问题，可尝试执行以下步骤：
 
 - 转到解决方案文件夹。
 - 按 `Command + Shift + . ` 显示隐藏的文件和文件夹。
-- 若有 `.git` 文件夹，请删除它。
-- 若有 `gitignore` 文件，请删除它。
+- 若有 **.git** 文件夹，请删除它。
+- 若有 **gitignore** 文件，请删除它。
 - 按 `Command + Shift + . ` 隐藏文件和文件夹。
 - 在 VS for Mac 中打开解决方案。
 - 在 Solution Pad 上选择解决方案节点。

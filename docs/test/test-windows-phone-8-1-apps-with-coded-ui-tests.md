@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
-caps.latest.revision: 28
+caps.latest.revision: "28"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 33c6d52536bc5295197c810058e959570c1d0242
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 01b31305ba4ed3706e6368a2b8d9963e524c9c1a
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 Windows UWP 和 Phone 8.1 应用
 
@@ -353,7 +336,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>问：如何为通用 Windows 平台 (UWP) 应用创建编码的 UI 测试？  
  **答**：根据要在其中测试 UWP 应用的平台，通过以下方式之一创建编码的 UI 测试项目：  
   
--   在本地计算机上运行的 UWP 应用将作为应用商店应用运行。 若要对此进行测试，必须使用 **“编码的 UI 测试项目(Windows)”** 模板。 若要在创建新项目时查找此模板，请转到“Windows” 、“通用”  节点。 或转到 **“Windows”**、 **“Windows 8”**、 **“Windows”** 节点。  
+-   在本地计算机上运行的 UWP 应用将作为 UWP 应用运行。 若要对此进行测试，必须使用 **“编码的 UI 测试项目(Windows)”** 模板。 若要在创建新项目时查找此模板，请转到“Windows” 、“通用”  节点。 或转到 **“Windows”**、 **“Windows 8”**、 **“Windows”** 节点。  
   
 -   在移动设备或仿真器上运行的 UWP 应用将作为 Phone 应用进行运行。 若要对此进行测试，必须使用 **“编码的 UI 测试项目(Windows Phone)”** 模板。 若要在创建新项目时查找此模板，请转到“Windows” 、“通用”  节点。 或转到 **“Windows”**、 **“Windows 8”**、 **“Windows Phone”** 节点。  
   
@@ -387,10 +370,10 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 </RunSettings>  
 ```  
   
-### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>问：针对基于 XAML 的 Windows 应用商店应用和 Windows Phone 应用的编码的 UI 测试有什么区别？  
+### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-uwp-apps-and-windows-phone-apps"></a>问：针对基于 XAML 的 UWP 应用和 Windows Phone 应用的编码的 UI 测试有什么区别？  
  **答**：以下是一些主要区别：  
   
-|功能|Windows 应用商店应用程序|Windows Phone 应用|  
+|功能|UWP 应用|Windows Phone 应用|  
 |-------------|------------------------|------------------------|  
 |运行测试的目标|本地或远程计算机。 当你使用自动测试用例运行测试时，可以指定远程计算机。 请参阅 [在 Microsoft 测试管理器中实现测试用例自动化](/devops-test-docs/test/automate-a-test-case-in-microsoft-test-manager)。|模拟器或设备。 请参阅本主题中的 [问：是否测试只能在模拟器上执行，或者我还可以使用物理设备？](#TestingPhoneAppsCodedUI_EmulatorDevice) 。|  
 |从命令行执行|指定目标无需设置文件。|指定目标需要 Runsettings 文件。|  
@@ -399,11 +382,10 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |从 MTM 执行自动测试|支持。|不支持。|  
 |数据驱动的测试|有关使用外部数据源和使用测试方法中 DataSource 特性的信息，请参阅 [数据驱动的测试](../test/creating-a-data-driven-coded-ui-test.md) 。|使用测试方法中的 DataRow 特性将数据指定为内联。 请参阅本主题中的 [对 Windows Phone 应用使用数据驱动的编码 UI 测试](#TestingPhoneAppsCodedUI_DataDriven) 。|  
   
- 若要了解 Windows 应用商店应用的编码的 UI 测试，请参阅[使用编码的 UI 测试来测试 Windows UWP 和应用商店 8.1 应用](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)。  
+ 有关 UWP 应用的编码的 UI 测试的信息，请参阅[使用编码的 UI 测试来测试 Windows UWP 应用](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)。  
   
 ## <a name="external-resources"></a>外部资源  
  Microsoft Visual Studio Application Lifecycle Management 博客： [使用编码的 UI 测试基于 XAML 的 Windows Phone 应用](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
   
 ## <a name="see-also"></a>另请参阅  
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)
-

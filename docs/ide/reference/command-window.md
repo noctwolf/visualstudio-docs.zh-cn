@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.CommandWindow
+f1_keywords: VS.CommandWindow
 helpviewer_keywords:
 - IDE, Command window
 - Mark mode in Command window
@@ -17,30 +15,15 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 5aedd2d660c1a3225cf1d2023864b099c0f080c3
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 112264b0bbe5e752a7f56004e767f26b527a6f6a
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="command-window"></a>“命令”窗口
 “命令”窗口用于直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中执行命令或别名。 可以执行菜单命令和不在任何菜单上出现的命令。 若要显示“命令”窗口，请在“视图”菜单中选择“其他窗口”，然后选择“命令窗口”。  
@@ -86,21 +69,9 @@ ms.lasthandoff: 05/13/2017
 ## <a name="the-equals--sign"></a>等号 (=)  
  用于输入 `EvaluateStatement` 命令的窗口确定是将等号 (=) 解释为比较运算符还是赋值运算符。  
   
- 在“命令”窗口中，将等号 (=) 解释为比较运算符。 不可以在“命令”窗口中使用赋值运算符。 例如，如果变量 `varA` 和 `varB` 的值不同，则命令  
+ 在“命令”窗口中，将等号 (=) 解释为比较运算符。 不可以在“命令”窗口中使用赋值运算符。 例如，如果变量 `varA` 和 `varB` 的值不同，则命令 `>Debug.EvaluateStatement(varA=varB)` 返回 `False` 值。  
   
-```  
->Debug.EvaluateStatement(varA=varB)  
-```  
-  
- 将返回 `False` 的值。  
-  
- 与此相反，在“即时”窗口中，将等号 (=) 解释为赋值运算符。 例如，命令  
-  
-```  
->Debug.EvaluateStatement(varA=varB)  
-```  
-  
- 将为变量 `varA` 赋予变量 `varB` 的值。  
+ 与此相反，在“即时”窗口中，将等号 (=) 解释为赋值运算符。 例如，命令 `>Debug.EvaluateStatement(varA=varB)` 将变量 `varB` 的值赋给变量 `varA`。  
   
 ## <a name="parameters-switches-and-values"></a>参数、开关和值  
  某些 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令具有必选和可选的参数、开关和值。 处理此类命令时，会应用某些规则。 下面是一个用来阐明术语的复杂命令示例。  
@@ -122,11 +93,11 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
     > [!NOTE]
     >  任何包含空格的命令、参数、开关或值都必须用双引号引起来。  
   
- 在命令行上，开关和参数的位置可以随便互换，但 [Shell](../../ide/reference/shell-command.md) 命令是个例外，它要求开关和参数按特定的顺序出现。  
+在命令行上，开关和参数的位置可以随便互换，但 [Shell](../../ide/reference/shell-command.md) 命令是个例外，它要求开关和参数按特定的顺序出现。  
   
- 几乎命令所支持的每个开关都有两种格式：短格式（一个字符）和长格式。 多个短格式开关可组合为一组。 例如，`/p /g /m` 可表示为 `/pgm`。  
+几乎命令所支持的每个开关都有两种格式：短格式（一个字符）和长格式。 多个短格式开关可组合为一组。 例如，`/p /g /m` 可表示为 `/pgm`。  
   
- 如果短格式开关组合为一组，而且给定一个值，则该值应用于每个开关。 例如，`/pgm:123` 等同于 `/p:123 /g:123 /m:123`。 如果该组中的任何开关都不接受值，则发生错误。  
+如果短格式开关组合为一组，而且给定一个值，则该值应用于每个开关。 例如，`/pgm:123` 等同于 `/p:123 /g:123 /m:123`。 如果该组中的任何开关都不接受值，则发生错误。  
   
 ## <a name="escape-characters"></a>转义字符  
  命令行中的插入符号 (^) 字符表示紧随其后的字符将按字面意思而不是作为控制字符进行解释。 这可以用于嵌入参数或开关值中的直引号 (")、空格、前导斜杠，插入符号或其他任何字符，开关名称除外。 例如，  
@@ -134,7 +105,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```  
 >Edit.Find ^^t /regex  
 ```  
-  
+
  插入符号在引号内或引号外的作用相同。 如果插入符号是行的最后一个字符，则忽略不计。 此处显示的示例演示如何搜索模式“^t”。  
   
 ## <a name="use-quotes-for-path-names-with-spaces"></a>对带有空格的路径名称使用引号  

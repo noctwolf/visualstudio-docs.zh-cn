@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 06/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- cs.AdvancedBuildSettings
-helpviewer_keywords:
-- Build options [C#], advanced
+f1_keywords: cs.AdvancedBuildSettings
+helpviewer_keywords: Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b7b29ffadcb069b6c918dfbe89f0ae49d0da172a
-ms.openlocfilehash: a281313904bb8881d2e96065a024447d151cddbd
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/20/2017
-
+ms.openlocfilehash: c7df850e46f8f5d81b9127a9885128452900b84b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>“高级生成设置”对话框 (C#)
 
@@ -46,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
  通过以下选项可以设置常规高级设置。
 
- **语言版本**
-指定要使用的语言版本。 每个版本中的功能集是不同的，因此，可使用此选项强制编译器仅允许已实现功能的子集，或仅启用与现有标准兼容的功能。 此设置具有以下选项：
+ **语言版本** 指定要使用的语言版本。 每个版本中的功能集是不同的，因此，可使用此选项强制编译器仅允许已实现功能的子集，或仅启用与现有标准兼容的功能。 此设置具有以下选项：
 
  - **default**
 
@@ -72,8 +53,7 @@ ms.lasthandoff: 06/20/2017
 
  使用以下选项可以指定高级输出选项。
 
- **调试信息**
-指定编译器生成的调试信息的类型。 有关如何配置应用程序的调试性能的信息，请参阅[令映像更易于调试](http://msdn.microsoft.com/Library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3)。 此设置具有以下选项：
+ **调试信息** 指定编译器生成的调试信息的类型。 有关如何配置应用程序的调试性能的信息，请参阅[令映像更易于调试](http://msdn.microsoft.com/Library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3)。 此设置具有以下选项：
 
 - **none**
 
@@ -102,6 +82,4 @@ ms.lasthandoff: 06/20/2017
 
 ## <a name="see-also"></a>另请参阅
 
- [C# 编译器选项](/dotnet/csharp/language-reference/compiler-options/index)
- [“项目设计器”->“生成”页 (C#)](../../ide/reference/build-page-project-designer-csharp.md)
-
+ [C# 编译器选项](/dotnet/csharp/language-reference/compiler-options/index) [生成页、项目设计器 (C#)](../../ide/reference/build-page-project-designer-csharp.md)

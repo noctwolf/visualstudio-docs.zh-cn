@@ -1,48 +1,48 @@
 ---
 title: "CPPClean 任务 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc.task.cppclean"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-  - "C++"
-helpviewer_keywords: 
-  - "CPPClean 任务 (MSBuild (Visual C++))"
-  - "MSBuild (Visual C++), CPPClean 任务"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vc.task.cppclean
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+- C++
+helpviewer_keywords:
+- MSBuild (Visual C++), CPPClean task
+- CPPClean task (MSBuild (Visual C++))
 ms.assetid: b62a482e-8fb5-4999-b50b-6605a078e291
-caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 437b4a7e6b1a8e92b4409188655dccdfcb1baf50
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# CPPClean 任务
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-删除在生成 Visual C\+\+ 项目时 MSBuild 创建的临时文件。  删除生成文件的过程称为清洗。  
+# <a name="cppclean-task"></a>CPPClean 任务
+删除生成 Visual C++ 项目时 MSBuild 创建的临时文件。 删除生成文件的过程称为“清除”。  
   
-## 参数  
- 下表描述了 **CPPClean** 任务的参数。  
+## <a name="parameters"></a>参数  
+ 下表描述了 CPPClean 任务的参数。  
   
-|Parameter|说明|  
-|---------------|--------|  
-|**DeletedFiles**|可选 `ITaskItem[]` 输出参数。<br /><br /> 定义可以由任务使用和发出的 MSBuild 输出文件项数组。|  
-|**DoDelete**|可选 **Boolean** 参数。<br /><br /> 如果为 `true`，则清理临时生成的文件。|  
-|**FilePatternsToDeleteOnClean**|必选 `String` 参数。<br /><br /> 指定要清理的文件的以分号分隔的文件扩展名列表。|  
-|**FilesExcludedFromClean**|可选 `String` 参数。<br /><br /> 指定不清理的以分号分隔的文件列表。|  
-|**FoldersToClean**|必选 `String` 参数。<br /><br /> 指定要清理的以分号分隔的目录列表。  您可以指定完全或相对的路径，路径可以包含通配符 \(**\***\)。|  
+|参数|描述|  
+|---------------|-----------------|  
+|DeletedFiles|可选 `ITaskItem[]` 输出参数。<br /><br /> 定义可由任务使用和发出的 MSBuild 输出文件项的数组。|  
+|DoDelete|可选 **Boolean** 参数。<br /><br /> 如果为 `true`，则清除临时生成文件。|  
+|FilePatternsToDeleteOnClean|必选 `String` 参数。<br /><br /> 指定要清除的文件的文件扩展名列表（以分号分隔）。|  
+|FilesExcludedFromClean|可选 `String` 参数。<br /><br /> 指定不会清除的文件的列表（以分号分隔）。|  
+|FoldersToClean|必选 `String` 参数。<br /><br /> 指定要清除的目录的列表（以分号分隔）。 可指定完整路径或相对路径，并且路径可包含通配符 (\*)。|  
   
-## 备注  
+## <a name="remarks"></a>备注  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)

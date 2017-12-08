@@ -1,50 +1,50 @@
 ---
 title: "CreateProperty 任务 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#CreateProperty"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "CreateProperty 任务 [MSBuild]"
-  - "MSBuild, CreateProperty 任务"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#CreateProperty
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- CreateProperty task [MSBuild]
+- MSBuild, CreateProperty task
 ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: a585c0c3065d16000737ebfd5c42e3f020c0074a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# CreateProperty 任务
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-使用传入的值来填充属性。  这允许将值从一个属性或字符串复制到另一个属性或字符串。  
+# <a name="createproperty-task"></a>CreateProperty 任务
+使用传入的值填充属性。 通过该操作可以将值从一个属性或字符串复制到另一个属性或字符串。  
   
-## 特性  
+## <a name="attributes"></a>特性  
  下表描述了 `CreateProperty` 任务的参数。  
   
-|Parameter|说明|  
-|---------------|--------|  
+|参数|描述|  
+|---------------|-----------------|  
 |`Value`|可选 `String` 输出参数。<br /><br /> 指定要复制到新属性的值。|  
-|`ValueSetByTask`|可选 `String` 输出参数。<br /><br /> 包含与 `Value` 参数相同的值。  只有在以下情况下才使用此参数：您想避免因输出处于最新状态而跳过结束目标时由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 设置输出属性。|  
+|`ValueSetByTask`|可选 `String` 输出参数。<br /><br /> 包含与 `Value` 参数相同的值。 在由于输出是最新的而跳过封闭目标的情况下，仅当需要避免由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 设置输出属性时，使用此参数。|  
   
-## 备注  
- 除了上面列出的参数，此任务还将从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，此类本身从 <xref:Microsoft.Build.Utilities.Task> 类继承。  有关这些附加参数及其说明的列表，请参见 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
+## <a name="remarks"></a>备注  
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
   
-## 示例  
- 下面的示例使用 `CreateProperty` 任务来创建 `NewFile` 属性，该属性采用了 `SourceFilename` 和 `SourceFileExtension` 属性的值的组合。  
+## <a name="example"></a>示例  
+ 以下示例在 `CreateProperty` 任务中通过合并 `SourceFilename` 和 `SourceFileExtension` 属性的值创建 `NewFile` 属性。  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
     <PropertyGroup>  
@@ -68,6 +68,6 @@ caps.handback.revision: 11
   
  运行项目后，`NewFile` 属性的值为 `Module1.vb`。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [任务](../msbuild/msbuild-tasks.md)

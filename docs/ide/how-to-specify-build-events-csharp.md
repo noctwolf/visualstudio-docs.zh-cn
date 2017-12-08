@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,30 +14,15 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 3058bf7c6714f18291353224a192218c1b59a480
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 6f4f13cabe47bc55a78733ea2bee5504d404c5c4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定生成事件 (C#)
 使用生成事件，可以指定生成开始之前或生成完成之后运行的命令。 只有当生成成功到达生成过程中的这些时间点时，才执行生成事件。  
@@ -163,7 +147,7 @@ ms.lasthandoff: 05/13/2017
   
 1.  为要发布的项目创建 Windows 应用程序。 在“文件”菜单中，指向“新建”，然后单击“项目”。  
   
-2.  在“新建项目”对话框中，展开“Visual C#”，单击“Windows”，然后单击“Windows 窗体应用程序”模板。 将项目命名为 `CSWinApp`。  
+2.  在“新建项目”对话框中，展开“Visual C#”，单击“Windows 经典桌面”，然后单击“Windows 窗体应用”模板。 将项目命名为 `CSWinApp`。  
   
 3.  在“解决方案资源管理器”中选择一个项目，然后在“项目”菜单上单击“属性”。  
   

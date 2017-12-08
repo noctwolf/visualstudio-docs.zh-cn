@@ -1,32 +1,32 @@
 ---
 title: "“列出模块”命令 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.listmodules"
-helpviewer_keywords: 
-  - "Debug.ListModules 命令"
-  - "“列出模块”命令"
-  - "ListModules 命令"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.listmodules
+helpviewer_keywords:
+- Debug.ListModules command
+- ListModules command
+- list modules command
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 081f57f441da17578735317e2d6f8352cd31d30d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# “列出模块”命令
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="list-modules-command"></a>“列出模块”命令
 列出当前进程的模块。  
   
-## 语法  
+## <a name="syntax"></a>语法  
   
 ```  
 Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]  
@@ -34,44 +34,44 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 [/SymbolStatus:yes|no] [/Timestamp:yes|no] [/Version:yes|no]  
 ```  
   
-#### 参数  
- \/Address:`yes|no`  
- 可选。  指定是否显示模块的内存地址。  默认值为 `yes`。  
+#### <a name="parameters"></a>参数  
+ /Address:`yes|no`  
+ 可选。 指定是否显示模块的内存地址。 默认值是 `yes`。  
   
- \/Name:`yes|no`  
- 可选。  指定是否显示模块的名称。  默认值为 `yes`。  
+ /Name:`yes|no`  
+ 可选。 指定是否显示模块的名称。 默认值是 `yes`。  
   
- \/Order:`yes|no`  
- 可选。  指定是否显示模块的顺序。  默认值为 `no`。  
+ /Order:`yes|no`  
+ 可选。 指定是否显示模块的顺序。 默认值是 `no`。  
   
- \/Path:`yes|no`  
- 可选。  指定是否显示模块的路径。  默认值为 `yes`。  
+ /Path:`yes|no`  
+ 可选。 指定是否显示模块的路径。 默认值是 `yes`。  
   
- \/Process:`yes|no`  
- 可选。  指定是否显示模块的进程。  默认值为 `no`。  
+ /Process:`yes|no`  
+ 可选。 指定是否显示模块的进程。 默认值是 `no`。  
   
- \/SymbolFile:`yes|no`  
- 可选。  指定是否显示模块的符号文件。  默认值为 `no`。  
+ /SymbolFile:`yes|no`  
+ 可选。 指定是否显示模块的符号文件。 默认值是 `no`。  
   
- \/SymbolStatus:`yes|no`  
- 可选。  指定是否显示模块的符号状态。  默认值为 `yes`。  
+ /SymbolStatus:`yes|no`  
+ 可选。 指定是否显示模块的符号状态。 默认值是 `yes`。  
   
- \/Timestamp:`yes|no`  
- 可选。  指定是否显示模块的时间戳。  默认值为 `no`。  
+ /Timestamp:`yes|no`  
+ 可选。 指定是否显示模块的时间戳。 默认值是 `no`。  
   
- \/Version:`yes|no`  
- 可选。  指定是否显示模块的版本。  默认值为 `no`。  
+ /Version:`yes|no`  
+ 可选。 指定是否显示模块的版本。 默认值是 `no`。  
   
-## 备注  
+## <a name="remarks"></a>备注  
   
-## 示例  
- 此示例列出当前进程的模块名称、地址和时间戳。  
+## <a name="example"></a>示例  
+ 此示例列出模块名称、地址和当前进程的时间戳。  
   
 ```  
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no  
 ```  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [如何：使用“模块”窗口](../../debugger/how-to-use-the-modules-window.md)

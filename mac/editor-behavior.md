@@ -1,19 +1,17 @@
 ---
-title: "编辑器行为"
+title: "编辑器行为 | Microsoft Docs"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
+ms.openlocfilehash: 3515dfbf3a7cf8c23178aa9df243638f955593e9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 894bcbe66bd071bff1a6d904759f468b519da0f2
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="editor-behavior"></a>编辑器行为
 
 可将编辑器行为设置为允许代码的格式与写入方式相同。 可在“Visual Studio”>“首选项...”>“文本编辑器”>“行为”下设置这些操作，以下介绍了一些常用的功能：

@@ -1,12 +1,11 @@
 ---
-title: Remove Visual Studio 2017 | Microsoft Docs
-description: Learn how to remove Visual Studio, step-by-step.
+title: "删除 Visual Studio 2017 | Microsoft Docs"
+description: "了解如何逐步删除 Visual Studio。"
 ms.custom: 
 ms.date: 09/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,41 +21,40 @@ ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
 author: heaths
 ms.author: heaths
 manager: erickn
+ms.openlocfilehash: 7a93922bd33b3e5aa42d4bb271369d2d9b0a0c3d
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: 37e7e36c04115dc1ccf4d0b8d78f047459108c80
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/13/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/11/2017
 ---
+# <a name="remove-visual-studio"></a>删除 Visual Studio
 
-# <a name="remove-visual-studio"></a>Remove Visual Studio
+如果遇到灾难性错误，并且无法修复或卸载 Visual Studio，可以运行 `InstallCleanup.exe` 工具删除安装文件和产品信息。 如果修复或卸载失败，运行此工具将作为最后的解决措施，并且可能从其他 Visual Studio 安装或其他需要修复的产品中卸载功能。
 
-If you encounter a catastrophic error and cannot repair or uninstall Visual Studio, you can run the `InstallCleanup.exe` tool to remove installation files and product information. This is to be done as a last resort if repair or uninstall fail, and may uninstall features from other Visual Studio installations or other products which will need to be repaired.
+在下面的说明中，可以使用具有以下行为的不同命令行开关运行此工具：
 
-In the instructions below, you can run the tool with different command line switches with the following behavior.
-
-| Switch | Behavior |
+| 开关 | 行为 |
 | ------ | -------- |
-| `-i`   | This is the default if no other switch is passed and will remove only the main installation directory and product information. This behavior is preferable if you intend to reinstall the same version after you run the `InstallCleanup.exe` tool. |
-| `-f`   | This will remove the main installation directory, product information, and most other features installed outside the installation directory that may be shared with other Visual Studio installations or other products. This behavior is preferable if you intend to remove Visual Studio without reinstalling later. |
+| `-i`   | 如果没有传递其他开关，则默认为此开关，并且仅删除主安装目录和产品信息。 如果打算在运行 `InstallCleanup.exe` 工具后重新安装相同的版本，则首选此行为。 |
+| `-f`   | 如果指定此开关，则会删除在安装目录外安装的主安装目录、产品信息和大部分其他功能，这些功能可能与其他 Visual Studio 安装或其他产品共享。 如果打算删除 Visual Studio 并且后来不重新安装，则首选此行为。 |
 
-1. Close the Visual Studio Installer.
-2. Open an administrator command prompt. To do this, follow these steps:
-   * On the **Start** menu, click **Run** (Start + R).
-   * Type **cmd**.
-   * Right-click **Command Prompt**, and then click **Run as administrator**.
-3. Type the full path of the `InstallCleanup.exe` utility and pass whichever command line switch you desire. By default, the path of the utility is as follows:
+1. 关闭 Visual Studio 安装程序。
+2. 打开管理员命令提示符。 要打开管理员命令提示符，请执行以下步骤：
+   * 在“开始”菜单上，单击“运行”（“开始”键 + R）。
+   * 键入“cmd”。
+   * 右键单击“命令提示符” ，然后单击“以管理员身份运行” 。
+3. 键入 `InstallCleanup.exe` 实用工具的完整路径，并传递所需的任何命令行开关。 默认情况下，此实用工具的路径如下所示：
    ```
    C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
    ```
 
-If you do not find `InstallCleanup.exe` under the Visual Studio Installer directory - always located at `%ProgramFiles(x86)%\Microsoft Visual Studio` - please follow the instructions to [install Visual Studio](install-visual-studio.md) and when the workload selection screen is displayed, close the window and follow the steps above again.
+如果在 Visual Studio 安装程序目录下（始终位于 `%ProgramFiles(x86)%\Microsoft Visual Studio`）没有找到 `InstallCleanup.exe`，请按照说明[安装 Visual Studio](install-visual-studio.md)，并在显示工作负载选择屏幕时关闭窗口，再按照前面的步骤执行。
 
-## <a name="see-also"></a>See also
-* [Install Visual Studio 2017](install-visual-studio.md)
-* [Update Visual Studio 2017](update-visual-studio.md)
-* [Modify Visual Studio 2017](modify-visual-studio.md)
-* [Uninstall Visual Studio 2017](uninstall-visual-studio.md)
-* [How to Report a Problem with Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+## <a name="get-support"></a>获取支持
+有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级失败疑难解答](troubleshooting-installation-issues.md)页面，查看疑难解答提示。 也可以通过 Visual Studio IDE 中的[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具向我们报告产品问题，或在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享建议。 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)（需要 [GitHub](https://github.com/) 帐户）与我们和其他 Visual Studio 开发者进行交流。
 
+## <a name="see-also"></a>请参阅
+* [安装 Visual Studio 2017](install-visual-studio.md)
+* [更新 Visual Studio 2017](update-visual-studio.md)
+* [修改 Visual Studio 2017](modify-visual-studio.md)
+* [卸载 Visual Studio 2017](uninstall-visual-studio.md)

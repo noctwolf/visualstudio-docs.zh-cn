@@ -1,35 +1,31 @@
 ---
 title: "Visual Studio 中 Python 的混合模式调试 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4ca86a87-e254-4ab7-b3ba-a0ab99c1da93
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 2f7253e91535e5c9f3214b712da135db46ed7cf9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a185a7888b693d37aa5df8f3a051679d6b7e9ec5
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="debugging-python-and-c-together"></a>一起调试 Python 和 C++
 
 大多数常规 Python 调试器支持仅调试 Python 代码。 但实际上，Python 结合 C 或 C++ 一起使用时需要高性能或能够直接调用平台 API（请参阅[创建适用于 Python 的 C++ 扩展](cpp-and-python.md)以查看示例）。 加载 Python 项目时，Visual Studio 具有合并调用堆栈、能够在 Python 和本机代码之间进行单步执行、在任一类型的代码中产生断点，还能够查看本机帧中对象的 Python 表示形式（反之亦然），为 Python 和本机 C/C++ 提供集成的同时混合模式调试：
 
 ![混合模式调试](media/mixed-mode-debugging.png) 
 
-有关使用 Visual Studio 生成、测试和调试本机 C 模块的介绍，请参阅[深入了解：创建本机模块](https://youtu.be/D9RlT06a1EI)（youtube.com，9 分 9 秒）。
+有关使用 Visual Studio 生成、测试和调试本机 C 模块的介绍，请参阅[深入了解：创建本机模块](https://youtu.be/D9RlT06a1EI)（youtube.com，9 分 9 秒）。 该视频适用于 Visual Studio 2015 和 2017。
 
 > [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
 
@@ -60,7 +56,7 @@ ms.lasthandoff: 07/18/2017
 > [!Note]
 > 仅当在 Visual Studio 中加载了 Python 项目时，才会启用此处所述的混合模式调试。 该项目决定了 Visual Studio 的调试模式，并提供了混合模式选项。 但是，如果已加载 C++ 项目（就像[如 python.org 中所述，在另一应用程序中嵌入 Python 时一样](https://docs.python.org/3/extending/embedding.html)），Visual Studio 将使用不支持混合模式调试的本机 C++ 调试程序。
 >
-> 这种情况下，启动 C++ 项目，但不进行调试（“调试”>“启动但不调试”或 Ctrl+F5），然后使用“调试”>“附加到进程...”。 在出现的对话框中，选择相应的进程，然后使用“选择...”按钮来打开“选择代码类型”对话框，在其中选择 Python，如下所示。 选择“确定” 关闭对话框，然后选择“附加”，启动调试器。 请注意，有可能需要在 C++ 应用中引入适当的暂停或延迟，确保在附加到调试器之前，该应用不会调用要调试的 Python。
+> 这种情况下，启动 C++ 项目，但不进行调试（“调试”>“启动但不调试”或 Ctrl+F5），然后使用“调试”>“附加到进程...”。在出现的对话框中，选择相应的进程，然后使用“选择...”按钮来打开“选择代码类型”对话框，在其中选择 Python，如下所示。 选择“确定” 关闭对话框，然后选择“附加”，启动调试器。 请注意，有可能需要在 C++ 应用中引入适当的暂停或延迟，确保在附加到调试器之前，该应用不会调用要调试的 Python。
 >
 > ![附加调试器时选择 Python 作为调试类型](media/mixed-mode-debugging-attach-type.png)
 

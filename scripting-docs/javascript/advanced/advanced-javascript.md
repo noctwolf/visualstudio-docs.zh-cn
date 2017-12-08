@@ -1,34 +1,37 @@
 ---
 title: "高级 JavaScript | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "数组 [JavaScript]"
-  - "递归过程, JavaScript"
-  - "脚本疑难解答"
-  - "疑难解答, JavaScript"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- troubleshooting, JavaScript
+- troubleshooting scripts
+- arrays [JavaScript]
+- recursive procedures, JavaScript
 ms.assetid: ea26b6a1-e5c6-40d5-ac33-3961f584f941
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8d28050e89b37fc6c2066b599e27789f0bebfd35
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
-# 高级 JavaScript
+# <a name="advanced-javascript"></a>高级 JavaScript
 以下部分说明 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 的高级功能，如递归、数组、疑难解答等。  
   
-## 本节内容  
+## <a name="in-this-section"></a>本节内容  
  [使用构造函数创建对象](../../javascript/advanced/using-constructors-to-define-types.md)  
  说明如何作为实例化对象的方式来编写构造函数。  
   
@@ -36,7 +39,7 @@ caps.handback.revision: 18
  说明如何使用原型创建派生对象。  
   
  [数据属性和访问器属性](../../javascript/advanced/data-properties-and-accessor-properties.md)  
- 说明数据属性和访问器属性之间的区别。  
+ 说明数据属性和访问器属性之间的差异。  
   
  [递归](../../javascript/advanced/recursion-javascript.md)  
  说明 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 如何使用递归和循环。  
@@ -80,5 +83,5 @@ caps.handback.revision: 18
  [条件编译变量](../../javascript/advanced/conditional-compilation-variables-javascript.md)  
  列出可用于条件编译的变量。  
   
- [严格模式](../../javascript/advanced/strict-mode-javascript.md)  
- 说明如何使用严格模式。  版本 10 之前的 Internet Explorer 版本不支持严格模式。
+ [Strict Mode](../../javascript/advanced/strict-mode-javascript.md)  
+ 说明如何使用严格模式。 Internet Explorer 10 之前的 Internet Explorer 版本不支持严格模式。

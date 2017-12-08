@@ -1,34 +1,30 @@
 ---
 title: "Visual Studio 中的 Python 跨平台远程调试 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: aa667357-763f-4ce6-8e47-48f9337658a8
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 9da504c9af3f0ff30f62f0d4581c4061cc22b4ec
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
-ms.openlocfilehash: 2711238ccc6d90b34df748c6b59e4130c74de69b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="remotely-debugging-python-code-on-linux"></a>在 Linux 上远程调试 Python 代码
 
 Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应用程序（请参阅[远程调试](../debugger/remote-debugging.md)）。 它还可使用 [ptvsd 库](https://pypi.python.org/pypi/ptvsd)在其他操作系统、设备或除 CPython 外的 Python 实现中进行远程调试。
 
 使用 ptvsd 时，进行调试的 Python 代码将承载 Visual Studio 可附加到的调试服务器。 此承载要求对代码稍作修改以导入并启用服务器，且可能需要远程计算机上的网络或防火墙配置允许 TCP 连接。
 
-有关远程调试的介绍，请参阅[深入了解：跨平台远程调试](https://youtu.be/y1Qq7BrV6Cc)（youtube.com，6 分 22 秒）。
+有关远程调试的介绍，请观看 [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc)（深入了解：跨平台远程调试，youtube.com，6 分 22 秒），该视频适用于 Visual Studio 2015 和 2017。
 
 > [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
 
@@ -185,4 +181,3 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
 
 > [!Warning]
 > 目前，如果忽略这些警告，Visual Studio 2017 会挂起。 请务必在尝试连接之前更正所有问题。
-

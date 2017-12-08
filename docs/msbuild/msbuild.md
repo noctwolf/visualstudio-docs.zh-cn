@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-caps.latest.revision: 59
+caps.latest.revision: "59"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 44e9d5e7af0994c494522a043c74046c6667abeb
-ms.openlocfilehash: 3b7d14a96683da16d1c7e6bae6a5226bfbaaa616
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: 45714799a518cefa1edb7164437af7c4a067b0e4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是一个用于生成应用程序的平台。 此引擎（也称为 MSBuild）为项目文件提供了一个 XML 架构，用于控制生成平台处理和生成软件的方式。 Visual Studio 会使用 MSBuild，但它不依赖于 Visual Studio。 通过在你的项目或解决方案文件中调用 msbuild.exe，你可以在未安装 Visual Studio 的环境中安排和生成产品。  
@@ -225,6 +209,4 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  [MSBuild 参考](../msbuild/msbuild-reference.md)  
  链接到包含参考信息的主题。  
   
- [术语](msbuild-glossary.md)
-定义常见 MSBuild 术语。
-
+ [术语](msbuild-glossary.md) 定义常见 MSBuild 术语。

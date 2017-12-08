@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
-caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+caps.latest.revision: "28"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: cc0ac8b3418c725579b25712e14c373028fca339
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: f4778bde9903ce3e264f0209c147eedc227b7d8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio 的工作效率提示
 通过按照这些提示操作，可以更快速且高效地在 Visual Studio 中编写、导航和调试代码。 有关常见键盘快捷键的详细信息，请参阅[提示和技巧](../ide/tips-and-tricks-for-visual-studio.md)。 有关更完整的列表，请参阅[标识并自定义键盘快捷键](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)和[默认的键盘快捷键](../ide/default-keyboard-shortcuts-in-visual-studio.md)。  
@@ -91,20 +75,8 @@ ms.lasthandoff: 05/24/2017
   
      若要插入一个代码片段，请在菜单栏中依次选择“编辑”、“IntelliSense”、“插入代码片段”，或者打开文件中的快捷菜单，然后选择“插入代码片段”。 有关详细信息，请参阅[代码片段](../ide/code-snippets.md)。  
   
--   **修复内联代码错误**。 智能标记以蓝色或红色框的形式显示在一行代码下。 您可以通过指向其中一个框或者通过将光标放在代码行中并选择 Ctrl+.（句点）键显示“智能标记” 选项。  
-  
-     蓝色框建议修复代码中的错误的方法。  
-  
-     图 1：错误智能标记  
-  
-     ![错误智能标记建议](../ide/media/productivity_bluesmarttags.png "Productivity_BlueSmartTags")  
-  
-     红色框建议重构你的代码的方法。  
-  
-     图 2：重构智能标记  
-  
-     ![重构智能标记建议](../ide/media/productivity_redsmarttags.png "Productivity_RedSmartTags")  
-  
+-   **修复内联代码错误**。 通过快速操作，只凭单个操作便可轻松重构、生成或修改代码。 可使用灯泡图标![小灯泡图标](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall")，或者按“Alt+Enter”或“Ctrl+.”，从而应用这些操作 前提是光标位于相应的代码行上。 有关详细信息，请参阅[快速操作](quick-actions.md)。  
+
 -   **显示并编辑代码元素的定义**。 你可以快速显示和编辑定义代码元素（如成员、变量或局部变量）的模块。  
   
      若要在弹出窗口中打开定义，请突出显示元素，然后选择 Alt+F12 键，或打开元素的快捷菜单，然后选择“查看定义”。 若要在单独的代码窗口中打开定义，请打开元素的快捷菜单，然后选择“转到定义”。  
@@ -142,7 +114,7 @@ ms.lasthandoff: 05/24/2017
   
 -   **在不同的浏览器中测试相同的页、应用程序或站点**。 在调试代码时，可在安装的 Web 浏览器（包括 [Page Inspector (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209)）之间轻松进行切换，而无需打开“浏览方式”对话框。 可使用“调试目标”列表（位于“标准”工具栏中的“启动调试”按钮旁）来快速验证在调试或查看页面时使用的浏览器。  
   
-     ![选择 Web 浏览器调试选项](~/ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")  
+     ![选择 Web 浏览器调试选项](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")  
   
 -   **设置临时断点**。 你可以在当前代码行中创建一个临时断点，同时启动调试器。 点击该行代码时，调试器进入中断模式。 有关详细信息，请参阅[使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)。  
   

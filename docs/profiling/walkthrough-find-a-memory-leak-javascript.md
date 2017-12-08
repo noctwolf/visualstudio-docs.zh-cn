@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,39 +12,22 @@ dev_langs:
 - VB
 - FSharp
 - C++
-helpviewer_keywords:
-- memory leaks, JavaScript example
+helpviewer_keywords: memory leaks, JavaScript example
 ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7e848a57962636a8ca346e809f3dadad675a7963
-ms.contentlocale: zh-cn
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 1f31221f52e9e944dcfc82c98d18e2cf5ec263bf
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>演练：查找内存泄漏 (JavaScript)
-![适用于 Windows 和 Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- 本演练带领你完成使用 JavaScript 内存分析器确定并修复简单内存问题的过程。 JavaScript 内存分析器在 Visual Studio 中提供，适用于使用 JavaScript 为 Windows 生成的 Windows 应用商店应用。 在此方案中，你将创建一个在内存中错误保留 DOM 元素，而非以创建这些元素时的相同速率将其释放的应用。  
+ 本演练带领你完成使用 JavaScript 内存分析器确定并修复简单内存问题的过程。 JavaScript 内存分析器在 Visual Studio 中提供，适用于使用 JavaScript 为 Windows 生成的 UWP 应用。 在此方案中，你将创建一个在内存中错误保留 DOM 元素，而非以创建这些元素时的相同速率将其释放的应用。  
   
  尽管此应用中内存泄露的原因非常具体，但此处显示的步骤演示了在隔离泄露内存的对象时通常有效的工作流。  
   
@@ -154,13 +136,13 @@ ms.lasthandoff: 02/22/2017
 1.  在 **“调试”** 工具栏上的 **“启动调试”** 列表中，选择已更新的项目的调试目标：某个 Windows Phone 仿真程序或 **“模拟器”**。  
   
     > [!TIP]
-    >  对于 Windows 应用商店应用，也可以选择该列表中的 **“本地计算机”** 或 **“远程计算机”** 。 但是，使用仿真器或模拟器的优点是，你可以将其放置在 Visual Studio 旁，并且在正在运行的应用和 JavaScript 内存分析器之间轻松切换。 有关更多信息，请参阅[从 Visual Studio 运行应用](../debugger/run-store-apps-from-visual-studio.md)和[在远程计算机上运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
+    >  对于 UWP 应用，还可以选择此列表中的“本地计算机”或“远程计算机”。 
   
 2.  在“调试”  菜单上，选择“性能探查器...” 。  
   
 3.  在 **“可用工具”**中，选择 **“JavaScript 内存”**，然后选择 **“启动”**。  
   
-     在本教程中，你将把内存分析器连接到启动项目。 有关其他选项的信息，如将内存分析器连接到所安装的应用，请参阅 [JavaScrip 内存](../profiling/javascript-memory.md)。  
+     在本教程中，你将把内存分析器连接到启动项目。 有关其他选项的信息，如将内存分析器连接到所安装的应用，请参阅 [“JavaScript 内存”](../profiling/javascript-memory.md)。  
   
      当您启动内存分析器时，可能会发现用户帐户控制正在请求运行 VsEtwCollector.exe 的权限。 选择 **“是”**。  
   
@@ -175,7 +157,7 @@ ms.lasthandoff: 02/22/2017
   
      JavaScript 内存分析器在 Visual Studio 的新选项卡中显示信息。  
   
-     此摘要视图中的内存图显示一段时间内的进程内存使用量。 此视图还提供诸如 **“拍摄堆快照”**等命令。 快照提供特定时刻有关内存使用量的详细信息。 有关详细信息，请参阅 [JavaScript 内存](../profiling/javascript-memory.md)。  
+     此摘要视图中的内存图显示一段时间内的进程内存使用量。 此视图还提供诸如 **“拍摄堆快照”**等命令。 快照提供特定时刻有关内存使用量的详细信息。 有关更多信息，请参见 [“JavaScript 内存”](../profiling/javascript-memory.md)。  
   
 6.  选择 **“拍摄堆快照”**。  
   
@@ -228,7 +210,7 @@ ms.lasthandoff: 02/22/2017
   
 15. 打开对象树顶部的 HTMLDivElement 对象（如此处所示）。  
   
-     ![堆的对象计数的“差异”视图](~/profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
+     ![堆的对象计数的“差异”视图](../profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
   
      此视图显示有关内存泄漏的有用信息，例如：  
   
@@ -241,7 +223,7 @@ ms.lasthandoff: 02/22/2017
     > [!TIP]
     >  有时，定位与 `Global` 对象相关的对象可能有助于确定此问题。 为此，请打开标识符的快捷菜单，然后选择 **“在根视图中显示”**。  
   
-##  <a name="FixingMemory"></a>修复内存问题  
+##  <a name="FixingMemory"></a> 修复内存问题  
   
 1.  通过使用探查器显示的数据，可以检查负责移除 ID 为“item”的 DOM 元素的代码。 它将出现在 `initialize()` 函数中。  
   

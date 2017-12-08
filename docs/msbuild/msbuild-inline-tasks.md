@@ -1,39 +1,23 @@
 ---
 title: "MSBuild 内联任务 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 09/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MSBuild, tasks
+helpviewer_keywords: MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 6153ab5924f66d13e2c0664ed652f8eee6f91e4c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ef4376d8d7600b1072e2afa5df2cf474a8b3ab32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 内联任务
 通常，MSBuild 任务通过编译实现 <xref:Microsoft.Build.Framework.ITask> 接口的类进行创建。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  
@@ -44,12 +28,12 @@ ms.lasthandoff: 02/22/2017
  内联任务由 [UsingTask](../msbuild/usingtask-element-msbuild.md) 元素包含。 内联任务和包含它的 `UsingTask` 元素通常包括在 .targets 文件中，并根据需要导入到其他项目文件。 下面是一个基本的内联任务。 请注意，它不执行任何操作。  
   
 ```xml  
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task does nothing. -->  
   <UsingTask  
     TaskName="DoNothing"  
     TaskFactory="CodeTaskFactory"  
-    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll" >  
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
       <Reference Include="" />  
@@ -108,12 +92,12 @@ ms.lasthandoff: 02/22/2017
  下面是一个更全面的内联任务。 HelloWorld 任务 在默认错误日志记录设备上显示“Hello, World!”，该设备通常为系统控制台或 Visual Studio **输出**窗口。 示例中包含了 `Reference` 元素，这仅用于阐释目的。  
   
 ```xml  
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task displays "Hello, world!" -->  
   <UsingTask  
     TaskName="HelloWorld"  
     TaskFactory="CodeTaskFactory"  
-    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
       <Reference Include="System.Xml.dll"/>  
@@ -133,7 +117,7 @@ Log.LogError("Hello, world!");
  可以将 HelloWorld 任务保存在名为 HelloWorld.targets 的文件中，然后按照如下所示从项目中调用它。  
   
 ```xml  
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <Import Project="HelloWorld.targets" />  
   <Target Name="Hello">  
     <HelloWorld />  
@@ -182,9 +166,9 @@ Log.LogError("Hello, world!");
  以下内联任务将给定文件中令牌的每个匹配项替换为给定的值。  
   
 ```xml  
-<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="12.0">  
+<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
   
-  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll">  
+  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">  
     <ParameterGroup>  
       <Path ParameterType="System.String" Required="true" />  
       <Token ParameterType="System.String" Required="true" />  

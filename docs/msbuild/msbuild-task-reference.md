@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,32 +12,17 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords:
-- MSBuild, tasks
+helpviewer_keywords: MSBuild, tasks
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 48f6019ef12e2637917a0b70fbc4eaf3e0eb6f20
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c0d1474fb03acd838387677786656967e852fdf9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 任务参考
 任务提供在生成过程中运行的代码。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供以下列表中的任务。 安装 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 时，可使用其他任务来生成 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目。 有关详细信息，请参阅 [Visual C++ 任务](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。  
@@ -52,13 +36,13 @@ ms.lasthandoff: 02/22/2017
   
 ## <a name="in-this-section"></a>本节内容  
  [任务基类](../msbuild/task-base-class.md)  
- 向派生自 <xref:Microsoft.Build.Utilities.Task> 类的任务添加一些参数。  
+ 向派生自 <xref:Microsoft.Build.Utilities.Task> 类的任务添加几个参数。  
   
  [TaskExtension 基类](../msbuild/taskextension-base-class.md)  
- 向派生自 <xref:Microsoft.Build.Tasks.TaskExtension> 类的任务添加一些参数。  
+ 向派生自 <xref:Microsoft.Build.Tasks.TaskExtension> 类的任务添加几个参数。  
   
  [ToolTaskExtension 基类](../msbuild/tooltaskextension-base-class.md)  
- 向派生自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类的任务添加一些参数。  
+ 向派生自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类的任务添加几个参数。  
   
  [AL（程序集链接器）任务](../msbuild/al-assembly-linker-task.md)  
  从一个或多个文件（可以是模块，也可以是资源文件）创建一个具有清单的程序集。  

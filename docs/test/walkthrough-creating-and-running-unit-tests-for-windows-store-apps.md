@@ -1,49 +1,32 @@
 ---
-title: "演练：为 Windows 应用商店应用创建和运行单元测试 | Microsoft Docs"
+title: "演练：创建并运行 UWP 应用的单元测试 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
-- unit tests, Windows Store apps
+- unit tests, UWP apps
 - unit tests, running
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
-caps.latest.revision: 21
+caps.latest.revision: "21"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 11ae1d653bc34ccb9c8fd8834d134b7212bc4f9a
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 32cab11dd909fc8b60134ebff0d5f37c0b14dcd6
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>演练：为 Windows 应用商店应用程序创建和运行单元测试
+# <a name="walkthrough-creating-and-running-unit-tests-for-uwp-apps"></a>演练：创建并运行 UWP 应用的单元测试
 Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用进行单元测试，并包括 Visual C#、Visual Basic 和 Visual C++ 的单元测试库模板。  
   
 > [!TIP]
->  有关开发 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用的详细信息，请参阅 [Windows 应用商店应用入门](http://go.microsoft.com/fwlink/?LinkID=241410)。  
+>  有关开发 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用的详细信息，请参阅 [UWP 应用入门](http://go.microsoft.com/fwlink/?LinkID=241410)。  
   
  Visual Studio 提供以下单元测试功能：  
   
@@ -62,13 +45,13 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../debugger/includ
   
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> 创建单元测试项目  
   
-#### <a name="to-create-a-unit-test-project-for-a-windows-store-app"></a>为 Windows 应用商店应用创建单元测试项目  
+#### <a name="to-create-a-unit-test-project-for-a-uwp-app"></a>为 UWP 应用创建单元测试项目  
   
 1.  从 **“文件”** 菜单中选择 **“新建项目”**。  
   
      此时将显示“新建项目”对话框。  
   
-2.  在“模板”之下，选择要用以创建单元测试的编程语言，然后选择关联的 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 单元测试库。 例如，选择 **“Visual C#”** ，然后选择 **“Windows 应用商店”**，再选择 **“单元测试库(Windows 应用商店应用)”**。  
+2.  在“模板”之下，选择要用以创建单元测试的编程语言，然后选择关联的 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 单元测试库。 例如，选择“Visual C#”，选择“Windows 通用”，然后选择“单元测试库(通用 Windows)”。  
   
     > [!NOTE]
     >  Visual Studio 包括 Visual C#、Visual Basic 和 Visual C++ 的单元测试库模板。  
@@ -90,7 +73,7 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../debugger/includ
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Manifest"></a>编辑单元测试项目清单  
  可能需要编辑单元测试项目的清单以提供所需的功能，才能运行应用程序。  
   
-#### <a name="to-edit-the-unit-test-projects-windows-store-application-manifest-file"></a>编辑单元测试项目的 Windows 应用商店应用程序清单文件  
+#### <a name="to-edit-the-unit-test-projects-uwp-application-manifest-file"></a>编辑单元测试项目的 UWP 应用程序清单文件  
   
 1.  在“解决方案资源管理器”中的新 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 单元测试项目中，右击 Package.appxmanifest 文件并选择 **“打开”**。  
   
@@ -107,9 +90,9 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../debugger/includ
   
      ![单元测试清单](../test/media/unit_test_win8_.png "Unit_Test_Win8_")  
   
-##  <a name="CreateAndRunUnitTestWin8Tailored_Code"></a>单元测试编码  
+##  <a name="CreateAndRunUnitTestWin8Tailored_Code"></a> 单元测试编码  
   
-#### <a name="to-code-the-unit-test-for-a-windows-store-app"></a>Windows 应用商店应用单元测试编码  
+#### <a name="to-code-the-unit-test-for-a-uwp-app"></a>为 UWP 应用编码单元测试  
   
 1.  在“代码编辑器”中，编辑单元测试并添加测试所需的断言和逻辑。  
   
@@ -147,7 +130,7 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../debugger/includ
     >   
     >  此外，你也可以选择 **“调试所选测试”**、 **“打开测试”**，并使用 **“属性”** 选项。  
     >   
-    >  ![单元测试资源管理器 &#45; 单元测试上下文菜单](~/test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
+    >  ![单元测试资源管理器 &#45; 单元测试上下文菜单](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
      单元测试将运行。 完成后，“测试资源管理器”会显示测试状态、运行时间并提供指向源的链接。  
   
@@ -156,7 +139,7 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../debugger/includ
 ## <a name="external-resources"></a>外部资源  
   
 ### <a name="videos"></a>视频  
- [第 9 频道：对使用 XAML 编写的 Windows 应用商店应用进行单元测试](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9: Unit testing your UWP apps built using XAML](http://go.microsoft.com/fwlink/?LinkId=226285)（第 9 频道：对使用 XAML 生成的 UWP 应用进行单元测试）  
   
 ### <a name="forums"></a>论坛  
  [Visual Studio 单元测试](http://go.microsoft.com/fwlink/?LinkId=224477)  
@@ -165,6 +148,5 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../debugger/includ
  [MSDN Library - 为现有代码创建和运行单元测试 (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  
   
 ## <a name="see-also"></a>另请参阅  
- [使用 Visual Studio 测试应用商店应用](../test/testing-store-apps-with-visual-studio.md)   
- [使用 Team Foundation Build 生成并测试 Windows 应用商店应用](http://msdn.microsoft.com/Library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
+ [使用 Visual Studio 测试 UWP 应用](../test/testing-store-apps-with-visual-studio.md)   
+ [使用 Team Foundation Build 生成并测试 UWP 应用](http://msdn.microsoft.com/Library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

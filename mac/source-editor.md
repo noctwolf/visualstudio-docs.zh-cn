@@ -1,19 +1,17 @@
 ---
-title: "源编辑器"
+title: "源编辑器 | Microsoft Docs"
 description: "在 Visual Studio for Mac 中使用源编辑器"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
+ms.openlocfilehash: f52e60c0ade8cebc78b3408b4ef81ef85fcd767b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: aa7635cd2593b871128c0588110f0bfdad5a82ec
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="source-editor"></a>源编辑器
 
 可靠的源编辑器对简单高效地编写代码至关重要。 Visual Studio for Mac 提供了成熟的源编辑器，它是与 IDE 进行的交互的中心。 源编辑器提供了用户轻松工作所需的功能：从语法突出显示、代码片段和代码折叠等基础功能，到其 Roslyn 编译集成（如全功能 IntelliSense 代码完成）带来的优势，功能全面。
@@ -84,7 +82,6 @@ Visual Studio for Mac 提供许多强大的功能，最大限度提高了跨平�
 突出显示的颜色还有助于指示正在分配或引用的某些内容。 分配的内容以红色突出显示；引用的内容以蓝色突出显示：
 
 ![](media/source-editor-image7.png)
-
 
 
 

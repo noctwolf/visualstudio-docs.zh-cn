@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 65b94b58da1e06febb1c189ddff85f792fef1737
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 48f2bb4e61ca6a4f9a9464a6b67a3218b418c8ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 入门
 通过完成本演练，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具和对话框。 了解在集成开发环境 (IDE) 中工作的更多知识后，你将可以创建简单的“Hello, World”风格的应用程序。  
@@ -124,7 +107,7 @@ ms.lasthandoff: 05/13/2017
   
 -   启动调试器。  
   
-     ![“调试”菜单上的“启动调试”命令](~/ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
+     ![“调试”菜单上的“启动调试”命令](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
      调试器启动并运行代码。 在调试器停止运行时，控制台窗口（类似命令提示符的单独窗口）将显示几秒钟，但是将很快关闭。 若要查看文本，你需要设置一个断点以停止程序执行。  
   
@@ -157,7 +140,7 @@ ms.lasthandoff: 05/13/2017
   
 2.  将 GreetingsConsoleApp 的生成配置从“调试”  更改为 “发布”。  
   
-     ![生成应用程序的发布版本](~/ide/media/c--ide_changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
+     ![生成应用程序的发布版本](../ide/media/c--ide_changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
   
 3.  生成解决方案。  
   

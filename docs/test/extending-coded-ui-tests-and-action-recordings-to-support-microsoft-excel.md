@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
-caps.latest.revision: 30
+caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 2ad95e87681907117eb9a3329716a3dd590bd6b8
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: fa2ffd383d2180b672347043dd02459473e3a608
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>扩展编码的 UI 测试和操作录制以支持 Microsoft Excel
 编码的 UI 测试和操作录制的测试框架不支持的每个可能的用户界面。 它可能不支持你想要测试的特定 UI。 例如，不能立即创建编码的 UI 测试或 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 电子表格的操作录制。 但是，你可以为编码的 UI 测试框架创建自己的扩展，该扩展将通过利用编码的 UI 测试框架的扩展性支持特定的 UI。 以下主题提供的示例说明如何扩展框架以支持创建编码的 UI 测试和 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 的操作录制。 有关支持的平台的详细信息，请参阅[支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)。  
@@ -42,7 +26,7 @@ ms.lasthandoff: 05/13/2017
   
  本节提供编码的 UI 测试扩展，该扩展可以录制和播放 Excel 工作表的测试。 本节和针对开发人员（该开发人员只想创建一个这样的扩展）的代码注释中对扩展的每个部分进行了介绍。  
   
- ![UI 测试体系结构](~/test/media/ui_testarch.png "UI_TestArch")  
+ ![UI 测试体系结构](../test/media/ui_testarch.png "UI_TestArch")  
 体系结构概述  
   
 ## <a name="download-the-sample"></a>下载示例  
@@ -95,4 +79,3 @@ ms.lasthandoff: 05/13/2017
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
  [编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)   
  [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

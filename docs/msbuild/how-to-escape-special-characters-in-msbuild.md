@@ -1,24 +1,27 @@
 ---
 title: "如何：转义 MSBuild 中的特殊字符 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "转义的特殊字符"
-  - "转义的字符"
-  - "转义字符"
-  - "MSBuild，转义特殊字符"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- special characters, escaping
+- characters, escapes
+- escape characters
+- MSBuild, escaping special characters
 ms.assetid: 1aa3669c-1647-4960-b770-752e2532102f
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 1713416665dcdb4970b6a74eb4f1e66164078cdd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>如何：转义 MSBuild 中的特殊字符
 某些字符在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件中具有特殊意义。 这些字符的示例包括分号 (;) 和星号 (*)。 有关这些特殊字符的完整列表，请参阅 [MSBuild 特殊字符](../msbuild/msbuild-special-characters.md)。  
@@ -44,10 +47,4 @@ caps.handback.revision: 12
   
 ## <a name="see-also"></a>另请参阅  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
- [MSBuild](../msbuild/msbuild.md)
- [项](../msbuild/msbuild-items.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-
+ [MSBuild](../msbuild/msbuild.md) [项](../msbuild/msbuild-items.md)

@@ -1,37 +1,38 @@
 ---
 title: "MSBuild 批处理 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "批处理 [MSBuild]"
-  - "MSBuild, 批处理"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- batching [MSBuild]
+- MSBuild, batching
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: e2ad60b0b0f98cee23de911a8ca7cf2e5d43b364
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# MSBuild 批处理
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够根据项元数据将项列表划分为不同的类别或批，并在每批中一次运行一个目标或任务。  
+# <a name="msbuild-batching"></a>MSBuild 批处理
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够基于项元数据将项列表划分为不同类别或批，并对每批运行一次目标或任务。  
   
-## 任务批处理  
- 任务批处理使您能够简化项目文件，因为它可以将项列表划分为不同的批并将各个批分别传递到任务中。  这意味着项目文件只需声明任务及其特性一次，但却可以多次运行它。  
+## <a name="task-batching"></a>任务批处理  
+ 借助任务批处理，可以用某种方式将项列表划分为不同批次，同时将每个批次单独地传递到任务中来简化项目文件。 这意味着项目文件只需要声明一次任务及其特性就可多次运行该任务。  
   
- 通过在一个任务特性中使用 %\(*项元数据名称*\) 表示法，指定让 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 使用任务执行批处理。  下面的示例根据 `Color` 项元数据值将 `Example` 项列表拆分为多个批，并将各个批分别传递给 `MyTask` 任务。  
+ 你指定希望 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 使用其中一个任务特性中的 %(ItemMetaDataName) 表示法对任务执行批处理。 以下示例基于 `Color` 项元数据值将 `Example` 项列表划分为几个批次，并将每个批次单独地传递到 `MyTask` 任务。  
   
 > [!NOTE]
->  如果不在任务特性中的其他位置引用项列表，或者元数据名称可能不明确，则可使用 %\(*项集合.项元数据名称*\) 表示法完全限定用于进行批处理的项元数据值。  
+>  如果未在任务特性的其他位置引用项列表，或者如果元数据名称可能不明确，则可以使用 %(*ItemCollection.ItemMetaDataName*) 表示法完全限定要用于进行批处理的项元数据值。  
   
-```  
+```xml  
 <Project  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
@@ -53,14 +54,14 @@ caps.handback.revision: 9
 </Project>  
 ```  
   
- 有关更为具体的批处理示例，请参见[任务批处理中的项元数据](../msbuild/item-metadata-in-task-batching.md)。  
+ 有关更具体的批处理示例，请参阅[任务批处理中的项元数据](../msbuild/item-metadata-in-task-batching.md)。  
   
-## 目标批处理  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 在运行目标之前会检查该目标的输入和输出是否是最新的。  如果输入和输出都是最新的，将跳过该目标。  如果目标内的任务使用批处理，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 需要确定项的各个批的输入和输出是否都是最新的。  否则，将在每次命中目标时执行目标。  
+## <a name="target-batching"></a>目标批处理  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 会先检查目标的输入和输出是否是最新的，然后才运行该目标。 如果输入和输出都是最新的，则跳过该目标。 如果目标内的任务使用批处理，则 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 需要确定每批项的输入和输出是否是最新的。 否则，每次命中目标时，都会执行该目标。  
   
- 下面的示例显示一个 `Target` 元素，该元素包含一个具有 %\(*项元数据名称*\) 表示法的 `Outputs` 特性。  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 根据 `Color` 项元数据将 `Example` 项列表拆分为多个批，并分析每一批的输出文件的时间戳。  如果某个批的输出不是最新的，将运行目标。  否则，将跳过该目标。  
+ 以下示例通过 %(ItemMetaDataName) 表示法演示包含 `Outputs` 特性的 `Target` 元素。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 会基于 `Color` 项元数据将 `Example` 项列表划分为几个批次，并分析每个批次的输出文件的时间戳。 如果某个批次的输出不是最新的，则运行目标。 否则，跳过该目标。  
   
-```  
+```xml  
 <Project  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
@@ -84,25 +85,25 @@ caps.handback.revision: 9
 </Project>  
 ```  
   
- 有关目标批处理的其他示例，请参见[目标批处理中的项元数据](../msbuild/item-metadata-in-target-batching.md)。  
+ 有关目标批处理的另一个示例，请参阅[目标批处理中的项元数据](../msbuild/item-metadata-in-target-batching.md)。  
   
-## 使用元数据的属性函数  
- 批处理可由包含元数据的属性函数控制。  例如，  
+## <a name="property-functions-using-metadata"></a>使用元数据的属性函数  
+ 可通过包括元数据的属性函数控制批处理。 例如，  
   
  `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`  
   
- 使用 <xref:System.IO.Path.Combine%2A> 将根文件夹路径和 Compile 项路径组合在一起。  
+ 使用 <xref:System.IO.Path.Combine%2A> 合并根文件夹路径与编译项路径。  
   
- 属性函数不能出现在元数据值中。  例如，  
+ 属性函数可能不会出现在元数据值内。  例如，  
   
  `%(Compile.FullPath.Substring(0,3))`  
   
- 是不允许使用的。  
+ 是不允许的。  
   
- 有关属性函数的更多信息，请参见[属性函数](../msbuild/property-functions.md)。  
+ 有关属性函数详细信息，请参阅[属性函数](../msbuild/property-functions.md)。  
   
-## 请参阅  
- [ItemMetadata 元素 \(MSBuild\)](../msbuild/itemmetadata-element-msbuild.md)   
+## <a name="see-also"></a>另请参阅  
+ [ItemMetadata 元素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)   
  [高级概念](../msbuild/msbuild-advanced-concepts.md)

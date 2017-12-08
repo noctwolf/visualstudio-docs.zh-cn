@@ -4,36 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
-caps.latest.revision: 22
+caps.latest.revision: "22"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 846860b7d61d9fbda6ca10793420b66fdab4a01f
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 0be707ec592265c75ce6e0c36954010e496ac91c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>使用多个 UI 映射测试大型应用程序
 本主题讨论在使用多个 UI 映射来测试大型应用程序时如何使用编码的 UI 测试。  
@@ -42,7 +27,7 @@ ms.lasthandoff: 04/04/2017
   
 -   Visual Studio Enterprise  
   
- 新建编码的 UI 测试时，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 测试框架默认在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类中生成测试代码。 若要详细了解如何录制编码的 UI 测试，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)和[编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)。  
+ 在创建新的编码的 UI 测试时，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 测试框架默认在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类中生成测试代码。 若要详细了解如何录制编码的 UI 测试，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)和[编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)。  
   
  为 UI 映射生成的代码针对与测试交互的每个对象都包含一个类。 对于每个生成的方法，都会专门为该方法生成方法参数的伴生类。 如果应用程序中存在大量对象、页以及窗体和控件，UI 映射可能会变得很大。 而且，如果多个人正在执行测试，则只有一个大型 UI 映射文件的应用程序会变得难以操作。  
   
@@ -159,4 +144,3 @@ namespace ContosoProject
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
  [创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)
-

@@ -1,292 +1,295 @@
 ---
 title: "活动脚本调试概述 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "活动脚本调试概述"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1d9aebdc3f8fa4df0f4386609e632e1a8611c87f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
-# 活动脚本调试概述
-事件脚本调试接口允许非特定语言，宿主非调试，并支持各种开发环境。  
+# <a name="active-script-debugging-overview"></a>活动脚本调试概述
+活动脚本调试接口可以进行中性语言调试和中性主机调试，并支持各种开发环境。  
   
- ![脚本宿主进程](../winscript/media/scp56activdbgarchgif.png "Scp56ActivDbgArchgif")  
+ ![脚本主机进程](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 图 1  
   
- 一个非特定语言调试环境可以支持编程语言的任何编程语言或组合，而不会的特定知识任何这些语言。  调试环境还支持跨语言单步执行和断点。  \(本概述重点介绍主要支持脚本语言，例如 VBScript 和 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]。\)  
+ 中性语言调试环境可以支持任何编程语言或混合使用编程语言，无需具备这些语言的专业知识。 调试环境还支持跨语言单步执行和断点。 （本概述侧重介绍支持脚本语言，例如 VBScript 和 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]。）  
   
- 一个主机非调试器可以自动用于任何操作脚本宿主，例如 Internet Explorer 或自定义宿主。  宿主控件哪些调试器提供给用户，将从文档节点构树的结构将内容，并调试的语法着色文档。  这允许正在调试的源代码公开宿主中文档。  例如，Internet Explorer 在 HTML 页中显示脚本。  
+ 中性主机调试器可自动与任何活动脚本主机一起使用，例如 Internet Explorer 或自定义主机。 主机控制调试器向用户显示的内容，包括从文档树的结构到调试文档的内容和语法着色等各方面内容。 这样可以让经过调试的源代码显示在主机文档的上下文中。 例如，Internet Explorer 可以显示 HTML 页面中的脚本。  
   
- 在下面的小节，活动调试的每个主要组件及其关联的接口讨论。  但是，在将来前，必须定义多个键有效的调试概念：  
+ 下面各小节介绍了活动调试中的每个关键组件及其关联的接口。 但是在继续下一步之前，必须先定义活动调试的几个关键概念：  
   
- Host Application — 宿主应用程序  
- 承载脚本引擎并提供 scriptable 设置对象的应用程序 \(或“对象模型”\)。  
+ Host Application — 主机应用程序  
+ 承载脚本引擎并提供一组可编写脚本的对象（或“对象模型”）的应用程序。  
   
  语言引擎  
- 提供分析元素，执行和调试抽象特定语言的。  
+ 对特定语言进行分析、执行和调试抽象的组件。  
   
  调试器 IDE  
- 通过通信提供调试 UI 与宿主应用程序和语言引擎的应用程序。  
+ 通过与主机应用程序和语言引擎进行通信来提供调试 UI 的应用程序。  
   
- 计算机进行管理器  
- 维护可注册表的元素应用程序进程。  
+ 计算机调试管理器  
+ 维护可调试应用程序进程的注册表的组件。  
   
- 进程内调试管理器  
- 维护节点构树可调试的元素为某个特定文档应用程序，跟踪正在运行的线程，等等。  
+ 进程调试管理器  
+ 维护特定应用程序的可调试文档树并跟踪正在运行的线程等的组件。  
   
  文档上下文  
- 文档上下文是表示在宿主的源代码的抽象一个指定范围。  
+ 文档上下文是表示主机文档源代码中特定范围的抽象。  
   
  代码上下文  
- 代码上下文表示语言引擎 \(“虚拟指令指针”上运行代码中的特定位置。\)  
+ 代码上下文表示语言引擎正在运行的代码中的特定位置（“虚拟指令指针”）。  
   
  表达式上下文  
- 特定上下文 \(例如，堆栈帧\) 表达式可以由语言引擎计算。  
+ 语言引擎可以计算表达式的特定上下文（例如堆栈帧）。  
   
- 浏览的对象  
- 对象名的结构化，与语言无关的表示形式，类型、值和子对象，适用于实现“监视"窗口”UI。  
+ 对象浏览  
+ 对象名称、类型、值和子对象的结构化并且与语言无关的表示形式，适用于实现“监视窗口”UI。  
   
- 下面每个概述键有效的调试组件和对应，关联的接口，后跟这些接口详细信息。  
+ 下面概述了活动调试的各关键组件和对应的相关接口，以及有关这些接口的详细信息。  
   
-## 语言引擎  
- 语言引擎提供：  
+## <a name="language-engine"></a>语言引擎  
+ 语言引擎提供以下功能：  
   
 -   语言分析和执行。  
   
--   调试支持 \(断点等\)。  
+-   调试支持（断点等）。  
   
 -   表达式计算。  
   
 -   语法着色。  
   
--   浏览的对象。  
+-   对象浏览。  
   
--   枚举堆栈和分析。  
+-   堆栈枚举和分析。  
   
- 下面的脚本引擎需要支持调试、表达式浏览计算和对象的接口。  宿主应用程序使用这些接口映射在其之间由调试器 UI 文档上下文和引擎的代码上下文，并执行表达式计算、堆栈浏览枚举和的对象。  
+ 下面列出了一些接口，脚本引擎需要支持这些接口才能提供调试、表达式计算和对象浏览功能。 主机应用程序使用这些接口在其文档上下文和引擎的代码上下文之间进行映射，调试器 UI 也可以使用这些接口来执行表达式计算、堆栈枚举和对象浏览。  
   
  [IActiveScriptDebug 接口](../winscript/reference/iactivescriptdebug-interface.md)  
- 提供语法着色和代码上下文枚举。  
+ 提供语法着色和代码上下文枚举功能。  
   
  [IActiveScriptErrorDebug 接口](../winscript/reference/iactivescripterrordebug-interface.md)  
- returns 文档上下文和堆栈帧 false。  
+ 出错时返回文档上下文和堆栈帧。  
   
  [IActiveScriptSiteDebug 接口](../winscript/reference/iactivescriptsitedebug-interface.md)  
- 宿主提供了链接从脚本引擎到调试器。  
+ 主机提供的从脚本引擎指向调试器的链接。  
   
  [IDebugCodeContext 接口](../winscript/reference/idebugcodecontext-interface.md)  
- 提供虚拟“指令指针”在线程。  
+ 在线程中提供虚拟的“指令指针”。  
   
  [IEnumDebugCodeContexts 接口](../winscript/reference/ienumdebugcodecontexts-interface.md)  
- 枚举对应于文档上下文中的代码上下文。  
+ 枚举文档上下文对应的代码上下文。  
   
  [IDebugStackFrame 接口](../winscript/reference/idebugstackframe-interface.md)  
- 表示在线程堆栈的逻辑堆栈帧。  
+ 表示线程堆栈上的逻辑堆栈帧。  
   
  [IDebugExpressionContext 接口](../winscript/reference/idebugexpressioncontext-interface.md)  
- 提供可以在其中计算表达式的上下文。  
+ 提供可在其中计算表达式的上下文。  
   
  [IDebugStackFrameSniffer 接口](../winscript/reference/idebugstackframesniffer-interface.md)  
- 提供一种枚举逻辑堆栈帧。  
+ 提供枚举逻辑堆栈帧的一种方式。  
   
  [IDebugExpression 接口](../winscript/reference/idebugexpression-interface.md)  
  表示异步计算的表达式。  
   
  [IDebugSyncOperation 接口](../winscript/reference/idebugsyncoperation-interface.md)  
- 允许脚本引擎将特定时需要执行，如果嵌套阻塞线程的操作。  
+ 允许脚本引擎在嵌套在特定受阻线程中时需要执行的操作。  
   
  [IDebugAsyncOperation 接口](../winscript/reference/idebugasyncoperation-interface.md)  
- 提供同步异步访问调试操作。  
+ 提供对同步调试操作的异步访问。  
   
  [IDebugAsyncOperationCallBack 接口](../winscript/reference/idebugasyncoperationcallback-interface.md)  
- 提供状态事件与 `IDebugAsyncOperation` 接口计算的进度相关。  
+ 提供与 `IDebugAsyncOperation` 接口计算进度相关的状态事件。  
   
  [IEnumDebugExpressionContexts 接口](../winscript/reference/ienumdebugexpressioncontexts-interface.md)  
  枚举 `IDebugExpressionContexts` 对象的集合。  
   
  [IProvideExpressionContexts 接口](../winscript/reference/iprovideexpressioncontexts-interface.md)  
- 提供一种枚举特定元素的已知表达式上下文。  
+ 提供枚举特定组件已知的表达式上下文的一种方式。  
   
  [IDebugFormatter 接口](../winscript/reference/idebugformatter-interface.md)  
- 允许语言或 IDE 自定义在不同的值之间进行转换或 VARTYPE 类型和字符串。  
+ 允许语言或 IDE 自定义 VARIANT 值或 VARTYPE 类型与字符串之间的转换。  
   
  [IDebugStackFrameSnifferEx 接口](../winscript/reference/idebugstackframesnifferex-interface.md)  
  枚举 PDM 的逻辑堆栈帧。  
   
-## 宿主  
- 宿主：  
+## <a name="hosts"></a>宿主  
+ 主机：  
   
 -   承载语言引擎。  
   
--   提供对象模型 \(可以为其编写脚本\) 的对象集。  
+-   提供对象模型（即可以编写脚本的对象集）。  
   
--   定义可将调试及其内容的一个节点构树文档。  
+-   定义可进行调试的文档树及其内容。  
   
--   组织脚本到虚拟应用程序。  
+-   将脚本组织到虚拟应用程序中。  
   
- 具有两个主：  
+ 有两种类型的主机：  
   
--   一个沉默寡言的宿主支持基本操作脚本接口。  它不排列控件文档结构或组织；脚本完全取决于提供给语言引擎。  
+-   非智能主机仅支持基本的活动脚本接口。 它不能控制文档结构或组织；文件结构和组织完全由提供给语言引擎的脚本决定。  
   
--   一个智能宿主支持允许它定义文档节点构树的较大组接口，文档内容和语法着色。  有一组帮助器接口，描述在下小节，便于宿主是一个智能宿主。  
+-   智能主机支持的接口更多，可以定义文档树、文档内容和语法着色。 下一小节将介绍一组帮助程序接口。通过这些接口可以更轻松地让主机成为智能主机。  
   
-### 智能宿主帮助器接口  
- 提供大大简化的 `IDebugDocumentHelper` 方法的一组接口宿主可以使用获取智能承载的优点，不处理最大复杂 \(和功能\) 的完整主机接口。  
+### <a name="smart-host-helper-interfaces"></a>智能主机帮助程序接口  
+ `IDebugDocumentHelper` 方法提供了一组经过大幅度简化的接口。主机使用这些接口可以获得智能承载的好处，同时无需处理全套主机接口的所有复杂性（和功能）。  
   
- 不需要当然宿主使用这些接口。  但是使用这些接口可以避免实现或使用多种更复杂的接口。  
+ 当然，主机不用必须使用这些接口。 但使用这些接口可以避免实现或使用很多更复杂的接口。  
   
  [IDebugDocumentHelper 接口](../winscript/reference/idebugdocumenthelper-interface.md)  
- 实现由 PDM 以及个接口提供实现所需的智能承载。  
+ 由 PDM 实现，为进行智能承载所需的很多接口提供实现。  
   
  [IDebugDocumentHost 接口](../winscript/reference/idebugdocumenthost-interface.md)  
- 实现 \(可选\) 由宿主公开宿主特定功能，比如语法着色，在调试器。  
+ 由主机实现（可选），用于向调试器公开主机特有的功能（如语法着色）。  
   
- 有关更多信息，请参见[实现智能宿主帮助程序接口](../winscript/implementing-smart-host-helper-interfaces.md)。  
+ 有关详细信息，请参阅[实现智能主机帮助程序接口](../winscript/implementing-smart-host-helper-interfaces.md)。  
   
-### 完整的智能主机接口  
- 在下，如果不使用帮助器接口，该全套的接口智能宿主必须实现或使用。  
+### <a name="full-smart-host-interfaces"></a>全部智能主机接口  
+ 下面是智能主机在不使用帮助程序接口时必须实现或使用的全套接口。  
   
- 宿主实现的接口：  
+ 由主机实现的接口：  
   
  [IDebugDocumentInfo 接口](../winscript/reference/idebugdocumentinfo-interface.md)  
- 在文档提供信息，也可能不会实例化。  
+ 提供可实例化，也可不实例化的文档的信息。  
   
  [IDebugDocumentProvider 接口](../winscript/reference/idebugdocumentprovider-interface.md)  
- 用于实例化文档提供方法在需要时。  
+ 提供按需实例化文档的方法。  
   
  [IDebugDocument 接口](../winscript/reference/idebugdocument-interface.md)  
- 所有的基接口调试文档。  
+ 所有调试文档的基接口。  
   
  [IDebugDocumentText 接口](../winscript/reference/idebugdocumenttext-interface.md)  
- 提供对调试的只会写入版本文档。  
+ 提供纯文本版本的调试文档的访问权限。  
   
  [IDebugDocumentTextAuthor 接口](../winscript/reference/idebugdocumenttextauthor-interface.md)  
- 允许编辑调试的只会写入版本文档。  
+ 允许编辑纯文本版本的调试文档。  
   
  [IDebugDocumentContext 接口](../winscript/reference/idebugdocumentcontext-interface.md)  
- 提供文档的一部分抽象表示正在调试的。  
+ 提供正在调试的一部分文档的抽象表示形式。  
   
- PDM 实现的接口委托宿主：  
+ 由 PDM 代表主机实现的接口：  
   
  [IDebugApplicationNode 接口](../winscript/reference/idebugapplicationnode-interface.md)  
- 通过提供在项目节点构树中的上下文扩展 `IDebugDocumentProvider` 接口的功能。  
+ 通过在项目树中提供上下文来扩展 `IDebugDocumentProvider` 接口的功能。  
   
-## 调试器 IDE  
- IDE 是一个与语言无关调试 UI。  它提供：  
+## <a name="debugger-ide"></a>调试器 IDE  
+ IDE 是一个与语言无关的调试 UI。 提供以下功能：  
   
--   文档浏览器\/编辑器。  
+-   文档查看器/编辑器。  
   
 -   断点管理。  
   
--   表达式计算和"监视"窗口。  
+-   表达式计算和监视窗口。  
   
--   浏览的堆栈帧。  
+-   堆栈帧浏览。  
   
--   浏览对象\/的选件类。  
+-   对象/类浏览。  
   
--   浏览虚拟应用程序框架。  
+-   浏览虚拟应用程序结构。  
   
- 调试器实现的接口：  
+ 由调试器实现的接口：  
   
  [IApplicationDebugger 接口](../winscript/reference/iapplicationdebugger-interface.md)  
- 调试器 IDE 会话显示的主要接口。  
+ 由调试器 IDE 会话公开的主接口。  
   
  [IApplicationDebuggerUI 接口](../winscript/reference/iapplicationdebuggerui-interface.md)  
- 为外部组件到调试器的用户界面 \(UI\) 的多个控件。  
+ 向外部组件授予对调试器的用户界面 (UI) 的更大控制权。  
   
  [IDebugExpressionCallBack 接口](../winscript/reference/idebugexpressioncallback-interface.md)  
- 为 `IDebugExpression` 计算进度提供状态事件。  
+ 提供 `IDebugExpression` 计算进度的状态事件。  
   
  [IDebugDocumentTextEvents 接口](../winscript/reference/idebugdocumenttextevents-interface.md)  
- 提供指示的事件与关联的更改文本文档。  
+ 提供指示关联文本文档的更改的事件。  
   
  [IDebugApplicationNodeEvents 接口](../winscript/reference/idebugapplicationnodeevents-interface.md)  
- 为 `IDebugApplicationNode` 接口提供事件接口。  
+ 提供 `IDebugApplicationNode` 接口的事件接口。  
   
-### 计算机进行管理器  
- 计算机进行管理器的反斜挂接点在虚拟应用程序和调试器之间通过维护和枚举活动虚拟应用程序列表中。  
+### <a name="machine-debug-manager"></a>计算机调试管理器  
+ 计算机调试管理器通过维护和枚举一系列的活动虚拟应用程序来提供虚拟应用程序和调试程序之间的连线点。  
   
  [IDebugSessionProvider 接口](../winscript/reference/idebugsessionprovider-interface.md)  
- 生成正在运行的应用程序的调试会话。  
+ 为正在运行的应用程序建立调试会话。  
   
  [IMachineDebugManager 接口](../winscript/reference/imachinedebugmanager-interface.md)  
- 在计算机上主界面调试管理器。  
+ 计算机调试管理器的主接口。  
   
  [IMachineDebugManagerCookie 接口](../winscript/reference/imachinedebugmanagercookie-interface.md)  
- 类似于 `IMachineDebugManager` 接口，但是，此接口支持调试 cookie。  
+ 与 `IMachineDebugManager` 接口类似，但此接口支持调试 cookie。  
   
  [IMachineDebugManagerEvents 接口](../winscript/reference/imachinedebugmanagerevents-interface.md)  
- 更改在运行的应用程序列表中维护由计算机的信号调试管理器。  
+ 由计算机调试管理器维护的正在运行的应用程序列表中的信号变化。  
   
  [IEnumRemoteDebugApplications 接口](../winscript/reference/ienumremotedebugapplications-interface.md)  
- 枚举计算机上运行的应用程序。  
+ 枚举计算机上正在运行的应用程序。  
   
-### 进程内调试管理器  
- PDM 执行以下操作：  
+### <a name="process-debug-manager"></a>进程调试管理器  
+ PDM 执行下列操作：  
   
--   同步多个语言调试引擎。  
+-   同步多个语言引擎的调试。  
   
--   维护节点构树可调试文档。  
+-   维护可调试文档树。  
   
 -   合并堆栈帧。  
   
--   坐标断点并跳出语言引擎中。  
+-   跨语言引擎协调断点和单步执行。  
   
 -   跟踪线程。  
   
--   维护异步进程的调试器线程。  
+-   维护用于异步处理的调试程序线程。  
   
--   的计算机进行通信调试管理器和调试器 IDE。  
+-   与计算机调试管理器和调试器 IDE 进行通信。  
   
- 下列过程提供的接口调试管理器。  
+ 以下是进程调试管理器提供的接口。  
   
  [IProcessDebugManager 接口](../winscript/reference/iprocessdebugmanager-interface.md)  
- 为进程的主要接口调试管理器。  此接口可以从进程中创建，添加或移除虚拟应用程序。  
+ 进程调试管理器的主接口。 此接口可以在进程中创建、添加或删除虚拟应用程序。  
   
  [IRemoteDebugApplication 接口](../winscript/reference/iremotedebugapplication-interface.md)  
  表示正在运行的应用程序。  
   
  [IDebugApplication 接口](../winscript/reference/idebugapplication-interface.md)  
- 供语言引擎和宿主使用的公开非远程调试方法。  
+ 公开不可远程处理的调试方法，供语言引擎和主机使用。  
   
  [IRemoteDebugApplicationThread 接口](../winscript/reference/iremotedebugapplicationthread-interface.md)  
- 表示执行线程在特定应用程序中。  
+ 表示特定应用程序中的执行线程。  
   
  [IDebugApplicationThread 接口](../winscript/reference/idebugapplicationthread-interface.md)  
- 允许语言引擎和宿主提供线程同步和维护线程特定的，调试状态信息。  
+ 允许语言引擎和主机提供线程同步功能并维护特定于线程的调试状态信息。  
   
  [IEnumRemoteDebugApplicationThreads 接口](../winscript/reference/ienumremotedebugapplicationthreads-interface.md)  
- 枚举在应用程序中运行的线程。  
+ 枚举应用程序中正在运行的线程。  
   
  [IDebugThreadCall 接口](../winscript/reference/idebugthreadcall-interface.md)  
- 封送的预定调用。  
+ 调度封送调用。  
   
  [IDebugApplicationNode 接口](../winscript/reference/idebugapplicationnode-interface.md)  
- 保留文档的一个位置在层次结构。  
+ 维持文档在层次结构中的位置。  
   
  [IEnumDebugApplicationNodes 接口](../winscript/reference/ienumdebugapplicationnodes-interface.md)  
- 枚举节点的子节点与应用程序。  
+ 枚举与应用程序关联的节点的子节点。  
   
  [IEnumDebugStackFrames 接口](../winscript/reference/ienumdebugstackframes-interface.md)  
- 枚举堆栈帧与线程相对应，将从引擎。  
+ 枚举从引擎合并的线程对应的堆栈帧。  
   
  [IDebugCookie 接口](../winscript/reference/idebugcookie-interface.md)  
- 在脚本调试器允许调试 cookie 设置。  
+ 允许在脚本调试器中设置调试 cookie。  
   
  [IDebugHelper 接口](../winscript/reference/idebughelper-interface.md)  
- 作为一个工厂用作对象浏览器和简单的脚本引擎连接点。  
+ 充当对象浏览器的中心和脚本引擎的简单连接点。  
   
  [ISimpleConnectionPoint 接口](../winscript/reference/isimpleconnectionpoint-interface.md)  
- 提供描述提供了一种简单的方法，并枚举在特定激发的事件对于脚本引擎连接点。  
+ 向脚本引擎提供用于描述和枚举在特定连接点上触发的事件的一种简单方式。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [活动脚本调试器接口](../winscript/reference/active-script-debugger-interfaces.md)

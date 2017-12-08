@@ -1,19 +1,17 @@
 ---
-title: "激活"
+title: "激活 | Microsoft Docs"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
+ms.openlocfilehash: 75f8bb2e7b11cc40115e7266f309cb892e9e0323
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: a2b13ca0c95337a2a86af6c430a1f0c072069347
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="activation"></a>激活
 
 Visual Studio for Mac 有三种不同的订阅级别可供选择，一次下载后便可访问所有级别：
@@ -33,6 +31,10 @@ Visual Studio for Mac 有三种不同的订阅级别可供选择，一次下载�
 1. 续订你的订阅 可通过浏览到 [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/) 来续订订阅。
 
 2. 如果你的另一个帐户拥有活动订阅，可将其添加到 Visual Studio for Mac，有关详细信息请参阅[添加多个用户帐户](~/signing-in.md)主题。 Visual Studio for Mac 会检测已添加的所有帐户中最适合的许可证。 
+
+## <a name="product-key-usage"></a>产品密钥使用情况
+
+目前还无法利用产品密钥为 Visual Studio for Mac 启用 Professional 或 Enterprise 权利。 若要使用 Visual Studio Enterprise for Mac 或 Visual Studio Professional for Mac，必须拥有相关[订阅](https://www.visualstudio.com/subscriptions/)并[登录](~/signing-in.md)到 IDE。
 
 ## <a name="offline-activation"></a>脱机激活
 

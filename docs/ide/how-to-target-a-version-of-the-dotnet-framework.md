@@ -4,41 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - targeting .NET Framework version [Visual Studio]
 - versions [Visual Studio], targeting .NET Framework version
 ms.assetid: dea62d25-3d1b-492e-a6cc-b5154489800a
-caps.latest.revision: 50
-author: kempb
-ms.author: kempb
+caps.latest.revision: "50"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: eea7cb983f264fb58a4b1131f84f3ec1cb196be5
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 67145a9aaaf4c01b02bc1cc6db89e375639b4fcd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：面向 .NET Framework 的某个版本
-<a id="how-to-target-a-version-of-the-net-framework" class="xliff"></a>
+# <a name="how-to-target-a-version-of-the-net-framework"></a>如何：面向 .NET Framework 的某个版本
 本文档说明如何在创建项目时以 .NET Framework 版本为目标，以及如何更改现有 Visual Basic、Visual C# 或 Visual F# 项目中的目标版本。  
   
 > [!IMPORTANT]
@@ -56,8 +39,7 @@ ms.lasthandoff: 05/30/2017
 > [!NOTE]
 >  在 Visual Studio 速成版中，必须先创建项目，随后才能更改目标，如本主题中稍后的[更改目标版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing)部分所述。  
   
-#### 创建项目时以某一版本为目标
-<a id="to-target-a-version-when-you-create-a-project" class="xliff"></a>  
+#### <a name="to-target-a-version-when-you-create-a-project"></a>创建项目时以某一版本为目标  
   
 1.  在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
   
@@ -73,12 +55,11 @@ ms.lasthandoff: 05/30/2017
 ##  <a name="bkmk_existing"></a>更改目标版本  
  可以按照以下步骤，更改 Visual Basic、Visual C# 或 Visual F# 项目中的 .NET Framework 目标版本。  
   
-#### 更改目标版本
-<a id="to-change-the-targeted-version" class="xliff"></a>  
+#### <a name="to-change-the-targeted-version"></a>更改目标版本  
   
 1.  在“解决方案资源管理器”中，打开要更改的项目的快捷菜单，然后选择“属性”。  
   
-     ![Visual Studio 解决方案资源管理器属性](~/ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")  
+     ![Visual Studio 解决方案资源管理器属性](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
     >  有关如何更改 C++ 项目目标版本的信息，请参阅[如何：修改目标框架和平台工具集](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。  
@@ -88,7 +69,7 @@ ms.lasthandoff: 05/30/2017
      ![Visual Studio 应用属性应用程序选项卡](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")  
   
     > [!NOTE]
-    >  创建 Windows 应用商店应用后，无法更改 Windows 或 .NET Framework 目标版本。  
+    >  创建 UWP 应用后，无法更改 Windows 或 .NET Framework 目标版本。  
   
 3.  在“目标框架”列表中，选择所需版本。  
   
@@ -99,8 +80,7 @@ ms.lasthandoff: 05/30/2017
     > [!NOTE]
     >  如果代码中包含对不同于目标版本的 .NET Framework 版本的引用，则在编译或运行代码时可能会显示错误消息。 若要解决这些错误，必须修改这些引用。 请参阅 [.NET Framework 目标错误疑难解答](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)。  
   
-## 另请参阅
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 多目标概述](../ide/visual-studio-multi-targeting-overview.md)   
  [面向 ASP.NET Web 项目的 .NET Framework 多目标](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [.NET Framework 目标错误疑难解答](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   

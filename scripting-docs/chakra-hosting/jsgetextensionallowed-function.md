@@ -1,27 +1,29 @@
 ---
 title: "JsGetExtensionAllowed 函数 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsGetExtensionAllowed"
-helpviewer_keywords: 
-  - "JsGetExtensionAllowed 函数"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsGetExtensionAllowed
+helpviewer_keywords: JsGetExtensionAllowed function
 ms.assetid: 839054a1-d643-47d9-89db-6a015bba0d91
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a515a0cc87eb8ab7f72a9f9fc02d4270abfa1484
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
-# JsGetExtensionAllowed 函数
+# <a name="jsgetextensionallowed-function"></a>JsGetExtensionAllowed 函数
 返回一个值，该值指示对象是否可扩展。  
   
-## 语法  
+## <a name="syntax"></a>语法  
   
 ```  
 STDAPI_(JsErrorCode) JsGetExtensionAllowed(  
@@ -30,21 +32,21 @@ STDAPI_(JsErrorCode) JsGetExtensionAllowed(
 );  
 ```  
   
-#### 参数  
+#### <a name="parameters"></a>参数  
  `object`  
  要测试的对象。  
   
  `value`  
  对象是否可扩展。  
   
-## 返回值  
- 如果该操作成功，则为代码 `JsNoError`，否则为失败代码。  
+## <a name="return-value"></a>返回值  
+ 如果该操作成功，则为代码 `JsNoError` ，否则为失败代码。  
   
-## 备注  
+## <a name="remarks"></a>备注  
  需要活动脚本上下文。  
   
-## 要求  
- **标头：**jsrt.h  
+## <a name="requirements"></a>要求  
+ **标头：** jsrt.h  
   
-## 请参阅  
- [参考（JavaScript 运行时）](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>另请参阅  
+ [引用（JavaScript 运行时）](../chakra-hosting/reference-javascript-runtime.md)

@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-csharp
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3943deaf-80e2-4968-ac04-d3ef56cfad6c
-caps.latest.revision: 3
-author: kempb
-ms.author: kempb
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 67003cd6b5f1ee54080f1efe5c6e13f0249f7047
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a90e55a60c9451229fd767dac6a8aaa0e2a2e224
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>如何：生成并运行 LinqToXmlDataBinding 示例
 本主题演示如何创建和生成 LinqToXmlDataBinding Visual Studio 项目以及如何运行生成的 LinqToXmlDataBinding Windows Presentation Foundation (WPF) 示例程序。  
@@ -83,7 +68,7 @@ ms.lasthandoff: 02/22/2017
   
 1.  若要从列表中删除现有书籍，请在“书籍列表”区域选择该书籍，然后单击“移除所选书籍”按钮。 请注意，这会从书籍列表和原始 XML 源列表中移除该书籍条目。  
   
-2.  若要向列表中添加新书籍，请向最后一个区域“添加新书籍”的“ID”和“值”<xref:System.Windows.Controls.TextBox> 控件中输入值，然后单击“添加书籍”按钮。 请注意，这会向书籍列表和 XML 列表中追加该书籍。 此程序不验证输入值。  
+2.  若要向列表中添加新书籍，请向最后一个区域”添加新书籍“的“ID”和“值” <xref:System.Windows.Controls.TextBox> 控件中输入值，然后单击“添加书籍”按钮。 请注意，这会向书籍列表和 XML 列表中追加该书籍。 此程序不验证输入值。  
   
 #### <a name="to-edit-an-existing-book-entry"></a>编辑现有书籍条目  
   

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - performance, analyzing
 - profiling applications, walkthroughs
 ms.assetid: 36f6f123-0c14-4763-99c3-bd60ecb95b87
-caps.latest.revision: 53
+caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: a20a64818982484a56ba7dc82af890c729da40e4
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: d52f6bfe745cf7e8684094cf9244b6eedcba13a9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>演练：确定性能问题
 本演练演示如何分析应用程序以确定性能问题。  
@@ -107,7 +91,7 @@ ms.lasthandoff: 04/05/2017
   
      “函数代码视图”窗口显示函数的源代码（如果可用），并突出显示所选函数中最昂贵的行。 选择“GetNames”后，可以看到此函数读取来自应用程序资源的字符串，然后使用 <xref:System.IO.StringReader> 将字符串中的每行添加到 <xref:System.Collections.ArrayList>。 没有明显的方法可优化此函数。  
   
-3.  由于 PeopleNS.People.GetPeople 是 GetNames 的唯一调用方，因此可在成本分配窗口中单击“GetPeople”以检查其代码。 此方法将从 GetNames 生成的人员和公司名称中返回 PersonInformationNS.PersonInformation 对象的 <xref:System.Collections.ArrayList>。 但是，每次创建 PersonInformation 对象时，都会调用两次 GetNames。 可以看到，通过在方法开始时仅创建一次列表并在 PersonInformation 创建循环期间并索引编入这些列表，可轻松地优化该方法。  
+3.  由于 PeopleNS.People.GetPeople 是 GetNames 的唯一调用方，因此可在成本分配窗口中单击“GetPeople”以检查其代码。 此方法会从 GetNames 生成的人员和公司名称中返回 PersonInformationNS.PersonInformation 对象的 <xref:System.Collections.ArrayList>。 但是，每次创建 PersonInformation 对象时，都会调用两次 GetNames。 可以看到，通过在方法开始时仅创建一次列表并在 PersonInformation 创建循环期间并索引编入这些列表，可轻松地优化该方法。  
   
 4.  GetPeople 的可选版本随附示例应用程序代码，你可以通过将条件编译符号添加到生成属性以调用优化后的函数。 在“解决方案资源管理器”窗口中，右键单击“人员”项目，然后单击“属性”。 单击属性页菜单上的“生成”，然后在条件编译符号文本框中键入 **OPTIMIZED_GETPEOPLE**。 GetPeople 的优化版本将替换下一个生成中的原始方法。  
   

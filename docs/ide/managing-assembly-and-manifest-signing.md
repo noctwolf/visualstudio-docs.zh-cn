@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-caps.latest.revision: 15
-author: kempb
-ms.author: kempb
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 62e9060c812666f671f1c2d3378fad510d6524f6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: a3c0f4d3bde8bb03d3766383eba01665e58458be
-ms.openlocfilehash: 6a28915840af1b22dffe704ac931a57f25ca6879
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/01/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理程序集签名和清单签名
 强名称签名可为软件组件提供全局唯一标识。 使用强名称可保证程序集不被其他用户伪造，还可确保组件依赖关系和配置语句映射到正确的组件和组件版本。  
@@ -62,15 +46,15 @@ ms.lasthandoff: 08/01/2017
   
 -   共享组件程序集 (.dll)  
   
- 必须对以下类型的资产进行签名：  
+必须对以下类型的资产进行签名：  
   
-1.  程序集，如果希望将它们部署到全局程序集缓存 (GAC)。  
+1.  程序集，如果想要将它们部署到全局程序集缓存 (GAC)。  
   
 2.  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序和部署清单。 Visual Studio 默认情况下将启动对这些应用程序的签名。  
   
 3.  主互操作程序集，适用于 COM 互操作性。 从 COM 类型库中创建主互操作程序集时，TLBIMP 实用程序将强制实施强命名。  
   
- 通常不应该对可执行文件进行签名。 强命名组件无法引用与应用程序一同部署的非强命名组件。 Visual Studio 不会对应用程序可执行文件进行签名，但会对指向弱命名可执行文件的应用程序清单进行签名。 通常应避免对应用程序专用的组件进行签名，因为签名可能增加管理依赖项的难度。  
+通常不应该对可执行文件进行签名。 强命名组件无法引用与应用程序一同部署的非强命名组件。 Visual Studio 不会对应用程序可执行文件进行签名，但会对指向弱命名可执行文件的应用程序清单进行签名。 通常应避免对应用程序专用的组件进行签名，因为签名可能增加管理依赖项的难度。  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>如何对 Visual Studio 中的程序集进行签名  
  若要对应用程序或组件进行签名，可使用项目属性窗口中的“签名”选项卡（在“解决方案资源管理器”中，右键单击项目节点并选择“属性”，或在“快速启动”窗口中键入 **project properties**，或在“解决方案资源管理器”窗口中按 ALT + ENTER）。 选择“签名”选项卡，然后选中“为程序集签名”复选框。  

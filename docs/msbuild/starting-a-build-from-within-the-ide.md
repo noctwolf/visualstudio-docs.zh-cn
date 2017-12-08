@@ -1,36 +1,36 @@
 ---
 title: "在 IDE 中启动生成 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "生成"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 081bcfd01d8c28959bf0dd4d038e91895e9c3983
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 在 IDE 中启动生成
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-自定义项目系统必须使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 开始生成过程。  本主题介绍这样做的原因并概述具体过程。  
+# <a name="starting-a-build-from-within-the-ide"></a>在 IDE 中启动生成
+自定义项目系统必须使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 启动生成。 本主题介绍这样做的原因并概述具体过程。  
   
-## 并行生成和线程  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 允许需要干预的并行生成访问常见资源。  项目系统可以异步运行生成，但此类系统不能从提供给生成管理器的回调中调用生成函数。  
+## <a name="parallel-builds-and-threads"></a>并行生成和线程  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 允许需要中介的并行生成访问常见资源。 项目系统可异步地运行生成，但该系统不得从提供给生成管理器的回调中调用生成函数。  
   
- 如果项目系统修改环境变量，它必须将生成的 NodeAffinity 设置为 OutOfProc。  这意味着不能使用宿主对象，因为它们需要进程内节点。  
+ 如果项目系统修改环境变量，它必须将生成的 NodeAffinity 设置为 OutOfProc。 这意味着无法使用主机对象，因为主机对象需要进程内节点。  
   
-## 使用 IVSBuildManagerAccessor  
- 下面的代码概括了项目系统可用于启动生成的方法：  
+## <a name="using-ivsbuildmanageraccessor"></a>使用 IVSBuildManagerAccessor  
+ 下面的代码概述了项目系统可用于启动生成的方法：  
   
-```  
+```csharp
   
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  

@@ -1,18 +1,16 @@
 ---
-title: "Visual Studio for Mac 相较于 Xamarin Studio 的优势"
+title: "Visual Studio for Mac 相较于 Xamarin Studio 的优势 | Microsoft Docs"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
+ms.openlocfilehash: 08e693e92d6d07da21f8230f9c1de49f071c05e5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
-ms.openlocfilehash: 655795fd64958805e0137d7e231391c59f676776
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Visual Studio for Mac 相较于 Xamarin Studio 的优势 
  
 在 Mac 上，Visual Studio for Mac 已经取代了 Xamarin Studio，成为功能完备的 IDE。 它提供的功能可用于开发 Web 应用和服务、跨平台移动和桌面应用及游戏。 此外，不论是要发布到 Azure，还是要创建 Azure Functions，它都可轻松实现与 Azure 的集成。 它能够满足你对现代 IDE 的所有期望，包括功能完备的源代码编辑器、功能强大的调试器、可自定义的工作区、Git 集成和丰富的扩展系统，都专为 Mac 本机设计。 
@@ -26,7 +24,7 @@ ms.lasthandoff: 09/26/2017
 * 集成单元测试 
 * 对 F# 的支持 
 
-本指南中列出的标记为“预览”的优势仅在 [alpha 通道](https://docs.microsoft.com/en-us/visualstudio/mac/update#Changing_the_Updater_channel)中可用。 
+本指南中列出的标记为“预览”的优势仅在 [alpha 通道](https://docs.microsoft.com/visualstudio/mac/update#Changing_the_Updater_channel)中可用。 
 
 ## <a name="language-support"></a>语言支持 
 

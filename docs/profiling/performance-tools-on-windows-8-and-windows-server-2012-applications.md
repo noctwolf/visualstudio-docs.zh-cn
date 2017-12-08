@@ -4,45 +4,28 @@ ms.custom:
 ms.date: 06/19/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a704215d-d252-4087-921b-ac81ebe2a9c9
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: baf12bba10dfba15f10d75fd1f7a4cdc4000e441
-ms.openlocfilehash: a5d885f8604bdb52907adae4f231b41e0881017f
-ms.contentlocale: zh-cn
-ms.lasthandoff: 06/21/2017
-
+ms.openlocfilehash: b6e71a7cc3200de9570ee0545bbc60e59943a693
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 应用程序上的性能工具
-Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual Studio 性能工具在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 本主题介绍针对 Windows 8 和 Windows Server 2012 平台上新增的性能工具所做的更改。
+Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual Studio 性能工具在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 本主题介绍针对 Windows 8 和 Windows Server 2012 平台上新增的性能工具所做的更改。
   
 > [!NOTE]
 >  其他受支持的 Windows 版本（Windows 7、Windows Server 2008 R2）的性能工具未更改。
   
 ##  <a name="BKMK_In_this_topic"></a> 主题内容  
- [从 Visual Studio IDE 收集有关 Windows 应用商店应用的数据](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
+ [从 Visual Studio IDE 收集有关 UWP 应用的数据](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [从 Visual Studio IDE 收集有关在 Windows 8 桌面上或 Windows Server 2012 上运行的应用的数据](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
@@ -52,10 +35,10 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
   
  [收集层交互 (TIP) 数据](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> 从 Visual Studio IDE 收集有关 Windows 应用商店应用的数据  
- 分析在 JavaScript 和 HTML 5 中编写的 Windows 应用商店应用程序时，应收集 JavaScript 代码的检测数据。 分析在 Visual C++、Visual C# 或 Visual Basic 中编写的 Windows 应用商店应用程序或组件时，应收集本机代码和托管代码的采样数据。 可以在本地或远程计算机上分析应用。  
+##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> 从 Visual Studio IDE 收集有关 UWP 应用的数据  
+ 分析在 JavaScript 和 HTML 5 中编写的 UWP 应用时，应收集 JavaScript 代码的检测数据。 分析在 Visual C++、Visual C# 或 Visual Basic 中编写的 UWP 应用或组件时，应收集本机代码和托管代码的采样数据。 可以在本地或远程计算机上分析应用。  
   
- 分析 Windows 应用商店应用程序时不支持这些分析功能和选项：  
+ 分析 UWP 应用时不支持这些分析功能和选项：  
   
 -   使用采样方法分析 JavaScript 应用。  
   
@@ -71,21 +54,21 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
   
 -   检测选项，如收集性能和窗口计数器数据，或指定其他命令行选项。  
   
- 有关分析 Windows 应用商店应用的详细信息，请参阅以下主题：  
+ 有关分析 UWP 应用的详细信息，请参阅以下主题：  
   
- [在本地计算机上运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+ [在本地计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [在远程计算机上运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+ [在远程计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
  [分析工具](profiling-tools.md)  
   
 -   [JavaScript 内存](../profiling/javascript-memory.md)
   
--   [分析本地计算机上的 Windows 应用商店应用中的 Visual C++、Visual C# 和 Visual Basic 代码](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+-   [分析本地计算机上的 UWP 应用中的 Visual C++、Visual C# 和 Visual Basic 代码](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
--   [分析远程设备上的 Windows 应用商店应用中的 Visual C++、Visual C# 和 Visual Basic 代码](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+-   [分析远程设备上的 UWP 应用中的 Visual C++、Visual C# 和 Visual Basic 代码](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
--   [分析 Windows 应用商店应用程序中的 Visual C++、Visual C# 和 Visual Basic 代码的性能数据](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+-   [分析 UWP 应用中的 Visual C++、Visual C# 和 Visual Basic 代码的性能数据](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
  [主题内容](#BKMK_In_this_topic)  
   
@@ -106,7 +89,7 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
   
 |工具名称|描述|  
 |---------------|-----------------|  
-|[VSPerf](../profiling/vsperf.md)|从 Windows 应用商店应用程序收集分析数据，并从 Windows 8 桌面应用程序和 Windows Server 2012 应用程序收集采样分析数据。|  
+|[VSPerf](../profiling/vsperf.md)|从 UWP 应用收集分析数据，并从 Windows 8 桌面应用程序和 Windows Server 2012 应用程序收集采样分析数据。|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|从在 Windows 8 桌面和 Windows Server 2012 上运行的应用收集检测、并发和层交互分析数据。 从之前版本的 Windows 收集所有类型的分析数据。|  
   
  这两个工具都随 Visual Studio 一起安装以用于本地计算机。  
@@ -139,7 +122,7 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
   
 1.  若要从在 Windows 8 桌面或 Windows Server 2012 上运行的应用中收集层交互数据，必须使用检测方法。  
   
-2.  不能收集 Windows 应用商店应用的层交互数据。  
+2.  不能收集 UWP 应用的层交互数据。  
   
 3.  您可以在所有分析方法中包含有关其他支持的 Windows 版本的层交互数据。  
   

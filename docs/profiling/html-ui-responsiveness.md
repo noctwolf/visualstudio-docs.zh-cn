@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,37 +13,21 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- performance, JavaScript [Windows Store apps]
-- performance tools, JavaScript [Windows Store apps]
+- performance, JavaScript [UWP apps]
+- performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
-- profiler, JavaScript [Windows Store apps]
+- profiler, JavaScript [UWP apps]
 ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: 47
+caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 90fed413835f118e59bc32f0b94cb62a40baaca1
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析中通用 Windows 应用中的 HTML UI 响应能力
 本主题介绍如何使用 UI 响应能力探查器（一种可用于 Windows 通用应用的性能工具）隔离应用中的性能问题。  
@@ -58,7 +41,7 @@ ms.lasthandoff: 05/13/2017
 -   视觉对象更新频率比预期频率低。 如果 UI 线程太忙而无法保持平稳的帧速率，就会出现此情况。 例如，UI 线程忙碌时，可能会丢弃帧。 某些非 UI 线程工作（例如网络请求、图像解码和绘制工作）也会限制视觉对象更新频率。 （并非所有绘制工作都在 UI 线程上执行。  
   
 ##  <a name="RunningProfiler"></a> 运行 HTML UI 响应能力工具  
- 如果工作的 Windows 通用或 Windows 应用商店应用在 Visual Studio 中打开或安装在运行 Windows 8 或更高版本的计算机上，则可使用 HTML UI 响应能力工具。  
+ 如果工作的 UWP 或 Windows 8.1 应用在 Visual Studio 中打开或安装在运行 Windows 8 或更高版本的计算机上，则可使用 HTML UI 响应能力工具。  
   
 1.  如果从 Visual Studio 中运行应用程序，请在 **“标准”** 工具栏上的 **“启动调试”** 列表中，选择一个部署目标，例如某个 Windows Phone 仿真器、 **“本地计算机”**、 **“模拟器”**或 **“远程计算机”**。  
   
@@ -66,13 +49,13 @@ ms.lasthandoff: 05/13/2017
   
      如果要更改探查器的分析目标，请选择“更改目标”。  
   
-     ![更改分析目标](~/profiling/media/js_tools_target.png "JS_Tools_Target")  
+     ![更改分析目标](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   
      以下选项可用于分析目标：  
   
     -   **“启动项目”**。 选择此选项可分析当前启动项目。 如果在远程计算机或设备上运行应用程序，则必须使用此设置，这是默认值。  
   
-    -   **“正在运行的应用程序”**。 选择此选项可从正在运行的应用程序的列表中选择 Windows 应用商店应用。 在远程计算机或设备上运行应用程序时，不能使用此选项。  
+    -   **“正在运行的应用程序”**。 选择此选项可从正在运行的应用的列表中选择 UWP 应用。 在远程计算机或设备上运行应用程序时，不能使用此选项。  
   
          当你无权访问源代码时，可以使用此选项分析在计算机上运行的应用程序的性能。  
   
@@ -117,7 +100,7 @@ ms.lasthandoff: 05/13/2017
   
 8.  如果你已添加用户标记，它们将显示在探查器的 [查看诊断会话时间线](#Ruler) 中。 下图显示了一个用于指定你的代码中某一特定操作的用户标记。  
   
-     ![显示用户标记的诊断标尺](~/profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
+     ![显示用户标记的诊断标尺](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
   
 9. 可使用用户标记、应用程序生命周期事件或图中可见的数据，确定时间线和探查器图中相关的区域。 以下是一些帮助你分析和使用图中的数据的准则：  
   
@@ -131,7 +114,7 @@ ms.lasthandoff: 05/13/2017
   
      下图显示了 CPU 使用率图，突出显示了相关的区域。  
   
-     ![CPU 使用率图](~/profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+     ![CPU 使用率图](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
 11. 使用 [查看时间线详细信息](#TimelineDetails) 获取有关运行太过频繁或要花费太多时间来完成的事件的详细信息。 例如，查找以下内容：  
   
@@ -174,7 +157,7 @@ if (performance && performance.mark) {
   
  下图显示了包含一个用户标记及其工具提示的诊断标尺。  
   
- ![显示用户标记的诊断标尺](~/profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
+ ![显示用户标记的诊断标尺](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
   
  你还可以在时间线详细信息视图中创建工具生成的事件，以显示两个用户标记之间所经过的持续时间。 以下代码添加第二个用户标记和在两个用户标记的执行之间所经过的时间度量（上面的代码显示第一个用户标记）。  
   
@@ -199,7 +182,7 @@ if (performance.mark && performance.measure) {
   
  下面是诊断会话时间线的外观，其中包含为几个应用程序生命周期事件显示的工具提示：  
   
- ![诊断会话标尺](~/profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
+ ![诊断会话标尺](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
   
  时间线显示应用程序生命周期事件（例如激活事件）的发生时间，并显示可添加到代码中的用户标记（用户标记三角形）。 可选择事件以显示包含更多信息的工具提示。 有关用户标记的详细信息，请参阅本主题中的 [标记要分析的代码](#ProfileMark) 。  
   
@@ -219,7 +202,7 @@ if (performance.mark && performance.measure) {
   
  下例显示了“CPU 使用率”图的外观：  
   
- ![CPU 使用率图](~/profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+ ![CPU 使用率图](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
  使用此图可以：  
   
@@ -303,7 +286,7 @@ if (performance.mark && performance.measure) {
   
  若要筛选出图像解码、推理下载和 GC 事件，请从下窗格中的筛选器图标中清除 **“后台活动”** 选项。 由于这些事件不是很好操作，因此默认情况下已将其隐藏。  
   
- ![筛选时间线中的事件](~/profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")  
+ ![筛选时间线中的事件](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")  
   
  若要筛选出 HTTP 请求事件，请从下窗格中的筛选器图标中清除 **“网络流量”** 选项。 默认情况下，这些事件显示在“时间线详细信息”图中。  
   
@@ -317,7 +300,7 @@ if (performance.mark && performance.measure) {
 ###  <a name="GroupFrames"></a> 通过框为事件分组  
  你可以将时间线详细信息视图中显示的事件分组为单个帧。 这些帧事件是工具生成的事件，并且代表所有在绘制事件之间发生的 UI 线程工作的顶级事件容器。 若要启用此视图，请选择 **“按帧为顶级事件分组”**。  
   
- ![按帧为顶级事件分组](~/profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![按帧为顶级事件分组](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  当按帧为事件分组时，时间线详细信息视图中的每个顶级事件代表一帧。  
   
@@ -375,7 +358,7 @@ if (performance.mark && performance.measure) {
   
 -   观看 [此视频](http://channel9.msdn.com/Events/Build/2013/3-316) （来自 Build 2013 大会，介绍了 UI 响应能力探查器）。  
   
--   阅读关于使用 JavaScript 为 Windows 生成的 Windows 应用商店应用程序的性能提示。 有关更多信息，请参阅 [采用 JavaScript 的 Windows 应用商店应用的性能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx)。  
+-   阅读关于使用 JavaScript 为 Windows 生成的 UWP 应用的性能提示。 有关详细信息，请参阅[使用 JavaScript 的 UWP 应用的性能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx)。  
   
 -   若要了解单线程代码执行模型和性能，请参见 [执行代码](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
   

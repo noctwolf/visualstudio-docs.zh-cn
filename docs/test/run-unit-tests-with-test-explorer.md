@@ -12,11 +12,11 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 6ba82358dd7aea8bfd8f3497e5dff87091fbf9d5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3881b015821952b4a2aeaa60d22c66bf47dff9c4
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 使用测试资源管理器从 Visual Studio 或第三方单元测试项目中运行单元测试、将测试分组到类别中、筛选测试列表以及创建、保存和运行测试的播放列表。 你还可以调试测试并分析测试性能和代码覆盖率。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 10/27/2017
 ##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> 单元测试框架和测试项目  
  Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框架。 但是，测试资源管理器还可以运行任何单元测试框架，只要该框架实现了测试资源管理器适配器。 若要详细了解如何安装第三方单元测试框架，请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)  
   
- 测试资源管理器可从解决方案的多个测试项目以及从作为生产代码项目的一部分的测试类中运行测试。 测试项目可以使用不同的单元测试框架。 如果待测试的代码是为 .NET Framework 编写的，则可以面向 .NET Framework 的任何语言编写测试项目，而不考虑目标代码的语言。 本机 C/C++ 代码项目必须使用 C++ 单元测试框架进行测试。  
+ 测试资源管理器可从解决方案的多个测试项目以及从作为生产代码项目的一部分的测试类中运行测试。 测试项目可以使用不同的单元测试框架。 如果待测试的代码是为 .NET Framework 编写的，则可以面向 .NET Framework 的任何语言编写测试项目，而不考虑目标代码的语言。 本机 C/C++ 代码项目必须使用 C++ 单元测试框架进行测试。 有关详细信息，请参阅[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)。
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
@@ -151,36 +151,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|你可以通过 TestProperty 属性定义特征类别/值对。|  
   
  **适用于 C++ 的 Microsoft 单元测试框架中的特征**  
-  
- 若要定义特性，请使用 `TEST_METHOD_ATTRIBUTE` 宏。 例如，若要定义名为 `TEST_MY_TRAIT`的特性：  
-  
-```cpp  
-#define TEST_MY_TRAIT(traitValue) TEST_METHOD_ATTRIBUTE(L"MyTrait", traitValue)  
-```  
-  
- 在单元测试中使用已定义的特征：  
-  
-```  
-BEGIN_TEST_METHOD_ATTRIBUTE(Method1)  
-    TEST_OWNER(L"OwnerName")  
-    TEST_PRIORITY(1)  
-    TEST_MY_TRAIT(L"thisTraitValue")  
-END_TEST_METHOD_ATTRIBUTE()  
-  
-TEST_METHOD(Method1)  
-{     
-    Logger::WriteMessage("In Method1");  
-    Assert::AreEqual(0, 0);  
-}  
-```  
-  
-### <a name="c-trait-attribute-macros"></a>C++ 特征特性宏  
-  
-|宏|描述|  
-|-----------|-----------------|  
-|`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|使用 TEST_METHOD_ATTRIBUTE 宏定义特性。|  
-|`TEST_OWNER(ownerAlias)`|使用预定义的“所有者”特征来指定测试方法的所有者。|  
-|`TEST_PRIORITY(priority)`|使用预定义的“优先级”特征向测试方法分配相对优先级。|  
+  请参阅[如何使用适用于 C++ 的 Microsoft 单元测试框架](how-to-use-microsoft-test-framework-for-cpp.md)。
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   

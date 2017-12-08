@@ -1,32 +1,29 @@
 ---
 title: "Visual Studio 中的 Python 选项 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3c714867-7a64-4b1e-aca8-09d956192279
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
+- VS.ToolsOptionsPages.Python_Tools.Diagnostics
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: a936c7fb80dbbe6305732a26b5e0a09a737bf3a3
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a71d076e85e1e7ae070014e83186c0011ca9e58f
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中的 Python 选项
 
 若要查看 Python 选项，请使用“工具”>“选项”菜单命令，确保选择“显示所有设置”，然后导航到“Python 工具”：
@@ -39,6 +36,7 @@ ms.lasthandoff: 07/18/2017
 
 - [常规选项](#general-options)
 - [调试选项](#debugging-options)
+- [诊断选项](#diagnostics-options)
 - [交互窗口选项](#interactive-windows-options)
 - [高级 Python 编辑器选项](#advanced-python-editor-options)
 
@@ -70,6 +68,17 @@ ms.lasthandoff: 07/18/2017
 | 启用调试 Python 标准库 | Off | 可支持在调试时逐步执行标准库源代码，但会增加调试器启动的时间。|
 
 ![Python“选项”对话框，“调试”选项卡](media/options-debugging.png)
+
+
+## <a name="diagnostics-options"></a>诊断选项
+
+| 选项 | 默认 | 描述 |
+| --- | --- | --- |
+| 包含分析日志 | On | 在使用按钮将诊断保存到文件或将其复制到剪贴板时，包含与已安装 Python 环境分析相关的详细日志。 此选项可能会显著增加所生成文件的大小，但诊断 IntelliSense 问题时通常需要使用此选项。 |
+| 将诊断保存到文件（按钮） | 无 | 提示输入文件名，然后将日志保存到文本文件。 |
+| 将诊断复制到剪贴板（按钮） | 无 | 将整个日志放到剪贴板上；此操作可能需要一些时间，具体取决于日志的大小。 |
+
+![Python“选项”对话框，“诊断”选项卡](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>交互窗口选项
 

@@ -1,19 +1,17 @@
 ---
-title: "重构"
+title: "在 Visual Studio for Mac 中重构代码 | Microsoft Docs"
 description: "使用源分析，可轻松重新组织 Visual Studio for Mac 中的代码。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
+ms.openlocfilehash: ba92cd9a0e9ca28d132116f65fd41758bce1a1f0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 4133b35d7bafd37a44150c6af0d730562a639874
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="refactoring"></a>重构
 
 重构代码方法可重新排列、重构和阐明现有代码，同时确保代码总体行为保持不变。
@@ -109,5 +107,4 @@ Visual Studio for Mac 与 Roslyn（Microsoft 的开源 .NET 编译器平台）�
 单击顶部的圆圈可循环访问每条建议，严重性最高的问题将最先显示。 将鼠标悬停在单个结果或行上时将显示该问题，可通过上下文操作对问题进行修复：
 
  ![源分析项](media/refactoring-image5.png)
-
 

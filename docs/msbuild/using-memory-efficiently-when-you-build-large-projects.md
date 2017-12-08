@@ -1,30 +1,31 @@
 ---
 title: "在生成大型项目时有效使用内存 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "缓存 (MSBuild)"
-  - "内存使用 (MSBuild)"
-  - "msbuild, 生成大型树时的高效内存使用"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- memory use (MSBuild)
+- msbuild, efficient memory use building large trees
+- caching (MSBuild)
 ms.assetid: 853a21ed-69f7-4817-af00-57f73e2c74b5
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: e9484e0b8771ad665f1891298ff2f6a8a1d0005e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 在生成大型项目时有效使用内存
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-大型项目通常包含许多子项目和其他依赖项，这在生成时会占用大量系统内存。  当可用的系统内存减少时，系统性能也会降低。  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目的早期版本保留在内存中，或者在 3.5 版中已将项目删除，但仍在缓存中保留生成结果以便于以后检索。  
+# <a name="using-memory-efficiently-when-you-build-large-projects"></a>在生成大型项目时有效使用内存
+大型项目通常包含许多子项目和其他依赖项，并且它们可能会在生成时占用大量系统内存。 当可用系统内存减少时，系统性能可能也会降低。 较旧版本的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目保留在内存中，或者 3.5 版中的项目会被删除，但会在缓存中保留生成结果，供将来检索。  
   
- 版本 4.0 可自动处理此内存管理，使得项目不必使用 `UnloadProjectsOnCompletion` 和 `UseResultsCache` 等属性。  
+ 4.0 版会自动处理此内存管理，项目无需使用 `UnloadProjectsOnCompletion` 和 `UseResultsCache` 等属性。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

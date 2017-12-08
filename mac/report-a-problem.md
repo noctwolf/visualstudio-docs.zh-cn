@@ -1,27 +1,27 @@
 ---
-title: "报告问题"
+title: "报告问题 | Microsoft Docs"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
+ms.openlocfilehash: f391ef0b21ba6d500e88908d806ea3958c771bed
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 41fd1949e7c3ea635b847c3e29648ed6e02a414e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>如何报告 Visual Studio for Mac 的问题
 
 如果遇到 Visual Studio for Mac 的问题，请告知我们，方便诊断和修复。 
 
 ## <a name="how-to-report-a-problem"></a>如何报告问题
 
-若要报告 Visual Studio for Mac 的问题，请使用欢迎页上的“报告问题”链接：
+若要报告 Visual Studio for Mac 的问题，请从菜单栏中选择“帮助”>“报告问题”：
 
 ![“报告问题”链接](media/report-problem-image1.png)
+
+也可以使用欢迎页上的“报告问题”链接。
 
 下图展示了“报告问题”网页。 可以使用该页面来查看所有现有问题，对类似问题投票，以及为其他用户报告的问题提交解决方案：
 

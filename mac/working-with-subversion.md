@@ -1,19 +1,17 @@
 ---
-title: "使用 Subversion"
+title: "使用 Subversion | Microsoft Docs"
 description: "使用 Visual Studio for Mac 中的 Subversion。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
+ms.openlocfilehash: 026e3625b4ee2d6582ce5539e5cab68c945f09c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 70cf7a411141c5a59e275cb455ddcf91863c4f8b
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-subversion"></a>使用 Subversion
 
 如本文前面部分所述，Subversion 是集中式版本控制系统，可让用户签出集中式数据的一个主控副本。 与 Git 不同，签出 Subversion 存储库不会克隆整个存储库，它仅拍摄该时间点的快照。
@@ -58,4 +56,3 @@ Subversion 使用复制-修改-合并模型，支持多位用户同时使用同�
 ![提交文件](media/version-control-svnCommit.png)
 
 将更改发送到创建所有修改的新修订版本的存储库。
-

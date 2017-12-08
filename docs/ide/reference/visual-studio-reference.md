@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c4ddcffd-d5b7-4ce8-8775-14e649c34518
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: e32d7a177a1a6ff0e26fba7f418f368a64bb1337
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 3fb02550aef01a16dbdb1c5e5cff4219ccd15100
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="visual-studio-reference"></a>Visual Studio 参考
 本节包括用户界面参考、等效语言和其他参考文档。  
@@ -50,20 +34,13 @@ ms.lasthandoff: 04/05/2017
  [Visual Studio 中的 XML 工具](../../xml-tools/xml-tools-in-visual-studio.md)  
  包含有关 Visual Studio 中的 XML 工具的文档并提供指向详细信息的链接。  
   
- [Visual Studio for Applications 参考](../../ide/reference/visual-studio-for-applications-reference.md)  
- 包含可用于将 .NET Framework 脚本引擎集成到应用程序中的接口的参考文档。  
-  
- [MSBuild](../../msbuild/msbuild.md)
-收录了有关如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中集成的 Microsoft 生成平台的文档。  
-  
- [用于排除 IDE 错误的资源](../../ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)  
- 包含指向用于帮助你解析 IDE 错误消息的资源的链接  
-  
- [与我们交流](../../ide/talk-to-us.md)  
- 包含有关如何查找 Visual Studio 客户支持的信息。  
+ [MSBuild](../../msbuild/msbuild.md) 收录了有关如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中集成的 Microsoft 生成平台的文档。  
   
  [为残疾人士提供的辅助功能](../../ide/reference/accessibility-for-people-with-disabilities.md)  
  包含有关如何更改辅助功能选项的提示。  
+  
+ [用于排除 IDE 错误的资源](../../ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)  
+ 包含资源链接，这些资源可帮助解析 IDE 错误消息。  
   
 ## <a name="related-sections"></a>相关章节  
  [Visual Basic 参考](/dotnet/visual-basic/reference/index)  

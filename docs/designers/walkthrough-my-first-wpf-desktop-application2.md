@@ -1,45 +1,31 @@
 ---
-title: "演练：我的第一个 WPF 桌面应用程序2 | Microsoft Docs"
+title: "演练：我的第一个 WPF 桌面应用程序 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+dev_langs:
+- csharp
+- vb
+ms.openlocfilehash: 75a333c7e5948e13db0c0c91b41128914e23222b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: d0e8435092fb5f7090c3631fd079e28de351704d
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>演练：我的第一个 WPF 桌面应用程序
-<a name="introduction"></a> 本演练提供了 Windows Presentation Foundation (WPF) 开发的简介。 你将创建一个基本应用程序，其中包括大多数 WPF 桌面应用程序中常见的元素：XAML 标记、代码隐藏、应用程序定义、控件、布局、数据绑定和样式。  
+本演练提供了 Windows Presentation Foundation (WPF) 开发的简介。 你将创建一个基本应用程序，其中包括大多数 WPF 桌面应用程序中常见的元素：XAML 标记、代码隐藏、应用程序定义、控件、布局、数据绑定和样式。  
   
-##  <a name="Create_The_Application_Code_Files"></a> 创建应用程序项目  
- 本部分将创建应用程序基础结构，其中包括项目和主窗口或窗体。  
+## <a name="creating-the-application-project"></a>创建应用程序项目  
+本部分将创建应用程序基础结构，其中包括项目和主窗口或窗体。  
   
 #### <a name="to-create-the-project"></a>创建项目  
   
@@ -88,8 +74,7 @@ ms.lasthandoff: 09/26/2017
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
             xmlns:local="clr-namespace:ExpenseIt"  
             mc:Ignorable="d"  
-            Title="ExpenseIt" Height="375" Width="500">  
-  
+            Title="ExpenseIt" Height="375" Width="500">    
     </NavigationWindow>  
     ```  
   
@@ -103,8 +88,7 @@ ms.lasthandoff: 09/26/2017
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
             xmlns:local="clr-namespace:ExpenseIt"  
             mc:Ignorable="d"  
-            Title="ExpenseIt" Height="375" Width="500">  
-  
+            Title="ExpenseIt" Height="375" Width="500">    
     </NavigationWindow>  
     ```  
   
@@ -116,7 +100,7 @@ ms.lasthandoff: 09/26/2017
   
      此操作会更改 `MainWindow` 类以派生自 `NavigationWindow`。 在 Visual Basic 中，当你更改 XAML 中的窗口时会自动发生这种情况，因此无需更改任何代码。  
   
-##  <a name="add_files_to_the_application"></a> 将文件添加到应用程序  
+## <a name="adding-files-to-the-application"></a>将文件添加到应用程序  
  本部分将向应用程序添加两个页面和一个图像。  
   
 #### <a name="to-add-a-home-screen"></a>若要添加主屏幕  
@@ -142,30 +126,17 @@ ms.lasthandoff: 09/26/2017
           xmlns:local="clr-namespace:ExpenseIt"  
           mc:Ignorable="d"   
           d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - Home">  
-  
+          Title="ExpenseIt - Home">    
         <Grid>  
   
         </Grid>  
     </Page>  
     ```  
   
-     或在 Visual Basic 中应这样显示：  
+    Visual Basic 中的第一行略有不同：  
   
     ```xaml  
     <Page x:Class="ExpenseItHome"  
-          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
-          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
-          xmlns:local="clr-namespace:ExpenseIt"  
-          mc:Ignorable="d"   
-          d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - Home">  
-        <Grid>  
-  
-        </Grid>  
-    </Page>  
     ```  
   
 5.  在设计器中，选择“MainWindow.xaml”  选项卡。  
@@ -182,24 +153,14 @@ ms.lasthandoff: 09/26/2017
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
             xmlns:local="clr-namespace:ExpenseIt"  
             mc:Ignorable="d"  
-            Title="ExpenseIt" Height="375" Width="500" Source="ExpenseItHome.xaml">  
-  
+            Title="ExpenseIt" Height="375" Width="500" Source="ExpenseItHome.xaml">    
     </NavigationWindow>  
     ```  
   
-     或在 Visual Basic 中应这样显示：  
+    Visual Basic 中的第一行略有不同：  
   
     ```xaml  
-    NavigationWindow x:Class="MainWindow"  
-            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
-            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
-            xmlns:local="clr-namespace:ExpenseIt"  
-            mc:Ignorable="d"  
-            Title="ExpenseIt" Height="375" Width="500" Source="ExpenseItHome.xaml">  
-  
-    </NavigationWindow>  
+    <NavigationWindow x:Class="MainWindow"
     ```  
   
      正如你先前设置的属性一样，你也可以设置“属性”窗口的“杂项”类别中的 `Source` 属性。  
@@ -219,7 +180,7 @@ ms.lasthandoff: 09/26/2017
      你的 ExpenseReportPage.xaml 文件在 C# 中现应如下所示：  
   
     ```xaml  
-    Page x:Class="ExpenseIt.ExpenseReportPage"  
+    <Page x:Class="ExpenseIt.ExpenseReportPage"  
           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
@@ -227,33 +188,20 @@ ms.lasthandoff: 09/26/2017
           xmlns:local="clr-namespace:ExpenseIt"  
           mc:Ignorable="d"   
           d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - View Expense">  
-  
+          Title="ExpenseIt - View Expense">    
         <Grid>  
   
         </Grid>  
     </Page>  
     ```  
   
-     或在 Visual Basic 中应这样显示：  
+    Visual Basic 中的第一行略有不同：  
   
     ```xaml  
     <Page x:Class="ExpenseReportPage"  
-          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
-          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
-          xmlns:local="clr-namespace:ExpenseIt"  
-          mc:Ignorable="d"   
-          d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - View Expense">  
-        <Grid>  
-  
-        </Grid>  
-    </Page>  
     ```  
   
-5.  在菜单栏上，依次选择 “调试”和“启动调试”  （或按 F5）以运行应用程序。  
+5.  在菜单栏上，依次选择 “调试”和“开始调试”  （或按 F5）以运行应用程序。  
   
      下面的插图显示带导航窗口按钮的应用程序。  
   
@@ -261,7 +209,7 @@ ms.lasthandoff: 09/26/2017
   
 6.  关闭应用程序以返回到设计模式。  
   
-##  <a name="Add_Layout"></a> 创建用户界面  
+## <a name="creating-the-user-interface"></a>创建用户界面  
  布局提供有序方式来放置元素，在调整窗体时还管理这些元素的大小和位置。 本部分将创建三行一列的网格。 你将向这两页添加控件、添加代码，并且最终定义控件的可重用样式。  
   
 #### <a name="to-create-the-layout"></a>若要创建布局  
@@ -289,7 +237,7 @@ ms.lasthandoff: 09/26/2017
   
 1.  打开 **ExpenseItHome.xaml**。  
   
-2.  将以下 XAML 代码刚好添加到 `</Grid>` 标记上方以创建 `Border`、 `ListBox` 和 `Button` 控件。  
+2.  将以下 XAML 代码添加到 `</Grid>` 标记上方，以创建 `Border`、`ListBox` 和 `Button` 控件：  
   
     ```xaml  
     <!-- People list -->  
@@ -305,8 +253,7 @@ ms.lasthandoff: 09/26/2017
   
       <!-- View report button -->  
       <Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"  
-    Height="25" HorizontalAlignment="Right">View</Button>  
-  
+    Height="25" HorizontalAlignment="Right">View</Button>    
     ```  
   
      注意控件会出现在设计窗口中。 你也可以通过将控件从“工具箱”  窗口拖到设计窗口并在“属性”  窗口设置其属性来创建控件。  
@@ -338,8 +285,7 @@ ms.lasthandoff: 09/26/2017
     ```xaml  
     <Grid.Background>  
         <ImageBrush ImageSource="watermark.png"/>  
-    </Grid.Background>  
-  
+    </Grid.Background>    
     ```  
   
 #### <a name="to-add-a-title"></a>若要添加标题  
@@ -349,8 +295,7 @@ ms.lasthandoff: 09/26/2017
 2.  查找行 `<Grid.ColumnDefinitions>` 并将以下内容添加到它的下方：  
   
     ```xaml  
-    <ColumnDefinition Width="230" />  
-  
+    <ColumnDefinition Width="230" />    
     ```  
   
      这将在其他列的左侧另外创建一个列，宽度固定为 230 像素。  
@@ -358,8 +303,7 @@ ms.lasthandoff: 09/26/2017
 3.  查找行 `<Grid.RowDefinitions>` 并将以下内容添加到它的下方：  
   
     ```xaml  
-    <RowDefinition />  
-  
+    <RowDefinition />    
     ```  
   
      这将在网格顶部添加一行。  
@@ -378,8 +322,7 @@ ms.lasthandoff: 09/26/2017
     <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"   
             FontWeight="Bold" FontSize="18" Foreground="#0066cc">  
         View Expense Report  
-    </Label>  
-  
+    </Label>    
     ```  
   
      **ExpenseItHome.xaml** 的内容在 C# 中现应如下所示：  
@@ -430,52 +373,10 @@ ms.lasthandoff: 09/26/2017
     </Page>  
     ```  
   
-     或在 Visual Basic 中应这样显示：  
+    Visual Basic 中的第一行略有不同：  
   
     ```xaml  
     <Page x:Class="ExpenseItHome"  
-          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
-          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
-          xmlns:local="clr-namespace:ExpenseIt"  
-          mc:Ignorable="d"   
-          d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - Home" >  
-        <Grid Margin="10,0,10,10">  
-            <Grid.ColumnDefinitions>  
-                <ColumnDefinition Width="230" />  
-                <ColumnDefinition />  
-            </Grid.ColumnDefinitions>  
-            <Grid.RowDefinitions>  
-                <RowDefinition />  
-                <RowDefinition Height="Auto"/>  
-                <RowDefinition />  
-                <RowDefinition Height="Auto"/>  
-            </Grid.RowDefinitions>  
-            <Border Grid.Column="1" Grid.Row="1" Height="35" Padding="5" Background="#4E87D4">  
-                <Label VerticalAlignment="Center" Foreground="White">Names</Label>  
-            </Border>  
-            <!-- People list -->  
-            <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"   
-            FontWeight="Bold" FontSize="18" Foreground="#0066cc">  
-                View Expense Report  
-            </Label>  
-            <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2">  
-                <ListBoxItem>Mike</ListBoxItem>  
-                <ListBoxItem>Lisa</ListBoxItem>  
-                <ListBoxItem>John</ListBoxItem>  
-                <ListBoxItem>Mary</ListBoxItem>  
-            </ListBox>  
-  
-            <!-- View report button -->  
-            <Button Grid.Column="1" Grid.Row="3" Margin="0,10,0,0" Width="125"  
-    Height="25" HorizontalAlignment="Right">View</Button>  
-            <Grid.Background>  
-                <ImageBrush ImageSource="watermark.png"/>  
-            </Grid.Background>  
-        </Grid>  
-    </Page>  
     ```  
   
 6.  如果在此时生成并运行应用程序，其外观应类似于下图：  
@@ -486,11 +387,11 @@ ms.lasthandoff: 09/26/2017
   
 1.  打开 **ExpenseItHome.xaml**。  
   
-2.  选择 `<Button` 元素并将以下 XAML 代码紧跟在 **HorizontalAlignment="Right"** 元素的后面： `Click="Button_Click"`。  
+2.  选择 `Button` 元素并将以下 XAML 代码紧跟在 `HorizontalAlignment="Right"` 元素之后：`Click="Button_Click"`。  
   
-     这将为按钮的 `Click` 事件添加一个事件处理程序。 “<按钮”元素代码现应如下所示：  
+     这将为按钮的 `Click` 事件添加一个事件处理程序。 Button 元素代码现应如下所示：  
   
-    ```  
+    ```xaml  
     <!-- View report button -->  
       <Button Grid.Column="1" Grid.Row="3" Margin="0,10,0,0" Width="125"  
     Height="25" HorizontalAlignment="Right" Click="Button_Click">View</Button>  
@@ -505,8 +406,7 @@ ms.lasthandoff: 09/26/2017
     {  
         // View Expense Report  
         ExpenseReportPage expenseReportPage = new ExpenseReportPage();  
-        this.NavigationService.Navigate(expenseReportPage);  
-  
+        this.NavigationService.Navigate(expenseReportPage);    
     }  
     ```  
   
@@ -671,7 +571,7 @@ ms.lasthandoff: 09/26/2017
   
     -   `buttonStyle`：可设置 `Button`**“ExpenseItHome.xaml”页面上** 的格式。  
   
-3.  打开 **ExpenseItHome.xaml** ，并使用以下 XAML替换 `<Grid>` 和 `</Grid>` 元素之间的所有内容  
+3.  打开 ExpenseItHome.xaml，并使用以下 XAML替换 `<Grid>` 和 `</Grid>` 元素之间的所有内容：  
   
     ```xaml  
     <Grid.ColumnDefinitions>  
@@ -708,7 +608,7 @@ ms.lasthandoff: 09/26/2017
   
      应用样式会删除和替换定义每个控件外观的属性（如 `VerticalAlignment` 和 `FontFamily` 。  
   
-4.  打开 **ExpenseReportPage.xaml** ，并使用以下 XAML替换 `<Grid>` 和最后一个 `</Grid>` 元素之间的所有内容  
+4.  打开 ExpenseReportPage.xaml，并使用以下 XAML替换 `<Grid>` 和最后一个 `</Grid>` 元素之间的所有内容：  
   
     ```xaml  
     <Grid.Background>  
@@ -760,8 +660,7 @@ ms.lasthandoff: 09/26/2017
                 </DataGrid.Columns>  
             </DataGrid>  
         </Grid>  
-    </Grid>  
-  
+    </Grid>    
     ```  
   
      这会将样式添加到 `<Label>` 和 `<Border>` 元素。  
@@ -775,8 +674,7 @@ ms.lasthandoff: 09/26/2017
   
 2.  添加以下 XAML 代码：  
   
-    ```xaml  
-  
+    ```xaml    
     <Grid.Resources>  
     <!-- Expense Report Data -->  
     <XmlDataProvider x:Key="ExpenseDataSource" XPath="Expenses">  
@@ -819,7 +717,7 @@ ms.lasthandoff: 09/26/2017
   
      这将添加一个在“ListBox”中定义如何显示数据的 `Data Template`。  
   
-4.  将现有 `<ListBox>` 元素替换为以下 XAML。  
+4.  将现有 `<ListBox>` 元素替换为以下 XAML：  
   
     ```xaml  
     <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2"   
@@ -838,27 +736,26 @@ ms.lasthandoff: 09/26/2017
   
     ```csharp  
     // Custom constructor to pass expense report data  
-        public ExpenseReportPage(object data):this()  
-        {  
-            // Bind to expense report data.  
-            this.DataContext = data;  
-        }  
+    public ExpenseReportPage(object data):this()  
+    {  
+        // Bind to expense report data.  
+        this.DataContext = data;  
+    }  
     ```  
   
     ```vb  
     Partial Public Class ExpenseReportPage  
     Inherits Page  
-    Public Sub New()  
-    InitializeComponent()  
-    End Sub  
+        Public Sub New()  
+        InitializeComponent()  
+        End Sub  
   
-    ' Custom constructor to pass expense report data  
-    Public Sub New(ByVal data As Object)  
-    Me.New()  
-    ' Bind to expense report data.  
-    Me.DataContext = data  
-    End Sub  
-  
+        ' Custom constructor to pass expense report data  
+        Public Sub New(ByVal data As Object)  
+            Me.New()  
+            ' Bind to expense report data.  
+            Me.DataContext = data  
+        End Sub    
     End Class  
     ```  
   
@@ -873,8 +770,7 @@ ms.lasthandoff: 09/26/2017
     {  
         // View Expense Report  
         ExpenseReportPage expenseReportPage = new ExpenseReportPage(this.peopleListBox.SelectedItem);  
-        this.NavigationService.Navigate(expenseReportPage);  
-  
+        this.NavigationService.Navigate(expenseReportPage);    
     }  
     ```  
   
@@ -905,8 +801,7 @@ ms.lasthandoff: 09/26/2017
     <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal">  
         <Label Style="{StaticResource labelStyle}">Department:</Label>  
         <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Department}"></Label>  
-    </StackPanel>  
-  
+    </StackPanel>    
     ```  
   
      这会将“标签”  控件绑定到相应数据源属性。  
@@ -924,8 +819,7 @@ ms.lasthandoff: 09/26/2017
         <DataTemplate x:Key="amountItemTemplate">  
             <Label Content="{Binding XPath=@ExpenseAmount}"/>  
         </DataTemplate>  
-    </Grid.Resources>  
-  
+    </Grid.Resources>    
     ```  
   
      这定义如何显示费用报表数据。  
@@ -993,5 +887,4 @@ ms.lasthandoff: 09/26/2017
 -   [WPF 中的文档](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>另请参阅  
- [演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
- [使用 Windows Presentation Foundation 创建新式桌面应用程序](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+[使用 Windows Presentation Foundation 创建新式桌面应用程序](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

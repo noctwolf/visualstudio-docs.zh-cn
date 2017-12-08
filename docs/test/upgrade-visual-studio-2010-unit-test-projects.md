@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
-caps.latest.revision: 8
+caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d6550f2aa1aab249eda569ff84ddf4dcf488aa18
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 2e3e99bfad1ebf33f23c3b38189568935d0cedee
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>升级 Visual Studio 2010 单元测试项目
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 包括与 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 测试项目的测试项目兼容性。 例如，使用 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 创建的测试项目可通过 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 打开，而无需任何升级。 因此，团队可以同时使用 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 和 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 处理同一测试项目。 有关详细信息，请参阅[从 Visual Studio 2010 升级测试](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。  
@@ -43,14 +26,14 @@ ms.lasthandoff: 05/13/2017
 >  [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 测试项目中的现有单元测试可在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 和 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 之间无缝运行。 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中打开包含单元测试的 Visual Studio 2010 测试项目时，不会对测试项目文件做任何更改，反之亦然。  
   
 > [!CAUTION]
->  Visual Studio 2010 不能打开面向 11.0 工具集的 C++/CLI 项目，即使用 Visual Studio 2012 创建的项目。 此限制适用于所有 C++/CLI 项目，而不仅仅是 C++/CLI 单元测试项目。  
+>  Visual Studio 2010 不能打开面向 11.0 工具集的 C++/CLI 项目，即使用 Visual Studio 2012 或更高版本创建的项目。 此限制适用于所有 C++/CLI 项目，而不仅仅是 C++/CLI 单元测试项目。  
   
 > [!NOTE]
 >  可以从命令行使用 vstest.console.exe 命令运行新的单元测试。 有关使用 vstest.console.exe 的详细信息，请参阅 [VSTest.Console.exe 命令行选项](/devops-test-docs/test/vstest-console-exe-command-line-options)，或使用帮助开关运行命令：**vstest.console.exe /?**。 使用 MStest.exe 可以继续运行现有的单元测试。 有关详细信息，请参阅[使用 MSTest 从命令行运行自动测试](/devops-test-docs/test/run-automated-tests-from-the-command-line-using-mstest)和 [MSTest.exe 命令行选项](/devops-test-docs/test/mstest-exe-command-line-options)。  
   
  另一个重要的变化为新的测试资源管理器。 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，您在 Visual Studio 早期版本中可能比较熟悉的一些测试窗口已遭弃用，例如“测试视图”窗口。 测试资源管理器旨在为开发人员和团队提供更好的支持，帮助其将单元测试纳入软件开发实践中。 有关详细信息，请参阅[使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)。  
   
-## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012"></a>Visual Studio 2010 SP1 和 Visual Studio 2012 之间的兼容性问题  
+## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012-or-later"></a>Visual Studio 2010 SP1 和 Visual Studio 2012 或更高版本之间的兼容性问题  
  以下是一些在 Visual Studio 2010 SP1 和 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 之间迁移单元测试时需要注意的问题：  
   
 |单元测试功能|问题|解决方案|  
@@ -65,4 +48,3 @@ ms.lasthandoff: 05/13/2017
  [单元测试代码](../test/unit-test-your-code.md)   
  [从 Visual Studio 的早期版本升级测试](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
  [从 Visual Studio 2010 升级编码的 UI 测试](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-

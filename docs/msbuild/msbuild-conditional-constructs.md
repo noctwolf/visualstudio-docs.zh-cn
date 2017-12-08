@@ -1,48 +1,49 @@
 ---
-title: "MSBuild 的条件构造 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<Choose> 元素 [MSBuild]"
-  - "<Otherwise> 元素 [MSBuild]"
-  - "<When> 元素 [MSBuild]"
-  - "Choose 元素 [MSBuild]"
-  - "条件构造 [MSBuild]"
-  - "MSBuild, 条件构造"
-  - "Otherwise 元素 [MSBuild]"
-  - "When 元素 [MSBuild]"
+title: "MSBuild 条件构造 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- <Choose> Element [MSBuild]
+- Choose Element [MSBuild]
+- conditional constructs [MSBuild]
+- MSBuild, conditional constructs
+- <When> Element [MSBuild]
+- <Otherwise> Element [MSBuild]
+- Otherwise Element [MSBuild]
+- When Element [MSBuild]
 ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: bb6244ceed63fead2925c0af7d98669b1bf5bfc2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# MSBuild 的条件构造
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 使用 [Choose](../msbuild/choose-element-msbuild.md)、[When](../msbuild/when-element-msbuild.md) 和 [Otherwise](../msbuild/otherwise-element-msbuild.md) 元素提供一种处理 either\/or 的机制。  
+# <a name="msbuild-conditional-constructs"></a>MSBuild 的条件构造
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 为非此即彼的处理机制提供 [Choose](../msbuild/choose-element-msbuild.md)、[When](../msbuild/when-element-msbuild.md) 和 [Otherwise](../msbuild/otherwise-element-msbuild.md) 元素。  
   
-## 使用 Choose 元素  
- `Choose` 元素包含一系列具有 `Condition` 特性的 `When` 元素，将按从上至下的顺序测试这些元素，直到某个元素的计算结果为 `true` 为止。  如果不止一个 `When` 元素的计算结果为 `true`，将仅仅使用第一个元素。  如果 `When` 元素中没有一个条件的计算结果为 `true`，将计算 `Otherwise` 元素（如果存在的话）。  
+## <a name="using-the-choose-element"></a>使用 Choose 元素  
+ `Choose` 元素包含一系列具有 `Condition` 属性的 `When` 元素，这些元素按照从顶部到底部的顺序进行测试，直到一个元素的计算结果为 `true`。 如果多个 `When` 元素的计算结果为 `true`，则只使用第一个。 如果 `When` 元素的任何条件的计算结果均为 `true`，则评估 `Otherwise` 元素（如存在）。  
   
- `Choose` 元素可以用作 `Project`、`When` 和 `Otherwise` 元素的子元素。  `When` 和 `Otherwise` 元素可以有 `ItemGroup`、`PropertyGroup` 或 `Choose` 子元素。  
+ `Choose` 元素可用作 `Project`、`When` 和 `Otherwise` 元素的子元素。 `When` 和 `Otherwise` 元素可具有 `ItemGroup`、`PropertyGroup` 或 `Choose` 子元素。  
   
-## 示例  
- 下面的示例对 either\/or 处理使用 `Choose` 和 `When` 元素。  项目的属性和项是根据 `Configuration` 属性的值设置的。  
+## <a name="example"></a>示例  
+ 以下示例使用 `Choose` 和 `When` 元素进行非此即彼的处理。 根据 `Configuration` 属性的值设置项目的属性和项。  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
     <PropertyGroup>  
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -78,8 +79,8 @@ caps.handback.revision: 9
 </Project>  
 ```  
   
-## 请参阅  
- [Choose 元素 \(MSBuild\)](../msbuild/choose-element-msbuild.md)   
- [When 元素 \(MSBuild\)](../msbuild/when-element-msbuild.md)   
- [Otherwise 元素 \(MSBuild\)](../msbuild/otherwise-element-msbuild.md)   
+## <a name="see-also"></a>另请参阅  
+ [Choose 元素 (MSBuild)](../msbuild/choose-element-msbuild.md)   
+ [When 元素 (MSBuild)](../msbuild/when-element-msbuild.md)   
+ [Otherwise 元素 (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)

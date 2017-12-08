@@ -1,16 +1,15 @@
 ---
-title: "设置 Visual Studio for Mac Tools for Unity"
+title: "设置 Visual Studio for Mac Tools for Unity | Microsoft Docs"
 author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.topic: article
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
+ms.openlocfilehash: 97620ef9c556705cc358d19a956bddb6dca6a3db
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: c2290b1165b8d2688b280684e1251b929d002594
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="setup-visual-studio-for-mac-tools-for-unity"></a>设置 Visual Studio for Mac Tools for Unity
 
@@ -64,4 +63,3 @@ Visual Studio 必须设置为 Unity 中的外部脚本编辑器：
   ![选择“打开”](media/setup-vsmac-tools-unity-image6.png)
 
 5.  在“外部脚本编辑器”列表中选择 Visual Studio 之后，关闭首选项对话框完成配置流程。
-

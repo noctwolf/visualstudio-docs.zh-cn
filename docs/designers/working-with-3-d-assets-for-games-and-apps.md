@@ -1,58 +1,58 @@
 ---
 title: "为游戏和应用程序使用三维资产 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.graphics"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
-caps.latest.revision: 24
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0c57284e21e1b276c6191109701f507c5a12f819
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 为游戏和应用程序使用三维资产
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-文档描述可用于创建或修改三维模型、纹理和基于 DirectX 的游戏和应用程序的着色器的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 工具。  
+# <a name="working-with-3-d-assets-for-games-and-apps"></a>为游戏和应用程序使用三维资产
+本文档介绍了 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 工具，这些工具可用来创建或修改基于 DirectX 的游戏和应用的三维模型、纹理和着色器。  
   
-## 在 Visual Studio 的 DirectX 应用程序开发  
- DirectX app 通常与音频和三维可视化资产一起合并编程逻辑、DirectX API 和高级着色语言 \(HLSL\) 程序，表示丰富、交互式多媒体经验。  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 包含可以用于处理图形和纹理、3\-D 模型和着色器的工具而无需离开 IDE 使用另一个工具。  Visual Studio 工具尤其适合创建“占位符”资产，在执行生产就绪资产之前您可以用于测试代码或生成原型，和当您调试应用程序时用于检查和修改生产就绪的资产。  
+## <a name="directx-app-development-in-visual-studio"></a>Visual Studio 中的 DirectX 应用开发  
+ DirectX 应用通常将编程逻辑、DirectX API、高级别着色语言 (HLSL) 程序与音频和三维可视化资产合并在一起，以提供丰富的交互式多媒体体验。[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 包括可用于处理图像和纹理、三维模型和着色器的工具，无需离开 IDE 使用其他工具。 Visual Studio 工具尤其适用于创建占位符资产，该资产可用于添加生产就绪资产前测试代码或生成原型，还可用于调试应用前，检查和修改生产就绪资产。  
   
- 这是有关在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中您可以利用的资源种类的更多信息。  
+ 以下是关于可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中处理的各种资产的详细信息。  
   
-### 图像和纹理  
- 图像和纹理在游戏和应用程序中提供了颜色和视觉详细信息。  在三维图形中，纹理具有多种格式、类型和几何图形支持不同的用法。  例如，法线贴图为各像素提供表面法线，以获得更精细的三维模型光照，立方体贴图在所有方向提供纹理，供环境映射、反射和球形纹理映射用。  纹理提供的 mip 映射可以支持高效呈现不同级别的详细信息，并且可支持不同颜色的通道和颜色顺序。  纹理可以占用较少的图形内存的各种压缩格式存储，也可以帮助 GPU 更有效地访问纹理。  
+### <a name="images-and-textures"></a>图像和纹理  
+ 图像和纹理能够在游戏和应用中提供颜色和可视化细节。 在三维图中，纹理具有多种格式、类型和几何形状，以满足不同用途。 例如，法线贴图提供每像素曲面法线以实现更具体的三维模型照明，多维数据集映射提供所有方向的纹理以用于 sky-boxing、反射和球面纹理映射等。 纹理可以提供 mip 映射，支持不同级别细节的高效绘制，且支持不同的颜色通道和颜色排序。 纹理可以各种压缩格式存储，从而减少专用图形内存占用，有助于 GPU 更有效地访问纹理。  
   
- 可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 图像编辑器处理许多常见类型和格式的图像及纹理。  
+ 可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 图像编辑器处理许多常用类型和格式的图像和纹理。  
   
-### 3\-D 模型  
- 三维模型在游戏和应用程序中创建空间和形状。  模型至少会编码三维空间中的点位置（这称为*顶点*）以及为数据编写索引，以定义表示模型形状的线条或三角形。  其他数据可与这些顶点（例如，颜色信息、法向量或特定于应用程序的属性）相关联。  每个模型还可以定义对象属性，例如，着色器用于计算对象的图面的外观，或者纹理应用于它。  
+### <a name="3-d-models"></a>三维模型  
+ 三维模型创建游戏和应用中的空间和形状。 按最小的方式，模型将三维空间中点的位置（称为顶点）和索引数据一起编码，以定义表示模型形状的线或三角形。 其他可以与这些顶点关联的数据，例如：颜色信息、常规矢量或应用程序特定的属性。 每个模型还可以定义对象范围的属性，例如，哪一个着色器用于计算对象图面的外观，哪一个纹理应用于它。  
   
- 可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 模型编辑器处理几种常用格式的三维模型。  
+ 使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 模型编辑器可以处理几种常用格式的三维模型。  
   
-### 着色器  
- 着色器是在处理单元 \(GPU\) 的图像运行的小，特定于域的程序。  着色器确定三维模型如何转换为屏幕上的形状，以及如何着色在这些形状的每个像素。  通过创建着色器并将其应用于在您的游戏或应用程序的对象，可以给予对象唯一外观。  
+### <a name="shaders"></a>着色器  
+ 着色器是在图形处理单元 (GPU) 上运行的特定于域的小型程序。 着色器确定三维模型转换为屏幕形状的方式，以及这些形状中的每个像素的着色方式。 通过创建着色器并将它应用到游戏或应用中的对象，可以为该对象提供唯一外观。  
   
- 使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 着色器设计器（基于关系图的着色器设计工具）可以创建自定义可视化效果，而无需进行 HLSL 编程。  
+ 可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 着色器设计器，它是一个基于图形的着色器设计工具，用户可以在不懂 HLSL 编程的情况下创建自定义可视化效果。  
   
 > [!NOTE]
->  有关如何以编程的 DirectX 启动的更多信息，请参见 [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633)。  有关如何调试基于 DirectX 的应用程序的更多信息，请参见 [图形诊断（调试 DirectX 图形）](../debugger/visual-studio-graphics-diagnostics.md)。  
+>  有关如何开始 DirectX 编程的详细信息，请参阅 [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633)。 有关如何调试基于 DirectX 的应用的详细信息，请参阅[图形诊断（调试 DirectX 图形）](../debugger/visual-studio-graphics-diagnostics.md)。  
   
-## DirectX 版本兼容性  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用 DirectX 来呈现二维和三维资产。  您可以选择 DirectX 11 呈现程序或 Windows 高级化平台 \(WARP\) 软件呈现器。  DirectX 11呈现器提供高性能和在 DirectX 11 和 DirectX 10 GPUs 上的硬件加速呈现。  WARP 呈现器有助于确保您的资产广泛使用计算机—这包含没有现代图形硬件的计算机和已集成图形硬件的计算机。  有关经线的更多信息，请参见 [窗口高级光栅化平台 \(WARP\) 指南](http://go.microsoft.com/fwlink/p/?LinkId=224634)。  
+## <a name="directx-version-compatibility"></a>DirectX 版本兼容性  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用 DirectX 来呈现二维和三维资产。 可以选择 DirectX 11 呈现器或 Windows 高级光栅化平台 (WARP) 软件呈现器。 DirectX 11 呈现器在 DirectX 11 和 DirectX 10 GPU 上提供高性能、硬件加速呈现。 WARP 呈现器有助于确保资产适用于一系列计算机，其中包括没有新式图形硬件的计算机和具有集成图形硬件的计算机。 有关 WARP 的详细信息，请参见 [Windows 高级光栅化平台 (WARP) 指南](http://go.microsoft.com/fwlink/p/?LinkId=224634)。  
   
-## 相关主题  
+## <a name="related-topics"></a>相关主题  
   
-|标题|说明|  
-|--------|--------|  
-|[使用纹理和图像](../designers/working-with-textures-and-images.md)|描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 以图象和纹理运行。|  
-|[使用三维模型](../designers/working-with-3-d-models.md)|描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 以三维模型运行。|  
-|[使用着色器](../designers/working-with-shaders.md)|描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 着色器设计器创建和修改自定义着色器效果。|  
-|[在游戏或应用程序中使用三维资产](../designers/using-3-d-assets-in-your-game-or-app.md)|描述如何使用资产，通过使用图像编辑器、模型、编辑或着色器设计器，可以在该游戏或应用程序创建。|
+|标题|描述|  
+|-----------|-----------------|  
+|[使用纹理和图像](../designers/working-with-textures-and-images.md)|介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 处理图像和纹理。|  
+|[使用三维模型](../designers/working-with-3-d-models.md)|介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 处理三维模型。|  
+|[使用着色器](../designers/working-with-shaders.md)|介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 着色器设计器创建和修改自定义着色器效果。|  
+|[在游戏或应用程序中使用三维资产](../designers/using-3-d-assets-in-your-game-or-app.md)|介绍如何使用通过图像编辑器、模型编辑器或着色器设计器创建的游戏或应用中的资产。|

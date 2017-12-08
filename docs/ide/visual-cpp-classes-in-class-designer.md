@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.classdesigner.inheritancelinelabel
-helpviewer_keywords:
-- Class Designer [Visual Studio], classes
+f1_keywords: vs.classdesigner.inheritancelinelabel
+helpviewer_keywords: Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 02cd1cabf8cf296130ace9a3dcf37a237805dfe9
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: b4ba110a67604a24517cac90c4645f118a33e722
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-classes-in-class-designer"></a>类设计器中的 Visual C++ 类
 类设计器支持 C++ 类，直观呈现本机 C++ 类的方式与直观呈现 Visual Basic 和 Visual C# 类形状时大致相同，不同之处在于 C++ 类可以有多个继承关系。 可以展开类形状来显示类中的更多字段和方法，也可以折叠类形状来节省空间。  
@@ -69,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 >  C++ 代码不支持“显示派生类”命令。 可以转到类视图，依次展开类型节点和“Derived Types”子文件夹，然后将这些类型拖到类图上，即可显示派生类。  
   
- 有关多类继承的详细信息，请参阅 [(NOTINBUILD) 多重继承](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)和[多个基类](/cpp/cpp/multiple-base-classes)。  
+ 有关多类继承的详细信息，请参阅[多重继承](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)和[多个基类](/cpp/cpp/multiple-base-classes)。  
   
 ## <a name="abstract-classes"></a>抽象类  
  类设计器支持抽象类（亦称为“抽象基类”）。 这些是永不实例化，但可从中派生其他类的类。 以本文前面“多重继承”部分中的示例为例，可以将 `Bird` 类实例化成各个单独的对象，如下所示：  
@@ -188,6 +171,6 @@ typedef struct
  [使用 Visual C++ 代码（类设计器）](../ide/working-with-visual-cpp-code-class-designer.md)   
  [类和结构](/cpp/cpp/classes-and-structs-cpp)   
  [匿名类类型](/cpp/cpp/anonymous-class-types)   
- [(NOTINBUILD) 多重继承](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [多重继承](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)   
  [多个基类](/cpp/cpp/multiple-base-classes)   
  [模板](/cpp/cpp/templates-cpp)

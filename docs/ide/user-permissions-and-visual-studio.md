@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,33 +13,17 @@ helpviewer_keywords:
 - administrative privileges
 - permissions
 ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
-caps.latest.revision: 14
-author: kempb
-ms.author: kempb
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: badbf6892698c6e35ce76500001839c7c9e6734a
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: e044e3d89f7cbaae28ff0fd3cefe1c6fe4583c65
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 用户权限与 Visual Studio
-<a id="user-permissions-and-visual-studio" class="xliff"></a>
+# <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 出于安全目的，你应尽可能以普通用户的身份来运行 Visual Studio。  
 
 > [!WARNING]
@@ -53,7 +36,7 @@ ms.lasthandoff: 05/30/2017
 |安装|安装 Visual Studio。|[安装 Visual Studio](../install/install-visual-studio.md)|  
 ||安装、更新或移除本地 Help 内容。|[安装和管理本地内容](../ide/install-and-manage-local-content.md)|  
 |应用程序类型|部署 SharePoint 的解决方案。|[开发 SharePoint 解决方案的需求](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
-||获取 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]的开发人员许可证。|[获取开发人员许可证（Windows 应用商店应用）](http://go.microsoft.com/fwlink/?LinkID=241313)|  
+||获取 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]的开发人员许可证。|[获取开发人员许可证](http://go.microsoft.com/fwlink/?LinkID=241313)|  
 |工具箱|将经典 COM 控件添加到“工具箱”。|[使用工具箱](../ide/using-the-toolbox.md)|  
 |外接程序|安装和使用通过使用 IDE 中的经典 COM 编写的加载项。|[创建外接程序和向导](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|  
 |生成|使用注册组件的后期生成事件。|[了解自定义生成步骤和生成事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
@@ -66,12 +49,10 @@ ms.lasthandoff: 05/30/2017
 |性能工具|分析应用程序。|[性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)|  
 |部署|在本地计算机上将 Web 应用程序部署到 Internet Information Services (IIS)。|[使用 Visual Studio 或 Visual Web Developer 将 ASP.NET Web 应用程序部署到承载提供程序：作为测试环境部署到 IIS](http://go.microsoft.com/fwlink/?LinkId=266478)|
 
-## 以管理员身份运行 Visual Studio
-<a id="running-visual-studio-as-an-administrator" class="xliff"></a>  
+## <a name="running-visual-studio-as-an-administrator"></a>以管理员身份运行 Visual Studio  
  每次启动 IDE 时，可利用管理权限启动 Visual Studio，或可以修改应用程序快捷方式以便始终利用管理权限运行。 有关详细信息，请参阅 Windows 帮助。  
 
-#### 在 [!INCLUDE[win8](../debugger/includes/win8_md.md)]、[!INCLUDE[win81](../debugger/includes/win81_md.md)]、[!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] 或 [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]上利用管理权限运行 Visual Studio
-<a id="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd" class="xliff"></a>  
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd"></a>在 [!INCLUDE[win8](../debugger/includes/win8_md.md)]、[!INCLUDE[win81](../debugger/includes/win81_md.md)]、[!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] 或 [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]上利用管理权限运行 Visual Studio  
 
 1.  在“开始”屏幕上，键入“Visual Studio”。 你应会看到你所安装的一个或多个 Visual Studio 版本。  
 
@@ -79,8 +60,7 @@ ms.lasthandoff: 05/30/2017
 
      Visual Studio 启动时，标题栏的产品名后显示“(管理员)”。  
 
-#### 在 [!INCLUDE[win7](../debugger/includes/win7_md.md)] 或 [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] 上利用管理权限运行 Visual Studio
-<a id="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd" class="xliff"></a>  
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd"></a>在 [!INCLUDE[win7](../debugger/includes/win7_md.md)] 或 [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] 上利用管理权限运行 Visual Studio  
 
 1.  在“开始”菜单上，选择“所有程序”。  
 
@@ -88,8 +68,6 @@ ms.lasthandoff: 05/30/2017
 
      Visual Studio 启动时，标题栏的产品名后显示“(管理员)”。  
 
-## 另请参阅
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>另请参阅  
  [移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [安装 Visual Studio](../install/install-visual-studio.md)
-

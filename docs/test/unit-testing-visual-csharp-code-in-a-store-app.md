@@ -1,40 +1,24 @@
 ---
-title: "对应用商店应用中的 Visual C# 代码进行单元测试 | Microsoft Docs"
+title: "对 UWP 应用中的 Visual C# 代码进行单元测试 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
-caps.latest.revision: 19
+caps.latest.revision: "19"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 39b3ce6765d1f4ec342d9a6e5b156eaee01f0faf
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 768dd5253edac137c50ced5bf524bcc1fdd7f6da
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="unit-testing-visual-c-code-in-a-store-app"></a>对应用商店应用中的 Visual C# 代码进行单元测试
-本主题介绍了一种在 Windows 应用商店应用中对 Visual C# 类创建单元测试的方法。 Rooter 类通过实现计算给定数的平方根的估计的函数来演示限制计算理论的模糊内存。 Maths 应用程序之后可使用此函数为用户演示可通过 math 完成的有趣操作。  
+# <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>对 UWP 应用中的 Visual C# 代码进行单元测试
+本主题介绍一种在 UWP 应用中对 Visual C# 类创建单元测试的方法。 Rooter 类通过实现计算给定数的平方根的估计的函数来演示限制计算理论的模糊内存。 Maths 应用程序之后可使用此函数为用户演示可通过 math 完成的有趣操作。  
   
  本主题演示如何使用单元测试作为开发的第一步。 在此方法中，首先编写验证要测试的系统的特定行为的测试方法，然后编写通过测试的代码。 通过按照以下过程的顺序进行更改，您可调转此策略的顺序，即先编写要测试的代码，然后编写单元测试。  
   
@@ -68,13 +52,13 @@ ms.lasthandoff: 09/26/2017
   
 1.  在“文件”菜单上选择“新建”，然后选择“新建项目”。  
   
-2.  在“新建项目”对话框中，依次展开“已安装”和“Visual C#”，然后选择“Windows 应用商店”。 然后，从项目模板列表中选择“空白应用”。  
+2.  在“新建项目”对话框中，依次展开“已安装”和“Visual C#”，然后选择“Windows 通用”。 然后，从项目模板列表中选择“空白应用”。  
   
 3.  将项目命名为“`Maths`”，并确保已选中“创建解决方案的目录”。  
   
 4.  在“解决方案资源管理器”中，选择解决方案名称，然后从快捷菜单中依次选择“添加”和“新建项目”。  
   
-5.  在“新建项目”对话框中，依次展开“已安装”和“Visual C#”，然后选择“Windows 应用商店”。 然后从项目模板列表中选择“单元测试库(Windows 应用商店应用)”。  
+5.  在“新建项目”对话框中，依次展开“已安装”和“Visual C#”，然后选择“Windows 通用”。 然后从项目模板列表中选择“单元测试库(通用 Windows)”。  
   
      ![创建单元测试项目](../test/media/ute_cs_windows_createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
   
@@ -381,4 +365,3 @@ ms.lasthandoff: 09/26/2017
   
 > [!NOTE]
 >  若要向测试类添加帮助器方法，请勿向该方法添加 `[TestMethod]` 特性。 测试资源管理器未注册要运行的方法。
-

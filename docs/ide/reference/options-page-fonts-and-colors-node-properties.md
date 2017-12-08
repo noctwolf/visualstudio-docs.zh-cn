@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Tools Options settings, Fonts and Colors node properties
 - automation [Visual Studio], controlling Tools Options
 ms.assetid: 8e1ab784-5f85-4e2b-8ef9-e5d59ca4dbcb
-caps.latest.revision: 8
-author: kempb
-ms.author: kempb
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: b54f38aa51904ca502ab7298359fdc7124a807a9
-ms.contentlocale: zh-cn
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0c2618dbaad3fcae95219e2b6a8a1f9b3d87bf09
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>“选项”页 ->“字体和颜色”节点属性
 本文档介绍某个工具窗口的字体和颜色属性，该窗口注册显示在“选项”对话框“环境”类别中的”字体和颜色”下。 这支持可着色项组的动态特性，安装或卸载 VSPackages 时，这些特性可能会发生更改。  
@@ -56,7 +40,7 @@ ms.lasthandoff: 02/22/2017
 |属性项名称|值|描述|  
 |------------------------|-----------|-----------------|  
 |FontFamily|Get/Set (String)|要使用的字体名称，如“Courier New”。|  
-|FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|&lt;xref:EnvDTE.vsFontCharSet&gt; 值，指定要使用的字符集的类型，例如希伯来语或俄语。|  
+|FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|<xref:EnvDTE.vsFontCharSet> 值，指定要使用的字符集的类型，例如希伯来语或俄语。|  
 |FontSize|Get/Set (Short)|要使用的字体大小（以磅为单位）。 例如，10 或 12。|  
   
 ## <a name="see-also"></a>另请参阅  

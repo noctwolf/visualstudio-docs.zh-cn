@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -28,30 +27,15 @@ helpviewer_keywords:
 - class view
 - object browser
 ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: cf7325de6a4d5ee4cac1b48a7da33202034fde0c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: f85bcde09d6748aa781ceefd85ccbf138245aca6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="viewing-the-structure-of-code"></a>查看代码的结构
 你可以检查 Visual Studio 项目中的对象和成员，还可以检查 .NET Framework 组件、COM 组件、动态链接库 (DLL) 和类型库 (TLB) 中的对象和成员。  
@@ -164,7 +148,7 @@ ms.lasthandoff: 05/13/2017
   
 -   一组自定义组件  
   
- 自定义组件可以包括托管代码可执行文件、库程序集、类型库和 .ocx 文件。 不能添加 C++ 自定义组件。 自定义设置保存在 Visual Studio 用户应用程序目录 %appdata%\roaming\microsoft\visualstudio\11.0\objbrowex.dat。  
+ 自定义组件可以包括托管代码可执行文件、库程序集、类型库和 .ocx 文件。 不能添加 C++ 自定义组件。 自定义设置保存在 Visual Studio 用户应用程序目录 %APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat 中。  
   
  “对象浏览器”的左窗格显示物理容器，如 .NET Framework 和 COM 组件。 你可以展开容器节点以显示它们所包含的命名空间，然后展开命名空间以显示它们所包含的类型。 选择类型时，其成员（如属性和方法）在右窗格中列出。 右下窗格显示与所选项相关的详细信息。  
   

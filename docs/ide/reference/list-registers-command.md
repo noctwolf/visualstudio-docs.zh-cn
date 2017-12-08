@@ -1,32 +1,32 @@
 ---
 title: "“列出寄存器”命令 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.listregisters"
-helpviewer_keywords: 
-  - "Debug.ListRegisters 命令"
-  - "“列出寄存器”命令"
-  - "ListRegisters 命令"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.listregisters
+helpviewer_keywords:
+- list registers command
+- Debug.ListRegisters command
+- ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-caps.latest.revision: 7
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 83f4830b79c4492337abb6052b1b2803b34b5a9b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# “列出寄存器”命令
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-显示选定寄存器的值，使您可以修改要显示的寄存器的列表。  
+# <a name="list-registers-command"></a>“列出寄存器”命令
+显示选中寄存器的值并允许修改要显示的寄存器列表。  
   
-## 语法  
+## <a name="syntax"></a>语法  
   
 ```  
 Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]  
@@ -34,9 +34,9 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Unwatch [{register|registerGroup}...]]  
 ```  
   
-## 开关  
- \/显示 \[{`register`&#124;`registerGroup`}...\]  
- 显示指定的 `register` 或 `registerGroup` 的值。  如果未指定 `register` 或 `registerGroup`，则显示默认的寄存器列表。  如果未指定开关，则行为相同。  例如：  
+## <a name="switches"></a>开关  
+ /Display [{`register`&#124;`registerGroup`}...]  
+ 显示指定 `register` 或 `registerGroup` 的值。 如果没有指定 `register` 或 `registerGroup`，将显示寄存器的默认列表。 如果没有指定任何开关，则出现相同行为。 例如:   
   
  `Debug.ListRegisters /Display eax`  
   
@@ -44,26 +44,26 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
   
  `Debug.ListRegisters eax`  
   
- \/List  
- 显示列表中的所有寄存器组。  
+ /List  
+ 在列表中显示所有寄存器组。  
   
- \/Watch \[{`register`&#124;`registerGroup`}...\]  
- 向列表中添加一个或多个 `register` 或 `registerGroup` 值。  
+ /Watch [{`register`&#124;`registerGroup`}...]  
+ 向列表添加一个或多个 `register` 或 `registerGroup` 值。  
   
- \/Unwatch \[{`register`&#124;`registerGroup`}...\]  
- 从列表中移除一个或多个 `register` 或 `registerGroup` 值。  
+ / Unwatch [{`register`&#124;`registerGroup`}...]  
+ 从列表中删除一个或多个 `register` 或 `registerGroup` 值。  
   
-## 备注  
- 可以使用别名 `r` 替换 `Debug.ListRegisters`。  
+## <a name="remarks"></a>备注  
+ 别名 `r` 可用来代替 `Debug.ListRegisters`。  
   
-## 示例  
- 此示例使用 `Debug.ListRegisters` 的别名 `r` 显示寄存器组 `Flags` 的值。  
+## <a name="example"></a>示例  
+ 此示例使用 `Debug.ListRegisters` 别名 `r` 显示寄存组 `Flags` 的值。  
   
 ```  
 r /Display Flags  
 ```  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [调试基础知识：“寄存器”窗口](../../debugger/debugging-basics-registers-window.md)   
  [如何：使用“寄存器”窗口](../../debugger/how-to-use-the-registers-window.md)

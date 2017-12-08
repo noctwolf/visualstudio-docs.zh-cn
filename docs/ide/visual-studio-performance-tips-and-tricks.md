@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 173811a4f2d9974755e2432822c801388403ab7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 936d0df8c838227c5d6c99b0f04f1069eae8a277
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -36,14 +36,6 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 ## <a name="configure-solution-and-projects"></a>配置解决方案和项目
 
 如果你的超大型解决方案中包含多个项目，可通过进行以下优化受益：
-
-- **启用轻型解决方案加载**
-
-    使用“轻型解决方案加载”可以延迟解决方案中某些项目的加载，从而提升内存和 CPU 性能。 还可对每个解决方案启用此功能。 默认情况下，此选项处于关闭状态。
-
-    要启动“轻型解决方案加载”，请选择“工具”>“选项”>“项目和解决方案”>“轻型解决方案加载”。
-
-    在此模式下，没有启用某些 IDE 功能。 若要确定此选择是否有所帮助，请参阅[缩短解决方案加载时间](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/)和[优化解决方案加载](../ide/optimize-solution-loading-in-visual-studio.md)。
 
 - **卸载项目**
 

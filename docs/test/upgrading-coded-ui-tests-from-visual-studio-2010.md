@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
-caps.latest.revision: 33
+caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d3936d44f8591753df102cf65c15d9199a679316
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 8b854bcfcb7227a454023f89ce732706b1e545cc
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>从 Visual Studio 2010 升级编码的 UI 测试
-在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 中创建的包含编码 UI 测试的测试项目在 Visual Studio 2012 中打开时会自动修复。 如果测试项目已签入源控件中，则会签出项目文件进行此修复。 修复后，这些包含编码 UI 测试的测试项目既可用于 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1，也可用于 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]。  
+在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 中创建的包含编码 UI 测试的测试项目在 Visual Studio 2012 或更高版本中打开时会以无提示方式修复。 如果测试项目已签入源控件中，则会签出项目文件进行此修复。 修复后，这些包含编码 UI 测试的测试项目既可用于 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1，也可用于 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]。  
   
  **要求**  
   
@@ -45,12 +28,12 @@ ms.lasthandoff: 05/13/2017
 >  Visual Studio 包括多个测试项目类型。 如果创建新的编码 UI 测试，将在编码 UI 测试项目类型中创建。 有关详细信息，请参见 [从 Visual Studio 的早期版本升级测试](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。  
   
 > [!WARNING]
-> 在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 或与 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 并行安装的 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 中打开包含编码 UI 测试的 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]测试项目时，必须重新生成该测试项目。  
+>  在[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 或与 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 并行安装的 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 中打开包含编码 UI 测试的 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]测试项目时，必须重新生成该测试项目。  
   
 > [!WARNING]
 >  当在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 中打开创建于 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]且仅包含单元测试的测试项目时，无法向其添加编码 UI 测试。 同样，也无法向创建于 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]的单元测试项目添加编码 UI 测试。  
   
-## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Visual Studio 2010 和 Visual Studio 2012 之间的兼容性问题  
+## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012-or-later"></a>Visual Studio 2010 和 Visual Studio 2012 或更高版本之间的兼容性问题  
  下表列出了在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 和 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]之间迁移编码 UI 测试时应注意的问题。  
   
 > [!CAUTION]
@@ -58,13 +41,13 @@ ms.lasthandoff: 05/13/2017
   
 |编码 UI 功能|问题|解决方案|  
 |----------------------------|-----------|--------------|  
-|[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 不支持 Silverlight UI 测试|**生成将失败**<br /><br /> 如果你有 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 功能包 2，并且为 Silverlight 应用程序创建了编码 UI 测试项目，这些项目将无法在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]中打开。|我们建议仅在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 功能包 2 中管理这些项目。|  
-|[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 不支持 Firefox UI 测试|**生成将成功，但测试运行将失败**<br /><br /> 如果你有 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 功能包 2，并且为 Firefox 中的 Web 应用程序创建了编码 UI 测试项目，这些项目将无法在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]中打开。|我们建议仅在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 功能包 2 中管理这些项目。|  
+|[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]|**生成将失败**<br /><br /> 如果你有 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 功能包 2，并且为 Silverlight 应用程序创建了编码 UI 测试项目，这些项目将无法在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]中打开。|我们建议仅在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 功能包 2 中管理这些项目。|  
+|[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]|**生成将成功，但测试运行将失败**<br /><br /> 如果你有 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 功能包 2，并且为 Firefox 中的 Web 应用程序创建了编码 UI 测试项目，这些项目将无法在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]中打开。|我们建议仅在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 功能包 2 中管理这些项目。|  
 |已在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]中添加新的 UI 代码测试 API|**生成将失败**<br /><br /> 如果使用 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]中的新 UI 测试 API 创建编码 UI 测试，这些项目将无法在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]中打开。|只能在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中管理使用新 API 的项目。|  
 |在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 中，已在 csproj 文件的“Choose”语句内添加引用。 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]中，我们将使用 Feedback targets 文件来包含编码 UI 测试程序集引用。|在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]中，无法向创建于 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] （或 SP1）且不包含编码 UI 测试的测试项目添加编码 UI 测试。<br /><br /> 修复过程将增加 targets 文件和 Choose 语句。 如果测试项目中没有编码 UI 测试，该项目将被标记为已修复，并且当在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]中添加编码 UI 测试时，不会添加相应的引用。|必须使用 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 在同一解决方案中创建新的测试项目，并在其中添加新的编码 UI 测试。 或者，也可以将编码 UI 测试添加到 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 的测试项目中，并在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]中打开该项目。|  
   
 ##  <a name="UpgradingCodedUIFromVS2010_Update"></a> Visual Studio 2010 SP1 更新  
- 可从 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] Microsoft 下载中心 [下载为 Visual Studio 2012 和 Windows 8 提供兼容性支持的](http://www.microsoft.com/download/details.aspx?id=34677) SP1 更新，该更新也可用作 Visual Studio 更新。  
+ 可从 [Microsoft 下载中心](http://www.microsoft.com/download/details.aspx?id=34677)下载为 Visual Studio 2012 或更高版本以及 Windows 8 或更高版本提供兼容性支持的 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] SP1 更新，该更新也可用作 Visual Studio 更新。  
   
  应用更新以后，以下 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] SP1 编码 UI 测试工具功能将针对 Windows 8 有所改进：  
   
@@ -86,4 +69,3 @@ ms.lasthandoff: 05/13/2017
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
  [通过现有操作录制生成编码的 UI 测试](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)   
  [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

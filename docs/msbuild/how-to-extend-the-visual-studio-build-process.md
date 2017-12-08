@@ -1,44 +1,45 @@
 ---
 title: "如何：扩展 Visual Studio 生成过程 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, DependsOn 属性"
-  - "MSBuild, 扩展 Visual Studio 生成"
-  - "MSBuild, 重写 DependsOn 属性"
-  - "MSBuild, 重写预定义目标"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, overriding predefined targets
+- MSBuild, overriding DependsOn properties
+- MSBuild, extending Visual Studio builds
+- MSBuild, DependsOn properties
 ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: a87b97946e3b0c45b00bdfe00a4da23c266605c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：扩展 Visual Studio 生成过程
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程由导入到项目文件中的一系列 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 文件定义。  可以对这些导入文件中的 Microsoft.Common.targets 进行扩展，以便允许您在生成过程的几个点运行自定义任务。  本主题介绍可用于扩展 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程的两个方法：  
+# <a name="how-to-extend-the-visual-studio-build-process"></a>如何：扩展 Visual Studio 生成过程
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程由导入到项目文件中的一系列 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 文件定义。 可扩展其中一个导入文件 Microsoft.Common.targets，以便在生成过程中的几个点上运行自定义任务。 本主题介绍两种可用于扩展 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程的方法：  
   
--   覆盖 Microsoft.Common.targets 中定义的特定预定义目标。  
+-   重写 Microsoft.Common.targets 中定义的特定预定义目标。  
   
--   覆盖 Microsoft.Common.targets 中定义的“DependsOn”属性。  
+-   重写 Microsoft.Common.targets 中定义的“DependsOn”属性。  
   
-## 覆盖预定义的目标  
- Microsoft.Common.targets 文件包含一组预定义的空目标，在生成过程中某些主目标的前后会调用这些空目标。  例如，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 调用主要 `CoreBuild` 目标之前的 `BeforeBuild` 目标，以及 `CoreBuild` 目标之后的 `AfterBuild` 目标。  默认情况下，Microsoft.Common.targets 中的空目标不执行任何操作，但是，您可以在导入 Microsoft.Common.targets 的项目文件中定义所需目标，从而重写目标的默认行为。  通过此方法，您可以使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务加强对生成过程的控制。  
+## <a name="overriding-predefined-targets"></a>重写预定义目标  
+ Microsoft.Common.targets 文件包含一组预定义的空目标，会在生成过程中调用一些主要目标之前和之后调用这些空目标。 例如，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 会在主 `CoreBuild` 目标和 `AfterBuild` 目标之前和 `CoreBuild` 目标之后调用 `BeforeBuild`。 Microsoft.Common.targets 中的空目标默认不执行任何操作，但可通过定义导入 Microsoft.Common.targets 的项目文件中所需的目标，重写这些空目标的默认行为。 通过执行此操作，可以使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务，更好地控制生成过程。  
   
-#### 覆盖预定义的目标  
+#### <a name="to-override-a-predefined-target"></a>重写预定义的目标  
   
-1.  在 Microsoft.Common.targets 中识别要覆盖的预定义目标。  有关可安全覆盖的目标的完整列表，请参见下表。  
+1.  标识 Microsoft.Common.targets 中需要重写的预定义目标。 请参阅下表，了解可安全重写的目标的完整列表。  
   
-2.  在项目文件的末尾定义一个或多个目标，目标后面紧跟着 `</Project>` 标记。  例如：  
+2.  在项目文件末尾（紧接在 `</Project>` 标记之前）定义一个或多个目标。 例如：  
   
-    ```  
+    ```xml  
     <Project>  
         ...  
         <Target Name="BeforeBuild">  
@@ -52,30 +53,30 @@ caps.handback.revision: 8
   
 3.  生成项目文件。  
   
- 下表显示了 Microsoft.Common.targets 中可以安全覆盖的所有目标。  
+ 下表显示 Microsoft.Common.targets 中可以安全重写的所有目标。  
   
-|Target Name|说明|  
-|-----------------|--------|  
-|`BeforeCompile`, `AfterCompile`|在其中的一个目标中插入的任务将在核心编译完成之前或之后运行。  多数自定义在这两个目标之一中完成。|  
-|`BeforeBuild`, `AfterBuild`|在其中的一个目标中插入的任务将在生成中的其他内容之前或之后运行。 **Note:**  `BeforeBuild` 和 `AfterBuild` 目标已在多数项目文件末尾的注释中定义。  这样，您就可以轻松地将预先生成事件和后期生成事件添加到项目文件中。|  
-|`BeforeRebuild`, `AfterRebuild`|在其中的一个目标中插入的任务将在调用内核重新生成功能之前或之后运行。  在 Microsoft.Common.targets 中目标执行顺序是：`BeforeRebuild`、`Clean`、`Build`、`AfterRebuild`。|  
-|`BeforeClean`, `AfterClean`|在其中的一个目标中插入的任务将在调用内核清除功能之前或之后运行。|  
-|`BeforePublish`, `AfterPublish`|在其中的一个目标中插入的任务将在调用内核发布功能之前或之后运行。|  
-|`BeforeResolveReference`, `AfterResolveReferences`|在其中的一个目标中插入的任务将在解析程序集引用之前或之后运行。|  
-|`BeforeResGen`, `AfterResGen`|在其中的一个目标中插入的任务将在生成资源之前或之后运行。|  
+|Target Name|描述|  
+|-----------------|-----------------|  
+|`BeforeCompile`, `AfterCompile`|插入到这些目标之一中的任务，在完成内核编译之前或之后运行。 大多数自定义均在这两个目标之一中完成。|  
+|`BeforeBuild`, `AfterBuild`|插入到这些目标之一中的任务，在生成中所有其他任务之前或之后运行。 注意：`BeforeBuild` 和 `AfterBuild` 目标已在大多数项目文件末尾的注释中定义。 以便轻松将预先生成和后期生成的事件添加到项目文件中。|  
+|`BeforeRebuild`, `AfterRebuild`|插入到这些目标之一中的任务，在调用内核重新生成功能之前或之后运行。 Microsoft.Common.targets 中的目标执行顺序是：`BeforeRebuild`、`Clean`、`Build`、`AfterRebuild`。|  
+|`BeforeClean`, `AfterClean`|插入到这些目标之一中的任务，在调用内核清理功能之前或之后运行。|  
+|`BeforePublish`, `AfterPublish`|插入到这些目标之一中的任务，在调用内核发布功能之前或之后运行。|  
+|`BeforeResolveReference`, `AfterResolveReferences`|插入到这些目标之一中的任务，在解析程序集引用之前或之后运行。|  
+|`BeforeResGen`, `AfterResGen`|插入到这些目标之一中的任务，在生成资源之前或之后运行。|  
   
-## 覆盖“DependsOn”属性  
- 重写预定义目标是一种扩展生成过程的简便方法，但是，由于 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是按顺序计算目标定义的，因此，您无法阻止导入您的项目的其他项目重写您已经重写的目标。  例如，当导入所有其他项目之后，生成过程会使用项目文件中定义的最后一个 `AfterBuild` 目标。  
+## <a name="overriding-dependson-properties"></a>重写“DependsOn”属性  
+ 重写预定义的目标是一种用于扩展生成过程的简单方法，但由于 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 按顺序计算目标的定义，任何方法都无法阻止已导入你的项目的另一个项目重写你已重写的目标。 因此，例如，在导入所有其他项目后，会在生成过程中使用项目文件中定义的最后一个 `AfterBuild` 目标。  
   
- 可以覆盖整个 Microsoft.Common.targets 文件的 `DependsOnTargets` 特性中使用的“DependsOn”属性，以防止目标的意外覆盖。  例如，`Build` 目标包含值为 `"$(BuildDependsOn)"` 的 `DependsOnTargets` 特性。  请考虑：  
+ 通过重写在整个 Microsoft.Common.targets 文件的 `DependsOnTargets` 特性中使用的“DependsOn”属性，可防止目标被意外重写。 例如，`Build` 目标包含 `"$(BuildDependsOn)"` 的 `DependsOnTargets` 属性值。 以此为例：  
   
-```  
+```xml  
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>  
 ```  
   
- 这一段 XML 代码表示，必须先运行 `BuildDependsOn` 属性中指定的所有目标，然后才能运行 `Build` 目标。  `BuildDependsOn` 属性定义为：  
+ 这一段 XML 指示运行 `Build` 目标之前，必须首先运行 `BuildDependsOn` 属性中指定的所有目标。 `BuildDependsOn` 属性的定义如下：  
   
-```  
+```xml  
 <PropertyGroup>  
     <BuildDependsOn>  
         BeforeBuild;  
@@ -85,9 +86,9 @@ caps.handback.revision: 8
 </PropertyGroup>  
 ```  
   
- 可以在项目文件的末尾声明另一个名为 `BuildDependsOn` 的属性，从而对此属性值进行覆盖。  将以前的 `BuildDependsOn` 属性包括在新属性中，便可以将新目标添加到目标列表的开头和结尾。  例如：  
+ 通过在项目文件末尾声明另一个名为 `BuildDependsOn` 的属性，可以重写此属性值。 通过在新属性中包括以前的 `BuildDependsOn` 属性，可以将新的目标添加到目标列表的开头和结尾。 例如：  
   
-```  
+```xml  
 <PropertyGroup>  
     <BuildDependsOn>  
         MyCustomTarget1;  
@@ -104,27 +105,27 @@ caps.handback.revision: 8
 </Target>  
 ```  
   
- 导入项目文件的项目可以覆盖这些属性，而不会覆盖您已进行的自定义。  
+ 导入你的项目文件的项目可以在不覆盖已实现的自定义的情况下重写这些属性。  
   
-#### 覆盖“DependsOn”属性  
+#### <a name="to-override-a-dependson-property"></a>重写“DependsOn”属性  
   
-1.  在 Microsoft.Common.targets 中识别要覆盖的预定义的“DependsOn”属性。  要了解常被覆盖的“DependsOn”属性的列表，请参见下表。  
+1.  标识 Microsoft.Common.targets 中需要重写的预定义“DependsOn”属性。 请参阅下表，获取经常重写的“DependsOn”属性列表。  
   
-2.  在项目文件末尾定义一个或多个属性的其他实例。  将原始属性（例如 `$(BuildDependsOn)`）包含在新属性中。  
+2.  在项目文件末尾定义一个或多个属性的另一个实例。 在新属性中包括原始属性，例如 `$(BuildDependsOn)`。  
   
 3.  在属性定义之前或之后定义自定义目标。  
   
 4.  生成项目文件。  
   
-### 通常被覆盖的“DependsOn”属性  
+### <a name="commonly-overridden-dependson-properties"></a>经常重写的“DependsOn”属性  
   
-|属性名|说明|  
-|---------|--------|  
-|`BuildDependsOn`|希望在整个生成过程之前或之后插入自定义目标时要覆盖的属性。|  
-|`CleanDependsOn`|希望清理自定义生成过程的输出时要覆盖的属性。|  
-|`CompileDependsOn`|希望在编译步骤之前或之后插入自定义过程时要覆盖的属性。|  
+|属性名|描述|  
+|-------------------|-----------------|  
+|`BuildDependsOn`|在要在整个生成过程之前或之后插入自定义目标的情况下，要重写的属性。|  
+|`CleanDependsOn`|在要从自定义生成过程中清理输出的情况下，要重写的属性。|  
+|`CompileDependsOn`|在要在编译步骤之前或之后插入自定义过程的情况下，要重写的属性。|  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 集成](../msbuild/visual-studio-integration-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [.Targets 文件](../msbuild/msbuild-dot-targets-files.md)

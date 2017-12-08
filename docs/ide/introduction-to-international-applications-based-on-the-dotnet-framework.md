@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -26,29 +25,15 @@ helpviewer_keywords:
 - resource files, fallback processes
 - user interface, culture setting
 ms.assetid: b0788993-e62d-4f68-8235-5f87b1d48525
-caps.latest.revision: 11
-author: kempb
-ms.author: kempb
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 5d04af26004b5915fcd373fda154ac79816e475c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2bfebe7cfcaff34742db902d50b6de424a6794ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>介绍基于 .NET Framework 的国际应用程序
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，世界通用的应用程序的创建包括两个部分：全球化（设计可以适应不同区域性的应用程序的过程）和本地化（为特定区域性转换资源的过程）。 有关为国际受众设计应用程序的常规信息，请参阅[开发全球通用应用程序的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)。  

@@ -1,27 +1,24 @@
 ---
 title: "在 Visual Studio 中设置 Python 代码格式 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3d0f1631-360b-45d4-a0cb-01c3c10d25f2
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 8d693278eb9d60d690e797d4e14163495239cd31
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 9d04c52a595014d06b38205913e3eb1cdd264019
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="formatting-python-code"></a>设置 Python 代码格式
 
 在 Visual Studio 中，可以快速重新设置代码格式以匹配预先配置的格式设置选项。
@@ -31,7 +28,7 @@ ms.lasthandoff: 07/18/2017
 
 通过“工具”>“选项”>“文本编辑器”>“Python”>“格式”及其嵌套选项卡设置选项，并且默认情况下设置为匹配 [PEP 8 样式指南](http://www.python.org/dev/peps/pep-0008/)的超集。 “常规”选项卡确定何时应用格式；本主题中介绍了设置其他三个选项卡。
 
-借助 [Visual Studio 中的 Python 支持](installation.md)，还可在“编辑”>“高级”菜单中添加有用的[“填充注释段落”](#fill-comment-paragraph-command)命令，如下所述。
+借助 [Visual Studio 中的 Python 支持](installation.md)，还可在**“编辑”>“高级”**菜单中添加有用的[“填充注释段落”](#fill-comment-paragraph-command)命令，如下所述。
 
 ## <a name="spacing"></a>间距
 

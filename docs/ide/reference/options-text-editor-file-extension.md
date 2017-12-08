@@ -4,42 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.toolsoptionspages.text_editor.file_extension
+f1_keywords: vs.toolsoptionspages.text_editor.file_extension
 helpviewer_keywords:
 - file extensions, associating to editor
 - Editing Experience
 - Options dialog box
 - Editing Experience, selecting
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 37e5b813482eae6c4d46051ed4b261594d9e5164
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 68c2565540d8b22d659b40d5cab4a443cac6439f
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="options-text-editor-file-extension"></a>选项，文本编辑器，文件扩展名
 通过此“选项”对话框，可以指定 Visual Studio 集成开发环境 (IDE) 对具有特定文件扩展名的所有文件的处理方式。 对于输入的每个“扩展名”，可以选择一个编辑体验。 这样便可选择在某种类型的哪些文档中打开 IDE 编辑器或设计器。 若要显示这些选项，请从“工具”菜单中选择“选项”，展开“文本编辑器”节点并选择“文件扩展名”。  
@@ -62,7 +45,7 @@ ms.lasthandoff: 05/24/2017
  **移除**  
  从扩展名列表中删除所选条目。  
   
- 扩展名列表  
+ **扩展名列表**  
  列出所有已指定编辑体验的扩展名。  
   
  将无扩展名文件映射到  

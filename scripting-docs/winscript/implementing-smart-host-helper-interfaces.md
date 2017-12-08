@@ -1,52 +1,55 @@
 ---
-title: "实现智能宿主帮助程序接口 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "智能宿主帮助程序接口, 实现"
+title: "实现智能主机帮助程序接口 | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Smart Host Helper Interfaces, implementing
 ms.assetid: b9c44246-4d4d-469e-91be-00c8f5796fa5
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ba571f6ad66855c44902e06467889e2cae5b4555
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
-# 实现智能宿主帮助程序接口
-因为它用于许多接口提供实现所需的智能承载，[IDebugDocumentHelper 接口](../winscript/reference/idebugdocumenthelper-interface.md) 接口极大地简化了创建有效的调试一个智能宿主任务。  
+# <a name="implementing-smart-host-helper-interfaces"></a>实现智能宿主帮助程序接口
+[IDebugDocumentHelper 接口](../winscript/reference/idebugdocumenthelper-interface.md)接口极大简化了为活动调试创建智能主机的任务，因为它提供了智能主机所需的许多接口的实现。  
   
- 使用 `IDebugDocumentHelper`，若要是一个智能宿主，宿主应用程序只必须执行下列三种操作：  
+ 如果为使用 `IDebugDocumentHelper` 的智能主机，主机应用程序必须执行下列三种操作：  
   
-1.  `CoCreate` 进程调试管理器，并使用 [IProcessDebugManager 接口](../winscript/reference/iprocessdebugmanager-interface.md) 接口向应用程序添加到可调试应用程序列表中。  
+1.  `CoCreate` 进程调试管理器，并使用 [IProcessDebugManager 接口](../winscript/reference/iprocessdebugmanager-interface.md) 接口将应用程序添加到可调试的应用程序列表中。  
   
-2.  使用 [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md) 方法，创建调试文档每个脚本对象的帮助器，。  确保文档名称，父文档，文本，并且，脚本块定义。  
+2.  使用 [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md) 方法创建每个脚本对象的调试文档帮助程序。 确保已定义文档名称、父文档、文本和脚本块。  
   
-3.  实现对象的 [IActiveScriptSiteDebug 接口](../winscript/reference/iactivescriptsitedebug-interface.md) 接口实现Active脚本是必需的\)的 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 界面\(ui\)。  在 `IActiveScriptSiteDebug` 接口完全委托的唯一重要方法帮助器。  
+3.  在实现 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 接口（活动脚本所需的接口）的对象上实现 [IActiveScriptSiteDebug 接口](../winscript/reference/iactivescriptsitedebug-interface.md)接口。 `IActiveScriptSiteDebug` 接口上唯一不常用的方法只需委托给帮助程序。  
   
- 或者，宿主可以实现 [IDebugDocumentHost 接口](../winscript/reference/idebugdocumenthost-interface.md) 接口，如果需要使用语法颜色的其他控件，文档上下文创建和其他扩展功能。  
+ 如果主机需要进一步控制语法颜色、文档上下文创建和其他扩展功能，则该主机可以实现 [IDebugDocumentHost 接口](../winscript/reference/idebugdocumenthost-interface.md)接口（可选）。  
   
- 在智能宿主帮助器的主要限制是它可以内容更改或缩小仅的处理文档，并在添加之后\(尽管文档中展开\)。  对于许多智能宿主，但是，它提供的功能正是必需的。  
+ 智能主机帮助程序的主要限制是，它只能处理添加后其内容更改或压缩的文档（尽管文档可以扩展）。 但是，对于许多智能主机来说，它提供的功能正好是所需要的。  
   
- 以下各节将更详细地说明了每个步骤。  
+ 以下部分将更详细介绍每个步骤。  
   
-## 创建一个应用程序对象  
- 才能使用智能宿主帮助器，创建 [IDebugApplication 接口](../winscript/reference/idebugapplication-interface.md) 对象表示您在调试器的应用程序是必需的。  
+## <a name="create-an-application-object"></a>创建应用程序对象  
+ 在使用智能主机帮助程序之前，需要创建 [IDebugApplication 接口](../winscript/reference/idebugapplication-interface.md)对象以在调试程序中表示你的应用程序。  
   
-#### 创建应用程序对象  
+#### <a name="to-create-an-application-object"></a>创建应用程序对象  
   
-1.  创建处理例程调试使用 `CoCreateInstance`管理器的。  
+1.  使用 `CoCreateInstance` 创建进程调试管理器的实例。  
   
 2.  调用 [IProcessDebugManager::CreateApplication](../winscript/reference/iprocessdebugmanager-createapplication.md)。  
   
-3.  使用 [IDebugApplication::SetName](../winscript/reference/idebugapplication-setname.md)，将应用程序的名称。  
+3.  使用 [IDebugApplication::SetName](../winscript/reference/idebugapplication-setname.md) 在应用程序上设置名称。  
   
-4.  使用 [IProcessDebugManager::AddApplication](../winscript/reference/iprocessdebugmanager-addapplication.md)，向可调试应用程序中列出的应用程序对象。  
+4.  使用 [IProcessDebugManager::AddApplication](../winscript/reference/iprocessdebugmanager-addapplication.md) 将应用程序对象添加到可调试的应用程序的列表中。  
   
-     在下面的代码概括了处理，但是，它不包含错误检查或其他可靠编程技术。  
+     下面的代码概述了此过程，但不包括错误检查或其他可靠的编程技术。  
   
     ```  
     CoCreateInstance(CLSID_ProcessDebugManager, NULL,  
@@ -58,47 +61,47 @@ caps.handback.revision: 8
     g_ppdm->AddApplication(g_pda, &g_dwAppCookie);  
     ```  
   
-## 使用IDebugDocumentHelper  
+## <a name="using-idebugdocumenthelper"></a>使用 IDebugDocumentHelper  
   
-#### 使用帮助器\(步骤最少的顺序\)  
+#### <a name="to-use-the-helper-minimal-sequence-of-steps"></a>使用帮助程序（最少的步骤顺序）  
   
-1.  对于每个主机文档，创建使用 [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md)的帮助器。  
+1.  对于每个主机的文档，使用 [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md) 创建帮助程序。  
   
-2.  调用帮助器的 [IDebugDocumentHelper::Init](../winscript/reference/idebugdocumenthelper-init.md)，为该名称，文档属性，依此类推。  
+2.  调用帮助程序上的 [IDebugDocumentHelper::Init](../winscript/reference/idebugdocumenthelper-init.md)，提供名称、文档属性等。  
   
-3.  调用与父帮助器 [IDebugDocumentHelper::Attach](../winscript/reference/idebugdocumenthelper-attach.md) 文档\(或NULL中，如果文档是根\)定义文档的位置在树并使其可见到调试器。  
+3.  使用文档（或者，如果文档是根，则为 NULL）的父级帮助程序调用 [IDebugDocumentHelper::Attach](../winscript/reference/idebugdocumenthelper-attach.md)，以定义文档在树中的位置并使其对调试程序可见。  
   
-4.  调用 [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) 或 [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md) 定义文档中的文本。  \(这些可多次调用，则文档增量下载，以免浏览器。\)  
+4.  调用 [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) 或 [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md) 来定义该文档的文本。 （如果像浏览器那样以递增方式下载文档，则可以多次调用。）  
   
-5.  调用 [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md) 定义每个脚本块的大小和关联的脚本引擎。  
+5.  调用 [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md)定义每个脚本块和关联的脚本引擎的范围。  
   
-## 实现IActiveScriptSiteDebug  
- 若要实现 [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)，获取帮助器与给定站点相对应，获取开始然后文档特定源上下文的偏移量，如下所示：  
+## <a name="implementing-iactivescriptsitedebug"></a>实现 IActiveScriptSiteDebug  
+ 若要实现 [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)，请获取与给定站点相对应的帮助程序，然后获取给定源上下文的起始文档偏移量，如下所示：  
   
 ```  
 pddh->GetScriptBlockInfo(dwSourceContext, NULL, &ulStartPos, NULL);  
 ```  
   
- 接下来，使用帮助器创建特定字符的新文档上下文偏移量：  
+ 接下来，使用帮助程序为给定的字符偏移量创建新的文档上下文：  
   
 ```  
 pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew);  
 ```  
   
- 若要实现 [IActiveScriptSiteDebug::GetRootApplicationNode](../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)，请调用 `IDebugApplication::GetRootNode` \(继承自 [IRemoteDebugApplication::GetRootNode](../winscript/reference/iremotedebugapplication-getrootnode.md)\)。  
+ 若要实现 [IActiveScriptSiteDebug::GetRootApplicationNode](../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)，只需调用 `IDebugApplication::GetRootNode`（继承自 [IRemoteDebugApplication::GetRootNode](../winscript/reference/iremotedebugapplication-getrootnode.md)）。  
   
- 若要实现 [IDebugDocumentHelper::GetDebugApplicationNode](../winscript/reference/idebugdocumenthelper-getdebugapplicationnode.md)，则返回最初创建使用进程内调试管理器的 `IDebugApplication`。  
+ 若要实现 [IDebugDocumentHelper::GetDebugApplicationNode](../winscript/reference/idebugdocumenthelper-getdebugapplicationnode.md)，只需返回最初使用进程调试管理器创建的 `IDebugApplication`。  
   
-## 选项IDebugDocumentHost接口  
- 宿主可提供 [IDebugDocumentHost 接口](../winscript/reference/idebugdocumenthost-interface.md) 的实现使用 [IDebugDocumentHelper::SetDebugDocumentHost](../winscript/reference/idebugdocumenthelper-setdebugdocumenthost.md) 为其提供给帮助器的其他控件。  这是宿主接口允许您所做的一些主要操作：  
+## <a name="the-optional-idebugdocumenthost-interface"></a>可选的 IDebugDocumentHost 接口  
+ 主机可以使用 [IDebugDocumentHelper::SetDebugDocumentHost](../winscript/reference/idebugdocumenthelper-setdebugdocumenthost.md) 提供 [IDebugDocumentHost 接口](../winscript/reference/idebugdocumenthost-interface.md)的实现，以提供它对帮助程序的额外控制。 以下是主机接口允许执行的一些重要事项：  
   
--   添加文本使用 [IDebugDocumentHelper::AddDeferredText](../winscript/reference/idebugdocumenthelper-adddeferredtext.md)，以便宿主无需立即提供实际字符。  当字符实际上是必需的，帮助程序将调用宿主的 [IDebugDocumentHost::GetDeferredText](../winscript/reference/idebugdocumenthost-getdeferredtext.md)。  
+-   使用 [IDebugDocumentHelper::AddDeferredText](../winscript/reference/idebugdocumenthelper-adddeferredtext.md) 添加文本，以便主机不需要立即提供实际字符。 当真正需要字符时，帮助程序将调用主机上的 [IDebugDocumentHost::GetDeferredText](../winscript/reference/idebugdocumenthost-getdeferredtext.md)。  
   
--   重写帮助器提供默认值的语法着色。  如果宿主返回 `E_NOTIMPL`，帮助器调用 [IDebugDocumentHost::GetScriptTextAttributes](../winscript/reference/idebugdocumenthost-getscripttextattributes.md) 确定字符范围的着色，转而依赖于其默认实现。  
+-   替代由帮助程序提供的默认语法着色。 帮助程序调用 [IDebugDocumentHost::GetScriptTextAttribute](../winscript/reference/idebugdocumenthost-getscripttextattributes.md) 来确定一系列字符的着色；如果主机返回 `E_NOTIMPL`，则回退到其默认实现。  
   
--   提供控件未知对于文档帮助器创建的上下文通过实现 [IDebugDocumentHost::OnCreateDocumentContext](../winscript/reference/idebugdocumenthost-oncreatedocumentcontext.md)。  这允许宿主重写默认值的功能文档上下文实现。  
+-   通过实现 [IDebugDocumentHost::OnCreateDocumentContext](../winscript/reference/idebugdocumenthost-oncreatedocumentcontext.md)，为帮助程序创建的文档上下文提供未知的控制。 从而使主机能够替代默认文档上下文实现的功能。  
   
--   提供文档提供在文件系统的路径名称。  一些调试用户界面使用这允许用户编辑和保存到文档的更改。  在文档保存后，[IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) 调用以通知宿主。  
+-   为文档提供文件系统中的路径名称。 某些调试 UI 使用它来允许用户编辑和保存对文档所做的更改。 调用 [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md)，以在文档保存后通知主机。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [活动脚本调试概述](../winscript/active-script-debugging-overview.md)

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 07/11/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,34 +12,17 @@ f1_keywords:
 - vs.cv.overview
 - vs.cv.performance.gettingstarted
 - vs.cv.gettingstarted
-helpviewer_keywords:
-- Concurrency Visualizer, Concurrency Visualizer
+helpviewer_keywords: Concurrency Visualizer, Concurrency Visualizer
 ms.assetid: ae5879a0-1e1a-455a-ba72-148e57f59289
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 9b76decbfcb314733d0b195baeda24474e9574d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
-ms.openlocfilehash: 01237b9565a05d9f8bac0973af66a0f90e927ef0
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/13/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="concurrency-visualizer"></a>并发可视化工具
 > [!NOTE]
@@ -72,4 +54,5 @@ ms.lasthandoff: 07/13/2017
 |[并发可视化工具命令行实用工具 (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|描述如何使用并发可视化工具命令行实用程序 (CVCollectionCmd.exe) 在未安装 Visual Studio 的计算机上收集并处理跟踪信息。|  
   
 ## <a name="see-also"></a>另请参阅  
- [Visual Studio 中的分析](../profiling/index.md) [分析功能简介](../profiling/profiling-feature-tour.md)
+ [使用 Visual Studio 分析](../profiling/index.md)  
+ [分析功能简介](../profiling/profiling-feature-tour.md)

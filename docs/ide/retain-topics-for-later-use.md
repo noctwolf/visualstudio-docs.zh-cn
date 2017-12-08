@@ -1,35 +1,25 @@
 ---
-title: "保留主题供以后使用 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "hv_favorites"
-helpviewer_keywords: 
-  - "将主题加为书签 [Help Viewer 2.0]"
-  - "“收藏夹”选项卡 [Help Viewer 2.0]"
-  - "Help Viewer 2.0, 将主题加为书签"
-  - "Help Viewer 2.0, 复制主题"
-  - "Help Viewer 2.0, “收藏夹”选项卡"
-ms.assetid: f0a4c657-001d-4604-a403-d46f15782724
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+redirect_url: /visualstudio/ide/microsoft-help-viewer
+ms.openlocfilehash: 7727904a32064fb2758236f98869cea0e96a38f6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/07/2017
 ---
-# 保留主题供以后使用
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-当您找到一个有用的主题时，您可以稍后通过将它复制并粘贴到文本文件、打印它、或保持它为收藏夹访问它。  例如，您可以保留已打开主题的快捷菜单的内容，选择 **“复制”**、 **“打印”**、**“打印预览”**和 **“添加到收藏夹”** 选项保留内容以供将来使用。  
+title: "保留主题供以后使用 | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "article" f1_keywords: 
+  - "hv_favorites" helpviewer_keywords: 
+  - "Help Viewer，将主题加为书签"
+  - "Help Viewer，复制主题"
+  - “Help Viewer，“收藏夹”选项卡"
+  - "将主题加为书签 [Help Viewer]"
+  - "“收藏夹”选项卡 [Help Viewer]" ms.assetid: f0a4c657-001d-4604-a403-d46f15782724 caps.latest.revision: 8 author: "gewarren" ms.author: "gewarren" manager: ghogen
+---
+# <a name="retain-topics-for-later-use"></a>保留主题供以后使用
+如果找到一个有用的主题，可以将它复制并粘贴到文本文件中、进行打印或保存到收藏夹中，以供日后访问。 例如，可以打开主题的快捷菜单，选择“复制”、“打印”、“打印预览”和“添加到收藏夹”选项，以便保留内容供以后使用。  
   
-## 使用“收藏夹”选项卡  
- 在**“收藏夹”**选项卡中，您可以打开任何项的快捷菜单，并对其进行重命名、删除或将项组织到文件夹。  
+## <a name="using-the-favorites-tab"></a>使用“收藏夹”选项卡  
+ 在“收藏夹”选项卡上，可以打开任意条目的快捷菜单，然后重命名、删除条目或将条目整理到文件夹中。  
   
-## 请参阅  
- [快捷键（帮助查看器）](../ide/shortcut-keys-help-viewer.md)
+## <a name="see-also"></a>另请参阅  
+ [快捷键 (Help Viewer)](../ide/shortcut-keys-help-viewer.md)

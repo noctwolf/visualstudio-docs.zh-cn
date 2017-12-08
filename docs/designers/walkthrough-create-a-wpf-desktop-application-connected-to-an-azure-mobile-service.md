@@ -1,30 +1,32 @@
 ---
+redirect_url: /azure/app-service-mobile/app-service-mobile-windows-store-dotnet-get-started
 title: "演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 10/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8d42620f-553b-4b04-a38b-f6b306d73a50
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+dev_langs:
+- csharp
+- vb
+ms.openlocfilehash: 8bf11425439387a13db2bb77f0ce798bef076461
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: d21c7fcc7c22c3a260d79856c66bb15d5166c444
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序
 Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程序，该程序使用 Azure 移动服务来存储和提供数据。  
   
-##  <a name="Requirements"></a> 先决条件  
- 若要完成本演练，需要满足以下条件：  
+## <a name="prerequisites"></a>先决条件  
+若要完成本演练，需要满足以下条件：  
   
 -   Visual Studio 2017 或支持 WPF 开发的任何版本。  
   
@@ -41,19 +43,19 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 1.  在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
   
-2.  在“新建项目”  对话框框中，展开“Visual C#”  或“Visual Basic”  节点，再选择“Windows”  节点，然后展开“Windows”  节点并选择“经典桌面”  节点。  
+2.  在“新建项目”对话框中，展开“Visual C#”或“Visual Basic”节点，然后选择“Windows 经典桌面”节点**。  
   
-3.  在模板列表中，选择“WPF 应用程序”  模板。  
+3.  在模板列表中，选择“WPF 应用 (.NET Framework)”模板。  
   
 4.  在“新建项目”  文本框中，键入 `WPFQuickStart`，然后选择“确定”  按钮。  
   
-     创建项目并且已将项目文件添加到“解决方案资源管理器” 后，将显示名为 **MainWindow.xaml** 的默认应用程序窗口的设计器。  
+     随即项目创建并将项目文件添加到“解决方案资源管理器”中。 显示名为“MainWindow.xaml”的默认应用程序窗口的设计器。  
   
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>若要添加对 Windows Azure Mobile Services SDK 的引用  
   
-1.  在“解决方案资源管理器” 中，打开“引用”  节点的快捷菜单，然后选择“管理 NuGet 包” 。  
+1.  在“解决方案资源管理器”中，打开“引用”节点的快捷菜单，然后选择“管理 NuGet 包...”。  
   
-2.  在“NuGet 程序包管理器”中，选择“搜索”字段并输入 `mobileservices`。  
+2.  在“NuGet 包管理器”中，选择顶部附近的”浏览“，然后在搜索框中输入 `mobileservices`。  
   
 3.  在左窗格中，选择“WindowsAzure.MobileServices” ，然后在右窗格中选择“安装”  按钮。  
   
@@ -68,7 +70,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
     >  如果不同意许可条款，请选择“我拒绝” 按钮。 你将无法完成本演练的其余部分。  
   
 ## <a name="create-the-user-interface"></a>创建用户界面  
- 下一步是创建应用程序的用户界面。 首先创建一个可重用用户控件，用于显示两个标准的并排窗格布局。 将用户控件添加到应用程序主窗口，并添加控件以输入和显示数据，然后编写一些代码来定义与移动服务后端的交互。  
+下一步是创建应用程序的用户界面。 首先创建一个可重用用户控件，用于显示两个标准的并排窗格布局。 将用户控件添加到应用程序主窗口，并添加控件以输入和显示数据，然后编写一些代码来定义与移动服务后端的交互。  
   
 #### <a name="to-add-a-user-control"></a>要添加用户控件  
   
@@ -85,17 +87,17 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
 5.  在设计器下方窗格中，选择 `<Grid>` 和 `</Grid>` 标记，并用它们替换下面的 XAML 代码：  
   
     ```xaml  
-    <Grid VerticalAlignment="Top">  
-            <StackPanel Orientation="Horizontal">  
-                <Border BorderThickness="0,0,1,0" BorderBrush="DarkGray" Margin="0,10" MinWidth="70">  
-                    <TextBlock Text="{Binding Number}" FontSize="45" Foreground="DarkGray" Margin="20,0"/>  
-                </Border>  
-                <StackPanel>  
-                    <TextBlock Text="{Binding Title}" Margin="10,10,0,0" FontSize="16" FontWeight="Bold" />  
-                    <TextBlock Text="{Binding Description}" Margin="10,0,0,0" TextWrapping="Wrap" MaxWidth="500" />  
-                </StackPanel>  
-            </StackPanel>  
-        </Grid>  
+    <Grid VerticalAlignment="Top">
+        <StackPanel Orientation="Horizontal">
+            <Border BorderThickness="0,0,1,0" BorderBrush="DarkGray" Margin="0,10" MinWidth="70">
+                <TextBlock Text="{Binding Number}" FontSize="45" Foreground="DarkGray" Margin="20,0"/>
+            </Border>
+            <StackPanel>
+                <TextBlock Text="{Binding Title}" Margin="10,10,0,0" FontSize="16" FontWeight="Bold" />
+                <TextBlock Text="{Binding Description}" Margin="10,0,0,0" TextWrapping="Wrap" MaxWidth="500" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>  
     ```  
   
      此 XAML 代码将创建具有数字、标题和说明字段占位符的可重用布局。 在运行时可将占位符替换为下图中所示的文本。  
@@ -104,7 +106,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 6.  在“解决方案资源管理器” 中，展开“QuickStartTask.xaml”  节点，然后打开“QuickStartTask.xaml.cs”  或“QuickStartTask.xaml.vb”  文件。  
   
-7.  在代码编辑器中，将 `namespace WPFQuickStart.Common` (C#) 命名空间或 `Public Class QuickStartTask` (VB) 方法替换为以下代码：  
+7.  在代码编辑器中，将 `namespace WPFQuickStart.Common` (C#) 命名空间或 `Public Class QuickStartTask` (VB) 类替换为以下代码：  
   
     ```csharp  
     namespace WPFQuickStart.Common  
@@ -225,62 +227,52 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
 5.  选择 `<Grid>` 和 `</Grid>` 标记，并用它们替换下面的 XAML 代码：  
   
     ```xaml  
-    <Grid>  
-  
-            <Grid Margin="50,50,10,10">  
-                <Grid.ColumnDefinitions>  
-                    <ColumnDefinition Width="*" />  
-                    <ColumnDefinition Width="*" />  
-                </Grid.ColumnDefinitions>  
-                <Grid.RowDefinitions>  
-                    <RowDefinition Height="Auto" />  
-                    <RowDefinition Height="*" />  
-                </Grid.RowDefinitions>  
-  
-                <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,20">  
-                    <StackPanel>  
-                        <TextBlock Foreground="#0094ff" FontFamily="Segoe UI Light" Margin="0,0,0,6">MICROSOFT AZURE MOBILE SERVICES</TextBlock>  
-                        <TextBlock Foreground="Gray" FontFamily="Segoe UI Light" FontSize="45" ><Run Text="My Todo List"/></TextBlock>  
-                    </StackPanel>  
-                </Grid>  
-  
-                <Grid Grid.Row="1">  
-                    <StackPanel>  
-  
-                        <local:QuickStartTask Number="1" Title="Insert a TodoItem" Description="Enter some text below and click Save to insert a new todo item into the list." />  
-  
-                        <StackPanel Orientation="Horizontal" Margin="72,0,0,0">  
-                            <TextBox x:Name="TodoInput" Margin="5" MinWidth="300"/>  
-                            <Button x:Name="ButtonSave" Click="ButtonSave_Click" Content="Save"/>  
-                        </StackPanel>  
-  
-                    </StackPanel>  
-                </Grid>  
-  
-                <Grid Grid.Row="1" Grid.Column="1">  
-                    <Grid.RowDefinitions>  
-                        <RowDefinition Height="Auto" />  
-                        <RowDefinition />  
-                    </Grid.RowDefinitions>  
-                    <StackPanel>  
-                        <local:QuickStartTask Number="2" Title="Query and Update Data" Description="Click the Refresh button to load the unfinished TodoItems from the Azure Mobile Service. Select the checkbox to mark a ToDo item as complete and update the list." />  
-                        <Button Margin="72,0,0,0" Name="ButtonRefresh" Click="ButtonRefresh_Click">Refresh</Button>  
-                    </StackPanel>  
-  
-                    <ListView Name="ListItems" Margin="62,10,0,0" Grid.Row="1">  
-                        <ListView.ItemTemplate>  
-                            <DataTemplate>  
-                                <StackPanel Orientation="Horizontal">  
-                                    <CheckBox Name="CheckBoxComplete" IsChecked="{Binding Complete, Mode=TwoWay}" Checked="CheckBoxComplete_Checked" Content="{Binding Text}" Margin="10,5" VerticalAlignment="Center"/>  
-                                </StackPanel>  
-                            </DataTemplate>  
-                        </ListView.ItemTemplate>  
-                    </ListView>  
-  
-                </Grid>  
-  
-            </Grid>  
-        </Grid>  
+    <Grid>
+        <Grid Margin="50,50,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,20">
+                <StackPanel>
+                    <TextBlock Foreground="#0094ff" FontFamily="Segoe UI Light" Margin="0,0,0,6">MICROSOFT AZURE MOBILE SERVICES</TextBlock>
+                    <TextBlock Foreground="Gray" FontFamily="Segoe UI Light" FontSize="45" ><Run Text="My Todo List"/></TextBlock>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackPanel>
+                    <local:QuickStartTask Number="1" Title="Insert a TodoItem" Description="Enter some text below and click Save to insert a new todo item into the list." />
+                    <StackPanel Orientation="Horizontal" Margin="72,0,0,0">
+                        <TextBox x:Name="TodoInput" Margin="5" MinWidth="300"/>
+                        <Button x:Name="ButtonSave" Click="ButtonSave_Click" Content="Save"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <StackPanel>
+                    <local:QuickStartTask Number="2" Title="Query and Update Data" Description="Click the Refresh button to load the unfinished TodoItems from the Azure Mobile Service. Select the checkbox to mark a ToDo item as complete and update the list." />
+                    <Button Margin="72,0,0,0" Name="ButtonRefresh" Click="ButtonRefresh_Click">Refresh</Button>
+                </StackPanel>
+                <ListView Name="ListItems" Margin="62,10,0,0" Grid.Row="1">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <CheckBox Name="CheckBoxComplete" IsChecked="{Binding Complete, Mode=TwoWay}" Checked="CheckBoxComplete_Checked" Content="{Binding Text}" Margin="10,5" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </Grid>
+    </Grid>  
     ```  
   
      请注意，所做的更改会反映在设计窗口中。 再次说明，你还可以通过从“工具箱”  窗口添加控件，并设置“属性”  窗口中的属性来定义用户界面。 可以在设计器中完成的任何操作也可以在 XAML 代码中完成，反之亦然。  
@@ -486,7 +478,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
     > [!NOTE]
     >  你可能需要更改该 URL 的数字部分。 Microsoft Azure 要求每个移动服务的 URL 均唯一。  
   
-     这会将服务 URL 设置为 *https://wpfquickstart01.azure-mobile.net/*。  
+    这会将服务 URL 设置为 *https://wpfquickstart01.azure-mobile.net/*。  
   
 4.  在“数据库”  列表中，选择一个数据库。 由于此应用程序可能不常用，因此建议选择“创建免费的 20MB SQL 数据库”选项，或选择已与订阅关联的免费数据库。  
   
@@ -549,7 +541,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 #### <a name="to-run-the-application"></a>要运行应用程序  
   
-1.  在菜单栏上，依次选择“调试” 、“启动调试”  （或按 F5）。  
+1.  在菜单栏上，依次选择“调试”、“开始调试“（或按”F5“）。  
   
 2.  在“新建项目”  文本框中，输入 `Do something`，然后选择“确定”  按钮。  
   

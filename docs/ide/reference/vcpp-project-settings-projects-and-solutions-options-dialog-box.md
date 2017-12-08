@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 08/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.Projects.VCBuild
+f1_keywords: VS.ToolsOptionsPages.Projects.VCBuild
 helpviewer_keywords:
 - builds [Visual Studio], logs
 - build process [C++]
@@ -19,31 +17,15 @@ helpviewer_keywords:
 - extensions, files built by C or C++ compiler
 - BuildLog.htm
 ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: b0ccfd3d526cee44a30c8d4c33030f2eb2a585e5
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: 2581fdecd9a26c8d4500f83b9abd0e1f967e2ee6
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”
 使用此对话框，可以定义与记录、性能和支持文件类型相关的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 生成和项目设置。  
@@ -53,7 +35,6 @@ ms.lasthandoff: 09/26/2017
 1.  在 **“工具”** 菜单上，单击 **“选项”**。  
   
 2.  依次选择“项目和解决方案”和“VC++ 项目设置”。  
-  
  
 ## <a name="build-logging"></a>生成日志  
  **是**  
@@ -95,17 +76,13 @@ ms.lasthandoff: 09/26/2017
  **显示所有文件**  
   将“解决方案资源管理器”配置为显示项目中的文件和磁盘上项目文件夹中的文件。  
 
-
 ## <a name="enable-project-caching"></a>启用项目缓存
-“是”选项使 Visual Studio 能缓存项目数据，以便下次打开该项目时，它能直接加载缓存的数据，而无需通过项目文件重新对其计算。 使用缓存数据可显著缩短项目加载时间。   
+**是**  
+使 Visual Studio 能缓存项目数据，以便下次打开该项目时，它能直接加载缓存的数据，而无需通过项目文件重新对其计算。 使用缓存数据可显著缩短项目加载时间。   
 
-“否”选项表示请勿使用缓存的项目数据。 每次加载项目时分析项目文件。
+**否**  
+不使用缓存的项目数据。 每次加载项目时分析项目文件。
 
-
-  
-
-  
-#
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [生成 C/C++ 程序](/cpp/build/building-c-cpp-programs)   
  [C/C++ 生成参考](/cpp/build/reference/c-cpp-building-reference)

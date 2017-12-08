@@ -8,16 +8,15 @@ ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ebaacfba-12a1-45da-9817-c0937ca38acc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 2f971942d9ca913f030ab703253492acb9155424
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a9120161c887d0ac794ecdd8f9c0fd47e0edc452
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>欢迎使用针对 Visual Studio 的 R 工具
 
@@ -37,6 +36,6 @@ ms.lasthandoff: 10/31/2017
 
 RTVS 支持 CRAN R 和 Microsoft R 分发，其中包括与 SQL Server 2016 一起分发的 R 版本。 以下链接提供有关不同 Microsoft R 分发的详细信息：
 
-* [Microsoft R Open](https://mran.microsoft.com/download/)
-* [Microsoft R Client](https://msdn.microsoft.com/microsoft-r/r-client-get-started)
-* [Microsoft R Server](https://www.microsoft.com/server-cloud/products/r-server/)
+- [Microsoft R Open](https://mran.microsoft.com/download/)
+- [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)
+- [Microsoft Machine Learning Server（以前称为 R Server）](/machine-learning-server/)

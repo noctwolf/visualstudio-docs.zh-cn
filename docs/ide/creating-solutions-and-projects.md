@@ -1,11 +1,10 @@
 ---
 title: "创建解决方案和项目 | Microsoft Docs"
 ms.custom: 
-ms.date: 03/21/2017
+ms.date: 06/16/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,97 +17,119 @@ helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
 ms.assetid: 836f8ca0-3fc9-4f4b-9090-45f2e4d2e9c8
-caps.latest.revision: 46
-author: kempb
-ms.author: kempb
+caps.latest.revision: "46"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 9a4b04dc59c409a5c68ad1fb376abb33b3859ff6
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 9697106fccd64446272452875c15d3e555cf9094
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/07/2017
 ---
+# <a name="create-solutions-and-projects"></a>创建解决方案和项目
+*项目*是 Visual Studio 中的逻辑容器，用于存放生成应用所需的项，比如源代码文件、位图、图标以及组件和服务引用。 创建新项目时，Visual Studio 会创建一个*解决方案*来包含项目。 如果需要，可以继续向解决方案添加新项目或现有项目。 解决方案还可以包含未连接到任何特定项目的文件。   
 
-# 创建解决方案和项目
-<a id="create-solutions-and-projects" class="xliff"></a>
+![解决方案/项目层次结构](./media/vside-proj-soln.png)
 
-项目是生成应用程序所需的所有内容的逻辑容器。 依次选择主菜单上的“文件”、“新建”和“项目”创建项目时，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 会创建将项目包含在内的解决方案。 如有必要，可以继续向解决方案添加更多新项目或现有项目。 可以从现有代码文件创建项目，也可创建在使用完毕后删除的临时项目（仅 .NET）。
+可在名为“解决方案资源管理器”的工具窗口中查看解决方案和项目。 以下屏幕截图显示解决方案资源管理器中的一个示例解决方案 (BikeSharing.Xamarin-UWP)，该解决方案 包含两个项目：BikeSharing.Clients.Core 和 BikeSharing.Clients.Windows。 每个项目均包含多个文件、文件夹和引用。 粗体形式的项目名称是*启动项目*；即，运行应用时启动的项目。 可以指定将哪个项目作为启动项目。   
+
+![包含项目的解决方案资源管理器](./media/vside-solution-explorer-projects.png)
+
+用户可以通过向项目添加必要文件来自行构造项目，与此同时，Visual Studio 也提供了一组精选的项目模板，让用户能够拥有一个好的开端。 从模板新建的项目将具有该项目类型的必需元素，用户可在必要时重命名文件，或向项目添加新代码或现有代码以及其他资源。  
+
+也就是说，在 Visual Studio 中开发应用时不需要解决方案和项目。 用户也可以直接打开从 Git 克隆或从其他地方下载的代码。 有关详细信息，请参阅[在 Visual Studio 中开发代码而无需创建项目或解决方案](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。  
 
 > [!NOTE]
->  本主题中的说明基于 Visual Studio Community 版。 您看到的对话框和菜单命令可能与此处描述的有所不同，这取决于您的设置或 Visual Studio 版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 本主题中的说明基于 Visual Studio Community 版。 您看到的对话框和菜单命令可能与此处描述的有所不同，这取决于您的设置或 Visual Studio 版本。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具”，“导入和导出设置”，然后选择“重置所有设置”。
 
-## 从已安装项目模板创建项目
-<a id="create-a-project-from-an-installed-project-template" class="xliff"></a>  
- 依次选择主菜单上的“文件”、“新建”和“项目”，调出“新建项目”对话框。 在左侧窗格的“已安装”下，依次选择“模板”、编程语言和平台或技术，然后从中间窗格的可用模板中进行选择。  
+## <a name="to-create-a-project-from-a-project-template"></a>从项目模板创建项目
+1. 可通过多种方式在 Visual Studio 中创建新项目。 在起始页上，在“搜索项目模板”框中输入项目模板的名称，或选择“创建新项目”链接打开“新建项目”对话框。 也可以选择菜单上的“文件”、“新建”、“项目...”，或选择工具栏上的“新建项目”按钮。
 
- 在 **“新建项目”** 对话框中，选择 **“解决方案”** 下拉列表中提供的选项，在新解决方案、现有解决方案或 Visual Studio 的新实例中创建新项目。  
+  ![起始页](./media/vside-newproject1.png)
 
-## 从现有代码文件创建项目
-<a id="create-a-project-from-existing-code-files" class="xliff"></a>  
- 如果有一系列松散源文件，则可以轻松创建一个包含它们的项目。 依次选择“文件”、“新建”和“从现有代码创建项目”，启动“从现有代码文件创建项目”向导，然后按提示操作。  
+  在“新建项目”对话框中的“模板”类别下，可用项目模板以列表形式列出。 模板按编程语言和项目类型（如 Visual C#、JavaScript 和 Azure Data Lake）归类。
+
+  ![“新建项目”对话框](./media/vside-newproject-templates-list.png)
+
+  > [!NOTE]
+  > 显示的可用语言和项目模板列表取决于正在运行的 Visual Studio 版本和安装的工作负载。 若要了解如何安装附加工作负载，请参阅[通过添加或删除工作负载和组件修改 Visual Studio 2017](../install/modify-visual-studio.md)。
+
+1. 通过选择语言名称旁边的三角形，然后选择项目类型，可显示要使用的编程语言的模板列表。 以下示例演示可用于 Visual C# Web 项目的项目模板。
+
+  ![项目模板](./media/vside-newproject-projects-list.png)
+
+1. 在“名称”框中输入新项目的名称。 可选择将项目保存在系统上的默认位置，或选择“浏览”按钮查找其他位置。
+
+  还可以选择更改解决方案名称，或选择“添加到源代码管理”以将新项目添加到 Git 存储库。
+
+1. 选择“确定”按钮，创建解决方案和项目。
+
+1. 如果要向解决方案添加附加项目，请在解决方案资源管理器中选择解决方案节点，然后在菜单上选择“项目”、“添加新项”。  
+
+## <a name="create-a-project-from-existing-code-files"></a>从现有代码文件创建项目  
+ 如果有一组代码源文件，可以轻松地将它们添加到项目。
+
+1. 在菜单上，依次选择“文件”、“新建”、“从现有代码创建项目”。
+
+1. 在“从现有代码文件创建项目”向导的“要创建什么类型的项目?”下拉列表框中，选择所需的项目类型，然后选择“下一步”按钮。
+
+1. 在向导中，浏览到文件位置，然后在“名称”框中输入新项目的名称。 完成后，选择“完成”按钮。
+
+> [!NOTE]
+>  此选项最适合各组相对简单的文件。 目前仅支持 Visual C++、Apache Cordova、Visual Basic 和 Visual C# 项目类型。  
+
+## <a name="add-files-to-a-solution"></a>将文件添加到解决方案  
+如果有一个适用于多个项目的文件，比如解决方案的自述文件，或其他逻辑上属于解决方案级别而不是位于特定项目下的文件，则可以将它们添加到解决方案自身。 若要将某项添加到解决方案，请在“解决方案资源管理器”中解决方案节点的上下文（右击）菜单上，依次选择“添加”和“新项”，或依次选择“添加”和“现有项”。
+
+## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>创建面向 .NET Framework 特定版本的 .NET 项目  
+创建项目时，可指定想要项目使用的特定 .NET Framework 版本。 若要指定 .NET Framework 版本，请选择“新建项目”对话框中的“.NET Framework”版本下拉菜单。 如果是从 .NET Core 模板创建项目，则会忽略在下拉菜单中选定的 .NET Framework 版本。  
+
+![.NET Framework 版本选择器](./media/vside-newproject-framework.png)
 
 > [!TIP]
->  此选项最适合各组相对简单的文件。  
+>  如果在选择项目模板前设置 .NET Framework 版本，Visual Studio 将仅显示与该 .NET Framework 版本兼容的模板。
 
-## 创建临时项目（C# 和 Visual Basic）
-<a id="create-a-temporary-project-c-and-visual-basic" class="xliff"></a>
- 使用临时项目时，你可以在不指定磁盘位置的情况下创建和试验 .NET 项目。 创建项目时，只需在 **“新建项目”** 对话框中选择项目类型和模板，并指定名称。 使用临时项目时，你可以随时保存或放弃它。  
+必须在系统上安装 .NET Framework 3.5 才能访问 .NET Framework 4 以前的 .NET Framework 版本。  
 
-## 创建面向 .NET Framework 特定版本的 .NET 项目
-<a id="create-a-net-project-that-targets-a-specific-version-of-the-net-framework" class="xliff"></a>  
- 通过使用 **“新建项目”** 对话框顶部的 **“.NET Framework”** 版本下拉菜单，您可以创建面向 .Net Framework 早期版本的项目。 在选择项目模板之前设置此值，因为只有与该 .NET Framework 版本兼容的模板将出现在列表中。  
+## <a name="create-empty-solutions"></a>创建空的解决方案  
+还可以创建不包含任何项目的空解决方案。 这可能更适合想从头开始构造解决方案和项目的情况。
 
- 您必须在您的系统上安装 .NET Framework 3.5，这样可以访问 framework 4.0 以前的版本。  
+### <a name="to-create-an-empty-solution"></a>创建空解决方案  
 
-## 下载示例解决方案
-<a id="download-sample-solutions" class="xliff"></a>  
- 可以使用 Visual Studio 下载和安装 [MSDN 代码库](http://go.microsoft.com/fwlink/?LinkId=254185)和 Git 存储库等其他源中的示例解决方案。
+1.  在菜单上，依次选择“文件”“新建”“项目”。
 
- 您可单独下载示例，也可以下载包含共享技术或主题的相关示例的示例包。 在为下载的任何示例发布源代码更改时，您将收到通知。  
-
- 有关详细信息，请参阅 [Visual Studio 示例](../ide/visual-studio-samples.md)。  
-
-## 在解决方案一级添加单个文件
-<a id="add-single-files-at-the-solution-level" class="xliff"></a>  
- 有时，一个文件可能会被多个项目引用，或者包含在逻辑上属于解决方案级而非特定项目下的文本或各种数据。  向解决方案添加单个项：  
-
-- 右键单击“解决方案资源管理器”中的解决方案节点，然后依次选择“添加”和“新建项”，或依次选择“添加”和“现有项”。  
-
-## 创建空的解决方案
-<a id="create-empty-solutions" class="xliff"></a>  
- 尽管项目驻留在解决方案中，也可以创建不包含任何项目的解决方案。 还可以打开代码项目，而无需创建解决方案。
-
-#### 创建空解决方案
-<a id="to-create-an-empty-solution" class="xliff"></a>  
-
-1.  在“文件”菜单上，依次选择“新建”和“新建项目”。  
-
-2.  在左侧窗格中，依次选择展开列表中的“已安装”、“其他项目类型”和“Visual Studio 解决方案”。  
+2.  在左侧（“模板”）窗格中，依次选择展开列表中的“其他项目类型”和“Visual Studio 解决方案”。  
 
 3.  在中间窗格中，选择“空白解决方案”。  
 
-4.  设置解决方案的“名称”和“位置”值，然后选择“确定”。  
+4.  输入解决方案的“名称”和“位置”值，然后选择“确定”。  
 
 创建空白解决方案后，可以选择“项目”菜单上的“添加新项”或“添加现有项”，将新的或现有的项目或项添加到解决方案中。
 
-### 删除解决方案
-<a id="delete-solutions" class="xliff"></a>  
- 您可以永久性删除解决方案，但不能使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]来删除解决方案。 在删除解决方案前，把您要再次使用的任何项目移动到其他解决方案中。 然后，使用文件资源管理器删除包含 .sln 和 .suo 解决方案文件的目录。  
+如前文所述，还可以打开代码项目而无需创建解决方案。 若要了解如何打开代码而无需创建解决方案，请参阅[在 Visual Studio 中开发代码而无需创建项目或解决方案](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
+
+## <a name="create-a-temporary-project-c-and-visual-basic"></a>创建临时项目（C# 和 Visual Basic）
+如果创建基于 .NET 的项目时不指定磁盘位置，它就是一个临时项目。 临时项目可用于试验 .NET 项目。 使用临时项目时，可以随时选择保存或放弃它。  
+
+若要创建临时项目，请先转到“工具”、“选项”、“项目和解决方案”、“常规”，取消选中“创建时保存新项目”复选框。 然后照常打开“新建项目”对话框。  
+
+## <a name="delete-a-solution-project-or-item"></a>删除解决方案、项目或项
+ 可以永久删除解决方案及其内容，但不能通过 Visual Studio IDE 执行。 在 Visual Studio 中删除项只会将它们从当前解决方案或项目中移除。 若要从系统中永久删除解决方案或其他组件，请使用文件资源管理器删除包含 .sln 和 .suo 解决方案文件的文件夹。 但是，在永久删除解决方案之前，建议备份好所有项目或文件，以防再次需要它们。
 
 > [!NOTE]
->  .suo 文件是隐藏文件，在默认的文件资源管理器设置下不会显示。  
+>  .suo 文件是隐藏文件，在默认的文件资源管理器设置下不会显示。 若要显示隐藏文件，请在文件资源管理器的“查看”菜单上选中“隐藏项”复选框。
 
-##### 要删除解决方案
-<a id="to-delete-a-solution" class="xliff"></a>  
+### <a name="to-permanently-delete-a-solution"></a>永久删除解决方案  
 
-1.  在“解决方案资源管理器”中，在要删除的解决方案的上下文（右键单击）菜单中，选择“在文件资源管理器中打开文件夹”。
+1.  在“解决方案资源管理器”中，在要删除的解决方案的上下文菜单上选择“在文件资源管理器中打开文件夹”。
 
 2.  在文件资源管理器中，导航到上一级。
 
-3.  选择包含解决方案的目录，然后按 DELETE 键。
+3.  选择包含解决方案的文件夹，然后选择 DELETE 键。
 
-## 另请参阅
-<a id="see-also" class="xliff"></a>  
- [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)   
-
+## <a name="see-also"></a>另请参阅  
+[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)  
+[GitHub 上的 Microsoft 开放源代码存储库](https://github.com/Microsoft)  
+[Visual Studio 示例](../ide/visual-studio-samples.md)  
+[开发者代码示例](https://code.msdn.microsoft.com/)  

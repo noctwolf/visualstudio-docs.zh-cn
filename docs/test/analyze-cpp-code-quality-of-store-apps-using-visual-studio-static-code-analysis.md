@@ -1,42 +1,25 @@
 ---
-title: "使用 Visual Studio 静态代码分析来分析应用商店应用的 C++ 代码质量 | Microsoft Docs"
+title: "使用 Visual Studio 静态代码分析来分析 UWP 应用的 C++ 代码质量 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.codeanalysis.propertypages.native.express
+f1_keywords: vs.codeanalysis.propertypages.native.express
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pt-br
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: c1e31415cf2f51c06650610fde945037ebe0191f
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: c4c49f910615e1e181fe66feab3dce5bb3c90002
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 静态代码分析来分析应用商店应用的 C++ 代码质量
-![适用于 Windows 和 Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="analyze-c-code-quality-of-uwp-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 静态代码分析来分析 UWP 应用的 C++ 代码质量
+![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  Visual Studio Express 版本中的代码分析工具可检查代码中是否存在一组常见问题以及违反良好编程习惯的情况。 代码分析警告与编译器错误和警告不同，因为代码分析工具搜索的是虽然有效但仍会为你或使用你代码的其他人员带来问题的特定代码模式。 代码分析还可在代码中找到通过测试难以发现的缺陷。 在开发过程中定期运行代码分析工具可提高所编写的应用程序的质量。  
   
@@ -78,7 +61,7 @@ ms.lasthandoff: 04/04/2017
   
  展开警告后，将在 Visual Studio 代码编辑器中突出显示导致警告的代码行。  
   
- ![突出显示源代码](~/test/media/ca_cpp_sourceline.png "CA_CPP_SourceLine")  
+ ![突出显示源代码](../test/media/ca_cpp_sourceline.png "CA_CPP_SourceLine")  
   
  了解问题后，可在代码中解决该问题。 然后重新运行代码分析，以确保警告不再显示在“代码分析”窗口中，并且修复未引发新的警告。  
   
@@ -244,4 +227,3 @@ ms.lasthandoff: 04/04/2017
 |[C28305](../code-quality/c28305.md)|在分析标记时发现错误。|  
 |[C28350](../code-quality/c28350.md)|批注介绍了无条件适用的情形。|  
 |[C28351](../code-quality/c28351.md)|批注介绍了在条件中无法使用动态值（变量）的位置。|
-

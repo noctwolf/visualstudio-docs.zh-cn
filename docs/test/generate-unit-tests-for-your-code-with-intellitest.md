@@ -4,40 +4,22 @@ ms.custom:
 ms.date: 2015-10-05
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.UnitTest.CreateIntelliTest
+f1_keywords: vs.UnitTest.CreateIntelliTest
 ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
-caps.latest.revision: 33
+caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c1c9f7dc62fab9de6bc32c80138c3fadbb036200
-ms.openlocfilehash: 79f4da148658c950957636fd050b5e83947f04b7
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/17/2017
-
+ms.openlocfilehash: 533e1938e83a7d4dccc3be4d8847967ee7c91f6f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 为你的代码生成单元测试
-IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 为代码中的每个条件分支执行案例分析。 例如，分析 if 语句、断言和可能引发异常的所有操作。 此分析用于为你的每个方法生成参数化单元测试的测试数据，从而创建具有较高代码覆盖率的单元测试。  
+IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 为代码中的每个条件分支执行案例分析。 例如，分析 `if` 语句、断言和可能引发异常的所有操作。 此分析用于为你的每个方法生成参数化单元测试的测试数据，从而创建具有较高代码覆盖率的单元测试。  
   
  当你运行 IntelliTest 时，你可轻松看到哪些测试会失败，并可添加任何必要的代码来修复它们。 你可选择要保存到测试项目中的已生成测试，以提供回归套件。 当你更改代码时，重新运行 IntelliTest，以使生成的测试与你的代码更改同步。  
 
@@ -60,7 +42,7 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
   
 2.  在代码中右键单击一种方法并选择“运行 IntelliTest”  ，为方法中的代码生成单元测试。  
   
-     ![在方法中右键单击以生成单元测试](~/test/media/runpex.png "RunPEX")  
+     ![在方法中右键单击以生成单元测试](../test/media/runpex.png "RunPEX")  
   
      IntelliTest 使用不同的输入多次运行你的代码。 每次运行都会在表中表示出来，显示输入测试数据以及产生的输出或异常。  
   
@@ -92,7 +74,7 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
   
      查看警告，确定后续操作。  
   
-     ![查看警告](~/test/media/pexviewwarning.png "PEXViewWarning")  
+     ![查看警告](../test/media/pexviewwarning.png "PEXViewWarning")  
   
 2.  调查代码并了解要测试的内容后，可修复警告，以选择要用于测试该接口的类。  
   
@@ -154,7 +136,7 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
   
  接受默认格式以生成测试，或更改项目和测试的命名方式。 你可以创建新的测试项目或将你的测试保存到现有项目。  
   
- ![使用 MSTest 默认值创建 IntelliTest](~/test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
+ ![使用 MSTest 默认值创建 IntelliTest](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
 
 <a name="extend-framework"></a>  
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>问：是否可以将其他单元测试框架用于 IntelliTest？  
@@ -176,4 +158,3 @@ Visual Studio Marketplace 中也提供了测试框架扩展：
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>问：是否可以了解有关如何生成测试的详细信息？  
 
 **答：** 可以，要获取高级概述，请阅读此 [博客文章](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)。
-

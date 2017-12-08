@@ -1,35 +1,36 @@
 ---
 title: "使用三维模型 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
-caps.latest.revision: 8
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a910c3f43dc0cb49e6b7f6f70355c6c195df7a82
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 使用三维模型
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-您可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用模型编辑器创建三维模型。  您可以以基于 DirectX 的游戏或应用程序使用模型。  
+# <a name="working-with-3-d-models"></a>使用三维模型
+可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的模型编辑器创建三维模型。 可以在基于 DirectX 的游戏或应用中使用该模型。  
   
-## 3\-D 模型  
- 当它们存在于三维场景中时，三维模型定义对象形状。  模型可以是由基本的对象层次结构或者甚至是整个三维场景形成的基本孤立对象、复杂对象。  三维对象由 3\-D 空间组成（称为“顶点”），表明定义三角形、行或其他由这些点组成的基元和属性可能应用于每个顶点和每个基元基础（例如，表面法线）。  此外，某些信息可能应用于每个对象的基础上，例如，着色器和纹理将给出对象的唯一外观。  
+## <a name="3-d-models"></a>三维模型  
+ 当对象存在于三维场景中时，三维模型用于定义对象的形状。 模型可以是基本孤立对象、形成自基本对象层次结构的复杂对象，甚或是整个三维场景。 三维对象包括三维空间中的点（称为顶点）、用于定义三角形、线或其他由这些点组成的基元的指标，以及可能应用于每个顶点或每个基元的特性，如表面法线。 此外，一些信息可能会按对象进行应用，例如，哪一个着色器和纹理会为对象提供唯一外观。  
   
- 模型编辑器是您需要创建基本三维模型仅使用的工具—完成材料属性、纹理和像素着色器—可以在您的游戏或应用程序中使用。  或者，在邀请艺术家确定最终模型前，您可以创建占位符模型以用于原型制作和测试。  
+ 模型编辑器是创建基本三维模型时所需的唯一工具（辅以材料属性、纹理和像素着色器），可在游戏或应用中使用这些基本模型。 或可创建占位符模型，在艺术家完成模型之前用于原型制作和测试。  
   
- 您还可以使用模型编辑器来查看通过使用功能齐备的工具创建的现有的 3\-D 模型，并且如果在美术资产中观察到问题可以修改他们。  
+ 也可以使用模型编辑器查看使用功能完善的工具创建的现有三维模型，以及在艺术资产中发现问题时对这些模型进行修改。  
   
-## 相关主题  
+## <a name="related-topics"></a>相关主题  
   
-|标题|说明|  
-|--------|--------|  
-|[模型编辑器](../designers/model-editor.md)|描述如何以三维模型使用模型编辑器。|  
-|[模型编辑器示例](../designers/model-editor-examples.md)|提供指向演示如何使用模型编辑器执行常见三维建模任务的主题的链接。|
+|标题|描述|  
+|-----------|-----------------|  
+|[模型编辑器](../designers/model-editor.md)|描述如何使用模型编辑器处理三维模型。|  
+|[模型编辑器示例](../designers/model-editor-examples.md)|提供演示如何使用模型编辑器执行常见三维模型任务的主题的链接。|

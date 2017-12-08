@@ -1,42 +1,43 @@
 ---
 title: "如何：创建多文件项模板 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "项模板, 创建多文件项模板"
-  - "多文件项模板"
-  - "Visual Studio 模板, 创建多文件项模板"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio templates, creating multi-file item templates
+- multi-file item templates
+- item templates, creating multi-file item templates
 ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e3e1f6c6e62494f040e2f52180c5588688f460db
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：创建多文件项模板
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-项模板只能指定一个项，但有时一个项也包含多个文件。  例如， windows 窗体 Visual Basic 项模板需要以下三个文件:  
+# <a name="how-to-create-multi-file-item-templates"></a>如何：创建多文件项模板
+项模板仅能指定一个项，但有时该项由多个文件组成。 例如，适用于 Visual Basic 的 Windows 窗体项模板需要下列三个文件：  
   
--   一个 .vb 文件，包含该窗体的代码。  
+-   包含用于窗体的代码的 .vb 文件。  
   
--   一个 .designer.vb 文件，包含该窗体的设计器信息。  
+-   包含用于窗体的设计器信息的设计器 .vb 文件。  
   
--   一个 .resx 文件，包含该窗体的嵌入资源。  
+-   包含用于窗体的嵌入资源的 .resx 文件。  
   
- 多文件项模板需要使用参数来确保在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中创建项时使用正确的文件扩展名。  如果您使用**“导出模板”**向导创建项模板，则将自动生成这些参数，且无需进一步编辑。  下列步骤说明如何使用参数来确保创建正确的文件扩展名。  
+ 多文件项模板需要参数，用于确保在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中创建该项时使用正确的文件扩展名。 如果使用“导出模板”向导创建项模板，会自动生成这些参数，无需进一步编辑。 下列步骤解释如何使用参数来确保创建正确的文件扩展名。  
   
-### 手动创建多文件项模板  
+### <a name="to-manually-create-a-multi-file-item-template"></a>手动创建多文件项模板  
   
-1.  采用与创建单文件项模板相同的方式创建多文件项模板。  有关更多信息，请参见 [如何：创建项模板](../ide/how-to-create-item-templates.md)。  
+1.  以创建单文件项模板的方式创建项模板。 有关详细信息，请参阅[如何：创建项模板](../ide/how-to-create-item-templates.md)。  
   
-2.  将 `TargetFileName` 特性添加到每个 `ProjectItem` 元素。  将 `TargetFileName` 特性的值设置为 $fileinputname$.*FileExtension*，其中 *FileExtension* 是要在模板中包含的文件的扩展名。  例如：  
+2.  将 `TargetFileName` 属性添加至每一个 `ProjectItem` 元素。 将 `TargetFileName` 属性的值设为 $fileinputname$.FileExtension，此处 FileExtension 为模板中包含的文件的文件扩展名。 例如:   
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -50,14 +51,14 @@ caps.handback.revision: 12
     </ProjectItem>  
     ```  
   
-     当向项目中添加从此模板派生的项时，将基于用户在**“添加新项”**对话框中键入的名称来指定文件名。  
+     当由此模板派生的项被添加到项目中时，文件名将以用户在“添加新项”对话框中键入的名称为依据。  
   
-3.  选择要包含在模板中的文件，右击选定内容，单击**“发送到”**，然后单击**“压缩\(zipped\)文件夹”**。  所选的文件被压缩为一个 .zip 文件。  
+3.  选择要包含在模板中的文件，右键单击所选文件，单击“发送至”，然后单击“压缩的文件夹（zip 格式）”。 所选的文件被压缩到一个 .zip 文件中。  
   
-4.  将该 .zip 文件置于用户项模板位置。  默认情况下，该目录为 \\ my documents \\ Visual Studio *版本*\\ templates \\ ItemTemplates \\。  有关更多信息，请参见[如何：查找和组织模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。  
+4.  将该 .zip 文件放到用户项模板位置。 默认情况下，该目录为 \My Documents\Visual Studio Version\Templates\ItemTemplates\\。 有关详细信息，请参阅[如何：查找和组织模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。  
   
-## 示例  
- 下面的示例演示一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Windows 窗体模板。  基于此模板创建项时，创建的三个文件的名称将与**“添加新项”**对话框中输入的名称匹配。  
+## <a name="example"></a>示例  
+ 下列示例显示了 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Windows 窗体模板。 基于此模板创建项时，创建的三个文件的名称将与“添加新项”对话框中输入的名称相匹配。  
   
 ```  
 <VSTemplate Version="2.0.0" Type="Item"  
@@ -82,8 +83,8 @@ caps.handback.revision: 12
 </VSTemplate>  
 ```  
   
-## 请参阅  
- [创建自定义项目和项模板](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>另请参阅  
+ [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [如何：创建项模板](../ide/how-to-create-item-templates.md)   
  [模板参数](../ide/template-parameters.md)   
  [如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)

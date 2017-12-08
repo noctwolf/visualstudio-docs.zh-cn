@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,39 +13,24 @@ helpviewer_keywords:
 - MSBuild, targeting a specific .NET framework
 - multitargeting [MSBuild]
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
-caps.latest.revision: 30
+caps.latest.revision: "30"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
-ms.openlocfilehash: 6a45db14ee055c4fbdf738cf36df503a4a1fffd0
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/31/2017
-
+ms.openlocfilehash: 85d570564ba3e82808f0876ead938f535368ec29
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 工具集 (ToolsVersion)
 MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通常，MSBuild 工具集包括 microsoft.common.tasks 文件、microsoft.common.targets 文件以及编译器（如 csc.exe 和 vbc.exe）。 大多数工具集可用于将应用程序编译为多个版本的 .NET Framework 以及多个系统平台。 但 MSBuild 2.0 工具集仅可用于面向 .NET Framework 2.0。  
   
 ## <a name="toolsversion-attribute"></a>ToolsVersion 特性  
- 在项目文件中 [Project](../msbuild/project-element-msbuild.md) 元素的 `ToolsVersion` 属性中指定工具集。 下面的示例指定应使用 MSBuild 12.0 工具集来生成项目。  
+ 在项目文件中 [Project](../msbuild/project-element-msbuild.md) 元素的 `ToolsVersion` 属性中指定工具集。 下面的示例指定应使用 MSBuild 15.0 工具集来生成项目。  
   
 ```xml  
-<Project ToolsVersion="12.0" ... </Project>  
+<Project ToolsVersion="15.0" ... </Project>  
 ```  
   
 ## <a name="how-the-toolsversion-attribute-works"></a>ToolsVersion 特性的工作原理  
@@ -134,4 +118,3 @@ MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通�
 ## <a name="see-also"></a>另请参阅  
  [标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)   
  [多定向](../msbuild/msbuild-multitargeting-overview.md)
-

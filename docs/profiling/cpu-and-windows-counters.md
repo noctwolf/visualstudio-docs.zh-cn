@@ -1,24 +1,26 @@
 ---
-title: "分析工具中的 CPU 和 Windows 计数器 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.property.counters"
-helpviewer_keywords: 
-  - "分析工具中的 Windows 计数器"
-  - "分析工具中的 CPU 计数器"
+title: "CPU 和 Windows 计数器 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.property.counters
+helpviewer_keywords:
+- Windows counters in Profiling Tools
+- CPU counters in Profiling Tools
 ms.assetid: d2c45c6a-f975-45ab-b8a5-4768ddd518fb
-caps.latest.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "28"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 62889012c5640fb0f29eadb6f70e678f941ff286
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 利用 Visual Studio 探查器，可以收集操作系统（Windows 计数器）生成的性能数据和处理器单元（CPU 计数器）生成的性能数据。  
@@ -28,7 +30,7 @@ caps.handback.revision: 26
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 ## <a name="windows-counters"></a>Windows 计数器  
  Windows 计数器是 Windows 诊断基础结构的一部分，该结构提供关于操作系统、应用程序、服务或驱动器性能的信息。 Windows 计数器取决于当前计算机的配置，并且可能无法在其他计算机上使用。 Windows 性能计数器以分析标记的形式收集在分析数据文件中，然后可将其用于筛选视图和报表。  
@@ -131,8 +133,3 @@ caps.handback.revision: 26
  [如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)   
  [如何：收集 CPU 计数器数据](../profiling/how-to-collect-cpu-counter-data.md)   
  [如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

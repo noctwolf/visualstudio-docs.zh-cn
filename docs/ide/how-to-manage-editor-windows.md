@@ -1,61 +1,62 @@
 ---
 title: "如何：管理编辑器窗口 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "代码编辑器, 窗口管理"
-  - "编辑器窗口"
-  - "编辑器, 窗口管理"
-  - "窗口, 管理编辑器窗口"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editor windows
+- windows, managing editor windows
+- editors, windows management
+- Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ad433ea0b1627d3e3ddcd80640f21a519d0264de
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：管理编辑器窗口
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-您可以同时在多个位置处理代码。  这可以通过拆分编辑器窗口或打开编辑器窗口的多个实例来实现。  
+# <a name="how-to-manage-editor-windows"></a>如何：管理编辑器窗口
+可以一次处理多个位置的代码。 通过拆分编辑器窗口，或打开编辑器窗口的多个实例执行此操作。  
   
 > [!NOTE]
 >  并非所有编辑器窗口都支持多个实例。  
   
-## 拆分编辑器窗口  
- 可将编辑器窗口的一个实例拆分为两个单独的视图，以便更方便地进行编辑。  
+## <a name="splitting-an-editor-window"></a>拆分编辑器窗口  
+ 编辑器窗口的实例可拆分为两个单独的视图，以便编辑。  
   
-#### 拆分窗格  
+#### <a name="to-split-a-pane"></a>拆分窗格  
   
-1.  在编辑器窗口中单击，以将焦点转到该窗口。  
+1.  在编辑器窗口中单击以获得焦点。  
   
-2.  从**“窗口”**菜单中选择**“拆分”**。  
+2.  在“窗口”菜单中，选择“拆分”。  
   
-     编辑区域随即分成两个由拆分栏隔开的窗格。  您可以分别滚动这两个窗格，以便同时查看和编辑活动文档的不同部分。  在一个窗格中所做的任何更改都会在另一个窗格中反映出来。  
+     编辑区域分为由分隔条隔开的两个窗格。 可以分别滚动这两个窗格，以便同时查看和编辑活动文档的不同部分。 窗格中的任何更改都会在其他窗格中反映。  
   
     > [!TIP]
-    >  若要使其中一个窗格大于另一个，请上下拖动拆分栏。  
+    >  若要使一个窗格大于其他窗格，可上下拖动分隔条。  
   
-#### 返回单窗格视图  
+#### <a name="to-return-to-single-pane-view"></a>返回单一窗格视图  
   
--   从**“窗口”**菜单中选择**“取消拆分”**。  
+-   在“窗口”菜单中，选择“移除拆分”。  
   
-## 创建新窗口  
- 您还可以创建编辑器窗口的多个实例。  此功能允许您在编辑器的多个实例中打开一个很长的文档，以便可以在单独的全屏编辑器窗口中同时查看和编辑不同的部分。  
+## <a name="creating-new-windows"></a>创建新窗口  
+ 也可以创建编辑器窗口的多个实例。 通过此功能，可在一个编辑器的多个实例中打开长文档，以便在单独的全尺寸编辑器窗口同时查看和编辑不同部分。  
   
-#### 创建新窗口  
+#### <a name="to-create-a-new-window"></a>创建新窗口  
   
--   单击**“窗口”**菜单上的**“新建窗口”**。  
+-   在“窗口”菜单上，单击“新建窗口”。  
   
-     编辑器的新选项卡式实例添加到中。  
+     添加编辑器的制表符分隔的新实例。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [自定义编辑器](../ide/customizing-the-editor.md)   
  [编写代码](../ide/writing-code-in-the-code-and-text-editor.md)   
  [自定义窗口布局](../ide/customizing-window-layouts-in-visual-studio.md)

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - CreateItem task [MSBuild]
 - MSBuild, CreateItem task
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: a9eb48e8c695c92a68e75f17cea31d887dfb439d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7dbf181f89f6cc673452a595da8ec1ddd3b62529
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="createitem-task"></a>CreateItem 任务
 使用输入项填充项集合。 这会使项从一个列表复制到另一个列表。  
@@ -56,11 +40,11 @@ ms.lasthandoff: 02/22/2017
 |---------------|-----------------|  
 |`AdditionalMetadata`|可选的 `String` 数组参数。<br /><br /> 指定要附加到输出项的其他元数据。  使用以下语法指定项的元数据名称和值：<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 应该使用分号将多个元数据名称/值对隔开。 如果名称或值包含分号或其他任何特殊字符，则应对这些字符进行转义。 有关详细信息，请参阅[如何：对 MSBuild 中的特殊字符进行转义](../msbuild/how-to-escape-special-characters-in-msbuild.md)。|  
 |`Exclude`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 指定要从输出项集合中排除的项。 此参数可包含通配符规范。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)和[如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)。|  
-|`Include`|必需的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要包含在输出项集合中的项。 此参数可包含通配符规范。|  
+|`Include`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要包含在输出项集合中的项。 此参数可包含通配符规范。|  
 |`PreserveExistingMetadata`|可选 `Boolean` 参数。<br /><br /> 如果为 `True`，则仅应用其他元数据（如果尚不存在）。|  
   
 ## <a name="remarks"></a>备注  
- 除了上面列出的参数，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，此类本身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数及其说明的列表，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>示例  
  以下代码示例会从项集合 `MySourceItems` 创建一个名为 `MySourceItemsWithMetadata` 的新项集合。 `CreateItem` 任务会使用 `MySourceItems` 项中的项填充新的项集合。 然后它会将一个名为 `MyMetadata` 的其他元数据条目（值为 `Hello`）添加到新集合中的每个项。  

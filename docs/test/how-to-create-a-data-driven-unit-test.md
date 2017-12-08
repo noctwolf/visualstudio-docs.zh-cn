@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,29 +15,14 @@ helpviewer_keywords:
 - unit tests, data-driven
 - data-driven unit tests
 ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
-caps.latest.revision: 33
+caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 2eaf4aa44fdc1bec56bb513af54ea7db72dcf3db
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: ec1c20ae334e81724af1b8d4e2b25d755a024bdc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：创建数据驱动的单元测试
 将 Microsoft 单元测试框架用于托管代码，可以设置单元测试方法从数据源中检索测试方法中使用的值。 针对数据源中的每一行连续运行此方法，这样就可以使用一种方法轻松地测试各种输入。  
@@ -63,9 +47,9 @@ ms.lasthandoff: 04/04/2017
   
 1.  创建包含测试方法中使用的值的数据源。 数据源可以是在运行测试的计算机上注册的任何类型数据源。  
   
-2.  在测试类中添加一个私有 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 字段和公共 `TestContext` 属性。  
+2.  将私有 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 字段和公共 `TestContext` 属性添加到测试类。  
   
-3.  创建单元测试方法，并向其添加 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 属性。  
+3.  创建单元测试方法并为其添加 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 属性。  
   
 4.  使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> 索引器属性检索测试中使用的值。  
   
@@ -182,7 +166,7 @@ public void AddIntegers_FromDataSourceTest()
 ```  
   
 ###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a>使用 TestContext.DataRow 访问数据  
- 若要访问 `AddIntegersData` 表中的数据，请使用 `TestContext.DataRow` 索引器。 `DataRow` 是 <xref:System.Data.DataRow> 对象，因此我们根据索引或列名检索列的值。 由于值作为对象返回，因此需要将它们转换为合适的类型：  
+ 若要访问 `AddIntegersData` 表中的数据，请使用 `TestContext.DataRow` 索引器。 `DataRow` 是 <xref:System.Data.DataRow> 对象，因此我们根据索引或列名称检索列的值。 由于值作为对象返回，因此需要将它们转换为合适的类型：  
   
 ```  
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);  
@@ -207,4 +191,3 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  [单元测试代码](../test/unit-test-your-code.md)   
  [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)   
  [使用适用于托管代码的 Microsoft 单元测试框架编写 .NET Framework 的单元测试](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
-

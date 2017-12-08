@@ -1,73 +1,74 @@
 ---
-title: "VSPerf | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: VSPerf | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8bd2365752e31ce463610b75fee3884271841b3c
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/11/2017
 ---
-# VSPerf
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-使用 **VsPerf** 命令行工具：  
+# <a name="vsperf"></a>VSPerf
+使用 **VsPerf** 命令行工具可以：  
   
-1.  当 Visual Studio 在设备时，不安装配置文件中存储从命令行运行的应用。  
+1.  在设备上未安装 Visual Studio 时，从命令行分析 UWP 应用。  
   
-2.  使用采样分析方法分析 Windows 桌面8 应用程序和 Windows Server 2012 应用程序。  
+2.  使用采样分析方法分析 Windows 8 桌面应用程序和 Windows Server 2012 应用程序。  
   
- 有关 [分析 Windows 8 和 Windows Server 2012 应用程序](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) 命令行选项的更多信息，请参见 。  
+ 有关分析选项的详细信息，请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 ##  <a name="BKMK_In_this_topic"></a> 主题内容  
- 本主题描述可使用 `vsperf.exe` 命令行工具的选项。  本主题包含以下各节：  
+ 本主题描述了可与 `vsperf.exe` 命令行工具一起使用的选项。 本主题包含以下各节：  
   
- [只有Windows 应用商店应用](#BKMK_windows_store_apps_only)  
+ [仅限 UWP 应用](#BKMK_windows_store_apps_only)  
   
- [仅Windows 8桌面应用程序和 Windows Server 2012 应用程序](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
+ [仅限 Windows 8 桌面应用程序和 Windows Server 2012 应用程序](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
   
- [所有应用程序。](#BKMK_All_applications)  
+ [所有应用程序](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a> 只有Windows 应用商店应用  
- 这些选项仅适用于中存储应用。  
-  
-|||  
-|-|-|  
-|**\/app:{AppName}**|启动探查器并等待指定的应用从"开始"菜单启动。<br /><br /> 运行 `vsperf /listapps` 查看安装的应用应用名称和 PackageFullName。|  
-|**\/package:{PackageFullName}**|启动探查器并等待指定的应用从"开始"菜单启动。<br /><br /> 运行 `vsperf /listapps` 查看安装的应用应用名称和 PackageFullName。|  
-|**\/js**|分析 JavaScript 应用。<br /><br /> 从 JavaScript 应用收集性能数据。<br /><br /> 只能用 \/package 或 \/attach。|  
-|**\/noclr**|可选。   不收集CLR数据。<br /><br /> 只能用 \/package 或 \/attach。<br /><br /> 优化，将不解析任何托管符号。|  
-|**\/listapps**|列出已安装的应用名称和 PackageFullNames。|  
-  
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> 仅Windows 8桌面应用程序和 Windows Server 2012 应用程序  
- 这些选项在中存储应用不起作用。  
+##  <a name="BKMK_windows_store_apps_only"></a> UWP 应用  
+ 这些选项仅适用于 UWP 应用。  
   
 |||  
 |-|-|  
-|**\/launch:{Executable}**|开始和开始配置文件指定的可执行文件。|  
-|**\/args:{ExecutableArguments}**|指定命令行参数传递 **\/launch** 目标。|  
-|**\/console**|在新的命令窗口的 **\/launch** 目标。|  
+|**/app:{AppName}**|启动探查器，然后等待指定的应用从“开始”菜单中启动。<br /><br /> 运行 `vsperf /listapps` 以查看应用名称和已安装应用的 PackageFullName。|  
+|**/package:{PackageFullName}**|启动探查器，然后等待指定的应用从“开始”菜单中启动。<br /><br /> 运行 `vsperf /listapps` 以查看应用名称和已安装应用的 PackageFullName。|  
+|**/js**|分析 JavaScript 应用所必需的。<br /><br /> 从 JavaScript 应用中收集性能数据。<br /><br /> 仅与 /package 或 /attach 一起使用。|  
+|**/noclr**|可选。 不收集 CLR 数据。<br /><br /> 仅与 /package 或 /attach 一起使用。<br /><br /> 优化，不会解析任何托管符号。|  
+|**/listapps**|列出已安装的应用名称和 PackageFullNames。|  
   
-##  <a name="BKMK_All_applications"></a> 所有应用程序。  
- 这些选项适用于所有 Windows 8 或 Windows Server 2012 应用程序。  
+##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>仅限 Windows 8 桌面应用程序和 Windows Server 2012 应用程序  
+ 这些选项不适用于 UWP 应用。  
   
 |||  
 |-|-|  
-|**\/attach:{PID&#124;ProcessName}\[,PID&#124;ProcessName\]...**|从指定的进程收集数据。<br /><br /> 使用任务管理器查看进程 ID \(PID\) 并处理连续应用名称。|  
-|**\/file:{ReportName}**|可选。  指定输出文件名 \(覆盖现有文件\)。<br /><br /> 只能用 \/package 或 \/attach。|  
-|**\/pause**|暂停数据收集。|  
-|**\/resume**|继续数据收集。|  
-|**\/stop**|停止数据收集并停止目标进程。|  
-|**\/detach**|停止数据收集，但允许目标进程继续运行。|  
-|**\/status**|探查器显示状态。|  
+|**/launch:{Executable}**|启动并开始分析指定的可执行文件。|  
+|**/args:{ExecutableArguments}**|指定要传递 **/launch** 目标的命令行参数。|  
+|**/console**|在新的命令窗口中运行 **/launch** 目标。|  
   
-## 请参阅  
- [分析 Windows 8 和 Windows Server 2012 应用程序](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
- [通过命令行进行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)
+##  <a name="BKMK_All_applications"></a>所有应用程序  
+ 这些选项适用于任何 Windows 8 或 Windows Server 2012 应用程序。  
+  
+|||  
+|-|-|  
+|**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|从指定的进程收集数据。<br /><br /> 使用任务管理器查看正在运行的应用的进程 ID (PID) 和进程名称。|  
+|**/file:{ReportName}**|可选。 指定输出文件（将覆盖现有文件）。<br /><br /> 仅与 /package 或 /attach 一起使用。|  
+|**/pause**|暂停数据收集。|  
+|**/resume**|恢复数据收集。|  
+|**/stop**|停止数据收集并终止目标进程。|  
+|**/detach**|停止数据收集，但允许目标进程继续运行。|  
+|**/status**|显示探查器状态。|  
+  
+## <a name="see-also"></a>另请参阅  
+ [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
+ [从命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

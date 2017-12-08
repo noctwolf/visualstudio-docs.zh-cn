@@ -4,35 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MSBuild, properties
+helpviewer_keywords: MSBuild, properties
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: 6a83d555cf8968b6c1419633730e4b80d3b9aa3d
-
+ms.openlocfilehash: 0fe5627c7307b2d06e894a236d60f4188e6cf427
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="msbuild-properties"></a>MSBuild 属性
 属性是可用于配置生成的名称/值对。 属性可用于将值传递给任务，评估条件和存储将在整个项目文件中引用的值。  
@@ -68,7 +53,7 @@ ms.openlocfilehash: 6a83d555cf8968b6c1419633730e4b80d3b9aa3d
   
  每个 MSBuild 项目都有一个独立环境块：它只能识别对自己块的读写操作。  在计算或生成项目文件之前，MSBuild 只在初始化属性集合时读取环境变量。 在此之后，环境属性是静态的，也就是说，每个生成工具使用相同的名称和值启动。  
   
- 若要从生成工具中获取环境变量的当前值，请使用[属性函数](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable。 但首选方法是使用任务参数 <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>。 可将此字符串数组中的环境属性集传递给生成工具，而不影响系统环境变量。  
+ 若要从生成工具中获取环境变量的当前值，请使用[属性函数](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable。 不过，首选方法是使用任务参数 <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>。 可将此字符串数组中的环境属性集传递给生成工具，而不影响系统环境变量。  
   
 > [!TIP]
 >  并非所有的环境变量都被读入并成为初始属性。 系统将忽略变量名称不是有效 MSBuild 属性名称的所有环境变量（例如“386”）。  
@@ -93,7 +78,7 @@ $(registry:Hive\MyKey\MySubKey)
 ```xml  
 <PropertyGroup>  
   <VisualStudioWebBrowserHomePage>  
-    $(registry:HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\WebBrowser@HomePage)  
+    $(registry:HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\WebBrowser@HomePage)  
   </VisualStudioWebBrowserHomePage>  
 <PropertyGroup>  
 ```  
@@ -107,7 +92,7 @@ $(registry:Hive\MyKey\MySubKey)
 msbuild.exe MyProj.proj /p:Configuration=DEBUG  
 ```  
   
- 还可使用 MSBuild 任务的 `Properties` 属性为多项目生成中的子项目设置或修改全局属性。 有关详细信息，请参阅 [MSBuild 任务](../msbuild/msbuild-task.md)。  
+ 还可使用 MSBuild 任务的 `Properties` 属性为多项目生成中的子项目设置或修改全局属性。 除非使用 MSBuild 任务的 `RemoveProperties` 属性来指定不准备转发的属性列表，否则全局属性同样会转发到子项目。 有关详细信息，请参阅 [MSBuild 任务](../msbuild/msbuild-task.md)。
   
  如果您在项目标记中使用 `TreatAsLocalProperty` 特性指定一个属性，则全局属性值不会重写项目文件中设置的属性值。 有关详细信息，请参阅[项目元素 (MSBuild)](../msbuild/project-element-msbuild.md) 和[如何：使用不同选项生成相同的源文件](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。  
   
@@ -144,7 +129,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
                     ImageVersion="$(MySupportedVersion)"  
                     Version="$(MySupportedVersion)"/>  
                 <RequiredRuntime  
-                    ImageVersion="$(MyRequiredVersion)  
+                    ImageVersion="$(MyRequiredVersion)"  
                     Version="$(MyRequiredVersion)"  
                     SafeMode="$(MySafeMode)"/>  
             </Startup>  
@@ -161,8 +146,3 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
  [如何：使用不同选项生成相同的源文件](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
  [MSBuild 保留属性和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)   
  [Property 元素 (MSBuild)](../msbuild/property-element-msbuild.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

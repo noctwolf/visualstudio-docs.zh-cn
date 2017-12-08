@@ -1,28 +1,25 @@
 ---
 title: "在 Visual Studio 中使用 C++ 和 Python | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 09/28/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: f7dbda92-21bf-4af0-bb34-29b8bf231f32
 description: "在 Visual Studio 中编写适用于 Python 的 C++ 扩展或模块的过程和步骤"
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 0438a2d0f2524ea2163cb3454fdcf50f2ae7f499
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 1912afdba22d9dec6ee3f68aafc78c07779a5b3c
-ms.contentlocale: zh-cn
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="creating-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
 使用 C++（或 C）编写的模块常用于扩展 Python 解释器的功能和启用对低级别操作系统功能的访问。 主要有以下 3 种类型的模块：
@@ -37,14 +34,14 @@ ms.lasthandoff: 09/06/2017
 
 ## <a name="prerequisites"></a>先决条件
 
-本演练针对的是包含“C++ 桌面开发”和“Python 开发”工作负载及其默认选项（如作为默认解释器的 Python 3.6）的 Visual Studio 2017。 在 Python 开发工作负载中，还可以选中右侧的“Python 本机开发工具”复选框，以设置本主题中所述的大多数选项。 （此选项还自动包括 C++ 工作负载。） 
+- 将 **C++ 桌面开发**和 **Python 开发**工作负载作为默认选项安装的 Visual Studio 2017。 
+- 在 Python 开发工作负载中，还可以选中右侧的“Python 本机开发工具”复选框，以设置本主题中所述的大多数选项。 （此选项还自动包括 C++ 工作负载。） 
 
 ![选择“Python 本机开发工具”选项](media/cpp-install-native.png)
 
-有关详细信息，请参阅[安装针对 Visual Studio 的 Python 支持](installation.md)，其中包括使用其他版本的 Visual Studio。 如果单独安装 Python，请务必在安装程序的“高级选项”下选择“下载调试符号”和“下载调试二进制文件”。 此选项确保在选择进行调试生成时能够使用必要的调试库。
+- 安装**数据科学和分析应用程序**工作负载还包括默认安装 Python 和“Python 本机开发工具”选项。
 
-> [!Note]
-> 还可以通过“数据科学和分析应用程序”工作负载使用 Python，此工作负载默认包含 Anaconda 3 64 位（含有最新版 CPython）和“Python 本机开发工具”选项。
+有关详细信息，请参阅[安装针对 Visual Studio 的 Python 支持](installation.md)，其中包括使用其他版本的 Visual Studio。 如果单独安装 Python，请务必在安装程序的“高级选项”下选择“下载调试符号”和“下载调试二进制文件”。 此选项确保在选择进行调试生成时能够使用必要的调试库。
 
 ## <a name="create-the-python-application"></a>创建 Python 应用程序
 
@@ -57,7 +54,7 @@ ms.lasthandoff: 09/06/2017
     from random import random
     from time import perf_counter
 
-    COUNT = 100000
+    COUNT = 500000  # Change this value depending on the speed of your computer
     DATA = list(islice(iter(lambda: (random() - 0.5) * 3.0, None), COUNT))
 
     e = 2.7182818284590452353602874713527
@@ -73,7 +70,7 @@ ms.lasthandoff: 09/06/2017
         return tanh_x
 
     def sequence_tanh(data):
-        '''Applies the hyperbolic tanger function to map all values in
+        '''Applies the hyperbolic tangent function to map all values in
         the sequence to a value between -1.0 and 1.0.
         '''
         result = []
@@ -83,9 +80,7 @@ ms.lasthandoff: 09/06/2017
 
     def test(fn, name):
         start = perf_counter()
-
         result = fn(DATA)
-
         duration = perf_counter() - start
         print('{} took {:.3f} seconds\n\n'.format(name, duration))
 
@@ -93,12 +88,13 @@ ms.lasthandoff: 09/06/2017
             assert -1 <= d <=1, " incorrect values"
 
     if __name__ == "__main__":
+        print('Running benchmarks with COUNT = {}'.format(COUNT))
         test(sequence_tanh, 'sequence_tanh')
 
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d]')
     ```
 
-1. 使用“调试”>“开始执行(不调试)”(Ctrl+F5) 运行程序以查看结果。 每个基准测试需要几秒钟才能完成。
+1. 使用“调试”>“开始执行(不调试)”(Ctrl+F5) 运行程序以查看结果。 用户可调整 `COUNT` 变量，更改基准测试的运行时长。 对于本演练，请将计数设置为让每个基准测试运行约 2 秒。
 
 ## <a name="create-the-core-c-project"></a>创建核心 C++ 项目
 
@@ -110,7 +106,7 @@ ms.lasthandoff: 09/06/2017
 
 1. 右键单击新项目并选择“属性”，然后在显示的“属性页”对话框顶部，将“配置”设置为“所有配置”。
 
-1. 按如下所述设置特定属性，然后选择“应用”（可能需要单击“应用”按钮可编辑字段的外部才能成功启用）。
+1. 如下所述设置特定属性，然后选择“确定”。
 
     | Tab | 属性 | 值 | 
     | --- | --- | --- |
@@ -118,9 +114,9 @@ ms.lasthandoff: 09/06/2017
     | | 常规 > 目标扩展名 | .pyd |
     | | 项目默认值 > 配置类型 | 动态库(.dll) |
     | C/C++ > 常规 | 附加包含目录 | 根据相应的安装添加 Python `include` 文件夹，例如 `c:\Python36\include` |     
-    | C/C++ > 代码生成 | 运行库 | 多线程 DLL (/MD)（请参阅下面的“警告”） |
     | C/C++ > 预处理器 | 预处理器定义 | 在字符串的开头添加 `Py_LIMITED_API;`，可限制可从 Python 调用的某些函数，并使代码在 Python 不同版本之间更易于移植。 |
-    | 链接器 > 常规 | 附加库目录 | 根据相应的安装添加包含 `.lib` 文件的 Python `lib` 文件夹，例如 `c:\Python36\libs`。 （务必指向包含 `.lib` 文件的 `libs` 文件夹，而非包含 `.py` 文件的 `Lib` 文件夹。） | 
+    | C/C++ > 代码生成 | 运行库 | 多线程 DLL (/MD)（请参阅下面的“警告”） |
+    | 链接器 > 常规 | 附加库目录 | 根据相应的安装添加包含 `.lib` 文件的 Python `libs` 文件夹，例如 `c:\Python36\libs`。 （务必指向包含 `.lib` 文件的 `libs` 文件夹，而非包含 `.py` 文件的 `Lib` 文件夹。） | 
 
     > [!Tip]
     > 如果未看到 C/C++ 选项卡，这是因为项目不包含标识为 C/C++ 源文件的任何文件。 如果创建的源文件不含 `.c` 或 `.cpp` 扩展名，则可能出现这种情况。 例如，如果之前在“新建项”对话框中不小心输入了 `module.coo`（而不是 `module.cpp`），则 Visual Studio 会创建文件，但不会将文件类型设置为“C/C+ 代码”，而正是它激活 C/C++ 属性选项卡。即使将文件重命名为带 `.cpp`，此识别错误仍会存在。 为了正确设置文件类型，请在解决方案资源管理器中右键单击文件，选择“属性”，然后将“文件类型”设置为“C/C++ 代码”。
@@ -148,8 +144,8 @@ ms.lasthandoff: 09/06/2017
         return (1 + pow(e, (-2 * x))) / (2 * pow(e, -x));
     }
 
-    double tanh(double x) {
-        return sinh(x) / cosh(x);
+    double tanh_impl(double x) {
+        return sinh_impl(x) / cosh_impl(x);
     }
     ```
 
@@ -158,7 +154,7 @@ ms.lasthandoff: 09/06/2017
 
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>将 C++ 项目转换为适用于 Python 的扩展
 
-若要使 C++ DLL 成为适用于 Python 的扩展，需要修改导出的方法以与 Python 类型进行交互。 然后，需要添加一个可导出模块的函数以及该模块的方法的定义。 有关此处所显示内容的背景信息，请参阅 python.org 上的 [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html)（Python/C API 参考手册）和重点的 [Module Objects](https://docs.python.org/3/c-api/module.html)（模块对象）。（务必从右上角的下拉控件中选择相应 Python 版本。）
+若要使 C++ DLL 成为适用于 Python 的扩展，需要修改导出的方法以与 Python 类型交互。 然后，需要添加一个可导出模块的函数以及该模块的方法的定义。 有关此处所显示内容的背景信息，请参阅 python.org 上的 [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html)（Python/C API 参考手册）和重点的 [Module Objects](https://docs.python.org/3/c-api/module.html)（模块对象）。（务必从右上角的下拉控件中选择相应 Python 版本。）
 
 1. 在 C++ 文件的顶部，添加 `Python.h`：
 
@@ -166,10 +162,10 @@ ms.lasthandoff: 09/06/2017
     #include <Python.h>
     ```
 
-1. 修改 `tanh` 方法以接受和返回 Python 类型：
+1. 修改 `tanh_impl` 方法以接受和返回 Python 类型：
 
     ```cpp
-    PyObject* tanh(PyObject *, PyObject* o) {
+    PyObject* tanh_impl(PyObject *, PyObject* o) {
         double x = PyFloat_AsDouble(o);
         double tanh_x = sinh_impl(x) / cosh_impl(x);
         return PyFloat_FromDouble(tanh_x);
@@ -181,7 +177,7 @@ ms.lasthandoff: 09/06/2017
     ```cpp
     static PyMethodDef superfastcode_methods[] = {
         // The first property is the name exposed to python, the second is the C++ function name        
-        { "fast_tanh", (PyCFunction)tanh, METH_O, nullptr },
+        { "fast_tanh", (PyCFunction)tanh_impl, METH_O, nullptr },
 
         // Terminate the array with an object containing nulls.
         { nullptr, nullptr, 0, nullptr }
@@ -208,21 +204,25 @@ ms.lasthandoff: 09/06/2017
     }
     ```
 
-1. 再次生成 DLL 以验证代码。
+1. 再次生成 C++ 项目来验证代码。
 
 ## <a name="test-the-code-and-compare-the-results"></a>测试代码和比较结果
 
 将 DLL 结构化为 Python 扩展后，便可从 Python 项目引用该扩展，导入模块，并使用其方法。
 
-可通过两种方法使 DLL 可供 Python 使用。 第一，可将引用从 Python 项目添加到 C++ 项目，前提是它们位于同一个 Visual Studio 解决方案中：
+### <a name="make-the-dll-available-to-python"></a>使 DLL 可供 Python 使用
 
-1. 在解决方案资源管理器中，右键单击 Python 项目，然后选择“引用”。 在对话框中，依次选择“项目”选项卡、“superfastcode”项目，然后选择“确定”。
+可通过两种方法使 DLL 可供 Python 使用。
+
+第一，可将引用从 Python 项目添加到 C++ 项目，前提是它们位于同一个 Visual Studio 解决方案中：
+
+1. 在解决方案资源管理器中，右键单击 Python 项目中的“引用”节点，然后选择“添加引用”。 在随即出现的对话框中，依次选择“项目”选项卡、“superfastcode”项目（或任何使用的名称），然后选择“确定”。
 
 第二，可在全局 Python 环境中安装模块，使其也可供其他 Python 项目使用。 执行此操作通常需要刷新该环境的 IntelliSense 完成数据库。 从环境中删除模块时也必须执行刷新。
 
-1. 如果使用 Visual Studio 2017，请运行 Visual Studio 安装程序，选择“修改”，然后选择“各个组件”>“编译器、生成工具和运行时”>“Visual C++ 2015.3 v140 工具集”。 此步骤是必需的，因为 Python（适用于 Windows）本身是使用 Visual Studio 2015（版本 14.0）构建的，并期望通过此处所述的方法生成扩展时能够使用这些工具。
+1. 如果使用 Visual Studio 2017，请运行 Visual Studio 安装程序，选择“修改”，然后选择“各个组件”>“编译器、生成工具和运行时”>“Visual C++ 2015.3 v140 工具集”。 此步骤是必需的，因为 Python（适用于 Windows）本身是使用 Visual Studio 2015（版本 14.0）生成的，并期望通过此处所述的方法生成扩展时能够使用这些工具。
 
-1. 在 C++ 项目中，创建名为 `setup.py` 的文件，具体方法为右键单击项目，依次选择“添加”>“新建项...”，搜索“Python”，选择“Python 文件”，将它命名为“setup.py”，再选择“确定”。 当编辑器中出现该文件时，将以下代码粘贴到其中：
+1. 右键单击 C++ 项目，然后选择“添加”>“新建项目...”，在项目中创建名为 `setup.py` 的文件。然后选择“C++ 文件 (.cpp)”并命名为 `setup.py`，再选择“确定”（尽管使用了 C++ 文件模板，但使用 `.py` 扩展命名文件可让 Visual Studio 将其识别为 Python）。 当编辑器中出现该文件时，将以下代码粘贴到其中：
 
     ```python
     from distutils.core import setup, Extension, DEBUG
@@ -237,41 +237,51 @@ ms.lasthandoff: 09/06/2017
 
     请参阅 [Building C and C++ Extentions](https://docs.python.org/3/extending/building.html)（生成 C 和 C++ 扩展）(python.org)，获取此脚本相关文档。
 
-1. `setup.py` 代码指示 Python 从命令行生成扩展（使用 Visual Studio 2015 C++ 工具集）。 打开提升的命令提示符，导航到包含 C++ 项目（和 `setup.py`）的文件夹，然后输入以下命令：
+1. `setup.py` 代码指示 Python 通过命令行使用 Visual Studio 2015 C++ 工具集生成扩展。 打开提升的命令提示符，导航到包含 C++ 项目（和 `setup.py`）的文件夹，然后输入以下命令：
 
-    ```bash
+    ```
     pip install .
     ```
 
-现在，可调用模块的 `tanh` 代码，并将其性能与 Python 实现进行比较：
+### <a name="call-the-dll-from-python"></a>从 Python 调用 DLL
 
-1. 在 `tanhbenchmark.py` 中添加以下行以调用从 DLL 导出的 `fast_tanh` 方法，并将其添加到基准输出中。 如果手动键入 `from s` 语句，将看到 `superfastcode` 出现在完成列表中，键入 `import` 后，将显示出 `fast_tanh` 方法。
+完成上述任一方法后，即可调用 `fast_tanh` 函数并将其性能与 Python 实现比较：
+
+1. 在 `.py` 文件中添加以下行，调用从 DLL 中导出的 `fast_tanh` 方法并显示其输出。 如果手动键入 `from s` 语句，将看到 `superfastcode` 出现在完成列表中，键入 `import` 后，将显示出 `fast_tanh` 方法。
 
     ```python
     from superfastcode import fast_tanh    
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 
-1. 运行 Python 程序，可看到 C++ 例程的运行速度比 Python 实现快 15 到 20 倍。
+1. 运行 Python 程序，可看到 C++ 例程的运行速度比 Python 实现快 5 到 20 倍。 再次尝试增加 `COUNT` 变量，让差异变得更明显。 另请注意，C++ 模块发布版本的运行速度快于调试版本的运行速度，因为调试版本优化程度较低，并包含各种错误检查。 请随意在这些配置之间切换，以便比较。
 
 ## <a name="debug-the-c-code"></a>调试 C++ 代码
 
-[Visual Studio 中的 Python 支持](installation.md)包括可[同时调试 Python 和 C++ 代码](debugging-mixed-mode.md)。 若要体验此混合模式调试，请执行以下步骤：
+Visual Studio 支持一起调试 Python 和 C++ 代码。
 
 1. 在解决方案资源管理器中，右键单击 Python 项目，依次选择“属性”、“调试”选项卡，然后选择“调试”>“启用本机代码调试”选项。
 
     > [!Tip]
     > 启用本机代码调试后，Python 输出窗口可能在程序完成后立即消失，而不出现通常的“按任何键以继续...”暂停界面。 若要强制暂停，请在启用本机代码调试后，向“调试”选项卡上的“运行”>“解释器参数”字段添加 `-i` 选项。 此参数会在代码完成后将 Python 解释器置于交互模式，此时它等待用户按 Ctrl+Z、Enter 退出。 （或者，如果不介意修改 Python 代码，则可在程序结束时添加 `import os` 和 `os.system("pause")` 语句。 此代码会复制初始的暂停提示符。）
 
-1. 在 C++ 代码的 `tanh` 方法内的第 1 行设置一个断点，然后启动调试器。 调用此代码时，调试器将会停止：
+1. 选择“文件”>“保存”以保存属性更改。
+
+1. 在 Visual Studio 工具栏中，将生成配置设置为“调试”。 
+
+    ![将生成配置设置为“调试”](media/cpp-set-debug.png)
+
+1. 由于代码在调试器中运行时通常需要更长时间，可能需要将 `.py` 文件中的 `COUNT` 变量更改为小 5 倍的值（例如，从 `500000` 更改为 `100000`）。
+
+1. 在 C++ 代码中，在 `tanh_impl` 方法内的第一行设置一个断点，然后启动调试器（F5 或“调试”>“开始调试”）。 调用该代码时，调试器将会停止。 如果未命中断点，请检查配置是否设置为“调试”以及是否已保存项目（启动调试器时，不会自动执行该操作）。
 
     ![在 C++ 代码中的断点处停止](media/cpp-debugging.png)
 
-1. 此时，可浏览 C++ 代码、检查变量等，[同时调试 Python 和 C++](debugging-mixed-mode.md) 中对此进行了详细介绍。
+1. 此时，可浏览 C++ 代码、检查变量等。 这些功能在[一起调试 Python 和 C++](debugging-mixed-mode.md) 中有详细介绍。
 
 ## <a name="alternative-approaches"></a>替代方法 
 
-下表描述了创建 Python 扩展的其他方法。 本主题已经讨论了 CPython 的第一项。
+下表描述了创建 Python 扩展的各种方法。 本主题已经讨论了 CPython 的第一项。
 
 | 方法 | 年份 | 代表用户 | 优点 | 缺点 |
 | --- | --- | --- | --- | --- |
@@ -280,4 +290,3 @@ ms.lasthandoff: 09/06/2017
 | ctype | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 无编译，广泛可用性。 | 访问和转变 C 结构的过程比较繁琐且容易出错。 |
 | Cython | 2007 | [gevent](http://www.gevent.org/)、[kivy](https://kivy.org/) | 类似于 Python。 非常成熟。 高性能。 | 编译、新语法和工具链。 |
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/)、[pypy](http://pypy.org/) | 易于集成，与 PyPy 兼容。 | 新推出，不够成熟。 |
-

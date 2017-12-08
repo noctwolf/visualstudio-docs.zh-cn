@@ -1,19 +1,17 @@
 ---
-title: "演练 - 在项目中包括 NuGet 包"
+title: "演练：在项目中包括 NuGet 包 | Microsoft Docs"
 description: "本文档介绍如何在 Xamarin 项目中包括 NuGet 包。 文档将介绍如何查找和下载包，同时介绍 IDE 集成功能。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
+ms.openlocfilehash: cb927b14e3637edd7e16c78fbed01fa4e9522652
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 0fa91c18592dee4f20832d7a0dad8aea069da93e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="including-a-nuget-package-in-your-project"></a>在项目中包括 NuGet 包
 
 NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Studio for Mac 和 Visual Studio on Windows 中。 可以使用任一 IDE 搜索包并将包添加到 Xamarin.iOS 和 Xamarin.Android 项目。
@@ -42,7 +40,7 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 
 ![源下拉列表](media/nuget-walkthrough-Source.png)
 
-打开窗口时，将从默认包源 nuget.org 中加载包列表。 初始结果应如下所示：
+打开窗口时，将从默认包源 nuget.org 中加载包列表。初始结果应如下所示：
 
 ![列出 NuGet 包](media/nuget-walkthrough-AddPackages1.png)
 
@@ -97,7 +95,7 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 
 ## <a name="adding-package-sources"></a>添加包源
 
-最初从 nuget.org 检索安装包。 然而，可以将其他包位置添加到 Visual Studio for Mac。 这有助于测试自己正在开发的 NuGet 包，或有助于使用公司或组织内的专用 NuGet 服务器。
+最初从 nuget.org 检索安装包。然而，可以将其他包位置添加到 Visual Studio for Mac。 这有助于测试自己正在开发的 NuGet 包，或有助于使用公司或组织内的专用 NuGet 服务器。
 
 在 Visual Studio for Mac 中，导航到“Visual Studio”>“首选项...”>“NuGet”>“源”，查看和编辑包源的列表。 请注意，源可以是（由 URL 指定的）远程服务器或本地目录。 
 
@@ -118,5 +116,4 @@ NuGet 文档讨论了[在不将包提交到源控件的情况下使用 NuGet](ht
 ![自动还原包](media/nuget-walkthrough-AutoRestore.png)
 
 有关如何使 `packages` 目录不受跟踪的详细信息，请参阅特定的源控件文档。
-
 

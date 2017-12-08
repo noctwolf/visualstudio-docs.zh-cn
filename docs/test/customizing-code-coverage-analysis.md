@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
-caps.latest.revision: 16
+caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
-ms.openlocfilehash: 01dc224a571144744028e98153df1c525c461156
-ms.contentlocale: zh-cn
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 64115171c64faf0f62b6530c37fa53c6631ac1d6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="customizing-code-coverage-analysis"></a>自定义代码覆盖率分析
 默认情况下，Visual Studio Code 覆盖率工具将分析单元测试过程中加载的所有解决方案程序集 (.exe/.dll)。 建议保留此默认设置，因此它在大多数时间很有用。 有关详细信息，请参阅[使用代码覆盖率确定正在测试的代码数量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。  
@@ -117,7 +101,7 @@ ms.lasthandoff: 05/23/2017
 ### <a name="regular-expressions"></a>正则表达式  
  包括和排除节点使用正则表达式。 有关详细信息，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。 正则表达式与通配符不同。 具体而言：  
   
-1.  **.\*** 与任意字符组成的字符串匹配  
+1.  .\* 与任意字符组成的字符串匹配  
   
 2.  **\\.** 与句点“.”匹配  
   
@@ -344,4 +328,3 @@ Included items must then not match any entries in the exclude list to remain inc
 ## <a name="see-also"></a>另请参阅  
  [使用代码覆盖率确定受测代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [单元测试代码](../test/unit-test-your-code.md)
-

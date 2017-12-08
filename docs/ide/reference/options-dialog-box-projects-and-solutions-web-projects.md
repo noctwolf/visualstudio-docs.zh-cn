@@ -1,28 +1,24 @@
 ---
 title: "“选项”对话框 ->“项目和解决方案”->“Web 项目”| Microsoft Docs"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.Projects.WebProjects
+f1_keywords: VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 9ab80c499a95f8fd1dee764edea9f971d9429688
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: cebc1598001459d6ab1c920fa390273242e893e0
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/02/2017
 ---
-
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>选项对话框、项目和解决方案、Web 项目
 
 设置 Web 项目都将用于 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 内的开发的 Web 服务器。 要访问这些选项，请选择“工具”>“选项”，展开“项目和解决方案”，然后选择“Web 项目”。
@@ -41,5 +37,5 @@ ms.lasthandoff: 07/26/2017
 如果已设置此选项，则在尝试运行存在编译错误的 Web 应用程序时，将发出警告。
 
 ## <a name="see-also"></a>另请参阅  
-- [“选项”对话框、项目和解决方案](projects-and-solutions-options-dialog-box.md)
-- [“选项”对话框 ->“项目和解决方案”->“生成和运行”](options-dialog-box-projects-and-solutions-web-projects.md)
+[“选项”对话框 ->“项目和解决方案”](projects-and-solutions-options-dialog-box.md)  
+[“选项”对话框 ->“项目和解决方案”->“生成和运行”](options-dialog-box-projects-and-solutions-web-projects.md)
