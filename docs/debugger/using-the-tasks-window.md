@@ -19,11 +19,11 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4eab796f0a3c6a7148c94e780439a727ee6fe450
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-the-tasks-window"></a>使用“任务”窗口
 **任务**窗口类似于**线程**窗口中，但它显示有关的信息<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](/cpp/parallel/concrt/reference/task-group-class.md)，或[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)而不是每个线程的对象。 与线程一样，任务表示可并行运行的异步操作；但是，多个任务可以在同一个线程上运行。 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/11/2017
   
  在本机代码中，你可以使用**任务**窗口时，你使用[任务组](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)，[并行算法](/cpp/parallel/concrt/parallel-algorithms)，[异步代理](/cpp/parallel/concrt/asynchronous-agents)，和[轻量级任务](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)。 有关本机代码中的任务的详细信息，请参阅[并发运行时](/cpp/parallel/concrt/concurrency-runtime)。  
   
- 在 JavaScript 中，当使用 promise .then 代码时，可使用“任务”窗口。 请参阅[JavaScript （UWP 应用程序） 中的异步编程](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx)有关详细信息。   
+ 在 JavaScript 中，你可以使用任务窗口时你正在使用承诺`.then`代码。 请参阅[JavaScript （UWP 应用程序） 中的异步编程](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx)有关详细信息。   
   
  你可以使用**任务**窗口时中断调试器。 你可以访问它的计算机上**调试**菜单中单击**Windows** ，然后单击**任务**。 下图显示**任务**窗口处于默认模式。  
   

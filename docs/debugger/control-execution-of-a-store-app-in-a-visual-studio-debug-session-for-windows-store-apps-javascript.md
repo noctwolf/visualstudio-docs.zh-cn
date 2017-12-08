@@ -17,11 +17,11 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31353d1063bc6d4f29eaa0fcde308ce3c34fc218
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 60b9465677ce033f8b285ce21e2b8332bf88a73a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="control-execution-of-a-uwp-app-in-a-visual-studio-debug-session-javascript"></a>UWP 应用的 Visual Studio 调试会话 (JavaScript) 中的控件执行
 本快速入门介绍了如何在 Visual Studio 调试器中进行导航以及如何在会话中查看程序状态。  
@@ -69,7 +69,7 @@ ms.lasthandoff: 11/11/2017
   
 2.  **打开 default.js 源文件。** 在解决方案资源管理器，打开**js**节点，然后选择`default.js`。  
   
-3.  **将页面内容替换为示例代码。** 从 `default.js` 文件中启动。 访问以下链接： [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)，然后将 JavaScript 分中列出的代码复制到剪贴板上。 (选择**回**在浏览器或帮助查看器以返回此快速入门页。)在 Visual Studio 编辑器中，将代码粘贴到当前为空的 `default.js` 中。 选择“Ctrl+ S”  以保存文件。  
+3.  **将页面内容替换为示例代码。** 从 `default.js` 文件中启动。 访问以下链接：[调试器导航示例代码 (JavaScript)](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-javascript.js)，然后将复制到剪贴板的 JavaScript 部分中列出的代码。 (选择**回**在浏览器或帮助查看器以返回此快速入门页。)在 Visual Studio 编辑器中，将代码粘贴到当前为空的 `default.js` 中。 选择“Ctrl+ S”  以保存文件。  
   
  现在可以遵循本主题中的示例进行操作。  
   

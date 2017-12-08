@@ -17,11 +17,11 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c7679aff620b415a8b3c7f7b226d808d0f3f492
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>在 Visual Studio 中导航调试会话（Xaml 和 C#）
 本快速入门演示如何导航 Visual Studio 调试会话以及如何在会话中查看和更改程序状态。  
@@ -52,7 +52,7 @@ ms.lasthandoff: 11/11/2017
   
  **打开 MainPage.xaml.cs 源文件。** 右键单击 XML 编辑器中的任何位置，然后选择 **“查看代码”**。 MainPage.xaml.cs 代码隐藏文件随即显示。 请注意，该文件中仅列出一个方法（即 `MainPage()` 构造函数）。  
   
- **将 MainPage 构造函数替换为示例代码。** 删除 MainPage() 方法。 访问以下链接：[调试器导航示例代码 （Xaml 和 C#）](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)，然后将复制到剪贴板的 C# 部分中列出的代码。 (选择**回**在浏览器或帮助查看器以返回此快速入门页。)在 Visual Studio 编辑器中，在 `partial class MainPage` 块中粘贴代码。 选择 Ctrl + s 以保存文件。  
+ **将 MainPage 构造函数替换为示例代码。** 删除 MainPage() 方法。 访问以下链接：[调试器导航示例代码 （Xaml 和 C#）](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-xaml-and-csharp.cs)，然后将复制到剪贴板的 C# 部分中列出的代码。 (选择**回**在浏览器或帮助查看器以返回此快速入门页。)在 Visual Studio 编辑器中，在 `partial class MainPage` 块中粘贴代码。 选择 Ctrl + s 以保存文件。  
   
  现在可以遵循本主题中的示例进行操作。  
   

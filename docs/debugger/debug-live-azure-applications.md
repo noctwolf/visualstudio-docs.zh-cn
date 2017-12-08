@@ -1,6 +1,6 @@
 ---
 title: "调试实时 ASP.NET Azure 应用程序的 Visual Studio |Microsoft 文档"
-ms.date: 11/13/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>调试使用快照调试器的实时 ASP.NET Azure 应用程序
 
@@ -33,7 +33,7 @@ Snappoints 和 logpoints 是类似于断点。 与断点，不同 snappoints 不
 
 ## <a name="start-the-snapshot-debugger"></a>启动快照调试器
 
-1. 安装[Visual Studio Enterprise 15.5 预览版](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes)或更高版本。 如果你要更新从以前的 Visual Studio 2017 预览版，运行 Visual Studio 安装程序，并检查 ASP.NET 和 web 开发工作负荷中的快照调试器组件。
+1. 安装[Visual Studio 2017 Enterprise 版本 15.5](https://www.visualstudio.com/downloads/)或更高版本。 如果你正在从以前的 Visual Studio 2017 安装更新，运行 Visual Studio 安装程序，并检查 ASP.NET 和 web 开发工作负荷中的快照调试器组件。
 
 2. 打开你想要进行快照调试的项目。 
 
