@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d76ced1c908c832e9fd583eecc3419e57aeb76c7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>访问 Visual Studio 中的数据
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/22/2017
 |SQL 数据库|DocumentDB|存储 （blob、 表、 队列、 文件）|
 |SQL 数据仓库|SQL Server Stretch Database|StorSimple|
 
-和的详细信息...
+更多内容...
 
 **SQL**
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/22/2017
 |MySQL|Oracle|PostgreSQL|
 |SQLite|||
 
-和的详细信息...
+更多内容...
 
 **NoSQL**
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 11/22/2017
 |NDatabase|OrientDB|RavenDB|
 |VelocityDB|||
 
-和的详细信息...
+更多内容...
 
 许多数据库供应商和第三方通过 NuGet 包来支持 Visual Studio 集成。 在 nuget.org 上或通过 NuGet 包管理器在 Visual Studio 中，你可以浏览产品 (**工具** > **NuGet 包管理器** > **管理 NuGet解决方案包**)。 其他数据库产品与 Visual Studio 集成扩展。 你可以通过导航到浏览这些产品/服务在 Visual Studio Marketplace**工具**，**扩展和更新**，然后选择**联机**中的左窗格对话框。 有关详细信息，请参阅[for Visual Studio 兼容的数据库系统](../data-tools/installing-database-systems-tools-and-samples.md)。
 
