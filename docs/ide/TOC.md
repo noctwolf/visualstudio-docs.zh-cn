@@ -6,6 +6,7 @@
 # [Visual Studio 开发入门](get-started-developing-with-visual-studio.md)
 ## [Visual C# 和 Visual Basic 入门](getting-started-with-visual-csharp-and-visual-basic.md)
 ### [快速入门：创建首个 ASP.NET Core Web 应用](../ide/quickstart-aspnet-core.md)
+### [快速入门：创建 Visual Basic 控制台应用程序](../ide/quickstart-visual-basic-console.md)
 ### [演练：使用 Visual C# 或 Visual Basic 创建简单应用程序](walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 ### [教程 1：创建图片查看器](tutorial-1-create-a-picture-viewer.md)
 #### [步骤 1：创建 Windows 窗体应用程序项目](step-1-create-a-windows-forms-application-project.md)
