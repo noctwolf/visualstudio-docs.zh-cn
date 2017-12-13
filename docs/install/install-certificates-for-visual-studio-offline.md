@@ -14,11 +14,11 @@ ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e6dcf1187db5c1e3dd911bc9f91867c383e5a8b2
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: ed86e3cd404c40026fad20ef08d4daecd98d74f2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 
@@ -42,7 +42,7 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 
 如果正在编写在脱机环境中将 Visual Studio 部署到客户端工作站的脚本，应执行以下步骤：
 
-1. 将[证书管理器工具](https://msdn.microsoft.com/library/e78byta0.aspx) (certmgr.exe) 复制到安装共享（例如，\\server\share\vs2017）。 Windows 自身不附带 Certmgr.exe，但 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 可以提供。
+1. 将[证书管理器工具](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) 复制到安装共享（例如，\\server\share\vs2017）。 Windows 自身不附带 Certmgr.exe，但 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 可以提供。
 
 2. 使用下面的命令创建批处理文件：
 

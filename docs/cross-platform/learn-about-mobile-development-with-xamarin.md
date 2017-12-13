@@ -11,11 +11,11 @@ caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: d203bf88f5af6e69b97404ef8da4548f646750b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fe983de5dab35a031d6c99b37f2da77a200212f9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解关于使用 Xamarin 进行移动开发的信息
 本主题可将引导你概览有助于了解如何使用 Xamarin 开发跨平台移动应用的资料。 如果尚未安装 Visual Studio 和 Xamarin，请首先启动 [Setup and install](../cross-platform/setup-and-install.md) 过程，然后在安装程序运行期间返回此处浏览这些资源。  
@@ -94,7 +94,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  Apple 的 iOS 模拟器。 若要了解详细信息，请参阅 [iOS 模拟器入门](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com)。  
   
-3.  Microsoft 的 Windows Phone 仿真程序。 若要了解详细信息，请参阅 [适用于 Windows Phone 8 的 Windows Phone 模拟器](https://msdn.microsoft.com/library/dn632391.aspx)。  
+3.  Microsoft 的 Windows Phone 仿真程序。 若要了解详细信息，请参阅 [适用于 Windows Phone 8 的 Windows Phone 模拟器](../debugger/run-windows-phone-apps-in-the-emulator.md)。  
   
 ##  <a name="components"></a> Deeper Dive: Xamarin Components  
  *10 分钟*  

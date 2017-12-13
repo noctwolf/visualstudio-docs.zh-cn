@@ -16,11 +16,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 8bf11425439387a13db2bb77f0ce798bef076461
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 28f06905820d890f2f13c3c7e77fd57fb75fe4b6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序
 Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程序，该程序使用 Azure 移动服务来存储和提供数据。  
@@ -556,7 +556,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
      这将调用 **UpdateCheckedTodoItem** 方法并从列表和数据库中删除该项。  
   
 ## <a name="next-steps"></a>后续步骤  
- 你已通过 Azure 后端完成了 WPF 桌面应用程的一个相当简单的示例。 当然，实际的应用程序很可能更为复杂，但应用的都是相同的基本概念。 请参阅 [.NET Framework 中的 WPF](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx)。  
+ 你已通过 Azure 后端完成了 WPF 桌面应用程的一个相当简单的示例。 当然，实际的应用程序很可能更为复杂，但应用的都是相同的基本概念。 请参阅 [.NET Framework 中的 WPF](https://msdn.microsoft.com/en-us/library/ms754130)。  
   
  你可以通过添加颜色、形状、图形和甚至动画来使用户界面更有吸引力。 请参阅[在 Visual Studio 中，使用 XAML 设计器创建 UI](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) 和[使用 Blend for Visual Studio 创建 UI](creating-a-ui-by-using-blend-for-visual-studio.md)。 有关这两种工具的比较，请参阅[在 Visual Studio 和 Blend for Visual Studio 中设计 XAML](../designers/designing-xaml-in-visual-studio.md)。  
 

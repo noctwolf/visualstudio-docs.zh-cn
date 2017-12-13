@@ -18,11 +18,11 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b907be5e46b6d8d33232d120d4229b0e205f948b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>性能分析初学者指南
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程演示如何使用诊断工具的“CPU 使用率”选项卡获取应用的性能数据。 Visual Studio 中的 .NET 开发（包括 ASP.NET、和本机 /C++ 开发）支持此诊断工具。
@@ -108,7 +108,6 @@ ms.lasthandoff: 10/31/2017
     在此视图中，所选函数显示在标题和“当前函数”框中（本例中为 GetNumber）。 调用当前函数的函数显示在左侧的“调用函数”中，当前函数调用的任何函数均显示在右侧的“被调用函数”框中。 （可选择其中一个框来更改当前函数。）
 
     此视图显示总时间及函数完成执行所用的总体应用运行时间的百分比。
-
     **函数体**还显示函数体中所用的时间总量（及百分比），其中不包括调用和被调用函数中所用的时间。 （在此示例中，共花费 3729 毫秒，函数体内花费 3713 毫秒，其余 16 毫秒花费在此函数调用的外部代码中）。
 
     > [!TIP]

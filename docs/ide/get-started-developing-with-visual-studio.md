@@ -13,11 +13,11 @@ caps.latest.revision: "65"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 5ac7781ecb53727572a9d8594f4a65c5e9c6628c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 9d35ce547e216f632f56cf8bf445b115290486cc
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 欢迎使用 Visual Studio！ [已下载](http://www.visualstudio.com/community) 该产品后，这些页面将有助于开始编码。  
@@ -32,11 +32,11 @@ ms.lasthandoff: 10/31/2017
 
 -   **[在 C# 或 Visual Basic (Xamarin) 中创建跨平台的移动应用程序](../cross-platform/visual-studio-and-xamarin.md)**：开始使用 Visual Studio 和适用于 Xamarin 的工具从共享代码库创建在 Android、iOS 和通用 Windows 平台上运行的移动应用程序。  
 
-     加载示例：[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/)（本机 UI）或 [Xamarin 窗体 Todo 示例](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo)（Xamarin.Forms 共享 UI）| [学习教程](https://msdn.microsoft.com/library/dn879698.aspx) |                            [浏览文档](https://msdn.microsoft.com/en-us/library/mt299001.aspx) |                                 [观看视频](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
+     加载示例：[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/)（本机 UI）或 [Xamarin 窗体 Todo 示例](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo)（Xamarin.Forms 共享 UI）| [学习教程](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md) |                            [浏览文档](../cross-platform/visual-studio-and-xamarin.md) |                                 [观看视频](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
 
 -   **[在 C++ 中创建本机跨平台应用程序和库](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)**转到此处以开始创建在 Android、iOS 和通用 Windows 平台上运行的 C++ 应用程序和库。  
 
-     [加载示例](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) | [学习教程](https://msdn.microsoft.com/en-us/library/dn707595.aspx) |                              [浏览文档](https://msdn.microsoft.com/en-us/library/dn707591.aspx) |                               [观看视频](https://channel9.msdn.com/Series/ConnectOn-Demand/239)  
+     [加载示例](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) | [学习教程](../cross-platform/create-an-android-native-activity-app.md) |                              [浏览文档](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) |                               [观看视频](https://channel9.msdn.com/Series/ConnectOn-Demand/239)  
 
 -   **[使用 DirectX 创建游戏](https://msdn.microsoft.com/en-us/library/windows/desktop/ee663274.aspx)**：开始使用 DirectX 创建通用 Windows 平台游戏。  
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 
 -   **[使用 Unity 创建游戏](../cross-platform/visual-studio-tools-for-unity.md)**：开始使用 Unity 框架创建跨平台游戏。  
 
-     [加载示例](http://unity3d.com/learn/resources/downloads) |                    [学习教程](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) |                              [浏览文档](https://msdn.microsoft.com/en-us/library/dn940019.aspx) |    [观看视频](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)  
+     [加载示例](http://unity3d.com/learn/resources/downloads) |                    [学习教程](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) |                              [浏览文档](../cross-platform/visual-studio-tools-for-unity.md) |    [观看视频](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)  
 
 -   **[制作通用 Windows 平台应用程序](https://dev.windows.com/en-us/windows-apps)** ：开始创建在通用 Windows 平台（XBox、PC、平板电脑、Windows Phone、Surface Hub 和物联网）上运行的应用程序。  
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 10/31/2017
 
 -   **[制作桌面应用程序](https://dev.windows.com/en-us/desktop)** ：转到此处以开始创建在 Windows PC 上运行的传统桌面应用程序。  
 
-     [加载示例](https://github.com/microsoft/windows-classic-samples) |                    [学习教程](https://msdn.microsoft.com/en-us/library/dd492171.aspx)  |                              [浏览文档](https://dev.windows.com/en-us/desktop)  
+     [加载示例](https://github.com/microsoft/windows-classic-samples) |                    [学习教程](getting-started-with-visual-csharp-and-visual-basic.md)  |                              [浏览文档](https://dev.windows.com/en-us/desktop)  
 
 -   **[制作 Office 应用程序](https://msdn.microsoft.com/en-us/library/fp161347.aspx)** ：开始创建 Office 应用程序，扩展和自定义具有 Office 365 服务的 Word、Excel、Outlook 和 Powerpoint。  
 

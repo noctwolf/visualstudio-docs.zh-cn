@@ -13,25 +13,23 @@ helpviewer_keywords:
 - Help [Visual Studio], shortcut keys
 - keyboard shortcuts [Visual Studio], keyboard binding schemes
 - keyboard shortcuts
-ms.assetid: c2c64648-00f8-4e48-a8a0-96c67cfd968c
-caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2926543ca041ac2b2cc25bc178b99bbafd2407db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 335589c6487d99726b86921fa988dce64dd384b8
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷键
 有关键盘辅助功能的详细信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)和[如何：仅使用键盘进行操作](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
 
 通过选择相应的键盘快捷方式，可访问 Visual Studio 中的各种命令和窗口。 本主题列出了常规开发配置文件的默认快捷键，安装 Visual Studio 时可能已选择该配置文件。 无论选择哪个配置文件，都可以通过打开“选项”对话框，展开“环境”节点，然后选择“键盘”，认识命令的快捷键。 你还可以为任意给定命令分配不同的快捷键，以自定义你的快捷键。
 
- 有关常见键盘快捷方式列表和其他工作效率信息，请参阅 [Visual Studio 中常用命令的默认键盘快捷方式](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)、[提示和技巧](../ide/tips-and-tricks-for-visual-studio.md)以及[工作效率提示](../ide/productivity-tips-for-visual-studio.md)。
+有关常见键盘快捷方式列表和其他工作效率信息，请参阅 [Visual Studio 中常用命令的默认键盘快捷方式](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)、[提示和技巧](../ide/tips-and-tricks-for-visual-studio.md)以及[工作效率提示](../ide/productivity-tips-for-visual-studio.md)。
 
- 下表中的各部分包含全局命令，你可以从 Visual Studio 中的任意位置使用键盘快捷键访问它们：  
+下表中的各部分包含全局命令，你可以从 Visual Studio 中的任意位置使用键盘快捷键访问它们：
 
 |||||  
 |-|-|-|-|  
@@ -43,12 +41,12 @@ ms.lasthandoff: 10/31/2017
 |[调试器上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[其他上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation 上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|  
 |[诊断中心](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||  
 
- 下表中的每一部分包含的命令所对应的键盘快捷键均特定于该部分的名称所指定的上下文。  
+下表中的每一部分包含的命令所对应的键盘快捷键均特定于该部分的名称所指定的上下文。
 
 |||||  
 |-|-|-|-|  
 |[ADO.NET 实体数据模型设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ADONET)|[层关系图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_layerDiagram)|[设置设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SettingsDesigner)|[VC 图像编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcimageeditor)|  
-|[类图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[托管资源编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[解决方案资源管理器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[VC 字符串编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|  
+|[类图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[托管资源编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[解决方案资源管理器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[VC 字符串编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|
 |[编码的 UI 测试编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_codedUItest)|[合并编辑器窗口](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_MergeEditor)|[团队资源管理器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TeamExplorer)|[视图设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_viewDesigner)|  
 |[数据集编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server Data Tools，架构比较](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Team Foundation Build 详细信息编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|  
 |[差异查看器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Microsoft SQL Server Data Tools，表设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[测试资源管理器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Windows 窗体设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|  
@@ -56,26 +54,26 @@ ms.lasthandoff: 10/31/2017
 |[F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Microsoft SQL Server Data Tools，T-SQL PDW 编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[UML 活动图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[工作项查询视图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|  
 |[关系图文档编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)|[Page Inspector](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)|[UML 类图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)|[工作项结果视图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)|  
 |[图形诊断](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphicsDebugger)|[查询设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryDesigner)|[UML 组件图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLcomponentDiagram)|[工作流设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workflowdesigner)|  
-|[HTML 编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[查询结果](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[UML 用例图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[XAML UI 设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|  
+|[HTML 编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[查询结果](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[UML 用例图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[XAML UI 设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|
 |[HTML 编辑器设计视图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[报表设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[VC 快捷键编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[XML（文本） 编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|  
 |[HTML 编辑器源视图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[序列图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[VC 对话框编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[XML 架构设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|  
 
-##  <a name="bkmk_global"></a>全局  
+##  <a name="bkmk_global"></a>全局
 
-###  <a name="bkmk_analyze"></a>分析  
+###  <a name="bkmk_analyze"></a>分析
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
 |分析.向后定位|Shift+Alt+3|  
 |分析.向前定位|Shift+Alt+4|  
 
-###  <a name="bkmk_architecture"></a>体系结构  
+###  <a name="bkmk_architecture"></a>体系结构
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
 |体系结构.新建关系图|Ctrl+\\、Ctrl+N|  
 
-###  <a name="bkmk_build"></a>生成  
+###  <a name="bkmk_build"></a>生成
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
@@ -84,13 +82,13 @@ ms.lasthandoff: 10/31/2017
 |生成.编译|Ctrl+F7|  
 |生成.对解决方案运行代码分析|Alt+F11|  
 
-###  <a name="bkmk_classview"></a>类视图上下文菜单  
+###  <a name="bkmk_classview"></a>类视图上下文菜单
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
 |类视图上下文菜单.类视图多选项目引用项.属性|Alt+Enter|  
 
-###  <a name="bkmk_debug"></a>调试  
+###  <a name="bkmk_debug"></a>调试
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
@@ -158,7 +156,7 @@ ms.lasthandoff: 10/31/2017
 |调试.监视3|Ctrl+Alt+W、3|  
 |调试.监视4|Ctrl+Alt+W、4|  
 
-###  <a name="bkmk_debugger"></a>调试器上下文菜单  
+###  <a name="bkmk_debugger"></a>调试器上下文菜单
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
@@ -166,13 +164,13 @@ ms.lasthandoff: 10/31/2017
 |调试器上下文菜单.断点窗口.转到反汇编|Alt+F9、A|  
 |调试器上下文菜单.断点窗口.转到源代码|Alt+F9、S|  
 
-###  <a name="bkmk_diagnostics"></a>诊断中心  
+###  <a name="bkmk_diagnostics"></a>诊断中心
 
 |命令|键盘快捷键|  
 |-------------|-----------------------|  
 |诊断中心.停止收集|Ctrl+Alt+F2|  
 
-###  <a name="bkmk_edit"></a>编辑  
+###  <a name="bkmk_edit"></a>编辑
 
 |命令||  
 |--------------|-|  
@@ -231,7 +229,7 @@ ms.lasthandoff: 10/31/2017
 |编辑.外侧代码|Ctrl+K、Ctrl+S|  
 |编辑.取消|Ctrl+Z<br /><br /> 或<br /><br /> Alt+Backspace|  
 
-###  <a name="bkmk_editorContext"></a>编辑器上下文菜单  
+###  <a name="bkmk_editorContext"></a>编辑器上下文菜单
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
@@ -242,7 +240,7 @@ ms.lasthandoff: 10/31/2017
 |编辑器上下文菜单.代码窗口.切换标头代码文件|Ctrl+K、Ctrl+O|  
 |编辑器上下文菜单.代码窗口.查看调用层次结构|Ctrl+K、Ctrl+T<br /><br /> 或<br /><br /> Ctrl+K、T|  
 
-###  <a name="bkmk_file"></a>文件  
+###  <a name="bkmk_file"></a>文件
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
@@ -258,7 +256,7 @@ ms.lasthandoff: 10/31/2017
 |文件.保存选定项|Ctrl+S|  
 |文件.在浏览器中查看|Ctrl+Shift+W|  
 
-###  <a name="bkmk_help"></a>帮助  
+###  <a name="bkmk_help"></a>帮助
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
@@ -267,19 +265,19 @@ ms.lasthandoff: 10/31/2017
 |Help.ViewHelp|Ctrl+F1|  
 |帮助.窗口帮助|Shift+F1|  
 
-###  <a name="bkmk_loadtest"></a>负载测试  
+###  <a name="bkmk_loadtest"></a>负载测试
 
 |命令|键盘快捷键|  
 |-------------|-----------------------|  
 |负载测试.跳至计数器窗格|Ctrl+R、Q|  
 
-###  <a name="bkmk_otherContext"></a>其他上下文菜单  
+###  <a name="bkmk_otherContext"></a>其他上下文菜单
 
 |命令|键盘快捷键|  
 |-------------|-----------------------|  
 |其他上下文菜单.Microsoft 数据实体设计上下文.添加新关系图|Insert|  
 
-###  <a name="bkmk_project"></a>项目  
+###  <a name="bkmk_project"></a>项目
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
@@ -291,14 +289,14 @@ ms.lasthandoff: 10/31/2017
 |项目.发布选定文件|Alt+;、Alt+P|  
 |项目.替换服务器上的选定文件|Alt+;、Alt+R|  
 
-###  <a name="bkmk_projectContext"></a>项目和解决方案上下文菜单  
+###  <a name="bkmk_projectContext"></a>项目和解决方案上下文菜单
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
 |项目和解决方案上下文菜单.项.下移|Alt+向下键|  
 |项目和解决方案上下文菜单.项.上移|Alt+向上键|  
 
-###  <a name="bkmk_refactor"></a>重构  
+###  <a name="bkmk_refactor"></a>重构
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
@@ -309,7 +307,7 @@ ms.lasthandoff: 10/31/2017
 |重构.重命名|Ctrl+R、Ctrl+R|  
 |重构.重新排列参数|Ctrl+R、Ctrl+O|  
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a>解决方案资源管理器  
+###  <a name="bkmk_solutionexplorerGLOBAL"></a>解决方案资源管理器
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
@@ -317,7 +315,7 @@ ms.lasthandoff: 10/31/2017
 |解决方案资源管理器.挂起更改筛选器|Ctrl+[、P<br /><br /> 或<br /><br /> Ctrl+[、Ctrl+P|  
 |解决方案资源管理器.与活动文档同步|Ctrl+[、S<br /><br /> 或<br /><br /> Ctrl+[、Ctrl+S|  
 
-###  <a name="bkmk_team"></a>团队  
+###  <a name="bkmk_team"></a>团队
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
@@ -326,7 +324,7 @@ ms.lasthandoff: 10/31/2017
 |团队.Git.转到 Git 提交|Ctrl+0、Ctrl+O<br /><br /> 或<br /><br /> Ctrl+0、O|  
 |团队.团队资源管理器搜索|Ctrl+'|  
 
-###  <a name="bkmk_TFcontext"></a>Team Foundation 上下文菜单  
+###  <a name="bkmk_TFcontext"></a>Team Foundation 上下文菜单
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
@@ -341,14 +339,14 @@ ms.lasthandoff: 10/31/2017
 |Team Foundation 上下文菜单.命令.转到 Web 访问|Ctrl+0、Ctrl+A<br /><br /> 或<br /><br /> Ctrl+0、A|  
 |Team Foundation 上下文菜单.命令.转到工作项|Ctrl+0、Ctrl+W<br /><br /> 或<br /><br /> Ctrl+0、W|  
 
-###  <a name="bkmk_test"></a>测试  
+###  <a name="bkmk_test"></a>测试
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
 |测试.使用编码的 UI 测试生成器|Ctrl+\\、Ctrl+C|  
 |测试.使用现有的操作录制|Ctrl+\\、Ctrl+A|  
 
-###  <a name="bkmk_testexplorerGLOBAL"></a>测试资源管理器  
+###  <a name="bkmk_testexplorerGLOBAL"></a>测试资源管理器
 
 |命令|键盘快捷键|  
 |--------------|------------------------|  
@@ -1166,6 +1164,7 @@ ms.lasthandoff: 10/31/2017
 |Xsd 设计器.显示图形视图|Ctrl+3|  
 |Xsd 设计器.显示起始视图|Ctrl+1|  
 
-## <a name="see-also"></a>另请参阅  
- [图标的图像编辑器](/cpp/windows/image-editor-for-icons)   
- [使用 IntelliSense](../ide/using-intellisense.md)
+## <a name="see-also"></a>请参阅
+ 
+[图标的图像编辑器](/cpp/windows/image-editor-for-icons)  
+[使用 IntelliSense](../ide/using-intellisense.md)

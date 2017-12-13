@@ -15,11 +15,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 75a333c7e5948e13db0c0c91b41128914e23222b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>演练：我的第一个 WPF 桌面应用程序
 本演练提供了 Windows Presentation Foundation (WPF) 开发的简介。 你将创建一个基本应用程序，其中包括大多数 WPF 桌面应用程序中常见的元素：XAML 标记、代码隐藏、应用程序定义、控件、布局、数据绑定和样式。  
@@ -201,7 +201,7 @@ ms.lasthandoff: 10/31/2017
     <Page x:Class="ExpenseReportPage"  
     ```  
   
-5.  在菜单栏上，依次选择 “调试”和“开始调试”  （或按 F5）以运行应用程序。  
+5.  在菜单栏上，依次选择 “调试”和“启动调试”  （或按 F5）以运行应用程序。  
   
      下面的插图显示带导航窗口按钮的应用程序。  
   
@@ -851,40 +851,40 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Best_Practices"></a>最佳做法  
  此示例演示了 WPF 的基础知识，因此不遵循应用程序开发的最佳做法。 有关 WPF 和.NET Framework 应用程序开发最佳做法的全面介绍，请参阅以下相应的主题：  
   
--   辅助功能 - [辅助功能最佳做法](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)  
+-   辅助功能 - [辅助功能最佳做法](/dotnet/framework/ui-automation/accessibility-best-practices)  
   
--   安全性 - [Windows Presentation Foundation 安全性](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   安全性 - [Windows Presentation Foundation 安全性](/dotnet/framework/wpf/security-wpf)  
   
--   本地化 - [WPF 全球化和本地化概述](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   本地化 - [WPF 全球化和本地化概述](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   性能 - [优化 WPF 应用程序性能](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   性能 - [优化 WPF 应用程序性能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
 ##  <a name="Whats_Next"></a> 下一步  
  通过使用 WPF，你现在可以采用大量技术来创建桌面应用程序。 你现在应该基本了解数据绑定 WPF 应用程序的构建基块。 本主题并不详尽，但希望你现在也能够意识到你可以自己发现本主题尚未介绍的技术。  
   
  有关 WPF 体系结构和编程模型的详细信息，请参阅以下主题：  
   
--   [WPF 体系结构](https://msdn.microsoft.com/en-us/library/ms750441\(v=vs.100\).aspx)  
+-   [WPF 体系结构](/dotnet/framework/wpf/advanced/wpf-architecture)  
   
--   [XAML 概述](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)  
+-   [XAML 概述](/dotnet/framework/wpf/advanced/xaml-overview-wpf)  
   
--   [依赖项属性概述](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx)  
+-   [依赖项属性概述](/dotnet/framework/wpf/advanced/dependency-properties-overview)  
   
--   [布局系统](https://msdn.microsoft.com/en-us/library/ms745058\(v=vs.100\).aspx)  
+-   [布局系统](/dotnet/framework/wpf/advanced/layout)  
   
--   [样式和模板](https://msdn.microsoft.com/en-us/library/bb613570\(v=vs.100\).aspx)  
+-   [样式和模板](/dotnet/framework/wpf/controls/styles-and-templates)  
   
  有关创建应用程序的详细信息，请参阅以下主题：  
   
--   [应用程序开发概述](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)  
+-   [应用程序开发概述](/dotnet/framework/wpf/app-development/index)  
   
--   [控件概述](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)  
+-   [控件概述](/dotnet/framework/wpf/controls/index)  
   
--   [数据绑定概述](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)  
+-   [数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)  
   
--   [WPF 图形、动画和媒体概述](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)  
+-   [WPF 图形、动画和媒体概述](https://msdn.microsoft.com/en-us/library/ms742562)  
   
--   [WPF 中的文档](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
+-   [WPF 中的文档](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
 ## <a name="see-also"></a>另请参阅  
 [使用 Windows Presentation Foundation 创建新式桌面应用程序](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
