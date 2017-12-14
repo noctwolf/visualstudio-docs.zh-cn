@@ -8,22 +8,21 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 783da5fd-726c-4716-994e-aa04d6b75896
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: da14e15713e7c02dbd99bc0595e6ca19217a5cbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac891c48a4d3d2276fa925dd6092d1bf1d72176d
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-cookiecutter-extension"></a>使用 Cookiecutter 扩展
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) 可提供图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 Cookiecutter 在 Visual Studio 2017 中随附，在 Visual Studio 早期版本中可单独安装。
 
-Cookiecutter 需要 Python 3.3 或更高版本（32 位或 64 位）或者 Anaconda 3 4.2 或更高版本（32 位或 64 位）。 如果适用的 Python 解释器不可用，Visual Studio 将显示警告。 如果 Visual Studio 运行时安装 Python 解释器，请单击Cookiecutter 工具栏上的“开始”按钮，检测新安装的解释器。
+Cookiecutter 需要 Python 3.3 或更高版本（32 位或 64 位）或者 Anaconda 3 4.2 或更高版本（32 位或 64 位）。 如果适用的 Python 解释器不可用，Visual Studio 将显示警告。 如果 Visual Studio 运行时安装 Python 解释器，请单击Cookiecutter 工具栏上的“开始”按钮，检测新安装的解释器。 （请参阅 [Python 环境](python-environments.md)了解有关整体环境的详细信息。）
 
 安装后，选择“视图”>“Cookiecutter 资源管理器”打开其窗口：
 

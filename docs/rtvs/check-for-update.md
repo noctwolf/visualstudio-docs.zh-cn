@@ -1,27 +1,26 @@
 ---
 title: "针对 Visual Studio 的 R 工具的当前版本 | Microsoft Docs"
 ms.custom: 
-ms.date: 07/25/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ae5fca3b-ce82-4b81-8625-75454e4099b0
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e4d8c85efe007a890876865b0ab6b0cd69b54bbd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 835a854e4b5540910b5d6a6bae2e3bf89748c860
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="rtvs-current-version"></a>RTVS 当前版本
 
-截至此页的最后一次更新，针对 Visual Studio 的 R 工具 (RTVS) 的最新版本为 1.0.30623.0940。 你使用的版本可能不同，具体取决于 Visual Studio 的版本和是否使用了预览通道。
+截至此页的最后一次更新，针对 Visual Studio 的 R 工具 (RTVS) 的最新版本为 1.3.31108.1213。 你使用的版本可能不同，具体取决于 Visual Studio 的版本和是否使用了预览通道。
 
 可前往 Visual Studio 的“帮助”>“关于”检查版本，并向下滚动到“针对 Visual Studio 的 R 工具”条目： 
 

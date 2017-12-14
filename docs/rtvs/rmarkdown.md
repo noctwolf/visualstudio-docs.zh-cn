@@ -1,31 +1,30 @@
 ---
 title: "使用针对 Visual Studio 的 R 工具创建 R Markdown | Microsoft Docs"
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 11/16/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3ac955b2-b6e1-4d32-b1a4-2882c93311fc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e3d9ee899c9ed82cacfd9466412bacfea6b8c5e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ed9a2c71807af604e83459299a4d7ec58dfedbe5
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="creating-r-markdown-documents"></a>创建 R Markdown 文档
 
 [R Markdown](https://rmarkdown.rstudio.com/) 是一种文档格式，可将 R 中的分析转化为高质量的文档、报告、演示文稿和仪表板。
 
-针对 Visual Studio 的 R 工具 (RTVS) 提供了 R Markdown 项模板、编辑器支持（包括编辑器中适用于 R 代码的 IntelliSense）和文件生成功能。
+针对 Visual Studio 的 R 工具 (RTVS) 提供了 R Markdown 项模板、编辑器支持（包括编辑器中适用于 R 代码的 IntelliSense）、文件生成功能和实时预览。
 
-使用 R Markdown：
+## <a name="using-r-markdown"></a>使用 R Markdown
 
 1. 关闭 Visual Studio。
 1. （仅一次）从 [pandoc.org](http://pandoc.org/installing.html) 安装 `pandoc`。
@@ -37,7 +36,7 @@ ms.lasthandoff: 10/31/2017
     install.packages("rmarkdown")
 
     ```
-1. 使用“文件”>“新建”菜单命令，并从列表中选择“R Markdown”创建新 R Markdown 文件，或者在解决方案资源管理器中右键单击项目，选择“添加 R Markdown”（或使用“添加”>“新项...”，并从列表中选择“R Markdown”）。
+1. 要创建新的 R Markdown 文件，请使用“文件”>“新建”>“文件”菜单命令，并在列表中选择”R”>”R Markdown”。 在项目的上下文中，在解决方案资源管理器中右键单击项目，选择“添加 R Markdown”（或“添加”>“新建项目...”，并在列表中选择”R Markdown”）。
 
 1. 新文件的默认内容如下：
 
@@ -46,23 +45,29 @@ ms.lasthandoff: 10/31/2017
     title: "Untitled"
     output: html_document
     ---
-    
+
     This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and Microsoft Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-    
+
     When you click the **R Tools | Publish | Preview** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-    
+
     ```{r}
     summary(cars)
     ```
-    
+
     You can also embed plots, for example:
-    
+
     ```{r, echo=FALSE}
     plot(cars)
     ```
-    
+
     Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-    
+
     ~~~
 
-1. 编辑时，可以随时右键单击编辑器，然后选择“预览”，其中包含 HTML、PDF 和 Microsoft Word 选项。 可从该预览根据所选格式保存文件。
+## <a name="previews"></a>预览版
+
+Visual Studio 2017 版本 15.5 以及更高版本自动提供 R Markdown 的实时预览。 要启用编辑器与预览之间的自动同步，请选择“R 工具”>”Markdown”>“自动同步”(Ctrl+Shift+Y)。 如果没有使用自动同步，可使用“R 工具”>”Markdown”>“重载 R Markdown 预览”刷新预览。
+
+还可以通过在编辑器中右键单击并选择一个“预览”命令，在 HTML、PDF 和 Microsoft Word 格式中预览文件。 “R 工具”>”Markdown”菜单上也提供相同命令。 （在早期版本的 Visual Studio 中，可在“R 工具”>“发布”菜单中找到这些命令。）
+
+![R Markdown 实时预览和其他预览菜单命令](media/rmarkdown-live-preview.png)
