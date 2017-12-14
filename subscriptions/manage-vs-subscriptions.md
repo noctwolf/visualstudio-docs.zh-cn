@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "了解如何充分利用 Visual Studio 订阅。"
+Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 640dfcd7a337606982b97f6631cb836a2bffb16c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-subscriptions"></a>管理订阅
 ## <a name="signing-in-to-the-portal"></a>登录到门户
@@ -49,7 +49,7 @@ ms.lasthandoff: 10/27/2017
 6.  单击“登录” 
 
 ### <a name="managing-multiple-subscriptions"></a>管理多个订阅
-我的门户将所有 Visual Studio 订阅和程序汇集到一个改进的门户体验中。  例如，你在工作时可能使用一个标准订阅（如 Visual Studio Enterprise），在家中可能使用月度 Visual Studio Professional 订阅或 Visual Studio Dev Essentials 成员资格。 
+Visual Studio 订阅门户将所有 Visual Studio 订阅和程序汇集到一个改进的门户体验中。  例如，你在工作时可能使用一个标准订阅（如 Visual Studio Enterprise），在家中可能使用月度 Visual Studio Professional 订阅或 Visual Studio Dev Essentials 成员资格。 
 #### <a name="which-subscription-am-i-using"></a>正在使用的是哪种订阅？
 在“权益”页上，正在使用的订阅将突出显示在蓝色的标题栏中。  它还会显示在页面的右上角。
 
@@ -64,9 +64,9 @@ ms.lasthandoff: 10/27/2017
 #### <a name="if-your-subscription-is-not-visible"></a>如果订阅不可见...
 - 它可能已经过期。  仅活动订阅显示在订阅者门户中。
 - 它可能与其他电子邮件地址相关联。 例如，如果使用工作或学校帐号的电子邮件登录 Visual Studio Professional 订阅，并且拥有与 Microsoft 帐户相关联的 Visual Studio Dev Essentials 成员资格，则只能看到与用来登录订阅者门户的电子邮件地址相对应的订阅。  要查看其他订阅，需要注销，然后使用其他电子邮件地址登录。
-- 如果公司通过批量许可证购买订阅，管理员可能还未向你分配订阅。  
+- 如果公司通过批量许可证购买订阅，管理员可能还未向你分配订阅或者已将你的订阅重新分配给其他用户。  
 
-#### <a name="renewing-my-subscriptions"></a>续订我的订阅
+### <a name="renewing-my-subscriptions"></a>续订我的订阅
 **标准订阅**
 - Microsoft Store：如果从 [Microsoft Store](http://www.microsoft.com/store) 购买订阅，则可以继续在这里续订。 
 - 批量许可证：如果公司通过批量许可证购买订阅，管理员应联系经销商续订你的订阅。
@@ -81,7 +81,7 @@ ms.lasthandoff: 10/27/2017
 
 **Visual Studio Dev Essentials -** Visual Studio Dev Essentials 是一个免费的计划，并且成员资格不会过期。  
 
-#### <a name="transferring-subscriptions"></a>转让订阅
+### <a name="transferring-subscriptions"></a>转让订阅
 如果订阅是通过 Microsoft 批量许可购买的，而你需要将其重新分配给组织内的其他人，则管理员则需要为你执行此操作。 可以通过联系客户服务将零售订阅转让给其他用户。  免费订阅或“限制转售”订阅不可转让。 
 
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 10/27/2017
 
 #### <a name="changing-profile-information"></a>更改个人资料信息
 个人资料中的联系人信息和首选项可以轻松更改。  
-1.  单击你的名字（如果在订阅者门户的右上角）。
+1.  在订阅者门户的右上角单击你的名字。
 2.  单击“编辑个人资料”按钮。
 3.  在“关于”选项卡上，可以更改姓名、电子邮件、国家/地区、个人资料图片和联系人首选项。  在“首选项”选项卡上，可以选择首选语言、日期和时间模式、时区，以及用户界面主题。  
 4.  完成更改后，单击“保存”。 

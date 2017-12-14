@@ -5,21 +5,21 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "了解如何访问管理员门户"
+Description: Learn how to access the Administrator Portal
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 89661c12a820d2a7aa3bed562a5efec141dcf01a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3028ea616f6336918e49d49856f62707876772c9
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="accessing-the-visual-studio-subsubscriptions-administrator-portal"></a>访问 Visual Studio 订阅管理员门户
+# <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>访问 Visual Studio 订阅管理员门户
 ## <a name="for-mpsa"></a>对于 MPSA
 若要访问 Visual Studio 订阅管理门户，你需要在 Microsoft 业务中心门户或 BCP 中将自己设置为管理员。 
 
-如需有关如何设置为管理员的信息，请参阅[管理用户快速入门指南](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf)。 如果已设置为管理员，则可以直接转到 [Visual Studio 订阅管理门户](https://manage.visualstudio.com)
+如需有关如何设置为管理员的信息，请参阅[管理用户快速入门指南](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf)。 如果已设置为管理员，则可以直接转到 Visual Studio 订阅[管理门户](https://manage.visualstudio.com)
 
 ## <a name="for-volume-licensing-vl"></a>对于批量许可 (VL)
 自 2017 年 3 月 1 日起，仍在完成门户加入和迁移过程的客户需在[批量许可服务中心 (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 管理其订阅。 
@@ -30,9 +30,9 @@ ms.lasthandoff: 10/31/2017
 
 贵组织的批量许可合约的主要或通知联系人需要执行几个步骤，将你设置为管理员。 
 
-如需有关如何设置管理员的信息，请观看[此视频](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)，并参阅 [Visual Studio 订阅管理门户加入和管理管理员](https://go.microsoft.com/fwlink/?linkid=839391)上的这些文章。 
+如需有关如何设置管理员的信息，请观看[此视频](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)，并参阅 Visual Studio 订阅管理门户[加入和管理管理员](https://go.microsoft.com/fwlink/?linkid=839391)上的这些文章。 
 
-如果已设置为管理员，则可以直接转到 [Visual Studio 订阅管理门户](https://manage.visualstudio.com)。
+如果已设置为管理员，则可以直接转到 Visual Studio 订阅[管理门户](https://manage.visualstudio.com)。
 
 ## <a name="for-cloud-subscriptions"></a>对于云订阅
 购买 Visual Studio 云订阅后，系统就会自动将你设置为这些订阅的管理员。  如果已购买云订阅，则可以在 [https://manage.visualstudio.com](https://manage.visualstudio.com) 上进行管理。

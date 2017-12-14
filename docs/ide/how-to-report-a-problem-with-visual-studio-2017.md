@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: aec5948ed985b6ff2abde47a48198cf1a67c4337
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 283fec9bcaa4f678f30f3a0eb0dda667146b03b9
+ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何报告 Visual Studio 2017 的问题
 如果在使用 Visual Studio 时遇到问题，请告知我们。 下面介绍如何报告问题，以便我们诊断并修复该问题。  
@@ -65,6 +65,12 @@ ms.lasthandoff: 11/09/2017
 ## <a name="submit-the-report"></a>提交报告  
 ###  <a name="submit_the_report"></a>  
  单击“提交”按钮发送报告，以及任何图像和跟踪或转储文件。 （如果“提交”按钮为灰色，请确保你已提供报告的标题和说明。）  
+
+## <a name="alternate-reporting"></a>备用报表
+###  <a name="alternate_reporting"></a>  
+ 如果不能完成 Visual Studio 安装，或不能在 Visual Studio 内访问反馈工具，可通过 Visual Studio 安装程序获取反馈工具。 单击 Visual Studio 安装程序右上角的“反馈”图标，然后按照本文所述步骤操作。
+
+ ![可以使用 Tab 键定位到 Visual Studio 安装程序中的“提供反馈”按钮，从而打开反馈工具](../install/media/report-a-problem.png)
 
 ## <a name="see-also"></a>另请参阅  
  [与我们交流](../ide/talk-to-us.md)

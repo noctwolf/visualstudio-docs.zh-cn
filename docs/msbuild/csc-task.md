@@ -21,11 +21,11 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0e36e4c9e01d7ee8f12a59f2fd72ee4ef6b83e9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d91a1a5fca1530f42e9781a09b2e9364daf8e15f
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="csc-task"></a>Csc 任务
 包装 CSC.exe，生成可执行 (.exe) 文件、动态链接库（.dll文件）或者代码模块（.netmodule文件）。 有关 CSC.exe 的详细信息，请参阅 [C# 编译器选项](/dotnet/csharp/language-reference/compiler-options/index)。  
@@ -63,6 +63,7 @@ ms.lasthandoff: 10/31/2017
 |`NoWin32Manifest`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则不包括默认的 Win32 清单。|  
 |`Optimize`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则启用优化。 如果为 `false`，则禁用优化。 有关详细信息，请参阅 [/optimize（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option)。|  
 |`OutputAssembly`|可选 `String` 输出参数。<br /><br /> 指定输出文件的名称。 有关详细信息，请参阅 [/out（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/out-compiler-option)。|  
+|`OutputRefAssembly`|可选 `String` 参数。<br /><br /> 指定输出引用程序集文件的名称。 有关详细信息，请参阅 [/refout （C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option)。|  
 |`PdbFile`|可选 `String` 参数。<br /><br /> 指定调试信息文件名。 默认名称是扩展名为 .pdb 的输出文件名。|  
 |`Platform`|可选 `String` 参数。<br /><br /> 指定将作为输出文件目标的处理器平台。 此参数可以具有 `x86`、`x64` 或 `anycpu` 的值。 默认值为 `anycpu`。 有关详细信息，请参阅 [/platform（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)。|  
 |`References`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 促使该任务将公共类型信息从指定项导入到当前项目中。 有关详细信息，请参阅 [/reference（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option)。<br /><br /> 你可以通过将元数据 `Aliases` 添加到原始的“参考”项，在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 文件中指定 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 引用别名。 例如，在以下 CSC 命令行中设置别名“LS1”：<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> 将使用：<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  

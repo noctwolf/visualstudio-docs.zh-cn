@@ -1,10 +1,10 @@
 ---
 title: "安装问题疑难解答 | Microsoft Docs"
 description: "有时也会遇到问题。 如果 Visual Studio 安装或升级失败，可在此页寻求帮助。"
-ms.date: 11/08/2017
+ms.date: 11/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,13 +12,13 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f0f71dab64a99965facac9ccaa0fff9b53a6e3f6
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4c864a05b267889720ba64a6427861aa2c42e3b2
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 安装和升级问题疑难解答
 
@@ -37,7 +37,8 @@ Visual Studio 安装程序存在一些已知问题，Microsoft 正在努力修�
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>第 3 步 - 删除 Visual Studio 安装程序目录以修复升级问题
 Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安装 Visual Studio 安装程序的剩余部分。 删除 Visual Studio 安装程序文件，然后重新运行引导程序，可能会修复一些更新故障。
 
-**注意：**执行以下操作将重新安装 Visual Studio 安装程序文件并重置安装元数据。
+>[!NOTE]
+执行以下操作将重新安装 Visual Studio 安装程序文件并重置安装元数据。
 
 1. 关闭 Visual Studio 安装程序。
 2. 删除 Visual Studio 安装程序目录。 通常，该目录是 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
@@ -57,7 +58,7 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 作为最后一种方法，可以[删除 Visual Studio](remove-visual-studio.md) 以删除所有安装文件和产品信息。
 
 1. 按照[删除 Visual Studio](remove-visual-studio.md) 中的说明执行。
-2. 按照[第 3 步 - 删除 Visual Studio 安装程序目录以修复升级问题](#step-3--delete-the-visual-studio-installer-directory-to-fix-upgrade-problems)中的说明操作，重新运行引导程序。
+2. 按照[第 3 步 - 删除 Visual Studio 安装程序目录以修复升级问题](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems)中的说明操作，重新运行引导程序。
 3. 尝试重新安装或更新 Visual Studio。
 
 ### <a name="step-6---contact-us-optional"></a>第 6 步 - 与我们联系（可选）
@@ -88,10 +89,10 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 
 ## <a name="more-support-options"></a>更多支持选项
 
-可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
+如果其他任何步骤都无法使你成功安装，则可以通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
 
 下面是另外几个选项：
-
+* 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
 * 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
 * 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发者进行交流。  （这需要 [GitHub](https://github.com/) 帐户）。

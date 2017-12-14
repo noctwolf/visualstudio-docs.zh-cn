@@ -8,16 +8,15 @@ ms.technology: devlang-r
 ms.tgt_pltfrm: 
 ms.devlang: r
 ms.topic: article
-ms.assetid: 3ff60292-1b88-4ee9-b2b2-edd957f1a519
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 7a509743ce09f2bbfb69b62060abedb48e9777b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 2abb64170fdaa7ce91308f1be2c683325bc1abdd
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>如何安装针对 Visual Studio 的 R 工具
 
@@ -33,20 +32,21 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="supported-versions-of-visual-studio"></a>支持的 Visual Studio 版本
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) 和 [Visual Studio 2015 Update 3（或更高版本）](http://go.microsoft.com/fwlink/?LinkId=691129)的社区版（免费）、专业版和企业版上均支持针对 Visual Studio 的 R 工具 (RTVS)。 
+装有 [Visual Studio 2017](https://www.visualstudio.com/downloads/) 和 [Visual Studio 2015 Update 3（或更高版本）](http://go.microsoft.com/fwlink/?LinkId=691129)的社区版（免费）、专业版和企业版的 Windows 均支持针对 Visual Studio 的 R 工具 (RTVS)。
+
+Visual Studio for Mac 目前尚不支持 RTVS。
 
 如果只有 Visual Studio Test Professional 和 SQL Server Management Studio 等产品随附的 Visual Studio Shell，则不会安装 RTVS。 Visual Studio Shell 缺少 RTVS 的必需组件。
-
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>在 Visual Studio 2017 中安装 RTVS
 
 1. 运行 Visual Studio 安装程序。 （如果尚未安装 Visual Studio，请参阅[下载](https://www.visualstudio.com/downloads/)。）在 Windows 7 上，请确保安装程序已更新，显示 Visual Studio 版本 15.2（内部版本 26430.12）或更高版本。
 
-2. 选择“数据科学和分析应用程序”工作负载：
+1. 选择“数据科学和分析应用程序”工作负载：
 
     ![VS 2017 中的数据科学和分析应用程序工作负载](media/installation-data-science-workload.png)
 
-3. 在同一工作负载名称下的右侧设置任何其他选项。 此工作负载默认包含 F# 和 Python 支持。 对于 R，最低要求是“R 语言支持”、“R 开发运行时支持”以及“Microsoft R Client”。
+1. 在同一工作负载名称下的右侧设置任何其他选项。 此工作负载默认包含 F# 和 Python 支持。 对于 R，最低要求是“R 语言支持”、“R 开发运行时支持”以及“Microsoft R Client”。
 
 RTVS 的安装位置为：`%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`，其中 `<version>` 通常是 `2017`，而 `<edition>` 通常是 `Community`、`Professional` 或 `Enterprise`。
 
@@ -58,9 +58,9 @@ RTVS 的安装位置为：`%ProgramFiles(x86)%\Microsoft Visual Studio\<version>
 
 RTVS 需要从以下一个或多个来源安装 64 位的 R 3.2.1 或更高版本：
 
-* [Microsoft R Open](https://mran.microsoft.com/download/)
-* [Microsoft R Client](https://msdn.microsoft.com/microsoft-r/r-client-get-started)
-* [CRAN R](https://cran.r-project.org/bin/windows/base/)
+- [Microsoft R Open](https://mran.microsoft.com/download/)
+- [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)
+- [CRAN R](https://cran.r-project.org/bin/windows/base/)
 
 Microsoft R Open 和 CRAN R 均允许多个并行版本。 但是，Microsoft R Client 只支持一个版本，并始终使用安装的最新版本。
 
@@ -92,3 +92,4 @@ RTVS for Visual Studio 2015 安装在以下位置：`%ProgramFiles(x86)%\Microso
 - [R 工具示例项目](getting-started-samples.md)
 - [获取帮助](getting-started-help.md)
 - [选项设置](options.md)
+- [Microsoft Machine Learning Server（以前称为 R Server）](/machine-learning-server/)

@@ -8,17 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-ms.assetid: f7dbda92-21bf-4af0-bb34-29b8bf231f32
 description: "在 Visual Studio 中编写适用于 Python 的 C++ 扩展或模块的过程和步骤"
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 0438a2d0f2524ea2163cb3454fdcf50f2ae7f499
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 08f91846340e2acc993e5302badfc846db5f4a9c
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="creating-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -184,12 +183,12 @@ ms.lasthandoff: 10/31/2017
     };
     ```
 
-1. 添加一个定义 Python 以何种形式看到模块的结构：
+1. 添加一个结构，用于定义通过 Python 代码以何种形式看到模块。 （C++ 项目内部使用的文件名，如 module.cpp，是无关紧要的。）
 
     ```cpp
     static PyModuleDef superfastcode_module = {
         PyModuleDef_HEAD_INIT,
-        "superfastcode",                        // Module name
+        "superfastcode",                        // Module name as Python sees it
         "Provides some functions, but faster",  // Module description
         0,
         superfastcode_methods                   // Structure that defines the methods

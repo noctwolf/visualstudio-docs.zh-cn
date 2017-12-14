@@ -5,22 +5,22 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "了解如何使用管理员门户管理组织的 Visual Studio 订阅。"
+Description: Learn how to manage your organization's Visual Studio subscriptions with the Administrator Portal.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 71927765ace09f898421935416aa4c7e7110dc04
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cf44f74b32bd830c613adcc1ee35a95b97636772
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>使用 Visual Studio 订阅管理员门户
 
 使用 Visual Studio 订阅管理门户时，需要记住：
  
 - **Visual Studio 订阅根据用户授权。** 每个订阅者可以根据开发和测试需要在多台计算机上使用软件。 
-- **为每个订阅者只分配一个订阅级别**，分别对应于组织购买的 Visual Studio 订阅。 如果订阅者分配有多个订阅级别，请编辑订阅者的设置，使他们只有一个订阅级别。 
+- 为每个订阅者只分配一个订阅级别，分别对应于组织购买的 Visual Studio 订阅。 如果订阅者分配有多个订阅级别，请编辑订阅者的设置，使他们只有一个订阅级别。 
 - **更新订阅者的订阅级别**，当订阅升级（购买“升级”许可证之后）或续签到更低级别时更新。 
 - **不要在订阅者之间共享订阅。** 必须将订阅分配给任何使用全部或部分订阅权益（开发和测试软件、Microsoft Azure、E-Learning 等）的用户。 
 
@@ -35,16 +35,16 @@ ms.lasthandoff: 10/27/2017
 ### <a name="onboarding"></a>加入
 当你的组织已准备好要加入到 Visual Studio 订阅管理门户时，将向主要联系人和通知联系人发送电子邮件，邀请他们完成加入过程。 下面的详细信息是加入到新门户需要进行的步骤。 如果想要演练该过程，请查看此[管理员加入视频](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)或此[支持文章] (https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Visual Studio 订阅：管理员迁移的过程")。   
 1.  **查找 PCN 并登录：**
-- 在电子邮件中，向“主要联系人”和“通知联系人”提供了唯一的链接及其公共客户编号 (PCN) 的最后三位数字。 * 
-- 为了获取完整的 PCN，主要联系人需要登录到 VLSC（可在此处找到如何查找 PCN 的说明）。 
-- 获得 PCN 后，他们需要选择自己的唯一链接，该链接将提示他们登录。 他们可以使用工作或学校帐户（如果组织在 AAD 中）或 Microsoft 帐户 (MSA)（如果组织不在 AAD 中）。 
-- 接下来，他们需要输入 PCN。 
+    - 在电子邮件中，向“主要联系人”和“通知联系人”提供了唯一的链接及其公共客户编号 (PCN) 的最后三位数字。 * 
+    - 若要获取完整的 PCN，主要联系人需要登录到 VLSC（可在此处找到如何查找 PCN 的说明）。 
+    - 获得 PCN 后，他们需要选择自己的唯一链接，该链接将提示他们登录。 他们可以使用工作或学校帐户（如果组织在 AAD 中）或 Microsoft 帐户 (MSA)（如果组织不在 AAD 中）。 
+    - 接下来，他们需要输入 PCN。 
 2.  **设置管理员。** 输入 PCN 后，他们将在新系统中注册为超级管理员，并且可以添加其他超级管理员和管理员（以前称为“订阅管理员”）。 为避免丢失访问权限，应在组织迁移日期之前完成此操作。 
 3.  **访问新的订阅管理门户。**  组织迁移后，将向新添加的超级管理员和管理员发送电子邮件，邀请他们访问新的门户并开始管理订阅。  
 
 * 注意：如果主要联系人或通知联系人收到多封电子邮件，这意味着他们具有多个 PCN。他们需要使用每封电子邮件中引用的 PCN 的唯一链接完成该过程。
 
-如果需要添加到新的 Visual Studio 订阅管理门户中，并且不确定谁是主要联系人或通知联系人，那么可以在登录 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 后查找这些信息。 请参阅[此文章](http://www.visualstudio.com/subscriptions/support/#!articles/962-6707-how-do-i-locate-my-primary-contact "如何找到我的“主要联系人”？")，了解在 VLSC 中查找主要联系人或通知联系人的步骤。
+如果需要添加到新的 Visual Studio 订阅管理门户中，并且不确定谁是主要联系人或通知联系人，那么可以在登录 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 后查找这些信息。 请参阅[此文章](https://www.visualstudio.com/subscriptions/support/locate-primary-contact/ "如何找到我的“主要联系人”？")，了解在 VLSC 中查找主要联系人或通知联系人的步骤。
 如果已设置为管理员，则可以直接转到 [Visual Studio 订阅管理门户](https://manage.visualstudio.com)。
 
 ### <a name="understanding-the-subscribers-page"></a>了解“订阅者”页
@@ -61,9 +61,11 @@ ms.lasthandoff: 10/27/2017
 - 用于通信而不是登录的其他电子邮件地址的可选字段。 
 
 在本页左侧，可以看到有关已购买、已分配以及针对每个协议在组织中仍然可用的订阅许可证数量的更多信息。
+
 ![Visual Studio 订阅管理员门户“订阅者”页](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>了解“详细信息”页
-有关正在查看的协议的更多信息，请选择“详细信息”选项卡。该选项卡显示协议状态、购买帐户、组织详细信息、主要联系人 (VLSC)、超级管理员（如果可用）和其他相关信息。 
+有关正在查看的协议的更多信息，请选择“详细信息”选项卡。该选项卡显示协议状态、购买帐户、组织详细信息、主要联系人 (VLSC)、超级管理员（如果可用）和其他相关信息。
+
 ![Visual Studio 订阅管理门户的“详细信息”页](_img/using-admin-portal/details-page.png)
 

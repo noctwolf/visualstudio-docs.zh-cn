@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "了解如何获取和管理 Visual Studio 订阅中的产品密钥。"
+Description: Learn how to obtain and manage your product keys in Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 9de4470a35c4eafdd16f8c8b40f2487383707f25
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d0da452a205042cee2b2c0b41990da50b303b3f
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 订阅中的产品密钥
 ## <a name="product-keys-overview"></a>产品密钥概述
@@ -21,12 +21,12 @@ Visual Studio 订阅允许访问一系列 Microsoft 产品来设计、开发、�
 
 对于当前版本的 Windows 和 Office 产品，Visual Studio 订阅通常包含 5 个产品密钥；对于较早版本，通常包含 3 个产品密钥。
 
-大多数产品密钥都支持产品的每个密钥对其进行多次激活。  许多产品还允许在未激活的情况下安装产品并使用 30 天或更长时间。  对于大多数订阅者来说，这种提供了更多激活次数，以满足他们的需求。  但是，如果已用完产品的可用激活次数，可以通过 [Visual Studio 订阅客户服务](https://www.visualstudio.com/subscriptions/support/)提交获取其他密钥的请求。
+大多数产品密钥都支持产品的每个密钥对其进行多次激活。  许多产品还允许在未激活的情况下安装产品并使用 30 天或更长时间。  对于大多数订阅者来说，这种提供了更多激活次数，以满足他们的需求。  但是，如果已用完产品的可用激活次数，可以通过 Visual Studio [订阅客户服务](https://www.visualstudio.com/subscriptions/support/)提交获取其他密钥的请求。
 
 ## <a name="activating-a-product"></a>激活产品
-某些产品需要进行激活，在 Visual Studio 订阅中通常限于 Windows、Windows Server、Microsoft Office 客户端应用程序以及 Expression Studio。 对于需要激活的情况，许多产品（包括 Windows 和 Office）都允许在未激活的情况下安装产品并使用 30 天或更长时间。 如果频繁地（每 30 天至少一次）重建计算机映像，建议不激活产品。 在 Visual Studio 订阅中提供的产品密钥不允许无限次地激活产品。
+某些产品需要激活。  在 Visual Studio 订阅中通常限于 Windows、Windows Server、Microsoft Office 客户端应用程序以及 Expression Studio。 对于需要激活的情况，许多产品（包括 Windows 和 Office）都允许在未激活的情况下安装产品并使用 30 天或更长时间。 如果频繁地（每 30 天至少一次）重建计算机映像，建议不激活产品。 在 Visual Studio 订阅中提供的产品密钥不允许无限次地激活产品。
 
-如果已索取订阅中所有可用的产品密钥，并且已经达到激活次数限制，那么可以联系本地的 [Visual Studio 客户服务中心](https://www.visualstudio.com/subscriptions/support/)请求其他密钥。 请求则视具体问题具体分析。 如果获得批准，就可以在“[下载](https://my.visualstudio.com/downloads)”中获取产品密钥。
+如果已索取订阅中所有可用的产品密钥，并且已经达到激活次数限制，那么可以联系本地的 Visual Studio 订阅[客户服务中心](https://www.visualstudio.com/subscriptions/support/)请求其他密钥。 请求则视具体问题具体分析。 如果获得批准，就可以在“[下载](https://my.visualstudio.com/downloads)”中获取产品密钥。
 
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>产品的零售版本和批量许可版本
 Visual Studio 订阅提供一系列零售版本和批量许可版本的 Microsoft 产品。 某些由“下载”提供的产品仅有零售版本或批量许可版本；某些则兼具两种版本。 通常，Windows、Windows Server 和 Office 客户端产品等需要激活的产品仅通过“下载”提供零售版本。
@@ -42,13 +42,15 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 
 如果 24 小时内索取的密钥数量已达到订阅所允许的最大数量，那么将会看到错误提示，告知你已达到索取上限。 限制每隔 24 小时重置一次，从太平洋时间的凌晨 12:01 开始。
 
-研究表明，大多数订阅者的订阅中所含产品密钥的数量足以满足他们的需求。 如果需要其他密钥，可通过 [Visual Studio 订阅客户服务](https://www.visualstudio.com/subscriptions/support/)提交请求，我们将根据具体情况考虑是否批准你的请求。
+研究表明，大多数订阅者的订阅中所含产品密钥的数量足以满足他们的需求。 如果需要其他密钥，可通过 Visual Studio 订阅[客户服务](https://www.visualstudio.com/subscriptions/support/)提交请求，我们将根据具体情况考虑是否批准你的请求。
 
 ## <a name="locating-and-claiming-product-keys"></a>查找并索取产品密钥
-必须登录你的 Visual Studio 订阅才能查看产品密钥。 可在“[下载](https://my.visualstudio.com/downloads)”页中，选择某一特定产品的蓝色“获取密钥”按钮来查找单个产品密钥。  所有密钥都可在“[产品密钥](https://my.visualstudio.com/productkeys)”页查找到。 如果一个产品有多个密钥，会在下载项的“注释”列中显示注释，帮助你确定应使用哪个密钥。
+必须登录你的 Visual Studio 订阅才能查看产品密钥。 可在如下所示的“[下载](https://my.visualstudio.com/downloads)”页中，选择某一特定产品的蓝色“获取密钥”链接来查找单个产品密钥。  所有密钥都可在“[产品密钥](https://my.visualstudio.com/productkeys)”页查找到。 如果一个产品有多个密钥，会在下载项的“注释”列中显示注释，帮助你确定应使用哪个密钥。
 
-![从下载页获取密钥](_img/product-keys/download-get-key-cropped.png) 某些产品将其多个版本捆绑到单次下载中。 在这种情况下，输入的产品密钥决定安装的产品版本。
-某些密钥会自动提供，例如“静态”密钥，同一个密钥可以根据需要使用无数次，因为不需要激活。 其他密钥必须通过选择该产品的“获取密钥”或按钮来索取。
+![从“下载”页获取密钥](_img/product-keys/download-get-key.png)
+
+某些产品将其多个版本捆绑到单次下载中。 在这种情况下，输入的产品密钥决定安装的产品版本。
+某些密钥会自动提供，例如“静态”密钥，同一个密钥可以根据需要使用无数次，因为不需要激活。 其他密钥必须通过选择该产品的“获取密钥”链接来索取。
 
 根据具体的产品，有多种密钥类型可供选择。 
 
@@ -79,7 +81,9 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 1.  登录到你的 Visual Studio 订阅。  必须登录才能下载产品或索取产品密码。 
 2.  单击“[产品密钥](https://my.visualstudio.com/productkeys)”选项卡。
 3.  产品密钥根据产品名称按字母顺序列出。  可以向下滚动到所需产品的名称，也可以使用页面顶部的搜索栏进行搜索。  
-![搜索产品密钥](_img\product-keys\visio-product-key-cropped.png) 在此示例中，我们将使用搜索栏查找 Visio 2010 的产品密钥。
+![搜索产品密钥](_img\product-keys\visio-product-key-cropped.png)
+
+在此示例中，我们使用了搜索栏查找 Visio 2010 的产品密钥。
 正如你所见，这里列出了几个版本的 Visio 2010。  为 Visio Standard 2010 和 Visio Premium 2010 分别索取了一个密钥，现在两者均剩余 4 个密钥。  已索取的这两个密钥为零售密钥，并且都显示在页面上。  注意，你可以在“注释”列记录有关已索取的密钥的简短说明。  可以结合“已索取”列中的日期，使用它来跟踪索取的密钥。  例如，可以在使用密钥激活产品的安装时进行记录。  
 
 ### <a name="exporting-your-claimed-keys"></a>导出已索取的密钥
@@ -87,7 +91,7 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 
 重要提示：如果订阅到期，则无法索取新的密钥或导出已索取的密钥。 
 
-若要导出密钥，只需单击“产品密钥”页最右侧的“导出所有密钥”链接。  此时将创建名为 KeysExport.xml 的 .xml 文件，可选择打开或保存该文件。  你需要使用能够处理 .xml 文件的应用程序来打开此文件。  例如，可以将该文件作为 Excel 中的只读工作簿打开。  
+若要导出密钥，只需单击“产品密钥”页最右侧的“导出所有密钥”按钮。  此时将创建名为 KeysExport.xml 的 .xml 文件，可选择打开或保存该文件。  你需要使用能够处理 .xml 文件的应用程序来打开此文件。  例如，可以将该文件作为 Excel 中的只读工作簿打开。  
 
 ## <a name="internet-demonstrations-via-terminal-services"></a>通过终端服务访问 Internet 演示
 凭借 Visual Studio 订阅，可允许最终用户使用终端服务（Windows Server 2003 或 Windows Server 2008）或远程桌面服务（Windows Server 2008 R2 或更高版本）访问你的程序的 Internet 演示。 使用这种方式，多达 200 位匿名用户可同时访问你的演示。 你的演示不得使用生产数据。 Visual Studio 订阅者可以向最终用户演示其应用程序。 在软件是通过 Visual Studio 订阅授权的情况下，未购买 Visual Studio 订阅的最终用户只能通过使用终端服务 (TS) 或远程桌面服务 (RDS) 的此 Internet 与演示应用程序交互。

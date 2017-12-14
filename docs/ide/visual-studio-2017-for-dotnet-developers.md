@@ -8,11 +8,11 @@ ms.technology: vs-ide-general
 ms.date: 11/08/2017
 ms.topic: article
 helpviewer_keywords: editor
-ms.openlocfilehash: 6fe98cea71bb49ea3e705a22cb696184966ea0ed
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 6650faa7ed519c6237b459ac4278b6e90d7a5bc6
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>面向 .NET 开发者的 Visual Studio 2017
 
@@ -69,6 +69,8 @@ Visual Studio 提供一流的调试器，可调试面向 .NET Framework、.NET S
 
 可使用 git 或 TFVC 在 Visual Studio 中存储和更新代码。 在编辑器中，可利用团队资源管理器整理本地更改，并使用状态栏跟踪挂起的提交和更改。 可在 Visual Studio 中通过[用于 Visual Studio 的持续交付工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)扩展设置持续集成和交付，以采用敏捷开发者工作流。
 
+![Visual Studio 中的源代码管理] (../ide/media/VSIDE_Productivity_SourceControl.png "VSIDE_Productivity_SourceControl")
+
 ## <a name="extensibility"></a>扩展性
 [文档：扩展 Visual Studio](../extensibility/index.md)
 
@@ -79,8 +81,10 @@ Visual Studio 具有一个丰富的扩展生态系统，可在需要时安装或
 ## <a name="popular-extensions--shortcuts"></a>热门扩展和快捷方式
 如果用户来自另一个 IDE 或编码环境，可能会发现安装以下某个扩展很有用：
 - [Emacs 模拟](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.Emacsemulation)
-- [适用于 Visual Studio 的 HotKeys (IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
+- [适用于 Visual Studio 的 HotKeys (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
+
+以下是常用的 Visual Studio 快捷方式。 请注意，某些扩展会取消绑定默认 Visual Studio 键绑定，必须还原键绑定以使用以下命令。 若要将键绑定还原为 Visual Studio 的默认值，请转到“工具”>“导入和导出设置…”>“重置所有设置”。
 
 | 快捷方式（所有配置文件） | 命令 | 描述 |
 |-|-|-| 
@@ -93,6 +97,6 @@ Visual Studio 具有一个丰富的扩展生态系统，可在需要时安装或
 | **F5** | 开始调试 | 开始调试应用程序 |
 | **Ctrl+F5** | 不进行调试直接运行 | 不进行调试，直接在本地运行应用程序 |
 | **Ctrl+K,D**（默认配置文件）或 **Ctrl+E,D**（C# 配置文件） | 设置文档的格式 | 基于换行、间距和缩进设置，清理文件中的格式设置冲突 |
-| **Ctrl+\,E**（默认配置文件）或 **Ctrl+W,E**（C# 配置文件） | 查看错误列表 | 查看文档、项目或解决方案中的所有错误 |
+| Ctrl+,E（默认配置文件）或 Ctrl+W,E（C# 配置文件）**\\** | 查看错误列表 | 查看文档、项目或解决方案中的所有错误 |
 
 

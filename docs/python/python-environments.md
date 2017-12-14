@@ -8,22 +8,21 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 8876f8c1-4770-44dc-97d8-bf0035ae8196
 caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 34e6898ce5c45033c8ac984d014d462a34552776
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 6476de086aad812e40d3c5b638c2076d50adfb27
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="python-environments"></a>Python 环境
 
-Visual Studio 中的 Python 使管理多个 Python 环境更加简单，并且对于不同的项目可轻松在各环境间切换。 
+Visual Studio 中的 Python 使管理多个 Python 环境更加简单，并且对于不同的项目可轻松在各环境间切换。
 
-注意：如果是初次使用 Visual Studio 中的 Python，请首先参阅以下主题，其中提供了相关内容的讨论：
+**注意**：如果是初次使用 Visual Studio 中的 Python，请首先参阅以下主题，其中提供了相关内容的讨论：
 
 - [在 Visual Studio 中使用 Python](python-in-visual-studio.md)
 - [安装针对 Visual Studio 的 Python 支持](installation.md)
@@ -50,8 +49,8 @@ Visual Studio 中的 Python 使管理多个 Python 环境更加简单，并且�
 
 Python 支持除了随 Visual Studio 2017 提供外，并未随 Python 解释器提供，因此需要安装以下解释器之一才能运行代码。 一般情况下，Visual Studio 会自动检测新安装的解释器，并为每个解释器设置环境。 如果它并未检测到安装的环境，请参阅[为现有解释器创建环境](#creating-an-environment-for-an-existing-interpreter)。
 
-| 解释器 | 说明 | 
-| --- | --- | 
+| 解释器 | 说明 |
+| --- | --- |
 | [CPython](https://www.python.org/) | 最常用的“本机”解释器，32 位和 64 位版本可用（建议使用 32 位）。 包括最新的语言功能、最大的 Python 包兼容性、完整的调试支持以及与 [IPython](http://ipython.org/) 的互操作。 另请参阅：[Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3)（应使用 Python 2 还是 Python 3？） 请注意，Visual Studio 2015 及更早版本不支持 Python 3.6，并且会生成错误“不支持 Python 版本 3.6”。 请改用 Python 3.5 或更早版本。 |
 | [IronPython](https://github.com/IronLanguages/main) | Python 的 .NET 实现，32 位和 64 位版本可用，提供 C#/F#/Visual Basic 互操作、对 .NET API 的访问、标准 Python 调试（但不是 C++ 混合模式调试）和混合 IronPython/C# 调试。 但 IronPython 不支持虚拟环境。 | 
 | [Anaconda](https://www.continuum.io) | Python 提供技术支持的开放式数据科学平台，包括最新版本的 CPython 和大部分难以安装的包。 如果你不能做出决定，我们建议使用它。 |
@@ -68,7 +67,7 @@ Python 支持除了随 Visual Studio 2017 提供外，并未随 Python 解释器
 1. 在解决方案资源管理器中右键单击某项目的“Python 环境”，选择“查看所有 Python 环境”：
 
     ![解决方案资源管理器中的“查看所有环境”命令](media/environments-view-all.png)
-    
+
 在任一情况下，Python 环境窗口都显示为解决方案资源管理器的同级选项卡：
 
 ![“Python 环境”窗口](media/environments-default-view.png)
@@ -87,7 +86,7 @@ Python 支持除了随 Visual Studio 2017 提供外，并未随 Python 解释器
 
 Visual Studio 通常通过检查注册表（下面的 [Windows 注册表中的 PEP 514 - Python 注册](https://www.python.org/dev/peps/pep-0514/)）来查找已安装的 Python 解释器。 但是，如果解释器是以非标准方式安装的，则 Visual Studio 可能无法找到它。 在这种情况下，可以如下所示，将 Visual Studio 直接指向解释器：
 
-1. 在环境窗口中选择“+ 自定义...”，这将创建一个新环境，然后打开[“配置”选项卡](#configure-tab)（如下所示）。
+1. 在 [Python 环境窗口](#managing-python-environments-in-visual-studio)中选择“+ 自定义...”，这将创建一个新环境，然后打开[“配置”选项卡](#configure-tab)（如下所示）。
 
     ![新自定义环境的默认视图](media/environments-custom-1.png)
 
@@ -130,7 +129,6 @@ Visual Studio 通常通过检查注册表（下面的 [Windows 注册表中的 P
 
 1. “工具”>“选项”>“Python 工具”>“交互窗口”选项卡中的“脚本”控件（请参阅[交互窗口选项](options.md#interactive-windows-options)）用于为所有环境中加载和运行的启动脚本指定另一个文件夹。 但是，此功能目前无效。
 
-
 ### <a name="configure-tab"></a>配置选项卡
 
 如果显示，其中包含如下表中所述详细信息。 如果此选项卡不显示，意味着 Visual Studio 自动管理所有详细信息。
@@ -166,7 +164,6 @@ Visual Studio 通常通过检查注册表（下面的 [Windows 注册表中的 P
 
 在同一选项卡上，还可以选择“始终以管理员身份运行 pip”，针对所有环境禁止显示该对话框。 请参阅[选项 - “常规”选项卡](options.md#general-options)。
 
-
 ### <a name="intellisense-tab"></a>IntelliSense 选项卡
 
 显示 IntelliSense 完成数据库的当前状态：
@@ -179,7 +176,7 @@ Visual Studio 通常通过检查注册表（下面的 [Windows 注册表中的 P
 
 ## <a name="global-environments"></a>全局环境
 
-全局（或系统范围内）环境可供计算机上的所有项目使用。 Visual Studio 通常会自动检测全局环境，可在 Python 环境窗口中查看这些环境。 否则，可如之前的[在 Visual Studio 中管理 Python 环境](#managing-python-environments-in-visual-studio)所述，手动添加一个环境。
+全局（或系统范围内）环境可供计算机上的所有项目使用。 Visual Studio 通常会自动检测全局环境，可在 [Python 环境窗口](#managing-python-environments-in-visual-studio)中查看这些环境。 如果没有，可通过同一窗口手动添加环境。
 
 Visual Studio 对所有新项目使用默认环境，用于执行、调试、检查语法、显示导入和成员完成情况以及任何需要环境的其他任务。 更改默认环境会影响尚未添加[特定于项目的环境](#project-specific-environments)的所有项目，如下所述。
 
@@ -208,7 +205,6 @@ Visual Studio 对所有新项目使用默认环境，用于执行、调试、检
 
 > [!Tip]
 > 当包中包含用于 `*.pyd` 文件中本机组件的源代码时，pip 无法安装包，这种情况很常见。 如果没有安装要求的 Visual Studio 版本，pip 无法编译这些组件。 在此情况下显示的错误消息是：`error: Unable to find vcvarsall.bat`。 `easy_install` 通常能够下载预编译二进制文件，可从 [http://aka.ms/VCPython27](http://aka.ms/VCPython27) 下载较旧的 Python 版本适用的编译器。 有关详细信息，请参阅 Python 工具团队博客上的[How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/)（如何处理“找不到 vcvarsallbat”问题）。
-
 
 ## <a name="virtual-environments"></a>虚拟环境
 
@@ -242,11 +238,11 @@ Visual Studio 对所有新项目使用默认环境，用于执行、调试、检
 
 从技术上讲，任何文件名都可用于跟踪要求（通过安装包时使用 `-r <full path to file>`，但 Visual Studio 提供针对 `requirements.txt` 的特定支持：
 
-- 如果已加载包含 `requirements.txt` 的项目，且想要安装该文件列出的所有包，请右键单击该项目并选择“从 requirements.txt 安装”：
+- 如果已加载包含 `requirements.txt` 的项目，且想要安装该文件列出的所有包，请展开“解决方案资源管理器”中的“Python 环境”节点，然后右键单击环境节点并选择“从 requirements.txt 安装”：
 
     ![从 requirements.txt 安装](media/environments-requirements-txt-install.png)
 
-- 项目中安装有所有必要的包时，可以在解决方案资源管理器中右键单击该项目，并选择“生成 requirements.txt”来创建必要的文件。 如果文件已存在，会出现有关如何进行更新的提示：
+- 如果项目中已安装所有必需的包，可右键单击“解决方案资源管理器”中的一个环境，并选择“生成 requirements.txt”以创建必需的文件。 如果文件已存在，会出现有关如何进行更新的提示：
 
     ![更新 requirements.txt 选项](media/environments-requirements-txt-replace.png)
 

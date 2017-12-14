@@ -18,16 +18,17 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b76decbfcb314733d0b195baeda24474e9574d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 362daf0d3044841260ae7e9b8f0eb42bad8e610b
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="concurrency-visualizer"></a>并发可视化工具
 > [!NOTE]
 >  对于 Visual Studio，并发可视化工具是可选扩展。 从以下链接下载并发可视化工具和并发可视化工具收集工具：  
 >   
+>  -   下载 [Visual Studio 2017 的并发可视化工具](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview)扩展。  
 >  -   下载 [Visual Studio 2015 的并发可视化工具](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9)扩展。  
 > -   下载              [Visual Studio 2015 的并发可视化工具收集工具](http://www.microsoft.com/en-in/download/details.aspx?id=49103)。  
 >   
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  使用并发可视化工具，可以检查多线程应用的执行方式。 并发可视化工具中的视图提供图形、表格和文本形式的数据，可表明程序中的线程与整个系统之间的时态关系。 可以使用并发可视化工具查找性能瓶颈、CPU 利用率不足、线程争用、跨内核线程迁移、同步延迟、DirectX 活动、I/O 重叠区域和其他信息。 这些视图通过将其图形输出与调用堆栈和源代码关联在一起，提供可操作数据。  
 
 > [!NOTE]
->  并发可视化工具目前不支持 Visual Studio 2017。 并发可视化工具不支持 Web 项目。  
+>  并发可视化工具不支持 Web 项目。  
   
  并发可视化工具依赖 [Windows 事件跟踪](http://go.microsoft.com/fwlink/?LinkId=234579) 功能。  
   

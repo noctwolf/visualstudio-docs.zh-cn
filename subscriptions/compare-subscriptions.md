@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "比较 Visual Studio 标准订阅与云订阅的功能和权益"
+Description: Compare features and benefits of Visual Studio standard and cloud subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c231095c7d96c44f35752aa0a1c233599c43b420
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="compare-visual-studio-subscription-options"></a>比较 Visual Studio 订阅选项
 
@@ -24,7 +24,7 @@ Visual Studio 订阅汇集了最全面的一套开发者工具、云服务、软
 
 **Visual Studio Enterprise：**无论用于手机、桌面还是云，Visual Studio 都能让你在电脑和 Mac 上更轻松地生成出色软件。 订阅包含几乎所有 Microsoft 软件，以及 Azure 信用额度、Pluralsight 课程、技术支持等等。
 
-**Visual Studio Professional：**用于为任何平台生成任何应用的专业开发者工具和服务。 无论你是单干还是有小型团队，都能提高工作效率，让协作更轻松。
+**Visual Studio Professional：**获取用于为任何平台生成任何应用的专业开发者工具和服务。 无论你是单干还是有小型团队，都能提高工作效率，让协作更轻松。
 
 **Visual Studio Test Professional：**提供全面的测试工具和标准订阅权益（包括核心 Microsoft 软件、Azure 每月信用额度、技术培训、专业支持等等），在整个开发流程中提升质量、促进协作。
 
@@ -33,7 +33,7 @@ Visual Studio 订阅汇集了最全面的一套开发者工具、云服务、软
 **Visual Studio Dev Essentials：**获取在任何平台上生成和部署应用所需的一切资源。 凭借先进的工具、云的强大功能、培训和支持，这是我们有史以来提供的最全面的免费开发者程序。  
 
 ## <a name="subscription-types"></a>订阅类型
-**标准订阅**：通过签订有多年 Microsoft 批量许可合约的经销商提供，或直接从 Microsoft Store 在线商店获取。  这种订阅的特点是提供 Visual Studio 永久许可证。 
+**标准订阅**：通过签订有多年 Microsoft 批量许可合约的经销商提供，或直接从 Microsoft Store 在线商店获取。  标准订阅的特点是提供 Visual Studio 永久许可证。 
 
 **云订阅**：通过云订阅，可以获得 Visual Studio、Visual Studio Team Services 以及其他订阅者权益，无需签署长期合约。  按月或按年订阅。 通过 Microsoft Azure 订阅处理计费。 
 
@@ -45,7 +45,7 @@ Visual Studio 订阅汇集了最全面的一套开发者工具、云服务、软
 - [Microsoft 认证培训师](https://www.microsoft.com/en-us/learning/mct-certification.aspx)：唯一量身定制的计划，提供对资源的独占访问，帮助用户进一步提升专业知识和培训技能。
 
 ## <a name="visual-studio-licensing"></a>Visual Studio 授权
-Visual Studio 订阅（以前称为 MSDN 订阅）按用户授权。 每个用户可以在任意数量的设备上使用软件设计、开发、测试或演示自己的程序。 Visual Studio 订阅还允许授权用户评估软件，以及模拟客户环境，以便诊断与其程序相关的问题。
+Visual Studio 订阅均按用户授权。 每个用户可以在任意数量的设备上使用软件设计、开发、测试或演示自己的程序。 Visual Studio 订阅还允许授权用户评估软件，以及模拟客户环境，以便诊断与其程序相关的问题。
 
 Visual Studio 订阅者还获得在 Microsoft Azure 虚拟机上运行订阅者软件（Windows 和 Windows Server 除外）的许可，在开发和测试其应用程序方面将拥有更大的灵活性。 Windows Server 或 Windows 的许可成本包含在 Windows 虚拟机费用内。
 
@@ -58,7 +58,7 @@ Visual Studio 订阅许可证还允许最终用户访问软件，以便对程序
 ## <a name="additional-information"></a>其他信息
 [下载 Visual Studio 授权白皮书](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
 
-[比较订阅选项和定价](https://www.visualstudio.com/pricing)。
+[比较订阅选项和定价](https://www.visualstudio.com/vs/pricing)。
 
 [比较 Visual Studio IDE 功能](https://www.visualstudio.com/vs/compare/)。
 

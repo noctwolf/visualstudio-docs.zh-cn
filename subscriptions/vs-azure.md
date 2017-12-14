@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "了解如何激活 Visual Studio 订阅中包含的 Azure 权益。"
+Description: Learn how to activate the Azure benefit included in your Visual Studio subscription.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0ed03e61e9f62535e80ad5891c314f26121cfd7d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 32cb58f86a3664764f645f133a42d298e72dedbc
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于[每月 Azure 信用额度](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，Azure 就是可供开发/测试使用的个人沙盒。  你可以预配虚拟机、云服务和其他 Azure 资源。  信用额度因订阅级别而异。 
@@ -23,7 +23,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 1.  单击权益磁贴底部的“激活”链接。   
 ![Azure 磁贴](_img\vs-azure\vs-azure-tile.png)
 
-2.  填写创建 Azure 订阅所需的信息：![Azure 登录](_img\vs-azure\vs-azure-sign-up-cropped.png)
+2.  填写所需信息以创建 Azure 订阅，单击复选框以接受条款和条件，然后单击“注册”：![Azure 注册](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
  
 3.  帐户准备就绪后，可以选择使用 Azure 支持计划（单独出售）或开始使用 Azure 订阅。  

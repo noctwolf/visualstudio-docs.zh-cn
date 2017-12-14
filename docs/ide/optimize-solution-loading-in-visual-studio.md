@@ -1,32 +1,22 @@
 ---
-title: "在 Visual Studio 中优化解决方案加载 | Microsoft Docs"
-ms.custom: 
-ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- startup time [Visual Studio]
-- optimizing startup time [Visual Studio]
-- speed up start time [Visual Studio]
-ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138
-caps.latest.revision: "4"
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-f1_keywords: vs.performancecenter
-ms.technology: vs-ide-general
-ms.openlocfilehash: 2102fc026b566c89108f0d74dcf604020653e358
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/optimize-visual-studio-startup-time/
+ms.openlocfilehash: 6ba351d5b395caaddd12021b09f8792cd19b2905
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
+---
+title: "在 Visual Studio 中优化解决方案加载 | Microsoft Docs" ms.custom: "" ms.date: 08/31/2017 ms.reviewer: "" ms.suite: "" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "启动时间 [Visual Studio]"
+  - "优化启动时间 [Visual Studio]"
+  - "加快启动时间 [Visual Studio]" ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138 caps.latest.revision: 4 author: "gewarren" ms.author: "gewarren" manager: ghogen f1_keywords: 
+  - "vs.performancecenter" ms.technology: 
+  - "vs-ide-general"
 ---
 # <a name="optimize-solution-loading-in-visual-studio"></a>在 Visual Studio 中优化解决方案加载
 很多解决方案包含大量的项目，这会影响加载这些解决方案所用的时间。 但是，在团队环境中，开发人员通常会处理这些项目的不同子集，无需加载所有的单独项目。
 
-Visual Studio 2017 支持轻量级解决方案加载。 启用轻量级解决方案加载 (LSL) 模式后，Visual Studio 2017 会加载大型解决方案中项目的一个小子集，而不会加载所有项目。 大部分的常用 IDE 功能在 LSL 模式下工作，借助这些功能，可以对整个解决方案进行生成、搜索和调试。 （LSL 模式下不支持的功能主要是“编辑并继续”）。
+Visual Studio 2017 支持轻量级解决方案加载。 启用轻量级解决方案加载 (LSL) 模式后，Visual Studio 2017 会加载大型解决方案中项目的一个小子集，而不会加载所有项目。 大部分的常用 IDE 功能在 LSL 模式下工作，借助这些功能，可以对整个解决方案进行生成、搜索和调试。 （LSL 模式下不支持的功能主要是“编辑并继续”。）  
 
 > [!NOTE]
 > 此内容适用于 Visual Studio 2017 Update 3
@@ -54,16 +44,13 @@ Visual Studio 2017 支持轻量级解决方案加载。 启用轻量级解决方
 
 ## <a name="how-does-lightweight-solution-load-work-behind-the-scenes"></a>轻量级解决方案加载在后台如何工作？
 
-加载解决方案时，Visual Studio 会记住之前打开的项目，并且会只加载这些项目。 所有其他项目在解决方案资源管理器中可见，但不会加载。 展开一个项目或右键单击一个项目后，Visual Studio 自动加载该项目。 自动加载项目所用的时间通常少于一秒，但对某些项目来说，会花费更长时间。
-但是，Visual Studio 会启用搜索、调试、生成和源代码管理等在整个解决方案中操作的 IDE 功能。 例如，即使轻量级模式下只加载几个项目，也可以在整个解决方案中进行搜索。 
+加载解决方案时，Visual Studio 会记住之前打开的项目，并且会只加载这些项目。 所有其他项目在解决方案资源管理器中可见，但不会加载。 展开一个项目或右键单击一个项目后，Visual Studio 自动加载该项目。 自动加载项目所用的时间通常少于一秒，但对某些项目来说，会花费更长时间。 但是，Visual Studio 会启用搜索、调试、生成和源代码管理等在整个解决方案中操作的 IDE 功能。 例如，即使轻量级模式下只加载几个项目，也可以在整个解决方案中进行搜索。 
 
 扩展更多项目时，Visual Studio 会记住展开项目的列表。 重新打开解决方案时，Visual Studio 会自动加载之前已展开的项目。
 
 ## <a name="visual-studio-prompts-developers-likely-to-see-significant-performance-gains"></a>Visual Studio 会提示开发人员可能会看到显著的性能提升
 
 从 Visual Studio 遥测中，包含 30 个以上项目的大型解决方案会从 LSL 模式中显著获益。 因此，我们会提示处理大型解决方案的开发人员尝试使用 LSL 模式。 大多数开发人员第一次试用 LSL 后，最终会经常使用该模式。 
-
-我们会不断地查看 Visual Studio 使用情况遥测，改进用于向受益最大的开发人员提供 LSL 模式的启发。 
 
 ## <a name="visual-studio-makes-recommendations-to-turn-on-lightweight-solution-load-based-on-heuristics"></a>Visual Studio 基于启发，作出启用轻量级解决方案加载的建议
 
@@ -130,5 +117,5 @@ Visual Studio 2017 支持轻量级解决方案加载。 启用轻量级解决方
 
 这些创新能够为开发人员优化解决方案加载的时间性能，我们对此感到非常高兴。 由于这是一项新的功能，我们会积极查看客户反馈，解决已知问题。 我们期待收到你的反馈。 可以通过 lslsupport@microsoft.com 向 Visual Studio 解决方案加载优化团队发送电子邮件
 
-## <a name="see-also"></a>另请参阅
-[Visual Studio 性能提示和技巧](../ide/visual-studio-performance-tips-and-tricks.md)
+## <a name="see-also"></a>请参阅
+[Visual Studio 性能提示和技巧](../ide/visual-studio-performance-tips-and-tricks.md)  
