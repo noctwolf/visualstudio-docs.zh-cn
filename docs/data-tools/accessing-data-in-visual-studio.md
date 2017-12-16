@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: da7176d3fd64591064bfd33a0780ba7939621182
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>访问 Visual Studio 中的数据
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 12/08/2017
 ||||
 |-|-|-|
 |SQL Server 2005-2016，包括 Express 和 LocalDB|Firebird|MariaDB|
-|MySQL|Oracle|PostgreSQL|
+|MySQL|Oracle|postgresql|
 |SQLite|||
 
 更多内容...
@@ -67,7 +67,7 @@ ms.lasthandoff: 12/08/2017
 
 ## <a name="net-languages"></a>.NET 语言
 
-所有.NET 数据访问，包括在.NET 核心中都基于 ADO.NET 中，为访问任何类型的数据源、 关系和非关系定义一个接口的一组类。 Visual Studio 具有几个工具和设计器，可使用 ADO.NET 来帮助你连接到数据库，操作数据，并向用户显示数据。 此部分中的文档介绍如何使用这些工具。 你可以直接对 ADO.NET 命令对象进行编程。 有关直接调用 ADO.NET Api 的详细信息，请参阅[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) MSDN 库中。
+所有.NET 数据访问，包括在.NET 核心中都基于 ADO.NET 中，为访问任何类型的数据源、 关系和非关系定义一个接口的一组类。 Visual Studio 具有几个工具和设计器，可使用 ADO.NET 来帮助你连接到数据库，操作数据，并向用户显示数据。 此部分中的文档介绍如何使用这些工具。 你可以直接对 ADO.NET 命令对象进行编程。 有关直接调用 ADO.NET Api 的详细信息，请参阅[ADO.NET](/dotnet/framework/data/adonet/index)。
 
 专门与 ASP.NET 相关的数据访问文档，请参阅[使用数据](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 站点上。 有关使用使用 ASP.NET MVC 的 Entity Framework 的教程，请参阅[Getting Started with Entity Framework 6 Code First 使用 MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
@@ -98,7 +98,7 @@ ms.lasthandoff: 12/08/2017
 
 ## <a name="native-c"></a>本机 C++
 
-连接到 SQL Server 的 c + + 应用程序应使用[Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339)在大多数情况下。 如果链接服务器，则是必需的 OLE DB 和为此你使用[SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)。 你可以通过使用访问其他数据库[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)或 OLE DB 驱动程序直接。 ODBC 是当前的标准数据库接口，但大多数数据库系统提供无法通过 ODBC 接口访问的自定义功能。 OLE DB 是一项传统 COM 数据访问技术仍受支持但不建议用于新应用程序。 有关详细信息，请参阅[Visual c + + 中的数据访问](https://docs.microsoft.com/cpp/data/)。
+连接到 SQL Server 的 c + + 应用程序应使用[Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339)在大多数情况下。 如果链接服务器，则是必需的 OLE DB 和为此你使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 你可以通过使用访问其他数据库[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)或 OLE DB 驱动程序直接。 ODBC 是当前的标准数据库接口，但大多数数据库系统提供无法通过 ODBC 接口访问的自定义功能。 OLE DB 是一项传统 COM 数据访问技术仍受支持但不建议用于新应用程序。 有关详细信息，请参阅[Visual c + + 中的数据访问](/cpp/data/data-access-in-cpp)。
 
 使用 REST 服务的 c + + 程序可以使用[c + + REST SDK](https://github.com/Microsoft/cpprestsdk)。
 
@@ -106,11 +106,11 @@ ms.lasthandoff: 12/08/2017
 
 数据建模&mdash;Visual Studio 不提供针对 c + + 的 ORM 层。 [ODB](http://www.codesynthesis.com/products/odb/)流行的开放源代码 ORM 为 c + +。
 
-若要了解有关从 c + + 应用连接到数据库的详细信息，请参阅[用于 c + + 的 Visual Studio data tools](../data-tools/visual-studio-data-tools-for-cpp.md)。 有关以前的 Visual c + + 数据访问技术的详细信息，请参阅[数据访问](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b)。
+若要了解有关从 c + + 应用连接到数据库的详细信息，请参阅[用于 c + + 的 Visual Studio data tools](../data-tools/visual-studio-data-tools-for-cpp.md)。 有关以前的 Visual c + + 数据访问技术的详细信息，请参阅[数据访问](/cpp/data/data-access-in-cpp)。
 
 ## <a name="javascript"></a>JavaScript
 
-[Visual Studio 中的 JavaScript](https://msdn.microsoft.com/library/hh334522.aspx)是用于构建跨平台应用、 UWP 应用、 云服务、 网站和 web 应用的一级语言。 可以使用 Bower、 Grunt、 Gulp、 npm 和从 Visual Studio 中的 NuGet 安装你最喜欢的 JavaScript 库和的数据库产品。 连接到 Azure 存储空间和服务通过下载 Sdk 从[Azure 网站](https://azure.microsoft.com/)。 Edge.js 是连接到 ADO.NET 数据源的服务器端 JavaScript (Node.js) 的库。
+[Visual Studio 中的 JavaScript](/scripting/javascript/javascript-language-reference)是用于构建跨平台应用、 UWP 应用、 云服务、 网站和 web 应用的一级语言。 可以使用 Bower、 Grunt、 Gulp、 npm 和从 Visual Studio 中的 NuGet 安装你最喜欢的 JavaScript 库和的数据库产品。 连接到 Azure 存储空间和服务通过下载 Sdk 从[Azure 网站](https://azure.microsoft.com/)。 Edge.js 是连接到 ADO.NET 数据源的服务器端 JavaScript (Node.js) 的库。
 
 ## <a name="python"></a>Python
 
@@ -127,7 +127,7 @@ ms.lasthandoff: 12/08/2017
 [Azure SQL 数据库](https://azure.microsoft.com/documentation/services/sql-database/)  
 介绍如何连接到 Azure SQL 数据库，关系数据库即服务。
 
-[SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)  
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)  
 描述简化设计，浏览、 测试和部署的数据连接的应用程序和数据库的工具。
 
 [ADO.NET](/dotnet/framework/data/adonet/index)  
@@ -142,7 +142,7 @@ ms.lasthandoff: 12/08/2017
 [Office 解决方案中的数据](/office-dev/office-dev/data-in-office-solutions)  
 包含指向这些主题介绍了数据在 Office 解决方案中的工作方式。 这包括有关面向架构的编程、 数据缓存和服务器端数据访问的信息。
 
-[LINQ（语言集成查询）](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+[LINQ（语言集成查询）](/dotnet/csharp/linq/)  
 描述内置于 C# 和 Visual Basic 和查询关系数据库、 XML 文档、 数据集和内存中集合的常见模型的查询功能。
 
 [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)  

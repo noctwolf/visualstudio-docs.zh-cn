@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2c309bd30fb364c36b9e98640a02eb3cf2611aef
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f5d50dff4b71402184e0c1127242c1ddb0b1827f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 数据集是内存中副本的数据。 如果修改此数据，最好将这些更改保存回数据库。 执行了此三种方式之一的操作：  
@@ -50,7 +50,7 @@ ms.lasthandoff: 11/09/2017
 |[分层更新](../data-tools/hierarchical-update.md)|如何从具有两个或多个相关表的数据集执行更新|  
 |[处理并发异常](../data-tools/handle-a-concurrency-exception.md)|如何在两个用户试图同时更改数据库中的相同数据时处理异常|  
 |[如何： 使用事务保存数据](../data-tools/save-data-by-using-a-transaction.md)|如何将数据保存在事务使用 System.Transactions 命名空间和 TransactionScope 对象中|  
-|[演练： 将数据保存在事务中](../data-tools/save-data-in-a-transaction.md)|创建 Windows 窗体应用程序来演示保存到数据库在事务内的数据的演练|  
+|[演练：在事务中保存数据](../data-tools/save-data-in-a-transaction.md)|创建 Windows 窗体应用程序来演示保存到数据库在事务内的数据的演练|  
 |[将数据保存到数据库（多个表）](../data-tools/save-data-to-a-database-multiple-tables.md)|如何编辑记录并将更改保存回数据库的多个表中|  
 |[将数据从对象保存到数据库](../data-tools/save-data-from-an-object-to-a-database.md)|如何将数据从数据集中到数据库不是按使用 TableAdapter DbDirect 方法的对象传递|  
 |[用 TableAdapter DBDirect 方法保存数据](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|如何使用 TableAdapter 直接向数据库发送 SQL 查询|  
@@ -217,7 +217,7 @@ ms.lasthandoff: 11/09/2017
 -   数据在后端，通过将数据发送到数据源-例如，数据库，并允许它接受或拒绝该数据。 如果你正在使用具有复杂的功能来验证数据并提供错误的信息的数据库，这可能是一个实用的方法，因为你可以验证无论它的来源的数据。 但是，这种方法可能不适合特定于应用程序的验证要求。 此外，具有验证数据的数据源可能导致大量往返到数据源，具体取决于你的应用程序如何通过后端引发的验证错误的解决方法。  
   
     > [!IMPORTANT]
-    >  使用与数据命令时<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>属性设置为<xref:System.Data.CommandType.Text>请仔细检查传递到你的数据库之前从客户端发送的信息。 恶意用户可能会尝试发送 （插入） 修改过的或其他 SQL 语句，以获得未经授权的访问或破坏该数据库。 将内容传输到数据库的用户输入之前，始终验证的信息有效。 它是始终使用参数化的查询或存储的过程时可能的最佳实践。 有关详细信息，请参阅[脚本侵入概述](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
+    >  使用与数据命令时<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>属性设置为<xref:System.Data.CommandType.Text>请仔细检查传递到你的数据库之前从客户端发送的信息。 恶意用户可能会尝试发送 （插入） 修改过的或其他 SQL 语句，以获得未经授权的访问或破坏该数据库。 将内容传输到数据库的用户输入之前，始终验证的信息有效。 它是始终使用参数化的查询或存储的过程时可能的最佳实践。  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>传输更新数据源  
 在数据集进行了更改后，你可以通过传输对数据源的更改。 通常情况下，你执行此操作通过调用`Update`TableAdapter （或者数据适配器） 的方法。 该方法将遍历每个记录中的数据表中，确定所需的哪种类型的更新 （更新、 插入或删除） (如果有） 然后运行相应的命令。  
@@ -258,7 +258,7 @@ ms.lasthandoff: 11/09/2017
   
  <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName>每个参数的属性指向数据表中的列。 例如，`SourceColumn`属性`au_id`和`Original_au_id`参数设置为数据表中的任意一列包含作者 id。当适配器的`Update`方法运行时，它从读取作者 id 列正在更新以及将值填充到语句中的记录。  
   
- 在 UPDATE 语句中，你需要指定这两个新值 （那些将写入到该记录的） 以及旧值 （以便记录可以位于数据库中）。 因此有两个参数的每个值： 一个用于 SET 子句，另一个用于 WHERE 子句。 这两个参数从正在更新的记录中读取数据，但它们获取不同版本的基于参数的列值[SqlParameter.SourceVersion 属性](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx)。 SET 子句的参数获取最新版本，和 WHERE 子句的参数获取原始版本。  
+ 在 UPDATE 语句中，你需要指定这两个新值 （那些将写入到该记录的） 以及旧值 （以便记录可以位于数据库中）。 因此有两个参数的每个值： 一个用于 SET 子句，另一个用于 WHERE 子句。 这两个参数从正在更新的记录中读取数据，但它们获取不同版本的基于参数的列值<xref:System.Data.SqlClient.SqlParameter.SourceVersion>属性。 SET 子句的参数获取最新版本，和 WHERE 子句的参数获取原始版本。  
   
 > [!NOTE]
 >  你也可以在设置值`Parameters`集合自己在代码中，这通常会执行的事件处理程序的数据适配器中<xref:System.Data.DataTable.RowChanging>事件。  

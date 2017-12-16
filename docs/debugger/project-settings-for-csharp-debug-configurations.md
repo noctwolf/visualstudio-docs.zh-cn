@@ -14,23 +14,21 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debug configurations, C#
-- debugging [J#], debugger settings
 - project settings [Visual Studio], debug configurations
 - debug builds, project settings
 - projects [Visual Studio], debug configurations
 - project configurations, debug
 - debugging [C#], debugger settings
-- debug configurations, J#
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
 caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4310b9e84986ef50f735f0e7ddf6813d9c6fd60d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: d588f43271b127c675a6ec2fdf9e55ef388eadf2
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 调试配置的项目设置
 你可以更改中的 C# 调试配置的项目设置**属性页**窗口，如下所述[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示在何处可以找到中与调试器相关的设置**属性页**窗口。  
@@ -47,7 +45,7 @@ ms.lasthandoff: 11/11/2017
 |**命令行参数**|指定要调试的程序的命令行自变量。 该命令名是在“启动外部程序”中指定的程序名。 如果“启动操作”设置为“启动 URL”，则不能指定命令行自变量。|  
 |**工作目录**|指定被调试的程序的工作目录。 在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 中，工作目录是启动应用程序的目录，默认情况下为 \bin\debug。|  
 |**使用远程计算机**|出于调试目的运行该应用程序的远程计算机的名称或[Msvsmon 服务器名称](../debugger/remote-debugging.md)。 该 EXE 文件在远程计算机上的位置是由“配置属性”文件夹“生成”类别中的“输出路径”属性指定的。 此位置必须是远程计算机上的共享目录。|
-|**启用非托管的代码调试**|使你能够从托管应用程序中调试对本机（非托管）Win32 代码的调用。|  
+|**启用非托管代码调试**|使你能够从托管应用程序中调试对本机（非托管）Win32 代码的调用。|  
 |**启用 SQL Server 调试**|允许对 SQL Server 数据库对象进行调试。|  
   
 ##  <a name="BKMK_Build_tab"></a>生成选项卡  

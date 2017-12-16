@@ -13,11 +13,11 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b16b7e9f4dba55babfc7ad2ad90affe0ca93c508
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a7d8ab4732938721da8e72c5a4c5f7387a4e67e2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>创建和使用代码分析签入策略
 当你使用 Team Foundation 版本控制 (TFVC) 时，你可以为.NET Framework 和本机 （C/c + +） 代码项目的团队项目中创建代码分析签入策略。 可以使用代码分析签入策略以控制和改进的签入代码库的代码质量。  
@@ -43,6 +43,4 @@ ms.lasthandoff: 10/31/2017
  说明如何将单词和令牌添加到代码分析命名规则中引用的字典。  
   
 ## <a name="related-sections"></a>相关章节  
- [设置并强制实施质量要求](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
-  
  [利用团队项目签入策略提高代码质量](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)

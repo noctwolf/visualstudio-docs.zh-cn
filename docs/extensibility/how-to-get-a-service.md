@@ -13,11 +13,11 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ccb0abcf70f66812ab1ffe91958119f08c97966
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: dc427dbca201b472feca89201284ab009abd9d34
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-get-a-service"></a>如何： 将获得的服务
 你经常需要以获取 Visual Studio 服务访问不同的功能。 一般情况下，Visual Studio 服务提供你可以使用的一个或多个接口。 你可以从 VSPackage 获取大多数服务。  
@@ -28,9 +28,9 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>从初始化 VSPackage 获取服务  
   
-1.  每个 Visual Studio 扩展开头 VSIX 部署项目将包含扩展资产。 创建[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]名为 VSIX 项目`GetServiceExtension`。 你可以查找中的 VSIX 项目模板**新项目**下的对话框**Visual C# / 可扩展性**。  
+1.  每个 Visual Studio 扩展开头 VSIX 部署项目将包含扩展资产。 创建[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]名为 VSIX 项目`GetServiceExtension`。 你可以查找中的 VSIX 项目模板**新项目**下的对话框**Visual C# > 扩展性**。  
   
-2.  现在，添加名为的自定义命令项模板**GetServiceCommand**。 在**添加新项**对话框中，转到**Visual C# / 可扩展性**和选择**自定义命令**。 在**名称**在窗口底部字段中，命令文件名称更改为**GetServiceCommand.cs**。 有关如何创建自定义命令的详细信息[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2.  现在，添加名为的自定义命令项模板**GetServiceCommand**。 在**添加新项**对话框中，转到**Visual C# > 扩展性**和选择**自定义命令**。 在**名称**在窗口底部字段中，命令文件名称更改为**GetServiceCommand.cs**。 有关如何创建自定义命令的详细信息[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 3.  在 GetServiceCommand.cs，删除 MenuItemCommand 方法的正文，并添加以下代码：  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff1f5d9c7c28c63e2f1f1c0783f1032888e3c645
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>颜色和 Visual Studio 的样式
 ## <a name="using-color-in-visual-studio"></a>使用 Visual Studio 中的颜色  
@@ -320,7 +320,7 @@ Windows 使用几个增加的文本、 背景和映像，颜色对比度的高�
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>生成可自定义颜色的 VSPackage  
 VSPackage 可以控制的字体和颜色通过自定义类别和项显示在字体和颜色属性页。 当使用此机制，Vspackage 必须实现[IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx)接口和其关联的接口。  
   
-原则上，此机制可以用于修改所有现有的显示项和包含它们的类别。 但是，它不应修改的文本编辑器类别或其显示项。 文本编辑器类别的详细信息，请参阅[字体和颜色概述](https://msdn.microsoft.com/en-us/library/bb165065.aspx)。  
+原则上，此机制可以用于修改所有现有的显示项和包含它们的类别。 但是，它不应修改的文本编辑器类别或其显示项。 文本编辑器类别的详细信息，请参阅[字体和颜色概述](../font-and-color-overview.md)。  
   
 若要实现自定义类别或显示项，VSPackage 必须：  
   
@@ -397,7 +397,7 @@ IDE 缓存字体和颜色设置的信息。 因此，IDE 字体和颜色配置�
   
  **OR**  
   
--   **轮询更改 IDE**。 这可以通过系统实现[IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx)接口。 主要用于支持持久性，尽管[GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx)方法可以获取显示项的字体和颜色信息。 字体和颜色设置的详细信息，请参阅 MSDN 文章[访问存储的字体和颜色设置](https://msdn.microsoft.com/en-us/library/bb166382.aspx)。  
+-   **轮询更改 IDE**。 这可以通过系统实现[IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx)接口。 主要用于支持持久性，尽管[GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx)方法可以获取显示项的字体和颜色信息。 字体和颜色设置的详细信息，请参阅 MSDN 文章[访问存储的字体和颜色设置](../accessing-stored-font-and-color-settings.md)。  
   
 > **注意：**若要确保轮询结果正确无误，请使用[IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx)接口来确定缓存刷新和更新是否需要在调用的检索方法之前[IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx)接口。
   

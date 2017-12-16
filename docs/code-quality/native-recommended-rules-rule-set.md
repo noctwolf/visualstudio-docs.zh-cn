@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3063f1a65035018df9c9d6a034ef11b5e9732a30
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 07704e589ae56b04dc28ceb465afad7812a29111
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="native-recommended-rules-rule-set"></a>“本机建议规则”规则集
 本机建议规则侧重于在本机代码中，包括潜在安全漏洞和应用程序崩溃的最关键和常见的问题。  应在你为本机项目创建的任何自定义规则集中包含此规则集。  此规则集用于处理与 Visual Studio 专业版和更高版本。  
@@ -116,7 +116,6 @@ ms.lasthandoff: 10/31/2017
 |[C6504](../code-quality/c6504.md)|在非指针参数中为 Null|  
 |[C6505](../code-quality/c6505.md)|对 Void 类型使用 MustCheck 属性|  
 |[C6506](../code-quality/c6506.md)|非指针参数或数组的缓冲区大小|  
-|[C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)|取消引用零处的 Null 不匹配|  
 |[C6508](../code-quality/c6508.md)|常量缓冲区上的写入权限|  
 |[C6509](../code-quality/c6509.md)|返回使用的前置条件|  
 |[C6510](../code-quality/c6510.md)|在非指针参数中以 Null 结尾的参数|  
@@ -127,12 +126,8 @@ ms.lasthandoff: 10/31/2017
 |[C6516](../code-quality/c6516.md)|在特性上无属性|  
 |[C6517](../code-quality/c6517.md)|有效的不可读缓冲区的大小|  
 |[C6518](../code-quality/c6518.md)|不可写的缓冲区的可写入大小|  
-|[C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)|无效的批注：“NeedsRelease”属性的值必须为 Yes 或 No|  
-|[C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)|取消引用无效大小的字符串|  
 |[C6522](../code-quality/c6522.md)|无效大小的字符串类型|  
-|[C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)|无效大小的字符串参数|  
 |[C6525](../code-quality/c6525.md)|无效大小字符串的不可访问的位置|  
-|[C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)|无效大小的字符串缓冲区类型|  
 |[C6527](../code-quality/c6527.md)|无效的批注：“NeedsRelease”属性可能不可用于 void 类型的值|  
 |[C6530](../code-quality/c6530.md)|无法识别的格式字符串样式|  
 |[C6540](../code-quality/c6540.md)|对该函数使用属性批注将使其现有的所有 __declspec 批注无效|  
@@ -221,8 +216,7 @@ ms.lasthandoff: 10/31/2017
 |[C28253](../code-quality/c28253.md)|函数的批注不一致：参数在此实例中包含另一个批注。|  
 |[C28254](../code-quality/c28254.md)|批注中不支持 dynamic_cast<>()|  
 |[C28262](../code-quality/c28262.md)|对于批注，在函数中找到了批注的语法错误|  
-|[C28263](../code-quality/c28263.md)|在条件批注中找到内部批注的语法错误|  
-|[C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)|结果列出了必须为常量的值。|  
+|[C28263](../code-quality/c28263.md)|在条件批注中找到内部批注的语法错误| 
 |[C28267](../code-quality/c28267.md)|在函数中找到了批注的语法错误。|  
 |[C28272](../code-quality/c28272.md)|在检查参数时，函数的批注与函数声明不一致|  
 |[C28273](../code-quality/c28273.md)|对于函数，线索与函数声明不一致|  

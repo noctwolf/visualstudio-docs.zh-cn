@@ -26,11 +26,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a21450dda35addae55019545d67ab7f1e4ebe99a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 02db9a01286e65f371ab4d8388102a3db4c5602e
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>演练：调试 Windows 窗体
 Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标准的 Windows 应用程序。 你可以完成本演练使用 Visual Basic、 C# 或 c + +。  
@@ -126,7 +126,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
 4.  上**调试**菜单上，选择**Windows**，然后**监视**，然后单击**Watch1**。  
   
-5.  在**Watch1**窗口中，单击一个空行。 在**名称**列中，键入`textBox1.Text`（如果你正在使用 Visual Basic、 Visual C# 或 J#） 或`textBox1->Text`（如果正在使用 c + +），然后按 ENTER。  
+5.  在**Watch1**窗口中，单击一个空行。 在**名称**列中，键入`textBox1.Text`（如果你正在使用 Visual Basic 或 Visual C#） 或`textBox1->Text`（如果正在使用 c + +），然后按 ENTER。  
   
      **Watch1**窗口用引号括起来，作为显示此变量的值：  
   

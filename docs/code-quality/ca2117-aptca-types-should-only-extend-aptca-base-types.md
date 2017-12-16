@@ -18,11 +18,11 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5619de2512e18cbe9d7dbfb3d992886ae23a25bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 977f721ed45343e247f8639accc0fa5dc83263c6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117：APTCA 类型应只扩展 APTCA 基类型
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  中包含的程序集的公共或受保护类型<xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName>属性继承自的程序集中不具有属性的声明类型。  
   
 ## <a name="rule-description"></a>规则说明  
- 默认情况下，具有强名称的程序集中的公共或受保护类型隐式受[的继承需求](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)完全信任。 强名称的程序集标记为<xref:System.Security.AllowPartiallyTrustedCallersAttribute>(APTCA) 特性未启用此保护。 该属性禁用继承要求。 这样，通过不具有完全信任的类型声明的程序集中的可继承的公开的类型。  
+ 默认情况下，具有强名称的程序集中的公共或受保护类型隐式受<xref:System.Security.Permissions.SecurityAction.InheritanceDemand>完全信任。 强名称的程序集标记为<xref:System.Security.AllowPartiallyTrustedCallersAttribute>(APTCA) 特性未启用此保护。 该属性禁用继承要求。 这样，通过不具有完全信任的类型声明的程序集中的可继承的公开的类型。  
   
  APTCA 特性在完全受信任的程序集后，程序集中的类型继承自不允许部分受信任的调用方的类型，则可能产生安全漏洞。 如果这两个类型`T1`和`T2`满足以下条件，则恶意调用方可以使用类型`T1`绕过的隐式的完全信任继承要求保护`T2`:  
   
@@ -85,6 +85,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>另请参阅  
  [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)   
- [.NET framework 程序集可调用由部分受信任的代码](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [通过部分受信任的代码使用库](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [继承需求](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

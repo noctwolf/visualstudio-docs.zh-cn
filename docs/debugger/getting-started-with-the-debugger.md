@@ -1,7 +1,7 @@
 ---
-title: "调试器入门 |Microsoft 文档"
+title: "了解如何使用 Visual Studio 调试 |Microsoft 文档"
 ms.custom: H1HackMay2017
-ms.date: 05/18/2017
+ms.date: 10/11/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f6bcc75341297ad20d66514c92f92513ef44d2f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="get-started-with-the-visual-studio-debugger"></a>要开始使用 Visual Studio 调试器
+# <a name="learn-to-debug-using-visual-studio"></a>了解如何使用 Visual Studio 进行调试
 
 本主题介绍中的分步演练的 Visual Studio 调试器的功能。 如果你想调试器功能的更高级别的视图，请参阅[调试器功能教程](../debugger/debugger-feature-tour.md)。
 
@@ -138,19 +138,81 @@ ms.lasthandoff: 10/31/2017
 
      ![单步执行更新方法的结果](../debugger/media/dbg-tour-update-method.png "步骤到 Update 方法")
 
-    我们在这里找到看起来很有趣; 一些更多代码该应用将获取所有 *.jpg 文件驻留在一个特定的目录，然后再创建一个用于每个文件的照片对象。 此代码为我们提供了启动检查使用调试程序时你应用程序的状态 （变量） 的最佳时机。
+    我们在这里找到看起来很有趣; 一些更多代码该应用将获取所有 *.jpg 文件驻留在一个特定的目录，然后再创建一个用于每个文件的照片对象。 此代码为我们提供了启动检查使用调试程序时你应用程序的状态 （变量） 的最佳时机。 我们将在本教程的后续部分中执行的操作。
 
     允许你检查变量的功能是的调试程序时，最有用的功能之一，通过不同的方式来完成此操作。 通常情况下，当你尝试调试问题，您试图从中找出变量是否存储您希望他们能够在特定时间的值。
 
+## <a name="examine-the-call-stack"></a>检查调用堆栈
+
+- 在暂停时在`Update`方法中，单击**调用堆栈**窗口中，这是默认情况下在较低的右窗格中打开。
+
+     ![检查调用堆栈](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+
+    **调用堆栈**窗口将显示在其中调用方法和函数获取的顺序。 顶部行显示当前函数 (`Update`教程应用程序中的方法)。 第二行显示`Update`从进行了调用`Path.set`属性，依次类推。
+
+    >  [!NOTE]
+    > **调用堆栈**在 Eclipse 如某些 Ide 窗口是类似于调试透视。
+
+    调用堆栈是一种好方法，以检查并了解应用程序的执行流。
+
+    你可以双击要打算看看该源代码的代码行，并还更改正在检查由调试器当前作用域。 此操作不提升调试器。
+
+    你还可以使用从右击菜单**调用堆栈**窗口来执行其他操作。 例如，可以将断点插入到指定的函数、 向前移动使用调试器**运行到光标处**，并转检查源代码。 有关详细信息，请参阅[如何： 检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
+
+## <a name="step-out"></a>跳出
+
+假设你已完成检查`Update`方法中 Data.cs，并且你想要获取跳出函数，但仍在调试器中。 你可以执行此使用**单步跳出**命令。
+
+1. 按下 Shift + F11 (或**调试 > 跳出**)。
+
+     此命令恢复应用程序执行 （和使调试器） 直到当前函数返回。
+
+     应返回`Update`Data.cs 中的方法调用。
+
+2. 按 Shift + F11 试，并使调试器在调用堆栈中向上转回`OnApplicationStartup`事件处理程序。
+
+## <a name="run-to-cursor"></a>运行到光标处
+
+1. 选择**停止调试**的红色按钮![停止调试](../debugger/media/dbg-tour-stop-debugging.png "停止调试")或 Shift + F5。
+
+2. 在`Update`方法中 Data.cs，右键单击`Add`方法调用，并选择**运行到光标处**。 此命令将开始调试，并在当前代码行上设置一个临时断点。
+
+     ![使用运行到光标功能](../debugger/media/dbg-tour-run-to-cursor.png "运行到光标处")
+
+    你应在中的断点处暂停`MainWindow`（因为它是第一个断点设置）。
+
+3. 按 f5 键以前进到`Add`其中所选的方法**运行到光标处**。
+
+    当你编辑代码，并想要快速设置临时断点，然后启动调试器时，此命令非常有用。
+
+## <a name="change-the-execution-flow"></a>更改执行流
+
+1. 使用调试程序上暂停`Add`方法调用时，使用鼠标左侧获取黄色箭头 （执行指针），并移动的黄色箭头上移一行到`foreach`循环。
+
+     ![执行将指针移动到](../debugger/media/dbg-tour-move-the-execution-pointer.gif "执行将指针移动到")
+
+    通过更改执行流，你可以执行某些操作，如测试不同的代码执行路径，或重新运行代码，无需重新启动调试器。
+
+2. 现在，按 F5。
+
+    你可以看到添加到应用程序窗口的映像。 由于正在重新运行中的代码`foreach`已两次添加循环，探讨了 ！
+    
+    > [!WARNING]
+    > 通常，您需要小心使用此功能，并查看工具提示中的某个警告。 你可能会太看到其他警告。 将指针移无法还原到较早的应用程序状态的应用程序。
+
 ## <a name="inspect-variables-with-data-tips"></a>检查与数据提示的变量
 
-1. 若要在暂停调试器`Add`方法调用，将鼠标悬停在`Add`方法调用，并单击**到单击运行**按钮![运行到单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")。
+1. 打开 Data.cs 照片查看器演示应用程序中，右键单击`private void Update`函数声明和选择**运行到光标处**（应用程序首先停止如果它已在运行）。
 
-2. 现在，将鼠标悬停在文件对象 (`f`)，你将看到其默认属性值的文件名称`market 031.jpg`。
+    这将暂停附有调试器的应用程序。 这使得我们可以检查其状态。
+
+2. 将鼠标悬停在`Add`方法调用，并单击**运行到单击**按钮![运行到单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")。
+
+3. 现在，将鼠标悬停在文件对象 (`f`)，你将看到其默认属性值的文件名称`market 031.jpg`。
 
      ![查看数据提示](../debugger/media/dbg-tour-data-tips.gif "查看数据提示")
 
-3. 展开的对象，若要查看所有属性，如`FullPath`属性。
+4. 展开的对象，若要查看所有属性，如`FullPath`属性。
 
     通常情况下，在调试时，你需要一种快速的方式来检查对象的属性值和数据提示是一种好方法，以执行此操作。
 
@@ -192,66 +254,6 @@ ms.lasthandoff: 10/31/2017
 
     有关详细信息，请参阅[设置使用监视和快速监视窗口监视](../debugger/watch-and-quickwatch-windows.md)
 
-## <a name="examine-the-call-stack"></a>检查调用堆栈
-
-1. 单击**调用堆栈**窗口中，这是默认情况下在较低的右窗格中打开。
-
-     ![检查调用堆栈](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
-
-    **调用堆栈**窗口将显示在其中调用方法和函数获取的顺序。 顶部行显示当前函数 (`Update`教程应用程序中的方法)。 第二行显示`Update`从进行了调用`Path.set`属性，依次类推。
-
-    >  [!NOTE]
-    > **调用堆栈**在 Eclipse 如某些 Ide 窗口是类似于调试透视。
-
-    调用堆栈是一种好方法，以检查并了解应用程序的执行流。
-
-    你可以双击要打算看看该源代码的代码行，并还更改正在检查由调试器当前作用域。 此操作不提升调试器。
-
-    你还可以使用从右击菜单**调用堆栈**窗口来执行其他操作。 例如，可以将断点插入到指定的函数、 向前移动使用调试器**运行到光标处**，并转检查源代码。 有关详细信息，请参阅[如何： 检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
-
-## <a name="change-the-execution-flow"></a>更改执行流
-
-1. 使用调试程序上暂停`Add`方法调用时，使用鼠标左侧获取黄色箭头 （执行指针），并移动的黄色箭头上移一行到`foreach`循环。
-
-     ![执行将指针移动到](../debugger/media/dbg-tour-move-the-execution-pointer.gif "执行将指针移动到")
-
-    通过更改执行流，你可以执行某些操作，如测试不同的代码执行路径，或重新运行代码，无需重新启动调试器。
-
-2. 现在，按 F5。
-
-    你可以看到添加到应用程序窗口的映像。 由于正在重新运行中的代码`foreach`已两次添加循环，探讨了 ！
-    
-    > [!WARNING]
-    > 通常，您需要小心使用此功能，并查看工具提示中的某个警告。 你可能会太看到其他警告。 将指针移无法还原到较早的应用程序状态的应用程序。
-
-## <a name="run-to-cursor"></a>运行到光标处
-
-1. 选择**停止调试**的红色按钮![停止调试](../debugger/media/dbg-tour-stop-debugging.png "停止调试")或 Shift + F5。
-
-2. 在`Update`方法中，右键单击`Add`方法调用，并选择**运行到光标处**。 此命令将开始调试，并在当前代码行上设置一个临时断点。
-
-     ![使用运行到光标功能](../debugger/media/dbg-tour-run-to-cursor.png "运行到光标处")
-
-    你应在中的断点处暂停`MainWindow`（因为它是第一个断点。
-
-3. 按 f5 键以前进到`Add`其中所选的方法**运行到光标处**。
-
-    当你编辑代码，并想要快速设置临时断点，然后启动调试器时，此命令非常有用。
-
-## <a name="step-out"></a>跳出
-
-假设你已完成检查`Update`方法中 Data.cs，并且你想要获取跳出函数，但仍在调试器中。 你可以执行此使用**单步跳出**命令。
-
-1. 按下 Shift + F11 (或**调试 > 跳出**)。
-
-     此命令恢复应用程序执行 （和使调试器） 直到当前函数返回。
-
-     应返回`Update`Data.cs 中的方法调用。
-
-2. 按 Shift + F11 试，并使调试器在调用堆栈中向上转回`OnApplicationStartup`事件处理程序。
-
-3. 按 F5 以继续。
-
 ## <a name="examine-an-exception"></a>检查异常
 
 1. 在正在运行的应用程序窗口中，删除中的文本**路径**输入的框，然后选择**更改**按钮。
@@ -283,6 +285,7 @@ ms.lasthandoff: 10/31/2017
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## <a name="see-also"></a>另请参阅  
- [在 Visual Studio 中进行调试](../debugger/index.md)  
- [调试器功能简介](../debugger/debugger-feature-tour.md)
+## <a name="see-also"></a>请参阅
+
+[在 Visual Studio 中进行调试](../debugger/index.md)  
+[调试器功能简介](../debugger/debugger-feature-tour.md)

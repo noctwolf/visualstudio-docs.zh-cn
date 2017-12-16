@@ -25,11 +25,11 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9147439d6aab7a6393f37f0cf8b14b0b0401ed1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5e00d43898fbc29ba238a670d39cf8d3e7638122
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="allocation-hook-functions"></a>分配挂钩函数
 分配挂钩函数，使用安装[_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook)，每次分配、 重新分配或释放内存时调用。 该类型的挂钩可用于很多不同用途。 例如，可用它测试应用程序处理内存不足情况的方式，检查分配模式，或记录分配信息以供将来分析。  
@@ -57,4 +57,3 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
 ## <a name="see-also"></a>另请参阅  
  [分配挂钩和 C 运行时内存分配](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [编写调试挂钩函数](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 示例](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)

@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 191206e9cc16271e64abbeaba87d86ac0108924b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d2b0ea1999c9742c04d1bb118d9a036ff2bed5ea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>在保存数据前提交数据绑定控件上的进程内编辑
 当编辑数据绑定控件中的值，用户必须关闭当前的记录，以将更新后的值提交到该控件绑定到基础数据源中导航。 当拖动项时从[数据源窗口](add-new-data-sources.md)拖到窗体，拖放的第一项生成的代码插入**保存**按钮单击事件的<xref:System.Windows.Forms.BindingNavigator>。 此代码调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法<xref:System.Windows.Forms.BindingSource>。 因此，调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法生成仅为第一个<xref:System.Windows.Forms.BindingSource>，它将添加到窗体。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  设计器添加`BindingSource.EndEdit`代码仅为第一个项目拖放到窗体。 因此，你必须添加要调用的代码行<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法为每个<xref:System.Windows.Forms.BindingSource>窗体上。 你可以将手动添加代码行以调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法为每个<xref:System.Windows.Forms.BindingSource>。 或者，可以添加`EndEditOnAllBindingSources`到窗体的方法，在执行保存之前调用它。  
   
- 下面的代码使用[LINQ （语言集成查询）](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)查询以循环访问所有<xref:System.Windows.Forms.BindingSource>组件和调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法为每个<xref:System.Windows.Forms.BindingSource>窗体上。  
+ 下面的代码使用[LINQ （语言集成查询）](/dotnet/csharp/linq/)查询以循环访问所有<xref:System.Windows.Forms.BindingSource>组件和调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法为每个<xref:System.Windows.Forms.BindingSource>窗体上。  
   
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>若要调用 EndEdit 的窗体上的所有 BindingSource 组件  
   

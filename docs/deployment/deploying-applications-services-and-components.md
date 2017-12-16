@@ -1,7 +1,7 @@
 ---
-title: "部署应用程序、 服务和组件 |Microsoft 文档"
+title: "部署概述-Visual Studio |Microsoft 文档"
 ms.custom: 
-ms.date: 07/14/2017
+ms.date: 11/26/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-deployment
@@ -22,36 +22,93 @@ helpviewer_keywords:
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
 caps.latest.revision: "33"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.openlocfilehash: 9d9aeaa80aa054b8178adbfc707b1537449776d7
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 30261fea83870b5bdfce11a25969207aad260ee4
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="deploying-applications-services-and-components"></a>部署应用程序、服务和组件
+# <a name="deployment-overview-in-visual-studio"></a>Visual Studio 中的部署概述
 
-通过部署应用程序、服务或组件，你可以将其分发以便安装于其他计算机、设备、服务器或云中。 你需要在 Visual Studio 中为所需的部署类型选择适当的方法。  
-  
-下表介绍了不同的部署方案，并提供指向每个方案的详细信息。  
+通过部署应用程序、服务或组件，你可以将其分发以便安装于其他计算机、设备、服务器或云中。 你需要在 Visual Studio 中为所需的部署类型选择适当的方法。 （许多应用程序类型支持此处未介绍其他部署工具，如命令行部署或 NuGet。）
 
-创建 Windows 应用程序的安装程序体验的选项的讨论，请参阅[桌面到通用 Windows 平台 (UWP) 桥](/windows/uwp/porting/desktop-to-uwp-root#convert)。
+请参阅有关分步说明的教程。
 
- 
-## <a name="in-this-section"></a>本节内容  
-  
-| 部署方案 | 支持内容 |
-| --- | --- |  
-| **发布到云：**你可以提供应用程序、 服务和数据从任意位置通过使用 Visual Studio 将它们部署到 Microsoft Azure。|[应用程序发布到 Microsoft Azure](http://msdn.microsoft.com/library/windowsazure/ee460772.aspx) |
-| **发布 Windows 应用程序：**可以轻松地生成、 提交，和销售给世界各地的客户从 Microsoft 应用商店应用。 |[发布 Windows 应用](https://developer.microsoft.com/store/publish-apps) |
-| **部署 ASP.NET 应用程序或服务：**可采用多种不同方式部署 ASP.NET 应用程序和服务。|[部署 ASP.NET web 应用程序和服务](http://www.asp.net/aspnet/overview/deployment) |
-| **发布 Office 外接程序：**可以在从 Visual Studio 的 Office 外接程序中发布。 | [部署和发布 Office 外接程序](https://dev.office.com/docs/add-ins/publish/publish) |
-| **部署 WCF 或 OData 服务：**其他应用程序可以使用你部署到 web 服务器的 WCF RIA 服务。 | [开发和部署 WCF 数据服务](https://docs.microsoft.com/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **部署桌面应用程序：**通过使用 ClickOnce 部署，你可以将发布到 web 服务器或网络文件共享的桌面应用程序。 用户随后只需一次单击即可安装应用程序。 | [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md) |
-| **部署 Visual c + + 应用程序：**可以通过使用集中部署、 本地部署或静态链接部署 Visual c + + 运行时与应用程序。 | [部署本机桌面应用程序 (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md) |
-| **创建安装程序：**基于 MSI 的 WiX 安装程序可以使用创建[WiX 工具集 Visual Studio 2017 扩展](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)。 请注意，InstallShield Limited Edition 已不再包含在 Visual Studio;咨询[Flexera 软件](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)有关 Visual Studio 2017 的可用性。 |
-| **部署用于测试的应用程序：**可以启用更复杂的开发和测试部署到虚拟环境的应用程序。|[测试实验室环境](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md) | 
-| **安装必备组件：**你可以通过配置一般安装程序，这被称为引导程序安装桌面应用程序的系统必备组件。|[应用程序部署必备](../deployment/application-deployment-prerequisites.md) |
-| **部署 LightSwitch 应用程序或服务：** LightSwitch 中 Visual Studio 2017，不再受支持，但仍可以从 Visual Studio 2015 及更早版本部署。 | [部署 LightSwitch 应用程序](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |  
+### <a name="deploy-to-local-folder"></a>将部署到本地文件夹
+
+- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和**.NET 核心**： 使用发布工具将部署到本地文件夹。 确切的可用选项取决于你的应用程序类型。 在解决方案资源管理器，右键单击你的项目并选择**发布**，然后选择**文件夹**。 有关详细信息，请参阅[部署到本地文件夹](quickstart-deploy-to-local-folder.md)。
+
+    ![选择发布](../deployment/media/quickstart-publish.png)
+
+- **Visual c + + 运行时**： 你可以部署 Visual c + + 运行库使用本地部署或静态链接。 有关详细信息，请参阅[部署本机桌面应用程序 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md)。 
+
+### <a name="publish-to-web-or-deploy-to-network-share"></a>发布到 Web 或部署到网络共享
+
+- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和**.NET 核心**： 你可以使用发布工具将部署到使用 FTP 或 Web 部署的网站。 有关详细信息，请参阅[部署到网站](quickstart-deploy-to-a-web-site.md)。
+
+    在解决方案资源管理器，右键单击该项目并选择**发布**。 在发布工具中，选择你想，并执行的配置步骤的选项。
+
+    ![选择 IIS、 FTP，等等。](../deployment/media/quickstart-publish-iis-ftp.png)
+
+    你还可以部署 ASP.NET 应用程序和多种其他方式的服务。 有关详细信息，请参阅[部署 ASP.NET web 应用程序和服务](http://www.asp.net/aspnet/overview/deployment)。
+
+- **Visual c + + 运行时**： 你可以部署 Visual c + + 运行库使用集中部署。 有关详细信息，请参阅[部署本机桌面应用程序 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md)。 
+
+- **Windows 桌面**可以发布到 web 服务器或网络文件共享使用 ClickOnce 部署的 Windows 桌面应用程序。 用户随后只需一次单击即可安装应用程序。 有关详细信息，请参阅[部署桌面应用程序中使用 ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)和[部署使用 ClickOnce 的本机应用](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
+
+### <a name="publish-to-azure"></a>发布到 Azure
+
+- **ASP.NET、 ASP.NET Core、 Python、 Node.js 和.NET 核心**web 应用程序： 你可以使用发布工具快速将应用部署到 Azure App Service 或到 Azure 虚拟机。 在解决方案资源管理器，右键单击该项目并选择**发布**。 在发布对话框中，选择**Microsoft Azure App Service**或**Microsoft Azure 虚拟机**，然后按照配置步骤。
+
+    ![选择 Azure App Service](../deployment/media/quickstart-publish-azure.png "选择 Azure App Service")
+
+    若要发布到 Azure 虚拟机，向右滚动，然后选择**Microsoft Azure 虚拟机**。
+
+    快速介绍，请参阅[发布到 Azure](quickstart-deploy-to-azure.md)。 另请参阅[向 Azure 发布 ASP.NET Core 应用](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 有关使用 Git 进行部署，请参阅[连续部署到使用 Git 的 Azure ASP.NET Core](/aspnet/core/publishing/azure-continuous-deployment)。
+
+    > [!NOTE]
+    > 如果你还没有 Azure 帐户，则可以[此处注册](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
+
+- 其他**Azure 服务**： 请参阅特定于[Azure 服务](https://docs.microsoft.com/azure/#pivot=products)可能由 Visual Studio 支持的不同部署选项的文档。
+
+### <a name="publish-to-microsoft-store"></a>将发布到 Microsoft 存储
+
+从 Visual Studio 中，你可以创建适用于部署到 Microsoft 应用商店应用包。
+
+- **UWP**： 可以打包你的应用程序和部署使用菜单项。 有关详细信息，请参阅[通过使用 Visual Studio 打包 UWP 应用](/windows/uwp/packaging/packaging-uwp-apps)。
+
+    ![创建应用程序包](../deployment/media/feature-tour-create-app-package.jpg)
+
+- **Windows 桌面**： 你可以将它们部署到 Microsoft 应用商店使用桌面桥在 Visual Studio 2017 版本 15.4 中启动。 若要执行此操作，首先创建一个 Windows 应用程序打包项目。 有关详细信息，请参阅[打包成 Microsoft 应用商店 （桌面桥） 桌面应用程序](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)。
+
+    ![桌面桥](../deployment/media/feature-tour-desktop-bridge.png)
+
+### <a name="create-an-installer-package-windows-client"></a>创建的安装程序包 （Windows 客户端）
+
+- 可以使用创建的基于 MSI 的 WiX 安装程序[WiX 工具集 Visual Studio 2017 扩展](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)。
+
+- [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements)从 Flexera 软件可与使用 Visual Studio 2017 (Community Edition 不支持)。 请注意，InstallShield Limited Edition 不再包含在 Visual Studio 中，在 Visual Studio 2017; 不支持咨询[Flexera 软件](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)有关将来的可用性。
+
+- 如果你想要创建安装项目 (vdproj)，安装[Visual Studio 自 2017 年 1 安装程序项目扩展](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)。
+
+- 你可以通过配置一般安装程序，这被称为引导程序安装桌面应用程序的必备组件。 有关详细信息，请参阅[应用程序部署必备](../deployment/application-deployment-prerequisites.md)。
+
+### <a name="deploy-to-test-lab"></a>部署测试实验室
+
+你可以启用更复杂的开发和测试部署到虚拟环境的应用程序。 有关详细信息，请参阅[实验室环境测试](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)。
+
+### <a name="devops-deployment"></a>DevOps 部署
+
+在团队环境中，可以使用 Visual Studio Team Services (VSTS) 以启用你的应用程序的连续部署。 有关详细信息，请参阅[生成和发布](/vsts/build-release/index)和[部署到 Azure](/vsts/deploy-azure/index)。
+
+### <a name="deployment-for-other-app-types"></a>对于其他应用程序类型的部署
+
+| 应用类型 | 部署方案 | 链接 |
+| --- | --- | --- |
+| **Office 应用程序** | 你可以从 Visual Studio 的 Office 发布外接程序。 | [部署和发布 Office 外接程序](https://dev.office.com/docs/add-ins/publish/publish) |
+| **WCF 或 OData 服务**  | 其他应用程序可以使用你部署到 web 服务器的 WCF RIA 服务。 | [开发和部署 WCF 数据服务](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **LightSwitch** | LightSwitch 中 Visual Studio 2017，不再支持，但仍可以从 Visual Studio 2015 及更早版本部署。 | [部署 LightSwitch 应用程序](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+

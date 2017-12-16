@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c2d8b27937be4580da8ff33c5b3c1d57654b4c89
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>测量扩展中启动的影响
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 10/31/2017
 
 你可以在以下文档中找到有关这些功能的更多详细信息：
 
-[基于规则的 UI 上下文](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)： 围绕 UI 上下文的更丰富的基于规则引擎允许你创建基于项目类型、 版本和功能的自定义上下文。 这些自定义上下文可用于在更具体的方案，例如具有而不是启动; 某项特定功能的项目存在期间加载的包或允许[命令可见性，以将绑定到自定义上下文](https://msdn.microsoft.com/en-us/library/bb166512.aspx)基于项目功能或其他可用的搜索词，因此不再需要加载的包，以注册命令状态查询处理程序。
+[基于规则的 UI 上下文](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)： 围绕 UI 上下文的更丰富的基于规则引擎允许你创建基于项目类型、 版本和功能的自定义上下文。 这些自定义上下文可用于在更具体的方案，例如具有而不是启动; 某项特定功能的项目存在期间加载的包或允许[命令可见性，以将绑定到自定义上下文](visibilityconstraints-element.md)基于项目功能或其他可用的搜索词，因此不再需要加载的包，以注册命令状态查询处理程序。
 
 [异步包支持](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Visual Studio 2015 中的新 AsyncPackage 基类允许 Visual Studio 包要加载在后台以异步方式如果包加载请求了自动负载特性或异步服务查询. 此后台加载允许 IDE 以始终保持响应时在后台中初始化该扩展，并且不会影响启动和解决方案的负载等关键方案。
 

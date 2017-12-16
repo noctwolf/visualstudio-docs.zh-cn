@@ -11,11 +11,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c71d76e3b085260043f6f07de8b352ab74c3930f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 1bcf34f730411589624075bde4ace0b5457e07a7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>如何： 提供异步的 Visual Studio 服务
 如果你想要获得服务，而不必阻止 UI 线程，你应该创建异步的服务，以及加载后台线程上的包。 为此你可以使用<xref:Microsoft.VisualStudio.Shell.AsyncPackage>而不是<xref:Microsoft.VisualStudio.Shell.Package>，使用异步包的特殊异步方法中添加服务  
@@ -24,9 +24,9 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="implementing-an-asynchronous-service"></a>实现异步服务  
   
-1.  创建 VSIX 项目 (**文件 / 新建 / 项目 / Visual C# / Extensiblity / VSIX 项目**)。 将项目**TestAsync**。  
+1.  创建 VSIX 项目 (**文件 > 新建 > 项目 > Visual C# > Extensiblity > VSIX 项目**)。 将项目**TestAsync**。  
   
-2.  将 VSPackage 添加到项目。 选择中的项目节点**解决方案资源管理器**单击**添加新 / 项 / Visual C# 项 / 扩展性 / Visual Studio 包**。 将此文件命名**TestAsyncPackage.cs**。  
+2.  将 VSPackage 添加到项目。 选择中的项目节点**解决方案资源管理器**单击**添加 > 新项 > Visual C# 项 > 扩展性 > Visual Studio 包**。 将此文件命名**TestAsyncPackage.cs**。  
   
 3.  TestAsyncPackage.cs，在将更改要继承 AsyncPackage 而不是包的包：  
   

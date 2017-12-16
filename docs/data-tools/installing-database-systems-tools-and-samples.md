@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 17bdaffa8fdbb6ddff9d7fe5590db021997aa01f
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 2b3a551f19e3410b5f56ebe994676666cdc3d4e1
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio 的兼容的数据库系统
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/22/2017
 
 如果你使用 Azure 存储 Api，安装 Azure 存储仿真程序在本地计算机上在开发过程才能避免产生费用，直到你准备好部署到生产环境。 有关详细信息，请参阅[使用 Azure 存储模拟器进行开发和测试](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/)。
 
-以下列表包含的一些更受欢迎的数据库系统，可以使用 Visual Studio 项目中。 列表并不详尽。 提供 ADO.NET 数据提供程序，Visual Studio 工具与深度集成的第三方供应商列表，请参阅[ADO.NET 数据提供程序](https://msdn.microsoft.com/en-us/library/dd363565.aspx)。
+以下列表包含的一些更受欢迎的数据库系统，可以使用 Visual Studio 项目中。 列表并不详尽。 提供 ADO.NET 数据提供程序，Visual Studio 工具与深度集成的第三方供应商列表，请参阅[ADO.NET 数据提供程序](/dotnet/framework/data/adonet/data-providers)。
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
@@ -44,7 +44,7 @@ SQL Server 是 Microsoft 旗舰数据库产品。 SQL Server 2016 提供了性�
 
 MySQL 是一个受欢迎的开源数据库系统，在企业和网站中广泛使用。 有关 MySQL 的下载，Visual Studio 中，以及相关的产品 MySQL 位于[Windows 上的 MySQL](http://www.mysql.com/why-mysql/windows/)。  第三方提供各种 Visual Studio 扩展和 mysql 的独立管理应用程序。 你可以浏览产品在 NuGet 包管理器 (**工具** > **NuGet 包管理器** > **管理解决方案的 NuGet 包**).
 
-## <a name="postgresql"></a>PostgreSQL
+## <a name="postgresql"></a>postgresql
 
 PostgreSQL 是一个免费的开源对象关系数据库系统。 若要在 Windows 上安装它，你可以从下载[PostgreSQL 下载页](http://www.postgresql.org/download/windows/)。  你也可以从源代码生成 PostgreSQL。  PostgreSQL 核心系统包括 C 语言界面。 许多第三方提供了有关从.NET 应用程序中使用 PostgreSQL 的 NuGet 包。  你可以浏览产品在 NuGet 包管理器 (**工具** > **NuGet 包管理器** > **管理解决方案的 NuGet 包**). 可能是最常用的包提供的[npgsql.org](http://www.npgsql.org)。
 

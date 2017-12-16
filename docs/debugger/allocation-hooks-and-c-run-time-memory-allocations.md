@@ -23,11 +23,11 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62a8be3b1a1c98a330efeb26d9a84e74f2334423
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 4b383deae8262f9fb53cf4494ef8ce8d65f5ce02
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>分配挂钩和 C 运行时内存分配
 对分配挂钩函数的一个非常重要的限制是，当它们调用任何分配内部内存的 C 运行库函数时，必须显式忽略 `_CRT_BLOCK` 块（由 C 运行库函数内部进行的内存分配）。 可通过在分配挂钩函数起始包括如下代码来忽略 `_CRT_BLOCK` 块：  
@@ -43,4 +43,3 @@ if ( nBlockUse == _CRT_BLOCK )
   
 ## <a name="see-also"></a>另请参阅  
  [编写调试挂钩函数](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 示例](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)

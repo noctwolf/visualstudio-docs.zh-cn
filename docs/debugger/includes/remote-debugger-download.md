@@ -13,20 +13,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 109d9d8718a2c46dbd982e58b22dcf43e55b2205
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 7e911686d1f8bff191c439f4fc2b92c37d60a31f
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 1.  设备或服务器你想要调试的计算机 （而不是运行 Visual Studio 的计算机） 上，获取远程工具的正确版本。
 
     |版本|链接|说明|
     |-|-|-|
-    |Visual Studio 2017 Update 4|[远程工具](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|始终下载匹配设备操作系统 （x86 或 x64） 的版本。 对于较旧的浏览器，使用这些直接链接：[远程工具 (x64)](https://go.microsoft.com/fwlink/?LinkId=746570&clcid=0x409)和[远程工具 (x86)](https://go.microsoft.com/fwlink/?LinkId=746569&clcid=0x409)。|
-    |Visual Studio 2017 （较旧）|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|如果系统提示，请加入免费的 Visual Studio Dev Essentials 组，或可以使用有效的 Visual Studio 订阅登录。 如果系统提示您，对于较旧的浏览器，则必须添加新受信任的站点。|
-    |Visual Studio 2015 Update 3|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果系统提示，请加入免费的 Visual Studio Dev Essentials 组，或可以使用有效的 Visual Studio 订阅登录。 如果系统提示您，对于较旧的浏览器，则必须添加新受信任的站点。|
-    |Visual Studio 2015 （较旧）|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果系统提示，请加入免费的 Visual Studio Dev Essentials 组，或可以使用有效的 Visual Studio 订阅登录。 如果系统提示您，对于较旧的浏览器，则必须添加新受信任的站点。|
+    |Visual Studio 2017 版本 15.5|[远程工具](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|始终下载匹配设备操作系统 （x86 或 x64） 的版本。 如果启用了增强的安全模式 (Windows Server)，你必须添加新的受信任的站点如果系统提示。|
+    |Visual Studio 2017 （较旧）|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|针对早期版本的 Visual Studio 2017 的远程工具是可从 My.VisualStudio.com。如果出现提示，联接免费的 Visual Studio Dev Essentials 组或使用你的 Visual Studio 订阅登录 id。 如果启用了增强的安全模式 (Windows Server)，你必须添加新的受信任的站点如果系统提示。|
+    |Visual Studio 2015 Update 3|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果出现提示，联接免费的 Visual Studio Dev Essentials 组或使用你的 Visual Studio 订阅登录 id。 如果启用了增强的安全模式 (Windows Server)，你必须添加新的受信任的站点如果系统提示。|
+    |Visual Studio 2015 （较旧）|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果出现提示，联接免费的 Visual Studio Dev Essentials 组或使用你的 Visual Studio 订阅登录 id。 如果启用了增强的安全模式 (Windows Server)，你必须添加新的受信任的站点如果系统提示。|
     |Visual Studio 2013|[远程工具](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|下载 Visual Studio 2013 文档中的页|
     |Visual Studio 2012|[远程工具](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|下载 Visual Studio 2012 文档中的页|
   

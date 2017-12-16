@@ -18,11 +18,11 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25fd80168e78feda70b86f512598a850acae7010
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f990336f84a518a754615eb878e41100d7ccb3f3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414：用 MarshalAs 标记布尔型 P/Invoke 参数
 |||  
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>规则说明  
  平台调用方法访问非托管的代码，而且使用定义`Declare`中的关键字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]或<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>。 <xref:System.Runtime.InteropServices.MarshalAsAttribute>指定用于托管和非托管代码之间转换数据类型的封送处理行为。 许多简单数据类型，如<xref:System.Byte?displayProperty=fullName>和<xref:System.Int32?displayProperty=fullName>、 在非托管代码中有一种表示形式和不需要其封送处理行为的规范; 公共语言运行时自动提供正确的行为。  
   
- <xref:System.Boolean>数据类型在非托管代码中有多种表示形式。 当<xref:System.Runtime.InteropServices.MarshalAsAttribute>未指定，默认封送处理行为<xref:System.Boolean>数据类型是<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 这是不适合在所有情况下的 32 位整数。 所需的非托管方法的 boolean 类型的值表示应进行确定和匹配到相应<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 UnmanagedType.Bool 是 Win32 BOOL 类型，这始终是 4 个字节。 UnmanagedType.U1 应该用于 c + +`bool`或其他 1 字节类型。 有关详细信息，请参阅[布尔值类型的默认封送处理](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)。  
+ <xref:System.Boolean>数据类型在非托管代码中有多种表示形式。 当<xref:System.Runtime.InteropServices.MarshalAsAttribute>未指定，默认封送处理行为<xref:System.Boolean>数据类型是<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 这是不适合在所有情况下的 32 位整数。 所需的非托管方法的 boolean 类型的值表示应进行确定和匹配到相应<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 UnmanagedType.Bool 是 Win32 BOOL 类型，这始终是 4 个字节。 UnmanagedType.U1 应该用于 c + +`bool`或其他 1 字节类型。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  若要修复与此规则的冲突，将应用<xref:System.Runtime.InteropServices.MarshalAsAttribute>到<xref:System.Boolean>参数或返回值。 将该属性的值设置为相应<xref:System.Runtime.InteropServices.UnmanagedType>。  
@@ -60,5 +60,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>另请参阅  
  <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>   
- [默认为布尔值类型的封送处理](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)   
  [与非托管代码交互操作](/dotnet/framework/interop/index)

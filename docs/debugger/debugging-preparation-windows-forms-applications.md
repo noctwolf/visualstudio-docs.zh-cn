@@ -16,7 +16,6 @@ helpviewer_keywords:
 - debugging Windows applications
 - Windows applications, debugging
 - debugging [Visual Studio], Windows applications
-- debugging [J#], Windows applications
 - debugging [C#], Windows applications
 - debugging [Visual Basic], Windows applications
 ms.assetid: 7092ee7f-8378-4def-aef8-1695bd97cf14
@@ -24,11 +23,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2d8f123359e4dfff02f05709d8028c2b9fcd3e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 873b7dd10a2e39aa795626bc7d387df7017740d8
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>调试准备：Windows 窗体应用程序
 Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试此类应用程序非常简单。 有关详细信息，请参阅[创建 Windows 应用程序项目](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
@@ -71,7 +70,7 @@ Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsp
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
  [C#、F#、和 Visual Basic 项目类型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [如何： 设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)   
- [对于 C# 的项目设置调试配置](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [调试配置适用于 Visual Basic 项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Windows 窗体](/dotnet/framework/winforms/index)

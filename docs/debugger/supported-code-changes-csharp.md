@@ -20,11 +20,11 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a0a7d55b19455e22836d4750c0842a47816ee86
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 7930ab4b425eeba0896828e5db36ab874166d3bf
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>受支持的代码更改 （C# 和 Visual Basic）
 “编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，你必须停止调试，重新开始新版本的代码。
@@ -98,8 +98,6 @@ ms.lasthandoff: 11/11/2017
 -   SQL 调试。  
   
 -   调试 Dr.Watson 转储。  
-  
--   未处理的异常之后编辑代码时"**展开调用堆栈上未经处理的异常**"未选择选项。  
   
 -   调试嵌入式运行时应用程序。  
   

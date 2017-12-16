@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 26e74c43e79012adc6b241390cd463a35c9f58c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0826d241cc1f3741a35e635bc27dff1d69ad86af
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="configure-service-reference-dialog-box"></a>“配置服务引用”对话框
 **配置服务引用**对话框中，您可以配置的行为[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]服务。  
@@ -62,7 +62,7 @@ ms.lasthandoff: 10/31/2017
  确定 WCF 服务的方法是同步调用（默认）还是异步调用。  
   
  **生成基于任务的操作**  
- 编写异步代码时，此选项允许你使用随 .Net 4 一起推出的任务并行库 (TPL)。 请参阅[任务并行库 (TPL)](http://msdn.microsoft.com/library/dd460717.aspx)。  
+ 编写异步代码时，此选项允许你使用随 .Net 4 一起推出的任务并行库 (TPL)。 请参阅[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)。  
   
  **始终生成消息协定**  
  确定是否将为 WCF 客户端生成消息约定类型。 有关消息约定的详细信息，请参阅[使用消息协定](/dotnet/framework/wcf/feature-details/using-message-contracts)。  

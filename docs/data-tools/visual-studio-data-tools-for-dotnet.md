@@ -12,14 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6b48b16d33c62c2d0ca96eb1d55ce22682458029
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: bc63c636d58bcde7aefeb7d35939008387bb6808
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="visual-studio-data-tools-for-net"></a>适用于.NET 的 visual Studio data tools
-Visual Studio 和.NET Framework 一起提供大量的 API 和工具用于连接到数据库、 在内存中，数据建模和用户界面中显示数据的支持。 提供数据访问功能的.NET Framework 类称为[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx)。 ADO.NET 中，Visual Studio 中的数据以及最初设计主要是为了支持关系数据库和 XML。 如今，许多 NoSQL 数据库供应商或第三方提供 ADO.NET 提供程序。  
+Visual Studio 和.NET Framework 一起提供大量的 API 和工具用于连接到数据库、 在内存中，数据建模和用户界面中显示数据的支持。 提供数据访问功能的.NET Framework 类称为[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET 中，Visual Studio 中的数据以及最初设计主要是为了支持关系数据库和 XML。 如今，许多 NoSQL 数据库供应商或第三方提供 ADO.NET 提供程序。  
   
 [.NET 核心](https://www.dotnetfoundation.org/netcore)支持 ADO.NET 中，数据集和相关的类型除外。 如果你要以.NET 核心为目标，并且需要对象关系映射 (ORM) 层，使用[实体框架核心](https://docs.microsoft.com/ef/core/)。  
   
@@ -39,7 +39,7 @@ Visual Studio 和.NET Framework 一起提供大量的 API 和工具用于连接�
   
 5.  添加操作，如业务规则、 搜索和数据验证，或要利用的基础数据库公开的自定义功能的自定义代码。  
   
-你可以跳过步骤 3 和程序.NET 应用程序直接向数据库，而不是使用模型发出命令。 在这种情况下，你将找到相关的文档： [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx)。 请注意，你仍可以使用的数据源配置向导和设计器时填充内存，然后数据将 UI 控件绑定到这些对象中你自己的对象生成数据绑定代码。
+你可以跳过步骤 3 和程序.NET 应用程序直接向数据库，而不是使用模型发出命令。 在这种情况下，你将找到相关的文档： [ADO.NET](/dotnet/framework/data/adonet/index)。 请注意，你仍可以使用的数据源配置向导和设计器时填充内存，然后数据将 UI 控件绑定到这些对象中你自己的对象生成数据绑定代码。
   
 ## <a name="see-also"></a>请参阅
 [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)

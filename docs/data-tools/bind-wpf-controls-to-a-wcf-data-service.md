@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4cd3231856dafd869290082337528523544b1e19
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: ea1d53ef5fb99c161793670049fd5f473da1aa51
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 在本演练中，你将创建一个包含数据绑定控件的 WPF 应用程序。 这些控件将绑定到在 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] 中封装的客户记录。 你还将添加客户可用于查看和更新记录的按钮。  
@@ -56,8 +56,6 @@ ms.lasthandoff: 11/09/2017
 -   [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 中的数据模型。  
   
 -   实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅[实体框架概述](/dotnet/framework/data/adonet/ef/overview)。  
-  
--   使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
 -   WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)。  
   

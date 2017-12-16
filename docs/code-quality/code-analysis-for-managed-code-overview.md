@@ -16,11 +16,11 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eebc25b344e603cb66546db6d9179067d5995496
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5d42d7c7a78d6bde2560f6e5cf5538a93585870b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>托管代码的代码分析概述
 针对托管代码的代码分析用于分析托管程序集并报告有关程序集的信息，例如 Microsoft .NET Framework 设计准则中规定的编程和设计规则的冲突。  
@@ -64,7 +64,7 @@ ms.lasthandoff: 10/31/2017
  可以通过指定签入策略来实现该任务。 有关详细信息，请参阅[利用团队项目签入策略提高代码质量](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)。  
   
 ## <a name="team-build-integration"></a>Team Build 集成  
- 你可以使用生成系统的集成功能在生成过程中运行分析工具。 有关详细信息，请参阅[生成应用程序](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
+ 你可以使用生成系统的集成功能在生成过程中运行分析工具。 有关详细信息，请参阅[生成和发布](/vsts/build-release/index)。  
   
 ## <a name="see-also"></a>另请参阅  
  [使用规则集组合代码分析规则](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   

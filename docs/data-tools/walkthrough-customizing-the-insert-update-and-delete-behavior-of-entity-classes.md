@@ -15,14 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f711c0fcdd4866a1b097585052cdcb3733e426d8
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 2727f17665d845029fcf32dbcd12dd7603dad519
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练： 自定义插入、 更新和删除的实体类的行为
-[LINQ to SQL Visual Studio 中的工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用于创建和编辑的可视化设计图面[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]基于数据库中的对象的类 （实体类）。 通过使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，你可以使用 LINQ 技术访问 SQL 数据库。 有关详细信息，请参阅 [LINQ（语言集成查询）](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)。  
+[LINQ to SQL Visual Studio 中的工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用于创建和编辑的可视化设计图面[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]基于数据库中的对象的类 （实体类）。 通过使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，你可以使用 LINQ 技术访问 SQL 数据库。 有关详细信息，请参阅 [LINQ（语言集成查询）](/dotnet/csharp/linq/)。  
   
 默认情况下，由 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 运行时提供用于执行更新的逻辑。 该运行时基于表的架构（列定义和主键信息）创建默认的 Insert、Update 和 Delete 语句。 当不希望使用默认行为时，可以配置更新行为并指定特定的存储过程，来执行处理数据库中数据所必需的插入、更新和删除。 在不生成默认行为时（例如，实体类映射到视图时），也可以这样做。 另外，在数据库要求通过存储过程访问表时，您可以重写默认的更新行为。 有关详细信息，请参阅[自定义操作通过使用存储过程](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。  
   

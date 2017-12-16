@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d7609215f7145ae05d978ba10d556782c886ee3b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 96d5407672ff94749731f9d00088b27e8c4da036
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 在本演练中，你将创建一个包含数据绑定控件的 WPF 应用程序。 这些控件将绑定到在数据集中封装的产品记录。 你还将添加用于浏览产品和保存对产品记录所做的更改的按钮。  
@@ -50,8 +50,6 @@ ms.lasthandoff: 11/09/2017
 事先了解以下概念也很有用，但对于完成本演练并不是必需的：  
   
 -   数据集和 TableAdapter。 有关详细信息，请参阅[Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)和[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。  
-  
--   使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
 -   WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)。  
   
@@ -257,5 +255,4 @@ ms.lasthandoff: 11/09/2017
 ## <a name="see-also"></a>请参阅
 [将 WPF 控件绑定到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
 [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)   
-[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
 [数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)

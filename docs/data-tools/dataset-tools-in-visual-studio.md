@@ -50,11 +50,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6a7e5741b11263ef3c3730ddaa69e566cd7c2e24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0a589cf48f53636bcd3892c7c4c991e0fb516bf3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的数据集工具
 > [!NOTE]
@@ -83,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
     -   [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)  
   
--   查询和数据集中搜索的数据。 有关详细信息，请参阅[查询数据集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]使[LINQ （语言集成查询）](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)中的数据<xref:System.Data.DataSet>对象。 有关详细信息，请参阅 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。  
+-   查询和数据集中搜索的数据。 有关详细信息，请参阅[查询数据集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]使[LINQ （语言集成查询）](/dotnet/csharp/linq/)中的数据<xref:System.Data.DataSet>对象。 有关详细信息，请参阅 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。  
   
 -   使用**数据源**窗口以将用户界面控件绑定到数据集或其各个列，并指定哪些列是用户可编辑。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
   

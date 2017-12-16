@@ -17,11 +17,11 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4df0d9f772d92ac7f1f106b9befc0a8a2f89a22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e3f8eaa704dca0b939665e900e74fc3cb5120307
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>演练： 创建基本的独立的 Shell 应用程序
 本演练演示如何创建独立的 shell 解决方案、 自定义帮助中的关于工具窗口，并创建安装独立的 shell 的安装程序。  
@@ -78,7 +78,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  生成解决方案并启动调试。  
   
-4.  在**视图 / 其他窗口**，单击**Web 浏览器**。 **Web 浏览器**窗口显示 Microsoft Corporation 主页。  
+4.  在**视图 > 其他窗口**，单击**Web 浏览器**。 **Web 浏览器**窗口显示 Microsoft Corporation 主页。  
   
 ## <a name="removing-the-print-command"></a>删除打印命令  
  独立的 shell UI 项目中的.vsct 文件包含一组声明的窗体`<Define name=No_`*元素*`>`，其中*元素*是标准的 Visual Studio 菜单和命令之一。  
@@ -101,7 +101,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  这将删除打印命令。  
   
-5.  开始调试独立的 shell 应用程序。 验证**文件 / 打印**命令将消失。  
+5.  开始调试独立的 shell 应用程序。 验证**文件 > 打印**命令将消失。  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>从独立 Shell 删除功能  
  你可以删除一些使用 Visual Studio 通过编辑.pkgundef 文件，如果你不希望这些功能在你自定义的独立的 shell 应用程序中加载的包。 其中一个 $RootKey$ \Packages 注册表项的子项中指定的包。  
@@ -147,7 +147,7 @@ ms.lasthandoff: 10/31/2017
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.")]  
     ```  
   
-4.  开始调试并在独立的 shell 应用程序，打开**帮助 / 关于**框。 你应看到已更改的字符串。 帮助 / 关于框的标题是相同`AssemblyTitle`AssemblyInfo.cs 中的值。  
+4.  开始调试并在独立的 shell 应用程序，打开**帮助 > 有关**框。 你应看到已更改的字符串。 帮助 / 关于框的标题是相同`AssemblyTitle`AssemblyInfo.cs 中的值。  
   
 5.  属性**帮助 / 关于**框本身在 MyVSShellStub.AboutBoxPackage\AboutBox.xaml 文件中找到。 若要更改帮助 / 关于框的宽度，请转到`AboutDialogStyle`块并设置`Width`为 200 的属性：  
   

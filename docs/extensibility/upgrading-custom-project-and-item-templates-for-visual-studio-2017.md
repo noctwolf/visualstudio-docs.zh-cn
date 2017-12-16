@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76437dff5aa59e4864216318e64a07245c15c68d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bdd1238eee39b902adf581092a90f7d84c1b0a98
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>升级自定义项目和项模板的 Visual Studio 2017
 从 Visual Studio 2017 年 1 开始，Visual Studio 正在改变其发现由.vsix 或.msi 安装的项目和项模板的方式。 如果你拥有使用自定义项目或项模板的扩展，你需要更新你的扩展。 本主题介绍你必须执行的操作。  
@@ -26,7 +26,7 @@ ms.lasthandoff: 10/31/2017
  如果你想要创建项目或项模板作为 VSIX 扩展的一部分，请参阅[创建自定义项目和项模板](../extensibility/creating-custom-project-and-item-templates.md)。  
   
 ## <a name="template-scanning"></a>扫描的模板  
- 以前， **devenv /setup**或**devenv /installvstemplates**扫描本地磁盘上，以查找项目和项模板。 从预览版 4 开始，扫描将执行仅为用户级别位置 (**%USERPROFILE%\Documents\\< Visual Studio 版本\>\My 导出模板\\**)，用来为模板生成的**文件 / 导出模板**命令。  
+ 以前， **devenv /setup**或**devenv /installvstemplates**扫描本地磁盘上，以查找项目和项模板。 从预览版 4 开始，扫描将执行仅为用户级别位置 (**%USERPROFILE%\Documents\\< Visual Studio 版本\>\My 导出模板\\**)，用来为模板生成的**文件 > 将模板导出**命令。  
   
  对于其他 （非用户） 位置中，你必须包括指定的位置和模板的其他特征的 manifest(.vstman) 文件。 .Vstman 文件生成以及用于模板的.vstemplate 文件中。 如果你安装你使用.vsix 的扩展，可以通过重新编译 Visual Studio 自 2017 年中的扩展来实现此目的。 但如果使用一个.msi 时，你需要手动进行更改。 你需要如何手动进行这些更改的列表，请参阅**升级为与安装的扩展。MSI**本主题中更高版本。  
   
@@ -119,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
 ```  
   
- 提供的信息[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)元素保持不变。 **\<VSTemplateContainer >**元素指向关联的模板的.vstemplate 文件。  
+ 提供的信息[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)元素保持不变。  **\<VSTemplateContainer >**元素指向关联的模板的.vstemplate 文件。  
   
  下面是由 Visual Studio 2015 创建的默认项.vstemplate 文件：  
   
@@ -172,7 +172,7 @@ ms.lasthandoff: 10/31/2017
   
 ```  
   
- 提供的信息 **\<TemplateData >**元素保持不变。 **\<VSTemplateContainer >**元素指向关联的模板的.vstemplate 文件  
+ 提供的信息 **\<TemplateData >**元素保持不变。  **\<VSTemplateContainer >**元素指向关联的模板的.vstemplate 文件  
   
  有关.vstman 文件的不同元素的详细信息，请参阅[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eabddaea271eb07873fc50bd4824a5108514444c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 679b5c78330bb8be151a1b9f89625c8f2178456d
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153：避免处理损坏状态异常
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  [损坏状态异常 (CSE)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) 指示进程中存在内存损坏。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。  
   
 ## <a name="rule-description"></a>规则说明  
- CSE 指示进程状态已损坏且未被系统捕获。 在损坏状态的情况中，如果你将方法标记有适当的 `HandleProcessCorruptedStateExceptions` 特性，则常规的处理程序仅捕获异常。 默认情况下， [公共语言运行时 (CLR)](https://msdn.microsoft.com/en-us/library/8bs2ecf4.aspx) 将不会为 CSE 调用 catch 处理程序。  
+ CSE 指示进程状态已损坏且未被系统捕获。 在损坏状态的情况中，如果你将方法标记有适当的 `HandleProcessCorruptedStateExceptions` 特性，则常规的处理程序仅捕获异常。 默认情况下，[公共语言运行时 (CLR)](/dotnet/standard/clr)将不会为 Cse 调用 catch 处理程序。  
   
  允许进程崩溃而不捕获这些类型的异常是最安全的选择，因为甚至日志记录代码都可允许攻击者利用内存损坏错误。  
   

@@ -25,11 +25,11 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 55b1f4061d408187525c255e4ab12c3fe93eb60e
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: f1634250d97e83b21cccd3ada90933fc0806d35f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ 代码分析概述
 C/C++ 代码分析工具为开发人员提供有关其 C/C++ 源代码中可能存在的缺陷的信息。 该工具报告的常见编码错误包括缓冲区溢出、内存未初始化、null 指针取消引用，以及内存和资源泄漏。  
@@ -38,7 +38,7 @@ C/C++ 代码分析工具为开发人员提供有关其 C/C++ 源代码中可能�
  以方便开发人员能够使用分析工具，它完全集成在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE。 在生成过程中，为源代码生成任何警告将出现在错误列表中。 您可以导航到导致该警告的源代码，并可以查看有关原因和可能的问题的解决方案的其他信息。  
   
 ## <a name="pragma-support"></a>#pragma 支持  
- 开发人员可以使用`#pragma`指令来将警告视为错误; 启用或禁用警告，并禁止显示警告的代码的各个行。 有关详细信息，请参阅[如何： 启用和禁用特定 C/c + + 警告的代码分析](http://msdn.microsoft.com/en-us/910b8518-71f1-4b2e-b012-70647795642a)。  
+ 开发人员可以使用`#pragma`指令来将警告视为错误; 启用或禁用警告，并禁止显示警告的代码的各个行。 有关详细信息，请参阅[如何： 为 C/c + + 项目中设置代码分析属性](how-to-set-code-analysis-properties-for-c-cpp-projects.md)。  
   
 ## <a name="annotation-support"></a>批注支持  
  批注可以提高代码分析的准确性。 批注函数参数提供有关复制前和后的条件的其他信息和返回类型。 有关详细信息，请参阅[如何： 使用 __analysis_assume 指定其他代码信息](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  

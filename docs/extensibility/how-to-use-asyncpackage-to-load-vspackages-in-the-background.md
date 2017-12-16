@@ -10,17 +10,17 @@ ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-ms.openlocfilehash: 8adc348553ba613898117f10ccd21a6e5cd02ab8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b89f021b181e653dff97368cc5c1f2d993f04323
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何： 使用 AsyncPackage 加载在后台的 Vspackage
 加载和初始化 VS 包可以导致磁盘 I/O。 如果此类 I/O 在 UI 线程上发生，它会导致响应能力问题。 为了解决此问题，Visual Studio 2015 引入了<xref:Microsoft.VisualStudio.Shell.AsyncPackage>启用后台线程上的包加载的类。  
   
 ## <a name="creating-an-asyncpackage"></a>创建 AsyncPackage  
- 你可以通过创建 VSIX 项目 (**文件 / 新 / 项目 / Visual C# / 可扩展性 / VSIX 项目**) 并将 VSPackage 添加到项目 (右键单击该项目和**添加新项 / 项 C# / 可扩展性/VisualStudio 包**)。 然后，你可以创建你的服务，并将这些服务添加到你的包。  
+ 你可以通过创建 VSIX 项目 (**文件 > 新建 > 项目 > Visual C# > 扩展性 > VSIX 项目**) 并将 VSPackage 添加到项目 (右键单击该项目和**添加新项 / C# 项 /Extensibility/Visual Studio 包**)。 然后，你可以创建你的服务，并将这些服务添加到你的包。  
   
 1.  派生从包<xref:Microsoft.VisualStudio.Shell.AsyncPackage>。  
   

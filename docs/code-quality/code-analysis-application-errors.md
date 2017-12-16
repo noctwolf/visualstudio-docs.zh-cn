@@ -17,11 +17,11 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af00c9eb270604a9d918f237c50930da7a2b8cdd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f89420d19696c0be26a2fb0a9b9b405574325797
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-application-errors"></a>代码分析应用程序错误
 本节是由托管的代码分析工具生成的错误消息的引用。 若要获取特定的错误消息的帮助，请键入错误号**查找**框中的索引。  
@@ -59,8 +59,6 @@ ms.lasthandoff: 10/31/2017
 |[FxCopCmd 错误](fxcopcmd-errors.md)|托管的代码分析错误。|  
   
 ## <a name="related-sections"></a>相关章节  
- [有关编写安全代码的准则](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)  
-
  [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)  
   
  [分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  

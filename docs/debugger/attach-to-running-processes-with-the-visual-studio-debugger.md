@@ -31,11 +31,11 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7ed9c7f362399d9cd256b02af9f1fe1bcecf8ce
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 48462684498136d09354fb87917f553d522188c0
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到运行的进程
 你可将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。 进程正在运行后，单击**调试 > 附加到进程**(或按**CTRL + ALT + P**) 以打开**附加到进程**对话框。
@@ -122,7 +122,7 @@ ms.lasthandoff: 11/11/2017
 
 ## <a name="additional-info"></a>其他信息
 
-调试时可以附加到多个程序，但在任何时间，调试器中都只有一个程序处于活动状态。 可以在 **“调试位置”** 工具栏或 **“进程”** 窗口中设置活动程序。 有关详细信息，请参阅[如何： 设置当前程序](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)。  
+调试时可以附加到多个程序，但在任何时间，调试器中都只有一个程序处于活动状态。 可以在 **“调试位置”** 工具栏或 **“进程”** 窗口中设置活动程序。  
   
 如果尝试附加到不受信任的用户帐户拥有的进程，则会出现安全警告对话框确认。 有关详细信息请参阅[安全警告： 附加到不受信任的用户拥有的进程可能会十分危险。如果以下信息查找可疑或您不确定，不附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)。  
   

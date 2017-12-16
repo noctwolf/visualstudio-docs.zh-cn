@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: cba3d5568ee2fa2b4af0eb9c10995c813fe09c01
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c493a7ea448277275072ab71cf013333ccb9b4ea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL Visual Studio 中的工具
 LINQ to SQL 是 Microsoft 发布的第一个对象关系映射技术。 它适用于基本方案，并继续支持在 Visual Studio 中，但它不再进行活动开发。 使用 LINQ to SQL 时维护的旧应用程序已在使用它，或简单的应用程序使用 SQL Server 并不需要多表映射。 一般情况下，新的应用程序应使用实体框架时是必需的对象关系映射器层。  
@@ -62,7 +62,7 @@ LINQ to SQL 是 Microsoft 发布的第一个对象关系映射技术。 它适�
  像其他对象一样，[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 类可以使用继承，并可从其他类派生。 在数据库中，可通过多种方式创建继承关系。 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]支持通常在关系系统中实现的单表继承概念。 有关详细信息，请参阅[如何： 通过使用 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)。  
   
 ## <a name="linq-to-sql-queries"></a>LINQ to SQL 查询  
- 创建的实体类[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]专用于[LINQ （语言集成查询）](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)。 有关详细信息，请参阅[如何： 查询有关的信息](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information)。  
+ 创建的实体类[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]专用于[LINQ （语言集成查询）](/dotnet/csharp/linq/)。 有关详细信息，请参阅[如何： 查询有关的信息](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information)。  
   
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>将生成的 DataContext 和实体类代码分离到不同的命名空间  
  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]提供**上下文 Namespace**和**实体 Namespace**属性<xref:System.Data.Linq.DataContext>。 这些属性决定 <xref:System.Data.Linq.DataContext> 和实体类代码生成到哪个命名空间。 默认情况下，这些属性为空并且 <xref:System.Data.Linq.DataContext> 和实体类生成到应用程序的命名空间。 若要生成应用程序的命名空间之外的命名空间中的代码，请输入值转换为**上下文 Namespace**和/或**实体 Namespace**属性。

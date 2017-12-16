@@ -23,11 +23,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 85062fe6ea82a73fbc2d64e1d1ce9136d16831cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 2274ac9bcfd3ba7c87364f5c4c79cd155844fe73
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>处理在 n 层应用程序中的数据集
 *N 层数据应用程序*是以数据为中心的应用程序分成多个逻辑层 (或*层*)。 换句话说，N 层数据应用程序是分离到多个项目中的应用程序，数据访问层、业务逻辑层和表示层都在各自的项目中。 有关详细信息，请参阅[N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。  
@@ -51,4 +51,4 @@ N 层中类型化数据集的支持可以迭代开发到 n 层设计的应用程
 [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)  
 [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)  
 [创建和配置 Tableadapter](../data-tools/create-and-configure-tableadapters.md)  
-[N 层和远程应用程序而 LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+[使用 LINQ to SQL 的 N 层和远程应用程序](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

@@ -12,34 +12,32 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-ms.assetid: 12360f54-db6c-45d2-a91f-fee43214b555
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: f327d2010105c12c4b137317ed2406cae6cad9a3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f826f7d33a8d35719afacb053995629433b27642
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>演练：使用数据集设计器创建数据集
+
 在本演练将创建数据集使用**数据集设计器**。 它将指导您完成创建新的项目并添加一个新的过程**数据集**到它的项。 你将学习如何创建基于不使用向导的数据库的表中的表。  
-  
- 本演练涉及以下任务：  
-  
+
+本演练涉及以下任务：  
+
 -   创建一个新**Windows 窗体应用程序**项目。  
-  
+
 -   添加一个空**数据集**到项目的项。  
-  
+
 -   创建和配置应用程序中的数据源，通过构建具有的数据集**数据集设计器**。  
-  
+ 
 -   创建到 Northwind 数据库中的连接**服务器资源管理器**。  
-  
+
 -   使用 Tableadapter 创建表，在基于数据库中的表的数据集。  
-  
+
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>先决条件  

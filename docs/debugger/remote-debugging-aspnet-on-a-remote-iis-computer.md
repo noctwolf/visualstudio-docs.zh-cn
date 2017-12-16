@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b73dc5b153813811a0d2b839e69200a7e5f5a1e9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 2f1fbc41976afc6a906757fa5946b82abdd8bd02
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 远程 IIS 计算机上的远程调试 ASP.NET 核心
 若要调试的 ASP.NET 应用程序部署到 IIS，安装和在计算机上运行远程工具其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
@@ -35,11 +35,11 @@ ms.lasthandoff: 11/29/2017
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 计算机上创建 ASP.NET Core 应用程序 
 
-1. 创建新的 ASP.NET Core 应用程序。 (**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET 核心 Web 应用程序 (.NET Core)**)。
+1. 创建新的 ASP.NET Core 应用程序。 (**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET 核心 Web 应用程序**)。
 
     在**ASP.NET Core**模板部分中，选择**Web 应用程序**。
 
-2. 请确保**启用 Docker 支持**是**不**选且**身份验证**设置为**无身份验证**。
+2. 请确保**ASP.NET 核心 2.0**选中，则，**启用 Docker 支持**是**不**选且**身份验证**设置为**无身份验证**。
 
 3. 将项目**MyASPApp**单击**确定**创建新的解决方案。
 

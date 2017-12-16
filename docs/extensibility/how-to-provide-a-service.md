@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0adc9f69f1b0e873d2e1f38c9317070dc0d6a08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3c37f4dc215027752da9c16fbdfba44b4e10c41c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-a-service"></a>如何： 提供服务
 VSPackage 可以提供其他 Vspackage 可以使用的服务。 若要提供服务，VSPackage 必须使用 Visual Studio 中注册该服务并添加服务。  
@@ -31,9 +31,9 @@ VSPackage 可以提供其他 Vspackage 可以使用的服务。 若要提供服�
   
 #### <a name="implementing-a-service"></a>实现服务  
   
-1.  创建 VSIX 项目 (**文件 / 新建 / 项目 / Visual C# / Extensiblity / VSIX 项目**)。  
+1.  创建 VSIX 项目 (**文件 > 新建 > 项目 > Visual C# > Extensiblity > VSIX 项目**)。  
   
-2.  将 VSPackage 添加到项目。 选择中的项目节点**解决方案资源管理器**单击**添加新 / 项 / Visual C# 项 / 扩展性 / Visual Studio 包**。  
+2.  将 VSPackage 添加到项目。 选择中的项目节点**解决方案资源管理器**单击**添加 > 新项 > Visual C# 项 > 扩展性 > Visual Studio 包**。  
   
 3.  若要实现的服务，你需要创建三种类型：  
   
@@ -109,7 +109,7 @@ VSPackage 可以提供其他 Vspackage 可以使用的服务。 若要提供服�
   
 2.  实现的回调方法，这应创建并返回该服务，或如果无法创建为 null。  
   
-    ```  
+    ```csharp  
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  

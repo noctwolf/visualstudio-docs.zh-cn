@@ -1,5 +1,5 @@
 ---
-title: "重构功能 (Visual Basic 中) 的 visual Studio |Microsoft 文档"
+title: "适用于 Visual Basic 中重构功能 |Microsoft 文档"
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -12,23 +12,23 @@ f1_keywords:
 - vs.vb.refactoring.issues
 - vs.vb.refactoring.buildwarning
 - VS.PreviewChanges
-dev_langs: visual-basic
+dev_langs: VB
 helpviewer_keywords: refactoring [VB]
-ms.assetid: 7312ea3f-7045-41e8-a699-7b580508d074
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a044fddd38627182efe0ad842524af57b119421a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b80a5f51394fda2274190322be172325205984a0
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="refactoring"></a>重构
-重构是改进你的代码之后它已写入通过而无需更改代码的外部行为更改的代码的内部结构, 的过程。  
-  
-Visual Basic 提供以下重构功能：  
-  
+# <a name="refactoring-in-visual-basic"></a>在 Visual Basic 中重构
+
+重构是不更改其行为的情况下更改代码的内部结构的过程。 重构通常用于使代码更具可读性、 可维护性、 且可靠。
+
+Visual Basic 提供以下重构功能：
+
 * [更改方法签名](refactoring/change-method-signature.md)
 * [封装字段](refactoring/encapsulate-field.md)
 * [提取接口](refactoring/extract-interface.md)
@@ -38,3 +38,8 @@ Visual Basic 提供以下重构功能：
 * [将类型移到匹配的文件](refactoring/move-type-to-matching-file.md)
 * [重命名](refactoring/rename.md)
 * [同步类型和文件名](refactoring/sync-type-and-file.md)
+
+## <a name="see-also"></a>请参阅
+
+[重构，代码生成和 Visual Studio 中的快速操作](../ide/refactoring-code-generation-quick-actions.md)  
+[在 C# 中重构](../csharp-ide/refactoring-csharp.md)

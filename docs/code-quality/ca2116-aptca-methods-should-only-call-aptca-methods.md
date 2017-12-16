@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c6a91cffc3ce388a3dfb9000b9f432672018f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5c1b61e8895258a4f27d3803bf7fb5e4e2a0fba3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116：APTCA 方法应只调用 APTCA 方法
 |||  
@@ -49,7 +49,7 @@ ms.lasthandoff: 10/31/2017
  部分受信任的调用方`X`可以调用方法`M1`，从而导致`M1`调用`M2`。 因为`M2`没有 APTCA 特性，其直接调用方 (`M1`) 必须满足针对完全信任; 的链接要求`M1`具有完全信任权限并且因此满足此检查。 安全风险是因为`X`不参与满足此链接要求保护`M2`通过不受信任的调用方。 因此，用 APTCA 特性方法不得调用不具有属性的方法。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
- 如果 APCTA 特性是必需的则使用要求来保护调入完全信任程序集的方法。 确切的权限，您需将取决于你的方法所公开的功能。 如果可能，保护要求完全信任以确保基础功能不会公开给部分受信任的调用方提供的方法。 如果这是不可能，请选择有效地保护已公开的功能的权限集。 有关要求的详细信息，请参阅[需求](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)。  
+ 如果 APCTA 特性是必需的则使用要求来保护调入完全信任程序集的方法。 确切的权限，您需将取决于你的方法所公开的功能。 如果可能，保护要求完全信任以确保基础功能不会公开给部分受信任的调用方提供的方法。 如果这是不可能，请选择有效地保护已公开的功能的权限集。  
   
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
  若要安全地禁止显示此规则的警告，必须确保由你的方法公开的功能不会直接或间接允许调用方访问敏感信息、 操作或可以以的破坏性方式使用的资源。  
@@ -78,8 +78,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>另请参阅  
  [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)   
- [.NET framework 程序集可调用由部分受信任的代码](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [通过部分受信任的代码使用库](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [需求](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
  [链接需求](/dotnet/framework/misc/link-demands)   
  [数据和建模](/dotnet/framework/data/index)

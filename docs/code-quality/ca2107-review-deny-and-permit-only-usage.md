@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb802e0d97d265c01540ca10ffe8d0dcf9b273cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: edd0bd14a75dfd58ca043bfaa663e2cfb2660e75
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107：检查 deny 权限和 permit only 权限的使用情况
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  方法包含指定的 PermitOnly 或拒绝安全操作的安全检查。  
   
 ## <a name="rule-description"></a>规则说明  
- [使用 PermitOnly 方法](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)和<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>应仅通过具有高级的知识的人员使用安全操作的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安全。 应当对使用这些安全操作的代码进行安全检查。  
+ <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>应仅通过具有高级的知识的人员使用安全操作的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安全。 应当对使用这些安全操作的代码进行安全检查。  
   
  拒绝更改对安全请求响应中发生堆栈审核的默认行为。 它允许你指定必须未在拒绝的方法，无论调用堆栈中的调用方的实际权限的持续时间内授予的权限。 如果堆栈审核检测到由 Deny，保护的方法，并且如果要求的权限包含在被拒绝的权限，则堆栈审核将失败。 PermitOnly 也会更改堆栈审核的默认行为。 它允许代码来指定无论调用方的权限，可授予的权限。 如果堆栈审核检测到 PermitOnly，受保护的方法，且要求的权限不包含由 PermitOnly 指定权限中，堆栈审核失败。  
   
@@ -82,5 +82,4 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>   
  [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)   
- [重写安全检查](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [使用 PermitOnly 方法](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+
