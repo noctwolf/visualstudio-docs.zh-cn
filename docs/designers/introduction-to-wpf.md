@@ -15,11 +15,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 1f703c1eefe535906f287c9e7b50e0b7ad99677f
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 5dacd44d72e5be7a898ba90c074dedf4b2f2bb4b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="introduction-to-wpf"></a>WPF 介绍
 使用 Windows Presentation Foundation (WPF)，你可以创建适用于 Windows 且具有非凡视觉效果的桌面客户端应用程序。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/11/2017
 ##  <a name="Programming_with_WPF"></a> 使用 WPF 进行编程  
  WPF 作为大部分位于 <xref:System.Windows> 命名空间中的 .NET Framework 类型的一个子集存在。 如果你之前使用托管技术（如 ASP.NET 和 Windows 窗体）通过 .NET Framework 生成过应用程序，则不会对基本的 WPF 编程体验感到陌生；你可以使用最喜欢的 .NET 编程语言（如 C# 或 Visual Basic）来完成实例化类、设置属性、调用方法以及处理事件等所有操作。  
   
- WPF 还包括增强属性和事件的其他编程构造： [依赖项属性](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx) 和 [路由事件](https://msdn.microsoft.com/en-us/library/ms742806\(v=vs.100\).aspx)。  
+ WPF 还包括增强属性和事件的其他编程构造： [依赖项属性](/dotnet/framework/wpf/advanced/dependency-properties-overview) 和 [路由事件](/dotnet/framework/wpf/advanced/routed-events-overview)。  
   
 ##  <a name="Markup_And_Codebehind"></a> 标记和代码隐藏  
  通过 WPF，你可以使用 *标记* 和 *代码隐藏*开发应用程序，这是 ASP.NET 开发人员已经熟悉的体验。 通常使用 XAML 标记实现应用程序的外观，同时使用托管编程语言（代码隐藏）来实现其行为。 这种外观和行为的分离具有以下优点：  
@@ -42,7 +42,7 @@ ms.lasthandoff: 11/11/2017
   
 -   开发效率更高，因为设计人员在实现应用程序外观的同时，开发人员可以实现应用程序的行为。  
   
--   WPF 应用程序的[全球化和本地化](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx) 得以简化。  
+-   WPF 应用程序的[全球化和本地化](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview) 得以简化。  
   
  以下是 WPF 标记和代码隐藏的简介。  
   
@@ -69,7 +69,7 @@ ms.lasthandoff: 11/11/2017
   
  ![包含按钮的窗口](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")  
   
- 由于 XAML 是基于 XML 的，因此使用它编写的 UI 汇集在嵌套元素的层次结构中，称为 [元素树](https://msdn.microsoft.com/en-us/library/ms753391\(v=vs.100\).aspx)。 元素树提供了一种直观的逻辑方式来创建和管理 UI。  
+ 由于 XAML 是基于 XML 的，因此使用它编写的 UI 汇集在嵌套元素的层次结构中，称为 [元素树](/dotnet/framework/wpf/advanced/trees-in-wpf)。 元素树提供了一种直观的逻辑方式来创建和管理 UI。  
   
 ### <a name="code-behind"></a>代码隐藏  
  应用程序的主要行为是实现响应用户交互的功能，包括处理事件（例如，单击菜单、工具栏或按钮）以及相应地调用业务逻辑和数据访问逻辑。 在 WPF 中，通常在与标记相关联的代码中实现此行为。 此类代码称为代码隐藏。 下面的示例演示上一个示例的更新标记和代码隐藏。  
@@ -181,9 +181,9 @@ End Namespace
 -   **用户信息**： <xref:System.Windows.Controls.AccessText>、 <xref:System.Windows.Controls.Label>、 <xref:System.Windows.Controls.Primitives.Popup>、 <xref:System.Windows.Controls.ProgressBar>、 <xref:System.Windows.Controls.Primitives.StatusBar>、 <xref:System.Windows.Controls.TextBlock>和 <xref:System.Windows.Controls.ToolTip>。  
   
 ##  <a name="Input_And_Commanding"></a> 输入和命令  
- 最常检测和响应用户输入的控件。 [WPF 输入系统](https://msdn.microsoft.com/en-us/library/ms754010\(v=vs.100\).aspx) 使用直接事件和路由事件来支持文本输入、焦点管理和鼠标定位。  
+ 最常检测和响应用户输入的控件。 [WPF 输入系统](/dotnet/framework/wpf/advanced/input-overview) 使用直接事件和路由事件来支持文本输入、焦点管理和鼠标定位。  
   
- 应用程序通常具有复杂的输入要求。 WPF 提供了 [命令系统](https://msdn.microsoft.com/en-us/library/ms752308\(v=vs.100\).aspx) ，用于将用户输入操作与对这些操作做出响应的代码分隔开来。  
+ 应用程序通常具有复杂的输入要求。 WPF 提供了 [命令系统](/dotnet/framework/wpf/advanced/commanding-overview) ，用于将用户输入操作与对这些操作做出响应的代码分隔开来。  
   
 ##  <a name="Layout"></a> 布局  
  创建用户界面时，按照位置和大小排列控件以形成布局。 任何布局的一项关键要求都是适应窗口大小和显示设置的变化。 WPF 为你提供一流的可扩展布局系统，而不强制你编写代码以适应这些情况下的布局。  
@@ -211,7 +211,7 @@ End Namespace
  <xref:System.Windows.Controls.DockPanel> 允许子 <xref:System.Windows.Controls.TextBox> 控件，以告诉它如何排列这些控件。 为了完成此操作，<xref:System.Windows.Controls.DockPanel> 实现 `Dock` 附加了属性，该属性公开给子控件，以允许每个子控件指定停靠样式。  
   
 > [!NOTE]
->  由父控件实现以便子控件使用的属性是 WPF 构造，称为 [附加属性](https://msdn.microsoft.com/en-us/library/ms749011\(v=vs.100\).aspx)。  
+>  由父控件实现以便子控件使用的属性是 WPF 构造，称为 [附加属性](/dotnet/framework/wpf/advanced/attached-properties-overview)。  
   
  下图显示上一个示例中的 XAML 标记的结果。  
   
@@ -254,7 +254,7 @@ End Namespace
   
  WPF 数据绑定引擎提供了额外支持，包括验证、排序、筛选和分组。 此外，数据绑定支持在标准 WPF 控件显示的用户界面不恰当时，使用数据模板来为数据绑定创建自定义的用户界面。  
   
- 有关详细信息，请参阅 [数据绑定概述](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)。  
+ 有关详细信息，请参阅 [数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)。  
   
 ##  <a name="Graphics"></a> 图形  
  WPF 引入了一组广泛、可伸缩的灵活图形功能，具有以下优点：  
@@ -283,7 +283,7 @@ End Namespace
   
  ![包含文本“你已单击省略号!”的窗口](../designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
   
- 有关详细信息，请参阅 [WPF 中的形状和基本绘图概述](https://msdn.microsoft.com/en-us/library/ms747393\(v=vs.100\).aspx)。  
+ 有关详细信息，请参阅 [WPF 中的形状和基本绘图概述](/dotnet/framework/wpf/data/data-binding-overview)。  
   
 ### <a name="2-d-geometries"></a>二维几何图形  
  WPF 提供的二维形状包含基本形状的标准集。 但是，你可能需要创建自定义形状以帮助改进自定义用户界面的设计。 为此，WPF 提供了几何图形。 下图演示了使用几何图形来创建可直接绘制、用作画笔或用于剪辑其他形状和控件的自定义形状。  
@@ -294,28 +294,28 @@ End Namespace
   
  ![Path 的各种用法](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")  
   
- 有关详细信息，请参阅 [几何图形概述](https://msdn.microsoft.com/en-us/library/ms751808\(v=vs.100\).aspx)  
+ 有关详细信息，请参阅 [Geometry 概述](/dotnet/framework/wpf/graphics-multimedia/geometry-overview)。  
   
 ### <a name="2-d-effects"></a>二维效果  
  WPF 二维功能的子集包括视觉效果，如渐变、位图、绘图、用视频绘画、旋转、缩放和倾斜。 这些效果都可以使用画笔实现；下图演示了一些示例。  
   
  ![不同画笔的图示](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")  
   
- 有关详细信息，请参阅 [WPF 画笔概述](https://msdn.microsoft.com/en-us/library/aa970904\(v=vs.100\).aspx)。  
+ 有关详细信息，请参阅 [WPF 画笔概述](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview)。  
   
 ### <a name="3-d-rendering"></a>三维呈现  
  WPF 还包括三维呈现功能，这些功能与二维图形集成，以创建更精彩、更有趣的用户界面。 例如，下图显示呈现在三维形状上的二维图像。  
   
  ![Visual3D 示例屏幕快照](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
   
- 有关详细信息，请参阅 [三维图形概述](https://msdn.microsoft.com/en-us/library/ms747437\(v=vs.100\).aspx)。  
+ 有关详细信息，请参阅 [三维图形概述](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview)。  
   
 ##  <a name="Animation"></a> 动画  
  WPF 动画支持可以使控件变大、抖动、旋转和淡出，以形成有趣的页面过渡等。 你可以对大多数 WPF 类，甚至自定义类进行动画处理。 下图显示了运行中的一个简单动画。  
   
  ![具有动画多维数据集的图像](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
- 有关详细信息，请参阅 [动画概述](https://msdn.microsoft.com/en-us/library/ms752312\(v=vs.100\).aspx)。  
+ 有关详细信息，请参阅 [动画概述](/dotnet/framework/wpf/graphics-multimedia/animation-overview)。  
   
 ##  <a name="Media"></a> 媒体  
  传达丰富内容的一种方法是使用视听媒体。 WPF 为图像、视频和音频提供特殊支持。  
@@ -325,7 +325,7 @@ End Namespace
   
  ![缩略图图像和完整尺寸图像](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
   
- 有关详细信息，请参阅 [图像概述](https://msdn.microsoft.com/en-us/library/ms748873\(v=vs.100\).aspx)。  
+ 有关详细信息，请参阅 [图像概述](/dotnet/framework/wpf/graphics-multimedia/imaging-overview)。  
   
 ### <a name="video-and-audio"></a>视频和音频  
  <xref:System.Windows.Controls.MediaElement> 控件能够播放视频和音频，并且其足够灵活，可以用作其他自定义媒体播放器的基础。 下面的 XAML 标记实现一个媒体播放器。  
@@ -336,7 +336,7 @@ End Namespace
   
  ![具有音频和视频的 MediaElement 控件](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")  
   
- 有关详细信息，请参阅 [WPF 图形、动画和媒体概述](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)。  
+ 有关详细信息，请参阅[图形和多媒体](/dotnet/framework/wpf/graphics-multimedia)。  
   
 ##  <a name="Text_and_Typography"></a> 文本和版式  
  为了促进高质量的文本呈现，WPF 提供以下功能：  
@@ -355,7 +355,7 @@ End Namespace
   
  ![具有各种文本修饰的文本](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
- 有关详细信息，请参阅 [Windows Presentation Foundation 中的版式](https://msdn.microsoft.com/en-us/library/ms742190\(v=vs.100\).aspx)。  
+ 有关详细信息，请参阅 [Windows Presentation Foundation 中的版式](/dotnet/framework/wpf/advanced/typography-in-wpf)。  
   
 ##  <a name="WPF_Customization"></a> 自定义 WPF 应用程序  
  到目前为止，你已经了解用于开发应用程序的核心 WPF 构建块。 你可以使用该应用程序模型来托管和交付应用程序内容，它主要由控件组成。 若要简化用户界面中控件的排列，并确保保持该排列能够应对窗口大小和显示设置的更改，你可以使用 WPF 布局系统。 由于大多数应用程序允许用户与数据交互，因此你可以使用数据绑定来减少将用户界面与数据集成的工作。 若要增强你应用程序的可视化外观，可以使用 WPF 提供的综合图形、动画和媒体支持。  
@@ -408,10 +408,10 @@ End Namespace
   
  ![包含多种类型的内容的按钮](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")  
   
- 有关各种控件支持的内容类型的详细信息，请参阅 [WPF 内容模型](https://msdn.microsoft.com/en-us/library/bb613548\(v=vs.100\).aspx)。  
+ 有关各种控件支持的内容类型的详细信息，请参阅 [WPF 内容模型](/dotnet/framework/wpf/controls/wpf-content-model)。  
   
 ### <a name="triggers"></a>触发器  
- 尽管 XAML 标记的主要用途是实现应用程序的外观，你也可以使用 XAML 来实现应用程序行为的某些方面。 其中一个示例是使用触发器来基于用户交互更改应用程序的外观。 有关详细信息，请参阅[样式设置和模板化](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx)。  
+ 尽管 XAML 标记的主要用途是实现应用程序的外观，你也可以使用 XAML 来实现应用程序行为的某些方面。 其中一个示例是使用触发器来基于用户交互更改应用程序的外观。 有关详细信息，请参阅[样式设置和模板化](/dotnet/framework/wpf/controls/styling-and-templating)。  
   
 ### <a name="control-templates"></a>控件模板  
  WPF 控件的默认用户界面通常是从其他控件和形状构造的。 例如， <xref:System.Windows.Controls.Button> 由 <xref:Microsoft.Windows.Themes.ButtonChrome> 和 <xref:System.Windows.Controls.ContentPresenter> 控件组成。 <xref:Microsoft.Windows.Themes.ButtonChrome> 提供了标准按钮外观，而 <xref:System.Windows.Controls.ContentPresenter> 显示按钮的内容，正如 <xref:System.Windows.Controls.ContentControl.Content%2A> 属性所指定。  
@@ -491,7 +491,7 @@ End Namespace
   
  注意， <xref:System.Windows.Controls.ListBox> 已保留其行为和整体外观；仅列表框显示的内容外观已更改。  
   
- 有关详细信息，请参阅 [数据模板化概述](https://msdn.microsoft.com/en-us/library/ms742521\(v=vs.100\).aspx)。  
+ 有关详细信息，请参阅 [数据模板化概述](/dotnet/framework/wpf/data/data-templating-overview)。  
   
 ### <a name="styles"></a>样式  
  通过样式功能，开发人员和设计人员能够对其产品的特定外观进行标准化。 WPF 提供了一个强样式模型，其基础是 <xref:System.Windows.Style> 元素。 下面的示例创建一个样式，该样式将窗口上的每个 <xref:System.Windows.Controls.Button> 的背景色设置为 `Orange`。  
@@ -525,7 +525,7 @@ End Namespace
   
  ![两个橙色按钮](../designers/media/wpfintrofigure20.png "WPFIntroFigure20")  
   
- 有关详细信息，请参阅[样式设置和模板化](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx)。  
+ 有关详细信息，请参阅[样式设置和模板化](/dotnet/framework/wpf/controls/styling-and-templating)。  
   
 ### <a name="resources"></a>资源  
  应用程序中的控件应共享相同的外观，它可以包括从字体和背景色到控件模板、数据模板和样式的所有内容。 你可以对用户界面资源使用 WPF 支持，以将这些资源封装在一个位置以便重复使用。  
@@ -596,7 +596,7 @@ End Namespace
   
  资源和资源字典是 WPF 主题和皮肤支持的基础。  
   
- 有关详细信息，请参阅 [资源概述](https://msdn.microsoft.com/en-us/library/ms750613\(v=vs.100\).aspx)。  
+ 有关详细信息，请参阅 [资源概述](/dotnet/framework/wpf/advanced/xaml-resources)。  
   
 ### <a name="custom-controls"></a>自定义控件  
  尽管 WPF 提供了大量自定义支持，但你仍可能会遇到现有 WPF 控件不满足你的应用程序或其用户的需求的情况。 出现这种情况的原因有：  
@@ -628,18 +628,18 @@ End Namespace
   
  ![自定义用户控件](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")  
   
- 有关自定义控件的详细信息，请参阅 [控件创作概述](https://msdn.microsoft.com/en-us/library/ms745025\(v=vs.100\).aspx)。  
+ 有关自定义控件的详细信息，请参阅 [控件创作概述](/dotnet/framework/wpf/controls/control-authoring-overview)。  
   
 ##  <a name="WPF_Best_Practices"></a> WPF 最佳做法  
  与任何开发平台一样，可以采用多种方式使用 WPF 以实现所需的结果。 为确保你的 WPF 应用程序提供所需的用户体验并满足一般用户的需求，针对辅助功能、全球化和本地化以及性能提供了一些建议的最佳做法。 有关详细信息，请参阅以下主题：  
   
--   [辅助功能最佳做法](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)辅助功能最佳做法  
+-   [辅助功能最佳做法](/dotnet/framework/ui-automation/accessibility-best-practices)辅助功能最佳做法  
   
--   [WPF 全球化和本地化概述](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   [WPF 全球化和本地化概述](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   [优化 WPF 应用程序性能](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   [优化 WPF 应用程序性能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
--   [Windows Presentation Foundation 安全性](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   [Windows Presentation Foundation 安全性](/dotnet/framework/wpf/security-wpf)  
   
 ##  <a name="Summary"></a> 摘要  
  WPF 是一种综合演示技术，用于生成各种视觉效果非凡的客户端应用程序。 本简介已大致介绍了 WPF 的主要功能。  
@@ -651,4 +651,4 @@ End Namespace
 ## <a name="see-also"></a>另请参阅  
  [WPF 入门](../designers/getting-started-with-wpf.md)   
  [使用 Windows Presentation Foundation 创建现代桌面应用程序](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)   
- [Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx)
+ [Windows Presentation Foundation](/dotnet/framework/wpf/index)

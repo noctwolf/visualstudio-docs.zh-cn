@@ -11,15 +11,15 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49a42bdc9f8ec979e47f0977abdf36f614141c89
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: e9ae492d7fc4d110c6e5015c782f97a2561c8bd8
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="personalize-the-visual-studio-ide"></a>个性化设置 Visual Studio IDE
 
-可以通过各种方法对 Visual Studio 进行个性化设置，来为自己的开发风格和需求提供最佳支持。 许多设置会与你一起在 Visual Studio 实例之间漫游 &mdash; 请参阅[同步设置](../ide/synchronized-settings-in-visual-studio.md)。 本主题简要介绍不同的个性化设置以及可以获取详细信息的位置。
+可以通过各种方法对 Visual Studio 进行个性化设置，来为自己的开发风格和需求提供最佳支持。 许多设置跨 Visual Studio 实例出现（请参阅[同步设置](../ide/synchronized-settings-in-visual-studio.md)）。 本主题简要介绍不同的个性化设置以及可以获取详细信息的位置。
 
 ## <a name="general-environment-options"></a>常规环境选项
 

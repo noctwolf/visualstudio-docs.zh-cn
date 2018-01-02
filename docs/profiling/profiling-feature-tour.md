@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="profiling-feature-tour"></a>分析功能简介
 
@@ -152,7 +152,7 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 |性能工具|Windows 桌面|Windows 通用/应用商店|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[内存使用率](../profiling/memory-usage.md)|是|是|是|  
-|[CPU 使用率](../profiling/cpu-usage.md)|是|是|是|  
+|[CPU 使用率](../profiling/cpu-usage.md)|是|是|是（不适用于 .NET Core/ASP.NET Core）|  
 |[GPU 使用情况](../debugger/gpu-usage.md)|是|是|no|  
 |[应用程序时间线](../profiling/application-timeline.md)|是|是|no|  
 |[性能提示](../profiling/perftips.md)|是|XAML 适用，HTML 不适用|是|  

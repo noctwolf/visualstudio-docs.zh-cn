@@ -1,161 +1,71 @@
 ---
+title: "Visual Studio 文档| Microsoft Docs"
+description: "了解 Visual Studio 如何帮助你使用各种编程语言开发应用。"
 layout: LandingPage
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
-title: "Visual Studio IDE 文档| Microsoft Docs"
-description: "了解 Visual Studio 集成开发环境 (IDE) 如何帮助使用几乎任何代码语言开发应用。"
 ms.technology: vs-ide-general
-ms.openlocfilehash: 7bb2f4ef10f4d209c4c4e2c70b10b3a70fdf5c6c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0726372b4ba1a5feb87da223dce5e5d72f5280db
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="visual-studio-ide-documentation"></a>Visual Studio IDE 文档
+# <a name="visual-studio-documentation"></a>Visual Studio 文档
 
-了解 Visual Studio 集成开发环境 (IDE) 如何帮助使用几乎任何代码语言开发应用。
+了解 Visual Studio 如何帮助你使用各种编程语言开发应用。
 教程、视频和其他文档介绍如何通过使用 Visual Studio 创建代码和应用。
 
 <ul class="panelContent cardsFTitle">
     <li>
+        <a href="/visualstudio/install/install-visual-studio">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img data-hoverimage="../images/setup-install.svg" src="../images/setup-install.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>了解如何安装和设置 Visual Studio</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
         <a href="/visualstudio/ide/visual-studio-ide">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="" />
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img src="https://docs.microsoft.com/en-us/media/common/i_get-started.svg" alt="" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Visual Studio 演示</h3>
+                        <div class="cardText">
+                            <h3>Visual Studio 概述</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </a>
-    </li>    
-    <li>
-        <a href="https://youtu.be/JHc3_gsCmZg?list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>详细了解 IDE</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
         </a>
     </li>
     <li>
-        <a href="/dotnet/welcome">
+        <a href="https://mva.microsoft.com/en-US/training-courses/getting-started-with-visual-studio-2017-17798?l=9oIw0FD6D_3611787171">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/logos/logo_NET.svg" alt="" />
+                            <img src="https://docs.microsoft.com/en-us/media/common/i_advanced.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>开始使用 .NET 语言</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/cpp/">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_Cplusplus.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>开始使用 Visual C++</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/visualstudio/debugger/index">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>了解如何在 Visual Studio 中调试代码</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/visualstudio/profiling/index">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_code-performance.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>提高代码性能</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://mva.microsoft.com/product-training/visual-studio-courses">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_advanced.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Visual Studio 课程</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://channel9.msdn.com/VisualStudio">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Visual Studio 视频</h3>
+                        <h3>Microsoft Virtual Academy 上的 Visual Studio 2017</h3>
                     </div>
                 </div>
             </div>
@@ -164,21 +74,196 @@ ms.lasthandoff: 10/31/2017
     </li>
 </ul>
 
----
+<h2>通过 5 分钟“快速入门”体验 Visual Studio</h2>
 
-<h2>参考</h2>
-<ul class="panelContent cardsW">
+<ul class="panelContent cardsFTitle">
     <li>
+        <a href="/visualstudio/ide/quickstart-ide-orientation">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/media/common/i_road-map.svg" alt="" />
+                        </div>
+                    </div>
                     <div class="cardText">
-                        <p><a href="/visualstudio/ide/reference/visual-studio-reference">Visual Studio IDE 参考</a></p>
-                        <p><a href="/visualstudio/ide/reference/visual-studio-commands">Visual Studio 命令</a></p>
-                        <p><a href="/visualstudio/ide/reference/devenv-command-line-switches">Devenv 命令行开关</a></p>
+                        <h3>集成开发环境 (IDE) 入门</h3>
                     </div>
                 </div>
             </div>
         </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-projects-solutions">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/media/common/i_categorize.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>了解项目和解决方案</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-editor">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/media/common/i_code-edit.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>在编辑器中编写代码</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-personalize-the-ide">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/media/common/i_config-tools.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>个性化设置主题和文本颜色</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-aspnet-core">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/media/logos/logo_Csharp.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>通过 C# 创建 Web 应用</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-visual-basic-console">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/media/logos/logo_vb.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>使用 Visual Basic 创建控制台应用</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-cpp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/media/logos/logo_Cplusplus.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>使用 C++ 创建控制台应用</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-python">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/media/logos/logo_python.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>使用 Python 创建 Web 应用</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-nodejs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/media/logos/logo_nodejs.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>使用 Node.js 创建 Web 应用</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
     </li>
 </ul>
+
+<h2>通过教程深入了解</h2>
+
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack">
+
+<!--
+<div class="ico48Link"><a href="https://go.microsoft.com/fwlink/?linkid=833067"><img width="48" height="48" alt=""
+src="https://docs.microsoft.com/en-us/media/logos/logo_Fsharp.svg"><span>F#</span></a></div>
+<div class="ico48Link"><a href="https://go.microsoft.com/fwlink/?linkid=833066"><img width="48" height="48" alt=""
+src="https://docs.microsoft.com/en-us/media/logos/logo_TS.svg"><span>TypeScript</span></a></div>
+-->
+
+<div class="ico48Link"><a href="/cpp/build/vscpp-step-0-installation"><img width="48" height="48" alt=""
+src="https://docs.microsoft.com/en-us/media/logos/logo_Cplusplus.svg"><span>C++</span></a></div>
+<div class="ico48Link"><a href="/visualstudio/nodejs/tutorial-nodejs"><img width="48" height="48" alt=""
+src="https://docs.microsoft.com/en-us/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
+<div class="ico48Link"><a href="/visualstudio/python/vs-tutorial-01-01"><img width="48" height="48" alt=""
+src="https://docs.microsoft.com/en-us/media/logos/logo_Python.svg"><span>Python</span></a></div>
+<div class="ico48Link"><a href="/visualstudio/rtvs/getting-started-with-r"><img width="48" height="48" alt=""
+src="https://docs.microsoft.com/en-us/media/logos/logo_R.svg"><span>R</span></a></div>
+<div class="ico48Link"><a href="/visualstudio/ide/tutorial-csharp-aspnet-core"><img width="48" height="48" alt=""
+src="https://docs.microsoft.com/en-us/media/logos/logo_Csharp.svg"><span>C#</span></a></div>
+<div class="ico48Link"><a href="/visualstudio/ide/tutorial-visual-basic-console"><img width="48" height="48" alt=""
+src="https://docs.microsoft.com/en-us/media/logos/logo_vb.svg"><span>Visual Basic</span></a></div>
+<div class="ico48Link"><a href="/visualstudio/ide/getting-started-with-debugging-in-visual-studio"><img width="48" height="48" alt=""
+src="https://docs.microsoft.com/en-us/media/common/i_debug.svg"><span>调试</span></a></div>

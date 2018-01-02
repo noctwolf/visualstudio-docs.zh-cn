@@ -1,0 +1,190 @@
+---
+title: "Visual Studio 中项目和解决方案简介 | Microsoft Docs"
+ms.custom: 
+ms.date: 12/11/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: quickstart
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f3b30b796ca389d5adfc4f8ece3c8f774626e994
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 12/12/2017
+---
+# <a name="quickstart-projects-and-solutions"></a>快速入门：项目和解决方案
+
+这个 10 分钟的快速入门将探讨如何在 Visual Studio 中创建解决方案和项目。 我们会介绍项目的属性和其中包含的一些文件。 还会创建对第二个项目的引用。
+
+> [!TIP]
+> 在此快速入门中，我们会从头开始构建解决方案和项目，将此作为教学手段来介绍项目的概念。 一般来说，使用 Visual Studio 创建新项目时，很可能会用到 Visual Studio 提供的许多项目模板。
+
+> [!NOTE]
+> 在 Visual Studio 中开发应用时不需要用到解决方案和项目。 你可以只打开包含代码的文件夹，并开始编写代码、生成和调试。 例如，如果克隆 GitHub 存储库，其中可能不包含 Visual Studio 项目和解决方案。 有关详细信息，请参阅[在 Visual Studio 中开发代码而无需创建项目或解决方案](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
+
+## <a name="solutions"></a>解决方案
+
+解决方案是 Visual Studio 用来组织一个或多个相关项目的容器。 在 Visual Studio 中打开解决方案时，它会自动加载其包含的所有项目。
+
+### <a name="create-a-solution"></a>创建解决方案
+
+我们先创建一个空的解决方案。 对 Visual Studio 有一定了解后，可能就不会经常创建空的解决方案。 在 Visual Studio 中创建新项目时，如果没有打开的解决方案，它会自动创建一个解决方案来存放项目。
+
+1. 启动 Visual Studio。
+
+   打开 Visual Studio，此时“起始页”可能占据了窗口的大部分空间。
+
+1. 在菜单栏上，依次选择“文件” > “新建” > “项目...”。
+
+   **“新建项目”** 对话框随即打开。
+
+1. 在左侧窗格中，展开“其他项目类型”，然后选择“Visual Studio 解决方案”。 在中间窗格中，选择“空白解决方案”。 将解决方案命名为“QuickSolution”，然后选择“确定”。
+
+   ![空白解决方案模板](media/quickstart-projects-new-solution.png)
+
+   此时“起始页”关闭，Visual Studio 窗口右侧的“解决方案资源管理器”中出现解决方案。 你可能会经常使用“解决方案资源管理器”来浏览项目的内容。
+
+### <a name="add-a-project"></a>添加项目
+
+现在我们将第一个项目添加到解决方案。 先从空项目开始，将所需项添加到项目中。
+
+1. 在“解决方案资源管理器”中的“解决方案‘QuickSolution’”的右键菜单或上下文菜单中，依次选择“添加” > “新建项目...”。
+
+   此时会打开 **“添加新项目”** 对话框。
+
+1. 在左侧窗格中，展开“Visual C#”，然后选择“Windows 经典桌面”。 然后在中间窗格中，选择“空项目(.NET Framework)”。 将项目命名为“QuickDate”，然后选择“确定”按钮。
+
+   随后名为“QuickDate”的项目出现在“解决方案资源管理器”中的解决方案下。 目前它包含一个名为“App.config”的文件。
+
+   > [!NOTE]
+   > 如果在对话框的左侧窗格中看不到“Visual C#”，则需安装“.NET 桌面开发”工作负载。 执行此操作的简单方法是单击左侧窗格底部的“打开 Visual Studio 安装程序”链接。 “Visual Studio 安装程序”随即打开，从中选择正确的工作负载，然后选择“修改”按钮。
+
+   ![“打开 Visual Studio 安装程序”链接](media/quickstart-projects-open-installer.png)
+
+## <a name="add-an-item-to-the-project"></a>向项目添加一个项
+
+有了空项目&mdash;我们来添加代码文件。
+
+1. 在“解决方案资源管理器”中的“QuickDate”的右键菜单或上下文菜单中，依次选择“添加” > “新建项...”。
+
+   此时将打开“添加新项”对话框。
+
+1. 展开“Visual C# 项”，然后选择“代码”。 在中间窗格中，选择“类”。 将类命名为“Calendar”，然后选择“添加”按钮。
+
+   名为“Calendar.cs”的文件已添加到项目。 末尾的 .cs 是 C# 代码文件的文件扩展名。 文件出现在“解决方案资源管理器”中的可视项目层次结构中，其内容在编辑器中打开。
+
+1. 将 Calendar.cs 文件的内容替换为以下代码。
+
+   ```csharp
+   using System;
+
+   namespace QuickDate
+   {
+       internal class Calendar
+       {
+           static void Main(string[] args)
+           {
+               DateTime now = GetCurrentDate();
+               Console.WriteLine($"Today's date is {now}");
+               Console.ReadLine();
+           }
+
+           internal static DateTime GetCurrentDate()
+           {
+               return DateTime.Now.Date;
+           }
+       }
+   }
+   ```
+
+   你无需了解代码的作用，但是如果你想知道，可运行该程序，即可看到程序将今天的日期打印到控制台窗口。
+
+## <a name="add-a-second-project"></a>添加第二个项目
+
+包含多个项目的解决方案很常见，而且这些项目通常相互引用。 解决方案中的一些项目可能是类库，可能是可执行应用程序，也可能是单元测试项目或网站。
+
+我们来向解决方案添加单元测试项目。 这次我们从项目模板开始，所以不需要向项目添加额外的代码文件。
+
+1. 在“解决方案资源管理器”中的“解决方案‘QuickSolution’”的右键菜单或上下文菜单中，依次选择“添加” > “新建项目...”。
+
+   此时会打开 **“添加新项目”** 对话框。
+
+1. 在左侧窗格中，展开“Visual Basic”，然后选择“测试”类别。 在中间窗格中，选择“单元测试项目(.NET Framework)”。 将项目命名为“QuickTest”，然后选择“确定”按钮。
+
+   第二个项目已添加到“解决方案资源管理器”，且编辑器中打开了名为“UnitTest1.vb”的文件。 .vb 是 Visual Basic 代码文件的文件扩展名。
+
+   ![包含两个项目的“解决方案资源管理器”](media/quickstart-projects-solution-explorer.png)
+
+## <a name="add-a-project-reference"></a>添加项目引用
+
+我们将使用新的单元测试项目测试“QuickDate”项目中的方法，因此需要添加对该项目的引用。 创建引用会在两个项目间创建生成依赖关系，这意味着生成解决方案时，会先生成“QuickDate”，再生成“QuickTest”。
+
+1. 选择“QuickTest”项目中的“引用”节点，然后在右键菜单或上下文菜单中选择“添加引用...”。
+
+   ![“添加引用”菜单](media/quickstart-projects-add-reference.png)
+
+   “引用管理器”对话框随即打开。
+
+1. 在左侧窗格中，展开“项目”，然后选择“解决方案”。 在中间窗格中，选中“QuickDate”旁的复选框，然后选择“确定”按钮。
+
+   已添加对“QuickDate”项目的引用。
+
+## <a name="add-test-code"></a>添加测试代码
+
+1. 现在我们向 Visual Basic 代码文件添加测试代码。 将“UnitTest1.vb”的内容替换为以下代码。
+
+   ```vb
+   <TestClass()> Public Class UnitTest1
+
+       <TestMethod()> Public Sub TestGetCurrentDate()
+           Assert.AreEqual(DateTime.Now.Date, QuickDate.Calendar.GetCurrentDate())
+       End Sub
+
+   End Class
+   ```
+
+   你会看到某些代码下出现红色“波浪线”。 将测试项目设为“QuickDate”项目的[友元程序集](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies)来解决此错误。
+
+1. 返回“QuickDate”项目，如果“Calendar.cs”文件尚未打开，则打开该文件，然后添加以下 using 语句和 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性，解决测试项目中的错误。
+
+   ```csharp
+   using System.Runtime.CompilerServices;
+
+   [assembly: InternalsVisibleTo("QuickTest")]
+   ```
+
+   代码文件应如下所示。
+
+   ![CSharp 代码](media/quickstart-projects-cs-code.png)
+
+## <a name="project-properties"></a>项目属性
+
+包含 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性的 C# 代码文件中的行引用了“QuickTest”项目的程序集名称。 程序集名称可能不会始终与项目名称相同。 若要查看项目的程序集名称，请打开项目属性。
+
+1. 在“解决方案资源管理器”中，选择“QuickTest”项目。 在右键菜单或上下文菜单中，选择“属性”，或只按 Alt+Enter 即可。
+
+   项目的“属性页”随即在“应用程序”选项卡上打开。请注意，“QuickTest”项目的程序集名称确实为“QuickTest”。 如果想要更改，可在此处更改。 随后，在生成测试项目时，生成的可执行文件的名称将从“QuickTest.exe”更改为你选择的名称。
+
+   ![项目属性](media/quickstart-projects-properties.png)
+
+1. 了解项目属性页的其他选项卡，例如“编译”和“设置”。 项目类型不同，这些选项卡也会有所不同。
+
+## <a name="next-steps"></a>后续步骤
+
+若希望检查单元测试是否正常工作，请从菜单栏依次选择“测试” > “运行” > “所有测试”。 此时名为“测试资源管理器”的窗口打开，你应该会看到“TestGetCurrentDate”测试通过。
+
+祝贺你完成此快速入门！ 接下来，你可能想要了解 Visual Studio 的一些其他快速入门知识，或者详细了解如何[创建项目和解决方案](../ide/creating-solutions-and-projects.md)。
+
+## <a name="see-also"></a>请参阅
+
+[快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
+[快速入门：个性化设置 Visual Studio IDE 和编辑器](../ide/quickstart-personalize-the-ide.md)  
+[快速入门：在编辑器中编码](../ide/quickstart-editor.md)  
+[管理项目和解决方案属性](../ide/managing-project-and-solution-properties.md)  
+[管理项目中的引用](../ide/managing-references-in-a-project.md)  
+[在 Visual Studio 中开发代码而无需项目或解决方案](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
+[Visual Studio IDE 概述](../ide/visual-studio-ide.md)

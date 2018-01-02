@@ -10,15 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 096b5651f9d8133712d9296f09178fc9c8bc6086
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 7f10ee7dc03ffe0f80b6ee3d7ff47f5fcd6a1624
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入门：初步了解 Visual Studio IDE
 
-在这个 5-10 分钟的 Visual Studio 集成开发环(IDE) 简介中，我们将介绍一些窗口、菜单和其他 UI 功能。
+在这个 5-10 分钟的 Visual Studio 集成开发环境 (IDE) 简介中，我们将介绍一些窗口、菜单和其他 UI 功能。
 
 ## <a name="start-page"></a>起始页
 
@@ -38,11 +38,11 @@ ms.lasthandoff: 11/22/2017
 
    创建项目，并在“编辑器”窗口中打开名为 Program.cs 或 Program.vb 的文件。 编辑器既能显示文件的内容，又是在 Visual Studio 中完成大部分编码工作的地方。
 
-## <a name="solution-explorer"></a>解决方案资源管理器
+## <a name="solution-explorer"></a>“解决方案资源管理器”
 
 解决方案资源管理器可以显示项目、解决方案或代码文件夹中的文件和文件夹层次结构的图形表示。 你可以浏览层次结构，并在解决方案资源管理器中导航到文件。
 
-![解决方案资源管理器](media/quickstart-IDE-solution-explorer.png)
+![“解决方案资源管理器”](media/quickstart-IDE-solution-explorer.png)
 
 ## <a name="menus"></a>菜单
 
@@ -62,7 +62,7 @@ IDE 顶部的菜单栏将命令分组成不同的类别。 例如，“项目”
 
 “输出”窗口为你显示版本生成和源代码控制的输出消息。
 
-让我们构建该项目来查看一些输出记录。 从“生成”菜单中选择“生成解决方案”。 “输出”窗口自动获得焦点并显示成功生成的消息。
+让我们构建该项目来查看一些输出记录。 从 **“生成”** 菜单中选择 **“生成解决方案”**。 “输出”窗口自动获得焦点并显示成功生成的消息。
 
 ![输出窗口](media/quickstart-IDE-output.png)
 
@@ -94,8 +94,10 @@ IDE 顶部的菜单栏将命令分组成不同的类别。 例如，“项目”
 
 - 浏览 VS 文档的“常规用户界面元素”部分，该部分对[错误列表](../ide/reference/error-list-window.md)、[输出](../ide/reference/output-window.md)、[属性](../ide/reference/properties-window.md)等窗口，以及[选项](../ide/reference/options-dialog-box-visual-studio.md)对话框进行了深入介绍
 
-- 在 [Visual Studio IDE 概述](../ide/visual-studio-ide.md)中深入了解 IDE，甚至初步了解代码调试
+- 在 [Visual Studio IDE 概述](../ide/visual-studio-ide.md)中深入了解 IDE，甚至可初步了解代码调试
 
 ## <a name="see-also"></a>请参阅
 
-[快速入门：个性化 IDE](../ide/personalizing-the-visual-studio-ide.md)
+[快速入门：个性化 IDE](../ide/personalizing-the-visual-studio-ide.md)  
+[快速入门：在编辑器中编码](../ide/quickstart-editor.md)  
+[快速入门：项目和解决方案](../ide/quickstart-projects-solutions.md)  

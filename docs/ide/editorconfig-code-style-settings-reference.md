@@ -1,7 +1,7 @@
 ---
 title: "EditorConfig 的 .NET 编码约定设置 | Microsoft Docs"
 ms.custom: 
-ms.date: 10/13/2017
+ms.date: 12/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -14,17 +14,15 @@ helpviewer_keywords:
 - EditorConfig coding conventions
 - language conventions [EditorConfig]
 - formatting conventions [EditorConfig]
-ms.assetid: 
-caps.latest.revision: "1"
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 25db1488faef4ddb54af9831bee7ccd3d8479f76
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: e6ce48d060e340076b336083cb73bdd8145fc1a0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 编码约定设置
 
@@ -51,7 +49,7 @@ ms.lasthandoff: 12/01/2017
 
 严重性 | 效果
 :------- | ------
-无或无提示 | 如违反此规则，不会向用户显示任何内容。 但代码生成功能会以此样式生成代码。  
+none 或 silent | 如违反此规则，不会向用户显示任何内容。 但代码生成功能会以此样式生成代码。  
 建议 | 如违反此样式规则，会将其作为建议向用户显示。 建议显示为前两个字符下的三个灰点。  
 警告 | 如违反此样式规则，显示编译器警告。  
 错误 | 如违反此样式规则，显示编译器错误。  
@@ -283,9 +281,9 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 | 规则名称 | 规则 ID | 适用的语言 | Visual Studio 默认值 | 支持的版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# 和 Visual Basic | for_non_interface_members:none | Visual Studio 2017 版本 15.5 |
-| csharp_preferred_modifier_order | IDE0036 | C# | public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:none | Visual Studio 2017 版本 15.5 |
-| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:none | Visual Studio 2017 版本 15.5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# 和 Visual Basic | for_non_interface_members:none | Visual Studio 2017 v. 15.5 |
+| csharp_preferred_modifier_order | IDE0036 | C# | public、private、protected、internal、static、extern、new、virtual、abstract、sealed、override、readonly、unsafe、volatile、async:none | Visual Studio 2017 v. 15.5 |
+| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial、Default、Private、Protected、Public、Friend、NotOverridable、Overridable、MustOverride、Overloads、Overrides、MustInherit、NotInheritable、Static、Shared、Shadows、ReadOnly、WriteOnly、Dim、Const、WithEvents、Widening、Narrowing、Custom、Async:none | Visual Studio 2017 v. 15.5 |
 
 **dotnet\_style\_require\_accessibility_modifiers**  
 此规则不接受“true”或“false”值；此规则接受下表中的值：  
@@ -293,7 +291,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 | 值 | 描述 |
 | ----- |:----------- |
 | always | 优先指定可访问性修饰符 |
-| for_non_interface_members | 优先声明可访问性修饰符，公共接口成员除外。 当前这与“always”没有区别，并在将来 C# 添加默认接口方法的时候充当证明。 |
+| for\_non\_interface_members | 优先声明可访问性修饰符，公共接口成员除外。 当前这与“always”没有区别，并在将来 C# 添加默认接口方法的时候充当证明。 |
 | never | 不优先指定可访问性修饰符 | 
 
 代码示例：  
@@ -577,126 +575,126 @@ csharp_style_var_elsewhere = true:suggestion
 
 | 规则名称 | 规则 ID | 适用的语言 | Visual Studio 默认值 | 支持的版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | never:none | Visual Studio 2017 版本 15.3 |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | never:none | Visual Studio 2017 版本 15.3 |
-| csharp_style_expression_bodied_operators | IDE0023 和 IDE0024 | C# 7.0+ | never:none | Visual Studio 2017 版本 15.3 |
-| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | when_possible:none | Visual Studio 2017 版本 15.3 |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | when_possible:none | Visual Studio 2017 版本 15.3 |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | when_possible:none | Visual Studio 2017 版本 15.3 |  
+| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | false:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | false:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 和 IDE0024 | C# 7.0+ | false:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | true:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | true:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | true:none | Visual Studio 2017 v. 15.3 |  
 
 **csharp\_style\_expression\_bodied_methods**  
-此规则不接受“true”或“false”值；此规则接受下表中的值：  
+此规则接受下表中的值：  
 
 | 值 | 描述 |
 | ----- |:----------- |
-| when_possible | 倾向于使用方法的 expression-bodied 成员 |
+| true | 倾向于使用方法的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，优先使用方法的 expression-bodied 成员 |
-| never | 优先选择方法的块主体 | 
+| false | 优先选择方法的块主体 | 
 
 代码示例：  
 
 ```csharp
-// csharp_style_expression_bodied_methods = when_possible
+// csharp_style_expression_bodied_methods = true
 public int GetAge() => this.Age;
 
-// csharp_style_expression_bodied_methods = never
+// csharp_style_expression_bodied_methods = false
 public int GetAge() { return this.Age; }
 ```  
 
 **csharp\_style\_expression\_bodied_constructors**  
-此规则不接受“true”或“false”值；此规则接受下表中的值：  
+此规则接受下表中的值：   
 
 | 值 | 描述 |
 | ----- |:----------- |
-| when_possible | 倾向于使用构造函数的 expression-bodied 成员 |
+| true | 倾向于使用构造函数的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用构造函数的 expression-bodied 成员 |
-| never | 倾向于使用构造函数的块主体 |  
+| false | 倾向于使用构造函数的块主体 |  
 
 代码示例：  
 
 ```csharp
-// csharp_style_expression_bodied_constructors = when_possible
+// csharp_style_expression_bodied_constructors = true
 public Customer(int age) => Age = age;
 
-// csharp_style_expression_bodied_constructors = never
+// csharp_style_expression_bodied_constructors = false
 public Customer(int age) { Age = age; }
 ```  
 
 **csharp\_style\_expression\_bodied_operators**  
-此规则不接受“true”或“false”值；此规则接受下表中的值：  
+此规则接受下表中的值：    
 
 | 值 | 描述 |
 | ----- |:----------- |
-| when_possible | 倾向于使用运算符的 expression-bodied 成员 |
+| true | 倾向于使用运算符的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用运算符的 expression-bodied 成员 |
-| never | 倾向于使用运算符的块主体 |  
+| false | 倾向于使用运算符的块主体 |  
 
 代码示例：  
 
 ```csharp
-// csharp_style_expression_bodied_operators = when_possible
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = true
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
     => new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
 
-// csharp_style_expression_bodied_operators = never
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = false
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```  
 
 **csharp\_style\_expression\_bodied_properties**  
-此规则不接受“true”或“false”值；此规则接受下表中的值：  
+此规则接受下表中的值：   
 
 | 值 | 描述 |
 | ----- |:----------- |
-| when_possible | 倾向于使用属性的 expression-bodied 成员 |
+| true | 倾向于使用属性的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用属性的 expression-bodied 成员 |
-| never | 倾向于使用属性的块主体 |  
+| false | 倾向于使用属性的块主体 |  
 
 代码示例：  
 
 ```csharp
-// csharp_style_expression_bodied_properties = when_possible
+// csharp_style_expression_bodied_properties = true
 public int Age => _age;
 
-// csharp_style_expression_bodied_properties = never
+// csharp_style_expression_bodied_properties = false
 public int Age { get { return _age; }}
 ```  
 
 **csharp\_style\_expression\_bodied_indexers**  
-此规则不接受“true”或“false”值；此规则接受下表中的值：  
+此规则接受下表中的值：  
 
 | 值 | 描述 |
 | ----- |:----------- |
-| when_possible | 倾向于使用索引器的 expression-bodied 成员 |
+| true | 倾向于使用索引器的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用索引器的 expression-bodied 成员 |
-| never | 倾向于使用索引器的块主体 | 
+| false | 倾向于使用索引器的块主体 | 
 
 代码示例：  
 
 ```csharp
-// csharp_style_expression_bodied_indexers = when_possible
+// csharp_style_expression_bodied_indexers = true
 public T this[int i] => _value[i];
 
-// csharp_style_expression_bodied_indexers = never
+// csharp_style_expression_bodied_indexers = false
 public T this[int i] { get { return _values[i]; } }
 ```  
 
 **csharp\_style\_expression\_bodied_accessors**  
-此规则不接受“true”或“false”值；此规则接受下表中的值：  
+此规则接受下表中的值：   
 
 | 值 | 描述 |
 | ----- |:----------- |
-| when_possible | 倾向于使用访问器的 expression-bodied 成员 |
+| true | 倾向于使用访问器的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用访问器的 expression-bodied 成员 |
-| never | 倾向于使用访问器的块主体 | 
+| false | 倾向于使用访问器的块主体 | 
 
 代码示例：  
 
 ```csharp
-// csharp_style_expression_bodied_accessors = when_possible
+// csharp_style_expression_bodied_accessors = true
 public int Age { get => _age; set => _age = value; }
 
-// csharp_style_expression_bodied_accessors = never
+// csharp_style_expression_bodied_accessors = false
 public int Age { get { return _age; } set { _age = value; } }
 ```  
 
@@ -705,12 +703,12 @@ public int Age { get { return _age; } set { _age = value; } }
 ```
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_methods = never:none
-csharp_style_expression_bodied_constructors = never:none
-csharp_style_expression_bodied_operators = never:none
-csharp_style_expression_bodied_properties = when_possible:suggestion
-csharp_style_expression_bodied_indexers = when_possible:suggestion
-csharp_style_expression_bodied_accessors = when_possible:suggestion
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_properties = true:suggestion
+csharp_style_expression_bodied_indexers = true:suggestion
+csharp_style_expression_bodied_accessors = true:suggestion
 ```  
 
 #### <a name="pattern_matching">模式匹配</a>

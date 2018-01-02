@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ede4bd9594e3bb19f081d8a7343f5a0c08003cad
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 338f80724598a3c89dcde3806511427b81bffca4
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑难解答和已知问题 (Visual Studio Tools for Unity)
 本部分将介绍 Visual Studio Tools for Unity 常见问题的解决方案、已知问题的说明并了解如何通过报告错误来帮助改进 Visual Studio Tools for Unity。  
@@ -62,7 +62,8 @@ Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等
 ### <a name="unable-to-attach"></a>无法附加
 -   尝试暂时禁用防病毒软件，或同时为 VS 和 Unity 创建排除规则。
 -   尝试暂时禁用防火墙，或创建规则，允许在 VS 和 Unity 之间建立 TCP/UDP 网络。
--   我们发现 Team Viewer 之类的程序会干扰进程检测，建议尝试暂时停用任何外部软件，查看是否有影响。
+-   我们发现 Team Viewer 之类的程序会干扰进程检测，建议尝试暂时停用任何外部软件，看看是否有影响。
+-   请勿重命名主要 Unity 可执行文件，因为 VSTU 只监视“Unity.exe”进程。
 
 ### <a name="unable-to-debug-android-players"></a>无法调试 Android 播放器
 我们使用多播进行播放器检测（这是 Unity 使用的默认机制），但之后我们会使用常规 TCP 连接来附加调试器。 检测阶段是 Android 设备的主要问题。

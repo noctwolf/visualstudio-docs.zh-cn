@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: 6879d29b1e8c36ce9456fc44cf738a57603a6d50
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: cfcb85704302303704ef9b4bb1affc60031793d9
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建第一个 ASP.NET Core web 应用
 
@@ -74,6 +74,9 @@ ms.lasthandoff: 11/22/2017
 1. 在网站顶部，选择“About”可查看添加在“About”页的 `OnGet()` 方法中的目录消息。
 
 1. 关闭 Web 浏览器。
+
+> [!NOTE]
+> 如果看到内容为“无法连接到 Web 服务器 'IIS Express'”的错误消息，请关闭 Visual Studio，再使用右键单击或关联菜单中的“以管理员身份运行”选项打开它。 然后，再次运行应用。
 
 祝贺你完成此快速入门！ 我们希望你已对 Visual Studio IDE 有了一定了解。 若要深入了解其功能，请继续阅读目录中“教程”部分的教程。
 

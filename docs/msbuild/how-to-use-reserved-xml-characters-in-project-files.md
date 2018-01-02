@@ -15,11 +15,11 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c477cd9160a765a554cfa432b023b20eb6ef6b4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8acc59afdd050998f2269cc9be1986b7f4f426ae
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>如何：在项目文件中使用保留的 XML 字符
 在创作项目文件时，可能需要使用保留的 XML 字符，例如在属性值或任务参数值中。 但是，某些保留字符必须替换为命名实体，以便可以分析项目文件。  
@@ -29,18 +29,18 @@ ms.lasthandoff: 10/31/2017
   
 |保留字符|命名实体|  
 |------------------------|------------------|  
-|\<|&lt;|  
-|>|&gt;|  
-|&|&amp;|  
-|"|&quot;|  
-|'|&apos;|  
+|\<|&amp;lt;|  
+|>|&amp;gt;|  
+|&|&amp;amp;|  
+|"|&amp;quot;|  
+|'|&amp;apos;|  
   
 #### <a name="to-use-double-quotes-in-a-project-file"></a>在项目文件中使用双引号  
   
--   将双引号替换为相应的命名实体 &quot;。 例如，若要在 `EXEFile` 项列表两边放置双引号，请键入：  
+-   将双引号替换为相应的命名实体 &amp;quot;。 例如，若要在 `EXEFile` 项列表两边放置双引号，请键入：  
   
     ```xml  
-    <Message Text="The output file is "@(EXEFile)"."/>  
+    <Message Text="The output file is &quot;@(EXEFile)&quot;."/>  
     ```  
   
 ## <a name="example"></a>示例  
@@ -68,10 +68,11 @@ ms.lasthandoff: 10/31/2017
                 ItemName = "EXEFile"/>  
         </Csc>  
         <!-- Log the file name of the output file -->  
-        <Message Text="The output file is "@(EXEFile)"."/>  
+        <Message Text="The output file is &quot;@(EXEFile)&quot;."/>  
     </Target>  
 </Project>  
 ```  
   
 ## <a name="see-also"></a>另请参阅  
- [MSBuild 参考](../msbuild/msbuild-reference.md) [MSBuild](../msbuild/msbuild.md)
+ [MSBuild 参考](../msbuild/msbuild-reference.md)    
+ [MSBuild](../msbuild/msbuild.md)    

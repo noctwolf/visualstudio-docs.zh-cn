@@ -12,14 +12,47 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 3f5569a6f6d5bb51db61292e3ba12b16dbc201b9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: f33a7f43fdd52103fcd041d1f6502b88677eef1e
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>更改日志（Visual Studio Tools for Unity）
 Visual Studio Tools for Unity 更改日志。  
+
+## <a name="3502"></a>3.5.0.2
+ 发布时间 2017-12-04
+
+### <a name="new-features"></a>新增功能  
+
+-   **集成：**  
+
+    -   从 Unity 添加或删除脚本时，Unity 项目现在会在 Visual Studio 中自动重载。
+
+-   **调试器：**  
+
+    -   增加了使用由 Xamarin 和 Visual Studio for Mac 共享的 Mono 调试程序选项，用于调试 Unity 编辑器。
+
+    -   增加了对可移植调试符号文件的支持。
+
+### <a name="bug-fixes"></a>Bug 修复  
+
+-   **集成：**  
+
+    -   修复了安装依赖项问题。
+
+    -   修复了 Unity API 帮助菜单未显示问题。
+    
+-   **项目生成：**  
+
+    -   修复了在处理后端为 IL2CPP/.NET 4.6 的 UWP 游戏时玩家项目的生成问题。
+    
+    -   修复了额外 .dll 扩展名错误添加到程序集文件问题。
+    
+    -   修复了使用特定项目 API 兼容级别而非全局兼容问题。
+    
+    -   不强制 AllowAttachedDebuggingOfEditor Unity，因为现在默认为“true”。
 
 ## <a name="3402"></a>3.4.0.2
  发布时间 2017-09-19
@@ -59,7 +92,7 @@ Visual Studio Tools for Unity 更改日志。
 
 -   **项目生成：**  
 
-    -   修复了如何在 Unity 5.5 及更低版本上生成 Visual Studio 解决方案。
+    -   修复了 Unity 5.5 及更低版本上 Visual Studio 解决方案的生成问题。
 
 ## <a name="3300"></a>3.3.0.0
  发布时间 2017-08-14

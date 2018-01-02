@@ -15,11 +15,11 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: dc865fe81a51ff3ae2ca497b8982292ffda18372
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>[版本 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) 的更新内容
@@ -126,7 +126,7 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 *   转换 if-to-switch
 *   删除未使用的变量
 
-有关详细信息，请参阅 [Visual Studio 中的重构、代码生成和快速操作](refactoring-code-generation-quick-actions.md)页。  
+有关详细信息，请参阅[快速操作](../ide/quick-actions.md#common-quick-actions)。
 
 #### <a name="interact-with-git"></a>与 Git 进行交互
 在 Visual Studio 中处理项目时，可以对代码进行设置，并将代码快速提交和发布到 Git 服务。 还可以通过单击 IDE 右下角的按钮调出菜单来管理 Git 存储库。

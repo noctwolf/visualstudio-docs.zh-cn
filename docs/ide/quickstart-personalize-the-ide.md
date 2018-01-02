@@ -10,11 +10,11 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7adb1ec7badaefceb8430d0fcacd8e54e7404ea7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: a08bcc91159182043b68391bc869243909d6df8b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入门：个性化 Visual Studio IDE 和编辑器
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 11/22/2017
 
 Visual Studio 2017 的默认颜色主题命名为“蓝色”。 让我们将其更改为“深色”。
 
-1. 在菜单栏上，依次选择“工具”、“选项”。
+1. 在菜单栏上，依次选择“工具” 、“选项” 。
 
 1. 在“环境”、“常规”选项页上，将选择的“颜色主题”更改为“深色”，然后选择“确定”。
 
@@ -79,11 +79,13 @@ Visual Studio 2017 的默认颜色主题命名为“蓝色”。 让我们将其
 
 1. 在“环境”下，请选择“字体和颜色”类别。
 
-   请注意，“显示以下对象的设置”下的文本是指“文本编辑器”&mdash; 这正是我们所需要的。 你可以展开下拉列表，仅查看可用于自定义字体和文本颜色的位置的扩展列表。
+   请注意，“显示以下对象的设置”下的文本显示的是“文本编辑器”&mdash;这正是我们所需要的。 你可以展开下拉列表，仅查看可用于自定义字体和文本颜色的位置的扩展列表。
 
 1. 若要更改行号文本的颜色，请在“显示项目”列表中选择“行号”。 在“项目前景色”框中，选择“橄榄色”。
 
    ![“选项”对话框，“字体和颜色”类别](media/quickstart-personalize-line-number-color.png)
+
+   某些语言有自己特定的字体和颜色设置。 如果你是 C++ 开发者，且想要更改函数的颜色，则可在“显示项”列表中查找“C++ 函数”。
 
 1. 退出对话框中之前，让我们同时更改一下 XML 属性的颜色。 在“显示项”列表中，向下滚动到“XML 属性”，然后选择它。 在“项目前景色”框中，选择“浅绿色”。 选择“确定”以保存我们的选择并关闭对话框。
 
@@ -96,6 +98,8 @@ Visual Studio 2017 的默认颜色主题命名为“蓝色”。 让我们将其
 ## <a name="see-also"></a>请参阅
 
 [快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
+[快速入门：在编辑器中编码](../ide/quickstart-editor.md)  
+[快速入门：项目和解决方案](../ide/quickstart-projects-solutions.md)  
 [个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)  
 [自定义编辑器](../ide/customizing-the-editor.md)  
 [Visual Studio IDE 概述](../ide/visual-studio-ide.md)

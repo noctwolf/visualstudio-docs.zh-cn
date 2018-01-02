@@ -7,45 +7,28 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 803a1a94fe3eaa1bc63d59e9de2a42711f502262
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: fe42e4d2a61b4166d8a69b7c90cf212c36610bd2
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
-# <a name="productivity-tips-for-visual-studio"></a>Visual Studio 的工作效率提示
+# <a name="productivity-tips-for-visual-studio"></a>提高 Visual Studio 使用效率的提示
 
-通过按照这些提示操作，可以更快速且高效地在 Visual Studio 中编写、导航和调试代码。 有关常见键盘快捷键的详细信息，请参阅[提示和技巧](../ide/tips-and-tricks-for-visual-studio.md)。 有关更完整的列表，请参阅[标识并自定义键盘快捷键](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)和[默认的键盘快捷键](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
+通过按照这些提示操作，可以更快速且高效地在 Visual Studio 中编写、导航和调试代码。
+
+有关常见键盘快捷键的详细信息，请参阅[提示和技巧](../ide/tips-and-tricks-for-visual-studio.md)。 有关更完整的列表，请参阅[标识并自定义键盘快捷键](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)和[默认的键盘快捷键](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
 ## <a name="accessing-visual-studio-tools"></a>访问 Visual Studio Tools
 
-如果将开发人员命令提示符或其他工具固定到“开始”屏幕或任务栏，则可以更轻松地进行访问。
+如果将开发人员命令提示符或其他 Visual Studio 工具固定到“开始”菜单或任务栏，可以快速访问这些对象。
 
-1. 在“开始”屏幕中，输入 `Visual Studio Tools`，然后选择 Enter 键。
+1. 在“Windows 资源管理器”中，转到 `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`。
 
-1. 在“文件资源管理器”中，打开所需的项的快捷菜单：
-
-    - 生成通知
-
-    - 可调试包管理器
-
-    - VS2013 开发人员命令提示
-
-    - Microsoft Feedback Client 2013
-
-    - VS2013 ARM 兼容工具命令提示
-
-    - VS2013 x64 兼容工具命令提示
-
-    - VS2013 x64 本机工具命令提示
-
-    - VS2013 x86 本机工具命令提示
-
-1. 选择“固定到“开始”屏幕”或“固定到任务栏”。
+1. 右键单击或打开“开发人员命令提示符”的关联菜单，再选择“固定到‘开始’菜单”或“固定到任务栏”。
 
 ## <a name="writing-code"></a>编写代码
 
@@ -91,11 +74,11 @@ ms.lasthandoff: 11/22/2017
 
 - **仅显示要解决的错误**。 如果选中在“错误列表”工具栏中的“筛选器”按钮，则可减少出现在“错误列表”窗口中的错误数。 您只能显示在编辑器中打开的文件中的错误、当前文件中的错误，或者当前项目中的错误。 您还可以在“错误列表”窗口中进行搜索，以查找特定错误。
 
-- **查找对话框、菜单命令和选项**。 在[“选项”对话框 ->“环境”->“快速启动”](../ide/reference/quick-launch-environment-options-dialog-box.md)框中，输入要查找的项的关键字或短语。 例如，如果输入 `new project`，则会出现以下选项：
+- **查找对话框、菜单命令和选项**。 在[“快速启动”](../ide/reference/quick-launch-environment-options-dialog-box.md)框中，输入要查找的项的关键字或短语。 例如，如果输入 `new project`，则会出现以下选项：
 
-     ![“新建项目”的快速启动结果](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    ![“新建项目”的快速启动结果](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
 
-     “快速启动”显示“新项目”对话框、“添加新项”对话框、“选项”对话框中的“项目和解决方案”页的链接以及其他内容。 快速启动结果还可包括项目文件和工具窗口。
+    “快速启动”显示“新项目”对话框、“添加新项”对话框、“选项”对话框中的“项目和解决方案”页的链接以及其他内容。 快速启动结果还可包括项目文件和工具窗口。
 
 ## <a name="debugging-code"></a>调试代码
 
@@ -103,11 +86,11 @@ ms.lasthandoff: 11/22/2017
 
 - **在不同的浏览器中测试相同的页、应用程序或站点**。 在调试代码时，可在安装的 Web 浏览器（包括 [Page Inspector (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209)）之间轻松进行切换，而无需打开“浏览方式”对话框。 可使用“调试目标”列表（位于“标准”工具栏中的“启动调试”按钮旁）来快速验证在调试或查看页面时使用的浏览器。
 
-     ![选择 Web 浏览器调试选项](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![选择 Web 浏览器调试选项](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 
 - **设置临时断点**。 你可以在当前代码行中创建一个临时断点，同时启动调试器。 点击该行代码时，调试器进入中断模式。 有关详细信息，请参阅[使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)。
 
-     若要使用此功能，请选择 Ctrl + F10 键，或打开要中断的代码行的快捷菜单，然后选择“运行到游标处”。
+    若要使用此功能，请选择 Ctrl + F10 键，或打开要中断的代码行的快捷菜单，然后选择“运行到游标处”。
 
 - **在调试过程中移动执行点**。 你可以将当前执行点移至代码的其他部分，然后从该点重新开始调试。 如果要调试一部分代码而不想重新创建到达这部分代码所需的所有步骤，此方法相当有效。 有关详细信息，请参阅[使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)。
 

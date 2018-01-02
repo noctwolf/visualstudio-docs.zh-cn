@@ -5,11 +5,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 347378da197b5c6d22bbd145c2ac8673d53a63bf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 78b0e715ca44c613b6a7ee839c0656e301308588
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="build-actions"></a>生成操作 
 
@@ -26,4 +26,4 @@ C# 项目的一些常见生成操作为：
 
 可在解决方案资源管理器中选择多个文件，这样便可同时设置多个文件的生成操作。
 
-此外，还有针对特定项目的生成操作。 例如，Xamarin.iOS 项目具有 BundeledResource 生成操作，用于将文件添加为应用程序包的一部分。 有关 Xamarin.Android 特定生成操作的信息，请参阅 developer.xamarin.com 上的[生成过程](https://developer.xamarin.com/guides/android/under_the_hood/build_process/#Build_Actions)指南。
+此外，还有针对特定项目的生成操作。 例如，Xamarin.iOS 项目具有 BundleResource 生成操作，用于将文件添加为应用程序包的一部分。 有关 Xamarin.Android 特定生成操作的信息，请参阅 developer.xamarin.com 上的[生成过程](https://developer.xamarin.com/guides/android/under_the_hood/build_process/#Build_Actions)指南。

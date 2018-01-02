@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 的提示和技巧 | Microsoft Docs"
+title: "Visual Studio 键盘快捷方式 | Microsoft Docs"
 ms.custom: 
 ms.date: 06/21/2017
 ms.reviewer: 
@@ -7,21 +7,20 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
-# <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 的提示和技巧
-您可以通过使用本主题中的快捷方式更轻松地在 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]中进行导航。 本主题只介绍一部分可用的键盘快捷方式。 有关更完整的列表，请参阅 [Visual Studio 中的默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)。 有关如何优化 Visual Studio 的辅助功能的信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)。  
+# <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 提示和技巧
 
-##  <a name="BKMK_WindowMgmt"></a>窗口管理  
+使用本主题介绍的快捷方式可更轻松地在 Visual Studio 中进行导航。 本主题只介绍一部分可用的键盘快捷方式。 有关更完整的列表，请参阅 [Visual Studio 中的默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)。 有关如何优化 Visual Studio 的辅助功能的信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)。
+
+##  <a name="BKMK_WindowMgmt"></a>窗口管理
 
 |||  
 |-|-|  
@@ -32,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 |显示打开的文件列表|Ctrl+Alt+向下键|  
 |显示全部浮动窗口|Ctrl+Shift+M|  
 
-##  <a name="BKMK_WindowShortcuts"></a>窗口快捷方式  
+##  <a name="BKMK_WindowShortcuts"></a>窗口快捷方式
 
 |||  
 |-|-|  
@@ -42,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 |启动新实例|Win+Shift+n|  
 |在窗口之间切换|Win+n|  
 
-##  <a name="BKMK_Search"></a>Visual Studio 搜索  
+##  <a name="BKMK_Search"></a>Visual Studio 搜索
 
 |||  
 |-|-|  
@@ -52,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 |快速启动范围结果|-   @opt 选项<br />-   @cmd 命令<br />-   @mru 最近使用<br />-   @doc 打开文档|  
 |在工具选项中搜索|Ctrl+E|  
 
-##  <a name="BKMK_EditorFind"></a>编辑器查找  
+##  <a name="BKMK_EditorFind"></a>编辑器查找
 
 |||  
 |-|-|  
@@ -67,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 |在文件中查找|Ctrl+Shift+F|  
 |在文件中替换|Ctrl+Shift+H|  
 
-##  <a name="BKMK_CodeEditor"></a>代码编辑器  
+##  <a name="BKMK_CodeEditor"></a>代码编辑器
 
 |||  
 |-|-|  
@@ -91,7 +90,7 @@ ms.lasthandoff: 10/31/2017
 |在多个查看结果之间导航|F8 和 Shift+F8|  
 |在“代码编辑器”窗口和“查看定义”窗口之间切换|Shift+Esc|  
 
-##  <a name="BKMK_Toolbars"></a>工具栏  
+##  <a name="BKMK_Toolbars"></a>工具栏
 
 |||  
 |-|-|  
@@ -100,7 +99,7 @@ ms.lasthandoff: 10/31/2017
 |查找文本框命令模式|键入“>”|  
 |新建别名|>alias NewAlias 命令|  
 
-##  <a name="BKMK_Debugging"></a>调试  
+##  <a name="BKMK_Debugging"></a>调试
 
 |||  
 |-|-|  
@@ -119,12 +118,14 @@ ms.lasthandoff: 10/31/2017
 |即时窗口清除缓冲区|>cls|  
 |即时窗口打印值|?varname|  
 
-##  <a name="BKMK_ALM"></a>应用程序生命周期管理  
- 请参阅[键盘快捷键：Visual Studio Online、TFS Web 门户和团队资源管理器](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4)。  
+##  <a name="BKMK_ALM"></a>应用程序生命周期管理
 
-## <a name="see-also"></a>另请参阅  
- [Visual Studio Blog](http://blogs.msdn.com/b/visualstudio) （Visual Studio 博客）  
- [Visual Studio Tips and Tricks](http://blogs.msdn.com/b/zainnab) （Visual Studio 提示和技巧博客）  
- [Visual Studio Toolbox on Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox) （Channel 9 上的 Visual Studio 工具箱）  
- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
- [Visual Studio 连接 bug](http://connect.microsoft.com/VisualStudio)
+请参阅[键盘快捷键：Visual Studio Online、TFS Web 门户和团队资源管理器](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4)。  
+
+## <a name="see-also"></a>请参阅
+
+[Visual Studio 博客](http://blogs.msdn.com/b/visualstudio)  
+[Visual Studio 提示和技巧博客](http://blogs.msdn.com/b/zainnab)  
+[Channel 9 上的 Visual Studio 工具箱](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
+[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
+[Visual Studio 连接 bug](http://connect.microsoft.com/VisualStudio)

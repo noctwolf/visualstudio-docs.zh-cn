@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 48f29ec016b426319241c1a72701ed529ec7dddd
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a9364a6eb9e46503a257cdc066e3d9ecd1a6c9d0
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>适用于 Unity 应用的 Visual Studio 应用程序生命周期管理 (ALM)
 开发适用于现代平台的应用涉及许多活动，并不仅仅只是编写代码。 这些活动被称为 DevOps（开发 + 操作），它们跨越应用的整个生命周期，包括计划和跟踪工作、设计和实现代码、管理源代码存储库、运行生成、管理持续集成和部署、测试（包括单元测试和 UI 测试）、在开发和生产环境中运行各种形式的诊断以及通过遥测和分析实时监控应用的性能和用户行为。  
@@ -73,12 +73,12 @@ ms.lasthandoff: 11/29/2017
 3.  Unity 项目中的二进制资产 — 例如纹理或音频文件 — 可能占用大理存储。 Git 等各种源代码管理系统为所做的每一次更改都保留一份唯一的副本，即使更改仅影响该文件的一小部分。 这会导致 Git 存储库变得臃肿。 若要解决此问题，Unity 开发人员通常仅选择将向其存储库添加最终的资产，并使用其他方式保留其资产的工作历史记录，例如 OneDrive、DropBox 或 git-annex。 这种方法有效，因为这种资产通常无需随源代码更改而进行版本控制。 开发人员通常也将项目编辑器的资产序列化模式设置为强制文本，以便以文本格式保存场景文件，而不是允许在源代码管理中进行合并的二进制格式。 有关详细信息，请参阅 [Editor Settings](http://docs.unity3d.com/Manual/class-EditorManager.html)（编辑器设置）（Unity 文档）。  
 
 ## <a name="build"></a>生成  
- 参考链接：**[生成](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ 参考链接：**[生成和发布](/vsts/build-release/index)**  
 
 |功能|通过 Unity 提供支持|其他注释|  
 |-------------|--------------------------|-------------------------|  
 |本地 TFS 服务器|可能|Unity 项目通过 Unity 环境生成，而不是 Visual Studio 生成系统（在 Visual Studio Tools 中为 Unity 生成项目将对脚本进行编译，但不是会生成可执行文件）。 可以[从命令行生成 Unity 项目](http://docs.unity3d.com/Manual/CommandLineArguments.html)（Unity 文档），因此用户可以在 TFS 服务器上配置 MSBuild 进程，以执行相应的 Unity 命令，前提是该计算机已经安装了 Unity。<br /><br /> Unity 也提供 [Unity 云生成](https://build.cloud.unity3d.com/landing/)，它会监视 Git 或 SVN 储存库，并定期运行生成。 目前它并不适用于 Team Foundation 版本控制或 Visual Studio Team Services。|  
-|链接到 Visual Studio Team Services 的本地生成服务器|可能|给定上述相同条件，更有可能指向通过 Visual Studio Team Services 触发的生成，以便使用本地 TFS 计算机。  有关说明，请参阅[生成服务器](http://msdn.microsoft.com/Library/2d258a0a-f178-4e93-9da1-eba61151af3c)。|  
+|链接到 Visual Studio Team Services 的本地生成服务器|可能|给定上述相同条件，更有可能指向通过 Visual Studio Team Services 触发的生成，以便使用本地 TFS 计算机。  请参阅[生成和发布代理](/vsts/build-release/concepts/agents/agents)了解相关介绍。|  
 |Visual Studio Team Services 承载的控制器服务|No|目前不支持 Unity 生成。|  
 |生成带有前脚本和后脚本的定义|是|使用 Unity 命令行运行生成的自定义生成定义还可以配置为预生成和后生成脚本。|  
 |包括封闭签入的持续集成|是|仅在 Git 用于拉取请求（而非签入）时，封闭签入才适用于 TFVC。|  

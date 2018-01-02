@@ -25,29 +25,29 @@ helpviewer_keywords:
 - Visual Studio, toolbox
 - toolbox, tabs
 - toolbox
-ms.assetid: 82e7cb43-4d0b-4e17-b7b0-43f96c22c3c2
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0945c5618e457005c0fba7e229b8e530efe6c74
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 9290f2dbaae27bef7934d8fd619b4ee5355f4ec3
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-the-toolbox"></a>使用工具箱
-可以使用工具箱将控件和其他项添加到项目中。 还可以将不同的控件拖到和放置到你使用的设计器的图面上，然后调整控件的大小并将它们定位。  
-  
- 工具箱与设计器视图一起显示，如 XAML 文件的设计器视图。 工具箱仅显示可在当前设计器中使用的那些控件。  
-  
- 你的项目面向的 .NET Framework 版本还会影响工具箱中可见的控件组。 默认情况下，[!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 项目面向 .NET Framework 4.5.1。 通过选择“解决方案资源管理器”中的项目节点，然后浏览到“属性/应用程序/目标框架”，可将项目设置为面向不同版本的 .NET Framework。  
-  
-## <a name="managing-the-toolbox-and-its-controls"></a>管理“工具箱”及其控件  
- 默认情况下，将工具箱折叠在 Visual Studio IDE 左侧，并当光标移至该控件上方时显示。 可固定工具箱（通过单击工具箱工具栏上的“固定”图标），以便在移动光标时它仍保持打开。 也可以取消停靠该工具箱窗口并将其拖动到屏幕上的任何位置。 可以通过右击工具箱的工具栏并选择其中一个选项，停靠、取消停靠和隐藏该工具箱。  
-  
- 可以通过使用上下文菜单上的以下命令，重新排列工具箱选项卡中的项或添加自定义的选项卡和项：  
-  
+
+可以使用工具箱将控件和其他项添加到项目中。 还可以将不同的控件拖到和放置到你使用的设计器的图面上，然后调整控件的大小并将它们定位。
+
+工具箱与设计器视图一起显示，如 XAML 文件的设计器视图。 工具箱仅显示可在当前设计器中使用的那些控件。
+
+你的项目面向的 .NET Framework 版本还会影响工具箱中可见的控件组。 通过选择“解决方案资源管理器”中的项目节点，然后浏览到“属性/应用程序/目标框架”，可将项目设置为面向不同版本的 .NET Framework。
+
+## <a name="managing-the-toolbox-and-its-controls"></a>管理“工具箱”及其控件
+
+默认情况下，将工具箱折叠在 Visual Studio IDE 左侧，并当光标移至该控件上方时显示。 可固定工具箱（通过单击工具箱工具栏上的“固定”图标），以便在移动光标时它仍保持打开。 也可以取消停靠该工具箱窗口并将其拖动到屏幕上的任何位置。 可以通过右击工具箱的工具栏并选择其中一个选项，停靠、取消停靠和隐藏该工具箱。
+
+可以通过使用上下文菜单上的以下命令，重新排列工具箱选项卡中的项或添加自定义的选项卡和项：
+
 -   重命名项 - 重命名所选的项。  
   
 -   显示所有 - 显示所有可能的控件（不只是适用于当前设计器的控件）。  
@@ -65,6 +65,11 @@ ms.lasthandoff: 10/31/2017
 -   上移 - 将所选项上移。  
   
 -   下移 - 将所选项下移。  
-  
-## <a name="creating-and-distributing-custom-toolbox-controls"></a>创建和分布自定义工具箱控件  
- 可在 Visual Basic 或 Visual C# 中创建自定义工具箱控件，可以从创建基于 [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) 或 [Windows 窗体](../extensibility/creating-a-windows-forms-toolbox-control.md)的项目模板开始。 然后，可使用[工具箱控件安装程序](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)将控件分发给团队成员或将它发布到 Web 上。
+
+## <a name="creating-and-distributing-custom-toolbox-controls"></a>创建和分布自定义工具箱控件
+
+可在 Visual Basic 或 Visual C# 中创建自定义工具箱控件，可以从创建基于 [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) 或 [Windows 窗体](../extensibility/creating-a-windows-forms-toolbox-control.md)的项目模板开始。 然后，可使用[工具箱控件安装程序](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)将控件分发给团队成员或将它发布到 Web 上。
+
+## <a name="see-also"></a>请参阅
+
+[在编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)

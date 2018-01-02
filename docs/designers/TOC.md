@@ -24,6 +24,7 @@
 ### [WPF 入门](getting-started-with-wpf.md)
 #### [WPF 介绍](introduction-to-wpf.md)
 #### [演练：我的第一个 WPF 桌面应用程序](walkthrough-my-first-wpf-desktop-application2.md)
+#### [使用 C# 或 Visual Basic 创建 WPF 应用](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [WPF 社区资源](wpf-community-resources.md)
 #### [使用 LINQ to XML 进行 WPF 数据绑定](wpf-data-binding-with-linq-to-xml.md)
 ##### [使用 LINQ to XML 进行 WPF 数据绑定概述](wpf-data-binding-with-linq-to-xml-overview.md)
