@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46c80a49d0e043d7cdbffbc74698a29e10ab4795
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b3f0d5ecdcf1318490ac0829bb9dd6ded9519872
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluate-statement-command"></a>“计算语句”命令
 计算并显示给定的语句。  
@@ -31,9 +32,9 @@ ms.lasthandoff: 10/31/2017
 Debug.EvaluateStatement text   
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `text`  
- 必需。 要评估的语句。  
+ 必须的。 要评估的语句。  
   
 ## <a name="remarks"></a>备注  
  用于输入 EvaluateStatement 命令的窗口确定是将等号 (=) 解释为比较运算符还是赋值运算符。  
@@ -60,7 +61,7 @@ Debug.EvaluateStatement text
 >Debug.EvaluateStatement(a+b)  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“打印”命令](../../ide/reference/print-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   

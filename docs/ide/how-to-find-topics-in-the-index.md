@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea90dba4090565143c84d510b5e4f9e998cfb5fc
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-topics-by-using-the-help-viewer-index"></a>通过使用帮助查看器索引查找主题
 索引包含与安装的内容中的主题相关联的关键字列表。 每个主题可能有多个关键字与之关联，并且每个关键字可能与多个主题相关联。 和使用书中的索引一样使用此索引。  
@@ -43,10 +44,10 @@ ms.lasthandoff: 11/07/2017
     如果指定的关键字只与一个主题关联，则显示该主题。 否则，显示与该关键字关联的所有主题的列表。
 
 ## <a name="index-search-tips"></a>索引搜索提示  
-使用索引是一个简单的过程；但是，了解如何以最佳方式输入关键字可以使你的索引搜索更高效。  
+使用索引是一个简单的过程；但是，了解如何以最佳方式输入关键字可以使索引搜索更高效。  
   
 ### <a name="general-guidelines"></a>通用准则  
--   滚动浏览索引条目。 并非所有主题的索引编制方式都相同，最能为你提供帮助的主题在列表中的排名可能会高于或低于预期。  
+-   滚动浏览索引条目。 并非所有主题的索引编制方式都相同，最能为用户提供帮助的主题在列表中的排名可能会高于或低于预期。  
   
 -   省略“an”或“the”等文章，因为索引会忽略它们。  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 11/07/2017
 ### <a name="syntax-tips"></a>语法提示  
 如果没有找到输入的单词或短语条目，请尝试以下操作：  
   
--   键入单词的前几个字母或词根。 通过输入部分字符串，可以获取已使用单数或复数关键字编入索引的主题。  
+-   键入单词的前几个字母或根。 通过输入部分字符串，可以获取已使用单数或复数关键字编入索引的主题。  
   
     例如，输入“propert”以开始对 properties 和 property 的搜索。  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 11/07/2017
   
 -   输入独立的形容词。 若要缩小结果范围，请追加一个精确描述所需内容的单词。  
   
-    例如，输入“COM+”可获取大量的条目，输入“COM+ components”可获取较少的条目。  
+    例如，输入“COM+”可获取大量条目，输入“COM+ components”可获取较少条目。  
   
 -   输入正在查找的词或动词的同义词。  
   

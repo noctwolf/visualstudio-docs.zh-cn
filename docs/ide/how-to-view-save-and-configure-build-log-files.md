@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 617b495cab96d8fdb0ddd7c69d6e6c1dd93d7ccc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1a57911b8736af27caf0bd9ba30e9e03bdebed2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：查看、保存和配置生成日志文件
 在 Visual Studio IDE 中生成项目之后，可以在“输出”窗口查看有关该生成的信息。 例如，使用此信息可以排查生成失败。 对于 C++ 项目，还可以在某个自动创建和保存的 .txt 文件中查看相同的信息。 对于托管代码项目，可以从“输出”窗口中将信息复制粘贴到 .txt 文件中，然后自行保存。 还可以使用 IDE 指定要查看关于每个生成的信息种类。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
     > [!IMPORTANT]
     >  更改要在“输出”窗口（所有项目）和 ProjectName.txt 文件（仅限 C++ 项目）中生效，必须重新生成该项目。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [编译和生成](../ide/compiling-and-building-in-visual-studio.md)

@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: fe983de5dab35a031d6c99b37f2da77a200212f9
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: xamarin
+ms.openlocfilehash: 9e2c341d9516959fcc7ef6bc40215023891d618a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解关于使用 Xamarin 进行移动开发的信息
 本主题可将引导你概览有助于了解如何使用 Xamarin 开发跨平台移动应用的资料。 如果尚未安装 Visual Studio 和 Xamarin，请首先启动 [Setup and install](../cross-platform/setup-and-install.md) 过程，然后在安装程序运行期间返回此处浏览这些资源。  

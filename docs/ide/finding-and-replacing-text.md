@@ -40,11 +40,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a2b925e32711e1624a4dfbe74fb5614ee6e0b062
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72081f6c140c4634918e67098493cb37bb324848
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 在 Visual Studio 代码编辑器以及“查找结果”窗口等基于文本的输出窗口中，可以使用“查找和替换”控件或“在文件中查找/替换”查找和替换文本。 还可以在某些设计器窗口中搜索和替换，例如 XAML 设计器、Windows 窗体设计器和工具窗口  
@@ -79,5 +80,5 @@ ms.lasthandoff: 10/31/2017
 ### <a name="creating-custom-component-sets"></a>创建自定义组件集  
  通过选择“查找范围”框旁边的“编辑自定义组件集”按钮，可以将组件集定义为搜索范围。 可以指定已安装的 .NET 或 COM 组件，以及包含在解决方案或任何程序集或类型库（.dll、.tlb、.olb、.exe 或 .ocx）中的 Visual Studio 项目。 若要搜索引用，请选择“查找引用”框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a9364a6eb9e46503a257cdc066e3d9ecd1a6c9d0
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: unity
+ms.openlocfilehash: c6c22a04348266b4db83984ff194ad1cef2ac668
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>适用于 Unity 应用的 Visual Studio 应用程序生命周期管理 (ALM)
 开发适用于现代平台的应用涉及许多活动，并不仅仅只是编写代码。 这些活动被称为 DevOps（开发 + 操作），它们跨越应用的整个生命周期，包括计划和跟踪工作、设计和实现代码、管理源代码存储库、运行生成、管理持续集成和部署、测试（包括单元测试和 UI 测试）、在开发和生产环境中运行各种形式的诊断以及通过遥测和分析实时监控应用的性能和用户行为。  
@@ -45,14 +46,14 @@ ms.lasthandoff: 12/12/2017
 
 |功能|通过 Unity 提供支持|其他注释|  
 |-------------|--------------------------|-------------------------|  
-|序列图|No||  
+|序列图|否||  
 |依赖项关系图|No||  
 |调用层次结构|No||  
 |类设计器|No||  
 |体系结构资源管理器|No||  
 |UML 关系图（用例、活动、类、组件、序列和 DSL）|No||  
 |层关系图|No||  
-|层验证|No||  
+|层验证|否||  
 
 ## <a name="code"></a>代码  
 
@@ -79,11 +80,11 @@ ms.lasthandoff: 12/12/2017
 |-------------|--------------------------|-------------------------|  
 |本地 TFS 服务器|可能|Unity 项目通过 Unity 环境生成，而不是 Visual Studio 生成系统（在 Visual Studio Tools 中为 Unity 生成项目将对脚本进行编译，但不是会生成可执行文件）。 可以[从命令行生成 Unity 项目](http://docs.unity3d.com/Manual/CommandLineArguments.html)（Unity 文档），因此用户可以在 TFS 服务器上配置 MSBuild 进程，以执行相应的 Unity 命令，前提是该计算机已经安装了 Unity。<br /><br /> Unity 也提供 [Unity 云生成](https://build.cloud.unity3d.com/landing/)，它会监视 Git 或 SVN 储存库，并定期运行生成。 目前它并不适用于 Team Foundation 版本控制或 Visual Studio Team Services。|  
 |链接到 Visual Studio Team Services 的本地生成服务器|可能|给定上述相同条件，更有可能指向通过 Visual Studio Team Services 触发的生成，以便使用本地 TFS 计算机。  请参阅[生成和发布代理](/vsts/build-release/concepts/agents/agents)了解相关介绍。|  
-|Visual Studio Team Services 承载的控制器服务|No|目前不支持 Unity 生成。|  
+|Visual Studio Team Services 承载的控制器服务|否|目前不支持 Unity 生成。|  
 |生成带有前脚本和后脚本的定义|是|使用 Unity 命令行运行生成的自定义生成定义还可以配置为预生成和后生成脚本。|  
 |包括封闭签入的持续集成|是|仅在 Git 用于拉取请求（而非签入）时，封闭签入才适用于 TFVC。|  
 
-## <a name="testing"></a>测试  
+## <a name="testing"></a>正在测试  
  参考链接：**[测试应用程序](/devops-test-docs/test/test-apps-early-and-often)**  
 
 |功能|通过 Unity 提供支持|其他注释|  
@@ -93,7 +94,7 @@ ms.lasthandoff: 12/12/2017
 |测试管理器（记录和播放测试）|仅限 Windows 设备和 Android 模拟器||  
 |代码覆盖率|无|Unity 内进行单元测试时以及不是 Visual Studio 时不适用，请参阅下文。|  
 |[单元测试代码](../test/unit-test-your-code.md)|在 Unity 中，但不在 Visual Studio 中|Unity 提供了自己的单元测试框架作为 [Unity 测试工具](https://www.assetstore.unity3d.com/en/#!/content/13802)（Unity 资产商店）的一部分。 单元测试结果在 Unity 中报告，将不会出现在 Visual Studio 内。|  
-|[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)|No|编码的 UI 测试依赖于应用 UI 中可读取的控件；Unity 应用在本质上都是图形，因此编码的 UI 测试工具无法读取其内容。|  
+|[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)|否|编码的 UI 测试依赖于应用 UI 中可读取的控件；Unity 应用在本质上都是图形，因此编码的 UI 测试工具无法读取其内容。|  
 
 ## <a name="improve-code-quality"></a>提高代码质量  
  参考链接：**[提高代码质量](/visualstudio/test/improve-code-quality)**  
@@ -103,8 +104,8 @@ ms.lasthandoff: 12/12/2017
 |[分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|是|可以分析 Visual Studio 中的 C# 脚本代码。|  
 |[使用代码克隆检测功能查找重复代码](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|是|可以分析 Visual Studio 中的 C# 脚本代码。|  
 |[测量托管代码的复杂性和可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|是|可以分析 Visual Studio 中的 C# 脚本代码。|  
-|[性能资源管理器](../profiling/performance-explorer.md)|No|使用 [Unity 探查器](http://docs.unity3d.com/Manual/Profiler.html)（Unity 网站）。|  
-|[分析 .NET Framework 内存问题](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|No|Visual Studio 工具没有深入 Mono 框架（用于 Unity）进行探查的挂钩。 使用 [Unity 探查器](http://docs.unity3d.com/Manual/Profiler.html)（Unity 文档）。|  
+|[性能资源管理器](../profiling/performance-explorer.md)|否|使用 [Unity 探查器](http://docs.unity3d.com/Manual/Profiler.html)（Unity 网站）。|  
+|[分析 .NET Framework 内存问题](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|否|Visual Studio 工具没有深入 Mono 框架（用于 Unity）进行探查的挂钩。 使用 [Unity 探查器](http://docs.unity3d.com/Manual/Profiler.html)（Unity 文档）。|  
 
 ## <a name="release-management"></a>版本管理  
  参考链接：**[使用发布管理来自动进行部署](https://msdn.microsoft.com/library/vs/alm/release/overview)**  

@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 2af38cbebc1695a78a86d80240acc40c5463cbed
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: unity
+ms.openlocfilehash: d7d692ba1ee1bf2eb0fda5430b2576edc9646ebf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 的概述
 本部分将介绍更多有关 Visual Studio Tools for Unity 提供的功能的内容以及如何使用它们提高 Unity 的使用效率。  
@@ -67,5 +68,5 @@ ms.lasthandoff: 11/29/2017
 
 -   可以通过使用 Unity 样式回调 ProjectFileGeneration 更改 Visual Studio Tools for Unity 生成项目文件的方式。 有关详细信息，请参阅项目文件生成示例。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Unity 主页](http://unity3d.com)

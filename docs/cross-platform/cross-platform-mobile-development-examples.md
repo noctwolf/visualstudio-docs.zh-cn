@@ -13,13 +13,14 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6809ffe0c53448d7d00fec1169b90fd87274367e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 030fe898926c1e1d124a780c9ba73fec31109cd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="cross-platform-mobile-development-examples"></a>Cross-Platform Mobile Development Examples
+# <a name="cross-platform-mobile-development-examples"></a>跨平台移动开发示例
 Visual C++ 安装的用于跨平台移动开发的若干模板生成完整的示例，你可以使用这些示例进行学习。 此外，Windows 开发人员中心有若干示例应用程序，你可以在 Visual Studio 中下载并试用。  
   
 -   [hello-jni Android 应用程序示例](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  

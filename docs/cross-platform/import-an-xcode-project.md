@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 07dc7d8eefb7ab1183d5e5532f13a5cfdac8de80
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 9de84c4330bb87ad13b865bda39f9ecafab4debd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="import-an-xcode-project"></a>导入 XCode 项目
 在适用于跨平台移动开发的 Microsoft Visual C++ 中，支持将 XCode 项目移动到 Visual Studio，可在此处创建跨平台库并与其他项目共享代码。 通过“从 XCode 导入”向导，可更轻松地导入项目和拆分 XCode 目标中的 C++ 代码，使其用作静态库或共享代码项目。 可在 Visual Studio 中管理特定于 iOS 的代码，还可继续使用 XCode 处理情节提要和生成操作。 若要了解如何轻松地在 Visual Studio 和 XCode 之间来回移动代码，请参阅“在 XCode 和 Visual Studio 间移动更改”。  

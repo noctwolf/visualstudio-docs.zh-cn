@@ -33,11 +33,12 @@ f1_keywords:
 - VC.Project.AdditionalOptionsPage
 - VC.Project.VCLinkerTool.AdditionalDependencies
 - VC.Project.VCLinkerTool.LibraryDependencies
-ms.openlocfilehash: 0e7b1d5b417250282092a780afc30aee965e4dfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: f74ad5934d48c941195da30d9228c35483479f69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clang-linker-properties-android-c"></a>Clang 链接器属性 (Android C++)
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
 优化内存使用率 | 如有必要，通过重读符号表优化内存使用率。
 忽略特定默认库 | 指定一个或多个要忽略的默认库的名称。
 强制符号引用 | 强制将符号作为未定义符号输入到输出文件中。
-调试器符号信息 | 输出文件中的调试器符号信息。 | 全部包含<br>忽略不需要的符号以进行重定位处理<br>仅忽略调试器符号信息<br>忽略所有符号信息<br>
+调试器符号信息 | 输出文件中的调试程序符号信息。 | 全部包含<br>忽略不需要的符号以进行重定位处理<br>仅忽略调试器符号信息<br>忽略所有符号信息<br>
 打包调试器符号信息 | 在打包之前剥离调试器符号信息。  使用原始二进制文件的副本进行调试。
 映射文件名 | “映射”选项通知链接器使用用户指定的名称创建映射文件。
 重定位之后将变量标记为只读 | 此选项在重定位之后将变量标记为只读。

@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 1ff32914b523b2b515a3d4175e4b3f76ad7ecefd
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: c18eadd6cfcdf6fc77b204f78654126ceb1862db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
@@ -34,16 +35,16 @@ R 是用于统计计算和图形的高度可扩展语言和环境。 它是使�
 
 然后，单击下面的链接，详细了解与 R 相关的功能，以及 Visual Studio 本身的常规功能。
 
-| 功能 | 说明 | Visual Studio 常规文档 | 
+| 功能 | 描述 | Visual Studio 常规文档 | 
 | --- | --- | --- |
 | [Visual Studio 项目系统](projects.md) | 利用方便使用的结构整理和管理相关文件，并利用实用项目模板，如 R 代码、R 文档、R Markdown、SQL 查询和存储过程。 此外，还可以使用[程序包管理器](package-manager.md)和 [SQL Server 集成](sql-server.md)。  | [Visual Studio 中的解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md) |
-| [工作区](workspaces.md) | RTVS 可以绑定到本地和远程工作区，以便使用较小的数据集在本地开发 R 代码，然后在基于云且功能更强大的计算机上使用较大的数据集运行此代码。 | 无 |
+| [工作区](workspaces.md) | RTVS 可以绑定到本地和远程工作区，以便使用较小的数据集在本地开发 R 代码，然后在基于云且功能更强大的计算机上使用较大的数据集运行此代码。 | 不可用 |
 | [R 工具选项](options.md) | 控制 RTVS 的各个方面。 | [“选项”对话框](../ide/reference/options-dialog-box-visual-studio.md) |
 | [丰富编辑、IntelliSense 和代码片段](code-editing.md) | 包括语法着色、跨所有代码和库的[IntelliSense](code-intellisense.md)、代码格式设置、签名帮助、转到定义、查找所有引用和[代码片段](code-snippets.md)等。 | [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [R Markdown](rmarkdown.md) | R Markdown 文档可帮助你共享数据结果，其中 Markdown 代码块包含集成的 R 代码。 | 无 |
-| [交互窗口](interactive-repl.md) | 提供 R 的完整 REPL 体验，以便你可以在交互窗口内轻松运行源文件中的代码。 | 无 |
-| [可视化数据](visualizing-data.md) | 绘图是 R 体验不可或缺的一部分，RTVS 支持使用多个独立绘图窗口（每个窗口均有各自的历史记录）和跨窗口移动绘图功能。 可以将绘图保存为位图和 PDF 文件，也可以将绘图以位图或元文件的形式复制到剪贴板中。  | 无 |
-| [变量资源管理器](variable-explorer.md) | 在全局或包特定范围中检查变量，同时还允许你查看可排序的表，并将其导出为 CSV 格式。 | 无 |
+| [R Markdown](rmarkdown.md) | R Markdown 文档可帮助你共享数据结果，其中 Markdown 代码块包含集成的 R 代码。 | 不可用 |
+| [交互窗口](interactive-repl.md) | 提供 R 的完整 REPL 体验，以便你可以在交互窗口内轻松运行源文件中的代码。 | 不可用 |
+| [可视化数据](visualizing-data.md) | 绘图是 R 体验不可或缺的一部分，RTVS 支持使用多个独立绘图窗口（每个窗口均有各自的历史记录）和跨窗口移动绘图功能。 可以将绘图保存为位图和 PDF 文件，也可以将绘图以位图或元文件的形式复制到剪贴板中。  | 不可用 |
+| [变量资源管理器](variable-explorer.md) | 在全局或包特定范围中检查变量，同时还允许你查看可排序的表，并将其导出为 CSV 格式。 | 不可用 |
 | [功能完备的调试](debugging.md) | 包括与交互窗口的集成。 | [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md) |
 
 另请参阅[常见问题](faq.md)。

@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eaf790d8c02c95047e28ca4d911d7f42a33bbd4f
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 3f181dccce6239cc8014e8e8ebf54c2e53794a50
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 使用 **CodeIndex** 命令管理 Team Foundation Server 中的代码索引。 例如，你可能希望重置该索引以修复 CodeLens 信息，或关闭索引以调查服务器性能问题。  
@@ -40,13 +41,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
   
 #### <a name="parameters"></a>参数  
   
-|**参数**|**描述**|  
+|**参数**|**说明**|  
 |------------------|---------------------|  
 |`CollectionName`|指定团队项目集合的名称。 如果名称包含空格，则用引号将该名称引起来，例如“Fabrikam 网站”。|  
 |`CollectionId`|指定团队项目集合的标识号。|  
 |`ServerPath`|指定代码文件的路径。|  
   
-|**选项**|**描述**|  
+|**选项**|**说明**|  
 |----------------|---------------------|  
 |**/indexingStatus**|显示代码索引服务的状态和配置。|  
 |**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**：开始为所有变更集创建索引。<br />-   **off**：停止为所有变更集创建索引。<br />-   **keepupOnly**：停止为之前创建的变更集创建索引，开始仅为新的变更集创建索引。|  

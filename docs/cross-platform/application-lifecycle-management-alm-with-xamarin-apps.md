@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 41fe8afba19939dfbbbd5c055f5ebd53e9fc2e04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: f744bd9535a4946570267de027e7096b41d274e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>适用于 Xamarin 应用的应用程序生命周期管理 (ALM)
 借助 Xamarin，你可以使用 C#、.NET 和 Visual Studio 生成面向 Android、iOS 和 Windows 的跨平台移动应用。 Xamarin 允许在平台间共享大部分代码，只有一小部分需要特定于平台。 有关 Xamarin 的详细信息，请参阅 [Visual Studio 和 Xamarin](../cross-platform/visual-studio-and-xamarin.md)。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 10/31/2017
 |生成带有前脚本和后脚本的定义|是||  
 |包括封闭签入的持续集成|是|仅在 Git 用于拉取请求（而非签入）时，封闭签入才适用于 TFVC。|  
   
-## <a name="testing"></a>测试  
+## <a name="testing"></a>正在测试  
  参考链接：**[测试应用程序](/devops-test-docs/test/test-apps-early-and-often)**  
   
 |功能|通过 Xamarin 提供支持|其他注释|  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
 |规划测试、创建测试用例和组织测试套件|是||  
 |手动测试|是||  
 |测试管理器（记录和播放测试）|是|仅限 Visual Studio 中的 Windows 设备和 Android 仿真器。 可使用 [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder)（Xamarin 测试记录器）记录所有设备。|  
-|代码覆盖率|无||  
+|代码覆盖率|不可用||  
 |[单元测试代码](../test/unit-test-your-code.md)|是|对于 Windows 和 Android 目标，可以使用内置的 MSTest 工具。 若要在 Windows、Android 和 iOS 上运行单元测试，Xamarin 建议使用 NUnit。 请参阅 [为 Xamarin 配置 TFS](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) （Xamarin 网站）。|  
 |[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)|仅限 Windows|Visual Studio 的 UI 测试记录器仅用于 Windows。 有关所有平台，请参阅 [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder)（Xamarin 测试记录器）。|  
   
@@ -99,8 +100,8 @@ ms.lasthandoff: 10/31/2017
 |[分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|是||  
 |[使用代码克隆检测功能查找重复代码](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|是||  
 |[测量托管代码的复杂性和可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|是||  
-|[性能资源管理器](../profiling/performance-explorer.md)|No|改用通过 Xamarin Studio 使用 [Xamarin 探查器](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) 。 请注意 Xamarin 探查器当前处于预览状态，并且尚不适用于 Windows 目标。|  
-|[分析 .NET Framework 内存问题](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|No|Visual Studio 工具没有深入 Mono 框架进行探查的挂钩。|  
+|[性能资源管理器](../profiling/performance-explorer.md)|否|改用通过 Xamarin Studio 使用 [Xamarin 探查器](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) 。 请注意 Xamarin 探查器当前处于预览状态，并且尚不适用于 Windows 目标。|  
+|[分析 .NET Framework 内存问题](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|否|Visual Studio 工具没有深入 Mono 框架进行探查的挂钩。|  
   
 ## <a name="release-management"></a>版本管理  
  参考链接：**[使用发布管理来自动进行部署](https://msdn.microsoft.com/library/vs/alm/release/overview)**  

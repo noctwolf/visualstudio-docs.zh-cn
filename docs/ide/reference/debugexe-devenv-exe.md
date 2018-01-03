@@ -16,11 +16,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 00677826cceab6a54c0fb2216ac6c6284a65631f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8f50bfd0fa5b0f9303bc6256078a30da6e1c0575
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 打开要调试的指定可执行文件。  
@@ -31,9 +32,9 @@ ms.lasthandoff: 10/31/2017
 Devenv /debugexe ExecutableFile  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `ExecutableFile`  
- 必需。 .exe 文件的路径和文件名称。  
+ 必须的。 .exe 文件的路径和文件名称。  
   
  如果找不到 .exe 文件或不存在，不会显示任何警告或错误，并且 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 启动正常。  
   
@@ -47,5 +48,5 @@ Devenv /debugexe ExecutableFile
 Devenv.exe /debugexe MyApplication.exe  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)

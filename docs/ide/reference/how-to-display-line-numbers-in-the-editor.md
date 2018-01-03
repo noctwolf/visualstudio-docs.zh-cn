@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50a5a7d4e83a4cc84d8fe99fb5cc9d48527590af
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 589330e05949567837561d4e732043dcc1ce67eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>如何：在编辑器中显示行号
 可以在代码中显示或隐藏行号。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/02/2017
 > [!NOTE]
 >  根据你的语言或设置，可能必须在“选项”对话框中选中“显示所有设置”复选框才能显示“所有语言”子节点。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义编辑器](../../ide/customizing-the-editor.md)   
  [“选项”对话框 ->“文本编辑器”](../../ide/reference/text-editor-options-dialog-box.md)   
  [编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)

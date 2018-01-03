@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 368481d0a38b7b8f721aa18be0ecda7d35a42aba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 734c7b8a8416503e457f964d74e0a3773cbada2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 可以使用用于跨平台移动开发的 Visual C++ 来编辑、调试 iOS 代码，并将其部署到 iOS 模拟器或 iOS 设备，但由于许可限制，该代码必须在 Mac 上远程生成和运行。 若要使用 Visual Studio 生成和运行 iOS 应用，需要在 Mac 上安装并配置远程代理 [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)。 该远程代理会处理来自 Visual Studio 的生成请求，并在连接到 Mac 的 iOS 设备上或 Mac 上的 iOS 仿真程序中运行应用。  
@@ -238,5 +239,5 @@ ms.lasthandoff: 10/31/2017
   
      其中， *config_file_path* 是 JSON 格式配置文件的路径。 启动选项及其值不得包含短划线。  
   
-## <a name="see-also"></a>另请参阅  
- [安装适用于跨平台移动开发的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+## <a name="see-also"></a>请参阅  
+ [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

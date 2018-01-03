@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 92bd6ea136c30c02e32045692d311afe93b86296
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: c135468e380bd65383f61aa69b906352a3febe47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用
 完成[设置和安装](../cross-platform/setup-and-install.md)以及[验证 Xamarin 环境](../cross-platform/verify-your-xamarin-environment.md)中的步骤后，此演示将介绍如何使用本机 UI 层生成基本 Xamarin 应用（如下所示）。 在本机 UI 中，共享代码驻留在可移植类库 (PCL) 中，并且单个平台项目都包含 UI 定义。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
 > -   具有 Xamarin.Forms（共享 UI）的 Xamarin 应用  
 >   
 >      -   [Hello，Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
->     -   [了解 Xamarin.Forms 多屏显示](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
+>     -   [Hello，Xamarin.Forms 多屏显示](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
   
 ##  <a name="solution"></a>设置解决方案  
  这些步骤使用本机 UI 创建 Xamarin 解决方案，该方案包含共享代码的 PCL 和两个添加的 NuGet 包。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
     -   确保“版本”  字段设置为“最新稳定”  版本。  
   
-    -   单击“安装”。  
+    -   单击“安装” 。  
   
     -   ![查找和安装 Newtonsoft.Json NuGet 包](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
   
@@ -248,7 +249,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  在“属性”窗口中，设置这些属性（注意：它有助于使用“属性”窗口工具栏中的排序按钮对列表进行按字母顺序排序）：  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**text**|**根据“邮政编码”进行搜索**|  
     |**id**|`@+id/ZipCodeSearchLabel`|  
@@ -280,7 +281,7 @@ ms.lasthandoff: 10/31/2017
   
 9. 在 **“属性”** 窗口中，设置以下属性：  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**文本**|**“邮政编码”**|  
     |**id**|`@+id/ZipCodeLabel`|  
@@ -302,7 +303,7 @@ ms.lasthandoff: 10/31/2017
   
 10. 在“工具箱”中，将“数字”控件拖动到“RelativeLayout”上，然后将其放置在“邮政编码”标签下。 然后设置以下属性：  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**id**|`@+id/zipCodeEntry`|  
     |**layout_marginLeft**|`10dp`|  
@@ -325,7 +326,7 @@ ms.lasthandoff: 10/31/2017
   
 11. 在“工具箱”中，将“按钮”拖动到“RelativeLayout”控件上，然后将其放置在 zipCodeEntry 控件的右侧。 然后设置这些属性：  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**id**|`@+id/weatherBtn`|  
     |**文本**|**获取天气信息**|  
@@ -643,7 +644,7 @@ ms.lasthandoff: 10/31/2017
   
  PCL 中的共享代码是特定于平台的，因为 PCL 只编译了一次，并且包括在每个特定于平台的应用包中。 若要编写使用条件编译的共享代码来分离特定于平台的代码，可使用共享项目。 有关详细信息，请参阅[代码共享选项](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Xamarin 开发人员站点](http://developer.xamarin.com/)   
  [Windows 开发人员中心](https://dev.windows.com/en-us)   
  [Swift 与 C# 快速参考海报](http://aka.ms/scposter)

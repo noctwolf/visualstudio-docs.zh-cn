@@ -12,11 +12,12 @@ caps.latest.revision: "64"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 95aa5c1a5df7200ff3fda3554ea5944767aeb082
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f6e8eb7d7349bc88a54707c68a4e505d3f6720b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 可使用 Visual Studio 生成适用于 Android、iOS 和 Windows 设备的应用。  设计应用时，可使用 Visual Studio 中的工具轻松添加连接的服务（如 Office 365、Azure App Service 和 Application Insights）。
@@ -170,7 +171,7 @@ ms.lasthandoff: 10/31/2017
 |[观看 Visual Studio Tools for Unity 2.0 预览版的简介视频](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) （视频）|
 |[了解 Unity](http://unity3d.com/) （Unity 网站）|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
  - [向 Visual Studio 项目添加 Office 365 API](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
  - [Azure App Service - 移动应用](https://azure.microsoft.com/en-us/services/app-service/mobile/)
  - [移动版 HockeyApp](https://azure.microsoft.com/en-us/services/hockeyapp/)

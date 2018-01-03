@@ -12,11 +12,12 @@ caps.latest.revision: "48"
 author: stevehoag
 ms.author: shoag
 manager: ghogen
-ms.openlocfilehash: acf69e6cddabad98a68c870ccfaeafa9b420cac7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: a696a0b827cc8fe367390efbba01c2a18ff178bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发通用 Windows 平台 (UWP) 的应用
 使用通用 Windows 平台和我们的一项 Windows 核心，可在任何 Windows 10 设备上（从电话到桌面）运行同一应用。 使用 Visual Studio 和通用 Windows 应用开发工具创建这些通用 Windows 应用。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
 通用 Windows 平台只是一系列的协定和版本。 使你能够定位应用运行的环境。 你面向的不再是操作系统；现在你面向的是一个或多个设备系列。 请参阅[通用 Windows 平台简介](/windows/uwp/get-started/universal-application-platform-guide)，了解详细信息。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  通用 Windows 应用开发工具附带了仿真程序，可用于查看应用在不同设备上的显示效果。 如果想要使用这些仿真程序，需要在物理计算机上安装此软件。 物理计算机必须运行 Windows 8.1 (x64) Professional 版本或更高版本，并具有支持客户端 Hyper-V 和二级地址转换 (SLAT) 的处理器。 当 Visual Studio 安装在虚拟机上时，则无法使用仿真程序。  
   
  下面是所需软件的列表：  
