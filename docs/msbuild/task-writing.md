@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0e71fcf69e5624e46261d49ebccc8c634492763a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92571ff82424d47875b4f28873c02ca9bdd3c237
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-writing"></a>任务写入
 任务提供在生成过程中运行的代码。 任务包含在目标中。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 附带一个典型任务库，也可以创建自己的任务。 有关 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 附带的任务库的详细信息，请参阅[任务参考](../msbuild/msbuild-task-reference.md)。  
@@ -268,6 +269,6 @@ namespace SimpleTask2
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

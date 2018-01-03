@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ff68a2c9d7552c474fe8760a471f97a5c0267e8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cccd65c62d8b5a0f75052c3121e313507ad5d8b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-model-3-d-terrain"></a>如何：构建三维地形模型
 本文档说明如何使用模型编辑器创建三维地形模型。  
@@ -70,5 +71,5 @@ ms.lasthandoff: 10/31/2017
   
  可以使用此地形模型演示[如何：创建基于几何图形的渐变着色器](../designers/how-to-create-a-geometry-based-gradient-shader.md)中所述的渐变着色器的效果。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [模型编辑器](../designers/model-editor.md)

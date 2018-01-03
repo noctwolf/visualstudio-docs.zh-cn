@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c92f7975e3fe45e4f87e67f2c3c54a26a7d8b87a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf96f1cdbdf8e3f995d8a1020a655b73d369cf7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-shaders"></a>使用着色器
 可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中基于图形的着色器设计器来设计自定义着色器效果。 可以在基于 DirectX 的游戏或应用中使用这些着色器。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|说明|  
+|标题|描述|  
 |-----------|-----------------|  
 |[着色器设计器](../designers/shader-designer.md)|描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 着色器设计器处理着色器。|  
 |[着色器设计器节点](../designers/shader-designer-nodes.md)|讨论可用于实现图形效果的着色器设计器节点的种类。|  

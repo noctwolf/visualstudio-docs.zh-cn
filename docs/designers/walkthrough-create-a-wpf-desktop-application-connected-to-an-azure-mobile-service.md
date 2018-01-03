@@ -16,16 +16,17 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 28f06905820d890f2f13c3c7e77fd57fb75fe4b6
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: azure
+ms.openlocfilehash: f3fd548234dbd7f02be4abfab77a22d3efd9b34a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序
 Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程序，该程序使用 Azure 移动服务来存储和提供数据。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
 若要完成本演练，需要满足以下条件：  
   
 -   Visual Studio 2017 或支持 WPF 开发的任何版本。  
@@ -562,6 +563,6 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
 
  你可以连接到现有的 SQL 数据库或其他使用 Azure 移动服务的数据源。 请参阅 [移动服务文档](http://azure.microsoft.com/en-us/services/app-service/mobile/)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：我的第一个 WPF 桌面应用程序](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
- [使用 Windows Presentation Foundation 创建现代桌面应用程序](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+ [使用 Windows Presentation Foundation 创建新式桌面应用程序](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

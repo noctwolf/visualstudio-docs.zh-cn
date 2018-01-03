@@ -20,11 +20,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9360cce21ab859e962734e240977c67627b8739f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 614ace0800393b6c584da4cf4d85edfa7ea11b33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo 任务
 从基本清单以及从 `TargetZone` 和 `ExcludedPermissions` 属性生成应用程序信任。  
@@ -43,6 +44,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

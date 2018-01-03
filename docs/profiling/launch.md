@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95bec41931dbde49b3de4c6ff5250df494646392
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3b8a584e8e024416ec9c3feca63297eed4497624
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launch"></a>启动
 “Launch”选项使用采样方法启动探查器，还会启动指定的应用程序。  
@@ -84,7 +85,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

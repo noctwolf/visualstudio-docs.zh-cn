@@ -21,11 +21,12 @@ caps.latest.revision: "27"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: bb7444c529cc4ba592574ba38566235cb13c4169
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1dc0d1af8c79fe95ea091ac691519653b59a9648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 任务
 生成 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署清单。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署清单描述如何通过为部署定义唯一标识、标识部署特征（如安装或联机模式）、指定应用程序更新设置和更新位置，以及指示相应的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单，来进行应用程序的部署。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.GenerateManifestBase> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关任务类的参数列表，请参阅[任务基类](../msbuild/task-base-class.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [GenerateApplicationManifest 任务](../msbuild/generateapplicationmanifest-task.md)   
  [SignFile 任务](../msbuild/signfile-task.md)   

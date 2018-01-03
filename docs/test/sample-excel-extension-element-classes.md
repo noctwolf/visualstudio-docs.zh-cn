@@ -11,11 +11,12 @@ ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: "9"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8a7524046d981b9938c9df00be7edbcfa595f0fe
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0a0643f6e290d5be5b4d2854246d5dc95c0d731f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-excel-extension-element-classes"></a>示例 Excel 扩展：Element 类
 该扩展使用从 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> 派生的类，并表示 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 中的工作表控件和单元控件。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/27/2017
   
  `Utilities` 类具有返回有关 UI 的各种信息的帮助程序方法。 某些方法直接调用外部系统 DLL，如 **USER32.DLL** 和 **OLEACC.DLL**，以从 UI 获取窗口句柄**。**  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement>   
  [扩展编码的 UI 测试和操作录制以支持 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

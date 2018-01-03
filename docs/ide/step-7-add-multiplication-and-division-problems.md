@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a23149551aef02e2ada4b986eb3e8170335ff38b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c9c326e85ecb2c52dc83230b520d75eb944355da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步骤 7：添加乘法和除法问题
 在本教程的第 7 部分中，您将添加乘法和除法题，但首先要考虑如何做出这种更改。 考虑与存储值相关的初始步骤。  

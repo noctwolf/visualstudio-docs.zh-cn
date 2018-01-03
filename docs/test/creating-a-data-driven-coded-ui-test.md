@@ -12,11 +12,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: f58f547462c6c6f4d313d8b9814974f660bf59de
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cb7e1e231cda62f5312be7dd1058667e5b9ae363
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>创建数据驱动的编码的 UI 测试
 若要测试不同的情况，你可以使用不同的参数值多次运行测试。 数据驱动的编码的 UI 测试就是执行该操作的一个便捷方法。 对数据源中参数值进行定义后，数据源中的每一行都是编码的 UI 测试的一个迭代。 测试的总结果将取决于所有迭代的结果。 例如，如果一个测试迭代失败，则测试总结果是失败。  
@@ -251,7 +252,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
  如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。  UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   

@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa71ec1c6eb8ac50d957782dda02a2c3fb59a3c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4499bd11e60aba81b37f13f5ce95e8a17412e2d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-threads-command"></a>“列出线程”命令
 显示当前程序中线程的列表。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 Debug.ListThreads [index]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `index`  
  可选。 通过索引来选择要用作当前线程的线程。  
   
@@ -45,7 +46,7 @@ Debug.ListThreads [index]
 >Debug.ListThreads   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“列出调用堆栈”命令](../../ide/reference/list-call-stack-command.md)   
  [“列出反汇编”命令](../../ide/reference/list-disassembly-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   

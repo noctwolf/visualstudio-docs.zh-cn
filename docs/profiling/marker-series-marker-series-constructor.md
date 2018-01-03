@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83922b913e810042bef82eb0b81a0e42f8d3bbb1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e5a9e6029ed579a6e7464eae8a198948c49fed58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series 构造函数
 初始化 `marker_series` 类的新实例。  
@@ -46,10 +47,10 @@ marker_series(
  `_ProviderGuid`  
  系列提供程序的 GUID。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  **标头：**cvmarkersobj.h  
   
  **命名空间：**Concurrency::diagnostic  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [marker_series 类](../profiling/marker-series-class.md)

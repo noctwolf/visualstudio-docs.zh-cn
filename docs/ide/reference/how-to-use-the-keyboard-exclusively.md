@@ -18,11 +18,12 @@ ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 895b2a7f8dd60cdddb2eb785a732032524174d4c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 882a21dbace4197d93a3a3c985a58a0c938e4f2a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何：仅使用键盘进行操作
 > [!TIP]
@@ -98,7 +99,7 @@ ms.lasthandoff: 10/31/2017
 
      工具窗口随即进入新的停靠位置。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [标识并自定义键盘快捷方式](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [辅助功能提示和技巧](../../ide/reference/accessibility-tips-and-tricks.md)   
  [默认键盘快捷方式](../../ide/default-keyboard-shortcuts-in-visual-studio.md)

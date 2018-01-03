@@ -16,13 +16,14 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 80e5ba76a54b584e5eed74f507f1fb3b81e7f89e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bc17b237d2bd38d146a70fb05c1c4f6a91f98b37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="troubleshooting-snippets"></a>疑难解答：代码片段
+# <a name="troubleshooting-snippets"></a>疑难解答：代码段
 有关 IntelliSense 代码片段的问题通常由以下两个问题引起：代码片段文件损坏或代码片段文件中存在错误的内容。  
   
 ## <a name="common-problems"></a>常见问题  
@@ -39,5 +40,5 @@ ms.lasthandoff: 10/31/2017
   
 -   可能未定义变量。 代码片段中未定义的变量应突出显示。 如果未突出显示，则将此情形作为一个错误报告给代码片段创建者。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [代码片段](../ide/code-snippets.md)

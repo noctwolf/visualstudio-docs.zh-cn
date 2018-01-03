@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df87a8c890f5326e4b7b385016e17a432626ec92
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 97962debc24b9e8bff3d4daaa7b632db775c2476
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="texture-nodes"></a>纹理节点
 在着色器设计器中，纹理节点采集不同的纹理类型和几何图形样本，并生成或转换纹理坐标。 纹理提供对象的颜色和照明细节。  

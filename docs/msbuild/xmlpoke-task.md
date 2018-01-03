@@ -20,11 +20,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 254a23aed67fc7b06558142dd7426e2da5359cc1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01b44f9adf82224b1eae09a452798284bbcc1935
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 任务
 将 XPath 查询指定的值设置为 XML 文件。  
@@ -42,6 +43,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

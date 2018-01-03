@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e41dd319e00dccbc180319bf3642c665cf4df58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 61f9735c61538465088b58f25e6c714a2441e34c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-existing-project-command"></a>“添加现有项目”命令
 将现有项目添加到当前解决方案中。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
 File.AddExistingProject filename  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `filename`  
  可选。 待添加到解决方案的项目的完整路径、项目名称和扩展名。  
   
@@ -49,7 +50,7 @@ File.AddExistingProject filename
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   

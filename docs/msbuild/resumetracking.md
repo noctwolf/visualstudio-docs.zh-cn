@@ -16,11 +16,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e52387956f1e4a9283a592b6ce24cacf05bb7292
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ae79812a700f8444002ae3b8c04c0ea816970eea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resumetracking"></a>ResumeTracking
 在当前上下文中恢复跟踪。  
@@ -34,8 +35,8 @@ HRESULT WINAPI ResumeTracking();
 ## <a name="return-value"></a>返回值  
  如果跟踪恢复，则返回带 SUCCEEDED 位集的 HRESULT。 如果因为上下文不可用而无法恢复跟踪，将返回“E_FAIL”。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头：FileTracker.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SuspendTracking](../msbuild/suspendtracking.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54c91b8238b21f214edda0941c0c91fd4bdda8e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29a68dc22a348c787d192bebecea91caed7aa0cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>演练：使用检测进行命令行分析
 本演练将演示通过使用分析工具的检测方法分析 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 独立应用程序以收集详细的计时和调用计数数据。 在本演练中，你将完成以下任务：  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用 [VSPerfReport](../profiling/vsperfreport.md) 工具生成基于文件的分析数据的报告。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
   
 -   [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]  
   
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
   
      可以在电子表格程序中分析生成的报表，也可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 分析 Report.vsp 文件中的分析数据。 有关详细信息，请参阅[分析性能工具数据](../profiling/analyzing-performance-tools-data.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [性能会话概述](../profiling/performance-session-overview.md)   
  [从命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   

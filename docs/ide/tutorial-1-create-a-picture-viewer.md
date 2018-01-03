@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 73c9289d95c7df352819546eab6d95084576215c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b0537b1f335d46854dd43727ade695909db421ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教程 1：创建图片查看器
 在本教程中，您将生成一个从文件加载图片并将其显示在窗口中的程序。 您将学习如何拖动控件（如窗体上的按钮和图片框）、设置控件属性，以及如何使用容器来平滑地调整窗体的大小。 您还将开始编写代码。 您将学习如何：  

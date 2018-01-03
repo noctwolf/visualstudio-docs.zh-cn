@@ -19,11 +19,12 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 redirect_url: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=msbuild
-ms.openlocfilehash: e2e80331d4ba1951c3132dfe720c5fbcef7d1e29
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 801e86285786d9f7d5347283a8939df8750f88fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-resources-for-msbuild"></a>有关 MSBuild 的其他资源
 通过以下网站和论坛，可以获得有关使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的常见问题解答。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
  [Visual Studio MSBuild 论坛](http://go.microsoft.com/fwlink/?LinkId=48931)  
  专注于 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的社区论坛。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild](../msbuild/msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)

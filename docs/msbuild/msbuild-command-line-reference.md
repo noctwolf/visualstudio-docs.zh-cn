@@ -21,11 +21,12 @@ caps.latest.revision: "57"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 07beb4cfbc8acad0184ff93d12121699f3b27b03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fa07e9e489dd6334e0075da4cd8c265e71aa1db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令行参考
 使用 MSBuild.exe 生成项目或解决方案文件时，可以包含几个开关来指定过程的各个方面。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
 MSBuild.exe [Switches] [ProjectFile]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
   
 |参数|描述|  
 |--------------|-----------------|  
@@ -89,6 +90,6 @@ MSBuild.exe MyProject.proj /t:rebuild
 msbuild SlnFolders.sln /t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder:Clean  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 参考](../msbuild/msbuild-reference.md)   
  [常用的 MSBuild 项目属性](../msbuild/common-msbuild-project-properties.md)

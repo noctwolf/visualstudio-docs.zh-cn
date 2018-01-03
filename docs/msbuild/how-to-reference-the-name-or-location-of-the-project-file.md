@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9186b98b482b101254e70def9285d9bbad2ca254
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 092a62de1ebcee104d9f06ecaae0a12a9f0cf63f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：引用项目文件的名称或位置
 可以在项目文件自身中使用该项目的名称或位置，而无需创建你自己的属性。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供引用项目文件名的保留属性和与项目相关的其他属性。 有关保留属性的详细信息，请参阅 [MSBuild 保留属性和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
@@ -75,6 +76,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [MSBuild](../msbuild/msbuild.md)  
  [MSBuild 保留属性和已知属性](../msbuild/msbuild-reserved-and-well-known-properties.md)

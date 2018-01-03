@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: cd7e50a44e5d53653f233372b643c31fe58aedc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 129f9c9235035e828e1825898aac89eaf8cd1388
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>用 MSBuild 获取生成日志
 使用 MSBuild 开关，可指定要查看的生成数据量，以及是否要将生成数据保存到一个或多个文件。 还可指定一个自定义记录器来收集生成数据。 对于本主题未涉及的 MSBuild 命令行开关的相关信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
@@ -76,7 +77,7 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
   
  在 MSBuild 命令行中，可使用 **/logger** 开关指定自定义记录器。 还可使用 **/noconsolelogger** 开关禁用默认控制台记录器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.Build.Framework.LoggerVerbosity>   
  [生成记录器](../msbuild/build-loggers.md)   
  [多处理器环境下的日志记录](../msbuild/logging-in-a-multi-processor-environment.md)   

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ea8dfe604b0038c13b4702bc14e94923cca5b88
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: f839156c470f14097e216f55318cf94f123f5c91
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>使用探查器命令行从 ASP.NET Web 应用程序收集内存数据
 本部分介绍使用 VSPerfCmd 命令行工具收集 ASP.NET Web 应用程序的内存分配数据和对象生存期数据的过程和选项。  

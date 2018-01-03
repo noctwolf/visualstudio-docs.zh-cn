@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04d63762eda13bd0b21f6532f1d401cdef638ea6
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 17f71324031bfdf01b32151288257b97c036056b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shortcut-keys-help-viewer"></a>快捷键 (Help Viewer)
 使用下表中的快捷键，可以在 Microsoft Help Viewer 中导航：  
@@ -33,12 +34,12 @@ ms.lasthandoff: 11/07/2017
 |Toolbar|Alt+向右键|显示下一页。|  
 |Toolbar|Alt+Home|显示帮助审阅者主页。|  
 |Toolbar|Ctrl+S|突出显示目录的当前主题（在“内容”选项卡）。|  
-|ToolBar|Ctrl+D|将当前主题添加到“收藏夹”选项卡。|  
-|ToolBar|Ctrl+F|显示主题区域中的查找栏，便于在当前主题中搜索文本。|  
+|Toolbar|Ctrl+D|将当前主题添加到“收藏夹”选项卡。|  
+|Toolbar|Ctrl+F|显示主题区域中的查找栏，便于在当前主题中搜索文本。|  
 |Toolbar|Ctrl+P|打印当前页。|  
 |Toolbar|Ctrl+F2|显示当前页的打印预览。|  
 |Toolbar|Ctrl+O|显示“查看器选项”对话框。|  
-|ToolBar|Ctrl+Shift+M|显示“管理内容”选项卡。|  
+|Toolbar|Ctrl+Shift+M|显示“管理内容”选项卡。|  
 |导航器|Alt+C<br /><br /> - 或 -<br /><br /> Ctrl+Shift+C|显示“内容”选项卡。|  
 |导航器|Alt+I<br /><br /> - 或 -<br /><br /> Ctrl+Shift+I|显示“索引”选项卡。|  
 |导航器|Alt+F<br /><br /> - 或 -<br /><br /> Ctrl+Shift+F|显示“收藏夹”选项卡。|  

@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 6ff07f282d13d5520dc83935bd68667465dcea20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d0c676cf2e014027e1e553b10eff5bae3749849b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lc-task"></a>LC 任务
 包装 LC.exe 文件，它可从 .licx 文件生成 .license 文件。 有关 LC.exe 的详细信息，请参阅 [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler)（Lc.exe（许可证编译器））。  
@@ -68,6 +69,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析中通用 Windows 应用中的 HTML UI 响应能力
 本主题介绍如何使用 UI 响应能力探查器（一种可用于 Windows 通用应用的性能工具）隔离应用中的性能问题。  
@@ -324,7 +325,7 @@ if (performance.mark && performance.measure) {
   
 -   **图像解码。** 指示对图像进行解压缩和解码所用的时间。  
   
- 对于脚本和样式类别，UI 响应能力探查器可能提供你在“时间线详细信息”图中可操作的数据。 如果识别出脚本问题，你可以运行 CPU 采样探查器与 UI 响应能力探查器。 或者，可以使用 Visual Studio 函数探查器以获取更详细的数据。 有关详细信息，请参阅 [JavaScript 内存](../profiling/javascript-memory.md)。  
+ 对于脚本和样式类别，UI 响应能力探查器可能提供你在“时间线详细信息”图中可操作的数据。 如果识别出脚本问题，你可以运行 CPU 采样探查器与 UI 响应能力探查器。 或者，可以使用 Visual Studio 函数探查器以获取更详细的数据。 有关更多信息，请参见 [“JavaScript 内存”](../profiling/javascript-memory.md)。  
   
  对于其他事件类别，你也许能够识别出由于向应用程序中添加功能而导致的平台副效应，但在这些情况下，可能无法使用 UI 响应能力探查器解决特定的性能问题。  
   
@@ -333,22 +334,22 @@ if (performance.mark && performance.measure) {
 |Event|事件类别|在出现以下情况时发生|  
 |-----------|--------------------|-----------------|  
 |CSS 解析|“加载”|发现了新 CSS 内容，而且尝试解析 CSS 内容。|  
-|HTML 解析|“加载”|发现了新 HTML 内容，而且尝试将此内容解析到节点并将内容插入到 DOM 树。|  
-|HTTP 请求|“加载”|在 DOM 中找到了远程资源，或者创建了生成 HTTP 请求的 XMLHttpRequest。|  
-|推理下载|“加载”|已在页面的 HTML 内容中搜索所需的资源，以便快速调度对资源的后续 HTTP 请求。|  
-|动画帧回调函数|“脚本”|浏览器即将呈现另一个帧，这触发了应用程序提供的回调函数。|  
-|DOM 事件|“脚本”|已发生并执行 DOM 事件。<br /><br /> DOM 事件的 `context` 属性（例如  `DOMContentLoaded` 或 `click`）显示在括号中。|  
-|事件侦听器|“脚本”|已调用并执行事件侦听器。|  
+|HTML 解析|加载|发现了新 HTML 内容，而且尝试将此内容解析到节点并将内容插入到 DOM 树。|  
+|HTTP 请求|加载|在 DOM 中找到了远程资源，或者创建了生成 HTTP 请求的 XMLHttpRequest。|  
+|推理下载|加载|已在页面的 HTML 内容中搜索所需的资源，以便快速调度对资源的后续 HTTP 请求。|  
+|动画帧回调函数|脚本|浏览器即将呈现另一个帧，这触发了应用程序提供的回调函数。|  
+|DOM 事件|脚本|已发生并执行 DOM 事件。<br /><br /> DOM 事件的 `context` 属性（例如  `DOMContentLoaded` 或 `click`）显示在括号中。|  
+|事件侦听器|脚本|已调用并执行事件侦听器。|  
 |媒体查询侦听器|“脚本”|已注册的媒体查询无效化，这导致了其关联的侦听器的执行。|  
 |转变观察器|“脚本”|已修改一个或多个观察到的 DOM 元素，这导致执行与 MutationObserver 关联的回调。|  
-|脚本计算|“脚本”|在 DOM 中找到了新的脚本元素，并且尝试解析和执行此脚本。|  
-|计时器|“脚本”|计划的计时器过时，从而导致执行其关联的回调函数。|  
-|Windows 运行时异步回调函数|“脚本”|Windows 运行时对象完成了触发 `Promise` 回调函数的异步操作。|  
-|Windows 运行时事件|“脚本”|Windows 运行时对象上发生的事件触发了注册侦听器。|  
+|脚本计算|脚本|在 DOM 中找到了新的脚本元素，并且尝试解析和执行此脚本。|  
+|计时器|脚本|计划的计时器过时，从而导致执行其关联的回调函数。|  
+|Windows 运行时异步回调函数|脚本|Windows 运行时对象完成了触发 `Promise` 回调函数的异步操作。|  
+|Windows 运行时事件|脚本|Windows 运行时对象上发生的事件触发了注册侦听器。|  
 |垃圾回收|“GC”|收集不再使用的对象的内存所用的时间。|  
-|CSS 计算|“样式”|已对 DOM 进行更改，要求重新计算所有受影响的元素的样式属性。|  
+|CSS 计算|样式|已对 DOM 进行更改，要求重新计算所有受影响的元素的样式属性。|  
 |布局|“样式”|已对 DOM 进行更改，要求重新计算所有受影响的元素的大小和/或位置。|  
-|画图|“呈现”|已对 DOM 进行可视更改，并且尝试重新呈现页面的各部分。|  
+|画图|呈现|已对 DOM 进行可视更改，并且尝试重新呈现页面的各部分。|  
 |呈现层|“呈现”|已对 DOM 的独立呈现片段（称为层）进行可视更改，这些更改要求呈现此页面的一个部分。|  
 |“图像解码”|“图像解码”|向 DOM 中加入了一个图像，并且尝试将该图像从其原始格式解压缩并解码成位图。|  
 |Frame|不可用|对需要重新提取页面的所有受影响部分的 DOM 进行了可视更改。 这是用于分组的工具生成的事件。|  
@@ -362,5 +363,5 @@ if (performance.mark && performance.measure) {
   
 -   若要了解单线程代码执行模型和性能，请参见 [执行代码](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析工具](../profiling/profiling-tools.md)

@@ -11,11 +11,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 83e44a28b0039c743724f3c70bee95e2ef2d419b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: dd663d17dc7d0dc66af7cdd27f0da3cf9a253523
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 可以使用“测试资源管理器”窗口编写并运行 C++ 单元测试，如同对其他语言一样。 有关使用“测试资源管理器”的详细信息，请参阅[使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)。 
@@ -109,6 +110,6 @@ TEST_METHOD 返回 void。 若要生成测试结果，请使用 `Assert` 类中�
 
 有关与单元测试相关的最佳做法，请参阅[单元测试基础](unit-test-basics.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [单元测试代码](unit-test-your-code.md)
 

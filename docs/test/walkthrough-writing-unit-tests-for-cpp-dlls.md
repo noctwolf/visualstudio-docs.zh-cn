@@ -10,11 +10,12 @@ ms.topic: article
 ms.assetid: 84575412-1de7-4e53-811d-ae035eb21d13
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 97f5eef312d954445bd208364ccbe48f9325b066
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 55c6fa99cf22148657f0515d817c6d40525497d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：编写 C/C++ DLL 单元测试
 本演练介绍如何使用测试优先方法开发本机 C++ DLL。 基本步骤如下：  
@@ -325,7 +326,7 @@ ms.lasthandoff: 11/15/2017
   
      也可以强制实施最低级别的代码覆盖率。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [向现有的 C++ 应用程序添加单元测试](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
  [调试本机代码](../debugger/debugging-native-code.md)   

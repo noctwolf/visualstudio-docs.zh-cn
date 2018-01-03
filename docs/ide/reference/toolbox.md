@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e345b573544839aea7601e334545e4ba410d6b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dee9f1379dd7cd4c1d134714a35fc91d74f9f128
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox"></a>工具箱
 “工具箱”显示控件和可添加到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 项目的其他项的图标。 若要打开“工具箱”，请单击“视图”菜单上的“工具箱”。 可停靠“工具箱”，也可以将其固定在打开位置或将其设置为“自动隐藏”。  
@@ -50,5 +51,5 @@ ms.lasthandoff: 10/31/2017
   
 -   [“工具箱”->“HTML”选项卡](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用工具箱](../../ide/using-the-toolbox.md)

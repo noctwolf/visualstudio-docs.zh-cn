@@ -8,15 +8,18 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: code coverage
-ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
-caps.latest.revision: "36"
+dev_langs:
+- CSharp
+- VB
+- CPP
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5c6889d705b882d92f701238f0890cb1fc532eed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 51c8076ef3166e7f0f887a77399a0edfd5cfc072
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用代码覆盖率确定所测试的代码量
 若要确定正在由编码的测试（例如单元测试）实际进行测试的项目代码的比例，则可以使用 Visual Studio 的代码覆盖率功能。 若要有效防止 Bug，测试应作用于或“覆盖”你的大部分代码。  
@@ -282,7 +285,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ### <a name="guidance"></a>指导  
  [使用 Visual Studio 2012 测试连续交付 - 第 2 章：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)   
  [代码覆盖率疑难解答](../test/troubleshooting-code-coverage.md)   
  [单元测试代码](../test/unit-test-your-code.md)

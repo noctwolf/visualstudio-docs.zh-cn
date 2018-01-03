@@ -13,18 +13,19 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53db0506509813b0c92651c8c53d681d8f650167
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3d6dcabe310743fee85c4560a0a37f029660bc90
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>“指令指针”(IP) 视图 — 争用数据
 争用数据的 IP 视图列出分析运行期间被阻止执行的程序集指令的数据。  
   
  下表说明“指令指针”视图中各列的值。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**独占阻塞的时间**|该函数中的阻塞时间。|  
 |**独占阻塞的时间百分比**|执行指令时的阻塞时间所占的百分比。|  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 |**源行开始**|此指令在源文件中的起始行号。|  
 |**源行结束**|此指令在源文件中的结束行号。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“指令指针”(IP) 视图](../profiling/instruction-pointers-ips-view.md)   
  [“指令指针”(IP) 视图 - 采样](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   

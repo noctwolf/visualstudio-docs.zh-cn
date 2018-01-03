@@ -21,11 +21,12 @@ caps.latest.revision: "44"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f97ce4480ebdf04cce6a129d7c1950ac28df2aaf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b0120e93e809d1d0f57b5b7dc993a982b1c78836
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsinstr"></a>VSInstr
 VSInstr 工具用于检测二进制文件。 使用以下语法调用该工具：  
@@ -58,7 +59,7 @@ VSInstr [/U] filename [/options]
 |**SuspendOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在分析运行期间停止数据收集。 它将在指定位置处插入 SuspendProfile API 函数。<br /><br /> **Before** - 紧邻在目标函数进入前。<br /><br /> **After** - 紧邻目标函数退出后。<br /><br /> **Top** - 紧邻目标函数进入后。<br /><br /> **Bottom** - 紧邻目标函数中的每个返回值前。<br /><br /> `funcname` - 目标函数的名称。<br /><br /> 如果目标函数包含 StartProfile 函数，则会在其之前插入 SuspendProfile 函数。|  
 |**ResumeOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在分析运行期间开始或恢复数据收集。<br /><br /> 它通常用于在 **SuspendOnly** 选项已停止分析后开始分析。 它将在指定位置处插入 ResumeProfile API 函数。<br /><br /> **Before** - 紧邻在目标函数进入前。<br /><br /> **After** - 紧邻目标函数退出后。<br /><br /> **Top** - 紧邻目标函数进入后。<br /><br /> **Bottom** - 紧邻目标函数中的每个返回值前。<br /><br /> `funcname` - 目标函数的名称。<br /><br /> 如果目标函数包含 StopProfile 函数，则会在其之后插入 ResumeProfile 函数。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   

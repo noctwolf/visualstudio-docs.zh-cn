@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 852779620ec1d070da5aaabb0b5a9df8dafda359
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1158d4a584bddc065b65bd282a5f53666eae9946
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cpu-utilization-graph"></a>CPU 使用率图
 CPU 使用率图显示一段时间内应用中的使用程度。 X 轴表示跟踪的持续时间，Y 轴表示系统上的逻辑内核数。 此图形不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。  
@@ -33,6 +34,6 @@ CPU 使用率图显示一段时间内应用中的使用程度。 X 轴表示跟�
   
 -   白色表示系统上未使用逻辑内核的可用性。 如果可以找到更多的并行机会，这些核心则可用于你的进程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用率视图](../profiling/utilization-view.md)   
  [CPU 平均使用率](../profiling/average-cpu-utilization.md)

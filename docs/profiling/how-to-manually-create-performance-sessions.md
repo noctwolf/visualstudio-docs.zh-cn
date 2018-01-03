@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9a88a82896eeb2d8f124fa7abcfa26dc9b5ab2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 763e123fcae809e174238ab2f204bec537dbf868
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>如何：手动创建性能会话
 可以手动创建性能会话。 不需要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中打开项目，就可以执行该操作。 有关详细信息，请参阅[配置性能会话](../profiling/configuring-performance-sessions.md)。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
   
      将添加一个新的二进制文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [性能资源管理器](../profiling/performance-explorer.md)   
  [入门](../profiling/getting-started-with-performance-tools.md)

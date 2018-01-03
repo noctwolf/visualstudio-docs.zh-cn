@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7aae3c7bc11cdde209ef4d663793f25fa1e9e67e
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: unity
+ms.openlocfilehash: 6c078affefbb24a9fbbb65c854911f4b91f12183
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>与 VSTU 共享 Unity 日志回调
 Visual Studio Tools for Unity 对 Unity 注册了一个日志回调，能够将其控制台流式传输到 Visual Studio。 如果编辑器脚本也对 Unity 注册了一个日志回调，则 VSTU 回调可能会妨碍你的回调。 若要防止这种可能性，则使用 `VisualStudioIntegration.LogCallback` 事件与 VSTU 协作。  
@@ -47,5 +48,5 @@ public class LogCallbackHook
 }  
 ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [示例：项目文件生成](../cross-platform/customize-project-files-created-by-vstu.md)

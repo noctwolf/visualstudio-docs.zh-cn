@@ -17,11 +17,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bcdebabac1197317b5e282be8bd648168f201673
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 9ad762745627c2c30378f5017d88e78b00921d4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
 Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备上的 UWP 应用的功率和能耗情况，这些低功率平板设备在所有时间或部分时间内靠自有电池运行。 在电池供电的设备上，如果应用程序使用过多的能量，可能导致客户非常不满，最终客户甚至可能将其卸载。 能量利用的优化可使更多的客户选择并使用你的应用程序。  
@@ -154,6 +155,6 @@ if (performance && performance.mark) {
   
 -   **“JavaScript 函数计时”** 和 **“CPU 使用量”** 工具有助于降低由低效函数导致的 CPU 负载。 请参阅[分析 CPU 使用情况](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
  [使用 Visual Studio 分析](../profiling/index.md)  
  [分析功能简介](../profiling/profiling-feature-tour.md)

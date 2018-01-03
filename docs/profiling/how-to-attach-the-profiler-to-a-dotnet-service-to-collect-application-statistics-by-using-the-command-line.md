@@ -12,11 +12,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a639c9401498f168834947d9ec9c3bd238010e13
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: e33c804509e132fc9e4da2739f1e6de2f4a47d70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 .NET 服务以收集应用程序统计信息
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加 .NET Framework 服务，以及如何使用采样方法收集性能统计信息。  
@@ -99,7 +100,7 @@ ms.lasthandoff: 11/11/2017
   
 -   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
@@ -116,7 +117,7 @@ ms.lasthandoff: 11/11/2017
   
     -   停止服务。  
   
-         - 或 -  
+         或  
   
     -   键入 **VSPerfCmd /detach**  
   
@@ -130,6 +131,6 @@ ms.lasthandoff: 11/11/2017
   
 4.  重新启动计算机。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析服务](../profiling/command-line-profiling-of-services.md)   
  [采样方法数据视图](../profiling/profiler-sampling-method-data-views.md)

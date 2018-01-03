@@ -26,11 +26,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e52bef93735efc1ec5e43230ba46c7aa90cb67bc
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>分析 UWP 应用中的 JavaScript 内存使用情况
 JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内存使用情况，在使用 JavaScript 为 Windows 构建的 UWP 应用中查找内存泄漏。 受支持的应用包括通用 Windows 应用的应用。
@@ -49,7 +50,7 @@ JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内
   
  有关引导用户在正在运行的应用中完成内存泄露查找过程的教程，请参阅[演练：查找内存泄漏 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
   
- 在本主题中：  
+ 本主题内容：  
   
  [运行 JavaScript 内存分析器](#Run)   
  [检查内存使用量](#Check)   
@@ -380,7 +381,7 @@ if (performance && performance.mark) {
   
 -   当内存问题的原因时难以确定时，使用各种视图（例如控制器和类型）可找到共性，特别是可帮助确定某个对象（或一些对象），这个/这些对象可能包含对显示在视图中的许多其他对象的引用。  
   
--   在用户导航到新页后，查找无意间保留在内存中的对象，这是导致出现内存问题的一个常见原因。 例如：  
+-   在用户导航到新页后，查找无意间保留在内存中的对象，这是导致出现内存问题的一个常见原因。 例如:  
   
     -   [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) 函数的使用不当可能导致此问题。  
   
@@ -400,5 +401,5 @@ if (performance && performance.mark) {
   
     -   创建一个测试对象，并在 JavaScript 内存分析器视图（如类型视图）中跟踪该对象。 例如，可以将一个极大对象附加到另一个对象以查明特定对象或组件是否已进行垃圾回收。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：查找内存泄漏 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

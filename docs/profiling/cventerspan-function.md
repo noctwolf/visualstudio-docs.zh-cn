@@ -28,11 +28,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7a24d3809c9e600620b074315a07f2d0eaf3d18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ded4d3227ab3840f393f35832160405ba0195c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan 函数
 标记新范围的起始位置。  
@@ -126,12 +127,12 @@ HRESULT CvEnterSpanExVA(
 ## <a name="return-value"></a>返回值  
  成功写入消息时返回 S_OK。 出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  **标头：**cvmarkers.h  
   
  **Unicode：**CvEnterSpanW、CvEnterSpanVW、CvEnterSpanExW、CvEnterSpanExVW  
   
  **ANSI：**CvEnterSpanA、CvEnterSpanVA、CvEnterSpanExA、CvEnterSpanExVW  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C++ 库参考](../profiling/cpp-library-reference.md)

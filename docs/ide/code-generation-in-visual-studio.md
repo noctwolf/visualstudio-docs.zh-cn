@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4f3001eb630ce2f5a03d8e3f5169d25e413a6c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e001d58b37dadbc075c39964cea0da58656d6931
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-in-visual-studio"></a>Visual Studio 中的代码生成
 Visual Studio 可以帮助生成部分源代码，让你专注于实际工作。  常见的代码生成功能包括：  
@@ -34,7 +35,7 @@ Visual Studio 可以帮助生成部分源代码，让你专注于实际工作。
 
 即将推出其他语言的文档...
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [Visual Studio IDE](../ide/visual-studio-ide.md)   
 [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)  
 [预览更改](preview-changes.md)

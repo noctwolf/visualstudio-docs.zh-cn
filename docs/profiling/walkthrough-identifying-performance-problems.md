@@ -17,11 +17,12 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d52f6bfe745cf7e8684094cf9244b6eedcba13a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da961d153713c996c6f057e7bb0366c747c87205
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>演练：确定性能问题
 本演练演示如何分析应用程序以确定性能问题。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 -   分析被检测的分析结果，以查找并修复性能问题。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
   
 -   对 C# 有中等程度的理解。  
   
@@ -158,7 +159,7 @@ ms.lasthandoff: 10/31/2017
   
  再次运行应用程序时，你将看到性能有了显著的改进。 建议即使有了用户可见的性能改进，也再次运行性能分析会话。 有必要在修复问题后查看数据，因为第一个问题可能掩盖某些其他问题。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [概述](../profiling/overviews-performance-tools.md)   
  [入门](../profiling/getting-started-with-performance-tools.md)   
  [/Z7、/Zi、/ZI（调试信息格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)

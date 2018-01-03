@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b328a12e2b82f6aa688180d9ac57066552e808c9
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 76081a3c5beb67693f2aef9fcdbeaed908619b8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>“指令指针”(IP) 视图 - 采样数据
 采样数据的 IP 视图列出分析运行期间收集样本时直接执行的程序集指令的性能数据。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 11/11/2017
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
@@ -43,5 +44,5 @@ ms.lasthandoff: 11/11/2017
 |**独占样本数**|执行指令时收集的样本总数。|  
 |**独占样本数百分比**|执行指令时在分析运行期间收集的所有样本数的百分比。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“指令指针”(IP) 视图 - 采样](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

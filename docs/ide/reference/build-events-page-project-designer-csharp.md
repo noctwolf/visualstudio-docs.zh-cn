@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c701adc4da2f59505699a02f1b4ccc304841f3ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 245172c76ac5c62e80183a9e09e9787f311dca24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-events-page-project-designer-c"></a>“项目设计器”->“生成事件”页 (C#)
 使用“项目设计器”的“生成事件”页指定生成配置说明。 还可以指定任何生成后事件运行的条件。 有关详细信息，请参阅[如何：指定生成事件 (C#)](../../ide/how-to-specify-build-events-csharp.md) 和[如何：指定生成事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 |成功生成时|如果生成成功，则运行生成后事件。 因此，即使项目已为最新状态，但只要生成成功，就会运行该事件。|  
 |生成更新项目输出时|生成后事件仅在编译器的输出文件 (.exe or .dll) 不同于之前的编译器输出文件时才运行。 因此，如果项目为最新状态，则不会运行生成后事件。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：指定生成事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [如何：指定生成事件 (C#)](../../ide/how-to-specify-build-events-csharp.md)   
  [项目属性引用](../../ide/reference/project-properties-reference.md)   

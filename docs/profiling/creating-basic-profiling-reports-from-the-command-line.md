@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 111227b41b3fe48af963f93f07cdee5e5511661f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8915f71d4dcb84a481c0223a64afbddf9b0c722a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>从命令行创建基本分析报告
 本主题介绍从 .vsp 或 .vsps 分析数据文件生成逗号分隔值 (.csv) 报告的基本 VSPerfReport 命令。 有关所有报告选项的介绍，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。  
@@ -46,10 +47,10 @@ ms.lasthandoff: 10/31/2017
 |**Life**|列出所分配对象的生存期。|-   [“对象生存期”视图](../profiling/object-lifetime-view.md)|  
 |**Line**|按源代码行列出分析数据。|-   [采样数据](../profiling/lines-view-sampling-data.md)<br />-   [.NET 内存采样数据](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [争用数据](../profiling/lines-view-contention-data.md)|  
 |**Header**|分析数据文件标头信息。|特定于文件。|  
-|**Mark**|分析运行期间收集的分析标记。|-   [标记视图](../profiling/marks-view.md)|  
-|**Module**|列出模块的分析数据。|-   [采样数据](../profiling/modules-view-sampling-data.md)<br />-   [检测数据](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET 内存采样数据](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET 内存检测数据](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [争用数据](../profiling/modules-view-contention-data.md)|  
+|**标记**|分析运行期间收集的分析标记。|-   [标记视图](../profiling/marks-view.md)|  
+|**模块**|列出模块的分析数据。|-   [采样数据](../profiling/modules-view-sampling-data.md)<br />-   [检测数据](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET 内存采样数据](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET 内存检测数据](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [争用数据](../profiling/modules-view-contention-data.md)|  
 |**Process**|列出进程的分析数据。|-   [“进程”视图](../profiling/process-view.md)<br />-   [争用数据](../profiling/process-view-contention-data.md)|  
-|**Thread**|列出线程的分析数据。|-   [“进程”视图](../profiling/process-view.md)|  
+|**线程**|列出线程的分析数据。|-   [“进程”视图](../profiling/process-view.md)|  
 |**Type**|按类型列出分配分析数据。|-   [“分配”视图](../profiling/dotnet-memory-allocations-view.md)|  
 |**Contention**|资源争用。|-   [资源争用](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|列出性能规则问题。|-   列出规则问题的 CheckId、描述和源代码位置。|  

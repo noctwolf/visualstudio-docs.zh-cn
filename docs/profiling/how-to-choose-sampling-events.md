@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4903a3c8373c0ce9c6119176649ba793caf27c27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8475544d6ecb822a25a423b73543d7364d79da10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-choose-sampling-events"></a>如何：选择采样事件
 默认情况下，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具按指定为由所分析的进程使用的处理器周期数的间隔收集性能数据。 间隔中的默认周期数为 10,000,000，这在 1 GH 计算机上大约 0.01 秒。 可以更改间隔中的周期数，也可以更改采样事件。 以下示例事件可用：  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  选择示例事件时，“采样间隔”文本框中将显示默认的采样间隔值。 如有必要，可在文本框中输入想要的值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [如何：选择收集方法](../profiling/how-to-choose-collection-methods.md)   
  [CPU 和 Windows 计数器](../profiling/cpu-and-windows-counters.md)   

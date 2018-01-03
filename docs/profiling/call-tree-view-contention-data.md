@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41bf306b96db2b3aa00fff1bdcc8562823cd9d98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c829f11efd5eddda0ea819422856cb2bcc30c2ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view---contention-data"></a>“调用树”视图 - 争用数据
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都列出它所调用的所有函数、函数被阻止的次数，以及函数由于与其他线程或进程争用资源而被阻止的时间量。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
  设置根节点后，将从视图中排除所选节点的子树之外的所有其他条目。 若要将根节点重置回原始节点，可在“调用树”视图中右键单击，然后单击“重置根节点”。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**独占阻塞的时间**|阻止此执行路径中此函数的实例在分析运行中执行的时间。 此时间不包括此函数调用的子函数的阻塞时间。|  
 |**独占阻塞的时间百分比**|此执行路径中此函数的独占阻塞时间占分析运行中的所有阻塞时间的百分比。|  
@@ -54,10 +55,10 @@ ms.lasthandoff: 10/31/2017
 |**进程名**|进程的名称。|  
 |**源文件**|此函数的定义所在的源文件。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“调用关系树”视图](../profiling/call-tree-view.md)   
  [“调用关系树”视图 - 检测](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [“调用关系树”视图 - 采样](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [“调用关系树”视图](../profiling/call-tree-view-instrumentation-data.md)   
- [“调用树”视图](../profiling/call-tree-view-sampling-data.md)
+ [“调用关系树”视图](../profiling/call-tree-view-sampling-data.md)

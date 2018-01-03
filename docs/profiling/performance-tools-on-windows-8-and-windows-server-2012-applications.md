@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83bd33e6da9795a7e4e638fa91612e930a882cb0
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: b82860f4bdbf206441591703137f15decb294269
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 应用程序上的性能工具
 Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual Studio 性能工具在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 本主题介绍针对 Windows 8 和 Windows Server 2012 平台上新增的性能工具所做的更改。
@@ -24,7 +25,7 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
 > [!NOTE]
 >  其他受支持的 Windows 版本（Windows 7、Windows Server 2008 R2）的性能工具未更改。
   
-##  <a name="BKMK_In_this_topic"></a> 主题内容  
+##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  [从 Visual Studio IDE 收集有关 UWP 应用的数据](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [从 Visual Studio IDE 收集有关在 Windows 8 桌面上或 Windows Server 2012 上运行的应用的数据](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -62,7 +63,7 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
   
  [分析工具](profiling-tools.md)  
   
--   [JavaScript 内存](../profiling/javascript-memory.md)
+-   [“JavaScript 内存”](../profiling/javascript-memory.md)
   
 -   [分析本地计算机上的 UWP 应用中的 Visual C++、Visual C# 和 Visual Basic 代码](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
@@ -70,7 +71,7 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
   
 -   [分析 UWP 应用中的 Visual C++、Visual C# 和 Visual Basic 代码的性能数据](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
- [主题内容](#BKMK_In_this_topic)  
+ [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> 从 Visual Studio IDE 收集有关在 Windows 8 桌面上或 Windows Server 2012 上运行的应用的数据  
  针对 Windows 8，使用检测方法进行分析并未更改。  
@@ -138,9 +139,9 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
   
  **TIP 报表**  
   
- 只能在 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 或 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] IDE 中查看层交互数据。 通过 [VSPerfReport](../profiling/vsperfreport.md) 生成的基于文件的层交互报告不可用。  
+ 只能在 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 或 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] IDE 中查看层交互数据。 基于文件的层交互报表通过 [VSPerfReport](../profiling/vsperfreport.md) 将不可用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [性能资源管理器](../profiling/performance-explorer.md)   
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [从命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

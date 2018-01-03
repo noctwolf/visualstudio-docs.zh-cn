@@ -16,11 +16,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4df81a0d5f6faee7a272abd13ca6e046681b045d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中配置警告
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编译器提供了可能导致运行时错误的代码的一组警告。 可以使用这些信息编写 bug 较少的更干净、更快速和更好的代码。 例如，如果用户尝试调用未赋值的对象变量的成员，从未设置返回值的函数返回或者执行有逻辑错误的 `Try` 块来捕获异常，该编译器都将生成警告。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="examples"></a>示例  
  下表包含命令行参数示例，并对每个参数的作用进行了说明。  
   
-|参数|说明|  
+|参数|描述|  
 |--------------|-----------------|  
 |`vbc /warnaserror`|指定应将所有警告都视为错误。|  
 |`vbc /warnaserror:42024`|指定应将 42024 警告视为错误。|  
@@ -119,7 +120,7 @@ ms.lasthandoff: 10/31/2017
   
  ID：42029、42031  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [错误类型](/dotnet/visual-basic/programming-guide/language-features/error-types)   
  [Try...Catch...Finally 语句](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
  [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   

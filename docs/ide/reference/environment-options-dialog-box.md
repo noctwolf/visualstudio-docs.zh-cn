@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d6d7f0bc3d55e59fec506d6387f0f6254300ee8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 567d1c8248ff00a1387ccd1c40a8c8c658b551ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="environment-options-dialog-box"></a>“选项”对话框 ->“环境”
 使用“选项”对话框的“环境”文件夹中的页，可设置集成开发环境 (IDE) 的某些元素的显示和行为方式。 可通过在菜单栏上依次选择“工具”、“选项”、“环境”来访问“环境”页。  
@@ -45,5 +46,5 @@ ms.lasthandoff: 10/31/2017
 |了解如何为任务和任务列表设置选项|[“选项”对话框 ->“环境”->“任务列表”](../../ide/reference/task-list-environment-options-dialog-box.md)|  
 |更改默认的“主页”和“搜索”页，更改系统源文件编辑器并配置 Internet Explorer 选项。|[“选项”对话框 ->“环境”->“Web 浏览器”](../../ide/reference/web-browser-environment-options-dialog-box.md)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“选项”对话框](../../ide/reference/options-dialog-box-visual-studio.md)

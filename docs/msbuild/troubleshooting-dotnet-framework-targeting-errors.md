@@ -21,11 +21,12 @@ caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b35c3b87a1526f0453e1385c92c5ecefc5ec55da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 222299d3a13b716f6a522513a71fc1cb7cbe1084
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>.NET Framework 目标错误疑难解答
 本主题介绍可能由引用问题导致的 MSBuild 错误以及解决这些错误的方法。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  关闭并重新打开项目后，还应重新生成该项目以确保所有引用正确解析。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：面向某个版本的 .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)   
  [面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)   

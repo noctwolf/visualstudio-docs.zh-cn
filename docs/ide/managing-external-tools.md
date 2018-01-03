@@ -12,11 +12,12 @@ helpviewer_keywords: external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 65cd18ea74ced278d53841cb8204f7cc4d163dc3
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 3e796b1e5a1773183c04409781cf6e2026bfe96e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 11/22/2017
 
 以下是在定义外部工具时可以使用的参数的完整列表：
 
-|名称|参数|描述|  
+|name|参数|描述|  
 |----------|--------------|-----------------|  
 |项路径|$(ItemPath)|当前文件的完整文件名（驱动器 + 路径 + 文件名）。|  
 |项目录|$(ItemDir)|当前文件的目录（驱动器 + 路径）。|  

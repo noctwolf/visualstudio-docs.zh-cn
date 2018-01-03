@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b196adf16359c640ba08495b36f4ba428cf8ba48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc5a5013b402d01db8aa84134c9a2740d0ff6304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-dialog-box-visual-studio"></a>“选项”对话框 (Visual Studio)
 使用“选项”对话框，可根据需要配置集成开发环境 (IDE)。 例如，可以为项目建立默认保存位置、更改 Windows 的默认外观和行为以及为常用命令创建快捷方式。 还有特定于开发语言和平台的选项。 可从“工具”菜单中访问“选项”。  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/31/2017
 ### <a name="show-all-settings"></a>显示所有设置  
  选择或取消选择“显示所有设置”将应用在“选项”对话框中所做的所有更改，即使尚未单击“确定”亦是如此。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义编辑器](../../ide/customizing-the-editor.md)

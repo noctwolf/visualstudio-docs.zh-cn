@@ -17,17 +17,18 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9a719e39506e080ce55bad45124e34d79dbbfac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7218b5bdcc95ed5db7f87c6fb17230895db579cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-parameters"></a>模板参数
 在对模板进行实例化时，您可以通过在模板中使用参数来替换模板的关键部分的值，如类名和命名空间。 用户在“新建项目”或“添加新项”对话框中单击“确定”时，后台运行的模板向导会替换这些参数。  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>声明和启用模板参数  
- 模板参数以 $参数$ 的格式进行声明。 例如:   
+ 模板参数以 $参数$ 的格式进行声明。 例如:  
   
 -   $safeprojectname$  
   
@@ -123,5 +124,5 @@ namespace $safeprojectname$
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义模板](../ide/customizing-project-and-item-templates.md)

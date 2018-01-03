@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8bd2365752e31ce463610b75fee3884271841b3c
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: ea6214987e12b8c5cf7e563b666822989d3a7015
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperf"></a>VSPerf
 使用 **VsPerf** 命令行工具可以：  
@@ -27,7 +28,7 @@ ms.lasthandoff: 11/11/2017
   
  有关分析选项的详细信息，请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
-##  <a name="BKMK_In_this_topic"></a> 主题内容  
+##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  本主题描述了可与 `vsperf.exe` 命令行工具一起使用的选项。 本主题包含以下各节：  
   
  [仅限 UWP 应用](#BKMK_windows_store_apps_only)  
@@ -69,6 +70,6 @@ ms.lasthandoff: 11/11/2017
 |**/detach**|停止数据收集，但允许目标进程继续运行。|  
 |**/status**|显示探查器状态。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [从命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

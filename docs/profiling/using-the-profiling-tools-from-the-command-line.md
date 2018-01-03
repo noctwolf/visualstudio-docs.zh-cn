@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cff5b3091213cb0c4c708ce016f486fc7262a2c4
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 3cf3751eeb7a1e0a41c26bab24425312675921b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>从命令行使用分析工具
 可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的命令行工具在命令提示符处分析应用程序，以及使用批处理文件和脚本自动执行分析。 还可以在命令提示符处生成报告文件。 可以使用轻量级独立探查器在未安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的计算机上收集数据。  
@@ -42,5 +43,5 @@ ms.lasthandoff: 11/11/2017
 ## <a name="reference"></a>参考  
  [命令行分析工具参考](../profiling/command-line-profiling-tools-reference.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [性能资源管理器](../profiling/performance-explorer.md)

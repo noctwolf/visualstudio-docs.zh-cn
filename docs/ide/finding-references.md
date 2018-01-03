@@ -13,11 +13,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a402d8541f7056ebcb57885197d001b39c8d9b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92c12e4d51255849843f938c032ca17b611eeeab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-references-in-your-code"></a>在代码中查找引用  
 可以使用“查找所有引用”命令在整个代码库中查找引用特定码位元素的位置。 在你想要查找其引用的元素的上下文（右键单击）菜单中可以使用“查找所有引用”命令。 或者，如果使用键盘，请按 Shift + F12。  

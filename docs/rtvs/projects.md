@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c01007e3a1fd71af8c5204130a90b448f28c93f1
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>在 Visual Studio 中创建 R 项目
 
@@ -106,7 +107,6 @@ RTVS 包括多种用于特定文件类型的模板。 通过以下方式可以�
 | R 文档（数据集） | 包含许多字段的 R 文档文件，其中含有用于描述数据集的注释。 |
 | SQL 查询 | 空 `.sql` 文件。 请参阅 [SQL Server 集成](sql-server.md)。 |
 | 使用 R 的存储过程 | 具有子 SQL 查询和子存储过程模板文件的 R 文件。 请参阅 [SQL Server 集成](sql-server.md)。 |
-
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>在 Visual Studio 中使用多个项目类型
 

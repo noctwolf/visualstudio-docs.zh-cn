@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f5f010ee5d72723ec0ef4f20b13b895dc9b75f1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a760336194482485f7b46cd35600fcb102d7113b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-community-resources"></a>WPF 社区资源
 Microsoft 公开各种社区资源以便于你了解、讨论 Windows Presentation Foundation (WPF) 并提供对它的反馈，包括 WPF 团队成员和社区负责人、论坛和 Microsoft Connect 反馈中心的博客。  
@@ -37,5 +38,5 @@ Microsoft 公开各种社区资源以便于你了解、讨论 Windows Presentati
   
  通过单击页面上“此页是否有所帮助？”按钮并输入你的评论来提供有关 WPF 的文档的反馈  。 这可以直接向文档小组传送你的反馈。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Windows Presentation Foundation 创建新式桌面应用程序](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

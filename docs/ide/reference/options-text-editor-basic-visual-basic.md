@@ -20,11 +20,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 746622d0a3282681599a26c8cba8782806e915e5
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bc2d31565713e8985074ccf8fab6b9904f52199d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>选项，文本编辑器，基本 (Visual Basic)
 在“选项”（“工具”菜单）对话框的“文本编辑器”文件夹下的“Basic”文件夹中，“VB 专用”属性页包含以下属性：  
@@ -70,6 +71,6 @@ ms.lasthandoff: 11/02/2017
 **启用突出显示引用和关键字**  
 文本编辑器可突出显示符号的所有实例或子句中的所有关键字，例如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 可通过按下 Ctrl+Shift+向下键或 Ctrl+Shift+向上键在突出显示的引用或关键字之间浏览。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)   
 [“选项”->“文本编辑器”->“所有语言”->“选项卡”](../../ide/reference/options-text-editor-all-languages-tabs.md)

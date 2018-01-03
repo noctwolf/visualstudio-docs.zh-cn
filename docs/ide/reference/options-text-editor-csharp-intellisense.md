@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6e1613410c8143126254c8f7a4bd325c6e6f22
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: b0b69b7eafbfbb1b5c2c582fd0c734a183ea0a78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-c-intellisense"></a>选项，文本编辑器，C#，IntelliSense
 使用“IntelliSense”属性页可以修改影响 IntelliSense for Visual C# 行为的设置。 通过单击“工具”菜单上的“选项”，再单击“文本编辑器”文件夹中的“C#”，然后单击“IntelliSense”，可以访问“IntelliSense”属性页。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 12/07/2017
  **预先选择最近使用过的成员**  
  选择此选项后，在集成开发环境 (IDE) 中当前会话期间，IntelliSense 将预先选择 会你最近在弹出“列表成员”框中选择的成员自动完成对象名称。 在 IDE 中的每个会话之间，最近使用过的成员的历史记录将被清除。 有关详细信息，请参阅[用于最近使用过的成员的 IntelliSense](../../ide/visual-csharp-intellisense.md#most-recently-used-members)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)   
  [XML 文档注释](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [使用 IntelliSense](../../ide/using-intellisense.md)

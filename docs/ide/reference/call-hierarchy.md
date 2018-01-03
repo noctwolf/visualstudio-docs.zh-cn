@@ -14,11 +14,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 065806ec223273bbacba6da7702f21bc25510983
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 4aed087f8280049018818e68f7db56960db7e690
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-hierarchy"></a>调用层次结构
 调用层次结构通过显示选定方法、属性或构造函数的所有调用方及被调用方，使用户可以在代码间导航。 这有助于更好地理解代码的流动方式，以及评估代码更改的效果。 可以检查多个级别的代码，以查看方法调用的复杂链条以及代码的其他入口点，从而找到所有可能的执行路径。  

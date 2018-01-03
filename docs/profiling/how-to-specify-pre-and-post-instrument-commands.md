@@ -17,11 +17,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7daf63f27d9c285c126e437f55d25ff674d7360f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ebd5ff13eec62eae238b126efd7001b1f6348551
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定检测前和检测后命令
 可以指定在检测性能会话中的二进制文件之前或之后运行的命令。 任何可以从命令行发出的命令都可以指定为检测前或检测后事件。 例如，可以指定一些命令，这些命令会在检测完二进制文件后，自动使用所执行的批处理文件中的强名称密钥重新签名程序集。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  可以单击“命令行”框旁边的省略号按钮“(…)”浏览到相应的 .exe、.cmd 或 .bat 文件并选择该文件。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
      若要禁止命令运行但不删除它，请选中“从检测中排除”复选框。 若要修改编译器或链接器设置，请使用项目属性页。  
   
@@ -84,9 +85,9 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  可以单击“命令行”框旁边的省略号按钮“(…)”浏览到相应的 .exe、.cmd 或 .bat 文件并选择该文件。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
      若要禁止命令运行但不删除它，请选中“从检测中排除”复选框。 若要修改编译器或链接器设置，请使用项目属性页。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)

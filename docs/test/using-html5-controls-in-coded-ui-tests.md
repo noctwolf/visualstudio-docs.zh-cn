@@ -11,11 +11,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: "17"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3e2e14748e27d965762b3245908382b278e6e132
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e9430c70bdb6120e4d79dfb93c1308ce1b313515
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在编码的 UI 测试中使用 HTML5 控件
 编码的 UI 测试包括对某些包含在 Internet Explorer 9 和 Internet Explorer 10 中的 HTML5 控件的支持。  
@@ -139,7 +140,7 @@ string ValueAsNumber
   
  ![HTML5 进度栏控件](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [HTML 元素](http://go.microsoft.com/fwlink/?LinkID=232441)   
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
  [创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   

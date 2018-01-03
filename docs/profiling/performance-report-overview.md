@@ -16,11 +16,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0244cbae9a331303434db89a42518812efc2677b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 915f7f3cbbee87f72c4643b8c5a2b4497bbd69dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-report-overview"></a>性能报告概述
 在 Visual Studio Team System Development Edition 集成开发环境 (IDE) 的“性能报告”窗口中，可以查看性能会话的分析数据。 分析数据保存在 .vsp 和 .vsps 文件中。 报告视图窗口可用于查看和分析应用程序性能问题。  
@@ -96,6 +97,6 @@ ms.lasthandoff: 10/31/2017
   
 -   **导出** - 将当前报告保存在 .CVS 格式或 .XML 格式文件中（可以选择保存不同的视图）。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析性能工具数据](../profiling/analyzing-performance-tools-data.md)   
  [性能报告视图](../profiling/performance-report-views.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9273cd908a8948b47b818e9c4333cb8bd70fe094
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53c45ccf528375bc31b4d61fd6af0193aa295e6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="go-to-command"></a>“转到”命令
 将光标移到指定的行。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
 Edit.GoTo [linenumber]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `linenumber`  
  可选。 一个表示要转到的行号的整数。  
   
@@ -48,7 +49,7 @@ Edit.GoTo [linenumber]
 >Edit.GoTo 125  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   

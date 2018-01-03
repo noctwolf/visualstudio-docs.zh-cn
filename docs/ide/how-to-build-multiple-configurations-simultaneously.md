@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eca23f38a27ac43246fd6fbf0b4449630ef3f64d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 86c0a9fbbfe7e4b0b38b0286cf10f06dd7eec89c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>如何：同时生成多个配置
 使用“批生成”对话框，可以同时使用大多数类型的项目的多个甚至所有生成配置来生成这些项目。 但是，不能同时在多个生成配置中生成以下类型的项目：  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  选择“生成”或“重新生成”按钮以使用指定配置生成项目。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)   
  [了解生成配置](../ide/understanding-build-configurations.md)   
  [并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

@@ -22,11 +22,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e199dbfc171688cd0970cf340aef0dfd3584155a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38ddfed161e04948eb3725192c95025dec5c473b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choose-element-msbuild"></a>Choose 元素 (MSBuild)
 评估子元素，选择一组 `ItemGroup` 元素和/或 `PropertyGroup` 元素进行评估。  
@@ -57,17 +58,17 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|可选元素。<br /><br /> 当所有 `When` 元素的条件的计算结果为 `false` 时，指定要计算的代码块 `PropertyGroup` 和 `ItemGroup` 元素。 `Choose` 元素中可能没有或只有一个 `Otherwise` 元素，并且它必须是最后一个元素。|  
 |[When](../msbuild/when-element-msbuild.md)|必需的元素。<br /><br /> 指定一个可能的代码块供 `Choose` 元素选择。 `Choose` 元素中可能有一个或多个 `When` 元素。|  
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|当所有 `When` 元素的条件的计算结果为 `false` 时，指定要执行的代码块。|  
-|[项目](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。|  
+|[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。|  
 |[When](../msbuild/when-element-msbuild.md)|指定一个可能的代码块供 `Choose` 元素选择。|  
 
 ## <a name="remarks"></a>备注  
@@ -121,6 +122,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [条件构造](../msbuild/msbuild-conditional-constructs.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)

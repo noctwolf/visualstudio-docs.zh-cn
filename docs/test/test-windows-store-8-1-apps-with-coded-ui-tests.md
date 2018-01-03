@@ -11,11 +11,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 9680f9886e4aeaefe8c476b7e9fff46fb3e24182
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: f5df259efedd50e67ee6e8f94203eb4e0ac56c71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 Windows UWP 应用
 
@@ -322,6 +323,6 @@ ms.lasthandoff: 11/02/2017
   
 **答**：每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都将覆盖在 UIMapDesigner.cs 文件中所做的任何代码更改。 如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。 UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
  [为 UWP 控件设置唯一的自动化属性以进行测试](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

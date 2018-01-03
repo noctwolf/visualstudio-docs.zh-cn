@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bf9220205e35a0c72d3812e1943154c6fedeacd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: bbfe3eb4f76d8237d6e1a1b7c26aa48b1f081f1e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>在 XAML 设计器中调试或禁用项目代码
 很多情况下，造成 XAML 设计器中出现未处理异常的原因可能为：项目代码尝试访问在设计器运行应用程序时返回不同值或以不同方式运行的属性/方法。 可以通过在 Visual Studio 的其他实例中调试项目代码来解决这些异常，也可通过禁用设计器中的项目代码暂时阻止它们。  
@@ -86,5 +87,5 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  禁用项目代码可能导致设计时数据丢失。 或者调试在设计器中运行的代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 和 Blend for Visual Studio 中设计 XAML](../designers/designing-xaml-in-visual-studio.md)

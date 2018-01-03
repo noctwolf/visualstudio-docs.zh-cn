@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c2618dbaad3fcae95219e2b6a8a1f9b3d87bf09
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a26dd168e83584b19a9d6ddad37496082c166f2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>“选项”页 ->“字体和颜色”节点属性
 本文档介绍某个工具窗口的字体和颜色属性，该窗口注册显示在“选项”对话框“环境”类别中的”字体和颜色”下。 这支持可着色项组的动态特性，安装或卸载 VSPackages 时，这些特性可能会发生更改。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
  `DTE.Properties("FontsAndColors", "Printer")`  
   
- -或-  
+ 或  
   
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`  
   
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|<xref:EnvDTE.vsFontCharSet> 值，指定要使用的字符集的类型，例如希伯来语或俄语。|  
 |FontSize|Get/Set (Short)|要使用的字体大小（以磅为单位）。 例如，10 或 12。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [控制选项设置](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [确定“选项”页中属性项的名称](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [“选项”页 ->“环境”节点属性](../../ide/reference/options-page-environment-node-properties.md)   

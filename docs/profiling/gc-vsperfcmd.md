@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da671dcac0e60c0d20754d73f9b23a9fe2de54d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6a57cb824ca6c2ec4b2f52a070ae407690f83d69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
 “GC”选项启用 .NET Framework 内存分配数据和对象生存期数据的收集。 “GC”选项只能用于采样分析方法，且只能与“Launch”选项一起使用。  
@@ -51,7 +52,7 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 VSPerfCmd.exe /Launch:TestApp.exe /gc  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6bb51d32ea249ba573733babcb7c9ed0cf0dde
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-debugging-node-properties"></a>“选项”页 ->“调试”节点属性
 下表描述了与“选项”对话框的“调试”类别 `DTE.Properties("Debugging", <Property Page>)` 关联的页面（或属性集合）。  
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
 |LoadDllExports|Get/Set (Boolean)|确定调试器是否加载 DLL 导出表。|  
 |EnableRPC|Get/Set (Boolean)|确定调试器是否可以单步执行 COM 远程过程调用。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [控制选项设置](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [确定“选项”页中属性项的名称](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [“选项”页 ->“字体和颜色”节点属性](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   

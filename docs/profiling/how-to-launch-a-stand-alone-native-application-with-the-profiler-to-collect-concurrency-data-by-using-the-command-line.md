@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 625bc1301d4ea4a43fdd3dec7f28eb26171eb503
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: deaed7caedfa825917d4d6740f3d1866f77da68e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将独立本机应用程序与探查器一起启动以收集并发数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动本机独立（客户端）应用程序以及收集进程和线程并发数据。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
      可以将下表中的任意选项与 **/launch** 选项一起使用。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/args](../profiling/args.md) **:** `Arguments`|指定一个字符串，其中包含要传递给目标应用程序的命令行参数。|  
     |[/console](../profiling/console.md)|在另一个窗口中启动目标命令行应用程序。|  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
 -   下表中的选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  

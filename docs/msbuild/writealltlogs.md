@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7cd9965a5a521c4c1984792b0f10c809d3aafe86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8abc76ef0c9d3e04f0aae676af0bfa20183b3a8d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 写入所有线程和上下文的跟踪日志。  
@@ -41,8 +42,8 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 ## <a name="return-value"></a>返回值  
  如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头：FileTracker.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)

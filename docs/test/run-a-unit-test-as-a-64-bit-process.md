@@ -14,11 +14,12 @@ ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
 caps.latest.revision: "25"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: bb22521dc0c4f4a1a824c3554ce37297a61108c5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 39addca0d673ae5a9423d4195ffc2bfe3358de4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>将单元测试作为 64 位进程运行
 如果你有一台 64 位计算机，则可以作为 64 位进程来运行单元测试并捕获代码覆盖率信息。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/27/2017
   
      在 .runsettings 文件中指定 `<TargetPlatform>x64</TargetPlatform>`。 此方法的一个优点是可以在不同文件中指定设置组，并在不同设置之间快速切换。 您还可以在解决方案之间复制设置。 有关详细信息，请参阅[使用 .runsettings 文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)   
  [单元测试代码](../test/unit-test-your-code.md)   
  [指定 Visual Studio 测试的测试设置](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)

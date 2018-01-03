@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87fc48cb69534e723a0a48e559550bdbef63f93f
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 175a22ecb56f8c41d76512309df2b0443a7481b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>如何：在 Visual Studio IDE 中移动
 集成开发环境 (IDE) 的设计旨在使你可以根据首选项或项目要求，以几种不同方式在窗口间和文件间移动。 可以选择在编辑器中打开的文件之间循环切换，或在 IDE 中所有活动工具窗口之间循环。 还可以直接切换到在编辑器中任何打开的文件，而不考虑上一次访问的顺序。 在 IDE 中工作时，这些功能有助于提高工作效率。  

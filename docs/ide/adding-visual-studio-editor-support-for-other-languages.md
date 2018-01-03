@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 2dfdf4f5a722bf4fea0c4bd3175e33799aa8b8df
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bff7a486bcb72af126dc770542f63e57af0171ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>为其他语言添加 Visual Studio 编辑器支持
 了解 Visual Studio 编辑器如何在不同计算机语言间进行读取和导航，以及如何添加其他语言的 Visual Studio 编辑器支持。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
   
  有关如何创建 TextMate 语法的详细信息，请参阅 [TextMate - Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)（TextMate - 语言语法简介：如何在 HTML 中添加嵌入的源代码语法突出显示）和 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)（如何创建 Textmate 包的语言语法和自定义主题说明）。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 2013 Navigate To Improvements](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) （Visual Studio 2013“导航到”改进）  
  [演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)   
  [演练：显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88b8169f5e0e53a76ff2b1bee61dc80f41a9f595
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1465b9d8a14d5889bf856caa52b807ee2954cd0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view---contention-data"></a>“行”视图 — 争用数据
 争用数据的“行”视图列出分析运行期间收集样本时所执行语句的性能数据。 在源文件中，一个语句可分散在多行中，而一行也可包括多个语句。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
  下表介绍“行视图”报告中的各列。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**独占阻塞的时间**|因争用事件而阻滞此语句执行语句中代码的时间长度。 不包括语句所调用的函数中的阻塞时间。|  
 |**独占阻塞的时间百分比**|语句的独占阻塞时间占进程中所有阻塞时间的百分比。|  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
 |**源行开始**|该语句在源文件中的起始行号。|  
 |**源行结束**|该语句在源文件中的结束行号。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“行”视图](../profiling/lines-view.md)   
  [“行”视图 - 采样](../profiling/lines-view-dotnet-memory-sampling-data.md)   

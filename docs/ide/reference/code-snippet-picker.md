@@ -17,11 +17,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 58f419d52d2d89f998f64e236cfc1f0053c9cfd1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: e352baf834f026462cb35921f7f79e75b3aecd96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippet-picker"></a>代码段选择器
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 代码编辑器提供了“代码片段选择器”，使用它，单击几下鼠标就可将现成的代码块插入到活动文档中。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/02/2017
 项列表  
 可以插入的代码片段的列表，或包含代码片段的文件夹的列表。 若要插入片段或展开文件夹，请选择所需的项，然后按 Enter。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [有关使用代码片段的最佳做法](../../ide/best-practices-for-using-code-snippets.md)   
 [Visual Basic IntelliSense 代码片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)   
 [在代码中设置书签](../../ide/setting-bookmarks-in-code.md)   

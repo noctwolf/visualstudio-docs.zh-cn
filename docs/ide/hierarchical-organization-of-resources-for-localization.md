@@ -22,11 +22,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f52d57d45c0f78a5bd64b16f10c9bb7c2256cd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8235f246a52e3f8f53536abdf1aba2c0dede875d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>用于本地化的资源的分层组织
 在 Visual Studio 中，本地化资源（适用于各区域性的字符串和图像等数据）存储在单独的文件中并根据 UI 区域性设置进行加载。 若要了解本地化资源是如何加载的，可以将其想象成按层次结构的方式进行组织。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
  ![NeutralSpecificResources 图](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [用于本地化的非特定资源语言](../ide/neutral-resources-languages-for-localization.md)   
  [安全性和已本地化的附属程序集](../ide/security-and-localized-satellite-assemblies.md)   
  [本地化应用程序](../ide/localizing-applications.md)   

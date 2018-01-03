@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bb7095a4e8b953fc9af68a1fb617ca4c1d2b94f
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 96c4bb5a9ea5b7ff85f115048fc057191884a016
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>使用探查器采样方法收集服务的应用程序统计信息
 本部分介绍从命令行使用采样方法收集 Windows 服务的性能统计信息的步骤和选项。  

@@ -23,18 +23,19 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: fa430e14398b99e540ca8e0a462b98ce57b0402a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef3a5355ac868a627d00095713270e19cd113fa8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="uidmanager-task"></a>UidManager 任务
 <xref:Microsoft.Build.Tasks.Windows.UidManager> 任务将检查、更新或删除唯一标识符 (UID)，以对源 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 文件中包含的所有 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 元素进行本地化。  
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|说明|  
+|参数|描述|  
 |---------------|-----------------|  
 |`IntermediateDirectory`|可选 **String** 参数。<br /><br /> 指定用于备份由 **MarkupFiles** 参数指定的源 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 文件的目录。|  
 |`MarkupFiles`|必需的 **ITaskItem[]** 参数。<br /><br /> 指定要包含的源 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]文件，以用于 UID 检查、更新或删除。|  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [WPF MSBuild 引用](../msbuild/wpf-msbuild-reference.md)   
  [任务参考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)   

@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7dea60ba0f6a443b8db94611460442bd08a8cf95
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e17055848d7913547fcbcd563774e8360eea73e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="memory-usage-without-the-debugger"></a>不使用调试器情况下的内存使用率
 可以在不调试的情况下使用**内存使用率**执行以下操作  
@@ -202,8 +203,8 @@ ms.lasthandoff: 11/11/2017
 |“大小(字节)”|对于实例，则为主要快照中的对象大小，排除该实例中包含的对象大小。<br /><br /> 对于类型，则为主要快照中类型实例的总大小，排除实例中包含的对象的大小。|  
 |“非独占大小(字节)”|主要快照中对象的大小，其中包括对象中包含的对象的大小。|  
   
-## <a name="see-also"></a>另请参阅  
- [JavaScript 内存](../profiling/javascript-memory.md)  
+## <a name="see-also"></a>请参阅  
+ [“JavaScript 内存”](../profiling/javascript-memory.md)  
  [使用 Visual Studio 分析](../profiling/index.md)  
  [分析功能简介](../profiling/profiling-feature-tour.md)  
  [使用 C++、C# 和 Visual Basic 的 UWP 应用的性能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   

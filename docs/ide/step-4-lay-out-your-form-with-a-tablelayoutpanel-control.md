@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1740beb4c671b2e66e249827c2db678f6b6f7da3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 81eb6578c0ffaf76103b27d41709e476aa732e7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步骤 4：使用 TableLayoutPanel 控件设置窗体布局
 在此步骤中，向窗体添加一个 `TableLayoutPanel` 控件。 TableLayoutPanel 可帮助在窗体中正确地对齐您稍后将添加的控件。  
@@ -83,7 +84,7 @@ TableLayoutPanel 列和行样式
   
 11. 从窗口顶部的“显示”下拉列表中选择“行”。 将“Row1”设置为 90% 并将“Row2”设置为 10%。  
   
-12. 选择**“确定”** 按钮。 现在，TableLayoutPanel 应具有一个大的顶部行、一个小的底部行、一个小的左侧列和一个大的右侧列。 您可在 TableLayoutPanel 中调整行和列的大小，方法是在窗体中选择 tableLayoutPanel1，然后拖动其行和列边框。  
+12. 选择“确定”  按钮。 现在，TableLayoutPanel 应具有一个大的顶部行、一个小的底部行、一个小的左侧列和一个大的右侧列。 您可在 TableLayoutPanel 中调整行和列的大小，方法是在窗体中选择 tableLayoutPanel1，然后拖动其行和列边框。  
   
      ![具有已调整大小的 TableLayoutPanel 的 Form1](../ide/media/vs_formafterlayoutpanel.png "VS_FormAfterLayoutPanel")  
 具有已调整大小的 TableLayoutPanel 的 Form1  

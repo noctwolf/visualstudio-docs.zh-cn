@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d5f34e421160e8cca56897e6530ff47da7b1a84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4db6bd98fcecf6d99e9d6e98570ed8b24b7ee47c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手动创建 Web 模板
 创建 Web 模板与创建其他种类的模板不同。 由于 Web 项目模板出现在”添加新网站“对话框中，并且 Web 项目项由编程语言分类，vstemplate 文件必须将模板指定为 Web 模板，并识别该编程语言。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
     -   VisualBasic  
   
-     例如:   
+     例如:  
   
     ```  
     <TemplateData>  
@@ -86,6 +87,6 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

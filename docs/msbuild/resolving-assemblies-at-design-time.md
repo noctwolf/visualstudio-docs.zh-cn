@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7ce11fb27959f5d468e08f6967b53ac079a2a28e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3db59c3cb9234231a5a5fe4f881857433ab09479
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resolving-assemblies-at-design-time"></a>在设计时解析程序集
 当通过“添加引用”对话框的“.NET”选项卡添加对程序集的引用时，引用将指向一个中间引用程序集；所谓中间引用程序集，是指包含所有类型和签名信息但不一定包含任何代码的程序集。 .NET 选项卡列出 .NET Framework 中运行时程序集对应的引用程序集。 此外，它还列出第三方使用的注册 AssemblyFoldersEx 文件夹中运行时程序集所对应的的引用程序集。  
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/31/2017
   
  .NET Framework SDK 现在附带的目标包中具有该版本 Framework 中所有运行时程序集的列表，即再分发 (redist) 列表。 因此，生成系统不可能针对错误版本的程序集解析类型。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [高级概念](../msbuild/msbuild-advanced-concepts.md)

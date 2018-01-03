@@ -22,11 +22,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52e3714249ceabd79a490a084fe44d4d1a69fcf4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 891204811a0c27471e8ab4be315da14be4b80794
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 指定一个文件，用于在运行、生成、重新生成或部署解决方案时存储和显示错误。  
@@ -37,9 +38,9 @@ ms.lasthandoff: 10/31/2017
 devenv /out FileName  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `FileName`  
- 必需。 用于在生成可执行文件时接收错误的文件的路径和名称。  
+ 必须的。 用于在生成可执行文件时接收错误的文件的路径和名称。  
   
 ## <a name="remarks"></a>备注  
  如果指定的文件名不存在，则会自动创建该文件。 如果该文件已存在，则结果会附加到该文件的现有内容中。  
@@ -53,7 +54,7 @@ devenv /out FileName
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)   
  [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   

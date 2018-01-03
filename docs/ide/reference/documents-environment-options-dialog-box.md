@@ -36,11 +36,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7d9f7cef6c0dfa35a4a718c0918fbc55409af04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c89e8b018fa0979fe4c73f5cd9e0db95efd88d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="documents-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“文档”
 使用“选项”对话框的此页，可以控制文档在集成开发环境 (IDE) 中的显示，并管理对文档和文件的外部更改。 通过在“工具”菜单上单击“选项”，然后在“环境”节点中选择“文档”，即可访问此对话框。 如果“文档”未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
  **不能以代码页的形式保存数据时将文档保存为 Unicode**  
  如果选择此选项，则默认情况下，将包含与选定代码页不兼容信息的文件另存为 Unicode。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)   
  [杂项文件](../../ide/reference/miscellaneous-files.md)   
  [查找和替换文本](../../ide/finding-and-replacing-text.md)

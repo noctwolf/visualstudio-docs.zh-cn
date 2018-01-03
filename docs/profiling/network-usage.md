@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 412b6c2a1dede7438fd5c1564229a0e67f5cf845
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: de821b0c2e073104ae07abfcccff9ccce56fd3d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP 应用中的网络使用情况
 Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http API](/uwp/api/windows.web.http) 执行的网络操作的数据。 分析数据可以帮助你解决问题（如访问和身份验证问题、不正确的缓存用法和不良的显示和下载性能）。  
@@ -73,7 +74,7 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
   
 3.  响应整齐打印按钮（位于“正文”选项卡内）可通过提高内容的可读性帮助你分析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 响应负载。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [运行带/不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio 博客：Visual Studio 网络检查器简介](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [第 9 频道视频：VS 诊断工具 – 新的网络探查器](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  

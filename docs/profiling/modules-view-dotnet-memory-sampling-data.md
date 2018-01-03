@@ -13,20 +13,21 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f572075106d815a791ca59fa2b35a31918f02bd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 32eb0b4e34edde03cd455384d7b1c6d36e0365c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>“模块”视图 - .NET 内存采样数据
 使用采样方法收集的 .NET 内存分配数据的“模块”视图按分析运行期间执行的模块对内存数据进行分组。 每个模块都是一个层次结构树的根。 模块的各函数在模块节点下列出。  
   
  分配内存的语句的源文件行号在 函数节点下列出，执行分配的指令的地址在行节点下列出。 非独占和独占值始终对于行数据和指令数据始终是相同的。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
-|**Name**|模块、函数、行号或指令地址的名称。|  
+|**名称**|模块、函数、行号或指令地址的名称。|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
 |**模块名**|函数所在模块的名称。|  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 |**独占字节数**|-   对于函数，是此函数分配的字节总数。 此数值不包括此函数调用的函数中分配的字节数。<br />-   对于模块，是此模块中函数分配的独占字节数之和。<br />-   对于行或指令，是此行或指令分配的对象的总数。|  
 |**独占字节数百分比**|分析运行期间分配的属于模块、函数、行或指令的独占字节的所有字节数的百分比。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“模块”视图 - 检测](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [“模块”视图](../profiling/modules-view-sampling-data.md)   

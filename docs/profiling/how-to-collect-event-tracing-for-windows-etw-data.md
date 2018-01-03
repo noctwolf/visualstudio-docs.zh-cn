@@ -17,11 +17,12 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66ad7c937ba6c3845e905abea31f4525198f8389
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: a720bf57c8668d956a1036d73a264a4936142cd4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>如何：收集 Windows 事件跟踪 (ETW) 数据
 Windows 事件跟踪 (ETW) 是有效的内核级别跟踪工具，该工具可启用探查器日志内核或应用程序定义的事件。 从事件提供程序收集的数据只能使用 [VSPerfReport](../profiling/vsperfreport.md) 命令行工具的 /**Summary:ETW** 选项进行查看。 此报表可用于确定应用程序中出现性能问题的位置。  
@@ -41,5 +42,5 @@ Windows 事件跟踪 (ETW) 是有效的内核级别跟踪工具，该工具可�
   
 3.  在“选择从中收集数据的事件跟踪提供程序”列表中，选择要用来分析应用程序的事件提供程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)

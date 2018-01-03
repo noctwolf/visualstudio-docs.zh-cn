@@ -16,11 +16,12 @@ ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 443c3fe0ece064993655895606ad8603b96f6286
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d1b4889ac9dc5ad4ca70c054c7a0698cd44174ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-assert-classes"></a>使用 Assert 类
 使用 UnitTestingFramework 命名空间的 Assert 类来验证特定功能。 单元测试方法会执行开发代码中的方法代码，但只有包含 Assert 语句时，它才会报告代码行为的正确性。  
@@ -59,6 +60,6 @@ ms.lasthandoff: 10/27/2017
   
  如果想要让测试方法验证期望由开发代码中的方法引发的异常确实是在该方法中引发的，请使用 ExpectedExceptionAttribute 属性修饰测试方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
  [为现有代码创建和运行单元测试](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)

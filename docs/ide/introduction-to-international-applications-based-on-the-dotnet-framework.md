@@ -29,11 +29,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bfebe7cfcaff34742db902d50b6de424a6794ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 9acc8f2e015b6ca2ad26881eeb1f53012d96e56d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>介绍基于 .NET Framework 的国际应用程序
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，世界通用的应用程序的创建包括两个部分：全球化（设计可以适应不同区域性的应用程序的过程）和本地化（为特定区域性转换资源的过程）。 有关为国际受众设计应用程序的常规信息，请参阅[开发全球通用应用程序的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
  执行本地化应用程序时，其外观由两个区域性值确定。 （区域性是一组与用户语言、环境和区域性惯例相关的用户首选项信息。）UI 区域性设置确定将加载哪些资源。 UI 区域性在 Web.config 文件和页面指令中设置为 `UICulture`，在 Visual Basic 或 Visual C# 代码中设置为 <xref:System.Globalization.CultureInfo.CurrentUICulture%2A>。 区域性设置确定值的格式，如日期、数字、货币等。 区域性在 Web.config 文件和页面指令中设置为 `Culture`，在 Visual Basic 或 Visual C# 代码中设置为 <xref:System.Globalization.CultureInfo.CurrentCulture%2A>。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Globalization>   
  <xref:System.Resources>   
  [对应用程序进行全球化和本地化](../ide/globalizing-and-localizing-applications.md)   

@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c88c90fcc150187bd10e3100cd703522f86bc191
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 8cd00fe33cf463227dd09f93047350a96cee3b92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>在 Visual Studio 中使用 Python
 
@@ -31,14 +32,14 @@ Windows 上的 Visual Studio 通过 Python 开发和数据科学工作负载 (Vi
 - 按照[在 Visual Studio 中使用 Python](vs-tutorial-01-01.md) 教程操作，获得完整的端到端体验。
 - 然后使用下方链接了解与 Python 相关的功能，以及 Visual Studio 本身的功能。
 
-| 功能 | 说明 | Visual Studio 常规文档 | 
+| 功能 | 描述 | Visual Studio 常规文档 | 
 | --- | --- | --- |
 | [Visual Studio 项目系统](python-projects.md) | 隐式选取 Python 代码的文件夹结构，同时允许显式控制以便标识应用代码、测试代码、网页、JavaScript、生成脚本等等。 | [Visual Studio 中的解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md) |
 | [项目模板](python-projects.md#project-templates) | 快速创建用于控制台、Web、Azure、数据科学和其他类型项目的项目结构 | [Visual Studio 模板](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
-| 多个解释器支持 | 支持各种版本的 CPython 和 IronPython。 | 无 |
-| IPython 支持 | 包括对内联图的 REPL 中的 IPython/Jupyter 的支持以及对.NET 和 Windows Presentation Foundation (WPF) 的支持。 | 无 |
+| 多个解释器支持 | 支持各种版本的 CPython 和 IronPython。 | 不可用 |
+| IPython 支持 | 包括对内联图的 REPL 中的 IPython/Jupyter 的支持以及对.NET 和 Windows Presentation Foundation (WPF) 的支持。 | 不可用 |
 | [多种多样的编辑、IntelliSense 和代码理解](code-editing.md) | 包括语法着色、跨所有代码和库的自动完成、[代码格式设置](code-formatting.md)、签名帮助、类视图、转到定义、查找所有引用、代码片段、[重构](code-refactoring.md)、[PyLint](code-pylint.md)等等。 | [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [交互窗口](interactive-repl.md) | 能够轻松突出显示代码的某一部分，然后将其发送到交互窗口，为 Python 提供快速的 REPL 体验。 | 无 |
+| [交互窗口](interactive-repl.md) | 能够轻松突出显示代码的某一部分，然后将其发送到交互窗口，为 Python 提供快速的 REPL 体验。 | 不可用 |
 | [功能完备的调试](debugging.md) | 无论有无 Visual Studio 项目，均可完成调试，包括可对现有可执行文件进行调试、[Python/C++ 混合模式调试](debugging-mixed-mode.md)、对 Windows/Linux/Mac 进行[远程调试](debugging-cross-platform-remote.md)、[对 Azure 进行远程调试](debugging-azure-remote.md)，以及在交互窗口中进行调试。 | [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md) |
 | [具有丰富报表的分析工具](profiling.md) | 了解应用程序中所用的时间，包括比较不同分析运行之间的性能差异。 | [分析工具](../profiling/profiling-tools.md)（并非所有 Visual Studio 分析功能都可用于 Python） |
 | [单元测试工具](unit-testing.md) | 在 Visual Studio 测试资源管理器中发现、运行和管理测试，并且可轻松调试单元测试。 | [单元测试代码](../test/unit-test-your-code.md) |

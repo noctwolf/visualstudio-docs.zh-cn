@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 437809decb9e7cc96faa1b582fe466e83f2a33fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d691c4ce5b617527cb48a2de2bec42c680078167
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>多处理器环境下的日志记录
 MSBuild 使用多个处理器的能力可以显著缩短项目生成时间，但同时会增加日志记录的复杂性。 在单处理器环境下，记录器可以用可预测的顺序方式处理传入的事件、消息、警告和错误。 但在多处理器环境下，来自多个源的事件可能同时到达或以无序方式到达。 MSBuild 提供了可以识别多处理器的新记录器，并允许创建自定义“转发记录器”。  
@@ -73,6 +74,6 @@ Culture=neutral
   
  用星号 (*) 来分隔 `/dl` 开关中的两个记录器名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [生成记录器](../msbuild/build-loggers.md)   
  [创建转发记录器](../msbuild/creating-forwarding-loggers.md)

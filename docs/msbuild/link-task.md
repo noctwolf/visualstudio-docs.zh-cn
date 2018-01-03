@@ -34,11 +34,12 @@ caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 48cf258dbe267a6e2c2b020ee6613b4dac05b2eb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7eb9e861898c0874388f9acb4f061a8e902fef1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="link-task"></a>Link 任务
 包装 Visual C++ 链接器工具 link.exe。 链接器工具将通用对象文件格式 (COFF) 对象文件和库链接起来，以创建可执行 (.exe) 文件或动态链接库 (DLL)。 有关详细信息，请参阅[链接器选项](/cpp/build/reference/linker-options)。  
@@ -926,5 +927,5 @@ ms.lasthandoff: 10/31/2017
   
      有关详细信息，请参阅 [/VERSION（版本信息）](/cpp/build/reference/version-version-information)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)

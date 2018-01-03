@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f7fd3846f98149afd7c00924464da2459deb715
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 723b7a0eb4d01795853c3cf0144bfd17d3609891
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wincounter"></a>WinCounter
 **WinCounter** 选项指定在分析运行过程中以设定时间间隔收集的 Windows 性能计数器或应用程序性能计数器。 Windows 性能计数器和应用程序性能计数器在分析数据文件中列为标记。 可以用单独的选项指定多个要收集的性能计数器。  
@@ -56,7 +57,7 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

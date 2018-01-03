@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 58032ea7c1c15de794b5374017e84f07434d8310
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ed1fee60a7cda6d260833ba60d37a7a7a762d58e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="when-element-msbuild"></a>When 元素 (MSBuild)
 指定一个可能的代码块供 `Choose` 元素选择。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|可选元素。<br /><br /> 评估子元素以选择代码的一部分来执行。 `Choose` 元素中可能有零个或零个以上的 `When` 元素。|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|可选元素。<br /><br /> 包含一组用户定义的 [Item](../msbuild/item-element-msbuild.md) 元素。 `ItemGroup` 元素中可能有零个或零个以上的 `When` 元素。|  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Choose 元素 (MSBuild)](../msbuild/choose-element-msbuild.md)|评估子元素以选择代码的一部分来执行。|  
 
@@ -125,6 +126,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [条件构造](../msbuild/msbuild-conditional-constructs.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)

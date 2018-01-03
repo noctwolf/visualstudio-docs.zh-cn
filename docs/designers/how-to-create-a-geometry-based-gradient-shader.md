@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3eeb080af73966b48cf8be543faa4276ae3b438c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7d46fe01947e7f2813ae7eea8df81ae0b35f4f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>如何：创建基于几何图形的渐变着色器
 本文档演示如何使用着色器设计器和有向图着色器语言 (DGSL) 创建基于几何图形的渐变着色器。 此着色器将常量 RGB 颜色值按照世界空间中对象的每个点的高度进行缩放。  
@@ -71,7 +72,7 @@ ms.lasthandoff: 10/31/2017
   
  若要深入了解如何将向三维模型应用着色器，请参阅[如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：导出着色器](../designers/how-to-export-a-shader.md)   
  [如何：构建三维地形模型](../designers/how-to-model-3-d-terrain.md)   

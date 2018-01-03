@@ -18,11 +18,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: ec1c20ae334e81724af1b8d4e2b25d755a024bdc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f0d0250e2810adc8fd79239aa8e0807b04bbf0a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：创建数据驱动的单元测试
 将 Microsoft 单元测试框架用于托管代码，可以设置单元测试方法从数据源中检索测试方法中使用的值。 针对数据源中的每一行连续运行此方法，这样就可以使用一种方法轻松地测试各种输入。  
@@ -182,7 +183,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
   
  当更正了要测试的方法，并重新运行测试，则结果栏变为绿色，并且测试方法移动到“通过的测试”组中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   

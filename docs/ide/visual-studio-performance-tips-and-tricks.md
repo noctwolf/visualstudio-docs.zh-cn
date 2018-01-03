@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 936d0df8c838227c5d6c99b0f04f1069eae8a277
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 519bb7b70737e4c3e2d6e80f19a056b4cd385980
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -124,5 +125,5 @@ CLR 使用垃圾回收内存管理系统。 在此系统中，内存有时会被
 
 有关 CLR 垃圾回收器的详细描述，请参阅 [Fundamental of Garbage Collection](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx)（垃圾回收的基本原理）。
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio IDE](../ide/index.md)

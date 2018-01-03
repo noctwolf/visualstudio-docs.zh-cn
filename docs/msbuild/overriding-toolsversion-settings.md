@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5072e552d0e8527caeb95edc65d8717bece036c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7156ca7c69d0704c889a1c21ec13242f3e92edc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overriding-toolsversion-settings"></a>重写 ToolsVersion 设置
 可使用以下三种方式之一来更改项目和解决方案的工具集：  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
 3.  设置解决方案中某个项目的 `$(ProjectToolsVersion)` 参数。 使用此方法，可以在解决方案中使用不同于其他项目的工具集版本生成项目。  
   
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>在命令行生成上替代项目和解决方案的 ToolsVersion 设置  
- 虽然 Visual Studio 项目通常使用在项目文件中指定的 ToolsVersion 生成，但也可以使用命令行上的 `/ToolsVersion`（或 `/tv`）开关来替代该值，并用不同的工具集来生成所有项目及其项目到项目依赖项。 例如：  
+ 虽然 Visual Studio 项目通常使用在项目文件中指定的 ToolsVersion 生成，但也可以使用命令行上的 `/ToolsVersion`（或 `/tv`）开关来替代该值，并用不同的工具集来生成所有项目及其项目到项目依赖项。 例如:  
   
 ```  
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
@@ -126,7 +127,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     4.  否则，使用当前 `ToolsVersion`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [多目标](../msbuild/msbuild-multitargeting-overview.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   

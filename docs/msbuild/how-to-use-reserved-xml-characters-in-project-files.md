@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8acc59afdd050998f2269cc9be1986b7f4f426ae
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: eb747b60c575aa1e49b559d3cf4a73b649808041
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>如何：在项目文件中使用保留的 XML 字符
 在创作项目文件时，可能需要使用保留的 XML 字符，例如在属性值或任务参数值中。 但是，某些保留字符必须替换为命名实体，以便可以分析项目文件。  
@@ -73,6 +74,6 @@ ms.lasthandoff: 12/11/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 参考](../msbuild/msbuild-reference.md)    
  [MSBuild](../msbuild/msbuild.md)    

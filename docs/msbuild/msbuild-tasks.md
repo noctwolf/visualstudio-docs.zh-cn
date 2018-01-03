@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: fc2afbe7b0226cb5983aa3022ff4b24ac31fe7aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6a03a05dd2d72b6733b0936849f218b3358f15cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-tasks"></a>MSBuild 任务
 生成平台需要能够在生成过程中执行任意数量的操作。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 使用 *任务* 以执行这些操作。 任务是由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 用于执行原子生成操作的可执行代码单元。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="overridden-tasks"></a>覆盖的任务  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 在多个位置查找任务。 第一个位置位于存储在 .NET Framework 目录中扩展名为 .OverrideTasks 的文件中。 这些文件中的任务会覆盖具有相同名称的其他任何任务，包括项目文件中的任务。 第二个位置位于 .NET Framework 目录中扩展名为 .Tasks 的文件中。 如果在这些位置中找不到任务，则会使用项目文件中的任务。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild](../msbuild/msbuild.md)   
  [任务写入](../msbuild/task-writing.md)   

@@ -21,11 +21,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 23289047783eefb6c4ebe3c29b9e372cd5aae695
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 3cd68fa71bf201c7a2ac05fd7881b216cbca0938
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>“编译”页, 项目设计器 (Visual Basic)
 使用项目设计器的“编译”页来指定编译指令。 此外，还可在此页上指定高级编译器选项以及预先生成或后期生成的事件。  
@@ -167,7 +168,7 @@ Option infer
 **高级编译选项**  
 单击此按钮，访问“高级编译器设置”对话框。 使用“高级编译器设置”对话框，指定项目的高级生成配置属性。 此对话框仅适用于 Visual Basic 项目。 有关详细信息，请参阅[“高级编译器设置”对话框 (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
  [管理编译属性](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
  [如何：指定生成事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   

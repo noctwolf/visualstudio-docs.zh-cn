@@ -12,11 +12,12 @@ ms.assetid: 5be92444-c701-43c7-8b2a-77df8e02bc27
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 281cf7b876c67d3c9eefa0aa7a56621de1ea791c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7a50c075effd8c1bb63bd56b7fab04a7509d23e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrade-scvmm-2008-r2-to-scvmm-2012"></a>将 SCVMM 2008 R2 升级到 SCVMM 2012
 
@@ -57,6 +58,6 @@ Team Foundation Server 的实验室管理工具版支持 SCVMM 2008 R2 和 SCVMM
 
 **SCVMM 失败：**如果遇到与 SCVMM 失败相关的错误，请使用 SCVMM 作业历史记录获取有关该错误的详细信息。 解决 SCVMM 中的错误后，重新运行 upgradeSCVMM 命令。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 * [更改现有的实验室管理工具版配置](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)

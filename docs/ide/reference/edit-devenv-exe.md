@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05a43cbe880244da1abbb117d23fd928c60da9b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 34b256a788f2ce8077d7f62921a63565f210139a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的现有实例中打开指定文件。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 Devenv /edit [file1[ file2]]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `file1`  
  可选。 要在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的现有实例中打开的文件。 如果不存在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的实例，使用简化窗口布局创建新实例，并在新实例中打开 `file1`。  
   
@@ -49,5 +50,5 @@ Devenv /edit [file1[ file2]]
 devenv /edit MyFile.cs  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)

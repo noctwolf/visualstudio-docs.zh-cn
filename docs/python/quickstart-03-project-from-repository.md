@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3ea3afdaa6a7a29bc85c46b6eff0f15c5c91c046
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 5ce79d4e8ff2056b5d713eaa781b22359141c9b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入门：在 Visual Studio 中克隆 Python 代码存储库
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/01/2017
 
 7. 从菜单中选择“视图”>“解决方案资源管理器”。
 
-8. 在解决方案资源管理器中，展开 `python3` 节点，右键单击 `contemplate_koans.py`，然后选择“设为启动文件”。 此步骤指示 Visual Studio 在运行项目时应使用哪个文件。
+8. 在解决方案资源管理器中，展开 `python3` 节点，右键单击 `contemplate_koans.py`，然后选择“设置为启动文件”。 此步骤指示 Visual Studio 在运行项目时应使用哪个文件。
 
 9. 从菜单中选择“项目”>“属性”，选择“常规”选项卡，将“工作目录”设置为“python3”。 此步骤是必需的，因为 Visual Studio 默认将工作目录设置为项目根目录，而非启动文件所在的位置（`python3\contemplate_koans.py`，也可以在项目属性中看到）。 程序代码会在工作文件夹中查找文件 `koans.txt`，因此不更改此值会导致运行时错误。
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 12/01/2017
 > [!div class="nextstepaction"]
 > [教程：在 Visual Studio 中使用 Python](vs-tutorial-01-01.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [为现有 Python 解释器创建环境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
 - [在 Visual Studio 2015 及更早版本中安装 Python 支持](installation.md)。

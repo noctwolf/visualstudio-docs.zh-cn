@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87c483cea9b174e330cd951d55eb287807d8262a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 13243c0f7d0553b386d1a890e4d2be0272e9a27a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="args"></a>参数
 VSPerfCmd.exe **参数**选项指定传递给 **Launch** 子命令的目标应用程序的参数列表。  
@@ -45,7 +46,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

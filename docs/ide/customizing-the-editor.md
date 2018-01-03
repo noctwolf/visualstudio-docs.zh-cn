@@ -14,11 +14,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4938949fa050770acb3473de4aed3ff913882323
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 1efd5c84459c6902073dad2b2b8ebcd5b034c0ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-the-editor"></a>自定义编辑器
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/22/2017
 
 ## <a name="see-also"></a>请参阅
 
-[快速入门：个性化 Visual Studio IDE 和编辑器](../ide/quickstart-personalize-the-ide.md)  
+[快速入门：个性化设置 Visual Studio IDE 和编辑器](../ide/quickstart-personalize-the-ide.md)  
 [编写代码](../ide/writing-code-in-the-code-and-text-editor.md)  
 [在代码中设置书签](../ide/setting-bookmarks-in-code.md)  
 [“选项”对话框 ->“环境”->“常规”](../ide/reference/general-environment-options-dialog-box.md)  

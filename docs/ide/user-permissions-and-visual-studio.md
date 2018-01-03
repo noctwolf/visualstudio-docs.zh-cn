@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e044e3d89f7cbaae28ff0fd3cefe1c6fe4583c65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3cf223b0b4d2f8ca710a5d5fdb349c7a423b1b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 出于安全目的，你应尽可能以普通用户的身份来运行 Visual Studio。  
@@ -68,6 +69,6 @@ ms.lasthandoff: 10/31/2017
 
      Visual Studio 启动时，标题栏的产品名后显示“(管理员)”。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [安装 Visual Studio](../install/install-visual-studio.md)

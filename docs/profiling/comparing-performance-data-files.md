@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 586665565126dc67fe3fbeb7d3eda3e7061e4650
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 734d0531cf1fbbbc2f7924cb1743cabf9e4a9578
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="comparing-performance-data-files"></a>比较性能数据文件
 凭借分析工具数据文件比较功能，可以选择两个报表文件（.VSP 或 .VSP）文件，然后生成显示从一个分析会话到另一个分析会话出现的差异、性能回归和改进。  

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 76c5661f9f911c2a5ce78a5e18d9675281ef3eeb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b26b76d3370d41a8d8d1b6d449922a955f2668c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-transforms"></a>MSBuild 转换
 转换是指采用一对一的方式将一个项列表转换为另一项列表。 通过转换，不仅项目可以转换项列表，而且目标还可以标识其输入和输出之间的直接映射。 本主题介绍转换以及 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 如何使用转换更有效地生成项目。  
@@ -108,7 +109,7 @@ relativedir: sub1\sub2\sub3\
 extension: .xsd  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)   
  [如何：增量生成](../msbuild/how-to-build-incrementally.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb10ac11fc49ce4ca6137e9749e802563de2a0e5
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: c78ba45fda91650b5b7deb37ce9fd5dabbee6fb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---sampling-data"></a>“摘要”视图 - 采样数据
 “摘要”视图显示有关分析运行中性能开销最大的函数的信息。 有关详细信息（包括通知链接和报告列表的说明），请参阅[“摘要”视图](../profiling/summary-view.md)。  
@@ -35,9 +36,9 @@ ms.lasthandoff: 11/11/2017
   
  “热路径”包含每个函数的以下数据：  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
-|**Name**|函数名。|  
+|**名称**|函数名。|  
 |**非独占样本数百分比**|此函数或此函数调用的函数执行时发生的样本占所有样本的百分比。|  
 |**独占样本数百分比**|此函数在函数体中执行代码时发生的样本占所有样本的百分比。 不包含此函数调用的函数中收集的样本。|  
   
@@ -48,11 +49,11 @@ ms.lasthandoff: 11/11/2017
   
  “执行单个工作最多的函数”包含每个函数的以下数据：  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
-|**Name**|函数名。|  
+|**名称**|函数名。|  
 |**独占样本数百分比**|此函数在其函数体中执行代码时收集的样本数占分析运行中的所有样本数的百分比。 此百分比不包含在此函数调用的函数执行时收集的样本。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“摘要”视图](../profiling/summary-view-dotnet-memory-data.md)   
  [“摘要”视图](../profiling/summary-view-instrumentation-data.md)

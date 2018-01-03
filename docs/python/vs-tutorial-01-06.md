@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-ms.assetid: c7eece8d-9cd3-467e-9c95-0baf0861d93e
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: f3ec53dca226929b82b3edf6671a654f851f5700
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: 46048b135dc0023e2a7b918b72ec226af3ed22b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-working-with-git"></a>步骤 6：使用 Git
 
@@ -48,7 +48,6 @@ Visual Studio 提供与本地 Git 存储库以及驻留在 GitHub 和 Visual Stu
 ## <a name="going-deeper"></a>深入了解
 
 有关使用 Git 的更广泛的教程，请参阅[与 Visual Studio 2017 和 VSTS Git 共享代码](https://docs.microsoft.com/vsts/git/share-your-code-in-git-vs-2017)
-
 
 ## <a name="tutorial-review"></a>教程回顾
 

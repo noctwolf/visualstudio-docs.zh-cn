@@ -12,11 +12,12 @@ ms.assetid: EBAA2E04-A97A-4047-B739-8DBA7F2D5074
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: fdcca04c9dd06132496912f4df30e3d86d24d42a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 15a2852d657e1c10652d99c25401db5ab76a2feb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-and-configure-test-agents"></a>安装和配置测试代理
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/27/2017
 
 **安装测试控制器和测试代理有什么系统要求？**
 
-| 项 | 要求 |
+| 项 | 惠? |
 | ---- | ------------ |
 | **代理** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows XP Service Pack 3<br />Windows Server 2012、Windows Server 2012 R2<br />Windows Server 2008 Release 2，Service Pack 1 |
 | **控制器** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2012、Windows Server 2012 R2<br />Windows Server 2008 Release 2，Service Pack 1 |
@@ -87,6 +88,6 @@ A：建议在所有新的自动测试方案中都使用 Agents for Visual Studio
 
 <!-- ENDSECTION -->
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 * [使用测试设置来设置计算机和收集诊断信息](https://msdn.microsoft.com/library/dd286743%28v=vs.140%29.aspx)

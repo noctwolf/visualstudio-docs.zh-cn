@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6870313900da464bb2e8a9ae7facfea8c87b72d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 76485b85ffcf44ef94e116350ca8c7a3dc371bf8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-cc-advanced"></a>选项，文本编辑器，C/C++，高级
 通过更改这些选项，你可以在用 C 或 C++ 进行编程时更改与 IntelliSense 和浏览数据库有关的行为。  
@@ -165,5 +166,5 @@ ms.lasthandoff: 10/31/2017
  **启用展开优先级**  
  如果启用，你可以用括号将所选文本括起来，方法是在文本编辑器中输入“(”。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [设置语言特定的编辑器选项](../../ide/reference/setting-language-specific-editor-options.md)

@@ -12,11 +12,12 @@ ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a4ac0c709f2b7f9dfded7c6781dda9831e457fa5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4cfc07cb77e1db595d1b381b1097dcfcba0abdab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 的辅助功能提示和技巧
 > [!TIP]
@@ -89,7 +90,7 @@ Visual Studio 编辑器包括很多文本“修饰”，比如灯泡、错误和
 
   ![Windows 10 中声音小程序的“声音”选项卡](media/sound-applet.png "在搜索结果中双击“更改系统声音”")
 
-4. 单击“确定”。
+4. 单击 **“确定”**。
 
 
 

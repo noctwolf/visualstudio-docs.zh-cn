@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01870b4b687fc353c2e94d8e08ce57555cfc31f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ae5470e92a3583ebc5cc18edb1c1662f155c41cd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>如何：开始和结束性能数据收集
 启动分析之前，必须将要分析的目标二进制文件添加到性能会话中。 若要添加目标，请在“性能资源管理器”中右键单击“目标”，然后单击“添加目标二进制文件”。 在“添加目标二进制文件”对话框中，选择文件名，然后单击“打开”。 将添加一个新的二进制文件。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
   
 -   结束分析会话的首选方法是退出应用程序。 若要立即停止分析，请在“性能资源管理器”工具栏上单击“停止”。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [控制数据收集](../profiling/controlling-data-collection.md)   
  [如何：暂停和恢复性能数据收集](../profiling/how-to-pause-and-resume-performance-data-collection.md)

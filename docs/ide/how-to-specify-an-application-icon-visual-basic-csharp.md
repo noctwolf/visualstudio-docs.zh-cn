@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 17cce04dd94829225823de676e286b7d0158abec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: ce92aef6f676cbdd35142f058312af90581900c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>如何：指定应用程序图标（Visual Basic、C#）
 项目的 `Icon` 属性指定将针对已编译应用程序在文件资源管理器和 Windows 任务栏中显示的图标文件 (.ico)。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
      **C#** 在“图标”列表附近，选择“\<浏览...>”按钮，然后浏览到所需图标文件的位置。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [应用程序页、项目设计器 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [应用程序页、项目设计器 (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [管理应用程序属性](../ide/application-properties.md)  

@@ -27,11 +27,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 85881bf35fb89f753eb4110d7b1128b4761a73a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 596e9e6dfa5f7fb464430636f696e37748ccb8eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>在 Visual Studio 中自定义窗口布局
 在 Visual Studio 中，你可以自定义窗口的位置、大小和行为，以为各种开发工作流创建最佳窗口布局。 自定义布局时，IDE 会记住它。 例如，如果你更改了 **“解决方案资源管理器”** 的停靠位置然后关闭 Visual Studio，则下次启动时（即使在另一台计算机上工作）， **“解决方案资源管理器”** 将停靠在相同位置。 还可以为自定义布局命名并将其保存，并通过单个命令在各布局间切换。 例如，可以创建一个用于编辑的布局和另一个用于调试的布局，并通过使用“窗口”|“应用窗口布局”菜单命令在二者之间切换。  

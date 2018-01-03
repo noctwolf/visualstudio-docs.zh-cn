@@ -29,11 +29,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f732a23631de181524382914e954ad50a7f0385d
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bd95d18cfbf1ce04c1178a0befbc8cbf7613862e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="file-properties-javascript"></a>文件属性，JavaScript
 文件属性可用于指示项目系统应对文件执行的操作。 例如，可以设置文件属性，指示是否应将文件作为资源文件添加到包。  
@@ -95,5 +96,5 @@ ms.lasthandoff: 11/02/2017
 ### <a name="version"></a>版本  
  显示引用的版本。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理项目和解决方案属性](../../ide/managing-project-and-solution-properties.md)

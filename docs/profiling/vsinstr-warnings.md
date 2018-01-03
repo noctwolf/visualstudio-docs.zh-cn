@@ -18,16 +18,17 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4ef9833b61a88fe45d9293cd036a52ce74788d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 25156aa6087e5ce1b00e1a4230d4fbf42ef75513
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出了由 VSInstr.exe 工具发出的警告。 可使用 NOWARN 选项及警告编号来禁止显示警告。  
   
-|警告编号|说明|  
+|警告编号|描述|  
 |--------------------|-----------------|  
 |**VSP2000**|内部错误。 无法获取此可执行文件的模块文件名。|  
 |**VSP2001**|\<程序集名称> 是强名称程序集。 必须先对其重新签名，然后才能执行它。<br /><br /> 当检测到签名程序集时，将发出此警告。 可使用 sn.exe 工具重新签名二进制，或暂时关闭强名称要求。 有关详细信息，请参阅 [Sn.exe （强名称工具）](/dotnet/framework/tools/sn-exe-strong-name-tool)。|  
@@ -45,5 +46,5 @@ ms.lasthandoff: 10/31/2017
 |**VSP2013**|检测此映像需要它以 32 位进程运行。 已更新了 CLR 标头标志以反映这一情况。<br /><br /> 探查器修改二进制文件，以便 64 位操作系统可以在 WOW64 仿真器中打开 32 位进程。 对于库 (DLL)，如果是在现有 64 位进程中加载这些库，则上述操作可能失败。 此警告会向用户通知依赖项。|  
 |**VSP2014**|检测后得到的映像似乎无效，可能无法运行。<br /><br /> 当最终检测程序集具有无效的 PE 头时，将出现此消息。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSInstr](../profiling/vsinstr.md)

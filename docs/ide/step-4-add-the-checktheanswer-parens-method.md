@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: efa83606dd7ef00cb82ea0d139a7238f0425664c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 49ef6cd4456f920fed0eb612da0e0a81368f6be5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>步骤 4：添加 CheckTheAnswer() 方法
 在本教程的第 4 部分中，您将编写一个方法 `CheckTheAnswer()`，用于判定数学题的答案是否正确。 本主题是基本编码概念教程系列中的一部分。 有关本教程的概述，请参阅[教程 2：创建计时数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)。  

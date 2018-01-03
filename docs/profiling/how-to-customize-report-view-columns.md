@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e80bd33d9351c6b2dd5ce65d327e6cdb40fc70a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5e5e83629bdb2b93db3a34ba577da4df84b119cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-report-view-columns"></a>如何：自定义报告视图列
 Visual Studio Team System Development Edition 中的性能工具与集成开发环境 (IDE) 全面集成，旨在提供无缝的用户体验。 下表显示了可通过添加、删除和重新排列列自定义的视图：  
@@ -57,4 +58,4 @@ Visual Studio Team System Development Edition 中的性能工具与集成开发�
   
 4.  单击箭头按钮对列重新排序。  
   
-5.  单击“确定”。
+5.  单击 **“确定”**。

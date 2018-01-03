@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5aff5914d9b278b206f81abd4f28ce9f4dfa409c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2458203cdaa23509e35c61eb71a9e9cfa6e214ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 Visual Studio 承载有 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用以加载和生成托管项目。 由于 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 负责处理项目，因此，可以在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中成功使用几乎任何 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]格式的项目（即使项目是用另一种工具编写的，而且这些项目有自定义的生成过程）。  
@@ -125,7 +126,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  为了查找和启动输出程序集并附加调试器， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 需要正确定义属性 `OutputPath`、 `AssemblyName`和 `OutputType` 。 如果生成过程没有导致编译器生成 .pdb 文件，则调试器将无法附加。  
   
 ## <a name="design-time-target-execution"></a>设计时目标执行  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 加载项目时，它将尝试执行具有某些名称的目标。 这些目标包括 `Compile`、 `ResolveAssemblyReferences`、 `ResolveCOMReferences`、 `GetFrameworkPaths`和 `CopyRunEnvironmentFiles`。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将运行这些目标，以便可以执行以下操作：初始化编译器以提供 IntelliSense，初始化调试器，以及解析在解决方案资源管理器中显示的引用。 如果这些目标不出现，项目将正确加载和生成，但是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的设计时体验将不会完全有效。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 加载项目时，它将尝试执行具有某些名称的目标。 这些目标包括 `Compile`、`ResolveAssemblyReferences`、`ResolveCOMReferences`、`GetFrameworkPaths` 和 `CopyRunEnvironmentFiles`。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将运行这些目标，以便可以执行以下操作：初始化编译器以提供 IntelliSense，初始化调试器，以及解析在解决方案资源管理器中显示的引用。 如果这些目标不出现，项目将正确加载和生成，但是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的设计时体验将不会完全有效。  
   
 ##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  若要直接编辑 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目，你可以在 Visual Studio XML 编辑器中打开项目文件。  
@@ -153,7 +154,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将缓存项目文件和由项目文件导入的文件的内容。 如果编辑已加载的项目文件， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将自动提示你重新加载项目，以使更改生效。 但是，如果编辑由已加载的项目导入的文件，则没有重新加载的提示，并且你必须手动卸载并重新加载项目，以使更改生效。  
   
 ## <a name="output-groups"></a>输出组  
- Microsoft.Common.targets 中定义的一些目标的名称以 `OutputGroups` 或 `OutputGroupDependencies`结尾。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调用这些目标以获取项目输出的特定列表。 例如， `SatelliteDllsProjectOutputGroup` 目标创建将由一次生成过程创建的所有附属程序集的列表。 诸如发布、部署和项目到项目引用这样的功能将使用这些输出组。 没有定义它们的项目仍然可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中加载和生成，但是某些功能可能无法正常工作。  
+ Microsoft.Common.targets 中定义的一些目标的名称以 `OutputGroups` 或 `OutputGroupDependencies`结尾。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调用这些目标以获取项目输出的特定列表。 例如，`SatelliteDllsProjectOutputGroup` 目标创建将由一次生成过程创建的所有附属程序集的列表。 诸如发布、部署和项目到项目引用这样的功能将使用这些输出组。 没有定义它们的项目仍然可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中加载和生成，但是某些功能可能无法正常工作。  
   
 ## <a name="reference-resolution"></a>引用解析  
  引用解析是使用项目文件中存储的引用项来查找实际程序集的过程。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 必须触发引用解析，才能在 **“属性”** 窗口中显示每个引用的详细属性。 下面的列表描述了三种类型引用和如何解析它们。  
@@ -181,7 +182,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  对于 Visual Studio 中的常规生成，将不适用快速更新检查，项目的生成就像在命令提示符处调用生成一样。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：扩展 Visual Studio 生成过程](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [在 IDE 中启动生成](../msbuild/starting-a-build-from-within-the-ide.md)   
  [注册 .NET Framework 的扩展](../msbuild/registering-extensions-of-the-dotnet-framework.md)   

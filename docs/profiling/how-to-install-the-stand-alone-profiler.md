@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0799a5da2b1596c79a57a6960283c62fca709a8a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf0c454e649f45975a4d45300923dbd155511136
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>如何：安装独立探查器
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供了一个基于命令行的独立探查器，它可在没有安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 的情况下运行。 当计算机没有安装或无法安装开发环境时会发生这种情况。 例如，不应在生产 Web 服务器上安装开发环境。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  使用 [VSPerfReport](../profiling/vsperfreport.md) 工具将符号串行化到分析数据 (.vsp) 文件中。 使用 VSPerfReport /summary:all /packsymbols 开关。 如果数据文件中未插入符号，请确保设置了 _NT_SYMBOL_PATH 环境变量。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [从命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [演练：使用采样进行命令行分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
  [演练：使用检测进行命令行分析](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   

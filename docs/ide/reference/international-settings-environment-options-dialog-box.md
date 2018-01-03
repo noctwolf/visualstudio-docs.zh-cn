@@ -22,11 +22,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a1cf847b87e7902ef535359420ea105a48dc9a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e086111be924d1262866f882b77d821659af909d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“区域设置”
 当你的计算机上安装有多个语言版本的集成开发环境 (IDE) 时，可通过国际设置页面更改默认语言。 要访问此对话框，可从“工具”菜单中选择“选项”，然后从“环境”文件夹中选择“区域设置”。 如果此页未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  
@@ -40,6 +41,6 @@ ms.lasthandoff: 10/31/2017
 > [!CAUTION]
 >  在安装了多个语言的系统中，Visual C++ 生成工具（cl.exe、link.exe、nmake.exe、bscmake.exe 和相关文件）不受此设置的影响。 这些工具使用上次安装的语言版本。 以前安装的语言版本的工具将被覆盖，因为 Visual C++ 生成工具不使用附属 DLL 模型。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [安装语言包](../../install/install-visual-studio.md#step-6---install-language-packs-optional)   
  [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f7b1576ce7c34e953c45d7b303190a00d77e86cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 59b0c421fa5a62394a32a2b9ad9926df58a40cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="open-file-command"></a>“打开文件”命令
 打开现有文件，并允许指定编辑器。  
@@ -32,9 +33,9 @@ ms.lasthandoff: 10/31/2017
 File.OpenFile filename [/e:editorname]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `filename`  
- 必需。 要打开的文件的完整或部分路径和文件名。 包含空格的路径必须引在引号内。  
+ 必须的。 要打开的文件的完整或部分路径和文件名。 包含空格的路径必须引在引号内。  
   
 ## <a name="switches"></a>开关  
  /e:`editorname`  
@@ -58,7 +59,7 @@ File.OpenFile filename [/e:editorname]
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [即时窗口](../../ide/reference/immediate-window.md)   

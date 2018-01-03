@@ -29,11 +29,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 003e4abaf5e6fbabead604c495b2018402cf74ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cf3f299f2b5ec2e38b5fe0315b6d0abc0411b12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-build-configurations"></a>了解生成配置
 您可以存储不同的解决方案配置和项目属性以便在各种生成中使用。 若要创建、选择、修改或删除配置，可以使用“配置管理器”。 若要打开它，请在菜单栏上依次选择“生成”和“配置管理器”，或在“快速启动”框中键入“配置”。 也可以使用“标准”工具栏上的“解决方案配置”列表，选择配置或打开“配置管理器”。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
   
 -   如果项目支持多个平台，则可为每个受支持的平台找到或添加解决方案配置。 每个解决方案配置的名称均包含项目配置名称和平台名称，采用 *\<项目配置名称> \<平台名称>* 的形式。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：生成应用程序](../ide/walkthrough-building-an-application.md)   
  [编译和生成](../ide/compiling-and-building-in-visual-studio.md)   
  [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)   

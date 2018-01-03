@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e63b69c9d97edf5049dfb6e55b8f9d5010984d4d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 296b33a5582f9a7ba9ed9540b90444376ead91be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 强制 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 合并所有可用的 Vspackage 中描述菜单、工具栏和命令组的资源元数据。  
@@ -43,5 +44,5 @@ devenv /setup
 devenv /setup  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)

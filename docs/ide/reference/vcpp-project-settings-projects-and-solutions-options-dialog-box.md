@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b0ccfd3d526cee44a30c8d4c33030f2eb2a585e5
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: cplusplus
+ms.openlocfilehash: 7f24c1cd65d4669f326f866fbc04160d32daa4a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”
 使用此对话框，可以定义与记录、性能和支持文件类型相关的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 生成和项目设置。  

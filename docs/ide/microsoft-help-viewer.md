@@ -22,11 +22,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d770c1b7d05117243643680898348b71cf0a978d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 9902ca6ff157713573eb2f8ccc806bb9f2a0dfc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 可以通过使用 Microsoft Help Viewer，在本地计算机上安装和查看各种产品和技术（包括 Visual Studio、.NET Framework、语言参考、SQL Server 和 Windows 开发）的相关内容。 Help Viewer 可用于：  

@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f3b469466080403122484a7b6259c099765edd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ad7f0232a4e08c134a7dffcc3d10a2180e235717
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-file-command"></a>“新建文件”命令
 创建新文件并将其打开。 该文件显示在“杂项文件”文件夹下。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
 File.NewFile [filename] [/t:templatename] [/editor:editorname]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `filename`  
  可选。 文件的名称。 如果未提供名称，则使用默认名称。 如果没有列出模板名称，则创建文本文件。  
   
@@ -67,7 +68,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [即时窗口](../../ide/reference/immediate-window.md)   

@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22838f561793845c9b44e57631c46773b094c98b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ccca87721c39daa7e613d7426c9d5fed6a144cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：配置项目以面向目标平台
 可使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将应用程序设置为面向不同平台（包括 64 位平台）。 若要深入了解 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中对 64 位平台的支持，请参阅 [64 位应用程序](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
 -   对于 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目，请参阅 [/clr（公共语言运行时编译）](/cpp/build/reference/clr-common-language-runtime-compilation)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [了解生成平台](../ide/understanding-build-platforms.md)   
  [-platform（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)   
  [64 位应用程序](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   

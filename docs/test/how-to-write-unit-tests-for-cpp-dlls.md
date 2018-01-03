@@ -10,11 +10,12 @@ ms.topic: article
 ms.assetid: 84575412-1de7-4e53-811d-ae035eb21d13
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f3eff65b7a70c29adf39eda32805e0773255ba61
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: ac5389640c486d5b886454c15dc0e979c0683caf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ DLL 单元测试
 
@@ -129,7 +130,7 @@ ms.lasthandoff: 11/15/2017
   
 1.  在每个单元测试代码文件中，为所测试项目的标头添加 `#include` 语句。  
   
-2.  向单元测试代码文件添加测试类和方法。 例如:   
+2.  向单元测试代码文件添加测试类和方法。 例如:  
   
     ```cpp  
     #include "stdafx.h"  
@@ -156,11 +157,11 @@ ms.lasthandoff: 11/15/2017
   
 2.  在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)
 
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)   
  [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 参考](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)   
  [调试本机代码](../debugger/debugging-native-code.md)   

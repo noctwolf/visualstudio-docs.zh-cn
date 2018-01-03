@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 62e9060c812666f671f1c2d3378fad510d6524f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8227a514887150e3477e026a238df608fe98d11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理程序集签名和清单签名
 强名称签名可为软件组件提供全局唯一标识。 使用强名称可保证程序集不被其他用户伪造，还可确保组件依赖关系和配置语句映射到正确的组件和组件版本。  
@@ -70,6 +71,6 @@ ms.lasthandoff: 10/31/2017
   
  有关对清单进行签名的详细信息，请参阅[如何：对应用程序和部署清单进行签名](../ide/how-to-sign-application-and-deployment-manifests.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [具有强名称的程序集](/dotnet/framework/app-domains/strong-named-assemblies)   
  [强名称程序集（程序集签名）(C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

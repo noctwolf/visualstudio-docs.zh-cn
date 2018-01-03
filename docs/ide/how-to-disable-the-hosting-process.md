@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 94d40fe18ff4cca228fb39ab16bcfaa6ac42a172
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9609f902c11291cd6892cf663ec8a343952ebaab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
 启用承载进程时可能会影响对某些 API 的调用。 在这些情况下，必须禁用托管进程以返回正确的结果。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
 -   部分信任调试不可用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试和承载进程](../debugger/debugging-and-the-hosting-process.md)   
  [托管进程 (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
  [在应用程序开发过程中生成](http://msdn.microsoft.com/en-us/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

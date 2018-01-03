@@ -12,11 +12,12 @@ ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
 caps.latest.revision: "26"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5a6a1a314e837b441e2fc563baabf935659adcf8
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: f5f61b5c2c0fc5f252ed331e58137f970f6705df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-and-run-unit-tests-for-a-uwp-app-in-visual-studio"></a>在 Visual Studio 中为 UWP 应用创建并运行单元测试
 Visual Studio 单元测试工具旨在为那些将单元测试集成在其软件开发实践中的开发者和团队提供支持。 单元测试为开发人员和测试人员提供了一种有效并且可维护的方式，来查找 Visual C#、Visual Basic 和 Visual C++ 项目中类方法的逻辑错误。  

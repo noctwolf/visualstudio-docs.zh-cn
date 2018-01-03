@@ -22,18 +22,19 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 24430b3cfa74724dc8fc6ca3d92e5507c3f13514
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: be3b239381b7b1f0afe0b284694ef18d851b313a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication 任务
 生成 [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] 项目时，运行 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> 任务，以将 \<hostInBrowser /> 元素添加到应用程序清单中 (projectname.exe.manifest)。  
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|说明|  
+|参数|描述|  
 |---------------|-----------------|  
 |`ApplicationManifest`|必需的 **ITaskItem[]** 参数。<br /><br /> 指定想要将 `<hostInBrowser />` 元素添加到其中的应用程序清单文件的路径和名称。|  
 |`HostInBrowser`|所需的 **Boolean** 参数。<br /><br /> 指定是否要修改应用程序清单，以包括 **\<hostInBrowser />** 元素。 如果为 **true**，则一个新 `<`**hostInBrowser />** 元素将包括在 **\<entryPoint />** 元素中。 请注意，元素包含是累计的：如果 **\<hostInBrowser />** 元素已存在，则不会删除或覆盖它。 相反，将创建额外的 **\<hostInBrowser />** 元素。 如果为 **false**，则不会修改应用程序清单。|  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [WPF MSBuild 引用](../msbuild/wpf-msbuild-reference.md)   
  [任务参考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)   

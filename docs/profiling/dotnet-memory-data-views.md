@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6bbbc764c7b5275082b6261249d48122ea3c836
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fa1fb6dbaed5ed43f9a7eb3e69b52e91f43bd7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="net-memory-data-views"></a>.NET 内存数据视图
 本部分包含有关视图的参考信息以及包含 .NET 内存分析数据的探查器数据文件的报告。  

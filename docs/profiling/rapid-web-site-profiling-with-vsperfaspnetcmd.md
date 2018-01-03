@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1f2bc5acb69aa49fb37713942edb4e018039e8a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: ca6dd3c084c6ef8287469b3c1629af49e7a6f4fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 进行快速网站分析
 通过 **VSPerfASPNETCmd** 命令行工具可以轻松地分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序。 与 [VSPerfCmd](../profiling/vsperfcmd.md) 命令行工具相比，减少了选项、不必设置任何环境变量以及无需重启计算机。 使用 **VSPerfASPNETCmd** 是使用独立探查器进行分析时的首选方法。 有关详细信息，请参阅[如何：安装独立探查器](../profiling/how-to-install-the-stand-alone-profiler.md)。  

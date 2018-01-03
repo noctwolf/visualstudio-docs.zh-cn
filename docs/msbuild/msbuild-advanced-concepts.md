@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7d996986fbd4bc5df5841b8b74b37b8153495db4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91544f1ccc30a2f5dca998a0f670c4733cf964ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 高级概念
 本部分中的文档介绍如何使用高级技术来改善使用 MSBuild 运行的版本。  
@@ -33,6 +34,6 @@ ms.lasthandoff: 10/31/2017
 |[多定向](../msbuild/msbuild-multitargeting-overview.md)|介绍如何将应用程序编译为在若干 .NET Framework 版本的任意一个版本上运行。|  
 |[最佳做法](../msbuild/msbuild-best-practices.md)|建议用于编写 MSBuild 脚本的最佳做法。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 中的日志记录](../msbuild/logging-in-msbuild.md)

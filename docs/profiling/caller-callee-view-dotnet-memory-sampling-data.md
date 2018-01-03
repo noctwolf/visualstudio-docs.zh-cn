@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7e3d7541075642d3aaa417874aa51f7f3f7faa7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 275ec14b1b6a0d43d2c8fdb88bbf1056db86d097
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>“调用方/被调用方”视图 - .NET 内存采样数据
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的 .NET 内存分析数据。 “调用方/被调用方”视图包含三个网格。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
  双击调用方或被调用方函数行，以使该行成为当前函数。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 |**函数名**|该函数的完全限定名。|  
 |**函数行号**|此函数在源文件中的起始行号。|  
 |**函数地址**|函数的地址。|  
-|**类型**|函数的上下文：<br /><br /> **0** - 当前函数<br /><br /> **1** - 调用当前函数的函数<br /><br /> **2** - 当前函数调用的函数<br /><br /> 仅在 [VSPerfReport](../profiling/vsperfreport.md) 命令行报表中。|  
+|**Type**|函数的上下文：<br /><br /> **0** - 当前函数<br /><br /> **1** - 调用当前函数的函数<br /><br /> **2** - 当前函数调用的函数<br /><br /> 仅在 [VSPerfReport](../profiling/vsperfreport.md) 命令行报表中。|  
 |**级别**|此函数在调用树中的深度。 仅在 [VSPerfReport](../profiling/vsperfreport.md) 命令行报表中。|  
 |**非独占分配数**|-   对于当前函数，是分析运行期间函数分配的对象数。 此数值包括被调用方函数中创建的对象。<br />-   对于调用方函数，是此函数的调用生成的当前函数的非独占分配数。<br />-   对于被调用方函数，是由当前函数调用的此函数的实例所分配的对象数。 此数值包括被调用方函数调用的函数所进行的分配。|  
 |**非独占分配数百分比**|分析运行期间创建的属于此函数的非独占分配的所有对象数的百分比。|  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
 |**独占字节数**|-   对于当前函数，是分析运行期间函数分配的内存字节数。 此数值不包括当前函数调用的函数所分配的内存。<br />-   对于调用方函数，是调用方函数的调用生成的当前函数的独占字节数。<br />-   对于被调用方函数，是当前函数的调用生成的函数的实例所分配的字节数。 此数值不包括被调用方函数调用的函数所分配的字节数。|  
 |**独占字节数百分比**|分析运行期间分配的属于此函数的独占分配的所有内存字节数的百分比。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“调用方/被调用方”视图 - .NET 内存检测数据](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [“调用方/被调用方”视图 - 采样数据](../profiling/caller-callee-view-sampling-data.md)   

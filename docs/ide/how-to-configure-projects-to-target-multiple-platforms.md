@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f862319d29502f1e3e242990072fbe0d2410fab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7686e792d804af85bb8f9588f3ae78fd6b6ec3e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：将项目配置为面向多个平台
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供了一种能够同时面向多个不同的 CPU 体系结构或平台的解决方案。 可通过“配置管理器”对话框访问设置这些功能的属性。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
  例如，可以将解决方案级别的平台设置为 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]，并使该解决方案中项目都不面向该平台。 解决方案中可以存在多个项目，并且每个项目面向不同的平台。 如果具有此类解决方案，建议创建一个新的配置并使用描述性名称命名，以免混淆。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)   
  [了解生成配置](../ide/understanding-build-configurations.md)   
  [在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

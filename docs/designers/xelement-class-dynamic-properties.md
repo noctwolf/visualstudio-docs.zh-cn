@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ba611fe5582b65e314046b80fb15751a0152b85
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c2583014552cffacaa3e2f9760fd61ead0af605
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xelement-class-dynamic-properties"></a>XElement 类动态属性
 本部分介绍 <xref:System.Xml.Linq.XElement?displayProperty=fullName> 类的动态属性。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |[值](../designers/value-xelement-dynamic-property.md)|获取或设置一个元素的内容。|  
 |[Xml](../designers/xml-xelement-dynamic-property.md)|获取元素的未格式化的 XML 表示形式。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Xml.Linq.XElement?displayProperty=fullName>   
  [LINQ to XML 动态属性](../designers/linq-to-xml-dynamic-properties.md)   
  [XAttribute 类动态属性](../designers/xattribute-class-dynamic-properties.md)

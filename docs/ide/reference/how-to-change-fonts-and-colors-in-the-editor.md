@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 300ca6d9a3fd633b9cd20ad0436901e4080560e0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 58053640dabb74a8044eeca70f03673656c0bc26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：更改编辑器中的字体和颜色
 在“代码编辑器”中，可以更改默认字体、调整字体大小以及更改不同文本“显示项”的前景色和背景色。 更改字体设置时，请牢记以下信息：  
@@ -51,9 +52,9 @@ ms.lasthandoff: 10/31/2017
     > [!TIP]
     >  单击“使用默认值”重置默认设置。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义编辑器](../../ide/customizing-the-editor.md)   
  [“选项”对话框 ->“文本编辑器”](../../ide/reference/text-editor-options-dialog-box.md)   
  [编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)   

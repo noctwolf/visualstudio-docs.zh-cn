@@ -12,11 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d328897a4d7644e76634ecff3bfbaef4dbd0c3ec
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 5ebbded093da4b3a6bb5b829628de481d43355dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-python-on-azure-app-service"></a>在 Azure App Service 上管理 Python
 
@@ -28,7 +31,7 @@ Azure App Service 上的可自定义 Python 支持作为一组应用服务站点
 > 默认情况下，虽然应用服务在服务器上的根文件夹中安装了 Python 2.7 和 Python 3.4，但是不能在这些环境中自定义或安装包，也不应依赖于它们的存在。 如本主题中所述，你应依赖于控制的站点扩展。
 
 > [!Important]
-> 本文所述的过程会随时更改，尤其是出于改进目的。 更改可参见 [Microsoft 博客上的 Python 工程](https://blogs.msdn.microsoft.com/pythonengineering/)发布。>
+> 本文所述的过程会随时更改，尤其是出于改进目的。 将在 [Microsoft 博客上的 Python 工程](https://blogs.msdn.microsoft.com/pythonengineering/)中发布更改。
 
 ## <a name="choosing-a-python-version-through-the-azure-portal"></a>通过 Azure 门户选择 Python 版本
 

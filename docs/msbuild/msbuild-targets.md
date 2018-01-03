@@ -13,11 +13,12 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 29c9397ea886024c894b977f05ec83f8d7c70f60
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1055a11a428d477ef44645fbc85d3f281b523357
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-targets"></a>MSBuild 目标
 目标以特定的顺序将任务组合到一起，并允许生成过程分解为较小的单位。 例如，一个目标可能会删除输出目录中的所有文件以准备进行生成，而另一个目标可能会编译项目的输入并将它们置于该空目录中。 有关任务的详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  
@@ -97,6 +98,6 @@ Reference: 4.0
   
  如果所有输出项都是最新的，则 MSBuild 将跳过目标，这可以显著加快生成速度。 这称为目标的增量生成。 如果只有部分文件为最新，则 MSBuild 将执行不包含最新项的目标。 这称为目标的部分增量生成。 有关详细信息，请参阅[增量生成](../msbuild/incremental-builds.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

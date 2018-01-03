@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0f1146b590e66c5f8c08dd58c858b2d50326a2ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c53c542741cc64c0d60a94116acf7de4ff7f61ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>步骤 11：运行程序并尝试其他功能
 您的程序已完成并已做好运行准备。 您可以运行程序并设置 PictureBox 的背景色。 若要了解更多信息，请尝试通过以下操作来改进程序：更改窗体的颜色、自定义按钮和复选框以及更改窗体的属性。  

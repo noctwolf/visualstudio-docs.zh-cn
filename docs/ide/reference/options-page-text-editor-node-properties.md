@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a917167b8e81445d0ec47a1dd44cf74f5d87d4f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c4e4021dd1d54013f10f8b4bd4e7da3e81d91d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-text-editor-node-properties"></a>“选项”页 ->“文本编辑器”节点属性
 本文档描述了与“选项”对话框的“文本编辑器”类别 `DTE.Properties("TextEditor", <Property Page>)` 关联的一些页面（或属性集合）。 每个小节的标题都是用于访问 `Properties` 集合的调用，而每个小节中的表都列出了集合中的属性。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 |ShowNavigationBar|Get/Set (Boolean)|确定下拉列表和按钮是否出现在编辑器窗口的顶部。|  
 |CutCopyBlankLines|Get/Set (Boolean)|在选中空行时剪切或复制它们。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [控制选项设置](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [确定“选项”页中属性项的名称](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [“选项”页 ->“环境”节点属性](../../ide/reference/options-page-environment-node-properties.md)   

@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c23bc80fff6bf088d10c788b92a52b1c43fc5db9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53dd29671e20f19c0ef83d5920581c7038f32c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>并发可视化工具命令行实用工具 (CVCollectionCmd)
 你可以使用并发可视化工具命令行实用程序 (CVCollectionCmd.exe) 以从命令行收集跟踪，使你可以在 Visual Studio 的并发可视化工具中查看它们。 这些工具可以在未安装 Visual Studio 的计算机上使用。  
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
 |标记|包含标记提供程序的列表。|可能不包含也可能包含多个 MarkerProvider 元素。|  
 |MarkerProvider|指定单个标记提供程序。|必须包含以下元素：<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 可以包含以下元素：<br /><br /> -   Categories<br />-   IsEnabled|  
 |级别|设置 MarkerProvider 的重要性级别。|-   低<br />-   普通<br />-   高<br />-   严重<br />-   全部|  
-|Guid|ETW 标记提供程序的全局唯一标识符。|一个 GUID。|  
+|GUID|ETW 标记提供程序的全局唯一标识符。|一个 GUID。|  
 |名称|指定标记提供程序的说明。|一个字符串。|  
 |类别|指定为标记提供程序收集的类别。|一个以逗号分隔的数字或数字范围的字符串。|  
 |IsEnabled|设置一个值，该值确定是否针对收集启用标记提供程序。|-   True<br />-   False|  

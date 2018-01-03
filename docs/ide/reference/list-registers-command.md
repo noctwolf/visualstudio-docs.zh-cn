@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83f4830b79c4492337abb6052b1b2803b34b5a9b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 016de257d1ce4e6d2aa95284adbe762a5c54eacf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-registers-command"></a>“列出寄存器”命令
 显示选中寄存器的值并允许修改要显示的寄存器列表。  
@@ -36,7 +37,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
   
 ## <a name="switches"></a>开关  
  /Display [{`register`&#124;`registerGroup`}...]  
- 显示指定 `register` 或 `registerGroup` 的值。 如果没有指定 `register` 或 `registerGroup`，将显示寄存器的默认列表。 如果没有指定任何开关，则出现相同行为。 例如:   
+ 显示指定 `register` 或 `registerGroup` 的值。 如果没有指定 `register` 或 `registerGroup`，将显示寄存器的默认列表。 如果没有指定任何开关，则出现相同行为。 例如:  
   
  `Debug.ListRegisters /Display eax`  
   
@@ -63,7 +64,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 r /Display Flags  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [调试基础知识：“寄存器”窗口](../../debugger/debugging-basics-registers-window.md)   
  [如何：使用“寄存器”窗口](../../debugger/how-to-use-the-registers-window.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b38b298c78d549787591aff227d7064287e5480c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c4ed935391ecdca464bc4b7e3b6e38342ad5afdc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 停止所有跟踪，并释放跟踪会话使用的任何内存。  
@@ -34,8 +35,8 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
 ## <a name="return-value"></a>返回值  
  如果跟踪停止，则返回带 SUCCEEDED 位集的 HRESULT。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头：FileTracker.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 761f08adead5037056e07031903517e4f5d76744
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 95869fd4c3b52853417c847d32f7507c90471c2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-sampling-data-values"></a>了解采样数据值
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的采样分析方法按设置的间隔中断计算机处理器并收集函数调用堆栈。 调用堆栈是一种动态结构，用于存储有关在处理器中执行的函数的信息。  
@@ -52,6 +53,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="exclusive-percent"></a>独占百分比  
  函数或数据范围的独占样本数占分析运行中的独占样本数总数的百分比。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：选择收集方法](../profiling/how-to-choose-collection-methods.md)   
  [分析性能工具数据](../profiling/analyzing-performance-tools-data.md)

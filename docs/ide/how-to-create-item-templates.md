@@ -17,11 +17,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2ecd17694e65c6273f8e73a321a72bc209038922
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 96501134565c4339abe9e3abc7fcfe7e29927fa4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-item-templates"></a>如何：创建项模板
 本主题[第一个过程](../ide/how-to-create-item-templates.md#export_template)中的步骤演示如何使用“导出模板”向导创建项模板。 如果模板将由多个文件组成，请参阅[如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)。  
@@ -162,7 +163,7 @@ ms.lasthandoff: 10/31/2017
 
 8.  复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2017 中，默认目录是..\Users\\<username\>\Documents\Visual Studio 2017\Templates\ItemTemplates\\。 有关详细信息，请参阅“如何：查找和组织项目和项模板”。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)   
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

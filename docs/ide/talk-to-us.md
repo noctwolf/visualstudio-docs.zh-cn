@@ -14,11 +14,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: 7759e67a4ce886388b9a7afea531448edeefac54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 990c13a0fa42d845668c66419ab5cd989b6d2d61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="talk-to-us"></a>Talk to Us
 我们很希望了解你为改进我们的产品和文档所提出的建议。 我们无法总是一一答复，但我们保证你的反馈会传达给相应的负责人或团队。  
@@ -52,5 +53,5 @@ Microsoft 支持服务取决于当时的价格、条款和条件。 价格、条
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>我希望帮助改进 Visual Studio 文档  
   请使用我们位于页面底部的反馈按钮（“此页面是否有所帮助?”）。 所有我们的文档页面上都有这个按钮。 如果你正在寻找解答但却找不到，请告诉我们你想要查找的信息。 （或者，你可以使用“注释”部分在 [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) 上的任何 Visual Studio 页面上添加反馈。）
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何报告 Visual Studio 的问题](how-to-report-a-problem-with-visual-studio-2017.md)

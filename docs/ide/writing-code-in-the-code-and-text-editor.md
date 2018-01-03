@@ -62,18 +62,19 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb8229cffc2a3e30e3ce5a3a42af7e1673d11f3d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-code-in-the-code-editor"></a>在代码编辑器中编写代码
 Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写和管理代码和文本。 可通过使用大纲显示来展开和折叠不同的代码块。 可通过使用 IntelliSense、“对象浏览器”以及调用层次结构，了解有关代码的详细信息。 可使用“转到”、“转到定义”和“查找所有引用”等功能查找代码。 可以将插入代码块和代码片段，并且可以通过“使用时生成” 等功能生成代码。 如果之前从未用过 Visual Studio 编辑器，请参阅[编辑代码](https://www.visualstudio.com/features/ide-vs)进行快速概览。  
 
  可以使用多种不同的方式查看自己的代码。 默认情况下，“解决方案资源管理器” 显示按文件组织的代码。 可以单击窗口底部的“类视图”选项卡，查看按类组织的代码。
 
- 可以搜索和替换单个或多个文件中的文本。 有关详细信息，请参阅[查找和替换文本](../ide/finding-and-replacing-text.md)。 可以使用正则表达式来查找和替换文本。 有关详细信息，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。  
+ 可以搜索和替换单个或多个文件中的文本。 有关详细信息，请参阅 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)。 可以使用正则表达式来查找和替换文本。 有关详细信息，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。  
 
  不同的 Visual Studio 语言提供不同的功能集，在某些情况下，同样的功能在不同语言中的行为也会有所不同。 功能说明中已指出多数差异，但如需有关详细信息，可以参阅特定 Visual Studio 语言相关章节。  
 
@@ -133,5 +134,5 @@ Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写
 
 若要详细了解如何自定义编辑器，请参阅[自定义编辑器](../ide/customizing-the-editor.md)。 若要了解语言专用编辑器选项，请参阅[将 Visual Studio 开发环境用于 C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) 和[选项、文本编辑器、JavaScript、格式](../ide/reference/options-text-editor-javascript-formatting.md)。
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

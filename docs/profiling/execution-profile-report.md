@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf0605f635fd1cc07e04bcb848bc83f92d2d8c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 263ff80703a680ab799e373fad62c05ced62028f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="execution-profile-report"></a>执行分析报告
 执行分析报告是传统的采样分析。 线程在逻辑内核上运行期间内，将大约每毫秒进行一次采样，并且并发可视化工具可通过调用累积的堆栈集构建典型的调用关系树。 此表中的数据可能受到当前时间范围、隐藏线程和可能应用的筛选器的影响：  
@@ -40,5 +41,5 @@ ms.lasthandoff: 10/31/2017
   
  可在[执行时间（“线程”视图）](../profiling/execution-time-threads-view.md)视图中查看此报告表格。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [线程视图](../profiling/threads-view-parallel-performance.md)

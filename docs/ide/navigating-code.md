@@ -21,11 +21,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c4c7613cca7f9dec7c2db7ceffef1cc542cfa61
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b81517d8d8e0cc6dd1386525f7a2129ed18851c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigating-code"></a>导航代码  
 Visual Studio 提供了许多用于在编辑器中导航代码的方法。 本主题汇总了导航代码的不同方法，并提供指向详细主题的链接。  
@@ -134,5 +135,5 @@ Visual Studio 提供了许多用于在编辑器中导航代码的方法。 本�
 ## <a name="codelens-information"></a>CodeLens 信息
 在代码编辑器中使用 CodeLens 时，可以找到有关特定代码的信息，如更改和更改者、引用、Bug、工作项、代码评审和单元测试状态。 将 Visual Studio Enterprise 与 Team Foundation Server 一起使用时，CodeLens 的工作原理类似于警告显示。 请参阅[查找代码更改和其他历史记录](../ide/find-code-changes-and-other-history-with-codelens.md)。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md) 

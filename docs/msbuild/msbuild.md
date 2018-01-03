@@ -15,11 +15,12 @@ caps.latest.revision: "59"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 45714799a518cefa1edb7164437af7c4a067b0e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4e809363656b94dc4e922d558a57a0848dba46e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是一个用于生成应用程序的平台。 此引擎（也称为 MSBuild）为项目文件提供了一个 XML 架构，用于控制生成平台处理和生成软件的方式。 Visual Studio 会使用 MSBuild，但它不依赖于 Visual Studio。 通过在你的项目或解决方案文件中调用 msbuild.exe，你可以在未安装 Visual Studio 的环境中安排和生成产品。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
  本主题概述了 MSBuild。 有关介绍性教程，请参阅[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   
- **主题内容**  
+ **在本主题中**  
   
 -   [在命令提示符处使用 MSBuild](#BKMK_CommandPrompt)  
   

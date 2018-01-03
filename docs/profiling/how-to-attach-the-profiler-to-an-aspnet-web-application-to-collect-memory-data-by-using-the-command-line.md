@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a500597869b4306ef60dce6caf31bfde813d05e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 115b8faf48a45181394c4fc954e5d83348bc7224
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 ASP.NET Web 应用程序以收集内存数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序，以及如何收集有关 .NET Framework 内存分配数量和大小的数据。 也可以收集有关 .NET Framework 内存对象生存期的数据。  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
 -   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由 `PID` 指定的进程的数据收集。|  
@@ -109,7 +110,7 @@ ms.lasthandoff: 10/31/2017
   
     -   键入 VSPerfCmd [/detach](../profiling/detach.md)  
   
-         - 或 -  
+         或  
   
     -   关闭 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程。 类型：  
   
@@ -127,6 +128,6 @@ ms.lasthandoff: 10/31/2017
   
      **IISReset /start**  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)

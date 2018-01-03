@@ -17,11 +17,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a13701dd85cfc2339650ec2df641ac1f5f15e75f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 69bc0ae15a33cd3f7fd9b06a25a34f7dc88c083c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 采样初学者指南
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程显示如何使用**采样**数据。
@@ -124,7 +125,7 @@ ms.lasthandoff: 10/31/2017
   
      此时将打开新的报告窗口，并显示比较结果。 若要深入了解如何使用比较视图，请参阅[如何：比较性能数据文件](../profiling/how-to-compare-performance-data-files.md)。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [性能资源管理器](../profiling/performance-explorer.md)   
  [入门](../profiling/getting-started-with-performance-tools.md)   
  [概述](../profiling/overviews-performance-tools.md)  

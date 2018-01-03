@@ -20,11 +20,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b58e7997d2aaec4661906743a4ef72ce82fcd91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1e886e88ad7ab4e943908e003ffe56719bd13211
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="output-window"></a>输出窗口
 “输出”窗口在集成开发环境 (IDE) 中可显示各种功能的状态消息。 若要打开“输出”窗口，请在菜单栏上选择“视图/输出”（或单击 Ctrl+Alt+O）。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="scrolling-behavior"></a>滚动行为  
  如果在“输出”窗口中使用自动滚动，随后使用鼠标或箭头键进行导航，则自动滚动停止。 若要恢复自动滚动，请按 Ctrl+End。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“输出”窗口中的诊断消息](../../debugger/diagnostic-messages-in-the-output-window.md)   
  [如何：控制“输出”窗口](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [编译和生成](../../ide/compiling-and-building-in-visual-studio.md)   

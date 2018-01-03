@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81856823b511fc89f5f156915f843d4b0202e907
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 026223f89822f2d76aa1185da8691c538b15ee62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="immediate-window"></a>即时窗口
 **即时**窗口用于调试和计算表达式、执行语句、输出变量值等。 借助即时窗口，用户可输入要在调试期间使用开发语言计算或执行的表达式。 若要显示**即时**窗口，请打开要编辑的项目，然后从“调试”菜单中选择“窗口”，再选择“即时”，或按 CTRL+ALT+I。  
@@ -122,7 +123,7 @@ ms.lasthandoff: 11/02/2017
   
 2.  右键单击**输出**窗口的文本区域，然后选择或取消选择“异常消息”。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Navigating through Code with the Debugger](../../debugger/navigating-through-code-with-the-debugger.md) （使用调试器浏览代码）  
  [“命令”窗口](../../ide/reference/command-window.md)   
  [在 Visual Studio 中进行调试](../../debugger/debugging-in-visual-studio.md)   

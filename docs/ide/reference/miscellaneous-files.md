@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 831d0f60c992324c81cb1366ac28b3e3f1b066ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cd45af08abd3d3523e2c88af13f46d81ebdb8e2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="miscellaneous-files"></a>杂项文件
 你可能需要使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 编辑器独立于项目或解决方案来处理文件。 打开某个解决方案后，可以打开和修改文件，而不必将其添加到解决方案或项目中。 要独立于容器来处理的文件称为杂项文件。 杂项文件位于解决方案和项目的外部，不包括在生成中，而且无法包括在受源代码管理的解决方案中。  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="folder-display-options"></a>文件夹显示选项  
  可以设置杂项文件夹的显示选项，以便即使未打开任何杂项文件时也显示该文件夹。 解决方案文件不永久管理杂项文件列表。 它使用一项可选功能，该功能使它记住每个用户最近使用过 (MRU) 的文件列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [解决方案和项目](../../ide/solutions-and-projects-in-visual-studio.md)   
  [“选项”对话框 ->“环境”->“文档”](../../ide/reference/documents-environment-options-dialog-box.md)

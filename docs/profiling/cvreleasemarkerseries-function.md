@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d295d73560a560caa7f374965a280cf48ad66c2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3251db736e42d0b5e49d92b17720605c507d2184
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 函数
 发布标记系列。 在发布之后请勿使用标记系列对象，否则应用程序可能会崩溃。 标记系列发布失败会导致内存泄漏。  
@@ -38,8 +39,8 @@ HRESULT CvReleaseMarkerSeries(
 ## <a name="return-value"></a>返回值  
  成功发布标记系列时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  **标头：**cvmarkers.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C++ 库参考](../profiling/cpp-library-reference.md)

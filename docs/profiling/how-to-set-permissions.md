@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dcdf2ff51c0ed1aeb667c33a519d540251799c01
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44f67dd4b1c6717dfaf48ada0f093a845899e16c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-permissions"></a>如何：设置权限
 本主题介绍计算机管理员如何向在该计算机上没有管理员权限的用户或组授予进行分析所需的安全权限。  
@@ -78,7 +79,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  在“\<用户名> 的权限”框中，选中“完全控制”复选框。  
   
-6.  单击“确定”。  
+6.  单击 **“确定”**。  
   
      这将授予用户对从第 5 步所选文件夹开始的共享文件夹树的权限。  
   
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/31/2017
   
  现在，指定的用户登录后，能在没有管理员权限的情况下使用分析工具。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)

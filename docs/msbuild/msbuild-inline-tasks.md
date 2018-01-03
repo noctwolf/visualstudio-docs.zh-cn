@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ef4376d8d7600b1072e2afa5df2cf474a8b3ab32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea7720cbe005044e2b0eea021a720c79b651f740
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 内联任务
 通常，MSBuild 任务通过编译实现 <xref:Microsoft.Build.Framework.ITask> 接口的类进行创建。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  
@@ -142,7 +143,7 @@ Log.LogError("Hello, world!");
   
 -   `Output` 是可选属性，默认值为 `false`。 如果为 `true`，则必须先为该参数赋予值，然后才能通过 Execute 方法返回。  
   
- 例如，  
+ 例如，应用于对象的  
   
 ```xml  
 <ParameterGroup>  
@@ -190,6 +191,6 @@ File.WriteAllText(Path, content);
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [演练：创建内联任务](../msbuild/walkthrough-creating-an-inline-task.md)

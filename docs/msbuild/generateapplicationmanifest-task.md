@@ -22,11 +22,12 @@ caps.latest.revision: "24"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 79e8958ca5e2e75ed62da63f52bdac5b0f3b5043
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e0ae1ff71e2fb304849b70222fec7a4ce85c0560
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 任务
 生成 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单或本机清单。 本机清单通过为组件定义唯一标识，并标识组成该组件的所有程序集和文件来描述组件。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单通过指示应用程序的入口点并指定应用程序安全级别来扩展本机清单。  
@@ -351,7 +352,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [GenerateDeploymentManifest 任务](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile 任务](../msbuild/signfile-task.md)   

@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97cf11522b921ce9ebf1bfb26b40f2cd5a96d55e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d528c4161b2fcdf61a7357e74e64caa124f995de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view---instrumentation-data"></a>“调用关系树”视图 - 检测数据
 “调用树”视图中的函数值表示调用树中父函数所调用的函数实例的时间。 通过将函数实例值与分析运行期间所有函数的总已用非独占时间进行对比来得出百分比值。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="general"></a>常规  
  常规列标识视图行中的函数。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**函数名**|函数名。|  
 |**函数地址**|函数的地址。|  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="elapsed-inclusive-values"></a>已用非独占值  
  已用非独占值表示调用树中父函数调用的函数实例的调用堆栈上的时间。 此时间包括函数调用的子函数及调用操作系统所用的时间，如上下文切换和输入/输出操作。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**已用非独占时间**|本上下文中对此函数的所有调用的总已用非独占时间。|  
 |**已用非独占时间百分比**|本上下文中此函数的总已用非独占时间占分析运行期间所用的总已用非独占时间的百分比。|  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="elapsed-exclusive-values"></a>已用独占值  
  已用独占值表示调用树中父函数所调用的函数实例在函数体中执行代码的时间；即函数位于调用堆栈顶部的时间。 此时间包括调用操作系统所用的时间，如上下文切换和输入/输出操作。 但是，此时间不包括函数调用的子函数中所用的时间。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**已用独占时间**|本上下文中对此函数的所有调用的总已用独占时间。|  
 |**已用独占时间百分比**|本上下文中此函数的总已用独占时间占分析运行期间所用的总已用独占时间的百分比。|  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="application-inclusive-values"></a>应用程序非独占值  
  应用程序非独占值表示调用树中父函数所调用的函数实例在调用堆栈上的时间。 此时间不包括调用操作系统所用的时间，例如上下文切换和输入/输出操作，但包括函数调用的子函数所用的时间。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**应用程序非独占时间**|本上下文中对此函数的所有调用的总应用程序非独占时间。|  
 |**应用程序非独占时间百分比**|本上下文中此函数的总应用程序非独占时间占分析运行期间所用的总已用非独占时间的百分比。|  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
 |**最长应用程序独占时间**|本上下文中对此函数的调用的最长应用程序独占时间。|  
 |**最短应用程序独占时间**|本上下文中对此函数的调用的最短应用程序独占时间。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“调用关系树”视图](../profiling/call-tree-view-sampling-data.md)   
  [“调用关系树”视图 - 检测](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   

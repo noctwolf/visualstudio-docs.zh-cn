@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7dbf181f89f6cc673452a595da8ec1ddd3b62529
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6e9088f73310da32875636b33a5a843d277c1e8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createitem-task"></a>CreateItem 任务
 使用输入项填充项集合。 这会使项从一个列表复制到另一个列表。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="attributes"></a>特性  
  下表描述了 `CreateItem` 任务的参数。  
   
-|参数|说明|  
+|参数|描述|  
 |---------------|-----------------|  
 |`AdditionalMetadata`|可选的 `String` 数组参数。<br /><br /> 指定要附加到输出项的其他元数据。  使用以下语法指定项的元数据名称和值：<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 应该使用分号将多个元数据名称/值对隔开。 如果名称或值包含分号或其他任何特殊字符，则应对这些字符进行转义。 有关详细信息，请参阅[如何：对 MSBuild 中的特殊字符进行转义](../msbuild/how-to-escape-special-characters-in-msbuild.md)。|  
 |`Exclude`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 指定要从输出项集合中排除的项。 此参数可包含通配符规范。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)和[如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)。|  
@@ -78,6 +79,6 @@ ms.lasthandoff: 10/31/2017
 |---------------------|--------------|  
 |`MySourceItemsWithMetadata`|`file1.resx` (`MyMetadata="Hello"`)<br /><br /> `file2.resx` (`MyMetadata="Hello"`)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [任务](../msbuild/msbuild-tasks.md)

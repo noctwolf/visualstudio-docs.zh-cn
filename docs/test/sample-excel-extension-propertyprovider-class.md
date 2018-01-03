@@ -11,11 +11,12 @@ ms.assetid: 075d9b8d-8658-4fca-8711-08304dbac1c5
 caps.latest.revision: "9"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 28cc3774c48eabc240f2f51b9b40f23faba74377
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7617b7aafac6c7345a94d0e792bc312c7e212e56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-excel-extension-propertyprovider-class"></a>示例 Excel 扩展：PropertyProvider 类
 此内部类扩展 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> 类，并为 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 元素提供属性服务，以录制和播放用户界面 (UI) 测试。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="code-generation-customization-methods"></a>代码生成自定义方法  
  未针对此扩展实现这些方法。 因此，它们将返回 `null` 或引发 <xref:System.NotImplementedException>。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard>   
  [扩展编码的 UI 测试和操作录制以支持 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

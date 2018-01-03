@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 291cb024413072a6e07cbe46a2679994f7bd3315
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: a10c38ec29e9a149d6756bcbe5bbfa1e65fcbe24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>“行”视图 - .NET 内存采样数据
 使用采样方法的 .NET 内存分配分析数据的“行”视图列出分析运行期间分配内存的语句。 这些列还包括分配的大小和数量。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
  根据定义，语句不调用其他函数。 因此，仅列出独占值。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
@@ -62,5 +63,5 @@ ms.lasthandoff: 10/31/2017
 |**独占字节数**|在分析运行期间分配的，此行中分配的所有内存字节数的百分比。|  
 |**独占字节数百分比**|在分析运行期间分配的，此行中分配的所有内存字节数的百分比。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“行”视图](../profiling/lines-view-sampling-data.md)

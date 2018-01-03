@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f79bc2ca79cdec10fa480d87f48abc240420c34e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>以双向语言创建应用程序
 通过使用 Visual Studio，可以创建能正确显示从右向左书写的语言（包括阿拉伯语和希伯来语）文本的应用程序。 对于某些功能，只需设置属性即可。 而在其他一些情况下，必须通过代码来实现功能。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 -   **文件编码** 可使用特定语言的编码或 Unicode 编码保存和打开文件。 有关详细信息，请参阅[如何：保存和打开带有编码的文件](../ide/how-to-save-and-open-files-with-encoding.md)。  
   
 ## <a name="features-with-limited-or-no-support"></a>不完全支持或不支持的功能  
- Visual Studio 不完全支持（在有些情况下根本不支持）双向语言应用程序的其他常见功能。 其中包括:  
+ Visual Studio 不完全支持（在有些情况下根本不支持）双向语言应用程序的其他常见功能。 这些方法包括：  
   
 -   **从右向左的读取顺序** 默认情况下，Visual Studio 中使用的文本输入控件使用的是从左向右的读取顺序。 大多数情况可以使用标准 Window 手势来切换读取顺序。 例如，可以按 Ctrl + 右 Shift 组合键，将“属性”窗口切换为支持按从右向左的顺序读取属性值。  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
 -   代码注释。 可使用阿拉伯语或希伯来语创建注释。 还可在注释生成器工具中使用这些语言。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows 窗体应用程序的双向支持](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
  [ASP.NET Web 应用程序的双向支持](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [全球化应用程序](../ide/globalizing-applications.md)   

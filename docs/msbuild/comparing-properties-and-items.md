@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f1a0f6df56cebe769ec514abea49ade0083c512e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6210f6e96c4e0b1330ee83a3f0f19ae58849dfce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="comparing-properties-and-items"></a>比较属性和项
 MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存储可在整个项目文件中引用的值。  
@@ -42,7 +43,7 @@ MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存
 </PropertyGroup>  
 ```  
   
- `BuildDependsOn` 属性通常用作目标 `DependsOnTargets` 特性的参数，可有效地将该特性转换为项列表。 可以重写此属性，以添加目标或更改目标执行顺序。 例如，  
+ `BuildDependsOn` 属性通常用作目标 `DependsOnTargets` 特性的参数，可有效地将该特性转换为项列表。 可以重写此属性，以添加目标或更改目标执行顺序。 例如，应用于对象的  
   
 ```xml  
 <PropertyGroup>  
@@ -180,5 +181,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [高级概念](../msbuild/msbuild-advanced-concepts.md)

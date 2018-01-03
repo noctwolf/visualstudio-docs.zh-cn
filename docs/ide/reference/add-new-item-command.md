@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ef0373d148d386d0b725d74ea639f1b8b0719cc3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 70290f588fe3fac83a5cf0b0ab0339d5e0741186
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-new-item-command"></a>“添加新项”命令
 将新的解决方案项，如.htm、.css、.txt 或框架集添加到当前解决方案中并打开它。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
 File.AddNewItem [filename] [/t:templatename] [/e:editorname]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `filename`  
  可选。 要添加到解决方案的项的路径和文件名。  
   
@@ -65,7 +66,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   

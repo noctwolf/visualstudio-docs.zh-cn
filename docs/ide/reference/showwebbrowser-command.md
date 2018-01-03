@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a54023892d1432639fd1211273195b941e8f081
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 122a5029c5518d7a4778c4d4732f7ebac9b23683
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
 在集成开发环境 (IDE) 中或 IDE 外部显示在 Web 浏览器窗口中指定的 URL。  
@@ -31,9 +32,9 @@ ms.lasthandoff: 10/31/2017
 View.ShowWebBrowser URL [/new][/ext]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `URL`  
- 必需。 网站的 URL（统一资源定位器）。  
+ 必须的。 网站的 URL（统一资源定位器）。  
   
 ## <a name="switches"></a>开关  
  /new  
@@ -52,7 +53,7 @@ View.ShowWebBrowser URL [/new][/ext]
 >View.ShowWebBrowser http://msdn.microsoft.com /ext  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   

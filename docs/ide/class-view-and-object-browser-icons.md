@@ -19,11 +19,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8b20e30cc983d6dd809daa264e4fedbb3a879386
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: caac984e7d281740c322d535bebe84032c15a38e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="class-view-and-object-browser-icons"></a>“类视图”和“对象浏览器”图标
 
@@ -35,12 +36,12 @@ ms.lasthandoff: 12/07/2017
 |![类图标](../ide/media/vxclass_icon.gif "vxClass_Icon")|类|![运算符符号](../ide/media/vxoperator_icon.gif "vxOperator_Icon")|运算符|  
 |![棒糖形接口](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|接口|![属性符号](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|属性|
 |![结构符号](../ide/media/vxstruct_icon.gif "vxStruct_Icon")|结构|![字段图标](../ide/media/vxfield_icon.gif "vxField_Icon")|字段或变量|  
-|![联合符号](../ide/media/vxunion_icon.gif "vxUnion_Icon")|联合|![事件符号](../ide/media/vxevent_icon.gif "vxEvent_Icon")|Event|  
+|![联合符号](../ide/media/vxunion_icon.gif "vxUnion_Icon")|联合|![事件符号](../ide/media/vxevent_icon.gif "vxEvent_Icon")|事件|  
 |![枚举符号](../ide/media/vxenum_icon.gif "vxEnum_Icon")|Enum|![常量图标](../ide/media/vxconstant_icon.gif "vxConstant_Icon")|返回的常量|  
 |![类型定义符号](../ide/media/vxtypedef_icon.gif "vxTypeDef_Icon")|TypeDef|![枚举项符号](../ide/media/vxenumitem_icon.gif "vxEnumItem_Icon")|枚举项|  
 |![Visual Studio 模块符号](../ide/media/vxmodule_icon.gif "vxModule_Icon")|模块|![映射项符号](../ide/media/vxmapitem_icon.gif "vxMapItem_Icon")|映射项|  
 |![扩展方法符号](../ide/media/extensionmethod.gif "ExtensionMethod")|扩展方法|![声明符号](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|外部声明|  
-|![委托符号](../ide/media/vxdelegate_icon.gif "vxDelegate_Icon")|委托|![类视图和对象浏览器的“错误”图标](../ide/media/erroricon.gif "ErrorIcon")|错误|  
+|![委托符号](../ide/media/vxdelegate_icon.gif "vxDelegate_Icon")|委托|![类视图和对象浏览器的“错误”图标](../ide/media/erroricon.gif "ErrorIcon")|Error|  
 |![异常符号](../ide/media/vxexception_icon.gif "vxException_Icon")|例外|![模板符号](../ide/media/vxtemplate_icon.gif "vxTemplate_Icon")|模板|  
 |![映射符号](../ide/media/vxmap_icon.gif "vxMap_Icon")|映射|![错误感叹号符号](../ide/media/vxerror_icon.gif "vxError_Icon")|未知|  
 |![类型转发符号](../ide/media/ob_type_forward.gif "ob_type_forward")|类型转发|||  

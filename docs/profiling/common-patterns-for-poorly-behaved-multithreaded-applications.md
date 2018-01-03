@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 744e3031c94a3b152728000e7c5425f85fb9e9ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c938f5effc963fa881506f55d0e4b271ae3a914
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>性能不佳的多线程应用程序的常见模式
 并发可视化工具可帮助开发者将多线程应用程序的行为可视化。 此工具包含性能不佳的多线程应用程序的常见模式库。 该库包括通过工具公开的典型、可识别的视觉对象模式，以及每种模式所表示的行为的解释，该行为可能造成的结果以及解决它最常用的方法。  
@@ -64,5 +65,5 @@ ms.lasthandoff: 10/31/2017
   
  当应用程序要求以先到先得的顺序锁定和锁定处的到达率高于获取率时将发生锁保护。 这两个条件的组合会导致要求锁开始进行备份。 解决此问题的一种方法是使用“不公平”锁或使用授予第一个线程访问权限的锁，以在未锁定状态中找到查找它们。 上图显示了此保护行为。 若要解决此问题，请尝试减少同步对象的争用并尝试使用不公平锁。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [线程视图](../profiling/threads-view-parallel-performance.md)

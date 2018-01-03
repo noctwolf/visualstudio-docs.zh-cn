@@ -15,11 +15,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: "62"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 7d4b3634f651cd8fc0ebc9c2e5254914a62e3771
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: a60e3236769cbaf35a9b232629834a8b8d52a852
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-test-your-code"></a>单元测试代码
 通过单元测试，开发人员和测试人员可以快速查找 [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]、[!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] 和 [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] 项目中各个类的方法中的逻辑错误。  
@@ -84,6 +85,6 @@ ms.lasthandoff: 11/15/2017
 ### <a name="reference"></a>参考  
  [Content Index for Unit Tests](http://go.microsoft.com/fwlink/?LinkID=254719)（单元测试的内容索引）  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [提高代码质量](/visualstudio/test/improve-code-quality)   
  [测试应用程序](/devops-test-docs/test/test-apps-early-and-often)

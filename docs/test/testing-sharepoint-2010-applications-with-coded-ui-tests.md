@@ -11,11 +11,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: d3ba0b9ce4366efd386d0b5c1b4d9c3f0094511b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4cf5eac9600be44405142666e1f94408c44b0a13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 SharePoint 2010 应用程序
 通过在 SharePoint 应用程序中包含编码的 UI 测试，您可以验证整个应用程序（包括其 UI 控件）是否正常工作。 编码的 UI 测试还可以验证 UI 中的值和逻辑。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>还应当编码的 UI 测试了解什么?  
  若要详细了解使用编码的 UI 测试的相关好处，请参阅[使用 UI 自动化测试代码](../test/use-ui-automation-to-test-your-code.md)和[使用 Visual Studio 2012 测试持续交付 - 第 5 章：实现系统测试的自动化](http://go.microsoft.com/fwlink/?LinkID=255196)。  
   
- **注意**  
+ **备注**  
   
 -   ![先决条件](../test/media/prereq.png "Prereq") 只有 SharePoint 2010 支持对 SharePoint 应用程序进行编码的 UI 测试。  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/27/2017
 > [!WARNING]
 >  如果在任何 Excel 单元格中输入文本，然后进行箭头键操作，将无法正确进行录制。 使用鼠标选择单元格。  
   
- 如果要录制对空单元格的操作，则必须双击该单元格，然后执行设置文本操作，以此修改代码。 这是必需的，因为如果单击单元格，然后进行任何键盘操作，将会激活单元格内的 `textarea` 。 如果只是录制对空单元格的 `setvalue` ，将会搜索直到单击单元格后才会显示的 `editbox` 。 例如:   
+ 如果要录制对空单元格的操作，则必须双击该单元格，然后执行设置文本操作，以此修改代码。 这是必需的，因为如果单击单元格，然后进行任何键盘操作，将会激活单元格内的 `textarea` 。 如果只是录制对空单元格的 `setvalue` ，将会搜索直到单击单元格后才会显示的 `editbox` 。 例如:  
   
 ```csharp  
 Mouse.DoubliClick(uiItemCell,new Point(31,14));  
@@ -143,7 +144,7 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>论坛  
  [Visual Studio ALM + Team Foundation Server 博客](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
  [SharePoint 2010 和 2013 应用程序的 Web 性能和负载测试](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
  [创建 SharePoint 解决方案](/office-dev/office-dev/create-sharepoint-solutions)   

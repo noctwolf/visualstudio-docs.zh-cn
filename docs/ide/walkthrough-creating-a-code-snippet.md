@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: 0ad7cdb245aa43deab22593fbbb5a5b10105f5af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2ac4cef411bb6304e4033de1850e6c428e34285e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>演练：创建代码段
 只需几步操作即可创建代码片段。 你需要做的就是创建一个 XML 文件，填写适当的元素，并向其中添加代码。 此外还可以向代码中添加引用和替换参数。 可以在代码片段管理器中（“工具”->“代码片段管理器...”）使用“导入”按钮向 Visual Studio 的安装添加代码片段。  
@@ -251,5 +252,5 @@ ms.lasthandoff: 10/31/2017
     daCustomers.SelectCommand.Connection = dcConnection
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [代码片段架构参考](../ide/code-snippets-schema-reference.md)

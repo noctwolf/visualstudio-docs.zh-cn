@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0f92699f25e01234eb3f236d1282e267307e5083
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f0e594e3ef4d0b08dcd957250f7645d40f6533e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步骤 3：向每个标签分配一个随机图标
 如果图标显示在每个游戏的相同单元格中，就不是很有挑战性。 为避免这种情况，请使用 `AssignIconsToSquares()` 方法将图标随机分配给标签控件。  

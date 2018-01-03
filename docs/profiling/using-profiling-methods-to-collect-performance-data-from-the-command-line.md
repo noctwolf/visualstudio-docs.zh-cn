@@ -12,18 +12,19 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61128255cfc7eb8cf3e9da50e31a10378f321b87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7acfa376ea805553b931925a2fac0a33b44bb83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>从命令行使用分析方法收集性能数据
 选择的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具和选项取决于各种因素，如进行分析的应用程序的类型、要使用的分析方法以及是以本机还是 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 代码编码目标应用程序。  
   
  本主题根据选择的分析方法组织命令行过程主题。  
   
-## <a name="in-this-topic"></a>主题内容  
+## <a name="in-this-topic"></a>在本主题中  
  [使用采样方法收集性能统计信息](#BKMK_Using_the_sampling_method_to_collect_performance_statistics)  
   
  [使用检测方法收集详细计时数据](#BKMK_Using_the_instrumentation_method_to_collect_detailed_timing_data)  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="BKMK_Adding_tier_interaction_data_to_a_profiling_run"></a> 将层交互数据添加到分析运行  
  若要将层交互数据添加到分析运行，需要使用命令行分析工具执行特定的步骤。 请参阅[收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [分析服务](../profiling/command-line-profiling-of-services.md)

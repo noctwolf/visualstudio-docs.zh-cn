@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4d0e04c439f5e677cbbbdcfcf560ec976c6257b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 319d828991cff85987108cc193498b14438e5c62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：从命令行指定符号文件位置
 为了显示函数名称和行号等符号信息，VSPerfReport 命令行工具要求访问被分析组件的符号 (.pdb) 文件以及 Windows 系统文件。 编译组件时会创建符号文件。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 自动搜索以下位置的符号文件：  

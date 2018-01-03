@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6811f4f176bd59db0e1b934c32daf58820304349
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d212e5185944bf63d032bd59f40a4a730af9ee6f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spanspan-constructor"></a>span::span 构造函数
 初始化 `span` 类的新实例。  
@@ -65,10 +66,10 @@ span(
  `_Category`  
  类别。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  **标头：**cvmarkersobj.h  
   
  **命名空间：**Concurrency::diagnostic
  
- ## <a name="see-also"></a>另请参阅
+ ## <a name="see-also"></a>请参阅
  [span 类](../profiling/span-class.md)

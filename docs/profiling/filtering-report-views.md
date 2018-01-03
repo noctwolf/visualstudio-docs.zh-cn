@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c5aaff542f654928a7ed56313232a6e6ead67f9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b4e82450286d5da47a11217401ebbc17133530b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="filtering-report-views"></a>筛选报告视图
 可以将筛选器应用于分析数据文件，限制“性能报告”视图中显示的和导出到报告文件的分析数据。 可以将报告现定于两个时间戳值之间的数据，并可以将数据限定于特定的进程和线程。 可以将筛选器保存到文件，然后通过导入保存的筛选器，在另一分析数据文件中创建筛选器。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
     |And/Or|如果此子句和下一个子句必须都为 true 才能匹配结果，则选择“与”。 如果此子句或下一个子句为 true 即可匹配结果，则选择“或”。|  
     |**字段**|从显示的数据字段列表中选择要在筛选器子句中使用的报告字段。|  
     |**Operator**|选择用于指定子句中字段与值之间的关系的运算符。<br /><br /> =    等于<br /><br /> <>  不等于<br /><br /> <    小于<br /><br /> >    大于<br /><br /> <=  小于或等于<br /><br /> >=  大于或等于|  
-    |**值**|选择或输入要查找的值。 某些字段会列出字段的可用值。|  
+    |**“值”**|选择或输入要查找的值。 某些字段会列出字段的可用值。|  
   
 3.  
   
@@ -93,5 +94,5 @@ ms.lasthandoff: 10/31/2017
   
 2.  指定要保存的筛选器 (.vspf) 文件的位置和文件名。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义性能工具报表视图](../profiling/customizing-performance-tools-report-views.md)

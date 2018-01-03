@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 55e0802f58be0a1ad3a060fce257554b36c01a52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ab50592e345a54853e9cfbd95d0b9bd1bc86d794
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步骤 1：创建项目并向窗体添加标签
 在开发此测验的过程中，首先应创建项目并将数个标签、一个按钮和其他控件添加到窗体。 此外还要设置已添加各个控件的属性。 项目将包含窗体、控件和代码（在本教程下文中）。 按钮用于启动测验，标签用于显示测验问题，其他控件则用于显示测验答案和完成测验所剩时间。  

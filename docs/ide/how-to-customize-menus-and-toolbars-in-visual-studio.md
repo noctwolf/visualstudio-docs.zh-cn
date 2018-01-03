@@ -31,11 +31,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 124448e5c989597361f678b290fe345968f0cf08
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: c7c852033d5835c4da4cc7f1e3bdf5d20472439c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自定义菜单和工具栏
 在自定义 Visual Studio 时，不仅可以添加和删除工具栏及菜单栏上的菜单，还可以添加和删除任何给定工具栏或菜单上的命令。  

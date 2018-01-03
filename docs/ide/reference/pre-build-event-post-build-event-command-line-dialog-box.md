@@ -37,11 +37,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d2ec0c94de336adf2c8fd10946466aafcecc72a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f9f928149adf689113e6257efaa06e94b467c95f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>预生成事件/生成后事件命令行对话框
 可以直接在编辑框中键入[“项目设计器”>“生成事件页”(C#)](../../ide/reference/build-events-page-project-designer-csharp.md)的预生成或生成后事件，或者可以从可用宏的列表中选择预生成和生成后宏。  
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/31/2017
 |`$(TargetFileName)`|生成的主输出文件的文件名称（使用基名称和文件扩展名进行定义）。|  
 |`$(TargetExt)`|生成的主输出文件的文件扩展名。 文件扩展名之前包括“.”。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中指定自定义生成事件](../../ide/specifying-custom-build-events-in-visual-studio.md)   
  [“项目设计器”->“生成事件”页 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)   
  [如何：指定生成事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   

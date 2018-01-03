@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74919ddaa31bc7857a7bb9c30264830757f336b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fff5fdc6b523038945d94d61e27c083278d6fb25
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="span-markers"></a>范围标记
 范围标记表示应用程序一个有意义的阶段。 例如，可以用范围表示正在处理某特定工作项的时间间隔。 范围的长度表示相应的应用程序阶段的持续时间。 下图显示并发可视化工具中的一个范围：  
@@ -37,6 +38,6 @@ ms.lasthandoff: 10/31/2017
  ![并发可视化工具中的聚合范围](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
 范围聚合标记  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)   
  [并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)

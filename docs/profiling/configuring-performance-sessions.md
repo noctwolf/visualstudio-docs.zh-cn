@@ -17,11 +17,12 @@ caps.latest.revision: "36"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bc896429c3d9e9307fd17a7727228770735af64
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9fbcd3e98768ddda7cfb32070fc613e341fee0ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuring-performance-sessions"></a>配置性能会话
 通过使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具，可以收集大量各种应用程序类型的性能数据。 本节演示如何使用性能会话的“性能向导”属性和目标二进制文件配置分析工具以收集你感兴趣的数据。 分析工具配置属性还可用来控制分析运行中收集的数据量。 有关详细信息，请参阅[控制数据收集](../profiling/controlling-data-collection.md)。  
@@ -40,5 +41,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-sections"></a>相关章节  
  [控制数据收集](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [性能资源管理器](../profiling/performance-explorer.md)

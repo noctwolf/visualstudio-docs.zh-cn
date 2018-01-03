@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3732c842d182698ecb8b43af3e5ebc5831385433
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8ca1f5d0c310fa4f9d75f27c6baf73f7a230e87e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setting-general-performance-session-options"></a>设置性能会话的常规选项
 可以在性能会话的属性对话框的“常规”页上设置 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具性能会话的收集方法和分析数据命名约定。 若要从“性能资源管理器”中打开此对话框，请右键单击性能会话，然后单击“属性”。  

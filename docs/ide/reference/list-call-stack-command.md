@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 178f219cf25ccddea0121d6c565cb5f9e99d3b33
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 71095bd7ec4b856c5fbee73e13be27dcd9abdaf4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-call-stack-command"></a>“列出调用堆栈”命令
 显示当前调用堆栈。  
@@ -35,7 +36,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 [/ShowExternalCode:yes|no] [Thread:n] [index]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `index`  
  可选。 设置当前堆栈帧且不显示任何输出。  
   
@@ -46,28 +47,28 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
  可选。 要显示的调用堆栈的最大数量。 默认值为无限制。  
   
  /ShowTypes:`yes`|`no` [or] /T:`yes`|`no`  
- 可选。 指定是否显示参数类型。 默认值为 `yes`。  
+ 可选。 指定是否显示参数类型。 默认值是 `yes`。  
   
  /ShowNames:`yes``no` [or] /N:`yes``no`  
- 可选。 指定是否显示参数名称。 默认值为 `yes`。  
+ 可选。 指定是否显示参数名称。 默认值是 `yes`。  
   
  /ShowValues:`yes``no` [or] /V:`yes``no`  
- 可选。 指定是否显示参数值。 默认值为 `yes`。  
+ 可选。 指定是否显示参数值。 默认值是 `yes`。  
   
  /ShowModule:`yes``no` [or] /M:`yes``no`  
- 可选。 指定是否显示模块名称。 默认值为 `yes`。  
+ 可选。 指定是否显示模块名称。 默认值是 `yes`。  
   
  /ShowLineOffset:`yes``no` [or] /#:`yes``no`  
- 可选。 指定是否显示线偏移。 默认值为 `no`。  
+ 可选。 指定是否显示线偏移。 默认值是 `no`。  
   
  /ShowByteOffset:`yes``no` [or] /B:`yes``no`  
- 可选。 指定是否显示字节偏移。 默认值为 `no`。  
+ 可选。 指定是否显示字节偏移。 默认值是 `no`。  
   
  /ShowLanguage:`yes``no` [or] /L:`yes``no`  
- 可选。 指定是否显示语言。 默认值为 `no`。  
+ 可选。 指定是否显示语言。 默认值是 `no`。  
   
  /IncludeCallsAcrossThreads:`yes``no` [or] /I:`yes`|`no`  
- 可选。 指定是否包括对其他线程的调用或包括来自其他线程的调用。 默认值为 `no`。  
+ 可选。 指定是否包括对其他线程的调用或包括来自其他线程的调用。 默认值是 `no`。  
   
  /ShowExternalCode:`yes`|`no`  
  可选。 指定是否为调用堆栈显示“仅我的代码”。 “仅我的代码”关闭时，将显示所有非用户代码。 “仅我的代码”开启时，非用户代码在调用堆栈输出中显示为 `[external]`。  
@@ -98,7 +99,7 @@ kb 2
 >Debug.CallStack /Count:4 /ShowTypes:yes  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“列出反汇编”命令](../../ide/reference/list-disassembly-command.md)   
  [“列出线程”命令](../../ide/reference/list-threads-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   

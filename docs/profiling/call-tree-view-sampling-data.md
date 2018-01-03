@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82c34ef71777c42b2fa743817d731a66b2b8bee9
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 3759133ef7a2be2a7c4c7d04d1b2d444269b7005
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view---sampling-data"></a>“调用关系树”视图 - 采样数据
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/11/2017
   
  设置根节点后，将从视图中排除所选节点的子树之外的所有其他条目。 若要将根节点重置回原始节点，请在“调用树视图”窗口中右键单击并选择“重置根节点”。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
@@ -55,7 +56,7 @@ ms.lasthandoff: 11/11/2017
 |**非独占样本数**|当调用树中的父函数调用此函数时，此函数中收集的样本数。 此数值包括此函数调用的函数中收集的样本。|  
 |**非独占样本数百分比**|调用关系树中的父函数调用此函数时，分析运行中属于此函数的非独占样本的所有样本数的百分比。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“调用关系树”视图 - 探查器采样数据](../profiling/call-tree-view-sampling-data.md)   
  [“调用关系树”视图 - 采样](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   

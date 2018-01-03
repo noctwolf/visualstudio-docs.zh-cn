@@ -13,11 +13,12 @@ caps.latest.revision: "28"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6152cfe60a7628ce830cbf589a6808f5ca87fae2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-functions"></a>项函数
 从 MSBuild 4.0 开始，任务和目标中的代码可以调用项函数来获取项目中各项的相关信息。 这些函数简化 Distinct() 项的获取过程，并且比循环遍历项的速度更快。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
 |`Reverse`|`@(MyItem->Reverse())`|按相反顺序返回项。|  
 |`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|返回 `boolean`，指示是否有任何项具有给定的元数据名和值。 比较不区分大小写。|  
 |`ClearMetadata`|`@(MyItem->ClearMetadata())`|返回清除了元数据的项。 仅保留 `itemspec`。|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|返回具有给定元数据名的项。 比较不区分大小写。|  
+|`HasMetadata`|`@(MyItem->HasMetadata("MetadataName"))`|返回具有给定元数据名的项。 比较不区分大小写。|  
 |`Metadata`|`@(MyItem->Metadata("MetadataName"))`|返回具有元数据名的元数据的值。|  
 |`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|返回具有给定元数据名和值的项。 比较不区分大小写。|  
   
@@ -101,5 +102,5 @@ ms.lasthandoff: 10/31/2017
   -->  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项](../msbuild/msbuild-items.md)

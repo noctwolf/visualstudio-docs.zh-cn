@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 78dc3c36a7513a04afd8f8e136996c3f896291e2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 42d412e576ddf9ca53f79b7349d99b87b9ef3238
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定生成事件 (Visual Basic)
 Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译过程的一部分的其他操作。 预生成事件发生于编译之前；生成后事件发生于编译之后。  
@@ -164,7 +165,7 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理编译属性](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
  [“项目设计器”->“编译”页 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [“项目设计器”->“发布”页](../ide/reference/publish-page-project-designer.md)   

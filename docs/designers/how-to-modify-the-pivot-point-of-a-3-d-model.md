@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1f0c356df742f279e60d81a060551530be49ac9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 603b3f57bb2b9a1e9c99a4ca3870c38bc569d620
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>如何：修改三维模型的透视点
 本文档说明如何使用模型编辑器修改三维模型的透视点。 透视点是空间中的点，定义用于旋转和缩放的对象的数学中心。  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
   
  ![具有已修改透视点的房屋模型](../designers/media/digit-modified-model.png "Digit-Modified-Model")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：创建基本三维模型](../designers/how-to-create-a-basic-3-d-model.md)   
  [模型编辑器](../designers/model-editor.md)

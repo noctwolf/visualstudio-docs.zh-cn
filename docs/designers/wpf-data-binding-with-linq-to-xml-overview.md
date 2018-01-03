@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b18f5169558067b67795e983e93ca07141ae8be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44f8e1bde92cec70264beea8e9a62205ec0c2e8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>使用 LINQ to XML 进行 WPF 数据绑定概述
 本主题介绍 <xref:System.Xml.Linq> 命名空间中的动态数据绑定功能。 这些功能可用作 Windows Presentation Foundation (WPF) 中用户界面 (UI) 元素的数据源。  
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
   
  为了实现 WPF 动态绑定，需要与 <xref:System.Windows.Data> 命名空间提供的功能（特别是 <xref:System.Windows.Data.Binding> 类）一起使用动态属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 LINQ to XML 进行 WPF 数据绑定](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [LINQ to XML 动态属性](../designers/linq-to-xml-dynamic-properties.md)   
  [WPF 中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)   

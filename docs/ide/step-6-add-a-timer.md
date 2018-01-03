@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d4a31cd461f470c7b510be02c33dd1744f7ed616
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 530b57b0f8a39990d37dc8cd25ac4c7bacba5a6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-add-a-timer"></a>步骤 6：添加计时器
 接下来，你要向匹配游戏中添加“Timer”控件。 计时器等待指定的毫秒数后，触发一个称为“Tick”的事件。 这对于启动操作或定时重复操作很有用。 在本例中，你将使用一个计时器，让玩家开始选择两个图标，而如果图标不匹配，则在短暂时间后再次隐藏这两个图标。  

@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb474e832f815453fd84ba35bc3680b961e17954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-components-tab"></a>工具箱，“组件”选项卡
 显示可以添加到 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 和 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 设计器的组件。 除 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 附带的 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 组件（如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 组件）外，还可向此选项卡添加自己的组件或第三方组件。有关详细信息，请参阅[如何：操作工具箱选项卡](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db)。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  此外，还有一个基于系统的 <xref:System.Timers.Timer>，可将其添加到“工具箱”。此 <xref:System.Timers.Timer> 针对服务器应用程序进行了优化，Windows 窗体 <xref:System.Windows.Forms.Timer> 最适合在 Windows 窗体上使用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用组件编程](http://msdn.microsoft.com/Library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)   
  [组件编程演练](http://msdn.microsoft.com/Library/373cacf7-479e-4b05-991c-5cb18824e913)   
  [工具箱](../../ide/reference/toolbox.md)   

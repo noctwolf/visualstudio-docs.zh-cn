@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38f344baa9fd1f5b2ab139db496e7860d3f33bb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cfcb4fdf488233a2be7ea55b57d041641f2ea882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="perftips"></a>性能提示
 Visual Studio 调试器 *性能提示* 和调试器集成的 **“诊断工具”** 可帮助在调试时监视和分析应用的性能。  
@@ -57,6 +58,6 @@ Visual Studio 调试器 *性能提示* 和调试器集成的 **“诊断工具�
   
 2.  选中或清除 **“在调试过程中启用诊断工具”**。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
  [使用 Visual Studio 分析](../profiling/index.md)  
  [分析功能简介](../profiling/profiling-feature-tour.md)

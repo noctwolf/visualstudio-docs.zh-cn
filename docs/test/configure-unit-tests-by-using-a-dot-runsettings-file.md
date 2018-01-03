@@ -11,11 +11,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: "25"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: a02ce3721b6eb96770c9fbf074179b7afefdb97b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 36e235af45e1ce313f2f0e22ab9777d5e205dbe1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 通过使用 \*.runsettings 文件，可配置 Visual Studio 中的单元测试。 （文件名并不重要，前提是使用扩展名“.runsettings”。）例如，可以更改将运行测试的 .NET Framework、提供测试结果的目录以及在测试运行期间收集的数据。  
@@ -162,6 +163,6 @@ ms.lasthandoff: 10/27/2017
 |InProcMode|false|如果希望测试在与 MS 测试适配器相同的进程中运行，请将此值设置为 true。 此设置将提供较小的性能提升。 但是，如果测试异常退出，那么其他测试将不会继续。|  
 |AssemblyResolution|false|查找和执行单元测试时，可以指定其他程序集的路径。  例如，对与测试程序集位于不同目录中的依赖程序集使用这些路径。  若要指定路径，请使用“Directory Path”元素。  路径可以包含环境变量。<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)   
  [指定 Visual Studio 测试的测试设置](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)

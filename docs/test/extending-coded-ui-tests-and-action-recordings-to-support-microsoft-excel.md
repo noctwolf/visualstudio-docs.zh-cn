@@ -11,11 +11,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: fa2ffd383d2180b672347043dd02459473e3a608
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 72c8918d0f3396273bb0eee81cddd8f09c779592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>扩展编码的 UI 测试和操作录制以支持 Microsoft Excel
 编码的 UI 测试和操作录制的测试框架不支持的每个可能的用户界面。 它可能不支持你想要测试的特定 UI。 例如，不能立即创建编码的 UI 测试或 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 电子表格的操作录制。 但是，你可以为编码的 UI 测试框架创建自己的扩展，该扩展将通过利用编码的 UI 测试框架的扩展性支持特定的 UI。 以下主题提供的示例说明如何扩展框架以支持创建编码的 UI 测试和 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 的操作录制。 有关支持的平台的详细信息，请参阅[支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)。  
@@ -71,7 +72,7 @@ ms.lasthandoff: 10/27/2017
 ### <a name="testing-excel-with-the-sampletestproject"></a>使用 SampleTestProject 测试 Excel  
  可以在提供的测试项目（使用你可能没有的特定 Excel 版本）中运行测试，或创建你自己的测试项目并记录你自己的测试。 有关详细信息，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   

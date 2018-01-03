@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d94a31fbb1c0fca649f53496ff39fe36527c013
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: a20c3cff1ee86e0dc0a9530e9ac75aabe881bacb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>使用探查器命令行从 .NET Framework 服务收集内存数据
 本部分介绍从使用命令行中使用采样方法收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服务的内存分配和对象生存期数据的步骤和选项。  

@@ -34,11 +34,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 978a2709fb95a0ade74f5c67d5dc774823ded6a3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: a5a3ffde718d951181d788cca5cf57a21cbff4d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-xaml-formatting"></a>选项，文本编辑器，XAML，格式
 使用“格式设置”属性页可指定如何在 XAML 文档中设置元素和特性的格式。 若要打开“选项”对话框，请单击“工具”菜单，然后单击“选项”。 若要访问“格式设置”属性页，请依次展开“文本编辑器”、“XAML”、“格式设置”节点。  
@@ -112,7 +113,7 @@ ms.lasthandoff: 11/02/2017
 |**MarkupExtensions 的右大括号**|指定键入左括号字符 ({) 时，是否自动生成标记扩展的右括号 (})。|  
 |**用于分隔 MarkupExtension 参数的逗号**|指定在标记扩展中键入多个参数时是否生成逗号。|  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [WPF 中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
  [如何：更改 XAML 视图设置](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
  [XAML 和代码演练](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

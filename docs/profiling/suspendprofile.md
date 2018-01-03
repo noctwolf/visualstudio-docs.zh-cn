@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6b91542039544e085b6599923e9cc8dcb08d6c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fd39cc9116ffed336f45bb31b859b5f1d8b92735
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` 方法递增指定分析级别的挂起/继续计数器的值。  
@@ -106,5 +107,5 @@ void ExerciseSuspendProfile()
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 探查器 API 参考（本机）](../profiling/visual-studio-profiler-api-reference-native.md)

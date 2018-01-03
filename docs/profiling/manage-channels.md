@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 794b34365dfa025c6ade7f2d7a2f1216c2b4e4ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3915606f9bfaaf2a747ecd5ede0195116c346f0b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manage-channels"></a>管理通道
 在并发可视化工具的“线程视图”中，可以整理进程的各个通道，以便查看特定模式。 您可以将通道排序、上下移动，以及隐藏或显示这些通道。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="group-markers-by-thread"></a>按线程对标记进行分组  
  如果跟踪包含标记事件，则可以使用此命令，按照生成标记事件的线程对标记通道进行分组。  磁盘通道将被移动到列表的顶部，而 GPU 通道将被移动到底部。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [缩放控件（线程视图）](../profiling/zoom-control-threads-view.md)   
  [打开/关闭度量模式](../profiling/measure-mode-on-off.md)   
  [“线程”视图](../profiling/threads-view-parallel-performance.md)

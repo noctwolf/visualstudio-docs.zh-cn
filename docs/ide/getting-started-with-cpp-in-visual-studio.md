@@ -5,21 +5,22 @@ ms.date: 12/04/2017
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
 author: corob-msft
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: c86e7bcfe43eeaa6554efeed6654f34e140d9ea7
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+dev_langs: CPP
+ms.workload: cplusplus
+ms.openlocfilehash: 9c0a7a8e206704e1b7cd694a91f376f4ec531d6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 入门
 
 完成本快速入门后，你会熟悉通过 Visual Studio 用 C++ 语言开发应用程序时可使用的许多工具和对话框。 了解在集成开发环境 (IDE) 中工作的更多知识后，即可创建“Hello, World”风格的控制台应用程序。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 即使不熟悉 C++，你也可完成此快速入门，但你应该要了解一些常规的编程和调试概念。 Visual Studio 文档不会教你如何用 C++ 语言编程。 ISO C++ 网站上的[入门](https://isocpp.org/get-started)页中提供了优质 C++ 学习资源指南。
 
@@ -146,12 +147,12 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
 此生成完成后，应用创建完成，可在任何命令提示符窗口中复制和运行该应用。 这个应用的作用可能不大，但这是一个好的开始。
 
-祝贺你完成此快速入门！ 如要了解更多示例，请参阅 [Visual Studio 示例](../ide/visual-studio-samples.md)。
+祝贺你完成此快速入门！ 如要了解更多示例，请参阅 [Visual Studio Samples](../ide/visual-studio-samples.md)。
 
 ## <a name="see-also"></a>请参阅
 
 [使用 Visual Studio IDE 进行 C++ 桌面开发](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
 [演练：使用 Visual C# 或 Visual Basic 创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Visual Studio 的工作效率提示](../ide/productivity-tips-for-visual-studio.md)  
+[Productivity Tips for Visual Studio](../ide/productivity-tips-for-visual-studio.md)（Visual Studio 的工作效率提示）  
 [Visual Studio 示例](../ide/visual-studio-samples.md)  
 [Visual Studio 开发入门](../ide/get-started-developing-with-visual-studio.md)

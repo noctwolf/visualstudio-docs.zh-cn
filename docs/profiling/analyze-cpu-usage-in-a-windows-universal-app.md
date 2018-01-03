@@ -13,11 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 59669f0430760bb98dd0cb63e05f433cb3a1fe54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0eb22a7ac23c0848984ba872ccbcb2e40fb61fe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-cpu-usage-in-a-universal-windows-app-uwp"></a>分析通用 Windows 应用 (UWP) 中的 CPU 使用率
 ![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  构建该应用并对其进行测试。该应用程序十分简单，可显示一些常见 CPU 使用率数据分析案例。  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a>收集 CPU 使用率数据  
+##  <a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量数据  
  ![在模拟器中运行应用的发布版本](../profiling/media/cpu_use_wt_setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1.  在 Visual Studio 中，将部署目标设置为“模拟器”并将解决方案配置设置为“发布”。  
@@ -311,6 +312,6 @@ namespace CpuUseDemo
 }  
   
 ```
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
  [使用 Visual Studio 分析](../profiling/index.md)  
  [分析功能简介](../profiling/profiling-feature-tour.md)

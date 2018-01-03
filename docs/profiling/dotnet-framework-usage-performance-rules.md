@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1db182507eb351bd36d7d4d517e19b9902f595ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ffc5a37378248e331e9a8b594f6d39f842fa3e78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用性能规则
 .Net Framework 使用类别中的性能规则标识可以优化的特定方法，并且还标识可调查性能问题的更为通用的使用模式，例如垃圾回收和锁争用。  

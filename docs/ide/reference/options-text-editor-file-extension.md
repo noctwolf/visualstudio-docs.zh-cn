@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68c2565540d8b22d659b40d5cab4a443cac6439f
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 1f3f21c13c30abafdb59e5e997210cd0d7b4fcfb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-file-extension"></a>选项，文本编辑器，文件扩展名
 通过此“选项”对话框，可以指定 Visual Studio 集成开发环境 (IDE) 对具有特定文件扩展名的所有文件的处理方式。 对于输入的每个“扩展名”，可以选择一个编辑体验。 这样便可选择在某种类型的哪些文档中打开 IDE 编辑器或设计器。 若要显示这些选项，请从“工具”菜单中选择“选项”，展开“文本编辑器”节点并选择“文件扩展名”。  
@@ -54,5 +55,5 @@ ms.lasthandoff: 11/02/2017
  无扩展名文件选项  
  提供与“编辑器”相同的列表。 选择打开不具有此文件扩展名的文档所使用的 IDE 编辑器或设计器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：管理编辑器模式](../../ide/how-to-manage-editor-modes.md)

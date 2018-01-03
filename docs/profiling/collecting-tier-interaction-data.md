@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae321a8d09bb52b6ef835ab6469fd161013d4eeb
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: c12d279541e60353a9e6e4354a16870713498b66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-tier-interaction-data"></a>收集层交互数据
 层交互分析提供有关多层应用程序函数执行时间的附加信息，这些应用程序通过 ADO.NET 服务与数据库进行通信。 仅针对同步函数调用收集数据。  
@@ -47,5 +48,5 @@ ms.lasthandoff: 11/11/2017
   
 3.  在“性能资源管理器”中，选择“目标”节点，然后指定要分析的项目、可执行文件或网站。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“层交互”视图](../profiling/tier-interactions-view.md)

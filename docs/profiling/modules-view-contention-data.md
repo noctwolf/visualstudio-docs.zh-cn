@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae0bd48af8c9fbaaaf8c38f50a2fe8233f15cb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5503422ece5847018e8d321dba9cf674dff9e623
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---contention-data"></a>“模块”视图：争用数据
 争用数据的“模块”视图显示按分析数据中采样的模块分组的并发数据。 每个模块都是一个层次结构树的根。 模块节点下列出其中发生争用事件的模块的函数。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
   
  下表介绍争用数据的“模块”视图中各列的值。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**独占阻塞的时间**|-   对于函数，为阻塞此函数执行函数体内代码的时间。 不包含此函数调用的函数中的阻塞时间。<br />-   对于模块，为模块中各个函数独占阻塞时间之和。<br />-   对于行或指令，为阻塞此行或指令执行的时间。|  
 |**独占阻塞的时间百分比**|-   对于函数或模块，为此函数或模块的独占阻塞时间占分析运行期间所有阻塞时间的百分比。<br />-   对于行或指令，为阻塞此行或指令执行的时间占分析运行期间所有阻塞时间的百分比。|  
@@ -39,12 +40,12 @@ ms.lasthandoff: 10/31/2017
 |**函数行号**|此函数在源文件中的起始行号。|  
 |**模块名**|包含函数、行或指令指针的模块的名称。|  
 |**模块路径**|包含模块、函数、行或指令指针的模块的路径。|  
-|**Name**|模块或函数的名称。|  
+|**名称**|模块或函数的名称。|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
 |**源文件**|此函数的定义所在的源文件。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“模块”视图](../profiling/modules-view.md)   
  [“模块”视图 - 检测](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   

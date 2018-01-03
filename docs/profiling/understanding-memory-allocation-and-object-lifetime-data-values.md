@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2df71ef2498e3e5cf1f1bfef1dd16867d3e8991
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eade1af6d21d4068d96f021d43f60c0ca38bb33c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>了解内存分配数据值和对象生存期数据值
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的 .NET 内存分配分析工具收集有关在分配中创建或在垃圾回收中销毁的对象大小和数量的信息，并收集事件发生时有关函数调用堆栈的其他信息。 调用堆栈是一种动态结构，用于存储有关在处理器中执行的函数的信息。  

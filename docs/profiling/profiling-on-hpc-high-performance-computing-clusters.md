@@ -24,16 +24,17 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e83f20106d4165e861c23ade178a86838a41f58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53fea09175d9d9653dd4552832cd511ed7900b8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>针对 HPC（高性能计算）群集进行分析
 可以使用 [!INCLUDE[vsPreExt](../profiling/includes/vspreext_md.md)] 或 [!INCLUDE[vsUltExt](../profiling/includes/vsultext_md.md)] 分析工具的采样方法对 Microsoft Windows HPC 群集的计算节点进行分析。 有关 HPC 的详细信息，请参阅 Microsoft 网站上的 [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  若要对 HPC 计算节点进行分析，必须执行以下操作：  
   
 -   在与 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 相同的计算机上安装 Microsoft HPC Pack 2008。 计算机不必是 HPC 群集的一部分。 可以在 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkID=177414)安装 HPC 包。  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
     -   若要分析不在打开的项目中的二进制文件，请选择“可执行文件(.EXE 文件)”选项。  
   
-4.  单击“下一步” 。  
+4.  单击 **“下一步”**。  
   
 5.  在向导的第三页上：  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
   
     -   在“部署位置”中，指定 HPC 服务器用于为部署暂存映像的目录的路径。  
   
-6.  单击“下一步” 。  
+6.  单击 **“下一步”**。  
   
 7.  在向导的第四页上：  
   
@@ -99,7 +100,7 @@ ms.lasthandoff: 10/31/2017
   
          若要分析在 HPC 群集中的特定节点上运行的进程，请选择“针对节点分析”选项，然后从下拉列表中选择节点。  
   
-8.  单击“下一步” 。  
+8.  单击 **“下一步”**。  
   
 9. 在向导的第五页上，可以选择立即启动探查器和分析进程，或以后使用性能资源管理器启动分析。  
   
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="hpc-launch-properties"></a>HPC 启动属性  
   
-|属性|说明|  
+|属性|描述|  
 |--------------|-----------------|  
 |**头节点**|指定在分析运行中充当 HPC 头节点的计算机。|  
 |**进程数**|指定要在分析的应用程序中运行的应用程序实例数。|  
@@ -137,7 +138,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="advanced-properties"></a>高级属性  
   
-|属性|说明|  
+|属性|描述|  
 |--------------|-----------------|  
 |**项目名称**|当前 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 项目或解决方案的名称。|  
 |**探查器停止时进行清理**|为 true 时，删除已部署到执行目录的二进制文件。 在此步骤中不会删除用户程序创建的文件和目录。 如果执行目录和部署目录是由 IDE 创建的，则 IDE 会尝试删除它们，但是如果它们包含不是由 IDE 部署的文件，则 IDE 不会执行此操作。|  

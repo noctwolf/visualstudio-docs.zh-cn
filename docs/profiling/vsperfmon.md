@@ -20,11 +20,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fe5e6b129fd8c5f1e8ce20bb902b977a66f1035
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8700cf317e60f8f842186e04cc36f4037172aa2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 可以使用 VSPerfMon 工具收集应用程序的性能数据；通常，由 VSPerfCmd.exe 启动该工具。 VSPerfMon 显示有关进程附加或分离的其他详细信息，而使用 VSPerfCmd 工具则无法获取这些信息。 若要查看此信息，请在单独的窗口中启动 VSPerfMon。 若要调用 VSPerfMon，请使用以下语法：  
@@ -35,7 +36,7 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
   
  下表描述了 VSPerfMon 工具选项：  
   
-|选项|说明|  
+|选项|描述|  
 |-------------|-----------------|  
 |**U**|以 Unicode 形式写入重定向的控制台输出。  这必须是指定的第一个选项。|  
 |**OUTPUT:** `<` *文件名* `>`|将输出重定向到指定的文件名。|  
@@ -46,10 +47,10 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 |**USER:** `[` *域* `\]` *用户名*|使客户端可以用指定的帐户访问性能监视器。|  
 |**CROSSSESSION**|启用跨会话分析。|  
 |**COUNTER** `:cfg`|使用检测 (TRACE) 分析方法时，指定要在每个检测点收集的 CPU 计数器。 可以通过指定多个计数器选项收集多个计数器数据。<br /><br /> 使用以下语法指定计数器 (*cfg*) 数据：<br /><br /> **CounterName** [**,Reload**[,**FriendlyName**]]<br /><br /> -   **CounterName** 是 VSPerfCmd /QueryCounters 命令返回的计数器的名称。<br />-   **Reload** 是计数器事件采样间隔。 不要将 *Reload* 与检测方法一起使用。<br />-   指定后，**FriendlyName** 将替换分析工具报告列名称中的 **CounterName**。|  
-|**WINCOUNTER** `:path`|指定要与标记数据一起包括的 Windows 性能计数器。 `path` 是 PDH 计数器路径格式的 Windows 性能计数器字符串。 例如：<br /><br /> \Processor(0)\\% Processor Time<br /><br /> \System\Context Switches/sec|  
+|**WINCOUNTER** `:path`|指定要与标记数据一起包括的 Windows 性能计数器。 `path` 是 PDH 计数器路径格式的 Windows 性能计数器字符串。 例如:<br /><br /> \Processor(0)\\% Processor Time<br /><br /> \System\Context Switches/sec|  
 |**AUTOMARK** `:n`|指定使用 /WINCOUNTER 时自动标记之间的时间间隔（以毫秒为单位）。 向上舍入到最接近 500 毫秒。<br /><br /> 使用 0 以禁用自动标记。 （如果未指定，则默认为 500 毫秒）|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   

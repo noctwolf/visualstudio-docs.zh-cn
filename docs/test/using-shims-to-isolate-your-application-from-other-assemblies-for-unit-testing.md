@@ -11,11 +11,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: b95b4754af66c39d741b7df8a74a433ff812f834
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8ddd21dde8057475c1169cf4ef3d43df84a1c96d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>使用填充码针对单元测试将应用程序与程序集隔离
 **垫片类型**是 Microsoft Fakes 框架使用的两种技术之一，方便你轻松地将受测组件与环境隔离开来。 填充码会将对特定方法的调用转换为在测试中编写的部分代码。 很多方法会依赖于外部条件而返回不同的结果，但填充码处于测试的控制之下，并且可以在每次调用时返回一致的结果。 这会使您的测试更易于编写。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/27/2017
   
  请观看[视频（1 小时 16 分钟）：在 Visual Studio 2012 中使用 Fakes 测试不可测试代码](http://go.microsoft.com/fwlink/?LinkId=261837)  
   
-## <a name="in-this-topic"></a>主题内容  
+## <a name="in-this-topic"></a>在本主题中  
  在本主题中，你将了解以下内容：  
   
  [示例：千年虫问题](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
@@ -134,7 +135,7 @@ public void Y2kCheckerTest() {
  正确释放每个填充码上下文至关重要。 根据经验，请始终调用 `ShimsContext.Create` 语句内的 `using`，以便确保清除已注册的填充码。 例如，您可能为某一测试方法注册了填充码，而且该方法会将 `DateTime.Now` 方法替换为始终返回 2000 年 1 月 1 日的委托。 如果忘记清除测试方法中的已注册填充码，则剩余的测试将始终返回 2000 年 1 月 1 日作为 DateTime.Now 值。 这可能会让人感到惊讶和困惑。  
   
 ###  <a name="WriteShims"></a>编写包含垫片的测试  
- 在测试代码中，为要虚设的方法插入 *detour*。 例如：  
+ 在测试代码中，为要虚设的方法插入 *detour*。 例如:  
   
 ```csharp  
 [TestClass]  
@@ -549,7 +550,7 @@ ShimFile.WriteAllTextStringString = shim;
 ### <a name="guidance"></a>指导  
  [使用 Visual Studio 2012 测试连续交付 - 第 2 章：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Microsoft Fakes 隔离受测代码](../test/isolating-code-under-test-with-microsoft-fakes.md)   
  [Peter Provost 的博客：Visual Studio 2012 填充码](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
  [视频（1 小时 16 分钟）：在 Visual Studio 2012 中使用 Fakes 测试不可测试代码](http://go.microsoft.com/fwlink/?LinkId=261837)

@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8aaa76694a60aad5c8bfcc2dd6d26feac03ab6e1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bd9959d6883eec10f048733d3119206cc5dea3bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>选择工具箱项，WPF 组件
 “选择工具箱项”对话框中的此选项卡显示了在本地计算机上可用的 Windows Presentation Foundation (WPF) 控件列表。 若要显示此列表，请从“工具”菜单中选择“选择工具箱项”，从而显示“选择工具箱项”对话框，然后选择其中的“WPF 组件”选项卡。若要对所列组件排序，请选择任意列标题。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 11/02/2017
 
 “WPF 组件”选项卡上的列包含下列信息：  
 
-名称  
+name  
 列出计算机注册表中条目的 WPF 控件的名称。  
 
 命名空间  

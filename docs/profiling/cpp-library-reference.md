@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f477577f7c1ef95f03f5f68bf93e11a0f8b6488
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 4aa6d790276cf6dd125fc94d02685a91f50525ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="c-library-reference"></a>C++ 库参考
 此节包含并发可视化工具 SDK 的参考信息。  
@@ -28,5 +29,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="in-this-section"></a>本节内容  
  [并发命名空间（并发可视化工具）](../profiling/concurrency-namespace-concurrency-visualizer.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)

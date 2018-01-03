@@ -11,11 +11,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 6c8e2cac9d6f2622bacae0b27cecc8f074ea3a15
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 009ae62acc9685ee0d004976ce86b751cc0d1852
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>对编码的 UI 测试使用不同的 Web 浏览器
 编码的 UI 测试可通过使用 Internet Explorer 记录你的测试来自动化 Web 应用程序的测试。 然后，你可以自定义你的测试并使用 Internet Explorer 或其他适用于这些 Web 应用程序的浏览器类型来播放测试。  
@@ -99,7 +100,7 @@ ms.lasthandoff: 10/27/2017
  你使用的 [!INCLUDE[vs2011_first](../test/includes/vs2011_first_md.md)] 版本可能不支持使用各种 Web 浏览器的编码的 UI 测试。 若要使用此类编码的 UI 测试，你必须使用 Visual Studio Enterprise。  
   
  *我还应该知道什么？*  
- **注意**  
+ **备注**  
   
 -   ![先决条件](../test/media/prereq.png "Prereq") 不支持 Apple Safari Web 浏览器。  
   
@@ -151,7 +152,7 @@ ms.lasthandoff: 10/27/2017
 ### <a name="forum"></a>论坛  
  [Visual Studio UI 自动测试（包括编码的 UI）](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
  [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [使用编码的 UI 测试日志分析编码的 UI 测试](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

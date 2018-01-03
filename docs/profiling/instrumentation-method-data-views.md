@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 595297dbafb35ed8b3bb376ce5ddfee484ac2442
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: caf3c6168e81b7384fbf056f5365614950b24ff2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instrumentation-method-data-views"></a>检测方法数据视图
 本节包含有关使用检测方法生成的探查器数据文件的视图和报告的参考信息。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
  [“摘要”视图](../profiling/summary-view-instrumentation-data.md)  
  列出使用时间最长的函数和大部分时间单独工作的函数。  
   
- [“调用树”视图](../profiling/call-tree-view-instrumentation-data.md)  
+ [“调用关系树”视图](../profiling/call-tree-view-instrumentation-data.md)  
  显示层次结构树中各个函数的执行路径。  
   
  [“模块”视图](../profiling/modules-view-instrumentation-data.md)  
@@ -57,5 +58,5 @@ ms.lasthandoff: 10/31/2017
  [资源争用数据视图](../profiling/resource-contention-data-views.md)  
  有关使用线程争用方法生成的探查器数据文件的视图和报告的参考信息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [了解检测数据值](../profiling/understanding-instrumentation-data-values.md)

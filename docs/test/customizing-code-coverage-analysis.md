@@ -11,11 +11,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 64115171c64faf0f62b6530c37fa53c6631ac1d6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2bbac737c6f5bbb3dbe99b0ceae2eb648bcf4295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-code-coverage-analysis"></a>自定义代码覆盖率分析
 默认情况下，Visual Studio Code 覆盖率工具将分析单元测试过程中加载的所有解决方案程序集 (.exe/.dll)。 建议保留此默认设置，因此它在大多数时间很有用。 有关详细信息，请参阅[使用代码覆盖率确定正在测试的代码数量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。  
@@ -325,6 +326,6 @@ Included items must then not match any entries in the exclude list to remain inc
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用代码覆盖率确定受测代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [单元测试代码](../test/unit-test-your-code.md)

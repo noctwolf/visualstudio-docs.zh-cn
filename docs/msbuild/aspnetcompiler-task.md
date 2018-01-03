@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 4cb7e3ab70fb2820ed2ecdb38b5876c5daf956fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 3299efa1675e4e9d173379fbb00f09c1d8ece414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 任务
 `AspNetCompiler` 任务包装 aspnet_compiler.exe，后者是用于预编译 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序的实用工具。  
@@ -70,6 +71,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

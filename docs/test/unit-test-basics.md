@@ -12,11 +12,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: ec6d6bc63094b361f7663e640d9133add3bfbfd0
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: b71e1797b7ba5378b7a8396f56f97cc9a0c63b2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-test-basics"></a>单元测试基础
 通过创建和运行单元测试，检查你的代码是否按预期工作。 因为可将程序的功能分为可作为单个单元测试的独立可测试行为，所以它叫做单元测试。 Visual Studio 测试资源管理器提供了一种灵活而高效的方法运行你的单元测试并在 Visual Studio 中查看其结果。 Visual Studio 为托管和本机代码安装了 Microsoft 单元测试框架。 使用 *单元测试框架* 创建单元测试，运行测试，并报告这些测试的结果。 进行更改后重新运行单元测试，以测试代码仍能正常工作。 Visual Studio Enterprise 可以使用 [Live Unit Testing](live-unit-testing-intro.md) 自动执行此操作，后者会检测受代码更改影响的测试，并在你输入时在后台运行它们。
@@ -262,7 +263,7 @@ public void My_Test ()
 1.  在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。  
   
     > [!NOTE]
-    >  因为测试方法可以按任何顺序运行，请在想要调试的所有测试方法中设置断点。  
+    >  因为测试方法可以按任何顺序运行，请在你想要调试的所有测试方法中设置断点。  
   
 2.  在测试资源管理器中，选择测试方法，然后从快捷菜单选择“调试选定的测试”  。  
   

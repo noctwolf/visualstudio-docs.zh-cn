@@ -18,11 +18,12 @@ caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2edee236382b15c8f623acd1f4a650ef9628dd68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 136e488f78090211f4c63f685338d61556982b9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild 保留属性和已知属性
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供了一组预定义的属性，这些属性存储有关项目文件和 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 二进制文件的信息。 这些属性的计算方式与其他 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 属性相同。 例如，要使用 `MSBuildProjectFile` 属性，应键入 `$(MSBuildProjectFile)`。  
@@ -59,5 +60,5 @@ ms.lasthandoff: 10/31/2017
 |`MSBuildToolsPath`|与 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]的值相关联的 `MSBuildToolsVersion` 版本的安装路径。<br /><br /> 不要将最终的反斜杠包含在路径中。<br /><br /> 不能重写此属性。|保留|  
 |`MSBuildToolsVersion`|用于生成项目的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工具集版本。<br /><br /> 注意：[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工具集由用于生成应用程序的任务、目标和工具组成。 工具包括编译器例如 csc.exe 和 vbc.exe。 有关详细信息，请参阅 [工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)和[标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)。|保留|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 参考](../msbuild/msbuild-reference.md) [MSBuild 属性](../msbuild/msbuild-properties.md)

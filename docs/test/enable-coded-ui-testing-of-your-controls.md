@@ -11,16 +11,17 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: "22"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 0d9e28ee58dde41703f2149534f542b08d55b9ec
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d44026c2a4424cbacd16af57d3fb132d23ba8068
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>启用控件的编码的 UI 测试
 如果实现对编码的 UI 测试框架的支持，则可以更轻松地测试你的控件。 您能够以增量方式增加支持级别。 您可以先从支持录制、播放和属性验证开始。 在此基础上，可以允许编码的 UI 测试生成器识别控件的自定义属性，并提供自定义类以便从生成的代码访问这些属性。 你还可以帮助编码的 UI 测试生成器，使之以一种与所录制操作的目的更为接近的方法来捕获操作。  
   
- **本主题内容：**  
+ **在本主题中：**  
   
 1.  [通过实现可访问性来支持录制和播放以及属性验证](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
   
@@ -219,6 +220,6 @@ ms.lasthandoff: 10/27/2017
 ### <a name="guidance"></a>指导  
  [使用 Visual Studio 2012 测试连续交付 - 第 2 章：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Windows.Forms.AccessibleObject>   
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)

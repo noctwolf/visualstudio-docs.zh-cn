@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99865ecf81fbc7873fef43c51f543f224e281928
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a6e681c703847c970d79c1523ab12ce89e68d28
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---resource-contention-view"></a>“摘要”视图 - 资源争用视图
 “摘要”视图显示有关应用程序中线程或进程在其中挂起、同时等待访问资源的事件的信息。  
@@ -32,9 +33,9 @@ ms.lasthandoff: 10/31/2017
   
  “争用最激烈的资源”包括每个资源的以下数据。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
-|**Name**|资源的名称。|  
+|**名称**|资源的名称。|  
 |**争用数百分比**|属于针对此资源的争用的争用事件占分析数据中的所有争用事件的百分比。|  
   
 ## <a name="most-contended-thread"></a>争用最激烈的线程  
@@ -45,5 +46,5 @@ ms.lasthandoff: 10/31/2017
 |列|描述|  
 |------------|-----------------|  
 |**ID**|线程标识符。|  
-|**Name**|拥有此线程的进程的名称。|  
+|**名称**|拥有此线程的进程的名称。|  
 |**争用数百分比**|属于针对此资源的争用的争用事件占分析数据中的所有争用事件的百分比。|

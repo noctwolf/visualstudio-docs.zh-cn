@@ -11,11 +11,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: "24"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 0440261e5d081c40701d3a2f93ccf35a7adb2fd8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b2c507d49bca2589d7c5a70d88f8819ee68d0ce5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>播放期间让编码的 UI 测试等待特定事件
 在编码的 UI 测试播放中，你可以指示测试等待某些事件发生，如某个窗口出现、进度栏消失等。 为此，请使用合适的 UITestControl.WaitForControlXXX() 方法，如下表中所述。 有关使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> 方法等待启用某个控件的编码的 UI 测试示例，请参阅[演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。  
@@ -111,7 +112,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
   
  有关其他信息，请参阅[使用 Visual Studio 2012 测试持续交付 - 第 5 章：自动化系统测试](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
  [创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   

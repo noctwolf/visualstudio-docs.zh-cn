@@ -20,11 +20,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: "85"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: af6cb2319ffb851e91ff87d7e998eeb25315e9fc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a8a7f23593e3d4056d1f3469d1d26ff6aed23882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 通过应用程序的用户界面 (UI) 来操作该应用程序的自动测试称为编码的 UI 测试 (CUIT)。 这些测试包括对 UI 控件的功能测试。 它们使你可以验证整个应用程序（包括其用户界面）是否正常运行。 编码的 UI 测试对于在用户界面中存在验证或其他逻辑（例如在网页中）的情况特别有用。 它们也经常用于自动化现有的手动测试。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/27/2017
   
  有关编码的 UI 测试支持哪些平台和配置的详细信息，请参阅[支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)。  
   
- **主题内容**  
+ **在本主题中**  
   
 -   [创建编码的 UI 测试](#VerifyingCodeUsingCUITCreate)  
   
@@ -482,7 +483,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ### <a name="forum"></a>论坛  
  [Visual Studio UI 自动测试（包括 CodedUI）](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
  [提高代码质量](../test/improve-code-quality.md)   

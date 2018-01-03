@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ced6cbcf8340547c6a6aebd2ff30192ae2350da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 77f2f55d142f87e43f2bd3848c8dcd0b352c197e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>“高级服务设置”对话框
 使用客户端应用程序服务，可简便地从 Windows 窗体和 Windows Presentation Foundation (WPF) 应用程序访问 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登录、角色和配置文件服务。 可以使用“项目设计器”的“服务”页，配置客户端应用程序服务。 有关“服务”页的详细信息，请参阅[“项目设计器”->“服务”页](../../ide/reference/services-page-project-designer.md)。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
  “使用自定义连接字符串”  
  指定客户端服务提供程序是否将使用自定义数据存储进行本地缓存。 默认情况下，服务提供商将使用本地文件系统进行缓存。 选中此选项将自动使用默认连接字符串填充文本框。 可以保留默认连接字符串以自动生成和使用 SQL Server Compact Edition 数据库，或者可以为现有 SQL Server 数据库指定连接字符串。 有关详细信息，请参阅[如何：配置客户端应用程序服务](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)。 默认情况下清除此选项。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [客户端应用程序服务](/dotnet/framework/common-client-technologies/client-application-services)   
  [“项目设计器”->“服务”页](../../ide/reference/services-page-project-designer.md)   
  [如何：配置客户端应用程序服务](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   

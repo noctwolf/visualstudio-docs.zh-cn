@@ -21,11 +21,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 35360c057d0c18a1d6c891796f5788d5cfeab89b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 35f4d34bb96e5128e6a321041864e18c12380949
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-task"></a>Error 任务
 基于评估的条件语句，停止生成操作并记录错误。  
@@ -64,6 +65,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)

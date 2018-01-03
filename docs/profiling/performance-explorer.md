@@ -16,11 +16,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6547c139df10498c7be7c2ad13401001d38c067d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f95197bcd7315f432ce2fff2bd1e5dae1005e7e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-explorer"></a>性能资源管理器
 凭借 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具，开发人员可以衡量、评估并着力解决代码中与性能相关的问题。 这些工具已完全集成到 IDE 从而提供无缝且易于获取的用户体验。  
@@ -47,5 +48,5 @@ ms.lasthandoff: 10/31/2017
 |**以编程方式控制分析：**了解如何使用托管的和本机分析工具 API 控制直接收集自源代码的数据。|[分析工具 API](../profiling/profiling-tools-apis.md)|  
 |**分析问题疑难解答**|[性能工具问题疑难解答](../profiling/troubleshooting-performance-tools-issues.md)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析工具](../profiling/profiling-tools.md)

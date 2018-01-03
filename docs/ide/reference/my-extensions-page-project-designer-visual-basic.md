@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b95a691f3246fd3745ce90bffa7967bd5ad52d31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18817d7fd6af26c5e1ce9d021afc37d1e9da8f34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>“项目设计器”->“My 扩展”页 (Visual Basic)
 使用“项目设计器”的“My 扩展”管理项目中的 `My` 命名空间扩展。 使用 `My` 命名空间扩展可以自定义 `My` 命名空间以添加自己的自定义成员。 有关创建自定义 `My` 命名空间扩展的信息，请参阅[扩展 Visual Basic 中的 My 命名空间](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
  **删除扩展**  
  在“My 命名空间扩展”列表中选择一个或多个引用，然后单击此按钮从项目中删除 `My` 命名空间扩展。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展 Visual Basic 中的 My 命名空间](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)   
  [打包和部署自定义 My 扩展](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)   
  [扩展 Visual Basic 应用程序模型](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model)   

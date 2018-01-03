@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 143bc6af5aa42eb480d5eff736633c2df6e68979
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 35bc6ae23fdbc89f6bdeaa57bd37d5d961d87286
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 重写
 可以更改 Visual Studio IDE 中的 Help Viewer 和帮助相关功能的默认行为。 可通过创建 [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) 文件来设置各种注册表项值，从而指定某些选项。 其他选项则直接在注册表中设置。
@@ -55,7 +56,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="using-registry-editor-to-change-help-viewer-behavior"></a>使用注册表编辑器更改 Help Viewer 行为
 可通过在注册表编辑器中设置注册表项值，控制以下两种行为。  
   
-|任务|注册表项|值|数据|  
+|任务|注册表项|“值”|数据|  
 |----------|-----|------|----|
 |替代 BITS 作业优先级|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node（64 位计算机上）\Microsoft\Help\v2.3|BITSPriority|**foreground**、**high**、**normal** 或 **low**|
 |指向网络共享上的本地内容存储区|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|“*ContentStoreNetworkShare*”|

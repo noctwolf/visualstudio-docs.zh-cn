@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fe926dffa1230c5608d84e732740509a7c7e1a4a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b57de7b2cbc0838920df5f83d6d1e2bd8d733f2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 图像库
 Visual Studio 图像库包含出现在 Microsoft Visual Studio、Microsoft Windows、Office 系统和其他 Microsoft 软件的应用程序图像。 可以使用这个由 1,000 幅以上图像组成的集合创建与 Microsoft 软件外观一致的应用程序。  
@@ -33,6 +34,6 @@ Visual Studio 图像库包含出现在 Microsoft Visual Studio、Microsoft Windo
   
  图形库分为五类：通用元素、操作、批注、图标和对象。 常见元素和图标类型的自述文件中以 PDF 格式包含。 这些自述文件包括有关如何在应用程序中合理使用这些图像的信息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [安装 Visual Studio](../install/install-visual-studio.md)   
  [图像、位图和图元文件](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

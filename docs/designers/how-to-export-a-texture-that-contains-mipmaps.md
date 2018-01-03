@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04d150c517d4ac0b4f3c47c5e9e4758e24d697c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef8f94ae451902c8f7b5e5d2b5f3156d01107589
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>如何：导出包含 Mipmap 的纹理
 在项目生成阶段，图像内容管道可从源图像生成 mipmap。 当不需要手动指定每个 MIP 级别的图像内容时（可通过这样做来实现特定的效果），在生成时间生成 mipmap 可确保 mipmap 内容始终保持同步，并在运行时消除生成 mipmap 的性能成本。  
@@ -38,6 +39,6 @@ ms.lasthandoff: 10/31/2017
   
 3.  配置图像内容管道，生成 mipmap。 在“配置属性”、“图像内容管道”、“常规”页上，将“生成 Mip”属性设置为“是(/generatemips)”。  
   
-4.  选择**“确定”** 按钮。  
+4.  选择“确定”  按钮。  
   
  生成项目后，图像内容管道会将源图像从工作格式转换为指定的输出格式（包括 MIP 级别），并且结果将被复制到项目的输出目录中。

@@ -21,11 +21,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7f3ce1114f1f1b071e928128e3fea85f6a69c62a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 431171316ba98cfb6195c6cf26d6530147733e51
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 元素 (MSBuild)
 使用 `ItemDefinitionGroup` 元素可定义一组项定义，这些项定义默认为应用到项目中的所有项的元数据值。 ItemDefinitionGroup 取代使用 [CreateItem 任务](../msbuild/createitem-task.md)和 [CreateProperty 任务](../msbuild/createproperty-task.md)的需要。 有关详细信息，请参阅[项定义](../msbuild/item-definitions.md)。  
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   
  [项](../msbuild/msbuild-items.md)

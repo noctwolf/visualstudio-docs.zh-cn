@@ -22,11 +22,12 @@ caps.latest.revision: "36"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0ab37b9bf44cdac647a939ed7313a2e40eb88aea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b78c2c1276f04a53a4f7a01e70a7d98efdba0514
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 下表列出了在 Visual Studio 项目文件中定义的或者在 MSBuild 提供的 .targets 文件中包括的经常使用的属性。  
@@ -130,5 +131,5 @@ ms.lasthandoff: 10/31/2017
 |Win32Manifest|应嵌入最终程序集中的清单文件的名称。 此参数等效于 `/win32Manifest` 编译器开关。|  
 |Win32Resource|要嵌入最终程序集中的 Win32 资源的文件名。 此参数等效于 `/win32resource` 编译器开关。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [常用的 MSBuild 项目项](../msbuild/common-msbuild-project-items.md)

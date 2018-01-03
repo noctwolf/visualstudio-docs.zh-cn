@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 01dc6663c9242c1a919b47fb242343332cbc9a63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d622f1b4a71f52103d1d7a3148291dcd2dcf9129
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-data-tab"></a>工具箱，“数据”选项卡
 显示可添加到窗体和组件的数据对象。 创建具有关联设计器的项目时，将会显示“工具箱”的“数据”选项卡。 默认情况下，“工具箱”将出现在 Visual Studio 集成开发环境中；如果需要显示“工具箱”，请从“视图”菜单中选择“工具箱”。  
@@ -31,14 +32,14 @@ ms.lasthandoff: 10/31/2017
 ## <a name="ui-element-list"></a>UI 元素列表  
  若要直接转到某个组件的 .NET Framework 参考页，请针对“工具箱”中的项或设计器栏中的组件项按“F1”。  
   
-|名称|描述|  
+|name|描述|  
 |----------|-----------------|  
 |<xref:System.Data.DataSet>|向窗体或组件中添加类型化或非类型化数据集的实例。 将此对象拖到设计器上后，它将显示一个对话框，可在其中选择一个现有的类型化数据集类或指定希望创建新的非类型化空数据集。 注意：不要使用“工具箱”上的 <xref:System.Data.DataSet> 对象创建新的类型化数据集架构和类。 有关详细信息，请参阅[创建和配置数据集](../../data-tools/create-and-configure-datasets-in-visual-studio.md)。|  
 |<xref:System.Windows.Forms.DataGridView>|提供一种以表格格式显示数据的功能强大且灵活的方法。|  
 |<xref:System.Windows.Forms.BindingSource>|简化将控件绑定到基础数据源的过程。|  
 |<xref:System.Windows.Forms.BindingNavigator>|表示窗体上绑定到数据的控件的导航和操作用户界面 (UI)。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中访问数据](../../data-tools/accessing-data-in-visual-studio.md)   
  [适用于 NET 的 Visual Studio Data Tools](../../data-tools/visual-studio-data-tools-for-dotnet.md)   
  [Visual Studio 中的数据集工具](../../data-tools/dataset-tools-in-visual-studio.md)   

@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93ec728b6e7ab3a197382bbd66cb34906d248747
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dde6bed2fda4dbf68a37636df83044e945a1f5d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-command"></a>“查找”命令
 要搜索文件，请使用“查找和替换”窗口的“在文件中查找”选项卡上的可用选项子集。  
@@ -32,9 +33,9 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 [/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `findwhat`  
- 必需。 要匹配的文本。  
+ 必须的。 要匹配的文本。  
   
 ## <a name="switches"></a>开关  
  /case 或 /c  
@@ -80,7 +81,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 >Edit.Find somestring /sel /case  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   

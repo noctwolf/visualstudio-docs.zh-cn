@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64a10c356100e6ace36ec1c574c85479741113c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8392a17a1d1f0648176c6b68463102e31c61cf20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>如何：从生成中排除项目
 你可以生成解决方案，但不生成其包含的所有项目。 例如，你可以排除会中断生成的项目。 在调查并解决问题之后，你可以再生成该项目。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  在菜单栏上，依次选择“生成”、“重新生成解决方案”。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [了解生成配置](../ide/understanding-build-configurations.md)   
  [如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)   
  [如何：同时生成多个配置](../ide/how-to-build-multiple-configurations-simultaneously.md)

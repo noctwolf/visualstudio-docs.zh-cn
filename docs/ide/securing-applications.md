@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: da6628c34570bfe637c2cc5b3d8cad12b16dac12
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 665f03744fc559727e96373512fc983e5d75293c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="securing-applications"></a>保证应用程序的安全
 虽然大部分应用程序会面临共同的安全挑战，不过每个应用程序域都具有自己的安全挑战。  
@@ -66,5 +67,5 @@ ms.lasthandoff: 10/31/2017
  [Windows 窗体安全](/dotnet/framework/winforms/windows-forms-security)  
  提供 Windows 窗体安全实现的概述。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [安全性](../ide/security-in-visual-studio.md)

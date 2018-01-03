@@ -14,11 +14,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: "47"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 2a93a2af3f3d89a4970a949b42bea79b3641d53f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4e0afbcf6ff12376e3fcdf10925a20a4a7228130
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的单元测试
 可采用与其他方法完全一样的方式为泛型方法生成单元测试，如[如何：创建和运行单元测试](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)中所述。 以下各节提供有关为泛型方法创建单元测试的信息和示例。  
@@ -197,6 +198,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [单元测试的剖析](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [单元测试代码](../test/unit-test-your-code.md)

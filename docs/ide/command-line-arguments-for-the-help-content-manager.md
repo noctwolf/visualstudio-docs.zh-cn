@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0fa94458b1b3b02e2df666af099d97bb7e115c22
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: b7eaa5214a87c2931a260f1c5adb6bac56dfa288
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令行自变量
 可以使用 Help Content Manager (HlpCtntMgr.exe) 的命令行自变量指定如何部署和管理本地帮助内容。 必须以管理员权限运行此命令行工具的脚本，无法以服务形式运行这些脚本。 可以使用此工具执行以下任务：  

@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf0dd4ab4a60dc7cfdfd351aee59c4942f75ef69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e44c9e7cc8aee41606366e1d4cb175a1855053f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用查看定义查看和编辑代码 (Alt+F12)
 可使用“查看定义”命令来查看和编辑代码，而无需离开正在编写的代码。 “查看定义”和“转到定义”显示相同的信息，但“查看定义”在弹出窗口中显示，而“转到定义”在单独的代码窗口中显示代码。 “转到定义”将导致上下文（即活动的代码窗口、当前行和光标位置）切换到定义代码窗口。 使用“速览定义”时，无需离开原始代码文件就能查看和编辑定义，还能在定义文件内部到处移动。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  也可使用在 Visual Studio 其他位置所用的键盘快捷方式在“查看定义”窗口中编辑代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [导航代码](../ide/navigating-code.md)  
 [转到定义和速览定义](../ide/go-to-and-peek-definition.md)  
 [工作效率提示](../ide/productivity-tips-for-visual-studio.md)

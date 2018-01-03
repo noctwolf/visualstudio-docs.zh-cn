@@ -12,11 +12,12 @@ caps.latest.revision: "27"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 9f26d2db9145599d941331dce646868aafa45cb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f275477c691d8cdfa60dc607b1d31cd1e042184f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步骤 2：创建随机加法问题
 在本教程中的第 2 部分中，您将添加几道基于随机数的数学题，从而让测验变得有挑战性。 您还将添加一个名为 `StartTheQuiz()` 的方法，此方法可填充题目并启动倒计时计时器。 在本教程的后面部分中，您将添加减法、乘法和除法问题。  

@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7aba2366893e188107632e5b8393fff79c0a5f82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b1aa3a18f8632890cd41a5ee7cb64e3d7c744888
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-7-keep-pairs-visible"></a>步骤 7：保持对可见
 只要玩家仅选择不匹配的图标对，游戏即可顺畅地运行。 但是，请考虑玩家选择匹配对时发生的情况。 游戏不是通过打开计时器（使用 `Start()` 方法）来使图标消失，而应当进行重置，这样游戏就不再使用 `firstClicked` 和 `secondClicked` 引用变量跟踪任何标签，而且无需重置选择的两个标签的颜色。  

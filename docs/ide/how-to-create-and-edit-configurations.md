@@ -22,11 +22,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afa939c0b8a033930f5e8e7bcc525d6f33e55f86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ca6dfe8132603b06b9bd08655eaff3861e4700d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：创建和编辑配置
 可以为一个解决方案创建多个生成配置。 例如，可以配置调试生成供测试人员用于查找和修复问题，也可以配置不同种类的生成，供你分发给不同的客户。  
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
 
 3.  在“项目上下文”窗格中，对每个项目，选择所需“配置”和“平台”，并选择是否“生成”该项目以及是否进行“部署”。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [了解生成配置](../ide/understanding-build-configurations.md)   
  [在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [管理项目和解决方案属性](managing-project-and-solution-properties.md)

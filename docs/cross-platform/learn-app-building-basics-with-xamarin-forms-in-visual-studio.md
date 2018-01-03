@@ -11,11 +11,12 @@ caps.latest.revision: "11"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: d428f340cd1c0c990ec196c3c9d84e6f22093805
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: b25344afa89c3b1244203a914b9b64347223870d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识
 完成 [Setup and install](../cross-platform/setup-and-install.md) 和 [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md)中的步骤后，此演练会立即演示如何借助 Xamarin.Forms 生成基本应用（如下所示）。 借助 Xamarin.Forms，将在可移植类库 (PCL) 中将全部 UI 代码编写一次。 Xamarin 随后会自动呈现 iOS、Android 和 Windows 平台的本机 UI 控件。 我们建议使用这一方法，因为 PCL 选项可以最好地支持仅使用受所有目标平台支持的 .NET API，并且因为 Xamarin.Forms 能够让你跨平台共享 UI 代码。  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
   
     -   确保“版本”  字段设置为“最新稳定”  版本。  
   
-    -   单击“安装”。  
+    -   单击“安装” 。  
   
     -   ![查找和安装 Newtonsoft.Json NuGet 包](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
   

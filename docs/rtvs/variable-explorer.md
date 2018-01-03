@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c56250677e99a11c52ac368037525803394242b3
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: c75e15def5f9abe98be3f062650c84693716c87e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="variable-explorer"></a>变量资源管理器
 
@@ -27,22 +28,22 @@ x <- 42
 y <- 43
 n <- c(1,2,3,5,8,13)
 ```
- 
+
 则会出现“变量资源管理器”窗口，如下所示：
 
 ![Visual Studio 中的“变量资源管理器”窗口](media/variable-explorer-window.png)
 
 如果在会话中定义了更复杂的 R 数据帧，则可在数据中导航。 例如，运行 `cars <- mtcars` 后，可展开变量资源管理器中的不同节点，浏览数据集：
- 
+
 ![变量资源管理器的展开视图](media/variable-explorer-expanded-results.png)
- 
+
 若要删除变量，请右键单击并选择“删除”，或选择该变量，然后按 Delete 键。
 
 还可使用渐进式搜索在数据帧中搜索观察。 首先，在数据帧中展开要搜索的节点，然后在搜索框中输入搜索项。
 
 ## <a name="details-table-view"></a>详细信息（表）视图
 
-由于数据通常是表格形式，因此可以通过选择放大镜图标或右键单击并选择“显示详细信息”，以单独表格形式查看复杂数据类型。 
+由于数据通常是表格形式，因此可以通过选择放大镜图标或右键单击并选择“显示详细信息”，以单独表格形式查看复杂数据类型。
 
 ![“变量资源管理器”表视图](media/variable-explorer-table-view.png)
 
@@ -69,7 +70,6 @@ n <- c(1,2,3,5,8,13)
 ![在调试过程中显示数据帧的变量资源管理器](media/variable-explorer-as-locals-window.png)
 
 在调试器中逐行执行代码时（例如在函数中显示局部变量），变量资源管理器可自动更改函数范围。
-
 
 ## <a name="importing-data-into-variable-explorer"></a>将数据导入变量资源管理器
 

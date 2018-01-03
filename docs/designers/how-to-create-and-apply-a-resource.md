@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 815f93d50258dac2018a75f7b95d05378bdc77e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 77754f0243c8223dd55ba253fdde1e0b6a8aee57
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何创建和应用资源
 XAML 设计器中元素的样式和模板存储在称作资源的可重用实体中。 样式可设置元素属性并重用这些设置以便多个元素实现一致的外观。 [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) 定义控件的外观，并且可作为资源应用。 有关详细信息，请参阅[快速入门：设置控件的样式](http://go.microsoft.com/fwlink/?LinkID=248239)和[快速入门：控件模板](http://go.microsoft.com/fwlink/?LinkID=247982)。  
@@ -75,5 +76,5 @@ XAML 设计器中元素的样式和模板存储在称作资源的可重用实体
   
 3.  修改该资源的选项。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

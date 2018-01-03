@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: fcb73674027c4ecca906312fa8808dfc5e43db39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eeb41b1897fe33cfabbef1e7ef2731ababb68737
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-loggers"></a>生成记录器
 记录器提供一种方法，通过此方法可自定义生成的输出并显示消息、错误或警告以响应特定生成事件。 每个记录器作为 .NET 类实现，此类实现 Microsoft.Build.Framework.dll 程序集中定义的 <xref:Microsoft.Build.Framework.ILogger> 接口。  
@@ -83,6 +84,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="comments"></a>注释  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9666f4f26476544baa6afc5dad17798b4e8360d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>演练：创建多计算机生成环境
 
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [创建可以签入源代码管理的生成环境](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
   
 -   Visual Studio Ultimate、Visual Studio Premium 或 Visual Studio Professional 的许可副本  
   
@@ -290,7 +291,7 @@ ms.lasthandoff: 10/31/2017
     |----------------------------|--------------|---------------------------------|-------------------------------|  
     |x86（默认）|32 位本机|x86、x64|x86|  
     |x86_amd64|x64 兼容|x86、x64|x64|  
-    |amd64|x64 本机|x64|x64|  
+    |amd64|x64 本机|x64|X64|  
   
      如果 vcvarsall.bat 运行成功（即，不显示任何错误消息），可以跳过下一步，继续执行本文的[将 MSBuild 程序集安装到生成计算机上的全局程序集缓存 (GAC) 中](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)部分中的步骤。  
   
@@ -423,6 +424,6 @@ ms.lasthandoff: 10/31/2017
   
          对于本机 64 位生成，请指向 64 位 MSBuild。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [准备用于运行调试可执行文件的测试计算机](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)   
  [命令行参考](../msbuild/msbuild-command-line-reference.md)

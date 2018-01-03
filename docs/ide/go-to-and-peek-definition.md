@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 467d119e67db254b6e15630c08c411bb15283351
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db67f01ff2a58ee856e4588df8770fc4edef8ca2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="go-to-definition-and-peek-definition"></a>转到定义和速览定义  
 “转到定义”和“速览定义”功能有助于轻松查看类型或成员的定义。
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
 
 有关详细信息，请参阅[如何：使用查看定义 (Alt+F12) 查看和编辑代码](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [导航代码](../ide/navigating-code.md)  
 [如何：使用查看定义 (Alt+F12) 查看和编辑代码](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  

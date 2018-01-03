@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a30a37f5003d407edb46ab3d4475b99f5bbe54ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7fcef6ffd829ea999c1ed8d62d34083f5adab46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="disk-operations-report-threads-view"></a>磁盘操作报告（线程视图）
 磁盘操作报告显示磁盘通道中的磁盘 I/O 操作。  
@@ -43,5 +44,5 @@ ms.lasthandoff: 10/31/2017
   
 -   写入延迟时间（以毫秒为单位）  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [线程视图](../profiling/threads-view-parallel-performance.md)

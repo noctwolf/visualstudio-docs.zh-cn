@@ -11,11 +11,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: c3e5410769ba10a905c8116677ae5d03d0df656e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1612856fa4c098b5b7ff081020a84324bd5f8c4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-code-coverage"></a>代码覆盖率疑难解答
 Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集（.dll 或 .exe 文件）的数据。 但是，在某些情况下，“代码覆盖率结果”窗口显示类似于“生成了空结果集:...”的错误发生此错误有几个可能的原因。 本主题旨在帮助解决这些问题。  
@@ -145,5 +146,5 @@ Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集
  解决方法  
  无。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用代码覆盖率确定所测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

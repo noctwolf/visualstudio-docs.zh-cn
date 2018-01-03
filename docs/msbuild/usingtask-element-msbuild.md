@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 05a7dabcfe251a1d27eef559456bca4e267e55ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 95013682d5968cc1fb894f3e30746043e99e4a46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 元素 (MSBuild)
 将 [Task](../msbuild/task-element-msbuild.md) 元素中引用的任务映射到包含该任务实现的程序集。  
@@ -100,7 +101,7 @@ ms.lasthandoff: 10/31/2017
               AssemblyFile="c:\myTasks\myTask.dll" />  
 ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)

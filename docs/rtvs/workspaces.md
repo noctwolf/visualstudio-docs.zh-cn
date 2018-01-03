@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 15928f639465f6d8abbaa3735fee40e59ae5045c
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 4e2cfe9faba79f955146bf929c4c8c1238d14fb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>控制 R 代码在工作区中的运行位置
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 12/04/2017
 
 在此窗口中，绿色选中标记表示 RTVS 绑定的活动工作区。 选择蓝色箭头来设置活动工作区。 通过每个工作区右侧的设置（齿轮）图标可更改工作区的名称、位置和命令行参数。 使用红色 X 可删除手动添加的工作区。
 
-在本主题中：
+本主题内容：
 
 - [保存和重置工作区](#saving-and-resetting-a-workspace)
 - [本地工作区](#local-workspaces)

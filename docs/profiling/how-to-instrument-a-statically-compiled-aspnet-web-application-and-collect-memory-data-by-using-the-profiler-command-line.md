@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30ad7561ffadb4c8d139c7be8dc537dc8f1f092b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5a35d15fc4d0859ca005cff96aab51f9c5fbd277
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测静态编译的 ASP.NET Web 应用程序并收集内存数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的命令行工具检测预编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 组件或网站，并收集 .NET 内存分配、对象生存期和详细的计时数据。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
      VSPerfClrEnv /globaltraceon  
   
-     - 或 -  
+     或  
   
      VSPerfClrEnv /globaltracegclife  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
   
 -   以下选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
@@ -114,6 +115,6 @@ ms.lasthandoff: 10/31/2017
   
      **IISReset /start**  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)

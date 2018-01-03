@@ -603,11 +603,12 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 redirect_url: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=msbuild
-ms.openlocfilehash: bf172e3a2f2098d72db5e56d54c598d656650c88
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c795dca53bec8191cdb9e2d61fa49ec03d84fa66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-msbuild-resources"></a>其他 MSBuild 资源
 尝试解决问题时，如果无法在文档中找到所需信息，可以参考其他资源，如知识库文章、开发人员社区或产品支持。  
@@ -623,5 +624,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="product-support"></a>产品支持  
  如果借助其他资源仍不能解决问题，则可以访问 [Microsoft 帮助和支持](http://go.microsoft.com/fwlink/?linkid=1782)网站，与 Microsoft 支持服务联系。 若要了解所在区域中可用的产品支持，请参阅[与我们联系](../ide/talk-to-us.md)。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [.NET Framework 目标错误疑难解答](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

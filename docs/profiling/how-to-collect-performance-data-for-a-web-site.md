@@ -22,11 +22,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6acfbee87e64e71ae85290ba74f1464af7181228
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff9927357b23ced05bbee6db354cbe8e82e62b4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：为 Web 站点收集性能数据
 可以使用“性能向导”  为 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序收集性能数据。 可以分析在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中打开的 Web 应用程序，也可以分析位于本地计算机且未在 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] IDE 中打开的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Web 站点。  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
   
      探查器生成数据文件，并在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 主窗口中显示数据的摘要视图。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [概述](../profiling/overviews-performance-tools.md)   
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [了解检测数据值](../profiling/understanding-instrumentation-data-values.md)   

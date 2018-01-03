@@ -21,11 +21,12 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: bb95d43af71a7860f239c56ab3db46a2e3c5e238
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f00f7464d44423be4d37694c42ad3bfddaaea3e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 任务
 获取一个或多个类型库名称或 .tlb 文件的列表，将这些类型库解析为磁盘上的位置。  
@@ -79,6 +80,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Utilities.Task> 类继承参数。 有关这些其他参数的列表及其说明，请参阅[任务基类](../msbuild/task-base-class.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 464846eaf76761008ffc351db53d92669812f691
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4e765d376276c6e83d7e2bcce2ab46974210d96c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 将解决方案文件及其所有项目文件或指定的项目文件更新为这些文件的当前 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 格式。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
 devenv SolutionFile | ProjectFile /upgrade  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `SolutionFile`  
  如果要升级整个解决方案及其项目，则是必需的。 解决方案文件的路径和名称。 可以只输入解决方案文件的名称，也可以输入解决方案文件的完整路径和名称。 如果命名的文件夹或文件尚不存在，将创建该文件夹或文件。  
   
@@ -52,5 +53,5 @@ devenv SolutionFile | ProjectFile /upgrade
 devenv "MyProject.sln" /upgrade  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)

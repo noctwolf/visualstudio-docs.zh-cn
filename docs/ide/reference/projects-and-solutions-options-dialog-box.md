@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fee3419b6e041983fb3aa77cace5bb02e48e1b9a
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: d7b122c66c4fd49cbc8939e5770c56fe8bc48b78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”
 设置与项目和解决方案相关的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 行为。 要访问这些选项，请选择“工具 > 选项”，展开“项目和解决方案”，然后单击“常规”。
@@ -74,6 +75,6 @@ ms.lasthandoff: 11/15/2017
 **用户项模板位置**  
 指定“添加新项”对话框中使用的默认位置来创建“我的模板”的列表。 有关详细信息，请参阅[如何：查找和组织模板](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。 
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 - [“选项”对话框 ->“项目和解决方案”->“生成和运行”](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)  
 - [“选项”对话框、项目和解决方案、Web 项目](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

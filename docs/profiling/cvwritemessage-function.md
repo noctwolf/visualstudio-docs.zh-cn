@@ -30,11 +30,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6559ed85c44e262d00965be7e173b0c6257f696c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 95b1633c1761c24de755cfe15b8bf85560a84e86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage 函数
 向并发可视化工具跟踪文件写入一条消息。  
@@ -114,12 +115,12 @@ HRESULT CvWriteMessageExVA(
 ## <a name="return-value"></a>返回值  
  成功写入消息时返回 S_OK。 出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  **标头：**cvmarkers.h  
   
  **Unicode：**CvWriteMessageW、CvWriteMessageVW、CvWriteMessageExW、CvWriteMessageExVW  
   
  **ANSI：**CvWriteMessageA、CvWriteMessageVA、CvWriteMessageExA、CvWriteMessageExVA  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C++ 库参考](../profiling/cpp-library-reference.md)

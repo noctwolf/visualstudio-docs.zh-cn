@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61b3ab54929cdd7e6a584737f8963302335c4fd1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 3ef5133f1d92d9f18a62117e40a0788766dfe439
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-all-languages"></a>选项、文本编辑器、所有语言
 使用此对话框可更改代码编辑器的默认行为。 这些设置也适用于其他基于代码编辑器的编辑器，如 HTML 设计器的“源”视图。 若要打开此对话框，请从“工具”菜单中选择“选项”。 在“文本编辑器”文件夹中，展开“所有语言”子文件夹，然后选择“常规”。  
@@ -95,7 +96,7 @@ ms.lasthandoff: 11/02/2017
  导航栏  
  选中后，将在代码编辑器的顶部显示“导航栏”。 它的下拉“对象”和“成员”列表可用于在代码中选择特定的对象，从它的成员中选择，然后导航到代码编辑器中选定成员的声明。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“选项”->“文本编辑器”->“所有语言”->“制表符”](../../ide/reference/options-text-editor-all-languages-tabs.md)   
  [“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)   
  [使用 IntelliSense](../../ide/using-intellisense.md)

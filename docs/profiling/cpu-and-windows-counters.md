@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62889012c5640fb0f29eadb6f70e678f941ff286
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: d22300bc675de5074497589af53b304b9a1caa4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 利用 Visual Studio 探查器，可以收集操作系统（Windows 计数器）生成的性能数据和处理器单元（CPU 计数器）生成的性能数据。  
@@ -95,7 +96,7 @@ ms.lasthandoff: 11/11/2017
   
          **请注意**：单击“取消”可返回到上一个采样配置。  
   
-     - 或 -  
+     或  
   
     -   选择“CPU 计数器”，然后选择“收集 CPU 计数器”。 CPU 计数器列在“可用的计数器”中。  
   
@@ -128,7 +129,7 @@ ms.lasthandoff: 11/11/2017
   
      C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [概述](../profiling/overviews-performance-tools.md)   
  [如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)   
  [如何：收集 CPU 计数器数据](../profiling/how-to-collect-cpu-counter-data.md)   

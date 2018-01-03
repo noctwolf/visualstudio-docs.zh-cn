@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a06bd1eb1ced8305425a9e3698e66f0d19438463
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 65c48fe6ff7f675add8b5bd5944e159587de2e3b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-building-an-application"></a>演练：生成应用程序
 完成本演练后，你会更熟悉使用 Visual Studio 生成应用程序时可配置的多个选项。 将为示例应用程序创建自定义生成配置、隐藏特定警告消息以及增加生成输出信息。  
@@ -235,7 +236,7 @@ ms.lasthandoff: 10/31/2017
   
 祝贺：你已成功完成此演练。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：生成项目(C++)](/cpp/ide/walkthrough-building-a-project-cpp)   
  [ASP.NET Web 应用程序项目预编译概述](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
  [演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae04c23a986107125edc9be149d6317a05c5b58a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e6780ffc846d3710b78bbfa994ca3e73d14209e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-memory-command"></a>“列出内存”命令
 显示指定范围内内存的内容。  
@@ -33,7 +34,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 [/Hex|Signed|Unsigned] [expression]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `expression`  
  可选。 从此处开始显示内存的内存地址。  
   
@@ -82,7 +83,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“列出调用堆栈”命令](../../ide/reference/list-call-stack-command.md)   
  [“列出线程”命令](../../ide/reference/list-threads-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   

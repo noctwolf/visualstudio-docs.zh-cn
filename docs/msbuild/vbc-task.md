@@ -21,11 +21,12 @@ caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5fd338079978cec84c93a22d262d25f575d32e4c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1105701c5c84de200dca674a117d7b464ba9fd62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vbc-task"></a>Vbc 任务
 包装可生成可执行文件 (.exe)、动态链接库 (.dll) 或代码模块 (.netmodule) 的 vbc.exe。 有关 vbc.exe 的详细信息，请参阅[Visual Basic 命令行编译器](/dotnet/visual-basic/reference/command-line-compiler/index)。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 |`NoConfig`|可选 `Boolean` 参数。<br /><br /> 指定编译器不应使用 vbc.rsp 文件。 此参数对应于 vbc.exe 编译器的 [/noconfig](/dotnet/visual-basic/reference/command-line-compiler/noconfig) 参数。|  
 |`NoLogo`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则禁止显示编译器横幅信息。 此参数对应于 vbc.exe 编译器的 [/nologo](/dotnet/visual-basic/reference/command-line-compiler/nologo) 开关。|  
 |`NoStandardLib`|可选 `Boolean` 参数。<br /><br /> 导致编译器不引用标准库。 此参数对应于 vbc.exe 编译器的 [/nostdlib](/dotnet/visual-basic/reference/command-line-compiler/nostdlib) 开关。|  
-|`NoVBRuntimeReference`|可选 `Boolean` 参数。<br /><br /> 仅限内部使用。 如果为 true，则会阻止自动引用 Microsoft.VisualBasic.dll..|  
+|`NoVBRuntimeReference`|可选 `Boolean` 参数。<br /><br /> 仅限内部使用。 如果为 true，则会阻止自动引用 Microsoft.VisualBasic.dll.|  
 |`NoWarnings`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，任务会禁止所有警告。 有关详细信息，请参阅 [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)。|  
 |`Optimize`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则会启用编译器优化。 此参数对应于 vbc.exe 编译器的 [/optimize](/dotnet/visual-basic/reference/command-line-compiler/optimize) 开关。|  
 |`OptionCompare`|可选 `String` 参数。<br /><br /> 指定如何进行字符串比较。 此参数可以具有下列值：<br /><br /> -   `binary`<br />-   `text`<br /><br /> 值 `binary` 指定该任务使用二进制字符串比较。 值 `text` 指定该任务使用文本字符串比较。 此参数的默认值为 `binary`。 此参数对应于 vbc.exe 编译器的 [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare) 开关。|  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
    OutputAssembly="out.exe"/>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Basic 命令行编译器](/dotnet/visual-basic/reference/command-line-compiler/index)   
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

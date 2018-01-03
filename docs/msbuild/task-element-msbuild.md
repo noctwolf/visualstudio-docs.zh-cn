@@ -20,11 +20,12 @@ caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 6e2aab5959a27807e44270c55c77b7d6d9229f18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5ed723c807bc46933d31baa206625e2ea198d5e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-element-msbuild"></a>Task 元素 (MSBuild)
 创建并执行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务的实例。 元素名称由正在创建的任务名称确定。  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
 </Target>  
 ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)

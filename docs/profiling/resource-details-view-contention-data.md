@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eaf87be0e921d0e86818c29c078d8b214591418d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5a3deacd563759c2c6185ed8d2a57a2c0b00ce63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-details-view---contention-data"></a>“资源详细信息”视图 - 争用数据
 “资源详细信息”视图显示针对所选资源的争用所导致的阻塞事件的时间线关系图。 如果由于另一个线程已锁定对资源的访问，因此线程被迫挂起执行，则会发生阻塞事件。  

@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0d49543bde0195144fb4918e9a9f173f8f9435ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 66065fe94b41c06082e878329a03de3851ee844d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 使用指定根标记的响应文件启动跟踪上下文。  
@@ -44,8 +45,8 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ## <a name="return-value"></a>返回值  
  如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头：FileTracker.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

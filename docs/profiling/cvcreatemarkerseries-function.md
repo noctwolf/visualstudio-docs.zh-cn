@@ -18,11 +18,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5eccac7a0b139b830121add61518c23fa055ca23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dd1fdd7760fce5e40422cf017a4f5f7e2623263f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries 函数
 为给定提供程序创建标记系列。  
@@ -54,12 +55,12 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
 ## <a name="return-value"></a>返回值  
  成功创建标记系列时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  **标头：**cvmarkers.h  
   
  **Unicode：**CvCreateMarkerSeriesW  
   
  **ANSI：**CvCreateMarkerSeriesA  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C++ 库参考](../profiling/cpp-library-reference.md)

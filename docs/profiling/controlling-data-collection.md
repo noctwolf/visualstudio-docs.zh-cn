@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87d1e7fe63e16e81c7ff9465975f378f9e9e7c95
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8cbbbb2ce9002512eeba4e838edf0d4d960b38c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="controlling-data-collection"></a>控制数据收集
 通过 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具可控制性能会话期间收集分析数据的时间，并指定分析的函数。 本节介绍如何从“性能资源管理器”和“数据收集控制”窗口启动和停止数据收集，以及如何限制要收集其分析数据的对象。  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-sections"></a>相关章节  
  [配置性能会话](../profiling/configuring-performance-sessions.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [性能资源管理器](../profiling/performance-explorer.md)

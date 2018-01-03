@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 412253e6b182488179e7b3eaa4098ff026d66cfb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44087bc1626ddde5b2e3339a874d16ec4af16b4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>“高级设置”对话框（并发可视化工具）
 通过使用并发可视化工具中的“高级设置”对话框，可以控制如何收集跟踪。  对话框中有符号、仅我的代码、缓冲、筛选、CLR 事件、标记、提供程序和文件的选项卡。  
@@ -85,6 +86,6 @@ ms.lasthandoff: 10/31/2017
   
  两个 ETL 文件用于存储原始跟踪数据，而两个并发可视化工具文件用于存储处理后的数据。  处理跟踪后，通常不使用原始 ETL 文件。  选择“在分析后删除事件跟踪日志 (ETL) 文件”复选框后，将减少磁盘上存储的跟踪数据量。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [仅我的代码](../profiling/just-my-code-threads-view.md)   
  [并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)

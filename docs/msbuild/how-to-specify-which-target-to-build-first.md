@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 22c307129e1c0295b041180f475c3d905cc43539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a1d5b2bbf218d35cf20638d865c6c78379c5f02b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定首先生成的目标
 项目文件可以包含一个或多个用于定义如何生成项目的 `Target` 元素。 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 引擎生成它找到的第一个项目，以及任何依赖项，除非项目文件包含 `DefaultTargets` 属性、`InitialTargets` 属性或者目标是在命令行中使用 **/target** 开关指定的。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-specify-one-initial-target"></a>指定一个初始目标  
   
--   在 `Project` 元素的 `InitialTargets` 属性中指定默认目标。 例如:   
+-   在 `Project` 元素的 `InitialTargets` 属性中指定默认目标。 例如:  
   
      `<Project InitialTargets="Clean">`  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-specify-one-default-target"></a>指定一个默认目标  
   
--   在 `Project` 元素的 `DefaultTargets` 属性中指定默认目标。 例如:   
+-   在 `Project` 元素的 `DefaultTargets` 属性中指定默认目标。 例如:  
   
      `<Project DefaultTargets="Compile">`  
   
@@ -64,17 +65,17 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>首先使用非默认目标的目标  
   
--   使用 **/target** 命令行开关将目标指定为第一个目标。 例如:   
+-   使用 **/target** 命令行开关将目标指定为第一个目标。 例如:  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>首先使用非默认目标的多个目标  
   
--   使用 **/target** 命令行开关列出目标，用分号或逗号分隔。 例如:   
+-   使用 **/target** 命令行开关列出目标，用分号或逗号分隔。 例如:  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
   [MSBuild](../msbuild/msbuild.md)  
  [目标](../msbuild/msbuild-targets.md)   
  [如何：清理版本](../msbuild/how-to-clean-a-build.md)

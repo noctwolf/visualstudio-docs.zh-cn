@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 904350641c9db8bfb62522ee13051d69bb529535
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5b58cec1da21daf67c8a77d53312e92fdbf4dfb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 Visual Studio 命令允许你调用“命令”  窗口、“即时”  窗口或“查找/命令”  框中的命令。 在每种情况下，都使用大于号 (`>`) 指示后面跟随的是命令，而不是搜索或调试操作。  
@@ -41,7 +42,7 @@ Visual Studio 命令允许你调用“命令”  窗口、“即时”  窗口�
   
  以下命令采用参数和/或开关。  
   
-|命令名：|说明|  
+|命令名：|描述|  
 |------------------|-----------------|  
 |[添加现有项](../../ide/reference/add-existing-item-command.md)|将现有文件添加到当前解决方案中并打开它。|  
 |[添加现有项目](../../ide/reference/add-existing-project-command.md)|将现有项目添加到当前解决方案中。|  
@@ -77,7 +78,7 @@ Visual Studio 命令允许你调用“命令”  窗口、“即时”  窗口�
 |[切换断点](../../ide/reference/toggle-breakpoint-command.md)|在文件中的当前位置，根据其当前状态打开或关闭断点。|  
 |[“监视”命令](../../ide/reference/watch-command.md)|创建并打开指定“监视”  窗口的实例。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   
  [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)

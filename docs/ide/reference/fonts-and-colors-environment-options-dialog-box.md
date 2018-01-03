@@ -30,11 +30,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ccb924164b4d590f8ed440dfa905c1c040a13924
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 23e6712dbf66c898757176aca9e89b98de2f65bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“字体和颜色”
 通过“选项”对话框的“字体和颜色”页，可以为集成开发环境 (IDE) 中的各种用户界面元素建立自定义字体和配色方案。 单击“工具”/“选项”，然后选择“环境”/“字体和颜色”即可访问此对话框。 如果此页未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  
@@ -127,7 +128,7 @@ ms.lasthandoff: 11/02/2017
 |覆盖率未涉及的区域|单元测试尚未覆盖的代码。|  
 |覆盖率部分涉及的区域|单元测试已部分覆盖的代码。|  
 |覆盖率涉及的区域|已被单元测试完全覆盖的代码。|  
-|CSS 注释|级联样式表中的注释。 例如: <br /><br /> /* comment \*/|  
+|CSS 注释|级联样式表中的注释。 例如:<br /><br /> /* comment \*/|  
 |CSS 关键字|级联样式表中的关键字。|  
 |CSS 属性名|属性的名称，如 Background。|  
 |CSS 属性值|分配给属性的值，如 blue。|  
@@ -163,7 +164,7 @@ ms.lasthandoff: 11/02/2017
 |SQL DML 标记|应用于 Transact-SQL 编辑器。 默认情况下，此编辑器中的 DML 语句以蓝色的边界框进行标记。|  
 |陈旧的代码|等待更新的取代代码。 在某些情况下，“编辑并继续”无法立即应用代码更改，而是在稍后继续调试时应用这些更改。 当编辑某个必须调用当前所执行的函数的函数，或将超过 64 个字节的新变量添加到等待调用堆栈的某个函数中时，会发生这种情况。 发生这种情况时，调试器将显示一个“陈旧代码警告”对话框，而取代代码继续执行，直到上述函数完成并被重新调用为止。 “编辑并继续”将在此时应用代码更改。|  
 |**字符串**|字符串。|  
-|字符串(C# @ 逐字字符串)|在 C# 中逐字解释的字符串。 例如: <br /><br /> @"x"|  
+|字符串(C# @ 逐字字符串)|在 C# 中逐字解释的字符串。 例如:<br /><br /> @"x"|  
 |语法错误|分析错误。|  
 |任务列表快捷方式|如果将“任务列表”快捷方式添加到某一行，并禁用指示器边距，则将突出显示该行。|  
 |跟踪点(禁用)|未使用。|  
@@ -232,7 +233,7 @@ ms.lasthandoff: 11/02/2017
  示例  
  显示选定“显示其设置”和“显示项”的字体样式、字号和配色方案示例。 可以使用此框预览在试用不同的格式设置选项时的结果。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)   
  [“选项”对话框](../../ide/reference/options-dialog-box-visual-studio.md)   
  [如何：更改字体和颜色](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

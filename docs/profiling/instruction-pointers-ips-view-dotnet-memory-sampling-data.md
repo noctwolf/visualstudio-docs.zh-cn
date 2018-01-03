@@ -13,18 +13,19 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c37cc7b63a8f93c3b63cdda0bb9ce460a01d195a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 193497f6fd995c8e3a31b5228675130d97641ffa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>“指令指针”(IP) 视图：.NET 内存采样数据
 用采样方法收集的 .NET 内存分配分析数据有一个 IP 视图，其中列出在分析运行期间分配了内存的程序集指令。 该视图的列还列出分配的大小和数量。  
   
  仅列出独占值。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/31/2017
 |**独占字节数**|分析运行期间由指令分配的内存字节数。|  
 |**独占字节数百分比**|分析运行期间由指令分配的所有内存字节数的百分比。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“指令指针”(IP) 视图](../profiling/instruction-pointers-ips-view-sampling-data.md)

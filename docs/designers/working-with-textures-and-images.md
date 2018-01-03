@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92d133d688ad009dae1b4e518bdd8c749ebc329f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7c15d6bd2bd50b8ba8c5075ab2d90287e3a4750
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-textures-and-images"></a>使用纹理和图像
 你可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用图像编辑器来创建和修改纹理与图像。 如同用 DirectX 应用程序开发的应用程序一样，图像编辑器支持丰富的纹理和图像格式。  

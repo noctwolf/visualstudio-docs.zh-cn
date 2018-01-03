@@ -26,11 +26,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e66af6d2d38685bdd905b7991c6e8f782e4f696
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: faf5978119ef9029db99ae953d5c60876abddabf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
 通过本主题中的过程，学会生成、重新生成或清除解决方案中的所有/部分项目/项目项。 有关分步教程，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。  

@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: dccc0592d050a07f3682834b6f2a66e2f8c6eb7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cdbe7702711c5196de42d18379d6870ca54f4dcd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-glossary"></a>MSBuild 词汇表
 这些术语用于描述 Microsoft 生成引擎 (MSBuild) 及其组件。  
@@ -101,7 +102,7 @@ ms.lasthandoff: 10/31/2017
  属性函数是可用于评估 MSBuild 脚本的系统属性或方法。 可使用属性方法读取系统时间、比较字符串、匹配正则表达式以及执行其他操作。 有关详细信息，请参阅[属性函数](../msbuild/property-functions.md)。  
   
  属性函数，嵌套  
- 可将属性函数组合成更复杂的函数。 例如，  
+ 可将属性函数组合成更复杂的函数。 例如，应用于对象的  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
   
@@ -170,5 +171,5 @@ ms.lasthandoff: 10/31/2017
  已知元数据  
  请参阅*元数据，已知*。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild](../msbuild/msbuild.md)

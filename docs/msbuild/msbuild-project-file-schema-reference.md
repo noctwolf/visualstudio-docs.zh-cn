@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a88962b87466a2345ac8dafa642d457a6fee5be0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 96676f23cd4741d084f25d1dad3c288b98bf023c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild 项目文件架构引用
 提供列有所有 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML 架构元素及其可用属性和子元素的表。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
 |元素|子元素|特性|  
 |-------------|--------------------|----------------|  
 |[Choose 元素 (MSBuild)](../msbuild/choose-element-msbuild.md)|Otherwise<br /><br /> When|--|  
-|[Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)|--|条件<br /><br /> Project|  
+|[Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)|--|条件<br /><br /> 项目|  
 |[ImportGroup 元素](../msbuild/importgroup-element.md)|导入|条件|  
 |[Item 元素 (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|条件<br /><br /> 排除<br /><br /> 包括<br /><br /> 删除|  
 |[ItemDefinitionGroup 元素 (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Item*|条件|  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 |[UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> TaskBody|AssemblyFile<br /><br /> AssemblyName<br /><br /> 条件<br /><br /> TaskFactory<br /><br /> TaskName|  
 |[When 元素 (MSBuild)](../msbuild/when-element-msbuild.md)|选择<br /><br /> ItemGroup<br /><br /> PropertyGroup|条件|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [条件](../msbuild/msbuild-conditions.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)  

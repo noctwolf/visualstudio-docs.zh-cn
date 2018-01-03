@@ -11,11 +11,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: eea8b4bb93d0e848bd085fd534fcaaa553a15e2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 与扩展 SDK 添加引用
 
@@ -31,20 +32,20 @@ ms.lasthandoff: 11/22/2017
 
 |功能|SDK 支持|SDK 说明|NuGet 支持|NuGet 说明|
 |-------------|-----------------|---------------|-------------------|-----------------|
-|机制引用一个实体后，便可使用所有文件和功能。|是|因此，可以使用“引用管理器”对话框添加 SDK，以便在开发工作流期间使用所有文件和功能。|是||
+|机制引用一个实体后，便可使用所有文件和功能。|Y|因此，可以使用“引用管理器”对话框添加 SDK，以便在开发工作流期间使用所有文件和功能。|Y||
 |MSBuild 自动使用程序集和 Windows 元数据 (.winmd) 文件。|Y|SDK 中的引用会自动传递给编译器。|Y||
-|MSBuild 自动使用的 .h 或 .lib 文件。|是|*SDKName*.props 文件会告知 Visual Studio 如何设置 Visual C++ 目录等，以便自动使用 .h 或 .lib 文件。|N||
-|MSBuild 自动使用 .js 或 .css 文件。|是|在“解决方案资源管理器”中，可展开 JavaScript SDK 引用节点以显示单个 .js 和 .css 文件，然后通过将这些文件拖动到各自的源文件生成 `<source include/>` 标记。 SDK 支持 F5 和包自动安装。|是||
-|MSBuild 自动添加“工具箱”中的控件。|是|“工具箱”可使用 SDK 并在指定的选项卡中显示控件。|N||
+|MSBuild 自动使用的 .h 或 .lib 文件。|Y|*SDKName*.props 文件会告知 Visual Studio 如何设置 Visual C++ 目录等，以便自动使用 .h 或 .lib 文件。|N||
+|MSBuild 自动使用 .js 或 .css 文件。|Y|在“解决方案资源管理器”中，可展开 JavaScript SDK 引用节点以显示单个 .js 和 .css 文件，然后通过将这些文件拖动到各自的源文件生成 `<source include/>` 标记。 SDK 支持 F5 和包自动安装。|Y||
+|MSBuild 自动添加“工具箱”中的控件。|Y|“工具箱”可使用 SDK 并在指定的选项卡中显示控件。|N||
 |该机制支持扩展的 Visual Studio 安装程序 (VSIX)。|Y|VSIX 具有特殊的清单和逻辑，用于创建 SDK 包|Y|VSIX 可嵌入另一安装程序中。|
-|“对象浏览器”可枚举引用。|是|“对象浏览器”自动获取 SDK 中的引用列表并枚举它们。|N||
-|文件和链接自动被添加到“引用管理器”对话框（帮助链接等自动填充）|是|“引用管理器”对话框连同帮助链接和 SDK 依赖项列表一起自动枚举 SDK。|N|NuGet 提供其自身的“管理 NuGet 包”对话框。|
+|“对象浏览器”可枚举引用。|Y|“对象浏览器”自动获取 SDK 中的引用列表并枚举它们。|N||
+|文件和链接自动被添加到“引用管理器”对话框（帮助链接等自动填充）|Y|“引用管理器”对话框连同帮助链接和 SDK 依赖项列表一起自动枚举 SDK。|N|NuGet 提供其自身的“管理 NuGet 包”对话框。|
 |该机制支持多个体系结构。|Y|SDK 可以提供多个配置。 MSBuild 针对每个项目配置使用相应的文件。|N||
 |该机制支持多个配置。|Y|SDK 可以提供多个配置。 根据项目体系结构，MSBuild 针对每个项目体系结构使用相应的文件。|N||
 |该机制可指定“不复制”。|Y|你可以控制将哪些文件复制到使用方应用程序的包，具体取决于文件是放在 \redist 还是 \designtime 文件夹中。|N|需要声明包清单中要复制的文件。|
 |内容显示在本地化文件中。|Y|自动包含 SDK 中已本地化的 XML 文档，以提供更好的设计时体验。|N||
 |MSBuild 支持同时使用多个版本的 SDK。|Y|SDK 支持同时使用多个版本。|N|这不会引用。 项目中不能一次同时拥有多个版本的 NuGet 文件。|
-|该机制支持指定适用的目标框架、Visual Studio 版本和项目类型。|是|“引用管理器”对话框和“工具箱”仅显示适用于项目的 SDK，以便用户更轻松地选择适当的 SDK。|Y（部分）|透视是目标框架。 用户界面上没有筛选。 安装时可能会返回错误。|
+|该机制支持指定适用的目标框架、Visual Studio 版本和项目类型。|Y|“引用管理器”对话框和“工具箱”仅显示适用于项目的 SDK，以便用户更轻松地选择适当的 SDK。|Y（部分）|透视是目标框架。 用户界面上没有筛选。 安装时可能会返回错误。|
 |该机制支持为本机 WinMD 指定注册信息。|Y|可以指定 SDKManifest.xml 中 winmd 文件和 .dll 文件之间的相关性。|N||
 |该机制支持指定其他 SDK 上的依赖关系。|Y|SDK 仅通知用户；用户仍需手动安装和引用它们。|Y|NuGet 自动提取它们；用户不会收到通知。|
 |该机制与 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)] 概念（如应用清单和框架 ID）集成。|Y|SDK 必须传递特定于 [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] 的概念，以便包装和 F5 可以与 [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] 提供的 SDK 一起正常工作。|N||

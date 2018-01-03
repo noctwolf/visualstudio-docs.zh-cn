@@ -11,11 +11,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: "10"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 343935b46b17f876b6bde65d3bd1547069447730
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 65f9a9dd0e07a86ee6a4b883a7318f9add7df3cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安装第三方单元测试框架
 Visual Studio 测试资源管理器可以运行任何针对该资源管理器开发了适配器接口的单元测试框架。 框架的安装程序会安装二进制文件，并为它支持的语言添加 Visual Studio 项目模板。 使用模板创建项目时，框架会向测试资源管理器注册。 Visual Studio 解决方案可以包含使用不同框架和面向不同语言的单元测试项目。 测试资源管理器可运行所有这些解决方案。  
@@ -58,5 +59,5 @@ Visual Studio 测试资源管理器可以运行任何针对该资源管理器开
   
 4.  在结果列表中选择框架，以导航到该工具的 Visual Studio Marketplace 页。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [单元测试代码](../test/unit-test-your-code.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f11a3717e6096ac08a8201bc9b6fc81e1a197d0a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d32ef451cbbefaa2ce639d3271b762fa90892945
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>编写多处理器可识别的记录器
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 利用多个处理器的能力可以缩短项目生成时间，但同时会增加生成事件日志记录的复杂性。 在单处理器环境下，事件、消息、警告和错误以可预测的顺序方式到达记录器。 但在多处理器环境下，来自不同源的事件可能同时或不按顺序到达。 为了应对此情况，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供了可以识别多处理器的记录器以及新的日志记录模型，并允许创建自定义“转发记录器”。  
@@ -114,5 +115,5 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|  
 |SHOWCOMMANDLINE|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建转发记录器](../msbuild/creating-forwarding-loggers.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4dcb40a02de239c8061ae2559ce6adb581625b8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01c2867c60a3aa7b00462503da08bda0a8ac80fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="maintaining-security"></a>维护安全性
 常言道安全靠常抓不懈。 尽管你在应用程序的设计和开发过程中非常专注于安全性，还是应当假设在部署之后会出现安全漏洞。 通过严格检查应用程序和分析事件日志，你可能会发现一些以前隐蔽起来的漏洞。  

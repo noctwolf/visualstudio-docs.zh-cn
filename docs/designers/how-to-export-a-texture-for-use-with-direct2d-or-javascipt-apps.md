@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ad01fe04374ee9ae8c1514f8194a91c2247a5311
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cce24e1daeeded8482d43b64a3c81aebd06e22bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：导出纹理以用于 Direct2D 或 Javascipt 应用程序
 图像内容管道可以生成与 Direct2D 的内部呈现约定兼容的纹理。 这种类型的纹理适合在使用 Direct2D 的应用和使用 JavaScript 创建的 UWP 应用中使用。  
@@ -63,6 +64,6 @@ ms.lasthandoff: 10/31/2017
   
 5.  配置图像内容管道，使其不生成 mipmap。 在“配置属性”、“图像内容管道”、“常规”页上，将“生成 Mip”属性设置为“否”。  
   
-6.  选择**“确定”** 按钮。  
+6.  选择“确定”  按钮。  
   
  生成项目时，图像内容管道会将源图像从工作格式转换为指定的输出格式（转换包括生成预乘 Alpha），并且结果将被复制到项目的输出目录。

@@ -14,11 +14,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a6fce612245c07cf3bcd70b56b266857db88765d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c3dd72236cf23131d510f9d512ea1dcd2a4dd15a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>“高级编译器设置”对话框 (Visual Basic)
 使用“项目设计器”的“高级编译器设置”对话框可指定项目的高级生成配置属性。 此对话框仅适用于 Visual Basic 项目。  
@@ -55,10 +56,10 @@ ms.lasthandoff: 10/31/2017
 ## <a name="compilation-constants"></a>编译常量  
  条件编译常量具有与在源文件中使用 [#Const](/dotnet/visual-basic/language-reference/directives/const-directive) 预处理器指令类似的效果，只是定义的常数为公共的且应用于项目中的所有文件。 可以将条件编译常量与 [#If...Then...#Else](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) 指令一起使用，从而有条件地编译源文件。 请参阅[条件编译](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation)。  
   
- **定义 DEBUG 常量**  
+ “定义 DEBUG 常量”  
  默认为选中此复选框，指定设置 DEBUG 常量。  
   
- **定义 TRACE 常量**  
+ “定义 TRACE 常量”  
  默认为选中此复选框，指定设置 TRACE 常量。  
   
  **自定义常量**  
@@ -68,5 +69,5 @@ ms.lasthandoff: 10/31/2017
  **生成序列化程序集**  
  此设置指定编译器是否创建 XML 序列化程序集。 序列化程序集可以提高 <xref:System.Xml.Serialization.XmlSerializer> 的启动性能（如果已使用该类序列化代码中的类型）。 默认情况下，此选项设置为“自动”，用于指定仅在已使用 <xref:System.Xml.Serialization.XmlSerializer> 将代码中的类型编码为 XML 的情况下，才会生成序列化程序集。 若设置为“关闭”，则指定永远不会生成序列化程序集，无论代码是否使用 <xref:System.Xml.Serialization.XmlSerializer>。 若设置为“打开”，则指定始终会生成序列化程序集。 序列化程序集命名为 `TypeName`.XmlSerializers.dll。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“项目设计器”->“编译”页 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

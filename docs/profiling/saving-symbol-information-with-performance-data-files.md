@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89913922d4c806e591d6a488f35242444d16ceb0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dd963c269ee5fe18d3f490bf85bab5dcf3afbf9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用性能数据文件保存符号信息
 如果使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 分析文件并且计划将 VSP 文件移动到其他计算机，则必须设置性能项目设置以在报告文件中保存或序列化符号。 这会增加报告文件的大小。 出于以下两个原因，需要序列化符号：  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
  VsPerfReport -packsymbols -summary:all filename.vsp  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [保存和导出性能工具数据](../profiling/saving-and-exporting-performance-tools-data.md)   
  [如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

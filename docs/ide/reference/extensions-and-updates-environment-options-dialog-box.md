@@ -13,11 +13,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fda8c5cb5066684ba0de5341042060d8ab2660cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb3e4307b18c7ed929672cec1dc9f7cc55f72b01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“扩展和更新”
 使用此页可以设置有关 Visual Studio 如何执行更新以及如何更新和发现扩展的选项。  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/31/2017
 ### <a name="additional-extension-galleries"></a>其他扩展库  
  一个企业功能，可启用对专有扩展的库的支持。 有关详细信息，请参阅[专用库](../../extensibility/private-galleries.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)

@@ -11,11 +11,12 @@ ms.assetid:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 94348821e44b5ed07e3df5e4859796342919a833
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: multiple
+ms.openlocfilehash: 4a4093c7ebba74493a64833bfbf83ee6d28ef1ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whitelisting-urls-in-a-private-network"></a>将专用网络中的 URL 列入白名单
 
@@ -57,5 +58,4 @@ Visual Studio 使用传输层安全性 (TLS) 1.2 协议连接到网络资源。 
 ## <a name="see-also"></a>请参阅
 
 [代理身份验证所需的错误](../ide/reference/proxy-authorization-required.md)  
-[Visual Studio 使用的 Internet 资源](../ide/connected-environment.md)  
 [在防火墙或代理服务器后安装 Visual Studio](../install/install-visual-studio-behind-a-firewall-or-proxy-server.md)

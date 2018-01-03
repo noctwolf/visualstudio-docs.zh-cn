@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fae944ae73c3bfdfdf278b9b905ebab06ba3ff1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 69cc476dc43562e5226ebd6564dfb2733f1d57ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：将检测限定为特定函数
 通过在“性能会话”属性页的“高级”页或目标二进制文件的属性页中设置选项，可以将检测和数据收集限定为一个或多个函数：  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  若要列出某个二进制文件中的函数，请在分析工具安装目录（通常是 [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]安装目录下的 \Team Tools\Performance Tools 目录）中打开命令提示符窗口，然后键入 **vsinstr /DumpFuncs**  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [控制数据收集](../profiling/controlling-data-collection.md)   
  [如何：将检测限定为特定 DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [如何：指定其他检测选项](../profiling/how-to-specify-additional-instrumentation-options.md)

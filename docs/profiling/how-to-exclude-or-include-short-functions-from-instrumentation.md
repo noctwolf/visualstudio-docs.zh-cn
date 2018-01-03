@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22b6705c295a8a738645d163dd982b22061cabf2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1238e092bf1b088ba9ce377aeaf66b1fa953f1bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>如何：在检测中排除或包括短函数
 默认情况下，分析工具会从检测中排除*小型函数*。 小型函数是不执行任何函数调用的短函数。 排除这些小型函数会减少检测开销，从而提高检测速度。 排除小型函数还能减少性能分析数据文件 (.vsp) 的大小和分析所需的时间。 如果排除小型函数，花费在小型函数上的时间会减少，从而减少其父函数的独占和非独占时间。 可以在检测中排除或包括小型函数，具体在以下过程中说明。  
@@ -35,12 +36,12 @@ ms.lasthandoff: 10/31/2017
   
 3.  若要从检测中排除短函数，请选择“从检测中排除短函数”。 此为默认设置。  
   
-     - 或 -  
+     或  
   
      若要在检测中包括短函数，请清除“从检测中排除短函数”。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [控制数据收集](../profiling/controlling-data-collection.md)   
  [性能会话属性](../profiling/performance-session-properties.md)

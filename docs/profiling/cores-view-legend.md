@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 820c5c48b9fc3b8d05d6e4d867e198ecc9237634
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cb7ae3c6bee8b75fd99edc7da150e71ef7394d63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view-legend"></a>内核视图图例
 “核心”视图图例按颜色和名称标识每个线程。 它包括一些列，分别显示跨核心上下文切换数、上下文切换总数以及跨越核心的上下文切换所占的百分比。 图例中的行按跨核心上下文切换数以降序排序。  
@@ -36,5 +37,5 @@ ms.lasthandoff: 10/31/2017
 |上下文切换总数|采样期间给定线程的上下文切换总数。 每次线程更改上下文（例如从执行到同步）时，将进行一次上下文切换计数。|  
 |跨越核心的上下文切换所占的百分比|通过跨核心上下文切换数除以上下文切换总数计算出的百分比。 此百分比越高，此特定线程的性能上的跨核心上下文切换的开销的整体效果越大。|  
   
-## <a name="see-also"></a>另请参阅  
- [“核心”视图](../profiling/cores-view.md)
+## <a name="see-also"></a>请参阅  
+ [内核视图](../profiling/cores-view.md)

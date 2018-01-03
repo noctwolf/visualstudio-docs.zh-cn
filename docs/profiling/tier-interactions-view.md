@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9aac5f9ac8886bef61d700209f77b4b1852fe2bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a42e748e45d7db0606d585d774be254a7358d6b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tier-interactions-view"></a>“层交互”视图
 层交互分析提供有关多层应用程序函数执行时间的附加信息，这些应用程序通过 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 服务与数据库进行通信。 仅针对同步函数调用收集数据。  
@@ -37,9 +38,9 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="master-pane"></a>主窗格  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
-|**Name**|-   对于顶层行，是分析的进程或网页的名称。<br />-   对于数据库连接行，是承载数据库的服务器的名称。|  
+|**名称**|-   对于顶层行，是分析的进程或网页的名称。<br />-   对于数据库连接行，是承载数据库的服务器的名称。|  
 |**数据库**|数据库的名称（仅限数据库连接行）。|  
 |**计数**|进程、网页或数据库连接生成的请求的总数。|  
 |**总运行时间**|执行来自进程、网页或数据库连接的任何一个请求所用的总时间。|  

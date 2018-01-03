@@ -21,11 +21,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 39dd727eee6f9af2f60410c4dbfc9daa9ea805a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 359f0f58a1c3b813216e4a760a1c750710fb3416
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parameter-element"></a>Parameter 元素
 包含某个任务的特定参数信息，该任务可通过使用 `UsingTask``TaskFactory` 生成。  元素的名称就是该参数的名称。  有关详细信息，请参阅 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 10/31/2017
 </UsingTask>  
 ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a846dbd377a3a394fb23d29f907e29471abcc128
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 5c81f9b5ff7d0bad9c0a05bd4b43374ac9451cf1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>“调用树”视图 - .NET 内存采样数据
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都会列出它调用的所有函数以及有关这些函数调用的 .NET 内存分配数据。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
  设置根节点后，将从视图中排除所选节点的子树之外的所有其他条目。 可将根节点重置为刚才查看的节点，在“调用树”视图窗口中右键单击并选择“重置根”。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
 |**独占字节数**|调用树中父函数所调用的此函数的实例所分配的内存字节数。 此数目不包括子函数的分配数。|  
 |**独占字节数百分比**|分析运行期间分配的属于此函数的独占分配的所有内存字节数的百分比。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“调用关系树”视图 - 检测](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [“调用关系树”视图](../profiling/call-tree-view-sampling-data.md)   
- [“调用树”视图](../profiling/call-tree-view-instrumentation-data.md)
+ [“调用关系树”视图](../profiling/call-tree-view-instrumentation-data.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7c25dbb399a3be2af9b181c7ccbf495cc03bec19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53b4d68cfd664e5b9b3385bbbbc9228fe57e566d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 设置全局线程计数，并将该计数分配给当前线程。  
@@ -38,5 +39,5 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 ## <a name="return-value"></a>返回值  
  线程数更新后，则返回带 SUCCEEDED 位集的 HRESULT。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头：FileTracker.h

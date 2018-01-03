@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d38ef64a370b11c2695ea1e03d2e3ceead7cb63c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 14deeec64d4645135f19587997844bfdd0b18cd5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="diff"></a>/Diff
 比较两个文件。 差异将在特殊 Visual Studio 窗口中显示。  
@@ -27,12 +28,12 @@ ms.lasthandoff: 10/31/2017
 devenv /Diff SourceFile, TargetFile, [SourceDisplayName],[TargetDisplayName]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `SourceFile`  
- 必需。 要比较的第一个文件的完整路径和名称。  
+ 必须的。 要比较的第一个文件的完整路径和名称。  
   
  `TargetFile`  
- 必需。 要比较的第二个文件的完整路径和名称  
+ 必须的。 要比较的第二个文件的完整路径和名称  
   
  `SourceDisplayName`  
  可选。 第一个文件的显示名称。  

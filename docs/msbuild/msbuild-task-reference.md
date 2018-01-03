@@ -18,11 +18,12 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c0d1474fb03acd838387677786656967e852fdf9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ae20ab8aead2369ddd3024c84b66003cf958358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 任务参考
 任务提供在生成过程中运行的代码。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供以下列表中的任务。 安装 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 时，可使用其他任务来生成 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目。 有关详细信息，请参阅 [Visual C++ 任务](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。  
@@ -224,7 +225,7 @@ ms.lasthandoff: 10/31/2017
  [XslTransformation 任务](../msbuild/xsltransformation-task.md)  
  使用可扩展样式表语言转换 (XSLT) 或编译的 XSLT 转换 XML 输入，并将其输出到一台输出设备或一个文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 参考](../msbuild/msbuild-reference.md)   
  [任务写入](../msbuild/task-writing.md)   
  [任务](../msbuild/msbuild-tasks.md)

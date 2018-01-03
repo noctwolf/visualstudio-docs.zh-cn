@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cb5128bf6412fa0f06c211f06f0d7f87353d52e0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: aca1fc0200e57867418c2a4c5ca7a718afdbc469
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-r-in-visual-studio"></a>在 Visual Studio 中调试 R
 
@@ -57,12 +58,12 @@ add <- function(x, y) {
 
 环境浏览器支持若干特殊命令：
 
-| 命令 | 描述 | 
+| 命令 | 描述 |
 | --- | --- |
 | n | 下一个：运行代码文件中的下一个语句（与逐步执行相同）。 |
-| 秒 | 单步执行：运行代码文件中的下一个语句，如果下个一语句是函数调用，则单步执行函数范围。 | 
+| 秒 | 单步执行：运行代码文件中的下一个语句，如果下个一语句是函数调用，则单步执行函数范围。 |
 | f | 完成：运行当前函数范围的剩余部分，并返回到调用方（与跳出相同）。 |
-| c, cont | 继续：运行程序，直至到达下一个断点。 | 
+| c, cont | 继续：运行程序，直至到达下一个断点。 |
 | Q | 退出：结束调试会话。 |
 | 其中 | 显示堆栈：在交互窗口中显示调用堆栈。 |
 | 帮助 | 显示帮助：在交互窗口中显示可用命令。 |

@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e61fb6667c16fd75cef78fbcaa835b97603dbe5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 094f87ca4a56f71cbecfa9b6b1dc9189244c0c57
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在应用 Visual Basic 开发人员设置后管理生成配置
 默认情况下，应用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 开发人员设置后，所有高级生成配置选项都将隐藏。 本主题说明如何手动启用这些设置。  
@@ -43,10 +44,10 @@ ms.lasthandoff: 10/31/2017
   
 3.  单击“显示高级生成配置”。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
      现在可在“生成”菜单上使用“Configuration Manager”，并且“项目设计器”上会显示“配置”和“平台”列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [了解生成配置](../ide/understanding-build-configurations.md)   
  [编译和生成](../ide/compiling-and-building-in-visual-studio.md)

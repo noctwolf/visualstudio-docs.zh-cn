@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4202530fd58f1a3323284cd3c7e59e36ba7b2a8f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 57a8c10b3dc2775928698e73fd2d4426f485ec44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到本机独立应用程序并收集并发数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到运行中的本机 (C/C++) 独立应用程序并收集线程争用数据。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
      可将下表中的任何选项与 **/start:concurrency** 选项一起使用。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`Username`|指定要向探查器授予访问权限的帐户的可选域和用户名。|  
     |[/crosssession](../profiling/crosssession.md)|启用其他登录会话中的进程分析。|  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
 -   下表中的选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  

@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b2852c673f00234629450803d1c5d860c8646cd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c383337c97197daba7b434d4c678bd5d565c10d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>如何：创建基本朗伯着色器
 本文档演示如何使用着色器设计器和定向关系图着色器语言 (DGSL) 创建实现经典朗伯照明模型的照明着色器。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
   
  若要深入了解如何将向三维模型应用着色器，请参阅[如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：导出着色器](../designers/how-to-export-a-shader.md)   
  [如何：创建基本冯氏着色器](../designers/how-to-create-a-basic-phong-shader.md)   

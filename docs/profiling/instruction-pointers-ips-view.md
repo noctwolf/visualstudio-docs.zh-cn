@@ -21,11 +21,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b55eef6cc3f0b594d4e96a41f9cbf7a1b4f9f163
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 564bdcea907920e6e16807e34a64850e7e664f41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instruction-pointers-ips-view"></a>“指令指针”(IP) 视图
 使用“指令指针”视图，可以查看在采样分析期间执行的特定指令。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
  对于 .NET 内存数据，“行”视图标识分配内存的指令。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“指令指针”(IP) 视图](../profiling/instruction-pointers-ips-view-sampling-data.md)   
  [“指令指针”(IP) 视图 - 采样](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [“指令指针”(IP) 视图](../profiling/instruction-pointers-ips-view-contention-data.md)

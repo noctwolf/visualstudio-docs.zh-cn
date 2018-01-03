@@ -12,11 +12,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3881b015821952b4a2aeaa60d22c66bf47dff9c4
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 76cad59931a6c99bfd21fc0d149b86bf8a3b8a71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 使用测试资源管理器从 Visual Studio 或第三方单元测试项目中运行单元测试、将测试分组到类别中、筛选测试列表以及创建、保存和运行测试的播放列表。 你还可以调试测试并分析测试性能和代码覆盖率。  
@@ -257,11 +258,11 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_External_resources"></a>外部资源  
+##  <a name="BKMK_External_resources"></a> 外部资源  
   
 ###  <a name="BKMK_Guidance"></a> 指导  
  [使用 Visual Studio 2012 测试连续交付 - 第 2 章：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [单元测试代码](../test/unit-test-your-code.md)   
  [将单元测试作为 64 位进程运行](../test/run-a-unit-test-as-a-64-bit-process.md)

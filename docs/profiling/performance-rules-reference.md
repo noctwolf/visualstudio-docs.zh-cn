@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bec05a24a932816374766c107c1aab6f018e77cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 24ae3ce7346c3fb6608a2db4faa4c57dd3399773
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-rules-reference"></a>性能规则参考
 分析工具的性能规则提供有关应用程序性能的其他警告和信息。 性能规则分析在分析运行中从源（如 Windows 和处理器性能计数器）收集的数据。 规则消息会出现在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 集成开发环境的“错误输出”窗口中。 这些消息使用以下规则级别之一列出：  

@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b2cf0713a38187f27bfddd46b0ad32b592d397a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7df40a697bb294e369964fb6a4252b884794aea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-definitions"></a>项定义
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 使用 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素来启用项目文件中项的静态声明。 但是，只能在项级别添加元数据，即使所有项的元数据均相同，也是如此。 从 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 开始引入了一个名为 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) 的项目元素，从而克服了这一限制。 使用 *ItemDefinitionGroup* 可以定义一组项定义，这些项定义将默认元数据值添加到命名项类型中的所有项中。  
@@ -109,7 +110,7 @@ ms.lasthandoff: 10/31/2017
   
  在本例中，向“m”和“n”添加元数据“o”。  
   
- 此外，还可以添加先前定义的元数据值。 例如:   
+ 此外，还可以添加先前定义的元数据值。 例如:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -160,7 +161,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  在条件中仅支持本地元数据引用。  
   
- 对项（而非定义组）而言，在先前的 ItemDefinitionGroup 中定义的元数据的引用是本地的。 也就是说，引用的范围特定于项\-。 例如:   
+ 对项（而非定义组）而言，在先前的 ItemDefinitionGroup 中定义的元数据的引用是本地的。 也就是说，引用的范围特定于项\-。 例如:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -242,7 +243,7 @@ ms.lasthandoff: 10/31/2017
 </ItemDefinitionGroup>  
 ```  
   
- 从[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 开始，ItemGroups 可以自引用。 例如:   
+ 从[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 开始，ItemGroups 可以自引用。 例如:  
   
 ```xml  
 <ItemGroup>  
@@ -253,5 +254,5 @@ ms.lasthandoff: 10/31/2017
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [批处理](../msbuild/msbuild-batching.md)

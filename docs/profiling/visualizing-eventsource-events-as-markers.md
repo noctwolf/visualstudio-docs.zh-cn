@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f282d74f59970b3a0366d4576b0c88cae746a5f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 24a7ce6857830b056a9a17f5f551c443d76e2b4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>将 EventSource 事件作为标记可视化
 并发可视化工具可以将 EventSource 事件显示为标记，并且可以控制标记的显示方式。 若要查看 EventSource 标记，请使用[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框注册 ETW 提供程序 GUID。 并发可视化工具具有将 EventSource 事件表示为[标志标记](../profiling/flag-markers.md)、[范围标记](../profiling/span-markers.md)和[消息标记](../profiling/message-markers.md)的默认约定。 可以通过向事件添加自定义字段自定义 EventSource 事件的显示方式。 有关标记的详细信息，请参阅[并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)。 有关 EventSource 事件的详细信息，请参阅 <xref:System.Diagnostics.Tracing>。  
@@ -96,5 +97,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  不支持以下操作：使用 SpanID 以嵌套范围，允许它们部分重叠在同一线程上或允许它们以一个线程开始并以另一个线程结束。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)

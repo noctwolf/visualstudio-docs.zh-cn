@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: d24400bc3889d5f7fbe691d3e75b7fd7ad155e01
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 84be1157000e44b40f93ef51ca173247b3851d5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-metadata-in-target-batching"></a>目标批处理中的项元数据
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够对生成目标的输入和输出执行依赖项分析。 如果确定了目标的输入或输出是最新的，将跳过该目标并继续生成过程。 `Target` 元素使用 `Inputs` 和 `Outputs` 属性指定要在依赖项分析过程中检查的项。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：增量生成](../msbuild/how-to-build-incrementally.md)   
  [批处理](../msbuild/msbuild-batching.md)   
  [Target 元素 (MSBuild)](../msbuild/target-element-msbuild.md)   

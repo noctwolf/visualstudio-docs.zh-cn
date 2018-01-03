@@ -29,11 +29,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1864d3bd07906d5bd7413689c912e0a3c7ede036
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3d3dbe578ac9f902314e7270ecb8a7d799fcc47a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>全球 Windows 窗体和 Web 窗体的区域性特定类
 每个区域性都具有有关显示日期、时间、数字、货币和其他信息的不同约定。 <xref:System.Globalization> 命名空间包含可用于修改区域性专属值的显示方式的类，如 <xref:System.Globalization.DateTimeFormatInfo>、Calendar 和 <xref:System.Globalization.NumberFormatInfo>。  
@@ -70,7 +71,7 @@ Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));
   
  `$100.00`  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.IFormattable.ToString%2A?displayProperty=fullName>   
  <xref:System.Globalization.DateTimeFormatInfo>   
  <xref:System.Globalization.NumberFormatInfo>   

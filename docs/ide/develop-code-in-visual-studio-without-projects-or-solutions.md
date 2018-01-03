@@ -29,11 +29,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9531a49ced6e8f72154cbdd59fce271ff673f59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2d1d3c327101e535c037dba30ed19af3dcf7faaa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中开发代码而无需创建项目或解决方案  
 在 Visual Studio 2017 中，你可以在 Visual Studio 中打开几乎任何类型的基于目录的项目的代码，而无需创建解决方案或者项目文件。 这意味着（例如，在 Git 上找到一个代码项目时）可以克隆该项目，然后在 Visual Studio 中直接打开并开始开发，而无需创建解决方案或项目。  

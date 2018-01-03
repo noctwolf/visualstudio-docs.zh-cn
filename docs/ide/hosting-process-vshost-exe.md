@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f33a5650230eced6f6713e943daba1ef0cacb74a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 716d19362495fccf475a068a28a9fe2acbe27b53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hosting-process-vshostexe"></a>承载进程 (vshost.exe)
 承载进程是 Visual Studio 中的功能，它改进了调试性能、启用了部分信任调试和设计时表达式计算。 承载进程文件的文件名中包含 vshost，位于项目的输出文件夹中。 有关详细信息，请参阅[调试和承载进程](../debugger/debugging-and-the-hosting-process.md)。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="design-time-expression-evaluation"></a>设计时表达式计算  
  借助设计时表达式计算，你可从“即时”窗口进行代码测试，而不必运行应用程序。 承载进程在设计时表达式计算期间执行此代码。 有关详细信息，请参阅[即时窗口](../ide/reference/immediate-window.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试和承载进程](../debugger/debugging-and-the-hosting-process.md)   
  [如何：禁用承载进程](../ide/how-to-disable-the-hosting-process.md)   
  [即时窗口](../ide/reference/immediate-window.md)   

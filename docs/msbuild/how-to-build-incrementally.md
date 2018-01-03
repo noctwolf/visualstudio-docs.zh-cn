@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e2edb49095bb71e71414e82855c1b3c39904a62f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 73931a8be39933c727225d582bc4e4e35b805d7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-incrementally"></a>如何：增量生成
 生成一个大项目时，不重新生成以前生成过但仍然为最新状态的组件十分重要。 如果每次都生成所有目标，则每次生成都需要很长时间才能完成。 为了启用增量生成（这类生成仅重新生成以前未生成过或已过期的目标）， [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 可以对输入文件的时间戳和输出文件的时间戳进行比较，并确定是跳过、生成还是部分重新生成某个目标。 但是，在输入和输出之间必须存在一对一映射。 可以使用转换来使目标能够识别此直接映射。 有关转换的详细信息，请参阅[转换](../msbuild/msbuild-transforms.md)。  
@@ -104,7 +105,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [目标](../msbuild/msbuild-targets.md)   
  [Target 元素 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [转换](../msbuild/msbuild-transforms.md)   

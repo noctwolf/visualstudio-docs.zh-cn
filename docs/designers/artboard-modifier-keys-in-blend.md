@@ -12,16 +12,17 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f67fd72d6e7a74d0af462ef65e0ddd535474188c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c5faa495aac0538b017e341a31a2546f9a528716
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend 中的“美工板”修改键
 某些键盘快捷方式没有关联的菜单项，这意味着你无法使用 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 用户界面来发现这些键盘快捷方式。 下表列出了修改操作（例如调整对象的大小）的快捷方式。  
   
-|任务|请执行此操作|  
+|任务|操作步骤|  
 |-----------------------|-------------|  
 |在选择其他工具的同时，暂时选中“选择”工具。此操作可减少你在“工具”面板中单击的次数，以及在“选择”工具和其他内容间来回切换的次数）|按住 Ctrl|  
 |选中“选择”工具时微移所选对象|按箭头键|  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 |在打开的文档之间切换|按 Ctrl+Tab|  
 |打开“资产”面板|按 Ctrl+句点|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [键盘快捷键](../designers/keyboard-shortcuts-in-blend.md)   
  [“笔”工具修改键](../designers/pen-tool-modifier-keys-in-blend.md)   
  [“路径选择”工具修改键](../designers/direct-selection-tool-modifier-keys-in-blend.md)

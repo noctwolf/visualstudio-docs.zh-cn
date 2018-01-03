@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a210ce1f6aeac113033bd82306bb5b682a5e21b9
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 2d639558434e077a6ae09ce79bad6252a10a3711
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>从命令行添加层交互数据
 层交互分析提供有关多层应用程序函数中同步 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 调用执行时间的附加信息，这些应用程序可与一个或多个数据库进行通信。  

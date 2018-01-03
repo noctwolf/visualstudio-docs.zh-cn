@@ -11,11 +11,12 @@ ms.assetid: 2e0710a8-8e8a-4f6e-8415-5ab3eb830079
 caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6bfce4aa4153d8f01fa9ef6cd6dc0d4b08eedbc4
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: af55f9f124b2ec609c4f0a590e7c2fab738624d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用适用于 C++ 的 Boost.Test
 在 **Visual Studio 2017 版本 15.5** 和更高版本中，Boost.Test 作为“使用 C++ 的桌面开发”工作负荷的组件集成到 Visual Studio IDE 中。 若要在计算机上安装它，请打开 Visual Studio 安装程序，在工作负荷组件列表下找到“Boost.Test 适配器”：
@@ -63,7 +64,7 @@ BOOST_AUTO_TEST_CASE(my_boost_test)
 ## <a name="write-and-run-tests"></a>编写和运行测试
 现在已准备就绪，可以编写和运行 Boost Test。 有关测试宏的信息，请参阅 [Boost Test 库文档](http://www.boost.org/doc/libs/1_38_0/libs/test/doc/html/index.html)。 有关使用“测试资源管理器”发现、运行和分组测试的信息，请参阅[使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)
 
 

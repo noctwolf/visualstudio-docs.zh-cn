@@ -21,11 +21,12 @@ caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5709fc2ea456a8cfa45d8ce01e97c0c79d256c38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 86c4b896944c3241f01329202696aa72bfd0f160
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="import-element-msbuild"></a>Import 元素 (MSBuild)
 将一个项目文件的内容导入其他项目文件中。  
@@ -113,6 +114,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   
  [如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

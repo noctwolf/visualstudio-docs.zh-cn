@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9cc9eea737f11c8ec28e33414f40a981848e123
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9993e31b29e25b95d475d15bd8c1190d1ffae6c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="just-my-code-threads-view"></a>仅我的代码（线程视图）
 如果选择此选项，将筛选调用堆栈，仅显示你的代码和一级被调用的函数。  
@@ -27,6 +28,6 @@ ms.lasthandoff: 10/31/2017
   
  在某些情况下，选择此选项可以筛选出阻止的调用。 如果需要完整的调用堆栈详细信息以便作决定，请清除此选项，公开完整的调用堆栈。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“线程”视图](../profiling/threads-view-parallel-performance.md)   
  [降噪百分比](../profiling/noise-reduction-percentage.md)

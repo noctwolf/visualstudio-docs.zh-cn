@@ -14,14 +14,15 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24e0019ce0111c4a557e54fe7c2e2dfa40658ef6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 26f0a0eae84e8a1247996dc21dff002ad7e79239
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unblocking-stack"></a>取消阻塞堆栈
 如果当前选定的线程元素表示一个受阻片段，且该片段在被当前进程中的另一个线程取消阻塞后再开始执行，则此选项卡上将显示执行取消阻塞操作的线程的调用堆栈。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [线程视图](../profiling/threads-view-parallel-performance.md)

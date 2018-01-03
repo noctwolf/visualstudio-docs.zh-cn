@@ -11,11 +11,12 @@ ms.assetid: c69fe3c7-f797-4e90-b21c-f2cc4dddf152
 caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 346cb9faddf2bd155c91d9fc72176020ba43197b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6a76f89db120f8655d63a064cb3d851abb9eac64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-excel-extension-actionfilter-class"></a>示例 Excel 扩展：ActionFilter 类
 此内部类扩展 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> 类，并表示 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 元素上的测试操作的筛选器。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="private-methods"></a>私有方法  
  `IsLeftClick` 方法确定提供的操作是否表示单击鼠标左键。 `AreActionsOnSameExcelCell` 方法确定是否针对 Excel 中同一单元格执行所提供的两个操作。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.IUITestActionStack>   
  [扩展编码的 UI 测试和操作录制以支持 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

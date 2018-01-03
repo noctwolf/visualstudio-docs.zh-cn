@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5be97e75ac7dc29a6dd0244293259bcd17591233
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 97e4339546eda741ba961b0015f9f62edf231d24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 编译并运行指定的项目或解决方案。  
@@ -34,12 +35,12 @@ ms.lasthandoff: 10/31/2017
 devenv {/run|/r} {SolutionName|ProjectName}  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `SolutionName`  
- 必需。 解决方案文件的完整路径和名称。  
+ 必须的。 解决方案文件的完整路径和名称。  
   
  `ProjectName`  
- 必需。 项目文件的完整路径和名称。  
+ 必须的。 项目文件的完整路径和名称。  
   
 ## <a name="remarks"></a>备注  
  根据为活动解决方案配置指定的设置编译并运行指定项目或解决方案。 此开关启动集成开发环境 (IDE) ，并在项目或解决方案已完成运行后让该环境保持活动状态。  
@@ -55,7 +56,7 @@ devenv {/run|/r} {SolutionName|ProjectName}
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)   
  [/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   

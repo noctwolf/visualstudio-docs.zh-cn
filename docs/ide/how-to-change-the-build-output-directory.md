@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ccbb32b9fd035a9058812eb5a3df306ff629086f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d1dcd42cf2251a4cd20047eaa3fc67110cf048e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：更改生成输出目录
 可以按项目生成的配置（调试、发布或两者）指定输出的位置。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  在“安装”项目中，“输出文件名称”  框仅更改 Setup.exe 文件的位置，而不更改项目文件的位置。 有关详细信息，请参阅 **生成、配置属性、“部署项目属性”对话框**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [生成页、项目设计器 (C#)](../ide/reference/build-page-project-designer-csharp.md)   
  [常规属性页（项目）](/cpp/ide/general-property-page-project)   
  [编译和生成](../ide/compiling-and-building-in-visual-studio.md)

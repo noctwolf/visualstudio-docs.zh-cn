@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5beb7a3db1e62937435ed7379c5f02e77c4f0795
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 474b7c0167b02665a5bc2ff5c1297f768facbc32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>从命令行创建探查器报告
 使用 VSPerfReport 命令行工具可从分析数据 (.vsp) 文件创建 .xml 或逗号分隔值 (.csv) 报告。 VSPerfReport 报告类型非常类似基于表的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 界面视图。 可以筛选报告，使之仅显示你的代码以及分析数据文件中的一段。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。  

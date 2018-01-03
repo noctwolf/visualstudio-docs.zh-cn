@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: daa41beb487020dcaeccba692ace97b057a6b3ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 176f44c105909935988a06f3eb928e5adfb77149
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-metadata-in-task-batching"></a>任务批处理中的项元数据
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够基于项元数据将项列表划分为不同类别或批，并对每个批一次运行一个任务。 要准确了解哪个批中正在传递什么项可能比较困难。 本主题介绍了以下涉及批处理的常见方案。  
@@ -220,7 +221,7 @@ Identity: "Item6" -- Items in ExampColl: Item6
 Items in ExampColl: Item2;Item5  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [常见项元数据](../msbuild/msbuild-well-known-item-metadata.md)   
  [Item 元素 (MSBuild)](../msbuild/item-element-msbuild.md)   
  [ItemMetadata 元素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   

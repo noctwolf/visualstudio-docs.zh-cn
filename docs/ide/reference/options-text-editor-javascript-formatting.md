@@ -16,13 +16,14 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9255473c3c8cd73a74a6758e698b8942dedce660
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 8902d63f89167e4d977f130757af10557bffb529
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="options-text-editor-javascript-formatting"></a>Options, Text Editor, JavaScript, Formatting
+# <a name="options-text-editor-javascript-formatting"></a>选项，文本编辑器，JavaScript，格式
 使用“选项”对话框的“格式设置”页在代码编辑器中设置用于代码格式设置的选项。 若要访问此页，请在菜单栏上选择“工具”、“选项”，然后依次展开“文本编辑器”、“JavaScript”和“格式设置”。  
   
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/02/2017
   
 ## <a name="uielement-list"></a>UIElement 列表  
   
-|选项|说明|  
+|选项|描述|  
 |------------|-----------------|  
 |**在逗号分隔符后插入空格**|选择此选项后，代码编辑器会在逗号分隔符后添加空格。|  
 |**在“for”语句中的分号后插入空格**|选择此选项后，代码编辑器会在 `for` 循环首行的每个分号后添加一个空格。|  
@@ -63,5 +64,5 @@ ms.lasthandoff: 11/02/2017
 |**在匿名函数的函数关键字后插入空格**|选择此选项后，代码编辑器会匿名函数的 `function` 关键字后添加一个空格。|  
 |**在非空左括号之后和非空右括号之前插入空格**|选择此选项后，如果括号内存在非空字符，代码编辑器会在左括号之后和右括号之前添加一个空格。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)

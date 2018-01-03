@@ -17,11 +17,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: "83"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 825adc757b9ae984bb39b308bab37a0d98b63ab5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: ebdac762d3dcc4079ed6e8247b394da685b1013a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 本演练将使用托管代码的 Microsoft 单元测试框架和 Visual Studio 测试资源管理器引导你逐步完成一系列单元测试的创建、运行和自定义。 你将从正处于开发过程中的 C# 项目开始，创建执行该项目代码的测试，运行测试并检查结果。 然后，可以更改项目代码并重新运行测试。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/27/2017
 > [!NOTE]
 >  有关如何从命令行运行测试的信息，请参阅[演练：使用命令行测试实用工具](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
   
 -   Bank 项目。 请参阅[用于创建单元测试的示例项目](../test/sample-project-for-creating-unit-tests.md)。  
   

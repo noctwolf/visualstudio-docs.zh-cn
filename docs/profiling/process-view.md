@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f174223900b6f8deba2291a80425df1c77589ce1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c730169988d931d3e1e57dd22f2793b1f8a16a72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="process-view"></a>“进程”视图
 “进程”视图显示在分析运行期间执行的进程和线程的分析数据。  
@@ -38,11 +39,11 @@ ms.lasthandoff: 10/31/2017
 |------------|-----------------|  
 |**唯一 ID**|探查器生成的标识符，对进程或线程是唯一的。|  
 |**ID**|进程或线程的系统生成标识符。|  
-|**Name**|进程或线程的名称。|  
+|**名称**|进程或线程的名称。|  
 |**开始时间**|从分析开始到进程或线程启动的毫秒数或处理器周期数。|  
 |**结束时间**|从分析开始到进程或线程结束的毫秒数或处理器周期数。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [采样方法数据视图](../profiling/profiler-sampling-method-data-views.md)   
  [检测方法数据视图](../profiling/instrumentation-method-data-views.md)   
  [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)

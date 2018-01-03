@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98cc07eaeac12a5d5b0e32279ddb30f0a888b5b9
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: cplusplus
+ms.openlocfilehash: 0d0906a567d71bb1f200803e1a3933ee7bad64f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到本机服务以收集并发数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到本机 (C/C++) 服务并使用采样方法收集进程和线程并发数据。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/11/2017
     > [!NOTE]
     >  大多数服务都需要 **/user** 和 **/crosssession** 选项。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName`|指定要向探查器授予访问权限的帐户的可选域和用户名。|  
     |[/crosssession](../profiling/crosssession.md)|启用其他登录会话中的进程分析。|  
@@ -68,7 +69,7 @@ ms.lasthandoff: 11/11/2017
   
 -   下表中的选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  

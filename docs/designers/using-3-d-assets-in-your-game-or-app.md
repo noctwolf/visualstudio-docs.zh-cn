@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5613790632c4bd462c1efbb3f218a0299b276179
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5f1e8888461026f734ac08c5ec3f23b10f310174
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>在游戏或应用程序中使用三维资产
 本文介绍了如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 处理三维资产并将其包含在你的生成中。  

@@ -18,11 +18,12 @@ caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b5483245e7f2ae341d08618485a4f49e91eb8fa9
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 13d04bde21f46fd8950e79464beccfe2228633aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 使用项目设计器的“应用程序”页可指定项目的应用程序设置和属性。  
@@ -81,7 +82,7 @@ ms.lasthandoff: 11/02/2017
   
  如果“启用应用程序框架”处于选中状态（默认设置），则此列表的标题为“启动窗体”，并且仅显示窗体，因为应用程序框架仅支持启动窗体，不支持对象。  
   
- 如果项目是 WPF 浏览器应用程序，则此列表的标题为“启动 URI”，默认值为“Page1.xaml”。 “启动 URI”列表用于指定应用程序启动时显示的用户界面资源（一种 XAML 元素）。 有关更多信息，请参见<xref:System.Windows.Application.StartupUri%2A>。  
+ 如果项目是 WPF 浏览器应用程序，则此列表的标题为“启动 URI”，默认值为“Page1.xaml”。 “启动 URI”列表用于指定应用程序启动时显示的用户界面资源（一种 XAML 元素）。 有关详细信息，请参阅<xref:System.Windows.Application.StartupUri%2A>。  
   
  如果“启用应用程序框架”处于清除状态，则此列表将变为“启动对象”，并且同时显示窗体和带有 `Sub Main` 的类或模块。  
   
@@ -158,5 +159,5 @@ ms.lasthandoff: 11/02/2017
   
  <xref:System.Windows.Application> 对象在应用程序状态出现某些变化时（例如，在应用程序启动或关闭时）引发事件。 有关此类公开的事件的完整列表，请参阅 <xref:System.Windows.Application>。 这些事件在 `Application` 分部类的用户代码节中进行处理。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [管理应用程序属性](../../ide/application-properties.md) [在 Office 解决方案中编写代码](/office-dev/office-dev/writing-code-in-office-solutions)

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7df850e46f8f5d81b9127a9885128452900b84b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 44694e84fc0ab83ca4caf7bf80535dcae50a636f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>“高级生成设置”对话框 (C#)
 
@@ -80,6 +81,6 @@ ms.lasthandoff: 10/31/2017
 
 **库基址** 指定要加载 DLL 的首选基址。 DLL 的默认基址由 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 公共语言运行时设置。 有关详细信息，请参阅 [/baseaddress（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
  [C# 编译器选项](/dotnet/csharp/language-reference/compiler-options/index) [生成页、项目设计器 (C#)](../../ide/reference/build-page-project-designer-csharp.md)

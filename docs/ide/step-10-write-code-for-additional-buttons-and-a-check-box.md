@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 797b01016cb82aeb3d6ecfa1d11fa79df0085ee1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1196d229f69d1ffbfaae2c891ca03d1a58aedfdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>步骤 10：编写其他按钮和复选框的代码
 现在，您可以完成其他四个方法了。 虽然您可以复制并粘贴此代码，但是若想从此教程中学些到最多的内容，那么请键入代码并使用 IntelliSense。  

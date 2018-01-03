@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 469a8298122abdc96c69f13ed96a893b02575fc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 571cc5ffc3637ecdca54cda74fd6aa20983fdab6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 适用于 Android 的 Visual Studio 仿真程序在 Hyper-V（Windows 8 及以上版本的虚拟化技术）上作为虚拟机运行。 要运行仿真器，计算机必须满足本主题中所述的 Hyper-V 运行要求。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
 > [!IMPORTANT]
 >  仿真器的安装程序会检查运行 Visual Studio Emulator for Android 的先决条件。 如果先决条件不存在将显示警告，但并不需要这些条件。  
   
- 本主题包含以下各节。  
+ 本主题包含以下各节：  
   
 -   [快速清单](#Checklist)  
   
@@ -155,5 +156,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>硬件图形转发（OpenGL ES 支持）要求  
  为了让仿真器能够仿真对 GPU 的调用（例如 OpenGL ES 使用的那些调用），计算机必须具有兼容 DirectX 的 GPU 且安装了合适的 DirectX 驱动程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [适用于 Android 的 Visual Studio 模拟器疑难解答](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

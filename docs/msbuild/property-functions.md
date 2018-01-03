@@ -13,11 +13,12 @@ caps.latest.revision: "33"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 46df0fc4be6abf639f939b5145765f0ba41b0b8c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e77803150d747d05d8f6b0002814010c45244282
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-functions"></a>属性函数
 在 .NET Framework 4 和 4.5 版中，可以使用属性函数来计算 MSBuild 脚本。 可以在出现属性的任何位置使用属性函数。 与任务不同，属性函数可在目标外部使用，并在任何目标运行之前进行计算。  
@@ -338,6 +339,6 @@ Output:
 -->  
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [MSBuild 属性](../msbuild/msbuild-properties.md)   
 [MSBuild 概述](../msbuild/msbuild.md)

@@ -15,11 +15,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: "32"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3f7ea8032efa4b35603568afd8b17107c293f2e6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 661a3cd872cefe54a0c6c945708bbab576c40a03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>演练：使用配置文件定义数据源
 本演练演示如何使用 app.config 文件中定义的数据源进行单元测试。 你将学习如何创建用于定义可供 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 类使用的数据源的 app.config 文件。 本演练包括以下任务：  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/27/2017
   
 -   使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 类访问数据源。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  若要完成此演练，您需要：  
   
 -   Visual Studio Enterprise  
@@ -268,7 +269,7 @@ ms.lasthandoff: 10/27/2017
 > [!IMPORTANT]
 >  部署数据源等项，以便部署目录中的测试可以访问它们。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [单元测试代码](../test/unit-test-your-code.md)   
  [为现有代码创建和运行单元测试](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
  [测试应用](/devops-test-docs/test/test-apps-early-and-often)   

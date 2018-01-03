@@ -21,11 +21,12 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: d91a1a5fca1530f42e9781a09b2e9364daf8e15f
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: multiple
+ms.openlocfilehash: d0e0907e7127f83055bfafbcd4491576d94bc2c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="csc-task"></a>Csc 任务
 包装 CSC.exe，生成可执行 (.exe) 文件、动态链接库（.dll文件）或者代码模块（.netmodule文件）。 有关 CSC.exe 的详细信息，请参阅 [C# 编译器选项](/dotnet/csharp/language-reference/compiler-options/index)。  
@@ -94,6 +95,6 @@ ms.lasthandoff: 12/01/2017
     EmitDebugInformation="true" />  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [任务](../msbuild/msbuild-tasks.md)

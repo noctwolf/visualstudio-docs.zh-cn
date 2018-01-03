@@ -24,11 +24,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a83572bfad9aef93f7b5589e45bb24ec99fdb2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ae28077b52faf97b0ed1005e6fe5474925d197de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>选项，文本编辑器，所有语言，选项卡
 使用此对话框可更改代码编辑器的默认行为。 这些设置也适用于其他基于代码编辑器的编辑器，如 HTML 设计器的“源”视图。 若要显示这些选项，请选择“工具”菜单中的“选项”。 在“文本编辑器”中，展开“所有语言”子文件夹，然后选择“制表符”。  
@@ -66,6 +67,6 @@ ms.lasthandoff: 10/31/2017
  保留制表符  
  选中后，缩进操作会尽可能多地插入制表符。 每个制表符都会填充“制表符大小”中指定的空格数。 如果“缩进大小”不是“制表符大小”的偶数倍，则会添加空格字符以填充差额。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“选项”->“文本编辑器”->“所有语言”](../../ide/reference/options-text-editor-all-languages.md)   
  [“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)

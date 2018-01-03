@@ -22,11 +22,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a9faf31dea1eeb7b7a613b8e0c963620bc644af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2acfd3572d7586d2194e3979954049aede14a965
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert 函数
 向并发可视化工具跟踪文件写入一个警报。  
@@ -70,12 +71,12 @@ HRESULT CvWriteAlertVA(
 ## <a name="return-value"></a>返回值  
  成功写入消息时返回 S_OK。 出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  **标头：**cvmarkers.h  
   
  **Unicode：**CvWriteAlertW、CvWriteAlertVW  
   
  **ANSI：**CvWriteAlertA、CvWriteAlertVA  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C++ 库参考](../profiling/cpp-library-reference.md)

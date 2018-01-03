@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b326e88e18e3a7c5515cc11bfda7e5c35ae4a063
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9bb2cbe0a87e61a50f3f2b071aef9ef9e12663a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markerseries-class"></a>marker_series 类
 表示由单个提供程序生成的一系列事件通道。  
@@ -33,7 +34,7 @@ class marker_series;
   
 ### <a name="public-constructors"></a>公共构造函数  
   
-|名称|说明|  
+|名称|描述|  
 |----------|-----------------|  
 |[marker_series::marker_series 构造函数](../profiling/marker-series-marker-series-constructor.md)|初始化 `marker_series` 类的新实例。|  
 |[marker_series::~marker_series 析构函数](../profiling/marker-series-tilde-marker-series-destructor.md)|销毁 marker_series 对象并释放所有已分配的资源。|  
@@ -50,10 +51,10 @@ class marker_series;
 ## <a name="inheritance-hierarchy"></a>继承层次结构  
  `marker_series`  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  **标头：**cvmarkersobj.h  
   
  **命名空间：**Concurrency::diagnostic  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [diagnostic 命名空间](../profiling/diagnostic-namespace.md)

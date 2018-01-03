@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31cd3b1732cb279004eb500b5df6583a04d2e7bb
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: d08d090ad8e130e209af0d2057a065ed0bc474a7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view---sampling-data"></a>“行”视图 - 采样数据
 采样数据的“行”视图列出分析运行期间收集样本时所执行语句的性能数据。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/11/2017
   
  根据定义，语句不调用其他函数。 因此，仅列出独占值。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
@@ -61,5 +62,5 @@ ms.lasthandoff: 11/11/2017
 |**独占样本数**|执行函数行时收集的样本总数。|  
 |**独占样本数百分比**|执行函数行时在分析运行期间收集的所有样本数的百分比。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“行”视图 - 采样](../profiling/lines-view-dotnet-memory-sampling-data.md)

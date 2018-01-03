@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2c265fde65ae20012e2846d99b86c71254d5b44
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="gpu-usage"></a>GPU 使用情况
 在 Visual Studio 性能和诊断中心使用 GPU 使用情况工具，更好地了解你 Direct3D 应用的高级硬件利用率。 你可以使用该工具来确定应用的性能是与 CPU 绑定还是与 GPU 绑定，并深入了解如何更有效地使用平台的硬件。 GPU 使用情况工具支持使用 Direct3D 12、Direct3D 11 和 Direct3D 10 的应用，但不支持其他图形 API（如 Direct2D 或 OpenGL）。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 10/31/2017
   
  ![GPU 使用情况报告，提供 CPU 和 GPU 时间线](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  以下是除图形诊断要求之外使用 GPU 使用情况工具的要求。  
   
 -   支持必要计时规范的 GPU 和驱动程序。  

@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 199c33ce94aa1fcb5cffc45570a4425df3dbd720
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 748b547cda2a3c07ed84337d37f2a7e096ee112d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="blocking-time-profile-report"></a>阻塞时间分析报告
 分析报告提供特定于每个阻塞类别（例如，“I/O”或“同步”）的调用堆栈的合计阻塞时间数据。 优先报告列出抢占当前进程的进程以及抢占实例数。 为了生成阻塞分析报告，工具会收集阻塞 API 调用并将它们累计到调用堆栈树中。 这些报告中显示的数据因当前时间范围、隐藏线程和以下两个可能应用的筛选器而异：  
@@ -59,5 +60,5 @@ ms.lasthandoff: 10/31/2017
 ### <a name="ui-processing"></a>UI 处理  
  UI 处理报表显示对在 UI 处理块上进行阻止的片段的调用，以及每个调用堆栈的合计阻塞时间。 有关详细信息，请参阅 [UI 处理时间](../profiling/ui-processing-time.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [线程视图](../profiling/threads-view-parallel-performance.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af35812ba5d01c174d8b9d53bcd9572a45b8e793
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a94546b8e480a661c175f946cc376fa92b30cbf8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-existing-item-command"></a>“添加现有项”命令
 将现有文件添加到当前解决方案中并打开它。  
@@ -31,9 +32,9 @@ ms.lasthandoff: 10/31/2017
 File.AddExistingItem filename [/e:editorname]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `filename`  
- 必需。 待添加到当前解决方案的项的完整路径、文件名称和扩展名。 如果文件路径或文件名称包含空格，则将整个路径放在引号内。  
+ 必须的。 待添加到当前解决方案的项的完整路径、文件名称和扩展名。 如果文件路径或文件名称包含空格，则将整个路径放在引号内。  
   
 ## <a name="switches"></a>开关  
  /e: `editorname`  
@@ -55,7 +56,7 @@ File.AddExistingItem filename [/e:editorname]
 >File.AddExistingItem "C:\public\solution files\Form1.frm"  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   

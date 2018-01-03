@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 363ab8f0967ec9a2f8dcdc4e9eb817586e513a8b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5d17c59c44dc64b2e3fa3e53553a65ee9998b7ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>如何：指定要启动的二进制文件
 若要分析二进制文件（如 DLL），必须在“\<目标> 属性页”对话框中输入信息。 这些信息指示 DLL 项目查找调用应用程序的位置。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  在“工作目录”文本框中，指定目录的位置。  
   
-7.  单击“确定”。  
+7.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)

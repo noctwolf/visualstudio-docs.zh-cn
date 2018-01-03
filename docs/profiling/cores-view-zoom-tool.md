@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16df4a6823bfb23847cd49b97d7b4a29edf0fa4b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da3598568d0f607e37a3d42fbb080f0a70dfda57
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view-zoom-tool"></a>内核视图缩放工具
 缩放控件是一个滑块，允许在时间线上进行放大和缩小操作，便于你关注特定的感兴趣的区域。 此控件以当前视图的中心为缩放点，因此放大前请先调整视图。  
@@ -29,5 +30,5 @@ ms.lasthandoff: 10/31/2017
   
 -   放大和缩小：将鼠标悬停在时间线上，然后按住 CTRL 并移动鼠标滚轮。  
   
-## <a name="see-also"></a>另请参阅  
- [“核心”视图](../profiling/cores-view.md)
+## <a name="see-also"></a>请参阅  
+ [内核视图](../profiling/cores-view.md)

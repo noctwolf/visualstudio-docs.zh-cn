@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09e17cc1e28ad520f76d60c3411de4803a2b4b96
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6578a6fe623afe8ceb20f9db32e7fa005f06618c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>如何：引用 Windows 符号信息
 Visual Studio 分析工具使用符号 (.pdb) 文件来解析符号名称，例如，程序二进制文件中的函数名称。 可以按照以下步骤为本地计算机上的 Windows 版本自动下载和更新正确的 .pdb 文件。  
@@ -49,6 +50,6 @@ Visual Studio 分析工具使用符号 (.pdb) 文件来解析符号名称，例�
   
      还可以单击省略号按钮（“...”），然后从“浏览文件夹”对话框中选择一个目录。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [如何：序列化符号信息](../profiling/how-to-serialize-symbol-information.md)

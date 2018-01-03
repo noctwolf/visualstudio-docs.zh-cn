@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 775cafd5f8fc5bb2908447d7f34b13e0377d6711
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b67cf22f38366625d8aa7ff59ad1603a24074882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>如何：使用外侧代码段
 下列过程描述如何使用环绕代码片段。 可通过 3 种方式使用环绕代码片段：键盘快捷方式、“编辑”菜单和上下文菜单。  
@@ -58,6 +59,6 @@ ms.lasthandoff: 10/31/2017
   
      或者，可以键入代码片段的名称，然后按 Tab 或 Enter。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual C# 代码片段](../ide/visual-csharp-code-snippets.md)   
  [代码片段选择器](../ide/reference/code-snippet-picker.md)

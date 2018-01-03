@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f35dd690c97b4f69ff4633155f05dd9a2ebd7a2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 30c2d7fe3562221c2238a6b12a3eed37318ea504
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-memory-usage"></a>分析内存使用量
 使用集成了调试器的内存使用情况诊断工具在进行调试时查找内存泄漏和低效内存。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照  。 可以收集 .NET、本机或混合模式（.NET 和本机）应用的快照。  
@@ -168,6 +169,6 @@ ms.lasthandoff: 10/31/2017
   
  [Visual C++ 博客：Visual Studio 2015 CTP 中的本机内存诊断工具](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
  [使用 Visual Studio 分析](../profiling/index.md)  
  [分析功能简介](../profiling/profiling-feature-tour.md)

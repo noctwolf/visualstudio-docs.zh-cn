@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 58c1b8332e472484a0c932018bf6725cca9c7725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippet-functions"></a>代码段函数
 有三个函数可与 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 代码片段一起使用。 函数在代码片段的 [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) 元素中指定。 有关创建代码片段的详细信息，请参阅[代码片段](../ide/code-snippets.md)。  
@@ -153,6 +154,6 @@ ms.lasthandoff: 10/31/2017
 </CodeSnippets>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Function 元素 （IntelliSense 代码片段）](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [代码片段架构参考](../ide/code-snippets-schema-reference.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b045646ffb5771d40cd7531d01ed33181dff9cc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 09e16202fb1b35a48925297e35840a60b65f0488
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-compare-performance-data-files"></a>如何：比较性能数据文件
 可以创建比较（“差异”）报表或视图来比较两个不同的探查器数据文件（.vsp 或 .vsps）的结果。 比较显示从一个分析会话到另一个分析会话所发生的差异、性能回归和改进。  
@@ -57,4 +58,4 @@ ms.lasthandoff: 10/31/2017
   
 2.  在“选择要比较的分析文件”窗口中，浏览并选择“基线文件”分析文件（.vsp 或 .vsps）和“比较文件”（.vsp 或.vsps）。  
   
-3.  单击“确定”。
+3.  单击 **“确定”**。

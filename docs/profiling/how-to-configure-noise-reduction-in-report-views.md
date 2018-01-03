@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1cda2b61c50deb98752063f9606849356386a84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c0648336f4ba6be42de7253c27703fe544fb58d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在报告视图中配置降噪
 通过限制“调用关系树”视图和“分配”视图中显示的数据量，可针对降噪配置性能报表。 通过使用降噪，性能问题能够更加醒目。 分析性能报告时，这非常有用。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  若要禁用修整，请清除“启用修整”。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
 ### <a name="to-configure-folding-for-a-performance-report"></a>配置性能报告的折叠  
   
@@ -76,9 +77,9 @@ ms.lasthandoff: 10/31/2017
   
 3.  若要禁用折叠，请清除“启用折叠”。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义性能工具报表视图](../profiling/customizing-performance-tools-report-views.md)   
  [如何：在检测中排除或包括短函数](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [“调用关系树”视图](../profiling/call-tree-view.md)   

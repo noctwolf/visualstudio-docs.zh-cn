@@ -25,11 +25,12 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 3299640b5db944c2e421a5b95df552ed36f80b77
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ffd317643b7ea1bfbf97bce6d533a76fd7bf1509
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cl-task"></a>CL 任务
 包装 Visual C++ 编译器工具 cl.exe。 编译器生成可执行 (.exe) 文件、动态链接库 (.dll) 文件或者代码模块 (.netmodule) 文件。 有关详细信息，请参阅[编译器选项](/cpp/build/reference/compiler-options)。  
@@ -803,5 +804,5 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)

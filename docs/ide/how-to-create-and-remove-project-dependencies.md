@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9762bf8905ad162bd6059fae9ed1b7be06ca7919
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5fe8fe1706e6310c077399bb9300d439a7664d21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：创建和移除项目依赖项
 生成包含多个项目的解决方案时，可能需要首先生成某些项目，然后才能生成由其他项目使用的代码。 当一个项目使用另一个项目生成的可执行代码时，生成代码的项目则称为使用代码的项目的项目依赖项。 可在“项目依赖项”对话框中定义此类依赖关系。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
 
 4.  在“依赖对象”字段中，清除不再属于此项目依赖项的任何其他项目的复选框。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [编译和生成](../ide/compiling-and-building-in-visual-studio.md)   
  [了解生成配置](../ide/understanding-build-configurations.md)   

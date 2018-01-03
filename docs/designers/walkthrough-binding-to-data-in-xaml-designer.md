@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 65345f4c606ef9882d6c737e0dc1f3f0cbe99026
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 4e2192a7fbcf2491a0e131ee6d6df0ead16238fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>演练：将数据绑定到 XAML 设计器
 在 XAML 设计器中，可以通过使用美工板和“属性”窗口设置数据绑定属性。 本演练中的示例演示如何将数据绑定到控件。 具体而言，本演练展示如何创建具有名为 `ItemCount` 的 [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) 的简单购物车类，然后将 `ItemCount` 属性绑定到 [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) 控件的 **Text** 属性。  
@@ -97,6 +98,6 @@ ms.lasthandoff: 10/31/2017
   
      `TextBlock` 控件应将默认值 0 显示为文本。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
  [添加值转换器”对话框](https://msdn.microsoft.com/en-us/c5f3d110-a541-4b55-8bca-928f77778af8)

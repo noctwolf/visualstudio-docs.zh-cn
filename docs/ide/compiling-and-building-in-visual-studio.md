@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5918c0070be747f7ebdca9d789d5706820b93e20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29101e8e82fa9babf553be17414f1330cd6f7e18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中编译和生成
 
@@ -55,6 +56,6 @@ ms.lasthandoff: 10/31/2017
 - [设置生成选项](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 
 - [生成（编译）网站项目](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   

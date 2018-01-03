@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e3e1f6c6e62494f040e2f52180c5588688f460db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0cdd8fdd8ec36ccb070e8aaa197d728047a3fef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：创建多文件项模板
 项模板仅能指定一个项，但有时该项由多个文件组成。 例如，适用于 Visual Basic 的 Windows 窗体项模板需要下列三个文件：  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  以创建单文件项模板的方式创建项模板。 有关详细信息，请参阅[如何：创建项模板](../ide/how-to-create-item-templates.md)。  
   
-2.  将 `TargetFileName` 属性添加至每一个 `ProjectItem` 元素。 将 `TargetFileName` 属性的值设为 $fileinputname$.FileExtension，此处 FileExtension 为模板中包含的文件的文件扩展名。 例如:   
+2.  将 `TargetFileName` 属性添加至每一个 `ProjectItem` 元素。 将 `TargetFileName` 属性的值设为 $fileinputname$.FileExtension，此处 FileExtension 为模板中包含的文件的文件扩展名。 例如:  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -83,7 +84,7 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [如何：创建项模板](../ide/how-to-create-item-templates.md)   
  [模板参数](../ide/template-parameters.md)   

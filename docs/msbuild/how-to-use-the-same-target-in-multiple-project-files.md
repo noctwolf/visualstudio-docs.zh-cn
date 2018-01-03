@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b591f0158408161d268930416d49c465e29d0b2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 821c0634f4e23d0aa8fd71a8b0eedd796efe3a03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：在多个项目文件中使用同一目标
 如果你创建了若干个 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件后，或许发现自己可能需要在不同项目文件中使用相同的任务和目标。 无需将这些任务或目标的完整说明包含在每个项目文件中，相反，你可以将目标保存在单独的项目文件中，然后将该项目导入任何需要使用该目标的其他项目。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  在正在导入的项目文件中，定义所有在已导入项目中作为属性和项的参数使用的属性和项。  
   
-2.  使用 `Import` 元素导入项目。 例如:   
+2.  使用 `Import` 元素导入项目。 例如:  
   
      `<Import Project="MyCommon.targets"/>`  
   
@@ -114,6 +115,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)   
  [目标](../msbuild/msbuild-targets.md)

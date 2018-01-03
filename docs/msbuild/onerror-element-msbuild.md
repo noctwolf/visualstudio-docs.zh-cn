@@ -21,11 +21,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 1c0238bb7a525166f69a59b0af5d08db5286a5f8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c21160247a617c1f74333ef567a6857bbc902cdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="onerror-element-msbuild"></a>OnError 元素 (MSBuild)
 对于某失败的任务，如果 `ContinueOnError` 属性为 `false`，则会出现一个或多个要执行的目标。  
@@ -78,6 +79,6 @@ ms.lasthandoff: 10/31/2017
 </Target>  
 ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   
  [目标](../msbuild/msbuild-targets.md)

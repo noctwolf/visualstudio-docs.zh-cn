@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdad50eff09e96c5d9c0513be1f571a901278871
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 21b341f8900664c57fa21d33bc138a969a273759
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view-parallel-performance"></a>线程视图（并行性能）
 “线程”视图在并发可视化工具中最详细且功能最丰富的视图。 使用此视图可以确定线程是在执行还是由于同步、I/O 或某些其他原因而阻塞。  
@@ -147,5 +148,5 @@ ms.lasthandoff: 10/31/2017
 #### <a name="disk-operations"></a>磁盘操作  
  此选项卡显示代表当前进程的磁盘 I/O 中涉及的进程和线程、它们接触的文件（例如，已加载的 DLL）、读取的字节数以及其他信息。 可以使用此报告评估在执行过程中用于访问文件的时间（尤其是在进程似乎受到 I/O 限制时）。 有关详细信息，请参阅[“磁盘操作”报告](../profiling/disk-operations-report-threads-view.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [并发可视化工具](../profiling/concurrency-visualizer.md)

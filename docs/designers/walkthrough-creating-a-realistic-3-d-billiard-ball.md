@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dab9b5c631edde1883d4e4d2dcfa0dbf530b0441
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bd49879c6c23981bc88eb4309fb6c7da8e215bd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>演练：创建真实的三维撞球
 本演练演示如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的着色器设计器和图像编辑器创建真实的三维台球。 将几个着色技术与合适的纹理资源合并，实现台球的三维效果。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
   
 -   通过反射环境创造空间感。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  需以下组件和技能来完成本演练：  
   
 -   用于将纹理组合成立方体贴图的工具，例如 2010 年 6 月的 DirectX SDK 中包含的 DirectX 纹理工具。  
@@ -214,7 +215,7 @@ ms.lasthandoff: 10/31/2017
   
  在此最终图像中，请注意为创建逼真台球组合所添加效果的方式。 形状、纹理和照明构造三维物体的基本外观，反射高光和反射使得台球更加有趣，使其与环境融为一体。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：导出着色器](../designers/how-to-export-a-shader.md)   
  [如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [着色器设计器](../designers/shader-designer.md)   

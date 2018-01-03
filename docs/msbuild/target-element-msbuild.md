@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ed3af7142d556c52fbed71f03d5cc53eb3025035
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e8a444add9d28a79458dabab75b4cf62bf951dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 包含一组要连续执行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务。  
@@ -118,6 +119,6 @@ ms.lasthandoff: 10/31/2017
 </Target>  
 ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [目标](../msbuild/msbuild-targets.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)

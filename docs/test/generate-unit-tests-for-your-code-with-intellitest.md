@@ -12,11 +12,12 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 533e1938e83a7d4dccc3be4d8847967ee7c91f6f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bf6bdf29541b721839bbdef42a2bc018d4a9c424
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 为你的代码生成单元测试
 IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 为代码中的每个条件分支执行案例分析。 例如，分析 `if` 语句、断言和可能引发异常的所有操作。 此分析用于为你的每个方法生成参数化单元测试的测试数据，从而创建具有较高代码覆盖率的单元测试。  

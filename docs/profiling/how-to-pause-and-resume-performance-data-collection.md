@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d80aa5c71651fc6540711dc23ee2f9c8d45415b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18d2fa0dd28d22e04b4df5942c3a3585693ede33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>如何：暂停和恢复性能数据收集
 在分析会话页窗口中，您可以交互控制分析数据的收集。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
   
     -   选择“停止分析”可结束分析会话并生成报告。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [控制数据收集](../profiling/controlling-data-collection.md)   
  [如何：开始和结束性能数据收集](../profiling/how-to-start-and-end-performance-data-collection.md)

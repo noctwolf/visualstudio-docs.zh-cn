@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e9ccf0c77f28d2f57d6861dd39591a7cbbce36c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ccb81bffa6845e4e644294916a508820445da263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replace-in-files-command"></a>“在文件中替换”命令
 使用“查找和替换”窗口的“在文件中替换”选项卡上的可用选项子集替换文件中的文本。  
@@ -34,12 +35,12 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 [/reset] [/stop] [/sub] [/text2] [/wild] [/word]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `findwhat`  
- 必需。 要匹配的文本。  
+ 必须的。 要匹配的文本。  
   
  `replacewith`  
- 必需。 用于替换匹配文本的文本。  
+ 必须的。 用于替换匹配文本的文本。  
   
 ## <a name="switches"></a>开关  
  /all 或 /a  
@@ -92,7 +93,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [查找和替换文本](../../ide/finding-and-replacing-text.md)   
  [在文件中替换](../../ide/replace-in-files.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   

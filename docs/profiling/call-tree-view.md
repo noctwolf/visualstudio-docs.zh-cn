@@ -18,11 +18,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e2e7369d57f7a23cf8467d8a8eb5c99447d35e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e55e469112053d7a78416c21a685d423a6bfa31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view"></a>“调用关系树”视图
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都列出它调用的所有函数以及有关这些函数调用的性能数据。  
@@ -42,15 +43,15 @@ ms.lasthandoff: 10/31/2017
   
  有关“调用树”视图中的列定义的详细信息，请参阅以下内容：  
   
- [“调用树”视图](../profiling/call-tree-view-sampling-data.md)  
+ [“调用关系树”视图](../profiling/call-tree-view-sampling-data.md)  
   
- [“调用树”视图](../profiling/call-tree-view-instrumentation-data.md)  
+ [“调用关系树”视图](../profiling/call-tree-view-instrumentation-data.md)  
   
  [“调用关系树”视图 - 采样](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
   
- [“调用树”视图](../profiling/call-tree-view-contention-data.md)  
+ [“调用关系树”视图](../profiling/call-tree-view-contention-data.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [性能报告视图](../profiling/performance-report-views.md)   
  [了解检测数据值](../profiling/understanding-instrumentation-data-values.md)   
  [了解采样数据值](../profiling/understanding-sampling-data-values.md)

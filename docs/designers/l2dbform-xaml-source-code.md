@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ccc6fcfa8471d767356f1e30d1e5f8b0ed15d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b815904a7ac2b8a050cd4b907698c43a91d929dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 源代码
 本主题包含并说明 [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md)的 XAML 源文件 L2DBForm.xaml。  
@@ -241,6 +242,6 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="comments"></a>注释  
  有关与 WPF UI 元素相关联的事件处理程序的 C# 源代码，请参阅 [L2DBForm.xaml.cs 源代码](../designers/l2dbform-xaml-cs-source-code.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：LinqToXmlDataBinding 示例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml.cs 源代码](../designers/l2dbform-xaml-cs-source-code.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf6f9e8ca68fdd17659c920a9419c12ade2cf935
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 13d84644ad1e934afbb8b9f56455bf3da474c38f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tier-interaction-views"></a>层交互视图
 层交互分析提供有关多层应用程序函数执行时间的附加信息，这些应用程序通过 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 服务与数据库进行通信。 仅针对同步函数调用收集数据。 可以在所有分析方法中包含层交互数据。  

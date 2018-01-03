@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a27e4854371ebdae828335e84f2fab8d0165831
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e189434481c9fbe7e5f97c6e0cb6d0598b4b7379
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiler-sampling-method-data-views"></a>探查器采样方法数据视图
 本节包含有关使用采样方法生成的探查器数据文件的视图和报告的参考信息。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 11/11/2017
  [“摘要”视图](../profiling/summary-view-sampling-data.md)  
  列出收集样本时执行频率最高的函数，以及执行单个工作最多的函数。  
   
- [“调用树”视图](../profiling/call-tree-view-sampling-data.md)  
+ [“调用关系树”视图](../profiling/call-tree-view-sampling-data.md)  
  显示层次结构树中各个函数的执行路径。  
   
  [“模块”视图](../profiling/modules-view-sampling-data.md)  
@@ -66,5 +67,5 @@ ms.lasthandoff: 11/11/2017
  [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)  
  有关包含 .NET 内存数据的探查器数据文件的视图和报告的参考信息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [了解采样数据值](../profiling/understanding-sampling-data-values.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b60a28d7422125a745cf1b088891b2675da0bc8a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8fa19da70b55e4a519153898a800bb259983c39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="object-lifetime-view"></a>“对象生存期”视图
 在“性能会话”属性页上选中“还收集 .NET 对象的生存期数据”时，可以使用“对象生存期”视图。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
 |列|描述|  
 |------------|-----------------|  
-|**实例数**|此类型对象的分配数。|  
+|**实例**|此类型对象的分配数。|  
 |**总实例数百分比**|在分析运行期间进行的分配总数的百分比。|  
 |**已收集的第 0 代实例数**|在垃圾回收算法的第 0 代中，已解除分配的类型实例数。|  
 |**已收集的第 1 代实例数**|在垃圾回收算法的第 1 代中，已解除分配的类型实例数。|  
@@ -73,5 +74,5 @@ ms.lasthandoff: 10/31/2017
 |**已收集的大型对象堆实例数**|位于大型对象堆中，且在分析运行期间收集的此类型实例的数目。|  
 |**已收集的大型对象堆字节数**|位于大型对象堆中，且在分析运行期间收集的此类型实例的大小（以字节为单位）。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)

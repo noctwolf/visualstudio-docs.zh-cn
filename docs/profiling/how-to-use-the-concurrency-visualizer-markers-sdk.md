@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eacea655fe24b497b6bf9caa699e03cac99103d8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 794a853db12f106e8f7002d93bca798d45bb582c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用并发可视化工具标记 SDK
 本主题演示如何使用并发可视化工具 SDK 来创建范围并编写标志、消息和警报。  
@@ -179,5 +180,5 @@ ms.lasthandoff: 10/31/2017
   
      ![具有 3 个自定义标记系列的并发可视化工具](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)

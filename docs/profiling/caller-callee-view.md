@@ -18,11 +18,12 @@ caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0792f59f02c5b75247d5066b132cf1072d37c76a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: edc4c8a497027e21b21b81ccf7943dab8379ab93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="callercallee-view"></a>“调用方/被调用方”视图
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的分析信息。 “调用方/被调用方”视图包含三个网格：  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
  可通过单击列名对数据进行排序。 可将其他列添加到“调用方/被调用方”视图。 有关详细信息，请参阅[如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“调用方/被调用方”视图 - 采样数据](../profiling/caller-callee-view-sampling-data.md)   
  [“调用方/被调用方”视图 - 检测数据](../profiling/caller-callee-view-instrumentation-data.md)   
  [“调用方/被调用方”视图 - .NET 内存检测数据](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   

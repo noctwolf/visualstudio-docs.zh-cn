@@ -21,11 +21,12 @@ caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 20261d3eedaf82e636c2d8fa726a5344167640f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2b540f2b38385bdd18b1d97e4dee3e361b1c8710
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly 任务
 读取指定程序集中的元数据，并将所需项添加到注册表中，从而使 COM 客户端可以透明方式创建 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 类。 此任务的行为与 [Regasm.exe（程序集注册工具）](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)的行为类似，但不完全相同。  
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

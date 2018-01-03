@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e31c9c065f7e285e76d85bbcd901d3a9c23cba6a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 5607f5a2828b7589cbe803732262a52d9e760421
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>收集 .NET 内存分配数据和生存期数据
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具支持收集 .NET 内存分配和对象生存期数据，此数据有助于检测应用程序中与内存相关的性能问题。  
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/11/2017
 |在“CPU 计数器”  页上，指定要添加到分析数据的一个或多个处理器性能计数器。|-   [如何：收集 CPU 计数器数据](../profiling/how-to-collect-cpu-counter-data.md)|  
 |在“高级”页上，指定所需的任何其他 VSInstr 选项，例如用于包含或排除特定函数的选项。 有关 VSInstr 选项的详细信息，请参阅 [VSInstr](../profiling/vsinstr.md)|-   [如何：指定其他检测选项](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [如何：将检测限定为特定函数](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [如何：选择收集方法](../profiling/how-to-choose-collection-methods.md)   
  [性能会话属性](../profiling/performance-session-properties.md)

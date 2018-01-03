@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6fc3be33c332d643e5feb48f4a3733395c2a608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ab16dca3d4d27c157620f59774ec37f57aae020
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-explorer-window"></a>“性能资源管理器”窗口
 通过 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中的“性能资源管理器”窗口，您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具来配置和启动性能会话。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
 -   **报告** - 显示为会话生成的探查器数据文件的名称。 右键单击“报告”可添加现有报告或比较两个探查器数据文件。 右键单击报告名称可打开、删除或导出探查器数据文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [概述](../profiling/overviews-performance-tools.md)   
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [控制数据收集](../profiling/controlling-data-collection.md)

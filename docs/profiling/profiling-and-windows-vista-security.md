@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ac59d9cb4b729b99193a921c5f6965e48815261
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0dad9e27eff76c36cadf132cb3a1b0aaec1e44da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-and-windows-vista-security"></a>分析和 Windows Vista 安全性
 根据计算机管理员提供的 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 用户访问权限设置，单个用户可能会具有在该计算机上分析进程的安全权限。 下面的示例说明了用户之间可能存在的差异：  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
      未选择此选项时，列表显示当前会话中的进程。 选择此选项时，列表显示所有会话中的进程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [概述](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [如何：附加到运行的进程](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

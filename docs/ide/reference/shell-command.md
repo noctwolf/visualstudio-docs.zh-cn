@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa005388b0b8ec79e2647cc269ff20868ca647e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7744feca20a14a85c7a035a9b74ed415a43553b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shell-command"></a>shell 命令
 从 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 内启动可执行程序。  
@@ -36,9 +37,9 @@ ms.lasthandoff: 10/31/2017
 Tools.Shell [/command] [/output] [/dir:folder] path [args]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `path`  
- 必需。 要执行的文件或要打开的文档的路径和文件名。 如果在环境变量 PATH 的某个目录中没有指定的文件，则必须使用完整路径。  
+ 必须的。 要执行的文件或要打开的文档的路径和文件名。 如果在环境变量 PATH 的某个目录中没有指定的文件，则必须使用完整路径。  
   
  `args`  
  可选。 要传递给被调用的程序的任何参数。  
@@ -81,7 +82,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“输出”窗口](../../ide/reference/output-window.md)   

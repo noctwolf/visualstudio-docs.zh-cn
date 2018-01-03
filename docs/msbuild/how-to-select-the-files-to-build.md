@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: d5e6e13dc9700269f42d8ed640ea725cef9d6b05
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6edb2e53a3aa830593aaaa7da84c054b33ea0f6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-select-the-files-to-build"></a>如何：选择要生成的文件
 如果生成包含多个文件的项目，可以在项目文件中分别列出每个文件，也可以使用通配符将一个目录或一组嵌套目录中的所有文件都包括进去。  
@@ -172,6 +173,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)   
  [项](../msbuild/msbuild-items.md)

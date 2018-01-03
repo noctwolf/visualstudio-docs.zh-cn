@@ -11,11 +11,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: "17"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: f934ef31d2f348c2784393dbe472a417da0b4cd1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: dd75aab44b2859aa2200dcfff97b80947f6f6b5c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用存根针对单元测试隔离应用程序的各个部分
 *存根类型*是 Microsoft Fakes 框架提供的两种技术之一，方便你轻松地将受测组件与它调用的其他组件隔离开来。 存根是一小段代码，用来在测试期间替代另一个组件。 使用存根的好处在于它能返回一致的结果，使测试更易于编写。 而且，即使在其他组件无法工作的情况下，你也可以运行这些测试。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/27/2017
   
 -   Visual Studio Enterprise  
   
-## <a name="in-this-topic"></a>主题内容  
+## <a name="in-this-topic"></a>在本主题中  
   
 -   [如何使用存根](#how)  
   
@@ -254,7 +255,7 @@ End Class
  另外，还会为属性的 getter 和 setter、事件和泛型方法生成存根。  
   
 ###  <a name="mocks"></a>验证参数值  
- 你可以验证，当你的组件对另一个组件进行调用时，它是否传递正确的值。 你可以在存根中放置一个断言，或者也可以存储值并在测试的主体中验证它。 例如:   
+ 你可以验证，当你的组件对另一个组件进行调用时，它是否传递正确的值。 你可以在存根中放置一个断言，或者也可以存储值并在测试的主体中验证它。 例如:  
   
 ```csharp  
 [TestClass]  
@@ -504,5 +505,5 @@ StubBehaviors.Current =
 ### <a name="guidance"></a>指导  
  [使用 Visual Studio 2012 测试连续交付 - 第 2 章：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [用 Microsoft Fakes 隔离测试代码](../test/isolating-code-under-test-with-microsoft-fakes.md)

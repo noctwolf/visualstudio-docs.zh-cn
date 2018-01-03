@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff86fd14857206361a4bd9c15088cb3547200b28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7baa202558b6bb7bc60a0bb27d42ae004933ddea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-markers"></a>并发可视化工具标记
 在并发可视化工具中，标记是代表应用事件的图标。  通常，应用生成这些事件是为了指定应用程序中的阶段或匹配项。  事件可以由应用或应用所使用的库和运行时生成。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="markers-from-eventsource"></a>来自 EventSource 的标记  
  并发可视化工具还可以显示 EventSource 事件。  有关详细信息，请参阅[将 EventSource 事件作为标记可视化](../profiling/visualizing-eventsource-events-as-markers.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [标志标记](../profiling/flag-markers.md)   
  [消息标记](../profiling/message-markers.md)   
  [范围标记](../profiling/span-markers.md)   

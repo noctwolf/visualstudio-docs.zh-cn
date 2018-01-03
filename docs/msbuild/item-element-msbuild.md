@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 922c68ee927d05579ab2566e03b8acc0d9a56608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e4feedb6f32b1d1fb03ef51468eb50ef1a0aa7a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-element-msbuild"></a>Item 元素 (MSBuild)
 包含用户定义的项和其元数据。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目中使用的每一个项都必须被指定为 `ItemGroup` 元素的子元素。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|用户定义的包含项元数据值的项元数据键。 项中可能没有或有一些 `ItemMetadata` 元素。|  
 
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项](../msbuild/msbuild-items.md)   
  [MSBuild 属性](../msbuild/msbuild-properties.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)

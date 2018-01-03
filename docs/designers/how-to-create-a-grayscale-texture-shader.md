@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 337bf9a33f781046f0713dbb52a72412229dcd17
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 515aefab86a0a047d7074d127d9dd621feb0117c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>如何：创建灰度纹理着色器
 本文档演示如何使用着色器设计器和有向图着色器语言 (DGSL) 创建灰度纹理着色器。 此着色器将修改纹理样本的 RGB 颜色值，然后将其与未修改的 Alpha 值一起用于设置最终颜色。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
  某些形状可能会增强某些着色器的预览效果。 有关在着色器设计器中预览着色器的详细信息，请参阅[着色器设计器](../designers/shader-designer.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：导出着色器](../designers/how-to-export-a-shader.md)   
  [图像编辑器](../designers/image-editor.md)   

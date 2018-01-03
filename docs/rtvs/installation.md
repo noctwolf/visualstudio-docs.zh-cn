@@ -12,15 +12,16 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 2abb64170fdaa7ce91308f1be2c683325bc1abdd
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 3381d1132bc08f6b793089ccd0d2de22ef61fa47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>如何安装针对 Visual Studio 的 R 工具
 
-在本主题中：
+本主题内容：
 
 - [支持的 Visual Studio 版本](#supported-versions-of-visual-studio)
 - [在 Visual Studio 2017 中安装 RTVS](#installing-rtvs-in-visual-studio-2017)
@@ -86,7 +87,7 @@ RTVS for Visual Studio 2015 安装在以下位置：`%ProgramFiles(x86)%\Microso
 
 1. 从脱机安装程序安装 Visual Studio 和 RTVS。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [R 入门](getting-started-with-r.md)
 - [R 工具示例项目](getting-started-samples.md)

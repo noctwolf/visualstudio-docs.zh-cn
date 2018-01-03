@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1672a505fbd7accfdc7fa644eafa6b3af0744d26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c3e191509b7b0ed80447399eeb533c4a318ad8c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="net-memory-allocations-view"></a>.NET 内存分配视图
 “分配”视图列出在分析运行期间创建的类型。 每个类型都是一个调用树的根节点，该调用树显示导致分配该类型的函数执行路径。  
@@ -40,9 +41,9 @@ ms.lasthandoff: 10/31/2017
   
 -   若要显示最活跃的路径，请右键单击类型或函数，再单击“展开热路径”。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
-|**Name**|已分配类型或函数的名称。|  
+|**名称**|已分配类型或函数的名称。|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
 |**模块名**|类型或函数所在模块的名称。|  

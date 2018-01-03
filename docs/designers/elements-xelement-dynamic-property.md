@@ -14,11 +14,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24b28407d0b69d1ac7e2309ee1f8c24393b68e84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c8bca4053da38738068c14fc20b43acc6c775ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elements-xelement-dynamic-property"></a>元素（XElement 动态属性）
 获取一个索引器，用于检索与指定扩展名匹配的当前元素的子元素。  
@@ -39,7 +40,7 @@ elem.Elements[{namespaceName}localName]
   
  此属性使用延迟执行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XElement 类动态属性](../designers/xelement-class-dynamic-properties.md)   
  [元素](../designers/element-xelement-dynamic-property.md)   
  [子代](../designers/descendants-xelement-dynamic-property.md)

@@ -22,18 +22,19 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c6071782251761563a2a279ced2926e68d441aec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f67c122a879df51708852925a63008cfb190318
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 任务
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> 任务可将本地化属性和一个或多个 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二进制格式文件的注释合并到整个程序集的单一文件中。  
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|说明|  
+|参数|描述|  
 |---------------|-----------------|  
 |`GeneratedLocalizationFiles`|必需的 **ITaskItem[]** 参数。<br /><br /> 指定单个 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二进制格式文件的本地化指令文件列表。|  
 |`OutputFile`|必需的 **String** 输出参数。<br /><br /> 指定编译的本地化指令程序集的输出路径。|  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [WPF MSBuild 引用](../msbuild/wpf-msbuild-reference.md)   
  [任务参考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)   

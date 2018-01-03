@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c603e0c235b37c63719abb8e9a5e6dbb3ca3e652
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: multiple
+ms.openlocfilehash: b00a4a46846b6b3b6c07c57614ac5a769cf0b8a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-properties"></a>MSBuild 属性
 属性是可用于配置生成的名称/值对。 属性可用于将值传递给任务，评估条件和存储将在整个项目文件中引用的值。  
@@ -138,7 +139,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)  
  [如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)   

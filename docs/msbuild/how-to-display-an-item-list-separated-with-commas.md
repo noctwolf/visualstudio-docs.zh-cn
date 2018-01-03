@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: be7beec070d58f265912f61d37a2d213e50ea0c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bc769164187212997b6bc3dcb170c03f7a29ef3b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>如何：显示用逗号分隔的项列表
 在 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 中处理项列表时，有时以易于阅读的方式显示这些项列表的内容会很有帮助。 或者，你执行的任务可能会用到以特殊的分隔符字符串分隔的项列表。 在这两种情况中，可以为项列表指定分隔符字符串。  
@@ -69,6 +70,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 参考](../msbuild/msbuild-reference.md)   
  [项](../msbuild/msbuild-items.md)

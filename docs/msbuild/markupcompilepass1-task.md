@@ -22,18 +22,19 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5a8b4c68e5ed3d9d2322f7e2468c800bea793590
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2dfa5dd2112557d942e2e7dc1011bc605ae3e974
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 任务
 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> 任务会将非本地化的 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 项目文件转换成已编译的二进制格式。  
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|说明|  
+|参数|描述|  
 |---------------|-----------------|  
 |`AllGeneratedFiles`|可选的 **ITaskItem[]** 输出参数。<br /><br /> 包含由 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> 任务生成的文件的完整列表。|  
 |`AlwaysCompileMarkupFilesInSeparateDomain`|可选 **Boolean** 参数。<br /><br /> 指定是否在单独的 <xref:System.AppDomain> 下运行该任务。 如果此参数返回 false，则任务将在与 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 相同的 <xref:System.AppDomain> 中运行，且运行速度更快。 如果该参数返回 true，则任务将在独立于 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] 的另一个 <xref:System.AppDomain> 中运行，且运行速度更慢。|  
@@ -120,7 +121,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [WPF MSBuild 引用](../msbuild/wpf-msbuild-reference.md)   
  [任务参考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)   

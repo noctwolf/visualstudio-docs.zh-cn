@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b57361df805fbeb374d01236af1d1a16d0a3365a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ee1168865d5827f4536b39b8b0822f1e1d67635e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="utilization-view"></a>使用率视图
 **使用率视图**显示有关当前进程所使用的 CPU、GPU 和其他系统资源的信息。 它显示随着时间的推移，在系统上运行的分析的进程、空闲进程、系统进程和其他进程的平均核心使用率。 它不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。 通过将分析时间分成较短的时间段生成此视图。 对于每个时间段，此图绘制出该间隔期间内在逻辑核心上执行的进程线程的平均数量。  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="zooming"></a>缩放  
  若要在 CPU 使用率关系图或 GPU 活动关系图上放大，请选择某个节，或使用关系图顶部的缩放滑块工具。 当切换到其他视图时，缩放设置仍然存在。 若要再次缩小，请使用缩放滑块工具。 还可以使用 Ctrl+滚动条进行缩放。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [并发可视化工具](../profiling/concurrency-visualizer.md)   
  [“核心”视图](../profiling/cores-view.md)

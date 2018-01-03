@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57f6cf279bc20514aa16d7da422a22349d2b792e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 561affd955385f6797774e08d52c6949763a4eae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="marks-view"></a>“标记”视图
 “标记”视图显示插入到应用程序的采样和 ETW 事件。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
  Windows 性能计数器数据  
  收集 Windows 性能计数器数据时，值将显示在具有该计数器名称的列中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [性能报告概述](../profiling/performance-report-overview.md)   
  [如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)   
  [&#91;NIB&#93; 数据收集控件窗口](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)

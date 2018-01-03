@@ -8,23 +8,18 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
-dev_langs:
-- VB
-- CSharp
-- C++
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
-ms.assetid: 153527c6-8b95-4003-8e8e-03a489d0a629
-caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0829c1514e8d98d32914c4cc8f59de822d6b7f4d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cbe2be8ec1012295f84fbbec4cc0f614fd86d8d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publish-page-project-designer"></a>“项目设计器”->“发布”页
 “项目设计器”  上的“发布”  页面用于针对 ClickOnce 部署配置属性。  
@@ -51,7 +46,7 @@ ms.lasthandoff: 10/31/2017
  **应用程序文件**  
  打开 [Application Files Dialog Box](http://msdn.microsoft.com/en-us/b06dff3a-b87a-4caf-996b-7a4acf8137a8)，它用于指定如何以及在何处安装各个文件。  
   
- **先决条件**  
+ **系统必备**  
  打开 [Prerequisites Dialog Box](../../ide/reference/prerequisites-dialog-box.md)，它用于指定要与应用程序一起安装的必备组件，如 .NET Framework。  
   
  **更新**  
@@ -74,7 +69,7 @@ ms.lasthandoff: 10/31/2017
  **立即发布**  
  使用当前设置发布应用程序。 等效于“发布向导”中的“完成”按钮。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../../deployment/publishing-clickonce-applications.md)   
  [如何：使用发布向导发布 ClickOnce 应用程序](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [如何：指定 Visual Studio 复制文件的位置](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

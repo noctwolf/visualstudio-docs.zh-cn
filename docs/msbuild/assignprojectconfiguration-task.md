@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 1b5b94609735b9851c71ab24d879fdbcc9f9a745
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2362eb55d0744c67b83725d0cabb059516b2eddb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 任务
 此任务接受列表配置字符串，并将其分配给指定的项目。  
@@ -32,8 +33,8 @@ ms.lasthandoff: 10/31/2017
 |参数|描述|  
 |---------------|-----------------|  
 |`SolutionConfigurationContents`|可选 `string` 输出参数。<br /><br /> 包含 XML 字符串，该字符串包含每个项目的项目配置。 这些配置分配给已命名的项目。|  
-|`DefaultToVcxPlatformMapping`|可选 `string` 输出参数。<br /><br /> 包含以分号分隔的映射列表，这些映射是从由大多数类型所使用的平台名称<br /><br /> 到由 .vcxproj 文件所使用的平台名称的映射。<br /><br /> 例如: <br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  
-|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string` 输出参数。<br /><br /> 包含以分号分隔的映射列表，这些映射是从 .vcxproj 平台名称到由大多数类型所使用的平台名称的映射。<br /><br /> 例如: <br /><br /> `"Win32=AnyCPU;X64=X64"`|  
+|`DefaultToVcxPlatformMapping`|可选 `string` 输出参数。<br /><br /> 包含以分号分隔的映射列表，这些映射是从由大多数类型所使用的平台名称<br /><br /> 到由 .vcxproj 文件所使用的平台名称的映射。<br /><br /> 例如:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  
+|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string` 输出参数。<br /><br /> 包含以分号分隔的映射列表，这些映射是从 .vcxproj 平台名称到由大多数类型所使用的平台名称的映射。<br /><br /> 例如:<br /><br /> `"Win32=AnyCPU;X64=X64"`|  
 |`CurrentProjectConfiguration`|可选 `string` 输出参数。<br /><br /> 包含当前项目的配置。|  
 |`CurrentProjectPlatform`|可选 `string` 输出参数。<br /><br /> 包含当前项目的平台。|  
 |`OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration`|可选 `bool` 输出参数。<br /><br /> 包含指示应生成引用（即使在项目配置中禁用引用）的标志。|  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

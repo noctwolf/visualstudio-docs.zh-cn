@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 552e08a653c576a0f2e4bc916beaf4749ff490ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48e849df1cb918682176befa25c688fe7b436460
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 别名通过缩短执行命令所需的文本提供了在“查找/命令”框或“命令”窗口中输入命令的方法。 例如，可以使用预定义别名 `>of`，而不是输入 `>File.OpenFile` 来显示“打开文件”对话框。  
@@ -127,7 +128,7 @@ ms.lasthandoff: 10/31/2017
 |列出进程|&#124;|Debug.ListProcesses|  
 |[“列出线程”命令](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)

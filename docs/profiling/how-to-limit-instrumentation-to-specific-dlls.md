@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59d24a6cc67429fb6c0231f9487d80abe91de965
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ad8aaf7dbf9960a3281add90da685c2942bd179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>如何：将检测限定为特定 DLL
 通过使用检测分析方法，可以将分析数据的收集限定为应用程序中的一个或多个 DLL。 若要分析应用程序中的一个或多个 DLL，请创建一个将 .dll 文件作为目标包含在内的性能会话。 可以将要分析的 DLL 指定为 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中的项目或独立的二进制文件。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
     -   可选。 在“命令行参数”中键入要传递给可执行文件的任何命令行参数。 如有必要，请在“工作目录”中指定应用程序的工作目录。  
   
-    -   单击“下一步” 。  
+    -   单击 **“下一步”**。  
   
 5.  选择“检测”作为分析方法，然后单击“下一步”。  
   
@@ -69,6 +70,6 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  请勿指定执行 DLL 的可执行 (.exe) 文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [控制数据收集](../profiling/controlling-data-collection.md)   
  [如何：将检测限定为特定函数](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

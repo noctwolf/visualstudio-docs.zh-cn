@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2b935e0d09bb80347ee17c796f83846cef02a39f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5316a6f7f206ce5f28c6a76d13bf6dc8e4143125
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-clean-a-build"></a>如何：清理生成
 清理生成时，将删除所有中间文件和输出文件，仅保留项目和组件文件。 然后，可以根据项目和组件文件生成中间文件和输出文件的新实例。 随 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供的常规任务库中包括一个 [Exec](../msbuild/exec-task.md) 任务，可以使用该任务运行系统命令。 有关任务库的详细信息，请参阅[任务参考](../msbuild/msbuild-task-reference.md)。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  如果目录不存在，使用 [MakeDir](../msbuild/makedir-task.md) 任务创建目录。 例如:   
+2.  如果目录不存在，使用 [MakeDir](../msbuild/makedir-task.md) 任务创建目录。 例如:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -46,14 +47,14 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>删除目录和目录中包含的所有文件  
   
--   使用 `RemoveDir` 任务删除目录。 例如:   
+-   使用 `RemoveDir` 任务删除目录。 例如:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
 ## <a name="example"></a>示例  
  以下代码示例项目包含一个新目标 `Clean`，该目标使用 `RemoveDir` 任务删除目录和该目录中包含的所有文件和目录。 此外，在此示例中，`Compile` 目标还将为清理生成时删除的输出项创建一个单独的目录。  
   
- 由于 `Compile` 被定义为默认目标，因此，除非另外指定一个或多个目标，否则会自动使用该默认目标。 使用命令行开关 /target 另外指定一个目标。 例如:   
+ 由于 `Compile` 被定义为默认目标，因此，除非另外指定一个或多个目标，否则会自动使用该默认目标。 使用命令行开关 /target 另外指定一个目标。 例如:  
   
  `msbuild <file name>.proj /target:Clean`  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Exec 任务](../msbuild/exec-task.md)   
  [MakeDir 任务](../msbuild/makedir-task.md)   
  [RemoveDir 任务](../msbuild/removedir-task.md)   

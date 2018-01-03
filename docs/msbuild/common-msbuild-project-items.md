@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 82d4687a72cb0f13291aa01ff37b91afbcc254e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 931ccda0fd42a01c9afe272ef985380bc3276e6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，项是对一个或多个文件的命名引用。 项包含元数据（如文件名、路径和版本号）。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有项目类型具有几个通用项。 在文件 microsoft.build.commontypes.xsd 中定义了这些项。  
@@ -141,5 +142,5 @@ ms.lasthandoff: 10/31/2017
 ### <a name="import"></a>导入  
  表示应由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编译器导入其命名空间的程序集。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [常用的 MSBuild 项目属性](../msbuild/common-msbuild-project-properties.md)

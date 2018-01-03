@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 740eefc28e0b48d327fb5d0900ab39364633f877
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b8c0f47186b36cea9b203805c3c9c009acb3fb42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>演练：从头开始创建 MSBuild 项目文件
 面向 .NET Framework 的编程语言将使用 MSBuild 项目文件来介绍并控制应用程序生成过程。 使用 Visual Studio 创建 MSBuild 项目文件时，会自动将适当的 XML 添加到该文件。 但是，你可能会发现，了解 XML 的组织方式以及如何能够更改 XML 来控制生成将非常有用。  
@@ -479,6 +480,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="whats-next"></a>接下来的内容  
  Visual Studio 能够自动执行本演练中演示的大部分工作。 若要了解如何使用 Visual Studio 来创建、编辑、生成和测试 MSBuild 项目文件，请参阅[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [MSBuild 概述](../msbuild/msbuild.md)  
  [MSBuild 参考](../msbuild/msbuild-reference.md)

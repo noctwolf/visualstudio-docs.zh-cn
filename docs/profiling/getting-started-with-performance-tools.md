@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccfaa75052ffa90e1e06ba2943ae54305fd54541
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c18d2ada5f150abe379d3cae7ad830392cb62ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-performance-tools"></a>性能工具入门
 本部分概述使用 Visual Studio 性能工具收集、查看和分析代码性能时要应用的概念和任务。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
 |**不使用向导分析应用程序：**了解如何使用性能会话属性页创建性能会话。|-   [如何：手动创建性能会话](../profiling/how-to-manually-create-performance-sessions.md)|  
 |**尝试一下：**通过分析示例应用程序亲身体验。|-   [演练：确定性能问题](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax 示例](../profiling/peopletrax-sample-profiling-tools.md)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [概述](../profiling/overviews-performance-tools.md)   
  [分析性能工具数据](../profiling/analyzing-performance-tools-data.md)   
  [使用性能规则对数据进行分析](../profiling/using-performance-rules-to-analyze-data.md)   

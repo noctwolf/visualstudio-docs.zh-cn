@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 800b3f24db41ae2a76da5e3f2d1c1417b7486416
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fbbf9909d68a112b11c86fb91ed46dbe151ae0cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-the-current-session"></a>如何：设置当前会话
 可以在“性能资源管理器”中打开多个性能会话，然后可以选择一个可见性能会话，将其设置为当前会话。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
      会话名称将显示为粗体。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [“性能资源管理器”窗口](../profiling/performance-explorer-window.md)   
  [性能会话属性](../profiling/performance-session-properties.md)   

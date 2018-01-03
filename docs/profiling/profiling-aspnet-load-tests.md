@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7669d8ca915a32496399c526b112e877a8bce57c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 7c4a1e48d5e9bdbf28569656b580608a6c35034a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-aspnet-load-tests"></a>分析 ASP.NET 负载测试
 可以从在 ASP.NET 网站项目上运行的自动 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] Web 测试收集分析数据。 可以收集采样和层交互数据。 有关详细信息，请参阅下列主题：  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
   
  [使用 Microsoft Visual Studio 运行系统测试](/devops-test-docs/test/running-automated-tests-using-microsoft-visual-studio)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [了解采样数据值](../profiling/understanding-sampling-data-values.md)   
  [使用性能规则对数据进行分析](../profiling/using-performance-rules-to-analyze-data.md)   
  [采样方法数据视图](../profiling/profiler-sampling-method-data-views.md)   

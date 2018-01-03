@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 881075ee32ccac155237035dbe1a2f6d17a82893
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9634fe1a0fa26d5180edc9312b925e6740bac216
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-best-practices"></a>MSBuild 最佳做法
 我们建议下列编写 MSBuild 脚本的最佳做法：  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/31/2017
   
 -   在选择项目时，请避免使用通配符。 而应显式指定文件。 这使得跟踪在添加或删除文件时可能出现的错误更加简单。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [高级概念](../msbuild/msbuild-advanced-concepts.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f1522f4d3b7f97ccea1529c043e6179502fcd14a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 765f74a80e98737b65fb913113b2879ce4609248
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assignculture-task"></a>AssignCulture 任务
 此任务接受文件名中可能包含有效 .NET 区域性标识符字符串的项的列表，并且生成包含相应的区域性标识符且名为 `Culture` 的元数据的项。 例如，文件名 Form1.fr-fr.resx 具有嵌入的区域性标识符“fr-fr”，因此该任务会生成具有相同文件名的项，其中元数据 `Culture` 为 `fr-fr`。 该任务还会生成文件名中删除了区域性的文件名列表。  
@@ -79,6 +80,6 @@ ms.lasthandoff: 10/31/2017
 |`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx`（无其他元数据）|  
 |`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (`无其他元数据）|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

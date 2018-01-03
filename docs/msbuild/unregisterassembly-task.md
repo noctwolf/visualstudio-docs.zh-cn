@@ -21,11 +21,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ecb4688452457f9a24a0ab982c06567aae2491d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f1f2f0826b89a7a06d1682d4c991087f29c274c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 任务
 注销用于 COM 互操作的指定程序集。 执行 [RegisterAssembly 任务](../msbuild/registerassembly-task.md)的相反任务。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [RegisterAssembly 任务](../msbuild/registerassembly-task.md)   
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

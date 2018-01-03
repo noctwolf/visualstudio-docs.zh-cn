@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6e18791f33ddb9c373af8b0af8def615c26374b3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: d43a783bc070e5903af35c780bb9fc1ff3737295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>选项，文本编辑器，JavaScript，IntelliSense
 使用 **“选项”** 对话框的 **“IntelliSense”** 页可以修改影响 IntelliSense for JavaScript 行为的设置。 可以通过选择菜单栏上的 **“工具”** 、 **“选项”**, **“文本编辑器”** 、 **““IntelliSense””**, **“IntelliSense”**, **“工具”.**页。  
@@ -79,5 +80,5 @@ ms.lasthandoff: 11/02/2017
 **添加对组的引用**  
 使用此选项，可通过浏览到相应文件来添加其他 IntelliSense .js 文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

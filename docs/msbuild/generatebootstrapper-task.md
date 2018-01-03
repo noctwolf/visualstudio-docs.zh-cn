@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9add80659ea5c574dbdd56c2c09c9da4a9b646ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 036f519529f0226c56b711096abc91e4ebf97d3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 任务
 提供自动化方式来检测、下载和安装应用程序及其必备组件。 它可以作为集成不同的安装程序的单个安装程序为组成应用程序的所有组件提供服务。  
@@ -177,6 +178,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

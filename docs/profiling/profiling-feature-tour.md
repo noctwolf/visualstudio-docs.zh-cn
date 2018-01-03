@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-feature-tour"></a>分析功能简介
 
@@ -153,14 +154,14 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 |----------------------|---------------------|------------------------------|-------------|  
 |[内存使用率](../profiling/memory-usage.md)|是|是|是|  
 |[CPU 使用率](../profiling/cpu-usage.md)|是|是|是（不适用于 .NET Core/ASP.NET Core）|  
-|[GPU 使用情况](../debugger/gpu-usage.md)|是|是|no|  
-|[应用程序时间线](../profiling/application-timeline.md)|是|是|no|  
+|[GPU 使用情况](../debugger/gpu-usage.md)|是|是|否|  
+|[应用程序时间线](../profiling/application-timeline.md)|是|是|否|  
 |[性能提示](../profiling/perftips.md)|是|XAML 适用，HTML 不适用|是|  
-|[性能资源管理器](../profiling/performance-explorer.md)|是|no|是（不适用于 ASP.NET Core）|  
+|[性能资源管理器](../profiling/performance-explorer.md)|是|否|是（不适用于 ASP.NET Core）|  
 |[IntelliTrace](../debugger/intellitrace.md)|仅限 .NET Enterprise|仅限 .NET Enterprise|仅限 .NET Enterprise|
-|[网络使用情况](../profiling/network-usage.md)|no|是|no| 
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|no|HTML 适用，XAML 不适用|no|  
-|[JavaScript 内存](../profiling/javascript-memory.md)|no|HTML 适用，XAML 不适用|no|  
+|[网络使用情况](../profiling/network-usage.md)|否|是|否| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|HTML 适用，XAML 不适用|否|  
+|[JavaScript 内存](../profiling/javascript-memory.md)|否|HTML 适用，XAML 不适用|否|  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)

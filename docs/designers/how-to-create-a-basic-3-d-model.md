@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4bba90206a428ae9bb782e7eac408b872721351f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b9a7bfb1d2eb3f54da0953a78d1e9630ed00aab3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>如何：创建基本三维模型
 本文档说明如何使用模型编辑器创建基本三维模型。  
@@ -76,7 +77,7 @@ ms.lasthandoff: 10/31/2017
   
  下一步，您可以将着色器应用于此三维模型。 相关信息，请参阅[如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：构建三维地形模型](../designers/how-to-model-3-d-terrain.md)   
  [模型编辑器](../designers/model-editor.md)   
  [着色器设计器](../designers/shader-designer.md)

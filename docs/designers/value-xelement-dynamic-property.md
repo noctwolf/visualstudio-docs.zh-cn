@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d6a473997283fa5d72b0495d8bafed861fdcc33
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8b9e0e64b4b4645f769ef3262077ca2a590f7b7f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="value-xelement-dynamic-property"></a>值（XElement 动态属性）
 获取或设置元素的内容。  
@@ -33,7 +34,7 @@ elem.Value
 ## <a name="remarks"></a>备注  
  此属性等效于 <xref:System.Xml.Linq.XElement.Value%2A> 类的 <xref:System.Xml.Linq.XElement?displayProperty=fullName> 属性，但此动态属性还支持更改通知。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=fullName>   
  [XElement 类动态属性](../designers/xelement-class-dynamic-properties.md)   
  [Xml](../designers/xml-xelement-dynamic-property.md)

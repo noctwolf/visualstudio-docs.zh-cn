@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 5dacd44d72e5be7a898ba90c074dedf4b2f2bb4b
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: a756b7a0cbc69e02c530ffc95d776aefbc96afa3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introduction-to-wpf"></a>WPF 介绍
 使用 Windows Presentation Foundation (WPF)，你可以创建适用于 Windows 且具有非凡视觉效果的桌面客户端应用程序。  
@@ -648,7 +649,7 @@ End Namespace
   
  在你生成应用程序时，你可以回到本简介复习主要功能，并查找对本简介中所涵盖功能的更详细说明的参考。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [WPF 入门](../designers/getting-started-with-wpf.md)   
  [使用 Windows Presentation Foundation 创建现代桌面应用程序](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)   
  [Windows Presentation Foundation](/dotnet/framework/wpf/index)

@@ -53,11 +53,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 747e17f876972fb44f686fe90ad4e97fd035279e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 55c4678954a274b99c0bdeadb250ec3c602d3b20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-general"></a>选项，文本编辑器，常规
 使用此对话框可以更改 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 代码和文本编辑器的全局设置。 若要显示此对话框，请在“工具”菜单上单击“选项”，展开“文本编辑器”文件夹，然后单击“常规”。  
@@ -98,7 +99,7 @@ ms.lasthandoff: 10/31/2017
  突出显示当前行  
  勾选此项后，光标所在代码行周围会显示一个灰色框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“选项”->“文本编辑器”->“所有语言”](../../ide/reference/options-text-editor-all-languages.md)   
  [“选项”->“文本编辑器”->“所有语言”->“制表符”](../../ide/reference/options-text-editor-all-languages-tabs.md)   
  [“选项”->“文本编辑器”->“文件扩展名”](../../ide/reference/options-text-editor-file-extension.md)   

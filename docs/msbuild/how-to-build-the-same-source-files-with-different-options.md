@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 74e74184840e74c6333c6e503ea24cc7252061bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c16226e53afedd400360aa78cd87c878e30be68
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同选项生成相同的源文件
 在生成项目时，你经常使用不同的生成选项编译相同的组件。 例如，你可以使用符号信息创建调试版本，或者使用无符号信息但启用优化来创建发布版本。 或者，可以生成项目，在某个特定平台（例如，x86 或[!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]）上运行。 在所有这些情况下，大部分生成选项保持不变；只更改几个选项以控制生成配置。 利用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，你可以使用属性和条件来创建不同的生成配置。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>在命令行中设置项目属性  
   
--   使用 **/property** 开关以及属性和属性值。 例如:   
+-   使用 **/property** 开关以及属性和属性值。 例如:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>在命令行上指定多个项目属性  
   
--   多次使用 **/property** 或 **/p** 开关以及属性和属性值，或者使用一个 **/property** 或 **/p** 开关并使用分号 (;) 分隔多个属性。 例如:   
+-   多次使用 **/property** 或 **/p** 开关以及属性和属性值，或者使用一个 **/property** 或 **/p** 开关并使用分号 (;) 分隔多个属性。 例如:  
   
     ```  
     msbuild file.proj /p:Flavor=Debug;Platform=x86  
@@ -185,7 +186,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [MSBuild](../msbuild/msbuild.md)  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)   

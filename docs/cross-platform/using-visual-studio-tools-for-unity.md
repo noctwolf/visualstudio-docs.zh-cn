@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 735c95d9eda5cba15b9d75a5abf10d26dd14b0cb
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: unity
+ms.openlocfilehash: 06598b54e50db1566cc35c896061b4a2d1fb1a40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 在本部分中，你将了解如何使用 Visual Studio Tools for Unity 的集成和工作效率功能，以及如何使用 Visual Studio 调试器进行 Unity 开发。  
@@ -129,7 +130,7 @@ ms.lasthandoff: 12/12/2017
  **计算机**  
  运行此 Unity 实例的计算机或设备的名称。  
 
- **类型**  
+ **Type**  
  如果此 Unity 实例作为 Unity 编辑器的一部分运行，则为“编辑器”；如果此 Unity 实例是独立播放器，则为“播放器”  。  
 
  **端口**  

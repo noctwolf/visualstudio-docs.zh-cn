@@ -14,11 +14,12 @@ ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0ee9f615ad28e486566fb117124a1b69634a4b57
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e947fa523b2d5e79e1df1966e6a4c3d9b6c8e7af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的辅助功能
 > [!TIP]
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 > [!IMPORTANT]
 >  本节中的信息仅适用于美国境内获得 Microsoft 产品许可证的用户。 如果在美国以外的其他国家/地区获取到该产品，那么可以使用软件包附带的分公司信息卡或访问[“Microsoft 支持”的“联系我们”页面](http://support.microsoft.com/ContactUs)，然后单击“查找 Microsoft 全球办事处”链接（靠近网页底部）。 这一页面提供了载有 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本节中描述的产品和服务类型。 有关辅助功能的信息有其他语言版本，包括日语和法语。  
 
- 有关更多信息，请参见下列主题：  
+ 有关详细信息，请参阅下列主题：  
 
 -   [如何：设置 IDE 辅助功能选项](../../ide/reference/how-to-set-ide-accessibility-options.md)  
 
@@ -51,5 +52,5 @@ ms.lasthandoff: 10/31/2017
 
 -   [如何：更改字体和颜色](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Microsoft 提供的辅助功能产品和服务](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

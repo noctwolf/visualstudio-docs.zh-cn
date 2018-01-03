@@ -19,11 +19,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 577c6a7b76bcecb3c3f5fc7889d75b5fd3ff1ce0
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 888f8f39b409559ac4d5c219f024a867f71b2263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 
@@ -40,9 +41,9 @@ ms.lasthandoff: 12/07/2017
 
 下面是一些可能的恶意活动：
 
-|用途|表达式|示例|
+|目标|表达式|示例|
 |-------------|----------------|-------------|
-|与任何单个字符匹配（换行符除外）。|。|`a.o` 匹配“around”中的“aro”及“about”中的“abo”，但不匹配“across”中的“acro”。|  
+|与任何单个字符匹配（换行符除外）。|.|`a.o` 匹配“around”中的“aro”及“about”中的“abo”，但不匹配“across”中的“acro”。|  
 |零次或多次匹配前面的表达式（匹配尽可能多的字符）|*|`a*r` 匹配“rack”中的“r”，“ark”中的“ar”和“aardvark”中的“aar”|  
 |零次或多次匹配任何字符（通配符 *）|.*|c.*e 匹配“racket”中的“cke”，“comment”中的“comme”和“code”中的“code”|  
 |一次或多次匹配前面的表达式（匹配尽可能多的字符）|+|`e.+e` 匹配“feeder”中的“eede”，而不是“ee”。|  

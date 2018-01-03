@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ae4185d56b77d40cf817d7ea3003f64dc6fff556
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 11e917f21071a273f56ddd358fd5a845ce7411dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 元素 (MSBuild)
 指定当且仅当所有 `When` 元素的条件的计算结果为 `false` 时才执行的代码块。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|可选元素。<br /><br /> 评估子元素以选择代码的一部分来执行。 `Choose` 元素中可能有零个或零个以上的 `Otherwise` 元素。|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|可选元素。<br /><br /> 包含一组用户定义的 [Item](../msbuild/item-element-msbuild.md) 元素。 `ItemGroup` 元素中可能有零个或零个以上的 `Otherwise` 元素。|  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|评估子元素以选择代码的一部分来执行。|  
 
@@ -122,6 +123,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [条件构造](../msbuild/msbuild-conditional-constructs.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)

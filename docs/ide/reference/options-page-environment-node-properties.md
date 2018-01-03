@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 076b48d5526c0cefffb5f18daed9aaaebb031aad
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: ddc53a84ca6cc09c5682bc874503849eee98eae8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-environment-node-properties"></a>“选项”页 ->“环境”节点属性
 本文档描述了与“选项”对话框的“环境”类别 `DTE.Properties("Environment", <Property Page>)` 关联的页面（或属性集合）。 每个小节的标题都是用于访问属性集合的调用，而每个小节中的表列出了集合中的属性。  
@@ -160,7 +161,7 @@ ms.lasthandoff: 11/22/2017
 |ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource>（源、设计、外部）。|  
 |ViewSourceExternalProgram|Get/Set (String)|外部源查看器的路径。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [控制选项设置](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [确定“选项”页中属性项的名称](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [“选项”页 ->“字体和颜色”节点属性](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   

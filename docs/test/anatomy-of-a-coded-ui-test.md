@@ -12,11 +12,12 @@ ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5eb576be81849215f1413a7b58c6e460479af7f3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 04472a9dee89a270c78876022b16ef54f200ecd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>编码的 UI 测试剖析
 在代码 UI 测试项目中创建编码的 UI 测试时，将向解决方案添加多个文件。 在本主题中，我们将使用示例“编码的 UI 测试”来浏览这些文件。  
@@ -30,10 +31,10 @@ ms.lasthandoff: 10/27/2017
   
 |文件|内容|可编辑？|  
 |----------|--------------|---------------|  
-|[UIMap.Designer.cs](#UIMapDesignerFile)|[声明部分](#UIMapDesignerFile)<br /><br /> [UIMap 类](#UIMapClass)（自动生成的分部类）<br /><br /> [方法](#UIMapMethods)<br /><br /> [属性](#UIMapProperties)|No|  
+|[UIMap.Designer.cs](#UIMapDesignerFile)|[声明部分](#UIMapDesignerFile)<br /><br /> [UIMap 类](#UIMapClass)（自动生成的分部类）<br /><br /> [方法](#UIMapMethods)<br /><br /> [属性](#UIMapProperties)|否|  
 |[UIMap.cs](#UIMapCS)|[UIMap 类](#UIMapCS)（分部类）|是|  
 |[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 类](#CodedUITestCS)<br /><br /> [方法](#CodedUITestMethods)<br /><br /> [属性](#CodedUITestProperties)|是|  
-|[UIMap.uitest](#UIMapuitest)|用于测试的 UI 的 XML 映射。|No|  
+|[UIMap.uitest](#UIMapuitest)|用于测试的 UI 的 XML 映射。|否|  
   
 ###  <a name="UIMapDesignerFile"></a>UIMap.Designer.cs  
  此文件包含在测试创建后由**编码的 UI 测试生成器**自动创建的代码。 此文件会在每次更改测试时重新创建，因此，你不可以在其中添加或修改代码。  
@@ -266,7 +267,7 @@ public void MyTestCleanup()
   
  `UIMap.uitest` 文件不是可直接编辑的文件。 不过，可以使用编码的 UI 测试生成器来修改测试，从而自动修改 `UIMap.uitest` 文件和 [UIMap.Designer.cs](#UIMapDesignerFile) 文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   

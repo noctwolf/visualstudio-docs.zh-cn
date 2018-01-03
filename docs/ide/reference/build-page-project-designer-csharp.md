@@ -16,11 +16,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: abf6598cd18661575c0c6bcf6be3c70fffbd21f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: bc470eb36e700f136fec57e208c5bd920ea5e073
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-page-project-designer-c"></a>“项目设计器”->“生成”页 (C#)
 使用“项目设计器”的“生成”页指定项目的生成配置属性。 此页仅适用于 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目。  
@@ -119,6 +120,6 @@ ms.lasthandoff: 10/31/2017
 **高级**  
 单击以显示[“高级生成设置”对话框 (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md)。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [项目属性引用](../../ide/reference/project-properties-reference.md)   
 [C# 编译器选项](/dotnet/csharp/language-reference/compiler-options/index)

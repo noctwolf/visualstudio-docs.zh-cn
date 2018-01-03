@@ -14,15 +14,16 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd6e114837daa754c165d83be327bd6b3b39a6ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb8e117c305c02d7a5af5cbc915b139cb80d2308
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view-timeline"></a>内核视图时间线
 时间线中的每一行表示已配置的系统上的一个逻辑处理器内核。 对于每一行，水平轴显示在给定时刻逻辑内核上运行的线程。 将鼠标悬停在时间线上感兴趣的颜色上可返回用于标识线程的工具提示。 为了帮助进行线程标识，窗口底部的图例显示每个颜色所代表的线程。 通过单击并拖动，或通过按住 Ctrl 并移动鼠标滚轮，使用缩放工具进行放大和缩小。 在内核视图与线程视图之间切换时，可保持缩放一致性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“核心”视图](../profiling/cores-view.md)   
  [缩放控件（线程视图）](../profiling/zoom-control-threads-view.md)

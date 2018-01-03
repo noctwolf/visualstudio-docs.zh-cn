@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea578a020b4e60c3a2ff11af5d78570d636d822f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6b4c7cedd267ba02772db16e026803061933cf5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-shader"></a>如何：导出着色器
 本文档演示如何使用着色器设计器导出有向图着色器语言 (DGSL) 着色器，使你能在应用中使用它。  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
   
 4.  在“文件名”组合框中，为导出的着色器指定名称，然后选择“保存”按钮。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：创建基本颜色着色器](../designers/how-to-create-a-basic-color-shader.md)   
  [着色器设计器](../designers/shader-designer.md)

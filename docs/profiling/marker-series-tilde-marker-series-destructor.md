@@ -14,11 +14,12 @@ caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1928b9c4dd42c9d5d27c3fa677c97b671ac36bb7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cfb1692417a7633f6090bea7c2c16cdfa27c95d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markerseriesmarkerseries-destructor"></a>marker_series::~marker_series 析构函数
 销毁 marker_series 对象并释放所有已分配的资源。  
@@ -29,10 +30,10 @@ ms.lasthandoff: 10/31/2017
 ~marker_series();  
 ```  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  **标头：**cvmarkersobj.h  
   
  **命名空间：**Concurrency::diagnostic  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [marker_series 类](../profiling/marker-series-class.md)

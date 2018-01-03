@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d61602ce6c1542e746f54ecebc8576326e5e6889
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9767bae7aaa7a4dcadd425cbccdde6ec56af5646
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步骤 2：添加随机对象和图标列表
 在本步骤中，你要为游戏创建一组匹配的符号。 每个符号将添加到窗体上 TableLayoutPanel 中的两个随机单元格。 为此，请使用两个 `new` 语句创建两个对象。 第一个是 `Random` 对象，类似于数学测验游戏中使用的对象。 此代码中使用它来随机选择 TableLayoutPanel 中的单元格。 第二个对象是用于存储随机选择的符号的 `List` 对象，你可能没有见过。  

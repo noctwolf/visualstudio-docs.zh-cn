@@ -20,11 +20,12 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 439c3f5e433de41a0a6f4bcaf7ec0392ca16fa49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 33ae54490ab9dbb7015df1ce6bafc4794d8254ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-performance-tools-data"></a>分析性能工具数据
 通过 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的性能报告可查看并分析应用程序性能问题。 本部分概述了可用于检查性能数据的性能报告和视图。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
  [保存和导出性能工具数据](../profiling/saving-and-exporting-performance-tools-data.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [性能资源管理器](../profiling/performance-explorer.md)  
  [使用 Visual Studio 分析](../profiling/index.md)  
  [分析功能简介](../profiling/profiling-feature-tour.md)

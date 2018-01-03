@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d446779e4f84bf19e965393f9fa1142c7e4e166a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6eb125c691cb9e6f8642093612aca142172e76d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-path-command"></a>“符号路径”命令
 设置调试器的目录列表，以搜索符号。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 Debug.SymbolPath pathname1;pathname2;... pathnameN  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `pathname`  
  可选。 调试器路径列表的分号分隔列表，用于搜索符号。  
   
@@ -53,6 +54,6 @@ Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 Debug.SymbolPath  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“命令”窗口](../../ide/reference/command-window.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

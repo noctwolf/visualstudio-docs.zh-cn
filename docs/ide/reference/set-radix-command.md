@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 060221e5abe0ff9082a04f8b75561a7e4dec9f64
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ba6b4d3ce4aa362c63cace8481bacec90c91716
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-radix-command"></a>“设置基数”命令
 设置或返回用来显示整数值的数值基数。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
 Debug.SetRadix [10 | 16 | hex | dec]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `10` 或 `16` 或 `hex` 或 `dec`  
  可选。 指示十进制（10 或 dec）或十六进制（16 或 hex）。 如果省略某个参数，则返回当前基数值。  
   
@@ -42,7 +43,7 @@ Debug.SetRadix [10 | 16 | hex | dec]
 >Debug.SetRadix hex  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   

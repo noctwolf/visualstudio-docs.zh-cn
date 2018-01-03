@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe80e2ab5816a22e956e2e5ad12a6ceee988df4b
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: eabbb315d03a6ba69d80d46276b0b6dff5846693
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 的使用量
 如需调查应用中的性能问题，最好从了解其使用 CPU 的方式开始。 **CPU 使用率** 工具可显示 CPU 耗用时间执行 Visual C++、Visual C#/Visual Basic 和 JavaScript 代码的位置。 从 Visual Studio 2015 Update 1 开始，不离开调试器即可查看每个函数的 CPU 使用率细目。 可以在调试时打开和关闭 CPU 分析，并在停止执行时（例如在断点处）查看结果。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 11/11/2017
 
 在这里，我们将向你演示如何使用发行版本收集和分析 CPU 使用率。 若要在调试时分析 CPU 使用率，请参阅[性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)。 
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a>收集 CPU 使用率数据  
+##  <a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量数据  
   
 1.  在 Visual Studio 中，将解决方案配置设置为“零售”  ，然后选择部署目标。  
   

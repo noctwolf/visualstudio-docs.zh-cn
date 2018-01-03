@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 33b93cb7-d826-4206-894a-fcfab32e7e76
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e37421ea74b1bfa2d8dc5dbb53eb5a981f7e62ca
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: python
+ms.openlocfilehash: e0a9719ba9b686586ef13f13fbcaeb0c6de6c9ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安装 Python 支持
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 11/07/2017
 > [!div class="nextstepaction"]
 > [步骤 1：创建 Python 项目](vs-tutorial-01-01.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [为现有 Python 解释器创建环境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
 - [在 Visual Studio 2015 及更早版本中安装 Python 支持](installation.md)。

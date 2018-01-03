@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7cfa9fc89ad2d4776a7aa0b5071db6bd5daddd9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f71cca51a27c8ed9d6467d99425d4d3b721d195
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“快速启动”
 可以使用“快速启动”快速搜索并对选项、模板和菜单等 IDE 资产执行操作。 不能使用“快速启动”搜索代码和符号。 “快速启动”搜索框位于菜单栏的右上角并且可以通过选择 Ctrl + Q 键进行访问。 只需在框中输入搜索字符串。 若要搜索包含 @ 的字符串，请使用“@@”。  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
   
  有关使用“快速启动”的最新提示和技巧，请参阅 [Visual Studio 博客](http://go.microsoft.com/fwlink/?LinkId=236054)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [常规用户界面元素 (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)   
  [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)

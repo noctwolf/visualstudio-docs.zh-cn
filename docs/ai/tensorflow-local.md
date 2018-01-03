@@ -10,17 +10,18 @@ ms.topic: quickstart
 ms.technology: visual studio
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 2b48acc8cfea97a89c32ce7180d693246ca6ab26
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 133c6c29bed581a478fa6127fa69cee1b00b2c44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本地训练 TensorFlow 模型 
 
 在本快速入门中，我们会在 Visual Studio Tools for AI 中以本地方式使用 [MNIST](http://yann.lecun.com/exdb/mnist/) 数据集训练 TensorFlow 模型。 MNIST 数据库具有包含 60,000 个示例的训练集，以及包含 10,000 个手写数字示例的测试集。 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 开始之前，确保安装了以下各项：
 

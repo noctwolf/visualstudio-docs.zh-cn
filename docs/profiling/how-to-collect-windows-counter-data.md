@@ -19,11 +19,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5b16cf6260932f11c9d4fd33f2eb5662327355a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 125bca0b0edd6571c6cc969da0cd3cbe809057da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 计数器数据
 Windows 计数器是在分析期间可按设定的时间间隔收集的系统性能计数器。 在“分析工具”报表的“标记”视图中，针对每个收集间隔，行被标记为“自动标记”。 该行包含描述该间隔内的性能计数器值的列。 若要将分析限制在两个特定标记之间的时间段内，请选择这些标记，右键单击，并从快捷菜单中选择“筛选依据” ->  “标记”。  
@@ -53,7 +54,7 @@ Windows 计数器是在分析期间可按设定的时间间隔收集的系统性
   
 8.  单击“应用”。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [性能会话属性](../profiling/performance-session-properties.md)   
  [CPU 和 Windows 计数器](../profiling/cpu-and-windows-counters.md)

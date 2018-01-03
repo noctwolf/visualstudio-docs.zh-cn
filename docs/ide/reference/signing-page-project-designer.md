@@ -23,11 +23,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d193b8927019354244d6d80032ed0c761f584f83
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7aa75e814ddd4d8b8c093fd37a366410a279d6ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="signing-page-project-designer"></a>“项目设计器”->“签名”页
 使用“项目设计器”的“签名”页对应用程序和部署清单及程序集进行签名（强名称签名）。  
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  对程序集签名时，可能并不总是有权访问私钥。 例如，一个组织可能具有开发人员不是每天都能访问的严密保护密钥对。 公钥可能可用，但私钥的访问权限仅限于少数几个人。 在这种情况下，你可以使用延迟或部分签名来提供公钥，将私钥的添加延迟到转交该程序集后。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项目属性引用](../../ide/reference/project-properties-reference.md)   
  [管理程序集签名和清单签名](../../ide/managing-assembly-and-manifest-signing.md)   
  [托管应用程序的强名称签名](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   

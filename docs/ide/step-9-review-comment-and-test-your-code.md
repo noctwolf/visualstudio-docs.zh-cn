@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 181462529b4e66f894328d099298408a91145c6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: af541817ec73cf81aa339f9a57a584286e843e46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步骤 9：评审代码、为代码添加注释和测试代码
 接下来，将向代码添加注释。 注释是一个说明，它不会更改程序的行为。 它使阅读您代码的人更容易理解代码的行为。 在代码中添加注释是一个好习惯。 在 Visual C# 中，可用两个正斜杠 (//) 将一行标记为一个注释。 在 Visual Basic 中，可用一个单引号 (') 将一行标记为一个注释。 添加注释后即可测试您的程序。 当你处理你的项目时，最好经常运行和测试代码，以便你可在代码变复杂之前尽早捕获和修复任何问题。 这称为“迭代测试”。  

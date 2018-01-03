@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0800884a03544aec822d31cf64fd47a4f63f3e07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3a44dc8304274bf0633e891690f6b34d2637dfa1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="services-page-project-designer"></a>“项目设计器”->“服务”页
 使用客户端应用程序服务，可简便地从 Windows 窗体和 Windows Presentation Foundation (WPF) 应用程序访问 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登录、角色和配置文件服务。 可以使用“项目设计器”的“服务”页为项目启用并配置客户端应用程序服务。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
  **高级**  
  打开[“高级服务设置”对话框](../../ide/reference/advanced-settings-for-services-dialog-box.md)，可以使用该对话框重写默认行为。 例如，可以使用此对话框指定一个数据库进行脱机存储，而不是使用本地文件系统。 有关详细信息，请参阅[“高级服务设置”对话框](../../ide/reference/advanced-settings-for-services-dialog-box.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [客户端应用程序服务](/dotnet/framework/common-client-technologies/client-application-services)   
  [“高级服务设置”对话框](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
  [如何：配置客户端应用程序服务](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   

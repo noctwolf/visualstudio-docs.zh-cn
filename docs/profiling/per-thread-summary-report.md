@@ -14,16 +14,17 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b90a6ed225e358aa47d91cdacec964b5090dedf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 033d24c2df6e1e483028c6c4ea2d161a9e99a983
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="per-thread-summary-report"></a>“每线程摘要”报告
 此条形图显示在当前可见时间范围内，各活动类别中的每个非隐藏线程所花费的时间比例。 “执行”表示线程正在执行；所有其他类别表示线程正在进行等待。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [执行时间（“线程”视图）](../profiling/execution-time-threads-view.md)   
  [I/O 时间（“线程”视图）](../profiling/i-o-time-threads-view.md)   
  [内存管理时间](../profiling/memory-management-time.md)   
@@ -31,4 +32,4 @@ ms.lasthandoff: 10/31/2017
  [睡眠时间](../profiling/sleep-time.md)   
  [同步时间](../profiling/synchronization-time.md)   
  [UI 处理时间](../profiling/ui-processing-time.md)   
- [“线程”视图](../profiling/threads-view-parallel-performance.md)
+ [线程视图](../profiling/threads-view-parallel-performance.md)

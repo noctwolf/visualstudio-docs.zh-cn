@@ -14,14 +14,15 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91de09a8fda024c07d5ccff147c5b826896e8638
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d75962d21fc49a3621d88110ae15d8cda38595a7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visible-timeline-profile"></a>可见时间线分析
 线程阻塞视图的可见时间线分析提供统计信息和报告的链接。 当进行放大、缩小、水平滚动屏幕、隐藏色条，或显示色条时，活动图例中的数字随之更改以反映当前视图中的内容。 若要查看有关图例中某个项的报告，请单击此项。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [线程视图](../profiling/threads-view-parallel-performance.md)

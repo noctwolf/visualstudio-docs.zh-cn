@@ -8,21 +8,16 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
-dev_langs:
-- VB
-- CSharp
-- C++
 helpviewer_keywords: Prerequisites dialog box
-ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
-caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68e326d8045733fc4f491c51405ed51414a92afd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d9e363dcdb8b15b1436da3738d75486b6675e9c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 此对话框指定安装哪些必备组件、如何安装以及组件包的安装顺序。  
@@ -31,7 +26,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="uielement-list"></a>UIElement 列表  
   
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |**创建用于安装系统必备组件的安装程序**|将应用程序的系统必备组件包含到安装程序 (Setup.exe) 中，以便在安装应用程序之前按照依赖顺序安装这些组件。 默认情况下，该选项是选中的。 如果没有选择此选项，则不会创建 Setup.exe。|  
 |**选择要安装的系统必备组件**|指定是否安装组件，如 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]、Crystal Reports 等等。<br /><br /> 例如，通过选中“SQL Server 2005 Express Edition SP2”旁边的复选框，可以指定安装程序验证目标计算机上是否安装有此组件，如果没有则进行安装。<br /><br /> 有关每个系统必备包的详细信息，请参见本主题后面部分的“系统必备信息”表。|  
@@ -43,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="prerequisites-information"></a>系统必备信息  
  出现在“系统必备”对话框中的系统必备组件可能与下面列表中的不同。 第一次打开对话框时将自动设置**“系统必备”对话框**中所列的必备组件包。 如果随后更改项目的目标框架，则必须手动选择必备组件，以便与新目标框架相匹配。  
   
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |**.NET Framework 3.5 SP1**|此程序包会安装下列系统必备组件：<br /><br /> - .NET Framework 2.0、3.0 和 3.5 版<br />- 支持 32 位 (x86) 和 64 位 (x64) 操作系统上的所有 .NET Framework 版本。<br />- 与程序包一起安装的每个 .NET Framework 版本的语言包。<br />- .NET Framework 2.0 和 3.0 服务包。<br /><br /> .NET Framework 3.0 随 Windows Vista 一起提供，.NET Framework 3.5 随 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 一起提供。 .NET Framework 3.5 是针对 32 位操作系统进行编译且目标框架设置为“.NET Framework 3.5”的所有 Visual Basic 和 Visual C# 项目的必需组件，也是针对 64 位操作系统编译的 Visual Basic 和 Visual C# 项目的必需组件。 （不支持 IA64。）注意，默认情况下 Visual Basic 和 Visual C# 项目是针对所有 CPU 体系结构编译的。 有关详细信息，请参阅 [Visual Studio 多目标概述](../../ide/visual-studio-multi-targeting-overview.md)、[再发行 .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) 和[部署 64 位应用程序的必备组件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。<br /><br /> 默认情况下，此项处于选定状态。|  
 |**.NET Framework 3.5 SP1 Client Profile**|.NET Framework Client Profile 是完整版 .NET Framework 3.5 SP1 的子集，面向客户端应用程序。 它提供 Windows Presentation Foundation (WPF)、Windows 窗体、Windows Communication Foundation (WCF) 和 ClickOnce 功能的简化子集。 这样可以实现 WPF、Windows 窗体、WCF 和面向 .NET Framework Client Profile 的控制台应用程序的快速部署。 有关详细信息，请参阅 [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)。|  
@@ -63,7 +58,7 @@ ms.lasthandoff: 10/31/2017
 |**Windows Installer 3.1**|此程序包安装 Microsoft Windows Installer 可再发行版本 3.1，以便可以安装 Windows Installer 安装项目。 它预安装在 Windows Server 2003 SP1 和更高版本上。<br /><br /> 默认情况下，此项处于选定状态。|  
 |**Windows Installer 4.5**|此程序包安装 Microsoft Windows Installer 可再发行版本 4.5，以便可以安装 Windows Installer 安装项目。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“项目设计器”->“发布”页](../../ide/reference/publish-page-project-designer.md)   
  [应用程序部署必备](../../deployment/application-deployment-prerequisites.md)   
  [再发行 .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)   

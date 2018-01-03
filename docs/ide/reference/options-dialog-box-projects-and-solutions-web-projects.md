@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab80c499a95f8fd1dee764edea9f971d9429688
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 75d892c4947ee93521234f9bb2cdb781bd0b09f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>选项对话框、项目和解决方案、Web 项目
 
@@ -36,6 +37,6 @@ ms.lasthandoff: 11/02/2017
 **如果错误列表中存在错误，则在开始运行 Web 应用程序之前发出警告**  
 如果已设置此选项，则在尝试运行存在编译错误的 Web 应用程序时，将发出警告。
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [“选项”对话框 ->“项目和解决方案”](projects-and-solutions-options-dialog-box.md)  
 [“选项”对话框 ->“项目和解决方案”->“生成和运行”](options-dialog-box-projects-and-solutions-web-projects.md)

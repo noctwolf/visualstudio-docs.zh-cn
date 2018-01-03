@@ -16,11 +16,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93efd5d0e0eb391a164f4997b7ddeedab09b4201
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ec3bfc47829bce2fe5ad836c970cb28f8a1294e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv.exe)
 通知 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 合并系统上的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包，并检查 MEF 缓存中是否有任何更改。  
@@ -41,6 +42,6 @@ devenv /updateconfiguration
 Devenv.exe /updateconfiguration  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)   
  [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)

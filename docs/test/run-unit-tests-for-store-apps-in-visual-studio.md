@@ -11,11 +11,12 @@ ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: cdb13478a7e403be916d7773dab6315429508e9c
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: ad5a81a8b80ffb5a25a04d3aa83811e90c2785e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>对 Visual Studio 中的 UWP 应用运行单元测试
 本主题描述如何通过使用 Microsoft Visual Studio 中的测试资源管理器运行单元测试  
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/02/2017
 >   
 >  有关详细信息，请参阅 MSDN 库中的[单元测试代码](../test/unit-test-your-code.md)。  
   
-##  <a name="BKMK_In_this_topic"></a> 主题内容  
+##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  [单元测试框架和测试项目](#BKMK_Unit_test_frameworks_and_test_projects)  
   
  [在测试资源管理器中运行测试](#BKMK_Running_tests_in_Test_Explorer)  
@@ -121,4 +122,4 @@ ms.lasthandoff: 11/02/2017
   
 2.  在测试资源管理器中，选择测试方法，然后选择快捷菜单上的“调试选定的测试”。  
   
- 有关该调试器的详细信息，请参阅[在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)。
+ 有关该调试器的详细信息，请参阅 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)。

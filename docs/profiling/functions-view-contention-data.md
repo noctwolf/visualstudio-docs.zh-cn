@@ -13,18 +13,19 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c226c112cfb5854e882297fafdf56219adc2bdb1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d9dcf9ab34e5d0441f3c1ce3a47d5e148c9394d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functions-view---contention-data"></a>“函数”视图 - 争用数据
 争用数据的“函数”报告视图列出了分析运行期间阻止执行的函数。  
   
  下表介绍了使用并发方法收集的分析数据文件的“函数”视图中显示的值。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**独占阻塞的时间**|阻止此函数执行函数体内代码的时间。 不包含此函数调用的函数中的阻塞时间。|  
 |**独占阻塞的时间百分比**|此函数的独占阻止时间占分析运行期间所有阻止时间的百分比。|  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 |**进程名**|进程的名称。|  
 |**源文件**|此函数的定义所在的源文件。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“函数”视图](../profiling/functions-view.md)   
  [“函数”视图 - 检测](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   

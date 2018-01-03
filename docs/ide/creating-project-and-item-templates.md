@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d95781c2c5c4370e09c13b382016b015ec1a0d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 43b45f70e8ac7a6eeadfd3fb216b53540ec9a8b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-project-and-item-templates"></a>创建项目和项模板
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目和项模板提供了可重用的存根，这些存根可为用户提供一些基本代码和结构以供其用于实现自己的目的。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="starter-kits"></a>初学者工具包  
  初学者工具包是增强的模板，可与社区的其他成员共享。 初学者工具包包含可编译的代码示例、文档及其他资源，这些资源可帮助用户在生成有用的实际应用程序的同时学习新工具和编程技巧。 初学者工具包的基本内容和流程与模板的一样。 有关详细信息，请参阅[如何：创建初学者工具包](../ide/how-to-create-starter-kits.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：创建项目模板](../ide/how-to-create-project-templates.md)   
  [如何：创建项模板](../ide/how-to-create-item-templates.md)   
  [模板参数](../ide/template-parameters.md)   

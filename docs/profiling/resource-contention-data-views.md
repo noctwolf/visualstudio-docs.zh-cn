@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0006505bb1c1825c79a7ba1b04d1323c8ca1608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 31f9f7650336c3787e68b511cf099c04317bca7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-contention-data-views"></a>资源争用数据视图
 本节介绍有关探查器数据文件的视图和报表的参考信息，这些文件包含线程争用分析数据。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
  [“摘要”视图 - 探查器争用数据](../profiling/resource-contention-data-views.md)  
  显示分析数据的图形时间线，并列出参与大多数阻止事件的函数和资源。  
   
- [“调用树”视图](../profiling/call-tree-view-contention-data.md)  
+ [“调用关系树”视图](../profiling/call-tree-view-contention-data.md)  
  显示表示执行路径的层次结构树和分析运行期间函数的资源争用数据。  
   
  [“模块”视图](../profiling/modules-view-contention-data.md)  

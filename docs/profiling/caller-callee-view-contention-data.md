@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ea2f63d3e1ee4b4c694fdc025484d85fad9d739
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 47e4f57ffac71d6fb4f1c3e8cd8176c80d9f002a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="caller--callee-view----contention-data"></a>“调用方/被调用方”视图 - 争用数据
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的争用信息。 “调用方/被调用方”视图包含三个网格。  
@@ -28,9 +29,9 @@ ms.lasthandoff: 10/31/2017
   
  **由当前函数调用的函数**在底部网格中显示，当前函数调用子函数时，它会显示所选函数的被调用方（子）函数的争用信息。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
-|**类型**|函数的上下文：<br /><br /> -   **0** - 当前函数<br />-   **1** - 调用当前函数的函数<br />-   **2** - 当前函数调用的函数<br /><br /> 仅在 [VSPerfReport](../profiling/vsperfreport.md) 命令行报表中。|  
+|**Type**|函数的上下文：<br /><br /> -   **0** - 当前函数<br />-   **1** - 调用当前函数的函数<br />-   **2** - 当前函数调用的函数<br /><br /> 仅在 [VSPerfReport](../profiling/vsperfreport.md) 命令行报表中。|  
 |**独占阻塞的时间**|-   对于当前函数，为阻止此函数在函数体中执行代码的时间。 不包含此函数调用的函数中阻塞的时间。<br />-   对于调用方函数，为此函数调用当前函数时当前函数的部分独占阻塞的时间。<br />-   对于被调用方函数，为当前函数调用此函数时阻止此函数执行其自身代码的时间。 不包含被调用方函数调用的子函数中阻塞的时间。|  
 |**独占阻塞的时间百分比**|此上下文中此函数的独占阻塞的时间占分析运行中所有阻塞的时间的百分比。|  
 |**独占争用**|-   对于当前函数，为阻止此函数在函数体中执行代码的次数。 不包含在此函数调用的函数中发生的争用。<br />-   对于调用方函数，为此函数调用当前函数时出现的当前函数的独占争用数。<br />-   对于被调用方函数，为当前函数调用此函数时阻止此函数在函数体中执行代码的次数。 不包含在被调用方函数调用的函数中发生的争用。|  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 |**根函数名**|当前函数的名称。 仅在 [VSPerfReport](../profiling/vsperfreport.md) 命令行报表中。|  
 |**源文件**|此函数的定义所在的源文件。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“调用方/被调用方”视图](../profiling/caller-callee-view.md)   
  [“调用方/被调用方”视图 - 采样数据](../profiling/caller-callee-view-sampling-data.md)   

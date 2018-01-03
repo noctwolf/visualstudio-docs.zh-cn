@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: debc70294bf0b513f22ed1cc06b9f0790da7b778
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d1168fb27330f49a714e64478fc7ab167569dadb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="status"></a>状态
 VSPerfCmd.exe **Status** 选项显示有关探查器状态以及当前正在分析的任何进程的信息。  
@@ -73,7 +74,7 @@ VSPerfCmd.exe /Status
  **有监视器访问权限的用户**  
  列出有权访问探查器的用户名。 可以使用 VSPerfCmd.exe **Admin** 选项向其他用户授予访问权  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

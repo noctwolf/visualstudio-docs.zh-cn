@@ -18,11 +18,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 362daf0d3044841260ae7e9b8f0eb42bad8e610b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 8b811b664df5d64a2235d641a6facf6cec889fe4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer"></a>并发可视化工具
 > [!NOTE]
@@ -46,14 +47,14 @@ ms.lasthandoff: 11/15/2017
 |标题|描述|  
 |-----------|-----------------|  
 |[使用率视图](../profiling/utilization-view.md)|介绍如何在所有处理器中查看和分析系统活动。|  
-|[“线程”视图](../profiling/threads-view-parallel-performance.md)|介绍如何分析程序中线程之间的交互。|  
-|[“核心”视图](../profiling/cores-view.md)|介绍如何分析跨越核心的线程迁移。|  
+|[线程视图](../profiling/threads-view-parallel-performance.md)|介绍如何分析程序中线程之间的交互。|  
+|[内核视图](../profiling/cores-view.md)|介绍如何分析跨越核心的线程迁移。|  
 |[性能不佳的多线程应用程序的常见模式](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|描述若干常见模式并展示其在并发可视化工具中的显示方式。|  
 |[Visual Studio 博客中的并行开发](http://go.microsoft.com/fwlink/?LinkId=235385)|提供关于并发可视化工具的提示和最佳做法。|  
 |[性能报告视图](../profiling/performance-report-views.md)|提供有关 Visual Studio 分析工具报告和视图的参考信息。|  
 |[并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)|描述如何检测你的源代码，以便在并发可视化工具中显示附加信息。|  
 |[并发可视化工具命令行实用工具 (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|描述如何使用并发可视化工具命令行实用程序 (CVCollectionCmd.exe) 在未安装 Visual Studio 的计算机上收集并处理跟踪信息。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Visual Studio 分析](../profiling/index.md)  
  [分析功能简介](../profiling/profiling-feature-tour.md)

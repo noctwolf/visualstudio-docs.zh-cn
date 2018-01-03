@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6318b5280e2098858bdcf523a3131cf68b7c84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: a9a6996c990783a4ad077211d79616ba32531822
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 .NET Framework 独立应用程序以收集内存数据
 本主题介绍如何使用 [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] 分析工具命令行工具将探查器附加到正在运行的 .NET Framework 独立（客户端）应用程序，并收集内存数据。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
         |**/samplegc**|仅收集内存分配数据。|  
         |**/samplegclife**|同时收集内存分配数据和对象生存期数据。|  
   
-    -   /Samplelineoff 选项禁用源代码行号数据的收集。  
+    -   /samplelineoff 选项禁用源代码行号数据的收集。  
   
 3.  启动探查器。 类型：  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 10/31/2017
   
 -   以下选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|对由 `PID` 指定的进程，启动 (/processon) 或停止 (/processoff) 数据收集。|  
@@ -96,7 +97,7 @@ ms.lasthandoff: 10/31/2017
   
     -   键入 **VSPerfCmd /detach**  
   
-         - 或 -  
+         或  
   
     -   关闭目标应用程序。  
   
@@ -108,6 +109,6 @@ ms.lasthandoff: 10/31/2017
   
      **VSPerfCmd /off**  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)

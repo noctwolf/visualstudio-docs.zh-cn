@@ -11,11 +11,12 @@ ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
 caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3dab1fb335bf1fa7a51faf8f298208c18ec87dc5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c37646bfdb722b2deb53f290eabbb9917fa987ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>在生成验证测试中分析代码覆盖率
 Microsoft Visual Studio 中的代码覆盖率分析显示有多少代码正在被自动测试执行。 有关详细信息，请参阅[使用代码覆盖率确定正在测试的代码数量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。  
@@ -36,5 +37,5 @@ Microsoft Visual Studio 中的代码覆盖率分析显示有多少代码正在�
   
  生成运行后，代码覆盖率结果显示在生成摘要中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用代码覆盖率确定所测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

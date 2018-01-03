@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: b2d9a565300dabd4212695d62c01a415d0e11012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 09d956f897e81d5e785c561a69cc8b716375676d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-add-a-countdown-timer"></a>步骤 3：添加一个倒计时计时器
 在本教程的第 3 部分中，您将添加一个倒计时计时器，用于跟踪测验对象完成测验所剩秒数。  

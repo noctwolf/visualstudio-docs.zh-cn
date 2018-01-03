@@ -12,11 +12,12 @@ caps.latest.revision: "25"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 150aab80022398246a1b1abb89ec6d286eb86869
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 35fc0fd7be5d060019521467851708d0c6677935
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步骤 6：添加减法问题
 在本教程的第 6 部分中，你将添加一道减法题并了解如何执行以下任务：  

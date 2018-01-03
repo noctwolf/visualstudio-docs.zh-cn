@@ -14,11 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: e4c103aec04a9012b82c5fe979f8d5d23cfa1680
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 39f6006ec6dfe754efc58f2ccdc7b09d803de6b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：分发代码段
 你可以只向朋友提供代码片段，然后让他们使用代码片段管理器在自己的计算机上安装代码片段。 但是，如果你有若干代码片段要分发或者希望进行范围更广泛的分发，则可以将代码片段文件包含到 Visual Studio 扩展中，用户可以安装该扩展。  
@@ -102,5 +103,5 @@ ms.lasthandoff: 11/07/2017
     Console.WriteLine("Hello, World!")  
     ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [代码片段](../ide/code-snippets.md)

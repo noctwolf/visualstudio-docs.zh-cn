@@ -6,11 +6,12 @@ ms.topic: landing-page
 title: "使用 Visual Studio 文档编写和管理代码 | Microsoft Docs"
 description: "了解如何使用 Visual Studio 中的代码编辑器和其他工具来编写、导航、管理和改进代码。"
 ms.technology: vs-ide-general
-ms.openlocfilehash: bc08b4822f411587db76f648e2b3ba508d513fb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5bc15e4bde117a474034ab4342dc43bc8db8e00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-and-manage-code-using-visual-studio-documentation"></a>使用 Visual Studio 文档编写和管理代码
 

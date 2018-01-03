@@ -11,11 +11,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: "28"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 33c6d52536bc5295197c810058e959570c1d0242
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: 8aa1bac1a98d8121dcba30dace22483e4a80e1d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 Windows UWP 和 Phone 8.1 应用
 
@@ -352,7 +353,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **答**：每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都将覆盖在 UIMapDesigner.cs 文件中所做的任何代码更改。 如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。 UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。  
   
 ### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>问：我是否可以从命令行对 Windows Phone 应用运行编码的 UI 测试？  
- **答**：是，你使用 runsettings 文件来指定用于测试执行的目标设备。 例如：  
+ **答**：是，你使用 runsettings 文件来指定用于测试执行的目标设备。 例如:  
   
  vstest.console.exe "pathToYourCodedUITestDll" /settings:devicetarget.runsettings  
   
@@ -387,5 +388,5 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ## <a name="external-resources"></a>外部资源  
  Microsoft Visual Studio Application Lifecycle Management 博客： [使用编码的 UI 测试基于 XAML 的 Windows Phone 应用](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)

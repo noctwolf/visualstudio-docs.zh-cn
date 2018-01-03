@@ -11,11 +11,12 @@ ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
 caps.latest.revision: "19"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 39b3ce6765d1f4ec342d9a6e5b156eaee01f0faf
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: 63018bdae7cec687ccf81d53ef6e35ecdc169c83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>对 UWP 应用中的 Visual C# 代码进行单元测试
 本主题介绍一种在 UWP 应用中对 Visual C# 类创建单元测试的方法。 Rooter 类通过实现计算给定数的平方根的估计的函数来演示限制计算理论的模糊内存。 Maths 应用程序之后可使用此函数为用户演示可通过 math 完成的有趣操作。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 11/02/2017
 >   
 >  有关详细信息，请参阅 MSDN 库中的[使用单元测试验证代码](http://msdn.microsoft.com/library/dd264975.aspx)。  
   
-##  <a name="BKMK_In_this_topic"></a> 主题内容  
+##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  [创建解决方案和单元测试项目](#BKMK_Create_the_solution_and_the_unit_test_project)  
   
  [验证测试是否可在资源管理器中运行](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  

@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f33a7f43fdd52103fcd041d1f6502b88677eef1e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: unity
+ms.openlocfilehash: 45a06d17b2a3033af64c9d9a007af4a74dedabba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>更改日志（Visual Studio Tools for Unity）
 Visual Studio Tools for Unity 更改日志。  
@@ -59,7 +60,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="new-features"></a>新增功能  
 
--   **Project Generation:**  
+-   **项目生成：**  
 
     -   添加了对 assembly.json 编译单元的支持。
 
@@ -81,7 +82,7 @@ Visual Studio Tools for Unity 更改日志。
 
     -   修复了编译器使用局部变量生成的项。
 
--   **Project Generation:**  
+-   **项目生成：**  
 
     -   修复了对 4.6 API 级别的 Microsoft.CSharp 的引用。
 

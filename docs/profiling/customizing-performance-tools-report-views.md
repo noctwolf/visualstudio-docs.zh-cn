@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da35bb6f685455e280609252561c8a676f37230c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b31f426720cf410d45bf28be3b0278fe6af2bc38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-performance-tools-report-views"></a>自定义性能工具报告视图
 本节介绍如何自定义使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具生成的报告。  
@@ -36,5 +37,5 @@ ms.lasthandoff: 10/31/2017
  [性能报告视图](../profiling/performance-report-views.md)  
  介绍可用于对分析数据进行分析的视图。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析性能工具数据](../profiling/analyzing-performance-tools-data.md)

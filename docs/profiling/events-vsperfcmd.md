@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84f1d515722203f15b1b667df6fb7fdf72fe4fb4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3cfbeaa9c11bdb24b561e0dfdc10e8ab2a10053a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 VSPerfCmd.exe“Events”选项控制 Windows 事件跟踪 (ETW) 日志记录。 会将 ETW 数据保存到独立于探查器数据文件的 .etl 文件中。 可以使用 [VSPerfReport](../profiling/vsperfreport.md) /summary:etw 命令在报告中查看这些数据。  
@@ -88,7 +89,7 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 > [!IMPORTANT]
 >  如果不排除启动事件，则由于这些事件未在托管对象格式 (MOF) 文件中列出，它们将在报告中显示为 GUID。 有关详细信息，请参阅 Microsoft 网站上的此页面：[托管对象格式 (MOF) 文件示例](http://go.microsoft.com/fwlink/?linkid=37118)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77230702bf8dc582e176e4dd0f17eab3385966c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d97695cae08352ea213ba02008ab99bef7f61c47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：取消显示编译器警告
 可清理生成日志，方法是指定一种或多种不希望包含的编译器警告。 例如，将生成日志的详细级别设置为“一般”、“详细”或“诊断”时，可以使用此方法查看自动生成的部分信息，但不是所有信息。 有关详细级别的更多信息，请参阅[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。  
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
   
  有关详细信息，请参阅 [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：生成应用程序](../ide/walkthrough-building-an-application.md)   
  [如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)   
  [编译和生成](../ide/compiling-and-building-in-visual-studio.md)

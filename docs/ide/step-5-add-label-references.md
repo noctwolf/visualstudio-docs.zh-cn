@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a7d0485b067578f00ac28c384542d901815a843f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f353693fe407600b7ed009e611600a8b42c7713d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-add-label-references"></a>步骤 5：添加标签引用
 该程序需要跟踪玩家选择了哪些标签控件。 现在，该程序将显示玩家选择的所有标签。 但是，我们要更改这一行为。 在选择第一个标签后，该程序应显示该标签的图标。 在选择第二个标签后，该程序应短暂显示两个图标，然后再隐藏这两个图标。 程序现将通过引用变量跟踪第一次和第二次分别选择的标签控件。  

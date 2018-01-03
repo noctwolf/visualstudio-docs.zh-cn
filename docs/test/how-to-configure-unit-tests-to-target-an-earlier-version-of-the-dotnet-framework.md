@@ -11,11 +11,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: d7a899e16d79ba2aae40506eb3cd6739dcdb4397
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: f4da0733b53b17dbcca779b0fd3e7afcddcb2e85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：配置单元测试以面向 .NET Framework 的早期版本
 在 Microsoft Visual Studio 中创建测试项目时，默认将 .NET Framework 的最新版本设为要面向的版本。 此外，如果从 Visual Studio 的早期版本升级测试项目，那么它们将被升级为面向 .NET Framework 的最新版本。 通过编辑项目属性，可以显式使项目重新面向 .NET Framework 的早期版本。  
@@ -125,7 +126,7 @@ ms.lasthandoff: 10/27/2017
   
 8.  在解决方案资源管理器中，从新的 Visual C++ 测试项目的快捷菜单中选择“重载项目”。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [为现有代码创建和运行单元测试](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
  [创建 SharePoint 解决方案](/office-dev/office-dev/create-sharepoint-solutions)   
  [生成和调试 SharePoint 解决方案](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   

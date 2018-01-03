@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c259b4a66a6f26443b684a005adb2899e2d77ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: decf24e945f0673bc801b18d4c0438e186098687
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="timer"></a>计时器
 VSPerfCmd.exe **Timer** 选项将采样的分析事件设置为处理器时钟周期，还可以选择将采样间隔内的周期数从默认值 10,000,000 改为其他值。 在 1GH（1 千兆赫）的处理器上，10,000,000 个时钟周期大约为每秒 100 个样本。 可指定的最小周期数为 50,000。  
@@ -69,7 +70,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

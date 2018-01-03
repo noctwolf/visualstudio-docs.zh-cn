@@ -24,11 +24,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a22ac991b88dd62c91a9bf08f5397fe80e4ae37d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f06722f4a6192323d92ce6828b25bc57666de8bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令行开关
 Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令行生成、调试和部署项目。 使用这些开关从脚本或 .bat 文件（例如每夜生成的脚本）运行 IDE，或以特定配置启动 IDE。  
@@ -101,5 +102,5 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
 |[/Updateconfiguration (devenv.exe)](../../ide/reference/updateconfiguration-devenv-exe.md)|通知 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 合并系统上的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包，并检查 MEF 缓存中是否有任何更改。|  
 |[/Upgrade (devenv.exe)](../../ide/reference/upgrade-devenv-exe.md)|将指定的解决方案文件及其所有项目文件或指定的项目文件升级为这些文件的当前 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 格式。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)

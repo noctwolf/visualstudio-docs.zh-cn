@@ -27,11 +27,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e99dff1fbe5638c81572f9b370f94c0337f9f7e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b6f8adfd3ce7d585cffe3c7506c4fdd56cad4a11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-list-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“任务列表”
 该选项页允许添加、删除和更改生成“任务列表”提醒的注释标记。 要显示这些设置，请从“工具”菜单选择“选项”，展开“环境”文件夹，然后选择“任务列表”。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
  优先级  
  设置使用所选标记的任务的优先级。 将在“任务列表”中为以此标记开头的任务注释自动分配指定的优先级。  
   
- 名称  
+ name  
  输入标记字符串。 这一操作会启用“添加”按钮。 在“添加”按钮上，此字符串包含在“标记列表”中，而以此名称开头的注释将显示在“任务列表”中。  
   
  添加  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  无法重命名或删除默认注释标记，但可以更改其优先级别。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用任务列表](../../ide/using-the-task-list.md)   
  [在代码中设置书签](../../ide/setting-bookmarks-in-code.md)   
  [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0aa46133a2ad57444b563adea0df2e1ff6a4aec0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 8887b9ef7663f3c1748c4de3571a076a89d63087
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：从命令行用探查器检测本机独立组件并收集计时数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测 C++、.exe 或 .dll 文件等本机组件和收集详细计时数据。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
 -   以下选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
@@ -82,6 +83,6 @@ ms.lasthandoff: 10/31/2017
   
      **VSPerfCmd /shutdown**  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [检测方法数据视图](../profiling/instrumentation-method-data-views.md)

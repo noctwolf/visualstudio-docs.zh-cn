@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa7ba54d15697c02b62f13c3fa54a3005f410bd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a592082cac8cf493a742c9ce6f7de3bb0c706aad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-profiler-apis"></a>演练：使用探查器 API
 本演练使用 C# 应用程序演示如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具 API。 用户将使用探查器 API 限制在检测分析期间收集的数据量。  
@@ -34,9 +35,9 @@ ms.lasthandoff: 10/31/2017
   
  对于本机代码，Visual Studio 探查器 API 位于 VSPerf.dll 中。 头文件 VSPerf.h 和导入库 VSPerf.lib 位于 Microsoft Visual Studio 9\Team Tools\Performance Tools 目录中。  
   
- 对于托管代码，探查器 API 位于 Microsoft.VisualStudio.Profiler.dll 中。 此 DLL 位于 Microsoft Visual Studio 9\Team Tools\Performance Tools 目录中。 有关更多信息，请参见<xref:Microsoft.VisualStudio.Profiler>。  
+ 对于托管代码，探查器 API 位于 Microsoft.VisualStudio.Profiler.dll 中。 此 DLL 位于 Microsoft Visual Studio 9\Team Tools\Performance Tools 目录中。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.Profiler>。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  本演练假定用户选择的开发环境配置为支持调试和采样。 以下主题概述了这些系统必备：  
   
  [如何：选择收集方法](../profiling/how-to-choose-collection-methods.md)  
@@ -161,7 +162,7 @@ DataCollection.CurrentId);
   
      当前目录中即会创建一个 .csv 文件，该文件包含得到的性能数据。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Visual Studio 探查器 API 参考（本机）](../profiling/visual-studio-profiler-api-reference-native.md)   
  [入门](../profiling/getting-started-with-performance-tools.md)   

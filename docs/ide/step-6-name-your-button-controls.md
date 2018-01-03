@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bbda1d3a9835d95978f7bfadbfe1b99971f6d367
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eed8f03eefb15b982f297b78f7503c947df8d712
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-name-your-button-controls"></a>步骤 6：命名按钮控件
 窗体上只有一个 PictureBox。 当添加此控件时，IDE 自动将其命名为“pictureBox1” 。 只有一个名为“checkBox1” 的 CheckBox。 很快，你将编写一些代码，并且这些代码将引用到上述的 CheckBox 和 PictureBox。 因为上述每种控件都只有一个控件，所以当你在代码中看到  “pictureBox1”或  “checkBox1”时，应知道其中的含义。  

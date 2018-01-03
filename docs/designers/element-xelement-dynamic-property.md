@@ -14,11 +14,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07be4c31e7bec729f9d6bdd77f522c5fe80b5bc6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ec02b03188ea0fd1fa7c15ea03878bdec12890f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="element-xelement-dynamic-property"></a>元素（XElement 动态属性）
 获取一个索引器，用于检索与指定扩展名对应的子元素实例。  
@@ -35,7 +36,7 @@ elem.Element[{namespaceName}localName]
 ## <a name="remarks"></a>备注  
  此属性等效于 <xref:System.Xml.Linq.XContainer.Element%2A> 类的 <xref:System.Xml.Linq.XContainer?displayProperty=fullName> 方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName>   
  [XElement 类动态属性](../designers/xelement-class-dynamic-properties.md)   
  [元素](../designers/elements-xelement-dynamic-property.md)

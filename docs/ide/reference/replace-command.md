@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7201086ade629dc7c6d39039c088333be815cc26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea63db35d5bb1eeca08f3e948ffcf5183259ef1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replace-command"></a>Replace 命令
 使用“查找和替换”窗口的“在文件中替换”选项卡上的可用选项子集替换文件中的文本。  
@@ -33,12 +34,12 @@ Edit.Replace findwhat replacewith [/all] [/case]
 [/wild|/regex] [/word]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `findwhat`  
- 必需。 要匹配的文本。  
+ 必须的。 要匹配的文本。  
   
  `replacewith`  
- 必需。 用于替换匹配文本的文本。  
+ 必须的。 用于替换匹配文本的文本。  
   
 ## <a name="switches"></a>开关  
  /all 或 /a  
@@ -87,7 +88,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [查找和替换文本](../../ide/finding-and-replacing-text.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   

@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 296faf330e23d65ae0ab7e9f434ab831ee520ac5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e486f7df85081ce010e6d2f518978f0952412ea1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---instrumentation-data"></a>“摘要”视图 - 检测数据
 “摘要”视图显示有关分析运行中性能开销最大的函数的信息。 有关详细信息（包括通知链接和报告列表的说明），请参阅[“摘要”视图](../profiling/summary-view.md)。  
@@ -30,9 +31,9 @@ ms.lasthandoff: 10/31/2017
   
  “热路径”包含每个函数的以下数据：  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
-|**Name**|函数名。|  
+|**名称**|函数名。|  
 |**已用非独占时间百分比**|此函数在其函数体中以及在它调用的函数中执行代码所花的时间占分析数据中所有时间的百分比。|  
 |**已用独占时间百分比**|此函数在其函数体中执行代码所花的时间占分析数据中所有时间的百分比。 不包含在此函数调用的函数中所花的时间。|  
   
@@ -41,11 +42,11 @@ ms.lasthandoff: 10/31/2017
   
  “大部分时间单独工作的函数”包含每个函数的以下数据：  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
-|**Name**|函数名。|  
+|**名称**|函数名。|  
 |**独占时间百分比**|此函数在其函数体中执行代码所花的时间占分析数据中所有时间的百分比。 不包含在此函数调用的函数中所花的时间。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“摘要”视图](../profiling/summary-view-sampling-data.md)   
  [“摘要”视图](../profiling/summary-view-dotnet-memory-data.md)

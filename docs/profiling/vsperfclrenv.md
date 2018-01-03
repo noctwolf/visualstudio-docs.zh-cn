@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 580d3b5f1dab03e34dac7c452da08e00e453a503
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a8f41fdf3a337fb2dea5ccca7131de34743c9096
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 VSPerfCLREnv 工具用于设置配置 .NET Framework 应用程序所需的环境变量。 它使用以下语法：  
@@ -39,7 +40,7 @@ VsPerfCLREnv [/option]
  **用于包含层交互数据的 VSPerfCLREnv 选项**  
   
 > [!WARNING]
->  可以使用 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]、[!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或 [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)] 收集层交互分析。 但是，只能在 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 和 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 中查看层交互分析数据。  
+>  可以使用 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]、[!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或 [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)] 收集层交互分析。 但是，层交互分析数据只能在 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 和 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]中查看。  
   
  层交互分析提供有关多层应用程序中的 ADO.NET 查询的其他信息。 仅针对同步函数调用收集数据。 可以向使用任何分析方法的分析运行添加交互数据。  
   
@@ -111,5 +112,5 @@ VSPerfCmd /Attach:MyService.exe
   
  如果在分析期间未设置正确的环境，在分析期间将报告警告，并且将无法正确地解析托管函数名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [从命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

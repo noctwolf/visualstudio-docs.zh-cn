@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43217eeac5722923daca289113f3f5407ae7c649
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e813e51511b88397f0accc637e85d9e546b48c47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>如何：在编辑器中管理自动换行
 可以设置和清除“自动换行”选项。 如果设置了此选项，较长行中超出代码编辑器窗口当前宽度的部分将在下一行显示。 如果清除了此选项，例如，为方便使用行号，则可以向右滚动查看较长行的末尾。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  这些提醒箭头不会添加到代码中：它们仅用于显示。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义编辑器](../../ide/customizing-the-editor.md)   
  [“选项”对话框 ->“文本编辑器”](../../ide/reference/text-editor-options-dialog-box.md)   
  [编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)

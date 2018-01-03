@@ -20,11 +20,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cada43ba0ac05d5ec7355f77578127c3339929be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a6fb8d57be1101f8faa5826b2459a9a1658009d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="references-page-project-designer-visual-basic"></a>项目设计器 ->“引用”页 (Visual Basic)
 使用项目设计器的“引用”页可以管理项目中的引用、Web 引用和导入的命名空间。 项目可包含对 COM 组件、XML Web service、.NET Framework 类库或程序集以及其他类库的引用。 有关使用引用的详细信息，请参阅[管理项目中的引用](../../ide/managing-references-in-a-project.md)。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
 
 -   XML 命名空间，例如 `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理项目中的引用](../../ide/managing-references-in-a-project.md)   
  [如何：添加或移除导入的命名空间 (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
  [Imports 语句（XML 命名空间）](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

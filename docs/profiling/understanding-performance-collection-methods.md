@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ad7ecfb61e1d8ecb7bcb000a659b798eb651461
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: a126ec0329695455013ca8625a8aeb774cf2ad36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-performance-collection-methods"></a>了解性能收集方法
 Visual Studio 分析工具提供了五种可以用于收集性能数据的方法。 本主题介绍了不同方法，并提供了一些适合使用特定方法收集数据的建议方案。  
@@ -126,6 +127,6 @@ Visual Studio 分析工具提供了五种可以用于收集性能数据的方法
   
  [层交互视图](../profiling/tier-interaction-views.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：为 Web 站点收集性能数据](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e5e4729ffacfbe1a561af98be202a21dbf958de9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: cd4d65a4e14f274a167c971383702a789cc2c539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 可以使用 XAML 代码或 XAML 设计器向你的应用程序添加控件、布局和形状等元素。 本主题介绍如何在 Visual Studio 或 Blend for Visual Studio 中使用 XAML 设计器中的元素。  
@@ -121,5 +122,5 @@ ms.lasthandoff: 10/31/2017
   
 -   在文档大纲窗口或美工板中，右键单击该元素，选择“布局”、“重置”、PropertyName，其中 PropertyName 是想要重置的属性（或者选择“布局”、“全部重置”，重置该元素的所有布局属性）。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

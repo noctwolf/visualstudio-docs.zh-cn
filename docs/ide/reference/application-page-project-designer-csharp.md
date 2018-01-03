@@ -18,11 +18,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f32dceca8a6b14e6b1777e5c525327f46adca47
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: dotnet
+ms.openlocfilehash: ec48d6a581eb756ee89d9db1a3dfaa78ac1fb3a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-page-project-designer-c"></a>“项目设计器”->“应用程序”页 (C#)
 使用“项目设计器”的“应用程序”页指定项目的应用程序设置和属性。  
@@ -99,6 +100,6 @@ ms.lasthandoff: 11/02/2017
   
 输入路径名或使用“浏览”按钮 (**...**)，以向项目添加 Win32 资源文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [管理应用程序属性](../../ide/application-properties.md)  
 [在 Office 解决方案中编写代码](/office-dev/office-dev/writing-code-in-office-solutions)

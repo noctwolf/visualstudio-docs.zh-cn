@@ -20,11 +20,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: de72d9cef38bf99c419817ffdf25418c30e8763c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 058ed6f4b95a395e71d1b98ce2de69257c742e23
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="taskextension-base-class"></a>TaskExtension 基类
 很多任务继承自 <xref:Microsoft.Build.Tasks.TaskExtension> 类，该类本身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 此继承链向从它们派生的任务添加了几个参数。 本文档中列出了这些参数。  
@@ -40,6 +41,6 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|可选 <xref:Microsoft.Build.Framework.ITaskHost> 参数。<br /><br /> 指定主机对象实例（可以为 null）。 如果主机 IDE 具有与此特定任务关联的主机对象，则生成引擎会设置此属性。|  
 |<xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>|可选 <xref:Microsoft.Build.Utilities.TaskLoggingHelper> 只读参数。<br /><br /> 获取包含任务日志记录方法的 `TaskLoggingHelperExtension` 对象。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [任务](../msbuild/msbuild-tasks.md)

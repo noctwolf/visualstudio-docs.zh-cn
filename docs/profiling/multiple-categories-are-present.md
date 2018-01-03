@@ -14,16 +14,17 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4beda1530fb36b4cad751c143a3a3962029f2fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1986f1cf206774303ea9d3c040d7f10c05ffe491
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="multiple-categories-are-present"></a>出现多个类别
 将选中在给定时间范围内包含多个活动类型的部分。 请注意，将会显示两种颜色，并且一种颜色垂直堆叠在另一种颜色之上。 这两种颜色表示给定时间范围内最常见的两种活动。 这两种活动出现的频率在竖条上以 2:1 或 1:1 的比例显示。 若要查看更多详细信息，请尝试放大线程视图的这一部分。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [执行时间（“线程”视图）](../profiling/execution-time-threads-view.md)   
  [I/O 时间（“线程”视图）](../profiling/i-o-time-threads-view.md)   
  [内存管理时间](../profiling/memory-management-time.md)   

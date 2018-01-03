@@ -29,11 +29,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 6bdca24340f301fc19f3bc8d1e86c97c3b98c5c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 20548574a15c1ac7867ff7142033e94328a40ddf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lib-task"></a>LIB 任务
 包装 Microsoft 32 位库管理器工具 (lib.exe)。 库管理器创建并管理通用对象文件格式 (COFF) 对象文件的库。 库管理器还可以创建导出文件和导入库，以便引用导出的定义。 有关详细信息，请参阅 [LIB 参考](/cpp/build/reference/lib-reference)和[运行 LIB](/cpp/build/reference/running-lib)。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 |**LinkTimeCodeGeneration**|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，指定链接时代码生成。<br /><br /> 此参数对应于 lib.exe 的 **/LCTG** 选项。|  
 |**MinimumRequiredVersion**|可选 **String** 参数。<br /><br /> 指定子系统所需的最低版本。 指定范围在 0 到 65535 之间且以逗号分隔的十进制数字列表。|  
 |**ModuleDefinitionFile**|可选 **String** 参数。<br /><br /> 指定模块定义文件 (.def) 的名称。<br /><br /> 此参数对应于 lib.exe 的需要使用 `filename` 自变量的 **/DEF** 选项。|  
-|**Name**|可选 **String** 参数。<br /><br /> 生成导入库时，指定正在为其生成导入库的 DLL 的名称。<br /><br /> 此参数对应于 lib.exe 的需要使用 `filename` 自变量的 **/NAME** 选项。|  
+|**名称**|可选 **String** 参数。<br /><br /> 生成导入库时，指定正在为其生成导入库的 DLL 的名称。<br /><br /> 此参数对应于 lib.exe 的需要使用 `filename` 自变量的 **/NAME** 选项。|  
 |**OutputFile**|可选 **String** 参数。<br /><br /> 重写 lib.exe 所创建程序的默认名称和位置。<br /><br /> 此参数对应于 lib.exe 的需要使用 `filename` 自变量的 **/OUT** 选项。|  
 |**RemoveObjects**|可选 **String []** 参数。<br /><br /> 忽略输出库中的指定对象。 Lib.exe 通过组合所有对象（无论位于对象文件中还是库中），然后删除此选项指定的任何对象，来创建输出库。<br /><br /> 此参数对应于 lib.exe 的需要使用 `membername` 自变量的 **/REMOVE** 选项。|  
 |**Sources**|必选 `ITaskItem[]` 参数。<br /><br /> 指定用空格分隔的源文件列表。|  
@@ -70,5 +71,5 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)

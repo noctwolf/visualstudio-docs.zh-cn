@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24b6a19ed79db2625fc7e1ad339ab2396635767a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: afdf338d300d67964499fc67ce260fc32b8664af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Blend 中的键盘快捷键
 ## <a name="project-shortcuts"></a>项目快捷方式  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="view-shortcuts"></a>视图快捷方式  
   
-|任务|请执行此操作|  
+|任务|操作步骤|  
 |----------------|-------------|  
 |在“设计”、“代码”和“拆分”视图之间进行切换|F11|  
 |在美工板上放大|Ctrl+等于号|  
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="workspace-shortcuts"></a>工作区快捷方式  
   
-|任务|请执行此操作|  
+|任务|操作步骤|  
 |----------------|-------------|  
 |在“动画”和“设计”工作区之间进行切换|Ctrl+F11|  
 |显示或隐藏“资产”面板|Ctrl+句点|  

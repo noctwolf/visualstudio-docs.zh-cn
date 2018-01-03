@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff4c94b079d58cab51ec0539e17ada8696ebca89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 81133dadb79cc4fba24b66e97f7384232b6171ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="function-details-view"></a>函数详细信息视图
 “函数详细信息视图”窗口显示以下信息：  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="function-performance-details"></a>函数性能详细信息  
  “函数性能详细信息”表提供所选函数的性能指标的摘要数据。 同时显示值和百分比。 在“性能指标”列表中指定图表和详细信息表中显示的分析数据。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**独占**|- 执行函数体时产生的性能指标的量。|  
 |**在调用中**|- 所选函数所调用的函数中产生的性能指标的量。|  

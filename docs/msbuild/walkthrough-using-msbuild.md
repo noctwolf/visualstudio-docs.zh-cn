@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9500cdb26b51d3a91b9565c7ef0353907e9afe7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-msbuild"></a>演练：使用 MSBuild
 MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBuild 的构建基块，并演示如何编写、操作和调试 MSBuild 项目。 学习内容：  
@@ -389,7 +390,7 @@ $(PropertyName)
     ```  
   
 ### <a name="include-exclude-and-wildcards"></a>Include、Exclude 和通配符  
- 可配合使用通配符“*”、“\*\*”和“?”和 Include 属性将项添加到项类型。 例如，  
+ 可配合使用通配符“*”、“\*\*”和“?”和 Include 属性将项添加到项类型。 例如，应用于对象的  
   
 ```xml  
 <Photos Include="images\*.jpeg" />  
@@ -577,6 +578,6 @@ $(PropertyName)
 ## <a name="whats-next"></a>接下来的内容  
  要了解如何一步步创建简单项目文件，请尝试[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)中的步骤。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [MSBuild 概述](../msbuild/msbuild.md)  
  [MSBuild 参考](../msbuild/msbuild-reference.md)

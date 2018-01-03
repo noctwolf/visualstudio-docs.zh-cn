@@ -15,36 +15,29 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 44429ccde6dece8ff0b8a0c41fd4cff328d1160f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 3490d9d4f88bbcc104132e35c3f86d3fe75622b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>演练：使用 Visual C# 或 Visual Basic 创建简单应用程序
-通过完成本演练，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具、对话框和设计器。 你将创建一个简单的“Hello, World”应用程序、设计 UI、添加代码并调试错误，还会了解如何在集成开发环境 (IDE) 中工作。  
-  
- 本主题包含以下各节：  
-  
- [配置 IDE](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_ConfigureIDE)  
-  
- [创建简单的应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_CreateApp)  
-  
- [调试并测试应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
+通过完成本演练，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具、对话框和设计器。 你将创建一个简单的“Hello, World”应用程序、设计 UI、添加代码并调试错误，还会了解如何在集成开发环境 (IDE) 中工作。
   
 ##  <a name="BKMK_ConfigureIDE"></a> 配置 IDE  
 首次启动 Visual Studio 时，系统会提示你进行登录。 在本演练中，此步骤为可选步骤。 接下来可能会显示一个对话框，让你选择开发设置和颜色主题。 保留默认值，然后选择“启动 Visual Studio”。  
 
 ![“选择设置”对话框](../ide/media/exploreide-settings.png "exploreide-settings")
   
- 启动 Visual Studio 后，将看到工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口停靠在应用程序窗口的左侧和右侧，其顶部有 **“快速启动”**、菜单栏和标准工具栏。 应用程序窗口的中心是 **“起始页”**。 当您加载解决方案或项目时，编辑器和设计器将显示在 **起始页** 的空间中。 开发应用程序时，大部分时间都将用在此中心区域。  
+启动 Visual Studio 后，将看到工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口停靠在应用程序窗口的左侧和右侧，其顶部有 **“快速启动”**、菜单栏和标准工具栏。 应用程序窗口的中心是 **“起始页”**。 当您加载解决方案或项目时，编辑器和设计器将显示在 **起始页** 的空间中。 开发应用程序时，大部分时间都将用在此中心区域。  
   
- ![应用了常规设置的 IDE](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE IDEwithgeneralsettings")  
+![应用了常规设置的 IDE](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE IDEwithgeneralsettings")  
   
 ##  <a name="BKMK_CreateApp"></a> 创建简单的应用程序  
   
 ### <a name="create-the-project"></a>创建项目  
- 在 Visual Studio 中创建应用程序时，应首先创建项目和解决方案。 此示例将创建一个 Windows Presentation Foundation (WPF) 项目。  
+在 Visual Studio 中创建应用程序时，应首先创建项目和解决方案。 此示例将创建一个 Windows Presentation Foundation (WPF) 项目。  
   
 #### <a name="to-create-the-wpf-project"></a>创建 WPF 项目  
   
@@ -56,11 +49,11 @@ ms.lasthandoff: 10/31/2017
   
      ![创建 C# WPF 项目，HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
- Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资源管理器”将显示各种文件。 WPF 设计器在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。  您可以选择只查看可视化视图或 XAML 视图。 （有关详细信息，请参阅[面向 Windows 窗体开发人员的 WPF 设计器](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)。）“解决方案资源管理器”中显示以下项：  
+Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资源管理器”将显示各种文件。 WPF 设计器在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。  您可以选择只查看可视化视图或 XAML 视图。 （有关详细信息，请参阅[面向 Windows 窗体开发人员的 WPF 设计器](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)。）“解决方案资源管理器”中显示以下项：  
   
- ![已加载 HelloWPFApp 文件的解决方案资源管理器](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
+![已加载 HelloWPFApp 文件的解决方案资源管理器](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
- 你可以在创建项目后进行自定义。 通过使用 **属性** 窗口（ **视图** 菜单上），您可以显示和更改应用程序中的项目项、控件和其他项的选项。  
+你可以在创建项目后进行自定义。 通过使用 **属性** 窗口（ **视图** 菜单上），您可以显示和更改应用程序中的项目项、控件和其他项的选项。  
   
 #### <a name="to-change-the-name-of-mainwindowxaml"></a>更改 MainWindow.xaml 的名称  
 为 MainWindow 指定更具体的名称。  
@@ -73,7 +66,7 @@ ms.lasthandoff: 10/31/2017
      “解决方案资源管理器”显示文件的当前名称是 Greetings.xaml，而嵌套代码文件的当前名称是 Greetings.xaml.vb 或 Greetings.xaml.cs。 此代码文件嵌套在 .xaml 文件节点下，表明它们的关系十分紧密。  
   
 ### <a name="design-the-user-interface-ui"></a>设计用户界面 (UI)  
- 我们会将三种类型的控件添加至此应用程序：一个 TextBlock 控件、两个 RadioButton 控件和一个 Button 控件。  
+我们会将三种类型的控件添加至此应用程序：一个 TextBlock 控件、两个 RadioButton 控件和一个 Button 控件。  
   
 #### <a name="to-add-a-textblock-control"></a>添加 TextBlock 控件  
   
@@ -85,16 +78,16 @@ ms.lasthandoff: 10/31/2017
   
 3.  通过选择“TextBlock”项并将其拖到设计图面的窗口中，将 TextBlock 控件添加到设计图面中。 把控件居中到窗口的顶部附近。  
   
- 你的窗口应与下图类似：  
+你的窗口应与下图类似：  
   
- ![Greetings 窗体上的 TextBlock 控件](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE GreetingswithTextblockonly")  
+![Greetings 窗体上的 TextBlock 控件](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE GreetingswithTextblockonly")  
   
- XAML 标记应类似于以下示例：  
+XAML 标记应类似于以下示例：  
   
-     ```xaml  
-     <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
-     ```  
-  
+```xaml  
+<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
+```  
+
 #### <a name="to-customize-the-text-in-the-text-block"></a>自定义文本块中的文本  
   
 1.  在 XAML 视图中，找到 TextBlock 的标记并更改 Text 属性：  
@@ -158,7 +151,7 @@ IsChecked="True"
      ![包含控件标签的 Greetings 窗体](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
 ### <a name="add-code-to-the-display-button"></a>向显示按钮添加代码  
- 此应用程序运行时，用户选择单选按钮，再选择“显示” 按钮之后，会显示一个消息框。 选择 Hello 将显示一个消息框，选择 Goodbye 将显示另一个。 要创建此行为，需将代码添加到 Greetings.xaml.vb 或 Greetings.xaml.cs 中的 Button_Click 事件。  
+此应用程序运行时，用户选择单选按钮，再选择“显示” 按钮之后，会显示一个消息框。 选择 Hello 将显示一个消息框，选择 Goodbye 将显示另一个。 要创建此行为，需将代码添加到 Greetings.xaml.vb 或 Greetings.xaml.cs 中的 Button_Click 事件。  
   
 #### <a name="add-code-to-display-message-boxes"></a>添加代码以显示消息框    
 1.  在设计图面上，双击 **“显示”** 按钮。  
@@ -201,10 +194,10 @@ IsChecked="True"
 3.  保存应用程序。  
   
 ##  <a name="BKMK_DebugTest"></a> 调试并测试应用程序  
- 接下来将调试应用程序，查找错误并测试两个消息框是否正确显示。 下面的说明介绍如何生成和启动调试器，但以后可以阅读[生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) 和[调试 WPF](../debugger/debugging-wpf.md) 以获取有关详细信息。  
+接下来将调试应用程序，查找错误并测试两个消息框是否正确显示。 下面的说明将告诉你如何构建和启动调试器，但以后可以阅读 [生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) 和 [Debugging WPF](../debugger/debugging-wpf.md) 以获取有关详细信息。  
   
 ### <a name="find-and-fix-errors"></a>查找并修复错误  
- 在此步骤中将遇到之前因更改 MainWindow.xaml 文件的名称而引起的错误。  
+在此步骤中将遇到之前因更改 MainWindow.xaml 文件的名称而引起的错误。  
   
 #### <a name="to-start-debugging-and-find-the-error"></a>开始调试和查找错误  
   
@@ -218,7 +211,7 @@ IsChecked="True"
   
      ![“调试”菜单上的“停止调试”命令](../ide/media/exploreide-stopdebugging.png "ExploreIDE-StopDebugging")  
   
- 开始进行本演练时，我们将 Mainwindow.xaml 重命名为 Greetings.xaml，但是该代码仍然引用 Mainwindow.xaml 作为应用程序的启动 URI，因此该项目无法启动。  
+开始进行本演练时，我们将 Mainwindow.xaml 重命名为 Greetings.xaml，但是该代码仍然引用 Mainwindow.xaml 作为应用程序的启动 URI，因此该项目无法启动。  
   
 #### <a name="to-specify-greetingsxaml-as-the-startup-uri"></a>将 Greetings.xaml 指定为启动 URI  
   
@@ -284,7 +277,7 @@ IsChecked="True"
   
 祝贺你完成本演练！ 可在解决方案和项目目录 (...\HelloWPFApp\HelloWPFApp\bin\Release\\) 下找到生成的 .exe 文件。 如要了解更多示例，请参阅 [Visual Studio Samples](../ide/visual-studio-samples.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [Visual Studio 2017 中的新增功能](../ide/whats-new-in-visual-studio.md)   
- [Visual Studio 开发入门](../ide/get-started-developing-with-visual-studio.md)   
- [工作效率提示](../ide/productivity-tips-for-visual-studio.md)
+## <a name="see-also"></a>请参阅
+[Visual Studio 2017 中的新增功能](../ide/whats-new-in-visual-studio.md)   
+[Visual Studio 开发入门](../ide/get-started-developing-with-visual-studio.md)   
+[工作效率提示](../ide/productivity-tips-for-visual-studio.md)

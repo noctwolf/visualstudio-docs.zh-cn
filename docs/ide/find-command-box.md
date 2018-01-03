@@ -12,11 +12,12 @@ helpviewer_keywords: Find/Command box
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8fa54e65ed581d547d7e4a0c6c5d1c1e0908c0ca
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: ede1e6cd1340ea204199df66108c49db310949f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="findcommand-box"></a>“查找/命令”框
 
@@ -30,11 +31,11 @@ ms.lasthandoff: 12/07/2017
 
 ## <a name="searching-for-text"></a>搜索文本
 
-默认情况下，如果在“查找/命令”框中指定了文本，然后选择了 Enter 键，Visual Studio 会使用“在文件中查找”对话框中指定的选项搜索当前文档或工具窗口。 有关详细信息，请参阅[查找和替换文本](../ide/finding-and-replacing-text.md)。
+默认情况下，如果在“查找/命令”框中指定了文本，然后选择了 Enter 键，Visual Studio 会使用“在文件中查找”对话框中指定的选项搜索当前文档或工具窗口。 有关详细信息，请参阅 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)。
 
 ## <a name="entering-commands"></a>输入命令
 
-要使用“查找/命令”框发布单个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 命令或别名，而不是搜索文本，请在该命令前面加一个大于 (>) 符号。 例如: 
+要使用“查找/命令”框发布单个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 命令或别名，而不是搜索文本，请在该命令前面加一个大于 (>) 符号。 例如:
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -44,7 +45,7 @@ ms.lasthandoff: 12/07/2017
 
 ## <a name="escape-characters"></a>转义字符
 
-命令中的插入符号 (^) 字符表示紧随其后的字符将按字面意思而不是作为控制字符进行解释。 这可以用于嵌入参数或开关值中的直引号 (")、空格、前导斜杠，插入符号或其他任何字符，开关名称除外。 例如: 
+命令中的插入符号 (^) 字符表示紧随其后的字符将按字面意思而不是作为控制字符进行解释。 这可以用于嵌入参数或开关值中的直引号 (")、空格、前导斜杠，插入符号或其他任何字符，开关名称除外。 例如:
 
 ```
 >Edit.Find ^^t /regex

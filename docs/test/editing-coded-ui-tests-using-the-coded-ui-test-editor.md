@@ -13,11 +13,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: "40"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 637bf6a6e52943e2eae247bbe5a40e10c2d3742d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2bce8aa82b1076860f9c9b96e39e7a13955b9444
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用编码的 UI 测试编辑器编辑编码的 UI 测试
 通过编码的 UI 测试编辑器，可轻松修改编码的 UI 测试。 使用编码的 UI 测试编辑器，可以查找、查看和编辑测试方法和 UI 操作的属性。 此外，你还可以使用 UI 控件图查看和编辑其对应的控件。  
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/27/2017
   
 -   ![提示](../test/media/tip.png "Tip") 可以重命名新方法。 在 UI 操作窗格中选择它，然后选择编码的 UI 测试编辑器工具栏中的“重命名”  按钮。  
   
-     - 或 -  
+     或  
   
      打开新测试方法的快捷菜单，并选择“重命名” 。  
   
@@ -213,7 +214,7 @@ ms.lasthandoff: 10/27/2017
 ### <a name="forum"></a>论坛  
  [Visual Studio UI 自动测试（包括 CodedUI）](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
  [创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [创建数据驱动的编码的 UI 测试](../test/creating-a-data-driven-coded-ui-test.md)   

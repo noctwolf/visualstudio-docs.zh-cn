@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e93d1f3e49384097cdadf6623dae2415fe63cd18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a5994739df03752521b60ac4f415323c6bc4a8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-starter-kits"></a>如何：创建初学者工具包
 初学者工具包包含一个完整应用程序的代码以及有关如何修改或扩展该应用程序的文档。 创建初学者工具包与创建常规项目模板基本相同，唯一的区别是初学者工具包包括创建基于初学者工具包的项目时设置为打开的文档文件。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
  [如何：更新现有模板](../ide/how-to-update-existing-templates.md)  
  描述如何编辑已导出的模板。 使用此过程修改 .vstemplate 文件以自定义你的初学者工具包。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [自定义模板](../ide/customizing-project-and-item-templates.md)   
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

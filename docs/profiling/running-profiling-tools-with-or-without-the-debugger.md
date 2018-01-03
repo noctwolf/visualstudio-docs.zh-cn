@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11ebadac433076a6ab54afce59584b1f0966df68
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 2507ec49129692914ba6d11e4f651d5895b49c8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>运行带或不带调试器的分析工具
 Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU 使用率”和“内存使用率”）可在使用/不使用调试器的情况下运行。 不带调试器的性能工具用于在发布配置上运行，而集成了调试器的工具用于在调试配置上运行。  

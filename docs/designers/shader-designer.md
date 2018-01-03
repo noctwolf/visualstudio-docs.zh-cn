@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb3a7122f561f2c1beaa5674be2220a565586aa4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c8d0f7a2ee52930a74566e0f7b4ddc10747204ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shader-designer"></a>着色器设计器
 本文档介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 着色器设计器来创建、修改和导出名为“着色器”的自定义视觉效果。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
  下表介绍了“着色器设计器模式”工具栏上的项，按其从左至右的显示顺序列出：  
   
-|工具栏项|说明|  
+|工具栏项|描述|  
 |------------------|-----------------|  
 |**选择**|启用关系图中节点与边缘的交互。 在此模式下，可以选择节点并移动或删除它们，也可以建立边缘或中断它们。|  
 |**平移**|相对于窗口框架移动着色器图。 若要进行平移，请选择设计图面上的一个点，然后将其四处移动。<br /><br /> 在“选择”模式下，可以按住 Ctrl 键来暂时激活“平移”模式。|  

@@ -15,11 +15,12 @@ caps.latest.revision: "31"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a1b0b6e2cc44193a684c6f411df908b0a54d31f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8f45cf4e58da23ffc0f0470f9d47658e75723552
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>标准和自定义工具集配置
 MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和工具的引用。 MSBuild 包括标准工具集，但也可以创建自定义工具集。 有关如何指定工具集的信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -101,5 +102,5 @@ MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和
   
  还可以使用添加 MSBuildToolsPath 属性时所用的语法向配置文件添加特定于 ToolsVersion 的自定义属性。 如果要使这些自定义属性可在项目文件中使用，请使用与配置文件中指定的值相同的名称。 可以在配置文件中定义工具集但不能定义子工具集。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 34424ae13a47008eaefa3634f2bf25d31daf285e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ccfae6292f696fa7c0951595a9baab123c81149
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="best-practices-for-using-code-snippets"></a>有关使用代码段的最佳做法
 代码片段中的代码仅显示执行某些操作的最基本方法。 对于大多数应用程序，必须修改代码，使其适合应用程序。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
     -   代码片段可能包含以无提示方式添加到项目的引用，并且这些引用可从系统的任何位置加载。 这些引用可能已从下载代码片段的位置下载到了计算机。 随后，代码片段可能会调用执行恶意代码的引用中的方法。 若要避免此类攻击，请检查代码片段文件的 Imports 和 References 块。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Basic IntelliSense 代码片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)   
  [保证应用程序的安全](../ide/securing-applications.md)   
  [代码片段](../ide/code-snippets.md)

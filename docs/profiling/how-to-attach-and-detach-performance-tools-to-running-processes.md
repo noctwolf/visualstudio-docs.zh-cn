@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 630a51cc9933b1e7b71f2926c6a057bff13bc81b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e847e1295e4514f8e1c327f207a6ae7166c892df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：在正在运行的进程中附加和分离性能工具
 探查器可用于附加到运行中的进程或从运行中的进程分离，以更轻松地进行采样和收集性能数据。 在想要避免收集有关应用程序加载时间的数据，或在进程达到某一特定状态后监视其性能时，可使用此方法分析进程。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  单击“分离”。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [控制数据收集](../profiling/controlling-data-collection.md)   
  [性能会话概述](../profiling/performance-session-overview.md)   
  [如何：开始和结束性能数据收集](../profiling/how-to-start-and-end-performance-data-collection.md)   

@@ -19,11 +19,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 112264b0bbe5e752a7f56004e767f26b527a6f6a
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: b3b1de69c905757c8d28922cd09eadd5abf7d05e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-window"></a>“命令”窗口
 “命令”窗口用于直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中执行命令或别名。 可以执行菜单命令和不在任何菜单上出现的命令。 若要显示“命令”窗口，请在“视图”菜单中选择“其他窗口”，然后选择“命令窗口”。  
@@ -111,6 +112,6 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="use-quotes-for-path-names-with-spaces"></a>对带有空格的路径名称使用引号  
  例如，如果要打开的文件的路径中含有空格，必须在包含空格的路径或路径段两边添加双引号：C:\\"Program Files" 或 "C:\Program Files"。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

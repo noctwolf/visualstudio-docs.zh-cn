@@ -11,16 +11,17 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: "41"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: e7c6e2ed36593a55548ec182c147f00ae447a500
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a87dabee46cfcfb7e22d0217081a3a7ed47d9bc4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>演练：创建、编辑和维护编码的 UI 测试
 在本演练中，你将创建一个简单的 Windows Presentation Foundation (WPF) 应用程序来演示如何创建、编辑和维护编码的 UI 测试。 本演练为更正由各种计时问题和控件重构中断的测试提供了解决方案。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  本演练需要：  
   
 -   Visual Studio Enterprise  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/27/2017
   
 1.  在“文件”菜单上，指向“新建”，然后选择“项目”。  
   
-     此时将出现 **“新建项目”** 对话框。  
+     此时将出现 “新建项目” 对话框。  
   
 2.  在“已安装”窗格中，展开 **Visual C#**，然后选择“Windows 桌面”。  
   
@@ -386,7 +387,7 @@ ms.lasthandoff: 10/27/2017
 ### <a name="forum"></a>论坛  
  [Visual Studio UI 自动测试（包括 CodedUI）](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
  [WPF 设计器入门](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
  [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   

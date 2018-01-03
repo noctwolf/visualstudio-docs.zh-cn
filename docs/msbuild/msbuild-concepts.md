@@ -13,18 +13,19 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 4395f4c82be689b1d573be44948e98711ba066c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e57abdc78bc5b5844959fe2e3077688ec496df49
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-concepts"></a>MSBuild 概念
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供可用于控制生成平台如何生成软件的基本 XML 架构。 若要指定生成中的组件及其生成方式，请使用这四个 MSBuild 部件：属性、项、任务和目标。  
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|说明|  
+|标题|描述|  
 |-----------|-----------------|  
 |[MSBuild 属性](../msbuild/msbuild-properties.md)|介绍属性和属性集合。 属性是可用于配置生成的键/值对。|  
 |[项](../msbuild/msbuild-items.md)|介绍 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 文件格式背后的常规概念，以及所有这些概念之间的关系。|  

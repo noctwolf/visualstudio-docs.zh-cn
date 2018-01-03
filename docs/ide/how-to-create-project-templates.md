@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a473ac2be65acc9b08455fe687b52468f5ca9fa6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 603cfdd3a52163959ed223952994d3e8e4147298
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-project-templates"></a>如何：创建项目模板
 在此过程中，可以使用“导出模板”向导创建模板，将模板打包为 .zip 文件。 还可以使用导出模板向导扩展，或使用 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 中包含的模板创建 VSIX 文件格式的模板，改进部署，也可以手动创建模板。  
@@ -55,6 +56,6 @@ ms.lasthandoff: 10/31/2017
   
      如果已安装 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]，可以使用“VSIX 项目”模板将完成的模板包装到 .vsix 文件中，供部署使用。 有关详细信息，请参阅 [VSIX 项目模板入门](../extensibility/getting-started-with-the-vsix-project-template.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [如何：创建项模板](../ide/how-to-create-item-templates.md)

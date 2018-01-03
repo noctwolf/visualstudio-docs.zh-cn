@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8cc25d03d4565f33ff42267ea0af1c7c31cbfd8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 026c6cd05ae926228cab5ab2cb52d389cd021d2a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="empty-timeline-segment"></a>空时间线分段
 在并发可视化工具中，时间线部分为空（具有白色背景）的原因取决于通道的种类。  
@@ -31,6 +32,6 @@ ms.lasthandoff: 10/31/2017
   
 -   对于标记通道，这意味着未生成任何标记。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“线程”视图](../profiling/threads-view-parallel-performance.md)   
  [缩放控件（“线程”视图）](../profiling/zoom-control-threads-view.md)

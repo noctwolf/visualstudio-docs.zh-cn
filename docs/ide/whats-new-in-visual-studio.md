@@ -15,11 +15,12 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 011c86caae5eaa00577dcc9a5d9c372849eb28f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>[版本 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) 的更新内容
@@ -298,9 +299,9 @@ Visual Studio 2017 所有版本随附：
 ### <a name="track-your-issue-in-connect"></a>在“连接”中跟踪你的问题  
  要跟踪 Visual Studio 反馈的状态，请转至[连接](http://connect.microsoft.com/)，并在此处报告 bug。 报告后，可返回至“连接”来跟踪其状态。  
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 * [Visual Studio 2017 发行说明](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Visual C++ 中的新增功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [C# 中的新增功能](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
+* [C# 中的新增功能](/dotnet/csharp/whats-new)  
 * [Team Foundation Server 中的新增功能](https://www.visualstudio.com/docs/whats-new)
 * [Visual Studio for Mac 中的新增功能](https://www.visualstudio.com/vs/visual-studio-mac/)

@@ -15,11 +15,12 @@ caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dff0b96bc40f857224df5222b43efac914de4f7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4996f6cd60889412958765a02811b1b6728f2efa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-session-overview"></a>性能会话概述
 本概述说明分析的基础知识。 刚接触性能工作的开发者会了解 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具如何帮助他们快速提高工作效率以及提高其代码的性能。 在分析方面经验丰富的开发者可以获得特定分析工具功能和过程的概述。  
@@ -76,6 +77,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="generate-a-report-of-the-results"></a>生成结果的报告  
  可以将任何性能报告视图的行粘贴到电子邮件和电子表格中，并且可以生成包含一个或多个视图的数据的报告。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [概述](../profiling/overviews-performance-tools.md)   
  [演练：确定性能问题](../profiling/walkthrough-identifying-performance-problems.md)

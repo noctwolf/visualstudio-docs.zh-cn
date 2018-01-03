@@ -12,11 +12,12 @@ ms.assetid: F34B0D19-B430-4C01-B402-62A861007E71
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8d843800666ae53a686a18fcab28d02eb4c16743
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d103e74c0f6cf40bfd0e6dc26dd5777c6fe11f2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>使用 Build Management 或 Release Management（而不是实验室管理工具版）进行自动测试
 
@@ -36,7 +37,7 @@ XAML 生成依赖于在 MTM 中创建的各种构造（例如实验室环境、�
 
 | 步骤 | 使用 XAML 生成 | 使用 Build Management 或 Release Management |
 |-------|----------------------|-----------------|
-| 确定部署生成和运行测试的计算机。 | 使用这些计算机在 MTM 中创建标准实验室环境。 | 无 |
+| 确定部署生成和运行测试的计算机。 | 使用这些计算机在 MTM 中创建标准实验室环境。 | 不可用 |
 | 确定要运行的测试。 | 在 MTM 中创建测试套件、创建测试用例并将自动化与每个测试用例关联。 在 MTM 中创建测试设置，标识计算机在运行测试的实验室环境中的角色。 | 如果打算通过测试计划管理测试，则以相同的方式在 MTM 中创建自动测试套件。 如果想从生成产生的测试二进制文件直接运行测试，则可以跳过此步骤。 两种情况下都无需创建测试设置。 |
 | 自动部署和测试。 | 使用 LabDefaultTemplate.*.xaml 创建 XAML 生成定义。 在生成定义中指定生成、测试套件和实验室环境。 | 使用单一环境创建[生成定义或发布定义](https://www.visualstudio.com/team-services/continuous-integration/)。 使用命令行任务从 XAML 生成定义运行相同的部署脚本，并使用“测试代理部署”和“运行功能测试”任务运行自动测试。 将一系列计算机及其凭据指定为这些任务的输入。 |
 

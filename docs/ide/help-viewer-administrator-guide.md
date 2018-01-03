@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c4c034b6aec75499d2e38af35f22cd852fa2e15
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 5f509b0ace14c4e0becd714e25ee9ec26770c6e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 管理员指南
 通过帮助查看器可以在具有或不具有 Internet 访问的情况下为网络环境管理本地帮助安装。 本地帮助内容按每台计算机进行配置。 默认情况下，用户必须具有管理员权限才能更新其本地帮助安装。  
@@ -132,7 +133,7 @@ ms.lasthandoff: 11/07/2017
   
      例如，将 C:\VSHelp 中的内容复制到 \\\myserver\VSHelp。  
   
-2.  创建用于包含帮助内容的部署脚本的 .bat 文件。 由于客户端可能对在推送过程中删除的任何文件具有读取锁定，所以应在推送更新之前关闭客户端。 例如:   
+2.  创建用于包含帮助内容的部署脚本的 .bat 文件。 由于客户端可能对在推送过程中删除的任何文件具有读取锁定，所以应在推送更新之前关闭客户端。 例如:  
   
     ```  
     REM - copy pre-ripped content to ProgramData  

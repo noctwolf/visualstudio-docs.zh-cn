@@ -16,11 +16,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39b19b6e418203a33c410173d46e190bbd6c01e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a16f39d9f9ba6c3e0790a53c85d0824178083953
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-page-project-designer"></a>“项目设计器”->“调试”页
 > [!WARNING]
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
  要在安全区域调试，必须启用此选项并在[“高级安全设置”对话框](../../ide/reference/advanced-security-settings-dialog-box.md)中启用“使用所选的权限集调试此应用程序”。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../../debugger/debugging-in-visual-studio.md)   
  [C# 调试配置的项目设置](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic 调试配置的项目设置](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   

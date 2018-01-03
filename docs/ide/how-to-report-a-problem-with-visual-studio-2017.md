@@ -11,11 +11,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: 283fec9bcaa4f678f30f3a0eb0dda667146b03b9
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload: multiple
+ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何报告 Visual Studio 2017 的问题
 如果在使用 Visual Studio 时遇到问题，请告知我们。 下面介绍如何报告问题，以便我们诊断并修复该问题。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/17/2017
 
 ## <a name="provide-a-screenshot-and-attachments-optional"></a>提供屏幕截图和附件（可选）
 ###  <a name="provide_screenshots"></a>
- 选择将当前屏幕发送给 Microsoft。 通过单击“附加其他文件”按钮，可以附加其他屏幕截图或其他文件。  
+ 选择将当前屏幕发送给 Microsoft。 通过单击“附加其他文件”  按钮，你可以附加其他屏幕快照或其他文件。  
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>提供跟踪和堆转储（可选）  
 ###  <a name="provide_a_trace_and_heap_dump"></a>  
@@ -72,5 +73,5 @@ ms.lasthandoff: 11/17/2017
 
  ![可以使用 Tab 键定位到 Visual Studio 安装程序中的“提供反馈”按钮，从而打开反馈工具](../install/media/report-a-problem.png)
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [与我们交流](../ide/talk-to-us.md)

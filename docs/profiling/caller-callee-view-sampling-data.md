@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1af055de45421ec9958a8663cfaa62c82bd4ae75
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 81c10d85b9dc88115e7dbc57a03a6da4362fa945
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="caller--callee-view---sampling-data"></a>“调用方 - 被调用方”视图 - 采样数据
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的分析信息。 “调用方/被调用方”视图包含三个网格。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 11/11/2017
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
@@ -43,14 +44,14 @@ ms.lasthandoff: 11/11/2017
 |**函数名**|该函数的完全限定名。|  
 |**函数行号**|此函数在源文件中的起始行号。|  
 |**函数地址**|函数的地址。|  
-|**类型**|函数的上下文：<br /><br /> -   **0** - 当前函数<br />-   **1** - 调用当前函数的函数<br />-   **2** - 当前函数调用的函数|  
+|**Type**|函数的上下文：<br /><br /> -   **0** - 当前函数<br />-   **1** - 调用当前函数的函数<br />-   **2** - 当前函数调用的函数|  
 |**根函数名**|当前函数的名称。|  
 |**非独占样本数**|-   对于当前函数，非独占样本数是所收集的样本数，尽管当时正在执行此函数或其中一个子函数。<br />-   对于调用方函数，非独占样本数是此函数调用当前函数时收集的当前函数的非独占样本数。<br />-   对于被调用方函数，非独占样本数当前函数调用此函数时收集的此函数的非独占样本数。|  
 |**非独占样本数百分比**|分析运行中属于此函数的非独占样本的所有样本数的百分比。|  
 |**独占样本数**|-   对于当前函数，独占样本数是直接执行此函数时（即此函数位于调用堆栈顶部时）收集的分析运行中的样本数。 此函数的子函数执行时收集的样本不会计入独占样本数。<br />-   对于调用方函数，是此函数调用当前函数时收集的当前函数的独占样本数。<br />-   对于被调用方函数，独占样本数是当前函数调用此函数时收集的此函数的独占样本数。|  
 |**独占样本数百分比**|分析运行中属于此函数的独占样本的所有样本数的百分比。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“调用方/被调用方”视图 - .NET 内存采样数据](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [“调用方/被调用方”视图 - .NET 内存检测数据](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [“调用方/被调用方”视图 - 检测数据](../profiling/caller-callee-view-instrumentation-data.md)

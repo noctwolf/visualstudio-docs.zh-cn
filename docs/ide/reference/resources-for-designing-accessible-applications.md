@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a5469b3e6f09df75561cf85ba56c96721494aabf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 789eafd7bc7137026bb6c144615f1234f7288f29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resources-for-designing-accessible-applications"></a>用于设计支持辅助功能的应用程序的资源
 使用以下链接可查找有关支持可访问设计的信息以及用于开发可访问 Windows 应用程序和网站的提示和示例。 可以在 [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/) 处联机查找有关辅助功能的常规信息。  
@@ -56,5 +57,5 @@ ms.lasthandoff: 10/31/2017
   
 -   **万维网联合会 (W3C) 的 Web 辅助功能计划** 此网站为可访问网站开发提供准则和技术。 有关详细信息，请访问 [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 的辅助功能](../../ide/reference/accessibility-features-of-visual-studio.md)

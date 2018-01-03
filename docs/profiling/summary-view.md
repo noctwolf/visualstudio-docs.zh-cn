@@ -18,11 +18,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f07b924c5af117f39e19dc5add6046a14be22a6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 552a2c66bd71d83ff1c8cd3453154c065d8bdb3d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view"></a>“摘要”视图
 “摘要”视图显示有关分析运行期间，性能开销最大的函数或对象的信息。 此视图根据分析方法的性能指标，提供一个时间线图，以及性能开销最大的函数或对象的两个或多个列表。 此视图中的数据取决于所用的分析方法（采样、检测或并发）以及是否收集 .NET 内存分配。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 |**筛选报告数据**|显示分析报告筛选器窗格，可在其中指定条件来限制报告视图中显示的数据。 有关详细信息，请参阅[性能报告视图筛选器](../profiling/performance-report-view-filter.md)|  
 |**切换全屏显示**|切换报告视图的全屏模式。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“摘要”视图](../profiling/summary-view-sampling-data.md)   
  [“摘要”视图](../profiling/summary-view-instrumentation-data.md)   
  [“摘要”视图](../profiling/summary-view-dotnet-memory-data.md)

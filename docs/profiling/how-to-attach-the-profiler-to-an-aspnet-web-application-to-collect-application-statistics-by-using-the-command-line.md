@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3084796fd8260d128a7ae3a8c9b12eb5e6bda806
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: aspnet
+ms.openlocfilehash: 173ddaec8bffe0dde43eee1d96c708e4e5203912
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 ASP.NET Web 应用程序中以收集应用程序统计信息
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加 ASP.NET Web 应用程序，以及如何使用采样方法收集性能统计信息。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/11/2017
   
     -   默认情况下，性能数据为每 10,000,000 个非暂停处理器时钟周期采样一次。 在 1GH 处理器上，每秒约为 100 次。 可以指定以下 VSPerfCmd 选项之一，更改时钟周期间隔或指定不同的采样事件。  
   
-    |样本事件|说明|  
+    |样本事件|描述|  
     |------------------|-----------------|  
     |[/timer](../profiling/timer.md) **:** `Interval`|将采样间隔更改为 `Interval` 所指定的非暂停时钟周期数目。|  
     |[/pf](../profiling/pf.md)[**:**`Interval`]|将采样事件更改为页面错误。 如果已指定 `Interval`，则会设置样本之间的页面错误数目。 默认值为 10。|  
@@ -94,7 +95,7 @@ ms.lasthandoff: 11/11/2017
   
 -   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` **/processoff:** `PID`|对由 `PID` 指定的进程，启动 (/processon) 或停止 (/processoff) 数据收集。|  
@@ -113,7 +114,7 @@ ms.lasthandoff: 11/11/2017
   
     -   键入 **VSPerfCmd /detach**  
   
-         - 或 -  
+         或  
   
     -   关闭 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程。  
   
@@ -125,6 +126,6 @@ ms.lasthandoff: 11/11/2017
   
 4.  重新启动计算机。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [采样方法数据视图](../profiling/profiler-sampling-method-data-views.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 497eacfd4d980c6d06cfc6efb99d02922a077032
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 1e725bc94a159ea5295341021f60ee1183a8982e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>特定于 Visual C++ 的 MSBuild 任务
 任务提供在生成过程中运行的代码。 安装 Visual C++ 后，除了随 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 安装的任务外，以下任务也可用。 有关详细信息，请参阅 [MSBuild (Visual C++) 概述](/cpp/build/msbuild-visual-cpp-overview)。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|说明|  
+|标题|描述|  
 |-----------|-----------------|  
 |[BscMake 任务](../msbuild/bscmake-task.md)|包装 Microsoft 浏览信息维护实用工具 (bscmake.exe)。|  
 |[CL 任务](../msbuild/cl-task.md)|包装 Visual C++ 编译器工具 (cl.exe)。|  

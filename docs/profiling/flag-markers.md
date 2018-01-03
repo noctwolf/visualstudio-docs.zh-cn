@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 646faaa3c80a01565540bd05850b76286121203a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 79105e43cba14c12cf0f82edd05b57286c012ee5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flag-markers"></a>标志标记
 标志标记表示某一瞬间在应用中发生的事。 标志可以表示许多应用程序事件。 例如，标志可以显示特定工作项的计划时间或引发异常的时间。 诸如任务并行库等运行时也可以生成标志。  
@@ -48,6 +49,6 @@ ms.lasthandoff: 10/31/2017
  ![聚合显示 4 个重要性级别的标志](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 不同重要性级别的聚合标志  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)   
  [并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d3d01a13acf68bbf8e58ca0fa1cb41b145d9d3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e2920642c46aa3f6cdf85f4f80c2334d18095718
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="utility-nodes"></a>实用程序节点
 在着色器设计器中，实用程序节点表示不适合归入其他类别的常见且有用的着色器计算。 某些实用程序节点执行简单的操作，如将矢量追加在一起或有条件地选择结果；其他节点执行复杂的操作，如根据常用的照明模型计算照明量。  

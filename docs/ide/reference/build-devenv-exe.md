@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 490c3c4f424d9a8bac2fb0d4042604f8a53439fe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8eba6684167e4b60f02512e9b0fc1c7dc514a614
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 使用指定解决方案配置文件生成解决方案。  
@@ -32,12 +33,12 @@ ms.lasthandoff: 10/31/2017
 Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig ProjConfigName]]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `SolutionName`  
- 必需。 解决方案文件的完整路径和名称。  
+ 必须的。 解决方案文件的完整路径和名称。  
   
  `SolnConfigName`  
- 必需。 `SolutionName` 中指定了将用于生成解决方案的解决方案配置的名称。  
+ 必须的。 `SolutionName` 中指定了将用于生成解决方案的解决方案配置的名称。  
   
  /project `ProjName`  
  可选。 解决方案中项目文件的路径和名称。 可以输入从 `SolutionName` 文件夹到项目文件的相对路径、项目的显示名称或项目文件的完整路径和名称。  
@@ -61,7 +62,7 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中生成和清理项目和解决方案](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   

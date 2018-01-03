@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21450a0478bb7f2388cdde6b69f6fe661e9a055c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f5dffcd68447cac398c980f0b6c0ac2319c9060
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="log-command-window-output-command"></a>“日志命令窗口输出”命令
 将“命令”窗口的所有输入和输出复制到文件中。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
 Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  `filename`  
  可选。 日志文件的名称。 默认情况下，该文件在用户的配置文件文件夹中创建。 如果该文件名已存在，将在该现有文件的末尾追加日志。 如果未指定文件，则使用上次指定的文件。 如果不存在以前的文件，则创建名称为 cmdline.log 的默认日志文件。  
   
@@ -70,7 +71,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 >Tools.LogCommandWindowOutput /on  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   

@@ -21,11 +21,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9be05b63169d155f7e1662112ca119422ddbc1a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ca5caa822108d5a6417e69f827e1ba754b0d105
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单进行签名
 如果想要通过使用 ClickOnce 部署发布应用程序，则必须通过验证码技术使用公钥/私钥对应用程序和部署清单进行签名。 可以使用 Windows 证书存储或密钥文件中的证书对清单进行签名。  
@@ -108,7 +109,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  发布应用程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [具有强名称的程序集](/dotnet/framework/app-domains/strong-named-assemblies)   
  [如何：创建公钥/私钥对](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)   
  [“项目设计器”->“签名”页](../ide/reference/signing-page-project-designer.md)   

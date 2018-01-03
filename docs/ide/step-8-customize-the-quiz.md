@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7a4481f9a13d6807abc42b938670a05bd0dda50b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0608434ef7ecd528b6ecd5f74c0612994d471f41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-8-customize-the-quiz"></a>步骤 8：自定义测验
 在本教程的最后一部分中，您将了解一些自定义测验和扩展所学内容的方式。 例如，可考虑程序如何创建一个答案永不为分数的随机除法问题。 若要了解详细信息，请将 `timeLabel` 控件更改为其他颜色，并为测验者提供提示。  

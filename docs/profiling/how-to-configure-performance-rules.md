@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b1b5ac88e920a2bf684075bd89c7d1ddbec6904
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c9b389f570a1dd0a16fb4266268be953433aaa1e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-performance-rules"></a>如何：配置性能规则
 Visual Studio 分析工具的性能警告指示所分析应用程序中可能会减慢程序执行的问题。 警告还可指示可能需要更改收集方法才能收集更多有用的数据。 系统会在分析会话中自动生成性能警告，并且在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 中打开分析数据文件时，警告将显示在**错误列表**窗口中。 某些警告可能不适用于你感兴趣的某些方案，而某些警告则可能属于误报。 可以配置性能警告以显示或隐藏特定的警告。  

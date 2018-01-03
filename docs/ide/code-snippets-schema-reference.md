@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippets-schema-reference"></a>代码段架构参考
 IntelliSense 代码段是预编写的代码段，你可以随时使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将这些代码段插入到你的应用程序中。 可以通过提供代码段来减少键入重复代码或搜索示例所用的时间，从而提高工作效率。 可以使用 IntelliSense 代码段 XML 架构创建自己的代码段，并将它们添加到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 已包含的代码段中。  
@@ -67,7 +68,7 @@ IntelliSense 代码段是预编写的代码段，你可以随时使用 [!INCLUDE
 </Author>    
 ```  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|包含有关代码段的常规信息。|  
   
@@ -122,7 +123,7 @@ $selected$ is a great color. I love $selected$.
 
 - **语言**  -  该必选属性用于指定代码片段的语言。 值可以是下列任一值：
 
-   |值|描述|  
+   |“值”|描述|  
    |-----|-----------|  
    |`VB`|标识 Visual Basic 代码段。|  
    |`CSharp`|标识 C# 代码段。|  
@@ -134,7 +135,7 @@ $selected$ is a great color. I love $selected$.
  
 - **类型**  -  该可选属性用于指定代码片段包含的代码的类型，以及编译代码片段时代码片段必须插入的位置。 值可以是下列任一值：
 
-   |值|描述|  
+   |“值”|描述|  
    |-----|-----------|  
    |`method body`|指定代码段为方法体，因此必须插入到方法声明中。|  
    |`method decl`|指定代码段为方法，因此必须插入到类或模块中。|  
@@ -163,7 +164,7 @@ $selected$ is a great color. I love $selected$.
 |---------------|-----------------|  
 |`Format`|必需的特性。 指定代码段的架构版本。 Format 特性必须是语法为 x.x.x 的字符串，其中每个“x”表示版本号的数值。 Visual Studio 将忽略具有它不理解的 `Format` 特性的代码段。|  
   
-|子元素|说明|  
+|子元素|描述|  
 |-------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|必需的元素。 包含有关代码段的常规信息。 代码段中必须有且仅有一个 `Header` 元素。|  
 |[Snippet 元素](../ide/code-snippets-schema-reference.md#snippet)|必需的元素。 包含将由 Visual Studio 插入的代码。 代码段中必须有且仅有一个 `Snippet` 元素。|  
@@ -229,7 +230,7 @@ $selected$ is a great color. I love $selected$.
 </Description>  
 ```  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|包含有关代码段的常规信息。|  
   
@@ -269,7 +270,7 @@ $selected$ is a great color. I love $selected$.
 </Header>  
 ```  
   
-|子元素|说明|  
+|子元素|描述|  
 |-------------------|-----------------|  
 |[Author 元素](../ide/code-snippets-schema-reference.md#author)|可选元素。 编写代码段的人员或公司的姓名或名称。 `Author` 元素中可能有零个或一个 `Header` 元素。|  
 |[Description 元素](../ide/code-snippets-schema-reference.md#description)|可选元素。 代码段说明。 `Description` 元素中可能有零个或一个 `Header` 元素。|  
@@ -295,7 +296,7 @@ $selected$ is a great color. I love $selected$.
 </HelpUrl>  
 ```  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|包含有关代码段的常规信息。|  
   
@@ -329,11 +330,11 @@ $selected$ is a great color. I love $selected$.
 </Import>  
 ```  
   
-|子元素|说明|  
+|子元素|描述|  
 |-------------------|-----------------|  
 |[Namespace 元素](../ide/code-snippets-schema-reference.md#namespace)|必需的元素。 指定代码段使用的命名空间。 `Namespace` 元素中必须有且仅有一个 `Import` 元素。|  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[Imports 元素](../ide/code-snippets-schema-reference.md#imports)|对 **Import** 元素进行分组。|  
   
@@ -349,7 +350,7 @@ $selected$ is a great color. I love $selected$.
 <Imports>  
 ```  
   
-|子元素|说明|  
+|子元素|描述|  
 |-------------------|-----------------|  
 |[Import 元素](../ide/code-snippets-schema-reference.md#import)|可选元素。 包含代码段的导入命名空间。 `Imports` 元素中可能有零个或零个以上的 **Import** 元素。|  
   
@@ -382,11 +383,11 @@ $selected$ is a great color. I love $selected$.
 <Keywords>  
 ```  
   
-|子元素|说明|  
+|子元素|描述|  
 |-------------------|-----------------|  
 |[Keyword 元素](../ide/code-snippets-schema-reference.md#keyword)|可选元素。 包含代码段的各个关键字。 `Keyword` 元素中可能有零个或零个以上的 `Keywords` 元素。|  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|包含有关代码段的常规信息。|  
   
@@ -415,7 +416,7 @@ $selected$ is a great color. I love $selected$.
 |[ID 元素](../ide/code-snippets-schema-reference.md#id)|必需的元素。 指定文本的唯一标识符。 `ID` 元素中必须有且仅有一个 `Literal` 元素。|  
 |[ToolTip 元素](../ide/code-snippets-schema-reference.md#tooltip)|可选元素。 描述文本的预期值和用法。 `Literal` 元素中可能有零个或一个 **Tooltip** 元素。|  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[Declarations 元素](../ide/code-snippets-schema-reference.md#declarations)|包含代码段的可编辑文本和对象。|  
   
@@ -462,7 +463,7 @@ $selected$ is a great color. I love $selected$.
 |[ToolTip 元素](../ide/code-snippets-schema-reference.md#tooltip)|可选元素。 描述文本的预期值和用法。 `Literal` 元素中可能有零个或一个 **Tooltip** 元素。|  
 |[Type 元素](../ide/code-snippets-schema-reference.md#type)|必需的元素。 指定对象的类型。 `Type` 元素中必须有且仅有一个 `Object` 元素。|  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[Declarations 元素](../ide/code-snippets-schema-reference.md#declarations)|包含代码段的可编辑文本和对象。|  
   
@@ -476,12 +477,12 @@ $selected$ is a great color. I love $selected$.
 </Reference>  
 ```  
   
-|子元素|说明|  
+|子元素|描述|  
 |-------------------|-----------------|  
 |[Assembly 元素](../ide/code-snippets-schema-reference.md#assembly)|必需的元素。 包含代码段引用的程序集的名称。 `Assembly` 元素中必须有且仅有一个 `Reference` 元素。|  
 |[Url 元素](../ide/code-snippets-schema-reference.md#url)|可选元素。 包含一个提供有关所引用程序集的详细信息的 URL。 `Url` 元素中可能有零个或一个 `Reference` 元素。|  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[References 元素](../ide/code-snippets-schema-reference.md#references)|对 `Reference` 元素进行分组。|  
   
@@ -494,7 +495,7 @@ $selected$ is a great color. I love $selected$.
 </References>  
 ```  
   
-|子元素|说明|  
+|子元素|描述|  
 |-------------------|-----------------|  
 |[Reference 元素](../ide/code-snippets-schema-reference.md#reference)|可选元素。 包含有关代码段的程序集引用的信息。 `Reference` 元素中可能有零个或零个以上的 `References` 元素。|  
   
@@ -514,7 +515,7 @@ $selected$ is a great color. I love $selected$.
 </Shortcut>  
 ```  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|包含有关代码段的常规信息。|  
   
@@ -532,7 +533,7 @@ $selected$ is a great color. I love $selected$.
 </Snippet>    
 ```  
   
-|子元素|说明|  
+|子元素|描述|  
 |-------------------|-----------------|  
 |[Code 元素](../ide/code-snippets-schema-reference.md#code)|必需的元素。 指定要插入到文档文件中的代码。 `Code` 元素中必须有且仅有一个 `Snippet` 元素。|  
 |[Declarations 元素](../ide/code-snippets-schema-reference.md#declarations)|可选元素。 指定作为某个代码段组成部分的文本和对象，你可以对该代码段进行编辑。 `Declarations` 元素中可能有零个或一个 `Snippet` 元素。|  
@@ -552,7 +553,7 @@ $selected$ is a great color. I love $selected$.
 <SnippetType>  
 ```  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[SnippetTypes 元素](../ide/code-snippets-schema-reference.md#snippettypes)|对 `SnippetType` 元素进行分组。|  
   
@@ -574,11 +575,11 @@ $selected$ is a great color. I love $selected$.
 <SnippetTypes>  
 ```  
   
-|子元素|说明|  
+|子元素|描述|  
 |-------------------|-----------------|  
 |[SnippetType 元素](../ide/code-snippets-schema-reference.md#snippettype)|可选元素。 指定 Visual Studio 如何将代码段插入到代码中。 `SnippetType` 元素中可能有零个或零个以上的 `SnippetTypes` 元素。|  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|指定有关代码段的常规信息。|  
   
@@ -591,7 +592,7 @@ $selected$ is a great color. I love $selected$.
 <Title>  
 ```  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|指定有关代码段的常规信息。|  
   
@@ -622,7 +623,7 @@ $selected$ is a great color. I love $selected$.
 </Type>  
 ```  
   
-|父元素|说明|  
+|父元素|描述|  
 |--------------------|-----------------|  
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|定义代码段的可编辑对象字段。|  
   
@@ -646,6 +647,6 @@ $selected$ is a great color. I love $selected$.
   
  需要一个文本值。 此文本指定包含有关所引用程序集的详细信息的 URL。 在无法向项目添加引用时将显示此 URL。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [代码片段](../ide/code-snippets.md)   
  [演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)

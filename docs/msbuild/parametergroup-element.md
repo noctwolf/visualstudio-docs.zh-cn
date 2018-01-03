@@ -20,11 +20,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 49da59387ccd3c7367e06c91fc7f57b824e32ab5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5ec46e5d6aea28a4124447c0f541cfb71e2f62f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 元素
 包含一系列可选参数，这些参数将显示在通过使用 `UsingTask``TaskFactory` 生成的任务上。 有关详细信息，请参阅 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
@@ -47,13 +48,13 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Parameter](../msbuild/parameter-element.md)|包含某个任务的特定参数信息，该任务可通过使用 `UsingTask``TaskFactory` 生成。 元素的名称就是该参数的名称。|  
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|提供在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中注册任务的方法。 项目中可能有零个或零个以上的 `UsingTask` 元素。|  
 
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
 </UsingTask>  
 ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)

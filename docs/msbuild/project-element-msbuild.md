@@ -22,11 +22,12 @@ caps.latest.revision: "31"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 013b8d0f23ad91eb6202f1ca72c36e486b0f53e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7735cce0a03f31c98cc45b481b8697d306f63f4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-element-msbuild"></a>Project 元素 (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|可选元素。<br /><br /> 评估子元素，选择一组 `ItemGroup` 元素和/或 `PropertyGroup` 元素进行评估。|  
 |[Import](../msbuild/import-element-msbuild.md)|可选元素。<br /><br /> 启用项目文件，导入另一项目文件。 项目中可能有零个或零个以上的 `Import` 元素。|  
@@ -78,7 +79,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="parent-elements"></a>父元素  
  无。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：指定首先生成的目标](../msbuild/how-to-specify-which-target-to-build-first.md)   
  [命令行参考](../msbuild/msbuild-command-line-reference.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   

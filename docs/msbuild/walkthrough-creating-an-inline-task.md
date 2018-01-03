@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 1f10be3f7c021c353851039a7e7d07a250aa83a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c1f05d94cb836c065597c4c646fd6a74aaff97f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>演练：创建内联任务
 通常，MSBuild 任务通过编译实现 <xref:Microsoft.Build.Framework.ITask> 接口的类进行创建。 从 .NET Framework 版本 4 开始，可以在项目文件中创建内联任务。 无需创建单独的程序集来承载该任务。 有关详细信息，请参阅[内联任务](../msbuild/msbuild-inline-tasks.md)。  
@@ -253,7 +254,7 @@ ms.lasthandoff: 10/31/2017
   
  `</Code>`  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [内联任务](../msbuild/msbuild-inline-tasks.md)   
  [任务](../msbuild/msbuild-tasks.md)   
  [目标](../msbuild/msbuild-targets.md)

@@ -13,18 +13,19 @@ caps.latest.revision: "35"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a306f7cda287e41efc0cb59cf5a75c7111d32c39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bec7bd5420c16d291db2566e86dd47ba986cca37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-items"></a>MSBuild 项
 MSBuild 项是生成系统的输入，通常表示文件。 根据项元素名称，将其组成不同的项类型。 项类型是项的命名列表，可用作任务参数。 任务使用项值来执行生成过程。  
   
  由于项是根据其所属项类型命名，因此术语“项”和“项值”可互换使用。  
   
- **主题内容**  
+ **在本主题中**  
   
 -   [在项目文件中创建项](#BKMK_Creating1)  
   
@@ -353,7 +354,7 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)   

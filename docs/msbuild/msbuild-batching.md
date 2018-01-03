@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e2ad60b0b0f98cee23de911a8ca7cf2e5d43b364
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 68977ca672aae84cd65ca169c4ca13feda6d7887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-batching"></a>MSBuild 批处理
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够基于项元数据将项列表划分为不同类别或批，并对每批运行一次目标或任务。  
@@ -88,13 +89,13 @@ ms.lasthandoff: 10/31/2017
  有关目标批处理的另一个示例，请参阅[目标批处理中的项元数据](../msbuild/item-metadata-in-target-batching.md)。  
   
 ## <a name="property-functions-using-metadata"></a>使用元数据的属性函数  
- 可通过包括元数据的属性函数控制批处理。 例如，  
+ 可通过包括元数据的属性函数控制批处理。 例如，应用于对象的  
   
  `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`  
   
  使用 <xref:System.IO.Path.Combine%2A> 合并根文件夹路径与编译项路径。  
   
- 属性函数可能不会出现在元数据值内。  例如，  
+ 属性函数可能不会出现在元数据值内。  例如，应用于对象的  
   
  `%(Compile.FullPath.Substring(0,3))`  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
   
  有关属性函数详细信息，请参阅[属性函数](../msbuild/property-functions.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ItemMetadata 元素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)   

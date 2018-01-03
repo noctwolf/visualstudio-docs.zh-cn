@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb5030a6f70851e46ab7d8df081cfe94ed35c2c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6f01347eb3410940f96a4ac966cf4f5e466ed964
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window"></a>属性窗口
 使用此窗口可查看和更改编辑器和设计器中选中对象的设计时属性和事件。 还可以使用“属性”窗口编辑和查看文件、项目和解决方案属性。 可以在“视图”菜单上找到“属性”窗口。 可以按 F4 打开它，也可以在“快速启动”窗口中键入“属性”打开。  
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/31/2017
  搜索  
  在设计器中编辑 XAML 文件时提供属性和事件的搜索函数。 搜索框对应于部分单词搜索并在键入时更新搜索结果。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项目属性引用](../../ide/reference/project-properties-reference.md)   
  [自定义窗口布局](../../ide/customizing-window-layouts-in-visual-studio.md)

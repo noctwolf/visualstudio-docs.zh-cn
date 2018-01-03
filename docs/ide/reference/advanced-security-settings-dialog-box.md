@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 06ca9ec7fc3c084ce503ba0900d10eb2b68f4349
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff3f23af3bf9358f47251a7ea45082f5508349b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-security-settings-dialog-box"></a>“高级安全设置”对话框
 可通过此对话框指定在区域中进行调试涉及的安全设置。  
@@ -39,5 +40,5 @@ ms.lasthandoff: 10/31/2017
  调试此应用程序，就如同它是从以下 URL 位置下载的一样  
  如果需要允许应用程序访问在“发布”页上指定的“安装 URL”所对应的网站或服务器共享，请在此键入该 URL。 此选项仅在选中“授予应用程序对其源站点的访问权限”时可用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“项目设计器”->“安全”页](../../ide/reference/security-page-project-designer.md)

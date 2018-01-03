@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e66566160f458a34c069d1025f9bab311a2f5ec
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 4131bfc5bd361e4d2ac4aeca0c4f7003f975d462
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>使用采样收集性能统计信息
 默认情况下，[!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] 分析工具采样法收集每 10,000,000 个处理器周期（近似为 1 GHz 计算机上的每百分之一秒）的分析信息。 采样方法可用于查找处理器利用率问题，也是启动最多性能调查时建议采用的方法。  

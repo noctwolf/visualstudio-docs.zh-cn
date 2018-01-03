@@ -16,11 +16,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: "21"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 32cab11dd909fc8b60134ebff0d5f37c0b14dcd6
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: dfb7d875c922b8ed9e86ae05e2d129bc21a3ea8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-uwp-apps"></a>演练：创建并运行 UWP 应用的单元测试
 Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用进行单元测试，并包括 Visual C#、Visual Basic 和 Visual C++ 的单元测试库模板。  
@@ -40,7 +41,7 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../debugger/includ
   
  以下过程描述为托管的 Windows 8 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用创建、运行和调试单元测试的步骤。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  Visual Studio  
   
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> 创建单元测试项目  
@@ -147,6 +148,6 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../debugger/includ
 ### <a name="msdn-library"></a>MSDN Library  
  [MSDN Library - 为现有代码创建和运行单元测试 (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Visual Studio 测试 UWP 应用](../test/testing-store-apps-with-visual-studio.md)   
  [使用 Team Foundation Build 生成并测试 UWP 应用](http://msdn.microsoft.com/Library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

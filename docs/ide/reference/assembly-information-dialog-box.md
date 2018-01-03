@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bf115cdf81acbadab719eff5a19905c59832af8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: febf90633994dd825bd6ce84de8ecdc97d469e84
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assembly-information-dialog-box"></a>“程序集信息”对话框
 “程序集信息”对话框用于指定 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 全局程序集特性的值，这些特性存储为你的项目自动创建的 AssemblyInfo 文件中。 在“解决方案资源管理器”中，对于 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]，此文件位于“我的项目”节点中（单击“显示所有文件”可以查看它）；对于 **，此文件位于“属性”**[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]下。 有关程序集特性的详细信息，请参阅[特性](http://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  **标题**  
  指定程序集清单的标题。 对应到 <xref:System.Reflection.AssemblyTitleAttribute>。  
   
- **描述**  
+ **说明**  
  指定程序集清单的可选描述。 对应到 <xref:System.Reflection.AssemblyDescriptionAttribute>。  
   
  **公司**  
@@ -59,6 +60,6 @@ ms.lasthandoff: 10/31/2017
  **使程序集 COM 可见**  
  指定程序集中的类型是否可由 COM 使用。 对应到 <xref:System.Runtime.InteropServices.ComVisibleAttribute>。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [应用程序页、项目设计器 (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)   
  [特性](http://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

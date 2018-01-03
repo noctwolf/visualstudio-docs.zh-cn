@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a90e55a60c9451229fd767dac6a8aaa0e2a2e224
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dfc526651c92dd4d7ed8c93cc228fd3e75f2b3b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>如何：生成并运行 LinqToXmlDataBinding 示例
 本主题演示如何创建和生成 LinqToXmlDataBinding Visual Studio 项目以及如何运行生成的 LinqToXmlDataBinding Windows Presentation Foundation (WPF) 示例程序。  
@@ -76,7 +77,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  使用键盘编辑值。 只要任一 <xref:System.Windows.Controls.TextBox> 控件失去焦点，更改就会自动传播到 XML 源和书籍列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 LINQ to XML 的 WPF 数据绑定示例](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
  [演练：LinqToXmlDataBinding 示例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [Visual Studio 中的应用程序开发](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)

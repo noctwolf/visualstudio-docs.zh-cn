@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15b9963d10a2a51d34ef3a426ac7a2aba17c2430
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c6466db86c8c27f660fd5a5755f30372efdc7f6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="memory-and-paging-performance-rules"></a>内存和分页性能规则
 内存和分页类别中的性能规则确定在分析运行期间能影响应用程序性能和响应能力的分页活动。  

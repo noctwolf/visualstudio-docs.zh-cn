@@ -11,11 +11,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: "15"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: c52ce6556ae8937dd26c1be16cfaf1a4b05b1c74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4344c844c47568c3c23744a890c202493704b6a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>快速入门：通过测试资源管理器进行测试驱动开发
 我们建议你创建单元测试来帮助保持你的代码在众多递进式开发步骤中正确运行。 你可以使用几个框架来编写单元测试，包括第三方开发的一些框架。 某些测试框架专用于不同语言或平台中的测试。 “测试资源管理器”为其中任意框架中的单元测试提供了一个接口。 大多数常用框架都有适配器，你可以为其他框架编写自己的适配器。  

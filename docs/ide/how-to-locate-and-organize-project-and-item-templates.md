@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1846b145833a7474e8662442313d0e39a262e67c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e4f3388d7484021bd4c12e4a7273b312190bd6dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：查找和组织项目模板和项模板
 必须将模板文件放置在 Visual Studio 能够识别的位置，这样“新建项目”和“添加新项”对话框中才会显示这些模板。 可以为模板创建自定义子类别，以使用户界面中也显示这些子类别。  
@@ -172,7 +173,7 @@ ms.lasthandoff: 10/31/2017
 
 8.  将新的 .zip 文件放入曾容纳已删除 .zip 文件的目录。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义模板](../ide/customizing-project-and-item-templates.md)   
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp（Visual Studio 模板）](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   

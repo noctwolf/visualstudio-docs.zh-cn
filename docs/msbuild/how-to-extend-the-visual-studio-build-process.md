@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a87b97946e3b0c45b00bdfe00a4da23c266605c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bebac9ca310230fa0b5d63ce56a8caa6b524a145
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：扩展 Visual Studio 生成过程
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程由导入到项目文件中的一系列 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 文件定义。 可扩展其中一个导入文件 Microsoft.Common.targets，以便在生成过程中的几个点上运行自定义任务。 本主题介绍两种可用于扩展 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程的方法：  
@@ -125,7 +126,7 @@ ms.lasthandoff: 10/31/2017
 |`CleanDependsOn`|在要从自定义生成过程中清理输出的情况下，要重写的属性。|  
 |`CompileDependsOn`|在要在编译步骤之前或之后插入自定义过程的情况下，要重写的属性。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 集成](../msbuild/visual-studio-integration-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [.Targets 文件](../msbuild/msbuild-dot-targets-files.md)
