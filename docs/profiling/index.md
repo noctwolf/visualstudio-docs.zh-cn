@@ -3,11 +3,11 @@ layout: LandingPage
 title: "使用 Visual Studio 分析应用 | Microsoft Docs"
 description: "了解如何使用 Visual Studio 2017 并以你喜欢的语言来分析应用程序、服务和工具的性能。"
 ms.technology: vs-ide-debug
-ms.openlocfilehash: e671683cf0ea257bf6170a3c2e41b8d0db503450
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 763740cd5f0f7e6da935dfd92418067f12a204c2
+ms.sourcegitcommit: 8dfdbe6dc01331c811707be2057b65c0b1f67e40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="profiling-in-visual-studio"></a>Visual Studio 中的分析
 
@@ -151,7 +151,7 @@ ms.lasthandoff: 12/14/2017
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>分析能量使用情况（应用商店应用）</h3>
+                        <h3>分析能量使用（UWP 应用）</h3>
                     </div>
                 </div>
             </div>
