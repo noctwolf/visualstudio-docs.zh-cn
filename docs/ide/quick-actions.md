@@ -13,11 +13,12 @@ manager: ghogen
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e9196f3e4bc76e53d50bc480b8e0860186fe778e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 5d60fa62ee23ef942a6ef3ec20b7840374a33149
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-actions"></a>快速操作
 
@@ -56,7 +57,7 @@ ms.lasthandoff: 12/07/2017
 | ------- | -------------------- | ----------------  |
 | CS0103、BC30002 | C# 和 Visual Basic | Visual Studio 2015 Update 2 |
 
-如果在 Visual Studio 中意外拼错类型或关键字，此快速操作会自动更正拼写错误。 灯泡菜单中会显示“将‘拼写错误的单词’**更改为‘正确单词’”****这些项。  例如: 
+如果在 Visual Studio 中意外拼错类型或关键字，此快速操作会自动更正拼写错误。 灯泡菜单中会显示 **“将* ‘拼写错误的单词’*更改为 *‘正确单词’*”**这些项。  例如:
 
 ```csharp
 // Before

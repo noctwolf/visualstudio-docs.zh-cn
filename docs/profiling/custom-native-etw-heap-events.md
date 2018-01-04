@@ -13,11 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 dev_langs: C++
-ms.openlocfilehash: 10d4ab630132d8ce4191978de669436ca7ba5852
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 360efc2b185e6485b2bb08d5d8d0b09a128099d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-native-etw-heap-events"></a>自定义本机 ETW 堆事件
 
@@ -63,7 +64,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. 将 `__declspec(allocator)` 装饰器添加到自定义堆管理器的任何函数中，该函数向新分配的堆内存返回指针。  使用此装饰器可正确标识将返回的内存类型。  例如: 
+1. 将 `__declspec(allocator)` 装饰器添加到自定义堆管理器的任何函数中，该函数向新分配的堆内存返回指针。  使用此装饰器可正确标识将返回的内存类型。  例如:
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
@@ -155,8 +156,8 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 [如](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)文档中所述，与标准的 Windows 堆一样，你还可使用此工具比较快照，并查找自定义堆中的泄漏和损坏。
 
 > [!TIP]
-> Visual Studio 在**性能分析**工具集中还包含**内存使用量**工具，可在**“调试”>“性能探查器”**菜单选项或通过 **Alt+F2** 键盘组合启用该工具。  此功能不包含堆跟踪，并且不会按如下所述显示你的自定义堆。  只有“诊断工具”窗口包含此功能，可以使用启用“调试”>“Windows”>“显示诊断工具”菜单或 **Ctrl+Alt+F2** 键盘组合来启用此窗口。
+> Visual Studio 在**性能分析**工具集中还包含**内存使用量**工具，可在“调试”>“性能探查器”菜单选项或通过 **Alt+F2** 键盘组合启用该工具。  此功能不包含堆跟踪，并且不会按如下所述显示你的自定义堆。  只有“诊断工具”窗口包含此功能，可以使用启用“调试”>“Windows”>“显示诊断工具”菜单或 **Ctrl+Alt+F2** 键盘组合来启用此窗口。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [分析工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
 [内存使用率](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
