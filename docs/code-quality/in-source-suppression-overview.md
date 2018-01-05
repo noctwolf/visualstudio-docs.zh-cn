@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f35833df8e84a4e4caba8fd46f8daea8dd5119a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92babbf3c7a5863d178463b69525bdb722bf28ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="in-source-suppression-overview"></a>“源代码中禁止显示”概述
 在源代码中禁止显示是能够禁止显示或忽略托管代码中的代码分析冲突通过添加**SuppressMessage**属性设为导致冲突的代码段。 **SuppressMessage**属性是它仅当在编译时定义 CODE_ANALYSIS 编译符号，托管的代码程序集的 IL 元数据中包括条件属性。  
@@ -79,11 +80,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="suppressmessage-usage"></a>SuppressMessage 使用情况  
  在向其级别取消代码分析警告的实例**SuppressMessage**应用特性。 这样做的目的是紧密耦合对代码的禁止显示信息发生了冲突。  
   
- 禁止显示的一般形式包括规则类别和其中包含的可选的用户可读表示形式的规则名称的规则标识符。 例如，  
+ 禁止显示的一般形式包括规则类别和其中包含的可选的用户可读表示形式的规则名称的规则标识符。 例如，应用于对象的  
   
  `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`  
   
- 如果有尽量减少在源代码中禁止显示元数据的严格性能原因，可以省略规则名称本身。规则类别和其规则 ID 一起构成足够唯一的规则标识符。 例如，  
+ 如果有尽量减少在源代码中禁止显示元数据的严格性能原因，可以省略规则名称本身。规则类别和其规则 ID 一起构成足够唯一的规则标识符。 例如，应用于对象的  
   
  `[SuppressMessage("Microsoft.Design", "CA1039")]`  
   
@@ -123,5 +124,5 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="global-suppression-file"></a>全局禁止显示文件  
  全局禁止显示文件维护全局级禁止显示或不指定目标的禁止显示。 例如，程序集级冲突的禁止显示存储在此文件。 此外，某些 ASP.NET 禁止显示功能存储在此文件中，是因为项目级别设置不可用于窗体背后的代码。 全局禁止显示被创建并添加到你的项目选择的第一个时间**在项目禁止显示文件**选项**禁止显示消息**命令，在错误列表窗口。 有关详细信息，请参阅[如何： 通过使用菜单项禁止显示警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Diagnostics.CodeAnalysis>

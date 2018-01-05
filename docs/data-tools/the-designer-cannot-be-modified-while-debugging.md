@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 5309ce8676723b712790f061771e6d965a73ae21
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 35e0f7e8b84c5f2ea38b9f5871393955795faa2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>调试时无法修改设计器
 当应用程序以调试模式运行时，如果试图对 O/R 设计器中的项进行修改，则会出现此消息。 当应用程序以调试模式运行时，O/R 设计器是只读的。  
@@ -28,5 +29,5 @@ ms.lasthandoff: 11/09/2017
      应用程序将停止调试，从而可以对 O/R 设计器中的项进行修改。  
   
 ## <a name="see-also"></a>请参阅
-[O/R 设计器消息](../data-tools/o-r-designer-messages.md)  
+[O-R 设计器消息](../data-tools/o-r-designer-messages.md)  
 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

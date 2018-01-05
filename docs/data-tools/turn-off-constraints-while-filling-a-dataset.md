@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 29b24794c74f2bd042845384d72a3716506d5e2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 88c8687511dd600802cc7c6ecdc12f0827fd7f6f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>在填充数据集时关闭约束
 如果数据集包含约束 （如外键约束），则它们可以引发顺序对数据集执行的操作相关的错误。 例如，加载子记录之前加载相关的父记录可以违反约束，并会导致错误。 一旦加载子记录时，约束检查相关的父记录，并引发错误。  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
   
 2.  在**属性**窗口中，设置<xref:System.Data.DataSet.EnforceConstraints%2A>属性`false`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [通过使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)   
  [数据集中的关系](../data-tools/relationships-in-datasets.md)

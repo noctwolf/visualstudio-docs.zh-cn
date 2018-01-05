@@ -18,11 +18,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4836bdb470bf993bdc6f2b8f581859030016600
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 206d93d748a1d1033df48f9156997bd37b27f482
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>针对 C# 使用 Visual Studio 开发环境 #
 Visual Studio 集成的开发环境 (IDE) 是通过常用用户界面公开的开发工具的集合。 有些工具是与其他 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 语言共享的，还有一些工具（如 C# 编译器）是 Visual C# 特有的。 本主题提供指向最重要的 Visual C# 工具的链接。  
@@ -31,7 +32,7 @@ Visual Studio 集成的开发环境 (IDE) 是通过常用用户界面公开的�
   
 |标题|描述|  
 |-----------|-----------------|  
-|[演练： 创建简单的应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|概述了 Visual Studio 中包含的用于应用程序开发的许多功能和工具。|  
+|[演练：创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|概述了 Visual Studio 中包含的用于应用程序开发的许多功能和工具。|  
 |[创建解决方案和项目](../ide/creating-solutions-and-projects.md)|描述如何创建一个项目，其中包含所有源代码文件、资源文件（例如图标）、对外部文件的引用，以及配置数据（例如编译器设置）。|  
 |[编写代码](../ide/writing-code-in-the-code-and-text-editor.md)|描述一些 Visual Studio 工具，这些工具可帮助你修改和操作文本、代码和标记，插入和配置控件、其他对象和命名空间，以及添加对外部组件和资源的引用。|  
 |[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)|提供一些链接，这些主题描述 Visual C# 的特定功能，例如自动代码生成和 IntelliSense 用于最近使用过的成员。|  
@@ -47,7 +48,7 @@ Visual Studio 集成的开发环境 (IDE) 是通过常用用户界面公开的�
 |[管理应用程序资源 (.NET)](../ide/managing-application-resources-dotnet.md)|演示如何添加或编辑项目的资源，例如字符串、图像、图标、音频和文件。|  
 |[Dotfuscator 社区版 (CE)](../ide/dotfuscator/index.md)|说明如何设置和开始使用免费的 PreEmptive Protection - Dotfuscator Community Edition，以保护 .NET 程序集免受反向工程威胁和未经授权的使用（如未经授权的调试）。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C#](/dotnet/csharp/csharp)   
  [C# 入门](/dotnet/csharp/getting-started/getting-started-with-csharp)   
  [C# 参考](/dotnet/csharp/language-reference/index)

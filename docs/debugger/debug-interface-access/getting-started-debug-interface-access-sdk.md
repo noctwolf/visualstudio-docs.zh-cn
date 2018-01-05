@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 938aaf760a2a6305580331945875391e6ad819af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d37843917be3a2668e9a2887f046eaee00600dc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>入门（调试接口访问 SDK）
 调试接口访问 (DIA) SDK 向你提供指导文档和示例，说明了如何使用 DIA API。 使用的接口和方法在 DIA SDK 开发自定义应用程序打开的.pdb 和.dbg 文件并搜索其内容实现符号、 值、 属性、 地址和其他调试信息。 此 SDK 还提供了与在 c + + 应用程序中找到的符号关联的属性引用表。  
@@ -50,5 +51,5 @@ ms.lasthandoff: 10/31/2017
  [查询 .Pdb 文件](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
  有关如何使用 DIA API 来查询.pdb 文件提供分步说明。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试接口访问 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

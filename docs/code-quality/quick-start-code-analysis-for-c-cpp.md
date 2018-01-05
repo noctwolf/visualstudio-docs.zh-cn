@@ -15,16 +15,17 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 33080a55043f9c88fa8e44a71a863e3a62ab3a1b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 5fe47a5e0bb2eb8c2002c8a516ef10aa81aa0e58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>快速入门：C/C++ 代码分析
 可以通过常规地运行C 或 C++ 代码的代码分析以提高应用程序的质量。 这可帮助你查找常见问题、良好编程习惯的违例，或者很难通过测试发现的缺陷。 代码分析警告与编译器错误和警告不同，因为代码分析查找那些有效但可能仍会给你和使用你的代码的其他人带来问题的特定代码模式。  
   
-## <a name="in-this-topic"></a>主题内容  
+## <a name="in-this-topic"></a>在本主题中  
   
 -   [配置项目的规则集](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_ConfigureRuleSets)  
   

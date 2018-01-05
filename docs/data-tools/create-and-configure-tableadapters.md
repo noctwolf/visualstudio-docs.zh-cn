@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 11086ba17f3f2fb7af99d76b3efadece4a23c426
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 3c9b501b78a82a94b81b2a29c86fd07a7a0d7f98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-and-configure-tableadapters"></a>创建和配置 Tableadapter
 Tableadapter 提供你的应用程序和数据库之间的通信。 它们连接到数据库、 运行的查询或存储的过程，并返回新的数据的表或填充现有<xref:System.Data.DataTable>与返回的数据。 Tableadapter 还可以从回数据库应用程序发送更新的数据。  

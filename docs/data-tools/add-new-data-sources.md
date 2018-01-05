@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0c83367d383ab72194e5f83609b0f93d8602fdcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 865f575aefedb5813a72d7a0bb2024bc85313db0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-new-data-sources"></a>添加新数据源
 在 Visual Studio 中的.NET data tools 的上下文中术语*数据源*指连接到数据存储和公开到.NET 应用程序的数据的.NET 对象。 Visual Studio 设计器可以使用数据源生成将数据绑定到窗体中，当拖放中的数据库对象的样板文件代码的输出**数据源**窗口。 此类数据源可以是：  
@@ -96,5 +97,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="data-source-for-a-sharepoint-list"></a>SharePoint 列表的数据源  
  你可以从 SharePoint 列表创建数据源，通过运行**数据源配置向导**并选择**SharePoint**数据源类型。 SharePoint 将数据通过公开[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，因此创建 SharePoint 数据源是从服务中创建数据源相同。 选择**SharePoint**中项**数据源配置向导**打开**添加服务引用**对话框中，连接到 SharePoint 数据服务的位置通过指向 SharePoint 服务器。  这要求 SharePoint SDK。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [适用于 NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

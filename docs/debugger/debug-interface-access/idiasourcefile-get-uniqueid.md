@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d7a01aafad5349cf3da6957f39130639de34b58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c47066b647bfb0bfa89714ca14d16e34f67d6af0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
 检索一个简单的整数密钥值，对于此映像是唯一的。  
@@ -41,5 +42,5 @@ HRESULT get_uniqueId (
 ## <a name="remarks"></a>备注  
  而不是字符串可以加快行编号处理对键进行比较。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

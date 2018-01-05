@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5071d122534f73b18ebb1cfb674e8b15a2876504
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 40c3a112d77e7e00d95aaa92a77a3b6739c96293
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>调试 WebView 控件中的 UWP 应用
 ![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -86,5 +87,5 @@ ms.lasthandoff: 11/11/2017
   
 6.  查看并修改应用中的变量或使用控制台命令，如中所述[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)和[JavaScript 控制台命令](../debugger/javascript-console-commands.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

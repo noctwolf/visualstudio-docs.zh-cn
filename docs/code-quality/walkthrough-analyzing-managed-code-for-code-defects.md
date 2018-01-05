@@ -16,11 +16,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3dd0c93476e646895362b98c2f62b569d87ffe35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 6ea39704ea232fb304257b897087f0ae60d19c4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>演练：对托管代码进行代码缺陷分析
 在本演练中，你可以通过使用代码分析工具分析托管的项目进行代码缺陷。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
   
 -   分析和解决代码缺陷警告。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
   
 -   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]。  
   

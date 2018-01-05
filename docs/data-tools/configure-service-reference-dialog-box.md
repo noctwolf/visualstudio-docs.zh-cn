@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0826d241cc1f3741a35e635bc27dff1d69ad86af
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: ce1419882422ddc12fdb380601e908eed7e5c7ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-service-reference-dialog-box"></a>“配置服务引用”对话框
 **配置服务引用**对话框中，您可以配置的行为[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]服务。  
@@ -94,7 +95,7 @@ ms.lasthandoff: 12/12/2017
 > [!NOTE]
 >  **添加 Web 引用**按钮是时才可用**配置服务引用**对话框中将显示从**添加的服务引用对话框**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 
  [如何： 添加对 Web 服务的引用](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
  [Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/configure-service-reference-dialog-box.md)

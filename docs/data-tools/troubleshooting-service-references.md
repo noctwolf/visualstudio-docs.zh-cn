@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: e46c8bf778ff18ea25096e524716bcb44916f460
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: b57547aa9a5fa3c036a534c85cb55bb1749a421b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-service-references"></a>服务引用疑难解答
 本主题列出了你正在使用时可能发生的常见问题[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]或[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]中引用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -98,5 +99,5 @@ ms.lasthandoff: 10/31/2017
   
 4.  单击**确定**关闭**Internet 选项**对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57068ae8c3d6bb8f86b8a9b052f4d1e2f5fec2d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 740907b94611a0de4566260b5fd644048463178c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usage-warnings"></a>用法警告
 用法警告支持.NET Framework 的正确用法。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 |[CA2207：以内联方式初始化值类型的静态字段](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|某值类型声明了显式静态构造函数。 要修复与该规则的冲突，请在声明它时初始化所有静态数据并移除静态构造函数。|  
 |[CA2208：正确实例化参数异常](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|调用了异常类型 ArgumentException 或其派生类型的默认（无参数）构造函数，或者向异常类型 ArgumentException 或其派生类型的参数化构造函数传递了错误的字符串自变量。|  
 |[CA2211：非常量字段不应为可见](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|不是常数也不是只读字段的静态字段不是线程安全的。 对此类字段的访问必须严格控制，并需要高级编程技术来同步对类对象的访问。|  
-|[CA2212：不要使用 WebMethod 标记服务组件](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|继承自 System.EnterpriseServices.ServicedComponent 的类型中的方法被标有 System.Web.Services.WebMethodAttribute。 因为 WebMethodAttribute 和 ServicedComponent 方法在上下文和事务流方面的行为和要求有冲突，所以该方法的行为在某些情况下会不正确。|  
+|[CA2212：不要使用 WebMethod 标记服务组件](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|继承自 System.EnterpriseServices.ServicedComponent 的类型中的方法被标有 System.Web.Services.WebMethodAttribute。 因为 WebMethodAttribute 和 ServicedComponent 方法在上下文和事务流方面的行为和需求有冲突，所以该方法的行为在某些情况下会不正确。|  
 |[CA2213：应释放可释放的字段](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|实现 System.IDisposable 的类型声明了同样实现 IDisposable 的类型的字段。 字段的 Dispose 方法不由声明类型的 Dispose 方法调用。|  
 |[CA2214：不要在构造函数中调用可重写的方法](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|时构造函数调用虚方法，则可能不具有执行调用方法的实例的构造函数。|  
 |[CA2215：Dispose 方法应调用基类 Dispose](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|如果类型继承自可释放类型，则必须从它自己的 Dispose 方法中调用基类型的 Dispose 方法。|  

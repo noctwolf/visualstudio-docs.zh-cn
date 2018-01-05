@@ -12,11 +12,12 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: a6c32f906ca3edfa8afb27937f859d93c8428168
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: cplusplus
+ms.openlocfilehash: cadee7d9cae0c59333a034e6f0ea12049bf3853f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + 核心准则检查器
 C + + 核心准则所移动的一组准则、 规则和有关在 c + + 专家和设计器创建的 c + + 中对编码的最佳做法。 Visual Studio 当前支持 c + + 的这些规则作为其代码分析工具的一部分的子集。 核心原则检查器在 Visual Studio 2017，默认情况下已安装并且位于[可用作 Visual Studio 2015 的 NuGet 包](#vs2015_corecheck)。
@@ -63,7 +64,7 @@ int main()
   
 -   C26485 是规则 Bounds.3： 没有数组指针衰减。  
   
--   C26481 是规则 Bounds.1： 不要使用指针算法。 请改用 `span` 。  
+-   C26481 是规则 Bounds.1： 不要使用指针算法。 请改用 `span`。  
   
  如果 c + + 核心检查代码分析规则集已安装并启用编译此代码时前, 两个警告输出，但第三个将被取消。 下面是示例代码的生成输出：  
   
@@ -95,7 +96,7 @@ C + + 核心原则有可帮助你编写更好、 更安全的代码。 但是，
 
   - **键入规则**强制实施[键入配置文件的 c + + 核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)。
 
-  **Visual Studio 2017 版本 15.5**:
+  **Visual Studio 2017 版本 15.5**：
   - **类规则**重点放在正确使用特殊的方法和虚拟规范的几个规则。 这是建议用于检查的子集[类和类层次结构](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class)。 
   - **并发规则**捕获 badlyly 声明防护对象这一项规则。 有关详细信息请参阅[与并发相关准则](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency)。 
   - **声明规则**几个规则从[接口准则](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces)哪些专注于如何全局变量声明。  
@@ -247,6 +248,6 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
   
  NuGet 包添加其他 MSBuild *.targets*到你的项目启用代码分析时将调用你项目的文件。 这*.targets*文件将作为其他扩展的 c + + 核心检查规则添加到 Visual Studio 代码分析工具。 安装包时，你可以使用属性页对话框启用或禁用发布和试验性规则。  
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [Visual Studio c + + 核心检查参考](code-analysis-for-cpp-corecheck.md)。
   

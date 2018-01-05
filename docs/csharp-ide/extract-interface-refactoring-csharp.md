@@ -17,11 +17,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ed81f6f0fbcc2e72fd57d7706b051dcdf7bea75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e3e606a86f5989ca928e0b093b564f997f92a559
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-interface-refactoring-c"></a>提取接口重构 (C#)
 提取接口是的重构操作，可以轻松地使用来自现有类、 结构或接口的成员创建的新接口。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  单击**选择所有**。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
      你看到新的文件、 IProtoA.cs，并添加以下代码：  
   
@@ -73,5 +74,5 @@ ms.lasthandoff: 10/31/2017
   
  调用提取接口的类或结构时，将修改基类和接口列表，以包括新的接口名称。 提取接口在接口上的调用时，不修改基类和接口列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [重构 (C#)](refactoring-csharp.md)

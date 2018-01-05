@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8fda7a1663a8aa9ccbf1f89f2a3b05d74b0a2316
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: af42a48a311cadba9fc22a487d03492f92ba6469
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="typed-vs-untyped-datasets"></a>与非类型化数据集类型
 类型化数据集是首先派生自基本的数据集<xref:System.Data.DataSet>类，然后使用从信息**数据集设计器**，其存储在.xsd 文件，以生成一个新的强类型化数据集类。 生成架构 （表、 列和等等） 中的信息并将其编译为此新的数据集类为一组的第一类对象和属性。 因为类型化数据集继承自基类<xref:System.Data.DataSet>类，类型化的类假定所有的功能<xref:System.Data.DataSet>类，并可与将的实例的方法使用<xref:System.Data.DataSet>类作为一个参数。  

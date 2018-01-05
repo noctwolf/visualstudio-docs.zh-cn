@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 795f911e9020c4bec6e6bfe9d103666d007d0711
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e6ddf648f28139c4805c6d417e3f353d494c48bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="com-debugging-tools"></a>COM 调试工具
 本主题列出了有助于你测试和检查 COM 程序的工具。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
  Microsoft 基础类示例  
  还可以使用 MFC ActiveX 示例 OCLIENT 和 SUPERPAD 来测试应用程序。 还包括这些示例的全部源代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)   
  [COM 调试工具](../debugger/com-debugging-tools.md)  
  [在 Visual Studio 中进行调试](../debugger/index.md)  

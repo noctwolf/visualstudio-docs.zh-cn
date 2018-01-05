@@ -11,11 +11,12 @@ ms.assetid: f2280cfa-a9ec-4b56-9d94-c8fd384db980
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
-ms.openlocfilehash: 668036b5a9c963a48255e8425c0d443fce4b8bb7
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: dotnet
+ms.openlocfilehash: 9ffa85d768939522935199edde6d0f19b3f2b7a2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-constructor-in-c"></a>在 C# 中生成一个构造函数 #
 **新增功能：**便会立即生成新的构造函数的类上的代码。 
@@ -133,6 +134,6 @@ ms.lasthandoff: 11/29/2017
 
    ![生成构造函数结果](media/constructor5_result.png)
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [代码生成 (C#)](../code-generation-csharp.md)  
 [预览更改](../../ide/preview-changes.md)

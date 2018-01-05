@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 198e4b6d0ba2f3517cf907007cc544ca2e154013
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-code-metrics-data"></a>使用代码度量数据
 
@@ -103,7 +104,7 @@ ms.lasthandoff: 12/14/2017
 
 你可以创建[Visual Studio Team Services (VSTS)](/vsts/index)基于工作项导致**代码度量结果**窗口。 当创建工作项后时，Visual Studio 将自动进入中的标题**标题**下的字段和代码度量值数据**历史记录**选项卡。
 
-VSTS 有关详细信息的工作项，请参阅[工作项](/vsts/work/work-items/index)。
+VSTS 有关详细信息的工作项，请参阅[工作项 (VSTS)](/vsts/work/work-items/index)。
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>若要创建根据结果的工作项
 

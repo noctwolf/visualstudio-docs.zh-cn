@@ -14,11 +14,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e9cba33565af81a76d043a3fc3f63eef831e1ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36b5e9e0a3ca0a994547679ba71e545b4235b6c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>如何：创建自定义规则集
 在[!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)]， [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)]，和[!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]，您可以创建和修改自定义*规则集*以满足与代码分析相关联的特定项目需要。 若要创建自定义规则设置，打开一个或多个标准规则设置在规则集编辑器。 然后可以添加或移除特定的规则，并可以更改当代码分析确定违反规则时发生的操作。  
@@ -109,6 +110,6 @@ ms.lasthandoff: 10/31/2017
   
 -   若要添加或移除的 Microsoft 默认规则集向当前的规则集，请单击**添加或删除子规则集**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 配置托管的代码项目的代码分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [代码分析规则集参考](../code-quality/code-analysis-rule-set-reference.md)

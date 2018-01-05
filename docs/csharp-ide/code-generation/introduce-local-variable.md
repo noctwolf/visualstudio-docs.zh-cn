@@ -11,11 +11,12 @@ ms.assetid: 1490d6ac-ed56-4d03-95db-c23f23cba70d
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d3e68029ec1233eb5bc77ac21002fb7ce9befe98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c52a29cb3dd408dacb805479b9680873abb047d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introduce-a-local-variable-in-c"></a>介绍 C# 中的本地变量 #
 **新增功能：**便会立即生成一个本地变量来替换现有表达式。
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
    >[!NOTE]
    >你可以使用**..所有匹配项...**菜单选项，以将替换所选表达式找到，而不仅仅是一个专门突出显示的每个实例。
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [代码生成 (C#)](../code-generation-csharp.md)  
 [预览更改](../../ide/preview-changes.md) 

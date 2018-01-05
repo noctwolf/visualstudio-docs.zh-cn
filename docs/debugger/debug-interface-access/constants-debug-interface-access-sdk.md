@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50b6533b1036087dc8d0cdfe59b653774d781f55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8241190650bf395e1e4e2467b4862119cd2b10dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常量（调试接口访问 SDK）
 这些字符串常量可以用于标识程序调试数据库 (PDB) 文件通过 DIA SDK 的各个部分。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="constants"></a>常量  
  以下被声明为 C/c + + 宏。  
   
-|宏|值|  
+|宏|“值”|  
 |-----------|-----------|  
 |`DiaTable_Symbols`|L"符号"|  
 |`DiaTable_Sections`|L"部分"|  
@@ -54,10 +55,10 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 }  
 ```  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： dia2.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [引用](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
  [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [接口 （调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

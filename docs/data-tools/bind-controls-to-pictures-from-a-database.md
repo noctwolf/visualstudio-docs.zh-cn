@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc71529f852e87ca206509e06cb80940c11ac36d
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 77d2780200fd8be7a42d396cdade39b271b04bae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>将控件绑定到图片中，从数据库
 你可以使用**数据源**窗口将在数据库中的图像绑定到你的应用程序中的控件。 例如，你可以将图像绑定到<xref:System.Windows.Controls.Image>控制在 WPF 应用程序，或为<xref:System.Windows.Forms.PictureBox>在 Windows 窗体应用程序中的控件。  

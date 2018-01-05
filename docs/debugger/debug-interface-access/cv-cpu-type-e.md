@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b20a81fafa3ff003c17e2aa10f4ff4341ba57449
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b8b5ba35bda24f33461d740d5ec0d1591113e43d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 指定目标处理器。  
@@ -98,9 +99,9 @@ typedef enum CV_CPU_TYPE_e {
 ## <a name="remarks"></a>备注  
  此枚举中的值返回通过调用[idiasymbol:: Get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)方法。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： cvconst.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

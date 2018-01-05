@@ -13,11 +13,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 773fecba4b3a635d86d6b06937151e38ad94912e
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: dotnet
+ms.openlocfilehash: f70130a0652f6a7f9d7947ef0cebafb038ea6335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-features-for-c"></a>对于 C# 的代码生成功能 #
 Visual Studio 可以帮助生成部分源代码，让你专注于实际工作。  下面的代码生成功能均可用 Visual Studio 中用于 C#:
@@ -33,5 +34,5 @@ Visual Studio 可以帮助生成部分源代码，让你专注于实际工作。
 * [实现接口](code-generation/implement-interface.md)
 * [引入局部变量](code-generation/introduce-local-variable.md)
  
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Visual Studio C# 开发环境](using-the-visual-studio-development-environment-for-csharp.md)   

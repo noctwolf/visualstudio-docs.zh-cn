@@ -13,18 +13,19 @@ caps.latest.revision: "12"
 ms.author: gewarren
 author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2439b04c921de6e06b98bd1bb5a9fc0af3ea56d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48b082f5b00f260d2f8e2519a4551fab23dc1011
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd 错误
 FxCopCmd 不考虑所有错误都以是致命的。 如果 FxCopCmd 具有足够的信息来执行部分分析，它将执行的分析和报告的错误的发生。 错误代码，它是一个 32 位整数，包含对应于错误的数字值的按位组合。  
   
  下表介绍 FxCopCmd 返回的错误代码：  
   
-|错误|数字值|  
+|Error|数字值|  
 |-----------|-------------------|  
 |没有错误|0x0|  
 |分析错误|0x1|  
@@ -53,5 +54,5 @@ FxCopCmd 不考虑所有错误都以是致命的。 如果 FxCopCmd 具有足够
     > [!NOTE]
     >  FxCopCmd 返回代码"程序集引用错误"0x200 本身是一个警告，而不是错误。 此返回代码指示已找到缺少的间接引用，但 FxCopCmd 却能够处理它们。 它是一条警告，存在一些分析结果可能已泄露的可能性。 "程序集引用错误"返回代码视为错误，当它与任何其他返回代码相结合。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [代码分析应用程序错误](../code-quality/code-analysis-application-errors.md)

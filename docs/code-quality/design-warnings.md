@@ -17,11 +17,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 56063dd3ff23088bb62d07ecde3d41c941a7fa2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ed7e9109e36255a8c8390d26455d6c3c568e550
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="design-warnings"></a>设计警告
 设计警告支持.NET Framework 设计准则遵守。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
 |[CA1016：用 AssemblyVersionAttribute 标记程序集](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|.NET Framework 使用版本号唯一地标识程序集，并绑定到强名称程序集中的类型。 版本号与版本和发行者策略一起使用。 默认情况下，仅使用用于生成应用程序的程序集版本运行应用程序。|  
 |[CA1017：用 ComVisibleAttribute 标记程序集](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)|ComVisibleAttribute 决定 COM 客户端如何访问托管代码。 合理的设计指出程序集将显式指示 COM 可见性。 可以设置整个程序集的 COM 可见性，然后重写各个类型和类型成员的 COM 可见性。 如果此特性不存在，则程序集的内容对 COM 客户端可见。|  
 |[CA1018：用 AttributeUsageAttribute 标记特性](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)|当定义自定义特性时，用 AttributeUsageAttribute 标记该特性，以指示源代码中可以应用自定义特性的位置。 特性的含义和预定用法将决定它在代码中的有效位置。|  
-|[CA1019：定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|特性可以定义强制自变量，在对目标应用该特性时必须指定这些自变量。 这些实参也称为位置实参，因为它们将作为位置形参提供给特性构造函数。 对于每一个强制变量，特性还必须提供一个相应的只读属性，以便可以在执行时检索该变量的值。 特性还可以定义可选实参，可选实参也称为命名实参。 这些变量按名称提供给特性构造函数，并且必须具有相应的读/写属性。|  
+|[CA1019：定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|特性可以定义强制自变量，在对目标应用该特性时必须指定这些自变量。 这些自变量也称为位置自变量，因为它们将作为位置参数提供给特性构造函数。 对于每一个强制自变量，特性还必须提供一个相应的只读属性，以便可以在执行时检索该自变量的值。 特性还可以定义可选自变量，可选自变量也称为命名自变量。 这些变量按名称提供给特性构造函数，并且必须具有相应的读/写属性。|  
 |[CA1020：避免使用类型极少的命名空间](../code-quality/ca1020-avoid-namespaces-with-few-types.md)|请确保每个命名空间有一个逻辑组织，并且您具有有效的理由将类型放入稀疏填充的命名空间。|  
 |[CA1021：避免使用 out 参数](../code-quality/ca1021-avoid-out-parameters.md)|通过引用（使用 out 或 ref）传递类型要求具有使用指针的经验，了解值类型和引用类型的不同之处，以及能处理具有多个返回值的方法。 另外，out 和 ref 参数之间的差异没有得到广泛了解。|  
 |[CA1023：索引器不应是多维的](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)|索引器（即索引属性）应该使用一个索引。 多维索引器会大大降低库的可用性。|  

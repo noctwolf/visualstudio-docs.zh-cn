@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdba59674b53f82707a586aa3f94695666db695e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 78b9d5a2c2f147ade02e3123e2e5c08f130b29de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>托管代码的“扩展的设计准则规则”规则集
 Microsoft 扩展的设计准则规则规则集扩展基本设计准则规则，以最大化报告的可用性和可维护性问题。 额外的强调置于命名规则。 你应考虑包含此设置，如果你的项目包括库代码，或者如果你想要强制实施有关编写代码容易维护的最高标准的规则。  

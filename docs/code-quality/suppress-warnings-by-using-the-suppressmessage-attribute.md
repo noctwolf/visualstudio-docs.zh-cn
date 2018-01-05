@@ -22,11 +22,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dfa752c56d26b16f1fac569ba05cfa44693c77a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ce246c0ff960c78aed1901618fdc26bff97779d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>使用 SuppressMessage 特性禁止显示警告
 通常它可用于指示警告不适用于团队成员就会知道已评审代码，并已决定应禁止显示警告。 源代码中禁止显示 (ISS)，开发人员将禁止显示警告放在产生该警告的位置靠近的特性。 可以直接向源文件添加 ISS 属性或者可以使用中的快捷菜单[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE。  

@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d91ff5c65b1d2e43b3e1ee1d1314c252daeeb276
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 7b18e64c01c8540b3f3188c06eae7286cf5f3647
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>应用程序设置文件中的连接属性缺失或不正确
 应用程序设置文件中缺少连接属性或连接属性不正确。 已使用 .dbml 文件中的连接字符串来替代它。  
@@ -25,8 +26,8 @@ ms.lasthandoff: 11/09/2017
   
 ### <a name="to-respond-to-this-message"></a>响应此消息  
   
--   单击“确定”。 .dbml 文件中包含的连接信息将添加到应用程序设置中。  
+-   单击 **“确定”**。 .dbml 文件中包含的连接信息将添加到应用程序设置中。  
   
 ## <a name="see-also"></a>请参阅
-[O/R 设计器消息](../data-tools/o-r-designer-messages.md)  
+[O-R 设计器消息](../data-tools/o-r-designer-messages.md)  
 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

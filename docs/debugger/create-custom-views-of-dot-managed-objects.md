@@ -26,11 +26,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae3149350bac7aca92ffbc8b308c75357c3edba4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 329e7fae6a2a8682c23417f88e59700b7caffd53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-custom-views-of-managed-objects"></a>创建托管对象的自定义视图
 可以在调试器变量窗口中自定义 Visual Studio 显示数据类型的方式。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
  通过编写表达式计算器外接程序，还可以自定义本机类型视图。 有关详细信息，请参阅[EEAddIn 示例： 调试表达式计算器外接程序](http://msdn.microsoft.com/en-us/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 DebuggerTypeProxy 特性](../debugger/using-debuggertypeproxy-attribute.md)   
  [使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)   
  [监视和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)   

@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68524053107052094d53b21cac93fbbc053881dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 498b3b3eced8e21cb2079715a0bd6c2375eb8dfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>托管代码的“扩展的更正规则”规则集
 Microsoft 扩展的更正规则规则集，从而最大化代码分析来报告逻辑和 framework 用法错误。 侧重于特定的方案，如 COM 互操作性和移动应用程序。 你应考虑包含此规则集如果其中一种情形适用于你的项目，或在你的项目中查找其他问题。  

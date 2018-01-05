@@ -12,16 +12,17 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44bc05bc6ba27dffdc267ad2cad1e15bc9b0a61a
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 44c01069539ef5b67a9f208bc89786dfd0ac40a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>“混合建议规则”规则集
 Microsoft 混合建议规则专注于支持公共语言运行时，包括潜在的安全漏洞、 应用程序崩溃和其他重要的逻辑和设计错误在 c + + 项目中的最常见和关键问题。 应包括在任何自定义规则集中设置为 c + + 项目支持公共语言运行时创建此规则。 此规则集被设计与 Visual Studio 专业版和更高版本进行配置。  
   
-|规则|说明|  
+|规则|描述|  
 |----------|-----------------|  
 |[C6001](../code-quality/c6001.md)|使用未初始化的内存|  
 |[C6011](../code-quality/c6011.md)|取消引用 Null 指针|  

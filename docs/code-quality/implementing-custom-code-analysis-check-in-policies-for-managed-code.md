@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: dotnet
+ms.openlocfilehash: 1c940c10c85901e5da7425c33f4bdbd726be7627
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>对托管代码实施自定义代码分析签入策略
 代码分析签入策略指定到版本控制签入前，团队项目的成员必须在源代码运行的规则的一组。 Microsoft 提供了一套标准*规则集*该组代码分析规则到功能区域。 *自定义签入策略规则集*指定一组特定于团队项目的代码分析规则。 规则集存储在的.ruleset 文件中。  

@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c23e1ebdcf4a4c14fe269376b56a62742e44db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f09b82507fd9876f37233c5f2ee4b98aa3b44b88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="naming-warnings"></a>命名警告
 命名的命名约定的支持遵守的警告[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]设计准则。  

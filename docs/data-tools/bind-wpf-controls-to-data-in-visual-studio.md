@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 685f57286a022be6b7acbdaf2b8ffed33457fef1
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 77c56d70c6fc3dd3dac9a563c146d8bab2c6f699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>将 WPF 控件绑定到 Visual Studio 中的数据
 通过将数据绑定到 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 控件，可以向应用程序的用户显示数据。 若要创建这些数据绑定控件，可以将某些项从**数据源**窗口拖到[!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 本主题将介绍一些您可用于创建数据绑定 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 应用程序的最常见的任务、工具和类。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 11/09/2017
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>所涉及的 WPF 控件绑定到数据任务  
  下表列出可以通过将某些项从来完成的任务**数据源**窗口[!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]。  
   
-|任务|更多信息|  
+|任务|详细信息|  
 |----------|----------------------|  
 |新建数据绑定控件。<br /><br /> 将现有控件绑定到数据。|[将 WPF 控件绑定到数据集](../data-tools/bind-wpf-controls-to-a-dataset.md)|  
 |创建按父子关系显示相关数据的控件：当用户选择一个控件中的父数据记录时，另一个控件将显示所选记录的相关子数据。|[在 WPF 应用程序中显示相关数据](../data-tools/display-related-data-in-wpf-applications.md)|  
@@ -53,8 +54,8 @@ ms.lasthandoff: 11/09/2017
 |-----------------|-----------------------------------------------------------|--------------------------------------------------------|  
 |数据集|是|是|  
 |[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]|是|是|  
-|服务|是|No|  
-|对象|是|No|  
+|服务|是|否|  
+|对象|是|否|  
   
 ### <a name="datasets"></a>数据集  
  将表或列从**数据源**到设计器中，窗口[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]生成[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]可执行以下：  

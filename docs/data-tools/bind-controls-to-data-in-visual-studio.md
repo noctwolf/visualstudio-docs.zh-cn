@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9361380aa53b8f6070f4ff9d956620c5344eec7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: d6a1ab26dc402d039a5e858896ec25668be8df9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>将控件绑定到 Visual Studio 中的数据
 通过将数据绑定到控件，可以向应用程序的用户显示数据。 你可以通过将某些项从创建这些数据绑定控件**数据源**窗口拖到设计图面或在 Visual Studio 中的图面上的控件。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
 |数据源|中的拖放支持**Windows 窗体设计器**|中的拖放支持**WPF 设计器**|中的拖放支持**Silverlight 设计器**|  
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|  
-|数据集|是|是|No|  
+|数据集|是|是|否|  
 |实体数据模型|是<sup>1</sup>|是|是|  
 |LINQ to SQL 类|不<sup>2</sup>|不<sup>2</sup>|不<sup>2</sup>|  
 |服务 (包括[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，WCF 服务和 web 服务)|是|是|是|  
@@ -65,6 +66,6 @@ ms.lasthandoff: 10/31/2017
 |显示在 UI 中的筛选器数据。|[在 Windows 窗体应用程序中对数据进行筛选和排序](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|  
 |自定义控件的标题。|[自定义 Visual Studio 创建数据绑定控件的标题的方式](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [适用于 NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)   
  [Windows 窗体数据绑定](/dotnet/framework/winforms/windows-forms-data-binding)

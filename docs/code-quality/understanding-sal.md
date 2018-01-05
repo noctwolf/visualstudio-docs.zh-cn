@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d1c6ac08b47bd5ad5e6dd84bbf78496c421a21a6
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-sal"></a>了解 SAL
 Microsoft 源代码注释语言 (SAL) 提供一组你可以使用来描述函数如何使用其参数、 有关，它使的假设和它使它完成时的保证的批注。 标头文件中定义批注`<sal.h>`。 C + + 的 visual Studio 代码分析使用 SAL 批注来修改其分析的函数。 适用于 Windows 驱动程序开发 SAL 2.0 的详细信息，请参阅[SAL 2.0 批注的 Windows 驱动程序](http://go.microsoft.com/fwlink/?LinkId=250979)。  
@@ -107,7 +108,7 @@ wchar_t * wmemcpy(
 ## <a name="sal-examples"></a>SAL 示例  
  本部分说明的代码示例的基本的 SAL 批注。  
   
-### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>使用 Visual Studio 代码分析工具查找 Bug  
+### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>使用 Visual Studio Code 分析工具查找 Bug  
  在示例中，Visual Studio 代码分析工具用于与 SAL 批注一起查找代码缺陷。 下面介绍了如何执行该操作。  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>使用 Visual Studio 代码分析工具和 SAL  
@@ -411,7 +412,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ## <a name="related-resources"></a>相关资源  
  [代码分析团队博客](http://go.microsoft.com/fwlink/p/?LinkId=251197)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   
  [对函数行为进行批注](../code-quality/annotating-function-behavior.md)   

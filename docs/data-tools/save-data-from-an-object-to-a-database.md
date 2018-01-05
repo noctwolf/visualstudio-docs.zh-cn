@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 1c7e99ce49df969fae439afac5d65369fae9c37a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: e7078e6814abeb0db2afd2cffe698f923e530179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>将数据从对象保存到数据库
 你可以通过将值从你的对象传递到 TableAdapter 的 DBDirect 方法之一将数据保存到数据库的对象中 (例如， `TableAdapter.Insert`)。 有关详细信息，请参阅[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。  
@@ -77,5 +78,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  您必须有权执行所选的 INSERT、 UPDATE 或 DELETE 中数据库的表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

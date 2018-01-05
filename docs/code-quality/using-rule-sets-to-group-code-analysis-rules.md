@@ -14,11 +14,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44d64b7371f1b27afaa7796dc42d4b7864d20819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 51b282cb86ca83ecf2ace1e4b12c8444928b15e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>使用规则集对代码分析规则进行分组
 当你配置中的代码分析[!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]， [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]，或[!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]，你可以从 Microsoft 内置列表中选择*规则集*。 规则集是标识目标的问题和特定条件的代码分析规则的逻辑分组。 例如，可以应用一种旨在扫描公开可用 Api 代码的规则集，也可以应用只包括最少建议规则的规则集。 你还可以应用包含所有规则的规则集。  

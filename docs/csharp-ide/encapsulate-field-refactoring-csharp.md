@@ -17,11 +17,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bd9e255b35ffb843c15d5ffa9c1547891bf437d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: d587edebcea443e0bfff52004b128c70923470d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="encapsulate-field-refactoring-c"></a>封装字段重构 (C#)
 **封装字段**重构操作，可从现有字段，快速创建一个属性，然后对新属性的引用无缝地更新你的代码。  
@@ -103,6 +104,6 @@ ms.lasthandoff: 10/31/2017
   
  通过此重构操作生成的代码将由封装字段代码片段功能来建模。 代码片段是可修改的。 有关详细信息，请参阅[代码片段](../ide/visual-csharp-code-snippets.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [重构 (C#)](refactoring-csharp.md)   
  [Visual C# 代码片段](../ide/visual-csharp-code-snippets.md)

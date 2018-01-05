@@ -12,16 +12,17 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb6d83004414abd530a8274f5338b134de2a5403
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 6db3e112f45200221eff80c033daed4a04c152d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="native-minimum-rules-rule-set"></a>“本机最少量规则”规则集
 Microsoft 本机最少量规则侧重于在本机代码中，包括潜在安全漏洞和应用程序崩溃的最关键问题。 应在你为本机项目创建的任何自定义规则集中包含此规则集。  
   
-|规则|说明|  
+|规则|描述|  
 |----------|-----------------|  
 |[C6001](../code-quality/c6001.md)|使用未初始化的内存|  
 |[C6011](../code-quality/c6011.md)|取消引用 Null 指针|  

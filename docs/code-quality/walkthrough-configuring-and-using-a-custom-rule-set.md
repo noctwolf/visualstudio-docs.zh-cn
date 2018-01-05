@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28f572ff80888f9d207c9ade9042414127abb154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>演练：配置和使用自定义规则集
 本演练演示如何使用已配置为使用自定义的代码分析工具*规则集*类库。 你可以选择与你指定为您的解决方案，也可以选择的项目类型替代的规则集以满足特定需求例如扫描旧代码可以在非中断的方式中修复的问题的规则集。 在任一情况下，规则集也可以定制以微调它们添加到您的项目需求。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 -   运行代码分析，请参阅如何规则设置自定义行为的工作方式。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]、[!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或 [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -152,6 +153,6 @@ ms.lasthandoff: 10/31/2017
   
 2.  在错误列表窗口中，请注意，当你单击**警告**，你无法再看到"标识符应正确拼写"规则冲突的 CA1704 警告。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 配置托管的代码项目的代码分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [代码分析规则集参考](../code-quality/code-analysis-rule-set-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: "代码度量值问题疑难解答 |Microsoft 文档"
+title: "代码度量问题疑难解答 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -12,23 +12,24 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ef318d7c71a5770ea7a78ff078340b4f2dff960
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f31d0f5d236327db483c9698579c8c03129acd64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>代码度量值问题疑难解答
-收集代码度量值时，可能遇到的一些以下问题：  
+收集代码度量时，可能会遇到以下的一些问题：  
   
--   [Visual Studio 2010 代码复杂性计算中的更改](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  
+-   [Visual Studio 2010 代码复杂度计算中的更改](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  
   
-##  <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a>Visual Studio 2010 代码复杂性计算中的更改  
- 对于相同的函数中，代码复杂性度量值计算中[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]可以不同于早期版本的计算的度量值[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]在以下情况下：  
+##  <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a>Visual Studio 2010 代码复杂度计算中的更改  
+ 对于相同的函数，在以下情况下，[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 中计算的代码复杂度度量可以不同于早期版本的 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 计算的度量：  
   
--   该函数包含一个或多个 catch 块。 在以前版本的[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，catch 块中不包含在计算中使用。 在[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]，每个 catch 块的复杂性添加到该函数的复杂性。  
+-   此函数包含一个或多个 catch 块。 在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 以前的版本中，catch 块不包含在计算中。 在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 中，每个 catch 块的复杂度均添加到函数的复杂度中。  
   
--   该函数包含 switch (在 VB 中的 Select Case) 语句。 编译器之间的差异[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]和早期版本可以生成包含回退通过情况下某些 switch 语句的不同 MSIL 代码。  
+-   此函数包含 switch（VB 中的 Select Case）语句。 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 和早期版本之间的编译器差异可以为包含失败事例的某些 switch 语句生成不同的 MSIL 代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [测量托管代码的复杂性和可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

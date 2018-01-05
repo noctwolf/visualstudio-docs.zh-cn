@@ -17,11 +17,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e85e745241d8fa880098b73a6306cbca3f19da70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 18fc4c20b39341f884fb23b51822ce7f6e427007
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-method-refactoring-c"></a>提取方法重构 (C#)
 **提取方法**是重构操作，可以轻松地从现有成员中的代码段创建一个新方法。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
   
      新的方法签名的预览显示在下**预览方法签名**。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
 ## <a name="remarks"></a>备注  
  当你使用**提取方法**命令时，同一类中的源成员之后插入新方法。  
@@ -122,5 +123,5 @@ class Program
   
  若要解决这种情况下，请在类的匿名方法字段中使用的本地变量。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [重构 (C#)](refactoring-csharp.md)

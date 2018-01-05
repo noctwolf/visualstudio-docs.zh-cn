@@ -262,11 +262,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11ad6bea31523474bb5b07aaad4be63de5741830
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 4f08a53f5af8342387ce5b523e29e007de3a0524
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>托管代码的代码分析警告（按 CheckId 排列）
 下表列出了托管代码的代码分析警告，按警告的 CheckId 标识符排列。  
@@ -293,7 +294,7 @@ ms.lasthandoff: 10/31/2017
 |CA1016|[CA1016：用 AssemblyVersionAttribute 标记程序集](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 使用版本号唯一地标识程序集，并绑定到具有强名称的程序集中的类型。 版本号与版本和发行者策略一起使用。 默认情况下，仅使用用于生成应用程序的程序集版本运行应用程序。|  
 |CA1017|[CA1017：用 ComVisibleAttribute 标记程序集](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)|ComVisibleAttribute 决定 COM 客户端如何访问托管代码。 合理的设计指出程序集将显式指示 COM 可见性。 可以设置整个程序集的 COM 可见性，然后重写各个类型和类型成员的 COM 可见性。 如果此特性不存在，则程序集的内容对 COM 客户端可见。|  
 |CA1018|[CA1018：用 AttributeUsageAttribute 标记特性](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)|当定义自定义特性时，用 AttributeUsageAttribute 标记该特性，以指示源代码中可以应用自定义特性的位置。 特性的含义和预定用法将决定它在代码中的有效位置。|  
-|CA1019|[CA1019：定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|特性可以定义强制自变量，在对目标应用该特性时必须指定这些自变量。 这些实参也称为位置实参，因为它们将作为位置形参提供给特性构造函数。 对于每一个强制变量，特性还必须提供一个相应的只读属性，以便可以在执行时检索该变量的值。 特性还可以定义可选实参，可选实参也称为命名实参。 这些变量按名称提供给特性构造函数，并且必须具有相应的读/写属性。|  
+|CA1019|[CA1019：定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|特性可以定义强制自变量，在对目标应用该特性时必须指定这些自变量。 这些自变量也称为位置自变量，因为它们将作为位置参数提供给特性构造函数。 对于每一个强制自变量，特性还必须提供一个相应的只读属性，以便可以在执行时检索该自变量的值。 特性还可以定义可选自变量，可选自变量也称为命名自变量。 这些变量按名称提供给特性构造函数，并且必须具有相应的读/写属性。|  
 |CA1020|[CA1020：避免使用类型极少的命名空间](../code-quality/ca1020-avoid-namespaces-with-few-types.md)|请确保每个命名空间都有一个逻辑组织，并确保将类型放入稀疏填充的命名空间的理由是有效的。|  
 |CA1021|[CA1021：避免使用 out 参数](../code-quality/ca1021-avoid-out-parameters.md)|通过引用（使用 out 或 ref）传递类型要求具有使用指针的经验，了解值类型和引用类型的不同之处，以及能处理具有多个返回值的方法。 另外，out 和 ref 参数之间的差异没有得到广泛了解。|  
 |CA1023|[CA1023：索引器不应是多维的](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)|索引器（即索引属性）应该使用一个索引。 多维索引器会大大降低库的可用性。|  
@@ -323,7 +324,7 @@ ms.lasthandoff: 10/31/2017
 |CA1050|[CA1050：在命名空间中声明类型](../code-quality/ca1050-declare-types-in-namespaces.md)|应在命名空间内声明类型以避免名称冲突，并作为一种在对象层次结构中组织相关类型的方式。|  
 |CA1051|[CA1051：不要声明可见实例字段](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)|字段的主要用途应是作为实现的详细信息。 字段应为 private 或 internal，并应通过使用属性公开这些字段。|  
 |CA1052|[CA1052：应密封静态容器类型](../code-quality/ca1052-static-holder-types-should-be-sealed.md)|公共或受保护类型仅包含静态成员，而且没有用 sealed（C# 参考）(NotInheritable) 修饰符声明该类型。 应使用 sealed 修饰符标记不希望被继承的类型，以免将其用作基类型。|  
-|CA1053|[CA1053：静态容器类型不应具有构造函数](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)|公共或嵌套公共类型只声明了静态成员，但具有公共或受保护的默认构造函数。 由于调用静态成员不需要类型的示例，因此没必要使用构造函数。 为安全起见，字符串重载应使用字符串参数调用统一资源标识符 (URI) 重载。|  
+|CA1053|[CA1053：静态容器类型不应具有构造函数](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)|公共或嵌套公共类型只声明了静态成员，但具有公共或受保护的默认构造函数。 由于调用静态成员不需要类型的示例，因此没必要使用构造函数。 为安全起见，字符串重载应使用字符串自变量调用统一资源标识符 (URI) 重载。|  
 |CA1054|[CA1054：URI 参数不应为字符串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|如果某方法采用 URI 的字符串表示形式，则应提供采用 URI 类的实例的相应重载，该重载以安全的方式提供这些服务。|  
 |CA1055|[CA1055：URI 返回值不应是字符串](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|此规则假定该方法返回 URI。 URI 的字符串表示形式容易导致分析和编码错误，并且可造成安全漏洞。 System.Uri 类以一种安全的方式提供这些服务。|  
 |CA1056|[CA1056：URI 属性不应是字符串](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|此规则假定属性表示统一资源标识符 (URI)。 URI 的字符串表示形式容易导致分析和编码错误，并且可造成安全漏洞。 System.Uri 类以一种安全的方式提供这些服务。|  
@@ -463,7 +464,7 @@ ms.lasthandoff: 10/31/2017
 |CA2142|[CA2142：不应使用 LinkDemand 保护透明代码](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)|对于需要 LinkDemand 来访问它们的透明方法，将会引发此规则。 安全透明代码不应负责验证某个操作的安全，因此不应要求权限。|  
 |CA2143|[CA2143：透明方法不应使用安全要求](../code-quality/ca2143-transparent-methods-should-not-use-security-demands.md)|安全透明代码不应负责验证某个操作的安全，因此不应要求权限。 安全透明代码应使用完整的需求来作出安全决策并且安全关键代码不应依赖透明代码以进行完全的请求。|  
 |CA2144|[CA2144：透明代码不应从字节数组加载程序集](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|透明代码安全评审不像关键代码的安全评审一样全面，因为透明代码不能执行安全敏感的操作。 从字节数组中加载的程序集在透明代码中可能不会被注意到，并且该字节数组可能包含确实需要审核的关键或更重要的安全关键代码。|  
-|CA2145|[CA2145：不应使用 SuppressUnmanagedCodeSecurityAttribute 修饰透明方法](../code-quality/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md)|用 SuppressUnmanagedCodeSecurityAttribute 特性修饰的方法有一个隐式的 LinkDemand 作用于调用它的任何方法。 此 LinkDemand 要求调用代码是关键安全的。 用 SecurityCriticalAttribute 特性标记使用 SuppressUnmanagedCodeSecurity 的方法会使此要求对方法的调用方更加明显。|  
+|CA2145|[CA2145：不应使用 SuppressUnmanagedCodeSecurityAttribute 修饰透明方法](../code-quality/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md)|用 SuppressUnmanagedCodeSecurityAttribute 特性修饰的方法有一个隐式的 LinkDemand 作用于调用它的任何方法。 此 LinkDemand 要求调用代码是关键安全的。 用 SecurityCriticalAttribute 特性标记使用 SuppressUnmanagedCodeSecurity 的方法会使此需求对方法的调用方更加明显。|  
 |CA2146|[CA2146：类型必须至少与其基类型和接口一样关键](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|当派生类型具有的安全透明特性与其基类型或实现的接口不是同样关键时，将引发此规则。 只有关键类型可以从关键基类型派生或实现关键接口，并且只有关键或关键安全类型可以从安全关键基类型派生或实现关键安全接口。|  
 |CA2147|[CA2147：透明方法不得使用安全断言](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|标记为 SecurityTransparentAttribute 的代码未被授予足够的权限进行断言。|  
 |CA2149|[CA2149：透明方法不得调入本机代码](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|对于直接调用到本机代码中（例如通过使用 P/Invoke）的任何透明方法，将引发此规则。 违反此规则会导致级别 2 透明度模型中的 MethodAccessException，以及级别 1 透明度模型中对 UnmanagedCode 的完全要求。|  
@@ -477,7 +478,7 @@ ms.lasthandoff: 10/31/2017
 |CA2208|[CA2208：正确实例化参数异常](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|调用了异常类型 ArgumentException 或其派生类型的默认（无参数）构造函数，或者向异常类型 ArgumentException 或其派生类型的参数化构造函数传递了错误的字符串自变量。|  
 |CA2210|[CA2210：程序集应具有有效的强名称](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|强名称可避免客户端在不知情的情况下加载已被篡改的程序集。 除非极为有限的几种情况，否则不应部署没有强名称的程序集。 如果共享或发布未正确签名的程序集，则该程序集可能被篡改，公共语言运行时可能不会加载该程序集；而用户可能必须在他/她的计算机上禁用验证。|  
 |CA2211|[CA2211：非常量字段不应为可见](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|不是常数也不是只读字段的静态字段不是线程安全的。 必须严格控制对这类字段的访问，并需要高级编程技术来同步对类对象的访问。|  
-|CA2212|[CA2212：不要使用 WebMethod 标记服务组件](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|继承自 System.EnterpriseServices.ServicedComponent 的类型中的方法标记有 System.Web.Services.WebMethodAttribute。 因为 WebMethodAttribute 和 ServicedComponent 方法在上下文和事务流方面的行为和要求有冲突，所以该方法的行为在某些情况下会不正确。|  
+|CA2212|[CA2212：不要使用 WebMethod 标记服务组件](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|继承自 System.EnterpriseServices.ServicedComponent 的类型中的方法标记有 System.Web.Services.WebMethodAttribute。 因为 WebMethodAttribute 和 ServicedComponent 方法在上下文和事务流方面的行为和需求有冲突，所以该方法的行为在某些情况下会不正确。|  
 |CA2213|[CA2213：应释放可释放的字段](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|实现 System.IDisposable 的类型声明了同样实现 IDisposable 的类型的字段。 字段的 Dispose 方法不由声明类型的 Dispose 方法调用。|  
 |CA2214|[CA2214：不要在构造函数中调用可重写的方法](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|构造函数调用虚方法时，可能尚未执行调用该方法的实例的构造函数。|  
 |CA2215|[CA2215：Dispose 方法应调用基类 Dispose](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|如果类型继承自可释放类型，则必须从它自己的 Dispose 方法中调用基类型的 Dispose 方法。|  

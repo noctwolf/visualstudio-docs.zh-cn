@@ -26,11 +26,12 @@ ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 34ceecce635cb5388bd53ed191c0fc1fa861bc38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 9f4e4cd3ebb12e59fc4b7fbcf16122b381d5f610
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-data"></a>保存数据
 保存数据是保留的过程更改回原始数据存储通常如 SQL Server 关系数据库的应用程序的数据模型中的数据。  

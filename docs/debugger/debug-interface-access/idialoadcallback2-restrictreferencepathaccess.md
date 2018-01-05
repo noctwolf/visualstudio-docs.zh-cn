@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4800ab08f1fba65f3b40564a789630f370d21ac1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d58a04a6da2d286d95c3be597af1593456c6d276
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
 确定是否在.exe 文件所在的路径中允许寻找.pdb 文件。  
@@ -35,5 +36,5 @@ HRESULT RestrictReferencePathAccess();
 ## <a name="remarks"></a>备注  
  之外的任何返回代码`S_OK`以防止寻找.exe 文件所在的路径中的.pdb 文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
