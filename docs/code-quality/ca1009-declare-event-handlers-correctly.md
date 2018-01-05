@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6191676f94300dfbfafcb8ceb6b0874a8e5b558a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8e72f10ef44c784af98628f4b0c1ed3b72814977
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009：正确声明事件处理程序
 |||  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>相关的规则  
  [CA2109：检查可见的事件处理程序](../code-quality/ca2109-review-visible-event-handlers.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.EventArgs?displayProperty=fullName>   
  <xref:System.Object?displayProperty=fullName>   
  [处理和引发事件](/dotnet/standard/events/index)  

@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 00222c71e537856d420c6472efb104a8c928237e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc1d8c2ea663862e44b3092b0e2b8489eff3df6f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122：不要使用链接请求间接公开方法
 |||  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
  本示例生成以下输出。  
   
  **来自不安全的成员的值： seattle.corp.contoso.com**   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)   
  [链接需求](/dotnet/framework/misc/link-demands)   
  [数据和建模](/dotnet/framework/data/index)

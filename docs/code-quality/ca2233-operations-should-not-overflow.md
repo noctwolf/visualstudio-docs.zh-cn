@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d8b602d83eee4be49f63eef0ee8d2cd3d77f5040
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5d048476997517a835337b568930367f97c2c92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233：运算不应溢出
 |||  
@@ -109,11 +110,11 @@ End Sub
   
 1.  在**解决方案资源管理器**，右键单击你的项目，然后选择**属性**。  
   
-2.  选择**生成**选项卡，单击**高级**。  
+2.  选择“生成”选项卡，然后单击“高级”。  
   
 3.  选择**检查算术上溢/下溢**单击**确定**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.OverflowException?displayProperty=fullName>   
  [C# 运算符](/dotnet/csharp/language-reference/operators/index)   
  [Checked and Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked)

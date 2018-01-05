@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 414a533e781be82cd0ffef1e9db234738ef07f16
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b716a809f1d2a5bcf73b9dda77b94d637b2e8493
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016：用 AssemblyVersionAttribute 标记程序集
 |||  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 -   版本号  
   
--   区域性  
+-   culture  
   
 -   （对于强名称程序集） 的公钥。  
   
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
  [!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [程序集版本控制](/dotnet/framework/app-domains/assembly-versioning)   
  [如何：创建发行者策略](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ebf550ca92cbefbed684e2b11e0b20b62661133
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c7016145d5d34c9077f45f2dbf6c1507aa0e6fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>匿名方法和代码分析
 *匿名方法*是没有名称的方法。 匿名方法是最常用于将代码块作为委托参数传递。  
@@ -152,5 +153,5 @@ class Class
   
  你可以解决此问题的两种方式之一。 你可以声明**anonymousMethod**公共构造函数中的所有构造函数链。 或者，你无法将其声明中初始化方法调用的所有构造函数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

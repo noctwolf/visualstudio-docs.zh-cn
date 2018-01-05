@@ -22,11 +22,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b2ad22eccb561bf58ee845d58268620aad778a20
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 629bc4dc36ade84f6a6e55518775f0d11165da7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：设置 C/C++ 项目的代码分析属性
 你可以配置使用哪些规则的代码分析工具来分析你的项目的每个配置中的代码。 此外，你可以指示代码分析，以禁止显示警告的代码与已生成并由第三方工具添加到你的项目。  
@@ -52,6 +53,6 @@ ms.lasthandoff: 11/15/2017
 ## <a name="rule-sets"></a>规则集  
  如果你的项目包含托管的代码，你可以选择通过选择规则集从应用中的代码分析规则**运行此规则集**列表。  
   
-## <a name="see-also"></a>另请参阅  
- [分析托管的代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
+## <a name="see-also"></a>请参阅  
+ [分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [C/C++ 代码分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4893dbf799a964024fef59b7b0092b3066e8fdd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38ac5492c987515c7c6504c91d2e035f8b8645ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147：透明方法不得使用安全断言
 |||  
@@ -63,5 +64,5 @@ ms.lasthandoff: 10/31/2017
   
  另一个选项是从代码中，删除该断言，让任何后续的文件 I/O 权限需求流超出 SecurityTransparentMethod 给调用方。 这使安全检查。 在这种情况下，通常需要无任何安全审核，因为权限要求将流到调用方和/或应用程序域。 通过安全策略、 宿主环境中，并相应地代码源权限授予密切控制权限需求。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [安全警告](../code-quality/security-warnings.md)

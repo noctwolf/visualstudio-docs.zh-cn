@@ -18,16 +18,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 1f67a87f4a704d3f76ccddba62112983c058a9f3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 8d55ecd52b3fa817e9a5ee199a69e3d29644346e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>连接到 Access 数据库 （Windows 窗体） 中的数据
 可以通过使用 Visual Studio 连接到 Access 数据库 （.mdf 文件或.accdb 文件）。 在定义此连接后，数据将显示在**数据源**窗口。 可从该位置将表或视图拖动到窗体上。   
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  若要使用这些过程，你需要 Windows 窗体应用程序项目和 Access 数据库 （.accdb 文件） 或 Access 2000-2003年数据库 （.mdb 文件）。 按照与你的文件类型对应的过程操作。  
   
 ## <a name="creating-the-dataset-for-an-accdb-file"></a>创建.accdb 文件的数据集  

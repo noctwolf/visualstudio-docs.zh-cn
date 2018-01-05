@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a26982c1827b9d9b4a7ed09e8aa3af61c9141c9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10d5d331c4308586485ea77824cda4864c6ee943
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 检索用于计算的寄存器集之前对当前函数的调用的程序字符串。  
@@ -51,5 +52,5 @@ HRESULT get_program (
   
  请注意，程序字符串是特定于 CPU 设置为表示由当前的堆栈帧的函数的调用约定。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

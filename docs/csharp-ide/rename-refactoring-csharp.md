@@ -17,11 +17,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eba5a9f55e5d3d08eee48dc083a7e2f848118162
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 42c5f99b3bf5ba95bc279cd5e117745ccc8e02c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rename-refactoring-c"></a>重命名重构 (C#)
 **重命名**是可以轻松地重命名标识符代码符号，如字段、 局部变量、 方法、 命名空间、 属性和类型的 Visual Studio 集成的开发环境 (IDE) 中的重构功能。 **重命名**可用来更改名称和字符串中的注释，并且若要更改的声明和调用的标识符。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 |-----------------|----------------------|  
 |字段|声明和用法的字段更改为新的名称。|  
 |本地变量|声明和用法的变量更改为新的名称。|  
-|方法|为新的名称更改的方法和到该方法的所有引用的名称。 **注意：**时重命名的扩展方法，重命名操作将传播到方法的作用域，而不考虑是否使用静态方法或实例方法作为扩展方法中的所有实例。 有关详细信息，请参阅[扩展方法](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)|  
+|方法|为新的名称更改的方法和到该方法的所有引用的名称。 **注意：**时重命名的扩展方法，重命名操作将传播到方法的作用域，而不考虑是否使用静态方法或实例方法作为扩展方法中的所有实例。 有关详细信息，请参阅[扩展方法](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)。|  
 |命名空间|命名空间的名称将更改为新名称在声明中，所有`using`语句和完全限定的名称。 **注意：**时重命名命名空间中，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]还会更新**默认 Namespace**属性**应用程序**页**项目设计器**. 此属性不能通过选择重置**撤消**从**编辑**菜单。 若要重置**默认 Namespace**属性值，则必须修改中的属性**项目设计器**。 有关详细信息，请参阅[应用程序页](../ide/reference/application-page-project-designer-csharp.md)。|  
 |属性|声明和用法的属性更改为新的名称。|  
 |类型|所有声明和使用的类型的所有实例更改为新名称，包括构造函数和析构函数。 为分部类型重命名操作将会传播到所有部分。|  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  选择**在注释中的搜索**复选框。  
   
-6.  单击“确定”。  
+6.  单击 **“确定”**。  
   
 7.  在**预览更改**对话框中，单击**应用**。  
   
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  键入的键盘快捷方式**Shift + Alt + F10**以显示快速操作菜单。  
   
-     - 或 -  
+     或  
   
      单击旁边灯泡以显示快速操作菜单上的黑色三角形。  
   
@@ -162,6 +163,6 @@ var orderIDs =
   
  在前面的代码中，重命名`ID`将仅重命名的一个实例`ID`因为`companyIDs`和`orderIDs`不具有相同的属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [重构 (C#)](refactoring-csharp.md)   
  [匿名类型](/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types)

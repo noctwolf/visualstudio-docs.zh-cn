@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 344dfe7a4e35bf42e9e0a4efb2ca9bdf1b8f5d6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 87c9b1ca85eb7edaf1050da96356640b06b66e0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046：不要对引用类型重载相等运算符
 |||  
@@ -63,6 +64,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>相关的规则  
  [CA1013：重载加法方法和减法方法时重载相等运算符](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Object.Equals%2A?displayProperty=fullName>   
  [相等运算符](/dotnet/standard/design-guidelines/equality-operators)

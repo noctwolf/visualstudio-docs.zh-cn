@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 69cb1ed9c5c8da2ae511d73de45a0567d61236dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 2008ac649302d87cc2d45274de3fdb1981aa571d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-managed-code-quality-by-using-code-analysis"></a>使用代码分析来分析托管代码质量
 你可以在 Visual Studio 中使用代码分析工具发现代码中的潜在问题，如不安全的数据访问、使用冲突和设计问题。 代码分析适用于.NET Framework、 本机 （C 和 c + +） 和数据库应用程序。 针对托管代码的代码分析将组织中的规则*规则集*面向特定编码问题。  

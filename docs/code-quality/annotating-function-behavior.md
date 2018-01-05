@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 84a66d16241ff9f1f385bda8c1def6a82e5971a5
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 60cebdd015263ac5d05045e168d3f1063e0527a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="annotating-function-behavior"></a>对函数行为进行批注
 除了批注[函数参数和返回值](../code-quality/annotating-function-parameters-and-return-values.md)，还可以批注整个函数的属性。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/15/2017
 |`_Return_type_success_(expr)`|可以应用于 typedef。 表示将批注所有返回该类型并且不显式具有 `_Success_` 的所有函数，就像它们具有 `_Success_(expr)`。 `_Return_type_success_` 不能用于函数或函数指针类型。|  
 |`_Success_(expr)`|`expr` 是生成右值的表达式。 当 `_Success_` 批注位于函数声明或定义上时，函数上以及后置条件中的每个批注 (`anno`) 的行为就像它已编码为 `_When_(expr, anno)`。 `_Success_` 批注只能用于函数，而不能用于函数的参数或返回类型。 一个函数上最多可以有一个 `_Success_` 批注，并且不能位于任何 `_When_`、`_At_` 或 `_Group_` 中。 有关详细信息，请参阅[和指定时其中批注适用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   

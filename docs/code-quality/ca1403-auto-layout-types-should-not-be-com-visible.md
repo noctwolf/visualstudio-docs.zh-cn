@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c94e19b57d527226b52b840f703f591472f92cc
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 7da04d7ecda3e47239bd865812c6fbd05428ac09
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403：自动布局类型不应对 COM 可见
 |||  
@@ -55,6 +56,6 @@ ms.lasthandoff: 12/12/2017
 ## <a name="related-rules"></a>相关的规则  
  [CA1408：请不要使用 AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [为互操作限定 .NET 类型](/dotnet/framework/interop/qualifying-net-types-for-interoperation)   
  [与非托管代码交互操作](/dotnet/framework/interop/index)

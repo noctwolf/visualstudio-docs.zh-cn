@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c8a6176d25f8eb8f2e7aa66dc0a00f0490f0910
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 43f83bf88e017da06ee3653019aa91807229d55e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026：不应使用默认参数
 |||  
@@ -54,5 +55,5 @@ ms.lasthandoff: 12/12/2017
 ## <a name="related-rules"></a>相关的规则  
  [CA1025：用形参数组替换重复的实参](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [语言独立性和与语言无关的组件](/dotnet/standard/language-independence-and-language-independent-components)

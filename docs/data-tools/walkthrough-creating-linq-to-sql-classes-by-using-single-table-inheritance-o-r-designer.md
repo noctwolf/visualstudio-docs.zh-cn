@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: a6794fb327e298aa8fa7ea313ff12e1b3ab99fb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: b6e255492f0859689b41723657338140ffee5931
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>演练：通过使用单表继承创建 LINQ to SQL 类（O/R 设计器）
 [LINQ to SQL Visual Studio 中的工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)支持单表继承，因为它通常在关系系统中实现。 本演练中提供的一般步骤进行了扩展[如何： 通过使用 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)主题，并提供演示如何使用中的继承某些实际数据[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
     |列名|数据类型|允许为 Null|  
     |-----------------|---------------|-----------------|  
     |**ID**|**int**|**False**|  
-    |**类型**|**int**|**True**|  
+    |**Type**|**int**|**True**|  
     |**FirstName**|**nvarchar （200)**|**False**|  
     |**LastName**|**nvarchar （200)**|**False**|  
     |**管理器**|**int**|**True**|  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
   
     ||||||  
     |-|-|-|-|-|  
-    |**ID**|**类型**|**FirstName**|**LastName**|**管理器**|  
+    |**ID**|**Type**|**FirstName**|**LastName**|**管理器**|  
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|  
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|  
     |**3**|**1**|**Yael**|**Peled**|**NULL**|  
@@ -188,9 +189,9 @@ ms.lasthandoff: 10/31/2017
   
 3.  关闭窗体。 (在**调试**菜单上，单击**停止调试**。)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [LINQ to SQL Visual Studio 中的工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [演练： 创建 LINQ to SQL 类 （O R 设计器）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
  [如何： 分配存储的过程以便执行更新、 插入和删除操作 （O/R 设计器）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
  [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
- [如何： 在 Visual Basic 或 C# 中生成的对象模型](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+ [如何：在 Visual Basic 或 C# 中生成对象模型](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

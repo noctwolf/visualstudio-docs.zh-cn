@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 88199541fe5d3c4be3f9f1cff6de308d45d0d85a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d432dab79d5cd88d398a74c352cc9d34c8b4f2e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="maintainability-warnings"></a>维护性警告
 可维护性警告支持库和应用程序的维护。  
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/31/2017
 |[CA1505：避免编写无法维护的代码](../code-quality/ca1505-avoid-unmaintainable-code.md)|类型或方法具有较低的可维护性索引值。 如果可维护性指数较低，则表示类型或方法可能难以维护，最好重新进行设计。|  
 |[CA1506：避免过度类耦合](../code-quality/ca1506-avoid-excessive-class-coupling.md)|此规则通过计算类型或方法包含的唯一类型引用的个数来衡量类耦合。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [测量托管代码的复杂性和可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

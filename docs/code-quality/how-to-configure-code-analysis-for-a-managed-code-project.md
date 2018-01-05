@@ -16,11 +16,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d62957a75c844d736a1168010616d5cf2c795bee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 134645ced3352d820165b23a73308894fed0897a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：配置托管代码项目的代码分析
 在[!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]，[!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]和[!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]，你可以从代码分析的列表中选择*规则集*要应用于托管的代码项目。 默认规则集是 Microsoft 最少量建议规则。 你可以应用另一个规则集对项目或解决方案中的所有项目。  
@@ -53,5 +54,5 @@ ms.lasthandoff: 10/31/2017
   
          有关详细信息，请参阅[创建自定义规则集](../code-quality/creating-custom-code-analysis-rule-sets.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：配置和使用自定义规则集](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

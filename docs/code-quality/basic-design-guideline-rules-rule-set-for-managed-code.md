@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c383f9b5c37c23886d968b13e45e1c5aa1c1c943
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 769ff8468bc2f8ea90201678c85351706b8a4652
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>托管代码的“基本设计准则规则”规则集
 你可以使用 Microsoft 基本设计准则规则规则集重点放在使你的代码更易于了解和使用。 应包括设置，如果你的项目包括库代码，或者如果你想要强制执行最佳实践的代码易于维护的此规则。  

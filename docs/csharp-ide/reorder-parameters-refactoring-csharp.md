@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3469e9ae7101c9e180fba5558fce389c6dfcc72d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 3a011794599bf1e56e905a40c6269b5639abadb2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reorder-parameters-refactoring-c"></a>重新排列参数重构 (C#)
 `Reorder Parameters`一个 Visual C# 重构操作，提供了一种简单的方法来更改方法、 索引器和委托的参数的顺序。 `Reorder Parameters`更改的声明，并在调用该成员的所有位置，重新排列参数，以反映新的顺序。  
@@ -76,5 +77,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  你可以重新排列从方法声明或方法调用的参数。 将光标上或旁边方法或委托声明但不是在正文中的位置。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [重构 (C#)](refactoring-csharp.md)

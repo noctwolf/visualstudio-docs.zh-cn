@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a2d7ecd899b4da51e6ff200f1e18b00366db6669
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b05873b87767fa39cc6e0d675980bf658d76c584
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108：检查有关值类型的声明性安全
 |||  
@@ -59,6 +60,6 @@ ms.lasthandoff: 10/31/2017
  **结构自定义构造函数： 请求失败。**  
 **新值 SecuredTypeStructure 100 100**  
 **新值 SecuredTypeStructure 200 200**   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [链接需求](/dotnet/framework/misc/link-demands)   
  [数据和建模](/dotnet/framework/data/index)

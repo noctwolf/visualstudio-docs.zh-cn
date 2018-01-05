@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ebcb3325cfefdfeeb95b30477c4b266a70f40eb0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 8d387cd29b0c17bdb31db495fe42146cf1a886d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049：拥有本机资源的类型应是可释放的
 |||  
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
   
  [CA1001：具有可释放字段的类型应该是可释放的](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [清理非托管资源](/dotnet/standard/garbage-collection/unmanaged)   
  [释放模式](/dotnet/standard/design-guidelines/dispose-pattern)

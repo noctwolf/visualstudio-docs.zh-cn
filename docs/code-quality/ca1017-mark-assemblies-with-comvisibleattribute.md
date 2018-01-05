@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e4c76efff009c85f9d607611d92d53cad5d2759
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1cf713e2c177a24938c44c4577da88d8943e4fef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017：用 ComVisibleAttribute 标记程序集
 |||  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]
  [!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [与非托管代码交互操作](/dotnet/framework/interop/index)   
  [为互操作限定 .NET 类型](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

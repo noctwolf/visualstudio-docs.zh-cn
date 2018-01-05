@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ec86725873f5724609f411072dab4a4bde9d990
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 79ffda960d85c05648a0f1ea7d6c759fc9e76f78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243：应正确分析特性字符串文本
 |||  
@@ -61,5 +62,5 @@ ms.lasthandoff: 10/31/2017
   
 -   包含 uri、 urn 或 url，无法被分析为 System.Uri 参数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CA1054：URI 参数不应为字符串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

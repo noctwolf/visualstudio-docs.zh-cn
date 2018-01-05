@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60b9465677ce033f8b285ce21e2b8332bf88a73a
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: uwp
+ms.openlocfilehash: 1e1e30400a630c7a5b01438e521b651f25ab3137
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-execution-of-a-uwp-app-in-a-visual-studio-debug-session-javascript"></a>UWP 应用的 Visual Studio 调试会话 (JavaScript) 中的控件执行
 本快速入门介绍了如何在 Visual Studio 调试器中进行导航以及如何在会话中查看程序状态。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 12/07/2017
 >   
 >  UWP 应用通常使用 JavaScript*模块模式*来封装数据和在页中的函数。 模块模式使用一个自执行的匿名闭包将页面功能与全局命名空间相分离。 在本主题中，我们将该函数称为 *module*  
   
-## <a name="in-this-topic"></a>主题内容  
+## <a name="in-this-topic"></a>在本主题中  
  你可以学习如何：  
   
  [创建示例应用](#BKMK_Create_the_sample_app)  
@@ -304,7 +305,7 @@ ms.lasthandoff: 12/07/2017
   
 7.  **停止调试。** 在“新建项目”  “调试”菜单上，选择“单步执行” **Stop ging** （键盘： **Shift+F5**）。 这会结束调试会话。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [启动调试会话 (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)   
  [快速入门： 调试器导航 (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)   
  [快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   

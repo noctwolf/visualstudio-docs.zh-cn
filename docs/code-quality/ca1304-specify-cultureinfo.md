@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4cd654145fed46594fd2fcd076a20b30e393a23b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 932ac7e8f731974896991cea5ae504e452e9a036
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304：指定 CultureInfo
 |||  
@@ -44,9 +45,9 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>规则说明  
  当<xref:System.Globalization.CultureInfo>或<xref:System.IFormatProvider?displayProperty=fullName>未提供对象，则重载成员提供的默认值可能没有要包含在所有区域设置的效果。 此外，[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]成员选择默认区域性和格式设置基于可能不为你的代码正确的假设。 若要确保代码按预期方式适合你的方案，应提供区域性特定信息根据下列准则：  
   
--   如果将向用户显示的值，则使用当前区域性。 请参阅<xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>。  
+-   如果将向用户显示的值，则使用当前区域性。 请参阅 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>。  
   
--   如果将存储的值，并通过软件，即保存到文件或数据库，使用固定区域性。 请参阅<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>。  
+-   如果将存储的值，并通过软件，即保存到文件或数据库，使用固定区域性。 请参阅 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>。  
   
 -   如果不知道的值的目标，具有数据使用者或提供程序指定的区域性。  
   
@@ -77,5 +78,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>相关的规则  
  [CA1305：指定 IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [使用 CultureInfo 类](/dotnet/standard/globalization-localization/globalization#Cultures)  

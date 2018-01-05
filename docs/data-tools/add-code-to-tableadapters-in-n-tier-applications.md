@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 396e1132015c2eb37f06095f135dae878bfeb574
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 54df2144511e847988c6f11212e9c9a4941d0b38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>在 n 层应用程序中的 Tableadapter 添加代码
 你可以通过为 TableAdapter 创建分部类文件并将代码添加到它扩展 TableAdapter 的功能 (而不是将代码添加到*DatasetName*。DataSet.Designer 文件）。 分部类可以使划分到多个物理文件的特定类的代码。 有关详细信息，请参阅[部分](/dotnet/visual-basic/language-reference/modifiers/partial)或[分部 （类型）](/dotnet/csharp/language-reference/keywords/partial-type)。  

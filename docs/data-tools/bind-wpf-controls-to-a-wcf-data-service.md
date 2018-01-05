@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: ea1d53ef5fb99c161793670049fd5f473da1aa51
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: ec13e17aac37a24e92732b9b052147c7d9faa916
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 在本演练中，你将创建一个包含数据绑定控件的 WPF 应用程序。 这些控件将绑定到在 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] 中封装的客户记录。 你还将添加客户可用于查看和更新记录的按钮。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 12/12/2017
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
 你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  

@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c9746d150fb2a47b1ce874ad003afd86d178e9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9064ca9861f609499971b9f5188f5b0006458c15
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308：将字符串规范化为大写
 |||  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
  则可以安全地禁止显示一条警告消息，当您不需要安全决策基于 （例如，当在 UI 中显示时） 的结果。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [全球化警告](../code-quality/globalization-warnings.md)

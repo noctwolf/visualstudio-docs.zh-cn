@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f3c3be4f5a2cebda5b7fd0f705eefc0077b36f29
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>演练：对 C/C++ 代码进行缺陷分析
 本演练演示如何通过使用 C/c + + 代码的代码分析工具分析 C/c + + 代码以查找潜在的代码缺陷。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/15/2017
   
 -   批注源代码以改进代码缺陷分析。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
   
 -   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]。  
   
@@ -194,5 +195,5 @@ ms.lasthandoff: 11/15/2017
   
      生成项目，并且没有任何警告或错误。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：对托管代码进行代码缺陷分析](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0295b7379fbac1ae3e1c84afca651503d6984ba6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9ee207eb3e5c4babb5bcb9f7d88f9afd3908a3c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231：重写 ValueType.Equals 时应重载相等运算符
 |||  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>规则说明  
  在大多数编程语言中没有默认实现的值类型的相等运算符 （= =）。 如果您的编程语言支持运算符重载，则应考虑实现相等运算符。 其行为应与相同<xref:System.Object.Equals%2A>。  
   
- 相等运算符的重载实现中，不能使用默认的相等运算符。 这样将导致堆栈溢出。 若要实现相等运算符，请在实现使用 Object.Equals 方法。 例如：  
+ 相等运算符的重载实现中，不能使用默认的相等运算符。 这样将导致堆栈溢出。 若要实现相等运算符，请在实现使用 Object.Equals 方法。 例如:  
   
 ```vb  
 If (Object.ReferenceEquals(left, Nothing)) Then  
@@ -77,5 +78,5 @@ return left.Equals(right);
   
  [CA2218：重写 Equals 时重写 GetHashCode](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Object.Equals%2A?displayProperty=fullName>

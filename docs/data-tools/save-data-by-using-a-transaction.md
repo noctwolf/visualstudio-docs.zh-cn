@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 23cf5ee9ef7369d8c0f52adde639adad4abe3ae6
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 9f2373e3a851899d139360caf0f6bb8b6ab0efa5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何： 使用事务保存数据
 将数据在事务中保存通过<xref:System.Transactions>命名空间。 使用<xref:System.Transactions.TransactionScope>对象能够参与自动为您管理的事务。  
@@ -54,4 +55,4 @@ ms.lasthandoff: 11/09/2017
   
 ## <a name="see-also"></a>请参阅
 [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)  
-[演练： 将数据保存在事务中](../data-tools/save-data-in-a-transaction.md)  
+[演练：在事务中保存数据](../data-tools/save-data-in-a-transaction.md)  

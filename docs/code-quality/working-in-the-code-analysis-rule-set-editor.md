@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5a0fc10230c4c2b7638e1be75770872e0dcf4aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c832b29512bfd7339ab60044ece81f1626be9bc7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>使用代码分析规则集编辑器
 代码分析规则集编辑器使你能够指定自定义规则集中包含的规则，以及若要指定的操作。 你还可以指定当代码分析遇到与规则的冲突时要执行的操作。  
@@ -63,8 +64,8 @@ ms.lasthandoff: 10/31/2017
 |-----------|-----------------|  
 |**ID**|规则的标识符。|  
 |**类别**|除了在规则集中其成员身份，代码分析规则也按类别分组。 有关详细信息，请参阅[为托管代码警告的代码分析](../code-quality/code-analysis-for-managed-code-warnings.md)。|  
-|**Name**|规则的标题。|  
-|**Namespace**|规则的命名空间。|  
+|**名称**|规则的标题。|  
+|**命名空间**|规则的命名空间。|  
 |**目标类型**|指示规则是适用于本机、 托管，或数据库代码。|  
 |**操作**|在运行代码分析中违反规则时执行的操作。<br /><br /> **警告**-生成一个警告。<br /><br /> **错误**-生成错误。<br /><br /> **无**-禁用规则。<br /><br /> 你可以编辑操作字段。 将该值设置为 None 等同于清除该规则的复选框。|  
 |**源规则集**|包含规则的规则集。|  

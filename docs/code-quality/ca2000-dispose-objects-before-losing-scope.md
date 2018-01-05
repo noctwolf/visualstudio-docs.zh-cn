@@ -19,11 +19,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81c553a9ae45ed44e8c5d96f49f2063e6383e5ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 57b499756292a62c64b44f864042ffa740a14016
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000：超出范围前释放对象
 |||  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
 -   初始化可释放对象的成员不应在构造函数中的 using 语句。  
   
--   嵌套只能通过一个异常处理程序保护的构造函数。 例如，  
+-   嵌套只能通过一个异常处理程序保护的构造函数。 例如，应用于对象的  
   
     ```csharp
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -164,6 +165,6 @@ End Function
   
   [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.IDisposable>   
  [释放模式](/dotnet/standard/design-guidelines/dispose-pattern)

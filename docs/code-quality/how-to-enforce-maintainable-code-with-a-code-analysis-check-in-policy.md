@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d9697c7d6a216c08e34eb19287d22a76d67a55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 19d8761abea6934c59673c332ea09e8a0b4e6997
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：使用代码分析签入策略强制实现代码的可维护性
 开发人员可以使用代码度量工具来测量的复杂性和可维护性其代码，但不是能调用代码度量值作为签入策略的一部分。 但是，团队可以启用代码分析规则，验证他们的代码与代码度量标准的符合性和强制实施通过签入策略规则。 有关代码度量值的详细信息，请参阅[代码度量值](../code-quality/code-metrics-values.md)。  
@@ -56,8 +57,8 @@ ms.lasthandoff: 10/31/2017
   
     -   此外，如果你想违反规则时禁止生成，则选择**将警告视为错误**规则说明旁边的复选框。  
   
-3.  单击“确定”。 现在，新签入策略应用到以后进行签入时。  
+3.  单击 **“确定”**。 现在，新签入策略应用到以后进行签入时。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [代码度量值](../code-quality/code-metrics-values.md)   
  [创建和使用代码分析签入策略](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

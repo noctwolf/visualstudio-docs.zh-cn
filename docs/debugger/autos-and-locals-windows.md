@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2504807bd4717ec7f42ed059e7ef4d962c7441e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 77dd01333941e897628a40a5a5dc1749917dcb89
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>检查自动中的变量和 Visual Studio 中的局部变量窗口
 **自动**窗口 (调试时， **CTRL + ALT + V、 A**，或**调试 > Windows > 自动**) 和**局部变量**（时调试窗口**CTRL + ALT + V、 L**，或**调试 > Windows > 局部变量**) 是非常有用，当你想要在调试时，请参阅变量值。 “局部变量”  窗口显示在本地范围内定义的变量，它们通常为当前正在执行的函数或方法。 **“自动”** 窗口显示在当前行（调试器停止的位置）周围使用的变量。 在此窗口中显示哪些变量的完全是不同的语言。 请参阅下面的 [What variables appear in the Autos Window?](#bkmk_whatvariables) 下方。  
@@ -137,5 +138,5 @@ private static int subtractVars(int i, int j)
   
 ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器窗口](../debugger/debugger-windows.md)

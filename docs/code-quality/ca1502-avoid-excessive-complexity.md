@@ -18,11 +18,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c45ca232b555af1441502586a38c80f43c41edc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a643d71e334d7a9228afbb9ba95df2f4cbb558c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502：避免过度复杂
 |||  
@@ -92,5 +93,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>相关的规则  
  [CA1501：避免过度继承](../code-quality/ca1501-avoid-excessive-inheritance.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [测量托管代码的复杂性和可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

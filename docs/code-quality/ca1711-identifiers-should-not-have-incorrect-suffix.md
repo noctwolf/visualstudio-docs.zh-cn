@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e0701c93146b4cc460a7216d2f4159832389db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cde73eeec2b6a73f25f714c41976d3d0513e939
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711：标识符应采用正确的后缀
 |||  
@@ -74,6 +75,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>相关的规则  
  [CA1710：标识符应具有正确的后缀](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [特性](/dotnet/standard/design-guidelines/attributes)   
  [处理和引发事件](/dotnet/standard/events/index)  

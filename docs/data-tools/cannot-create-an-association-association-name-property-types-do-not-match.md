@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: c950abb08e937ded4511408367f7163f3b2e16de
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: be8bbbec67b70576aa3a059dd400d46c92137ab9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>无法创建关联&lt;关联名称&gt;-属性类型不匹配
 无法创建关联\<关联名称 >-属性类型不匹配。 属性没有匹配的类型：\<属性名称 >。  
@@ -33,9 +34,9 @@ ms.lasthandoff: 11/09/2017
   
 3.  检查**关联属性**并选择相同的数据类型的属性。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
 ## <a name="see-also"></a>请参阅
-[O/R 设计器消息](../data-tools/o-r-designer-messages.md)  
+[O-R 设计器消息](../data-tools/o-r-designer-messages.md)  
 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
 [如何： 创建 LINQ to SQL 类 （O/R 设计器） 之间的关联](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md) 

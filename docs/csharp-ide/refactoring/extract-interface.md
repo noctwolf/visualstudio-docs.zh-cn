@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.extractinterface
 dev_langs: csharp
-ms.openlocfilehash: 854e341a5c02b3bb4b0a596720a4899410550689
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 8123154159e34597c0c76e941cd2db5824c9478e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-an-interface-in-c"></a>提取在 C# 中的接口 #
 **新增功能：**允许你创建使用从类、 结构或接口的现有成员的接口。
@@ -48,12 +49,12 @@ ms.lasthandoff: 10/31/2017
    | **新的文件名称** | 将包含的接口将生成的文件的名称。 为具有接口名称，这将默认为我*ClassName*，其中*ClassName*是上面所选的类的名称。 |
    | **选择构成接口的公共成员** | 要提取到接口的项。  你可以选择你希望的任意数量。 |
 
-1. 单击“确定”。
+1. 单击 **“确定”**。
 
    将指定的名称的文件中立即创建接口。  此外，所选的类现在将实现该接口。
 
    ![生成的类](media/extractinterface_class.png)
    ![生成接口](media/extractinterface_interface.png)
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [重构 (C#)](../refactoring-csharp.md)

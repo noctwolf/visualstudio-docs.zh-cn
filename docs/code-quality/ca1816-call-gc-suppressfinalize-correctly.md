@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e99f722d211b2e1bd548f1bf22c995246f3e0b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d0287b570ed1ff5393ff0ff04b9e5d2252c29bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816：正确调用 GC.SuppressFinalize
 |||  
@@ -74,5 +75,5 @@ ms.lasthandoff: 10/31/2017
   
  [CA2216：可释放类型应声明终结器](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [释放模式](/dotnet/standard/design-guidelines/dispose-pattern)

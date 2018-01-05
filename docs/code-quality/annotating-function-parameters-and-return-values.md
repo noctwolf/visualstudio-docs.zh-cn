@@ -129,11 +129,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e256b519600a983886ac6d21317ef1757d7497f1
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: ac25f8bbda4431850f613f2b41b1d9ed4908c118
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>对函数参数和返回值进行批注
 本指南介绍了的批注的简单函数参数的典型用途-标量，以及指向结构和类-及大多数类型的缓冲区。  本文还介绍对批注的常见使用模式。 与功能相关的其他批注，请参阅[批注的函数行为](../code-quality/annotating-function-behavior.md)  
@@ -219,7 +220,7 @@ ms.lasthandoff: 11/15/2017
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     换而言之，最多存在缓冲区中的每个元素`s`前的状态处于有效后状态。  例如:   
+     换而言之，最多存在缓冲区中的每个元素`s`前的状态处于有效后状态。  例如:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -247,7 +248,7 @@ ms.lasthandoff: 11/15/2017
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     换而言之，最多存在缓冲区中的每个元素`s`前的状态处于有效后状态。  例如:   
+     换而言之，最多存在缓冲区中的每个元素`s`前的状态处于有效后状态。  例如:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -484,7 +485,7 @@ ms.lasthandoff: 11/15/2017
   
 -   `_Struct_size_bytes_(size)`  
   
-     适用于结构或类声明。  指示该类型的有效对象，可能与给定的字节数会大于声明的类型， `size`。  例如：  
+     适用于结构或类声明。  指示该类型的有效对象，可能与给定的字节数会大于声明的类型， `size`。  例如:  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
@@ -495,7 +496,7 @@ ms.lasthandoff: 11/15/2017
 ## <a name="related-resources"></a>相关资源  
  [代码分析团队博客](http://go.microsoft.com/fwlink/?LinkId=251197)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [对函数行为进行批注](../code-quality/annotating-function-behavior.md)   

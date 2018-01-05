@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f04a49c8c68fcc597ecd98471b46932d467b365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1c67e5963cdac0c9398ee2e4d54a4cd3347fee66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019：定义特性参数的访问器
 |||  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  在其构造函数，属性定义没有相应的属性的自变量。  
   
 ## <a name="rule-description"></a>规则说明  
- 特性可以定义强制实参，在对目标应用该特性时必须指定这些实参。 这些实参也称为位置实参，因为它们将作为位置形参提供给特性构造函数。 对于每一个强制变量，特性还必须提供一个相应的只读属性，以便可以在执行时检索该变量的值。 此规则检查每个构造函数参数，你已经定义对应的属性。  
+ 特性可以定义强制自变量，在对目标应用该特性时必须指定这些自变量。 这些自变量也称为位置自变量，因为它们将作为位置参数提供给特性构造函数。 对于每一个强制自变量，特性还必须提供一个相应的只读属性，以便可以在执行时检索该自变量的值。 此规则检查每个构造函数参数，你已经定义对应的属性。  
   
  特性还可以定义可选实参，可选实参也称为命名实参。 这些变量按名称提供给特性构造函数，并且必须具有相应的读/写属性。  
   
@@ -76,5 +77,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>相关的规则  
  [CA1813：避免使用未密封的特性](../code-quality/ca1813-avoid-unsealed-attributes.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [特性](/dotnet/standard/design-guidelines/attributes)

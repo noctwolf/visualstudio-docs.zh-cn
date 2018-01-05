@@ -20,11 +20,12 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9694985711ee8bc9b46725214ecc6df2d5020b1d
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: e1f714756d13fd4606362f8923f4746a5a85c8ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>使用代码分析来分析 C/C++ 代码质量
 通过在 Visual Studio 中使用代码分析来查找和修复代码缺陷，可以改进你的 C/C++ 代码。  
@@ -43,6 +44,6 @@ ms.lasthandoff: 11/15/2017
 |[使用 SAL 批注以减少 C/C++ 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)|了解有关该代码分析工具检测到调用方和被调用方之间的协定的冲突的批注功能。|  
 |[C/C++ 代码分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)|列出并说明代码分析警告。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析应用程序质量](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
  [分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

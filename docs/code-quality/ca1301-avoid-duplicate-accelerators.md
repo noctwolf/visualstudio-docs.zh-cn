@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 13d2f36014ab15aea3148ab4175a89b77deb4846
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a61e4c0ab9957772609c20623f0bc6ef7659a9d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301：避免快捷键重复
 |||  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
   
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Resources.ResourceManager?displayProperty=fullName>   
  [桌面应用中的资源](/dotnet/framework/resources/index)

@@ -17,11 +17,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f89420d19696c0be26a2fb0a9b9b405574325797
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e7e1e0f504c9d813b2dbcacca1689475ec42aeb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-application-errors"></a>代码分析应用程序错误
 本节是由托管的代码分析工具生成的错误消息的引用。 若要获取特定的错误消息的帮助，请键入错误号**查找**框中的索引。  

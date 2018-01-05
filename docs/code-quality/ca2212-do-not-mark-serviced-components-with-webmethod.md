@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44c29215301212a12c5652fbf1fe91af23db1082
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ad9d4b25e7143f9c2e8cc597d432b52e3e4a8132
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212：不要使用 WebMethod 标记服务组件
 |||  
@@ -44,6 +45,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
  不禁止显示此规则发出的警告。 没有任何其中结合这些元素是正确的情况。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName>   
  <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>

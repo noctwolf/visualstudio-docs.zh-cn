@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11e50cb87364a85d0c97ae5e566b1209696febbd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 066c78158b688db8164a5ebf23dbe957c7c324ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210：程序集应具有有效的强名称
 |||  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
  如果环境中使用程序集仅禁止显示此规则的警告篡改的内容并不是问题的位置。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>   
  <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>   
  [如何：使用强名称为程序集签名](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   

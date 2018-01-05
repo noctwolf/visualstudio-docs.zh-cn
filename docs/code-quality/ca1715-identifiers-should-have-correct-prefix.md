@@ -18,11 +18,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e16e5cf4049ed2bf813cad20fa1be16f8f95dd8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8a87359b0a4d1ac45199e4f233a7bf3174ba2bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715：标识符应具有正确的前缀
 |||  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="cause"></a>原因  
  外部可见的接口的名称不以大写的 I 开头。  
   
- - 或 -  
+ 或  
   
  上的外部可见的类型或方法的泛型类型参数的名称开头不大写 ' T '。  
   

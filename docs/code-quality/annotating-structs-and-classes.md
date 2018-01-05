@@ -27,11 +27,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 651108f2c917fb81857e3466384a9bfebada4a4b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 8aafad0da7581f1fa07f1e0134df0032655d679a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="annotating-structs-and-classes"></a>批注结构和类
 还可以通过使用批注，即可充当固定协定批注结构和类成员，它们将假定应满足的任何函数调用或函数入口/出口涉及该封闭结构作为参数或结果值。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/15/2017
   
      具有读取和写入大小在元素 （或字节） 为指定的字段`size`。  
   
-     适用于结构或类声明。  指示该类型的有效对象可能会大于声明的类型，使用指定的字节数`size`。  例如：  
+     适用于结构或类声明。  指示该类型的有效对象可能会大于声明的类型，使用指定的字节数`size`。  例如:  
   
     ```cpp  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 11/15/2017
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   

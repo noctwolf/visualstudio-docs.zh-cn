@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: edd0bd14a75dfd58ca043bfaa663e2cfb2660e75
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 3d6f514546c298a134785740fe7bbf948031bc74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107：检查 deny 权限和 permit only 权限的使用情况
 |||  
@@ -76,7 +77,7 @@ ms.lasthandoff: 12/12/2017
 **LinkDemand： 调用方的拒绝不起 LinkDemand 使用断言的权限。**  
 **LinkDemand： 调用方的拒绝不起使用 LinkDemand 保护代码。**  
 **LinkDemand： 此拒绝不起使用 LinkDemand 保护代码。**   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName>   
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>   
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   

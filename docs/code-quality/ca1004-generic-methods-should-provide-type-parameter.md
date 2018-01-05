@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 01e795c4505b71f337212f85c3946f8800fbc05d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4ca506d827c954a9863a6a37efd0980ecf4d8452
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004：泛型方法应提供类型参数
 |||  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  外部可见的泛型方法的参数签名不包含对应的方法的所有类型参数的类型。  
   
 ## <a name="rule-description"></a>规则说明  
- 推理是指由传递给泛型方法的参数的类型来确定该方法的类型参数，而不是显式指定类型参数。 若要启用推理，泛型方法的参数签名必须包含与该方法的类型参数属于相同类型的参数。 在这种情况下，不必指定类型参数。 当你对所有类型参数都使用推理时，则调用泛型和非泛型实例方法语法是相同的。 这简化了泛型方法的可用性。  
+ 推理是指由传递给泛型方法的自变量类型来确定该方法的类型参数，而不是显式指定类型参数。 若要启用推理，泛型方法的参数签名必须包含与该方法的类型参数属于相同类型的参数。 在这种情况下，不必指定类型参数。 当你对所有类型参数都使用推理时，则调用泛型和非泛型实例方法语法是相同的。 这简化了泛型方法的可用性。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  若要修复与此规则的冲突，请更改设计，以便的参数签名包含每个类型参数的方法相同的类型。  
@@ -65,5 +66,5 @@ ms.lasthandoff: 10/31/2017
   
  [CA1007：在适用处使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [泛型](/dotnet/csharp/programming-guide/generics/index)

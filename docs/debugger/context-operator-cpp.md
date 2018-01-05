@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fc52fb07cd4da994df07410953787272e3cb724
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 1cae22698a0200dc0971f45dbcfd7b28005f8f0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>上下文运算符在 Visual Studio 调试器 （c + +）
 可使用 C++ 中的上下文运算符来限定断点位置、变量名称或表达式。 上下文运算符可用于指定来自外部范围的但被本地名称隐藏的名称。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
 -   *模块* 是模块的名称。 您可以使用完整路径来消除同名模块之间的歧义。  
   
-     如果 *模块* 路径包括逗号、嵌入空格或大括号，则必须在路径两边使用引号，以便上下文分析器能够正确识别该字符串。 单引号被视为 Windows 文件名的一部分，因此必须使用双引号。 例如，  
+     如果 *模块* 路径包括逗号、嵌入空格或大括号，则必须在路径两边使用引号，以便上下文分析器能够正确识别该字符串。 单引号被视为 Windows 文件名的一部分，因此必须使用双引号。 例如，应用于对象的  
   
     ```C++  
     {,,"a long, long, library name.dll"} g_Var  

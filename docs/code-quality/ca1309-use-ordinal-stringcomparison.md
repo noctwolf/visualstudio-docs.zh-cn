@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba777ea4cd272a1392413a2ecbb52b9f45a3d71b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cf913eea3f156595c9b9194b3d8a74e71b848367
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309：使用序号 StringComparison
 |||  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
  它是安全的库或应用程序旨在为有限的本地用户或应使用当前区域性的语义时禁止显示此规则的警告。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [全球化警告](../code-quality/globalization-warnings.md)   
  [CA1307：指定 StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

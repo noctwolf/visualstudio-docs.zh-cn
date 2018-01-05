@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20b31e4ea20fd3d1a4ec254507962bf4e8946bb4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 927e13266bf308096592fb5714e1247f4b596ca8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815：重写值类型上的 Equals 和相等运算符
 |||  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  公共值类型不会覆盖<xref:System.Object.Equals%2A?displayProperty=fullName>，或未实现相等运算符 （= =）。 此规则不会检查枚举。  
   
 ## <a name="rule-description"></a>规则说明  
- 对于值类型，继承的实现<xref:System.Object.Equals%2A>使用反射库，并比较所有字段的内容。 反射需要消耗大量计算资源，可能没有必要比较每一个字段是否相等。 如果你指望用户能比较或排序的实例，或将其用作哈希表键，则值类型应实现<xref:System.Object.Equals%2A>。 如果您的编程语言支持运算符重载，你还应提供相等和不相等运算符的实现。  
+ 对于值类型，继承的实现<xref:System.Object.Equals%2A>使用反射库，并比较所有字段的内容。 反射需要消耗大量计算资源，可能没有必要比较每一个字段是否相等。 如果你指望用户能比较或排序的实例，或将其用作哈希表键，则值类型应实现<xref:System.Object.Equals%2A>。 如果编程语言支持运算符重载，则还应提供相等和不等运算符的实现。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  若要修复与此规则的冲突，提供的实现<xref:System.Object.Equals%2A>。 如果你知道如何操作，实现相等运算符。  
@@ -67,5 +68,5 @@ ms.lasthandoff: 10/31/2017
   
  [CA2226：运算符应有对称重载](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Object.Equals%2A?displayProperty=fullName>

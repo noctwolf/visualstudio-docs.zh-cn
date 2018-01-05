@@ -19,11 +19,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5e53d813d9b2dcefd2b2d19da2a76b6c0d1f989
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 549914476db028cc5135de3c954ac841ab2da628
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remove-parameters-refactoring-c"></a>移除参数重构 (C#)
 `Remove Parameters`是的重构操作，可以轻松地删除方法、 索引器或委托的参数。 删除参数更改声明;在调用该成员的所有位置，移除的参数以反映新的声明。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  使用**参数**字段中，将光标置于`int i`，然后单击**删除**。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
 6.  在**预览更改-删除参数**对话框中，单击**应用**。  
   
@@ -88,5 +89,5 @@ MyMethod(param2);
   
  重构操作，`param1`将不会递增。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [重构 (C#)](refactoring-csharp.md)

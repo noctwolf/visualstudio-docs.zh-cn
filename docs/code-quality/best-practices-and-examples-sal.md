@@ -12,17 +12,18 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cfd56596a49bc562ded401dc65009bcde73cec2d
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 1d5daf0f5d79683b3c6ef7f97d5f5113d294f6ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳做法和示例 (SAL)
 下面是一些关于充分利用源代码批注语言 (SAL)，并避免一些常见问题的方法。  
   
 ## <a name="in"></a>_In\_  
- 如果函数应写入元素，请使用 `_Inout_` 而不是 `_In_`。 这在从旧的宏自动转换为 SAL 的情况下尤为重要。 在 SAL 之前，许多程序员使用宏作为注释，这些宏命名为 `IN`、`OUT`、`IN_OUT`，或是这些宏的变体。 尽管建议您将这些宏转换为 SAL，但在转换时应谨慎，因为代码自写入原型以来可能已经发生改变，并且旧的宏可能已不再反映代码的作用。 请特别注意 `OPTIONAL` 注释宏，因为它经常错误放置；例如，在逗号错误的一边。  
+ 如果函数应写入元素，请使用 `_Inout_` 而不是 `_In_`。 这在从旧的宏自动转换为 SAL 的情况下尤为重要。 在 SAL 之前，许多程序员使用宏作为注释，这些宏命名为 `IN`、`OUT`、`IN_OUT`，或是这些宏的变体。 尽管建议你将这些宏转换为 SAL，但在转换时应谨慎，因为代码自写入原型以来可能已经发生改变，并且旧的宏可能已不再反映代码的作用。 请特别注意 `OPTIONAL` 注释宏，因为它经常错误放置；例如，在逗号错误的一边。  
   
 ```cpp  
   
@@ -240,7 +241,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
   
  在此示例中，`_Out_opt_` 声明作为前置条件的一部分，指针可以为 NULL。 但是，前置条件不能应用于返回值。 在这种情况下，正确的批注为 `_Ret_maybenull_`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   
