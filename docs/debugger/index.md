@@ -3,11 +3,11 @@ layout: LandingPage
 title: "在 Visual Studio 中调试应用 | Microsoft Docs"
 description: "了解如何使用 Visual Studio 2017 并以你喜欢的语言来调试适用于你的平台和设备的应用程序、服务和工具。"
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 5a526302d11b259c87317ee14c660b0d6fef5541
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 87f55a02e4e37d4daa8da0282182f7e3a45a0efa
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugging-in-visual-studio"></a>在 Visual Studio 中进行调试
 
@@ -69,7 +69,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
         <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/getting-started-with-the-debugger#video">
+        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
