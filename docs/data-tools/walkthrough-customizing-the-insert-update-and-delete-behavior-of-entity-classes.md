@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2727f17665d845029fcf32dbcd12dd7603dad519
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: e4edcc21986ae0fd033228971697057932e63670
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练： 自定义插入、 更新和删除的实体类的行为
 [LINQ to SQL Visual Studio 中的工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用于创建和编辑的可视化设计图面[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]基于数据库中的对象的类 （实体类）。 通过使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，你可以使用 LINQ 技术访问 SQL 数据库。 有关详细信息，请参阅 [LINQ（语言集成查询）](/dotnet/csharp/linq/)。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/12/2017
   
 -   配置 Customer 类以使用存储过程执行插入、更新和删除。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。  
   
 1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server 版本的下载页](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**数据存储和处理**工作负荷，也可以作为单个组件。  
@@ -226,7 +227,7 @@ ms.lasthandoff: 12/12/2017
   
 18. 映射**Original_CustomerID**方法自变量**CustomerID （原始）**类属性。  
   
-19. 单击“确定”。  
+19. 单击 **“确定”**。  
   
 > [!NOTE]
 >  在本演练中，虽然以下事实并不会产生问题，但仍然需要注意：[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 会在插入和更新操作期间自动为标识（自动递增）列、rowguidcol（数据库生成的 GUID）列以及时间戳列处理数据库生成的值。 在其他列类型中，数据库生成的值将意外导致 Null 值。 若要返回数据库生成的值，应手动将 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 设置为 `true` 并将 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 设置为下列值之一：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
@@ -264,7 +265,7 @@ ms.lasthandoff: 12/12/2017
   
 -   在更新过程中实现并发检查。 有关信息，请参阅[开放式并发： 概述](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview)。  
   
--   添加 LINQ 查询以筛选数据。 有关信息，请参阅[LINQ 查询 (C#) 简介](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)。  
+-   添加 LINQ 查询以筛选数据。 有关信息，请参阅[LINQ 查询 (C#) 简介](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)。  
   
 ## <a name="see-also"></a>请参阅
 [LINQ to SQL Visual Studio 中的工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     

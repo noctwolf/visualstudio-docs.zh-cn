@@ -14,11 +14,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39d3871fcfbd3702e2ad198f2061be41dc51ac18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5989a2c03c5a6e3f829c0183c797204e3311f5d2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="function-debug-interface-access-sdk"></a>函数（调试接口访问 SDK）
 每个函数都由`SymTagFunction`符号。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 |[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE`如果该函数包含[setjmp](/cpp/c-runtime-library/reference/setjmp)调用 （仅在 DIA SDK V8.0 或更高版本）。|  
 |[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE`如果函数具有从中断 （仅在 DIA SDK V8.0 或更高版本） 返回。|  
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|`TRUE`如果函数是虚拟的简介。|  
-|[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE`如果该函数已标记有之一[inline、 __inline、 \__forceinline](/cpp/cpp/inline-functions-cpp.md)属性。|  
+|[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE`如果该函数已标记有之一[inline、 __inline、 \__forceinline](/cpp/cpp/inline-functions-cpp)属性。|  
 |[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE`如果该函数将标有[裸](/cpp/cpp/naked-cpp)属性 （仅在 DIA SDK V8.0 或更高版本）。|  
 |[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE`如果该函数是静态的 （仅在 DIA SDK V8.0 或更高版本）。|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|函数的代码中，从位置开始的字节数。|  
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|如果虚函数，然后虚函数表中的偏移量。|  
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`如果该函数被标记为易失性。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)   
  [符号类型的词法层次结构](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)   

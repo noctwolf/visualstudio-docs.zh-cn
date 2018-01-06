@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f1ff74931ac5433ff22330bc6f218315ccaf259
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b45519721d748b7656ccb593d6d4f3c418a7a292
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 此方法使用不区分大小写的搜索返回的枚举常数的名称与关联的值。  
@@ -52,6 +53,6 @@ int GetValueFromStringCaseInsensitive(
 ## <a name="remarks"></a>备注  
  此方法是不区分大小写。 如果需要区分大小写的搜索时 （例如，在其中名称区分大小写的 c + + 等语言），使用[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   
  [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)

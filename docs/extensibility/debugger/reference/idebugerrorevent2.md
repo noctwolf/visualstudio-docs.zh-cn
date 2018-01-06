@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17d5686985ee6cfae0ba3765252cd50f078e362e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 35a6cecf5715eb0cf79a0468cf8da35e96d3dba2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 此接口指定的错误消息报告给用户。  
@@ -45,13 +46,13 @@ IDebugErrorEvent2 : IUnknown
 ## <a name="remarks"></a>备注  
  如果调试引擎遇到错误时，它可以使用此接口来通过 Visual Studio 消息报告给用户。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

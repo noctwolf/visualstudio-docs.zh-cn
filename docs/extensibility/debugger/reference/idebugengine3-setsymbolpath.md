@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 77a5f294acf60eebc745cb78042e0ea3431fc998
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8cc60a266a238ee8d3635637b907ce88933b29a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 设置的路径或调试符号中搜索的路径。  
@@ -55,7 +56,7 @@ int SetSymbolPath(
 ## <a name="remarks"></a>备注  
  字符串`szSymbolSearchPath`是用分号分隔，搜索符号分隔的一个或多个路径的列表。 这些路径可以是本地路径、 UNC 样式路径或 URL。 这些路径也可以是不同类型的组合。 如果路径是 UNC (例如， \\\Symserver\Symbols)，然后如果路径是到符号服务器，并且应能够从该服务器，它们在缓存中指定的路径加载符号，应确定的调试引擎`szSymbolCachePath`。  
   
- 符号路径还可以包含一个或多个缓存位置。 首先，列出按优先级顺序，最高的优先级缓存并隔开缓存 * 符号。 例如:   
+ 符号路径还可以包含一个或多个缓存位置。 首先，列出按优先级顺序，最高的优先级缓存并隔开缓存 * 符号。 例如:  
   
 ```  
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*http://msdl.microsoft.com  
@@ -63,6 +64,6 @@ int SetSymbolPath(
   
  [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)方法执行的符号的实际负载。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)   
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

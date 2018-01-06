@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e4b7d83f40607dbb94371e4ca3244a9bb5b9a5b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 896370d83634580e46f666a8fb9f56f768bf06a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 此接口提供多线程调试支持。  
@@ -47,12 +48,12 @@ IDebugEngineProgram2 : IUnknown
 ## <a name="remarks"></a>备注  
  Visual Studio 会调用此接口以响应[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件并设置该程序的"监视的线程步骤"和"监视的表达式评估上线程"状态。 [停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)每当调用的程序即将停止; 此方法为提供程序终止所有线程的机会。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
