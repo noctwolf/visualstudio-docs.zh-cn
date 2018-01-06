@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c3b336305e0365d6a1bd014e24bf548e38c7848
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 137c584b787bb0534770ca6f16bd8b326b8f1acf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functiontype"></a>FunctionType
 每个唯一的函数签名由`SymTagFunctionType`符号。 每个参数标识为具有的类子符号`SymTagFunctionArgType`标记。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE`如果该函数未对齐。|  
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`如果该函数被标记为易失性。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [符号类型的类层次结构](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)   
  [FunctionArgType](../../debugger/debug-interface-access/functionargtype.md)

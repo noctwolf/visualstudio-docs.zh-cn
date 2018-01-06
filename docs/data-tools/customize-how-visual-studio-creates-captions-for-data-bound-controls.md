@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 86f0e451fe81875868db0d6ddcd9cead790800d3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 60d98d6b8cefc2f7fb7829d841001f92bd9063de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自定义 Visual Studio 如何创建数据绑定控件的标题
 当拖动项时从[数据源窗口](add-new-data-sources.md)拖到设计器，特别注意派上用场： 标题标签中的列名称重新格式化为一个更具可读性的字符串，当两个或更多的单词发现连接在一起。 你可以自定义创建的方式在其中这些标签，通过设置**SmartCaptionExpression**， **SmartCaptionReplacement**，和**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 设计器**注册表项。  
@@ -108,5 +109,5 @@ ms.lasthandoff: 11/09/2017
   
     下一次拖动项时从**数据源**标题标签窗口中，创建的未修改的标题。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)

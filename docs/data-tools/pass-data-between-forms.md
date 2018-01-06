@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f401224657e64922fc9f6102a33eaf1cf824a556
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: 7704b8f4af9f6858e476f4075c6f38cda3052118
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pass-data-between-forms"></a>窗体之间传递数据
 本演练提供了有关将数据从一个窗体传递到另一个窗体的分步说明。 使用客户和订单表，从 Northwind，一种形式允许用户选择一个客户，并第二种形式显示所选的客户的订单。 本演练演示如何从第一个窗体接收数据的第二个窗体上创建的方法。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 11/07/2017
   
 -   在窗体间传递数据。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。  
   
 1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server 版本的下载页](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**数据存储和处理**工作负荷，也可以作为单个组件。  
@@ -207,5 +208,5 @@ ms.lasthandoff: 11/07/2017
   
 -   添加将数据保存回数据库的功能。 有关详细信息，请参阅[将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

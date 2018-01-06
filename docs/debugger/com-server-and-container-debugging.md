@@ -24,11 +24,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 558640368021f3556db479fc431c66dae266c9a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d1e4ec34b55e9e24c33157446cd74262a640d4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="com-server-and-container-debugging"></a>调试 COM 服务器和容器
 COM 应用程序执行若干不直接受程序员控制的任务。 DLL 间的通信、对象的使用计数和剪贴板操作只是可能遇到意外行为的少数几个情况。 发生这种情况时，第一步是抓住问题的根源。  
@@ -56,5 +57,5 @@ COM 应用程序执行若干不直接受程序员控制的任务。 DLL 间的�
   
  访问*项目*属性页对话框中，右键单击解决方案资源管理器中的项目，然后从快捷菜单选择属性。 若要找到“命令行自变量”属性，请展开“配置属性”类别并单击“调试”页。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)

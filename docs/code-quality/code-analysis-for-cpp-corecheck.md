@@ -12,11 +12,12 @@ ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a129fcc5cfabb46dfa545d7f70e291b121ee5353
-ms.sourcegitcommit: 24f81b8fb59722cf4a856005227f6a29bb2990cd
+ms.workload: cplusplus
+ms.openlocfilehash: c17574722804409b58d648af66b255888e945db2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C + + 核心准则检查程序参考
 本部分列出了 c + + 核心准则检查程序警告。 有关代码分析的信息，请参阅[/analyze （代码分析）](/cpp/build/reference/analyze-code-analysis)和[快速入门： C/c + + 代码分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)。  
@@ -234,5 +235,5 @@ C26483 STATIC_INDEX_OUT_OF_RANGE:
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)   
   表达式 %expr%： 指针 decay 到任何数组。 请参阅[c + + 核心准则 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [使用 c + + 核心准则检查器](using-the-cpp-core-guidelines-checkers.md)

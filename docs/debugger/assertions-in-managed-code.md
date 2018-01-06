@@ -26,16 +26,17 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 283903076a5f6e465f3cb87be7d6710af8d914ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e60235e497f770d7e8ce30e27c3a86143f7144e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assertions-in-managed-code"></a>托管代码中的断言
 断言（或 `Assert` 语句）测试您指定为 `Assert` 语句的参数的条件。 如果此条件的计算结果为 true，则不发生操作。 如果此条件的计算结果 false，则断言失败。 如果正在使用调试版本运行，则程序将进入中断模式。  
   
-##  <a name="BKMK_In_this_topic"></a> 主题内容  
+##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  [在 System.Diagnostics Namespace 中断言](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
   
  [Debug.Assert 方法](#BKMK_The_Debug_Assert_method)  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
  C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 你可以使用来实现相同的效果<xref:System.Diagnostics.Trace>类与条件编译，如`#ifdef DEBUG`...`#endif`.  
   
- [主题内容](#BKMK_In_this_topic)  
+ [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_Debug_Assert_method"></a>Debug.Assert 方法  
  可随意使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 方法测试条件（如果代码正确，该条件应为 true）。 例如，假设已编写一个整数除法函数。 根据数学规则，除数绝不能为零。 可以使用断言测试这一点：  
@@ -109,7 +110,7 @@ savingsAccount.Withdraw ( amount );
   
  与对 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 的调用不同，对 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 的调用会增加发行版的开销。  
   
- [主题内容](#BKMK_In_this_topic)  
+ [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Side_effects_of_Debug_Assert"></a>Debug.Assert 的副作用  
  在使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 时，确保 `Assert` 中的任何代码不会更改程序的结果（如果移除 `Assert`）。 否则，可能会意外地引入一个只在程序的发行版中出现的 Bug。 对于包含函数或过程调用的断言要特别小心，如下面的示例：  
@@ -138,7 +139,7 @@ Debug.Assert ( temp != 0 );
   
  甚至在使用 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 时，也需要避免将函数调用放置到 `Assert` 语句中。 这样的调用应是安全的，因为发行版中没有消除 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 语句。 但是，如果习惯上避免这样的结构，则使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 时犯错的可能性会很小。  
   
- [主题内容](#BKMK_In_this_topic)  
+ [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Trace_and_Debug_Requirements"></a>跟踪和调试需求  
  如果使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 向导创建项目，则默认情况下，“发布”和“调试”配置中都定义了 TRACE 符号。 默认情况下，只在调试版本中定义 DEBUG 符号。  
@@ -172,7 +173,7 @@ Debug.Assert ( stacksize > 0 );
 Trace.Assert ( stacksize > 0 );   
 ```  
   
- 第二个和第三个参数（如果有）必须是字符串。 如果调用带有两个或三个参数的 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>，则第一个参数为条件。 该方法检查此条件，如果结果为 false，则输出第二个和第三个字符串。 下面的示例演示与以下两个参数一起使用的 <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName>：  
+ 第二个和第三个自变量（如果有）必须是字符串。 如果调用带有两个或三个参数的 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>，则第一个参数为条件。 该方法检查此条件，如果结果为 false，则输出第二个和第三个字符串。 下面的示例演示与以下两个参数一起使用的 <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName>：  
   
 ```VB  
 Debug.Assert(stacksize > 0, "Out of stack space")  
@@ -197,7 +198,7 @@ Debug.Assert ( stacksize > 100, "Out of stack space" , "Failed in inctemp" );
 Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );   
 ```  
   
- [主题内容](#BKMK_In_this_topic)  
+ [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Customizing_Assert_behavior"></a>自定义断言行为  
  如果在用户界面模式中运行你的应用程序`Assert`方法显示**断言失败**对话框中的条件失败时。 断言失败时发生的操作由控制<xref:System.Diagnostics.Debug.Listeners%2A>或<xref:System.Diagnostics.Trace.Listeners%2A>属性。  
@@ -210,12 +211,12 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  有关详细信息，请参阅[跟踪侦听器](/dotnet/framework/debug-trace-profile/trace-listeners)。  
   
- [主题内容](#BKMK_In_this_topic)  
+ [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Setting_assertions_in_configuration_files"></a>在配置文件中设置断言  
  你可以在程序配置文件和代码中设置断言。 有关详细信息，请参阅<xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>或<xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>   
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>   
  [调试器安全](../debugger/debugger-security.md)   

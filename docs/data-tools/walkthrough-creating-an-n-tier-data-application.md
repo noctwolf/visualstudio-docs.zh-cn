@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 22ea6a58453de8c28703dbe0252ab6370be55bf3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 7cc4d8420cd823964aeed790a412e462b14634c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>演练：创建 N 层数据应用程序
 *N 层*数据应用程序是应用程序访问数据且分为多个逻辑层，或*层*。 通过将应用程序组件分离到相对独立的层中，可以提高应用程序的可维护性和可伸缩性。 该结构之所以具有这种优点，是因为它有利于采用可应用于单个层而无需重新设计整个解决方案的新技术。 N 层体系结构包括一个表示层、一个中间层和一个数据层。 中间层通常包括数据访问层、业务逻辑层和共享组件（例如身份验证和验证）。 数据层则包括关系数据库。 N 层应用程序通常将敏感信息存储在中间层的数据访问层中，目的是将它们与访问表示层的最终用户隔离。 有关详细信息，请参阅[N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/09/2017
   
 ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")本主题的视频版本，请参阅[视频帮助： 创建 N 层数据应用程序](http://go.microsoft.com/fwlink/?LinkId=115188)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。  
   
 1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server 版本的下载页](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**.NET 桌面开发**工作负荷，也可以作为单个组件。  
@@ -123,7 +124,7 @@ ms.lasthandoff: 11/09/2017
   
      如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。  
   
-     - 或 -  
+     或  
   
      选择**新连接**以打开**添加连接**对话框。  
   
@@ -219,7 +220,7 @@ ms.lasthandoff: 11/09/2017
   
 3.  选择这两个**DataAccessTier**和**DataEntityTier**项目。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
 ## <a name="adding-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>向服务中添加函数以调用数据访问层中的 GetCustomers 和 GetOrders 方法  
  现在数据访问层包含返回数据的方法，接下来要在数据服务中创建调用这些方法的方法。  
@@ -380,7 +381,7 @@ MaxReceivedMessageSize 的默认值不足够大以保存从 Customers 和 Orders
   
 -   将其他方法添加到服务，以将数据更新回数据库。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [处理在 n 层应用程序中的数据集](../data-tools/work-with-datasets-in-n-tier-applications.md)   
  [分层更新](../data-tools/hierarchical-update.md)   
  [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)

@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9dc8bc777d1818a50e727787bdf024036a5cb378
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: c45ea549f17d71fd524a96e7d019c2b0d86bc628
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>演练： 在 Windows 窗体中创建一个简单的 WCF 服务
 本演练演示如何创建一个简单[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]服务并进行测试，然后从 Windows 窗体应用程序访问它。  
@@ -129,5 +130,5 @@ ms.lasthandoff: 10/31/2017
   
      ![窗体显示结果](../data-tools/media/wcf10.png "wcf10")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

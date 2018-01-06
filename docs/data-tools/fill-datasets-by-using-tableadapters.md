@@ -23,11 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f93a0d11435a060806a89db48b2c9e81efebe3f3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e338335263a9c0757bbf6305a42fd092d4f90c04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>通过使用 Tableadapter 填充数据集
 TableAdapter 组件填充具有基于一个或多个查询或你指定的存储的过程的数据库中的数据的数据集。 Tableadapter 还可以执行添加、 更新和删除要保留对数据集所做的更改的数据库上。 你可以发出到任何特定的表不相关的全局命令。  
@@ -53,7 +54,7 @@ TableAdapter 组件填充具有基于一个或多个查询或你指定的存储�
   
  ![在客户端应用程序中的数据流](../data-tools/media/clientdatadiagram.gif "ClientDataDiagram")  
   
- 虽然 Tableadapter 的设计也考虑了**数据集设计器**，不会作为嵌套类的生成的 TableAdapter 类<xref:System.Data.DataSet>。 它们位于单独的命名空间中特定于每个数据集。 例如，如果你有一个名为`NorthwindDataSet`，与关联的 Tableadapter<xref:System.Data.DataTable>中`NorthwindDataSet`都会出现在`NorthwindDataSetTableAdapters`命名空间。 若要以编程方式访问特定的 TableAdapter，您必须声明 TableAdapter 的新实例。 例如:   
+ 虽然 Tableadapter 的设计也考虑了**数据集设计器**，不会作为嵌套类的生成的 TableAdapter 类<xref:System.Data.DataSet>。 它们位于单独的命名空间中特定于每个数据集。 例如，如果你有一个名为`NorthwindDataSet`，与关联的 Tableadapter<xref:System.Data.DataTable>中`NorthwindDataSet`都会出现在`NorthwindDataSetTableAdapters`命名空间。 若要以编程方式访问特定的 TableAdapter，您必须声明 TableAdapter 的新实例。 例如:  
   
  [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
  [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]  

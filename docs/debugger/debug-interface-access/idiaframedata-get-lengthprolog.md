@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bcf3e7feada0ba35e9001ed7b3f17167cdb4de7a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d01464b857b7cfc52f66b7cbd41a70ce4705df6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
 检索块中的序言代码的字节的数。  
@@ -41,5 +42,5 @@ HRESULT get_lengthProlog (
 ## <a name="remarks"></a>备注  
  序言代码是一系列说明，可以保留寄存器、 设置的 CPU 状态，并建立函数的堆栈。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

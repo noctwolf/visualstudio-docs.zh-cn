@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4ae00a8b3a51b088100d4a27893dd100d5d7ba71
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: af4e082bfa3e1b7669eb43218977b03a47c2f0bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>单独的数据集和 tableadapter 分离到不同的项目
 类型化数据集已得到增强，以便[Tableadapter](create-and-configure-tableadapters.md)和数据集类可以生成到单独的项目。 这使你可以快速分离各应用程序层及生成 n 层数据应用程序。  

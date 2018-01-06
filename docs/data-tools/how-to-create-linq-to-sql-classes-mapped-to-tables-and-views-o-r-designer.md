@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 318acd282090dd17fcfd7fd12e7370e906c67806
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 3d295cc9527aae2f566f5ec4d1ba92a2b129fbd4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>如何： 创建 LINQ to SQL 类映射到表和视图 （O/R 设计器）
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]映射到数据库表和视图的类称为*实体类*。 实体类映射到记录，而一个实体类的各个属性则映射到构成一条记录的各个列。 创建通过拖动表或视图从基于数据库表或视图的实体类**服务器资源管理器**/**数据库资源管理器**到[LINQ to SQL 中的工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)。 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]生成这些类并应用特定的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 属性来启用 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 功能（<xref:System.Data.Linq.DataContext> 的数据通信和编辑功能）。 有关详细信息[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]类，请参阅[LINQ to SQL 对象模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  将项从**数据源**拖到窗体的窗口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [LINQ to SQL Visual Studio 中的工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [演练： 创建 LINQ to SQL 类 （O R 设计器）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
  [DataContext 方法 （O/R 设计器）](../data-tools/datacontext-methods-o-r-designer.md)   

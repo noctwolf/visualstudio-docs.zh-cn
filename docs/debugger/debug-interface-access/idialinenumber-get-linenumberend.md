@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d87d8b6975a68f74e6900ef85ea9a19c5cfa810
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 032e793a8660230bf910f3303c15abc97ec0335d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
 检索的语句或表达式的结束位置基于 1 的源代码行号。  
@@ -38,5 +39,5 @@ HRESULT get_lineNumberEnd (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a19dee7c2b31df52a379f6ef2044a862baed7972
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 51768055893ccdc1479a724a44a7b6dbeb24877b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="baseclass"></a>BaseClass
 用户定义类型 (UDT) 符号每个基类由具有的子项`SymTagBaseClass`标记。 [Idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)属性为基础的 UDT，包含符号和用户定义的基础类型的所有属性都都可以作为此 BaseClass 符号的一部分。  
@@ -63,6 +64,6 @@ ms.lasthandoff: 10/31/2017
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|虚拟表形状符号 ID。|  
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`如果基类标记为易失性。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [符号类型的类层次结构](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [UDT](../../debugger/debug-interface-access/udt.md)

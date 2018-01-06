@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30890b66baf10f5000a9244e85a36000ea26c181
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0bf987771019755754098ad29a8d178082c59bd5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 将打开并准备与.exe/.dll 文件相关联的调试数据。  
@@ -46,7 +47,7 @@ HRESULT loadDataForExe (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了一些可能的错误代码为此方法。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|无法打开该文件，或该文件具有无效的格式。|  
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|  
@@ -84,7 +85,7 @@ if (FAILED(hr))
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)   
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   

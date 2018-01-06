@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: e6ed4bf0cb025feb2a4f52084857d9bdf5394770
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: 403fe906172f31a979d9b714b8982fb5932c5b72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库 （多个表）
 应用程序开发中最常用方案之一是在 Windows 应用程序窗体上显示数据、编辑数据并将更新后的数据发回数据库。 本演练创建可显示两个相关表的数据的窗体，并显示如何编辑记录和将更改保存回数据库。 此示例使用源自 Northwind 示例数据库的 `Customers` 和 `Orders` 表。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 11/07/2017
   
 -   修改用于将数据集中的更新后的数据发回数据库的代码。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。  
   
 1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server 版本的下载页](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**数据存储和处理**工作负荷，也可以作为单个组件。  
@@ -95,7 +96,7 @@ ms.lasthandoff: 11/07/2017
   
     -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。  
   
-         - 或 -  
+         或  
   
     -   选择**新连接**以打开**添加/修改连接**对话框。  
   
@@ -162,5 +163,5 @@ ms.lasthandoff: 11/07/2017
 4.  检查数据库中的值以验证更改是否已保存。  
   
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

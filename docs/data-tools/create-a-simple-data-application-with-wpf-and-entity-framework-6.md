@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 24d6401cae58b0bede44519900f6d72bd77ab2a9
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 中创建一个简单的数据应用程序
 本演练演示如何使用 SQL Server LocalDB、 Northwind 数据库，Entity Framework 6 和 Windows Presentation Foundation 的 Visual Studio 中创建基本"forms over data"应用程序。 它演示如何执行与主-详细信息视图中，基本数据绑定，它还提供自定义"绑定导航器"的"移动上的下一步"按钮，使用"移动上一个""将移动到开头，""移至最后，""更新"和"删除"。  
@@ -422,7 +423,7 @@ ms.lasthandoff: 11/09/2017
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]  
   
 ## <a name="run-the-application"></a>运行此应用程序
-若要开始调试时，按**F5**。 你应看到客户和订单数据填充在网格中，并且导航按钮应该按预期方式工作。 单击"提交"以向模型添加新客户或订单后输入的数据。 单击"取消"退出而不保存数据的新客户或新订购窗体。 你可以向现有客户和订单直接在文本框中，进行编辑，并且这些更改自动写入到模型。  
+若要启用调试，请按 F5。 你应看到客户和订单数据填充在网格中，并且导航按钮应该按预期方式工作。 单击"提交"以向模型添加新客户或订单后输入的数据。 单击"取消"退出而不保存数据的新客户或新订购窗体。 你可以向现有客户和订单直接在文本框中，进行编辑，并且这些更改自动写入到模型。  
   
 ## <a name="see-also"></a>请参阅
 [适用于 NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)  

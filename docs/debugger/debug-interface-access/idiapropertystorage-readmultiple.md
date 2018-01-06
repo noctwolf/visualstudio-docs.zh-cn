@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77ead9e28f86067c08aa610fc902f2a0847bfb25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ffa66117095ef73ac9d25ce8117431f03ba0ad57
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 读取指定从当前的属性集的属性。  
@@ -49,5 +50,5 @@ HRESULT ReadMultiple(
 ## <a name="remarks"></a>备注  
  如果未找到属性，对应项`rgvar`数组包含`VARIANT`类型为`VT_EMPTY`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

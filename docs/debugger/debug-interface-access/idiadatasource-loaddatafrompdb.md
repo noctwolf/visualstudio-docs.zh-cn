@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b9192484e2ac9c957bc53a2e5a5a5965fd7a46a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01348d666b4e6a3b9333a242bb285eff44f5b7c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 将打开并准备作为调试数据源的程序数据库 (.pdb) 文件。  
@@ -38,7 +39,7 @@ HRESULT loadDataFromPdb (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示可能的此方法的返回值。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|无法打开该文件，或确定该文件具有无效的格式。|  
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|  
@@ -64,7 +65,7 @@ if (FAILED(hr))
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [Idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [Idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)   

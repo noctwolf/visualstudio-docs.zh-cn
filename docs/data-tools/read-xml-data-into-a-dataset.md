@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 31c17df9b8b3e0a0b54d99f95e8a3d5704140cf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 093dbb5ee8f088a7f2e4ccd1dd063cfeecc2c5e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML 数据读入数据集
 ADO.NET 提供用于处理 XML 数据的简单方法。 在本演练中，你创建的 Windows 应用程序将 XML 数据加载到数据集。 数据集随后显示在<xref:System.Windows.Forms.DataGridView>控件。 最后，根据 XML 文件的内容的 XML 架构被显示在文本框中。  
@@ -169,10 +170,10 @@ ADO.NET 提供用于处理 XML 数据的简单方法。 在本演练中，你创
     |-------------|--------------|-------------|  
     |`TextBox1`|**多行**|`true`|  
     ||**滚动条**|**垂直**|  
-    |`Button1`|**Name**|`ReadXmlButton`|  
-    ||**“文本”**|`Read XML`|  
-    |`Button2`|**Name**|`ShowSchemaButton`|  
-    ||**“文本”**|`Show Schema`|  
+    |`Button1`|**名称**|`ReadXmlButton`|  
+    ||**文本**|`Read XML`|  
+    |`Button2`|**名称**|`ShowSchemaButton`|  
+    ||**文本**|`Show Schema`|  
   
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>创建数据集，它接收 XML 数据  
  在此步骤中，创建名为的新数据集`authors`。 关于数据集的详细信息，请参阅[Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)。  
@@ -245,6 +246,6 @@ ADO.NET 提供用于处理 XML 数据的简单方法。 在本演练中，你创
   
 -   编辑数据集中的数据并将其写出到数据库。 有关详细信息，请参阅[保存数据](../data-tools/saving-data.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)       
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6112c72836c718dbd97ddfb62504186fdcf6ca33
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 30914c63f5577519a7451cb6d1aee6d651161678
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvaccesse"></a>CV_access_e
 指定可见性 （访问级别） 成员函数和变量的作用的域。  
@@ -46,10 +47,10 @@ typedef enum CV_access_e {
 ## <a name="remarks"></a>备注  
  `friend`此处访问说明符不包含原因通常由有权访问类的私有和受保护的元素的非成员函数。 使用[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)方法以查找具有符号`SymTagFriend`访问。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： cvconst.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [Idiasymbol:: Get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
  [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

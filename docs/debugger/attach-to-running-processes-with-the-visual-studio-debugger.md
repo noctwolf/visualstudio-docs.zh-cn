@@ -31,11 +31,12 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48462684498136d09354fb87917f553d522188c0
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到运行的进程
 你可将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。 进程正在运行后，单击**调试 > 附加到进程**(或按**CTRL + ALT + P**) 以打开**附加到进程**对话框。
@@ -66,7 +67,7 @@ ms.lasthandoff: 12/12/2017
   
     2.  在 **“选择代码类型”** 对话框中，单击 **“调试以下代码类型”** ，然后选择要调试的类型。  
   
-    3.  单击“确定” 。  
+    3.  单击 **“确定”**。  
   
 4.  单击 **“附加”**。
 
@@ -185,13 +186,13 @@ ms.lasthandoff: 12/12/2017
   
     3.  在 **“选择代码类型”** 对话框中，选择 **“调试以下代码类型”** 和未能附加的代码类型。 清除任何其他代码。  
   
-    4.  单击“确定” 。 **“选择代码类型”** 对话框关闭。  
+    4.  单击 **“确定”**。 **“选择代码类型”** 对话框关闭。  
   
     5.  在 **“附加到进程”** 对话框中，单击 **“附加”**。  
   
      此时，附加将彻底失败，并且你将收到一条特定的错误消息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多个进程](../debugger/debug-multiple-processes.md)   
  [在实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [远程调试](../debugger/remote-debugging.md)

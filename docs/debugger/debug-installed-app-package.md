@@ -22,11 +22,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 354c574a890ae0385a58594a22b3314a13b9d6b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: ca1edcc26c8e015f12db6b1d564c182aa765ed52
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>调试 Visual Studio (UWP) 的安装的应用包
 
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 > UWP 应用可以进行开发和编译的 Windows 8.1 或更高版本，但要求运行 Windows 10。 如果你正在开发 Windows 8.1 PC 上的 UWP 应用，可以远程调试在另一台 Windows 10 设备上，运行的 UWP 应用，前提是主机和目标计算机位于同一 LAN。 若要执行此操作，请下载并在两台计算机上安装 Visual Studio 远程工具。 安装的版本必须匹配现有的已安装的 Visual Studio 版本，并且选择 (x86、 x64) 的体系结构还必须匹配的目标应用程序。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)  
  [远程调试](../debugger/remote-debugging.md)  

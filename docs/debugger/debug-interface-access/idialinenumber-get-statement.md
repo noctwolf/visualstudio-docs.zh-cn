@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05cb3f85fe2f1ea82622a4537b89895a44eebf63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8659123c09482537aadc3baedb597f5c7030708d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 检索一个标志，指示此行信息描述的一条语句，而不是在程序源中的表达式的开头。  
@@ -41,5 +42,5 @@ HRESULT get_statement (
 ## <a name="remarks"></a>备注  
  语句可以跨多个行。 此方法指示是否关联的行号标记此类的多行语句的开始。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bfbb1e05dadb18e9357e38d6ed660c248dccec4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc892cbdf49ab883c2bd45f4ef13ddda21b23d83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 编译单位信息拆分之间具有符号`SymTagCompiland`标记 （低详细信息） 和一个`SymTagCompilandDetails`标记 （高详细信息）。 `SymTagCompilandDetails`需要加载其他符号。 但是，它提供了丰富的信息不适用于编译单位`SymTagCompiland`符号。  
@@ -54,6 +55,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  编译器通常出现在窗体中称为双步编译器;在某些版本的编译器，由一个单独的程序处理每个传递。 这些被称为前端和后端编译器，分别，因此后端和前端版本号的符号属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编译单位](../../debugger/debug-interface-access/compiland.md)   
  [符号类型的词法层次结构](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

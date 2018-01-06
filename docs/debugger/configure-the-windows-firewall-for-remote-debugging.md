@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9432c65ec6a481b23655fb2a92915a4a4365ed5e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7458c2f35bfd29c53b939b6300d2759f0e7897f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以便进行远程调试
 本主题介绍如何配置防火墙以在运行以下操作系统的计算机上启用远程调试：  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 |||||  
 |-|-|-|-|  
-|**端口**|**传入/传出**|**协议**|**描述**|   
+|**端口**|**传入/传出**|**协议**|**说明**|   
 |4022|传入|TCP|有关 VS 自 2017 年。 端口号针对每个 Visual Studio 版本递增 2。 有关详细信息，请参阅[Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|  
 |4023|传入|TCP|有关 VS 自 2017 年。 端口号针对每个 Visual Studio 版本递增 2。 （仅用于远程调试从远程调试器的 64 位版本的 32 位进程。）有关详细信息，请参阅[Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。| 
 |3702|传出|UDP|（可选）所需的远程调试器发现。|    
@@ -117,10 +118,10 @@ ms.lasthandoff: 10/31/2017
 |||||  
 |-|-|-|-|  
 |**端口**|**传入/传出**|**协议**|**说明**|  
-|135, 139, 445|传出|TCP|必需。|  
-|137, 138|传出|UDP|必需。|  
+|135, 139, 445|传出|TCP|必须的。|  
+|137, 138|传出|UDP|必须的。|  
 |500, 4500|传出|UDP|如果你的域策略需要通过 IPSec 进行网络通信，则需要。|  
 |80|传出|TCP|Web 服务器调试所必需。|
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [远程调试](../debugger/remote-debugging.md)

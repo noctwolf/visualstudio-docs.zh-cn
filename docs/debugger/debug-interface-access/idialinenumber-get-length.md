@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faad61923bcf7a691b26dd48f740e25a14a43ffc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2daf6f342f2e344dd11d02aef4da1344b3b84381
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
 检索块中的字节的数。  
@@ -41,5 +42,5 @@ HRESULT get_length (
 ## <a name="remarks"></a>备注  
  块是在行上的源代码的长度，由表示[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

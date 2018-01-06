@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03673b339336cc5c5cdb32b284cf3c7cc1b38998
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ddcced006ded40275ce46838fbaface05ea26960
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
 检索表达式或语句的开始处的列号。  
@@ -42,5 +43,5 @@ HRESULT get_columnNumber (
 ## <a name="remarks"></a>备注  
  此方法返回的列的值是语句的行将对行的第一个字符的字节偏移量。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

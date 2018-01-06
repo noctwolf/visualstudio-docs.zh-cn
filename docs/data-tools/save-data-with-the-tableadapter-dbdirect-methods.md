@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3ed52a167b607236b8493e4c8c1736ee597162b9
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: fb85f9cfb2b70838d32761b412541bf15b2884c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法保存数据
 本演练提供有关使用 TableAdapter 的 DBDirect 方法直接对数据库运行 SQL 语句的详细的说明。 TableAdapter 的 DBDirect 方法提供良好的控制数据库更新级别。 可用于运行特定的 SQL 语句和存储的过程的调用单个`Insert`， `Update`，和`Delete`方法根据需要由你的应用程序 (而不是重载`Update`执行更新的方法INSERT 和 DELETE 语句，所有在一次调用中的)。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/07/2017
   
 -   添加方法，以直接访问数据库并执行插入、 更新和删除...  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。  
   
 1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server 版本的下载页](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**数据存储和处理**工作负荷，也可以作为单个组件。  
@@ -88,7 +89,7 @@ ms.lasthandoff: 11/07/2017
   
     -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。  
   
-         - 或 -  
+         或  
   
     -   选择**新连接**以启动**添加/修改连接**对话框。  
   
@@ -117,9 +118,9 @@ ms.lasthandoff: 11/07/2017
   
 2.  设置以下**名称**和**文本**每个按钮上的属性。  
   
-    |名称|Text|  
+    |name|Text|  
     |----------|----------|  
-    |`InsertButton`|**插入**|  
+    |`InsertButton`|插入|  
     |`UpdateButton`|**更新**|  
     |`DeleteButton`|**删除**|  
   
@@ -169,5 +170,5 @@ ms.lasthandoff: 11/07/2017
   
 -   通过选择将其他表添加到数据集**使用向导配置数据集**中**数据源**窗口。 可以通过将相关节点拖到窗体上来添加显示相关数据的控件。 有关详细信息，请参阅[数据集中的关系](relationships-in-datasets.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

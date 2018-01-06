@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc162882e8cece08a2688ccc73a674a9ab6e0fce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 5eb37bd3abbf88b04bed0d382e07abe4379eb661
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext 方法（O/R 设计器）
 <xref:System.Data.Linq.DataContext>方法 (的上下文中[LINQ to SQL Visual Studio 中的工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) 的方法<xref:System.Data.Linq.DataContext>在数据库中运行存储的过程和函数的类。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
  从数据库拖动到 O/R 设计器图面上的对象将根据数据库中的对象的名称自动命名。 如果您多次拖动同一个对象，将会在新名称的末尾追加一个数字来区别名称。 如果数据库对象名称包含空格或 Visual Basic 或 C# 中不支持的字符，将使用下划线替代空格或无效字符。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [LINQ to SQL Visual Studio 中的工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
  [存储的过程](/dotnet/framework/data/adonet/sql/linq/stored-procedures)   

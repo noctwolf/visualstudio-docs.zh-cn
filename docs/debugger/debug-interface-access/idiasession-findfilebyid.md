@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1996bed14323adeac794f12ed4307e96e3ba8b54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 176e6a482212ee0cb6531d558e2b322ce4bec2d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 通过源文件标识符来检索源文件。  
@@ -45,7 +46,7 @@ HRESULT findFileById (
 ## <a name="remarks"></a>备注  
  源文件标识符是对 DIA SDK 在内部使用，以使所有源文件是唯一的唯一值。 此方法通常在内部用于 DIA SDK。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [Idiasession:: Findfile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

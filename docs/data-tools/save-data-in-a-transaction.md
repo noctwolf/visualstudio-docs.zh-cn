@@ -21,16 +21,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f8d1d25c2aaa66658df53dbaea366c196e8e7f6b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 303caa59af4cbcbafa9ec14fb6ffb3559d6b1bab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>演练： 将数据保存在事务中
 本演练演示如何使用在事务中保存数据<xref:System.Transactions>命名空间。 在本演练将创建一个 Windows 窗体应用程序。 将使用数据源配置向导在 Northwind 示例数据库中创建两个表的数据集。 你将添加数据控件绑定到 Windows 窗体，并将修改 BindingNavigator 的保存按钮以更新在 TransactionScope 内的数据库的代码。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。  
   
 1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server 版本的下载页](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**.NET 桌面开发**工作负荷，也可以作为单个组件。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/09/2017
   
     -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。  
   
-         - 或 -  
+         或  
   
     -   选择**新连接**以启动**添加/修改连接**对话框框中，并创建到 Northwind 数据库的连接。  
   

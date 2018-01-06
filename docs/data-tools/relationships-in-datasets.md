@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bfc537118f6c1769ec98893099daa0c61d1b5b1d
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 95bfef50e7ce5016b68df1442e625a88beb22181
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-relationships-between-datasets"></a>创建数据集之间的关系
 包含相关的数据的数据集表，表使用<xref:System.Data.DataRelation>对象来表示表之间的父/子关系，并从另一个返回相关的记录。 通过使用添加到数据集的相关的表**数据源配置向导**，或**数据集设计器**、 创建和配置<xref:System.Data.DataRelation>为你的对象。  
@@ -97,7 +98,7 @@ A<xref:System.Data.DataRelation>对象还用于创建和实施以下约束：
   
 8.  选中或清除**嵌套关系**框。 选择此选项设置<xref:System.Data.DataRelation.Nested%2A>属性`true`，这将导致子行嵌套在父列中，当以 XML 数据形式编写或与同步这些行的关系<xref:System.Xml.XmlDataDocument>。 有关详细信息，请参阅[嵌套 Datarelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations)。  
   
-9. 设置你正在对这些表中的记录进行更改时要执行的规则。 有关更多信息，请参见<xref:System.Data.Rule>。  
+9. 设置你正在对这些表中的记录进行更改时要执行的规则。 有关详细信息，请参阅<xref:System.Data.Rule>。  
   
 10. 单击**确定**来创建关系。 在两个表之间的设计器上显示一关系线。  
   

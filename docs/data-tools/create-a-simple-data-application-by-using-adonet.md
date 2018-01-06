@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 05a0a339b413495aadfa397e5fec3b826f920026
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b1f6e8ed06f9f2355ac3a740319bb75924bf3d6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 在创建操作数据库中的数据的应用程序时，你可以执行基本任务，如定义连接字符串、 插入数据和运行存储的过程。 按照本主题，你可以了解如何通过使用 Visual C# 或 Visual Basic 和 ADO.NET 从一个简单的 Windows 窗体"forms over data"应用程序中的数据库与交互。  所有.NET 数据技术 — 包括数据集，LINQ to SQL，以及实体框架 — 最终执行非常类似于本文中所示的步骤。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 11/09/2017
 > [!IMPORTANT]
 >  若要使代码保持简单，它不包括生产就绪的异常处理。  
   
- **主题内容**  
+ **在本主题中**  
   
 -   [设置示例数据库](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/09/2017
   
 -   [测试应用程序](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  要创建应用程序，你将需要：  
   
 -   Visual Studio Community Edition。  

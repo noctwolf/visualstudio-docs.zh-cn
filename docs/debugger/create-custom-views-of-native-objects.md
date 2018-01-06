@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aa3a6f515ca039c86d453f5729800fe8e1637c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 340d0d7366749f402cb76f3075778fb2b7ea215b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中创建本机对象的自定义视图
 Visual Studio Natvis 框架允许你自定义 Visual Studio 在调试器变量窗口中显示本机类型的方式 (例如，**监视**窗口中，**局部变量**窗口中，然后在**数据提示**。
@@ -217,7 +218,7 @@ Visual Studio Natvis 框架允许你自定义 Visual Studio 在调试器变量�
 ```  
   
 ####  <a name="BKMK_Versioning"></a> Version 元素  
- 使用 `Version` 元素将可视化效果的作用范围限定为特定模块及其版本，以便最大程度地减少名称冲突，并使不同的可视化效果可用于类型的不同版本。 例如：  
+ 使用 `Version` 元素将可视化效果的作用范围限定为特定模块及其版本，以便最大程度地减少名称冲突，并使不同的可视化效果可用于类型的不同版本。 例如:  
   
 ```xml
 <Type Name="DirectUI::Border">  

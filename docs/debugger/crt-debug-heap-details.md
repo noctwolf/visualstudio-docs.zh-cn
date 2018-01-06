@@ -77,11 +77,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 947da9ccdbf67a71edfaa122de8861912a9e9596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc7b945a8c53d290f573eac4565f2240ec7a2d7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crt-debug-heap-details"></a>CRT 调试堆详细信息
 本主题详细描述了 CRT 调试堆。  
@@ -158,7 +159,7 @@ typedef struct _CrtMemBlockHeader
  由许多运行库函数内部分配的内存块被标记为 CRT 块，以便可以单独处理这些块。 结果，泄漏检测和其他操作不需要受这些块影响。 分配永不可以分配、重新分配或释放任何 CRT 类型的块。  
   
  `_CLIENT_BLOCK`  
- 出于调试目的，应用程序可以专门跟踪一组给定的分配，方法是使用对调试堆函数的显式调用将它们作为该类型的内存块进行分配。 MFC 中，例如，分配所有**Cobject**以客户端块; 其他应用程序可能会保留不同的内存对象在客户端块中。 还可以指定“客户端”块的子类型以获得更大的跟踪粒度。 若要指定“客户端”块子类型，请将该数字向左移 16 位，并将它与 `OR` 进行 `_CLIENT_BLOCK` 运算。 例如:   
+ 出于调试目的，应用程序可以专门跟踪一组给定的分配，方法是使用对调试堆函数的显式调用将它们作为该类型的内存块进行分配。 MFC 中，例如，分配所有**Cobject**以客户端块; 其他应用程序可能会保留不同的内存对象在客户端块中。 还可以指定“客户端”块的子类型以获得更大的跟踪粒度。 若要指定“客户端”块子类型，请将该数字向左移 16 位，并将它与 `OR` 进行 `_CLIENT_BLOCK` 运算。 例如:  
   
 ```  
 #define MYSUBTYPE 4  
@@ -368,5 +369,5 @@ int addNewRecord(struct RecStruct *prevRecord,
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试本机代码](../debugger/debugging-native-code.md)

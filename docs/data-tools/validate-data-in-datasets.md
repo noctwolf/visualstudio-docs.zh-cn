@@ -25,11 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0f328cbaac03680885bdbda97dff7bc9ac3cf2cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b5cc63d5a83c9f1400dd183982fa68864d35fdbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 数据进行验证是确认输入到数据对象的值符合中的数据集的架构的约束的过程。 验证过程还确认这些值是遵循已为你的应用程序设定的规则。 最好将更新发送到基础数据库之前的数据进行验证。 这将减少错误以及潜在应用程序和数据库之间的往返次数。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/09/2017
   
 ## <a name="data-update-events"></a>数据更新事件  
   
-|Event|描述|  
+|事件|描述|  
 |-----------|-----------------|  
 |<xref:System.Data.DataTable.ColumnChanging>|正在更改列中的值。 该事件，传递的行和列以及建议的新值。|  
 |<xref:System.Data.DataTable.ColumnChanged>|列中的值已更改。 该事件，传递的行和列以及建议的值。|  

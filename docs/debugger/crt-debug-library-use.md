@@ -31,11 +31,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2774eacfb0472145edb84d5c3becf77513ee986
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 420dcc98aad4f4ca2ad76d16b7f4c6c7c51d2beb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crt-debug-library-use"></a>CRT 调试库使用
 C 运行库提供广泛的调试支持。 若要使用 CRT 调试库之一，你必须与链接[/调试](/cpp/build/reference/debug-generate-debug-info)和使用进行编译**/MDd**， **/MTd**，或**/LDd**。  
@@ -49,6 +50,6 @@ C 运行库提供广泛的调试支持。 若要使用 CRT 调试库之一，你
   
  你可以使用的各种运行时库的详细信息，请参阅[C 运行时库](/cpp/c-runtime-library/crt-library-features)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CRT 调试技术](../debugger/crt-debugging-techniques.md)   
  [/MD、 /MT、 /LD （使用运行时库）](/cpp/build/reference/md-mt-ld-use-run-time-library)

@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9162274d234c22e8bbe299389d2b41f57a69d714
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: 52243e28dbc35fbefb67fa1b52ce9fb6cdbda98d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="handle-a-concurrency-exception"></a>处理并发异常
 并发异常 (<xref:System.Data.DBConcurrencyException>) 当两个用户尝试在同一时间更改数据库中的相同数据时引发。 在本演练中，你创建的 Windows 应用程序演示如何捕获<xref:System.Data.DBConcurrencyException>，找到，导致该错误的行并了解如何进行处理的策略。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/07/2017
   
 7.  捕获到的错误，则显示的记录，以便确定是否继续并更新数据库，或者取消更新用户的不同版本。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。  
   
 1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server 版本的下载页](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**数据存储和处理**工作负荷，也可以作为单个组件。  
@@ -223,5 +224,5 @@ ms.lasthandoff: 11/07/2017
   
 10. 选择**否**取消更新并使用当前数据库中的值更新数据集。 选择**是**建议的值写入数据库。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

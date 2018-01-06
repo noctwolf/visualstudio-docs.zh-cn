@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea233e8bf26b3bbb9dd7b1e962e3729e172b5a7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1f50ae8c40da9c895773330f488e63850013d35b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="data-debug-interface-access-sdk"></a>数据（调试界面访问 SDK）
 所有变量，例如参数、 本地变量、 全局变量和类成员都由`SymTagData`符号。 常量值 (`LocIsConstant`) 也被标识与此类型。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|可执行文件中的数据的位置。|  
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`如果数据将被标记为易失性。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)   
  [DataKind 枚举](../../debugger/debug-interface-access/datakind.md)   
  [符号类型的词法层次结构](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   

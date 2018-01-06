@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3f8a31f886548d03f7acac58d392713ced297b42
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: cb3f6c23d4994346dab26e800c116ad0c7301f4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>此相关方法是以下默认插入、更新或删除方法的支持方法
 此相关方法是下列默认插入、更新或删除方法的备份方法。 如果删除这些方法，则备份方法也将被删除。 是否要继续?  
@@ -36,5 +37,5 @@ ms.lasthandoff: 11/09/2017
      消息框关闭，不进行任何更改。  
   
 ## <a name="see-also"></a>请参阅
-[O/R 设计器消息](../data-tools/o-r-designer-messages.md)  
+[O-R 设计器消息](../data-tools/o-r-designer-messages.md)  
 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
