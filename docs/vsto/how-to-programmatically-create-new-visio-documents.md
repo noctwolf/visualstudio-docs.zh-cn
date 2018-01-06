@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa4a4d021ee0610d4fdd80a1966df6a8280c9523
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3f96738d9e553ede2b74ebc118a2769b32926cba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>如何：以编程方式创建新的 Visio 文档
   在创建新的 Microsoft Office Visio 绘图文档时，你可以将其添加到 Microsoft.Office.Interop.Visio.Documents 打开 Visio 文档的集合。 因此，Microsoft.Office.Interop.Visio.Documents.Add 方法创建一个新的 Visio 绘图文档。 有关详细信息，请参阅 [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) 方法的 VBA 参考文档。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
   
 -   必须有一个名为 `myTemplate.vst` 的 Visio 文档位于 My Documents 文件夹（对于 Windows XP 及更低版本）或 Documents 文件夹（对于 Windows Vista）中名为 `Test` 的目录中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visio 解决方案](../vsto/visio-solutions.md)   
  [Visio 对象模型概述](../vsto/visio-object-model-overview.md)   
  [如何： 以编程方式打开 Visio 文档](../vsto/how-to-programmatically-open-visio-documents.md)   

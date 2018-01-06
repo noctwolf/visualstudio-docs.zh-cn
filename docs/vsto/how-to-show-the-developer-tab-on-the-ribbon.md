@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cad7fb4fe49df9688a0b9e7b3baa1f1108694136
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3885ce387aa27857e59fb3af74990d953c047225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>如何：在功能区上显示“开发人员”选项卡
   访问**开发人员**选项卡功能区中的 Office 应用程序，你必须将它配置为显示该选项卡，因为它不会显示默认情况下。 例如，如果要向 Word 的文档级自定义项添加一个 <xref:Microsoft.Office.Tools.Word.GroupContentControl>，则必须显示该选项卡。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  选择**确定**按钮以关闭**选项**对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office UI 自定义](../vsto/office-ui-customization.md)  
   
   

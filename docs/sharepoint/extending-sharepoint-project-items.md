@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f17e43e2fe98e36939c91b37e72b185cb14d09e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ffbacd5748ae2a5284ed628dce974b20e25bcab3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-sharepoint-project-items"></a>扩展 SharePoint 项目项
   当你想要将功能添加到已安装在 Visual Studio 中的 SharePoint 项目项类型时，请创建项目项扩展。 例如，你可以创建为内置的扩展**事件接收器**或**列表定义**项目项在 Visual Studio 中，或可以创建自定义项目项类型的扩展。 你还可以创建的 SharePoint 项目项的所有类型的扩展。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
 |Web 部件|Microsoft.VisualStudio.SharePoint.WebPart|  
 |工作流关联窗体|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
  [如何： 向 SharePoint 项目项扩展中添加快捷菜单项](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [如何： 向 SharePoint 项目项扩展中添加属性](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   

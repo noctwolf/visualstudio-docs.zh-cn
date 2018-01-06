@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50673163fdbdd1c0927f6efa56eae39e8cc2e3c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0c00b625c9e06152d64892f59582ec3c2e0f2866
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-e-mail-items"></a>如何：以编程方式保存 Outlook 电子邮件项的附件
   此示例会在收件箱接收到电子邮件时将邮件中的附件保存到指定的文件夹中。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="example"></a>示例  
  [!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用邮件项](../vsto/working-with-mail-items.md)   
  [如何： 以编程方式检索按名称的文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
  [如何： 以编程方式在收到电子邮件后执行操作](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)   

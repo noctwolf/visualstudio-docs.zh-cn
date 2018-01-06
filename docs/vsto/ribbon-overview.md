@@ -23,11 +23,12 @@ caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52583bdbf6edf4f2a698bc8662a0faf659841926
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fcf026af4877ee2aefe17551763752d385b63493
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-overview"></a>功能区概述
   功能区是一种整理相关命令使其便于查找的方法。 命令显示为功能区上的控件。 控件整理为*组*沿水平条分布的应用程序窗口的顶部边缘。 在选项卡上，相关组进行了整理。  

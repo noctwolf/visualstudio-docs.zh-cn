@@ -20,11 +20,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4fad536f7e9f0891f7630cd86d31cea279d5706f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4b832ed0e025cd374ac3cbc645824fe7f37dcf9b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何：以编程方式自动用递增变化的数据填充范围
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法<xref:Microsoft.Office.Interop.Excel.Range>对象可用于值自动填充工作表中的范围。 大多数情况下，<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法用于存储递增或递减的范围内的值。 你可以通过提供中的可选常数指定行为<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>枚举。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
 -   列 D 是包含一系列数字，每次递增两个用于每个行。 对于初始的值中，键入**4**单元格 D1 中和**6** D2 单元格中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用范围](../vsto/working-with-ranges.md)   
  [如何： 以编程方式引用代码中的工作表范围](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [如何： 以编程方式将样式应用于工作簿中的](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   

@@ -37,11 +37,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2147076bd4aa90230d1216af19459efe71209d50
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5d6a400f5c1ee523e2bb3fd95be215af0e5ba371
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-code-in-office-solutions"></a>在 Office 解决方案中编写代码
   编写 Office 项目代码与编写 Visual Studio 中其他类型的代码在某些方面存在不同。 其中许多差异与 Office 对象模型公开给托管代码的方式相关。 其他差异与 Office 项目的设计相关。  
@@ -76,7 +77,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="understanding-the-generated-classes"></a>了解生成类  
  在 Excel 和 Word 的文档级项目中，生成的类类似于应用程序对象模型中的顶级对象。 例如，Word 文档项目中生成的 `ThisDocument` 类与 Word 对象模型中的 <xref:Microsoft.Office.Interop.Word.Document> 类提供相同的成员。 有关文档级项目中的生成类的详细信息，请参阅 [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)。  
   
- VSTO 外接程序项目提供一个名为 `ThisAddIn`的生成类。 此类与主机应用程序的对象模型中的类不同。 此类表示 VSTO 外接程序本身，并且它提供可用于访问主机应用程序的对象模型和访问 VSTO 外接程序提供的其他功能的成员。有关更多信息，请参见 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
+ VSTO 外接程序项目提供一个名为 `ThisAddIn`的生成类。 此类与主机应用程序的对象模型中的类不同。 此类表示 VSTO 外接程序本身，并且它提供可用于访问主机应用程序的对象模型和访问 VSTO 外接程序提供的其他功能的成员。有关详细信息，请参阅 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
   
  Office 项目中的所有生成类均包括 `Startup` 和 `Shutdown` 事件处理程序。 若要开始编写代码，通常将代码添加到这些事件处理程序中。 若要初始化 VSTO 外接程序，可以将代码添加到 `Startup` 事件处理程序中。 若要清理 VSTO 外接程序使用的资源，可以将代码添加到 `Shutdown` 事件处理程序中。 有关详细信息，请参阅 [Events in Office Projects](../vsto/events-in-office-projects.md)。  
   
@@ -119,7 +120,7 @@ ms.lasthandoff: 10/31/2017
 |-------------|-----------------|-----------------------------------------|  
 |数组索引|Microsoft Office 应用程序中集合的数组下限从 1 开始。 Visual Basic 和 Visual C# 使用基于 0 的数组。 有关详细信息，请参阅[数组 &#40;使用 c&#35;编程指南 &#41;](/dotnet/csharp/programming-guide/arrays/index)和[Visual Basic 中的数组](/dotnet/visual-basic/programming-guide/language-features/arrays/index)。|若要访问 Microsoft Office 应用程序对象模型中某个集合的第一项，请使用索引 1，而不是 0。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
  [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 项目中的事件](../vsto/events-in-office-projects.md)   

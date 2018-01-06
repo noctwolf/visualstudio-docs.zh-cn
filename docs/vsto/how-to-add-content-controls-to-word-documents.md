@@ -31,11 +31,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 33e431dc907de8573a4eca00b9de73bcd0f523f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5f673d3a6752fda9256e7a71aff195dfa31fd933
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>如何：向 Word 文档添加内容控件
   在文档级 Word 项目中，你可以在设计时或在运行时向项目中的文档添加内容控件。 在 Word VSTO 外接程序项目中，可以在运行时向任何打开的文档添加内容控件。  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
 >  你不能使用 <xref:Microsoft.Office.Tools.Word.GroupContentControl> “工具箱” **添加**。 在 Word 中或在运行时，只可添加 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 。  
   
 > [!NOTE]  
->  Visual Studio 在工具箱中不提供复选框内容控件。 若要向文档添加复选框内容控件，则必须以编程方式创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关更多信息，请参见 [Content Controls](../vsto/content-controls.md)。  
+>  Visual Studio 在工具箱中不提供复选框内容控件。 若要向文档添加复选框内容控件，则必须以编程方式创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关详细信息，请参阅 [Content Controls](../vsto/content-controls.md)。  
   
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>若要在 Word 中向文档添加内容控件  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
  文档关闭时，动态创建的内容控件将不保留在文档中。 但是，本机内容控件会保留在文档中。 在下次打开该文档时，你可以重新创建基于本机内容控件的内容控件。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 > [!NOTE]  
->  若要在 Word 2010 项目中向文档添加复选框内容控件，则必须创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关更多信息，请参见 [Content Controls](../vsto/content-controls.md)。  
+>  若要在 Word 2010 项目中向文档添加复选框内容控件，则必须创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关详细信息，请参阅 [Content Controls](../vsto/content-controls.md)。  
   
 #### <a name="to-add-a-content-control-at-the-current-selection"></a>在当前所选内容中添加内容控件  
   
@@ -186,7 +187,7 @@ ms.lasthandoff: 10/31/2017
   
      [!code-csharp[Trin_WordAddInDynamicControls#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#6)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   

@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7032f3663be7df1a06fa4dc16d4f4473e4666cfc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 09ea283b17a980ff9be1fae54ecc8b24912b70ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>如何：配置包含列表安全性
   如果具有管理员权限，则可以配置[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示，以控制最终用户是否可以通过将信任决定保存到包含列表中安装 Office 解决方案的选择。 有关包含列表的信息，请参阅[使用包含列表信任 Office 解决方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。  
@@ -56,10 +57,10 @@ ms.lasthandoff: 10/31/2017
   
 3.  添加以下子键作为**字符串值**，如果它们尚不存在，及关联的值。  
   
-    |字符串值子项|值|  
+    |字符串值子项|“值”|  
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**UntrustedSites**|**已禁用**|  
+    |**UntrustedSites**|已禁用|  
     |**MyComputer**|**启用**|  
     |**LocalIntranet**|**启用**|  
     |**TrustedSites**|**启用**|  
@@ -115,9 +116,9 @@ ms.lasthandoff: 10/31/2017
   
 3.  添加以下子键作为**字符串值**，如果它们尚不存在，及关联的值。  
   
-    |字符串值子项|值|  
+    |字符串值子项|“值”|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**已禁用**|  
+    |**UntrustedSites**|已禁用|  
     |**Internet**|**AuthenticodeRequired**|  
     |**MyComputer**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
@@ -172,13 +173,13 @@ ms.lasthandoff: 10/31/2017
   
 3.  添加以下子键作为**字符串值**，如果它们尚不存在，及关联的值。  
   
-    |字符串值子项|值|  
+    |字符串值子项|“值”|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**已禁用**|  
-    |**Internet**|**已禁用**|  
-    |**MyComputer**|**已禁用**|  
-    |**LocalIntranet**|**已禁用**|  
-    |**TrustedSites**|**已禁用**|  
+    |**UntrustedSites**|已禁用|  
+    |**Internet**|已禁用|  
+    |**MyComputer**|已禁用|  
+    |**LocalIntranet**|已禁用|  
+    |**TrustedSites**|已禁用|  
   
 #### <a name="to-disable-the-inclusion-list-programmatically"></a>若要以编程方式禁用包含列表  
   
@@ -211,7 +212,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  生成并运行应用程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用包含列表信任 Office 解决方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [确保 Office 解决方案的安全](../vsto/securing-office-solutions.md)  
   

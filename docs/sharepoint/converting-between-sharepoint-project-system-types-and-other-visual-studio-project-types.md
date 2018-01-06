@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 198cb9b2b00b1e09c21ba672999cca557bcd5b48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 81573598dc4c23f161298aee800b5dfabe7608f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>在 SharePoint 项目系统类型和其他 Visual Studio 项目类型之间进行转换
   在某些情况下您可能会在 SharePoint 项目系统中有一个对象，并且你想要使用的 Visual Studio 自动化对象模型或集成对象模型中相应对象的功能，反之亦然。 在这些情况下，你可以使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A>SharePoint 项目服务将对象转换为不同的对象模型的方法。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
 -   注册的代码`projectService_ProjectAdded`方法以处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded>事件<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>对象。 有关示例，请参阅[如何： 创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)   
  [如何： 检索 SharePoint 项目服务](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
  [SharePoint 工具扩展的编程模型概述](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  

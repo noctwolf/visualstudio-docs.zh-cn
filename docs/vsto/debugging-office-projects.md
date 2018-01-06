@@ -22,11 +22,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 110d6231da40ab59c3979b97441b3ac0ad458b3e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ab8d3f8f815ac2b86f58fdf14051c8032bbb5cdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-office-projects"></a>调试 Office 项目
   可使用与用于其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 项目相同的 Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 工具来调试 Office 项目。 调试 Office 项目时也可使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 调试器的功能（如插入断点和查看 **“局部变量”** 窗口中的变量）。 有关 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 调试工具的详细信息，请参阅 [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)。  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
   
  若要将错误写入日志文件，可创建一个名为 `VSTO_LOGALERTS` 的环境变量并将其设置为 1（一）。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 可在包含 VSTO 外接程序的部署清单的文件夹中或在包含与自定义项关联的文档或工作簿的文件夹中创建日志文件。 如果失败， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将在本地的 %TEMP% 文件夹中创建日志文件。 对于应用程序级 VSTO 外接程序，默认名称为 *add-in name*.vsto.log。 对于文档级项目，日志文件的名称为 *document name*.*extension*.log（如 ExcelWorkbook1.xlsx.log）。 若要停止记录错误，可删除环境变量，或将其设置为 0（零）。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   
  [如何： 重新启用 VSTO 外接程序，已禁用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  

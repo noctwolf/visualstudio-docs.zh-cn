@@ -22,11 +22,12 @@ caps.latest.revision: "68"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 811e4eff77780bda2b348c26bb220a29d5fd1731
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f5503bed26a5e2657bb499a7a25098c373e149e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>演练：使用功能区设计器创建自定义选项卡
   使用功能区设计器，可以创建自定义选项卡，然后在其中添加和放置控件。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -162,7 +163,7 @@ ms.lasthandoff: 10/31/2017
   
 -   扩展标准的或自定义的 Microsoft Office Outlook 窗体。 有关详细信息，请参阅[演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能区概述](../vsto/ribbon-overview.md)   
  [功能区设计器](../vsto/ribbon-designer.md)   

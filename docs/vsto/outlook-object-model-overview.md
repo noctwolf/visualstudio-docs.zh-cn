@@ -22,11 +22,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e8102cf760020b5584458ebd77052684a1b4af2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cffce10e443b2605e29d800cb271c4a96dc70359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 对象模型概述
   若要开发 Microsoft Office Outlook 的 VSTO 外接程序，可以与 Outlook 对象模型提供的对象进行交互。 Outlook 对象模型提供表示用户界面中的项的类和接口。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 对象表示整个应用程序， <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 对象表示包含电子邮件或其他项的文件夹， <xref:Microsoft.Office.Interop.Outlook.MailItem> 对象表示电子邮件。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
 -   <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 属性，可用于访问显示单个项（如电子邮件或会议请求）的内容的窗口。  
   
- 若要获取其实例<xref:Microsoft.Office.Interop.Outlook.Application>对象，请使用的应用程序字段`ThisAddIn`项目中的类。 有关更多信息，请参见 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
+ 若要获取其实例<xref:Microsoft.Office.Interop.Outlook.Application>对象，请使用的应用程序字段`ThisAddIn`项目中的类。 有关详细信息，请参阅 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
   
 > [!NOTE]  
 >  若要帮助避免出现安全警告，当你使用属性和由 Outlook 对象模型监护阻止的方法时，获取 Outlook 对象的应用程序域中`ThisAddIn`类。 有关更多信息，请参见 [Specific Security Considerations for Office Solutions](../vsto/specific-security-considerations-for-office-solutions.md)。  
@@ -95,7 +96,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="mapifolder-object"></a>MAPIFolder 对象  
  <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 对象表示包含电子邮件、联系人、任务和其他项的文件夹。 Outlook 提供了 16 个默认的 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 对象。  
   
- 默认的 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 对象由 <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 枚举值定义。 例如，  
+ 默认的 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 对象由 <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 枚举值定义。 例如，应用于对象的  
   
  Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox 对应于**收件箱**在 Outlook 中的文件夹。  
   

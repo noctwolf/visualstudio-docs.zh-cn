@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: efcfa1082e0eeaf1105fc1a716141eb3fee5a1e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e0573043b15e49cce414a48626e3c3c6ffc31c06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-the-xslt-debugger"></a>什么 &#39; XSLT 调试程序中的
 Visual Studio 2010 中新增了以下功能。  
@@ -24,5 +25,5 @@ Visual Studio 2010 中新增了以下功能。
 ## <a name="xslt-profiler"></a>XSLT 探查器  
  XSLT 探查器是一种工具，开发人员可用来创建详细的 XSLT 性能报告，从而对 XSLT 代码中与性能相关的问题进行衡量、评估并将这些问题作为目标。 有关详细信息，请参阅[XSLT 探查器](../xml-tools/xslt-profiler.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 XSLT](../xml-tools/debugging-xslt.md)

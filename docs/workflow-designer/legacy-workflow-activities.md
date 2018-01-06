@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8a5c35fb036c1d9a94bd42c5ceabe17ae65e7b7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 756fa86cf892120b0062e2816f146425ac1b4fa3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-workflow-activities"></a>旧版工作流活动
 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 包含一组默认活动，这组活动提供了用于控制流、条件、事件处理、状态管理以及与应用程序和服务通信的功能。 在设计工作流时，可以使用 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 所提供的系统提供活动，也可以创建自己的自定义活动。  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/27/2017
  [如何： 调用 WCF 协定操作 （旧版）](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
  演示调用 [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] 协定操作的步骤。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows Workflow Foundation 活动](http://go.microsoft.com/fwlink?LinkID=65005)   
  [开发工作流](http://go.microsoft.com/fwlink?LinkID=65010)   
  [开发工作流活动](http://go.microsoft.com/fwlink?LinkID=65023)

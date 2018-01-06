@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24f3760fb328331684e6894954d79675ff27494e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ceabc30399871c7bbe7fef737e7ecbd87187257d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 文档属性，“属性”窗口
 **属性**窗口提供有关处于活动状态在 XML 编辑器中的文档的基本信息。 可用的属性取决于当前的活动 XML 文档的类型。  
@@ -47,6 +48,6 @@ ms.lasthandoff: 10/31/2017
   
  在编辑 XSLT 文件时，可以使用此属性指定应是不同的样式表时使用**显示 XSLT 输出**或**调试 XSLT**选择命令。 例如，如果正在编辑的样式表包含在父样式表中，则可能需要这样做。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 编辑器](../xml-tools/xml-editor.md)   
  [“XML 编辑器”的组件](../xml-tools/xml-editor-components.md)

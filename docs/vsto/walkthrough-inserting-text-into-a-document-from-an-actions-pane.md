@@ -20,11 +20,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ca062823968153d7c8979cb13c0e3d403237be1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 789ad22524a5c0128320bfb833b8ad97e294a86f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>演练：从操作窗格将文本插入到文档中
   本演练演示如何在 Microsoft Office Word 文档中创建操作窗格。 操作窗格包含收集输入，然后将文本发送到文档的两个控件。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
      **2008 年 3 月 21日日**  
   
-     **Name**  
+     **名称**  
   
      **地址**  
   
@@ -113,28 +114,28 @@ ms.lasthandoff: 10/31/2017
   
 4.  添加**文本框中**控制到操作窗格控件，并可以更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**getName**|  
+    |**名称**|**getName**|  
     |**Size**|**130, 20**|  
   
 5.  添加第二个**标签**控制到操作窗格控件，并可以更改**文本**属性**地址**。  
   
 6.  添加第二个**文本框中**控制到操作窗格控件，并可以更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**getAddress**|  
+    |**名称**|**getAddress**|  
     |**接受返回**|**True**|  
     |**多行**|**True**|  
     |**Size**|**130, 40**|  
   
 7.  添加**按钮**控制到操作窗格控件，并可以更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**addText**|  
-    |**“文本”**|**插入**|  
+    |**名称**|**addText**|  
+    |**文本**|插入|  
   
 ## <a name="adding-code-to-insert-text-into-the-document"></a>添加代码以将文本插入到文档  
  在操作窗格中，编写将文本从文本框中插入到相应的代码<xref:Microsoft.Office.Tools.Word.Bookmark>控件在文档中。 你可以使用`Globals`类来从操作窗格上的控件访问文档上的控件。 有关详细信息，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
@@ -183,7 +184,7 @@ ms.lasthandoff: 10/31/2017
   
 -   数据绑定到操作窗格上的控件。 有关详细信息，请参阅[演练： 将数据绑定到 Word 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [操作窗格概述](../vsto/actions-pane-overview.md)   
  [如何： 向 Word 文档或 Excel 工作簿添加操作窗格](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [如何： 将操作窗格添加到 Excel 工作簿](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872)   

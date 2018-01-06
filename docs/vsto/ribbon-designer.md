@@ -30,11 +30,12 @@ caps.latest.revision: "79"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 941ca002d2f840805253624e7e0004fb560c4167
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2655cd8f8c75f9c10063a1b85d2390b153782d85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-designer"></a>功能区设计器
   功能区设计器是一个可视化设计画布。 功能区设计器用于将自定义选项卡、 组和控件添加到 Microsoft Office 应用程序的功能区。  
@@ -202,9 +203,9 @@ ms.lasthandoff: 10/31/2017
 |如果下拉列表面板已打开并且选择了父控件，请关闭下拉列表面板。|LEFT|  
 |打开的下拉菜单的面板。|RIGHT|  
 |如果下拉列表面板中处于打开状态，请选择下拉列表面板上的第一个控件。|RIGHT|  
-|关闭下拉面板。|ESC|  
+|关闭下拉面板。|Esc|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [功能区概述](../vsto/ribbon-overview.md)   
  [功能区 XML](../vsto/ribbon-xml.md)   
  [演练： 使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   

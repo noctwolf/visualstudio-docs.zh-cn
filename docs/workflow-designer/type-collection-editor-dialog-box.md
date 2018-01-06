@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: bdc27b59640d92507956030fc34c767e321a81fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8e4b794a623c3a0218e44773da6bdb6c76612816
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="type-collection-editor-dialog-box"></a>“类型集合编辑器”对话框
 **类型集合编辑器**对话框用于添加到已知的类型**发送**和**接收**活动。 此外可以使用此对话框来添加到泛型类型自变量**InvokeMethod**活动。 当用于**发送**和**接收**活动添加已知的类型，**类型集合编辑器**对话框需要类型添加项。 是唯一的。 如果添加了重复的类型，并且通过单击提交了更改**确定**，返回错误消息。 当用于**InvokeMethod**活动添加泛型类型参数时，**类型集合编辑器**对话框允许添加重复的类型。  

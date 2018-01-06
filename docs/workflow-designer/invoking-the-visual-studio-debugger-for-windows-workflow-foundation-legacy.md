@@ -22,11 +22,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: f56c7926e949511d90af20ce6789fe662c08e1c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e28e86324c967397e67eefe054ae4d220acb41f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>调用 Visual Studio Debugger for Windows Workflow Foundation（旧版）
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器在旧 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 中调试 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 应用程序。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -56,6 +57,6 @@ ms.lasthandoff: 10/27/2017
   
  如果将主机应用程序设置为启动项目，则只调用 Visual Studio 调试器来进行调试；不会调用 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] Debugger for Windows Workflow Foundation。 如果使用 Visual Studio 调试器，则只会命中 C# 或 Visual Basic 代码断点；而不会命中在工作流设计器中设置的断点。 例如，如果使用 <xref:System.Workflow.Activities.ParallelActivity> Debugger for Windows Workflow Foundation，则会命中您在设计器中在 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] 活动处设置的断点，如果使用 Visual Studio 调试器，则不会命中此断点。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 在工作流 （旧版） 中设置断点](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
  [调试旧版工作流](../workflow-designer/debugging-legacy-workflows.md)

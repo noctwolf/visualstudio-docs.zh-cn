@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4aa949d1ff2a8d9954c29314a85363d04d09b1a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b2a6c395ed6dbfb8265ac131dd4318b590bf92e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>如何：以编程方式打开 Visio 文档
   用于打开现有的 Microsoft Office Visio 文档的两种方法： 打开和 OpenEx。 方法是打开的方法中，相同的但它提供调用方可以在其中指定文档打开方式的自变量。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
 -   必须有一个名为 `myDrawing.vsd` 的 Visio 文档位于 My Documents 文件夹（对于 Windows XP 及更低版本）或 Documents 文件夹（对于 Windows Vista）中名为 `Test` 的目录中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visio 解决方案](../vsto/visio-solutions.md)   
  [Visio 对象模型概述](../vsto/visio-object-model-overview.md)   
  [如何： 以编程方式创建新的 Visio 文档](../vsto/how-to-programmatically-create-new-visio-documents.md)   

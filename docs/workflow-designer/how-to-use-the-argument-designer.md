@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 5093e5561140a0ebff57da1f7c21a8954ee58bb3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aa1cdd0dd563a5f87d4e32f779985afd63319032
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-argument-designer"></a>如何：使用自变量设计器
 与以前版本的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 相比，该参数设计器使数据流入和流出某个活动更容易。 通过单击访问设计器**参数**设计画布左下角的按钮。 该设计器包含显示在表格窗体和可以按每一列标题排序除外的自变量列表**默认值**列。 每个自变量都包含名称、输入/输出/输入-输出/属性方向、类型和默认表达式值（如果有）。 名称和默认的表达式值都是可编辑的文本字段，类型和方向是下拉项。 [!包括[crabout](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)。  
@@ -34,6 +35,6 @@ ms.lasthandoff: 10/27/2017
     > [!NOTE]
     >  若要删除某个参数，通过单击选择的参数，然后按**删除**密钥。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用工作流设计器](../workflow-designer/using-the-workflow-designer.md)   
  [变量和参数](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

@@ -18,11 +18,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b392b4de0288478c73fba8cecd88be1f701cd5ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 124f4ca6450b5fe19bc707627dfed03e46307cff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>演练： 创建使用缓存的数据集 Master 从关系
   本演练演示在工作表上创建主/从关系以及缓存数据，以便可以脱机使用该解决方案。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -192,7 +193,7 @@ ms.lasthandoff: 10/31/2017
   
 -   部署解决方案。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)   
  [缓存数据](../vsto/caching-data.md)   

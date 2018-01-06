@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6a61c8f4ea5e9d9cc6d4ab13437d2ec4d4eef7ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e2dc5245dd50fd2a5211d55107e537fbc8eb6eb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-activity-library"></a>如何：创建活动库
 自定义活动用于在工作流中对特定业务流程进行建模。 通过 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 中的活动库模板，可使用 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 直观地创建这种自定义活动。  
@@ -48,6 +49,6 @@ ms.lasthandoff: 10/27/2017
     > [!CAUTION]
     >  自定义活动的主体中只能有一个子活动；但是，该子活动可以是一个复合活动，如 <xref:System.Activities.Statements.Sequence> 活动或 <xref:System.Activities.Statements.Flowchart> 活动。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 创建活动](/dotnet/framework/windows-workflow-foundation/how-to-create-an-activity)   
  [创建工作流项目](../workflow-designer/creating-a-workflow-project.md)

@@ -41,11 +41,12 @@ caps.latest.revision: "100"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ae5a2cf43fc457fccb3b4a8e5c53a5596fdae1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0a85f69ce67afdb4e1138c75b7c939be3980453f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="host-items-and-host-controls-overview"></a>宿主项和宿主控件概述
   宿主项和宿主控件是帮助向通过使用 Visual Studio 中的 Office 开发工具创建的 Office 解决方案提供编程模型的类型。 宿主项和宿主控件与基于 COM 的 Microsoft Office Word 和 Microsoft Office Excel 的对象模型交互，但更像与托管对象（如 Windows 窗体控件）进行交互。  
@@ -172,7 +173,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  不应将 Excel 中 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 对象的 <xref:Microsoft.Office.Interop.Excel.Application> 属性设置为 **false**。 将此属性设置为 **false** 可防止 Excel 引发任何事件，包括宿主控件的事件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [文档级自定义项编程](../vsto/programming-document-level-customizations.md)   

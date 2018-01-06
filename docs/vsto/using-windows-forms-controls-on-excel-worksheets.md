@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bbd9c19698a9c81b5af29d27bba91b8aa36dcd2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d80158853ec042b98f7e40feda70520af55ed32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-windows-forms-controls-on-excel-worksheets"></a>在 Excel 工作表中使用 Windows 窗体控件
   相同的方式将控件添加到 Windows 窗体中，可以将 Windows 窗体控件添加到您的 Microsoft Office Excel 工作簿。 有关使用文档上的控件的常规信息，请参阅[Office 文档概述上的 Windows 窗体控件](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="formula-for-embedding-controls"></a>嵌入控件的公式  
  当在 Excel 中选择一个控件时， **“公式栏”** 中将显示 **=EMBED("WinForms.Control.Host","")**。 此文本是必需的并且不应删除。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 调整工作表单元格中的控件的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
  [如何： 在打印时隐藏工作表上的控件](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [演练： 更改工作表格式设置使用复选框控件](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   

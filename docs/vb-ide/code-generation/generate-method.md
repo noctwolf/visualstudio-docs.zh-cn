@@ -11,11 +11,12 @@ ms.assetid: 683790b4-b68b-42d7-8dc4-a68eca05aa01
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8505f9a4fa8571e0e1c1e45f092d1b0e40c8ee9b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 93736bfbf2e0a97965e44978e379f0cbe40f656a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-method-in-visual-basic"></a>在 Visual Basic 中生成方法
 **新增功能：**允许您立即向类添加方法。 
@@ -47,6 +48,6 @@ ms.lasthandoff: 10/31/2017
 
    ![生成方法结果](media/method_result.png)
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [代码生成 (Visual Basic)](../code-generation-vb.md)  
 [预览更改](../../ide/preview-changes.md)

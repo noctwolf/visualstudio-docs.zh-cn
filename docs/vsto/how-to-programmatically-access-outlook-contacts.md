@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ee2c597c1a3b6a7c068c8206a87195779877461
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 44799a88e0c08999452e5425e3e7d175feb8ec56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>如何：以编程方式访问 Outlook 联系人
   本示例查找其姓氏包含指定的搜索字符串的所有联系人。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
 -   联系人姓氏和名字包含字符串"**Na"** (例如，Tzipi Butnaru) 中**联系人**文件夹。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用联系人项](../vsto/working-with-contact-items.md)   
  [如何： 以编程方式向 Outlook 联系人添加项](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
  [如何： 以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   

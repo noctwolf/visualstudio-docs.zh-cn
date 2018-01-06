@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9c248532c5724c5d5bc3a3bad6c1e6b4674fd5e
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 71cff97fc87d22a4edeee3b114e9599f307ab040
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 架构对话框
 **XML 架构**对话框用于选择要与 XML 文档关联的 XML 架构定义语言 (XSD) 架构。 您可以从架构缓存中选择架构，也可以指定不在缓存中的架构。 选定的架构被视为架构集的一部分。 架构集用于 IntelliSense 和 XML 文档验证。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 11/02/2017
 **移除**  
 从架构集中移除当前所选的架构。 该操作将从内存中的架构缓存中移除架构，但不从文件系统中移除架构。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 编辑器组件](../xml-tools/xml-editor-components.md)   
  [如何： 选择使用的 XML 架构](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
  [架构缓存](../xml-tools/schema-cache.md)

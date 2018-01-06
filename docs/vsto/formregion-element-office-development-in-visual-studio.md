@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0c34dc6e3cc7fd9339e9f2a183bcc11d54008e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bc425459cee4b4398ead78939283ab4db6efc134
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt;元素 （Visual Studio 中的 Office 开发）
   `formRegion` 命名空间的 `vstov4` 元素标识与 VSTO 外接程序关联的 Microsoft Office Outlook 窗体区域。  
@@ -42,9 +43,9 @@ ms.lasthandoff: 10/31/2017
   
  `formRegion` 元素具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`name`|必需。 标识窗体区域名称。|  
+|`name`|必须的。 标识窗体区域名称。|  
   
  `formRegion` 元素具有以下子元素。  
   
@@ -53,9 +54,9 @@ ms.lasthandoff: 10/31/2017
   
  `messageClass` 元素具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`name`|必需。 标识与窗体区域关联的窗体。|  
+|`name`|必须的。 标识与窗体区域关联的窗体。|  
   
 ## <a name="example"></a>示例  
  下面的代码示例阐释 Outlook VSTO 外接程序的应用程序清单中的 `formRegion` 元素，该外接程序是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 其中有三个邮件类与这一个窗体区域关联。 此代码示例摘自 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大的示例。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
 </vstov4:formRegion>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)   
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   

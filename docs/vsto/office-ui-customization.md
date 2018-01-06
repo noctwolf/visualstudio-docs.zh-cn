@@ -21,11 +21,12 @@ caps.latest.revision: "74"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7af3c33ed45a5e0b9678a41900280b1e665766ed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c169edc949f195d416194ae3c3ee1111977f649b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-ui-customization"></a>Office UI 自定义
   可以使用 Visual Studio 中的 Office 开发人员工具自定义 Microsoft Office 应用程序的用户界面 (UI)。 本主题介绍自定义的 UI 功能，分为以下几个部分：  
@@ -49,13 +50,13 @@ ms.lasthandoff: 10/31/2017
   
 |功能|支持的项目类型|支持的 Microsoft Office 应用程序|  
 |-------------|-----------------------------|---------------------------------------------|  
-|操作窗格|文档级自定义项|Excel<br /><br /> Word|  
-|自定义任务窗格|VSTO 外接程序|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word<br /><br /> Excel|  
-|自定义功能区 UI|文档级自定义项<br /><br /> VSTO 外接程序|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> Powerpoint<br /><br /> 项目<br /><br /> Word<br /><br /> Visio|  
-|Backstage 视图|文档级自定义项<br /><br /> VSTO 外接程序|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]。<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 项目<br /><br /> Word<br /><br /> Visio|  
+|操作窗格|文档级自定义项|Excel<br /><br /> 字|  
+|自定义任务窗格|VSTO 外接程序|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 字<br /><br /> Excel|  
+|自定义功能区 UI|文档级自定义项<br /><br /> VSTO 外接程序|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> Powerpoint<br /><br /> 项目<br /><br /> 字<br /><br /> Visio|  
+|Backstage 视图|文档级自定义项<br /><br /> VSTO 外接程序|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]。<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 项目<br /><br /> 字<br /><br /> Visio|  
 |Outlook 窗体区域|VSTO 外接程序|Outlook|  
-|文档中的控件|文档级自定义项<br /><br /> VSTO 外接程序|Excel<br /><br /> Word|  
-|快捷菜单|文档级自定义项<br /><br /> VSTO 外接程序|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 项目<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|  
+|文档中的控件|文档级自定义项<br /><br /> VSTO 外接程序|Excel<br /><br /> 字|  
+|快捷菜单|文档级自定义项<br /><br /> VSTO 外接程序|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 项目<br /><br /> 字<br /><br /> Visio<br /><br /> Excel|  
   
 ##  <a name="Actions"></a>操作窗格和自定义任务窗格  
  任务窗格是一种用户界面面板，通常停靠在 Microsoft Office 应用程序中窗口的一侧。 几乎所有 Microsoft Office 应用程序都包括内置任务窗格。 Word 中的“帮助”任务窗格就是任务窗格的一个示例。  
@@ -99,7 +100,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Shortcut"></a>快捷菜单  
  在文档或应用程序窗口中右键单击时，将出现一个快捷菜单。 可以设置在发生某事件后显示快捷菜单，例如，当用户右键单击文档、工作簿或主机控件时。 可以向快捷菜单添加大量不同的菜单命令或控件。 使用 XML 创建快捷菜单。 如果你添加**功能区 (XML)**项你可以向 Office 项目中，添加到要创建快捷菜单的功能区 XML 文件的 XML。 有关使用 XML 创建快捷菜单的详细信息，请参阅[如何： 向快捷菜单添加命令](../vsto/how-to-add-commands-to-shortcut-menus.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [功能区概述](../vsto/ribbon-overview.md)   
  [Windows 窗体上的控件 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [操作窗格概述](../vsto/actions-pane-overview.md)   

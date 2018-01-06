@@ -20,11 +20,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3d9ef7af80e7840405433ec7d87f647b90442c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bedad8aa3b47a3cdd09f3f94d927be88c5950964
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-text-in-documents"></a>在文档中处理文本
   本部分中的主题提供有关使用 Microsoft Office Word 的对象模型处理 Office 项目中的文本的分步过程和代码示例。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 |在打印文档前隐藏书签中的文本。|[如何：以编程方式隐藏文档中的文本](../vsto/how-to-programmatically-hide-text-in-documents.md)|  
 |向文本添加注释。|[如何：以编程方式在文档中向文本添加注释](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Word 对象模型概述](../vsto/word-object-model-overview.md)   
  [Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
   

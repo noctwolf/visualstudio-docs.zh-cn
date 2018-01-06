@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b0cd7d0567f12a7f1d57bdea765cbf9eb555dd8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da7cbf43ff21825e57b5bd5a47f59dbee27fe938
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>演练：使用 XSLT 层次结构
 XSLT 层次结构工具简化了诸多 XML 开发任务。 XSLT 样式表通常使用 `includes` 和 `imports` 指令。 编译从主体样式表开始，但看到因编译 XSLT 样式表而发生的错误时，该错误可能来自其他源而不是来自主体样式表。 修复该错误或编辑样式表可能需要访问包含的或已导入的样式表。 在调试器中逐项通过样式表，可能会打开已包含和已导入的样式表，并且可能需要在一个或多个已包含样式表中的某个位置添加断点。  
@@ -114,5 +115,5 @@ XSLT 层次结构工具简化了诸多 XML 开发任务。 XSLT 样式表通常�
   
 6.  当调试器在指令 `<xsl:include href="xslincludefile.xsl" />` 处停止运行时，请按“逐语句”按钮。 请注意，该调试可在所引用的样式表中继续进行。 该层次结构可见，并且设计器显示正确的路径。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：XSLT 探查器](../xml-tools/walkthrough-xslt-profiler.md)

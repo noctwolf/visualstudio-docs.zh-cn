@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d3579c3d537dc13723cbe285b454b24d079fe1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b7a24c793755cdd5102407d1a3a5cbfad103c92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>演练：创建自定义网站工作流活动
   本演练演示如何创建站点级别的工作流使用的自定义活动[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 （网站级应用的工作流到整个站点，而不仅仅是在站点上的列表。）自定义活动创建的备份公告列表，然后将公告列表的内容复制到其中。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   支持的版本的[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 有关详细信息，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -128,7 +129,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  在快速启动栏上，选择**公告备份**链接。 请注意，所有中包含的公告**公告**列表已复制到此新列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
   

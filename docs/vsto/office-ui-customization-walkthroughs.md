@@ -20,11 +20,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bed22d8b5fced2f423d6c6f1af764ba3ccf07a21
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4ae3cc188c08088321ede661cef36cd8102e8fb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Office UI 自定义演练
   下列演练演示了如何使用文档级自定义项和 VSTO 外接程序来自定义 Microsoft Office 应用程序的用户界面 (UI)。  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
  [演练：使用单选按钮更新工作表中的图表](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
  演示在 Excel 工作表中使用选项按钮更改图表样式的基础知识。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Word 的演练](../vsto/walkthroughs-using-word.md)   
  [使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)   
  [Office 解决方案演练中的数据](../vsto/data-in-office-solutions-walkthroughs.md)   

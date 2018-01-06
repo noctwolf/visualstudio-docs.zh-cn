@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40907d71bae8c8c25f06b3b1f3d4af8b9f79c385
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 196b16ba28ee5fa590c54dee89dcd65978f2ecd2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>如何：更改功能区上选项卡的位置
   你可以通过更改功能区上的自定义选项卡的顺序**选项卡集合编辑器**。 之前或之后在功能区上的内置选项卡，您可以将自定义选项卡。 内置选项卡是已在 Microsoft Office 应用程序的功能区的选项卡。 例如，**数据**选项卡是 Excel 中的内置选项卡。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
      有关控件 Id 的列表，请参阅[Office 2010 帮助文件： Office Fluent 用户界面控件标识符](http://go.microsoft.com/fwlink/?LinkID=181052)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [功能区概述](../vsto/ribbon-overview.md)   
  [功能区设计器](../vsto/ribbon-designer.md)   
  [功能区 XML](../vsto/ribbon-xml.md)   

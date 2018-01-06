@@ -19,11 +19,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8b97c44da9740d36ea68766c8dc0e56e535d5165
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: faef08b559a2e792630c03bcd09acf5122b9ddac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主互操作程序集
   若要在 Office 项目中使用 Microsoft Office 应用程序的功能，你必须使用该应用程序的主互操作程序集 (PIA)。 PIA 使托管代码可与 Microsoft Office 应用程序基于 COM 的对象模型进行交互。  
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="binding-redirect-assemblies"></a>绑定重定向程序集  
  在全局程序集缓存中安装并注册 Office PIA（通过 Office，或通过为 PIA 安装可再发行组件包）时，绑定重定向程序集也只会安装在全局程序集缓存中。 这些程序集有助于确保在运行时加载主互操作程序集的正确版本。 例如，当引用 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 程序集的解决方案在装有同一主互操作程序集的 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的计算机上运行时，绑定重定向程序集会指示 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 运行时加载 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的主互操作程序集。 有关详细信息，请参阅[如何：启用和禁用自动绑定重定向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Excel 对象模型概述](../vsto/excel-object-model-overview.md)   
  [InfoPath 解决方案](../vsto/infopath-solutions.md)   

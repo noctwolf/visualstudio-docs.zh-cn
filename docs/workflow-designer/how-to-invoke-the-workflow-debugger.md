@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8d7fbdb1851669d704cb8a44f8144291c04ae0ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f840354cad5551a9413ccb74851dfaca3353a5fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>如何：调用工作流调试器
 通常，您可以像调试用其他 Visual Studio 编程语言编写的程序那样调试工作流。 可通过以下方法启动工作流调试器：  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/27/2017
   
 -   如果你要生成工作流控制台应用程序项目，只需按**F5**开始调试应用程序和工作流。 如果要生成活动库自身，您必须有可执行的主机应用程序作为启动项目。 在中设置启动项目**解决方案资源管理器**，右键单击项目名称的主机，然后选择**设为启动项目**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 在工作流中设置断点](../workflow-designer/how-to-set-breakpoints-in-workflows.md)   
  [使用工作流设计器调试工作流](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)

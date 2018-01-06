@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3f1e9fca25f29bd7e649816a0529a58c7ec2f7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38d37d1c7805e98d8cf90fbb2e96e1d3c444313c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor-components"></a>“XML 编辑器”的组件
 本节讨论“XML 编辑器”的窗口和对话框。 因为“XML 编辑器”基于“文本编辑器”，所以，某些集成开发环境 (IDE) 使用常规的“文本编辑器”设置进行配置。  
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/31/2017
  [如何： 设置常规编辑器选项](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
  描述如何设置常规设置，例如显示、语句完成等。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 编辑器](../xml-tools/xml-editor.md)

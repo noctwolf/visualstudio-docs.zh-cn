@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa48a6d46035cd0c631882065b7c9b9ab2e2b8ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38eb32ac983d81d3ef94431d6275da643f632ae9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-office-functionality-inside-of-visual-studio"></a>在 Visual Studio 内使用 Office 功能
   当创建文档级项目时，文档和关联的应用程序承载在 Visual Studio 使你可以在设计和直接使用该文档。 如果必须在 Microsoft Office 应用程序在 Visual Studio 中打开，它通常按预期工作。 但是，某些应用程序是功能的不同的或不可访问。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="password-protection"></a>密码保护  
  可以设置 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿，以便它们不能打开的人不知道的密码。 密码保护在 Word 和 Excel，以不同方式处理时，会影响你开发的过程。 有关详细信息，请参阅[Office 文档上的密码保护](../vsto/password-protection-on-office-documents.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)   
  [信息权限管理与托管的代码扩展概述](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Office 文档上的密码保护](../vsto/password-protection-on-office-documents.md)   

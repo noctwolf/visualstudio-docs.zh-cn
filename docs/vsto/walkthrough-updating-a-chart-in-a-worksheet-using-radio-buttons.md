@@ -19,11 +19,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74bd005514fa2fe72450a95d84f38dd17a7b639f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 90427051f2dd3ca7a906e7b6716a33ddd538f726
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>演练：使用单选按钮更新工作表中的图表
   本演练演示了使用 Microsoft Office Excel 工作表上的单选按钮，使用户可以快速选项之间切换方式的基础知识。 在这种情况下，选项更改图表样式。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
     ||Q1|季 2 季|第 3 季度|第 4 季度|  
     |-|--------|--------|--------|--------|  
     |西部|500|550|550|600|  
-    |东部|600|625|675|400|  
+    |东部|600|625|675|700|  
     |北美|450|470|490|510|  
     |南部|800|750|775|790|  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  单击**浏览**buttonand 浏览到你在本演练前面创建的工作簿。  
   
-3.  单击“确定”。  
+3.  单击 **“确定”**。  
   
      Visual Studio 将在设计器中打开新的 Excel 工作簿并将添加**我 Excel 图表**项目合并为**解决方案资源管理器**。  
   
@@ -112,9 +113,9 @@ ms.lasthandoff: 10/31/2017
   
 1.  选择<xref:Microsoft.Office.Tools.Excel.Chart>设计器中控制和更改中的以下属性**属性**窗口。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**dataChart**|  
+    |**名称**|**dataChart**|  
     |**HasLegend**|**false**|  
   
 ## <a name="adding-controls"></a>添加控件  
@@ -136,31 +137,31 @@ ms.lasthandoff: 10/31/2017
   
 2.  从**公共控件**选项卡**工具箱**，拖动**单选按钮**控制到用户控件，并可以更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**columnChart**|  
-    |**“文本”**|**柱形图**|  
+    |**名称**|**columnChart**|  
+    |**文本**|**柱形图**|  
   
 3.  将第二个单选按钮添加到用户控件，并更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**barChart**|  
-    |**“文本”**|**条形图**|  
+    |**名称**|**barChart**|  
+    |**文本**|**条形图**|  
   
 4.  将第三个单选按钮添加到用户控件，并更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**lineChart**|  
-    |**“文本”**|**折线图**|  
+    |**名称**|**lineChart**|  
+    |**文本**|**折线图**|  
   
 5.  将第四个单选按钮添加到用户控件，并更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**areaBlockChart**|  
-    |**“文本”**|**面积图**|  
+    |**名称**|**areaBlockChart**|  
+    |**文本**|**面积图**|  
   
  接下来，编写的代码来更新该图表，单击一个单选按钮时。  
   
@@ -253,7 +254,7 @@ ms.lasthandoff: 10/31/2017
   
 -   更改格式设置的工作表上，通过使用复选框。 有关详细信息，请参阅[演练： 更改工作表格式使用复选框控件](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)  
   
   

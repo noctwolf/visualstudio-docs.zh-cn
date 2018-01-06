@@ -12,16 +12,17 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b2680a8f42dc984897b3fba4913ea69dbc23333f
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: be03e554bbdf55c447437116373cc60b15df391e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-xslt-profiler"></a>演练：XSLT 探查器
 XSLT 探查器可创建详细的 XSLT 性能报告，有助于度量、评估和锁定 XSLT 代码中与性能相关的问题。 XSLT 探查器包含有关 XSL 和 XSLT 样式表优化的有用提示。 对于需要最佳性能的 XSLT 应用程序，此工具必不可少。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
 下面的演练中的过程需要 Visual Studio 和.NET Framework 版本 4.0 或更高版本。
   
 ### <a name="create-the-performance-report"></a>创建性能报告  
@@ -108,5 +109,5 @@ XSLT 探查器可创建详细的 XSLT 性能报告，有助于度量、评估和
   
 4.  进程视图显示包含的表**进程 ID**，**进程名称**，**开始时间**，和**结束时间**。 可以通过单击列名对数据进行排序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [演练：使用 XSLT 层次结构](../xml-tools/walkthrough-using-xslt-hierarchy.md)

@@ -24,11 +24,12 @@ caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 13da2a068348478be8511e1c5624059b0d063bac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6a0f2e0b87e791618477ff6e11c9e180793d5495
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>按 Office 应用程序和项目类型提供的功能
   Visual Studio 具有几种类型的项目模板，它们支持 Microsoft Office 应用程序的不同业务方案，包括以下类型：  
@@ -47,8 +48,8 @@ ms.lasthandoff: 10/31/2017
   
 |项目类型|Microsoft Office 应用程序|  
 |-------------------|----------------------------------|  
-|文档级自定义项|Excel<br /><br /> Word|  
-|VSTO 外接程序|Excel<br /><br /> InfoPath（仅 InfoPath 2013 和 InfoPath 2010）<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 项目<br /><br /> Visio<br /><br /> Word<br /><br /> Excel|  
+|文档级自定义项|Excel<br /><br /> 字|  
+|VSTO 外接程序|Excel<br /><br /> InfoPath（仅 InfoPath 2013 和 InfoPath 2010）<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 项目<br /><br /> Visio<br /><br /> 字<br /><br /> Excel|  
   
 ## <a name="features-available-in-different-project-types"></a>不同项目类型中的可用功能  
  下表显示了提供每项功能的项目类型。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
 |功能区自定义。|文档级项目。<br /><br /> 以下应用程序的 VSTO 外接程序项目：<br /><br /> Excel<br />-InfoPath （InfoPath 2013 和 InfoPath 2010 仅）<br />-Outlook<br />-PowerPoint<br />项目<br />Visio<br />单词|[功能区概述](../vsto/ribbon-overview.md)|  
 |可视化文档设计器。|文档级项目。|[Visual Studio 环境中的 Office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [入门 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [操作窗格概述](../vsto/actions-pane-overview.md)   

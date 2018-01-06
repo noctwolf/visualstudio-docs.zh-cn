@@ -11,11 +11,12 @@ ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
 caps.latest.revision: "7"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 211dfeb11fe04ab147c330fb70787e17955a3c14
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ba933b2eebb7193f8ee93852ce2a047f01ca4e0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="transition-activity-designer"></a>事务活动设计器
 <xref:System.Activities.Statements.Transition> 表示两个状态间的转换。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/27/2017
   
  共享触发器转换是共享相同的触发事件的一组转换。 共享触发器基于为共享公用触发器事件的多个转换配置的表达式评估结果，允许有条件转换到目标状态。 若要将其他操作添加到转换和创建共享转换，请单击指示所需转换的开始的圆并将它拖到所需的状态。 新转换将与初始转换共享相同的触发器，但它将具有一个唯一的条件和操作。 创建共享的转换可以还从在转换设计器中通过单击**添加共享的触发器转换**底部的转换设计器，然后选择所需的目标状态从**连接的可用状态**下拉列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [状态机](../workflow-designer/statemachine-activity-designer.md)   
  [FinalState](../workflow-designer/finalstate-activity-designer.md)   
  [状态](../workflow-designer/state-activity-designer.md)

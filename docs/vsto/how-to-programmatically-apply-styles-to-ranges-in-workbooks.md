@@ -19,11 +19,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1064169de7af6652d2ded4817f1ce197550d938e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f2700b7a8a2a07c77bfbd6961443fdf57cd3cc07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>如何：以编程方式将样式应用于工作簿中的所选区域
   可以将已命名的样式应用到工作簿中的区域。 Excel 提供了大量预定义样式。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#56)]
      [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用范围](../vsto/working-with-ranges.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
  [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   

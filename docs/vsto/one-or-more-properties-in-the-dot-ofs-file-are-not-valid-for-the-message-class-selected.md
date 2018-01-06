@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddaad272326c4cd77e0e54bd7216974181c77a72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ca816a635abf929f2bfa1614f4560f434adbfd45
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>.ofs 文件中的一个或多个属性对于选定的消息类无效
   如果导入在 Outlook 中设计的窗体区域，但是该窗体区域的一个或多个字段与在“新建窗体区域”  向导最后一页上选择的邮件类不兼容，则会出现此错误。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
 -   在 Outlook 的窗体设计器中，删除与要在“新建窗体区域”  向导最后一页上选择的邮件类不兼容的字段。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：导入在 Outlook 中设计的窗体区域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
   
   

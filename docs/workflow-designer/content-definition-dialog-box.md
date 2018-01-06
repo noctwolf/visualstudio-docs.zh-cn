@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: fa0276e284f84eb6514fc407c9ce9be9cf24d8c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c87180f1f1c0b2c578977021b6a9511e629d10bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-definition-dialog-box"></a>“内容定义”对话框
 **内容定义**中使用对话框[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]配置**内容**属性<xref:System.ServiceModel.Activities.Send>， <xref:System.ServiceModel.Activities.Receive>， <xref:System.ServiceModel.Activities.SendReply>，和<xref:System.ServiceModel.Activities.ReceiveReply>活动。 [!INCLUDE[crabout](../test/includes/crabout_md.md)]活动设计器，可使用此框中，请参阅[发送](../workflow-designer/send-activity-designer.md)，[接收](../workflow-designer/receive-activity-designer.md)， [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)，和[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)主题。  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/27/2017
   
  可以在指定的内容**消息**部分以了解<xref:System.ServiceModel.Activities.ReceiveMessageContent>活动或**参数**部分以了解<xref:System.ServiceModel.Activities.ReceiveParametersContent>活动。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [工作流设计器 UI 帮助](../workflow-designer/workflow-designer-ui-help.md)

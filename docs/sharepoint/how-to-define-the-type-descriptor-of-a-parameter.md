@@ -22,11 +22,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19722a4cffb0e3708939734253b0f2c4a408389e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 64d741146c0ee2421ab663f78601bfba8c373f86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>如何：定义参数的类型描述符
   类型描述符包含描述参数的数据类型的属性。 可以定义字段、实体或实体集合的类型描述符。 有关详细信息，请参阅[TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx)。  
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
   
      新的类型描述符将作为子类型描述符添加到集合类型描述符中。 将此类型描述符配置为实体。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
  [如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [如何： 向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   

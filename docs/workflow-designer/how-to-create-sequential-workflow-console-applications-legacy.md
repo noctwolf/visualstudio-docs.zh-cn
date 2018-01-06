@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 7e9732334f422b4042f2cd581afaea06bf99ab16
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 79969572e4cab24e93a6c593a23369a00243ae0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>如何：创建顺序工作流控制台应用程序（旧版）
 按照这些步骤可使用 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 提供的旧 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 来创建顺序工作流控制台应用程序项目。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -47,12 +48,12 @@ ms.lasthandoff: 10/27/2017
   
      Windows 窗体设计器将会打开并显示所创建项目的 Form1。  
   
-8.  单击“确定”。  
+8.  单击 **“确定”**。  
   
      工作流设计器将会打开并显示所创建的顺序工作流的工作流设计图面。  
   
 9. 将活动从**工具箱**到中的设计图面**放置活动**指定区域。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建旧版工作流项目](../workflow-designer/creating-legacy-workflow-projects.md)   
  [开发工作流](http://msdn.microsoft.com/en-us/557bcb1f-a7ab-49f6-8df7-2706b7001301)

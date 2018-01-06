@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 130cf43e7c11eeccae8fdbdd22b46faf6bfe3c49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dff032c3f43c662b75f4d0b757f16e70095efc33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Visual Studio Tools for Office Runtime 中的程序集
   在创建新的 Office 项目时，Visual Studio 会自动添加对项目类型和项目的目标 .NET Framework 使用的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 程序集的引用。 在 .NET Framework 3.5、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]和 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的 Office 扩展中存在不同的程序集。 有关 Office 扩展的详细信息，请参阅 [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 |Microsoft.Office.Tools.Common.dll|提供以下类型：<br /><br /> -用于创建功能区自定义和智能标记的类型。 **注意：**中已弃用智能标记[!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]和[!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。<br />-用于在文档级自定义和自定义任务窗格在 VSTO 外接程序中创建操作窗格的类型。|  
 |Microsoft.Office.Tools.Excel.dll|提供表示 Excel 项目的主机项和主机控件以及支持类型的接口。 有关详细信息，请参阅 [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)。|  
 |Microsoft.Office.Tools.Outlook.dll|提供可用于在 Outlook VSTO 外接程序中创建自定义窗体区域的类型。|  
-|Microsoft.Office.Tools.Word.dll|提供表示 Word 项目的主机项和主机控件及支持类型的接口。 有关详细信息，请参阅 [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)。|  
+|Microsoft.Office.Tools.Word.dll|提供表示 Word 项目的主机项和主机控件及支持类型的接口。 有关更多信息，请参见 [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)。|  
 |Microsoft.Office.Tools.v4.0.Framework.dll|提供以下类型：<br /><br /> -可由 Visual Studio Tools for Office runtime 引发的异常。<br />的在创建 Outlook 时可以使用的属性窗体区域。|  
 |Microsoft.Office.Tools.dll|提供作为 Visual Studio Tools for Office Runtime 基础结构一部分，并且不应在代码中直接使用的类型。|  
 |Microsoft.VisualStudio.Tools.Applications.Runtime.dll|提供以下类型：<br /><br /> -<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>属性和<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType>接口，可以用于在文档级自定义项中缓存数据对象。 有关更多信息，请参见 [Caching Data](../vsto/caching-data.md)。<br />-<xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction>接口，可实现来运行其他安装步骤作为 Office 解决方案的 ClickOnce 安装的最后一步。 有关详细信息，请参阅[部署 Office 解决方案使用 clickonce](../vsto/deploying-an-office-solution-by-using-clickonce.md)。<br />-可由 Visual Studio Tools for Office runtime 引发的异常。<br />-其他类型，属于 Visual Studio Tools for Office runtime 基础结构，并且不应在代码中直接使用。|  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|提供以下类型：<br /><br /> 你可以使用以编程方式将自定义程序集附加到文档并访问文档中缓存的数据-microsoft.visualstudio.tools.applications.serverdocument 的引用类。 有关详细信息，请参阅 [Managing Documents on a Server by Using the ServerDocument Class](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)。<br />-多个类表示的层次结构缓存中的文档级自定义项的数据。 有关详细信息，请参阅 [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md)。|  
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|提供以下类型：<br /><br /> -Microsoft.VisualStudio.Tools.Office.Runtime.Security.AddInSecurityEntry 和 Microsoft.VisualStudio.Tools.Office.Runtime.Security.UserInclusionList 类，该类可用于创建用户包含列表条目，以向 Office 授予信任面向.NET Framework 3.5 的解决方案。<br />-其他类型，属于 Visual Studio Tools for Office runtime 基础结构，并且不应在代码中直接使用。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Visual Studio Tools for Office 运行时安装方案](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)  
   

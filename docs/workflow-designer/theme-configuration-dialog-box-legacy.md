@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 12ee899bdc9e905aea577de4dbf57b94e9f58306
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fad771da4643c68b3be08f778ca2db3b8e09c703
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>“主题配置”对话框（旧版）
 本主题介绍如何使用**主题配置**对话框中，在旧[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -38,6 +39,6 @@ ms.lasthandoff: 10/27/2017
 |**选择设计器，并配置属性：**|左窗格列出了可为其自定义主题的活动的树视图。 选择树视图中的活动，该活动的主题属性将显示在树视图窗格右边的属性窗格中。 单击属性以更改其值。|  
 |**预览**|单击以显示一个窗口来预览属性更改的效果。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [主题、 工作流设计器选项对话框 （旧版）](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)   
  [Windows Workflow Foundation 的旧版设计器 UI 帮助](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

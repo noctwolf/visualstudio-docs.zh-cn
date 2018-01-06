@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6ac342921696cb2a88426e2fd1f1ddee79e9341c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1c0b55f1539526e9386df2d6de050c14fb8f59cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>“规则集编辑器”对话框（旧版）
 本主题介绍如何使用**规则集编辑器**对话框中，在旧[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/27/2017
 |**添加规则**|向规则集中添加一个新规则定义。|  
 |**删除**|从规则集中删除选定的规则。|  
 |**链接**|指定要将哪种类型的正向链接用于规则集。 可用选项为：<br /><br /> -   **完全链接**，该选项指定使用所有正向链接机制： 隐式的方法属性，并显式使用**更新**函数。<br />-   **顺序**，该选项指定不使用任何正向链接。<br />-   **仅显式更新**，该选项指定仅执行正向链接上**更新**操作。<br /><br /> 有关正向链接的详细信息，请参阅[使用 PolicyActivity 活动](http://go.microsoft.com/fwlink?LinkID=65004)。|  
-|**Name**|规则集列表的列标题。 单击可按名称对规则列表排序。|  
+|**名称**|规则集列表的列标题。 单击可按名称对规则列表排序。|  
 |**优先级**|规则集列表的列标题。 单击可按优先级对规则列表排序。|  
 |**重新评估**|规则集列表的列标题。 单击可按重新计算类型对规则列表排序。|  
 |**规则预览**|规则集列表的列标题。 单击可按规则的条件和操作预览对规则列表排序。|  
@@ -89,7 +90,7 @@ Update("this/Address/State")
   
  有关使用**更新**与正向链接，请参阅[使用 PolicyActivity 活动](http://go.microsoft.com/fwlink?LinkID=65004)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)   
  [选择规则集对话框 （旧版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)   
  [使用 PolicyActivity 活动](http://go.microsoft.com/fwlink?LinkID=65004)   

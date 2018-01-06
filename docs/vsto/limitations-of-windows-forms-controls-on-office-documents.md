@@ -25,11 +25,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f8842bd80832211f02532ca706416416325663b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7fbbad8433df7dd36d8f09a13305da3e15430c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitations of Windows Forms Controls on Office Documents
   有一些 Windows 窗体控件添加到 Microsoft Office Word 文档或 Microsoft Office Excel 工作表和添加到 Windows 窗体的 Windows 窗体控件之间的差异。 例如，添加<xref:Microsoft.Office.Tools.Word.Controls.Button>控件到文档中，属性如<xref:Microsoft.Office.Tools.Word.Controls.Button.Dock%2A>， <xref:Microsoft.Office.Tools.Word.Controls.Button.Anchor%2A>，和<xref:Microsoft.Office.Tools.Word.Controls.Button.TabIndex%2A>不会按你所料方式。  
@@ -97,7 +98,7 @@ ms.lasthandoff: 10/31/2017
 |控件的大小调整|如果你调整文档使用其中一个八个大小调整控点上的控件，新的控件维度不会反映在**属性**窗口，直到重新控件。|  
 |控件行为|当拆分工作表窗口时，Excel 工作表上的控件可能会发生不可预测行为。 例如，访问<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>工作表上可能仅能在一个窗口中。|  
 |控件命名|不能使用保留的字来命名控件。 例如，如果你添加<xref:Microsoft.Office.Tools.Excel.Controls.Button>到工作表和名称更改为**系统**，生成项目时，会发生错误。|  
-|以编程方式添加控件|不使用控件的构造函数以在运行时向文档添加控件。 相反，使用提供的帮助器方法[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 例如，使用<xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A>方法将一个按钮添加到工作表。 如果你想要添加这些帮助器方法不支持的控件，你可以使用 AddControl 方法。 有关更多信息，请参见 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。|  
+|以编程方式添加控件|不使用控件的构造函数以在运行时向文档添加控件。 相反，使用提供的帮助器方法[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 例如，使用<xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A>方法将一个按钮添加到工作表。 如果你想要添加这些帮助器方法不支持的控件，你可以使用 AddControl 方法。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。|  
 |复制控件|如果你复制的 Windows 窗体控件和在运行时将其粘贴到文档，一个空容器 ActiveX 控件将粘贴到文档。 在新位置中，不显示 Windows 窗体控件中，位于该原始控件背后的代码不会复制到容器 ActiveX 控件。|  
   
 ## <a name="limitations-in-document-level-projects"></a>文档级项目中的限制  
@@ -193,7 +194,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="support-for-legacy-activex-controls"></a>对旧 ActiveX 控件的支持  
  如果创建使用现有的 Word 文档或包含 ActiveX 控件的 Excel 工作簿的文档级 Office 项目时，ActiveX 控件的功能不会丢失;但是，没有任何支持将新的 ActiveX 控件添加到你从 Visual Studio 中的文档。 例如，如果您的 Word 文档都有一个按钮从**控件**工具箱中运行的 Visual Basic for Applications (VBA) 宏，它将继续运行宏后已在 Office 项目使用的文档。 但是，建议你删除 ActiveX 控件和 VBA 宏并将其替换为 Windows 窗体控件和托管代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [Windows 窗体上的控件 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   

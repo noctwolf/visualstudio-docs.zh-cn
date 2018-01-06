@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ba31b5577090c3aef01ad974ba51a72e6f9980e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 53b30bb62e4c4f4146b1c43b6fe08f9683ba4867
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>如何：向工作表添加 Chart 控件
   你可以在设计时和运行时将 <xref:Microsoft.Office.Tools.Excel.Chart> 控件添加到在文档级自定义项中的 Microsoft Office Excel 工作表。 还可以在运行时将 <xref:Microsoft.Office.Tools.Excel.Chart> 控件添加到 VSTO 外接程序中。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
 6.  在**选择数据源**对话框中，单击**确定**。  
   
 ##  <a name="runtimedoclevel"></a>在运行时在文档级项目中添加图表控件  
- 可以在运行时动态添加 <xref:Microsoft.Office.Tools.Excel.Chart> 控件。 文档关闭时，动态创建的图表不会作为主机控件保留在文档中。 有关更多信息，请参见 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 可以在运行时动态添加 <xref:Microsoft.Office.Tools.Excel.Chart> 控件。 文档关闭时，动态创建的图表不会作为主机控件保留在文档中。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>以编程方式将图表控件添加到工作表中  
   
@@ -70,9 +71,9 @@ ms.lasthandoff: 10/31/2017
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]  
   
 ##  <a name="runtimeaddin"></a>在运行时在 VSTO 外接程序项目中添加图表控件  
- 可以按编程方式将 <xref:Microsoft.Office.Tools.Excel.Chart> 控件添加到 VSTO 外接程序项目中任何打开的工作表中。 有关详细信息，请参阅 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 可以按编程方式将 <xref:Microsoft.Office.Tools.Excel.Chart> 控件添加到 VSTO 外接程序项目中任何打开的工作表中。 有关更多信息，请参见 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
- 工作表关闭时，动态创建的图表控件不会作为主机控件保留在工作表中。 有关更多信息，请参见 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 工作表关闭时，动态创建的图表控件不会作为主机控件保留在工作表中。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>以编程方式将图表控件添加到工作表中  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
 -   制成图表并存储在工作表中 A5 到 D8 范围内的数据。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在运行时扩展 Word 文档和 Excel 工作簿在 VSTO 外接程序](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [图表控件](../vsto/chart-control.md)   

@@ -31,11 +31,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46f484bc9dc597bc43ea4e7e2474d5b7efcb1f3c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f12823ecb3fdc8d90d9f7c3651c6e04e6b0f6635
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="excel-solutions"></a>Excel 解决方案
   Visual Studio 提供可用于创建 Microsoft Office Excel 的文档级自定义项和 VSTO 外接程序的项目模板。 你可以使用这些解决方案自动化 Excel、扩展 Excel 功能以及自定义 Excel 用户界面 (UI)。 有关文档级自定义项和 VSTO 外接程序之间的差异的详细信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
 |[演练：创建你的第一个 Excel 文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|演示如何创建 Excel 的基本文档级自定义项。|  
 |[演练：创建你的第一个 Excel VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)|演示如何为 Excel 创建基本 VSTO 外接程序。|  
 |[演练：在运行时在 VSTO 外接程序项目中向工作表中添加控件](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)|演示如何使用 VSTO 外接程序在运行时向工作表添加 Windows 窗体按钮、 <xref:Microsoft.Office.Tools.Excel.NamedRange>和 <xref:Microsoft.Office.Tools.Excel.ListObject> 。|
-|[了解共同编写和外接程序](./understanding-coauthoring-and-addins.md)|描述你可能需要向你的解决方案，以适应共同编写的调整。|  
+|[了解共同编写和加载项](./understanding-coauthoring-and-addins.md)|描述你可能需要向你的解决方案，以适应共同编写的调整。|  
 |[Office 开发中的 Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199011)|提供有关开发 Excel 解决方案的文章和参考文档的链接。 这些链接并不特定于使用 Visual Studio 的 Office 开发。|  
   
   

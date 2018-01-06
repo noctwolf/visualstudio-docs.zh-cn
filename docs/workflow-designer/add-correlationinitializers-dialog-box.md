@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: b83b7c44857ffbbcf9dda465bb3c1c578ed73d3d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4c4d8e07aa172aef524b4d85bda5ad8efdfb509f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>“添加相关初始值设定项”对话框
 **添加相关初始值设定项**中使用对话框[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]配置**CorrelationInitializers**属性<xref:System.ServiceModel.Activities.Send>， <xref:System.ServiceModel.Activities.Receive>， <xref:System.ServiceModel.Activities.SendReply>，和<xref:System.ServiceModel.Activities.ReceiveReply>活动。 [!INCLUDE[crabout](../test/includes/crabout_md.md)]活动设计器，可使用此框中，请参阅[发送](../workflow-designer/send-activity-designer.md)，[接收](../workflow-designer/receive-activity-designer.md)， [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)，和[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)主题。  
@@ -36,6 +37,6 @@ ms.lasthandoff: 10/27/2017
   
  **接收**活动设计器可以拖动从**工具箱**拖放到[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]图面任何位置通常放置活动的。 这将创建具有 Receive 的默认 <xref:System.ServiceModel.Activities.Receive> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 选择**接收**活动设计器，然后为 （集合） 文本旁的省略号按钮的单击**CorrelationInitializers**属性在属性网格**添加相关初始值设定项**对话框出现。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [添加相关对话框](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)   
  [“初始化相关”对话框](../workflow-designer/initialize-correlation-dialog-box.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 89189feb32d84db8fb5c5eb7970faf325be1acd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d634f9648ed87f448e1b984392c827badc42930c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>如何：在工作流中设置断点（旧版）
 本主题介绍如何在使用旧 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 生成的 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 应用程序中设置断点。 在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 应用程序需要面向 [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -61,8 +62,8 @@ ms.lasthandoff: 10/27/2017
   
 5.  选择**工作流**从**语言**列表。  
   
-6.  单击“确定”。  
+6.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试旧版工作流](../workflow-designer/debugging-legacy-workflows.md)   
  [调用 Visual Studio Debugger for Windows Workflow Foundation（旧版）](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)

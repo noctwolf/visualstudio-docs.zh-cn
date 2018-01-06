@@ -10,11 +10,12 @@ helpviewer_keywords:
 ms.assetid: ffc5ba4d-44d7-4ef7-a3f6-38a8738bf127
 author: paulyuk
 ms.author: paulyuk
-ms.openlocfilehash: bdfe33cac19d488bc7763f3c61c518093d8afffa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: paulyuk
+ms.openlocfilehash: a8977aad735a115089685ed0032b3d358d8b89c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Visual Basic 6.0 在 Windows 上的支持声明
 
@@ -133,16 +134,16 @@ VB6 运行时将提供，会在 Windows Server 2016 支持的操作系统的生�
 
 |Windows 操作系统|VB6 支持的运行时</br>在 Windows 中传送的文件具有支持？|VB6 支持 Rutime</br>扩展文件</br>要与你的应用程序分发具有支持？| VB6 IDE 提供支持？|
 |---|---|---|---|
-|Windows 10 中，所有的 32 位版本|是 *|是 *|No|
-|Windows 10 中，所有 64 位版本 (仅 WOW)|是 * </br> 仅在 WOW 中运行的 32 位应用程序|是* </br> 仅在 WOW 中运行的 32 位应用程序|No|
-|Windows 8.1，所有的 32 位版本|是 *|是 *|No|
-| Windows 8.1，所有 64 位版本 (仅 WOW)|是 * </br> 仅在 WOW 中运行的 32 位应用程序|是* </br> 仅在 WOW 中运行的 32 位应用程序|No|
-|Windows 7 中，所有的 32 位版本|是 *|是 *|No|
-|Windows 7 中，所有 64 位版本 (仅 WOW)|是 * </br> 仅在 WOW 中运行的 32 位应用程序|是 * </br> 仅在 WOW 中运行的 32 位应用程序|No|
-|Windows Server 2016，所有 64 位版本 (仅 WOW)|是* </br> 仅在 WOW 中运行的 32 位应用程序|是* </br> 仅在 WOW 中运行的 32 位应用程序|No|
-|Windows Server 2012 R2，所有 64 位版本 (仅 WOW)<br>Windows Server 2012，所有 64 位版本 (仅 WOW)|是* </br> 仅在 WOW 中运行的 32 位应用程序|是* </br> 仅在 WOW 中运行的 32 位应用程序|No|
-|Windows Server 2008 R2，所有 x64 版本 (仅 WOW)</br>Windows Server 2008 中，所有 x64 版本 (仅 WOW)|是 * </br> 仅在 WOW 中运行的 32 位应用程序|是 * </br> 仅在 WOW 中运行的 32 位应用程序|No|
-|Windows Server 2008 中，所有的 32 位版本|是 *|是 *|No|
+|Windows 10 中，所有的 32 位版本|是 *|是 *|否|
+|Windows 10 中，所有 64 位版本 (仅 WOW)|是 * </br> 仅在 WOW 中运行的 32 位应用程序|是* </br> 仅在 WOW 中运行的 32 位应用程序|否|
+|Windows 8.1，所有的 32 位版本|是 *|是 *|否|
+| Windows 8.1，所有 64 位版本 (仅 WOW)|是 * </br> 仅在 WOW 中运行的 32 位应用程序|是* </br> 仅在 WOW 中运行的 32 位应用程序|否|
+|Windows 7 中，所有的 32 位版本|是 *|是 *|否|
+|Windows 7 中，所有 64 位版本 (仅 WOW)|是 * </br> 仅在 WOW 中运行的 32 位应用程序|是 * </br> 仅在 WOW 中运行的 32 位应用程序|否|
+|Windows Server 2016，所有 64 位版本 (仅 WOW)|是* </br> 仅在 WOW 中运行的 32 位应用程序|是* </br> 仅在 WOW 中运行的 32 位应用程序|否|
+|Windows Server 2012 R2，所有 64 位版本 (仅 WOW)<br>Windows Server 2012，所有 64 位版本 (仅 WOW)|是* </br> 仅在 WOW 中运行的 32 位应用程序|是* </br> 仅在 WOW 中运行的 32 位应用程序|否|
+|Windows Server 2008 R2，所有 x64 版本 (仅 WOW)</br>Windows Server 2008 中，所有 x64 版本 (仅 WOW)|是 * </br> 仅在 WOW 中运行的 32 位应用程序|是 * </br> 仅在 WOW 中运行的 32 位应用程序|否|
+|Windows Server 2008 中，所有的 32 位版本|是 *|是 *|否|
 
 
 > [!NOTE]

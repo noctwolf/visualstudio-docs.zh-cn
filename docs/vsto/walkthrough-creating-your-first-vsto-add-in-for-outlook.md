@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 514e6e0f52867b586135050d555508caec8cb6e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a5fb633d58485ab605cbfed1d3bddeb7b70e100f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-outlook"></a>演练：创建你的第一个 Outlook VSTO 外接程序
   本演练显示如何为 Microsoft Office Outlook 创建 VSTO 外接程序。 在此类解决方案中创建的功能可用于应用程序本身，而与所打开的 Outlook 项无关。 有关详细信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -66,14 +67,14 @@ ms.lasthandoff: 10/31/2017
   
 6.  在 **“名称”** 框中，键入 **FirstOutlookAddIn**。  
   
-7.  单击“确定” 。  
+7.  单击 **“确定”**。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 即会创建 **FirstExcelAddIn** 项目，并在编辑器中打开 **ThisAddIn** 代码文件。  
   
 ## <a name="writing-code-that-adds-text-to-each-new-mail-message"></a>编写将文本添加到每封新建邮件的代码  
  接下来，将代码添加到 ThisAddIn 代码文件。 新代码将使用 Outlook 对象模型将文本添加到每封新建邮件。 默认情况下，ThisAddIn 代码文件包含以下生成的代码：  
   
--   `ThisAddIn` 类的部分定义。 此类提供代码的入口点，并提供对 Outlook 对象模型的访问权限。 有关更多信息，请参见 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。`ThisAddIn` 类的其余部分是在隐藏代码文件中定义的，不应修改该代码文件。  
+-   `ThisAddIn` 类的部分定义。 此类提供代码的入口点，并提供对 Outlook 对象模型的访问权限。 有关详细信息，请参阅 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。`ThisAddIn` 类的其余部分是在隐藏代码文件中定义的，不应修改该代码文件。  
   
 -   `ThisAddIn_Startup` 和 `ThisAddIn_Shutdown` 事件处理程序。 Outlook 加载和卸载 VSTO 外接程序时会调用这些事件处理程序。 使用这些事件处理程序，可在加载 VSTO 外接程序对其进行初始化，并在卸载 VSTO 外接程序时清理其使用的资源。 有关详细信息，请参阅 [Events in Office Projects](../vsto/events-in-office-projects.md)。  
   
@@ -129,7 +130,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="next-steps"></a>后续步骤  
  你已经创建了一个基本的 Outlook VSTO 外接程序，现在可以从下面这些主题中了解有关如何开发 VSTO 外接程序的详细信息：  
   
--   可通过使用 Outlook VSTO 外接程序执行的常规编程任务。 有关更多信息，请参见 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
+-   可通过使用 Outlook VSTO 外接程序执行的常规编程任务。 有关详细信息，请参阅 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
   
 -   使用 Outlook 对象模型。 有关详细信息，请参阅 [Outlook Solutions](../vsto/outlook-solutions.md)。  
   
@@ -139,7 +140,7 @@ ms.lasthandoff: 10/31/2017
   
 -   部署 Outlook VSTO 外接程序。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Outlook 解决方案](../vsto/outlook-solutions.md)   
  [Office UI 自定义项](../vsto/office-ui-customization.md)   

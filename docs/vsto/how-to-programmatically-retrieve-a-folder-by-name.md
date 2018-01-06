@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32db5d1ae316b571b71a8015bd6ea5dc7fe7a110
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 542340605407450c1cedaf9077faa90b05cdfa28
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>如何：以编程方式按名称检索文件夹
   此示例获取命名的自定义文件夹的引用，然后显示该文件夹的内容。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
 -   名为 TestFolder 的文件夹。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用文件夹](../vsto/working-with-folders.md)   
  [如何： 以编程方式在特定文件夹中搜索](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
  [如何： 以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   

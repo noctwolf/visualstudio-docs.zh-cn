@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a468918bb796e5641d345902bad297d4617e6d51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9058cbd633931003751baf98fa1fcf34dd32b118
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-appointments"></a>如何：以编程方式创建约会
   此示例创建约会并将收件人添加到约会会议请求。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="example"></a>示例  
  [!code-csharp[Trin_OL_CreateAppts#1](../vsto/codesnippet/CSharp/Trin_OL_CreateAppts/thisaddin.cs#1)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用日历项](../vsto/working-with-calendar-items.md)   
  [如何： 以编程方式创建自定义日历](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
  [如何：以编程方式将条目添加到 Outlook 联系人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  

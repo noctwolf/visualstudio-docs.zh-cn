@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2991b31c387e959b055d30d37dd01cf79652adf7
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 582082504b713988039af609d59150715f75ecfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-model-view"></a>内容模型视图
 内容模型视图提供局部和全局架构节点及其组件（包括简单类型和复杂类型、元素、模型组、特性及特性组）的图形表示形式。 在内容模型视图中不能查看 XML 注释和处理指令。 内容模型视图包含两个面板：**工作区**包含中的节点的列表的面板[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)，和设计图面，请参阅架构的内容模型在选择的节点**工作区**面板。 内容模型视图还包括 XML 架构设计器工具栏和痕迹栏。  
@@ -115,5 +116,5 @@ ms.lasthandoff: 11/02/2017
   
  如果在 XML 编辑器中对架构集进行更改，则相应的更改会在内容模型视图中同步。 有关详细信息，请参阅[集成使用 XML 编辑器](../xml-tools/integration-with-xml-editor.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)

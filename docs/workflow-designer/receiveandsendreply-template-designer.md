@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ef7b027eb82b149f3cffcd54c976e1be608c2190
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 932f4bb7718b77103bc85f4555a9be20f330667b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 模板设计器
 **ReceiveAndSendReply**使用模板来创建一对预配置<xref:System.ServiceModel.Activities.Receive>和<xref:System.ServiceModel.Activities.SendReply>内的活动<xref:System.Activities.Statements.Sequence>作为请求/响应消息交换的一部分而关联的活动在服务器上的模式。  
@@ -51,9 +52,9 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.ServiceModel.Activities.SendReply.Content%2A>|False|指定要接收的消息或参数内容。 它可为 <xref:System.ServiceModel.Activities.ReceiveMessageContent> 活动或 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 活动。 通过单击旁的省略号按钮来编辑此属性**内容**在属性网格或单击字段**定义...**按钮旁边**内容**上的标签**接收**活动设计器图面。 两者都显示**内容定义**对话框。 [!INCLUDE[crabout](../test/includes/crabout_md.md)]如何使用此框，请参阅[内容定义对话框](../workflow-designer/content-definition-dialog-box.md)主题。|  
 |<xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A>|False|指定在工作流中对配置此 <xref:System.ServiceModel.Activities.CorrelationInitializer> 活动的多个 <xref:System.ServiceModel.Activities.CorrelationHandle> 对象进行初始化的 <xref:System.ServiceModel.Activities.Receive> 对象的集合。 单击省略号按钮旁边<xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A>属性在属性网格中，若要打开**添加相关初始值设定项**对话框。 [!INCLUDE[crabout](../test/includes/crabout_md.md)]使用此框中，请参阅[添加 CorrelationInitializers 对话框](../workflow-designer/add-correlationinitializers-dialog-box.md)主题。|  
 |<xref:System.ServiceModel.Activities.SendReply.Action%2A>|False|指定消息的操作标头。 如果未显式设置，则它的默认值为：<br /><br /> **https://tempuri.org/ {服务协定命名空间} / {服务协定名称} / {操作名称}**|  
-|<xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A>|False|指定在发送回复消息前是否应保留工作流实例。 默认值是**false**。|  
+|<xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A>|False|指定在发送回复消息前是否应保留工作流实例。 默认值为“false”。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)   
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
  [接收](../workflow-designer/receive-activity-designer.md)   

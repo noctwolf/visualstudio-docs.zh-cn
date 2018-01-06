@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 913ccb36c54914387cd6ca8a50a350ada1b14ce7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 42aa28637bc513865f96c0b88d2ca7c4dd726c5c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>如何：创建 SharePoint 命令
   如果你想要在 SharePoint 工具扩展中使用服务器对象模型，则必须创建自定义*SharePoint 命令*调用 API。 在直接调用到服务器对象模型的程序集中定义 SharePoint 命令。  
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="deploying-the-command"></a>部署命令  
  若要部署命令，请将命令程序集包含在同一个[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包与扩展程序集，使用命令。 你还必须 extension.vsixmanifest 文件中的命令程序集添加一个条目。 有关详细信息，请参阅[部署 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [如何： 执行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [演练：扩展服务器资源管理器以显示 Web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

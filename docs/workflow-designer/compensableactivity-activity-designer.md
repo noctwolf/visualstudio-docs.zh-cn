@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: f7523327fe63bfd00fb5bc5ce4f98aeef61a2567
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 670fc24ee800794bd9b013d5e5aaab6dbb98bcd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity 活动设计器
 **CompensableActivity**活动设计器用于创建和配置<xref:System.Activities.Statements.CompensableActivity>活动。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|指定补偿 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 活动时要执行的活动。 可使用 <xref:System.Activities.Statements.Compensate> 活动显式调用此处理程序。<br /><br /> 若要添加活动，删除其活动设计器从**工具箱**到**CompensationHandler**框**CompensableActivity**带提示文本的活动设计器"在此处放置活动"。|  
 |<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|指定确认 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 活动时要执行的活动。 可使用 <xref:System.Activities.Statements.Confirm> 活动显式调用此处理程序。<br /><br /> 若要添加活动，删除其活动设计器从**工具箱**到**ConfirmationHandler**框**CompensableActivity**带提示文本的活动设计器"在此处放置活动"。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [事务](../workflow-designer/transaction-activity-designers.md)   
  [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)   
  [补偿](../workflow-designer/compensate-activity-designer.md)   

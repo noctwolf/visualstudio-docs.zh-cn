@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d892b48f5cd22e1175f6cb046f627efb398e044
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: be74604bfabde34f2046af98ac976abd37068022
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 接口
   实现 IManagedAddin 接口创建组件加载托管 VSTO 外接程序。此接口在 2007 Microsoft Office system 中添加。  
@@ -46,7 +47,7 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>方法  
  下表列出 IManagedAddin 接口定义的方法。  
   
-|名称|描述|  
+|name|描述|  
 |----------|-----------------|  
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|在 Microsoft Office 应用程序加载托管 VSTO 外接程序时调用。|  
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|在 Microsoft Office 应用程序即将卸载 VSTO 托管外接程序时调用。|  
@@ -87,7 +88,7 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]  
 >  此 CLSID 也由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的 VSTOLoader.dll 使用。 因此，如果 IManagedAddin 用于创建你自己的 VSTO 外接程序加载程序和运行时组件，你无法将组件部署到运行 VSTO 外接程序依赖于计算机[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [非托管的 API 参考 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
   
   

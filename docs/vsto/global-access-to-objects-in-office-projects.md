@@ -35,11 +35,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c8119ccf0c6715d1c18957fcf8cac92d9872a27e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 12ae527d52e3dad3c60d561ba3bd5fa1171ac48b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>对 Office 项目中对象的全局访问
   创建 Office 项目时，Visual Studio 将在项目中自动生成一个名为 `Globals` 的类。 可以使用 `Globals` 类在运行时从项目中的任何代码访问多个不同的项目项。  
@@ -80,13 +81,13 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  永远不会在设计时初始化 `Globals` 类，控件实例由设计器创建。 这意味着，如果从一个用户控件类的内部创建使用 `Globals` 类的属性的用户控件，则在尝试使用返回的对象之前，必须确定该属性是否返回 **null** 。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [在运行时访问窗体区域](../vsto/accessing-a-form-region-at-run-time.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [文档主机项](../vsto/document-host-item.md)   
  [工作簿主机项](../vsto/workbook-host-item.md)   
  [工作表主机项](../vsto/worksheet-host-item.md)   
- [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

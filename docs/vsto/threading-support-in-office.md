@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbfccabe310732943a818515c69abc61bec59e52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c06e88c90116040fa3e9448368d32953095f889e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threading-support-in-office"></a>Office 中的线程支持
   本主题提供有关如何线程处理在 Microsoft Office 对象模型中支持的信息。 Office 对象模型不是线程安全的但可以使用的 Office 解决方案中的多个线程。 Office 应用程序是组件对象模型 (COM) 服务器。 COM 允许客户端在任意线程上调用 COM 服务器。 对于不是线程安全的 COM 服务器，COM 提供了一种机制来序列化并发调用，以便在服务器上执行任何时候只有一个逻辑线程。 此机制称为单线程单元 (STA) 模型。 调用序列化，因为调用方可能会被阻塞的时间段时服务器太忙或正在处理其他后台线程上的调用。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="modeless-forms"></a>无模式的窗体  
  无模式的窗体允许某种类型的与应用程序的交互，而该窗体显示。 在用户交互处理该窗体，并与无需关闭应用程序交互的窗体。 Office 对象模型支持托管的无模式窗体;但是，它们不应在后台线程上。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [托管线程处理](/dotnet/standard/threading/)  
  [线程处理 (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [线程处理 (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
  [使用线程与线程处理](/dotnet/standard/threading/using-threads-and-threading)   

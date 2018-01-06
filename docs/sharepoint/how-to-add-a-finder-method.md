@@ -24,11 +24,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0aa8888456d75554b2270058b844c7f76cb63fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b7594c650c1492b16e784ec649de6e66d1e6ec33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-finder-method"></a>如何：添加 Finder 方法
   若要启用业务数据连接服务，以显示 web 部件或列表中的实体的列表，你必须创建*Finder*方法。 Finder 方法是返回的实体实例的集合的特殊方法。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   

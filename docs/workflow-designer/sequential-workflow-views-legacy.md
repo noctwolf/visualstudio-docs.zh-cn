@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 74aac4ab6406b4f400d6d5951c00b2a92af91ec0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8b54fbb37d33bdb6d4e397c81ad85bffd39b221f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sequential-workflow-views-legacy"></a>顺序工作流视图（旧版）
 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 提供了一个旧 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]，可用于面向 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/27/2017
   
  有关类似视图的详细信息，请参阅[活动视图 （旧版）](../workflow-designer/activity-views-legacy.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [活动视图 （旧版）](../workflow-designer/activity-views-legacy.md)   
  [创建旧版工作流项目](../workflow-designer/creating-legacy-workflow-projects.md)   
  [工作流创作模式](http://go.microsoft.com/fwlink?LinkID=65014)

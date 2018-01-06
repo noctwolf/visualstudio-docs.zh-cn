@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 738568db51cce97ee0b110220aa195b4ded2adba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d8bcdcc42ada14f808c165e9e06b269817f79575
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flowchart-activity-designer"></a>流程图活动设计器
 <xref:System.Activities.Statements.Flowchart> 活动用于创建定义和管理复杂流控制的工作流。 可以使用代码或 <xref:System.Activities.Statements.Flowchart> 创作 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]。 本主题讲述 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 体验。 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 工作流活动设计器使开发人员能够以自然的方式创作工作流。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|在 <xref:System.Activities.Statements.FlowNode> 启动时执行的 <xref:System.Activities.Statements.Flowchart>。|  
 |<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|包含 <xref:System.Activities.Statements.FlowNode> 中的 <xref:System.Activities.Statements.Flowchart> 对象的集合。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [流程图](../workflow-designer/flowchart-activity-designers.md)   
  [Flowdecision](../workflow-designer/flowdecision-activity-designer.md)   
  [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)

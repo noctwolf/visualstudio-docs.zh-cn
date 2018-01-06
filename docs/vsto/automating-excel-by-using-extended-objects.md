@@ -25,18 +25,19 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fee085fc97308dd3f62066215b65faede08162e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f8342db2cc5803aaed31a7bda0cc8d8b6ae15e83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automating-excel-by-using-extended-objects"></a>使用扩展对象实现 Excel 自动化
   当开发 Visual Studio 中的 Excel 解决方案时，可以使用解决方案中的 *主机项* 和 *主机控件*。 这些对象可扩展 Excel 对象模型（即由 Excel 的主互操作程序集公开的对象模型）中某些常用对象，例如 <xref:Microsoft.Office.Interop.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Range> 对象。 扩展的对象行为类似于其所基于的 Excel 对象，但它们可以将其他功能（如“新建事件”）和数据绑定功能添加到对象。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- 虽然使用主机项和主机控件所在的上下文对于每种类型的解决方案有所不同，但它们均可用于 VSTO 外接程序和文档级自定义项。 有关详细信息，请参阅 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  
+ 虽然使用主机项和主机控件所在的上下文对于每种类型的解决方案有所不同，但它们均可用于 VSTO 外接程序和文档级自定义项。 有关更多信息，请参见 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  
   
 ## <a name="excel-host-items"></a>Excel 主机项  
  Excel 项目可授予你访问几个主机项的权限：  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [XmlMappedRange 控件](../vsto/xmlmappedrange-control.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [如何： 向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)   
  [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)   

@@ -32,11 +32,12 @@ caps.latest.revision: "76"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8d086aec822d0e2e9ecc80834703cc5481f9eef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 106b61c18b9124a72c1b149dcab04e30be5f25f2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Office 文档上的 Windows 窗体控件概述
   Windows 窗体控件是用户可与之交互以便输入或操作数据的对象。 在 Microsoft Office Excel 和 Microsoft Office Word 的文档级项目中，你可以在设计时向项目中的文档或工作簿添加 Windows 窗体控件，也可以在运行时以编程方式添加这些控件。 在 Excel 或 Word 的 VSTO 外接程序中，可以在运行时以编程方式向任何打开的文档或工作表添加这些控件。  
@@ -149,7 +150,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="adding-components-at-design-time"></a>在设计时添加组件  
  一些控件或组件在文档中不可见，而是显示在组件栏中。 Visual Studio 为每个文档窗口都提供了一个组件栏。 仅当文档中存在组件时，组件栏才会显示在屏幕上。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   

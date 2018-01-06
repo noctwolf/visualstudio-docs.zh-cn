@@ -19,11 +19,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3346b5cf096c523c9eb2c066d87a85e0d57efd94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d65b97fa42be6f8c89a2cfd963ce7ad1212b6dc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="associating-a-form-region-with-an-outlook-message-class"></a>Associating a Form Region with an Outlook Message Class
   你可以指定将显示的窗体区域的 Microsoft Office Outlook 项通过将窗体区域与每个项的邮件类关联。 例如，如果你想要将窗体区域附加到邮件项底部，你可以将窗体区域关联与 IPM。请注意消息类。  
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  Visual Studio 不验证你提供的邮件类名称正确或有效。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在运行时访问窗体区域](../vsto/accessing-a-form-region-at-run-time.md)   
  [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)   
  [演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   

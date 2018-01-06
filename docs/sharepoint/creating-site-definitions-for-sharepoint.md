@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4a7c002bd17da5f693955a82ab2e74bf65dc0cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 98be671e456c75c4be79994c84bf1ed6ae5114de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>创建 SharePoint 网站定义
   中的 SharePoint 网站定义项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]允许你创建*站点定义*，它用作新的 SharePoint 站点的基础。 这些定义不仅确定的外观和行为的 SharePoint 站点，但还自己的默认内容和功能。 在定义中，您可以放入预配置的列表、 内容类型、 事件接收器、 图像和其他项。 例如 SharePoint 包含某些网站定义（如 BLOG）。 在创建了基于博客站点定义的网站时，网站包含列表、 Web 部件和博客网站所需的其他项。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
 |[编程 ASP.NET 网页](http://go.microsoft.com/fwlink/?LinkId=178728)|提供有关如何创建事件处理程序中的信息[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]页以及如何使用客户端脚本。|  
 |[在 Windows SharePoint Services 中进行编程](http://go.microsoft.com/fwlink/?LinkId=178729)|介绍如何使用中提供的托管的对象模型[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

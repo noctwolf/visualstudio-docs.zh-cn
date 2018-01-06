@@ -18,11 +18,12 @@ caps.latest.revision: "69"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c35be3e79aea37b82e9ae46463582a0874e51a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b3d731fd0c38eab376e99e0f143287507042652
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 解决方案开发概述 (VSTO)
   通过将 Microsoft Office 用作解决方案的前端，你可以利用熟悉的 Microsoft Office 用户界面和工具，例如 Word 中的文字处理功能、Excel 的数据分析功能、数据分析功能和 Outlook 的电子邮件管理功能。 你可以在 Visual Studio 中开发解决方案以自定义 Office 应用程序并添加业务流程所需的特定功能。 例如，你可以将 Word 转化为协定生成器，收集可进行编辑或不可编辑的预存在部件外部的协定。 通过使用 Excel，你可以为不同项目创建定制的自动化预算工作表。 你的用户也可以脱机使用 Office 解决方案，使复杂的解决方案比起在使用基于 Web 的体系结构时更简单实用。  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
  有关使用 VSTO Office 解决方案中的 PIA 的详细信息，请参阅以下主题：  
   
--   [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)  
+-   [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
 -   [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="security"></a>安全性  
  当安装和加载 VSTO Office 解决方案时，将由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 对该解决方案强制进行一系列安全性检查。 这些检查包括验证部署清单的位置是否受信任或用于对部署清单签名的证书是否受信任。 有关详细信息，请参阅 [Securing Office Solutions](../vsto/securing-office-solutions.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [入门 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/getting-started-office-development-in-visual-studio.md)   
  [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)   
  [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   

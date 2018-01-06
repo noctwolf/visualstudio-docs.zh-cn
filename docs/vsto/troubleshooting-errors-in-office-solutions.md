@@ -24,11 +24,12 @@ caps.latest.revision: "69"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dd06ed6fde181760a1c4893b523bd7ef9c8dcc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e74b2daab5d9a8f5840b9109edd871e311bc4cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Office 解决方案中错误的疑难解答
   在 Visual Studio 中开发 Office 解决方案时，如果执行下面的任务，可能会遇到问题：  
@@ -216,7 +217,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  是否单击**是**或**否**在对话框中，Visual Studio 终止 Excel 或 Word 进程并停止调试器。 若要停止调试项目而不显示此对话框，请直接退出 Excel 或 Word，而不是在 Visual Studio 中停止调试器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 解决方案的疑难解答](../vsto/troubleshooting-office-solutions.md)   
  [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)   
  [Office 解决方案部署疑难解答](../vsto/troubleshooting-office-solution-deployment.md)  

@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d89215c759b4fabc48f697100f2935d0fa33e5ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0b54ad4592e22f828074ef29d734f7f9441921f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>如何：重新启用已禁用的 VSTO 外接程序
   Microsoft Office 应用程序可禁用行为异常的 VSTO 外接程序。 当你尝试对 VSTO 外接程序进行调试时，如果应用程序不加载它，则此应用程序可能已硬禁用或软禁用此 VSTO 外接程序。  
@@ -74,9 +75,9 @@ ms.lasthandoff: 10/31/2017
   
 6.  在 **“COM 外接程序”** 对话框中，选中已禁用 VSTO 外接程序旁的复选框。  
   
-7.  单击“确定”。  
+7.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   
  [调试 Office 项目](../vsto/debugging-office-projects.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  

@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3690f3e8459821e0a927a351ee28f901b318deab
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: f98f11cf9f4aef491951e1968105a30a679e687a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 编辑器的 IntelliSense 功能
 XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中提供的其他语言编辑器相提并论。 本节介绍如何使用 XML 架构定义语言 (XSD) 和 XSLT 文档中的 IntelliSense。  
@@ -104,7 +105,7 @@ XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中�
   
  **自动插入**部分**杂项**页控制以下行为：  
   
-|名称|描述|  
+|name|描述|  
 |----------|-----------------|  
 |结束标记|为新元素插入结束标记。|  
 |属性引号|在输入新特性名时插入特性值引号。|  
@@ -118,7 +119,7 @@ XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中�
   
 3.  进行任何更改到**自动插入**部分并单击**确定**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 编辑器](../xml-tools/xml-editor.md)   
  [使用 IntelliSense](../ide/using-intellisense.md)   
  [演练：使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

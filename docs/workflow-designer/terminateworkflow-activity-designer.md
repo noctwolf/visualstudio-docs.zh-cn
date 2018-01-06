@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 0a3b7c7cf56aa465f88ae918056e2d71ad6c41e4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e114f95baf771d8138fd155cf79f6e0ddbf14485
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow 活动设计器
 **TerminateWorkflow**活动设计器用于创建和配置<xref:System.Activities.Statements.TerminateWorkflow>活动。  
@@ -38,6 +39,6 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|False|终止工作流时要引发的异常。 此属性在属性网格中设置。|  
 |<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|False|解释终止工作流的原因。 此属性在属性网格中设置。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [运行时](../workflow-designer/runtime-activity-designers.md)   
  [保留](../workflow-designer/persist-activity-designer.md)

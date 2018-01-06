@@ -19,11 +19,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f10b0ed77dc9d5f97b6fc2fc4f218c86dafee41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e1729a7921f72df07439261cb054fe30770b24d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>演练：使用 CheckBox 控件更改工作表格式设置
   本演练演示了使用 Microsoft Office Excel 工作表上的复选框来更改格式设置的基础知识。 将使用 Visual Studio 中的 Office 开发工具创建并将代码添加到你的项目。 若要查看结果为已完成的示例，请参阅 Excel 控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -70,24 +71,24 @@ ms.lasthandoff: 10/31/2017
   
 4.  请确保**Checkbox1**是可见的对象名称列表框中**属性**窗口中，并更改以下属性：  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**applyBoldFont**|  
-    |**“文本”**|**加粗**|  
+    |**名称**|**applyBoldFont**|  
+    |**文本**|**加粗**|  
   
 5.  将第二个复选框，或其附近单元格**B4**和更改以下属性：  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**applyItalicFont**|  
-    |**“文本”**|**斜体**|  
+    |**名称**|**applyItalicFont**|  
+    |**文本**|**斜体**|  
   
 6.  拖动一个第三个复选框，或其附近单元格**B6**和更改以下属性：  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**applyUnderlineFont**|  
-    |**“文本”**|**下划线**|  
+    |**名称**|**applyUnderlineFont**|  
+    |**文本**|**下划线**|  
   
 7.  在按住 CTRL 键的同时选择所有三个复选框控件。  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  验证**$B$ 9**将显示在可编辑文本框中，并且该单元格**B9**选择。 如果不存在，请单击单元格**B9**以将其选中。  
   
-3.  单击“确定”。  
+3.  单击 **“确定”**。  
   
 4.  单元格**B9**将成为名为区域`NamedRange1`。  
   
@@ -114,9 +115,9 @@ ms.lasthandoff: 10/31/2017
   
 5.  请确保**NamedRange1**是可见的对象名称列表框中**属性**窗口中，并更改以下属性：  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**textFont**|  
+    |**名称**|**textFont**|  
     |**Value2**|**单击复选框来更改此文本的格式设置。**|  
   
  接下来，编写代码以设置文本格式时选择了某个选项。  
@@ -165,7 +166,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用按钮填充文本框。 有关详细信息，请参阅[演练： 在工作表使用按钮的文本框中显示的文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
  [Office 文档上的 Windows 窗体控件限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  

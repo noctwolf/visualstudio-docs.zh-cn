@@ -16,11 +16,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c35726314dc679289554e24d4150da4294cf8a0b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d97a94b1e329be9eda5ba51513e6784bb26660e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xmlnode-control"></a>XMLNode 控件
   **重要**提出有关 Microsoft Word 本主题中的信息不提供的以独占方式适合的好处和使用个人和组织用户位于美国和其区域之外，或使用，或开发在运行的程序，在 2010 年 1 月，Microsoft 中删除的特定功能实现的时间之前已授权的 Microsoft 的 Microsoft Word 产品被与 Microsoft Word 自定义 XML。 有关 Microsoft Word 此信息不能读取或使用的个人或美国或其地区熟悉使用，或开发在 Microsoft Word 2010 年 1 月 10 日之后已授权的 Microsoft 的产品运行的程序中的组织;这些产品将无法与产品许可在该日期之前或购买并获得美国以外的使用许可相同。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="binding-data-to-the-control"></a>将数据绑定到控件  
  <xref:Microsoft.Office.Tools.Word.XMLNode>控件支持简单数据绑定。 应通过使用到数据源绑定的 XML 节点<xref:System.Windows.Forms.IBindableComponent.DataBindings%2A>属性。 如果在绑定数据集中的数据进行了更新，<xref:Microsoft.Office.Tools.Word.XMLNode>控件会反映这些变化。  
   
-## <a name="formatting"></a>格式设置  
+## <a name="formatting"></a>格式化  
  格式设置也可应用于<xref:Microsoft.Office.Interop.Word.XMLNode>对象可以应用于<xref:Microsoft.Office.Tools.Word.XMLNode>控件。 这包括字体、 下划线样式和字符样式。  
   
 ## <a name="events"></a>事件  
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
   
  之间存在相同的差异<xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave>事件和<xref:Microsoft.Office.Tools.Word.XMLNode.Deselect>事件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)   
  [XMLNodes 控件](../vsto/xmlnodes-control.md)   

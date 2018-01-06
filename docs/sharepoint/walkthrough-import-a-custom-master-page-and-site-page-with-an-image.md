@@ -18,11 +18,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b5126e15daa8cbc22f4b64be0bb2bb2f3e0bb6b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ef55a90b55314bf7ab2c5aa6259f09b62a350da3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>演练：导入带有图像的自定义母版页和网站页
   本演练演示如何导入 SharePoint 的自定义母版页和网站页具有图像成为[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你必须具有以下组件来完成本演练：  
   
 -   支持的版本的[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -180,7 +181,7 @@ ms.lasthandoff: 10/31/2017
   
  文件导入到一种备用方法[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和将其部署到 SharePoint 是将文件添加到中的模块[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][如何： 导入母版页或主题](../sharepoint/how-to-import-a-master-page-or-theme.md)和[使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [从现有的 SharePoint 网站导入项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [为 Web 部件或应用程序页创建可重用控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  

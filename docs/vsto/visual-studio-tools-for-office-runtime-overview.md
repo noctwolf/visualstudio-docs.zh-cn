@@ -31,11 +31,12 @@ caps.latest.revision: "92"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61fe29fca2feb0f19e613af62f4d9407b8d8bbff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e091564ce02f55904e69d1abd9e240534a6dd8c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office Runtime 概述
   若要运行通过使用 Visual Studio 中的 Microsoft Office 开发人员工具创建的解决方案，必须在最终用户计算机上安装 Visual Studio 2010 Tools for Office Runtime。 有关更多信息，请参见 [How to: Install the Visual Studio Tools for Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office Runtime 包括两个主组件：  
@@ -119,7 +120,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="repairing-the-visual-studio-2010-tools-for-office-runtime"></a>修复 Visual Studio 2010 Tools for Office Runtime  
  如果需要修复此运行时，请在“控制面板”中打开 **“程序和功能”** 或 **“添加或删除程序”** ，在程序列表中选择 **“Microsoft Visual Studio 2010 Tools for Office Runtime”** ，然后单击 **“卸载”**。 通过运行的安装程序即可修复此运行时。 如果单击 **“更改”**，则不会向你提供用于修复此运行时的选项。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio Tools for Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
  [Visual Studio Tools for Office Runtime 中的程序集](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)   
  [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)   

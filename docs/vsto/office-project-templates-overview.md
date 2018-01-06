@@ -35,11 +35,12 @@ caps.latest.revision: "68"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6066e5adbe4519011f56a4d88ecfcc834eb7788c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d62ccb1e842621a129a4749ae2727c10c0da970a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-project-templates-overview"></a>Office 项目模板概述
   Visual Studio 中的 Microsoft Office 开发人员工具包括用于创建以下类型的 Office 解决方案的项目模板：  
@@ -170,7 +171,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="excel-add-ins-xla-files"></a>Excel 外接程序（.xla 文件）  
  没有用于创建 Excel VSTO 外接程序（.xla 文件）的 Office 项目。 可以将工作簿另存为 .xla 文件，但这不是一种受支持的操作，建议你不要这样做。 如果你保存的工作簿具有托管代码扩展作为**Microsoft Office Excel 外接程序 (\*.xla)**文件，你可以选择在**外接程序**对话框中，将应用于另一个工作簿。 某些情况下，你的代码将在应用 VSTO 外接程序后在目标工作簿中运行，但不支持这样使用 Office 解决方案。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   

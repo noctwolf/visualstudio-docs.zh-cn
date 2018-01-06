@@ -27,11 +27,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c8643a87a6226e03e8726910a459168e8b4c5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3bfc9f37fa440b57ad78a3df9640888e4f2a3d73
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-association-between-entities"></a>如何：创建实体之间的关联
   你可以定义您通过创建关联的业务数据连接 (BDC) 模型中的实体之间的关系。 Visual Studio 生成的模型的使用者提供有关每个关联的信息的方法。 SharePoint Web 部件、列表或自定义应用程序可以使用这些方法在用户界面 (UI) 中显示数据关系。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
      关联导航器方法的示例，请参阅[创建实体之间关联](../sharepoint/creating-an-association-between-entities.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建实体之间的关联](../sharepoint/creating-an-association-between-entities.md)   
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   

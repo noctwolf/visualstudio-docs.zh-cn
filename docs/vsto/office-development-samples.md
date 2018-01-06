@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 89e050bb2a946a03e8ccf854134d46af9001dbd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89311ac792a5dfd55497ccdadea89289dca11ff5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-development-samples"></a>Office 开发示例
   Visual Studio 包含示例应用程序，这些应用程序演示如何使用 Microsoft Office 开发人员工具来创建 Office 解决方案。 这些示例中的代码阐释了用于生成 Office 解决方案的语法、结构和技术。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 |UI 管理器示例|演示如何通过在 VSTO 外接程序中实现扩展性接口来为 Outlook 创建功能区自定义项、自定义任务窗格和自定义窗体区域。 功能区、任务窗格和窗体区域的每个实例都能够正确地相互通信。|  
 |VBA 和 VSTO 互操作性示例|演示如何从工作簿的 Visual Basic for Applications (VBA) 代码调用 Excel 文档级自定义项中的方法。<br /><br /> 只能联机访问本示例。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSDN 开发人员示例： 通过代码示例学习](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Office 编程中的常规任务](../vsto/common-tasks-in-office-programming.md)  
   

@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d220cca9ddd08004540768bbeb7322d28dedaa8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 28ed2ff2d68dc5a23cfceeb5d5f0eab6dea35eb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>演练：运行时在 VSTO 外接程序中将控件添加到文档
   你可以使用 VSTO 外接程序向任何打开的 Microsoft Office Word 文档添加控件。 本演练演示如何使用功能区来允许用户向文档添加 <xref:Microsoft.Office.Tools.Word.Controls.Button> 或 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -82,14 +83,14 @@ ms.lasthandoff: 10/31/2017
   
 8.  在 **“属性”** 窗口中，更改下列属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**名称**|**addButtonCheckBox**|  
     |**标签**|**“添加”按钮**|  
   
 9. 将第二个复选框添加到 **group1**，然后更改下列属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**名称**|**addRichTextCheckBox**|  
     |**标签**|**添加 RTF 控件**|  
@@ -186,7 +187,7 @@ ms.lasthandoff: 10/31/2017
   
 -   有关演示如何将控件添加到工作表，VSTO 外接程序中使用 for Excel 的演练，请参阅[演练： 将控件添加到工作表中在运行时在 VSTO 外接程序项目](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Word 解决方案](../vsto/word-solutions.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [在 Office 文档中保留动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)   

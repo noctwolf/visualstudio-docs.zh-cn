@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: fb1a9a4781d2ba486f2a9404c2c764a530cdf738
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3e3fd48f33e5499f7a67aed02c7b732ebe6b3b7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision 活动设计器
 <xref:System.Activities.Statements.FlowDecision> 节点是一个条件节点，它根据指定条件是否成立来将控制流分支到两个备分支之一。 如果流需要的分支超过两个，请改用 <xref:System.Activities.Statements.FlowSwitch%601>。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.FlowDecision.True%2A>|False|<xref:System.Activities.Statements.FlowDecision.Condition%2A> 成立时流控制所采用的路径。|  
 |<xref:System.Activities.Statements.FlowDecision.False%2A>|False|<xref:System.Activities.Statements.FlowDecision.Condition%2A> 不成立时流控制所采用的路径。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [流程图](../workflow-designer/flowchart-activity-designers.md)   
  [流程图](../workflow-designer/flowchart-activity-designer.md)   
  [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)

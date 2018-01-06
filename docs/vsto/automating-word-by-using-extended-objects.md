@@ -25,18 +25,19 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: efcd5ec4da94e1e3441ffbecafeeb54e1f896bd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89dde8238cd2badb4ea9841263d822b5729d00cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automating-word-by-using-extended-objects"></a>使用扩展对象实现 Word 自动化
   当在 Visual Studio 中开发 Word 解决方案时，可以使用解决方案中的 *宿主项* 和 *宿主控件*。 这些对象可扩展 Word 对象模型（即由 Word 主互操作程序集公开的对象模型）中的一些常用对象，例如 <xref:Microsoft.Office.Interop.Word.Document> 和 <xref:Microsoft.Office.Interop.Word.ContentControl> 对象。 扩展对象的行为类似于其所基于的 Word 对象，但它们可以将其他事件和数据绑定功能添加到对象。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- 虽然使用宿主项和宿主控件所在的上下文对于每种类型的解决方案有所不同，但它们均可用于 VSTO 外接程序和文档级自定义项。 有关详细信息，请参阅 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  
+ 虽然使用宿主项和宿主控件所在的上下文对于每种类型的解决方案有所不同，但它们均可用于 VSTO 外接程序和文档级自定义项。 有关更多信息，请参见 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  
   
 ## <a name="document-host-item"></a>文档宿主项  
  Word 项目可授予你访问 <xref:Microsoft.Office.Tools.Word.Document> 宿主项的权限。 <xref:Microsoft.Office.Tools.Word.Document> 宿主项还可充当其他控件（包括宿主控件和 Windows 窗体控件）的容器，并且还可保留有关其界面上的控件的信息。 <xref:Microsoft.Office.Tools.Word.Document> 宿主项还提供了大部分与 <xref:Microsoft.Office.Interop.Word.Document> 类相同的成员，该类是 Word 对象模型中的对应类。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [XMLNodes 控件](../vsto/xmlnodes-control.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [如何： 向 Word 文档添加 XMLNode 控件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   

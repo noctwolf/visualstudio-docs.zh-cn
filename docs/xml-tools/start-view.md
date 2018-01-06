@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03d9cb39384e60a1b4e2bd1af880f775c2a64ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1c5b1b933f7e4c24b42449cf93e2b4778ec788fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="start-view"></a>起始视图
 起始视图是 XML 架构 (XSD) 设计器的启动点。 创建新的 XSD 文件时，您将最初看到起始视图。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 |**显示内容模型视图**|切换到内容模型视图。 此视图可以通过使用键盘快捷方式访问： **CTRL + 2**。|  
 |**显示关系图视图**|切换到图形视图。 此视图可以通过使用键盘快捷方式访问： **CTRL + 3**。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)   
  [图形视图](../xml-tools/graph-view.md)   
  [内容模型视图](../xml-tools/content-model-view.md)   

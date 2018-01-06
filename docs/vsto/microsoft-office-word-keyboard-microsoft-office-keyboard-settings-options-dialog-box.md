@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbce725246356086ac64b1810b80b91839caea3c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 19e6e386a1d96fcadd788bb30f318de76e7f928f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>“选项”对话框 ->“Microsoft Office 键盘设置”->“Microsoft Office Word 键盘”
   Microsoft Office Word 和 Visual Studio 同时处理键盘快捷方式。 相同的快捷组合键可以代表不同的命令，在 Word 和 Visual Studio 中的内容。 在 Visual Studio 中的文档级项目中打开 Word 时，一次只有一个应用程序接收的快捷键命令。 默认情况下，Visual Studio 接收所有快捷键命令，但你可以在该文档通过选择具有焦点时接收它们的 Word**动态键盘方案**。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
  **动态键盘方案**  
  仅当它具有焦点时，visual Studio 将接收的快捷键命令。 当 Word 文档具有焦点时，Word 将接收所有的快捷键命令。 例如，如果当 Word 文档具有焦点时按 F5 功能键，Word 会打开**查找和替换** 癸杠**转到**选定选项卡。 如果您在 Visual Studio 具有焦点时按 F5，Visual Studio 将启动调试你的解决方案。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [“选项”对话框 ->“Microsoft Office 键盘设置”->“Microsoft Office Excel 键盘”](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
   
   

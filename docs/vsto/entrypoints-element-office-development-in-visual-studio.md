@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eb219d1f88635a82efbc41acb031cdb46a6d7713
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9b3c9d82b625b2666513f0443493aac59d916e41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;入口点&gt;元素 （Visual Studio 中的 Office 开发）
   `entryPoints` 命名空间的 `vstav3` 元素包含与 Office 解决方案关联的所有 `entryPoint` 元素。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
  `entryPoints` 具有下列元素。  
   
 ### <a name="entrypoint"></a>entryPoint  
- 必需。 角色`entryPoint`中的元素`vstav3`中定义命名空间[&#60; 入口点 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
+ 必须的。 角色`entryPoint`中的元素`vstav3`中定义命名空间[&#60; 入口点 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>文档级自定义项示例  
   
@@ -172,7 +173,7 @@ ms.lasthandoff: 10/31/2017
 </vstav3:entryPoints>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  

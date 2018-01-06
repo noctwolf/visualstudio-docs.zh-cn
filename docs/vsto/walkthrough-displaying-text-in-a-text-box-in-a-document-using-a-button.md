@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75146e583f2b15557a2f88ba18ed5d8798c7603b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 28d755d6123b2911bccd10e668212e1ea6a54484
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button"></a>演练：使用按钮在文档的文本框中显示文本
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用按钮和文本框。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -71,10 +72,10 @@ ms.lasthandoff: 10/31/2017
   
 5.  拖动**按钮**控制到文档并可以更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**insertText**|  
-    |**“文本”**|**插入文本**|  
+    |**名称**|**insertText**|  
+    |**文本**|**插入文本**|  
   
  现在，你可以编写将在单击该按钮时运行的代码。  
   
@@ -112,7 +113,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用单选按钮以选择图表样式。 有关详细信息，请参阅[演练： 更新文档使用单选按钮中的图表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows 窗体上的控件 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [使用 Word 的演练](../vsto/walkthroughs-using-word.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   

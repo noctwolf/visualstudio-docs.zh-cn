@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 ms.author: dagriffe
 author: dgriffen
 manager: ghogen
-ms.openlocfilehash: 15c63e446699f254ba33237c264c06c1da802811
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dagriffe
+ms.openlocfilehash: b601653e4b2d309d41f32ff71666567ab860e698
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 语言包架构 2.0 参考
 
@@ -66,7 +67,7 @@ VSIX 语言包架构提供 VSIX 包的本地化的安装信息。 此架构的�
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 |标题|描述|
 |-----------|-----------------|

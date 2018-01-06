@@ -19,16 +19,17 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6874dd125c692b6d853dc89cc533bf3d623aad51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 035b74048aca3b91449bc857a36594bc280065c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>演练：在 VSTO 外接程序项目中绑定到服务中的数据
   可以将数据绑定到 VSTO 外接程序项目中的宿主控件。 本演练演示如何在运行时将控件添加到 Microsoft Office Word 文档中、将控件绑定到从 MSDN Content Service 检索到的数据以及响应事件。  
   
- **适用于：** 本主题中的信息适用于 Word 2010 的应用程序级项目。 有关更多信息，请参见 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **适用于：** 本主题中的信息适用于 Word 2010 的应用程序级项目。 有关详细信息，请参阅 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)。  
   
  本演练阐释了以下任务：  
   
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
      随即从 MTPS Content Service 下载信息并将信息显示在内容控件中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

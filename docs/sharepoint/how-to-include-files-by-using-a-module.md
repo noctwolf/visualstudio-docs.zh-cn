@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 848fc50b8886cc736c5a7a856beec238c084d879
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3dca463352d5e698b74ecc6bda2a1579e3290513
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>如何：使用模块包括文件
   *模块*(无法将其与混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]模块) 是用于使您能够将如 ASPX 主控页文件、 文本文件或映像部署到 SharePoint 的容器。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
      当将文件添加到项目中时，它的项是自动添加到模块的 Elements.xml 文件中。 部署项目时，文件复制到 SharePoint 服务器，相对于项目的根目录，由指定**文件**元素的**Url**属性，如`Url="Module1/New Folder/SomeFile.doc`。 如果你想要更改文件的部署位置，请将其移到另一个文件夹中**解决方案资源管理器**或更改其**Url**设置。  
   
-8.  对于你想要在文档库中显示任何文件，追加`Type="GhostableInLibrary"`属性设为 Elements.xml 中其条目。 例如，  
+8.  对于你想要在文档库中显示任何文件，追加`Type="GhostableInLibrary"`属性设为 Elements.xml 中其条目。 例如，应用于对象的  
   
     ```  
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
      文件将复制到 SharePoint 中的指定位置。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
   

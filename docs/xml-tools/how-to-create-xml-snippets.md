@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 36fccee0e228e4391e80388284b59f19e1f3a1b9
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-xml-snippets"></a>如何：创建 XML 代码段
 “XML 编辑器”可以用于新建 XML 代码段。 编辑器包括名为“Snippet”的 XML 代码段，是用于新建 XML 代码段的代码段样本。  
@@ -112,7 +113,7 @@ ms.lasthandoff: 11/02/2017
   
  然后，可以在 XML 代码段中的任何其他位置使用该 $prefix$ 变量。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 代码段](../xml-tools/xml-snippets.md)   
  [如何： 使用 XML 代码段](../xml-tools/how-to-use-xml-snippets.md)   
  [如何：从 XML 架构生成 XML 代码片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

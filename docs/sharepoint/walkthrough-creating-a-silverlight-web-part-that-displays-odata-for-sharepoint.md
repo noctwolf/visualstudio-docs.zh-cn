@@ -16,18 +16,19 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a6999a7a390c207c184f26d36e0ca5d64d5fef5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38b88dac0760c1935961bab662302dd60bc26e4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>演练：创建显示 SharePoint OData 的 Silverlight Web 部件
   SharePoint 2010 通过 OData 公开其列表数据。 在 SharePoint 中，由 rest 样式服务 ListData.svc 实现 OData 服务。 本演练演示如何创建 SharePoint web 部件承载 Silverlight 应用程序。 Silverlight 应用程序通过使用 ListData.svc 来显示 SharePoint 公告列表信息。 有关详细信息，请参阅[SharePoint Foundation REST 接口](http://go.microsoft.com/fwlink/?LinkId=225999)和[开放数据协议](http://go.microsoft.com/fwlink/?LinkId=226000)。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   支持的 Microsoft Windows 和 SharePoint 版本。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -232,7 +233,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  在访问 Silverlight 中跨域的数据时，Silverlight 能防范可以被用来利用 web 应用程序的安全漏洞。 如果在访问 Silverlight 中的远程数据时遇到问题，请参阅[服务跨域边界提供](http://go.microsoft.com/fwlink/?LinkId=223276)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [为 SharePoint 创建 Web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [部署、发布和升级 SharePoint 解决方案包](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
   

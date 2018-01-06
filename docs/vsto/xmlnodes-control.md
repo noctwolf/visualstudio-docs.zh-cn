@@ -18,11 +18,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2950d1c9bf2edb0715ad588180cec3b5e17da265
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e59fb1ee6f3f8ea0be474f6fffabdc2c4ef7510e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xmlnodes-control"></a>XMLNodes 控件
   **重要**提出有关 Microsoft Word 本主题中的信息不提供的以独占方式适合的好处和使用个人和组织用户位于美国和其区域之外，或使用，或开发在运行的程序，在 2010 年 1 月，Microsoft 中删除的特定功能实现的时间之前已授权的 Microsoft 的 Microsoft Word 产品被与 Microsoft Word 自定义 XML。 有关 Microsoft Word 此信息不能读取或使用的个人或美国或其地区熟悉使用，或开发在 Microsoft Word 2010 年 1 月 10 日之后已授权的 Microsoft 的产品运行的程序中的组织;这些产品将无法与产品许可在该日期之前或购买并获得美国以外的使用许可相同。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="binding-data-to-the-control"></a>将数据绑定到控件  
  <xref:Microsoft.Office.Tools.Word.XMLNodes>控件不支持数据绑定。 这是因为<xref:Microsoft.Office.Tools.Word.XMLNodes>控件不具有复杂数据绑定功能，，简单数据绑定不能表示重复数据。  
   
-## <a name="formatting"></a>格式设置  
+## <a name="formatting"></a>格式化  
  可以向文档中的文本应用任何格式设置可应用于<xref:Microsoft.Office.Tools.Word.XMLNodes>控件。  
   
 ## <a name="events"></a>事件  
@@ -83,7 +84,7 @@ ms.lasthandoff: 10/31/2017
   
  之间存在相同的差异<xref:Microsoft.Office.Tools.Word.XMLNodes.ContextLeave>事件和<xref:Microsoft.Office.Tools.Word.XMLNodes.Deselect>事件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)   
  [XMLNode 控件](../vsto/xmlnode-control.md)   

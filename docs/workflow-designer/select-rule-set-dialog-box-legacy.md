@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: d12df1b43ebde3f565bef46c2be6f760031ad8bb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ae62202bc1762cfcf893586291ee735af69d813c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>“选择规则集”对话框（旧版）
 本主题介绍如何使用**选择规则集**对话框中，在旧[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/27/2017
   
  有关条件的详细信息，请参阅[在工作流中使用条件](http://go.microsoft.com/fwlink?LinkID=65009)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)   
  [规则集编辑器对话框 （旧版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)   
  [使用 PolicyActivity 活动](http://go.microsoft.com/fwlink?LinkID=65004)   

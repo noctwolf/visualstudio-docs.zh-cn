@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: c2c3083daec31620efa9f9665443d9d35b06804b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f2df04273936f84c8bf371ecb053a7bb22f82147
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="workflow-designer-shell-features"></a>工作流设计器 Shell 功能
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 由三个主要的 UI 区域组成：设计器图面、设计器图面上面的痕迹栏和下面的 shell。 痕迹栏位于屏幕的顶部，用于显示当前根活动的祖先列表。 [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][如何： 使用痕迹导航](../workflow-designer/how-to-use-breadcrumb-navigation.md)。 设计器图面位于屏幕的中央，用于撰写工作流。 Shell 位于屏幕的底部，包含用于管理当前视图的若干按钮。  

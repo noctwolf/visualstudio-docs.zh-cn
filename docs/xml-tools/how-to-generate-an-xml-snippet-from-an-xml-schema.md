@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1090d1509152aaa507220d3119977bb8e9252876
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 8c27307155a56aae07b69c02c6cbdf3da72059b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：从 XML 架构生成 XML 代码段
 “XML 编辑器”可以从 XML 架构定义语言 (XSD) 架构生成 XML 代码段。 例如，在编写 XML 文件时，如果位置在元素名的旁边，可以通过按 TAB 键，使用从该元素的架构信息生成的 XML 数据来填充该元素。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/02/2017
   
 5.  选择架构文件，然后单击**打开**。  
   
-6.  单击“确定”。  
+6.  单击 **“确定”**。  
   
      现在，XML 架构已与 XML 文档关联。  
   
@@ -153,6 +154,6 @@ ms.lasthandoff: 11/02/2017
 </Contact>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 代码段](../xml-tools/xml-snippets.md)   
  [如何：使用 XML 代码片段](../xml-tools/how-to-use-xml-snippets.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 847b547aae785d94f8d9025b7b4badf9d8b21075
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 36053a8ef415e35f1244d0e379a49a46ea24f33d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>演练：文档级项目中的简单数据绑定
   本演练演示的文档级项目中的数据绑定的基础知识。 SQL Server 数据库中的单个数据字段绑定到在 Microsoft Office Excel 中的命名区域中。 本演练还演示如何添加能够让你能滚动显示各个表中的所有记录控件。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -116,7 +117,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  将三个按钮添加到此顺序中的以下单元格以便名称所示：  
   
-    |单元格|(名称)|  
+    |单元格|（名称）|  
     |----------|--------------|  
     |B3|Button2|  
     |C3|Button3|  
@@ -195,7 +196,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用<xref:System.Windows.Forms.BindingNavigator>控件滚动显示记录。 有关详细信息，请参阅[如何： 使用 Windows 窗体 BindingNavigator 控件导航数据](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)   
  [演练：文档级项目中的复杂数据绑定](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  

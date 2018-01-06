@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d549afb96465590a21e516f649d860f23f4056f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8a0072df206fcdfc27966632e3801316bcfb7274
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>如何：计算 XPath 表达式
 你可以使用计算 XPath 表达式**快速监视**对话框。 XPath 表达式必须符合 W3C XPath 1.0 建议。 当前 XSLT 上下文 — 即`self::node()`中的节点**局部变量**窗口 — 为 XPath 表达式提供计算上下文。  
@@ -52,5 +53,5 @@ ms.lasthandoff: 10/31/2017
   
      **值**框显示 XPath 表达式计算结果为`true`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 XSLT](../xml-tools/debugging-xslt.md)

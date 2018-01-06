@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9366e3439ed636a2c856ef26c858a7383002a0e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a5ef93ab759f4e64607685d3d44fddfbf6c2c2dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;入口点&gt;元素 （Visual Studio 中的 Office 开发）
   `entryPoint` 命名空间中的每个 `vstav3` 元素都标识应在安装此 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 应用程序时运行的自定义程序集。  
@@ -43,14 +44,14 @@ ms.lasthandoff: 10/31/2017
   
  `entryPoint` 元素具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`class`|必需。 标识要执行的自定义程序集。 此属性的语法是 *NamespaceName.ClassName*。|  
+|`class`|必须的。 标识要执行的自定义程序集。 此属性的语法是 *NamespaceName.ClassName*。|  
   
  `entryPoint` 具有以下元素。  
   
 ### <a name="assemblyidentity"></a>assemblyIdentity  
- 必需。 `assemblyIdentity` 命名空间中的 `vstav3` 元素引用 `assemblyIdentity` 应用程序清单中的现有 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 元素。  
+ 必须的。 `assemblyIdentity` 命名空间中的 `vstav3` 元素引用 `assemblyIdentity` 应用程序清单中的现有 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 元素。  
   
  角色`assemblyIdentity`中定义其属性和[&#60; assemblyIdentity &#62;元素 &#40;ClickOnce 应用程序 &#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-application).  
   
@@ -114,7 +115,7 @@ ms.lasthandoff: 10/31/2017
 </vstav3:entryPoint>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  

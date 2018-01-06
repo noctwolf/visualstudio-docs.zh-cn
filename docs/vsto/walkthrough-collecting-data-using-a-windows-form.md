@@ -20,11 +20,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32156e4d2c9e8e5f809a4de64478667e7133aeb1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d52a97e57701159a8ff64a106a92f181b50df66f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-collecting-data-using-a-windows-form"></a>演练：使用 Windows 窗体收集数据
   本演练演示如何从 Microsoft Office Excel 文档级自定义项打开 Windows 窗体、从用户处收集信息并将这些信息写入工作表单元格。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
  虽然本演练具体使用的是 Excel 文档级项目，但其中所阐释的概念同样适用于其他 Office 项目。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -140,7 +141,7 @@ ms.lasthandoff: 10/31/2017
   
 -   从文档级自定义项或 VSTO 外接程序修改 Microsoft Office 应用程序的用户界面。 有关详细信息，请参阅[Office UI 自定义项](../vsto/office-ui-customization.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   

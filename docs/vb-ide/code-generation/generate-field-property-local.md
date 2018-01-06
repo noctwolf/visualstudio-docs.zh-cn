@@ -11,11 +11,12 @@ ms.assetid: c11888e0-31b1-44cc-9037-98d3f8b3623b
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2dd0ef0db74a0ee723c7cd09bd8118e646b8ba3f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8e23dfa2b482a16d70ef71614ba35f9b20523aeb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-field-property-or-local-in-visual-basic"></a>生成 Visual Basic 中的字段、 属性或本地
 **新增功能：**便会立即生成以前未声明的字段、 属性或本地的代码。 
@@ -47,6 +48,6 @@ ms.lasthandoff: 10/31/2017
 
    ![生成字段/属性/本地结果](media/field_result.png)
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [代码生成 (Visual Basic)](../code-generation-vb.md)  
 [预览更改](../../ide/preview-changes.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: b7deb3daed85c0c15d299052642abcb732ff12c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 55061da71038b3af38049a431db08fda6638144f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-expression-editor"></a>如何：使用表达式编辑器
 表达式编辑器是许多工作流活动中使用的 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 控件，用于输入和计算这些表达式。 表达式编辑器提供全面的 IDE 编辑体验，包括 IntelliSense、着色、ParamInfo、错误波形曲线和其他功能。 编译器在表达式输入后对它进行验证。 如果表达式无效，则显示一个错误图标。 此外可以作为打开编辑器**表达式编辑器**对话框。  
@@ -53,5 +54,5 @@ ms.lasthandoff: 10/27/2017
   
      输入/编辑表达式的另一个方法是在属性网格中单击属性名旁的省略号。 这将打开**表达式编辑器**为对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Activities.Presentation.View.ExpressionTextBox>

@@ -27,11 +27,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c0a4dd8bb577ddc52ed6a97b2e412109c214335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38cf7e2fd9229ddc0a99f317a0680ea272fa3ad5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-xml"></a>功能区 XML
   功能区 (XML) 项使你能够通过使用 XML 来自定义功能区。 如果想要通过功能区（可视化设计器）项不支持的方式自定义功能区，请使用功能区 (XML) 项。 有关可以与每个项执行的操作的比较，请参阅[功能区概述](../vsto/ribbon-overview.md)。  
@@ -142,11 +143,11 @@ ms.lasthandoff: 10/31/2017
   
 |方法|描述|  
 |------------|-----------------|  
-|`GetCustomUI`|返回功能区 XML 文件的内容。 Microsoft Office 应用程序调用此方法，以便获得一个定义自定义功能区用户界面的 XML 字符串。 此方法实现 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法。 **注意：** `GetCustomUI`应只为返回功能区 XML 文件中; 的内容而实现不应该用于初始化 VSTO 外接程序中。   特别是，不应在 `GetCustomUI` 实现中尝试显示对话框或其他窗口。 否则，自定义功能区可能无法正确工作。 如果必须运行初始化 VSTO 外接程序的代码，请将代码添加到 `ThisAddIn_Startup` 事件处理程序。|  
+|`GetCustomUI`|返回功能区 XML 文件的内容。 Microsoft Office 应用程序调用此方法，以便获得一个定义自定义功能区用户界面的 XML 字符串。 此方法实现 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法。 **注意：** `GetCustomUI`应只为返回功能区 XML 文件中; 的内容而实现不应该用于初始化 VSTO 外接程序中。 特别是，不应在 `GetCustomUI` 实现中尝试显示对话框或其他窗口。 否则，自定义功能区可能无法正确工作。 如果必须运行初始化 VSTO 外接程序的代码，请将代码添加到 `ThisAddIn_Startup` 事件处理程序。|  
 |`OnLoad`|将 <xref:Microsoft.Office.Core.IRibbonControl> 参数分配给 `ribbon` 字段。 当 Microsoft Office 应用程序加载自定义功能区时，它们将调用此方法。 此字段可用于动态更新自定义功能区。 有关详细信息，请参阅技术文章 [为开发人员自定义 Office (2007) 功能区用户界面（第 1 部分，共 3 部分）](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3)。|  
 |`GetResourceText`|由 `GetCustomUI` 方法调用，以获取功能区 XML 文件的内容。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [功能区概述](../vsto/ribbon-overview.md)   
  [演练： 使用功能区 XML 创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
  [Office UI 自定义](../vsto/office-ui-customization.md)  

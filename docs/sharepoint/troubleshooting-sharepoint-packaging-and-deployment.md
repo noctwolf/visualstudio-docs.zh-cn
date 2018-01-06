@@ -28,11 +28,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 569f177f23ce8c1e32441263b219f51d2305ca86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3c147fd683db68bed3b66f0eac146b8c98272d77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>SharePoint 打包和部署疑难解答
   本主题论述了您在打包和部署 SharePoint 解决方案时可能遇到的各种问题。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
  下表演示了有关设置**部署冲突解决方法**属性。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |自动|自动检测冲突和解决冲突。|  
 |提示|检测冲突并在解决冲突之前向开发人员报告冲突。|  
@@ -114,7 +115,7 @@ ms.lasthandoff: 10/31/2017
   
  若要删除此警告，请生成项目，然后关闭设计器并重新打开设计器，或者禁用项目的自动收回选项。 若要执行此操作，清除**调试后自动收回**上的复选框**SharePoint**项目属性对话框中的选项卡。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

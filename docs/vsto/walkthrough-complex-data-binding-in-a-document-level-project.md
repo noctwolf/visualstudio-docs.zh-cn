@@ -20,11 +20,12 @@ caps.latest.revision: "50"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dff7896b24508891a62ad3a0760880ed6a68a65a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 10d35a0cec1e927fbc264d64ef911503f68f1606
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>演练：文档级项目中的复杂数据绑定
   本演练演示文档级项目中的复杂数据绑定的基础知识。 你可以将 Microsoft Office Excel 工作表中的多个单元格绑定到 Northwind SQL Server 数据库中的字段。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -227,7 +228,7 @@ ms.lasthandoff: 10/31/2017
   
 -   创建一个字段和表之间的主/从关系。 有关详细信息，请参阅[演练： 创建 Master 详细信息的关系使用缓存数据集](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)   
  [演练：文档级项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  

@@ -30,11 +30,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 097a4247ccc7604dd4c39b81e0f733578fc91c89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5a655210f3ab8bbcdbae7c06815a05d1ad24b390
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-task-panes"></a>自定义任务窗格
   任务窗格是一种用户界面面板，通常停靠在 Microsoft Office 应用程序中窗口的一侧。 自定义任务窗格为你提供了一钟方法，使你可以创建自己的任务窗格并为用户提供熟悉的界面来访问你的解决方案的功能。 例如，界面中可以包含运行代码以修改文档或显示来自数据源的数据的控件。  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
  下表列出可以对其进行处理以响应用户对自定义任务窗格所做更改的事件。  
   
-|任务|Event|  
+|任务|事件|  
 |----------|-----------|  
 |当用户更改任务窗格的位置时进行响应。|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
 |当用户隐藏任务窗格或使其可见时进行响应。|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  
@@ -226,7 +227,7 @@ ms.lasthandoff: 10/31/2017
   
 -   <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate>  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 向应用程序中添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [演练： 自动化从自定义任务窗格应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
  [演练： 将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   

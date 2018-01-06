@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3536c224498603eb4013c06b44dc0082337b4bdf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 378b33e7396678273a8aa14eb96e355117ce1f6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-contact-items"></a>使用联系人项
   <xref:Microsoft.Office.Interop.Outlook.ContactItem> 类包含用于使用联系人执行任务的方法和属性。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
  有关 Outlook 任务和 Outlook 对象模型的详细信息，请参阅 [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用邮件项](../vsto/working-with-mail-items.md)   
  [使用文件夹](../vsto/working-with-folders.md)   
  [使用日历项](../vsto/working-with-calendar-items.md)   

@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e54c4f4d95e5f8c23e6768ba3ebd09ef663fee1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1d9ec0e71977f48519077c5f50bfab0ae69141c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>如何：添加和移除映射文件夹
   某些常用的文件夹在 SharePoint 中，如图像和布局，深度嵌套的文件层次结构中。 你可以将这些文件夹映射到 SharePoint 项目，以便更轻松地访问它们。 映射的文件夹是 SharePoint 项目中的 SharePoint 服务器安装的文件的物理位置相对应的文件夹。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  若要从项目中移除映射的文件夹，打开其快捷菜单，选择**删除**，然后选择**确定**按钮在对话框中确认该删除。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

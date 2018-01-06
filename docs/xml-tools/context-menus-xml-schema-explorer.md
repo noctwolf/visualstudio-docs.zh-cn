@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a2839b44af2156ab237bd2b88c0b4c77e41f4b82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 739dff217b59bd9424594c4049c765ad5145d634
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="context-menus-xml-schema-explorer"></a>上下文菜单（XML 架构资源管理器）
 以下上下文菜单项用于执行特定于架构的搜索和其他操作。  
@@ -113,6 +114,6 @@ ms.lasthandoff: 10/31/2017
 |**显示所有成员**|查找并突出显示命名组的所有成员。|  
 |**显示所有引用**|查找并突出显示对所选组的所有引用（具有 `ref="selectedGroup"` 的组）。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)   
  [搜索架构集](../xml-tools/searching-the-schema-set.md)

@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 23e042a7ff34163872b3a932b105bc3b452023ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aff3172f5f01612923e72ad76f85205af0c31a72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>如何：向工具箱添加活动
 可以将活动添加到**工具箱**几种不同方式解决方案中。 您可以从当前项目中添加活动，也可以从另一个项目或从另一个程序集引用活动。  
@@ -59,5 +60,5 @@ ms.lasthandoff: 10/27/2017
   
 6.  自定义活动将显示在**工具箱**之前添加了项中焦点所在的类别下。 例如，如果**常规**类别中选择在**工具箱**然后再添加工具箱项，该活动将显示下**常规**类别。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用工作流设计器](../workflow-designer/using-the-workflow-designer.md)

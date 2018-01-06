@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3723d4612df985b1ddd9bd31188596ebefc3548
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6baa1a72ec8f51a25d5abc0539b27b71b41c5d38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-tables"></a>处理表格
   本部分中的主题提供有关使用 Microsoft Office Word 的对象模型处理 Office 项目中的表的分步过程和代码示例。 某些情况下，在 VSTO 外接程序中执行这些任务的方式与在文档级自定义项中执行它们的方式是不同的。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
 |向表中添加行或列。|[如何：以编程方式向 Word 表格中添加行和列](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|  
 |向单元格添加文本并设置其格式。|[如何：以编程方式向 Word 表中的单元格添加文本和格式设置](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Word 对象模型概述](../vsto/word-object-model-overview.md)   
  [Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
   

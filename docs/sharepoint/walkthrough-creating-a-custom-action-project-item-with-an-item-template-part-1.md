@@ -20,11 +20,12 @@ caps.latest.revision: "152"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddab05340b898a1a9a1868c7e537e6b53cc013b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70a307fe1eb68cb6e1409d0a43178795f0d9421c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>演练： 使用项模板创建的自定义操作项目项，第 1 部分
   可以通过创建自己的项目项类型来扩展 Visual Studio 中的 SharePoint 项目系统。 在本演练中，你将创建可以添加到 SharePoint 项目，以便在 SharePoint 站点上创建自定义操作项目项。 此自定义操作将添加到菜单项**站点操作**菜单中的 SharePoint 站点。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  你可以下载包含已完成的项目、 代码和从以下位置在本演练中的其他文件的示例： [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练的开发计算机上：  
   
 -   受支持的 Microsoft Windows、 SharePoint 和 Visual Studio 的版本。 有关详细信息，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -453,7 +454,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="next-steps"></a>后续步骤  
  完成本演练后，你可以将向导添加到项模板。 当用户将自定义操作项目项添加到 SharePoint 项目中时，向导可收集有关的操作 （如其位置和要选择操作时，导航到的 URL） 信息并将此信息添加到新的项目项中的 Elements.xml 文件。 有关详细信息，请参阅[演练： 使用项模板，第 2 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 使用项模板创建的自定义操作项目项，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
  [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   

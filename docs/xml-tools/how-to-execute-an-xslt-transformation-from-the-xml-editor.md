@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a432dabb09f3242ff3ba73527b86aac45e609588
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f2cd765b36024048a4bba5680a0fdc2445a1cc3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>如何：在 XML 编辑器中执行 XSLT 转换
 通过“XML 编辑器”可以将 XSLT 样式表与 XML 文档关联，执行转换，以及查看输出。 由 XSLT 转换生成的输出显示在新的文档窗口中。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
     -   将 `xml-stylesheet` 处理指令添加到 XML 文档中。 例如，将以下行 `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` 添加到文档序言中。  
   
-         - 或 -  
+         或  
   
     -   添加 XSLT 样式表使用**属性**窗口。 在文档中**属性窗口**，单击**浏览**按钮**样式表**字段中选择 XSLT 样式表，然后单击**打开**.  
   
@@ -65,5 +66,5 @@ ms.lasthandoff: 10/31/2017
   
      由 XSLT 转换生成的输出显示在新的文档窗口和输出窗口中使用的编辑器取决于的文件扩展名你**输出**文档属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 编辑器](../xml-tools/xml-editor.md)

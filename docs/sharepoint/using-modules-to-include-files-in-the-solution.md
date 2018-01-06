@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 484ae234839876922b6c04767d67ed56f85a108d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f340d0a8c713aedc6ee74aa598c7170495ac8c01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>使用模块包括解决方案中的文件
   可能有些时候你可能想要将文件部署到 SharePoint 服务器而不考虑其文件类型，如新的主页面。 若要执行此操作，可以使用*模块*(无法将其与混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]代码模块)。 模块是 SharePoint 解决方案中的文件的容器。 时部署了解决方案，该模块中的文件会复制到 SharePoint 服务器上的指定文件夹中。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
  你想要部署的每个文件需要一个单独`<File>`Elements.xml 中的元素条目。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 通过使用模块包括文件](../sharepoint/how-to-include-files-by-using-a-module.md)   
  [如何： 设置文件](http://go.microsoft.com/fwlink/?LinkID=144271)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   

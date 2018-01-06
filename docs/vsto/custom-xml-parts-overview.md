@@ -28,11 +28,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5891cb7aa85012bbf99b1dd2e35b86ba3c263790
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 735660c3af1c0a8792a35981788b70f4a79d55b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-xml-parts-overview"></a>Custom XML Parts Overview
   对于某些 Microsoft Office 应用程序，可在文档中嵌入 XML 数据。 时在文档中嵌入 XML 数据，数据被称为*自定义 XML 部件*。  
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="binding-custom-xml-parts-to-word-content-controls"></a>将自定义 XML 部件绑定到 Word 内容控件  
  可将 Word 解决方案中的内容控件绑定到自定义 XML 部件中的元素。 当内容控件绑定到自定义 XML 部件时，自定义 XML 部件中的数据将显示在内容控件的用户界面 (UI)。 如果用户编辑控件中的文本，则将自动更新相应的 XML 元素。 同样，如果自定义 XML 部件中的元素值发生更改，则绑定到 XML 元素的内容控件将显示新的数据。 有关详细信息，请参阅 [Content Controls](../vsto/content-controls.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 架构和文档级自定义项中的数据](../vsto/xml-schemas-and-data-in-document-level-customizations.md)   
  [如何： 将自定义 XML 部件添加到文档级自定义项](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
  [如何： 使用 VSTO 外接程序将自定义 XML 部件添加到文档](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   

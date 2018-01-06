@@ -46,11 +46,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f91a3ad121305e6d7a00df1ab1b337bdea73c1c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8cf489d5a1c4246adf4f5c4220229acb05ac67d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Visual Studio 环境中的 Office 项目
   Microsoft Office 项目的开发体验与 Visual Studio 中其他类型的项目（如 Windows 窗体项目）相似。 当你创建或打开 Office 项目时，项目项会出现在 **“解决方案资源管理器”**中。 对于文档级项目，文档（即 Word 文档或 Excel 工作簿）将在 Visual Studio 中打开，该文档的行为就如同一个可视化设计器。  
@@ -122,7 +123,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="data-sources-window"></a>“数据源”窗口  
  可以在文档级 Office 项目中使用 **“数据源”** 窗口将数据源拖到文档上，以及创建绑定到数据源的控件。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)   
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   

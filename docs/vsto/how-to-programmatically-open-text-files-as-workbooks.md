@@ -19,11 +19,12 @@ caps.latest.revision: "47"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4148a9a8a8de627ed56f5e1abc6da3469399330
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dbd39969fba90613594bbbc0b2ea4d2c12825af7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>如何：以编程方式及工作簿形式打开文本文件
   为工作簿，可以打开一个文本文件。 必须传递你想要打开的文本文件的名称。 你可以指定多个可选参数，例如到开始分析以及文件中的数据的列格式的行号。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
 -   该文本文件`Test.txt`似乎存储在驱动器 c。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用工作簿](../vsto/working-with-workbooks.md)   
  [如何： 以编程方式打开工作簿](../vsto/how-to-programmatically-open-workbooks.md)   
  [如何： 以编程方式创建新的工作簿](../vsto/how-to-programmatically-create-new-workbooks.md)   

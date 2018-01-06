@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab405ec541393e2b9aa256b40ccea5cce061cdc3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 5fef7ed581ad39488bc35d9cc46ac211008f5962
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integration-with-xml-editor"></a>与 XML 编辑器的集成
 XML 编辑器中集成了 XML 架构设计器。 如果你修改 XSD 文件在 XML 编辑器中，此更改将反映在[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)。 如果你有[图形视图](../xml-tools/graph-view.md)或[内容模型视图](../xml-tools/content-model-view.md)打开，更改也会反映在存在。 可通过以下方法在 XML 架构设计器和 XML 编辑器之间导航：  
@@ -33,5 +34,5 @@ XML 编辑器中集成了 XML 架构设计器。 如果你修改 XSD 文件在 X
   
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif "XSDDesignerWithXMLEditorAndCMV")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "101"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9d8bd58c8dabc1114b3516e518992b0f91bc173
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b03d391917bb472b8b7c1780942c8259562a633
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="actions-pane-overview"></a>操作窗格概述
   操作窗格是可自定义**文档操作**任务窗格，附加到的特定 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿。 它托管在 Office 任务窗格中以及其他内置任务窗格如**XML 源**Excel 中的任务窗格或**样式和格式**Word 中的任务窗格。 可使用 Windows 窗体控件或 WPF 控件来设计操作窗格用户界面。  
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Office 解决方案中使用 WPF 控件](../vsto/using-wpf-controls-in-office-solutions.md)   
  [Office UI 自定义项](../vsto/office-ui-customization.md)   
  [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   

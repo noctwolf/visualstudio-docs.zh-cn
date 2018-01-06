@@ -61,11 +61,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d57dab19820436dd9c7e3fb07607b5506c180a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e0da4387056e68046294a2f82c9db7bbc798de07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 解决方案错误的其他支持
   可以使用以下资源来帮助你查找你会遇到的 Visual Studio 中创建 Office 解决方案的问题的答案。  
@@ -92,7 +93,7 @@ ms.lasthandoff: 10/31/2017
  [用于开发 Office 解决方案的其他资源](../vsto/additional-resources-for-developing-office-solutions.md)  
  提供的更多地了解开发 Office 解决方案和使用 Visual Studio 的 Office 开发的其他资源的链接。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Office 解决方案中的错误故障排除](../vsto/troubleshooting-errors-in-office-solutions.md)   
  [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)   
  [Office 解决方案部署疑难解答](../vsto/troubleshooting-office-solution-deployment.md)   

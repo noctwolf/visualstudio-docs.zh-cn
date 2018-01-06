@@ -22,11 +22,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf9e63423a094d4aa574be1d952702ff077aa627
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9ca505ff6e61962cd360a3f8413a69abe92e377f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-the-controls-on-a-ribbon-at-run-time"></a>演练：在运行时更新功能区上的控件
   本演练演示了如何使用功能区对象模型在功能区加载到 Office 应用程序之后，更新该功能区上的控件。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -290,7 +291,7 @@ ms.lasthandoff: 10/31/2017
   
 -   将自定义任务窗格添加到 Outlook。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能区概述](../vsto/ribbon-overview.md)   
  [语言集成查询 (LINQ)](/dotnet/csharp/linq/index)   

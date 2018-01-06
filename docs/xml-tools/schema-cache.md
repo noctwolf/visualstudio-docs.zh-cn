@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1b8a1e19d69b1cfd2f88551556820f94e64c06a
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 77e0557e57831348d0736ca8d8d25189c631e010
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="schema-cache"></a>架构缓存
 “XML 编辑器”提供的架构缓存位于 %InstallRoot%\Xml\Schemas 目录。 架构缓存适用于计算机上的所有用户，并且包含用于智能感知和 XML 文档验证的标准 XML 架构。  
@@ -127,5 +128,5 @@ ms.lasthandoff: 11/02/2017
   
      将自动重新加载编录。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 编辑器](../xml-tools/xml-editor.md)

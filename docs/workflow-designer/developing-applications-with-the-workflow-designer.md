@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: cbb7b09e5c36980ceeedd99f69241996bd25bfa3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 61d58b172c185a908a6314664ccd4cfe2172dc8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>使用工作流设计器开发应用程序
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 是可视化设计器和调试器，用于以图形化的方式构造和调试 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 开发环境中承载的 [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)]中的 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 应用程序。 它可用于通过使用模板和活动设计器来撰写复合工作流应用程序、活动库或 [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 服务。 [!INCLUDE[crabout](../test/includes/crabout_md.md)]工作流，请参阅[Windows Workflow Foundation &#91;。NET Framework 4 &#93;](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  

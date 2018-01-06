@@ -18,11 +18,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d6fa02174a8b334b404a0a4ea84ee0e8089c584
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 35f5a865faafc730a13f5d0cd3a432a724434dde
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-a-chart-in-a-document-using-radio-buttons"></a>演练：使用单选按钮更新文档中的图表
   此演练演示如何使用 Microsoft Office Word 文档级自定义中的单选按钮，为用户提供在文档中选择图表样式的选项。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -94,31 +95,31 @@ ms.lasthandoff: 10/31/2017
   
 2.  从**公共控件**选项卡**工具箱**，将第一个**单选按钮**控制到用户控件，并可以更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**columnChart**|  
-    |**“文本”**|**柱形图**|  
+    |**名称**|**columnChart**|  
+    |**文本**|**柱形图**|  
   
 3.  添加第二个**单选按钮**向用户控件，然后更改下列属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**barChart**|  
-    |**“文本”**|**条形图**|  
+    |**名称**|**barChart**|  
+    |**文本**|**条形图**|  
   
 4.  添加第三个**单选按钮**向用户控件，然后更改下列属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**lineChart**|  
-    |**“文本”**|**折线图**|  
+    |**名称**|**lineChart**|  
+    |**文本**|**折线图**|  
   
 5.  添加第四个**单选按钮**向用户控件，然后更改下列属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**areaBlockChart**|  
-    |**“文本”**|**面积图**|  
+    |**名称**|**areaBlockChart**|  
+    |**文本**|**面积图**|  
   
 ## <a name="adding-references"></a>添加引用  
  若要从文档上的用户控件访问图表，则必须在项目中引用 Microsoft.Office.Interop.Graph 程序集。  
@@ -216,7 +217,7 @@ ms.lasthandoff: 10/31/2017
   
 -   通过从组合框中选择样式来更改格式设置。 有关详细信息，请参阅[演练： 更改文档格式使用复选框控件](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Word 的演练](../vsto/walkthroughs-using-word.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   
  [Office 文档上的 Windows 窗体控件限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  

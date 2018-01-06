@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c8696e7ffb4120bae12538a03b77d62c0d091a7
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 3b97ca67c9e8d8a4cfb7d99a6c518c8e49a8c426
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>将 web 应用或.NET Core 应用部署到使用 Visual Studio 发布工具的本地文件夹
 
@@ -65,6 +66,6 @@ ms.lasthandoff: 12/15/2017
 
 ## <a name="next-steps"></a>后续步骤
 
-- [部署.NET 核心应用程序使用发布工具](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs)
-- [打包用于 Microsoft 应用商店 （桌面桥） 桌面应用程序](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-- (.NET)[部署.NET Framework 和应用程序](https://docs.microsoft.com/en-us/dotnet/framework/deployment/)
+- [使用发布工具部署 .NET Core 应用程序](/dotnet/core/deploying/deploy-with-vs)
+- [为 Microsoft Store 打包桌面应用（桌面桥）](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+- (.NET)[部署.NET Framework 和应用程序](/dotnet/framework/deployment/)

@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6927a639bd3bb41b0498b1eb939d07cddcde0a79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c1d9008dc88640adee8db3f02b43cad314a47b32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-and-deployment-walkthroughs"></a>安全和部署演练
   以下主题演示如何设置安全策略以允许你的解决方案，若要运行，和可以部署 Office 解决方案的方式。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)  
  提供有关你的解决方案中创建 Word 和 Excel 解决方案以及程序集的角色的信息的链接。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)  
   
   

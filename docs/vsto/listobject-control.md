@@ -22,11 +22,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 00e32d3b94c1674c09b3a1a7f0f3e16757f1a810
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3f203b7e350f30d27d88e27ff9688bdbdee2b3d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="listobject-control"></a>ListObject 控件
   <xref:Microsoft.Office.Tools.Excel.ListObject> 控件是公开事件并且可以绑定到数据的列表。 当将列表添加到工作表时，Visual Studio 将创建 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件，你可以直接针对此控件编程而无需遍历 Microsoft Office Excel 对象模型。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
  在文档级项目中，可以在设计时或运行时向工作表中添加 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 在 VSTO 外接程序项目中，只能在运行时向工作表添加 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 有关详细信息，请参阅 [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md)。  
   
 > [!NOTE]  
->  默认情况下，工作表关闭时，动态创建的列表对象不作为宿主控件保留在工作表中。 有关更多信息，请参见 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+>  默认情况下，工作表关闭时，动态创建的列表对象不作为宿主控件保留在工作表中。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 ## <a name="binding-data-to-the-control"></a>将数据绑定到控件  
  <xref:Microsoft.Office.Tools.Excel.ListObject> 控件支持简单和复杂数据绑定。 可以在设计时使用 <xref:Microsoft.Office.Tools.Excel.ListObject> 和 <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 属性或在运行时使用 <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> 方法将 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 控件绑定到数据源。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
  如果要将 <xref:Microsoft.Office.Tools.Excel.ListObject> 还原为其原始列和行顺序，则可以调用 <xref:Microsoft.Office.Tools.Excel.ListObject.ResetPersistedBindingInformation%2A> 方法。 此方法会删除与指定 <xref:Microsoft.Office.Tools.Excel.ListObject>的列和行顺序相关的自定义文档属性。 如果不想保留 <xref:Microsoft.Office.Tools.Excel.Workbook.Shutdown> 的列和行顺序，请从工作簿的 <xref:Microsoft.Office.Tools.Excel.ListObject>事件调用此方法。  
   
-## <a name="formatting"></a>格式设置  
+## <a name="formatting"></a>格式化  
  可应用于 <xref:Microsoft.Office.Interop.Excel.ListObject> 的格式设置也可应用于 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 这包括边框、字体、数字格式和样式。 最终用户可以在数据绑定 <xref:Microsoft.Office.Tools.Excel.ListObject>中重新排列列，这些更改会随文档保留（前提是 <xref:Microsoft.Office.Tools.Excel.ListObject> 已在设计时添加到文档）。 下次打开文档时，列表对象会绑定到同一个数据源，但是列顺序会反映用户的更改。  
   
 ## <a name="adding-and-removing-columns-at-run-time"></a>在运行时添加和删除列  
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
   
 -   <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)   
  [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
  [如何： 调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)   

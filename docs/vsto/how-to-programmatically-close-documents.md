@@ -18,11 +18,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0cc6b310e0c376afb7e0e9a7ade5b91cb4bbb77d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c39568b397cf882816ed0783bf9af0be76c040db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-close-documents"></a>如何：以编程方式关闭文档
   可以关闭活动文档，也可以指定关闭某个文档。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
      [!code-vb[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#4)]
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)   
  [如何： 以编程方式保存文档](../vsto/how-to-programmatically-save-documents.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   

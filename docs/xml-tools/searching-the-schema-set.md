@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c6bef5c0358ecdadb5f8f9aada4e69d748b3fa14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a61221f8349064305bbd925016121da01d52515b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="searching-the-schema-set"></a>搜索架构集
 使用 XML 架构资源管理器，您可以通过下列方式在架构集中执行搜索：  
@@ -51,5 +52,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="clearing-search-results"></a>清除搜索结果  
  若要清除搜索结果，请单击**x** XML 架构资源管理器搜索工具栏的摘要结果窗格上的按钮。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)

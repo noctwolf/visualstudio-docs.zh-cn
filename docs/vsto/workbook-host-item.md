@@ -25,11 +25,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baeb44b4804f74aad4b2850eb0bbd4ad539b33e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 21017bc63f028bdbd65d27b0df0cba2e31d407ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="workbook-host-item"></a>工作簿宿主项
   <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项这种类型从 Excel 的主互操作程序集扩展 <xref:Microsoft.Office.Interop.Excel.Workbook> 类型。 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项提供与 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象完全相同的属性、方法和事件，但它还提供其他功能。  
@@ -56,9 +57,9 @@ ms.lasthandoff: 10/31/2017
 >  Visual Studio 中的 Office 开发工具不支持共享工作簿。  
   
 ## <a name="understanding-workbook-host-items-in-vsto-add-in-projects"></a>了解 VSTO 外接程序项目中的 Workbook 宿主项  
- 在 VSTO 外接程序项目中，可以在运行时为 Excel 中打开的任何工作簿生成 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项。 若要生成<xref:Microsoft.Office.Tools.Excel.Workbook>宿主项，请使用 GetVstoObject 方法。 有关详细信息，请参阅 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 在 VSTO 外接程序项目中，可以在运行时为 Excel 中打开的任何工作簿生成 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项。 若要生成<xref:Microsoft.Office.Tools.Excel.Workbook>宿主项，请使用 GetVstoObject 方法。 有关更多信息，请参见 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   
  [在运行时扩展 Word 文档和 Excel 工作簿在 VSTO 外接程序](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   

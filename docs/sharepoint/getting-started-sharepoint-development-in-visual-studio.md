@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c2cbca8406f93184bab7ed80a0450047abea711
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc47c6bf1e19f66fa55d29f436ba615742d08a3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-sharepoint-development-in-visual-studio"></a>入门（Visual Studio 中的 SharePoint 开发）
   此部分帮助你开始使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 来开发利用 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]的 SharePoint 解决方案。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 |[打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|介绍如何打包和部署 SharePoint 解决方案。|  
 |[在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|介绍如何扩展 SharePoint 工具以创建所需的功能。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

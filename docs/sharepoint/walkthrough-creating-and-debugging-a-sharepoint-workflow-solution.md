@@ -23,11 +23,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d64c0767cce43d5b157fca82cc3e1e210a2f8c58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc016efd3d0a3525f733929c294946bf9376417b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-debugging-a-sharepoint-workflow-solution"></a>演练：创建和调试 SharePoint 工作流解决方案
   本演练演示如何创建基本的顺序工作流模板。 工作流检查共享的文档库以确定是否已评审文档属性。 如果文档已评审，工作流完成。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
 >   
 >  此外，你的计算机可能不同的名称或位置的某些 Visual Studio 用户界面元素出现以下说明中。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   支持的 Microsoft Windows 和 SharePoint 版本。 有关详细信息，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -168,7 +169,7 @@ ms.lasthandoff: 10/31/2017
   
 12. 在**属性**窗口中，设置的属性下, 表中所示。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**CorrelationToken**|**workflowToken**|  
     |**调用**|**onWorkflowItemChanged**|  
@@ -293,7 +294,7 @@ ms.lasthandoff: 10/31/2017
   
 -   若要了解有关 Windows Workflow Foundation 活动的详细信息，请参阅[System.Workflow.Activities Namespace](http://go.microsoft.com/fwlink/?LinkId=178993)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  

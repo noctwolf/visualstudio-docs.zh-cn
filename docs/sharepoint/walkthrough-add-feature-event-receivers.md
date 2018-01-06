@@ -21,11 +21,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 27d565a51c026a6e143e18f122039d90627f55ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6250673ae2fa262fbe932aea79e36aeb6b0d0915
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>演练：添加功能事件接收器
   功能事件接收器是在 SharePoint 中的以下功能相关的事件之一发生时执行的方法：  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   支持的 Microsoft Windows 和 SharePoint 版本。 有关详细信息，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -121,7 +122,7 @@ ms.lasthandoff: 10/31/2017
   
      请注意，在显示公告**公告**列表后停用该功能。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
   

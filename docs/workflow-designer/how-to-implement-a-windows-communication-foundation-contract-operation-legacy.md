@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 02d6a544b660a110c618bdcb7d3b778fd82ceaaa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8800055878c53adce195bbf7078da410c12128da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>如何：实现 Windows Communication Foundation 协定操作（旧版）
 本主题介绍如何使用面向 [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 或 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 的旧 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 来实现 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 协定操作。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/27/2017
   
     -   单击**添加协定**右上角的对话框。 这将为您创建新的 [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] 协定和操作。  
   
-         - 或 -  
+         或  
   
     -   单击**导入**右上角的对话框。 [浏览并选择.NET 类型对话框 （旧版）](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)打开。 搜索包含所需协定的程序集或项目。 选择该协定，然后单击**确定**。  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/27/2017
   
 5.  将想要用于该操作的实现的工作流活动**ReceiveActivity**活动。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [选择操作对话框 （旧版）](../workflow-designer/choose-operation-dialog-box-legacy.md)   
  [如何： 调用 WCF 协定操作 （旧版）](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
  [旧版工作流活动](../workflow-designer/legacy-workflow-activities.md)

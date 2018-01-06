@@ -22,11 +22,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d11f7fa3ad5ccf84a58ebc10f5086793de7c19d8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b01646196e0bb755b351c02b4225a60bbfe1ad63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>如何：向文档级自定义项中添加自定义 XML 部件
   你可以通过在文档级自定义中创建自定义 XML 部件将 XML 数据存储在 Microsoft Office Excel 工作表或 Microsoft Office Word 文档中。 有关详细信息，请参阅 [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md)。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="robust-programming"></a>可靠编程  
  为简单起见，此示例使用在方法中定义为局部变量的 XML 字符串。 通常，应从外部源（如文件或数据库）获取 XML。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md)   
  [如何：使用 VSTO 外接程序将自定义 XML 部件添加到文档](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
   

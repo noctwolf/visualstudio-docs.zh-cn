@@ -24,11 +24,12 @@ caps.latest.revision: "86"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b3e40a5a11e681f372b9cb76b43060b87ac900b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf755c0e90eda2c5478d16305b7540dd86b9ef5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="architecture-of-document-level-customizations"></a>文档级自定义项的体系结构
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包括用于为 Microsoft Office Word 和 Microsoft Office Excel 创建文档级自定义项的项目。 本主题介绍文档级自定义项的以下方面：  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
  有关创建文档级自定义项的常规信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)，[入门文档级自定义项编程 Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)，和[入门文档级自定义项编程 Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)。  
   
 ##  <a name="UnderstandingCustomizations"></a> Understanding Customizations  
- 使用 Visual Studio 中的 Office 开发人员工具生成文档级自定义项时，会创建一个与特定文档关联的托管代码程序集。 带有链接程序集的文档或工作簿被认为具有托管代码扩展。 有关更多信息，请参见 [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)。  
+ 使用 Visual Studio 中的 Office 开发人员工具生成文档级自定义项时，会创建一个与特定文档关联的托管代码程序集。 带有链接程序集的文档或工作簿被认为具有托管代码扩展。 有关详细信息，请参阅 [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)。  
   
  当用户打开文档时，Microsoft Office 应用程序会加载程序集。 加载程序集后，自定义项将能在文档处于打开状态时对事件做出响应。 自定义项也可以调入对象模型，以便在文档处于打开状态时自动化和扩展应用程序，并且自定义项可以使用 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]中的任何类。  
   
@@ -122,7 +123,7 @@ ms.lasthandoff: 10/31/2017
  ![2007 office 自定义体系结构](../vsto/media/office07-custom.png "2007 Office 自定义体系结构")  
   
 > [!NOTE]  
->  在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的 Office 解决方案中，解决方案通过使用嵌入解决方案程序集中的主互操作程序集 (PIA) 类型信息调入主机应用程序的对象模型，而不直接调入 PIA。 有关更多信息，请参见 [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)。  
+>  在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的 Office 解决方案中，解决方案通过使用嵌入解决方案程序集中的主互操作程序集 (PIA) 类型信息调入主机应用程序的对象模型，而不直接调入 PIA。 有关详细信息，请参阅 [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)。  
   
 ### <a name="loading-process"></a>加载过程  
  当用户打开属于 Microsoft Office 解决方案的文档时，将执行以下步骤。  
@@ -145,7 +146,7 @@ ms.lasthandoff: 10/31/2017
   
 9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]调用**启动**事件处理程序中自定义程序集。 有关详细信息，请参阅 [Events in Office Projects](../vsto/events-in-office-projects.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
  [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

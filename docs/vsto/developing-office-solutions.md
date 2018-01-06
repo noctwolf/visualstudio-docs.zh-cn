@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 478bd6d27d6e4ef0fe75891d95cdc4b3258a74e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b15c9fbf2815132ac4ad84e3b321bb22db199ed2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-office-solutions"></a>开发 Office 解决方案
   使用 Visual Studio 中的 Office 开发人员工具设计项目并设置项目文件后，便可以开始集中精力实现代码和自定义用户界面 (UI)。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
 |[Office 中的线程支持](../vsto/threading-support-in-office.md)|提供在 Office 解决方案中使用多个线程的概述。|  
 |[Office 项目中的辅助功能](../vsto/accessibility-in-office-projects.md)|描述 Office 解决方案中可用的辅助功能。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 创建和修改自定义文档属性](../vsto/how-to-create-and-modify-custom-document-properties.md)   
  [如何： 读取和写入向文档属性](../vsto/how-to-read-from-and-write-to-document-properties.md)   
  [如何： 面向 Office 多语言用户界面](../vsto/how-to-target-the-office-multilingual-user-interface.md)   

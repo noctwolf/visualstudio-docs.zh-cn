@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ff11186c82102230ec939c0c9b1c5aba69df7f3f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bc92b5babe53b249fc66d93adbc0d69e6f7cf0e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>如何：更改调试单步执行选项（旧版）
 本主题介绍如何在旧 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 中，针对具有并发操作的 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 应用程序更改调试单步执行选项。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -42,6 +43,6 @@ ms.lasthandoff: 10/27/2017
   
 4.  选择**实例**或**分支**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试旧版工作流](../workflow-designer/debugging-legacy-workflows.md)   
  [调试单步执行选项（旧版）](../workflow-designer/debug-stepping-options-legacy.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dbf93e29e9bde2029bfff262a953d5858f17d084
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ea7605ae01dc839dcac8e2cde3f658a94d6bb474
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>面向 .NET Framework 4 或 .NET Framework 4.5 的 Office 项目设计的更改
   从 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]开始，Visual Studio 引入了对面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的 Office 项目设计的一些更改。 如果你熟悉以前的 Visual Studio 版本中的 Office 项目，那么在开发面向 .NET Framework 4.0 或更高版本的 Office 项目之前，应了解这些更改。 默认情况下，使用 Visual Studio 2013 或更高版本创建的所有项目都面向 .NET Framework 4.0 或更高版本。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
  以下各节描述这些 Office 项目设计更改。  
   
 ## <a name="understanding-the-interface-based-design-of-the-visual-studio-2010-tools-for-office-runtime"></a>了解 Visual Studio 2010 Tools for Office Runtime 的基于接口的设计  
- 开发面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的 Office 项目时，在 Visual Studio 2010 Tools for Office Runtime 中使用的大多数类型都是接口。 这是对以前版本的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]的一个重要更改，在以前的版本中这些类型是类。 例如，如果面向的是 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则 <xref:Microsoft.Office.Tools.Excel.Worksheet> 和 <xref:Microsoft.Office.Tools.Word.Document> 类型是接口而不是类。 有关详细信息，请参阅 [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)。  
+ 开发面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的 Office 项目时，在 Visual Studio 2010 Tools for Office Runtime 中使用的大多数类型都是接口。 这是对以前版本的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]的一个重要更改，在以前的版本中这些类型是类。 例如，如果面向的是 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则 <xref:Microsoft.Office.Tools.Excel.Worksheet> 和 <xref:Microsoft.Office.Tools.Word.Document> 类型是接口而不是类。 有关更多信息，请参见 [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)。  
   
  你无法直接在以前版本的实例化任何类型[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，现在使用 Globals.Factory 对象的方法来获取这些类型的实例。 例如，若要获取实现的对象<xref:Microsoft.Office.Tools.Excel.SmartTag>接口，请使用 Globals.Factory.CreateSmartTag 方法。 有关详细信息，请参阅下列主题：  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
 |OLEObject 和 OLEControl 类已重命名。|必须将使用这些类的实例的任何代码改为使用 <xref:Microsoft.Office.Tools.Excel.ControlSite> 或 <xref:Microsoft.Office.Tools.Word.ControlSite> 对象。 有关详细信息，请参阅[更新 Excel 和 Word 项目迁移到.NET Framework 4 或.NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|  
 |主机项类，如`ThisWorkbook`， `Sheet`  *n* ， `ThisDocument`，和`ThisAddIn`，不再提供可以重写的 Dispose 方法。|你必须将移动任何代码中的 Dispose 方法重写到关闭事件处理程序在主机项类中，例如， `ThisAddIn_Shutdown`，并从主机项类删除 Dispose 方法重写。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [什么是中的 Office 开发的新增功能](http://msdn.microsoft.com/en-us/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Visual Studio Tools for Office 运行时概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)  

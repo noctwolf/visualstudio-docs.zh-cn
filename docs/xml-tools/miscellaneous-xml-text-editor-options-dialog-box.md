@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 871190deb39504a498061602b11f927832d71f35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4773bf87e89bd504b477d9a1a31dfe961a3f29ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>杂项，XML，文本编辑器，“选项”对话框
 使用此对话框可以更改“XML 编辑器”的自动完成和架构设置。 你可以访问**选项**对话框**工具**菜单。  
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
  **架构**  
  指定架构缓存的位置。 浏览按钮 (**...**) 打开**目录浏览**对话框在当前架构缓存的位置。 你可以选择不同的目录，也可以在对话框中，选择一个文件夹右键单击，然后选择**打开**查看目录中的内容。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 文档属性，属性窗口](../xml-tools/xml-document-properties-properties-window.md)   
  [“XML 编辑器”的组件](../xml-tools/xml-editor-components.md)

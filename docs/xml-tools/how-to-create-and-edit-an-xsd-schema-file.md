@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 03679a6d6acbee2a69d0ffa576b3606be4b64a21
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 098dc82734ca200ff538f284e002c1cbff424fbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>如何：创建和编辑 XSD 架构文件
 本主题描述如何创建新的 XML 架构 (XSD) 文件，然后将内容添加到 XSD 文件。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
   
      此时，会使用新的架构集对 XML 架构资源管理器进行更新。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 XML 数据](../xml-tools/working-with-xml-data.md)   
  [XML 架构设计器任务](../xml-tools/xml-schema-designer-tasks.md)

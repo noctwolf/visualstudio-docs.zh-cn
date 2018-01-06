@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ec5ec49c01fd4efb67991def2904a99304821cdd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e18f525143baac7b08c37fdaed45db7699488071
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Windows Workflow Foundation 的旧版设计器 UI 帮助
 本节包含 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 中的旧 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 的上下文相关帮助主题。 在需要面向 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 时，请使用旧设计器。  

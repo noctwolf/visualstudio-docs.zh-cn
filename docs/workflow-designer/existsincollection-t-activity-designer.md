@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6427ae5e10a2c1405e69b375c7bb2e77467d81d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bcd3028335ed48f4eba8c647f124d0d537deaf3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt;活动设计器
 **ExistsInCollection\<T >**活动设计器用于创建和配置<xref:System.Activities.Statements.ExistsInCollection%601>活动。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/27/2017
 |*TypeArgument*|True|包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，这*TypeArgument*类型设置为**Int32**。 若要更改类型，将更改的值*TypeArgument*在属性网格中组合框中。|  
 |<xref:System.Activities.Activity%601.Result%2A>|False|一个指示集合中是否存在指定项的值。 若要指定要绑定到结果的变量，请在属性网格中键入 Visual Basic 变量。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [集合](../workflow-designer/collection-activity-designers.md)   
  [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)   
  [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)   

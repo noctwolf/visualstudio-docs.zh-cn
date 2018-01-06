@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d418e757a93d77b0034bbdb8287b0e81a5a3860
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 895bb4f7bde787a135699e4197622037413a1869
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="merging-xml-in-feature-and-package-manifests"></a>合并功能和包清单中的 XML
   通过定义功能和包[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单文件。 这些打包的清单是从设计器和自定义生成的数据的组合[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单模板中输入的用户。 在打包时，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]合并自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]与设计器提供的语句[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]以组成打包[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单文件。 类似元素，与更高版本中合并的异常，记下的异常合并，以避免[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]验证错误后将文件部署到 SharePoint，并使清单文件更小、 更有效。  
@@ -54,8 +55,8 @@ ms.lasthandoff: 10/31/2017
 |ElementFile|位置|  
 |ElementManifests/ElementManifest|位置|  
 |属性/属性|键|  
-|CustomUpgradeAction|名称|  
-|CustomUpgradeActionParameter|名称|  
+|CustomUpgradeAction|name|  
+|CustomUpgradeActionParameter|name|  
   
 > [!NOTE]  
 >  因为修改 CustomUpgradeAction 元素的唯一方法是在自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]编辑器中，未合并的效果较低。  
@@ -81,7 +82,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="manually-add-deployed-files"></a>手动添加部署的文件  
  某些清单元素，如 ApplicationResourceFile 和 DwpFiles，指定包含文件名的位置。 但是，将文件名称条目添加到清单模板不添加基础文件到包。 必须将文件添加到项目中以将其包括在包中，并相应地将其部署类型属性的设置。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   

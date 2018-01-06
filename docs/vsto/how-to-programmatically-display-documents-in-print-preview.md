@@ -18,11 +18,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79facc7d8232a1dac5adc5f9e57848d4a206ba82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 762a068858e7ad79c9a4fe9d02d1d868f150c5a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>如何：以编程方式在打印预览中显示文档
   如果你的解决方案生成了报告，你可能需要以打印预览模式向用户显示报告。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 以编程方式打印文档](../vsto/how-to-programmatically-print-documents.md)   
  [如何： 以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)   
  [如何：以编程方式新建文档](../vsto/how-to-programmatically-create-new-documents.md)  

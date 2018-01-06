@@ -19,11 +19,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14a3c7a2676c786e631b4c8b471272185b81e36c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a0fdde3820615a41ed91e48538dac80fa234a724
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-sharepoint-solutions"></a>调试 SharePoint 解决方案
   您可以通过使用调试 SharePoint 解决方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 当开始调试，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将项目文件部署到 SharePoint 服务器，然后打开在浏览器中的 SharePoint 网站的实例。 以下各节说明如何调试 SharePoint 应用程序[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -151,7 +152,7 @@ ms.lasthandoff: 10/31/2017
   
  有关其他 SharePoint 注册表项的详细信息，请参阅[调试 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SharePoint 解决方案疑难解答](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   
   

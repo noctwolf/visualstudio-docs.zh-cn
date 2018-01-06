@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d083ff3a6c39b0d399b641db7e3a33d4f200e7bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b4f455ad27966f5ac3c5dba6c3ac276670f74b26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;外接程序&gt;元素 （Visual Studio 中的 Office 开发）
   `addin` 命名空间的 `vstav3` 元素包含特定于使用 Visual Studio 开发的 Microsoft Office VSTO 外接程序和文档级自定义项的信息。  
@@ -60,16 +61,16 @@ ms.lasthandoff: 10/31/2017
  `addin` 元素具有以下子元素。  
   
 ### <a name="entrypoints"></a>entryPoints  
- 必需。 `entryPoints`元素中进行了描述[&#60; 入口点 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ 必须的。 `entryPoints`元素中进行了描述[&#60; 入口点 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ### <a name="update"></a>更新  
- 必需。 `update`元素中进行了描述[&#60; 更新 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/update-element-office-development-in-visual-studio.md).  
+ 必须的。 `update`元素中进行了描述[&#60; 更新 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/update-element-office-development-in-visual-studio.md).  
   
 ### <a name="postactions"></a>postActions  
  可选。 `postActions`元素中进行了描述[&#60; postActions &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/postactions-element-office-development-in-visual-studio.md).  
   
 ### <a name="application"></a>应用程序  
- 必需。 `application`元素中进行了描述[&#60; 应用程序 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/application-element-office-development-in-visual-studio.md).  
+ 必须的。 `application`元素中进行了描述[&#60; 应用程序 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/application-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>文档级自定义项示例  
   
@@ -193,7 +194,7 @@ ms.lasthandoff: 10/31/2017
 </vstav3:addIn>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  

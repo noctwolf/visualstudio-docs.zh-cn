@@ -20,11 +20,12 @@ caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 932a7ccc3f52d80e4f75999f401c61b2663095f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 629e320cc47d65347cdd767b984a151afbf648e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="late-binding-in-office-solutions"></a>Office 解决方案中的后期绑定
   Office 应用程序的对象模型中的某些类型提供可通过后期绑定功能的功能。 例如，一些方法和属性可以返回不同类型的具体取决于 Office 应用程序，上下文对象，并且某些类型可以公开不同的方法或在不同上下文中的属性。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
  [使用类型 dynamic &#40;使用 c&#35;编程指南 &#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   

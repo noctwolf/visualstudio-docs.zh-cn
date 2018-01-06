@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: daffde4567ebe1134277147afe35ae501a57cdb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4a0d158311b82a799cbdf7e7d9c0093f588208a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flowchart-activity-designers"></a>流程图活动设计器
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 包含系统提供的若干活动，构造工作流时可以使用它们。 本节包含系统提供的活动中用于管理工作流中的流程图的活动。 以下主题介绍这些活动以及如何使用它们。  

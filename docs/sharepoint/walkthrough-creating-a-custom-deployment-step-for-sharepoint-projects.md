@@ -18,11 +18,12 @@ caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7375071522ea59c9c00a5fa94277a3817438d25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1a2659e1c6ebf7bee8320f10549c2a8914010648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>演练：为 SharePoint 项目创建自定义部署步骤
   在部署 SharePoint 项目时，Visual Studio 以特定顺序执行一系列部署步骤。 Visual Studio 提供了许多内置部署步骤，但你也可以创建你自己。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
 -   测试新的部署步骤。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练的开发计算机上：  
   
 -   受支持的 Windows、 SharePoint 和 Visual Studio 的版本。 有关详细信息，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -349,7 +350,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  验证成功生成项目，web 浏览器打开到 SharePoint 站点，**列出**快速启动栏中的项包括新**员工**列表，并能够**员工**列表包括有关荣条目。  
   
-5.  关闭 web 浏览器。  
+5.  关闭 Web 浏览器。  
   
 #### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>若要修改的列表定义和列表实例，并将其重新部署  
   
@@ -489,7 +490,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  关闭 Visual Studio （实验实例和 UpgradeDeploymentStep 解决方案处于打开状态的 Visual Studio 的实例） 的两个实例。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
   
   

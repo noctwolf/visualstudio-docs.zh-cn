@@ -20,11 +20,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8044ede5e7a83028af305a906a1879807ade79a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2503ab821f22cb04c6f31d4e5174e755d58cab4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>How to: Add Windows Forms Controls to Office Documents
   你可以在设计时在文档级项目中，将 Windows 窗体控件添加到 Microsoft Office Excel 和 Microsoft Office Word 文档。 在运行时，你可以在文档级自定义项和 VSTO 外接程序中添加控件。例如，你可以将 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> 控件添加到工作表，以便用户可以从选项列表选择。  
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="runtimedoclevel"></a>在运行时在文档级项目中添加控件  
  你可以在运行时以编程方式向文档添加 Windows 窗体控件。 在 Word 中，请使用 `ThisDocument` 类的 <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> 属性的方法。 在 Excel 中，使用的方法<xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A>属性`Sheet`  *n* 类。 每种方法都具有好几个重载，使你能够以不同的方式指定控件的位置。  
   
- 当在运行时向文档添加 Windows 窗体控件时，关闭文档时该控件将不会保存在文档中。 你可以在下次打开文档时重新创建该控件。 有关更多信息，请参见 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 当在运行时向文档添加 Windows 窗体控件时，关闭文档时该控件将不会保存在文档中。 你可以在下次打开文档时重新创建该控件。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 #### <a name="to-add-a-windows-forms-control-at-run-time"></a>在运行时添加 Windows 窗体控件  
   
@@ -120,7 +121,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="runtimeaddin"></a>在运行时在 VSTO 外接程序中添加控件  
  你可以在运行时以编程方式将 Windows 窗体控件添加到任何打开的文档。 首先，生成一个基于打开的文档或工作表的主机项。 然后，在 Word 中，使用新主机项的 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 属性的方法。 然后，在 Excel 中，使用新主机项的 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> 属性的方法。 每种方法都具有好几个重载，使你能够以不同的方式指定控件的位置。  
   
- 当在运行时向文档添加 Windows 窗体控件时，关闭文档时该控件将不会保存在文档中。 你可以在下次打开文档时重新创建该控件。 有关更多信息，请参见 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 当在运行时向文档添加 Windows 窗体控件时，关闭文档时该控件将不会保存在文档中。 你可以在下次打开文档时重新创建该控件。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
  有关在 VSTO 外接程序项目中生成主机项的详细信息，请参阅[扩展 Word 文档和 Excel VSTO 外接程序在运行时中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
@@ -136,7 +137,7 @@ ms.lasthandoff: 10/31/2017
      [!code-vb[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#7)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows 窗体上的控件 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [如何： 调整工作表单元格中的控件的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)   

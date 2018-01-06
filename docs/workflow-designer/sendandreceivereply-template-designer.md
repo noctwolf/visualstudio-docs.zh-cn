@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: be208d526fdc9f1d6f434425e3931b0f0a6510f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 314ff5252b426610b9a50327fe6754b2a953908c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply 模板设计器
 **SendAndReceiveReply**使用模板来创建一对预配置<xref:System.ServiceModel.Activities.Send>和<xref:System.ServiceModel.Activities.ReceiveReply>内的活动<xref:System.Activities.Statements.Sequence>作为请求/响应消息交换的一部分而关联的活动客户端上的模式。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.ServiceModel.Activities.ReceiveReply.CorrelationInitializers%2A>|False|指定在工作流中对配置此 <xref:System.ServiceModel.Activities.CorrelationInitializer> 活动的多个 <xref:System.ServiceModel.Activities.CorrelationHandle> 对象进行初始化的 <xref:System.ServiceModel.Activities.Receive> 对象的集合。 单击省略号按钮旁边<xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A>属性在属性网格中，若要打开**添加相关初始值设定项**对话框。 [!INCLUDE[crabout](../test/includes/crabout_md.md)]使用此框中，请参阅[添加 CorrelationInitializers 对话框](../workflow-designer/add-correlationinitializers-dialog-box.md)主题。|  
 |<xref:System.ServiceModel.Activities.ReceiveReply.Action%2A>|False|指定消息的操作标头。 如果未显式设置，则它的默认值为：<br /><br /> **https://tempuri.org/ {服务协定命名空间} / {服务协定名称} / {操作名称}。**|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)   
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
  [接收](../workflow-designer/receive-activity-designer.md)   

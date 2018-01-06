@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: aa1579629e68931ca0841117e07e227e879f331c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 05f7d0c9dd2be14840726bcdd3320746a1e1ca02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt;活动设计器
 **AddToCollection\<T >**活动设计器用于创建和配置<xref:System.Activities.Statements.AddToCollection%601>活动。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|True|项应添加到的集合。 此集合的类型是**ICollection < TypeArgument\>**。 若要指定集合，请在属性网格中键入 Visual Basic 表达式。|  
 |*TypeArgument*|True|包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，这*TypeArgument*类型设置为**Int32**。 若要更改类型，将更改的值*TypeArgument*在属性网格中组合框中。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [集合](../workflow-designer/collection-activity-designers.md)   
  [AddToCollection\<T > 活动设计器](../workflow-designer/addtocollection-t-activity-designer.md)   
  [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)   

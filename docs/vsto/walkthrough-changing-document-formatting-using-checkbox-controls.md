@@ -21,11 +21,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf214f2ffc55cf0846373fcaa226253f276e3d69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a0c8d44c32c03f98a0d2621eff3899ded101b7d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>演练：使用 CheckBox 控件更改文档格式设置
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用 Windows 窗体控件来更改格式设置的文本。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -71,28 +72,28 @@ ms.lasthandoff: 10/31/2017
   
 3.  在 **“属性”** 窗口中，更改下列属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**applyBoldFont**|  
-    |**“文本”**|**加粗**|  
+    |**名称**|**applyBoldFont**|  
+    |**文本**|**加粗**|  
   
 4.  按**Enter**移动第一个复选框下面的插入点。  
   
 5.  将第二个复选框添加到下面的文档`ApplyBoldFont`复选框并更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**applyItalicFont**|  
-    |**“文本”**|**斜体**|  
+    |**名称**|**applyItalicFont**|  
+    |**文本**|**斜体**|  
   
 6.  按**Enter**移动插入点下面第二个复选框。  
   
 7.  将第三个复选框添加到下面的文档`ApplyItalicFont`复选框并更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**applyUnderlineFont**|  
-    |**“文本”**|**下划线**|  
+    |**名称**|**applyUnderlineFont**|  
+    |**文本**|**下划线**|  
   
 #### <a name="to-add-text-and-a-bookmark-control"></a>若要添加文本和书签控件  
   
@@ -162,7 +163,7 @@ ms.lasthandoff: 10/31/2017
   
 -  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Word 的演练](../vsto/walkthroughs-using-word.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   

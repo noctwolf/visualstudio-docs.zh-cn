@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98bb43322d4a222d63bafac22d78e433a3000530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cb6ddce35a45c71fb72a4e6d1f138e044afd50e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-extensions-for-the-sharepoint-tools-in-visual-studio"></a>在 Visual Studio 中调试 SharePoint 工具扩展
   你可以调试在实验实例或 Visual Studio 的正则实例中的 SharePoint 工具扩展。 如果您需要解决的扩展的行为，你还可以修改注册表值以显示其他错误信息并配置 Visual Studio 执行 SharePoint 命令的方式。  
@@ -116,13 +117,13 @@ ms.lasthandoff: 10/31/2017
   
  为了帮助排查任何扩展 SharePoint 工具，可以创建和设置 EnableDiagnostics 值。 下表描述了此值。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |EnableDiagnostics|指定是否显示诊断消息的 REG_DWORD**输出**窗口。<br /><br /> 若要显示的诊断消息，请将此值设置为 1。 若要停止显示消息，将此值设置为 0，或删除此值。<br /><br /> 若要将消息写入到**输出**窗口从 SharePoint 工具扩展时，请使用 SharePoint 项目服务。 有关详细信息，请参阅[使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)。|  
   
  如果你的扩展包括 SharePoint 命令，你可以创建和设置其他值，以帮助解决该命令。 下表描述这些值。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |AttachDebuggerToHostProcess|指定是否显示一个对话框，使您能够将调试器附加到 vssphost4.exe，一旦它开始意外的 REG_DWORD。 如果你想要调试的命令执行通过 vssphost.exe 开始后立即这很有用，并且没有足够的时间来手动将调试器附加之前执行此命令。 若要显示的对话框中，vssphost4.exe 调用<xref:System.Diagnostics.Debugger.Break%2A>方法启动时。<br /><br /> 若要启用此行为，请将此值设置为 1。 若要禁用此行为，将此值设置为 0，或删除此值。<br /><br /> 如果此值设置为 1 时，你可能还需要增加 HostProcessStartupTimeout 值以便自己给足够的时间来在 Visual Studio 期望 vssphost4.exe 以指示它已成功启动之前附加调试器。|  
 |ChannelOperationTimeout|指定的时间，以秒为单位，Visual Studio 等待 SharePoint 命令以执行意外的 REG_DWORD。 如果该命令不会执行时间，<xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException>引发。<br /><br /> 默认值为 120 秒。|  
@@ -130,7 +131,7 @@ ms.lasthandoff: 10/31/2017
 |MaxReceivedMessageSize|指定允许的最大大小，以字节为单位，Visual Studio 和 vssphost4.exe 之间传递的 WCF 消息的意外的 REG_DWORD。<br /><br /> 默认值为 1048576 字节 (1 MB)。|  
 |MaxStringContentLength|指定允许的最大大小，以字节为单位，Visual Studio 和 vssphost4.exe 之间传递的字符串的意外的 REG_DWORD。<br /><br /> 默认值为 1048576 字节 (1 MB)。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [在 Visual Studio 中部署 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   

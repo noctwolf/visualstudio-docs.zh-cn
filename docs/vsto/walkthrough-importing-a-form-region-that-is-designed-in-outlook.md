@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 63073ca3100f1b4a11d5a39043e5d5eeebe7b628
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf5b5ff9f2c3b2db5d7082e4eecd9eee4e235866
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-importing-a-form-region-that-is-designed-in-outlook"></a>演练：导入在 Outlook 中设计的窗体区域
   此演练演示如何在 Microsoft Office Outlook 中设计窗体区域，然后通过使用“新建窗体区域”  向导将窗体区域导入 Outlook VSTO 外接程序项目。 通过在 Outlook 中设计窗体区域，可以将本机 Outlook 控件添加到绑定到 Outlook 数据的窗体区域。 导入窗体区域后，可以处理每个控件的事件。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  启动 Microsoft Office Outlook。  
   
-2.  在 Outlook 中，在“开发人员”  选项卡中，单击“设计窗体” 。 有关更多信息，请参见 [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+2.  在 Outlook 中，在“开发人员”  选项卡中，单击“设计窗体” 。 有关详细信息，请参阅 [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 3.  在“设计窗体”  框中，单击“任务” ，然后单击“打开” 。  
   
@@ -256,7 +257,7 @@ ms.lasthandoff: 10/31/2017
   
 -   若要了解有关如何将自定义任务窗格添加到 Outlook 的详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在运行时访问窗体区域](../vsto/accessing-a-form-region-at-run-time.md)   
  [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)   
  [Outlook 窗体区域创建准则](../vsto/guidelines-for-creating-outlook-form-regions.md)   

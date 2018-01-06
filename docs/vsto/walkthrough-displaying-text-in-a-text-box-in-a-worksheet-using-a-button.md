@@ -20,11 +20,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b95eb6eeb5f8615f8f471ad33139afa49d5633f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7743a3d1c0548b444343b3dc96b25eabac4ac951
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>演练：使用按钮在工作表的文本框中显示文本
   本演练演示在 Microsoft Office Excel 工作表，以及如何创建使用 Visual Studio 中的 Office 开发工具的 Excel 项目中使用按钮和文本框的基础知识。 若要查看结果为已完成的示例，请参阅 Excel 控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -73,10 +74,10 @@ ms.lasthandoff: 10/31/2017
   
 5.  拖动**按钮**控件拖动到`Sheet1`和更改以下属性：  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**insertText**|  
-    |**“文本”**|**插入文本**|  
+    |**名称**|**insertText**|  
+    |**文本**|**插入文本**|  
   
  现在编写代码以在单击按钮时运行。  
   
@@ -114,7 +115,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用复选框来更改格式设置。 有关详细信息，请参阅[演练： 更改工作表格式使用复选框控件](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 添加 Windows 窗体控件添加到 Office 文档](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)   
  [Office 文档上的 Windows 窗体控件限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  

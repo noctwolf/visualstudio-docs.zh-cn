@@ -23,11 +23,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c5832388db7e70791193024b263da275cdf5eaa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 54eb1f58c6e623df352b382df7259e4457dd4597
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-in-office-projects"></a>Office 项目中的属性
   有几个重要属性可用于 Visual Studio 中的 Office 项目。 可在 **“属性”** 窗口中访问这些属性。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
  使用 **“属性”** 窗口中的 **“Value2”** 属性将 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 属性绑定到数据源中的字段。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)   
  [Office 项目中的事件](../vsto/events-in-office-projects.md)  

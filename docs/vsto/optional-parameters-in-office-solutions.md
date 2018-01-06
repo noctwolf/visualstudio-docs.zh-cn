@@ -23,11 +23,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4293d13ffc5b69c23c0b613a3d9747248d6fa790
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3df07b6f60d4b870c830fc419b88decbe2f8fde1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 解决方案中的可选参数
   Microsoft Office 应用程序的对象模型中的许多方法都接受可选参数。 如果使用 Visual Basic 在 Visual Studio 中开发 Office 解决方案，你不必为可选参数传递值，因为系统会为每个缺少的参数自动使用默认值。 在大多数情况下，也可以省略 Visual C# 项目中的可选参数。 但是，不能省略可选**ref**参数`ThisDocument`在文档级 Word 项目中的类。  
@@ -72,8 +73,8 @@ ms.lasthandoff: 10/31/2017
   
  有关值和引用类型参数的详细信息，请参阅[传递自变量通过值和通过引用 &#40;Visual Basic &#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) （对于 Visual Basic) 和[传递参数 &#40;使用 c&#35;编程指南 &#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
- [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

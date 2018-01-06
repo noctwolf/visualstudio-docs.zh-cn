@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea195b8b3af284858253e6300b9a4484eb30f757
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: b6952cfdebb38030d154ad022a799c07fcb9721b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor"></a>XML 编辑器
 “XML 编辑器”基于 [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio 文本编辑器，并增加了对 XML 语言的支持。 “XML 编辑器”具有下列功能：  
@@ -80,5 +81,5 @@ ms.lasthandoff: 11/02/2017
  [XML 标准参考](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
  提供有关 XML 技术的信息，其中包括 XML、文档类型定义 (DTD)、XML 架构定义语言 (XSD) 和 XSLT。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 732a270564c40c4ca20952d86abb8618f9a060f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ba481206e24870e0772290beba129d373c30862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visio-object-model-overview"></a>Visio 对象模型概述
   要为 Microsoft Office Visio 开发 Office 解决方案，则可以与 Visio 对象模型进行交互。 此对象模型包含的类和 Visio 中，主互操作程序集中提供并在 Microsoft.Office.Interop.Visio 命名空间中定义的接口。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="application-object"></a>应用程序对象  
  Microsoft.Office.Interop.Visio.Application 对象表示 Visio 应用程序，并且所有其他对象的父级。 其成员通常作为一个整体应用于 Visio。 可以使用的属性和方法的 Microsoft.Office.Interop.Visio.Application 和 Microsoft.Office.Interop.Visio.ApplicationSettings 对象来控制 Visio 环境。  
   
- 在 VSTO 外接程序项目中，你可以通过访问 Microsoft.Office.Interop.Visio.Application 对象`Application`字段`ThisAddIn`类。 有关更多信息，请参见 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
+ 在 VSTO 外接程序项目中，你可以通过访问 Microsoft.Office.Interop.Visio.Application 对象`Application`字段`ThisAddIn`类。 有关详细信息，请参阅 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
   
 ### <a name="document-object"></a>文档对象  
  Microsoft.Office.Interop.Visio.Document 对象是 Visio 编程的核心。 它表示绘图、模具或模板文件。 当你打开 Visio 文档或创建新文档时，创建一个新的 Microsoft.Office.Interop.Visio.Document 对象，该添加到 Microsoft.Office.Interop.Visio.Application 对象 Microsoft.Office.Interop.Visio.Documents 集合对象.  
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
   
  有关更多信息，请参见 [Office 主互操作程序集中的类和接口概述](http://go.microsoft.com/fwlink/?LinkId=189592) 和 [Office Primary Interop Assemblies](../vsto/office-primary-interop-assemblies.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visio 解决方案](../vsto/visio-solutions.md)   
  [使用 Visio 文档](../vsto/working-with-visio-documents.md)   
  [使用 Visio 形状](../vsto/working-with-visio-shapes.md)  

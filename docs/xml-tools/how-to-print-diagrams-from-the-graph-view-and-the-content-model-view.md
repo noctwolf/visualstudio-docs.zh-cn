@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0ab99d27af2ecb9fef24084b41a326c66c828d4b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c88f2efd3e7494fdec5d0cfaee8ecb492c43603
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>如何：从图形视图和内容模型视图打印关系图
 本主题描述如何从图形视图或内容模型视图中打印关系图。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  通过使用 XPS 查看器，打印在 XPS 文件中保存的图像。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [图形视图](../xml-tools/graph-view.md)   
  [内容模型视图](../xml-tools/content-model-view.md)   
  [XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)

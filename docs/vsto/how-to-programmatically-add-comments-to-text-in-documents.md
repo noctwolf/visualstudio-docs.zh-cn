@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05744cc6d4cba2a21dd45a3b314367e31a53a92a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 69f320ef3e7b3914d9d6eadb7466b3a216ef95d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>如何：以编程方式向文档中的文本添加注释
   文档类的注释属性将添加到的 Microsoft Office Word 文档中的文本范围的注释。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="robust-programming"></a>可靠编程  
  若要更改 Word 在注释中添加的用户缩写，请使用 <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> 属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 以编程方式移除文档中所有注释](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [文档主机项](../vsto/document-host-item.md)  
   

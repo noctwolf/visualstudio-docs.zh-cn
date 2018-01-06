@@ -20,11 +20,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e50809b5e57a832c9f085172832dd2e1a4db45a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5eb6c744005c48fa33592da2113f88e4917a259a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="trusting-office-solutions-by-using-inclusion-lists"></a>使用包含列表信任 Office 解决方案
   包含列表让用户能够向使用标识发布者的证书进行签名的 Office 解决方案授予信任。 包含列表是用户特定的，并可用于文档级自定义项和 VSTO 外接程序。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="structure-of-the-inclusion-list"></a>包含列表的结构  
  一个有效的包含列表条目由两部分组成：部署清单的路径和用于对解决方案进行签名的公钥。 将解决方案添加到包含列表后，则将其视为受信任。 运行 Office 解决方案时，Office 应用程序将比较包含列表中的公钥与部署清单中的签名密钥，从而验证当前正在运行的解决方案与原始受信任版本是否相同。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)   
  [确保 Office 解决方案的安全](../vsto/securing-office-solutions.md)  
   

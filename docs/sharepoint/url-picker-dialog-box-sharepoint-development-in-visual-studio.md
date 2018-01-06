@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c97bd5e6fb9ad320a9f353eaa67114931a0d1b54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c475b44b15b206464e2a910cc410964906706bd6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>“URL 选取器”对话框（Visual Studio 中的 SharePoint 开发）
   在“URL 选取器”对话框中，您可以选择文件，如位于项目中或运行 SharePoint 的本地服务器上的母版页文件或图像文件。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
  **文件类型**  
  允许你从适合于正在执行的任务的一组文件中进行选择。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [为 SharePoint 创建 Web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [为 Web 部件或应用程序页创建可重用控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   

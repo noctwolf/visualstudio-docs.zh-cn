@@ -21,11 +21,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 42914166995c002d7eeb0c1c730edf860e6c1a68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6e2904a812f00e58e1ae5b4a56cd1ce742fc9357
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="namedrange-control"></a>NamedRange 控件
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件是一个具有唯一名称的范围，可用于公开事件且可以绑定到数据。 有关详细信息，请参阅 [Excel Object Model Overview](../vsto/excel-object-model-overview.md)。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
  在 VSTO 外接程序中，你可以在运行时将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到工作表中。 有关详细信息，请参阅 [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。  
   
 > [!NOTE]  
->  默认情况下，工作表关闭时，动态创建的命名范围不作为宿主控件保留在工作表中。 有关更多信息，请参见 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+>  默认情况下，工作表关闭时，动态创建的命名范围不作为宿主控件保留在工作表中。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
  <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件可以仅包含特定的工作表上的范围。 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件不能具有适用于所有表的相对名称并且它们不能包含跨越工作簿中的两个或多个工作表的范围（3-D 范围）。  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
  如果绑定数据集中的数据通过任何机制进行了更新，那么 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件会反映这些变化。  
   
-## <a name="formatting"></a>格式设置  
+## <a name="formatting"></a>格式化  
  可应用于 <xref:Microsoft.Office.Interop.Excel.Range> 的格式设置也可应用于 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件。 这包括边框、字体、数字格式和样式。  
   
 ## <a name="renaming-the-control"></a>重命名控件  
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
   
 -   <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   

@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 53e90448d5e7a24f4904f9c4ea02ac041531ce02
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: af70078790c684ce774a203b265d7c767779ab15
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint 支持的 MSBuild 属性
   任何[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]Microsoft.VisualStudio.SharePoint.targets 文件、 项目文件中或项目用户文件中定义的属性可在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。 除了常见[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]项目，SharePoint 提供的属性定义了特定于 SharePoint 项目的其他属性。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  你可以使用[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]变量语法`$(` *propertyName* `)`或环境变量语法`%` *propertyName* `%`可以指定的属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 参考](/visualstudio/msbuild/msbuild-reference)  
   
   

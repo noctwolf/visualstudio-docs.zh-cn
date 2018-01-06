@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bab156bdd1589aaac10a619409b44e50558b9c15
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 67ee77197493cbba0161a3ee53a0617a58b62522
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>演练：向工作流中添加应用程序页
   本演练演示如何添加显示派生自工作流到工作流项目的数据的应用程序页。 基于本主题所述的项目[演练： 创建带有关联和启动窗体的工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   支持的版本的[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 有关详细信息，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -135,7 +136,7 @@ ms.lasthandoff: 10/31/2017
     using Microsoft.SharePoint.Navigation;  
     ```  
   
-3.  将以下代码添加到 `Page_Load` 方法中：  
+3.  将以下代码添加到 `Page_Load` 方法：  
   
     ```vb  
     Try  
@@ -351,7 +352,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [为 Web 部件或应用程序页创建可重用控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 创建带有关联和启动窗体的工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [如何： 创建的应用程序页](../sharepoint/how-to-create-an-application-page.md)   
  [为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)   

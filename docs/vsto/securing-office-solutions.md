@@ -19,11 +19,12 @@ caps.latest.revision: "78"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50960f95b317f389cfe9f99154e51a5103b419d3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 45052deff58e992b427f72188fcb0dc8ade91b95
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="securing-office-solutions"></a>保护 Office 解决方案的安全
   Office 解决方案的安全模型涉及多项技术： [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]， [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]，Microsoft Office 和 Internet Explorer 受限的站点区域中的信任中心。 以下各节介绍不同安全功能的工作方式：  
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="sequence-of-security-checks-during-installation"></a>安装过程中的安全检查顺序  
  安装或更新 Office 解决方案时，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]会按特定顺序执行一组安全检查，以便做出信任决定。 仅当运行时确定解决方案受信任时，才会安装或更新解决方案。  
   
- 可以通过以下四种方式之一来启动安装过程：运行安装程序、打开部署清单、打开 Microsoft Office 应用程序宿主或运行 VSTOInstaller.exe。  
+ 可以通过以下四种方式之一来启动安装过程：运行安装程序、打开部署清单、打开 Microsoft Office 应用程序主机或运行 VSTOInstaller.exe。  
   
  第一项安全检查仅适用于文档级解决方案。 文档级解决方案的文档必须位于可信位置。 如果文档位于远程网络文件共享上，或者具有 .doc 或.docm 文件扩展名，则必须将该文档的位置添加到可信位置列表中。 有关更多信息，请参见 [Granting Trust to Documents](../vsto/granting-trust-to-documents.md)。  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 10/31/2017
   
  ![VSTO 安全-使用 Setup 程序安装](../vsto/media/setup-vstoinstaller.png "VSTO 安全-使用 Setup 程序安装")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)   
  [向文档授予信任](../vsto/granting-trust-to-documents.md)   
  [使用包含列表信任 Office 解决方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   

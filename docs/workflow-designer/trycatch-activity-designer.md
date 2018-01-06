@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a00afe1ac5e0eda29378a439398bc6bd4d90e71b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9fe179a0e1aee4ff929974899d26df48f669ccd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活动设计器
 **TryCatch**活动设计器用于创建和配置<xref:System.Activities.Statements.TryCatch>活动。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|集合**捕获**元素时要检查<xref:System.Activities.Statements.TryCatch.Try%2A>活动引发异常。<br /><br /> 需要在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中至少添加一个活动或在 <xref:System.Activities.Statements.TryCatch.Finally%2A> 块中添加一个活动。|  
 |<xref:System.Activities.Statements.TryCatch.Finally%2A>|False|执行完 <xref:System.Activities.Statements.TryCatch.Try%2A> 以及 <xref:System.Activities.Statements.TryCatch.Catches%2A> 集合中的任何必要活动时要执行的活动。<br /><br /> 需要在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中至少添加一个活动或在 <xref:System.Activities.Statements.TryCatch.Finally%2A> 块中添加一个活动。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [集合](../workflow-designer/collection-activity-designers.md)   
  [重新引发](../workflow-designer/rethrow-activity-designer.md)   
  [Throw](../workflow-designer/throw-activity-designer.md)

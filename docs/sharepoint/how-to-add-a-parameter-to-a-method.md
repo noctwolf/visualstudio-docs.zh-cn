@@ -24,11 +24,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 881eccae253fc07c13eead45ae9d14658f9adf46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f6810d69628c66a011123250b8e0efb8622f0be7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>如何：向方法添加参数
   若要将信息传递到方法或从方法返回信息，请使用参数。 所有方法必须都具有至少一个参数。 有关如何设计用于支持你想要创建的方法的类型的参数的详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
 8.  修改参数的类型描述符。 有关详细信息，请参阅[如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
  [如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   

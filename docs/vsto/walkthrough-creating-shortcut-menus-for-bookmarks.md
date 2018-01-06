@@ -20,11 +20,12 @@ caps.latest.revision: "57"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8dbb248fdaab10aaef6146ae68e36a64b60bb453
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 33f1e0c87130548ea5c2f9ad6ecc69e7ceac3186
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>演练：创建书签的快捷菜单
   本演练演示如何创建快捷菜单<xref:Microsoft.Office.Tools.Word.Bookmark>Word 的文档级自定义项中的控件。 用户右键单击在书签中的文本，快捷菜单将显示，且提供了用于设置文本格式的用户选项。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -196,7 +197,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用复选框来更改格式设置在书签中。 有关详细信息，请参阅[演练： 更改文档格式使用复选框控件](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Word 的演练](../vsto/walkthroughs-using-word.md)   
  [Office UI 自定义项](../vsto/office-ui-customization.md)   
  [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)   

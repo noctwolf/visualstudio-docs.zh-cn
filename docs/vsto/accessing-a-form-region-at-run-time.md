@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20a60a82eacdfd06482e9765e82459b57fecb32b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bb77519c096c7c49f28de3fc98f24757373827c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-a-form-region-at-run-time"></a>在运行时访问窗体区域
   
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
   
  有关如何在 Visual Basic 中创建属性的详细信息，请参阅[如何： 创建属性 (Visual Basic 中)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Outlook 窗体区域创建准则](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [如何： 向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   

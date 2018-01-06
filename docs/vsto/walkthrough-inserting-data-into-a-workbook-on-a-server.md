@@ -21,11 +21,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca768bd681c20826ffbdeeec94706b8b37c129f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ea64eaa32d43369ad264c8ddfce49d5a070a311a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-inserting-data-into-a-workbook-on-a-server"></a>演练：将数据插入到服务器上的工作簿中
   本演练演示如何将数据插入 Microsoft Office Excel 工作簿中缓存而不启动 Excel 通过使用数据集<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -81,7 +82,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  在**新项目**对话框框中，确保**创建解决方案的目录**未选中复选框。  
   
-8.  单击“确定”。  
+8.  单击 **“确定”**。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**AdventureWorksDataSet**项目合并为**解决方案资源管理器**并打开**Class1.cs**或**Class1.vb**代码文件。  
   
@@ -139,7 +140,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  在**名称**框中，键入**AdventureWorksReport**。 请勿修改位置。  
   
-6.  单击“确定”。  
+6.  单击 **“确定”**。  
   
      将打开“Visual Studio Tools for Office 项目向导”  。  
   
@@ -220,7 +221,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  在**名称**框中，键入**DataWriter**。 请勿修改位置。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**DataWriter**项目合并为**解决方案资源管理器**并打开**Program.cs**或**Module1.vb**代码文件。  
   
@@ -233,7 +234,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  上**.NET**选项卡上，选择**microsoft.visualstudio.tools.applications.serverdocument 的引用**。  
   
-3.  单击“确定”。  
+3.  单击 **“确定”**。  
   
 4.  在**解决方案资源管理器**，右键单击**DataWriter**项目，然后单击**添加引用**。  
   
@@ -295,7 +296,7 @@ ms.lasthandoff: 10/31/2017
   
 -   更改而不启动 Excel 中缓存的数据集的数据。 有关详细信息，请参阅[演练： 更改服务器上的工作簿中的缓存数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 更改服务器上的工作簿中缓存的数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)   
  [连接到 Windows 窗体应用程序中的数据](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)  
   

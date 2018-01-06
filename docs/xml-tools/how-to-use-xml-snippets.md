@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d442dbf376d5615b6c10842c16d01183fc70056a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5d8c1d13263972462ef30e55a34c316f5dd0c7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-xml-snippets"></a>如何：使用 XML 代码段
 可以在“XML 编辑器”的快捷菜单上使用下列两个命令调用 XML 代码段。 **插入代码段**命令在光标位置插入 XML 代码段。 **侧**命令使用所选文本环绕 XML 代码段。 每个 XML 代码段具有指定的代码段类型。 代码段类型确定代码段是否是适用于**插入代码段**命令，**侧**命令还是两个。  
@@ -109,7 +110,7 @@ ms.lasthandoff: 10/31/2017
   
  可以通过修改中的代码片段字段设置更改为可编辑的代码段字段的默认颜色**字体和颜色**窗格**选项**对话框。 有关详细信息，请参阅[如何： 更改字体和颜色在编辑器中的](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 代码段](../xml-tools/xml-snippets.md)   
  [如何： 从 XML 架构生成 XML 代码段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
  [如何：创建 XML 代码片段](../xml-tools/how-to-create-xml-snippets.md)

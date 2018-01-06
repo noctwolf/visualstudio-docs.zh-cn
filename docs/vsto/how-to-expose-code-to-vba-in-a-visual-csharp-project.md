@@ -20,11 +20,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a52060f1a1b2200109c5003321857915d95bd12a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 671618479b1be55fcf08d93b2a398c27348b9878
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：向 VBA 公开 Visual C# 项目中的代码
   如果你想要进行相互交互的代码的两个类型，可以公开 Visual C# 项目到 Visual Basic for Applications (VBA) 代码中的代码。  
@@ -104,7 +105,7 @@ ms.lasthandoff: 10/31/2017
   
 12. 生成项目。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   

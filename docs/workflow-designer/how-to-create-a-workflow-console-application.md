@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: e4b019c2733a8e411b1d3e5be15af3b272708ce1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fcadbe113e92c761559161bdd8a7eba6e95937d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>如何：创建工作流控制台应用程序
 使用 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 可为执行系统或人工流程创建工作流。 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 提供用于创建这些工作流的设计图面。 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 可用于在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 内创建工作流，也可集成到重新承载该设计器的其他应用程序。  
@@ -47,5 +48,5 @@ ms.lasthandoff: 10/27/2017
   
 9. 若要编写工作流，将活动或其他工作流项从**工具箱**到你的工作流中的设计图面。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建工作流项目](../workflow-designer/creating-a-workflow-project.md)

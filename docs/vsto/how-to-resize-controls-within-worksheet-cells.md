@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 035021b3a49bd3fb2af2863e3c8a9b2f88c56077
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 75759b501741329808198aafbc7dd39d0994cb98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>如何：调整工作表单元格中的控件的大小
   当您调整列或行的工作表上时，自动包含的单元中的所有主机控件都调整为的高度或调整了大小的单元格的宽度。 默认情况下，Windows 窗体控件不自动调整。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
  如果在设计时添加控件，则必须设置定位选项为每个控件。  
   
- 如果你以编程方式添加 Windows 窗体控件，并提供范围自变量，该控件自动调整大小范围内的单元格调整大小时。 有关更多信息，请参见 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 如果你以编程方式添加 Windows 窗体控件，并提供范围自变量，该控件自动调整大小范围内的单元格调整大小时。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 ## <a name="resizing-controls-at-design-time"></a>在设计时调整控件的大小  
   
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [如何： 添加 Windows 窗体控件添加到 Office 文档](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [如何： 在打印时隐藏工作表上的控件](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   

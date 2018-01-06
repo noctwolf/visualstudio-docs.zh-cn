@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7d1aa39880145513049134871a48210a0e1e0b2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d2c7dfef925ff61255e57315a3980fa6a145c235
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到 .NET Framework 4 或 .NET Framework 4.5 的 Office 项目中的功能区自定义项
   如果你的项目包含通过使用创建的功能区自定义项**功能区 （可视化设计器）**项目项，则必须对你的项目代码进行以下更改，如果目标框架更改为[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本。  
@@ -189,7 +190,7 @@ Me.tab1.Position = Me.Factory.RibbonPosition.AfterOfficeId("TabHome")
 this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [功能区设计器](../vsto/ribbon-designer.md)  
   

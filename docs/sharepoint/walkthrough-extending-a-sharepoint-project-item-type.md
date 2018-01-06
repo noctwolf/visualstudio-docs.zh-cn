@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8afe8ed1d59f8daec34a99b1479079a69a1bc740
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c885fe006f1a6a65f97b1f11de61e0639dd1559a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>演练：扩展 SharePoint 项目项类型
   你可以使用**业务数据连接模型**用于在 SharePoint 中创建业务数据连接 (BDC) 服务的型号项目项。 默认情况下，通过使用此项目项，创建模型时模型中的数据是不向用户显示。 你还必须在 SharePoint，以使用户能够查看数据中创建外部列表。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
 -   测试扩展。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练的开发计算机上：  
   
 -   受支持的 Microsoft Windows、 SharePoint 和 Visual Studio 的版本。 有关详细信息，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -241,7 +242,7 @@ ms.lasthandoff: 10/31/2017
   
 14. 验证**列出**部分的快速启动区域中尚不包含基于项目中的默认 BDC 模型的列表。 你必须先创建的外部数据列表中，通过使用 SharePoint 用户界面或通过使用项目项扩展。  
   
-15. 关闭 web 浏览器。  
+15. 关闭 Web 浏览器。  
   
 16. 在已经 TestBDCModel 项目打开的 Visual Studio 实例中，打开快捷菜单**TestBDCModel**中的节点**解决方案资源管理器**，然后选择**生成外部数据列表**。  
   
@@ -259,7 +260,7 @@ ms.lasthandoff: 10/31/2017
   
      **业务数据连接模型**项目模板生成默认 BDC 模型，它提供所有这些数据。  
   
-22. 关闭 web 浏览器。  
+22. 关闭 Web 浏览器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清理开发计算机  
  测试项目项扩展后，从 SharePoint 站点中删除外部列表和 BDC 模型，并从 Visual Studio 中删除项目项扩展。  
@@ -274,7 +275,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  下**权限和管理**，选择**删除此列表**，然后选择**确定**以确认你想要将此列表发送到回收站。  
   
-5.  关闭 web 浏览器。  
+5.  关闭 Web 浏览器。  
   
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>若要从 SharePoint 站点中删除 BDC 模型  
   
@@ -296,7 +297,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  关闭 Visual Studio （实验实例和 GenerateExternalDataLists 解决方案处于打开状态的实例） 的两个实例。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
  [创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  

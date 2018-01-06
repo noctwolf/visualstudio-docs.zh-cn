@@ -16,11 +16,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c51065eacda271daeb12c17fdeb5fe4e6b20683
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ac0fc1ca0efe4134889d8bf5ac1d3ca9ae2551ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 解决方案的全球化和本地化
   本节包含有关 Microsoft Office Excel 解决方案的特殊注意事项的信息，这些解决方案将在具有 Windows 非英语设置的计算机上运行。 全球化和本地化 Microsoft Office 解决方案过程中所遇到的大多数问题与使用 Visual Studio 创建其他各种解决方案时遇到的问题相同。 有关一般信息，请参阅 [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)。  
@@ -98,7 +99,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>使用外部数据的应用程序  
  对于打开或以其他方式使用外部数据（如包含从旧系统中导出的逗号分隔值的文件（CSV 文件））的任何代码，如果这些文件是使用除 en-US 格式之外的任何格式导出的，则这些代码也会受到影响。 由于数据库中的所有值都应为二进制格式，因此只要数据库不将日期作为字符串存储且不执行不使用二进制格式的操作，数据库访问就不会受到影响。 另外，如果使用 Excel 中的数据构造 SQL 查询，则可能需要根据使用的函数来确保数据为 en-US 格式。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 面向 Office 多语言用户界面](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  

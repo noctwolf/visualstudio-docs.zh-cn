@@ -20,11 +20,12 @@ caps.latest.revision: "103"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02f5d5cf2d726755cce4b3de2dcd74a5dad18db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8b7322faa797ea9ce51af0cd716ffb6536f062ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-and-creating-office-solutions"></a>Designing and Creating Office Solutions
   Visual Studio 提供可用于创建几种不同类型的 Office 解决方案的项目模板。 文档的此部分将介绍项目模板和提供有关创建 Office 项目的指导。 有关如何创建你的项目后实现代码和用户界面自定义的信息，请参阅[开发 Office 解决方案](../vsto/developing-office-solutions.md)。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-solutions-for-the-64-bit-edition-of-microsoft-office"></a>为 64 位版本的 Microsoft Office 创建解决方案  
  Microsoft Office 可提供 64 位和 32 位版本。 若要创建可以在任一版本中运行的 Office 解决方案，你的项目的目标平台设置必须设置为**任意 CPU**。 这是 Office 项目的默认值。 有关详细信息，请参阅[生成 Office 解决方案](../vsto/building-office-solutions.md)。  
   
- 存在供 64 位和 32 位版本的 Microsoft Office 使用的单独的 64 位和 32 位版本的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 有关详细信息，请参阅 [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)。  
+ 存在供 64 位和 32 位版本的 Microsoft Office 使用的单独的 64 位和 32 位版本的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 有关更多信息，请参见 [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)。  
   
 ## <a name="assemblies-in-office-solutions"></a>Office 解决方案中的程序集  
  当使用 Visual Studio 中的 Office 开发工具创建 Office 项目时，你编写的代码最终将被编译成程序集。 该程序集通常会被部署到共享服务器或客户端计算机上的目录。  
@@ -95,7 +96,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="referenced-assemblies"></a>引用的程序集  
  该程序集可以引用项目引用中列出的其他程序集。 但是，一个文档级项目程序集不能引用另一个文档级项目程序集。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)   
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [在 Visual Studio 环境中的 office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)   

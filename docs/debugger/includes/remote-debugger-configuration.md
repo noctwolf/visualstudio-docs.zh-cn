@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 05a288a2d8dff776d8a5d3faea47b06d101f2ea3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cfb41cf6274238fef2de9b74496a33fba110e04f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/03/2018
 ---
 你必须在远程计算机上具有管理权限。  
   
@@ -43,4 +43,4 @@ ms.lasthandoff: 10/27/2017
   
  完成调试和需要停止远程调试器后，，单击**文件 > 退出**窗口上。 你可以重新启动它从**启动**菜单或从命令行：  
   
- **\<Visual Studio 安装目录 > \Common7\IDE\Remote 调试器\\< x86，x64，or Appx\msvsmon.exe**。  
+ **\<Visual Studio 安装目录 > \Common7\IDE\Remote 调试器\\< x86、 x64 或 Appx > \msvsmon.exe**。  

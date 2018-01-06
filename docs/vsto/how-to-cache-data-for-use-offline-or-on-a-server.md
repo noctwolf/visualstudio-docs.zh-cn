@@ -22,11 +22,12 @@ caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a8da60aa9d9dc3ab7becb56b3b4c7701494daef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 07d467d67c78f6779a8be2d21b266f8328e30ff7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>如何：缓存数据以便脱机使用或在服务器上使用
   你可以将标记在文档中，缓存的数据项，以便可脱机。 这还使其成为可能的数据中要文档存储在服务器上时，其他代码进行操作的文档。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  在**属性**窗口中，设置**修饰符**属性**公共**(默认情况下它是**内部**)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [缓存数据](../vsto/caching-data.md)   
  [如何： 以编程方式缓存中的 Office 文档的数据源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [如何： 在受密码保护的文档中缓存数据](../vsto/how-to-cache-data-in-a-password-protected-document.md)   

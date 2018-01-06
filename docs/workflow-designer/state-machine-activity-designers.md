@@ -10,11 +10,12 @@ ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 caps.latest.revision: "5"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: ad07ac5eba9e8579ae08f5ba1b242f3bc5483a5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0d4c8dbac90e3d1e3ec10314debf0a288ad48053
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="state-machine-activity-designers"></a>状态机活动设计器
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]包含很多在构造工作流时可以使用的活动设计器。 本节包含系统提供的、用于创建和管理状态机工作流的活动设计器。 以下主题介绍这些设计器以及如何使用它们。  

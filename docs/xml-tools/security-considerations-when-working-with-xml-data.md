@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46bd68bd4556c782ac8dc6e1664dafe0ce80f99e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 55c312597afd3df9cc26ada23902f8569d23d927
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>使用 XML 数据时的安全注意事项
 本主题讨论在使用“XML 编辑器”或 XSLT 调试程序时需要了解的安全问题。  
@@ -41,5 +42,5 @@ ms.lasthandoff: 10/31/2017
   
 -   XSLT 表达式计算器通过托管调试引擎加载。 托管调试引擎假定所有代码均从用户的本地计算机上运行。 <xref:System.Xml.Xsl.XslCompiledTransform> 类相应地将 XSLT 文件下载到用户的本地计算机上。 通过在具有受限权限的新应用程序域中执行所有 XSLT 转换，降低了发生执行权限升级的可能性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [应用程序域](/dotnet/framework/app-domains/application-domains)  

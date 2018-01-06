@@ -19,11 +19,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: daf5cfb79c16a26b871e2c4d07ec304c17cb6a33
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d36bb9342c1db3fcf0fe007b87831b8c921af6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>如何：以编程方式在隐藏模式下使用 Word 对话框
   可以通过调用 Microsoft Office Word 中的内置对话框而不向用户显示它们来执行复杂的操作通过一个方法调用。 你可以执行此操作通过使用<xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A>方法<xref:Microsoft.Office.Interop.Word.Dialog>对象而不调用<xref:Microsoft.Office.Interop.Word.Dialog.Display%2A>方法。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 以编程方式使用 Word 中的内置对话框](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Word 对象模型概述](../vsto/word-object-model-overview.md)   
  [在 Office 解决方案中的后期绑定](../vsto/late-binding-in-office-solutions.md)   

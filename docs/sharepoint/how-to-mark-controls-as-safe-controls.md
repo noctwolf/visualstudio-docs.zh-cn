@@ -21,11 +21,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9f12b8944d9174ca885e90b92c8e3a0d0b83215
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bd659a1df9782c4e16dd2664a27a87e858e54ef2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>如何：将控件标记为安全控件
   为安全起见，SharePoint 区别不受脚本注入的 Web 控件和 Web 控件不是。 受保护控件，或*安全控件*，可以访问受信任的用户。 你可以将标记为安全地执行安全控件项属性的 SharePoint 项目项或控件**包设计器**时向包中添加程序集。 有关详细信息，请参见  
@@ -91,7 +92,7 @@ ms.lasthandoff: 10/31/2017
   
 12. 下表中所输入属性的值。  
   
-    |属性名|值|  
+    |属性名|“值”|  
     |-------------------|-----------|  
     |命名空间|控件中，完全限定的命名空间如**BdcModelProject1.VisualWebPart1**。|  
     |类型名称|Button1|  
@@ -108,7 +109,7 @@ ms.lasthandoff: 10/31/2017
   
 15. 下表中所输入属性的值。  
   
-    |属性名|值|  
+    |属性名|“值”|  
     |-------------------|-----------|  
     |命名空间|控件中，完全限定的命名空间如**BdcModelProject1.VisualWebPart1**。|  
     |类型名称|TextBox1|  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
 16. 选择 Tab 键，然后选择**确定**按钮以关闭对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [提供打包和部署在项目项中的信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

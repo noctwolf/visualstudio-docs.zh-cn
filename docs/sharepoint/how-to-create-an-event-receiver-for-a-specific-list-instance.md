@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3db5af044b1e3eb25e68c96a42335082fd3523f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a820bc1a29db10fa5f65f1781c30218c62c2ee08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：为特定列表实例创建事件接收器
   对列表定义的任何实例中发生的事件的响应列表实例事件接收器。 虽然事件接收器模板不会启用的特定列表实例的目标，你可以修改事件接收器划归到以响应特定列表实例中的事件的列表定义。  
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
   
      请注意，新公告上不会触发事件接收器，因为接收方被配置为仅对在自定义公告列表实例中，事件做出响应**命名为 TestAnnouncements**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
   

@@ -21,11 +21,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a96ec16afda8823ddf9918340498e29efdff2f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bf714645f126f8a6f5e8aaca3ee6a2721bfe0a71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>How to: Target Office Applications Through Primary Interop Assemblies
   在创建新的 Office 项目时，Visual Studio 会自动添加对生成该项目所需的 Microsoft Office 主互操作程序集 (PIA) 的引用。 在以下方案中，必须添加对其他 PIA 的引用：  
@@ -51,11 +52,11 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  在 Office 项目中，始终通过将添加对 Office Pia 的引用**.NET**选项卡**添加引用**对话框而不是**COM**选项卡。有关详细信息，请参阅 [Office Primary Interop Assemblies](../vsto/office-primary-interop-assemblies.md)。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
      程序集名称将显示在**引用**文件夹**解决方案资源管理器**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   

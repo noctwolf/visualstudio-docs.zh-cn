@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc188299dbc5fe6f8f048b4971fa4973ba2f72f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 979f3aa0d138d1e66248ffc51b4f4cc72d62adf4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-worksheets"></a>使用工作表
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Worksheet> 类包含用于执行工作表相关任务的方法和属性。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
  某些情况下，在 VSTO 外接程序中执行这些任务的方式与在文档级自定义项中执行它们的方式是不同的。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)   
  [使用工作簿](../vsto/working-with-workbooks.md)   
  [使用范围](../vsto/working-with-ranges.md)   

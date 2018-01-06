@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d72d4807f61adcab1321b6471c2bea31f048a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e936404d285fe5845ae364c3b5960e2fb335d2d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-localize-aspx-markup"></a>如何：本地化 ASPX 标记
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)](.aspx) 页通常使用硬编码的字符串值。 若要本地化这些字符串，将其替换引用本地化的资源的表达式。  
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
   
      应用程序中出现的本地化的字符串。 若要显示本地化的资源，SharePoint 服务器必须具有匹配资源文件的区域性的语言包安装。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)   
  [如何： 本地化功能](../sharepoint/how-to-localize-a-feature.md)   
  [如何： 将一个资源文件](../sharepoint/how-to-add-a-resource-file.md)   

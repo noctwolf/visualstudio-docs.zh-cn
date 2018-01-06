@@ -21,11 +21,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 45f350fed3c806a9ac8f79178a50ef22aa0a800e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f24c0493a66651a5d95925fd6777ba3e1cdd1658
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="password-protection-on-office-documents"></a>Office 文档的密码保护
   很可能你的 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿上设置密码，以便它们不能打开的人不知道的密码。 此选项称为**处于打开状态的密码**。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  第一次你打开 Word 文档在 Visual Studio 中具有**处于打开状态的密码**启用，Word 将提示你输入密码。 成功输入密码之后,**处于打开状态的密码**从文档中移除并打开该文档将不再要求输入密码。 如果您要在你的解决方案中的文档要需要密码才能它可以打开，则必须启用**处于打开状态的密码**最终生成之后且在部署解决方案之前。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)   
  [信息权限管理与托管的代码扩展概述](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [如何： 允许代码使用受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   

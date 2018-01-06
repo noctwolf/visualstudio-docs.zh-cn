@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: babe684c0fd4eeec1a00e4f44868bfc0a67e5f9d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 07e028a3ac5018c8a9866a6aee061d679cff74a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="correlateson-definition-dialog-box"></a>“CorrelatesOn 定义”对话框
 **CorrelatesOn**中使用对话框[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]编辑<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>属性<xref:System.ServiceModel.Activities.Receive>活动。 [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][接收](../workflow-designer/receive-activity-designer.md)主题。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="to-launch-the-correlateson-dialog-box"></a>启动“CorrelatesOn”对话框  
  **接收**活动设计器可以拖动从**工具箱**拖放到[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]图面任何位置通常放置活动的。 这将创建具有 Receive 的默认 <xref:System.ServiceModel.Activities.Receive> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 选择**接收**活动设计器，然后为 （集合） 文本旁的省略号按钮的单击**CorrelatesOn**属性在属性网格**CorrelatesOn 定义**对话框出现。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.ServiceModel.Activities.Receive>   
  [添加 CorrelationInitializers 对话框](../workflow-designer/add-correlationinitializers-dialog-box.md)   
  [添加相关对话框](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)   

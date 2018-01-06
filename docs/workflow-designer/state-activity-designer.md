@@ -11,11 +11,12 @@ ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
 caps.latest.revision: "5"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 22e9e9c6f31923eb097b34eab19e61762fb2956b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4321ccba1d3081023c8603df04174506df78f288
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="state-activity-designer"></a>状态活动设计器
 <xref:System.Activities.Statements.State> 表示状态机可具有的状态。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.State.Exit%2A>|False|指定在从此状态转换时发生的操作。 当<xref:System.Activities.Statements.State>活动将展开，可以通过将活动从设置此值**工具箱**拖放到**退出**部分的状态。|  
 |<xref:System.Activities.Statements.State.Transitions%2A>|False|列出源自 <xref:System.Activities.Statements.State> 的可能转换。 列表中的每个项有一个指向关联的 <xref:System.Activities.Statements.Transition> 和目标 <xref:System.Activities.Statements.State> 的链接。 单击此链接会将设计器切换到 <xref:System.Activities.Statements.Transition> 或 <xref:System.Activities.Statements.State> 的扩展视图。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [状态机](../workflow-designer/statemachine-activity-designer.md)   
  [FinalState](../workflow-designer/finalstate-activity-designer.md)   
  [转换](../workflow-designer/transition-activity-designer.md)

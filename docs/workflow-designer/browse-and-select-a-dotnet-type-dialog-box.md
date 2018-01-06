@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ac184805803e92758e1de93400c957d00e8ebda6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: b891f2af72de34c2ccd71043f2674c338ddb44f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>“浏览并选择 .NET 类型”对话框
 在**属性**窗口、 对话框框中或如变量设计器中，当你选择的设计器**浏览类型...**从数据类型的列表，**浏览并选择.NET 类型**对话框中 （在"类型浏览器"以缩写形式称为）。 在此对话框中，可以从程序集和项目的树视图中选择类型。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="filtering-search-results-in-the-type-browser"></a>在类型浏览器中筛选搜索结果  
  中的类型列表**类型名称**框获取更短，因为你键入更多字符可找到匹配项。 只有其完全限定名以您键入的字符串开头的类型或者其简短名称以您键入的字符串开头的类型会显示在筛选出的列表中。  
   
- 例如:   
+ 例如:  
   
 1.  键入**操作**匹配<xref:System.OperationCanceledException>但不是<xref:System.InvalidOperationException>。 若要匹配 <xref:System.InvalidOperationException>，请开始键入 System.I 或 Invalid。  
   
@@ -71,5 +72,5 @@ ms.lasthandoff: 10/27/2017
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>使用类型浏览器对话框选择服务协定  
  选择服务协定类型时，类型浏览器只显示具有 <xref:System.ServiceModel.ServiceContractAttribute> 特性的类型。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用活动设计器](../workflow-designer/using-the-activity-designers.md)

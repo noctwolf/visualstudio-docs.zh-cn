@@ -19,11 +19,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 031894a3307a40af981ad974898ae819ba68d24a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7968fe71fffb736a6e86319339f3cc7823480403
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>如何：以编程方式在工作表范围内搜索文本
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>方法<xref:Microsoft.Office.Interop.Excel.Range>对象可用于搜索的范围内的文本。 此文本也可以是任何错误字符串，如出现在工作表单元格`#NULL!`或`#VALUE!`。 有关错误字符串的详细信息，请参阅[单元格错误值](http://msdn.microsoft.com/library/office/ff839168.aspx)。  
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#57)]
  [!code-vb[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#57)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用范围](../vsto/working-with-ranges.md)   
  [如何： 以编程方式将样式应用于工作簿中的](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [如何： 以编程方式引用代码中的工作表范围](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   

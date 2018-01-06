@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 02f3d66b7d519546f1da89bb323ec9ab740628f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 44b938467454d73c460cc9276b46bc165d36bcee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-legacy-workflow-projects"></a>创建旧版工作流项目
 本节介绍如何使用 vs2010 提供的旧 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 来创建工作流项目。 旧 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 面向 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。 它包括有关如何使用下表所列出的工作流项目模板的信息。  
@@ -52,6 +53,6 @@ ms.lasthandoff: 10/27/2017
   
  [如何：向工作流项目添加新项（旧版）](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [顺序工作流视图 （旧版）](../workflow-designer/sequential-workflow-views-legacy.md)   
  [Visual Studio 工作流窗口（旧版）](../workflow-designer/visual-studio-workflow-windows-legacy.md)

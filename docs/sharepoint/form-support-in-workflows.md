@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e2c63af83c6ca8249e87d60f23043c0639c7fd43
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0da90955a590881a02117213246e580339dbe596
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="form-support-in-workflows"></a>工作流中的窗体支持
   可以在工作流中使用四种类型的窗体： 关联、 启动、 任务和修改。 这些窗体类型可以基于一个 ASPX 窗体或的 InfoPath 窗体。 级别支持[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供了用于将特定表单取决于几个因素，以下表中所述。 有关工作流窗体类型的详细信息，请参阅[工作流窗体概述](http://go.microsoft.com/fwlink/?LinkId=185228)MSDN 网站上。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 |任务|的工作流的 Elements.xml 文件中引用它窗体。<br />工作流-Elements.xml 文件不要求进行重构。|-窗体是导入，但不是在工作流的 Elements.xml 中引用。<br />工作流-Elements.xml 文件不要求进行重构。 **注意：**规则和属性必须添加和更改的这种情况下工作。|  
 |修改|不适用。 无法在 SharePoint Designer 创建 ASPX 修改窗体。|不适用。 除内置的 SharePoint 服务器工作流，工作流导出时不包含在.wsp 文件之外，无法在 SharePoint 设计器中，创建 InfoPath 修改窗体。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 创建带有关联和启动窗体的工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [从现有 SharePoint 站点导入项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)  

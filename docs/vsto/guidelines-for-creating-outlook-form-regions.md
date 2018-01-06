@@ -18,11 +18,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e012b9f173e432cfee88beec7d861faaa7be03b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 197da04c42b97f274979e46a2ba4691747365362
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guidelines-for-creating-outlook-form-regions"></a>Outlook 窗体区域创建准则
   以下信息可以帮助优化窗体区域和避免潜在问题。  
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/31/2017
   
  **窗口** 图标将出现在通知区域和 ALT + TAB 对话框，用于显示替换或全部替换窗体区域的打开项目。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在运行时访问窗体区域](../vsto/accessing-a-form-region-at-run-time.md)   
  [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)   
  [演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   

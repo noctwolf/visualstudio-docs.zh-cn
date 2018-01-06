@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6e0d64c1a0a9f80bf4c3b9ff677c3e3c5e6bc984
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 31afb7827905a0111027cb38d9081def211df7dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>如何：配置工作流项目属性（旧版）
 遵循以下步骤以查看或修改与工作流项目关联的属性。  
@@ -35,5 +36,5 @@ ms.lasthandoff: 10/27/2017
   
 4.  在项目中**属性**窗口中，查看和修改你想要更改的属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建旧版工作流项目](../workflow-designer/creating-legacy-workflow-projects.md)

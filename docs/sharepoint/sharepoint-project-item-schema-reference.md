@@ -28,11 +28,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 67f9d29ff18f4ec12653838d25dc3951a53757bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e02d3eff52ce0318f9a6f2a6e57c6e0fb2e3a56a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint 项目项架构参考
   Visual Studio 使用 SharePoint 项目项架构来验证.spdata 文件的内容。 .Spdata 文件指定的内容和行为的 SharePoint 项目项。 SharePoint 项目项的内容的详细信息，请参阅[创建项模板和 SharePoint 项目项的项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 |[SafeControl](../sharepoint/safecontrol-element.md)|表示一个 ASPX 控件或指定为安全的任何用户访问 SharePoint 站点上的任意 ASPX 页上的 Web 部件。|  
 |[SafeControls](../sharepoint/safecontrols-element.md)|表示 ASPX 控件和指定为安全的任何用户访问 SharePoint 站点上的任意 ASPX 页上的 Web 部件的集合。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)  
   
   

@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6ffe3d79a9b7bd7e15d9281fe1500b256d4c649a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2336dbec82ac6ec7b78d1c1154f9686078bb4bc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-folders"></a>使用文件夹
   <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 类包含可用于访问、创建和自定义文件夹的方法和属性。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
  有关 Outlook 任务和 Outlook 对象模型的详细信息，请参阅 [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用联系人项](../vsto/working-with-contact-items.md)   
  [使用邮件项](../vsto/working-with-mail-items.md)   
  [使用日历项](../vsto/working-with-calendar-items.md)   

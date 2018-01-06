@@ -18,11 +18,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99380078b2fc49bcc5e1efb7a36ac7f28028a0d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ec4ca6100b3b0587e7e4dba5a56ceca4e5d5534c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-sharepoint-project-system"></a>扩展 SharePoint 项目系统
   你可以通过使用 Visual Studio 中的一组项目模板和项模板创建 SharePoint 解决方案。 这些模板满足许多的开发方案的要求，但您可能会发现某些情况下，它们不提供需要的功能。 在这些情况下，你可以扩展 SharePoint 项目系统。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
 -   将对象转换到 Visual Studio 自动化对象模型或集成对象模型中的相应对象的 SharePoint 项目系统中，反之亦然。 有关详细信息，请参阅[转换之间 SharePoint 项目系统类型和其他 Visual Studio 项目类型](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)   
  [扩展 SharePoint 项目](../sharepoint/extending-sharepoint-projects.md)   

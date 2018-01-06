@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e90143904c8d628e4288e24602907a75ae4bc59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9d807c38af14249b265c411de31f6cde03855c60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-local-database-files-in-office-solutions-overview"></a>在 Office 解决方案中使用本地数据库文件概述
   Office 解决方案中，可以包括数据库文件，如 SQL Server Express (.mdf) 文件或 Microsoft Office Access (.mdb) 文件。 这使最终用户能够在其中维护中央的数据库不是必需的例如在使用仅一台计算机的本地清单解决方案的情况下对本地数据库进行维护。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="local-database-files-and-caching-the-dataset"></a>本地数据库文件和缓存数据集  
  在 Microsoft Office Excel 和 Microsoft Office Word 文档级解决方案中，你可以通过将标记该特性的数据集实例中缓存文档中的数据集<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>。 当你将数据库文件添加到你的项目使用**数据源配置向导**，类型化数据集自动添加到你的项目。 很少需要应用<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>到此数据集，因为已存在用户的计算机上本地数据。 有关更多信息，请参见 [Caching Data](../vsto/caching-data.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [如何： 用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [如何： 使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   

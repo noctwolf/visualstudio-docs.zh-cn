@@ -21,11 +21,12 @@ caps.latest.revision: "105"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8189032a38aba69b63cb96f824c973b0d41a1aad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fd6ff05fde0e02e9b45b67ffe665a296085bf934
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-and-migrating-office-solutions"></a>升级和迁移 Office 解决方案
   如果你拥有在 Visual Studio 早期版本中创建的 Microsoft Office 项目，则必须升级该项目以在 Visual Studio 当前版本中使用。 若要升级 Microsoft Office 项目，请在包含 Microsoft Office 开发人员工具的 Visual Studio 版本中打开该项目。 有关包括 Microsoft Office 开发人员工具的版本的 Visual Studio 的详细信息，请参阅[配置计算机以开发 Office 解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="changes-to-upgraded-projects"></a>升级项目的更改  
  升级 Microsoft Office 项目时，Visual Studio 会将项目修改为面向以下各项：  
   
--   Visual Studio 2010 Tools for Office Runtime。 有关详细信息，请参阅 [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)。  
+-   Visual Studio 2010 Tools for Office Runtime。 有关更多信息，请参见 [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)。  
   
 -   当前程序集引用。  
   
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
   
  如果你想要使用 ClickOnce 来部署 VSTO 外接程序，则可以完全删除安装项目或 InstallShield Limited Edition 项目。 有关使用 ClickOnce 部署 VSTO 外接程序的详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：升级 Office 解决方案](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)   
  [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [“选项”对话框，“项目升级”](../vsto/project-upgrade-options-dialog-box.md)  

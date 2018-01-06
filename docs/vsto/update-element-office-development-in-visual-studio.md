@@ -19,11 +19,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a41e7580e7c6c169554bb50c4d0c9af29a992b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1733ac8333675975bb5d4b42dce9df3c01e5ac0f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;更新&gt;元素 （Visual Studio 中的 Office 开发）
   `update`元素指定的更新的解决方案将检查的间隔。  
@@ -45,9 +46,9 @@ ms.lasthandoff: 10/31/2017
   
  `update`元素具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`enabled`|必需。 将 enabled 设置为下列值之一：<br /><br /> -   **true**检查更新。<br />-   **false**以防止检查更新。|  
+|`enabled`|必须的。 将 enabled 设置为下列值之一：<br /><br /> -   **true**检查更新。<br />-   **false**以防止检查更新。|  
   
  `update`元素具有以下子元素。  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
 |特性|描述|  
 |---------------|-----------------|  
 |`maximumAge`|必需。 这将设置为一个整数。|  
-|`unit`|必需。 设置`unit`为以下值之一：<br /><br /> -   **小时数**<br />-   **天**<br />-   **周**|  
+|`unit`|必须的。 设置`unit`为以下值之一：<br /><br /> -   **小时数**<br />-   **天**<br />-   **周**|  
   
 ## <a name="example-of-always-checking-for-updates"></a>始终检查更新的示例  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
 </vstav3:update>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [通过使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   

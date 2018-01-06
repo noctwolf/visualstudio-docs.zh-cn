@@ -18,11 +18,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1161af5501ebd0df8137293b137600697af91516
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 08b20f308e4022b7ad12d68a92f7cb5422728639
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>如何：自定义内置选项卡
   可以将组和控件添加到内置选项卡。内置选项卡是已在 Microsoft Office 应用程序功能区的选项卡。 例如，**数据**选项卡是 Excel 中的内置选项卡。 创建自定义组时，它显示在选项卡末尾，但可以在选项卡上任意移动你的组。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
      有关控件 Id 的列表，请参阅[Office 2010 帮助文件： Office Fluent 用户界面控件标识符](http://go.microsoft.com/fwlink/?LinkID=181052)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [功能区概述](../vsto/ribbon-overview.md)   
  [功能区设计器](../vsto/ribbon-designer.md)   
  [功能区 XML](../vsto/ribbon-xml.md)   

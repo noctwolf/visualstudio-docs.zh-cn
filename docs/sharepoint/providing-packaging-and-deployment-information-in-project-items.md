@@ -31,11 +31,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f12b3af8f49270cc914e47a37077265794bf0be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 84379f4847bb708bf8089ac32e261b459e87e1a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="providing-packaging-and-deployment-information-in-project-items"></a>Providing Packaging and Deployment Information in Project Items
   中的所有 SharePoint 项目项[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]具有可用于项目部署到 SharePoint 时提供额外的数据的属性。 这些属性如下所示：  
@@ -111,7 +112,7 @@ ms.lasthandoff: 10/31/2017
 </Assemblies>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)   
  [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  

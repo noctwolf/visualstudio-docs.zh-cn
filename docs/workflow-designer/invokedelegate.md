@@ -13,11 +13,12 @@ ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 caps.latest.revision: "3"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 180e9ca5ae635608ca3d7f9cf24abab13c8076a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 56b132403d51a591a8832c1417bec73bde442266
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 **InvokeDelegate**设计器用于创建和配置<xref:System.Activities.Statements.InvokeDelegate>活动。  
@@ -39,5 +40,5 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|要在执行活动时调用的 <xref:System.Activities.ActivityDelegate> 的名称。 此属性可以在设计器图面上进行编辑。 此属性是强制属性。|  
 |<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|调用委托的自变量集合。 密钥的参数对象的名称位于<xref:System.Activities.ActivityDelegate>和值是其表达式将进行计算并分配给相应的参数对象的参数。 在属性网格中，单击中的省略号按钮**DelegateArguments**字段，它显示**DelegateArguments**对话框以便您设置此属性。 单击**创建自变量**字段以添加参数。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：在工作流设计器中定义和使用活动委托](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c6a47bae9923d68acc189c53766d5206244f97c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 251522a745ee7b8dc9894a403f09d1a6d3f32793
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-save-documents"></a>如何：以编程方式保存文档
   有多种方法来保存 Microsoft Office Word 文档。 你可以将文档保存而无需更改该文档的名称或你可以使用新名称保存文档。  
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
   
 -   若要使用新名称保存文档，一个名为测试目录必须存在驱动器 C 上。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 以编程方式关闭文档](../vsto/how-to-programmatically-close-documents.md)   
  [如何： 以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)   
  [文档主机项](../vsto/document-host-item.md)   

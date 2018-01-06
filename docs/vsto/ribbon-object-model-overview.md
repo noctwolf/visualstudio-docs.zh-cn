@@ -16,11 +16,12 @@ caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655a1b6f3d57ac15fc7a50a603b2a12791251c9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1ca5b96157ee6077d4e904d21ba2a95c4f059e02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-object-model-overview"></a>功能区对象模型概述
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]公开一个可用于获取和设置在运行时的功能区控件的属性的强类型的对象模型。 例如，你可以动态填充菜单控件，或显示和隐藏控件根据上下文。 向功能区，但只能在功能区加载 Office 应用程序之前，还可以添加选项卡、 组和控件。 有关信息，请参阅[设置变成只读属性的属性](#SettingReadOnlyProperties)。  
@@ -37,10 +38,10 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="RibbonEvents"></a>功能区事件  
  **功能区**类包含以下三个事件：  
   
-|Event|描述|  
+|事件|描述|  
 |-----------|-----------------|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Office 应用程序加载功能区自定义项时引发。 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>事件处理程序将自动添加到功能区代码文件。 使用此事件处理程序功能区加载时运行自定义代码。|  
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|可以为功能区自定义项中的缓存图像何时在功能区加载。 如果你编写代码以缓存此事件处理程序中的功能区映像，你可以获取的略微的性能有所提高。 有关更多信息，请参见<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>。|  
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|可以为功能区自定义项中的缓存图像何时在功能区加载。 如果你编写代码以缓存此事件处理程序中的功能区映像，你可以获取的略微的性能有所提高。 有关详细信息，请参阅<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>。|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|功能区实例关闭时引发。|  
   
 ##  <a name="RibbonControlClasses"></a>功能区控件  
@@ -148,7 +149,7 @@ ms.lasthandoff: 10/31/2017
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
-|**Name**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
+|**名称**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**位置**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**行计数**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
@@ -171,7 +172,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="ribbon-control-events"></a>功能区控件事件  
  每个控件类包含一个或多个事件。 下表描述这些事件。  
   
-|Event|描述|  
+|事件|描述|  
 |-----------|-----------------|  
 |单击|单击控件时发生。|  
 |宽度|编辑框或组合框的文本更改时发生。|  
@@ -187,7 +188,7 @@ ms.lasthandoff: 10/31/2017
 |*发件人*|<xref:System.Object>它表示引发事件的控件。|  
 |*e*|A<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs>包含<xref:Microsoft.Office.Core.IRibbonControl>。 使用此控件访问在提供的功能区对象模型中不可用的任何属性[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能区概述](../vsto/ribbon-overview.md)   
  [如何： 开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)   

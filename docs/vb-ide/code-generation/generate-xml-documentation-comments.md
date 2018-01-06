@@ -11,11 +11,12 @@ ms.assetid: d2025bd2-5984-4486-a61c-0a0933a735ea
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1291667c7acb47abe543d275549179abea0c8467
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f975fa077fe64052b54875b07d029ece71e83372
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-xml-documentation-comments-in-visual-basic"></a>在 Visual Basic 中生成 XML 文档注释
 **新增功能：**便会立即生成 XML 文档所选的元素所需的基。 
@@ -38,6 +39,6 @@ ms.lasthandoff: 10/31/2017
 
    ![已完成的注释](media/doc_result.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [使用 XML (Visual Basic 中) 将代码文档化](/dotnet/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml)  
 [代码生成 (Visual Basic)](../code-generation-vb.md) 

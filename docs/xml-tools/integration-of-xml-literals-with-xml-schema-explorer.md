@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05b652a1ff590d30593d015af8a33d062c85c42b
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: dad11fa10e7c61845ac0d4ea5663e6f2c7bc88ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML 文本与 XML 架构资源管理器的集成
 Visual Basic 支持 XML 文本，这意味着，你可以将 XML 片段合并直接到 Visual Basic 代码。 有关详细信息，请参阅[XML 文本概述](http://go.microsoft.com/fwlink/?LinkId=140325)。  

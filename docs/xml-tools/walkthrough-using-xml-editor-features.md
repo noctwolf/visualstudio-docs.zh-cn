@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf90df0e5311cb1487334ba3851c5083030e2191
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: d87870ef00ceb0a3c66b91975b11038c00bd1dc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>演练：使用 XML 编辑器功能
 此演练中的步骤说明如何新建 XML 文档。 该演练还使用“XML 编辑器”的一些功能，这些功能使其非常适合 XML 编写。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/02/2017
   
 5.  选择 hireDate.xsd 文件，然后单击**打开**。  
   
-6.  单击“确定”。  
+6.  单击 **“确定”**。  
   
      现在，XML 架构已与 XML 文档关联。 XML 架构用于验证文档。 智能感知还使用该架构来填充有效元素的成员列表。  
   
@@ -129,5 +130,5 @@ ms.lasthandoff: 11/02/2017
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 编辑器](../xml-tools/xml-editor.md)

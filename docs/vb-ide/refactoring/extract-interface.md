@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.extractinterface
 dev_langs: VB
-ms.openlocfilehash: 9616cae1282b992722f75eee091e2c9d271e85f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 08bbae629dbd0e1098eca67107926d290ffe7fb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-an-interface-in-visual-basic"></a>提取在 Visual Basic 中的接口
 **新增功能：**允许你创建使用从类、 结构或接口的现有成员的接口。
@@ -48,12 +49,12 @@ ms.lasthandoff: 10/31/2017
    | **新的文件名称** | 将包含的接口将生成的文件的名称。 为具有接口名称，这将默认为我*ClassName*，其中*ClassName*是上面所选的类的名称。 |
    | **选择构成接口的公共成员** | 要提取到接口的项。  你可以选择你希望的任意数量。 |
 
-1. 单击“确定”。
+1. 单击 **“确定”**。
 
    将指定的名称的文件中立即创建接口。  此外，所选的类现在将实现该接口。
 
    ![生成的类](media/extractinterface_class.png)
    ![生成接口](media/extractinterface_interface.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [重构 (Visual Basic)](../refactoring-vb.md)

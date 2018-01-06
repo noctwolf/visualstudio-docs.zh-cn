@@ -10,11 +10,12 @@ ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 caps.latest.revision: "4"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: e442c47611edbc207b3a9ba7c8f10363cd020d10
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 79dfcd15a49b40f1473966e815ddb904c1d7f8f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>工作流设计器中不受支持的调试方案
 [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] 中的工作流设计器添加了许多新功能，但仍存在一些它不支持的调试方案。 本文档详细介绍了不受支持的工作流设计器调试方案。  

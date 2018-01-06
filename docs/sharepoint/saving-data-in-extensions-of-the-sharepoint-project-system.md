@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3605558fd1fd9263c5dad7ec7bc295b7f095a185
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 07865f3a52d4cca71cf76a3d95ac041a5c389494
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-data-in-extensions-of-the-sharepoint-project-system"></a>在 SharePoint 项目系统的扩展中保存数据
   扩展 SharePoint 项目系统时，你可以保存仍然存在后关闭 SharePoint 项目的字符串数据。 数据是与特定项目项或与项目本身通常相关联。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
  [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
  [将自定义数据与 SharePoint 工具扩展相关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
  [在 SharePoint 项目系统类型和其他 Visual Studio 项目类型之间进行转换](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)  

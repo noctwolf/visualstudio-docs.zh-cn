@@ -23,11 +23,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb94603d3041a30e978fff0ac6fff399648fc027
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70748440dc325266439ee71569e858eb3d815fc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="binding-data-to-controls-in-office-solutions"></a>将数据绑定到 Office 解决方案中的控件
   可以将 Microsoft Office Word 文档或 Microsoft Office Excel 工作表中的 Windows 窗体控件和 *宿主控件* 绑定到某个数据源，以便这些控件自动显示数据。 可以将数据绑定到应用程序级项目和文档级项目中的控件。  
@@ -103,7 +104,7 @@ ms.lasthandoff: 10/31/2017
   
  有关详细信息，请参阅 [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何实现：在 Excel 中使用数据库数据？](http://go.microsoft.com/fwlink/?LinkID=130287)   
  [数据绑定和 Windows 窗体](/dotnet/framework/winforms/data-binding-and-windows-forms)   
  [如何：在 Windows 窗体上创建简单绑定控件](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)   

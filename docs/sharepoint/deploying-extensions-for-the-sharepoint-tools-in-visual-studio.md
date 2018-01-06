@@ -16,11 +16,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0145982781ca3e21229a7af46090ed2addcaccde
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 18f1b473de12b53f3e1a7829d1f1c3b49862aef2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>在 Visual Studio 中部署 SharePoint 工具扩展
   若要部署 SharePoint 工具扩展，创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含扩展程序集，以及你想要随此扩展分发的任何其他文件的扩展 (VSIX) 包。 VSIX 包是一个压缩的文件，遵循开放式打包约定 (OPC) 标准。 VSIX 包具有.vsix 扩展名。  
@@ -261,7 +262,7 @@ ms.lasthandoff: 10/31/2017
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   

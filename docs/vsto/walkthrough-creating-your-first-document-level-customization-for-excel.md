@@ -19,11 +19,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 046f5376891c62278b3756078f82b9e5db3b28d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 93b9fdad9fc0224c34835457f76140a0df5612b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>演练：创建您的第一个 Excel 文档级自定义项
   本介绍性演练演示如何创建 Microsoft Office Excel 的文档级自定义项。 仅在特定工作簿处于打开状态时，才可使用你在这种解决方案中创建的功能。 不能使用文档级自定义项进行应用程序范围的更改，例如在任何工作簿处于打开状态时显示新的功能区选项卡。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  在**名称**框中，键入**FirstWorkbookCustomization**。  
   
-7.  单击“确定”。  
+7.  单击 **“确定”**。  
   
      将打开“Visual Studio Tools for Office 项目向导”  。  
   
@@ -170,7 +171,7 @@ ms.lasthandoff: 10/31/2017
   
 -   部署 Excel 文档级自定义项：[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Excel 解决方案](../vsto/excel-solutions.md)   
  [文档级自定义项编程](../vsto/programming-document-level-customizations.md)   

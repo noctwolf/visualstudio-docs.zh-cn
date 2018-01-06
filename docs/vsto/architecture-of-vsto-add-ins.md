@@ -21,11 +21,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9813add14da26049e5e32b9e060a146db4ce9afb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a4dbe8611da0814bfaa148b2d9c4caf7f7858d9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO 外接程序的体系结构
   使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序具有强调稳定性和安全性的体系结构功能，并使其能够与 Microsoft Office 紧密合作。 本主题介绍 VSTO 外接程序的以下方面：  
@@ -101,14 +102,14 @@ ms.lasthandoff: 10/31/2017
   
 10. 如果你已重写 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 方法，则 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 将在 VSTO 外接程序中调用该方法。  
   
-     可以选择替代此方法，以便通过返回实现扩展性接口的对象来扩展 Microsoft Office 功能。 有关更多信息，请参见 [Customizing UI Features By Using Extensibility Interfaces](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)。  
+     可以选择替代此方法，以便通过返回实现扩展性接口的对象来扩展 Microsoft Office 功能。 有关详细信息，请参阅 [Customizing UI Features By Using Extensibility Interfaces](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)。  
   
     > [!NOTE]  
     >  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 为主机应用程序支持的每个扩展性接口分别调用 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法。 尽管对 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法的第一次调用通常发生在调用 `ThisAddIn_Startup` 方法之前，但 VSTO 外接程序不应作出有关 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法的调用时间和次数的任何假设。  
   
 11. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 在 VSTO 外接程序中调用 `ThisAddIn_Startup` 方法。 此方法是 <xref:Microsoft.Office.Tools.AddInBase.Startup> 事件的默认事件处理程序。 有关详细信息，请参阅 [Events in Office Projects](../vsto/events-in-office-projects.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)   
  [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

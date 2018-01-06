@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6cdc8fb745fb78ff2b5d3ce9a478005eee2737c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 00f8c4c7acec790d9982c786abe8f51be383770c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-workflow-project"></a>创建工作流项目
 工作流、[!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 工作流服务、自定义活动和自定义活动设计器都可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目模板来创建。 本节介绍如何通过 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中提供的项目模板来创建库和应用程序。  
@@ -47,5 +48,5 @@ ms.lasthandoff: 10/27/2017
 ## <a name="related-sections"></a>相关章节  
  [设计工作流](/dotnet/framework/windows-workflow-foundation/designing-workflows)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用工作流设计器](../workflow-designer/using-the-workflow-designer.md)

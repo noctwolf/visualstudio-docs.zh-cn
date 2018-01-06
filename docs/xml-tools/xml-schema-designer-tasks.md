@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14a6cf63bbe227a2ab0a4bd2790d863ee6295145
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8847f079646f2c90d50c7a7f3c8ecbd5c510150
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-designer-tasks"></a>XML 架构设计器任务
 本节介绍如何使用 XML 架构设计器工具完成常见任务。  
@@ -55,5 +56,5 @@ ms.lasthandoff: 10/31/2017
  [示例 XSD 文件](../xml-tools/sample-xsd-files.md)  
  为任务示例中使用的示例 XSD 文档提供代码清单。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 架构设计器](../xml-tools/xml-schema-designer.md)

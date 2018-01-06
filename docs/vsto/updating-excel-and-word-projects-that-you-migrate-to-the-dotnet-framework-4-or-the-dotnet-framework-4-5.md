@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d3783eb2bd87decc0e01bb589b08f3d0c05803e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ab2fb40485e92ff097e0c39102024528125dfc72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updating-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您迁移到 .NET Framework 4 或 .NET Framework 4.5 的 Excel 和 Word 项目
   如果你的一个 Excel 或 Word 项目使用以下任何功能，且如果目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须修改你的代码：  
@@ -123,7 +124,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
         Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument);  
     ```  
   
- 有关详细信息，请参阅 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 有关更多信息，请参见 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ##  <a name="generatedclasses"></a> 更新代码，该代码使用在文档级项目中生成的类的实例  
  在面向 .NET Framework 3.5 的文档级项目中，项目中生成的类派生自 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的以下类：  
@@ -136,7 +137,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
   
 -   `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，上面所列的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 中的类型是接口，而不是类。 面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中生成的类派生自 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的以下新类：  
+ 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，上面所列的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 中的类型是接口，而不是类。 面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中生成的类派生自 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 中的以下新类：  
   
 -   `ThisDocument`: <xref:Microsoft.Office.Tools.Word.DocumentBase>  
   
@@ -232,7 +233,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
   
  在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，这些集合类型现在是非派生自 <xref:System.Collections.CollectionBase>的接口。 一些成员在这些集合类型上不再可用，如 <xref:System.Collections.CollectionBase.Capacity%2A>、 <xref:System.Collections.CollectionBase.List%2A>和 <xref:System.Collections.CollectionBase.InnerList%2A>。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [内容控件](../vsto/content-controls.md)   
  [在运行时扩展 Word 文档和 Excel 工作簿在 VSTO 外接程序](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   

@@ -23,11 +23,12 @@ caps.latest.revision: "91"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09a356408815ed6fea416d27e59a58a4edc6a6a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e84bd10c2a7e3ce4c760e0f9231390d4fd037616
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 解决方案
 了解如何使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]为你的 Office 解决方案创建 Windows Installer。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
 通过使用 Visual Studio 创建 Windows Installer，你可以部署 Office 解决方案，该方案需要最终用户计算机上的管理员访问权限。 例如，只需使用此种文件安装一次解决方案，就可让计算机上的所有用户进行使用。 你也可以使用 ClickOnce 来部署 Office 解决方案，但必须针对计算机上的每个用户分别安装一次该解决方案。  
   
   
-## <a name="in-this-topic"></a>主题内容  
+## <a name="in-this-topic"></a>在本主题中  
   
 - [下载 VSTO 外接程序示例](#Download)  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
   
   
-|示例<br /><br />|说明<br /><br />|  
+|示例<br /><br />|描述<br /><br />|  
 |----------|---------------|  
 |[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|可在运行 32 位或 64 位版本 Office 的计算机上安装的 Excel VSTO 外接程序。<br /><br />|  
 |[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|可以在运行 32 位或 64 位版本 Office 的计算机上安装的 Excel 文档级自定义项。<br /><br />|  
@@ -535,7 +536,7 @@ ms.lasthandoff: 10/31/2017
    在生成完成后，你可以找到的 setup.exe 文件**officeaddinsetup**项目上的以下位置： *OfficeAddInSetupProjectRoot***\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [用于部署的 Office 解决方案必备组件](http://msdn.microsoft.com/en-us/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)  
 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)  

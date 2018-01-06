@@ -22,11 +22,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b09e0a43f4a9dbb77a983a1f7e87f0b2886b1697
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 77c4b8e13071486bf483fc5b281bf86ae13aa965
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visio-solutions"></a>Visio 解决方案
   Visual Studio 提供可用于创建 Microsoft Office Visio 的 VSTO 外接程序的项目模板。 VSTO 外接程序可用于自动运行 Visio、扩展 Visio 功能或自定义 Visio 用户界面 (UI)。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
  可以在 [Working with Visio Documents](../vsto/working-with-visio-documents.md) 和 [Working with Visio Shapes](../vsto/working-with-visio-shapes.md)中，查看使用 Visio 对象模型处理文档和形状的分步过程和代码示例。  
   
- 若要从 VSTO 外接程序访问 Visio 对象模型，请使用项目中 `Application` 类的 `ThisAddIn` 字段。 `Application`字段会返回一个表示 Visio 的当前实例的 Microsoft.Office.Interop.Visio.Application 对象。 有关更多信息，请参见 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
+ 若要从 VSTO 外接程序访问 Visio 对象模型，请使用项目中 `Application` 类的 `ThisAddIn` 字段。 `Application`字段会返回一个表示 Visio 的当前实例的 Microsoft.Office.Interop.Visio.Application 对象。 有关详细信息，请参阅 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
   
  调入 Visio 对象模型时，将使用 Visio 的主互操作程序集 (PIA) 中提供的类型。 该 PIA 用作 VSTO 外接程序中的托管代码和 Visio 中的 COM 对象模型之间的桥梁。 Visio PIA 中的所有类型 Microsoft.Office.Interop.Visio 命名空间中都定义。 有关主互操作程序集的详细信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)和[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
  有关自定义 Visio UI 的信息，请参阅 [Visio.UIObject](https://msdn.microsoft.com/library/office/ff765763.aspx) 类的 VBA 参考文档。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   

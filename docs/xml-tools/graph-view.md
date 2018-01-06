@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 606924d197dc88b5dd5e400e1df8523e83e58259
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 5ee2965fab52915ec3f9651edd3dc51b2ed1c491
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graph-view"></a>图形视图
 图形视图提供全局架构节点的图形表示形式以及节点间的关系。 请注意，图形视图不允许更改设计图面上架构集的布局。 图形视图还包括 XML 架构设计器工具栏和痕迹栏。  
@@ -137,5 +138,5 @@ ms.lasthandoff: 11/02/2017
   
  如果在 XML 编辑器中对架构集进行更改，则相应的更改会在图形视图中同步。 有关详细信息，请参阅[集成使用 XML 编辑器](../xml-tools/integration-with-xml-editor.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [设计图面](../xml-tools/xml-schema-designer-workspace.md)

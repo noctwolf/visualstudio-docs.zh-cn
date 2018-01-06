@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a4dcc10419d5c1dbc0552aba62057cba2e82647f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f9af95a8aeb509554cb613edb848c2987543f1e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="throw-activity-designer"></a>Throw 活动设计器
 **引发**活动设计器用于创建和配置<xref:System.Activities.Statements.Throw>活动。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.Throw> 活动的可选友好名称。 默认值为 Throw。|  
 |<xref:System.Activities.Statements.Throw.Exception%2A>|True|要引发的异常。 此异常必须派生自 <xref:System.Exception>。 若要指定此异常，请在属性网格中键入 Visual Basic 表达式。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [集合](../workflow-designer/collection-activity-designers.md)   
  [重新引发](../workflow-designer/rethrow-activity-designer.md)   
  [Throw 活动设计器](../workflow-designer/throw-activity-designer.md)   

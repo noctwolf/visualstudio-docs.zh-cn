@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 77f7b4e0131eb5afc4585a68097c8d419145096b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 20dce7d4b3dc306c7bcd4f83a1f4e8fea10c6a94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope 活动设计器
 **TransactedReceiveScope**设计器用于创建和配置<xref:System.ServiceModel.Activities.TransactedReceiveScope>活动。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|删除<xref:System.ServiceModel.Activities.Receive>活动放置**请求**活动设计器图面上的块。|  
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|删除<xref:System.Activities.Activity>到**正文**活动设计器图面上的块。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)   
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
  [接收](../workflow-designer/receive-activity-designer.md)   

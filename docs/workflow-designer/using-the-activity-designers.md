@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 91ce5811be2aae3744afb7444ab35a9a3da54a20
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5e82bde3e7d30fd0516deb4f79ff89bb77d19709
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-activity-designers"></a>使用活动设计器
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 包含系统提供的若干活动，构造活动和工作流时可以使用它们。 本节介绍系统提供的可用活动及其设计器的类别。 有关每个类别内各活动及其相应设计器的主题将介绍这些活动的用途并提供使用指南。  

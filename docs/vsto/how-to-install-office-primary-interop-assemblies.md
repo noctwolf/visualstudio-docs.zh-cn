@@ -18,11 +18,12 @@ caps.latest.revision: "61"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14ce408395cc992e83cb26aecbc2e4ab428428ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3368e3176badf8aa1bf1eebe6453674380de46f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>如何：安装 Office 主互操作程序集
   当你安装 Office 时，安装 Microsoft Office 主互操作程序集 (PIA)。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
     > [!WARNING]  
     >  默认情况下，当你生成因此你不必将 Pia 分发给用户，作为使用 VSTO 外接程序或自定义项的先决条件 PIA 的解决方案中嵌入。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)   
  [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [如何： 配置计算机以开发 Office 解决方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   

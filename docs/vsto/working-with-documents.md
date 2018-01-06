@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2236ecbc6bb30ff3cfba9bebd5d5e5509f54721a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c18ae3fb8c3366c1c8e552f4b5f24a34004ce9d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-documents"></a>处理文档
   本部分中的主题提供了如何使用 Microsoft Office Word 对象模型来处理 Office 项目中的文档的分步过程和代码示例。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 |向文档添加页眉或页脚。|[如何：以编程方式向文档中添加页眉和页脚](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|  
 |删除文档中的所有注释。|[如何：以编程方式删除文档中的所有注释](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Word 对象模型概述](../vsto/word-object-model-overview.md)   
  [Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
   

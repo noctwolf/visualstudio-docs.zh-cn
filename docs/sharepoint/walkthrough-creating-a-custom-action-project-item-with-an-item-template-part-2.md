@@ -16,11 +16,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b12a52101feebcfac08c7672834d9d7c65d41c55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 96f6e6f27938635628db66f2a6eb58a56cee0d18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>演练：使用项模板创建自定义操作项目项（第 2 部分）
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项模板关联后，你可能还想要模板提供的向导。 可以使用向导收集从用户的信息，当用户使用你的模板添加到项目的项目项的新实例。 你收集的信息可以用于初始化项目项。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  你可以下载包含已完成的项目、 代码和从以下位置在本演练中的其他文件的示例：[有关 SharePoint 工具扩展演练项目文件](http://go.microsoft.com/fwlink/?LinkId=191369)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  若要执行本演练，你必须首先创建 CustomActionProjectItem 解决方案通过完成[演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。  
   
  你还需要以下组件来完成本演练的开发计算机上：  
@@ -345,7 +346,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  关闭 Visual Studio （实验实例和 CustomActionProjectItem 解决方案处于打开状态的 Visual Studio 的实例） 的两个实例。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 使用项模板创建的自定义操作项目项，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   

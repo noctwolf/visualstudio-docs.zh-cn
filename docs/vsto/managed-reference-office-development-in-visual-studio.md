@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e7bb95ba186c55820ce0c8fd965196ede957b1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 04d89dee1c078ae0b27b96f2e72b25f30dc52845
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>托管参考（Visual Studio 中的 Office 开发）
   本部分包含在针对 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的 Office 项目中使用的命名空间和类型的 API 参考文档。 对于在 Office 项目中使用的针对 .NET Framework 3.5 的有关命名空间和类型的 API 参考文档，请参阅下列 Visual Studio 文档中的参考资料部分： [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658)。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
  <xref:Microsoft.VisualStudio.Tools.Office.BuildTasks>  
  包含用于生成 Office 项目的 MSBuild 任务类。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [入门 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   

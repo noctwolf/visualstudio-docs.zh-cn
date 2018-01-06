@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a100a573f26a774c58083cb82b07c50792908f45
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 946bb38d5cb79506e54206060686eac5dfc7b566
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>如何：以编程方式保存 Visio 文档
   可通过几种方法来保存 Microsoft Office Visio 文档：  
@@ -78,7 +79,7 @@ ms.lasthandoff: 10/31/2017
   
 -   要保存具有新名称的文档，必须有一个名为 `Test` 的目录位于 My Documents 文件夹（对于 Windows XP 及更低版本）或 Documents 文件夹（对于 Windows Vista）中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visio 解决方案](../vsto/visio-solutions.md)   
  [Visio 对象模型概述](../vsto/visio-object-model-overview.md)   
  [如何： 以编程方式创建新的 Visio 文档](../vsto/how-to-programmatically-create-new-visio-documents.md)   

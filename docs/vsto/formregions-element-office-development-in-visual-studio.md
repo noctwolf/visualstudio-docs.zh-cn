@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87909c1586f631ba598258faaf0c7cd02967519c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f8ec444f9dade9fc0053680ed242e94cc5543bdf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt;元素 （Visual Studio 中的 Office 开发）
   `formRegions` 命名空间的 `vstov4` 元素包含与 VSTO 外接程序相关联的 Microsoft Office Outlook 窗体区域。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="vsto-add-in-example"></a>VSTO 外接程序示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>描述  
  下面的代码示例演示应用程序级 Office 解决方案的应用程序清单中的 `formRegions` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例摘自 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大的示例。  
   
 ### <a name="code"></a>代码  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
 </vstov4:formRegions>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  

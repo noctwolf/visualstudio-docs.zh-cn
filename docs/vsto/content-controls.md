@@ -43,11 +43,12 @@ caps.latest.revision: "65"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b2950370b35eb8e2f60f15c5de032284c5546f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d50e7c6177152b2cef3709c983334d05b48a812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-controls"></a>内容控件
   借助内容控件，可设计出具有以下功能的文档和模板：  
@@ -208,7 +209,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-binding-events-for-content-controls"></a>内容控件的数据绑定事件  
  所有内容控件都提供一组可以处理的事件，以执行数据相关的任务，例如在更新数据源之前验证控件中的文本是否符合某些标准。 下表列出了与数据绑定有关的内容控件事件。  
   
-|任务|Event|  
+|任务|事件|  
 |----------|-----------|  
 |在 Word 正要自动更新已绑定到自定义 XML 部件的内容控件中的文本之前，运行代码。|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
 |在 Word 正要自动更新已绑定到内容控件的自定义 XML 部件中的数据之前（即在内容控件中的文本更改之后），运行代码。|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  
@@ -238,7 +239,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)   
  [如何： 向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [演练： 使用内容控件创建模板](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   

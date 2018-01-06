@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ce726d9d86bd57e5cf245010212545f0055c8ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 508557ab96747327e090bfa12b118a1a39ad9bbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>项目设计器 ->“发布页”（Visual Studio 中的 Office 开发）
   “项目设计器”  的“发布”  页面用于针对部署配置属性。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="uielement-list"></a>UIElement 列表  
  **发布文件夹位置(网站、FTP 服务器或者文件路径)**  
- 必需。  
+ 必须的。  
   
  发布文件夹位置是 Visual Studio 将解决方案文件（例如清单、程序集和生成中的其他文件）复制到的目录。 你必须对此目录具有写权限。  
   
@@ -111,7 +112,7 @@ ms.lasthandoff: 10/31/2017
  **立即发布**  
  使用当前设置发布应用程序。 等效于“发布向导”  中的“完成” 按钮。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [通过使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [用于部署的 office 解决方案必备组件](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e)  

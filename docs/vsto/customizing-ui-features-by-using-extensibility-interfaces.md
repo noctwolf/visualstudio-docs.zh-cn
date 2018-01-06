@@ -25,11 +25,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d773ac7a4c3fa8541af30143a3d3031377b5b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7b0808c62b5538e7b4ae50b7992c9b65750169f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-ui-features-by-using-extensibility-interfaces"></a>使用扩展性接口自定义 UI 功能
   Visual Studio 中的 Office 开发工具提供了一些类和设计器，使用它们在 VSTO 外接程序中创建自定义任务窗格、功能区自定义项和 Outlook 窗体区域时可处理许多实现细节。 不过，如果你有特殊要求，也可以自己为每项功能实现 *扩展性接口* 。  
@@ -48,8 +49,8 @@ ms.lasthandoff: 10/31/2017
   
 |接口|描述|应用程序|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|实现此接口可自定义功能区 UI。 **注意：**可以添加**功能区 (XML)**项目到项目，以便生成默认<xref:Microsoft.Office.Core.IRibbonExtensibility>中 VSTO 外接程序中的实现。 有关更多信息，请参见 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 项目<br /><br /> Visio<br /><br /> Word|  
-|<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|实现此接口可创建自定义任务窗格。|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|实现此接口可自定义功能区 UI。 **注意：**可以添加**功能区 (XML)**项目到项目，以便生成默认<xref:Microsoft.Office.Core.IRibbonExtensibility>中 VSTO 外接程序中的实现。 有关更多信息，请参见 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 项目<br /><br /> Visio<br /><br /> 字|  
+|<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|实现此接口可创建自定义任务窗格。|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 字|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|实现此接口可创建 Outlook 窗体区域。|Outlook|  
   
  Microsoft Office 还定义了其他一些扩展性接口，例如 <xref:Microsoft.Office.Core.IBlogExtensibility>、 <xref:Microsoft.Office.Core.EncryptionProvider>和 <xref:Microsoft.Office.Core.SignatureProvider>。 Visual Studio 不支持在使用 Office 项目模板创建的 VSTO 外接程序中实现这些接口。  
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)]
  [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   

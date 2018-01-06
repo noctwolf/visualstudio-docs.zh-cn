@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eb1dd096b08525cd03f65ed46def81979bfaf272
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ecc4913d9d508d95347945b8f4aaa816bc3d510c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：在受密码保护的文档中缓存数据
   如果数据添加到的数据缓存中的文档或使用密码保护的工作簿时，将不会自动保存对缓存数据的更改。 通过重写你的项目中的两种方法，可以将更改保存到缓存的数据。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="compiling-the-code"></a>编译代码  
  添加此代码与`ThisWorkbook`项目中的类。 此代码假定该密码存储在名为的字段中`securelyStoredPassword`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [缓存数据](../vsto/caching-data.md)   
  [如何： 使用缓存数据，脱机或服务器上](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [如何：以编程方式在 Office 文档中缓存数据源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  

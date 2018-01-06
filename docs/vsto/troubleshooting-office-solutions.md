@@ -19,11 +19,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4e93509595dc9bd576bc1f3f427ef222df11abd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1e335f4c8215499eedd93590455911c3ec234051
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-office-solutions"></a>Office 解决方案的疑难解答
   本部分包含用于解决常见问题的提示，你在通过使用 Visual Studio 中的 Office 开发工具创建解决方案时可能会遇到这些问题。  

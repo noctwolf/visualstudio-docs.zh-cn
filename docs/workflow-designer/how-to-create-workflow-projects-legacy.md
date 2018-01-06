@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 93f5a4d237addf835a1eb4caa9979259242fab02
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1f3dd415646f9205794ed51572ed9dbcfc5b45b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>如何：创建工作流项目（旧版）
 按照这些步骤可创建面向 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 的 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 项目。 此过程使用由 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 提供的旧 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/27/2017
   
      如果要为项目创建解决方案目录，请选择**创建解决方案的目录**复选框，输入中的名称**解决方案名称**框。  
   
-8.  单击“确定”。  
+8.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建旧版工作流项目](../workflow-designer/creating-legacy-workflow-projects.md)

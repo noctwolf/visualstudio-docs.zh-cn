@@ -23,11 +23,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eeb0a002e2d62b9066165a99ce474cf7a01a88f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1f74bdf7b740fbf8d30df78f1433196d21c0ebbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>发布向导（Visual Studio 中的 Office 开发）
   使用**发布向导**若要将解决方案文件复制到指定位置中，创建清单的文件，并创建的安装程序。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="where-do-you-want-to-publish-the-application"></a>要其中发布应用程序？  
  **指定要发布此应用程序的位置**  
- 必需。 发布位置为目录其中**发布向导**将从生成复制解决方案文件，例如，清单、 程序集、 临时证书和其他文件。 你必须对此目录具有写权限。  
+ 必须的。 发布位置为目录其中**发布向导**将从生成复制解决方案文件，例如，清单、 程序集、 临时证书和其他文件。 你必须对此目录具有写权限。  
   
  键入作为磁盘路径、 文件共享、 FTP 站点或网站 URL 的位置或单击**浏览**按钮以浏览到该位置。 路径可以是以下格式：  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
  CD 或 DVD，不将刻录 visual Studio。 你必须手动将输出复制到 CD 或 DVD。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [通过使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [在 Visual Studio &#41; 中发布页，项目设计器 &#40; 的 Office 开发](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)  

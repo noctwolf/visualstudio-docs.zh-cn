@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 50f57684db32f601bd4cbf870456da458aa5ce7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0a6658bdf0f1df76e585236497ba4ba19525b199
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="activity-views-legacy"></a>活动视图（旧版）
 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 提供的许多活动（可通过这些活动构成工作流）都具有旧 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 中可用的多个设计视图。 当将某个活动设计器从**工具箱**拖到设计图面中，并且之后每当选择该活动时，你可以通过使用不同的设计视图之间进行切换**工作流**菜单或通过右键单击选定的活动。 同时，当您将指针移到选定活动的名称上时，将出现一组以下拉方式显示的选项卡，可以用来在不同的视图之间切换。  
@@ -38,6 +39,6 @@ ms.lasthandoff: 10/27/2017
   
  有关类似视图的信息，请参阅[顺序工作流视图 （旧版）](../workflow-designer/sequential-workflow-views-legacy.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [旧工作流活动](../workflow-designer/legacy-workflow-activities.md)   
  [顺序工作流视图（旧版）](../workflow-designer/sequential-workflow-views-legacy.md)

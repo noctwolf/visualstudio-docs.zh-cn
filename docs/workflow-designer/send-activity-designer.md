@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: abe4a4f418e2204355d55c16194ea31b939383aa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6b3e4d7b00691d7ea2c86a81d0d2880b9f7366bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="send-activity-designer"></a>Send 活动设计器
 **发送**活动设计器用于创建和配置<xref:System.ServiceModel.Activities.Send>活动。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.ServiceModel.Activities.Send.EndpointAddress%2A>||要将消息发送到的 <xref:System.ServiceModel.EndpointAddress>。|  
 |<xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A>||终结点配置的名称。 在配置文件中配置终结点时设置此属性。 此属性应设置为中给定的名称**\<终结点 >**配置文件中的元素。 如果设置此属性，<xref:System.ServiceModel.Activities.Send.Endpoint%2A>属性应为**null**。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
  [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)   
  [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   

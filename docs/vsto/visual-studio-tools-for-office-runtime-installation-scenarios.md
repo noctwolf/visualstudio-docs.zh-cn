@@ -16,11 +16,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e09d83fefee766ce19c71812bccfa751cc90e27e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 057b9430f6cbac64479e6623e74497427f7824ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office Runtime Installation Scenarios
   可用三种方式安装 Visual Studio 2010 Tools for Office Runtime：  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 |运行时安装方案|Office 解决方案加载程序|.NET Framework 3.5 的 Office 扩展|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 的 Office 扩展|[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的 Office 扩展|  
 |-----------------------------------|----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------|  
 |通过 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 及更高版本|是|是的，如果已安装 .NET Framework 3.5。|是|是|  
-|通过 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|是|是的，如果已安装 .NET Framework 3.5。|No|否|  
+|通过 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|是|是的，如果已安装 .NET Framework 3.5。|否|否|  
 |通过 Office 2010 Service Pack 1 (SP1) 或更高版本|是|是的，如果已安装 .NET Framework 3.5。|是的，如果已安装 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。|否|  
 |通过运行时可再发行组件|是|是的，如果已安装 .NET Framework 3.5|是的，如果已安装 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。|是的，如果已安装 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]。|  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
  关于在 ClickOnce 解决方案中包含系统必备组件的详细信息，请参阅[如何： 在最终用户计算机上以运行 Office 解决方案的安装的先决条件](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。 有关如何手动安装可再发行组件包中的运行时的详细信息，请参阅[如何： 安装 Visual Studio Tools for Office 运行时可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Visual Studio Tools for Office 运行时中的程序集](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)  
   

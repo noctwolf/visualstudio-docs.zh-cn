@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: da5d71a36b39f47dc0a068e9aa25950687143f29
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a90e858a8eed0c6d1c92423b1f074bf51c01eb63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="runtime-activity-designers"></a>运行时活动设计器
 各运行时活动设计器用于持久保存和终止工作流活动。 本节中包含的主题介绍如何使用 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 活动设计器。  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/27/2017
   
  [错误处理](../workflow-designer/error-handling-activity-designers.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用活动设计器](../workflow-designer/using-the-activity-designers.md)

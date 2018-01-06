@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 78ccd24a262863a4d6f844d624ef9996d09d568f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6e3dcc6d0ed711d41fd47f043177e5d172193249
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>如何：在工作表中滚动查看数据库记录
   以下过程演示如何使用设计器显示单个字段从数据库表中的 Microsoft Office Excel 工作表，使最终用户能够滚动所有记录的控件。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  从**Windows 窗体**选项卡**工具箱**，添加<xref:System.Windows.Forms.BindingNavigator>控制转移到你的工作表，并设置你想要使用的控件。 有关详细信息，请参阅[BindingNavigator 控件概述 &#40;Windows 窗体 &#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

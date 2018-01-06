@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6acbd33d04c939b95d16da4e0c8085681b602378
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: afaa64da38508ffcf55d86c3a6fe16bd0e884f7a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-themes-in-workflows-legacy"></a>在工作流中使用主题（旧版）
 本主题介绍在使用面向 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 或 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 的旧 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，如何使用 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 中的主题。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/27/2017
   
  你可以选择默认值，并通过使用来保存自定义主题[主题、 工作流设计器选项对话框 （旧版）](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)。 若要打开此对话框中，单击**选择自定义主题**上**工作流**菜单 (或右键单击工作流设计图面，然后单击**选择自定义主题**)，然后选择**工作流设计器**选项。 选择你想，单击该主题**确定**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [主题配置对话框 （旧版）](../workflow-designer/theme-configuration-dialog-box-legacy.md)   
  [主题、 工作流设计器选项对话框 （旧版）](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)   
  [使用旧版工作流设计器](../workflow-designer/using-the-legacy-workflow-designer.md)

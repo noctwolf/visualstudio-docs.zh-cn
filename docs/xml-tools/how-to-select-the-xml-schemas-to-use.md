@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50077e430d6d9f273dd4cd3e247de3df043804c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 80d0438e7c7dfb7fd346dc5faae6f364279658ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>如何：选择要使用的 XML 架构
 “XML 编辑器”提供的架构缓存位于 %InstallDir%\Xml\Schemas 目录。 架构缓存中包括用于智能感知和 XML 文档验证的常见 XML 架构。  
@@ -40,11 +41,11 @@ ms.lasthandoff: 10/31/2017
   
     -   选择一个列出中的架构**XML 架构**对话框中，单击**使用**列，，然后选择**使用此架构**。  
   
-     - 或 -  
+     或  
   
     -   选择多个架构中列出**XML 架构**对话框，右键单击并选择**使用此架构**。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
      所选架构的列表复制回**架构**文档属性。  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  如果您仍然必须对通过架构的引用`schemaLocation`属性，或者有匹配`targetNamespace`然后**删除**中由于自动关联这种情况下将不工作。 在这种情况下建议你将为此架构标记**不使用所选的架构**中**使用**列。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [架构缓存](../xml-tools/schema-cache.md)   
  [XML 架构对话框](../xml-tools/xml-schemas-dialog-box.md)   
  [XML 编辑器](../xml-tools/xml-editor.md)

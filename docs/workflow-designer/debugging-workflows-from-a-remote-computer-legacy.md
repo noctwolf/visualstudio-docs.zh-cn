@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: f6b1f88fcc796cbee0a48fd39da2ad9c4fe1489a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b4b9207702e6b4c3b93838eccfe1da15c42b5baa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>通过远程计算机调试工作流（旧版）
 本主题介绍如何调试使用旧 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 生成的旧远程 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 应用程序。 在应用程序需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -31,5 +32,5 @@ ms.lasthandoff: 10/27/2017
   
  [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 远程调试的作用方式与其他 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 组件的远程调试相同。 有关详细信息，请参阅[!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)]MSDN 库中的远程调试。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试旧版工作流](../workflow-designer/debugging-legacy-workflows.md)

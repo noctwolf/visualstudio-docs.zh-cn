@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 4b2ad28e6b89273b5fdb55e4cfa35d1df292221a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c6e9206eff3eaaeb3b5a79bb8457738c21af05c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope 活动设计器
 **CancellationScope**活动设计器用于创建和配置<xref:System.Activities.Statements.CancellationScope>活动。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|指定为其提供取消逻辑的活动。 若要添加<xref:System.Activities.Statements.CancellationScope.Body%2A>活动，将活动从**工具箱**到**正文**框**CancellationScope**带提示文本"放置活动设计器在此处活动"。|  
 |<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|指定在取消事件中执行的活动。 若要添加<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>活动，将活动从**工具箱**到**拖放**框**CancellationScope**附带提示的活动设计器文本"此处放置活动"。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [事务](../workflow-designer/transaction-activity-designers.md)   
  [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)   
  [补偿](../workflow-designer/compensate-activity-designer.md)   

@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: cd78b50c9b2f22459548a906a5c45945da84ebb5
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 5eea45aafebe8c20431de5b2d3bd299789bf7285
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>如何：将 XML 架构设计器用于 XML 文本
 本主题描述如何查看与 Visual Basic 项目中的 XML 文本关联的架构。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 11/02/2017
   
 1.  启动 Visual Studio。  
   
-2.  从**文件**菜单上，选择**新建**，然后选择**项目**。 此时将出现 “新建项目” 对话框。 有关**项目类型**，选择**其他语言，** ，然后选择**Visual Basic**。 有关**模板**，选择控制台应用程序。 然后键入`XMLLiterals`中**名称**字段和中的项目位置**位置**字段。 单击“确定”。  
+2.  从**文件**菜单上，选择**新建**，然后选择**项目**。 此时将出现 “新建项目” 对话框。 有关**项目类型**，选择**其他语言，** ，然后选择**Visual Basic**。 有关**模板**，选择控制台应用程序。 然后键入`XMLLiterals`中**名称**字段和中的项目位置**位置**字段。 单击 **“确定”**。  
   
      新项目创建完成。 XMLLiterals 项目包含一个 Visual Basic 源文件：Module1.vb。  
   

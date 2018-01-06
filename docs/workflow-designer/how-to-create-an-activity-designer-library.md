@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 84f483c4e280dbf5c1dc303805028456cd1ff59e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e488d7daceb5bbebae318e674fdffa9256c53eeb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>如何：创建活动设计器库
 使用自定义活动设计器可为标准或自定义活动创建一个用户界面。 您可控制该用户界面的复杂度并且可为一个活动创建多个活动设计器。 此方案使您能创建适合多种受众的设计器。  
@@ -46,5 +47,5 @@ ms.lasthandoff: 10/27/2017
     > [!WARNING]
     >  自定义活动设计器可以用于自定义活动以及默认[!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)]活动。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建工作流项目](../workflow-designer/creating-a-workflow-project.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2733464db0ab6047af7c47fb8278d7126b41fe6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 441ec5380e6b722b96fee731388b652a86a6828b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>“浏览并选择 .NET 类型”对话框（旧版）
 本主题介绍如何使用**浏览并选择.NET 类型**对话框中，在旧[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/27/2017
 |UI 元素|描述|  
 |----------------|-----------------|  
 |**类型名称：**|当前选定的类型的名称。|  
-|**类型**|左窗格显示引用程序集的树视图。 右窗格显示在左窗格中所选引用程序集的选择的可用类型。|  
+|**Type**|左窗格显示引用程序集的树视图。 右窗格显示在左窗格中所选引用程序集的选择的可用类型。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用旧版活动设计器](../workflow-designer/using-the-legacy-activity-designer.md)

@@ -27,11 +27,12 @@ caps.latest.revision: "102"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db8a4fad73bb710662ce63bd299751c725e0c6ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d29fd74ee92344ac8b2eedbe4a5b8838171d7d96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-controls-to-office-documents-at-run-time"></a>在运行时向 Office 文档添加控件
   可以在运行时向 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿中添加控件。 还可以在运行时删除这些控件。 在运行时添加或删除的控件称为 *动态控件*。  
@@ -142,7 +143,7 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [在 Office 文档中保留动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)   
  [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)   

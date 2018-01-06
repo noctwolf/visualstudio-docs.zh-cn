@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 94313e1e7cb8d6f36c5c8bfb505d280f4e235a3b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 18a7b1b02ce7aabd816675ff547eecc857fb64bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collaborative-development-of-office-solutions"></a>合作开发 Office 解决方案
   多个开发人员可以处理 Office 项目中与它们在其他 Visual Studio 项目协作的方式相同。 即使在不同位置中安装 Office，visual Studio 正确定位每台计算机上的 Microsoft Office 安装。 但是，有需要注意的一些重要注意事项。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
  在生成时自动生成的临时证书不受密码保护。 证书中包含开发人员的登录名和其他个人信息。 如果部署由临时证书签名的自定义项，其他人可以访问此信息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [生成 Office 解决方案](../vsto/building-office-solutions.md)  

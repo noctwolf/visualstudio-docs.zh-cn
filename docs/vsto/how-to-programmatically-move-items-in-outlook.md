@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fc7afe28e435e0dcdd58c7403f6282ebf3609a23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b77524d5f297ada0e4821e229d9bb981518f9730
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>如何：以编程方式在 Outlook 中移动项
   此示例将从的未读的电子邮件**收件箱**到名为的文件夹**测试**。 此示例仅移动消息包含有词语**测试**中`Subject`字段。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
 -   电子邮件到达以单词**测试**中`Subject`字段。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用文件夹](../vsto/working-with-folders.md)   
  [如何： 以编程方式检索按名称的文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
  [如何： 以编程方式在特定文件夹中搜索](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   

@@ -20,11 +20,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c09c99bc5d8bc964ae3afd82fe7a4a9fd5764edd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2dc089fb2c4ae2714a0b94d7756aaa432406ef74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>如何：将架构映射到 Visual Studio 内部的工作表
   在 Visual Studio 中打开工作表时，你可以将 XML 架构映射到工作表。 使用相同的 Microsoft Office Excel 工具，你使用 Visual Studio 外部打开工作簿时。 Office 项目创建相同的对象是否将架构映射到工作表之前或之后创建 Excel 解决方案。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  浏览到你的架构文件，选择它，，然后单击**打开**。  
   
-8.  单击“确定”。  
+8.  单击 **“确定”**。  
   
      架构便会出现在**XML 源**窗口。 在你的项目中，类型化<xref:System.Data.DataSet>根据架构，生成和<xref:System.Windows.Forms.BindingSource>创建。  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
   
      如果将重复架构元素拖动时，Office 项目生成<xref:Microsoft.Office.Tools.Excel.ListObject>不会自动绑定到数据源的控件。 有关详细信息，请参阅[XML 架构和文档级自定义项中的数据](../vsto/xml-schemas-and-data-in-document-level-customizations.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 将架构映射到 Visual Studio 内部的 Word 文档](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [文档级自定义项中的 XML 架构和数据](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   
