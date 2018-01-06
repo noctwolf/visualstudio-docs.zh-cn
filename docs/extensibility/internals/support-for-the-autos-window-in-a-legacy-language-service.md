@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c824845d4cbdb58241c088c1cb30259d3c298f72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: db6be625c671a508be3c2fd2f1697282af282bdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>支持旧语言服务中的自动窗口
 **自动**窗口显示如变量和参数，位于范围内时被调试的程序已暂停 （或者由于断点或异常） 的表达式。 表达式可以包含变量，本地或全局和局部范围中进行了更改的参数。 **自动**窗口还可以包括类、 结构或某些其他类型的实例化。 表达式计算器可以计算的任何内容可能显示在**自动**窗口。  

@@ -18,11 +18,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f5703b54a1deb96e9d6719c2726164e1002a18f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe976923c77902a4e3e42fc634a3227cadccdfc5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何：将托管代码扩展附加到文档
   可以将自定义程序集附加到一个现有的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿。 Microsoft Office 项目和 Visual Studio 中的开发工具都支持的任何文件格式可以是文档或工作簿。 有关详细信息，请参阅[体系结构的文档级自定义](../vsto/architecture-of-document-level-customizations.md)。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  生成项目并想要附加自定义项的计算机上运行应用程序。 计算机必须具有 Visual Studio 2010 Tools for Office Runtime 安装。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 ServerDocument 类管理服务器上的文档](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [如何： 从文档中删除托管的代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)  

@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a566d52dc1aabb9895e2f1f9751fdb37ae016d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb20adf3950e87c37e2ca64bcd78913839f89d01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何： 触发事件; 当编辑器失去焦点
 有时很必要知道当编辑器失去焦点的窗口帧上。 例如，你可能需要从代码窗口提取代码后在它不再聚焦于编辑器。 以下过程提供为接收通知的失去焦点的编辑器要遵循的步骤。  

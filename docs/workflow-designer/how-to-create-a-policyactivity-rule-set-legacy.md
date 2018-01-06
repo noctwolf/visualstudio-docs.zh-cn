@@ -17,11 +17,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 49c511c2d881a9996efe07dcc030e80e21a8cf88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1b57fe5f33bdbc4dfb7ab76856bdd80a3246ea9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>如何：创建 PolicyActivity 规则集（旧版）
 本主题介绍如何使用面向 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 的旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 来创建策略活动规则集。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/27/2017
   
     -   键入规则集的名称。 单击**rulesetreference**省略号**[…]**，然后选择**编辑**中[选择规则设置对话框 （旧版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)。  
   
-         - 或 -  
+         或  
   
     -   键入规则集的名称。 展开**rulesetreference**属性并选择省略号**[…]**中**RuleSet 定义**属性。  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/27/2017
   
 9. 完成后单击“确定” 。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)   
  [选择规则集对话框 （旧版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)   
  [规则集编辑器对话框 （旧版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)   

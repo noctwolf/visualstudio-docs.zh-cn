@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d758c5d4f410881989492f64dd7a7e5b8dc73804
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 41fbe935bb6bde5a57e6277ffcf5e357cc53a391
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>如何：添加和移除功能依赖项
   你的 SharePoint 功能可能依赖于用于功能或数据的其他功能。 在这些情况下，可以将这些其他功能为您的功能标记为依赖关系。 这种方式，可确保 SharePoint 服务器，激活你的功能之前，激活相关功能。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  在功能设计器中，展开**功能激活依赖关系**节点，选择你想要删除，然后选择功能名称**删除**按钮。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)   
  [如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [如何：在 SharePoint 功能中添加和删除项](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

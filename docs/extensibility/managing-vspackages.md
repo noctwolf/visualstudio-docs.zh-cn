@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55ba59a5a29181dfa3cdd70427720293582a648d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3c3201c032d0cae645460e614b6d4138297e4a93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-vspackages"></a>管理 Vspackage
 在大多数情况下，你不必担心如何管理 Vspackage，因为项目和项模板注册，并自动加载包。 但是，在某些情况下，你可能需要管理包以了解更多。  
@@ -47,5 +48,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="troubleshooting-vspackages"></a>故障排除的 Vspackage  
  了解用于故障排除不会加载，或遇到错误的 Vspackage 的技术：[疑难解答 Vspackage](../extensibility/troubleshooting-vspackages.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPackage](../extensibility/internals/vspackages.md)

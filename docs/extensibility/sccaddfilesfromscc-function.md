@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1764bfc503e25860326b1910c432edcf95c8f21c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5bd53307323b1db4d5fa9e5407c3a0516f1187f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 函数
 此函数将从源代码管理文件的列表添加到当前打开的项目中。  
@@ -70,7 +71,7 @@ SCCRTN SccAddFilesFromSCC(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_E_PROJNOTOPEN|项目未打开。|  
 |SCC_E_OPNOTPERFORMED|连接不是连接到与指定的相同的项目`lpAuxProjPath.`|  
@@ -78,5 +79,5 @@ SCCRTN SccAddFilesFromSCC(
 |SCC_E_NONSPECIFICERROR|未知的错误。|  
 |SCC_I_RELOADFILE|需要重新加载文件或项目。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

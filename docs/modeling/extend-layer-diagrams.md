@@ -15,11 +15,12 @@ caps.latest.revision: "39"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 2b661d894a471a3734a54806a89381d06fd3bd2d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 477c51d4172f893e4506eff1b2a11b626993b327
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extend-dependency-diagrams"></a>扩展依赖项关系图
 你可以编写代码以创建和更新依赖项关系图，并针对 Visual Studio 中的依赖项关系图程序代码的结构进行验证。 可以添加显示在关系图的快捷（上下文）菜单上的命令、自定义拖放笔势并从文本模板访问层模型的命令。 可以将这些扩展打包到 Visual Studio 集成扩展 (VSIX) 中，并将其分发给其他 Visual Studio 用户。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/07/2017
   
  [依赖项关系图扩展疑难解答](../modeling/troubleshoot-extensions-for-layer-diagrams.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)   
  [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)   
  [在代码中创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)   

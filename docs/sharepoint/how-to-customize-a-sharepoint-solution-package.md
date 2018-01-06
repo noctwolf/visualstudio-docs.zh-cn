@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d07f03c1aed1c2e85e65bd10a89bd62138d571c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5351165320dd0ff2d8c130c64adeff7be45de6fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>如何：自定义 SharePoint 解决方案包
   在包设计器可用于创建和自定义包 (.wsp)。 例如，你可以添加 SharePoint 项目项和功能，指定是否 Web 服务器是重置部署解决方案时，并将设置部署服务器类型。  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
      模板刷新与原始文本，并且对 XML 的任何更改都将丢失。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

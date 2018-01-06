@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a87ee7d1a48c313a29d00524d471b46ef572f4a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2a53b10f3d9a69c0181a432dad491bebd177f5be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>演练： 创建使用 JavaScript SDK
 本演练介绍如何使用 JavaScript 创建一个简单的数学 SDK 作为 Visual Studio 扩展 (VSIX)。  本演练分为三个部分：  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
   
  为 JavaScript 没有类库项目类型。 在本演练中，在 VSIX 项目中直接创建示例 arithmetic.js 文件。 在实践中，我们建议您首先生成和测试的 JavaScript 和 CSS 文件为 Windows 应用商店应用-例如，通过使用**空白应用程序**模板-将它们放在 VSIX 项目之前。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
 ##  <a name="createSimpleMathVSIX"></a>若要创建 SimpleMathVSIX 扩展 SDK 项目  
@@ -316,5 +317,5 @@ ms.lasthandoff: 10/31/2017
   
 12. 在应用 UI 中，输入任何两个数字，选择某一操作，，然后选择 **=** 按钮。 将显示正确的结果。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [获取软件开发工具包](../extensibility/creating-a-software-development-kit.md)

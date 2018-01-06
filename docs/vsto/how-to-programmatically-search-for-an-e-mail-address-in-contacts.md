@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 272a24a7d07e5a04ab4a92c06ee98a0c0efa5de8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 57c0cac0dd2b22b38284caec0a2bfb40d6e5b101
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-search-for-an-e-mail-address-in-contacts"></a>如何：以编程方式在联系人中搜索电子邮件地址
   以下示例将在联系人文件夹搜索电子邮件地址中具有域名 **example.com** 的联系人。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 -   电子邮件地址中具有域名 **example.com** （例如， `somebody@example.com`且具有的名字和姓氏的联系人。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用联系人项](../vsto/working-with-contact-items.md)   
  [如何： 以编程方式发送电子邮件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
  [如何： 以编程方式访问 Outlook 联系人](../vsto/how-to-programmatically-access-outlook-contacts.md)   

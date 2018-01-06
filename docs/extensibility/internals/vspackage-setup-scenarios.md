@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2128d4c2659d7e6e389384c4bf7e133a4fb32e47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dea9d25f211ca5042234c0400b2a10086136f49c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安装方案
 请务必设计灵活性到 VSPackage 安装程序。 例如，你可能需要时常释放安全修补程序在将来，或可能更改要求彻底的并行版本控制支持业务策略。  
@@ -76,6 +77,6 @@ ms.lasthandoff: 10/31/2017
   
  **请注意**通过并行程序集部署的详细信息，请参阅[简化部署和使用.NET Framework 解决 DLL 灾难](http://msdn.microsoft.com/library/ms973843.aspx)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows 安装程序](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
  [支持多个版本的 Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

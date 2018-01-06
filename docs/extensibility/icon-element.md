@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20e8309e0052f6aa92a0069f0c2138880a7742de
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2787798afe9554601d44a965ae3f12d5ebeab8bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="icon-element"></a>Icon 元素
 图标标记该 guid 属性是定义位图的 guid。  Id 属性选择位图条带中的槽。 此元素为可选元素。  如果省略此元素的值**guidOfficeIcon:msotcidNoIcon**将隐式。  
@@ -37,8 +38,8 @@ ms.lasthandoff: 10/31/2017
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必需。 定义位图的 guid。|  
-|id|必需。 选择位图条带中的槽。|  
+|guid|必须的。 定义位图的 guid。|  
+|id|必须的。 选择位图条带中的槽。|  
   
 ### <a name="child-elements"></a>子元素  
   
@@ -52,5 +53,5 @@ ms.lasthandoff: 10/31/2017
 |-------------|-----------------|  
 |[Buttons 元素](../extensibility/buttons-element.md)||  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

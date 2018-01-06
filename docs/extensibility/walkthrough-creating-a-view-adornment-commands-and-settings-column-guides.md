@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3db7dea958fb3d80a109c021ffb20260f0748bba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>演练： 创建视图修饰、 命令和设置 （列指南）
 你可以扩展 Visual Studio 文本/代码编辑器与命令和视图效果。  本主题演示了如何开始使用一种常用的扩展功能，列参考线。  列参考线是在文本编辑器的视图来帮助你管理你的代码特定列宽上绘制的直观地浅色行。  格式经过特别设计的代码可能很重要的示例包括在文档中，博客文章或 bug 报表。  
@@ -1351,7 +1352,7 @@ private int GetApplicableColumn(EventArgs e)
   
  你还可以尝试使用此 Visual Studio 库列指南功能版本[扩展](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在编辑器内](../extensibility/inside-the-editor.md)   
  [扩展编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)   
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)   

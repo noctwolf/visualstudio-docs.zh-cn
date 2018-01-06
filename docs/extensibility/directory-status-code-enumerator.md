@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 998ce86fdf714c65763748971e89fa45ec289a51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a29b9453fa7fd36564fef2956c1d41cc7f29cf07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="directory-status-code-enumerator"></a>目录状态代码枚举器
 `SccDirStatus`枚举器包含在源代码管理系统中指定的目录的状态的命名常量值。 此枚举由[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)。 这是在源控件插件 API 的 1.2 版中引入的。  
@@ -48,6 +49,6 @@ enum SccDirStatus {
  SCC_DIRSTATUS_EMPTYPROJ  
  项目对应于此目录为空。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件](../extensibility/source-control-plug-ins.md)   
  [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

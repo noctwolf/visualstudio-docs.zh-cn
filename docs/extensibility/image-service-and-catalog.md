@@ -11,11 +11,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5813788834a7a5a99c10fe6dafc35a300bac007
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-service-and-catalog"></a>映像服务和目录
 此指南包含指导和采用 Visual Studio 映像服务和 Visual Studio 2015 中引入的映像目录的最佳做法。  
@@ -108,9 +109,9 @@ ms.lasthandoff: 10/31/2017
 |-|-|  
 |**子元素**|**定义**|  
 |导入|导入当前清单中使用的给定清单文件的符号|  
-|Guid|符号表示一个 GUID，并且必须与匹配 GUID 的格式设置|  
+|GUID|符号表示一个 GUID，并且必须与匹配 GUID 的格式设置|  
 |Id|符号表示 ID 和必须为非负整数|  
-|字符串|符号表示任意字符串值|  
+|String|符号表示任意字符串值|  
   
  符号是区分大小写，并引用使用 $(symbol-name) 语法：  
   
@@ -124,7 +125,7 @@ ms.lasthandoff: 10/31/2017
   
 |||  
 |-|-|  
-|**符号**|**描述**|  
+|**符号**|**说明**|  
 |CommonProgramFiles|%Commonprogramfiles%环境变量的值|  
 |LocalAppData|%Localappdata%环境变量的值|  
 |ManifestFolder|包含清单的文件的文件夹|  
@@ -149,7 +150,7 @@ ms.lasthandoff: 10/31/2017
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|Guid|[必需]映像名字对象的 GUID 部分|  
+|GUID|[必需]映像名字对象的 GUID 部分|  
 |Id|[必需]图像标记 ID 部分|  
 |AllowColorInversion|[可选的默认为 true]指示映像是否可以有在深色背景上使用时以编程方式反转其颜色。|  
   
@@ -175,7 +176,7 @@ ms.lasthandoff: 10/31/2017
 ||||  
 |-|-|-|  
 |**元素**|**属性 （所有所需）**|**定义**|  
-|\<大小 >|值|源将用于给定的大小 （以设备为单位） 的映像。 图像将正方形。|  
+|\<大小 >|“值”|源将用于给定的大小 （以设备为单位） 的映像。 图像将正方形。|  
 |\<SizeRange >|MinSize，最大大小|源将可用于映像从 MinSize 到最大大小 （以设备为单位） （含）。 图像将正方形。|  
 |\<维度 >|宽度、 高度|源将用于给定的宽度和高度 （以设备为单位） 的映像。|  
 |\<DimensionRange >|MinWidth，MinHeight，<br /><br /> MaxWidth MaxHeight|源将用于从最小宽度/高度最大宽度/高度 （以设备为单位） 的映像 （含）。|  
@@ -206,7 +207,7 @@ ms.lasthandoff: 10/31/2017
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|Guid|[必需]映像名字对象的 GUID 部分|  
+|GUID|[必需]映像名字对象的 GUID 部分|  
 |Id|[必需]图像标记 ID 部分|  
 |外部|[可选的默认为 false]指示映像名字对象是否引用当前清单中的图像。|  
   

@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c283f8e2b73fdb4ba44322ca09f8fb436d729ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4e920074f6f771c2b8e5a78b128bf3b1f096d77e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-localize-code"></a>如何：本地化代码
   未本地化的代码使用硬编码的字符串值。 若要本地化代码字符串，将它们替换为对调用<xref:System.Web.HttpContext.GetGlobalResourceObject%2A>，这是一引用的本地化的资源的方法。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
   
 10. 如果你的解决方案不已引用 System.Web 程序集，添加对它的引用并创建你的代码中添加一条指令<xref:System.Web>。  
   
-11. 在您的代码中找到用户可见的所有硬编码的字符串，如 UI 文本、错误和消息文本。 使用以下语法将这些字符串替换为对 <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> 方法的调用：  
+11. 在你的代码中找到用户可见的所有硬编码的字符串，如 UI 文本、错误和消息文本。 使用以下语法将这些字符串替换为对 <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> 方法的调用：  
   
     ```  
     HttpContext.GetGlobalResourceObject("Resource File Name", "String ID")  
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
   
      应用程序中出现的本地化的字符串。 若要显示本地化的资源，SharePoint 服务器必须具有匹配资源文件的区域性的语言包安装。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)   
  [如何： 本地化功能](../sharepoint/how-to-localize-a-feature.md)   
  [如何： 本地化 ASPX 标记](../sharepoint/how-to-localize-aspx-markup.md)   

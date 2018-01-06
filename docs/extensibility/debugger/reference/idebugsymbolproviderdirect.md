@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 077a4422d7e8edde460e03dd2a26675df3fdd6fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a5b2e91a43be7ed1a605e4f54211b2acc5e2df8d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 表示的符号提供程序对元数据和核心符号接口具有直接访问权限。  
@@ -43,7 +44,7 @@ IDebugSymbolProviderDirect: IUnknown
 ## <a name="remarks"></a>备注  
  可以使用此接口，而不是大部分其他符号提供程序接口。 它提供直接访问元数据和`CorSym`接口。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： Sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

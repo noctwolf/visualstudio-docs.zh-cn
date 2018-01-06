@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea2f1808adcb7c8c79d2139e89e31f21a85cb694
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 61d6498cafaf97033864bc31d55c257c9a3a564f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="strings-element"></a>字符串元素
 字符串元素必须包含至少一个**ButtonText**子元素。 所有其他子元素是可选的。 无效的 XML 字符如 & 和 < 必须编码为实体 (&amp;和&lt;，依此类推)。  
@@ -63,5 +64,5 @@ ms.lasthandoff: 10/31/2017
 |[Menu 元素](../extensibility/menu-element.md)|定义一个菜单项。|  
 |[Combo 元素](../extensibility/combo-element.md)|定义在组合框中显示的命令。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

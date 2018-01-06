@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4dd37d33230be758bd5a5adf6f5e10d5a978800
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1f238cceb189723e3ec10fbf8db4abbd9675ae21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 选择以确定在显示的信息的模型**属性**窗口开始算起在 IDE 中具有焦点的窗口。 每个窗口中和中所选的窗口中，对象只能有推送到全局选择上下文其选择上下文对象。 该窗口拥有焦点时，环境窗口框架中的值更新全局选择上下文。 当焦点更改时，因此会选择上下文。  
@@ -116,5 +117,5 @@ STDAPI DLLGetDocumentation
   
  获取本地化的名称和属性说明的另一种是通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>。 与此方法的实现相关的详细信息，请参阅[属性窗口字段和接口](../../extensibility/internals/properties-window-fields-and-interfaces.md)。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展属性](../../extensibility/internals/extending-properties.md)

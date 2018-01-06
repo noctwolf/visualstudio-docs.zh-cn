@@ -30,11 +30,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eaf6871f7ad9316ba2dbdaa8fa29b4810b1d6a3d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4572671971c6cf812c31286fba09bddb65080681
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型设计工具概述
   你可以通过使用 BDC 设计器中，设计业务数据连接 (BDC) 模型**BDC 方法详细信息**窗口中，与**BDC 资源管理器**。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 10/31/2017
   
  有关详细信息，请参阅[如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)   
  [如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [如何： 添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   

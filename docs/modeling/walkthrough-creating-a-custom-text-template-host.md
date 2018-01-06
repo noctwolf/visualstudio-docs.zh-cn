@@ -14,11 +14,12 @@ caps.latest.revision: "51"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 40e8529dd439060172ead1ae2f68ac3052345eb4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2edee4658c952816fc961254aee2c3cccfbe7c4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>演练：创建自定义文本模板宿主
 A*文本模板**主机*提供一个使环境*文本模板转换引擎*运行。 宿主负责管理引擎与文件系统的交互。 引擎或*指令处理器*需要一个文件或程序集可以从主机请求资源。 然后，宿主可以搜索目录和全局程序集缓存，以查找请求的资源。 有关详细信息，请参阅[文本模板转换过程](../modeling/the-text-template-transformation-process.md)。  
@@ -34,7 +35,7 @@ A*文本模板**主机*提供一个使环境*文本模板转换引擎*运行。 
   
 -   测试自定义主机。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  若要完成本演练，您必须具有：  
   
 -   Visual Studio 2010 或更高版本  
@@ -42,7 +43,7 @@ A*文本模板**主机*提供一个使环境*文本模板转换引擎*运行。 
 -   Visual Studio SDK  
   
 ## <a name="creating-a-custom-text-template-host"></a>创建自定义文本模板宿主  
- 在本演练中，您将在可从命令行调用的可执行应用程序中创建自定义宿主。 该应用程序接受文本模板文件作为参数，读取该模板，调用引擎转换模板，并在命令提示符窗口中显示发生的所有错误。  
+ 在本演练中，您将在可从命令行调用的可执行应用程序中创建自定义宿主。 该应用程序接受文本模板文件作为自变量，读取该模板，调用引擎转换模板，并在命令提示符窗口中显示发生的所有错误。  
   
 #### <a name="to-create-a-custom-host"></a>创建自定义宿主  
   
@@ -720,7 +721,7 @@ A*文本模板**主机*提供一个使环境*文本模板转换引擎*运行。 
 6.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
 ## <a name="testing-the-custom-host"></a>测试自定义主机  
- 若要测试自定义宿主，您需要编写一个文本模板，然后运行自定义宿主，将文本模板的名称传递给它并验证模板转换。  
+ 若要测试自定义主机，你需要编写一个文本模板，然后运行自定义主机，将文本模板的名称传递给它并验证模板转换。  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>创建文本模板测试自定义主机  
   
@@ -818,5 +819,5 @@ A*文本模板**主机*提供一个使环境*文本模板转换引擎*运行。 
 ## <a name="next-steps"></a>后续步骤  
  在本演练中，你创建了一个支持基本转换功能的文本模板转换主机。 您可以对该宿主进行扩展，以支持可调用自定义或生成的指令处理器的文本模板。 有关详细信息，请参阅[演练： 连接到生成的指令处理器的主机](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>

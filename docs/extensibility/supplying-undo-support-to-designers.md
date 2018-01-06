@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9a33e8386dcdc2cbf79d057cc454a959b1c06b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98243c15f5f69a9aecba589b966d56a68201ab2a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supplying-undo-support-to-designers"></a>提供撤消支持添加到设计器
 设计器中的，如编辑器，通常需要支持撤消操作，因此，修改代码元素时，用户可以反向他们最近的更改。  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
   
 -   设计器中选择显式创建撤消单元使用提供的实现的标准撤消单元<xref:System.ComponentModel.Design.UndoEngine.UndoUnit>或 Visual Studio 特定实现<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>，它派生自<xref:System.ComponentModel.Design.UndoEngine.UndoUnit>还提供了实现同时<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
  [扩展设计时支持](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b7d32746fa42dc270497252065c3ac117a59547
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9bbe546ffb3c6e61b251e8afbfc7fa9018ffa1b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 此接口允许的表达式计算器 (EE) 以显示属性的值是必需的任何格式。  
@@ -51,7 +52,7 @@ IDebugCustomViewer : IUknown
   
  通常情况下，自定义查看器提供的数据的只读视图由于[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口提供给[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)没有方法用于更改除字符串形式的属性的值。 为了支持更改任意数据块，EE 实现自定义接口上实现的相同对象`IDebugProperty3`接口。 然后，此自定义接口将提供更改数据的任意块所需的方法。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
@@ -105,7 +106,7 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
  [SDK 适用于调试的帮助程序](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   

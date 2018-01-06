@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aebe2ee8e0122db6777a341a96731398bf25b8ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: efaa2877743fcf69a61a79633108d203442489e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccproperties-function"></a>SccProperties 函数
 此函数显示文件或项目的源控件属性。  
@@ -46,7 +47,7 @@ SCCRTN SccProperties (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功地显示属性。|  
 |SCC_I_RELOADFILE|版本控制系统已修改的文件属性，因此 IDE 应重新加载此文件。|  
@@ -60,5 +61,5 @@ SCCRTN SccProperties (
   
  这些属性定义的源代码管理插件和插件可能不同于插件。 如果该插件后，用户可以更改文件的源控件属性，它应返回`SCC_I_RELOAD`发出信号 IDE，需要重新加载此文件或项目。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "35"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 421b8a8bde2bb383889bcb58915fa8a3acb027cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 634d5617d1f42891953f8f1a73bcc5d09a8ffa9b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>如何：使用转义序列从模板生成模板
 你可以创建用于创建为其生成的文本输出的另一个文本模板的文本模板。 若要执行此操作，必须使用转义序列来描述文本模板标记。 如果不使用转义序列，生成的文本模板将具有预定义的含义。 有关在文本模板中使用转义序列的详细信息，请参阅[文本模板中使用转义序列](../modeling/using-escape-sequences-in-text-templates.md)。  

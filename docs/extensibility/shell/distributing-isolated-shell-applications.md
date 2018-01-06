@@ -12,18 +12,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d7e2a85a7e94ad9a700b197c9c4e0f75e78b4ec2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6e9b7ded8d24e4d252d29338d89bd176648511a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="distributing-isolated-shell-applications"></a>分发独立的 Shell 应用程序
 要创建独立的 shell 应用程序，你必须安装 Visual Studio 和 Visual Studio SDK。 若要分发到的计算机的其他用户或客户应用程序，必须包括独立 shell 的特殊可再发行组件包。  
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>分发独立的 Shell 应用程序的先决条件  
   
-|名称|描述|  
+|name|描述|  
 |----------|-----------------|  
 |Visual Studio SDK|必须具有用于开发和测试的扩展 SDK [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 SDK 还可用于创建您自己的 Visual Studio 独立 shell 的实例。<br /><br /> Visual Studio 是 sdk 的先决条件。|  
 |Microsoft Visual Studio 独立 Shell 可再发行组件|可再发行安装程序中时包括生成 Visual studio 工具环境隔离 shell。 独立的 Shell 可再发行组件包包括.NET Framework 4.5。|  

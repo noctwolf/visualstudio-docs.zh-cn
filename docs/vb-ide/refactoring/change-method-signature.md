@@ -16,11 +16,12 @@ f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
 dev_langs: VB
-ms.openlocfilehash: 83d1329706f53b1e5474a0a2cc4c859f0e982096
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ac0b8394f71f2f7949cf21b4ea34eba733bf4d34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="change-a-method-signature-in-visual-basic"></a>更改在 Visual Basic 中的方法签名
 **新增功能：**允许您删除或更改该方法的参数的顺序。
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
 
    ![更改签名结果](media/changesignature_result.png)
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [重构 (Visual Basic)](../refactoring-vb.md)  
 [预览更改](../../ide/preview-changes.md)

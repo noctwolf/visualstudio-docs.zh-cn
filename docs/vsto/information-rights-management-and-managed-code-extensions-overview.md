@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ff6c79d6bed7ec1b5a459f64c0e57c8c35ab4e1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 21431cd16407d61db6f981aad68d52906c2de1f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>信息权限管理与托管代码扩展概述
   Microsoft Office Word 和 Microsoft Office Excel 提供了信息权限管理 (IRM) 功能，可帮助你防止未经授权的人员查看或更改敏感信息。 有关信息权限管理的工作原理的详细信息，请参阅特定 Office 应用程序中的帮助。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
  若要解决此问题，具有完全控制访问权限的文档或工作簿的用户必须更改默认权限设置，以允许以编程方式访问的对象模型。 有关详细信息，请参阅[如何： 向运行后面文档具有受限权限允许代码](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)   
  [Office 文档上的密码保护](../vsto/password-protection-on-office-documents.md)   
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)   

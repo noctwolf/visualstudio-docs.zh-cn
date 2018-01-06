@@ -20,11 +20,12 @@ caps.latest.revision: "61"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: f0b99b4a4bcfbec58c23e529e3ee250ca19554ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e6ffb17164bf49cb585d9fd67dd99c833a805411
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 通过使用 Visual Studio 中的可视化和建模工具，确保你的软件系统满足用户的需求。
@@ -404,7 +405,7 @@ ms.lasthandoff: 10/27/2017
   
 #### <a name="relationship-to-other-diagrams"></a>与其他关系图的关系  
   
-|**关系图**|**描述**|  
+|**关系图**|**说明**|  
 |-----------------|---------------------|  
 |依赖项关系图|定义与类相关的系统的逻辑体系结构。<br /><br /> 使用依赖项验证来确保代码保持与设计保持一致。<br /><br /> 请参阅：<br /><br /> -   [在代码中创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)<br />-   [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)<br />-   [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|  
 |代码图|可视化现有代码中的组织和关系。<br /><br /> 要标识类、类的关系和类的方法，请创建一个显示这些元素的代码图。<br /><br /> 请参阅：<br /><br /> -   [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)|  
@@ -476,7 +477,7 @@ ms.lasthandoff: 10/27/2017
   
 #### <a name="relationship-to-other-diagrams"></a>与其他关系图的关系  
   
-|**关系图**|**描述**|  
+|**关系图**|**说明**|  
 |-----------------|---------------------|  
 |代码图|可视化现有代码中的组织和关系。<br /><br /> 要创建层，请生成一个代码图，然后将该代码图上的项作为可能的层进行分组。 将组从映射拖到依赖项关系图。<br /><br /> 请参阅：<br /><br /> -   [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)<br />-   [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)|  
   
@@ -486,7 +487,7 @@ ms.lasthandoff: 10/27/2017
 |------------------|---------------|  
 |**论坛**|-   [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 可视化和建模 SDK（DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [可视化代码](../modeling/visualize-code.md)   
  [在开发过程中使用模型](../modeling/use-models-in-your-development-process.md)   
  [在敏捷开发中使用模型](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   

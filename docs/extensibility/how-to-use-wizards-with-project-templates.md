@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81cacbcc3f7573b9386fb2816650d8c96508b613
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 6e76a8880e488177f12cfb949ec46e95fd825986
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>如何：使用向导来处理项目模板
 Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接口，可实现该接口来在用户从模板创建项目时运行自定义代码。  
@@ -68,7 +69,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
   
 3.  将为资产的程序集添加到 VSIX 项目中。 打开 source.extension.vsixmanifest 文件并选择**资产**选项卡。在**添加新资产**窗口中，为**类型**选择**Microsoft.VisualStudio.Assembly**，为**源**选择**A当前解决方案中的项目**，和**项目**选择**MyProjectWizard**。  
   
-4.  添加到 VSIX 项目的以下引用。 (在**解决方案资源管理器**，在 VSIX 项目节点，请选择**引用**，右键单击，并选择**添加引用**。)在**添加引用**对话框，请在**Framework**选项卡上，查找**System.Windows 窗体**程序集，然后选择它。 现在选择**扩展**选项卡。 查找**EnvDTE**程序集，然后选择它。 此外可以找到**Microsoft.VisualStudio.TemplateWizardInterface**程序集，然后选择它。 单击“确定”。  
+4.  添加到 VSIX 项目的以下引用。 (在**解决方案资源管理器**，在 VSIX 项目节点，请选择**引用**，右键单击，并选择**添加引用**。)在**添加引用**对话框，请在**Framework**选项卡上，查找**System.Windows 窗体**程序集，然后选择它。 现在选择**扩展**选项卡。 查找**EnvDTE**程序集，然后选择它。 此外可以找到**Microsoft.VisualStudio.TemplateWizardInterface**程序集，然后选择它。 单击 **“确定”**。  
   
 5.  将向导实现的类添加到 VSIX 项目。 (在解决方案资源管理器，右键单击 VSIX 项目节点，然后选择**添加**，然后**新项**，然后**类**。)将类**WizardImplementation**。  
   
@@ -309,7 +310,9 @@ namespace $safeprojectname$
   
      请注意，`$custommessage$`已替换为在向导用户输入窗体中输入的文本。  
   
-## <a name="see-also"></a>另请参阅  
- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
- [自定义模板](../ide/customizing-project-and-item-templates.md)   
- [WizardExtension 元素（Visual Studio 模板）](../extensibility/wizardextension-element-visual-studio-templates.md)
+## <a name="see-also"></a>请参阅  
+
+<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
+[自定义模板](../ide/customizing-project-and-item-templates.md)  
+[WizardExtension 元素（Visual Studio 模板）](../extensibility/wizardextension-element-visual-studio-templates.md)  
+[在 Visual Studio 模板中的 NuGet 包](/nuget/visual-studio-extensibility/visual-studio-templates)

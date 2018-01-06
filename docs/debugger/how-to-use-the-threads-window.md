@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4469f2f70bececca258fe4ea1a98d753f8349f87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 253798cdde2a40a70496dbe2ed89f9d0a9316640
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>演练： 调试多线程应用程序在 Visual Studio 中使用线程窗口
 Visual Studio 提供**线程**窗口和其他用户界面元素，以帮助你调试多线程应用程序。 本教程演示如何使用**线程**窗口和**调试位置**工具栏。 有关其他工具的信息，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 本教程只需几分钟，但完成它将使您熟悉用于调试多线程应用程序的功能。   
@@ -43,7 +44,7 @@ Visual Studio 提供**线程**窗口和其他用户界面元素，以帮助你�
   
 4.  在**名称**框中，键入名称 MyThreadWalkthroughApp。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
      新的控制台项目随即显示。 创建该项目后，将显示源文件。 根据所选的语言，源文件的名称可能是 Module1.vb、Program.cs 或 MyThreadWalkthroughApp.cpp  
   
@@ -57,7 +58,7 @@ Visual Studio 提供**线程**窗口和其他用户界面元素，以帮助你�
   
     ```VB  
     Thread.Sleep(3000)   
-    Console.WriteLine(  
+    Console.WriteLine()
     ```  
   
     ```CSharp  
@@ -259,6 +260,6 @@ Visual Studio 提供**线程**窗口和其他用户界面元素，以帮助你�
   
      与线程标记中，你只能切换到在特定位置停止的线程。 通过使用**线程**窗口和**调试位置**工具栏上，你可以切换到任何线程。   
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在调试时切换到另一个线程](../debugger/how-to-switch-to-another-thread-while-debugging.md)

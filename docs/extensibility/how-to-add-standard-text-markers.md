@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fb92185dd2efee7f42ce1ba4d97435e0b2e8a68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bdcdbabae26a9116b1e00910ecef2f83f4075551
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-standard-text-markers"></a>如何： 添加标准文本标记
 使用以下过程创建一个与提供的默认文本标记类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
      使用来自此调用的此信息来执行任何操作文本标记的自定义命令指示。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用文本标记用于旧 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [如何： 实现错误标记](../extensibility/how-to-implement-error-markers.md)   
  [如何： 创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   

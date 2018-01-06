@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74fa1e1d23725af1041d9c635a768b7667b3b888
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f2159e0be2f54929e28a45215588515a522b542e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell （集成）
 集成的 Visual Studio shell 包括集成的开发环境 (IDE)、 调试器和源代码管理集成。 包含任何编程语言不。 但是，集成的外壳提供一个框架，允许你将添加编程语言。  
@@ -79,5 +80,5 @@ ms.lasthandoff: 10/31/2017
   
 -   没有 Visual Studio 语言或其关联的项目模板或项目项模板，都将纳入集成外壳。 其他功能的任何特定于语言的实现不都包括在内，有关示例 Visual Basic 代码段。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio SDK](../visual-studio-sdk.md)

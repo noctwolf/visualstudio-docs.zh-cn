@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2637ddf5d50953367de66cd2ca63d7774dbc3213
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f8833e3d2b686e1c350e1094aaa9bdfe925586a7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 获取的字段或变量 （如果有），可能支持此对象表示的属性。  
@@ -47,5 +48,5 @@ int GetBackingFieldForProperty(
 ## <a name="remarks"></a>备注  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)对象表示托管的代码的类属性，即使用 get 方法和/或 set 访问器。 此类属性通常需要一个变量来包含操作的属性的值。 此变量被称为支持字段。 如果没有该对象不支持字段，则请确保将返回 null 值： 某些调用方可能注意不到返回的值，但将改为查看如果中返回了 null 值`ppObject`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

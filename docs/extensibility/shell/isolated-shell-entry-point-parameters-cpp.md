@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54b15d849efacb681eb8b4238cd067144bc67342
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 78993e12c1ab4098e20aad243faaa487ff0ea35b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>独立的 Shell 入口点参数 （c + +）
 当一个 Visual Studio shell 基于应用程序启动时，它将调用 Visual Studio shell 的开始入口点。 可以在命令行界面的开始入口点调用中重写以下设置。 有关每个设置的说明，请参阅[。Pkgdef 文件](modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)。  
@@ -95,6 +96,6 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
 ## <a name="example"></a>示例  
  若要禁用的外接程序，并更改你的应用程序的默认项目位置，可以设置为"AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp"的最后一个参数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义独立的 Shell](customizing-the-isolated-shell.md)   
  [.Pkgdef 文件](modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32e9c8ffa2a9ca2bba889436f37cc4f5c3d188bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 47316f6bd47d5d528dc6e36dfe3a4bcb67e00909
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 实用程序
 采用 Visual Studio 扩展作为参数的.dll 文件，并创建一个.pkgdef 文件随附.dll。 .Pkgdef 文件包含否则将在安装扩展时写入到系统注册表的所有信息。  
@@ -35,9 +36,9 @@ ms.lasthandoff: 10/31/2017
 CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath  
 ```  
   
-## <a name="arguments"></a>参数  
+## <a name="arguments"></a>自变量  
  / =`FileName`  
- 必需。 设置的.pkgdef 输出文件的名称`FileName`。  
+ 必须的。 设置的.pkgdef 输出文件的名称`FileName`。  
   
  /codebase  
  可选。 强制使用基本代码实用程序的注册。  
@@ -56,5 +57,5 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
 > [!NOTE]
 >  **扩展和更新**工具不能用于访问扩展，除非它作为 VSIX 包的一部分安装。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CreateExpInstance 实用工具](../../extensibility/internals/createexpinstance-utility.md)

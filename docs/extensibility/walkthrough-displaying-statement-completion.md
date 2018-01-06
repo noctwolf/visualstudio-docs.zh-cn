@@ -13,11 +13,12 @@ caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ebdc87e1dccf2bde66ccfeebb6c2b4fba144c70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9c3b44bd46c34a864896cbf1002505085be5143
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>演练： 显示语句结束
 你可以通过定义你想要提供完成的标识符，然后触发完成会话实现基于语言的语句结束。 你可以定义语言服务上下文中的语句完成、 定义你自己的文件扩展名和内容类型，然后显示完成只是该类型，或者可以触发完成现有内容类型 — 例如，"纯文本"。 本演练演示如何在触发"纯文本"内容类型，这是文本文件的内容类型的语句结束。 "Text"内容类型是所有其他内容类型，包括代码和 XML 文件的上级。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
   
  本演练演示如何实现硬编码的一组标识符的语句结束。 在完整实现中，语言服务和语言文档是负责提供该内容。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-mef-project"></a>创建 MEF 项目  
@@ -203,5 +204,5 @@ ms.lasthandoff: 10/31/2017
   
 4.  当您第一次键入"a"，然后"d"，应显示包含"添加"和"改写"的列表。 请注意，添加处于选中状态。 当你键入另一个"d"时，该列表应包含仅"添加"，现在处于选中状态。 可以通过按空格键、 Tab 或 Enter 键，提交"添加"，也可以通过键入 Esc 或按任意键关闭该列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

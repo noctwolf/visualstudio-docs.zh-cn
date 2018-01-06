@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdb4b0385ff0d9af97e3f12d6b74c6f22391a05b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 13d45967ff6102fca9780b172ed48c077dc81b6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="package-guids-of-visual-studio-features"></a>Visual Studio 功能的包 Guid
 你可以使用独立的 shell 应用程序的.pkgundef 文件中的以下 Guid 从应用程序中排除特定包。  

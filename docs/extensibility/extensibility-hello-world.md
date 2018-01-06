@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 18a0e18589574c689ebbddbaf28448cf5539ad96
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1b7d695f2211f01ce374ee41404d5ab49abde70a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-your-first-extension-hello-world"></a>创建第一个扩展： Hello World
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 
 ![你好 world 命令](media/hello-world-say-hello-world.png)
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 在开始之前，请确保已安装**Visual Studio 扩展开发**包括 VSIX 模板将需要和示例代码的工作负荷。
 

@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: b7419766b4c195c3bcef2aa45e886004a89fb5ec
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3d0dbf6c74c309972862db460f2536d8c6b16801
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何：更改域特定语言的命名空间
 你可以更改域特定语言的命名空间。 必须进行的更改**DSL 资源管理器**、 Dsl 包项目的属性以及中的程序集信息。  
@@ -53,5 +54,5 @@ ms.lasthandoff: 10/27/2017
   
 11. 上**生成**菜单上，选择**重新生成解决方案**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

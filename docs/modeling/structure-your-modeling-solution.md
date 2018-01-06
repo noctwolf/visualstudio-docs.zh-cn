@@ -11,11 +11,12 @@ caps.latest.revision: "14"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: aeaaa6605d316804dc49a82de72fa2c43d25b03c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 3819227bbdfdd754166c886c9da0cc8bd727e94e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="structure-your-modeling-solution"></a>安排你的建模解决方案
 若要在开发项目中有效地使用模型，团队成员必须能够同时在项目的不同部分的模型上工作。 本主题建议了一种将应用程序划分为对应整体分层关系图中层的不同部分的方案。  
@@ -108,5 +109,5 @@ ms.lasthandoff: 11/07/2017
   
  [Visual Studio 体系结构工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)-进一步管理团队中的模型的指南  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)

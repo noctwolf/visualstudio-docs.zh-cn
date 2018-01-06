@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0aeb24f52b1b6b719e81dcd1a9bd93bd5822f8e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e3428e51dda2f8cc8410b6ac67f5779f7c2300ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>(源控件 VSPackage) 保存的查询编辑查询
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]编辑器可以广播保存查询编辑查询 (QEQS) 事件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]源存根 （stub） 实现 QEQS 服务，以便它 QEQS 事件的接收方。 然后，这些事件可以委派给的当前处于活动状态的源控件 VSPackage。 VSPackage 实现该活动的源控件<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>及其方法。 方法`IVsQueryEditQuerySave2`接口通常称为第一次和之前保存文档在编辑文档前立即。  
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/31/2017
   
  此方法必须在事务性方式; 中的行为也就是说，如果保存已取消在单个文件，保存取消了对所有文件。 相反，如果允许保存，则它必须允许所有文件。 与`IVsQueryEditQuerySave2::QueryEditFiles`方法时，需要考虑实现情况`IVsQueryEditQuerySave2::QuerySaveFiles`方法包括多个文件，特殊文件，取消从用户和内存中的编辑。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>

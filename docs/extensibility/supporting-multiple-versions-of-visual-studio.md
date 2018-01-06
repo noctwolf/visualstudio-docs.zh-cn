@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc9c13ecf6a5cc6e62caa897adce16830026261a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c03df6edc54948060fa3b1f8eee264646a80f38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>支持多个版本的 Visual Studio
 术语*并排显示*意味着你可以安装和维护的同一台计算机上的产品的多个版本。 对于 Vspackage，这意味着用户可以安装在同一台计算机上的多个 Visual Studio 版本。 但是，不能具有并排显示的你的 Vspackage 加载到单个版本的 Visual Studio 的版本。  

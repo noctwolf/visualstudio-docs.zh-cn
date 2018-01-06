@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2555fe2be42ed58482cdacf174a6cb035a8d7bd5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2571fd137875a0971b7a9e4364849a3105ca220a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-element-tools"></a>自定义元素工具
 在某些 DSL 定义，作为一组元素表示在一个概念。 例如，如果你创建在其中一个组件具有一组固定的端口的一个模型，你始终希望要在其父组件在同一时间创建的端口。 因此，你必须自定义的元素创建工具，以便它创建的一组而并非仅仅一个元素。 若要实现此目的，你可以自定义如何初始化元素创建工具。  
@@ -61,5 +62,5 @@ public partial class CircuitDiagramToolboxHelper
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)

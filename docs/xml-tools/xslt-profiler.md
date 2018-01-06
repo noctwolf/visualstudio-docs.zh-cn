@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f4dc0ee25ec338c93a9fd4bfcecb96126477f9d
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 7523043e6d8f4acdff983de5d95fd9fd55d49504
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xslt-profiler"></a>XSLT 探查器
 XSLT 探查器是一个性能分析探查器工具，可帮助您开发和调试 XSLT 文档。 开发人员可使用 XSLT 探查器来创建详细的 XSLT 性能报告，从而对 XSLT 代码中与性能相关的问题进行衡量和评估。 XSLT 探查器包含 XSL 和 XSLT 样式表优化的有用提示，这对需要最佳性能的基于 XSLT 的应用程序必不可少。  

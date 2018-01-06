@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f714120c6f5dced4760bb14cad1e53a794030a19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 87f676ef30da7c667c4ce2b688520a49ed1931c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 模板清单架构参考
 此架构描述为 Visual Studio 项目或项模板生成的 Visual Studio 模板清单 (.vstman) 文件的格式，并描述的位置和有关该模板的其他相关信息。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="attributes"></a>特性  
   
--   **版本**： 一个表示模板清单的版本字符串。 必需。  
+-   **版本**： 一个表示模板清单的版本字符串。 必须的。  
   
 -   **区域设置**： 表示的区域设置或区域设置的模板清单的字符串。 因此你必须针对每个区域设置使用单独清单，区域设置值将适用于所有模板。 可选。  
   

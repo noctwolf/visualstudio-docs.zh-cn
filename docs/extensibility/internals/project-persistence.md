@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bb782b79c00576a431c8f4453ddf020606aaf5a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d77c307ec7b732ba727b7210b4f4eaacb44584aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-persistence"></a>项目持久性
 持久性是你的项目的关键设计注意事项。 大多数项目使用代表文件; 的项目项[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]还支持其数据是不基于文件的项目。 必须保留这两个拥有的项目和项目文件的文件。 IDE 指示要保存自身或项目项的项目。  
@@ -45,6 +46,6 @@ ms.lasthandoff: 10/31/2017
   
  上的方法`IVsPersistHierarchyItem2`使用接口来确定是否可以重新加载项，如果可以将项，重新加载它。 此外，<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A>方法可实现来导致已更改的项，要放弃未保存。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [清单： 创建新项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [使用项目工厂创建项目实例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

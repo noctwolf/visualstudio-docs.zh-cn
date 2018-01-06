@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d810008391398741e644da7215de174918db604f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 40176b654f1a108e995a778eb4c7495b062f6114
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 此方法将通知过程会话不再调试进程。  
@@ -47,5 +48,5 @@ int Detach(
 ## <a name="remarks"></a>备注  
  接口中进行传递`pSession`是若要仅作为 cookie 处理，用于唯一标识会话调试管理器，它最初的值附加到此过程; 提供的接口上的方法都正常工作。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

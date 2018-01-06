@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fcd30a30bdae896be5aceb9dc685a5fb762ee4af
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4c1a259be5b9c8f572339279734b60ac2afd93ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-diagrams"></a>图表属性
 你可以设置指定在生成的设计器中显示关系图的外观的属性。 例如，你可以在关系图中指定文本的默认颜色。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/27/2017
 |具有自定义的构造函数|如果`True`，自定义的构造函数将提供的源代码中。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
 |继承修饰符|描述的关系图生成源代码类的继承的类型 (`none`，`abstract`或`sealed`)。|无|  
 |基本图|此关系图的基类。|(无)|  
-|名称|此关系图的名称。|当前的名称|  
+|name|此关系图的名称。|当前的名称|  
 |命名空间|与此关系图关联的命名空间。|当前命名空间|  
 |表示类|此关系图表示根域类。|如果适用的当前根类|  
 |说明|与此元素关联的非正式说明。|\<无 >|  
@@ -46,5 +47,5 @@ ms.lasthandoff: 10/27/2017
 |显示名称|将显示在生成的设计器中为此关系图名称。|\<无 >|  
 |帮助关键字|用于编制索引为此关系图的 F1 帮助关键字。|\<无 >|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

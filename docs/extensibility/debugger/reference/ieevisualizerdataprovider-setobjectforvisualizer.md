@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76a901401e854611cc987ac5c0cf8eeabb8dfd53
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: feb48452b466301f7987db613997158aed160bac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 此方法可更改可视化工具表示的对象。  
@@ -57,6 +58,6 @@ int SetObjectForVisualizer(
 ## <a name="remarks"></a>备注  
  它是取决于实施者，以确定如何返回错误信息。 但是，很可能某些调用方可能唯一查看，请参阅是否返回了异常对象以知道有错误，因此如果出错，此方法始终应返回异常对象。 在调用方想要对进行的情况下，还应提供的错误字符串使用它。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

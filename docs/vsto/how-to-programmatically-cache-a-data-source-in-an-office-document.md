@@ -21,11 +21,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2952ee6de3321300ad87053f0e5c385357fe0ba2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e117243afff5cfa73cd7a27ad8ce0230d8fd512a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>如何：以编程方式在 Office 文档中缓存数据源
   你可以以编程方式添加数据对象到文档中的数据缓存通过调用`StartCaching`方法的主机项，如<xref:Microsoft.Office.Tools.Word.Document>， <xref:Microsoft.Office.Tools.Excel.Workbook>，或<xref:Microsoft.Office.Tools.Excel.Worksheet>。 从数据缓存中删除数据对象，通过调用`StopCaching`将主机项的方法。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  不要调用`StopCaching`的事件处理程序从`Shutdown`的文档或工作表的事件。 按时间`Shutdown`引发事件，就太迟修改数据缓存。 有关详细信息`Shutdown`事件，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [缓存数据](../vsto/caching-data.md)   
  [如何： 使用缓存数据，脱机或服务器上](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [如何： 在受密码保护的文档中缓存数据](../vsto/how-to-cache-data-in-a-password-protected-document.md)   

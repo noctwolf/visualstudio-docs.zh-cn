@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 80798887beee6116b3a93b5d8ec86b14269b5475
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91aa122c96230c7fd34ce2b65925b9166883def6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>类型可视化工具和自定义查看器
 类型可视化工具是非常特定的格式显示一段数据的组件。 这种格式可以完全取决于实施者的可视化工具，最终用户或第三方供应商的可视化工具是它。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>表达式计算器中的自定义查看器的支持  
  EE 还可以支持自定义查看器在其中 EE 本身提供的代码查看的数据类型。 自定义查看器实现[IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)接口，用于处理的任何格式显示数据的所有职责所需; 查看器可以显示的完全控制，甚至还可以允许要修改的数据。 由 EE 提供任何自定义查看器附带 EE 发货产品时。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器组件](../../extensibility/debugger/debugger-components.md)   
  [表达式计算器](../../extensibility/debugger/expression-evaluator.md)   
  [调试引擎](../../extensibility/debugger/debug-engine.md)   

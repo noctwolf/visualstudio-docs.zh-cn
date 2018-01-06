@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 836568ff9c8b18c944ed2fe9e1e407c2176b48c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c7bfb38e31f2ac9a8bb72f93015bfafbe270c64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-sharepoint-solutions"></a>开发 SharePoint 解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中可提供多种 SharePoint 项目类型模板，用于创建 SharePoint 站点和站点元素。 有关可用的项目类型的列表，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是对 SharePoint 项目元素和属性的说明。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="project-properties"></a>项目属性  
   
-|属性名|说明|  
+|属性名|描述|  
 |-------------------|-----------------|  
 |活动部署配置|指定部署过程中执行的步骤序列。 有关详细信息，请参阅[如何： 编辑 SharePoint 部署配置](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)。|  
 |程序集部署目标|确定 *SharePoint 应用程序程序集* 的所在位置。 有效的程序集位置值为 *GlobalAssemblyCache* （默认值）或 *WebApplication*。<br /><br /> 如果将 *Sandboxed Solution* 属性设置为 **true**，则禁用此属性。|  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="project-item-properties"></a>项目项属性  
   
-|属性名|说明|  
+|属性名|描述|  
 |-------------------|-----------------|  
 |部署冲突解决方法|指定在要部署的项目项的属性与服务器上已有项的属性相同时，要执行的操作。 有关详细信息，请参阅[SharePoint 打包和部署疑难解答](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)。|  
 |功能属性|指定在功能部署到 SharePoint 时所随附的一组值（以键/值对的形式存储）。 部署功能后，可在代码中访问属性值。 有关详细信息，请参阅[提供打包和部署信息在项目项中](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
@@ -96,7 +97,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="project-item-file-properties"></a>项目项文件属性  
   
-|属性名|说明|  
+|属性名|描述|  
 |-------------------|-----------------|  
 |生成操作|指定文件与生成和部署过程的关系。 有关详细信息，请参阅 [文件属性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
 |复制到输出目录|指定是否将源文件复制到“输出”目录。 可以是以下值之一：<br /><br /> -   *不要复制*<br />-   *始终复制*<br />-   *如果较新则复制*<br /><br /> 有关详细信息，请参阅 [文件属性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
@@ -105,7 +106,7 @@ ms.lasthandoff: 10/31/2017
 |部署位置|该文件在 SharePoint 服务器中的完全限定路径。 此路径由部署根和部署路径的子属性组成。|  
 |部署路径|在 SharePoint Server 文件，如 Workflow1 文件的相对路径\\。 通过串联 *Deployment Path* 值与 *Deployment Root* 值的末端，创建文件的完全限定路径。<br /><br /> 选择的值*RootFile*为*部署类型*属性更改*部署根*属性为 {SharePointRoot}\\，这会导致在完全限定路径的 {SharePointRoot} \Workflow1\\。 有关详细信息，请参阅[打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。|  
 |Deployment Root|字符串。 将文件部署到 SharePoint Server 中的根文件夹。 例如，{SharePointRoot} \Template\Features\\{FeatureName}\\。<br /><br /> *Deployment Type* 设置决定 *Deployment Root* 属性的值。|  
-|RootFile|文件的部署类型，可决定 *Deployment Root* 值。 可以是以下值之一：<br /><br /> NoDeployment:\<没有值 ><br /><br /> ElementManifest: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> ElementFile: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> TemplateFile: {SharePointRoot} \Template\\<br /><br /> RootFile: {SharePointRoot}\\<br /><br /> GlobalResource: {SharePointRoot} \Resources\\<br /><br /> ClassResource: {ClassResourcePath}\\<br /><br /> 有关更多信息，请参见<xref:Microsoft.VisualStudio.SharePoint.DeploymentType>。|  
+|RootFile|文件的部署类型，可决定 *Deployment Root* 值。 可以是以下值之一：<br /><br /> NoDeployment:\<没有值 ><br /><br /> ElementManifest: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> ElementFile: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> TemplateFile: {SharePointRoot} \Template\\<br /><br /> RootFile: {SharePointRoot}\\<br /><br /> GlobalResource: {SharePointRoot} \Resources\\<br /><br /> ClassResource: {ClassResourcePath}\\<br /><br /> 有关详细信息，请参阅<xref:Microsoft.VisualStudio.SharePoint.DeploymentType>。|  
 |文件名|项文件的文件或文件夹名称|  
 |完整路径|项的文件的位置。 （只读。）|  
   
@@ -132,7 +133,7 @@ ms.lasthandoff: 10/31/2017
 |[SharePoint 解决方案的安全性](../sharepoint/security-for-sharepoint-solutions.md)|描述有关在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中开发 SharePoint 解决方案的安全注意事项。|  
 |[URL 选取器对话框 &#40;Visual Studio &#41; 中的 SharePoint 开发](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|描述将路径引用添加到项目中或在本地 SharePoint 服务器上所使用的对话框。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [入门 &#40;Visual Studio &#41; 中的 SharePoint 开发](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

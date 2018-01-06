@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5332933bf1452ca730b5c49716e10f49851fd749
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>错误：无法在 Web 服务器上启动调试
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 10/31/2017
 
 * 请检查您的应用程序池配置、 其如果需要更正，然后重试。
 
-    可能的版本不匹配 Visual Studio 项目的 ASP.NET 配置应用程序池。 更新应用程序池中的 ASP.NET 版本并重新启动它。 有关详细信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
+    可能的版本不匹配 Visual Studio 项目的 ASP.NET 配置应用程序池。 更新应用程序池中的 ASP.NET 版本并重新启动它。 有关详细信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
     此外，如果密码凭据已更改，你可能需要在你的应用程序池或网站中更新它们。  在应用程序池中，更新中的凭据**高级设置 > 进程模型 > 标识**。 对于网站，更新中的凭据**基本设置 > 作为连接...**.重新启动应用程序池。
     
@@ -129,7 +129,7 @@ ms.lasthandoff: 10/31/2017
 
 * 请确保在 IIS 上安装正确版本的 ASP.NET。
 
-    ASP.NET 在 IIS 上和 Visual Studio 项目中的不匹配的版本可能会导致此问题。 你可能需要在 web.config 中设置的 framework 版本。若要在 IIS 上安装 ASP.NET，请使用[Web 平台安装程序 (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)。 另请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)或为 ASP.NET Core[使用 IIS 的 Windows 上的主机](https://docs.asp.net/en/latest/publishing/iis.html)。
+    ASP.NET 在 IIS 上和 Visual Studio 项目中的不匹配的版本可能会导致此问题。 你可能需要在 web.config 中设置的 framework 版本。若要在 IIS 上安装 ASP.NET，请使用[Web 平台安装程序 (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)。 另请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)或为 ASP.NET Core[使用 IIS 的 Windows 上的主机](https://docs.asp.net/en/latest/publishing/iis.html)。
   
 * 如果你使用的仅为 IP 地址，则解决验证错误
 
@@ -155,11 +155,11 @@ ms.lasthandoff: 10/31/2017
 
      如果未正确安装 IIS，则当你在浏览器中键入 `http://localhost` 时会收到错误。
      
-     有关部署到 IIS 的详细信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)和 ASP.NET core[使用 IIS 的 Windows 上的主机](https://docs.asp.net/en/latest/publishing/iis.html)。
+     有关部署到 IIS 的详细信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)和 ASP.NET core[使用 IIS 的 Windows 上的主机](https://docs.asp.net/en/latest/publishing/iis.html)。
 
 * 在服务器上创建一个基本的 ASP.NET 应用程序 （或使用基本的 web.config 文件）。
 
     如果无法获取你应用程序处理的调试器，请尝试在服务器上，本地创建基本的 ASP.NET 应用程序并尝试调试基本应用程序。 （你可能想要使用默认 ASP.NET MVC 模板。）如果您可以调试基本应用程序，程序可能帮助您识别两个配置之间的差异。 查找在 web.config 文件中，设置的差异，如 URL 重写规则。
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 Web 应用程序：错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

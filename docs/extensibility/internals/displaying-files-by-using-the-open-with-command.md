@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed8a19ce0cfb6a7936d61ff7a5855498d2010359
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a1631632a2ceb66380d1d0c41e54b5a4244a31a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>通过使用命令打开显示文件
 一个项目可以要求 IDE 以显示**打开**对话框。 此请求将提示用户打开具有选定的标准编辑器的文件。 以下步骤介绍了此过程。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  用户选择中的一个项时，就会立即**打开**对话框中，IDE 然后通过调用打开文档<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法。 有关详细信息，请参阅[如何： 打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)   
  [通过使用打开文件命令显示文件](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
  [如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)

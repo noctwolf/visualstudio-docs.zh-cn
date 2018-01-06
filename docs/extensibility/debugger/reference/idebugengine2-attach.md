@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c31e4c8367c1ceba5a4692438e8c1f1503f4f63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb45d2196a9f84b8f956b8ede665df6e3ed249c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 将调试引擎 (DE) 附加到的程序或程序。 由会话调试管理器 (SDM) DE 进程到 SDM 时调用。  
@@ -87,7 +88,7 @@ int Attach(
   
  在调用由给定数组中的程序节点的方法之前`pProgram`或`rgpProgramNodes`，模拟，如有必要，应上启用`IDebugProgram2`表示程序节点的接口。 通常情况下，但是，此步骤不需要。 有关详细信息，请参阅[安全问题](../../../extensibility/debugger/security-issues.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

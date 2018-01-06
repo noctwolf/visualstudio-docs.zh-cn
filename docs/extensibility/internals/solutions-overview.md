@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6a1afea2357fb0c0ef1bcf8152f8a3785a55786
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 539ceb45cce6c317ed3723c5006e6d2a77029335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solutions-overview"></a>解决方案概述
 解决方案是协同工作以创建应用程序的一个或多个项目中的分组。 与解决方案相关的项目和状态信息存储在两个不同的解决方案文件。 解决方案 (.sln) 文件是基于文本的和可以放置在源代码管理下和用户之间共享。 解决方案用户选项 (.suo) 文件是二进制。 因此，.suo 文件不能将放置在源代码管理下，并包含特定于用户的信息。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  如果你想要创建新的解决方案配置包含两个项目的配置和生成中排除第三个，你需要使用的属性页 UI 或自动化。 你无法直接更改解决方案生成管理器配置和及其属性，但你可以操作使用的解决方案生成管理器`SolutionBuild`从 DTE 自动化模型中的类。 有关配置解决方案的详细信息，请参阅[解决方案配置](../../extensibility/internals/solution-configuration.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   

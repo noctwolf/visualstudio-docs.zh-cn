@@ -18,11 +18,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9da75468ae417bd835b457cdbd5219ef9462df1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 77325f725edcec41d71e5af38572f05e59c86198
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>如何：移除文档中的托管代码扩展
   从文档或工作簿的 Microsoft Office Word 或 Microsoft Office Excel 的文档级自定义项的一部分，可以以编程方式删除自定义程序集。 然后，用户可以打开的文档并查看内容，但你将添加到文档中的任何自定义用户界面 (UI) 将不会出现，并将不运行代码。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  生成项目并想要删除自定义项的计算机上运行应用程序。 计算机必须具有 Visual Studio 2010 Tools for Office Runtime 安装。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 ServerDocument 类管理服务器上的文档](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [如何：将托管代码扩展附加到文档](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
   

@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b68392d94b16f13106e421c5d466e3fbdf4a2b27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 40fcd345a2a07a0ebdcf9e984b060cc81e946fc3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 转储写入文件。  
@@ -52,5 +53,5 @@ int WriteDump(
 ## <a name="remarks"></a>备注  
  程序转储通常将包括当前堆栈帧，堆栈本身、 运行程序，并可能程序拥有任何内存中的线程的列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

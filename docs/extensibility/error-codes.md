@@ -16,16 +16,17 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50d05e529a3202f59df53801728b40fee1c68f40
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 13eff6aca9470e88be788fe3fcb625fecc32c2c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-codes"></a>错误代码
 当源控制插件 API 函数将返回错误时，它应是以下的错误代码之一。 所有错误都是负数，警告或信息性的错误代码都为正数，并且成功为 0。  
   
-|错误代码|值|描述|  
+|错误代码|“值”|描述|  
 |----------------|-----------|-----------------|  
 |`SCC_I_SHARESUBPROJOK`|7|将文件添加从两个步骤中的源代码管理插件的支持。 有关详细信息，请参阅[SccSetOption](../extensibility/sccsetoption-function.md)。|  
 |`SCC_I_FILEDIFFERS`|6|本地文件是不同于从源代码管理数据库中的文件 (例如， [SccDiff](../extensibility/sccdiff-function.md)可能会返回此值)。|  
@@ -82,5 +83,5 @@ IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
   
  即使插件已将其标记文件只读的某项操作时，源代码管理插件应在工作文件夹中，请不要去推测上文件的权限。 中的工作文件夹的文件可以移动、 删除和更改即插即用接程序的控制范围之外。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件](../extensibility/source-control-plug-ins.md)

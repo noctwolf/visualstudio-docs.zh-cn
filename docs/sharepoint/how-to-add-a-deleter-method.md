@@ -26,11 +26,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c1e6f76c1c425ce31b518e9c4cb3db4d6280e84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 622be02def57621f43439f84f84321cb1bac9911
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-deleter-method"></a>如何：添加 Deleter 方法
   你可以启用最终用户可以添加从 SharePoint 站点上的外部列表中删除数据记录*删除器*到模型的方法。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
      [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
  [如何： 添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   

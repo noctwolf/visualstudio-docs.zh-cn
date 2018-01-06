@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd4e46148950af925b7b41c4e3b5bd66fce5063c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 288e8f680d12aeffb2979c3f0d89b44b0553b62e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>属性和扩展，由项目子类型的方法
 项目子类型具有大量的能力，因为它被构造为基本项目的聚合器影响的项目的行为。 本部分总结了一些可以增强或修改的项目子类型的功能。  
@@ -51,5 +52,5 @@ ms.lasthandoff: 10/31/2017
   
  该基项目提供了上述属性的默认实现。 基本项目获取这些通过调用`QueryInterface`为<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>外面项目子类型，从而允许项目子类型，以重写属性的实现。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项目子类型设计](../../extensibility/internals/project-subtypes-design.md)

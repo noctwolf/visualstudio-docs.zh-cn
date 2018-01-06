@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4dd9df4832e08d33a8209181e47a38101a5658f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5703410772945a95ed0efea95a665b2a106e0ce7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>域特定语言入门
 本主题介绍中定义和使用的建模 SDK for Visual Studio 创建域特定语言 (DSL) 的基本概念。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/27/2017
   
  本概述的其余部分是一个演练，介绍创建和使用中的域特定语言的基本操作[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  若要定义 DSL，必须安装以下组件：  
   
 |||  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/27/2017
   
      ![创建 DSL 对话框](../modeling/media/create_dsldialog.png "Create_DSLDialog")  
   
-4.  在**名称**框中，键入**FamilyTree**。 单击“确定”。  
+4.  在**名称**框中，键入**FamilyTree**。 单击 **“确定”**。  
   
      **域特定语言向导**将打开，并且显示模板 DSL 解决方案的列表。  
   
@@ -405,7 +406,7 @@ ms.lasthandoff: 10/27/2017
   
 2.  重新生成任何实验 Dsl 或其他实验[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]你仍想要使用的扩展。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)   
  [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   
 

@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4a4162b91a9345c94b7bd6a7e2f1099da3d631e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5651e7c00abe91ec8e4cae7b720b6534318051f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>故障排除 RegPkg 程序包注册
 > [!NOTE]
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/31/2017
   
  RegPkg 的早期版本可以注册通过使用 Microsoft.VisualStudio.Shell.dll 程序集生成的包。 但是，它无法注册使用该程序集的更高版本生成的包。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPackage](../../extensibility/internals/vspackages.md)

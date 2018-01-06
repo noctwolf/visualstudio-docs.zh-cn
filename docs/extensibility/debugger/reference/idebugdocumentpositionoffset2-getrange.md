@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65ae083dcc744f93948c03c6dfb3cd37ce265701
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 09b415e01b6c768f471bdf9ad2e595d1a910d582
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 检索当前的文档位置的范围。  
@@ -58,6 +59,6 @@ Line 6: x = 1;
   
  第 5 行分配给正在调试的程序的任何代码。 如果第 5 行设置断点调试器想 DE 向前搜索一定影响代码的第一行，调试器会指定一系列，包括的其他候选行断点可能正确放置。 DE 将然后向前搜索这些行直到它找到可以接受断点的行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)   
  [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ac7839d4d7456f28d7e4b5b8ecd4096904dce38e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e41fc2a7d09f50d70caca939e3fdd691b1d05c9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="glyph-control-source-control-vspackage"></a>标志符号控件 (源控件 VSPackage)
 可用于源代码管理 Vspackage 深度集成的一部分是能够显示其自己的标志符号，以指示在源代码管理下的项的状态。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A>方法由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]为了获取显示各种源控件的图像列表的状态。 源代码管理 VSPackage IDE 返回其自定义标志符号的图像列表的句柄。 IDE 此时生成的图像列表的副本，并更高版本使用它来选择要显示的标志符号。 如果不支持的新接口或`IVsSccGlyphs::GetCustomGlyphList`方法返回 E_NOTIMPL，则 IDE 从提供的标志符号的默认列表中获取其标志符号[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>

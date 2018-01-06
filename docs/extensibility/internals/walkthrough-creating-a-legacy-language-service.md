@@ -13,16 +13,17 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 256a609dad857097731e4914a11623fe62ad7664
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 660d33dd2d5c46d8020172c1fcf74bfb64b43360
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>演练： 创建旧语言服务
 使用托管的包框架 (MPF) 语言类来实现中的语言服务[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]非常简单。 你需要 VSPackage 来承载该语言服务、 语言服务本身和你的语言的分析器。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../../extensibility/visual-studio-sdk.md)。  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio 包项目模板的位置  
@@ -132,5 +133,5 @@ ms.lasthandoff: 10/31/2017
   
      例如，键入`public override`以查看所有可以在此类中重写的方法的列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [实现旧语言服务](../../extensibility/internals/implementing-a-legacy-language-service1.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b33516bd013f744813b2fdb357f224bcb0d9822
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6870f1733d507f2cf46d196b2bba027b998b5ba4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和代码识别 ImmutableArrays 库
 
@@ -311,7 +312,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 你可以看到所有完成的代码[此处](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)。  子文件夹 DoNotUseImmutableArrayCollectionInitializer 和 DoNotUseImmutableArrayCtor 每个已为查找问题和 C# 文件中实现的代码的修补程序显示在 Visual Studio 电灯泡 UI C# 文件。  请注意，完成的代码有少量的多个抽象，以免提取 ImmutableArray\<T > 反复类型对象。  它使用嵌套的已注册的操作将类型对象保存在可用的上下文中时的子操作 （分析对象创建和分析集合初始化） 执行。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 * [\\\Build 2015 talk](http://channel9.msdn.com/events/Build/2015/3-725)
 * [在 GitHub 上的已完成的代码](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

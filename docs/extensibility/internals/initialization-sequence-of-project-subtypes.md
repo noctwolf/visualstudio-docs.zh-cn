@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd80a8571a9c6167dab3be355365754a9e1fb7f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: db259b7bc5f9935b229f4f6522ae14a4496f0e15
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>项目子类型的初始化顺序
 环境构造一个项目，通过调用的基本项目工厂实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>。 当环境确定项目文件的扩展名的项目类型 GUID 列表不为空时，将开始项目子类型的构造。 项目文件扩展名和项目 GUID 指定的项目是否[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]项目类型。 例如，.vbproj 扩展和 {F184B08F-C81C-45F6-A57F-5ABD9991F28F} 标识[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]项目。  
@@ -134,6 +135,6 @@ HRESULT HrCreateInnerProj
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Flavor>   
  [项目子类型](../../extensibility/internals/project-subtypes.md)

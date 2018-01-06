@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 23288d1afe9b9c0a181a5d978b1956071b683218
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 74e58042c5bcd2aa4883b3e8bb0fc484a59237ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-decorators"></a>修饰器的属性
 修饰符是图标、 文本或可以显示在形状或关系图上的连接器的展开/折叠 v 形。 下表显示三种类型的修饰的属性。 某些属性会显示仅在形状修饰符或仅连接器修饰符。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/27/2017
 |属性|描述|默认|  
 |--------------|-----------------|-------------|  
 |DisplayName|修饰器，将生成的设计器中显示的名称。|展开折叠修饰器|  
-|名称|修饰名称。|ExpandCollapseDecorator|  
+|name|修饰名称。|ExpandCollapseDecorator|  
 |说明|与此修饰器相关联的非正式说明。|\<无 >|  
 |HorizontalOffset|水平偏移量，相对于修饰器，以英寸为单位的默认位置。 （在形状上仅。）|0|  
 |VerticalOffset|垂直偏移量，相对于修饰器，以英寸为单位的默认位置。 （在形状上仅。）|0|  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/27/2017
 |--------------|-----------------|-------------|  
 |DefaultIcon|要显示的图标或图像文件的路径。|\<无 >|  
 |DisplayName|修饰器要在生成的设计器中显示的名称。|图标修饰器|  
-|名称|修饰名称。|IconDecorator|  
+|name|修饰名称。|IconDecorator|  
 |说明|与修饰器相关联的非正式说明。|\<无 >|  
 |HorizontalOffset|水平偏移量，相对于修饰器，以英寸为单位的默认位置。 （在形状上仅。）|0|  
 |VerticalOffset|垂直偏移量，相对于修饰器，以英寸为单位的默认位置。 （在形状上仅。）|0|  
@@ -54,11 +55,11 @@ ms.lasthandoff: 10/27/2017
   
 |属性|描述|默认|  
 |--------------|-----------------|-------------|  
-|DefaultText|要显示的默认文本。|标签|  
-|DisplayName|修饰器要在生成的设计器中显示的名称。|标签|  
+|DefaultText|要显示的默认文本。|Label|  
+|DisplayName|修饰器要在生成的设计器中显示的名称。|Label|  
 |FontSize|如所示修饰器文本的字体大小。|8|  
 |FontStyle|如所示修饰器文本的字体样式。|规则|  
-|名称|修饰名称。|标签|  
+|name|修饰名称。|Label|  
 |说明|与修饰器相关联的非正式说明。|\<无 >|  
 |HorizontalOffset|水平偏移量，相对于修饰器，以英寸为单位的默认位置。 （在形状上仅。）|0|  
 |VerticalOffset|垂直偏移量，相对于修饰器，以英寸为单位的默认位置。 （在形状上仅。）|0|  
@@ -66,5 +67,5 @@ ms.lasthandoff: 10/27/2017
 |OffsetFromShape|从该形状，相对于其默认位置，以英寸为单位修饰器偏移量。 （在连接器仅。）|0|  
 |位置|修饰器默认位置。|TargetBottom|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

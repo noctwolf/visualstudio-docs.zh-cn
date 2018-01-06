@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7aab5978d2fc5f7bee82b097ed61a9603d7e198
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 664ab99af45e8c449247c5515184293ecb1a469f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>如何： 隐藏的文本在提供支持，旧语言服务
 你可以创建隐藏的文本区域除了大纲区域。 隐藏的文本区域可以是客户端控制或编辑器控制和用于完全隐藏的文本区域。 编辑器将显示为水平线条的隐藏的区域。 此示例是在 HTML 编辑器中的仅限脚本视图。  

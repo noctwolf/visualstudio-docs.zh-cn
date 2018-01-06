@@ -12,14 +12,15 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c05905e8ffeec3aa699aac9dfa46c4b017b86be5
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9ee45132e4acf45bccffd3e05808defd3c7ced6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>使用 IntelliTrace 步骤后的视图快照
-IntelliTrace 步骤后会自动编制的应用程序的每个断点和调试器快照步骤事件。 记录的快照，可以返回到上一个断点或步骤，并查看应用程序的状态，因为它在过去。 IntelliTrace 步骤后可以节省你时间： 如果您想要查看以前的应用程序状态，但不想重新启动调试或重新创建所需的应用程序的状态。
+IntelliTrace 步骤后会自动编制的应用程序的每个断点和调试器快照步骤事件。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
 
 IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本，版本中开始提供，要求 Windows 10 周年 Update 或更高版本。 调试 ASP.NET、 WinForms、 WPF、 托管的控制台应用程序和托管的类库当前支持的功能。 当前不支持调试 ASP.NET Core、.NET 核心或 UWP 应用程序。 
   
@@ -38,7 +39,7 @@ IntelliTrace 拍摄的快照应用程序的进程上每个调试器步骤和断�
 
 ## <a name="navigate-and-view-snapshots"></a>导航并查看快照
 
-你可以使用事件之间导航**步骤向后 （Alt + [）**和**单步前进 (Alt +])**中调试工具栏按钮。 这些按钮导航中显示的事件**事件**选项卡中**诊断工具窗口**。 单步执行向后翻或转发到的事件自动激活历史调试所选事件。
+你可以使用事件之间导航**步骤向后 （Alt + [）**和**单步前进 (Alt +])**中调试工具栏按钮。 这些按钮导航中显示的事件**事件**选项卡中**诊断工具窗口**。 后退或前进到某个事件会自动激活所选事件的历史调试。
 
 ![向后移动和转发按钮](../debugger/media/intellitrace-step-back-icons-description.png "后退一步和单步前进按钮")
 
@@ -85,7 +86,7 @@ IntelliTrace 拍摄的快照应用程序的进程上每个调试器步骤和断�
         1. 用 Visual Studio 安装程序安装用于桌面的 VC++ 2015.3 v140 工具集组件 (x86, x64)。
         2. 生成目标应用程序。
         3. 从命令行中，使用 editbin 工具设置`Largeaddressaware`目标可执行文件的标志。 例如，你可以 （在更新的路径） 之后使用此命令:"C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe"/Largeaddressaware"C:\Path\To\Application\app.exe"。
-        4. 若要开始调试时，按**F5**。 现在，调试器将单步和断点上拍摄快照。
+        4. 若要启用调试，请按 F5。 现在，调试器将单步和断点上拍摄快照。
 
         > [!Note]
         > `Largeaddressaware`标志必须设置每个使用更改重新生成可执行文件的时间。

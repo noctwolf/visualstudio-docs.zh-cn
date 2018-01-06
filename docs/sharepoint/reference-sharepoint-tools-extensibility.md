@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83800ece50304d578c5662ca6794af83021d9156
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8b1782d5efa47fffb09d2e54413be1d5e35f89d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>参考（SharePoint 工具扩展）
   本部分包含用于扩展 Visual Studio 中的 SharePoint 工具的参考文档。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
  [API 参考 &#40;SharePoint 工具扩展 &#41;](../sharepoint/api-reference-sharepoint-tools-extensibility.md)  
  包含用于扩展 Visual Studio 中的 SharePoint 工具的 API 参考文档。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
   
   

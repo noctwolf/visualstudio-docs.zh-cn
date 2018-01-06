@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f020dbd8aef022acaafe0561fba11343e9272ff6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
 若要在任何计算机上的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用自定义指令处理器，必须使用本主题中介绍的方法之一注册该处理器。  
@@ -184,7 +185,7 @@ ms.lasthandoff: 10/27/2017
   
  如果自定义指令处理器不在 GAC 中，则注册表子项应如下表所示：  
   
-|名称|类型|数据|  
+|name|类型|数据|  
 |----------|----------|----------|  
 |(默认)|REG_SZ|(未设置值)|  
 |类|REG_SZ|**\<Namespace 名称 >。\<类名称 >**|  
@@ -192,11 +193,11 @@ ms.lasthandoff: 10/27/2017
   
  如果程序集在 GAC 中，则注册表子项应如下表所示：  
   
-|名称|类型|数据|  
+|name|类型|数据|  
 |----------|----------|----------|  
 |(默认)|REG_SZ|(未设置值)|  
 |类|REG_SZ|\<**完全限定的类名**>|  
 |Assembly|REG_SZ|\<**GAC 中程序集名称**>|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)

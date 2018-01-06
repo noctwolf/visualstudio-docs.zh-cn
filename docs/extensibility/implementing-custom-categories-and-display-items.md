@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f03dbae8b320161705c50da06d605cfc335074cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2dedd54aa1db26e38b6f212c616bd38c09018961
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>实现自定义类别和显示项
 VSPackage 可以提供控件的字体和颜色到其文本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]通过自定义类别和显示项的集成的开发环境 (IDE)。  
@@ -54,7 +55,7 @@ VSPackage 可以提供控件的字体和颜色到其文本[!INCLUDE[vsprvs](../c
   
 -   填充具有两个值注册表：  
   
-    |名称|类型|数据|描述|  
+    |name|类型|数据|描述|  
     |----------|----------|----------|-----------------|  
     |类别|REG_SZ|GUID|一个 GUID 创建以标识的类别。|  
     |Package|REG_SZ|GUID|支持类别 VSPackage 服务的 GUID。|  
@@ -69,7 +70,7 @@ VSPackage 可以提供控件的字体和颜色到其文本[!INCLUDE[vsprvs](../c
   
 -   填充具有两个值注册表：  
   
-    |名称|类型|数据|描述|  
+    |name|类型|数据|描述|  
     |----------|----------|----------|-----------------|  
     |类别|REG_SZ|GUID|创建以标识组 GUID。|  
     |Package|REG_SZ|GUID|支持类别服务的 GUID。|  
@@ -116,7 +117,7 @@ VSPackage 可以提供控件的字体和颜色到其文本[!INCLUDE[vsprvs](../c
   
      IDE 调用相应的方法后的用户修改**字体和颜色**页。 例如，它调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A>方法如果选择新的字体。  
   
-     - 或 -  
+     或  
   
 -   轮询更改 IDE。  
   
@@ -125,7 +126,7 @@ VSPackage 可以提供控件的字体和颜色到其文本[!INCLUDE[vsprvs](../c
     > [!NOTE]
     >  为了确保通过轮询获取的结果是否正确，可能会有用使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>接口来确定缓存刷新和更新是否需要在调用的检索方法之前<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>   

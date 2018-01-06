@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c167c0a0f0a9dd0c14b92f27c0d9d862b5157072
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3e8157d6ecede516ca1dcb2900cf081c11a2b790
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-implementation-of-locals"></a>局部变量的实现示例
 > [!IMPORTANT]
@@ -70,5 +71,5 @@ ms.lasthandoff: 10/31/2017
  [MyCEE 示例](http://msdn.microsoft.com/en-us/624a018b-9179-402f-9d48-3aec87b48f4f)  
  演示一种用于创建 MyC 语言的表达式计算器的实现方式。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [显示局部](../../extensibility/debugger/displaying-locals.md)

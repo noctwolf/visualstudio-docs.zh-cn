@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ecd310065162451c6d7d6857b1f21646a82b8ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ff40bf1abb6d3583d7df8ec8423cf7be743a12c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>API 参考（SharePoint 工具扩展）
   本部分包含用于扩展 Visual Studio 中的 SharePoint 工具的 API 参考文档。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
  <xref:Microsoft.VisualStudio.SharePoint.Validation>  
  包含用于为 SharePoint 项目自定义功能和包验证行为的类型。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [引用 &#40;SharePoint 工具扩展 &#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [概述的编程模型的 SharePoint 工具扩展](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   

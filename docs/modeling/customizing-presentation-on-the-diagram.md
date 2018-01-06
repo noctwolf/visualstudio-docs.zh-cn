@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6f171bdffd8fb76801156331f7016d061c8333a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 68d9f4fefb1a092b90431bce335d8abcba6b6bbb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>自定义图表的演示
 关系图是域特定语言设计器的主呈现区域。 通常，用户将使用关系图构造其模型。 可以自定义该关系图，如以下主题所述。  
@@ -35,5 +36,5 @@ ms.lasthandoff: 10/27/2017
   
 -   [在 Windows 窗体中嵌入图表](../modeling/embedding-a-diagram-in-a-windows-form.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)

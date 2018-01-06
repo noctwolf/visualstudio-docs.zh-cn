@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84110c4e7d6a3e940df587811c24d4316f786cf4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: af2f9e5851e53c86fb5466e7fc2cdfe515b5fb21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
 已弃用。 请勿使用。  
@@ -47,5 +48,5 @@ int DetachDebugger_V7 ();
   
  调试器会意外退出时调用此方法。 当调用此方法时，DE 应恢复程序，就好像用户从其分离。 应发送没有更多的调试事件。 该程序应处于从调试器的另一个实例可附加的状态。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

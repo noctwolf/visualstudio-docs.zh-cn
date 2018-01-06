@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 519b842f99ff3e4460626b82aafd24a02f9e720d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 545d5fa19182678ec1610fa7b689332e272f9962
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>如何： 使用内置可着色项
 使用内置可着色项之前，你必须首先向发出信号集成的开发环境 (IDE) 不提供你自己自定义可着色项，在这种情况下将是<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>对象。 通过设置语言服务的注册表项来执行此操作。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  如果你要提供自定义可着色项，则未设置此注册表项。 有关详细信息，请参阅[自定义可着色项](../../extensibility/internals/custom-colorable-items.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [语法着色中自定义编辑器](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [语法着色中旧语言服务](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [实现语法着色](../../extensibility/internals/implementing-syntax-coloring.md)   

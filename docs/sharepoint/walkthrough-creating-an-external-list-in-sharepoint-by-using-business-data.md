@@ -26,11 +26,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: babb8456593ba953982390f048960449069ca6fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8ecc80a3c26b97b9754f998bd0903471d00cd1d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data"></a>演练：使用业务数据在 SharePoint 中创建外部列表
   业务数据连接 (BDC) 服务使 SharePoint，以显示从后端服务器应用程序、 Web 服务和数据库的业务数据。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
 -   测试项目。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   受支持的 Windows 和 SharePoint 的版本。 有关详细信息，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -199,7 +200,7 @@ ms.lasthandoff: 10/31/2017
   
 10. 重复步骤 6 以创建针对每个以下字段的类型描述符。  
   
-    |名称|类型名称|  
+    |name|类型名称|  
     |----------|---------------|  
     |FirstName|System.String|  
     |LastName|System.String|  
@@ -263,7 +264,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-the-project"></a>测试项目  
   
-1.  选择**F5**密钥。  
+1.  选择 F5。  
   
      打开 SharePoint 站点。  
   
@@ -294,7 +295,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [如何： 添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   

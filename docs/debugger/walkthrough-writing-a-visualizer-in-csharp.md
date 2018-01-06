@@ -7,11 +7,7 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: CSharp
 helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
@@ -20,11 +16,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd63f183d42111cfb8381b5fee86debbca6cd04e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 6e161b3c914d0a87a720f1217b52a571b85f5ff9
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>演练：用 C# 编写可视化工具 #
 本演练演示如何使用 C# 编写简单的可视化工具。 将在本演练中创建的可视化工具显示使用的 Windows 窗体消息框字符串内容。 此简单字符串可视化工具不是本身而言，尤其有用，但它演示创建其他数据类型的更多有用可视化工具时必须遵循的基本步骤。  
@@ -48,7 +45,7 @@ ms.lasthandoff: 11/11/2017
   
 4.  在**名称**框中，键入类库，例如 MyFirstVisualizer 正确的名称。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
  创建类库后，你必须添加对 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的引用，以便才能在此处使用定义的类。 添加引用之前，但是，你必须重命名某些类以使它们具有有意义的名称。  
   
@@ -65,11 +62,11 @@ ms.lasthandoff: 11/11/2017
   
 4.  在**添加引用**对话框中，在**.NET**选项卡上，选择 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
 6.  在 DebuggerSide.cs 中，将下面的语句添加到 `using` 语句中：  
   
-    ```  
+    ```csharp  
     using Microsoft.VisualStudio.DebuggerVisualizers;  
     ```  
   
@@ -79,13 +76,13 @@ ms.lasthandoff: 11/11/2017
   
 1.  在 debuggerside.cs 中，转到下面的代码行：  
   
-    ```  
+    ```csharp  
     public class DebuggerSide  
     ```  
   
 2.  更改到的代码：  
   
-    ```  
+    ```csharp  
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
@@ -95,13 +92,13 @@ ms.lasthandoff: 11/11/2017
   
 -   在`public class DebuggerSide`，添加以下**方法：**  
   
-    ```  
-    override protected void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
+    ```csharp  
+    protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
     {  
     }  
     ```  
   
- `Show`方法包含实际创建可视化工具对话框或其他用户界面，并显示已从调试器传递到可视化工具的信息的代码。 您必须添加创建该对话框并显示该信息的代码。 在此演练中，你将执行此操作使用的 Windows 窗体消息框。 首先，必须添加的引用和`using`System.Windows.Forms 的语句。  
+ `Show`方法包含实际创建可视化工具对话框或其他用户界面，并显示已从调试器传递到可视化工具的信息的代码。 你必须添加创建该对话框并显示该信息的代码。 在此演练中，你将执行此操作使用的 Windows 窗体消息框。 首先，必须添加的引用和`using`System.Windows.Forms 的语句。  
   
 #### <a name="to-add-systemwindowsforms"></a>添加 System.Windows.Forms  
   
@@ -109,11 +106,11 @@ ms.lasthandoff: 11/11/2017
   
 2.  在**添加引用**对话框中，在**.NET**选项卡上，选择 System.Windows.Forms.DLL。  
   
-3.  单击“确定”。  
+3.  单击 **“确定”**。  
   
 4.  在 DebuggerSide.cs 中，将下面的语句添加到 `using` 语句中：  
   
-    ```  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -123,7 +120,7 @@ ms.lasthandoff: 11/11/2017
   
 1.  在 `Show` 方法中，添加以下代码行：  
   
-    ```  
+    ```csharp  
     MessageBox.Show(objectProvider.GetObject().ToString());  
     ```  
   
@@ -137,12 +134,12 @@ ms.lasthandoff: 11/11/2017
   
 1.  后向 debuggerside.cs 中，添加以下特性代码`using`语句之前`namespace MyFirstVisualizer`:  
   
-    ```  
+    ```csharp  
     [assembly:System.Diagnostics.DebuggerVisualizer(  
     typeof(MyFirstVisualizer.DebuggerSide),  
     typeof(VisualizerObjectSource),  
-    Target  = typeof(System.String),  
-    Description  = "My First Visualizer")]  
+    Target = typeof(System.String),  
+    Description = "My First Visualizer")]  
     ```  
   
 2.  上**生成**菜单上，选择**生成 MyFirstVisualizer**。 该项目应能成功生成。 在继续前更正所有生成错误。  
@@ -153,7 +150,7 @@ ms.lasthandoff: 11/11/2017
   
 1.  将下面的方法添加到类 `public DebuggerSide`：  
   
-    ```  
+    ```csharp  
     public static void TestShowVisualizer(object objectToVisualize)  
     {  
        VisualizerDevelopmentHost visualizerHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(DebuggerSide));  
@@ -173,7 +170,7 @@ ms.lasthandoff: 11/11/2017
   
 3.  在**名称**框中，键入有意义的名称，控制台应用程序，如`MyTestConsole`。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
  现在，必须添加必要的引用，以便 MyTestConsole 能够调用 MyFirstVisualizer。  
   
@@ -183,13 +180,13 @@ ms.lasthandoff: 11/11/2017
   
 2.  在**添加引用**对话框中， **.NET**选项卡上，选择 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
   
-3.  单击“确定”。  
+3.  单击 **“确定”**。  
   
 4.  右键单击**MyTestConsole**选择**添加引用**试。  
   
 5.  在**添加引用**对话框中，单击**项目**选项卡，然后单击 MyFirstVisualizer。  
   
-6.  单击“确定”。  
+6.  单击 **“确定”**。  
   
  现在，你将添加代码以完成测试套。  
   
@@ -203,13 +200,13 @@ ms.lasthandoff: 11/11/2017
   
 3.  在 TestConsole.cs，添加以下代码到`using`语句：  
   
-    ```  
+    ```csharp  
     using MyFirstVisualizer;  
     ```  
   
 4.  在方法 `Main` 中，添加以下代码：  
   
-    ```  
+    ```csharp  
     String myString = "Hello, World";  
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
@@ -243,7 +240,7 @@ ms.lasthandoff: 11/11/2017
   
 4.  在**名称**框中，键入类库，如 MySecondVisualizer 正确的名称。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
  现在，你可以向其添加可视化工具项：  
   
@@ -261,7 +258,7 @@ ms.lasthandoff: 11/11/2017
   
  这是向其所有没有。 看一下 SecondVisualizer.cs 的文件，并查看该模板添加为你的代码。 请继续并该代码。 既然你知道基础知识，你可以在你创建更复杂和有用可视化工具你自己。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [可视化工具体系结构](../debugger/visualizer-architecture.md)   
  [如何： 安装可视化工具](../debugger/how-to-install-a-visualizer.md)   
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)

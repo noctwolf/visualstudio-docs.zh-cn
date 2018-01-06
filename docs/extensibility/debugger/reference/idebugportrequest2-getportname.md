@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab94c9bcb0ec686b9b2d8aba7378bbd55ca71c72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5906560574836390656254055130af3275fa4f76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
 获取端口的名称。  
@@ -47,5 +48,5 @@ int GetPortName(
 ## <a name="remarks"></a>备注  
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)接口通常从传递调试包 （客户端） 到端口供应商 （服务器） 以获取连接到的端口。 调试包和端口提供程序均为感知的端口可能的选择。 如果一个简单的字符串可以描述端口，则`IDebugPortRequest2::GetPortName`方法有足够的信息来建立连接。 否则，其他接口可以由客户端，可以通过使用 server 获取`IDebugPortRequest2::QueryInterface`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)

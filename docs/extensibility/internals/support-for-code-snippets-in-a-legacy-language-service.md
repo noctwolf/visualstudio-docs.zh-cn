@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0089e5a8bf85ba352788767c821d95f41ca60eec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6102a5bb6298cd6403285e3d36842424b0be3412
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>对旧语言服务中的代码段的支持
 代码片段是代码的一种插入到的源文件。 本身的代码片段是一组字段的基于 XML 的模板。 代码段插入，并且可以具有不同的值，具体取决于在插入代码段的上下文之后，将突出显示这些字段。 立即插入代码段后，该语言服务即可格式化代码段。  
@@ -391,7 +392,7 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [旧语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [注册旧语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [代码片段](../../ide/code-snippets.md)   

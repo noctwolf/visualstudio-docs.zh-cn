@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fed5f54c843732b45339d7cc37d7d0820a58d8a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fba3718052b708b5c5d88306c022ed9c397a99cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 此方法显式禁用编辑并继续此过程 （和它包含的所有程序）。 自定义端口供应商应始终返回`E_NOTIMPL`。  
@@ -49,6 +50,6 @@ HRESULT DisableENC(
 ## <a name="remarks"></a>备注  
  一次编辑并继续禁用的进程，则仅通过重新启动此进程可以重新启用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

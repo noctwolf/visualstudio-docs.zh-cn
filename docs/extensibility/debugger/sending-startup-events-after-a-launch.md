@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0620821ec908deed2c57ddfefb40763a48fd2074
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 65e05d7da2acf5bd3eaf8dab1e3781d3d5b244a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sending-startup-events-after-a-launch"></a>在启动之后发送启动事件
 一旦的调试引擎 (DE) 附加到程序时，会将一系列启动事件发送回调试会话。  
@@ -45,6 +46,6 @@ ms.lasthandoff: 10/31/2017
   
  当代码已加载并准备好运行，但在执行任何代码之前，DE 发送 SDM [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)负载完成事件。 最后，如果程序尚未运行，则 DE 会发送[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)入口点事件，信号发送程序已达到其主入口点，并且随时可供调试。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [控制执行](../../extensibility/debugger/control-of-execution.md)   
  [调试任务](../../extensibility/debugger/debugging-tasks.md)

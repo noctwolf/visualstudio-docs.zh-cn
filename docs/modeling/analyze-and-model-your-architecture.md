@@ -35,11 +35,12 @@ caps.latest.revision: "127"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 57d04543cf604ced1b94632c2f2c3bc566267f85
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: bc06788e8308a56cb0e38dbca6e9ddb60ce12cd1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-and-model-your-architecture"></a>对体系结构进行分析和建模
 请确保你的应用通过使用 Visual Studio 体系结构和建模工具进行设计和建模应用程序满足体系结构要求。 
@@ -77,6 +78,6 @@ ms.lasthandoff: 11/07/2017
   
 [Visual Studio 可视化和建模工具论坛](http://go.microsoft.com/fwlink/?LinkId=184720)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [新增功能](../modeling/what-s-new-for-design-in-visual-studio.md)   
  [DevOps 和应用程序生命周期管理](http://msdn.microsoft.com/Library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)

@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d08cd747c762d7820e4744251fb00abff22b3fdc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c27934d043a067f88bd9f47efe7d8f7972959e10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-activity-log"></a>如何： 使用活动日志
 Vspackage 可以将消息写入活动日志。 此功能非常适合在零售环境中进行调试 Vspackage。  
@@ -60,7 +61,7 @@ Vspackage 可以将消息写入活动日志。 此功能非常适合在零售环
   
  你应写入之前先获取活动日志。 不要缓存或保存活动日志供将来使用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
  [故障排除的 Vspackage](../extensibility/troubleshooting-vspackages.md)   

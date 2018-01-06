@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5118fe29463368bcca90e21830e1418d41c18339
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>旧版 API 中的文本缓冲区事件
 文本缓冲区对象发出多个不同的事件，您可以对不同的情况作出响应。  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|通知客户端的最后一个提交手势以触发该事件，并提供的文本更改范围。 `IVsPreliminaryTextChangeCommitEvents`接口不激发以响应撤消或重做命令。 针对具有撤消管理器的缓冲区的仅触发事件。 `IVsPreliminaryTextChangeCommitEvents`不会触发之前其他事件，如整齐排列，为了确保在提交更改之前，其他事件请勿更改文本。 你的 VSPackage 必须监视`IVsPreliminaryTextChangeCommitEvents`接口或`IVsFinalTextChangeCommitEvents`接口，但不是两者。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|通知客户端的最后一个提交手势以触发该事件，并提供的文本更改范围。 `IVsFinalTextChangeCommitEvents`接口不激发以响应撤消或重做命令。 针对具有撤消管理器的缓冲区的仅触发事件。 `IVsFinalTextChangeCommitEvents`适合使用仅由语言服务或对编辑具有完全控制其他对象。 你的 VSPackage 必须监视`IVsPreliminaryTextChangeCommitEvents`接口或`IVsFinalTextChangeCommitEvents`接口，但不是两者。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [通过使用旧版 API 访问文本缓冲区](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
  [如何： 为与旧版 API 的文本缓冲区事件注册](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

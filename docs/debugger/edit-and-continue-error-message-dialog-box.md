@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
 - vs.debug.ENC.CannotEditWhileException
@@ -21,11 +21,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 21d72c5bb4bacaed0324d688d96c663e3153b6a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01cd34aacb4abea5f2f3ce29fcb53ba34aaeaf21
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>“编辑并继续”错误消息对话框
 当在支持编辑并继续的语言中进行调试时，会出现此对话框但**编辑并继续**不可用于所做的代码更改的类型。 此框中的错误消息提供了更加详细的说明。 此对话框出现的可能原因包括：  
@@ -60,6 +61,6 @@ ms.lasthandoff: 10/31/2017
  **还行**  
  退出对话框并取消之前的编辑尝试。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C + + 编辑并继续博客文章](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
  [受支持的代码更改 (C++)](../debugger/supported-code-changes-cpp.md)

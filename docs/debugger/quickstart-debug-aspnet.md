@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0ba7735dd44d029889c57d151e6fba39ba7b2df
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: aspnet
+ms.openlocfilehash: c740265220f844b24ba9b4eeb133de185773a7a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器进行调试 ASP.NET
 
@@ -135,6 +136,6 @@ A*断点*标记，它指示 Visual Studio 应在哪个位置挂起你运行代�
 - 若要了解有关调试器的详细信息，请参阅[启动调试器，并导航代码](../debugger/getting-started-with-the-debugger.md)。
 - 若要了解有关断点的详细信息，请参阅[使用断点](../debugger/using-breakpoints.md)。
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)

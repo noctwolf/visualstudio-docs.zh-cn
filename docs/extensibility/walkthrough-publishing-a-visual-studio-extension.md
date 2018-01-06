@@ -15,17 +15,18 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8eac89a2bdde3b0a20ea3a98775de84a503f86c
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: vssdk
+ms.openlocfilehash: 9b2823c15309e63262052fd3cc95d914bf1614c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>演练： 发布 Visual Studio 扩展
 
 本演练演示了如何将 Visual Studio 扩展发布到 Visual Studio 应用商店。 在你的扩展添加到应用商店时，开发人员可以使用**扩展和更新**从中浏览新扩展和更新扩展。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
@@ -135,7 +136,7 @@ ms.lasthandoff: 11/09/2017
 
 2. 在右上角中，单击**发布**扩展。  选取用于发布 TestPublish 发布服务器。  将显示 TestPublish 的列表。
 
-3. 将鼠标悬停在的扩展条目并单击**...**和**删除...**你将需要确认你是否要删除该扩展。  单击“确定”。
+3. 将鼠标悬停在的扩展条目并单击**...**和**删除...**你将需要确认你是否要删除该扩展。  单击 **“确定”**。
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>若要从你的计算机中删除扩展
 

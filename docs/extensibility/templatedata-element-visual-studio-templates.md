@@ -14,11 +14,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c0cda80ce9ff762547e6938ec27027fe5e045d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85dba252eedaeafbffdc58eadac91386ff6cac98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 元素（Visual Studio 模板）
 将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 |元素|描述|  
 |-------------|-----------------|  
 |[Name](../extensibility/name-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定模板的名称出现在**新项目**或**添加新项**对话框。|  
-|[描述](../extensibility/description-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定模板的说明中所示**新项目**或**添加新项**对话框。|  
+|[说明](../extensibility/description-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定模板的说明中所示**新项目**或**添加新项**对话框。|  
 |[图标](../extensibility/icon-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定的路径和文件名作为图标，在显示的图像文件**新项目**或**添加新项**对话框中，为模板。|  
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将项目模板的分类，以使其显示在指定的组下**新项目**对话框。|  
 |[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|可选元素。<br /><br /> 将分类的项目模板，使其出现在中的指定子类别下**新项目**对话框。|  
@@ -109,6 +110,6 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

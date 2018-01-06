@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.extractmethod
 dev_langs: VB
-ms.openlocfilehash: 56e83e6410093467349e4a45a01042133cc53555
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6ec25b8c0e2a583364ff3c6418515507cdc04d40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-a-method-in-visual-basic"></a>提取 Visual Basic 中的方法
 **新增功能：**允许你的代码片段将转换为其自己的方法。
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
 
 1. 如果你结果感到满意更改，单击**应用**按钮或按**Enter**并且所做的更改将提交。
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [重构 (Visual Basic)](../refactoring-vb.md)  
 [预览更改](../../ide/preview-changes.md)

@@ -11,11 +11,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c496aaa7db6f2260764b413bfdf09f766be87384
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 01a08ef43a344f71fe988693401c7064a902b92b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>在文本模板中使用 Visual Studio ModelBus
 如果您编写读取模型包含的文本模板[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus 引用，你可能想要解决访问目标模型的引用。 在这种情况下，你必须调整文本模板以及引用的域特定语言 (Dsl):  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/27/2017
   
     3.  在对话框中，选择**我想要公开到 ModelBus 此 DSL**。 如果您希望此 DSL 同时才能公开其模型以及使用对其他 dsl 相关联的引用，你可以选择这两个选项。  
   
-    4.  单击“确定”。 新项目“ModelBusAdapter”随即添加到 DSL 解决方案中。  
+    4.  单击 **“确定”**。 新项目“ModelBusAdapter”随即添加到 DSL 解决方案中。  
   
     5.  单击**转换所有模板**。  
   
@@ -408,7 +409,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
      如果该元素上设置 MBR，被引用的模型将打开，并且引用的元素处于选中状态。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [通过使用 Visual Studio Modelbus 集成模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)
  

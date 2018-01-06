@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1acbeb95ed7fa59fd64feefe050debc0ce9b6461
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: c5dace5862354c26a22b65b3f471163e50738c7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Visual Studio 的建模 SDK 的 API 参考
 Visual Studio 可视化和建模 SDK 提供了在其生成你的域特定语言 (DSL) 工具的平台。  
@@ -44,5 +45,5 @@ Visual Studio 可视化和建模 SDK 提供了在其生成你的域特定语言 
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|你可以定义快捷 （上下文） 菜单命令。|  
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|你可以定义验证约束。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)

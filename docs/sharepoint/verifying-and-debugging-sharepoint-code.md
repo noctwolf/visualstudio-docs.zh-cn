@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ab25807ffaf62773b6c02f22c548fb5e5c769ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d3717d3bee3665705ce39307b640e02a931cd75f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="verifying-and-debugging-sharepoint-code"></a>验证和调试 SharePoint 代码
   通过使用 IntelliTrace 和单元测试，你可以更轻松地调试 SharePoint 解决方案，并确保解决方案中的每个方法都正常运行。 通过按照适用于其他项目类型的过程进行操作，可以在 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] 中将这些功能用于 SharePoint 项目。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
  通过执行单元测试，在代码编写并运行测试方法内的测试代码中，可以更轻松地找到错误。 这些方法包含空的变量和一个断言语句，可用于验证的逻辑和基于 SharePoint 对象模型你项目的功能。 有关详细信息，请参阅[单元测试代码](/visualstudio/test/unit-test-your-code)。  
   
 ### <a name="support-for-microsoft-fakes-framework"></a>对 Microsoft Fakes 框架的支持  
- SharePoint 项目支持 Microsoft Fakes，Microsoft Fakes 是一种隔离框架，在其中您可以在基于 .NET Framework 的应用程序中创建基于委托的测试存根和填充码。 使用 Fakes 框架，您可以在单元测试中创建、维护和注入虚拟实现。 这些存根和填充码会将您的单元测试与环境隔离。 您可以创建存根，以测试使用接口或具有可重写方法的非密封类的代码。 您可以创建填充码，以将对具有静态或不可重写方法的密封类的硬编码调用重定向到另一填充码实现。 您还可以使用存根类型和填充码类型的委托，动态自定义各个存根成员的行为。 有关详细信息，请参阅[Microsoft Fakes 隔离测试下代码](/visualstudio/test/isolating-code-under-test-with-microsoft-fakes)。  
+ SharePoint 项目支持 Microsoft Fakes，Microsoft Fakes 是一种隔离框架，在其中您可以在基于 .NET Framework 的应用程序中创建基于委托的测试存根和填充码。 使用 Fakes 框架，你可以在单元测试中创建、维护和注入虚拟实现。 这些存根和填充码会将您的单元测试与环境隔离。 您可以创建存根，以测试使用接口或具有可重写方法的非密封类的代码。 你可以创建填充码，以将对具有静态或不可重写方法的密封类的硬编码调用重定向到另一填充码实现。 您还可以使用存根类型和填充码类型的委托，动态自定义各个存根成员的行为。 有关详细信息，请参阅[Microsoft Fakes 隔离测试下代码](/visualstudio/test/isolating-code-under-test-with-microsoft-fakes)。  
   
 ## <a name="related-topics"></a>相关主题  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 |[演练：使用 IntelliTrace 调试 SharePoint 应用程序](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|演示如何使用 IntelliTrace 找出 SharePoint 项目中的编码错误。|  
 |[单元测试代码](/visualstudio/test/unit-test-your-code)|描述如何使用单元测试在你的代码中查找逻辑错误。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [提高代码质量](/visualstudio/test/improve-code-quality)  
   
   

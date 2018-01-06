@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ccc530a741aaefd7e1faf1bd5f8974e27d9c7fb5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual studio 共享的颜色
 当您设计使用公共 Visual Studio shell 元素的 UI，或你想要界面元素与类似功能一致时，使用包定义文件中现有标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。  
@@ -1523,7 +1524,7 @@ ms.lasthandoff: 10/31/2017
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | 不适用 |
+| 背景 | 不可用 |
 | 前景（标志符号） | `Environment.DropDownDisabledGlyph` |
 
 #### <a name="command-bar-split-buttons"></a>命令栏拆分按钮
@@ -1916,7 +1917,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |  
-| 背景 | 不适用 |
+| 背景 | 不可用 |
 | 前景（标志符号） | `Tag.TagHoverGlyph` |
 
 **关闭 (&times;) 标记标志符号： 将鼠标悬停状态**
@@ -1945,7 +1946,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | 不适用 |
+| 背景 | 不可用 |
 | 前景（标志符号） | `Tag.TagSelectedGlyph` |
 
 **选择具有关闭标记 (&times;) 标志符号： 将鼠标悬停状态**  
@@ -2118,7 +2119,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | 不适用 |
+| 背景 | 不可用 |
 | 前景（标志符号） | `Environment.ToolWindowButtonActiveGlyph` |
 | Border | 不可用 |
 
@@ -2128,7 +2129,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | 不适用 |
+| 背景 | 不可用 |
 | 前景（标志符号） | `Environment.ToolWindowButtonInactiveGlyph` |
 | Border | 不可用 |
 

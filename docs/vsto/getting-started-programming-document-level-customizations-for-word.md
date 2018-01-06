@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 424c4867f0b18d7f819bf60a248b801741916efb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 12265c725480324c396d59d848e5269432bb5d6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-document-level-customizations-for-word"></a>Word 文档级自定义项编程入门
   如果你刚开始使用 Visual Studio 创建 Microsoft Office Word 的文档级自定义项，下面是你需要知道。  
@@ -67,13 +68,13 @@ ms.lasthandoff: 10/31/2017
   
  有关指导你完成一些 Word 项目中的常见任务的主题的列表，请参阅[Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [文档级自定义项编程](../vsto/programming-document-level-customizations.md)   
  [Word 解决方案](../vsto/word-solutions.md)   
  [演练： 创建你的第一个文档级自定义 Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)   
  [使用 Word 的演练](../vsto/walkthroughs-using-word.md)   
  [Word 对象模型概述](../vsto/word-object-model-overview.md)   
- [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

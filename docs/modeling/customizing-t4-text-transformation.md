@@ -14,11 +14,12 @@ caps.latest.revision: "28"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4909edabd71686948632f390dfeed5f49cb6fca0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 98d7efc90a07de02f255afe1a75d10fef749e88a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-t4-text-transformation"></a>自定义 T4 文本转换
 文本模板是一项功能的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，可让你生成程序代码或其他通过转换过程的文本文件。 使用[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]，你可以通过自定义文本模板指令处理器或文本模板宿主扩展默认模板转换过程。  

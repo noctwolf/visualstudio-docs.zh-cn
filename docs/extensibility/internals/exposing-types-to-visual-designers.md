@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e79ec644426ed5068f79bb914b1202a800982cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-types-to-visual-designers"></a>公开到可视化设计器的类型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必须有权类和类型定义在设计时为了显示可视化设计器中。 类将从一组预定义的包含完整的依赖项集的当前项目 （引用加上其依赖项） 的程序集加载。 此外可能有必要对可视化设计器的访问权限类和在自定义工具生成的文件中定义的类型。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
      编译临时 PE 后，向编译器提供的唯一源文件是自定义工具输出。 因此，使用临时 PE 的自定义工具必须生成可以独立于项目中的其他文件编译的输出文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [简介 BuildManager 对象](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [实现单个文件生成器](../../extensibility/internals/implementing-single-file-generators.md)   
  [注册单个文件生成器](../../extensibility/internals/registering-single-file-generators.md)

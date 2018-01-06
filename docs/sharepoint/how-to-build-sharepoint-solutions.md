@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e198cce23f29cc00079c2bd60077ade3663bc8b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38cd54bdfb29bdc0966a0ad56817720814f38a47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>如何：生成 SharePoint 解决方案
   构建 SharePoint 解决方案是比构建 Visual Studio 中的其他应用程序没有什么不同。 有关生成应用程序的详细信息，请参阅[编译和 Visual Studio 中生成](/visualstudio/ide/compiling-and-building-in-visual-studio)。 有关特定于 SharePoint 解决方案的一些注意事项的讨论，请参阅[如何： 部署和发布到本地 SharePoint 站点的 SharePoint 解决方案](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  在菜单栏上，依次选择 **“生成”**、 **“生成解决方案”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
   

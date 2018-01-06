@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b755e1f8fb8a4835b22a47fa245a27838c11089e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9ef666b3f7bbcaf75305cec10954df3355304515
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 在加载程序，但在执行任何代码之前，此接口是由的调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。  
@@ -38,14 +39,14 @@ IDebugLoadCompleteEvent2 : IUnknown
 ## <a name="remarks"></a>备注  
  此事件是 stopping 事件，必须具有`EVENT_STOPPING`标志上的事件属性的设置。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

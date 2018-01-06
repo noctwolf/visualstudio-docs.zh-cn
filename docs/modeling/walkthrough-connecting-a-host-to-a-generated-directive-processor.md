@@ -14,11 +14,12 @@ caps.latest.revision: "47"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 07b1e70775638d88e67280f2f914412ef4271a48
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 26903dad4c1218d0d9ba389322351eb629f6f31a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>演练：将主机连接至生成的指令处理器
 你可以编写您自己处理文本模板的主机。 在演示了基本的自定义主机[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 你可以扩展此主机不能添加功能，如生成多个输出文件。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/27/2017
   
 -   测试自定义主机与生成的指令处理器。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  若要定义 DSL，必须安装以下组件：  
   
 |||  
@@ -359,5 +360,5 @@ ms.lasthandoff: 10/27/2017
     Linked from: ExampleElement1  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)

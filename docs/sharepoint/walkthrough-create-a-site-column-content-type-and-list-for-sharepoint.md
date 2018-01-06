@@ -26,11 +26,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d6007dee14f89f875c66009f048b47579e97028b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 59dafe640428059b4c6772f79a23d5f0ccceaac7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>演练：创建 SharePoint 的网站栏、内容类型和列表
   以下过程演示如何创建自定义 SharePoint 网站栏 — 或*字段*-以及所使用的站点列的内容类型。 它还演示如何创建使用新的内容类型的列表。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   受支持的 Windows 和 SharePoint 的版本。 有关详细信息，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="BKMK_CreatingCustSiteCols"></a>创建自定义网站栏  
  此示例创建用于管理在医院患者列表。 首先，必须创建中的 SharePoint 项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]并将站点列添加到它，，如下所示。  
   
-#### <a name="to-create-the-project"></a>创建项目  
+#### <a name="to-create-the-project"></a>要创建项目  
   
 1.  上[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**文件**菜单上，选择**新建**，**项目**。  
   
@@ -227,7 +228,7 @@ ms.lasthandoff: 10/31/2017
   
      新的记录将出现在列表中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [为 SharePoint 创建网站栏、 内容类型和列表](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [如何： 创建自定义字段类型](http://go.microsoft.com/fwlink/?LinkId=192079)   

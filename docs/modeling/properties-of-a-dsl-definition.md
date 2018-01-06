@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7a8fc0474f624785a47a4ba9f970b5a1ca54dd9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 289c95ebbbd294050b1e5c7cc95656e7ab5eadc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定义的属性
 DslDefinition 属性定义*域特定语言*如版本编号定义属性。 DslDefinition 属性将显示在**属性**窗口时单击打开中的关系图的区域*域特定语言设计器*。  
@@ -30,7 +31,7 @@ DslDefinition 属性定义*域特定语言*如版本编号定义属性。 DslDef
 |访问修饰符|确定域类的访问修饰符是否为公共或内部。|public|  
 |自定义特性|自定义域类的属性。<br /><br /> **请注意**使用浏览按钮将属性添加。|\<无 >|  
 |公司名称|系统注册表中的当前公司名称的名称。|当前的公司名称|  
-|名称|此域类的名称。|当前的名称|  
+|name|此域类的名称。|当前的名称|  
 |命名空间|与此域类关联的命名空间。|当前命名空间|  
 |包 Guid|Guid[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]为此 DSL 生成的包。|\<无 >|  
 |包 Namespace|命名空间[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]为此 DSL 生成的包。|\<无 >|  
@@ -44,5 +45,5 @@ DslDefinition 属性定义*域特定语言*如版本编号定义属性。 DslDef
 |次要版本|有关此域特定语言定义的增量的次要版本号。|0|  
 |Revision|有关此域特定语言定义的递增修订版本号。|0|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

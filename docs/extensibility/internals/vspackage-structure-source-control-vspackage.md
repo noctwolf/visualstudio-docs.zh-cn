@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f8422e4333c1f1ccffc928ce9a43e4afa53cc7a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 168aa0f7b93d20afaa30924dc17f05e0cac465bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 结构 (源控件 VSPackage)
 源控件包 SDK 提供用于创建 VSPackage 的准则允许源控件实施者，要将他或她源控件功能与集成[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]环境。 VSPackage 是一个 COM 组件，通常按需通过加载[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 基于由其注册表项中的包播发的服务。 每个 VSPackage 必须实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>。 VSPackage 通常使用提供的服务[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 和 proffers 自己的某些服务。  
@@ -75,6 +76,6 @@ ms.lasthandoff: 10/31/2017
   
  有关源代码管理 VSPackage 必须考虑的接口的完整列表，请参阅[相关服务和界面](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [设计元素](../../extensibility/internals/source-control-vspackage-design-elements.md)   
  [相关的服务和接口](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

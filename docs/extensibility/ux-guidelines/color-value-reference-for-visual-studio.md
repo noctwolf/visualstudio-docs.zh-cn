@@ -13,11 +13,12 @@ ms.suite:
 ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 manager: ghogen
-ms.openlocfilehash: be4b63e767463b7b801ab5ed98d8482e94aacd1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: v-brickg
+ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的颜色值参考
 本主题是用于创建新的颜色标记的引用。 当创建新的用户界面时，你可以使用从现有的 UI 中的相似颜色以选择为每个主要的主题颜色和高对比度主题该元素的系统颜色名称。 
@@ -201,7 +202,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 > **比较仅演示了高对比度样本。** 使用高对比度用户界面的系统颜色名称并不使用这些样本的取色器或颜色选取器。 本主题中的高对比度样本反映 Windows 中的高对比度 #1 主题。 颜色将显示在其他高对比度主题不同。
 
-### <a name="body"></a>Body
+### <a name="body"></a>正文
 
 | | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
 | --- | :---: | :---: | :---: | :---: |
@@ -226,7 +227,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 > **比较仅演示了高对比度样本。** 使用高对比度用户界面的系统颜色名称并不使用这些样本的取色器或颜色选取器。 本主题中的高对比度样本反映 Windows 中的高对比度 #1 主题。 颜色将显示在其他高对比度主题不同。
 
-### <a name="body"></a>Body
+### <a name="body"></a>正文
 
 | | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
 | --- | :---: | :---: | :---: | :---: |
@@ -255,7 +256,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 > **比较仅演示了高对比度样本。** 使用高对比度用户界面的系统颜色名称并不使用这些样本的取色器或颜色选取器。 本主题中的高对比度样本反映 Windows 中的高对比度 #1 主题。 颜色将显示在其他高对比度主题不同。
 
-### <a name="body"></a>Body
+### <a name="body"></a>正文
 
 | | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
 | --- | :---: | :---: | :---: | :---: |

@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3cd6f5f45736a7b2578bc9df80a8472d3b50c3d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2b19c6ba222644bc9d5fb97874f50bf6a6aa59d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-a-custom-document"></a>保存自定义文档
 环境句柄**保存**，**另存为**，和**保存所有**命令。 当用户单击**保存**，**另存为**，**或全部保存**上**文件**菜单或关闭解决方案，从而导致全部保存，以下进程时发生。  
@@ -45,6 +46,6 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  如果你实现自己的持久性，一定要调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>方法以节省时间。 此方法检查以确保它是安全保存该文件 （例如，文件不是只读的）。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)

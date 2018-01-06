@@ -19,11 +19,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b78f90df8b6e46774310bd4a8cf218fbcbc7a18b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3c18f4097fb9f718f4ec2fc9c4683e599d38b74a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-sharepoint-tools-in-visual-studio"></a>扩展 Visual Studio 中的 SharePoint 工具
   Visual Studio 中的 SharePoint 工具满足许多应用程序开发方案的要求。 但是，你可能会发现它们不提供你或其他开发人员需要的功能的情况。 在这些情况下，你可以扩展 SharePoint 工具以创建所需的功能。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
  若要安装 Visual Studio SDK，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。 有关 Visual Studio 扩展的详细信息，请参阅[开始开发 Visual Studio 扩展到](../extensibility/starting-to-develop-visual-studio-extensions.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [概述的编程模型的 SharePoint 工具扩展](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   

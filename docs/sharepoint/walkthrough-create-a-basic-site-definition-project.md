@@ -20,11 +20,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bea8fec27b0d53fb1cfe3405d39d271a93f5a8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a792ab750decf1a14b589116d886c847b3ddd478
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>演练：创建基本网站定义项目
   本演练演示了如何创建基本网站定义包含与上它的某些控件的可视 Web 部件。 为清楚起见，你创建的可视 Web 部件有仅几个控件。 但是，你可以创建包括更多的功能的更复杂的 SharePoint 网站定义。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   支持的 Microsoft Windows 和 SharePoint 版本。 有关详细信息，请参阅有关开发 SharePoint 解决方案的要求。  
@@ -187,7 +188,7 @@ ms.lasthandoff: 10/31/2017
   
      将文本显示在右侧的按钮上的标签。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
   

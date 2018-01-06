@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8519e3ffe7de66b65ae80c5cd349de4edc0e40e0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9e614b2ec8ef404ef21e665ac5ae26dd73253f55
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 元素（Visual Studio 模板）
 指定多项目模板中一个项目的 .vstemplate 文件的路径。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  \<TemplateContent >  
  \<ProjectCollection >  
  \<ProjectTemplateLink >  
-- 或 -  
+或  
 \<VSTemplate >  
  \<TemplateContent >  
  \<ProjectCollection >  
@@ -97,7 +98,7 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [如何：创建多项目模板](../ide/how-to-create-multi-project-templates.md)

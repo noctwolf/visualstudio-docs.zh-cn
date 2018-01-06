@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 362667d4f07acb7a6c245247b40911be35479b96
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c584e4951289cd813a0f1d6bcf14920bd9713436
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="packaging-and-deploying-sharepoint-solutions"></a>打包和部署 SharePoint 解决方案
   通常情况下，SharePoint 解决方案部署到 SharePoint 服务器通过使用解决方案包 (.wsp) 文件。 将你的 SharePoint 项目项组织到功能以及用于创建包以部署你的 SharePoint 功能，你可以使用 Visual Studio。  
@@ -107,7 +108,7 @@ ms.lasthandoff: 10/31/2017
   
  如果添加的文件不适用于解决方案中的任何特定项目，可以将空 SharePoint 项目添加到你的解决方案，然后向其添加其他文件。 有关将文件部署到 SharePoint，特别是对于内容数据库的另一种方法是将模块添加到项目，然后将文件添加到模块。 有关详细信息，请参阅[使用模块添加到解决方案中包含文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   

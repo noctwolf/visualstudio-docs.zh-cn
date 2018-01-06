@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30453237dcd95607a4f3524f115d16bc1cf4859a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 755516fb9d341193005ad39e419e708b6d28867c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>旧语言服务分析器和扫描程序
 分析器是语言服务的核心。 托管包框架 (MPF) 语言类需要的语言分析程序，可以选择要显示的代码的相关信息。 分析器将文本分隔为词法令牌，然后确定这些令牌的类型和功能。  
@@ -134,7 +135,7 @@ namespace MyNamespace
   
  <xref:Microsoft.VisualStudio.Package.AuthoringSink>对象作为的一部分传递到分析器<xref:Microsoft.VisualStudio.Package.ParseRequest>对象，并且新<xref:Microsoft.VisualStudio.Package.AuthoringSink>对象是每次创建一个新<xref:Microsoft.VisualStudio.Package.ParseRequest>创建对象。 此外，<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法必须返回<xref:Microsoft.VisualStudio.Package.AuthoringScope>对象，用于处理各种智能感知操作。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>对象维护声明的列表和列表的方法，或者其中填充，具体取决于分析的原因。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>必须实现类。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [实现旧语言服务](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [旧语言服务概述](../../extensibility/internals/legacy-language-service-overview.md)   
  [在旧语言服务中的语法着色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   

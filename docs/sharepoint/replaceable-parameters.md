@@ -22,11 +22,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 80f9770fe0e6a0294ec43e450acc75f55b8ddbe2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ed085a38b77f7c323451e8209902bece3747ddb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replaceable-parameters"></a>可替换参数
   可替换参数，或*令牌*，可以在项目文件内使用，为其实际值在设计时未知的 SharePoint 解决方案项提供值。 它们在功能上类似于标准 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 模板标记。 有关详细信息，请参阅[模板参数](/visualstudio/ide/template-parameters)。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="tokens-list"></a>标记列表  
  下表列出了可用的标记。  
   
-|名称|描述|  
+|name|描述|  
 |----------|-----------------|  
 |$SharePoint.Project.FileName$|包含项目文件，如"NewProj.csproj"的名称。|  
 |$SharePoint.Project.FileNameWithoutExtension$|不带文件扩展名包含项目文件的名称。 例如，"NewProj"。|  
@@ -112,7 +113,7 @@ ms.lasthandoff: 10/31/2017
   
  或者，你可以直接向.targets 文件添加扩展。 但是，这样做会更改在本地系统上，而不仅仅是打包的所有 SharePoint 项目扩展列表自己。 在系统上的唯一开发人员或如果您的大多数项目需要的话，这可能很方便。 但是，由于它是特定于系统的此方法不是非常易于移植，并且因此，建议你添加的任何扩展到项目文件相反。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

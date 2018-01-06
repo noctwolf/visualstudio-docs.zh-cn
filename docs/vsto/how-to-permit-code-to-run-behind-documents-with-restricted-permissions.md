@@ -22,11 +22,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1d5ab02ea2eb2d34a82607b8f7fd4fbf3f02dd76
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2f3ff7f7bb76962e22705fc5c0d42fdf7568ff97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>如何：允许代码在具有受限制权限的文档的后台运行
   Microsoft Office 的信息权限管理 (IRM) 功能可用于将权限限制到文档或工作簿。 默认情况下，不允许的限制的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿背后的代码运行。 你可以更改默认值，以便你的托管的代码扩展可以访问的对象模型，并且该解决方案将适用。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
  Word 或 Excel 将允许以编程方式访问的对象模型。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [信息权限管理与托管的代码扩展概述](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [在文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)   
  [Office 文档上的密码保护](../vsto/password-protection-on-office-documents.md)   

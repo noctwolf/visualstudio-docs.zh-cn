@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c9c0cd58c069989b9516d707ba4c9a35faf53013
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fce74b91512ee22eda7ce8c3e61de0ac03636d2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 此接口枚举[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)结构。  
@@ -49,14 +50,14 @@ IEnumDebugFrameInfo2 : IUnknown
 ## <a name="remarks"></a>备注  
  Visual Studio 将获取此接口来处理断点、 异常或用户生成的暂停正在调试的程序上的第一步。 列表[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)结构表示当前的调用堆栈，并指定当前位于开头的列表以及最旧的函数的函数调用的调用列表的末尾。 每个`FRAMEINFO`表示堆栈帧，在其中可以计算表达式并查看本地变量的上下文。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5027e765e12ff483a9a27795990f0ddfbb479a5c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f92950bc833c2d2658c3e13cd7e800e877b32de9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函数
 此函数允许用户浏览源代码管理系统中已有的文件，并随后使这些文件属于当前项目。 例如，此函数可以获取的常见头文件在当前项目而不复制该文件。 返回数组的文件， `lplpFileNames`，包含的用户想要将添加到 IDE 项目的文件列表。  
@@ -50,7 +51,7 @@ SCCRTN SccAddFromScc (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功，文件已位于，并添加到项目。|  
 |SCC_I_OPERATIONCANCELED|操作已取消造成任何影响。|  
@@ -68,6 +69,6 @@ SCCRTN SccAddFromScc (
 > [!NOTE]
 >  VSSCI API 的初始版本未提供一种方法，以指示添加的文件的目标项目。 以适应这的语义`lplpFIleNames`参数已增强，从而将它设一个输入/输出参数，而不是输出参数。 如果只指定了单个文件，即指向的值由`lpnFiles`= 1，则第一个元素的`lplpFileNames`包含目标文件夹。 若要使用这些新的语义，IDE 调用`SccSetOption`起作用`nOption`参数设置为`SCC_OPT_SHARESUBPROJ`。 如果源代码管理插件不支持语义，它将返回`SCC_E_OPTNOTSUPPORTED`。 执行使用的是禁用**从源代码管理中的添加**功能。 如果插件支持**从源代码管理中的添加**功能 (`SCC_CAP_ADDFROMSCC`)，则它必须支持新的语义，并返回`SCC_I_SHARESUBPROJOK`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

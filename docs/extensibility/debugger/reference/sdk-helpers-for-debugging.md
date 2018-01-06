@@ -18,11 +18,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9c5d24c8a3a2bb81c87b2cc405a6885b8f23374
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK 适用于调试的帮助程序
 这些函数和声明是有关在 c + + 中实现的调试引擎，表达式计算器和符号提供程序的全局帮助器函数。  
@@ -420,12 +421,12 @@ HRESULT EnumMetricSections(
 |*[异常类型]*|标识可以处理的异常的类的子项常规标题。 典型的名称是**c + + 异常**， **Win32 异常**，**公共语言运行时异常**，和**本机运行时检查**。 这些名称还用于标识异常向用户的特定类。|  
 |*[异常]*|异常的名称： 例如， **_com_error**或**控制中断**。 这些名称还用于标识向用户的特定异常。|  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  这些文件位于[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]SDK 安装目录 (默认情况下， *[驱动器]*files\microsoft Visual Studio 2010 SDK\\)。  
   
  标头： includes\dbgmetric.h  
   
  库： libs\ad2de.lib、 libs\dbgmetric.lib  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 12a367b6051f7ed1ca1f51e0c9d7e8ada4be4ba6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 88509ec452525647e4ce36b0c7e5e35574d6243f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-sign-office-solutions"></a>如何：对 Office 解决方案进行签名
   如果你登录解决方案，你可以授予对使用证书作为证据解决方案信任。 你可以为多个解决方案，使用相同的证书，所有的解决方案将没有其他安全策略更新受信任。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  若要验证是否正在使用正确的证书，请单击**更多详细信息**若要查看证书信息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)   
  [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)   
  [“项目设计器”->“签名”页](/visualstudio/ide/reference/signing-page-project-designer)  

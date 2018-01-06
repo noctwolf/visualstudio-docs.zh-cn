@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cf196a227e5cb92cae48dd1eeceace25ffc0295
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 69ad8f62931b628582c73a3e370a86611795caa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Guid 和 Id 的 Visual Studio 菜单
 本主题枚举菜单和 Visual Studio 菜单栏上的组的 GUID 和 ID 的值。 在 Visual Studio SDK 的一部分安装的.vsct 文件中定义这些值。 有关详细信息，请参阅[IDE-Defined 命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 |-----------|--------|  
 |文件 / 编辑 / 视图|IDG_VS_MM_FILEEDITVIEW|  
 |重构|IDG_VS_MM_REFACTORING:|  
-|Project|IDG_VS_MM_PROJECT|  
+|项目|IDG_VS_MM_PROJECT|  
 |生成|IDG_VS_MM_BUILDDEBUGRUN|  
 |格式/工具|IDG_VS_MM_TOOLSADDINS|  
 |窗口 / 帮助 / 社区|IDG_VS_MM_WINDOWHELP|  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 |Edit|IDM_VS_MENU_EDIT|  
 |视图|IDM_VS_MENU_VIEW|  
 |重构|IDM_VS_MENU_REFACTORING|  
-|Project|IDM_VS_MENU_PROJECT|  
+|项目|IDM_VS_MENU_PROJECT|  
 |生成|IDM_VS_MENU_BUILD|  
 |格式|IDM_VS_MENU_FORMAT|  
 |工具|IDM_VS_MENU_TOOLS|  
@@ -215,7 +216,7 @@ ms.lasthandoff: 10/31/2017
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|  
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Guid 和 Id 的 Visual Studio 工具栏](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)   
  [Guid 和 Id 的 Visual Studio 命令](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)   
  [Visual Studio 命令表格 (.Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9631f2206705ef6daf36b355aa6cb1d5be6458d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9842527f90d9b2df7308f1e80e337de2848d9179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 当它想要截获的当前异常时，由当前的堆栈帧上调试器调用。  
@@ -51,7 +52,7 @@ int InterceptCurrentException(
   
  以下是最常见的错误返回。  
   
-|错误|描述|  
+|Error|描述|  
 |-----------|-----------------|  
 |`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|无法截获当前异常。|  
 |`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|当前的执行帧尚未尚未搜索处理程序。|  
@@ -67,7 +68,7 @@ int InterceptCurrentException(
   
  截获完成后， [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)处于有信号状态。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   
  [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)   
  [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)

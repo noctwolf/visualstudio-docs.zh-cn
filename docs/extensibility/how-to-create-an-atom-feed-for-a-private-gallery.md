@@ -15,14 +15,15 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b41cb3012b937ac5448b129657064cca68a5d725
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b54181205c98445fef393993d683085cc3afbcba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何： 创建 Atom 馈送为专用库
-你可以创建 Atom (RSS) 源到 intranet 位置包含扩展并添加到源**扩展和更新**作为专用库。 有关详细信息，请参阅[私有库](../extensibility/private-galleries.md)。  
+你可以创建 Atom (RSS) 源到 intranet 位置包含扩展并添加到源**扩展和更新**作为专用库。 有关详细信息，请参阅[专用库](../extensibility/private-galleries.md)。  
   
 ## <a name="creating-an-atom-feed"></a>创建 Atom 馈送  
  若要创建 Atom 馈送作为专用库，你首先收集有关你的扩展 （.vsix 文件） 到一个文件夹。 可以将它们添加到子文件夹如果你想。 你将需要以下资源：  
@@ -76,5 +77,5 @@ ms.lasthandoff: 10/31/2017
   
  请注意两个链接标记引用的映像的生成文件夹中的屏幕截图。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [专用库](../extensibility/private-galleries.md)

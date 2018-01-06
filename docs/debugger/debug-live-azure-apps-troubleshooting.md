@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>有关在 Visual Studio 中调试快照的疑难解答和已知问题
 
@@ -68,7 +69,7 @@ ms.lasthandoff: 11/22/2017
 - 当前不支持针对相同的应用程序服务的多个 Visual Studio 客户端调试的快照。
 - ASP.NET 核心项目不完全支持 Roslyn IL 优化。 对于某些 ASP.NET Core 项目，你可能无法看到某些变量或条件语句中使用某些变量。 
 - 特殊变量，如*$FUNCTION*或*$CALLER*，无法计算条件语句或 logpoints 对于 ASP.NET Core 项目中。
-- 快照调试不能在应用程序服务具有[本地缓存](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache)开启。
+- 快照调试不能在应用程序服务具有[本地缓存](/azure/app-service/app-service-local-cache)开启。
 - 当前不支持调试 API 应用程序的快照。
 
 ## <a name="see-also"></a>请参阅

@@ -21,11 +21,12 @@ caps.latest.revision: "79"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32fd9fe36f029296d52127cf1f3be9e3c205d82b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bcc3b19bc84d418798f296f15b36a367223c21fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 外接程序的注册表项
   部署使用 Visual Studio 创建的 VSTO 外接程序时，必须创建一组特定的注册表项。 这些注册表项可提供一些信息，使 Microsoft Office 应用程序能够发现和加载 VSTO 外接程序。  
@@ -75,12 +76,12 @@ ms.lasthandoff: 10/31/2017
   
  下表列出了此注册表项下的条目。  
   
-|条目|类型|值|  
+|条目|类型|“值”|  
 |-----------|----------|-----------|  
-|**说明**|REG_SZ|必需。 VSTO 外接程序的简短说明。<br /><br /> 当用户在 Microsoft Office 应用程序的 **“选项”** 对话框的 **“外接程序”** 窗格中选择 VSTO 外接程序时，将会显示此说明。|  
-|**FriendlyName**|REG_SZ|必需。 Microsoft Office 应用程序中的 **“COM 外接程序”** 对话框中显示的 VSTO 外接程序的描述性名称。 默认值为 VSTO 外接程序 ID。|  
-|**LoadBehavior**|REG_DWORD|必需。 一个值，用于指定应用程序在何时尝试加载 VSTO 外接程序以及 VSTO 外接程序的当前状态（已加载或卸载）。<br /><br /> 默认情况下，此项设置为 3，指定在启动时加载 VSTO 外接程序。 有关详细信息，请参阅 [LoadBehavior 值](#LoadBehavior)。 **注意：**如果用户禁用 VSTO 外接程序，该操作会修改**LoadBehavior** HKEY_CURRENT_USER 注册表配置单元中的值。 对于每个用户，HKEY_CURRENT_USER 配置单元中的 **LoadBehavior** 值将替代 HKEY_LOCAL_MACHINE 配置单元中定义的 **LoadBehavior** 默认值。|  
-|**Manifest**|REG_SZ|必需。 VSTO 外接程序部署清单的完整路径。 该路径可以是本地计算机上的某个位置，也可以是网络共享 (UNC) 或 Web 服务器 (HTTP)。<br /><br /> 如果使用 Windows Installer 部署解决方案，则必须向 **清单** 路径添加前缀 **file:///** 。 你还必须将字符串**&#124; vstolocal** (即管道字符**&#124;**跟**vstolocal**) 到此路径的末尾。 这可确保从安装文件夹，而非 ClickOnce 缓存加载你的解决方案。 有关详细信息，请参阅 [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。 **注意：**开发计算机上生成 VSTO 外接程序中，Visual Studio 会自动将**&#124; vstolocal**到此注册表项的字符串。|  
+|**说明**|REG_SZ|必须的。 VSTO 外接程序的简短说明。<br /><br /> 当用户在 Microsoft Office 应用程序的 **“选项”** 对话框的 **“外接程序”** 窗格中选择 VSTO 外接程序时，将会显示此说明。|  
+|**FriendlyName**|REG_SZ|必须的。 Microsoft Office 应用程序中的 **“COM 外接程序”** 对话框中显示的 VSTO 外接程序的描述性名称。 默认值为 VSTO 外接程序 ID。|  
+|**LoadBehavior**|REG_DWORD|必须的。 一个值，用于指定应用程序在何时尝试加载 VSTO 外接程序以及 VSTO 外接程序的当前状态（已加载或卸载）。<br /><br /> 默认情况下，此项设置为 3，指定在启动时加载 VSTO 外接程序。 有关详细信息，请参阅 [LoadBehavior 值](#LoadBehavior)。 **注意：**如果用户禁用 VSTO 外接程序，该操作会修改**LoadBehavior** HKEY_CURRENT_USER 注册表配置单元中的值。 对于每个用户，HKEY_CURRENT_USER 配置单元中的 **LoadBehavior** 值将替代 HKEY_LOCAL_MACHINE 配置单元中定义的 **LoadBehavior** 默认值。|  
+|**Manifest**|REG_SZ|必须的。 VSTO 外接程序部署清单的完整路径。 该路径可以是本地计算机上的某个位置，也可以是网络共享 (UNC) 或 Web 服务器 (HTTP)。<br /><br /> 如果使用 Windows Installer 部署解决方案，则必须向 **清单** 路径添加前缀 **file:///** 。 你还必须将字符串**&#124; vstolocal** (即管道字符**&#124;**跟**vstolocal**) 到此路径的末尾。 这可确保从安装文件夹，而非 ClickOnce 缓存加载你的解决方案。 有关详细信息，请参阅 [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。 **注意：**开发计算机上生成 VSTO 外接程序中，Visual Studio 会自动将**&#124; vstolocal**到此注册表项的字符串。|  
   
 ###  <a name="OutlookEntries"></a> Outlook 窗体区域注册表项  
  如果在 Outlook 的 VSTO 外接程序中创建自定义窗体区域，则会使用其他注册表项在 Outlook 中注册该窗体区域。 这些项是在针对窗体区域支持的每个邮件类别的不同注册表项下创建的。 这些注册表项位于以下位置，其中的 *根* 为 HKEY_CURRENT_USER 或 HKEY_LOCAL_MACHINE。  
@@ -98,7 +99,7 @@ ms.lasthandoff: 10/31/2017
   
  下表列出了 **LoadBehavior** 条目的所有可能的值。 此表中的一些描述涉及手动或以编程方式加载 VSTO 外接程序。 若要手动加载 VSTO 外接程序，在应用程序的 **“COM 外接程序”** 对话框中选择 VSTO 外接程序旁的复选框。 若要以编程方式加载 VSTO 外接程序，请将表示 VSTO 外接程序的 <xref:Microsoft.Office.Core.COMAddIn.Connect%2A> 对象的 <xref:Microsoft.Office.Core.COMAddIn> 属性设置为 **true**。  
   
-|值（采用十进制）|VSTO 外接程序状态|VSTO 外接程序加载行为|说明|  
+|值（采用十进制）|VSTO 外接程序状态|VSTO 外接程序加载行为|描述|  
 |--------------------------|-------------------------|--------------------------------|-----------------|  
 |0|已卸载|不自动加载|应用程序从不尝试自动加载 VSTO 外接程序。 用户可尝试手动加载 VSTO 外接程序，也可以编程方式加载 VSTO 外接程序。<br /><br /> 如果 VSTO 外接程序加载成功，则 **LoadBehavior** 值保持为 0，但将更新 **“COM 外接程序”** 对话框中的 VSTO 外接程序状态，以指示已加载 VSTO 外接程序。|  
 |1|已加载|不自动加载|应用程序从不尝试自动加载 VSTO 外接程序。 用户可尝试手动加载 VSTO 外接程序，也可以编程方式加载 VSTO 外接程序。<br /><br /> 虽然 **“COM 外接程序”** 对话框指示已在应用程序启动后加载 VSTO 外接程序，但只有在手动或以编程方式加载 VSTO 外接程序后，它才会真正加载。<br /><br /> 如果应用程序成功加载 VSTO 外接程序，则 **LoadBehavior** 值更改为 0，并在应用程序关闭后仍然保持为 0。|  
@@ -108,7 +109,7 @@ ms.lasthandoff: 10/31/2017
 |9|已加载|按需加载|VSTO 外接程序将仅在应用程序需要它时加载，例如，用户单击使用 VSTO 外接程序中的功能的 UI 元素（例如，功能区中的自定义按钮）时。<br /><br /> 如果应用程序成功加载 VSTO 外接程序，则 **LoadBehavior** 值保持为 9，但将更新 **“COM 外接程序”** 对话框中的外接程序状态，以指示当前已加载 VSTO 外接程序。 如果加载 VSTO 外接程序时出错，则 **LoadBehavior** 值更改为 8。|  
 |16|已加载|第一次时加载，然后按需加载|如果想要按需加载 VSTO 外接程序，请设置此值。 用户第一次运行应用程序时，应用程序将加载 VSTO 外接程序。 用户下一次运行应用程序时，应用程序将加载 VSTO 外接程序定义的任何 UI 元素，但不会加载 VSTO 外接程序，直到用户单击与 VSTO 外接程序关联的 UI 元素。<br /><br /> 应用程序第一次成功加载 VSTO 外接程序时， **LoadBehavior** 值在加载 VSTO 外接程序后保持为 16。 应用程序关闭后， **LoadBehavior** 值更改为 9。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   

@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 002d9f2bb9a70d3f223b13d505639089005a09ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 846f0bff11c557164ff101d0b5beb1950fded62e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hierarchies-and-selection"></a>层次结构和所选内容
 当你自定义[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，应了解如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]处理层次结构，如项目和如何，它使用所选内容上下文来确定向用户显示的内容。 本部分讨论的概念[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]层次结构和所选内容。  

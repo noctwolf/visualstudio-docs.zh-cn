@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5833285a3d9ce9df02dc0359379ea623054588a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d5db7a218a718e27f584abbf350b49907b56fb17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定文件扩展名的文件处理程序
 有多种方式可确定处理具有特定文件扩展名的文件的应用程序。 OpenWithList 和 OpenWithProgids 谓词是两种方法可以指定文件的文件扩展名的注册表项之下的处理程序。  
@@ -65,7 +66,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)  
 ```  
   
- 指定为文件扩展名的默认值是默认文件处理程序的 ProgID。 如果修改附带的早期版本的文件扩展名的 ProgID[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或将接管其他应用程序，则必须注册`OpenWithProgids`密钥的文件扩展名并连同列表中指定的新 ProgID支持旧 Progid。 例如:   
+ 指定为文件扩展名的默认值是默认文件处理程序的 ProgID。 如果修改附带的早期版本的文件扩展名的 ProgID[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或将接管其他应用程序，则必须注册`OpenWithProgids`密钥的文件扩展名并连同列表中指定的新 ProgID支持旧 Progid。 例如:  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -79,6 +80,6 @@ HKEY_CLASSES_ROOT\
   
  如果旧 ProgID 具有与其关联的谓词，则这些谓词还将显示下**打开***产品名称*的快捷菜单中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [有关文件扩展名](../extensibility/about-file-name-extensions.md)   
  [注册文件扩展名的谓词](../extensibility/registering-verbs-for-file-name-extensions.md)

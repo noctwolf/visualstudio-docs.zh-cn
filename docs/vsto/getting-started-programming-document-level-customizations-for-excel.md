@@ -18,11 +18,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1755aa5c8e54bd1b84e0f88ea70b4163f3a87af6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0c2f8d0a8360153b81d54b5d1867af452e6aaf9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-document-level-customizations-for-excel"></a>Excel 文档级自定义项编程入门
   如果你刚开始使用 Visual Studio 创建 Microsoft Office Excel 文档级自定义项，下面是你需要知道。  
@@ -67,13 +68,13 @@ ms.lasthandoff: 10/31/2017
   
  有关指导你完成一些 Excel 项目中的常见任务的主题的列表，请参阅[Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [文档级自定义项编程](../vsto/programming-document-level-customizations.md)   
  [Excel 解决方案](../vsto/excel-solutions.md)   
  [演练： 创建你的第一个文档级自定义 excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
  [使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)   
  [Excel 对象模型概述](../vsto/excel-object-model-overview.md)   
- [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

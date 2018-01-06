@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca4fedeb7e52fff627a8fab9e100c0a99792f1c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b03d9adbec92986ea8a1cf0f589bd451107a611f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 此 interfac 枚举在当前调试会话中运行的线程。  
@@ -49,14 +50,14 @@ IEnumDebugThreads2 : IUnknown
 ## <a name="remarks"></a>备注  
  Visual Studio 通常将获取此接口可更新**线程**窗口以及有关获取要调用的列表中，在第一个线程[执行](../../../extensibility/debugger/reference/idebugprocess3-execute.md)，[继续](../../../extensibility/debugger/reference/idebugprocess3-continue.md)，和[步骤](../../../extensibility/debugger/reference/idebugprocess3-step.md)。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)   
  [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)   

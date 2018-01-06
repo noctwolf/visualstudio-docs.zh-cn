@@ -22,11 +22,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee19d6fd6bd84f344a205b0e508abbede63cdebb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0a670510a7898b38ec7f61a22f8258015b112151
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-document-properties-overview"></a>Custom Document Properties Overview
   当生成文档级项目时，Visual Studio 会将两个自定义属性添加到项目中的文档： _AssemblyLocation 和 _AssemblyName。 当用户打开的文档时，Microsoft Office 应用程序将检查这些自定义文档属性。 如果它们存在文档中，应用程序加载[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，以启动自定义项。 有关详细信息，请参阅[体系结构的 Office 解决方案中 Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
  *解决方案 Id*是一个 GUID，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]用于标识解决方案。 *解决方案 Id*生成项目时自动生成。 **Vstolocal**术语指示到[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，程序集应加载从文档所在的文件夹。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)   
  [应用程序和 Office 解决方案中的部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)   

@@ -12,16 +12,19 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc63c636d58bcde7aefeb7d35939008387bb6808
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload:
+- data-storage
+- dotnet
+ms.openlocfilehash: 6c1558c591c982673015af4eaf4e50bc9a81f7d4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>适用于.NET 的 visual Studio data tools
 Visual Studio 和.NET Framework 一起提供大量的 API 和工具用于连接到数据库、 在内存中，数据建模和用户界面中显示数据的支持。 提供数据访问功能的.NET Framework 类称为[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET 中，Visual Studio 中的数据以及最初设计主要是为了支持关系数据库和 XML。 如今，许多 NoSQL 数据库供应商或第三方提供 ADO.NET 提供程序。  
   
-[.NET 核心](https://www.dotnetfoundation.org/netcore)支持 ADO.NET 中，数据集和相关的类型除外。 如果你要以.NET 核心为目标，并且需要对象关系映射 (ORM) 层，使用[实体框架核心](https://docs.microsoft.com/ef/core/)。  
+[.NET 核心](https://www.dotnetfoundation.org/netcore)支持 ADO.NET 中，数据集和相关的类型除外。 如果你要以.NET 核心为目标，并且需要对象关系映射 (ORM) 层，使用[实体框架核心](/ef/core/)。  
   
 下图显示的基本体系结构的简化的视图：  
   

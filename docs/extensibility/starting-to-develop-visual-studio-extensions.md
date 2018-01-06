@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d788121e81af48cb972631d0845ad7b4317818b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>开始开发 Visual Studio 扩展
 如果您从未编写过 Visual Studio 扩展之前，可能会出现一些问题。 我们已列出了一些最常见的。 如果看不到你正在寻找的信息，请使用反馈按钮 (**是很有帮助的此页面？**在屏幕底部) 以询问有关所需。  
@@ -89,4 +90,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="how-can-i-distribute-my-extension"></a>如何分发我扩展？  
  可以在另一台计算机上安装你的扩展，也可以将其发送到你的好友为.vsix 文件，通过双击该安装。 你可以了解有关在 VSIX 包的详细信息[传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。  
   
- 你还可以发布你在 Visual Studio Marketplace，使其可见到大量的 Visual Studio 客户的扩展。 打包应用商店的扩展的示例，请参阅[演练： 发布 Visual Studio 扩展](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 有关需要要做，以在 Marketplace 上发布的内容的详细信息，请参阅[产品和 Visual Studio 的扩展](https://docs.microsoft.com/en-us/vsts/integrate/ide/extensions/overview)。
+ 你还可以发布你在 Visual Studio Marketplace，使其可见到大量的 Visual Studio 客户的扩展。 打包应用商店的扩展的示例，请参阅[演练： 发布 Visual Studio 扩展](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 有关需要要做，以在 Marketplace 上发布的内容的详细信息，请参阅[产品和 Visual Studio 的扩展](/vsts/integrate/ide/extensions/overview)。

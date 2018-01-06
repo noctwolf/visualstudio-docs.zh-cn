@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3f73236b45edea7a9dea003a1f3604669eb3739
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: da0526c060175a6e00a7b45a7ef2e347dba0d89e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 从作为参数提供值类的实例设置的值类对象的实例的值。  
@@ -47,5 +48,5 @@ int SetFromManagedObject(
 ## <a name="remarks"></a>备注  
  此方法用于更改托管的对象所表示的[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

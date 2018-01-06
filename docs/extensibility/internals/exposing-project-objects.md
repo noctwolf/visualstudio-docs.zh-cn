@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f29ca84669f563da5733c8c07b219d498ccf6ded
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 668287dc8b0b5ac9dd37cb450582e3a56fb7f25e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-project-objects"></a>公开项目对象
 自定义项目类型可以提供自动化对象，以便允许访问项目使用自动化接口。 每个项目类型需要提供标准<xref:EnvDTE.Project>从访问的自动化对象<xref:EnvDTE.Solution>，其中包含在 IDE 中打开的所有项目的集合。 应在项目中的每个项，可以公开的<xref:EnvDTE.ProjectItem>通过访问的对象`Project.ProjectItems`。 除了这些标准的自动化对象，项目可以选择提供特定于项目的自动化对象。  
@@ -93,5 +94,5 @@ ms.lasthandoff: 10/31/2017
   
      自定义`Projects`集合对象是您项目的自动化模型的其余部分的方便入口点。 你的项目对象也是可从访问<xref:EnvDTE.Solution>项目集合。 创建适当的代码和注册表条目，它们提供使用者后`Projects`对象集合，您的实现必须提供剩余项目模型的标准对象。 有关详细信息，请参阅[项目建模](../../extensibility/internals/project-modeling.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

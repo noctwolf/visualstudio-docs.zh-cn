@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40c900b2f266be4ea88921b5f7cd0db02991a091
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f84f92b4d940bc7141f8c53730a128651b27a8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 参考
 本部分包含有关 Visual Studio 命名空间、 相关的命名空间和感兴趣的其他领域的开发人员使用 Visual Studio SDK 的信息。  

@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3b7cdc698a169150560b2a924cd6f3317fa78ed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f169c3302b3e6fd72e5017193e34836ed3e5340e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vstextview-object"></a>VSTextView 对象
 文本视图是一个窗口，允许用户查看和编辑文本缓冲区的 Unicode 文本。 从根本上来说，该视图是大多数用户所称为的编辑器。 由于各种文本层 （自动换行、 大纲显示文本等） 的情况下，该视图从缓冲区分开的视图不保证可精确地表示的缓冲区中的文本。 有关文本视图的详细信息，请参阅[使用旧版 API 访问文本视图](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|与文本层交互。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|来自不同线程中执行视图上的操作。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [数字编辑](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
  [VSTextBuffer 对象](../extensibility/vstextbuffer-object.md)   
  [通过使用旧版 API 访问文本视图](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

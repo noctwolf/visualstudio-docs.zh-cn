@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: a126524672b0b827d278d2d76c01d907c9d403a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 464557102bd6dcbbbda4032c0588c55baa954664
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>向域特定语言定义中添加跟踪属性
 本演练演示如何向域模型中添加跟踪属性。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/27/2017
   
 -   在**属性**窗口中，跟踪属性为在更新时由用户状态，以粗体显示其值。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  在开始本演练之前，您必须首先安装这些组件：  
   
 |||  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="creating-the-dsl-project"></a>创建 DSL 项目  
  创建你的域特定语言的项目。  
   
-#### <a name="to-create-the-project"></a>创建项目  
+#### <a name="to-create-the-project"></a>要创建项目  
   
 1.  创建域特定语言设计器项目。 将其命名为 `TrackingPropertyDSL`。  
   
@@ -758,7 +759,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="next-steps"></a>后续步骤  
  如果你打算使用多个跟踪属性，或在多个 DSL 中实现跟踪属性，可以创建文本模板生成的常见代码，以支持每个跟踪属性。 文本模板的详细信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [如何定义的域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   

@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9f2837dff6c5dd62c03da2ab340fca287a1da56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 679223f21bd839a8d94b299319ad22c6701bc407
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-register-editor-file-types"></a>如何： 注册编辑器文件类型
 注册编辑器文件类型的最简单方法是通过使用作为的一部分提供的注册特性[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]托管包框架 (MPF) 类。 如果你要在本机实现你的包[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，还可以编写注册表脚本注册你的编辑器和关联的扩展。  

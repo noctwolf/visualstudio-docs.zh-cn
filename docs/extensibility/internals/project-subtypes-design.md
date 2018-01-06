@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70d16c90ad8ef4837ad9d131e46ed2027dd6c543
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-subtypes-design"></a>项目子类型设计
 项目子类型让 Vspackage 扩展基于 Microsoft Build Engine (MSBuild) 项目。 使用聚合，可以重用核心管理项目系统中实现的大容量[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]但仍自定义用于特定方案的行为。  
@@ -89,6 +90,6 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>|允许项目子类型，以任意结构化的 XML 将数据保存到项目文件 （.vbproj 或.csproj）。 此数据不是对 MSBuild 可见的。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>|允许到的项目子类型：<br /><br /> -添加新的 MSBuild 属性要保留。<br />-MSBuild 中删除不必要的属性。<br />MSBuild 属性的当前值查询。<br />-更改 MSBuild 属性的当前值。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>

@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b637e59b1e436c42b6b15f0dddaa1ed2ef6ff03c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 78c4823e3644dc755cef518dcbbba5f42c7aebc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-colorable-items"></a>自定义可着色项
 你可以重写类型的列表着色，如关键字和注释，通过实现自定义可着色项作为语言服务的一部分。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
   
  有关如何实现的示例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>接口，请参阅<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [旧语言服务模型](../../extensibility/internals/model-of-a-legacy-language-service.md)   
  [语法着色中自定义编辑器](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [语法着色中旧语言服务](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   

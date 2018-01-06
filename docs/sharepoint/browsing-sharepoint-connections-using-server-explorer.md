@@ -22,11 +22,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b8f75dd12e0684edd4260e796540523a2c7d08d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b16a2ee34ca757e62a26676386566b94c31ebf74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browsing-sharepoint-connections-using-server-explorer"></a>使用服务器资源管理器浏览 SharePoint 连接
   你现在可以浏览本地 SharePoint 连接中的**服务器资源管理器**。 通过使用这种方法，您可以在系统上浏览 SharePoint 网站的组件。 SharePoint 网站组件，例如列表定义和内容类型，显示的名为一个节点**SharePoint 连接**的树视图中**服务器资源管理器**。 若要显示**服务器资源管理器**，在菜单栏上，选择**视图**，**服务器资源管理器**。 除了显示 SharePoint 网站组件以外，通过使用快捷菜单命令，你还可以移除项、查看它们的属性或刷新树视图。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
 |-----------|-----------------|  
 |[如何：添加或删除 SharePoint 连接](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|描述所需的添加到新的 SharePoint 站点的步骤**SharePoint 连接**中的节点**服务器资源管理器**。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

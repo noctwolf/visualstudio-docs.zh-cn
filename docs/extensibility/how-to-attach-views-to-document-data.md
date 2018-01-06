@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 146303eebbd824342b000fb14b8dbf953c3f0523
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bcbb3e6b475a9dcd22d012073d3197013da337c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-views-to-document-data"></a>如何： 附加文档数据的视图
 如果你有一个新的文档视图，你可能能够将其附加到现有的文档数据对象。  
@@ -44,6 +45,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="robust-programming"></a>可靠编程  
  当 Visual Studio 调用的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法，它返回将指针传递给现有的文档数据对象中`punkDocDataExisting`参数，如果存在。 检查文档数据对象中返回`punkDocDataExisting`以确定是否适合你的编辑器，请注意，在本主题中的过程的步骤 4 中所述文档数据对象。 如果合适，则你的编辑器工厂应提供第二个视图的数据中所述[支持多个文档视图](../extensibility/supporting-multiple-document-views.md)。 如果没有，然后它应该会显示相应的错误消息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [支持多个文档视图](../extensibility/supporting-multiple-document-views.md)   
  [自定义编辑器中的文档数据和文档视图](../extensibility/document-data-and-document-view-in-custom-editors.md)

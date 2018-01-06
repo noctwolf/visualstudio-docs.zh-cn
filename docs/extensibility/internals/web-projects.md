@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dbfdffa02a4bca9f145a2f20e3d2af31b8bcd97
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91201eb42d711a09caadad3ef6bf663b23d6c099
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-projects"></a>Web 项目
 Web 项目系统是创建 Web 项目的项目系统。 反过来，web 项目创建 Web 应用程序。 您可以编写使用传统的编程语言，如 Web 页面[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，若要将收集和处理来自用户的信息，将其存储在数据库中，依次类推。 使用关联的代码的网页称为智能网页。  

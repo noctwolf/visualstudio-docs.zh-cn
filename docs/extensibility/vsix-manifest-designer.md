@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eaf35854aede65b605b4578ca9ee71375ad7a479
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0d7af3ab109c922a8182a93db6852a331229ceca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 清单设计器
 修改 VSIX 包清单文件，它设置 Visual Studio 扩展的安装行为。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
  **元数据**选项卡包含以下控件。  
   
- **描述**  
+ **说明**  
  提供的扩展，在中显示的文本说明**扩展管理器**。  
   
  **语言**  
@@ -150,6 +151,6 @@ ms.lasthandoff: 10/31/2017
   
  标识符必须与匹配`ID`的依赖项包元数据的属性。 源可以是当前的解决方案、 当前安装的扩展或文件中的项目。 **如何为依赖关系解析**设置可以是嵌套的包相对路径或依赖项的下载位置的 URL。 ID、 版本和依赖项包的分辨率对应于`Id`， `Version`，和`Location`属性关联的`Dependency`元素。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSIX 扩展架构 2.0 参考](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)

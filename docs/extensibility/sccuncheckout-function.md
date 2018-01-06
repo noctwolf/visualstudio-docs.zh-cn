@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e210f239c543da84a1e80833f03b684099155ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f9b4b2f06b8ee020ca07e780836ec2abbbc96e82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 函数
 此函数撤消一个以前的签出操作，从而将所选的文件或文件的内容还原到之前签出的状态。 签出以来对文件所做的所有更改都都将丢失。  
@@ -58,7 +59,7 @@ SCCRTN SccUncheckout (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|撤消签出成功。|  
 |SCC_E_FILENOTCONTROLLED|所选的文件不是源代码管理下。|  
@@ -72,5 +73,5 @@ SCCRTN SccUncheckout (
 ## <a name="remarks"></a>备注  
  在此操作，`SCC_STATUS_CHECKEDOUT`和`SCC_STATUS_MODIFIED`标志将同时清除在其上执行撤消签出文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

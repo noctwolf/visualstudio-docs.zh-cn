@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016e609acb7ad837580b4cabb6055169ac7357c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>如何： 将扩展性项目迁移到 Visual Studio 2015
 下面介绍了如何升级你的扩展。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  从项目中删除 VS SDK 引用程序集，通过选择它们，右键单击和**删除**。  
   
-3.  添加 VS SDK 引用程序集的 NuGet 版本。  仍中时，在**解决方案资源管理器引用**节点，打开**管理 NuGet 包...**对话框。  如果你想要了解有关此对话框的详细信息，请参阅[包管理器 UI](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI)。 VS SDK 引用程序集在上发布[nuget.org](http://www.nuget.org)通过[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)。  
+3.  添加 VS SDK 引用程序集的 NuGet 版本。  仍中时，在**解决方案资源管理器引用**节点，打开**管理 NuGet 包...**对话框。  如果你想要了解有关此对话框的详细信息，请参阅[包管理器 UI](/NuGet/Tools/Package-Manager-UI)。 VS SDK 引用程序集在上发布[nuget.org](http://www.nuget.org)通过[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)。  
   
 4.  使用**nuget.org**作为你**包源**，搜索匹配的所需的引用程序集的 NuGet 包名称 (例如： microsoft.visualstudio.shell.14.0 的引用) 并安装在你项目。  NuGet 可以添加多个引用程序集，以满足初始程序集的依赖关系。  
   

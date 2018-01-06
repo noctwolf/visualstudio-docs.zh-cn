@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1490c350a9c2c5fc91d516e2658c47a8246eb5d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5ea7b08c95aa2844a65a9a6783774fe32c9e8c50
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支持项目和配置属性
 **属性**中的窗口[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 可以显示项目和配置属性。 可以为你自己的项目类型提供属性页，以便用户可以设置你的应用程序的属性。  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/31/2017
   
  `MyConfigProp`配置属性显示在为此配置属性页**我的配置属性**类别中**我类别**。 如果选择了选项，说明，**我说明**，将显示在说明面板。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [添加和删除属性页](../../extensibility/adding-and-removing-property-pages.md)   
  [项目](../../extensibility/internals/projects.md)   
  [模板目录说明 (.Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6fde5dfc012b43d71f6d8db2519607724eeeadc9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f29e6bc1aa2ca6800b90f509655dbf0da64af3aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>使用存储查看器进行调试
 使用存储查看器中，你可以检查的状态*存储*由[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]。 存储查看器显示所有在特定的存储区，以及元素的属性和元素之间的链接中的域模型元素。  
@@ -51,5 +52,5 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
   
  应用商店查看器有三个窗格： 右上窗格中，左窗格中，右下方窗格。 左窗格中是树视图中的类型`DomainDataDirectory`存储区的成员。 如果你扩展分区节点并单击一个元素，在右上窗格中会显示元素的属性。 如果该元素已链接到其他元素，右下方窗格中出现的其他元素。 如果双击右下方窗格中的某个元素时，在左窗格中会突出显示元素。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)

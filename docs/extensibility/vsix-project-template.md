@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24a2937b37aa339f85e197f6ff2bb49cbb0ce86f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: de8de116a9853391249a7a37a35bd54d0a6946d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-project-template"></a>VSIX 项目模板
 你可以使用 VSIX 项目模板将一个或多个 Visual Studio 扩展包装在一个 VSIX 项目中，然后将包发布上[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点。  
@@ -83,6 +84,6 @@ ms.lasthandoff: 10/31/2017
   
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]生成包含 VSIX 清单文件、 [Content_Types].xml 文件，和的所有扩展资产添加到项目的.vsix 文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSIX 扩展架构 2.0 参考](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d2ee5e741466b7976c8b397928cd9fccd12472fe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1acc753d2a02c3be88687a4e42d71d23e988af48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>使用作为用于查找源代码管理插件的键的字符串
 以下字符串是用于访问注册表来查找有关源代码管理信息插件的项。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="string-keys-and-values"></a>字符串键和值  
   
-|键|值|  
+|键|“值”|  
 |---------|-----------|  
 |`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|  
 |`STR_PROVIDERREGKEY`|ProviderRegKey|  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
 |`STR_UI_LANGUAGE`|G u a g|  
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件](../extensibility/source-control-plug-ins.md)   
  [如何： 安装了源代码管理插件](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [MSSCCPRJ.SCC 文件](../extensibility/mssccprj-scc-file.md)

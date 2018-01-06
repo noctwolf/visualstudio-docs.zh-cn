@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 754b2e79131e425b8e27c0084acbd6243016815a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7f02d099fe680006966219bb626e17bc7a7114b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 此接口表示进程中运行的程序。  
@@ -62,7 +63,7 @@ IDebugProgram2 : IUnknown
 |[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)|枚举该程序的代码路径。|  
 |[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)|转储写入文件。|  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
@@ -72,7 +73,7 @@ IDebugProgram2 : IUnknown
 ## <a name="remarks"></a>备注  
  程序是在特定的运行时体系结构中，运行，而进程组成一个或多个程序的线程容器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)   
  [下一步](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)   

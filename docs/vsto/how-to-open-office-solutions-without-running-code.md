@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74cc162e0323656bea9d48c8458eaf77519fdc14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c190c4ace56b2be9c63c9f11570354cddc6c8635
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>如何：打开 Office 解决方案但不运行代码
   创建具有托管的代码扩展的 Microsoft Office 解决方案运行，即使在最终用户的 Office 应用程序中的安全设置设为高。 这是因为.NET 程序集代码安全管理的 Microsoft.NET Framework 中，不是由 Microsoft Office。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
      如果解决方案由多人使用，此方法将运行状态，为所有这些阻止解决方案。 如果在代码或引用的服务器中发现有问题，并且你想要停止从执行它的所有用户，这会很有用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   

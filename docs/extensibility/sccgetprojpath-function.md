@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c626cfc6da56258241071476aba03690f349092
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ce41826a3a0d778c5a417496d47f290e97806fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函数
 此函数会提示用户输入是一个字符串，仅对源代码管理插件有意义的项目路径。 当用户是，将调用：  
@@ -82,7 +83,7 @@ SCCRTN SccGetProjPath (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功创建或检索项目。|  
 |SCC_I_OPERATIONCANCELED|已取消该操作。|  
@@ -106,6 +107,6 @@ SCCRTN SccGetProjPath (
   
  例如，如果中的用户**新项目**Visual Studio 中的向导将他或她的项目添加到源代码管理、 Visual Studio 会调用此函数和插件确定它是否可以在到的源控制系统中创建新项目包含 Visual Studio 项目。 如果用户单击**取消**之前完成向导，永远不会创建项目。 如果用户单击**确定**，Visual Studio 会调用`SccOpenProject`，并传入`SCC_OPT_CREATEIFNEW`，并在该时间创建受源代码管理项目。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1c38c110e9499936a24c33432180adf18209bf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a581c5a9ae56f52727c011db1de2ad35a5ba3592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>启用要调试程序
 你的调试引擎 (DE) 可以调试的程序之前，你必须首先启动 DE 或将其附加到的现有程序。  

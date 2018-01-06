@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0b0c883293cd01e21facfcc2e4483d2c5bbf164
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eb61257b80e3f8b4a09819b2b037f342e2ecbee0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-the-program"></a>注册程序
 调试引擎已获取端口后，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口，启用要调试程序的下一步是将其注册端口。 注册后，该程序是可用于调试通过以下方法之一：  
@@ -107,6 +108,6 @@ ms.lasthandoff: 10/31/2017
   
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [获取端口](../../extensibility/debugger/getting-a-port.md)   
  [启用要进行调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

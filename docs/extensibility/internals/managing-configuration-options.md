@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e0de435dca5c2bf16d9943f353ddb72080af969
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a3a5ae644d910cdad584c7b285c75987f39c26e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-configuration-options"></a>管理配置选项
 在创建新的项目类型时，你必须管理项目和解决方案配置设置以确定你的项目将生成方式，打包、 已部署的、 和运行。 以下主题讨论项目和解决方案配置。  

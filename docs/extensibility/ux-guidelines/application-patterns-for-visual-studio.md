@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fad2e8d63b0005addab20756501d18fe872b4c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio 的应用程序模式
 ##  <a name="BKMK_WindowInteractions"></a>窗口交互  
@@ -248,7 +249,7 @@ Visual Studio 工具窗口具有不同的状态，其中一些用户激活 （�
   
 -   布局应包含标头，并按照标准报表布局。  
   
-#### <a name="dashboards"></a>面板  
+#### <a name="dashboards"></a>仪表板  
   
 -   仪表板无交互模型本身，但作为一种方式来提供各种其他工具。  
   

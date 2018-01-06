@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9750d946a941e86a6c0a6973661f00f8f44cf9b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a5d66bf7670d5ba9b6423461bdb5e5482819592f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多个项目连接设置的应用程序
 源代码管理插件生成使用源控件的插件 API 1.2 中，可以使用批处理操作来执行相同的源代码管理操作跨多个项目或多个连接上下文。 批处理可以用于消除冗余，每个项目中的用户体验的对话框。  
@@ -36,5 +37,5 @@ ms.lasthandoff: 10/31/2017
   
  `SCCBeginBatch`函数开始源代码管理操作的组。 `SccEndBatch`关闭组。 不能嵌套组。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

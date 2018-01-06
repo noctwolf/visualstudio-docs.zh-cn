@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f15eea2c0f1e7e62990d860007a7efc4966cb8cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9cbb87017b910accae5ebc63b648691c50f88476
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-wpf-controls-in-office-solutions"></a>在 Office 解决方案中使用 WPF 控件
   虽然使用 Visual Studio 中的 Office 开发工具创建的解决方案旨在直接使用 Windows 窗体控件，但你也可以在解决方案中使用 WPF 控件。 Windows Presentation Foundation (WPF) 就设计用户界面这方面而言可替代 Windows 窗体。 WPF 使用一种称为可扩展应用程序标记语言 (XAML) 的标记语言提供用于整合 UI、媒体和文档的新技术。 有关详细信息，请参阅[Visual Studio 2015 中的 WPF 简介](/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs)。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
   
      Visual Studio 将自动创建一个在 Windows 窗体用户控件中承载 WPF 用户控件 <xref:System.Windows.Forms.Integration.ElementHost> 的对象。  
   
-8.  编写以编程方式将 Windows 窗体用户控件添加到文档或工作簿的代码。 有关更多信息，请参见 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+8.  编写以编程方式将 Windows 窗体用户控件添加到文档或工作簿的代码。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
     > [!NOTE]  
     >  不能将 Windows 窗体用户控件拖动到设计器中的文档或工作表中。  
@@ -115,7 +116,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [演练：设置 WPF 内容的样式](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office UI 自定义项](../vsto/office-ui-customization.md)   
  [Windows 窗体上的控件 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [操作窗格概述](../vsto/actions-pane-overview.md)   

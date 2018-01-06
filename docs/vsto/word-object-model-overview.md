@@ -22,11 +22,12 @@ caps.latest.revision: "78"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd89a4cd713e4cdff22ffbbd570ee2e0bf60ef37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b01307811930ec865e2b38e899318dfdd99c74a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="word-object-model-overview"></a>Word 对象模型概述
   在 Visual Studio 中开发 Word 解决方案时，会与 Word 对象模型进行交互。 此对象模型包含 Word 的主互操作程序集中所提供的类和接口，并在 <xref:Microsoft.Office.Interop.Word> 命名空间中进行定义。  
@@ -83,7 +84,7 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#120)]
  [!code-csharp[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#120)]  
   
- 在 VSTO 外接程序项目中，可以在运行时生成 <xref:Microsoft.Office.Tools.Word.Document> 主机项。 可以使用生成的主机项将控件添加到关联文档。 有关详细信息，请参阅 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 在 VSTO 外接程序项目中，可以在运行时生成 <xref:Microsoft.Office.Tools.Word.Document> 主机项。 可以使用生成的主机项将控件添加到关联文档。 有关更多信息，请参见 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ### <a name="selection-object"></a>Selection 对象  
  <xref:Microsoft.Office.Interop.Word.Selection> 对象表示当前所选的区域。 在 Word 用户界面中执行操作（如文本加粗）时，可以选择或突出显示文本，然后应用格式设置。 文档中始终存在 <xref:Microsoft.Office.Interop.Word.Selection> 对象。 如果未选中任何内容，则它表示插入点。 此外，选定内容可包含多个不相邻的文本块。  
@@ -132,7 +133,7 @@ ms.lasthandoff: 10/31/2017
   
  VBA 对象模型引用中的所有对象和成员都与 Word PIA 中的类型和成员相对应。 例如，VBA 对象模型引用中的文档对象对应于<xref:Microsoft.Office.Interop.Word.Document>与 Word PIA 中的对象。 虽然 VBA 对象模型引用提供了大多数属性、方法和事件的代码示例，但如果要在用 Visual Studio 创建的 Word 项目中使用本引用中的 VBA 代码，必须将其转换为 Visual Basic 或 Visual C# 代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)   
  [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)   
  [使用文档](../vsto/working-with-documents.md)   

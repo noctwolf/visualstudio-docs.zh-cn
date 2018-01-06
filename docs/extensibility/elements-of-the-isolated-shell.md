@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15c32ccd3634529c63eb95eb698c3239b6c0e37e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b1e52963253f73c633b9b14bf64525bdb0afaeab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elements-of-the-isolated-shell"></a>独立 Shell 中的元素
 你可以修改注册表设置、 运行时设置和应用程序的独立的 shell 应用程序，其.vsct、.pkgdef、 and.pkgundef 文件的入口点。  

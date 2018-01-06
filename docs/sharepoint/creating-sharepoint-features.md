@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8f78a12aa70c3c7042a821a737485da963f7a56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a6917a8909bed30319d104f45398409b4ba367f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-features"></a>创建 SharePoint 功能
   SharePoint 功能可用于更易于部署的相关的 SharePoint 项目项进行分组。 你可以创建功能、 设置作用域，并通过使用 SharePoint 功能设计器将其他功能标记为依赖关系。 设计器还会生成一个清单，这是一个 XML 文件，描述每个功能。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 |--------------|-----------------|  
 |标题|可选。 该功能的默认标题设置为*SolutionName**FeatureName*。|  
 |描述|可选。 SharePoint 功能的说明。|  
-|范围|必需。 如果通过创建一项功能**解决方案资源管理器**，作用域默认设置为 Web。<br /><br /> -场： 激活的整个服务器场的功能。<br /><br /> 站点： 激活网站集中的所有 web 站点的功能。<br /><br /> -Web： 激活特定网站的功能。<br /><br /> -Web 应用程序： 激活某项功能的 web 应用中的所有 web 站点。|  
+|范围|必须的。 如果通过创建一项功能**解决方案资源管理器**，作用域默认设置为 Web。<br /><br /> -场： 激活的整个服务器场的功能。<br /><br /> 站点： 激活网站集中的所有 web 站点的功能。<br /><br /> -Web： 激活特定网站的功能。<br /><br /> -Web 应用程序： 激活某项功能的 web 应用中的所有 web 站点。|  
 |解决方案中的项|可以添加到该功能的所有 SharePoint 项。|  
 |功能中的项|已添加到功能 SharePoint 项目项。|  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="adding-feature-dependencies"></a>添加功能依赖关系  
  你可以配置的功能清单，以便 SharePoint 服务器激活某些功能之前激活你的功能。 例如，如果你的 SharePoint 功能依赖于用于功能或数据的其他功能，SharePoint 服务器可以首先尝试激活任何取决于你的功能的功能。 有关详细信息，请参阅[如何： 添加和移除功能依赖关系](../sharepoint/how-to-add-and-remove-feature-dependencies.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [如何： 添加和移除项 SharePoint 功能](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
  [如何：添加和删除功能依赖项](../sharepoint/how-to-add-and-remove-feature-dependencies.md)  

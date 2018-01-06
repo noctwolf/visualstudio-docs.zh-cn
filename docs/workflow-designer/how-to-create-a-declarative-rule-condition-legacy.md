@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 736c36df419d601c27998d8d34bde9abe5976a17
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 57835632e03e8b871c29e2fec7d4b382722451e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>如何：创建声明性规则条件（旧版）
 本主题介绍如何使用面向 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 的旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 来声明规则条件。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/27/2017
   
      有关如何使用信息**选择条件**对话框中，请参阅[选择条件对话框 （旧版）](../workflow-designer/select-condition-dialog-box-legacy.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [旧工作流活动](../workflow-designer/legacy-workflow-activities.md)   
  [使用 ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066)   
  [使用 IfElseBranchActivity 活动](http://go.microsoft.com/fwlink?LinkID=65075)   

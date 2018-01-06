@@ -12,11 +12,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: d32cef09adef982f22aa46a72ab71cd1e7ec8568
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3a8694c3c2a0601d3ce616b593e4c652d959f59e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="domain-path-syntax"></a>域路径语法
 DSL 定义使用类似 XPath 的语法在模型中查找特定元素。  
@@ -37,5 +38,5 @@ DSL 定义使用类似 XPath 的语法在模型中查找特定元素。
   
  用于元素到链接跳跃的名称是角色的 `Property Name` 的值。 用于链接到元素跳跃的名称是目标角色名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [了解模型、类和关系](../modeling/understanding-models-classes-and-relationships.md)

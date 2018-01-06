@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7175bd4e2d0b07640dd45b38aa246c649def32ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8a331c131eaf48eb7be8bc3709599412aa01b1ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>使用项目工厂创建项目实例
 中的项目类型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*项目工厂*创建的项目对象实例。 项目工厂是类似于 cocreatable COM 对象的标准类工厂。 但是，项目对象不是 cocreatable： 仅可以通过使用项目工厂创建它们。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
  一个项目都可以还使用任何文件，并将其项目状态相反，存储在文件系统，例如数据库或 Web 服务器以外的存储机制。 在这种情况下，文件名称参数传递给`CreateProject`方法不是实际的文件系统路径，而一个唯一字符串-URL-标识项目数据。 不需要将传递给模板文件复制`CreateProject`触发要执行的适当构造序列。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   

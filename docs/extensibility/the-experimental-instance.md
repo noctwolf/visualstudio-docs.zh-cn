@@ -16,11 +16,12 @@ caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2de242ed974716b0ba00918d30bc2679a36420fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a656baf951e573a5913960b19c1b583797de090f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-experimental-instance"></a>实验实例
 为了防止未经测试的应用程序可能会更改它从 Visual Studio 开发环境，VSSDK 提供可用于试验的实验空间。 像往常一样，使用 Visual Studio 开发新应用程序，但你通过使用此实验实例运行它们。  

@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7995b6768ae188484c15a3b1d3157df116ca481
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 67b35bb60224ce8c10136314ce2d42635d80c5c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>如何：向 SharePoint 项目中添加项
   SharePoint 解决方案包含一个或多个项目，其中每个包含多个 SharePoint 项目项。 打开或创建 SharePoint 解决方案后，你可以将新的或现有项添加到这些项目。 例如，新工作流项目附带了名为 default.aspx 中，默认窗体，但你可以将替换为新的或不同的窗体，该窗体或添加另一个 ASPX 窗体。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  浏览到包含你想要添加，选择它，，然后选择的项的文件夹**添加**按钮。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
   

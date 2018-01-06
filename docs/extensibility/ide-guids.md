@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e2cd6f661afb876d06c30bdccb6786eac4e99e26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9034be93256250c5502d5f8da9c79a4308a47ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-guids"></a>IDE Guid
 <xref:Microsoft.VisualStudio.VSConstants>类发布的集成的开发环境 (IDE) 的某些部分的 Guid 下, 表中列出。  
@@ -130,7 +131,7 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsDocOutlinePackage>|21af45b0-ffa5-11d0-b63f-00a0c922e851|  
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider>|35222106-bb44-11d0-8c46-00c04fc2aae2|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在托管代码中的 COM 常量](../extensibility/com-constants-in-managed-code.md)   
  [IDE 常量](../extensibility/ide-constants.md)   
  [用于扩展项目系统的 IDE 定义的命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f69bbed7c335afb6b570de34cbef70470abd373
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c24b8c5520befcc204b59609b116d9d16ee26281
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>使用编辑器适配器的新的或更改行为
 如果你要更新已针对早期版本的 Visual Studio 核心编辑器中，编写代码，并且你计划使用的编辑器适配器 （或填充码），而不是使用新的 API，你应注意以下编辑器适配器的行为差异与以前的核心编辑器。  

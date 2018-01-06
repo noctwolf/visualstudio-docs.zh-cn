@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 850e4b2ef6d455bb141827fa125c4c7c6860b652
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9727b6fcbe3c552273ca521e8fd14ab5e5181eb7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisense-hosting"></a>IntelliSense 承载
 Visual Studio 使 IntelliSense 承载。 IntellSense 承载允许您 IntelliSense 为提供不由 Visual Studio 文本编辑器托管的代码。  
@@ -49,5 +50,5 @@ Visual Studio 使 IntelliSense 承载。 IntellSense 承载允许您 IntelliSens
 #### <a name="ivsintellisensecompletor"></a>IVsIntellisenseCompletor  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseCompletor>接口是可共同创建版本的集成的开发环境 (IDE) 使用标准完成窗口。 任何<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost>接口可以快速实现通过使用此 completor 接口的智能感知。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17e14d4f8d3d62297ae1d2f3e62a9ed0574fef9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2f8a2cc2f1c13c46b3ac4838d95ce588d0461347
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-configuration-details"></a>源控件配置详细信息
 若要实现源代码管理，你需要以正确配置你的项目系统或编辑器执行以下操作：  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
  对于每个添加、 重命名和删除操作，没有`OnQuery*`方法和`OnAfter*`方法。 调用`OnQuery*`方法请求权限，若要添加，重命名或删除文件或目录。 调用`OnAfter*`方法后的文件或目录已添加、 重命名或删除的项目状态反映此新状态。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>   

@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cde0a7c34fe81c86d9f500bb1800006e5291ee92
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cbf4e9f2ccbe895db79115949818345c62245f71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>到源代码管理存储区的本地项目文件夹的可选比较
 在源中控制本地项目文件夹和源控件之间的比较通过使用函数来实现的插件 API 1.2 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)和[SccDirDiff](../../extensibility/sccdirdiff-function.md)。  
@@ -41,5 +42,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  此函数使用相同的命令标志作为[SccDiff](../../extensibility/sccdiff-function.md)。 作为源代码管理插件提供，你可以选择不支持目录的"快速差异"操作。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

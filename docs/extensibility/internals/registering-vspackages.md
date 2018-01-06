@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d580d3d74d8648b7181ac1ca384d3232fa8225b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 119e6dc088c6f6e80d79ab096d97b7404c530611
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-vspackages"></a>注册 Vspackage
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]依赖于.pkgdef 文件来介绍并找到 VSPackage。 一个.pkgdef 文件包含否则将添加到系统注册表中的所有注册信息。 通过将特性添加到源代码，然后运行注册托管的 Vspackage [CreatePkgDef 实用工具](../../extensibility/internals/createpkgdef-utility.md)上生成的程序集生成.pkgdef 文件。  

@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9687e4f0be16fb42f13c6f9dd20a2cb39be50cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 00716142e7f91d01fbc81c5d25b378065cb44f92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>使用文本管理器来监视全局设置
 如果实现核心编辑器，你必须监视对全局设置，进行更改，因为这些更改可能影响你的编辑器实例。 你可以通过侦听由文本管理器引发的事件跟踪所做的更改。 例如，在核心编辑器中，例如其文档数据对象，指定的外观或行为的一个组件的全局首选项时的文本管理器将存储此信息，并将其传递给受影响的所有客户端。  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
   
  文本管理器的事件通知由<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>接口。 实现此接口上你的客户端对象以处理事件引发的文本管理器。 通过使用这些事件注册<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>文本管理器上的接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在核心编辑器](../extensibility/inside-the-core-editor.md)   
  [编辑器功能](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)

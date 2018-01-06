@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84d2700e1dfb5d66fb2df6376db9e0ce5352ad4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 21d7f013989607f7f5416a57829bc9b2b29b61d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-subtypes"></a>项目子类型
 项目子类型允许你自定义或 flavor 的项目系统的行为[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 自定义包括在项目文件中，添加或筛选中的项目中保存的其他数据**添加新项**对话框中，控制如何调试和部署，程序集和扩展项目**属性页**对话框。 Vspackage 实现项目子类型使用 COM 聚合。  

@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfd145281a467a23cd01d73ff04721d68580254e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4c6321644cb59f55ad1335249aec5b071aef4ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何： 打开编辑器的打开的文档
 项目将打开一个文档窗口之前，该项目首先必须确定文件是否已打开在另一个编辑器的文档窗口中。 文件可以在项目特定编辑器中，或者打开或使用标准编辑器之一注册[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  如果文档未打开，然后完成中的步骤[如何： 打开标准编辑器](../extensibility/how-to-open-standard-editors.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [打开和保存项目项](../extensibility/internals/opening-and-saving-project-items.md)   
  [如何： 打开项目特定编辑器](../extensibility/how-to-open-project-specific-editors.md)   
  [如何：打开标准编辑器](../extensibility/how-to-open-standard-editors.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffc6ecc620f57f0cc1e4dd8baf02f1bd1b17d53b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3a5e31eb2acb50d9803bedd77e48d0821cbaea61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="feedback-to-the-user"></a>向用户的反馈
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)，有关可用的功能取决于用户的当前所选内容和全局选择上下文的视觉反馈。 下表列出不同的选择上下文中提供的功能。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
 -   活动的层次结构窗口，这通常是**解决方案资源管理器**，和其标题栏更新以反映当前上下文和上下文相关**项目**菜单命令将应用于活动站点应用程序项目。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [选择和 IDE 中的货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [选择上下文对象](../../extensibility/internals/selection-context-objects.md)   
  [层次结构和选择](../../extensibility/internals/hierarchies-and-selection.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc6254be575593056c386360aa0d7c0a83833d75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a69b93f05619b16657d045cc7ef833d468ae7a51
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio 独立 Shell
 Visual Studio 独立 shell，可创建独立的应用程序可以运行的并行与其他版本的 Visual Studio。 它是主要用于承载专用的工具，可以使用 Visual Studio 服务，但还具有自定义的外观和品牌。 Visual Studio 功能和菜单命令组可以轻松地打开和关闭。 应用程序标题、 应用程序图标和初始屏幕是完全可自定义。 有关可自定义功能的列表，请参阅[自定义独立 Shell](../extensibility/customizing-the-isolated-shell.md)。  
@@ -65,5 +66,5 @@ Visual Studio 独立 shell，可创建独立的应用程序可以运行的并行
 |Web|HTML 编辑器<br /><br /> Web 浏览器<br /><br /> Web 窗体设计器<br /><br /> 网站项目<br /><br /> Web 应用程序项目|  
 |扩展性|使用 Vspackage 和 MEF 组件|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Shell（独立或集成）](../extensibility/shell-isolated-or-integrated.md)

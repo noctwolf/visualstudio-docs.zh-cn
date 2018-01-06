@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc45c47f47fe18bc857715acc3948561f06e718c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b77cc0ea260ae86460de3c7a7752277a99291778
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-glossary"></a>源控件插件术语表
 以下有用的术语和定义适用于源控件插件 SDK 文档。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
  合并  
  在两个或多个源过程代码文件合并以形成新的文件，其中包含从以前的文件的所有功能的过程。 这一概念是在版本控制中至关重要的其中两个或多个开发人员在文件上同时处理。  
   
- Project  
+ 项目  
  源代码管理文件夹通常称为项目。 这在 Visual Studio 中没有与项目或解决方案的任何关系。  
   
  插件  
@@ -67,5 +68,5 @@ ms.lasthandoff: 10/31/2017
  Revision  
  文件历史记录或文件组已提交的更改。 修订都是一个持续不断变化的项目中的快照。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件](../extensibility/source-control-plug-ins.md)

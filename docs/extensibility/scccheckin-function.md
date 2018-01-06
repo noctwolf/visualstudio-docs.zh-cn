@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3742887be40f07f4b64003727333d4d21d08831e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f95377f79d02952c63b673d50569fac058a8573c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函数
 此函数签入到源代码管理系统，存储所做的更改和创建新版本的以前的签出文件。 使用计数和要签入的文件的名称的数组调用此函数。  
@@ -62,14 +63,14 @@ SCCRTN SccCheckin (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功签入的文件。|  
 |SCC_E_FILENOTCONTROLLED|所选的文件不是源代码管理下。|  
 |SCC_E_ACCESSFAILURE|没有访问源代码管理系统，可能由于网络或争用问题发生时出现问题。 建议重试。|  
 |SCC_E_NONSPECIFICERROR|非特定的失败。 未签入的文件。|  
 |SCC_E_NOTCHECKEDOUT|用户不具有签出文件，因此无法将其签入。|  
-|SCC_E_CHECKINCONFLICT|无法执行签入，因为：<br /><br /> 的另一个用户签入提前和`bAutoReconcile`是 false。<br /><br /> - 或 -<br /><br /> 的 （例如，当文件是二进制文件），不能完成自动合并。|  
+|SCC_E_CHECKINCONFLICT|无法执行签入，因为：<br /><br /> 的另一个用户签入提前和`bAutoReconcile`是 false。<br /><br /> 或<br /><br /> 的 （例如，当文件是二进制文件），不能完成自动合并。|  
 |SCC_E_VERIFYMERGE|文件已自动合并，但具有尚未签入挂起的用户验证。|  
 |SCC_E_FIXMERGE|文件已自动合并，但不是检入由于必须手动解决合并冲突。|  
 |SCC_E_NOTAUTHORIZED|不允许用户执行此操作。|  
@@ -82,5 +83,5 @@ SCCRTN SccCheckin (
   
  `fOptions`参数可以为其赋值的`SCC_KEEP_CHECKEDOUT`标志，用于指示要检查文件，并再次将它签出的用户的意图。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

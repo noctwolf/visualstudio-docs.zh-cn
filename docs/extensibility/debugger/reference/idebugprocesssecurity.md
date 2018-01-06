@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e9c3a5f87540f8b255030654fb0917e3045ae19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7acdb0f16182ebca904229d7620b80f5ec81d1de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 `IDebugProcessSecurity`实现端口供应商来警告用户附加到进程是不安全。  
@@ -39,14 +40,14 @@ IDebugProcessSecurity : IUnknown
 ## <a name="remarks"></a>备注  
  实现此接口可显示一条警告，并允许用户取消如果您将连接的过程可被视为不安全。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [端口](../../../extensibility/debugger/ports.md)   
  [端口供应商](../../../extensibility/debugger/port-suppliers.md)   
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   

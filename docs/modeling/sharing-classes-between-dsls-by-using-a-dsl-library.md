@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: ed225f315c92cf9276eb97fcb78e1730250ecd4c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 20234988ba43597752dea6269f97ee4b26fe19b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 库在 DSL 之间共享类
 在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK，你可以创建，你可以导入到另一个 DSL 的 DSL 定义不完整。 这样可以考虑因素的类似模型的公共部分。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/27/2017
   
  DSL 库可以导入其他库。 当你导入的库，其导入也会自动出现在 DSL 资源管理器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

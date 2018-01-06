@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d5d251c414c955480d3a7e4289935d913fa470c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-syntax-coloring"></a>实现语法着色
 时语言服务提供了语法着色，分析器将一行文本转换为着色的项的数组，并返回与这些着色项对应的令牌类型。 分析器应返回属于可着色项的列表的令牌类型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]根据由着色器对象分配给相应的令牌类型的属性的代码窗口中显示每个可着色的项。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="managed-package-framework-colorizer"></a>托管的包框架着色器  
  托管的包框架 (MPF) 提供实现着色程序所需的所有类。 语言服务类应该继承<xref:Microsoft.VisualStudio.Package.LanguageService>类，实现所需的方法。 必须通过实现提供扫描仪和分析器<xref:Microsoft.VisualStudio.Package.IScanner>接口，并返回从该接口的实例<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>方法 (必须在中实现的方法之一<xref:Microsoft.VisualStudio.Package.LanguageService>类)。 有关详细信息，请参阅[旧语言服务中的语法着色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 使用内置可着色项](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [自定义可着色项](../../extensibility/internals/custom-colorable-items.md)   
  [开发旧语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)   

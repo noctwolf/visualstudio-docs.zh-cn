@@ -21,23 +21,24 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9048f965ad2f04b4eed8fe3a753f6fddc280dbfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>调试 Visual Studio 中的 ASP.NET 应用程序
 
 你可以调试从 Visual Studio 的 ASP.NET 应用程序。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>惠?
 
 若要按照本主题中的说明，你需要：
 
 - IIS Express，它包括默认情况下，在 Visual Studio 2012 及更高版本
 
-    - 或 -
+    或
 
 - 本地 IIS web 服务器 （版本 8.0 或更高版本），已正确配置，可以运行 ASP.NET 应用程序且未发生错误。
 
@@ -124,7 +125,7 @@ Web.config 文件应类似下面的示例：
 
 2. 如果您选择外部 （自定义） 服务器，输入中的正确 URL**项目 URL** (或**基 URL**) 字段。
 
-    如果该外部服务器是本地 IIS，则必须安装 IIS，并将其正确配置。 例如，必须在 IIS 中配置 ASP.NET 的正确版本。 有关详细信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 如果你想要测试部署，以及调试，请参阅[部署测试](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis)。
+    如果该外部服务器是本地 IIS，则必须安装 IIS，并将其正确配置。 例如，必须在 IIS 中配置 ASP.NET 的正确版本。 有关详细信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 如果你想要测试部署，以及调试，请参阅[部署测试](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis)。
 
     如果外部服务器[远程](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)相反，附加到进程，这些项目设置不用于调试。
 
@@ -134,7 +135,7 @@ IIS express，你不需要配置 web 服务器 （跳过此部分）。 IIS Expr
 
 如果使用本地 IIS web 服务器，请按照下列步骤。
 
-1. 请确保正确安装 IIS。 有关详细信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
+1. 请确保正确安装 IIS。 有关详细信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
     * 请确保在服务器上安装正确版本的 ASP.NET。 使用 Web 平台安装程序 (WebPI) 安装 ASP.NET 4.5 (从 Windows Server 2012 R2 中的服务器节点中，选择**获取新的 Web 平台组件**然后搜索 ASP.NET)。 若要安装 ASP.NET 核心，请参阅[发布到 IIS](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration)。
 
@@ -223,12 +224,12 @@ IIS express，web 应用会自动进行部署在开始调试时 （跳过此部�
 > [!IMPORTANT]
 > 启用调试模式下极大地影响性能的你[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]应用程序。 请记住，在部署发布版本的应用程序或进行性能度量之前要禁用调试模式。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [ASP.NET 调试： 系统要求](aspnet-debugging-system-requirements.md)   
 [如何： 运行辅助进程的用户帐户](how-to-run-the-worker-process-under-a-user-account.md)   
 [如何： 查找 ASP.NET 进程的名称](how-to-find-the-name-of-the-aspnet-process.md)   
 [调试已部署的 Web 应用程序](debugging-deployed-web-applications.md)   
 [演练： 调试 Web 窗体](walkthrough-debugging-a-web-form.md)   
 [如何： 调试 ASP.NET 异常](how-to-debug-aspnet-exceptions.md)   
-[调试 Web 应用程序： 错误和疑难解答](debugging-web-applications-errors-and-troubleshooting.md)
+[调试 Web 应用程序：错误和疑难解答](debugging-web-applications-errors-and-troubleshooting.md)
   

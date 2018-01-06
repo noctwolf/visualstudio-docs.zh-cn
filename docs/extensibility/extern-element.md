@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 764b6ff8b19711cb05f34c9bf652956057318346
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff198f5c4b574bf3a27ae1ee8fb6ffdd482c7f71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extern-element"></a>Extern 元素
 Extern 元素引用在编译时合并使用.vsct 文件的任何外部标头 (.h) 文件。 要合并的文件必须在 Include 路径提供给 VSCT 编译器或引用的[包括元素](../extensibility/include-element.md)。 文件可能是其他.vsct 文件或 c + + 标头文件。  
@@ -43,7 +44,7 @@ Extern 元素
   
 |特性|描述|  
 |---------------|-----------------|  
-|href|必需。 标头文件的路径：<br /><br /> href="stdidcmd.h"|  
+|href|必须的。 标头文件的路径：<br /><br /> href="stdidcmd.h"|  
 |条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
 |语言|可选。 默认语言的所有[\<字符串 >](../extensibility/strings-element.md)命令表中的元素：<br /><br /> 语言 ="en-我们"|  
   
@@ -71,7 +72,7 @@ Extern 元素
 </CommandTable>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表 (。Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 734d05dd013be9a3d6c4a173a5c7abc7a01ef2d8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 004b40acb50fe85604d0a3cfa9f5626891fa66a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idsymbol-element"></a>IDSymbol 元素
 `IDSymbol`元素包含的 guid: id 对，表示菜单、 组或命令的 ID。 GUID 来自父`GuidSymbol`元素。 `IDSymbol`元素具有`name`提供的 ID 中包含的友好名称的属性`value`属性。  
@@ -37,8 +38,8 @@ ms.lasthandoff: 10/31/2017
   
 |特性|描述|  
 |---------------|-----------------|  
-|name|必需。 ID 符号名称。|  
-|值|必需。 ID 符号的数字 ID 值。|  
+|name|必须的。 ID 符号名称。|  
+|值|必须的。 ID 符号的数字 ID 值。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  
@@ -52,5 +53,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  每个`IDSymbol`元素中的给定`GuidSymbol`元素必须具有唯一`value`。 但是， `IDSymbol` ，只要它们具有不同的父，可以在包中存在具有相同的值的元素。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

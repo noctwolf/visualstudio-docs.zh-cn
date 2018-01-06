@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3e0216161669e12c245484da3ca6e4de63c6a48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ce1de0467e7e662fd0def096ef6adb042578f8b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-type-design-decisions"></a>项目类型的设计决策
 在创建新的项目类型之前，你必须进行一些设计决策，有关你的项目类型。 你必须决定要将哪些类型的项将包含你的项目、 如何将保持项目文件，以及哪些承诺模型。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
  当通过使用事务处理的模式中打开数据对象时，更改保存到内存中的临时位置，并在用户手动选择保存文件之前不提交。 在那时，必须一起出现的所有更改，或将进行任何更改。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [清单： 创建新项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [NIB： 项管理项目中](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)   

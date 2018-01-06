@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1218be6316740b50ebd7446848ee1bd3352b122e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 165f973fa9139f281211e6b01167b3d7044166df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 调试引擎 (DE) 使用此接口来将调试事件发送到会话调试管理器 (SDM)。  
@@ -47,14 +48,14 @@ IDebugEventCallback2 : IUnknown
   
  如果包实现[IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md)在托管代码中，强烈建议，<xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A>传递给在各种接口上调用[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)   

@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4cd83a8d8e72c18f8a6929e8985f7a8635a940d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 950b9f0a7b0f38689042877a42499e23253e6486
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-buttons"></a>属性窗口按钮
 根据开发语言和产品类型，某些按钮的工具栏上的默认情况下显示**属性**窗口。 在所有情况下，**按分类顺序**， **Alphabetized**，**属性**，和**属性页**按钮显示。 在 Visual C# 和 Visual Basic 中，**事件**按钮还会显示。 在某些 Visual c + + 项目中， **VC + + 消息**和**VC 替代**按钮显示。 对于其他项目类型，可能显示其他按钮。 有关详细信息中的按钮有关**属性**窗口中，请参阅[属性窗口](../../ide/reference/properties-window.md)。  
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  无法添加到工具栏按钮**属性**使用非托管的代码的窗口。 若要添加工具栏按钮，你必须创建派生自的托管的对象<xref:System.Windows.Forms.Design.PropertyTab>。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展属性](../../extensibility/internals/extending-properties.md)

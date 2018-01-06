@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f06af0b884d404b3fd2e8e36cac235c10d254bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 787fd7c6980df9809fed9582f4ec8da81de8f862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell （独立或集成）
 你可以创建自己的基于 Visual Studio 的应用程序集成或独立模式中。 在集成模式下，将除了你的应用程序可用许多 Visual Studio 功能。 在独立模式下，你可以选择要随自己的扩展一起分发的 Visual Studio 功能的子集。  
@@ -59,5 +60,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="additional-resources"></a>其他资源  
  有关可再发行组件包的详细信息，请参阅[Visual Studio 扩展性下载](http://go.microsoft.com/fwlink/?LinkID=119298)Web 站点。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)

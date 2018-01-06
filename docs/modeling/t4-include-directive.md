@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4f46faae63d3fd60715ecd9aec804d03ef6dbc81
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5d76ca47f0278306c16d6d5b15b964d6118318c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-include-directive"></a>T4 包含指令
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的文本模板中，通过使用 `<#@include#>` 指令可包括来自另一个文件的文本。 可以将 `include` 指令放置在文本模板中第一个类功能块 `<#+ ... #>` 前面的任何位置。 包含文件还可以包含 `include` 指令和其他指令。 这将允许您在模板之间共享模板代码和样本文本。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/27/2017
   
      这些附加包含文件夹可能取决于包含文件的文件扩展名。 例如，DSL 工具包含仅具有文件扩展名 `.tt` 的包含文件可访问的文件夹。  
   
--   `filePath` 可以包括用“%”分隔的环境变量。 例如：  
+-   `filePath` 可以包括用“%”分隔的环境变量。 例如:  
   
     ```  
     <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  

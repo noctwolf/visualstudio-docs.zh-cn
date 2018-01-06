@@ -13,16 +13,17 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74408fd88a594503c2a585cd0edfa86f28ed596e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9e8ea75cb96b36f885a55cbf9f174394379dc05a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>演练： 创建自定义编辑器
 VSPackage 项目模板可以在 c + + 中创建一个简单的自定义编辑器。  VSPackage 项目模板不再支持 C# 或 Visual Basic 项目。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="the-visual-studio-package-project-template"></a>Visual Studio 包项目模板  
@@ -48,5 +49,5 @@ VSPackage 项目模板可以在 c + + 中创建一个简单的自定义编辑器
   
      编辑器支持剪切和粘贴、 查找和替换和打开负载操作。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPackage](../extensibility/internals/vspackages.md)

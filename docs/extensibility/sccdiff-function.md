@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bfe7da717a59b114052080048e97b1d6fcdd425
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 832d80c3ca49cc03c4a66b6a4cf931dd40686c82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccdiff-function"></a>SccDiff 函数
 此函数显示 （或 （可选） 只需检查） 控制系统的源中 （在本地磁盘） 上的当前文件和其最近的签入版本之间的差异。  
@@ -54,7 +55,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|正在使用复制和服务器版本是相同的。|  
 |SCC_I_FILESDIFFERS|工作副本不同在源代码管理下的版本。|  
@@ -83,5 +84,5 @@ SCCRTN SccDiff(
 |SCC_DIFF_QD_CHECKSUM|以无提示方式比较通过校验和时支持的文件。 如果不支持，回退到内容的比较。|  
 |SCC_DIFF_QD_TIME|以无提示方式将通过其时间戳时支持的文件进行比较。 如果不支持，回退到内容的比较。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

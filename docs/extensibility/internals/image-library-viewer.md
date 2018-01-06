@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3da2368d8d30ba54dd6b4ae6a36aba6e75ea2967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b699233d0b0ddf14079240da3bd831a172641fba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-library-viewer"></a>图像库查看器
 Visual Studio 图像库查看器工具可以加载和搜索图像的清单，这样就允许用户与 Visual Studio 将相同的方式对其进行处理。 用户可以更改背景、 大小、 DPI、 高对比度和其他设置。 该工具还显示每个图像清单加载信息，并显示图像清单中的每个图像的源信息。 此工具可用于：  
@@ -74,9 +75,9 @@ Visual Studio 图像库查看器工具可以加载和搜索图像的清单，这
 |-|-|  
 |**子元素**|**定义**|  
 |导入|导入当前清单中使用的给定清单文件的符号。|  
-|Guid|符号表示一个 GUID，并且必须匹配 GUID 的格式设置。|  
+|GUID|符号表示一个 GUID，并且必须匹配 GUID 的格式设置。|  
 |Id|符号表示 ID，并且必须为非负整数。|  
-|字符串|符号表示任意字符串值。|  
+|String|符号表示任意字符串值。|  
   
  符号是区分大小写，并引用使用 $(symbol-name) 语法：  
   
@@ -90,7 +91,7 @@ Visual Studio 图像库查看器工具可以加载和搜索图像的清单，这
   
 |||  
 |-|-|  
-|**符号**|**描述**|  
+|**符号**|**说明**|  
 |CommonProgramFiles|%Commonprogramfiles%环境变量的值|  
 |LocalAppData|%Localappdata%环境变量的值|  
 |ManifestFolder|包含清单的文件的文件夹|  
@@ -115,7 +116,7 @@ Visual Studio 图像库查看器工具可以加载和搜索图像的清单，这
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|Guid|[必需]映像名字对象的 GUID 部分|  
+|GUID|[必需]映像名字对象的 GUID 部分|  
 |Id|[必需]图像标记 ID 部分|  
 |AllowColorInversion|[可选的默认为 true]指示映像是否可以有在深色背景上使用时以编程方式反转其颜色。|  
   
@@ -140,7 +141,7 @@ Visual Studio 图像库查看器工具可以加载和搜索图像的清单，这
 ||||  
 |-|-|-|  
 |**元素**|**属性 （所有所需）**|**定义**|  
-|\<大小 >|值|源将用于给定的大小 （以设备为单位） 的映像。 图像将正方形。|  
+|\<大小 >|“值”|源将用于给定的大小 （以设备为单位） 的映像。 图像将正方形。|  
 |\<SizeRange >|MinSize，最大大小|源将可用于映像从 MinSize 到最大大小 （以设备为单位） （含）。 图像将正方形。|  
 |\<维度 >|宽度、 高度|源将用于给定的宽度和高度 （以设备为单位） 的映像。|  
 |\<DimensionRange >|MinWidth，MinHeight，<br /><br /> MaxWidth MaxHeight|源将用于从最小宽度/高度最大宽度/高度 （以设备为单位） 的映像 （含）。|  
@@ -171,7 +172,7 @@ Visual Studio 图像库查看器工具可以加载和搜索图像的清单，这
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|Guid|[必需]映像名字对象的 GUID 部分|  
+|GUID|[必需]映像名字对象的 GUID 部分|  
 |Id|[必需]图像标记 ID 部分|  
 |外部|[可选的默认为 false]指示映像名字对象是否引用当前清单中的图像。|  
   

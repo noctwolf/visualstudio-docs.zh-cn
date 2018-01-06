@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da1b30274254c5c1dd81ad20dd64e8749672f96e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c473b3253809c09f9ba0af90f7a0fed349dedb93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 元素（Visual Studio 模板）
 指定.NET Framework 所需的模板的最大版本。 它确定是否在显示该模板**模板**部分**添加新项目**对话框框中，基于在选择的值**目标框架版本**框**添加新项目**对话框。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将此模板分类并定义中的显示方式**新项目**或**添加新项**对话框。|  
   
@@ -78,6 +79,6 @@ ms.lasthandoff: 10/31/2017
   
  在此示例中，通过该模板后，所需的.NET framework 的最大版本由`MaxFrameworkVersion`，是 3.5。 仅当你选择 3.0 或 3.5 中的，将显示上述模板**目标框架版本**框中**添加新项目**对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

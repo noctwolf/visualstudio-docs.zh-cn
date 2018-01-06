@@ -22,11 +22,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9316eaa48b11342891584e448f8bb67bdce6f682
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 61338f61bf9fad301a62e7790ef5dc23b66a094d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-define-a-method-instance"></a>如何：定义方法实例
   您的模型中，必须定义至少一个方法实例对于每个方法。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  在**属性**窗口中，设置方法实例的属性。 有关每个属性的详细信息，请参阅[实例，但](http://go.microsoft.com/fwlink/?LinkID=169282)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
  [如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [如何： 向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   

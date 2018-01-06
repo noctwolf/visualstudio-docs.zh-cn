@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8cd55986d7f4597030830906485ba1d7c1b3389
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 52137da9d14920a2fd5213f1110a74d895e51c7f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccadd-function"></a>SccAdd 函数
 此函数将新文件添加到源代码管理系统。  
@@ -62,7 +63,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|添加操作已成功。|  
 |SCC_E_FILEALREADYEXISTS|所选的文件已位于源代码管理下。|  
@@ -83,7 +84,7 @@ SCCRTN SccAdd(
   
  下面是在中使用的标志的列表`pfOptions`数组：  
   
-|选项|值|含义|  
+|选项|“值”|含义|  
 |------------|-----------|-------------|  
 |SCC_FILETYPE_AUTO|0x00|源代码管理插件应该会检测到的文件类型。|  
 |SCC_FILETYPE_TEXT|0x01|指示一个 ASCII 文本文件。|  
@@ -94,5 +95,5 @@ SCCRTN SccAdd(
 |SCC_FILETYPE_UTF16LE|0x20|将文件视作中 UTF16 Unicode 文本稍有 Endian 格式。|  
 |SCC_FILETYPE_UTF16BE|0x40|将文件另存为中 UTF16 Big Endian Unicode 文本格式。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

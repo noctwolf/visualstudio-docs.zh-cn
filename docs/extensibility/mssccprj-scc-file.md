@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b61478b482ed10aba61ea9ce412dc0fe0725b0bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ。SCC 文件
 Visual Studio 解决方案或项目置于受源代码管理使用 IDE 后，IDE 会从源代码管理插件中字符串的形式接收两个关键信息。 两个字符串，"AuxPath"和"ProjName"是不透明的 IDE 中，但它们用于由该插件在版本控制中找到解决方案或项目。 IDE 通常获取这些字符串首次通过调用[SccGetProjPath](../extensibility/sccgetprojpath-function.md)，它然后将它们保存在解决方案或项目文件中以便将来调用[SccOpenProject](../extensibility/sccopenproject-function.md)。 当嵌入的解决方案和项目文件中，"AuxPath"和"ProjName"字符串不会自动更新用户分支，分叉，或将复制解决方案和项目版本控制中的文件时。 若要确保解决方案和项目文件指向它们在版本控制中的正确位置，用户必须手动更新的字符串。 由于字符串要作为不透明，它可能不始终会清除它们的更新方式。  
@@ -75,6 +76,6 @@ Visual Studio 解决方案或项目置于受源代码管理使用 IDE 后，IDE 
   
  到此部分没有结束分隔符。 Scc.h 标头文件中定义的文件，以及在文件中，显示的所有文本的名称。 有关详细信息，请参阅[字符串用作密钥用于查找源代码管理插件](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件](../extensibility/source-control-plug-ins.md)   
  [作为用于查找源代码管理插件的密钥的字符串](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

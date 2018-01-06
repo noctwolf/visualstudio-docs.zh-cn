@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed010734ec09af01c4a7abe6f8ceab0a93fdb482
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 695c35e6d849806911aaf9cb293b53e66dbbca0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 此方法获取给定其值的枚举常数的名称。  
@@ -52,5 +53,5 @@ int GetStringFromValue(
 ## <a name="remarks"></a>备注  
  如果没有相同的值与关联的多个名称，将返回在枚举中定义的第一个名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

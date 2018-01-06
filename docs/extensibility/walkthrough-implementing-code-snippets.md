@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc6fbfee6ab64cb50c03c55604db969e8ffc2d9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2a9ef9fcce1a02820b2855b6e39c5da2d3a7cc48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>演练： 实现代码段
 可以创建代码段，并将其包含的编辑器扩展中，以便扩展的用户可以将它们添加到其自己的代码。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
  本演练基于[演练： 显示语句结束](../extensibility/walkthrough-displaying-statement-completion.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-and-registering-code-snippets"></a>创建和注册代码段  

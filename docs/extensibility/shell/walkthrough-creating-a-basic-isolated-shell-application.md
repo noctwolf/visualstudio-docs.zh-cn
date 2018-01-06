@@ -16,16 +16,17 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 886185c61f407906ff059b84b5f1f8b18e3ace98
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: e798eb66601d253c180a72b730bb3531e21c11c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>演练： 创建基本的独立的 Shell 应用程序
 本演练演示如何创建独立的 shell 解决方案、 自定义帮助中的关于工具窗口，并创建安装独立的 shell 的安装程序。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../visual-studio-sdk.md)。 若要部署独立的 shell，还必须使用 Visual Studio Shell （独立） 可再发行组件包。  
   
 ## <a name="creating-an-isolated-shell-solution"></a>创建独立的 Shell 解决方案  
@@ -217,7 +218,7 @@ ms.lasthandoff: 12/14/2017
   
     7.  Splash.bmp  
   
-5.  单击**添加项目输出**按钮，然后添加**MyVSShellStub/主输出**。 单击“确定”。  
+5.  单击**添加项目输出**按钮，然后添加**MyVSShellStub/主输出**。 单击 **“确定”**。  
   
 6.  在左窗格中，在**目标计算机**，右键单击**Fabrikam 音乐编辑器 [INSTALLDIR]**节点并添加**新文件夹**名为**扩展**。  
   

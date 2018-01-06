@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ed84b4b1bf6c974f22682dcb8d899208c653ebc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 308de182e604f06fff9ad25cb65428b2d48ff257
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>项目和编辑器的其他源控制指南
 有大量的项目和编辑器应遵循为了支持源代码管理的准则。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="guidelines"></a>准则  
  你的项目或编辑器还应执行以下操作来支持源代码管理：  
   
-|区域|Project|编辑器|详细信息|  
+|区域|项目|编辑器|详细信息|  
 |----------|-------------|------------|-------------|  
 |文件的私有副本|X||环境支持文件的私有的副本。 即，在项目中登记每个人具有该项目中的文件他/她自己的私有副本。|  
 |ANSI/Unicode 持久性|X|X|如果您编写的持久性代码，保持 ANSI 表单中的文件，因为大多数源控件程序当前不支持 Unicode。|  
@@ -35,5 +36,5 @@ ms.lasthandoff: 10/31/2017
 |保留可预测的顺序中的对象和属性|X|X|保留可预测的顺序，如字母顺序排列，以便合并中的文件。|  
 |重新加载|X|X|当在磁盘上文件更改时，你的编辑器必须能够重新加载它。 当您参与源代码管理时，环境将重新加载数据为你通过调用你<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>实现。 调用了 IVsQueryEditQuerySave 时发生签出时难度最大重新加载用例::<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>和正在处理信息。 但是，你重新加载的代码必须能够在此情况下运行。<br /><br /> 环境将自动重新加载项目文件。 但是，项目必须实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>如果它有嵌套层次结构以支持重新加载嵌套项目文件。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [支持源代码管理](../../extensibility/internals/supporting-source-control.md)

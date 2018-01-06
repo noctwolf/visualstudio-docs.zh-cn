@@ -15,11 +15,12 @@ caps.latest.revision: "41"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02bf66cba145b1d5fdaea899ca3af4ca2bcefbe1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bea4f89d2894344069b8aa5b3037bd00b973a40e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updating-the-user-interface"></a>更新用户接口
 实现命令后，你可以添加代码以与新的命令的状态更新的用户界面。  
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
   
          请注意，你可以获取<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager>接口通过调用`QueryInterface`方法<xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager>对象或通过获取的接口<xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager>服务。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [实现](../extensibility/internals/command-implementation.md)

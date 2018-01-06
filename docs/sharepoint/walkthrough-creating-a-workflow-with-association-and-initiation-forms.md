@@ -24,11 +24,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa95c519ab24ba042b6a1adfa71c64499b18d4c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b3178c330d34570d1406a1b63368537bc7f66887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>演练：创建带有关联窗体和启动窗体的工作流
   本演练演示如何创建包含关联和启动窗体使用的基本顺序工作流。 这些是启用参数时首次将其关联的 SharePoint 管理员 （关联形式），并由用户 （启动窗体） 启动工作流时要添加到工作流的 ASPX 窗体。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
 >   
 >  此外，可能会出现你的计算机的不同名称或位置用于某些[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]以下说明中的用户界面元素。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]你具有的版本和你使用的设置确定这些元素。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   支持的版本的[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 有关详细信息，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -96,7 +97,7 @@ ms.lasthandoff: 10/31/2017
   
      **SharePoint 自定义向导**显示。  
   
-10. 在**指定用于调试的工作流名称**页上，接受默认名称 (**ExpenseReport-Workflow1**)。 保留默认工作流模板类型值 (**列表工作流)**。 选择**下一步**按钮。  
+10. 在**指定用于调试的工作流名称**页上，接受默认名称 (**ExpenseReport-Workflow1**)。 保留默认工作流模板类型值 (**列表工作流)**。 选择“下一步”按钮。  
   
 11. 在**想让 Visual Studio 以自动将工作流关联的调试会话中？**页上，清除自动将你的工作流模板相关联如果签入的框。  
   
@@ -451,7 +452,7 @@ ms.lasthandoff: 10/31/2017
   
 -   若要了解有关 SharePoint 工作流的详细信息，请参阅[Windows SharePoint Services 中的工作流](http://go.microsoft.com/fwlink/?LinkID=166275)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [演练：将应用程序页添加到工作流](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
   

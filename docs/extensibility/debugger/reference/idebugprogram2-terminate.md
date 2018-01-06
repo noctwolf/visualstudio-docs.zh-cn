@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 16f9e718eaebbb1ab82ea96c08661622ef7e1cd1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fea9b99fc597a75e93392b14fe40a1be87072602
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 终止程序。  
@@ -43,6 +44,6 @@ int Terminate();
   
  此方法或[终止](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)由 IDE、 通常以响应停止所有调试用户调用方法。 此方法的实现应，理想情况下，终止进程内的程序。 如果这是不可能，DE 应阻止程序运行此过程中更多 （和执行任何必要的清理操作）。 如果`IDebugProcess2::Terminate`由 IDE 调用了方法，将一段时间后终止的整个过程`IDebugProgram2::Terminate`调用方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [终止](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

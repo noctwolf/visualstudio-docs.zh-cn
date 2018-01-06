@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60f22174ac217a66f860415de898240d41d9a631
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 474bb834d36661c7cd85b98db78c13f619d7cba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函数
 此函数更新的特定源控件命令的文件列表，并提供所有给定文件的源代码管理状态。  
@@ -66,7 +67,7 @@ SCCRTN SccPopulateList (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|成功。|  
 |SCC_E_NONSPECIFICERROR|非特定的失败。|  
@@ -82,7 +83,7 @@ SCCRTN SccPopulateList (
 > [!NOTE]
 >  源代码管理插件始终可以选择只需从此函数，因为它是离开列表立即返回。 如果插件实现此函数，则可以通过设置表示此`SCC_CAP_POPULATELIST`功能首次调用中的位标志[SccInitialize](../extensibility/sccinitialize-function.md)。 默认情况下，插件应始终假设的文件正在传递的所有项。 但是，如果 IDE 设置`SCC_PL_DIR`中标记出来`fOptions`参数，正在传递的所有项都都视为目录。 插件应将添加所属的所有文件的目录中。 IDE 永远不会将传入文件和目录的混合。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)   

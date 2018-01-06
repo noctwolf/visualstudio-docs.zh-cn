@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64f4d7f7e4a71c1d304bfa5045175fd613bcb539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>使用文本标记用于旧 API
 文本标记是文本的一个浮点的缓冲区中，可能会影响显示范围和文本区域的行为。 标记包括断点、 书签、 波浪形下划线，和只读的区域。 文本标记存在基本上不同语法着色。 语法着色可快速，进行通信的文本区域与关联的语言语法。 Windows 屏幕上，可时重新绘制速度很重要时，通常被请求语法着色。 语法着色的文本颜色的更改。 文本标记可以更改许多其他文本属性。 文本标记可以"浮动"，应用特殊行为和着色。  

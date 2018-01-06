@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05e10305f7e4c243f799cfe33d4d9b86418eed86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7a025cdfc14eb39dad7ea2bc72a69f1f260fb583
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-linked-undo-management"></a>如何： 使用链接的撤消管理
 链接的撤消后，用户可以同时撤消中多个文件相同的编辑。 例如，跨多个程序文件，如标头文件和 Visual c + + 文件，同时进行文本更改为链接的撤消事务。 链接的撤消功能内置于环境的撤消管理器中，实现和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager>可以处理此功能。 链接的撤消由实现可以将链接在一起，以被视为单个撤消单元的单独撤消堆栈父撤消单元。 使用链接的撤消过程将在下一节中详细介绍。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  若要实现链接的撤消管理在编辑器中，添加撤消管理。 有关实现链接的撤消管理的详细信息，请参阅[如何： 实现撤消管理](../extensibility/how-to-implement-undo-management.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms682151)   
  [IOleUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms678476)   

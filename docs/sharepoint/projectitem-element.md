@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8a9f1ac258f6501aedb2fd89ce21514d785b25f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 240518544f906e68ad443adf55fef20ef2bac879
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectitem-element"></a>ProjectItem 元素
   表示一个 SharePoint 项目项。 这是.spdata 文件的所需的根元素。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
 |**FeatureReceiverAssembly**|可选**xs: string**属性。<br /><br /> 指定定义功能接收器此 SharePoint 项目项的程序集的完全限定的名称。 有关功能接收器的详细信息，请参阅[提供打包和部署信息在项目项中](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。 有关完全限定程序集名称的详细信息，请参阅[程序集名称](/dotnet/framework/app-domains/assembly-names)。|  
 |**SupportedTrustLevels**|可选**xs: string**属性。<br /><br /> 指定此 SharePoint 项目项支持的信任级别。 此值可以是下列字符串之一： 沙盒解决方案，FullTrust，或所有。 值所有指定 Sandboxed 和 FullTrust。<br /><br /> 在某个自定义 SharePoint 项目项类型，此属性的值对应于分配给值<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A>属性的实现中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 如果指定此属性的不同值时，Visual Studio 将覆盖的值，以便指定要在指定的相同信任级别<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A>属性。|  
 |**SupportedDeploymentScopes**|可选**xs: string**属性。<br /><br /> 指定此 SharePoint 项目项支持的部署作用域。 此值是一个以逗号分隔的字符串组成的一个或多个以下字符串： 场、 站点、 Web、 web 应用程序或包。 例如，"Web，站点"。<br /><br /> 在某个自定义 SharePoint 项目项类型，此属性的值对应于分配给值<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>属性的实现中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 如果指定此属性的不同值时，Visual Studio 将覆盖的值，以便指定要在指定的相同信任级别<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>属性。|  
-|**类型**|所需**xs: string**属性。<br /><br /> SharePoint 项目项的标识符。 在自定义 SharePoint 项目项类型中，标识符是字符串，将传递给<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 有关详细信息，请参阅[如何： 定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。<br /><br /> Visual Studio 附带的内置 SharePoint 项目项的标识符的列表，请参阅[扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)。|  
+|**Type**|所需**xs: string**属性。<br /><br /> SharePoint 项目项的标识符。 在自定义 SharePoint 项目项类型中，标识符是字符串，将传递给<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 有关详细信息，请参阅[如何： 定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。<br /><br /> Visual Studio 附带的内置 SharePoint 项目项的标识符的列表，请参阅[扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
@@ -73,12 +74,12 @@ ms.lasthandoff: 10/31/2017
   
 |||  
 |-|-|  
-|**Namespace**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空间**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**架构名称**|SharePoint 项目项架构|  
 |**验证文件**|ProjectItemModelSchema.xsd|  
-|**可以为空**|No|  
+|**可以为空**|否|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

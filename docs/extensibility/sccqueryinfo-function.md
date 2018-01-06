@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e5c2e974fe2cd0f6d95b97bba0ba2ffa22c1095e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7bda59c3bf674354e38fa306abe1fbb673f40e19
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函数
 此函数可获取一组在源代码管理下的所选文件的状态信息。  
@@ -50,7 +51,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|查询已成功。|  
 |SCC_E_ACCESSFAILURE|时访问网络或争用问题引起的可能的源控制系统出现问题。 建议重试。|  
@@ -72,6 +73,6 @@ SCCRTN SccQueryInfo(
   
 -   如果该文件已签出当前用户到工作目录，之外的目录`SCC_STATUS_OUTBYUSER`设置但`SCC_STATUS_CHECKEDOUT`不是。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [文件状态代码](../extensibility/file-status-code-enumerator.md)

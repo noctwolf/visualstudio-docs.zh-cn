@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b5ecc739da7cc3aa78a5c175ae323f5cd2447d40
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 44fd32f579eb6d8f27d9eddf00be946349c4bc86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何：检索 SharePoint 项目服务
   你可以访问以下类型的解决方案中的 SharePoint 项目服务：  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
   
  在 Visual Studio 扩展有权访问<xref:EnvDTE80.DTE2>对象，你可以请求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>通过使用对象<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>方法<xref:Microsoft.VisualStudio.Shell.ServiceProvider>对象。 有关详细信息，请参阅[从 DTE 对象获取服务](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)   
  [如何： 将获得的服务](../extensibility/how-to-get-a-service.md)   
  [如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)  

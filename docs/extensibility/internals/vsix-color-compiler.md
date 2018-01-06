@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b7ff76cd40f80f6855de72795b08e70fb87ed0f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8cdf8fd3d32678cc80d215d77e34cd7987d7bd29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-color-compiler"></a>VSIX 颜色编译器
 Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一个表示为现有 Visual Studio 主题的颜色的.xml 文件并将它到.pkgdef 文件，以便可以在 Visual Studio 中使用这些颜色。 因为很容易地比较.xml 文件之间的差异，此工具可用于管理在源代码管理中的自定义颜色。 此外可以通过它挂钩到生成环境，以便生成的输出是一个有效的.pkgdef 文件。  
@@ -55,7 +56,7 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|名称|[必需]主题的名称|  
+|name|[必需]主题的名称|  
 |GUID|[必需]（必须匹配 GUID 格式） 的主题的 GUID|  
   
  当为 Visual Studio 中创建自定义颜色，这些颜色将需要定义为以下主题。 如果没有颜色存在特定主题，Visual Studio 将尝试从浅色主题中加载的缺少的颜色。  
@@ -81,7 +82,7 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|名称|[必需]类别的名称|  
+|name|[必需]类别的名称|  
 |GUID|[必需]（必须匹配 GUID 格式） 的类别的 GUID|  
   
  **颜色**  
@@ -98,7 +99,7 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|名称|[必需]颜色的名称|  
+|name|[必需]颜色的名称|  
   
  **背景和/或前台**  
   
@@ -142,7 +143,7 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一
   
 ||||  
 |-|-|-|  
-|**交换机名称**|**注意**|**必需或可选**|  
+|**交换机名称**|**备注**|**必需或可选**|  
 |未命名 （.xml 文件）|这是第一个未命名的参数，是要转换的 XML 文件的路径。|必需|  
 |未命名 （.pkgdef 文件）|这是第二个未命名的参数，生成的.pkgdef 文件的输出路径。<br /><br /> 默认值： \<XML 文件名 >.pkgdef|Optional|  
 |/noLogo|设置此标志将停止打印的产品和版权信息。|Optional|  

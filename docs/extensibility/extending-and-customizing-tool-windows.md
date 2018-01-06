@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6488df3ec567051709f6464d49d891cdd8f995dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74616bf92b1424b4749354d1f0a7b3232e66a335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-and-customizing-tool-windows"></a>扩展和自定义工具窗口
 Visual Studio 提供了多种不同类型的 windows，例如工具窗口、 文档窗口和对话框窗口。 如属性窗口、 输出窗口和任务列表窗口中，其他 windows 是工具窗口的类型。  
@@ -49,5 +50,5 @@ Visual Studio 提供了多种不同类型的 windows，例如工具窗口、 文
 ## <a name="modal-dialog-boxes"></a>有模式对话框  
  在 Visual Studio 扩展中应创建模式对话框，通过从它们派生<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>，这样，您可以控制它们和用户界面的其余部分。 有关详细信息，请参阅。 [创建和管理有模式对话框](../extensibility/creating-and-managing-modal-dialog-boxes.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)

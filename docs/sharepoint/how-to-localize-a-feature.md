@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 53dbaa806ae3b65314d5aeed8df9338905a946cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 03adaa74feacc82c5f63c1930f7dad63cc931433
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-localize-a-feature"></a>如何：本地化功能
   默认情况下，功能的标题和说明使用硬编码的字符串值。 若要本地化功能标题和说明，请使用引用本地化的资源的表达式替换这些字符串。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
      本地化的功能标题和说明显示在应用程序。 若要显示本地化的资源，SharePoint 服务器必须具有匹配资源文件的区域性的语言包安装。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)   
  [如何： 将一个资源文件](../sharepoint/how-to-add-a-resource-file.md)   
  [如何： 本地化 ASPX 标记](../sharepoint/how-to-localize-aspx-markup.md)   

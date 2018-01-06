@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f399cb0c88e044224d554cf8e17cc4d217498e87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 08f1bb76f27f7ae0923eed43339f656c90f4856f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml 文件的结构
 包含有关的 VSIX 包中的内容类型的信息。 Visual Studio 使用 [Content_Types].xml 文件来安装包，但它不会安装文件本身。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="attribute-name-attribute"></a>{属性名称}属性  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |http://schemas.openformats.org/package/2006/content-types|内容类型架构的位置。|  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
 </Types>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)   
  [VSIX 扩展架构 1.0 引用](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [OPC： 用于打包你的数据新标准](http://go.microsoft.com/fwlink/?LinkID=148207)

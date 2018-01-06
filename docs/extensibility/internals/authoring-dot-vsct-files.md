@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bad1a8cbd8bc0369d405bf0a0c26c4285e143e46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa274c807aaa1ed212a7b283a35e510615561eb5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="authoring-vsct-files"></a>创作。Vsct 文件
 本文档演示如何创作要将菜单项、 工具栏和其他用户界面 (UI) 元素添加到 Visual Studio 集成的开发环境 (IDE) 的.vsct 文件。 UI 元素添加到不具备.vsct 文件 Visual Studio 包 (VSPackage) 时，请使用以下步骤。  
@@ -235,7 +236,7 @@ ms.lasthandoff: 10/31/2017
  MenuController  
  菜单控制器是具有它旁边的箭头按钮。 单击的箭头可打开列表。 若要将菜单控制器添加到 UI 中，创建`Menu`元素，并设置其`type`属性设为**MenuController**或**MenuControllerLatched**，取决于你想要的行为。 若要填充菜单控制器，请将其设置为的父级`Group`元素。 菜单控制器将显示其下拉列表上的该组的所有子级。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)   
  [Visual Studio 命令表 (。Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)

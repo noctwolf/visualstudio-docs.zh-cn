@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cfeede9a99a31acefb5fdf34afd8d6258c9f1019
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3d2548e74263b3d6b91ea42ca5a8ec96c64c323f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 此接口表示为表达式计算上下文  
@@ -48,14 +49,14 @@ IDebugExpressionContext2 : IUnknown
   
  当程序已暂停时，会话调试管理器 (SDM) 堆栈帧将从获取通过调用 DE [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)。 然后调用 SDM [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)获取`IDebugExpressionContext2`接口。 这一切后跟调用[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)创建[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)接口，表示已分析的准备要进行求值表达式。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)   
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

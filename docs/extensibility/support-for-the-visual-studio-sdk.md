@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 595e8cec9f90e44c4260ade6c9654483513c310a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ccbbc6652fd4918c88bf8c3728b85e17e5b9213d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK 的支持
 有几个支持选项的疑问在有关如何扩展 Visual Studio 集成的开发环境 (IDE) 的用户。  
@@ -67,5 +68,5 @@ ms.lasthandoff: 10/31/2017
   
  处找不到有关各个支持请求的信息[各个支持请求](http://go.microsoft.com/fwlink/?LinkID=82385)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [与我们交流](../ide/talk-to-us.md)

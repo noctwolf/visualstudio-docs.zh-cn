@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d82bc012b2be9736b83fc07f7d0a83d354dda002
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c13d27f8c79f1bc638741d8877ac95a0dff4885
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>沙盒解决方案与场解决方案之间的差异
   编译 SharePoint 解决方案时，它将部署到 SharePoint 服务器并调试器将附加来调试它。 用于调试解决方案的过程依赖于沙盒解决方案属性的设置： 沙盒解决方案和场解决方案。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将调试器附加到运行当前站点的 W3WP 或 SPUCWorkerProcess 进程仅。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]此外会将附加的托管 COM Plus 和工作流的调试引擎。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 SharePoint 解决方案](../sharepoint/debugging-sharepoint-solutions.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)  

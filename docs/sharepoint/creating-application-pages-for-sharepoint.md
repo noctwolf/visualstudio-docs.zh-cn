@@ -23,11 +23,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 858df05759f1c3b4205d4cbcd0bbad2cdfb6e034
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e159efdfd709a0ef8950347a191bb4053ef715bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-application-pages-for-sharepoint"></a>为 SharePoint 创建应用程序页
   *应用程序页*是一个 ASP.NET Web 页，可用于 SharePoint 的网站。 应用程序页是 ASP.NET 页的专用的类型。 应用程序页和一个标准的 ASP.NET 页的主要区别是应用程序页包含与 SharePoint 母版页合并的内容。 母版页使应用程序页可以为站点上的其他页面共享相同的外观和行为。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
   
  你可以显式更改哪些母版页由应用程序页上通过设置`MasterPageFile`的应用程序的属性`Page`元素。 (例如： `MasterPageFile="~/_layouts/applicationv4.master"`)。 事实上，如果 SharePoint 服务器上未启用动态母版页，则必须设置此属性。 有关在 SharePoint 中的主控页的详细信息，请参阅[母版页](http://go.microsoft.com/fwlink/?LinkID=169281)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [深度中的 SharePoint Foundation 开发](http://go.microsoft.com/fwlink/?LinkID=182103)   
  [ASP.NET 概述](/aspnet/overview)   
  [ASP.NET 网页](/aspnet/web-pages/index)   

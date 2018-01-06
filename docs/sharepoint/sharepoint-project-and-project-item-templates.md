@@ -27,11 +27,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 513b2216a99f37ba3aff1174965470b20921072f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc29b307f6459e3a5841ae1dd1c60ae9ab9ed152
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 项目和项目项模板
   下列各节描述了可用的 SharePoint 项目和项目项模板以及如何使用它们。 
@@ -146,7 +147,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="web-part"></a>Web 部件  
  A *web 部件*是一个可在一种特殊类型的调用 Web 部件页的页内运行的服务器端控件。 它们是在 SharePoint 站点显示的页的构建基块。 Web 部件项目提供了使你可以设计为 SharePoint 站点的 web 部件的文件。 有关详细信息，请参阅[如何： 创建 SharePoint Web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)和[构建基块： Web 部件](http://go.microsoft.com/fwlink/?LinkId=179438)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [SharePoint 产品和技术](http://go.microsoft.com/fwlink/?LinkId=178818)  
   

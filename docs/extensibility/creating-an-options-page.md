@@ -13,11 +13,12 @@ caps.latest.revision: "62"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68a3afc0a83d4dba7b7cd46b2b1eba23695a2848
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d0888a584e31c26c9f64cdcff70cc2f5dc8a1453
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-an-options-page"></a>创建选项页
 本演练创建一个简单工具/选项页面属性网格用于检查和设置属性。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
   
  MPF 提供了两个类来帮助你创建工具选项页<xref:Microsoft.VisualStudio.Shell.Package>类和<xref:Microsoft.VisualStudio.Shell.DialogPage>类。 你创建 VSPackage 来通过子类化包类为这些页面提供一个容器。 通过从 DialogPage 类派生创建每个工具选项页。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-tools-options-grid-page"></a>创建工具选项网格页  
@@ -263,5 +264,5 @@ ms.lasthandoff: 10/31/2017
   
      一个消息框显示的当前值`OptionInteger`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [选项和选项页](../extensibility/internals/options-and-options-pages.md)

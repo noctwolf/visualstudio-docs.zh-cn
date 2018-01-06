@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f3dc3efefa4a89d64a64bd946f1f79e6c5a6d4df
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3a4e1927cd17a5cc86ed58565b53f04aeb6977a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制图标或修饰器的可见性
 A*修饰器*是图标还是在域特定语言 (DSL) 中的一个形状显示的文本行。 可以进行修饰器出现，并根据模型中的属性的状态进行消失。 例如上一个形状上表示个人，, 你可以有不同的图标显示具体取决于该人员的性别，子节点，数量等。  
@@ -91,7 +92,7 @@ A*修饰器*是图标还是在域特定语言 (DSL) 中的一个形状显示的�
   
 6.  请注意缺少命名空间、 类和方法。  例如，Company.FamilyTree.Person.GetDecoratorControlValue()。  
   
-7.  在单独的代码文件中，编写包含缺失的方法的分部类定义。 例如:   
+7.  在单独的代码文件中，编写包含缺失的方法的分部类定义。 例如:  
   
     ```  
     namespace Company.FamilyTree  
@@ -106,7 +107,7 @@ A*修饰器*是图标还是在域特定语言 (DSL) 中的一个形状显示的�
   
 8.  重新生成并运行解决方案。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [定义形状和连接符](../modeling/defining-shapes-and-connectors.md)   
  [在关系图上设置背景图像](../modeling/setting-a-background-image-on-a-diagram.md)   
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   

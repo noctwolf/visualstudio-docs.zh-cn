@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7759a2394f2cda19f875a85a22c4a674fee8964
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-model-core-components"></a>项目模型核心组件
 下表来扩大项目模型。 这些表格显示接口和在该模型的接口和特定对象与关联的服务中标识的服务的简要的说明。 此外，表详细介绍在项目创建和维护，具体取决于你的特定项目类型的要求中是可选的其他接口。  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|用于实现自动化模型。 在项目模型中，将返回属性对象，允许您创建该对象的实例。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|用于在层次结构中的项目对象上实现剪贴板事件。 `SVsUIHierWinClipboardHelper`可以正确句柄剪切、 复制和粘贴操作。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [清单： 创建新项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [不在生成中： 使用 HierUtil7 项目类来实现一种项目类型 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   

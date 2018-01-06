@@ -16,11 +16,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f64b02521fcea9abef9d7196a27e4a209100a892
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 364b17e6759d0ca337b69c89c51dfba8d26f3e32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-legacy-language-service"></a>注册旧语言服务
 以下部分提供的注册表项列表的各种语言中可用的服务选项[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="registry-entries-for-language-service-options"></a>语言服务选项的注册表项  
  *VS Reg 根*\Languages\Language 服务\\*语言名称*键可包含以下值。  
   
-|名称|类型|范围|描述|  
+|name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ|*\<GUID >*|语言服务的 GUID。|  
 |LangResID|REG_DWORD|0x0 0xffff|字符串的语言的本地化的文本名称的资源标识符 (ResID)。|  
@@ -67,7 +68,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>调试器语言选项的注册表项  
  *VS Reg 根*\Languages\Language 服务\\*语言名称*\Debugger 语言\\*GUID*\ 密钥可以包括以下值。  
   
-|名称|类型|范围|描述|  
+|name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ|文本|默认值可以用于文档的语言的名称。 此键的名称是在中有相应条目的表达式计算器的 GUID  *\<VS Reg 根 >*\AD7Metrics\Expression 计算器。|  
   
@@ -86,7 +87,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>编辑器工具选项的注册表项  
  你可以添加 EditorToolsOptions 项下的属性页和属性节点的注册表项。 这些密钥和它们的值标识中的属性页**选项**对话框 (上**工具**菜单)，用于配置语言服务。 在下面的示例中，*页名称*是属性页中，名称和*节点名称*是树中节点的名称上**选项**对话框。 必须单独指定页面条目和节点条目。  
   
-|名称|类型|范围|描述|  
+|name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ|ResID|此选项页的本地化的显示名称。 名称可以是文本或 #`nnn`，其中`nnn`附属 DLL 的指定 VSPackage 中的字符串资源 id。|  
 |Package|REG_SZ|*GUID*|实现该选项页的 VSPackage 的 GUID。|  
@@ -120,7 +121,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>文件名称扩展选项的注册表项  
  文件扩展名的条目应包含前导句点，例如".myext"。  
   
-|名称|类型|范围|描述|  
+|name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ|*GUID*|此文件名称扩展类型的默认语言服务的服务 GUID。|  
   
@@ -137,7 +138,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>编辑器选项的注册表项  
  *VS Reg 根*\Editors 键可包含以下值：  
   
-|名称|类型|范围|描述|  
+|name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ|""|未使用;你可以输入您的姓名此处的文档。|  
 |DefaultToolboxTab|REG_SZ|""|工具箱选项卡，可以在编辑器处于活动状态时使用默认名称。|  
@@ -162,7 +163,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>逻辑视图选项的注册表项  
  *VS Reg 根*\Editors\\*编辑器 GUI >*\LogicalViews 键可包含以下值。  
   
-|名称|类型|范围|描述|  
+|name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ||未使用。|  
 |*\<GUID >*|REG_SZ|""|支持的逻辑视图键。 根据需要你可以拥有与许多种。 注册表条目的名称是什么是重要的是，不值，该值始终为空字符串。|  
@@ -184,7 +185,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>编辑器扩展选项的注册表项  
  *VS Reg 根*\Editors\\*编辑器 GUID*\Extensions 键可包含以下值。 文件扩展名不包括前导句点。  
   
-|名称|类型|范围|描述|  
+|name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ||未使用。|  
 |*\<ext >*|REG_DWORD|0 0xffffffff|扩展的相对优先级。 如果两个或多个语言共享相同的扩展名，则选择优先级较高的语言。|  
@@ -210,7 +211,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
   
  通过访问这些注册表项<xref:Microsoft.VisualStudio.Package.LanguagePreferences>类。  
   
-|名称|类型|范围|描述|  
+|name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |CodeSense|REG_DWORD|0-1|支持的智能感知操作。|  
 |MatchBraces|REG_DWORD|0-1|匹配语言对，如大括号、 圆括号和方括号的支持。|  
@@ -240,5 +241,5 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         MaxRegions            = reg_dword:0x0000000a  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发旧版语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)

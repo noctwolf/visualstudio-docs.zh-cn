@@ -12,27 +12,30 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdd1238eee39b902adf581092a90f7d84c1b0a98
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 0c0843c8bfb899dc23bcb1ce31eb3f8b9eaffd54
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>升级自定义项目和项模板的 Visual Studio 2017
-从 Visual Studio 2017 年 1 开始，Visual Studio 正在改变其发现由.vsix 或.msi 安装的项目和项模板的方式。 如果你拥有使用自定义项目或项模板的扩展，你需要更新你的扩展。 本主题介绍你必须执行的操作。  
-  
- 此更改影响仅 Visual Studio 自 2017 年 1。 它不影响 Visual Studio 的早期版本。  
-  
- 如果你想要创建项目或项模板作为 VSIX 扩展的一部分，请参阅[创建自定义项目和项模板](../extensibility/creating-custom-project-and-item-templates.md)。  
-  
-## <a name="template-scanning"></a>扫描的模板  
- 以前， **devenv /setup**或**devenv /installvstemplates**扫描本地磁盘上，以查找项目和项模板。 从预览版 4 开始，扫描将执行仅为用户级别位置 (**%USERPROFILE%\Documents\\< Visual Studio 版本\>\My 导出模板\\**)，用来为模板生成的**文件 > 将模板导出**命令。  
-  
- 对于其他 （非用户） 位置中，你必须包括指定的位置和模板的其他特征的 manifest(.vstman) 文件。 .Vstman 文件生成以及用于模板的.vstemplate 文件中。 如果你安装你使用.vsix 的扩展，可以通过重新编译 Visual Studio 自 2017 年中的扩展来实现此目的。 但如果使用一个.msi 时，你需要手动进行更改。 你需要如何手动进行这些更改的列表，请参阅**升级为与安装的扩展。MSI**本主题中更高版本。  
+
+从 Visual Studio 2017 年 1 开始，Visual Studio 发现通过.vsix 或.msi 安装在不同的方式与以前版本的 Visual Studio 中的项目和项模板。 如果你拥有使用自定义项目或项模板的扩展，你需要更新你的扩展。 本主题介绍你必须执行的操作。
+
+此更改影响仅 Visual Studio 自 2017 年 1。 它不影响 Visual Studio 的早期版本。
+
+如果你想要创建项目或项模板作为 VSIX 扩展的一部分，请参阅[创建自定义项目和项模板](../extensibility/creating-custom-project-and-item-templates.md)。
+
+## <a name="template-scanning"></a>扫描的模板
+
+在以前版本的 Visual Studio 中， **devenv /setup**或**devenv /installvstemplates**扫描本地磁盘上，以查找项目和项模板。 从 Visual Studio 2017 年 1 开始，扫描仅对于用户级位置的执行。 默认用户级位置是**%USERPROFILE%\Documents\\< Visual Studio 版本\>\Templates\\**。 此位置用于模板生成的**项目** > **导出模板...**命令时，如果**自动将模板导入 Visual Studio**在向导中选择选项。
+
+对于其他 （非用户） 位置中，你必须包括指定的位置和模板的其他特征的 manifest(.vstman) 文件。 .Vstman 文件生成以及用于模板的.vstemplate 文件中。 如果你安装你使用.vsix 的扩展，可以通过重新编译 Visual Studio 自 2017 年中的扩展来实现此目的。 但如果使用一个.msi 时，你需要手动进行更改。 你需要如何手动进行这些更改的列表，请参阅**升级为与安装的扩展。MSI**本主题中更高版本。  
   
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>如何使用项目或项模板更新 VSIX 扩展  
- 本过程说明如何通过 Visual Studio 2017
-1.  在 Visual Studio 2017 中打开解决方案。 你将需要升级的代码。 单击“确定”。  
+
+1.  在 Visual Studio 2017 中打开解决方案。 你将需要升级的代码。 单击 **“确定”**。  
   
 2.  在升级完成后，你可能需要更改安装目标版本。 在 VSIX 项目中，打开 source.extension.vsixmanifest 文件并选择**安装目标**选项卡。如果**版本范围**字段是**[14.0]**，单击**编辑**和将其更改为包含 Visual Studio 2017。 例如，你可以将其设置为**[14.0,15.0]**安装扩展到 Visual Studio 2015 或 Visual Studio 2017，或**[15.0]**以将其安装到只是 Visual Studio 自 2017 年 1。  
   
@@ -176,41 +179,19 @@ ms.lasthandoff: 12/14/2017
   
  有关.vstman 文件的不同元素的详细信息，请参阅[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。  
   
-## <a name="upgrades-for-extensions-installed-with-an-msi"></a>使用安装扩展的升级。MSI  
- 某些基于 MSI 的扩展将模板部署到常用的模板位置，如下所示：  
-  
--   **\<Visual Studio 安装目录 > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**  
-  
--   **\<Visual Studio 安装目录 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 项目项模板 >**  
-  
- 如果你的扩展执行的基于 MSI 的部署，你需要手动生成模板清单，并确保它包含在扩展安装。 您应比较上面列出的.vstman 示例和[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。 若要查看你需要包括  
-  
- 应创建单独的清单项目和项模板，且它们应指向根模板目录指定更高版本。 你应创建一个清单，每个扩展和区域设置。  
-  
-## <a name="troubleshooting-template-installation"></a>模板安装疑难解答  
- 如果在部署项目或项模板的问题，你可以启用诊断日志记录。  
-  
-1.  在其中创建 pkgdef 文件 Common7\IDE\CommonExtensions 文件夹安装 (例如 C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef) 包含以下内容：  
-  
-     ```
-     [$RootKey$\VsTemplate]
-     "EnableTemplateDiscoveryLog"=dword:00000001
-     ```
+## <a name="upgrades-for-extensions-installed-with-an-msi"></a>使用安装扩展的升级。MSI
 
-2. 通过在 Windows 搜索中搜索打开"开发人员命令提示"你的安装并运行`devenv /updateConfiguration`。
+某些基于 MSI 的扩展将模板部署到常用的模板位置，如下所示：
 
-3.  启动 Visual Studio 并启动新项目和新项对话框，以便初始化两个模板树。 模板日志现在将出现在**%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** （instanceid 对应于你的 Visual Studio 实例的安装 ID）。 每个模板树初始化附加到此日志条目。  
-  
- 日志文件包含以下列：  
-  
--   **FullPathToTemplate**，它具有以下值：  
-  
-    -   基于清单的部署的 1  
-  
-    -   基于磁盘的部署的 0  
-  
--   **TemplateFileName**  
-  
--   其他模板属性
+- **\<Visual Studio 安装目录 > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**
 
-注意： 若要禁用日志记录，请删除 pkgdef 文件或更改的值`EnableTemplateDiscoveryLog`到`dword:00000000`并运行`devenv /updateConfiguration`试。
+- **\<Visual Studio 安装目录 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 项目项模板 >**
+
+如果你的扩展执行的基于 MSI 的部署，你需要手动生成模板清单，并确保它包含在扩展安装。 比较上面列出的.vstman 示例和[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
+
+应创建单独的清单项目和项模板，且它们应指向根模板目录指定更高版本。 创建每个扩展和区域设置的一个清单。
+
+## <a name="see-also"></a>请参阅
+
+[模板发现疑难解答](troubleshooting-template-discovery.md)  
+[创建自定义项目和项模板](creating-custom-project-and-item-templates.md)

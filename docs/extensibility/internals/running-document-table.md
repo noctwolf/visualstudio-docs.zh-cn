@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf66dce40cda2d72757c3a2fe141ed023b286d78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="running-document-table"></a>正在运行的文档表
 IDE 维护称为正在运行的文档表 (RDT) 的内部结构中的所有当前打开的文档的列表。 此列表包括所有打开的文档在内存中，而不考虑是否当前正在编辑这些文档。 文档是保持不变，包括在项目或主项目文件 （例如，.vcxproj 文件） 的文件的任何项。  
@@ -59,6 +60,6 @@ IDE 维护称为正在运行的文档表 (RDT) 的内部结构中的所有当前
   
 -   使用层次结构或项 ID 请项目系统要求的完整文档路径，然后在 RDT 中查找项。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [RDT_ReadLock 使用情况](../../extensibility/internals/rdt-readlock-usage.md)   
  [持久性和正在运行的文档表](../../extensibility/internals/persistence-and-the-running-document-table.md)

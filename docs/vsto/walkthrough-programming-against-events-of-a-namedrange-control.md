@@ -21,11 +21,12 @@ caps.latest.revision: "57"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40076f607e66ec76aaa42ae297d22b38a6234ab0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 46e83b8450a441eb7bc405c855271e315edb2e3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-programming-against-events-of-a-namedrange-control"></a>演练：根据 NamedRange 控件的事件进行编程
   本演练演示如何添加<xref:Microsoft.Office.Tools.Excel.NamedRange>控件添加到 Microsoft Office Excel 工作表并针对通过使用 Visual Studio 中的 Office 开发工具使用其事件进行编程。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  验证**$A$ 1**将显示在可编辑文本框中，并且该单元格**A1**选择。 如果不存在，请单击单元格**A1**以将其选中。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
      单元格**A1**将成为名为区域`namedRange1`。 在表中，没有可见指示但`namedRange1`出现在**名称**框 （位于左侧工作表的正上方） 单元格时**A1**选择。  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  验证**$B$ 3**将显示在可编辑文本框中，并且该单元格**B3**选择。 如果不存在，请单击单元格**B3**以将其选中。  
   
-7.  单击“确定”。  
+7.  单击 **“确定”**。  
   
      单元格**B3**将成为名为区域`namedRange2`。  
   
@@ -159,7 +160,7 @@ ms.lasthandoff: 10/31/2017
   
 -   部署项目。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   

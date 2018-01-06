@@ -13,18 +13,19 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6144c0200c03776ead9e7dc7f46b5e9e707b6e82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0405e18419baf8bc152331a2bcfc7254ec602d1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>在中使用的替换字符串。Pkgdef 和。Pkgundef 文件
 你可以使用在.pkgdef 下面列出的替换字符串和.pkgundef 文件定义 for Visual Studio 独立 shell 应用程序。  
   
 ## <a name="substitution-strings"></a>替换字符串  
   
-|字符串|描述|  
+|String|描述|  
 |------------|-----------------|  
 |$=*RegistryEntry*$|值*RegistryEntry*条目。 如果注册表条目字符串以反斜杠结尾 (\\)，则使用默认值的注册表子项。 例如，替换字符串 $= 的 HKEY_CURRENT_USER\Environment\TEMP$ 为扩展到当前用户的临时文件夹。|  
 |$AppName $|传递给 AppEnv.dll 入口点应用程序的限定的名称。 限定的名称由应用程序名称、 下划线和也记录为项目.pkgdef 文件中的 ThisVersionDTECLSID 设置的值的应用程序自动化对象的类标识符 (CLSID) 组成。|  

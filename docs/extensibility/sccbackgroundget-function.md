@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85b700f0cb1e3a364cae69ff6c628151ea6a7bd3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b63a7e8c9a6b2a4f2539cd6a8426ba9df365ab76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 函数
 此函数可检索从源代码管理每个指定的文件的无用户干预。  
@@ -57,7 +58,7 @@ SCCRTN SccBackgroundGet(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|操作已成功完成。|  
 |SCC_E_BACKGROUNDGETINPROGRESS|后台检索已正在的进行 （源代码管理插件应返回此仅当它不支持同时执行的批操作）。|  
@@ -68,6 +69,6 @@ SCCRTN SccBackgroundGet(
   
  使用`dwFlags`自变量是相同[SccGet](../extensibility/sccget-function.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGet](../extensibility/sccget-function.md)

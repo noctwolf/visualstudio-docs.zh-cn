@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 115509e8ff79aafa703c429b476041d558e3167c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 519f40017fff5dd3241f4563c5a85d0d0d15c01b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何：在远程服务器上部署、发布和升级 SharePoint 解决方案
   除了部署 SharePoint 解决方案到本地系统，你可以将沙盒 SharePoint 解决方案发布到远程站点或本地 SharePoint 站点。 远程发布过程将.wsp 文件复制到 SharePoint 服务器，安装该解决方案，然后，可以激活解决方案。 对它进行更改之后，你还可以升级远程安装的 SharePoint 解决方案。  
@@ -78,7 +79,7 @@ ms.lasthandoff: 10/31/2017
   
      停用旧版本的解决方案，该解决方案的新版本升级与从旧的解决方案中，保留数据，并且在 SharePoint 中激活新的解决方案。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 部署并将其发布到本地 SharePoint 站点的 SharePoint 解决方案](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
  [创建 SharePoint 解决方案包](../sharepoint/creating-sharepoint-solution-packages.md)   
  [如何： 自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   

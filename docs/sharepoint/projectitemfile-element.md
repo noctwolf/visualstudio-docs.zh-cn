@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 023d2f64dc3f05d518add1cd4bf6c3415f435985
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7445507f6f3cfb4e81afc1ea4d94e5abc2b71873
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 元素
   表示 SharePoint 文件，如功能元素文件中，要包括在项目项部署到 SharePoint 时。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|-----------------|  
 |**源**|所需**xs: string**属性。<br /><br /> 要使用项目项部署的文件的名称。|  
 |**Target**|可选**xs: string**属性。<br /><br /> 该文件将在其中部署 SharePoint, 部署根文件夹的相对路径。 部署根文件夹由指定的部署类型**类型**属性。 如果**目标**属性未指定，则文件将被部署到的文件夹中指定的名称与**源**属性。<br /><br /> 有关详细信息，请参阅说明**部署路径**和**部署根**属性的 SharePoint 项目中的项[开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md).|  
-|**类型**|所需**xs: string**属性。<br /><br /> 部署的文件类型。 有关可能的值的详细信息，请参阅的描述**部署类型**属性中的 SharePoint 项目项[开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)。|  
+|**Type**|所需**xs: string**属性。<br /><br /> 部署的文件类型。 有关可能的值的详细信息，请参阅的描述**部署类型**属性中的 SharePoint 项目项[开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  
@@ -63,12 +64,12 @@ ms.lasthandoff: 10/31/2017
   
 |||  
 |-|-|  
-|**Namespace**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空间**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**架构名称**|SharePoint 项目项架构|  
 |**验证文件**|ProjectItemModelSchema.xsd|  
-|**可以为空**|No|  
+|**可以为空**|否|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7191d31d4ec53fb26f4ab20114201836f1b58fc5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757968aabfc256cda37a103d48c8d12f1fc16fa5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wizard-support-for-nested-projects"></a>嵌套的项目的向导支持
 IDE 运行嵌套项目的父项目可以实现的两个向导：**新项目**向导和**添加项**向导。  
@@ -31,6 +32,6 @@ IDE 运行嵌套项目的父项目可以实现的两个向导：**新项目**向
   
  有关向导的详细信息，请参阅[向导 (。Vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)，[上下文参数](../../extensibility/internals/context-parameters.md)和[注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
  [嵌套项目](../../extensibility/internals/nesting-projects.md)

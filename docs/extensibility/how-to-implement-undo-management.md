@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f61ee4c561e32f17afa1b53cbf3bd3bf982feeb4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cf57b24d81e193294f5ab90f71af07b229ec5839
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-undo-management"></a>如何： 实现撤消管理
 用于撤消管理的主要接口为<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>，由环境实现。 若要支持撤消管理，请实现单独撤消单元 (即， <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>，其中可以包含多个单独的步骤。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  撤消管理器对象是广泛使用的文本编辑器，它是为文本编辑器没有特定支持的通用组件。 如果你想要支持多级撤消或重做，可以使用此对象进行管理。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
  [如何： 清除撤消堆栈](../extensibility/how-to-clear-the-undo-stack.md)

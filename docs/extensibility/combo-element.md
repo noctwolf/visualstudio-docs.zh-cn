@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f170efc945f92d13eda61830ef682ab4cd8fc755
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9980232a7927bf1ae2df9d5f6329a57a031d3f56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combo-element"></a>组合元素
 定义在组合框中显示的命令。 有四种类型的组合框，如下所示： 下拉组合、 DynamicCombo、 IndexCombo 和 MRUCombo。  
@@ -41,10 +42,10 @@ ms.lasthandoff: 10/31/2017
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必需。 GUID/ID 命令标识符的 GUID。|  
-|id|必需。 ID 的 GUID/ID 命令标识符。|  
-|defaultWidth|必需。 一个整数，指定组合框像素宽度。|  
-|idCommandList|必需。 发送到活动的命令目标要检索的项将在组合框中显示的列表 ID。 ID 将为与控件相同的 GUID 作用域中。|  
+|guid|必须的。 GUID/ID 命令标识符的 GUID。|  
+|id|必须的。 ID 的 GUID/ID 命令标识符。|  
+|defaultWidth|必须的。 一个整数，指定组合框像素宽度。|  
+|idCommandList|必须的。 发送到活动的命令目标要检索的项将在组合框中显示的列表 ID。 ID 将为与控件相同的 GUID 作用域中。|  
 |priority|可选。 一个数字值，指定的优先级。|  
 |类型|可选。 一个枚举的值，指定按钮的类型。<br /><br /> 如果未授予，将使用按钮。<br /><br /> 下拉组合<br /> VSPackage 负责填写此组合框的内容。 用户能在此下拉列表的文本框中键入任何内容。<br /><br /> DynamicCombo<br /> VSPackage 负责填写此组合框的内容。 用户可以编辑此组合，并还在其中选择项。<br /><br /> IndexCombo<br /> 但它 DynamicCombo 相同引发项而不是其文本的索引。<br /><br /> MRUCombo<br /> 填充由集成的开发环境 (IDE) 代表 VSPackage。  用户可以编辑此组合框中。 IDE 会记住最多每个组合中各上次 16 个条目。<br /><br /> 当用户在组合框中，选择某个控件，或进入新的内容时，IDE 将通知合适的 VSPackage。|  
 |条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
@@ -54,8 +55,8 @@ ms.lasthandoff: 10/31/2017
 |元素|描述|  
 |-------------|-----------------|  
 |父级|可选。 父元素的按钮。|  
-|CommandFlag|必需。 请参阅[命令标志元素](../extensibility/command-flag-element.md)。 按钮 CommandFlag 有效值如下所示。<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> 的筛选键<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
-|字符串|必需。 请参阅[字符串元素](../extensibility/strings-element.md)。 必须定义子 ButtonText 元素。|  
+|CommandFlag|必须的。 请参阅[命令标志元素](../extensibility/command-flag-element.md)。 按钮 CommandFlag 有效值如下所示。<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> 的筛选键<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|字符串|必须的。 请参阅[字符串元素](../extensibility/strings-element.md)。 必须定义子 ButtonText 元素。|  
 |批注|可选注释。|  
   
 ### <a name="parent-elements"></a>父元素  
@@ -86,5 +87,5 @@ ms.lasthandoff: 10/31/2017
 </Combo>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

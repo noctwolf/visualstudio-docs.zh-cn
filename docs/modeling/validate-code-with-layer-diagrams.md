@@ -23,11 +23,12 @@ caps.latest.revision: "82"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: c6c5954cdb4979ede5e43d2052801ca399f128fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1e9041c397b121a5919ad370ccb7020c229e9b61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用依赖项关系图验证代码
 
@@ -247,7 +248,7 @@ ms.lasthandoff: 10/27/2017
   
  以下各节描述这些错误中使用的语法，解释了这些错误的含义，并提供了纠正或管理这些错误的方法。  
   
-|**语法**|**描述**|  
+|**语法**|**说明**|  
 |----------------|---------------------|  
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN*是与依赖项关系图上的层关联的项目。<br /><br /> *ArtifactTypeN*是一种*ArtifactN*，如**类**或**方法**，例如：<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|  
 |*命名空间名称 n*|命名空间的名称。|  
@@ -264,6 +265,6 @@ ms.lasthandoff: 10/27/2017
 |DV9001:**体系结构分析找到了内部错误**|结果可能不完整。 有关详细信息，请参阅详细的生成事件日志或输出窗口。|有关更多详细信息，请参阅生成事件日志或输出窗口。|  
 
  
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在开发过程中验证你的系统](../modeling/validate-your-system-during-development.md)   
  [视频： 验证实时体系结构依赖项](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   

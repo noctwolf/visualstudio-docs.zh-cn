@@ -23,11 +23,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4323bb31cb1b63e26c4964bb8e1ce71f010a249e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 55151999b3fb0576eb71a1f112bb4c4069accba5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint 错误的其他信息
   可以在故障排除中找到帮助[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具错误和警告进行疑难解答主题和 Microsoft Developer Network (MSDN) 公共论坛。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
  如果仍然找不到所需的答案，则可以访问在线支持选项，如与 Microsoft 产品支持服务联系，或搜索知识库文章。 有关详细信息，请参阅[Microsoft 帮助和支持](http://go.microsoft.com/fwlink/?LinkID=155371)页。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
   

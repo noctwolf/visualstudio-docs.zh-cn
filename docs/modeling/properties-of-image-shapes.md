@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 88ae1fb937f5f86aa767a2de8d1978ea160f6d15
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 72e64d9a0e254ce34cea76eca8617dee71573dd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-image-shapes"></a>图像形状的属性
 可以使用映像形状可以指定域类生成的设计器中的显示方式。 通过设置定义是映像形状`Image`类预定义的图像文件的属性。 支持以下格式：  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/27/2017
 |具有自定义的构造函数|如果`True`，自定义的构造函数将提供的源代码中。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|  
 |继承修饰符|介绍的从映像形状生成源代码类的继承的类型 (`none`，`abstract`或`sealed`)。|无|  
 |基本映像形状|该形状的基类。|(无)|  
-|名称|该形状的名称。|当前的名称|  
+|name|该形状的名称。|当前的名称|  
 |命名空间|隶属于此形状命名空间。|当前命名空间|  
 |工具提示类型|（固定的变量，或无） 其中定义工具提示的位置。 如果固定，然后的值`Fixed Tooltip Text`属性用作工具提示; 如果变量，工具提示将定义自定义代码中。|无|  
 |说明|与此形状相关联的非正式说明。|\<无 >|  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/27/2017
 |显示名称|将此形状的生成设计器中显示的名称。|\<无 >|  
 |固定的工具提示文本|适用于固定的工具提示文本。|\<无 >|  
 |帮助关键字|用于编制索引此元素的 F1 帮助关键字。|\<无 >|  
-|Image|用于此形状的图像文件路径。|\<无 >|  
+|图像|用于此形状的图像文件路径。|\<无 >|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

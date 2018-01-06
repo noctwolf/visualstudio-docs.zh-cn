@@ -20,11 +20,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4636e55fa2bc20ba9ff958a897ef7898099cb5c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 01ef94199ae7ea22f72ca08be4dfb9092b03403f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-in-office-projects"></a>Office 项目中的辅助功能
   Microsoft Visual Studio 和 Microsoft Office 包括许多辅助功能，使您能够生成符合标准的可访问性要求的自定义解决方案。 Microsoft 将发布在 Web 上找到的可访问性的准则。 有关详细信息，请参阅[辅助功能网站](http://go.microsoft.com/fwlink/?LinkID=37113)。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
      将出现一条表明必须重新启动 Visual Studio 以使更改生效。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
 5.  重新启动 Visual Studio 中，并重新打开你的项目。  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
  您可以使用放大镜来克服这些限制。 放大镜是创建一个单独的窗口，显示放大屏幕的一部分的 Windows 中的显示实用工具。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [针对残障人士的辅助功能](/visualstudio/ide/reference/accessibility-for-people-with-disabilities)   

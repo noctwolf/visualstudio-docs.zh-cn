@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b2217b77116ea561c32e96fcb7b92b520e680025
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c52a71ebb521f84f96bead09502389f6b395e90c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-custom-start-pages"></a>部署自定义起始页
 通过使用 VSIX 部署或通过将文件复制到目标计算机上的正确位置，你可以部署自定义起始页。  
@@ -95,6 +96,6 @@ ms.lasthandoff: 10/31/2017
   
 3.  在**自定义起始页**列表上**启动**选项页上，选择新的启动页。 有关详细信息，请参阅[自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)   
  [将用户控件添加到起始页](../extensibility/adding-user-control-to-the-start-page.md)

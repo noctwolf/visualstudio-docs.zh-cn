@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ca9031e623ec7009d4f489931871f093f4c05d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ffc56e4b36814a8bed7a0f93d66cc87c0b6fc466
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automation-support-for-options-pages"></a>选项页的自动化支持
 Vspackage 可以提供自定义**选项**到对话框**工具**菜单 （工具选项页） 中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，可以使它们可用于自动化模型。  
@@ -39,5 +40,5 @@ Vspackage 可以提供自定义**选项**到对话框**工具**菜单 （工具�
   
  实现自定义工具选项页的示例，请参阅[VSSDK 示例](http://aka.ms/vs2015sdksamples)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [公开项目对象](../../extensibility/internals/exposing-project-objects.md)

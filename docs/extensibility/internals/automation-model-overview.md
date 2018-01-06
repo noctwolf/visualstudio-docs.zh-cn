@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d4fda81b18824560276c1398583b2674bf200ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 208357343a3e77e29b1dc0a98b6159c5ac3f957e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automation-model-overview"></a>自动化模型概述
 自动化模型包含一组可以对其编写的 Visual Studio 外接程序或扩展的对象。 外接程序是应用程序可以操作在 Visual Studio 环境并自动执行常见任务。 Visual Studio 扩展可以创建自定义 Visual Studio 组件，或将添加到标准组件 （如文本编辑器） 的功能。  
@@ -36,7 +37,7 @@ Visual Studio 自动化对象
   
  你可以考虑扩展自动化模型的环境的位置：  
   
--   Project  
+-   项目  
   
 -   Document  
   
@@ -46,5 +47,5 @@ Visual Studio 自动化对象
   
  有关自动化的详细信息，请参阅[Visual Studio 的自动化和扩展性](http://msdn.microsoft.com/Library/f71a2253-3e68-4e5e-9a18-edbba816caf6)。 本文档和文档所提供的链接可，帮助你做出关于如何应提供为你的 VSPackage 的自动化的决策。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 创建外接程序](http://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

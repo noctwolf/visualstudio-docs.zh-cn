@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 49de63c81c46f379630f5d5cb328a670472ddcee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0aa4a5e044dfc28302735e058c8863d4eb683670
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 创建静态局部变量的方法的枚举数。  
@@ -47,7 +48,7 @@ int EnumStaticLocals(
 ## <a name="remarks"></a>备注  
  每个元素都[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示不同类型的静态局部变量的对象。 调用[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)要确定哪种类型的静态本地对象表示完全每个对象的方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

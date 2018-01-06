@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5637a449ea40f6e4f910e061c7e2e324c91ae70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c099f73e98542c29718efc4158593da35d333abd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt;元素 （Visual Studio 中的 Office 开发）
   `appAddin` 命名空间的 `vstov4` 元素存储 VSTO 外接程序特定于自定义项的信息。  
@@ -43,11 +44,11 @@ ms.lasthandoff: 10/31/2017
   
  `appAddin` 元素具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`application`|必需。 标识 Microsoft Office 应用程序。 值可以是以下值之一：Excel、InfoPath、Outlook、PowerPoint、Project、Visio 或 Word。|  
+|`application`|必须的。 标识 Microsoft Office 应用程序。 值可以是以下值之一：Excel、InfoPath、Outlook、PowerPoint、Project、Visio 或 Word。|  
 |`loadBehavior`|可选。 默认情况下，通过将此值设置为 启用了 `loadBehavior` 。 为进行调试，可以通过将此值设置为 2 来禁用 VSTO 外接程序。 有关详细信息，请参阅 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)中标题为“LoadBehavior 值”的表。|  
-|`keyName`|必需。 此值是该应用程序将用于加载 VSTO 外接程序的注册表项名称。 有关更多信息，请参见 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)。|  
+|`keyName`|必须的。 此值是该应用程序将用于加载 VSTO 外接程序的注册表项名称。 有关更多信息，请参见 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)。|  
   
  `appAddin` 元素具有以下子元素。  
   
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="vsto-add-in-example"></a>VSTO 外接程序示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>描述  
  下面的代码示例说明了使用 `appAddin` 部署的 Outlook 解决方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例摘自 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大的示例。  
   
 ### <a name="code"></a>代码  
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/31/2017
 </vstov4:appAddIn>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  

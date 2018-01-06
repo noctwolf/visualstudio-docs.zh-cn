@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 496e9b361dbb7f5c3eb5cf5197a1351a1182af3e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 404048e37f0a95ac1425250cfdcd098c4eb7f59d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="servers-visual-studio-sdk"></a>服务器 (Visual Studio SDK)
 在调试器体系结构，方面**服务器**:  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
 -   由[IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)接口，仅实现由 Visual Studio （的 Visual Studio 运行每个实例的服务器的一个实例）。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [端口](../../extensibility/debugger/ports.md)   
  [端口供应商](../../extensibility/debugger/port-suppliers.md)   
  [调试器概念](../../extensibility/debugger/debugger-concepts.md)   

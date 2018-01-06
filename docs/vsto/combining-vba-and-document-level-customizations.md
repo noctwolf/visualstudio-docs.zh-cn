@@ -29,11 +29,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7dd65878844e5c903b18c08e6dd5455f3dccb91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e8c9a3e0abdf478d6280795cd17b9b9a0bea0a13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combining-vba-and-document-level-customizations"></a>结合 VBA 和文档级自定义项
   在属于 Microsoft Office Word 或 Microsoft Office Excel 的文档级自定义项的文档中，可以使用 Visual Basic for Applications (VBA) 代码。 可以从自定义程序集调用文档中的 VBA 代码，也可以将项目配置为使文档中的 VBA 代码能够调用自定义程序集中的代码。  
@@ -87,7 +88,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 > [!NOTE]  
 >  此功能无法在 Word 模板项目中使用。 它只能在 Word 文档、Excel 工作簿或 Excel 模板项目中使用。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  你的项目必须满足以下要求，然后才能使 VBA 代码调入自定义项程序集：  
   
 -   文档必须具有以下文件扩展名之一：  
@@ -246,14 +247,14 @@ GetManagedClass(pdispInteropObject Object) As Object
 ## <a name="troubleshooting"></a>疑难解答  
  下表列出了一些常见错误以及修复错误的建议。  
   
-|错误|建议|  
+|Error|建议|  
 |-----------|----------------|  
 |设置了 **EnableVbaCallers** 或 **ReferenceAssemblyFromVbaProject** 属性后，一条错误消息指明文档未包含 VBA 项目，或者你没有访问文档中的 VBA 项目的权限。|确保项目中的文档至少包含一个 VBA 宏、VBA 项目具有运行所需的足够的信任级别，并且 VBA 项目未受密码保护。|  
 |设置了 **“属性”** 或 **ReferenceAssemblyFromVbaProject** 属性后，一条错误消息指明缺少 <xref:System.Runtime.InteropServices.GuidAttribute> 声明或该声明已损坏。|确保 <xref:System.Runtime.InteropServices.GuidAttribute> 声明位于项目内的 AssemblyInfo.cs 或 AssemblyInfo.vb 文件中，并且此特性设置为有效的 GUID。|  
 |设置了 **“属性”** 或 **ReferenceAssemblyFromVbaProject** 属性后，一条错误消息指明 <xref:System.Reflection.AssemblyVersionAttribute> 指定的版本号无效。|确保项目内的 AssemblyInfo.cs 或 AssemblyInfo.vb 文件中的 <xref:System.Reflection.AssemblyVersionAttribute> 声明设置为有效的程序集版本号。 有关有效的程序集版本号的信息，请参见 <xref:System.Reflection.AssemblyVersionAttribute> 类。|  
 |重命名自定义程序集后，调入自定义程序集的 VBA 代码将停止工作。|如果在向 VBA 代码公开自定义程序集之后更改其名称，则文档中的 VBA 项目与自定义程序集之间的链接将断开。 若要修复此问题，请将项目中的 **ReferenceFromVbaAssembly** 属性更改为 **False** ，并随后更改回 **True**，然后将 VBA 代码中对旧程序集名称的任何引用替换为新程序集名称。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
  [如何： 向 Visual C# 35; 中的 VBA 公开代码项目](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [演练： 从 Visual Basic 项目中的 VBA 中调用代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   

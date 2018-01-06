@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0019a0687370ac328fe78f57f1d26e661eb214a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 555fd622f5655a69ba77f3905a39635e01831c76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文本和 Visual Studio 的帮助
 ##  <a name="BKMK_UITextAndTerminology"></a>UI 文本和术语  
@@ -427,7 +428,7 @@ public class HelpForm : Form
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [字体和 Visual Studio 的格式设置](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)   
  [Visual Studio 的布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md)   
  [Visual Studio 的通知和进度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 256eaf2b451f91abdcc90c2beeedb7f689e95db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 97283921205eaf70c77c054b269ee56f0e1adcd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>创建 SharePoint 工作流解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供工具以帮助您创建自定义管理生命周期的文档和 SharePoint 网站中的列表项的工作流。 提供的项包括设计器、一组活动控件以及必需的程序集引用。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]此外包括**SharePoint 自定义向导**来帮助创建和配置工作流。  
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="collecting-information-during-the-workflow"></a>工作流过程中收集的信息  
  你可能想要从用户收集信息在预定义的工作流中的时间。 可以通过使用窗体或项目属性来收集信息。  
   
-### <a name="forms"></a>窗体  
+### <a name="forms"></a>表单  
  窗体是类似于包含问题并提供为用户提供答案的方法的对话框。  
   
  有四种类型的可以在工作流中使用的窗体：  
@@ -145,7 +146,7 @@ ms.lasthandoff: 10/31/2017
 |[演练：创建自定义站点工作流活动](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|演示如何执行两项关键任务： 创建站点级别的工作流，并创建自定义工作流活动。|  
 |[演练：将 SharePoint Designer 可重用工作流导入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|演示如何导入可重用声明性工作流在 SharePoint Designer 2010 到[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)  

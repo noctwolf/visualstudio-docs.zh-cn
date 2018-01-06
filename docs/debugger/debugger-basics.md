@@ -21,21 +21,18 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2c4077c57232f511097d6e1d46c49bf7337aee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 873e08817eef7d1760a717d98e413d8d4096323b
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugger-basics"></a>调试器基础知识
 Visual Studio 调试程序允许你观察程序的运行时行为并确定逻辑错误的位置。 该调试器可用于所有的 Visual Studio 编程语言及其关联的库。 使用调试程序时，可以中断执行以逐句通过代码和计算应用程序中的变量。  
   
-## <a name="in-this-section"></a>本节内容  
  [调试器入门](../debugger/getting-started-with-the-debugger.md)  
  说明如何使用调试器功能来调试你的应用程序。  
-
- [观看的视频调试器](../debugger/getting-started-with-the-debugger.md#video)  
- 演示如何使用调试器功能来调试你的应用程序。
   
  [使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)  
  介绍如何使用调试程序逐句通过代码。  
@@ -69,5 +66,5 @@ Visual Studio 调试程序允许你观察程序的运行时行为并确定逻辑
  [调试器安全](../debugger/debugger-security.md)  
  描述调试程序的安全实践。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器功能简介](../debugger/debugger-feature-tour.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c7a63c077207fdc85f3ad8b57119e1c7d1ca30b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8c40538b34c23e88b2c680db170b9d46b7b40f62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>语法着色中自定义编辑器
 Visual Studio 环境 SDK 编辑器，包括核心编辑器中，使用语言服务标识特定的语法项并将它们显示具有给定的文档视图的指定颜色。  
@@ -56,7 +57,7 @@ Visual Studio 环境 SDK 编辑器，包括核心编辑器中，使用语言服�
 > [!NOTE]
 >  除了使用语言服务的着色器，VSPackage 可以选择使用通用的 Visual Studio 环境 SDK 文本着色机制。 此机制的详细信息，请参阅[使用字体和颜色](../extensibility/using-fonts-and-colors.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [语法着色中旧语言服务](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [实现语法着色](../extensibility/internals/implementing-syntax-coloring.md)   
  [如何： 使用内置可着色项](../extensibility/internals/how-to-use-built-in-colorable-items.md)   

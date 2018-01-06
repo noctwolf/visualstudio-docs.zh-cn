@@ -21,11 +21,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ceecad94d3f9bb910f47484e5deab0f20876a0d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cb0ccb9369c3430cf04e7e7c6b62335721e8005f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-protection-in-document-level-solutions"></a>文档级解决方案中的文档保护
   你可以使用 Microsoft Office Word 和 Microsoft Office Excel 文档级项目中的保护的功能。 这些功能可以阻止未经授权的用户对受保护的文档部分进行更改。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="setting-the-password"></a>设置密码  
  Visual Studio 自动启用保护，但默认情况下提供任何密码。 如果你想文档保护有一个密码，您必须在部署你的解决方案之前添加它。 添加密码，可让授权的用户从文档; 中删除保护如果没有密码，不能轻松地删除保护。 有关设置密码的详细信息，请参阅特定 Office 应用程序中的帮助。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 以编程方式保护文档和文档的某些部分](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   
  [信息权限管理与托管的代码扩展概述](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   

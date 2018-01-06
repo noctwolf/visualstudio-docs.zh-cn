@@ -22,11 +22,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38508a664ff94628dfd3fd5ec00eacb32fbb1187
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c4f8d987b8079230591d4bfdbe51c6d640cbf265
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calling-code-in-vsto-add-ins-from-other-office-solutions"></a>从其他 Office 解决方案调用 VSTO 外接程序中的代码
   可以向其他解决方案（包括其他 Microsoft Office 解决方案）公开 VSTO 外接程序中的对象。 如果 VSTO 外接程序提供了你希望使其他解决方案能够使用的服务，这一点非常有用。 例如，如果某个 Microsoft Office Excel VSTO 外接程序从 Web 服务中执行财务数据计算，则其他解决方案可以通过在运行时调入该 Excel VSTO 外接程序来执行这些计算。  
@@ -146,7 +147,7 @@ utilities.ImportData();
   
  在此示例中，如果你尝试将 <xref:Microsoft.Office.Core.COMAddIn.Object%2A> 属性的值转换为 `AddInUtilities` 类而不是 `IAddInUtilities` 接口，则该代码将引发 <xref:System.InvalidCastException>。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [演练： VSTO 外接程序中从 VBA 调用代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   

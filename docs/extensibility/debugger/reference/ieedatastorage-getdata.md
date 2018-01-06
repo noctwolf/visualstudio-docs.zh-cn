@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae4d4e371a79178be741e45662f4a8db8680b5ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e18b51c20d2eaf324782574bf007ce32fdc6df2e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 检索此对象中指定的字节数。  
@@ -57,6 +58,6 @@ int GetData(
 ## <a name="remarks"></a>备注  
  建议的使用此方法是为本地数组时，检索数据的所有字节，因为没有方法跳过在检索过程中的字节。 在此情况下，参数`dataSize`应当值返回[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)

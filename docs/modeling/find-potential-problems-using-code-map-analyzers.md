@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: d2ac6ceed6f2d32eb347db89e0a329331e61b937
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 42eaf78d5268c18e223f3e4986dee84134e2931b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>使用代码图分析器查找潜在问题
 在代码图上运行分析器以帮助识别可能过于复杂或者可能需要改进的代码。 例如，可以使用以下分析器：  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/27/2017
 > [!TIP]
 >  如果你的代码图非常大，运行分析器则可能导致内存不足异常。 如果发生这种情况，请编辑代码图以减小其范围，或者生成一个较小的代码图，然后运行分析器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)   
  [使用代码图调试你的应用程序](../modeling/use-code-maps-to-debug-your-applications.md)   
  [调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)

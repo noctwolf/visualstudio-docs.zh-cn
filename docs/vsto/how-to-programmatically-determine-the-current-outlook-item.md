@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d1f577f77179ed0fcfdb3b9dc94575509ee701b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 112a2c1273b0087eea98736a4e47ac5de8787149
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>如何：以编程方式确定当前的 Outlook 项
   此示例使用 Explorer.SelectionChange 事件来显示当前文件夹及有关所选项的一些信息的名称。 然后，代码将显示选定的项。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
 -   约会、 联系人和 Microsoft Office Outlook 中的电子邮件项。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)   
  [如何： 以编程方式检索按名称的文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
  [如何：以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  

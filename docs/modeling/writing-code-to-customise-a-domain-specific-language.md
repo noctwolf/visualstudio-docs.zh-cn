@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2d456f84078e54694deb11fda0082ac40d278dd2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e7b5fc639e93061a4abd0acbfc1425223d673282
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>编写代码以自定义域特定语言
 本部分演示如何使用自定义代码来访问、 修改或创建域特定语言模型。  
@@ -73,5 +74,5 @@ ms.lasthandoff: 10/27/2017
   
 -   **序列化**。 存储区提供了一种标准方式进行序列化到文件包含的对象。 你可以自定义序列化和反序列化的规则。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)

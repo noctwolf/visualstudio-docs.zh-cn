@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78affeb358200599d925b9b70df3ae945759054c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 03e6acb4ee9756d0bbb14a6e3667375d32cafba9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-value-of-a-local"></a>更改本地的值
 > [!IMPORTANT]
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
  [更改值的实现示例](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
  使用 MyCEE 示例来单步执行更改值的过程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [显示局部](../../extensibility/debugger/displaying-locals.md)

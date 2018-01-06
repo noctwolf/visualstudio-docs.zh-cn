@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6687ce3ed73a96778b84cec6e77d5c0b3145702d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9b89c4e45f8268df55386d321816325fb50174c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-context-for-editors"></a>如何： 为编辑器提供的上下文
 编辑器上下文处于活动状态，仅当编辑器具有焦点或立即之前焦点移动到工具窗口具有焦点时。 你可以通过执行以下编辑器提供上下文：  
@@ -83,7 +84,7 @@ ms.lasthandoff: 10/31/2017
   
  提供你的编辑器或设计器中活动的上下文后, 应提供特定的 F1 关键字，以允许用户获取有关的编辑器或设计器本身的帮助。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A>   

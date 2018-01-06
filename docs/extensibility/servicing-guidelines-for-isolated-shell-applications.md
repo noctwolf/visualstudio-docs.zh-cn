@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e15d228794fb03441d42c081f11bf75b11fdd45
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2c5c8bc626f8a6aabe7fbc450067667d301f11c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>维护为独立的 Shell 应用程序的准则
 分发时 Visual Studio 独立 shell 应用程序，你必须能够为安装之后，你的应用程序提供软件更新。 若要执行此操作，你必须使用 Microsoft Installer (MSI) 文件安装你的应用程序。 这种安装允许由 Microsoft 进行重新分配站点提供的软件更新下载并由无需自定义干预客户使用。  

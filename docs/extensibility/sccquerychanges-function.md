@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589013b996f9ed018e28292a27c6a760eef1dae7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec61845433329645fbc4f02a72c062c3cf47f9f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函数
 此函数枚举给定的文件，对于通过回调函数的每个文件提供名称更改的信息的列表。  
@@ -54,7 +55,7 @@ SCCRTN SccQueryChanges(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|查询过程成功完成。|  
 |SCC_E_PROJNOTOPEN|尚未在源代码管理中打开项目。|  
@@ -64,7 +65,7 @@ SCCRTN SccQueryChanges(
 ## <a name="remarks"></a>备注  
  要查询的更改是对命名空间： 具体而言，重命名、 添加和删除文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
  [错误代码](../extensibility/error-codes.md)

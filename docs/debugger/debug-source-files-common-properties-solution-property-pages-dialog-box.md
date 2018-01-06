@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.options.FindSource
 dev_langs:
 - CSharp
@@ -25,11 +25,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96ca9ef63a3823b942a6d7a160c31473f5db8962
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: aa83025b15fe3773220a2b27394890318d60c850
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>“解决方案属性页”对话框 ->“通用属性”->“调试源文件”
 该属性页指定调试解决方案时调试器查找源文件的位置。  
@@ -42,6 +43,6 @@ ms.lasthandoff: 10/31/2017
  **不查找这些源文件**  
  输入不希望调试器读取的任何文件的名称。 如果调试器在以上指定的某个目录中找到这些文件之一，它将忽略该文件。 如果**查找源**时进行调试，而您单击对话框中出现**取消**，要搜索的文件获取添加到此列表中，以使调试器不再继续搜索该文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)

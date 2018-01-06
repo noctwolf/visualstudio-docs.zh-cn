@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa74884edc5f0dea16d95fc5f177323da1fab6ab
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 3cf5c9d448d7e637344ee3dd5741871f5c177fdb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-xml-data"></a>使用 XML 数据
 XML 及其相关技术对 [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio 中处理数据的方式起着十分重要的作用。 Visual Studio 提供了一些工具和功能，可以更加容易地使用 XML、XSLT 和 XML 架构。  
@@ -67,5 +68,5 @@ XML 及其相关技术对 [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.
  [在托管代码中的 XML Web 服务](http://msdn.microsoft.com/en-us/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  讨论如何创建和部署 XML Web 服务以及如何访问 XML Web 服务。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

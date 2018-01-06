@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 545241d254d8ea2d2532ee8590e8e1867d635592
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: dotnet
+ms.openlocfilehash: aa992c0cdcf5c50208aacc8e16d954f4ee35da13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>使用托管代码中使用 Visual Studio 调试器进行调试
 
@@ -29,7 +30,7 @@ Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试
 
 2. 下**Visual C#**或**Visual Basic**，选择**.NET 核心**，，然后在中间窗格中选择**控制台应用程序 (.NET Core)**。
 
-     如果看不到**控制台应用程序 (.NET Core)**项目模板中，单击**打开 Visual Studio 安装程序**中的左窗格中的链接，**新项目**对话框。 Visual Studio 安装程序启动。 选择**.NET 桌面开发**和**.NET 核心**工作负荷，然后选择**修改**。
+     如果没有看到“控制台应用(.NET Core)”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择**.NET 桌面开发**和**.NET 核心**工作负荷，然后选择**修改**。
 
 3. 键入的名称，例如**MyDbgApp**单击**确定**。
 
@@ -183,6 +184,6 @@ A*断点*标记，它指示 Visual Studio 应在哪个位置挂起你运行代�
 - 若要了解有关调试器的详细信息，请参阅[启动调试器，并导航代码](../debugger/getting-started-with-the-debugger.md)。
 - 若要了解有关断点的详细信息，请参阅[使用断点](../debugger/using-breakpoints.md)。
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)

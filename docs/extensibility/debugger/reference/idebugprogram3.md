@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2da4dcb4911488bd82c358efc3b8075f1941af6f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cb827c875731134b9d8f9ea2833f3629ca0d3c36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 此接口表示一个程序，它的进程中运行扩展[执行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)通过提供线程的信息。  
@@ -41,7 +42,7 @@ IDebugProgram3 : IDebugProgram3
 |------------|-----------------|  
 |[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|执行程序。 线程返回能够在执行时在哪个线程查看用户的调试器信息。|  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
@@ -51,7 +52,7 @@ IDebugProgram3 : IDebugProgram3
 ## <a name="remarks"></a>备注  
  程序是在特定的运行时体系结构中，运行，而进程组成一个或多个程序的线程容器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)   

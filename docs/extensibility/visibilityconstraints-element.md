@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f26268e6168379632868c07a9d9c58f9485c8ada
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 946fc12ab7a77aa72d5d09f7ba9522723f8e18b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 元素
 VisibilityConstraints 元素确定的命令和工具栏的组的静态可见。 通过首先控制可见性[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]而无需加载 VSPackage 的集成的开发环境 (IDE)。  
@@ -65,6 +66,6 @@ VisibilityConstraints 元素确定的命令和工具栏的组的静态可见。 
 </VisibilityConstraints>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VisibilityItem 元素](../extensibility/visibilityitem-element.md)   
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

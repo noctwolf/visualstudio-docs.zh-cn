@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 689fac97264aad3d301095cffed07b825c723474
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5f230da41efa8dd2fa522a5f86ae1402991b2cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elements-of-a-project-model"></a>项目模型的元素
 接口和实现中的所有项目[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]共享基本结构： 你的项目类型的项目模型。 在你的项目模型中，这是你正在开发的 VSPackage，你将创建符合你的设计决策和与由 IDE 提供的全局功能一起工作的对象。 尽管您控制如何保持的项目项，例如，在不控制通知必须保留文件。 当用户将焦点置于上打开项目项，并选择**保存**上**文件**上的菜单[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]菜单栏中，你的项目类型代码必须截获 IDE 中的命令，保留文件，和发送通知到 IDE，无法再更改该文件。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
  项目可支持命令，并因此必须实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口以参与命令路由通过命令上下文 Guid。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [清单： 创建新项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [不在生成中： 使用 HierUtil7 项目类来实现一种项目类型 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [项目模型核心组件](../../extensibility/internals/project-model-core-components.md)   

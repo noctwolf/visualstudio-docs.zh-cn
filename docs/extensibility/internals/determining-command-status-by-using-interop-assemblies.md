@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3cde6ae841271622e0d538d679991288c111095e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b7b695288bec904e1e576f9f566944613c97f31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>通过使用互操作程序集确定命令状态
 VSPackage 必须跟踪的它可以处理的命令的状态。 在你的 VSPackage 内处理的命令将成为启用或禁用时，无法确定环境。 它负责你的 VSPackage 以通知有关命令状态的环境，例如，常规的状态的命令如**剪切**，**复制**，和**粘贴**。  
@@ -36,6 +37,6 @@ VSPackage 必须跟踪的它可以处理的命令的状态。 在你的 VSPackag
 ## <a name="status-notification-failure"></a>状态通知失败  
  你的 VSPackage 的失败通知命令状态更改的环境可以将 UI 放置处于不一致状态。 请记住，任何菜单或上下文菜单命令可以放置工具栏上的用户。 因此，仅当将打开一个菜单或上下文菜单时才更新 UI 是不够的。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [实现](../../extensibility/internals/command-implementation.md)

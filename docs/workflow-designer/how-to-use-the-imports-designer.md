@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8d6e530a82c1edfa221203b6c99f06151fe901af
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3873e444f3d9c68b632d52ab98bee07bf14af679
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-imports-designer"></a>如何：使用导入设计器
 导入设计器允许您为将在表达式中使用的类型输入命名空间。 非常类似**导入**或**使用**Visual Basic.NET 和 C# 中，在导入设计器中指定命名空间中的关键字，您可以只需进入你的表达式而不是完全限定的类型名称版本类型名称。  

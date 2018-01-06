@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8b1fa4647cd5b145d19e2264381b186394be814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1008e1c81c6d99bc9fa0615263cf023a56101435
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>什么 &#39; s Visual Studio 2015 SDK 中的新增功能
 Visual Studio SDK 的 Visual Studio 2015、 更新，Visual Studio 2015 和 Visual Studio 2017 具有以下新的和更新功能。  
@@ -53,7 +54,7 @@ Visual Studio SDK 的 Visual Studio 2015、 更新，Visual Studio 2015 和 Visu
  对于 c + +，VSPackage 向导支持菜单命令、 工具窗口和自定义编辑器。 中为其查找**新项目**中的对话框**Visual c + + / 扩展性**。  
   
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>通过 NuGet VS SDK 引用程序集  
- 有关增加可移植性和可扩展性项目的共享，你可以使用 VS SDK 引用程序集的 NuGet 版本。  这些都位于[nuget.org](http://www.nuget.org)发布[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)并可以轻松地添加到你的项目或通过 Visual Studio 的解决方案**引用 / 管理 NuGet包**对话框。 可以添加对特定的扩展程序集的单个引用，也可以添加所有 VS SDK 都引用程序集在一次使用 VS SDK[元包](http://www.nuget.org/packages/VSSDK_Reference_Assemblies)。 若要了解有关 NuGet 的详细信息，请参阅[NuGet 文档](http://docs.microsoft.com/NuGet)和[包管理器 UI](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI)主题。  
+ 有关增加可移植性和可扩展性项目的共享，你可以使用 VS SDK 引用程序集的 NuGet 版本。  这些都位于[nuget.org](http://www.nuget.org)发布[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)并可以轻松地添加到你的项目或通过 Visual Studio 的解决方案**引用 / 管理 NuGet包**对话框。 可以添加对特定的扩展程序集的单个引用，也可以添加所有 VS SDK 都引用程序集在一次使用 VS SDK[元包](http://www.nuget.org/packages/VSSDK_Reference_Assemblies)。 若要了解有关 NuGet 的详细信息，请参阅[NuGet 文档](/NuGet)和[包管理器 UI](/NuGet/Tools/Package-Manager-UI)主题。  
   
  当你使用 VS SDK 引用程序集的 NuGet 版本时，另一个用户不需要安装 VS SDK 以打开并生成你的项目。  NuGet 引用程序集和 VS SDK 生成工具自动将该项目的其计算机上安装。  
   

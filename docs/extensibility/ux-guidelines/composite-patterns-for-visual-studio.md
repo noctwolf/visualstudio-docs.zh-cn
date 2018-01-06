@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6ce0fccf3a957edfdf732ce3ea462bef26c5a0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio 的复合模式
 复合模式将交互和设计元素不同的配置合并。 一些 Visual Studio 中关于一致性的最重要复合模式包括：  
@@ -485,7 +486,7 @@ ms.lasthandoff: 10/31/2017
 |对话框|对话框中，如果它已被移动的位置<br /><br /> 用户上次使用在对话框中的视图|当对话框关闭<br /><br /> Visual Studio 会话结束时|在内存中<br /><br /> 中的注册表**HKEY_Current_User**|  
 |窗口|大小和窗口的位置|当该窗口将关闭<br /><br /> Visual Studio 模式更改时<br /><br /> Visual Studio 会话结束时|**用户选项 (.suo)**项目文件<br /><br /> 窗口设置的自定义选项文件|  
 |Document|在文档中当前所选内容<br /><br /> 该文档的视图<br /><br /> 用户访问最后一个多个位置|当保存文档|**用户选项 (.suo)**项目文件|  
-|Project|对文件的引用<br /><br /> 对磁盘上的目录的引用<br /><br /> 对其他软件的引用<br /><br /> 组件数<br /><br /> 有关项目本身的状态信息|当保存项目|项目文件|  
+|项目|对文件的引用<br /><br /> 对磁盘上的目录的引用<br /><br /> 对其他软件的引用<br /><br /> 组件数<br /><br /> 有关项目本身的状态信息|当保存项目|项目文件|  
 |解决方案|对项目的引用<br /><br /> 对文件的引用|当保存项目或解决方案|**解决方案 (.sln)**文件|  
 |中的设置**工具 > 选项**|键盘自定义项<br /><br /> 工具栏自定义项<br /><br /> 配色方案|当**工具 > 选项**对话框关闭<br /><br /> Visual Studio 会话结束时|中的注册表**HKEY_Current_User**|  
   

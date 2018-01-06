@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7856f8fac7e986f3e5383fa91261de39fe815a28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 164a450ca346fe2bd7b267d951ce522d27f14160
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="images-and-icons-for-visual-studio"></a>图像和图标 for Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a>在 Visual Studio 中的映像使用  
@@ -271,7 +272,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="base-palette"></a>基调色板  
  所有的标准图标包含三种基本的颜色。 图标包含没有渐变或投影有三维工具图标的一个或两个例外。  
   
-|用法|名称|值 （浅色主题）|样本|示例|  
+|用法|name|值 （浅色主题）|样本|示例|  
 |-----------|----------|---------------------------|------------|-------------|  
 |后台/深色|VS BG|424242 / 66,66,66|![样本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![基调色板示例](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405年 02_BasePaletteExample")|  
 |前景/轻型|VS FG|F0EFF1 / 240,239,241|![样本 F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
@@ -284,11 +285,11 @@ ms.lasthandoff: 10/31/2017
 #### <a name="action-modifiers"></a>操作修饰符  
  下面的四个颜色指示所需操作的操作修饰符的类型：  
   
-|用法|名称|值 （所有的主题）|样本|  
+|用法|name|值 （所有的主题）|样本|  
 |-----------|----------|--------------------------|------------|  
 |正|VS 操作绿色|388A34 / 56,138,52|![样本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |负数|VS 操作红色|A1260D / 161,38,13|![样本 A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
-|非特定|VS 操作蓝色|00539 C / 0,83,156|![样本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|非特定语言|VS 操作蓝色|00539 C / 0,83,156|![样本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |创建/新|VS 操作橙色|C27D1A / 194,156,26|![样本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
   
 ##### <a name="examples"></a>示例  
@@ -327,14 +328,14 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="folder"></a>文件夹  
   
-|用法|名称|值 （所有的主题）|样本|示例|  
+|用法|name|值 （所有的主题）|样本|示例|  
 |-----------|----------|--------------------------|------------|-------------|  
 |文件夹|文件夹|DCB67A / 220,182,122|![样本 DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![文件夹颜色图标](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405年 23_FolderColor")|  
   
 #### <a name="visual-studio-languages"></a>Visual Studio 语言  
  每个通用的语言或 Visual Studio 中提供的平台都有一个关联的颜色。 在基本图标，或出现在复合图标的右上角的语言修饰符上使用这些颜色。  
   
-|用法|名称|值 （所有的主题）|样本|  
+|用法|name|值 （所有的主题）|样本|  
 |-----------|----------|--------------------------|------------|  
 |ASP，HTML，WPF|ASP HTML WPF 蓝色|0095D 7 / 0,149,215|![样本 0095d7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
 |C++|CPP 紫色|9B4F96 / 155,79,150|![样本 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
@@ -356,7 +357,7 @@ ms.lasthandoff: 10/31/2017
 #### <a name="intellisense"></a>IntelliSense  
  IntelliSense 图标使用独占的调色板。 这些颜色用于帮助用户快速区分 IntelliSense 弹出列表中的不同项。  
   
-|用法|名称|值 （所有的主题）|样本|  
+|用法|name|值 （所有的主题）|样本|  
 |-----------|----------|--------------------------|------------|  
 |类事件|VS 操作橙色|C27D1A / 194,125,26|![样本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
 |扩展方法，方法，模块中委托|VS 操作紫色|652 D 90 / 101,45,144|![样本 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
@@ -374,7 +375,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="notifications"></a>通知  
  Visual Studio 中的通知用于指示状态。 通知调色板使用以下四种颜色，以及黑色或白色前景填充选项，以定义具有以下状态级别的通知。  
   
-|用法|名称|值 （所有的主题）|样本|  
+|用法|name|值 （所有的主题）|样本|  
 |-----------|----------|--------------------------|------------|  
 |状态： 非特定语言|通知蓝色 （VS 蓝色）|1BA1E2 / 27,161,226|![样本 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
 |状态： 正|通知绿色 （VS 绿色）|339933 / 51,153,51|![样本 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
@@ -392,7 +393,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="visual-studio-online"></a>Visual Studio Online  
  一般情况下，Visual Studio Online 功能组成托管浏览器中。 在不同的环境颜色各不相同，但样式保持不变。  
   
-|Group|用法|名称|值 （所有的主题）|样本|  
+|Group|用法|name|值 （所有的主题）|样本|  
 |-----------|-----------|----------|--------------------------|------------|  
 |TFS|背景|TFSO BG|656565/ 101, 101, 101|![样本 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
 |TFS|轮廓|OUT TFSO|FFFFFF / 255，255，255|![样本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  

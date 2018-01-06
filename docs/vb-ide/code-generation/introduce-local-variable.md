@@ -11,11 +11,12 @@ ms.assetid: 1490d6ac-ed56-4d03-95db-c23f23cba70d
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 67302893dbebb65316b9c2aab09f70ddaa3e6567
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9caafd73703478c75d7d91708ddcf5d14139e7fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introduce-a-local-variable-in-visual-basic"></a>介绍在 Visual Basic 中的本地变量
 **新增功能：**便会立即生成一个本地变量来替换现有表达式。
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
    >[!NOTE]
    >你可以使用**..所有匹配项...**菜单选项，以将替换所选表达式找到，而不仅仅是一个专门突出显示的每个实例。
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [代码生成 (Visual Basic)](../code-generation-vb.md)  
 [预览更改](../../ide/preview-changes.md) 

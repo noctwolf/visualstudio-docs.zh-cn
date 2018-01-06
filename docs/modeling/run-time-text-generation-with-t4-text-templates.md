@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9dfcba23b9c8df3bbd62a0ef4dd0c4d98f578514
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 32d2fa502a5eca166ccca9fbc87ceb632d7617ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 你可以在运行时应用程序中生成文本字符串，通过使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]运行时文本模板。 执行应用程序的计算机不必具有[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 运行时模板有时被称为"预处理文本模板"，因为在编译时，该模板会生成在运行时执行的代码。  
@@ -103,7 +104,7 @@ This report is Company Confidential.
  语言参数将取决于你的项目的语言。  
   
 ### <a name="plain-content"></a>纯文本内容  
- 编辑**.tt**文件，以包含您的应用程序生成的文本。 例如:   
+ 编辑**.tt**文件，以包含您的应用程序生成的文本。 例如:  
   
 ```  
 <html><body>  
@@ -114,7 +115,7 @@ This report is Company Confidential.
 ```  
   
 ### <a name="embedded-program-code"></a>嵌入的程序代码  
- 你可以将插入程序代码之间`<#`和`#>`。 例如：  
+ 你可以将插入程序代码之间`<#`和`#>`。 例如:  
   
 ```csharp  
 <table>  
@@ -424,7 +425,7 @@ End material for DerivedTemplate1.
   
  运行时模板可在任何应用程序在编译时确定模板和它们的内容的位置。 但是，如果你想要编写[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]从模板在运行时更改，请参阅生成文本的扩展[在 VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)   
  [编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)   
  [通过 Oleg Sych 了解 T4： 已预处理的文本模板](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)

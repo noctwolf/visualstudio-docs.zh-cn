@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec22eaeaf24af1c65823c64c65dd2c39f1003ec8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4be6e63df26d3c4a9b6539276aa97f69e349b83c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 函数
 此函数将确定哪些目录和 （可选） 使用文件存储在源代码管理，提供要检查的目录列表中。  
@@ -58,7 +59,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功完成该操作。|  
 |SCC_E_UNKNOWNERROR|出现了错误。|  
@@ -66,7 +67,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="remarks"></a>备注  
  只有那些目录和 （可选） 在源控件存储库中的文件名称传递给回调函数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [Bitflags 由特定的命令](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   

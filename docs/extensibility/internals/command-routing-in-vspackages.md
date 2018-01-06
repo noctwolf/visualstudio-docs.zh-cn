@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffbfb131eedb316c321bbf955ec7cc2951c71b8c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90f3d2347f8bf37173f3eb257293b71d706eb0a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage 中的路由的命令
 命令路由中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]基于执行它的上下文。 它是从初始上下文外部路由到的全局上下文。  

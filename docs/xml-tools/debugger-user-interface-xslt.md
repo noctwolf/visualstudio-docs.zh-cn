@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 422dd91a5b8e22bb9859d8ffa10160bdbe77a021
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 1071db6a7a8205ef337737473a18d1a6c31af43c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-user-interface-xslt"></a>调试程序用户界面 (XSLT)
 本主题介绍调试程序的窗口和对话框。 只讨论具有 XSLT 特定的调试行为的用户界面部分。  
@@ -26,13 +27,13 @@ ms.lasthandoff: 11/02/2017
 ## <a name="locals-window"></a>“局部变量”窗口  
  “局部变量”窗口显示在样式表中定义的任何变量的有关信息。 “局部变量”窗口包含三列信息：  
   
- **Name**  
+ **名称**  
  此列包含当前范围中的所有局部变量的名称。 节点集具有一个树控件，可以通过向下搜索查看其子文件夹。  
   
- **值**  
+ **“值”**  
  该列显示每个变量所包含的值。 属性、处理指令、注释、文本和 CData 节点显示节点的文本值。 命名空间节点显示命名空间 URI。  
   
- **类型**  
+ **Type**  
  此列标识每个变量中列出的数据类型**名称**列。  
   
  “局部变量”窗口还显示用于跟踪 XSLT 转换上下文的预定义上下文变量。 下表介绍 XSLT 调试程序所使用的预定义上下文变量。  
@@ -96,7 +97,7 @@ ms.lasthandoff: 11/02/2017
   
  有关详细信息，[如何： 使用反汇编窗口](../debugger/how-to-use-the-disassembly-window.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 XSLT](../xml-tools/debugging-xslt.md)   
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  
  [检查自动中的变量和 Visual Studio 中的局部变量窗口](../debugger/autos-and-locals-windows.md)

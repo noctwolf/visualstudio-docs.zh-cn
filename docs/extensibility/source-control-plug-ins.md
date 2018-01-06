@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea5169b3d74a77bbb079dab5b310a3b7ebbbeff0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f05a0b41a46adfee827f9cc1a36ab7bdd44cd0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-ins"></a>源控件插件
 源控件插件 SDK 引用部分包含完整接口规范，支持使用源代码管理系统以与集成[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它指定的语法和语义到接口与源代码管理插件必须实现的各种函数和数据类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。  

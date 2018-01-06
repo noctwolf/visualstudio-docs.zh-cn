@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dad79623bbc721c67c19a37436d2bf5e64b93c59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: feec1e85287b3a1c24ce3c328227ba0455ae044b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-object-list"></a>属性窗口对象列表
 中的对象列表**属性**窗口是下拉列表，您可以将所选内容更改为一个或多个选择的 windows 中可用的其他对象。 选择在此列表中的不同对象触发调用<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A>以通知环境已选择新的对象。 中显示的信息**属性**窗口然后更改为显示与新选择的对象关联的属性。  
@@ -31,5 +32,5 @@ ms.lasthandoff: 10/31/2017
   
  如果 COM 对象没有实现<xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>、**属性**窗口在左侧的列表显示代替对象名称的接口名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展属性](../../extensibility/internals/extending-properties.md)

@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a5565a5f53506ee61cc40cdd09ab4719bef0742b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4c9a3124ddefc892207ccc821b80056baab14166
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>如何：在工作流中设置断点
 使用 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 时，可以在图形工作流上设置断点，就像在 Visual Basic 或 C# 代码中设置断点一样。 正如所料，工作流执行将在设置的每个断点处停止。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/27/2017
   
      或者，也可以按快捷键**F9**密钥之后选择活动或你可以右键单击该活动并选择**断点**然后**插入断点**从上下文菜单。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 调用工作流调试器](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
  [使用工作流设计器调试工作流](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)   
  [如何：使用工作流设计器调试 XAML](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

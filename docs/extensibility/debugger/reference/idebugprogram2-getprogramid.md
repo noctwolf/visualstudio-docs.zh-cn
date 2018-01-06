@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 094dde4330775b77a50ce98451fc9dafcd3bd23b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5edf51bfa37cfdca7779417cd01320a1ee89cbd2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
 获取此程序的 GUID。  
@@ -47,7 +48,7 @@ int GetProgramId(
 ## <a name="remarks"></a>备注  
  调试引擎 (DE) 必须返回最初传递到的程序标识符[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)或[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法。 这将允许的程序的标识跨调试器组件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
  [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)

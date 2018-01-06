@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c47de66c7767cf18241e1b8c53e89f8d3f00dcef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a6f37c397ec7dab6095cb03e2b93cb8f65892091
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED 字段
 它已达到运行状态，或它已对其取消和完成没有出现异常之前，该任务已取消。  
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  如果[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)字段包含此值，<xref:System.Threading.Tasks.Task.Status%2A>属性返回<xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务类](../../extensibility/debugger/task-class-internal-members.md)

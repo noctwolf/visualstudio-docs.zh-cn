@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 54e600e5d626828824d5a2584e1ff4f7fdc09810
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6e91bc1189bbc10954e99441ac2309dce707690a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-geometry-shapes"></a>几何形状的属性
 几何形状可用于指定的域类的实例在域特定语言中的显示方式。 有关详细信息，请参阅[如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展的域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/27/2017
 |具有自定义的构造函数|如果`True`，自定义的构造函数将提供的源代码中。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|  
 |继承修饰符|介绍的从形状生成源代码类的继承的类型 (`none`，`abstract`或`sealed`)。|无|  
 |基本几何形状|该形状的基类。|(无)|  
-|名称|该形状的名称。|当前的名称|  
+|name|该形状的名称。|当前的名称|  
 |命名空间|隶属于此形状命名空间。|当前命名空间|  
 |工具提示类型|如何定义工具提示 （固定的变量，或无）。 如果固定，然后的值`Fixed Tooltip Text`属性用作工具提示; 如果变量，工具提示将定义自定义代码中。|无|  
 |说明|与此元素关联的非正式说明。|\<无 >|  
@@ -52,5 +53,5 @@ ms.lasthandoff: 10/27/2017
 |固定的工具提示文本|适用于固定的工具提示文本。|\<无 >|  
 |帮助关键字|用于编制索引此形状的 F1 帮助关键字。|\<无 >|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

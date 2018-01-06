@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38b4415a24a7440a2d3725fb1183863e7a337bbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d3277a4e24b12d409654548b5670a4d47fa9539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tool-windows-in-the-registry"></a>在注册表中的工具窗口
 提供工具窗口的 Vspackage 必须注册[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]一样工具窗口提供程序。 通过使用 Visual Studio 包模板创建的工具窗口默认情况下执行此操作。 工具窗口提供程序具有指定可见性属性，例如默认工具窗口大小和位置，用作工具窗口窗格中和停靠样式的窗口的 GUID 的系统注册表项。  
@@ -42,5 +43,5 @@ ms.lasthandoff: 10/31/2017
   
  第二个可选的密钥 ToolWindows\Visibility，指定需要让用户看到工具窗口的命令的 Guid。 在这种情况下，没有指定任何命令。 有关详细信息，请参阅[工具窗口显示配置](../extensibility/tool-window-display-configuration.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPackage](../extensibility/internals/vspackages.md)

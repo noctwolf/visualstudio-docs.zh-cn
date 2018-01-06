@@ -18,20 +18,21 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4380299fd37b456dd3be6da7cf37981ad89b1caf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何在触发挂起、 继续和后台事件调试 Visual Studio 中的 UWP 应用时
 不调试时，Windows **进程生命期管理** (PLM) 根据用户操作和设备状态控制应用程序的执行状态 - 启动、挂起、继续和终止应用程序。 在调试时，Windows 禁用这些激活事件。 本主题介绍如何在调试器中触发这些事件。  
   
  本主题还介绍如何调试 **后台任务**。 通过后台任务，即使应用程序不运行，也可在后台进程中执行某些操作。 可使用调试器使应用程序进入调试模式，然后不启动 UI 即启动和调试后台任务。  
   
- 有关进程生命期管理和后台任务的详细信息请参阅[正在启动，继续执行，和多任务](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/index)。  
+ 有关进程生命期管理和后台任务的详细信息请参阅[正在启动，继续执行，和多任务](/windows/uwp/launch-resume/index)。  
   
-##  <a name="BKMK_In_this_topic"></a> 主题内容  
+##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  [触发进程生命期管理事件](#BKMK_Trigger_Process_Lifecycle_Management_events)  
   
  [触发后台任务](#BKMK_Trigger_background_tasks)  
@@ -123,8 +124,8 @@ ms.lasthandoff: 11/11/2017
   
 4.  选择 **“诊断”** 日志。  
   
-## <a name="see-also"></a>另请参阅  
- [使用 Visual Studio 的测试 UWP 应用](../test/testing-store-apps-with-visual-studio.md)   
+## <a name="see-also"></a>请参阅  
+ [使用 Visual Studio 测试 UWP 应用](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [应用程序生命周期](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
  [启动、 恢复和多任务](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)

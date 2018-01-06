@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 935ea7d9fde2872c952f79afaa95058e9f18d0a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e2d7ddfd4904923cbdea415fa5a0d2086cc071f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>对旧语言服务中的导航栏的支持
 在编辑器视图的顶部导航栏显示文件中的类型和成员。 在左侧的下拉列表，显示类型，成员将显示在右侧下拉列表。 当用户选择一种类型时，脱字号位于类型的第一行。 当用户选择成员时，脱字号位于成员的定义。 下拉列表框将更新以反映当前插入符号的位置。  

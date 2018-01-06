@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dd55b39f3a35e8ee8f3f16cc5a64e61cb824177
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: debfb63201652f5a9d3348e3bcd591c5efe66e33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-resources-for-developing-office-solutions"></a>其他 Office 解决方案开发资源
   Visual Studio 中的 Microsoft Office 开发人员工具仅代表用于扩展 Office 应用程序的许多方法中的一种。 Office 应用程序还具有一些内置功能，如 Open XML 格式，这是 Visual Studio 中的 Office 开发人员工具所不提供的或本文档中未介绍的功能。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
  [通过 Visual Studio 博客进行 Office 开发](http://go.microsoft.com/fwlink/?LinkId=149748)  
  由创建 Visual Studio 的 Office 开发人员工具的 Microsoft 团队所维护的博客。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 解决方案错误的其他支持](../vsto/additional-support-for-errors-in-office-solutions.md)  
   
   

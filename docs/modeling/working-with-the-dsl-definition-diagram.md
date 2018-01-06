@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f8a60f9c4ca91ff9aac516d21b3a502a2898aff1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e2631a81cd907c6946993461f953a0bc1ddbf2ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定义图表
 关系图[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]定义是用于定义的域特定语言的一个重要工具。 你可以将元素添加到域模型并定义关系图上的关系，也可以修改关系图的布局以使其更具可读性。  
@@ -64,14 +65,14 @@ ms.lasthandoff: 10/27/2017
 ### <a name="expandcollapse-inheritance-tree"></a>展开/折叠继承树  
  如果域类是其他域类的基类，则可以通过右键单击域类定义，然后单击隐藏继承树**折叠继承树**。 若要显示的继承树，右键单击定义元素，然后单击**展开继承树**。  
   
-### <a name="bring-tree-here"></a>将树放在此处  
+### <a name="bring-tree-here"></a>Bring Tree Here  
  你可以通过右键单击一个占位符域类，然后单击合并关系图**此处使树**。 该占位符域类将成为定义元素并显示继承和关系树。 如果前一个定义元素是关系的目标元素或继承关系中的子元素，则它将成为占位符元素；否则，它将消失。  
   
-### <a name="split-tree"></a>拆分树  
+### <a name="split-tree"></a>Split Tree  
  可以通过右键单击显示它们的域类定义，然后单击来细分继承或关系的树**拆分树**。 该定义元素将成为占位符元素，并且定义域类连同其继承和关系树现在都可显示在分区底部。  
   
-### <a name="show-as-class"></a>显示为类  
+### <a name="show-as-class"></a>Show As Class  
  如果域关系包含派生关系，或如果它具有与其他域关系的嵌入或引用关系，你可以显示的关系为类通过右键单击关系，然后单击**显示为类**. 将与显示关系**域属性**隔离舱，将显示继承和关系树。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

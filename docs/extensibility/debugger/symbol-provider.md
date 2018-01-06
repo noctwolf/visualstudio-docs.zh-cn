@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f845e18bbd4c06d5652571ec83270a80d31ec852
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e0f01e10050fcbdb5cf27390464ae6b8b3e62d64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-provider"></a>符号提供程序
 表达式计算器实现必须访问才能计算变量与表达式由语言编译器生成的符号调试信息。 它通过使用的接口符号提供程序 (SP)，也称为符号处理程序来执行此操作。  
@@ -31,5 +32,5 @@ ms.lasthandoff: 10/31/2017
   
  如果你 SP 将仅使用你自定义调试引擎，你可以实现 SP，根据你的具体取决于你的调试引擎的需求。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器组件](../../extensibility/debugger/debugger-components.md)

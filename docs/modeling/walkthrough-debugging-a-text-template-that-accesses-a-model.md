@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2943b49571077ac1cab87db5ecc4d0f82390273e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1a8255180a3a5313f0a1c14b17ba10c885c10abc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>演练：调试访问模型的文本模板
 当你修改或域特定语言解决方案中添加文本模板时时引擎转换模板源代码或在编译生成的代码时, 可能会收到错误。 下面的演练演示的一些操作可以执行操作来调试文本模板。  

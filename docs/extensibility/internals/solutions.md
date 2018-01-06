@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b4bc84546daaa6e2404707b6663aa65e8309870
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75298d8fa2ede5db06bef624eeb385785c416747
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solutions"></a>解决方案
 解决方案是协同工作以创建应用程序的一个或多个项目中的分组。 适用于解决方案的项目和状态信息存储在两个解决方案文件、 基于文本的解决方案 (.sln) 文件和二进制解决方案用户选项 (.suo) 文件。  

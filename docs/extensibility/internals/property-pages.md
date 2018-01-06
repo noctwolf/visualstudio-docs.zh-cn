@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 484d53315f836117b69270a2f43b6b780733b9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cedf021321b66c47690450823a7da92cd19888eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-pages"></a>属性页
 用户可以查看和更改项目依赖于配置和-独立属性使用属性页。 A**属性页**在中启用按钮**属性**窗口或对象，它提供所选对象的属性页面视图的解决方案资源管理器工具栏上。 属性页由环境，可用于解决方案和项目。 它们，但是，也可以是可进行的项目项使用的配置相关的属性。 在项目中的文件需要不同的编译器生成正确的交换机设置时，可能会使用此功能。  
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
      实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A>方法来检索的项目层次结构和项目项或选择的项。 从 DTE，将使用`SelectedItems.SelectedItem.Project`和`SelectedItems.SelectedItem.ProjectItem`方法。 没有在核心中这些标题下的示例代码[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]文档。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>   
  [管理配置选项](../../extensibility/internals/managing-configuration-options.md)   
  [项目配置对象](../../extensibility/internals/project-configuration-object.md)   

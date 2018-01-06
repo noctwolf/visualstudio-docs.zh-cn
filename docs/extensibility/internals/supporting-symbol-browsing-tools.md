@@ -22,11 +22,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b9e9963b43e6ca2049337fdfdf76b0a1314ae32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 78a4e910dbd2c6063f4bdf7b0dff3f27f79b218e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支持符号浏览工具
 **对象浏览器**，**类视图**，**调用浏览器**和**查找符号结果**工具提供了一些符号浏览 Visual Studio 中的功能。 这些工具显示的符号的分层树视图，并显示在树中的符号之间的关系。 符号可能代表命名空间、 对象、 类、 类成员和各种组件中包含其他语言元素。 这些组件包括 Visual Studio 项目中，外部[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]组件和类型 (.tlb) 库。 有关详细信息，请参阅[查看代码的结构](../../ide/viewing-the-structure-of-code.md)。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  若要实现本机代码的符号提供程序，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 注册与对象管理器的库](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [如何： 公开的库提供给对象管理器中的符号列表](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
  [如何：识别库中的符号](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

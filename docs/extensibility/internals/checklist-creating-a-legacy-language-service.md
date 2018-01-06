@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c06d246f7467e19969075537f321061463d1755
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b09176efca3a8839d5e6a741a1e161ff61cdc7ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>清单： 创建旧语言服务
 以下清单汇总了你必须接受以创建语言服务有关的基本步骤[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]核心编辑器。 若要将集成到你语言服务[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，必须创建调试表达式计算器。 有关详细信息，请参阅[编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)中[Visual Studio 调试器扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)。  
@@ -126,6 +127,6 @@ ms.lasthandoff: 10/31/2017
   
  通过实现提供所有的用户上下文<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发旧语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4c676c28b955fac29db5a961f3b566600bcf318
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: vssdk
+ms.openlocfilehash: 7c15956bc861f9eb20267dc97446cf5ea49cae31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 帮助查看器 SDK
 本文包含以下任务，以便 Visual Studio 帮助查看器集成商：  
@@ -439,12 +440,12 @@ Branding.xml 文件包含用于一致地呈现一个主题中的特定项，当�
 |-|-|  
 |功能：|**CollapsibleArea**|  
 |使用:|展开折叠内容控件文本|  
-|**元素**|**值**|  
+|**元素**|**“值”**|  
 |ExpandText|Expand|  
 |CollapseText|折叠|  
 |功能：|**CodeSnippet**|  
 |使用:|代码段控件文本。  注意： 具有"非中断"空间的代码段内容将更改为空间中。|  
-|**元素**|**值**|  
+|**元素**|**“值”**|  
 |CopyToClipboard|复制到剪贴板|  
 |ViewColorizedText|着色的视图|  
 |CombinedVBTabDisplayLanguage|Visual Basic （示例）|  
@@ -461,7 +462,7 @@ Branding.xml 文件包含用于一致地呈现一个主题中的特定项，当�
 |LogoFileNameHC|vs_logo_wh.gif|  
 |功能：|**免责声明**|  
 |使用:|一组的事例特定免责声明机转换内容。|  
-|**元素**|**值**|  
+|**元素**|**“值”**|  
 |MT_Editable|此文章是由機器翻譯。 如果你有 Internet 连接，选择"查看此主题联机"若要在同一时间在与原始的英语内容的可编辑模式下查看此页。|  
 |MT_NonEditable|此文章是由機器翻譯。 如果你有 Internet 连接，选择"查看此主题联机"若要在同一时间在与原始的英语内容的可编辑模式下查看此页。|  
 |MT_QualityEditable|本文已手动转换。 如果你有 Internet 连接，选择"查看此主题联机"若要在同一时间在与原始的英语内容的可编辑模式下查看此页。|  
@@ -470,14 +471,14 @@ Branding.xml 文件包含用于一致地呈现一个主题中的特定项，当�
 |MT_BetaRecycledContents|本文已手动转换为预发布版本。 如果你有 Internet 连接，选择"查看此主题联机"若要在同一时间在与原始的英语内容的可编辑模式下查看此页。|  
 |功能：|**LinkTable**|  
 |使用:|有关联机主题的链接的支持|  
-|**元素**|**值**|  
+|**元素**|**“值”**|  
 |LinkTableTitle|链接表|  
 |TopicEnuLinkText|查看的英语版本 \< /a > 可在你的计算机本主题。|  
 |TopicOnlineLinkText|查看本主题\<href ="{0}"{1} > online \< /a >|  
 |OnlineText|Online|  
 |功能：|**视频音频控件**|  
 |使用:|显示元素和视频内容的文本|  
-|**元素**|**值**|  
+|**元素**|**“值”**|  
 |MultiMediaNotSupported|必须安装 Internet Explorer 9 或更高版本，以支持 {0} 内容。|  
 |VideoText|显示视频|  
 |AudioText|流式处理音频|  
@@ -485,25 +486,25 @@ Branding.xml 文件包含用于一致地呈现一个主题中的特定项，当�
 |OnlineAudioLinkText|\<p > 要收听音频与本主题相关联，请单击 {0}\<href ="\ {1 \}"> {2}here\</a >。\</ p >|  
 |功能：|**未安装的内容控件**|  
 |使用:|使用 contentnotinstalled.htm 在呈现的文本元素 （字符串）|  
-|**元素**|**值**|  
+|**元素**|**“值”**|  
 |ContentNotInstalledTitle|你的计算机上不发现了任何内容。|  
 |ContentNotInstalledDownloadContentText|\<p > 若要将内容下载到你的计算机， \<href ="{0}"{1} > 单击管理选项卡\</a >。\</ p >|  
 |ContentNotInstalledText|\<p > 在计算机上安装任何内容。 请参阅您的管理员以本地帮助内容安装。 \< /p >|  
 |功能：|**主题找不到控件**|  
 |使用:|使用 topicnotfound.htm 在呈现的文本元素 （字符串）|  
-|**元素**|**值**|  
+|**元素**|**“值”**|  
 |TopicNotFoundTitle|在你的计算机上找不到请求的主题。|  
 |TopicNotFoundViewOnlineText|\<p > 你的计算机上找不到您请求的主题，但你可以\<href ="{0}"{1} > 查看联机主题\</a >。\</ p >|  
 |TopicNotFoundDownloadContentText|\<p > 请参阅类似主题的链接的导航窗格或\<href ="{0}"{1} > 单击管理选项卡\</a > 以将内容下载到你的计算机。\</ p >|  
 |TopicNotFoundText|\<p > 你的计算机上找不到您请求的主题。 \< /p >|  
 |功能：|**主题损坏控件**|  
 |使用:|使用 topiccorrupted.htm 在呈现的文本元素 （字符串）|  
-|**元素**|**值**|  
+|**元素**|**“值”**|  
 |TopicCorruptedTitle|无法显示请求的主题。|  
 |TopicCorruptedViewOnlineText|\<p > 帮助查看器无法显示请求的主题。 可能有中主题的内容或的基础系统依赖关系的错误。 \< /p >|  
 |功能：|**主页上的控件**|  
 |使用:|支持帮助查看器的顶级节点内容的显示的文本。|  
-|**元素**|**值**|  
+|**元素**|**“值”**|  
 |HomePageTitle|帮助查看器主页|  
 |HomePageIntroduction|\<p > 欢迎使用 Microsoft Help Viewer，为每个用户使用 Microsoft 工具、 产品、 技术和服务的信息的基本源。 帮助查看器访问你的操作说明和参考信息、 代码示例、 技术文章和的详细信息。 若要查找所需浏览内容的表的内容，使用的全文搜索，或使用关键字的索引的内容中导航。 \< /p >|  
 |HomePageContentInstallText|\<p >\<br / > 使用\<href ="{0}"{1} > 管理内容\</a > 选项卡以执行以下操作：\<u l >\<li > 将内容添加到你的计算机。\</ l i / >\<li > 检查你的本地内容的更新。\</ l i / >\<li > 从你的计算机中删除内容。\</ l i / >\<u l > \< /p >|  
@@ -519,7 +520,7 @@ Branding.js 文件包含由 Visual Studio 帮助查看器品牌元素的 JavaScr
   
 ||||  
 |-|-|-|  
-|**品牌功能**|**JavaScript 函数**|**描述**|  
+|**品牌功能**|**JavaScript 函数**|**说明**|  
 |Var...||定义变量|  
 |获取用户代码的语言|setUserPreferenceLang|映射索引 # 为代码的语言|  
 |设置和获取 cookie 值|getCookie setCookie||  

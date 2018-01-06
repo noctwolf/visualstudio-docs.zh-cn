@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 09e96719bd7d9a2091bf31dc343036f0312c02fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-integration-essentials"></a>Essentials 源控件的集成
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支持两种类型的源代码管理集成： 提供基本功能，并使用源控件插件 API （前称 MSSCCI API） 和一个基于 VSPackage 的源控制集成解决方案生成了源代码管理插件，提供更强大的功能。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
  有关详细信息，请参阅[创建源控件 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [概述](../../extensibility/internals/source-control-integration-overview.md)   
  [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [创建源代码管理 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)

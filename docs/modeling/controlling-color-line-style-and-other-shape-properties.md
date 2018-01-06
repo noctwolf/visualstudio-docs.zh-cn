@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1d2ed7170189ad48474a7cf8422386b6198ccc9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1c8b5f31af8c3adf0b51fbf6623b7956ec8cc12f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>控制颜色、线型和其他形状属性
 某些形状属性如颜色可以公开-即，链接到形状的域属性。 其他需要直接控制。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/27/2017
  形状现在具有一个域属性，你可以在程序代码中或作为用户设置。  
   
 ## <a name="dynamically-updating-an-exposed-property"></a>动态更新公开的属性  
- 通常，你想要公开的属性依赖于另一个属性。 例如，你可能想小于零的某个形状将特定域属性时变为红色。 若要使此依赖关系，创建[规则](../modeling/rules-propagate-changes-within-the-model.md)。 例如:   
+ 通常，你想要公开的属性依赖于另一个属性。 例如，你可能想小于零的某个形状将特定域属性时变为红色。 若要使此依赖关系，创建[规则](../modeling/rules-propagate-changes-within-the-model.md)。 例如:  
   
 ```csharp  
 using System;  

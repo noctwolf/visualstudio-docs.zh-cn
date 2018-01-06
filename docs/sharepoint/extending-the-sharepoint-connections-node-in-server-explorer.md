@@ -19,11 +19,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3cf332197227e2055b322bce3658cde66dc48f90
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe9fb4a12d45cf5d713fb76fe3fe04e1346a8355
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-sharepoint-connections-node-in-server-explorer"></a>扩展服务器资源管理器中的“SharePoint 连接”节点
   在 Visual Studio 中，你可以连接到开发计算机上的本地 SharePoint 站点使用**SharePoint 连接**中的节点**服务器资源管理器**窗口。 此节点显示许多本地 SharePoint 站点组件在分层树视图中。 例如，你可以在本地站点上查看的列表、 文档库和内容类型。 有关使用**服务器资源管理器**若要连接到本地 SharePoint 站点，请参阅[浏览 SharePoint 连接使用服务器资源管理器](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
  有关使用<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>属性，请参阅[关联与 SharePoint 工具扩展的自定义数据](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 扩展服务器资源管理器以显示 Web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [如何： 扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [如何： 向服务器资源管理器中添加自定义 SharePoint 节点](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   

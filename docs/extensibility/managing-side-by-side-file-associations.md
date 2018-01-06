@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfb3bcca8c56ebefa665e44384df0751e71f6591
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d0a6f8ec88a49b785b771aef51dc25b5646ffda
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-side-by-side-file-associations"></a>管理并排显示文件关联
 如果你的 VSPackage 提供的文件关联，你必须决定如何处理在其中通过并行安装的特定版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]应被调用来打开文件。 文件格式不兼容复合问题。  
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/31/2017
   
 -   提供配置选项的页面或对话框框中，从而让用户选择文件关联，并回收丢失的关联。 指示用户卸载后运行它。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [注册-并排部署的文件扩展名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [注册文件扩展名的谓词](../extensibility/registering-verbs-for-file-name-extensions.md)

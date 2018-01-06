@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4207903fdd0f9a1462460d7f7cb2704e70e08df6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b91f9dc00b9130f2c239bd3254f78376bc0fdf3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="nesting-projects"></a>嵌套项目
 企业应用程序开发人员使用 VS 包可以方便地进行分组相似类型的项目中合并在一起[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*项目嵌套*。 例如，企业级模板项目到类别中使用嵌套的项目与组项目。 商业外观项目、 Web UI 项目，依次类推组合在一起一个类别中。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  ![嵌套项目解决方案](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
 嵌套的项目示例  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 实现嵌套的项目](../../extensibility/internals/how-to-implement-nested-projects.md)   
  [卸载和重新加载嵌套项目时的注意事项](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
  [嵌套的项目的向导支持](../../extensibility/internals/wizard-support-for-nested-projects.md)   

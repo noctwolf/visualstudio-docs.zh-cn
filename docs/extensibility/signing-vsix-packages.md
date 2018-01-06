@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5a27b4e76e0cd8f986441778ed39c7fbb5a2211
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec875e6877b1c3ff1edf38b29c5e72b757021085
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="signing-vsix-packages"></a>签名 VSIX 包
 扩展程序集不需要他们可以运行在 Visual Studio 中，但它是作为最佳做法，这样做之前进行签名。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  将你的 VSIX 添加到项目。  
   
-2.  右键单击解决方案资源管理器中的项目节点选择**添加 &#124;管理 NuGet 包**。  有关 NuGet 和添加 NuGet 包，请参阅详细信息请参阅[NuGet 文档](http://docs.microsoft.com/NuGet)和[包管理器 UI](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI)主题。  
+2.  右键单击解决方案资源管理器中的项目节点选择**添加 &#124;管理 NuGet 包**。  有关 NuGet 和添加 NuGet 包，请参阅详细信息请参阅[NuGet 文档](/NuGet)和[包管理器 UI](/NuGet/Tools/Package-Manager-UI)主题。  
   
 3.  从 VisualStudioExtensibility VSIXSignTool 搜索并安装 NuGet 包。  
   
@@ -49,5 +50,5 @@ ms.lasthandoff: 10/31/2017
   
  VSIXSignTool.exe 登录 /f \<certfile >/p\<密码 > \<VSIXfile >  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)

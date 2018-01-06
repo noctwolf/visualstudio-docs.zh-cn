@@ -9,15 +9,16 @@ dev_langs: visual-basic
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.openlocfilehash: e1d86e5a4f363a39283d32778144a1c0a7c50f23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 8478f4f7cd3bc342f19b84a085b1889405ca6676
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="great-migrations-studio-gmstudio"></a>极佳迁移 Studio (gmStudio)
 
-gmStudio 是重新设计用来开发可伸缩、 自定义 VB6/ASP/COM 向.NET 升级解决方案环境的唯一系统。 作为改造平台全面软件，gmStudio 可帮助你规划、 自定义、 提高，验证，并跟踪你升级过程和满足你的源代码和.NET 标准的独特要求。  如果你希望保留并增强 VB6/ASP/COM 资产的值，则 gmStudio 是最高级且经济高效的解决方案可用。 
+gmStudio 是一个独特的系统重建环境，用于面向 .NET 升级解决方案开发可扩展的自定义 VB6/ASP/COM。 作为一个功能完备的软件重建平台，gmStudio 可帮助用户规划、自定义、改进、验证和跟踪升级过程，并满足源代码和 .NET 标准的独特要求。  如果你希望保留并增强 VB6/ASP/COM 资产的值，则 gmStudio 是最高级且经济高效的解决方案可用。 
 
 ## <a name="the-tool-assisted-rewrite"></a>辅助工具的重写
 

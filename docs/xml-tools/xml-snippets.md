@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4f53c8d55011f52a3ed6ecf6fa4fab77855a9ec3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 88ccba516a0bce6e3413bf14d38d32baf68d8274
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-snippets"></a>XML 代码片断
 XML 编辑器提供了一个实用工具，调用*XML 代码段*，这样，你更快地生成 XML 文件。 XML 代码段可以通过插入文件反复使用。 您还可以根据 XML 架构定义语言 (XSD) 架构生成 XML 数据。  
@@ -52,5 +53,5 @@ XML 编辑器提供了一个实用工具，调用*XML 代码段*，这样，你�
   
  有关详细信息，请参阅[如何： 创建 XML 代码段](../xml-tools/how-to-create-xml-snippets.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [XML 编辑器](../xml-tools/xml-editor.md)

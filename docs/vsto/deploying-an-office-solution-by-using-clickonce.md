@@ -18,16 +18,17 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ae3fceb52e0a99ee87a12a650333b3bc8cf1420
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0076eea1fa8866ad90bf4125583ed8359916de4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 解决方案
   如果使用 ClickOnce，则部署 Office 解决方案的步骤更少。 如果发布更新，解决方案将自动检测并安装更新。 不过，ClickOnce 需要你分别为计算机的每个用户安装解决方案。 因此，如果有多个用户将在同一计算机上运行你的解决方案，应考虑使用 Windows Installer (.msi)。  
   
-## <a name="in-this-topic"></a>主题内容  
+## <a name="in-this-topic"></a>在本主题中  
   
 -   [发布解决方案](#Publish)  
   
@@ -460,7 +461,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  仅为解决方案的一个早期版本保存本地数据。 如果回滚两个版本，不保留本地数据。 有关本地数据的详细信息，请参阅[访问本地数据和 ClickOnce 应用程序中的远程数据](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [发布 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   

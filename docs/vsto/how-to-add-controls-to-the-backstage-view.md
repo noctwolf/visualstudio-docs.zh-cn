@@ -25,11 +25,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a16c564b39afdc2ec3cf3e15883fc05b2a13f5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: add11e32bfdac58d0fc2f057a1ce72e0aece3c7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何：向 Backstage 视图添加控件
   你可以使用功能区设计器将控件添加到当单击打开菜单**文件**选项运行该应用程序，你将添加到的控件时**文件**选项卡会显示一个名为组**外接程序**。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  拖动控件以将它们移动到新位置中，在菜单上。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [功能区概述](../vsto/ribbon-overview.md)   
  [功能区设计器](../vsto/ribbon-designer.md)   
  [功能区 XML](../vsto/ribbon-xml.md)   

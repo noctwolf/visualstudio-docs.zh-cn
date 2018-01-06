@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-of-a-legacy-language-service"></a>旧语言服务模型
 语言服务定义的元素和特定语言的功能，用于提供对该语言的特定信息的编辑器。 例如，编辑器需要知道的元素和语言关键字，才能支持语法突出显示。  
@@ -50,5 +51,5 @@ ms.lasthandoff: 10/31/2017
 |文本管理器|由<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>服务，无法获取的其中<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>指针|维护由前面所述的所有组件共享的通用信息的组件。|  
 |语言服务|依赖于; 实现实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|一个对象，提供特定于语言的信息，如语法突出显示、 语句完成和大括号匹配的编辑器。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义编辑器中的文档数据和文档视图](../../extensibility/document-data-and-document-view-in-custom-editors.md)

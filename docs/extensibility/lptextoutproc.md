@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86c8cce3abf16d7236acdd5ec468b06fdb46f997
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9fb212d7908d32bc9d9d14d7e8f4786089bc5f89
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 当用户执行从在集成的开发环境 (IDE) 的源代码管理操作时，源代码管理插件可能想要传达与操作相关的错误或状态消息。 该插件可以为此目的中显示其自己的消息框。 但是，对于多个无缝集成，插件可以将字符串传递到 IDE，然后将其显示在其本机的显示状态信息的方式。 此机制是`LPTEXTOUTPROC`函数指针。 IDE 实现此函数用于显示错误和状态 （在下面更详细地介绍）。  
@@ -47,7 +48,7 @@ typedef LONG (*LPTEXTOUTPROC) (
  mesg_type  
  消息的类型。 下表列出了此参数支持的值。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|信息、 警告或错误，则认为消息。|  
 |`SCC_MSG_STATUS`|消息显示状态，并且可以在状态栏中显示。|  
@@ -61,7 +62,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="return-value"></a>返回值  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_MSG_RTN_OK|显示字符串，或操作已成功完成。|  
 |SCC_MSG_RTN_CANCEL|用户想要取消该操作。|  
@@ -139,6 +140,6 @@ LONG SendStatusMessage(
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [由 IDE 实现的回调函数](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [源代码管理插件](../extensibility/source-control-plug-ins.md)

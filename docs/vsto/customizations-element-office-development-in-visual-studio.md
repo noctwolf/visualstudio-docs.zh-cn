@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90268fed6f70f97c87bc1a09376aa93c1fda3106
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6d26ede37f64a95e62ff15152ff69be22ccb1ce4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;自定义项&gt;元素 （Visual Studio 中的 Office 开发）
   `customizations` 命名空间的 `vstov4` 元素包括有关安装和加载各个 Office 解决方案的所有信息。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
  `customizations` 元素具有以下子元素。  
   
 ### <a name="customization"></a>自定义  
- 必需。 `customization`中的元素`vstov4`中定义命名空间[&#60; 自定义 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/customization-element-office-development-in-visual-studio.md).  
+ 必须的。 `customization`中的元素`vstov4`中定义命名空间[&#60; 自定义 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="example-of-a-document-level-customization"></a>文档级自定义项示例  
   
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
 </vstov4:customizations>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  

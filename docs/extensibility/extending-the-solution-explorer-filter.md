@@ -15,16 +15,17 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f34f19d41f3d624c57cc6c92d51b5c19ddb2137
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: afcaef724b5fc5f8270e5126e91d421f2e15b946
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-solution-explorer-filter"></a>扩展的解决方案资源管理器筛选器
 你可以扩展**解决方案资源管理器**筛选功能，以显示或隐藏不同的文件。 例如，可以创建显示仅 C# 类工厂中的文件的筛选器**解决方案资源管理器**，如本演练中所示。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ### <a name="create-a-visual-studio-package-project"></a>创建 Visual Studio 包项目  

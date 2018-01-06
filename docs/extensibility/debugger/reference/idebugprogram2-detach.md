@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d916bf047471e506166610882313d66177448fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f159260a5fd4ae1892a0282cbeba0615b492d604
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
 分离的程序的调试引擎。  
@@ -41,5 +42,5 @@ int Detach();
 ## <a name="remarks"></a>备注  
  分离的程序继续运行，但它不再是调试会话的一部分。 没有更多的程序调试事件发送后分离的调试引擎。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

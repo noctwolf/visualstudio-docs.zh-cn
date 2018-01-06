@@ -12,11 +12,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc30e3236f81f558f3794bb459f6da3edbdaa63d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 065d5b16e99ce7c1356f710ab2a6cc42bbd6cde4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>演练： 创建使用 c + + 的 SDK
 本演练演示如何创建一个本机 c + + 的数学库 SDK，包的 SDK 作为 Visual Studio 扩展 (VSIX)，并使用它来创建应用。 本演练分为以下步骤：  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [若要创建的示例应用程序使用类库](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
 ##  <a name="createClassLibrary"></a>若要创建的本机和 Windows 运行时库  
@@ -180,6 +181,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="next-steps"></a>后续步骤  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 创建使用 C# 或 Visual Basic 的 SDK](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [获取软件开发工具包](../extensibility/creating-a-software-development-kit.md)

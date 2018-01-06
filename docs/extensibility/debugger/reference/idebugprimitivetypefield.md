@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 817f788c90eea9d52d5579aa7f2d6a73ea129eb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e18b62d8d655729e47a2616d8a5eae9dae19e76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 表示一个基元类型枚举值从[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)接口。  
@@ -35,7 +36,7 @@ IDebugPrimitiveTypeField : IDebugField
 |------------|-----------------|  
 |[GetPrimitiveType](../../../extensibility/debugger/reference/idebugprimitivetypefield-getprimitivetype.md)|检索与此字段相关的基元类型。|  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： Sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

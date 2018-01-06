@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 36d8f6afebf09d4efd176ba204dcc6f485a56124
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d967cec28a50948a9577336b886376b9cfe0040
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-property-user-interface"></a>项目属性用户界面
 项目子类型可以在项目中使用的项**属性页**对话框中提供基本的项目中，隐藏或记只读控件和整个页面，因为提供，或将项目子类型特定页添加到**属性页**对话框。  
@@ -58,6 +59,6 @@ ms.lasthandoff: 10/31/2017
   
  新添加的项目子类型的属性页的基本项目实现从系统会向项目配置浏览对象。 此项目配置浏览对象支持自动化扩展程序。 AutomationExtenders 的详细信息，请参阅[实现和使用自动化扩展程序](http://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356)。 由项目子类型调用实现的属性页<xref:EnvDTE.Project.Extender%2A>检索扩展的基本项目的配置浏览对象自己项目子类型配置浏览对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:EnvDTE.IFilterProperties>   
  [属性页对话框中](http://msdn.microsoft.com/en-us/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)

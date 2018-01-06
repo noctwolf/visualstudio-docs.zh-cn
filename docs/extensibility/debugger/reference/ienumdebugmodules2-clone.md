@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cbeb94a2cbdfbbe04893ed491287057639d3949d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4ec6c6f14824357da9f8a0d1ae9dd74c9124a377
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 返回当前枚举作为一个单独的对象的副本。  
@@ -47,5 +48,5 @@ int Clone(
 ## <a name="remarks"></a>备注  
  枚举的副本都在调用此方法时具有与原始相同的状态。 但是，则副本和原始的状态独立，并且可以单独更改。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

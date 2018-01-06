@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 734d61b4fade0775c5e017a85fa5364779bc567b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 10afe84716153b67c419f4ddbd1a7b838b68cbf9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 函数
 此函数打开现有的源代码管理项目，或创建一个新。  
@@ -70,7 +71,7 @@ SCCRTN SccOpenProject (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|打开项目的成功。|  
 |SCC_E_INITIALIZEFAILED|无法初始化项目。|  
@@ -106,7 +107,7 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  `SCC_CAP_REENTRANT`源控件插件 API 版本 1.1 中引入了位。 其未设置或版本 1.0，在将被忽略，并且所有版本 1.0 源控件插件都被都认为是 nonreentrant。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccCloseProject](../extensibility/scccloseproject-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)   

@@ -18,17 +18,18 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14432de4519ed49292810af5f96399bbf87e43cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0710bad95484ada62faa042edabf5b76ac459558
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>如何： 在 Visual Studio 中调试时切换到另一个线程
 调试多线程应用程序时，你可以使用几种方法之一从你一直在处理到另一个线程的线程切换。
 
 > [!NOTE]
-> 如果你想要控制执行线程的顺序，则需要[冻结和解冻线程](/debugger/get-started-debugging-multithreaded-apps.md)。
+> 如果你想要控制执行线程的顺序，则需要[冻结和解冻线程](../debugger/get-started-debugging-multithreaded-apps.md)。
 
 当你检查在代码编辑器和不同的多线程调试窗口中的线程时，黄色箭头指示当前线程。 一个带有卷尾的绿色箭头指示非当前线程具有当前调试器上下文。
   
@@ -48,5 +49,5 @@ ms.lasthandoff: 10/31/2017
   
 2.  在列表中，单击要切换到的线程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f09ab8a948011cdc53516ec21f0d213852166956
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 43d9c59beaddfc6992e7b9e16e0e778be2a6d30f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>自动格式设置在旧语言服务
 使用自动格式设置语言服务会自动插入代码段时用户开始键入已知的代码构造。  
@@ -27,5 +28,5 @@ ms.lasthandoff: 10/31/2017
   
  有关语言服务的其余部分使用的命令筛选器还可以用于自动格式设置。 此外可以突出匹配的大括号显示通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发旧版语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)

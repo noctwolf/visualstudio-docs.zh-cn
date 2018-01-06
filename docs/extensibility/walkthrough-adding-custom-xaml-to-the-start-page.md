@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 924a6e2640002bc47eb75c903c46b5a170a9c308
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 65875823e2bc6e09eb0439a267a9c25acada87fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>演练： 将自定义 XAML 添加到开始页
 本演练演示如何创建自定义 Visual Studio 起始页，其中包含 Web 浏览器。  
@@ -91,6 +92,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="next-steps"></a>后续步骤  
  Visual Studio 起始页现在包含一个 Web 浏览器选项卡和 MyButton 选项卡上显示的选项卡。你可以创建通过使用具有其他功能的自定义起始页*代码隐藏*模型中所示添加自定义的.dll，[将用户控件添加到起始页](../extensibility/adding-user-control-to-the-start-page.md)。 通过发布到生成的.vsix 文件，可以与其他用户共享自定义起始页[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)网站，或到另一个网站或网络共享。 有关详细信息，请参阅[部署自定义起始页](../extensibility/deploying-custom-start-pages.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)   
  [WPF 容器控件](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)

@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 91421fbfa5474c54b15109a1d0aec6de61369713
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d868e69a1c7bbeeb7c25deb78acf90fe36af2e2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office 解决方案演练中的数据
   下列演练演示了如何将文档级自定义项和 VSTO 外接程序中的数据用于 Microsoft Office Word 和 Microsoft Office Excel。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
  [演练：更改服务器上的工作簿中的缓存数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
  演示如何修改 Microsoft Office Excel 工作簿中缓存的数据集而不启动 Excel。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Word 的演练](../vsto/walkthroughs-using-word.md)   
  [使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)   
  [Office UI 自定义演练](../vsto/office-ui-customization-walkthroughs.md)   

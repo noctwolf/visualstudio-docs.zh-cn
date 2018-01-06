@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f2cbcb6e6239552ae32c817601634587a2fe3a41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75d714399f851aa479f398064e576790c793fffa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>通过使用打开文件命令显示文件
 以下步骤描述了 IDE 如何处理**打开的文件**命令，可在找到**文件**菜单中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步骤还介绍项目应如何响应来自此命令的调用。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  然后，该项目包含通过使用特定于项目的编辑器或标准编辑器打开文件的选项。 有关详细信息，请参阅[如何： 打开项目特定编辑器](../../extensibility/how-to-open-project-specific-editors.md)和[如何： 打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)分别。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [通过使用命令打开显示文件](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)   
  [如何： 打开项目特定编辑器](../../extensibility/how-to-open-project-specific-editors.md)   

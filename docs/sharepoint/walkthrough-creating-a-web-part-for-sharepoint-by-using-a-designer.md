@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55da85b9740216cefe55911d79dab2c16b035695
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 602515daedec99bbcfa3efd58469de5d8ba3df7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>演练：使用设计器为 SharePoint 创建 Web 部件
   如果你创建 web 部件的 SharePoint 站点，你的用户可以直接修改内容、 外观和行为的该站点中的页通过使用浏览器。 本演练演示如何通过使用 SharePoint 直观地创建 web 部件**可视 Web 部件**中的项目模板[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  你的计算机可能出现以下说明中的不同名称或 for Visual Studio 用户界面的某些元素的位置。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   受支持的 Windows 和 SharePoint 的版本。 请参阅[开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -198,7 +199,7 @@ ms.lasthandoff: 10/31/2017
   
      从你指定的所有日历事件出现在每月的日历视图。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [为 SharePoint 创建 Web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [如何： 创建 SharePoint Web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
  [如何： 使用设计器创建 SharePoint Web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   

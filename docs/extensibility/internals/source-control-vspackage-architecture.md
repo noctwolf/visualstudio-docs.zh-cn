@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 80153e271fed6a7fab49e00c8124f1ede7613bfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 002dea54b63a78975d56464319614d369a9b2318
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-vspackage-architecture"></a>源控件 VSPackage 体系结构
 源代码管理包是使用 VSPackage 服务[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 提供。 反过来，源代码管理包提供其功能作为源控件服务。 此外，源代码管理包是一个更通用的替代方案，比了源代码管理集成到源代码管理插件[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
   
  编写基于 VSPackage 的源代码管理包需要更高级编程的专业知识不仅仅编写基于源控制插件 API 的插件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   
  [入门](../../extensibility/internals/getting-started-with-source-control-vspackages.md)

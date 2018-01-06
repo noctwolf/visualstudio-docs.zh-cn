@@ -17,11 +17,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c26b0e9b9f02cdf2aac68c2deb42980f42a7b5e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8ec6641859653d9f16137353ee2571006ae592c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>在旧语言服务中的语法着色
 语法着色是使不同的一种编程语言中的源文件中不同颜色和样式显示元素的功能。 若要支持此功能，则需要提供分析器或可以识别的词法元素或文件中的标记类型的扫描程序。 许多语言区分关键字、 分隔符 （如括号或大括号），以及注释通过不同的方式对它们进行着色。  
@@ -147,7 +148,7 @@ namespace TestLanguagePackage
         }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [旧语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [旧语言服务分析器和扫描程序](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)   
  [注册旧语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)

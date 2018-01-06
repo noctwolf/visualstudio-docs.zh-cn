@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a68df6ecfbf4c511922ae89f67e9323a245432d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 986cf8cd6051a08948fb633168792d127cddc5b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 开发示例和演练
   本部分包含示例应用程序、 示例代码和说明语法、 结构和技术用于生成 SharePoint 解决方案的分步演练。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
 |[SharePoint 开发示例](../sharepoint/sharepoint-development-samples.md)|描述示例应用程序演示如何使用 Visual Studio 中的 SharePoint 开发工具。|  
 |[SharePoint 开发演练](../sharepoint/sharepoint-development-walkthroughs.md)|列出介绍 Visual Studio 中的 SharePoint 开发工具的分步指南。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建 SharePoint 解决方案](../sharepoint/create-sharepoint-solutions.md)  
   
   

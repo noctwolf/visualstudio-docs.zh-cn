@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd693d56011173564650c0abbd2d5d73492d335d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74a2fac33ed9e464dd6a54e5a63f46a6cd29a0d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manifest-to-code"></a>代码清单
 代码工具清单是一个控制台应用程序，它为 Visual Studio 映像服务接受.imagemanifest 文件并生成包装文件或文件引用 c + +、 C#、 VB 或 Visual Studio 扩展的.vsct 文件中的图像清单的值。 此工具会生成可用于请求映像从 Visual Studio 映像服务直接，或用于通过 Api 的清单值传递，如果代码不处理任何其自己的 UI 和呈现的包装器文件。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
 ||||  
 |-|-|-|  
-|**交换机名称**|**注意**|**必需或可选**|  
+|**交换机名称**|**备注**|**必需或可选**|  
 |/manifest|图像清单要用于创建或更新代码包装的路径。|必需|  
 |/language|所使用的语言生成代码包装。<br /><br /> 有效值： CPP、 c + +、 CS、 CSharp、 C#、 VB 或 VSCT 值不区分大小写。<br /><br /> VSCT 语言将忽略选项、 /monikerClass、 /classAccess 和 /namespace 选项。|必需|  
 |/imageIdClass|ImageIdClass 和关联的工具创建的文件的名称。 C + + 语言选项时，生成仅.h 文件。<br /><br /> 默认值：\<清单路径 > \MyImageIds。\<Lang Ext >|Optional|  

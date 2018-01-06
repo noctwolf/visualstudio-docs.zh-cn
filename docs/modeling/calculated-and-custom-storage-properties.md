@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0be1527c82264ef388eb01d3a06702c1c4bb4f7d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cf841cf70f092fb38adc42bfa6271c6c3aa121d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calculated-and-custom-storage-properties"></a>计算的和自定义的存储属性
 域特定语言 (DSL) 中的所有域属性可对用户在关系图上并在你语言资源管理器，显示，并可以由程序代码访问。 但是，其值将存储的方式不同属性。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/27/2017
     }  }  
     ```  
   
-8.  如果你设置**类型**到**自定义存储**，你还需要提供`Set`方法。 例如:   
+8.  如果你设置**类型**到**自定义存储**，你还需要提供`Set`方法。 例如:  
   
     ```  
     void SetAgeValue(int value)  
@@ -92,7 +93,7 @@ ms.lasthandoff: 10/27/2017
   
 -   但是，它应更新任何外部资源，如数据库或文件内容或 store 外的对象。 这将确保使它们保持在 synchronism 中存储的值。  
   
- 例如:   
+ 例如:  
   
 ```  
 void SetAgeValue(int value)  
@@ -109,7 +110,7 @@ void SetAgeValue(int value)
   
  有关事务的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [域属性的属性](../modeling/properties-of-domain-properties.md)   
  [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)

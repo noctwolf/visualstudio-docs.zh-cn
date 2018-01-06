@@ -19,11 +19,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 391964152c48601b11b10ce6d8001d2d303a9a01
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 27cd0f62c7670d56143180d24074e5c6002051f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange 控件
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件是仅当非重复架构元素映射到 Microsoft Office Excel 中的单元格上时，才创建一个范围。 例如，当`maxOccurs`属性的架构元素等于 1。 Visual Studio 创建的映射的 XML 范围后，你可以对其编程直接而无需遍历 Excel 对象模型。 你只能删除<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>中 Excel 时元素映射将会删除控件。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
  如果在绑定数据集中的数据通过任何机制进行了更新<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件会反映这些变化。  
   
-## <a name="formatting"></a>格式设置  
+## <a name="formatting"></a>格式化  
  你可以应用相同的格式<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件可以应用于<xref:Microsoft.Office.Interop.Excel.Range>。 这包括边框、字体、数字格式和样式。  
   
 ## <a name="events"></a>事件  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
   
 -   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)   
  [如何： 向工作表添加 XMLMappedRange 控件](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   

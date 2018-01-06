@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 171a31147aec5c0477d6a23e73dc0e66693b534d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 142e2a24f866db7e3ae20217b60b1ea0c201c749
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何添加用户界面元素
 VSPackage 可以添加用户界面 (UI) 元素，例如，菜单、 工具栏和工具窗口，到 Visual Studio 通过.vsct 文件。  
@@ -302,5 +303,5 @@ priority="0x0100" type="Menu">
   
 -   若要使某些用户界面元素在 IDE 中显示，必须实现一个或多个接口，或编写一些代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)

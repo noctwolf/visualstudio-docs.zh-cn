@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eabe4b81a4c6e92659e2b8f2752aaf641c0193ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bad0f751f6f772643f38d4f20b2765affd561fb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-locals"></a>评估局部变量
 > [!IMPORTANT]
@@ -192,7 +193,7 @@ HRESULT FieldGetPrimitiveValue(
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [局部变量的实现示例](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [获取本地值](../../extensibility/debugger/getting-local-values.md)   
  [计算上下文](../../extensibility/debugger/evaluation-context.md)

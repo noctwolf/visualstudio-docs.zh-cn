@@ -23,11 +23,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f90aeb03dd62d76064124e9870a5a4dbcd250621
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: deb63265b65a382132d3ef957ad67ddd1bccb438
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cached-data-in-document-level-customizations"></a>文档级自定义项中的缓存数据
   文档级自定义项的主要目标是将数据从 Office 文档中的视图。 数据是指存储在文档中，包括数字和文本的信息。 视图是指用户界面和 Microsoft Office Word 和 Microsoft Office Excel 的对象模型。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
 |您可以存储的数据类型？|在满足某些要求你自定义项程序集中任何公共对象。 有关更多信息，请参见 [Caching Data](../vsto/caching-data.md)。|任何 XML 数据。|  
 |是否可以访问数据而无需启动 Microsoft Office 应用程序？|是，通过使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>提供类[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。|是，通过使用中的类<xref:System.IO.Packaging>命名空间，或通过使用 Open XML 格式 SDK。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)   
  [Visual Studio 中 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
   

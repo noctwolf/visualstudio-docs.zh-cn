@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c12e300a3537d1927710b0a4c3550ec3f5fd762
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c971d4565c95cab23e683a1a4f20c75ebea81b8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>如何： 实现查找和替换机制
 Visual Studio 提供两种方法来实现查找/替换。 一种方法是将文本图像传递给命令行界面，并让它处理搜索、 突出显示，以及替换文本。 这样用户就可以指定多个文本范围。 或者，你的 VSPackage 可以控制此功能本身。 在这两种情况下必须通知有关的当前目标和所有打开的文档的目标 shell。  
@@ -34,7 +35,7 @@ Visual Studio 提供两种方法来实现查找/替换。 一种方法是将文�
   
 3.  如果你实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>方法，你可以通过调用来简化你搜索的任务<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper>接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>   

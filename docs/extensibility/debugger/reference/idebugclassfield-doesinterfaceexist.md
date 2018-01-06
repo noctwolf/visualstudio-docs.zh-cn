@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07a4760064003a45af55aa747192e044edca8e0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d0e4535417f80198f06cb6b4255fea209b701e8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 确定是否的类中定义特定接口。  
@@ -47,5 +48,5 @@ int DoesInterfaceExist(
 ## <a name="remarks"></a>备注  
  实际上，此方法获取的所有接口的枚举，搜索匹配的接口的列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

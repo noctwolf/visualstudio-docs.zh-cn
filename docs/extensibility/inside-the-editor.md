@@ -13,11 +13,12 @@ caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1876f334ad1b444b464ecc420767dea90baed6b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 585da54c691bda21a363dfe1308c6ed229a024ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inside-the-editor"></a>在编辑器内
 编辑器由组成大量的其他子系统，旨在使编辑器文本模型单独从文本视图和用户界面。  
@@ -287,6 +288,6 @@ P: ABCDEvwxyz
   
  语句结束提供的方法名称、 XML 元素和其他编码或标记元素的潜在完整内容的弹出列表。 一般情况下，用户手势调用完成会话。 会话显示的潜在完成列表和用户可以选择一个或关闭该列表。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>负责创建和触发<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>计算<xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet>会话完成项。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)   
  [编辑器导入](../extensibility/editor-imports.md)

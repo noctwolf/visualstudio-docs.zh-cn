@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e890145199fe864d2f7b5010495375bfbc6cc094
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ecbf5e3bed5ba506278f00b2b5b0b76f8f02850a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>演练： 自定义文本视图
 你可以通过修改其编辑器格式映射中的下列属性的任何自定义文本视图：  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
 -   可见空白  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-mef-project"></a>创建 MEF 项目  
@@ -93,5 +94,5 @@ ms.lasthandoff: 10/31/2017
   
 5.  打开可见空白。 (在**编辑**菜单上，指向**高级**，然后单击**查看空白**)。 键入文本中的某些选项卡。 应显示红色箭头表示选项卡。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

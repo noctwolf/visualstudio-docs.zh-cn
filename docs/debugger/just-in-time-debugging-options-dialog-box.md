@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.JIT
 - vs.debug.options.JIT
@@ -24,11 +24,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4648ecb0ce1b62256cdf2fe297c0d8cb4ccb17e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 057c5e0e37d8e84daa4348c91847a12b6a9ae5e9
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“实时”
 访问**中实时**页上，转到**工具**菜单，然后单击**选项**。 在**选项**对话框框中，展开**调试**节点，然后选择**中实时**。 使用该页，你可以为托管代码、本机代码和脚本启用实时调试。 有关详细信息，请参阅[实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)。  
@@ -58,6 +59,6 @@ ms.lasthandoff: 10/31/2017
   
  **访问被拒绝。具有管理员启用中实时调试，或修复 Visual Studio 的安装。**  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试，选项对话框](../debugger/debugging-options-dialog-box.md)   
  [如何：指定调试器设置](../debugger/how-to-specify-debugger-settings.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: b39d142a44a99cc0fde362249d5717ee75c09323
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bbf11e020380114f12de3c6b71960faf80791ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>演练：使用文本模板生成代码
 代码生成允许生成强类型化的程序代码，但可在源模型更改时轻松对其进行更改。 与之相比，另一种编写可接受配置文件的完全泛型程序的替代技术更灵活，但生成的代码既不易读取和更改，也没有这么好的性能。 本演练将演示这一优势。  
@@ -83,7 +84,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 ### <a name="create-or-open-a-c-project"></a>创建或打开 C# 项目  
  可以将此技术应用于任何代码项目。 本演练使用 C# 项目，出于测试目的，我们使用控制台应用程序。  
   
-##### <a name="to-create-the-project"></a>创建项目  
+##### <a name="to-create-the-project"></a>要创建项目  
   
 1.  在“文件”  菜单上，单击“新建”  ，然后单击“项目” 。  
   
@@ -107,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
  .  
   
 ### <a name="add-a-test-code-file"></a>添加测试代码文件  
- 将 C# 文件添加到项目，并在其中编写希望能够进行编写的代码示例。 例如：  
+ 将 C# 文件添加到项目，并在其中编写希望能够进行编写的代码示例。 例如:  
   
 ```  
 using System;  
@@ -156,7 +157,7 @@ namespace MyProject
     <#@ output extension=".cs" #>  
     ```  
   
- 。  
+ .  
   
  请注意，.cs 文件在解决方案资源管理器中显示为模板文件的附属文件。 可单击模板文件名称旁边的 [+] 进行查看。 只要保存或将焦点从模板文件移开，就会从模板文件生成此文件。 所生成的文件将编译为项目的一部分。  
   
@@ -419,6 +420,6 @@ namespace MyProject
 ## <a name="troubleshooting-the-text-template"></a>解决文本模板故障  
  若在“错误列表”中看到模板转换或编译错误，或者若未正确生成输出文件，可以借助[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技术解决文本模板的问题。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ae973b0a1fc30f0592f6cb2702df645708ab43f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c1c8757de9b63c3fed75ec7e2ef7f61c89e18226
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>部署、发布和升级 SharePoint 解决方案包
   开发 Visual Studio 中的 SharePoint 解决方案后，你可以将其包 (.wsp) 文件部署到本地 SharePoint 服务器，或将其发布到远程或本地 SharePoint 服务器。 如果将文件部署，你可以自定义部署的包文件 (.wsp) 的方式。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="upgrading-published-packages"></a>升级已发布的包  
  如果发布后，可对 Visual Studio 中的 SharePoint 项目中进行任何更改，必须升级发布的包，以包括所做的更改。 若要成功升级，包必须具有唯一的名称。 如果具有相同名称的包位于在 SharePoint 站点上-这可能发生在更新现有应用程序时的错误警报你的文件名称冲突，并允许您重命名包。 之后重新发布，新的包显示在 SharePoint 站点上，可以进行升级。 已升级的包使用的数据从较旧的包中，更新解决方案，然后激活 SharePoint 中的解决方案。 有关详细信息，请参阅[如何： 部署，发布，并在远程服务器上升级 SharePoint 解决方案](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

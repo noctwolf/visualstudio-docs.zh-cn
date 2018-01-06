@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a51359a840812bc20714df91a3357801366f3616
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 35b8821a76926da6ea9cab8ca61ef8f62e5ec72d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usedcommands-element"></a>UsedCommands 元素
 UsedCommands 元素分组 UsedCommand 元素和其他 UsedCommands 分组。  
@@ -66,6 +67,6 @@ UsedCommands 元素分组 UsedCommand 元素和其他 UsedCommands 分组。
 </UsedCommands>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [UsedCommand 元素](../extensibility/usedcommand-element.md)   
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

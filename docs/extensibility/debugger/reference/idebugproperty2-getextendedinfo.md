@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7456ebe1e28618270bd90f09186ec49814c62b66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2d3dfd2111533896db2a3b298ff294ff180d4a70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 获取扩展的属性的信息。  
@@ -54,7 +55,7 @@ int GetExtendedInfo (
   
  由 （的 GUID 值为指定 C# 因为名称不可用任何程序集中） 此方法通常识别以下 Guid。 供内部使用，可以创建其他的 Guid。  
   
-|名称|GUID|描述|  
+|name|GUID|描述|  
 |----------|----------|-----------------|  
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|返回`IUnknown`到文档的接口。 通常情况下， [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)接口可以获取从此`IUnknown`接口。|  
 |guidCodeContext|{e2fc65e-56ce-11 d 1-b528-00aax004a8797}|返回`IUnknown`到文档上下文的接口。 通常情况下， [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)接口可以获取从此`IUnknown`接口。|  
@@ -62,7 +63,7 @@ int GetExtendedInfo (
 |guidExtendedInfoSlot|{6df235ad-82c6-4292-9c97-7389770bc42f}|返回一个 32 位数字，表示所需的插槽数，如果此属性表示托管的代码的本地地址。|  
 |guidExtendedInfoSignature|{b5fb6d46-f805-417f-96a3-8ba737073ffd}|返回一个包含与属性对象相关联的变量的签名字符串。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: b4eb0abb91ee8cfb5e3406c6211ef5934b4db0ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 253f6292331bd3a67a5f57ab6a0936928dedcf77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="export-diagrams-as-images"></a>将关系图导出为图像
 在 Visual Studio 中，你可以保存建模图在只读格式中的，以便您可以与利益干系人、 用户或不使用相同版本的 Visual Studio 项目团队成员共享它们。  
@@ -44,6 +45,6 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)   
  [共享模型和导出关系图](../modeling/share-models-and-exporting-diagrams.md)

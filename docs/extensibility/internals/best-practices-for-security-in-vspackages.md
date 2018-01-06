@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 770dff4b531bf4a7347cb648ca4c930b28b79bea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 71f06fdd67e4f1789637c2d935f0d25a06eb9863
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>在 Vspackage 中的安全性的最佳做法
 若要安装[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]在计算机上，你必须在运行的管理凭据的上下文。 安全和部署的基本单位[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]应用程序是[Vspackage](../../extensibility/internals/vspackages.md)。 必须使用注册 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，这也要求管理凭据。  
@@ -33,6 +34,6 @@ ms.lasthandoff: 10/31/2017
   
  详细信息，请参阅.NET Framework 安全编码准则 ([http://msdn.microsoft.com/library/d55zzx87.aspx](http://msdn.microsoft.com/library/d55zzx87.aspx))。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [外接程序安全性](http://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)   
  [DDEX 安全](http://msdn.microsoft.com/en-us/44a52a70-5c98-450e-993d-4a3b32f69ba8)

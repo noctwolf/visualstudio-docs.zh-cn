@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d81a96b7eea9f19352ae8a1deeeeb73ba5dc089
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 63912603a888f3d2c45b8b08a7aba93af0694ab8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="providing-automation-for-vspackages"></a>提供 Vspackage 的自动化
 有两种主要方法，提供你的 Vspackage 的自动化： 通过实现特定于 VSPackage 的对象和通过实现标准的自动化对象。 通常情况下，这些一起用于扩展自动化模型的环境。  

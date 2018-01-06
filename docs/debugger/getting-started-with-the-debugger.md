@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>了解如何使用 Visual Studio 进行调试
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 12/15/2017
 
 |         |         |
 |---------|---------|
-| ![观看视频](../install/media/video-icon.png "WatchVideo") | [观看视频](#video)调试显示类似的步骤。 |
+|  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)调试显示类似的步骤。 |
 
 尽管演示应用程序是 C#，但功能都适用于 c + +、 Visual Basic、 JavaScript 和其他语言支持的 Visual Studio （除指明外）。
 
@@ -278,12 +279,6 @@ ms.lasthandoff: 12/15/2017
 3. 按 F5 以继续应用程序。
 
 若要了解有关调试器的功能的详细信息，请参阅[调试器提示和技巧](../debugger/debugger-tips-and-tricks.md)。
-
-## <a name="video"></a>观看视频调试
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
-</div>
 
 ## <a name="see-also"></a>请参阅
 

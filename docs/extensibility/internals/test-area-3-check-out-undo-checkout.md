@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74f2c8d5589eb4e8a3df9accdd85109e9858920d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8835f1f8c312b3aba72353625a1d97b514dc21b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>测试区域 3： 签出/撤消签出
 此源代码管理插件测试区域涉及通过版本存储中的编辑和恢复项目**签出**和**撤消签出**命令。  
@@ -136,5 +137,5 @@ ms.lasthandoff: 10/31/2017
 |向项目添加文件后撤消签出的一个项目|1.创建新项目并将其添加到源代码管理。<br />2.签出该项目。<br />3.将文件添加到项目。<br />4.撤消签出的项目。|从解决方案资源管理器中的项目中删除添加的文件。<br /><br /> 项目不再签出。|  
 |从项目中删除文件后撤消签出的一个项目|1.创建新项目并将其添加到源代码管理。<br />2.签出该项目。<br />3.从项目中删除文件。<br />4.撤消签出的项目。|已删除的文件将出现在解决方案资源管理器中的项目下。<br /><br /> 项目不再签出。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

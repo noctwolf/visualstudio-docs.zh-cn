@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a16698863e92e5bbae4e888502788dd76b04f56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>将项添加到添加新项对话框
 将项添加到的过程**添加新项**对话框开头的注册表项。 下列注册表项中所示，AddItemTemplates 部分包含的路径和名称在中可用的项中的目录**添加新项**放对话框。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
  "SortPriority"= dword:00000064  
   
-|名称|类型|数据 （来自.rgs file)|描述|  
+|name|类型|数据 （来自.rgs file)|描述|  
 |----------|----------|-----------------------------|-----------------|  
 |@ （默认值）|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY %|资源 ID**添加项**模板。|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\SomeProjectItems|在对话框中显示的项目项路径**添加新项**向导。|  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
   
  如果你实现此筛选器功能，你不需要映射应隐藏的每个项的表。 你只需对项进行分类为类型并置于.vsdir 文件或文件的分类。 然后您可以隐藏所有通过实现该接口具有特定分类的项。 在这种方式，可以进行中的项**添加新项**对话框框中动态基于项目中的状态。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)   
  [通常用于扩展项目的对象的 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   

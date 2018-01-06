@@ -14,11 +14,12 @@ caps.latest.revision: "74"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fd49e497844c85482780c925ef94bc2c422cd80a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0eb95bdd83780aa000ea6e3c696c24e319dcd4fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>演练：创建自定义指令处理器
 *指令处理器*工作通过将代码添加到*生成转换类*。 如果调用*指令*从*文本模板*，文本模板中编写的代码的其余部分可以依赖于该指令提供的功能。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/27/2017
   
 -   测试指令处理器  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  若要完成此演练，您需要：  
   
 -   Visual Studio 2010  
@@ -635,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  在本节中，将在注册表中的该位置为自定义指令处理器添加一个项。  
   
 > [!CAUTION]
->  错误编辑注册表会严重损坏系统。 更改注册表之前，应备份计算机中的所有重要数据。  
+>  注册表编辑不当可能会严重损坏系统。 更改注册表之前，应备份计算机中的所有重要数据。  
   
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>为指令处理器添加注册表项  
   
@@ -658,7 +659,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
   
      注册表项应具有以下值：  
   
-    |名称|类型|数据|  
+    |name|类型|数据|  
     |----------|----------|----------|  
     |(默认)|REG_SZ|(未设置值)|  
     |类|REG_SZ|CustomDP.CustomDirectiveProcessor|  
@@ -666,11 +667,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
   
      如果已将程序集放置在 GAC 中，则值应如下所示：  
   
-    |名称|类型|数据|  
+    |name|类型|数据|  
     |----------|----------|----------|  
     |(默认)|REG_SZ|(未设置值)|  
     |类|REG_SZ|CustomDP.CustomDirectiveProcessor|  
-    |程序集|REG_SZ|CustomDP.dll|  
+    |Assembly|REG_SZ|CustomDP.dll|  
   
 6.  重新启动 Visual Studio。  
   

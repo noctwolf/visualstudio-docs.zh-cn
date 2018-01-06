@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 300f0553ee081dee8adc34ab48ce1989fc86e6c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5ecc39025ce92cf2b2d230b6690ad1b7bc5896ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 获取本身的端口的进程 ID。  
@@ -47,5 +48,5 @@ int GetPortProcessId (
 ## <a name="remarks"></a>备注  
  Win32 运行时中例如，此方法通常调用 Win32 函数`GetCurrentProcessId`来获取物理进程 id。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

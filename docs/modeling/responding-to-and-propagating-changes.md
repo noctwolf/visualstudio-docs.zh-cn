@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7ea11c018f210b804f4ea6542eb7a7817ae1507c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cebfaa79e2524dcd6ba862ec55467acc9e5cd316
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="responding-to-and-propagating-changes"></a>响应并传播更改
 元素是创建、 删除或更新时，你可以编写传播的更改的其他部分的模型，或对外部资源，如文件、 数据库或其他组件的代码。  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/27/2017
   
 -   **传递给规则和事件的事件自变量**这两个事件和传递规则`EventArgs`参数，其中包含有关如何信息的模型更改。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 截获点击形状或修饰器](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
  [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

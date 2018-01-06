@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf34a3fe708a6ecab200262224da395b9fa37ecb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd45ebf8be2732cded5c84f18338f104b76840cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>卸载和重新加载嵌套项目时的注意事项
 当实现嵌套的项目类型时，你必须卸载并重新加载项目时执行附加步骤。 若要正确通知解决方案事件侦听器，必须正确提升`OnBeforeUnloadProject`和`OnAfterLoadProject`事件。  
@@ -33,6 +34,6 @@ ms.lasthandoff: 10/31/2017
   
  若要处理此过程中，父项目调用`QueryInterface`上<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents>接口关闭<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution>接口。 `IVsFireSolutionEvents`提供一些功能，告知 IDE 引发`OnBeforeUnloadProject`事件来卸载嵌套的项目，然后引发`OnAfterLoadProject`事件重新加载相同的项目。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   
  [嵌套项目](../../extensibility/internals/nesting-projects.md)

@@ -11,11 +11,12 @@ ms.assetid: a63d6407-5acb-4d5f-8c0e-ecedddc07177
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 574a1a41464ede08571e1c0201618d666fa7ad92
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3607e646f5f1ccc6121e5ee8a5b71772008f1ce8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inline-a-temporary-variable-in-visual-basic"></a>内联在 Visual Basic 中的临时变量
 **新增功能：**可删除临时变量的用途，并将其替换为实际的代码。
@@ -40,5 +41,5 @@ ms.lasthandoff: 10/31/2017
 
    ![内联结果](media/inline_result.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [重构 (Visual Basic)](../refactoring-vb.md)

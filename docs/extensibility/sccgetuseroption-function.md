@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebd59cfada6064d40fe48df3cba4eaac3c3293b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c23e1fd5614963d8f52edc019e99287187fd9a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函数
 此函数可检索各种特定于用户的选项。  
@@ -46,7 +47,7 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功检索选项。|  
 |SCC_E_OPNOTSUPPORTED|不支持选项。|  
@@ -59,6 +60,6 @@ SCCRTN SccGetUserOption(
 |-----------------|-----------------|  
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|确定用户是否要签出的文件的本地版本。 `lpVal`分配`SCC_USEROPT_COLV_YES`（用户想要签出本地文件） 或`SCC_USEROPT_COLV_NO`。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [错误代码](../extensibility/error-codes.md)

@@ -13,16 +13,17 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f503d9e8b0ef125fdb72ea60a9928f308b900993
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 15dd5f0121fca86a38631bf775ec25d4428632e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-outlining"></a>演练： 大纲显示
 你可以实现基于语言的功能，例如通过定义类型的文本区域，你想要展开或折叠大纲显示。 你可以定义区域语言服务上下文中或可以定义你自己的文件名称扩展和内容类型，还可以将区域定义应用于仅该类型，或可以将区域定义应用于现有内容类型 （如"text")。 本演练演示如何定义和显示大纲区域。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>创建 Managed Extensibility Framework (MEF) 项目  
@@ -133,5 +134,5 @@ ms.lasthandoff: 10/31/2017
   
 4.  应包括这两个大括号的大纲区域。 应该可以通过单击左侧的左大括号负号，若要折叠的大纲区域。 当区域处于折叠状态，省略号 （...） 应该显示折叠的地区和弹出项包含文本的左侧**将鼠标悬停文本**将指针移省略号时应显示。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

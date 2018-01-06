@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efe08d9e23f1a77fd68df2bdba4389e7b7955b11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 158340ad82829338bb39709573ce9e025332341a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新的项目生成： 实质上，第一部分
 有没有想过有关如何创建你自己的项目类型？ 想要知道什么实际发生时创建新项目？ 让我们了解一下实质上的，请参阅什么现状。  
@@ -91,7 +92,7 @@ devenv /installvstemplates
  优先级，越低数越高在树中的位置。  
   
 ##### <a name="developeractivity"></a>DeveloperActivity  
- 此子项是否存在，然后由开发人员设置对话框中控制根节点的位置。 例如，  
+ 此子项是否存在，然后由开发人员设置对话框中控制根节点的位置。 例如，应用于对象的  
   
  DeveloperActivity REG_SZ VC #  
   
@@ -215,5 +216,5 @@ devenv /installvstemplates
   
  **MyProjectNode**显示为一个子节点的 Visual C# Windows 节点的正下方。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [生成新项目：揭秘，第 2 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

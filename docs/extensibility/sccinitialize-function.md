@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e688d30d2367236cfcf5b2d14b36eb602832fc0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6bf217218dcc1830cc2acf2833aa7e31e85745d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 函数
 此函数初始化源代码管理插件，并提供功能和集成的开发环境 (IDE) 的限制。  
@@ -66,7 +67,7 @@ SCCRTN SccInitialize (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|源控件初始化成功。|  
 |SCC_E_INITIALIZEFAILED|无法初始化系统。|  
@@ -84,7 +85,7 @@ SCCRTN SccInitialize (
   
  `lpSccCaps`参数给出源代码管理插件一个位置来存储 bitflags，该值指示即插即用接程序的功能。 (有关功能 bitflags 的完整列表，请参阅[功能标志](../extensibility/capability-flags.md))。 例如，如果将结果写入到一个调用方提供的回调函数，该插件会设置功能的插件计划位 SCC_CAP_TEXTOUT。 这将指示 IDE 以为版本控制结果创建窗口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccUninitialize](../extensibility/sccuninitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   

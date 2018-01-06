@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 586f087e4c0cbd087bd06d7dc54a524b09ae21c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 77bd698149ca4e73b462fc3ada9256ba5911177e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-menu-commands"></a>本地化菜单命令
 你可以提供本地化的文本的菜单和工具栏通过创建本地化的.vsct 文件的命令和本地化以及你的 VSPackage，然后更新项目文件的更改合并的.resx 文件。  
@@ -156,7 +157,7 @@ ms.lasthandoff: 10/31/2017
   
      这将创建一个主要的程序集，并为每种语言的资源程序集。 本地化的部署过程的信息，请参阅[本地化 VSIX 包](../extensibility/localizing-vsix-packages.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)   
  [MenuCommands 与OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)   
  [对应用程序进行全球化和本地化](../ide/globalizing-and-localizing-applications.md)

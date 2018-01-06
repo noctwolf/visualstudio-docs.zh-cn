@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73524ce47dfea2d30e44e51e97bf584a95a86482
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ad7870fcec07db3d4d529b856bc0e2f18006e819
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>截获旧语言服务命令
 与[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，你可以将否则处理文本视图语言服务截距命令。 这可用于文本视图不管理的特定于语言的行为。 可以通过将一个或多个命令筛选器添加到文本视图中，从你的语言服务截获这些命令。  

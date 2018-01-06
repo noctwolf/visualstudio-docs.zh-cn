@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e85ad4c4027a27b33f2f96284df80f852ffe3b85
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e1463fe22d4b08933112ca1ad0cf28f38a4e102c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-routing-algorithm"></a>命令路由算法
 在 Visual Studio 中的许多不同组件的处理命令。 命令将从最内部的上下文，基于当前所选内容，路由到最外层的 （也称为全局） 上下文。 有关详细信息，请参阅[可用性](../../extensibility/internals/command-availability.md)。  
@@ -45,5 +46,5 @@ ms.lasthandoff: 10/31/2017
   
 8.  全局： 如果尚未由前面所述的上下文处理命令，Visual Studio 尝试将它路由到拥有命令实现的 VSPackage<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口。 如果 VSPackage 未已加载，它时不会加载 Visual Studio 会调用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法。 VSPackage 加载时，才<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>调用方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [命令设计](../../extensibility/internals/command-design.md)

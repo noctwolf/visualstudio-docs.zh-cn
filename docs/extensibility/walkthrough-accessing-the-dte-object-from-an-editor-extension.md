@@ -13,16 +13,17 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 77732f1f5620e0d0a637938668ae232f7bb83edf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: af14fa5f9a76e08a1fba3355e9391ce8229bd652
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>演练： 从编辑器扩展访问 DTE 对象
 在 Vspackage 中，可以 DTE 对象获取通过调用<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>与 DTE 对象类型的方法。 在 Managed Extensibility Framework (MEF) 扩展中，你可以导入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>，然后调用<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>具有一种方法<xref:EnvDTE.DTE>。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
 ## <a name="getting-the-dte-object"></a>获取该 DTE 对象  
@@ -65,5 +66,5 @@ ms.lasthandoff: 10/31/2017
   
 6.  如果你需要使用<xref:EnvDTE80.DTE2>接口，可以强制转换为它的 DTE 对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

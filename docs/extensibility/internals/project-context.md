@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 368f6ecb67bc8b01df975da6e68e95b553a0e31d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 99f073e7f27fc98c1c751ae8153adfeea0018e2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-context"></a>项目上下文
 当用户将添加或适用于项目和项目项时，IDE 将使用项目上下文的概念来确定应执行各种操作。  
@@ -28,6 +29,6 @@ ms.lasthandoff: 10/31/2017
   
  在其他情况下，项的项目上下文未显式指定。 例如，项的上下文时不可用的用户通过选择打开的文件**打开现有文件**命令**文件**时调试器的运行上一个文件，或当用户单击菜单**在文件中查找**命令**查找和替换**对话框。 若要处理这些情况下，在 IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>管理查找最佳的项目来打开的文档的过程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项目优先级](../../extensibility/internals/project-priority.md)   
  [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)

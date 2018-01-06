@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41ad173f706b655f4d43a101618127070ae9ac6e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e007080f7c959b3667a95890babc819c6bba17f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 设置的调试引擎 (DE) 的区域设置。  
@@ -47,5 +48,5 @@ int SetLocale(
 ## <a name="remarks"></a>备注  
  会话调试管理器 (SDM)，以便正确本地化字符串由 DE 传播 IDE 的区域设置调用此方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

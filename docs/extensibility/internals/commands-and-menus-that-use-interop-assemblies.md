@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee9fa1faa52afb2ea6d8154b4767fcab2cee0981
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d89b698a97d1793b3c5255966d9eca35ec1b78f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>命令和使用互操作程序集的菜单
 实现菜单和工具栏命令的方法是使用互操作程序集的 VSPackage 必须：  

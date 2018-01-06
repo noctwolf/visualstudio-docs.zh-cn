@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 018f843e9e62430c780df1d3d15f06634a31908d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa6c15c59a025f4b031765b620083b7b3369c7c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 获取派生程度最大引用的引用。 留待将来使用。  
@@ -47,5 +48,5 @@ int GetDerivedMostReference(
 ## <a name="remarks"></a>备注  
  例如，如果此属性描述实现的对象`ClassRoot`但这是实际的实例化`ClassDerived`、 派生自`ClassRoot`，则此方法返回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象表示对引用`ClassDerived`对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

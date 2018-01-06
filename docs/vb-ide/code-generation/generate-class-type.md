@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: VB
-ms.openlocfilehash: 1524d2899d8c775a20943d2695065bfe36885a25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0a900b912c1a15c61dc17164571c1284743581c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-visual-basic"></a>在 Visual Basic 中生成的类或类型
 **新增功能：**便会立即生成的类或类型的代码。 
@@ -61,14 +62,14 @@ ms.lasthandoff: 10/31/2017
    --- | ---
    Access | 将类型设置为具有*默认*，*内部*或*公共*访问。
    类型 | 这可以设置为*类*或*结构*。
-   名称 | 这不能更改，将已键入的名称。
-   Project | 如果你的解决方案中有多个项目，你可以选择想类/结构生存。
+   name | 这不能更改，将已键入的名称。
+   项目 | 如果你的解决方案中有多个项目，你可以选择想类/结构生存。
    文件名 | 可以创建新文件，也可以将类型添加到现有文件。
 
 1. 类/结构将使用从用法推断构造函数自动创建。
 
    ![生成类结果](media/class_result.png)
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [代码生成 (Visual Basic)](../code-generation-vb.md)  
 [预览更改](../../ide/preview-changes.md)

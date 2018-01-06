@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f5da476bb9b54b536cb296112d578574822e410
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7058c0b93cd0ff4afb2a13b625cd7ef034b03699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="drop-down-bar"></a>下拉栏
 下拉栏提供在代码窗口顶部，包含两个下拉列表。  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="attaching-a-drop-down-bar-to-a-code-window"></a>附加到代码窗口的下拉栏  
  若要附加下拉栏到代码窗口中，创建时，语言服务应该附加到下拉栏时<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>调用方法。 如果调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A>方法指示下拉栏不已不存在，然后调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.AddDropdownBar%2A>。 访问<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>界面，请调用<xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A>从<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>指针返回到你时你<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>实现已附加。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [通过使用旧版 API 的自定义代码窗口](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)   
  [旧版语言服务中的导航栏支持](../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)

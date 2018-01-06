@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: faf46489be0b9a56485fc93c2138a7f6702c4778
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7ced5627420f5ac90da2cae1a2930dbd0b973dbc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-project-output-reference"></a>如何：添加项目输出引用
   若要部署到 SharePoint 的非 SharePoint 项目程序集 （或在 Silverlight 项目中的.xap 文件），请将它们添加为项目输出引用。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  选择箭头旁边**项目名称**，选择非 SharePoint 项目项的名称，然后选择**确定**按钮。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [提供打包和部署在项目项中的信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [如何： 将控件标记为安全控件](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

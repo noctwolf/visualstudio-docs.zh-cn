@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a7d8649e0d8cf83650da58386901e638ec14a2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 16de0e205d71e2a71b14f523dedbb45354157355
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>演练： 将用户设置保存在起始页上
 为你的起始页，可以保留用户设置。 通过完成本演练，你可以创建将设置保存到注册表中，当用户单击按钮时，，然后检索，将设置的每次加载起始页的控件。 因为起始页项目模板包含一个可自定义用户控件，并且默认起始页 XAML 将调用该控件，你无需修改启动页本身。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
   
  有关如何保存设置的详细信息，请参阅[扩展用户设置和选项](../extensibility/extending-user-settings-and-options.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
   
 > [!NOTE]
 >  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
@@ -175,7 +176,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  在**环境**节点，单击**启动**，然后在**自定义起始页**列表中，选择**[已安装的扩展] 保存我设置起始页**.  
   
-     单击“确定”。  
+     单击 **“确定”**。  
   
 4.  关闭处于打开状态，，然后，在启动页**视图**菜单上，单击**起始页**。  
   
@@ -202,6 +203,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="next-steps"></a>后续步骤  
  你可以修改此用户控制选项可保存和检索通过使用从不同的事件处理程序的不同值获取和设置的任意数量的自定义设置`SettingsStore`属性。 只要你使用不同`propertyName`每次调用的参数<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A>，值将不会覆盖彼此的注册表中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:EnvDTE80.DTE2?displayProperty=fullName>     
  [将 Visual Studio 命令添加到起始页](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

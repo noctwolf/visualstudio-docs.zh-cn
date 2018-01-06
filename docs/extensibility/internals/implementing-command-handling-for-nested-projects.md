@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a71da10ee4473f3fb542e0ce0e03891d60b75d34
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e4ed9efab34a51bdfaacea1773a33637437b2ced
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>实现处理嵌套的项目的命令
 IDE 将通过传递的命令可以传递<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口向嵌套的项目或父项目可以筛选或重写命令。  
@@ -53,7 +54,7 @@ IDE 将通过传递的命令可以传递<xref:Microsoft.VisualStudio.Shell.Inter
   
      父项目不需要将命令传送到子项目。 IDE 执行此任务...  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
  [命令、 菜单和工具栏](../../extensibility/internals/commands-menus-and-toolbars.md)   
  [嵌套项目](../../extensibility/internals/nesting-projects.md)

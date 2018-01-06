@@ -13,11 +13,12 @@ caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f30c28b7255769be97ba6063e7c1ce435dfbe9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d37956c01cbbebbe29d7506cf5eacd9456b3bbc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-search-to-a-tool-window"></a>添加到工具窗口搜索
 当创建或更新你的扩展中的工具窗口时，可以在 Visual Studio 中添加其他位置出现的相同的搜索功能。 此功能包括以下功能：  

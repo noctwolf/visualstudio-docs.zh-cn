@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c90f7cec454cc6562e2cd20e2da64cfe86e243f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f20e5d251d8d6ef31289fb1b9ee8b9420ff9146a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="single-and-multi-tab-views"></a>单个和多选项卡的视图
 编辑器可以创建不同类型的视图。 另一种是窗体设计器，一个示例是一个代码编辑器窗口。  
@@ -114,7 +115,7 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [支持多个文档视图](../extensibility/supporting-multiple-document-views.md)   
  [如何： 附加文档数据的视图](../extensibility/how-to-attach-views-to-document-data.md)   
  [创建自定义编辑器和设计器](../extensibility/creating-custom-editors-and-designers.md)

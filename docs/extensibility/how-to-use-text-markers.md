@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1070a88f1bae27b9ff10fedbf6a383ec30c1ed0e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f5c5c2686bee9850da72c00e044952b15bed9c58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-text-markers"></a>如何： 使用文本标记
 文本标记可以用于编辑<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>对象。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]环境调用的方法提供的接口，如<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A>方法，或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>方法根据需要。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用文本标记用于旧 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
  [如何： 创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   

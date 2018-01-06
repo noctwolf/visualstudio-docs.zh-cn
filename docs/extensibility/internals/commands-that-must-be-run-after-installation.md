@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4fef2c76364c1ca1398aef3b94226e7a9a365cf1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ff4b1e572fd1e0c5c500fbd756d01063665bd1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必须在安装后运行的命令
 如果通过.msi 文件部署你的扩展，则必须运行`devenv /setup`中对 Visual Studio 来发现你的扩展的顺序对安装的一部分。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>要查找来自不同版本的 Visual Studio 的 devenv.exe 的 RegLocator 表行  
   
-|Signature_|根|键|名称|类型|  
+|Signature_|根|键|name|类型|  
 |-----------------|----------|---------|----------|----------|  
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|  
@@ -82,5 +83,5 @@ ms.lasthandoff: 10/31/2017
 |CA_RunDevenv2005|DEVENV_EXE_2005|6605|  
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Windows Installer 安装 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20abad6a195d8493be8849588b86035d03fdc654
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 73f5c55b39d855eb084206ef27e2254d50377b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccget-function"></a>SccGet 函数
 此函数可检索用于查看和编译但不能用于编辑的一个或多个文件的副本。 在大多数系统中，文件被标记为只读的。  
@@ -58,7 +59,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|Get 操作成功与否。|  
 |SCC_E_FILENOTCONTROLLED|文件不是在源代码管理下。|  
@@ -101,6 +102,6 @@ SCCRTN SccGet(
   
     6.  现在可以检查更新的 b.txt 文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [特定命令使用的位标志](../extensibility/bitflags-used-by-specific-commands.md)

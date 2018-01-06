@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15248c2ed4ebca289421576bc6d59776cb0d6298
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1fc34c363fb62a8cf2a6d902a6e897886627e508
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何： 公开的库提供给对象管理器中的符号列表
 符号浏览工具中，**类视图**，**对象浏览器**，**调用浏览器**和**查找符号结果**，将为新数据传送到请求传递[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器。 对象管理器查找合适的库，并请求新的符号的列表。 通过提供请求的数据到响应库[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>接口。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>接口获取数据，并使用它来填充或更新符号浏览工具的视图。  
@@ -469,7 +470,7 @@ ms.lasthandoff: 10/31/2017
   
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [如何： 注册与对象管理器的库](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [如何： 标识库中的符号](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   

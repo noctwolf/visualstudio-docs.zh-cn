@@ -19,11 +19,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd24d18df965535ee1315ae7807ac23723dc51d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 96d69ccb51be632440474bb0aa1b32e6ebe7a68a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-documents-on-a-server-by-using-the-serverdocument-class"></a>Managing Documents on a Server by Using the ServerDocument Class
   你可以使用 ServerDocument 类中的[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]管理几个方面的文档级自定义项，即使未安装 Microsoft Office Word 和 Microsoft Office Excel。 你可以执行以下任务：  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
 |若要在运行时以编程方式删除文档中的自定义项。<br /><br /> 有关详细信息，请参阅[如何： 从文档中删除托管代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> 方法。|  
 |若要获取的部署清单的与文档相关联的 URL。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> 属性。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 将托管的代码扩展附加到文档](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
  [如何： 从文档中删除托管的代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bae6ff23763300a4baa748479c609217123c765c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 37da15cce48bd16e022db42fa8a08a2b9633b5fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>演练：在运行时在 VSTO 外接程序项目中向工作表中添加控件
   可通过使用 Excel VSTO 外接程序向任何打开的工作表添加控件。 本演练演示如何利用功能区使用户能够向工作表添加 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.ListObject>。 有关信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
@@ -74,23 +75,23 @@ ms.lasthandoff: 10/31/2017
   
 5.  在 **“属性”** 窗口中，更改下列属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**Button**|  
+    |**名称**|**Button**|  
     |**标签**|**Button**|  
   
 6.  将第二个复选框添加到 **group1**，然后更改下列属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**NamedRange**|  
+    |**名称**|**NamedRange**|  
     |**标签**|**NamedRange**|  
   
 7.  添加到一个第三个复选框**group1**，然后将更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
-    |**Name**|**ListObject**|  
+    |**名称**|**ListObject**|  
     |**标签**|**ListObject**|  
   
 ## <a name="adding-controls-to-the-worksheet"></a>向工作表添加控件  
@@ -190,7 +191,7 @@ ms.lasthandoff: 10/31/2017
   
 -   若要了解有关如何将控件保存到工作表，请参阅 Excel VSTO 外接程序动态控件示例在[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Excel 解决方案](../vsto/excel-solutions.md)   
  [Windows 窗体上的控件 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   

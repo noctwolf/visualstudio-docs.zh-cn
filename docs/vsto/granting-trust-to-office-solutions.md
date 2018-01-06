@@ -20,11 +20,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da7f4695bc817a66761c579b4c5af85b59ee041f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8d4e1e92eab8def99a67b7da531770bb2dd58fc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="granting-trust-to-office-solutions"></a>向 Office 解决方案授予信任
   向 Office 解决方案授予信任信任意味着修改每个目标计算机以信任解决方案程序集、 应用程序清单、 部署清单和文档的安全策略。 由您或最终用户，可以向 Office 解决方案授予信任。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
  管理员可以禁用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示或需要仅对使用验证码证书进行签名的解决方案出现提示。 有关如何更改这些设置为 MyComputer、 LocalIntranet、 Internet、 TrustedSites，和 UntrustedSites 区域的详细信息，请参阅[如何： 配置 ClickOnce 信任提示行为](/visualstudio/deployment/how-to-configure-the-clickonce-trust-prompt-behavior)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)   
  [向文档授予信任](../vsto/granting-trust-to-documents.md)   
  [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)   

@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 65c67972dddedcd05338d793883b2dcba0789d48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d5692195f340ce347df0bc6f8ad2d60225f24e6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>如何：设置 SharePoint 部署命令
   通过设置预先部署脚本和后期部署命令，你可以自定义部署过程。 调试从 Visual Studio 的 SharePoint 解决方案时，这些命令运行之前和之后的其他部署操作。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
      例如，若要列出目录内容部署完成后，输入**dir**。 若要使用 MSBuild 变量的程序集复制从生成目录，输入**复制 $ （targetpath) c:\DeploymentDirectory**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

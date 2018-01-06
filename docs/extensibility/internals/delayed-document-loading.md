@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 794eccaf59b65044840d459bbde2e17eab8684a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e69ee994f434e122894989d82b97ea79e4bd995c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="delayed-document-loading"></a>延迟文档加载
 当用户重新打开 Visual Studio 解决方案时，不会立即加载大部分关联的文档。 文档窗口框架将创建处于挂起的初始化状态，并占位符文档 （称为存根 （stub） 帧） 被放在正在运行文档表 (RDT)。  

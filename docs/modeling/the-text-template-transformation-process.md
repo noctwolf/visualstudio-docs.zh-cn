@@ -12,11 +12,12 @@ caps.latest.revision: "30"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: cc7794959f36134b85fe7d05acf07998312f9361
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 69f0285746709bd34914362912332d46731179c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-text-template-transformation-process"></a>文本模板转换过程
 文本模板转换过程使用文本模板文件作为输入并生成新的文本文件，并作为输出。 例如，你可以使用文本模板生成 Visual Basic 或 C# 代码，或者可以生成 HTML 报告。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/27/2017
   
 |组件|描述|可自定义 （是/否）|  
 |---------------|-----------------|------------------------------|  
-|引擎|引擎组件控制文本模板转换过程|不可以。|  
+|引擎|引擎组件控制文本模板转换过程|不是。|  
 |Host|宿主为引擎和用户环境之间的接口。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]是文本转换过程的主机。|可以。 你可以编写自定义主机。|  
 |指令处理器|指令处理器是处理指令文本模板中的类。 你可以使用指令向文本模板提供的输入源数据。|可以。 你可以编写自定义指令处理器|  
   

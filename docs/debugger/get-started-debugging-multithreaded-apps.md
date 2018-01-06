@@ -20,18 +20,19 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86ffd65cf0ebe19a9f3c1f42c24fc365536be661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9b3fd00e849a54fc926054e1f7e0d97b2907cf02
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>开始调试 Visual Studio 中的多线程应用程序
 Visual Studio 提供的若干工具和用户界面元素，以帮助你调试多线程应用程序。 本教程演示如何使用线程标记**并行堆栈**窗口中，**并行监视**窗口中，条件断点，并筛选器断点。 本教程只需几分钟，但完成它将使您熟悉用于调试多线程应用程序的功能。
 
 |         |         |
 |---------|---------|
-| ![观看视频](../install/media/video-icon.png "WatchVideo") | [观看视频](#video)上展示类似的步骤的多线程调试。 |
+|  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171)上展示类似的步骤的多线程调试。 |
 
 其他主题提供有关使用其他多线程调试工具的其他信息：
 
@@ -53,7 +54,7 @@ Visual Studio 提供的若干工具和用户界面元素，以帮助你调试多
   
 4.  在**名称**框中，键入名称 MyThreadWalkthroughApp。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
      新的控制台项目随即显示。 创建该项目后，将显示源文件。 具体取决于你选择的语言，源文件可能 Program.cs、 MyThreadWalkthroughApp.cpp 或 Module1.vb 调用。  
   
@@ -373,18 +374,12 @@ Visual Studio 提供的若干工具和用户界面元素，以帮助你调试多
 
 - 若要切换到另一个线程，请参阅[How to： 切换到另一个线程中调试时](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
 
-## <a name="video"></a>观看视频多线程调试
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171" frameborder="0" allowfullscreen></iframe>
-</div>
-
 #### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>若要了解有关并行堆栈和并行监视窗口  
   
 - 请参阅[如何： 使用并行堆栈窗口](../debugger/using-the-parallel-stacks-window.md) 
 
 - 请参阅[如何： 使用并行监视窗口](../debugger/how-to-use-the-parallel-watch-window.md) 
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在调试时切换到另一个线程](../debugger/how-to-switch-to-another-thread-while-debugging.md)

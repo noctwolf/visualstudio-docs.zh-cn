@@ -13,16 +13,17 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4a7d122f19e21eebbe5bd598272fb7cb9f52b27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3dde61c10d0a8c9fc5578b02cc713f648409cbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>演练： 显示匹配的大括号
 你可以实现的基于语言的功能，如按定义你想要匹配，大的括号，然后将文本标记标记添加到匹配的大括号，当脱字号上一个大括号匹配的大括号。 你可以定义一种语言的上下文中的大括号或可以定义你自己的文件名称扩展和内容类型，并将标记应用到只是该类型，或您可以将标记应用到现有的内容类型 （例如"text")。 下面的演练演示如何应用标记为"text"内容类型匹配的大括号。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>创建 Managed Extensibility Framework (MEF) 项目  
@@ -124,5 +125,5 @@ ms.lasthandoff: 10/31/2017
   
 4.  当将插入符号之前的左大括号上时，该大括号和匹配的括号应突出显示。 当你将光标的位置关闭大括号之后时，该大括号和匹配的左大括号应突出显示。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

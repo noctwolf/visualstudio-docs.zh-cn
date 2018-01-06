@@ -18,11 +18,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a8c2e0a904ad3cdbef3e70072d263cc26274de52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7b8c8c9ca6dd964a58aa65b901d9219732179f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>如何：为 Office 解决方案设置配置信息
   配置文件可用于配置特定于你的 Office 解决方案的设置。 你可以指定设置，如程序集绑定策略、 远程处理对象、 调试和跟踪设置。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
  有配置文件中使用的 Office 项目没有特别的注意事项。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [.NET Framework 的配置文件架构](/dotnet/framework/configure-apps/file-schema/index)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)  

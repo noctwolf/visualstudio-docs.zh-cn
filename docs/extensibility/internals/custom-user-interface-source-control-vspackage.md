@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6138ffcd0c56b87e9e29a316aa2ae0ad9f982e18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自定义用户界面 (源控件 VSPackage)
 VSPackage 通过 Visual Studio 命令表 (.vsct) 文件中声明其菜单项，则其默认状态。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 在加载 VSPackage 之前为其默认状态显示的菜单项。 随后，<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用方法来启用或禁用菜单项。  
@@ -58,7 +59,7 @@ VSPackage 通过 Visual Studio 命令表 (.vsct) 文件中声明其菜单项，�
 |工具窗口|源代码管理 VSPackage 隐藏它拥有进行处于非活动状态时任何工具窗口。|  
 |源代码管理特定于 VSPackage 的选项页|注册表项 HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts 允许 VSPackage 设置在其中需要要显示其选项页的上下文。 此项下的注册表项都通过使用服务 ID (SID) 的源控件服务并将其分配 DWORD 值 1 来创建。 每次在上下文中向注册 VSPackage 的源控件，UI 事件发生时，如果它处于活动状态，将调用 VSPackage。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>   

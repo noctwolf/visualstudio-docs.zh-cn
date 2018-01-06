@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed0ffd44e248cb1f420cb7be308a46c914fffee2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-integration-overview"></a>源代码管理集成概述
 本部分比较的两种方法将集成到 Visual Studio 源代码管理;源代码管理插件和 VSPackage 提供源代码管理解决方案，并突出显示新的源控件功能。 Visual Studio 允许的源控件 Vspackage 和源控件插件之间进行手动切换，以及自动基于解决方案的切换。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
   
 -   VSPackage 不局限于特定的源控件模型中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理](../../extensibility/internals/source-control.md)   
  [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [创建源控件 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)   

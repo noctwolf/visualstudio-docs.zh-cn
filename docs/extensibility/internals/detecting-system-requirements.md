@@ -15,11 +15,12 @@ caps.latest.revision: "50"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 92c4d51d575ffd6e5723bf80b8adc700b83f6afd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc16c51b72ced37072c4ddf6d47bf347cf57c0f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="detecting-system-requirements"></a>检测系统要求
 除非安装了 Visual Studio 将无法工作 VSPackage。 当你使用 Microsoft Windows Installer 管理你的 VSPackage 的安装时，你可以配置要检测是否安装了 Visual Studio 的安装程序。 你还可以配置它以检查系统的其他要求，例如，特定版本的 Windows 或特定 RAM 量。  
@@ -48,5 +49,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="detecting-when-visual-studio-is-running"></a>检测 Visual Studio 运行时  
  如果 Visual Studio 正在安装 VSPackage 时，不能正确注册你的 VSPackage。 安装程序必须运行 Visual Studio 时进行检测，然后拒绝安装程序。 Windows Installer 不允许你使用表项来启用此类检测。 相反，必须创建自定义操作，如下所示： 使用`EnumProcesses`函数 devenv.exe 过程中，并在启动条件或有条件地使用安装属性，是将设置显示一个对话框，提示用户关闭Visual Studio。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Windows Installer 安装 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

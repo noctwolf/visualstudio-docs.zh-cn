@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b4a9e3915c6b26b0cc6844a8dcd5aee2bb66f5e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fdcf2fbe5349b4f404a8b1d8ad71f754a759230f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugports2reset"></a>IEnumDebugPorts2::Reset
 将枚举重置为第一个元素。  
@@ -41,5 +42,5 @@ int Reset();
 ## <a name="remarks"></a>备注  
  调用此方法，对下一个调用后[下一步](../../../extensibility/debugger/reference/ienumdebugports2-next.md)方法返回的枚举的第一个元素。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

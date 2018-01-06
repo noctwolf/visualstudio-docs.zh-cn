@@ -20,11 +20,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0dce1b5ecafbccfdf9816bbc4ef3e8fee3e5c2fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8fea089340c0d51fb5b88bf20d5521defc5dcc71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>演练：扩展服务器资源管理器以显示 Web 部件
   在 Visual Studio 中，你可以使用**SharePoint 连接**节点**服务器资源管理器**若要查看在 SharePoint 站点上的组件。 但是，**服务器资源管理器**中默认情况下未显示某些组件。 在本演练中，你将扩展**服务器资源管理器**，以便它在显示 Web 部件库每连接 SharePoint 站点。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  For SharePoint 使用客户端对象模型，而不是其服务器对象模型本演练的替代版本，请参阅[演练： 调入 SharePoint 客户端对象模型在服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练的开发计算机上：  
   
 -   受支持的 Windows、 SharePoint 和 Visual Studio 的版本。 有关详细信息，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -375,7 +376,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  关闭 Visual Studio （实验实例和 WebPartNode 解决方案处于打开状态的 Visual Studio 的实例） 的两个实例。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [演练： 调入 SharePoint 客户端对象模型在服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [图标的图像编辑器](/cpp/windows/image-editor-for-icons)   

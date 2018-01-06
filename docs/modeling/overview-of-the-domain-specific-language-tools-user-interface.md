@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: d76ed4d14e7333678fcf927dfa1b2f21d8573be5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 416c7f399ce8ce23eceee4ccf8891dd657d5836a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>域特定语言工具用户界面的概述
 首次打开中的域特定语言工具 （DSL 工具） 解决方案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，用户界面将类似于下图。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/27/2017
 |形状和连接符|形状指定的模型元素上 DSL 关系图。 的显示方式，连接器可以用于显示关系的 DSL 关系图上指定行。<br /><br /> 若要创建形状或连接器，将工具拖至**图表元素**侧的关系图。|  
 |形状映射|形状图将显示为在域模型关系图中，将形状链接到此图显示了域类或连接到它显示的域关系的连接器上的行。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域特定语言工具的概述](../modeling/overview-of-domain-specific-language-tools.md)   
  [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bd3f81580af908d06fe7389c04a6559d14f1075
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b1a0f4175dc884283dcf92b7f6268a518cdaf0ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calling-into-the-sharepoint-object-models"></a>调入 SharePoint 对象模型
   当你在 Visual Studio 中创建 SharePoint 工具扩展时，你可能必须调用 SharePoint Api 来执行某些任务。 例如，如果创建 SharePoint 项目自定义部署步骤时，你可能需要调用 SharePoint Api 来执行一些任务来部署解决方案。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="understanding-how-sharepoint-commands-are-executed"></a>了解如何 SharePoint 命令执行  
  定义 SharePoint 命令的程序集是在名为 vssphost4.exe 的 64 位主机进程中加载。 在 SharePoint 工具扩展中调用 SharePoint 命令后，通过 vssphost4.exe 而不是 32 位 Visual Studio 进程 (devenv.exe) 执行该命令。 你可以控制如何通过在注册表中设置值执行 SharePoint 命令的某些的方面。 有关详细信息，请参阅[调试 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 创建 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [如何： 执行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [SharePoint 工具扩展的编程模型概述](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  

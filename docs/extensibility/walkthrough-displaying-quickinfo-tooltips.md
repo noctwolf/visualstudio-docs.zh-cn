@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 303ce6608ee17b99995d871c5da1536a08fef335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9cd3e9d5e10e6946b4cae8ce02a5a39511e4baaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>演练： 显示快速信息工具提示
 快速信息 IntelliSense 功能，用于显示方法签名，说明当用户将指针移到方法名称。 你可以通过定义你想要提供快速信息说明的标识符，然后创建中显示的内容的工具提示实现基于语言的功能，例如快速信息。 你可以在语言服务的上下文中定义快速信息或可以定义你自己的文件名称扩展和内容类型，并显示快速信息只是该类型，或可以为现有内容类型 （如"text") 显示快速信息。 本演练演示如何显示快速信息为"text"的内容类型。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
  在此示例中，快速信息源使用硬编码列表的方法名称和说明，但在完整实现中，语言服务和语言文档负责提供该内容。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-mef-project"></a>创建 MEF 项目  
@@ -176,5 +177,5 @@ ms.lasthandoff: 10/31/2017
   
 4.  将指针悬停在其中一个出现的"添加"。 签名和说明`add`应显示方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

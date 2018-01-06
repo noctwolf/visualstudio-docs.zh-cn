@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe4921e48c978b1073c985d4c11f11a14f3b351c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d97dd10661beb5acb28b464a8bc0d88ba5946924
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="selection-context-objects"></a>选择上下文对象
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 使用全局选择上下文对象来确定在 IDE 中应显示的内容。 在 IDE 中的每个窗口可以推送到全局选择上下文自己选择上下文对象。 该窗口拥有焦点时，IDE 窗口中的值更新全局选择上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  VSPackage 作用于它接收通过执行活动，例如更新层次结构中，重新激活一个工具或其他类似的任务的事件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>   
  [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)   

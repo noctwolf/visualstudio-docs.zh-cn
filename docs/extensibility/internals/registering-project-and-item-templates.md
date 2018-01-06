@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c1cb9e31384822dddcdd3668bfb3a54bc2782d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c064a6632741eba69a553be87fb8f829063b266b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-project-and-item-templates"></a>注册项目和项模板
 项目类型必须注册其项目和项目项模板的位置的目录。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用与你的项目类型关联的注册信息确定要显示在内容**添加新项目**和**添加新项**对话框。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|名称|类型|描述|  
+|name|类型|描述|  
 |----------|----------|-----------------|  
 |@|REG_SZ|这种类型的项目的默认名称。|  
 |DisplayName|REG_SZ|在包下注册的名称的资源 ID，从附属 DLL 中检索。|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 "SortPriority"=dword:00000064  
 ```  
   
-|名称|类型|描述|  
+|name|类型|描述|  
 |----------|----------|-----------------|  
 |@|REG_SZ|添加项模板的资源 ID。|  
 |TemplatesDir|REG_SZ|在对话框中显示的项目项路径**添加新项**向导。|  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
 "SortPriority"=dword:00000064  
 ```  
   
-|名称|类型|描述|  
+|name|类型|描述|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|使中的筛选器的常见筛选器之一**在文件中查找**对话框。 在未标记为公共的筛选器之前的筛选器列表中列出了常用的筛选器。|  
 |CommonOpenFilesFilter|REG_DWORD|使中的筛选器的常见筛选器之一**打开的文件**对话框。 在未标记为公共的筛选器之前的筛选器列表中列出了常用的筛选器。|  
@@ -119,7 +120,7 @@ ms.lasthandoff: 10/31/2017
   
  \WizardFiles  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [向导](../../extensibility/internals/wizards.md)   
  [本地化应用程序](../../ide/localizing-applications.md)   

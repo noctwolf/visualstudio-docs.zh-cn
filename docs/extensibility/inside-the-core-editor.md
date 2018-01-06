@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50db39e9a6b864df8876054b455b169531260a9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e4612f5779d6177d58cef7f087ef6e11bbe4ebd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inside-the-core-editor"></a>在核心编辑器
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器是一套可使你修改和查询文本信息的多个组件。 如果通过使用旧 API 定义了核心编辑器，可继续使用这些自定义，将通过编辑器适配器路由。 建议，但是，你调整到新的编辑器 API 你自定义项。  

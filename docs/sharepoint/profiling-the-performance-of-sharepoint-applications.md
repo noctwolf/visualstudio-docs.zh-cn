@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0effe0190d54d05d706127a8e5fada66af1c7ab6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>分析 SharePoint 应用程序的性能
   如果 SharePoint 应用程序正在执行速度缓慢或效率低下，你可以使用 Visual Studio 中的分析功能来识别有问题的代码和其他元素。 通过使用负载测试功能，可以确定 SharePoint 应用程序在压力，如多个用户同时访问应用程序时的执行方式。 通过运行 web 性能测试，可以测量应用程序在 web 上找到的执行方式。 通过使用编码的 UI 测试，你可以验证整个 SharePoint 应用程序，包括其用户界面，是否工作正常。 当在一起使用这些测试时，它们可以帮助你在部署你的应用程序之前识别性能问题。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 |[单元测试代码](/visualstudio/test/unit-test-your-code)|描述如何使用单元测试在你的代码中查找逻辑错误。|  
 |[使用编码的 UI 测试来测试 SharePoint 2010 应用程序](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|介绍如何测试 SharePoint 应用程序的用户界面。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [测试应用](/devops-test-docs/test/test-apps-early-and-often)   
  [提高代码质量](/visualstudio/test/improve-code-quality)  

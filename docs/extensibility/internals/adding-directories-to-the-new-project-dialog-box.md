@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f24fd3c3a0ffb537c63346ef867a2a43481acfa9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 881979b54fb8f8f07a7ffeb2f3648b690fe2bf78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>将目录添加到新建项目对话框
 在创建新项目类型时，你还可以注册中的新目录**新项目**对话框以显示它们用于作为模板。 下面的代码示例说明如何注册一个新目录，也称为一个节点。 在示例中，注册 VSPackage CLSID_Package 所公开的模板。 因此，左侧**新项目**对话框添加的节点中，提供与由 Folder_Label_ResID 资源的名称。 从 VSPackage 附属 DLL 加载此资源。  
@@ -47,7 +48,7 @@ NoRemove NewProjectTemplates
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)   
  [将项添加到添加新项对话框](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [将目录添加到“添加新项”对话框](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

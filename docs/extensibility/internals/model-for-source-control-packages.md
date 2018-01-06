@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8dacc0a3dfc230085c7575960238711d16d1ef8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-for-source-control-packages"></a>源代码管理包的模型
 以下模型表示源控件的实现的示例。 在模型中，你将看到必须实现的接口，并必须调用的环境服务。 如所有服务，你实际调用的方法的一个特定的接口，通过该服务获取。 标识的类名称以使其更轻松地了解如何执行源代码管理。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|由项目源代码管理包中注册并获取有关源控件状态的信息。 访问此接口时使用的<xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>服务。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|实现对有关文件信息的源控件请求作出响应，并以获得控件设置项目文件所需的源的项目。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>   

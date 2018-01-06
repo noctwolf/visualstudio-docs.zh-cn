@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c57626827be8487d19cd546bc31bd32b0859cec7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 22ef16c40fb2d70ae7e1b835860b74843abe57d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 解决方案的安全性
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含以下功能来帮助提高的 SharePoint 应用程序的安全性。  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [生成安全的 ASP.NET 应用程序： 身份验证、 授权和安全通信](http://go.microsoft.com/fwlink/?LinkId=177494)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)  
   

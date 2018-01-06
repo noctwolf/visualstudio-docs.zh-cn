@@ -19,14 +19,15 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: c4ec0178a4767e7e0c5c726816dcd7088e14f17b
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-the-tasks-window"></a>使用“任务”窗口
-**任务**窗口类似于**线程**窗口中，但它显示有关的信息<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](/cpp/parallel/concrt/reference/task-group-class.md)，或[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)而不是每个线程的对象。 与线程一样，任务表示可并行运行的异步操作；但是，多个任务可以在同一个线程上运行。 
+**任务**窗口类似于**线程**窗口中，但它显示有关的信息<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](/cpp/parallel/concrt/reference/task-group-class)，或[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)而不是每个线程的对象。 与线程一样，任务表示可并行运行的异步操作；但是，多个任务可以在同一个线程上运行。 
   
  在托管代码中，你可以使用**任务**窗口时，你使用<xref:System.Threading.Tasks.Task?displayProperty=fullName>对象或与**await**和**异步**关键字 (**Await**和**异步**visual Basic 中)。 有关托管代码中的任务的详细信息，请参阅[的并行编程](/dotnet/standard/parallel-programming/index)。  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 12/07/2017
   
  ![任务窗口中的快捷线程菜单](../debugger/media/parallel_tasks_contextmenu2.png "Parallel_Tasks_ContextMenu2")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
  [并行编程](/dotnet/standard/parallel-programming/index)   

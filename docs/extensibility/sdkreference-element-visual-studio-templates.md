@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6ca0159d522d7890452a54986093f4062803faf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2929e53dc3459c1699a0bc09cb235971ba02f90f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 元素（Visual Studio 模板）
 指定项模板使用 SDK 引用。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[引用](../extensibility/reference-element-visual-studio-templates.md)|指定向项目添加项时要添加的程序集引用。|  
   
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
 ...  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [References 元素 （Visual Studio 模板）](../extensibility/references-element-visual-studio-templates.md)   
  [Reference 元素 （Visual Studio 模板）](../extensibility/reference-element-visual-studio-templates.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   

@@ -20,11 +20,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1033f33835dfdeefbb4791e356ca50a577b789ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 05a0f2a997791564a8358287ff1d632c3ff7bffe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>演练：使用项目模板创建网站栏项目项（第 1 部分）
   SharePoint 项目是一个或多个 SharePoint 项目项的容器。 可以通过创建你自己的 SharePoint 项目项类型，然后将其关联的项目模板来扩展 Visual Studio 中的 SharePoint 项目系统。 在此演练中，将为创建网站栏，定义项目项类型，然后你将在其中创建可用来创建一个包含网站栏项目项的新项目的项目模板。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  你可以下载包含已完成的项目、 代码和从以下位置在本演练中的其他文件的示例： [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练的开发计算机上：  
   
 -   支持的版本的 Microsoft Windows 中，SharePoint 和[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关详细信息，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
@@ -723,7 +724,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  **站点 URL**属性为空默认情况下，因为网站栏项目模板不提供向导创建项目时收集此值。 若要了解如何添加向导，要求开发人员提供此值，然后在新项目中配置此属性，请参阅[演练： 使用项目模板，第 2 部分中创建网站栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
-3.  选择**F5**密钥。  
+3.  选择 F5。  
   
      打包和部署到 SharePoint 站点中指定的网站栏**站点 URL**项目属性。 Web 浏览器将打开到此站点的默认页面。  
   
@@ -736,7 +737,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  在站点列列表中，确认**自定义列**组包含名为的列**SiteColumnTest**。  
   
-7.  关闭 web 浏览器。  
+7.  关闭 Web 浏览器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清理开发计算机  
  在完成测试项目后，从 Visual Studio 的实验实例中删除项目模板。  
@@ -758,7 +759,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="next-steps"></a>后续步骤  
  完成本演练后，你可以将向导添加到项目模板。 当用户创建网站栏项目时，向导将要求用户提供网站 URL 以用于调试和新的解决方案是否为沙盒解决方案，并向导将新的项目配置使用此信息。 该向导还收集有关列 （如基类型和在其中列出网站栏库中的列组） 的信息，并将此信息添加到新的项目中的 Elements.xml 文件。 有关详细信息，请参阅[演练： 使用项目模板，第 2 部分中创建网站栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 使用项目模板，第 2 部分中创建网站栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
  [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   

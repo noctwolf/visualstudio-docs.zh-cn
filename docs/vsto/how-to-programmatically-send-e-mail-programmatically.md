@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98b0eefafa86fdaf8f7a664ac75a2f7c71a43549
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 39a0ebee37c57630649f680d14aa8fef22833225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-send-e-mail"></a>如何： 以编程方式发送电子邮件  
   此示例将一封电子邮件发送给具有域名的联系人**example.com**电子邮件地址中。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="robust-programming"></a>可靠编程  
  不删除搜索域名称的筛选器代码**example.com**。如果删除筛选器，你的解决方案将向你的联系人的所有发送电子邮件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用邮件项](../vsto/working-with-mail-items.md)   
  [如何： 以编程方式创建电子邮件项](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
  [如何： 以编程方式访问 Outlook 联系人](../vsto/how-to-programmatically-access-outlook-contacts.md)   

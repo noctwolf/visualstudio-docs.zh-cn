@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7582b0bcef8a97de14fb3b931745d6dcc21fa876
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 47ff77e26ede1c8f9c1bf35b8fc3e69a7951d24c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-and-debugging-sharepoint-solutions"></a>生成和调试 SharePoint 解决方案
   通常情况下，生成和调试 SharePoint 解决方案是生成和调试其他类型的项目中相同[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 本部分的主题介绍存在的差异。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="using-the-clean-command"></a>使用“清除”命令  
  在调试时，使用 SharePoint 服务器上安装 SharePoint 解决方案时**清理**命令不会卸载该解决方案。 相反，你必须先停用通过 SharePoint 配置的功能。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

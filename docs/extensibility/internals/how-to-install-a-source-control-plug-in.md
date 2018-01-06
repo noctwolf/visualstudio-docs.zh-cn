@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab02b65e4a40f15da857038a45d9bcc2b88b1b83
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dab9270b55f5980d36256db78db89b5e4ac186f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何： 安装了源代码管理插件
 创建源代码管理插件包括三个步骤：  
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
      此条目的名称为提供程序 （与相同为 SCCServerName 条目指定的值），用户可读名称，值再次，为步骤 1 中创建的子项。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\*[显示名称]* = 软件\\*[公司名称]* \\ *[产品名称]*。  
   
-     例如:   
+     例如:  
   
     |示例注册表条目|示例值|  
     |---------------------------|------------------|  
@@ -119,5 +120,5 @@ ms.lasthandoff: 10/31/2017
   
  如果满足这两种情况，可以调用在版本 1.2 和 1.3 支持的新函数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [入门](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

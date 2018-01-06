@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3b31ad2ec080070dec3c68b304f400d204d47a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 97b97b6a79ac93dd614cf6557d338d5f0398192e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>获取字体和文本着色的颜色信息
 呈现或以的文本显示在用户界面 (UI) 元素中的过程取决于项目、 其技术和开发人员首选项的类型。 **字体和颜色**属性页存储设置。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
  之后你已获得字体和颜色信息、 分析文本以显示来标识元素需要着色，然后在使用适当的字体和颜色窗口中显示文本。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
  [使用字体和文本](/dotnet/framework/winforms/advanced/using-fonts-and-text)   

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6218d697880da3ebf0d9af5599b5a7ca37ddf2f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 76801810aafa3bd4048776ca38385ad1cf508d94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-update-the-status-bar"></a>如何： 更新状态栏
 **状态栏**控件条位于包含一个或多个状态文本行或指示器的许多应用程序窗口底部。  
@@ -48,5 +49,5 @@ ms.lasthandoff: 10/31/2017
   
  VSPackage 实施者负责更新状态栏中的状态文本。 IDE 重置此字符串为"就绪"，如果状态文本字段设置为空文本 ("") 在空闲时间。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [状态栏](/cpp/mfc/status-bars)

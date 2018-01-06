@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: vssdk
+ms.openlocfilehash: 40e795238e46885707cfd6eff715a27a5f53f85c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>颜色和 Visual Studio 的样式
 ## <a name="using-color-in-visual-studio"></a>使用 Visual Studio 中的颜色  
@@ -337,7 +338,7 @@ VSPackage 可以控制的字体和颜色通过自定义类别和项显示在字�
   
 填充具有两个值注册表：  
 
-| 名称 | 类型 | 数据 | 描述 |
+| name | 类型 | 数据 | 描述 |
 | --- | --- | --- | --- |
 | 类别 | REG_SZ | GUID | 一个 GUID 创建来标识类别 |
 | Package | REG_SZ | GUID | 支持类别 VSPackage 服务的 GUID |
@@ -349,7 +350,7 @@ VSPackage 可以控制的字体和颜色通过自定义类别和项显示在字�
   
 填充具有两个值注册表：
 
-| 名称 | 类型 | 数据 | 描述 |
+| name | 类型 | 数据 | 描述 |
 |--- | --- | --- | --- |
 | 类别 | REG_SZ | GUID | 一个 GUID 创建来标识类别 |
 | Package | REG_SZ | GUID | 支持类别 VSPackage 服务的 GUID |

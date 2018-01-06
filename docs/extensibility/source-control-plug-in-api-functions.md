@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1085312849ce33518654e044a795d6aa4b735e07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: beaab13c76b3d50f97662e66c1f72dc83161e96d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-api-functions"></a>源控件插件 API 函数
 源控件插件 API 提供以下函数，必须由源代码管理插件根据此 API 实现。 每个函数语义的签名关联的位标志和其他参数将本引用中的详细信息中所述。  
@@ -82,11 +83,11 @@ ms.lasthandoff: 10/31/2017
 |[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|检查中一个项目或项目受源代码管理目录和文件的列表。 找到每个目录和文件名称传递给回调函数。|  
 |[SccQueryChanges](../extensibility/sccquerychanges-function.md)|检查对文件的列表所做的名称更改。 每个文件名传递给带其更改状态的回调函数。|  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： scc.h  
   
  (环境 SDK 中提供常见默认情况下中包括文件夹， *[驱动器]*\Program Files\VSIP 8.0\EnvSDK\common\inc; 在 MSSCCI 示例中，具有的 VSIP 文件夹中还提供*[驱动器]*\ProgramFiles\VSIP 8.0\MSSCCI)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件](../extensibility/source-control-plug-ins.md)   
  [创建源代码管理插件](../extensibility/internals/creating-a-source-control-plug-in.md)

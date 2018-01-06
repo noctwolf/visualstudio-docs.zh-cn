@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7d5279f16dbc8228f0f116c47e6faa3ab0093472
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8503afb26ec8dc244db39dff5bddcc6d3b733896
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 这是提供给一个回调函数[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)函数以更新目录和 （可选） 若要了解它们在源代码管理下的文件名称的集合。  
@@ -48,7 +49,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="return-value"></a>返回值  
  IDE 返回相应的错误代码：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|继续进行处理。|  
 |SCC_I_OPERATIONCANCELED|停止处理。|  
@@ -57,7 +58,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="remarks"></a>备注  
  如果`fOptions`参数`SccPopulateDirList`函数包含`SCC_PDL_INCLUDEFILES`标志，则列表将可能包含文件的名称，以及目录名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [由 IDE 实现的回调函数](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)   
  [错误代码](../extensibility/error-codes.md)

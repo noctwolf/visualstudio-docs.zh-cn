@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8186110b04e3ff56b3c6b0cad03890f3233c03d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2339ee60e66bca7578c2d5d1e89c7bb649b15b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-sharepoint-solutions"></a>本地化 SharePoint 解决方案
   准备你的应用程序，以便它们可以全球范围内使用的过程被称为本地化。 本地化所转换到特定区域性的资源。 有关详细信息，请参阅[Globalizing 和本地化应用程序](/visualstudio/ide/globalizing-and-localizing-applications)。 本主题提供有关如何本地化 SharePoint 解决方案的概述。  
@@ -91,7 +92,7 @@ $Resources:String ID
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
- 例如：  
+ 例如:  
   
 ```  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  
@@ -103,7 +104,7 @@ $Resources:String ID
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
- 例如:   
+ 例如:  
   
 ```  
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
@@ -133,7 +134,7 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
   
  在派生类中，从资源文件以及要获取的本地化的值的字符串 id。 ResourceManager 对象引用的字符串 ID 此值返回到的属性编辑器特性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 本地化功能](../sharepoint/how-to-localize-a-feature.md)   
  [如何： 本地化 ASPX 标记](../sharepoint/how-to-localize-aspx-markup.md)   
  [如何： 本地化代码](../sharepoint/how-to-localize-code.md)   

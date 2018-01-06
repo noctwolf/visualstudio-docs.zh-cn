@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e46f5a3b4dd320ce71dfeea1a9d4fd4650e5c3d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1a9f895db0d202dd573e7c665b1185f6e3f4b751
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-installer-basics"></a>Windows 安装程序基础知识
 Windows Installer 安装和卸载应用程序或用户的计算机上的软件产品在名为 Windows 安装程序组件 （有时称为 WICs 或只是组件） 的单元中执行这些任务。 一个 GUID 标识每个 WIC，这是安装和引用计数设置使用 Windows 安装程序的基本单位。  
@@ -74,5 +75,5 @@ Windows Installer 安装和卸载应用程序或用户的计算机上的软件�
   
 -   无版本控制的资源不断应在多个 WIC 装运。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如果组件规则被中断，会发生什么情况？](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

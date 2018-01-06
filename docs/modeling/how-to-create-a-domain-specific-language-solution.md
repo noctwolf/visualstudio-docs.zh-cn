@@ -16,16 +16,17 @@ caps.latest.revision: "41"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: b7c6f6f854e17e9b3b19f277d49674c311edb41b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 46a7eee1d9dd6c290493afcbe960d491f8976564
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：创建域特定语言解决方案
 通过一个专用创建域特定语言 (DSL)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  在可以开始此过程之前，你必须首先安装这些组件：  
   
 |||  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/27/2017
   
     4.  单击**域特定语言设计器**。  
   
-    5.  在**名称**框中，键入解决方案的名称。 单击“确定”。  
+    5.  在**名称**框中，键入解决方案的名称。 单击 **“确定”**。  
   
          **域特定语言设计器向导**显示。  
   
@@ -133,6 +134,6 @@ ms.lasthandoff: 10/27/2017
   
  有关强命名的详细信息，请参阅[创建和使用具有强名称程序集](http://go.microsoft.com/fwlink/?LinkId=186073)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何定义的域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   
  [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

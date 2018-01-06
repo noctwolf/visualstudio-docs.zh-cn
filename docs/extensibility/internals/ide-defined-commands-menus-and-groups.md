@@ -16,11 +16,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 032baaa57dd91cb07eac547da810d16e708f0828
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 34e0e95475457e2a5f206ad4ecb0d7e42e2bb9ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 定义命令、 菜单和组
 许多菜单、 命令和命令组已定义以供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 扩展时，可能也包括可供你使用这些命令[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
  [Visual Studio 命令中的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)  
  提供由 Visual Studio IDE 的命令的 GUID 和 ID 值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表 (。Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [用于扩展项目系统 IDE 定义命令](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)   
  [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

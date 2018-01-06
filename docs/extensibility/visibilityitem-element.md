@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db041f839e9b7e8ad3268175829ecfee9380e736
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 627e5abad07ef0566d23f010ea120df33173fb0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 元素
 `VisibilityItem`元素确定的静态可见性命令和工具栏。 每个条目标识命令或菜单上，以及关联的命令 UI 上下文。 Visual Studio 检测命令、 菜单和工具栏和可见性，而无需加载定义它们的 Vspackage。 IDE 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法来确定命令 UI 上下文是否处于活动状态。  
@@ -46,9 +47,9 @@ ms.lasthandoff: 10/31/2017
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必需。 GUID/ID 命令标识符的 GUID。|  
-|id|必需。 GUID/ID 命令标识符的 ID。|  
-|Context — 上下文|必需。 该命令处于可见 UI 上下文。|  
+|guid|必须的。 GUID/ID 命令标识符的 GUID。|  
+|id|必须的。 GUID/ID 命令标识符的 ID。|  
+|Context — 上下文|必须的。 该命令处于可见 UI 上下文。|  
 |条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
 </VisibilityConstraints>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>   
  <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>   
  <xref:Microsoft.VisualStudio.VSConstants>   

@@ -13,11 +13,12 @@ caps.latest.revision: "37"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 56d67aff89c7f0cf58911cebfdaf5bfdb1464796
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e05574ba51a690621d57b6f32017d1eb359675eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-your-system-during-development"></a>在开发过程中验证系统
 Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构保持一致。  
@@ -41,7 +42,7 @@ Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构
 |**博客**|-   [Visual Studio ALM + Team Foundation Server 博客](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技术文章和日志**|[MSDN 体系结构中心](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [测试应用程序](https://www.visualstudio.com/en-gb/docs/test/overview)   
  [建立用户需求模型](../modeling/model-user-requirements.md)   
  [体系结构分析和建模](../modeling/analyze-and-model-your-architecture.md)

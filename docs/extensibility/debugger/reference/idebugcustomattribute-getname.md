@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 165362ab03685a3acca457e4095778b9dcb182e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8237fe3ad25baa912ee3a1eb84da533d788346cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 获取自定义属性的名称。  
@@ -47,5 +48,5 @@ int GetName(
 ## <a name="remarks"></a>备注  
  此方法返回的命名对应于用于声明特性类的名称。 这可能不完全对应于自定义特性类本身的名称，如 C# 允许声明中使用时从自定义属性名称中删除了"属性"后缀。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

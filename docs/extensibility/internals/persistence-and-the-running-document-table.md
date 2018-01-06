@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 062c623ec1de779733e41a8abcad8ca478155dba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7f48a1acdad3856e7334ce6a86b48e67c880f9c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="persistence-and-the-running-document-table"></a>持久性和运行文档表
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE，项目将完全负责管理他们完成使用服务，其项目项的持久性<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>。 文档是持久性的在 Visual Studio 环境中的基本单位。 项目协调打开、 保存和重命名的文档与正在运行文档表 (RDT) 跟踪所有打开的文档的状态的资源。  
@@ -31,6 +32,6 @@ ms.lasthandoff: 10/31/2017
   
  全局环境负责维护 RDT。 环境负责维护所有打开的窗口的条目和 RDT，这样就可以为它们到中的文档接收特殊的通知，如关闭解决方案时。 此外，RDT 使环境来跟踪在其相应节点**解决方案资源管理器**。 RDT 维护每个打开的、 持久的对象，包括项目文件和项目项文档的一条记录。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [正在运行的文档表](../../extensibility/internals/running-document-table.md)   
  [IDE 中的选择和货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)

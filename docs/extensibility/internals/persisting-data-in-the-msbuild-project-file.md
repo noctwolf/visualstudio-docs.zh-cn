@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d41a4776362f450d5d55552b049c3bba1bc781b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b2bb73602a6cba07fe9cbde4ddae4219f5a2b350
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild 项目文件中的持久保存数据
 项目子类型可能需要将特定于子类型的数据保存到项目文件以供将来使用。 项目子类型使用项目文件持久性满足以下要求：  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
   
     1.  独立于配置的数据。 即在与空或缺失的条件的 MSBuild 元素中存储的数据。  
   
-    2.  依赖于配置的数据。 也就是说，以针对特定项目配置的 MSBuild 元素中存储的数据。 例如:   
+    2.  依赖于配置的数据。 也就是说，以针对特定项目配置的 MSBuild 元素中存储的数据。 例如:  
   
         ```  
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">  
@@ -78,5 +79,5 @@ ms.lasthandoff: 10/31/2017
       </ProjectExtensions>  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项目子类型](../../extensibility/internals/project-subtypes.md)

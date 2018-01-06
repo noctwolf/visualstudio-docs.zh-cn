@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7edb1428d3dedbbe6341427e28964559d9750b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="feature-tour-of-the-visual-studio-debugger"></a>Visual Studio 调试器的功能教程
 
@@ -193,6 +194,26 @@ F10 使调试器，而无需单步执行函数或应用程序代码 （仍执行
 
 展开**异常设置**节点以查看更多选项如何处理这种异常类型，但你无需更改为本教程的任何内容 ！
 
+## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>调试在 Azure App Service 中的实时 ASP.NET 应用程序
+
+**快照调试器**你感兴趣的代码在执行时，获取你在生产应用的快照。 要指示调试程序拍摄快照，可在代码中设置 snappoints 和 logpoints。 使用调试程序，可精确查看出错的内容，而不影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
+
+![启动快照调试器](../debugger/media/snapshot-launch.png "启动快照调试器")
+
+快照集合是可用于在 Azure App Service 中运行的 ASP.NET 应用程序。 必须在.NET Framework 4.6.1 上运行 ASP.NET 应用程序或更高版本，并且必须在.NET 核心 2.0 或更高版本在 Windows 上运行 ASP.NET Core 应用程序。
+
+有关详细信息，请参阅[调试实时 ASP.NET 应用程序使用快照调试器](../debugger/debug-live-azure-applications.md)。
+
+## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>IntelliTrace 步骤回 (Visual Studio Enterprise) 的视图快照
+
+**IntelliTrace 步骤回**步骤事件也会自动编制的应用程序的每个断点和调试器的快照。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
+
+可以通过使用调试工具栏中的“后退”和前进”按钮浏览和查看快照。 这些按钮用于浏览“诊断工具”窗口中“事件”选项卡上显示的事件。
+
+![单步执行向后和向前按钮](../debugger/media/intellitrace-step-back-icons-description.png  "步骤向后和向前按钮")  
+
+有关详细信息，请参阅[使用 IntelliTrace 后退查看快照](../debugger/how-to-use-intellitrace-step-back.md)页。
+
 ## <a name="more-features-to-look-at"></a>要查看的多个功能
 
 -   [调试器提示和技巧](../debugger/debugger-tips-and-tricks.md)了解如何使用调试器提高生产率。
@@ -209,5 +230,5 @@ F10 使调试器，而无需单步执行函数或应用程序代码 （仍执行
 
 -   [调试接口访问 SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md)描述 Microsoft 调试接口访问软件开发工具包 (DIA SDK)。 DIA SDK 提供对存储在由 Microsoft 后置编译器工具生成的程序数据库 (.pdb) 文件中的调试信息的访问。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)

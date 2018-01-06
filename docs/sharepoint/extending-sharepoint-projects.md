@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d0bbb086c66bad3ad2beedab2b390244a9e185b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8f8d6087576f6b64b9b0694e9c177637dd28c059
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-sharepoint-projects"></a>扩展 SharePoint 项目
   当你想要自定义 SharePoint 项目的项目级别功能，请创建一个项目扩展。 例如，你可以添加自定义项目属性中，或用户开发的 Visual Studio 中的 SharePoint 解决方案时引发的项目级事件做出响应。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
  若要访问的特定项目实例，处理之一<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>的事件*projectService*的实现中的参数<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法。 例如，若要确定 SharePoint 项目添加到解决方案时，处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded>事件。 有关详细信息，请参阅[如何： 创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [如何： 将快捷菜单项添加到 SharePoint 项目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [如何： 向 SharePoint 项目中添加属性](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   

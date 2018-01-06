@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a9685d00f2df0f6819058106771a278b8494520
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ca5143a3e5eaff488fee89b643a40adb60473bd8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 元素（Visual Studio 项目模板）
 指定的项目模板中包含的文件。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
   
 |元素|描述|  
 |-------------|-----------------|  
-|[项目](../extensibility/project-element-visual-studio-templates.md)|指定的文件或要添加到项目目录。|  
+|[Project](../extensibility/project-element-visual-studio-templates.md)|指定的文件或要添加到项目目录。|  
   
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
@@ -139,7 +140,7 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [模板参数](../ide/template-parameters.md)   

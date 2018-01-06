@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a0bc7ab99c6bc3643ee61b403e4aa0c40c41a63a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70fe624984adce58191ee7d354185eac0bb527ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函数
 此函数设置控制的插件的源控件的行为的选项。  
@@ -46,7 +47,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功设置选项。|  
 |SCC_I_SHARESUBPROJOK|时返回`nOption`已`SCC_OPT_SHARESUBPROJ`和源代码管理插件允许 IDE 以设置目标文件夹。|  
@@ -81,7 +82,7 @@ SCCRTN SccSetOption(
 ## <a name="sccoptsharesubproj"></a>SCC_OPT_SHARESUBPROJ  
  如果`nOption`设置为`SCC_OPT_SHARESUBPROJ`，IDE 是否正在测试是否从源代码管理中添加文件时，源代码管理插件可以使用指定的本地文件夹。 值`dwVal`参数在此情况下并不重要。 如果该插件允许 IDE 以指定文件会添加从源的位置的本地目标文件夹控制[SccAddFromScc](../extensibility/sccaddfromscc-function.md)调用，则该插件必须返回`SCC_I_SHARESUBPROJOK`时`SccSetOption`技术支持部门调用。 然后使用 IDE`lplpFileNames`参数`SccAddFromScc`函数传递目标文件夹中。 该插件使用该目标文件夹将添加从源代码管理中的文件。 如果该插件不返回`SCC_I_SHARESUBPROJOK`时`SCC_OPT_SHARESUBPROJ`设置选项，则 IDE 假定该插件是否能够将文件添加仅在当前的本地文件夹中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   

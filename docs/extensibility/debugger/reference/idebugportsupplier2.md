@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc6e5c5a9091b633c4c2c5ca46990393302e5e20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 257bbf334adbdfd3a93cf172de0b15bf63cb3217
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 此接口提供到会话调试管理器 (SDM) 的端口。  
@@ -33,7 +34,7 @@ IDebugPortSupplier2 : IUnknown
  自定义端口供应商提供实现此接口可表示的端口供应商提供。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 调用`CoCreateInstance`与端口供应商的`GUID`返回此接口 （这是获得此接口的典型方法）。 例如:   
+ 调用`CoCreateInstance`与端口供应商的`GUID`返回此接口 （这是获得此接口的典型方法）。 例如:  
   
 ```cpp  
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)  
@@ -74,14 +75,14 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 ## <a name="remarks"></a>备注  
  端口供应商可以标识自身按名称和 ID、 添加和删除端口，以及枚举端口供应商提供的所有端口。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)   

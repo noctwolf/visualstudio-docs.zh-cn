@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e08ca6d5a670bb2c1a0f0073920c753add50322c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa57b0d09cb8422a9dde1f70306d2f3808b0384e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何： 支持旧语言服务中的大纲显示
 以大纲方式显示用于展开或折叠的文本的不同区域。 方式大纲显示使用不同的语言可以以不同方式定义。 有关详细信息，请参阅[大纲显示](../../ide/outlining.md)。  
@@ -48,6 +49,6 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  请谨慎使用隐藏新行字符。 隐藏的文本应将扩展从第一个行的开头到最后一个字符的部分中，仅显示最后一个新行字符的最后一行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 隐藏的文本在提供支持，旧语言服务](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
  [如何：提供旧版语言服务中扩展的大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

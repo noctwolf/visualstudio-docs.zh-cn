@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e20d37d0e1162b49ca0fc92f92056b3541698454
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3e1f9bc81c0d13acd1fb9ac1a22f33262e4644f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 文件
 本主题描述的 Dsl 项目中的 DslDefinition.dsl 文件的结构[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]解决方案，它定义*域特定语言*。 DslDefinition.dsl 文件描述的类和关系的域特定语言，以及关系图、 形状、 连接器、 序列化格式和**工具箱**域特定语言的并将其编辑工具。 在域特定语言解决方案中，将根据 DslDefinition.dsl 文件中的信息生成可定义这些工具的代码。  
@@ -440,7 +441,7 @@ ms.lasthandoff: 10/27/2017
   
  （连接关系具有其自己的 XML 类数据，该数据提供了此关系的元素和特性名称。）  
   
- 如果**OmitElement**属性设置为 true，关系角色省略名称时，该缩写的序列化的文件和不明确的如果两个类具有不超过一种关系。 例如:   
+ 如果**OmitElement**属性设置为 true，关系角色省略名称时，该缩写的序列化的文件和不明确的如果两个类具有不超过一种关系。 例如:  
   
 ```  
 <component name="Component3">  
@@ -546,7 +547,7 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
   
  连接符映射还可以包含修饰器映射。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [如何定义的域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   
  [了解模型、类和关系](../modeling/understanding-models-classes-and-relationships.md)

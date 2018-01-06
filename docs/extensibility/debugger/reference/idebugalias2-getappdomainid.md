@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b4d5dacd7a614981971c691d3c06c436eaf55008
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a8ddebc0f540be650650595e5b808c9c4b19f706
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 检索应用程序域的标识符。  
@@ -48,5 +49,5 @@ int GetAppDomainId (
 ## <a name="remarks"></a>备注  
  创建应用程序域标识符更改时重新启动应用程序和新的应用程序域。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)
