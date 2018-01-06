@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20f813a03916c7bb956583cef737210ca42e7540
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ba7232d374e666a84d9d19225981d25c6a78ac3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
 此函数将检索一个标志，该值指示是否可以作为一部分堆栈缓冲区检查完成任何堆栈排序 ([/GS （缓冲区安全检查）](/cpp/build/reference/gs-buffer-security-check)编译器选项)。  
@@ -41,13 +42,13 @@ HRESULT get_noStackOrdering(
 > [!NOTE]
 >  返回值`S_FALSE`意味着属性不是可用于符号。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
   
-|要求|描述|  
+|需求|描述|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [/GS （缓冲区安全检查）](/cpp/build/reference/gs-buffer-security-check)

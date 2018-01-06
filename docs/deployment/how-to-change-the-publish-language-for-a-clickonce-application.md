@@ -20,11 +20,12 @@ caps.latest.revision: "19"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1643a3bec79b6f0e1b89548ab1a62c3dfd6c6e9a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7d368f036e8a5f8599a802bb6f57eba7bc6d767d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>如何：更改 ClickOnce 应用程序的发布语言
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，在安装到的语言和开发计算机的区域性的默认设置过程中显示的用户界面。 如果发布的本地化的应用程序，你将需要指定语言和区域性的本地化的版本匹配。 这由`Publish language`为你的项目的属性。  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/27/2017
   
 5.  在**发布选项**对话框框中，选择一种语言和区域性从**发布语言**下拉列表，然后单击**确定**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

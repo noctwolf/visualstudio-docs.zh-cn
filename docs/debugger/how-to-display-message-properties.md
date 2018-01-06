@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ea76ebef8903e5d4937cc8d9a35933c9182746f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 34457fb03d02d942c3033eeaa9128764d29e19b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-message-properties"></a>如何：显示消息属性
 若要了解有关消息中列出的详细信息[消息视图](../debugger/messages-view.md)，使用[消息属性对话框](../debugger/message-properties-dialog-box.md)。  

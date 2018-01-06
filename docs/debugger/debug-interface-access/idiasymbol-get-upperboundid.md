@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a08f0d6052fcdb6346faef4080f971e9c18ac51b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8f336c35f9b0f9301a5e61c271b25af2e6ecbd9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
 检索 FORTRAN 数组维度的上限的符号标识符。  
@@ -44,5 +45,5 @@ HRESULT get_upperBoundId (
 ## <a name="remarks"></a>备注  
  标识符是由 DIA SDK，可将标记为唯一的所有符号的唯一值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

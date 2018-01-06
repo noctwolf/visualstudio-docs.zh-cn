@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a654db4e9da3490950e390d74fa0148a974fdd2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36743939fdbc8c41967bbbe2ae71aeb72f954cb4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 检索用于指定是否用户定义类型 (UDT) 对齐某些特定内存边界的标志。  
@@ -44,12 +45,12 @@ HRESULT get_isDataAligned(
 ## <a name="remarks"></a>备注  
  如果使用非默认数据对齐编译可执行文件通常设置此属性。 例如，Microsoft c + + 编译器可以更改的数据对齐方式，使用命令行选项，/Zp*#*，其中 *#* 是一个字节值。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
   
-|要求|描述|  
+|需求|描述|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1f308de55d9170b2247114ea96f611dd8e1af9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0de0874a605325f3f61547a202701eeeeb4d5a24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-state"></a>图形状态
 Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件（如绘图调用）时为活动状态的图形状态。  
@@ -52,8 +53,8 @@ Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件
   
 |列|描述|  
 |------------|-----------------|  
-|名称|状态项的名称。 如果此项表示状态的捆绑包，则可以展开该项以显示它。<br /><br /> 在**API 输入状态视图**和**逻辑状态视图**状态，缩进名称以显示状态之间的层次结构关系。<br /><br /> 在**固定状态视图**状态时，在平面列表中显示完全限定的名称。|  
-|值|状态项的值。|  
+|name|状态项的名称。 如果此项表示状态的捆绑包，则可以展开该项以显示它。<br /><br /> 在**API 输入状态视图**和**逻辑状态视图**状态，缩进名称以显示状态之间的层次结构关系。<br /><br /> 在**固定状态视图**状态时，在平面列表中显示完全限定的名称。|  
+|“值”|状态项的值。|  
 |类型|状态项的类型。|  
   
 ### <a name="changed-state"></a>已更改的状态  

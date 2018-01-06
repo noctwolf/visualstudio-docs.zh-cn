@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae6b36867f2c3f29c4abbbb83280c7f69eb20723
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 680cd9aea768d29e2afa4295a9593279a67e6c63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetlexicalparentid"></a>IDiaSymbol::get_lexicalParentId
 检索的符号的词法的父标识符。  
@@ -44,5 +45,5 @@ HRESULT get_lexicalParentId (
 ## <a name="remarks"></a>备注  
  标识符是由 DIA SDK，可将标记为唯一的所有符号的唯一值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

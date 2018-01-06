@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3604842dd2d84af4598b65c83cc2999930b89edf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7fe31b96911329089174772094784c0d0f3371c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
 定义图形日志文件的默认文件名。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
  `filename`  
  以编程方式捕获图形信息时默认为图形日志文件指定的文件名。  
   
-## <a name="value"></a>值  
+## <a name="value"></a>“值”  
  表示图形日志文件的文件名的字符串。 默认情况下为 L"default.vsglog"。  
   
 ```C++  
@@ -53,5 +54,5 @@ ms.lasthandoff: 10/31/2017
 #include <vsgcapture.h>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)

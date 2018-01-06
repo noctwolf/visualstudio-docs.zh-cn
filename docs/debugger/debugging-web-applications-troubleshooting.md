@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 364da0cdee3f063bc982f2731969c1be98cf386c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e68040d1cdfbac6c1127a280c3d1e1773c2794ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>调试 Web 应用程序：疑难解答
 本节包含可用于解决错误的公共过程。  

@@ -20,14 +20,15 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fe88b8d864cc0762124f021980b95b427a3f7a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2a24b96672c7677943fa7dfe7807c578bf4d64ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>如何：在发生异常后检查系统代码
-发生异常时，你可能需要检查系统调用内部的代码，以确定该异常的起因。 如果您没有为系统代码加载符号，或者启用了“仅我的代码”，则下面的步骤说明了如何执行此操作。  
+发生异常时，你可能需要检查系统调用内部的代码，以确定该异常的起因。 如果你没有为系统代码加载符号，或者启用了“仅我的代码”，则下面的步骤说明了如何执行此操作。  
   
 ### <a name="to-examine-system-code-following-an-exception"></a>在发生异常后检查系统代码  
   
@@ -45,5 +46,5 @@ ms.lasthandoff: 10/31/2017
   
 4.  你现在可以检查系统代码中的**调用堆栈**窗口和其他窗口。 例如，你可以双击调用堆栈帧在源中查看的代码或**反汇编**窗口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)

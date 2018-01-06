@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35d956b1d246d0a43ae058bb58635117c093602c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dac8991fa31aae0ba65b0377e159b20256c4a416
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 检索寄存器的值。  
@@ -45,6 +46,6 @@ HRESULT get_registerValue (
 ## <a name="remarks"></a>备注  
  虽然的大，但`pRetVal`参数，实现应只什么注册通常包含存储。 例如，一个 8 位寄存器保存仅最低 8 位的给定的值。 为 64 位从此方法返回时扩展此 8 位的值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [CV_HREG_e 枚举](../../debugger/debug-interface-access/cv-hreg-e.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1dac35a0e01890488e6290759b563d25f7067067
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 82d0b25b2306cc957015ec4c205a22cd44660357
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 检索部分或全部 c + + 的未修饰名称修饰 （链接） 名称。  
@@ -74,5 +75,5 @@ HRESULT get_undecoratedNameEx(
 |UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|禁止检查有效的标识符字符。|  
 |UNDNAME_NO_PTR64|0x20000|不在输出中包括 ptr64。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

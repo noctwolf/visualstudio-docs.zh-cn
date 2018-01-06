@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2bcfbc701f6f4799a51d09fac4c4eb184e6f5d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3cc815608c1871de7269a432e02f95acbb3e0d81
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 检索的校验和字节。  
@@ -53,6 +54,6 @@ HRESULT get_checksum (
   
  典型的校验和永远不会超过 32 个字节的大小，但不是会假定这是校验和的最大大小。 设置`data`参数`NULL`若要获取的检索校验和所需的字节数。 然后分配适当的大小的缓冲区，并调用此方法一次使用新的缓冲区。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)

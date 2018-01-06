@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd3fa794da188e228f44b0930bcf5b27f4b3a0fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b65094bd01549b5eb7a697e06b8e46a99a9b79df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
 检索的符号位置的偏移量。 何时使用[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)是`LocIsRegRel`或`LocIsBitField`。  
@@ -44,13 +45,13 @@ HRESULT get_offset (
 ## <a name="remarks"></a>备注  
  偏移量是从先前确定的一些已知点。 例如的偏移量`LocIsBitField`位置类型通常是从包含类的开头。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
   
-|要求|描述|  
+|需求|描述|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)

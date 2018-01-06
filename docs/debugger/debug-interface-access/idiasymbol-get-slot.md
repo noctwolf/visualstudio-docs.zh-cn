@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d188cf52d2250e2a58665b1fe27999a956846159
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d308d5e37ac74b18a9ba1317de779068c7b63315
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
 检索的位置槽编号。 何时使用[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)是`LocIsSlot`。  
@@ -41,6 +42,6 @@ HRESULT get_slot (
 > [!NOTE]
 >  返回值`S_FALSE`意味着属性不是可用于符号。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)

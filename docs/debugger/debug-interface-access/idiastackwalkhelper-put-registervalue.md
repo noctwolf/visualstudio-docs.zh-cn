@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8abfd209e5c2f59a0c55128eb235fda868f4bfd5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eec04b3ab02f10d6eb9d745c21d2d0872df0ab8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
 设置寄存器的值。  
@@ -45,6 +46,6 @@ HRESULT put_registerValue (
 ## <a name="remarks"></a>备注  
  值的大小，尽管实现应只什么注册通常包含将存储。 例如，一个 8 位寄存器会保存仅最低 8 位的给定的值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [CV_HREG_e 枚举](../../debugger/debug-interface-access/cv-hreg-e.md)

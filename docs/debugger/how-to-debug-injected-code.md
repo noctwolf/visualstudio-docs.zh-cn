@@ -27,17 +27,18 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76656372df3282efb3ec6354391517a248ffcf7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c06209d2c2774eb12c0e04d8f448b8ceb2de771
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-injected-code"></a>如何：调试插入的代码
 > [!NOTE]
 >  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
- 使用特性可大大简化 C++ 编程。 有关详细信息，请参阅[概念](/cpp/windows/attributed-programming-concepts)。 某些特性由编译器直接解释。 其他特性则向程序源中插入代码，然后由编译器进行编译。 此类插入的代码通过减少您必须编写的代码量使编程变得更容易。 但有时 bug 可能导致应用程序在执行插入的代码时失败。 发生这种情况时，您可能希望查看插入的代码。 Visual Studio 提供两种查看插入的代码的方法：  
+ 使用特性可大大简化 C++ 编程。 有关详细信息，请参阅[概念](/cpp/windows/attributed-programming-concepts)。 某些特性由编译器直接解释。 其他特性则向程序源中插入代码，然后由编译器进行编译。 此类插入的代码通过减少你必须编写的代码量使编程变得更容易。 但有时 bug 可能导致应用程序在执行插入的代码时失败。 发生这种情况时，你可能希望查看插入的代码。 Visual Studio 提供两种查看插入的代码的方法：  
   
 -   你可以查看插入的代码中**反汇编**窗口。  
   
@@ -67,6 +68,6 @@ ms.lasthandoff: 10/31/2017
   
 2.  从**调试**菜单上，选择**Windows**，然后单击**反汇编**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [调试本机代码](../debugger/debugging-native-code.md)

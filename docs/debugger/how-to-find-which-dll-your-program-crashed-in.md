@@ -25,11 +25,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6232f86e9e9f5d59e9e109d08b75120cc90902c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 95ad4f9c028b9b40bf5104539a608453c9d6f9dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>如何：查找导致程序崩溃的 DLL
 > [!NOTE]
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
   
 6.  查看**名称**和**路径**列，查看 DLL 的名称和路径。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 DLL 项目](../debugger/debugging-dll-projects.md)   
  [如何：使用“模块”窗口](../debugger/how-to-use-the-modules-window.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6dcc0a50c2bf0706e217651e72cd023902d83120
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b450fc3720ba199b833ed2fbd98a748c71b8d74f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-spy"></a>使用 Spy++
 Spy + + （spyxx 执行操作。EXE) 是基于 Win32 的实用程序，使您的系统的进程、 线程、 窗口和窗口消息的图形视图。 Spy + + 帮助的此部分包括以下的帮助主题：  

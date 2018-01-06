@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 323f94ffdbb05fcf37cd749a1b29bef47738489b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 965d090868e3ea47f5802d12b6fc0296026f90a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
 检索用于指定该函数是否包含异步 （结构化） 的异常处理的标志。  
@@ -44,12 +45,12 @@ HRESULT get_hasEHa(
 ## <a name="remarks"></a>备注  
  可以混合使用异步或结构化异常处理与 c + + 样式异常处理，但它需要特定的编译器开关，/EHa，若要启用它。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
   
-|要求|描述|  
+|需求|描述|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
