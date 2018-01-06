@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 205837bc5bfdf9476839ea1e54a53dc57dbf9a72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dfeb9f4465d4e3db18bd1332ffd0d19fecbbf861
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="operational-modes"></a>运行模式
 有三种模式在其中 IDE 可以操作，如下所示：  
@@ -56,5 +57,5 @@ ms.lasthandoff: 10/31/2017
   
  如果程序已成功将单步到下一行代码或执行某一函数，或运行到光标处或设置断点，DE 将自动转换回为中断模式。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [控制执行](../../extensibility/debugger/control-of-execution.md)

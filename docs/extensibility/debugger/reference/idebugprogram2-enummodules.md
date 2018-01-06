@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23f905a4a7fc239efb2220f15deb95954a46d998
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3b5dcc6c2384116494f4e95896328fc06bff71bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 检索此程序已加载，并且正在执行的模块的列表。  
@@ -47,6 +48,6 @@ int EnumModules(
 ## <a name="remarks"></a>备注  
  模块是一个 DLL 或程序集，并且通常列在**模块**调试窗口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

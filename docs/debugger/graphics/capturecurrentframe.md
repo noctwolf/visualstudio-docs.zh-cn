@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcdeee28077f2c7affd1c4cd1f82d8c8cb29494b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 739f2a9a97fefcb1bc57c7987d5afec7a09ff4ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
 将当前帧的剩余部分捕获到图形日志文件。  
@@ -32,6 +33,6 @@ void CaptureCurrentFrame();
   
  若要捕获帧，必须准备好你的应用以捕获并记录图形信息 — 也就是说，你必须已调用[Init](init.md)的实例通过`VsgDbg`类你在调用之前`CaptureCurrentFrame`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Init](init.md)   
  [BeginCapture](begincapture.md)

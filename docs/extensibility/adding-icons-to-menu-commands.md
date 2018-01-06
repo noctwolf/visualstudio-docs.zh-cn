@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cdf521228a1878fa94343418bd6a182f9707a2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 06d90b5174cc9ff2d09d7ccba8b2f39bc1d2a077
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-icons-to-menu-commands"></a>将图标添加到菜单命令
 命令可以显示在菜单和工具栏上。 在工具栏上很常见的命令与只是一个图标 （以节省空间） 时在菜单上显示命令通常将出现并图标和文本。  
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/31/2017
   
 8.  测试您的图标。 生成项目并启动调试。 在实验实例中，找到命令。 它应显示图标添加。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)   
  [VSCT XML 架构参考](../extensibility/vsct-xml-schema-reference.md)

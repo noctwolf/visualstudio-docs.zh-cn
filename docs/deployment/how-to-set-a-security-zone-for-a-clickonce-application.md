@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 2bba62850791f637e93d6c82ff2186ffc5f09652
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 86dbdf312c1356c6fb63fcfa32f1dd362b4c7599
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>如何：为 ClickOnce 应用程序设置安全区域
 为 ClickOnce 应用程序设置代码访问安全权限时，需要在“项目设计器”  的“安全” 页上从基本权限集开始。  
@@ -45,8 +46,8 @@ ms.lasthandoff: 10/27/2017
   
 5.  在“将要从中安装应用程序的区域”  下拉列表中，选择一个安全区域。  
   
-## <a name="see-also"></a>另请参阅  
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+## <a name="see-also"></a>请参阅  
+ [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 应用程序的的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)

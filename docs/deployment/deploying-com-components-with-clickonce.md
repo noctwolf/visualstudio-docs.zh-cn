@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: d3a8ae32afec789595ecd126eeaee0c5ea05a9e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 组件
 旧的 COM 组件部署传统上已被一个困难的任务。 组件需要进行全局注册，并因此可能导致重叠的应用程序之间的意外副作用。 这种情况下通常不是.NET Framework 应用程序中的问题因为完全独立于应用程序或组件的并行兼容。 Visual Studio 允许你将部署在 Windows XP 或更高版本的操作系统上隔离的 COM 组件。  
@@ -174,5 +175,5 @@ ms.lasthandoff: 10/27/2017
   
  即使应用程序的部署不需要注册，有几种应用场景中的 COM，注册开发人员计算机需要安装。 `Isolated`属性需要在开发人员计算机上注册 COM 组件，以自动生成过程生成清单。 没有在生成过程中调用自注册的注册捕获功能。 此外，在类型库中未显式定义的任何类将不会反映在清单中。 当使用预先存在的清单，如本机引用的 COM 组件时该组件可能不需要在开发期间注册。 但是，注册是必需的如果组件是 ActiveX 控件并且你想要将其包含在**工具箱**和 Windows 窗体设计器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)

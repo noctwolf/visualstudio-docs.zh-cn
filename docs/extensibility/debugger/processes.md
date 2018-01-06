@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f295dd93580caee4b6288febf7e83c09736b6080
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e69270c5d90c26cf653ee31b81bcb9f453b814e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processes"></a>进程
 在调试器体系结构，方面**过程**:  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
  调试包可以调试引擎 (DE) 通过附加到进程调用[附加](../../extensibility/debugger/reference/idebugprocess2-attach.md)。 这意味着，DE 将附加到所有可能的程序在它可以处理的过程中运行。 例如，如果公共语言运行时 DE 附加到进程，附加仅到正在运行托管的代码的程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [程序](../../extensibility/debugger/programs.md)   
  [线程](../../extensibility/debugger/threads.md)   
  [调试器概念](../../extensibility/debugger/debugger-concepts.md)   

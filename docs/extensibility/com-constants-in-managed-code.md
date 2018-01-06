@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cd6e70cc58f27dd0beb08d615abcdb52884f3f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ca950fb5be94dc75ca038db4c109f5a46c6b2c0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="com-constants-in-managed-code"></a>在托管代码中的 COM 常量
 托管包框架 (MPF) 使某些标准的 COM 常量提供给托管代码。 供您参考下面列出了这些常量。  
@@ -128,5 +129,5 @@ ms.lasthandoff: 10/31/2017
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [错误处理和返回值](../extensibility/error-handling-and-return-values.md)

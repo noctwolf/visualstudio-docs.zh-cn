@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 90e55a7a16731d6e4e501282d7b96293d0bc9acd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0499fbf29e9bb16d0f5ff99c42f031d06e4fb4de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>如何：在内存中向上或向下翻页
 当你查看中的内存内容**内存**窗口或**反汇编**窗口中，你可以使用垂直滚动条向上或向下移动内存空间中。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
 -   单击垂直滚动条顶部或底部的箭头。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [内存窗口](../debugger/memory-windows.md)   
  [如何： 使用反汇编窗口](../debugger/how-to-use-the-disassembly-window.md)   
  [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)

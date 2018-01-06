@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 160aa732568f92b7aa768146de13c41867064717
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 570f77cddede91a81dc15200ebcf02b27f1a4f2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>在 Visual Studio 中的并行线程中的变量上设置监视
 在“并行监视”窗口中，您可同时显示一个表达式保留在多个线程上的值。 每个行均表示一个在应用程序中运行的线程，但一个线程可能用多个行表示。 更具体地说，每个行均表示一个函数调用，其函数签名与当前堆栈帧上的函数的签名匹配。 您可以对列中的项进行排序、重新排序、移除和分组操作。 您可标记、取消标记、冻结（禁止显示）和解冻（恢复）线程。 下面的列显示在**并行监视**窗口：  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  在代码中设置断点。  
   
-2.  在菜单栏上，选择**调试**，**启动调试**。 等待应用程序到达断点。  
+2.  在菜单栏上，依次选择“调试”、“开始调试”。 等待应用程序到达断点。  
   
 3.  在菜单栏上，选择**调试**， **Windows**，**并行监视**，然后选择监视窗口。 您可打开最多 4 个窗口。  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
   
 -   输入中的布尔表达式**按布尔表达式筛选**框。 调试器将为每个线程上下文计算此表达式。 仅显示其中的值为 `true` 的行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何： 使用 GPU 线程窗口](../debugger/how-to-use-the-gpu-threads-window.md)   
  [演练：调试 C++ AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

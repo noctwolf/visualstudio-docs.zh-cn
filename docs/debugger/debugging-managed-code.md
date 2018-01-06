@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42018230262e17bc99905833da1b15e30a7d62aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: fc083adc600b7de2538abf1ada468f3d626b7ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-managed-code"></a>调试托管代码
 本节包含了托管应用程序或使用面向公共语言运行时的语言（如 Visual Basic、C# 和 C++）编写的应用程序的常见调试问题和调试技术。 此处介绍的技术都是高级技术。 有关详细信息，请参阅[使用调试器](../debugger/debugger-basics.md)。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
  [混合模式调试](../debugger/debugging-mixed-mode-applications.md)  
  讨论调试混合模式的应用程序。 这表示合并本机代码和托管代码的任何应用程序。  
   
- [错误： 调试不可能，因为系统上启用了内核调试程序](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [错误：由于系统上启用了内核调试程序，因此不可能进行调试](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  本文介绍如果您尝试上调试托管的代码发生的错误消息[!INCLUDE[win7](../debugger/includes/win7_md.md)]， [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]， [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]， [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)]，或在调试模式下启动 Windows NT 系统。  
   
  [JIT 优化和调试](../debugger/jit-optimization-and-debugging.md)  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
  [调试主页](../debugger/debugger-feature-tour.md)  
  提供指向调试文档的较大章节的链接。 涉及的信息包括：调试器的新增功能，设置和准备，断点，处理异常，编辑和继续，调试托管代码，调试 Visual C++ 项目，调试 COM 和 ActiveX，调试 DLL，调试 SQL，以及用户界面参考。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：设计时调试自定义 Windows 窗体控件](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)   
  [调试器安全](../debugger/debugger-security.md)  
  [在 Visual Studio 中调试](../debugger/index.md)[调试器功能教程](../debugger/debugger-feature-tour.md)

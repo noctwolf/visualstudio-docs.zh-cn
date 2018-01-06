@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a958e6f6aa815b7d5726c2c441876331fba56b8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f0b00c31280b9471da99aea55118e25dd551ad96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>通过使用旧版 API 的自定义代码窗口
 代码窗口是支持一个或多个文本视图的文档窗口对象。 代码窗口的确切功能取决于关联的语言服务。 在多文档界面 (MDI) 模式下，代码窗口是 MDI 子框架。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
  [如何： 触发事件; 当编辑器失去焦点](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  说明如何将文档视图附加到文档数据对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   

@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30ef8524fbc5d6451bcc302079f769fd05c66185
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f6cba643f6d1b0f5f1d1c9fff23c8636bd12caca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 此方法比较此域和指定字段相等。  
@@ -44,5 +45,5 @@ int Equal(
 ## <a name="return-value"></a>返回值  
  如果这些字段为相同，则返回`S_OK`。 如果这些字段为不同，则返回`S_FALSE.`否则，返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

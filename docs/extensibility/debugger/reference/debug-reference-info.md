@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6bb8d088b86c0e0af22e1ebde61d7084e46e238
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5fc8f3517d1a1c0f3ea2d8d5f9f19098fe9c7e49
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 描述一个引用。  
@@ -74,14 +75,14 @@ public struct DEBUG_REFERENCE_INFO {
 ## <a name="remarks"></a>备注  
  此结构传递给调用[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)方法填充的。 从列表的一部分，也会返回此结构[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)接口即，反过来，通过调用[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)方法。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)   

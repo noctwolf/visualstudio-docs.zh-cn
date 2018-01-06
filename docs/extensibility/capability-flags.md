@@ -13,16 +13,17 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5104bff319f4a6517ddccde1da1407156797928e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec5cedcec1d79cbc3a71410a1048f5014c8aa9e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="capability-flags"></a>功能标志
 SCC_CAP_*xxx*标志是用于指示了源代码管理插件的功能的位标志。 SCC_EXCAP_*xxx*标志是指示扩展的功能，并解析为整数值的增量标志。  
   
-|功能代码|值|描述|  
+|功能代码|“值”|描述|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_REMOVE`|0x00000001L|支持[SccRemove](../extensibility/sccremove-function.md)和命令。|  
 |`SCC_CAP_RENAME`|0x00000002L|支持[SccRename](../extensibility/sccrename-function.md)和命令。|  
@@ -52,7 +53,7 @@ SCC_CAP_*xxx*标志是用于指示了源代码管理插件的功能的位标志�
   
 ## <a name="capability-bits-added-in-version-12"></a>在版本 1.2 中添加的功能 Bits  
   
-|功能代码|值|描述|  
+|功能代码|“值”|描述|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|支持[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)。|  
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|支持[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)。|  
@@ -65,7 +66,7 @@ SCC_CAP_*xxx*标志是用于指示了源代码管理插件的功能的位标志�
 ## <a name="capability-bits-added-in-version-13"></a>版本 1.3 中添加的功能 Bits  
  这些标志传递到一次一个地[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)函数来确定是否支持此功能。  
   
-|扩展的功能代码|值|描述|  
+|扩展的功能代码|“值”|描述|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|支持`SCC_CHECKOUT_LOCALVER`签出的选项。|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|支持[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)。|  
@@ -79,5 +80,5 @@ SCC_CAP_*xxx*标志是用于指示了源代码管理插件的功能的位标志�
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|可以删除签出文件。|  
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|可以重命名签出文件。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件](../extensibility/source-control-plug-ins.md)

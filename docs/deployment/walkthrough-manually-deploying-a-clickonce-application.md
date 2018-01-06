@@ -24,16 +24,17 @@ caps.latest.revision: "49"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 10f99d620060245fd7dac4e2420216a23d068a83
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>演练：手动部署 ClickOnce 应用程序
 如果你不能使用 Visual Studio 部署你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，或你需要使用高级的部署功能，如受信任的应用程序部署，你应使用 Mage.exe 命令行工具来创建你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]清单。 本演练介绍如何创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]通过使用命令行版本 (Mage.exe) 或清单生成和编辑工具的图形版本 (MageUI.exe) 部署。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  本演练具有一些先决条件和需要生成部署之前选择的选项。  
   
 -   安装 Mage.exe 和 MageUI.exe。  
@@ -162,7 +163,7 @@ ms.lasthandoff: 10/27/2017
   
 13. 如果必须将证书作为文件系统上的文件存储，使用**使用证书文件签名**选项，然后从文件系统的证书选择使用的省略号 (**...**) 按钮。 然后键入您证书的密码。  
   
-     - 或 -  
+     或  
   
      如果你的证书保存在证书存储区可从你的计算机访问，请选择**使用存储的证书进行签名**选项，然后从提供的列表中选择的证书。  
   
@@ -190,7 +191,7 @@ ms.lasthandoff: 10/27/2017
   
 25. 如果必须将证书作为文件系统上的文件存储，使用**使用证书文件签名**选项，然后从文件系统的证书选择使用的省略号 (**...**) 按钮。 然后键入您证书的密码。  
   
-     - 或 -  
+     或  
   
      如果你的证书保存在证书存储区可从你的计算机访问，请选择**使用存储的证书进行签名**选项，然后从提供的列表中选择的证书。  
   
@@ -205,7 +206,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="next-steps"></a>后续步骤  
  当你需要部署应用程序的新版本时，创建一个名为的新版本的新目录-例如，1.0.0.1—and 将新的应用程序文件复制到新的目录。 接下来，你需要按照前面的步骤以创建和注册一个新的应用程序清单，并更新以及部署清单进行签名。 请注意，在这两个在 Mage.exe 中指定相同的更高版本`-New`和`-Update`调用，作为[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]仅使用最重要的最左边的整数中更新更高版本。 如果你使用 MageUI.exe，你可以更新部署清单通过打开它，选择**应用程序引用**选项卡上，单击**选择清单**按钮，，然后选择已更新应用程序清单。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe（图形化客户端中的清单生成和编辑工具）](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   

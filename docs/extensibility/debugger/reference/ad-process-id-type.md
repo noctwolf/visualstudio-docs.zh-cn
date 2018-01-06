@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 75904ef6e06ef7ccd6d126091f8ec0fbe523ac9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3aa9720b64404eb2478763b36c04addb480babfa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
 指定如何解释的进程 ID [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)结构。  
@@ -50,13 +51,13 @@ public enum enum_AD_PROCESS_ID {
 ## <a name="remarks"></a>备注  
  用于`ProcessIdType`的成员[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)结构来标识类型包含在结构中的进程 ID。 确定如何解释`ProcessId`联合结构中。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

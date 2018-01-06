@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba38521b8d3d224d6544d95b947d5f0e29727c0a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 82c81f2998497f047550e35397dc870338ed977e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>如何：调试 ASP.NET 异常
 调试异常是开发可靠的重要组成部分[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]应用程序。 有关如何调试异常的常规信息位于[管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)。  
@@ -50,5 +51,5 @@ ms.lasthandoff: 10/31/2017
   
 -   在可能引发您知道如何处理的可预见异常的代码周围放置 `try ... catch` 块。 例如，如果应用程序调用 XML Web 服务或直接 SQL Server，应该将该代码在**try … catch**块中，因为有可能发生的大量异常。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [调试 ASP.NET 应用程序](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

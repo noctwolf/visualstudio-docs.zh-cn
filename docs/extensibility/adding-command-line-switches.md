@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e292a08e6d8ac9c6f59f84514fbb625779f82c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d686e7b68e790c419679bf495bf08ad4cd4807e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-command-line-switches"></a>添加命令行开关
 你可以添加时执行 devenv.exe 应用于你的 VSPackage 的命令行开关。 使用<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>声明对开关以及其属性名称。 在此示例中，添加名为的 VSPackage 的一个子类 MySwitch 交换机**AddCommandSwitchPackage**不带任何参数且自动加载 VSPackage。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
  以下表所示命名的参数  
   
- 参数  
+ 自变量  
  为交换机参数的数目。 可以是"*"，或自变量列表。  
   
  DemandLoad  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
  HelpString  
  帮助字符串或资源 ID 的字符串与一起显示**devenv /？**。  
   
- 名称  
+ name  
  开关。  
   
  PackageGuid  
@@ -77,7 +78,7 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
   
  它由你负责每次加载你的包时检查命令行开关。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
  [Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)   

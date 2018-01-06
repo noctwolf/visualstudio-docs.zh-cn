@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c6a9d1d63b4fb15a920f175013af8a05cb38beb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a5ce9f82e88c6275000c17d40e2b1e1494683715
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluation-interfaces"></a>表达式评估接口
 > [!IMPORTANT]
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
 |[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|提供的功能创建[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)对象。|  
 |[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|表示一套[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [编写 CLR 表达式计算器](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

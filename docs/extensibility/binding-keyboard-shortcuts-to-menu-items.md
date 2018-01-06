@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fe1c0bb9c3028c70e1be9df9af1de3b0804844e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ceae0f2ea69ce0340565abb85bb002713010407d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>绑定的键盘快捷方式菜单项
 若要绑定到自定义菜单命令的键盘快捷方式，只需将条目添加到包的.vsct 文件中。 本主题说明如何映射到自定义按钮、 菜单项或工具栏命令的键盘快捷方式以及如何将应用的默认编辑器中的键盘映射或将其限制为自定义编辑器。  
@@ -108,5 +109,5 @@ ms.lasthandoff: 10/31/2017
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)

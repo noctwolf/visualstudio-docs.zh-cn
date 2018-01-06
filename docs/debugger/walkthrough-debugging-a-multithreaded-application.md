@@ -26,11 +26,12 @@ caps.latest.revision: "44"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64d9eccdf57388428bfcd7ba5e43f75087bcf0bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bde9f1c8aa09f8e5961bd228a5f1947c2fc30f82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-threads-in-the-debugger-in-visual-studio-using-the-threads-window"></a>使用线程窗口的 Visual Studio 中的调试器中查看线程
 在**线程**窗口中，你可以检查和使用的线程中的应用程序进行调试。 有关如何使用的分步指南**线程**窗口中，请参阅[演练： 使用线程窗口进行调试](../debugger/how-to-use-the-threads-window.md)。
@@ -164,6 +165,6 @@ ms.lasthandoff: 10/31/2017
   
 -   在顶部工具栏中**线程**窗口中，单击**展开调用堆栈**或**折叠调用堆栈**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)

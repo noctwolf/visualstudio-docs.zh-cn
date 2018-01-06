@@ -20,11 +20,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 72e166d5501849dd84964364a94b2bdf6dc239a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 14340ad3a19feb6340b836b1db8d71b3a8adcd83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 调试的限制
 有三种开始 WCF 服务调试的方式：  
@@ -82,6 +83,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="self-hosting"></a>自我托管  
  若要能够调试[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]3.0 或 3.5 应用程序，[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]之前必须安装 3.0 或 3.5[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]安装。 如果[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]之前安装了[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]3.0 或 3.5，尝试进行调试时出现错误[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]3.0 或 3.5 应用程序。 错误消息为：无法自动单步执行服务器。 若要修复此问题，请使用 Windows**控制面板** > **程序和功能**修复你[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]安装。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 WCF 服务](../debugger/debugging-wcf-services.md)   
  [如何：调试自托管的 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

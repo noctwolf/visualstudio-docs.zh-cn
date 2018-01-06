@@ -22,11 +22,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92d888c04827f3df2c9bc5ede33d4dfd9a6742dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b43d7c5fb8d66e758a44b86d4918f04599d6147
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>从 Visual Studio 的调试 DLL 项目
 下面的 Visual Studio 模板创建 Dll:  
@@ -121,11 +122,11 @@ ms.lasthandoff: 10/31/2017
 
 项目设置的详细信息，请参阅[属性页 （Visual c + +）](/cpp/ide/property-pages-visual-cpp)。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
  [Visual c + + 项目类型](../debugger/debugging-preparation-visual-cpp-project-types.md)   
  [C#、F#、和 Visual Basic 项目类型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [C + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [对于 C# 的项目设置调试配置](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [调试配置适用于 Visual Basic 项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [调试器安全](../debugger/debugger-security.md)

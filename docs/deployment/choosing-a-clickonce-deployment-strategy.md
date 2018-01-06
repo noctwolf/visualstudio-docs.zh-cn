@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: e0f39c75620eab8e94ecd65b1ab1f41cc5e67875
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fffb73fac64aad880531fb8ea51904fb5ac71b16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>选择 ClickOnce 部署策略
 有三种不同的策略用于部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序；所选择的策略主要取决于要部署的应用程序的类型。 下面介绍了这三种部署策略：  
@@ -74,8 +75,8 @@ ms.lasthandoff: 10/27/2017
   
  面向 .NET Framework 2.0 的应用程序需要 Internet Explorer。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
- [如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)

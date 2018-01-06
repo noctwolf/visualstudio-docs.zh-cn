@@ -16,11 +16,12 @@ caps.latest.revision: "39"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26f5777477617b0bffe008ec92873b852af8fe08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85d38f2347009d75c5e06365c757d2d51339bf06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>将命令添加到解决方案资源管理器工具栏
 本演练演示如何向其中添加按钮**解决方案资源管理器**工具栏。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  使用 XML 命令表 (.vsct) 文件而不是命令表配置 (.ctc) 文件来定义菜单和命令在你的 Vspackage 中的显示方式。 有关详细信息，请参阅 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展  
@@ -119,5 +120,5 @@ ms.lasthandoff: 10/31/2017
   
  按钮的可见性控制通过[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]直到加载 VSPackage。 加载 VSPackage 后，由 VSPackage 控制按钮的可见性。  有关详细信息，请参阅[MenuCommands 与。OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -22,18 +22,19 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c5698fef83134e9cdd7451a1ec43ace33dbb463
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 8cc51e55af477edfac65b79ca29e26b720510c55
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>调试准备：Visual C++ 项目类型
 本节描述如何调试用 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目模板创建的基本项目类型。  
   
  请注意，创建 Dll 作为其输出这些项目类型已被分组到[调试 DLL 项目](../debugger/debugging-dll-projects.md)由于它们共享的常见功能。  
   
-##  <a name="BKMK_In_this_topic"></a> 主题内容  
+##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  [建议的属性设置](#BKMK_Recommended_Property_Settings)  
   
  [Win32 项目](#BKMK_Win32_Projects)  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
 |-------------------|-------------|  
 |**生成调试信息**|你应始终将此选项设置为**是 (/debug)**创建调试符号和所需的调试文件。 在应用程序进入成品阶段时，可以将其设置为关闭。|  
   
- [主题内容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+ [在本主题中](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Win32_Projects"></a>Win32 项目  
  Win32 应用程序是用 C 或 C++ 编写的传统 Windows 程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试此类应用程序非常简单。  
@@ -96,7 +97,7 @@ ms.lasthandoff: 10/31/2017
   
  有关详细信息，请参阅[用于 c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
- [主题内容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+ [在本主题中](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a>Windows 窗体应用程序 (.NET)  
  **Windows 窗体应用程序 (.NET)**模板创建[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]Windows 窗体应用程序。 有关详细信息，请参阅 [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
@@ -109,9 +110,9 @@ ms.lasthandoff: 10/31/2017
   
  调试 Windows 窗体应用程序的另一种方法是从 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 外部启动应用程序并附加到它上面。 有关详细信息，请参阅[将附加到正在运行的程序或多个程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
- [主题内容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+ [在本主题中](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  
  [C + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [将附加到正在运行的程序或多个程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   

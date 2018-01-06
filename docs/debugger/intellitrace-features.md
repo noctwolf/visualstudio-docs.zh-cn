@@ -25,11 +25,12 @@ caps.latest.revision: "67"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3672d2448c2b8872605db4a72c06d18c12e18886
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: f2ad259a116b1679f1e619dc9d281c114fa086cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 功能
 可以使用 IntelliTrace 记录事件和调用应用程序的方法，它让你能够在执行中的不同位置检查其状态（调用堆栈和局部变量值）。 只需照常启动调试-默认情况下，已启用 IntelliTrace，你可以看到 IntelliTrace 正在记录在新的信息**诊断工具**下的窗口**事件**选项卡。选择事件，然后单击**激活历史调试**以查看调用堆栈和局部变量记录此事件。  

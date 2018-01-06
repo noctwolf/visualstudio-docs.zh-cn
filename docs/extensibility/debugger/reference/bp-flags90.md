@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dddedfcbfe48f6ef6ceaedcdcfb1d7089307bcd3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: af59e06ad31b56c04127ca89b43a903db36d3615
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
 枚举有效可选标志的值。 可选标志可能用于设置断点时指定的其他信息。 此枚举扩展[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)枚举。  
@@ -64,12 +65,12 @@ public enum enum_BP_FLAGS90
  BP90_FLAG_TRACEPOINT_CONTINUE  
  由本机调试引擎使用，以确定是否应清除单步执行状态。 它不同于 BP90_FLAG_DONT_STOP 因为如果跟踪点执行宏，则不会设置 BP90_FLAG_DONT_STOP 的不同而不同。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： Msdbg90.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

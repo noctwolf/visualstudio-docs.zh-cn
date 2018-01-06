@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f84d1cfa2208dc8a8b9d279a46ecf52676c0ae62
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 640c0852a3745d11aae119e3c00e024b594d9132
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：使用 ClickOnce 部署 API 按需下载程序集
 默认情况下，所有程序集包括在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]首次运行应用程序时，会下载应用程序。 但是，您可能必须使用你的用户的一小部分的应用程序的部分。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将标记为"可选"应用程序中的某些程序集和如何通过使用下载中的类<xref:System.Deployment.Application>当公共语言运行时 (CLR) 要求它们时的命名空间。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/27/2017
 > [!NOTE]
 >  应用程序必须在完全信任下运行才能使用此过程。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你将需要以下组件来完成本演练之一：  
   
 -   Windows SDK 中。 可以从 Microsoft 下载中心下载 Windows SDK。  
@@ -129,5 +130,5 @@ ms.lasthandoff: 10/27/2017
   
 3.  在主窗体显示时按 <xref:System.Windows.Forms.Button>。 你应看到"Hello，World ！"中读取一个消息框窗口中的字符串。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Deployment.Application.ApplicationDeployment>

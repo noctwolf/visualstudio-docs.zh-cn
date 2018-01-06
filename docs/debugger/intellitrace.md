@@ -24,11 +24,12 @@ caps.latest.revision: "135"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f009abffb1c956a0f7c57315181234fbea2fc1c
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace"></a>IntelliTrace
 使用 IntelliTrace 记录和跟踪代码的执行历史记录时，可缩短调试应用程序所用的时间。 你可以更轻松地发现 Bug，因为 IntelliTrace 让你能够：  
@@ -127,7 +128,7 @@ ms.lasthandoff: 11/15/2017
   
 -   **.NET framework 事件**  
   
-     默认情况下，IntelliTrace 记录最常见的 .NET Framework 事件。 例如:   
+     默认情况下，IntelliTrace 记录最常见的 .NET Framework 事件。 例如:  
   
     -   对于选中复选框事件，IntelliTrace 将收集复选框状态和文本。  
   

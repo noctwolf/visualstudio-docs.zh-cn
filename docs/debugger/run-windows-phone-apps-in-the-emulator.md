@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3a5fc067ac65cea13181632c562a635599f0d7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc458bddfe354f43afd15176d0283cad4875234d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-windows-phone-81-apps-in-the-emulator"></a>在模拟器中运行 Windows Phone 8.1 应用程序
 Windows Phone 仿真程序提供了一个虚拟环境，你可以在其中调试并测试计算机上的 Windows Phone 应用，而无需使用物理设备。 你可以模拟常用的触摸和旋转事件，还可以选择要模拟的物理屏幕大小和分辨率。 还可以测试许多常用的功能，例如定位、网络、通知、传感器、加速计以及可选的 SD 卡。  
@@ -37,7 +38,7 @@ Windows Phone 仿真程序提供了一个虚拟环境，你可以在其中调试
   
  当首次在 Windows Phone 仿真程序中运行 Windows Phone 应用时，会发生以下事件：  
   
-1.  模拟器将会启动。  
+1.  仿真程序将启动。  
   
 2.  仿真程序将加载 Windows Phone 操作系统。  
   
@@ -148,7 +149,7 @@ Windows Phone 仿真程序提供了一个虚拟环境，你可以在其中调试
   
  下表列出了可用于模拟 Windows Phone 上的按钮和其他控件的硬件键盘上的键。  
   
-|计算机硬件键|Windows Phone 硬件按钮|备注|  
+|计算机硬件键|Windows Phone 硬件按钮|说明|  
 |---------------------------|-----------------------------------|-----------|  
 |F1|BACK|长按可实现预期效果。|  
 |F2|START|长按可实现预期效果。|  

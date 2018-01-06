@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 771506897b5c40242c26a06db4e176e6eb785b21
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e3ae16740868fcbd0fdd98f35afed4290fae5905
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-project-settings"></a>调试器项目设置
 某些项目设置也对调试产生影响。 这些设置确定诸如调试器查看的目录、用于启动程序的命令和命令参数以及为程序创建的调试信息的类型等内容。 可以在 **“属性页”** 对话框中更改这些设置。  
@@ -60,5 +61,5 @@ ms.lasthandoff: 11/11/2017
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)  
  介绍调试器的相关属性设置，以及使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器调试程序所需的准备工作。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)

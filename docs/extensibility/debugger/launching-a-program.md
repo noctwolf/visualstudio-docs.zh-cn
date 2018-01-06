@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29e05c7cef8b7bc8644ccbf7ea542e2f043547a6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5762b59a52cce2bf918c50630bbf82e176d9e82f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launching-a-program"></a>启动程序
 想要调试的程序的用户可以按 f5 键以从 IDE 运行调试器。 该解决方案从开始一系列事件，最终导致 IDE 的连接到调试引擎 (DE)，后者反过来连接，或附加，到程序，如下所示：  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  如果指定 DE，DE 调用操作系统启动程序。 正在启动程序，因此加载程序的运行时环境。 例如，如果程序在 MSIL 中编写的公共语言运行时将调用以运行程序。  
   
-     - 或 -  
+     或  
   
      如果未指定 DE，端口调用操作系统启动程序，这会导致要加载的程序的运行时环境。  
   

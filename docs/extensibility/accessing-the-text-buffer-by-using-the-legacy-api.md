@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: facfc1670bf9d04035beffc47b7124bd5d309a7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 77002e095690da85e73f1a79d405cb5174b96851
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>通过使用旧版 API 访问文本缓冲区
 文本负责管理文本流和文件持久性。 尽管缓冲区可以读取或写入其他格式，使用 Unicode 执行所有普通通信使用的缓冲区。 在旧的 Api 中，文本缓冲区可以使用一维或二维的坐标系统以标识缓冲区中的字符位置。  
@@ -39,5 +40,5 @@ ms.lasthandoff: 10/31/2017
  [使用文本管理器来监视全局设置](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
  说明如何使用文本管理器来监视全局设置...  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在核心编辑器](../extensibility/inside-the-core-editor.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: eca5b5dff1bb7a00d8e138d367581081eaab6fc5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ada6fe4eec6b8bda3f0b44f097581103ea7b138e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 通过使用 InstallShield Limited Edition，你可以创建安装文件并将其分发给用户，以便他们可以在不连接到网络的情况下安装桌面应用程序或组件。 InstallShield Limited Edition 对 Visual Studio 专业版和企业版用户免费。 它取代了 Windows Installer 技术，Visual Studio 不再支持该技术。 作为替代方法，你可以使用需要网络连接的 ClickOnce 来分发应用程序和组件。 请参阅 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。  

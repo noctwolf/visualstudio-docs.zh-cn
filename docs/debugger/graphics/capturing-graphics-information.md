@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68e02e99eb621a5f7884e9848f0065fa0220be92
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 89488533ab8ba36b0344faa7f0b800d8c4ecc6ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="capturing-graphics-information"></a>捕获图形信息
 从 Direct3D 应用捕获图形信息，以便使用 Visual Studio 图形分析器来诊断呈现问题和性能问题。  
@@ -86,5 +87,5 @@ ms.lasthandoff: 11/11/2017
 ## <a name="capturing-graphics-information-from-the-command-line"></a>从命令行捕获图形信息  
  可使用命令行工具从应用捕获图形信息。 DXCap.exe 这一工具可以快速捕获和播放图形信息，而不使用 Visual Studio 或编程捕获。 具体而言，你可以使用 DXCap.exe 来实现自动化，或在测试环境中使用。 有关 DXCap.exe 的详细信息，请参阅[命令行捕获工具](command-line-capture-tool.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：捕获图形信息](walkthrough-capturing-graphics-information.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc520e9d28e8cc02262833d2de4cba088b879dab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-event-list"></a>图形事件列表
 使用 Visual Studio 图形分析器中的图形事件列表来浏览在呈现游戏或应用的帧时所记录的 Direct3D 事件。  
@@ -108,12 +109,12 @@ ms.lasthandoff: 10/31/2017
 
 此窗口，可查看事件列表中的选定项的历史记录。  在顶部的下拉列表中可用来选择要查看的历史记录的其他项。  窗口的上半包含**帧安装事件**。  这些事件为划分为事件*创建*键入类别，然后是通常初始化和创建资源的调用。  窗口的下半部分包含的底部**帧事件**部分。  这些是正常的读取和写入的资源使用过程中发生的事件。  
 
-列|说明
+列|描述
 ---|---
-**类型** | 通常显示的项的类型*创建*，*读取*和*编写*。  
+**Type** | 通常显示的项的类型*创建*，*读取*和*编写*。  
 **视图** | 在该时刻显示的资源的缩略图。  双击该缩略图，以在该时间打开资源的详细信息视图。  
 **Event**| 显示，发生在方法调用生成事件。  对单个项的任何其他历史记录可以通过选择监视图标来查看![监视图标](media/gfx_watch.png)上适当的行。  此外，在蓝色文本，如绘制任何项`m_commandList`在上面的屏幕截图中，选择来进行更多详细信息。
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：因设备状态而缺少对象](walkthrough-missing-objects-due-to-device-state.md)

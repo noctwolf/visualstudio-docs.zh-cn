@@ -22,11 +22,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 371c48282b2f775833287046ed9810f0cbc8f69e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f50c41a18f6d018ca717fbfd0cd926da8e6dcf65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>如何： 从 DLL 项目在 Visual Studio 中调试
 调试 DLL 项目的一种方法是在 DLL 项目的项目属性中指定调用应用程序，然后你可以开始调试从 DLL 项目本身。 要使用此方法，应用程序必须调用该 DLL，并且该 DLL 必须在应用程序能够找到它的位置 （否则为应用程序可能找到 DLL 的不同版本并将其加载相反，且它不会命中断点）。 调试 Dll 的其他方法，请参阅[调试 DLL 项目](../debugger/debugging-dll-projects.md)。
@@ -83,8 +84,8 @@ C++ 属性页的布局和内容与 C# 和 Visual Basic 属性页的不同。
 
     在您的 DLL 中，将命中断点。 如果你不能够命中断点，请确保您的 DLL 输出 (默认情况下， **project\Debug**文件夹) 处于位置调用应用程序应该能够找到它。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 DLL 项目](../debugger/debugging-dll-projects.md)   
- [对于 C# 的项目设置调试配置](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [调试配置适用于 Visual Basic 项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)

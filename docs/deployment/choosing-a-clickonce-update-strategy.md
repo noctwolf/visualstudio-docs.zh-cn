@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 6c7d8b1562b821129b3b9f0e6881f7a47a3a95da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a056b8d7d7581b63941fb952def0892c25382b44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>选择 ClickOnce 更新策略
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以提供应用程序自动更新。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序会定期读取其部署清单文件，以查看是否有可用的应用程序更新。 如果有，则会下载并运行应用程序的新版本。 为提高效率，仅下载那些已更改的文件。  
@@ -119,7 +120,7 @@ ms.lasthandoff: 10/27/2017
   
  如果使用受信任的应用程序部署，则不会出现任何信任级别提示。 有关详细信息，请参阅 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Deployment.Application>   
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   

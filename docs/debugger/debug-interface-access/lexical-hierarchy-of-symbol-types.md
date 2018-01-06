@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0077ababbbcfb1b2dff77a8847f5e0e0671241be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d6f9fe7b24a1e2bdd68d92f6dd22952df0d2a057
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>符号类型的词法层次结构
 下表显示词法层次结构中的符号类型。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  其他符号属性可根据符号类型。 中的各个符号主题列出了这些属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [符号类型的类层次结构](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [Idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
  [符号和符号标记](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   

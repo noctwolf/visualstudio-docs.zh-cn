@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb69afe513010a7da4b4a85669bbc5f145f8dbc5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 244f6c2113aef3b3c3576288a0c403d702d8b17a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="program-control"></a>程序控件
 Visual Studio 中调试，所有以下单步执行和继续例程在级别上发生程序：  
@@ -48,5 +49,5 @@ Visual Studio 中调试，所有以下单步执行和继续例程在级别上发
   
  对于多线程程序中，你还必须实现[IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)方法和的所有方法[IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md)接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [执行控件和状态计算](../../extensibility/debugger/execution-control-and-state-evaluation.md)

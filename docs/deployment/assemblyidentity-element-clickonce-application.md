@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: db313077fa7903b2bdb2fbbe6b76aa80c940fecd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b731522897512300459a32f8e01c4d54277eaa5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt;元素 （ClickOnce 应用程序）
 标识部署中的应用程序[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。  
@@ -43,13 +44,13 @@ ms.lasthandoff: 10/27/2017
 ## <a name="elements-and-attributes"></a>元素和属性  
  `assemblyIdentity`元素是必需的。 它不包含任何子元素，并具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`Name`|必需。 标识应用程序的名称。<br /><br /> 如果`Name`包含特殊字符，例如单引号或双引号引号，应用程序可能无法激活。|  
-|`Version`|必需。 采用以下格式指定应用程序的版本号：`major.minor.build.revision`|  
+|`Name`|必须的。 标识应用程序的名称。<br /><br /> 如果`Name`包含特殊字符，例如单引号或双引号引号，应用程序可能无法激活。|  
+|`Version`|必须的。 采用以下格式指定应用程序的版本号：`major.minor.build.revision`|  
 |`publicKeyToken`|可选。 指定的 16 个字符的十六进制字符串表示的最后 8 个字节`SHA-1`的应用程序集签名的公钥的哈希值。 用于对目录进行签名的公钥必须是 2048 位或更高版本。<br /><br /> 虽然为程序集签名是可选但建议，此属性是必需的。 如果程序集未签名，你应从自签名的程序集复制值或使用"假"全为零的值。|  
-|`processorArchitecture`|必需。 指定处理器。 有效值为`msil`适用于所有处理器`x86`适用于 32 位 Windows`IA64`适用于 64 位 Windows 和`Itanium`Intel 64 位 Itanium 处理器的。|  
-|`language`|必需。 标识由两部分语言代码 (例如， `en-US`) 的程序集。 此元素处于`asmv2`命名空间。 如果未指定，默认值是`neutral`。|  
+|`processorArchitecture`|必须的。 指定处理器。 有效值为`msil`适用于所有处理器`x86`适用于 32 位 Windows`IA64`适用于 64 位 Windows 和`Itanium`Intel 64 位 Itanium 处理器的。|  
+|`language`|必须的。 标识由两部分语言代码 (例如， `en-US`) 的程序集。 此元素处于`asmv2`命名空间。 如果未指定，默认值是`neutral`。|  
   
 ## <a name="examples"></a>示例  
   
@@ -68,6 +69,6 @@ ms.lasthandoff: 10/27/2017
   type="win32" />  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)   
  [\<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)

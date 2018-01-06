@@ -28,11 +28,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 0ca5bb824cbe4e37db241aba956f9f6bf91d18cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d3a9762872f74b39d8cef387703488c01647dbcc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>创建供其他人部署的 ClickOnce 应用程序
 并非所有开发人员正在使用 ClickOnce 部署都计划部署应用程序本身。 许多它们只需将其应用程序打包使用 ClickOnce，然后将文件提交给客户，例如大型公司。 客户成为一个负责承载其网络上的应用程序。 本主题讨论一些.NET Framework 3.5 版之前的版本中的这种部署中固有的问题。 然后，它将介绍通过使用.NET Framework 3.5 中的新的"使用信任的清单"功能提供一个新的解决方案。 最后，则可以确定创建仍使用较旧版本.NET Framework 的客户的 ClickOnce 部署的建议策略。  
@@ -100,7 +101,7 @@ ms.lasthandoff: 10/27/2017
   
  此方法的缺点是，它需要客户若要安装.NET Framework SDK 工具中，并在开发人员或系统管理员是水平地使用它们。 有些客户可能要求解决方案需要很少或没有技术其一部分工作。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [为测试部署 ClickOnce 应用程序服务器和生产服务器无需重新签名](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
  [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [演练：手动部署不需要重新签名并且保留署名信息的 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)

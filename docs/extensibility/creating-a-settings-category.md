@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016aac6f0e23b626b9023b978efa27e76924c6c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2bdf3231f2df8b3700c7865fa53e60003b814a5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-settings-category"></a>创建设置类别
 在本演练中，通过创建 Visual Studio 设置类别，并通过使用它来保存到的值，并从设置文件还原值。 设置类别是一组显示为"自定义设置点;"的相关属性的也就是说，作为处于的复选框**导入和导出设置**向导。 (你可找到该**工具**菜单。)保存或还原为类别，设置和单个设置不会显示在该向导。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
   
  若要在开始本演练，必须先完成的第一部分[创建选项页](../extensibility/creating-an-options-page.md)。 生成的选项属性网格，可以检查和更改类别中的属性。 在设置文件中保存属性类别后，你将检查文件以查看如何存储的属性值。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-settings-category"></a>创建设置类别  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  打开 VSPackage.resx 文件并添加以下三个字符串资源：  
   
-    |名称|值|  
+    |name|“值”|  
     |----------|-----------|  
     |106|我类别|  
     |107|我的设置|  
@@ -97,7 +98,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  在左窗格中的树视图中，展开**我类别**，然后单击**我网格页**。  
   
-4.  更改的值**OptionFloat**到 3.1416 和**OptionInteger**和 12 之间。 单击“确定”。  
+4.  更改的值**OptionFloat**到 3.1416 和**OptionInteger**和 12 之间。 单击 **“确定”**。  
   
 5.  上**工具**菜单上，单击**导入和导出设置**。  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 10/31/2017
   
 11. 关闭而不能更改的设置文件。  
   
-12. 上**工具**菜单上，单击**选项**，展开**我类别**，单击**我网格页**然后将更改的值**OptionFloat**为 1.0 和**OptionInteger**为 1。 单击“确定”。  
+12. 上**工具**菜单上，单击**选项**，展开**我类别**，单击**我网格页**然后将更改的值**OptionFloat**为 1.0 和**OptionInteger**为 1。 单击 **“确定”**。  
   
 13. 上**工具**菜单上，单击**导入和导出设置**，选择**导入选定的环境设置**，然后单击**下一步**。  
   

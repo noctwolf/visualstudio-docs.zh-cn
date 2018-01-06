@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b08a308970afa8772cd797a9f7a2528f58cd20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 749edc90570e5c6695fccfa40e45eb940665d523
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetsymindexid"></a>IDiaSymbol::get_symIndexId
 检索的唯一符号标识符。  
@@ -44,5 +45,5 @@ HRESULT get_symIndexId (
 ## <a name="remarks"></a>备注  
  标识符是由 DIA SDK，可将标记为唯一的所有符号的唯一值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35b8eb174ea8e0ca238bafe5a05dfbba54855cda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c2279fa20766180371834e3f3425d8e75e98d430
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：更改图形诊断播放机
 通过使用本地计算机，或通过使用远程计算机或设备，你可以播放图形信息。  
@@ -51,5 +52,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  **远程调试器连接**对话框也可能显示直接连接到你的开发计算机或者位于同一子网上的远程调试目标。 你可以使用这些远程调试目标之一作为图形诊断播放机而无需手动配置它。 在**远程调试器连接**对话框框中，选择你想，然后选择目标**选择**按钮。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [图形日志文档](graphics-log-document.md)

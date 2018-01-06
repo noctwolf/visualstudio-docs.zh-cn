@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40c1b54c8da094ed48685bd59789290f4206699a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 00262d39bc5a70ad24dc599f3c174ec5fe826f50
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
 确定对象是否为透明的代理。  
@@ -48,5 +49,5 @@ int IsProxy (
 ## <a name="remarks"></a>备注  
  此方法由实现默认 c + + 调试引擎。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

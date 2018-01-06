@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.error.sqlde_sql_executed_but_not_debugged
 dev_langs:
 - CSharp
@@ -14,16 +14,16 @@ dev_langs:
 - FSharp
 - C++
 - SQL
-ms.assetid: 7a4d4999-3973-4339-ba6a-f0d19bcb1d4a
 caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db04460c57dd4ade94154fa1a884477452ee4108
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 793e516c334d39cd7befc82a15e793df44d22f3b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>错误：Transact-SQL 执行未经调试便已结束
 当尝试调试 Transact-SQL 或 SQLCLR 过程而调试器未从 SQL Server 接收调试消息时，会发生此错误。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
 -   请咨询网络或数据库管理员。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [设置 SQL 调试](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
  [如何： 为调试设置 SQL Server 权限](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   

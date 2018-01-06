@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4aba03fd68fc5e0e68dbf13887de0c25094fa951
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8f504a70950ea9e808d50bd8b9bc7ef5dd92d699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="about-file-name-extensions"></a>有关文件扩展名
 当你注册 VSPackage 的文件扩展时，你将其与关联的版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 这是重要如果多个是一份[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的计算机上安装。  
@@ -38,6 +39,6 @@ HKEY_CLASSES_ROOT\
   
  在某些情况下，不应更改与文件扩展名相关联的 ProgID。 例如，文件扩展名为.htm 的 ProgID (progid = htmlfile) 进行硬编码中的许多操作系统中的位置和是广泛已知和中使用关联.htm 和.html 文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [注册-并排部署的文件扩展名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [指定文件扩展名的文件处理程序](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

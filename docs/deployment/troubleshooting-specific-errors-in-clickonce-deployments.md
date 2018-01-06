@@ -23,11 +23,12 @@ caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 40c679811f137e77909395042d91d0458c874d90
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ffa7449347fe5e898f2984237dfc8908e3bb2003
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 部署中的特定错误的疑难解答
 本主题列出了在部署时可能发生的以下常见错误[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，并提供解决每个问题的步骤。  
@@ -139,6 +140,6 @@ ms.lasthandoff: 10/27/2017
 |无法通过网络激活快捷方式。|快捷方式[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]仅可以在本地硬盘上启动应用程序。 它们不能通过打开指向远程服务器上的快捷方式文件的 URL 来启动。|  
 |太大而无法联机在部分信任环境中运行应用程序。 与应用程序供应商或你的系统管理员联系以获取帮助。|在部分信任环境中运行的应用程序不能大于联机应用程序配额，它们的默认值为 250 MB 的大小的一半。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce 部署疑难解答](../deployment/troubleshooting-clickonce-deployments.md)

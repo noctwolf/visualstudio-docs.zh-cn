@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b533423da8152dd23df6d32da3361c99ad032b7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b698295f3bfff9fb2c16e286b85bf5268bf6e852
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 如果有的话，此方法将检索与对象关联的异常。  
@@ -52,5 +53,5 @@ int GetExceptionObjectAndType(
 > [!NOTE]
 >  若要验证是否存在异常，检查返回的值`ppException`： 如果它是一个 null 值，则任何异常不是与此对象相关联。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

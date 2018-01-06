@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 491de73e97bf44ea54d5ccdfb604924ff26c9530
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c6d0a2c0912b98995bb6d933766a46f4ebc527a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>如何：为 ClickOnce 应用程序创建文件关联
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序可以与一个或多个文件扩展名关联，以便应用程序将自动启动，当用户打开这些类型的文件。 添加到的文件名称扩展支持[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序非常简单。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/27/2017
   
      有关详细信息，请参阅[Mage.exe （清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [\<fileAssociation > 元素](../deployment/fileassociation-element-clickonce-application.md)   
  [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)   
  [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

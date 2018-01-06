@@ -26,11 +26,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 344ba292f16098c969d287a88a5d441acc950de1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 842b52d063b5de701c74501410e3249da7358776
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>演练：调试 Web 窗体
 本演练中的步骤向您演示如何调试 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序（也称为 Web 窗体）。 它演示如何启动和停止执行、 设置断点，和在中检查变量**监视**窗口。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  在**语言**列表中，单击**Visual C#**或**Visual Basic**。  
   
-6.  单击“确定”。  
+6.  单击 **“确定”**。  
   
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将创建一个新项目并显示默认的 HTML 源代码。 它还会创建一个名为的新虚拟目录**网站**下**Default Web Site**在 IIS 中。  
   
@@ -168,5 +169,5 @@ ms.lasthandoff: 10/31/2017
   
 6.  完成之后调试，在**调试**菜单上，单击**停止调试**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 ASP.NET 应用程序](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

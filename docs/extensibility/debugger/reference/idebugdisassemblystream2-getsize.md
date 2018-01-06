@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35dfb225c6359e3b039b21255b1e6ba5979c3e6f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4ef3b4ed1f39b687812fa13d3a667b5e8fb91587
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 获取此反汇编流的说明中的大小。  
@@ -47,7 +48,7 @@ int GetSize(
 ## <a name="remarks"></a>备注  
  此方法返回的值可以用于分配的数组[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)结构随后将传递到[读取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
  [读取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

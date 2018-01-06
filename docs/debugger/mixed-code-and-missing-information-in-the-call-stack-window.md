@@ -27,11 +27,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97c7cd3588edbb7b07c5eaed25df07c882805d73
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a234529f13217cabf59a8d3827427e2f5341fb53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>“调用堆栈”窗口中的混合代码与丢失信息
 由于托管代码和本机代码的调用堆栈之间存在差异，因此对于混合的代码类型，调试器不能始终显示完整的调用堆栈。 当本机代码调用托管的代码时，你可能注意到以下差异在**调用堆栈**窗口：  
@@ -42,5 +43,5 @@ ms.lasthandoff: 10/31/2017
   
  这两种情况都极为少见。 在多数对托管代码的本机调用中，都会正确显示调用堆栈。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)

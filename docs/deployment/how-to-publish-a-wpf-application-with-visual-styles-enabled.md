@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.openlocfilehash: acef07cd95395312d1456401bd58142264d89794
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：发布启用了视觉样式的 WPF 应用程序
 视觉样式启用公共控件，若要更改根据用户所选择的主题的外观。 默认情况下，视觉样式不会启用 Windows Presentation Foundation (WPF) 应用程序，因此你必须手动启用它们。 但是，启用一个 WPF 应用程序的可视样式，然后发布该解决方案将导致错误。 本主题介绍如何解决此错误以及发布启用了视觉样式的 WPF 应用程序的过程。 关于视觉样式的详细信息，请参阅[视觉样式概览](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)。 有关错误消息的详细信息，请参阅[疑难解答 ClickOnce 部署中的特定错误](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。  
@@ -162,7 +163,7 @@ ms.lasthandoff: 10/27/2017
   
  执行这些步骤之后，你可以将已发布的文件移动到要从中安装应用程序的最终用户的位置。 如果你想要经常更新解决方案，可以将这些命令移到一个脚本，并运行该脚本每次发布新版本。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 部署中的特定错误的疑难解答](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
  [视觉样式概述](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)   
  [启用视觉样式](https://msdn.microsoft.com/library/bb773175.aspx)   

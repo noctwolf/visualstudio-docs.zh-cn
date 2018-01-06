@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b126565533bc46c315502ddce06f95f1d588271a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e38329fd8f6e460111b9052264c92c189a7f5454
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
 此方法将枚举重置为第一个元素。  
@@ -42,6 +43,6 @@ int Reset();
 ## <a name="remarks"></a>备注  
  调用此方法，对下一个调用后[下一步](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)返回枚举的第一个元素。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)   
  [下一篇](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 90def1bc4d824c6fdfd597ec8beb4b1f18f9e008
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c19312b005a1f8dfeefa766ed3a5e6a8ab1c566c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;程序集&gt;元素 （ClickOnce 部署）
 部署清单的的顶级元素。  
@@ -41,9 +42,9 @@ ms.lasthandoff: 10/27/2017
   
  `assembly`元素具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`manifestVersion`|必需。 此属性必须设置为`1.0`。|  
+|`manifestVersion`|必须的。 此属性必须设置为`1.0`。|  
   
 ## <a name="example"></a>示例  
  下面的代码示例阐释了`assembly`部署使用的应用程序的部署清单中的元素[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 此代码示例摘自更大的示例为提供[ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)主题。  
@@ -63,6 +64,6 @@ ms.lasthandoff: 10/27/2017
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)   
  [\<程序集 > 元素](../deployment/assembly-element-clickonce-application.md)

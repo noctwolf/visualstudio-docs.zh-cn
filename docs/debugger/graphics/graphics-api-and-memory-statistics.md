@@ -14,11 +14,12 @@ ms.assetid: 27d2f303-e3ed-4219-9009-345a0d849506
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 161622b510d230798f38205dc2ad5e3137286bef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c34c505751153410896da66040c866676c3a7ee2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-api-and-memory-statistics"></a>图形 API 和内存统计信息
 <!-- VERSIONLESS -->
@@ -42,7 +43,7 @@ Visual Studio 图形诊断中的图形 API 统计信息，可以查看所有所�
 
 与 API 统计信息工具中，你可以为 CSV，可以进行进一步分析粘贴到 Excel 类似右键单击在窗口中复制所有数据。
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [图形诊断 （调试 DirectX 图形）](visual-studio-graphics-diagnostics.md)   
 [资源历史记录](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

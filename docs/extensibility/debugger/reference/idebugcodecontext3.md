@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c7866b5a76be82e7cbfa04605ad5117a0b2a8fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 364b7d1480449601b211e5ac1736d0d85a87da5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 扩展[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)接口要启用的模块和过程接口检索。  
@@ -42,7 +43,7 @@ IDebugCodeContext3 : IDebugCodeContext2
 ## <a name="remarks"></a>备注  
  这是通常不需要实现的可选接口。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： Msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

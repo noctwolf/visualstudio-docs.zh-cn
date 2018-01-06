@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bf6d2dbc915638005f377826c5504b2f6bdf859
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: af96453bf10ee8031464341b65ad0e8b09b30cce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 确定是否已定义特定的自定义属性。  
@@ -44,5 +45,5 @@ int IsCustomAttributeDefined(
 ## <a name="return-value"></a>返回值  
  返回，则为 S_OK 如果自定义属性未定义此方法，否则返回 S_FALSE。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

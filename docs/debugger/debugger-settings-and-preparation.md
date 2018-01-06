@@ -21,11 +21,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b260610f32f7ece52870e6f6e90d5b0986b61d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c04bcc2688e3bc8aaa9e7fbcf3950d609c2eed7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-settings-and-preparation"></a>调试器设置和准备
 本节描述与调试器相关的属性设置，以及为了使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器调试程序所需要的准备工作。 如果在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用项目模板创建程序，则调试配置中将为你正确配置这些设置。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
  [如何：指定用于调试的 .NET Framework 版本](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  描述如何设置注册表项以指示调试器使用哪个版本。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)

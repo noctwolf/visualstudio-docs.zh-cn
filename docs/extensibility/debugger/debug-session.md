@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd1654ba50f8bf4fd11558518f826d46f91151c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d071df3240b36ce547f5581bbb2c5bbf27193487
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-session"></a>调试会话
 在调试器体系结构，方面**会话**:  
@@ -26,6 +27,6 @@ ms.lasthandoff: 10/31/2017
   
 -   由会话调试管理器 (SDM) 实现。 有关详细信息，请参阅[调试会话的管理器](../../extensibility/debugger/session-debug-manager.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [会话调试管理器](../../extensibility/debugger/session-debug-manager.md)   
  [调试器概念](../../extensibility/debugger/debugger-concepts.md)

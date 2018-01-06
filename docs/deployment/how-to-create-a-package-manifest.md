@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 92182b9b6c6b2b2759b77e7b14d71dfd40379fc7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 463286eb8360b728b3b7e3ce9396c9f4b7e11305
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：创建程序包清单
 若要部署你的应用程序的先决条件，你可以使用引导程序包。 引导程序包包含一个单个产品清单文件，但是包清单的每个区域设置。 产品清单都应共享的功能分布在不同的本地化版本。  
@@ -101,5 +102,5 @@ installing this package.</String>
 </Package>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

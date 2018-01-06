@@ -29,11 +29,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edb41f8fea8447f8616b4c20f442ffd4fa8b48c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c1186da8d276796816d8531963f746f222526b6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>在 C# 中的 Visual Studio 调试器中的格式说明符
 你可以使用格式说明符更改在“监视”  窗口中显示值所用的格式。 还可在“即时”  窗口、“命令”  窗口甚至是源窗口中使用格式说明符。 如果将鼠标悬停在这些窗口中的表达式上，结果将在数据提示中显示。 数据提示将在数据提示的显示内容中反映格式说明符。  
@@ -69,6 +70,6 @@ ms.lasthandoff: 10/31/2017
 |raw|以项在原始项节点中的显示格式来显示项。 只对代理对象有效。|字典\<T >|字典中的原始视图\<T >|  
 |results|用于实现 IEnumerable 或 IEnumerable 的类型的变量\<T >，通常在查询表达式的结果。 仅显示包含查询结果的成员。|显示所有成员。|显示满足查询条件的成员。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [监视和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)   
  [“自动”和“局部变量”窗口](../debugger/autos-and-locals-windows.md)

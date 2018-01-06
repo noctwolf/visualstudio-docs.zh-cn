@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f81ab0253c9820f1e6c89ebf455601059d43bda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b8e9dfcc3f918dba7444b6a3478c8b6a2fb5db21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandname-element"></a>CommandName 元素
 `CommandName`元素指定显示的文本的键盘类别中**选项**对话框中，然后在**命令**列入**自定义**对话框框。  
@@ -45,5 +46,5 @@ ms.lasthandoff: 10/31/2017
 |-------------|-----------------|  
 |[Strings 元素](../extensibility/strings-element.md)|文本元素，如分组`ButtonText`和`CommandName`。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

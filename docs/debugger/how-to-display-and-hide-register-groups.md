@@ -22,11 +22,12 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d3717a7e51643f49def2ff8cd6a9077a49ed8bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 433789524facdc4dba95e5dcfc9e6859a9124692
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>如何：显示和隐藏寄存器组
 **注册**均提供仅当中启用了地址级调试窗口**选项**对话框中，**调试**节点，**常规**类别。  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/31/2017
   
      正在调试的硬件不支持的寄存器组在快捷菜单中被禁用，因此不能被选择。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：使用“寄存器”窗口](../debugger/how-to-use-the-registers-window.md)

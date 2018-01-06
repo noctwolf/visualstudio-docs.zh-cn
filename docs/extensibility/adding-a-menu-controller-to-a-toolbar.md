@@ -16,11 +16,12 @@ caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 786d7c8841f680d5af5c539e30723289df4db0f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 720aeb5670127d64e7b3fc9b016a032c0526c083
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>将菜单控制器添加到工具栏
 本演练基于[将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md)演练并演示如何将菜单控制器添加到工具窗口工具栏。 此处显示的步骤也可以应用于在中创建的工具栏[将工具栏添加](../extensibility/adding-a-toolbar.md)演练。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
  菜单控制器可以出现在菜单上，但它们最常用于工具栏上。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-menu-controller"></a>创建菜单控制器  
@@ -227,6 +228,6 @@ ms.lasthandoff: 10/31/2017
   
      同时显示消息会出现一个对话框**选择菜单控制器项 3**。 请注意该消息对应于菜单控制器按钮上的文本。 菜单控制器按钮现在显示**MC 项 3**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [添加工具栏](../extensibility/adding-a-toolbar.md)

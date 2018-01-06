@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7d8382cf5e356725f5ca50348d422290b4363c35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b6434d8a06e776c31e944eead27a4f83dc04a32b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 获取标题、 友好名称或该进程的文件名称。  
@@ -49,6 +50,6 @@ int GetName(
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

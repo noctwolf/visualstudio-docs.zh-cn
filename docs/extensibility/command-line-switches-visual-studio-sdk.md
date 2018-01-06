@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f24037448970f7104174aacdc2bf53df6dc7b9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 62ec48106915f43ace3aed370e652e036e97baa0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>命令行开关 (Visual Studio SDK)
 Devenv.exe、 启动的可执行文件[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)，专门用于开发的 Vspackage 支持命令行开关。 Vspackage 可以还使其自己交换机在可用 Devenv 命令行。 以下主题提供有关如何在 IDE 中使用命令行开关的信息。  

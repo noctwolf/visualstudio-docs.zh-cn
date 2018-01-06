@@ -24,18 +24,19 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c86e45ea5108361271658d5dd8e7dfadbde2012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4e58541c5ab0c7a38773740343349880aa5297e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 项目的属性页设置
 你可以更改网站调试配置中的属性设置**属性页**对话框中中, 所述[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示在何处可以找到中与调试器相关的设置**属性页**对话框。  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>“配置属性”文件夹（“启动选项”类别）  
   
-|**设置**|**描述**|  
+|**设置**|**说明**|  
 |-----------------|---------------------|  
 |**启动操作**|将与应用程序启动相关的选项归为一组的标题。|  
 |**使用当前页**|将当前页指定为调试起点。|  
@@ -54,5 +55,5 @@ ms.lasthandoff: 10/31/2017
 |**SQL Server 调试**|允许对 SQL Server 数据库对象进行调试。|  
 |**Silverlight 调试**|允许调试 Silverlight 组件。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)

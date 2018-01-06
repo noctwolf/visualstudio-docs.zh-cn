@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9e003372e390d7e807f314555310c167bf011a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75403c0597b2285aa9117f3ffb51acd01c967f3d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 此接口表示代码指令的起始位置。 为大多数运行时体系结构现在，代码上下文被想象的为程序的执行流中的地址。  
@@ -46,14 +47,14 @@ IDebugCodeContext2 : IDebugMemoryContext2
 ## <a name="remarks"></a>备注  
  主要区别`IDebugCodeContext2`接口和[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)接口是`IDebugCodeContext2`始终指令对齐。 这意味着，`IDebugCodeContext2`始终指向指令的开头而`IDebugMemoryContext2`都可能会导致任何字节的内存中的运行时体系结构。 `IDebugCodeContext2`即会递增按说明而不是基本的存储大小 （通常字节）。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)   
  [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)   

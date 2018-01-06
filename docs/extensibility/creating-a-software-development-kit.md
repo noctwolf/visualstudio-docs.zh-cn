@@ -12,11 +12,12 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a301085cd00e20d5c4e931ac144e454718ad152
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4ea17b02cfa2e987c4a3c02acddf838001b4ae2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-software-development-kit"></a>创建软件开发工具包
 软件开发工具包 (SDK) 是 api，你可以将 Visual Studio 中的单个项目作为引用集合。 **引用管理器**对话框将列出与项目相关的所有 Sdk。 当你添加到项目的 SDK 时，都提供 Visual Studio 中的 Api。  
@@ -265,7 +266,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
     </File>  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 创建使用 c + + 的 SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
  [演练： 创建使用 C# 或 Visual Basic 的 SDK](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [管理项目中的引用](../ide/managing-references-in-a-project.md)

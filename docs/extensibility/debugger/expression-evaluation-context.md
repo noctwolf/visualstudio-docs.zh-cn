@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ac80a3fcf3a7f75be3f23dd1350da047ccbb393
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ab4e57f500c2dfbfe673713c784cbc93ff52a73d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluation-context"></a>表达式计算上下文
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试，**表达式评估上下文**:  
@@ -30,6 +31,6 @@ ms.lasthandoff: 10/31/2017
   
      给定`BSTR`和[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)接口，可以创建调试引擎 (DE) [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)接口通过分析表达式。 给定`IDebugExpression2`接口，DE 可以获取一个值，通过同步或异步表达式计算。 显示的情况下，此值的名称和类型的变量或参数，以及发送到 IDE。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [表达式评估接口](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [调试器上下文](../../extensibility/debugger/debugger-contexts.md)

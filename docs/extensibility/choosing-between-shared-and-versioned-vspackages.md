@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9442d6685d27a9270c1e71e3a79e9f810b6f40f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 20613722410bbe57231177eefafec79184d7741f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>选择共享并设置其版本 Vspackage
 不同版本的 Visual Studio 可以在同一台计算机上共存。 Vspackage 可以支持的任何组合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]版本。  
@@ -64,6 +65,6 @@ ms.lasthandoff: 10/31/2017
   
  除了为 VSPackage 二进制文件的位置规划二进制兼容性，你还应考虑解决方案和项目文件格式。 如果你的 VSPackage 创建一个新的项目类型，则必须确定它是否可以运行一个版本中还是在多个版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 有关详细信息，请参阅[升级自定义项目](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Windows Installer 安装 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)   
  [组件管理](../extensibility/internals/component-management.md)

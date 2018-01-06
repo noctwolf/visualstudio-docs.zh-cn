@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc168ca6433204a4f5f50a55c79b9e4320773841
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 35e11a53b2b9b63a71aab2858151721cfdfd7f9c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 元素（Visual Studio 模板）
 指定一个可选表达式以匹配一个或多个功能。 （请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>）。 项目类型通过层次结构将功能公开为属性 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>。 这使得具有公共适用功能的多个项目类型可以共享此模板。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|对模板进行分类。|  
   
@@ -99,6 +100,6 @@ ms.lasthandoff: 10/31/2017
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

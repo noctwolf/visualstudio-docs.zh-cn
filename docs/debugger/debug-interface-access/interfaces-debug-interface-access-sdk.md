@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 044c6ce1dafbd5ce753d9e3a98d41ed1963a77ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e128aa0a4cbb30106981b152252ff308e21669b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>接口（调试接口访问 SDK）
 在中表的内容和 Vtable 顺序中的接口页上，每个接口下按字母顺序列出了方法。  
@@ -132,5 +133,5 @@ ms.lasthandoff: 10/31/2017
  [常量（调试接口访问 SDK）](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
  描述在 DIA SDK 中可用的常量。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [参考](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

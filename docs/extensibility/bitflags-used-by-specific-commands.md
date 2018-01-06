@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e66d0f67e3774b1cbc908bb6b1bd13884a1d3171
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitflags 由特定的命令
 可以通过在单个值中设置一个或多个位修改大量的源控件插件 API 中的函数的行为。 这些值称为 bitflags。 使用源控件插件 API 各种 bitflags 详细说明了在这里，使用这些函数按分组。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|源代码管理插件需要自动检测文件是否为文本或二进制。|  
 |`SCC_FILETYPE_TEXT`|0x01|文件类型为文本。|  
-|`SCC_FILETYPE_BINARY`|0x04，则|文件类型为二进制。 **注意：** `SCC_FILETYPE_TEXT`和`SCC_FILETYPE_BINARY`标志是互相排斥。   设置中恰好有一个还是两者皆否。|  
+|`SCC_FILETYPE_BINARY`|0x04，则|文件类型为二进制。 **注意：** `SCC_FILETYPE_TEXT`和`SCC_FILETYPE_BINARY`标志是互相排斥。 设置中恰好有一个还是两者皆否。|  
 |`SCC_ADD_STORELATEST`|0x02|存储仅最新版本 （没有增量）。|  
   
 ## <a name="diff-flags"></a>比较标志  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="populatedirlist-flags"></a>PopulateDirList 标志  
  使用这些标志[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)中`fOptions`参数。  
   
-|选项值|值|描述|  
+|选项值|“值”|描述|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|检查只有一个级别 （这是默认值） 的目录的目录。|  
 |SCC_PDL_RECURSIVE|从 0x0001|以递归方式检查每个给定目录下的所有目录。|  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="openproject-flags"></a>OpenProject 标志  
  使用这些标志[SccOpenProject](../extensibility/sccopenproject-function.md)中`dwFlags`参数。  
   
-|选项值|值|描述|  
+|选项值|“值”|描述|  
 |------------------|-----------|-----------------|  
 |SCC_OP_CREATEIFNEW|0x00000001L|如果项目在源代码管理中不存在，则创建它。 如果未设置此标志，提示用户输入项目以创建 (除非`SCC_OP_SILENTOPEN`指定标志)。|  
 |SCC_OP_SILENTOPEN|0x00000002L|不提示用户创建一个项目;仅返回`SCC_E_UNKNOWNPROJECT`。|  
@@ -107,5 +108,5 @@ ms.lasthandoff: 10/31/2017
 |`SCC_OPT_SCO_NO`|0L|（默认值）确定以从插件 UI，则签出设置工作目录。|`SCC_OPT_SCCCHECKOUTONLY`|  
 |`SCC_OPT_SCO_YES`|1 L|没有插件 UI 签出，没有工作目录。|`SCC_OPT_SCCCHECKOUTONLY`|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件](../extensibility/source-control-plug-ins.md)

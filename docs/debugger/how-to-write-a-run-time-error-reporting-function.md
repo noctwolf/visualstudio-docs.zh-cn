@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d140606382367d5968871f65034db619fb9325e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a3a123885ef43a94cbb0d0e03319b88415d9e5c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>如何：编写运行时错误报告函数
 运行时错误的自定义报告函数必须具有与 `_CrtDbgReportW` 相同的声明。 它应当将值 1 返回给调试器。  
@@ -124,5 +125,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [本机运行时检查自定义](../debugger/native-run-time-checks-customization.md)

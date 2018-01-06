@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d83992a58ba8cd45bf6ac5e6f555fc5320c18e80
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7c54393276ff4cd8607a35a76bce0a75048e1885
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature 元素（Visual Studio 模板）
 指定要查找的自定义数据的文本签名。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将此模板分类并定义中的显示方式**新项目**或**添加新项**对话框。|  
   
@@ -57,6 +58,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  `CustomDataSignature` 是可选元素。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

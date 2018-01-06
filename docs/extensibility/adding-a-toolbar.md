@@ -15,11 +15,12 @@ caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da6ea8eac18151f0efbaefb3e9f910b695630669
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7b837a620a1e116b9bb8a11ff8a4edab7bfabfb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-toolbar"></a>添加工具栏
 本演练演示如何将工具栏添加到 Visual Studio IDE。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
  有关菜单的详细信息，请参阅[命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-an-extension-with-a-toolbar"></a>使用工具栏创建扩展  
@@ -92,5 +93,5 @@ ms.lasthandoff: 10/31/2017
   
 7.  你现在应看到您的工具栏上，作为文件图标中查找右侧的图标。 当你单击图标时，你应看到显示一个消息框**ToolbarTestCommandPackage。内部 IDEToolbar.ToolbarTestCommand.MenuItemCallback()**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

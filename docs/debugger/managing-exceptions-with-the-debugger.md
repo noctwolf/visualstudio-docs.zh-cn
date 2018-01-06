@@ -36,11 +36,12 @@ caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0504ba8229e67284d4f54032dbbce3cef42d6e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c04934aed17c6e1b00664d371ff591ebbc3486a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>管理 Visual Studio 中的调试器异常
 
@@ -193,7 +194,7 @@ public class GenericException<T> : Exception
 
 ![关于异常的条件](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在出现异常之后继续执行](../debugger/continuing-execution-after-an-exception.md)   
  [如何： 出现异常后检查系统代码](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [如何： 使用本机运行时检查](../debugger/how-to-use-native-run-time-checks.md)   

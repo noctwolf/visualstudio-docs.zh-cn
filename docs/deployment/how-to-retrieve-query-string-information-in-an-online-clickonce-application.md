@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 05862ea88623616cc237c55509c74169b9ce2383
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e0fb359dba89a3eef6f257b0cfe560a3f3ab5738
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在联机 ClickOnce 应用程序中检索查询字符串信息
 *查询字符串* 是 URL 的一部分，它以问号 (?) 开头，并且以 *名称=值*的形式包含任意信息。 假设你有一个在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 上承载的名为 `WindowsApp1` 的 `servername`应用程序，并且要在该应用程序启动时传入变量 `username` 的值。 你的 URL 可能类似于下面这样：  
@@ -81,5 +82,5 @@ ms.lasthandoff: 10/27/2017
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  仅当你计划在使用包含任何恶意字符的输入之前清除它时，才允许向 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序传递 URL 参数。 例如，如果在针对数据库进行的 SQL 查询中未经筛选地使用嵌入有引号、斜杠或分号的字符串，则该字符串可能会执行任意数据操作。 有关查询字符串安全性的详细信息，请参阅 [Script Exploits Overview](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)

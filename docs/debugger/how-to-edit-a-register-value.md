@@ -22,11 +22,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89e653ac13f92566ab350fa009de809f1712ab39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b9cc839b7829070f5d4c2e9db9da12b6522c21eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-edit-a-register-value"></a>如何：编辑寄存器值
 寄存器窗口是中启用了地址级调试的情况下，才可用**选项**对话框中，**调试**节点。  
@@ -43,5 +44,5 @@ ms.lasthandoff: 10/31/2017
     > [!CAUTION]
     >  编辑浮点值时，由于要将小数部分从十进制转换为二进制，因此所得的结果可能存在微小误差。 甚至看起来无关紧要的编辑都能引起浮点变量中某些最不重要的数据位发生变化。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：使用“寄存器”窗口](../debugger/how-to-use-the-registers-window.md)

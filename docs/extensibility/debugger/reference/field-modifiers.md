@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f25d87193daf651f831b6b9ce584e6fa39a29991
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98f6e4d3f187261bcf9c0d1ad3959093d864e222
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 指定字段类型的修饰符。  
@@ -186,14 +187,14 @@ public enum enum_FIELD_MODIFIERS {
   
  这些值也将传递给[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)方法来筛选出存在特定字段。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)   
  [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af4230a0d0bec680be1231f37e4e0bfbe51bc459
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7daecd0974abd5be733e7cec3426045c1f859eb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-script-documents"></a>如何：查看脚本文档
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的早期版本中，从服务器端脚本生成的客户端脚本文件显示在“脚本资源管理器”窗口中。 “脚本资源管理器”窗口通常是隐藏的，因此客户端脚本的可用性并非总是显而易见。  
@@ -49,5 +50,5 @@ ms.lasthandoff: 10/31/2017
   
      客户端脚本文件在源窗口中打开。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)

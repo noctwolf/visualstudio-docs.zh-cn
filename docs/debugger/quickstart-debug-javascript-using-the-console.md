@@ -22,11 +22,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5aed6bc3f7cd8c258eb7f566d6843792f5949b95
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 6250a6b5cdf502d95aea3aaec033acaad826de42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>快速入门：使用控制台调试 JavaScript
 ![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/11/2017
   
 -   执行其他任务，如清除屏幕。 有关完整的命令列表，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md) 。  
   
- 在本主题中：  
+ 本主题内容：  
   
 -   [使用“JavaScript 控制台”窗口进行调试](#InteractiveConsole)  
   
@@ -274,7 +275,7 @@ ms.lasthandoff: 11/11/2017
   
 -   在 [!INCLUDE[win8](../debugger/includes/win8_md.md)]上运行的 Internet Explorer 10  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [JavaScript 控制台命令](../debugger/javascript-console-commands.md)   
  [刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)   

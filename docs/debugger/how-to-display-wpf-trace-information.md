@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe00aff9834d612702c61f06a1d0c924852c9462
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e210d575b17552d7b5e4d6dc126335ff3711ee5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-wpf-trace-information"></a>如何：显示 WPF 跟踪信息
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]可以接收来自 WPF 应用程序的调试跟踪信息以及显示在该信息**输出**窗口。 若要显示调试跟踪信息，必须启用 WPF 跟踪。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
      有关这些跟踪信息级别的含义的更多信息，请参见 <xref:System.Diagnostics.SourceLevels>。  
   
-9. 单击“确定”。  
+9. 单击 **“确定”**。  
   
 ### <a name="to-disable-wpf-trace-information"></a>禁用 WPF 跟踪信息  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  单击下拉列表并选择**关闭**。  
   
-8.  单击“确定”。  
+8.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 WPF](../debugger/debugging-wpf.md)

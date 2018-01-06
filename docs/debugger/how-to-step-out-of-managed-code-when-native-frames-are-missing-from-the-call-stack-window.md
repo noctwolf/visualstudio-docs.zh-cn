@@ -25,11 +25,14 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38fa4b37b008aca07b26b859f50767344dcafd9c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 7599c99c9375cda7b5f24432db8c137c5c4357df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>如何：在“调用堆栈”窗口中缺少本机框架时跳出托管代码
 如果代码中有中不可见的本机框架**调用堆栈**窗口中，托管代码中跳出会产生意外的结果。 作为一种解决方法，你可以使用断点来代替**单步跳出**。  
@@ -45,5 +48,5 @@ ms.lasthandoff: 10/31/2017
   
      托管调用完成后，执行会在本机代码的断点处停止。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)

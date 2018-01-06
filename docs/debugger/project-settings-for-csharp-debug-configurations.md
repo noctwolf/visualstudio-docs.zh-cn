@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d588f43271b127c675a6ec2fdf9e55ef388eadf2
-ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
+ms.workload: dotnet
+ms.openlocfilehash: b21dcdefde586b4a2724c8c0a659462b5f0898f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 调试配置的项目设置
 你可以更改中的 C# 调试配置的项目设置**属性页**窗口，如下所述[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示在何处可以找到中与调试器相关的设置**属性页**窗口。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 12/13/2017
   
 ##  <a name="BKMK_Debug_tab"></a>调试选项卡  
   
-|**设置**|**描述**|  
+|**设置**|**说明**|  
 |-----------------|---------------------|  
 |**配置**|设置编译应用程序的模式。 选择**活动 （调试）**，**调试**，**版本**，**所有配置**。|  
 |**启动操作**|这组控件指定在从“调试”菜单中选择“启动”时将发生的操作。<br /><br /> -   **启动项目**是默认值，用于启动启动项目以供调试。 有关详细信息，请参阅[选择启动项目](http://msdn.microsoft.com/en-us/222e3f32-a6fe-4941-bf37-6b2a921129fd)。<br />-   **启动外部程序**使您能够启动和附加到不是程序的一部分[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目。 有关详细信息，请参阅[附加到正在运行的程序](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)。<br />-   **启动浏览器于 URL**使您能够调试 Web 应用程序。|  
@@ -59,5 +60,5 @@ ms.lasthandoff: 12/13/2017
 > [!NOTE]
 > 有关详细信息中找到的调试选项**高级**按钮，请参阅[高级生成设置对话框 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。 符号 (.pdb) 文件的可移植格式是为.NET 核心的最新的跨平台格式。 
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)

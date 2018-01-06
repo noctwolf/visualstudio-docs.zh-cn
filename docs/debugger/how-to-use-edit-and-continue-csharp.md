@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec66bd21eb119c348391f191f23570e66119122f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: fe77428d1d9cfb5ff12554e87ec9afe15d6c86b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>如何：使用“编辑并继续”(C#)
 使用 C# 的“编辑并继续”，可以一边进行调试一边在中断模式下更改代码。 不必停止并重新启动调试会话即可应用更改。  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
   
      当你重新启动调试会话时，该设置将生效。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编辑并继续 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [受支持的代码更改 （C# 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)   

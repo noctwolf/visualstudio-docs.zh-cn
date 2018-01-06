@@ -26,11 +26,12 @@ caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f448b7455bcbe13b7257a58a0eafbadd1165b197
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;文件&gt;元素 （ClickOnce 应用程序）
 标识下载和应用程序使用的所有非程序集文件。  
@@ -89,10 +90,10 @@ ms.lasthandoff: 10/27/2017
 ## <a name="elements-and-attributes"></a>元素和属性  
  `file` 元素是可选的。 元素具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`name`|必需。 标识文件的名称。|  
-|`size`|必需。 指定的大小，以字节的文件。|  
+|`name`|必须的。 标识文件的名称。|  
+|`size`|必须的。 指定的大小，以字节的文件。|  
 |`group`|可选的如果`optional`属性未指定或设置为`false`; 如果存在`optional`是`true`。 此文件所属的组的名称。 名称可以是由开发人员，选择任何 Unicode 字符串值，用于下载文件使用按需<xref:System.Deployment.Application.ApplicationDeployment>类。|  
 |`optional`|可选。 指定此文件必须下载第一个应用程序时运行，还是是否文件之前应用程序请求它按需应驻留在服务器上仅。 如果`false`或未定义，该文件将下载时首次运行或安装应用程序。 如果`true`、`group`必须为有效的应用程序清单中指定。 `optional`不能为 true 如果`writeableType`值指定`applicationData`。|  
 |`writeableType`|可选。 指定此文件是一个数据文件。 目前，唯一有效的值是`applicationData`。|  
@@ -100,20 +101,20 @@ ms.lasthandoff: 10/27/2017
 ## <a name="typelib"></a>类型库  
  `typelib`元素是可选元素子级的文件。 元素描述 COM 组件所属的类型库。 元素具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`tlbid`|必需。 分配给类型库的 GUID。|  
-|`version`|必需。 类型库的版本号。|  
-|`helpdir`|必需。 包含该组件的帮助文件的目录。 可能是长度为零。|  
+|`tlbid`|必须的。 分配给类型库的 GUID。|  
+|`version`|必须的。 类型库的版本号。|  
+|`helpdir`|必须的。 包含该组件的帮助文件的目录。 可能是长度为零。|  
 |`resourceid`|可选。 十六进制字符串表示形式的区域设置标识符 (LCID)。 它为一至四个十六进制数字不带 0x 前缀和不带前导零。 LCID 可能具有特定的次语言标识符。|  
 |`flags`|可选。 此类型库的类型库标志的字符串表示形式。 具体而言，它应为"受限"、"控件"、"隐藏"和"HASDISKIMAGE"之一。|  
   
 ## <a name="comclass"></a>comClass  
  `comClass`元素是可选的子`file`，但如果元素是必需[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序包含它想要使用免注册 com。 部署的 COM 组件 元素具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`clsid`|必需。 表示作为 GUID 的 COM 组件的类 ID。|  
+|`clsid`|必须的。 表示作为 GUID 的 COM 组件的类 ID。|  
 |`description`|可选。 类名。|  
 |`threadingModel`|可选。 使用进程内 COM 类的线程处理模型。 如果此属性为 null，则不使用任何线程处理模型。 在客户端的主线程上创建该组件和来自其他线程的调用封送到此线程。 以下列表显示有效的值：<br /><br /> `Apartment`、`Free`、`Both` 和 `Neutral`。|  
 |`tlbid`|可选。 用于此 COM 组件的类型库的 GUID。|  
@@ -127,9 +128,9 @@ ms.lasthandoff: 10/27/2017
 ## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub  
  `comInterfaceExternalProxyStub`元素是可选的子`file`元素，但如果可能需要[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序包含它想要使用免注册 com。 部署的 COM 组件 元素包含以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`iid`|必需。 接口 ID (IID) 由此代理。 该 IID 必须有语法错误。 的大括号。|  
+|`iid`|必须的。 接口 ID (IID) 由此代理。 该 IID 必须有语法错误。 的大括号。|  
 |`baseInterface`|可选。 从其接口引用的接口的 IID`iid`派生。|  
 |`numMethods`|可选。 实现由接口的方法数。|  
 |`name`|可选。 因为该接口的名称将出现在代码中。|  
@@ -139,9 +140,9 @@ ms.lasthandoff: 10/27/2017
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub  
  `comInterfaceProxyStub`元素是可选的子`file`元素，但如果可能需要[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序包含它想要使用免注册 com。 部署的 COM 组件 元素包含以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`iid`|必需。 接口 ID (IID) 由此代理。 该 IID 必须有语法错误。 的大括号。|  
+|`iid`|必须的。 接口 ID (IID) 由此代理。 该 IID 必须有语法错误。 的大括号。|  
 |`baseInterface`|可选。 从其接口引用的接口的 IID`iid`派生。|  
 |`numMethods`|可选。 实现由接口的方法数。|  
 |`Name`|可选。 因为该接口的名称将出现在代码中。|  
@@ -201,5 +202,5 @@ ms.lasthandoff: 10/27/2017
 </file>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

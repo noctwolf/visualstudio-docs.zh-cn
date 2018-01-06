@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5b35864a7a4e6d5aa0882ac9c0492e0e160ad53
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 77fc748d77eaa46bc50b26e984de55d708db7e17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
 指定类型的地址。  
@@ -85,14 +86,14 @@ public enum enum_ADDRESS_KIND {
 ## <a name="remarks"></a>备注  
  [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)方法返回[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)结构，其中包含的可能结构的联合[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)结构。 `dwKind`字段`DEBUG_ADDRESS_UNION`结构保留`ADDRESS_KIND`值并介绍了如何解释联合的字段。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   

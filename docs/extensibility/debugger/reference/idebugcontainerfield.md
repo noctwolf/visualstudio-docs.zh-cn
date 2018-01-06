@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8260266f43be7a6887aea45f5012a1924fd35c77
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eb08e269cd5fa2d98b91d8a7ac2107e4784ca02e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 此接口表示符号或其他符号或类型的容器类型。  
@@ -45,13 +46,13 @@ IDebugContainerField : IDebugField
 ## <a name="remarks"></a>备注  
  数组 （容器的变量）、 （容器方法和变量） 的类和方法 （对参数和局部变量的容器） 是的容器的所有示例。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

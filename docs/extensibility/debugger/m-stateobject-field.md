@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85e8648fd757c6cdb7910123b3cd861f7abb3371
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9638be7b2f3f3a6c235a4768cdb493fea701a4dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mstateobject-field"></a>m_stateObject 字段
 一个表示操作将使用的数据的对象。  
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  这是`state`中的参数<xref:System.Threading.Tasks.Task.%23ctor%2A>构造函数。 它也是供后备字段<xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName>属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务类](../../extensibility/debugger/task-class-internal-members.md)

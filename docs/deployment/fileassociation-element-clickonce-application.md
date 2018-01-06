@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1b5040f6de578a6436f16c1a1c81d9cef4f789ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bd5d7ed1a37923cefc4a6b7975610b6016fd0ae6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;元素 （ClickOnce 应用程序）
 标识要与应用程序相关联的文件扩展。  
@@ -43,12 +44,12 @@ ms.lasthandoff: 10/27/2017
 ## <a name="elements-and-attributes"></a>元素和属性  
  `fileAssociation` 元素是可选的。 元素具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`extension`|必需。 要与应用程序相关联的文件扩展名。|  
-|`description`|必需。 使用 shell 的文件类型的说明。|  
-|`progid`|必需。 唯一标识的文件类型的名称。|  
-|`defaultIcon`|必需。 指定要用于此扩展名的文件的图标。 必须使用指定的图标文件[\<文件 > 元素](../deployment/file-element-clickonce-application.md)内[\<程序集 > 元素](../deployment/assembly-element-clickonce-application.md)，其中包含此元素。|  
+|`extension`|必须的。 要与应用程序相关联的文件扩展名。|  
+|`description`|必须的。 使用 shell 的文件类型的说明。|  
+|`progid`|必须的。 唯一标识的文件类型的名称。|  
+|`defaultIcon`|必须的。 指定要用于此扩展名的文件的图标。 必须使用指定的图标文件[\<文件 > 元素](../deployment/file-element-clickonce-application.md)内[\<程序集 > 元素](../deployment/assembly-element-clickonce-application.md)，其中包含此元素。|  
   
 ## <a name="remarks"></a>备注  
  此元素必须包括到的 XML 命名空间参考"urn： 架构-microsoft-com:clickonce.v1"。 如果`<fileAssociation>`元素时，它必须后`<application>`其父代中的元素[\<程序集 > 元素](../deployment/assembly-element-clickonce-application.md)。  
@@ -81,5 +82,5 @@ ms.lasthandoff: 10/27/2017
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

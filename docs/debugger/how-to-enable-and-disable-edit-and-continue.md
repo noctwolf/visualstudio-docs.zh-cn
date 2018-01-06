@@ -28,11 +28,14 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724851fcd78050d3502cdec4369c7c6a79c9419f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- dotnet
+- cplusplus
+ms.openlocfilehash: 1c00546b983c9bbb0fd6c01717bd0a09c993e11b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何： 启用和禁用编辑并继续 （C#、 VB、 c + +）
 你可以禁用或启用在编辑并继续**选项**在设计时的对话框。 无法在调试过程中更改此设置。  
@@ -62,7 +65,7 @@ ms.lasthandoff: 10/31/2017
     - **就陈旧的代码 （仅限本机），则发出警告**  
         收到关于陈旧代码的警告。 
   
-7.  单击“确定”。    
+7.  单击 **“确定”**。    
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编辑并继续](../debugger/edit-and-continue.md)

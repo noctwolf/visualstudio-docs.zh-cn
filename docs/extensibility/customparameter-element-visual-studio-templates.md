@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d52d22e3b4200cee0bd5d3dd3eab3e5356f0dbbd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8b2380a585b1c428516e1578587c64b93d5b1d4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter 元素（Visual Studio 模板）
 包含自定义参数名称和从模板创建项目或项时要使用的值。  
@@ -34,10 +35,10 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="attributes"></a>特性  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`Name`|必需。 参数的名称。 参数的格式是 $*名称*$。|  
-|`Value`|必需。 参数的替换值。|  
+|`Name`|必须的。 参数的名称。 参数的格式是 $*名称*$。|  
+|`Value`|必须的。 参数的替换值。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
 </CustomParameters>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CustomParameters 元素 （Visual Studio 模板）](../extensibility/customparameters-element-visual-studio-templates.md)   
  [模板参数](../ide/template-parameters.md)   
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

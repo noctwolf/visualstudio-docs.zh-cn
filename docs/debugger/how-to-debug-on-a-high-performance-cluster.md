@@ -20,11 +20,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb07ad37e8522e2a893edbc7fba86e359893b812
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18a8d66da62fd480934c750a6b809465022c5d6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>如何：在高性能群集上进行调试
 在高性能群集上调试多处理程序类似于在远程计算机上调试普通程序。 但是，还有一些其他注意事项。 常规的远程安装程序要求，请参阅[远程调试](../debugger/remote-debugging.md)。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
      若要创建更复杂的筛选器，可以使用 `&`（“与”运算符）、`||`（“或”运算符）、`!`（“非”运算符）和括号组合子句。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>在特定进程上设置断点  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
      若要创建更复杂的筛选器，可以使用 `&`（“与”运算符）、`||`（“或”运算符）、`!`（“非”运算符）和括号组合子句。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>在特定线程上设置断点  
   
@@ -91,7 +92,7 @@ ms.lasthandoff: 10/31/2017
   
      若要创建更复杂的筛选器，可以使用 `&`（“与”运算符）、`||`（“或”运算符）、`!`（“非”运算符）和括号组合子句。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
 ## <a name="example"></a>示例  
  下面的示例演示如何在名为 `marvin` 的计算机上的、名为 `fourier1` 的线程上创建一个断点筛选器。  
@@ -100,7 +101,7 @@ ms.lasthandoff: 10/31/2017
 (MachineName = marvin) & (ThreadName = fourier1)  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [远程调试](../debugger/remote-debugging.md)   
  [如何： 使用进程窗口](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   

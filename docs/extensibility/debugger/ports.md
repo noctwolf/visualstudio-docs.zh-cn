@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 926f5e9a80a91da57d843c11175865f78775e38c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6378ddc2663e4ecf239c78ede96f0c1bc12d77a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ports"></a>端口
 在调试器体系结构，方面**端口**:  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供处理所有基于 Windows 的进程，本机和托管的默认端口。 与不基于 Windows 的外部设备，必须为连接实现一个自定义端口。 若要提供此类自定义端口，自定义端口供应商还需要实现。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [服务器](../../extensibility/debugger/servers-visual-studio-sdk.md)   
  [进程](../../extensibility/debugger/processes.md)   
  [调试器概念](../../extensibility/debugger/debugger-concepts.md)   

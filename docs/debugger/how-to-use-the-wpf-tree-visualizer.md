@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e30d1fbd8cd23a514d1036bc43c809626c665d73
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78806b2ace7872db06ff403bcae28bb6eff21cd2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>如何：使用 WPF 树可视化工具
 可以使用 WPF 树可视化工具浏览 WPF 对象的可视化树，并查看该树中所含对象的 WPF 依赖项属性。 有关可视化树的详细信息，请参阅[WPF 中的树](/dotnet/framework/wpf/advanced/trees-in-wpf)。 有关依赖项属性的详细信息，请参阅[依赖项属性概述](/dotnet/framework/wpf/advanced/dependency-properties-overview)。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
 -   单击**关闭**对话框中右上角的图标。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)   
  [WPF 中的树](/dotnet/framework/wpf/advanced/trees-in-wpf)   
  [依赖项属性概述](/dotnet/framework/wpf/advanced/dependency-properties-overview)

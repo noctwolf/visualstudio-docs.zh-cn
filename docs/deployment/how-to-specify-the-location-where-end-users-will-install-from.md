@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 41a601febff80b002512a3783d8405dc42e5d766
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a3a2770933f4a9f600b12a2d601deca855de3a94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>如何：指定最终用户将从中进行安装的位置
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，用户可以下载和安装应用程序的位置不一定是最初在其中发布应用程序的位置。 例如，在某些组织开发人员可能应用程序发布到临时服务器，然后管理员将移动到 Web 服务器应用程序。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/27/2017
   
 3.  在安装 URL 字段中，输入使用完全限定的 URL 使用格式 http://www.microsoft.com/ApplicationName 或使用格式的 UNC 路径的安装位置\\\Server\ApplicationName。  
   
-## <a name="see-also"></a>另请参阅  
- [如何： 指定 Visual Studio 将文件复制到其中的内容](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
+## <a name="see-also"></a>请参阅  
+ [如何：指定 Visual Studio 复制文件的位置](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

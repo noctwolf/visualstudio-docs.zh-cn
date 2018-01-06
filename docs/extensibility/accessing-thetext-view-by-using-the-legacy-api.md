@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07ce61a0188802455c4e64b698344c3f275215bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bea908ee04913c5ec56678f1438229e045bf68c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>通过使用旧版 API 访问文本视图
 文本视图是文本的一个演示文稿的文本缓冲区中存储。 可以通过以下部分中所示，使用旧的 API 来访问文本视图。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
   
  文本视图的事件通知通过使用提供`T:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents`接口。 在你的客户端对象来接收到文本视图的更改的通知上实现此接口。 通过使用公开此接口到文本视图<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>文本视图从视图中接收通知的更改上的接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [通过使用旧版 API 更改视图设置](../extensibility/changing-view-settings-by-using-the-legacy-api.md)   
  [使用文本管理器来监视全局设置](../extensibility/using-the-text-manager-to-monitor-global-settings.md)

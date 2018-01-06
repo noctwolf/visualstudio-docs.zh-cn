@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc69edbe0865953d242967490a0852c9da4942b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ff9458eed7f9c77a964240f81017d27d95d9622
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-flag-element"></a>命令标志元素
 修改其父元素。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="child-elements"></a>子元素  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |AllowParams|指示用户可以输入中的命令参数**命令**窗口在其中键入该命令的规范名称。<br /><br /> 适用于：`Button`|  
 |AlwaysCreate|即使它具有任何组或按钮创建菜单。<br /><br /> 适用于：`Menu`|  
@@ -78,5 +79,5 @@ ms.lasthandoff: 10/31/2017
 |[Buttons 元素](../extensibility/buttons-element.md)|提供的组[Button 元素](../extensibility/button-element.md)元素。|  
 |[Menus 元素](../extensibility/menus-element.md)|定义 VSPackage 实现的所有菜单。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

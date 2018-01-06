@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78c67ccc34d9c95914f6b46d537a4df3431c877f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 542c560805ef33e33519c055a6ed4a59285d0db9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在进程视图中搜索进程
 你可以通过将其进程 ID 或模块字符串用作搜索条件搜索进程视图中的特定进程。 你还可以指定搜索的初始方向。 在对话框中的字段将显示所选进程的属性的过程树中。  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
   
 5.  选择**向上**或**下**搜索的初始方向。  
   
-6.  单击“确定”。  
+6.  单击 **“确定”**。  
   
  如果找不到匹配的进程，它以突出显示**进程视图**窗口。

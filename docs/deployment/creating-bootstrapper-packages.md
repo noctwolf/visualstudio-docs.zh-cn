@@ -24,11 +24,12 @@ caps.latest.revision: "45"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 8d02aa039299c5f4f31d1fa0f9e0b48b8bbeb351
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5f269369084df3d81d323e75730fad27713831ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-bootstrapper-packages"></a>创建引导程序包
 安装程序是可配置为检测并安装可再发行组件（如 Windows Installer (.msi) 文件和可执行程序）的一般安装程序。 安装程序也称为“引导程序”。 它通过一组 XML 清单进行编程，这些清单指定用于管理组件安装的元数据。  
@@ -124,8 +125,8 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 </FileList>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [如何： 与 ClickOnce 应用程序一起安装系统必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+## <a name="see-also"></a>请参阅  
+ [如何：与 ClickOnce 应用程序一起安装必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [系统必备组件对话框](../ide/reference/prerequisites-dialog-box.md)   
  [产品和程序包架构引用](../deployment/product-and-package-schema-reference.md)   
  [使用 Visual Studio 2005 引导程序开始你的安装](http://go.microsoft.com/fwlink/?LinkId=107537)

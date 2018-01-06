@@ -23,11 +23,12 @@ caps.latest.revision: "51"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: c323e3800e98e2451a371f3ff84b3351d760a94c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-deployment-prerequisites"></a>应用程序部署必备
 为确保应用程序成功安装和运行，必须先确保应用程序依赖的所有组件都已安装在目标计算机上。 例如，用 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)][!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 创建的大多数应用程序都会依赖 ；在安装应用程序前，目标计算机上必须存在正确版本的公共语言运行时。  
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/27/2017
 ## <a name="operating-system-support"></a>操作系统支持  
  Windows Server 2008 服务器核心或 Windows Server 2008 R2 服务器核心提供功能有限的低级维护服务器环境，不支持 Visual Studio 引导程序。 例如，“服务器核心”安装选项仅支持 .NET Framework 3.5 服务器核心配置文件，因此依赖于完整的 .NET Framework 的 Visual Studio 功能无法运行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)

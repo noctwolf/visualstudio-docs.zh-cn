@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 16be8f494b5e8709244568afeb654ae02ca85899
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 448eba0d13a9501c328da79fa31fa66f4376d5df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-user-control-to-the-start-page"></a>将用户控件添加到开始页
 本演练演示如何添加对自定义起始页的 DLL 引用。 该示例添加到解决方案中，用户控件生成用户控件，并从起始页.xaml 文件然后引用生成的程序集。 一个新选项卡承载用户控件，用作基本 Web 浏览器。  
@@ -187,6 +188,6 @@ ms.lasthandoff: 10/31/2017
   
      应显示你的自定义起始页。 如果你想要更改的任何文件，你必须关闭实验实例，进行更改、 复制和粘贴已更改的文件，以及然后重新打开实验实例，以查看所做的更改。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [WPF 容器控件](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)   
  [演练：将自定义 XAML 添加到起始页](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

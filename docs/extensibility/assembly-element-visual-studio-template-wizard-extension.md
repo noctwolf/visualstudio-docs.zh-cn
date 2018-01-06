@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2adc2113d9ce1fbc2a80c9465ce403f03fc42db5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 80a8185961e53222b2aa9b71cd397b96c9368048
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 元素（Visual Studio 模板向导扩展）
 指定的名称或实现的程序集的强名称`IWizard`接口。  
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)

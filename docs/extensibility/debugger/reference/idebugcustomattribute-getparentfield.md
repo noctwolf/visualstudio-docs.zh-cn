@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 47aba2e8861ff03e01b67370d61c9e7c3685b9a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cad1876a366f46c11e296dc58d5ad4f01e6583f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 获取自定义特性附加到的字段。  
@@ -47,6 +48,6 @@ int GetParentField(
 ## <a name="remarks"></a>备注  
  调用[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法返回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)确定什么类型的字段父级的对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

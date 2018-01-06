@@ -17,11 +17,12 @@ caps.latest.revision: "43"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a77cd9504dffc50fd3a3be021cb4e379378f9ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 150252dceaff2d194af8f59d92fdaf39cdae259c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>将子菜单添加到菜单
 本演练基于中演示[将菜单添加到 Visual Studio 菜单栏](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)通过显示如何将添加到子菜单**TestMenu**菜单。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
  本演练在 Visual Studio 菜单栏上的菜单中创建子菜单，并将新的命令放子菜单。 本演练还实现新的命令。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="adding-a-submenu-to-a-menu"></a>将子菜单添加到菜单  
@@ -157,6 +158,6 @@ ms.lasthandoff: 10/31/2017
   
 5.  上**TestMenu**菜单上，单击**子菜单**，然后单击**测试子命令**。 一个消息框应该显示，并显示的文本，"第命令内 TestCommand.SubItemCallback() 测试"。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将菜单添加到 Visual Studio 菜单栏](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

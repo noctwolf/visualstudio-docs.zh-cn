@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa7378493c8df41b70be6fda17b2763f90fd7f04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>实现和注册端口供应商
 端口供应商提供的角色是跟踪并提供反过来管理进程的端口。 在需要创建某个端口时，端口供应商是实例化可以共同创建使用端口供应商的 GUID （端口供应商选定的用户或指定的项目系统端口供应商，将使用会话调试管理器 [SDM]）。 然后将调用 SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)以查看是否可以添加任何端口。 如果可以添加一个端口，通过调用请求一个新的端口[添加](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)并将其传递[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)描述该端口。 `AddPort`将返回一个新的端口，由表示[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口。  
@@ -62,7 +63,7 @@ RemoveMetric(metrictypePortSupplier,
   
  端口供应商可以通过方法提供其名称和 GUID [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)和[GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)分别。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [实现端口供应商](../../extensibility/debugger/implementing-a-port-supplier.md)   
  [SDK 适用于调试的帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [端口提供程序](../../extensibility/debugger/port-suppliers.md)

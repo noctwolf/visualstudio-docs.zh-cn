@@ -22,11 +22,12 @@ caps.latest.revision: "18"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7fb428cf2bffd5ae10bb9e3cce95ba4021007ef1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aa1ab7ac947a5fbdf9d0423c57a987a4ffe8be97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 *验证码* 是使用行业标准加密，通过验证应用程序发行者真实性的数字证书对应用程序代码进行签名的 Microsoft 技术。 通过对应用程序部署使用验证码， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以降低遭受特洛伊木马程序攻击的风险。 特洛伊木马程序是一种病毒或其他有害的程序，恶意的第三方将其伪装成来自已确认且可信任的源的合法程序。 用数字证书为 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署签名是用于验证程序集和文件是否经过篡改的可选步骤。  
@@ -71,7 +72,7 @@ ms.lasthandoff: 10/27/2017
   
 -   可以在文件系统上将证书存储为.pfx 文件，或将其存储在密钥容器中。 Windows 域上的用户可拥有若干数目的密钥容器。 默认情况下，MakeCert.exe 会将证书存储在个人密钥容器中，除非指定将其保存为 .pfx。 用于创建 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 部署的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Mage.exe 和 MageUI.exe 允许你使用上述任一方式存储的证书。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
  [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)   

@@ -33,11 +33,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3c95f24db0dc158b668f0e324fd5bac066dd4ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e67f3c3b8cc10e6aa3e7c9b996cd1c608d893eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 库查找内存泄漏
 内存泄漏，即未能正确释放以前分配的内存，是 C/C++ 应用程序中最难以捉摸也最难以检测到的 Bug 之一。 最初少量内存泄漏可能不引人注目，但随着时间的推移，内存泄漏越来越多，就会出现一些征兆，包括性能下降，在应用程序内存不足时发生崩溃。 更严重的是，占用了所有可用内存的泄漏应用程序可能会导致其他应用程序崩溃，从而无法确定问题出在哪个应用程序。 即使看似无害的内存泄漏也可能说明存在其他问题应当纠正。  
@@ -262,7 +263,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 ## <a name="false-positives"></a>误报  
  在某些情况下， `_CrtDumpMemoryLeaks` 可能给出错误的内存泄漏指示。 如果使用将内部分配标记为 _NORMAL_BLOCK 而不是 `_CRT_BLOCK`或 `_CLIENT_BLOCK`的库，则可能发生这种情况。 在这种情况下， `_CrtDumpMemoryLeaks` 无法区分用户分配和内部库分配。 如果在 `_CrtDumpMemoryLeaks`调用点之后运行库分配的全局析构函数，则每个内部库分配都会报告为内存泄漏。 在 Visual Studio .NET 之前的早期版本的标准模板库会导致 `_CrtDumpMemoryLeaks` 出现这种误报，在最近的版本中，已经解决了这一问题。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CRT 调试堆详细信息](../debugger/crt-debug-heap-details.md)   
  [调试器安全](../debugger/debugger-security.md)   
  [调试本机代码](../debugger/debugging-native-code.md)

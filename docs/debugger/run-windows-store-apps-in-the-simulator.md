@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4c5d1e71a4d0e0d8ac74ba02bff29ddc1c7477
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>在模拟器中运行的 UWP 和 Windows 8.1 应用
 UWP 和 Windows 8.1 应用程序的 Visual Studio 模拟器是一个可模拟 UWP 或 Windows 8.1 应用程序的桌面应用程序。 你可以运行应用程序选择的物理屏幕大小和你想要模拟的分辨率。 此外可以模拟常用的触摸和旋转事件，并模拟网络连接属性。
@@ -147,12 +148,12 @@ UWP 和 Windows 8.1 应用程序的 Visual Studio 模拟器是一个可模拟 UW
   
  [如何通过后台任务响应系统事件](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [如何在触发挂起、 继续和后台 UWP 应用中的事件](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [如何在 UWP 应用中触发挂起、继续和后台事件](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> 用键盘在模拟器中导航  
  你可以通过按导航模拟器工具栏**CTRL + ALT + 向上键**将焦点从模拟器窗口切换到模拟器工具栏。 使用 **向上键头** 和 **向下键头** 在工具栏按钮之间移动。  
   
  可以通过按来关闭模拟器**CTRL + ALT + F4**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [从 Visual Studio 运行应用](../debugger/run-store-apps-from-visual-studio.md)

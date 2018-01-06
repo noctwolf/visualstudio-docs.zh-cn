@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f007d1fa6d9a1bbdebdd78a88272c98f0c44cdb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 943f2a142eb2267ada5c9b8570068c67684bdaed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-native-code-faqs"></a>调试本机代码常见问题
 下面的主题包含一些常见问题的答案：  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
   
 -   [如果在 MFC 中暂停，如何可以我回到调用 MFC 的函数？](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [调试本机代码](../debugger/debugging-native-code.md)

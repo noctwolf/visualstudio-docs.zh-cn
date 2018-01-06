@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2ca6d0d7f875e376af37fcdcfa5d4156b8f4038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d2dc97cbe5c6bc178e4b14c89287a3f1c3794dca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processes-view"></a>进程视图
 进程视图显示你的系统上的所有活动进程树。 显示进程 ID 和模块名称。 如果你想要检查特定的系统进程，它通常对应于执行程序，请使用进程视图。 进程标识由模块名称，或者其指定为"系统 processes"。  

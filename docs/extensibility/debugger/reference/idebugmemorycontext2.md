@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d0f631d1cb41a0882dcf4d67754df24e6e83f23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d3219c5618fbb59438ec6d7ad0aa54e2fbbb1213
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 此接口表示运行被调试的程序的计算机的地址空间中的位置。  
@@ -49,14 +50,14 @@ IDebugMemoryContext2 : IUnknown
 ## <a name="remarks"></a>备注  
  Visual Studio 的**内存**窗口调用[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)获取`IDebugMemoryContext2`包含计算出的表达式用于内存地址的接口。 此上下文随后会传递给[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)和[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)以指定要读取或写入的地址。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)   
  [GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)   

@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 32e0b56ab5d4507c971948b98c8f7660650e70cc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6ee199aa98c0c5b72a5693c840b892929e55477a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce 如何执行应用程序更新
 ClickOnce 使用应用程序的部署清单中指定的文件版本信息来决定是否要更新应用程序的文件。 ClickOnce 更新开始后，使用一种称为技术*文件修补*从而避免冗余下载的应用程序文件。  
@@ -38,6 +39,6 @@ ClickOnce 使用应用程序的部署清单中指定的文件版本信息来决�
   
  修补文件不能用于标记为数据和存储在数据目录中的文件。 这些始终会下载而不考虑文件的哈希签名。 数据目录的详细信息，请参阅[访问本地数据和 ClickOnce 应用程序中的远程数据](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
  [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)

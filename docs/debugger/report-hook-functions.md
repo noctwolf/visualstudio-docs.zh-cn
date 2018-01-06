@@ -26,11 +26,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51fd8ce8618dfa7b3e8adcc7326c57905d325999
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 958c33c623830af509185b3d35ef8a8b5956aaae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="report-hook-functions"></a>报表挂钩函数
 报告挂钩函数，使用安装[_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook)，每次调用[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)生成调试报告。 可以使用报告挂钩函数以及其他项筛选报告以集中于特定类型的分配。 报告挂钩函数应具有如下原型：  
@@ -49,6 +50,6 @@ typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
   
  如果挂钩完全处理了所涉及的消息，以便不执行进一步的报告要求，它应返回**TRUE**。 如果它返回**FALSE**，`_CrtDbgReport`通常将报告消息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编写调试挂钩函数](../debugger/debug-hook-function-writing.md)   
  [crt_dbg2 示例](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)

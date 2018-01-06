@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03ae4956f0e16a4fb9267266ebc6b6c335c95eac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: e542e58bab483a1f20029bb66a073ae07d45afba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>如何：查找 ASP.NET 进程的名称
 若要附加到正在运行的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序，您必须知道 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 进程的名称：  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     > 从 Visual Studio 2017 年 1 开始，你可以使用搜索框中搜索进程名称。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
  [远程调试 Web 应用程序的必备组件](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
  [系统要求](../debugger/aspnet-debugging-system-requirements.md)   

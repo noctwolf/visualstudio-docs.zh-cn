@@ -17,11 +17,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: uwp
+ms.openlocfilehash: d5fa005273ada8869da467c9db97e0263f43f555
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>在 Visual Studio 中导航调试会话（Xaml 和 C#）
 本快速入门演示如何导航 Visual Studio 调试会话以及如何在会话中查看和更改程序状态。  
@@ -158,7 +159,7 @@ ms.lasthandoff: 12/07/2017
   
  ![从 Demo 方法中调用 Example3](../debugger/media/dbg_basics_callexample3.png "DBG_Basics_CallExample3")  
   
- **运行到断点处。** 通过在 **“调试”** 菜单上选择 **“启动调试”** （键盘：F5）。 调试器会在 MainPage 方法中的断点处挂起执行。  
+ **运行到断点处。** 通过在 **“调试”** on the **“启动调试”** （键盘：F5） 调试器会在 MainPage 方法中的断点处挂起执行。  
   
  **单步执行 Example3 方法。** 在 **“单步执行”** 菜单上选择 **“启动调试”** （键盘：F11），以移动到 Example3 方法的入口点。 继续单步执行该方法，直到迭代了 `for` 块的一次或多次循环。 请注意，单步执行所有 1000 次迭代需要较长时间。  
   
@@ -194,7 +195,7 @@ ms.lasthandoff: 12/07/2017
   
  ![从 Demo 方法中调用 Example4](../debugger/media/dbg_basics_callexample4.png "DBG_Basics_CallExample4")  
   
- **运行到异常。** 通过在 **“调试”** 菜单上选择 **“启动调试”** （键盘：F5）。 再次按 F5 以继续执行。 调试器会在 Example4 方法中的异常处挂起执行，并显示异常对话框。  
+ **运行到异常。** 通过在 **“调试”** on the **“启动调试”** （键盘：F5） 再次按 F5 以继续执行。 调试器会在 Example4 方法中的异常处挂起执行，并显示异常对话框。  
   
  ![异常对话框](../debugger/media/dbg_basics_exceptiondlg.png "DBG_Basics_ExceptionDlg")  
   
@@ -212,7 +213,7 @@ ms.lasthandoff: 12/07/2017
   
  **停止调试。** On the **“启动调试”** 菜单上选择 **“停止调试”** （键盘：Shift+F5）。 这会结束调试会话。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [启动调试会话 (VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)   
  [触发挂起、 继续和后台适用于 UWP 应用的事件)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)   
  [在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df9c61f85c56847fa1b9d881cc26cd2e79f3bd2e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 476ff209f96aa5729d20bd9a5a5d12c9e5a5c39a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>指定是否仅使用 Visual Studio 中的仅我的代码的用户代码进行调试
 你可以配置 Visual Studio 可自动逐过程执行系统、 框架和其他非用户调用和折叠调用堆栈窗口中的这些调用。 启用或禁用此行为的功能称为*仅我的代码*。 本主题介绍如何在 C#、 Visual Basic、 c + + 和 JavaScript 项目中使用仅我的代码。
@@ -121,10 +122,10 @@ ms.lasthandoff: 11/11/2017
   
 |元素|描述|  
 |-------------|-----------------|  
-|函数|必需。 将一个或多个函数指定为非用户函数。|  
-|`Name`|必需。 ECMA-262 格式的正则表达式，指定要匹配的完整函数名。 例如: <br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知调试器将 `MyNS::MyClass` 中的所有方法都视为非用户代码。 匹配区分大小写。|  
+|函数|必须的。 将一个或多个函数指定为非用户函数。|  
+|`Name`|必须的。 ECMA-262 格式的正则表达式，指定要匹配的完整函数名。 例如:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知调试器将 `MyNS::MyClass` 中的所有方法都视为非用户代码。 匹配区分大小写。|  
 |`Module`|可选。 ECMA-262 格式的正则表达式，指定包含函数的模块的完整路径。 匹配不区分大小写。|  
-|`Action`|必需。 以下区分大小写的值之一：<br /><br /> -   `NoStepInto`-告知调试器单步执行匹配的函数。<br />-   `StepInto`-告知调试器单步执行匹配的函数中，重写任何其他`NoStepInto`匹配的函数。|  
+|`Action`|必须的。 以下区分大小写的值之一：<br /><br /> -   `NoStepInto`-告知调试器单步执行匹配的函数。<br />-   `StepInto`-告知调试器单步执行匹配的函数中，重写任何其他`NoStepInto`匹配的函数。|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a>自定义调用堆栈行为  
  可以通过在 `*.natjmc` 文件中指定模块、源文件和函数，将它们指定视为调用堆栈中的非用户代码。  
@@ -157,22 +158,22 @@ ms.lasthandoff: 11/11/2017
   
  **模块元素特性**  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`Name`|必需。 模块的完整路径。 你可以使用 Windows 通配符`?`（零个或一个字符） 和`*`（零个或多个字符）。 例如，<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 告知调试器将任何驱动器上的 `\3rdParty\UtilLibs` 中的所有模块都视为外部代码。|  
+|`Name`|必须的。 模块的完整路径。 你可以使用 Windows 通配符`?`（零个或一个字符） 和`*`（零个或多个字符）。 例如，应用于对象的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 告知调试器将任何驱动器上的 `\3rdParty\UtilLibs` 中的所有模块都视为外部代码。|  
 |`Company`|可选。 发布在可执行文件中嵌入的模块的公司的名称。 可以使用此特性消除模块歧义。|  
   
  **文件元素特性**  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`Name`|必需。 要视为外部代码的源文件的完整路径。 可以在指定路径时使用 Windows 通配符 `?` 和 `*`。|  
+|`Name`|必须的。 要视为外部代码的源文件的完整路径。 可以在指定路径时使用 Windows 通配符 `?` 和 `*`。|  
   
  **函数元素特性**  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`Name`|必需。 要视为外部代码的函数的完全限定的名称。|  
+|`Name`|必须的。 要视为外部代码的函数的完全限定的名称。|  
 |`Module`|可选。 包含函数的模块的名称或完整路径。 可以使用此特性区分具有相同名称的函数。|  
 |`ExceptionImplementation`|设置为 `true` 时，调用堆栈显示的是引发异常的函数，而不是此函数。|  
   

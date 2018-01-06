@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8cb80098edf4f05de550c8b8a22e0ed0649ca26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9f18e2e131b6baa325bd7e0b65babee4c3679ed8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-an-expression-evaluator"></a>实现表达式计算器
 > [!IMPORTANT]
@@ -65,5 +66,5 @@ ms.lasthandoff: 10/31/2017
  [表达式计算器实施策略](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  
  定义了表达式计算器 (EE) 实现策略一个三步骤过程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

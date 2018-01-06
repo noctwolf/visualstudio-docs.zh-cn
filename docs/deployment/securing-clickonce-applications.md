@@ -20,11 +20,12 @@ caps.latest.revision: "45"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 331cdf8ddc449ea8d1d29af346b8f7faea549c00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a7825ef0b664007fc119d7ed08066e8585ee59ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="securing-clickonce-applications"></a>保护 ClickOnce 应用程序
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序受 .NET Framework 中代码访问安全性约束的限制，以帮助限制代码访问受保护的资源和操作的权限。 因此，了解代码访问安全性的含义以相应地编写 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序是十分重要的。 您的应用程序可以使用完全信任或使用部分区域（如 Internet 区域和 Intranet 区域）来限制访问权限。  
@@ -79,6 +80,6 @@ ms.lasthandoff: 10/27/2017
 ## <a name="deploying-obfuscated-assemblies"></a>部署经过模糊处理的程序集  
  Visual Studio 提供了免费[PreEmptive 保护-Dotfuscator Community Edition](../ide/dotfuscator/index.md)，可以用于保护你 ClickOnce 应用程序可以通过代码混淆处理和活动保护度量值。  有关详细信息，请参阅[Dotfuscator Community Edition 用户指南的 ClickOnce 部分](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html)。
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)

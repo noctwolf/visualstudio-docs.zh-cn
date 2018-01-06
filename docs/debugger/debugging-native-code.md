@@ -23,11 +23,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ee0ec7e8314008550267c40bb4811c90783777c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 94f3d0cfd57f4d907bab758e52e0499b63941236
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-native-code"></a>调试本机代码
 本节讲述本机应用程序的一些常见调试问题和调试技术。 本节阐述的技术属于高级别技术。 有关使用 Visual Studio 调试器的机制，请参阅[调试器路线图](../debugger/debugger-basics.md)。  
@@ -72,6 +73,6 @@ ms.lasthandoff: 10/31/2017
  [调试器功能简介](../debugger/debugger-feature-tour.md)  
  提供指向调试文档的较大章节的链接。 涉及的信息包括：调试器的新增功能、设置和准备、断点、处理异常、编辑和继续、调试托管代码、调试本机代码、调试 SQL 以及用户界面参考。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)  
  [在 Visual Studio 中调试](../debugger/index.md)[调试器功能教程](../debugger/debugger-feature-tour.md)

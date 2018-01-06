@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0a06a9b4be6cb20339c8c89f8594f290c1f6a46a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 890023b8336f130cf3b8cfcfe640da46af9cf0d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attaching-after-a-launch"></a>在启动后附加
 已启动程序后，调试会话已准备好的调试引擎 (DE) 附加到所述的程序。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
  DE 现在被附加到程序和准备好发送任何启动事件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [附加到的程序直接](../../extensibility/debugger/attaching-directly-to-a-program.md)   
  [通知端口](../../extensibility/debugger/notifying-the-port.md)   
  [调试任务](../../extensibility/debugger/debugging-tasks.md)   

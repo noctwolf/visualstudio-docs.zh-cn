@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 00cc60b0b6c522c6a6674456adae50aace266030
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98d6edf4da8b7f0275a7b361f5492f4f49a1f747
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-and-removing-property-pages"></a>添加和删除属性页
 项目设计器提供集中管理项目属性、 设置和中的资源[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它显示为中的单个窗口[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 和包含大量的访问通过在左侧选项卡右侧的窗格。 项目设计器中 （通常称为属性页） 的窗格因项目类型和语言而异。 项目设计器可通过访问**属性**命令**项目**菜单。  
@@ -208,5 +209,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  本主题中提供的所有代码示例都是一个更大的示例中的部分[VSSDK 示例](http://aka.ms/vs2015sdksamples)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项目子类型](../extensibility/internals/project-subtypes.md)

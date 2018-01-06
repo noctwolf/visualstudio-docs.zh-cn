@@ -18,11 +18,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4ff3c0d06d7f668ad3d61f785320def8b9ddd0e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 489403e4ce5052cb526a361e4548ab8823a20b18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>如何：标记线程和取消标记线程
 你可以标记一个线程你想要通过将其标记为图标中为提供特别注意**线程**，**并行堆栈**（线程视图），**并行监视**，和**GPU 线程**windows。 此图标有助于您和其他人将标记的线程与其他线程区别开来。  
@@ -59,9 +60,9 @@ ms.lasthandoff: 10/31/2017
   
 4.  （可选）在**搜索**框中，键入要搜索特定模块的字符串。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)  
  [演练： 调试多线程应用程序使用线程窗口](../debugger/how-to-use-the-threads-window.md)

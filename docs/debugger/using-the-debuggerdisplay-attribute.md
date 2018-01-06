@@ -16,11 +16,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 263a6628154a5c36326c7fbdbd7a522cde28c40a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5221ba5a395e1cfbbe624b3d65e6762bedb8d2e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 特性
 [DebuggerDisplayAttribute 类](/dotnet/api/system.diagnostics.debuggerdisplayattribute)控制对象、 属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
  `DebuggerDisplay` 还可以接受命名参数。  
   
-|参数|用途|  
+|参数|目标|  
 |----------------|-------------|  
 |`Name`, `Type`|这些参数影响变量窗口的 **“名称”** 和 **“类型”** 列。 （可将它们设置为使用与构造函数相同的语法的字符串。）如果过度使用这些参数或使用这些参数不当，则会导致混乱的输出。|  
 |`Target`, `TargetTypeName`|指定在程序集级别使用该特性时的目标类型。|  
@@ -93,7 +94,7 @@ public sealed class MyClass
 ## <a name="example"></a>示例  
  下面的代码示例演示如何使用 `DebuggerDisplay`以及 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在调试器变量窗口（如 **“监视”** 窗口）中查看时，它生成类似以下内容的扩展：  
   
-|**Name**|**“值”**|**Type**|  
+|**名称**|**“值”**|**Type**|  
 |--------------|---------------|--------------|  
 |键|"three"|object {string}|  
 |“值”|3|object {int}|  
@@ -176,7 +177,7 @@ class MyHashtable
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 DebuggerTypeProxy 特性](../debugger/using-debuggertypeproxy-attribute.md)   
  [创建托管对象的自定义视图](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)   

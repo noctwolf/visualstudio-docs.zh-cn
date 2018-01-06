@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9eb23f90ea960f927ab8561ff215968134bc30e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2ef3c35c1732c4177edfa6d3bc41faacc1371aa5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
 检索函数的转换 （thunk） 类型。  
@@ -46,7 +47,7 @@ HRESULT get_thunkOrdinal (
   
  "转换 （thunk）"是代码的一种 32 位内存地址空间 （也称为平面地址空间） 和 （称为分段的地址空间） 的 16 位地址空间之间进行转换。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [THUNK_ORDINAL 枚举](../../debugger/debug-interface-access/thunk-ordinal.md)   
  [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)

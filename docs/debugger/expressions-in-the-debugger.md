@@ -22,11 +22,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8eaccc61de02de9974d50d7bb97824cbafa38f7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fd1a477a7d02171eecea51b26f796d9c958c09eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的表达式
 Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”** 对话框、 **“监视”** 窗口或 **“即时”** 窗口中输入表达式时，这些计算器可以对其进行计算。 这些表达式计算器还可以在 **“断点”** 窗口和调试器中的许多其他位置使用。
@@ -206,7 +207,7 @@ int main()
   
 -   命名空间或模块级的关键字，如 `End Sub` 或 `Module`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C + + 中的格式说明符](../debugger/format-specifiers-in-cpp.md)   
  [上下文运算符 （c + +）](../debugger/context-operator-cpp.md)   
  [C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)   

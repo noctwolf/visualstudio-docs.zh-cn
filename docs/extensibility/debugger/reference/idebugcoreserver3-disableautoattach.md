@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b22bbcd3d063c802ba732caed497eab626043687
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b703976d30d4d195a6a4f422f1f95ab2495932e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
 禁用自动附加的与此服务器关联的所有的调试引擎。  
@@ -38,5 +39,5 @@ int DisableAutoAttach();
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

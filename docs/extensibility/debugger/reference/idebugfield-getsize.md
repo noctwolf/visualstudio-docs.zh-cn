@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a1b578568d6a372edde6269b1beb742f955d670a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b6c06a9fd218029c59f2ee004d5c421363530af1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 此方法获取的字段，以字节为单位的大小。  
@@ -47,5 +48,5 @@ int GetSize(
 ## <a name="remarks"></a>备注  
  所有字段都具有一个类型和所有类型都具有一个大小。 例如，带有字节的类型的字段具有 1 个字节的大小。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

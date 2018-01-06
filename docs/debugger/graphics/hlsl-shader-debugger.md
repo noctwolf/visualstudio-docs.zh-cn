@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7d095d5dec0194f75d739899433c04439f08539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9c1aeeb2da6817375e0327dba385037dccdc58cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL 着色器调试器
 Visual Studio 图形分析器中的 HLSL 调试器可帮助了解 HLSL 着色器代码在应用的实际条件下如何运行。  
@@ -74,7 +75,7 @@ Visual Studio 图形分析器中的 HLSL 调试器可帮助了解 HLSL 着色器
   
  有关如何使用 HLSL 调试器来调试着色器错误的示例，请参阅[示例](graphics-diagnostics-examples.md)或在另请参阅部分的演练链接。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 因顶点着色而缺少对象](walkthrough-missing-objects-due-to-vertex-shading.md)   
  [演练： 调试因着色引起的错误的呈现](walkthrough-debugging-rendering-errors-due-to-shading.md)   
  [演练：使用图形诊断来调试计算着色器](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

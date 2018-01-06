@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d161d8adcdc7a089ff8f57f079c31cb024d13ea7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 42dfc3ed4a4bff3e0c32d7155a74d74c1c6d0503
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 完成异步表达式求值时，此接口是由的调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。  
@@ -48,14 +49,14 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
   
  如果未成功完成，评估`DEBUG_PROPINFO_VALUE`和`DEBUG_PROPINFO_ATTRIB`标志将不会设置[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)返回的结构[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) ( [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) DE 通过创建对象并将其中返回`IDebugExpressionEvaluationCompleteEvent2`如果评估失败的事件)。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   

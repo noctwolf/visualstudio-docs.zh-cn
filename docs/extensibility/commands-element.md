@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 61d7f67eda9bdd1d215586a75ed01c1089ccf7fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7c5cce390ad786ad530153e1850850509990b039
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-element"></a>命令元素
 表示 VSPackage 工具栏上的命令的集合。 集合可以有最多五个小节中，如下： 菜单、 组、 按钮、 组合和位图。  
@@ -90,6 +91,6 @@ ms.lasthandoff: 10/31/2017
 <Commands>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

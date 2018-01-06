@@ -25,11 +25,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da047f9739fc8af1c12fc084df4ef5a267192656
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: a9483983b6cbd5644827af8f647425cce61502ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="native-run-time-checks-customization"></a>本机运行时检查自定义
 使用编译**/RTC** （运行时检查） 或使用`runtime_checks`杂注，C 运行库提供了本机运行时检查。 某些情况下，可能需要自定义运行时检查：  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="query-for-information-about-run-time-checks"></a>查询有关运行时检查的信息  
  `_RTC_NumErrors` 返回运行时错误检查所检测到的错误类型的数量。 要得到每个错误的简短说明，可以从 0 循环到 `_RTC_NumErrors` 的返回值，并在每次循环中将迭代值传递给 `_RTC_GetErrDesc`。 有关详细信息，请参阅[_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors)和[_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 使用本机运行时检查](../debugger/how-to-use-native-run-time-checks.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [_CrtDbgReport、_CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

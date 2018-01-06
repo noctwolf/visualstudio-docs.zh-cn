@@ -21,11 +21,12 @@ caps.latest.revision: "14"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 19fa51106512394175159c7dd656badaf583dd3c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cc4d2a778449be4cbb441397c0a5a427ef91e8dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>调试使用 System.Deployment.Application 的 ClickOnce 应用程序
 在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可让你配置如何更新应用程序。 但是，如果你需要使用和自定义高级[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署功能，你将需要访问由提供的部署对象模型<xref:System.Deployment.Application>。 你可以使用<xref:System.Deployment.Application>Api，可用于高级任务，如：  
@@ -79,5 +80,5 @@ ms.lasthandoff: 10/27/2017
   
  使用<xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A>属性来调用<xref:System.Deployment.Application>Api 仅在部署应用程序时; Api 不应该调用在调试期间[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Deployment.Application>

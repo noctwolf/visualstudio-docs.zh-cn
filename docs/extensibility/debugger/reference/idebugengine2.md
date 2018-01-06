@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f684a29eea526f7725e8a876f53453512f65dadc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 95a1a8c48bd6eab0f21ccc85a125b5d10f42ef4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 此接口表示调试引擎 (DE)。 它用于从创建到设置和清除异常的断点管理调试会话的各个方面。  
@@ -54,13 +55,13 @@ IDebugEngine2 : IUnknown
 |[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|设置某个度量值。|  
 |[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|通过此 DE 正在调试的所有程序都停止执行其线程之一尝试运行下一次的请求。|  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： Msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)

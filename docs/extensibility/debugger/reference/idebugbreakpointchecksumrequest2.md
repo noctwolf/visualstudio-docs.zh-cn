@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 080d9178889593e22f19b64fe2c60da370dcc3f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 51fbcd168500c2ba2cd508b2a9b282896613dd64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
 表示断点请求的文档校验和。  
@@ -39,7 +40,7 @@ IDebugBreakpointChecksumRequest2 : IUnknown
 |[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|检索给定的唯一标识符的校验和算法的断点请求使用的文档校验和。|  
 |[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|确定校验和是否启用此文档。|  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： Msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

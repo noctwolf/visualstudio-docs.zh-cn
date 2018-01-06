@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b40a141b90489fa65ffc5f29b363d3d647ca4cb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91ee83167c681b713ea7d7a51a38d45b05fba4d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugport2"></a>IDebugPort2
 此接口表示计算机上的调试端口。  
@@ -52,14 +53,14 @@ IDebugPort2 : IUnknown
 ## <a name="remarks"></a>备注  
  本地端口提供访问所有进程和在本地计算机上运行的程序。 其他端口可能表示的串行电缆连接到基于 Windows CE 的设备时或与非 DCOM 计算机的网络连接。 `IDebugPort2`接口用于查找的名称和端口、 标识符枚举的端口上运行的所有进程并为启动和终止进程的端口上提供功能。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

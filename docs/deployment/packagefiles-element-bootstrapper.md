@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: a85b06bfc5c82e7d4bd08bef8f768ad2e28a2ab0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 25ba72b511782c450b882826a3e3af94a14f6e20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt;元素 （引导程序）
 `PackageFiles`元素包含`PackageFile`元素，后者定义的结果执行的安装程序包`Command`元素。  
@@ -55,9 +56,9 @@ ms.lasthandoff: 10/27/2017
   
  `PackageFile`具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`Name`|必需。 包文件的名称。 这是的名称，`Command`它定义包安装在其下的条件时，将引用元素。 此值还用作键到`Strings`表以检索等工具的本地化的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将用来描述包。|  
+|`Name`|必须的。 包文件的名称。 这是的名称，`Command`它定义包安装在其下的条件时，将引用元素。 此值还用作键到`Strings`表以检索等工具的本地化的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将用来描述包。|  
 |`HomeSite`|可选。 在远程服务器上，如果不包括安装包的位置。|  
 |`CopyOnBuild`|可选。 指定引导程序生成时是否应将复制到磁盘的包文件。 默认值为 true。|  
 |`PublicKey`|加密的包的证书签名者的公钥。 如果存在`HomeSite`为止使用; 否则为可选。|  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/27/2017
 </PackageFiles>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [\<产品 > 元素](../deployment/product-element-bootstrapper.md)   
  [\<包 > 元素](../deployment/package-element-bootstrapper.md)   
  [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

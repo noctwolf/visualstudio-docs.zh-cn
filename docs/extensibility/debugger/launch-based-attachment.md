@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2aa9787ad432e402375680c4e27e433236b13249
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d05f0b8d8fd0190391da831351b65d873eac4efc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launch-based-attachment"></a>启动基于附件
 自动启动基于附件添加到某个程序。 当托管该程序的进程由 SDM 启动时，启动基于附件遵循类似于手动附件方法的路径。 有关信息，请参阅[附加到程序](../../extensibility/debugger/attaching-to-the-program.md)。  
@@ -35,6 +36,6 @@ ms.lasthandoff: 10/31/2017
   
 4.  发送[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)事件对象，以通知 SDM 启动的进程会创建新线程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发送所需的事件](../../extensibility/debugger/sending-the-required-events.md)   
  [启用要进行调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

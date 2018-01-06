@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cb2bf52c038b0abbac742aafa942f2f7ea7ea1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3ecbff62570067b25aae9ad525138687eb281c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-handling"></a>命令处理
 你的编辑器可以定义新的命令。 在菜单中，在工具栏上，或在上下文菜单中，通常会显示命令。  
@@ -49,5 +50,5 @@ ms.lasthandoff: 10/31/2017
   
  你还可以使用无需在.vsct 文件中定义的预定义的命令。 例如，如果您检查 EditorPane.cs 文件以生成由 Visual Studio 包模板，您发现的一组预定义命令，如<xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID>由定义<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>，会在命令处理程序，如 onSelectAll 方法中处理。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

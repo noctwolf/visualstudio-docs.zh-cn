@@ -22,11 +22,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 36f1c1d5255233f57f7c2e266fe26fd8cbf789ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 071bfa46df7e11f760bc32cda0a732388835d2d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-product-manifest"></a>如何：创建产品清单
 若要部署你的应用程序的先决条件，你可以创建引导程序包。 引导程序包包含一个单个产品清单文件，但是包清单的每个区域设置。 包清单中包含包的本地化特定的方面。 这包括字符串、 最终用户许可协议和语言包。  
@@ -161,5 +162,5 @@ ms.lasthandoff: 10/27/2017
 </Product>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

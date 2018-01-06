@@ -6,22 +6,22 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 5fd98a5b-2cf3-4438-8b0f-6f1a742a62ce
 caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0d8c28f2be735ebb1063715e19a6f2cae55753a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72a891219b24f1cb80ec9e65988f57ebfb04fcd6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>错误：远程计算机未显示在“远程连接”对话框中
 如果远程计算机未显示在“远程连接”对话框中，请检查以下常见原因。  
@@ -38,5 +38,5 @@ ms.lasthandoff: 10/31/2017
   
 -   防病毒软件正在阻止 Visual Studio 和远程计算机之间的通信。 若要解决此问题，请将防病毒软件配置为允许 Visual Studio 和远程调试器 (msvsmon) 进行通信。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [远程调试](../debugger/remote-debugging.md)

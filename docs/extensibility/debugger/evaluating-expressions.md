@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 870469b77eb2f9fcf562602dd651c84fa71020ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 24cc20166bad875dcaebbd5492a7fe8317539d47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-expressions"></a>计算表达式
 表达式是从字符串向下传递，从自动、 监视、 快速监视，或即时窗口中创建的。 计算表达式，则它会生成一个可打印字符串，包含的名称和类型的变量或自变量和其值。 此字符串显示在相应的 IDE 窗口中。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
  若要启用表达式求值，DE 必须实现[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)和[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)接口。 同步和异步评估要求实现[IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [堆栈帧](../../extensibility/debugger/stack-frames.md)   
  [表达式计算上下文](../../extensibility/debugger/expression-evaluation-context.md)   
  [调试任务](../../extensibility/debugger/debugging-tasks.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9099d652012fb8b45b7b79f9c620f4102e7af602
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e406bc0cd5d7e4cb082e1f5e34fa6645538d02ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>实现源代码管理插件的最佳做法
 以下技术详细信息可帮助你可靠地实现了源代码管理插件中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -60,6 +61,6 @@ ms.lasthandoff: 10/31/2017
   
  这种方式，未定义最用户可配置的设置选项，因为它们广泛有所不同源控件插件。因此，建议的机制是**高级**按钮。 例如，在**获取**对话框中，则 IDE 将显示它了解，但它还显示的信息**高级**按钮如果插件都有为此命令的选项。 当用户单击**高级**按钮，IDE 调用[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)启用源代码管理插件以提示用户输入信息，如 bitflags 或日期/时间。 该插件在恢复期间传递的结构中返回此信息`SccGet`命令。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件](../extensibility/source-control-plug-ins.md)   
  [创建源代码管理插件](../extensibility/internals/creating-a-source-control-plug-in.md)

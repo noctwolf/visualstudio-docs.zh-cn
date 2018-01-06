@@ -23,11 +23,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfd356931e33e900d35094c4714d0c3f6fc93abe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b2e159e89fe1854f2d26267793e196aa91b570ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-linq"></a>调试 LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支持对语言集成查询 (LINQ) 代码进行调试，但是有一些限制。 大多数调试功能都使用 LINQ 语句，其中包括单步执行、设置断点以及在调试器窗口中查看结果。 本主题介绍 LINQ 调试的主要限制。  
@@ -110,7 +111,7 @@ End Function
 ##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>编辑并继续 LINQ 不支持  
  编辑并继续支持对 LINQ 查询中使用限制的更改。 有关详细信息，请参阅[EnC 受支持的更改](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SQL 调试](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)    
  [管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)   
  [LINQ 查询简介 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)   

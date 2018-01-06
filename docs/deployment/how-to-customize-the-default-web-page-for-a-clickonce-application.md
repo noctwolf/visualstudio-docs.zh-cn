@@ -21,11 +21,12 @@ caps.latest.revision: "14"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: fefafa0f9ea04a62d6ae79bd18834e36a1480f29
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4927a5909ba4b09e796d52d81cc9821a5a9c4820
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>如何：自定义 ClickOnce 应用程序的默认网页
 在发布 ClickOnce 应用程序到 Web，网页上自动生成并随应用程序一起发布。 默认页包含的应用程序和链接，以安装应用程序、 安装系统必备组件，或访问 MSDN 上的帮助的名称。  
@@ -50,8 +51,8 @@ ms.lasthandoff: 10/27/2017
   
 4.  可选。 若要阻止 Visual Studio 覆盖你自定义的发布 Web 页，取消选中**自动生成部署网页后每个发布**发布选项对话框中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [如何： 与 ClickOnce 应用程序一起安装系统必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [如何：与 ClickOnce 应用程序一起安装必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [如何：指定 ClickOnce 应用程序的发布页](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

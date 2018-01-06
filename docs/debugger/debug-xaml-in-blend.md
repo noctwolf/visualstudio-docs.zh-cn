@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b89bd3b3814eb8f5a1040a93aa1fc553f91c8025
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 8406f07b6f74211b4df873c7eae054e9ab67749c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中调试 XAML
 你可以使用 [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] 中的工具在应用中调试 XAML。 生成项目时，任何错误都显示在**结果**面板。 双击一个错误可找到与该错误相关的标记。 如果你需要更多的工作空间，可以隐藏**结果**通过按 F12 的面板。  
@@ -120,7 +121,7 @@ ms.lasthandoff: 11/11/2017
   
      按 Ctrl+Shift+B 生成项目，并确认没有剩余错误。  
   
-## <a name="debugging-in-visual-studio"></a>使用 Visual Studio 进行调试  
+## <a name="debugging-in-visual-studio"></a>在 Visual Studio 中进行调试  
  你可以在 Visual Studio 中打开 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 项目，以便可以在应用中更轻松地调试代码。 若要打开[!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]项目在 Visual Studio 中，右键单击中的项目**项目**面板，并依次**在 Visual Studio 中编辑**。 在 Visual Studio 中完成调试会话后，按 Ctrl+Shift+S 保存所有更改，然后切换回 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]。 系统将提示你重新加载该项目。 单击**全是**为了能够继续使用[!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]。  
   
  有关调试你的应用程序的详细信息，请参阅[Visual Studio 中的调试 UWP 应用](http://go.microsoft.com/fwlink/?LinkId=329944)。  

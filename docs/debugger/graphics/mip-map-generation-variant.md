@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bb35705d3b8cf67872cecea2731e0762c321229
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f6b7773562ed7b09ca00f7fc471b7ee2924c0181
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 生成变量
 对非呈现器目标的纹理启用 mip 贴图。  
@@ -72,5 +73,5 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 > [!NOTE]
 >  如果你希望提供你自己的 mip 级别内容而不是自动生成它们，你必须使用支持进行了 mip 贴图的纹理的图像编辑器创建纹理，然后加载该文件并将 mip 级别传递给 `CreateTexture2D`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Half/Quarter 纹理维度变体](half-quarter-texture-dimensions-variant.md)

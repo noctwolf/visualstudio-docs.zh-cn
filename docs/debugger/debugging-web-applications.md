@@ -22,11 +22,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e635a47553cdb0eef1b690e64323ca20188b476
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 238cb35212232865f154bcf5afa029abd4b30c36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-web-applications"></a>调试 Web 应用程序
 本节说明如何调试几种类型的 Web 应用程序。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
  [调试 ASP.NET 应用程序](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
  描述启用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序调试所需的步骤。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Debugging Web Applications and Script](../debugger/debugging-web-applications-and-script.md) （调试 Web 应用程序和脚本）  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  

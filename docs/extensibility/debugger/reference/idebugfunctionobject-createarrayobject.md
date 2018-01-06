@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5a567b906be7e295a8ea1c32f9fdbe19320bd5f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5dfe24252ce2ce51ff86fa680d94964b86d09365
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 创建一个数组对象。 此数组可以包含任一基元或对象实例值。  
@@ -72,5 +73,5 @@ int CreateArrayObject(
 ## <a name="remarks"></a>备注  
  调用此方法以创建一个表示由表示的函数的数组参数对象[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

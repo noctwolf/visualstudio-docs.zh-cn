@@ -17,11 +17,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81e944d73ae45de1a786a6df27652949a38eec81
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f90f5971a101b54aae1cd968d5d5dad67caec74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>在工具窗口中添加快捷菜单
 本演练将在工具窗口的快捷菜单。 快捷菜单是当用户右键单击按钮、 文本框中或窗口背景时显示。 快捷菜单上的命令的行为与其他菜单或工具栏上的命令相同。 若要支持的快捷菜单，指定在.vsct 文件中，并将其显示在响应的鼠标右键单击。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
  或者，如果你的快捷菜单将不访问 Visual Studio 功能，你可以使用<xref:System.Windows.FrameworkElement.ContextMenu%2A>XAML 元素在用户控件中的属性。 有关详细信息，请参阅[ContextMenu](/dotnet/framework/wpf/controls/contextmenu)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-the-tool-window-shortcut-menu-package"></a>创建工具窗口快捷方式菜单包  
@@ -279,6 +280,6 @@ ms.lasthandoff: 10/31/2017
   
 4.  单击快捷菜单上的颜色。 工具窗口背景色应更改为所选颜色。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)   
  [使用并提供服务](../extensibility/using-and-providing-services.md)

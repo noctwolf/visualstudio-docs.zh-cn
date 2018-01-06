@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cef54d281555f49806ed59ad1627460a7752954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9b3f46a0e4fb87e6064fb3e975cd6b7313270c13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>创建基本项目系统中，第 2 部分
 本系列第一个演练[创建基本项目系统，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，演示如何创建基本项目系统。 本演练基于基本项目系统，并添加 Visual Studio 模板、 属性页中和其他功能。 在开始此之前，必须完成第一个演练。  
@@ -159,7 +160,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  展开**项目和解决方案**节点，，然后选择**生成并运行**。  
   
-3.  设置**MSBuild 项目生成输出详细级别**到**正常**。 单击“确定”。  
+3.  设置**MSBuild 项目生成输出详细级别**到**正常**。 单击 **“确定”**。  
   
 4.  重新生成 SimpleProject 项目。  
   

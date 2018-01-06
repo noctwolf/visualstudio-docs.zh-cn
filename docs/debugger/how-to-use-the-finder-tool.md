@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e48fd86555a2bd110f2945063b23f03d0ce64e16
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8930726d4f45164842a41fdf87ea3a8f55397278
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-finder-tool"></a>如何：使用查找程序工具
 你可以使用在查找程序工具**查找窗口**对话框以显示窗口属性或消息。 查找程序工具还可以找到已禁用的子窗口，并识别的窗口，以突出显示如果禁用子窗口重叠。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
      如果你选择**属性**、[窗口属性对话框](../debugger/window-properties-dialog-box.md)打开。 如果你选择**消息**、[消息视图](../debugger/messages-view.md)窗口随即打开。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Spy + + 视图](../debugger/spy-increment-views.md)   
  [使用 Spy + +](../debugger/using-spy-increment.md)   
  [Spy++ 参考](../debugger/spy-increment-reference.md)

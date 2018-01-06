@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db8a6cd6832b2fa427cea539bc03add5d330e06e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a9d9331e8767c4d815a6f62b7952414ced966d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-toolbar"></a>Spy++ 工具栏
 该工具栏显示在 Spy + + 中的菜单栏下。 若要显示或隐藏工具栏上，在**视图**菜单上，单击**工具栏**。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 |![Spy &#43; &#43;属性资源管理器按钮](../debugger/media/icon_spy--_propexp.gif "Icon_Spy + + _PropExp")|显示在窗口视图中选择的窗口的属性。|  
 |![Spy &#43; &#43;刷新按钮](../debugger/media/icon_spy--_refresh.gif "Icon_Spy + + _Refresh")|刷新系统视图。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Spy + +](../debugger/using-spy-increment.md)   
  [Spy + + 视图](../debugger/spy-increment-views.md)   
  [Spy++ 参考](../debugger/spy-increment-reference.md)

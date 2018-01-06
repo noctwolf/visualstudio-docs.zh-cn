@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dd4baed877bd5d0262e966edf006dea80596b47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75b532005bf4aeb471aa16ecfc6ac8ff508e3c7f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attaching-to-the-program"></a>附加到程序
 你向适当的端口注册您的程序后，你必须将调试器附加到你想要调试的程序。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  这是不相同`IDebugProgram2`对象已传递到`IDebugEngine2::Attach`方法。 以前传递`IDebugProgram2`对象端口仅被识别，并为一个单独的对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [启动基于附件](../../extensibility/debugger/launch-based-attachment.md)   
  [发送事件](../../extensibility/debugger/sending-events.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   

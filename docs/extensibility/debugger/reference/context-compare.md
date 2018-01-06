@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 48043375ebdf904a7fafbae5e4193b42d8ba8269
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: beba9f612024a63f8f302411982442df19e0bbd4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 指定用于比较两个内存上下文的条件。  
@@ -87,13 +88,13 @@ public enum enum_CONTEXT_COMPARE {
   
  这些值用于在满足指定的比较条件列表中找到的第一个内存上下文。 内存上下文提供一组内存上下文将自身针对通过进行比较`IDebugMemoryContext2::Compare`方法。 为其比较运算符的列表中的第一个内存上下文`true`随后会返回。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 35d642256a199c8ee5bf5e67a6a0bfb414b9fccc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 02b5f2477a18f3432bc255b9bd17a2ac11fbc030
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publishing-clickonce-applications"></a>发布 ClickOnce 应用程序
 首次发布 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序时，可以使用“发布向导”设置发布属性。 只有几个属性在向导中可用，所有其他属性均设置为其默认值。  
@@ -103,6 +104,6 @@ ms.lasthandoff: 10/27/2017
 |[演练：为 ClickOnce 应用程序创建自定义安装程序](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|说明如何创建自定义安装程序以安装 ClickOnce 应用程序。|  
 |[如何：发布启用了视觉样式的 WPF 应用程序](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|提供分步说明以解决在尝试发布已启用视觉样式的 WPF 应用程序时出现的错误。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce 参考](../deployment/clickonce-reference.md)

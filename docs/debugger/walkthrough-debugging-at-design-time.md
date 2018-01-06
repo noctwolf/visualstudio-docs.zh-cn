@@ -23,14 +23,15 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d497535f8511c3f9e6c55e80157507ed36184b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5869279a7bafb11368b7fb232e6ca68ca7d98478
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>演练：在设计时调试
-你可以使用 Visual Studio**即时**窗口在你的应用程序未运行时执行函数或子例程。 如果函数或子例程包含断点，Visual Studio 会在合适的点处中断执行。 然后可以使用调试器窗口来检查程序状态。 此功能称为在设计时调试。  
+你可以使用 Visual Studio**即时**窗口在你的应用程序未运行时执行函数或子例程。 如果函数或子例程包含断点，Visual Studio 会在合适的点处中断执行。 随后即可使用调试器窗口检查程序状态。 此功能称为在设计时调试。  
   
  下面的过程演示如何使用此功能。  
   
@@ -78,6 +79,6 @@ ms.lasthandoff: 10/31/2017
   
 10. 上**调试**菜单上，单击**继续**，然后验证是否仍然处于设计模式。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [调试器基础知识](../debugger/debugger-basics.md)

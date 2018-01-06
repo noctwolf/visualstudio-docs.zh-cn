@@ -6,22 +6,22 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 6233d060-85b8-42be-ae5f-bde7e1d0f241
 caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e168af69b04fb152e054860b2a6bd2084a349ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f51087d4f7882c34826942a898328640107a5ac6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>错误： 您没有权限检查进程 &#39; s 标识
 您没有检查进程标识的权限。 这可能是您系统的配置造成的。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  在**Terminal Services 的属性**窗口，请转到**常规**选项卡并设置**启动类型**到**手动**。  
   
-8.  单击“确定”。  
+8.  单击 **“确定”**。  
   
 9. 重新启动计算机。  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  下**远程桌面**，选择**允许用户远程连接到此计算机**。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)

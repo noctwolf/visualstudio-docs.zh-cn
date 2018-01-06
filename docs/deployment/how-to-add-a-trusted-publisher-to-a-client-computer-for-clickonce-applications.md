@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7b88b91111b40ae898fc53ad6bf4435e782a30b5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 758bf6b7b12d8c32a1985b5c07ba5c66f3937415
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>如何：为 ClickOnce 应用程序向客户端计算机添加一个受信任的发行者
 借助受信任的应用程序部署，可以配置客户端计算机，以便 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序在不提示用户的情况下以更高信任级别运行。 下面的过程演示如何使用命令行工具 CertMgr.exe 将发布者的证书添加到客户端计算机上的“受信任的发布者”存储。  
@@ -59,16 +60,16 @@ ms.lasthandoff: 10/27/2017
   
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 应用程序的的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   
  [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)   
- [如何： 启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)   
- [如何： 为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何： 调试 ClickOnce 应用程序具有受限权限](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [如何：使用受限权限对 ClickOnce 应用程序进行调试](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [如何： 为 ClickOnce 应用程序添加到客户端计算机的受信任的发布服务器](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [如何： 对应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)   
  [如何：配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

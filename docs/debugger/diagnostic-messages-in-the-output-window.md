@@ -30,11 +30,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2b898921b022dde9a666a42725bf63c0bb9e6ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df071834a6ae36da0156c527284f6ffbfcee0e4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>将诊断消息发送到输出窗口
 你可以运行时将消息写入到**输出**窗口中使用`Debug`类或`Trace`类，该类属于的<xref:System.Diagnostics>类库。 如果只在程序的调试版本中输出，则使用 Debug 类。 如果要同时在调试版本和发布版本中输出，则使用 Trace 类。  
@@ -58,9 +59,9 @@ ms.lasthandoff: 10/31/2017
   
 -   退出的线程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
- [输出窗口](../ide/reference/output-window.md)   
+ [“输出”窗口](../ide/reference/output-window.md)   
  [跟踪应用程序和在应用程序中插入检测点](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
  [C#、F#、和 Visual Basic 项目类型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [调试托管代码](../debugger/debugging-managed-code.md)

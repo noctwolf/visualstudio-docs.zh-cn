@@ -19,11 +19,12 @@ caps.latest.revision: "65"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09bd8bc648b87f69720468afcdeefa1d16dd36f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 7cae82f01564d2ef36175a3ee3e207e35a1830da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>远程调试 Visual Studio 中的 Visual c + + 项目
 若要调试 Visual Studio 应用程序的其他计算机上，安装，并在计算机上运行远程工具将在其中部署您的应用程序配置你的项目，以从 Visual Studio 中，连接到远程计算机然后部署并运行你的应用。
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 
 有关远程调试通用 Windows 应用 (UWP) 的信息，请参阅[调试安装的应用程序包](debug-installed-app-package.md)。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>惠?
 
 远程调试器都支持 Windows 7 和更高版本 (不 phone) 和从 Windows Server 2008 Service Pack 2 的 Windows Server 版本。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  对属性进行以下更改：  
   
-    |设置|值|
+    |设置|“值”|
     |-|-|  
     |远程命令|C:\remotetemp\mymfc.exe|  
     |工作目录|C:\remotetemp|  
@@ -105,7 +106,7 @@ ms.lasthandoff: 10/31/2017
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)] 
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)   
  [配置 Windows 防火墙以允许远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   

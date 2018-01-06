@@ -15,11 +15,12 @@ caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 149870d9c9a0a281cb0bba167496cc4c37d6f83a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d8d354333545a6ec2b637e160818d506fa049c29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-editors-and-designers"></a>创建自定义编辑器和设计器
 Visual Studio 集成的开发环境 (IDE) 可以托管不同类型的编辑器：  
@@ -101,5 +102,5 @@ Visual Studio 集成的开发环境 (IDE) 可以托管不同类型的编辑器�
  [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)  
  说明如何创建匹配的其余部分的 UI 元素[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

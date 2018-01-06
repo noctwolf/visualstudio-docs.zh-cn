@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d411a65e3882ed85bb3c100e8f7705623a7ce91f
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 359431356bb06a04857b93e10996a2123c80f129
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio 中的 UWP 应用部署
 ![仅适用于 Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -115,6 +116,6 @@ ms.lasthandoff: 11/11/2017
   
 -   在 JavaScript 和调试属性页上，将 **“启动应用程序”** 值设置为 **“是”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试已安装的应用程序包](../debugger/debug-installed-app-package.md)。   
  [从 Visual Studio 运行应用](../debugger/run-store-apps-from-visual-studio.md)

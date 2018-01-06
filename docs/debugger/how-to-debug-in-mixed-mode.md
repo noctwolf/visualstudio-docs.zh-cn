@@ -21,11 +21,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e319f0e6c9ca6197930858407a2177e9fe246907
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 797724287439631b9398af43616116a1635381ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>How to: Debug in Mixed Mode
 以下过程描述如何调试托管代码和本机代码，这一过程也称作混合模式调试。 根据 DLL 或应用程序是否用本机代码编写，有两种方案可以用来进行调试：  
@@ -61,5 +62,5 @@ ms.lasthandoff: 10/31/2017
 
     ![启用本机代码调试](../debugger/media/dbg-mixed-mode-from-csharp.png "启用本机代码调试")
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)

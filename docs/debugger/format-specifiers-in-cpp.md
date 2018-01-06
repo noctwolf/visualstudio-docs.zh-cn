@@ -30,11 +30,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0318f5a3cb1cd19c658030d64c4f6ec8bcbf0a9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 11be1eb546902e8e37843383fe499274f819883f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>在 c + + 在 Visual Studio 调试器中的格式说明符
 你可以使用格式说明符更改在“监视”  窗口中显示值所用的格式。  
@@ -70,7 +71,7 @@ int main() {
 |d|十进制整数|0x00000066|102|  
 |o|无符号的八进制整数|0x00000066|000000000146|  
 |x<br /><br /> **h**|十六进制整数|102|0xcccccccc|  
-|x<br /><br /> **H**|十六进制整数|102|0xcccccccc|  
+|X<br /><br /> **H**|十六进制整数|102|0xcccccccc|  
 |c|单个字符|0x0065, c|101 'e'|  
 |秒|const char * 字符串|\<位置 >"你好 world"|"hello world"|  
 |**sb**|const char * 字符串 （无引号）|\<位置 >"你好 world"|hello world|  
@@ -132,14 +133,14 @@ int main() {
 |符号|格式|原始监视值|显示的值|  
 |------------|------------|--------------------------|---------------------|  
 |**ma**|64 个 ASCII 字符|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|以十六进制表示的 16 个字节，后跟 16 个 ASCII 字符|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
-|**mb**|以十六进制表示的 16 个字节，后跟 16 个 ASCII 字符|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**m**|以十六进制表示的 16 个字节，后跟 16 个 ASCII 字符|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
+|**mb**|以十六进制表示的 16 个字节，后跟 16 个 ASCII 字符|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
 |**mw**|8 个字|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**md**|4 个双字|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 个双字|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|双字节字符 (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 指针的大小说明符作为使用 C++/CLI 的互操作调试中的数组  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>作为使用 C + 互操作调试中的数组的指针的大小说明符 + CLI  
  如果有一个指针指向要以数组形式查看的对象，则可以使用一个整数来指定数组中元素的数量：  
   
 |说明符|格式|Expression|显示的值|  

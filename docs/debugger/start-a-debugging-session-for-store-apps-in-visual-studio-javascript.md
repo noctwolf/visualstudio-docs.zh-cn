@@ -20,11 +20,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 192000815a5d35056c88cf81de9956614c092284
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: b92f2f5ac10f917257e58443ab2161a164f39b28
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="start-a-debugging-session-for-uwp-apps-in-visual-studio-javascript"></a>适用于 Visual Studio (JavaScript) 中的 UWP 应用启动调试会话
 ![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -34,8 +35,8 @@ ms.lasthandoff: 11/11/2017
 > [!NOTE]
 >  对于用 XAML 和 Visual C#、 Visual c + + 或 Visual Basic 编写的应用程序，请参阅[启动调试会话 (VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_In_this_topic"></a> 主题内容  
- [主题内容](#BKMK_In_this_topic)  
+##  <a name="BKMK_In_this_topic"></a> 在本主题中  
+ [在本主题中](#BKMK_In_this_topic)  
   
  [启动调试的简单方法](#BKMK_The_easy_way_to_start_debugging)  
   
@@ -258,7 +259,7 @@ ms.lasthandoff: 11/11/2017
   
  Visual Studio 将调试器附加到该进程。 持续执行至抵达某个断点、手动暂停执行、发生无法处理的异常或应用程序结束为止。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试会话 (JavaScript) 中控制执行](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)   
  [快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
  [触发挂起、 继续和后台适用于 UWP 应用的事件)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)   

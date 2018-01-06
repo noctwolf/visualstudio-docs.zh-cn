@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60b267964b58dff8365ee6f769ee6b81f1bfb066
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 744570bac67648b26467867931be2fb3f24a98ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 获取枚举数的数组的所有元素。  
@@ -47,5 +48,5 @@ int GetElements(
 ## <a name="remarks"></a>备注  
  作为替代方法，使用[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)和[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)方法循环访问元素。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

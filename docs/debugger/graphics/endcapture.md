@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f587b10fea4b593234be2a536baa13cf7b3db66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6f717d8b1e95531f0b758a88db48b610b343ee60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="endcapture"></a>EndCapture
 结束以 `BeginCapture` 开始的捕获时间间隔。  
@@ -32,6 +33,6 @@ void EndCapture();
   
  若要捕获时间间隔，你必须准备你的应用以捕获并记录图形信息 — 也就是说，你必须已调用[Init](init.md)的实例通过`VsgDbg`类你在调用之前`BeginCapture`或`EndCapture`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BeginCapture](begincapture.md)   
  [CaptureCurrentFrame](capturecurrentframe.md)

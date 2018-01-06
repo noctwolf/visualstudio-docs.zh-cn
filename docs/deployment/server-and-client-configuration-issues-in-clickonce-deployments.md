@@ -21,11 +21,12 @@ caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4b7153b0a20c10e7dbdb31ac943f150f72cb39d8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b50dbe51f58af79b8c1074c592f98abccbe8ba7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的服务器和客户端配置问题
 如果你在 Windows Server 上使用 Internet 信息服务 (IIS)，而你的部署包含 Windows 无法识别的文件类型，如 Microsoft Word 文件，IIS 将拒绝传输该文件中，并且你的部署将不会成功。  
@@ -135,7 +136,7 @@ ms.lasthandoff: 10/27/2017
   
  有关 IIS 的详细说明，请参阅[如何指定 HTTP 压缩的附加文档类型](http://go.microsoft.com/fwlink/?LinkId=178459)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 部署疑难解答](../deployment/troubleshooting-clickonce-deployments.md)   
  [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [应用程序部署必备](../deployment/application-deployment-prerequisites.md)

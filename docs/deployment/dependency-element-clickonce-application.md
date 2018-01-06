@@ -30,11 +30,12 @@ caps.latest.revision: "34"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7a0604113161fed432219f84ac6c4d8a6a4d7666
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c3319661a4c0df298cd844c4d71c6855cad818c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;依赖项&gt;元素 （ClickOnce 应用程序）
 标识所需的应用程序的平台或程序集依赖项。  
@@ -105,17 +106,17 @@ ms.lasthandoff: 10/27/2017
 |`description`|可选。 中的可读的窗体中，描述所描述的操作系统`dependentOS`元素。|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
- 必需。 此元素是 `dependentOS` 元素的子元素，并且包含 `os` 元素。 此元素没有属性。  
+ 必须的。 此元素是 `dependentOS` 元素的子元素，并且包含 `os` 元素。 此元素没有属性。  
   
 ### <a name="os"></a>操作系统  
- 必需。 此元素是 `osVersionInfo` 元素的子元素。 此元素具有以下属性。  
+ 必须的。 此元素是 `osVersionInfo` 元素的子元素。 此元素具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`majorVersion`|必需。 指定的操作系统的主版本号。|  
-|`minorVersion`|必需。 指定的操作系统的次版本号。|  
-|`buildNumber`|必需。 指定的操作系统的生成号。|  
-|`servicePackMajor`|必需。 指定服务包的操作系统的主版本号。|  
+|`majorVersion`|必须的。 指定的操作系统的主版本号。|  
+|`minorVersion`|必须的。 指定的操作系统的次版本号。|  
+|`buildNumber`|必须的。 指定的操作系统的生成号。|  
+|`servicePackMajor`|必须的。 指定服务包的操作系统的主版本号。|  
 |`servicePackMinor`|可选。 指定服务包的操作系统的次版本号。|  
 |`productType`|可选。 标识的产品类型值。 有效值为 `server`、`workstation` 和 `domainController`。 例如，对于 Windows 2000 Professional，此属性的值是`workstation`。|  
 |`suiteType`|可选。 标识系统或系统的配置类型上可用的产品套件。 有效值为`backoffice`， `blade`， `datacenter`， `enterprise`， `home`， `professional`， `smallbusiness`， `smallbusinessRestricted`，和`terminal`。 例如，对于 Windows 2000 Professional，此属性的值是`professional`。|  
@@ -125,21 +126,21 @@ ms.lasthandoff: 10/27/2017
   
  `dependentAssembly`具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`dependencyType`|必需。 指定的依赖关系类型。 有效值为 `preprequisite` 和 `install`。 `install`作为的一部分安装的程序集[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 A`prerequisite`程序集必须位于全局程序集缓存 (GAC) 之前[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]可以安装应用程序。|  
-|`allowDelayedBinding`|必需。 指定是否能以编程方式在运行时加载程序集。|  
+|`dependencyType`|必须的。 指定的依赖关系类型。 有效值为 `preprequisite` 和 `install`。 `install`作为的一部分安装的程序集[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 A`prerequisite`程序集必须位于全局程序集缓存 (GAC) 之前[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]可以安装应用程序。|  
+|`allowDelayedBinding`|必须的。 指定是否能以编程方式在运行时加载程序集。|  
 |`group`|可选。 如果`dependencyType`属性设置为`install`，指定该仅按需安装的一组命名的程序集。 有关详细信息，请参阅[演练：在设计器中使用 ClickOnce 部署 API 按需下载程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)。<br /><br /> 如果设置为`framework`和`dependencyType`属性设置为`prerequisite`，将程序集指定为.NET Framework 的一部分。 全局件缓存 (GAC) 时不会检查此程序集上安装[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]及更高版本。|  
 |`codeBase`|需要时`dependencyType`属性设置为`install`。 依赖程序集的路径。 可能是绝对路径，或者是相对该清单的代码路径基。 此路径必须是有效的 URI 中的程序集清单的顺序才能有效。|  
 |`size`|需要时`dependencyType`属性设置为`install`。 依赖程序集，以字节为单位的大小。|  
   
 ### <a name="assemblyidentity"></a>assemblyIdentity  
- 必需。 此元素是 `dependentAssembly` 元素的子元素，并且包含下列元素。  
+ 必须的。 此元素是 `dependentAssembly` 元素的子元素，并且包含下列元素。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`name`|必需。 标识应用程序的名称。|  
-|`version`|必需。 采用以下格式指定应用程序的版本号：`major.minor.build.revision`|  
+|`name`|必须的。 标识应用程序的名称。|  
+|`version`|必须的。 采用以下格式指定应用程序的版本号：`major.minor.build.revision`|  
 |`publicKeyToken`|可选。 指定的 16 个字符的十六进制字符串表示的最后 8 个字节`SHA-1`的应用程序集签名的公钥的哈希值。 用于对目录进行签名的公钥必须是 2048 位或的详细信息。|  
 |`processorArchitecture`|可选。 指定处理器。 有效值为`x86`适用于 32 位 Windows 和`I64`适用于 64 位 Windows。|  
 |`language`|可选。 标识由两部分语言代码，例如 EN-US，程序集。|  
@@ -219,6 +220,6 @@ ms.lasthandoff: 10/27/2017
 </dependency>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)   
  [\<依赖项 > 元素](../deployment/dependency-element-clickonce-deployment.md)

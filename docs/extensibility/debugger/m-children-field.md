@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e6c7db4e05873ca0272da4eb551418d466ddc03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 59848b177b4bfaccba2d5f2e5771a08ec0bc060a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mchildren-field"></a>m_children 字段
 与此任务注册的子任务的列表。  
@@ -39,5 +40,5 @@ ms.lasthandoff: 10/31/2017
   
  如果完成任务时，其他线程可以访问此字段，只要它们不要向其添加任何内容或从中删除任何内容。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ContingentProperties 类](../../extensibility/debugger/contingentproperties-class-internal-members.md)

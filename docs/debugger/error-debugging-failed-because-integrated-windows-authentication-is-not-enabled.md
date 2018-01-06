@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.error.webdbg_ntlm_authn_not_enabled
 dev_langs:
 - CSharp
@@ -15,16 +15,16 @@ dev_langs:
 - C++
 - aspx
 helpviewer_keywords: debugger, Web application errors
-ms.assetid: 6027cd94-74cf-470f-b7ce-6f6b68bc56ba
 caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88747922ae486adf65d2babe7a349e9538e8c9c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d3d66a2892378f04061907e383965c6c02096bf1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>错误：调试失败，因为没有启用集成 Windows 身份验证
 由于身份验证错误，无法对请求调试的用户进行身份验证。 当您尝试单步执行 Web 应用程序或 XML Web services 时，就可能出现此问题。 导致此错误的一种原因是没有启用集成 Windows 身份验证。 若要启用该身份验证，请按照“启用集成 Windows 身份验证”中的步骤操作。  
@@ -115,7 +115,7 @@ ms.lasthandoff: 10/31/2017
   
 10. 关闭**Internet Information Services (IIS) Manager**窗口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 Web 应用程序： 错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Microsoft 摘要式身份验证](http://go.microsoft.com/fwlink/?LinkId=77938)   
  [运行 Windows Vista IIS 7.0 上的 Web 应用程序和 Visual Studio](http://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

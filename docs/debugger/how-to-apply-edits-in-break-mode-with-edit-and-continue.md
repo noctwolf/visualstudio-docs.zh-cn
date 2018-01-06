@@ -25,11 +25,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e925ab0f989a0d817ce7aaa7ca1d15171555f27e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 54fb069f5328dd9bc7cabab16c0688109312dfd1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>如何：使用“编辑并继续”在中断模式下应用编辑
 可以在中断模式下使用“编辑并继续”编辑代码，然后不必停止和重新启动执行即可继续。  
@@ -42,11 +43,11 @@ ms.lasthandoff: 10/31/2017
   
     -   在代码中，设置断点，然后选择**启动调试**从**调试**菜单，然后等待应用程序命中断点。  
   
-         - 或 -  
+         或  
   
     -   启动调试，，然后选择**全部中断**从**调试**菜单。  
   
-         - 或 -  
+         或  
   
     -   发生异常时，选择**启用编辑**上**异常助手**。  
   
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
   
      在你所做的编辑已并入项目并已应用的情况下，你的代码继续执行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [受支持的代码更改 （C# 和 Visual Basic](../debugger/supported-code-changes-csharp.md)   
  [编辑并继续 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

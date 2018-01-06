@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 362dd868e6f9c273e9495295a453d8da4e2183cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6d672eca7b818ce9bc06df4a09a7623be9e8d89f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 元素（Visual Studio 模板）
 只有新项目将生成尽可能创建并将其添加到解决方案。 不生成整个解决方案。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |TemplateData|将此模板分类并定义中的显示方式**新项目**和**添加新项**对话框。|  
   
@@ -82,6 +83,6 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

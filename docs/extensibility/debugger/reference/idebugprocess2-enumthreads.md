@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e1cc33d1a84f5f8a3cd186b148f57e296a350f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4e13147e12a630c596d19bcad99e81f2476d9a58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 检索在进程中运行的所有线程的列表。  
@@ -49,7 +50,7 @@ int EnumThreads(
   
  此方法显示一个列表没有重复项的进程的线程。 否则，若要枚举在特定的程序中运行的线程，使用[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

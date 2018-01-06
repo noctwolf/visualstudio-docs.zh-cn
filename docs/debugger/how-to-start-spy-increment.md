@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b301d16c96878974c12b94879f717c727d129a7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8bc54bd1a2912c4c07b37a5694c2a576ddd5de31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-start-spy"></a>如何：启动 Spy++
 你可以启动 Spy + + 从 Visual Studio 或命令提示符处。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  类型**spyxx.exe**然后按 ENTER。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Spy + +](../debugger/using-spy-increment.md)   
  [Spy + + 视图](../debugger/spy-increment-views.md)   
  [Spy++ 参考](../debugger/spy-increment-reference.md)

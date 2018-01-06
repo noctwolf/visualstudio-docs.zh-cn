@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: bb8c31d37bd37f4e2db8415ef1815caec0ec185a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 955e29add1990793711dd69fffbd2306ce61407d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt;元素 （ClickOnce 部署）
 标识此应用程序可在其上安装和运行的 .NET Framework 版本。  
@@ -52,13 +53,13 @@ ms.lasthandoff: 10/27/2017
 |`S` `upportUrl`|可选。 指定首选兼容的.NET Framework 版本可以下载到其中的 URL。|  
   
 ## <a name="framework"></a>框架  
- 必需。 下表列出的属性，`framework`元素支持。  
+ 必须的。 下表列出的属性，`framework`元素支持。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`targetVersion`|必需。 指定的目标.NET Framework 的版本号。|  
-|`profile`|必需。 指定的目标.NET Framework 的配置文件。|  
-|`supportedRuntime`|必需。 指定的目标.NET Framework 与关联的运行时的版本号。|  
+|`targetVersion`|必须的。 指定的目标.NET Framework 的版本号。|  
+|`profile`|必须的。 指定的目标.NET Framework 的配置文件。|  
+|`supportedRuntime`|必须的。 指定的目标.NET Framework 与关联的运行时的版本号。|  
   
 ## <a name="remarks"></a>备注  
   
@@ -74,5 +75,5 @@ ms.lasthandoff: 10/27/2017
 </compatibleFrameworks>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)

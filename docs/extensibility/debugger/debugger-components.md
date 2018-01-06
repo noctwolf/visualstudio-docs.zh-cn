@@ -16,11 +16,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec2b7a18dac9616db1743a50539c2860caca2e26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1137c8c5c6041b41e8cbdc0e13d43b6188bd1b1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-components"></a>调试器组件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器作为 VSPackage 实现和管理整个调试会话。 调试会话过程包括以下元素：  
@@ -76,5 +77,5 @@ ms.lasthandoff: 10/31/2017
  [调试任务](../../extensibility/debugger/debugging-tasks.md)  
  包含指向不同的调试任务，如启动程序和计算表达式。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [入门](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

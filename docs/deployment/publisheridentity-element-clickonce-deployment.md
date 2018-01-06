@@ -20,11 +20,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 9a59b97b3260beaf39ae20b62a44903add13e622
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 527ab7ae43790f7e824ead33fb601f0f8dee2bf0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;元素 （ClickOnce 部署）
 包含有关为此部署清单签名的发布者的信息。  
@@ -41,10 +42,10 @@ ms.lasthandoff: 10/27/2017
 ## <a name="elements-and-attributes"></a>元素和属性  
  `publisherIdentity`元素是必需的签名的清单。 下表显示的特性`publisherIdentity`元素支持。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`name`|必需。 描述此应用程序发布一方的标识。|  
-|`issuerKeyHash`|必需。 包含证书颁发者的公钥的 sha-1 哈希。|  
+|`name`|必须的。 描述此应用程序发布一方的标识。|  
+|`issuerKeyHash`|必须的。 包含证书颁发者的公钥的 sha-1 哈希。|  
   
 #### <a name="parameters"></a>参数  
   
@@ -54,6 +55,6 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="remarks"></a>备注  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
   
 ## <a name="subhead"></a>副标题

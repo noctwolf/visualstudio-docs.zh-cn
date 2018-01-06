@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbc71942a87685a4011b13d1054c4855a5e18012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3c1845a82947286800145ff898f8f49f8c3c2477
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>由 IDE 实现的回调函数
 若要与集成为尽可能并提供一种统一的最终用户体验，无缝集成的开发环境 (IDE) 的源代码管理插件可以使用由 IDE 实现的回调函数。 该插件可调用这些函数在适当的时间，在源代码管理操作将信息传递到 IDE;IDE 然后可以显示此信息作为其本机用户界面中的嵌入元素。 用户在这种情况下，如果该插件，则采用其自己的 UI 比具有更少碎片的体验。  

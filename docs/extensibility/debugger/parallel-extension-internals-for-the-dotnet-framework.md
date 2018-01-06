@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ed417d9f63a90d539d104fb209b58703d10ccef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4cc64270cabb3e30ee3c13a1617222349e7b3677
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>.NET framework 的并行扩展内部机制
 本部分介绍了内部类型、 方法和字段的类，用于帮助你实现一个自定义的.NET framework 的并行扩展的调试器。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
  [AsyncVoidMethodBuilder 结构](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md)  
  内部成员进行了说明<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>结构。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
  [Visual Studio 调试器扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)   

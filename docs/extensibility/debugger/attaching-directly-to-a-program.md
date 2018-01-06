@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8818a57d50595b3c40fa45875a1dfe23d34fb369
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c528925e323e4cff5784365e3097cc7f5f414963
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attaching-directly-to-a-program"></a>附加到的程序直接
 用户想要调试程序已在通常运行的过程中按照以下步骤：  
@@ -42,6 +43,6 @@ ms.lasthandoff: 10/31/2017
   
  第二个例外情况是，发送 DE 附加到已在运行的程序的启动事件未通常包括输入点事件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在启动之后发送启动事件](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
  [调试任务](../../extensibility/debugger/debugging-tasks.md)

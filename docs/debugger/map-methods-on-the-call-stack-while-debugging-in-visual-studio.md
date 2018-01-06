@@ -32,11 +32,12 @@ caps.latest.revision: "39"
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: ff0f152f92d852846200c96a63927445aa8867b0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9d1efeee412d98c62b7dc6aa2c92d2bbab4fab6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>在 Visual Studio Enterprise 中进行调试时创建调用堆栈可视的学习的路线图
 创建一个代码图以进行调试时直观地跟踪调用堆栈。 你可以在图中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
@@ -190,7 +191,7 @@ ms.lasthandoff: 10/27/2017
   
 -   [使用图发现 bug](#FindBugs)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)   
  [使用代码图调试你的应用程序](../modeling/use-code-maps-to-debug-your-applications.md)   
  [使用代码图分析器查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)   

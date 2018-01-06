@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c363ea8809449118782597e68f60637f296af89f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8371bb2fd985062f6e44d97ae720878ad54b06d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules"></a>模块
 在调试器体系结构，方面**模块**:  
@@ -30,6 +31,6 @@ ms.lasthandoff: 10/31/2017
   
 -   由[IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)接口，用于描述模块的调试引擎所创建。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器概念](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

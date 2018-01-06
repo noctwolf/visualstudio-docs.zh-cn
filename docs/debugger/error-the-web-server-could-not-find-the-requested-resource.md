@@ -6,23 +6,23 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 helpviewer_keywords: debugger, Web application errors
-ms.assetid: 1ceeaf30-918c-42bb-ace1-96944530fef3
 caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 782abbf8a5cb30801bbe6041143e031792ff247a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d5cc83d8d2d0b37d3bb7203e1a20c93478fb96b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>错误：Web 服务器未能找到请求的资源
 为了安全起见，IIS 已返回泛型错误。  
@@ -33,6 +33,6 @@ ms.lasthandoff: 10/31/2017
   
  有关排查 IIS 的详细信息，请参阅[IIS 管理和管理](http://go.microsoft.com/fwlink/?LinkId=255872)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [UrlScan 安全工具](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
  [错误：Web 服务器已被锁定，并阻止 DEBUG 谓词](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

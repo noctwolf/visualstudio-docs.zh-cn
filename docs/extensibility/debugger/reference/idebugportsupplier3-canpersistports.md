@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 95e62f283d2ea0411162fb0406c712f0d17a1183
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7cb364ca40c42a3f392a5944169b7dd97075ab9b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 此方法可确定是否端口提供程序可以调用调试器之间 （通过其写入到磁盘） 中保留端口。  
@@ -42,5 +43,5 @@ int CanPersistPorts();
 ## <a name="remarks"></a>备注  
  如果端口供应商可以保留端口，它应被销毁时这样操作，然后重新加载它们再一次实例化时。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

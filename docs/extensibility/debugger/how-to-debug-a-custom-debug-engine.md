@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a91dbb7797d69ec71b776eeef5e34e0ced21ad9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0b814b441846479163aad4e003480cc9cfadde44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何： 调试自定义调试引擎
 项目类型中启动的调试引擎 (DE)<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 这意味着 DE 启动的实例的控制之下[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]控制项目类型。 但是，该实例[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]无法调试 DE。 下面是可用于调试自定义 DE 的步骤。  
@@ -76,5 +77,5 @@ ms.lasthandoff: 10/31/2017
   
 9. 如果你选择调试启动 DE 的过程，你可以将它启动后附加到你 DE 的"调试自定义调试引擎"步骤中执行的步骤。 这将为你提供的三个实例[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]运行： 一个用于您的项目类型源、 附加到你 DE 第三个您实例化的项目类型，以及第二个。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0696a9e45727c5d62f275d0574d5ec54e378038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7d0aaa97009662000bf1376c1684d9ca41a7133a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-multiple-processes"></a>调试多个进程
 下面介绍了如何启动调试进程、 在进程之间切换、 中断和继续执行、 逐步执行源、 停止调试，并终止或与进程分离。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
 >   
 >  -   在子进程启动后附加到该子进程。  
 >   
->      - 或 -  
+>      或  
 > -   配置 Windows 以自动启动调试器的新实例中的子进程。  
   
 ###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a>开始调试 Visual Studio 解决方案中的多个进程  
@@ -208,7 +209,7 @@ ms.lasthandoff: 10/31/2017
   
 |||  
 |-|-|  
-|**命令**|**描述**|  
+|**命令**|**说明**|  
 |**调试**菜单：<br /><br /> -   **停止调试**|除非行为被更改**进程**窗口**调试停止时分离**选项：<br /><br /> 1.调试器启动的进程将被终止。<br />2.附加的进程将从调试器分离。|  
 |**调试**菜单：<br /><br /> -   **全部终止**|所有进程将终止。|  
 |**调试**菜单：<br /><br /> -   **全部分离**|调试器与所有进程分离。|  
@@ -220,7 +221,7 @@ ms.lasthandoff: 10/31/2017
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) （使用调试器浏览代码）  

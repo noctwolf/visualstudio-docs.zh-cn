@@ -5,18 +5,18 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.error.unsafe_func_eval_abort
-ms.assetid: 0a9f70ed-21ad-4a10-8535-b9c5885ad8f4
 caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 722abd91cb9f97aab67d0d9a5e77ff9e3a4f080d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff5dedb9bf0ffe44ec1a7c031d4c1d0eeeea08ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>错误： 评估函数 &#39; 函数 &#39;操作已超时，需以不安全的方式中止
 
@@ -35,9 +35,9 @@ ms.lasthandoff: 10/31/2017
 错误消息将通知调试器尝试调用该函数的名称。 如果可以修改此函数，则你可以调用属性 getter 或 ToString 方法阻止调试器。 请尝试以下方法之一：
  
 * 将方法更改为某些其他类型的属性 getter 除了代码或 ToString 方法和问题将会消失。
-    - 或 -
+    或
 * （对于 ToString)在类型上定义 DebuggerDisplay 特性，可以让调试器评估 ToString 之外的内容。
-    - 或 -
+    或
 * （适用于属性 getter)Put`[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]`的属性上的属性。 这很有用，如果你的需要的属性的 API 兼容性原因，一个方法，但它确实应该为一种方法。
  
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>解决方案 2： 具有目标代码要求调试器中止评估

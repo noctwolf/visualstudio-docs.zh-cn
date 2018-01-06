@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02cdf8b50415a238c2af2735a20fea4ed8c23668
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01d4ebaada2c8ac65c1f44a5c80525f1b9e66a5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-and-the-hosting-process"></a>调试和承载进程
 Visual Studio 宿主进程提高了调试器性能，并启用了新的调试器功能，如部分信任调试和设计时表达式计算。 如果需要，你可以禁用宿主进程。 有关详细信息，请参阅 [How to: Disable the Hosting Process](../ide/how-to-disable-the-hosting-process.md)。 以下部分描述用宿主进程和不用宿主进程进行调试的一些差异。  
@@ -41,7 +42,7 @@ Visual Studio 宿主进程提高了调试器性能，并启用了新的调试器
 ## <a name="assemblygetcallingassemblyfullname-differences"></a>Assembly.GetCallingAssembly().FullName 差异  
  `Assembly.GetCallingAssembly().FullName` 依据是否启用宿主进程返回不同的结果。 如果在启用宿主进程时调用 `Assembly.GetCallingAssembly().FullName` ，它将返回 `mscorlib`。 如果禁用宿主进程时调用 `Assembly.GetCallingAssembly().FullName` ，它将返回该应用程序名。  
   
-## <a name="see-also"></a>另请参阅  
- [承载进程 (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
+## <a name="see-also"></a>请参阅  
+ [托管进程 (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
  [如何： 调试部分信任应用程序](../debugger/how-to-debug-a-partial-trust-application.md)   
  [如何：禁用承载进程](../ide/how-to-disable-the-hosting-process.md)

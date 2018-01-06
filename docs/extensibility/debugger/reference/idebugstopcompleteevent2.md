@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e92138f969189a33e1a5aad5a083c8ac57852dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5d59de29078db46f716fe9d01a3f3fa076139ddf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 程序已停止时，调试引擎 (DE) 可以将此可选事件发送到会话调试管理器 (SDM)。  
@@ -35,7 +36,7 @@ IDebugStopCompleteEvent2 : IUnknown
   
  它用来以异步方式通知程序已停止 SDM。 这可用于解释器调试引擎，其中有时没有代码在内运行调试程序，因此[停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)不同步完成。 如果调试引擎想要采用此异步通知时，它必须返回`S_ASYNC_STOP`从[停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

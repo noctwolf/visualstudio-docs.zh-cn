@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e34dbcf9c19b5e8e7a16d2f409159597670cb8cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 03b4885e653d879e3aaec1d9a68bc9be144cb676
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programs"></a>Programs
 在调试器体系结构，方面**程序**:  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
 -   由[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)接口，创建附加程序之前，或作为附加的进程，具体取决于实现的一部分。 当一个端口枚举进程的程序时，根据相应创建每个程序[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)接口传递的自变量作为[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)。 时的调试引擎还创建`IDebugProgram2`接口来表示程序，这些程序不会创建根据程序节点。 `IDebugProgramNode2`接口由 DE 用于实际调试时通过端口创建的那些仅用于发现哪些程序正在进程中运行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [进程](../../extensibility/debugger/processes.md)   
  [程序节点](../../extensibility/debugger/program-nodes.md)   
  [模块](../../extensibility/debugger/modules.md)   

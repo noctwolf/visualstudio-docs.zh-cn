@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32870ebf31c88bbc6bdf024c2c4c93ae1869660a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72c7c38dece8924f48298c0b7b661f564f9b1afc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>查看线程和任务使用并行堆栈窗口
 **并行堆栈**时你正在调试多线程应用程序窗口非常有用。 其**线程视图**显示你的应用程序中的所有线程的都调用堆栈信息。 使用该视图可以在线程和这些线程上的堆栈帧之间进行导航。 在托管代码中，**任务视图**显示调用堆栈的<xref:System.Threading.Tasks.Task?displayProperty=fullName>对象。 在本机代码中，**任务视图**显示调用堆栈的[任务组](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)，[并行算法](/cpp/parallel/concrt/parallel-algorithms)，[异步代理](/cpp/parallel/concrt/asynchronous-agents)，和[轻量级任务](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)。  
@@ -115,7 +116,7 @@ ms.lasthandoff: 10/31/2017
   
  通过切换到新堆栈帧，可使该方法成为当前方法，并在窗口中显示新方法的所有调用方和被调用方。 这可能会导致某些线程显示在视图中或从视图中消失，具体取决于线程的调用堆栈上是否显示该方法。 若要返回堆栈视图，请再次单击“方法视图”工具栏按钮。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)   
  [演练： 调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  

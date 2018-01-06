@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d72671a9c9e470dafae2b36c8cf5ec34b43e750
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d63827110dab8b8028e27fa6d544f5dd1bcfc23b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>使用旧版 API 自定义编辑器控件和菜单
 上下文菜单和在编辑器中的控件，可以控制语言服务或文本视图。 本部分中的页详细介绍如何使用这些功能。  

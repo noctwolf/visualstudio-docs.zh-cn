@@ -23,11 +23,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad52c8f9b2580538b573eb2ef66164040ca66b25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e6c6c8c239d27952c35486be308e5947aff50952
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>若要调试线程和 Visual Studio 中的进程的工具
 *线程*和*进程*是在计算机科学中的相关的概念。 二者都表示必须按特定顺序执行的指令序列。 但是不同线程或进程中的指令可以并行执行。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 |**任务**窗口|-查看有关的信息<xref:System.Threading.Tasks.Task>对象包括任务 ID、 任务状态 （计划的、 正在运行，正在等待，已死锁），并分配给任务的线程。<br />的当前调用堆栈中的位置。<br />在创建时传递给任务的委托|-切换到当前任务<br />-标记或取消标记任务<br />的冻结或解冻任务|  
 |**GPU 线程**窗口|的可以在其中标记要特别注意的线程标记列。<br />-当前线程列，其中一个黄色箭头指示当前线程。<br />-**线程计数**列，在同一位置中显示的线程数。<br />-**行**列，显示的每组线程所在的代码行。<br />-**地址**列，显示每组线程所在的指令地址。<br />-**位置**列中，这是代码中的位置的地址。<br />-**状态**列，显示线程处于活动状态还是被阻止。<br />-**磁贴**列，显示线程的平铺索引行中。|-更改为不同的线程<br />-显示特定平铺和线程<br />-显示或隐藏列<br />-按列排序<br />-组线程<br />的冻结或解冻线程<br />-标记或取消标记线程<br />仅显示标记的线程|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [调试 GPU 代码](../debugger/debugging-gpu-code.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1aa73140760f161971f30e4232658b18453f233f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9ca3465aafc36af24f36f86edd5bf3dc5c69d576
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce 缓存概述
 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，无论它们是以本地方式安装还是联机，承载存储中的客户端计算机上[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序*缓存*。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]缓存是一系列的当前用户的 Documents and Settings 文件夹的本地设置目录下隐藏的目录。 此缓存包含应用程序的所有文件，包括程序集、 配置文件、 应用程序和用户设置和数据目录。 缓存程序还负责迁移到最新版本的应用程序的数据目录。 有关数据迁移的详细信息，请参阅[访问本地数据和 ClickOnce 应用程序中的远程数据](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。  
@@ -36,5 +37,5 @@ ms.lasthandoff: 10/27/2017
   
  默认情况下，客户端计算机具有 250 MB 的存储联机[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 数据文件不计入此限制。 系统管理员可以放大或缩小通过更改注册表项，HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB，这是一个 DWORD 值的特定客户端计算机上的此配额表示的缓存大小，以千字节为单位。 例如，若要减少到 50 MB 的缓存大小，将为 51200 更改此值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 ClickOnce 应用程序中访问本地数据和远程数据](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

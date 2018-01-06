@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b52121850bd82090e756f700880be02d35e6d86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e5963568eac26e7f88acf3ba07466fd1261eed1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent
 你可使用 **Microsoft 监视代理**本地监视 IIS 托管的 ASP.NET Web 应用和 SharePoint 2010 或 2013 应用程序，以查找错误、性能问题或其他问题。 可将代理发出的诊断事件保存为 IntelliTrace 日志（也就是 .iTrace）文件。 随后可打开 Visual Studio Enterprise （但不是 Professional 或 Community 版本）中的日志，以使用 Visual Studio 的所有诊断工具调试问题。 你也可运行 **跟踪** 模式中的代理，进而收集 IntelliTrace 诊断数据及方法数据。 Microsoft Monitoring Agent 可以与 [Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) 和 [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx)集成。 安装时，Microsoft 监视代理确实会改变目标系统的环境。  
@@ -78,7 +79,7 @@ ms.lasthandoff: 10/31/2017
 3.  [请访问 TechNet](http://technet.microsoft.com/systemcenter/default) 以获取最新的帮助内容。  
   
 ####  <a name="FullPermissionsITLog"></a> 问：如何设置访问应用程序池的权限？  
- **答：** 使用 Windows **icacls** 命令或使用 Windows 资源管理器（或文件资源管理器）。 例如：  
+ **答：** 使用 Windows **icacls** 命令或使用 Windows 资源管理器（或文件资源管理器）。 例如:  
   
 -   要使用 Windows **icacls** 命令设置权限，请：  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/31/2017
   
          `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-     - 或 -  
+     或  
   
 -   要设置 Windows 资源管理器（或文件资源管理器）的权限，请：  
   
@@ -135,7 +136,7 @@ ms.lasthandoff: 10/31/2017
   
     |||  
     |-|-|  
-    |*"\<appName >"*|指定 IIS 中的网站路径及 Web 应用名。 如果愿意，你也可以加入 IIS 路径。<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> - 或 -<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> 你可在 IIS 管理器中找到此路径。 例如: <br /><br /> ![指向 IIS 网站和 web 应用程序的路径](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> 你还可以使用 [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) 和 [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) 命令。|  
+    |*"\<appName >"*|指定 IIS 中的网站路径及 Web 应用名。 如果愿意，你也可以加入 IIS 路径。<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> 或<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> 你可在 IIS 管理器中找到此路径。 例如:<br /><br /> ![指向 IIS 网站和 web 应用程序的路径](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> 你还可以使用 [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) 和 [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) 命令。|  
     |*\<monitoringMode >*|指定监视模式：<br /><br /> <ul><li>**Monitor**：记录异常事件及性能事件相关的全部细节（包含最小的细节）。 该模式使用默认的收集计划。</li><li>**Trace**：通过使用指定的收集计划来记录函数级细节或监视 SharePoint 2010 和 SharePoint 2013 应用程序。 该模式可能导致应用的运行速度更慢。<br /><br /> <ul><li>[问：如何设置访问应用程序池的权限？](#FullPermissionsITLog)</li><li>[问：如何在应用速度不减的前提下获取最多的数据？](#Minimizing)</li></ul><br />     该示例记录一个托管在 SharePoint 站点上的 SharePoint 应用的事件：<br /><br />     **Start-webapplicationmonitoring"FabrikamSharePointSite\FabrikamSharePointApp"跟踪"C:\Program Files\Microsoft 监视 Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml""C:\IntelliTraceLogs"**</li><li>**Custom**：通过使用指定的自定义收集计划来记录自定义细节。 如果在开始监视后修改收集计划，则必须重启监视。</li></ul>|  
     |*"\<outputPath >"*|指定存储 IntelliTrace 日志的目录完整路径。 确保在开始监视前已创建此目录。|  
     |*\<UInt32 >*|指定 IntelliTrace 日志的上限大小。 IntelliTrace 日志的默认上限大小为 250 MB。<br /><br /> 日志达到此上限时，代理会覆盖最早的项以便为更多的项让出空间。 要更改此上限，可在收集计划中使用 **-MaximumFileSizeInMegabytes** 选项或修改 `MaximumLogFileSize` 属性。|  
@@ -244,11 +245,11 @@ ms.lasthandoff: 10/31/2017
   
      **Checkpoint-webapplicationmonitoring"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     例如:   
+     例如:  
   
      **PS c:\\> Checkpoint-webapplicationmonitoring"Fabrikam\FabrikamFiber.Web"**  
   
-     - 或 -  
+     或  
   
      **PS c: > Checkpoint-webapplicationmonitoring"IIS:sitesFabrikamFabrikamFiber.Web"**  
   
@@ -278,7 +279,7 @@ ms.lasthandoff: 10/31/2017
   
      **Stop-webapplicationmonitoring-所有**  
   
-     例如:   
+     例如:  
   
      **PS c:\\> Stop-webapplicationmonitoring"Fabrikam\iFabrikamFiber.Web"**  
   

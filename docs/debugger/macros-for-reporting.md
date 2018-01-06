@@ -25,11 +25,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c977cd5af8714e6dc0fd07b70aba9cf7f40bfe06
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5af21a708a05bfdc0338ca1c5b2bc038e192eb4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="macros-for-reporting"></a>用于报告的宏
 你可以使用**_RPTn**，和**_RPTFn** CRTDBG 中定义的宏。H、 要替换的使用`printf`语句进行调试。 在你的发布中自动消失这些宏生成时**_DEBUG**未定义的因此没有无需将它们括在**#ifdef**s。  
@@ -81,5 +82,5 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
   
  因为可以方便地更改自定义宏，以便向不同目标报告或多或少的信息（取决于怎样更方便），所以该方法在调试需求不断发展时尤其有用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CRT 调试方法](../debugger/crt-debugging-techniques.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81a7edd908da5953e04e68a1a903ed585f1ec6b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 89e426c24f1f32161307d573c1ab06cdf459b1d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-event-call-stack"></a>图形事件调用堆栈
 Visual Studio 图形分析器中的图形事件调用堆栈可帮助你映射有问题的图形事件和应用的源代码之间的关系。  
@@ -34,14 +35,14 @@ Visual Studio 图形分析器中的图形事件调用堆栈可帮助你映射有
 ### <a name="graphics-event-call-stack-information"></a>图形事件调用堆栈信息  
  调用堆栈不支持预框架事件或用户定义的事件。 图形事件的调用堆栈以表格形式显示。  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
-|**Name**|包含调用站点的函数的唯一标识符号。 这个函数的调试符号在它可用时显示；否则将显示函数偏移量。|  
+|**名称**|包含调用站点的函数的唯一标识符号。 这个函数的调试符号在它可用时显示；否则将显示函数偏移量。|  
 |**文件**|包含调用站点的源代码文件或库文件的文件名。|  
 |**位置**|调用站点行号。|  
   
 ### <a name="links-to-graphics-objects"></a>指向图形对象的链接  
  若要了解选定的图形事件，你可能需要了解与它关联的 Direct3D 对象的有关信息。 **图形事件调用堆栈**窗口提供此信息的链接。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：因顶点着色而缺少对象](walkthrough-missing-objects-due-to-vertex-shading.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c3dc1b7e6eee583494070cc9ebb151181dc805da
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-and-continue-visual-basic"></a>编辑并继续 (Visual Basic)
 “编辑并继续”是 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 调试的一项功能，当代码在中断模式下执行时，使用该功能可以更改代码。 在应用代码编辑后，可以就地继续执行新编辑过的代码并观察效果。  

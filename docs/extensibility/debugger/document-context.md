@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a38d0ad28ad01b9e106cf06127b934dedfe5bba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b121259f9be23d235386d7156ca8d326c5847f87
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-context"></a>文档上下文
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试，**文档上下文**:  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
 -   由实现[IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md)接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [代码上下文](../../extensibility/debugger/code-context.md)   
  [符号提供程序](../../extensibility/debugger/symbol-provider.md)   
  [符号提供程序接口](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   

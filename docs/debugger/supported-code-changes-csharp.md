@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7930ab4b425eeba0896828e5db36ab874166d3bf
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: dotnet
+ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>受支持的代码更改 （C# 和 Visual Basic）
 “编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，你必须停止调试，重新开始新版本的代码。
@@ -36,9 +37,9 @@ ms.lasthandoff: 12/11/2017
 |语言元素/功能|支持的编辑操作|限制|
 |-|-|-|
 |类型|添加方法、 字段、 构造函数、 et al|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|迭代器|添加或修改|No|
+|Iterators|添加或修改|否|
 |异步/等待表达式|添加或修改|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|动态对象|添加或修改|No|
+|动态对象|添加或修改|否|
 |Lambda 表达式|添加或修改|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |LINQ 表达式|添加或修改|[Lambda 表达式相同](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 12/11/2017
 |try – catch – finally 块|当它包含活动语句时，修改|
 |using 语句|添加|
 |异步方法/lambda|修改异步方法/lambda 中面向.NET Framework 4 的项目，并减少 (请参阅[详细信息](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|迭代器|修改在面向.NET Framework 4 的项目中的迭代器，并减少 (请参阅[详细信息](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Iterators|修改在面向.NET Framework 4 的项目中的迭代器，并减少 (请参阅[详细信息](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
   
 ## <a name="unsafe-code"></a>不安全代码  
  对不安全代码的更改具有与对安全代码的更改相同的限制，但它还包含一条附加限制：“编辑并继续”不支持对包含 `stackalloc` 运算符的方法内退出的不安全代码所作的更改。  
@@ -107,6 +108,6 @@ ms.lasthandoff: 12/11/2017
   
 -   如果由于生成错误无法生成新版本的代码，则对旧版本的代码进行调试。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编辑并继续 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [如何：使用“编辑并继续”(C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

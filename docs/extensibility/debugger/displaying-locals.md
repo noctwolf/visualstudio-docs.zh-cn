@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a00d57b8af1c32c2f94334e2930e8f92b166c89b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8566baec58e2dd95b42be8916b7d48131370e65e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="displaying-locals"></a>显示局部变量
 > [!IMPORTANT]
@@ -42,5 +43,5 @@ ms.lasthandoff: 10/31/2017
  [计算上下文](../../extensibility/debugger/evaluation-context.md)  
  说明当调试引擎 (DE) 调用表达式计算器 (EE) 时，它可以通过三个自变量。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

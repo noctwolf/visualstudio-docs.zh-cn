@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a01823a2409b15ba101ad4b55d5584e385872574
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3b0720aa8757564d06a29de2c51e53b6bb12a1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 创建的调试引擎的地址空间中的托管对象的副本。  
@@ -47,6 +48,6 @@ int GetManagedDebugObject(
 ## <a name="remarks"></a>备注  
  这[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象必须代表托管的值类实例，如`System.Decimal`实例。 通过让本地副本，而调用的开销[评估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)为止。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

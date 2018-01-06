@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 437d8414c725ffe7f5dab992da262de918c03693
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 43465f919806f16154b8f3328aad7496c83ec235
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
@@ -52,13 +53,13 @@ IDebugBinder3 : IDebugBinder
 |[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|获取到可视化工具服务接口|  
 |[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|将对象位置或 64 位内存地址转换为内存上下文。|  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： ee.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [表达式评估接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

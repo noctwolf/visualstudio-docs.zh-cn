@@ -16,11 +16,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8429e7175ca6ab9a537952fb4a605f2281da69c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 30abe64fa54e7b63e1552ab2e4c5ce95ac11befc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-log-document"></a>图形日志文档
 图形日志文档是对你的应用在图形诊断会话下运行时发生的图形事件的记录。 在记录后，你可以在 Visual Studio 图形分析器中检查日志，以诊断呈现和性能问题。  
@@ -68,11 +69,11 @@ ms.lasthandoff: 10/31/2017
   
 |属性|描述|  
 |--------------|-----------------|  
-|**描述**|显示适配器描述字符串。|  
+|**说明**|显示适配器描述字符串。|  
 |**显示内存**|安装在图形适配器上的内存量。|  
 |**驱动程序名称**|图形适配器驱动程序的名称。|  
 |**驱动程序版本**|图形适配器驱动程序的版本。|  
-|**Name**|图形适配器的名称。|  
+|**名称**|图形适配器的名称。|  
   
  **试验文件**  
  列出有关与捕获会话相关联的试验文件的信息。  
@@ -114,6 +115,6 @@ ms.lasthandoff: 10/31/2017
 |**会话开始时间**|捕获会话开始的日期和时间。|  
 |**Size**|图形日志文档的大小。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 因顶点着色而缺少对象](walkthrough-missing-objects-due-to-vertex-shading.md)   
  [演练：调试因着色引起的呈现错误](walkthrough-debugging-rendering-errors-due-to-shading.md)

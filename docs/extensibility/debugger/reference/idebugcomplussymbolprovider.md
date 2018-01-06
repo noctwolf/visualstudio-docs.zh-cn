@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 182e74a4f82c392ec34137730502b0b62bf60292
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c6d356274998d07975dfce3cb3ba367c62c72ffb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 使用特定于托管代码的方法为表示 COM + 符号提供程序。  
@@ -59,7 +60,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 |[UnloadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-unloadsymbols.md)|卸载从内存指定的模块的调试符号。|  
 |[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|与指定的数据流更新内存中的调试符号。|  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： Sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

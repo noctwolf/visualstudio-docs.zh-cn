@@ -21,11 +21,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93b7a670d74fbbb0c9d8e13f1e6463b52a8ca5d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 24d3eed91a659dc8f0d114369bdba45dd2973375
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>如何调试 c + + 访问冲突？
 ## <a name="problem-description"></a>问题描述  
@@ -71,5 +72,5 @@ int main() {
   
  如果无法确定为该指针为何导致访问冲突，请对代码进行跟踪以确保正确指出了导致问题的指针。  如果它作为参数传递，请确保正确传递且未意外创建[浅表副本](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)。 然后验证，值不是被某些位置无意更改在程序中创建数据断点指针以确保它没有正在修改在其他位置在程序中。 有关数据断点的详细信息，请参阅 [Using Breakpoints](../debugger/using-breakpoints.md)中的数据断点部分。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)

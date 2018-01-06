@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d5fd33bf626fe04159ac5bae12c586776ac334e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2af7ef11a142442b97dbb5d6a4d0545bf118da39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 比较对象与此对象。  
@@ -52,5 +53,5 @@ int IsEqual(
 ## <a name="remarks"></a>备注  
  通常情况下，此方法可以比较所表示的值的地址`pObject`参数，这[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象; 如果地址是否相等，则对象可被视为相等。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

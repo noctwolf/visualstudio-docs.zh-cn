@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a4d74e6ff0d3532c3aed199da841a56270195af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 095a02edb0a462e2fdbdca0f7f92018861b3d6bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 指定字段中包含的类型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象。  
@@ -227,14 +228,14 @@ public enum enum_FIELD_KIND {
   
  具体取决于类型的字段， [QueryInterface](/cpp/atl/queryinterface)可以上调用[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)更特定形式的接口的接口。 例如，如果[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)返回`FIELD_TYPE_METHOD`，然后，你可以调用`QueryInterface`上我`DebugField`获取[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)接口。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
  [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)   

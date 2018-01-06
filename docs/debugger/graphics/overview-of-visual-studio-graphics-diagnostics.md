@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f713a1ced59ea1ed0eaf01a3d9630aa96e4c6bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0fdc6c58f791c06d5f9287400d00bbfce2564e3b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断概述
 Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用中的呈现和性能问题的工具。 可对在 Windows PC 上、在 Windows 设备模拟器中或在远程 PC 或设备上本地运行的应用使用图形诊断。  
@@ -123,6 +124,6 @@ Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用
   
  但帧分析不只在于速度快-它是与获取最高的性能，你可以让你在最少量的视觉质量有关。 有时在大显示屏上看起来很棒而造价昂贵的效果在电话的小显示屏上却起不到相同的作用，而在小屏幕上，更简单的效果看上也不错，同时还不会那么耗费电量。 自动更改和图形分析提供的基准检验可以帮助你找到一定范围内的设备是最适合你的应用程序之间的平衡。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [命令行捕获工具](command-line-capture-tool.md)   
  [HLSL 调试器](hlsl-shader-debugger.md)

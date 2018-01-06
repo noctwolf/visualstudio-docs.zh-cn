@@ -27,11 +27,12 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7309e17e04627654aaaf2e28a54c75fa2d6993c
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: cplusplus
+ms.openlocfilehash: 8b3ced43c776cc948467d68b2112fb808dd2a48c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-code-changes-c"></a>受支持的代码更改 (C++)
 Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但是，在程序执行期间，某些更改无法应用。 若要应用这些更改，您必须停止执行并生成新版本的代码。  
@@ -142,5 +143,5 @@ Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但�
 ##  <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 特性限制  
  “编辑并继续”不重新生成接口定义 (IDL) 文件。 因此，调试时不反映对 IDL 特性的更改。 若要查看对 IDL 特性更改的结果，必须停止调试并重新生成应用程序。 如果 IDL 特性已更改，“编辑并继续”不生成错误或警告。 有关更多信息，请参见 [IDL 特性](/cpp/windows/idl-attributes)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

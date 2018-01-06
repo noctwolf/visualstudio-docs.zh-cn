@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eac4799bec68b275586512dcf0b55fffa7484a90
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0699df7890528a200648ad10975b3cf272a3534f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-gpu-code"></a>调试 GPU 代码
 你可以调试在图形处理单元 (GPU) 上运行的 C++ 代码。 Visual Studio 中的 GPU 调试支持包括争用检测、启动进程并附加到进程以及集成到调试窗口中。  
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>错误：必须在远程站点上禁用超时检测和恢复 (TDR)。  
  C++ AMP 计算可能会超过由 Windows 超时检测和恢复进程 (TDR) 设置的默认时间间隔。 在这种情况下，计算将被取消，并且数据将丢失。 有关详细信息，请参阅[在 c + + AMP 处理 TDRs](http://go.microsoft.com/fwlink/p/?LinkId=249154)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 调试 c + + AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)   
  [C + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [启动 GPU 调试在 Visual Studio 中](http://go.microsoft.com/fwlink/p/?LinkId=255381)

@@ -21,11 +21,12 @@ caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b92b070641e4eed47b0094e1611f78cd799e6952
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e2e5e716bd63170554537ec77895055de1fd83a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中的伪变量
 伪变量是用于在变量窗口中显示某些信息的术语或**快速监视**对话框。 你可以像输入普通变量那样输入伪变量。 但伪变量不是变量，它不与程序中的变量名相对应。  
@@ -70,6 +71,6 @@ $handles
 |`$`*N*`#`|显示对象具有对象 ID 等于*N*。|  
 |`$dynamic`|显示这两个特殊**动态视图**实现的对象的节点`IDynamicMetaObjectProvider`。 接口。 语法是`$dynamic,`*对象*。 此功能仅应用于使用 .NET Framework 版本 4 的代码。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [监视和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)   
  [变量窗口](../debugger/debugger-windows.md)

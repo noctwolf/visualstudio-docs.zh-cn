@@ -15,11 +15,12 @@ caps.latest.revision: "52"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f160fb123a52fef7215d4f365ffa28a6cae451e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 205c6928010d4cf3a35c6947e516c0bbc8674f29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-tool-window"></a>添加工具窗口
 在本演练中，你将了解如何创建工具窗口，并将其集成到 Visual Studio 中，通过以下方式：  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
 -   设置工具窗口的默认位置。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-tool-window"></a>创建工具窗口  
@@ -279,5 +280,5 @@ public System.Windows.Controls.MediaElement MediaPlayer
   
      你应该能听到钟声声音。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

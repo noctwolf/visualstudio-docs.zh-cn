@@ -22,11 +22,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 24a229c7c96221c0b7f04a91d5f71fa566e71e81
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8822d0aa9947dccbdfabc43d7090b52eba7d0844
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何：配置 ClickOnce 信任提示行为
 你可以配置 ClickOnce 信任提示到控件，最终用户是否可以选择安装 ClickOnce 应用程序，如 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序、 控制台应用程序、 WPF 浏览器应用程序和 Office 解决方案。 通过在每个最终用户计算机上设置注册表项配置信任提示。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/27/2017
   
 3.  添加以下子键作为**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|值|  
+    |字符串值子项|“值”|  
     |-------------------------|-----------|  
     |`Internet`|`Enabled`|  
     |`UntrustedSites`|`Disabled`|  
@@ -129,7 +130,7 @@ ms.lasthandoff: 10/27/2017
   
 3.  添加以下子键作为**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|值|  
+    |字符串值子项|“值”|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`AuthenticodeRequired`|  
@@ -186,7 +187,7 @@ ms.lasthandoff: 10/27/2017
   
 3.  添加以下子键作为**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|值|  
+    |字符串值子项|“值”|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`Disabled`|  
@@ -225,14 +226,14 @@ ms.lasthandoff: 10/27/2017
   
 3.  生成并运行应用程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 应用程序的的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   
  [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)   
- [如何： 启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)   
- [如何： 为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何： 调试 ClickOnce 应用程序具有受限权限](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [如何：使用受限权限对 ClickOnce 应用程序进行调试](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [如何： 为 ClickOnce 应用程序添加到客户端计算机的受信任的发布服务器](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [如何：为应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 128dc9001faba06b1c95c5ebc364f319891ce409
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f984f9454aa646663d2888c4241c2ed385188cd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
@@ -51,14 +52,14 @@ IDebugAlias : IUnknown
 ## <a name="remarks"></a>备注  
  别名是 # 字符，例如，&#1001; 后跟的字符串形式的十进制数字。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： ee.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [表达式评估接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)   
  [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)   

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a24b85ac16f9837a4e28674567341f00a993bf9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 552a1588b4ea1b4e5bc1cbc4d7ce87233dc74ea8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 检索此符号的原始类型。 何时使用[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)设置为的类型。  
@@ -44,12 +45,12 @@ HRESULT get_unmodifiedType(
 ## <a name="remarks"></a>备注  
  当前类型是返回的原始类型的修改。 可通过首先获取对符号类型，然后直接查询返回的原始类型的类型确定符号的原始类型。 请注意某些符号可能没有修改过的类型的原始类型。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： Dia2.h  
   
  库： diaguids.lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ffb8aed183b50958c8835b2a1e79b808ac20174
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eec62227ec39c1758c15e83fd1d8306e807d59fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-appearance-of-a-command"></a>更改外观的命令
 通过更改命令的外观，你可以对你的用户提供反馈。 例如，您可能希望命令不可用时查找不同。 你可以使命令可用或不可用，隐藏或显示它们，或选中或取消它们选中的菜单上。  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
   
 8.  上**工具**菜单现在应看到**新文本**。 单击**新文本**。 该命令应现在灰显。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)   
  [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)   

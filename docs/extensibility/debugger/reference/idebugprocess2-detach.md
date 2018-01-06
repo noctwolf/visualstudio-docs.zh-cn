@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37e642c8aa8709de28ea70d1a9d303877df25267
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c308dae9b324871f8604b6bedecf3d297f3eacd2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 将此过程从调试器分离通过分离过程中的程序的所有。  
@@ -41,5 +42,5 @@ int Detach();
 ## <a name="remarks"></a>备注  
  所有程序和进程继续运行，但不再调试会话的一部分。 在分离后的操作已完成，没有更多调试将发送此过程 （和其程序） 的事件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

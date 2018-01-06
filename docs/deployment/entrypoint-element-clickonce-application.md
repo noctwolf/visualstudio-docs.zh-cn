@@ -22,11 +22,12 @@ caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: eb280684f0c06391bc6c0596093c01f260f685d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a649b7375575b43be662991b4a1a4cc4930eb9a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;入口点&gt;元素 （ClickOnce 应用程序）
 标识应为程序集时执行此[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]客户端计算机上运行应用程序。  
@@ -65,17 +66,17 @@ ms.lasthandoff: 10/27/2017
  `entryPoint`具有以下元素。  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- 必需。 角色`assemblyIdentity`中定义其属性和[ \<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-application.md)。  
+ 必须的。 角色`assemblyIdentity`中定义其属性和[ \<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-application.md)。  
   
  `processorArchitecture`此元素的属性和`processorArchitecture`中定义特性`assemblyIdentity`在其他位置在应用程序清单必须匹配。  
   
 ## <a name="commandline"></a>命令行  
- 必需。 必须为的子级`entryPoint`元素。 它不包含任何子元素，并具有以下属性。  
+ 必须的。 必须为的子级`entryPoint`元素。 它不包含任何子元素，并具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`file`|必需。 启动程序集的本地引用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 此值不能包含正斜杠 （/） 或反斜杠 (\\) 路径分隔符。|  
-|`parameters`|必需。 描述要使用的入口点执行的操作。 唯一有效的值是`run`; 如果提供的空白字符串，则`run`假定。|  
+|`file`|必须的。 启动程序集的本地引用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 此值不能包含正斜杠 （/） 或反斜杠 (\\) 路径分隔符。|  
+|`parameters`|必须的。 描述要使用的入口点执行的操作。 唯一有效的值是`run`; 如果提供的空白字符串，则`run`假定。|  
   
 ## <a name="customhostrequired"></a>customHostRequired  
  可选。 如果包含，则指定此部署包含将在自定义主机，内部部署的组件，并不是独立的应用程序。  
@@ -114,5 +115,5 @@ ms.lasthandoff: 10/27/2017
   </entryPoint>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

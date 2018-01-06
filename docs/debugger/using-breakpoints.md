@@ -37,11 +37,12 @@ caps.latest.revision: "57"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 844b1378866bdd66b11494f01ff4762909408af7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 20f1b517d271bd50cdb96c595f2e8ab9be7c5e65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 也许你会为了查看代码变量的状态或查看调用堆栈而想要停止调试程序执行，此时，你可以设置断点。 在开发人员的工具箱中，它们是最重要的调试技术之一。  
@@ -246,5 +247,5 @@ ms.lasthandoff: 10/31/2017
 ### <a name="breakpoints-dont-work-in-a-dll"></a>断点在 DLL 中不起作用  
  当调试器尚未为代码所在的模块加载调试信息时，不能在源文件中设置断点。 征兆可能包括 **“将不会设置断点”**等消息。 警告断点标志符号出现在断点位置。 但是，当加载代码时，这些警告断点将成为实际的断点。 有关加载符号的详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)

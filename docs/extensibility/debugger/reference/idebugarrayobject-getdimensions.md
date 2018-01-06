@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d516032e458bcc0f85c73c75a9147ff53fc0fff2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0e5297019470fe8f3fe314d542013850eab7f1e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 获取数组的维数。  
@@ -52,5 +53,5 @@ int GetDimensions(
 ## <a name="remarks"></a>备注  
  多维数组可具有不同大小为每个维度。 例如，给定的三维数组`myarray[3][2][6]`，此方法将返回 3、 2 和 6 英寸`dwDimensions`按此顺序的参数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

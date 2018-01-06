@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c66a6eac74b3d1494a1e98bcb95112c43c4c1bc8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ed0e494cc0efd48ea3c22d9fd881aafec42a984b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>表达式计算 (Visual Studio 调试 SDK)
 在中断模式下，IDE 必须能够计算涉及的程序的多个变量的简单表达式。 若要实现此目的，调试引擎 (DE) 必须能够分析和评估一 IDE 窗口中输入的表达式。  
@@ -41,5 +42,5 @@ ms.lasthandoff: 10/31/2017
   
  同步和异步评估要求实现[IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法。 异步表达式计算需要实现[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [执行控件和状态计算](../../extensibility/debugger/execution-control-and-state-evaluation.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d71ee66c9d13dab5918e90c6434c3397d52191a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 93431c8863e2b30fb98d00bec5112257e54496f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Half/Quarter 纹理维度变量
 减小非呈现器目标的纹理上的纹理尺寸。  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="example"></a>示例  
  此变体在运行时（调用 `CreateTexture2D` 之前）可调整纹理大小。 我们不建议将此方法用于成品代码，因为完整大小的纹理会消耗更多的磁盘空间，而且此额外步骤会增加应用中的加载次数（对于需要大量要编码的计算资源的压缩纹理而言尤其如此）。 相反，我们建议你通过使用生成管道中包含的图像编辑器或图像处理器，在脱机状态下调整纹理大小。 这些方法将降低磁盘空间需求、消除应用中的运行时开销并提供更多的处理时间，以便你可以在收缩或压缩纹理时保持最佳图像质量。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Mip-map 生成变体](mip-map-generation-variant.md)   
  [BC 纹理压缩变量](bc-texture-compression-variant.md)

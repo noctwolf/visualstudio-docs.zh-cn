@@ -21,11 +21,12 @@ caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7e56d596c37960ddfa548921da897f08fbfbbf5b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1923c39669d50303f907974816fbb54297c477c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全和部署
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行最少的用户交互。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用于发布和更新如果您已开发您的项目与 Visual Basic 和 Visual C# 使用 ClickOnce 技术部署的应用程序提供完全支持。 有关部署 Visual c + + 应用程序的信息，请参阅[Visual c + + 应用程序的 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/27/2017
  使用验证码证书来验证应用程序的发布服务器的真实性。 通过为应用程序部署中使用验证码，ClickOnce 可帮助防止有害程序描绘本身作为合法程序来自建立，可信的源。 （可选） 还可以使用证书进行签名的应用程序和部署清单以证明文件未被篡改。 有关详细信息，请参阅[ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)。 此外可以使用证书配置客户端计算机具有受信任的发布服务器的列表。 如果应用程序来自受信任的发布者，则可以安装无需任何用户交互。 有关详细信息，请参阅 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
 ### <a name="code-access-security"></a>代码访问安全性  
- 代码访问安全性帮助限制代码对受保护资源的访问权限。 在大多数情况下，你可以选择 Internet 或本地 Intranet 区域来限制权限。 使用**安全**页面**ProjectDesigner**以请求适用于应用程序的区域。 你还可以调试具有受限的权限来模拟最终用户体验的应用程序。 有关详细信息，请参阅[ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)。  
+ 代码访问安全性帮助限制代码对受保护资源的访问权限。 在大多数情况下，你可以选择 Internet 或本地 Intranet 区域来限制权限。 使用**安全**页面**ProjectDesigner**以请求适用于应用程序的区域。 你还可以调试具有受限的权限来模拟最终用户体验的应用程序。 有关详细信息，请参阅 [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)。  
   
 ### <a name="clickonce-trust-prompt"></a>ClickOnce 信任提示  
  如果应用程序请求更多的权限超出区域的允许，可以提示最终用户做出信任决定。 最终用户可以决定是否信任，可以运行 ClickOnce 应用程序，如 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序、 控制台应用程序、 XAML 浏览器应用程序，和 Office 解决方案。 有关详细信息，请参阅[如何： 配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。  
@@ -112,7 +113,7 @@ ms.lasthandoff: 10/27/2017
 |Internet Explorer|2.0、 3.0、 3.5、 3.5 SP1、 4|  
 |Firefox|2.0 SP1、 3.5 SP1、 4|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Windows Vista 上的 ClickOnce 部署](../deployment/clickonce-deployment-on-windows-vista.md)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   

@@ -21,11 +21,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7796f11581f072e0437f341590bb064eeec81f7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36e80508ce0febc7678585faf6518bf6b838a289
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>使用 DebuggerTypeProxy 特性
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> 指定类型的代理或替身，并更改类型在调试器窗口中的显示方式。 查看具有代理的变量时，代理将代替原始类型出现在**显示**。 调试器变量窗口仅显示代理类型的公共成员。 不会显示私有成员。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
  有关如何使用与此特性的示例<xref:System.Diagnostics.DebuggerDisplayAttribute>和<xref:System.Diagnostics.DebuggerTypeProxyAttribute>，请参阅[使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)。  
   
 ## <a name="using-generics-with-debuggertypeproxy"></a>将泛型与 DebuggerTypeProxy 一起使用  
- 对泛型的支持是有限的。 对于 C#，`DebuggerTypeProxy` 只支持开放类型。 开放类型（也称作“非构造类型”）是一种还未使用其类型参数的参数实例化的泛型类型。 不支持封闭类型（也称作“构造类型”）。  
+ 对泛型的支持是有限的。 对于 C#，`DebuggerTypeProxy` 只支持开放类型。 开放类型（也称作“非构造类型”）是一种还未使用其类型参数的自变量实例化的泛型类型。 不支持封闭类型（也称作“构造类型”）。  
   
  开放类型的语法类似于：  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
  `"Namespace.TypeName'2"`  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)   
  [创建.managed 对象的自定义视图](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [使用调试器显示特性增强调试](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

@@ -13,18 +13,19 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ce3e623a2d1787aa67f8a6e4dcfcf9530e8766c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6ec084c0d985ce5cc3cb0a886bd1fdcaf6cc3e54
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-descriptions"></a>事件说明
 每种类型的事件有特定用途。  
   
 ## <a name="events-and-the-reasons-for-their-use"></a>事件和其使用的原因  
   
-|Event|描述|  
+|事件|描述|  
 |-----------|-----------------|  
 |激活文档事件|发生时的调试引擎 (DE) 想 IDE 以打开或将文档置于前台。|  
 |断点绑定或断点错误事件|绑定断点或当断点无法绑定，并返回一个错误时发送。|  
@@ -46,5 +47,5 @@ ms.lasthandoff: 10/31/2017
 |线程名称更改事件|发送时用户更改线程的名称。|  
 |程序名称更改事件|发送时用户更改程序的名称。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发送事件](../../extensibility/debugger/sending-events.md)

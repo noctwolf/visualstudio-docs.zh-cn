@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3dcd4b946e5b8c2d4cd7c3d77c77140e66699cef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b1a6da92ae88939303d8d16cc401c152ecfb0c36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 此方法返回一个变量的确切类型。  
@@ -49,7 +50,7 @@ int ResolveDynamicType(
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)

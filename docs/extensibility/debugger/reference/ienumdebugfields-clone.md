@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1a4dec6d0cb769d4d49c55800d21b14fe6ebbef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f9b1379f15ac547aa8ee5fcc1014f3f477c1466c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 此方法返回当前枚举作为一个单独的对象的副本。  
@@ -47,5 +48,5 @@ int Clone(
 ## <a name="remarks"></a>备注  
  枚举的副本都在调用此方法时具有与原始相同的状态。 但是，则副本和原始的状态独立，并且可以单独更改。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

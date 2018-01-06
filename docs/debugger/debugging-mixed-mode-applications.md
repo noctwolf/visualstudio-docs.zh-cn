@@ -25,11 +25,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ee3e5401b663435415c0f3004054090be82e916
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2870f1b74532b181ae2101ae01a0e95b494f6f61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-mixed-mode-applications"></a>调试混合模式应用程序
 混合模式应用程序是任何组合了本机代码 (C++) 与托管代码（在公共语言运行时上运行的 Visual Basic、Visual C# 或 C++）的应用程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试混合模式应用程序基本上是透明的；它与调试单模式应用程序没有太大区别。 但有几个特殊的注意事项。  
@@ -54,5 +55,5 @@ ms.lasthandoff: 10/31/2017
   
  由于本机调用堆栈和托管调用堆栈不同，因此调试器不能总是为混合代码提供完整的调用堆栈。 当本机代码调用托管代码时，你可能会注意到某些差异。 有关详细信息，请参阅[混合代码与在调用堆栈窗口中缺少信息](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试托管代码](../debugger/debugging-managed-code.md)

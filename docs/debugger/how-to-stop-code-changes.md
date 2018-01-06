@@ -21,11 +21,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06c0e59d7e4fea617945c6548f9bbccfdd6e22b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fde04b22c725064e9066d7ec8a4f85816bd45a01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-stop-code-changes"></a>如何：停止代码更改
 当“编辑并继续”处于应用代码更改的过程中时，您可以停止该操作。  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
   
  如果选择了改选项，就不会进行任何代码更改。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编辑并继续](../debugger/edit-and-continue.md)   
  [编辑并继续调试，选项对话框](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)

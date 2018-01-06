@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3484ac7aa26f630245a471a234dd19468e50ebf0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 345dbfd982c2e80fadc0f4c3d9484c662b6090ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因为远程调试监视器未正确设置远程计算机上或远程计算机是由于网络问题或存在防火墙而无法访问，则可能出现此消息。
@@ -169,5 +170,5 @@ Visual Studio 无法连接到远程调试器。 出现此消息可能的原因�
 ## <a name="more-help"></a>更多帮助  
  若要获取更多远程调试器的帮助，请打开远程调试器的帮助页 (**帮助 > 用法**在远程调试器中)。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [远程调试](../debugger/remote-debugging.md)

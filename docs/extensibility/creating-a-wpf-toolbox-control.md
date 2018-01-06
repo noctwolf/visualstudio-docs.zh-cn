@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 313f89f0fe9a4bf9e9171ebafc866366067ab98c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 605ce6f221df959e553cbfde2f3439da06b474c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>创建 WPF 工具箱控件
 (Windows Presentation Framework) WPF 工具箱控件模板允许您创建自动添加到的 WPF 控件**工具箱**安装扩展后。 本主题演示如何使用模板创建**工具箱**可以分发给其他用户控件。  

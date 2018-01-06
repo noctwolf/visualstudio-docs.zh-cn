@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4046bfccac12e79992805e7abec7dfda65b5a658
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1fb87f1ad075c0bae10c4d154b2c0e0fa2ceb999
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 从给定字符串设置属性的值。  
@@ -54,10 +55,10 @@ int SetValueAsString (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则返回错误代码。 下表显示其他可能的值。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|无法将字符串转换为属性值，或无法设置属性值。|  
 |`E_SETVALUE_VALUE_IS_READONLY`|该属性是只读的。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

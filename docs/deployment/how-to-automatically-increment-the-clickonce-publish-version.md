@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 71665ea5053a4d3ddbdb933d2ecdf4ea20ba83c8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2e1399795400d52543b92cb13635a8485b160f22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>如何：自动递增 ClickOnce 发布版本
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，更改`Publish Version`属性导致应用程序作为更新发布。 默认情况下，Visual Studio 会自动增大`Revision`数`Publish Version`每次您发布应用程序。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/27/2017
   
 3.  在**发布版本**部分中，清除**自动递增每个版本的修订号**复选框。  
   
-## <a name="see-also"></a>另请参阅  
- [如何： 设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)   
+## <a name="see-also"></a>请参阅  
+ [如何：设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

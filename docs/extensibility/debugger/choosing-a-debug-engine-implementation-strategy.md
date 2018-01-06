@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d08d82f867ac2723ff68da615d5dc6977b8038af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fae5211ac270832f07038faafbd6f5bc463d3944
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>选择调试引擎实现策略
 使用运行时体系结构来确定你的调试引擎 (DE) 实现策略。 调试引擎可能会创建进程到程序要调试进程为 Visual Studio 会话调试管理器 (SDM) 或到这两个进程外。 以下准则应帮助这些三个策略之间进行选择。  
@@ -33,5 +34,5 @@ ms.lasthandoff: 10/31/2017
   
 -   如果 DE 必须调用程序访问符号存储区，创建 DE 进程内运行的程序。 在这种情况下，程序创建 DE 的实例。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 调试器可扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

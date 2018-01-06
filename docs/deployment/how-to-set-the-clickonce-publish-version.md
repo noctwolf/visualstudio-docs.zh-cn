@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: be66edb3880e8ef91f8fd95d7f11fe465322451f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: db6bfae35bbbd14190028fb0e32dfc8d35cb9bac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>如何：设置 ClickOnce 发布版本
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version`属性确定你发布的应用程序是否将被视为更新。 每个时间版本将递增，将作为更新发布应用程序。  
@@ -45,8 +46,8 @@ ms.lasthandoff: 10/27/2017
     > [!NOTE]
     >  你应永远不会递减版本号;这样做可能导致不可预知的更新行为。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
- [如何： 自动递增 ClickOnce 发布版本](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
+ [如何：自动递增 ClickOnce 发布版本](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

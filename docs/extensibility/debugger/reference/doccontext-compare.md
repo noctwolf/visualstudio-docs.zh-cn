@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2074e5abe688ecb8f796099cf23309ec0cfe954d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d2882ebf3a1b21a4921f863496a42ac50ac1b2fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 指定用于比较两个文档上下文的条件。  
@@ -62,13 +63,13 @@ enum enum_DOCCONTEXT_COMPARE {
   
  这些值用于指定在列表中查找第一个文档上下文比较条件。 文档上下文提供文档上下文中的一组要比较本身针对通过`IDebugDocumentContext2::Compare`方法。 为其比较运算符的列表中的第一个文档上下文`true`随后会返回。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

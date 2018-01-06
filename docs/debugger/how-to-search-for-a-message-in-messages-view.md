@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36c3158542dff52a2e1ca350e49be254219183c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df8fc9ee13a721f98a942a3bb6d10f6c8d844ddf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>如何：在消息视图中搜索消息
 你可以通过将其句柄、 类型或消息 ID 用作搜索条件搜索在消息视图中的特定消息。 上述任一 — 或组合 — 将有效的搜索条件。 也可以指定搜索的初始方向。 在对话框中的字段预加载了当前所选消息的属性。  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
   
 5.  选择**向上**或**下**搜索的初始方向。  
   
-6.  单击“确定”。  
+6.  单击 **“确定”**。  
   
  如果找到匹配的消息时，它将突出显示在消息视图窗口中。 请参阅[消息视图](../debugger/messages-view.md)。

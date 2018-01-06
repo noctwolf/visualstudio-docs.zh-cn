@@ -22,11 +22,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d793924b0a21bc2752d54b93569ded7a79add7f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: d889b9b2476c6b413176ba91e5e0b1b1731b57f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>如何：在托管代码中设置线程名称
 在 Visual Studio 的任何版本中都可以使用线程命名功能。 线程命名功能用于跟踪中的线程非常有用**线程**窗口。
@@ -78,6 +79,6 @@ Sub Main()
 End Sub  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在本机代码中设置线程名称](../debugger/how-to-set-a-thread-name-in-native-code.md)

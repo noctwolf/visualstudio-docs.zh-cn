@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: baa19209af40067c4b362b88ec0c0812b80e64ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5f0cbd7cb594314e98422789f6ec70fd63198fc4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="warning-script-debugging-disabled"></a>警告：脚本调试已禁用
 脚本调试当前在 Internet Explorer 中禁用  
@@ -39,11 +40,11 @@ ms.lasthandoff: 10/31/2017
   
 4.  清除**禁用脚本调试 (Internet Explorer)**。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
 6.  退出并重新启动 Internet Explorer。  
   
      新设置现在将生效。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：附加到脚本](../debugger/how-to-attach-to-script.md)

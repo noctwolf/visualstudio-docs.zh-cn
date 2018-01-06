@@ -16,16 +16,17 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca8795ba56833282bac600db79ba33da70aa6c3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4229d9045dfe64fcb320eca7cf004de56e7f8f0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
 包含在 Visual Studio 扩展性工具 (VS SDK) 的 Windows 窗体工具箱控件项目模板允许你创建的控件，将自动添加到**工具箱**安装扩展后。 本主题演示如何使用模板来创建可以分发给其他用户的简单计数器控件。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件  
@@ -54,11 +55,11 @@ ms.lasthandoff: 10/31/2017
   
 5.  在**属性**窗口中，设置以下值设计图面上的控件。  
   
-    |控件|属性|值|  
+    |控件|属性|“值”|  
     |-------------|--------------|-----------|  
-    |`Label1`|**“文本”**|""|  
-    |`Button1`|**Name**|btnReset|  
-    |`Button1`|**“文本”**|重置|  
+    |`Label1`|**文本**|""|  
+    |`Button1`|**名称**|btnReset|  
+    |`Button1`|**文本**|重置|  
   
 ### <a name="coding-the-user-control"></a>编码用户控件  
  `Counter` 控件将公开一个用于递增计数器的方法、一个计数器每次递增时均会引发的事件、一个 `Reset` 按钮，以及 3 个存储当前计数、显示文本及是显示还是隐藏 `Reset` 按钮的属性。 `ProvideToolboxControl`属性确定中的何处**工具箱**`Counter`控件将显示。  
@@ -211,7 +212,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="next-steps"></a>后续步骤  
  生成“工具箱”  控件时，Visual Studio 将在项目的 \bin\debug\ 文件夹中创建一个名为 *项目名称*.vsix 的文件。 你可以通过将 .vsix 文件上载到网络或网站来部署此控件。 当用户打开.vsix 文件时，该控件被安装，并添加到 Visual Studio**工具箱**用户的计算机上。 或者，你可以上载.vsix 文件到[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点，以便用户可以在浏览时找到它**工具 / 扩展和更新**对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)   
  [创建 WPF 工具箱控件](../extensibility/creating-a-wpf-toolbox-control.md)   
  [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)   

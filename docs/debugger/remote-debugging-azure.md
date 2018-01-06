@@ -12,11 +12,15 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e42513e431fd81a85d54a3e9784ebaa6cd26eb2
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload:
+- aspnet
+- dotnetcore
+- azure
+ms.openlocfilehash: 8d0163d9834a56735daf67050dbf3b8e74011dc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>在 IIS 和 Visual Studio 2017 在 Azure 上的远程调试 ASP.NET 核心
 你可以部署到 Windows Server 计算机使用 IIS，ASP.NET Web 应用程序，并将其设置为远程调试。 本指南说明如何设置和配置 Visual Studio 2017 ASP.NET Core 应用，将其部署到 IIS 使用 Azure，并从 Visual Studio 中附加远程调试器。
@@ -41,7 +45,7 @@ ms.lasthandoff: 12/11/2017
 > [!NOTE]
 > 若要调试在 Azure Service Fabric 上的 ASP.NET 核心，请参阅[调试远程 Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。
 
-### <a name="requirements"></a>要求
+### <a name="requirements"></a>惠?
 
 不支持调试通过代理连接的两台计算机之间。 国家/地区中调试通过高延迟或低带宽连接，如拨号 Internet，或通过 Internet 不建议和可能失败也是非常慢。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 

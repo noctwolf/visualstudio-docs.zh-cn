@@ -22,11 +22,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 9cf5b1b9680d2c4267fde5798cb0b41297f72153
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 38fec52a9ca4c152a8bb1065e2d33aa1ea52c97f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>如何：用 SignTool.exe (ClickOnce) 对安装文件进行签名
 你可以使用 SignTool.exe 为安装程序 (setup.exe) 签名。 此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。  
@@ -79,5 +80,5 @@ ms.lasthandoff: 10/27/2017
     signtool sign /f CertFileName Setup.exe  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：为应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

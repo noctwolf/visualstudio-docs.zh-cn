@@ -12,22 +12,25 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- aspnet
+- azure
+ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>调试使用快照调试器的实时 ASP.NET Azure 应用程序
 
-你感兴趣的代码在执行时，快照调试器将会在生产应用的快照。 若要指示调试器拍摄快照，你在代码中设置 snappoints 和 logpoints。 调试器使你能够查看具体哪里出错，不影响生产应用程序的流量。 快照调试器可以帮助你解决在生产环境中发生的问题所花费的时间会大幅度降低。
+你感兴趣的代码在执行时，快照调试器将会在生产应用的快照。 要指示调试程序拍摄快照，可在代码中设置 snappoints 和 logpoints。 使用调试程序，可精确查看出错的内容，而不影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
 
 Snappoints 和 logpoints 是类似于断点。 与断点，不同 snappoints 不会停止应用程序命中条件。 通常情况下，捕获在 snappoint 快照采用 10 20 毫秒。 
 
-快照集合是可用于在 Azure App Service 中运行以下 web 应用程序：
+快照集合适用于在 Azure App Service 中运行的以下 Web 应用：
 
-- 在.NET Framework 4.6.1 上运行的 ASP.NET 应用程序或更高版本。
-- 在.NET 核心 2.0 或更高版本在 Windows 上运行的 ASP.NET Core 应用程序。
+- 在 .NET Framework 4.6.1 或更高版本上运行的 ASP.NET 应用程序。
+- 在 Windows 中的 .Net Core 2.0 或更高版本上运行的 ASP.NET Core 应用程序。
 
 此外，快照调试器仅可用于 Visual Studio 2017 Enterprise 15.5 或更高版本和基本或更高版本的 App Service 计划。 
 

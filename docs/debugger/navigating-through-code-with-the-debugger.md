@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cda62de6fe72598674b90e4a0ef5dccd8cf2a2af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>导航代码通过 Visual Studio 调试器
 熟悉的命令和快捷方式来浏览在调试器中的代码并将使变得更快、 更轻松地查找和解决你的应用程序中的问题。 虽然浏览在调试器中的代码，可以检查您的应用程序的状态或了解有关其执行流的详细信息。  

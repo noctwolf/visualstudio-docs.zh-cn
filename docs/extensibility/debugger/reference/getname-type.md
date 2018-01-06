@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 06cb7cc6e882bbd1539b34035ca5a9be685512e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb73d39aec7f364ce27ab06ef426d1c4a622878a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 指定要从中检索文件的名称类型。  
@@ -75,14 +76,14 @@ public enum enum_GETNAME_TYPE {
 ## <a name="remarks"></a>备注  
  这些值作为参数传递[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)， [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)，和[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法以指定哪种类型的名称返回。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)   
  [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)   

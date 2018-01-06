@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 104c187d373113e8e5dafe589af3995bef5c8cdc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b7924515dbb661a4281397817be4b1b68487a6ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;计划&gt;元素 （引导程序）
 `Schedules`元素包含`Schedule`元素，用于定义所定义的命令在特定时间`Command`元素应运行。  
@@ -49,9 +50,9 @@ ms.lasthandoff: 10/27/2017
   
  `Schedule`具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`Name`|必需。 计划项的名称。 这对应于`ScheduleName`属性`Command`元素。 当`Command`引用指定的计划中，在由该指示的时间将仅执行`Schedule`元素。 计划还可能与`FailIf`和`BypassIf`元素，用于限制对指定的计划上执行的这些条件的测试。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`Name`|必须的。 计划项的名称。 这对应于`ScheduleName`属性`Command`元素。 当`Command`引用指定的计划中，在由该指示的时间将仅执行`Schedule`元素。 计划还可能与`FailIf`和`BypassIf`元素，用于限制对指定的计划上执行的这些条件的测试。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
   
  给定`Schedule`元素可能具有以下的子级中恰好有一个。  
   
@@ -64,6 +65,6 @@ ms.lasthandoff: 10/27/2017
 ## <a name="afterpackage"></a>AfterPackage  
  `AfterPackage`元素指示安装程序在之后安装指定的包执行命令。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [\<产品 > 元素](../deployment/product-element-bootstrapper.md)   
  [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

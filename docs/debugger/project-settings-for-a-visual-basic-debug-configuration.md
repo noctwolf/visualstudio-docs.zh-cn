@@ -25,11 +25,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cc51c3d6525bcbecb0b0ef132aaa029ec7a9fcd
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 47047758d237bb652d5b8e447f8fc7b6e608148e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 你可以更改的项目设置[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中的调试配置**属性页**窗口，如下所述[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示在何处可以找到中与调试器相关的设置**属性页**窗口。  
@@ -58,5 +59,5 @@ ms.lasthandoff: 11/11/2017
 |**定义 DEBUG 常数**|定义此符号将启用的输出函数的条件编译[Debug 类](/dotnet/api/system.diagnostics.debug)。 定义该符号后，Debug 类方法生成输出复制到[输出窗口](../ide/reference/output-window.md)。 如果没有该符号，则 Debug 类方法将不会被编译，并且不生成任何输出。 该符号应在调试版本中定义而不应在发布版本中定义。 在发布版本中定义该符号将创建不必要的代码，从而降低程序的速度。|  
 |**定义 TRACE 常数**|定义此符号将启用的输出函数的条件编译[Trace 类](/dotnet/api/system.diagnostics.trace.aspx)。 定义了该符号，Trace 类方法将生成输出到[输出窗口](../ide/reference/output-window.md)。 如果没有该符号，则 Trace 类方法将不会被编译，并且不生成任何 Trace 输出。 默认情况下，在调试版本和发布版本中都定义了此符号。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)

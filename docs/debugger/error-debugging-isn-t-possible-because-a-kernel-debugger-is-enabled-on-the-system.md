@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.error.kernel_dbg_enabled
 dev_langs:
 - CSharp
@@ -14,16 +14,16 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords: kernel debugger
-ms.assetid: 630a7abd-3303-4aaa-888a-6de3de14bc01
 caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 448dbc486d58bc46e531b92de9f78272e4304d27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0841b6e6d592a8b09b85e744d693f0b356fcbf9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>错误： 未 &#39; t 可能因为内核调试程序上启用调试系统
 调试托管代码时，你可能会收到以下错误消息：  
@@ -100,6 +100,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
      `gn`  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [调试托管代码](../debugger/debugging-managed-code.md)

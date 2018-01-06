@@ -17,11 +17,12 @@ caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e1b298f8088adf05992f7ebf8b5afbb743ec995
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: ebae0886db71b0b06f346d6bd174951b1c5d4752
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-apps-on-a-remote-machine"></a>在远程计算机上运行的 UWP 应用
 ![仅适用于 Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -104,6 +105,6 @@ ms.lasthandoff: 11/11/2017
   
  然后在 **“调试”** 菜单上，选择 **“启动调试”** （键盘：F5）。 项目会重新编译，然后部署到远程设备上并启动。 调试器在断点暂停执行，以使您可进入逐语句执行、逐过程执行和跳出代码。 选择 **“停止调试”** 以结束调试会话并关闭远程应用程序。 有关详细信息，请参阅[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [使用 Visual Studio 的测试 UWP 应用](../test/testing-store-apps-with-visual-studio.md)   
+## <a name="see-also"></a>请参阅  
+ [使用 Visual Studio 测试 UWP 应用](../test/testing-store-apps-with-visual-studio.md)   
  [在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)

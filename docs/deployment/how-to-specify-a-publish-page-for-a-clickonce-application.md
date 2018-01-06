@@ -21,11 +21,12 @@ caps.latest.revision: "18"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: e05718d2a00df76d2c78e16c5b4473ab48d43a39
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 491ef29c955c5ab06b8539ec5089f2ed32feaf36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的发布页
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序中，生成默认网页 (publish.htm) 并将其随应用程序一起发布。 此页包含的应用程序、 将其安装应用程序和/或任何必备项的链接和帮助主题描述的链接名称[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 **发布页**为你的项目的属性，可指定 Web 页的名称你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/27/2017
   
 5.  在**发布选项**对话框中，清除**发布后打开部署网页**复选框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [如何： 自定义 ClickOnce 的默认网页](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

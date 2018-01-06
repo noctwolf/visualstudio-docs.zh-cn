@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3220e3c6ef1a20b8a434fbfab13b419beb331032
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 15f9eff023fa875499881eb05a0795b0eaa83842
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-events"></a>控件事件
 你必须将事件发送程序的受控执行过程。 所有事件都将发送使用[IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md)接口，并具有需要实现的属性[IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md)方法。  
@@ -39,5 +40,5 @@ ms.lasthandoff: 10/31/2017
   
  对于将字符串样式输出写入你引擎，则必须实现[IDebugOutputStringEvent2::GetString](../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [执行控件和状态计算](../../extensibility/debugger/execution-control-and-state-evaluation.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7449cef9dca41aee61a3f15162252298db04e71
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb03ab88ca3d1d50b559cef87bfdf045a0a81319
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-object-table"></a>图形对象表
 Visual Studio 图形分析中的图形对象表可帮助你了解支持游戏或应用程序的帧的 Direct3D 对象。  
@@ -42,8 +43,8 @@ Visual Studio 图形分析中的图形对象表可帮助你了解支持游戏或
 |列|描述|  
 |------------|-----------------|  
 |标识符|对象 ID。|  
-|**Name**|通过使用 Direct3D 函数 `SetPrivateData` 在对象上设置的特定于应用程序的信息 - 通常提供有关一个对象的其他识别信息。|  
-|**类型**|对象类型。|  
+|**名称**|通过使用 Direct3D 函数 `SetPrivateData` 在对象上设置的特定于应用程序的信息 - 通常提供有关一个对象的其他识别信息。|  
+|**Type**|对象类型。|  
 |**活动**|在捕获的帧期间，为在 D3D10Device 或 D3D11DeviceContext 上设置的对象显示“*”。<br /><br /> 它对应的是显示为灰色文本但提供可用于帮助对象表排序的列项的对象。|  
 |**Size**|对象大小（以字节为单位）。|  
 |**格式**|对象的格式。 例如，纹理对象格式或着色器对象的着色器模型。|  
@@ -112,6 +113,6 @@ Visual Studio 图形分析中的图形对象表可帮助你了解支持游戏或
 |**uint64**|64 位无符号整数值。 与相同**u8byte**。|  
 |**bool**|一个布尔（`true` 或 `false`）值。 每个布尔值由一个 32 位值表示。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [图形诊断 （调试 DirectX 图形）](visual-studio-graphics-diagnostics.md)   
  [演练：因设备状态而缺少对象](walkthrough-missing-objects-due-to-device-state.md)

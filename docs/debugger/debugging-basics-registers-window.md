@@ -21,11 +21,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87c230ed85ed666abbad96bbdbda614ae0a01a1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 82d8c547885021d83e272bcd3ab1a5d560c73a39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>有关 Visual Studio 中的寄存器窗口
 **注册**均提供仅当中启用了地址级调试窗口**选项**对话框中，**调试**节点。  
@@ -55,6 +56,6 @@ EAX = 003110D8
 ## <a name="register-groups"></a>寄存器组  
  为了减少混乱，**注册**窗口将寄存器组织成组。 如果你右键单击**注册**窗口中，你将看到包含的组，这样可以显示或隐藏可以根据列表的快捷菜单。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 使用寄存器窗口](../debugger/how-to-use-the-registers-window.md)   
  [调试器基础知识](../debugger/debugger-basics.md)

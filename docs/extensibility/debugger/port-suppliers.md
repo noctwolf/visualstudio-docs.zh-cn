@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41c797d2c04c630d5aee7ff5ca2c0d5fc084026a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cab184b0ecf4c4971b116cc9dfde26d8f80b45f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="port-suppliers"></a>端口供应商
 在调试器体系结构，方面**端口供应商**:  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供一个默认端口供应商和默认端口。 如果需要实现一个自定义端口，自定义端口供应商还需要可实现以提供这些自定义端口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [服务器](../../extensibility/debugger/servers-visual-studio-sdk.md)   
  [端口](../../extensibility/debugger/ports.md)   
  [调试器概念](../../extensibility/debugger/debugger-concepts.md)   

@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 63377b7edde2204d30802361aa5628d3aa473652
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 34e83d6b035ba6ea91190fa89b9e1a63366e7907
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的应用程序部署概述
 本主题概述了如何通过使用受信任的应用程序部署技术部署具有提升权限的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="trusted-application-deployment-basics"></a>受信任的应用程序部署基础知识  
  下表显示了受信任的应用程序部署中所涉及的对象和角色。  
   
-|对象或角色|说明|  
+|对象或角色|描述|  
 |--------------------|-----------------|  
 |管理员|负责更新和维护客户端计算机的组织实体|  
 |信任关系管理器|公共语言运行时 (CLR) 中负责强制执行客户端应用程序安全性的的子系统。|  
@@ -104,6 +105,6 @@ ms.lasthandoff: 10/27/2017
 ## <a name="limitations-of-trusted-application-deployment"></a>受信任的应用程序部署的限制  
  可以使用受信任的应用程序部署通过 Web 或企业文件共享将提升的信任授予 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 无需对 CD 上分布的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序使用受信任的应用程序部署，因为默认情况下，以向这些应用程序授予完全信任。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7099fdc72bc93d86d49727eb782d2fd072ec1e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: d1b9326aa862bd03bb989a4d6863e94dae7bddef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 可以使用 Visual C++ 项目中的“编辑并继续”。 请参阅[支持代码更改 （c + +）](../debugger/supported-code-changes-cpp.md)有关限制的编辑并继续的信息。
@@ -82,5 +83,5 @@ ms.lasthandoff: 10/31/2017
   
  在这种情况下，调试器会继续执行原始代码，直至可以应用更改。 陈旧的代码在单独的源窗口中作为临时源文件窗口显示，并带有一个类似 `enc25.tmp`的标题。 编辑过的源继续在原始源窗口中显示。 当您尝试编辑陈旧的代码时，会显示一条警告信息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [受支持的代码更改 (C++)](../debugger/supported-code-changes-cpp.md)

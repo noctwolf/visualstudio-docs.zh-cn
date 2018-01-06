@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799ac5ee39322579ab60901ffe2abb2f2a683138
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: adc3f54188e57bd5453703c0aa68fe281fd2ca5e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 此方法将添加指定每个调试引擎 (DE) 的程序节点。  
@@ -57,6 +58,6 @@ int AddImplicitProgramNodes(
 ## <a name="remarks"></a>备注  
  [程序节点](../../../extensibility/debugger/program-nodes.md)中列出的每个 DE 将添加`rgguidSpecificEngines`-排除启动引擎 (在`guidLaunchingEngine`)，这假定它启动程序时添加自己的程序节点。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
  [程序节点](../../../extensibility/debugger/program-nodes.md)

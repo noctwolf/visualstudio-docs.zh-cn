@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2db510e81231f7802d686b21a977c271a66c5d79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-engine"></a>调试引擎
 调试引擎 (DE) 适用于提供调试服务，例如执行控件、 断点及表达式评估的解释程序或操作系统。 DE 负责监视正在调试的程序的状态。 不要使用实现此目的，DE 任何方法将中支持的运行时，可供它，无论是由运行时提供的 CPU 中或从 Api。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
  DE 适用于要为其启用 DE 代表该特定的运行时，若要了解表达式语法的表达式计算器组件。 DE 也适用于要访问由语言编译器生成的符号调试信息的符号处理程序组件。 有关详细信息，请参阅[表达式计算器](../../extensibility/debugger/expression-evaluator.md)和[符号提供程序](../../extensibility/debugger/symbol-provider.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器组件](../../extensibility/debugger/debugger-components.md)   
  [表达式计算器](../../extensibility/debugger/expression-evaluator.md)   
  [符号提供程序](../../extensibility/debugger/symbol-provider.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 603f24f89463b9eb9f7c67ed3d05662870e41bf3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4e23641f246d064dc65c01788bdfb780c0f09869
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 检索一个托管的代码的接口，表示与此别名关联的值。  
@@ -47,5 +48,5 @@ int GetICorDebugValue(
 ## <a name="remarks"></a>备注  
  此方法仅适用于托管的值 (`ICorDebugValue`是一个接口位于[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]中定义，在[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]cordebug.idl 文件中的 SDK)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

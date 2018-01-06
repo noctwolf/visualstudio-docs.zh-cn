@@ -22,11 +22,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be07be0e1374360a96b6672b095dcc039c6bb4f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ded5dfaec889e32bbf4c65f8e6a2335fd8c97a7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>如何： 调试不属于 Visual Studio 解决方案的可执行文件
 有时，你可能想要调试的可执行文件 （.exe 文件） 不属于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目。 它可能是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 外部创建的可执行文件，也可能是从其他用户处接收到的可执行文件。  
@@ -63,11 +64,11 @@ ms.lasthandoff: 10/31/2017
   
 3.  找到并选择可执行文件。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
 5.  通过选择执行命令，如启动可执行文件**启动**，从**调试**菜单。    
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
  [调试器安全](../debugger/debugger-security.md)   
  [DBG 文件](http://msdn.microsoft.com/en-us/91e449e9-8b65-4123-960f-2107cd1f1cfd)

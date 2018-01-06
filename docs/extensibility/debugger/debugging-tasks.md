@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8bd22d71753a8bf86adbe2b437407481388c48d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d1a6ffff4d3ac0410ca3de7e2cd595119763e88b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-tasks"></a>调试任务
 若要调试程序，它必须启动和调试引擎 (DE) 必须附加到它，否则 DE 必须连接到以前启动程序。 一旦附加，DE 必须生成某些启动事件。 在响应中，尝试绑定在 IDE 中设置断点调试包。 当程序达到绑定的断点时，它会中止并等待用户输入。  
@@ -57,5 +58,5 @@ ms.lasthandoff: 10/31/2017
  [调试器上下文](../../extensibility/debugger/debugger-contexts.md)  
  说明 DE 如何同时运行代码、 文档和表达式评估上下文中。 描述，为每个三个上下文、 位置、 位置或评估与它相关。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [入门](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "51"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e4a2485b7e702844a037787234ef3a1ab66495d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e334a148a205338a872e9581bce1c3c1a70b7df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>将菜单添加到 Visual Studio 菜单栏
 本演练演示如何向 Visual Studio 集成的开发环境 (IDE) 的菜单栏添加菜单。 IDE 菜单栏包含菜单类别如**文件**，**编辑**，**视图**，**窗口**，和**帮助**.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
  通过完成本演练，你可以创建一个名为菜单**TestMenu**包含一个命令。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>创建一个具有自定义命令项模板的 VSIX 项目  
@@ -96,5 +97,5 @@ ms.lasthandoff: 10/31/2017
   
      一个消息框应该显示，并显示消息"第包内 TopLevelMenu.TestCommand.MenuItemCallback() TestCommand"。 这表示该新命令起作用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

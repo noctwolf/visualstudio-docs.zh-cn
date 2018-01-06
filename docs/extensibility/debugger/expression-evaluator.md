@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b08da6a123107d793d522770d44315aaa432dede
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 55aaa595c49d0c50cff5f874d1b322c3adbb9729
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator"></a>表达式计算器
 表达式计算器 (EE) 检查语言来分析和在运行时，计算变量和表达式的语法，从而使它们可以在中断模式下 IDE 时由用户查看。  
@@ -43,5 +44,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="implementation-notes"></a>实现说明  
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]的调试引擎希望与表达式计算器使用公共语言运行时 (CLR) 接口。 因此，表达式计算器适用于[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]的调试引擎必须支持 CLR (调试接口的所有 CLR 的完整列表可以位于 debugref.doc，是一部分的[!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)])。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器组件](../../extensibility/debugger/debugger-components.md)

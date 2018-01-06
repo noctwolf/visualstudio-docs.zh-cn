@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 766f00475971da1ca009737f9360952422177814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cd28633fcb4b8186dae154428e489d51041aa8b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluation-in-break-mode"></a>在中断模式下的表达式计算
 下面描述了当调试器处于中断模式，并且必须执行表达式计算时出现的过程。  
@@ -42,5 +43,5 @@ ms.lasthandoff: 10/31/2017
   
     -   对于使用`IDebugExpression2::EvaluateAsync`，给定的回调接口用于通信的评估的持续过程。 完成评估后，将发送 EvaluateAsync [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)通过回调接口。 与此事件界面的最终值可以获取与[GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

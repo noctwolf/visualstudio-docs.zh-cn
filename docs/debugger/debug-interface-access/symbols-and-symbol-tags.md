@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 347ea483fda44d43d73b147a41a55f0945e515e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c3e51d02171455cd5b0b6051ed3b05c6d95278ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbols-and-symbol-tags"></a>符号和符号标记
 作为符号的使用调试接口访问 (DIA) SDK Api 可以访问程序数据库 (.pdb) 文件中存储有关已编译的程序的调试信息。 所有的符号拥有[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)和[idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)属性。 `symTag`属性指示的符号的类型由定义[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举。 `symIndexId`属性是`DWORD`包含符号的每个实例的唯一标识符的值。  
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/31/2017
  [符号类型的类层次结构](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
  介绍对应不同的语言元素，如类、 数组和函数返回类型的符号类型。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试接口访问 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

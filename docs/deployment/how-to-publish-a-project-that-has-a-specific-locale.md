@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 48ad25fd215ae9485420b3fbbfa9ac3cd41b8827
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b2560275ae08a9a860d62f11e0fb011e5e7a5b31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>如何：发布具有特定区域设置的项目
 一个应用程序包含多个具有不同区域设置的组件的现象并不少见。 在本方案中，你将创建一个包含若干个项目的解决方案，然后为每个区域设置发布不同的项目。 本过程演示如何使用宏，用“en”区域设置发布解决方案中第一个项目。 如果希望使用“en”之外的其他区域设置来尝试此过程，请务必将宏中的 `localeString` 设置为与所用区域设置（例如，“de”或“de-DE”）相匹配的值。  
@@ -164,7 +165,7 @@ ms.lasthandoff: 10/27/2017
   
 7.  查看 C:\Inetpub\wwwroot\PublishLocales\en。 除了已本地化的资源 DLL 外，你还应该看到已安装的文件，例如，清单、setup.exe 和发布网页文件。 （默认情况下，ClickOnce 会为 EXE 和 DLL 追加 .deploy 扩展名；完成部署后，可以移除此扩展名。）  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [宏开发环境](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
  [宏资源管理器窗口](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   

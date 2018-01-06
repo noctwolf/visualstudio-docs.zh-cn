@@ -25,11 +25,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93cc2f53715fbc76f17d05f53a9fb90dae5f1185
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0aedd0f60464ed56bfeb8f6f2e3147680641ea6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-com-servers"></a>如何：调试 COM 服务器
 调试 COM 服务器应用程序会引起一系列不总是容易解决的独特问题。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  启动容器应用程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)   
  [如何： 调试 COM 客户端和服务器使用 RPC 调试](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [COM 服务器和容器调试](../debugger/com-server-and-container-debugging.md)   

@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 86dba79e6e8b7e3f3b2837e494cfeddd2692d0cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 39a64737c3e34b7e0c4d89824b22f169d60d4fd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>从命令行生成 ClickOnce 应用程序
 在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，你可以生成从命令行的项目，即使它们在集成的开发环境 (IDE) 中创建。 事实上，你可以重新生成与创建的项目[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]只有的另一台计算机上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安装。 这样您就可以重现使用自动化的过程生成，例如，在中心生成实验室或使用高级脚本编写超出范围的生成项目本身的技巧。  
@@ -167,7 +168,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |`SupportURL`|可选。 如果支持站点位于不同设置此 URL 选项`PublishURL`。 例如，你可以设置`SupportURL`公司的客户技术支持网站。|  
 |`UpdateURL`|可选。 设置此 URL 选项，则更新位置不同于时`InstallURL`。 例如，你可以设置`PublishURL`到一个 FTP 路径和一组`UpdateURL`到 Web URL。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   

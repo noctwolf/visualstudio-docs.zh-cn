@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4446921759c1b72dd75c31b52bab35d02b219942
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98b1e4a9db18490079dd443cb296481aed64376a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 用于确定程序可以停止在到达的执行过程中的某个特定点后的执行。  
@@ -50,13 +51,13 @@ public enum enum_CANSTOP_REASON {
 ## <a name="remarks"></a>备注  
  作为自变量传递[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)方法确认使用会话调试管理器 (SDM)，如果可以停止在达到该程序的入口点或之后单步执行函数或方法。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

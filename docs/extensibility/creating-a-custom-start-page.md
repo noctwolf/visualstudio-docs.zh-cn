@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9782e51688ae1ef4fda3ed52636de54149fa79e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f1ce8112adffabcee835d7adf598e73d327ca3b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-custom-start-page"></a>创建自定义起始页
 你可以按照本文档中的步骤来创建自定义起始页。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
 -   在测试起始页并发现前者更稳定后，使用**自定义起始页**选项**选项**对话框中，可以选择作为 Visual Studio 的主实例中的开始页  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 将自定义 XAML 添加到开始页](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
  [将用户控件添加到开始页](../extensibility/adding-user-control-to-the-start-page.md)   
  [将 Visual Studio 命令添加到起始页](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   

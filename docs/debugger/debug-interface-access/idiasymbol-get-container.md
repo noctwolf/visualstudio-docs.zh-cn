@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2a9dbd550247f432a7329bfbba224220ea6ea5a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2faa86e869e0b0d759ad46750b827d90005b88ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 此函数可检索为表示此符号父/容器符号的指针。  
@@ -41,12 +42,12 @@ HRESULT get_container(
 > [!NOTE]
 >  返回值为 S_FALSE 表示属性不是可用于符号。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
   
-|要求|描述|  
+|需求|描述|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

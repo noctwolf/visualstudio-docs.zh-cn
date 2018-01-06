@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d7efe7c8c4d917e6dd1868625ca1d80996176acb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 066a8a3cf9fb4f9c39d36cfa4ea386e06cbba831
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 通知的调试引擎 (DE) 指定的程序已异常终止，DE 应清除对该程序的所有引用和发送程序销毁事件。  
@@ -49,7 +50,7 @@ int DestroyProgram(
   
  未实现此方法 (返回`E_NOTIMPL`) 如果 DE 在与正在调试的程序相同的进程中运行。 仅当在与 SDM 相同的进程中运行 DE 实现此方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

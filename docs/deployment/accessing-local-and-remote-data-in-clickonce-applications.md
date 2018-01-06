@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 5474a2101a96576d7043c10cc3fd35fad3756653
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d22180b0e48a875eaef3ab9e3b8ceac35b1fa6ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 应用程序中访问本地数据和远程数据
 大多数应用程序使用或生成数据。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 为你提供多种选项用于在本地及远程读取和写入数据。  
@@ -110,5 +111,5 @@ ms.lasthandoff: 10/27/2017
   
  大多数情况下，你将不必直接访问数据，但将改为通过写入 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 的 Web 服务器应用程序或 XML Web 服务访问。 如果你的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序是从 Web 服务器部署的，则以这种方式访问数据库通常是最好的方法。 你可以使用部分信任的权限访问服务器，而无需提升你的应用程序权限。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

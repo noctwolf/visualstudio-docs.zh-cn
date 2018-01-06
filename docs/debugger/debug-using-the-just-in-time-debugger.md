@@ -15,11 +15,12 @@ caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 470e4c728d246570e6f7e38ff3b71772de5b05fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4bcdd28247b767321d3d5fed9681082538ba2b12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>调试使用 Visual Studio 中的实时调试器
 在实时调试 Visual Studio 会自动启动的应用程序正在运行 Visual Studio 外部中发生异常或崩溃时。 这使您要测试你的应用程序，如果未运行 Visual Studio，并开始使用 Visual Studio 进行调试时出现问题。
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  在**启用实时调试这些代码类型的**框中，选择或清除相关的程序类型：**托管**，**本机**，或**脚本**.    
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
 即便在你的计算机中不再安装有 Visual Studio，仍可启用实时调试。 如果没有安装 Visual Studio，您不能禁用实时调试从 Visual Studio**选项**对话框。 对于这种情况，你可以通过编辑 Windows 注册表来禁用实时调试。  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
      启用在实时调试的 Windows 窗体应用程序，必须执行以下附加步骤：  
   
-2.  设置`jitDebugging`值赋给`true`中`system.windows.form`一部分 machine.config 或*\<应用程序名称 >*。.exe.config 文件：  
+2.  设置`jitDebugging`值赋给`true`中`system.windows.form`一部分 machine.config 或*\<应用程序名称 >*.exe.config 文件：  
   
     ```  
     <configuration>  
@@ -96,7 +97,7 @@ ms.lasthandoff: 10/31/2017
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];   
     ```  
   
-     有关更多信息，请参见<xref:System.Diagnostics.DebuggableAttribute>。  
+     有关详细信息，请参阅<xref:System.Diagnostics.DebuggableAttribute>。  
   
 ## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">使用在实时调试  
  本部分演示一个可执行文件引发异常时，会发生什么情况。  
@@ -176,7 +177,7 @@ static void Main(string[] args)
   
      若要解决此问题，请使用安装盘重新安装或修复 Visual Studio 安装。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  
  [在实时，调试，选项对话框](../debugger/just-in-time-debugging-options-dialog-box.md)   

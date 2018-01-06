@@ -20,11 +20,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aeaba831bb82731ae7d3e62cbff5190bb474357
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a67432767aaab23a96fbd4a9ca88e9735064c1df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-step-into-wcf-services"></a>如何：单步执行 WCF 服务
 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，可以单步执行 WCF 服务。 如果 WCF 服务与客户端位于同一 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中，则可以命中 WCF 服务内部的断点。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  运行到断点，然后开始单步执行。 调试程序将自动在服务中单步执行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 WCF 服务](../debugger/debugging-wcf-services.md)   
  [WCF 调试的限制](../debugger/limitations-on-wcf-debugging.md)   
  [如何：调试自托管的 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

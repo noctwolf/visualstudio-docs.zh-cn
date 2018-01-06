@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e7f1b3d7bcc7203755383201d24269e579919e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8e47ca228d39e97e8375f574b632c5c9582590d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef（调试接口访问 SDK）
 与符号`SymTagTypedef`标记引入其他类型的名称。  
@@ -58,5 +59,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  由于类、 指针或用户定义类型 (UDT)，可以表示 typedef，typedef 的符号将共享与这些其他类型的符号之一相同的属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [符号类型的类层次结构](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

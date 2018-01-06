@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9032fa397e8fb4cb443d0209853ba4cfe7a5e53f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5202d7468ecefe9de1754f592eef826f0390b869
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 元素（Visual Studio 模板）
 指定有关程序集，该模板使用将该程序集的引用添加到项目的信息。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[引用](../extensibility/reference-element-visual-studio-templates.md)|指定向项目添加项时要添加的程序集引用。|  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
  此文本指定要向项目中添加项模板实例化时的程序集。 必须通过以下方式之一指定此程序集名称：  
   
--   作为完整的程序集名称。 例如：  
+-   作为完整的程序集名称。 例如:  
   
     ```  
     <Assembly>  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
     </Assembly>  
     ```  
   
--   为简单文本引用。 例如:   
+-   为简单文本引用。 例如:  
   
     ```  
     <Assembly> System </Assembly>  
@@ -97,6 +98,6 @@ ms.lasthandoff: 10/31/2017
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

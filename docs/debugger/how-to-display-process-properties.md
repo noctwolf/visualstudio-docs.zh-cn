@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b40c74776b61b38b9d56a0658361674241024b13
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e72af04ae243e3280878eaca6587461643df2841
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-process-properties"></a>如何：显示进程属性
 若要了解有关中列出的进程的详细信息[进程视图](../debugger/processes-view.md)，使用[过程属性对话框中](../debugger/process-properties-dialog-box.md)。  

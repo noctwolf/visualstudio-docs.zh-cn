@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bc985bf9fb55b67b5a332f007abe98c6718fbf2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa70e2a6019a97c248e6d4b411dacc222be59a1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-a-port-supplier"></a>实现端口供应商
 端口供应商提供对会话调试管理器 (SDM) 请求的端口。 端口供应商需要调试到非 DCOM 机时或当新设备需要支持时实现。 例如，若要提供了与移动电话的调试，则可能会实现提供端口连接到移动电话 （可能通过 IR 或单元格连接） 和枚举的进程和手机上运行的程序的端口供应商提供。  
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/31/2017
  [调试器概念](../../extensibility/debugger/debugger-concepts.md)  
  描述调试的主要体系结构概念。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 调试器可扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

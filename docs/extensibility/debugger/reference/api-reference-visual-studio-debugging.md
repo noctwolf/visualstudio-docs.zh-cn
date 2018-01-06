@@ -13,18 +13,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ead1571856fa04e10103fbf2274dc0e22295154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9f6e3110ca4988fcc12e547f3bcd82c1026f3aeb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 参考 （Visual Studio 调试）
 参考部分包括 API，显示的语法和用法的所有 API 元素的指南的概念性概述和多种类型的代码示例。 按类别按字母顺序列出的所有引用。  
   
  下表显示了常见`HRESULT`由方法返回的值。  
   
-|名称|描述|值|  
+|name|描述|“值”|  
 |----------|-----------------|-----------|  
 |S_OK|成功。|0x00000000|  
 |E_UNEXPECTED|意外的失败。|: 0x8000FFFF|  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  无效或`NULL`[out] 参数可能会导致崩溃 IDE。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [接口](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   

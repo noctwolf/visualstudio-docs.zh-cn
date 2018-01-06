@@ -23,11 +23,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 873b7dd10a2e39aa795626bc7d387df7017740d8
-ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
+ms.workload: multiple
+ms.openlocfilehash: 01e9b9ced1db8f41c8ad1fb6386eec0d6080dd99
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>调试准备：Windows 窗体应用程序
 Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试此类应用程序非常简单。 有关详细信息，请参阅[创建 Windows 应用程序项目](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
@@ -66,7 +67,7 @@ Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsp
   
 4.  调试使用中讨论的技术[调试器基础知识](../debugger/debugger-basics.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
  [C#、F#、和 Visual Basic 项目类型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [如何： 设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)   

@@ -6,23 +6,23 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.error.service_access_denied_oncallback
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 89ecf99d-66bf-4da0-a840-aa95b0be1702
 caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f1707f7956557cb8ce764f66431dbf963dcfb79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f4553bceb8757b49c6d21f4bbe85e47f90e5b4dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>错误: 目标计算机上的 Visual Studio 远程调试器服务无法重新连接到此计算机
 此错误表示“Visual Studio 远程调试器”服务正在运行，但是运行它的用户帐户在连接到正在从中进行调试的计算机时无法进行身份验证。  
@@ -33,9 +33,9 @@ ms.lasthandoff: 10/31/2017
 |-|-|-|-|  
 ||LocalSystem 帐户|域帐户|在双方计算机上具有相同用户名和密码的本地帐户|  
 |双方计算机处于同一个域中|是|是|是|  
-|双方计算机处于具有双向信任的域中|No|No|是|  
-|双方计算机中有一台或两台都处于工作组中|No|No|是|  
-|不同域中的计算机|No|No|是|  
+|双方计算机处于具有双向信任的域中|否|否|是|  
+|双方计算机中有一台或两台都处于工作组中|否|否|是|  
+|不同域中的计算机|否|否|是|  
   
  此外：  
   
@@ -75,6 +75,6 @@ ms.lasthandoff: 10/31/2017
   
 -   将“远程调试监视器”作为应用程序（而不是作为服务）运行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [远程调试](../debugger/remote-debugging.md)

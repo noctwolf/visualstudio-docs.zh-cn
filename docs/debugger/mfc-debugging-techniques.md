@@ -28,11 +28,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 274cd182fa3b9eab23c151a4143c935c24f68fea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 调试方法
 如果要调试 MFC 程序，这些调试技术可能会有用。  
@@ -144,7 +145,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 -   如果希望对内存诊断功能进行更精确的控制，可以通过设置 MFC 全局变量 [afxMemDF](http://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)的值，来有选择地打开和关闭单个内存诊断功能。 该变量可以具有下列值（由枚举类型 **afxMemDF**所指定）。  
   
-    |值|描述|  
+    |“值”|描述|  
     |-----------|-----------------|  
     |**allocMemDF**|打开诊断内存分配器（默认）。|  
     |**delayFreeMemDF**|在调用 `delete` 或 `free` 时延迟释放内存，直到程序退出。 这将使你的程序分配可能的最大内存量。|  
@@ -482,7 +483,7 @@ pMyPerson->Dump( afxDump );
   
  作为本主题中所描述技术的替换技术，可以使用外部生成文件为每个文件定义单个选项。 在这种情况下，若要链接 MFC 调试库，必须为每个模块都定义 [_DEBUG](/cpp/c-runtime-library/debug) 标志。 如果想使用 MFC 发布库，必须定义了 NDEBUG。 有关编写外部生成文件的更多信息，请参见 [NMAKE 参考](/cpp/build/running-nmake)。  
   
- [主题内容](#BKMK_In_this_topic)  
+ [在本主题中](#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 Visual C++](../debugger/debugging-native-code.md)

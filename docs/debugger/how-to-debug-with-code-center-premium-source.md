@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ef67cc92119aaa875d1babb43c254e72779d965
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d7405deed95f14314215b869a02bcf8a1afddea2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>如何：调试 Code Center Premium 源代码
 使用 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 调试器可以调试来自 Microsoft MSDN Code Center Premium 的安全共享源。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
   
      若在完成此过程之后使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试源代码遇到困难，请检查缓存位置以确认是否有之前缓存过的过时符号文件。 删除过时的符号文件。  
   
-11. 单击“确定”。  
+11. 单击 **“确定”**。  
   
 12. 重新启动 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 以确保各项设置得以保留。  
   
@@ -139,7 +140,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  浏览找到所需的源代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
  [调试器安全](../debugger/debugger-security.md)   
  [Code Center Premium](http://www.microsoft.com/resources/sharedsource/ccp.mspx)

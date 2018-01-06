@@ -18,11 +18,12 @@ caps.latest.revision: "106"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0447f7ac0836f0f23334d8759d294437191aa6a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-saved-intellitrace-data"></a>使用保存的 IntelliTrace 数据
 从 IntelliTrace 日志 (.iTrace) 文件开始调试时，转到应用程序执行中的特定点。 此文件可包含应用程序运行时 IntelliTrace 记录下的性能事件、异常、线程、测试步骤、模块和其他系统信息。  
@@ -161,7 +162,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  从源复制 SharePoint 相关 ID。  
   
-     例如:   
+     例如:  
   
      ![IntelliTrace &#45;SharePoint 错误 &#45;相关 ID](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
   

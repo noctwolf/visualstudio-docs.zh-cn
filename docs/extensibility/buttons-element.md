@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b2933f82c4088735f4203d947bad66c71aeb3e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b729c71836e0a57f18c05cf6435581419bdbb92e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="buttons-element"></a>按钮元素
 组[按钮](../extensibility/button-element.md)元素，后者表示单个命令。  
@@ -69,6 +70,6 @@ ms.lasthandoff: 10/31/2017
 </Buttons>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

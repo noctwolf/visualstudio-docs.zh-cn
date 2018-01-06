@@ -20,11 +20,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47ed06179d09996ac1b35cd3d2dd5d6cb99296d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d5075e55f1db35f7a588094a7c398c9d4c25483c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visualizer-security-considerations"></a>可视化工具安全注意事项
 编写可视化工具伴有可能的安全威胁。 目前尚未发现利用这些潜在威胁的攻击，但是开发人员应该密切关注此类攻击并采取此处所描述的相应安全预防措施，以防止在将来受到攻击。  
@@ -36,11 +37,11 @@ ms.lasthandoff: 10/31/2017
   
  当调试对象不完全受信任时，在完全信任的情况下运行调试对象端代码会有问题。 如果可视化工具尝试将一个部分信任的程序集从调试对象加载到调试器中，则 Visual Studio 将终止此可视化工具。  
   
- 然而，微小的漏洞仍然存在。 调试对象端可以与从另一个源（不是调试对象）加载的调试器端相关联。 调试对象端然后可以通知受信任的调试器端代表它执行操作。 例如，如果受信任的调试器端类公开一个“删除此文件”机制，则当用户调用其可视化工具时，部分信任的调试对象就会调用此机制。  
+ 然而，微小的漏洞仍然存在。 调试对象端可以与从另一个源（不是调试对象）加载的调试器端相关联。 调试对象端然后可以通知受信任的调试器端代表它执行操作。 例如，如果受信任的调试端类公开一个“删除此文件”机制，则当用户调用其可视化工具时，部分信任的调试对象就会调用此机制。  
   
  若要减轻此漏洞的影响，请注意可视化工具公开的接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [可视化工具体系结构](../debugger/visualizer-architecture.md)   
  [如何： 编写可视化工具](../debugger/how-to-write-a-visualizer.md)   
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)   

@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 614133a72e05f8bd412216d466bbfc90a197ff07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f3377ade8cc4301e1d8a5be19c5d828755934ce9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
@@ -52,14 +53,14 @@ IDebugBinder : IUnknown
 ## <a name="remarks"></a>备注  
  此接口返回对象使用的表达式计算器分析树。 表达式计算器分析表达式使用符号提供程序将在表达式中的符号转换为的实例[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)，用于描述根据其类型和位置的源代码中的每个符号。 [绑定](../../../extensibility/debugger/reference/idebugbinder-bind.md)方法将`IDebugField`对象添加到[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)连接或绑定符号的对象类型转换为内存中的实际值。 这些`IDebugObject`对象然后存储在以供以后计算分析树。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： ee.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [表达式评估接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)   
  [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   

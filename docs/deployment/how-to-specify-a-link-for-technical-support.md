@@ -24,11 +24,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1c7a60993666ac485f72099fef9df930aacdaa25
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3953148355321f4ed17d5d4f539c6f31c1a5872c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>如何：指定技术支持链接
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，**支持 URL**属性标识网页或文件共享，其中用户可以转至以获取有关应用程序的信息。 此属性是可选的;如果提供，将应用程序的条目中显示该 URL**添加或删除程序**对话框。  
@@ -47,6 +48,6 @@ ms.lasthandoff: 10/27/2017
   
 5.  在**支持 URL**字段中，输入网站、 Web 页上或 UNC 共享的完全限定的路径。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

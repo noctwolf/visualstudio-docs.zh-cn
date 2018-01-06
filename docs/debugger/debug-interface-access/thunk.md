@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 514a0d7cea56158cbe15d59d2a809968b3c86979
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2dc847378510a6c7b0c07834a7658874f94b764e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="thunk"></a>Thunk
 每个`thunk`由标识`SymTagThunk`标记。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|虚拟表向此转换 （thunk） （仅在 DIA SDK V8.0 或更高版本） 中的偏移量。|  
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`如果转换 （thunk） 标记为易失性 （仅在 DIA SDK V8.0 或更高版本）。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [符号类型的词法层次结构](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)   
  [THUNK_ORDINAL 枚举](../../debugger/debug-interface-access/thunk-ordinal.md)

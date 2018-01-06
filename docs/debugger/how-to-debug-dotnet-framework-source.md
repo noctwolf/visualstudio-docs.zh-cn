@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9da2cd7b8a99d750692a69be406c9c8f82c461d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 46c030a3c81f4b49fc66a06ee55d797dfe9119dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-net-framework-source"></a>如何：调试 .NET Framework 源代码
 最新版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供的新功能[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]调试。 若要调试[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]源，你必须有权调试代码的符号。 你还需要启用单步执行[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]源。  
@@ -37,9 +38,9 @@ ms.lasthandoff: 10/31/2017
   
 3.  在**常规**框中，设置**启用.NET Framework**源代码单步执行。  
   
-    1.  如果你先前启用了“仅我的代码”，则会出现一个警告对话框，提示你“仅我的代码”现在已禁用。 单击“确定”。  
+    1.  如果你先前启用了“仅我的代码”，则会出现一个警告对话框，提示你“仅我的代码”现在已禁用。 单击 **“确定”**。  
   
-    2.  如果您没有设置符号缓存位置，则会出现另一个警告对话框，提示您默认符号缓存位置现在已设置。 单击“确定”。  
+    2.  如果您没有设置符号缓存位置，则会出现另一个警告对话框，提示您默认符号缓存位置现在已设置。 单击 **“确定”**。  
   
 4.  下**调试**类别中，单击**符号**。  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
      如果选择不立即下载符号，则这些符号将在您下次开始调试程序时自动下载。  
   
-7.  单击**确定**关闭**选项**对话框。  
+7.  单击“确定”关闭“选项”对话框 。  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>使用“模块”窗口加载 Framework 符号  
   
@@ -71,6 +72,6 @@ ms.lasthandoff: 10/31/2017
   
 2.  指向**负载符号从**单击**Microsoft 符号服务器**或**符号路径**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
  [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

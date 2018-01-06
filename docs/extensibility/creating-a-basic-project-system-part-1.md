@@ -16,11 +16,12 @@ caps.latest.revision: "47"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e61c0d681dac52e85c3854325ee20ada29d74d4c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1e0c2e41baa6f1c97a272e7c9655f4f837552cac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>创建基本项目系统中，第 1 部分
 在 Visual Studio 中，项目是开发人员使用可组织源代码文件和其他资产的容器。 项目显示为子级中的解决方案的**解决方案资源管理器**。 项目可以组织、 生成、 调试和部署源代码和创建对 Web 服务、 数据库和其他资源的引用。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 -   实现基本的模板参数替换。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
  你还必须下载的源代码[项目的托管包框架](http://mpfproj12.codeplex.com/)。 将文件提取到你将要创建的解决方案可以访问的位置。  

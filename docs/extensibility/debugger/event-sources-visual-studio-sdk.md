@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dcd2b8457854817f84272420a42872a1b947e6c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd6acee81b2202500c9d84f5920cd4f1019a3b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-sources-visual-studio-sdk"></a>事件源 (Visual Studio SDK)
 有两个源的事件： 调试管理器 (SDM) 进行的调试引擎 (DE) 和会话。 从 DE 发送的事件有一个非 NULL 引擎，而从 SDM 发送的事件有一个 NULL 引擎。  
@@ -74,5 +75,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发送事件](../../extensibility/debugger/sending-events.md)

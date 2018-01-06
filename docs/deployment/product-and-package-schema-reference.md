@@ -29,18 +29,19 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ad3f3df67fe2545aadc8da71b89e600895cea780
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 149dd62b38bdcb0863d30f4280b35950361f58cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="product-and-package-schema-reference"></a>产品和包架构引用
 A*产品文件*是描述所有所需的外部依赖关系的 XML 清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 外部依赖关系的示例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft 数据访问组件 (MDAC)。 包文件类似于产品文件，但用于安装依赖于区域性的组件的依赖项，如本地化的程序集、 许可协议和文档。  
   
  产品和包文件包含其中任何顶级`Product`或`Package`元素，其中每个包含下列元素。  
   
-|元素|说明|特性|  
+|元素|描述|特性|  
 |-------------|-----------------|----------------|  
 |[\<产品 > 元素](../deployment/product-element-bootstrapper.md)|所需产品文件的顶级元素。|无|  
 |[\<包 > 元素](../deployment/package-element-bootstrapper.md)|所需的包文件的顶级元素。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
@@ -160,6 +161,6 @@ A*产品文件*是描述所有所需的外部依赖关系的 XML 清单[!INCLUDE
 </Product>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

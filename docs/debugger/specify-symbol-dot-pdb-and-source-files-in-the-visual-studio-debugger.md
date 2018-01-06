@@ -31,11 +31,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84dbee96880d651ab17efd1b19dbb2589f87f9f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cbef364c316f51be8996e79f63a493b51e619f1e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件
 程序数据库 (.pdb) 文件，也称为符号文件，将在类、 方法和其他代码，以便在你的项目的已编译可执行文件中使用的标识符的源代码中创建的标识符映射。 .pdb 文件还可以将源代码中的语句映射到可执行文件中的执行指令。 调试器使用此信息来确定两个关键信息：
@@ -252,7 +253,7 @@ ms.lasthandoff: 10/31/2017
   
      请注意， **“允许源服务器中的部分信任程序集(仅限托管)”** 和 **“始终运行不受信任的源服务器命令并且不再提示”** 都会增大上述安全风险。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [了解符号文件和 Visual Studio 符号设置](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
 [Visual Studio 2012 和 2013 中的 .NET 远程符号加载更改](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)

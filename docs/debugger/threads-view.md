@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cc9abe486055d5bb9794021e28b786b9afe9b54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f98170313b72394b5b295769a77d8770cd1cb0e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view"></a>线程视图
 线程视图是与你的系统上的 windows 相关联的所有线程的平面列表。 显示的线程 ID 和每个线程的模块名称。 流程不包括在内，但你可以轻松地找到拥有选定的线程的进程。  

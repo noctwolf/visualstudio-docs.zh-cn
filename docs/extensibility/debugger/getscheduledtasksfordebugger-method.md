@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f3099cdbcc8c49c7b6cb5064efad240ea32dea4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1c27bd57684fc0a4de0bf56bcc8db9a5561f7d1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger 方法
 检索所有计划任务的数组。  
@@ -40,5 +41,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>备注  
  此方法不是线程安全，不应与其他实例的同时使用<xref:System.Threading.Tasks.TaskScheduler>它应从调用调试器仅在调试器已挂起所有其他线程时。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Taskscheduler 计划的类](../../extensibility/debugger/taskscheduler-class-internal-members.md)

@@ -25,11 +25,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 60643d872594e9e868243adda33ae21a82dc7198
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e1b5b9697445b2d8cc35a73841526db0bd69b5f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-clickonce-applications"></a>本地化 ClickOnce 应用程序
 本地化是使你的应用程序适用于特定区域性的过程。 此过程涉及使用正确的日期和货币格式、调整窗体上控件的大小以及根据需要从右到左镜像处理控件，从而将用户界面 (UI) 文本转换为特定于区域的语言。  
@@ -81,7 +82,7 @@ ms.lasthandoff: 10/27/2017
   
 -   可在应用程序中以编程方式设置 <xref:System.Threading.Thread.CurrentUICulture%2A> 属性。 （必须在调用 <xref:System.Windows.Forms.Application.Run%2A> 方法前设置该属性。）  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [\<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)   
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [全球化 Windows 窗体](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

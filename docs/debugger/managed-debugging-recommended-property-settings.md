@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f763decca7a80a7a7fc5bb86f94a76cd3eb2679c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: ebbd6bf87270bba70dc80cd7ff652c147d3a4849
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>托管调试：推荐的属性设置
 某些属性应该在所有托管调试方案中采用相同的设置。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 |“定义 TRACE 常量”|C# 和 F#：将复选框设置为已选中。 这使您的应用程序能够使用 Trace 类。|  
 |**优化代码**|C#、F# 和 Visual Basic：设置为 false。 优化代码更难调试，因为生成的指令与源代码并不直接对应。 如果发现程序具有只在优化代码中出现的 bug，则可以打开此设置，但应记住中显示的代码**反汇编**窗口从可能与在代码中看到的内容不匹配的优化源生成编辑器。 若要调试优化代码，必须关闭“仅我的代码”。 (请参阅[限制单步执行仅我的代码](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code))。<br /><br /> 有关详细信息，请参阅[C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)或[Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)。|  
 |“输出路径”|设置为 bin\Debug\\。|  
-|**高级的编译选项**|仅 Visual Basic。 单击**高级**设置下表中所述的高级的属性。|  
+|**高级编译选项**|仅 Visual Basic。 单击**高级**设置下表中所述的高级的属性。|  
   
 ### <a name="advanced-compiler-settings-dialog-box"></a>“高级编译器设置”对话框  
   
@@ -52,6 +53,6 @@ ms.lasthandoff: 10/31/2017
 |“定义 DEBUG 常量”|选择此复选框可定义 `DEBUG` 常数，该常数使应用程序可以使用 <xref:System.Diagnostics.Debug> 类。|  
 |“定义 TRACE 常量”|选择此复选框可定义 `TRACE` 常数，该常数使应用程序可以使用 <xref:System.Diagnostics.Trace> 类。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
  [C#, F#, and Visual Basic Project Types](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)（C#、F# 和 Visual Basic 项目类型）

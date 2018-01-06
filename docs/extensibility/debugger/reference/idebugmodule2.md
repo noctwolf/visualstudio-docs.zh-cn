@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd8600c592993d24d07add88425e534d5ae99867
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4ffa4044e6490f8de8228541787b7bf8ab80285a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 此接口表示模块-，即一个可执行程序的单元 — （如 DLL)。  
@@ -50,14 +51,14 @@ IDebugModule2 : IUnknown
 ## <a name="remarks"></a>备注  
  模块信息可以显示在**模块**在 IDE 的窗口。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
  [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)   

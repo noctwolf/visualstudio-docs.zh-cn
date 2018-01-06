@@ -27,11 +27,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 932ccf7bdbea8fa68d0c2883d0ae8fd77eedf5bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 11d29d2d8a5ebf4774f3b71ea72a1dd9bc58cbd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-an-activex-control"></a>如何：调试 ActiveX 控件
 > [!NOTE]
@@ -53,11 +54,11 @@ ms.lasthandoff: 10/31/2017
   
 6.  如果指定 Internet Explorer 作为容器，且正在使用 Active Desktop，键入`/new`中**命令参数**框。  
   
-7.  单击“确定”。  
+7.  单击 **“确定”**。  
   
      如果不指定某个容器中的**项目属性页**对话框中，你可以指定容器开始调试时。 当你选择执行命令来启动调试，[调试会话对话框中的可执行文件](../debugger/executable-for-debugging-session-dialog-box.md)显示。 在对话框中指定容器的路径名。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ActiveX 控件](/cpp/mfc/activex-controls)   
  [使用测试容器测试属性和事件](/cpp/mfc/testing-properties-and-events-with-test-container)   
  [调试 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)   

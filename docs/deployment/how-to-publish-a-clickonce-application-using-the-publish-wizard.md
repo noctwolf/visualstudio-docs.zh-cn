@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f7921ccebf9872f8a1f8ed79e6ee8da05d04e320
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d314763f8ff4dc170148cca166e3ecdff051ae24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>如何：使用发布向导发布 ClickOnce 应用程序
 ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可移动媒体，才能供用户使用。 你可以通过使用发布向导中; 发布应用程序与发布相关的其他属性都位于**发布**页**项目设计器**。 有关详细信息，请参阅[发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)。  
@@ -100,7 +101,7 @@ ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可
     > [!NOTE]
     >  完成发布后，必须使用 CD 刻录机或 DVD 刻录机从步骤 3 中指定的位置将文件复制到 CD-ROM 或 DVD-ROM 媒体。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
  [使用 ClickOnce 部署 Office 解决方案](/office-dev/office-dev/deploying-an-office-solution-by-using-clickonce)

@@ -20,11 +20,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: b03083ce6e9fe7fcebdad0b82373bee41221bbb5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a7ddfdb0518a8e3154d966fdea884bf7f2e3ea37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>How to: Include a Data File in a ClickOnce Application
 每个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]你安装的应用程序分配应用程序可以在其中管理其自己的数据的目标计算机的本地磁盘上的数据目录。 数据文件可以包含任何类型的文件： 文本文件、 XML 文件或甚至 Microsoft Access 数据库 (.mdb) 文件。 下面的过程演示如何将添加到任何类型的数据文件你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
@@ -87,5 +88,5 @@ ms.lasthandoff: 10/27/2017
   
      因为应用程序清单其哈希已更改，必须重新登录你的部署清单。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 ClickOnce 应用程序中访问本地数据和远程数据](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

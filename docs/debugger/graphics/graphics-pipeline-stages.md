@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aabfa9551b591b87631100326e328db0511a3ca4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 393661fba27341ec858aa5c099ea9d131e42273a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-pipeline-stages"></a>图形管道阶段
 “图形管道阶段”窗口可帮助了解 Direct3D 图形管道的每个阶段如何转换各个绘图调用。  
@@ -125,6 +126,6 @@ ms.lasthandoff: 10/31/2017
   
  ![顶点着色器阶段结果预览](media/gfx_diag_vertex_shader_preview.png)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 因顶点着色而缺少对象](walkthrough-missing-objects-due-to-vertex-shading.md)   
  [演练：调试因着色引起的呈现错误](walkthrough-debugging-rendering-errors-due-to-shading.md)

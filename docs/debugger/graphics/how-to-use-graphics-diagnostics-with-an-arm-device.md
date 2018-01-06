@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60898b7ea37c7e732453fd03f9c557b2494f66c5
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: eedc7e454c6523c1ab29e4ae685b14954c8e6d98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>如何：使用图形诊断和 ARM 设备
 图形诊断支持在运行 Windows RT 8.1 或 Windows Phone 8.1 的基于 ARM 的设备上远程调试 Direct3D 应用。 你可以在 Direct3D 应用在设备上运行时从该应用中捕获图形信息，或将设备用作之前捕捉到的图形信息的播放计算机。  
@@ -45,6 +46,6 @@ ms.lasthandoff: 11/11/2017
   
 3.  在菜单上，选择**调试**，**图形**，**启动诊断**。 （键盘：Alt+F5）  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在远程计算机上运行的 UWP 应用](../run-windows-store-apps-on-a-remote-machine.md)   
  [如何：更改图形诊断播放机](how-to-change-the-graphics-diagnostics-playback-machine.md)

@@ -24,11 +24,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c72de947262cd87e4920d87c2d4d54664e02cc0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c53f5404eb127f2f5eb9ec844024beafaad22e86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中查看反汇编代码
 仅当启用了地址级调试后提供了此功能**选项**对话框中，**调试**节点。 但对于脚本或 SQL 调试是不可用的。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
  汇编语言代码在很大程度上依赖处理器的寄存器（对托管代码而言，依赖公共语言运行时寄存器），您将发现协同使用“反汇编”窗口和“寄存器”窗口将很有用，可以允许您检查寄存器内容。  
   
- 您很可能愿意使用汇编语言，而从来不会愿意或需要查看原始的、数字形式的机器代码指令。 不过，如果愿意的话，可以利用“内存”窗口或从“反汇编”窗口的快捷菜单中选取“代码字节”来查看。  
+ 你很可能愿意使用汇编语言，而从来不会愿意或需要查看原始的、数字形式的机器代码指令。 不过，如果愿意的话，可以利用“内存”窗口或从“反汇编”窗口的快捷菜单中选取“代码字节”来查看。  
   
 > [!NOTE]
 >  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
@@ -70,6 +71,6 @@ ms.lasthandoff: 10/31/2017
   
      有关详细信息，请参阅[分页向上或在内存中的向下](../debugger/how-to-page-up-or-down-in-memory.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在调试器中查看数据](../debugger/viewing-data-in-the-debugger.md)   
  [如何：使用“寄存器”窗口](../debugger/how-to-use-the-registers-window.md)

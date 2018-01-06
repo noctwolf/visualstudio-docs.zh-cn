@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4f1a906f545dcdbaefca7f5a38824a1f3259c97
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6fe68f25748df171ec6695554903b37854e7d8c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandtable-element"></a>CommandTable 元素
 CommandTable 是.vsct 文件的根元素。 这是定义的实际布局和 VSPackage 提供给 IDE 的命令的类型的文件。 命令可能包括菜单项、 菜单、 工具栏和组合框。 有关详细信息，请参阅 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
@@ -48,7 +49,7 @@ CommandTable 是.vsct 文件的根元素。 这是定义的实际布局和 VSPac
   
 |特性|描述|  
 |---------------|-----------------|  
-|xmlns|必需。 XML 命名空间：<br /><br /> xmlns ="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns:xs ="http://www.w3.org/2001/XMLSchema"|  
+|xmlns|必须的。 XML 命名空间：<br /><br /> xmlns ="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns:xs ="http://www.w3.org/2001/XMLSchema"|  
 |语言|可选。 Language 特性可用于指定的默认语言的所有\<字符串 > 命令表中的元素。  如果未指定语言，则将使用当前进程的语言：<br /><br /> 语言 ="en-我们"|  
   
 ### <a name="child-elements"></a>子元素  
@@ -71,5 +72,5 @@ CommandTable 是.vsct 文件的根元素。 这是定义的实际布局和 VSPac
 |-------------|-----------------|  
 |无||  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 469024d48b1c145210aa518f10647d04315a0471
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5281d53f213d2cb09f470484ddca2fbaa8cb4601
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;包&gt;元素 （引导程序）
 `Package`元素是在包文件的顶级 XML 元素。  
@@ -145,10 +146,10 @@ ms.lasthandoff: 10/27/2017
 ## <a name="elements-and-attributes"></a>元素和属性  
  `Package`元素是必需的。 它具有以下属性。  
   
-|特性|说明|  
+|特性|描述|  
 |---------------|-----------------|  
-|`Culture`|必需。 定义此包，确定要使用的语言的区域性。 此属性是一个项`Strings`元素，它在安装过程中列出的产品名称和错误消息的特定于区域性的字符串。|  
-|`Name`|必需。 如向开发人员工具中显示包的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 此属性是一个项`Strings`元素，它应包含`String`具有元素`Name`和`Culture`属性设置为匹配`Name`和`Culture`属性`Package`。|  
+|`Culture`|必须的。 定义此包，确定要使用的语言的区域性。 此属性是一个项`Strings`元素，它在安装过程中列出的产品名称和错误消息的特定于区域性的字符串。|  
+|`Name`|必须的。 如向开发人员工具中显示包的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 此属性是一个项`Strings`元素，它应包含`String`具有元素`Name`和`Culture`属性设置为匹配`Name`和`Culture`属性`Package`。|  
 |`LicenseAgreement`|可选。 在分发包，其中包含最终用户许可协议 (EULA) 中指定的文件的名称。  此文件可以是纯文本 (.txt) 或丰富文本格式。 (.rtf)|  
   
 ## <a name="example"></a>示例  
@@ -189,5 +190,5 @@ ms.lasthandoff: 10/27/2017
 </Package>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

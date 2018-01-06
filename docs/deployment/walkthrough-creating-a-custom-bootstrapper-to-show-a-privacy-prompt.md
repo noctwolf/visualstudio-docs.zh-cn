@@ -23,18 +23,19 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f84abe8354f1affc566cc05d119edc4cbc030712
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 97b5ba379eb715c63e5432b22999e2c4f12bf50d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>演练：创建自定义引导程序以显示隐私提示
 你可以配置自动更新时使用较新的文件版本和程序集版本的程序集可用的 ClickOnce 应用程序。 若要确保你的客户同意此行为，可以向其显示隐私提示。 然后，他们可以选择是否用于授予对应用程序的自动更新权限。 如果应用程序不允许自动更新，它不安装。  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   Visual Studio 2010。  
@@ -246,7 +247,7 @@ ms.lasthandoff: 10/27/2017
     > [!NOTE]
     >  你可能需要关闭并重新打开 Visual Studio 以查看更新的同意对话框的系统必备组件对话框中。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
 ## <a name="creating-and-testing-the-setup-program"></a>创建和测试安装程序  
  作为必备组件设置更新同意应用程序后，可以为你的应用程序中生成的安装程序和引导程序。  
@@ -301,7 +302,7 @@ ms.lasthandoff: 10/27/2017
   
 8.  如果出现安装应用程序对话框中，单击**安装**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [应用程序部署必备](../deployment/application-deployment-prerequisites.md)   
  [创建引导程序包](../deployment/creating-bootstrapper-packages.md)   
  [如何： 创建产品清单](../deployment/how-to-create-a-product-manifest.md)   

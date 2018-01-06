@@ -19,24 +19,25 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ef1451626cf980fbd6f096fa5dc92946edebd710
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a7df31b2d76639ec0eedc353e857fc1c0c8df39b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-application-manifest"></a>ndptecclick
 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单是一个 XML 文件，描述的应用程序使用部署[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单具有以下元素和属性。  
   
-|元素|说明|特性|  
+|元素|描述|特性|  
 |-------------|-----------------|----------------|  
-|[\<程序集 > 元素](../deployment/assembly-element-clickonce-application.md)|必需。 顶级元素。|`manifestVersion`|  
-|[\<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-application.md)|必需。 标识的主程序集[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[\<程序集 > 元素](../deployment/assembly-element-clickonce-application.md)|必须的。 顶级元素。|`manifestVersion`|  
+|[\<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-application.md)|必须的。 标识的主程序集[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
 |[\<trustInfo > 元素](../deployment/trustinfo-element-clickonce-application.md)|标识应用程序安全性要求。|无|  
-|[\<入口点 > 元素](../deployment/entrypoint-element-clickonce-application.md)|必需。 标识应用程序代码入口点。|`name`|  
-|[\<依赖项 > 元素](../deployment/dependency-element-clickonce-application.md)|必需。 标识应用程序运行所需的每个依赖项。 （可选）标识需要进行预安装的程序集。|无|  
+|[\<入口点 > 元素](../deployment/entrypoint-element-clickonce-application.md)|必须的。 标识应用程序代码入口点。|`name`|  
+|[\<依赖项 > 元素](../deployment/dependency-element-clickonce-application.md)|必须的。 标识应用程序运行所需的每个依赖项。 （可选）标识需要进行预安装的程序集。|无|  
 |[\<文件 > 元素](../deployment/file-element-clickonce-application.md)|可选。 标识应用程序使用每个非程序集文件。 可以包括与文件关联的组件对象模型 (COM) 隔离数据。|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
 |[\<fileAssociation > 元素](../deployment/fileassociation-element-clickonce-application.md)|可选。 标识要与应用程序相关联的文件扩展。|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
@@ -117,5 +118,5 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序�
 </Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

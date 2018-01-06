@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91bedf387fe86c2bf2fefb34e643e581a37c15bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 154a5891d9a11dd77c92f3f297a2e905d40f0327
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="notifying-the-port"></a>通知端口
 启动程序之后, 该端口必须要得到通知，，如下所示：  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
  了解 DE 的标识后, SDM 已准备好将其附加到该程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [启动程序](../../extensibility/debugger/launching-a-program.md)   
  [在启动后附加](../../extensibility/debugger/attaching-after-a-launch.md)   
  [调试任务](../../extensibility/debugger/debugging-tasks.md)

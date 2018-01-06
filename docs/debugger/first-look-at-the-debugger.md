@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68eb471f1db42b60114c2a14745ba4771b640c0d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a969a75a7c0cda89d040b8829fc8313974646c07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>要开始使用 Visual Studio 调试器
 Visual Studio 调试器在任何语言环境下都易于使用。 下面我们将介绍如何调试一个简单的 C# 程序，但你可以对 c + + 和 JavaScript 等其他语言中的代码应用相同的步骤。

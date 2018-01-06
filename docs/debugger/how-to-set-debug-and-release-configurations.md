@@ -34,11 +34,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dc53ebb4a61d6d4740effa7b17b4d0a26d46a68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc63ca48f7c35c382b668d9b7c794a4905b9dac9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>如何： 设置调试和发布 Visual Studio 中的配置
 Visual Studio 项目具有针对你的程序的单独发布和调试配置。 顾名思义，生成调试版本的目的是用于调试，而生成发布版本的目的是用于最终发布分发。  
@@ -112,11 +113,11 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
 
     在可执行文件或主输出文件所在的文件夹中创建的符号文件。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visua Studio 调试器中指定符号 (.pdb) 文件和源文件](../debugger/debugger-settings-and-preparation.md)  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
  [C + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [对于 C# 的项目设置调试配置](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [调试配置适用于 Visual Basic 项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)   
  [调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)

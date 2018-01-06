@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7231e0cc5c9d5946fabe504c16813ea47b24bdbc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 095fb9d8477a649c72204c018f28fe6636a3903f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg（构造函数）
 构造 `VsgDbg` 类的实例（准备或不准备图形诊断的应用内组件）来根据指定的布尔型参数主动捕获并记录图形信息（默认情况下）。  
@@ -38,7 +39,7 @@ VsgDbg(
   
  如果在 `bDefaultInit` 设置为 `false` 的情况下调用构造函数，则图形诊断的应用内组件可准备以通过调用 `Init` 函数主动捕获图形信息并在稍后记录该信息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VsgDbg:: ~ VsgDbg （析构函数）](vsgdbg-tilde-vsgdbg-destructor.md)   
  [Init](init.md)   
  [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)   

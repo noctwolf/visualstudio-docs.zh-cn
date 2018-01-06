@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eccd258476f82871732ef7b16f0282d2f945b9ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a2cbb124dcb2d2d7a0bbcba1bc57eb3c704dd770
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-package"></a>调试包
 调试包在 Visual Studio shell 中运行，并处理所有 UI。 它使用 Visual Studio 调试接口，并与会话调试管理器 (SDM) 进行通信。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
  由 vsdebug.dll 实现调试包。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [会话调试管理器](../../extensibility/debugger/session-debug-manager.md)   
  [堆栈帧](../../extensibility/debugger/stack-frames.md)   
  [线程](../../extensibility/debugger/threads.md)   

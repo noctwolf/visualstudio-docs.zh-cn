@@ -24,11 +24,12 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ea763f5bbe174a0c8e58a72737e25b8a5e9a7b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-dump-files-with-visual-studio"></a>使用 Visual Studio 使用转储文件
 使用或不带堆; 的转储文件创建转储文件;打开转储文件;查找二进制文件、 pdb，并为转储文件的源文件。
@@ -111,7 +112,7 @@ ms.lasthandoff: 10/31/2017
   
  如果 Visual Studio 找不到调试转储中的模块所需的文件，它将显示相应的页 (**未找到二进制**，**未找到符号**，或**未找到源**)。 这些页面提供了有关问题原因的详细信息，并提供了可帮助你识别文件的正确位置的操作链接。 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)

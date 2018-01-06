@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 2335c0279c8e7a23e1b514a8264651e73fedebfc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4a73d6cd0996f3f0e91b5a5381ee1b8ccd58a2a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：为 ClickOnce 部署中的各个系统必备项指定一个支持 URL
 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以为大量的系统必备组件，必须在客户端计算机上可测试[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]要运行应用程序。 其中包括所需的最低版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，以及操作系统，必须预先安装在全局程序集缓存 (GAC 中) 的任何程序集的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]但是，无法安装任何这些系统必备组件然后重试。如果未找到系统必备组件，它只需暂停安装并显示一个对话框，以解释安装失败的原因。  
@@ -84,7 +85,7 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以�
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  如果应用程序被标记为在部分信任中运行时，支持 URL 不被显示在对话框中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [\<compatibleFrameworks > 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md)   

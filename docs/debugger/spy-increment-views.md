@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c804ad5fc4921eefc5529094c45361c5fa115fb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cdf541fb064064322679db6f381576a741af75a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-views"></a>Spy++ 视图
 Spy + + 的 windows、 消息、 进程和线程可用的树视图显示您的计算机上。  
@@ -34,7 +35,7 @@ Spy + + 的 windows、 消息、 进程和线程可用的树视图显示您的�
  [进程视图](../debugger/processes-view.md)  
  显示活动进程的树视图。  
   
- [“线程”视图](../debugger/threads-view.md)  
+ [线程视图](../debugger/threads-view.md)  
  显示活动线程的树的视图。  
   
 ## <a name="related-sections"></a>相关章节  

@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 125cedb79be629e6024e90afef16b34e57d94571
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 49208b4ef01d3f1a8cc22abe6d9a926089febed1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
 此方法设置的注册表值，称为某个度量值。  
@@ -52,6 +53,6 @@ int SetMetric(
 ## <a name="remarks"></a>备注  
  指标是用于更改调试引擎的行为或播发受支持的功能的注册表值。 此方法可以将其转发到相应的窗体的调用[SDK 以便进行调试的帮助器](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)函数， `SetMetric`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [用于调试的 SDK 帮助程序](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

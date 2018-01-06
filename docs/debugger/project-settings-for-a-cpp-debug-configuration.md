@@ -115,11 +115,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e32547d66d1bf4de73b209ac0174598da9bbb731
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: cplusplus
+ms.openlocfilehash: cbb7e773c3c2cbb21ae4ac8d93f695601e8a3663
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C + + 调试配置的项目设置
 你可以更改中的 C 或 Visual c + + 调试配置的项目设置**属性页**对话框中中, 所述[如何： 设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示在何处可以找到中与调试器相关的设置**属性页**对话框。  
@@ -133,7 +134,7 @@ ms.lasthandoff: 11/11/2017
   
 ## <a name="configuration-properties-folder-debugging-category"></a>“配置属性”文件夹（“调试”类别）  
   
-|**设置**|**描述**|  
+|**设置**|**说明**|  
 |-----------------|---------------------|  
 |**要启动的调试器**|指定要运行的调试器，有以下选择：<br /><br /> -   **本地 Windows 调试器**<br />-   **远程 Windows 调试器**<br />-   **Web 浏览器调试器**<br />-   **Web 服务调试器**|  
 |**命令**（本地 Windows 调试器）|指定在本地计算机上用于启动要调试程序的命令。|  
@@ -179,7 +180,7 @@ ms.lasthandoff: 11/11/2017
 |**映射导出**([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|在映射文件中包含导出函数。 默认设置为“否”。 有关详细信息，请参阅[/MAPINFO （包含的信息，映射文件中）](/cpp/build/reference/mapinfo-include-information-in-mapfile)。|  
 |**可调试的程序集**([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|为链接器 /ASSEMBLYDEBUG 选项指定设置。 可能的值如下：<br /><br /> -   **未产生 debuggable 特性**。<br />-   **运行时跟踪和禁用优化 (/ ASSEMBLYDEBUG)**。 此设置为默认设置。<br />-   **任何运行时跟踪和启用 optimizations(/ASSEMBLYDEBUG:DISABLE)**。<br />-   **\<从父级或项目默认设置继承 >**。<br />-有关详细信息，请参阅[/ASSEMBLYDEBUG (添加 DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute)。|  
   
- 通过使用 Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings 接口，可以在“配置属性”文件夹（“调试”类别）中以编程方式更改这些设置。 有关更多信息，请参见<xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>。
+ 通过使用 Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings 接口，可以在“配置属性”文件夹（“调试”类别）中以编程方式更改这些设置。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>。
 
 ## <a name="other-project-settings"></a>其他项目设置
 
@@ -187,9 +188,9 @@ ms.lasthandoff: 11/11/2017
 
 若要调试 Dll 是外部到你的项目，请参阅[调试 DLL 项目](../debugger/debugging-dll-projects.md#vxtskdebuggingdllprojectsexternal)。 如果你需要调试自己的 DLL 项目，但不具有对项目调用应用程序的权限，请参阅[如何从 DLL 项目调试](../debugger/how-to-debug-from-a-dll-project.md)。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试本机代码](../debugger/debugging-native-code.md)   
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
- [创建和管理 Visual c + + 项目](/cpp/ide/creating-and-managing-visual-cpp-projects)   
+ [创建和管理 Visual C++ 项目](/cpp/ide/creating-and-managing-visual-cpp-projects)   
  [/ASSEMBLYDEBUG （添加 DebuggableAttribute）](/cpp/build/reference/assemblydebug-add-debuggableattribute)   
  [用于生成命令和属性的常用宏](/cpp/ide/common-macros-for-build-commands-and-properties)

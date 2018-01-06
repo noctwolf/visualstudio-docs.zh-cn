@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: a429fa17285018190530ca8058dfb4db7bcb47a2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 637f4517734d3a0bbf86c3894c4f0fc7dd5b5e8d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何：指定部署更新的其他位置
 你可以安装你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序最初从 CD 或文件共享，但应用程序必须检查在 Web 上找到的定期更新。 可以在你的部署清单中指定更新的备用位置，以便你的应用程序在其初始安装后可从 Web 自行更新。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/27/2017
   
  所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用的应用程序`<deploymentProvider>`应显式声明在其应用程序清单，所需的权限，因此，应用程序不会收到的不同计算机上的信任级别不同。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   

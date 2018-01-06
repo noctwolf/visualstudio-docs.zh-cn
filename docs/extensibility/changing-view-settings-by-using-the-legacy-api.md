@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe5bd3b149981ca8183e9311185ef5d6ed19e48f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc68bf5f8a0e61b80200cd5454b78bcdda78cdfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>通过使用旧版 API 更改视图设置
 通过用户时可以更改设置核心编辑器功能，如自动换行、 选定内容的边距和虚拟空间**选项**对话框。 但是，还有可能要更改这些设置以编程方式。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
  若要在一次删除所有更改的设置核心编辑器，将值指定为 VSEDITPROPID_ViewComposite_AllCodeWindowDefaults，为 vt`idprop`参数。 在此调用中，vt 是变体类型 VT_BOOL 和 vt.boolVal 是 VARIANT_TRUE。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在核心编辑器](../extensibility/inside-the-core-editor.md)   
  [通过使用旧版 API 访问文本视图](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
  [“选项”对话框](../ide/reference/options-dialog-box-visual-studio.md)

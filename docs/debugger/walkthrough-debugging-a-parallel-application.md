@@ -25,11 +25,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a532c2e238528ea32492aae22b001ab0955f8c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b05192c2d57c280cef970d4b8887ff7eadbb27b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>演练： 调试并行应用程序在 Visual Studio 中
 本演练演示如何使用**并行任务**和**并行堆栈**窗口调试并行应用程序。 这些 windows 帮助你了解和验证使用的代码的运行时行为[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[并发运行时](/cpp/parallel/concrt/concurrency-runtime)。 本演练提供了具有内置断点的代码示例。 代码中断后，本演练演示如何使用**并行任务**和**并行堆栈**windows 来对其进行检查。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 -   窗口如何通过分组、缩放和其他相关功能来处理缩放。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  本演练假定**仅我的代码**启用 （默认情况下，在较新版本的 Visual Studio 中已启用）。 上**工具**菜单上，单击**选项**，展开**调试**节点中，选择**常规**，然后选择**启用仅我 （仅限托管） 的代码**。 如果未设置此功能，您仍可以使用本演练，但结果可能会与以下各图不同。  
   
 ## <a name="c-sample"></a>C# 示例  
@@ -289,7 +290,7 @@ ms.lasthandoff: 10/31/2017
   
      ![分组任务窗口中的任务](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")  
   
-     此外，还可以按其他列进行分组。 通过对任务进行分组，您可以关注某个任务子集。 每个可折叠的组都包含一个分组在一起的项的计数。 你可以通过单击来快速标记该组中的所有项**都标志**右侧的按钮**折叠**按钮。  
+     此外，还可以按其他列进行分组。 通过对任务进行分组，你可以关注某个任务子集。 每个可折叠的组都包含一个分组在一起的项的计数。 你可以通过单击来快速标记该组中的所有项**都标志**右侧的按钮**折叠**按钮。  
   
      ![分组并行堆栈窗口中的堆栈](../debugger/media/pdb_walkthrough_12a.png "PDB_Walkthrough_12A")  
   
@@ -304,7 +305,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="summary"></a>摘要  
  本演练演示了**并行任务**和**并行堆栈**调试器窗口。 请在采用多线程代码的实际项目中使用这些窗口。 可以检查用 C++、C# 或 Visual Basic 编写的并行代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  

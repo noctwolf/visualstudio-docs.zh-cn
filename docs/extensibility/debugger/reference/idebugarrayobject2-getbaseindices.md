@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 185d8610f6852db00cddf6a962f8dc45def4b7ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91c1600bf637bc054d626d33ea0c1b38340866c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 对于给定的维数的数组中每个索引检索基的索引 （下限）。  
@@ -59,5 +60,5 @@ int[] lowerbounds = { 5 };
 Array.CreateInstance(typeof(int), lengths, lowerbounds);  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)

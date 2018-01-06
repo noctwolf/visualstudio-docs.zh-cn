@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b2bdc4fbe8910eba6082c69656c5765c47673f02
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c3bed9f3df7266a12d8cd8c39f16955fa647c04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
 终止进程。  
@@ -41,5 +42,5 @@ int Terminate();
 ## <a name="remarks"></a>备注  
  终止进程时，都将终止该进程中的所有程序;不允许运行任何更多代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

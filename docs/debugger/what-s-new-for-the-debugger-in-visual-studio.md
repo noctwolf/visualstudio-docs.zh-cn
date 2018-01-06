@@ -22,32 +22,33 @@ caps.latest.revision: "81"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a08c56ae60822e6d4183e5789c68cbe383b4dd5
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload: multiple
+ms.openlocfilehash: 8df1dcde73496f6ec8c25eb33cb4b6986a721f33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>在调试器的新增功能[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 调试器包括以下新功能：
 
-- 15.5 中的新增功能**快照调试器**你感兴趣的代码在执行时，获取你在生产应用的快照。 若要指示调试器拍摄快照，你在代码中设置 snappoints 和 logpoints。 调试器使你能够查看具体哪里出错，不影响生产应用程序的流量。 快照调试器可以帮助你解决在生产环境中发生的问题所花费的时间会大幅度降低。
+- 15.5 中的新增功能**快照调试器**你感兴趣的代码在执行时，获取你在生产应用的快照。 要指示调试程序拍摄快照，可在代码中设置 snappoints 和 logpoints。 使用调试程序，可精确查看出错的内容，而不影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
 
-    快照集合是可用于在 Azure App Service 中运行以下 web 应用程序：
+    快照集合适用于在 Azure App Service 中运行的以下 Web 应用：
 
-    * 在.NET Framework 4.6.1 上运行的 ASP.NET 应用程序或更高版本。
-    * 在.NET 核心 2.0 或更高版本在 Windows 上运行的 ASP.NET Core 应用程序。
+    * 在 .NET Framework 4.6.1 或更高版本上运行的 ASP.NET 应用程序。
+    * 在 Windows 中的 .Net Core 2.0 或更高版本上运行的 ASP.NET Core 应用程序。
 
     有关详细信息，请参阅[调试实时 ASP.NET 应用程序使用快照调试器](../debugger/debug-live-azure-applications.md)。
 
-- Visual Studio Enterprise 中 15.5 仅中的新增功能**IntelliTrace 步骤回**步骤事件也会自动编制的应用程序的每个断点和调试器的快照。 记录的快照，可以返回到上一个断点或步骤，并查看应用程序的状态，因为它在过去。 IntelliTrace 步骤后可以节省你时间： 如果您想要查看以前的应用程序状态，但不想重新启动调试或重新创建所需的应用程序的状态。
+- Visual Studio Enterprise 中 15.5 仅中的新增功能**IntelliTrace 步骤回**步骤事件也会自动编制的应用程序的每个断点和调试器的快照。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
 
-    你可以导航，并通过使用来查看快照**步骤向后**和**单步前进**中调试工具栏按钮。 这些按钮导航中显示的事件**事件**选项卡中**诊断工具**窗口。
+    可以通过使用调试工具栏中的“后退”和前进”按钮浏览和查看快照。 这些按钮用于浏览“诊断工具”窗口中“事件”选项卡上显示的事件。
 
     ![单步执行向后和向前按钮](../debugger/media/intellitrace-step-back-icons-description.png  "步骤向后和向前按钮")
 
-    有关详细信息，请参阅[查看快照使用 IntelliTrace 步骤回](../debugger/how-to-use-intellitrace-step-back.md)页。
+    有关详细信息，请参阅[使用 IntelliTrace 后退查看快照](../debugger/how-to-use-intellitrace-step-back.md)页。
 
 - **异常帮助器**替换异常助手并且会出现在非模式对话框中发生错误的位置。 **异常帮助器**提供快地访问任何内部异常，调试器使用 （如果可用），其他分析和立即访问**异常设置**异常。 也可以将异常帮助窗口拖动到浮点视图，如果它阻止你需要查看的内容。
 
@@ -71,6 +72,6 @@ ms.lasthandoff: 11/17/2017
 
 有关这些新功能的详细信息，请参阅[的发行说明[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#debuggingdiag)。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)

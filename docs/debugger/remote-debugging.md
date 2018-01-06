@@ -20,11 +20,12 @@ caps.latest.revision: "65"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d945c28e7fe703c80776a5f1ff124ab6e0a8bf9
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。
@@ -103,11 +104,11 @@ ms.lasthandoff: 12/07/2017
   
      你可能需要添加**作为服务登录**从右到此帐户的用户 (查找**本地安全策略**(secpol.msc) 中**启动**页或窗口 (或类型**secpol**在命令提示符)。 当显示窗口时，双击“用户权限分配” ，然后在右窗格中找到  “作为服务登录”。 双击该选项。 添加到的用户帐户**属性**窗口并单击**确定**)。 单击 **“下一步”**。  
   
-5.  选择你希望远程工具与之通信的网络类型。 必须至少选择一种网络类型。 如果这些计算机通过域连接，则应选择第一项。 如果这些计算机通过工作组或家庭组连接，则应选择第二或第三项。 单击“下一步” 。  
+5.  选择你希望远程工具与之通信的网络类型。 必须至少选择一种网络类型。 如果这些计算机通过域连接，则应选择第一项。 如果这些计算机通过工作组或家庭组连接，则应选择第二或第三项。 单击 **“下一步”**。  
   
 6.  如果可以启动服务，则会显示 “你已成功完成 Visual Studio 远程调试器配置向导”。 如果无法启动服务，则会显示“未能完成 Visual Studio 远程调试器配置向导” 。 此页还提供了为使服务正常启动要遵循的一些提示。  
   
-7.  单击“完成” 。  
+7.  单击 **“完成”**。  
   
  此时，远程调试器正作为服务运行。 你可以通过转到对此进行验证**控制面板 > 服务**，然后查找**Visual Studio 2015 远程调试器**。  
   
@@ -117,7 +118,7 @@ ms.lasthandoff: 12/07/2017
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器功能简介](../debugger/debugger-feature-tour.md)   
  [配置 Windows 防火墙以允许远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)   

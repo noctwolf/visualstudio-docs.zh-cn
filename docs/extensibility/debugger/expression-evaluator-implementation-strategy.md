@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40b97c53570362c79bf3b1627ad183dcf6964b9c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 48b871eeccb5ff561ef4b95689f12a9f58302bc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>表达式计算器实现策略
 > [!IMPORTANT]
@@ -32,6 +33,6 @@ ms.lasthandoff: 10/31/2017
   
  [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)应下一步实现方法。 调试引擎 (DE) 调用此方法来获取本地变量和自变量的列表传递`IDebugProperty2::EnumChildren``guidFilter`参数`guidFilterLocalsPlusArgs`。 `IDebugProperty2::EnumChildren`调用[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)和[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)，结合单个枚举中的结果。 请参阅[显示局部变量](../../extensibility/debugger/displaying-locals.md)有关详细信息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [实现表达式计算器](../../extensibility/debugger/implementing-an-expression-evaluator.md)   
  [显示局部](../../extensibility/debugger/displaying-locals.md)

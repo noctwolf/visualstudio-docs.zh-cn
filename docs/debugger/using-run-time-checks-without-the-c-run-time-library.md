@@ -26,11 +26,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb4cef71a9e9557b5a12a7dfe857d67b22dc69b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc81dd57ca6a91cd748da82c792c2bbeca88bb25
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>使用无 C 运行库的运行时检查
 如果链接程序而不 C 运行时库，使用**/NODEFAULTLIB**，并想要使用运行时检查，则必须链接 runtmchk.lib。  
@@ -65,5 +66,5 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
   
  安装了默认错误报告函数后，可以使用 `_RTC_SetErrorFuncW` 安装附加错误报告函数。 有关详细信息，请参阅[_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：使用本机运行时检查](../debugger/how-to-use-native-run-time-checks.md)

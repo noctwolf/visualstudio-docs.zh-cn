@@ -21,11 +21,12 @@ caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 263e3d9a01912c1b47dd518cfc9cd270937e4b7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 68c8f730bf684688cb09970a58ab79101022d4d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署示例和演练
 本部分包含示例应用程序、 示例代码和说明语法、 结构和技术用于部署 Windows 窗体、 WPF 和控制台应用程序的分步演练。  
@@ -40,6 +41,6 @@ ms.lasthandoff: 10/27/2017
 |[下载使用 ClickOnce 部署 API 按需程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|演示如何将标记为"可选"应用程序中的某些程序集以及如何下载它们使用中的类<xref:System.Deployment.Application>命名空间。|  
 |[下载使用 ClickOnce 部署使用设计器的 API 按需程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|说明如何仅在应用程序首次使用程序集时进行下载。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 演练](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Visual Studio 示例](../ide/visual-studio-samples.md)

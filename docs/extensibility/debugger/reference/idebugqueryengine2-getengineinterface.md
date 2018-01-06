@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4743985178b99feb5fd194a8bc60157ec26cb79c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 65f40bf3e0e110a6d945921d06443f0c8a608d20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 获取自定义调试引擎 (DE) 接口。  
@@ -47,7 +48,7 @@ int GetEngineInterface(
 ## <a name="remarks"></a>备注  
  应慎用生成接口，因为通过此方法从检索到的接口的调用绕过会话调试管理器的处理，并可能导致 SDM 使进入错误状态，或在调试时生成错误。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

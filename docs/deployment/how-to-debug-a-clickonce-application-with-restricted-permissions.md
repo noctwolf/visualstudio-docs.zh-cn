@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: aa51d29a1d5703f4fd02ee023eb1180da8031ac4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4ce173268be43cde12ecec4dd859623123a0bee5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>如何：使用受限权限对 ClickOnce 应用程序进行调试
 作为开发人员，你很可能使用完全信任权限运行开发计算机，因此在调试 ClickOnce 应用程序时不会遇到最终用户在使用受限权限运行它时可能会遇到的相同安全异常。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/27/2017
   
 3.  选中“启用 ClickOnce 安全设置”  复选框，然后单击“这是部分可信的应用程序”  选项按钮。  
   
-4.  单击 **“高级”** 按钮。  
+4.  单击“高级”按钮。  
   
 5.  选中“使用选定权限集调试此应用程序”  复选框，然后单击“确定” 。  
   
@@ -55,14 +56,14 @@ ms.lasthandoff: 10/27/2017
   
 3.  选中“启用 ClickOnce 安全设置”  复选框，然后单击“这是部分可信的应用程序”  选项按钮。  
   
-4.  单击 **“高级”** 按钮。  
+4.  单击“高级”按钮。  
   
 5.  选中“使用选定权限集调试此应用程序”  复选框，然后单击“确定” 。  
   
 6.  在“调试此应用程序，就如同它是从以下 URL 位置下载的一样”  文本框中，输入 URL 或网络路径。  
   
-## <a name="see-also"></a>另请参阅  
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+## <a name="see-also"></a>请参阅  
+ [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 应用程序的的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)

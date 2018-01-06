@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81b970979759c7ef6a6b236a1f2dff34815a72d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dfec3f78e9f95a55d453c45c5a264125152cbf1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>如何：在窗口视图中搜索窗口
 你可以通过将其句柄、 标题、 类或其标题和类的组合用作搜索条件来搜索特定窗口在窗口视图中。 你还可以指定搜索的初始方向。 在对话框中的字段将显示所选的窗口的属性的窗口树中。  
@@ -47,6 +48,6 @@ ms.lasthandoff: 10/31/2017
   
 4.  选择**向上**或**下**搜索的初始方向。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
      如果找到匹配的窗口，它以突出显示[Windows 视图](../debugger/windows-view.md)窗口。

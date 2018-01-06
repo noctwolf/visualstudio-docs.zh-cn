@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: e3656c3d32dcba946cf66d7fba56a68b3de467f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e830e1be1b7b36e53fd45bc11457452db805ae02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>如何：为 CD 安装启用自动启动
 在部署时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]通过可移动媒体如 CD-ROM 或 DVD-ROM 的应用程序，你可以启用`AutoStart`以便[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]插入媒体时自动启动应用程序。  
@@ -47,6 +48,6 @@ ms.lasthandoff: 10/27/2017
   
      在发布应用程序时，才能将 Autorun.inf 文件复制到发布位置。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

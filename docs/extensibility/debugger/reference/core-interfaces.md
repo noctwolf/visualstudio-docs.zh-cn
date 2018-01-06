@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 367917032b836ce6a7d07cf3eba85db14464a957
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 54ecbe034f4fa7054be2725205a013e5899849e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="core-interfaces"></a>核心接口
 下列接口是用于通过扩展调试器的核心接口[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。  
@@ -305,6 +306,6 @@ ms.lasthandoff: 10/31/2017
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|提供用于获取对要传递给类型可视化工具的数据的访问方法。|  
 |[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|表示一个属性，提供对访问[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)实现。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [创建自定义调试引擎](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

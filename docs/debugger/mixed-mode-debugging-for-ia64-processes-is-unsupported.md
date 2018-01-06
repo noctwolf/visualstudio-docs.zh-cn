@@ -18,20 +18,21 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9965f83feed7d12ac48aefdd248aebfc9a524473
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 193d469666d9aaa012187500de063470df77c823
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>不支持对 IA64 进程执行混合模式调试。
-Visual Studio 不支持对 IA64 进程中的托管代码和本机代码执行混合模式调试。 这意味着，当您进行调试时，无法从托管代码单步执行到本机代码，也无法从本机代码单步执行到托管代码。  
+Visual Studio 不支持对 IA64 进程中的托管代码和本机代码执行混合模式调试。 这意味着，当你进行调试时，无法从托管代码单步执行到本机代码，也无法从本机代码单步执行到托管代码。  
   
 ### <a name="workarounds"></a>问题解决  
   
 -   在单独的调试会话中调试托管代码和本机代码。  
   
-     - 或 -  
+     或  
   
      作为 32 位进程调试混合代码，如下面的过程所述。  
   
@@ -51,5 +52,5 @@ Visual Studio 不支持对 IA64 进程中的托管代码和本机代码执行混
   
 2.  在属性页中，单击**平台**，然后从列表中的平台上，选择 Win32  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 64 位应用程序](../debugger/debug-64-bit-applications.md)

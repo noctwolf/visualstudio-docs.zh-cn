@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2789fd46942a9b54ca3d6efb082a6b21511969ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1667da0798bba298fdead26105178905c0b9a9e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deleting-a-breakpoint"></a>删除断点
 以下描述删除挂起断点的过程：  
@@ -30,5 +31,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  此外可以通过调用删除单个绑定的断点[IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

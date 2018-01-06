@@ -14,11 +14,12 @@ caps.latest.revision: "105"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29f87ccebc342e6b5b03d40aab789ff80496a96d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 独立收集器
 **IntelliTrace 独立收集器** 可让你收集生产服务器或其他环境中应用的 IntelliTrace 诊断数据，而无需在目标计算机上安装 Visual Studio 或更改目标系统环境。 IntelliTrace 独立收集器可用于 Web、SharePoint、WPF 和 Windows 窗体应用中。 数据收集完毕后，只需删除收集器以进行卸载。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  [从 Web 应用程序或 SharePoint 应用程序中收集数据](#BKMK_Collect_Data_from_IIS_Application_Pools)  
   
-     - 或 -  
+     或  
   
      [收集托管应用中的数据](#BKMK_Collect_Data_from_Executables)  
   
@@ -116,7 +117,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  在您的应用程序服务器上以管理员身份打开命令提示符窗口。  
   
-2.  使用 Windows **icacls** 命令授予服务器管理员访问收集器目录的完全权限。 例如:   
+2.  使用 Windows **icacls** 命令授予服务器管理员访问收集器目录的完全权限。 例如:  
   
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >*`":F`  
   
@@ -124,13 +125,13 @@ ms.lasthandoff: 10/31/2017
   
     1.  向将运行 IntelliTrace PowerShell cmdlet 的人员授予访问收集器目录的完全权限。  
   
-         例如:   
+         例如:  
   
          `icacls "C:\IntelliTraceCollector" /grant "`*\<域 \ 用户 id >*`":F`  
   
     2.  授予 Web 应用或 SharePoint 应用程序的应用程序池对收集器目录的读取和执行权限。  
   
-         例如：  
+         例如:  
   
         -   对于“DefaultAppPool”  应用程序池中的 Web 应用：  
   
@@ -160,7 +161,7 @@ ms.lasthandoff: 10/31/2017
   
     2.  在 PowerShell 命令窗口，使用 **导入模块** 命令导入 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**。  
   
-         例如：  
+         例如:  
   
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`  
   
@@ -178,7 +179,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  针对 Web 应用或 SharePoint 应用程序，授予其应用程序池对 .iTrace 文件目录的完全权限。 你可以使用 Windows **icacls** 命令或使用 Windows 资源管理器（或文件资源管理器）。  
   
-     例如：  
+     例如:  
   
     -   要使用 Windows **icacls** 命令设置权限，请：  
   
@@ -190,7 +191,7 @@ ms.lasthandoff: 10/31/2017
   
              `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
   
-         - 或 -  
+         或  
   
     -   要设置 Windows 资源管理器（或文件资源管理器）的权限，请：  
   

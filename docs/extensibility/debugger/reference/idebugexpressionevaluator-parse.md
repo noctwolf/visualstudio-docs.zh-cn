@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0491cd6d80db449fbeaa8fee2a6040a66082558
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e64d7419973f0505a2413d7ea56be12a31d01a1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 此方法将一个表达式字符串转换为一个已分析的表达式。  
@@ -72,7 +73,7 @@ int Parse(
 ## <a name="remarks"></a>备注  
  此方法生成的已分析的表达式，而不是一个实际值。 分析的表达式已准备好进行计算，即，转换为值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   
  [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)   
  [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)

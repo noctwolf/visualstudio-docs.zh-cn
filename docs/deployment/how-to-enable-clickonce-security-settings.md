@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7fc7df79f798596901d74d089baf1b84f1dcd152
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d9fb07f8348e161743b373a83d49c4dd614d8c5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>How to: Enable ClickOnce Security Settings
 若要发布应用程序，必须启用 ClickOnce 应用程序的代码访问安全性。 在发布使用发布向导的应用程序时，这会自动完成。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/27/2017
     > [!NOTE]
     >  每次发布应用程序时使用发布向导中，将选中此复选框;你必须在每个成功发布后再次清除它。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  

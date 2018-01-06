@@ -19,25 +19,26 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4e0734079cc3a54666c7e9b736ec1f3284ad891a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7cca74c6b0b5f1c118bb1360184558fc383c40c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署清单
 部署清单是一个 XML 文件，用于描述 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，包括要部署的当前 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序版本的标识。  
   
  部署清单具有下列元素和特性。  
   
-|元素|说明|特性|  
+|元素|描述|特性|  
 |-------------|-----------------|----------------|  
-|[\<程序集 > 元素](../deployment/assembly-element-clickonce-deployment.md)|必需。 顶级元素。|`manifestVersion`|  
-|[\<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)|必需。 标识 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的应用程序清单。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
-|[\<描述 > 元素](../deployment/description-element-clickonce-deployment.md)|必需。 标识应用程序信息用于创建 shell 表示和**添加或删除程序**控制面板中的项。|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
+|[\<程序集 > 元素](../deployment/assembly-element-clickonce-deployment.md)|必须的。 顶级元素。|`manifestVersion`|  
+|[\<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)|必须的。 标识 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的应用程序清单。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
+|[\<描述 > 元素](../deployment/description-element-clickonce-deployment.md)|必须的。 标识应用程序信息用于创建 shell 表示和**添加或删除程序**控制面板中的项。|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
 |[\<部署 > 元素](../deployment/deployment-element-clickonce-deployment.md)|可选。 标识用于部署更新并向系统公开的特性。|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
-|[\<compatibleFrameworks > 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md)|必需。 标识此应用程序可在其上安装和运行的 .NET Framework 版本。|`SupportUrl`|  
-|[\<依赖项 > 元素](../deployment/dependency-element-clickonce-deployment.md)|必需。 标识要为部署而安装的应用程序版本以及应用程序清单的位置。|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
+|[\<compatibleFrameworks > 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md)|必须的。 标识此应用程序可在其上安装和运行的 .NET Framework 版本。|`SupportUrl`|  
+|[\<依赖项 > 元素](../deployment/dependency-element-clickonce-deployment.md)|必须的。 标识要为部署而安装的应用程序版本以及应用程序清单的位置。|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
 |[\<publisherIdentity > 元素](../deployment/publisheridentity-element-clickonce-deployment.md)|对于已签名清单是必需的。 包含有关为此部署清单签名的发布者的信息。|`Name`<br /><br /> `issuerKeyHash`|  
 |[\<签名 > 元素](../deployment/signature-element-clickonce-deployment.md)|可选。 包含对此部署清单进行数字签名所需的信息。|无|  
 |[\<customErrorReporting > 元素](../deployment/customerrorreporting-element-clickonce-deployment.md)|可选。 指定发生错误时所显示的 URI。|URI|  
@@ -120,5 +121,5 @@ ms.lasthandoff: 10/27/2017
 </Signature></asmv1:assembly>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

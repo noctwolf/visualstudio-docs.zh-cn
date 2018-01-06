@@ -26,11 +26,12 @@ caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5c6f422e980a585b9cbac3c0b59ad8d981aba93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 96a4dc22f4f5c96d3dd9d40a565c2656ffe6e283
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>使用 Visual Studio 调试器中的内存窗口
 **内存**窗口提供到应用程序使用的内存空间的视图。 **监视**窗口中，**快速监视**对话框中，**自动**窗口中，和**局部变量**窗口显示变量，即的内容存储在内存中的特定位置。 但是**内存**窗口显示大的图片。 这对于检查大片的数据（如缓冲区和大的字符串）很方便，在其他窗口中显示就不太好。 但是，**内存**窗口并不仅限于显示数据。 该窗口可以显示内存空间中的任何内容，不论这些内容是数据、代码还是未分配内存中的无用随机位。  
@@ -117,5 +118,5 @@ ms.lasthandoff: 10/31/2017
   
      现在，当你使用执行命令如**步骤**，显示的内存地址将随指针变化而变化。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)

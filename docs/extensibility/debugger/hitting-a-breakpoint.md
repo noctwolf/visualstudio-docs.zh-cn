@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73cdce5415dd50059dcd443f67424203430aba87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dfdf86124bdaf9160121b7d93263dc1d60425515
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hitting-a-breakpoint"></a>命中断点
 下面介绍的调试引擎 (DE) 在运行或单步执行时命中断点时的过程：  
@@ -30,5 +31,5 @@ ms.lasthandoff: 10/31/2017
   
 2.  会话调试管理器 (SDM) 调用[IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)获取命中的断点。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

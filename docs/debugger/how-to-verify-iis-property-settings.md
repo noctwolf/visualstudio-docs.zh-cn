@@ -23,11 +23,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0d58ea851423e9239d8685f89890b5d9e152d53
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5a9bda1bdf3fadffedc71873ddec6733b68651a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-verify-iis-property-settings"></a>如何：验证 IIS 属性设置
 使用 IIS 管理工具，可以设置 Web 应用程序的属性。 这些属性必须正确设置，应用程序才能运行，所以，验证这些设置通常是疑难解答的必需步骤。  
@@ -79,5 +80,5 @@ ms.lasthandoff: 10/31/2017
   
 9. 单击**确定**关闭**Internet Information Services (IIS) Manager**， **Internet 服务管理器**，或**Internet Information Services**对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [疑难解答](../debugger/debugging-web-applications-troubleshooting.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 42695a58ecab7f898a0ef8561a9bc715909f6c06
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 31961d62c2ef7a253a16a5384dfa6b5e69209a97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 使用此接口来表示，并从网络上的计算机上的服务器获取信息。  
@@ -53,14 +54,14 @@ IDebugCoreServer2 : IUknown
 ## <a name="remarks"></a>备注  
  Visual Studio 还使用此接口来浏览在网络上的计算机上运行的进程。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)   

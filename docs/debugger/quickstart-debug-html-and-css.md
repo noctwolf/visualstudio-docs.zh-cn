@@ -23,11 +23,12 @@ caps.latest.revision: "101"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1650326711d8d788a7e232df97044c8e896e3b4
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>调试 HTML 和 CSS UWP 和 Windows 8.1 应用中
 ![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -277,7 +278,7 @@ ms.lasthandoff: 11/11/2017
   
  请前往 [此处](http://go.microsoft.com/fwlink/?LinkID=232448) 下载 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 和 Visual Studio。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)   
  [使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)   

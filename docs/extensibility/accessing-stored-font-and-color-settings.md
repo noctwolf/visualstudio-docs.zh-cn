@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc4424b3cf277bcee13123081deecac070344054
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e4dec66fca6061601c4bc02389605d140ee3bb81
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>访问存储的字体和颜色设置
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 将存储修改后的设置字体和颜色在注册表中。 你可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口来访问这些设置。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 10/31/2017
   
  所有设置**显示项**以特定**类别**可以通过使用的方法来获取`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults`接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>   
  [实现自定义类别和显示项](../extensibility/implementing-custom-categories-and-display-items.md)

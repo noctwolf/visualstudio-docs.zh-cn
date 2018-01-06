@@ -19,11 +19,12 @@ caps.latest.revision: "65"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5bfa2e09d96f383b39eb392d5172cf38d750cef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 959622dff7770d314dc5fa2da1e8a81ade34cac4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>远程调试 Visual Studio 中的 C# 或 Visual Basic 项目
 若要调试的 Visual Studio 应用程序已部署在另一台计算机，安装和其中部署您的应用程序的计算机上运行远程工具，你将项目配置为从 Visual Studio 中，连接到远程计算机，然后运行你的应用程序。
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
 有关远程调试通用 Windows 应用 (UWP) 的信息，请参阅[调试安装的应用程序包](debug-installed-app-package.md)。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>惠?
 
 远程调试器都支持 Windows 7 和更高版本 (不 phone) 和从 Windows Server 2008 Service Pack 2 的 Windows Server 版本。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
@@ -107,7 +108,7 @@ ms.lasthandoff: 10/31/2017
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)   
  [配置 Windows 防火墙以允许远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   

@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba7149d13c85ec99128488e7207a5320f93d680f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 527e7a445356a46abdd6f2edb0555b7c5c9c7de8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 指定的调试引擎 (DE) 若要将附加到程序节点的原因。  
@@ -55,14 +56,14 @@ public enum enum_ATTACH_REASON {
 ## <a name="remarks"></a>备注  
  作为参数传递给使用这些值[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)和[附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)方法。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

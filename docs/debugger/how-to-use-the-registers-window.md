@@ -26,11 +26,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cff6db85b29b4db6006d37fd21e2d9b109b099e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7aa89b6e8d36c3eb47168c8672fb7eea1e3507db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>查看注册的值和使用 Visual Studio 调试器中的注册窗口
 寄存器窗口是中启用了地址级调试的情况下，才可用**选项**对话框中，**调试**节点，**常规**类别。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  寄存器信息对于脚本或 SQL 应用程序不可用。  
   
-## <a name="see-also"></a>另请参阅  
- [调试基础知识: 寄存器窗口](../debugger/debugging-basics-registers-window.md)   
+## <a name="see-also"></a>请参阅  
+ [调试基础知识：“寄存器”窗口](../debugger/debugging-basics-registers-window.md)   
  [在调试器中查看数据](../debugger/viewing-data-in-the-debugger.md)   
  [调试基础知识：“寄存器”窗口](../debugger/debugging-basics-registers-window.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc15612fe7a59516483bb6b077e1b44b44f7fba8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ad673736334daec79860b9832a056c17781a082
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>演练：用 Visual Basic 编写可视化工具
 本演练演示如何使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编写简单的可视化工具。 本演练中创建的可视化工具使用 Windows 窗体消息框显示字符串的内容。 此简单字符串可视化工具是一个基本示例，将演示如何创建更加适合您项目的其他数据类型的可视化工具。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  在**名称**框中，键入正确的名称类库，如**MyFirstVisualizer**。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
  创建类库后，必须添加对 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的引用，以便使用其中定义的类。 不过，首先要为您的项目赋予一个有意义的名称。  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  在**添加引用**对话框中，在**.NET**选项卡上，单击 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
 6.  在 DebuggerSide.vb 中，将以下语句添加到 `Imports` 语句中：  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 10/31/2017
         End Sub  
     ```  
   
- `Show` 方法包含实际创建可视化工具对话框或其他用户界面的代码，并显示已从调试器传递到可视化工具的信息。 您必须添加创建该对话框并显示该信息的代码。 在本演练中，将使用 Windows 窗体消息框执行此操作。 首先，必须为 `Imports` 添加一个引用和 <xref:System.Windows.Forms> 语句。  
+ `Show` 方法包含实际创建可视化工具对话框或其他用户界面的代码，并显示已从调试器传递到可视化工具的信息。 你必须添加创建该对话框并显示该信息的代码。 在本演练中，将使用 Windows 窗体消息框执行此操作。 首先，必须为 `Imports` 添加一个引用和 <xref:System.Windows.Forms> 语句。  
   
 #### <a name="to-add-systemwindowsforms"></a>添加 System.Windows.Forms  
   
@@ -109,7 +110,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  在**添加引用**对话框中，在**.NET**选项卡上，单击**System.Windows.Forms**。  
   
-3.  单击“确定”。  
+3.  单击 **“确定”**。  
   
 4.  在 DebuggerSide.cs 中，将下面的语句添加到 `Imports` 语句中：  
   
@@ -171,7 +172,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  在**名称**框中，键入有意义的名称，控制台应用程序，如**MyTestConsole**。  
   
-4.  单击“确定”。  
+4.  单击 **“确定”**。  
   
  现在，必须添加必要的引用，以便 MyTestConsole 能够调用 MyFirstVisualizer。  
   
@@ -181,13 +182,13 @@ ms.lasthandoff: 10/31/2017
   
 2.  在**添加引用**对话框中，在**.NET**选项卡上，单击 Microsoft.VisualStudio.DebuggerVisualizers。  
   
-3.  单击“确定”。  
+3.  单击 **“确定”**。  
   
 4.  右键单击**MyTestConsole**，然后单击**添加引用**试。  
   
 5.  在**添加引用**对话框中，单击**项目**选项卡上，然后选择 MyFirstVisualizer。  
   
-6.  单击“确定”。  
+6.  单击 **“确定”**。  
   
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>完成测试套并测试可视化工具  
  现在，您将添加代码以完成测试套。  
@@ -213,7 +214,7 @@ ms.lasthandoff: 10/31/2017
     DebuggerSide.TestShowVisualizer(myString)  
     ```  
   
- 现在已准备好测试您的第一个可视化工具了。  
+ 现在已准备好测试你的第一个可视化工具了。  
   
 #### <a name="to-test-the-visualizer"></a>测试可视化工具  
   
@@ -227,7 +228,7 @@ ms.lasthandoff: 10/31/2017
   
  如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用可视化工具，而不是只从测试工具中调用它，则需要安装它。 有关详细信息，请参阅[如何： 安装可视化工具](../debugger/how-to-install-a-visualizer.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [可视化工具体系结构](../debugger/visualizer-architecture.md)   
  [如何： 安装可视化工具](../debugger/how-to-install-a-visualizer.md)   
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)

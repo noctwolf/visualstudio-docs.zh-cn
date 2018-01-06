@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23bb4ee4550f70681152fc14cc66a642597125ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b4782a1650034424d2616e47f46e07cec4d01ae5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>如何：使用“GPU 线程”窗口
 在“GPU 线程”窗口中，可以检查和使用在要调试的应用程序中的 GPU 上运行的线程。 有关在 GPU 运行的应用程序的详细信息，请参阅[c + + AMP 概述](/cpp/parallel/amp/cpp-amp-overview)。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  在 GPU 代码中设置断点。  
   
-6.  在菜单栏上，选择**调试**，**启动调试**。 等待应用程序到达断点。  
+6.  在菜单栏上，依次选择“调试”、“开始调试”。 等待应用程序到达断点。  
   
 7.  菜单栏上，选择**调试**， **Windows**， **GPU 线程**。  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 10/31/2017
   
 -   在“GPU 线程”窗口中选择标记按钮。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何： 使用并行监视窗口](../debugger/how-to-use-the-parallel-watch-window.md)   
  [演练：调试 C++ AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

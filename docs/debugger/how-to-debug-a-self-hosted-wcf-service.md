@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e64f764153106c252ba1a9586bfd0a33f4e239f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 004e4685af33a33248d3fab7c39504300de2ed95
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：调试自我托管的 WCF 服务
 A*自我托管服务*是不会在 IIS、 WCF 服务主机内运行的 WCF 服务或[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]开发服务器。 若要调试自承载的 WCF 的最简单方法是配置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]以启动客户端和服务器，当你选择**启动调试**上**调试**菜单。  
@@ -54,9 +55,9 @@ A*自我托管服务*是不会在 IIS、 WCF 服务主机内运行的 WCF 服务
   
     5.  在客户端项目对应的行，单击**操作**选择**启动**。  
   
-    6.  单击“确定”。  
+    6.  单击 **“确定”**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 WCF 服务](../debugger/debugging-wcf-services.md)   
  [WCF 调试的限制](../debugger/limitations-on-wcf-debugging.md)   
  [如何：单步执行 WCF 服务](../debugger/how-to-step-into-wcf-services.md)

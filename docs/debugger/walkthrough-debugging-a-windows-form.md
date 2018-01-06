@@ -26,11 +26,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02db9a01286e65f371ab4d8388102a3db4c5602e
-ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
+ms.workload: multiple
+ms.openlocfilehash: 1d0ab1ccdf6f5365c04c4a7ee0cac8ce75ab5f17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>演练：调试 Windows 窗体
 Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标准的 Windows 应用程序。 你可以完成本演练使用 Visual Basic、 C# 或 c + +。  
@@ -60,7 +61,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
 4.  在**名称**框中，为项目指定唯一的名称 (例如，Walkthrough_SimpleDebug)。  
   
-5.  单击“确定”。  
+5.  单击 **“确定”**。  
   
      Visual Studio 创建一个新项目，并在 Windows 窗体设计器中显示一个新的窗体。 有关详细信息，请参阅[Windows 窗体设计器](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15)。  
   
@@ -188,6 +189,6 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
      调试器在断点处中断的 Windows 窗体的执行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
  [调试器安全](../debugger/debugger-security.md)

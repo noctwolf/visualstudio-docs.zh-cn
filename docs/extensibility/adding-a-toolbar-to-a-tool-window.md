@@ -15,11 +15,12 @@ caps.latest.revision: "48"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4cdcd1fd772505ff4536968290ca87a85a501f6a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 07b5eea4fe6d5f58ec4b05563af253aeef0c5f6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>将工具栏添加到工具窗口
 本演练演示如何将工具栏添加到工具窗口。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
  有关如何将工具栏添加的详细信息，请参阅[将工具栏添加](../extensibility/adding-a-toolbar.md)。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-toolbar-for-a-tool-window"></a>创建工具窗口工具栏  
@@ -116,5 +117,5 @@ ms.lasthandoff: 10/31/2017
   
 3.  在工具栏上，单击图标以显示消息**TWTestCommandPackage 内 TWToolbar.TWTestCommand.MenuItemCallback()**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [添加工具栏](../extensibility/adding-a-toolbar.md)

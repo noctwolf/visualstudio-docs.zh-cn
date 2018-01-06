@@ -12,11 +12,12 @@ caps.latest.revision: "60"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f2dce73eab17d97779edec73c1c2c0c60690ac5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 562222296ca79a568a3b68aac55a879c8f2f51b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="diagnose-problems-after-deployment"></a>诊断部署后出现的问题
 要在使用 IntelliTrace 部署后诊断 ASP.NET Web 应用中的问题，请加入发行版本信息，以便 Visual Studio 自动查找调试 IntelliTrace 日志所需的正确源文件及符号文件。  
@@ -283,7 +284,7 @@ ms.lasthandoff: 10/31/2017
 
 -   **ProjectName**  
 
-     Visual Studio 中你的项目的名称。 例如:   
+     Visual Studio 中你的项目的名称。 例如:  
 
     ```  
     <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
@@ -301,7 +302,7 @@ ms.lasthandoff: 10/31/2017
 
         -   **ProjectVersionSpec**：项目的版本  
 
-         例如:   
+         例如:  
 
         ```  
         <SourceControl type="TFS">  
@@ -323,7 +324,7 @@ ms.lasthandoff: 10/31/2017
 
         -   **CommitId**：你的提交的 ID  
 
-         例如:   
+         例如:  
 
         ```  
         <SourceControl type="Git">   
@@ -349,7 +350,7 @@ ms.lasthandoff: 10/31/2017
 
     -   **BuiltSolution**：Visual Studio 用于查找和打开匹配的解决方案的解决方案文件的路径。 这是 **SolutionPath** MsBuild 属性的内容。  
 
-     例如:   
+     例如:  
 
     -   **TFS**  
 

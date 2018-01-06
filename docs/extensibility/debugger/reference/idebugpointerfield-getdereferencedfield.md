@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35081931fcb87c73ca6643002a09b43c3ab674b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f881a7ad6f11b4c916dad8af184d84a434f3e510
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 此方法返回的此指针对象所指向的对象的类型。  
@@ -47,6 +48,6 @@ int GetDereferencedField(
 ## <a name="remarks"></a>备注  
  例如，如果[IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)对象指向一个整数， [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)此方法返回的类型描述该整数类型。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1984941f0718b962b516ef99e37642770a4aabc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 13b97c4d9e90adf8b621100d6d2a68d11570e71d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bc-texture-compression-variant"></a>BC 纹理压缩变量
 对采用像素格式（B8G8R8X8、B8G8R8A8 或 R8G8B8A8 的变体）的纹理启用块压缩。  
@@ -63,5 +64,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="example"></a>示例  
  此变量在运行时（调用 `CreateTexture2D` 之前）对纹理进行块压缩。 我们不建议将此方法用于成品代码，因为未压缩的纹理会消耗更多的磁盘空间，而且此额外步骤会显著增加应用中的加载次数（因为基于块的压缩需要大量计算要编码的资源）。 相反，我们建议你通过使用生成管道中包含的图像编辑器或图像处理器，在脱机状态下压缩纹理。 这些方法将降低磁盘空间需求、消除应用中的运行时开销并提供更多的处理时间，以便可以保持最佳图像质量。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Half/Quarter 纹理维度变体](half-quarter-texture-dimensions-variant.md)

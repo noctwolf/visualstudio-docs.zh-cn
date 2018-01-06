@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 339ebce7ddc338656abd1484d4dbdddbc02c060d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f1c2b7f20c0094bf901ed7cf67a75e412bb2e25e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enumerations-visual-studio-debugging"></a>枚举 （Visual Studio 调试）
 以下是枚举的[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]Debugging SDK。  
@@ -246,12 +247,12 @@ ms.lasthandoff: 10/31/2017
  [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)  
  指定的线程的状态。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h、 sh.h 或 ee.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
