@@ -12,18 +12,19 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: eb4ca4445af3970828f4212c69c11d9d173d5650
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: f288d794040c533f2d00e95d628f7d04e55e96e4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio 中的实体框架工具
-实体框架是一种对象关系映射技术，使.NET 开发人员能够通过使用特定于域的对象处理关系数据。 它消除了对大多数开发人员通常需要编写数据访问代码的需求。 实体框架成为建模为新的.NET 应用程序的技术建议的对象关系映射 (ORM)。  
+实体框架是一种对象关系映射技术，使.NET 开发人员能够通过使用特定于域的对象处理关系数据。 它不要求提供开发人员通常需要编写的大部分数据访问代码。 实体框架成为建模为新的.NET 应用程序的技术建议的对象关系映射 (ORM)。  
   
-实体框架工具旨在帮助你构建 Entity Framework (EF) 应用程序。 用于实体框架的完整文档是此处： [EF 核心和 EF 6](https://docs.microsoft.com/ef/)。  
+实体框架工具旨在帮助你构建 Entity Framework (EF) 应用程序。 用于实体框架的完整文档是此处： [EF 核心和 EF 6](/ef/)。  
   
-使用实体框架工具，您可以创建*概念模型*从现有数据库，然后以图形方式直观显示和编辑概念模型。 或者，您可以首先以图形方式创建概念模型，然后生成支持模型的数据库。 无论哪种情况，您都可以在基础数据库更改时自动更新模型，并为应用程序生成对象层代码。 数据库生成和对象层代码生成是可自定义的。  
+使用实体框架工具，您可以创建*概念模型*从现有数据库，然后以图形方式直观显示和编辑概念模型。 或者，您可以首先以图形方式创建概念模型，然后生成支持模型的数据库。 无论哪种情况，你都可以在基础数据库更改时自动更新模型，并为应用程序生成对象层代码。 数据库生成和对象层代码生成是可自定义的。  
   
 实体框架工具安装的一部分**数据存储和处理**在 Visual Studio 安装程序中的工作负荷。 也可以将它们安装作为 indvidual 组件下**Sdk、 库和框架**类别。  
  
@@ -53,5 +54,5 @@ ms.lasthandoff: 10/31/2017
 |[实体框架 (EF) 文档）](https://msdn.microsoft.com/library/ee712907(v=vs.113).aspx)|提供视频、 教程和高级的文档帮助你充分利用实体框架的索引。|  
 |[ASP.NET 5 应用程序指向新数据库](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|描述如何使用实体框架 7 创建新的 ASP.NET 5 应用程序。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [适用于 NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
