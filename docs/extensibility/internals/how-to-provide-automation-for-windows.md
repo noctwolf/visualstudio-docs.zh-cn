@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 945eeb8b81ecb26d43da9528db154d133c4f868c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 17cf60573b6feb9fd317116eec4639dbf88f6089
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-automation-for-windows"></a>如何： 提供适用于 Windows 的自动化
 你可以提供自动化文档和工具窗口。 提供自动化是明智的每当你想要使自动化对象在一个窗口，并且环境不提供现成的自动化对象，它与任务列表。  
@@ -42,5 +43,5 @@ ms.lasthandoff: 10/31/2017
   
  此外，编辑器可以提供特定于 VSPackage 的自动化对象，通过检索<xref:EnvDTE.Document.Object%2A>方法，通过实现`IVsExtensibleObject`或`IExtensibleObject`接口。 [VSSDK 示例](http://aka.ms/vs2015sdksamples)做出了贡献 RTF 特定文档的自动化对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

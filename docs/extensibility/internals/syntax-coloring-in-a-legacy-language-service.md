@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 88af397feba9b06eabd73ec23dcf1204ebe755e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd740c437fc7e5f3d355e883d4023bc6edfcde1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>语法着色中旧语言服务
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用着色服务标识的语言元素，并将它们显示与在编辑器中的指定颜色。  
@@ -75,5 +76,5 @@ ms.lasthandoff: 10/31/2017
  [自定义可着色项](../../extensibility/internals/custom-colorable-items.md)  
  讨论如何实现自定义可着色的项。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用字体和颜色](../../extensibility/using-fonts-and-colors.md)

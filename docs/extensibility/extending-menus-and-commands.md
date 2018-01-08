@@ -16,11 +16,12 @@ caps.latest.revision: "49"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c53f836b6384968bf812ae9ae559a281fda6f13
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 815aac693686dc59d6934b00fb456c3a1afce72c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-menus-and-commands"></a>扩展菜单和命令
 命令是向 Visual Studio 中添加操作和进程的方式。 在大多数情况下会在菜单或工具栏上显示命令。 VSPackage 项目模板演示如何实现一个非常基本的命令。 一个较长，但仍基本实现，请参阅[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。  

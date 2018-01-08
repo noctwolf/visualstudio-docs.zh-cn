@@ -13,23 +13,24 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3462104e100ab672373f30dcd8228bc064746f2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 085c3bea9b9edc726fa09dd5d7658aff4a55e568
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>为 VSPackage 选择的安装目录
 VSPackage 和及其支持文件必须是用户的文件系统上。 位置取决于是否 VSPackage 托管或非托管，你的并行版本控制方案，并用户选择。  
   
 ## <a name="unmanaged-vspackages"></a>非托管的 Vspackage  
- 非托管的 VSPackage 是可以安装在任何位置中的 COM 服务器。 其注册信息必须准确地反映其位置。 安装程序用户界面 (UI) 应提供作为子目录的找到 Windows Installer 属性的默认位置。 例如:   
+ 非托管的 VSPackage 是可以安装在任何位置中的 COM 服务器。 其注册信息必须准确地反映其位置。 安装程序用户界面 (UI) 应提供作为子目录的找到 Windows Installer 属性的默认位置。 例如:  
   
  [找到]MyCompany\MyVSPackageProduct\V1.0\  
   
  应允许用户更改以适应保持小启动分区的用户的默认目录，并且希望在另一个卷上安装应用程序和工具。  
   
- 如果你并排显示的方案使用版本控制的 VSPackage，你可以使用子目录来存储不同的版本。 例如:   
+ 如果你并排显示的方案使用版本控制的 VSPackage，你可以使用子目录来存储不同的版本。 例如:  
   
  [找到]MyCompany\MyVSPackageProduct\V1.0\2002\  
   
@@ -61,7 +62,7 @@ VSPackage 和及其支持文件必须是用户的文件系统上。 位置取决
   
  如果你的 VSPackage DLL 包含资源和 SatelliteDll\DllName 注册表条目指向它，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]尝试将它们加载的上述顺序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [选择共享并设置其版本 Vspackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [管理 Vspackage](../../extensibility/managing-vspackages.md)   
  [托管的包注册](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

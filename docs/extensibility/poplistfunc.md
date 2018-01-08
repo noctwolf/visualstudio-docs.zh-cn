@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 281b18d1e4e802646635cfe354355762014ad40e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc15af65c6541df5ef77a3bdc85ee0e59fa20991
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 此回调提供给[SccPopulateList](../extensibility/sccpopulatelist-function.md) ide 和源代码管理插件用于更新的文件或目录的列表 (还提供给`SccPopulateList`函数)。  
@@ -52,7 +53,7 @@ typedef BOOL (*POPLISTFUNC) (
   
 ## <a name="return-value"></a>返回值  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`TRUE`|该插件可以继续调用此函数。|  
 |`FALSE`|在 IDE 端 （如内存的情况下扩展） 已存在问题。 插件应停止操作。|  
@@ -63,7 +64,7 @@ typedef BOOL (*POPLISTFUNC) (
 > [!NOTE]
 >  `SCC_CAP_POPULATELIST`功能位，才能使用 Visual Studio。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [由 IDE 实现的回调函数](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [源控件插件](../extensibility/source-control-plug-ins.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)   

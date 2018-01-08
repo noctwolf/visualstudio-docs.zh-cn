@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 320a8013177d44491470f8f55c8ee3e1fb19501c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4c1a512e104a092ae98ac86dc5e731fd1732aa33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-design-decisions"></a>源控件的设计决策
 实现源代码管理时，以下设计决策应考虑的项目。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  当你的项目或编辑器调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>对于文件，与该文件相关联的特殊文件未自动签出。传递以及父文件中的特殊文件。 环境将检测所有传入的文件之间的关系，并相应地隐藏签出 UI 中的特殊文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   

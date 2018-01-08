@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd0c23258034fb99f5e2e4e0c86ca9e61c3d68ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ac92c327a5eb4e51c7e6c22a73fb331843adc99f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>什么 &#39; s 源代码管理插件 API 版本 1.3 中的新增功能
 源控件插件 API 1.3 版引入了以下新功能，可提供更高级的控制。  
@@ -37,6 +38,6 @@ ms.lasthandoff: 10/31/2017
 |[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|执行无提示"获取"的指定的文件 （显示为没有用户界面）|  
 |[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|允许访问特定于用户的选项|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [入门](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)   
  [源代码管理插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

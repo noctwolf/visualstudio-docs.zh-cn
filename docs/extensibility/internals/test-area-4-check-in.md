@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3694e8f4a8cdbdac147df3d6e60324888bccf048
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 698b46c7ccb0a3fb13c799349d36de0cadf80af1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-4-check-in"></a>测试区域 4： 签入
 此源代码管理插件测试区域涉及将已更新的项目发送到的版本存储区通过**签入**命令。  
@@ -69,5 +70,5 @@ ms.lasthandoff: 10/31/2017
 |将项目添加到源代码管理下的空白解决方案 (**签入**对话框)|1.创建一个空白解决方案。<br />2.将解决方案添加到源代码管理。<br />3.添加新项目。<br />4.如果系统提示，请接受签出的解决方案。<br />5.通过签入**签入**对话框。|常见的预期的行为。|  
 |将项目添加到源代码管理下的空白解决方案 (**挂起签入**窗口)|1.创建一个空白解决方案。<br />2.将解决方案添加到源代码管理。<br />3.添加新项目。<br />4.如果系统提示，请接受签出的解决方案。<br />5.从解决方案签入**挂起签入**窗口。|常见的预期的行为。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

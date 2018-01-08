@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33f29ebabbb40e747b2b321fcb1b3b5598284a28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c87fd485a0d682dc21de21dfe32b83cfc29b520a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Getting Started with VSIX 项目模板
 若要创建扩展或包部署的现有扩展，你可以使用 VSIX 项目模板。 VSIX 项目模板具有 Visual Basic 和 Visual C# 版本，并且作为 Visual Studio SDK 的一部分安装。  

@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ad62f14ea658e4af6e22d4beef410e6d9cf02df
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a3a124bbcadbf798f22b59111637038a09af7d75
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函数
 给定的本地文件的列表，此函数将确定哪些文件是不同于在源代码控制数据库中的相应版本。  
@@ -54,10 +55,10 @@ SCCRTN SccEnumChangedFiles(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|操作已成功完成。|  
 |SCC_UNSPECIFIEDERROR|一般性错误。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

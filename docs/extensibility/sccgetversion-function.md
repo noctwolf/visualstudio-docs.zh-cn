@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f64b1412d0750bba4d3985d33286915e22f1474
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2aef7ed21124c2e3555442819461f1989388ab22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 函数
 此函数获取受源代码管理插件的源控件插件 api 的版本号。  
@@ -43,5 +44,5 @@ LONG SccGetVersion(void);
 ## <a name="remarks"></a>备注  
  例如，如果源代码管理插件支持版本 1.3 的源控制插件 API，此函数将返回 0x0103。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

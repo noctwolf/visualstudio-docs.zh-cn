@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c24765450d0bf8ffdab479bb28c822602892b595
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a4ab4bd29c753fc03787fbbadbe106d2d8862b10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>在旧语言服务中的单词完成
 单词完成填写上部分键入的单词的缺少字符。 如果只有一个可能的完成，完成字符输入时完成单词。 如果部分单词与匹配多个可能性，显示可能的完成列表。 完成字符可以是任何不用于标识符的字符。  

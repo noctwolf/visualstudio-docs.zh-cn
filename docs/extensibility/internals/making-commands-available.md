@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e9644353430fa70d6876ab3210ad340ac30312d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c3a9edc754070c7bb0aabdc76b2d52efd32a453
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="making-commands-available"></a>使命令可
 当多个 Vspackage 添加到 Visual Studio 时，用户界面 (UI) 可能会变得 overcrowded 使用命令。 你可以编程包以减少此问题，如下所示：  
@@ -147,7 +148,7 @@ ms.lasthandoff: 10/31/2017
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MenuCommands 与OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Vspackage 中的路由的命令](../../extensibility/internals/command-routing-in-vspackages.md)   

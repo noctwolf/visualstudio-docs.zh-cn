@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a1b1e7c7b782868ece2c640f75fd506018f3e04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f9bfae4fb64a4dde27f8156560f0fa850fcd5885
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-configuration-object"></a>项目配置对象
 项目配置对象管理到 UI 的配置信息的显示。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
  `ISpecifyPropertyPages`和`IDispatch`用于与属性页一起检索并向用户显示依赖于配置的信息。 有关详细信息，请参阅[属性页](../../extensibility/internals/property-pages.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理配置选项](../../extensibility/internals/managing-configuration-options.md)   
  [生成的项目配置](../../extensibility/internals/project-configuration-for-building.md)   
  [输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)   

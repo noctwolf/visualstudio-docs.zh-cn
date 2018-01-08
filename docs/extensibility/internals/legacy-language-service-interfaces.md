@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 925b504d8cba4813631d4f8ba6f7dbd9750f5eae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 82555c861a6bf250a818b185de57fc48f143e4f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-interfaces"></a>旧语言服务接口
 对于任何特定的编程语言，会有语言服务的一个实例一次。 但是，单一语言服务可以提供多个编辑器。  
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|允许进行修改的文本视图使用的命令处理程序。 类实现在其中<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>接口还必须实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口。 文本视图检索<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>对象通过查询<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>对象传递到<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>方法。 应该发出一个<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>对于每个视图的对象。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|截获用户键入到代码窗口的命令。 监视输出你<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>实现，以提供自定义完成信息并查看修改<br /><br /> 若要将传递你<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>对象文本视图，请调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发旧语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [清单：创建旧版语言服务](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

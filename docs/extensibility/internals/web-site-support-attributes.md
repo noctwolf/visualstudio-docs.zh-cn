@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 504046999814b4766fa9e5e8c006a02049e7007d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 868fe0785c90a174610b9fff837fc6fbfb084e83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support-attributes"></a>网站支持属性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]网站项目可以扩展以支持 Web 编程语言。 语言必须注册自行向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以便项目模板可以出现在**新网站**对话框时选择的语言。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute  
  此特性置于语言项目。 它允许在另一个文件类型 （主） 下，在网站项目嵌套 （相关） 的一种文件类型**解决方案资源管理器**。  
   
- 例如:   
+ 例如:  
   
 ```  
 [WebSiteProjectRelatedFiles("aspx", "py")]public class PythonProjectPackage : ProjectPackage  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute  
  此特性置于语言项目包。 它将选择的语言的 Intellisense 提供程序。  
   
- 例如:   
+ 例如:  
   
 ```  
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]public class PythonPackage : Package, IOleComponent  
@@ -57,5 +58,5 @@ ms.lasthandoff: 10/31/2017
   
  IVsIntellisenseProject 实现处理引用，并当具有代码的 Web 页请求，但不会缓存时调用的语言编译器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [网站支持](../../extensibility/internals/web-site-support.md)

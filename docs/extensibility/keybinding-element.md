@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f620d895defbeeb3317f4a977db454a14ce3adc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2019a34e55148007cd75df12212bd4b0a897159c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keybinding-element"></a>键绑定元素
 键绑定元素指定的命令的键盘快捷方式。  
@@ -39,10 +40,10 @@ ms.lasthandoff: 10/31/2017
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必需。|  
-|id|必需。|  
-|编辑器|必需。 编辑器 GUID 指示此键盘快捷方式将对其活动的编辑上下文。 全局绑定作用域值为"guidVSStd97"。|  
-|key1|必需。 有效的值包括所有键入是字母数字，以及两位数的十六进制值以 0x 开头和[VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx)。|  
+|guid|必须的。|  
+|id|必须的。|  
+|编辑器|必须的。 编辑器 GUID 指示此键盘快捷方式将对其活动的编辑上下文。 全局绑定作用域值为"guidVSStd97"。|  
+|key1|必须的。 有效的值包括所有键入是字母数字，以及两位数的十六进制值以 0x 开头和[VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx)。|  
 |mod1|可选。 CTRL、 ALT 和 SHIFT 之间用空格分隔的任意组合。|  
 |key2|可选。 有效的值包括所有键入是字母数字，以及两位数的十六进制值以 0x 开头和[VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx)。|  
 |mod2|可选。 CTRL、 ALT 和 SHIFT 之间用空格分隔的任意组合。|  
@@ -73,6 +74,6 @@ ms.lasthandoff: 10/31/2017
 </KeyBindings>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [键绑定元素](../extensibility/keybindings-element.md)   
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

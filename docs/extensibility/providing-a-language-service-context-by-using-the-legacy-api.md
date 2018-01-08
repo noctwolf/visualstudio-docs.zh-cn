@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79f58bf66e5d0a137738d0a2cc90f67a287246dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4dbee7d2998170277369f48c3b912307d2c7e414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>通过使用旧版 API 提供的语言服务上下文
 为要提供用户上下文使用的语言服务的两个选项[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器： 提供文本标记的上下文，或提供所有的用户上下文。 本文概述了每个方面的差异。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="provide-all-user-context-to-the-editor"></a>提供到编辑器的所有用户上下文  
  如果你要创建语言服务并将[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器中，然后你可以实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>接口来为你的语言服务提供的上下文。  
   
- 用于实现的`IVsLanguageContextProvider`，上下文包 （集合） 附加到编辑器中，它负责更新上下文包。 当**动态帮助**窗口调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A>上空闲时，上下文包在此上下文包接口查询更新的编辑器。 编辑器然后通知语言服务，它应更新编辑器，并将指针传递给上下文包。 这可通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A>从编辑器到语言服务的方法。 到上下文包使用的指针，该语言服务可以现在添加和删除特性和关键字。 有关更多信息，请参见<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>。  
+ 用于实现的`IVsLanguageContextProvider`，上下文包 （集合） 附加到编辑器中，它负责更新上下文包。 当**动态帮助**窗口调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A>上空闲时，上下文包在此上下文包接口查询更新的编辑器。 编辑器然后通知语言服务，它应更新编辑器，并将指针传递给上下文包。 这可通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A>从编辑器到语言服务的方法。 到上下文包使用的指针，该语言服务可以现在添加和删除特性和关键字。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>。  
   
  有两种不同方式实现`IVsLanguageContextProvider`:  
   

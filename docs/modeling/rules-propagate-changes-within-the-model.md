@@ -14,11 +14,12 @@ caps.latest.revision: "30"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 8ec9540fb68ecb09dc592f9b05a56291c2a8c80d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7f2b46b615c80e2455823ee63262f17f08d307c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
 你可以创建应用商店规则传播到另一个中可视化和建模 SDK (VMSDK) 从在元素更改。 时对存储区中任何元素发生了更改，规则都计划在最外层事务提交时通常要执行。 有不同类型的不同种类的事件，如添加元素，或删除它的规则。 你可以附加到特定类型的元素、 形状或关系图的规则。 许多内置功能由规则定义： 例如，规则确保在模型更改时，更新关系图。 你可以通过添加您自己的规则自定义你的域特定语言。  
@@ -212,6 +213,6 @@ namespace Company.TaskRuleExample
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [事件处理程序将在模型外部更改传播](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [BoundsRules 约束形状位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)

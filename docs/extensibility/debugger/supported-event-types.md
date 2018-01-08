@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b05ff310a2e0c478b6f9be766f27731ca9f8f9ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d161b078e4001ea7f02311bbcefe4c7f1eb6b7b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-event-types"></a>支持的事件类型
 Visual Studio 调试当前支持以下事件类型：  
@@ -55,17 +56,17 @@ Visual Studio 调试当前支持以下事件类型：
 > [!NOTE]
 >  [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)界面是必需的所有事件。  
   
-|Event|IDebugProgram2|IDebugThread2|停止事件|  
+|事件|IDebugProgram2|IDebugThread2|停止事件|  
 |-----------|--------------------|-------------------|---------------------|  
-|[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|允许，但并不是必需|允许，但并不是必需|No|  
+|[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|允许，但并不是必需|允许，但并不是必需|否|  
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|必需|必需|是|  
-|[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|允许，但并不是必需|允许，但并不是必需|No|  
-|[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|允许，但并不是必需|允许，但并不是必需|No|  
-|[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|允许，但并不是必需|允许，但并不是必需|No|  
+|[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|允许，但并不是必需|允许，但并不是必需|否|  
+|[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|允许，但并不是必需|允许，但并不是必需|否|  
+|[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|允许，但并不是必需|允许，但并不是必需|否|  
 |[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|必需|必需|是|  
-|[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|必需|必需|No|  
-|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|不允许|不允许|No|  
-|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|不允许|不允许|No|  
+|[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|必需|必需|否|  
+|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|不允许|不允许|否|  
+|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|不允许|不允许|否|  
 |[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|必需|必需|是|  
 |[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|允许，但并不是必需|允许，但并不是必需|可以|  
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|必需|必需|是|  
@@ -73,19 +74,19 @@ Visual Studio 调试当前支持以下事件类型：
 |[IDebugInterceptExceptionCompleteEvent2](../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)|必需|必需|是|  
 |[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)|必需|必需|是|  
 |[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)|允许，但并不是必需|允许，但并不是必需|可以|  
-|[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|必需|允许，但并不是必需|No|  
-|[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|允许，但并不是必需|允许，但并不是必需|No|  
-|[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|必需|允许，但并不是必需|No|  
-|[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|必需|允许，但并不是必需|No|  
-|[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|必需|允许，但并不是必需|No|  
-|[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|必需|允许，但并不是必需|No|  
-|[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|允许，但并不是必需|允许，但并不是必需|No|  
+|[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|必需|允许，但并不是必需|否|  
+|[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|允许，但并不是必需|允许，但并不是必需|否|  
+|[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|必需|允许，但并不是必需|否|  
+|[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|必需|允许，但并不是必需|否|  
+|[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|必需|允许，但并不是必需|否|  
+|[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|必需|允许，但并不是必需|否|  
+|[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|允许，但并不是必需|允许，但并不是必需|否|  
 |IDebugStopCompleteEvent2|必需|必需|是|  
 |[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)|必需|必需|是|  
-|[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|允许，但并不是必需|允许，但并不是必需|No|  
-|[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|必需|必需|No|  
-|[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|必需|必需|No|  
-|[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|允许，但并不是必需|允许，但并不是必需|No|  
+|[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|允许，但并不是必需|允许，但并不是必需|否|  
+|[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|必需|必需|否|  
+|[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|必需|必需|否|  
+|[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|允许，但并不是必需|允许，但并不是必需|否|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发送事件](../../extensibility/debugger/sending-events.md)

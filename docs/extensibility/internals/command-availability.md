@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecdbdc3074ad6dc80a8bd713c46303ba3cca628c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 53ab248d9e71d3177cabb8ce522343d37bcabb26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-availability"></a>命令可用性
 Visual Studio 上下文确定哪些命令可。 具体取决于当前项目、 当前编辑器、 已加载，Vspackage 和集成的开发环境 (IDE) 的其他方面，可以更改上下文。  
@@ -53,6 +54,6 @@ Visual Studio 上下文确定哪些命令可。 具体取决于当前项目、 �
     > [!CAUTION]
     >  请确保你的 VSPackage 不影响任何现有上下文 Guid，因为其他 Vspackage 可能依赖于它们。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [选择上下文对象](../../extensibility/internals/selection-context-objects.md)   
  [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

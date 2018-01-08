@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72ebaf6fa64a35982714da67f98c20a287f6caff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 53d0a4fc5abc43bc446b3523cc7e8075eb7d4aa9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>演练： 获取已安装的代码片段 （旧实现） 的列表
 代码片段是一种代码，可插入到源缓冲区与菜单命令 （这样安装的代码代码段的列表中进行选择） 或通过从 IntelliSense 完成列表中选择代码片段快捷方式。  
@@ -179,5 +180,5 @@ class TestLanguageService : LanguageService
   
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [旧版语言服务中的代码片段支持](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a82f420203b88bb94531401d061493621f3eba93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e508bda0b22c798246b0f6abf4dfb03c41a92d6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>使用旧版 API 实例化核心编辑器
 编辑器负责文本编辑功能，如插入、 删除、 复制和粘贴。 它与由语言服务，如文本突出显示、 缩进和 IntelliSense 语句结束提供这些函数组合起来。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
  有关常规信息，请参阅[演练： 创建核心编辑器和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在核心编辑器](../extensibility/inside-the-core-editor.md)   
  [打开和保存项目项](../extensibility/internals/opening-and-saving-project-items.md)   
  [演练： 创建核心编辑器和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

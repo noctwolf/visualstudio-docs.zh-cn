@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 741fc8ac1ed4e0cc449c8010b71bd13a484933a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 768082882c5ed180956b9bac28c20283404bb913
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-models-from-text-templates"></a>从文本模板访问模型
 通过使用文本模板，你可以创建报表文件、 源代码文件和其他基于域特定语言模型的文本文件。 有关文本模板的基本信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 文本模板时进行调试，DSL 在实验模式下将工作，并且还将在其部署 DSL 的计算机上工作。  

@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d37dc9bff7652856109fb4ec29c8eaa52f1d2507
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70b0e693f4223c9fe004170a0ed1b4b70c6de442
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject 函数
 此函数将关闭项目，将标记特定会话的末尾。  
@@ -38,7 +39,7 @@ SCCRTN SccCloseProject (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功关闭该项目。|  
 |SCC_E_PROJNOTOPEN|不没有当前打开任何项目。|  
@@ -48,7 +49,7 @@ SCCRTN SccCloseProject (
 ## <a name="remarks"></a>备注  
  [SccOpenProject](../extensibility/sccopenproject-function.md)始终将在此函数之前调用。 对此函数的调用后跟调用`SccOpenProject`函数或[SccUninitialize](../extensibility/sccuninitialize-function.md)，以便完全结束到源代码管理系统的连接。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

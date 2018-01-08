@@ -10,11 +10,12 @@ ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-ms.openlocfilehash: b89f021b181e653dff97368cc5c1f2d993f04323
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: dfc81b17da8f0d7155d8d5717950f5c5bc41f52b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何： 使用 AsyncPackage 加载在后台的 Vspackage
 加载和初始化 VS 包可以导致磁盘 I/O。 如果此类 I/O 在 UI 线程上发生，它会导致响应能力问题。 为了解决此问题，Visual Studio 2015 引入了<xref:Microsoft.VisualStudio.Shell.AsyncPackage>启用后台线程上的包加载的类。  

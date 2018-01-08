@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4bd487bd3f5a6978af9f79eb9e0a00866b5df52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: df782cd974adcd589824e8a47cd0249842bd8d48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-lock-holder-management"></a>文档锁定持有者管理
 正在运行的文档表 (RDT) 维护打开的文档和它们具有任何编辑锁的计数。 以编程方式编辑在后台，而用户看到在文档窗口中的打开文档时，可以放 RDT 中的文档的编辑锁。 修改通过图形用户界面的多个文件的设计器经常使用此功能。  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
   
  很多时候一个 UI 设计器，以编程方式修改代码文件将对多个文件中做出更改。 在这种情况下<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A>方法可处理的一个或多个文档的方式保存**你想要将更改保存到以下各项？**对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [正在运行的文档表](../extensibility/internals/running-document-table.md)   
  [持久性和正在运行的文档表](../extensibility/internals/persistence-and-the-running-document-table.md)

@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 297d9535a8e9655ed87230d4f947faeb29e08487
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbf234d18c48ed501987f160bd2b98ec9f768b6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manifest-from-resources"></a>从资源清单
 从资源工具清单是一个控制台应用程序，它接受图像资源 （.png 或.xaml 文件） 的列表，并生成.imagemanifest 文件，以允许这些映像用于 Visual Studio 映像服务。 此外，可以使用此工具将映像添加到现有.imagemanifest。 此工具可用于添加到 Visual Studio 扩展的映像支持高 DPI 和主题。 应包括在生成的.imagemanifest 文件，并将其部署为 Visual Studio 扩展 (.vsix) 的一部分。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
 ||||  
 |-|-|-|  
-|**交换机名称**|**注意**|**必需或可选**|  
+|**交换机名称**|**备注**|**必需或可选**|  
 |/resources|以分号分隔的图像或目录列表。 此列表应始终包含将在清单中的映像的完整列表。 如果只提供部分列表，则未包含的条目将会丢失。<br /><br /> 如果给定的资源文件的图像条，该工具将将其拆分到单独的图像添加到清单的每个 subimage 之前。<br /><br /> 如果图像是.png 文件，我们建议如下名称格式，以便该工具可以在正确的映像属性中填充：\<名称 >。\<宽度 >。\<高度 >.png。|必需|  
 |/assembly|（不包括扩展名） 的托管程序集或托管的资源 （相对于该清单的运行时的位置） 的本机程序集的运行时路径的名称。|必需|  
 |/manifest|要向生成的.imagemanifest 文件的名称。 这也包括绝对或相对路径以在不同的位置创建文件。 默认名称匹配的程序集名称。<br /><br /> 默认值：\<当前目录 >\\< 程序集\>.imagemanifest|Optional|  

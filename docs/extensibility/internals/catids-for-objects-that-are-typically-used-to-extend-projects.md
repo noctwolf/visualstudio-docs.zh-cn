@@ -16,18 +16,19 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 568f5b98cd652e872e7bcc7d63e85de7f134546d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98349042fe66748ed4eb72a1604893e3f4e67d80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>通常用于扩展项目的对象的 Catid
 下表列出用于扩展的 Catid`Project`和`ProjectItem`自动化对象[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，和[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]项目。 这些 Catid VSLangProj.olb 中定义。  
   
 ## <a name="listing-of-catids"></a>Catid 的列表  
   
-|名称|GUID|  
+|name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProject>|{610D4614-D0D5-11D2-8599-006097C68E81}|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="visual-basic-catids"></a>Visual Basic Catid  
  下表列出用于扩展的 Catid[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]浏览对象。 所有 VSLangProj.olb 中定义它们。  
   
-|名称|GUID|  
+|name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectBrowseObject>|{E0FDC879-C32A-4751-A3D3-0B3824BD575F}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectConfigBrowseObject>|{67F8DD11-14EB-489b-87F0-F01C52AF3870}|  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="visual-c-catids"></a>Visual C# Catid  
  以下 Catid 可用于扩展[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]浏览对象。 所有 VSLangProj.olb 中定义它们。  
   
-|名称|GUID|  
+|name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectBrowseObject>|{4EF9F003-DE95-4d60-96B0-212979F2A857}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectConfigBrowseObject>|{A12CE10A-227F-4963-ADB6-3A43388513CA}|  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="c-catids"></a>C + + Catid  
  以下[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]项目的系统类型库中未公开 Catid [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .NET 2003年并且必须包含在代码中，无论何时你想要扩展这些项目对象。 将类型库中的更高版本中包括这些 Catid [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-|名称|GUID|  
+|name|GUID|  
 |----------|----------|  
 |`CVCProjectNode`|{EE8299CB-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCFolderNode`|{EE8299CA-19B6-4f20-ABEA-E1FD9A33B683}|  
@@ -73,7 +74,7 @@ const LPOLESTR CVCFileNode::s_wszCATID = L"{EE8299C9-19B6-4f20-ABEA-E1FD9A33B683
   
  以下[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]项目 Catid 当前也尚未公开类型库中的系统[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].NET 2003年并且必须包含在代码中，无论何时你想要扩展这些项目对象。 这些 Catid 是仅适用于[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].NET 2003年和更高版本的版本中不能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-|名称|GUID|  
+|name|GUID|  
 |----------|----------|  
 |`CVCAssemblyReferenceNode` **:**|{FE8299C9-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCProjectReferenceNode`|{593DCFCE-20A7-48e4-ACA1-49ADE9049887}|  
@@ -96,6 +97,6 @@ const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 |[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]|{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}|  
 |[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]|{F184B08F-C81C-45F6-A57F-5ABD9991F28F}|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)

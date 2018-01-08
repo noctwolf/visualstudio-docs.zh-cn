@@ -21,11 +21,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 775f342463e32d73cfaee6e492c1417753ec159f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3773364467ba79cb17e71feb4c1c17feded750f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>如何：添加或移除 SharePoint 连接
   服务器资源管理器可以浏览 SharePoint 站点，以及数据连接。 但是，您可以浏览 SharePoint 站点的内容之前你必须将其添加到**SharePoint 连接**节点。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  此步骤不会删除基础站点;它将删除仅从连接**服务器资源管理器**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)  
   
   

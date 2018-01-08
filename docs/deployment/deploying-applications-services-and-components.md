@@ -25,11 +25,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30261fea83870b5bdfce11a25969207aad260ee4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>Visual Studio 中的部署概述
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/15/2017
 
     ![选择发布](../deployment/media/quickstart-publish.png)
 
-- **Visual c + + 运行时**： 你可以部署 Visual c + + 运行库使用本地部署或静态链接。 有关详细信息，请参阅[部署本机桌面应用程序 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md)。 
+- **Visual c + + 运行时**： 你可以部署 Visual c + + 运行库使用本地部署或静态链接。 有关详细信息，请参阅[部署本机桌面应用程序 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。 
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>发布到 Web 或部署到网络共享
 
@@ -55,7 +56,7 @@ ms.lasthandoff: 12/15/2017
 
     你还可以部署 ASP.NET 应用程序和多种其他方式的服务。 有关详细信息，请参阅[部署 ASP.NET web 应用程序和服务](http://www.asp.net/aspnet/overview/deployment)。
 
-- **Visual c + + 运行时**： 你可以部署 Visual c + + 运行库使用集中部署。 有关详细信息，请参阅[部署本机桌面应用程序 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md)。 
+- **Visual c + + 运行时**： 你可以部署 Visual c + + 运行库使用集中部署。 有关详细信息，请参阅[部署本机桌面应用程序 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。 
 
 - **Windows 桌面**可以发布到 web 服务器或网络文件共享使用 ClickOnce 部署的 Windows 桌面应用程序。 用户随后只需一次单击即可安装应用程序。 有关详细信息，请参阅[部署桌面应用程序中使用 ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)和[部署使用 ClickOnce 的本机应用](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
 
@@ -72,7 +73,7 @@ ms.lasthandoff: 12/15/2017
     > [!NOTE]
     > 如果你还没有 Azure 帐户，则可以[此处注册](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
 
-- 其他**Azure 服务**： 请参阅特定于[Azure 服务](https://docs.microsoft.com/azure/#pivot=products)可能由 Visual Studio 支持的不同部署选项的文档。
+- 其他**Azure 服务**： 请参阅特定于[Azure 服务](/azure/#pivot=products)可能由 Visual Studio 支持的不同部署选项的文档。
 
 ### <a name="publish-to-microsoft-store"></a>将发布到 Microsoft 存储
 

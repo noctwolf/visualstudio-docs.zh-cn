@@ -20,11 +20,12 @@ caps.latest.revision: "49"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: d9d1f6ac733a0feccb3f2fa8175fb85ed035b35c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 978344a6a51662c1d9103c386a917e1eb3cdc0ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用代码图调试你的应用程序
 代码图有助于防止你在大型基本代码、不熟悉的代码或旧代码中迷失方向。 例如，调试时，你可能需要在多个文件和项目之间查看代码。 使用代码图在这些代码段中导航，了解代码段之间的关系。 这样，你不必在脑海中跟踪此代码，或绘制单独的关系图。 所以，在你的工作中断时，代码图有助于让你回想起你正在处理的代码。  
@@ -139,6 +140,6 @@ ms.lasthandoff: 10/27/2017
   
  现在你已完成调查。 你通过映射代码成功找到并解决了问题。 你也拥有可帮助你浏览代码的代码图，请记住你所学的内容并演示你用于解决此问题的步骤。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)   
  [代码可视化](../modeling/visualize-code.md)

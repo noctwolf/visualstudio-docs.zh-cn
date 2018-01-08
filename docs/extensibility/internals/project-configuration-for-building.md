@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f89736c448570157711c15d2d86091d91e1f30d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2d8f37068d197d133ba8798703c8f82093261aca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-configuration-for-building"></a>生成的项目配置
 由解决方案配置对话框中，给定的解决方案的解决方案配置的列表进行管理。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
  此外，你可以提供的网格项目依赖关系窗口中。 有关详细信息，请参阅[属性显示网格](../../extensibility/internals/properties-display-grid.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理配置选项](../../extensibility/internals/managing-configuration-options.md)   
  [用于管理部署的项目配置](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
  [用于输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)

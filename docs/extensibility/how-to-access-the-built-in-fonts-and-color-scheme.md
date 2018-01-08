@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae5c64d0272b998d27a9eb5753c04ae764c3af8f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5d8af96857fa3e3c02ce8ea29711eaffbb532e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>如何： 访问的内置的字体和配色方案
 Visual Studio 集成的开发环境 (IDE) 有与编辑器窗口相关联的字体和颜色的架构。 你可以访问通过此方案<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。  
@@ -58,7 +59,7 @@ Visual Studio 集成的开发环境 (IDE) 有与编辑器窗口相关联的字�
   
 2.  填充注册表以具有四个值中使用的常用字体和颜色方案：  
   
-    |名称|类型|数据|描述|  
+    |name|类型|数据|描述|  
     |----------|----------|----------|-----------------|  
     |类别|REG_SZ|GUID|用于标识包含常用的字体和颜色方案的类别的任意 GUID。|  
     |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 使用默认的字体和颜色配置的所有 Vspackage 都使用此 GUID。|  
@@ -98,7 +99,7 @@ if (spPropCatContainer != NULL){
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用字体和颜色](../extensibility/using-fonts-and-colors.md)   
  [获取字体和文本着色的颜色信息](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [访问存储的字体和颜色设置](../extensibility/accessing-stored-font-and-color-settings.md)   

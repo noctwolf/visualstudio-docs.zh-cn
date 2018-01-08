@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9335f9a9ad6aedab1f0455267c1cca48bf1b3ca4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2f8edcf34d43311be7406c307a7fea98169712a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-legacy-language-service"></a>注册旧语言服务
 在托管的包框架 (MPF) 中，语言服务提供由 VSPackage (请参阅[Vspackage](../../extensibility/internals/vspackages.md)) 并注册的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过添加注册表项和条目。 在安装过程中部分和部分运行时，会在完成此注册过程。  

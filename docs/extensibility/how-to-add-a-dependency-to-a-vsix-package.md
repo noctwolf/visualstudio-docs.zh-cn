@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9f6f1e4739922a2d73999b36c0dc66e6069a6d6b
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: vssdk
+ms.openlocfilehash: 27fbf8c079ca1270074d7cae683ef6f8127e2a5a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何： 将依赖项添加到 VSIX 包
 
@@ -50,6 +51,6 @@ ms.lasthandoff: 11/29/2017
 VSIXInstaller 将检测 Visual Studio 的早期版本，并通知用户需要更高版本的更新。
 
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
  [VSIX 扩展架构 1.0 引用](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)[剖析 VSIX 包](../extensibility/anatomy-of-a-vsix-package.md)[准备 Windows Installer 部署扩展](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

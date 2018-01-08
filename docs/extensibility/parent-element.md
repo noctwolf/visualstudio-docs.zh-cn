@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc66e193b13ac6baf9d6089483a1281c2d6a59ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f2209ce2a2f6b1263bb52d550ca303f2525047d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parent-element"></a>父元素
 父级的按钮或组合框只能是一个组。 菜单或组的父级可以是任何其他菜单或组。 在[CommandPlacement 元素](../extensibility/commandplacement-element.md)，此元素是必需的; 所有其他实例中是可选的。 如果省略此元素的父`Group_Undefined:0`将隐式。  
@@ -37,8 +38,8 @@ ms.lasthandoff: 10/31/2017
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必需。 GUID GUID/ID 的命令标识符。|  
-|id|必需。 ID 的 GUID/ID 命令标识符。|  
+|guid|必须的。 GUID GUID/ID 的命令标识符。|  
+|id|必须的。 ID 的 GUID/ID 命令标识符。|  
   
 ### <a name="child-elements"></a>子元素  
  无  
@@ -52,5 +53,5 @@ ms.lasthandoff: 10/31/2017
 |[Menus 元素](../extensibility/menus-element.md)|定义 VSPackage 实现的所有菜单。|  
 |[Groups 元素](../extensibility/groups-element.md)|包含定义的 VSPackage 命令组的条目。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

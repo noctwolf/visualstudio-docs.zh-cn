@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26456122d8b2cb0e89cfcda929cf68306959a31e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757668070daacb449a6bc7cbd88ae629fe6487a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-nested-projects"></a>如何： 实现嵌套的项目
 当你创建嵌套的项目类型，存在几个附加步骤必须实现。 父项目采用上某些相同解决方案具有为其嵌套 （子） 项目的职责。 父项目是类似于解决方案的项目的容器。 具体而言，有几个解决方案和通过要生成嵌套的项目的层次结构的父项目必须引发的事件。 创建嵌套的项目的以下过程介绍了这些事件。  
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
   
  [筛选嵌套项目的 AddItem 对话框](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将项添加到添加新项对话框](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)   
  [清单： 创建新项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   

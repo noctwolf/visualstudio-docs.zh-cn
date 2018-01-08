@@ -14,14 +14,15 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 950384dfce7de39969b054f6c1019fa36c1efa38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb8b96e3a44ae1bb03cde58fc28af4871e80aaf4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
-此函数将检索一个标志，指示该函数是否已标记为内联 (使用之一[inline、 __inline、 \__forceinline](/cpp/cpp/inline-functions-cpp.md)属性)。  
+此函数将检索一个标志，指示该函数是否已标记为内联 (使用之一[inline、 __inline、 \__forceinline](/cpp/cpp/inline-functions-cpp)属性)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,13 +42,13 @@ HRESULT get_inlSpec(
 > [!NOTE]
 >  返回值`S_FALSE`意味着属性不是可用于符号。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
   
-|要求|描述|  
+|需求|描述|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [inline、__inline、\__forceinline](/cpp/cpp/inline-functions-cpp.md)
+ [inline、__inline、\__forceinline](/cpp/cpp/inline-functions-cpp)

@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ab395fdb8c06e643c76ee0918b8a626abb756cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d30ad5b61f59e6183067ddcc789b2fc796c7aef9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-custom-text-markers"></a>如何： 创建自定义文本标记
 如果你想要创建自定义文本标记，来强调或将代码组织，你必须执行以下步骤：  
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
   
      一个标识你的服务返回唯一的 cookie。 更高版本可以使用此 cookie 撤消你的自定义标记类型服务通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>方法<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService>接口指定此 cookie 值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用文本标记用于旧 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
  [如何： 实现错误标记](../extensibility/how-to-implement-error-markers.md)   

@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b71c977fcc616c6d9cf30b78c9fd7610f11bcd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ee8ad89e02dfa8aebbb39a9d7ebe523ad01bb7e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>卸载使用 Windows Installer VSPackage
 Windows Installer 大多数情况下，可以只需通过卸载你的 VSPackage"撤消"它未安装你的 VSPackage。 自定义操作中所述[命令，必须为运行后安装](../../extensibility/internals/commands-that-must-be-run-after-installation.md)必须也卸载后运行。 由于指向 devenv.exe 的调用发生在安装和卸载的情况下了 InstallFinalize 标准操作之前，所以 CustomAction 和 InstallExecuteSequence 表条目将用作这两种情况。  
@@ -41,6 +42,6 @@ Windows Installer 大多数情况下，可以只需通过卸载你的 VSPackage"
 > [!NOTE]
 >  `Installed`是 Windows Installer 设置在检测到你的 VSPackage，已安装在系统上的属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows 安装程序](http://msdn.microsoft.com/en-us/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
  [检测系统要求](../../extensibility/internals/detecting-system-requirements.md)

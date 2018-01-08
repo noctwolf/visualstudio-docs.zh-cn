@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e590d6fff715aae33ee757460f2b0ba3df31e6e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>语言服务和编辑器扩展入门
 编辑器扩展可用于将语言服务功能，如大纲显示、 大括号匹配、 IntelliSense、 和电灯泡添加到您自己的编程语言或任何内容类型。 你还可以自定义的外观和行为的 Visual Studio 编辑器中，例如着色、 边距、 修饰和其他可视元素的文本。 你还可以定义自己的类型的内容，并指定的外观和行为的你的内容将显示的文本视图。  
@@ -88,5 +89,5 @@ ms.lasthandoff: 10/31/2017
   
 -   [演练：在编辑器扩展中使用快捷键](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

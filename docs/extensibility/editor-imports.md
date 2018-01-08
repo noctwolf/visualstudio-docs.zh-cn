@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81e0a131ef35202581ffb78a75a6b48239a7d81f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 937bf977090699f5d3bf52414f57f6066dd55a17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-imports"></a>编辑器导入
 你可以导入大量的编辑器服务、 工厂、 和到核心编辑器将你的扩展提供不同类型的访问的代理。 例如，你可以导入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>若要为你提供<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>为给定的内容类型。 （此导航器情况允许你在文本缓冲区上执行不同类型的搜索）。  
@@ -122,5 +123,5 @@ internal SVsServiceProvider ServiceProvider = null;
 |<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>|一个 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSession>。|  
 |<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|一个 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 263e2adf69aa479974a07dbb2acc2d4cd8f2a0dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1405fbeba34f3e3aa9c645f6eaffe90fe6ac9036
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackage-registration"></a>VSPackage 注册
 Vspackage 必须告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]它们安装，应将加载。 此过程通过在注册表中写入信息。 这是典型的作业的安装程序。  
@@ -58,6 +59,6 @@ Vspackage 必须告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md
   
 -   可能被拒绝自注册代码，访问网络资源，如类型库，如果组件是同时指定为运行从源和 SelfReg 表中列出。 这会导致要管理的安装过程中发生故障的组件安装。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows 安装程序](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
  [托管的包注册](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

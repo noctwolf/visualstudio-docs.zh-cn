@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 7dabd752aed4213c03ffd32ed5cc255ea4f2852e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a08d7a94dcd512f650564a07a1e6784bffe8c45e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>从模型中生成并配置你的应用程序
 你可从模型生成或配置你的应用程序的不同部件。
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/27/2017
   
      例如，UML 类图是框和箭头的集合；有了这种表示法，你在理论上能定义任何内容。 但是，除非你实际需要描述一组类型，否则我们不建议你使用类图。 例如，你可以采用类图来描述不同类型的网页。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)   
  [如何： 从在程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

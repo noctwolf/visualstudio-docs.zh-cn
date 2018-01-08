@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e85c47133509e3f7bf7c54b8cfa7f2121a26b04b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9da6a64eafa28ac173e4dd64b38d1e64d9639e34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-roles"></a>域角色的属性
 下表中的属性是与域角色关联。 有关域角色的信息，请参阅[了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展的域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/27/2017
 |属性 Getter 的访问修饰符|为生成的属性 getter 的访问修饰符 (`public`， `internal`， `private`， `protected`，或`protected internal`)。|`public`|  
 |属性 Setter 的访问修饰符|生成的属性的 setter 的访问修饰符 (`public`， `internal`， `private`， `protected`，或`protected internal`)。|`public`|  
 |重数|这可以播放相反的角色的模型元素的数目 (`0..1`， `1..1`， `0..*`，或`1..*`)。 如果重数`0..*`或`1..*`，则生成的属性表示的集合; 否则，生成的属性表示单个模型元素。|依赖于的关系类型和是否这是关系中的源或目标的角色。|  
-|名称|域角色的名称。 此属性不能包含空格。|此角色的角色扮演者域类的名称。|  
+|name|域角色的名称。 此属性不能包含空格。|此角色的角色扮演者域类的名称。|  
 |传播复制|`DoNotPropagateCopy`-复制的角色扮演者将拥有此链接的任何副本。<br /><br /> `PropagateCopyToLinkOnly`-将复制的链接将指向现有相反角色扮演者。<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer`-将复制的链接指向一份相反角色扮演者。|`PropagateCopyToLinkAndOppositeRolePlayer`嵌入的源角色。<br /><br /> `DoNotPropagateCopy`对于其他角色。<br /><br /> 有关详细信息，请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)|  
 |传播删除|`True`若要删除在此角色时删除的关联的链接，播放的元素。|`True`对于嵌入的角色的目标。<br /><br /> `False`对于其他角色。<br /><br /> 有关详细信息，请参阅[自定义删除行为](../modeling/customizing-deletion-behavior.md)。|  
 |属性名|角色扮演者的代码中生成的属性名称。 此名称不能包含空格。|如果此角色具有零到一个相反的角色的名称或一对一的重数;否则为 pluralized 相反的角色的名称。|  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/27/2017
 > [!NOTE]
 >  显示名称的默认值基于关联的属性值插入每个大写字符小写字符前面和不跟另一个大写字符之前的空格。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域关系的属性](../modeling/properties-of-domain-relationships.md)

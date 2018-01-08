@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 985a174955ac96c37cc4f50e4550f7186d3f80c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 672ce7f47dc8478343f336ed06757af109a5ecce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control"></a>源代码管理
 本部分讨论用于实现的一个集成功能作为源代码管理选项[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，通过源代码管理插件或源代码管理 VSPackage。  

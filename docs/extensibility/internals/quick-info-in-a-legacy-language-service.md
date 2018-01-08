@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 692884d31e55921489aad0fbbea32ca1c094c6c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8e0fa4a65960d0324a4be19db61648be48b08349
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>在旧语言服务中的快速信息
 IntelliSense 快速信息在当用户将插入符号放置在标识符中并选择在源中显示有关标识符的信息**快速信息**从**IntelliSense**菜单或保存鼠标通过标识符的光标。 这将导致出现包含的有关标识符的信息工具提示。 此信息通常包括标识符类型。 活动的调试引擎时，此信息可能包括的当前值。 调试引擎提供表达式值，而该语言服务处理仅标识符。  

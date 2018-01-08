@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1cfe20d0cac50603265644fb48102ef22537631
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4888489ef5b60b1222acf09b827c7551818c64b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>如何：执行 SharePoint 命令
   如果你想要在 SharePoint 工具扩展中使用服务器对象模型，则必须创建自定义*SharePoint 命令*调用 API。 在定义该命令并将其部署与您的 SharePoint 工具扩展后，你的扩展可以执行命令来调入 SharePoint 服务器对象模型。 若要执行此命令，使用的一种 ExecuteCommand 方法<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>对象。  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="compiling-the-code"></a>编译代码  
  此示例需要 Microsoft.VisualStudio.SharePoint 程序集的引用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [如何： 创建 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [演练：扩展服务器资源管理器以显示 Web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d926a498549e868e478d83b7930f5e569f49ce20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d41c1bf063ea074df217934a00f73291a10e051d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-error-markers"></a>如何： 实现错误标记
 错误标记 （或红色的波浪形下划线） 是最困难的文本编辑器自定义项，来实现的。 但是，它们提供给你的 VSPackage 的用户的好处可以远远超过，让他们的成本。 错误标记稍标记语言分析器认为正确带有波浪或波浪红色下划线的文本。 此指标的帮助程序员直观地显示不正确的代码。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  如果发现错误，任务提供程序将创建一个任务项实例。 此实例创建该环境使用作为文本视图中的错误标记的文本标记。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用文本标记用于旧 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
  [如何： 创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   

@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f21356c34a94540d20be2bb9fa092bff270f1a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe7822382443e6c1e9bc1a77eb0cd64844504172
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-solution-packages"></a>创建 SharePoint 解决方案包
   通过使用包设计器，你可以创建和自定义部署包。 例如，你可以添加 SharePoint 项目项和功能，重置 IIS 服务器、 设置功能激活作用域，和识别功能依赖关系。 设计器还会生成一个清单，一个用于描述每个包的 XML 文件。  
@@ -39,9 +40,9 @@ ms.lasthandoff: 10/31/2017
   
 |包设计器属性|默认设置的说明|  
 |-------------------------------|------------------------------------|  
-|名称|必需。 包的默认名称设置为*ProjectName*。|  
+|name|必须的。 包的默认名称设置为*ProjectName*。|  
 |重置 web 服务器|可选。 如果你想要在 SharePoint 服务器上安装.wsp 文件之后重新启动 Web 服务器，请选择此选项。|  
-|部署服务器类型|必需。 默认情况下，范围设置为应用程序服务器。<br /><br /> 应用程序服务器： 介绍承载服务的服务器。<br /><br /> WebFrontEnd： 介绍承载网站的服务器。|  
+|部署服务器类型|必须的。 默认情况下，范围设置为应用程序服务器。<br /><br /> 应用程序服务器： 介绍承载服务的服务器。<br /><br /> WebFrontEnd： 介绍承载网站的服务器。|  
 |解决方案中的项|所有 SharePoint 项目项和可以添加到包的功能。|  
 |包中的项|可选。 所有 SharePoint 项目和你想要部署包中的功能。|  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="package-folder-structure"></a>包的文件夹结构  
  当打包你的 SharePoint 项目时，.wsp 文件中为你创建 SolutionFolder\bin\\*BuildConfiguration*文件夹。 例如，如果你的解决方案是在*驱动器*: \Visual Studio 2013\Projects\ListDefinition1 和生成配置设置为发布，.wsp 文件位于*驱动器*: \Visual Studio 2013\Projects\ListDefinition1\bin\Release。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [如何： 添加和移除功能和包项使用包设计器](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
  [如何： 创建 SharePoint 包](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)   

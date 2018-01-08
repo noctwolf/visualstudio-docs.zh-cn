@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b437dad35850a20696702b84d8ea98ead8a1e9e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a9d09c452fb6d03f7f5072e34813c3757455f96a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>在编辑器中的旧接口
 你可以从旧接口访问 Visual Studio 编辑器。 Visual Studio SDK 包括适配器称为*填充码*，它实现这些接口，以便与新的编辑器进行交互。 不过，我们建议你更新旧代码以使用新的编辑器 API。 你的代码将更好地执行，你可以使用 Windows Presentation Foundation (WPF) 和 Managed Extensibility Framework (MEF) 等新技术。  

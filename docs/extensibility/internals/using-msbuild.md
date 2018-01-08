@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a148a7c5fa6d0e72345ab7f96696a11d5ba5185f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3b9d05b85cacfcdf90a883ffd08d4dec316eaafc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
 MSBuild 提供了用于创建全面地描述要生成、 生成任务，并生成配置的项目项的项目文件以定义完善的可扩展 XML 格式。  
@@ -28,7 +29,7 @@ MSBuild 提供了用于创建全面地描述要生成、 生成任务，并生�
 ## <a name="general-msbuild-considerations"></a>常规 MSBuild 注意事项  
  MSBuild 项目文件，例如， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] .csproj 和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].vbproj 文件包含在生成期间使用，但还可以包含在设计时使用的数据的数据。 生成时数据用 MSBuild 基元，包括存储[Item 元素 (MSBuild)](../../msbuild/item-element-msbuild.md)和[Property 元素 (MSBuild)](../../msbuild/property-element-msbuild.md)。 设计时数据，这是特定于项目类型和任何相关的项目子类型的数据，存储在为其保留的自由格式 XML 中。  
   
- MSBuild 不具有对配置对象的本机支持，但提供了用于指定配置特定数据条件属性。 例如:   
+ MSBuild 不具有对配置对象的本机支持，但提供了用于指定配置特定数据条件属性。 例如:  
   
 ```xml  
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>  
@@ -56,7 +57,7 @@ MSBuild 提供了用于创建全面地描述要生成、 生成任务，并生�
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>单个文件生成器 vs。MSBuild 任务  
  单个文件生成器设计仅在时，可访问，但可以在设计时和生成时使用 MSBuild 任务。 最大的灵活性，因此，使用 MSBuild 任务来转换和生成代码。 有关详细信息，请参阅[自定义工具](../../extensibility/internals/custom-tools.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBuild 参考](../../msbuild/msbuild-reference.md)   
  [MSBuild](../../msbuild/msbuild.md)   
  [自定义工具](../../extensibility/internals/custom-tools.md)

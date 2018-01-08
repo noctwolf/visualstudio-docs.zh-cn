@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29cbc142be40d4c4e2e8780304767bd17d1d94fe
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 22261c7485f1779eb3613c7ef5af693feeb51fbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-single-file-generators"></a>注册单个文件生成器
 在中提供一个自定义工具[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，必须将其注册因此[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以实例化并将其关联与特定项目类型。  
@@ -47,11 +48,11 @@ ms.lasthandoff: 12/14/2017
   
     -   CLSID  
   
-         必需。 指定实现的 COM 组件的类库的标识符<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>。  
+         必须的。 指定实现的 COM 组件的类库的标识符<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>。  
   
     -   GeneratesDesignTimeSource  
   
-         必需。 指示是否从由此自定义工具生成的文件类型以及可供可视化设计器。 此参数的值需要 （零） 为 0 到可视化设计器不可用的类型或类型可用于可视化设计器 （一个） 1。  
+         必须的。 指示是否从由此自定义工具生成的文件类型以及可供可视化设计器。 此参数的值需要 （零） 为 0 到可视化设计器不可用的类型或类型可用于可视化设计器 （一个） 1。  
   
     > [!NOTE]
     >  你必须注册为你想自定义工具可为其每个语言分别自定义工具。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 12/14/2017
     "GeneratesDesignTimeSource"=dword:00000001  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>   
  [实现单个文件生成器](../../extensibility/internals/implementing-single-file-generators.md)   
  [公开到可视化设计器的类型](../../extensibility/internals/exposing-types-to-visual-designers.md)   

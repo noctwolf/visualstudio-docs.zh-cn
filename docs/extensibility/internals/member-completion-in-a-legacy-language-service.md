@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ee8dd14674a1157eefda60e2e7536d7ade90f79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e77511bdaaa96dc75f5be75c175b63fcd3cc3253
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>在旧语言服务的成员自动补全
 IntelliSense 成员完成为工具提示显示特定的作用域，如类、 结构、 枚举或命名空间的可能成员的列表。 例如，在 C# 中，如果用户键入"this"跟一个句点的类或结构在当前范围内的所有成员的列表显示，用户可以从中选择的列表中。  

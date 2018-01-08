@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e18eedcab133329f10064ef3dd6486beb2e1596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d6415953a350321cb13f2705fa2bb182c278faa3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 函数
 此函数启动源代码管理操作批处理的序列。 [SccEndBatch](../extensibility/sccendbatch-function.md)将调用以结束批处理。 这些批不能嵌套。  
@@ -35,7 +36,7 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|批操作已成功开始。|  
 |SCC_E_UNKNOWNERROR|非特定的失败。|  
@@ -45,6 +46,6 @@ SCCRTN SccBeginBatch(void);
   
  批处理操作生效时，源代码管理插件应呈现给用户的最多为任何问题的一个对话框中，并应用所有后续操作从该对话框中的响应。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccEndBatch](../extensibility/sccendbatch-function.md)

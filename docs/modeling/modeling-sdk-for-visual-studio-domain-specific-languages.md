@@ -15,11 +15,12 @@ caps.latest.revision: "77"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 48cb7e5a274092a3ed82d2e41137633d12c3be01
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4bc85e0b5d03af1a34676030144f36457c1366ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio 的建模 SDK - 特定于域的语言
 通过使用适用于的建模 SDK [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，你可以创建功能强大的基于模型的开发工具，你可以将集成到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 同样，你可以创建一个或多个模型定义并将其集成到工具集中。  

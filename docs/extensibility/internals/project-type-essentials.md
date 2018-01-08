@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33f31ec1d5adedb2fac6c2a37c050ee65d774894
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 899d2758be1561d9b5fbda3280230333cc0ac8a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-type-essentials"></a>项目类型 Essentials
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]包括几种语言的项目类型，如[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]或[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]此外可以创建您自己的项目类型。  
@@ -66,5 +67,5 @@ ms.lasthandoff: 10/31/2017
   
 -   项目类型可支持多个配置，例如调试和发布。 用户可以通过使用你提供的属性页更改项目的不同配置。 有关详细信息，请参阅[管理配置选项](../../extensibility/internals/managing-configuration-options.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [部署项目类型](../../extensibility/internals/deploying-project-types.md)

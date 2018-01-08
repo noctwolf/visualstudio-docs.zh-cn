@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9b48a6d079ebe43f3d1e3c97a9272e8ad05b6735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6bb99e6ef2c4a898285e4d7dae503aec0fc7d955
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-template-directive"></a>T4 模板指令
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] T4 文本模板通常以 `template` 指令开头，该指令指定应如何处理模板。 文本模板及其包括的任何文件中不应有多个 template 指令。  
@@ -76,11 +77,11 @@ hostspecific="true"
  有效值：  
  `true, false, trueFromBase`。 默认值是 False。  
   
- 如果将此特性的值设置为 `true`，则会将名为 `Host` 的属性添加到由文本模板生成的类中。 该属性是对转换引擎的宿主的引用，并声明为 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。 如果已经定义了自定义宿主，则可以将其转换为自定义宿主类型。  
+ 如果将此特性的值设置为 `true`，则会将名为 `Host` 的属性添加到由文本模板生成的类中。 该属性是对转换引擎的宿主的引用，并声明为 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。 如果已经定义了自定义宿主，则可以将其转换为自定义主机类型。  
   
  因为此属性的类型取决于宿主的类型，所以仅当编写只适用于特定宿主的文本模板时才有用。 它是适用于[设计时模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不是[运行时模板](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
- 当 `hostspecific` 为 `true`，而且正在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 时，可以将 `this.Host` 强制转换为 IServiceProvider，以访问 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 功能。 还可以使用 `Host.ResolvePath(filename)` 来获得项目中文件的绝对路径。 例如：  
+ 当 `hostspecific` 为 `true`，而且正在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 时，可以将 `this.Host` 强制转换为 IServiceProvider，以访问 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 功能。 还可以使用 `Host.ResolvePath(filename)` 来获得项目中文件的绝对路径。 例如:  
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -115,7 +116,7 @@ Content of myFile is:
   
  Language 特性指定的语言 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) 要用于语句和表达式块中的源代码。 从中生成输出的中间代码文件将使用此语言。 此语言与您的模板生成的语言无关，它可以是任何类型的文本。  
   
- 例如：  
+ 例如:  
   
 ```vb  
 <#@ template language="VB" #>  
@@ -208,7 +209,7 @@ This is the common footer.
 >  如果同时使用 `inherits` 和 `hostspecific` 特性，则请在派生类和基类中分别指定 hostspecific="trueFromBase" 和 host="true"。 这样可避免双重定义生成代码中的 `Host` 属性。  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>设计时文本模板中的继承  
- 设计时文本模板是为其文件**自定义工具**设置为**TextTemplatingFileGenerator**。 该模板会生成代码或文本的输出文件，此文件将组成 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目的一部分。 若要生成输出文件，首先要将模板转换为中间程序代码文件，您通常不会看到该文件。 `inherits` 特性为此中间代码指定基类。  
+ 设计时文本模板是为其文件**自定义工具**设置为**TextTemplatingFileGenerator**。 该模板会生成代码或文本的输出文件，此文件将组成 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目的一部分。 若要生成输出文件，首先要将模板转换为中间程序代码文件，你通常不会看到该文件。 `inherits` 特性为此中间代码指定基类。  
   
  对于设计时文本模板来说，可以指定从 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> 派生的任何基类。 使用 `<#@assembly#>` 指令来加载包含基类的程序集或项目。  
   

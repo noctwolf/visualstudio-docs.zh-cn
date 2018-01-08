@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b5cec31349b2db94536f3d67ca137885f757263
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ac781256ee78becf3b0cfdffbbec6f0c6bc30225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-project-essentials"></a>Web 项目 Essentials
 Web 项目创建 Web 应用程序。 可以使用 Web 项目创建的 Web 应用程序有智能 Web 页。 智能网页上的呈现按需 Web 页面的服务器端代码。  
@@ -59,5 +60,5 @@ Web 项目创建 Web 应用程序。 可以使用 Web 项目创建的 Web 应用
   
     -   始终应在代码编辑器的主缓冲区中创建错误标记 （红色标记）。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Web 项目](../../extensibility/internals/web-projects.md)

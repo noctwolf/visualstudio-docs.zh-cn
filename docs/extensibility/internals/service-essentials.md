@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 006ab3b57a21d5b9a661f06bc984f4dca8757bfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4db5404ed4cb307064d9d913c240b16051c25977
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="service-essentials"></a>服务 Essentials
 服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供一组特定的接口，另一个 VSPackage 来使用。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]本身就是向其他 Vspackage 提供服务的 Vspackage 集合的形式。  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/31/2017
     
     此代码包含 SVsActivityLog 服务，并将其强制转换为 IVsActivityLog 接口，它可以用于写入活动日志。 有关示例，请参阅[如何： 使用活动日志](../../extensibility/how-to-use-the-activity-log.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [可用服务列表](../../extensibility/internals/list-of-available-services.md)   
  [使用和提供服务](../../extensibility/using-and-providing-services.md)   
  [强制转换和类型转换](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)   

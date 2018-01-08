@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b9009a4adab2420a796b3011175ef37fac9bfcb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 129f86fae5de5501d72b0cdbe5e261717e60e780
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solution-configuration"></a>解决方案配置
 解决方案配置存储解决方案级别的属性。 它们指示的行为**启动**(f5) 和**生成**命令。 默认情况下，这些命令将生成并启动调试配置。 解决方案配置的上下文中执行这两个命令。 这意味着用户可以启动和生成通过设置配置任何活动解决方案中期望 F5。 环境旨在针对解决方案而不是项目到构建和运行时进行优化。  
@@ -25,11 +26,11 @@ ms.lasthandoff: 10/31/2017
  标准的 Visual Studio 工具栏包含一个开始按钮和解决方案配置开始按钮右侧的下拉列表。 此列表允许用户选择要在按下 F5 时启动的配置、 创建其自己的解决方案配置，或编辑现有配置。  
   
 > [!NOTE]
->  没有可扩展性接口来创建或编辑解决方案配置。 必须使用`DTE.SolutionBuilder`。 但是，用于管理解决方案生成有扩展性 Api。 有关更多信息，请参见<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。  
+>  没有可扩展性接口来创建或编辑解决方案配置。 必须使用`DTE.SolutionBuilder`。 但是，用于管理解决方案生成有扩展性 Api。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。  
   
  下面是如何实现支持你的项目类型的解决方案配置：  
   
--   Project  
+-   项目  
   
      显示当前解决方案中找到的项目的名称。  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
  一旦添加新的解决方案配置，用户可以选择它从要生成和/或启动该配置标准工具栏上的解决方案配置下拉列表框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理配置选项](../../extensibility/internals/managing-configuration-options.md)   
  [生成的项目配置](../../extensibility/internals/project-configuration-for-building.md)   
  [项目配置对象](../../extensibility/internals/project-configuration-object.md)

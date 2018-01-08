@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7f863377f326dd7bd62381a34c6236d938b11505
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 93eb993877d464f4303e0b49dc7219425c1a5f6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgundef-file"></a>通过使用修改独立的 Shell。Pkgundef 文件
 你可以修改.pkgundef 文件以排除指定的注册表条目从独立的 shell 应用程序。 通常情况下，首次应用程序启动的计算机，Visual Studio shell 将复制现有的 Visual Studio 注册表条目到应用程序的根注册表项。 这包括对当前安装的 Vspackage 的任何引用。  
@@ -44,6 +45,6 @@ ms.lasthandoff: 10/31/2017
   
  到应用程序的.pkgundef 文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 功能的包 Guid](package-guids-of-visual-studio-features.md)   
  [自定义独立 Shell](customizing-the-isolated-shell.md)

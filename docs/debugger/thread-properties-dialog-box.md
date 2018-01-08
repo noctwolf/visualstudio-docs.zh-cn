@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Spy++, thread properties
 - thread properties, Spy++
@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9250db8b405885b5f8e8c76a68d0663c52d82ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0abdebd821051d6821567c8a8ec87329868c6b28
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="thread-properties-dialog-box"></a>“线程属性”对话框
 使用此对话框可以查找有关特定线程详细信息。 若要显示此对话框中，将焦点移至[线程视图](../debugger/threads-view.md)窗口中或打开[消息视图](../debugger/messages-view.md)展开一条消息。 在树中，选择任何线程节点，然后选择**属性**从**视图**菜单。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
  [线程视图中的线程搜索](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
  说明如何在线程视图中找到特定线程。  
   
- [“线程”视图](../debugger/threads-view.md)  
+ [线程视图](../debugger/threads-view.md)  
  显示活动线程的树的视图。  
   
  [Spy++ 视图](../debugger/spy-increment-views.md)  

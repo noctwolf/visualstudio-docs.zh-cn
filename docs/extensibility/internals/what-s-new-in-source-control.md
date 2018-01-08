@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 946a3c9fb7d3f0ccd6a90383f6ca22d91c0009a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9fc1c5956a4d3c20f8b9abec36d554f3ec56c8c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-source-control"></a>什么 &#39; s 源代码管理中的新增功能
 在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]你可以通过实现 VSPackage 的源控件提供深入地集成的源代码管理解决方案。 此部分描述源控件 Vspackage 的功能，并提供的实现步骤概述。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  您的源代码管理 VSPackage 必须侦听事件如实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>接口以及跟踪项目文档 (TPD) 事件 (的实施方式<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>接口) 并采取必要措施。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   

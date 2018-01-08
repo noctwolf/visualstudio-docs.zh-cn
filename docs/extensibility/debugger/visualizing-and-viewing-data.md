@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e493cdbccf12019584bb08b82503d6a8c6ebeea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 14e5b641dc5bc51ac066f32332f3fdb2b01d1810
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visualizing-and-viewing-data"></a>可视化和查看数据
 类型可视化工具和自定义查看器存在数据，以快速开发人员有意义的方式。 表达式计算器 (EE) 可以支持第三方类型可视化工具，以及提供其自己的自定义查看器。  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="supporting-both-type-visualizers-and-custom-viewers"></a>同时支持键入可视化工具和自定义查看器  
  类型可视化工具和自定义查看器中的，可以支持 EE [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)和[GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)方法。 首先，EE 在返回的值中添加了自定义查看器，它提供大量[GetCustomViewerCount](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)方法。 其次，EE 追加`CLSID`返回的列表到其自己自定义查看器 s [GetCustomViewerList](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试任务](../../extensibility/debugger/debugging-tasks.md)   
  [类型可视化工具和自定义查看器](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

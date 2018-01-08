@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b987d5e88bcbcf02bfd80ddf5c3ed0d67a149b53
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 35bd935683f8ace47536389ebc65f34311e9fcfd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>指定到 VS Shell VSPackage 文件位置
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必须能够定位程序集 DLL 以加载 VSPackage。 下表中所述，你可以以各种方式找到它。  

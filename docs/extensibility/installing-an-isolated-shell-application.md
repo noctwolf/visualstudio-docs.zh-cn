@@ -16,11 +16,12 @@ caps.latest.revision: "40"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3c6d5d88563d97c18081cbf44b67e247d98a468
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fffbe31d9d5919c1e8b94482556c851fc07a1750
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-an-isolated-shell-application"></a>安装独立的 Shell 应用程序
 若要安装 Shell 应用程序必须执行以下步骤。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
  所有本文档中的代码示例来自于[Shell 部署示例](http://go.microsoft.com/fwlink/?LinkId=262245)，可以从 MSDN 网站上的代码库下载该。 此示例演示执行每个步骤的结果。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>系统必备  
  若要执行本主题介绍的过程，必须在你的计算机上安装以下工具。  
   
 -   Visual Studio SDK  
@@ -370,5 +371,5 @@ boutiqueInstallCmd.Format(cmdLine, msi, log);
 dwResult = ExecCmd(boutiqueInstallCmd, FALSE);  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练：创建基本的独立 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

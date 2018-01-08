@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: eae3a0ffd77fa4b399b2d62d3139e7bd8a405d48
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 850cb58f6763b521da9cdb1779b0960c0607ef88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 当用户保存实例，或*模型*，域特定语言 (DSL) 中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，创建或更新的 XML 文件。 可以重新加载文件以重新创建存储区中的模型。  
@@ -99,7 +100,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="understanding-monikers"></a>了解名字对象  
  名字对象用于表示的模型和关系图文件不同部分之间的交叉引用。 它们也用在`.diagram`文件来指代模型文件中的节点。 有两种形式的名字对象：  
   
--   *Id 名字对象*quote 目标元素的 GUID。 例如:   
+-   *Id 名字对象*quote 目标元素的 GUID。 例如:  
   
     ```  
     <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
@@ -304,6 +305,6 @@ ms.lasthandoff: 10/27/2017
 |角色元素名称|指定派生自的源角色的 XML 元素的名称。 默认值为角色属性名称。|  
 |使用完整的窗体|如果为 true，每个目标元素或标记括在 XML 节点表示关系中。 这应设置为 true，如果关系具有其自己的域属性。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)

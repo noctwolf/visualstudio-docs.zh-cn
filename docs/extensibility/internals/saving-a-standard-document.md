@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73ef7f1b347dc2fdcfe2904ef19a2d52036d927e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cdfb4631420f6803e6434bd67b93bd713cfd1f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-a-standard-document"></a>保存标准文档
 环境处理保存、 另存为，和保存所有命令。 当用户选择**保存**，**另存为**，或**保存所有**从**文件**菜单或关闭解决方案，从而导致**保存所有**，将发生以下过程。  
@@ -60,6 +61,6 @@ ms.lasthandoff: 10/31/2017
   
 2.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>(`pszMkDocumentNew`， `punkWindowFrame`) 方法传输到新层次结构的文档。 层次结构执行的另存为命令调用此方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)

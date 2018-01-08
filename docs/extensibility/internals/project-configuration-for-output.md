@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b19b3956e03c23d70852d8a2297544a72d91b840
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f3927ac9aa9e85be026d2b9a2af1c0c4d956c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-configuration-for-output"></a>输出的项目配置
 每个配置可支持一组生成输出项，如可执行文件或资源文件的生成进程。 这些输出项专用于用户，并可以放在链接的输出，如可执行文件 （.exe、.dll 或.lib） 和源文件 （.idl，.h 文件） 的相关的类型的组中。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
  有关详细信息，请参阅的实现`IVsOutputGroup`中的自定义项目示例[项目的 MPF](http://mpfproj12.codeplex.com)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理配置选项](../../extensibility/internals/managing-configuration-options.md)   
  [生成的项目配置](../../extensibility/internals/project-configuration-for-building.md)   
  [项目配置对象](../../extensibility/internals/project-configuration-object.md)   

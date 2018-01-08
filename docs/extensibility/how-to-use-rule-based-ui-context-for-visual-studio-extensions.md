@@ -10,11 +10,12 @@ ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-ms.openlocfilehash: d1307f63464b0e652a97e9b06314b08112d8b097
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 92166106c1470aaf1af7198a133495dba333c121
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何： 使用 Visual Studio 扩展基于规则的 UI 上下文
 Visual Studio 允许加载 Vspackage 时某些已知<xref:Microsoft.VisualStudio.Shell.UIContext>s 被激活。 但是，这些 UI 上下文不是精细粒度，离开无选择的扩展插件作者但选取可用的 UI 上下文的点之前，激活就确实需要小心 VSPackage 加载。 有关的已知 UI 上下文的列表，请参阅<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。  

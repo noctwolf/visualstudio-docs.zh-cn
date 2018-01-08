@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd18d04adfbf3acd0ca50c1e75bd2a1694b28721
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d33c0e1bc54ee0c1abab736ba24ce76fbf710fdc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 编译器命令行标志
 Visual Studio 命令表 (VSCT) 编译器提供了命令行开关，以确保成功编译的.vsct 文件。  
@@ -77,7 +78,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
   
  VSCT 编译器还可以反编译以前生成的二进制文件。 若要执行此操作，提供的二进制文件\<infile >。   如果二进制文件由 VSCT 编译器生成的它将包含已嵌入其符号，并且将生成与中的符号名称的输出\<符号 > 部分中的输出。 如果二进制文件由 CTC 编译器生成的则输出将包含实际的 Guid 和 Id。 如果生成的当前版本的 Ctc.exe *.ctsym 文件处于与二进制输入文件相同的文件夹，则将该文件中加载符号，并将其用于输出。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表 (。Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)   
  [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

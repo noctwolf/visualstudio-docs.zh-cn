@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b7be9b3bf7783980cfbbe1abfc44fe1748dd20a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ad918b72d38e61fb1670adda8ff1f730987c2aa3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solution-sln-file"></a>解决方案 (。Sln) 文件
 一种解决方案是用于组织 Visual Studio 中的项目的结构。 解决方案维护基于文本的 (共享） 的.sln 和.suo （二进制、 特定于用户的解决方案选项） 文件中的项目的状态信息。 .Suo 文件的详细信息，请参阅[解决方案用户选项 (。Suo) 文件](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  
@@ -101,7 +102,7 @@ EndGlobal
   
  只有.sln 文件包含中的条目`preSolution`和`postSolution`部分。 没有类似部分.suo 文件中由于解决方案需要此信息来正确加载。 .Suo 文件包含特定于用户的选项，例如，不应共享或放置在源代码管理下的私人便笺。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   
  [解决方案用户选项 (。Suo) 文件](../../extensibility/internals/solution-user-options-dot-suo-file.md)   
  [解决方案](../../extensibility/internals/solutions.md)

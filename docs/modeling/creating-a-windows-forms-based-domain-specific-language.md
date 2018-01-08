@@ -11,11 +11,12 @@ caps.latest.revision: "17"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 17652a19df04d016db54429ab7bc7d407768df87
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b17355eae0ca7462fa08173b3a6986c033924080
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的域特定语言
 可以使用 Windows 窗体以显示域特定语言 (DSL) 模型，而不是使用 DSL 图的状态。 本主题将指导你将 Windows 窗体绑定到 DSL、 使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK。  
@@ -326,7 +327,7 @@ private void NewSheepButton_Click(object sender, EventArgs e)
   
  因此我们建议你使用<xref:Microsoft.VisualStudio.Modeling.ElementOperations>来创建新元素。 有关详细信息，请参阅[移动数据和自定义元素创建](../modeling/customizing-element-creation-and-movement.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何定义的域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   
  [编写代码以自域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [Visual Studio 的建模 SDK - 特定于域的语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

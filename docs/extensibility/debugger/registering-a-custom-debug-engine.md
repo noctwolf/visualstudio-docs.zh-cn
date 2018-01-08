@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 58f58a1a6ec80331fd5cf6f735098c16c35db82e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 50903d9b45828725da03c0fcb0db0f08d7f884eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-custom-debug-engine"></a>注册自定义调试引擎
 调试引擎必须将自身注册为以下 COM 约定的类工厂以及通过 Visual Studio 注册表子项注册 Visual Studio。  
@@ -50,7 +51,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
  [SDK 适用于调试的帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [教程： 构建使用 ATL COM 调试引擎](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)

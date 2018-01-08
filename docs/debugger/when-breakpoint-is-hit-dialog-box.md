@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.whenbreakpointishit
 dev_langs:
 - CSharp
@@ -20,11 +20,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e91841f1146d23305577cc00059f0bf9d505a90
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c03e68315c8c0818d6b9cf6a102adde4ea4f8a10
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>“命中断点时”对话框
 使用此对话框中，你可以自定义当命中断点时出现的操作。  
@@ -38,6 +39,6 @@ ms.lasthandoff: 10/31/2017
  **继续执行**  
  启用此控件时，才**打印消息**选择。 选择此控件，你可以使用断点作为跟踪点跟踪程序执行，而不是重大时命中位置。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用断点](../debugger/using-breakpoints.md)   
  [使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)

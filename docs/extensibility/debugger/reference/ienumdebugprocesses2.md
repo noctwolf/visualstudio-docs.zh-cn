@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e5be156ec0a30f736b96cfe6451b893dfb8eacf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 559d95834ccb8c7d0081a95a8412dccf12b1d8fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 此接口枚举在调试端口上运行的进程。  
@@ -49,13 +50,13 @@ IEnumDebugProcesses : IUnknown
 ## <a name="remarks"></a>备注  
  Visual Studio 使用此接口来填充**进程**窗口。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)

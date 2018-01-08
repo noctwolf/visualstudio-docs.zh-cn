@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 010ec576fe8d1cd52c82165793324eede0da9e6c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 76f47edd31892a98ec3235bfc4a00f5f2e647408
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>旧语言服务中的大纲显示
 以大纲方式显示使可以折叠到概述或大纲复杂程序。 例如，在 C# 中的所有方法可以都折叠导航到单个行中，显示仅方法签名。 此外，结构和类可以折叠以仅显示的名称的结构和类。 在单一方法中，可以折叠复杂的逻辑以通过如显示仅语句的第一行中显示的总体流程`foreach`， `if`，和`while`。  
@@ -120,6 +121,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [旧语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [注册旧语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)

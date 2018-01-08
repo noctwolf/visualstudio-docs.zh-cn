@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 677b705015b2b12ee484db7595d6cfd919ad61d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2c561564f75d4e5557c64f94adfb9caed6abce83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 元素（Visual Studio 项目模板）
 指定将添加到项目的文件夹。  
@@ -58,14 +59,14 @@ ms.lasthandoff: 10/31/2017
   
 |元素|描述|  
 |-------------|-----------------|  
-|[项目](../extensibility/project-element-visual-studio-templates.md)|可选子元素[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)。|  
+|[Project](../extensibility/project-element-visual-studio-templates.md)|可选子元素[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)。|  
   
 ## <a name="remarks"></a>备注  
  `Folder`是的可选子`Project`。  
   
  你可以使用任何以下方法将项目项组织到模板中的文件夹：  
   
--   在模板的.zip 文件，包括文件夹并将其添加到项目的.vstemplate 文件中通过指定到中的文件的路径`ProjectItem`元素，没有`Folder`元素。 这是建议的方法。 例如:   
+-   在模板的.zip 文件，包括文件夹并将其添加到项目的.vstemplate 文件中通过指定到中的文件的路径`ProjectItem`元素，没有`Folder`元素。 这是建议的方法。 例如:  
   
      `...`  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
   
      `...`  
   
--   在模板的.zip 文件，包括文件夹并将其添加到项目中包含的.vstemplate 文件`Folder`元素。 例如:   
+-   在模板的.zip 文件，包括文件夹并将其添加到项目中包含的.vstemplate 文件`Folder`元素。 例如:  
   
      `...`  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
   
      `...`  
   
--   在模板.zip 文件中，不包括文件夹，但将使用的文件夹添加`TargetFileName`属性`ProjectItem`元素。 例如:   
+-   在模板.zip 文件中，不包括文件夹，但将使用的文件夹添加`TargetFileName`属性`ProjectItem`元素。 例如:  
   
      `...`  
   
@@ -128,7 +129,7 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [ProjectItem 元素（Visual Studio 项模板）](../extensibility/projectitem-element-visual-studio-item-templates.md)

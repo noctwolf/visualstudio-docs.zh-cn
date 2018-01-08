@@ -16,11 +16,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb79bfa9938aade8ff138817073fad4897276184
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1eaa8cc41e7b27d509e68d6785c34a9ae214ffd3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dynamically-adding-menu-items"></a>动态添加菜单项
 可以通过指定在运行时添加菜单项`DynamicItemStart`命令根据在 Visual Studio 命令表 (.vsct) 文件中，占位符按钮定义的标志，然后定义 （在代码中） 的菜单数项来显示和处理命令。 当加载 VSPackage 时，将占位符将被替换为动态菜单项。  
@@ -359,6 +360,6 @@ public sealed class DynamicMenuItemsPackage : Package
   
 4.  当关闭解决方案，或打开具有只有一个项目的解决方案时，工具栏图标应该会消失。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)   
  [VSPackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

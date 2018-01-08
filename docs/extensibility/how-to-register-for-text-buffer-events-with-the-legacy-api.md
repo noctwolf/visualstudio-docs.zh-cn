@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fabdf30480666ee3bc24bf3d68af4cc0dcc1ccb6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 94f2e781c316f3891fdef0c324d54fa2f9742222
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>如何： 为与旧版 API 的文本缓冲区事件注册
 如果要通过使用旧的 API 来访问文本缓冲区，你应该注册文本缓冲区事件按下列步骤中所示。  
@@ -36,5 +37,5 @@ ms.lasthandoff: 10/31/2017
   
      该环境将返回一个 cookie，然后，可以使用，来停止侦听事件通过调用<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A>方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [旧版 API 中的文本缓冲区事件](../extensibility/text-buffer-events-in-the-legacy-api.md)

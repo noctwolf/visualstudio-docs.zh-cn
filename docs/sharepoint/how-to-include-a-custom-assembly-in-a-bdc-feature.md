@@ -23,11 +23,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5916da8b7aa5018824ffe8040e7184fe6d1bf31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: acf4038a5b3cafa1febcd4a44c3e82222d6f5d86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>如何：在 BDC 功能中引入自定义程序集
   你的项目可以与同一解决方案中其他项目中引用程序集。 但是，你必须将添加这些程序集到项目的功能文件通过**分配引用程序集 Lobsystem 到**对话框。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  若要调试自定义程序集中的代码，必须将程序集添加到解决方案包中。 有关详细信息，请参阅[如何： 添加和移除附加程序集](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 使用资源文件来指定本地化的名称、 属性和权限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [如何： 向 SharePoint 项目中添加现有 BDC 模型文件](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
  [创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   

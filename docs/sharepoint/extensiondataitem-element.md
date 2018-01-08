@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57e6d01e918256217e94077f6414651e50dd4c74
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 018103ed0ede32b65403821e36128bca6fd083a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 元素
   表示键/值格式中的 SharePoint 项目项与相关联的自定义数据项。 键和值必须为字符串。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 |特性|描述|  
 |---------------|-----------------|  
 |**Key**|所需**xs: string**属性。<br /><br /> 用于存储和检索数据的项键。|  
-|**值**|所需**xs: string**属性。<br /><br /> 数据项目的值。|  
+|**“值”**|所需**xs: string**属性。<br /><br /> 数据项目的值。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  
@@ -58,12 +59,12 @@ ms.lasthandoff: 10/31/2017
   
 |||  
 |-|-|  
-|**Namespace**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空间**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**架构名称**|SharePoint 项目项架构|  
 |**验证文件**|ProjectItemModelSchema.xsd|  
-|**可以为空**|No|  
+|**可以为空**|否|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

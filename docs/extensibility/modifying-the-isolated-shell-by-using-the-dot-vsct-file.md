@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3290e33ac473c6914437f8ef036ec8047f46e063
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ddf48e384b85946d4efcbb62359f24780507dfa4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>通过使用修改独立的 Shell。Vsct 文件
 Visual Studio 独立的 shell 项目的 UI 项目包含一个允许你指定哪些应用程序组和单个命令可以在应用程序的.vsct 文件。 以下是一个未修改的.vsct 文件的摘录。  
@@ -57,5 +58,5 @@ Visual Studio 独立的 shell 项目的 UI 项目包含一个允许你指定哪�
   
  有关详细信息，请参阅[设计 XML 命令表 (。Vsct) 文件](../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)和[VSCT XML 架构参考](../extensibility/vsct-xml-schema-reference.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 独立 Shell](../extensibility/visual-studio-isolated-shell.md)

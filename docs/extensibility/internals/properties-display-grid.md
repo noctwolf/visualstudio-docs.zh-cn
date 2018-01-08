@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35b36c357c9b98d81627eea0d511b0b4fd49f693
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 88720010c178fb1ca3a4c2425002f5f34e26e777
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-display-grid"></a>显示属性网格
 **属性**窗口显示在网格中的字段。 左侧的列包含的属性名称;右侧列包含的属性值。  
@@ -55,5 +56,5 @@ ms.lasthandoff: 10/31/2017
   
 -   单击省略号 （...） 按钮会显示用户可以从中选择 （如颜色选取器或字体列表） 的属性值的列表。 <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>提供这些值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展属性](../../extensibility/internals/extending-properties.md)

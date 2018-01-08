@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 962023733d2d746e0acb584e3dcbdc1a5e369012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec424f5e85f5bff9be5b276b3978b25dc3239fe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Getting Started with Roslyn 分析器
 使用 Visual Studio 中的实时、 可基于项目的代码分析器，API 作者可以作为其 NuGet 包的一部分提供特定于域的代码分析。  因为这些分析器由.NET Compiler Platform (代码名为"Roslyn") 提供支持，它们可能会产生警告在代码中的，键入甚至之前已完成的行 （没有更多等待生成你的代码以发现问题）。  分析器还外围通过让你立即清理你的代码的 Visual Studio 电灯泡提示自动代码修复  

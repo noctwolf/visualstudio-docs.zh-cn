@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1bcf34f730411589624075bde4ace0b5457e07a7
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: c13a899e5c678040d6ffe5b1996fd3ee96e9cc09
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>如何： 提供异步的 Visual Studio 服务
 如果你想要获得服务，而不必阻止 UI 线程，你应该创建异步的服务，以及加载后台线程上的包。 为此你可以使用<xref:Microsoft.VisualStudio.Shell.AsyncPackage>而不是<xref:Microsoft.VisualStudio.Shell.Package>，使用异步包的特殊异步方法中添加服务  
@@ -224,5 +225,5 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 8.  生成解决方案并启动调试。 出现 Visual Studio 的实验实例时，请转到**工具**菜单并查找**调用 TestAsyncCommand**菜单项。 时单击它，TextWriterService 将写入到你指定的文件。 （你不需要打开的解决方案，因为调用该命令也会导致要加载的包。）  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用并提供服务](../extensibility/using-and-providing-services.md)

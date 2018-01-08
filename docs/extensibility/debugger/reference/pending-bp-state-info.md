@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 909385cbf2b5fceb8d55ebe24aba763ccdf7e98a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dae98128d6f56399a2228fd00ec5a5402cd07f33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 包含有关已准备好将绑定到的代码位置的断点的状态信息。  
@@ -49,14 +50,14 @@ public struct PENDING_BP_STATE_INFO {
 ## <a name="remarks"></a>备注  
  此结构传递给[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)方法中填充位置。  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)   
  [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)   

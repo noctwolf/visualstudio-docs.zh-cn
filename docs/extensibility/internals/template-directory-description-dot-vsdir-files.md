@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bc2f4a50996ccca6a56632166121bf9784629bb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 739dd0d41fb63c4993dad0d66737aaada1cf01c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-directory-description-vsdir-files"></a>模板目录说明 (。Vsdir) 文件
 模板目录说明文件 (.vsdir) 是一个文本文件，使集成的开发环境 (IDE) 显示文件夹、 向导.vsz 文件和与你在对话框中的项目相关联的模板文件。 内容包括每个文件或文件夹的一个记录。 引用位置中的所有.vsdir 文件会都合并，尽管只有一个.vsdir 文件通常用于描述多个文件夹，向导或模板文件。  
@@ -65,6 +66,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
   
 -   如果你删除.vsz 文件和文件夹或模板文件，你还必须从.vsdir 文件删除其关联的记录。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [向导](../../extensibility/internals/wizards.md)   
  [向导 (.Vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c241b80430fd02a649efab7f8a65498e606d2804
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 71ac3cda8e3df935ab743fed7aa94a5152c152a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-troubleshoot-services"></a>如何： 解决服务问题
 有几个常见的问题，当你尝试将获得的服务时可能发生：  
@@ -68,7 +69,7 @@ if (log == null) return;
   
      如果工具窗口托管的用户控件或任何其他控件容器，容器将被放置 Windows 组件模型，并且将不具有访问任何[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]服务。 你可以调用<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>若要获取的 VSPackage 服务提供程序中的控件容器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [可用服务列表](../extensibility/internals/list-of-available-services.md)   
  [使用和提供服务](../extensibility/using-and-providing-services.md)   
  [服务基础知识](../extensibility/internals/service-essentials.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7dc04752b034f666dfcb1d72b500f2c12f54fba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新的项目生成： 实质上，第二部分
 在[新项目生成： 高级选项、 第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我们已了解如何**新项目**对话框框中填充。 假设你已选择**Visual C# Windows 应用程序**、 已填写**名称**和**位置**文本框中，并单击确定。  
@@ -156,6 +157,6 @@ namespace Simple
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [生成新项目：揭秘，第 1 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

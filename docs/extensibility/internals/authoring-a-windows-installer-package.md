@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f646e2234adf0eb0117f154838b15d7b3aa200e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2055f57e78c348f3f8e53187126588f382f0b944
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="authoring-a-windows-installer-package"></a>创作 Windows Installer 包
 数据驱动器的 Windows Installer 模型。 而不是撰写的过程的脚本将文件复制和写入注册表项，例如，您创作行和包含文件和注册表数据的数据库表中的列。  
@@ -52,5 +53,5 @@ ms.lasthandoff: 10/31/2017
   
  用于将集成到的商业产品[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，请参阅[http://visualstudiogallery.com](http://visualstudiogallery.com/)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Windows Installer 安装 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

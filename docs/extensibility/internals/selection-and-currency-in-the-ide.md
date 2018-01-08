@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 307344a9027e629f08350b77adf99d22d0c127a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e46c18f424130a29085aaccad19328c9f86682f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="selection-and-currency-in-the-ide"></a>选择和 IDE 中的货币
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 维护有关用户的信息当前所选对象，通过选择*上下文*。 与所选内容的上下文中，Vspackage 可以参与货币跟踪两种方式：  
@@ -65,6 +66,6 @@ ms.lasthandoff: 10/31/2017
   
 -   更改跟踪的窗口框架选择上下文中的元素的事件。 示例包括更改 DocObject 内的选择或更改在项目类型的窗口中的选择。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [选择上下文对象](../../extensibility/internals/selection-context-objects.md)   
  [为用户提供反馈](../../extensibility/internals/feedback-to-the-user.md)

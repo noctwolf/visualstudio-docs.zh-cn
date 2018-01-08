@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d436ef99907556c93f48c55bea315ae66e6218e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a9ec7071a1e4ca78bb116c577cdcc77f9798c050
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-2-get-from-source-control"></a>测试区域 2： 获取从源代码管理
 此测试区域介绍用于从通过 Get 命令的版本存储区中检索项的测试用例。 可以应用于这些测试用例，这两个本地以及 Web 项目。  
@@ -56,5 +57,5 @@ ms.lasthandoff: 10/31/2017
 |获取本地存在的文件版本存储区中的最新版本相同|1.创建新项目。<br />2.向项目添加项。<br />3.将源代码管理中的项目。<br />4.获取的项 (**文件**，**源代码管理**，**获取**\<项 >)。|本地文件保持不变。|  
 |获取具有一个项目的解决方案|1.与一个项目中创建一个解决方案。<br />2.将放置在源代码管理下的解决方案。<br />3.删除所有项目文件本地。<br />4.获取解决方案 (**文件**，**源代码管理**，**获取**)。|将本地还原所有已删除的文件。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

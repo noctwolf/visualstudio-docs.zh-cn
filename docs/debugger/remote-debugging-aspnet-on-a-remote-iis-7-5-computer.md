@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed7ae018725e4ba2da5239609d90276d007827aa
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: aspnet
+ms.openlocfilehash: 0dfcc66145b78e1070c552536fc7a86e87c7e04d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 若要调试的 ASP.NET 应用程序部署到 IIS，安装和在计算机上运行远程工具其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
@@ -28,7 +29,7 @@ ms.lasthandoff: 11/29/2017
 这些过程已经过测试在这些服务器配置：
 * Windows Server 2012 R2 和 IIS 8 （对于 Windows Server 2008 R2 中，服务器步骤会有所不同，）
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>惠?
 
 在从 Windows Server 2008 Service Pack 2 的 Windows Server 上支持远程调试器。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 11/29/2017
 
 ## <a name="BKMK_deploy_asp_net"></a>在 Windows Server 上安装 ASP.NET 4.5
 
-如果你想要在 IIS 上安装 ASP.NET 的更多详细的信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
+如果你想要在 IIS 上安装 ASP.NET 的更多详细的信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
 1. 使用 Web 平台安装程序 (WebPI) 安装 ASP.NET 4.5 (从 Windows Server 2012 R2 中的服务器节点中，选择**获取新的 Web 平台组件**然后搜索 ASP.NET)
 
@@ -173,7 +174,7 @@ ms.lasthandoff: 11/29/2017
 在大多数系统中，打开 ASP.NET 和远程调试器的安装所需的端口。 但是，你可能需要验证的端口打开。
 
 > [!NOTE]
-> 在 Azure VM，则必须打开端口通过[网络安全组](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80)。 
+> 在 Azure VM，则必须打开端口通过[网络安全组](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80)。 
 
 所需的端口：
 

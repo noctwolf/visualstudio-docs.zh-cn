@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb60f482edeea1271c0f864fd5b907138e83d103
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 66ac0837649b42dc238eac57829c713b2bf83e3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-project-specific-editors"></a>如何： 打开项目特定编辑器
 如果正在打开的项目项文件本质上绑定到该项目的特定编辑器中，项目必须使用特定于项目的编辑器打开文件。 该文件不能被委派到 IDE 的机制，用于选择一个编辑器。 例如，而不是使用标准的位图编辑器，你可以使用此特定项目的编辑器选项以指定一种特定的位图编辑器，识别只出现在你的项目文件中的信息。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>方法以显示和打开该视图。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [打开和保存项目项](../extensibility/internals/opening-and-saving-project-items.md)   
  [如何： 打开标准编辑器](../extensibility/how-to-open-standard-editors.md)   
  [如何：打开开放文档的编辑器](../extensibility/how-to-open-editors-for-open-documents.md)

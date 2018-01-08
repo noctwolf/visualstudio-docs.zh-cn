@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e183413446bbca2ffed0642619ab63538fae0f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8fa99e2c741d11c79cb41226e3958b04d0265621
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-output-window"></a>扩展输出窗口
 **输出**窗口是一套读/写文本窗格。 Visual Studio 具有这些内置窗格：**生成**中的项目进行通信有关生成、 消息和**常规**，在其中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将有关 IDE 的消息传递。 项目获取的引用**生成**窗格自动通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>接口方法和 Visual Studio 提供了直接访问**常规**窗格中，通过<xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane>服务。 除了内置的窗格中，你可以创建和管理你自己的自定义窗格。  

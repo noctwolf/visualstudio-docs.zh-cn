@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5f1ec42408e4fd7d33d9445ae09252fae8d03db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 84e850d44162a964ce6ef8b64be92ce4eeacb86e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>默认命令、 组和工具栏放置
 有关产品一致性和稳定性，UI 所显示的默认情况下的某些命令组和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]为命令和命令组提供了定义。 标准命令和命令组，还可以使用 Vspackage。  
@@ -43,6 +44,6 @@ ms.lasthandoff: 10/31/2017
   
  IDE 和产品工具栏下方应放编辑器工具栏。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDE 定义命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
  [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

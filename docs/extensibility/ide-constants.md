@@ -20,18 +20,19 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 817c95d511ff1b02558010f3046827684b72d4f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4a43bc68a87d00dcce90f1a948b64dd786e9b440
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-constants"></a>IDE 常量
 <xref:Microsoft.VisualStudio.VSConstants>类提供特定于集成的开发环境 (IDE) 并且，以前仅在标头文件中定义的常量。  
   
 ## <a name="logical-and-physical-views"></a>逻辑和物理视图  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Code>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`处理程序应传递到此值<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法以获取**打开**对话框中，在这种情况下可能代码视图。|  
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Debugging>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`处理程序会传递到此值<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法以获取**打开**对话框中，在这种情况下填充具有可能<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Debugging>调试视图这些映射到同一个视图作为视图<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Code>。|  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="editor-factory-flags"></a>编辑器工厂标志  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CEF_CLONEFILE>|已过时的标志的第一个参数的按位组合<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>方法。|  
 |<xref:Microsoft.VisualStudio.VSConstants.CEF_OPENASNEW>|作为第一个参数的按位组合<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>，方法，这指示的编辑器工厂应执行必要的修补程序。|  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="visual-studio-errors"></a>Visual Studio 错误  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|返回到异步行为的接口的常量时所述，在对象已忙|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|错误 HRESULT 特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]"不兼容的文档数据"。|  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="visual-studio-constants"></a>Visual Studio 常量  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|错误 HRESULT 特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]以及指示"转发的项目。"|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|一个常数，用于特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]"工具箱标记"。|  
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents  
  描述在 IDE 的哪些组件只是已选择，在<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>调用，例如。  
   
-|返回的常量|值|  
+|返回的常量|“值”|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.DocumentFrame>|0x2|  
 |<xref:Microsoft.VisualStudio.VSConstants.PropertyBrowserSID>|0x4|  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="vsselelemid"></a>VSSELELEMID  
  用于表示新的所选内容状态的常量。  
   
-|返回的常量|值|  
+|返回的常量|“值”|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|  
@@ -107,7 +108,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="component-selector-dialog-constants"></a>组件选择器对话框常量  
   
-|返回的常量|值|  
+|返回的常量|“值”|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|  
@@ -118,5 +119,5 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_QUERYCANSELECT>|WM_USER + 1286|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_SETMULTISELECT>|WM_USER + 1289|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [用于扩展项目系统的 IDE 定义的命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

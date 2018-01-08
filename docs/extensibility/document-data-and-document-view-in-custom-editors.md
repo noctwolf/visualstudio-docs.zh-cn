@@ -13,11 +13,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab3506a6906c4223888a14132339cbe5499c92d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7c7e24ed2db4538ab0fd38dbb85930452611f0ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>文档数据和自定义编辑器中的文档视图
 自定义编辑器由两部分组成： 文档数据对象和文档视图对象。 顾名思义，文档数据对象表示要显示的文本数据，文档视图对象 （或"视图"） 表示要在其中显示文档数据对象的一个或多个 windows。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
  有两个选项的自定义编辑器中创建视图。 之一是就地激活模型，该视图在窗口中使用 ActiveX 控件或文档数据对象的托管位置。 第二个是简化的嵌入模型，该视图都由[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>实现以处理窗口命令。 有关就地激活模型的信息，请参阅[就地激活](../extensibility/in-place-activation.md)。 简化的嵌入模型有关的信息，请参阅[简化嵌入](../extensibility/simplified-embedding.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [支持多个文档视图](../extensibility/supporting-multiple-document-views.md)   
  [简化嵌入](../extensibility/simplified-embedding.md)   
  [如何： 附加文档数据的视图](../extensibility/how-to-attach-views-to-document-data.md)   

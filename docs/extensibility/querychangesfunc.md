@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f2da455cdafc399b64fe42109c7973185ce69c79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 43add362011b31ce695e9a8d9e77d6ca2dedb0e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 这是由一个回调函数[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作枚举文件名称的集合，并确定每个文件的状态。  
@@ -46,7 +47,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>返回值  
  IDE 返回相应的错误代码：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|继续进行处理。|  
 |SCC_I_OPERATIONCANCELED|停止处理。|  
@@ -100,7 +101,7 @@ struct QUERYCHANGESDATA_W
  lpLatestName  
  此项的当前文件名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [由 IDE 实现的回调函数](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)   
  [错误代码](../extensibility/error-codes.md)
