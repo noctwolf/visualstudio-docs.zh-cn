@@ -7,6 +7,8 @@
 ## [调试 ASP.NET 应用](quickstart-debug-aspnet.md)
 # 教程
 ## [了解如何使用 Visual Studio 进行调试](getting-started-with-the-debugger.md)
+## [调试实时 Azure 应用](debug-live-azure-applications.md)
+## [在 IIS 或 IIS Express 上调试 ASP.NET](how-to-enable-debugging-for-aspnet-applications.md)
 ## [远程调试 C# 项目](remote-debugging-csharp.md)
 ## [远程调试 C++ 项目](remote-debugging-cpp.md)
 ## [远程调试 IIS 计算机上的 ASP.NET Core](remote-debugging-aspnet-on-a-remote-iis-computer.md)
@@ -61,7 +63,6 @@
 ### [使用实时调试器进行调试](debug-using-the-just-in-time-debugger.md)
 #### [如何：响应实时调试器](just-in-time-debugging-in-visual-studio.md)
 ## 配置调试
-### [调试用户代码](just-my-code.md)
 ### [管理调试器的异常](managing-exceptions-with-the-debugger.md)
 #### [在出现异常后继续执行](continuing-execution-after-an-exception.md)
 #### [如何：在发生异常后检查系统代码](how-to-examine-system-code-after-an-exception.md)
@@ -70,6 +71,7 @@
 ##### [如何：编写运行时错误报告函数](how-to-write-a-run-time-error-reporting-function.md)
 ##### [使用运行时检查（不用 C 运行时库）](using-run-time-checks-without-the-c-run-time-library.md)
 ### [在 Visual Studio 调试器中指定符号 (.pdb) 和源文件](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+### [调试用户代码](just-my-code.md)
 ### [调试器设置和准备](debugger-settings-and-preparation.md)
 #### [调试器项目设置](debugger-project-settings.md)
 ##### [如何：指定调试器设置](how-to-specify-debugger-settings.md)
@@ -339,7 +341,7 @@
 #### [进程视图](processes-view.md)
 ##### [如何：在进程视图中搜索进程](how-to-search-for-a-process-in-processes-view.md)
 ##### [如何：显示进程属性](how-to-display-process-properties.md)
-#### [“线程”视图](threads-view.md)
+#### [线程视图](threads-view.md)
 ##### [如何：在线程视图中搜索线程](how-to-search-for-a-thread-in-threads-view.md)
 ##### [如何：显示线程属性](how-to-display-thread-properties.md)
 ### [Spy++ 参考](spy-increment-reference.md)
