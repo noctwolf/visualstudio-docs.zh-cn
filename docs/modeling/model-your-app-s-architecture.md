@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 672e2ca393d8cd47466f44c1efb34e6648b7ed4e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 669720bcffe8f33636147863b89c2a28113911c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-your-app39s-architecture"></a>模型您的应用程序 &#39; s 体系结构
 为了帮助确保你的软件系统或应用程序满足用户的需求，您可以在 Visual Studio 中创建模型，作为您的整体结构的说明和软件系统或应用程序行为的一部分。 使用模型，也可以描述在整个设计中使用的模式。 这些模型可你帮助了解现有的体系结构、讨论更改和清楚地传达你的意图。  
@@ -104,7 +105,7 @@ ms.lasthandoff: 10/27/2017
   
 -   开发人员可能能够采用的变体的说明。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [可视化代码](../modeling/visualize-code.md)   
  [建立用户需求模型](../modeling/model-user-requirements.md)   
  [基于模型开发测试](../modeling/develop-tests-from-a-model.md)   

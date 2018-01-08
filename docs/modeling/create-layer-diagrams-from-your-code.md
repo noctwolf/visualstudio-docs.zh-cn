@@ -16,11 +16,12 @@ caps.latest.revision: "64"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 2e98b690fb8ba87dabb7fd8aa76a9aa44c613a38
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c0a13a32347b7150818fc80b82d0c03dc3fc4f69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>在代码中创建依赖项关系图
 若要直观显示你的软件系统的高级别，逻辑体系结构，请创建*依赖项关系图*Visual Studio 中。 若要确保你的代码保持与此设计保持一致，验证你的代码使用依赖项关系图。 你可以创建为 Visual C#.NET 和 Visual Basic.NET 项目的依赖项关系图。 若要查看支持此功能的 Visual Studio 的版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/27/2017
   
 4.  在**将添加到建模项目**，浏览到并在你的解决方案中选择一个现有建模项目。  
   
-     - 或 -  
+     或  
   
      选择**创建一个新的建模项目**将新的建模项目添加到解决方案。  
   
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/27/2017
   
 -   [使用代码图分析查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [视频： 验证实时体系结构依赖项](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   
  [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)   
  [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)   

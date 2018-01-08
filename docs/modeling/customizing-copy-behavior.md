@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 532fd69bea467403047a7151584b7cf918ad602d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: acac1aad651817ba351604b67af7f0440c82dabb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-copy-behavior"></a>自定义复制行为
 在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可视化和建模 SDK 创建的域特定语言 (DSL) 中，你可以更改当用户复制并粘贴元素时所发生的情况。  
@@ -562,7 +563,7 @@ namespace Company.MyDsl
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)   
  [如何： 添加一个拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [自定义删除行为](../modeling/customizing-deletion-behavior.md)   

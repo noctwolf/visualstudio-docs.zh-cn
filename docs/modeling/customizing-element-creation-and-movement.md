@@ -13,11 +13,12 @@ caps.latest.revision: "36"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: d678e05046a367a722a586d13a50ef7bf0aabc79
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e8de9588e263d392252134a470312a9dc4f4b648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-element-creation-and-movement"></a>自定义元素创建和移动
 你可以允许将拖动到另一个字符串，从工具箱中，也可在粘贴或移动操作中的元素。 你可以移动的元素链接到目标元素中，使用你指定的关系。  
@@ -228,7 +229,7 @@ ms.lasthandoff: 10/27/2017
   
 5.  检查的内容**Dsl\Generated Files\DomainClasses.cs**。 命名方法搜索`MergeRelate`并检查其内容。 这将帮助你编写您自己的版本。  
   
-6.  在新代码文件中，编写一个分部类，接收的类，并重写`MergeRelate`方法。 请记住要调用基方法。 例如:   
+6.  在新代码文件中，编写一个分部类，接收的类，并重写`MergeRelate`方法。 请记住要调用基方法。 例如:  
   
     ```csharp  
     partial class ExampleModel  
@@ -314,7 +315,7 @@ ms.lasthandoff: 10/27/2017
   
      你不应看到不可用的指针，并且你应能够删除新**输入端口**基于现有。 选择新**输入端口**和将其拖到另一个点**组件**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [自定义工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)   
  [线路关系图示例 DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

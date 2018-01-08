@@ -20,11 +20,12 @@ caps.latest.revision: "43"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0d2483fb8c3f244f2a5fd51f076d7157711cd34f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
 若要定义域特定语言 (DSL)，请从模板创建 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案。 解决方案的重要组成部分是 DSL 定义关系图，它存储在 DslDefinition.dsl 中。 DSL 定义将定义 DSL 的类和形状。 在进行修改并将所做修改添加到这些元素后，可以添加程序代码以更详细地自定义 DSL。  
@@ -626,7 +627,7 @@ ms.lasthandoff: 10/27/2017
 |在更改程序集名称后，不会显示 DSL 的工具箱。|检查并更新**DslPackage\GeneratedCode\Package.tt**详细信息，请参阅[如何： 更改域特定语言的 Namespace](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。|  
 |不会显示 DSL 的工具箱，但并未更改程序集名称。<br /><br /> 或者，显示一个报告加载扩展失败的消息框。|重置实验实例，并重新生成解决方案。<br /><br /> 1.在 Windows 开始菜单上，在**所有程序**，展开[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然后**工具**，然后单击**重置 Microsoft Visual Studio 实验实例**。<br />2.上[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**生成**菜单上，单击**重新生成解决方案**。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Getting Started with 域特定语言](../modeling/getting-started-with-domain-specific-languages.md)   
  [创建 Windows 基于窗体的域特定语言](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [创建基于 WPF 的域特定语言](../modeling/creating-a-wpf-based-domain-specific-language.md)

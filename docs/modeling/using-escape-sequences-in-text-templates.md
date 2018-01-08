@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fdf062c9b33dd4a160f54bba83991a3cdda7f0d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1806b6aa1b6c6d4ac233e4a9d5785fe903d42221
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>在文本模板中使用转义序列
 你可以在文本模板生成文本模板标记和 （在 C# 仅在代码中） 使用转义序列转义控制字符和引号引起来。  
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/27/2017
   
 -   如果转义 (\\) 字符显示其中一个控制字符或引号 （仅在 C#) 进行转义以外的任何序列中的其他任何位置，将直接输出的字符。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何：使用转义序列基于模板生成模板](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

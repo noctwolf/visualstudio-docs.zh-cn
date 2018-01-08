@@ -11,11 +11,12 @@ caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 63295738603d2a88adb70b43d41e185c7eabbc69
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: c349c79ebd2348fa4ce0c04fd3020d7909a3c34a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 集成模型
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus 提供用于创建模型之间以及从其他工具的链接到模型的方法。 例如，你无法将链接域特定语言 (DSL) 模型和 UML 模型。 可以创建一组集成 DSL。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 11/07/2017
   
 3.  在对话框中，选择**我想要公开到 ModelBus 此 DSL**。 如果希望此 DSL 同时公开其模型并使用对其他 DSL 的引用，则可选择这两个选项。  
   
-4.  单击“确定”。 新项目“ModelBusAdapter”随即添加到 DSL 解决方案中。  
+4.  单击 **“确定”**。 新项目“ModelBusAdapter”随即添加到 DSL 解决方案中。  
   
 5.  如果要从文本模板访问 DSL，则必须修改新项目中的 AdapterManager.tt。 如果要从其他代码（例如命令和事件处理程序）访问 DSL，则忽略此步骤。 有关详细信息，请参阅[文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。  
   
@@ -510,7 +511,7 @@ private const string INVALID_REF_FORMAT =
   
 -   在**DslPackage\source.extention.tt**，`|ModelBusAdapter|`添加为 MEF 组件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 从在程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [如何： 添加一个拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [在文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

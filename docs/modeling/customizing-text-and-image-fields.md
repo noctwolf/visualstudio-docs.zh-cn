@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c551b368ba695f4d78fbe7a885f3896160fa93ae
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9699c36e83a984885853725a599570c19b528f7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-text-and-image-fields"></a>自定义文本和图像字段
 当形状中定义的文本修饰器时，它表示由文本字段。 有关初始化 TextFields 和其他 ShapeFields 的示例，检查 DSL 解决方案中的 Dsl\GeneratedCode\Shapes.cs。  
@@ -268,7 +269,7 @@ partial class ExampleShape
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [定义形状和连接符](../modeling/defining-shapes-and-connectors.md)   
  [在关系图上设置背景图像](../modeling/setting-a-background-image-on-a-diagram.md)   
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   

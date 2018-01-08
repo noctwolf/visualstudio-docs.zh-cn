@@ -14,11 +14,12 @@ caps.latest.revision: "28"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: d60acd7d0d992ced0235d5d1e1c768f146bf4acd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0338425d1812f7638feac01a3e804435cd0ae278
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-a-t4-text-template"></a>调试 T4 文本模板
 你可以在文本模板中设置断点。 要调试的设计时文本模板，将文本模板文件，保存，然后选择**调试 T4 模板**解决方案资源管理器中的文件的快捷菜单上。 若要调试的运行时文本模板，只需调试它属于该应用程序。  

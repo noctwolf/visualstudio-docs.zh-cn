@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 870a8d1c08a8ca0fa72cabf47c8e1087a39e70f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6cfc93f3e0423f57cd0df5e919854cc1a46a1b3f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>如何：访问和约束当前所选内容
 当您为域特定语言编写的命令或笔势处理程序时，你可以确定用户右击哪些元素。 你还可以选择阻止某些形状或字段。 例如，你可以排列当用户单击图标修饰器，而是选择包含它的形状。 约束以这种方式选择可减少你必须编写的处理程序的数量。 它还可方便的用户，可以单击任意位置在形状中而无需避免修饰器。  
@@ -206,7 +207,7 @@ namespace CompanyName.ProductName.GroupingDsl
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>   
  <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage>   
  <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView>   

@@ -19,11 +19,12 @@ caps.latest.revision: "82"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 60840f3d47b43ea84bec66ea7957f613d2379901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3ca05f93fd4753c8a00eb1a5dee4c4bc9a2f4efc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-and-t4-text-templates"></a>代码生成和 T4 文本模板
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中， *T4 文本模板* 是文本块与可生成文本文件的控制逻辑的混合体。 控制逻辑被编写为 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中的程序代码的片段。 使用 Visual Studio 2015 Update 2 及更高版本时，可在 T4 模板指令中使用 C# 6.0 版功能。 所生成的文件可以是任何类型的文本，例如 Web 网页、资源文件或任何语言的程序源代码。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/27/2017
   
  此外，该模板包含程序代码的片段。 你可使用这些片段来重复文本节、创建条件节以及显示应用程序数据。  
   
- 若要生成输出，应用程序将调用由此模板生成的函数。 例如：  
+ 若要生成输出，应用程序将调用由此模板生成的函数。 例如:  
   
 ```csharp  
 string webResponseText = new MyTemplate().TransformText();  
@@ -121,5 +122,5 @@ namespace Fabrikam.FirstJob
  [自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)  
  如何为自己的数据源编写指令处理器和自定义模板化主机。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)

@@ -24,11 +24,12 @@ caps.latest.revision: "93"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: f270966c5c91dab1a492a775faca3da220a98d6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e4a536f99c81c19ecd22554896463a84715c7b35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 若要自定义代码图，可以编辑代码图的定向关系图标记语言 (.dgml) 文件。 例如，可以编辑元素来指定自定义样式，向代码元素和链接分配属性和类别，或将文档（或 URL）链接到代码元素（或链接）。 有关 DGML 元素的详细信息，请参阅[定向图形标记语言 (DGML) 引用](../modeling/directed-graph-markup-language-dgml-reference.md)。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/27/2017
   
     -   指定组代码元素与其子代码元素之间的 `Category` 关系的 `Contains` 特性  
   
-     例如:   
+     例如:  
   
     ```xml  
     <Links>  
@@ -98,7 +99,7 @@ ms.lasthandoff: 10/27/2017
     Stroke="StrokeValue"  
     ```  
   
-     例如:   
+     例如:  
   
     ```xml  
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >  
@@ -268,7 +269,7 @@ ms.lasthandoff: 10/27/2017
   
 2.  在 `<Style/>` 元素中，添加一个包含 `<Condition/>` 特性的 `Expression` 元素，以指定返回布尔值的表达式。  
   
-     例如:   
+     例如:  
   
     ```xml  
     <Condition Expression="MyCategory"/>  
@@ -609,7 +610,7 @@ ms.lasthandoff: 10/27/2017
   
         4.  使用`Label`特性以指定在代码元素的显示文本**转到引用**快捷菜单。  
   
-     例如:   
+     例如:  
   
     ```xml  
     <Nodes>  
@@ -640,7 +641,7 @@ ms.lasthandoff: 10/27/2017
   
 5.  若要查看引用的代码元素或代码图中的代码元素，请打开代码元素或链接的快捷菜单。 选择**转到引用**，然后代码元素。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)   
  [使用代码图调试你的应用程序](../modeling/use-code-maps-to-debug-your-applications.md)   
  [使用代码图分析器查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)   

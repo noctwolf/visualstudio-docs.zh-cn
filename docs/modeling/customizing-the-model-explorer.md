@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 880b10da32e858ce6e532bc5b8e75227a6e999d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 075f0295eaec64c2a80832e3c23f4b3247a93860
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-the-model-explorer"></a>自定义模型资源管理器
 你可以更改的外观和行为的资源管理器为你的域特定语言设计器，如下所示：  
@@ -112,5 +113,5 @@ ms.lasthandoff: 10/27/2017
   
      资源管理器应仅显示**Actors**节点，并将不会显示**注释**节点。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

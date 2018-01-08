@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6e5d17a1a84eb71252956e921522e6eebfd67925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f79852eae4b7dfae7345dbf6033a0e1cc0444250
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用域特定语言修改标准的菜单命令
 可修改某些在 DSL 中自动定义的标准命令的行为。 例如，你可以修改**剪切**，以便它不包括敏感信息。 若要实现此目的，请重写命令集类中的方法。 这些类定义在 DslPackage 项目的 CommandSet.cs 文件中，并派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/27/2017
   
 2.  在**DslPackage**，创建名为的文件夹**自定义代码**。 在此文件夹中，创建名为的新类文件`CommandSet.cs`。  
   
-3.  在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如:   
+3.  在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如:  
   
     ```  
     using System;  
@@ -149,7 +150,7 @@ protected override void ProcessOnMenuDeleteCommand()
   
  有关如何导航到元素和有关如何创建的对象和链接的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.ComponentModel.Design.MenuCommand>   
  [编写代码以自域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [如何： 向快捷菜单添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   

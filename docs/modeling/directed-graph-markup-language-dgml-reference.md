@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: e1ea2e37668806849b88d1fb7d6a15142518c076
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1d4c70d319e80eea95af6f71180b8ef4a37cad45
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>定向图形标记语言 (DGML) 引用
 定向图形标记语言 (DGML) 描述用于可视化和执行复杂分析的信息，并且是用于存留 Visual Studio 中的代码图的格式。 DGML 使用简单 XML 来描述循环和非循环的定向关系图。 定向关系图是一组由链接或边缘连接的节点。 可以使用节点和链接来表示网络结构，如软件项目中的元素。  
@@ -321,7 +322,7 @@ ms.lasthandoff: 10/27/2017
 </Properties>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)   
  [使用代码图调试你的应用程序](../modeling/use-code-maps-to-debug-your-applications.md)   
  [使用代码图分析查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)

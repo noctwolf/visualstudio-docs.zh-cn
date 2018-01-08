@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0ac8ba75920c4b3b8964d473258c162c256139ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 93e4393a7b6731a10a00dc309353dba5870c269f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定义锁定策略以创建只读段
 不可变性 API[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK 允许一个程序对锁定部分或全部域特定语言 (DSL) 模型，以便它可以读取但未更改。 无法使用此只读选项，例如，以便用户可以要求同事添加批注并查看 DSL 模型，但可以更改原始禁止它们。  
@@ -78,7 +79,7 @@ partition.SetLocks(Locks.Delete);
   
  无法在分区上设置锁定或存储，并且在同一时间禁用对单个元素的锁定。  
   
-|值|这意味着如果`IsLocked(Value)`为 true|  
+|“值”|这意味着如果`IsLocked(Value)`为 true|  
 |-----------|------------------------------------------|  
 |无|没有限制。|  
 |属性|不能更改域属性的元素。 这不适用于生成的域类关系中的角色的属性。|  
@@ -116,7 +117,7 @@ public interface ILockingPolicy
   
  为进行调用时调用这些方法`SetLocks()`上应用商店、 分区或模型元素。 每个方法，你将获得锁的建议设置。 你可以返回建议的组，或者可以将添加减去锁。  
   
- 例如:   
+ 例如:  
   
 ```  
 using Microsoft.VisualStudio.Modeling;  

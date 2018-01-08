@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5b114cb060f4a689f2712dbaf323e6d2ee327c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f5f7cff29dd368acbbc3f599ec0cf623343031f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="migrating-a-legacy-language-service"></a>将旧语言服务迁移
 你可以通过更新项目并向项目添加 source.extension.vsixmanifest 文件迁移到更高版本的 Visual Studio 的旧语言服务。 语言服务本身将继续工作和前面一样，因为 Visual Studio 编辑器采用它。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  打开 RegExLangServ.sln 解决方案。  
   
-5.  **单向升级**窗口随即显示。 单击“确定”。  
+5.  **单向升级**窗口随即显示。 单击 **“确定”**。  
   
 6.  更新的项目属性。 打开**项目属性**窗口，通过选择中的项目节点**解决方案资源管理器**、 右键单击，然后选择**属性**。  
   
@@ -109,5 +110,5 @@ ms.lasthandoff: 10/31/2017
   
 12. 开始调试。 打开 Visual Studio 的第二个实例。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [旧版语言服务扩展性](../../extensibility/internals/legacy-language-service-extensibility.md)

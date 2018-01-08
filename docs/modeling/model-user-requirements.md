@@ -14,11 +14,12 @@ caps.latest.revision: "28"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 064d2819a9a7bd3e72539ff7624299e3619f4e94
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c3584a8620c4f2d9c0f82efc94bae4dc4c33233
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 通过绘制有关用户的活动和你的系统在帮助他们实现自己目标上所起到的作用的关系图，Visual Studio 可帮助你了解你的用户，并与他们展开讨论、沟通其要求。 需求模型是一组这样的关系图，每一张图都将重点放在用户需求的不同方面。 有关视频演示，请参阅： [业务域建模](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/27/2017
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  业务规则是一个不与特定用例相关联的要求，应在整个系统中进行观察。  
   
- 许多业务规则受概念类间关系的约束。 可以作为与概念类图上的相关类关联的注释，编写这些 *静态**业务规则* 。 例如:   
+ 许多业务规则受概念类间关系的约束。 可以作为与概念类图上的相关类关联的注释，编写这些 *静态**业务规则* 。 例如:  
   
  ![附加到 Order 类的注释中的规则。] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
   
@@ -100,6 +101,6 @@ ms.lasthandoff: 10/27/2017
 |有关记录服务要求质量的更详细信息|[定义服务质量要求的准则](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |如何开发符合服务质量要求的代码|[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在开发过程中使用模型](../modeling/use-models-in-your-development-process.md)   
  [应用体系结构建模](../modeling/model-your-app-s-architecture.md)   

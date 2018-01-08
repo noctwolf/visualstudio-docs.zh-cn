@@ -12,11 +12,12 @@ caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 5c7571cbb4950f91c1b69ae88241c799577f79da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 18381aef265935cf927940f82dd0a47ee8197222
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>在程序代码中导航和更新模型
 你可以编写代码以创建和删除模型元素、 设置其属性，并创建和删除元素之间的链接。 必须在事务中进行所有更改。 如果元素在关系图上查看，关系图将""自动更正事务的末尾。  
@@ -116,7 +117,7 @@ ms.lasthandoff: 10/27/2017
   
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`  
   
- 还有其他一些方法用于访问链接。 例如:   
+ 还有其他一些方法用于访问链接。 例如:  
   
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`  
   
@@ -140,7 +141,7 @@ ms.lasthandoff: 10/27/2017
  `store.ElementDirectory.GetElement(elementId);`  
   
 ##  <a name="metadata"></a>访问类信息  
- 你可以获取有关类、 关系和 DSL 定义的其他方面的信息。 例如:   
+ 你可以获取有关类、 关系和 DSL 定义的其他方面的信息。 例如:  
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
   
@@ -161,7 +162,7 @@ ms.lasthandoff: 10/27/2017
 -   元角色的所有关系都是 ElementLinks  
   
 ##  <a name="transaction"></a>执行在事务内的更改  
- 当你的程序代码发生更改存储区中的任何内容时，它必须在事务内将这样做。 这适用于所有模型元素、 关系、 形状、 关系图和其属性。 有关更多信息，请参见<xref:Microsoft.VisualStudio.Modeling.Transaction>。  
+ 当你的程序代码发生更改存储区中的任何内容时，它必须在事务内将这样做。 这适用于所有模型元素、 关系、 形状、 关系图和其属性。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.Modeling.Transaction>。  
   
  管理事务的最方便的方法是借助`using`语句括在`try...catch`语句：  
   
@@ -231,13 +232,13 @@ using (Transaction t =
   
  有三种方法可以在其中创建关系的实例。 这三种方法的每个具有相同的效果：  
   
--   设置的属性的源角色扮演者。 例如:   
+-   设置的属性的源角色扮演者。 例如:  
   
     -   `familyTree.People.Add(edward);`  
   
     -   `edward.Parents.Add(henry);`  
   
--   将目标角色扮演者属性设置。 例如:   
+-   将目标角色扮演者属性设置。 例如:  
   
     -   `edward.familyTreeModel = familyTree;`  
   
@@ -247,7 +248,7 @@ using (Transaction t =
   
          此角色的重数是`0..*`，因此我们将添加到集合。  
   
--   显式构造关系的实例。 例如:   
+-   显式构造关系的实例。 例如:  
   
     -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
@@ -514,7 +515,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>存储分区  
  加载模型后，在同一时间加载随附的关系图。 通常情况下，该模型加载到 Store.DefaultPartition，和关系图内容都加载到另一个分区。 通常情况下，每个分区的内容的加载，并保存到单独的文件中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
  [域特定语言中的验证](../modeling/validation-in-a-domain-specific-language.md)   
  [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)   

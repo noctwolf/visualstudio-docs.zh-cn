@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: b497cafd50361c9e644467c9ca1edf55ab1d8c91
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: dcedff359d3f602096508c2123988cd31453e471
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 体系结构工具指南
 此体系结构工具指南是有关使用 Visual Studio 2010 中的建模工具的实践性指南的可下载程序包。 它显示如何以集成方式，使用所有建模工具的高级视图，并讨论了使用这些工具的最常见方案。  

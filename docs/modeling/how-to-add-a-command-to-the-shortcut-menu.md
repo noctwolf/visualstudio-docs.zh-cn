@@ -14,11 +14,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2504fce27243ff8efeda1961190b07f12561021e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 70ff75bd3bee039b0c97c35cc7135044e2cff1a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 可以将菜单命令添加到域特定语言 (DSL)，以便用户可以执行特定于 DSL 的任务。 当用户右键单击关系图时，这些命令将显示在上下文（快捷）菜单上。 你可以定义某个命令，以使它仅在特定情况下才显示在菜单中。 例如，可以使该命令仅在用户单击特定类型的元素或处于特定状态下的元素时才可见。  
@@ -142,7 +143,7 @@ ms.lasthandoff: 10/27/2017
   
 2.  查找 `ProvideMenuResource` 特性。  
   
-3.  递增特性的 `version` 参数，它是第二个参数。 如果需要，你可以显式编写参数名称以提醒你它的用途。 例如:   
+3.  递增特性的 `version` 参数，它是第二个参数。 如果需要，你可以显式编写参数名称以提醒你它的用途。 例如:  
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
@@ -161,7 +162,7 @@ ms.lasthandoff: 10/27/2017
   
 2.  在**DslPackage**，创建名为的文件夹**自定义代码**。 在此文件夹中，创建名为的新类文件`CommandSet.cs`。  
   
-3.  在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如:   
+3.  在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如:  
   
      `namespace Company.Language1 /* Make sure this is correct */`  
   
@@ -358,7 +359,7 @@ protected override IList<MenuCommand> GetMenuCommands()
   
 -   确保已卸载早期版本的程序包。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编写代码以自域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [如何： 修改标准菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)   
  [部署的域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)   

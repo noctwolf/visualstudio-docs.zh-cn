@@ -19,11 +19,12 @@ caps.latest.revision: "38"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 97cf47eafc99abefeebce0f69ac2840617fb35e2
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 9f510759d878792a31913fef8596ae6829cf74f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 使用设计时 T4 文本模板，你可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据来自数据生成的代码*模型*。 模型是文件或包含有关你的应用程序要求的关键信息的数据库。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 11/22/2017
   
 5.  保存该文件。  
   
-     你可能会看到**安全警告**要求你确认你想要运行该模板的消息框。 单击“确定”。  
+     你可能会看到**安全警告**要求你确认你想要运行该模板的消息框。 单击 **“确定”**。  
   
 6.  在**解决方案资源管理器**，展开模板文件节点，你将找到具有扩展名的文件**.txt**。 该文件包含从该模板生成的文本。  
   
@@ -324,7 +325,7 @@ Warning("A warning message");
 ```  
   
 ##  <a name="Converting"></a>将现有文件转换为模板  
- 模板的一个非常有用的特性是：它们看起来与其生成的文件（加上一些插入的程序代码）非常相似。 这暗示了创建模板的一种有用方法。 首先创建作为原型，一个普通的文件，如[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]文件中，然后逐步引入可更改所生成文件的生成代码。  
+ 模板的一个非常有用的功能是：它们看起来与其生成的文件（加上一些插入的程序代码）非常相似。 这暗示了创建模板的一种有用方法。 首先创建作为原型，一个普通的文件，如[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]文件中，然后逐步引入可更改所生成文件的生成代码。  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>将现有文件转换为设计时模板  
   
@@ -373,5 +374,5 @@ Warning("A warning message");
 |以域特定语言的形式转换数据。|[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |编写指令处理器转换自己的数据源。|[自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [T4 文本模板编写准则](../modeling/guidelines-for-writing-t4-text-templates.md)

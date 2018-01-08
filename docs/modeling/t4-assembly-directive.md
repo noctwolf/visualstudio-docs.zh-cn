@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 458fc4b2f96480c1f41efd8b80050fd0911b3e85
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a9d475a535d40af9a254a3f82839a8b733c2343d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-assembly-directive"></a>T4 程序集指令
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 设计时文本模板中，`assembly` 指令可加载程序集，以便您的模板代码可使用其类型。 该作用类似于在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目中添加程序集引用。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/27/2017
   
 -   程序集的绝对路径  
   
- 你可以使用 `$(variableName)` 语法引用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 变量（如 `$(SolutionDir)`），以及使用 `%VariableName%` 来引用环境变量。 例如：  
+ 你可以使用 `$(variableName)` 语法引用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 变量（如 `$(SolutionDir)`），以及使用 `%VariableName%` 来引用环境变量。 例如:  
   
 ```  
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
@@ -91,5 +92,5 @@ ms.lasthandoff: 10/27/2017
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [T4 包含指令](../modeling/t4-include-directive.md)

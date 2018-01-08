@@ -31,11 +31,12 @@ caps.latest.revision: "243"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 0e0f33505754eb5047a6f8a9ce174c5c07466654
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="map-dependencies-across-your-solutions"></a>映射解决方案中的依赖项
 若要了解代码之间的依赖关系，可通过创建代码图使其可视化。 这样有助于你查看代码如何相互配合，而无需读取文件和各行代码。  
@@ -231,7 +232,7 @@ ms.lasthandoff: 10/27/2017
   
      若要在地图上查看代码中，但不会显示成员，请单击**重新提取子级**图标![重新提取子级图标](../modeling/media/dependencygraph_deletednodesicon.png "DependencyGraph_DeletedNodesIcon")右上一个组的左上的角。  
   
-6.  若要查看更多与代码图上的项相关的项，请选择其中一个，再选择代码图工具栏上的“显示相关内容”  ，然后选择要添加到图中的相关项的类型。 或者，选择一个或多个项，打开快捷菜单，然后选择**显示...**的相关项的类型添加到图的选项。 例如:   
+6.  若要查看更多与代码图上的项相关的项，请选择其中一个，再选择代码图工具栏上的“显示相关内容”  ，然后选择要添加到图中的相关项的类型。 或者，选择一个或多个项，打开快捷菜单，然后选择**显示...**的相关项的类型添加到图的选项。 例如:  
   
      对于 **程序集**，请选择：  
   
@@ -309,7 +310,7 @@ ms.lasthandoff: 10/27/2017
 |**问题**|**可能的原因**|**解决方法**|  
 |---------------|------------------------|--------------------|  
 |未能生成代码图。|解决方案中没有项目成功生成过。|修复出现的生成错误，然后重新生成代码图。|  
-|尝试从“体系结构”[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  **菜单生成代码图时，** 无响应。|程序数据库 (.pdb) 文件可能已损坏。<br /><br /> pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|重新生成解决方案，然后重试。|  
+|尝试从“体系结构”[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  **菜单生成代码图时，** 无响应。|程序数据库 (.pdb) 文件可能已损坏。<br /><br /> .pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|重新生成解决方案，然后重试。|  
 |禁用 IntelliSense 浏览器数据库的某些设置。|可能在中禁用某些 IntelliSense 设置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**选项**对话框。|打开设置以启用它们。<br /><br /> 请参阅[选项、 文本编辑器、 C/c + +，高级](../ide/reference/options-text-editor-c-cpp-advanced.md)。|  
 |消息“未知方法”  将出现在方法节点上。<br /><br /> 由于无法解析方法的名称，导致出现此问题。|二进制文件可能没有基重定位表。|在链接器中打开 **/FIXED:NO** 选项。|  
 ||无法生成程序数据库 (.pdb) 文件。<br /><br /> pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|在链接器中打开 **/DEBUG** 选项。|  
@@ -343,7 +344,7 @@ ms.lasthandoff: 10/27/2017
 ### <a name="share-the-map-with-other-visual-studio-users"></a>与其他 Visual Studio 用户共享代码图  
  使用“文件”  菜单保存代码图。  
   
- - 或 -  
+ 或  
   
  若要将代码图作为特定项目的一部分图工具栏上，选择**共享**，**移动** \< *CodeMapName*>**.dgml到**，然后选择你想要保存代码图的项目。  
   

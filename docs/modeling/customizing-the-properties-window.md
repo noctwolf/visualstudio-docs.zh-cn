@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 962b4a8eac0d548d2c7a337207644bdc717fe3cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2c11cf4d8fb8d913c1d288b5daeb110b9003f7b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-the-properties-window"></a>自定义“属性”窗口
 你可以自定义的外观和行为的属性窗口中你的域特定语言 (DSL) 中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在 DSL 定义中，每个域类上定义域属性。 默认情况下时选择的类，在图上或在模型资源管理器的实例, 的每个域属性将列在属性窗口中。 这样你可以查看和编辑域属性值，即使你具有不到关系图上的形状字段映射它们。  
@@ -141,7 +142,7 @@ ms.lasthandoff: 10/27/2017
   
  你可以在属性上设置该属性，通过使用**自定义特性**属性窗口中的条目。  
   
- 一种`AnEditor`必须从第二个参数中指定的类型派生。 第二个参数应为<xref:System.Drawing.Design.UITypeEditor>或<xref:System.ComponentModel.ComponentEditor>。 有关更多信息，请参见<xref:System.ComponentModel.EditorAttribute>。  
+ 一种`AnEditor`必须从第二个参数中指定的类型派生。 第二个参数应为<xref:System.Drawing.Design.UITypeEditor>或<xref:System.ComponentModel.ComponentEditor>。 有关详细信息，请参阅<xref:System.ComponentModel.EditorAttribute>。  
   
  你可以指定您自己的编辑器或编辑器中提供[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，如<xref:System.Windows.Forms.Design.FileNameEditor>或<xref:System.Drawing.Design.ImageEditor>。 例如，使用以下过程为具有用户可以在其中输入文件名称属性。  
   
@@ -177,12 +178,12 @@ ms.lasthandoff: 10/27/2017
   
 -   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>指定你的编辑器是否将会打开一个对话框或提供一个下拉列表菜单。  
   
- 你还可以提供的图形表示形式将显示在属性网格中的属性的值。 若要执行此操作，重写`GetPaintValueSupported`，和`PaintValue`。  有关更多信息，请参见<xref:System.Drawing.Design.UITypeEditor>。  
+ 你还可以提供的图形表示形式将显示在属性网格中的属性的值。 若要执行此操作，重写`GetPaintValueSupported`，和`PaintValue`。  有关详细信息，请参阅<xref:System.Drawing.Design.UITypeEditor>。  
   
 > [!NOTE]
 >  在单独的代码文件中添加代码**Dsl**项目。  
   
- 例如:   
+ 例如:  
   
 ```  
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor  
@@ -206,7 +207,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
   
 ```  
   
- 有关更多信息，请参见<xref:System.Drawing.Design.UITypeEditor>。  
+ 有关详细信息，请参阅<xref:System.Drawing.Design.UITypeEditor>。  
   
 ## <a name="providing-a-drop-down-list-of-values"></a>提供值的下拉的列表  
  你可以提供的用户可供选择值的列表。  
@@ -222,7 +223,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
   
 ```  
   
- 定义一个从 <xref:System.ComponentModel.TypeConverter> 派生的类。 在单独的文件中添加代码**Dsl**项目。 例如:   
+ 定义一个从 <xref:System.ComponentModel.TypeConverter> 派生的类。 在单独的文件中添加代码**Dsl**项目。 例如:  
   
 ```csharp  
 /// <summary>  
@@ -316,5 +317,5 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)

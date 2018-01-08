@@ -12,11 +12,12 @@ caps.latest.revision: "27"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 185e513f1d9733c071ecacb65f67f2530e43cdc3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0d0114692af0c470a3f2aab181219394a54571d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>支持的可视化效果的 Visual Studio 版本&amp;建模 SDK
 以下是一系列 Visual Studio 版本支持用于[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]的创作和部署环境中。 有关这些版本的详细信息，请参阅 Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [开发人员中心](http://go.microsoft.com/fwlink/?LinkId=75628)。  
@@ -46,5 +47,5 @@ ms.lasthandoff: 10/27/2017
 > [!NOTE]
 >  若要使 DSL 能够 Shell 产品上运行，必须设置**支持 VS 版本**扩展清单中的字段。 有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

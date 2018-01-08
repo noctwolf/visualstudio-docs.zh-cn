@@ -12,11 +12,12 @@ caps.latest.revision: "48"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: efdd7f5358ce0ec4afd32ebaa8ff1fd8d117dc47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 976fbd25965c62e82f9b358f22c8fe3f2b83363e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自定义和扩展域特定语言
 Visual Studio 建模和可视化效果 SDK (VMSDK) 提供可以在其中定义建模工具的多个级别：  
@@ -71,7 +72,7 @@ Visual Studio 建模和可视化效果 SDK (VMSDK) 提供可以在其中定义�
 |将多个 Dsl 集成，使它们作为一个应用程序的一部分工作。|请参阅[集成模型通过使用 Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。|  
 |允许 DSL 由第三方扩展，并控制扩展。|[使用 MEF 扩展 DSL](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [使用 DSL 库在 DSL 之间共享类](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [定义锁定策略以创建只读段](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何定义的域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   
  [编写代码以自域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [Visual Studio 的建模 SDK - 特定于域的语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  

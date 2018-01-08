@@ -15,11 +15,12 @@ caps.latest.revision: "43"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c5e60ada4489e12312df92ecceab8bc268a6cfac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c37e092f2caa39807760bd04a22587d684a6998d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
 文本模板包含将从其生成的文本。 例如，用于创建网页的模板将包含"\<html > …"和所有其他标准部件的 HTML 页。 插入模板是*控制块*，这是程序代码的片段。 控制块提供变化值，允许文本部件是条件和重复的。  
@@ -190,7 +191,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>  
 ```  
   
- 应该使用绝对路径名，或在路径名中使用标准宏名。 例如:   
+ 应该使用绝对路径名，或在路径名中使用标准宏名。 例如:  
   
 ```  
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  

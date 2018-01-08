@@ -16,11 +16,12 @@ caps.latest.revision: "55"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 6f55cbcd7e213d228a8b20f89538dfd88d8c2038
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 4590652f37c3f1a1bdaf6bd601aee8d01d1a1c98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dependency-diagrams-guidelines"></a>依赖项关系图： 准则
 通过创建描述在高级别的应用程序的体系结构*依赖项关系图*Visual Studio 中。 确保你的代码通过验证你的代码使用依赖项关系图来保持与此设计保持一致。 还可以在生成过程中包括层验证。 请参阅[第 9 频道视频： 设计和验证体系结构使用依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。  
@@ -122,7 +123,7 @@ ms.lasthandoff: 11/07/2017
   
 -   **创建新关系图的新功能**。 通常情况下，将有一个或多个依赖项关系图来描述整个应用程序。 如果您正在设计应用程序的新功能，请勿添加或更改现有的关系图。 相反，创建您自己的关系图来反映代码的新部分。 新关系图中的图层可能包括演示文稿、域逻辑和新功能的数据库层。  
   
-     在生成应用程序时，将同时对整体的关系图和更详细的功能关系图验证您的代码。  
+     在生成应用程序时，将同时对整体的关系图和更详细的功能关系图验证你的代码。  
   
 ##  <a name="EditLayout"></a>编辑演示和讨论的布局  
  为了帮助你识别层和依赖项或与团队成员对其进行讨论，你可以按以下方式编辑关系图的外观和布局：  
@@ -159,6 +160,6 @@ ms.lasthandoff: 11/07/2017
 ##  <a name="BuildValidation"></a>在生成过程中包括层验证  
  若要确保将来更改的代码符合依赖项关系图，包含到你的解决方案的标准生成过程的层验证。 在其他团队成员生成解决方案时，在代码中的依赖关系和依赖项关系图之间的差异将作为生成错误报告。 有关在生成过程中包括层验证的详细信息，请参阅[使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)   
  [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)

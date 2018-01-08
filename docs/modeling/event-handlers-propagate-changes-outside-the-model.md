@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 29c8594b80c55eb000d70f05d35bbf28becb6e26
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件处理程序在模型外部传播更改
 在可视化和建模 SDK，你可以定义存储事件处理程序以将更改传播到应用商店中，如非应用商店变量、 文件、 模型中其他存储或其他外部资源[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展。 存储事件处理程序将在其中触发的事件发生在事务结束后执行。 它们还将撤消或重做操作进行执行。 因此，与应用商店规则不同存储事件是最适用于更新存储之外的值。 与.NET 事件不同存储事件处理程序注册来侦听类： 无需注册每个实例的单独处理。 有关如何选择不同的方式来处理更改之间的详细信息，请参阅[响应和传播更改](../modeling/responding-to-and-propagating-changes.md)。  
@@ -188,7 +189,7 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionCommitted||  
 |TransactionRolledBack||  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [响应并且将更改传播](../modeling/responding-to-and-propagating-changes.md)   
  [示例代码： 线路关系图](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
  

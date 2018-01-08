@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c9cf2ed906cd35f201c13cc2f82f8142f598b901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 14e0252b4bf9a34c219db09d621bd5b12f7fbb78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-user-commands-and-actions"></a>编写用户命令和操作
 通过将命令添加到关系图，以及通过响应笔势（例如拖放、单击和双击事件），可自定义域特定语言。  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/27/2017
   
 -   [自定义元素工具](../modeling/customizing-element-tools.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)

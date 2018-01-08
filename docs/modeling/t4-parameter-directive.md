@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 468c4716038e3f082435984ff74c7369c200d9db
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 434adf94f813c28f696a3218500428d659d68ddf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-parameter-directive"></a>T4 参数指令
 在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]文本模板`parameter`指令声明从外部的上下文中传递的值初始化的模板代码中的属性。 如果你编写代码时，将调用文本转换，可以设置这些值。  

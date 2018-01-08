@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6baa3086d1a81ce433a077ab1ed0dff4cb152308
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1cbc00fde74aa8f3592d4f50b31005e951b14962
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 文本模板编写准则
 以下常规准则可能有用，如果正在生成程序代码或中的其他应用程序资源[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它们不被固定的规则。  
@@ -136,7 +137,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
  编写你想要生成，并确保其正确无误的代码或文本的示例。 然后将其扩展名更改为.tt 然后逐步插入通过读取模型修改内容的代码。  
   
  请考虑使用类型化的模型。  
- 虽然你可以为您的模型创建的 XML 或数据库的架构，它可能会创建域特定语言 (DSL) 很有用。 DSL 的优点它生成一个类来表示架构和属性来表示特性中的每个节点。 这意味着，您可以根据业务模型进行编程。 例如：  
+ 虽然你可以为您的模型创建的 XML 或数据库的架构，它可能会创建域特定语言 (DSL) 很有用。 DSL 的优点它生成一个类来表示架构和属性来表示特性中的每个节点。 这意味着，您可以根据业务模型进行编程。 例如:  
   
 ```  
 Team Members:  
@@ -153,6 +154,6 @@ Team Members:
   
  你还可以为域特定语言 (DSL) 来设计你自己的关系图的类型。 可以从 UML 和 Dsl 生成代码。 有关详细信息，请参阅[分析和建模体系结构](../modeling/analyze-and-model-your-architecture.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)

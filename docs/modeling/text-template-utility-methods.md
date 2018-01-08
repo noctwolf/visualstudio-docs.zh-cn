@@ -12,11 +12,12 @@ caps.latest.revision: "50"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 534a7317b4bca2abe559c028d025a52997a9f508
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cff244ea8b3ba8e6dd25af06d51bf5b80b51aa06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-template-utility-methods"></a>文本模板实用工具方法
 有多种方法中编写代码时都可供你[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]文本模板。 这些方法定义中<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。  
@@ -116,7 +117,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- 一种`this.Host`取决于在其中执行模板的宿主类型。 在模板中运行[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，可以强制转换`this.Host`到`IServiceProvider`来访问服务，例如 IDE。 例如：  
+ 一种`this.Host`取决于在其中执行模板的宿主类型。 在模板中运行[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，可以强制转换`this.Host`到`IServiceProvider`来访问服务，例如 IDE。 例如:  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

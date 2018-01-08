@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: ea51f2b4b11680c07d9e7344d097b954a57d3f4d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5f4456899b724d8a7cd2dba6039b28eee29bfafd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>使用自定义宿主处理文本模板
 *文本模板转换*处理采用*文本模板*文件作为输入并生成一个文本文件作为输出。 从 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 扩展或安装有 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的计算机上运行的独立应用程序，可以调用文本转换引擎。 但是，你必须提供*文本模板化宿主*。 该类将模板连接到环境，查找资源（如程序集和包含文件），并处理输出和错误消息。  

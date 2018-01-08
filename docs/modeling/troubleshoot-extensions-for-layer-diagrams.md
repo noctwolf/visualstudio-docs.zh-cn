@@ -14,11 +14,12 @@ caps.latest.revision: "25"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: fae53e45b231292df8b7a6ae8bf4f2babc5d9e88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f5cb41ab9a68e567d7c6b64243c6cec017835088
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>依赖项关系图扩展疑难解答
 本主题解决了你在创建层模型扩展时可能会遇到的一些问题。  
@@ -52,5 +53,5 @@ ms.lasthandoff: 10/27/2017
   
 4.  在**source.extension.vsixmanifest**在层验证项目中，请确保你已添加同时**MEF 组件**项和**自定义扩展类型**项下面**内容**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展依赖项关系图](../modeling/extend-layer-diagrams.md)

@@ -11,11 +11,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 3b462a3f5eb70fd21b907a046b0774f937bb738d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9f39931fed8d1491610bfafb6fd012439a48c0ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 可以将拖放事件的处理程序添加到 DSL，以便用户可以将项从其他关系图或 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的其他部分拖动到关系图上。 还可以添加诸如双击事件的处理程序。 组合在一起，称为拖放和双击处理程序*笔势处理程序*。  
@@ -171,7 +172,7 @@ using System.Linq;
   
     1.  如果未安装 Visual Studio 模型总线扩展，请下载并安装它。 有关详细信息，请参阅[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。  
   
-    2.  在 DSL 设计器中打开源 DSL 的 DSL 定义文件。 右击设计图面，然后单击**启用 Modelbus**。 在该对话框中，选择一个或两个选项。  单击“确定”。 新项目“ModelBus”随即添加到 DSL 解决方案中。  
+    2.  在 DSL 设计器中打开源 DSL 的 DSL 定义文件。 右击设计图面，然后单击**启用 Modelbus**。 在该对话框中，选择一个或两个选项。  单击 **“确定”**。 新项目“ModelBus”随即添加到 DSL 解决方案中。  
   
     3.  单击**转换所有模板**和重新生成解决方案。  
   
@@ -586,7 +587,7 @@ namespace Company.CompartmentDrag  // EDIT.
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义复制行为](../modeling/customizing-copy-behavior.md)   
  [部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)
  

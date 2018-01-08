@@ -11,11 +11,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 397efd1049ea52b2e7c67a46509d2a088c6fa488
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a1b7a8b2abafa4c63192c207ad73d00e508bddfa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：将域特定语言迁移至新版本
 你可以迁移项目的定义和使用到的域特定语言[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]的版本中的[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]，随之发行[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]。  
@@ -88,6 +89,6 @@ ms.lasthandoff: 10/27/2017
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [相关的博客文章](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
 

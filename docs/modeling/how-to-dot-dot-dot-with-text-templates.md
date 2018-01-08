@@ -11,11 +11,12 @@ caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 93b4d129cd09fe3d3b67bfc743286577b1e285dd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 351b9025ba4631a515f1f6cf627e27e6afb3cc88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
 中的文本模板[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供生成任何类型的文本的有效方法。 文本模板可用于在你的应用程序的一部分运行时和设计时生成你的项目代码的一些生成文本。 本主题总结了将最常要求"如何实现...？" 问题。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/27/2017
   
 -   将运行时文本模板添加到你的项目。 此模板创建一个类，在代码中，你可以实例化和用于生成文本。 在构造函数参数，可以将数据传递给它。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
--   如果你想要从仅在运行时提供的模板生成，你可以使用标准文本模板。 如果你正在编写[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展，你可以调用文本模板化服务。 有关详细信息，请参阅[在 VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，你可以使用文本模板化引擎。 有关更多信息，请参见<xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。  
+-   如果你想要从仅在运行时提供的模板生成，你可以使用标准文本模板。 如果你正在编写[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展，你可以调用文本模板化服务。 有关详细信息，请参阅[在 VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，你可以使用文本模板化引擎。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。  
   
      使用\<#@parameter#> 指令将参数传递给这些模板。 有关详细信息，请参阅[T4 参数指令](../modeling/t4-parameter-directive.md)。  
   
@@ -73,14 +74,14 @@ ms.lasthandoff: 10/27/2017
   
 ### <a name="generate-files-from-a-complex-model"></a>从复杂的模型生成文件  
   
--   请考虑创建域特定语言 (DSL) 来表示该模型。 这样可以更轻松地编写一些模板，因为你使用的类型和属性来反映你的模型中的元素的名称。 无需分析该文件，或浏览 XML 节点。 例如:   
+-   请考虑创建域特定语言 (DSL) 来表示该模型。 这样可以更轻松地编写一些模板，因为你使用的类型和属性来反映你的模型中的元素的名称。 无需分析该文件，或浏览 XML 节点。 例如:  
   
      `foreach (Book book in this.Library) { ... }`  
   
      有关详细信息，请参阅[Getting Started with 域特定语言](../modeling/getting-started-with-domain-specific-languages.md)和[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)。  
   
 ### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>从获取数据[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
- 若要使用中提供的服务[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，集`hostSpecific`特性并加载`EnvDTE`程序集。 例如：  
+ 若要使用中提供的服务[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，集`hostSpecific`特性并加载`EnvDTE`程序集。 例如:  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  

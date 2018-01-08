@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: ea0753130b6fa1da60cf83cf15c0ee5c7f4010c2
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: d576eda94c421b16ac3f752efa26f2ecb1b761b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-tests-from-a-model"></a>基于模型开发测试
 可以使用要求模型和体系结构模型来帮助组织系统及其组件的测试。 这种做法有助于确保你测试了对于用户和其他利益干系人而言非常重要的要求，并可帮助你在要求发生变化时快速更新测试。 如果你使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，还可以维护模型和测试之间的链接。  
@@ -157,7 +158,7 @@ Assert (countAfter == countBefore = 1);
   
 3.  添加到测试套件（即验证模型元素中表示的需求的测试用例）。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)   
  [建立用户需求模型](../modeling/model-user-requirements.md)   
  [建模应用程序的体系结构](../modeling/model-your-app-s-architecture.md)   
