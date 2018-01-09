@@ -14,18 +14,19 @@ ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: fa4aec5f164e188ff9832d06a4b3c8dad46ae63d
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: f5e6c5a94ac4c875922d2da09e9171f4929035f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 的网络安装
 
 企业管理员通常会创建网络安装点，以便部署到客户端工作站。 我们精心设计了 Visual Studio 2017，可将初始安装的相关文件以及所有产品更新缓存到一个文件夹中。 （此过程也称为_创建布局_。）这样即使尚未更新到最新的服务更新，客户端工作站也可以使用同一网络位置来管理其安装。
 
-> [!NOTE]
-> 如果企业使用多个 Visual Studio 版本（例如，同时使用 Visual Studio Professional 和 Visual Studio Enterprise），需要为每个版本单独创建网络安装共享。
+ > [!NOTE]
+ > 如果企业使用多个 Visual Studio 版本（例如，同时使用 Visual Studio Professional 和 Visual Studio Enterprise），需要为每个版本单独创建网络安装共享。
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>下载 Visual Studio 引导程序
 
@@ -127,7 +128,7 @@ ms.lasthandoff: 11/22/2017
 
 如果使用 `--wait` 参数，`%ERRORLEVEL%` 环境变量会设置为下列值之一，具体视操作结果而定：
 
-  | **值** | **结果** |
+  | **“值”** | **结果** |
   | --------- | ---------- |
   | 0 | 操作成功完成 |
   | 3010 | 操作成功完成，但安装需要重启才能使用 |
@@ -157,7 +158,7 @@ ms.lasthandoff: 11/22/2017
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
 * 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户）。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
 * [安装 Visual Studio](install-visual-studio.md)

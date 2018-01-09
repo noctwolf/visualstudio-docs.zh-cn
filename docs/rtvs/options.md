@@ -17,13 +17,18 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: dd21ba3c54ed274f181c036ed0121d8d3c5a180e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: data-science
+ms.openlocfilehash: a7680ff2613051cb795d2ca9cb509f725e92dd23
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="r-tools-for-visual-studio-options"></a>针对 Visual Studio 的 R 工具选项
+
+可使用“R 工具”>“选项”**菜单，也可使用“工具”>“选项”****，然后滚到“R 工具”**来访问设置：
+
+  ![R 工具的选项对话框](media/options-dialog.png)
 
 可通过以下方法访问特定于 R 的选项和设置。 必选中“选项”对话框底部的“显示所有设置”框，才可显示所有这些部分。
 

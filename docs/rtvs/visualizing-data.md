@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5d022864609dca3aeaa2a759ea05e1f37abd203f
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 7449e6037300eab33d89f32f98d58a5e265ad21f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-visual-data-plots-with-r"></a>使用 R 创建可视数据图
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 12/04/2017
 
 ![绘制英雄形象](media/plotting-hero-image.png)
 
-在本主题中：
+本主题内容：
 
 - [绘图窗口](#the-plot-window)
 - [多个绘图窗口](#multiple-plot-windows)

@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9c616c359480831827549d05496157ad28e4575
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c934ae4869867b0680999514cbaae99c74c3d2cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend 中的键盘快捷方式和修改键
 通过使用键盘快捷方式，你需要多次单击鼠标按钮完成的操作只需按一次键盘快捷方式即可完成，从而可加快你的工作速度。 [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] 中的键盘快捷方式分为以下两种类别：  

@@ -17,11 +17,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c54a6f5b39136a56753facce4c4f1e5a656fbb36
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 4ab98d4a4f589959982bdcb584189b30923ddbc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# 代码段
 代码片段是现成的代码段，可快速插入到代码中。 例如，`for` 代码片段刻创建一个空 `for` 循环。 有些代码片段为外侧代码片段，让你可以选择代码行，然后选择包含所选代码行的代码片段。 例如，选择代码行并激活 `for` 代码片段时，会通过循环块内的代码行创建 `for` 循环。 使用代码片段可以更快、更容易且更可靠地编写程序代码。  
@@ -74,7 +75,7 @@ ms.lasthandoff: 12/07/2017
 |using|创建 [using](/dotnet/csharp/language-reference/keywords/using-directive) 指令。|在命名空间（包括全局命名空间）中。|  
 |while|创建 [while](/dotnet/csharp/language-reference/keywords/while) 循环。|在方法、索引器、属性访问器或事件访问器内。|  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [代码片段函数](../ide/code-snippet-functions.md)   
  [代码片段](../ide/code-snippets.md)   
  [模板参数](../ide/template-parameters.md)   

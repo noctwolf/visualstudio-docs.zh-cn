@@ -12,11 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 388784b53018c30357f496cfbeb533c0a07a3053
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: ecab13523c5d2ae362a58527f8c15ce1f26dd225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>快速入门：在 Visual Studio 中使用 Visual Basic 创建 Windows 窗体应用
 在这个 5-10 分钟的 Visual Studio 集成开发环境 (IDE) 简介中，你将了解如何创建具有基于 Windows 的用户界面 (UI) 的简单 Visual Basic 应用程序。
@@ -95,5 +96,5 @@ ms.lasthandoff: 12/11/2017
 祝贺你完成此快速入门！ 希望你已对 Visual Basic 和 Visual Studio IDE 有了一定了解。 若要深入了解，请继续阅读目录中“教程”部分的教程。  
 
 ## <a name="see-also"></a>请参阅   
-* [快速入门：使用 Visual Basic 在 Visual Studio 中创建控制台应用](quickstart-visual-basic-console.md)](https://docs.microsoft.com/dotnet/core/tutorials/vb-with-visual-studio)
+* [快速入门：使用 Visual Basic 在 Visual Studio 中创建控制台应用](quickstart-visual-basic-console.md)
 * [详细了解 Visual Basic IntelliSense](visual-basic-specific-intellisense.md)  

@@ -13,11 +13,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f57cfea2655061985f58692c2d6c47c6433230bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: de2af589a92e401ecf549726dea1a5ae300a20bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 创建 UI
 Blend for Visual Studio 可用于设计基于 XAML 的 Windows 和 Web 应用程序。 它提供了与 Visual studio 相同的基本 XAML 设计体验，并添加了可视化设计器，以用于高级任务，例如动画和行为。 （有关这两种工具的比较，请参阅[在 Visual Studio 和 Blend for Visual Studio 中设计 XAML](../designers/designing-xaml-in-visual-studio.md)。）
@@ -97,7 +98,7 @@ Blend for Visual Studio 随附 Visual Studio 提供，无需下载。 但需要�
   
  ![属性面板](../designers/media/blend5_properties_panel.png "Blend5_properties_panel")  
   
- **类别** - 展开和折叠类别的属性。 单击“展开”![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64")和“折叠”![折叠](../designers/media/b5_collapse_button.png "b5_collapse_button")可显示或隐藏类别详细信息。  
+ **类别** - 展开和折叠类别的属性。 单击“展开”![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") 和“折叠”![折叠](../designers/media/b5_collapse_button.png "b5_collapse_button") 可显示或隐藏类别详细信息。  
   
 |||  
 |-|-|  
@@ -121,7 +122,7 @@ Blend for Visual Studio 随附 Visual Studio 提供，无需下载。 但需要�
   
  **观看简短视频：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [属性面板](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [插入控件并修改其行为](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)   
  [动态显示对象](../designers/animate-objects-in-xaml-designer.md)   
  [绘制形状和路径](../designers/draw-shapes-and-paths.md)   

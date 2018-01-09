@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ed6da27de93c371e59b8851924a39b6387c32db9
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 170d4dd3aeb5dfb2d05f8f640c653790ccab0a70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-r-interactive-window"></a>使用 R 交互窗口
 
@@ -65,16 +66,15 @@ REPL 中以前的所有输入和输出都是只读的，不能更改。 但是�
 | ![“重置”按钮](media/repl-toolbar-01-reset.png) | 重置 | Ctrl+Shift+F10 | 重置交互窗口会话，清除所有变量和历史记录。 |
 | ![“清除”按钮](media/repl-toolbar-02-clear.png) | 清除 | Ctrl+L | 清除交互窗口中显示的输出，不影响会话变量或历史记录。 |
 | ![“历史记录”按钮](media/repl-toolbar-03-history.png) | “上一条历史记录”命令<br/>“下一条历史记录”命令 | 向上，向下<br/>Alt+向上键，Alt+向下键 | 滚动浏览历史记录，以及多行代码块的某些行为。 请参阅[历史记录](#history)。 |
-| ![“加载工作区”按钮](media/repl-toolbar-04-load-workspace.png) | 加载工作区 | 无 | 加载以前保存的工作区（请参阅[工作区和会话](#workspaces-and-sessions)。 |
-| ![“工作区另存为”按钮](media/repl-toolbar-05-save-workspace-as.png)| 工作区另存为 | 无 | 将当前状态的会话另存为工作区（请参阅[工作区和会话](#workspaces-and-sessions)。 |
+| ![“加载工作区”按钮](media/repl-toolbar-04-load-workspace.png) | 加载工作区 | 不可用 | 加载以前保存的工作区（请参阅[工作区和会话](#workspaces-and-sessions)。 |
+| ![“工作区另存为”按钮](media/repl-toolbar-05-save-workspace-as.png)| 工作区另存为 | 不可用 | 将当前状态的会话另存为工作区（请参阅[工作区和会话](#workspaces-and-sessions)。 |
 | ![“源化 R 脚本”按钮](media/repl-toolbar-06-source-r-script.png) | 源化 R 脚本 | Ctrl+Shift+S | 在 Visual Studio 编辑器中使用当前活动的 R 脚本调用 `source`，它将运行代码。  仅当在 Visual Studio 编辑器中打开 R 文件时，才会显示此按钮。 | 
 | ![“源化带有回响的 R 脚本”按钮](media/repl-toolbar-07-source-r-script-with-echo.png) | 源化带有回响的 R 脚本 | Ctrl+Shift+Enter | 与源化 R 脚本相同，但在交互窗口中显示脚本内容。 | 
 | ![“中断 R”按钮](media/repl-toolbar-08-interrupt-r.png)| 中断 R | Esc | 停止交互窗口中任何正在运行的代码，如该部分开头的屏幕截图中的 `while` 循环。 |
-| ![“附加调试器”按钮](media/repl-toolbar-09b-attach-debugger.png)| 附加调试器 | 无 | 也可使用“调试”>“附加到 R 交互”命令。 | 
+| ![“附加调试器”按钮](media/repl-toolbar-09b-attach-debugger.png)| 附加调试器 | 不可用 | 也可使用“调试”>“附加到 R 交互”命令。 | 
 | ![“将工作目录设置为源文件位置”按钮](media/repl-toolbar-10-set-working-directory-source.png)| 将工作目录设置为源文件位置 | Ctrl+Shift+E | （使用 `source`）将工作目录设置为加载到交互窗口的最新源文件。 请参阅[工作目录](#working-directory)。 |
 | ![“将工作目录设置为项目位置”按钮](media/repl-toolbar-11-set-working-directory-to-project.png) | 将工作目录设置为项目位置 | Ctrl+Shift+P | 将工作目录设置为 Visual Studio 中当前加载项目的根目录。 请参阅[工作目录](#working-directory)。 |
-| (文本字段) | 选择工作目录 | 无 | 工作目录的直接输入字段。 请参阅[工作目录](#working-directory)。 |
-
+| (文本字段) | 选择工作目录 | 不可用 | 工作目录的直接输入字段。 请参阅[工作目录](#working-directory)。 |
 
 ## <a name="workspaces-and-sessions"></a>工作区和会话
 
@@ -88,12 +88,10 @@ REPL 中以前的所有输入和输出都是只读的，不能更改。 但是�
 
 使用“重置”按钮或“R 工具”>“会话”>“重置”，可清除会话上下文。 如果使用远程会话，重置操作还会删除远程计算机上的用户配置文件，清除其中存储的所有文件。 （请参阅[工作区](workspaces.md#directories-on-local-and-remote-computers)。）
 
-
 ## <a name="working-directory"></a>工作目录
 
 开发人员通常想要在进行交互会话时更改其工作目录。 工具栏、“R 工具”>“工作目录”菜单和项目上下文菜单中提供了许多命令，使用这些命令可以轻松地将工作目录设置为源文件位置、项目位置或其他任意位置。 这样做有助于避免在引用文件时键入完整路径或冗长的相对路径。
 
- 
 ## <a name="history"></a>历史记录
 
 在交互窗口中输入的每行代码（包括从编辑器发送的代码行）都将保留在 REPL 的历史记录中。 然后，可以使用向上键和向下键浏览历史记录，就像使用命令行时可能习惯进行的操作一样。

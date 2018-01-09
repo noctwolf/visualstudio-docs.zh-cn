@@ -12,11 +12,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6906f2e0290416d9a287a9541cf5e40e26180ffa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 1e56c0b64b0ccd508d7a879d8270af8ffed5c807
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测 .NET 服务和收集详细计时数据
 本主题介绍如何使用 [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] 分析工具命令行工具检测 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服务和收集详细计时数据。  
@@ -85,14 +86,14 @@ ms.lasthandoff: 10/31/2017
   
 -   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|启动 (**/threadon**) 或停止 (**/threadoff**) 由线程 ID (`TID`) 指定的线程的数据收集。|  
   
 ## <a name="ending-the-profiling-session"></a>结束分析会话  
- 若要结束分析会话，请停止正在运行受检测组件的服务，然后调用 VSPerfCmd[/shutdown](../profiling/shutdown.md) 选项来关闭探查器和分析数据文件。 VSPerfClrEnv /globaloff 命令会清除分析环境变量。  
+ 若要结束分析会话，请停止正在运行受检测组件的服务，然后调用 VSPerfCmd [/shutdown](../profiling/shutdown.md) 选项来关闭探查器和分析数据文件。 VSPerfClrEnv /globaloff 命令会清除分析环境变量。  
   
  必须重启计算机才能应用新的环境设置。  
   
@@ -112,6 +113,6 @@ ms.lasthandoff: 10/31/2017
   
 5.  重新启动计算机。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析服务](../profiling/command-line-profiling-of-services.md)   
  [检测方法数据视图](../profiling/instrumentation-method-data-views.md)

@@ -14,11 +14,12 @@ ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ed86e3cd404c40026fad20ef08d4daecd98d74f2
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 4d462120e7b51551ca7f15cc2d23387824a1f9f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 
@@ -80,7 +81,7 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
     * 中间证书： Microsoft 代码签名 PCA
         * 所有系统均需要此证书。 请注意，通过 Windows 更新实现所有更新的系统可能没有此证书。
     * 根证书： Microsoft 根证书颁发机构
-        * 必需。 运行 Windows 7 或更高版本的系统附带此证书。
+        * 必须的。 运行 Windows 7 或更高版本的系统附带此证书。
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>为什么无法自动安装 Certificates 文件夹中的证书？
 
@@ -119,7 +120,7 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
 * 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户）。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
 * [安装 Visual Studio](install-visual-studio.md)

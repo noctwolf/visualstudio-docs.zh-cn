@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d417ac531331b62b0f711fe155a94f1ac0954310
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 964ed265f4e2587a1bef4812797987c47d52fa80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-writing-and-running-code"></a>步骤 2：编写和运行代码
 
@@ -41,14 +42,14 @@ ms.lasthandoff: 12/01/2017
     ```
 
 1. 注意语法着色如何区分 `print` 语句与 `"Hello Visual Studio"` 参数。 另外，暂时删除字符串上的最后一个 `"`，注意 Visual Studio 如何在包含语法错误的代码下方显示一条红色下划线。 然后，替换 `"` 以更正此代码。
- 
+
     ![IntelliSense 语法着色和错误突出显示](media/vs-getting-started-python-06-IntelliSense3b.png)
- 
+
     > [!Tip]
     > 由于一个人的开发环境是件非常私人的事情，因此，Visual Studio 允许用户完全控制 Visual Studio 的外观和行为。 选择“工具”>“选项”菜单命令，浏览“环境”和“文本编辑器”选项卡下面的设置。 默认情况下仅显示部分选项；若要查看每种编程语言的每个选项，请选择对话框底部的“显示所有设置”。 
 
 1. 按 Ctrl+F5 或选择“调试”>“开始执行(不调试)”菜单项，运行到目前为止编写的代码。 如果代码中仍然存在错误，Visual Studio 会发出警告。
- 
+
 1. 运行程序时，会出现一个显示结果的控制台窗口，就像从命令行使用 `PythonApplication1.py` 运行 Python 解释器一样。 按键关闭窗口，返回到 Visual Studio 编辑器。
 
     ![首次运行程序时的输出](media/vs-getting-started-python-07-output.png)
@@ -70,8 +71,8 @@ ms.lasthandoff: 12/01/2017
 1. 通过导入 `sin`、`cos` 和 `radians` 成员完成，注意自动完成可用于每个成员。 完成后，代码应如下所示：
 
     ```python
-    import sys  
-    from math import sin, cos, radians          
+    import sys
+    from math import sin, cos, radians
     ```
 
     > [!Tip]
@@ -80,18 +81,16 @@ ms.lasthandoff: 12/01/2017
 1. 再添加一小段代码以输出 360 度的余弦值：
 
     ```python 
-    for i in range(360):        
+    for i in range(360):
         print(cos(radians(i)))
     ```
 
 1. 使用 Ctrl+F5 或“调试”>“开始执行(不调试)”再次运行程序。 完成后，关闭输出窗口。
 
-
 ## <a name="next-steps"></a>后续步骤
 
 > [!div class="nextstepaction"]
 > [使用 REPL 交互窗口](vs-tutorial-01-03.md)
-
 
 ## <a name="going-deeper"></a>深入了解
 

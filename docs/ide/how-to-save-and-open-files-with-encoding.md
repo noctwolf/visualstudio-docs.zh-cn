@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9dca526f53c59b8db35b50378e4bf280d5e0a1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 25ec36e6b124f47c4bb13be8f7affd9b7ee54553
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>如何：保存和打开带有编码的文件
 可以使用特定字符编码保存文件，以支持双向语言。 还可以在打开文件时指定编码，以便 Visual Studio 正确显示文件。  
@@ -58,6 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  按照上述步骤中的步骤 2 和步骤 3 操作。  
   
-## <a name="see-also"></a>另请参阅  
- [编码和 Windows 窗体全球化](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
- [对应用程序进行全球化和本地化](../ide/globalizing-and-localizing-applications.md)
+## <a name="see-also"></a>请参阅
+[编码和换行符](encodings-and-line-breaks.md)  
+[编码和 Windows 窗体全球化](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
+[对应用程序进行全球化和本地化](../ide/globalizing-and-localizing-applications.md)

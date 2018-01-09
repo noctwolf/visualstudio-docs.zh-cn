@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 80b53ca4a4ada7374d0d62101b00b8ed1a9ca335
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 2126855c0d8b44965c3ba867940990de0edb1d42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-python-interactive-window"></a>使用 Python 交互窗口
 
@@ -28,10 +29,10 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 
 | REPL | 描述 | 编辑 | 调试 | 图像 |
 | --- | --- | --- | --- | --- |
-| 标准 | 默认 REPL，直接与 Python 通信 | 标准编辑（多行等）。 | 是，通过 `$attach` | No |
-| 调试 | 默认 REPL，与已调试的 Python 进程通信 | 标准编辑 | 仅调试 | No |
-| IPython | REPL 与 IPython 后端通信 | IPython 命令，Pylab 的便利 | No | 是，在 REPL 中内联 |
-| 带 Pylab 的 IPython | REPL 与 IPython 后端通信 | 标准 IPython | No | 是，单独窗口 | 
+| 标准 | 默认 REPL，直接与 Python 通信 | 标准编辑（多行等）。 | 是，通过 `$attach` | 否 |
+| 调试 | 默认 REPL，与已调试的 Python 进程通信 | 标准编辑 | 仅调试 | 否 |
+| IPython | REPL 与 IPython 后端通信 | IPython 命令，Pylab 的便利 | 否 | 是，在 REPL 中内联 |
+| 带 Pylab 的 IPython | REPL 与 IPython 后端通信 | 标准 IPython | 否 | 是，单独窗口 | 
 
 本主题介绍**标准** REPL 模式和**调试** REPL 模式。 有关 IPython 模式的详细信息，请参阅[使用 IPython REPL](interactive-repl-ipython.md)。
 
@@ -76,7 +77,7 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 
 <a name="meta-commands"></a>交互窗口还支持多个元命令。 所有元命令都以 `$` 开头，你可以键入 `$help` 获得元命令和 `$help <command>` 的列表，以获取特定命令的使用情况详细信息。
 
-| 元命令 | 说明 |
+| 元命令 | 描述 |
 | --- | --- |
 | `$$` | 插入注释，用于注释会话中的代码。 |
 | `$attach` | 将 Visual Studio 调试器附加到 REPL 窗口进程以启用调试。 |

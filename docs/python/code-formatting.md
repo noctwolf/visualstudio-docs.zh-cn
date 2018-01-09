@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 80e23d4e3973590d5046468e9efb826afd1417d5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: adffbe879701944d5492c36dd40acc813f6afa8d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="formatting-python-code"></a>设置 Python 代码格式
 
@@ -111,7 +112,7 @@ ms.lasthandoff: 12/01/2017
 
 使用“编辑”>“高级”>“填充注释段落”（Ctrl+E、P）可重排并设置注释文本格式，从而组合短行、分割长行。
 
-例如: 
+例如:
 
 ```python
 # foo 

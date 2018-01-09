@@ -11,11 +11,12 @@ helpviewer_keywords:
 ms.assetid: 5b51fb96-94f4-4926-92b9-262156c05b85
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 38cf43429b5078de100c963df133ea1ba11c8717
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 45ab3f266a46cd08d269f0c463fb6cc26f494a91
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>使用 Visual Studio 2017 进行实施单元测试
 
@@ -60,7 +61,7 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 可以通过从顶级 Visual Studio 菜单中选择“工具”>“选项”，然后在“选项”对话框左窗格中选择“Live Unit Testing”来配置 Live Unit Testing。 下图显示对话框中可用的 Live Unit Testing 配置选项。
 
-  ![Image](./media/lut-options.png)
+  ![图像](./media/lut-options.png)
 
 可配置选项包括：
 
@@ -103,29 +104,29 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
  
 ##  <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>在编辑器中查看键入时的覆盖率可视化效果
 
-一旦启用，Live Unit Testing 将在 Visual Studio 编辑器中更新每行代码，以显示正在编写的代码是否由单元测试覆盖以及覆盖这些代码的测试是否通过。  下图显示测试通过和失败的代码行，以及测试未覆盖的代码行。 绿色“✓”修饰的行只表示通过测试，红色“x”修饰的行表示未通过一项或多项测试，蓝色“”修饰的行表示未经过任何测试。
+一旦启用，Live Unit Testing 将在 Visual Studio 编辑器中更新每行代码，以显示正在编写的代码是否由单元测试覆盖以及覆盖这些代码的测试是否通过。  下图显示测试通过和失败的代码行，以及测试未覆盖的代码行。 绿色“✓”修饰的行只表示通过测试，红色“x”修饰的行表示未通过一项或多项测试，蓝色“➖”修饰的行表示未经过任何测试。
 
-  ![Image](./media/lut-codewindow.png)
+  ![图像](./media/lut-codewindow.png)
 
 当你在代码编辑器中修改代码后，将立即更新 Live Unit Testing 覆盖率可视化效果。 处理编辑时，可视化效果将变化，通过在通过、失败和未覆盖符号下方添加圆形计时器图像来指示数据非最新，如下图所示。
 
-  ![Image](./media/lut-codeupdating.png)
+  ![图像](./media/lut-codeupdating.png)
  
 ## <a name="getting-information-on-successful-or-failed-tests"></a>获取关于成功或失败测试的信息
 
 将鼠标悬停在代码窗口中的成功或失败符号上，可以看到符合此条件的测试数目。 如果单击符号，可以查看各个测试的状态，如下图所示：
  
-  ![Image](./media/lut-failedinfo.png) 
+  ![图像](./media/lut-failedinfo.png) 
 
 除了提供测试名称和结果之外，工具提示还支持重新运行测试集，并使用调试程序运行测试集。 如果选择工具提示中的一个或多个测试，还可以仅运行或调试这些测试。 这样，不用离开代码窗口，就可以调试测试。 调试时，除了遵循已设置的所有断点外，程序执行还会在调试器执行返回意外结果的 [`Assert`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) 方法时暂停。 
 
 如果将鼠标悬停于工具提示中的未通过测试之上，测试将展开，以提供未通过测试详细信息，如下图所示。 如果双击工具提示中的未通过测试，可以直接转到它。
 
-  ![Image](./media/lut-failedmsg.png) 
+  ![图像](./media/lut-failedmsg.png) 
 
-转到未通过测试时，Live Unit Testing 也会在方法签名中直观地指出已通过测试（标有半满烧杯和绿色的“✓”）、未通过测试（标有半满烧杯和红色的“🞩”）或 Live Unit Testing 未涉及测试（标有半满烧杯和蓝色的“”）。 非测试方法使用符号进行修饰。 下图展示了所有四种类型的方法。
+转到未通过测试时，Live Unit Testing 也会在方法签名中直观地指出已通过测试（标有半满烧杯和绿色的“✓”）、未通过测试（标有半满烧杯和红色的“🞩”）或 Live Unit Testing 未涉及测试（标有半满烧杯和蓝色的“➖”）。 非测试方法使用符号进行修饰。 下图展示了所有四种类型的方法。
  
-  ![Image](media/lut-testsource.png)
+  ![图像](media/lut-testsource.png)
  
 ## <a name="diagnosing-and-correcting-test-failures"></a>诊断和更正测试失败
 
@@ -142,7 +143,7 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 可能会注意到，在“测试资源管理器”窗口中，一些测试已淡化。例如，如果在打开以前保存的项目后启用 Live Unit Testing，除了未通过测试外，“测试资源管理器”窗口淡化了所有测试，如下图所示。 在此示例中，Live Unit Testing 已重新运行未通过测试，但没有重新运行已通过测试，因为 Live Unit Testing 的持久化数据表明，自上一次成功运行测试以来没有任何变化。
 
-  ![Image](media/lut-test-explorer.png)
+  ![图像](media/lut-test-explorer.png)
 
 可以重新运行淡化的任何测试，具体方法是选择“测试资源管理器”菜单上的“全部运行”或“运行”选项，或选择并右键单击“测试资源管理器”菜单中的一个或多个测试，再从弹出菜单中选择“运行选定测试”或“调试选定测试”。 运行的测试会向上冒到顶部。
 

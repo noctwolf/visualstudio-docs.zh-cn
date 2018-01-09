@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 中的 Python 项目| Microsoft Docs"
+title: "Visual Studio 中的 Python 项目 | Microsoft Docs"
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 44065522229a1661efc41e79905d9650f7949ac3
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-projects"></a>Python 项目
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 12/01/2017
 
 Visual Studio 提供多种 Python 项目模板用于快速设置多个应用程序结构，包括用于根据现有文件夹树创建项目的模板和用于创建干净的空项目的模板。 若要查看索引，请参阅下文中的[项目模板](#project-templates)。
 
-在本主题中：
+本主题内容：
 
 - [添加文件、分配启动文件和设置环境](#adding-files-assigning-a-startup-file-and-setting-environments)
 - [项目模板](#project-templates)
@@ -144,6 +145,6 @@ Visual Studio 项目支持将引用添加到项目和扩展，添加的引用将
 
 ### <a name="webpi-projects"></a>WebPI 项目
 
-可以向 WebPI 产品条目添加引用以部署到 Microsoft Azure 云服务，你可以在其中通过 WebPI 源安装其他组件。 默认情况下，显示的源特定于 Python，包括 Django、CPython和其他核心组件。 还可以选择自己的源，如下所示。 发布到 Microsoft Azure 时，安装任务将安装所有引用的产品。
+可以向 WebPI 产品条目添加引用以部署到 Microsoft Azure 云服务，可在其中通过 WebPI 源安装其他组件。 默认情况下，显示的源特定于 Python，包括 Django、CPython和其他核心组件。 还可以选择自己的源，如下所示。 发布到 Microsoft Azure 时，安装任务将安装所有引用的产品。
 
 ![WebPI 引用](media/projects-webPI-components.png)

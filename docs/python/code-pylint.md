@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: dbb4c3d0a2d9077572a80c43d9d49d9c7e898dce
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 032c6489463aaaee59b39423506f18bda82fb414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-pylint-to-check-python-code"></a>使用 PyLint 检查 Python 代码
 
@@ -39,7 +40,7 @@ PyLint 警告和错误显示在“错误列表”窗口：
 
 ## <a name="setting-pylint-command-line-options"></a>设置 PyLint 命令行选项
 
-PyLint 文档中的[命令行选项](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options)部分介绍了如何通过 `.pylintrc` 配置文件控制 PyLint 的行为。 此类文件可置于 Visual Studio 中的 Python 项目的根路径中或其他地方，具体取决于想要应用这些设置的范围。
+PyLint 文档中的[命令行选项](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options)部分介绍了如何通过 `.pylintrc` 配置文件控制 PyLint 的行为。 此类文件可置于 Visual Studio 中的 Python 项目的根路径中或其他地方，具体取决于想要应用这些设置的范围（请参阅[命令行选项](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options)了解详细信息）。
 
 例如，若要使用项目中的 `.pylintrc` 文件禁止显示上图所示的“缺少 docstring”警告，请执行以下步骤：
 
@@ -54,3 +55,9 @@ PyLint 文档中的[命令行选项](https://pylint.readthedocs.io/en/latest/use
 1. 打开要编辑的文件，该文件中包含可以使用的各种设置。 若要禁用警告，请找到 `[MESSAGES CONTROL]` 部分，然后在该部分中找到 `disable` 设置。 将出现特定消息的一条长字符串，可以向其追加所需的任何警告。 在此例中，追加 `,missing-docstring`（包括界定逗号）。
 
 1. 保存 `.pylintrc` 文件，然后再次运行 PyLint 以查看现在禁止显示的警告。
+
+> [!Tip]
+> 若要从网络共享使用 `.pylintrc` 文件，请创建一个名为 `PYLINTRC` 的环境变量，其值为网络共享上使用 UNC 路径或映射驱动器号的文件名。 例如:
+> ```
+> PYLINTRC=\\myshare\python\.pylintrc
+> ```

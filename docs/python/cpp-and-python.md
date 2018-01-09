@@ -1,7 +1,7 @@
 ---
 title: "在 Visual Studio 中使用 C++ 和 Python | Microsoft Docs"
 ms.custom: 
-ms.date: 09/28/2017
+ms.date: 1/2/20178
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 08f91846340e2acc993e5302badfc846db5f4a9c
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: b7b83243d676c5393669eaa8faa8e8cc34ec2580
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 12/01/2017
 
 此处采用的方法适用于 [Python 文档](https://docs.python.org/3/c-api/)中所述的标准 CPython 扩展。 本主题末尾的[替代方法](#alternative-approaches)下将此方法与其他方法进行了比较。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 - 将 **C++ 桌面开发**和 **Python 开发**工作负载作为默认选项安装的 Visual Studio 2017。 
 - 在 Python 开发工作负载中，还可以选中右侧的“Python 本机开发工具”复选框，以设置本主题中所述的大多数选项。 （此选项还自动包括 C++ 工作负载。） 
@@ -107,7 +108,7 @@ ms.lasthandoff: 12/01/2017
 
 1. 如下所述设置特定属性，然后选择“确定”。
 
-    | Tab | 属性 | 值 | 
+    | Tab | 属性 | “值” | 
     | --- | --- | --- |
     | 常规 | 常规 > 目标名称 | 将此字段设置为与 Python 看到的模块名称完全匹配。 |
     | | 常规 > 目标扩展名 | .pyd |
@@ -124,14 +125,14 @@ ms.lasthandoff: 12/01/2017
     > 即使对于调试配置，也不要将“C/C++”>“代码生成”>“运行时库”选项设置为“多线程调试 DLL (/MDd)”。 请选择“多线程 DLL (/MD)”运行时，因为必须使用此选项才能生成非调试 Python 二进制文件。 如果碰巧设置了 /MDd 选项，则会在生成 DLL 的调试配置时看到错误“C1189: Py_LIMITED_API 与 Py_DEBUG、Py_TRACE_REFS 和 Py_REF_DEBUG 不兼容”。 此外，如果删除 `Py_LIMITED_API` 来避免出现生成错误，则在尝试导入模块时，Python 会崩溃。 （如下所述，崩溃将发生在 DLL 对 `PyModule_Create` 的调用中，并出现输出消息“严重 Python 错误: PyThreadState_Get: 无当前线程”。）
     >
     > 请注意，/MDd 选项用于生成 Python 调试二进制文件（例如 python_d.exe），但对扩展 DLL 选择此选项仍会导致 `Py_LIMITED_API` 的生成错误。
-   
+
 1. 右键单击 C++ 项目，然后选择“生成”来测试配置（包括“调试”和“发布”）。 `.pyd` 文件位于解决方案文件夹中的“调试”和“发布”下，而非位于 C++ 项目文件夹本身。
 
 1. 将以下代码添加到 C++ 项目的主 `.cpp` 文件：
 
     ```cpp
     #include <Windows.h>
-    #include <cmath>    
+    #include <cmath>
 
     const double e = 2.7182818284590452353602874713527;
 
@@ -149,7 +150,6 @@ ms.lasthandoff: 12/01/2017
     ```
 
 1. 再次生成 C++ 项目以确认代码正确。
-
 
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>将 C++ 项目转换为适用于 Python 的扩展
 
@@ -171,11 +171,12 @@ ms.lasthandoff: 12/01/2017
     }
     ```
 
-1. 添加一个定义如何向 Python 呈现 C++ `tanh` 函数的结构：
+1. 添加一个定义如何向 Python 呈现 C++ `tanh_impl` 函数的结构：
 
     ```cpp
     static PyMethodDef superfastcode_methods[] = {
-        // The first property is the name exposed to python, the second is the C++ function name        
+        // The first property is the name exposed to Python, fast_tanh, the second is the C++
+        // function name that contains the implementation.
         { "fast_tanh", (PyCFunction)tanh_impl, METH_O, nullptr },
 
         // Terminate the array with an object containing nulls.
@@ -183,22 +184,22 @@ ms.lasthandoff: 12/01/2017
     };
     ```
 
-1. 添加一个结构，用于定义通过 Python 代码以何种形式看到模块。 （C++ 项目内部使用的文件名，如 module.cpp，是无关紧要的。）
+1. 添加一个定义模块的结构，因为要在 Python 代码中引用它（特别是在使用 `from...import` 语句时）。 在以下示例中，“superfastcode”模块名意味着可在 Python 中使用 `from superfastcode import fast_tanh`，因为 `fast_tanh` 是在 `superfastcode_methods` 中定义的。 （C++ 项目内部使用的文件名，如 module.cpp，是无关紧要的。）
 
     ```cpp
     static PyModuleDef superfastcode_module = {
         PyModuleDef_HEAD_INIT,
-        "superfastcode",                        // Module name as Python sees it
+        "superfastcode",                        // Module name to use with Python import statements
         "Provides some functions, but faster",  // Module description
         0,
-        superfastcode_methods                   // Structure that defines the methods
+        superfastcode_methods                   // Structure that defines the methods of the module
     };
     ```
 
 1. 添加 Python 加载模块时要调用的方法，该模块必须命名为 `PyInit_<module-name>`，其中 &lt;module_name&gt; 与 C++ 项目的“常规”>“目标名称”属性完全匹配（也就是说，其与项目生成的 `.pyd` 的文件名相匹配）。
 
     ```cpp
-    PyMODINIT_FUNC PyInit_superfastcode() {    
+    PyMODINIT_FUNC PyInit_superfastcode() {
         return PyModule_Create(&superfastcode_module);
     }
     ```
@@ -229,7 +230,7 @@ ms.lasthandoff: 12/01/2017
     sfc_module = Extension('superfastcode', sources = ['module.cpp'])
 
     setup(name = 'superfastcode', version = '1.0',
-        description = 'Python Package with superfastcode C++ Extension',
+        description = 'Python Package with superfastcode C++ extension',
         ext_modules = [sfc_module]
         )
     ```
@@ -249,7 +250,7 @@ ms.lasthandoff: 12/01/2017
 1. 在 `.py` 文件中添加以下行，调用从 DLL 中导出的 `fast_tanh` 方法并显示其输出。 如果手动键入 `from s` 语句，将看到 `superfastcode` 出现在完成列表中，键入 `import` 后，将显示出 `fast_tanh` 方法。
 
     ```python
-    from superfastcode import fast_tanh    
+    from superfastcode import fast_tanh
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 

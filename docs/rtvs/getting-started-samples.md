@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 7cd4f3e19b6cae5adabd54593fee560c56454f07
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: f534a4116cd3955146642ba32d5da31c090b9d6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>针对 Visual Studio 的 R 工具示例项目
 
@@ -40,7 +41,6 @@ ms.lasthandoff: 12/04/2017
 
     ![2-Introduction to ggplot2.R 示例的示例输出](media/samples-ggplot-output.png)
 
-
 ## <a name="microsoft-r-server-and-machine-learning"></a>Microsoft R Server 和机器学习
 
 此示例集合演示如何使用 R 创建机器学习模型，以及如何利用 [Microsoft R Server (MRS)](http://aka.ms/rtvs-msft-r)。 安装 MRS 以使用 `MRS` 在标题和标注的位置运行脚本。
@@ -53,12 +53,13 @@ ms.lasthandoff: 12/04/2017
 
 - `Bike_Rental_Estimation_with_MRS` 使用 Microsoft R Server，根据历史数据集创建用于单车租赁的需求预测模型。 
 
-- `Data_Exploration` 包含三个脚本：  
-    - `Import Data from URL.R` 演示如何将 URL 标识的数据文件加载到 R 中。
-    - `Import Data from URL to xdf.R` 演示如何将 URL 标识的数据文件以 xdf 文件的形式加载到 Microsoft R Server。 （需要 MRS。）
-    - `Using ggplot2.R` 是`A First Look at R/2-Introduction to ggplot2.R` 示例的扩展，它更深入地介绍了 ggplot2 的功能，包括交互式 3D 绘图。
+- `Data_Exploration` 包含三个脚本：
 
-        ![使用 ggplot2.R 示例的输出](media/samples-3d-interactive.png)
+  - `Import Data from URL.R` 演示如何将 URL 标识的数据文件加载到 R 中。
+  - `Import Data from URL to xdf.R` 演示如何将 URL 标识的数据文件以 xdf 文件的形式加载到 Microsoft R Server。 （需要 MRS。）
+  - `Using ggplot2.R` 是`A First Look at R/2-Introduction to ggplot2.R` 示例的扩展，它更深入地介绍了 ggplot2 的功能，包括交互式 3D 绘图。
+
+      ![使用 ggplot2.R 示例的输出](media/samples-3d-interactive.png)
 
 - `Datasets` 包含其他示例使用的三个 `.csv` 文件
 - `Flight_Delays_Prediction_with_R` 和 `Flight_Delays_Prediction_with_MRS` 演示如何使用 R 机器学习、历史实时性能和天气数据预测航班延误。 

@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 中的 Python 环境| Microsoft Docs"
+title: "Visual Studio 中的 Python 环境 | Microsoft Docs"
 ms.custom: 
 ms.date: 07/25/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6476de086aad812e40d3c5b638c2076d50adfb27
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: bd871b1e78878c8ae05cb69e1ac97d50197a18b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-environments"></a>Python 环境
 
@@ -49,7 +50,7 @@ Visual Studio 中的 Python 使管理多个 Python 环境更加简单，并且�
 
 Python 支持除了随 Visual Studio 2017 提供外，并未随 Python 解释器提供，因此需要安装以下解释器之一才能运行代码。 一般情况下，Visual Studio 会自动检测新安装的解释器，并为每个解释器设置环境。 如果它并未检测到安装的环境，请参阅[为现有解释器创建环境](#creating-an-environment-for-an-existing-interpreter)。
 
-| 解释器 | 说明 |
+| 解释器 | 描述 |
 | --- | --- |
 | [CPython](https://www.python.org/) | 最常用的“本机”解释器，32 位和 64 位版本可用（建议使用 32 位）。 包括最新的语言功能、最大的 Python 包兼容性、完整的调试支持以及与 [IPython](http://ipython.org/) 的互操作。 另请参阅：[Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3)（应使用 Python 2 还是 Python 3？） 请注意，Visual Studio 2015 及更早版本不支持 Python 3.6，并且会生成错误“不支持 Python 版本 3.6”。 请改用 Python 3.5 或更早版本。 |
 | [IronPython](https://github.com/IronLanguages/main) | Python 的 .NET 实现，32 位和 64 位版本可用，提供 C#/F#/Visual Basic 互操作、对 .NET API 的访问、标准 Python 调试（但不是 C++ 混合模式调试）和混合 IronPython/C# 调试。 但 IronPython 不支持虚拟环境。 | 
@@ -135,9 +136,9 @@ Visual Studio 通常通过检查注册表（下面的 [Windows 注册表中的 P
 
 ![Python 环境配置选项卡](media/environments-configure-tab.png)
 
-| 字段 | 说明 |
+| 字段 | 描述 |
 | --- | --- |
-| **描述** | 为环境提供的名称。 |
+| **说明** | 为环境提供的名称。 |
 | **前缀路径** | 解释程序的基本文件夹位置。 通过填写此值并单击“自动检测”，Visual Studio 会尝试填充其他字段。 |
 | **解释器路径** | 解释器可执行文件的路径，通常是前缀路径后加 `python.exe` |
 | **窗口化解释器** | 非控制台可执行文件的路径，通常是前缀路径后加 `pythonw.exe`。 |

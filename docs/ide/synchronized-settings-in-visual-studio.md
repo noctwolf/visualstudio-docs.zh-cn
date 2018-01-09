@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d9c163063cfa4e2a78f8a07ab74efbecb355448
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef4179c5bc0fb80e2fb65d54885c342ca49bce3b
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>在 Visual Studio 中同步你的设置
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>关闭特定计算机上的同步设置
 
-默认情况下启用 Visual Studio 的同步设置。 可以通过转到“工具”|“选项”|“环境”|“同步设置”页并取消选中复选框，来关闭计算机上的同步设置。  例如，如果决定不同步计算机 A 上的 Visual Studio 设置，那么计算机 A 上的任何设置更改将不会出现在计算机 B 或计算机 C 上。计算机 B 和 C 将继续彼此同步，但不与计算机 A 同步。
+默认情况下启用 Visual Studio 的同步设置。 可以通过转到“工具”|“选项”|“环境”|“帐户”页并取消选中复选框，来关闭计算机上的同步设置。  例如，如果决定不同步计算机 A 上的 Visual Studio 设置，那么计算机 A 上的任何设置更改将不会出现在计算机 B 或计算机 C 上。计算机 B 和 C 将继续彼此同步，但不与计算机 A 同步。
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>在 Visual Studio 系列产品和版本之间同步设置
 

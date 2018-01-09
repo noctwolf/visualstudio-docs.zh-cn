@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e3f3002dc40c0bdae3aad6cdbacb4b9b70422157
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>演练：我的第一个 WPF 桌面应用程序
 本演练提供了 Windows Presentation Foundation (WPF) 开发的简介。 你将创建一个基本应用程序，其中包括大多数 WPF 桌面应用程序中常见的元素：XAML 标记、代码隐藏、应用程序定义、控件、布局、数据绑定和样式。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 12/12/2017
 ## <a name="creating-the-application-project"></a>创建应用程序项目  
 本部分将创建应用程序基础结构，其中包括项目和主窗口或窗体。  
   
-#### <a name="to-create-the-project"></a>创建项目  
+#### <a name="to-create-the-project"></a>要创建项目  
   
 1.  在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
   
@@ -268,7 +269,7 @@ ms.lasthandoff: 12/12/2017
   
 1.  选择以下图像，并将其保存为 `watermark.png`。  
   
-     ![演练的水印图像](../designers/media/wpf_watermark.png "WPF_watermark")  
+     ![演练的水印图像](../designers/media/wpf_watermark.png "水印")  
   
     > [!NOTE]
     >  或者可以创建自己的图像并将其保存为 `watermark.png`。  
@@ -886,5 +887,5 @@ ms.lasthandoff: 12/12/2017
   
 -   [WPF 中的文档](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [使用 Windows Presentation Foundation 创建新式桌面应用程序](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

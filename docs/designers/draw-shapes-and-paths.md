@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e5162a9da6fcafaaf27691081d9782191efb551
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c51f7217942f755eee45c4901cf0f8eecdbac605
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="draw-shapes-and-paths"></a>绘制形状和路径
 在 XAML 设计器中，“形状”正是你所期望的内容。 例如：矩形、圆或椭圆。 *路径* 是更加灵活的形状版本。 你可以执行某些操作，如重新调整它们的形状，或将它们合并在一起以形成新形状。  
@@ -54,47 +55,47 @@ ms.lasthandoff: 10/31/2017
  ![](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4cf6-903b-3a49f00c9860")  
   
 ### <a name="draw-a-straight-line"></a>绘制直线  
- 使用“笔”  工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")或“线条”  工具 ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf")。  
+ 使用“笔”工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") 或“线条”工具 ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf")。  
   
- **使用“笔”工具** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")  
+ 使用“笔”工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")  
   
  在美工板上，单击一次以定义开始点，然后再次单击以定义线条末尾。  
   
- **使用“线条”工具** ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf")  
+ 使用“线条”工具 ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf")  
   
  在美工板上，从所需线条起始位置处拖动，然后在所需线条结束位置处释放。  
   
 ### <a name="draw-a-curve"></a>绘制曲线  
- 使用“笔”  工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")。  
+ 使用“笔” 工具![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")。  
   
  在美工板上，单击一次以定义线条的起点，然后单击并拖动指针以创建所需的曲线。  
   
  如果要闭合路径，请单击线条上的第一个点。  
   
 ### <a name="change-the-shape-of-a-curve"></a>更改曲线的形状  
- 使用“路径选择”  工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362")。  
+ 使用“路径选择”工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362")。  
   
  单击形状，然后拖动形状上的任何点以更改曲线形状。  
   
 ### <a name="draw-a-free-form-path"></a>绘制任意形状的路径  
- 使用“铅笔”  工具 ![](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd")。  
+ 使用“铅笔”工具 ![](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd")。  
   
  在美工板上，如同使用真正的铅笔一样绘制任意形状的路径。  
   
 ### <a name="remove-part-of-a-path"></a>删除路径的一部分  
- 使用“路径选择”  工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362")。  
+ 使用“路径选择”工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362")。  
   
  选择包含要删除的段的路径，然后单击“删除”  按钮。  
   
 ### <a name="remove-a-point-in-a-path"></a>删除路径中的点  
- 使用“选择”  工具  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")和“笔”  工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")。  
+ 使用“选择”工具 ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 和“笔”工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")。  
   
- 使用“选择”  工具  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") ，以选中路径。 然后，使用“笔”  工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") ，以单击想要删除的点。  
+ 使用“选择”工具 ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 选择路径。 然后，使用“笔”工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") 单击想要删除的点。  
   
 ### <a name="add-a-point-to-a-path"></a>向路径添加点  
- 使用“选择”  工具  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa")和“笔”  工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")。  
+ 使用“选择”工具 ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 和“笔”工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")。  
   
- 使用“选择”  工具  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") ，以选中路径。 使用“笔”  工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") ，以单击想要在其中添加点的路径上的任意位置。  
+ 使用“选择”工具 ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 选择路径。 使用“笔”工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")，单击想要在其中添加点的路径上的任意位置。  
   
 ##  <a name="Convert"></a> 将形状转换为路径  
  若要采用与修改路径相同的方式来修改形状，请将形状转换为路径。  
@@ -130,5 +131,5 @@ ms.lasthandoff: 10/31/2017
   
  观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路径：创建剪切路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Blend for Visual Studio 创建 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
