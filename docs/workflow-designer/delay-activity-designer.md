@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 0a107155d44e62b7de24df2c7d859196d32ff380
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 24ca658650c3b0eeb28261753b06082214cdb838
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="delay-activity-designer"></a>Delay 活动设计器
 **延迟**活动设计器用于创建和配置<xref:System.Activities.Statements.Delay>活动。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Delay> 活动的友好名称。 默认值为 Delay。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|  
 |<xref:System.Activities.Statements.Delay.Duration%2A>|True|将工作流延迟的时长。 此属性在属性网格中设置。 键入 00:00:00 格式的文本 <xref:System.TimeSpan> 或 Visual Basic 表达式来指定时长。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [基元](../workflow-designer/primitives-activity-designers.md)   
  [分配](../workflow-designer/assign-activity-designer.md)   
  [Delay 活动设计器](../workflow-designer/delay-activity-designer.md)   
