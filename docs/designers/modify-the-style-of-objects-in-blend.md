@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0133ced82f35a8daefeb3dcaaacd4822f5cad345
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0d01e7c8ef95270cde9c1054cc286b62bbe95c46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>修改 Blend 中对象的样式
 自定义对象的最简单方法是在“属性”窗格中设置属性。  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>还原控件的默认样式或模板  
- 选择控件，在[属性面板](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57)中，找到“样式”或“模板”属性。 然后，单击“高级选项”![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")，然后在快捷菜单上单击“重置”。  
+ 选择控件，在[属性面板](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57)中，找到“样式”或“模板”属性。 然后，单击“高级选项”![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")，再在快捷菜单上单击“重置”。  
   
 ##  <a name="Visual"></a>可视状态：基于其状态更改控件的外观  
  控件可以基于用户交互而具有不同的视觉外观。 例如，可以在用户单击时使按钮变为绿色，也可以运行动画。 可使用过渡缩短或延长可视状态之间的时间。  
@@ -118,5 +119,5 @@ ms.lasthandoff: 10/31/2017
   
  观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [简要了解资源](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Blend for Visual Studio 创建 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

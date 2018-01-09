@@ -14,11 +14,12 @@ ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4c864a05b267889720ba64a6427861aa2c42e3b2
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 9cd0a1b21cf7a61c9340c36be5db419d71c36e1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 安装和升级问题疑难解答
 
@@ -95,7 +96,7 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
 * 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发者进行交流。  （这需要 [GitHub](https://github.com/) 帐户）。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （这需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)

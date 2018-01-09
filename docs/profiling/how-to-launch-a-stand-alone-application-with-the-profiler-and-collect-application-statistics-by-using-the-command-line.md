@@ -12,11 +12,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17a5d01ed0ceb139362c28168d430f19ea0fef55
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 7840b2a28d5d2aff350af7c86f19332c7b8dd087
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令行通过探查器启动独立应用程序并收集应用程序统计信息
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动独立（客户端）应用程序，以及如何使用采样方法收集性能统计信息。  
@@ -62,14 +63,14 @@ ms.lasthandoff: 11/11/2017
   
      可以将以下一个或多个选项与 **/launch** 选项一起使用。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/args](../profiling/args.md) **:** `Arguments`|指定一个字符串，其中包含要传递给目标应用程序的命令行参数。|  
     |[/console](../profiling/console.md)|在另一个窗口中启动目标命令行应用程序。|  
   
      默认情况下，性能数据为每 10,000,000 个非暂停处理器时钟周期采样一次。 在 1GHz 的处理器上，大约每 10 秒钟一次。 可以指定以下选项之一，更改时钟周期间隔或指定不同的采样事件。  
   
-    |样本事件|说明|  
+    |样本事件|描述|  
     |------------------|-----------------|  
     |[/timer](../profiling/timer.md) **:** `Interval`|将采样间隔更改为 `Interval` 所指定的非暂停时钟周期数目。|  
     |[/pf](../profiling/pf.md)[**:**`Interval`]|将采样事件更改为页面错误。 如果已指定 `Interval`，则会设置样本之间的页面错误数目。 默认值为 10。|  
@@ -83,7 +84,7 @@ ms.lasthandoff: 11/11/2017
   
 -   以下选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
@@ -98,7 +99,7 @@ ms.lasthandoff: 11/11/2017
   
     -   关闭目标应用程序。  
   
-         - 或 -  
+         或  
   
     -   键入 **VSPerfCmd /detach**  
   
@@ -106,6 +107,6 @@ ms.lasthandoff: 11/11/2017
   
      **VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [采样方法数据视图](../profiling/profiler-sampling-method-data-views.md)

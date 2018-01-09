@@ -11,11 +11,12 @@ ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4c50384f734f4162fa1cf482c563ed35a6622adb
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 3fbea34afa4e82ea360a0dfefe4f18dc74d11f19
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>在部署 Visual Studio 时自动应用产品密钥
 可采用编程方式将产品密钥作为用于自动化 Visual Studio 部署的脚本的一部分进行应用。 安装 Visual Studio 期间或安装已完成后，可采用编程方式在设备上设置产品密钥。
@@ -48,7 +49,7 @@ ms.lasthandoff: 11/22/2017
 
 如果 `StorePID.exe` 成功应用产品密钥，则会返回值为 0 的 `%ERRORLEVEL%`。 如果遇到错误，则会返回下列代码之一（具体视错误条件而定）：
 
-| 错误                     | 代码 |
+| Error                     | 代码 |
 |---------------------------|------|
 | `PID_ACTION_SUCCESS`      | 0    |
 | `PID_ACTION_NOTINSTALLED` | 1    |
@@ -65,8 +66,8 @@ ms.lasthandoff: 11/22/2017
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
 * 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户）。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
  * [安装 Visual Studio](../install/install-visual-studio.md)
  * [创建 Visual Studio 的脱机安装](../install/create-an-offline-installation-of-visual-studio.md)

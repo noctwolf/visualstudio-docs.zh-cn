@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 18cd58899819e49943e009da898705cfa328ffb5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 0124133b230da01c6e7194849466c57d86592cbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>步骤 3：使用 REPL 交互窗口
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/01/2017
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
-    def make_dot_string(x):  
+    def make_dot_string(x):
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
@@ -62,8 +63,8 @@ ms.lasthandoff: 12/01/2017
 
     ```python
     for i in range(360):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     ![使用“发送到交互窗口”粘贴多行代码](media/vs-getting-started-python-15-interactive5.png)
@@ -82,14 +83,13 @@ ms.lasthandoff: 12/01/2017
 
     ```python
     for i in range(0, 1800, 12):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     若想复制交互窗口的准确内容，包括提示符和输出，只需使用标准的“复制”命令。
 
 1. 刚刚已经了解如何使用交互窗口的快速 REPL 环境处理一小段代码的细节问题，然后将该代码轻松添加到项目的源文件。 如果现在使用 Ctrl+F5（或“调试”>“开始执行(不调试)”）再次运行代码，则会看到想要的准确结果。
-
 
 ## <a name="next-steps"></a>后续步骤
 

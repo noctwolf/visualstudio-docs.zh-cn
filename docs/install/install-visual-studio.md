@@ -2,7 +2,7 @@
 title: "安装 Visual Studio 2017 | Microsoft Docs"
 description: "了解如何逐步安装 Visual Studio。"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-ms.assetid: 8d4297e4-9f43-4f12-95ec-22e61154480e
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ff51b5910d8b81d8319eddd0fa3be08d2f9553d7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 9b37b998347618ea346c3d4e7993d5192c1c82a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-studio-2017"></a>安装 Visual Studio 2017
 欢迎以全新方式安装 Visual Studio！ 最新版本方便你更轻松地选择并仅安装所需功能。 此外，我们还减少了 Visual Studio 的最小内存需求量，使其安装速度变得更快，对系统的影响更小。
@@ -77,9 +77,9 @@ ms.lasthandoff: 11/22/2017
 
 1.  在“安装 Visual Studio”屏幕中找到所需的工作负载。
 
-  ![Visual Studio 2017 安装程序对话框](media/vs2017-workloads.PNG "安装 Visual Studio 工作负载")
+ ![从 Visual Studio 2017 设置对话框中选择工作负载](../install/media/install-visual-studio-enterprise.png)
 
-     例如，选择 .NET 桌面开发工作负载。 它附带默认核心编辑器，该编辑器针对超过 20 种语言提供基本代码编辑支持，能够打开和编辑任意文件夹中的代码（而无需使用项目），还提供集成的源代码管理。  
+     例如，选择“.NET 桌面开发”工作负载。 它附带默认核心编辑器，该编辑器针对超过 20 种语言提供基本代码编辑支持，能够打开和编辑任意文件夹中的代码（而无需使用项目），还提供集成的源代码管理。  
 
 2.  选择所需的工作负载后，单击“安装”。
 
@@ -88,7 +88,7 @@ ms.lasthandoff: 11/22/2017
 3.  安装完新的工作负载和组件后，单击“启动”。  
 
 > [!TIP]
->  在安装之后，可以随时安装最初未安装的工作负荷或组件。 如果你打开了 Visual Studio，请转到“工具”、“获取工具和功能...”，这会打开 Visual Studio 安装程序。 或者，从“开始”菜单打开“Visual Studio 安装程序”。 在此处可以选择要安装的工作负荷或组件，然后单击“修改”。  
+>  在安装之后，可以随时安装最初未安装的工作负荷或组件。 如果已打开 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 或者，从“开始”菜单打开“Visual Studio 安装程序”。 在此处可以选择要安装的工作负荷或组件，然后单击“修改”。  
 
 |         |         |
 |---------|---------|
@@ -135,7 +135,7 @@ ms.lasthandoff: 11/22/2017
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
 * 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户）。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
 * [更新 Visual Studio 2017](update-visual-studio.md)

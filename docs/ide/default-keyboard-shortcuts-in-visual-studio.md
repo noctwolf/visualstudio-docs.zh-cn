@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 335589c6487d99726b86921fa988dce64dd384b8
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷键
 有关键盘辅助功能的详细信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)和[如何：仅使用键盘进行操作](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
@@ -33,7 +34,7 @@ ms.lasthandoff: 12/07/2017
 
 |||||  
 |-|-|-|-|  
-|[分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[编辑](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[项目](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[测试](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|  
+|[分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[编辑](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[测试](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|  
 |[体系结构](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[编辑器上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[项目和解决方案上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[测试资源管理器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|  
 |[生成](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[文件](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[重构](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|  
 |[类视图上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[帮助](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[解决方案资源管理器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[视图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|  

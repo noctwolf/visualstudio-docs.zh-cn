@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1f4fd45337ebd0f00362d352077cf8441e6f5afa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 57aa814ac458fc3c893f8a2d557840d936ed033b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="animate-objects-in-xaml-designer"></a>在 XAML 设计器中动态显示对象
 可以创建移动对象或使它们淡入和淡出的简短动画。  
@@ -40,5 +41,5 @@ ms.lasthandoff: 10/31/2017
 |![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [对按钮进行动画处理](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|创建在用户指向按钮时出现在按钮上的有趣效果。|  
 |![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [创建动画和使用缓动](https://www.youtube.com/watch?v=mAJXYrwxGYo)|当用户按下计算器图像上的按钮时出现的动画效果。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Blend for Visual Studio 创建 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

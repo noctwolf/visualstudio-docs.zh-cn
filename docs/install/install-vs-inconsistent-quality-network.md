@@ -14,11 +14,12 @@ ms.assetid: 44DB1998-68CD-4560-870A-EE5B993DCF6E
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7618537fcceb0527b29f5c40584fb69d7ddcca63
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 1d7b9b7084b91ace1f76d4d411f117df41cfd257
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>在低带宽或不可靠的网络环境中安装 Visual Studio 2017
 
@@ -112,7 +113,7 @@ ms.lasthandoff: 11/22/2017
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
 * 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户）。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
 * [安装 Visual Studio](install-visual-studio.md)

@@ -1,7 +1,7 @@
 ---
-title: "快速入门：使用 Visual Basic 在 Visual Studio 中创建控制台应用 | Microsoft Docs"
+title: "快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用 | Microsoft Docs"
 ms.custom: 
-ms.date: 12/05/2017
+ms.date: 12/10/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -12,13 +12,14 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 57441895ccff8bf32b59d6306ca4ae618382d356
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: 46557b646db37b3f04420ca5b91ab71c4f5b088a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="quickstart-create-a-console-app-in-visual-studio-with-visual-basic"></a>快速入门：使用 Visual Basic 在 Visual Studio 中创建控制台应用
+# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用
 在这个 5-10 分钟的 Visual Studio 集成开发环境 (IDE) 简介中，你将了解如何创建在控制台上运行的简单 Visual Basic 应用程序。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
@@ -32,11 +33,11 @@ ms.lasthandoff: 12/11/2017
 
 3. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 随后将项目命名为 HelloWorld。
 
-   ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负载](../ide/media/new-project-vb-dotnet-helloworld-console-app.png)
+   ![Visual Studio IDE 中“新建项目”对话框中的控制台应用 (.NET Core) 项目模板](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 
      如果没有看到“控制台应用(.NET Core)”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。
 
-   ![单击“新建项目”对话框中的“打开 Visual Studio 安装程序”链接](../ide/media/vb-open-visual-studio-installer.png)
+   ![单击“新建项目”对话框中的“打开 Visual Studio 安装程序”链接](../ide/media/vb-open-visual-studio-installer-hello-world.png)
 
      Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”。
 
@@ -80,5 +81,6 @@ ms.lasthandoff: 12/11/2017
 祝贺你完成此快速入门！ 希望你已对 Visual Basic 和 Visual Studio IDE 有了一定了解。 若要深入了解，请继续阅读目录中“教程”部分的教程。
 
 ## <a name="see-also"></a>请参阅
-* [快速入门：在 Visual Studio 中使用 Visual Basic 创建“Hello World”Windows 窗体应用](quickstart-visual-basic-winforms.md)
-* [详细了解 Visual Basic IntelliSense](visual-basic-specific-intellisense.md)
+* [快速入门：通过 Visual Studio 借助 Visual Basic 创建“Hello World”Windows 窗体应用](quickstart-visual-basic-winforms.md)
+* [教程：Visual Studio 中的 Visual Basic 入门](tutorial-visual-basic-console.md)
+* [Visual Basic 代码文件的 IntelliSense](visual-basic-specific-intellisense.md)

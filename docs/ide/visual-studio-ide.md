@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio IDE 概述 | Microsoft Docs"
 ms.custom: 
-ms.date: 10/03/2017
+ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -9,11 +9,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c20e36f91ecd7f5ef03785d42d33010796d105c0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: 0ffadcf35be9cc12327c6ef9a561cd1149cf281c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE 概述
 
@@ -35,19 +36,41 @@ Visual Studio 交互式开发环境 (IDE) 是一种创新启动板，可用于�
 
 ### <a name="create-cloud-apps-for-azure"></a>创建 Azure 云应用
 
-通过 Visual Studio 提供的工具套件，可以轻松地创建由 Microsoft Azure 提供支持的云启用应用程序。 可以轻松地从 IDE 直接配置、构建、调试、打包和部署 Microsoft Azure 上的应用程序和服务。 通过连接的服务为应用使用 Azure 服务。 若要获取用于 .NET 的 Azure 工具，安装 Visual Studio 时请选择“Azure 开发”工作负载。 有关详细信息，请参阅 [Visual Studio Tools for Azure](https://www.visualstudio.com/vs/azure-tools/)。
+通过 Visual Studio 提供的工具套件，可以轻松地创建由 Microsoft Azure 提供支持的云启用应用程序。 可以轻松地从 IDE 直接配置、构建、调试、打包和部署 Microsoft Azure 上的应用程序和服务。 若要获取用于 .NET 的 Azure 工具，安装 Visual Studio 时请选择“Azure 开发”工作负载。 有关详细信息，请参阅 [Visual Studio Tools for Azure](https://www.visualstudio.com/vs/azure-tools/)。
+
+可以通过如下所示的连接的服务为应用使用 Azure 服务：
+
+- [Azure 移动服务](http://azure.microsoft.com/documentation/services/mobile-services/)
+
+- [Azure 存储](http://azure.microsoft.com/documentation/services/storage/)
+
+[HockeyApp](https://www.visualstudio.com/hockey-app/) 有助于分发测试版本、收集实时故障报表和获取真实用户的反馈。 此外，可将 Office 365 REST API 集成到你自己的应用中，以连接到云中存储的数据。 有关详细信息，请参阅[这些 GitHub 示例](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365)。
+
+[Application Insights](https://marketplace.visualstudio.com/items?itemName=VisualStudioOnlineApplicationInsights.application-insights) 有助于检测和诊断应用和 Web 服务中的质量问题。 Application Insights 还有助于了解用户通过应用实际进行的操作，便于优化用户体验。
 
 ### <a name="create-apps-for-the-web"></a>创建 web 应用
 
-Web 推动着现代社会前进，Visual Studio 可以帮助你编写 Web 应用。 可以使用 ASP.NET、Node.js、Python、JavaScript 和 TypeScript 来创建 Web 应用。 Visual Studio 了解 Angular、jQuery、Express 等 Web 框架。 ASP.NET Core 和 .NET Core 在 Windows、Mac 和 Linux 操作系统上运行。 有关详细信息，请参阅[新式 Web 工具](https://www.visualstudio.com/vs/modern-web-tooling/)。
+Web 推动着现代社会前进，Visual Studio 可以帮助你编写 Web 应用。 可以使用 ASP.NET、Node.js、Python、JavaScript 和 TypeScript 来创建 Web 应用。 Visual Studio 了解 Angular、jQuery、Express 等 Web 框架。 ASP.NET Core 和 .NET Core 在 Windows、Mac 和 Linux 操作系统上运行。 [ASP.NET Core](http://www.asp.net/core/overview) 是 MVC、WebAPI 和 SignalR 的一个重大更新，并在 Windows、Mac 和 Linux 上运行。  ASP.NET Core 旨在完全为你提供可组合的精益 .NET 堆栈，以便生成基于云的新式 Web 应用和服务。
 
-### <a name="write-code-in-a-world-class-editing-environment"></a>在全球领先的编辑环境中编写代码
+有关详细信息，请参阅[新式 Web 工具](https://www.visualstudio.com/vs/modern-web-tooling/)。
 
-Visual Studio 可以通过语法着色、语句完成、IntelliSense（所选代码元素的弹出说明）、代码大纲、设置断点进行调试等功能帮助你快速轻松地编写代码。
+### <a name="build-cross-platform-apps-and-games"></a>生成跨平台应用和游戏
 
-![JavaScript 代码示例](../ide/media/vside_tour_javascript_example.gif)
+可使用 Visual Studio 生成适用于 Android、iOS 和 Linux 等设备的应用和游戏。 若要了解详细信息，请参阅[跨平台移动开发](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)。 通用 Windows 应用可帮助在多个平台中利用代码。 有关详细信息，请参阅[通用 Windows 应用](https://dev.windows.com/en-us/windows-apps)。
 
-有关详细信息，请参阅[在代码和文本编辑器中编写代码](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor)。
+基于应用要求和要使用的语言选择所需工具：
+
+- [Xamarin for Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)：针对所有设备的 C# 中的常用基本代码。
+
+- [Visual Studio Tools for Apache Cordova](../cross-platform/visual-studio-tools-for-apache-cordova.md)：适用于 HTML、CSS 和 JavaScript 或 Typescript 的常用基本代码。
+
+- [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md)：C# 中的 2D/3D 游戏开发。
+
+- [适用于跨平台开发的 C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)：C++ 中的共享代码库和应用。
+
+- [适用于 Android 的 Visual Studio 模拟器](../cross-platform/visual-studio-emulator-for-android.md)：适用于 Android 的 Visual Studio 模拟器：调试和测试 Android 应用而无需考虑 IDE。
+
+[使用 Visual Studio 创建游戏](https://www.visualstudio.com/vs/game-development/)，通过 DirectX、Unity、Unreal、Cocos 等游戏开发工具。
 
 Visual Studio 能够帮助你实现更多操作。 有关更完整的列表，请参阅 [Visual Studio IDE](https://www.visualstudio.com/vs/)。
 
@@ -153,7 +176,7 @@ Visual Studio 现在达到了前所未有的轻量！ 通过模块化安装程�
 
 - [输出](../ide/reference/output-window.md)窗口是 Visual Studio 发送通知（例如，调试和错误消息、编译器警告、发布状态消息等）的位置。 每个消息源都有自己的选项卡。
 
-- 利用版本控制技术（如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)] (/vsts/tfvc/overview)），[团队资源管理器](/vsts/user-guide/work-team-explorer)可让你跟踪工作项并与他人共享代码。
+- 利用版本控制技术（如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/vsts/tfvc/overview)），[团队资源管理器 (VSTS)](/vsts/user-guide/work-team-explorer) 可让你跟踪工作项并与他人共享代码。
 
 - [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) 可让你查看和管理 Azure 资源，如虚拟机、表格以及 SQL 数据库等。 如果某一特定操作需要 Azure 门户，Cloud Explorer 会提供你在 Azure 门户中所需位置的链接。
 
@@ -173,7 +196,7 @@ Visual Studio 现在达到了前所未有的轻量！ 通过模块化安装程�
 
   ![Visual Studio 成员列表](../ide/media/vs2017_Intellisense.png)
 
-- **波形曲线**是红色的波浪形下划线，它可以在你键入时实时警告你注意代码中的错误或者潜在问题。 这样一来，你可立即修复错误，而无需等到编译或运行时才发现错误。 如果将鼠标悬停在波形曲线上，将看到关于此错误的其他信息。 左边距上也可能会出现一个灯泡，提供有关如何修复此错误的建议。 有关详细信息，请参阅[使用灯泡执行快速操作](../ide/perform-quick-actions-with-light-bulbs.md)。
+- **波形曲线**是红色的波浪形下划线，它可以在你键入时实时警告你注意代码中的错误或者潜在问题。 这样一来，你可立即修复错误，而无需等到编译或运行时才发现错误。 如果将鼠标悬停在波形曲线上，将看到关于此错误的其他信息。 左边距上也可能会出现一个灯泡，提供有关如何修复此错误的建议。 有关详细信息，请参阅 [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md)。
 
  ![波形曲线](../ide/media/vs2017_squiggle.png)
 
@@ -199,7 +222,7 @@ Visual Studio 现在达到了前所未有的轻量！ 通过模块化安装程�
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>管理源代码并与他人协作
 
-可以在任意提供商（包括 GitHub）托管的 Git 存储库中管理源代码。 或者，使用 [Visual Studio Team Services (VSTS)](/vsts/index) 管理整个项目的代码、Bug 和工作项。 若要详细了解如何在 Visual Studio 中使用团队资源管理器管理 Git 存储库，请参阅[开始使用 Git 和 Team Services](/vsts/git/gitquickstart?tabs=visual-studio)。 Visual Studio 还内置有其他源代码管理功能。 若要了解详细信息，请参阅 [Visual Studio 2017 中的新 Git 功能（博文）](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/)。
+可以在任意提供商（包括 GitHub）托管的 Git 存储库中管理源代码。 或者，使用 [Visual Studio Team Services (VSTS)](/vsts/index) 管理整个项目的代码、Bug 和工作项。 若要详细了解如何在 Visual Studio 中使用团队资源管理器管理 Git 存储库，请参阅[开始使用 Git 和 Team Services (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio)。 Visual Studio 还内置有其他源代码管理功能。 若要了解详细信息，请参阅 [Visual Studio 2017 中的新 Git 功能（博文）](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/)。
 
 Visual Studio Team Services 是一种基于云的服务，用于承载软件项目和启用团队中的协作。 VSTS 支持 Git 和 Team Foundation 源控件系统以及 Scrum、CMMI 和 Agile 开发方法。 Team Foundation 版本控制 (TFVC) 采用单一的集中式服务器存储库来跟踪文件和调整它的版本。 本地更改始终签入到中央服务器，其他开发人员可在此处获得最新的更改。
 
@@ -211,7 +234,7 @@ Team Foundation Server (TFS) 是 Visual Studio 的应用程序生命周期管理
 
 ![Visual Studio 团队资源管理器](../ide/media/vs2017_teamexplorer.png)
 
-有关 Visual Studio Team Services 和 Team Foundation Server 的文档，请参阅 [Visual Studio Team Services](/vsts/index)。
+还可以自动执行生成过程以生成团队中的开发人员签入到版本控制的代码。 例如，您可以在夜间或每次签入此代码时生成一个或多个项目。 有关详细信息，请参阅 [Continuous integration on any platform](https://www.visualstudio.com/en-us/docs/build/overview)（任何平台上的持续集成）。
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>连接到服务、数据库和基于云的资源
 
@@ -234,8 +257,13 @@ Visual Studio 中的 **SQL Server 对象资源管理器**提供类似于 SQL Ser
 ![SQL Server 对象资源管理器](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>扩展 Visual Studio
+如果 Visual Studio 中没有你需要的确切功能，你可以进行添加！ 可以根据你的工作流和风格自定义 IDE，对尚未与 Visual Studio 集成的外部工具添加支持并修改现有的功能，以提高工作效率。 若要查找 Visual Studio 扩展性工具 (VS SDK) 的最新版本，请参阅 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
-如果 Visual Studio 中没有你需要的确切功能，你可以进行添加！ 可以根据你的工作流和风格自定义 IDE，对尚未与 Visual Studio 集成的外部工具添加支持并修改现有的功能，以提高工作效率。 Visual Studio 提供来自 Microsoft、我们的合作伙伴和社区的工具、控件和模板。 若要了解有关扩展 Visual Studio 的详细信息，请参阅[扩展 Visual Studio IDE](https://www.visualstudio.com/vs/extend/)。
+可以使用 .NET Compiler Platform (Roslyn) 编写自己的代码分析器和代码生成器。 在 [Roslyn](https://github.com/dotnet/Roslyn)中查找所需的一切内容。
+
+查找由 Microsoft 开发人员以及我们的开发社区创建的 Visual Studio [现有扩展](https://marketplace.visualstudio.com/vs)。
+
+若要了解有关扩展 Visual Studio 的详细信息，请参阅[扩展 Visual Studio IDE](https://www.visualstudio.com/vs/extend/)。
 
 ## <a name="learn-more-and-find-out-whats-new"></a>了解详细信息和新增功能
 
@@ -243,7 +271,7 @@ Visual Studio 中的 **SQL Server 对象资源管理器**提供类似于 SQL Ser
 
 恭喜你，你已经完成了 Visual Studio IDE 课程！ 希望你已经对 Visual Studio 的一些主要功能有所了解。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 * [Visual Studio IDE](https://www.visualstudio.com/vs/)
 * [Visual Studio 下载](https://www.visualstudio.com/downloads/)

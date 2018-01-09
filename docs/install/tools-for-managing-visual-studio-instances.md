@@ -14,11 +14,12 @@ ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 28027f4e68231dfe413065e8ef3bf8f4abb2c487
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: ad0dfcdaf353d94b7d0ea255def0839069b0a39e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用于检测和管理 Visual Studio 实例的工具
 
@@ -50,7 +51,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 1. 如果有打开的 Visual Studio 2017 实例，请予以关闭。
 2. 启动 `regedit.exe`。
 3. 选择“`HKEY_LOCAL_MACHINE`”节点。
-4. 在 Regedit 主菜单中，依次选择“文件 -> 加载配置单元...”，然后选择专用注册表文件（存储在“AppData\Local”文件夹中）。 例如：
+4. 在 Regedit 主菜单中，依次选择“文件 -> 加载配置单元...”，然后选择专用注册表文件（存储在“AppData\Local”文件夹中）。 例如:
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
@@ -70,7 +71,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
 * 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户）。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)

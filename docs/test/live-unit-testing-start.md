@@ -10,11 +10,12 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 83458b769b5551ed07774e244cce65a97477a713
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: b0d4726bc29ebbb6f90fde5e7817ec2fb596177c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio 中的 Live Unit Testing 入门
 
@@ -29,7 +30,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 
 ---
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>系统必备
 
 本教程需要已安装具有 .NET Core 2.0 工作负载的 Visual Studio 2017 Enterprise Edition 版本 15.3。
 
@@ -204,7 +205,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
  
 1. Visual Studio 启动 Live Unit Testing，使其自动运行所有测试。 
  
-完成运行测试后，“测试资源管理器”显示整体结果和各个测试的结果。 此外，代码窗口以图形方式显示测试代码覆盖率和测试结果。 如下图所示，三项测试均已成功执行。 它还显示测试中已覆盖 `StartsWithUpper` 方法中的所有代码路径，并已成功执行这些测试（用绿色复选标记“✓”指示）。 最后，显示 `StringLibrary` 中的其他方法都没有代码覆盖率（用蓝线“”指示）。 
+完成运行测试后，“测试资源管理器”显示整体结果和各个测试的结果。 此外，代码窗口以图形方式显示测试代码覆盖率和测试结果。 如下图所示，三项测试均已成功执行。 它还显示测试中已覆盖 `StartsWithUpper` 方法中的所有代码路径，并已成功执行这些测试（用绿色复选标记“✓”指示）。 最后，显示 `StringLibrary` 中的其他方法都没有代码覆盖率（用蓝线“➖”指示）。 
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 ![启动 Live Unit testing 后的测试资源管理器和代码窗口](media/lut-start/lut-results-cs.png) 

@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ac891c48a4d3d2276fa925dd6092d1bf1d72176d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 0844526b7c5dbc0955bc9cafff6f63121b9d7182
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-cookiecutter-extension"></a>使用 Cookiecutter 扩展
 
@@ -80,7 +81,7 @@ Cookiecutter 主页上显示可选择的模板列表，分为以下几组：
 
 ![Cookiecutter 选项](media/cookiecutter-tools-options.png)
 
-| 选项 | 说明 |
+| 选项 | 描述 |
 | --- | --- |
 | 建议的源 URL | 建议模板源的位置。 它可以是本地文件的 URL 或路径。 将 URL 留空以使用默认的 Microsoft 策划的源。 源提供了由换行符分隔的模板位置的简单列表。 若要请求更改策划的源，请对 [GitHub 上的源](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt)拉取请求。 |
 | 显示帮助 | 控制 Cookiecutter 窗口顶部的帮助信息栏的可见性。 |
@@ -96,9 +97,9 @@ Cookiecutter 主页上显示可选择的模板列表，分为以下几组：
 
 通过在特定于 Visual Studio 的 `cookiecutter.json` 文件（并且 Cookiecutter CLI 忽略了该文件）中指定其他元数据，可以改进此呈现。 所有属性都是可选的：
 
-| 属性 | 说明 |
+| 属性 | 描述 |
 | --- | --- |
-| 标签 | 指定编辑器上方显示的关于变量的内容，而不是变量名称。 |
+| Label | 指定编辑器上方显示的关于变量的内容，而不是变量名称。 |
 | 描述 | 指定编辑控件上显示的工具提示，而不是该变量的默认值。 |
 | URL | 将标签转换为超链接，并使用工具提示显示该 URL。 单击超链接将打开用户默认浏览器，并转到该 URL。 |
 | 选择器 | 允许为变量自定义编辑器。 目前支持以下选择器：<ul><li>`string`：标准文本框，默认用于符串。</li><li>`list`：标准组合框，默认用于列表。</li><li>`yesno`：在 `y` 和 `n` 之间进行选择的组合框，用于字符串。</li><li>`odbcConnection`：具有“...”按钮的文本框，可用于打开数据库连接对话框。</li></ul> |
@@ -171,7 +172,7 @@ Cookiecutter 具有名为“后生成挂钩”的功能，允许文件生成后�
 ]
 ```
 
-对于多个参数，请使用数组。 对于开关，请将开关及其值拆分为单独的参数并使用正确的引用。 例如: 
+对于多个参数，请使用数组。 对于开关，请将开关及其值拆分为单独的参数并使用正确的引用。 例如:
 
 ```json
 "_visual_studio_post_cmds": [

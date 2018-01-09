@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.openlocfilehash: 124a40e4e8f4b713e17aa05f95efccc5fcec3589
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: a628d2af0ccfaf66c936b391a977a0869139c98b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-desktop-express-2017-workload-and-component-ids"></a>Visual Studio Desktop Express 2017 工作负载和组件 ID
 
@@ -42,7 +43,7 @@ ms.lasthandoff: 12/04/2017
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | 名称 | 版本 | 依赖项类型
+组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.0.27019.1 | 必需
 Microsoft.Component.HelpViewer | 帮助查看器 | 15.0.27005.2 | 必需
@@ -86,9 +87,9 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 适用于 UWP �
 
 这些组件不随附于任何工作负载，但可选择作为单个组件。
 
-组件 ID | 名称 | 版本
+组件 ID | name | 版本
 --- | --- | ---
-无 | 不可用 | 无
+不可用 | 不可用 | 不可用
 
 ## <a name="get-support"></a>获取支持
 有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
@@ -97,7 +98,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 适用于 UWP �
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
 * 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户）。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
 

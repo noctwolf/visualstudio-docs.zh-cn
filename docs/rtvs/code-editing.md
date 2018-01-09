@@ -12,17 +12,18 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 013c32cb1567b3a4830a5c63059b14ea23df5427
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>在 Visual Studio 中编辑 R 代码
 
 针对 Visual Studio 的 R 工具 (RTVS) 为 R 专门定制 Visual Studio 编辑体验，同时保留所有功能并且能够使用扩展。 （例如，如果偏好 VIM 键绑定，可从 Visual Studio 库安装免费 [VsVim 扩展](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329)。）
 
-在本主题中：
+本主题内容：
 
 - [语法突出显示](#syntax-highlighting)
 - [编辑和组织代码](#editing-and-organizing-code)
@@ -34,7 +35,7 @@ ms.lasthandoff: 12/04/2017
 
 另请参阅有关 [IntelliSense](code-intellisense.md)、[linting](code-linting.md)、[代码片段](code-snippets.md) 和 [R Markdown](rmarkdown.md) 的主题。
 
-## <a name="syntax-highlighting"></a>语法突出显示 
+## <a name="syntax-highlighting"></a>语法突出显示
 
 除通过颜色区分不同的代码部分（如字符串、注释和关键字），RTVS 还可以在注释中突出显示和启用链接：
 
@@ -67,7 +68,7 @@ Visual Studio 同时还用下划线标出编辑器中的语法错误：
 要创建自己的区域，请在所需代码周围添加以 `---` 结尾的注释。 通过代码左侧的小型 +/- 控件可以展开或折叠区域：
 
 ![创建含注释的可折叠区域](media/editing-collapsible-regions.gif)
- 
+
 默认情况下，按下 Tab 键时 Visual Studio 将插入空格。 可以按[操作、文本编辑器、选项卡](../ide/reference/options-text-editor-all-languages.md)中所述再次更改此行为。
 
 ## <a name="code-navigation"></a>代码导航

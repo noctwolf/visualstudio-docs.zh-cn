@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 876fdbd4507fd7ed55e7b29834d4a3bc5e68dfad
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: d0b21c78ab31c093ef48300ac746c3c2fd7d6778
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入门：从 Cookiecutter 模板创建项目
 
@@ -42,13 +43,12 @@ ms.lasthandoff: 12/01/2017
 
     ![python-sklearn-classifier-cookiecutter 模板项目的输出](media/projects-from-cookiecutter4.png)
 
-
 ## <a name="next-steps"></a>后续步骤
 
 > [!div class="nextstepaction"]
 > [教程：在 Visual Studio 中使用 Python](vs-tutorial-01-01.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 Cookiecutter 扩展](cookiecutter.md)
 - [为现有 Python 解释器创建环境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。

@@ -1,5 +1,5 @@
 ---
-title: "适用于 R 代码 Visual Studio 的 IntelliSense | Microsoft Docs"
+title: "Visual Studio 中适用于 R 代码的 IntelliSense | Microsoft Docs"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,28 +12,29 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 160b39690cf2c1ebf933fb7a17f5d5b17b4d422a
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: a54ebc3abb5f63e2503f48e050e5b9d3e3546abb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisense"></a>IntelliSense
 
 编写代码时，Visual Studio IntelliSense 能直观显示可调用函数、对象成员、函数参数和[代码片段](code-snippets.md)的相关信息。 它还会在你键入时显示可能的补全内容，并在按 Tab 或 Enter 键时进行补全（请参阅“高级”选项卡中的[编辑器选项](code-editing.md#editor-options)）。 编辑器和[交互窗口](interactive-repl.md)都支持 IntelliSense。
 
-![显示函数签名的 IntelliSense](media/intellisense-function-signature.png) 
+![显示函数签名的 IntelliSense](media/intellisense-function-signature.png)
 
 键入函数或其他语句时，IntelliSense 提供按输入的内容筛选的自动补全菜单（区分大小写）：
 
 ![IntelliSense 自动补全菜单](media/intellisense-auto-complete-menu.png)
 
-按 Tab 键（或 Enter 键、空格键，具体取决于如何设置选项），在下拉列表中插入所选项。 可通过箭头键更改选择。 
+按 Tab 键（或 Enter 键、空格键，具体取决于如何设置选项），在下拉列表中插入所选项。 可通过箭头键更改选择。
 
 IntelliSense 还为 R 对象的成员提供建议：
- 
+
 ![为对象成员提供的 IntelliSense 建议](media/intellisense-auto-complete-r-objects.png)
- 
+
 按 Esc 键消除所有菜单。 按 Ctrl+空格键可以再次恢复。
 
 为函数调用键入左括号 `(` 会同时插入右括号 `)`，然后弹出签名帮助，如前面所示：

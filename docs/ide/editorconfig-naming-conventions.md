@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8751bdb2d2dfb364f19f62e03edd1527fa3deb7d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: multiple
+ms.openlocfilehash: 5b6d7f0dc43ca11b6fee4b97d5422b863a7b89f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="naming-conventions-for-editorconfig"></a>EditorConfig 的命名约定
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/01/2017
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_kinds = <values>`
 
-下面列出了允许的值，可通过以逗号分隔值指定多个值。
+以下列表显示了允许的值，可通过以逗号分隔值来指定多个值。
 
 - \*（使用此值可指定所有符号）
 - 类
@@ -63,7 +64,7 @@ ms.lasthandoff: 12/01/2017
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_accessibilities = <values>`
 
-下面列出了允许的值，可通过以逗号分隔值指定多个值。
+以下列表显示了允许的值，可通过以逗号分隔值来指定多个值。
 
 - \*（使用此值可指定所有可访问性级别）
 - public
@@ -81,16 +82,15 @@ ms.lasthandoff: 12/01/2017
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-下面列出了允许的值，可通过以逗号分隔值指定多个值。
+以下列表显示了允许的值，可通过以逗号分隔值来指定多个值。
 
-- \*（使用此值可指定所有修饰符）
 - abstract 或 must_inherit
 - async
 - const
 - readonly
 - static 或 shared
 
-如果忽略此属性，则命名规则应用于所有修饰符。
+`required_modifiers` 为可选属性。 如果忽略此属性，则命名规则应用于所有修饰符。
 
 ## <a name="style"></a>样式
 
@@ -155,7 +155,7 @@ none 或 silent | 如未遵循此样式，则不会向用户显示任何内容�
 
 ## <a name="example"></a>示例
 
-下例是包含命名约定的 .editorconfig 文件，该约定指定公共属性、方法、字段、事件和委托必须采用大写形式。 请注意，此命名约定指定了多种应用规则的符号，以逗号分隔。
+以下 .editorconfig 文件包含命名约定，该约定指定公共属性、方法、字段、事件和委托必须采用大写形式。 请注意，此命名约定指定了多种应用规则的符号，以逗号分隔。
 
 ```
 # Public members must be capitalized (public_members_must_be_capitalized)

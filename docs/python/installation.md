@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 066612a132bf6a092771afd5fc4a876d4b3be425
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: cd1ce1ce47705e5e8b63fb3ef7cc36c401503886
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -71,7 +72,6 @@ ms.lasthandoff: 12/01/2017
 1. 安装后，安装程序会提供用于修改、启动、修复或卸载 Visual Studio 的选项。 如果有适用于任何已安装组件的 Visual Studio 更新可用，“修改”按钮会变为“更新”。 （随后在下拉菜单中提供修改选项。）还可搜索“Visual Studio”，从 Windows 开始菜单启动 Visual Studio 及安装程序。
 
     ![通过安装程序启动、修改或卸载 Visual Studio](media/installation-vs-launch.png)
-
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
 

@@ -22,18 +22,19 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 2c44751b9a4eb60ddc6124311bd75592777d4cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>演练： 改进 UI 响应能力 (HTML)
 本演练引导你使用 [HTML UI 响应能力探查器](../profiling/html-ui-responsiveness.md)确定并修复性能问题。 探查器可用于 Visual Studio 中使用 JavaScript 的 UWP 应用。 在此方案中，你将创建一个过于频繁地更新 DOM 元素的性能测试应用，并使用探查器确定并修复此问题。  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>创建并运行性能测试应用  
   
-1.  在 Visual Studio 中，创建一个新的 Windows Universal JavaScript 项目。 （选择“文件”/“新建”/“项目”。 在左窗格中选择“JavaScript”，然后选择“Windows”、“Windows 10”，再选择“通用”或“Windows Phone”。  
+1.  在 Visual Studio 中，创建一个新的 Windows Universal JavaScript 项目。 （选择“文件”>“新建”>“项目”。） 在左窗格中选择“JavaScript”，然后选择“Windows”、“Windows 10”，再选择“通用”或“Windows Phone”。  
   
 2.  > [!IMPORTANT]
     >  本主题中显示的诊断结果是针对 Windows 8 应用显示的。  
@@ -242,5 +243,5 @@ ms.lasthandoff: 12/07/2017
   
 2.  再次运行“HTML UI 响应能力”探查器，然后查看“CPU 使用率”图。 你将看到过多事件已消失，CPU 使用率降到接近零值。 问题已修复！  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [HTML UI 响应能力](../profiling/html-ui-responsiveness.md)

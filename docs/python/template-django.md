@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 29d11f04fb1fc7b0942a98b47dd5638c0572c23b
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 6dda33b14a96d7d866413ea26dc267f9aa8b772c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="django-web-project-template"></a>Django Web 项目模板
 
@@ -38,13 +39,11 @@ Visual Studio 为 Django 项目提供完整的 IntelliSense：
 
     ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
 
-
 Visual Studio 还为 Django 项目提供完整的[调试支持](debugging.md)： 
 
 ![断点](media/template-django-debugging.png)
 
 Django 项目一般通过其 `manage.py` 文件管理，Visual Studio 会遵循此假设。 如果停止将该文件用作入口点，则实质上是中断了项目文件。 在这种情况下，需要[从现有文件重新创建项目](python-projects.md#creating-a-project-from-existing-files)，不将其标记为 Django 项目。
-
 
 ## <a name="django-management-console"></a>Django 管理控制台
 
@@ -52,7 +51,7 @@ Django 管理控制台可通过“项目”菜单上的各种命令或在解决�
 
 - 打开 Django Shell...：将打开应用程序上下文中的 shell，使你能够操作模型
 
-    ![Console](media/template-django-console-shell.png)
+    ![控制台](media/template-django-console-shell.png)
 
 - **Django 同步数据库**：在交互式窗口中执行 `manage.py syncdb`：
 

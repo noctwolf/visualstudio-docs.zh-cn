@@ -21,11 +21,12 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b508aadfb44792374c323854ee5333905827f23e
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e786abe316d60ad0d6cc8a0fd5de356f8d2332c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>移植、迁移和升级 Visual Studio 项目
 
@@ -43,7 +44,7 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 
 以下列表描述了 Visual Studio 2017 中对在之前版本中创建的项目的支持。
 
-如果在此处未看到任何项目或文件类型（此处本应出现这些内容），请参阅[本主题的 Visual Studio 2015 版本](port-migrate-and-upgrade-visual-studio-projects.md)并在下面的注释中记录。
+如果在此处未看到任何项目或文件类型（此处本应出现这些内容），请参阅[本主题的 Visual Studio 2015 版本](https://msdn.microsoft.com/library/hh266747.aspx)并通过项目类型的详细信息[提出问题](https://github.com/MicrosoftDocs/visualstudio-docs/issues/)。
 
 | 项目类型 | 支持 |
 | --- | --- |

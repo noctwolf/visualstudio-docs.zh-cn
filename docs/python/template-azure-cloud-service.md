@@ -12,11 +12,14 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b8ddcb234d43407c256145245b4cbdac308ed9ea
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: e5bde434f3a5097f51f461aad5b02ae183e2204c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python 的 Azure 云服务项目
 
@@ -46,7 +49,6 @@ Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
     ![辅助角色支持文件](media/template-azure-cloud-service-worker-role-support-files.png)
 
     若要将这些配置脚本添加到新项目，请右键单击项目，选择“添加”>“新建项目...”，然后选择“Web 角色支持文件”或“辅助角色支持文件”。
-   
 
 ## <a name="configuring-role-deployment"></a>配置角色部署
 
@@ -72,7 +74,6 @@ Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
 
 请注意，由于仿真程序中的限制，不能调试 Python 代码。 因此，建议通过单独运行角色来进行调试，然后在发布前使用仿真程序进行集成测试。
 
-
 ## <a name="deploying-a-role"></a>部署角色
 
 若要打开“发布”向导，在“解决方案资源管理器”中选择角色项目，然后从主菜单中选择“生成”>“发布”，或者右键单击该项目，然后选择“发布”。
@@ -82,7 +83,6 @@ Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
 在每个虚拟机激活时，执行 `ConfigureCloudService.ps1` 脚本，并安装所有依赖项。 此脚本默认安装 [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) 上最新版本的 Python，以及 `requirements.txt` 文件中指定的任何包。 
 
 最后，辅助角色执行 `LaunchWorker.ps1`，从而开始运行 Python 脚本；Web 角色初始化 IIS，并开始处理 Web 请求。
-
 
 ## <a name="dependencies"></a>依赖项
 
@@ -97,6 +97,7 @@ Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
 如果部署后无法正常使用 Web 或辅助角色，请检查以下各项：
 
 - Python 项目（至少）包含具有以下内容的 bin\文件夹：
+
     - `ConfigureCloudService.ps1`
     - `LaunchWorker.ps1`（对于辅助角色）
     - `ps.cmd`

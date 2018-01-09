@@ -15,11 +15,12 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ff653e6fd9fb33cd7141671e9b77f297f8457a8b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: bfdce6484661354315a4f6b8b4a219f119ec8742
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令行参数安装 Visual Studio 2017
 通过命令提示符安装 Visual Studio 2017 时，可以使用各种命令行参数来控制或自定义安装。 通过命令行，可以执行下列操作：
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/22/2017
 
 （将 `vs_enterprise.exe` 替换为要安装的相应产品版本。 有关示例，请参阅[命令行参数示例](command-line-parameter-examples.md)页。）
 
-| **命令** | **描述** |
+| **命令** | **说明** |
 | ----------------------- | --------------- |
 | (空白) | 安装产品。 |
 | `modify` | 修改已安装的产品。 |
@@ -49,7 +50,7 @@ ms.lasthandoff: 11/22/2017
 | `repair` | 修复已安装的产品。 |
 | `uninstall` | 卸载已安装的产品。 |
 
-| **安装选项** | **描述** |
+| **安装选项** | **说明** |
 | ----------------------- | --------------- |
 | `--installPath <dir>` | 要对其执行操作的实例的安装目录。 对于安装命令，这是**可选**选项，表示实例的安装位置。 对于其他命令，此为必需选项，表示以前安装的实例的安装位置。 |
 | `--addProductLang <language-locale>` | **可选**：在安装或修改操作期间，这可确定要在产品中安装的 UI 语言包。 可以在命令行处多次使用此选项，从而添加多个语言包。 如果缺少此选项，将使用计算机区域设置进行安装。 有关详细信息，请参阅本页的[语言区域设置列表](#list-of-language-locales)部分。|
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/22/2017
 | `--fix` | **15.3 中新增的可选选项**：验证布局内容。  如果发现任何文件损坏或缺失，将重新进行下载。  必须连接 Internet，才能修复布局。 |
 | `--clean <one or more paths to catalogs>` | **15.3 中新增的可选选项**：从已更新到新版本的布局中删除旧版组件。 |
 
-| **高级安装选项** | **描述** |
+| **高级安装选项** | **说明** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **可选**：要安装的实例的通道 ID。 如果指定了 `--installPath`，对于安装命令，此为是必需选项，对于其他命令，此选项可忽略。 |
 | `--channelUri <uri>` | **可选**：通道清单的 URI。 如果不需要更新，`--channelUri` 可以指向不存在的文件。 （例如，--channelUri C:\doesntExist.chman）此参数可用于 install 命令；其他命令则可忽略。 |
@@ -104,7 +105,7 @@ ms.lasthandoff: 11/22/2017
 | ----------------------- | --------------- |
 | cs-CZ | 捷克语 |
 | de-DE | 德语 |
-| zh-CN | 英语 |
+| en-US | 英语 |
 | es-ES | 西班牙语 |
 | fr-FR | 法语 |
 | it-IT | 意大利语 |
@@ -120,7 +121,7 @@ ms.lasthandoff: 11/22/2017
 ## <a name="error-codes"></a>错误代码
 `%ERRORLEVEL%` 环境变量设为下列值之一，具体视操作结果而定：
 
-| **值** | **结果** |
+| **“值”** | **结果** |
 | --------- | ---------- |
 | 0 | 操作成功完成 |
 | 1602 | 操作已取消 |
@@ -138,7 +139,7 @@ ms.lasthandoff: 11/22/2017
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
 * 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户）。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
 

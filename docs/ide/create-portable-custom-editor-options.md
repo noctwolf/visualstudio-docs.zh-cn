@@ -1,7 +1,7 @@
 ---
-title: "在 VisualStudio 中使用 EditorConfig 设置 | Microsoft Docs"
+title: "在 Visual Studio 中使用 EditorConfig 设置 | Microsoft Docs"
 ms.custom: 
-ms.date: 10/27/2017
+ms.date: 12/13/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -11,15 +11,18 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 39b3228e64257552c8b629e421c9b5aa4f0e0931
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: multiple
+ms.openlocfilehash: 0219ff704e22ab1c27d47e312825a66cb3a15166
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 
-Visual Studio 中的文本编辑器设置适用于给定类型的所有项目。 因此，如果更改 C# 文本编辑器设置，该设置也适用于 Visual Studio 中的所有 C# 项目。 但是，在某些情况下，可能需要使用不同于个人编辑器首选项的约定。 [EditorConfig](http://editorconfig.org/) 文件使你能够通过按每个项目描述常用的文本编辑器选项（如缩进大小），达到此目的。 EditorConfig 设置包含在与代码和项目文件共存的 .editorconfig 文件中，优先于全局 Visual Studio 文本编辑器设置。 这意味着，可以调整每种基本代码，以使用特定于该项目的文本编辑器设置。 在 Visual Studio 中使用此功能无需任何插件。
+在 Visual Studio 2017 中，可以向项目或基本代码添加 [EditorConfig](http://editorconfig.org/) 文件，强制对使用该基本代码的所有人实施一致的编码样式。 EditorConfig 设置优先于全局 Visual Studio 文本编辑器设置。 这意味着，可以调整每种基本代码，以使用特定于该项目的文本编辑器设置。 仍然可以在 Visual Studio“选项”对话框中设置个人编辑器首选项。 只要正在使用的基本代码没有 .editorconfig 文件，或者 .editorconfig 文件未替代特定设置，将应用这些设置。 此类首选项的一个示例为缩进样式 &mdash; 制表符或空格。
+
+许多代码编辑器和 IDE（包括 Visual Studio）都支持 EditorConfig 设置。 它是一种随代码移动的可移植组件，甚至可以在 Visual Studio 外强制实施编码样式。
 
 ## <a name="coding-consistency"></a>编码一致性
 
@@ -31,7 +34,7 @@ EditorConfig 文件中的设置用于在基本代码库中维持一致的编码�
 
 ## <a name="override-editorconfig-settings"></a>替代 EditorConfig 设置
 
-如果在文件层次结构中将 .editorconfig 文件添加到文件夹，则其设置将应用于该级别和更低级别的所有适用文件。 若要替代特定项目或基本代码的 EditorConfig 设置，以便使用与顶级 EditorConfig 文件不同的约定，只需将 .editorconfig 文件添加到基本代码的存储库或项目目录的根目录即可。 确保将 ```root=true``` 属性放置在该文件中，以便 Visual Studio 不再在目录结构中继续向上查找任何 .editorconfig 文件。 新的 EditorConfig 文件设置将应用于同级目录和任何子目录中的文件。
+如果在文件层次结构中将 .editorconfig 文件添加到文件夹，则其设置将应用于该级别和更低级别的所有适用文件。 若要替代特定项目或基本代码的 EditorConfig 设置，以便使用与顶级 EditorConfig 文件不同的约定，只需将 .editorconfig 文件添加到基本代码的存储库或项目目录的根目录即可。 确保将 ```root=true``` 属性放置在该文件中，以便 Visual Studio 不再在目录结构中继续向上查找任何 .editorconfig 文件。 新的 EditorConfig 文件设置应用于同级目录和任何子目录中的文件。
 
 ```
 # top-most EditorConfig file
@@ -63,7 +66,7 @@ Visual Studio 提供一些 IntelliSense 用于编辑 .editorconfig 文件。 如
 
 ## <a name="adding-and-removing-editorconfig-files"></a>添加和删除 EditorConfig 文件
 
-将 EditorConfig文件添加到项目或基本代码不会将现有样式转换为新样式。 例如，如果文件中存在带制表符格式的缩进，并添加了以空格缩进的 EditorConfig 文件，则缩进字符将不会转换为空格。 但任何新的代码行将根据 EditorConfig 文件进行格式化。
+将 EditorConfig文件添加到项目或基本代码不会将现有样式转换为新样式。 例如，如果文件中存在带制表符格式的缩进，并添加了以空格缩进的 EditorConfig 文件，则缩进字符不会转换为空格。 但任何新的代码行将根据 EditorConfig 文件进行格式化。
 
 如果从项目或基本代码库中删除 EditorConfig 文件，必须关闭并重新打开任何打开的代码文件才能还原到新代码行的全局编辑器设置。
 
@@ -77,7 +80,7 @@ Visual Studio 提供一些 IntelliSense 用于编辑 .editorconfig 文件。 如
 
 ![使用 EditorConfig 之前的代码](../ide/media/vside_editorconfig_before.png)
 
-将具有以下内容的名为 .editorconfig 的新文件添加到项目。 `[*.cs]` 设置意味着此更改仅应用于此项目中的 C# 代码文件。
+将具有以下内容的名为 .editorconfig 的新文件添加到项目。 `[*.cs]` 设置意味着此更改仅应用于项目中的 C# 代码文件。
 
 ```
 # Top-most EditorConfig file
@@ -98,7 +101,7 @@ indent_style = tab
 
    “该项目编码约定覆盖了此文件类型的用户首选项”。
 
-这意味着如果在某个 EditorConfig 文件中的“工具”、“选项”、“文本编辑器”中指定了任何编辑器设置（如缩进尺寸和样式、制表符大小或编码约定），且该文件在目录结构中位于与项目相同或高于项目的位置，则该文件中的约定会替代“选项”中的设置。 可以通过在“工具”、“选项”、“文本编辑器”中切换“遵循项目编码约定”选项，来控制此行为。 取消选中该选项会关闭 Visual Studio 的 EditorConfig 支持。
+这意味着如果目录结构中位于与项目相同位置或在项目之上的某个 EditorConfig 文件中指定了“工具”、“选项”、“文本编辑器”中的任何编辑器设置（如缩进尺寸和样式、制表符大小或编码约定），则 EditorConfig 文件中的约定会替代“选项”中的设置。 可以通过在“工具”、“选项”、“文本编辑器”中切换“遵循项目编码约定”选项，来控制此行为。 取消选中该选项会关闭 Visual Studio 的 EditorConfig 支持。
 
 ![工具选项 - 遵循项目编码约定](media/coding_conventions_option.png)
 
@@ -108,7 +111,7 @@ indent_style = tab
 dir .editorconfig /s
 ```
 
-可以通过在存储库的根目录或项目所在目录的 .editorconfig 文件中设置 ```root=true``` 属性，控制 EditorConfig 约定的范围。 Visual Studio 会在打开的文件的目录和每个父目录中查找名为 .editorconfig 的文件。 如果到达根文件路径，或如果找到 ```root=true``` 的 .editorconfig 文件，则 Visual Studio 会停止搜索。
+可以通过在存储库的根目录或项目所在目录的 .editorconfig 文件中设置 ```root=true``` 属性，控制 EditorConfig 约定的范围。 Visual Studio 会在打开的文件的目录和每个父目录中查找名为 .editorconfig 的文件。 到达根文件路径时或找到具有 ```root=true``` 的 .editorconfig 文件时搜索结束。
 
 ## <a name="see-also"></a>请参阅
 

@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 性能分析初学者指南 | Microsoft Docs"
+title: "在 Visual Studio 中分析应用程序性能 | Microsoft Docs"
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -18,13 +18,14 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.workload: multiple
+ms.openlocfilehash: 5ff8e6fe4814d9f049a816997252dac032e631ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="beginners-guide-to-performance-profiling"></a>性能分析初学者指南
+# <a name="profile-application-performance-in-visual-studio"></a>在 Visual Studio 中分析应用程序性能
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程演示如何使用诊断工具的“CPU 使用率”选项卡获取应用的性能数据。 Visual Studio 中的 .NET 开发（包括 ASP.NET、和本机 /C++ 开发）支持此诊断工具。
   
 调试中断时，**CPU 使用率**工具收集有关应用程序中正在执行的函数的信息。 该工具将列出执行工作的函数，并提供时间线图，可专用于采样会话的特定部分。
@@ -68,7 +69,7 @@ ms.lasthandoff: 12/08/2017
 
      ![诊断工具启用 CPU 分析](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
-     选择“启用 CPU 分析”时，Visual Studio 将开始记录函数和执行这些函数所用的时间。 应用程序在断点处中断时，仅可以查看此收集的数据。
+     选择“记录 CPU 配置文件”时，Visual Studio 将开始记录函数和执行这些函数所用的时间。 应用程序在断点处中断时，仅可以查看此收集的数据。
 
 8.  按 F5 将应用运行到第二个断点。
 
@@ -155,7 +156,7 @@ ms.lasthandoff: 12/08/2017
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171" frameborder="0" allowfullscreen></iframe>
 </div>
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [内存使用率](../profiling/memory-usage.md)  
  [CPU 使用率](../profiling/cpu-usage.md)  
  [使用 Visual Studio 分析](../profiling/index.md)  

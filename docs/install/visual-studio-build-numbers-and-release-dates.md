@@ -5,22 +5,39 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/18/2017
+ms.date: 12/18/2017
 ms.topic: article
 helpviewer_keywords: 
 ms.technology: vs-acquisition
 ms.service: 
-ms.openlocfilehash: fff709bc75a4d9f9747c0fc47d5961fb2b00ec1c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 945b11869145d07c9defa8586876d02eccf098f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 生成号和发布日期
 下表列出了 Visual Studio 2017 的最新生成号和发布日期。
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.5.2 | 发布 | 2017 年 12 月 14 日 | 15.5.27130.2010 |
+| 15.6.0 预览版 1.1 | 预览 | 2017 年 12 月 14 日 | 15.6.27205.2004 |
+| 15.5.1 | 发布 | 2017 年 12 月 7 日 | 15.5.27130.2003 |
+| 15.6.0 预览版 1.0 | 预览 | 2017 年 12 月 7 日 | 15.6.27205.0 |
+| 15.0.7 | 发布 | 2017 年 12 月 6 日 | 15.0.26228.18 |
+| 15.5 | 发布 | 2017 年 12 月 4 日 | 15.5.27130.0 |
+| 15.5.0 预览版 5.0 | 预览 | 2017 年 11 月 30 日 | 15.5.27128.1 |
+| 15.4.5 | 发布 | 2017 年 11 月 27 日 | 15.4.27004.2010 |
+| 15.5.0 预览版 4.0 | 预览 | 2017 年 11 月 14 日 | 15.5.27110.0 |
+| 15.4.4 | 发布 | 2017 年 11 月 14 日 | 15.4.27004.2009 |
+| 15.0.6 | 发布 | 2017 年 11 月 14 日 | 15.0.26228.17 |
+| 15.4.3 | 发布 | 2017 年 11 月 8 日 | 15.4.27004.2008 |
+| 15.5.0 预览版 3.0 | 预览 | 2017 年 11 月 6 日 | 15.5.27102.0 |
+| 15.4.2 | 发布 | 2017 年 10 月 31 日 | 15.4.27004.2006 |
+| 15.5.0 预览版 2.0 | 预览 | 2017 年 10 月 23 日 | 15.5.27019.1 |
+| 15.4.1 | 发布 | 2017 年 10 月 19 日 | 15.4.27004.2005 |
 | 15.5 预览版 1 | 预览 | 2017 年 10 月 11 日 | 15.0.27009.1 |
 | 15.4 | 发布 | 2017 年 10 月 9 日 | 15.0.27004.20002 |
 | 15.4 预览版 6 | 预览 | 2017 年 10 月 9 日| 15.0.27004.20002 |
@@ -37,7 +54,7 @@ ms.lasthandoff: 11/22/2017
 | 15.3.1 | 发布 | 2017 年 8 月 18 日 | 15.0.26730.08 |
 | 15.3.1 预览版 1 | 预览 | 2017 年 8 月 18 日 | 15.0.26730.08 |
 | 15.3.1  | 发布 | 2017 年 8 月 18 日 | 15.0.26730.08 |
-| 15.4 预览版 1 | 预览 | 2017 年 8 月 22 日 | 无 |
+| 15.4 预览版 1 | 预览 | 2017 年 8 月 24 日 | 15.4.26823.1 |
 | 15.3 | 发布 | 2017 年 8 月 14 日 | 15.0.26730.3 |
 | 15.3 预览版 7.1 | 预览 | 2017 年 8 月 11 日 | 15.0.26730.3 |
 | 15.3 预览版 7 | 预览 | 2017 年 8 月 1 日 | 15.0.26730.0 |
@@ -79,9 +96,9 @@ ms.lasthandoff: 11/22/2017
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
 * 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户）。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 * [Visual Studio 2017 管理员指南](visual-studio-administrator-guide.md)
 * [使用命令行参数安装 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
 * [用于检测和管理 Visual Studio 实例的工具](tools-for-managing-visual-studio-instances.md)

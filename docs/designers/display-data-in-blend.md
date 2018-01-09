@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1097a5724e1fcab96be99c58532e15fedd59da30
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a48416fc2508240cd03e545c0b798d3d24ab6f6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="display-data-in-blend"></a>显示 Blend 中的数据
 自定义页面的布局时，可以在设计器中查看示例数据。 可以从头开始或使用现有类生成示例数据。 也可以连接到在连接到应用时出现在应用中的 *实时数据* 。  
@@ -32,13 +33,13 @@ ms.lasthandoff: 10/31/2017
 -   [在应用商店或 Phone 应用中显示实时数据](#LiveStore)  
   
 ##  <a name="Scratch"></a> 生成示例数据  
- 若要生成示例数据，请打开 XAML 文档。 在“数据”面板中，选择“创建示例数据”![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f")按钮，然后选择“新建示例数据”。  
+ 若要生成示例数据，请打开 XAML 文档。 在“数据”面板中，选择“创建示例数据”![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") 按钮，然后选择“新建示例数据”。  
   
  在“数据”  面板中定义数据的结构，然后将它绑定到任何页面上的 UI 元素。  
   
  ![](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png "496d7ebc-fe46-42f6-95a8-57b0e5be5d49")  
   
- 如果希望示例数据在运行该应用程序时出现在页面中，则选择“数据源选项”  ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d")，然后选择“运行应用程序时启用” 。  
+ 如果希望示例数据在运行该应用程序时出现在页面中，则选择“数据源选项”![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d")，然后选择“运行应用程序时启用”。  
   
  ![](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png "05d5356d-91bb-4e6b-b3f7-29b76852c4b3")  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Existing"></a> 从类生成示例数据  
  如果已创建了描述数据结构的类，则可以从这些类生成示例数据。  
   
- 若要从类生成示例数据，请打开一个 XAML 文档，然后在“数据”面板中，单击“创建示例数据”![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f")按钮，然后单击“从类创建示例数据”。  
+ 若要从类生成示例数据，请打开一个 XAML 文档，然后在“数据”面板中，单击“创建示例数据”![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") 按钮，然后单击“从类创建示例数据”。  
   
  观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [从类创建示例数据](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg)。  
   
@@ -63,5 +64,5 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="LiveStore"></a> 在应用商店或 Phone 应用中显示实时数据  
  请参阅 [使用数据和文件 (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 Blend for Visual Studio 创建 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

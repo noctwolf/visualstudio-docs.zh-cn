@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 230362695dd9f099c15eb1113e1eb121418b0c41
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: multiple
+ms.openlocfilehash: 87d937c456b875afa5234b61b57edb21ba32baf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何解锁 Visual Studio
 
@@ -72,5 +73,5 @@ ms.lasthandoff: 11/17/2017
 
 ## <a name="see-also"></a>请参阅
 
-[登录 Visual Studio](../ide/signing-in-to-visual-studio.md)  
-[Visual Studio 使用的 Internet 资源](../ide/connected-environment.md)
+* [登录 Visual Studio](../ide/signing-in-to-visual-studio.md)
+ 

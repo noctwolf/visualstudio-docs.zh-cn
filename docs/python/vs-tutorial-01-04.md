@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 90f22c2f7626b09f230c497c54c8a37511ea1b0b
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 5e8c34c777abf9f7932d05396cb03e612bfd8eea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>步骤 4：在调试器中运行代码
 
@@ -26,34 +27,34 @@ ms.lasthandoff: 12/01/2017
 
 1. 用以下代码替换 `PythonApplication1.py` 文件中的代码。 此代码变体展开了 `make_dot_string`，以便用户在调试器中检查其各个步骤。 它还将 `for` 循环放入 `main` 函数，并通过调用该函数显式运行该循环：
 
-    ```python  
-    import sys  
-    from math import sin, cos, radians    
-    
+    ```python
+    import sys
+    from math import sin, cos, radians
+
     # Create a string with spaces proportional to a cosine of x in degrees
     def make_dot_string(x):
         rad = radians(x)                             # cos works with radians
         numspaces = int(20 * cos(radians(x)) + 20)   # scale to 0-40 spaces
         str = ' ' * numspaces + 'o'                  # place 'o' after the spaces
         return str
-    
-    def main():  
-        for i in range(0, 1800, 12):
-            s = make_dot_string(i)  
-            print(s)  
-            
-    main()
-    ```  
 
-1. 按 F5 或选择“调试”>“开始调试”菜单命令，检查代码是否正常运行。 此命令会在调试器中运行代码，但由于在程序运行时未执行任何操作来暂停程序，因此它只针对几次迭代输出波浪图案。 按键关闭输出窗口。
+    def main():
+        for i in range(0, 1800, 12):
+            s = make_dot_string(i)
+            print(s)
+
+    main()
+    ```
+
+1. 按 F5 或选择“调试”>“开始调试”菜单命令，检查代码是否正常运行。 此命令会在调试器中运行代码，但由于在程序运行时未执行任何操作来暂停程序，因此它只针对几次迭代输出波浪图案。 按任意键关闭输出窗口。
 
     > [!Tip]
     > 若要在程序完成时自动关闭输出窗口，请使用以下代码替换 `main()` 调用：
     >
-    > ```python    
-    > if __name__ == "__main__":  
-    >     sys.exit(int(main() or 0))      
-    > ```    
+    > ```python
+    > if __name__ == "__main__":
+    >     sys.exit(int(main() or 0))
+    > ```
 
 1. 若要在 `for` 语句上设置断点，可单击该行的灰色边距，或将插入点置于该行并使用“调试”>“切换断点”命令 (F9)。 灰色边距中显示的红点用来表示该断点（如以下箭头标记所示）：
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 12/01/2017
     - **单步执行(跳出过程)** (Shift+F11)：运行当前函数的其余部分，并在调用代码中暂停。
 
 1. 使用“单步执行(跳过过程)”单步执行（跳过过程）`for` 语句。 *单步执行*是指调试器运行当前代码行，包括所有函数调用，然后立即再次暂停。 注意变量 `i` 现在在“局部变量”和“自动”窗口中是如何定义的。
- 
+
 1. 单步执行（跳过过程）下一行代码，该命令将调用 `make_dot_string` 并暂停。 确切来说，此处的单步执行（跳过过程）是指调试器运行整个 `make_dot_string` 并在它返回时暂停。 调试器不在该函数内停止，除非其中存在单独的断点。
 
 1. 继续单步执行（跳过过程）代码几次，观察“局部变量”或“自动”窗口中的值如何变化。
@@ -86,20 +87,20 @@ ms.lasthandoff: 12/01/2017
 1. 在“局部变量”或“自动”窗口中，双击 `i` 或 `s` 变量的“值”列，以编辑值。 按 Enter 或在该值外单击以应用任何更改。
 
 1. 继续使用“单步执行(进入过程)”单步调试代码。 “单步执行(进入过程)”是指调试器进入它有相关调试信息的任何函数调用内，比如 `make_dot_string`。 进入 `make_dot_string` 后，可以检查其局部变量并专门单步调试其代码。
- 
+
 1. 继续使用“单步执行(进入过程)”单步执行代码，注意到达 `make_dot_string` 末尾时，下一步会返回到 `for` 循环并为 `s` 变量赋予新的返回值。 再次单步执行 `print` 语句时，请注意，在 `print` 上单步执行（进入过程）不会进入该函数。 这是因为 `print` 不是用 Python 编写的，而是 Python 运行时内的本机代码。
 
 1. 继续使用“单步执行(进入过程)”，直到再次部分进入 `make_dot_string`。 然后使用“单步执行(跳出过程)”，注意将返回到 `for` 循环。 使用“单步执行(跳出过程)”时，调试器运行函数的其余部分，然后在调用代码中自动暂停。 此命令对于以下情况非常有用：已单步调试某个要调试的较长函数的某一部分，但无需单步调试其余部分，并且不想在调用代码中设置显式断点。
 
 1. 若要继续运行程序直到下一个断点，请使用“继续”(F5)。 因为 `for` 循环中有断点，因此下一次迭代将中断。
 
-1. 单步调试某个循环的数百次迭代是一个很枯燥的过程，因此，Visual Studio 允许用户对断点添加*条件*。 仅当满足该条件时，调试器才会在断点处暂停程序。 例如，可以对 `for` 语句上的断点使用条件，使其仅在 `i` 值超过 1600 时暂停。 若要设置此条件，请右键单击红色断点，选择“条件...”(Alt+F9,C)。 在随即显示的“断点设置”弹出窗口中，输入 `i > 1600` 作为表达式，选择“关闭”。 按 F5 继续，注意程序在下一次中断前会运行多次迭代。 
+1. 单步调试某个循环的数百次迭代是一个很枯燥的过程，因此，Visual Studio 允许用户对断点添加*条件*。 仅当满足该条件时，调试器才会在断点处暂停程序。 例如，可以对 `for` 语句上的断点使用条件，使其仅在 `i` 值超过 1600 时暂停。 若要设置此条件，请右键单击红色断点，选择“条件...”(Alt+F9,C)。 在随即显示的“断点设置”弹出窗口中，输入 `i > 1600` 作为表达式，选择“关闭”。 按 F5 继续，注意程序在下一次中断前会运行多次迭代。
 
     ![设定断点条件](media/vs-getting-started-python-21-debugging4.png)
 
 1. 若要一直运行程序直到结束，请右键单击并选择“禁用断点”(Ctrl+F9) 以禁用断点。 然后选择“继续”（或按 F5）运行程序。 程序结束时，Visual Studio 会停止其调试会话，并恢复为其编辑模式。 请注意，也可以通过单击表示断点的点来删除断点，但这样也会删除设置好的所有条件。
 
-> [!Tip]    
+> [!Tip]
 > 在某些情况下，比如无法启动 Python 解释器自身，输出窗口可能短暂出现后就自动关闭，使用户没有机会查看任何错误消息。 如果出现这种情况，请在解决方案资源管理器中右键单击项目，选择“属性”，选择“调试”选项卡，然后将 `-i` 添加到“解释器参数”字段。 此参数会使解释器在程序完成后进入交互模式，从而使窗口保持打开状态，直到按 Ctrl+Z、Enter 退出为止。
 
 ## <a name="next-steps"></a>后续步骤
@@ -108,5 +109,6 @@ ms.lasthandoff: 12/01/2017
 > [在 Python 环境中安装程序包](vs-tutorial-01-05.md)
 
 ### <a name="going-deeper"></a>深入了解
+
 - [调试](debugging.md)。
 - [在 Visual Studio 中调试](../debugger/debugging-in-visual-studio.md)提供了 Visual Studio 调试功能的完整文档。
