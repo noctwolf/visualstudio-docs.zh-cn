@@ -99,7 +99,7 @@ ms.lasthandoff: 12/22/2017
  如果字段的源 XML 格式不正确、不是有效的 XML 文件或出现一些其他问题，则会出现“无法分析文件”错误。  
   
 ## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>新的非英语站点定义不会出现在站点创建页在部署后  
- 创建和使用非英语版本的部署站点定义后[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](即的区域设置版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，则**SharePoint 自定义**选项卡不显示在**模板选择**框并且新的站点模板不显示在**新建 SharePoint 网站**页。  
+ 创建和使用非英语版本的部署站点定义后[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (即的区域设置版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，则**SharePoint 自定义**选项卡不显示在**模板选择**框并且新的站点模板不显示在**新建 SharePoint 网站**页。  
   
 ### <a name="error-message"></a>错误消息  
  无。  

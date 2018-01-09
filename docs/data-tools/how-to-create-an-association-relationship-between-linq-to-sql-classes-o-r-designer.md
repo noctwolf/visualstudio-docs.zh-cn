@@ -25,7 +25,7 @@ ms.lasthandoff: 12/22/2017
 使用时，您必须选择父类和子类**关联编辑器**对话框创建关联。 父类是包含主键的实体类；子类是包含外键的实体类。 例如，如果创建映射到 Northwind Customers 和 Orders 表的实体类，则 Customer 类将是父类，而 Order 类将是子类。  
   
 > [!NOTE]
->  将表从**服务器资源管理器**/**数据库资源管理器**到[!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)]([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)])，将自动创建基于现有关联数据库中的外键关系。  
+>  将表从**服务器资源管理器**/**数据库资源管理器**到[!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)])，将自动创建基于现有关联数据库中的外键关系。  
 
 ## <a name="association-properties"></a>关联属性
 当您在 O/R 设计器中选择该关联时创建关联之后，有一些可配置属性中的**属性**窗口。 （关联是用相关类之间的连线表示的。）下表提供对关联的属性的说明。  
