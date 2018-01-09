@@ -20,7 +20,7 @@
 ### [Django Web 项目模板](template-django.md)
 ### [Azure 云服务模板](template-azure-cloud-service.md)
 ## [用于 Python 的 Azure SDK](azure-sdk-for-python.md)
-# 操作说明
+# 操作指南
 ## [编辑代码](code-editing.md)
 ### [设置代码格式](code-formatting.md)
 ### [重构代码](code-refactoring.md)

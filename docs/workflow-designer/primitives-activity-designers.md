@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: d8f4c4763d40583f02aa97eaea066db5de2a7479
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c691e4dc60afca2d56a63af8572d75b02e970e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="primitives-activity-designers"></a>基元活动设计器
 各基元活动设计器用于创建和配置 <xref:System.Activities.Statements> 命名空间中的多种活动，如 Assign 和 Delay。 本节中包含的主题介绍如何使用 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 活动和模板设计器。  
@@ -50,5 +51,5 @@ ms.lasthandoff: 10/27/2017
   
  [错误处理](../workflow-designer/error-handling-activity-designers.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用活动设计器](../workflow-designer/using-the-activity-designers.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c82476b9d6fd632ed67acbeeab147743ea16cb40
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d1159ccc35f47b34069461b27239173c1860b18a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>在旧语言服务中自定义文档属性
 文档属性可以显示在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**属性**窗口。 编程语言通常没有与单独的源代码文件关联的属性。 但是，XML 支持会影响编码、 架构和样式表的文档属性。  
@@ -154,7 +155,7 @@ namespace TestLanguagePackage
  由于通常特定于源文件文档属性，值存储在源文件本身。 这需要支持的语言分析器或扫描仪来定义这些属性。 例如，XML 文档的属性存储在根节点上。 根节点上的值被修改时**属性**窗口值发生更改，并在编辑器中更新的根节点。  
   
 ### <a name="example"></a>示例  
- 此示例将存储"Filename" "Description"中的源文件的前两个行作为嵌入到特殊的注释标头中的属性：  
+ 此示例将存储"Filename"和"Description"中的源文件的前两个行作为嵌入到特殊的注释标头中的属性：  
   
 ```  
 //!Filename = file.testext  
@@ -400,5 +401,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [旧语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)
