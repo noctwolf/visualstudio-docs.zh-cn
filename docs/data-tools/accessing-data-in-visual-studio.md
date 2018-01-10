@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 3e147307514656a693d47d24a8017b1b4ebbf182
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c3777249948ba4be917de4ec6c139e7a15bce0a7
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>访问 Visual Studio 中的数据
 
@@ -140,7 +140,7 @@ ms.lasthandoff: 12/22/2017
 [WCF Data Services 4.5](/dotnet/framework/data/wcf/index)  
 介绍如何使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]部署 web 或 intranet 上的数据服务实现[开放数据协议 (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)。
 
-[Office 解决方案中的数据](/office-dev/office-dev/data-in-office-solutions)  
+[Office 解决方案中的数据](../vsto/data-in-office-solutions.md)  
 包含指向这些主题介绍了数据在 Office 解决方案中的工作方式。 这包括有关面向架构的编程、 数据缓存和服务器端数据访问的信息。
 
 [LINQ（语言集成查询）](/dotnet/csharp/linq/)  
