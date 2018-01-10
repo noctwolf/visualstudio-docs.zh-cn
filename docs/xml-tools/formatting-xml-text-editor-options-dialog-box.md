@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5c15327837dbcd2fb1fe795a1e9891451df22e4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a4d6de24a75b5a08820878bc74633c02ab4118f
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>格式化，XML，文本编辑器，“选项”对话框
 使用此对话框可以指定“XML 编辑器”的格式化设置。 你可以访问**选项**对话框**工具**菜单。  
@@ -35,12 +35,12 @@ ms.lasthandoff: 12/22/2017
  **将每个属性在其自己的行上对齐**  
  使第二个以及后续的属性纵向对齐，以便与第一个属性的缩进匹配。 以下 XML 文本是如何对齐属性的示例。  
   
-```  
+```xml
 <item id = "123-A"  
       name = "hammer"  
       price = "9.95">  
 </item>  
-```  
+```
   
 ## <a name="auto-reformat"></a>自动重新格式化  
  **在从剪贴板粘贴时**  
@@ -55,12 +55,12 @@ ms.lasthandoff: 12/22/2017
   
  如果元素中包含文本和标记的混合，将认为内容是混合内容。 以下是包含混合内容的元素示例。  
   
-```  
+```xml
 <dir>c:\data\AlphaProject\  
   <file readOnly="false">test1.txt</file>  
   <file readOnly="false">test2.txt</file>  
 </dir>  
-```  
+```
   
 ## <a name="see-also"></a>请参阅  
  [XML 文档属性，属性窗口](../xml-tools/xml-document-properties-properties-window.md)   

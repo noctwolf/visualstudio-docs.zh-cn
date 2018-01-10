@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 77e0557e57831348d0736ca8d8d25189c631e010
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="schema-cache"></a>架构缓存
 “XML 编辑器”提供的架构缓存位于 %InstallRoot%\Xml\Schemas 目录。 架构缓存适用于计算机上的所有用户，并且包含用于智能感知和 XML 文档验证的标准 XML 架构。  
@@ -54,13 +54,13 @@ ms.lasthandoff: 12/22/2017
   
  “XML 编辑器”还支持在架构缓存目录中包含任意数目的架构编录文件。 架构编录可以指向您始终希望编辑器了解的其他架构位置。 catalog.xsd 文件定义编录文件的格式并包含在架构缓存目录中。 catalog.xml 文件是默认的编录，包含指向 %InstallDir% 中的其他架构的链接。 以下是 catalog.xml 文件的示例：  
   
-```  
+```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">  
   <Schema href="%InstallDir%/help/schemas/Favorites.xsd" targetNamespace="urn:Favorites-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/Links.xsd" targetNamespace="urn:Links-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/MyHelp.xsd" targetNamespace="urn:VSHelp-Schema"/>  
 </SchemaCatalog>  
-```  
+```
   
  `href` 属性可以是指向架构的任何文件路径或 http URL。 文件路径可以相对于编录文档。 下列变量（由 %% 分隔）可被编辑器识别，并将在路径中展开：  
   
@@ -82,25 +82,25 @@ ms.lasthandoff: 12/22/2017
   
 编录文档可以包含 `Catalog` 元素，该元素指向其他编录。 可以使用 `Catalog` 元素指向您的团队或公司共享的中心编录或与业务伙伴共享的联机编录。 `href` 属性是其他编录的文件路径或 http URL。 以下是 `Catalog` 元素的示例：  
   
-```  
+```xml
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>  
-```  
+```
   
  编录还可以控制使用特殊的 `Association` 元素将架构与 XML 文档关联的方式。 此元素将没有目标命名空间的架构与特定的文件扩展名关联，由于 XML 编辑器不会对没有 `targetNamespace` 属性的架构进行任何自动关联，因此该元素会很有用。 在以下示例中，`Association` 元素将 dotNetConfig 架构与所有具有“config”文件扩展名的文件关联。  
   
-```  
+```xml
 <Association extension="config" schema="%InstallDir%/xml/schemas/dotNetConfig.xsd"/>  
-```  
+```
   
 ## <a name="localized-schemas"></a>本地化架构  
  在很多情况下，文件不包含本地化架构的项。 您可以向指向本地化架构目录的 catalog.xml 文件中添加其他项。  
   
  在下面的示例中创建了一个新的 `Schema` 元素，该元素使用 %LCID% 变量指向本地化架构。  
   
-```  
+```xml
 <Schema href="%InstallRoot%/Common7/IDE/Policy/Schemas/%LCID%/TDLSchema.xsd"  
   targetNamespace="http://www.microsoft.com/schema/EnterpriseTemplates/TDLSchema"/>  
-```  
+```
   
 ## <a name="changing-the-location-of-the-schema-cache"></a>更改架构缓存的位置  
  你可以自定义使用架构缓存的位置**杂项**选项页。 如果有包含喜欢的架构的目录，可以将编辑器配置为转为使用这些架构。  
