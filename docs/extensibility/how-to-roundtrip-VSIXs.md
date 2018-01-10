@@ -13,11 +13,11 @@ author: willbrown
 ms.author: willbrown
 manager: justinclareburt
 ms.workload: willbrown
-ms.openlocfilehash: e6ce654e158fbfbdaa3692d37f638e72085f8c4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b51673daa7a8c3526ad7de7f7cfdeac6a91d3b4b
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>如何： 使扩展与 Visual Studio 2017 和 Visual Studio 2015 兼容
 
@@ -169,7 +169,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 例如:
 
 ```xml
-<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201… Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
 * 添加到的其他条件语句`<import>`具有 Microsoft.VisualStudio.Sdk.BuildTasks.14.0 的标记。  执行此操作的方法是插入`'$(VisualStudioVersion)' == '14.0' And`在条件语句的前面。 这些语句将出现在页眉和页脚 csproj 文件。
@@ -177,7 +177,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 例如:
 
 ```xml
-<Import Project="packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0… Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
 * 添加到的其他条件语句`<Error>`Microsoft.VSSDK.BuildTools 引用的标记。  执行此操作的方法是插入`'$(VisualStudioVersion)' != '14.0' And`在条件语句的前面。 这些语句将出现在 csproj 文件尾。
@@ -185,7 +185,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 例如:
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…/>
+<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
 * 添加到的其他条件语句`<Error>`具有 Microsoft.VisualStudio.Sdk.BuildTasks.14.0 的标记。  执行此操作的方法是插入`'$(VisualStudioVersion)' == '14.0' And`在条件语句的前面。 这些语句将出现在 csproj 文件尾。
@@ -193,7 +193,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 例如:
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…/>
+<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
 * 保存 csproj 文件并将其关闭。
