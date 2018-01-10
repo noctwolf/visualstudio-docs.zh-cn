@@ -13,11 +13,11 @@ author: ghogen
 ms.author: ghogen
 manager: ghogen
 ms.workload: xamarin
-ms.openlocfilehash: f744bd9535a4946570267de027e7096b41d274e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b72c0a0df85c4c37745faaec4e9d2da269e6c9cd
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>适用于 Xamarin 应用的应用程序生命周期管理 (ALM)
 借助 Xamarin，你可以使用 C#、.NET 和 Visual Studio 生成面向 Android、iOS 和 Windows 的跨平台移动应用。 Xamarin 允许在平台间共享大部分代码，只有一小部分需要特定于平台。 有关 Xamarin 的详细信息，请参阅 [Visual Studio 和 Xamarin](../cross-platform/visual-studio-and-xamarin.md)。  
@@ -80,9 +80,8 @@ ms.lasthandoff: 12/22/2017
 |生成带有前脚本和后脚本的定义|是||  
 |包括封闭签入的持续集成|是|仅在 Git 用于拉取请求（而非签入）时，封闭签入才适用于 TFVC。|  
   
-## <a name="testing"></a>正在测试  
- 参考链接：**[测试应用程序](/devops-test-docs/test/test-apps-early-and-often)**  
-  
+## <a name="testing"></a>正在测试
+
 |功能|通过 Xamarin 提供支持|其他注释|  
 |-------------|----------------------------|-------------------------|  
 |规划测试、创建测试用例和组织测试套件|是||  

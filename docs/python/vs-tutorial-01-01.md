@@ -1,7 +1,7 @@
 ---
 title: "在 Visual Studio 中使用 Python 步骤 1 | Microsoft Docs"
 ms.custom: 
-ms.date: 09/26/2017
+ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9c80eb8b09a7bbcfc813c70d548f9762422262ed
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>在 Visual Studio 中使用 Python
 
@@ -51,7 +51,7 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
 
     注意 Visual Studio 中的 Python 支持如何包含大量项目模板，包括使用 Bottle、Flask 和 Django 框架的 Web 应用程序。 但为了便于演示，我们以空项目开始。
 
-1. 选择“Python 应用程序”模板，为项目指定名称并选择“确定”。 
+1. 选择“Python 应用程序”模板，为项目指定名称并选择“确定”。
 
 1. 几分钟后，Visual Studio 会在“解决方案资源管理器”窗口 (1) 中显示项目结构。 默认代码文件在编辑器 (2) 中处于打开状态。 属性窗口 (3) 也会出现，其中显示在解决方案资源管理器中选定的任何项的附加信息（包括它在磁盘上的确切位置）。
 

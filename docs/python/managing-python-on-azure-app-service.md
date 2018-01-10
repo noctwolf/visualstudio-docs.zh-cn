@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - azure
-ms.openlocfilehash: 5ebbded093da4b3a6bb5b829628de481d43355dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>在 Azure App Service 上管理 Python
 
@@ -47,20 +47,19 @@ Azure App Service 上的可自定义 Python 支持作为一组应用服务站点
 1. 选择该扩展，接受法律条款，然后选择“确定”。
 1. 安装完成后，门户中会显示通知。
 
-
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>通过 Azure 资源管理器选择 Python 版本
 
 如果要使用 Azure 资源管理器模板部署应用服务，请将站点扩展添加为资源。 此扩展显示为一个嵌套资源，其类型为 `siteextensions`，名称来源于 [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22)。
 
 例如，添加对 `python361x64` (Python 3.6.1 x64) 的引用后，模板外观可能如下所示（省略了某些属性）：
 
-```
+```json
 "resources": [
   {
     "apiVersion": "2015-08-01",
     "name": "[parameters('siteName')]",
     "type": "Microsoft.Web/sites",
-    
+
     // ...
 
     "resources": [
@@ -99,8 +98,8 @@ Python 站点扩展安装在 `d:\home` 下服务器上的文件夹中，适合 P
 如果查看扩展路径时遇到问题，可以使用控制台手动找到它：
 
 1. 在“应用服务”页上，选择“开发工具”>“控制台”。
-2. 输入命令 `ls ../home` 或 `dir ..\home` 查看顶级扩展文件夹，例如 `Python361x64`。
-3. 输入一个类似于 `ls ../home/python361x64` 或 `dir ..\home\python361x64` 的命令，确认该文件夹包含 `python.exe` 和其他解释器文件。
+1. 输入命令 `ls ../home` 或 `dir ..\home` 查看顶级扩展文件夹，例如 `Python361x64`。
+1. 输入一个类似于 `ls ../home/python361x64` 或 `dir ..\home\python361x64` 的命令，确认该文件夹包含 `python.exe` 和其他解释器文件。
 
 ### <a name="configuring-the-fastcgi-handler"></a>配置 FastCGI 处理程序
 
@@ -126,6 +125,7 @@ FastCGI 是在请求级别工作的接口。 IIS 接收传入的连接，并将�
 ```
 
 此处定义的 `<appSettings>` 可作为环境变量供应用使用：
+
 - `PYTHONPATH` 的值可以自由扩展，但必须包括你的应用的根目录。
 - `WSGI_HANDLER` 必须指向可从你的应用导入的 WSGI 应用。
 - `WSGI_LOG` 为可选，但建议在调试应用时使用。 
@@ -172,33 +172,32 @@ HttpPlatform 模块将套接字连接直接传递到独立的 Python 进程。 �
 | 与应用捆绑 | 将包直接安装到项目中，然后将它们部署到应用服务，就如同它们是应用的一部分。 此方法可能是有效执行当前部署的最简单方法，具体取决于拥有的依赖项数量及其更新频率。 需要注意的是，这些库必须与服务器上的 Python 版本匹配，否则部署后会出现奇怪的错误。 也就是说，由于应用服务站点扩展中的 Python 版本与 python.org 上发布的版本完全相同，因此可以轻松获取兼容版本进行本地开发。 |
 | 虚拟环境 | 不支持。 相反，应使用捆绑并将 `PYTHONPATH` 环境变量设置为指向包的位置。 |
 
-
 ### <a name="azure-app-service-kudu-console"></a>Azure App Service Kudu 控制台
 
 使用 [Kudu 控制台](https://github.com/projectkudu/kudu/wiki/Kudu-console)可直接以提升的命令行访问应用服务服务器及其文件系统。 这是一个重要的调试工具，同时也支持 CLI 操作（如安装包）。
 
 1. 选择“开发工具”>“高级工具”，然后选择“转到”，以便从 Azure 门户上的“应用服务”页打开 Kudu。 此操作导航到与基应用服务 URL（插入的 `.scm` 除外）相同的 URL。 例如，如果基 URL 是 `https://vspython-test.azurewebsites.net/`，Kudu 则位于 `https://vspython-test.scm.azurewebsites.net/`（其中可以添加书签）：
 
-    ![Azure App Service 的 Kudu 控制台](media/python-on-azure-console01.png)    
+    ![Azure App Service 的 Kudu 控制台](media/python-on-azure-console01.png)
 
-2. 选择“调试控制台”>“CMD”以打开控制台，在其中可导航到 Python 安装，并查看现已有哪些库。
+1. 选择“调试控制台”>“CMD”以打开控制台，在其中可导航到 Python 安装，并查看现已有哪些库。
 
-3. 安装单个包：
+1. 安装单个包：
 
     a. 导航到想在其中安装包的 Python 安装文件夹，如 `d:\home\python361x64`。
-     
+
     b. 使用 `python.exe -m pip install <package_name>` 安装包。
-    
+
     ![示例：通过 Azure App Service 的 Kudu 控制台安装 bottle](media/python-on-azure-console02.png)
-    
-4. 如果已将应用的 `requirements.txt` 部署到服务器，请按如下方式安装所有这些要求：
+
+1. 如果已将应用的 `requirements.txt` 部署到服务器，请按如下方式安装所有这些要求：
 
     a. 导航到想在其中安装包的 Python 安装文件夹，如 `d:\home\python361x64`。
-    
+
     b. 运行 `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt` 命令。
-    
+
     建议使用 `requirements.txt`，因为这样可以轻松在本地和服务器上重新生成完全相同的包集。 只需记住在对 `requirements.txt` 进行任何更改后再访问控制台，然后再次运行该命令。
-    
+
 > [!Note]
 > 应用服务上没有 C 编译器，因此需要为任何包含本机扩展模块的包安装该系统。 许多常用包本身附带滚轮。 对于不附带滚轮的包，请在本地开发计算机上使用 `pip wheel <package_name>`，然后将滚轮上传到站点。 有关示例，请参阅[管理所需的包](python-environments.md#managing-required-packages)
 
@@ -213,7 +212,6 @@ HttpPlatform 模块将套接字连接直接传递到独立的 Python 进程。 �
 }
 ```
 
-有关命令和身份验证的信息，请参阅 [Kudu 文档](https://github.com/projectkudu/kudu/wiki/REST-API)。 
+有关命令和身份验证的信息，请参阅 [Kudu 文档](https://github.com/projectkudu/kudu/wiki/REST-API)。
 
-还可通过 Azure CLI 使用 `az webapp deployment list-publishing-profiles` 命令查看凭据（请参阅 [az webapp deployment](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles)（az webapp 部署））。 [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) 上还提供用于发布 Kudu 命令的帮助程序库。
-
+还可通过 Azure CLI 使用 `az webapp deployment list-publishing-profiles` 命令查看凭据（请参阅 [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az_webapp_deployment_list_publishing_profiles)（az webapp 部署））。 [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) 上还提供用于发布 Kudu 命令的帮助程序库。

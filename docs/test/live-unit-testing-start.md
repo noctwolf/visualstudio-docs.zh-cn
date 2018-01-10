@@ -11,11 +11,11 @@ helpviewer_keywords:
 author: rpetrusha
 ms.author: ronpet
 ms.workload: dotnet
-ms.openlocfilehash: b0d4726bc29ebbb6f90fde5e7817ec2fb596177c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9034fbbffee2b3883f15be0d724f00cafad8126a
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio 中的 Live Unit Testing 入门
 
@@ -56,7 +56,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 1. 在“添加新项目”对话框中，选择 C# 节点，然后选择“.NET Standard”。 
 
    > [!NOTE]
-   > 由于我们的库是针对 .NET Standard，而不是特定的 .NET 实现，因此可以从支持此 .NET Standard 的任何 .NET 实现对其进行调用。 有关详细信息，请参阅 [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard)。
+   > 由于我们的库是针对 .NET Standard，而不是特定的 .NET 实现，因此可以从支持此 .NET Standard 的任何 .NET 实现对其进行调用。 有关详细信息，请参阅 [.NET Standard](/dotnet/standard/net-standard)。
 
 1. 在右窗格中选择“类库(.NET Standard)”模板，然后在“名称”文本框中输入 `StringLibrary`，如下图所示：
 
@@ -84,7 +84,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 1. 在“添加新项目”对话框中，选择 Visual Basic 节点，然后选择“.NET Standard”。 
 
    > [!NOTE]
-   > 由于我们的库是针对 .NET Standard，而不是特定的 .NET 实现，因此可以从支持此 .NET Standard 的任何 .NET 实现对其进行调用。 有关详细信息，请参阅 [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard)。
+   > 由于我们的库是针对 .NET Standard，而不是特定的 .NET 实现，因此可以从支持此 .NET Standard 的任何 .NET 实现对其进行调用。 有关详细信息，请参阅 [.NET Standard](/dotnet/standard/net-standard)。
 
 1. 在右窗格中选择“类库(.NET Standard)”模板，然后在“名称”文本框中输入 `StringLibrary`，如下图所示：
 
@@ -104,7 +104,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
      
       - 如果字符串包含嵌入的空格字符，则 `HasEmbeddedSpaces` 返回 `true`；否则返回 `false`。
     
-1. 右键单击“解决方案资源管理器”中的 StringLibrary 项目，然后选择“属性”。 在“应用程序”选项卡中，删除“根命名空间”文本框中的文本，如下图所示。 根命名空间由源代码中的 [Namespace 语句](https://docs.microsoft.com/dotnet/visual-basic/language-reference/statements/namespace-statement)定义。
+1. 右键单击“解决方案资源管理器”中的 StringLibrary 项目，然后选择“属性”。 在“应用程序”选项卡中，删除“根命名空间”文本框中的文本，如下图所示。 根命名空间由源代码中的 [Namespace 语句](/dotnet/visual-basic/language-reference/statements/namespace-statement)定义。
 
    ![Visual Basic 项目的“项目属性”对话框](./media/lut-start/vb-properties.png)
  
@@ -250,7 +250,7 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
 
-1. 在调用 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) 方法之后，立即添加以下代码来修改 `DirectCallWithNullOrEmpty` 方法。
+1. 在调用 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) 方法之后，立即添加以下代码来修改 `DirectCallWithNullOrEmpty` 方法。
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#2)]
 
@@ -267,7 +267,7 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
 
-1. 在调用 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) 方法之后，立即添加以下代码来修改 `DirectCallWithNullOrEmpty` 方法。
+1. 在调用 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) 方法之后，立即添加以下代码来修改 `DirectCallWithNullOrEmpty` 方法。
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#2)]
 
@@ -308,7 +308,7 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
     
 1. 选择“调试选定的测试”，调试失败的测试。 
  
-1. Visual Studio 在调试模式下执行测试。 测试将数组中的每个字符串分配给名为 `phrase` 的变量，并将其传递给 `HasEmbeddedSpaces` 方法。 程序执行暂停，并在断言表达式第一次为 `false` 时调用调试程序。 下图显示了 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) 方法调用中的意外值导致的异常对话框。  
+1. Visual Studio 在调试模式下执行测试。 测试将数组中的每个字符串分配给名为 `phrase` 的变量，并将其传递给 `HasEmbeddedSpaces` 方法。 程序执行暂停，并在断言表达式第一次为 `false` 时调用调试程序。 下图显示了 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) 方法调用中的意外值导致的异常对话框。  
 
    ![Live Unit Testing 异常对话框。](media/lut-start/exception-dialog-cs.png) 
  
@@ -341,7 +341,7 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
     
 1. 选择“调试选定的测试”，调试失败的测试。 
  
-1. Visual Studio 在调试模式下执行测试。 测试将数组中的每个字符串分配给名为 `phrase` 的变量，并将其传递给 `HasEmbeddedSpaces` 方法。 程序执行暂停，并在断言表达式第一次为 `false` 时调用调试程序。 下图显示了 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) 方法调用中的意外值导致的异常对话框。  
+1. Visual Studio 在调试模式下执行测试。 测试将数组中的每个字符串分配给名为 `phrase` 的变量，并将其传递给 `HasEmbeddedSpaces` 方法。 程序执行暂停，并在断言表达式第一次为 `false` 时调用调试程序。 下图显示了 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) 方法调用中的意外值导致的异常对话框。  
 
    ![Live Unit Testing 异常对话框。](media/lut-start/exception-dialog-vb.png) 
  

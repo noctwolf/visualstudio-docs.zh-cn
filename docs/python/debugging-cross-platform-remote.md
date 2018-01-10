@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 690d51ba7ec083e831bf9eba069676e38d6152ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1f682cd15f96cf4ea5c12e52d3471580129279f6
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>在 Linux 上远程调试 Python 代码
 
@@ -36,9 +36,9 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
 - 在操作系统（如 Mac OSX 或 Linux）上运行 Python 的远程计算机。
 - 该计算机防火墙上的 5678 端口（入站）处于开启状态，这是远程调试的默认设置。
 
-你可以轻松[在 Azure 中创建 Linux 虚拟机](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices)，并[使用 Windows 远程桌面访问虚拟机](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop)。 使用适用于 VM 的 Ubuntu 会非常方便，因为默认安装了 Python；否则，请查看[安装所选的 Python 解释器](python-environments.md#selecting-and-installing-python-interpreters)中的列表，获取有关其他 Python 下载位置的信息。
+你可以轻松[在 Azure 中创建 Linux 虚拟机](/azure/virtual-machines/linux/creation-choices)，并[使用 Windows 远程桌面访问虚拟机](/azure/virtual-machines/linux/use-remote-desktop)。 使用适用于 VM 的 Ubuntu 会非常方便，因为默认安装了 Python；否则，请查看[安装所选的 Python 解释器](python-environments.md#selecting-and-installing-python-interpreters)中的列表，获取有关其他 Python 下载位置的信息。
 
-有关为 Azure VM 创建防火墙规则的详细信息，请参阅[在 Azure 中使用 Azure 门户打开 VM 的端口](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal)。
+有关为 Azure VM 创建防火墙规则的详细信息，请参阅[在 Azure 中使用 Azure 门户打开 VM 的端口](/azure/virtual-machines/windows/nsg-quickstart-portal)。
 
 ## <a name="preparing-the-script-for-debugging"></a>准备调试脚本
 
@@ -132,14 +132,13 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-
 ## <a name="securing-the-debugger-connection-with-ssl"></a>使用 SSL 保护调试器连接
 
 默认情况下，仅采用机密保护 ptvsd 远程调试服务器的连接，所有数据均以纯文本形式传递。 对于更安全的连接，ptvsd 支持 SSL，可按以下方式进行设置：
 
 1. 在远程计算机上，使用 openssl 生成单独的自签名证书和密钥文件：
-    
-    ```bash
+
+    ```command
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
@@ -152,8 +151,8 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
-    
-    此外，还可以在本地计算机上的代码文件中进行相同的更改，但由于实际上并不会运行此代码，所以严格上来将，不必进行此更改。    
+
+    此外，还可以在本地计算机上的代码文件中进行相同的更改，但由于实际上并不会运行此代码，所以严格上来将，不必进行此更改。
 
 1. 在远程计算机上重启 Python 程序，使其做好调试准备。
 

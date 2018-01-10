@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: aspnet
-ms.openlocfilehash: 7c4a1e48d5e9bdbf28569656b580608a6c35034a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a742732817f926b9ea1b74b31ab97acfb9e8f4ec
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="profiling-aspnet-load-tests"></a>分析 ASP.NET 负载测试
 可以从在 ASP.NET 网站项目上运行的自动 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] Web 测试收集分析数据。 可以收集采样和层交互数据。 有关详细信息，请参阅下列主题：  
@@ -25,8 +25,6 @@ ms.lasthandoff: 12/22/2017
  [(NIB) 如何：从 Web 性能测试编辑器对 Web 应用程序运行性能会话](http://msdn.microsoft.com/en-us/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)  
   
  [如何：在 Visual Studio 中使用测试设置为负载测试配置 ASP.NET 探查器](http://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)  
-  
- [使用 Microsoft Visual Studio 运行系统测试](/devops-test-docs/test/running-automated-tests-using-microsoft-visual-studio)。  
   
 ## <a name="see-also"></a>请参阅  
  [了解采样数据值](../profiling/understanding-sampling-data-values.md)   

@@ -16,11 +16,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 011c86caae5eaa00577dcc9a5d9c372849eb28f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28f0715665fb032ac2cf78dd58be65005b1065d0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>[版本 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) 的更新内容
@@ -224,7 +224,7 @@ Visual Studio 2017 版本 15.5 提供对 Windows 10 Fall Creators Update SDK (10
 * **最佳 UWP 和 Win32** <br/>
 已通过 [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) 改善 Windows 10 平台，以便 Windows 10 能为 .NET 开发人员提供更好的使用体验，无论他们当前关注的对象是 UWP、WPF、Windows Forms 还是 Xamarin。 使用 Visual Studio 2017 版本 15.5 中新的应用打包项目类型，可为 WPF 或 Windows 窗体项目创建 Windows 应用包，正如为 UWP 项目创建那样。 打包应用程序后，便获得所有 Windows 10 应用部署权益，并可选择通过 Microsoft Store（消费者应用）或商业版和教育版 Microsoft Store 进行分发。 由于打包的应用可在桌面上访问完整的 UWP API 界面和 Win32 API，因此现在可以使用 UWP API 和 Windows 10 功能逐渐实现 WPF 和 Windows 窗体应用程序的现代化。 此外，可将 Win32 组件包括在 UWP 应用程序中，凭借各种 Win32 功能，它们将在桌面上大放光彩。 
 
-有关 UWP 的详细信息，请参阅[开发用于通用 Windows 平台 (UWP) 的应用](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)页。
+有关 UWP 的详细信息，请参阅[开发用于通用 Windows 平台 (UWP) 的应用](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)页。
 
 ## <a name="mobile-app-development"></a>移动应用开发
 ### <a name="xamarin"></a>Xamarin
@@ -271,7 +271,7 @@ Visual Studio 2017 所有版本随附：
 
 15.3 中的新增功能：Visual Studio 2017 版本 15.3 支持 .NET Core 2.0 开发。 使用 .NET Core 2.0 前需分别下载并安装 .NET Core 2.0 SDK。  
 
-有关详细信息，请参阅 [.NET Core 指南](https://docs.microsoft.com/dotnet/core/index)页。
+有关详细信息，请参阅 [.NET Core 指南](/dotnet/core/index)页。
 
 ## <a name="games-development"></a>游戏开发
 ### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity

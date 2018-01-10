@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 57bc02e04f4e30e0284bacbb98ec6bfe1defaa72
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 12/22/2017
 
 ### <a name="project-references"></a>项目引用
 
-通用 Windows 平台 (UWP) 项目可以创建对解决方案中其他 UWP 项目的引用，也可以创建对 Windows 8.1 项目或二进制文件的引用，前提是这些项目不使用 Windows 10 中已弃用的 API。 有关详细信息，请参阅 [从 Windows Runtime 8 移动到 UWP](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root)。
+通用 Windows 平台 (UWP) 项目可以创建对解决方案中其他 UWP 项目的引用，也可以创建对 Windows 8.1 项目或二进制文件的引用，前提是这些项目不使用 Windows 10 中已弃用的 API。 有关详细信息，请参阅 [从 Windows Runtime 8 移动到 UWP](/windows/uwp/porting/w8x-to-uwp-root)。
 
 如果选择将 Windows 8.1 项目重定向到 Windows 10，请参阅[移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)。
 

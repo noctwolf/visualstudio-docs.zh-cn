@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 032c6489463aaaee59b39423506f18bda82fb414
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cf97be0c7a7b5bb9d6a9d43ceeb5cd9e9334025d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-pylint-to-check-python-code"></a>使用 PyLint 检查 Python 代码
 
@@ -46,7 +46,7 @@ PyLint 文档中的[命令行选项](https://pylint.readthedocs.io/en/latest/use
 
 1. 使用命令行导航到包含 `.pyproj` 文件的项目根路径，并运行以下命令以生成已注释的配置文件：
 
-   ```bash
+   ```command
    pylint --generate-rcfile > .pylintrc
    ```
 
@@ -57,7 +57,4 @@ PyLint 文档中的[命令行选项](https://pylint.readthedocs.io/en/latest/use
 1. 保存 `.pylintrc` 文件，然后再次运行 PyLint 以查看现在禁止显示的警告。
 
 > [!Tip]
-> 若要从网络共享使用 `.pylintrc` 文件，请创建一个名为 `PYLINTRC` 的环境变量，其值为网络共享上使用 UNC 路径或映射驱动器号的文件名。 例如:
-> ```
-> PYLINTRC=\\myshare\python\.pylintrc
-> ```
+> 若要从网络共享使用 `.pylintrc` 文件，请创建一个名为 `PYLINTRC` 的环境变量，其值为网络共享上使用 UNC 路径或映射驱动器号的文件名。 例如 `PYLINTRC=\\myshare\python\.pylintrc`。

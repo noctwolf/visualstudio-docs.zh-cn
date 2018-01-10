@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - azure
-ms.openlocfilehash: a5c3d0c63ad049d641368ceb3f9ef395f243e51c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 043e720d96c021bf510047a8dc7643d057d8982d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>发布到 Azure 应用服务
 
@@ -31,10 +31,10 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 
 - [先决条件](#prerequisites)
 - [创建 Azure App Service](#create-an-azure-app-service)
-- [在 App Service 上配置 Python](#configure-python-on-app-service)
-- [发布到 App Service - Visual Studio 2017](#publish-to-app-service-visual-studio-2017)
-- [发布到 App Service - Visual Studio 2015](#publish-to-app-service-visual-studio-2015)
-- [在 App Service 上进行远程调试](#remote-debugging-on-app-service)
+- [在 App Service 上配置 Python](#configure-python-on-azure-app-service)
+- [发布到 App Service - Visual Studio 2017](#publish-to-app-service---visual-studio-2017)
+- [发布到 App Service - Visual Studio 2015](#publish-to-app-service---visual-studio-2015)
+- [在 App Service 上进行远程调试](#remote-debugging-on-azure-app-service)
 
 > [!Note]
 > 有关 Visual Studio 2015 与 Visual Studio 2017 之间的变化的背景信息，请参阅博客文章 [Publish to Azure in Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/)（在 Visual Studio 2017 中发布到 Azure）。
@@ -53,10 +53,10 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 
 发布到 Azure 需要一个目标 App Service。 为此，可使用 Azure 订阅创建一个 App Service，也可使用临时站点。
 
-如果还没有订阅，则以[免费的完整 Azure 帐户](https://azure.microsoft.com/en-us/free/)入手，该帐户提供丰厚的 Azure 服务信用额度。 此外，请考虑注册 [Visual Studio Dev Essentials](https://azure.microsoft.com/en-us/pricing/member-offers/vs-dev-essentials/)，每个月提供 25 美元信用额度，为期一年。
+如果还没有订阅，则以[免费的完整 Azure 帐户](https://azure.microsoft.com/free/)入手，该帐户提供丰厚的 Azure 服务信用额度。 此外，请考虑注册 [Visual Studio Dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/)，每个月提供 25 美元信用额度，为期一年。
 
 > [!Tip]
-> 虽然 Azure 要求提供信用卡来验证帐户，但不会向该卡收费。 用户也可以将[支出限制](https://docs.microsoft.com/azure/billing/billing-spending-limit)设置为等于可用信用额度，确保不会被收取额外的费用。 此外，Azure 还提供应用服务计划免费层，非常适合下一部分所述的简单测试应用。
+> 虽然 Azure 要求提供信用卡来验证帐户，但不会向该卡收费。 用户也可以将[支出限制](/azure/billing/billing-spending-limit)设置为等于可用信用额度，确保不会被收取额外的费用。 此外，Azure 还提供应用服务计划免费层，非常适合下一部分所述的简单测试应用。
 
 ### <a name="using-a-subscription"></a>使用订阅
 
@@ -88,7 +88,7 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 
 从 Visual Studio 2017 发布到 Azure App Service 时，仅将项目中的文件复制到服务器。 因此，必须创建所需的文件才能配置服务器环境。
 
-1. 在 Visual Studio 的“解决方案资源管理器”中，右键单击项目，选择*“添加”>“新项...”。在随即出现的对话框中，选择“Azure web.config (Fast CGI)”模板并选择“确定”。 这会在项目根目录中创建 `web.config` 文件。 
+1. 在 Visual Studio 的“解决方案资源管理器”中，右键单击项目，选择*“添加”>“新项...”。在随即出现的对话框中，选择“Azure web.config (Fast CGI)”模板并选择“确定”。 这会在项目根目录中创建 `web.config` 文件。
 
 1. 修改 `web.config` 中的 `PythonHandler` 条目，使路径与服务器上安装的 Python 相匹配。 例如，对于 Python 3.6.1 x64，该条目应如下所示：
 
@@ -164,7 +164,7 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 
     c. 使用 Kudu 控制台对应用的 `requirements.txt` 文件中列出的所有程序包进行升级：导航到 `web.config` 中使用的相同 Python 文件夹（比如 `/home/python361x64`），并运行 [Kudu 控制台](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)部分中所述的以下命令：
 
-    ```
+    ```command
     python -m pip install --upgrade -r /home/site/wwwroot/requirements.txt
     ```
 
@@ -188,9 +188,9 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>发布到 App Service - Visual Studio 2015
 
 > [!Note] 
-> 在 [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)（Visual Studio Python 教程：生成网站，youtube.com，3 分 10 秒）上可找到此过程的简短视频。 
+> 在 [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)（Visual Studio Python 教程：生成网站，youtube.com，3 分 10 秒）上可找到此过程的简短视频。
 
-1. 在“解决方案资源管理器”中，右键单击项目，选择“发布”。 
+1. 在“解决方案资源管理器”中，右键单击项目，选择“发布”。
 
 1. 在“发布”对话框中，选择“Microsoft Azure 应用服务”：
 
@@ -226,4 +226,4 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 
 而使用 Visual Studio 2017 时，会将这些组件直接添加到项目中。 在“解决方案资源管理器”中右键单击项目，选择“添加”>“新项...”，然后选择“Azure 远程调试 web.config”模板。 项目中会出现调试 `web.debug.config` 文件和 `ptvsd` 工具文件夹。
 
-将这些文件部署到服务器（使用 Visual Studio 2015 时自动部署；使用 Visual Studio 2017 时在下一次发布时部署）后，可以按照 [Azure 远程调试](https://docs.microsoft.com/visualstudio/python/debugging-azure-remote)相关说明操作。
+将这些文件部署到服务器（使用 Visual Studio 2015 时自动部署；使用 Visual Studio 2017 时在下一次发布时部署）后，可以按照 [Azure 远程调试](debugging-azure-remote.md)相关说明操作。

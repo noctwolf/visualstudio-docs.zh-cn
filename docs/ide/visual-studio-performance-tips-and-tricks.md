@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 519bb7b70737e4c3e2d6e80f19a056b4cd385980
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -71,7 +71,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
     要禁用“诊断工具”，请启动一个调试会话，并选择“工具”>“选项”>“启用诊断工具”，然后取消选择该选项。
 
-    有关详细信息，请参阅[分析工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)。
+    有关详细信息，请参阅[分析工具](../profiling/profiling-tools.md)。
 
 ## <a name="disable-tools-and-extensions"></a>禁用工具和扩展
 某些工具或扩展可能会关闭以提高性能。

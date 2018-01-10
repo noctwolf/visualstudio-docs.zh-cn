@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Tools for Apache Cordova | Microsoft Docs
-redirect_url: https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/
+redirect_url: /visualstudio/cross-platform/tools-for-cordova/
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -13,11 +13,11 @@ author: ghogen
 ms.author: ghogen
 manager: ghogen
 ms.workload: cordova
-ms.openlocfilehash: 0df91521f768a2389655339472c6d4a896347053
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2050e97f9f43aa96ae85512c7a3b7e1de0e3c378
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools for Apache Cordova
 生成可在 iOS、Android 和 Windows 设备上运行的应用，并共享近 100% 的代码。 使用你喜爱的 Web 技术生成这些应用。 Apache Cordova 让你能够从本机访问设备功能（如手机上的照相机），并且最棒的是它不收取任何费用。 Visual Studio 添加了这些附加程序，可让你更轻松地生成应用：  

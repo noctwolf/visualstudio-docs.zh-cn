@@ -19,15 +19,15 @@ ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
 ms.workload: kaseyu
-ms.openlocfilehash: 1eae2ecb271fd0af411da9859091f82df7913b6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1eaef82dd904c867510770a1850d5893434a78e1
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 编码约定设置
 
-在 Visual Studio 2017 中，通过使用 [EditorConfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options) 文件，可在基本代码中定义和维护一致的代码样式。 EditorConfig 包括多个核心格式设置属性，如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，还可使用 EditorConfig 文件配置 .NET 编码约定设置。 通过 EditorConfig 文件，可以启用或禁用单个 .NET 编码约定，并可通过严重级别配置强制实施约定的程度。 若要深入了解如何使用 EditorConfig 强制实施基本代码一致性，请参阅[创建可移植的自定义编辑器设置](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options)。 还可将 [.NET 编译器平台的 .editorconfig 文件](https://github.com/dotnet/roslyn/blob/master/.editorconfig)视作示例。
+在 Visual Studio 2017 中，通过使用 [EditorConfig](../ide/create-portable-custom-editor-options.md) 文件，可在基本代码中定义和维护一致的代码样式。 EditorConfig 包括多个核心格式设置属性，如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，还可使用 EditorConfig 文件配置 .NET 编码约定设置。 通过 EditorConfig 文件，可以启用或禁用单个 .NET 编码约定，并可通过严重级别配置强制实施约定的程度。 若要深入了解如何使用 EditorConfig 强制实施基本代码一致性，请参阅[创建可移植的自定义编辑器设置](../ide/create-portable-custom-editor-options.md)。 还可将 [.NET 编译器平台的 .editorconfig 文件](https://github.com/dotnet/roslyn/blob/master/.editorconfig)视作示例。
 
 有三种受支持的 .NET 编码约定类别：
 

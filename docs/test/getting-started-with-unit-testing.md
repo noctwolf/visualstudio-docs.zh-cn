@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: unit testing, create unit test plans
-ms.assetid: 2171CD69-FBB1-4994-9DCC-3BFFDFD26662
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bfb37b6ea2c448d0243f72857de0a29fa2d20c87
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e6789c3a8ddb9b0aa317df0d2362d39946069cbd
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="get-started-with-unit-testing"></a>单元测试入门
 
@@ -92,21 +91,21 @@ ms.lasthandoff: 12/22/2017
 <a name="intellitest"></a>
 ## <a name="generate-unit-tests-with-intellitest"></a>使用 IntelliTest 生成单元测试
 
-当你运行 IntelliTest 时，你可轻松看到哪些测试会失败，并可添加任何必要的代码来修复它们。 你可选择要保存到测试项目中的已生成测试，以提供回归套件。 当你更改代码时，重新运行 IntelliTest，以使生成的测试与你的代码更改同步。 若要了解如何操作，请参阅[使用 IntelliTest 为你的代码生成单元测试](https://docs.microsoft.com/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest)。
+当你运行 IntelliTest 时，你可轻松看到哪些测试会失败，并可添加任何必要的代码来修复它们。 你可选择要保存到测试项目中的已生成测试，以提供回归套件。 当你更改代码时，重新运行 IntelliTest，以使生成的测试与你的代码更改同步。 若要了解如何操作，请参阅[使用 IntelliTest 为你的代码生成单元测试](../test/generate-unit-tests-for-your-code-with-intellitest.md)。
 
 ![使用 IntelliTest 生成单元测试](media/intellitest.png)
 
 <a name="unit-tests"></a>
 ## <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
-使用测试资源管理器从 Visual Studio 或第三方单元测试项目中运行单元测试、将测试分组到类别中、筛选测试列表以及创建、保存和运行测试的播放列表。 你还可以调试测试并分析测试性能和代码覆盖率。 若要了解如何操作，请参阅[使用测试资源管理器运行单元测试](https://docs.microsoft.com/visualstudio/test/run-unit-tests-with-test-explorer)。
+使用测试资源管理器从 Visual Studio 或第三方单元测试项目中运行单元测试、将测试分组到类别中、筛选测试列表以及创建、保存和运行测试的播放列表。 你还可以调试测试并分析测试性能和代码覆盖率。 若要了解如何操作，请参阅[使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)。
 
 ![使用测试资源管理器运行单元测试](media/testexplorer.png)
 
 <a name="code-coverage"></a>
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用代码覆盖率确定所测试的代码量
 
-若要确定正在由编码的测试（例如单元测试）实际进行测试的项目代码的比例，则可以使用 Visual Studio 的代码覆盖率功能。 若要有效防止 Bug，测试应作用于或“覆盖”你的大部分代码。 若要了解如何操作，请参阅[使用代码覆盖率确定所测试的代码量](https://docs.microsoft.com/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)。
+若要确定正在由编码的测试（例如单元测试）实际进行测试的项目代码的比例，则可以使用 Visual Studio 的代码覆盖率功能。 若要有效防止 Bug，测试应作用于或“覆盖”你的大部分代码。 若要了解如何操作，请参阅[使用代码覆盖率确定所测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
 
 ![使用代码覆盖率确定所测试的代码量](media/codecoverage.png)
 

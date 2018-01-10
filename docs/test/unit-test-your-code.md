@@ -11,16 +11,15 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
-caps.latest.revision: "62"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a60e3236769cbaf35a9b232629834a8b8d52a852
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a70433a811ad8cf45bb44b12c2971c90c8f82ff2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="unit-test-your-code"></a>单元测试代码
 通过单元测试，开发人员和测试人员可以快速查找 [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]、[!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] 和 [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] 项目中各个类的方法中的逻辑错误。  
@@ -55,15 +54,6 @@ ms.lasthandoff: 12/22/2017
 |**扩展单元测试类型：**可以向可能不在单元测试框架内的测试添加功能。 例如，可以添加一个指定某个测试是否应以普通用户身份运行的测试属性。 也可以扩展框架，将行特性添加到某个方法并在测试内使用该行中的数据。|有关如何扩展单元测试框架的示例代码，请参见以下 [Microsoft 网站](http://go.microsoft.com/fwlink/?LinkId=185591)。|  
 |**设置测试选项：**例如，可以指定测试结果的存储位置。|[使用 .runsettings 文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
-## <a name="related-tasks"></a>相关任务  
- [在 Microsoft 测试管理器中查看测试结果](http://msdn.microsoft.com/en-us/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
-  
- 介绍测试结果及其处理方法，包括如何查看、保存和删除它们。  
-  
- [使用 Microsoft Visual Studio 运行系统测试](/devops-test-docs/test/running-automated-tests-using-microsoft-visual-studio)  
-  
- 提供指向关于使用 Visual Studio 而不是使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]来运行自动测试的信息的链接。  
-  
 ## <a name="reference"></a>参考  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
  介绍 UnitTesting 命名空间，该命名空间提供支持单元测试的特性、异常、断言和其他类。  
@@ -85,6 +75,6 @@ ms.lasthandoff: 12/22/2017
 ### <a name="reference"></a>参考  
  [Content Index for Unit Tests](http://go.microsoft.com/fwlink/?LinkID=254719)（单元测试的内容索引）  
   
-## <a name="see-also"></a>请参阅  
- [提高代码质量](/visualstudio/test/improve-code-quality)   
- [测试应用程序](/devops-test-docs/test/test-apps-early-and-often)
+## <a name="see-also"></a>请参阅
+
+[提高代码质量](/visualstudio/test/improve-code-quality)

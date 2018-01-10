@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
-caps.latest.revision: "30"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4cf5eac9600be44405142666e1f94408c44b0a13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 SharePoint 2010 应用程序
 通过在 SharePoint 应用程序中包含编码的 UI 测试，您可以验证整个应用程序（包括其 UI 控件）是否正常工作。 编码的 UI 测试还可以验证 UI 中的值和逻辑。  
@@ -144,10 +143,10 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>论坛  
  [Visual Studio ALM + Team Foundation Server 博客](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
-## <a name="see-also"></a>请参阅  
- [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
- [SharePoint 2010 和 2013 应用程序的 Web 性能和负载测试](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
- [创建 SharePoint 解决方案](/office-dev/office-dev/create-sharepoint-solutions)   
- [验证和调试 SharePoint 代码](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
- [生成和调试 SharePoint 解决方案](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [分析 SharePoint 应用程序的性能](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
+## <a name="see-also"></a>请参阅
+
+[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)  
+[创建 SharePoint 解决方案](/office-dev/office-dev/create-sharepoint-solutions)   
+[验证和调试 SharePoint 代码](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
+[生成和调试 SharePoint 解决方案](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
+[分析 SharePoint 应用程序的性能](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
