@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 1215c075c1c38bb742f799948929d2f301750555
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="python-web-project-templates"></a>Python Web 项目模板
 
@@ -68,13 +68,12 @@ Microsoft Azure 云服务支持 `requirements.txt` 文件。 详见 [Azure 云�
 “Bottle Web 项目”模板包括执行必要配置的 Boilerplate 代码。 导入的 Bottle 应用可能不包含此代码，但在这种情况下，以下设置将使用已安装的 `bottle` 模块启动应用：
 
 - **运行服务器命令**组：
-
-    - **命令**：`bottle`（模块）
-    - **参数**：`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **命令**：`bottle`（模块）
+  - **参数**：`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - **调试服务器命令**组：
-    - **命令**：`bottle`（模块）
-    - **参数**：`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **命令**：`bottle`（模块）
+  - **参数**：`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 使用 Visual Studio 进行调试时，不建议使用 `--reload` 选项。
 
@@ -83,12 +82,11 @@ Microsoft Azure 云服务支持 `requirements.txt` 文件。 详见 [Azure 云�
 Pyramid 应用当前最好使用 `pcreate` 命令行工具进行创建。 创建应用后，可使用[基于现有 Python 代码](python-projects.md#creating-a-project-from-existing-files)模板将其导入。 这样操作后，选择“通用 Web 项目”自定义来配置选项。 这些设置假设将 Pyramid 安装到 `..\env` 处的虚拟环境。
 
 - **调试**组：
-
-    - **服务器端口**：6543（或 .ini 文件中配置的任何内容）
+  - **服务器端口**：6543（或 .ini 文件中配置的任何内容）
 
 - **运行服务器命令**组：
-    - 命令：`..\env\scripts\pserve-script.py`（脚本）
-    - 参数：`Production.ini`
+  - 命令：`..\env\scripts\pserve-script.py`（脚本）
+  - 参数：`Production.ini`
 
 - **调试服务器命令**组：
     - 命令：`..\env\scripts\pserve-script.py`（脚本）
@@ -146,7 +144,7 @@ Pyramid 应用当前最好使用 `pcreate` 命令行工具进行创建。 创建
 
 目前，推荐在安装站点扩展并直接执行 pip 之后，使用开发控制台来安装包。 务必使用 Python 的完整路径，否则可能会执行错误的路径，且通常无需使用虚拟环境。 例如:
 
-```
+```command
 c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt

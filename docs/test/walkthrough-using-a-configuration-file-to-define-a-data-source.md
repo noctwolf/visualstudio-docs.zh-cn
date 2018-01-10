@@ -11,16 +11,15 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
-caps.latest.revision: "32"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 661a3cd872cefe54a0c6c945708bbab576c40a03
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>演练：使用配置文件定义数据源
 本演练演示如何使用 app.config 文件中定义的数据源进行单元测试。 你将学习如何创建用于定义可供 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 类使用的数据源的 app.config 文件。 本演练包括以下任务：  
@@ -269,8 +268,8 @@ ms.lasthandoff: 12/22/2017
 > [!IMPORTANT]
 >  部署数据源等项，以便部署目录中的测试可以访问它们。  
   
-## <a name="see-also"></a>请参阅  
- [单元测试代码](../test/unit-test-your-code.md)   
- [为现有代码创建和运行单元测试](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [测试应用](/devops-test-docs/test/test-apps-early-and-often)   
- [如何：创建数据驱动的单元测试](../test/how-to-create-a-data-driven-unit-test.md)
+## <a name="see-also"></a>请参阅
+
+[单元测试代码](../test/unit-test-your-code.md)  
+[为现有代码创建和运行单元测试](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
+[如何：创建数据驱动的单元测试](../test/how-to-create-a-data-driven-unit-test.md)

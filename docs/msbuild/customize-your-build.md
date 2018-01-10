@@ -16,11 +16,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 72bcca85f57a5c68e70dfa942ec607072af86561
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 78773b3a87aff91fae92ec64365ef55620e58d44
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="customize-your-build"></a>自定义生成
 在 MSBuild 15 版之前的版本中，如果要向解决方案中的项目提供新的自定义属性，必须手动向解决方案中的每个项目文件添加一个针对该属性的引用。 另外，还必须在 .props 文件中定义属性，在解决方案的每个项目中显式导入该 .props 文件。
@@ -88,7 +88,7 @@ Directory.Build.props 很早便已导入 Microsoft.Common.props，因此它无�
 msbuild 的常规方法的摘要如下所示：
 
 - 对于任何给定的项目，msbuild 在解决方案结构中向上查找第一个 `Directory.Build.props`，将其与默认项合并，然后停止扫描
-- 如果要找到并合并多个级别，则从“内部”文件 [`<Import...>`](http://docs.microsoft.com/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove)（如上所示）“外部”文件
+- 如果要找到并合并多个级别，则从“内部”文件 [`<Import...>`](../msbuild/property-functions.md#msbuild-getpathoffileabove)（如上所示）“外部”文件
 - 如果“外部”文件本身不会再导入其上的内容，则扫描在此处停止
 - 要控制扫描/合并过程，请使用 `$(DirectoryBuildPropsPath)` 和 `$(ImportDirectoryBuildProps)`
 

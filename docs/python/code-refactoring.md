@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 60e6daf25d4ce9c43f07495e9efa89ec215ec16b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8ab260780c7cd2841d0ffe88f4eb0cc817592c4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="refactoring-python-code"></a>重构 Python 代码
 
@@ -26,7 +26,7 @@ Visual Studio 提供用于自动转换和清理 Python 源代码的多个命令�
 - [重命名](#rename)：可重命名所选类、方法或变量名称
 - [提取方法](#extract-method)：根据所选代码创建新的方法
 - [添加导入](#add-import)：提供添加缺少导入的智能标记
-- [删除未使用的导入](#remove-imports)：删除未使用的导入
+- [删除未使用的导入](#remove-unused-imports)：删除未使用的导入
 
 <a name="rename-variable"</a>
 
@@ -72,6 +72,7 @@ Visual Studio 尝试筛选出实际未在模块中定义的成员，例如导入
 最后，如果按常规排除某些内容，但该内容具有将包括的其他值（例如，由于名称分配有模块中的值），Visual Studio 仍将排除该导入。 此行为假定不应导出该值，因为它在其他模块重定义，因此其他分配也可能为不会导出的虚拟值。
 
 <a name="remove-imports"</a>
+
 ## <a name="remove-unused-imports"></a>删除未使用的导入
 
 编写代码时，可对根本未使用的模块使用 `import` 语句结尾。 因为 Visual Studio 可对代码进行分析，因此它可自动确定是否需要 `import` 语句，方法是查看所导入名称在出现语句的位置下方是否被使用。

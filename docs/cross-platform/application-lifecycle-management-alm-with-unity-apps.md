@@ -13,11 +13,11 @@ author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload: unity
-ms.openlocfilehash: c6c22a04348266b4db83984ff194ad1cef2ac668
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e68024333084b6166305266dd061ef32bc0e14a
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>适用于 Unity 应用的 Visual Studio 应用程序生命周期管理 (ALM)
 开发适用于现代平台的应用涉及许多活动，并不仅仅只是编写代码。 这些活动被称为 DevOps（开发 + 操作），它们跨越应用的整个生命周期，包括计划和跟踪工作、设计和实现代码、管理源代码存储库、运行生成、管理持续集成和部署、测试（包括单元测试和 UI 测试）、在开发和生产环境中运行各种形式的诊断以及通过遥测和分析实时监控应用的性能和用户行为。  
@@ -47,12 +47,12 @@ ms.lasthandoff: 12/22/2017
 |功能|通过 Unity 提供支持|其他注释|  
 |-------------|--------------------------|-------------------------|  
 |序列图|否||  
-|依赖项关系图|No||  
-|调用层次结构|No||  
-|类设计器|No||  
-|体系结构资源管理器|No||  
-|UML 关系图（用例、活动、类、组件、序列和 DSL）|No||  
-|层关系图|No||  
+|依赖项关系图|否||  
+|调用层次结构|否||  
+|类设计器|否||  
+|体系结构资源管理器|否||  
+|UML 关系图（用例、活动、类、组件、序列和 DSL）|否||  
+|层关系图|否||  
 |层验证|否||  
 
 ## <a name="code"></a>代码  
@@ -84,20 +84,20 @@ ms.lasthandoff: 12/22/2017
 |生成带有前脚本和后脚本的定义|是|使用 Unity 命令行运行生成的自定义生成定义还可以配置为预生成和后生成脚本。|  
 |包括封闭签入的持续集成|是|仅在 Git 用于拉取请求（而非签入）时，封闭签入才适用于 TFVC。|  
 
-## <a name="testing"></a>正在测试  
- 参考链接：**[测试应用程序](/devops-test-docs/test/test-apps-early-and-often)**  
+## <a name="testing"></a>正在测试
 
 |功能|通过 Unity 提供支持|其他注释|  
 |-------------|--------------------------|-------------------------|  
 |规划测试、创建测试用例和组织测试套件|是||  
 |手动测试|是||  
 |测试管理器（记录和播放测试）|仅限 Windows 设备和 Android 模拟器||  
-|代码覆盖率|无|Unity 内进行单元测试时以及不是 Visual Studio 时不适用，请参阅下文。|  
+|代码覆盖率|不可用|Unity 内进行单元测试时以及不是 Visual Studio 时不适用，请参阅下文。|  
 |[单元测试代码](../test/unit-test-your-code.md)|在 Unity 中，但不在 Visual Studio 中|Unity 提供了自己的单元测试框架作为 [Unity 测试工具](https://www.assetstore.unity3d.com/en/#!/content/13802)（Unity 资产商店）的一部分。 单元测试结果在 Unity 中报告，将不会出现在 Visual Studio 内。|  
 |[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)|否|编码的 UI 测试依赖于应用 UI 中可读取的控件；Unity 应用在本质上都是图形，因此编码的 UI 测试工具无法读取其内容。|  
 
-## <a name="improve-code-quality"></a>提高代码质量  
- 参考链接：**[提高代码质量](/visualstudio/test/improve-code-quality)**  
+## <a name="improve-code-quality"></a>提高代码质量
+
+参考链接：**[提高代码质量](/visualstudio/test/improve-code-quality)**  
 
 |功能|通过 Unity 提供支持|其他注释|  
 |-------------|--------------------------|-------------------------|  

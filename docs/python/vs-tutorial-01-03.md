@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 0124133b230da01c6e7194849466c57d86592cbd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cdbbebc65eb004c11b4c36b78bd8e0089db3234e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>步骤 3：使用 REPL 交互窗口
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 12/22/2017
     ![Python 交互窗口以及通过拖动重设大小](media/vs-getting-started-python-11-interactive1b.png)
 
     > [!Tip]
-    > 可通过拖动边界分隔条重设 Visual Studio 中所有窗口的大小。 还可以将窗口拖出 Visual Studio 框架，以及在框架内按喜欢的方式重新排列窗口。 有关完整的详细信息，请参阅<a href="https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio" target="_blank">自定义窗口布局</a>。
+    > 可通过拖动边界分隔条重设 Visual Studio 中所有窗口的大小。 还可以将窗口拖出 Visual Studio 框架，以及在框架内按喜欢的方式重新排列窗口。 有关完整的详细信息，请参阅[自定义窗口布局](../ide/customizing-window-layouts-in-visual-studio.md)。
 
 1. 输入几个语句（如 `print("Hello, Visual Studio")`）和表达式（如 `123/456`）以查看即时结果：
 

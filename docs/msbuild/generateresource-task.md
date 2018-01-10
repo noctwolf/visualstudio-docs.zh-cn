@@ -22,11 +22,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3004f90f05a41ef0d2557236643af18b9be89d38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef2517b05b58ac2a672a5eba04ca6f1dc48a27f3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource 任务
 将文本 .txt 和 .resx（基于 XML 的资源格式）文件转换为公共语言运行时二进制 .resources 文件，这些 .resources 文件可嵌入到运行时二进制可执行文件中或编译到附属程序集中。 此任务通常用于将 .txt 或 .resx 文件转换为 .resource 文件。 `GenerateResource` 任务在功能上类似于 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/22/2017
 |`ExecuteAsTool`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，请于进程外从适当的目标框架运行 tlbimp.exe 和 aximp.exe 来生成所需的包装器程序集。 此参数允许多目标的 `ResolveComReferences`。|  
 |`FilesWritten`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含写入磁盘的所有文件的名称。 其中包含缓存文件（如果存在）。 此参数对实现 Clean 非常有用。|  
 |`MinimalRebuildFromTracking`|可选 `Boolean` 参数。<br /><br /> 获取或设置一个开关，用于指定是否使用跟踪的增量生成。 如果为 `true`，则启用增量生成；否则，将强制执行重新生成。|  
-|`NeverLockTypeAssemblies`|可选 `Boolean` 参数。<br /><br /> 获取或设置一个布尔值，该值指定是创建新的 [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) 来计算资源 (.resx) 文件 (true) 还是仅当资源文件引用用户的程序集时才创建新的 [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) (false)。|  
+|`NeverLockTypeAssemblies`|可选 `Boolean` 参数。<br /><br /> 获取或设置一个布尔值，该值指定是创建新的 [AppDomain](/dotnet/api/system.appdomain) 来计算资源 (.resx) 文件 (true) 还是仅当资源文件引用用户的程序集时才创建新的 [AppDomain](/dotnet/api/system.appdomain) (false)。|  
 |`OutputResources`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 指定生成的文件（如 .resources 文件）的名称。 如果不指定名称，则会使用匹配输入文件的名称，且创建的 .resources 文件会放在包含此输入文件的目录之中。|  
 |`PublicClass`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则会将强类型的资源类创建为公共类。|  
 |`References`|可选 `String[]` 参数。<br /><br /> 要从中加载 .resx 文件中的类型的引用。 Resx 文件数据元素可能具有 .NET 类型。 读取 .resx 文件时，必须对此进行解析。 通常，使用标准类型加载规则可成功解析。 如果在 `References` 中提供程序集，则它们具有优先级。<br /><br /> 强类型资源不要求此参数。|  

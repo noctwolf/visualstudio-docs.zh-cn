@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0ffadcf35be9cc12327c6ef9a561cd1149cf281c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b289868d0cc27da76becf62a2bac51f02fa55c2
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE 概述
 
@@ -86,7 +86,7 @@ Visual Studio 现在达到了前所未有的轻量！ 通过模块化安装程�
 
 除了安装性能的改进之外，Visual Studio 2017 的 IDE 启动时间和解决方案加载时间都更短。
 
-若要了解设置系统上的 Visual Studio 的详细信息，请参阅[安装 Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio)。  
+若要了解设置系统上的 Visual Studio 的详细信息，请参阅[安装 Visual Studio 2017](../install/install-visual-studio.md)。
 
 ## <a name="sign-in"></a>登录
 
@@ -152,7 +152,7 @@ Visual Studio 现在达到了前所未有的轻量！ 通过模块化安装程�
 
 1. 该程序运行完毕后，选择工具栏上的“停止”（![“停止”按钮](../ide/media/VSIDE_StopButton.png)）按钮来使其停止。
 
-我们来回顾一下到目前为止的操作：在 Visual Studio 中新建一个 C# Windows Universal 项目、查看该项目的代码、在设计器中添加一个控件、更改某些 XAML 代码，然后运行该项目。 虽然本示例中的流程经过简化，但它为你展示了开发自己的应用时一些常用的 Visual Studio IDE 部件。 如需有关此示例的详细信息，请参阅[创建一个“Hello, world”应用 (XAML)](https://docs.microsoft.com/windows/uwp/get-started/create-a-hello-world-app-xaml-universal)。
+我们来回顾一下到目前为止的操作：在 Visual Studio 中新建一个 C# Windows Universal 项目、查看该项目的代码、在设计器中添加一个控件、更改某些 XAML 代码，然后运行该项目。 虽然本示例中的流程经过简化，但它为你展示了开发自己的应用时一些常用的 Visual Studio IDE 部件。 如需有关此示例的详细信息，请参阅[创建一个“Hello, world”应用 (XAML)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal)。
 
 ## <a name="debug-test-and-improve-your-code"></a>调试、测试和改进代码
 
@@ -184,7 +184,7 @@ Visual Studio 现在达到了前所未有的轻量！ 通过模块化安装程�
 
 下面是 Visual Studio 中其他一些常见的工作效率功能：
 
-- 使用[快速启动](https://docs.microsoft.com/en-us/visualstudio/ide/reference/quick-launch-environment-options-dialog-box)搜索框可以在 Visual Studio 中快速找到所需内容。 只需输入要查找内容的名称，Visual Studio 就会为你列出结果，这些结果可以准确地将你导向目标位置。 “快速启动”还可以显示链接，这些链接可以启动任何工作负载或单个组件的 Visual Studio 安装程序。
+- 使用[快速启动](../ide/reference/quick-launch-environment-options-dialog-box.md)搜索框可以在 Visual Studio 中快速找到所需内容。 只需输入要查找内容的名称，Visual Studio 就会为你列出结果，这些结果可以准确地将你导向目标位置。 “快速启动”还可以显示链接，这些链接可以启动任何工作负载或单个组件的 Visual Studio 安装程序。
 
   ![“快速启动”搜索框](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
@@ -196,7 +196,7 @@ Visual Studio 现在达到了前所未有的轻量！ 通过模块化安装程�
 
   ![Visual Studio 成员列表](../ide/media/vs2017_Intellisense.png)
 
-- **波形曲线**是红色的波浪形下划线，它可以在你键入时实时警告你注意代码中的错误或者潜在问题。 这样一来，你可立即修复错误，而无需等到编译或运行时才发现错误。 如果将鼠标悬停在波形曲线上，将看到关于此错误的其他信息。 左边距上也可能会出现一个灯泡，提供有关如何修复此错误的建议。 有关详细信息，请参阅 [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md)。
+- **波形曲线**是红色的波浪形下划线，它可以在你键入时实时警告你注意代码中的错误或者潜在问题。 这样一来，你可立即修复错误，而无需等到编译或运行时才发现错误。 如果将鼠标悬停在波形曲线上，将看到关于此错误的其他信息。 左边距上也可能会出现一个灯泡，提供有关如何修复此错误的建议。 有关详细信息，请参阅[快速操作](../ide/quick-actions.md)。
 
  ![波形曲线](../ide/media/vs2017_squiggle.png)
 
@@ -248,9 +248,9 @@ Team Foundation Server (TFS) 是 Visual Studio 的应用程序生命周期管理
 
 ![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-服务器资源管理器有助于你浏览和管理本地、远程以及 Azure、Salesforce.com、Office 365 和网站上的 SQL Server 实例及资产。 若要打开“服务器资源管理器”，请在主菜单上依次选择“视图”、“服务器资源管理器”。 请参阅[添加新连接](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections)，了解有关使用服务器资源管理器的详细信息。
+服务器资源管理器有助于你浏览和管理本地、远程以及 Azure、Salesforce.com、Office 365 和网站上的 SQL Server 实例及资产。 若要打开“服务器资源管理器”，请在主菜单上依次选择“视图”、“服务器资源管理器”。 请参阅[添加新连接](../data-tools/add-new-connections.md)，了解有关使用服务器资源管理器的详细信息。
 
-[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 是一个适用于 SQL Server、Azure SQL 数据库和 Azure SQL 数据仓库的强大的开发环境。 通过它可以生成、调试、维护和重构数据库。 可使用数据库项目，或直接使用已连接的数据库实例（本地或非本地）。
+[SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) 是一个适用于 SQL Server、Azure SQL 数据库和 Azure SQL 数据仓库的强大的开发环境。 通过它可以生成、调试、维护和重构数据库。 可使用数据库项目，或直接使用已连接的数据库实例（本地或非本地）。
 
 Visual Studio 中的 **SQL Server 对象资源管理器**提供类似于 SQL Server Management Studio 中的数据库对象。 使用 SQL Server 对象资源管理器可以执行轻负载数据库管理和设计工作，包括使用 SQL Server 对象资源管理器右侧的上下文菜单编辑表数据、对比架构和执行查询等。
 

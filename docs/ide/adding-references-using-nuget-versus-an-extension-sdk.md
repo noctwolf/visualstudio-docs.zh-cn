@@ -12,17 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: eea8b4bb93d0e848bd085fd534fcaaa553a15e2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4ec453e3bec8bbca0e01d0706b43f82fb413d162
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 与扩展 SDK 添加引用
 
 可以利用 Visual Studio 的 NuGet 扩展或软件开发工具包 (SDK) 提供 Visual Studio 项目中使用的包。 本主题通过介绍这两种机制的相似和不同之处，帮助你选择最适合你任务的机制。
 
-- NuGet 是开放源代码包管理系统，可以简化将库合并到项目解决方案的过程。 有关详细信息，请参阅 [NuGet 文档](http://docs.microsoft.com/nuget)。
+- NuGet 是开放源代码包管理系统，可以简化将库合并到项目解决方案的过程。 有关详细信息，请参阅 [NuGet 文档](/nuget)。
 
 - SDK 是文件集合，Visual Studio 将其视为单个引用项。 当显示“引用管理器”对话框时，该对话框会列出与打开的项目相关的所有 SDK。 向项目中添加 SDK 时，可通过 IntelliSense、“工具箱”、设计器、“对象浏览器”MSBuild、部署、调试和打包访问该 SDK 的所有内容。 有关 SDK 的详细信息，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)。
 

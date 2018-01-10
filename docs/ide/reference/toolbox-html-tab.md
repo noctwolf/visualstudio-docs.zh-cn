@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 88d34f29593af6e15a30c45f44793c60794ebb24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eab9e96906e5d6bd31ef0f84bebf635c4c104b3d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="toolbox-html-tab"></a>工具箱，“HTML”选项卡
 “工具箱”的“HTML”选项卡提供可用于网页和 Web 窗体的组件。 若要查看此选项卡，首先在 HTML 设计器中打开要编辑的文档。 在“视图”菜单上，单击“工具箱”，然后单击“工具箱”的“HTML”选项卡。  
@@ -86,7 +86,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 > [!IMPORTANT]
->  建议对所有用户输入进行验证。 有关详细信息，请参阅[在 ASP.NET 网页 (Razor) 站点中验证用户输入](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
+>  建议对所有用户输入进行验证。 有关详细信息，请参阅[在 ASP.NET 网页 (Razor) 站点中验证用户输入](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
 
  **Input (File)**  
  ![HTML 页文件字段](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -100,7 +100,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 > [!IMPORTANT]
->  建议对所有用户输入进行验证。 有关详细信息，请参阅[在 ASP.NET 网页 (Razor) 站点中验证用户输入](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
+>  建议对所有用户输入进行验证。 有关详细信息，请参阅[在 ASP.NET 网页 (Razor) 站点中验证用户输入](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
 
  **Input (Password)**  
  ![Visual Studio 密码字段](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -114,7 +114,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 > [!IMPORTANT]
->  如果应用程序传输用户名和密码，则应配置网站使用安全套接字层 (SSL) 对传输进行加密。 有关详细信息，请参阅 [IIS 操作指南](http://go.microsoft.com/fwlink/?linkid=47856)中的“使用 SSL 保护连接”。 此外，建议对所有用户输入进行验证。 有关详细信息，请参阅[在 ASP.NET 网页 (Razor) 站点中验证用户输入](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
+>  如果应用程序传输用户名和密码，则应配置网站使用安全套接字层 (SSL) 对传输进行加密。 有关详细信息，请参阅 [IIS 操作指南](http://go.microsoft.com/fwlink/?linkid=47856)中的“使用 SSL 保护连接”。 此外，建议对所有用户输入进行验证。 有关详细信息，请参阅[在 ASP.NET 网页 (Razor) 站点中验证用户输入](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
 
  **Input (Check box)**  
  ![HTML 网页工具箱复选框选项](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -161,7 +161,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 > [!IMPORTANT]
->  建议对所有用户输入进行验证。 有关详细信息，请参阅[在 ASP.NET 网页 (Razor) 站点中验证用户输入](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
+>  建议对所有用户输入进行验证。 有关详细信息，请参阅[在 ASP.NET 网页 (Razor) 站点中验证用户输入](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
 
  **Table**  
  ![HTMLpageToolbarTable 屏幕截图](../../ide/reference/media/vxtable.gif "vxTable")  
