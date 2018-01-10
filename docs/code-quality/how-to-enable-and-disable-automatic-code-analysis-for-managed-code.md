@@ -13,14 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 198047196ba6f58c69736ef67352267845047b52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c6dc55e2acee733538121bf5aac51b935e2d86d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>如何：启用和禁用托管代码的自动代码分析
-你可以配置代码分析，以在托管的代码项目的每个生成之前运行。 你可以为每个设置不同的代码分析属性[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]配置。  
+你可以配置代码分析，以在托管的代码项目的每个生成后运行。 你可以为每个设置不同的代码分析属性[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]配置。  
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>若要启用或禁用自动代码分析  
   

@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>使用保存的 IntelliTrace 数据
 从 IntelliTrace 日志 (.iTrace) 文件开始调试时，转到应用程序执行中的特定点。 此文件可包含应用程序运行时 IntelliTrace 记录下的性能事件、异常、线程、测试步骤、模块和其他系统信息。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 12/22/2017
     |**源**|**请参阅**|  
     |----------------|-------------|  
     |Visual Studio Enterprise（但不是 Professional 或 Community 版）中的 IntelliTrace 会话|[IntelliTrace 功能](../debugger/intellitrace-features.md)|  
-    |Microsoft 测试管理器中的测试会话。 这会将 .iTrace 文件附加到 Team Foundation Server 工作项。|[在手动测试中收集更多诊断数据](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+    |Microsoft 测试管理器中的测试会话。 这会将 .iTrace 文件附加到 Team Foundation Server 工作项。|[在手动测试中收集更多诊断数据](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
     |Microsoft Monitoring Agent（单独使用或与 System Center 2012 R2 Operations Manager 一起使用），用于监视部署中运行的 ASP.NET Web 应用和 SharePoint 应用程序|-   [部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新增功能](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a> 你希望做什么？  
@@ -266,7 +266,7 @@ ms.lasthandoff: 12/22/2017
   
  [IntelliTrace 功能](../debugger/intellitrace-features.md)  
   
- [在手动测试中收集更多诊断数据](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)  
+ [在手动测试中收集更多诊断数据](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   
