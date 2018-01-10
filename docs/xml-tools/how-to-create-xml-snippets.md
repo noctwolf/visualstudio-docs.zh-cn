@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 376719363bd97970bdfa333d9aab0e57a8484c73
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>如何：创建 XML 代码段
 “XML 编辑器”可以用于新建 XML 代码段。 编辑器包括名为“Snippet”的 XML 代码段，是用于新建 XML 代码段的代码段样本。  
@@ -54,7 +54,7 @@ ms.lasthandoff: 12/22/2017
   <SnippetType>SurroundsWith</SnippetType>  
   <SnippetType>Expansion</SnippetType>  
 </SnippetTypes>  
-```  
+```
   
  `Expansion`类型确定在调用时是否显示代码段**插入代码段**命令。 `SurroundsWith`类型确定在调用时是否显示代码段**环绕**命令。  
   
@@ -72,7 +72,7 @@ ms.lasthandoff: 12/22/2017
   <name>$name$</name>  
   $selected$ $end$</test>]]>  
 </Code>  
-```  
+```
   
  `Code` 元素包括三个变量。  
   
@@ -88,7 +88,7 @@ ms.lasthandoff: 12/22/2017
 <test>  
   <name>name</name>  
 </test>  
-```  
+```
   
  name 元素的值标记为可编辑区域。  
   
@@ -100,7 +100,7 @@ ms.lasthandoff: 12/22/2017
   <ID>name</ID>  
   <Default>name</Default>  
 </Literal  
-```  
+```
   
  Literal 元素还可以指函数。 XML 编辑器包括一个名为函数**LookupPrefix**。 **LookupPrefix**函数从 XML 文档，此代码段从调用和返回如果有的话，为该命名空间定义的命名空间前缀，它包含冒号 （:） 中的位置查找给定的命名空间 URI在该名称。 以下是一种`Literal`用元素**LookupPrefix**函数。  
   
@@ -109,7 +109,7 @@ ms.lasthandoff: 12/22/2017
    <ID>prefix</ID>  
    <Function>LookupPrefix("namespaceURI")</Function>  
 </Literal>  
-```  
+```
   
  然后，可以在 XML 代码段中的任何其他位置使用该 $prefix$ 变量。  
   

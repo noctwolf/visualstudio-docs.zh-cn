@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 使用 IntelliTrace 记录和跟踪代码的执行历史记录时，可缩短调试应用程序所用的时间。 你可以更轻松地发现 Bug，因为 IntelliTrace 让你能够：  
@@ -47,7 +47,7 @@ ms.lasthandoff: 12/22/2017
 |||  
 |-|-|  
 |**调试我的应用程序使用 IntelliTrace:**<br /><br /> -我想查看以前事件。<br />-显示我调用以前事件的信息。<br />-保存我的 IntelliTrace 会话。<br />控制 IntelliTrace 收集的数据。|-   [演练： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />-   [历史调试](../debugger/historical-debugging.md)<br />-   [使用 IntelliTrace 步骤后的视图快照](../debugger/how-to-use-intellitrace-step-back.md)|  
-|**测试管理器中的测试会话期间收集 IntelliTrace 数据**|-   [收集在手动测试中的更多诊断数据](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+|**测试管理器中的测试会话期间收集 IntelliTrace 数据**|-   [收集在手动测试中的更多诊断数据](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
 |**从已部署应用程序收集 IntelliTrace 数据**|-   [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**开始从 IntelliTrace 日志文件 （.iTrace 文件） 调试。**|-   [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -89,7 +89,7 @@ ms.lasthandoff: 12/22/2017
   
 -   你的应用程序在测试计算机上崩溃，但在开发计算机上成功运行。  
   
-     可以从 Microsoft 测试管理器中收集 IntelliTrace 数据，将该数据保存到 .iTrace 文件，并将此文件附加到 Team Foundation Server 工作项以备以后调查使用。 请参阅[收集在手动测试中的更多诊断数据](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)和[使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)。  
+     可以从 Microsoft 测试管理器中收集 IntelliTrace 数据，将该数据保存到 .iTrace 文件，并将此文件附加到 Team Foundation Server 工作项以备以后调查使用。 请参阅[收集在手动测试中的更多诊断数据](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)和[使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)。  
   
 -   在已部署的应用程序中发生 Bug 或崩溃。  
   
@@ -180,8 +180,6 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="in-this-section"></a>本节内容  
  [IntelliTrace 功能](../debugger/intellitrace-features.md)  
-  
- [包括的难以重现的 Bug 的诊断跟踪数据](/devops-test-docs/test_notintoc/including-diagnostic-trace-data-with-bugs-that-are-difficult-to-reproduce)  
   
  [诊断部署后出现的问题](../debugger/diagnose-problems-after-deployment.md)  
   
