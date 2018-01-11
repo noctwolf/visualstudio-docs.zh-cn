@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: ghogen
 dev_langs: C++
 ms.workload: cplusplus
-ms.openlocfilehash: 360efc2b185e6485b2bb08d5d8d0b09a128099d0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7d55fdb061b9cb2fcd0497b7dde8e5c4255cf5e3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="custom-native-etw-heap-events"></a>自定义本机 ETW 堆事件
 
-Visual Studio 包含本机内存探查器等各种[分析和诊断工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)。  此探查器与堆提供程序中的 [ETW 事件](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)挂钩，并分析如何分配和使用内存。  默认情况下，此工具仅可以分析从标准的 Windows 堆进行的分配，不会显示此本机堆以外的任何分配。
+Visual Studio 包含本机内存探查器等各种[分析和诊断工具](../profiling/profiling-tools.md)。  此探查器与堆提供程序中的 [ETW 事件](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)挂钩，并分析如何分配和使用内存。  默认情况下，此工具仅可以分析从标准的 Windows 堆进行的分配，不会显示此本机堆以外的任何分配。
 
 在很多情况下，你可能想要用自己的自定义堆，并避免标准堆的分配开销。  例如，可以使用 [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) 在应用或游戏的开头分配大量内存，然后管理该列表中属于自己的块。  在此方案中，内存探查器工具只会看到初始分配，并且看不到在内存块内执行的自定义管理。  但是，通过使用自定义本机堆 ETW 提供程序，可让工具了解你在标准堆外进行的分配。
 
@@ -48,7 +48,7 @@ Foo* pFoo2 = (Foo*)mPool.allocate();
 Foo* pFoo3 = (Foo*)mPool.allocate();
 ```
 
-在不含自定义堆跟踪的[内存使用情况](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)工具的快照中，仅显示一个 8192 字节分配，池未进行任何自定义分配：
+在不含自定义堆跟踪的[内存使用情况](../profiling/memory-usage.md)工具的快照中，仅显示一个 8192 字节分配，池未进行任何自定义分配：
 
 ![Windows 堆分配](media/heap-example-windows-heap.png)
 
@@ -139,7 +139,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    ```
 
 ## <a name="tracking-memory-usage"></a>跟踪内存使用量
-随着这些调用就位，现可使用 Visual Studio 中的标准**内存使用量**工具跟踪自定义堆使用情况。  有关如何使用此工具的详细信息，请参阅[内存使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)文档。 确保已通过快照启用堆分析，否则你的自定义堆使用情况将不会显示。 
+随着这些调用就位，现可使用 Visual Studio 中的标准**内存使用量**工具跟踪自定义堆使用情况。  有关如何使用此工具的详细信息，请参阅[内存使用量](../profiling/memory-usage.md)文档。 确保已通过快照启用堆分析，否则你的自定义堆使用情况将不会显示。 
 
 ![启用堆分析](media/heap-enable-heap.png)
 
@@ -153,11 +153,11 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 ![带跟踪器的 NT 堆](media/heap-example-windows-heap.png)
 
-[如](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)文档中所述，与标准的 Windows 堆一样，你还可使用此工具比较快照，并查找自定义堆中的泄漏和损坏。
+如[内存使用量](../profiling/memory-usage.md)文档中所述，与标准的 Windows 堆一样，你还可使用此工具比较快照，并查找自定义堆中的泄漏和损坏。
 
 > [!TIP]
 > Visual Studio 在**性能分析**工具集中还包含**内存使用量**工具，可在“调试”>“性能探查器”菜单选项或通过 **Alt+F2** 键盘组合启用该工具。  此功能不包含堆跟踪，并且不会按如下所述显示你的自定义堆。  只有“诊断工具”窗口包含此功能，可以使用启用“调试”>“Windows”>“显示诊断工具”菜单或 **Ctrl+Alt+F2** 键盘组合来启用此窗口。
 
 ## <a name="see-also"></a>请参阅
-[分析工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
-[内存使用率](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
+[分析工具](../profiling/profiling-tools.md)  
+[内存使用率](../profiling/memory-usage.md)
