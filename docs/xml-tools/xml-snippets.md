@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 88ccba516a0bce6e3413bf14d38d32baf68d8274
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a419d738943f780ddb6077978242ac08ff91d36
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="xml-snippets"></a>XML 代码片断
 XML 编辑器提供了一个实用工具，调用*XML 代码段*，这样，你更快地生成 XML 文件。 XML 代码段可以通过插入文件反复使用。 您还可以根据 XML 架构定义语言 (XSD) 架构生成 XML 数据。  
@@ -37,7 +37,7 @@ XML 编辑器提供了一个实用工具，调用*XML 代码段*，这样，你�
     </xs:sequence>  
   </xs:complexType>  
 </xs:element>  
-```  
+```
   
  可以通过两种方法插入代码段。 **插入代码段**命令在光标位置插入 XML 代码段。 **侧**命令使用所选文本环绕 XML 代码段。 这两个命令均可以从**IntelliSense**下的子菜单**编辑**菜单上，或通过编辑器快捷菜单。  
   
