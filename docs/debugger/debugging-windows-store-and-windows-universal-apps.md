@@ -18,23 +18,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3bc498bf0a2a0293421ba680eab608cff4a85437
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 6e6b144e3456f9ce2019c791f71f2d0b631fc883
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-universal-windows-apps-uwp"></a>调试通用 Windows 应用 (UWP)
-Visual Studio 调试器提供了对调试 UWP 应用的完整支持。  
-  
-有关调试通用 Windows 应用程序的信息，请参阅[部署和调试 UWP 应用](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps)。  
+Visual Studio 调试器提供的用于调试 UWP 和 Windows 8.1 应用的完整支持。  
   
 若要调试 Windows Phone 8 应用程序，请参阅[调试 Windows Phone 8 应用](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx)。  
   
 |||  
 |-|-|  
-|[从 Visual Studio 运行应用](../debugger/run-store-apps-from-visual-studio.md)|在本地计算机上，在应用模拟器或仿真程序中，或者在远程设备上运行 UWP 应用。|  
-|[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)|查找和使用 Visual Studio 调试器在 UWP 应用中修复的 bug。|  
+|[启动 UWP 应用的调试会话](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|在本地计算机上，连接的设备，在应用模拟器或仿真程序中，或者在远程设备上运行 UWP 应用。|  
 |[调试安装的应用包](../debugger/debug-installed-app-package.md)|调试已部署的应用，本地和远程。|
 |[适用于 UWP 应用的预提取内容](../debugger/prefetch-content-for-windows-store-apps.md)|分析 UWP 应用上的 ContentPrefetcher 类的效果。|  
   

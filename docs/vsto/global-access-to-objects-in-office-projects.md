@@ -30,17 +30,15 @@ helpviewer_keywords:
 - ThisAddin_Startup
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
-ms.assetid: f6a7f0ef-75d0-4a9b-9aec-be95ffa26adf
-caps.latest.revision: "55"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 12ae527d52e3dad3c60d561ba3bd5fa1171ac48b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bdfc9b62e6dc94560693c072526e1f2989ddec15
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>对 Office 项目中对象的全局访问
   创建 Office 项目时，Visual Studio 将在项目中自动生成一个名为 `Globals` 的类。 可以使用 `Globals` 类在运行时从项目中的任何代码访问多个不同的项目项。  
