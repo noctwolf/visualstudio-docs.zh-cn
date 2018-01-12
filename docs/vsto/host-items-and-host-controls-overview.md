@@ -36,17 +36,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], deleting
-ms.assetid: 0601fed9-1a5b-4504-95ed-c6a2ddb710d9
-caps.latest.revision: "100"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0a85f69ce67afdb4e1138c75b7c939be3980453f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1512b4774efea9639f01135932ad076f6630ea12
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="host-items-and-host-controls-overview"></a>宿主项和宿主控件概述
   宿主项和宿主控件是帮助向通过使用 Visual Studio 中的 Office 开发工具创建的 Office 解决方案提供编程模型的类型。 宿主项和宿主控件与基于 COM 的 Microsoft Office Word 和 Microsoft Office Excel 的对象模型交互，但更像与托管对象（如 Windows 窗体控件）进行交互。  

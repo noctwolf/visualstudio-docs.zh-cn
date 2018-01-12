@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - worksheets, copying
 - Excel [Office development in Visual Studio], copying worksheets
-ms.assetid: e49e03f5-7b2f-416b-b5fe-0965336c47e1
-caps.latest.revision: "31"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: f78f4272eb42440c2ddf9ade423ceef9364f75e6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fe8b289dd30ea44331a2ae0c63dd451da8969369
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>如何：以编程方式复制工作表
   你可以创建一份工作表的副本，并将该工作表插入工作簿中现有的工作表之前或之后。 如果不指定要插入工作表的位置，则 Excel 将创建一个新的工作簿来容纳新工作表。  

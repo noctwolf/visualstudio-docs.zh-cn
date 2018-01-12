@@ -14,17 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - Web services [Office development in Visual Studio], populating documents
 - data [Office development in Visual Studio], adding to documents
-ms.assetid: 4c42653c-627f-445e-9024-8482eaf5562e
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5cdcfc080251d62bf0f7dbede2016b4821383c5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eb06e77cf45a3c912f569686cdbe246baece8a03
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>如何：用服务中的数据填充文档
   访问 Microsoft Office 文档级项目中的数据与访问 Windows 窗体项目中的数据的方式相同。 使用相同的工具和代码将数据引入解决方案，然后即可使用 Windows 窗体控件来显示该数据。 此外，可以利用称为“宿主控件”的控件，该控件是指 Microsoft Office Excel 和 Microsoft Office Word 中借助事件和数据绑定容量进行增强的本地对象。 有关详细信息，请参阅 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  

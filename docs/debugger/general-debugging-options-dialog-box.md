@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bf693d7a5339e57edeaed82c25ed552901e1ea51
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“常规”
 **工具 > 选项 > 调试 > 常规**页，可以设置以下选项：  
@@ -85,7 +85,7 @@ ms.lasthandoff: 01/04/2018
     在变量窗口中计算对象时，执行隐式字符串转换调用。 因此，结果将显示为字符串而不是类型名。 仅在 C# 代码中进行调试时适用。 此设置可能由 DebuggerDisplay 特性重写 (请参阅[使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md))。  
   
 **启用源服务器支持**  
-指示 Visual Studio 调试器从实现 SrcSrv (`srcsrv.dll`) 协议的源服务器中获取源文件。 Team Foundation Server 和 Windows 的调试工具是实现协议的两个源服务器。 有关 SrcSrv 设置的详细信息，请参阅[SrcSrv](hhttps://msdn.microsoft.com/en-us/library/windows/hardware/ff558791(v=vs.85).aspx)文档。 此外，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
+指示 Visual Studio 调试器从实现 SrcSrv (`srcsrv.dll`) 协议的源服务器中获取源文件。 Team Foundation Server 和 Windows 的调试工具是实现协议的两个源服务器。 有关 SrcSrv 设置的详细信息，请参阅[SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx)文档。 此外，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
 > [!IMPORTANT]
 >  由于读取 .pdb 文件会执行文件中的任意代码，因此请确保你信任此服务器。  

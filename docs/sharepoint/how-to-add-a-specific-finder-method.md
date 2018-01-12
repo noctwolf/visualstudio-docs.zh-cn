@@ -19,17 +19,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], return an entity
 - BDC [SharePoint development in Visual Studio], Specific Finder
 - Business Data Connectivity service [SharePoint development in Visual Studio], get an entity
-ms.assetid: 7bbc5986-2828-4755-96fa-9f1dc0f8dc75
-caps.latest.revision: "30"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6a5dbff1d4a4c739ce8ecab0807e2d74c62f999e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6bf2c422efd005c8121ee49fed6dbc7329708b90
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>如何：添加特定的 Finder 方法
   你可以通过创建返回单个实体实例*特定的 Finder*方法。 业务数据连接 (BDC) 服务执行特定的 Finder 方法，当用户在业务数据 web 部件或外部列表中选择实体。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  

@@ -16,17 +16,15 @@ helpviewer_keywords:
 - sentences, selecting in documents
 - ranges, selecting in documents
 - ranges, defining in documents
-ms.assetid: 0727c1cb-d44c-4f1c-a699-4365dd13be5d
-caps.latest.revision: "46"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 22a894902a36aa12ff0962270391a2311ce40169
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0c99b40147d08a924b9f66a0f8a45a29204e37bc
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>如何：以编程方式在文档中定义和选择范围
   你也可以通过使用 <xref:Microsoft.Office.Interop.Word.Range> 对象在 Microsoft Office Word 文档中定义一个范围。 你可以通过使用例如，选择整个文档多种方式，<xref:Microsoft.Office.Interop.Word.Range.Select%2A>方法<xref:Microsoft.Office.Interop.Word.Range>对象，或通过使用的内容属性<xref:Microsoft.Office.Tools.Word.Document>类 （在文档级自定义项） 或<xref:Microsoft.Office.Interop.Word.Document>类 (在VSTO 外接程序）。  

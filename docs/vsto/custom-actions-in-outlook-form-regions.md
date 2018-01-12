@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], custom actions
 - custom actions [Office development in Visual Studio]
-ms.assetid: 583fd5f0-aafa-4858-9c54-38a9fdf3bede
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 89b49139db9d91ba742caeb80308f9175195a843
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 66a4d81728d438a749b46e42b003c02d08f13d67
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 窗体区域中的自定义操作
   操作显示使用户能够对 Microsoft Office Outlook 项做出响应的按钮。 例如，若要响应一封邮件，用户单击**答复**，**全部答复**，或**转发**操作按钮。 每个这些操作创建一个新的邮件项，并使用原始项中的信息填充的项的字段。  

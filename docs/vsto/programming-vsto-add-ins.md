@@ -32,17 +32,15 @@ helpviewer_keywords:
 - ThisAddIn_Startup
 - application-level add-ins [Office development in Visual Studio], programming
 - ThisAddIn_Shutdown
-ms.assetid: c534786d-2833-4afa-9e4c-4633f46b9eed
-caps.latest.revision: "70"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0dfc26627bbeaaaea66fb942e87238814bd02fd7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 58b6d40e2da962587b44e4b73c8331b3fba5590f
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="programming-vsto-add-ins"></a>VSTO 外接程序编程
   通过创建 VSTO 外接程序扩展 Microsoft Office 应用程序时，可以直接接针对项目中的 `ThisAddIn` 类编写代码。 此类可用于执行下列任务，例如：访问 Microsoft Office 主机应用程序的对象模型、自定义应用程序的用户界面 (UI) 和向其他 Office 解决方公开 VSTO 外接程序中的对象。  

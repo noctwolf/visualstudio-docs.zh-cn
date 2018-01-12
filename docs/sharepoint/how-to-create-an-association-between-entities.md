@@ -22,17 +22,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], relate entities
 - BDC [SharePoint development in Visual Studio], relate entities
 - BDC [SharePoint development in Visual Studio], associate external content types
-ms.assetid: 0c095df8-1f40-4c4d-9fed-e125a8429724
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3bfc9f37fa440b57ad78a3df9640888e4f2a3d73
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 49b4d68a8d957462954c998d96e9309944cdb9f5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-an-association-between-entities"></a>如何：创建实体之间的关联
   你可以定义您通过创建关联的业务数据连接 (BDC) 模型中的实体之间的关系。 Visual Studio 生成的模型的使用者提供有关每个关联的信息的方法。 SharePoint Web 部件、列表或自定义应用程序可以使用这些方法在用户界面 (UI) 中显示数据关系。  

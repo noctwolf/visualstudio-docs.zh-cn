@@ -13,17 +13,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, adding items
-ms.assetid: 25a76408-6061-4cd3-b210-100f1c644df7
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 67b35bb60224ce8c10136314ce2d42635d80c5c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4b37e97ddf0a6ffd119c920b384d0536eb943fa3
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>如何：向 SharePoint 项目中添加项
   SharePoint 解决方案包含一个或多个项目，其中每个包含多个 SharePoint 项目项。 打开或创建 SharePoint 解决方案后，你可以将新的或现有项添加到这些项目。 例如，新工作流项目附带了名为 default.aspx 中，默认窗体，但你可以将替换为新的或不同的窗体，该窗体或添加另一个 ASPX 窗体。  

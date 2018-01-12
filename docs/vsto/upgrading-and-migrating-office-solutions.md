@@ -16,17 +16,15 @@ helpviewer_keywords:
 - upgrading applications [Office development in Visual Studio]
 - upgrading Office solutions in Visual Studio
 - migrating Office solutions in Visual Studio
-ms.assetid: cc60cdcb-593d-498a-8358-f1f3ac673fe1
-caps.latest.revision: "105"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: fd6ff05fde0e02e9b45b67ffe665a296085bf934
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c81cba2c80f8eaabeae15fc5425ed7e02c378123
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="upgrading-and-migrating-office-solutions"></a>升级和迁移 Office 解决方案
   如果你拥有在 Visual Studio 早期版本中创建的 Microsoft Office 项目，则必须升级该项目以在 Visual Studio 当前版本中使用。 若要升级 Microsoft Office 项目，请在包含 Microsoft Office 开发人员工具的 Visual Studio 版本中打开该项目。 有关包括 Microsoft Office 开发人员工具的版本的 Visual Studio 的详细信息，请参阅[配置计算机以开发 Office 解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  

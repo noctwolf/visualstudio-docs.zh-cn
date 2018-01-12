@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: e4edcc21986ae0fd033228971697057932e63670
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c5be469cd93ce0b920e9100b43d642fd96427a79
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练： 自定义插入、 更新和删除的实体类的行为
+
 [LINQ to SQL Visual Studio 中的工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用于创建和编辑的可视化设计图面[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]基于数据库中的对象的类 （实体类）。 通过使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，你可以使用 LINQ 技术访问 SQL 数据库。 有关详细信息，请参阅 [LINQ（语言集成查询）](/dotnet/csharp/linq/)。  
   
 默认情况下，由 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 运行时提供用于执行更新的逻辑。 该运行时基于表的架构（列定义和主键信息）创建默认的 Insert、Update 和 Delete 语句。 当不希望使用默认行为时，可以配置更新行为并指定特定的存储过程，来执行处理数据库中数据所必需的插入、更新和删除。 在不生成默认行为时（例如，实体类映射到视图时），也可以这样做。 另外，在数据库要求通过存储过程访问表时，您可以重写默认的更新行为。 有关详细信息，请参阅[自定义操作通过使用存储过程](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。  
   
 > [!NOTE]
->  本演练需要的可用性**InsertCustomer**， **UpdateCustomer**，和**DeleteCustomer**存储 Northwind 数据库的过程。  
+> 本演练需要的可用性**InsertCustomer**， **UpdateCustomer**，和**DeleteCustomer**存储 Northwind 数据库的过程。  
   
 本演练提供了一些步骤，您必须执行这些步骤来重写默认的 LINQ to SQL 运行时行为，以便使用存储过程将数据保存回数据库。  
   
@@ -48,7 +49,8 @@ ms.lasthandoff: 01/05/2018
   
 -   配置 Customer 类以使用存储过程执行插入、更新和删除。  
   
-## <a name="prerequisites"></a>系统必备  
+## <a name="prerequisites"></a>系统必备
+
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。  
   
 1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server 版本的下载页](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**数据存储和处理**工作负荷，也可以作为单个组件。  
@@ -65,12 +67,13 @@ ms.lasthandoff: 01/05/2018
 
        短时间内之后, 执行完查询和创建 Northwind 数据库。  
   
-## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>创建一个应用程序并添加 LINQ to SQL 类  
+## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>创建一个应用程序并添加 LINQ to SQL 类
+
 因为您将要使用 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 类并在 Windows 窗体中显示数据，所以需要创建一个新的 Windows 窗体应用程序并添加一个 LINQ to SQL 类文件。  
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>若要创建包含 LINQ to SQL 类的新 Windows 窗体应用程序项目  
+### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>若要创建包含 LINQ to SQL 类的新 Windows 窗体应用程序项目
   
 1. 在 Visual Studio 中，在**文件**菜单上，选择**新建**，**项目...**.  
   
@@ -90,10 +93,11 @@ ms.lasthandoff: 01/05/2018
   
      这会将一个空的 LINQ to SQL 类文件 (Northwind.dbml) 添加到该项目中，并且会打开 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。  
   
-## <a name="creating-the-customer-entity-class-and-object-data-source"></a>创建 Customer 实体类和对象数据源  
- 创建[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]通过拖动来自表映射到数据库表的类**服务器资源管理器**/**数据库资源管理器**到[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。 结果将生成映射到数据库中的表的 LINQ to SQL 实体类。 在创建实体类后，可以将这些类像具有公共属性的其他类一样用作对象数据源。  
+## <a name="creating-the-customer-entity-class-and-object-data-source"></a>创建 Customer 实体类和对象数据源
+
+创建[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]通过拖动来自表映射到数据库表的类**服务器资源管理器**/**数据库资源管理器**到[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。 结果将生成映射到数据库中的表的 LINQ to SQL 实体类。 在创建实体类后，可以将这些类像具有公共属性的其他类一样用作对象数据源。  
   
-#### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>创建 Customer 实体类并使用该类配置数据源  
+### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>创建 Customer 实体类并使用该类配置数据源
   
 1.  在**服务器资源管理器**/**数据库资源管理器**，查找 Northwind 示例数据库的 SQL Server 版本中的客户表。 
   
@@ -118,17 +122,18 @@ ms.lasthandoff: 01/05/2018
     >  如果**客户**类不可用、 退出向导、 生成项目时，和重新运行该向导。  
 8.  单击**完成**以创建数据源并添加**客户**到实体类**数据源**窗口。  
   
-## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>创建一个 DataGridView 以在 Windows 窗体中显示 Customer 数据  
- 创建绑定到实体类通过拖动的控件[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]数据源项从**数据源**拖到 Windows 窗体的窗口。  
+## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>创建一个 DataGridView 以在 Windows 窗体中显示 Customer 数据
+
+创建绑定到实体类通过拖动的控件[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]数据源项从**数据源**拖到 Windows 窗体的窗口。  
   
-#### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>添加绑定到实体类的控件  
+### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>添加绑定到实体类的控件
   
 1.  在“设计”视图中打开“Form1”。  
   
 2.  从**数据源**窗口中，拖动**客户**节点拖到 Form1 上的。  
   
     > [!NOTE]
-    >  若要显示**数据源**窗口中，单击**显示数据源**上**数据**菜单。  
+    > 若要显示**数据源**窗口中，单击**显示数据源**上**数据**菜单。  
   
 3.  在代码编辑器中打开 Form1。  
   
@@ -154,10 +159,11 @@ ms.lasthandoff: 01/05/2018
         = northwindDataContext1.Customers;    
     ```  
   
-## <a name="implementing-save-functionality"></a>实现保存功能  
- 默认情况下，没有启用保存按钮，也没有实现保存功能。 此外，在为对象数据源创建数据绑定控件时，不会自动添加用于将更改后的数据保存到数据库的代码。 本节说明如何为 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 对象启用保存按钮并实现保存功能。  
+## <a name="implementing-save-functionality"></a>实现保存功能
+
+默认情况下，没有启用保存按钮，也没有实现保存功能。 此外，在为对象数据源创建数据绑定控件时，不会自动添加用于将更改后的数据保存到数据库的代码。 本节说明如何为 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 对象启用保存按钮并实现保存功能。  
   
-#### <a name="to-implement-save-functionality"></a>实现保存功能  
+### <a name="to-implement-save-functionality"></a>实现保存功能
   
 1.  在“设计”视图中打开“Form1”。  
   
@@ -177,9 +183,9 @@ ms.lasthandoff: 01/05/2018
     northwindDataContext1.SubmitChanges();  
     ```  
   
-## <a name="overriding-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>重写用于执行更新（插入、更新和删除）的默认行为  
+## <a name="overriding-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>重写用于执行更新（插入、更新和删除）的默认行为
   
-#### <a name="to-override-the-default-update-behavior"></a>重写默认更新行为  
+### <a name="to-override-the-default-update-behavior"></a>重写默认更新行为
   
 1.  在 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]中打开“LINQ to SQL”文件。 (双击**Northwind.dbml**文件中**解决方案资源管理器**。)  
   
@@ -230,13 +236,14 @@ ms.lasthandoff: 01/05/2018
 19. 单击 **“确定”**。  
   
 > [!NOTE]
->  在本演练中，虽然以下事实并不会产生问题，但仍然需要注意：[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 会在插入和更新操作期间自动为标识（自动递增）列、rowguidcol（数据库生成的 GUID）列以及时间戳列处理数据库生成的值。 在其他列类型中，数据库生成的值将意外导致 Null 值。 若要返回数据库生成的值，应手动将 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 设置为 `true` 并将 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 设置为下列值之一：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
+> 在本演练中，虽然以下事实并不会产生问题，但仍然需要注意：[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 会在插入和更新操作期间自动为标识（自动递增）列、rowguidcol（数据库生成的 GUID）列以及时间戳列处理数据库生成的值。 在其他列类型中，数据库生成的值将意外导致 Null 值。 若要返回数据库生成的值，应手动将 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 设置为 `true` 并将 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 设置为下列值之一：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
   
-## <a name="testing-the-application"></a>测试应用程序  
- 运行应用程序再次确认**UpdateCustomers**存储的过程是否能够正确更新数据库中的客户记录。  
-  
-#### <a name="to-test-the-application"></a>测试应用程序  
-  
+## <a name="testing-the-application"></a>测试应用程序
+
+运行应用程序再次确认**UpdateCustomers**存储的过程是否能够正确更新数据库中的客户记录。
+
+### <a name="to-test-the-application"></a>测试应用程序
+
 1.  按 F5。  
   
 2.  修改网格中的一条记录以测试更新行为。  
@@ -258,19 +265,20 @@ ms.lasthandoff: 01/05/2018
 10. 按 F5 并验证是否从数据库中移除了已删除的记录。  
   
     > [!NOTE]
-    >  如果你的应用程序将使用 SQL Server Express Edition，具体取决于值**复制到输出目录**数据库文件的属性，所做的更改时可能会不显示在步骤 10 中按 F5。 
-  
-## <a name="next-steps"></a>后续步骤  
-根据应用程序要求的不同，您可能需要在创建 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 实体类后执行几个步骤。 你可以对此应用程序进行的一些增强包括：  
-  
--   在更新过程中实现并发检查。 有关信息，请参阅[开放式并发： 概述](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview)。  
-  
--   添加 LINQ 查询以筛选数据。 有关信息，请参阅[LINQ 查询 (C#) 简介](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)。  
-  
+    > 如果你的应用程序将使用 SQL Server Express Edition，具体取决于值**复制到输出目录**数据库文件的属性，所做的更改时可能会不显示在步骤 10 中按 F5。
+
+## <a name="next-steps"></a>后续步骤
+
+根据应用程序要求的不同，您可能需要在创建 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 实体类后执行几个步骤。 你可以对此应用程序进行的一些增强包括：
+
+- 在更新过程中实现并发检查。 有关信息，请参阅[开放式并发： 概述](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview)。
+
+- 添加 LINQ 查询以筛选数据。 有关信息，请参阅[LINQ 查询 (C#) 简介](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)。
+
 ## <a name="see-also"></a>请参阅
-[LINQ to SQL Visual Studio 中的工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     
-[DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)   
+
+[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+[DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)  
 [如何： 分配存储的过程以便执行更新、 插入和删除](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)  
-[LINQ to SQL 查询](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)  
- 
+[LINQ to SQL 查询](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

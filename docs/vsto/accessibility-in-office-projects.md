@@ -15,17 +15,15 @@ helpviewer_keywords:
 - shortcut keys [Office development in Visual Studio]
 - Ribbon [Office development in Visual Studio], shortcut keys
 - accessibility [Office development in Visual Studio]
-ms.assetid: 48efcf1f-ca49-47ce-99f0-cc99f051aeae
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 01ef94199ae7ea22f72ca08be4dfb9092b03403f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 567ab9cffbd4546e276fcfd55af773e99fe07d34
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="accessibility-in-office-projects"></a>Office 项目中的辅助功能
   Microsoft Visual Studio 和 Microsoft Office 包括许多辅助功能，使您能够生成符合标准的可访问性要求的自定义解决方案。 Microsoft 将发布在 Web 上找到的可访问性的准则。 有关详细信息，请参阅[辅助功能网站](http://go.microsoft.com/fwlink/?LinkID=37113)。  

@@ -19,17 +19,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, Visual Basic for Applications and
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
-ms.assetid: 798bc2fa-449e-4d1a-86b4-18e57b02a4a8
-caps.latest.revision: "45"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 1428ad569b50ee3ff176f7fd7c55135a9ea718c1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fcd52322d88b79d90d4a20888ad2bb90a379c7df
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-basic-project"></a>演练：在 Visual Basic 项目中调用 VBA 中的代码
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中从文档的 Visual Basic for Applications (VBA) 代码中调用方法。 该过程包括三个基本步骤：向 `ThisDocument` 主机项类添加方法，向 VBA 代码公开方法，然后从文档中的 VBA 代码调用方法。  

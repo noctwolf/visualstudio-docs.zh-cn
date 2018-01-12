@@ -15,17 +15,15 @@ helpviewer_keywords:
 - types [Office development in Visual Studio], casting
 - automation [Office development in Visual Studio], casting objects
 - casting, object to specific type
-ms.assetid: 80b0d23e-df68-4ea9-a02b-238aee8ca9c0
-caps.latest.revision: "49"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 629e320cc47d65347cdd767b984a151afbf648e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 430c10ffa5f79be45282d637b48772943be638e9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="late-binding-in-office-solutions"></a>Office 解决方案中的后期绑定
   Office 应用程序的对象模型中的某些类型提供可通过后期绑定功能的功能。 例如，一些方法和属性可以返回不同类型的具体取决于 Office 应用程序，上下文对象，并且某些类型可以公开不同的方法或在不同上下文中的属性。  

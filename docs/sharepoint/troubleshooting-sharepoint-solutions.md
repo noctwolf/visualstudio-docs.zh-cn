@@ -14,17 +14,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, troubleshooting
-ms.assetid: d3c8a01c-8fac-40d0-bf9e-476901f1490a
-caps.latest.revision: "42"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5454aa06d4256c6c5e9ee1a8aa9573377ce9abdb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>SharePoint 解决方案疑难解答
   使用调试 SharePoint 解决方案时，可能发生以下问题或警报[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 有关详细信息，请参阅[调试 SharePoint 2007 工作流解决方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -99,7 +97,7 @@ ms.lasthandoff: 12/22/2017
  如果字段的源 XML 格式不正确、不是有效的 XML 文件或出现一些其他问题，则会出现“无法分析文件”错误。  
   
 ## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>新的非英语站点定义不会出现在站点创建页在部署后  
- 创建和使用非英语版本的部署站点定义后[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (即的区域设置版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，则**SharePoint 自定义**选项卡不显示在**模板选择**框并且新的站点模板不显示在**新建 SharePoint 网站**页。  
+ 创建和使用非英语版本的部署站点定义后[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](即的区域设置版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，则**SharePoint 自定义**选项卡不显示在**模板选择**框并且新的站点模板不显示在**新建 SharePoint 网站**页。  
   
 ### <a name="error-message"></a>错误消息  
  无。  

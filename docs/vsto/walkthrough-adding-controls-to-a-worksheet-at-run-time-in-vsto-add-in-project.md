@@ -15,17 +15,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets at run time
 - application-level add-ins [Office development in Visual Studio], adding controls
 - worksheets, adding controls at run time
-ms.assetid: 4f68677a-4789-4564-b229-02e2d4031a5f
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 37da15cce48bd16e022db42fa8a08a2b9633b5fc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f32db4aa6b547f1555fbccc9cb03c00998169eaa
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>演练：在运行时在 VSTO 外接程序项目中向工作表中添加控件
   可通过使用 Excel VSTO 外接程序向任何打开的工作表添加控件。 本演练演示如何利用功能区使用户能够向工作表添加 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.ListObject>。 有关信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  

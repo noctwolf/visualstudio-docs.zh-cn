@@ -14,17 +14,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Word [Office development in Visual Studio], creating your first project
 - document-level customizations [Office development in Visual Studio], creating your first project
-ms.assetid: ec9f5173-0923-4aee-985a-e760e80eaae3
-caps.latest.revision: "45"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6d732f16d6794fbe59dd6f67fa904fcee916ce69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8d37dde0027e33af16bdb6c146ec74076c686cf6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>演练：创建您的第一个 Word 文档级自定义项
   本介绍性演练演示了如何创建 Microsoft Office Word 的文档级自定义项。 仅在特定文档处于打开状态时，才可提供你在这种解决方案中创建的功能。 不能使用文档级自定义项进行应用程序范围的更改，例如在任何文档处于打开状态时显示新“功能区”选项卡。  

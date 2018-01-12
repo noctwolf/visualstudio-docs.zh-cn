@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], mapping to ListObject column
 - ListObject control, mapping data
-ms.assetid: 2108d0c3-d595-410e-a0ae-3dd53bf6bcc7
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8a844c3e62e5c381b37a109769144cdbb4694a70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c8def85e851ac6a51eef59e3f0538025f0e7ce6c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>如何：将 ListObject 列映射到数据
   将 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件绑定到 <xref:System.Data.DataTable>时，可能不希望显示列表中的所有列，或可能具有未绑定到数据的特定列。 调用 <xref:Microsoft.Office.Tools.Excel.ListObject> 方法时，可以映射希望出现在 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 中的列。  

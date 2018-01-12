@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, extending deployment
-ms.assetid: 6b0a52e5-e0ba-41bc-9e8a-1013e51fd3ba
-caps.latest.revision: "21"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a147b9f6def49565334004bda1f8c4c80b0e7bfa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ad603c9f303cd5bf2b3dc317efddd2694e10a867
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>如何：在执行部署步骤时运行代码
   如果你想要执行部署步骤 SharePoint 项目中的其他任务，你可以处理由 SharePoint 项目项之前和 Visual Studio 执行每个部署步骤后引发的事件。 有关详细信息，请参阅[扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。  

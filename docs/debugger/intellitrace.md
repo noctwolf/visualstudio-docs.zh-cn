@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 789c2317fcb1bc46b5708f1810563b20fe8895ed
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 使用 IntelliTrace 记录和跟踪代码的执行历史记录时，可缩短调试应用程序所用的时间。 你可以更轻松地发现 Bug，因为 IntelliTrace 让你能够：  
@@ -56,7 +56,7 @@ ms.lasthandoff: 01/09/2018
 |||  
 |-|-|  
 |**支持**|的使用.NET Framework 2.0 或更高版本 Visual Basic 和 Visual C# 应用程序。<br />     你可以调试大多数应用程序，包括 ASP.NET、Microsoft Azure、Windows 窗体、WCF、WPF、Windows 工作流、SharePoint 2010、SharePoint 2013 和 64 位应用。<br />     若要调试 SharePoint 应用程序使用 IntelliTrace，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br />     若要调试 intellitrace 的 Microsoft Azure 应用程序，请参阅[调试使用 IntelliTrace 和 Visual Studio 发布云服务](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。|  
-|**有限的支持**|.NET 核心和 ASP.NET Core 应用仅支持事件<br />的实验证明 F # 应用程序<br />Windows 应用商店应用程序仅支持事件|  
+|**有限的支持**|.NET 核心和 ASP.NET Core 应用仅支持事件<br />的实验证明 F # 应用程序<br />-UWP 应用仅支持事件|  
 |**不支持**|C + +、 其他语言和脚本<br />-Windows 服务、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]应用|  
   
 > [!NOTE]

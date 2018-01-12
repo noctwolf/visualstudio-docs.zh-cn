@@ -17,17 +17,15 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - object models [Office development in Visual Studio], Outlook
 - Office object models
-ms.assetid: 59704974-b7d9-46d6-949c-e97349c75279
-caps.latest.revision: "59"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: cffce10e443b2605e29d800cb271c4a96dc70359
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 481a18d40f17aa5488afabf1dd04f3cf6ed345b9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 对象模型概述
   若要开发 Microsoft Office Outlook 的 VSTO 外接程序，可以与 Outlook 对象模型提供的对象进行交互。 Outlook 对象模型提供表示用户界面中的项的类和接口。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 对象表示整个应用程序， <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 对象表示包含电子邮件或其他项的文件夹， <xref:Microsoft.Office.Interop.Outlook.MailItem> 对象表示电子邮件。  

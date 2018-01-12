@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a3fbe1b7c138f24167e587109fbb5f524b6b9019
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>在模拟器中运行的 UWP 和 Windows 8.1 应用
 UWP 和 Windows 8.1 应用程序的 Visual Studio 模拟器是一个可模拟 UWP 或 Windows 8.1 应用程序的桌面应用程序。 你可以运行应用程序选择的物理屏幕大小和你想要模拟的分辨率。 此外可以模拟常用的触摸和旋转事件，并模拟网络连接属性。

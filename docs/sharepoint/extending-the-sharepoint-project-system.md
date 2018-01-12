@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending projects
 - SharePoint development in Visual Studio, extending project items
-ms.assetid: 654b2973-a5c9-44be-a3d2-8bc3d15f9624
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ec4ca6100b3b0587e7e4dba5a56ceca4e5d5534c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e79808ef9d5d4712d67426b202046615c8ab14b2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="extending-the-sharepoint-project-system"></a>扩展 SharePoint 项目系统
   你可以通过使用 Visual Studio 中的一组项目模板和项模板创建 SharePoint 解决方案。 这些模板满足许多的开发方案的要求，但您可能会发现某些情况下，它们不提供需要的功能。 在这些情况下，你可以扩展 SharePoint 项目系统。  

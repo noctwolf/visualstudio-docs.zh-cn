@@ -11,17 +11,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
-ms.assetid: 2d8165d3-4af9-4a5e-bdba-8b2a06b1dc8d
-caps.latest.revision: "44"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 96f6e6f27938635628db66f2a6eb58a56cee0d18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>演练：使用项模板创建自定义操作项目项（第 2 部分）
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项模板关联后，你可能还想要模板提供的向导。 可以使用向导收集从用户的信息，当用户使用你的模板添加到项目的项目项的新实例。 你收集的信息可以用于初始化项目项。  

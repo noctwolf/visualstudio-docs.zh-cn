@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - primary interop assemblies, Office
 - Office development in Visual Studio, about developing solutions
-ms.assetid: 5dfc519f-a851-4661-8d2b-47e0d221e10e
-caps.latest.revision: "69"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3b3d731fd0c38eab376e99e0f143287507042652
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 解决方案开发概述 (VSTO)
   通过将 Microsoft Office 用作解决方案的前端，你可以利用熟悉的 Microsoft Office 用户界面和工具，例如 Word 中的文字处理功能、Excel 的数据分析功能、数据分析功能和 Outlook 的电子邮件管理功能。 你可以在 Visual Studio 中开发解决方案以自定义 Office 应用程序并添加业务流程所需的特定功能。 例如，你可以将 Word 转化为协定生成器，收集可进行编辑或不可编辑的预存在部件外部的协定。 通过使用 Excel，你可以为不同项目创建定制的自动化预算工作表。 你的用户也可以脱机使用 Office 解决方案，使复杂的解决方案比起在使用基于 Web 的体系结构时更简单实用。  

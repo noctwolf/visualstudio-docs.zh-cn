@@ -23,17 +23,15 @@ helpviewer_keywords:
 - hiding custom task panes
 - task panes [Office development in Visual Studio], creating
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
-ms.assetid: 00ce8b1e-1370-42f2-9dc9-609cada392f1
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0505759a63598bedefb2315582ac844e16a9405f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7368c580d2f00d929bdeefd11665e9f579af17f7
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>演练：将自定义任务窗格与功能区按钮同步
   本演练演示如何创建用户可以通过单击功能区上的切换按钮进行隐藏或显示的自定义任务窗格。 应始终创建一个可供用户单击以显示或隐藏你的自定义任务窗格的用户界面 (UI) 元素，如按钮，因为 Microsoft Office 应用程序不提供用户用于显示或隐藏自定义任务窗格的默认方式。  

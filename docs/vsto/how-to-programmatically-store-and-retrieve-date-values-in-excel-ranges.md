@@ -19,17 +19,15 @@ helpviewer_keywords:
 - dates, storing in Excel ranges
 - ranges, storing date values
 - date values
-ms.assetid: e1cdd262-0356-4499-8bc5-e730f74235a2
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8783a36ac4b15aead5ddb62badd9b56a3c1fa525
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 589079a593400549a69940fc42d1cf25fcab8826
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>如何：以编程方式在 Excel 范围内存储和检索日期值
   你可以存储和检索值中的<xref:Microsoft.Office.Tools.Excel.NamedRange>控件或本机 Excel 范围对象。  

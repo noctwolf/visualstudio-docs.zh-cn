@@ -16,17 +16,15 @@ helpviewer_keywords:
 - customizing the Ribbon, about customizing the Ribbon
 - custom Ribbon, about customizing the Ribbon
 - Ribbon [Office development in Visual Studio], Outlook
-ms.assetid: 11d10e72-806d-4d5e-b080-139bd8633eaa
-caps.latest.revision: "42"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: f44d1d8c2982e23995a3625205eaa0bddf7adc4e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3a7ed84f9eea6c4301f0fe4882d63522df2975f3
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="customizing-a-ribbon-for-outlook"></a>自定义 Outlook 功能区
   在 Microsoft Office Outlook 中自定义功能区时，必须考虑自定义功能区在应用程序中出现的位置。 在主应用程序用户界面 (UI) 和用户执行某些任务（例如创建电子邮件消息）时打开的窗口中，Outlook 会显示功能区。 这些应用程序窗口被命名为检查器。  

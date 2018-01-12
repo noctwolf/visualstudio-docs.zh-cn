@@ -18,17 +18,15 @@ helpviewer_keywords:
 - performance testing [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, performance testing
 - profiling [SharePoint development in Visual Studio]
-ms.assetid: 61ae02e7-3f37-4230-bae1-54a498c2fae8
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 70c058f6c930b9eb58cf0518d3418ccedcf083b4
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 7130e9393786f28f800b8448cfd52a54369f3fdc
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>分析 SharePoint 应用程序的性能
   如果 SharePoint 应用程序正在执行速度缓慢或效率低下，你可以使用 Visual Studio 中的分析功能来识别有问题的代码和其他元素。 通过使用负载测试功能，可以确定 SharePoint 应用程序在压力，如多个用户同时访问应用程序时的执行方式。 通过运行 web 性能测试，可以测量应用程序在 web 上找到的执行方式。 通过使用编码的 UI 测试，你可以验证整个 SharePoint 应用程序，包括其用户界面，是否工作正常。 当在一起使用这些测试时，它们可以帮助你在部署你的应用程序之前识别性能问题。  

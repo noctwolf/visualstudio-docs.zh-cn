@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 959622dff7770d314dc5fa2da1e8a81ade34cac4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>远程调试 Visual Studio 中的 C# 或 Visual Basic 项目
 若要调试的 Visual Studio 应用程序已部署在另一台计算机，安装和其中部署您的应用程序的计算机上运行远程工具，你将项目配置为从 Visual Studio 中，连接到远程计算机，然后运行你的应用程序。
@@ -40,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 > 不支持调试通过代理连接的两台计算机之间。 国家/地区中调试通过高延迟或低带宽连接，如拨号 Internet，或通过 Internet 不建议和可能失败也是非常慢。
   
-## <a name="download-and-install-the-remote-tools"></a>下载和安装远程工具
+## <a name="download-and-install-the-remote-tools"></a>下载并安装远程工具
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

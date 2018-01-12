@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, packaging
-ms.assetid: fc1cbd2a-0166-4f2f-a81b-4dac2fa7b0f3
-caps.latest.revision: "10"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 895bb4f7bde787a135699e4197622037413a1869
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 81e6f83dd4fc825e885843a47d45485918f7dabe
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="merging-xml-in-feature-and-package-manifests"></a>合并功能和包清单中的 XML
   通过定义功能和包[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单文件。 这些打包的清单是从设计器和自定义生成的数据的组合[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单模板中输入的用户。 在打包时，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]合并自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]与设计器提供的语句[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]以组成打包[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单文件。 类似元素，与更高版本中合并的异常，记下的异常合并，以避免[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]验证错误后将文件部署到 SharePoint，并使清单文件更小、 更有效。  

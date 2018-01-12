@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, reference
 - Office development in Visual Studio, unmanaged API reference
-ms.assetid: cdbc70b1-1f98-43dc-a619-07d805e53dce
-caps.latest.revision: "12"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3a48af1199b041ef59c3e31e4e9496d78d21aec1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 640e292719f8d466ba21cc449ea624527b50bcf0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>非托管 API 参考（Visual Studio 中的 Office 开发）
   从 2007 Microsoft Office system 开始，Office 应用程序使用[IManagedAddin 接口](../vsto/imanagedaddin-interface.md)接口来调用的 VSTO 外接程序加载程序组件附带[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 此组件用于帮助加载托管 VSTO 外接程序。可以通过实现此接口来创建自己的 VSTO 外接程序加载程序组件。  

@@ -13,17 +13,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio
-ms.assetid: 4bfb1e59-97c9-4594-93f8-3068b4eb9631
-caps.latest.revision: "25"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5ed1a399a121f1f3ca1ba601fe5a9293f1e88dac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 84cc2df4bd683315676acaa7e3f0eead1c36e859
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="create-sharepoint-solutions"></a>创建 SharePoint 解决方案
   你可以将在 Visual Studio 中创建 SharePoint 应用程序作为在 SharePoint 设计器中创建它们的替代方法。 Visual Studio 可通过提供诸如高级调试工具、IntelliSense、语句完成和项目模板等功能加快对 SharePoint 的开发。 Visual Studio 还会利用基于 .NET Framework 的高级工具和语言。 你可以通过使用 Visual Basic 或 Visual C# 来开发 SharePoint 项目，也可以通过使用 JavaScript 来开发 SharePoint 应用程序。  

@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], extending a node
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
-ms.assetid: 86d04e0a-c114-427e-9945-da5fa339fda4
-caps.latest.revision: "7"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: fa518bf566671dda2b54489fa37460840365bc70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cf70fe2e24f88ba64ab648d18d93907de0ddbfaf
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>如何：为服务器资源管理器中的内置 SharePoint 节点获取数据
   在每个内置 SharePoint 节点**服务器资源管理器**，则可以在该节点表示的基础 SharePoint 组件中获取数据。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。  

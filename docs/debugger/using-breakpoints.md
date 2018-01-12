@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 20f1b517d271bd50cdb96c595f2e8ab9be7c5e65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 也许你会为了查看代码变量的状态或查看调用堆栈而想要停止调试程序执行，此时，你可以设置断点。 在开发人员的工具箱中，它们是最重要的调试技术之一。  
@@ -232,7 +232,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="export-and-import-breakpoints"></a>导出和导入断点  
  右键单击断点并选择 **“导出”**可以将断点导出到 XML 文件。 该文件默认保存在解决方案目录中。 要导入断点，请打开“断点”  窗口 (“CTRL + ALT + B”)，并在工具栏上单击向右箭头（工具提示为“从文件中导入断点” ）。  
   
-## <a name="troubleshoot-breakpoints"></a>断点疑难解答  
+## <a name="troubleshoot"></a>断点疑难解答 
   
 ### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>我删除了断点，但在再次启动调试时继续命中该断点  
  如果在调试时删除了断点，则某些情况下，可能会在下次启动调试时再次命中该断点。 要停止命中此断点，请确保从 **“断点”** 窗口删除该断点的所有实例。  

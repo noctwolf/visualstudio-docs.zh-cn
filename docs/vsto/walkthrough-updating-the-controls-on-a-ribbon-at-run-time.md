@@ -17,17 +17,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dynamic menu
 - dynamic menus [Office development in Visual Studio]
 - Ribbon [Office development in Visual Studio], updating
-ms.assetid: ed80790f-3f95-47e4-8a41-872588a8ca07
-caps.latest.revision: "51"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 9ca505ff6e61962cd360a3f8413a69abe92e377f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 39952d1059833c92d3d5e8c277faac1b47c6e80b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-updating-the-controls-on-a-ribbon-at-run-time"></a>演练：在运行时更新功能区上的控件
   本演练演示了如何使用功能区对象模型在功能区加载到 Office 应用程序之后，更新该功能区上的控件。  

@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Project [Office development in Visual Studio], creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
-ms.assetid: da2b727e-6db8-4853-bf00-7afe0ef13213
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 391bd4bbdfe87f1bc00ac14356c61f988b8bf041
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1e1b768a8d812d3a4c0222bbb3e762c0f5046f56
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-project"></a>演练：创建你的第一个 Project VSTO 外接程序
   本演练显示如何为 Microsoft Office Project 创建 VSTO 外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的项目无关。 有关详细信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  

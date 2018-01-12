@@ -11,17 +11,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
-ms.assetid: da14207d-ac09-41ba-b387-c7f881b2a366
-caps.latest.revision: "54"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a3c2ff276d6f432a4b3cabcaa4aa1b27b033676e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f0472688f9f36d2b14c89cc904bf6ce4badd6ca6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>演练：使用项目模板创建网站栏项目项（第 2 部分）
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项目模板后，你可能还想要模板提供的向导。 该向导可用于从用户收集信息，在他们使用你的模板来创建一个包含项目项的新项目。 你收集的信息可以用于初始化项目项。  

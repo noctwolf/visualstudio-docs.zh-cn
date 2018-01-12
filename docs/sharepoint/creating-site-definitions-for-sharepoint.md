@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-ms.assetid: 83db570d-6b9f-4dab-9e71-db41f17b987a
-caps.latest.revision: "21"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 98be671e456c75c4be79994c84bf1ed6ae5114de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d29ab819dfc7efd04d27652ab3d711c89045847c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>创建 SharePoint 网站定义
   中的 SharePoint 网站定义项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]允许你创建*站点定义*，它用作新的 SharePoint 站点的基础。 这些定义不仅确定的外观和行为的 SharePoint 站点，但还自己的默认内容和功能。 在定义中，您可以放入预配置的列表、 内容类型、 事件接收器、 图像和其他项。 例如 SharePoint 包含某些网站定义（如 BLOG）。 在创建了基于博客站点定义的网站时，网站包含列表、 Web 部件和博客网站所需的其他项。  

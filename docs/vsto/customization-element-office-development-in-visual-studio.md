@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: application manifests [Office development in Visual Studio], <customization> element
-ms.assetid: a3bf7f35-bd98-4530-9226-46489cd37bb1
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 922e68a676f1f8ceac547983436c76ac01facc3b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b8e1c2c21fe5cf3a038066a47f50fe4b813b277e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;自定义&gt;元素 （Visual Studio 中的 Office 开发）
   `customization` 命名空间的 `vstov4` 元素描述特定 Office 解决方案。 对于文档级自定义项和 VSTO 外接程序，子元素是不同的。  

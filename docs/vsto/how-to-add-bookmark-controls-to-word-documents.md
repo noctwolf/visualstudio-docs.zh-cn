@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Bookmark control, adding to documents
 - Create Bookmark Control dialog box
 - controls [Office development in Visual Studio], adding to documents
-ms.assetid: 2940704e-31f5-4486-854e-76298a9e2ee4
-caps.latest.revision: "52"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 86e23b3240739a063a738a984de936d8848fba9d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2ebe8536887f2f60876b64407ffb96cdaf4618c9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>如何：向 Word 文档添加书签控件
   在文档级项目中，你可以在设计时或在运行时向项目中的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 在 VSTO 外接程序项目中，可以在运行时向任何打开的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。  

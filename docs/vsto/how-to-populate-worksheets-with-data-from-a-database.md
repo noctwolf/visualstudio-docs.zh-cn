@@ -14,17 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], populating
 - databases [Office development in Visual Studio], populating worksheets
 - data [Office development in Visual Studio], adding to worksheets
-ms.assetid: e9e37cf1-53ca-45d0-8409-5428be7f96c5
-caps.latest.revision: "39"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6efeccfdaa6b3377869fb20f9c66613960529daf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5a5cfe5d15e1b883de46809523f1d1acaecddc91
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>如何：用数据库中的数据填充工作表
   可以对文档级 Office 项目中的数据访问与访问 Windows 窗体项目中的数据的方式相同。 使用相同的工具和代码将数据引入解决方案，然后即可使用 Windows 窗体控件来显示该数据。 此外，你可以利用称为是在 Microsoft Office Excel 中借助事件和数据绑定容量进行增强的本机对象的宿主控件的控件。 有关更多信息，请参见 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  

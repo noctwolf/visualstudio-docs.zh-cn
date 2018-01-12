@@ -32,11 +32,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到运行的进程
 你可将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。 进程正在运行后，单击**调试 > 附加到进程**(或按**CTRL + ALT + P**) 以打开**附加到进程**对话框。
@@ -147,10 +147,7 @@ ms.lasthandoff: 12/22/2017
 |调试服务器进程上的其他支持的应用类型|使用远程工具 （如果 server 是远程服务器） 并附加到进程|iexplore.exe 或其他进程|如有必要，使用任务管理器帮助标识该进程。 请参阅[远程调试](../debugger/remote-debugging.md)和本主题中后面的部分|
 |远程调试 Windows 桌面应用程序|远程工具和 F5|不可用| 请参阅[远程调试](../debugger/remote-debugging.md)|
 |远程调试通用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试安装的应用包|不可用|请参阅[调试安装的应用程序包](debug-installed-app-package.md)而不是使用**附加到进程**|
-|调试未从 Visual Studio 启动的通用 Windows 应用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试安装的应用包|不可用|请参阅[调试安装的应用程序包](debug-installed-app-package.md)而不是使用**附加到进程**|
-  
-> [!WARNING]
->  若要附加到用 JavaScript 编写的 UWP，你必须首先为应用启用调试。 请参阅[将调试器附加](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger)Windows 开发人员中心中。  
+|调试未从 Visual Studio 启动的通用 Windows 应用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试安装的应用包|不可用|请参阅[调试安装的应用程序包](debug-installed-app-package.md)而不是使用**附加到进程**|  
   
 > [!NOTE]
 >  为使调试器附加到用 C++ 编写的代码，该代码需要发出 `DebuggableAttribute`。 可通过链接 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) 链接器选项将它自动添加到代码中。

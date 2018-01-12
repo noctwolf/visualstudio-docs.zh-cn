@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - data [Office development in Visual Studio], adding to documents
-ms.assetid: 83e6ebac-e468-4bef-a91c-78c7bf597a75
-caps.latest.revision: "41"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 2ecc8e8ce76c2212d9921cc9b15ead7a7b22316e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 02f2b735ceb473f7ffe55345c1cd45dc084edb80
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>如何：用对象中的数据填充文档
   在 Microsoft Office Word 文档级项目中，访问数据对象中的数据与访问 Windows 窗体项目中的数据的方式相同。 使用相同的工具和代码将数据从对象引入解决方案，然后即可使用 Windows 窗体控件来显示该数据。 此外，还可以使用主机控件来显示数据。 主机控件是指 Microsoft Office Word 中借助事件和数据绑定容量进行增强的本地对象。 有关更多信息，请参见 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8c27307155a56aae07b69c02c6cbdf3da72059b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8b30c782cea694fdc400cd84047f7ab1add823b
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：从 XML 架构生成 XML 代码段
 “XML 编辑器”可以从 XML 架构定义语言 (XSD) 架构生成 XML 代码段。 例如，在编写 XML 文件时，如果位置在元素名的旁边，可以通过按 TAB 键，使用从该元素的架构信息生成的 XML 数据来填充该元素。  
@@ -138,7 +138,7 @@ ms.lasthandoff: 12/22/2017
     </xs:complexType>  
   </xs:element>  
 </xs:schema>  
-```  
+```
   
 ### <a name="output"></a>输出  
  以下是根据与 `Contact` 元素关联的架构信息生成的 XML 数据。 项标记为`bold`指定 XML 代码段中的可编辑字段。  
@@ -152,7 +152,7 @@ ms.lasthandoff: 12/22/2017
     <Type>Voice</Type>  
   </Phone>  
 </Contact>  
-```  
+```
   
 ## <a name="see-also"></a>请参阅  
  [XML 代码段](../xml-tools/xml-snippets.md)   

@@ -21,17 +21,15 @@ helpviewer_keywords:
 - programming [Office development in Visual Studio]
 - VSTO, see Office development in Visual Studio
 - Office, development with Visual Studio
-ms.assetid: 2ddec047-263a-4901-a54c-a15fc8472329
-caps.latest.revision: "88"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: db8c6e3363cf1a67dfef5f3dd606dd65ed6f7a94
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b0692b0320a8741351391f82b694089910bae4f8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 Office 和 SharePoint 开发
   可以通过创建用户从 [Office 应用商店](https://store.office.com/) 或组织目录中下载的轻量级应用程序或外接程序来扩展 Microsoft Office 和 SharePoint，或者通过创建用户在计算机上安装的基于 .NET Framework 的解决方案来扩展。  

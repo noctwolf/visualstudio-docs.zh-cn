@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, deploying solutions
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
-ms.assetid: feb516b3-5e4d-449a-9fd2-347d08d90252
-caps.latest.revision: "59"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0076eea1fa8866ad90bf4125583ed8359916de4a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a989fe2bc88d25ad81238b65bf8ecd775c39bc35
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploying-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 解决方案
   如果使用 ClickOnce，则部署 Office 解决方案的步骤更少。 如果发布更新，解决方案将自动检测并安装更新。 不过，ClickOnce 需要你分别为计算机的每个用户安装解决方案。 因此，如果有多个用户将在同一计算机上运行你的解决方案，应考虑使用 Windows Installer (.msi)。  

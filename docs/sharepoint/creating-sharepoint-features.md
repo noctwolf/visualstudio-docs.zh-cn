@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 - features [SharePoint development in Visual Studio]
-ms.assetid: 2e211fb3-94f4-4921-ba77-2ba6717a3e41
-caps.latest.revision: "20"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a6917a8909bed30319d104f45398409b4ba367f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9fa42efc654bd3835a4f1ec1a5002136813550a0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-sharepoint-features"></a>创建 SharePoint 功能
   SharePoint 功能可用于更易于部署的相关的 SharePoint 项目项进行分组。 你可以创建功能、 设置作用域，并通过使用 SharePoint 功能设计器将其他功能标记为依赖关系。 设计器还会生成一个清单，这是一个 XML 文件，描述每个功能。  

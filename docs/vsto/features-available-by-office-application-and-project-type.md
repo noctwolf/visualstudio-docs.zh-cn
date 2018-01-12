@@ -19,17 +19,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], features available
 - add-ins [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], features available
-ms.assetid: 3e9aa4d3-affb-4f76-bc67-49fe5f26a6a1
-caps.latest.revision: "53"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6a0f2e0b87e791618477ff6e11c9e180793d5495
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b79c7a913e8ce06b1d833f78aad9e8565d54aff2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>按 Office 应用程序和项目类型提供的功能
   Visual Studio 具有几种类型的项目模板，它们支持 Microsoft Office 应用程序的不同业务方案，包括以下类型：  

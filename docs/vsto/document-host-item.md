@@ -18,17 +18,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio]
 - Word documents
 - host items [Office development in Visual Studio], Document
-ms.assetid: 4c1963f2-e88e-4c68-9f3d-13dedebddde4
-caps.latest.revision: "47"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: fc24568849b2a5e6b9b1a55f9b07b15a34ee1f17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 85c3520d852575eef6e9dae1fd8c1120b9eccd74
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="document-host-item"></a>文档宿主项
   <xref:Microsoft.Office.Tools.Word.Document> 宿主项这种类型从 Word 的主互操作程序集扩展类型 <xref:Microsoft.Office.Interop.Word.Document> 。 <xref:Microsoft.Office.Tools.Word.Document> 宿主项提供与 <xref:Microsoft.Office.Interop.Word.Document> 对象完全相同的属性、方法和事件，但它还公开其他事件并充当宿主控件和 Windows 窗体控件的容器。  

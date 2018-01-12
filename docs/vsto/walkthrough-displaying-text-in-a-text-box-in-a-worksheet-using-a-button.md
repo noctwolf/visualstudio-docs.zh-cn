@@ -15,17 +15,15 @@ helpviewer_keywords:
 - worksheets, displaying text
 - text boxes, displaying text in worksheets
 - text [Office development in Visual Studio], text boxes
-ms.assetid: 59b73159-aab7-4f61-9ace-1723c18d78d6
-caps.latest.revision: "56"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 7743a3d1c0548b444343b3dc96b25eabac4ac951
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7b88940aa1329bc330e5d8bb7d114c21fac3dacb
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>演练：使用按钮在工作表的文本框中显示文本
   本演练演示在 Microsoft Office Excel 工作表，以及如何创建使用 Visual Studio 中的 Office 开发工具的 Excel 项目中使用按钮和文本框的基础知识。 若要查看结果为已完成的示例，请参阅 Excel 控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  

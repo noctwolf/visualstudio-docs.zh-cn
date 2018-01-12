@@ -17,17 +17,15 @@ helpviewer_keywords:
 - templates [Office development in Visual Studio], Project
 - Office projects [Office development in Visual Studio], Project
 - solutions [Office development in Visual Studio], Project
-ms.assetid: 4ce92269-eb6d-44aa-bee3-6d38ec9995f9
-caps.latest.revision: "34"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: e824576ca8692fec6856d3b80eda7b8a2126561e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 39ee63d84ef0c7830da9c218a6e4c7b25f7bac99
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="project-solutions"></a>项目解决方案
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 提供可用于创建 Microsoft Office Project 的 VSTO 外接程序的项目模板。 VSTO 外接程序可用于自动运行项目、扩展项目功能或自定义项目用户界面 (UI)。  

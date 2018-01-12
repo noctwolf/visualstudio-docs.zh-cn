@@ -17,17 +17,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-ms.assetid: c1f16b4c-9291-49ed-9694-a83a37109612
-caps.latest.revision: "54"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c4f8d987b8079230591d4bfdbe51c6d640cbf265
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c21ea9555a125503230faa92a5e6508c192a8175
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="calling-code-in-vsto-add-ins-from-other-office-solutions"></a>从其他 Office 解决方案调用 VSTO 外接程序中的代码
   可以向其他解决方案（包括其他 Microsoft Office 解决方案）公开 VSTO 外接程序中的对象。 如果 VSTO 外接程序提供了你希望使其他解决方案能够使用的服务，这一点非常有用。 例如，如果某个 Microsoft Office Excel VSTO 外接程序从 Web 服务中执行财务数据计算，则其他解决方案可以通过在运行时调入该 Excel VSTO 外接程序来执行这些计算。  

@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: globalization [Office development in Visual Studio], configuring
-ms.assetid: c5fccd45-cb3a-441c-89bf-257e9faf4587
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ac0fc1ca0efe4134889d8bf5ac1d3ca9ae2551ef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 66c997dd8de6801d790b7653ca414cac0996ddc9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 解决方案的全球化和本地化
   本节包含有关 Microsoft Office Excel 解决方案的特殊注意事项的信息，这些解决方案将在具有 Windows 非英语设置的计算机上运行。 全球化和本地化 Microsoft Office 解决方案过程中所遇到的大多数问题与使用 Visual Studio 创建其他各种解决方案时遇到的问题相同。 有关一般信息，请参阅 [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)。  

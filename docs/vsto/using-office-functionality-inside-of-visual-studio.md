@@ -14,17 +14,15 @@ helpviewer_keywords:
 - security [Office development in Visual Studio], document protection
 - Office applications [Office development in Visual Studio]
 - Office functionality inside Visual Studio
-ms.assetid: 593fd583-57e5-4ed5-8489-89f73b886c6c
-caps.latest.revision: "15"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 38eb32ac983d81d3ef94431d6275da643f632ae9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa848d522096b5df12db113cf0c7272ab61c80be
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="using-office-functionality-inside-of-visual-studio"></a>在 Visual Studio 内使用 Office 功能
   当创建文档级项目时，文档和关联的应用程序承载在 Visual Studio 使你可以在设计和直接使用该文档。 如果必须在 Microsoft Office 应用程序在 Visual Studio 中打开，它通常按预期工作。 但是，某些应用程序是功能的不同的或不可访问。  

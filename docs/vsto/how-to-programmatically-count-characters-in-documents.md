@@ -14,17 +14,15 @@ helpviewer_keywords:
 - characters, counting in documents
 - counting characters in documents
 - documents [Office development in Visual Studio], counting characters
-ms.assetid: ab64fe87-896a-4b56-bdf8-91c4326b540e
-caps.latest.revision: "37"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 06f38d7e95bbe4b0f52b31f2f73584ff827e4225
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e1d22d8fc6f6e939ec349d185dad22bdb94d176d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>如何：以编程方式统计文档中的字符数
   文档中的第一个字符位于字符位置 0，它表示插入点。 末尾字符位置值与文档中的字符总数相同。 可以使用 <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> 集合的 <xref:Microsoft.Office.Interop.Word.Characters> 属性确定文档中的字符数。  

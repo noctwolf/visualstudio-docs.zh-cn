@@ -18,17 +18,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, application pages
 - application pages [SharePoint development in Visual Studio], developing
 - application pages [SharePoint development in Visual Studio], creating
-ms.assetid: a6e97149-15dd-4bdb-8d75-3b53f886f76c
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: e159efdfd709a0ef8950347a191bb4053ef715bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ae0580ed4f684f888175ae83afe21dbcd9bf42c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-application-pages-for-sharepoint"></a>为 SharePoint 创建应用程序页
   *应用程序页*是一个 ASP.NET Web 页，可用于 SharePoint 的网站。 应用程序页是 ASP.NET 页的专用的类型。 应用程序页和一个标准的 ASP.NET 页的主要区别是应用程序页包含与 SharePoint 母版页合并的内容。 母版页使应用程序页可以为站点上的其他页面共享相同的外观和行为。  

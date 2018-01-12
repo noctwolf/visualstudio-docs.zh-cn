@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - PowerPoint [Office development in Visual Studio], creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
-ms.assetid: 52d1543a-c9cb-4ee1-aa5b-90759fce9d3a
-caps.latest.revision: "34"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3d0f0a2162c4144c6a9fd67650d467b9828a3add
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eec0f2eaf7cc415e026a8427f7a881cd7ed15160
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>演练：创建你的第一个 PowerPoint VSTO 外接程序
   本演练显示如何为 Microsoft Office PowerPoint 创建 VSTO 外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的演示文稿无关。 有关详细信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  

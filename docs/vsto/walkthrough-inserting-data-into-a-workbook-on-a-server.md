@@ -16,17 +16,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], accessing on server
 - documents [Office development in Visual Studio], server-side data access
 - workbooks [Office development in Visual Studio], inserting data
-ms.assetid: e6481902-781c-4666-bc18-4d69368c9bb3
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ea64eaa32d43369ad264c8ddfce49d5a070a311a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 389252ed9457935c86dcaca0ce8a9a5733202d94
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-inserting-data-into-a-workbook-on-a-server"></a>演练：将数据插入到服务器上的工作簿中
   本演练演示如何将数据插入 Microsoft Office Excel 工作簿中缓存而不启动 Excel 通过使用数据集<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类。  

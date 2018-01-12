@@ -14,17 +14,15 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-ms.assetid: c5eb4900-c35f-490a-b856-bf167da2d293
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 290f5d4b3632d5c3ee40e7171aa4a0ed967004dc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a4318550e74d5324195de173659d96abaf952979
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何：向 SharePoint 项目中添加属性
   项目扩展可用于将属性添加到任何 SharePoint 项目。 属性将显示在**属性**窗口中选定项目**解决方案资源管理器**。  

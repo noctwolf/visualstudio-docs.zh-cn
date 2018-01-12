@@ -18,17 +18,15 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], Outlook
 - Outlook [Office development in Visual Studio]
 - e-mail [Office development in Visual Studio], Outlook solutions
-ms.assetid: 2ae3cd9c-bf31-4efa-8b18-b6b1c34a8d93
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3692e6b224297175d8466a993b0dc16cc7827294
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c2ee35159e978150e7b63bacac127d5f7b8236c5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="outlook-solutions"></a>Outlook 解决方案
   Visual Studio 提供可用于创建 Microsoft Office Outlook 的 VSTO 外接程序的项目模板。 VSTO 外接程序可用于自动执行 Outlook、扩展 Outlook 功能或自定义 Outlook 用户界面 (UI)。 有关 VSTO 外接程序的详细信息，请参阅 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。  

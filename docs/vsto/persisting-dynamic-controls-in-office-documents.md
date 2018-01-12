@@ -18,17 +18,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 - documents [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], persisting in the document
-ms.assetid: 200352d1-66aa-4156-9ecd-6fd8792974cd
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8aef9cc040e6a1bc2449e8b0c5b7de91083b98e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 10f5840b085ce55485734c9287972a743859c3ef
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="persisting-dynamic-controls-in-office-documents"></a>在 Office 文档中保存动态控件
   保存并关闭文档或工作薄后，运行时添加的控件不会保留。 具体的行为与宿主控件和 Windows 窗体控件不同。 在这两种情况下，都可以为解决方案添加代码，在用户重新打开该文档时重新创建这些控件。  

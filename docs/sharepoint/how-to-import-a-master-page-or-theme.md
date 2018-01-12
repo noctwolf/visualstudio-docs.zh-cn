@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, importing items
 - importing items [SharePoint development in Visual Studio]
-ms.assetid: 8b446cca-2adb-457b-bbfd-891209290e80
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 447fa8749958a3fa2b65a6ef7eb878b906170e6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 07c3e9fb88ea562a85e1c7555d2c57cb04d769ff
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>如何：导入母版页或主题
   你可以通过为提供页你 SharePoint 站点上一致的外观创建和使用母版页和主题。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不提供模板对这些元素，但是，你可在 SharePoint Designer 中创建它们，然后将其导入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关详细信息，请参阅[构建基块： 页和用户界面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 网站上。  

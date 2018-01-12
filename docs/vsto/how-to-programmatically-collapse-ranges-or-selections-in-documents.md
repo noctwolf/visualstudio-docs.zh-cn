@@ -16,17 +16,15 @@ helpviewer_keywords:
 - collapsing selections
 - ranges, collapsing
 - collapsing ranges
-ms.assetid: 0bd059dd-8606-42ae-a8a9-97f8f3bd5cc5
-caps.latest.revision: "42"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c69fa3a13c251c31aff6ca54ccc0a553e293347a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c3d3c4d81f8da08e90d7d5588ecaed8e548824a5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>如何：以编程方式折叠文档中的范围或选定内容
   如果你在使用 <xref:Microsoft.Office.Interop.Word.Range> 或 <xref:Microsoft.Office.Interop.Word.Selection> 对象，则可能要在插入文本之前更改对插入点的选择，以避免覆盖现有文本。 同时<xref:Microsoft.Office.Interop.Word.Range>和<xref:Microsoft.Office.Interop.Word.Selection>对象具有折叠方法，利用<xref:Microsoft.Office.Interop.Word.WdCollapseDirection>枚举值：  
