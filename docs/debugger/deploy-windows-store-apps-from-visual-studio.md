@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 359431356bb06a04857b93e10996a2123c80f129
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio 中的 UWP 应用部署
 ![仅适用于 Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -59,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 在 Windows 10 的远程设备，你必须启用[开发者模式](/windows/uwp/get-started/enable-your-device-for-development)。 在运行创建者的更新的 Windows 10 设备上或更高版本，远程工具在部署你的应用程序时自动安装。 有关详细信息，请参阅[调试已安装的应用程序包](../debugger/debug-installed-app-package.md)。
 
 > [!NOTE]
-> 在 Windows 8.1 和以前的创建者的更新版本的 Windows 10 上，必须在远程设备上，安装 Visual Studio 远程工具，并且必须运行远程调试器。 在 Windows 8.1 上，你还必须安装开发人员许可证。
+> 在 Windows 8.1 和以前的创建者的更新版本的 Windows 10 上，必须在远程设备上，安装适用于 Visual Studio 的远程工具，并且必须运行远程调试器。 在 Windows 8.1 上，你还必须安装开发人员许可证。
   
 部署使用远程调试器网络渠道将应用文件发送到远程设备。  
   
@@ -101,7 +101,7 @@ ms.lasthandoff: 12/22/2017
  你可以在启动项目的“调试”属性页上设置以下部署选项。  
   
  **允许网络环回**  
- 为安全起见，不允许以标准方式安装的 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用对装有它的设备进行网络调用。 默认情况下，Visual Studio 部署功能为所部署的应用程序创建此规则的例外。 通过此例外，在一台计算机上即可测试通信过程。 向 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]提交应用之前，应在没有例外的情况下测试应用。  
+ 出于安全原因，UWP 或[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]不允许以标准方式安装应用程序进行网络调用对装有它的设备。 默认情况下，Visual Studio 部署功能为所部署的应用程序创建此规则的例外。 通过此例外，在一台计算机上即可测试通信过程。 向 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]提交应用之前，应在没有例外的情况下测试应用。  
   
  若要从应用中移除网络环回例外，请执行以下操作：  
   
