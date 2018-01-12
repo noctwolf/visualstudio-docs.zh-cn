@@ -16,17 +16,15 @@ helpviewer_keywords:
 - Office primary interop assemblies in Visual Studio, adding references to
 - Office applications [Office development in Visual Studio], automating
 - application development [Office development in Visual Studio], automating
-ms.assetid: 9bedae85-32b6-4df6-82b2-9d124fb49636
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: bf714645f126f8a6f5e8aaca3ee6a2721bfe0a71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f6634a8aa51c1c09180a249212752e440c5841e8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>How to: Target Office Applications Through Primary Interop Assemblies
   在创建新的 Office 项目时，Visual Studio 会自动添加对生成该项目所需的 Microsoft Office 主互操作程序集 (PIA) 的引用。 在以下方案中，必须添加对其他 PIA 的引用：  

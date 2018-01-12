@@ -14,17 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment modules
 - SharePoint development in Visual Studio, modules
 - modules [SharePoint development in Visual Studio]
-ms.assetid: 74d1d69f-5cd9-452f-8d35-e1f4d8a084fd
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: f340d0a8c713aedc6ee74aa598c7170495ac8c01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c7f0fff081215e1bf1a9e2c5320668f2c698b2e6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>使用模块包括解决方案中的文件
   可能有些时候你可能想要将文件部署到 SharePoint 服务器而不考虑其文件类型，如新的主页面。 若要执行此操作，可以使用*模块*(无法将其与混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]代码模块)。 模块是 SharePoint 解决方案中的文件的容器。 时部署了解决方案，该模块中的文件会复制到 SharePoint 服务器上的指定文件夹中。  

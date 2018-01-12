@@ -10,17 +10,15 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-ms.assetid: 0bd1c6a6-67a5-4478-b942-8b937b28f723
-caps.latest.revision: "12"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 150c8794fb35ca017be7e0873dc0d1b84ebfc38c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7b132c51e12d553bcd6e722e87c8aeee96be5e5c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="iwefdebuggingsupport-interface"></a>IWefDebuggingSupport 接口
   由调试环境中，如 Visual Studio 中，为了便于调试 office 应用程序的实现。 Office 应用程序，如 Word 或 Excel，将从 Visual Studio 中获得此接口，然后在某些点接口上在调试会话期间调用方法。  

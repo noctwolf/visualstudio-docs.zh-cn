@@ -20,17 +20,15 @@ helpviewer_keywords:
 - sandboxed solutions [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, farm solutions
 - farm solutions [SharePoint development in Visual Studio]
-ms.assetid: 6c2d2dc6-4acb-4b68-ba94-a61087e8dff0
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 2dcf8040217a13688dc1ff33183f237f0f58bbcf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0b510097dc21c385f67a9358eaca3997cbdc2316
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="sandboxed-solution-considerations"></a>Sandboxed Solution Considerations
   *沙盒解决方案*是使站点集合用户能够上载其自己的自定义代码的解决方案的 Microsoft SharePoint 2010 中的功能。 常见的沙盒解决方案是将 Web 部件添加自己的用户。  

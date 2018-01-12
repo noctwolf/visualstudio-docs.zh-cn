@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords: deployment, local folder
@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3b97ca67c9e8d8a4cfb7d99a6c518c8e49a8c426
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4e575a6d885b079c1c5afd0af6cbdadcd1d38d96
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>将 web 应用或.NET Core 应用部署到使用 Visual Studio 发布工具的本地文件夹
 
@@ -28,17 +28,17 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="create-a-new-project"></a>创建新项目 
 
-1. 在 Visual Studio 中，选择**文件 > 新建项目**。
+1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
 1. 下**Visual C#**或**Visual Basic**，选择**.NET 核心**，，然后在中间窗格中选择**控制台应用程序 (.NET Core)**。
 
 1. 键入的名称，例如**MyLocalApp**单击**确定**。
 
-    Visual Studio 创建项目。
+    Visual Studio 随即创建项目。
 
 ## <a name="deploy-to-a-local-folder"></a>将部署到本地文件夹
 
-1. 在解决方案资源管理器，右键单击该项目并选择**发布**。
+1. 在解决方案资源管理器中，右键单击项目，选择“发布”。
 
     ![选择发布](../deployment/media/quickstart-publish.png "选择发布")
 

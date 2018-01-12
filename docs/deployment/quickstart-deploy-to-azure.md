@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords: deployment, website
@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: azure
-ms.openlocfilehash: 7008ac8ea30e704403542b7b9786cffb1c5da158
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 52da1a2e618d9ececa1c8fd0d90a86e651cd7fde
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>向 Azure App Service 中使用 Visual Studio 发布 ASP.NET 或 ASP.NET Core 应用
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="create-a-new-project"></a>创建新项目 
 
-1. 在 Visual Studio 中，选择**文件 > 新建项目**。
+1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
 1. 下**Visual C#**或**Visual Basic**，选择**Web**，然后在中间窗格中选择**ASP.NET Web 应用程序 (.NET Framework)**或 (仅限 C#) **ASP.NET 核心 Web 应用程序**，然后单击**确定**。
 
@@ -36,13 +36,13 @@ ms.lasthandoff: 01/05/2018
 
 1. 键入的名称，例如**MyWebApp**单击**确定**。
 
-    Visual Studio 创建项目。
+    Visual Studio 随即创建项目。
 
 1. 选择**生成 > 生成解决方案**以生成项目。
 
 ## <a name="publish-to-azure-app-service"></a>发布到 Azure 应用服务
 
-1. 在解决方案资源管理器，右键单击该项目并选择**发布**。
+1. 在解决方案资源管理器中，右键单击项目，选择“发布”。
 
     ![选择发布](../deployment/media/quickstart-publish-aspnet.png "选择发布")
 

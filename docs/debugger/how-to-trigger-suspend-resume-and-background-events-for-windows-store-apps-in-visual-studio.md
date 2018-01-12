@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何在触发挂起、 继续和后台事件调试 Visual Studio 中的 UWP 应用时
 不调试时，Windows **进程生命期管理** (PLM) 根据用户操作和设备状态控制应用程序的执行状态 - 启动、挂起、继续和终止应用程序。 在调试时，Windows 禁用这些激活事件。 本主题介绍如何在调试器中触发这些事件。  
@@ -109,7 +109,7 @@ ms.lasthandoff: 01/05/2018
      ![挂起、 继续、 终止和后台任务](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> 从安装的应用程序中触发进程生命期管理事件和后台任务  
- 使用“调试安装的应用程序”对话框加载已安装到调试器中的应用程序。 例如，你可能调试已从 Microsoft 应用商店安装的应用程序或已安装应用程序中的源文件而不是应用程序的 Visual Studio 项目时调试应用。 利用“调试安装的应用程序”对话框，您可以在 Visual Studio 计算机或远程设备上在调试模式下启动应用程序，也可以将应用程序设置为在调试模式下运行但不启动应用程序。 有关更多信息，请参见 **JavaScript** 或 [Visual C++、Visual C# 和 Visual Basic](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) 版本的 [如何启动调试会话](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) 的 **在调试器中启动安装的应用程序** 部分。  
+ 使用“调试安装的应用程序”对话框加载已安装到调试器中的应用程序。 例如，你可能调试已从 Microsoft 应用商店安装的应用程序或已安装应用程序中的源文件而不是应用程序的 Visual Studio 项目时调试应用。 利用“调试安装的应用程序”对话框，您可以在 Visual Studio 计算机或远程设备上在调试模式下启动应用程序，也可以将应用程序设置为在调试模式下运行但不启动应用程序。 请参阅**在调试器中启动已安装的应用程序**部分[启动调试会话中的 UWP 应用](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger)。
   
  在将应用程序加载到调试器中后，您可以使用上述任意过程。  
   

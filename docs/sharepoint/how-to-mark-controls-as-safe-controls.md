@@ -16,17 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-ms.assetid: 813727d5-6750-407c-a23e-c38dd611e78c
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: bd659a1df9782c4e16dd2664a27a87e858e54ef2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9d34722f7dc9b9975429fac64311dd0b63c30fbe
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>如何：将控件标记为安全控件
   为安全起见，SharePoint 区别不受脚本注入的 Web 控件和 Web 控件不是。 受保护控件，或*安全控件*，可以访问受信任的用户。 你可以将标记为安全地执行安全控件项属性的 SharePoint 项目项或控件**包设计器**时向包中添加程序集。 有关详细信息，请参见  

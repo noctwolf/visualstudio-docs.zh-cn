@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Ribbon [Office development in Visual Studio], object model
-ms.assetid: cae24f66-e980-41ee-a915-d4c8e03efbc1
-caps.latest.revision: "75"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 1ca5b96157ee6077d4e904d21ba2a95c4f059e02
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bda61cd7ca0e169a4f62fbc0c33b24e3c4ec0048
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ribbon-object-model-overview"></a>功能区对象模型概述
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]公开一个可用于获取和设置在运行时的功能区控件的属性的强类型的对象模型。 例如，你可以动态填充菜单控件，或显示和隐藏控件根据上下文。 向功能区，但只能在功能区加载 Office 应用程序之前，还可以添加选项卡、 组和控件。 有关信息，请参阅[设置变成只读属性的属性](#SettingReadOnlyProperties)。  

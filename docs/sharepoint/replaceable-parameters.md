@@ -17,17 +17,15 @@ helpviewer_keywords:
 - tokens [SharePoint development in Visual Studio]
 - replaceable parameters [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, replaceable parameters
-ms.assetid: 3c46bbb1-0a98-495c-9fd1-dc57a6aedc11
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ed085a38b77f7c323451e8209902bece3747ddb1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa002f58ffd749cef9a4cbf9b536a36d7901b105
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="replaceable-parameters"></a>可替换参数
   可替换参数，或*令牌*，可以在项目文件内使用，为其实际值在设计时未知的 SharePoint 解决方案项提供值。 它们在功能上类似于标准 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 模板标记。 有关详细信息，请参阅[模板参数](/visualstudio/ide/template-parameters)。  

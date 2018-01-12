@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Office development in Visual Studio, samples
-ms.assetid: 9ebc7de2-59dd-414c-888b-7549d3c3543c
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 89311ac792a5dfd55497ccdadea89289dca11ff5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 33f9d5ebea74ca17693959a20ba568e42d824128
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="office-development-samples"></a>Office 开发示例
   Visual Studio 包含示例应用程序，这些应用程序演示如何使用 Microsoft Office 开发人员工具来创建 Office 解决方案。 这些示例中的代码阐释了用于生成 Office 解决方案的语法、结构和技术。  

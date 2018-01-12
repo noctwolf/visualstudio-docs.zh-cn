@@ -23,16 +23,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6250a6b5cdf502d95aea3aaec033acaad826de42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 93deb8c5a8d4d17597db0fa2f93f097b4839e88b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>快速入门：使用控制台调试 JavaScript
 ![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- 可以使用 JavaScript 控制台窗口与交互和调试使用 JavaScript 生成的 UWP 应用。 这些功能支持[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用、 Windows Phone 应用程序，以及使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关控制台命令参考的信息，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
+ 可以使用 JavaScript 控制台窗口与交互和调试使用 JavaScript 生成的 UWP 应用。 适用于 UWP 应用支持这些功能[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用、 Windows Phone 应用程序，以及使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关控制台命令参考的信息，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
   
  “JavaScript 控制台”窗口允许你执行以下操作：  
   
@@ -269,7 +269,7 @@ ms.lasthandoff: 12/22/2017
 ##  <a name="BrowserSupport"></a> 浏览器和平台支持  
  在以下平台上支持 JavaScript 控制台窗口：  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]和使用 JavaScript 和 HTML 的 Windows Phone 应用  
+-   UWP 应用[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]，并使用 JavaScript 和 HTML 的 Windows Phone 应用  
   
 -   在 [!INCLUDE[win81](../debugger/includes/win81_md.md)]上运行的 Internet Explorer 11  
   

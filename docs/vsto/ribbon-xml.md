@@ -22,17 +22,15 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-ms.assetid: a5945667-40e8-4191-9f1e-71c18ec30a2e
-caps.latest.revision: "35"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 38cf7e2fd9229ddc0a99f317a0680ea272fa3ad5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e12489431a7496b1d64d5aef93a24fcc239be81a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ribbon-xml"></a>功能区 XML
   功能区 (XML) 项使你能够通过使用 XML 来自定义功能区。 如果想要通过功能区（可视化设计器）项不支持的方式自定义功能区，请使用功能区 (XML) 项。 有关可以与每个项执行的操作的比较，请参阅[功能区概述](../vsto/ribbon-overview.md)。  

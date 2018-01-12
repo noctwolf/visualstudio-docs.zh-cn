@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-ms.assetid: 3b7c8ad4-a616-4b42-9d62-9658fdefe6a3
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d2c7dfef925ff61255e57315a3980fa6a145c235
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4d3c2e834b3a618bf033ef7f37ca8bbac7d0efcf
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到 .NET Framework 4 或 .NET Framework 4.5 的 Office 项目中的功能区自定义项
   如果你的项目包含通过使用创建的功能区自定义项**功能区 （可视化设计器）**项目项，则必须对你的项目代码进行以下更改，如果目标框架更改为[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本。  

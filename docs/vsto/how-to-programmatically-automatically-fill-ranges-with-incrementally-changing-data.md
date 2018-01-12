@@ -15,17 +15,15 @@ helpviewer_keywords:
 - filling ranges automatically
 - ranges, automatically filling
 - workbooks, filling ranges
-ms.assetid: 27639d55-8ab5-483c-8907-2ea50dfd2188
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 4b832ed0e025cd374ac3cbc645824fe7f37dcf9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d6634fea629358368d3b61c5b505e5eec7ec0186
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何：以编程方式自动用递增变化的数据填充范围
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法<xref:Microsoft.Office.Interop.Excel.Range>对象可用于值自动填充工作表中的范围。 大多数情况下，<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法用于存储递增或递减的范围内的值。 你可以通过提供中的可选常数指定行为<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>枚举。  

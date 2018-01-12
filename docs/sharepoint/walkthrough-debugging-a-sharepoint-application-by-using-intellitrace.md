@@ -16,17 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, IntelliTrace
 - data collector
 - IntelliTrace
-ms.assetid: 4bd80d2f-f680-4bf4-81c3-f14e8185f6a4
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 34ee1ca7d62a661f915edba1adc22c18f90256b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 03afad9971a938a88df624f24e5553abbdc0f976
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>演练：使用 IntelliTrace 调试 SharePoint 应用程序
   通过使用 IntelliTrace，你可以更轻松地调试 SharePoint 解决方案。 传统的调试器使你只有解决方案的快照在当前时间点。 但是，你可以使用 IntelliTrace 查看过去发生在事件，你的解决方案和它们发生，导航到的代码的上下文。  

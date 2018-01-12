@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - reference [Office development in Visual Studio], 2007 Microsoft Office system
 - Office development in Visual Studio, reference
-ms.assetid: 1fa66da0-9d90-4524-ba4f-4da13aab73b5
-caps.latest.revision: "22"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 04d89dee1c078ae0b27b96f2e72b25f30dc52845
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3304d104a0ccf308c02a770f3e79fb08f6d06049
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>托管参考（Visual Studio 中的 Office 开发）
   本部分包含在针对 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的 Office 项目中使用的命名空间和类型的 API 参考文档。 对于在 Office 项目中使用的针对 .NET Framework 3.5 的有关命名空间和类型的 API 参考文档，请参阅下列 Visual Studio 文档中的参考资料部分： [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658)。  

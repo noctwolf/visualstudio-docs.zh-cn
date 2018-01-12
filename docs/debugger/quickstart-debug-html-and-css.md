@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>调试 HTML 和 CSS UWP 和 Windows 8.1 应用中
 ![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Visual Studio 针对 JavaScript 应用提供全面的调试体验，其中包括 Internet Explorer 和 Visual Studio 开发人员熟悉的多项功能。 这些功能支持[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]，Windows Phone 应用程序，以及使用 Visual Studio Tools for Apache Cordova 创建的应用。  
+ Visual Studio 针对 JavaScript 应用提供全面的调试体验，其中包括 Internet Explorer 和 Visual Studio 开发人员熟悉的多项功能。 适用于 UWP 应用支持这些功能[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]，Windows Phone 应用程序，以及使用 Visual Studio Tools for Apache Cordova 创建的应用。  
   
  通过使用 DOM 检查工具所提供的交互式调试模型，你可以查看并修改所呈现的 HTML 和 CSS 代码。 你可以在不停止并重新启动调试器的情况下执行这一切操作。
   
@@ -268,9 +268,9 @@ ms.lasthandoff: 12/22/2017
  有关示例，演示如何使用选择的元素**Select 元素**按钮，请参阅[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)。  
   
 ##  <a name="BrowserSupport"></a> 浏览器和平台支持  
- JavaScript 的 Visual Studio 工具、DOM 资源管理器和 JavaScript 控制台窗口在以下平台上受支持：  
+ 在以下平台上支持 DOM 资源管理器和 JavaScript 控制台窗口：  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]和使用 JavaScript 和 HTML 的 Windows Phone 应用  
+-   UWP 应用[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]和使用 JavaScript 和 HTML 的 Windows Phone 应用  
   
 -   在 [!INCLUDE[win81](../debugger/includes/win81_md.md)]上运行的 Internet Explorer 11  
   

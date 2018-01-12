@@ -15,17 +15,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: keyboard shortcuts, Office development in Visual Studio
-ms.assetid: 2a8b9e70-66fa-4461-8039-b6d8a2fbb963
-caps.latest.revision: "19"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 4d082e03ce0edcbbccd6e3dcd8b22ba00a483d91
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d52b7baf1283f986ee378c800114836da606eca8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>“选项”对话框 ->“Microsoft Office 键盘设置”->“Microsoft Office Excel 键盘”
   Microsoft Office Excel 和 Visual Studio 同时处理键盘快捷方式。 相同的快捷组合键可以代表不同的命令在 Excel 和 Visual Studio 中的内容。 在 Visual Studio 中的文档级项目中打开 Excel 时，一次只有一个应用程序接收的快捷键命令。 默认情况下，Visual Studio 接收所有快捷键命令，但你可以在该文档通过选择具有焦点时接收它们的 Excel**动态键盘方案**。  

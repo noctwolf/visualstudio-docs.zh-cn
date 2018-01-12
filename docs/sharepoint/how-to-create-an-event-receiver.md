@@ -16,17 +16,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, event receivers
 - event receivers [SharePoint development in Visual Studio]
-ms.assetid: 6f90cb48-eb8f-43c2-a3f7-ed4ce81aedf2
-caps.latest.revision: "20"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 519c6907bb5779a3819419144905ca68e5cce939
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1b00d82679388c50d6d111209a9a206bd9587a3a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-an-event-receiver"></a>如何：创建事件接收器
   通过创建*事件接收器*，你可以在用户与 SharePoint 项，如列表或列表项交互时响应。 例如，当用户更改日历或从联系人列表中删除名称时，可以触发事件接收器中的代码。 通过本主题后，您可以了解如何将事件接收器添加到列表实例。  

@@ -17,17 +17,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], automating applications
 - custom task panes [Office development in Visual Studio], PowerPoint
 - task panes [Office development in Visual Studio], automating applications
-ms.assetid: 77be5ab5-e330-4564-87ec-9cba564ba8f9
-caps.latest.revision: "37"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8d7c349261770e6b489a793f6f4533a852c96a8e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 86f925cda43bf73354b94ecc966cdcae1a0c3ddd
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-automating-an-application-from-a-custom-task-pane"></a>演练：从自定义任务窗格自动化应用程序
   本演练演示了如何创建实现 PowerPoint 自动化的自定义任务窗格。 当用户单击自定义任务窗格中的 <xref:System.Windows.Forms.MonthCalendar> 控件时，自定义任务窗格向一张幻灯片中插入日期。  

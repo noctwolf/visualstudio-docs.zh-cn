@@ -14,17 +14,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, overview
-ms.assetid: 059bce0f-c301-4234-a0b4-9c14b7cdfa3e
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6c7bfb38e31f2ac9a8bb72f93015bfafbe270c64
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 848ddab54dd9e7617cce7758fa06d939700f2c3b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>开发 SharePoint 解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中可提供多种 SharePoint 项目类型模板，用于创建 SharePoint 站点和站点元素。 有关可用的项目类型的列表，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是对 SharePoint 项目元素和属性的说明。  

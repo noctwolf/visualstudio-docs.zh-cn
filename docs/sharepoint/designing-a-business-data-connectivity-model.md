@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designing a model
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
-ms.assetid: 19cad8cf-8a82-4000-84cf-1e5aff54e5af
-caps.latest.revision: "41"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 886522cacff9359b3516b9e09530bfb1c41acfe6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fe3de196219091478a30ff07d6c2f5916d423f15
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>设计业务数据连接模型
   你可以通过将实体和方法添加到模型文件开发业务数据连接 (BDC) 服务的型号。 实体描述数据字段的集合。 例如，实体可以表示数据库中的表。 方法执行如添加、 删除或更新由实体表示的数据的任务。 有关详细信息，请参阅[将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。  

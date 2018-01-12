@@ -18,17 +18,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, packages
-ms.assetid: fd365f8c-8a80-4ce8-8e28-c0eb609f12f3
-caps.latest.revision: "20"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5351165320dd0ff2d8c130c64adeff7be45de6fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 277ceea1b908c5819608a1bdf1d6be97c2f6ce77
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>如何：自定义 SharePoint 解决方案包
   在包设计器可用于创建和自定义包 (.wsp)。 例如，你可以添加 SharePoint 项目项和功能，指定是否 Web 服务器是重置部署解决方案时，并将设置部署服务器类型。  

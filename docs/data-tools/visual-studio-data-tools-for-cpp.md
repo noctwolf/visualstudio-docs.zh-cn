@@ -14,11 +14,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 2e354145fa47e243c3dea1641086626e9bcc2c5c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ebb3acfb9fcd49a682e888058b71adbd4119429a
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="visual-studio-data-tools-for-c"></a>适用于 c + + 的 visual Studio data tools
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 12/22/2017
   
 若要连接到 SQL 数据库，本机 c + + 应用程序可以使用 ODBC 和 OLE DB 驱动程序和 Windows 附带的 ADO 提供程序。 这些可以连接到的所有数据库都支持这些接口。 ODBC 驱动程序是标准。 提供 OLE DB 是为了向后兼容。 这些数据技术的详细信息，请参阅[Windows 数据访问组件](https://msdn.microsoft.com/en-us/library/windows/desktop/aa968814.aspx)。  
   
-利用 SQL Server 2005 中的自定义功能和更高版本，使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 本机客户端还包含 SQL Server ODBC 驱动程序以及一个本机动态链接库 (DLL) 中的 SQL Server OLE DB 提供程序。 这些支持使用本机代码 Api （ODBC、 OLE DB 和 ADO） 到 Microsoft SQL Server 的应用程序。  SQL Server Native Client 随同一起 SQL Server Data Tools 安装。 编程指南是此处： [SQL Server Native Client 编程](/sql/sql-docs/docs/relational-databases/native-client/sql-server-native-client-programming)。  
+利用 SQL Server 2005 中的自定义功能和更高版本，使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 本机客户端还包含 SQL Server ODBC 驱动程序以及一个本机动态链接库 (DLL) 中的 SQL Server OLE DB 提供程序。 这些支持使用本机代码 Api （ODBC、 OLE DB 和 ADO） 到 Microsoft SQL Server 的应用程序。  SQL Server Native Client 随同一起 SQL Server Data Tools 安装。 编程指南是此处： [SQL Server Native Client 编程](/sql/relational-databases/native-client/sql-server-native-client-programming)。  
   
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>若要从 c + + 应用程序连接到 localDB 通过 ODBC 和 SQL Native Client  
   

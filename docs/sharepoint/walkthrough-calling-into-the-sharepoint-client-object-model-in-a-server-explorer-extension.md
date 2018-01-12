@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, client object model
 - SharePoint commands [SharePoint development in Visual Studio]
-ms.assetid: 897d3798-42c1-4fff-b280-8b84b53d80c6
-caps.latest.revision: "100"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 4b7cc5797643309e7929f455bfcf94db85f90b0b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 68836c8e95d7a9a53a1e1c2b90f7ee48e91106e6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>演练：在服务器资源管理器扩展中调入 SharePoint 客户端对象模型
   本演练演示如何调用 SharePoint 客户端对象模型的扩展从**SharePoint 连接**中的节点**服务器资源管理器**。 有关如何使用 SharePoint 客户端对象模型的详细信息，请参阅[调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  

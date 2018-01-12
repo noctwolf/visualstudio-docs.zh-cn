@@ -14,17 +14,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, deploying
-ms.assetid: bff1895b-d3fe-4ec0-ba91-f8884dc35957
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 408d7801e883e85e37d721c342dba691702d77cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e5e65e82910239b596e4b19f2ea1fa1f357266c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何：编辑 SharePoint 部署配置
   您可以创建部署配置或修改现有的部署配置。 例如，无法运行单步执行或更改在部署过程中的步骤的顺序。 你可能想要创建或修改的部署配置，因为不能更改的内置和以编程方式添加的配置。  

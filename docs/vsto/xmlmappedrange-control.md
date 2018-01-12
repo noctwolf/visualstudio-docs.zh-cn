@@ -14,17 +14,15 @@ helpviewer_keywords:
 - XMLMappedRange control, data binding
 - XMLMappedRange control
 - XMLMappedRange control, events
-ms.assetid: af1ae1b7-6cbe-4d6b-bc22-d9a3c8740665
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 27cd0f62c7670d56143180d24074e5c6002051f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f4b78da11efafff45f34b3dc4ab9e7f1349a2e8a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange 控件
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件是仅当非重复架构元素映射到 Microsoft Office Excel 中的单元格上时，才创建一个范围。 例如，当`maxOccurs`属性的架构元素等于 1。 Visual Studio 创建的映射的 XML 范围后，你可以对其编程直接而无需遍历 Excel 对象模型。 你只能删除<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>中 Excel 时元素映射将会删除控件。  

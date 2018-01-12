@@ -25,17 +25,15 @@ helpviewer_keywords:
 - Ribbon Designer [Office development in Visual Studio]
 - read-only properties
 - Ribbon [Office development in Visual Studio], shortcut keys
-ms.assetid: 26617206-f4da-416f-a18a-d817b2d4872d
-caps.latest.revision: "79"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 2655cd8f8c75f9c10063a1b85d2390b153782d85
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cab4a223f8e2d33185f37bc6ad90397ace1d56e1
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ribbon-designer"></a>功能区设计器
   功能区设计器是一个可视化设计画布。 功能区设计器用于将自定义选项卡、 组和控件添加到 Microsoft Office 应用程序的功能区。  

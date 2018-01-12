@@ -19,17 +19,15 @@ helpviewer_keywords:
 - association forms [SharePoint development in Visual Studio]
 - initiation forms [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, workflow initiation forms
-ms.assetid: c8666d8c-b173-4245-8014-9c1cd6acb071
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: b3178c330d34570d1406a1b63368537bc7f66887
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4b6eed3807b4031a7ab41c16f532442fb0968601
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>演练：创建带有关联窗体和启动窗体的工作流
   本演练演示如何创建包含关联和启动窗体使用的基本顺序工作流。 这些是启用参数时首次将其关联的 SharePoint 管理员 （关联形式），并由用户 （启动窗体） 启动工作流时要添加到工作流的 ASPX 窗体。  

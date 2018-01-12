@@ -14,17 +14,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, features
-ms.assetid: 5957d04f-f832-40de-af08-3f23fb8e2e14
-caps.latest.revision: "22"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 071c8832e154f151d6ee9d04c45b5bc927366f7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3c3084e92b9102d487b019bd27163ad72c3b1254
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>如何：在 SharePoint 功能中添加和移除项
   当创建 SharePoint 解决方案时，Visual Studio 会将默认 SharePoint 项目项添加到你的功能。 在部署之前，你可以添加和删除要修改 SharePoint 功能的 SharePoint 项目项。  

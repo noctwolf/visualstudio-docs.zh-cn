@@ -18,17 +18,15 @@ helpviewer_keywords:
 - XML [Office development in Visual Studio], Ribbon
 - Ribbon Designer [Office development in Visual Studio]
 - exporting Ribbon
-ms.assetid: 96e0e9ed-4392-4f45-ac33-b6f7c22ea321
-caps.latest.revision: "37"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d7cbdf38b3debd7710ed036d008d52b8ef080d37
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 44aea70f386127b9a3e58a3fac38d516aac8113b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>如何：将功能区从功能区设计器导出为功能区 XML
   **功能区 （可视化设计器）**项不支持的功能区自定义的所有可能类型。 若要以高级方式自定义功能区，可以将功能区从设计器导出到功能区 XML，并直接编辑 XML。  

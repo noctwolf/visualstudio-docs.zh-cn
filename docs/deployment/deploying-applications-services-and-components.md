@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: get-started-article
 dev_langs:
 - FSharp
 - VB
@@ -26,11 +26,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>Visual Studio 中的部署概述
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/05/2018
 
 - **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和**.NET 核心**： 你可以使用发布工具将部署到使用 FTP 或 Web 部署的网站。 有关详细信息，请参阅[部署到网站](quickstart-deploy-to-a-web-site.md)。
 
-    在解决方案资源管理器，右键单击该项目并选择**发布**。 在发布工具中，选择你想，并执行的配置步骤的选项。
+    在解决方案资源管理器中，右键单击项目，选择“发布”。 在发布工具中，选择你想，并执行的配置步骤的选项。
 
     ![选择 IIS、 FTP，等等。](../deployment/media/quickstart-publish-iis-ftp.png)
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/05/2018
 
 ### <a name="publish-to-azure"></a>发布到 Azure
 
-- **ASP.NET、 ASP.NET Core、 Python、 Node.js 和.NET 核心**web 应用程序： 你可以使用发布工具快速将应用部署到 Azure App Service 或到 Azure 虚拟机。 在解决方案资源管理器，右键单击该项目并选择**发布**。 在发布对话框中，选择**Microsoft Azure App Service**或**Microsoft Azure 虚拟机**，然后按照配置步骤。
+- **ASP.NET、 ASP.NET Core、 Python、 Node.js 和.NET 核心**web 应用程序： 你可以使用发布工具快速将应用部署到 Azure App Service 或到 Azure 虚拟机。 在解决方案资源管理器中，右键单击项目，选择“发布”。 在发布对话框中，选择**Microsoft Azure App Service**或**Microsoft Azure 虚拟机**，然后按照配置步骤。
 
     ![选择 Azure App Service](../deployment/media/quickstart-publish-azure.png "选择 Azure App Service")
 

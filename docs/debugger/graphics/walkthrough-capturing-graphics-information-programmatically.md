@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bf34eda9c9957b8a989244da3f2fce03a5d151e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c84239c2f70a32558f64a299791db917926a8c44
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>演练：以编程方式捕获图形信息
 你可以使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断以编程方式从 Direct3D 应用中捕获图形信息。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/22/2017
 -   捕获图形信息  
   
 > [!NOTE]
->  以前的编程捕获的实现依赖于 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的远程工具提供捕获功能，但 Windows 8.1 直接通过 Direct3D 11.2 支持捕获。 因此，你不再需要在 Windows 8.1 上安装用于编程捕获的远程工具。  
+>  以前的编程捕获的实现依赖于远程工具的 Visual Studio for[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供捕获功能，Windows 8.1 支持直接通过 Direct3D 11.2 的捕获。 因此，你不再需要安装 Visual Studio 远程工具用于在 Windows 8.1 上的编程捕获。  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>准备你的应用以使用编程捕获  
  若要在应用中使用编程捕获，它必须包括必要的标头。 这些标头属于 Windows 8.1 SDK。  
@@ -183,10 +183,10 @@ ms.lasthandoff: 12/22/2017
   
      如果你不执行此步骤，则文件名为 default.vsglog。 如果你未定义 `DONT_SAVE_VSGLOG_TO_TEMP`，则该文件的位置相对于临时目录；否则，将相对于工作目录或位于其他位置（如果你指定了绝对文件名）。  
   
- 有关[!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)]应用，临时目录的位置特定于每个用户和应用程序，而且通常位于一个位置，例如 C:\users\\*用户名*\AppData\Local\Packages\\ *包系列名称*\TempState\\。 对于桌面应用，临时目录的位置特定于每个用户，而且通常位于一个位置，例如 C:\Users\\*用户名*\AppData\Local\Temp\\。  
+ 适用于 UWP 和[!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)]应用，临时目录的位置特定于每个用户和应用程序，而且通常位于一个位置，例如 C:\users\\*用户名*\AppData\Local\Packages\\ *包系列名称*\TempState\\。 对于桌面应用，临时目录的位置特定于每个用户，而且通常位于一个位置，例如 C:\Users\\*用户名*\AppData\Local\Temp\\。  
   
 > [!NOTE]
->  若要写入特定位置，你必须拥有写入到该位置的权限；否则，将发生错误。 请牢记，就可以写入数据的位置而言， [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] 应用比桌面应用更受限制，而且可能需要进行额外配置才能写入某些位置。  
+>  若要写入特定位置，你必须拥有写入到该位置的权限；否则，将发生错误。 请记住该 UWP 和[!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)]应用是比有关它们的位置可以写入数据，并可能需要其他配置才能写入某些位置的桌面应用更受限制。  
   
 ### <a name="capturing-the-graphics-information"></a>捕获图形信息  
  在准备好应用以用于编程捕获并有选择地配置好图形日志文件的位置和名称之后，请生成该应用，然后运行或调试它以捕获数据；当使用编程捕获 API 时，请不要从 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中启动图形诊断。 图形日志将写入你指定的位置。 如果你想要保留此版本的日志，请将它移动到另一个位置；否则，当你再次运行该应用时，会对其进行重写。  

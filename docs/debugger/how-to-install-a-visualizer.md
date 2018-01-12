@@ -22,17 +22,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 71b1d5cda498f42383e430a505296b2c4e074b73
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e9864a2a8f3f39e368ae1293b4b27fc0a8d9e056
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-install-a-visualizer"></a>如何：安装可视化工具
 创建了可视化工具后，您还必须安装该可视化工具，这样您才可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用它。 安装可视化工具是个简单的过程。  
   
 > [!NOTE]
->  在**存储**应用程序，仅标准文本、 HTML、 XML 和 JSON 可视化工具支持。 不支持自定义（用户创建的）可视化工具。  
+>  在 UWP 应用中，仅标准文本、 支持 HTML、 XML 和 JSON 可视化工具。 不支持自定义（用户创建的）可视化工具。  
   
 ### <a name="to-install-a-visualizer"></a>安装可视化工具  
   

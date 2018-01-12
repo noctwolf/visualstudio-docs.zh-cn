@@ -18,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, deploying
-ms.assetid: 5efc1d99-2bd2-4f1a-a7b0-86c3b8f533f0
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c1c8757de9b63c3fed75ec7e2ef7f61c89e18226
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5990ab0f6ff6ec02131921f54197dd28e7f4e6ff
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>部署、发布和升级 SharePoint 解决方案包
   开发 Visual Studio 中的 SharePoint 解决方案后，你可以将其包 (.wsp) 文件部署到本地 SharePoint 服务器，或将其发布到远程或本地 SharePoint 服务器。 如果将文件部署，你可以自定义部署的包文件 (.wsp) 的方式。  

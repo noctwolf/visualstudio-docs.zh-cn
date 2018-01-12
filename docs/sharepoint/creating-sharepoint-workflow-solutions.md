@@ -20,17 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-ms.assetid: fe79b99a-cb7c-4a14-8d9f-bce0c0805ba0
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 97283921205eaf70c77c054b269ee56f0e1adcd7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb0dce0aa162260ca784593ec34ee5c39acd1f31
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>创建 SharePoint 工作流解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供工具以帮助您创建自定义管理生命周期的文档和 SharePoint 网站中的列表项的工作流。 提供的项包括设计器、一组活动控件以及必需的程序集引用。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]此外包括**SharePoint 自定义向导**来帮助创建和配置工作流。  

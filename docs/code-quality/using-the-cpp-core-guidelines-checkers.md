@@ -12,12 +12,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.workload: cplusplus
-ms.openlocfilehash: cadee7d9cae0c59333a034e6f0ea12049bf3853f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + 核心准则检查器
 C + + 核心准则所移动的一组准则、 规则和有关在 c + + 专家和设计器创建的 c + + 中对编码的最佳做法。 Visual Studio 当前支持 c + + 的这些规则作为其代码分析工具的一部分的子集。 核心原则检查器在 Visual Studio 2017，默认情况下已安装并且位于[可用作 Visual Studio 2015 的 NuGet 包](#vs2015_corecheck)。
@@ -86,7 +85,7 @@ C + + 核心原则有可帮助你编写更好、 更安全的代码。 但是，
 从 Visual Studio 2017 版本 15.3，开始受支持的规则集是： 
   - **所有者指针规则**强制实施[资源管理检查与所有者相关<T>从 c + + 核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
-  - **Const 规则**强制实施[const 相关检查从 c + + 核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
+  - **Const 规则**强制实施[const 相关检查从 c + + 核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。  
 
   - **原始指针规则**强制实施[资源管理检查相关的原始指针从 c + + 核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
@@ -98,11 +97,14 @@ C + + 核心原则有可帮助你编写更好、 更安全的代码。 但是，
 
   **Visual Studio 2017 版本 15.5**：
   - **类规则**重点放在正确使用特殊的方法和虚拟规范的几个规则。 这是建议用于检查的子集[类和类层次结构](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class)。 
-  - **并发规则**捕获 badlyly 声明防护对象这一项规则。 有关详细信息请参阅[与并发相关准则](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency)。 
+  - **并发规则**捕获错误声明防护对象的一个规则。 有关详细信息，请参阅[与并发相关准则](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency)。 
   - **声明规则**几个规则从[接口准则](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces)哪些专注于如何全局变量声明。  
   - **函数规则**采用的帮助的两个检查`noexcept`说明符。 这是的指导原则部件[清除函数设计和实现](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)。 
   - **共享指针规则**作为的一部分[资源管理](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource)准则强制，我们添加特定于如何共享指针的几个规则都传递给函数或在本地使用。  
-  - **样式规则**一个的简单但很重要检查哪些 bans 使用[goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto)。 这是提高编码样式和使用的表达式和 c + + 中的语句的第一步。 
+  - **样式规则**一个简单但很重要检查，bans 使用[goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto)。 这是提高编码样式和使用的表达式和 c + + 中的语句的第一步。  
+  
+  **Visual Studio 2017 版本 15.6**:
+  - **算术规则**规则，以检测算术[溢出](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow)，[有符号的无符号操作](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned)和[位操作](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative)。
 
 
  你可以选择限制为只是一个或几个组的警告。 **本机最小**和**本机建议**规则集包括 c + + 核心检查规则以及其他 PREfast 检查。 若要查看可用的规则集，请打开项目属性对话框，选择**代码 Analysis\General**，打开中的下拉列表**规则集**组合框和选取**选择多个规则集**. 有关使用 Visual Studio 中的规则集的详细信息，请参阅[使用规则集组合代码分析规则](using-rule-sets-to-group-code-analysis-rules.md)。
@@ -120,7 +122,7 @@ CPPCORECHECK_UNIQUE_POINTER_WARNINGS
 CPPCORECHECK_BOUNDS_WARNINGS
 ```
 
-这些宏对应规则集，然后展开为一个空格分隔的警告编号列表。 通过使用相应的杂注构造，可以配置有效的规则集，值得关注的项目或一段代码。 在下面的示例中，仅涉及缺少常量修饰符，代码分析将发出警告：
+这些宏对应规则集，然后展开为一个空格分隔的警告编号列表。 通过使用相应的杂注构造，可以配置有效的规则集，值得关注的项目或一段代码。 在下面的示例中，代码分析会发出警告仅涉及缺少常量修饰符：
 
 ```cpp
 #include <CppCoreCheck\Warnings.h>
@@ -129,8 +131,7 @@ CPPCORECHECK_BOUNDS_WARNINGS
 ```
 
 ## <a name="attributes"></a>特性
- Microsoft Visual c + + 编译器提供有限的支持为 GSL 禁止显示属性。
-可用来禁止显示警告表达式和函数内的块语句上。
+ Microsoft Visual c + + 编译器提供有限的支持为 GSL 禁止显示属性。 可用来禁止显示警告表达式和函数内的块语句上。
 
 ```cpp
 // Supress only warnings from the 'r.11' rule in expression.
@@ -164,10 +165,10 @@ CPPCORECHECK_BOUNDS_WARNINGS
  你可以使用命令行选项来临时禁用通过指定的文件的所有代码分析`/analyze-`。 这将生成警告*D9025 重写 '/ 分析' 与 ' / 分析-*，这将提醒你稍后可重新启用代码分析。
 
  ## <a name="corecheck_per_file"></a>启用 c + + 核心准则检查程序在特定的项目文件
-有时可能会有用的已设定焦点的执行代码分析和仍利用 Visual Studio IDE。 下面是一个可以使用适用于大型项目中，以保存生成时间并轻松地筛选结果的示例方案：
+有时可能会有用到已设定焦点的执行代码分析，仍使用 Visual Studio IDE。 下面的示例方案可以适用于大型项目使用，以保存生成时间并轻松地筛选器结果：
 
 1.  在命令行界面中设置`esp.extension`和`esp.annotationbuildlevel`环境变量。
-2.  从命令行界面，继承这些变量启动 Visual Studio。
+2.  若要继承这些变量，请从命令行界面启动 Visual Studio。 
 3.  加载你的项目并打开其属性。
 4.  启用代码分析，选取合适的规则集，但未启用代码分析扩展。
 5.  转到你想要使用 c + + 核心准则检查器分析并打开其属性的文件。
@@ -212,13 +213,13 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 ```
 
 ### <a name="non-msbuild-projects"></a>非 MSBuild 项目
-如果你使用不依赖于 MSBuild 生成系统你仍可运行检查器中，但你需要熟悉的代码分析引擎配置某些内部结构。 请注意，这些内部结构不能保证在将来支持。
+如果你使用不依赖于 MSBuild 生成系统你仍可运行检查器中，但你需要熟悉的代码分析引擎配置某些内部结构。 不保证这些内部结构都必须在将来支持。
 
-必须设置几个环境变量，编译器使用适当的命令行选项。 它是更好的做法工作下的"本机工具命令提示"环境，以便无需搜索编译器的特定路径，包括目录，等等。
+你需要设置几个环境变量和正确的命令行选项用于编译器。 它是更好的做法工作下的"本机工具命令提示"环境，以便无需搜索编译器的特定路径，包括目录，等等。
 
 1.  **环境变量**
   - `set esp.extensions=cppcorecheck.dll`这将告知引擎加载的 c + + 核心准则模块。
-  - `set esp.annotationbuildlevel=ignore`这会禁用处理 SAL 批注的逻辑。 批注不会影响在 c + + 核心准则检查器中，代码分析，但其处理采用时间 （有时很长时间）。 此设置是可选的但强烈建议。
+  - `set esp.annotationbuildlevel=ignore`这会禁用处理 SAL 批注的逻辑。 批注不会影响在 c + + 核心准则检查器中，代码分析，但它们的处理时间 （有时很长时间）。 此设置是可选的但强烈建议。
   - `set caexcludepath=%include%`我们强烈建议你禁用警告，在标准标头上激发。 你可以添加更多路径在这里，例如你的项目中的常见标头的路径。
 2.  **命令行选项**
   - `/analyze`启用代码分析 (也可以考虑使用 / 分析： 仅和 / 分析： quiet)。

@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], attaching
 - documents [Office development in Visual Studio], managed code extensions
-ms.assetid: b38c3a35-8b4a-4e86-8475-88fa8a873a5d
-caps.latest.revision: "33"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: fe976923c77902a4e3e42fc634a3227cadccdfc5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1653b0e903fd931d5df4b1dcce4dcbd99fbbae37
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何：将托管代码扩展附加到文档
   可以将自定义程序集附加到一个现有的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿。 Microsoft Office 项目和 Visual Studio 中的开发工具都支持的任何文件格式可以是文档或工作簿。 有关详细信息，请参阅[体系结构的文档级自定义](../vsto/architecture-of-document-level-customizations.md)。  
