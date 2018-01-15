@@ -10,17 +10,15 @@ ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, creating extensions
 - layer models
-ms.assetid: 83fca301-b008-485a-87eb-218050e71451
-caps.latest.revision: "39"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 477c51d4172f893e4506eff1b2a11b626993b327
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 076964379f0903945767110a3c19edb87d3c7092
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="extend-dependency-diagrams"></a>扩展依赖项关系图
 你可以编写代码以创建和更新依赖项关系图，并针对 Visual Studio 中的依赖项关系图程序代码的结构进行验证。 可以添加显示在关系图的快捷（上下文）菜单上的命令、自定义拖放笔势并从文本模板访问层模型的命令。 可以将这些扩展打包到 Visual Studio 集成扩展 (VSIX) 中，并将其分发给其他 Visual Studio 用户。  

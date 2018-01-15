@@ -19,11 +19,11 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 672047cb066a812d16edc693638c3d6d8295798b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2124fe815c89c3c157be3ea729fa7edb9d96b39
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="instanceof-operator-javascript"></a>instanceof 运算符 (JavaScript)
 返回一个布尔值，该值指示对象是否为特定类的实例。  
@@ -37,16 +37,16 @@ result = object instanceof class
   
 ## <a name="parameters"></a>参数  
  `result`  
- 必需。 任何变量。  
+ 必须的。 任何变量。  
   
  `object`  
- 必需。 任何对象表达式。  
+ 必须的。 任何对象表达式。  
   
  `class`  
- 必需。 任何定义的对象类。  
+ 必须的。 任何定义的对象类。  
   
 ## <a name="remarks"></a>备注  
- 如果 `instanceof` 是 `true` 的一个实例，则 `object` 运算符返回 `class`。 如果 `true` 存在于对象的原型链中（为 `true`），则该运算符返回 `class`。 如果 `false` 不是 `object` 的实例，或 `class` 为 `object`，则该运算符返回 `null`。  
+ 如果 `instanceof` 是 `true` 的一个实例，则 `object` 运算符返回 `class`。 它将返回`true`如果`class`存在于对象的原型链中。 如果 `false` 不是 `object` 的实例，或 `class` 为 `object`，则该运算符返回 `null`。  
   
 ## <a name="example"></a>示例  
  以下示例演示如何使用 `instanceof` 运算符。  
@@ -78,9 +78,9 @@ document.write(objTest(obj));
 // obj is not an instance of Array  
 ```  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [运算符优先级](../../javascript/operator-subtractprecedence-javascript.md)   
  [运算符摘要 (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

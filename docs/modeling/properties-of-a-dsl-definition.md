@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, definition file
-ms.assetid: 38debcfe-e1a6-4a3f-9d69-3ab07520f2b6
-caps.latest.revision: "13"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 289c95ebbbd294050b1e5c7cc95656e7ab5eadc0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a3b1dc2966f2fd07c8f0462ebb47bebf25b843c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定义的属性
 DslDefinition 属性定义*域特定语言*如版本编号定义属性。 DslDefinition 属性将显示在**属性**窗口时单击打开中的关系图的区域*域特定语言设计器*。  

@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2ff722f3-21d6-44e2-9efd-f6694aee9987
-caps.latest.revision: "26"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c349c79ebd2348fa4ce0c04fd3020d7909a3c34a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e590b0b0451864c69d548bb643ed4e915f08ad96
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 集成模型
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus 提供用于创建模型之间以及从其他工具的链接到模型的方法。 例如，你无法将链接域特定语言 (DSL) 模型和 UML 模型。 可以创建一组集成 DSL。  

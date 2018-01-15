@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-ms.assetid: d1772463-0eb1-40a5-b7c0-9a008bc76760
-caps.latest.revision: "43"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
 若要定义域特定语言 (DSL)，请从模板创建 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案。 解决方案的重要组成部分是 DSL 定义关系图，它存储在 DslDefinition.dsl 中。 DSL 定义将定义 DSL 的类和形状。 在进行修改并将所做修改添加到这些元素后，可以添加程序代码以更详细地自定义 DSL。  
@@ -122,7 +120,7 @@ ms.lasthandoff: 12/22/2017
   
 -   根类下将出现在左上方 DSL 定义关系图中，**类和关系**。 将它重命名为与 DSL 不同的名称。 例如，名为 DSL **MusicLibrary**可能具有一个名为的根类**音乐**。  
   
--   在关系图类的 DSL 定义关系图中，较低的右侧会显示**图表元素**列。 可能必须滚动到右侧才能看到它。 通常命名为*YourDsl***图**。  
+-   在关系图类的 DSL 定义关系图中，较低的右侧会显示**图表元素**列。 可能必须滚动到右侧才能看到它。 通常命名为 * YourDsl ***图**。  
   
 -   如果你使用**任务流**模板，并且想要创建具有泳道的关系图、 保留和重命名的 Actor 域类和 ActorSwimlane 形状。  
   
@@ -223,11 +221,11 @@ ms.lasthandoff: 12/22/2017
   
 2.  **生成并运行 DSL。** 按 F5 或 CTRL + F5 运行的新实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]在实验模式下。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例中，打开或创建具有 DSL 的文件扩展名的文件。  
   
-3.  **打开资源管理器。** 在关系图的一端是语言资源管理器窗口中，通常名为*YourLanguage*资源管理器。 如果未看见此窗口，则它可能位于“解决方案资源管理器”下方的选项卡上。 如果找不到它，在**视图**菜单上，指向**其他窗口**，然后单击*YourLanguage***资源管理器**。  
+3.  **打开资源管理器。** 在关系图的一端是语言资源管理器窗口中，通常名为*YourLanguage*资源管理器。 如果未看见此窗口，则它可能位于“解决方案资源管理器”下方的选项卡上。 如果找不到它，在**视图**菜单上，指向**其他窗口**，然后单击 * YourLanguage ***资源管理器**。  
   
      资源管理器将呈现模型的树视图。  
   
-4.  **创建新的元素。** 右键单击顶部的根节点，然后单击**添加新***YourClass*。  
+4.  **创建新的元素。** 右键单击顶部的根节点，然后单击 **添加新 * * * YourClass*。  
   
      类的新实例显示在语言资源管理器中。  
   
@@ -623,7 +621,7 @@ ms.lasthandoff: 12/22/2017
 |在 DSL 资源管理器中，无法添加到集合。 例如，当右键单击“工具”时，菜单中没有“添加工具”命令。<br /><br /> 在 DSL 的资源管理器中，无法将元素添加到列表。|右键单击你正在尝试的节点上方的项。 当你想要添加到列表中时，“添加”命令不在列表节点中，而在其所有者中。|  
 |已创建域类，但无法在语言资源管理器中创建实例。|每个域类（根除外）都必须是嵌入关系的目标。|  
 |在 DSL 的资源管理器中，只显示元素及其类型名称。|在 DSL 定义中，选择类的一个域属性，在属性窗口中，设置**是元素名称**为 true。|  
-|始终在 XML 编辑器中打开 DSL。|发生这种情况是由于在读取文件的同时出现一个错误。 但是，即使在修复该错误后，也必须显式将该编辑器重置为 DSL 设计器。<br /><br /> 右键单击项目项，单击**打开**和选择*YourLanguage***设计器 （默认值）**。|  
+|始终在 XML 编辑器中打开 DSL。|发生这种情况是由于在读取文件的同时出现一个错误。 但是，即使在修复该错误后，也必须显式将该编辑器重置为 DSL 设计器。<br /><br /> 右键单击项目项，单击**打开**，然后选择 * YourLanguage ***设计器 （默认值）**。|  
 |在更改程序集名称后，不会显示 DSL 的工具箱。|检查并更新**DslPackage\GeneratedCode\Package.tt**详细信息，请参阅[如何： 更改域特定语言的 Namespace](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。|  
 |不会显示 DSL 的工具箱，但并未更改程序集名称。<br /><br /> 或者，显示一个报告加载扩展失败的消息框。|重置实验实例，并重新生成解决方案。<br /><br /> 1.在 Windows 开始菜单上，在**所有程序**，展开[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然后**工具**，然后单击**重置 Microsoft Visual Studio 实验实例**。<br />2.上[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**生成**菜单上，单击**重新生成解决方案**。|  
   

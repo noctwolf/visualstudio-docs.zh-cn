@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 39ee88a0-85c3-485e-8c0a-d9644c6b25d9
-caps.latest.revision: "14"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9f39931fed8d1491610bfafb6fd012439a48c0ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e0edadfeffa5d26ed3d1540d6ae15cda1648c809
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 可以将拖放事件的处理程序添加到 DSL，以便用户可以将项从其他关系图或 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的其他部分拖动到关系图上。 还可以添加诸如双击事件的处理程序。 组合在一起，称为拖放和双击处理程序*笔势处理程序*。  

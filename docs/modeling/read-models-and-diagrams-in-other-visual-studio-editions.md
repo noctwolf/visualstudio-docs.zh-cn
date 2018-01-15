@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: models, versions of Visual Studio
-ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
-caps.latest.revision: "20"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f42cccacee8b46b5bc3d637ad8f7153d704f8441
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1483fe7d62baf5d81865897308fb9d25947213c3
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中读取模型和关系图
 如果你在一个不支持创建模型的 Visual Studio 中打开模型，该模型将以只读模式打开。 在此模式下，你可以更改的关系图的布局，但不能更改该模型。  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
 -   两个关系图文件为你想要阅读，例如，该关系图**MyDiagram.classdiagram 和 MyDiagram.classdiagram.layout**。  
   
     > [!NOTE]
-    >  依赖项关系图中，你还应具有名为的文件*MyDiagram***。 layerdiagram.suppressions**。  
+    >  依赖项关系图中，你还应具有名为的文件 * MyDiagram ***。 layerdiagram.suppressions**。  
   
 -   建模项目文件 (**MyModel.modelproj**)  
   

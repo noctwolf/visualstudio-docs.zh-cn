@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 8c3de9f3-755a-47c5-a30a-65717dcaaac2
-caps.latest.revision: "6"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5d76ca47f0278306c16d6d5b15b964d6118318c5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8a048fbd28b6993791e0f2475829a1aeede3f879
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="t4-include-directive"></a>T4 包含指令
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的文本模板中，通过使用 `<#@include#>` 指令可包括来自另一个文件的文本。 可以将 `include` 指令放置在文本模板中第一个类功能块 `<#+ ... #>` 前面的任何位置。 包含文件还可以包含 `include` 指令和其他指令。 这将允许您在模板之间共享模板代码和样本文本。  

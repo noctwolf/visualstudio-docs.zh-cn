@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
-caps.latest.revision: "16"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5703410772945a95ed0efea95a665b2a106e0ce7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>域特定语言入门
 本主题介绍中定义和使用的建模 SDK for Visual Studio 创建域特定语言 (DSL) 的基本概念。  
@@ -143,7 +141,7 @@ ms.lasthandoff: 12/22/2017
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
 ### <a name="the-content-of-a-model"></a>模型的内容  
- 文件的 DSL 实例的内容称为*模型*。 该模型包含*模型**元素*和*链接*元素之间。 DSL 定义指定哪些类型的模型元素和链接可以在模型中存在。 例如，在最小语言模板创建的 DSL，没有一种类型的模型元素和一种类型的链接。  
+ 文件的 DSL 实例的内容称为*模型*。 该模型包含*模型 * * 元素*和*链接*元素之间。 DSL 定义指定哪些类型的模型元素和链接可以在模型中存在。 例如，在最小语言模板创建的 DSL，没有一种类型的模型元素和一种类型的链接。  
   
  DSL 定义可以指定模型关系图上的显示方式。 你可以选择使用不同的形状和连接器的样式。 你可以指定某些形状出现在其他形状内。  
   

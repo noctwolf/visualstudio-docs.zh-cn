@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a7259fc0-5afa-4356-b27e-5641e01628a9
-caps.latest.revision: "2"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9699c36e83a984885853725a599570c19b528f7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d6bd4686565b24306d9c9565a5c4eddc65914f85
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-text-and-image-fields"></a>自定义文本和图像字段
 当形状中定义的文本修饰器时，它表示由文本字段。 有关初始化 TextFields 和其他 ShapeFields 的示例，检查 DSL 解决方案中的 Dsl\GeneratedCode\Shapes.cs。  

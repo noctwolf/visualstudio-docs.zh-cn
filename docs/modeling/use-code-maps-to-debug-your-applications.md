@@ -15,17 +15,15 @@ helpviewer_keywords:
 - mapping code relationships
 - code maps
 - mapping relationships in code
-ms.assetid: 9fd0c9a2-d351-40c8-be88-0749788264bf
-caps.latest.revision: "49"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 978344a6a51662c1d9103c386a917e1eb3cdc0ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f9ff795b745119339d2800d8b30bfb7a71b1b61e
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用代码图调试你的应用程序
 代码图有助于防止你在大型基本代码、不熟悉的代码或旧代码中迷失方向。 例如，调试时，你可能需要在多个文件和项目之间查看代码。 使用代码图在这些代码段中导航，了解代码段之间的关系。 这样，你不必在脑海中跟踪此代码，或绘制单独的关系图。 所以，在你的工作中断时，代码图有助于让你回想起你正在处理的代码。  

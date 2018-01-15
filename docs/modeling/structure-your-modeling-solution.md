@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2ba70ba4-2cea-4e01-93c2-055903d59470
-caps.latest.revision: "14"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3819227bbdfdd754166c886c9da0cc8bd727e94e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e364a366340be53303a503e314829dc55d399afa
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="structure-your-modeling-solution"></a>安排你的建模解决方案
 若要在开发项目中有效地使用模型，团队成员必须能够同时在项目的不同部分的模型上工作。 本主题建议了一种将应用程序划分为对应整体分层关系图中层的不同部分的方案。  

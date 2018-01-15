@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - text templates, API
 - text templates, custom hosts
-ms.assetid: 62cd9a3c-a6e1-4b29-93f5-f2a0cf47dc92
-caps.latest.revision: "28"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 98d7efc90a07de02f255afe1a75d10fef749e88a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 56eb5c11984e60e16374853ef1911ae831476d64
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-t4-text-transformation"></a>自定义 T4 文本转换
 文本模板是一项功能的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，可让你生成程序代码或其他通过转换过程的文本文件。 使用[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]，你可以通过自定义文本模板指令处理器或文本模板宿主扩展默认模板转换过程。  

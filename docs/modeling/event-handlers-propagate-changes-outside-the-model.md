@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件处理程序在模型外部传播更改
 在可视化和建模 SDK，你可以定义存储事件处理程序以将更改传播到应用商店中，如非应用商店变量、 文件、 模型中其他存储或其他外部资源[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展。 存储事件处理程序将在其中触发的事件发生在事务结束后执行。 它们还将撤消或重做操作进行执行。 因此，与应用商店规则不同存储事件是最适用于更新存储之外的值。 与.NET 事件不同存储事件处理程序注册来侦听类： 无需注册每个实例的单独处理。 有关如何选择不同的方式来处理更改之间的详细信息，请参阅[响应和传播更改](../modeling/responding-to-and-propagating-changes.md)。  
@@ -38,7 +36,7 @@ ms.lasthandoff: 12/22/2017
   
     -   `ElementDeleted`-在将模型元素后触发，关系、 形状或连接器已被删除。 你仍可访问属性值的元素，但它将具有的其他元素之间没有关系。  
   
-2.  添加的分部类定义*YourDsl***DocData**单独的代码文件中**DslPackage**项目。  
+2.  添加的分部类定义*YourDsl * * * DocData** 单独的代码文件中**DslPackage**项目。  
   
 3.  将事件的代码编写为方法，如以下示例所示。 它可以是`static`，除非你想要访问`DocData`。  
   

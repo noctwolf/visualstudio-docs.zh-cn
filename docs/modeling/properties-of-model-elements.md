@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 884d66aa-cb2d-4be0-ae45-8360a01f1c7d
-caps.latest.revision: "6"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ef494d68ba8ce8134483f910bc7e6d984e4717c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f43414aa2cddd7c992f49f9d75f9bee6399c2883
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="properties-of-model-elements"></a>模型元素的属性
 本部分列出在 DSL 定义关系图或 DSL 资源管理器中选择某个元素时，在属性窗口中看到的属性。  

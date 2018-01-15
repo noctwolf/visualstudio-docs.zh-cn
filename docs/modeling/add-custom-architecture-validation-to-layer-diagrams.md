@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: dependency diagrams, adding custom validation
-ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
-caps.latest.revision: "42"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82d65618dd510c90fa2aea95b43727787e9e727b
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>向依赖项关系图添加自定义体系结构验证
 在 Visual Studio 中，用户可以验证在对照层模型项目中的源代码，以便它们可以验证源代码符合依赖关系图上的依赖关系。 有标准的验证算法，但你可以定义自己的验证扩展。  
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。  
   
-5.  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **bin\*** 中的 **.vsix\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
+5.  若要安装扩展的 Visual Studio 中，或在另一台计算机上的主实例中，找到**.vsix**文件中**bin\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>向单独的 VSIX 添加层验证程序  
  如果要创建一个包含层验证程序、命令和其他扩展的 VSIX，建议创建一个项目来定义该 VSIX，并分隔项目和处理程序。 
@@ -116,7 +114,7 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。  
   
-8.  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **bin\*** 目录中找到 **.vsix** 文件。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。 （Windows 8 中为文件资源管理器。）  
+8.  若要安装的 Visual Studio 中，或在另一台计算机上的主实例中的 VSIX，查找**.vsix**文件中**bin** VSIX 项目的目录。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。
   
      若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   
@@ -150,7 +148,7 @@ ms.lasthandoff: 12/22/2017
   
  用户调用“验证体系结构”  菜单命令时，层运行时系统将分析层及其项目以生成图形。 图形包含四个部分：  
   
--   表示为图形中节点和链接的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案的层模型。  
+-   表示为节点和关系图中的链接层模型的 Visual Studio 解决方案。  
   
 -   代码、项目项、解决方案中定义的表示为节点的其他项目，以及表示由分析过程发现的依赖项的链接。  
   
@@ -190,7 +188,7 @@ ms.lasthandoff: 12/22/2017
  代码中从层到元素的链接具有“Represents”类别。  
   
 ##  <a name="debugging"></a> 调试验证  
- 若要调试你的层验证扩展，请按 Ctrl + F5。 将打开 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例。 在本例中，将打开或创建一个层模型。 此模型必须与代码相关联，并且必须具有至少一个依赖项。  
+ 若要调试你的层验证扩展，请按 Ctrl + F5。 这将打开一个 Visual Studio 实验实例。 在本例中，将打开或创建一个层模型。 此模型必须与代码相关联，并且必须具有至少一个依赖项。  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>使用包含依赖项的解决方案进行测试  
  除非出现以下特征，否则不执行验证：  
@@ -199,7 +197,7 @@ ms.lasthandoff: 12/22/2017
   
 -   模型中存在于代码元素相关联的层。  
   
- 首次启动 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例来测试验证扩展时，请打开或创建具有这些特征的解决方案。  
+ 首次开始测试验证扩展，Visual Studio 的实验实例打开或创建具有这些特征的解决方案。  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>在验证体系结构之前运行清理解决方案  
  每当你更新验证代码时，请先在实验解决方案中的“生成”  菜单上使用“清理解决方案”  命令，然后再测试“验证”命令。 这是必要的，因为将缓存验证的结果。 如果你未更新测试依赖项关系图或其代码，将不会执行验证方法。  
@@ -207,9 +205,9 @@ ms.lasthandoff: 12/22/2017
 ### <a name="launch-the-debugger-explicitly"></a>显式启动调试器  
  验证在单独的进程中运行。 因此，不会触发验证方法中的断点。 验证开始后，必须将调试器显式附加到进程。  
   
- 若要将调试器附加到验证进程，请在验证方法的开头插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。 出现调试对话框时，选择 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的主实例。  
+ 若要将调试器附加到验证进程，请在验证方法的开头插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。 当出现调试对话框中，选择 Visual Studio 的主实例。  
   
- 或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 出现消息框时，转到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的主实例，并在“调试”  菜单上单击“附加到进程” 。 选择名为 **Graphcmd.exe**的进程。  
+ 或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 消息框出现时，请转到的主实例的 Visual Studio 并在**调试**菜单上，单击**附加到进程**。 选择名为 **Graphcmd.exe**的进程。  
   
  始终通过按 Ctrl + F5（“开始执行(不调试)”）启动实验实例。  
   

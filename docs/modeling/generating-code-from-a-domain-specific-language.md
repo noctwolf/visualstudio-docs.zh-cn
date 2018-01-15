@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: e3706cc9-2afd-456a-a879-68425a248ebc
-caps.latest.revision: "13"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e9fc83c57b2e1d0bb9768835b3cccc5be36b9295
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ebfb92bb316cc8c4dc192192c1a00ea42420bcff
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>从域特定语言生成代码
 Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供一种强大的方法，从模型中表示的数据生成代码、 文档、 配置文件和其他项目。 使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]、 你可以创建一组类，表示数据，并可以编写你的文本模板中的类名称和属性将反映该数据。  

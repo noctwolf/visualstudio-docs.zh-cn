@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2697fd5d-b936-4b6b-b87b-be64825dc7a4
-caps.latest.revision: "2"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3a4e1927cd17a5cc86ed58565b53f04aeb6977a6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b090a2f17ad41bb46675f5e170dcbf733b7f8977
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制图标或修饰器的可见性
 A*修饰器*是图标还是在域特定语言 (DSL) 中的一个形状显示的文本行。 可以进行修饰器出现，并根据模型中的属性的状态进行消失。 例如上一个形状上表示个人，, 你可以有不同的图标显示具体取决于该人员的性别，子节点，数量等。  

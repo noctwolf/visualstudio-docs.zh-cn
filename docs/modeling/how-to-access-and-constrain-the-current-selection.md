@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, accessing the current selection
-ms.assetid: 2990981e-dfae-416f-b0d0-7197f1242dfa
-caps.latest.revision: "14"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6cfc93f3e0423f57cd0df5e919854cc1a46a1b3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9eaf9d13d6c5bc81153d459dc592b99f9e893733
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>如何：访问和约束当前所选内容
 当您为域特定语言编写的命令或笔势处理程序时，你可以确定用户右击哪些元素。 你还可以选择阻止某些形状或字段。 例如，你可以排列当用户单击图标修饰器，而是选择包含它的形状。 约束以这种方式选择可减少你必须编写的处理程序的数量。 它还可方便的用户，可以单击任意位置在形状中而无需避免修饰器。  

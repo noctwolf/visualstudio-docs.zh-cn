@@ -19,17 +19,15 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
-caps.latest.revision: "33"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 43901987c9f6f37e7082200f675549021fb63f83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d11e02e9218d86e0e971c685ab496a2b85b2be21
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="dependency-diagrams-reference"></a>依赖项关系图： 参考
 在 Visual Studio 中，你可以使用*依赖项关系图*实现你的系统的高级别，逻辑体系结构的可视化效果。 依赖项关系图将物理项目系统中组织到名为的逻辑抽象组*层*。 这些层用于描述这些项目执行的主要任务或系统的主要组件。 每一层还可以包含描述更详细的任务的嵌套层。  

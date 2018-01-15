@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, definition file
-ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
-caps.latest.revision: "22"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3e1f9bc81c0d13acd1fb9ac1a22f33262e4644f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c58dc30285257a8292e8ce8dcf81b7b31cfee2c5
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 文件
 本主题描述的 Dsl 项目中的 DslDefinition.dsl 文件的结构[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]解决方案，它定义*域特定语言*。 DslDefinition.dsl 文件描述的类和关系的域特定语言，以及关系图、 形状、 连接器、 序列化格式和**工具箱**域特定语言的并将其编辑工具。 在域特定语言解决方案中，将根据 DslDefinition.dsl 文件中的信息生成可定义这些工具的代码。  

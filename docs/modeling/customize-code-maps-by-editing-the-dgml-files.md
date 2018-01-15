@@ -19,17 +19,15 @@ helpviewer_keywords:
 - dependency graphs, customizing
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
-ms.assetid: a2e141f4-4fd8-4611-b236-6b9e7bc54fc1
-caps.latest.revision: "93"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e4a536f99c81c19ecd22554896463a84715c7b35
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3787bea9eccd46104cd48c2bd2cdff27d8aeb872
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 若要自定义代码图，可以编辑代码图的定向关系图标记语言 (.dgml) 文件。 例如，可以编辑元素来指定自定义样式，向代码元素和链接分配属性和类别，或将文档（或 URL）链接到代码元素（或链接）。 有关 DGML 元素的详细信息，请参阅[定向图形标记语言 (DGML) 引用](../modeling/directed-graph-markup-language-dgml-reference.md)。  
