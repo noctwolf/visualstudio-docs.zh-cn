@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5ed3e5c2-f60f-43c7-8ef4-754f511339c5
-caps.latest.revision: "13"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 01a08ef43a344f71fe988693401c7064a902b92b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b46bc88ba261fa214d306893ee90f6496c8446a8
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>在文本模板中使用 Visual Studio ModelBus
 如果您编写读取模型包含的文本模板[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus 引用，你可能想要解决访问目标模型的引用。 在这种情况下，你必须调整文本模板以及引用的域特定语言 (Dsl):  

@@ -26,33 +26,33 @@ helpviewer_keywords:
 - dependency graphs
 - graph documents, exporting
 - code exploration, visualizing
-ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
-caps.latest.revision: "243"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>映射解决方案中的依赖项
-若要了解代码之间的依赖关系，可通过创建代码图使其可视化。 这样有助于你查看代码如何相互配合，而无需读取文件和各行代码。  
-  
- ![查看解决方案中的依赖关系](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
-  
- **以下是一些相关视频**：  
-  
--   [通过可视化了解代码依赖项](http://go.microsoft.com/fwlink/?LinkID=252065)  
-  
--   [将更改的影响可视化](http://go.microsoft.com/fwlink/?LinkID=252068)  
-  
--   [通过代码图理解复杂代码](http://go.microsoft.com/fwlink/?LinkID=259869)  
-  
-##  <a name="GetStarted"></a> 开始使用代码图  
- **要使用代码图将需要以下两者之一**:  
+
+若要了解代码之间的依赖关系，可通过创建代码图使其可视化。 这样有助于你查看代码如何相互配合，而无需读取文件和各行代码。
+
+![查看解决方案中的依赖关系](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
+
+**以下是一些相关视频**：
+
+- [了解代码依赖关系通过可视化](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
+
+- [更改的影响可视化](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
+
+- [通过代码图理解复杂代码](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
+
+## <a name="GetStarted"></a> 开始使用代码图
+
+**要使用代码图将需要以下两者之一**:
   
 -   Visual Studio Enterprise：从代码编辑器、解决方案资源管理器、类视图或对象浏览器创建代码图。  
   
@@ -171,7 +171,7 @@ ms.lasthandoff: 12/22/2017
   
 10. 集中精力处理复杂的解决方案代码图的另一种方式是从现有代码图生成包含选定项的新代码图。 按住“CTRL”  同时选择需关注的项，打开快捷菜单并选择“从选定内容新建图” 。  
   
-     ![在新代码图上显示的选定的项](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![在新代码图上显示的选定的项](../modeling/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. 将包含上下文转入新代码图。 隐藏解决方案文件夹以及你不想要查看使用的任何其他容器**筛选器**窗格。  
   

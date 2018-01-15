@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, Properties window
-ms.assetid: b6658de5-4e85-4628-93b2-5cc12f63d25b
-caps.latest.revision: "20"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2c11cf4d8fb8d913c1d288b5daeb110b9003f7b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8193fa12967848308c1e992f5d5f5011890042ea
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-the-properties-window"></a>自定义“属性”窗口
 你可以自定义的外观和行为的属性窗口中你的域特定语言 (DSL) 中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在 DSL 定义中，每个域类上定义域属性。 默认情况下时选择的类，在图上或在模型资源管理器的实例, 的每个域属性将列在属性窗口中。 这样你可以查看和编辑域属性值，即使你具有不到关系图上的形状字段映射它们。  

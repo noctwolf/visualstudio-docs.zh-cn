@@ -7,20 +7,18 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, custom directive processors
-ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
-若要在任何计算机上的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用自定义指令处理器，必须使用本主题中介绍的方法之一注册该处理器。  
+若要在 Visual Studio 中使用自定义指令处理器，在任何计算机上，必须通过本主题中所述的方法之一对其进行注册。  
   
  可用的方法包括：  
   
@@ -30,7 +28,7 @@ ms.lasthandoff: 12/22/2017
   
 -   设置注册表项。 如果采用此方法，则会为指令处理器添加一个注册表项。  
   
- 仅当要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 或 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中转换文本模板时，才需要从上述方法中选用一种。 如果在自己的应用程序中使用自定义宿主，则由自定义宿主负责查找每条指令的指令处理器。  
+ 你需要仅当你想要转换文本模板在 Visual Studio 中的使用这些方法之一或[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]。 如果在自己的应用程序中使用自定义宿主，则由自定义宿主负责查找每条指令的指令处理器。  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指令处理器  
  你可以添加到自定义指令处理器[Visual Studio 扩展 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。  
@@ -47,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>在 VSIX 项目中开发自定义指令处理器  
   
-1.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中创建 VSIX 项目。  
+1.  在 Visual Studio 中创建一个 VSIX 项目。  
   
     -   在**新项目**对话框框中，展开**Visual Basic**或**Visual C#**，然后展开**扩展性**。 单击**VSIX 项目**。  
   
@@ -104,19 +102,19 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-install-the-custom-directive-processor"></a>安装自定义指令处理器  
   
-1.  在 Windows 资源管理器（Windows 8 中为文件资源管理器）中，打开生成目录（通常为 bin\Debug 或 bin\Release）。  
+1.  在 Windows 资源管理器，打开生成目录 （通常为 bin\Debug 或 bin\Release）。  
   
 2.  如果要在另一台计算机上安装指令处理器，请将 .vsix 文件复制到该计算机。  
   
-3.  双击 .vsix 文件。 此时将显示 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Extension Installer。  
+3.  双击 .vsix 文件。 将显示 Visual Studio Extension Installer。  
   
-4.  重新启动 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 现在，可以运行包含引用自定义指令处理器的指令的文本模板。 每个指令的形式如下：  
+4.  重新启动 Visual Studio。 现在，可以运行包含引用自定义指令处理器的指令的文本模板。 每个指令的形式如下：  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>卸载或临时禁用自定义指令处理器  
   
-1.  在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**工具**菜单上，单击**扩展管理器**。  
+1.  在 Visual Studio**工具**菜单上，单击**扩展管理器**。  
   
 2.  选择包含指令处理器，VSIX，然后单击**卸载**或**禁用**。  
   
@@ -169,7 +167,7 @@ ms.lasthandoff: 12/22/2017
   
      **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     如果要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验版本中安装指令处理器，请在“11.0”之后插入“Exp”。  
+     如果你想要在 Visual Studio 的实验版本中安装指令处理器，请在"11.0"之后插入"Exp"。  
   
 3.  添加与指令处理器类同名的注册表项。  
   

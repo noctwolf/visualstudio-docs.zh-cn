@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 7e668620-6217-4e87-aea7-e9036776c8e4
-caps.latest.revision: "3"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 911cc5e7959e5a392ff4ff53945ca5277605f7b2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3c024fc6be841f5329f133ece35ed0ef7517eb3
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="multiple-dsls-in-one-solution"></a>一个解决方案中的多个 DSL
 可将多个 DSL 打包为单个解决方案的一部分，以便可同时安装它们。  
@@ -47,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  合并 DSL 的 VSIX 清单：  
   
-    1.  打开*YourVsixProject***\source.extension.manifest**。  
+    1.  打开 * YourVsixProject ***\source.extension.manifest**。  
   
     2.  对于每个 DSL 选择**添加内容**和添加：  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  生成解决方案。  
   
- 生成的 VSIX 将安装这两个 DSL。 可以通过使用 F5，对其进行测试，也可以部署*YourVsixProject***\bin\Debug\\\*.vsix**。  
+ 生成的 VSIX 将安装这两个 DSL。 可以通过使用 F5，对其进行测试，也可以部署 * YourVsixProject ***\bin\Debug\\\*.vsix**。  
   
 ## <a name="see-also"></a>请参阅  
  [通过使用 Visual Studio Modelbus 集成模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

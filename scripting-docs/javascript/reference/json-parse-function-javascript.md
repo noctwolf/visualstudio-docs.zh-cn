@@ -21,11 +21,11 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d66aee32a191c8cc1879c9436788c196c05e7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 519fc733fd42a194fbd7335127ddf9bcf0bdc220
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="jsonparse-function-javascript"></a>JSON.parse 函数 (JavaScript)
 将 JavaScript 对象表示法 (JSON) 字符串转换为对象。  
@@ -66,7 +66,7 @@ JSON.parse(text [, reviver])
   
 -   确保通过 JSON 兼容的实现（如 `text` ）对 `JSON.stringify`参数进行序列化。  
   
--   在 JSON 验证程序（如 `text` JSLint [）中运行](http://www.jslint.com/) 参数以帮助找到语法错误。  
+-   运行`text`中一个 JSON 验证程序，如自变量[JSLint](http://www.jslint.com/)或[到 CSV 的 JSON](https://json-csv.com)以帮助找到语法错误。  
   
 ## <a name="example"></a>示例  
  以下示例使用 `JSON.parse` 将 JSON 字符串转换成对象。  
@@ -128,10 +128,10 @@ function dateReviver(key, value) {
   
 ```  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  [!INCLUDE[jsv58](../../javascript/reference/includes/jsv58-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [JSON.stringify 函数](../../javascript/reference/json-stringify-function-javascript.md)   
  [toJSON 方法 (Date)](../../javascript/reference/tojson-method-date-javascript.md)   
  [中心模板示例应用程序 （Windows 应用商店）](http://code.msdn.microsoft.com/Hub-template-sample-with-4b70002d)

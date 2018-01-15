@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
-caps.latest.revision: "38"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f580c81d63adb2ca474f8ea9f250f48a61da928a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>向依赖项关系图添加命令和笔势
 你可以定义上下文菜单命令和笔势处理程序在 Visual Studio 中的依赖项关系图上。 可以将这些扩展打包到 Visual Studio 集成扩展 (VSIX) 中，以便将其分发给其他 Visual Studio 用户。  
@@ -45,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  若要测试此扩展，请按“CTRL+F5”  或“F5” 。  
   
-     此时将启动 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例。 在此情况下，创建一个依赖项关系图。 命令或笔势扩展应在此关系图中使用。  
+     启动 Visual Studio 的实验实例。 在此情况下，创建一个依赖项关系图。 命令或笔势扩展应在此关系图中使用。  
   
 4.  关闭实验实例并修改示例代码。 有关详细信息，请参阅[导航和更新层模型在程序代码中的](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
      [定义笔势处理程序](#gesture)  
   
-6.  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **bin\*** 中的 **.vsix\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
+6.  若要安装扩展的 Visual Studio 中，或在另一台计算机上的主实例中，找到**.vsix**文件中**bin\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>将命令或笔势添加到单独的 VSIX  
  如果想要创建一个包含命令、层验证程序和其他扩展的 VSIX，建议创建一个项目来定义 VSIX，并分隔处理程序的项目。
@@ -104,9 +102,9 @@ ms.lasthandoff: 12/22/2017
   
      另请参阅[导航和更新层模型在程序代码中的](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
-2.  若要测试此功能，请按 CTRL+F5 或 F5。 将打开 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例。 在此情况下，创建或打开一个依赖项关系图。  
+2.  若要测试此功能，请按 CTRL+F5 或 F5。 这将打开一个 Visual Studio 实验实例。 在此情况下，创建或打开一个依赖项关系图。  
   
-3.  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **bin\*** 目录中找到 **.vsix** 文件。 将此文件复制到想在其上安装 VSIX 的计算机。 双击 Windows 资源管理器（Windows 8 中的文件资源管理器）中的 VSIX 文件。  
+3.  若要安装的 Visual Studio 中，或在另一台计算机上的主实例中的 VSIX，查找**.vsix**文件中**bin** VSIX 项目的目录。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。  
   
      若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   

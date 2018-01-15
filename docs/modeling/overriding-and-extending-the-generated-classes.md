@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, providing overridable classes
-ms.assetid: 30baa60d-a8ea-4611-96c1-8fcc3317cf21
-caps.latest.revision: "15"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d794edbb4f554e71e5d65a3e48e5393be61896a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 568fc8c53ea7a7be79d8f8169c964f1ec7e02c0a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>重写和扩展生成的类
 DSL 定义是一个平台，你可以基于其构建一套强大的基于域特定语言的工具。 许多扩展和改编可以通过重写和扩展从 DSL 定义生成的类。 这些类包括而不仅仅是中 DSL 定义关系图中，已显式定义的域类还有其他类的定义工具箱、 资源管理器、 序列化和等等。  

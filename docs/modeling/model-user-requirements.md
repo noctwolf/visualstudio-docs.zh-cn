@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - requirements
 - stories
-ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
-caps.latest.revision: "28"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c3584a8620c4f2d9c0f82efc94bae4dc4c33233
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ffbfd6da8abb0063ed16d7956bcec97626c9666
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 通过绘制有关用户的活动和你的系统在帮助他们实现自己目标上所起到的作用的关系图，Visual Studio 可帮助你了解你的用户，并与他们展开讨论、沟通其要求。 需求模型是一组这样的关系图，每一张图都将重点放在用户需求的不同方面。 有关视频演示，请参阅： [业务域建模](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)。  
@@ -61,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  业务规则是一个不与特定用例相关联的要求，应在整个系统中进行观察。  
   
- 许多业务规则受概念类间关系的约束。 可以作为与概念类图上的相关类关联的注释，编写这些 *静态**业务规则* 。 例如:  
+ 许多业务规则受概念类间关系的约束。 你可以编写这些*静态 * * 业务规则*作为概念类图上的相关类与关联的注释。 例如:  
   
  ![附加到 Order 类的注释中的规则。] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
   
