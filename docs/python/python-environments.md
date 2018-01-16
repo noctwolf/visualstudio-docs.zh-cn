@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: bd871b1e78878c8ae05cb69e1ac97d50197a18b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f190d02850f1effc9e1597d14fecf323de68356
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-environments"></a>Python 环境
 
@@ -53,7 +53,7 @@ Python 支持除了随 Visual Studio 2017 提供外，并未随 Python 解释器
 | 解释器 | 描述 |
 | --- | --- |
 | [CPython](https://www.python.org/) | 最常用的“本机”解释器，32 位和 64 位版本可用（建议使用 32 位）。 包括最新的语言功能、最大的 Python 包兼容性、完整的调试支持以及与 [IPython](http://ipython.org/) 的互操作。 另请参阅：[Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3)（应使用 Python 2 还是 Python 3？） 请注意，Visual Studio 2015 及更早版本不支持 Python 3.6，并且会生成错误“不支持 Python 版本 3.6”。 请改用 Python 3.5 或更早版本。 |
-| [IronPython](https://github.com/IronLanguages/main) | Python 的 .NET 实现，32 位和 64 位版本可用，提供 C#/F#/Visual Basic 互操作、对 .NET API 的访问、标准 Python 调试（但不是 C++ 混合模式调试）和混合 IronPython/C# 调试。 但 IronPython 不支持虚拟环境。 | 
+| [IronPython](https://github.com/IronLanguages/ironpython2) | Python 的 .NET 实现，32 位和 64 位版本可用，提供 C#/F#/Visual Basic 互操作、对 .NET API 的访问、标准 Python 调试（但不是 C++ 混合模式调试）和混合 IronPython/C# 调试。 但 IronPython 不支持虚拟环境。 |
 | [Anaconda](https://www.continuum.io) | Python 提供技术支持的开放式数据科学平台，包括最新版本的 CPython 和大部分难以安装的包。 如果你不能做出决定，我们建议使用它。 |
 | [PyPy](http://www.pypy.org/) | Python 的高性能跟踪 JIT 实现，适用于长时间运行的程序以及识别性能问题但找不到其他解决方法的情况。 可与 Visual Studio 配合使用，但对高级调试功能的支持有限。 |
 | [Jython](http://www.jython.org/) | Java 虚拟机 (JVM) 上 Python 的实现。 与 IronPython 类似，Jython 中运行的代码可与 Java 类和库交互，但可能无法使用许多适用于 CPython 的库。 可与 Visual Studio 配合使用，但对高级调试功能的支持有限。 |
@@ -73,7 +73,7 @@ Python 支持除了随 Visual Studio 2017 提供外，并未随 Python 解释器
 
 ![“Python 环境”窗口](media/environments-default-view.png)
 
-上述示例显示 Python 3.4（32 位 CPython）与 32 位和 64 位版本的 IronPython 2.7 一起安装。 在这种情况下，粗体显示的默认环境是 Python 3.4，可对任何新项目使用它。 如果未看到任何环境列出，表示已安装针对 Visual Studio 2015 或更早版本中的 Visual Studio 的 Python 工具，但尚未安装 Python 解释器（请参阅上述[选择并安装 Python 解释器](#selecting-and-installing-python-interpreters)）。 
+上述示例显示 Python 3.4（32 位 CPython）与 32 位和 64 位版本的 IronPython 2.7 一起安装。 在这种情况下，粗体显示的默认环境是 Python 3.4，可对任何新项目使用它。 如果未看到任何环境列出，表示已安装针对 Visual Studio 2015 或更早版本中的 Visual Studio 的 Python 工具，但尚未安装 Python 解释器（请参阅上述[选择并安装 Python 解释器](#selecting-and-installing-python-interpreters)）。
 
 > [!Tip]
 > Python 环境窗口较窄时（如上所示），环境在顶部列出和各选项卡在底部列出。 但将窗口展开足够大后，会改为较宽的视图，这样处理起来可能更方便。
@@ -161,7 +161,7 @@ Visual Studio 通常通过检查注册表（下面的 [Windows 注册表中的 P
 
 “立刻提升”会将管理权限授予单个操作的 pip，同时取决于任何操作系统的权限提示。 选择“在没有管理员权限的情况下继续”会尝试安装该包，但尝试创建文件夹时 pip 会失败，同时会显示后列输出：“错误: 无法创建 'C:\Program Files\Anaconda3\Lib\site-packages\png.py': 权限被拒绝。”
 
-选择“安装或删除包时始终提升”可防止针对相应环境出现该对话框。 若要再次显示对话框，请转到“工具”>“选项”>“Python 工具”>“常规”，选择按钮，重置所有永久隐藏的对话框。 
+选择“安装或删除包时始终提升”可防止针对相应环境出现该对话框。 若要再次显示对话框，请转到“工具”>“选项”>“Python 工具”>“常规”，选择按钮，重置所有永久隐藏的对话框。
 
 在同一选项卡上，还可以选择“始终以管理员身份运行 pip”，针对所有环境禁止显示该对话框。 请参阅[选项 - “常规”选项卡](options.md#general-options)。
 
@@ -247,13 +247,13 @@ Visual Studio 对所有新项目使用默认环境，用于执行、调试、检
 
     ![更新 requirements.txt 选项](media/environments-requirements-txt-replace.png)
 
-    - “替换整个文件”将删除存在的所有项、注释和选项。
-    - “刷新现有条目”会检测包的要求并更新版本说明符，匹配当前安装的版本。
-    - “更新并添加项”将刷新找到的任何要求，并将所有其他包添加到文件末尾。
+  - “替换整个文件”将删除存在的所有项、注释和选项。
+  - “刷新现有条目”会检测包的要求并更新版本说明符，匹配当前安装的版本。
+  - “更新并添加项”将刷新找到的任何要求，并将所有其他包添加到文件末尾。
 
 因为 `requirements.txt` 文件的目的是冻结项目的要求，因此所有已安装的包都采用精确的版本编写。 使用精确的版本可确保轻松地在其他计算机上重现环境。 即使采用一个版本范围（作为另一个包的依赖项）或使用安装程序而非 pip 安装了包，也会包含这些包。
 
-添加新虚拟环境时，如果 ` requirements.txt` 文件存在，“添加虚拟环境”对话框会显示一个自动安装包的选项，从而可以轻松地在另一台计算机上重新创建环境：
+添加新虚拟环境时，如果 `requirements.txt` 文件存在，“添加虚拟环境”对话框会显示一个自动安装包的选项，从而可以轻松地在另一台计算机上重新创建环境：
 
 ![使用 requirements.txt 创建虚拟环境](media/environments-requirements-txt.png)
 

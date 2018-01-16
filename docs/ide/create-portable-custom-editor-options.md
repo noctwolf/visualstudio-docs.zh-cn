@@ -11,12 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 0219ff704e22ab1c27d47e312825a66cb3a15166
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 516bd2de626fa7a5ffcbf4234c849e81860b9e08
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 
@@ -32,43 +31,86 @@ EditorConfig 文件中的设置用于在基本代码库中维持一致的编码�
 
 由于这些设置包含在基本代码的文件中，因此能与基本代码一起移动。 只要在 EditorConfig 兼容的编辑器中打开代码文件，就能实现文本编辑器设置。 有关 EditorConfig 文件的详细信息，请参阅 [EditorConfig.org](http://editorconfig.org/) 网站。
 
-## <a name="override-editorconfig-settings"></a>替代 EditorConfig 设置
-
-如果在文件层次结构中将 .editorconfig 文件添加到文件夹，则其设置将应用于该级别和更低级别的所有适用文件。 若要替代特定项目或基本代码的 EditorConfig 设置，以便使用与顶级 EditorConfig 文件不同的约定，只需将 .editorconfig 文件添加到基本代码的存储库或项目目录的根目录即可。 确保将 ```root=true``` 属性放置在该文件中，以便 Visual Studio 不再在目录结构中继续向上查找任何 .editorconfig 文件。 新的 EditorConfig 文件设置应用于同级目录和任何子目录中的文件。
-
-```
-# top-most EditorConfig file
-root = true
-```
-
-![EditorConfig 层次结构](../ide/media/vside_editorconfig_hierarchy.png)
-
-EditorConfig 文件从上到下进行读取，最近的 EditorConfig 文件会最后读取。 来自匹配 EditorConfig 部分的约定会按读取顺序进行应用，因此更近文件中的约定会优先使用。
-
 ## <a name="supported-settings"></a>支持的设置
 
-Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.org/#supported-properties)核心集中的以下内容：
+Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.org/#supported-properties)的核心集：
 
 - indent_style
 - indent_size
 - tab_width
 - end\_of_line
 - charset
+- trim\_trailing_whitespace
+- insert\_final_newline
 - 根
 
 所有 Visual Studio 支持的语言（XML 除外）均支持 EditorConfig 编辑器设置。 此外，EditorConfig 还支持适用于 C# 和 Visual Basic 的[代码样式](../ide/editorconfig-code-style-settings-reference.md)约定和[命名](../ide/editorconfig-naming-conventions.md)约定。
-
-## <a name="editing-editorconfig-files"></a>编辑 EditorConfig 文件
-
-Visual Studio 提供一些 IntelliSense 用于编辑 .editorconfig 文件。 如果编辑大量 .editorconfig 文件，可能会发现 [EditorConfig 语言服务](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)扩展很有用。
-
-编辑 EditorConfig 文件后，必须重载代码文件，新设置才会生效。
 
 ## <a name="adding-and-removing-editorconfig-files"></a>添加和删除 EditorConfig 文件
 
 将 EditorConfig文件添加到项目或基本代码不会将现有样式转换为新样式。 例如，如果文件中存在带制表符格式的缩进，并添加了以空格缩进的 EditorConfig 文件，则缩进字符不会转换为空格。 但任何新的代码行将根据 EditorConfig 文件进行格式化。
 
 如果从项目或基本代码库中删除 EditorConfig 文件，必须关闭并重新打开任何打开的代码文件才能还原到新代码行的全局编辑器设置。
+
+### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>若要将 EditorConfig 文件添加到项目或解决方案
+
+1. 在 Visual Studio 中打开项目或解决方案。 选择项目或解决方案节点，具体取决于 .editorconfig 设置是要应用于解决方案中的所有项目还是仅应用于一个。 还可在项目或解决方案中选择一个文件夹，以将 .editorconfig 文件添加到该文件夹。
+
+1. 从菜单栏中，选择“项目” > “添加新项...”，或按 Ctrl+Shift+A。
+
+   此时将打开“添加新项”对话框。
+
+1. 在左侧的类别，选择“常规”，然后选择“文本文件”模板。 在“名称”文本框中，输入 `.editorconfig`，然后选择“添加”。
+
+   解决方案资源管理器中会出现一个 .editorconfig 文件，该文件会在编辑器中打开。
+
+   ![解决方案资源管理器中的 .editorconfig 文件](media/editorconfig-in-solution-explorer.png)
+
+1. 根据需要编辑文件，例如：
+
+```EditorConfig
+root = true
+
+[*.{cs,vb}]
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.cs]
+csharp_new_line_before_open_brace = methods
+```
+
+或者，可安装 [EditorConfig 语言服务扩展](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)。 安装此扩展后，仅需右键单击解决方案节点、项目节点或解决方案资源管理器中的任何文件夹，从出现的菜单中，或在这些节点或文件夹的上下文菜单中选择“添加” > “.editorconfig 文件”即可。
+
+![添加带有文件扩展名的 .editorconfig 文件](media/editorconfig-extension-add.png)
+
+## <a name="override-editorconfig-settings"></a>替代 EditorConfig 设置
+
+如果在文件层次结构中将 .editorconfig 文件添加到文件夹，则其设置将应用于该级别和更低级别的所有适用文件。 还可替代特定项目、代码库或部分代码库的 EditorConfig 设置，以使其使用与代码库其他部分不同的约定。 当要包含其他地方的代码而不想更改其约定时，这会很有用。
+
+若要替代部分或全部 EditorConfig 设置，请在要应用这些替代设置的文件层次结构级别添加 .editorconfig 文件。 新的 EditorConfig 文件设置应用于同级目录和任何子目录中的文件。
+
+![EditorConfig 层次结构](../ide/media/vside_editorconfig_hierarchy.png)
+
+如果只想替代某些设置并非所有设置，仅需在 .editorconfig 文件中指定这些设置。 将仅替代较低级别文件中显式列出的属性。 将继续应用更高级别的 .editorconfig 文件中的其他设置。 如果要确保_任何_更高级别的 .editorconfig 文件中_没有_设置应用于此部分代码库，请将 ```root=true``` 属性添加到较低级别的 .editorconfig 文件中：
+
+```EditorConfig
+# top-most EditorConfig file
+root = true
+```
+
+EditorConfig 文件从上到下进行读取，最近的 EditorConfig 文件会最后读取。 来自匹配 EditorConfig 部分的约定会按读取顺序进行应用，因此更近文件中的约定会优先使用。
+
+## <a name="editing-editorconfig-files"></a>编辑 EditorConfig 文件
+
+Visual Studio 提供一些 IntelliSense 用于编辑 .editorconfig 文件。
+
+![.editorconfig 文件中的 IntelliSense](media/editorconfig-intellisense-no-extension.png)
+
+编辑 EditorConfig 文件后，必须重载代码文件，新设置才会生效。
+
+如果编辑大量 .editorconfig 文件，可能会发现 [EditorConfig 语言服务](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)扩展很有用。 该扩展的一些功能包括语法高亮显示、改进的 IntelliSense、验证和代码格式。
+
+![带有 EditorConfig 语言服务扩展的 IntelliSense](media/editorconfig-intellisense.png)
 
 ## <a name="example"></a>示例
 
@@ -82,7 +124,7 @@ Visual Studio 提供一些 IntelliSense 用于编辑 .editorconfig 文件。 如
 
 将具有以下内容的名为 .editorconfig 的新文件添加到项目。 `[*.cs]` 设置意味着此更改仅应用于项目中的 C# 代码文件。
 
-```
+```EditorConfig
 # Top-most EditorConfig file
 root = true
 
@@ -107,7 +149,7 @@ indent_style = tab
 
 还可以通过打开命令提示符并从包含项目的磁盘的根目录运行以下命令，在父目录中查找任何 .editorconfig 文件：
 
-```
+```Shell
 dir .editorconfig /s
 ```
 

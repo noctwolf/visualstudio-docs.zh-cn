@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.assetid: A7B98509-7ACA-4E25-BD1B-BBC98742F028
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a7dac076dabaf0d44a1eda9c267e5c9b2eafe5a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 65f14d96bd495a1b3f8ca138176fbf805fdfeb67
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概述
 
@@ -56,7 +55,7 @@ IntelliTest 查找与测试程序相关的输入，这意味着可使用它生�
 
 以下示例针对名为 value 的参数创建两个约束，以便 IntelliTest 生成所需的字符串。
 
-```
+```csharp
 using System;
 using Microsoft.Pex.Framework; 
 using Microsoft.VisualStudio.TestTools.UnitTesting; 
@@ -84,10 +83,9 @@ public partial class HelloWorldTest {
 7. "Hello\0World!"
 8. "Hello World!"
 
-转到[此处](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest#Anchor_0)，了解保存生成测试的位置。
-生成的测试代码应包含如下所示的测试：
+阅读[使用 IntelliTest 生成单元测试](../../test/generate-unit-tests-for-your-code-with-intellitest.md)，获取生成的测试的保存位置。 生成的测试代码应包含如下所示的测试：
 
-```
+```csharp
 [TestMethod]
 [PexGeneratedBy(typeof(global::HelloWorldTest))]
 [PexRaisedException(typeof(Exception))]
@@ -99,7 +97,6 @@ public void HelloWorldThrowsException167()
 
 就这么简单！
 
-<a name="limitations"></a>
 ## <a name="limitations"></a>限制
 
 本部分介绍 IntelliTest 的限制：
@@ -165,7 +162,7 @@ IntelliTest 使用自动[约束求解器](input-generation.md#constraint-solver)
 ## <a name="further-reading"></a>其他阅读材料
 
 * MSDN 上的[介绍性博客文章](https://blogs.msdn.microsoft.com/visualstudioalm/2014/11/19/introducing-smart-unit-tests/)。
-* [使用 IntelliTest 为代码生成单元测试](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest)
+* [使用 IntelliTest 为代码生成单元测试](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
 
 ## <a name="got-feedback"></a>是否获得反馈？
 

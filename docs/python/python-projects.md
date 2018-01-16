@@ -13,15 +13,15 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6fe63cd9258c5baf9509bb68d4258e839ebe75f0
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-projects"></a>Python 项目
 
-通常仅使用文件夹和文件定义 Python 应用程序，但如果程序变大，并且可能会涉及自动生成文件、适用于 Web 应用程序的 JavaScript 等，这种结构就会变得复杂。 为帮助管理这种复杂的情况，可以为 Python 应用程序创建 Visual Studio 项目。 Python 项目（`.pyproj` 文件）标识与你的项目关联的所有源和内容文件、包含每个文件的生成信息、维护与源代码管理系统集成的信息，并且帮助将应用程序整理为逻辑组件。
+通常仅使用文件夹和文件定义 Python 应用程序，但如果程序变大，并且可能会涉及自动生成文件、适用于 Web 应用程序的 JavaScript 等，这种结构就会变得复杂。 Visual Studio 项目帮助管理复杂性问题。 此项目（`.pyproj` 文件）标识与你的项目关联的所有源和内容文件、包含每个文件的生成信息、维护与源代码管理系统集成的信息，并且帮助将应用程序整理为逻辑组件。
 
 此外，项目始终在 Visual Studio 解决方案内进行管理，而解决方案中可包含任意数量可相互引用的项目。 例如，Python 项目可引用扩展模块的 C++ 项目，这样开始调试 Python 项目时，Visual Studio 会自动生成 C++ 项目（如有需要）。 （有关综合讨论，请参阅 [Visual Studio 中的解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)。）
 
@@ -38,7 +38,7 @@ Visual Studio 提供多种 Python 项目模板用于快速设置多个应用程�
 
 <a name="lightweight-usage-project-free"</a>
 > [!Tip]
-> 即使没有项目，Visual Studio 也能妥善处理 Python 代码，因为你可以直接打开 Python 文件和充分利用自动完成、IntellSense 和调试功能（在编辑器中单击右键，并选择“启动[调试|不调试]”）。 因为此类代码始终使用默认的全局环境，但是，如果代码针对其他环境，则可能出现不正确的完成或错误。 此外，Visual Studio 将分析打开的单个文件所在文件夹中的所有文件和包，这可能会占用相当多的 CPU 时间。
+> 即使没有项目，Visual Studio 也能妥善处理 Python 代码，因为你可以直接打开 Python 文件和充分利用自动完成、IntelliSense 和调试功能（在编辑器中单击右键，并选择“启动[调试|不调试]”）。 因为此类代码始终使用默认的全局环境，但是，如果代码针对其他环境，则可能出现不正确的完成或错误。 此外，Visual Studio 将分析打开的单个文件所在文件夹中的所有文件和包，这可能会占用相当多的 CPU 时间。
 >
 > 如下文中的[根据现有文件创建项目](#creating-a-project-from-existing-files)所述，根据现有代码创建 Visual Studio 项目非常简单。
 
@@ -62,15 +62,16 @@ Visual Studio 提供多种 Python 项目模板用于快速设置多个应用程�
 ![激活 Python 项目的环境](media/projects-activate-environment.png)
 
 <a name="project-types"</a>
+
 ## <a name="project-templates"></a>项目模板
 
-Visual Studio 提供多种方法用于从零开始，或根据现有代码设置 Python 项目。 若要使用模板，请选择“文件”>“新建”>“项目...”菜单命令，或右键单击解决方案资源管理器中的解决方案，选择“添加”>“新建项目...”，这两种方法都会打开下方的“新建项目”对话框。 若要查看特定于 Python 的模板，请搜索“Python”或选择“模板”>“其他语言”>“Python”节点：
+Visual Studio 提供多种方法用于从零开始，或根据现有代码设置 Python 项目。 若要使用模板，请选择“文件”>“新建”>“项目...”菜单命令，或右键单击解决方案资源管理器中的解决方案，选择“添加”>“新建项目...”，这两种方法都会打开下方的“新建项目”对话框。 若要查看特定于 Python 的模板，请搜索“Python”或选择“已安装”>“Python”节点：
 
 ![Python 的新建项目对话框模板](media/projects-new-project-dialog.png)
 
 下表总结了 Visual Studio 2017 中提供的模板（并非所有以前版本都提供了这些模板）：
 
-| 模板 | 描述 | 
+| 模板 | 描述 |
 | --- | --- |
 | [根据现有 Python 代码](#creating-a-project-from-existing-files) | 从文件夹结构中的现有 Python 代码创建 Visual Studio 项目。  |
 | Python 应用程序 | 新 Python 应用程序的基本项目结构具有一个空的源文件。 默认情况下，项目在默认全局环境的控制台解释器中运行，通过[分配其他环境](python-environments.md#project-specific-environments)可以更改环境。 |

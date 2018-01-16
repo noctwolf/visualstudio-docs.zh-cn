@@ -22,11 +22,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 46bbd3bf979ef1406c1edbf89e9152ba439d3ef1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0eadf1b5d94a136861d45275ebc5b94b6707cf14
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="exec-task"></a>Exec 任务
 通过使用指定的参数来运行指定程序或命令。  
@@ -37,8 +37,11 @@ ms.lasthandoff: 12/22/2017
 |参数|描述|  
 |---------------|-----------------|  
 |`Command`|必选 `String` 参数。<br /><br /> 要运行的命令。 可以是系统命令（例如 attrib），也可以是可执行文件（例如 program.exe、runprogram.bat 或 setup.msi）。<br /><br /> 此参数可包含多行命令。 或者，可将多个命令放在批文件中，然后使用此参数运行文件。|  
+|`ConsoleOutput`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 每个项输出都是工具发出的标准输出或标准错误流的一行。 仅当 `ConsoleToMsBuild` 设置为 `true`，才会捕获此信息。|
+|`ConsoleToMsBuild`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，任务将捕获该工具的标准错误和标准输出，并使其在 `ConsoleOutput` 输出参数中可用。 默认值为 `false`。|
 |`CustomErrorRegularExpression`|可选 `String` 参数。<br /><br /> 指定用于查找工具输入中错误行的正则表达式。 这对会生成不常见格式的输出的工具非常有用。|  
 |`CustomWarningRegularExpression`|可选 `String` 参数。<br /><br /> 指定用于查找工具输入中警告行的正则表达式。 这对会生成不常见格式的输出的工具非常有用。|  
+|`EchoOff`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，任务不会将 `Command` 的展开形式发送到 MSBuild 日志。 默认值为 `false`。|
 |`ExitCode`|可选 `Int32` 输出只读参数。<br /><br /> 指定执行的命令提供的退出代码。|  
 |`IgnoreExitCode`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则任务会忽略执行的命令所提供的退出代码。 否则，如果执行的命令返回一个非零退出代码，那么该任务将返回 `false`。|  
 |`IgnoreStandardErrorWarningFormat`|可选 `Boolean` 参数。<br /><br /> 如果为 `false`，则会选择输出中与标准错误/警告格式相匹配的行，并将其记录为错误/警告。 如果为 `true`，则会禁用此行为。 默认值为 `false`。|  

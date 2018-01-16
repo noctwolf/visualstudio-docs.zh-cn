@@ -1,7 +1,7 @@
 ---
-title: "如何：创建多文件项模板 | Microsoft Docs"
+title: "创建 Visual Studio 的多文件项模板 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -11,81 +11,94 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a0cdd8fdd8ec36ccb070e8aaa197d728047a3fef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f1d5b11c97b7f214a13225b5605f47e3d3a45966
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：创建多文件项模板
-项模板仅能指定一个项，但有时该项由多个文件组成。 例如，适用于 Visual Basic 的 Windows 窗体项模板需要下列三个文件：  
-  
--   包含用于窗体的代码的 .vb 文件。  
-  
--   包含用于窗体的设计器信息的设计器 .vb 文件。  
-  
--   包含用于窗体的嵌入资源的 .resx 文件。  
-  
- 多文件项模板需要参数，用于确保在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中创建该项时使用正确的文件扩展名。 如果使用“导出模板”向导创建项模板，会自动生成这些参数，无需进一步编辑。 下列步骤解释如何使用参数来确保创建正确的文件扩展名。  
-  
-### <a name="to-manually-create-a-multi-file-item-template"></a>手动创建多文件项模板  
-  
-1.  以创建单文件项模板的方式创建项模板。 有关详细信息，请参阅[如何：创建项模板](../ide/how-to-create-item-templates.md)。  
-  
-2.  将 `TargetFileName` 属性添加至每一个 `ProjectItem` 元素。 将 `TargetFileName` 属性的值设为 $fileinputname$.FileExtension，此处 FileExtension 为模板中包含的文件的文件扩展名。 例如:  
-  
-    ```  
-    <ProjectItem TargetFileName="$fileinputname$.vb">  
-        Form1.vb  
-    </ProjectItem>  
-    <ProjectItem TargetFileName="$fileinputname$.Designer.vb">  
-        Form1.Designer.vb  
-    </ProjectItem>  
-    <ProjectItem TargetFileName="$fileinputname$.resx">  
-        Form1.resx  
-    </ProjectItem>  
-    ```  
-  
-     当由此模板派生的项被添加到项目中时，文件名将以用户在“添加新项”对话框中键入的名称为依据。  
-  
-3.  选择要包含在模板中的文件，右键单击所选文件，单击“发送至”，然后单击“压缩的文件夹（zip 格式）”。 所选的文件被压缩到一个 .zip 文件中。  
-  
-4.  将该 .zip 文件放到用户项模板位置。 默认情况下，该目录为 \My Documents\Visual Studio Version\Templates\ItemTemplates\\。 有关详细信息，请参阅[如何：查找和组织模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。  
-  
-## <a name="example"></a>示例  
- 下列示例显示了 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Windows 窗体模板。 基于此模板创建项时，创建的三个文件的名称将与“添加新项”对话框中输入的名称相匹配。  
-  
-```  
-<VSTemplate Version="2.0.0" Type="Item"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>Multi-file Item Template</Name>  
-        <Icon>Icon.ico</Icon>  
-        <Description>An example of a multi-file item template</Description>  
-        <ProjectType>VisualBasic</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectItem TargetFileName="$fileinputname$.vb" SubType="Form">  
-            Form1.vb  
-        </ProjectItem>  
-        <ProjectItem TargetFileName="$fileinputname$.Designer.vb">  
-            Form1.Designer.vb  
-        </ProjectItem>  
-        <ProjectItem TargetFileName="$fileinputname$.resx">  
-            Form1.resx  
-        </ProjectItem>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [如何：创建项模板](../ide/how-to-create-item-templates.md)   
- [模板参数](../ide/template-parameters.md)   
- [如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)
+
+项模板仅能指定一个项，但有时该项由多个文件组成。 例如，Windows 窗体项模板需要下列三个文件：
+
+- 包含用于窗体的代码的文件
+
+- 包含用于窗体的设计器信息的文件
+
+- 包含用于窗体的嵌入资源的文件
+
+多文件项模板需要参数，确保创建该项时使用正确的文件扩展名。 如果使用“导出模板向导”创建多文件项模板，会自动生成这些参数，无需进一步编辑。
+
+## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>使用“导出模板向导”创建多文件项模板
+
+可按创建单文件项模板的方式创建多文件项模板。 请参阅[如何：创建项模板](../ide/how-to-create-item-templates.md)。 在向导的“选择要导出的项”页面中，选择具有相关文件（例如，“Windows 窗体”窗体文件）的文件。 向导会自动在模板中含入任何相关文件，例如设计器和资源文件。
+
+## <a name="to-manually-create-a-multi-file-item-template"></a>手动创建多文件项模板
+
+1. 创建项模板与手动创建单文件项模板一样，但包括每个构成多文件项的文件。
+
+1. 在 .vstemplate XML 文件中，为每个单个文件添加 `ProjectItem` 元素，并向此元素添加 `TargetFileName` 属性。 将 `TargetFileName` 属性的值设为 $fileinputname$.FileExtension，此处 FileExtension 为模板中包含的文件的文件扩展名。 例如:
+
+    ```xml
+    <ProjectItem TargetFileName="$fileinputname$.vb">
+        Form1.vb
+    </ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$.Designer.vb">
+        Form1.Designer.vb
+    </ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$.resx">
+        Form1.resx
+    </ProjectItem>
+    ```
+
+     > [!NOTE]
+     > 当由此模板派生的项被添加到项目中时，文件名将从用户在“添加新项”对话框中输入的名称派生。
+
+1. 选择要包含在模板中的文件，右键单击所选文件，然后选择“发送至” > “压缩的文件夹（zip 格式）”。
+
+   所选的文件被压缩到一个 .zip 文件中。
+
+1. 将该 .zip 文件复制到用户项模板位置。 默认情况下，该目录为 %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates。 有关详细信息，请参阅[如何：查找和组织模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+
+1. 关闭 Visual Studio，然后重新打开它。
+
+1. 创建一个新项目，或打开现有项目，然后选择“项目” > 添加新项”... 或按 Ctrl + Shift + A。
+
+   多文件项模板在“添加新项”对话框中显示。
+
+## <a name="example"></a>示例
+
+下列示例显示了 Windows 窗体模板。 基于此模板创建项时，创建的三个文件的名称将与“添加新项”对话框中输入的名称相匹配。
+
+```xml
+<VSTemplate Version="2.0.0" Type="Item"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Multi-file Item Template</Name>
+        <Icon>Icon.ico</Icon>
+        <Description>An example of a multi-file item template</Description>
+        <ProjectType>VisualBasic</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectItem TargetFileName="$fileinputname$.vb" SubType="Form">
+            Form1.vb
+        </ProjectItem>
+        <ProjectItem TargetFileName="$fileinputname$.Designer.vb">
+            Form1.Designer.vb
+        </ProjectItem>
+        <ProjectItem TargetFileName="$fileinputname$.resx">
+            Form1.resx
+        </ProjectItem>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>请参阅
+
+[创建项目和项模板](../ide/creating-project-and-item-templates.md)  
+[如何：创建项模板](../ide/how-to-create-item-templates.md)  
+[模板参数](../ide/template-parameters.md)  
+[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)

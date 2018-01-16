@@ -1,84 +1,78 @@
 ---
-title: "如何：更新现有模板 | Microsoft Docs"
+title: "在 Visual Studio 中更新现有项目和项模板 | Microsoft Docs"
 ms.custom: 
-ms.date: 10/19/2017
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- item templates, updating existing templates
-- Visual Studio templates, updating existing templates
-- project templates, updating existing templates
-ms.assetid: d585e45b-7fe2-45fa-9cf3-7f2bc060f3c4
-caps.latest.revision: "19"
+- item templates, updating
+- Visual Studio templates, updating
+- project templates, updating
+- updating templates [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 28ae63c6dba9d352025d5c87d838772a81cf989d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9401f8a9a07f7098575ff267825982a03024e968
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新现有模板
-创建模板并将文件压缩为一个 .zip 文件后，你可能想要修改该模板。 可以通过以下两种方式完成此操作，即手动更改模板中的文件，或者从基于该模板的项目中导出新模板。  
-  
-## <a name="using-the-export-template-wizard-to-update-an-existing-template"></a>使用“导出模板”向导更新现有模板  
-Visual Studio 提供了“导出模板”向导，该向导可用于更新现有模板。  
-  
-#### <a name="to-use-export-template-to-update-an-existing-template"></a>使用“导出模板”更新现有模板  
-  
-1.  通过选择“文件”、“新建”、“项目”来打开“新建项目”对话框。  
-  
-2.  选择要更新的模板，输入项目的名称和位置，然后选择“确定”。  
-  
-3.  修改 Visual Studio 中的项目。  
-  
-4.  在“项目”菜单上，选择“导出模板”。  
 
-    “导出模板向导”随即打开。  
+创建模板并将文件压缩为一个 .zip 文件后，你可能想要修改该模板。 可以通过以下两种方式完成此操作，即手动更改模板中的文件，或者从基于该模板的项目中导出新模板。
 
-5.  按照向导中的提示将模板以 .zip 文件导出。  
+## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>使用“导出模板向导”更新现有项目模板
 
-6.  删除旧的模板 .zip 文件。  
-  
-## <a name="manually-updating-an-existing-template"></a>手动更新现有模板  
-通过修改压缩的 .zip 文件中的文件，可在 Visual Studio 之外更新现有模板。  
-  
-#### <a name="to-manually-update-an-existing-template"></a>手动更新现有模板  
-  
-1.  找到包含模板的 .zip 文件。 默认情况下，此文件位于 %USERPROFILE%\Documents\Visual Studio \<version\>\My Exported Templates\.  
-  
-2.  解压缩 .zip 文件。  
-  
-3.  修改或删除当前的模板文件，或向该模板添加新文件。  
-  
-4.  打开、修改并保存 .vstemplate XML 文件，以处理已更新的行为或新文件。  
+Visual Studio 提供了“导出模板向导”，该向导可用于更新现有模板：
 
-    有关 .vstemplate 架构的详细信息，请参阅 [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)。 有关可在源文件中进行参数化的内容的详细信息，请参阅[模板参数](../ide/template-parameters.md)。  
-  
-5.  选择模板中的文件，右键单击，选择“发送至”，然后选择“压缩文件夹”。  
+1. 通过选择“文件” > “新建” > “项目”来打开“新建项目”对话框。
 
-    所选的文件被压缩到一个 .zip 文件中。  
-  
-6.  将新 .zip 文件放在旧 .zip 文件的同一目录中。  
-  
-7.  删除解压缩的模板文件和旧的 .zip 模板文件。  
-  
-8.  启动开发人员命令提示符的提升实例：  
+1. 选择要更新的模板，输入项目的名称和位置，然后选择“确定”。
 
-  1. 在“开始”菜单中，导航到“Visual Studio \<version\>”、“开发人员命令提示符”。  
+1. 修改 Visual Studio 中的项目。
 
-  2. 从上下文（右键单击）菜单中，依次选择“更多”、“以管理员身份运行”。  
-  
-9. 运行以下命令：`devenv /installvstemplates`。  
-  
-## <a name="see-also"></a>请参阅  
-[自定义模板](../ide/customizing-project-and-item-templates.md)   
-[创建项目和项模板](../ide/creating-project-and-item-templates.md)   
-[Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
-[模板参数](../ide/template-parameters.md)   
+1. 在“项目”菜单上，选择“导出模板”。
+
+    “导出模板向导”随即打开。
+
+1. 按照向导中的提示将模板以 .zip 文件导出。
+
+1. （可选）要将模板添加到“新建项目”对话框，请将 .zip 文件放在以下目录中：%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates。 如果未在“导出模板向导”中选择“自动将模板导入 Visual Studio”选项，则需执行此步骤。
+
+1. 删除旧的模板 .zip 文件。
+
+## <a name="manually-updating-an-existing-template"></a>手动更新现有模板
+
+可通过修改压缩的 .zip 文件中的文件来更新现有模板，而无需使用“导出模板向导”。
+
+### <a name="to-manually-update-an-existing-template"></a>手动更新现有模板
+
+1. 找到包含模板的 .zip 文件。 用户项目模板通常位于 %USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates。
+
+1. 解压缩 .zip 文件。
+
+1. 修改或删除当前的模板文件，或向该模板添加新文件。
+
+1. 打开、修改并保存 .vstemplate XML 文件，以处理已更新的行为或新文件。
+
+    有关 .vstemplate 架构的详细信息，请参阅 [Visual Studio 模板架构引用（扩展性）](../extensibility/visual-studio-template-schema-reference.md)。 有关可在源文件中进行参数化的内容的详细信息，请参阅[模板参数](../ide/template-parameters.md)。
+
+1. 选择模板中的文件，然后通过右键单击或从上下文菜单中选择“发送至” > “压缩的文件夹（zip 格式）”。
+
+    所选的文件被压缩到一个 .zip 文件中。
+
+1. 将新 .zip 文件放在旧 .zip 文件的同一目录中。
+
+1. 删除解压缩的模板文件和旧的 .zip 模板文件。
+
+## <a name="see-also"></a>请参阅
+
+[自定义模板](../ide/customizing-project-and-item-templates.md)  
+[创建项目和项模板](../ide/creating-project-and-item-templates.md)  
+[Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)  
+[模板参数](../ide/template-parameters.md)  
 [如何：创建初学者工具包](../ide/how-to-create-starter-kits.md)

@@ -1,7 +1,7 @@
 ---
 title: "在 Visual Studio 中使用 C++ 和 Python | Microsoft Docs"
 ms.custom: 
-ms.date: 1/2/20178
+ms.date: 01/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -14,11 +14,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b7b83243d676c5393669eaa8faa8e8cc34ec2580
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+ms.openlocfilehash: a1e5568f30177d3f4664d1cc1ebd7192539b86bf
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -26,16 +26,16 @@ ms.lasthandoff: 01/02/2018
 
 - 加速器模块：Python 是一种解释型语言，某些代码段可使用 C++ 进行编写来提高性能。 
 - 包装器模块：包装器向 Python 代码公开现有 C/C++ 接口，或公开易于通过 Python 使用的更“Python 化”的 API。
-- 低级别系统访问模块：用于访问 CPython 运行时的较低级别功能、操作系统或基础硬件。 
+- 低级别系统访问模块：用于访问 CPython 运行时的较低级别功能、操作系统或基础硬件。
 
-本主题介绍了如何为 CPython 生成 C++ 扩展模块，该模块计算双曲正切并从 Python 代码中调用它。 首先使用 Python 实现此例程，以演示使用 C++ 实现此相同例程时可获得的性能提升。
+本文介绍了如何为 CPython 生成 C++ 扩展模块，该模块计算双曲正切并从 Python 代码中调用它。 首先使用 Python 实现此例程，以演示使用 C++ 实现此相同例程时可获得的相对性能提升。
 
-此处采用的方法适用于 [Python 文档](https://docs.python.org/3/c-api/)中所述的标准 CPython 扩展。 本主题末尾的[替代方法](#alternative-approaches)下将此方法与其他方法进行了比较。
+此处采用的方法适用于 [Python 文档](https://docs.python.org/3/c-api/)中所述的标准 CPython 扩展。 本文末尾的[替代方法](#alternative-approaches)下将此方法与其他方法进行了比较。
 
 ## <a name="prerequisites"></a>系统必备
 
-- 将 **C++ 桌面开发**和 **Python 开发**工作负载作为默认选项安装的 Visual Studio 2017。 
-- 在 Python 开发工作负载中，还可以选中右侧的“Python 本机开发工具”复选框，以设置本主题中所述的大多数选项。 （此选项还自动包括 C++ 工作负载。） 
+- 将 **C++ 桌面开发**和 **Python 开发**工作负载作为默认选项安装的 Visual Studio 2017。
+- 在“Python 开发”工作负载中，同时选择右侧的“Python 本机开发工具”方框。 此选项设置本文所述的大部分配置。 （此选项还自动包括 C++ 工作负载。）
 
 ![选择“Python 本机开发工具”选项](media/cpp-install-native.png)
 
@@ -100,31 +100,33 @@ ms.lasthandoff: 01/02/2018
 
 1. 在解决方案资源管理器中右键单击解决方案，然后选择“添加”>“新建项目...”。Visual Studio 解决方案可以同时包含 Python 和 C++ 项目。
 
-1. 搜索“C++”，选择“空项目”，指定名称（例如 TanhBenchmark），然后选择“确定”。 注意：如果随 Visual Studio 2017 一起安装了 **Python 本机开发工具**，则可从 **Python 扩展模块**模板开始，其中有许多现成的此处所述内容。 但是，对于本演练，从空项目开始可以逐步演示如何生成扩展模块。
+1. 搜索“C++”，选择“空项目”，指定名称（本文使用“superfastcode”），并选择“确定”。 注意：如果随 Visual Studio 2017 一起安装了 **Python 本机开发工具**，则可从 **Python 扩展模块**模板开始，其中有许多现成的此处所述内容。 但是，对于本演练，从空项目开始可以逐步演示如何生成扩展模块。
 
-1. 在新项目中创建 C++ 文件，方法是右键单击“源文件”节点，然后选择“添加”>“新建项...”，选择“C++ 文件”，指定其名称（例如 `module.cpp`），然后选择“确定”。 若要在后续步骤中打开 C++ 属性页，则必须执行此步骤。
+1. 在新项目中创建 C++ 文件，方法是右键单击“源文件”节点，然后选择“添加”>“新建项...”，选择“C++ 文件”，指定其名称（例如 `module.cpp`），然后选择“确定”。 如果要在后续步骤中返回 C++ 属性页，则必须执行此步骤。
 
-1. 右键单击新项目并选择“属性”，然后在显示的“属性页”对话框顶部，将“配置”设置为“所有配置”。
+1. 右键单击解决方案中的 C++ 项目，选择“属性”。
 
-1. 如下所述设置特定属性，然后选择“确定”。
+1. 在显示的“属性页”对话框顶部，将“配置”设置为“所有配置”，并将“平台”设置为“Win32”。
 
-    | Tab | 属性 | “值” | 
+1. 如下表所述设置特定属性，然后选择“确定”。
+
+    | Tab | 属性 | “值” |
     | --- | --- | --- |
-    | 常规 | 常规 > 目标名称 | 将此字段设置为与 Python 看到的模块名称完全匹配。 |
+    | 常规 | 常规 > 目标名称 | 指定想要在 `from...import` 语句中从 Python 引用的模块的名称。 定义 Python 的模块时，在 C++ 中使用相同的名称。 如果想要将项目的名称用作模块名称，请保留默认值 `$(ProjectName)`。 |
     | | 常规 > 目标扩展名 | .pyd |
     | | 项目默认值 > 配置类型 | 动态库(.dll) |
-    | C/C++ > 常规 | 附加包含目录 | 根据相应的安装添加 Python `include` 文件夹，例如 `c:\Python36\include` |     
-    | C/C++ > 预处理器 | 预处理器定义 | 在字符串的开头添加 `Py_LIMITED_API;`，可限制可从 Python 调用的某些函数，并使代码在 Python 不同版本之间更易于移植。 |
+    | C/C++ > 常规 | 附加包含目录 | 根据相应的安装添加 Python `include` 文件夹，例如 `c:\Python36\include`。  |
+    | C/C++ > 预处理器 | 预处理器定义 | 将 `Py_LIMITED_API;` 添加到字符串（包括分号）的开头。 此定义会限制可从 Python 调用的某些函数，并使代码在 Python 不同版本之间更易于移植。 |
     | C/C++ > 代码生成 | 运行库 | 多线程 DLL (/MD)（请参阅下面的“警告”） |
-    | 链接器 > 常规 | 附加库目录 | 根据相应的安装添加包含 `.lib` 文件的 Python `libs` 文件夹，例如 `c:\Python36\libs`。 （务必指向包含 `.lib` 文件的 `libs` 文件夹，而非包含 `.py` 文件的 `Lib` 文件夹。） | 
+    | 链接器 > 常规 | 附加库目录 | 根据相应的安装添加包含 `.lib` 文件的 Python `libs` 文件夹，例如 `c:\Python36\libs`。 （务必指向包含 `.lib` 文件的 `libs` 文件夹，而非包含 `.py` 文件的 `Lib` 文件夹。） |
 
     > [!Tip]
-    > 如果未看到 C/C++ 选项卡，这是因为项目不包含标识为 C/C++ 源文件的任何文件。 如果创建的源文件不含 `.c` 或 `.cpp` 扩展名，则可能出现这种情况。 例如，如果之前在“新建项”对话框中不小心输入了 `module.coo`（而不是 `module.cpp`），则 Visual Studio 会创建文件，但不会将文件类型设置为“C/C+ 代码”，而正是它激活 C/C++ 属性选项卡。即使将文件重命名为带 `.cpp`，此识别错误仍会存在。 为了正确设置文件类型，请在解决方案资源管理器中右键单击文件，选择“属性”，然后将“文件类型”设置为“C/C++ 代码”。
+    > 如果在项目属性中未看到 C/C++ 选项卡，这是因为项目不包含标识为 C/C++ 源文件的任何文件。 如果创建的源文件不含 `.c` 或 `.cpp` 扩展名，则可能出现这种情况。 例如，如果之前在“新建项”对话框中不小心输入了 `module.coo`（而不是 `module.cpp`），则 Visual Studio 会创建文件，但不会将文件类型设置为“C/C+ 代码”，而正是它激活 C/C++ 属性选项卡。即使将文件重命名为带 `.cpp`，此类识别错误仍会存在。 为了正确设置文件类型，请在解决方案资源管理器中右键单击文件，选择“属性”，然后将“文件类型”设置为“C/C++ 代码”。
 
     > [!Warning]
-    > 即使对于调试配置，也不要将“C/C++”>“代码生成”>“运行时库”选项设置为“多线程调试 DLL (/MDd)”。 请选择“多线程 DLL (/MD)”运行时，因为必须使用此选项才能生成非调试 Python 二进制文件。 如果碰巧设置了 /MDd 选项，则会在生成 DLL 的调试配置时看到错误“C1189: Py_LIMITED_API 与 Py_DEBUG、Py_TRACE_REFS 和 Py_REF_DEBUG 不兼容”。 此外，如果删除 `Py_LIMITED_API` 来避免出现生成错误，则在尝试导入模块时，Python 会崩溃。 （如下所述，崩溃将发生在 DLL 对 `PyModule_Create` 的调用中，并出现输出消息“严重 Python 错误: PyThreadState_Get: 无当前线程”。）
+    > 即使对于调试设置，也始终将“C/C++”>“代码生成”>“运行时库”选项设置为“多线程 DLL (/MD)”，因为此设置是生成非调试 Python 二进制文件时使用的设置。 如果碰巧设置了“多线程调试 DLL (/MDd)”选项，则生成调试配置会产生错误“C1189: Py_LIMITED_API 与 Py_DEBUG、Py_TRACE_REFS 和 Py_REF_DEBUG 不兼容”。 此外，如果删除 `Py_LIMITED_API` 来避免出现生成错误，则在尝试导入模块时，Python 会崩溃。 （如下所述，崩溃将发生在 DLL 对 `PyModule_Create` 的调用中，并出现输出消息“严重 Python 错误: PyThreadState_Get: 无当前线程”。）
     >
-    > 请注意，/MDd 选项用于生成 Python 调试二进制文件（例如 python_d.exe），但对扩展 DLL 选择此选项仍会导致 `Py_LIMITED_API` 的生成错误。
+    > /MDd 选项用于生成 Python 调试二进制文件（例如 python_d.exe），但对扩展 DLL 选择此选项仍会导致 `Py_LIMITED_API` 的生成错误。
 
 1. 右键单击 C++ 项目，然后选择“生成”来测试配置（包括“调试”和“发布”）。 `.pyd` 文件位于解决方案文件夹中的“调试”和“发布”下，而非位于 C++ 项目文件夹本身。
 
@@ -153,7 +155,7 @@ ms.lasthandoff: 01/02/2018
 
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>将 C++ 项目转换为适用于 Python 的扩展
 
-若要使 C++ DLL 成为适用于 Python 的扩展，需要修改导出的方法以与 Python 类型交互。 然后，需要添加一个可导出模块的函数以及该模块的方法的定义。 有关此处所显示内容的背景信息，请参阅 python.org 上的 [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html)（Python/C API 参考手册）和重点的 [Module Objects](https://docs.python.org/3/c-api/module.html)（模块对象）。（务必从右上角的下拉控件中选择相应 Python 版本。）
+若要使 C++ DLL 成为适用于 Python 的扩展，首先应修改导出的方法以与 Python 类型交互。 然后，添加一个可导出模块的函数以及该模块的方法的定义。 有关此处所显示内容的背景信息，请参阅 python.org 上的 [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html)（Python/C API 参考手册）和重点的 [Module Objects](https://docs.python.org/3/c-api/module.html)（模块对象）。（务必从右上角的下拉控件中选择相应 Python 版本。）
 
 1. 在 C++ 文件的顶部，添加 `Python.h`：
 
@@ -161,7 +163,10 @@ ms.lasthandoff: 01/02/2018
     #include <Python.h>
     ```
 
-1. 修改 `tanh_impl` 方法以接受和返回 Python 类型：
+    > [!Tip]
+    > 如果看到“E1696：无法打开源文件‘Python.h’”和/或“C1083：无法打开包含文件：‘Python.h’：没有此类文件或目录”，请验证是否已按照[创建核心 C++ 项目](#create-the-core-c-project)下的步骤 6 所述，将项目属性中的“C/C++ > 常规 > 附加包含目录”设置，设置为 Python 安装的 `include` 文件夹。
+
+1. 修改 `tanh_impl` 方法以接受和返回 Python 类型（即，`PyOjbect*`）：
 
     ```cpp
     PyObject* tanh_impl(PyObject *, PyObject* o) {
@@ -184,7 +189,7 @@ ms.lasthandoff: 01/02/2018
     };
     ```
 
-1. 添加一个定义模块的结构，因为要在 Python 代码中引用它（特别是在使用 `from...import` 语句时）。 在以下示例中，“superfastcode”模块名意味着可在 Python 中使用 `from superfastcode import fast_tanh`，因为 `fast_tanh` 是在 `superfastcode_methods` 中定义的。 （C++ 项目内部使用的文件名，如 module.cpp，是无关紧要的。）
+1. 添加一个定义模块的结构，因为要在 Python 代码中引用它（特别是在使用 `from...import` 语句时）。 （使其与“配置属性>常规>目标名称”中的项目属性中的值匹配。）在以下示例中，“superfastcode”模块名意味着可在 Python 中使用 `from superfastcode import fast_tanh`，因为 `fast_tanh` 是在 `superfastcode_methods` 中定义的。 （C++ 项目内部使用的文件名，如 module.cpp，是无关紧要的。）
 
     ```cpp
     static PyModuleDef superfastcode_module = {
@@ -204,7 +209,10 @@ ms.lasthandoff: 01/02/2018
     }
     ```
 
-1. 再次生成 C++ 项目来验证代码。
+1. 将目标配置设置为“发布”并再次生成 C++ 项目来验证代码。 如果遇到错误，请检查以下事例：
+    - 无法找到 Python.h：验证项目属性中的“C/C ++> 常规> 附加包含目录”中的路径是否指向 Python 安装的 `include` 文件夹。
+    - 无法找到 Python 库：验证项目属性中的“链接器 > 常规> 附加库目录”中的路径是否指向 Python 安装的 `libs` 文件夹。
+    - 与目标体系结构相关的链接器错误：更改 C++ 目标的项目体系结构以匹配 Python 安装。
 
 ## <a name="test-the-code-and-compare-the-results"></a>测试代码和比较结果
 
@@ -214,13 +222,11 @@ ms.lasthandoff: 01/02/2018
 
 可通过两种方法使 DLL 可供 Python 使用。
 
-第一，可将引用从 Python 项目添加到 C++ 项目，前提是它们位于同一个 Visual Studio 解决方案中：
+如果 Python 项目和 C++ 项目在相同的解决方案中，则使用第一种方法。 转到解决方案资源管理器，右键单击 Python 项目中的“引用”节点，然后选择“添加引用”。 在随即出现的对话框中，依次选择“项目”选项卡、“superfastcode”项目（或任何使用的名称），然后选择“确定”。
 
-1. 在解决方案资源管理器中，右键单击 Python 项目中的“引用”节点，然后选择“添加引用”。 在随即出现的对话框中，依次选择“项目”选项卡、“superfastcode”项目（或任何使用的名称），然后选择“确定”。
+另一种方法，如以下步骤所述，在全局 Python 环境中安装模块，使其也可供其他 Python 项目使用。 （执行此操作通常需要刷新该环境的 IntelliSense 完成数据库。 从环境中删除模块时也必须执行刷新。）
 
-第二，可在全局 Python 环境中安装模块，使其也可供其他 Python 项目使用。 执行此操作通常需要刷新该环境的 IntelliSense 完成数据库。 从环境中删除模块时也必须执行刷新。
-
-1. 如果使用 Visual Studio 2017，请运行 Visual Studio 安装程序，选择“修改”，然后选择“各个组件”>“编译器、生成工具和运行时”>“Visual C++ 2015.3 v140 工具集”。 此步骤是必需的，因为 Python（适用于 Windows）本身是使用 Visual Studio 2015（版本 14.0）生成的，并期望通过此处所述的方法生成扩展时能够使用这些工具。
+1. 如果使用 Visual Studio 2017，请运行 Visual Studio 安装程序，选择“修改”，然后选择“各个组件”>“编译器、生成工具和运行时”>“Visual C++ 2015.3 v140 工具集”。 此步骤是必需的，因为 Python（适用于 Windows）本身是使用 Visual Studio 2015（版本 14.0）生成的，并期望通过此处所述的方法生成扩展时能够使用这些工具。 （请注意，可能需要安装 32 位版本的 Python，并将 DLL 定向到 Win32 而不是 x64。）
 
 1. 右键单击 C++ 项目，然后选择“添加”>“新建项目...”，在项目中创建名为 `setup.py` 的文件。然后选择“C++ 文件 (.cpp)”并命名为 `setup.py`，再选择“确定”（尽管使用了 C++ 文件模板，但使用 `.py` 扩展命名文件可让 Visual Studio 将其识别为 Python）。 当编辑器中出现该文件时，将以下代码粘贴到其中：
 
@@ -237,24 +243,24 @@ ms.lasthandoff: 01/02/2018
 
     请参阅 [Building C and C++ Extentions](https://docs.python.org/3/extending/building.html)（生成 C 和 C++ 扩展）(python.org)，获取此脚本相关文档。
 
-1. `setup.py` 代码指示 Python 通过命令行使用 Visual Studio 2015 C++ 工具集生成扩展。 打开提升的命令提示符，导航到包含 C++ 项目（和 `setup.py`）的文件夹，然后输入以下命令：
+1. `setup.py` 代码指示 Python 通过命令行使用 Visual Studio 2015 C++ 工具集生成扩展。 打开提升的命令提示符，导航到包含 C++ 项目（即，包含 `setup.py` 的文件夹），然后输入以下命令：
 
-    ```
+    ```command
     pip install .
     ```
 
 ### <a name="call-the-dll-from-python"></a>从 Python 调用 DLL
 
-完成上述任一方法后，即可调用 `fast_tanh` 函数并将其性能与 Python 实现比较：
+完成上述任一方法后，即可从 Python 代码调用 `fast_tanh` 函数并将其性能与 Python 实现比较：
 
-1. 在 `.py` 文件中添加以下行，调用从 DLL 中导出的 `fast_tanh` 方法并显示其输出。 如果手动键入 `from s` 语句，将看到 `superfastcode` 出现在完成列表中，键入 `import` 后，将显示出 `fast_tanh` 方法。
+1. 在 `.py` 文件中添加以下行，调用从 DLL 中导出的 `fast_tanh` 方法并显示其输出。
 
     ```python
     from superfastcode import fast_tanh
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 
-1. 运行 Python 程序，可看到 C++ 例程的运行速度比 Python 实现快 5 到 20 倍。 再次尝试增加 `COUNT` 变量，让差异变得更明显。 另请注意，C++ 模块发布版本的运行速度快于调试版本的运行速度，因为调试版本优化程度较低，并包含各种错误检查。 请随意在这些配置之间切换，以便比较。
+1. 运行 Python 程序（“调试 > 开始执行(不调试)”或按 Ctrl+F5），观察 C++ 例程的运行速度比 Python 实现快五到 20 倍。 再次尝试增加 `COUNT` 变量，让差异变得更明显。 另请注意，C++ 模块调试版本的运行速度慢于发布版本的运行速度，因为调试版本优化程度较低，并包含各种错误检查。 请随意在这些配置之间切换，以便比较。
 
 ## <a name="debug-the-c-code"></a>调试 C++ 代码
 
@@ -267,11 +273,11 @@ Visual Studio 支持一起调试 Python 和 C++ 代码。
 
 1. 选择“文件”>“保存”以保存属性更改。
 
-1. 在 Visual Studio 工具栏中，将生成配置设置为“调试”。 
+1. 在 Visual Studio 工具栏中，将生成配置设置为“调试”。
 
     ![将生成配置设置为“调试”](media/cpp-set-debug.png)
 
-1. 由于代码在调试器中运行时通常需要更长时间，可能需要将 `.py` 文件中的 `COUNT` 变量更改为小 5 倍的值（例如，从 `500000` 更改为 `100000`）。
+1. 由于代码在调试器中运行时通常需要更长时间，可能需要将 `.py` 文件中的 `COUNT` 变量更改为小五倍的值（例如，从 `500000` 更改为 `100000`）。
 
 1. 在 C++ 代码中，在 `tanh_impl` 方法内的第一行设置一个断点，然后启动调试器（F5 或“调试”>“开始调试”）。 调用该代码时，调试器将会停止。 如果未命中断点，请检查配置是否设置为“调试”以及是否已保存项目（启动调试器时，不会自动执行该操作）。
 
@@ -279,14 +285,14 @@ Visual Studio 支持一起调试 Python 和 C++ 代码。
 
 1. 此时，可浏览 C++ 代码、检查变量等。 这些功能在[一起调试 Python 和 C++](debugging-mixed-mode.md) 中有详细介绍。
 
-## <a name="alternative-approaches"></a>替代方法 
+## <a name="alternative-approaches"></a>替代方法
 
-下表描述了创建 Python 扩展的各种方法。 本主题已经讨论了 CPython 的第一项。
+下表描述了创建 Python 扩展的各种方法。 本文已经讨论了 CPython 的第一项。
 
 | 方法 | 年份 | 代表用户 | 优点 | 缺点 |
 | --- | --- | --- | --- | --- |
 | 适用于 CPython 的 C/C++ 扩展模块 | 1991 | 标准库 | [丰富的文档和教程](https://docs.python.org/3/c-api/)。 完全控制。 | 编译、可移植性、引用管理。 扎实的 C 知识。 |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 针对多种语言立即生成绑定。 | 如果 Python 是唯一目标，则开销过大。 |
 | ctype | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 无编译，广泛可用性。 | 访问和转变 C 结构的过程比较繁琐且容易出错。 |
-| Cython | 2007 | [gevent](http://www.gevent.org/)、[kivy](https://kivy.org/) | 类似于 Python。 非常成熟。 高性能。 | 编译、新语法和工具链。 |
+| Cython | 2007 | [gevent](http://www.gevent.org/)、[kivy](https://kivy.org/) | 类似于 Python。 非常成熟。 高性能。 | 编译、新语法、新工具链。 |
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/)、[pypy](http://pypy.org/) | 易于集成，与 PyPy 兼容。 | 新推出，不够成熟。 |

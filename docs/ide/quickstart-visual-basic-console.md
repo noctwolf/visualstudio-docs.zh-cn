@@ -13,11 +13,11 @@ ms.author: tglee
 manager: ghogen
 dev_langs: vb
 ms.workload: multiple
-ms.openlocfilehash: 46557b646db37b3f04420ca5b91ab71c4f5b088a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用
 在这个 5-10 分钟的 Visual Studio 集成开发环境 (IDE) 简介中，你将了解如何创建在控制台上运行的简单 Visual Basic 应用程序。
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/22/2017
      ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负载](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ## <a name="create-the-application"></a>创建应用程序
-选择 Visual Basic 项目模板并为项目命名后，Visual Studio 会创建一个简单的“Hello World”应用程序。 它通过调用 [Console.WriteLine(System.String)](https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline?view=netframework-4.7.1#System_Console_WriteLine_System_String) 方法来显示文本字符串“Hello World!” 显示文本字符串“Hello World!”。
+选择 Visual Basic 项目模板并为项目命名后，Visual Studio 会创建一个简单的“Hello World”应用程序。 它通过调用 <xref:System.Console.WriteLine%2A> 方法在控制台窗口中 显示文本字符串“Hello World!”。
 
 ![查看模板中的默认 Hello World 代码](../ide/media/vb-console-helloworld-template.png)
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="add-some-code"></a>添加一些代码
 先添加一些代码来暂停应用程序，然后请求用户输入。
 
-1. 在 [Console.WriteLine(System.String)](https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline?view=netframework-4.7.1#System_Console_WriteLine_System_String) 方法调用后紧接着添加以下代码：
+1. 在 <xref:System.Console.WriteLine%2A> 方法调用后面紧接着添加以下代码：
 
    ```vb
    Console.Write("Press any key to continue...")

@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 9770a484c6949695641234a96d8b5a6cdb3c645b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71ab9d5c58ebb76ad158b9f9e66b35b4732c1d4e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debugging-your-python-code"></a>调试 Python 代码
 
@@ -31,7 +31,7 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 
 - [基础调试](#basic-debugging)
 - [项目调试选项](#project-debugging-options)
-- [调试交互窗口](#the-debug-interactive-window)
+- [即时窗口和交互窗口](#immediate-and-interactive-windows)
 
 另请参阅以下情景特定的调试主题：
 
@@ -163,6 +163,7 @@ HTML、XML 和 JSON 可视化效果显示在单独的弹出窗口中，其中突
 | 环境变量 | 在此多行文本框中，添加 `NAME=VALUE` 形式的条目。 由于除任何现有全局环境变量外，此设置是最后应用，因此在根据搜索路径设置设定 `PYTHONPATH` 之后，可以将该设置用于手动替代任何设置。 |
 
 <a name="the-debug-interactive-window"</a>
+
 ## <a name="immediate-and-interactive-windows"></a>即时窗口和交互窗口
 
 调试会话期间可使用两个交互窗口：标准 Visual Studio 即时窗口和 Python 调试交互窗口。
