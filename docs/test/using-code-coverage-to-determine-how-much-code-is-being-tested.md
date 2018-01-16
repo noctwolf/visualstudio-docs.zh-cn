@@ -12,14 +12,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 51c8076ef3166e7f0f887a77399a0edfd5cfc072
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 62a860da6c8f672f5ecd03d3ab97bb9e3ddd3365
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用代码覆盖率确定所测试的代码量
 若要确定正在由编码的测试（例如单元测试）实际进行测试的项目代码的比例，则可以使用 Visual Studio 的代码覆盖率功能。 若要有效防止 Bug，测试应作用于或“覆盖”你的大部分代码。  
@@ -267,15 +268,16 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  生成运行后，代码覆盖率结果将附加到测试运行并显示在生成摘要中。  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>分析命令行上的代码覆盖率  
- 若要从命令行运行测试，请使用 vstest.console.exe。 代码覆盖率是此实用工具的一个选项。 有关详细信息，请参阅 [VSTest.Console.exe 命令行选项](/devops-test-docs/test/vstest-console-exe-command-line-options)。  
+
+若要从命令行运行测试，请使用 vstest.console.exe。 代码覆盖率是 vstest.console.exe 实用工具的一个选项。
+
+1.  启动 Visual Studio 开发人员命令提示符：
   
-1.  启动 Visual Studio 开发人员命令提示符：  
+    在 Windows 启动 菜单上选择“Visual Studio 2017” > “VS 2017 的开发人员命令提示符”。  
   
-     在 Windows 的“开始”菜单上，依次选择“所有程序”、“Microsoft Visual Studio”、“Visual Studio Tools”和“开发人员命令提示”。  
+2.  运行下面的命令：
   
-2.  运行：  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
   
 ## <a name="troubleshooting"></a>疑难解答  
  如果看不到代码覆盖率结果，请参阅[代码覆盖率疑难解答](../test/troubleshooting-code-coverage.md)。  

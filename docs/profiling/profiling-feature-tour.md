@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="profiling-feature-tour"></a>分析功能简介
 
@@ -147,7 +147,8 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 
 ![性能资源管理器工具](../profiling/media/prof-tour-performance-explorer.png "Performance Explorer")
 
-## <a name="which-tool-should-i-use"></a>应使用哪一种工具？  
+## <a name="tool_support_info"></a>应使用哪一种工具？  
+
 下表列出了 Visual Studio 提供的不同工具以及适用的不同项目类型：
   
 |性能工具|Windows 桌面|Windows 通用/应用商店|ASP.NET/ASP.NET Core|  
@@ -158,7 +159,7 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 |[应用程序时间线](../profiling/application-timeline.md)|是|是|否|  
 |[性能提示](../profiling/perftips.md)|是|XAML 适用，HTML 不适用|是|  
 |[性能资源管理器](../profiling/performance-explorer.md)|是|否|是（不适用于 ASP.NET Core）|  
-|[IntelliTrace](../debugger/intellitrace.md)|仅限 .NET Enterprise|仅限 .NET Enterprise|仅限 .NET Enterprise|
+|[IntelliTrace](../debugger/intellitrace.md)|仅适用于 .NET 和 Visual Studio Enterprise|仅适用于 .NET 和 Visual Studio Enterprise|仅适用于 .NET 和 Visual Studio Enterprise|
 |[网络使用情况](../profiling/network-usage.md)|否|是|否| 
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|HTML 适用，XAML 不适用|否|  
 |[JavaScript 内存](../profiling/javascript-memory.md)|否|HTML 适用，XAML 不适用|否|  

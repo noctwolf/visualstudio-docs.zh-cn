@@ -16,37 +16,35 @@ f1_keywords:
 helpviewer_keywords:
 - automated tests, testing UI interface
 - coded UI test
-ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
-caps.latest.revision: "85"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a8a7f23593e3d4056d1f3469d1d26ff6aed23882
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: fafb9bc38aca51db6baf6cace6dc887db60ed8c8
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
+
 通过应用程序的用户界面 (UI) 来操作该应用程序的自动测试称为编码的 UI 测试 (CUIT)。 这些测试包括对 UI 控件的功能测试。 它们使你可以验证整个应用程序（包括其用户界面）是否正常运行。 编码的 UI 测试对于在用户界面中存在验证或其他逻辑（例如在网页中）的情况特别有用。 它们也经常用于自动化现有的手动测试。  
-  
- 如下图所示，一种典型的开发体验可能是这样一种情况：最初，你只需建立自己的应用程序（F5），并通过单击 UI 控件来验证一切是否运行正常。 随后用户可能会决定创建一个编码的测试，这样就无需继续手动测试应用程序。 根据在应用程序中进行测试的特定功能，你可以针对任何一个功能测试或者针对可能会或可能不会包括 UI 级别测试的集成测试编写代码。 如果你只想直接访问某些业务逻辑，则可以编写单元测试代码。 然而，在特定情况下，在应用程序中包括各种 UI 控件的测试将是有益的。 编码的 UI 测试可以自动化初始 (F5) 方案，以便验证代码改动不会影响你的应用程序的功能。  
-  
- ![在应用程序开发过程中进行测试](../test/media/cuit_overview.png "CUIT_Overview")  
-  
- 创建编码的 UI 测试很容易。 当 CUIT 测试生成器在后台运行时，你只需手动执行该测试。 你还可以指定在特定字段中应显示哪些值。 CUIT 测试生成器录制操作并且从中生成代码。 在创建测试后，你可以在专用编辑器中对其进行编辑，该编辑器使你能够修改操作的序列。  
-  
- 或者，如果你具有在 Microsoft 测试管理器中录制的测试用例，你可以从中生成代码。 有关详细信息，请参阅[录制和播放手动测试](/devops-test-docs/test/record-and-play-back-manual-tests)。  
-  
- 专用的 CUIT 测试生成器和编辑器可以方便地创建和编辑编码的 UI 测试，即使你的主要技能都集中于测试而不是编码。 但如果你是一位开发人员，想要以更先进的方式扩展测试，则结构化代码，以便于更简单地复制和改写。 例如，你可以录制在网站购物的测试，然后编辑生成的代码以添加购买许多商品的循环。  
-  
- **要求**  
-  
--   Visual Studio Enterprise  
-  
- 有关编码的 UI 测试支持哪些平台和配置的详细信息，请参阅[支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)。  
-  
- **在本主题中**  
+
+如下图所示，一种典型的开发体验可能是这样一种情况：最初，你只需建立自己的应用程序（F5），并通过单击 UI 控件来验证一切是否运行正常。 随后用户可能会决定创建一个编码的测试，这样就无需继续手动测试应用程序。 根据在应用程序中进行测试的特定功能，你可以针对任何一个功能测试或者针对可能会或可能不会包括 UI 级别测试的集成测试编写代码。 如果你只想直接访问某些业务逻辑，则可以编写单元测试代码。 然而，在特定情况下，在应用程序中包括各种 UI 控件的测试将是有益的。 编码的 UI 测试可以自动化初始 (F5) 方案，以便验证代码改动不会影响你的应用程序的功能。  
+
+![在应用程序开发过程中进行测试](../test/media/cuit_overview.png "CUIT_Overview")  
+
+创建编码的 UI 测试很容易。 当 CUIT 测试生成器在后台运行时，你只需手动执行该测试。 你还可以指定在特定字段中应显示哪些值。 CUIT 测试生成器录制操作并且从中生成代码。 在创建测试后，你可以在专用编辑器中对其进行编辑，该编辑器使你能够修改操作的序列。
+
+专用的 CUIT 测试生成器和编辑器可以方便地创建和编辑编码的 UI 测试，即使你的主要技能都集中于测试而不是编码。 但如果你是一位开发人员，想要以更先进的方式扩展测试，则结构化代码，以便于更简单地复制和改写。 例如，你可以录制在网站购物的测试，然后编辑生成的代码以添加购买许多商品的循环。  
+
+**要求**
+
+- Visual Studio Enterprise
+
+有关编码的 UI 测试支持哪些平台和配置的详细信息，请参阅[支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)。  
+
+**在本主题中**
   
 -   [创建编码的 UI 测试](#VerifyingCodeUsingCUITCreate)  
   
@@ -155,7 +153,7 @@ ms.lasthandoff: 12/22/2017
   
  本主题中的剩余部分提供了有关此过程中步骤的更多详细信息。  
   
- 如需更详尽的示例，请参阅[演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。 在该演练中，你将创建一个简单的 Windows Presentation Foundation (WPF) 应用程序来演示如何创建、编辑和维护编码的 UI 测试。 本演练为更正由各种计时问题和控件重构中断的测试提供了解决方案。  
+ 如需更详尽的示例，请参阅[演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。 在该演练中，你将创建一个简单的 Windows Presentation Foundation (WPF) 应用程序来演示如何创建、编辑和维护编码的 UI 测试。 本演练为更正由各种计时问题和控件重构中断的测试提供了解决方案。
   
 ###  <a name="starting"></a> 启动和停止受测应用程序  
  *我不想针对每个测试分别启动和停止应用程序、浏览器或数据库。如何避免该操作?*  
@@ -192,17 +190,17 @@ ms.lasthandoff: 12/22/2017
  在你为测试添加了所有断言后，选择“确定”。  
   
  若要为断言生成代码并将控件添加到 UI 映射中，请选择“生成代码”图标。 请为你的编码的 UI 测试方法键入名称以及该方法的描述，这将添加作为该方法的注释。 选择“添加并生成”。 接下来，选择“关闭”图标以关闭“编码的 UI 测试生成器”。 这会生成类似于以下代码的代码。 例如，如果你输入的名称为 `AssertForAddTwoNumbers`，代码将类似于此示例：  
-  
--   向编码的 UI 测试文件中的测试方法添加对断言方法 AssertForAddTwoNumbers 的调用：  
-  
-    ```  
+
+-   向编码的 UI 测试文件中的测试方法添加对断言方法 AssertForAddTwoNumbers 的调用：
+
+    ```csharp
     [TestMethod]  
     public void CodedUITestMethod1()  
     {  
         this.UIMap.AddTwoNumbers();  
         this.UIMap.AssertForAddTwoNumbers();  
     }  
-    ```  
+    ```
   
      你可以编辑此文件以更改步骤和断言的顺序，或创建新测试方法。 若要添加更多代码，请将光标放在测试方法上并且在快捷菜单上选择“为编码的 UI 测试生成代码”。  
   
@@ -214,7 +212,7 @@ ms.lasthandoff: 12/22/2017
   
      你还可以在 UIMap.Designer.cs 中查看断言方法的生成代码。 但是，不应编辑此文件。 如果你想要制作代码的改编版，则将方法复制到另一个文件，如 UIMap.cs，重命名方法，并在此处对它们进行编辑。  
   
-    ```  
+    ```csharp
     public void AssertForAddTwoNumbers()  
     {  
         ...  
@@ -264,13 +262,12 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
  在配置文件中，更改 `HoverKeyModifier` 和 `HoverKey` 键的值以修改键盘分配：  
   
-```  
+```
 <!-- Begin : Background Recorder Settings -->  
 <!-- HoverKey to use. -->  
 <add key="HoverKeyModifier" value="Control, Shift"/>  
 <add key="HoverKey" value="R"/>  
-  
-```  
+```
   
  *录制网站上的鼠标悬停时我遇到了一些问题。是否也存在对于此问题的修复？*  
  **为 Web 浏览器设置隐式鼠标悬停**  
@@ -413,7 +410,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 -   使用从 T:Microsoft.VisualStudio.TestTools.UITesting.UITestControl 派生的控件（如 T:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList 或 T:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox），可以直接获取或设置其属性值，如下所示：  
   
-    ```  
+    ```csharp
     int i = myHtmlList.ItemCount;  
     myWinCheckBox.Checked = true;  
     ```  
@@ -452,13 +449,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 -   [如何：在生成应用程序之后配置和运行计划的测试](http://msdn.microsoft.com/en-us/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)  
   
--   [在你的生成过程中运行测试](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)  
+-   [在你的生成过程中运行测试](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
   
--   [从命令行运行自动测试](/devops-test-docs/test/running-automated-tests-from-the-command-line)  
-  
--   [如何：设置测试代理以运行与桌面交互的测试](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)  
-  
--   [[已停用] 在负载测试中使用编码的 UI 测试](/devops-test-docs/test_notintoc/using-coded-ui-tests-in-load-tests)  
+-   [如何：设置测试代理以运行与桌面交互的测试](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
   
  **添加对自定义控件的支持：**编码的 UI 测试框架并非支持每个可能的 UI，可能不支持你要测试的 UI。 例如，不能立即创建 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] UI 的编码的 UI 测试。 然而，可以创建编码的 UI 测试框架的扩展来支持自定义控件。  
   
@@ -466,7 +459,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 -   [扩展编码的 UI 测试和操作录制以支持 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)  
   
- 编码的 UI 测试通常用于自动化手动测试。 有关其他指南，请参阅[使用 Visual Studio 2012 测试持续交付 – 第 5 章：实现系统测试的自动化](http://go.microsoft.com/fwlink/?LinkID=255196)。 有关手动测试的详细信息，请参阅 [[已停用] 使用 Microsoft 测试管理器创建手动测试用例](/devops-test-docs/test_notintoc/creating-manual-test-cases-using-microsoft-test-manager)。 有关自动系统测试的详细信息，请参阅[使用 Microsoft 测试管理器创建自动测试](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0)。  
+ 编码的 UI 测试通常用于自动化手动测试。 有关其他指南，请参阅[使用 Visual Studio 2012 测试持续交付 – 第 5 章：实现系统测试的自动化](http://go.microsoft.com/fwlink/?LinkID=255196)。 有关手动测试的详细信息，请参阅[使用 Microsoft 测试管理器运行手动测试](/vsts/manual-test/mtm/run-manual-tests-with-microsoft-test-manager)。 有关自动系统测试的详细信息，请参阅[使用 Microsoft 测试管理器创建自动测试](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0)。  
   
 ## <a name="external-resources"></a>外部资源  
   
@@ -493,5 +486,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  [使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)   
  [使用编码的 UI 测试编辑器编辑编码的 UI 测试](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)   
  [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [从 Visual Studio 2010 升级编码的 UI 测试](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)   
- [通过现有操作录制生成编码的 UI 测试](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
+ [从 Visual Studio 2010 升级编码的 UI 测试](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)

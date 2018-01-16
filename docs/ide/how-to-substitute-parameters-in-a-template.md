@@ -1,54 +1,52 @@
 ---
-title: "如何：替换模板中的参数 | Microsoft Docs"
+title: "将名称参数添加到 Visual Studio 中的项目和项模板 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
+- template parameters
 - template parameters, substituting
 - Visual Studio templates, using parameters
-ms.assetid: a62924a7-4ba0-413d-b606-fdbe1fcf2807
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 73a59dc1c0e43867ae76d1daaf5d8adf73fae4c1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ecdd277a36cb1c074653edb2af7f1882e6d25ede
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>如何：替换模板中的参数
-创建基于模板的文件时，可能会替换模板参数，比如类名称和命名空间。 有关模板参数的完整列表，请参阅[模板参数](../ide/template-parameters.md)。  
-  
-## <a name="procedure"></a>过程  
- 每当创建基于模板的项目时，均可以替换模板的文件中的参数。 此过程说明使用模板创建新项目时，如何创建一个将命名空间名称替换为安全的项目名称的模板。  
-  
-#### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>使用参数将命名空间名称替换为项目名称  
-  
-1.  将参数插入模板中的一个或多个代码文件中。 例如:  
-  
-    ```  
-    namespace $safeprojectname$  
-    ```  
-  
-    > [!NOTE]
-    >  模板参数是以 $参数$ 格式编写的。  
-  
-2.  在模板的 .vstemplate 文件中，找到包括此文件的 `ProjectItem` 元素。  
-  
-3.  将 `ProjectItem` 元素的 `ReplaceParameters` 特性设置为 `true`。 例如:  
-  
-    ```  
-    <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  
-    ```  
-  
-## <a name="see-also"></a>请参阅  
- [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [模板参数](../ide/template-parameters.md)   
- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
- [ProjectItem 元素（Visual Studio 项模板）](../extensibility/projectitem-element-visual-studio-item-templates.md)
+
+使用模板参数，可在从模板创建文件时替换标识符，例如类名称和命名空间。 可将模板参数添加到现有模板，或使用模板参数创建模板。
+
+模板参数是以 $参数$ 格式编写的。 有关模板参数的完整列表，请参阅[模板参数](../ide/template-parameters.md)。
+
+以下部分演示了如何修改模板，以将命名空间的名称替换为“安全项目名称”。
+
+## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>使用参数替换命名空间名称
+
+1. 将参数插入模板中的一个或多个代码文件中。 例如:
+
+    ```csharp
+    namespace $safeprojectname$
+    ```
+
+1. 在模板的 .vstemplate 文件中，找到包括此文件的 `ProjectItem` 元素。
+
+1. 将 `ProjectItem` 元素的 `ReplaceParameters` 属性设置为 `true`：
+
+    ```xml
+    <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
+    ```
+
+## <a name="see-also"></a>请参阅
+
+[创建项目和项模板](../ide/creating-project-and-item-templates.md)  
+[模板参数](../ide/template-parameters.md)  
+[Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)  
+[ProjectItem 元素（Visual Studio 项模板）](../extensibility/projectitem-element-visual-studio-item-templates.md)

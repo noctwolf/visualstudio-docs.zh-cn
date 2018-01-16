@@ -1,169 +1,135 @@
 ---
-title: "如何：创建项模板 | Microsoft Docs"
+title: "创建 Visual Studio 的项模板 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- project item templates, XML reference
-- project item templates, custom template locations
-- project item templates, creating
-- project item templates, metadata files
-ms.assetid: 77bc53d4-d607-4820-a032-7e3b365891b5
-caps.latest.revision: "23"
+helpviewer_keywords: item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 96501134565c4339abe9e3abc7fcfe7e29927fa4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5145263ce84cf9e1f6a5ef970701ace660ecb73d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-create-item-templates"></a>如何：创建项模板
-本主题[第一个过程](../ide/how-to-create-item-templates.md#export_template)中的步骤演示如何使用“导出模板”向导创建项模板。 如果模板将由多个文件组成，请参阅[如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)。  
 
- 向导执行大量工作为你创建基本模板，但在许多情况下，你将需要在导出模板后手动修改 .vstemplate 文件。 例如，如果希望该项显示在 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用项目的“添加新项”对话框中，则需要执行一些额外步骤。 本主题中的[第二个过程](../ide/how-to-create-item-templates.md#modify_template)有助于完成该任务。  
+本主题介绍如何使用“导出模板向导”创建项模板。 如果模板将由多个文件组成，请参阅[如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)。
 
- 若要指定应仅对某些项目子类型（如 Office、数据库或 Web）显示模板，请参阅[本节](#enable_templates)。  
+## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>将用户项模板添加到“添加新项”对话框中
 
- 在某些情况下，你可能希望或需要从头开始手动创建项模板。 [第三个过程](../ide/how-to-create-item-templates.md#create_template)演示如何做到这一点。  
+1. 在 Visual Studio 中创建或打开一个项目。
 
- 若要了解可以在 .vstemplate 文件中使用的元素，请参阅 [Visual Studio 模板架构引用](../extensibility/visual-studio-template-schema-reference.md)。  
+1. 向项目添加一项，并在需要时修改它。
 
-### <a name="to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box"></a>将自定义项目项模板添加到“添加新项”对话框中  
+1. 修改代码文件，以指示应进行参数替换的位置。 有关详细信息，请参阅[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)。
 
-1.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中创建或打开一个项目。  
+1. 在“项目”菜单上，选择“导出模板”。
 
-2.  向项目添加一项，并在需要时修改它。  
+1. 在“选择模板类型”页上，选择“项模板”，选择包含项的项目，然后选择“下一步”。
 
-3.  修改代码文件，以指示应进行参数替换的位置。 有关详细信息，请参阅[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)。  
+1. 在“选择要导出的项”页上，选择要为其创建模板的项，然后选择“下一步”。
 
-4.  在“项目”菜单上，单击“导出模板”。  
+1. 在“选择项引用”页上，选择要包含在模板中的程序集引用，然后选择“下一步”。
 
-5.  单击“项模板”，选择包含该项的项目，然后单击“下一步”。  
+1. 在“选择模板选项”页上，输入模板的名称和可选说明、图标和预览图像，然后选择“完成”。
 
-6.  选择要为其创建模板的项，然后单击“下一步”。  
+    模板文件被添加到 .zip 文件中，并复制到在向导中所指定的目录。 默认位置是 %USERPROFILE%\Documents\Visual Studio \<version\>\My Exported Templates。
 
-7.  选择要包含到模板中的程序集引用，然后单击“下一步”。  
+1. 如果未在“导出模板向导”中选择“自动将模板导入到 Visual Studio”选项，请查找导出的模板并将其复制到用户项模板目录中。 默认位置是 %USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ItemTemplates。
 
-8.  键入图标文件名、预览图像、模板名称和模板说明，然后单击“完成”。  
+1. 关闭 Visual Studio，然后重新打开它。
 
-     模板文件被添加到 .zip 文件中，并复制到你在对话框中指定的任何目录。 默认位置是 **..\Users\\<username\>\Documents\Visual Studio \<Version>\My Exported Templates\\** 文件夹。  
+1. 创建一个新项目，或打开现有项目，然后选择“项目” > “添加新项...”或按 Ctrl + Shift + A
 
-    > [!WARNING]
-    >  在 Visual Studio 的早期版本中，默认位置是 **..\Users\\<username\>\Documents\Visual Studio \<Version>\Templates\ItemTemplates**。  
+   项模板显示在“添加新项”对话框中。 如果在“导出模板向导”中添加了说明，则说明会显示在对话框的右侧。
 
-### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>启用要在应用商店项目中使用的项模板  
+## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>启用在通用 Windows 应用项目中使用的项模板
 
-1.  按照上述过程中的步骤导出项目模板。  
+向导会执行创建基本模板时的大部分工作，但在许多情况下，需要在导出模板后手动修改 .vstemplate 文件。 例如，如果希望该项显示在通用 Windows 应用项目的“添加新项”对话框中，则需执行一些其他步骤。
 
-2.  从复制到 ..\Users\\username\Documents\Visual Studio Version\Templates\ItemTemplates\（或 **My Exported Templates**）文件夹的 .zip 文件中提取 .vstemplate 文件。  
+1. 按照上节中的步骤导出项模板。
 
-3.  在 Visual Studio 中打开 .vstemplate 文件。  
+1. 提取创建的 .zip 文件，然后在 Visual Studio 中打开 .vstemplate 文件。
 
-4.  对于通用 Windows C# 项目，在 .vstemplate 文件的开始 `<TemplateData>` 标记内添加以下 XML：`<TemplateID>Microsoft.CSharp.Class</TemplateID>`。 
+1. 对于 C# 通用 Windows 项目，在 `<TemplateData>` 元素中添加以下 XML：
 
-    对于 Windows 8.1 应用商店 C# 项目，在 .vstemplate 文件的开始和结束 `<TemplateData>` 标记内添加以下 XML：`<TemplateGroupID>WinRT-Managed</TemplateGroupID>`。  
+   ```xml
+   <TemplateID>Microsoft.CSharp.Class</TemplateID>
+   ```
 
-    C++ Windows 8.1 应用商店项目使用的值为 `WinRT-Native-6.3`。 有关 Windows 10 及其他项目类型，请参阅 [TemplateGroupID 元素（Visual Studio 模板）](../extensibility/templategroupid-element-visual-studio-templates.md)。  
+   对于 Windows 8.1 C# 项目，在 .vstemplate 文件的开始和结束 `<TemplateData>` 标记内添加以下 XML：`<TemplateGroupID>WinRT-Managed</TemplateGroupID>`。 对于 Windows 8.1 C++ 项目，使用 `WinRT-Native-6.3` 的值。 有关 Windows 10 及其他项目类型，请参阅 [TemplateGroupID 元素（扩展性）](../extensibility/templategroupid-element-visual-studio-templates.md)。 有关完整的 .vstemplate 引用，请参阅[模板架构引用（扩展性）](../extensibility/visual-studio-template-schema-reference.md)。
 
-    下面的示例显示添加 XML 行 `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` 之后，.vstemplate 文件的全部内容。 此示例特定于 C# 项目。 可以修改 <ProjectTpe> 和 \<[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 元素，从而指定其他语言和项目类型。  
+1. 在 Visual Studio 中，保存 .vstemplate 文件并将其关闭。
 
-    ```xml  
-    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
-      <TemplateData>  
-        <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
-        <Name>MyItemStoreTemplate</Name>  
-        <Description>This is an example itemtemplate</Description>  
-        <ProjectType>CSharp</ProjectType>  
-        <SortOrder>10</SortOrder>  
-        <Icon>__TemplateIcon.ico</Icon>  
-        <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
-      </TemplateData>  
-      <TemplateContent>  
-        <References />  
-        <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
-        <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
-      </TemplateContent>  
-    </VSTemplate>  
-    ```  
+1. 复制 .vstemplate 文件并将其粘贴回 .zip 文件中。
 
-     有关其他可能的 TemplateGroupID 值，请参阅 [TemplateGroupID 元素（Visual Studio 模板）](../extensibility/templategroupid-element-visual-studio-templates.md)。 有关完整的 .vstemplate 引用，请参阅 [Visual Studio 模板架构引用](../extensibility/visual-studio-template-schema-reference.md)  
+     如果出现“复制文件”对话框，请选择“复制和替换”选项。
 
-5.  在 Visual Studio 中，保存 .vstemplate 文件并将其关闭。  
+现在，可从“添加新项”对话框将基于此模板的项添加到通用 Windows 项目。
 
-6.  复制 .vstemplate 文件并将其粘贴至 ..\Users\\username\Documents\Visual Studio Version\Templates\ItemTemplates\ 文件夹中的 .zip 文件。  
+## <a name="to-enable-templates-for-specific-project-subtypes"></a>启用特定项目子类型的模板
 
-     如果出现“复制文件”对话框，请选择“复制和替换”选项。  
+可指定应仅对某些项目子类型（如 Windows、Office、数据库或 Web）显示模板。
 
- 现在，可以使用“添加新项”对话框，将基于此模板的项添加到 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 项目。  
+1. 在项模板的 .vstemplate 文件中找到 ProjectType 元素。
 
- 有关参数名称的详细信息，请参阅[模板参数](../ide/template-parameters.md)。  
-  
- 
-### <a name="enable_templates"></a>启用特定项目子类型的模板  
+1. 在 ProjectType 元素之后添加一个 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 元素。
 
-1.  借助开发环境，你可以将项目项设置为在某些项目的“添加项”对话框中可用。 请遵循此过程以使自定义项可用于 Windows、Web、Office 或数据库项目。  
+1. 将该元素的文本值设置为下列值之一：
 
-     在项模板的 .vstemplate 文件中找到 ProjectType 元素。  
+    - Windows
+    - Office
+    - 数据库
+    - Web
 
-     在 ProjectType 元素之后添加一个 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 元素。  
+例如：`<ProjectSubType>Database</ProjectSubType>`。
 
-2.  将该元素的文本值设置为下列值之一：  
+以下示例演示可用于“Office”项目的项模板。
 
-    1.  Windows  
+```xml
+<VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">
+   <TemplateData>
+      <Name>Class</Name>
+      <Description>An empty class file</Description>
+      <Icon>Class.ico</Icon>
+      <ProjectType>CSharp</ProjectType>
+      <ProjectSubType>Office</ProjectSubType>
+      <DefaultName>Class.cs</DefaultName>
+   </TemplateData>
+   <TemplateContent>
+      <ProjectItem>Class1.cs</ProjectItem>
+   </TemplateContent>
+</VSTemplate>
+```
 
-    2.  Office  
+## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>在不使用“导出模板向导”的情况下手动创建项模板
 
-    3.  数据库  
+某些情况下，可能希望从头开始手动创建项模板。
 
-    4.  Web  
+1. 创建项目和项目项。
 
-     例如：`<ProjectSubType>Database</ProjectSubType>`。  
+1. 修改项目项，直到可以将它另存为一个模板。
 
-     下面的示例演示可用于 Office 项目的项模板。  
+1. 修改代码文件以指示应进行参数替换的位置。 有关参数替换的详细信息，请参阅[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)。
 
-    ```  
-    <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
-        <TemplateData>  
-            <Name>Class</Name>  
-            <Description>An empty class file</Description>  
-            <Icon>Class.ico</Icon>  
-            <ProjectType>CSharp</ProjectType>  
-            <ProjectSubType>Office</ProjectSubType>  
-            <DefaultName>Class.cs</DefaultName>  
-        </TemplateData>  
-        <TemplateContent>  
-            <ProjectItem>Class1.cs</ProjectItem>  
-        </TemplateContent>  
-    </VSTemplate>  
+1. 创建 XML 文件，并将其与 .vstemplate 文件扩展名保存在与项目文件相同的目录中。
 
-    ```  
+1. 编辑 .vstemplate XML 文件以提供项模板元数据。 有关详细信息，请参阅[模板架构引用（扩展性）](../extensibility/visual-studio-template-schema-reference.md)以及上一节中的示例。
 
-### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>在不使用“导出模板”向导的情况下手动创建项模板  
+1. 保存 .vstemplate 文件并将其关闭。
 
-1.  创建项目和项目项。  
+1. 在 Windows 资源管理器中，选择要包括到模板中的文件，右键单击所选内容，然后选择“发送至” > “压缩的文件夹（zip 格式）”。 所选的文件被压缩到一个 .zip 文件中。
 
-2.  修改项目项，直到可以将它另存为一个模板。  
+1. 复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2017 中，默认目录是 %USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates。 有关详细信息，请参阅[如何：查找和组织项目和项模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
-3.  根据需要，修改代码文件以指示应进行参数替换的位置。 有关参数替换的详细信息，请参阅[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)。
+## <a name="see-also"></a>请参阅
 
-4.  创建一个 XML 文件，并使用 .vstemplate 文件扩展名将其保存到与新项模板相同的目录中。  
-
-5.  创建 .vstemplate XML 文件以提供项模板元数据。 有关详细信息，请参阅 [Visual Studio 模板架构引用](../extensibility/visual-studio-template-schema-reference.md)以及上一节中的示例。  
-
-6.  保存 .vstemplate 文件并将其关闭。  
-
-7.  在 Windows 资源管理器中，选择要包括到模板中的文件，右键单击所选内容，单击“发送到”，然后单击“压缩(zipped)文件夹”。 所选的文件被压缩到一个 .zip 文件中。  
-
-8.  复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2017 中，默认目录是..\Users\\<username\>\Documents\Visual Studio 2017\Templates\ItemTemplates\\。 有关详细信息，请参阅“如何：查找和组织项目和项模板”。  
-
-## <a name="see-also"></a>请参阅  
- [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)   
- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+[创建项目和项模板](../ide/creating-project-and-item-templates.md)  
+[如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)  
+[Visual Studio 模板架构引用（扩展性）](../extensibility/visual-studio-template-schema-reference.md)

@@ -7,21 +7,21 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
-caps.latest.revision: "16"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bbac737c6f5bbb3dbe99b0ceae2eb648bcf4295
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e0a27e78735b85417a62d99e4f9b5d101a7a177d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="customizing-code-coverage-analysis"></a>自定义代码覆盖率分析
+
 默认情况下，Visual Studio Code 覆盖率工具将分析单元测试过程中加载的所有解决方案程序集 (.exe/.dll)。 建议保留此默认设置，因此它在大多数时间很有用。 有关详细信息，请参阅[使用代码覆盖率确定正在测试的代码数量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。  
   
- 在自定义代码覆盖率行为之前，请考虑某些替代项：  
+在自定义代码覆盖率行为之前，请考虑某些替代项：  
   
 -   *我希望代码覆盖率结果中不包含测试代码，只包含应用代码。*  
   
@@ -31,10 +31,11 @@ ms.lasthandoff: 12/22/2017
   
      获取这些程序集的 .pdb 文件并将这些文件复制到与程序集 .dll 文件相同的文件夹中。  
   
- 若要自定义代码覆盖率行为，请复制[本主题结尾的示例](#sample)，然后使用文件扩展名 .runsettings 将其添加到你的解决方案中。 根据你自己的需求编辑示例，然后在“测试”菜单上，依次选择“测试设置”和“选择测试设置文件”。 本主题的其余部分更详细地介绍了此过程。  
+若要自定义代码覆盖率行为，请复制[本主题结尾的示例](#sample)，然后使用文件扩展名 .runsettings 将其添加到你的解决方案中。 根据你自己的需求编辑示例，然后在“测试”菜单上，依次选择“测试设置”和“选择测试设置文件”。 本主题的其余部分更详细地介绍了此过程。  
   
-## <a name="the-runsettings-file"></a>.runsettings 文件  
- 高级代码覆盖率设置在 .runsettings 文件中指定。 这是由单元测试工具使用的配置文件。 建议复制[本主题结尾的示例](#sample)，然后根据你自己的需求编辑示例。  
+## <a name="the-runsettings-file"></a>.runsettings 文件
+
+高级代码覆盖率设置在 .runsettings 文件中指定。 这是由单元测试工具使用的配置文件。 建议复制[本主题结尾的示例](#sample)，然后根据你自己的需求编辑示例。  
   
 -   *我在 Visual Studio 2010 中使用的 .testsettings 文件经历了什么？*  
   
@@ -58,8 +59,9 @@ ms.lasthandoff: 12/22/2017
   
  可在同一 .runsettings 文件中配置单元测试的其他方面。 有关详细信息，请参阅[单元测试代码](../test/unit-test-your-code.md)。  
   
-### <a name="specifying-symbol-search-paths"></a>指定符号搜索路径  
- 代码覆盖率需要符号（.pdb 文件）才能确保程序集存在。 对于解决方案生成的程序集，符号文件通常与二进制文件一起出现，且代码覆盖率将自动工作。 但在某些情况下，你可能需要在你的代码覆盖率分析中包含引用的程序集。 在这种情况下，.pdb 文件可能不会与二进制文件相邻，但你可以在 .runsettings 文件中指定符号搜索路径。  
+### <a name="specifying-symbol-search-paths"></a>指定符号搜索路径
+
+代码覆盖率需要符号（.pdb 文件）才能确保程序集存在。 对于解决方案生成的程序集，符号文件通常与二进制文件一起出现，且代码覆盖率将自动工作。 但在某些情况下，你可能需要在你的代码覆盖率分析中包含引用的程序集。 在这种情况下，.pdb 文件可能不会与二进制文件相邻，但你可以在 .runsettings 文件中指定符号搜索路径。  
   
 ```xml  
 <SymbolSearchPaths>                
@@ -72,8 +74,9 @@ ms.lasthandoff: 12/22/2017
 > [!WARNING]
 >  符号解析可能很耗时，尤其是在使用包含大量程序集的远程文件位置时。 因此，请考虑将远程 .pdb 文件复制到与二进制文件（.dll 和 .exe）相同的本地位置。  
   
-### <a name="excluding-and-including"></a>排除和包括  
- 你可以从代码覆盖率分析中排除指定的程序集。 例如：  
+### <a name="excluding-and-including"></a>排除和包括
+
+你可以从代码覆盖率分析中排除指定的程序集。 例如:  
   
 ```minterastlib  
 <ModulePaths>  
@@ -99,8 +102,9 @@ ms.lasthandoff: 12/22/2017
   
  `Include` 在 `Exclude` 之前处理。  
   
-### <a name="regular-expressions"></a>正则表达式  
- 包括和排除节点使用正则表达式。 有关详细信息，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。 正则表达式与通配符不同。 具体而言：  
+### <a name="regular-expressions"></a>正则表达式
+
+包括和排除节点使用正则表达式。 有关详细信息，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。 正则表达式与通配符不同。 具体而言：  
   
 1.  .\* 与任意字符组成的字符串匹配  
   
@@ -116,7 +120,7 @@ ms.lasthandoff: 12/22/2017
   
  所有匹配项都不区分大小写。  
   
- 例如：  
+ 例如:  
   
 ```xml  
 <ModulePaths>  
@@ -154,7 +158,7 @@ ms.lasthandoff: 12/22/2017
   
  **与函数名称匹配**  
   
- 正则表达式必须与函数的完全限定名匹配，包括命名空间、类名、方法名称和参数列表。 例如，  
+ 正则表达式必须与函数的完全限定名匹配，包括命名空间、类名、方法名称和参数列表。 例如，应用于对象的  
   
 -   C# 或 Visual Basic：`Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
@@ -178,43 +182,47 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="how-to-specify-runsettings-files-while-running-tests"></a>如何在运行测试时指定 .runsettings 文件  
   
-### <a name="to-customize-runsettings-in-visual-studio-tests"></a>在 Visual Studio 测试中自定义 runsettings  
- 依次选择“测试”、“测试设置”、“选择测试设置文件”和 .runsettings 文件。 该文件将显示在“测试设置”菜单上，你可以选择或取消它。 选择后，每当你使用“分析代码覆盖率”时，都会应用 .runsettings 文件。  
-  
-### <a name="to-customize-run-settings-in-a-command-line-test"></a>在命令行测试中自定义运行设置  
- 若要从命令行运行测试，请使用 vstest.console.exe。 此设置文件是此实用工具的一个参数。 有关详细信息，请参阅[通过命令行使用 VSTest.console](/devops-test-docs/test/using-vstest-console-from-the-command-line)。  
-  
-1.  启动 Visual Studio 开发人员命令提示符：  
-  
-     在 Windows 的“开始”上，依次选择“所有程序”、“Microsoft Visual Studio”、“Visual Studio Tools”和“开发人员命令提示”。  
-  
-2.  运行：  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
-  
-### <a name="to-customize-run-settings-in-a-build-definition"></a>在生成定义中自定义运行设置  
- 你可以从团队生成中获取代码覆盖率数据。  
-  
- ![在生成定义中指定 .runsettings](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
-  
+### <a name="to-customize-runsettings-in-visual-studio-tests"></a>在 Visual Studio 测试中自定义 runsettings
+
+依次选择“测试”、“测试设置” > **、“选择测试设置文件”** > 并选择 .runsettings 文件。 该文件将显示在“测试设置”菜单上，你可以选择或取消它。 选择后，每当你使用“分析代码覆盖率”时，都会应用 .runsettings 文件。
+
+### <a name="to-customize-run-settings-in-a-command-line-test"></a>在命令行测试中自定义运行设置
+
+若要从命令行运行测试，请使用 vstest.console.exe。 此设置文件是此实用工具的一个参数。
+
+1.  启动 Visual Studio 开发人员命令提示符：
+
+    在 Windows 启动 菜单上选择“Visual Studio 2017” > “VS 2017 的开发人员命令提示符”。
+
+2.  运行下面的命令：
+
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
+
+### <a name="to-customize-run-settings-in-a-build-definition"></a>在生成定义中自定义运行设置
+
+你可以从团队生成中获取代码覆盖率数据。
+
+![在生成定义中指定 .runsettings](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
+
 1.  确保签入你的 .runsettings 文件。  
   
 2.  在“团队资源管理器”中，打开“生成”，然后添加或编辑生成定义。  
   
-3.  在“进程”页中，展开“自动测试”、“测试源”和“运行设置”。 选择 **.runsettings** 文件。  
+3.  在**“进程”**页中，展开**“自动测试”** > **“测试源”** > 和**“运行设置”**。 选择 **.runsettings** 文件。
   
     -   *不过，显示的是“测试程序集”，而不是“测试源”。尝试设置“运行设置”字段时，我只能选择 .testsettings 文件。*  
   
          在“自动测试”下，依次选择“测试程序集”和行尾的“[...]”。 在“添加/编辑测试运行”对话框中，将“测试运行程序”设为“Visual Studio 测试运行程序”。  
   
- 结果在生成报告的摘要部分可见。  
+结果在生成报告的摘要部分可见。
   
-##  <a name="sample"></a>示例 .runsettings 文件  
- 复制此代码并对其进行编辑以满足你自己的需求。 这是默认的 .runsettings 文件。  
-  
- （有关 .runsettings 文件的其他用法，请参阅[使用 .runsettings 文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)。）  
-  
-```xml  
+##  <a name="sample"></a>示例 .runsettings 文件
+
+复制此代码并对其进行编辑以满足你自己的需求。 这是默认的 .runsettings 文件。
+
+（有关 .runsettings 文件的其他用法，请参阅[使用 .runsettings 文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)。）
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <!-- File name extension must be .runsettings -->  
 <RunSettings>  
@@ -322,10 +330,10 @@ Included items must then not match any entries in the exclude list to remain inc
       </DataCollector>  
     </DataCollectors>  
   </DataCollectionRunSettings>  
-</RunSettings>  
-  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [使用代码覆盖率确定受测代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
- [单元测试代码](../test/unit-test-your-code.md)
+</RunSettings>
+```
+
+## <a name="see-also"></a>请参阅
+
+[使用代码覆盖率确定所测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)  
+[单元测试代码](../test/unit-test-your-code.md)

@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 2126855c0d8b44965c3ba867940990de0edb1d42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2e80df306a3ce659225ae195b0b57922ab7d9a85
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>使用 Python 交互窗口
 
@@ -48,7 +48,7 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 
 ![Python 环境窗口中的交互窗口链接](media/interactive-window-opening.png)
 
-方法二，在“视图”>“其他窗口”菜单底部附近，可以针对默认环境使用“Python 交互窗口”命令，另外还有一个命令可用于切换到环境窗口：
+方法二，在“视图 > 其他窗口”菜单底部附近，可以针对默认环境使用“Python 交互窗口”命令，另外还有一个命令可用于切换到环境窗口：
 
 ![“视图”>“其他窗口”中的交互窗口菜单项](media/interactive-window-menu.png)
 

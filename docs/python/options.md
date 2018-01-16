@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio 中的 Python 选项 | Microsoft Docs"
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -19,11 +19,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6776eee4436e54ca1b0215b307eeb5fa098802c3
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中的 Python 选项
 
@@ -40,6 +40,8 @@ ms.lasthandoff: 12/22/2017
 - [诊断选项](#diagnostics-options)
 - [交互窗口选项](#interactive-windows-options)
 - [高级 Python 编辑器选项](#advanced-python-editor-options)
+
+请注意“实验”组包含用于仍在开发中且未记录在此处的功能的选项。 通常可在 [Microsoft 博客 Python 工程](https://blogs.msdn.microsoft.com/pythonengineering/)上的文章中找到其相关信息。
 
 ## <a name="general-options"></a>常规选项
 
@@ -69,7 +71,6 @@ ms.lasthandoff: 12/22/2017
 | 启用调试 Python 标准库 | Off | 可支持在调试时逐步执行标准库源代码，但会增加调试器启动的时间。|
 
 ![Python“选项”对话框，“调试”选项卡](media/options-debugging.png)
-
 
 ## <a name="diagnostics-options"></a>诊断选项
 

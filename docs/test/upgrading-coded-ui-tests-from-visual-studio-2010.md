@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
-caps.latest.revision: "33"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a24166bb88737699dc3b853cf7a821649acbc118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>从 Visual Studio 2010 升级编码的 UI 测试
 在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 中创建的包含编码 UI 测试的测试项目在 Visual Studio 2012 或更高版本中打开时会以无提示方式修复。 如果测试项目已签入源控件中，则会签出项目文件进行此修复。 修复后，这些包含编码 UI 测试的测试项目既可用于 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1，也可用于 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]。  
@@ -64,9 +63,9 @@ ms.lasthandoff: 12/22/2017
   
 -   **负载测试：** 当在运行 Windows 8 的计算机上使用局域网 (LAN) 配置文件以外的网络类型运行负载测试时，网络模拟器驱动程序会导致操作系统崩溃。 有关详细信息，请参见 [知识库文章 2736182](http://support.microsoft.com/kb/2736182)。  
   
-## <a name="see-also"></a>请参阅  
- [移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
- [从 Visual Studio 的早期版本升级测试](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
- [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
- [通过现有操作录制生成编码的 UI 测试](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)   
- [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>请参阅
+
+[移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+[从 Visual Studio 的早期版本升级测试](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
+[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)  
+[支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -8,35 +8,33 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: IntelliTest, Get started
-ms.assetid: 21FE4D68-9E7F-4BB1-BD69-B0D09A941F09
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 539565d5f37c60cfb87b3aa33ab8b82f7fee5015
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 9016006f9774c4a9eff2937f32543b9f8d9f5fb8
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Microsoft IntelliTest 入门
 
 * 如果首次使用 IntelliTest：
   * 观看[第 9 频道视频](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
   * 阅读 [MSDN 杂志的概述](https://msdn.microsoft.com/magazine/dn904672.aspx)
-  * 阅读[文档](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest)
-* 在 [stackoverflow](http://stackoverflow.com/questions/tagged/intellitest) 上提问
+  * 阅读[文档](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
+* 在 [Stack Overflow](http://stackoverflow.com/questions/tagged/intellitest) 上提问
 * 阅读此参考手册的其余部分
 * 打印此页以供快速参考
 
-<a name="important-attributes"></a>
 ## <a name="important-attributes"></a>重要属性
 
 * [PexClass](attribute-glossary.md#pexclass) 标记包含 PUT 的类型
 * [PexMethod](attribute-glossary.md#pexmethod) 标记 PUT
-* [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull) 标记非 null 参数 
+* [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull) 标记非 null 参数
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 
 [..., PexClass(typeof(Foo))]
@@ -51,20 +49,19 @@ public partial class FooTest {
 * [PexAssemblyUnderTest](attribute-glossary.md#pexassemblyundertest) 将测试项目绑定到一个项目
 * [PexInstrumentAssembly](attribute-glossary.md#pexinstrumentassemblyattribute) 指定要检测的程序集
 
-```
+```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")] // also instruments "MyAssembly"
 [assembly: PexInstrumentAssembly("Lib")]
 ```
 
-<a name="helper-classes"></a>
-## <a name="important-static-helper-classes"></a>重要的静态帮助程序类
+## <a name="helper-classes"></a> 重要的静态帮助程序类
 
 * [PexAssume](static-helper-classes.md#pexassume) 评估假设（输入筛选）
 * [PexAssert](static-helper-classes.md#pexassert) 评估断言
 * [PexChoose](static-helper-classes.md#pexchoose) 生成新选项（其他输入）
 * [PexObserve](static-helper-classes.md#pexobserve) 将实时值记录到生成的测试中
 
-```
+```csharp
 [PexMethod]
 void StaticHelpers(Foo target) {
     PexAssume.IsNotNull(target);
