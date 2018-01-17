@@ -18,11 +18,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: a7680ff2613051cb795d2ca9cb509f725e92dd23
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7bab332a66784dd473a0cf2b841b617aecda9e9f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>针对 Visual Studio 的 R 工具选项
 
@@ -34,8 +34,8 @@ ms.lasthandoff: 12/22/2017
 
 - 代码格式设置选项（请参阅[编辑器选项](code-editing.md#editor-options)）：选择“工具”>“选项”菜单，然后选择“文本编辑器”>”R”>“格式设置”
 - Linting 选项（请参阅 [Linting](code-linting.md)）：选择“工具”>“选项”菜单，然后选择“文本编辑器”>”R”>”Lint”
-- 高级编辑器选项（[在本主题中介绍](#text-editor-r-advanced-options)）：选择“工具”>“选项”菜单，然后选择“文本编辑器”>”R”>“高级”
-- 行为选项（[在本主题中介绍](#r-tools-advanced-options)）：选择“R 工具”>“选项”菜单，或者“工具”>“选项”，然后滚动到“R 工具”。
+- 高级编辑器选项（[在本主题中介绍](#text-editor-r--advanced-options)）：选择“工具”>“选项”菜单，然后选择“文本编辑器”>”R”>“高级”
+- 行为选项（[在本主题中介绍](#r-tools--advanced-options)）：选择“R 工具”>“选项”菜单，或者“工具”>“选项”，然后滚动到“R 工具”。
 
 “R 工具”>“数据科学设置”命令还会影响整个 Visual Studio 中的众多不同设置。 下一部分中对此命令进行了介绍。
 

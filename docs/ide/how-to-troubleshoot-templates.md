@@ -11,11 +11,11 @@ helpviewer_keywords: templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6d9a73cd45a0e497fb2ecc0f4b4697071e3b37
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: d9242d053044fa66e6eb3d506382cf7cfb5d0295
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>如何：对模板进行故障排除
 
@@ -47,20 +47,6 @@ ms.lasthandoff: 01/05/2018
 1. 将新的 .zip 文件与旧的 .zip 文件放在同一目录中。
 
 1. 删除解压缩的模板文件和旧的 .zip 模板文件。
-
-## <a name="monitor-the-event-log"></a>监视事件日志
-
-Visual Studio 记录处理模板 .zip 文件时遇到的错误。 如果“新建项目”对话框中未按预期显示模板，可以使用“事件查看器”排查问题。
-
-### <a name="to-locate-template-errors-in-event-viewer"></a>在“事件查看器”中查找模板错误
-
-1. 在 Windows 中，从“开始”菜单中选择“Windows 管理工具” > “事件查看器”。
-
-1. 在左侧窗格中，选择“Windows 日志” > “应用程序”。
-
-1. 查找“源”值为 `Visual Studio - VsTemplate` 的事件。
-
-1. 双击模板事件以查看错误。
 
 ## <a name="enable-diagnostic-logging"></a>启用诊断记录
 

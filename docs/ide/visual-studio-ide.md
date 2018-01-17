@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5b289868d0cc27da76becf62a2bac51f02fa55c2
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.openlocfilehash: d95cbaff8545e67bfadb0c86a256353b3fa23191
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE 概述
 
@@ -76,7 +76,7 @@ Visual Studio 能够帮助你实现更多操作。 有关更完整的列表，�
 
 ## <a name="install-the-visual-studio-ide"></a>安装 Visual Studio IDE
 
-首先，请下载 Visual Studio 并将其安装到你的系统上。 可以在 [Visual Studio 2017](https://www.visualstudio.com/vs/visual-studio-2017/) 中进行下载。
+首先，请下载 Visual Studio 并将其安装到你的系统上。 可以在 [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 中进行下载。
 
 Visual Studio 现在达到了前所未有的轻量！ 通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 此策略使 Visual Studio 安装的占用空间比之前更小，这也意味着其安装和更新速度会更快。
 

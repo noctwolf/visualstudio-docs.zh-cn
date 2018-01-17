@@ -17,11 +17,11 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa14730fffbf7c2747f15243590be89dc01a7ceb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab554f50f6d2fcdac92c562333e625dc0eb32f6
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="collections-javascript"></a>集合 (JavaScript)
 可以使用集合对象 [Map](../../javascript/reference/map-object-javascript.md)、[Set](../../javascript/reference/set-object-javascript.md) 和 [WeakMap](../../javascript/reference/weakmap-object-javascript.md) 存储值和对象。 通过这些对象，可以使用键或值而非索引来轻松添加和检索成员。 若要使用索引访问集合的成员，请使用 `Array` 对象。 有关详细信息，请参阅[使用数组](../../javascript/advanced/using-arrays-javascript.md)。  
@@ -47,7 +47,7 @@ document.write(m.get(2));
 document.write("<br />");  
   
 m.forEach(function (value, key, mapObj) {  
-    document.write(item.toString() + "<br />");  
+    document.write(value.toString() + "<br />");  
 });  
   
 // Output:  
@@ -71,7 +71,7 @@ s.add(1776);
 s.add("founding father");  
   
 s.forEach(function (value) {  
-    document.write(item.toString() + ", ");  
+    document.write(value.toString() + ", ");  
 });  
   
 // Output:  
@@ -79,5 +79,5 @@ s.forEach(function (value) {
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [高级 JavaScript](../../javascript/advanced/advanced-javascript.md)

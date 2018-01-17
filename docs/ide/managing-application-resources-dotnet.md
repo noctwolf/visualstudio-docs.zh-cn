@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c865fd1d01f7bf0137c68010bcb850a7a8450680
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2006f565edbca8a859cd2c155645e47e083b5528
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-application-resources-net"></a>管理应用程序资源 (.NET)
 
@@ -48,7 +48,6 @@ ms.lasthandoff: 12/22/2017
 .NET 项目中管理资源的方式与其他项目类型不同。 若要详细了解以下各项中的资源：
 
 - 通用 Windows 平台 (UWP) 应用中的资源，请参阅[应用资源和资源管理系统](/windows/uwp/app-resources/)
-- Windows 8.x 应用中的资源，请参阅[定义应用资源 (HTML)](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx)
 - C++ 项目中的资源，请参阅[使用资源文件](/cpp/windows/working-with-resource-files)和[如何：创建资源](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>请参阅
