@@ -12,12 +12,14 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: b04bf8fcb72b9ea4578516dcd58fde35a6d4e347
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="python-web-project-templates"></a>Python Web 项目模板
 
@@ -31,7 +33,7 @@ Visual Studio 不包括框架本身。 必须通过右键单击项目并选择�
 
 每个 Bottle、Flask 和 Django 模板包括一个入门网站，其中包含一些页面和静态文件。 此代码足以本地运行和调试服务器（此情况下某些设置需从环境中获得），且足以部署到 Microsoft Azure（此情况下需要提供 [WSGI 应用](http://www.python.org/dev/peps/pep-3333/)对象）。
 
-从特定于框架的模板创建项目时，会出现一个对话框，有助于使用 pip 安装所需的包。 我们还建议对 Web 项目使用[虚拟环境](python-environments.md#virtual-environments)，以便发布网站时包含正确的依赖关项：
+从特定于框架的模板创建项目时，会出现一个对话框，有助于使用 pip 安装所需的包。 我们还建议对 Web 项目使用[虚拟环境](python-environments.md#global-and-virtual-environments)，以便发布网站时包含正确的依赖关项：
 
 ![为项目模板安装所需包的对话框](media/template-web-requirements-txt-wizard.png)
 
