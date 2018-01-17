@@ -14,12 +14,13 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: 4d64338d619cbff77333e6518569d5e3b8376e36
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3c484eb92ecc163cfddc101ea2bc7b25dafa3a2f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="remote-debugging-rroubleshooter-for-python-and-azure"></a>用于 Python 和 Azure 的远程调试故障排除程序
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 12/22/2017
 | 部署到应用服务的项目与 Visual Studio 中打开的不匹配。 | 将正确的项目加载到 Visual Studio。 |
 | 项目未使用调试配置进行部署。 | 右键单击解决方案资源管理器中的项目并选择“发布”，重新部署应用程序。 在“设置”选项卡中，确保“调试”是所选的配置。 |
 | 应用服务未在运行。 | 从 Visual Studio 中的服务器资源管理器或 Azure 门户启动它。 |
-| 应用服务未针对 Web 套接字进行配置。 | 转到[“Azure 门户”](https://portal.azure.com)，导航到应用服务，打开**“设置”>“应用程序设置”**边栏选项卡，将**“常规设置”>“Web 套接字”**切换为**“打开”**，然后选择**“保存”**。 （请注意，此边栏选项卡上显示的“调试”选项*不*适用于 Python 调试。） |
+| 应用服务未针对 Web 套接字进行配置。 | 转到[“Azure 门户”](https://portal.azure.com)，导航到应用服务，打开“设置”>“应用程序设置”边栏选项卡，将“常规设置”>“Web 套接字”切换为“打开”，然后选择“保存”。 （请注意，此边栏选项卡上显示的“调试”选项*不*适用于 Python 调试。） |
 | 已修改 `web.debug.config` 以禁用调试代理。 | 删除文件并将项目重新发布到应用服务，在此期间，Visual Studio 将重新创建该文件。 |
 
 另请参阅：
