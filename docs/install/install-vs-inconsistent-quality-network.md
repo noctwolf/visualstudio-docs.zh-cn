@@ -103,7 +103,7 @@ ms.lasthandoff: 12/22/2017
 | pt-BR | 葡萄牙语 - 巴西 |
 | ru-RU | 俄语 |
 | tr-TR | 土耳其语 |
-| zh-CN | 中文 - 简体 |
+| en-US | 中文 - 简体 |
 | zh-TW | 中文 - 繁体 |
 
 ## <a name="get-support"></a>获取支持
