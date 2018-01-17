@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: adffbe879701944d5492c36dd40acc813f6afa8d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 8aa91005774baf1a3154418a5e0b7780d0238b69
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="formatting-python-code"></a>设置 Python 代码格式
 
@@ -28,7 +30,7 @@ ms.lasthandoff: 12/22/2017
 
 通过“工具”>“选项”>“文本编辑器”>“Python”>“格式”及其嵌套选项卡设置选项，并且默认情况下设置为匹配 [PEP 8 样式指南](http://www.python.org/dev/peps/pep-0008/)的超集。 “常规”选项卡确定何时应用格式；本主题中介绍了设置其他三个选项卡。
 
-借助 [Visual Studio 中的 Python 支持](installation.md)，还可在**“编辑”>“高级”**菜单中添加有用的[“填充注释段落”](#fill-comment-paragraph-command)命令，如下所述。
+借助 [Visual Studio 中的 Python 支持](installation.md)，还可在“编辑”>“高级”菜单中添加有用的[“填充注释段落”](#fill-comment-paragraph-command)命令，如下所述。
 
 ## <a name="spacing"></a>间距
 
