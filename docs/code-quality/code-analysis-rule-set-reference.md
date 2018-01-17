@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f396bb289e7e4288dbb80c6e08990960861e970c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9e132146ce1ae19e95a7e8f6974dab25be38db5b
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="code-analysis-rule-set-reference"></a>代码分析规则集参考
 当你配置托管代码分析的代码项目中的[!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]， [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]，或[!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]将向你提供的内置列表*规则集*。 你可以使用某一标准规则集，或者你可以自定义规则集以适合您项目的要求。  
