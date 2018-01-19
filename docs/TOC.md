@@ -84,6 +84,13 @@
 #### [面向特定的 .NET Framework 版本](ide/targeting-a-specific-dotnet-framework-version.md)
 ##### [多目标概述](ide/visual-studio-multi-targeting-overview.md)
 ##### [面向 .NET Framework 的某个版本](ide/how-to-target-a-version-of-the-dotnet-framework.md)
+#### 创建项目和项模板
+##### [创建项目模板](ide/how-to-create-project-templates.md)
+##### [创建多项目模板](ide/how-to-create-multi-project-templates.md)
+##### [创建项目模板](ide/how-to-create-item-templates.md)
+##### [创建多文件项模板](ide/how-to-create-multi-file-item-templates.md)
+##### [创建 Web 模板](ide/how-to-manually-create-web-templates.md)
+##### [模板故障排除](ide/how-to-troubleshoot-templates.md)
 #### [Visual Studio IDE 64 位支持](ide/visual-studio-ide-64-bit-support.md)
 ### [不使用项目或解决方案而进行开发（“打开文件夹”）](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 ### [在编辑器中编写代码](ide/writing-code-in-the-code-and-text-editor.md)
@@ -95,7 +102,7 @@
 #### [编码和换行符](ide/encodings-and-line-breaks.md)
 ##### [保存和打开带有编码的文件](ide/how-to-save-and-open-files-with-encoding.md)
 #### [大纲显示](ide/outlining.md)
-#### [自动生成代码](ide/code-generation-in-visual-studio.md)
+#### [生成和修复代码](ide/code-generation-in-visual-studio.md)
 ##### [代码片段](ide/code-snippets.md)
 ###### 使用代码片段
 ####### [Visual C# 代码片段](ide/visual-csharp-code-snippets.md)
@@ -305,15 +312,9 @@
 ### [自定义项目和项模板](ide/customizing-project-and-item-templates.md)
 #### [更新现有模板](ide/how-to-update-existing-templates.md)
 #### [替换模板中的参数](ide/how-to-substitute-parameters-in-a-template.md)
-### 新建项目和项模板
-#### [创建项目模板](ide/how-to-create-project-templates.md)
-#### [创建多项目模板](ide/how-to-create-multi-project-templates.md)
-#### [创建项目模板](ide/how-to-create-item-templates.md)
-#### [创建多文件项模板](ide/how-to-create-multi-file-item-templates.md)
-#### [创建 Web 模板](ide/how-to-manually-create-web-templates.md)
+### 项目和项模板
 ### [模板参数](ide/template-parameters.md)
-### [模板架构参考（扩展性）](extensibility/visual-studio-template-schema-reference.md)
-### [模板故障排除](ide/how-to-troubleshoot-templates.md)
+### [模板架构参考（扩展性）](extensibility/visual-studio-template-schema-reference.md?toc=/visualstudio/toc.json)
 ## 常规用户界面元素
 ### [调用层次结构](ide/reference/call-hierarchy.md)
 ### [预览更改](ide/preview-changes.md)
