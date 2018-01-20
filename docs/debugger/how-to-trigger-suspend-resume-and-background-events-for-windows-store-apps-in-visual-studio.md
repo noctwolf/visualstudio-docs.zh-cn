@@ -1,7 +1,7 @@
 ---
 title: "如何在触发挂起、 继续和后台事件调试 UWP 应用时 |Microsoft 文档"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,17 +13,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: 824ff3ca-fedf-4cf5-b3e2-ac8dc82d40ac
 caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何在触发挂起、 继续和后台事件调试 Visual Studio 中的 UWP 应用时
 不调试时，Windows **进程生命期管理** (PLM) 根据用户操作和设备状态控制应用程序的执行状态 - 启动、挂起、继续和终止应用程序。 在调试时，Windows 禁用这些激活事件。 本主题介绍如何在调试器中触发这些事件。  
@@ -31,19 +30,6 @@ ms.lasthandoff: 01/10/2018
  本主题还介绍如何调试 **后台任务**。 通过后台任务，即使应用程序不运行，也可在后台进程中执行某些操作。 可使用调试器使应用程序进入调试模式，然后不启动 UI 即启动和调试后台任务。  
   
  有关进程生命期管理和后台任务的详细信息请参阅[正在启动，继续执行，和多任务](/windows/uwp/launch-resume/index)。  
-  
-##  <a name="BKMK_In_this_topic"></a> 在本主题中  
- [触发进程生命期管理事件](#BKMK_Trigger_Process_Lifecycle_Management_events)  
-  
- [触发后台任务](#BKMK_Trigger_background_tasks)  
-  
--   [从标准调试会话中触发后台任务事件](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
-  
--   [在应用程序未运行时触发后台任务](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
-  
- [从安装的应用程序中触发进程生命期管理事件和后台任务](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
-  
- [诊断后台任务激活错误](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> 触发进程生命期管理事件  
  在当用户从应用程序切换至别处时或在 Windows 进入电量不足状态时，Windows 可挂起应用程序。 可响应 `Suspending` 事件，将相关的应用程序和用户数据保存到永久存储并释放资源。 从 **“已挂起”** 状态继续应用程序时，该应用程序将进入 **“正在运行”** 状态，并从其挂起之处继续。 可响应 `Resuming` 事件，还原或刷新应用程序状态并回收资源。  
@@ -88,7 +74,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  打开启动项目的调试属性页。 在“解决方案资源管理器”中，选择项目。 在 **“调试”** 菜单中，选择 **“属性”**。  
   
-     对于 C++ 项目，可能必须展开 **“配置属性”** ，然后选择 **“调试”**。  
+     对于 c + + 和 JavaScript 项目中，展开**配置属性**，然后选择**调试**。  
   
 3.  执行下列操作之一：  
   
@@ -109,12 +95,12 @@ ms.lasthandoff: 01/10/2018
      ![挂起、 继续、 终止和后台任务](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> 从安装的应用程序中触发进程生命期管理事件和后台任务  
- 使用“调试安装的应用程序”对话框加载已安装到调试器中的应用程序。 例如，你可能调试已从 Microsoft 应用商店安装的应用程序或已安装应用程序中的源文件而不是应用程序的 Visual Studio 项目时调试应用。 利用“调试安装的应用程序”对话框，您可以在 Visual Studio 计算机或远程设备上在调试模式下启动应用程序，也可以将应用程序设置为在调试模式下运行但不启动应用程序。 请参阅**在调试器中启动已安装的应用程序**部分[启动调试会话中的 UWP 应用](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger)。
+ 使用**调试安装的应用程序包**对话框加载已安装到调试器的应用程序。 例如，你可能调试已从 Microsoft 应用商店安装的应用程序或已安装应用程序中的源文件而不是应用程序的 Visual Studio 项目时调试应用。 **调试安装的应用程序包**对话框中，您可以启动应用程序在调试模式下在 Visual Studio 计算机上或在远程设备上，或设置应用程序以在调试模式下运行但不是启动它。 有关详细信息，请参阅[调试已安装的应用程序包](../debugger/debug-installed-app-package.md)。
   
  在将应用程序加载到调试器中后，您可以使用上述任意过程。  
   
 ##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> 诊断后台任务激活错误  
- Windows 事件查看器中针对后台基础结构的诊断日志包含详细信息，这些信息可用于诊断和解决后台任务错误。 若要查看日志，请执行以下操作：  
+ Windows 事件查看器中针对后台基础结构的诊断日志包含可用于诊断和解决后台任务错误的详细的信息。 若要查看日志，请执行以下操作：  
   
 1.  打开事件查看器应用程序。  
   
@@ -127,5 +113,5 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>请参阅  
  [使用 Visual Studio 测试 UWP 应用](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [应用程序生命周期](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
- [启动、 恢复和多任务](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [应用程序生命周期](/windows/uwp/launch-resume/app-lifecycle)   
+ [启动、 恢复和多任务](/windows/uwp/launch-resume/index)

@@ -27,22 +27,23 @@ f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.Authentication
 - VC.Project.IVCAppHostRemoteDebugPageObject.DebuggerType
 - VC.Project.IVCAppHostSimulatorDebugPageObject.BreakpointBehavior
+- vs.debug.installedapppackagelauncher
+- vs.debug.error.wwahost_scriptdebuggingdisabled
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 66ec0e79-8261-4c19-a618-3fd1b3f71bbd
 caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 367fc334d0268a73e8ad1a33ebdc6e74036ddc86
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 718d24ab0f9fbb310d2482b63bc98dd139658330
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Visual Studio 中启动的 UWP 应用的调试会话
   
@@ -73,10 +74,10 @@ ms.lasthandoff: 01/10/2018
 |||  
 |-|-|  
 |**本地计算机**|在本地计算机上的当前会话中调试应用程序。|  
-|**模拟器**|适用于 UWP 调试 Visual Studio 模拟器中的应用程序和[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用。 模拟器是一个桌面窗口，使您能够调试设备功能，如触摸手势和设备旋转-可能无法在本地计算机上使用。 此选项才可用如果你的应用**目标平台最小值。版本**小于或等于您的开发计算机上的操作系统。 请参阅[在模拟器中运行的 UWP 应用](../debugger/run-windows-store-apps-in-the-simulator.md)。|  
+|**模拟器**|调试适用于 UWP 应用的 Visual Studio 模拟器中应用程序。 模拟器是一个桌面窗口，使您能够调试设备功能，如触摸手势和设备旋转-可能无法在本地计算机上使用。 此选项才可用如果你的应用**目标平台最小值。版本**小于或等于您的开发计算机上的操作系统。 请参阅[在模拟器中运行的 UWP 应用](../debugger/run-windows-store-apps-in-the-simulator.md)。|  
 |**远程计算机**|在通过 Intranet 连接到本地计算机或使用以太网电缆直接连接到本地计算机的设备上调试应用程序。 若要进行远程调试，Visual Studio 远程工具必须是远程设备上安装并运行。 请参阅[远程计算机上运行的 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。|  
 |**设备**|调试连接了 USB 的设备上的应用。 设备必须是开发人员解锁，而且必须解锁屏幕。|  
-|**移动仿真程序**|使用的模拟器名称中指定的配置启动仿真程序，部署该应用，并开始调试。 仿真程序是仅在运行 Windows 8.1 或更高版本的 HYPER-V 启用计算机上可用。|  
+|**移动仿真程序**|使用的模拟器名称中指定的配置启动仿真程序，部署该应用，并开始调试。 仿真程序是仅在启用 HYPER-V 计算机上可用。|  
 
 ##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>选择其他调试选项  
 
@@ -119,7 +120,7 @@ ms.lasthandoff: 01/10/2018
   
 -   对于 Visual C# 和 Visual Basic 应用程序，在 **“调试”** 属性页上选中 **“不启动，但在启动时调试代码”** 。  
   
--   对于 Visual c + + 和 JavaScript 应用，选择**是**从**启动应用程序**列表上**调试**属性页。  
+-   对于 Visual c + + 和 JavaScript 应用，选择**否**从**启动应用程序**列表上**调试**属性页。  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> （可选）禁用网络环回  
   
@@ -169,7 +170,7 @@ ms.lasthandoff: 01/10/2018
   
  随后应用程序在调试模式下启动。 持续执行至抵达某个断点、手动暂停执行、发生无法处理的异常或应用程序结束为止。  
   
- . 有关调试后台任务的详细信息，请参阅[触发器挂起、 继续和后台适用于 UWP 应用的事件)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。  
+ 有关调试后台任务的详细信息，请参阅[触发器挂起、 继续和后台适用于 UWP 应用的事件)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。  
   
 ###  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> 在调试器中启动已安装的应用程序  
 在使用 F5 启动调试时，Visual Studio 会生成并部署应用程序，将应用程序设置为在调试模式中运行，然后启动应用程序。 若要开始在设备已安装的应用程序，使用**调试安装的应用程序包**对话框。 当需要调试已从 Microsoft 应用商店安装的应用程序，或在拥有应用程序中的源文件但没有应用的 Visual Studio 项目时，此过程非常有用。 例如，你的自定义生成系统可能不使用 Visual Studio 项目或解决方案。  
@@ -177,9 +178,6 @@ ms.lasthandoff: 01/10/2018
 应用程序可安装在本地设备上，也可安装在远程设备上。  你可以立即启动应用程序，或将应用程序设置为当其通过其他进程或方法（如从“开始”菜单或通过激活协定）启动时在调试器中运行，也可以将应用程序设置为当需要在未启动应用程序的情况下调试后台进程时在调试模式中运行。 有关详细信息，请参阅[触发器挂起、 继续和后台适用于 UWP 应用的事件)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。  
   
 若要在调试器中启动安装的应用程序，选择**调试**，然后**其他调试目标**，，然后**调试安装的应用程序包**。 有关更多说明，请参阅[调试已安装的应用程序包](../debugger/debug-installed-app-package.md)。
-
-> [!NOTE]
-> 对于 Windows 8.1 中，选择**调试**，然后选择**调试安装的应用程序包**。
 
 ###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>将调试器附加到正在运行的 UWP 应用  
 

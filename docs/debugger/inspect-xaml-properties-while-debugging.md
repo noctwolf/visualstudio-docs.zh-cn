@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70ca76a3b611b0490def98b1a24936f71ca42e0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40ff41cc6728244d11e93541057af1cb525c7af3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在调试时检查 XAML 属性
 你可以获取与你正在运行 XAML 代码的实时视图**实时可视化树**和**实时属性资源管理器**。 这些工具为你提供了正在运行的 XAML 应用程序的 UI 元素的树视图，并显示你选择的任何 UI 元素的运行时属性。  
@@ -27,7 +27,6 @@ ms.lasthandoff: 12/22/2017
 |应用类型|操作系统和工具|  
 |-----------------|--------------------------------|  
 |Windows Presentation Foundation（4.0 和更高版本）应用程序|Windows 7 和更高版本|  
-|Windows 8.1 和 Windows Phone 8.1 应用|Windows 10 及更高版本，与[Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
 |通用 Windows 应用|Windows 10 及更高版本，与[Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
   
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>查看实时可视化树中的元素  
@@ -94,7 +93,7 @@ private void button_Click(object sender, RoutedEventArgs e)
   
  **在运行的应用程序中显示布局装饰器**。 当选择“启用选择”按钮右侧紧靠的按钮时，可以启用此模式。 当**显示布局装饰器**处于打开状态，它将导致在应用程序窗口中显示所选对象的边界沿水平和垂直的行，以便你能够看到它与什么对齐，以及显示边距的矩形。 例如，将同时**启用选择**和**显示布局**，然后选择**添加项**应用程序中的文本块。 你应看到中的文本块节点**实时可视化树**和中的文本块属性**实时属性查看器**，以及的水平和垂直文本块边界上。  
   
- ![在 DisplayLayout LivePropertyViewer](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer DisplayLayout")  
+ ![LivePropertyViewer in DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")  
   
  **预览所选内容**。 你可以通过选择“实时可视化树”工具栏上从左侧起第三个按钮来启用此模式。 如果你有访问该应用程序的源代码的权限，则此模式将在声明元素处显示 XAML。 选择**启用选择**和**预览所选内容**，然后在测试应用程序中选择按钮。 MainWindow.xaml 文件在 Visual Studio 中打开并且光标放置在定义按钮的行上。  
   

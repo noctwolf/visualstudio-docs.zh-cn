@@ -1,5 +1,5 @@
 ---
-title: "在模拟器中运行 UWP 和 Windows 8.1 应用程序 |Microsoft 文档"
+title: "在模拟器中运行 UWP 应用 |Microsoft 文档"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -18,26 +18,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: a3fbe1b7c138f24167e587109fbb5f524b6b9019
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>在模拟器中运行的 UWP 和 Windows 8.1 应用
-UWP 和 Windows 8.1 应用程序的 Visual Studio 模拟器是一个可模拟 UWP 或 Windows 8.1 应用程序的桌面应用程序。 你可以运行应用程序选择的物理屏幕大小和你想要模拟的分辨率。 此外可以模拟常用的触摸和旋转事件，并模拟网络连接属性。
+# <a name="run-uwp-apps-in-the-simulator"></a>在模拟器中运行的 UWP 应用
+适用于 UWP 应用的 Visual Studio 模拟器是一个桌面应用程序，可模拟 UWP 应用。 通常情况下，你将想要在本地计算机、 连接的设备或远程计算机上进行调试。 但是，在某些情况下，你可能想要使用的 Visual Studio 模拟器可以模拟不同的物理屏幕大小和分辨率。 此外可以模拟常用的触摸和旋转事件，并模拟网络连接属性。
   
  模拟器提供在其中可以设计、 开发、 调试和测试 UWP 应用的环境。 但是，将应用发布到 Microsoft 应用商店之前，你应测试您实际设备上的应用程序。  
   
  不，本地计算机上的独立环境中对适用于 UWP 应用的 Visual Studio 模拟器不会运行。 因此，模拟器中发生的错误（如不可恢复的系统范围错误）也会影响整个计算机。  
   
- 有关 Windows Phone 的信息，请参阅 [Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md) 。  
-  
 > [!IMPORTANT]
->  Visual Studio 2015 模拟器不包括地理位置按钮。 这是因为 Windows 10 模拟器中不包含地理位置模拟。 如果需要进行这种类型的模拟，则可以在 Windows 8.1 或更早的操作系统上使用 Visual Studio 2013 模拟器。  
+>  Visual Studio 2015 模拟器不包括地理位置按钮。 这是因为 Windows 10 模拟器中不包含地理位置模拟。
   
 ##  <a name="BKMK_Set_the_simulator_as_the_target"></a> 设置模拟器作为目标  
- 若要在模拟器中运行 UWP 应用，选择**模拟器**下拉列表中下一步**启动调试**上调试器按钮**标准**工具栏。  
+ 若要在模拟器中运行 UWP 应用，选择**模拟器**下拉列表中下一步**启动调试**上调试器按钮**标准**工具栏。 此选项才可用如果你的应用**目标平台最小值。版本**小于或等于您的开发计算机上的操作系统。 
   
  ![在模拟器中运行](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   

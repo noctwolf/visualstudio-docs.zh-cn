@@ -1,5 +1,5 @@
 ---
-title: "刷新 UWP 或 Windows 8.1 应用程序 |Microsoft 文档"
+title: "刷新的 UWP 应用 |Microsoft 文档"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -23,16 +23,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 636f88313d53625e5bb778ffe7bebc8f891ed4bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef42c0208b973707294a842376ef737216e13774
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="refresh-a-uwp-or-windows-81-app"></a>刷新 UWP 或 Windows 8.1 应用
-![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>刷新 Visual Studio 中的 UWP 应用
   
- 你进行调试，然后刷新通过选择使用 JavaScript UWP 应用时，可以对你的代码进行更改**刷新 Windows 应用程序**按钮上**调试**工具栏。 选择此按钮将重新加载应用程序，但不会停止并重新启动调试器。 通过“刷新”功能，可修改 HTML、CSS 和 JavaScript 代码并迅速看到结果。 对于 UWP 和 Windows 8.1 应用程序支持此功能。  
+ 你进行调试，然后刷新通过选择使用 JavaScript UWP 应用时，可以对你的代码进行更改**刷新 Windows 应用程序**按钮上**调试**工具栏。 选择此按钮将重新加载应用程序，但不会停止并重新启动调试器。 通过“刷新”功能，可修改 HTML、CSS 和 JavaScript 代码并迅速看到结果。 适用于 UWP 应用支持此功能。  
   
  刷新功能不保持应用程序状态，也不反映对应用程序的以下更改：  
   
@@ -51,37 +50,19 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-refresh-an-app"></a>刷新应用程序  
   
-1.  在 Visual Studio 中，使用“导航应用”项目模板创建一个新项目。  
-  
-     这可以是 UWP 应用或 Windows 8.1 应用程序。  
-  
-2.  在 Visual Studio 中打开模板后，选择一个调试目标。  
-  
-     如果 Windows Phone 项目是你的当前启动项目，请将 Windows Phone 仿真程序选为调试目标。 否则，请选择**模拟器**或**本地计算机**。  
+1.  使用 Visual Studio 中打开你 UWP 项目中，选择**本地计算机**作为调试目标。
   
      ![选择调试目标列表](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 3.  按 F5 以在调试模式下运行应用程序。  
   
-4.  切换到 Visual Studio。 （按 F12。）  
+4.  切换到 Visual Studio。 
   
-5.  在**解决方案资源管理器**中**页** > **主**文件夹中，打开 home.html。  
-  
-6.  将页标题文本从  
-  
-    ```html  
-    Welcome to yourAppName!  
-    ```  
-  
-     改为类似如下所示的内容：  
-  
-    ```html  
-    Hello!  
-    ```  
+5.  在 UWP 应用的主页页中，编辑一些 HTML。
   
 7.  单击**刷新 Windows 应用程序**按钮，如下所示像这样：![刷新 Windows 应用程序按钮](../debugger/media/js_refresh.png "JS_Refresh")。 （或按 F4。）  
   
-8.  切换到该应用程序。 将重新加载该应用程序，但不重新启动调试器，并显示新的页面标题。  
+8.  切换到该应用程序。 重新加载应用程序和更新的 HTML 用于呈现应用程序。
   
 ## <a name="see-also"></a>请参阅  
  [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

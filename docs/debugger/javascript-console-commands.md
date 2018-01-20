@@ -7,29 +7,24 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
 - debugging JavaScript, console [UWP apps]
-ms.assetid: 359e2b24-6bb7-48e7-8b55-b570df0cb774
 caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 32aa07920c496249271e6c337952129292a3d2aa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+- cordova
+ms.openlocfilehash: 1f2d6f356d4e886488f4b6558c6cfb92d7b9c974
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 控制台命令
-![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 有关演示如何使用该窗口的示例，请参阅[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主题中的信息适用于 UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 Cordova 应用中受支持的控制台命令的信息，请参阅[调试应用](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 有关在 Internet Explorer F12 工具中使用控制台的信息，请参阅 [本主题](http://msdn.microsoft.com/library/ie/dn255006.aspx)。  
   

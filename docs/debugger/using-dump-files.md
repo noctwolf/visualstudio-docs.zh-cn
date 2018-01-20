@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>使用 Visual Studio 使用转储文件
 使用或不带堆; 的转储文件创建转储文件;打开转储文件;查找二进制文件、 pdb，并为转储文件的源文件。
@@ -56,11 +56,11 @@ ms.lasthandoff: 12/22/2017
   
 -   Visual Studio 可以调试 ARM 设备中的本机应用程序的转储文件。 Visual Studio 还可以调试 ARM 设备中的托管应用的应用转储文件，但仅限于本机调试器中。  
   
--   若要调试[内核模式](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)转储文件在 Visual Studio 2013，请下载[Windows 8.1 版本的 Windows 调试工具](http://msdn.microsoft.com/windows/hardware/gg463009)。 请参阅[Visual Studio 中的内核调试](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx)。  
+-   若要调试[内核模式](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)转储文件，下载适用于属于的 Windows 调试工具[Windows 驱动程序工具包 (WDK)](/windows/hardware/windows-driver-kit)。 
   
 -   Visual Studio 无法调试转储文件保存在较旧转储格式称为[完整的用户模式转储](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx)。 请注意，完全用户模式转储与带有堆的转储不同。  
   
--   使用进行调试[SOS.dll （SOS 调试扩展）](/dotnet/framework/tools/sos-dll-sos-debugging-extension)在 Visual Studio 中，你必须安装 Windows 调试工具的一部分的 Windows 驱动程序工具包 (WDK)。 请参阅[Windows 8.1 预览版： 下载工具包、 组件和工具](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)。  
+-   使用进行调试[SOS.dll （SOS 调试扩展）](/dotnet/framework/tools/sos-dll-sos-debugging-extension)在 Visual Studio 中，你必须安装的调试工具的窗口，属于[Windows 驱动程序工具包 (WDK)](/windows/hardware/windows-driver-kit) 
   
 ##  <a name="BKMK_Create_a_dump_file"></a>创建转储文件  
  使用 Visual Studio 创建转储文件：  

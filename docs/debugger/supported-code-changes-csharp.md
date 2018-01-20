@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 628aad6f1ae097ea040a6043db1ef12f0b60a7a4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>受支持的代码更改 （C# 和 Visual Basic）
 “编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，你必须停止调试，重新开始新版本的代码。
@@ -86,7 +86,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="unsupported-app-scenarios"></a>不受支持的应用方案
 
-不受支持的应用程序和平台包括 ASP.NET 5、 Silverlight 5、 Windows Phone 和 Windows Phone 仿真程序和 Windows 8.1。
+不受支持的应用程序和平台包括 ASP.NET 5、 Silverlight 5 和 Windows 8.1。
 
 > [!NOTE]
 > 支持的应用程序包含在 Windows 10 和面向.NET Framework 4.6 的 x86 和 x64 应用的 UWP 桌面或更高版本 （.NET Framework 是仅限桌面版本）。

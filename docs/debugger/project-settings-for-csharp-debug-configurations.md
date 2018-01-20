@@ -25,17 +25,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: b21dcdefde586b4a2724c8c0a659462b5f0898f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 054a015c5fcd6a70696ed6945faa5cbd01547168
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 调试配置的项目设置
 你可以更改中的 C# 调试配置的项目设置**属性页**窗口，如下所述[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示在何处可以找到中与调试器相关的设置**属性页**窗口。  
   
 > [!WARNING]
->  本主题不适用于 UWP 和 Windows 8.1 应用程序。 请参阅[启动调试会话 (VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  本主题不适用于 UWP 应用。 请参阅[启动调试会话 (VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
 ##  <a name="BKMK_Debug_tab"></a>调试选项卡  
   

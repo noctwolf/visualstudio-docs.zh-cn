@@ -18,16 +18,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 40c3a112d77e7e00d95aaa92a77a3b6739c96293
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8c463bc443540e136b2cffd1a4abdda2cc543d05
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>调试 WebView 控件中的 UWP 应用
-![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- 若要检查并调试 Windows 运行时应用中的 `WebView` 控件，你可以在启动应用时配置 Visual Studio 以附加脚本调试器。 从 Visual Studio 2013 Update 2 开始，可通过两种方式来使用调试器与 `WebView` 控件交互：  
+ 若要检查并调试 Windows 运行时应用中的 `WebView` 控件，你可以在启动应用时配置 Visual Studio 以附加脚本调试器。 可通过两种方式来与交互`WebView`控制使用调试器：  
   
 -   打开[DOM 资源管理器](../debugger/quickstart-debug-html-and-css.md)为`WebView`实例，并检查 DOM 元素、 调查 CSS 样式问题并测试动态呈现的样式更改。  
   

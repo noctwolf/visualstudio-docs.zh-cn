@@ -12,22 +12,20 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: b4481fef-3ebf-4f7d-9748-d43821a0ebac
 caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: f98867a5420755ca2eb4e2fb5e75070759a1a91b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a0555e2a3ea600a1f5b11eaf95a48f4cfd7df3e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>调试使用 Visual Studio 中的预提取的内容的 UWP 应用
-![仅适用于 Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
- 若要使 UWP 应用能够更快地响应，你可以请求 Windows 将一些 web 内容，例如网页或 web 图像，预加载到应用的[WinINet](http://msdn.microsoft.com/en-us/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](http://msdn.microsoft.com/library/aa383630.aspx)缓存。 此功能称为“预提取”。 它对于启动时使用的内容特别有效，但也预提取其他常用的内容。 方法[Windows.Networking.BackgroundTransfer.ContentPrefetcher](http://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx)类，你可以指定要预加载内容的 Uri。 请参阅 Windows SDK[内容预提取示例](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309)有关如何将 ContentPrefetcher 功能添加到你的应用程序的示例。  
+ 若要使 UWP 应用能够更快地响应，你可以请求 Windows 将一些 web 内容，例如网页或 web 图像，预加载到应用的[WinINet](http://msdn.microsoft.com/library/0a06f2af-957a-4dff-a8cc-187370181b5c)缓存。 此功能称为“预提取”。 它对于启动时使用的内容特别有效，但也预提取其他常用的内容。 方法[Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher)类，你可以指定要预加载内容的 Uri。 请参阅 Windows SDK[内容预提取示例](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309)有关如何将 ContentPrefetcher 功能添加到你的应用程序的示例。  
   
  Windows 使用试探法来确定何时及是否应进行预提取，以及将下载哪些资源。 试探法将考虑系统网络和电源情况、用户应用使用情况历史记录和之前预提取尝试的结果。 在 Visual Studio 中，你可以使用**触发 Windows 应用商店应用预提取**命令来强制 Windows 忽略 ContentPrefetcher 试探法并预加载所有指定的 web 内容。 若要在已知状态（已加载或未加载）下使用要预提取的内容测试应用程序的行为或性能，这会很有用。  
   
