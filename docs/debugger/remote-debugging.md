@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 94ce04f63870bb6ce9a40658c670c5b277cc675e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。
@@ -34,12 +34,11 @@ ms.lasthandoff: 01/10/2018
 
 |方案|链接|
 |-|-|-|
+|Azure|[调试在 Azure App Service （快照调试器） 上的 ASP.NET](../debugger/debug-live-azure-applications.md)，[远程调试在 Azure 上的 ASP.NET](../debugger/remote-debugging-azure.md)，或[调试 Azure Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[远程调试 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)或[远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |C# 或 Visual Basic|[远程调试 C# 或 Visual Basic 项目](../debugger/remote-debugging-csharp.md)|
 |C++|[远程调试 C++ 项目](../debugger/remote-debugging-cpp.md)|
 |通用 Windows 应用 (UWP)|[在远程计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)和[调试安装的应用包](../debugger/debug-installed-app-package.md)|
-|Azure|[在 Azure 上的远程调试 ASP.NET](remote-debugging-azure.md)|
-|Azure Service Fabric|[调试远程 Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。|
 
 如果你只想要下载并安装远程调试器，并且不需要任何其他说明为你的方案，请按照本文中的步骤。
   
@@ -53,7 +52,7 @@ ms.lasthandoff: 01/10/2018
 
 1. 查找**msvsmon.exe**匹配你的 Visual Studio 版本的目录中。 针对 Visual Studio Enterprise 2017:
 
-      **程序文件 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       
       **程序文件 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
 

@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82ec43b02895c2067b04f52f893184a82dd0f36b
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-basic"></a>编辑并继续 (Visual Basic)
 “编辑并继续”是 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 调试的一项功能，当代码在中断模式下执行时，使用该功能可以更改代码。 在应用代码编辑后，可以就地继续执行新编辑过的代码并观察效果。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/22/2017
  编辑并继续支持适用于 Windows 10 UWP 应用和面向.NET Framework 4.6 的 x86 和 x64 应用中桌面或更高版本 （.NET Framework 是仅限桌面版本）。
 
  > [!NOTE]
- > 不受支持的应用程序和平台包括 ASP.NET 5、 Silverlight 5、 Windows Phone 和 Windows Phone 仿真程序和 Windows 8.1。
+ > 不受支持的应用程序和平台包括 ASP.NET 5、 Silverlight 5 和 Windows 8.1。
   
  在开始调试使用时不支持编辑并继续**附加到进程**。 为优化代码或混合不支持编辑并继续托管和本机代码。 有关详细信息，请参阅[支持的代码更改 (C# 和 Visual Basic](../debugger/supported-code-changes-csharp.md)。
   

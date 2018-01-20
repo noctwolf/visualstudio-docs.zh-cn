@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5317c06dc5ff6515627e562d576785c2ff25a98a
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>调试使用快照调试器的实时 ASP.NET Azure 应用程序
 
@@ -47,9 +47,12 @@ Snappoints 和 logpoints 是类似于断点。 与断点，不同 snappoints 不
 
    ![启动快照调试器](../debugger/media/snapshot-launch.png "启动快照调试器")
 
-    你选择的第一个时间**附加快照调试器**，系统会提示你安装在你的 Azure App Service 上的快照调试器。 此安装需要重新启动你的 Azure 应用程序服务。 
+    你选择的第一个时间**附加快照调试器**，系统会提示你在你的 Azure App Service 上安装了快照调试器站点扩展。 此安装需要重新启动你的 Azure 应用程序服务。 
 
    Visual Studio 现在处于调试模式的快照。
+
+    > [!NOTE]
+    > Application Insights 站点扩展插件还支持快照调试。 如果你遇到的"站点扩展过期"错误消息，请参阅[故障排除提示和快照调试的已知的问题](../debugger/debug-live-azure-apps-troubleshooting.md)升级详细信息。
 
    ![调试模式的快照](../debugger/media/snapshot-message.png "快照调试模式")
 
@@ -130,7 +133,7 @@ Snappoints 和 logpoints 是类似于断点。 与断点，不同 snappoints 不
 
 ## <a name="next-steps"></a>后续步骤
 
-- 若要了解如何查看快照时检查变量，请参阅[Debbuger 功能教程](../debugger/debugger-feature-tour.md)。
+- 若要了解如何查看快照时检查变量，请参阅[调试器功能教程](../debugger/debugger-feature-tour.md)。
 - 视图[适用的快照调试常见问题](../debugger/debug-live-azure-apps-faq.md)。
 - 视图[故障排除提示和快照调试的已知的问题](../debugger/debug-live-azure-apps-troubleshooting.md)。
 - 如果你想要在 Application Insights 中查看快照，当遇到异常时你的应用程序，你可以执行该操作。 有关详细信息，请参阅[调试.NET 应用中的异常上的快照](/azure/application-insights/app-insights-snapshot-debugger)。 Application Insights 支持除了 Azure App Service 的 Service Fabric 应用程序。

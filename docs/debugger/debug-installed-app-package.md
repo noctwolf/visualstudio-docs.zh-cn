@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: e21d29c3a95de4e5174a9966665f3e4e6781f726
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>调试 Visual Studio (UWP) 的安装的应用包
 
@@ -91,9 +91,6 @@ ms.lasthandoff: 01/10/2018
 
      > [!NOTE]
 > 在呈现，XBox 或 HoloLens 设备将在附有如果它已在运行调试器的情况下重新启动应用。
-
-> [!NOTE]
-> UWP 应用可以进行开发和编译的 Windows 8.1 或更高版本，但要求运行 Windows 10。 如果你正在开发 Windows 8.1 PC 上的 UWP 应用，可以远程调试在另一台 Windows 10 设备上，运行的 UWP 应用，前提是主机和目标计算机位于同一 LAN。 若要执行此操作，请下载并在两台计算机上安装 Visual Studio 远程工具。 安装的版本必须匹配现有的已安装的 Visual Studio 版本，并且选择 (x86、 x64) 的体系结构还必须匹配的目标应用程序。
 
 有关远程部署的 UWP 应用的高级选项的信息，请参阅[部署和调试 UWP 应用](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options)。 
   

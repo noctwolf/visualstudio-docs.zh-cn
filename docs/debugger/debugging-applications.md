@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: efd4ca5457a1175b19deddfd4194091dbcb2864e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cb0ed99e341e89aaaa295d2fc4a4cf25f726e2f5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debugging-applications"></a>调试应用程序
 以下各节介绍了对不同类型的应用程序进行调试的信息。 应用程序类型和语言不同，需要的设置和技术也会不同，并且需要调试的问题也不同。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/22/2017
   
 |||  
 |-|-|  
-|[调试 UWP 和 Windows 8.1 应用](../debugger/debugging-windows-store-and-windows-universal-apps.md)|描述如何调试 UWP 应用。|  
+|[调试 UWP 应用](../debugger/debugging-windows-store-and-windows-universal-apps.md)|描述如何调试 UWP 应用。|  
 |[调试托管代码](../debugger/debugging-managed-code.md)|描述如何调试托管代码（Visual C#、Visual Basic 和 F3）。|  
 |[调试本机代码](../debugger/debugging-native-code.md)|描述如何调试不同类型的本机 C ++ 应用程序。|  
 |[调试 GPU 代码](../debugger/debugging-gpu-code.md)|描述如何调试在图形处理单元 (GPU) 上运行的 C++ 代码。|  

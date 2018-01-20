@@ -16,14 +16,14 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 52acd997d1f6dd9f019a6495cfbeab4e459d661b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>在 IIS 和 Visual Studio 2017 在 Azure 上的远程调试 ASP.NET 核心
-你可以部署到 Windows Server 计算机使用 IIS，ASP.NET Web 应用程序，并将其设置为远程调试。 本指南说明如何设置和配置 Visual Studio 2017 ASP.NET Core 应用，将其部署到 IIS 使用 Azure，并从 Visual Studio 中附加远程调试器。
+Azure App Service 中，我们建议你使用调试[快照调试器](../debugger/debug-live-azure-applications.md)也可以按照本主题中的说明以从 Visual Studio 中附加调试器。 如果你正在 Windows Server 使用 IIS 的 Azure VM 上，你还可以将其设置为远程调试。 本指南说明如何设置和配置 Visual Studio 2017 ASP.NET Core 应用，将其部署到 IIS 使用 Azure，并从 Visual Studio 中附加远程调试器。
 
 > [!WARNING]
 > 请务必删除时已完成本教程中的步骤创建 Azure 资源。 这样可以避免产生不必要的费用。
@@ -184,7 +184,7 @@ ms.lasthandoff: 01/10/2018
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 年，你可以重新附加到你以前通过使用附加到的相同进程**调试 > 重新附加到进程...**(Shift + Alt + P)。 
+    > 在 Visual Studio 2017 年，你可以重新附加到你以前通过使用附加到的相同进程**调试 > 重新附加到进程...**(Shift+Alt+P). 
 
 3. 将限定符字段设置为**\<远程计算机名称 >: 4022**。
 4. 单击**刷新**。

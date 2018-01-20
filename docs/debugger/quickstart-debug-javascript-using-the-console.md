@@ -1,5 +1,5 @@
 ---
-title: "快速入门： 调试 JavaScript 使用控制台 |Microsoft 文档"
+title: "使用控制台调试 JavaScript |Microsoft 文档"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,31 +8,25 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.JavaScriptConsole
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - JavaScript Console
 - JavaScript debugging
 - debugging, JavaScript
-ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 93deb8c5a8d4d17597db0fa2f93f097b4839e88b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a3069f0528d346a2168bbb37535089d00e23aa15
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="quickstart-debug-javascript-using-the-console"></a>快速入门：使用控制台调试 JavaScript
-![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用控制台调试 JavaScript
   
- 可以使用 JavaScript 控制台窗口与交互和调试使用 JavaScript 生成的 UWP 应用。 适用于 UWP 应用支持这些功能[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用、 Windows Phone 应用程序，以及使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关控制台命令参考的信息，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
+ 可以使用 JavaScript 控制台窗口与交互和调试使用 JavaScript 生成的 UWP 应用。 UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用支持这些功能。 有关控制台命令参考的信息，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
   
  “JavaScript 控制台”窗口允许你执行以下操作：  
   
@@ -48,36 +42,26 @@ ms.lasthandoff: 01/10/2018
   
 -   执行其他任务，如清除屏幕。 有关完整的命令列表，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md) 。  
   
- 本主题内容：  
-  
--   [使用“JavaScript 控制台”窗口进行调试](#InteractiveConsole)  
-  
--   [交互式调试和中断模式](#InteractiveDebuggingBreakMode)  
-  
--   [JavaScript 控制台窗口中的单行模式和多行模式](#SinglelineMultilineMode)  
-  
--   [切换脚本执行上下文](#Switching)  
-  
 > [!TIP]
->  如果 JavaScript 控制台窗口处于关闭状态，请依次选择“调试” > >  以重新打开它。 该窗口仅在脚本调试会话期间出现。  
+>  如果 JavaScript 控制台窗口已关闭，选择**调试**> **Windows** > **JavaScript 控制台**以重新打开它。 该窗口仅在脚本调试会话期间出现。  
   
  使用“JavaScript 控制台”窗口，你可以在无需停止和重新启动调试器的情况下与应用交互。 有关详细信息，请参阅[刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 有关其他 JavaScript 调试功能，如使用 DOM 资源管理器和设置断点，请参阅[快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)和[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
   
 ##  <a name="InteractiveConsole"></a> 使用“JavaScript 控制台”窗口进行调试  
  以下步骤会创建一个 `FlipView` 应用并演示如何以交互方式调试 JavaScript 编码错误。  
   
-> [!CAUTION]
+> [!NOTE]
 >  此处的示例应用是一个 UWP 应用。 但是，此处所述的控制台功能也适用于使用 Visual Studio Tools for Apache Cordova 创建的应用。  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>调试 FlipView 应用中的 JavaScript 代码  
   
 1.  通过选择 **“文件”** > **“新建项目”**。  
   
-2.  选择 **“JavaScript”** > **“应用商店应用”**，选择 **“Windows 应用程序”** 或“ **Windows Phone 应用程序”**，然后选择 **“空白应用程序”**。  
+2.  选择**JavaScript** > **Windows 通用**，然后选择**WinJS 应用**。  
   
 3.  为项目输入名称（如 `FlipViewApp`），然后选择“确定”  以创建应用。  
   
-4.  在 default.html 的 BODY 元素中，将现有 HTML 代码替换为以下代码：  
+4.  在 index.html 的 BODY 元素，将现有 HTML 代码替换此代码：  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -133,9 +117,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.push(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.push(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.push(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
   
         };  
   
@@ -153,7 +137,7 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-7.  如果尚未选择调试目标，请从 **“调试”** 工具栏上 **“设备”** 按钮旁边的下拉列表中，为 Windows Phone 选择 **“模拟器”** 或 **“仿真程序 8.1 WVGA 4 英寸 512MB”** ：  
+7.  如果尚未选择调试目标，选择**本地计算机**下拉列表中下一步**设备**按钮上**调试**工具栏：  
   
      ![选择调试目标列表](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -161,7 +145,7 @@ ms.lasthandoff: 01/10/2018
   
      应用会运行，但缺少图像。 JavaScript 控制台窗口中的 APPHOST 错误指示缺少图像。  
   
-9. 与`FlipView`应用在模拟器或 Phone 仿真程序中，类型中运行`Data.items`在控制台窗口输入提示符 (旁边">>"符号)，然后按 enter 键。  
+9. 与`FlipView`运行，应用程序类型`Data.items`在控制台窗口输入提示符 (旁边">>"符号)，然后按 enter 键。  
   
      `items` 对象的可视化工具会出现在控制台窗口中。 这指示 `items` 对象进行了实例化，并且在当前脚本上下文中可用。 在控制台窗口中，可以在对象的各个节点中单击以查看属性值（或使用箭头键）。 如果向下单击到 `items._data` 对象（如图所示），则会发现其图像源引用不正确（与预期一样）。 该对象中存在的仍是默认图像 (logo.png)，并且有缺少的图像与预期的图像交织在一起。  
   
@@ -174,9 +158,9 @@ ms.lasthandoff: 01/10/2018
 11. 若要以交互方式修复此问题而不停止调试会话，请打开 default.js，然后从 `updateImages` 函数中选择以下代码：  
   
     ```javascript  
-    pages.push(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-    pages.push(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-    pages.push(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+    pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+    pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
     ```  
   
      将此代码复制并粘贴到 JavaScript 控制台输入提示中。  
@@ -187,9 +171,9 @@ ms.lasthandoff: 01/10/2018
 12. 在提示中更正 `push` 函数调用（将 `pages.push` 替换为 `Data.items.setAt`）。 更正后的代码应类似于：  
   
     ```javascript  
-    Data.items.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-    Data.items.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-    Data.items.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    Data.items.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+    Data.items.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+    Data.items.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
     ```  
   
     > [!TIP]
@@ -201,7 +185,7 @@ ms.lasthandoff: 01/10/2018
   
 15. 在提示符下，键入 `Data.items.length = 3` ，并按 Enter。 这会从数据中移除额外的元素。  
   
-16. 再次检查模拟器或 Phone 仿真程序，你会看到正确的图像位于正确的 `FlipView` 页面上。  
+16. 再次，检查应用程序，你将看到，正确的图像位于正确`FlipView`页。  
   
 17. 在 DOM 资源管理器中，可以查看更新后的 DIV 元素，并且可以导航到子树中以查找预期的 IMG 元素。  
   
@@ -218,7 +202,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  在之前创建的 `FlipView` 应用的 default.html 文件中，打开 `updateImages()` 函数的快捷菜单，然后选择 **“断点”** > **“插入断点”**。  
   
-2.  在 **“调试”** 工具栏上的 **“启动调试”** 按钮旁的下拉列表中，选择 **“本地计算机”** 或 **“仿真程序 8.1 WVGA 4 英寸 512MB”** 。  
+2.  选择**本地计算机**列表下拉列表中**启动调试**按钮上**调试**工具栏。  
   
 3.  选择 **“仿真程序 8.1 WVGA 4 英寸 512MB”** > **“本地计算机”**，或按 F5。  
   
@@ -239,7 +223,7 @@ ms.lasthandoff: 01/10/2018
 6.  将下面这行函数从输出窗口复制到输入提示符下，并将索引值更改为 3：  
   
     ```javascript  
-    pages.setAt(3, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    pages.setAt(3, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
     ```  
   
 7.  按 Enter 以运行该代码行。  
@@ -264,16 +248,7 @@ ms.lasthandoff: 01/10/2018
   
  ![面向 JavaScript 控制台窗口中的选择](../debugger/media/js_console_target.png "JS_Console_Target")  
   
- 你也可以使用 `cd` 命令切换执行上下文，但是你必须知道其他执行上下文的名称并且你使用的引用必须在范围内。 **“目标”** 列表提供更好的方式来访问其他执行上下文。  
-  
-##  <a name="BrowserSupport"></a> 浏览器和平台支持  
- 在以下平台上支持 JavaScript 控制台窗口：  
-  
--   UWP 应用[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]，并使用 JavaScript 和 HTML 的 Windows Phone 应用  
-  
--   在 [!INCLUDE[win81](../debugger/includes/win81_md.md)]上运行的 Internet Explorer 11  
-  
--   在 [!INCLUDE[win8](../debugger/includes/win8_md.md)]上运行的 Internet Explorer 10  
+ 你也可以使用 `cd` 命令切换执行上下文，但是你必须知道其他执行上下文的名称并且你使用的引用必须在范围内。 **“目标”** 列表提供更好的方式来访问其他执行上下文。   
   
 ## <a name="see-also"></a>请参阅  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

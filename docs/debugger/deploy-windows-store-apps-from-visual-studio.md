@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio 中的 UWP 应用部署 |Microsoft 文档"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,20 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio 中的 UWP 应用部署
-![仅适用于 Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
  Visual Studio 部署功能生成和注册随 Visual Studio 创建目标设备的 UWP 应用。 应用的实际注册方法取决于目标设备是本地还是远程：  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 在 Windows 10 的远程设备，你必须启用[开发者模式](/windows/uwp/get-started/enable-your-device-for-development)。 在运行创建者的更新的 Windows 10 设备上或更高版本，远程工具在部署你的应用程序时自动安装。 有关详细信息，请参阅[调试已安装的应用程序包](../debugger/debug-installed-app-package.md)。
 
 > [!NOTE]
-> 在 Windows 8.1 和以前的创建者的更新版本的 Windows 10 上，必须在远程设备上，安装适用于 Visual Studio 的远程工具，并且必须运行远程调试器。 在 Windows 8.1 上，你还必须安装开发人员许可证。
+> 在以前的创建者的更新版本的 Windows 10，必须在远程设备上，安装适用于 Visual Studio 的远程工具，并且必须运行远程调试器。
   
 部署使用远程调试器网络渠道将应用文件发送到远程设备。  
   
@@ -117,5 +115,6 @@ ms.lasthandoff: 01/10/2018
 -   在 JavaScript 和调试属性页上，将 **“启动应用程序”** 值设置为 **“是”**。  
   
 ## <a name="see-also"></a>请参阅  
- [调试已安装的应用程序包](../debugger/debug-installed-app-package.md)。   
+ [高级远程部署选项](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [调试已安装的应用程序包](../debugger/debug-installed-app-package.md)   
  [从 Visual Studio 运行应用](../debugger/run-store-apps-from-visual-studio.md)

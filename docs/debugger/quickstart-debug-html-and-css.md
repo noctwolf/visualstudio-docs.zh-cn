@@ -1,5 +1,5 @@
 ---
-title: "调试 HTML 和 CSS （UWP 和 Windows 8.1 应用） |Microsoft 文档"
+title: "在 UWP 应用中进行调试 HTML 和 CSS |Microsoft 文档"
 ms.custom: 
 ms.date: 07/17/2017
 ms.reviewer: 
@@ -8,32 +8,26 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.DomExplorer
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - debugging, CSS
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: "101"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>调试 HTML 和 CSS UWP 和 Windows 8.1 应用中
-![适用于 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 应用中进行调试 HTML 和 CSS
   
- Visual Studio 针对 JavaScript 应用提供全面的调试体验，其中包括 Internet Explorer 和 Visual Studio 开发人员熟悉的多项功能。 适用于 UWP 应用支持这些功能[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]，Windows Phone 应用程序，以及使用 Visual Studio Tools for Apache Cordova 创建的应用。  
+ Visual Studio 针对 JavaScript 应用提供全面的调试体验，其中包括 Internet Explorer 和 Visual Studio 开发人员熟悉的多项功能。 适用于 UWP 应用以及创建使用 Visual Studio Tools for Apache Cordova 的应用支持这些功能。  
   
  通过使用 DOM 检查工具所提供的交互式调试模型，你可以查看并修改所呈现的 HTML 和 CSS 代码。 你可以在不停止并重新启动调试器的情况下执行这一切操作。
   
@@ -67,11 +61,11 @@ ms.lasthandoff: 01/10/2018
   
 1.  通过选择 **“文件”** > **“新建项目”**。  
   
-2.  选择 **“JavaScript”** > **“应用商店”**，再选择 **“Windows 应用”** 或 **“Windows Phone 应用”**，然后选择 **“空白应用”**。  
+2.  选择**JavaScript** > **Windows 通用**，然后选择**WinJS 应用**。  
   
 3.  为项目输入名称（如 `FlipViewApp`），然后选择“确定”  以创建应用。  
   
-4.  在 default.html 的 BODY 元素中，添加以下这段代码：  
+4.  在 index.html 正文元素中，添加以下代码：  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -129,9 +123,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
         };  
   
         app.oncheckpoint = function (args) {  
@@ -148,19 +142,17 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-     下图显示了在 Phone 仿真程序中运行该应用程序（与模拟器中的情况类似）时希望看到的状态。 但是，若要让应用程序进入此状态，我们必须先修复大量 Bug。  
+     下图显示我们想要查看运行该应用程序是否。 但是，若要让应用程序进入此状态，我们必须先修复大量 Bug。  
   
      ![显示预期的结果的 FlipView 应用](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  从 **“调试”** 工具栏上的 **“启动调试”** 按钮旁的下拉列表中，选择 **“模拟器”** 或 **“仿真程序 8.1 WVGA 4 英寸 512MB”** ：  
+7.  选择**本地计算机**下拉列表中下一步**启动调试**按钮上**调试**工具栏：  
   
      ![选择调试目标列表](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 8.  选择 **“仿真程序 8.1 WVGA 4 英寸 512MB”** > **“模拟器”**或按 F5，以调试模式运行应用。  
   
-     这样将在模拟器或 Phone 仿真程序中运行应用程序，但是，你将看到几乎空白的屏幕，因为样式中有几个 Bug。 第一个 `FlipView` 图像显示在屏幕中间附近的小正方形中。  
-  
-9. 如果你正在模拟器中运行应用，请选择模拟器右侧的 **“更改分辨率”** 工具栏命令以配置 1280 x 800 的屏幕分辨率。 这将确保下列步骤中显示的值与你在模拟器中看到的值匹配。  
+     这将运行应用程序中，但你将看到几乎空白的屏幕，因为样式中有几个 bug。 第一个 `FlipView` 图像显示在屏幕中间附近的小正方形中。  
   
 10. 切换到 Visual Studio 并选择 **“DOM 资源管理器”** 选项卡。  
   
@@ -169,7 +161,7 @@ ms.lasthandoff: 01/10/2018
   
 11. 在“DOM 资源管理器”窗口中，选择 ID 为 `"fView"`的部分的 DIV 元素。 使用箭头键可以查看并选择正确的 DIV 元素。 （使用右键头键可以查看元素的子元素。）  
   
-     ![DOM 资源管理器](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  你还可以选择此 DIV 元素在 JavaScript 控制台窗口的左下角中通过键入`select(fView)`在 >> 输入提示符，然后按 enter 键。  
@@ -188,16 +180,16 @@ ms.lasthandoff: 01/10/2018
   
 14. 在“DOM 资源管理器”主窗口中，双击 `fView` DIV 元素的高度和宽度的级联样式。 现在可以在此处编辑这些值。 在此方案中，我们需要完全移除它们。  
   
-15. 选择 `width: 100px;height: 100px;`，并按 Delete 键，然后按 Enter。 按 Enter 后，模拟器或 Phone 仿真程序中将立即反映新值，即使尚未停止调试会话也是如此。  
+15. 在主窗口中，双击`width: 100px;height: 100px;`，按**删除**键，，然后按**Enter**。 按 Enter 后，将立即反映新值在应用中，即使尚未停止调试会话。  
   
     > [!IMPORTANT]
     >  你不但可以在“DOM 资源管理器”窗口中更新特性，还可更新 **“样式”**、 **“已计算”**和 **“布局”** 选项卡上显示的值。 有关详细信息，请参阅[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)和[使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)。  
   
-16. 通过选择模拟器或 Phone 仿真程序，或通过使用 Alt+Tab 切换到此应用程序。  
+16. 通过选择它，或通过使用 Alt + Tab 切换到应用程序。  
   
      现在， `FlipView` 控件的外观大于模拟器或 Phone 仿真程序的屏幕大小。 这并不是预期的结果。 若要进行调查，请切回到 Visual Studio。  
   
-17. 在 DOM 资源管理器中，再次选择 **“计算”** 选项卡并打开高度规则。 fView 元素仍显示 CSS 中的预期值 100%，但计算值等于模拟器的屏幕高度（例如，800px 或 667.67px），这不是我们希望此应用程序具有的值。 若要进行调查，可移除 `fView` DIV 元素的高度和宽度。  
+17. 在 DOM 资源管理器中，再次选择 **“计算”** 选项卡并打开高度规则。 FView 元素仍显示 CSS 中的预期值为 100%，但计算的值等于应用的屏幕高度 (例如，800px，667.67 p x 或某个其他值)，这是不是我们希望此应用程序。 要进行调查，后续步骤中我们删除的高度和宽度`fView`DIV 元素。  
   
 18. 在 **“样式”** 选项卡中，取消选中 `#fView` CSS 选择器的高度和宽度属性。  
   
@@ -209,13 +201,11 @@ ms.lasthandoff: 01/10/2018
   
 20. 要进行调查，切换到 Visual Studio 并选择**布局**选项卡查看元素的框模型。  
   
-     在 **“布局”** 选项卡中，你会看到以下值：  
+     在**布局**选项卡上，你将看到以下：  
   
-    -   对于模拟器：320px（偏移量）和 320px（边距）。  
+    -   255px （偏移量） 和 255px （边距） 或类似的值，具体取决于你设备的分辨率。 
   
-    -   对于 Phone 仿真程序：100px（偏移量）和 100px（边距）。  
-  
-     下图显示了使用 Phone 仿真程序（100px 的偏移量和边距）时 **“布局”** 选项卡的外观。  
+     下图显示了**布局**选项卡的外观如果你使用仿真程序与 100px 的偏移量和边距)。  
   
      ![DOM 资源管理器布局选项卡](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
@@ -265,24 +255,8 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]
 >  指针悬停在元素上方时突出显示的元素在 Windows Phone 模拟器中仅部分受支持。  
   
- 有关示例，演示如何使用选择的元素**Select 元素**按钮，请参阅[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)。  
-  
-##  <a name="BrowserSupport"></a> 浏览器和平台支持  
- 在以下平台上支持 DOM 资源管理器和 JavaScript 控制台窗口：  
-  
--   UWP 应用[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]和使用 JavaScript 和 HTML 的 Windows Phone 应用  
-  
--   在 [!INCLUDE[win81](../debugger/includes/win81_md.md)]上运行的 Internet Explorer 11  
-  
--   在 [!INCLUDE[win8](../debugger/includes/win8_md.md)]上运行的 Internet Explorer 10  
-  
- 请前往 [此处](http://go.microsoft.com/fwlink/?LinkID=232448) 下载 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 和 Visual Studio。  
-  
 ## <a name="see-also"></a>请参阅  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)   
- [使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)   
- [查看 DOM 事件侦听器](../debugger/view-dom-event-listeners.md)   
  [刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [调试 WebView 控件](../debugger/debug-a-webview-control.md)   
  [键盘快捷键](../debugger/keyboard-shortcuts-html-and-javascript.md)   

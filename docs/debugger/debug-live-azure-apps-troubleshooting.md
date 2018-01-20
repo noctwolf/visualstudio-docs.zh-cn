@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>有关在 Visual Studio 中调试快照的疑难解答和已知问题
 
@@ -71,6 +71,17 @@ ms.lasthandoff: 01/05/2018
 - 特殊变量，如*$FUNCTION*或*$CALLER*，无法计算条件语句或 logpoints 对于 ASP.NET Core 项目中。
 - 快照调试不能在应用程序服务具有[本地缓存](/azure/app-service/app-service-local-cache)开启。
 - 当前不支持调试 API 应用程序的快照。
+
+## <a name="site-extension-upgrade"></a>站点扩展升级
+
+快照调试和 Application Insights 依赖于 ICorProfiler 也不能将加载到站点过程在升级过程中导致文件锁定问题。 我们建议使用此过程以确保没有为您的生产站点没有停机时间。
+
+- 创建[部署槽](/azure/app-service/web-sites-staged-publishing)App Service 中并将你的网站部署到槽。
+- 从 Visual Studio 中的云资源管理器或从 Azure 门户中交换槽与生产环境。
+- 停止槽站点。 这将需要几秒钟来关闭从所有实例的站点 w3wp.exe 进程终止。
+- 从 Kudu 站点或 Azure 门户中升级槽站点扩展 (*应用服务边栏选项卡 > 开发工具 > 扩展 > 更新*)。
+- 启动槽站点。 我们建议访问网站来再次预热。
+- 与生产槽交换。
 
 ## <a name="see-also"></a>请参阅
 

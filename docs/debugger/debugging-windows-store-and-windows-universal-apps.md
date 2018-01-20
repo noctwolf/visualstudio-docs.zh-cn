@@ -1,7 +1,7 @@
 ---
-title: "调试 UWP 和 Windows 8.1 应用 |Microsoft 文档"
+title: "调试 UWP 应用的 Visual Studio |Microsoft 文档"
 ms.custom: 
-ms.date: 07/18/2017
+ms.date: 01/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,22 +12,22 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: dd1723b7-4a43-47aa-9acf-d44afce78154
 caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6e6b144e3456f9ce2019c791f71f2d0b631fc883
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload: uwp
+ms.openlocfilehash: de37ef22b9b8ebe8dbcfde9abae4d2acaab2cc2d
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="debug-universal-windows-apps-uwp"></a>调试通用 Windows 应用 (UWP)
-Visual Studio 调试器提供的用于调试 UWP 和 Windows 8.1 应用的完整支持。  
+# <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>调试 Visual Studio 中的通用 Windows 应用 (UWP)
+
+Visual Studio 调试器提供了对调试 UWP 应用的完整支持。 
   
-若要调试 Windows Phone 8 应用程序，请参阅[调试 Windows Phone 8 应用](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx)。  
+若要调试 Windows 8.1 应用，请参阅[Visual Studio 中的调试应用商店应用](https://msdn.microsoft.com/en-us/library/hh441472.aspx)。 若要调试 Windows Phone 8 应用程序，请参阅[调试 Windows Phone 8 应用](https://msdn.microsoft.com/library/windows/apps/ff402572(v=vs.105).aspx)。  
   
 |||  
 |-|-|  
