@@ -26,11 +26,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 47047758d237bb652d5b8e447f8fc7b6e608148e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a9d9b9c5cee3dc69698320af77a7cc909b344a2d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 你可以更改的项目设置[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中的调试配置**属性页**窗口，如下所述[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示在何处可以找到中与调试器相关的设置**属性页**窗口。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 12/22/2017
 |设置|描述|  
 |-------------|-----------------|  
 |**配置**|设置编译应用程序的模式。 选择**活动 （调试）**，**调试**，**版本**，**所有配置**。|  
-|**启动操作**|这组控件指定在从“调试”菜单中选择“启动”时将发生的操作。<br /><br /> -   **启动项目**是默认值，用于启动启动项目以供调试。 有关详细信息，请参阅[NIB 如何： 设置启动项目](http://msdn.microsoft.com/en-us/31465836-0911-48db-a5d9-e456b635e970)。<br />-   **启动外部程序**使您能够启动和附加到不是程序的一部分[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目。 有关详细信息，请参阅[附加到运行进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。<br />-   **启动浏览器于 URL**使您能够调试 Web 应用程序。|  
+|**启动操作**|这组控件指定在从“调试”菜单中选择“启动”时将发生的操作。<br /><br /> -   **启动项目**是默认值，用于启动启动项目以供调试。 <br />-   **启动外部程序**使您能够启动和附加到不是程序的一部分[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目。 有关详细信息，请参阅[附加到运行进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。<br />-   **启动浏览器于 URL**使您能够调试 Web 应用程序。|  
 |**命令行参数**|指定要调试的程序的命令行自变量。 该命令名是在“启动外部程序”中指定的程序名。 如果“启动操作”设置为“启动 URL”，则忽略命令行自变量。|  
 |**工作目录**|指定被调试的程序的工作目录。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，工作目录就是启动应用程序所在的目录。 默认工作目录是 \bin\Debug 或 \bin\Release，具体取决于当前配置。|  
 |**使用远程计算机**|选中此复选框后，将启用远程调试。 在文本框中，你可以键入出于调试目的运行该应用程序的远程计算机的名称或[Msvsmon 服务器名称](../debugger/remote-debugging.md)。 该 EXE 在远程计算机上的位置是由“生成”选项卡中的“输出路径”属性指定的。此位置必须是远程计算机上的共享目录。|  

@@ -33,11 +33,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 46ea417ccd8b4dbecd0c6584699e9f2e98330d69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a53c03f1ab2c8680329f17bfa36a49b12062bff5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="cc-assertions"></a>C/C++ 断言
 断言语句指定您希望在程序中点应满足的条件。 如果该条件不为 true，则断言失败，程序的执行被中断，和[断言失败对话框](../debugger/assertion-failed-dialog-box.md)显示。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
 -   MFC 程序的 MFC 断言。  
   
--   [ATLASSERT](http://msdn.microsoft.com/Library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3)的程序的使用 atl。  
+-   [ATLASSERT](/cpp/atl/reference/debugging-and-error-reporting-macros#atlassert)的程序的使用 atl。  
   
 -   使用 C 运行时库的程序的 CRT 断言。  
   
@@ -95,7 +95,7 @@ ASSERT(nM++ > 0); // Don't do this!
   
 ```  
   
- 因为`ASSERT`程序，发行版中未计算表达式`nM`将在调试和发布版本具有不同的值。 若要避免此问题在 MFC 中的，可以使用[验证](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96)宏而不是`ASSERT`。  `VERIFY`在所有版本中的表达式的计算结果，但不会检查的版本中的结果。  
+ 因为`ASSERT`程序，发行版中未计算表达式`nM`将在调试和发布版本具有不同的值。 若要避免此问题在 MFC 中的，可以使用[验证](/cpp/mfc/reference/diagnostic-services#verify)宏而不是`ASSERT`。  `VERIFY`在所有版本中的表达式的计算结果，但不会检查的版本中的结果。  
   
  应特别小心断言语句中使用函数调用，因为计算函数可能会产生意外的副作用。  
   
@@ -165,7 +165,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
   
  如果 MFC 的自变量`ASSERT`宏计算结果为零或 false，宏会停止程序执行，通知用户; 否则，执行会继续运行。  
   
- 当一个断言失败时，消息对话框中显示的名称的源文件和断言的行号。 如果你在对话框中选择重试框中，调用[AfxDebugBreak](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30)会导致执行中断到调试器。 此时，你可以检查调用堆栈和其他调试器功能用于确定断言失败的原因。 如果已启用[中实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)，并且调试器已不在运行，该对话框可以启动调试器。  
+ 当一个断言失败时，消息对话框中显示的名称的源文件和断言的行号。 如果你在对话框中选择重试框中，调用[AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak)会导致执行中断到调试器。 此时，你可以检查调用堆栈和其他调试器功能用于确定断言失败的原因。 如果已启用[中实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)，并且调试器已不在运行，该对话框可以启动调试器。  
   
  下面的示例演示如何使用`ASSERT`要检查的函数的返回值：  
   
@@ -180,7 +180,7 @@ ASSERT(x >= 0);   //  Assertion fails if x is negative
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );  
 ```  
   
- `ASSERT`宏生成发行版中的任何代码。 如果你需要计算该表达式的发行版中，使用[验证](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96)宏而不是断言。  
+ `ASSERT`宏生成发行版中的任何代码。 如果你需要计算该表达式的发行版中，使用[验证](/cpp/mfc/reference/diagnostic-services#verify)宏而不是断言。  
   
 ###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a>MFC ASSERT_VALID 和 CObject::AssertValid  
  [CObject::AssertValid](/cpp/mfc/reference/cobject-class.md#CObject__AssertValid)方法提供了运行时检查的对象的内部状态。 尽管你无需重写`AssertValid`从您的类派生时`CObject`，你可以使您的类更可靠通过执行此操作。 `AssertValid`上的所有对象的成员变量，以验证它们包含有效的值，应都执行断言。 例如，它应检查指针成员变量不为 NULL。  

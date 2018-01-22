@@ -15,18 +15,18 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 007cf0508d2feedcf5f23898555f57b0fe0c908d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e029855ed34c227d1fe9d4d940f15995f65a2d30
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 元素（Visual Studio 模板）
 指定是否提示用户输入保存位置通过项目**新项目**对话框中创建项目时。 如果此元素设置为`true`，然后会提示用户输入保存位置; 如果`false`，然后将不再提示他们。 （即，创建一个临时项目。）  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<PromptForSaveOnCreation >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>语法  
   
@@ -57,7 +57,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="remarks"></a>备注  
  `PromptForSaveOnCreation` 是可选元素。 默认值为 `false`。  
   
- 临时项目是你可以创建和修改而不在磁盘上保存该项目的内容项目。 有关详细信息，请参阅[NIB 临时项目](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。  
+ 临时项目是你可以创建和修改而不在磁盘上保存该项目的内容项目。  
   
 ## <a name="example"></a>示例  
  下面的示例设置的值`PromptForSaveOnCreation`等于`false`，该选项指定允许为临时项目创建的项目。  

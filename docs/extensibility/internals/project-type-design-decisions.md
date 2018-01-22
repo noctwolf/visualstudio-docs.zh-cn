@@ -18,11 +18,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: ce1de0467e7e662fd0def096ef6adb042578f8b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a6649bd45aba299514b40e74b5683368bfd92b41
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="project-type-design-decisions"></a>项目类型的设计决策
 在创建新的项目类型之前，你必须进行一些设计决策，有关你的项目类型。 你必须决定要将哪些类型的项将包含你的项目、 如何将保持项目文件，以及哪些承诺模型。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 12/22/2017
   
  项目中的项可以是文件，或它们可以是 Internet 更抽象的对象，如数据库存储库或数据连接中的对象。 如果该项为文件，项目可以是基于引用的或基于目录的项目。  
   
- 在基于引用的项目中，项可以出现在多个项目。 但是，一项表示的实际文件位于仅限一个目录中。 在基于目录的项目中，所有项目项的目录结构中都存在。 有关详细信息，请参阅[NIB： 项管理项目中](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)。  
+ 在基于引用的项目中，项可以出现在多个项目。 但是，一项表示的实际文件位于仅限一个目录中。 在基于目录的项目中，所有项目项的目录结构中都存在。  
   
  本地项存储在其中安装应用程序的相同计算机上。 在本地网络中，单独服务器上或 Internet 上的其他地方，可以存储远程项。  
   
@@ -62,7 +62,6 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="see-also"></a>请参阅  
  [清单： 创建新项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB： 项管理项目中](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)   
  [项目持久性](../../extensibility/internals/project-persistence.md)   
  [项目模型的元素](../../extensibility/internals/elements-of-a-project-model.md)   

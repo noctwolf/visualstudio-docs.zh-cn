@@ -1,4 +1,5 @@
 ---
+redirect_url: shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file
 title: "通过使用修改独立的 Shell。Pkgdef 文件 |Microsoft 文档"
 ms.custom: 
 ms.date: 11/04/2016
@@ -13,8 +14,7 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 37c517792055c1d4a2026eef5171325622fec661
+ms.openlocfilehash: addeeaa294a81acce6558feb5257fee1344532f8
 ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
@@ -49,7 +49,7 @@ ms.lasthandoff: 01/22/2018
   
  你可以向.pkgdef 文件添加注释。 单行注释与前两个字符具有两个斜杠。  
   
- 替换字符串的列表，请参阅[中使用的替换字符串。Pkgdef 和。Pkgundef 文件](substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md)。  
+ 替换字符串的列表，请参阅[中使用的替换字符串。Pkgdef 和。Pkgundef 文件](../extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md)。  
   
  下列各节描述影响的行为的 Visual Studio shell 隔离模式的特定注册表值。 你还可以在此文件中定义应用程序的其他注册表的值。  
   
@@ -68,12 +68,12 @@ ms.lasthandoff: 01/22/2018
 |AppName|字符串|应用程序的名称。 名称出现在应用程序窗口的标题栏。<br /><br /> 默认值为应用程序解决方案文件的名称。|  
 |CommandLineLogo|字符串|在控制台窗口中运行应用程序时的横幅文本。 此设置会影响仅支持命令行生成操作的应用程序。<br /><br /> 默认值是"*companyName * * 解决方案名称*1.0 版。"，其中*companyName*是提供安装 Windows 时，该公司的名称和*solutionName*是应用程序解决方案文件的名称。|  
 |DefaultDebugEngine|字符串|默认值的 GUID 调试引擎以使用该应用程序。<br /><br /> 注意： 一个空的 GUID （全部为零） 指示应用程序未指定默认调试引擎。 这使调试器能够选择要使用的调试引擎。<br /><br /> 默认值为"{00000000-0000-0000-0000-000000000000}"。|  
-|DefaultHomePage|字符串|内部的 Web 浏览器窗口默认主页 URL。<br /><br /> 如果**主页**选项在应用程序，可用，则此设置还会影响选项的默认状态。 有关详细信息，请参阅[Web 浏览器中，环境中，选项对话框](../../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 默认值是安装 Windows 时提供的公司的 URL。|  
+|DefaultHomePage|字符串|内部的 Web 浏览器窗口默认主页 URL。<br /><br /> 如果**主页**选项在应用程序，可用，则此设置还会影响选项的默认状态。 有关详细信息，请参阅[Web 浏览器中，环境中，选项对话框](../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 默认值是安装 Windows 时提供的公司的 URL。|  
 |DefaultProjectsLocation|字符串|默认项目文件夹的完整路径。 例如，应用于对象的<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> 如果**Visual Studio 项目位置**选项在应用程序，可用，则此设置还会影响选项的默认状态。 <br /><br /> 默认值是"$MyDocuments$\\*solutionName*"，其中*solutionName*是应用程序解决方案文件的名称。|  
-|DefaultSearchPage|字符串|内部的 Web 浏览器窗口默认搜索页 URL。<br /><br /> 如果**搜索页**选项在应用程序，可用，则此设置还会影响选项的默认状态。 有关详细信息，请参阅[Web 浏览器中，环境中，选项对话框](../../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 默认值为"http://search.live.com"。|  
+|DefaultSearchPage|字符串|内部的 Web 浏览器窗口默认搜索页 URL。<br /><br /> 如果**搜索页**选项在应用程序，可用，则此设置还会影响选项的默认状态。 有关详细信息，请参阅[Web 浏览器中，环境中，选项对话框](../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 默认值为"http://search.live.com"。|  
 |DefaultUserFilesFolderRoot|字符串|用户文件夹，相对于当前用户的名称的我的文档文件夹。<br /><br /> 默认值为应用程序解决方案文件的名称。|  
 |DisableOutputWindow|dword|指示是否为已禁用，独立的 shell 应将输出窗口。<br /><br /> 如果此值设置为 true，Visual Studio 将不显示中的解决方案生成管理器输出**输出**窗口中，并隐藏**显示输出窗口在生成开始时**中的复选框**项目和解决方案**中的类别**选项**对话框。<br /><br /> 默认值为 False。|  
-|HideMiscellaneousFilesByDefault|dword|为 true，则隐藏**杂项文件**在默认情况下的文件夹**解决方案资源管理器**; 否则为 false。<br /><br /> 如果**在解决方案资源管理器中的显示杂项文件**选项在应用程序，可用，则此设置还会影响选项的默认状态。 有关详细信息，请参阅[文档，环境中，选项对话框](../../ide/reference/documents-environment-options-dialog-box.md)。<br /><br /> 默认值为 False。|  
+|HideMiscellaneousFilesByDefault|dword|为 true，则隐藏**杂项文件**在默认情况下的文件夹**解决方案资源管理器**; 否则为 false。<br /><br /> 如果**在解决方案资源管理器中的显示杂项文件**选项在应用程序，可用，则此设置还会影响选项的默认状态。 有关详细信息，请参阅[文档，环境中，选项对话框](../ide/reference/documents-environment-options-dialog-box.md)。<br /><br /> 默认值为 False。|  
 |HideSolutionConcept|dword|若要创建独立的项目的所有项目，并将解决方案和独立项目与解决方案相关的命令隐藏默认设置。否则为 false。<br /><br /> 如果**总是显示解决方案**选项在应用程序，可用，则此设置还会影响选项的默认状态。<br /><br /> 默认值为 False。|  
 |NewProjDlgInstalledTemplatesHdr|字符串|中的 Visual Studio nstalled 模板标头名称**模板**列入**新项目**对话框。 这是一个字符串，或者从应用程序 UI 包加载的可本地化的资源标识符。<br /><br /> 默认值是"*solutionName*已安装的模板"，其中*solutionName*是应用程序解决方案文件的名称。|  
 |NewProjDlgSlnTreeNodeTitle|字符串|名称**Visual Studio 解决方案**中的节点**项目类型**树**新项目**对话框。 这是一个字符串，或者从应用程序 UI 包加载的可本地化的资源标识符。<br /><br /> 默认值是"*solutionName*已安装的模板"，其中*solutionName*是应用程序解决方案文件的名称。|  
@@ -122,12 +122,12 @@ ms.lasthandoff: 01/22/2018
 ## <a name="package-menu-item-settings"></a>包菜单项设置  
  [$RootKey$ \Menus] 注册表项定义的应用程序的 UI 资源文件。  
   
- 菜单项值具有窗体"{*vsUiPackageGuid*}"="、 *resourceId*， *versionNumber*"，其中*vsUiPackageGuid*是的 GUID应用程序 UI 包， *resourceId*是包含用户界面元素中的 CTMENU 资源的资源标识符和*versionNumber*虚拟版本号为 CTMENU资源。 有关详细信息，请参阅[注册互操作程序集命令处理程序](../internals/registering-interop-assembly-command-handlers.md)。  
+ 菜单项值具有窗体"{*vsUiPackageGuid*}"="、 *resourceId*， *versionNumber*"，其中*vsUiPackageGuid*是的 GUID应用程序 UI 包， *resourceId*是包含用户界面元素中的 CTMENU 资源的资源标识符和*versionNumber*虚拟版本号为 CTMENU资源。 有关详细信息，请参阅[注册互操作程序集命令处理程序](../extensibility/internals/registering-interop-assembly-command-handlers.md)。  
   
  默认情况下，应用程序 UI 包的.pkgdef 文件中创建菜单项项。  
   
  每个包，它提供菜单项和，它不随应用程序的一部分，将添加为包的一个菜单项项。  
   
 ## <a name="see-also"></a>请参阅  
- [自定义独立的 Shell](customizing-the-isolated-shell.md)   
- [.Pkgundef 文件](modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
+ [自定义独立的 Shell](../extensibility/customizing-the-isolated-shell.md)   
+ [.Pkgundef 文件](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
