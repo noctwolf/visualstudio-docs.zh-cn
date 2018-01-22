@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a35010af9ee0b0d7ad885f607b8fc1e2d54a19ba
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新的项目生成： 实质上，第二部分
 在[新项目生成： 高级选项、 第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我们已了解如何**新项目**对话框框中填充。 假设你已选择**Visual C# Windows 应用程序**、 已填写**名称**和**位置**文本框中，并单击确定。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="generating-the-solution-files"></a>生成解决方案文件  
  选择应用程序模板将定向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]来解压缩和打开相应的.vstemplate 文件中，并启动一个模板来解释此文件中的 XML 命令。 这些命令创建新的或现有解决方案中的项目和项目项。  
   
- 模板解包源文件，请调用同一保存.vstemplate 文件的.zip 文件夹中的项模板。 该模板将这些文件复制到新项目中，相应地自定义它们。 项目和项模板的概述，请参阅[NIB: Visual Studio 模板](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)。  
+ 模板解包源文件，请调用同一保存.vstemplate 文件的.zip 文件夹中的项模板。 该模板将这些文件复制到新项目中，相应地自定义它们。  
   
 ### <a name="template-parameter-replacement"></a>模板参数替换  
  当模板复制到新项目项模板时，它用字符串以自定义文件中替换任何模板参数。 一个模板参数是一个特殊的令牌，例如跟美元符号，所以前面、 $date$。  

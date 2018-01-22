@@ -29,11 +29,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1c4acfcd6cf289eae8f8abc58f589b2743b56a40
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 调试方法
 如果要调试 MFC 程序，这些调试技术可能会有用。  
@@ -64,7 +64,7 @@ ms.lasthandoff: 12/22/2017
     -   [生成带有选定模块的调试信息的 MFC 应用程序](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- MFC 提供特殊的 [AfxDebugBreak](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) 函数，以供在源代码中对断点进行硬编码：  
+ MFC 提供特殊[AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak)硬编码中的断点源代码的函数：  
   
 ```  
 AfxDebugBreak( );  
@@ -149,7 +149,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     |-----------|-----------------|  
     |**allocMemDF**|打开诊断内存分配器（默认）。|  
     |**delayFreeMemDF**|在调用 `delete` 或 `free` 时延迟释放内存，直到程序退出。 这将使你的程序分配可能的最大内存量。|  
-    |**checkAlwaysMemDF**|每次分配或释放内存时均调用 [AfxCheckMemory](http://msdn.microsoft.com/Library/4644da71-7d14-41dc-adc0-ee9558fd7a28) 。|  
+    |**checkAlwaysMemDF**|调用[AfxCheckMemory](/cpp/mfc/reference/diagnostic-services#afxcheckmemory)每次分配或释放内存。|  
   
      可以通过执行逻辑 OR 操作来组合使用这些值，如下所示：  
   

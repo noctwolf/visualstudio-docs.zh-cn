@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5ea7b08c95aa2844a65a9a6783774fe32c9e8c50
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支持项目和配置属性
 **属性**中的窗口[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 可以显示项目和配置属性。 可以为你自己的项目类型提供属性页，以便用户可以设置你的应用程序的属性。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/22/2017
  托管包框架，用于项目 (MPFProj) 提供用于创建和管理新的项目系统的帮助器类。 你可找到源代码和编译说明[项目的 Visual Studio 2013 的 MPF](http://mpfproj12.codeplex.com/)。  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>项目和配置属性的持久性  
- 具有与项目类型，例如关联的文件扩展名、.csproj、.vbproj 和.myproj 项目文件中保留项目和配置属性。 语言项目通常使用的模板文件生成的项目文件。 但是，有实际多种项目类型和模板进行关联。 有关详细信息，请参阅[NIB: Visual Studio 模板](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)和[模板目录说明 (。Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
+ 项目和配置的属性保存在项目文件中包含任何与项目类型，例如关联的文件扩展名、.csproj、.vbproj 和.myproj。 语言项目通常使用的模板文件生成的项目文件。 但是，有实际多种项目类型和模板进行关联。 有关详细信息，请参阅[模板目录说明 (。Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
   
  通过将项添加到模板文件创建项目和配置属性。 然后，这些属性是可用于通过使用此模板的项目类型创建任何项目。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]项目和两个使用 MPFProj[不在生成： MSBuild 概述](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde)模板文件的架构。 这些文件具有每个配置一个 PropertyGroup 节。 配置参数设置为 null 的字符串的第一 PropertyGroup 节通常保留的项目的属性。  
   

@@ -13,11 +13,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 79022af292161d30440a01749ecc929ce7f3b511
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 269c19410207e47f233eadfa984a84a7c8445743
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="language-server-protocol"></a>语言服务器协议
 
@@ -39,11 +39,11 @@ ms.lasthandoff: 12/22/2017
 
 时间大致相同，Microsoft 开始使用 TypeScript 语言服务器，例如 Emacs 和 Sublime Text 的编辑器中支持 TypeScript 知道上。 在此实现中，编辑器通过 stdin/stdout 与 TypeScript 服务器进程通信，并且用于请求和响应的 JSON 负载启发而开发出由 V8 调试器协议。 TypeScript 服务器已经被集成到 TypeScript Sublime 插件和 VS 代码，以进行丰富 TypeScript 编辑。
 
-采用集成两个不同的语言服务器后, VS Code 团队开始浏览对于编辑器和 Ide 的一种通用语言服务器协议。 一种通用协议启用的语言提供程序，以创建单语言版服务器可由不同 Ide 使用。 语言服务器使用者只具有实现协议的客户端一次。 这会导致双赢情形语言提供程序和语言使用者。
+将集成两个不同的语言服务器后之后, VS Code 团队开始浏览对于编辑器和 Ide 的一种通用语言服务器协议。 一种通用协议启用的语言提供程序，以创建单语言版服务器可由不同 Ide 使用。 语言服务器使用者只具有实现协议的客户端一次。 这会导致双赢情形语言提供程序和语言使用者。
 
-开始使用 TypeScript 服务器使用的语言协议，很多个常规和非特定语言。 协议已具有用于灵感 VS Code 语言 API 的多语言功能。 这种协议本身支持 JSON rpc 由于其简单性和支持的库，针对许多编程语言的远程调用。
+语言服务器协议入门 TypeScript 服务器上，展开具有启发而开发出 VS Code 语言 API 的多语言功能使用的协议。 协议支持 JSON rpc 由于其简单性和现有的库的远程调用。
 
-VS Code 团队 dogfooded 通过实现多个 linter 语言服务器协议。 Linter 语言服务器响应链接形式 （扫描） 文件的请求，并返回一组的检测到的警告和错误。 目标是链接形式到一个文件作为在文档中，这意味着在编辑器会话期间，有许多 linting 请求的用户编辑。 若要使注册的服务器和运行，以便新的 linting 进程不需要为每个用户编辑启动道理。 多台 linter 服务器上实现，包括 VS Code ESLint 和 TSLint 扩展。 这两个 linter 服务器都同时在 TypeScript/JavaScript 中实现并在 Node.js 上运行。 它们共享的库，实现协议的客户端和服务器的一部分。
+在 VS 代码文件的团队原型通过实现多个 linter 语言服务器响应的协议要求传递到链接形式 （扫描），并返回一组的检测到的警告和错误。 目标是链接形式到一个文件作为在文档中，这意味着在编辑器会话期间，有许多 linting 请求的用户编辑。 若要使注册的服务器和运行，以便无需为每个用户编辑启动一个新的 linting 进程道理。 多台 linter 服务器上实现，包括 VS Code ESLint 和 TSLint 扩展。 这两个 linter 服务器都同时在 TypeScript/JavaScript 中实现并在 Node.js 上运行。 它们共享的库，实现协议的客户端和服务器的一部分。
 
 ## <a name="how-the-lsp-works"></a>LSP 的工作原理
 

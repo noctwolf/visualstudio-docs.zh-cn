@@ -14,16 +14,16 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26cf161259736dbd2b2e26279842571d62f69352
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="extending-properties"></a>扩展属性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **属性**时段 COM 和 COM + 组件的通用的属性浏览器，并且支持所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]产品。 **属性**窗口配合`ITypeInfo`类型信息和 COM + 元数据以列出在集成的开发环境 (IDE) 中的任何其他窗口中的当前所选对象的设计时属性。  
   
- **属性**窗口中，可以通过在键盘上，按 F4 或选择打开**属性窗口**上**视图**菜单上，用来查看和编辑独立于配置的设计时属性和所选对象的事件。 解决方案和项目，与关联的依赖于配置的属性显示在[属性页](../../extensibility/internals/property-pages.md)。 有关详细信息，请参阅[NIB： 项目属性](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50)，[管理配置选项](../../extensibility/internals/managing-configuration-options.md)，和[NIB： 项管理项目中](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)。  
+ **属性**窗口中，可以通过在键盘上，按 F4 或选择打开**属性窗口**上**视图**菜单上，用来查看和编辑独立于配置的设计时属性和所选对象的事件。 解决方案和项目，与关联的依赖于配置的属性显示在[属性页](../../extensibility/internals/property-pages.md)。 有关详细信息，[管理配置选项](../../extensibility/internals/managing-configuration-options.md)。  
   
  ![属性窗口概述](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 “属性”窗口  

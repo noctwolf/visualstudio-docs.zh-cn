@@ -14,11 +14,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6d9d468997d0e0f4cc913db1b9ac316f4e698f99
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 96d91fa687c914f0c3f98c4ddca64a93a5d70d02
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="wizards"></a>向导
 创建向导后，你通常想要将其添加到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE)，以便其他人可以用它。 添加的向导则出现在**添加新项目**或**添加新项**对话框。 若要查看**添加新项目**或**添加新项**对话框框中，右键单击打开的解决方案中**解决方案资源管理器**，指向**添加**，和然后单击**新项目**或**新项**。  
@@ -50,9 +50,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-sections"></a>相关章节  
  [项目类型](../../extensibility/internals/project-types.md)  
  提供的其他主题提供有关如何设计新的项目类型的信息的链接。  
-  
- [演练： 创建向导](http://msdn.microsoft.com/Library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
- 演示如何以创建向导。  
   
  [扩展项目](../../extensibility/extending-projects.md)  
  介绍如何使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]项目和解决方案来组织代码文件和资源文件，以及如何实现源代码管理。
