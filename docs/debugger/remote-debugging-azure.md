@@ -16,34 +16,36 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>在 IIS 和 Visual Studio 2017 在 Azure 上的远程调试 ASP.NET 核心
-Azure App Service 中，我们建议你使用调试[快照调试器](../debugger/debug-live-azure-applications.md)也可以按照本主题中的说明以从 Visual Studio 中附加调试器。 如果你正在 Windows Server 使用 IIS 的 Azure VM 上，你还可以将其设置为远程调试。 本指南说明如何设置和配置 Visual Studio 2017 ASP.NET Core 应用，将其部署到 IIS 使用 Azure，并从 Visual Studio 中附加远程调试器。
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 在 Azure 中的 IIS 上的远程调试 ASP.NET 核心
+
+本指南说明如何设置和配置 Visual Studio 2017 ASP.NET Core 应用，将其部署到 IIS 使用 Azure，并从 Visual Studio 中附加远程调试器。
+
+在 Azure 上的远程调试的推荐的方式取决于你的方案：
+
+* 若要调试在 Azure App Service 上的 ASP.NET 核心，请参阅[调试 Azure 应用程序使用快照调试器](../debugger/debug-live-azure-applications.md)。 这是建议的方法。
+* 若要调试 ASP.NET Core 上使用更加传统的调试功能的 Azure App Service，请按照本主题中的步骤 (请参阅明[在 Azure App Service 上进行远程调试](#remote_debug_azure_app_service))。
+
+    在此方案中，你必须部署到 Azure 从 Visual Studio 应用但不是需要手动安装或配置 IIS 或远程调试器 （这些组件使用虚线表示），如下面的插图中所示。
+
+    ![远程调试器组件](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+
+* 若要调试在 Azure VM 上的 IIS，请按照本主题中的步骤 (请参阅明[在 Azure VM 上进行远程调试](#remote_debug_azure_vm))。 此选项，可以使用自定义的配置的 IIS，但更复杂的安装和部署步骤。
+
+    对于 Azure VM，必须部署到 Azure 从 Visual Studio 应用，你还需要手动安装 IIS 角色和远程调试器下, 图中所示。
+
+    ![远程调试器组件](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+
+* 若要调试在 Azure Service Fabric 上的 ASP.NET 核心，请参阅[调试远程 Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。
 
 > [!WARNING]
 > 请务必删除时已完成本教程中的步骤创建 Azure 资源。 这样可以避免产生不必要的费用。
 
-本主题说明如何：
-
-* 远程调试在 Azure App Service 上的 ASP.NET 核心
-
-* 远程调试在 Azure VM 上的 ASP.NET 核心
-
-对 Azure App Service，你必须部署到 Azure 从 Visual Studio 应用但不是需要手动安装或配置 IIS 或远程调试器 （这些组件使用虚线表示），如下面的插图中所示。
-
-![远程调试器组件](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
-
-对于 Azure VM，必须部署到 Azure 从 Visual Studio 应用，你还需要手动安装 IIS 角色和远程调试器下, 图中所示。
-
-![远程调试器组件](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
-
-> [!NOTE]
-> 若要调试在 Azure Service Fabric 上的 ASP.NET 核心，请参阅[调试远程 Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。
 
 ### <a name="requirements"></a>惠?
 
@@ -61,11 +63,11 @@ Azure App Service 中，我们建议你使用调试[快照调试器](../debugger
 
 4. 打开 About.cshtml.cs 文件和中设置断点`OnGet`方法 (在以前的模板，打开 HomeController.cs 而是和中设置断点`About()`方法)。
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>在 Azure App Service 上的远程调试 ASP.NET 核心
+## <a name="remote_debug_azure_app_service"></a>在 Azure App Service 上的远程调试 ASP.NET 核心
 
 从 Visual Studio 中，可以快速发布和调试你的应用的完全设置的 IIS 实例。 但是，预设的 IIS 配置，并且你无法自定义它。 有关详细说明，请参阅[ASP.NET 核心 web 应用部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果需要自定义 IIS 的功能，请尝试调试[Azure VM](#BKMK_azure_vm)。) 
 
-#### <a name="to-deploy-the-app-and-remote-debug"></a>若要部署的应用程序和远程调试
+#### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>若要部署应用程序，并使用服务器资源管理器进行远程调试
 
 1. 在 Visual Studio 中，右键单击项目节点并选择**发布**。
 
@@ -73,7 +75,7 @@ Azure App Service 中，我们建议你使用调试[快照调试器](../debugger
 
     有关详细说明，请参阅[ASP.NET 核心 web 应用部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 
-3. 在**服务器资源管理器**、 App Service 实例上右键单击并选择**附加调试器**。
+3. 打开**服务器资源管理器**(**视图** > **服务器资源管理器**)，在 App Service 实例上右键单击，然后选择**附加调试器**.
 
 4. 在运行的 ASP.NET 应用程序，单击链接到**有关**页。
 
@@ -81,7 +83,7 @@ Azure App Service 中，我们建议你使用调试[快照调试器](../debugger
 
     就这么简单！ 本主题中的步骤的其余部分适用于 Azure VM 上的远程调试。
 
-## <a name="BKMK_azure_vm"></a>在 Azure VM 上的远程调试 ASP.NET 核心
+## <a name="remote_debug_azure_vm"></a>在 Azure VM 上的远程调试 ASP.NET 核心
 
 你可以创建一个 Azure VM 的 Windows 服务器，然后安装和配置 IIS 和其他所需的软件组件。 这比将部署到 Azure App Service 的更多时间，并要求你按照本教程中的剩余步骤。
 

@@ -14,20 +14,20 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: ebb3acfb9fcd49a682e888058b71adbd4119429a
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.openlocfilehash: 0b7f49708c00bd02fb8c74bc3ed6258d41729bf2
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visual-studio-data-tools-for-c"></a>适用于 c + + 的 visual Studio data tools
 
-你在访问数据源时，本机 c + + 通常可以提供最快的性能。 但是，不同样丰富，因为它是.NET 应用程序的工具，用于在 Visual Studio 中的 c + + 应用程序的数据。 例如，不能使用数据源窗口拖放到 c + + 设计图面上的数据源。 如果你需要对象关系图层，你将需要编写你自己，或使用第三方产品。  同样适用于数据绑定功能，尽管使用 Microsoft 基础类库的应用程序可以使用一些数据库类中的，文档和视图，以及在内存中存储数据并将其显示给用户。 有关详细信息，请参阅[Visual c + + 中的数据访问](/cpp/data/data-access-in-cpp)。  
-  
-若要连接到 SQL 数据库，本机 c + + 应用程序可以使用 ODBC 和 OLE DB 驱动程序和 Windows 附带的 ADO 提供程序。 这些可以连接到的所有数据库都支持这些接口。 ODBC 驱动程序是标准。 提供 OLE DB 是为了向后兼容。 这些数据技术的详细信息，请参阅[Windows 数据访问组件](https://msdn.microsoft.com/en-us/library/windows/desktop/aa968814.aspx)。  
-  
-利用 SQL Server 2005 中的自定义功能和更高版本，使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 本机客户端还包含 SQL Server ODBC 驱动程序以及一个本机动态链接库 (DLL) 中的 SQL Server OLE DB 提供程序。 这些支持使用本机代码 Api （ODBC、 OLE DB 和 ADO） 到 Microsoft SQL Server 的应用程序。  SQL Server Native Client 随同一起 SQL Server Data Tools 安装。 编程指南是此处： [SQL Server Native Client 编程](/sql/relational-databases/native-client/sql-server-native-client-programming)。  
-  
+你在访问数据源时，本机 c + + 通常可以提供最快的性能。 但是，不同样丰富，因为它是.NET 应用程序的工具，用于在 Visual Studio 中的 c + + 应用程序的数据。 例如，不能使用数据源窗口拖放到 c + + 设计图面上的数据源。 如果你需要对象关系图层，你将需要编写你自己，或使用第三方产品。  同样适用于数据绑定功能，尽管使用 Microsoft 基础类库的应用程序可以使用一些数据库类中的，文档和视图，以及在内存中存储数据并将其显示给用户。 有关详细信息，请参阅[Visual c + + 中的数据访问](/cpp/data/data-access-in-cpp)。
+
+若要连接到 SQL 数据库，本机 c + + 应用程序可以使用 ODBC 和 OLE DB 驱动程序和 Windows 附带的 ADO 提供程序。 这些可以连接到的所有数据库都支持这些接口。 ODBC 驱动程序是标准。 提供 OLE DB 是为了向后兼容。 这些数据技术的详细信息，请参阅[Windows 数据访问组件](https://msdn.microsoft.com/library/windows/desktop/aa968814.aspx)。
+
+利用 SQL Server 2005 中的自定义功能和更高版本，使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 本机客户端还包含 SQL Server ODBC 驱动程序以及一个本机动态链接库 (DLL) 中的 SQL Server OLE DB 提供程序。 这些支持使用本机代码 Api （ODBC、 OLE DB 和 ADO） 到 Microsoft SQL Server 的应用程序。  SQL Server Native Client 随同一起 SQL Server Data Tools 安装。 编程指南是此处： [SQL Server Native Client 编程](/sql/relational-databases/native-client/sql-server-native-client-programming)。
+
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>若要从 c + + 应用程序连接到 localDB 通过 ODBC 和 SQL Native Client  
   
 1.  安装 SQL Server Data Tools。  
@@ -42,14 +42,16 @@ ms.lasthandoff: 01/08/2018
   
      ![SSMS 附加数据库](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS 附加数据库")  
   
-4.  下载 ODBC Windows SDK 示例中，并将其解压缩到新位置。 此示例演示用于连接到数据库和问题查询和命令的基本 ODBC 命令。 你可以了解有关这些函数中[Microsoft 开放式数据库连接 (ODBC)](https://msdn.microsoft.com/en-us/library/windows/desktop/ms710252.aspx)。 当你首次加载的解决方案 （它是在 c + + 文件夹） 时，将提供 Visual Studio 升级到当前版本的 Visual Studio 的解决方案。 单击 **“是”**。  
+4.  下载 ODBC Windows SDK 示例中，并将其解压缩到新位置。 此示例演示用于连接到数据库和问题查询和命令的基本 ODBC 命令。 你可以了解有关这些函数中[Microsoft 开放式数据库连接 (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc)。 当你首次加载的解决方案 （它是在 c + + 文件夹） 时，将提供 Visual Studio 升级到当前版本的 Visual Studio 的解决方案。 单击 **“是”**。
   
-5.  若要使用的本机客户端，你需要其标头文件和 lib 文件。 这些文件包含函数和特定于 SQL Server，超出 sql.h 中定义的 ODBC 函数定义。 在**项目** > **属性** > **VC + + 目录**，添加以下包含目录：  
-  
- **\<系统驱动器 >: files\microsoft SQL Server\110\SDK\Include**和此库目录：  
-  
- **c:\Program Files\Microsoft SQL Server\110\SDK\Lib**  
-  
+5.  若要使用的本机客户端，你需要其标头文件和 lib 文件。 这些文件包含函数和特定于 SQL Server，超出 sql.h 中定义的 ODBC 函数定义。 在**项目** > **属性** > **VC + + 目录**，添加以下包含目录：
+
+**%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
+
+和此库目录：
+
+**%ProgramFiles%\Microsoft SQL Server\110\SDK\Lib**
+
 6.  将这些行添加 odbcsql.cpp 中。 #Define 阻止从正在编译的不相关 OLE DB 定义。  
   
     ```cpp

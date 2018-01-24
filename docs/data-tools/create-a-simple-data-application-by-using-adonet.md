@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: b1f6e8ed06f9f2355ac3a740319bb75924bf3d6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1525a858885bb7b824967712186f81e060f63519
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 在创建操作数据库中的数据的应用程序时，你可以执行基本任务，如定义连接字符串、 插入数据和运行存储的过程。 按照本主题，你可以了解如何通过使用 Visual C# 或 Visual Basic 和 ADO.NET 从一个简单的 Windows 窗体"forms over data"应用程序中的数据库与交互。  所有.NET 数据技术 — 包括数据集，LINQ to SQL，以及实体框架 — 最终执行非常类似于本文中所示的步骤。  
@@ -47,7 +47,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Visual Studio Community Edition。  
   
--   SQL Server Express LocalDB。 如果你没有 SQL Server Express LocalDB，你可以从中进行安装[SQL Server 版本的下载页](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)。  
+-   SQL Server Express LocalDB. 如果你没有 SQL Server Express LocalDB，你可以从中进行安装[SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)。
 
 本主题假定你熟悉 Visual Studio IDE 的基本功能并可以创建 Windows 窗体应用程序，将添加到项目中，将按钮和窗体上，其他控件的窗体设置属性的控件和简单事件进行编码。 如果你不熟悉这些任务，我们建议你完成[Getting Started with Visual C# 和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)之前在开始本演练的主题。  
   

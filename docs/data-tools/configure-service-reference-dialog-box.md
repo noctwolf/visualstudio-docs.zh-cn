@@ -18,20 +18,21 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: ce1419882422ddc12fdb380601e908eed7e5c7ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3b9ae8406845de886009da981eaf7f63e68972b
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="configure-service-reference-dialog-box"></a>“配置服务引用”对话框
-**配置服务引用**对话框中，您可以配置的行为[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]服务。  
-  
+
+**配置服务引用**对话框中，可以配置 Windows Communication Foundation (WCF) 服务的行为。
+
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
-  
- 访问**配置服务引用**对话框中，右击的服务引用中**解决方案资源管理器**选择**配置服务引用**。 此外可以通过单击访问对话框**高级**按钮**添加的服务引用对话框**。  
-  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+
+访问**配置服务引用**对话框中，右击的服务引用中**解决方案资源管理器**选择**配置服务引用**。 此外可以通过单击访问对话框**高级**按钮**添加的服务引用对话框**。
+
 ## <a name="task-list"></a>任务列表  
   
 -   若要更改承载 WCF 服务的地址，输入中的新地址**地址**字段。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/22/2017
 -   若要禁用类型共享，请清除**重新使用引用的程序集中的类型**复选框。 若要启用类型共享引用的程序集的子集，请选择**重新使用引用的程序集中的类型**复选框，选择**重新使用类型指定引用的程序集中**，然后选择所需在引用**引用的程序集列表**。  
   
 ## <a name="uielement-list"></a>UIElement 列表  
- **地址**  
+ **Address**  
  用于更新服务引用在其中查找服务的 Web 地址。 例如，在开发过程中服务可能承载在开发服务器上，之后又移到了生产服务器上，因而需要进行地址更改。  
   
 > [!NOTE]
@@ -86,16 +87,15 @@ ms.lasthandoff: 12/22/2017
  **引用的程序集列表**  
  包含一个列表，此列表针对项目或网站列出了引用的程序集。 当**重新使用类型指定引用的程序集中**选择时，可以选择或清除个别程序集。  
   
- **添加 Web 引用**  
- 显示[添加 Web 引用对话框](https://msdn.microsoft.com/en-us/library/8dcbc50t(v=vs.100).aspx)。  
-  
-> [!NOTE]
->  此选项只应该用于针对 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 版的项目。  
-  
-> [!NOTE]
->  **添加 Web 引用**按钮是时才可用**配置服务引用**对话框中将显示从**添加的服务引用对话框**。  
-  
-## <a name="see-also"></a>请参阅  
+ **添加 Web 引用**显示添加 Web 引用对话框。
 
- [如何： 添加对 Web 服务的引用](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/configure-service-reference-dialog-box.md)
+> [!NOTE]
+> 此选项只应该用于针对 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 版的项目。
+
+> [!NOTE]
+> **添加 Web 引用**按钮是时才可用**配置服务引用**对话框中将显示从**添加的服务引用对话框**。
+
+## <a name="see-also"></a>请参阅
+
+[如何： 添加对 Web 服务的引用](how-to-add-update-or-remove-a-wcf-data-service-reference.md)  
+[Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/configure-service-reference-dialog-box.md)

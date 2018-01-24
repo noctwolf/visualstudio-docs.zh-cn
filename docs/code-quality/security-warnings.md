@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f54a6dc2f47d10a47635a600d97decf3846e9d3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f2c72525b6101f14e9aac4365cc6af75b3083545
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="security-warnings"></a>安全警告
 安全警告支持更安全的库和应用程序。 这些警告帮助防止程序中出现安全漏洞。 如果你禁用其中的某个警告，你应当在代码中清楚标出原因，同时将你的开发项目通知指定的安全负责人。  
@@ -81,7 +81,7 @@ ms.lasthandoff: 12/22/2017
 |[CA2149：透明方法不得调入本机代码](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|对于直接调用到本机代码中（例如通过使用 P/Invoke）的任何透明方法，将引发此规则。 违反此规则会导致级别 2 透明度模型中的 MethodAccessException，以及级别 1 透明度模型中对 UnmanagedCode 的完全要求。|  
 |[CA2151：具有关键类型的字段应是安全关键的](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|若要使用安全关键类型，引用该类型的代码必须是安全关键或安全可靠关键。 即使引用是间接的，也需如此。 因此，具有安全透明字段或安全可靠关键字段具有误导性，因为透明代码仍然无法访问该字段。|  
 |[CA5122 P/Invoke 声明不应为安全关键](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|当方法执行安全敏感性操作时，将被标记为 SecuritySafeCritical，但透明代码使用它们也是安全的。 透明代码决不能通过通过 P/Invoke 直接调用本机代码。 因此，将 P/Invoke 标记为安全关键将使透明代码无法调用它，并且会误导安全分析。|  
-|[CA2153：避免处理损坏状态异常](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[损坏状态异常 (CSE)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) 指示进程中存在内存损坏。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。|  
+|[CA2153：避免处理损坏状态异常](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[损坏状态异常 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx)指示该内存损坏进程中存在。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。|  
 |[CA3075：不安全的 DTD 处理](../code-quality/ca3075-insecure-dtd-processing.md)|如果使用不安全的 DTDProcessing 实例或引用外部实体源，分析器可能会接受不受信任的输入并将敏感信息泄露给攻击者。|  
 |[CA3076：不安全的 XSLT 脚本执行](../code-quality/ca3076-insecure-xslt-script-execution.md)|如果在 .NET 应用程序中不安全地执行可扩展样式表语言转换 (XSLT)，处理器可能会解析不受信任的 URI 引用，这种引用会把敏感信息泄露给攻击者，从而导致拒绝服务和跨站点攻击。|  
 |[CA3077：API 设计、XML 文档和 XML 文本读取器中的不安全处理](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|当设计派生自 XMLDocument 和 XMLTextReader 的 API 时，请注意 DtdProcessing。  当引用或解析外部实体源或设置 XML 中的不安全值时，使用不安全的 DTDProcessing 实例可能会导致信息泄露。|
