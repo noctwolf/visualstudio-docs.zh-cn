@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 7704b8f4af9f6858e476f4075c6f38cda3052118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b93cacb9f64a4fbf0b6478feb922c74b35a3f7ea
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="pass-data-between-forms"></a>窗体之间传递数据
 本演练提供了有关将数据从一个窗体传递到另一个窗体的分步说明。 使用客户和订单表，从 Northwind，一种形式允许用户选择一个客户，并第二种形式显示所选的客户的订单。 本演练演示如何从第一个窗体接收数据的第二个窗体上创建的方法。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="prerequisites"></a>系统必备  
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。  
   
-1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server 版本的下载页](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**数据存储和处理**工作负荷，也可以作为单个组件。  
+1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**数据存储和处理**工作负荷，也可以作为单个组件。  
   
 2.  按照这些步骤来安装 Northwind 示例数据库：  
 

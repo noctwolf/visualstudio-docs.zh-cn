@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 94ce04f63870bb6ce9a40658c670c5b277cc675e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。
@@ -34,11 +34,13 @@ ms.lasthandoff: 01/19/2018
 
 |方案|链接|
 |-|-|-|
-|Azure|[调试在 Azure App Service （快照调试器） 上的 ASP.NET](../debugger/debug-live-azure-applications.md)，[远程调试在 Azure 上的 ASP.NET](../debugger/remote-debugging-azure.md)，或[调试 Azure Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
+|Azure 应用服务|[快照调试器](../debugger/debug-live-azure-applications.md)或[远程调试在 Azure 上的 ASP.NET](../debugger/remote-debugging-azure.md)|
+|Azure VM|[远程调试 Azure 上的 ASP.NET](../debugger/remote-debugging-azure.md)|
+|Azure Service Fabric|[调试 Azure Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[远程调试 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)或[远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |C# 或 Visual Basic|[远程调试 C# 或 Visual Basic 项目](../debugger/remote-debugging-csharp.md)|
 |C++|[远程调试 C++ 项目](../debugger/remote-debugging-cpp.md)|
-|通用 Windows 应用 (UWP)|[在远程计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)和[调试安装的应用包](../debugger/debug-installed-app-package.md)|
+|通用 Windows 应用 (UWP)|[在远程计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)或[调试安装的应用包](../debugger/debug-installed-app-package.md)|
 
 如果你只想要下载并安装远程调试器，并且不需要任何其他说明为你的方案，请按照本文中的步骤。
   

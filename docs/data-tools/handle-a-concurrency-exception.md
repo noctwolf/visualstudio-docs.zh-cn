@@ -23,11 +23,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 52243e28dbc35fbefb67fa1b52ce9fb6cdbda98d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71572ac38c7aed3154360d3bad9e4b84fe0107e3
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="handle-a-concurrency-exception"></a>处理并发异常
 并发异常 (<xref:System.Data.DBConcurrencyException>) 当两个用户尝试在同一时间更改数据库中的相同数据时引发。 在本演练中，你创建的 Windows 应用程序演示如何捕获<xref:System.Data.DBConcurrencyException>，找到，导致该错误的行并了解如何进行处理的策略。  
@@ -51,7 +51,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="prerequisites"></a>系统必备  
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。  
   
-1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server 版本的下载页](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**数据存储和处理**工作负荷，也可以作为单个组件。  
+1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**数据存储和处理**工作负荷，也可以作为单个组件。  
   
 2.  按照这些步骤来安装 Northwind 示例数据库：  
 

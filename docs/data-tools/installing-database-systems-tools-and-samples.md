@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: af76fad7d6288aff08de22b076d27cafbb5c3cff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8fbe818e233c8bbdaf4431c70b8962baf43a2ed2
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio 的兼容的数据库系统
 
@@ -29,13 +29,13 @@ ms.lasthandoff: 12/22/2017
 
 对于数据库系统，可从.NET 应用程序，并在 Visual Studio 数据工具窗口中均可见，它必须具有的 ADO.NET 数据提供程序。 如果你打算在.NET 应用程序中使用实体数据模型，一个提供程序必须专门支持实体框架。 通过 NuGet 包管理器或通过 Visual Studio 应用商店提供许多提供程序。
 
-如果你使用 Azure 存储 Api，安装 Azure 存储仿真程序在本地计算机上在开发过程才能避免产生费用，直到你准备好部署到生产环境。 有关详细信息，请参阅[使用 Azure 存储模拟器进行开发和测试](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/)。
+如果你使用 Azure 存储 Api，安装 Azure 存储仿真程序在本地计算机上在开发过程才能避免产生费用，直到你准备好部署到生产环境。 有关详细信息，请参阅[使用 Azure 存储模拟器进行开发和测试](/azure/storage/common/storage-use-emulator)。
 
 以下列表包含的一些更受欢迎的数据库系统，可以使用 Visual Studio 项目中。 列表并不详尽。 提供 ADO.NET 数据提供程序，Visual Studio 工具与深度集成的第三方供应商列表，请参阅[ADO.NET 数据提供程序](/dotnet/framework/data/adonet/data-providers)。
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
-SQL Server 是 Microsoft 旗舰数据库产品。 SQL Server 2016 提供了性能有所突破、 高级的安全和丰富、 集成的报告和分析。 中用于不同的用途设计的各种版本附带了它： 从高度可扩展、 高性能的业务分析，一台计算机上使用。 SQL Server Express 是适用于重新分发和嵌入的 SQL Server 的全功能版本。  LocalDB 是 SQL Server Express 不需要配置并运行应用程序的进程的简化的版本。 你可以下载中的一个或两个产品[SQL Server Express 下载页面](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)。 许多本部分中的 SQL 示例使用 SQL Server LocalDB。 SQL Server Management Studio (SSMS) 是一个独立的数据库管理应用程序具有更多的功能比 Visual Studio SQL Server 对象资源管理器中提供的内容。 你可以从的上一页链接获取 SSMS。
+SQL Server 是 Microsoft 旗舰数据库产品。 SQL Server 2016 提供了性能有所突破、 高级的安全和丰富、 集成的报告和分析。 中用于不同的用途设计的各种版本附带了它： 从高度可扩展、 高性能的业务分析，一台计算机上使用。 SQL Server Express 是适用于重新分发和嵌入的 SQL Server 的全功能版本。  LocalDB 是 SQL Server Express 不需要配置并运行应用程序的进程的简化的版本。 你可以下载中的一个或两个产品[SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)。 许多本部分中的 SQL 示例使用 SQL Server LocalDB。 SQL Server Management Studio (SSMS) 是一个独立的数据库管理应用程序具有更多的功能比 Visual Studio SQL Server 对象资源管理器中提供的内容。 你可以从的上一页链接获取 SSMS。
 
 ## <a name="oracle"></a>Oracle
 

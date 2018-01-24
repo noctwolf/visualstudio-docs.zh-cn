@@ -7,28 +7,28 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 418cc9cb-68ad-47e9-a6c8-a48b9c35db45
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 92fa57068a760fc8168fa46cf32a5660293b2e9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d46b1c9e87b0bf5b8c0b12cfe10ac4cd85a4741c
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153：避免处理损坏状态异常
+
 |||  
 |-|-|  
 |TypeName|AvoidHandlingCorruptedStateExceptions|  
 |CheckId|CA2153|  
 |类别|Microsoft.Security|  
 |是否重大更改|非重大更改|  
-  
-## <a name="cause"></a>原因  
- [损坏状态异常 (CSE)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) 指示进程中存在内存损坏。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。  
+
+## <a name="cause"></a>原因
+
+[损坏状态异常 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx)指示该内存损坏进程中存在。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。
   
 ## <a name="rule-description"></a>规则说明  
  CSE 指示进程状态已损坏且未被系统捕获。 在损坏状态的情况中，如果你将方法标记有适当的 `HandleProcessCorruptedStateExceptions` 特性，则常规的处理程序仅捕获异常。 默认情况下，[公共语言运行时 (CLR)](/dotnet/standard/clr)将不会为 Cse 调用 catch 处理程序。  

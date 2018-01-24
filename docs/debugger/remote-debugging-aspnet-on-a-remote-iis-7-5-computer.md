@@ -13,18 +13,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: aspnet
-ms.openlocfilehash: 35b8cd394881ba5bf075044d30aee17ab6a321c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6f11ec81c740a6930ce4eaef16d4e4e389aaca47
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 若要调试的 ASP.NET 应用程序部署到 IIS，安装和在计算机上运行远程工具其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
 
 ![远程调试器组件](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-本指南说明如何设置和配置 Visual Studio 2017 ASP.NET MVC 4.5.2 应用程序，将其部署到 IIS 中，并从 Visual Studio 中附加远程调试器。 ASP.NET 核心执行远程调试，请参阅[在 IIS 的计算机上的远程调试 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)。 你还可以部署和调试在 IIS 使用 Azure 上。 有关详细信息，请参阅[在 Azure 上进行远程调试](../debugger/remote-debugging-azure.md)。
+本指南说明如何设置和配置 Visual Studio 2017 ASP.NET MVC 4.5.2 应用程序，将其部署到 IIS 中，并从 Visual Studio 中附加远程调试器。 ASP.NET 核心执行远程调试，请参阅[在 IIS 的计算机上的远程调试 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)。 对 Azure App Service，你可以轻松部署和调试上 IIS 使用的预配置实例[快照调试器](../debugger/debug-live-azure-applications.md)(.NET 4.6.1 所需) 或通过[将调试器附加服务器资源管理器](../debugger/remote-debugging-azure.md)。
 
 这些过程已经过测试在这些服务器配置：
 * Windows Server 2012 R2 和 IIS 8 （对于 Windows Server 2008 R2 中，服务器步骤会有所不同，）
@@ -70,7 +70,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]
     > 如果你使用的 Windows Server 2008 R2，安装 ASP.NET 4 而不使用此命令：
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. 重新启动系统 (或执行**net 停止已 /y**跟**net 启动 w3svc**从命令提示符以拾取到系统路径的更改)。
 
@@ -147,7 +147,7 @@ ms.lasthandoff: 01/10/2018
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 年，你可以重新附加到你以前通过使用附加到的相同进程**调试 > 重新附加到进程...**(Shift + Alt + P)。 
+    > 在 Visual Studio 2017 年，你可以重新附加到你以前通过使用附加到的相同进程**调试 > 重新附加到进程...**(Shift+Alt+P). 
 
 3. 将限定符字段设置为**\<远程计算机名称 >: 4022**。
 4. 单击**刷新**。
