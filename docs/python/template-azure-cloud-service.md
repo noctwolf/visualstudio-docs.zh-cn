@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: e5bde434f3a5097f51f461aad5b02ae183e2204c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d14263c228cdbedc0f74acc20d81cfe58380812f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python 的 Azure 云服务项目
 
 Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
 
-[云服务](http://go.microsoft.com/fwlink/?LinkId=306052)包含任意数量的辅助角色和 Web 角色，每个角色执行概念上独立的任务，但可以根据缩放需要在虚拟机中单独复制。 Web 角色为前端 Web 应用程序提供托管。 在使用 Python 的情况下，任何支持 WSGI 的 Web 框架都可用于编写这样的应用程序 - 如同受 [Web 项目模板](template-web.md)支持一样。 辅助角色用于不直接与用户交互的长时间运行的进程。 它们通常使用[数据服务](http://go.microsoft.com/fwlink/?LinkId=401571)和[应用服务](http://go.microsoft.com/fwlink/?LinkId=401572)库，这些库可能通过 `pip install`&nbsp;[`azure`](http://pypi.org/project/azure) 进行安装。
+[云服务](http://go.microsoft.com/fwlink/?LinkId=306052)包含任意数量的辅助角色和 Web 角色，每个角色执行概念上独立的任务，但可以根据缩放需要在虚拟机中单独复制。 Web 角色为前端 Web 应用程序提供托管。 在使用 Python 的情况下，任何支持 WSGI 的 Web 框架都可用于编写这样的应用程序 - 如同受 [Web 项目模板](template-web.md)支持一样。 辅助角色用于不直接与用户交互的长时间运行的进程。 它们通常使用[数据服务](http://go.microsoft.com/fwlink/?LinkId=401571)和[应用服务](http://go.microsoft.com/fwlink/?LinkId=401572)库，这些库可能通过 [`pip install azure`](http://pypi.org/project/azure) 进行安装。
 
 本主题详细介绍 Visual Studio 2017 中的项目模板和其他支持（早期版本相似，但有一些差异）。 有关通过 Python 使用 Azure 的详细信息，请访问 [Azure Python 开发人员中心](http://go.microsoft.com/fwlink/?linkid=254360)。
 
@@ -80,7 +81,7 @@ Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
 
 发布过程包含两个阶段。 首先，Visual Studio 创建包含云服务的所有角色的单个包。 此包将部署到 Azure，为每个角色初始化一个或多个虚拟机，并部署源。
 
-在每个虚拟机激活时，执行 `ConfigureCloudService.ps1` 脚本，并安装所有依赖项。 此脚本默认安装 [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) 上最新版本的 Python，以及 `requirements.txt` 文件中指定的任何包。 
+在每个虚拟机激活时，执行 `ConfigureCloudService.ps1` 脚本，并安装所有依赖项。 此脚本默认安装 [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) 上最新版本的 Python，以及 `requirements.txt` 文件中指定的任何包。
 
 最后，辅助角色执行 `LaunchWorker.ps1`，从而开始运行 Python 脚本；Web 角色初始化 IIS，并开始处理 Web 请求。
 
@@ -90,7 +91,7 @@ Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
 
 请注意，云服务实例不包括 C 编译器，因此，具有 C 扩展名的所有库都必须提供预编译二进制文件。
 
-会自动下载 pip 及其依赖项，以及 `requirements.txt` 中的包，并且这些内容可能被计为付费的带宽使用。 有关管理 `requirements.txt` 文件的详细信息，请参阅[管理所需的包](python-environments.md#managing-required-packages)。
+会自动下载 pip 及其依赖项，以及 `requirements.txt` 中的包，并且这些内容可能被计为付费的带宽使用。 有关管理 `requirements.txt` 文件的详细信息，请参阅[管理所需的包](python-environments.md#managing-required-packages-requirementstxt)。
 
 ## <a name="troubleshooting"></a>疑难解答
 
@@ -98,9 +99,9 @@ Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
 
 - Python 项目（至少）包含具有以下内容的 bin\文件夹：
 
-    - `ConfigureCloudService.ps1`
-    - `LaunchWorker.ps1`（对于辅助角色）
-    - `ps.cmd`
+  - `ConfigureCloudService.ps1`
+  - `LaunchWorker.ps1`（对于辅助角色）
+  - `ps.cmd`
 
 - Python 项目包含列出所有依赖项的 `requirements.txt` 文件（或滚轮文件的集合）。
 - 在云服务上启用远程桌面，并调查日志文件。

@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c941b196897b7d3f7a815c50fc1e0a4817d3ed74
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
 
@@ -61,13 +61,13 @@ ms.lasthandoff: 01/05/2018
 
 ### <a name="extension-sdk-references"></a>扩展 SDK 引用
 
-Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以引用面向 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 的扩展 SDK，前提是这些扩展 SDK 不使用 Windows 10 中已弃用的 API。 请查看扩展 SDK 供应商站点，确定它是否可由 UWP 应用引用。
+Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以引用面向 Windows 8.1 的扩展 SDK，前提是这些扩展 SDK 不使用 Windows 10 中已弃用的 API。 请查看扩展 SDK 供应商站点，确定它是否可由 UWP 应用引用。
 
 如果确定你的应用所引用的扩展 SDK 不受支持，则需执行以下步骤：
 
-1. 查看导致错误的项目的名称。 项目所面向的平台记录在项目名称旁的括号中。 例如，“MyProjectName (Windows 8.1)”  表示项目 **MyProjectName** 面向平台版本 [!INCLUDE[win81](../debugger/includes/win81_md.md)]。
+1. 查看导致错误的项目的名称。 项目所面向的平台记录在项目名称旁的括号中。 例如，“MyProjectName (Windows 8.1)”  表示项目 MyProjectName 面向平台版本 Windows 8.1。
 
-2. 转到拥有不受支持的扩展 SDK 的供应商站点，安装具有与你的项目所面向的平台版本兼容的依赖项的扩展 SDK 版本。
+1. 转到拥有不受支持的扩展 SDK 的供应商站点，安装具有与你的项目所面向的平台版本兼容的依赖项的扩展 SDK 版本。
 
     > [!NOTE]
     > 查看“引用管理器”是一种了解某扩展 SDK 是否在其他扩展 SDK 上具有依赖关系的方法。 重启 Visual Studio，创建新的 C# UWP 应用项目，然后右键单击该项目并选择“添加引用”。 依次转到“Windows”选项卡、“扩展”子选项卡，选择该扩展 SDK。 查看“引用管理器”中的右窗格。 如果具有依赖关系，则将在该位置列出依赖关系。
@@ -75,13 +75,13 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以�
     > [!IMPORTANT]
     > 如果项目面向 Windows 10，并且上一步中安装的扩展 SDK 在 Microsoft Visual C 运行时包上具有依赖关系，则与 Windows 10 兼容的 Microsoft Visual C++ 运行时包的版本为 v14.0，并与 Visual Studio 一起安装。
 
-3. 如果上一步中安装的扩展 SDK 在其他扩展 SDK 上具有依赖关系，请转到拥有依赖关系的供应商站点，并安装与项目所面向的平台版本相兼容的版本的依赖项。
+1. 如果上一步中安装的扩展 SDK 在其他扩展 SDK 上具有依赖关系，请转到拥有依赖关系的供应商站点，并安装与项目所面向的平台版本相兼容的版本的依赖项。
 
-4. 重启 Visual Studio 并打开你的应用。
+1. 重启 Visual Studio 并打开你的应用。
 
-5. 右键单击项目中导致错误的“引用”节点，然后选择“添加引用”。
+1. 右键单击项目中导致错误的“引用”节点，然后选择“添加引用”。
 
-6. 依次单击“Windows”选项卡、“扩展”子选项卡，然后取消勾选旧扩展 SDK 的复选框，并勾选新扩展 SDK 的复选框。 单击 **“确定”**。
+1. 依次单击“Windows”选项卡、“扩展”子选项卡，然后取消勾选旧扩展 SDK 的复选框，并勾选新扩展 SDK 的复选框。 单击 **“确定”**。
 
 ## <a name="adding-a-reference-at-design-time"></a>在设计时添加引用
 

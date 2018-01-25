@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
 ms.workload: multiple
-ms.openlocfilehash: 614e8856fa8d4c674e40703448399265f2adc456
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67927715cc88373040d1820f70faaf70198388c1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="quickstart-coding-in-the-editor"></a>快速入门：在编辑器中编码
 
@@ -135,7 +135,7 @@ Visual Studio 提供了实用的代码片段，可快速方便地生成常用代
 
 ## <a name="refactoring-a-name"></a>重构名称
 
-没有谁能一次就得到正确的代码，代码中可能要更改的一项内容是变量或方法的名称。 我们来试试 Visual Studio 的[重构](../ide/refactoring-code-generation-quick-actions.md#refactoring)功能，将 `_words` 变量重命名为 `words`。
+没有谁能一次就得到正确的代码，代码中可能要更改的一项内容是变量或方法的名称。 我们来试试 Visual Studio 的[重构](../ide/refactoring-in-visual-studio.md)功能，将 `_words` 变量重命名为 `words`。
 
 1. 将光标置于 `words` 变量的定义上，然后从右键菜单或上下文菜单选择“重命名...”，或按 Ctrl+R，Ctrl+R。
 
@@ -161,5 +161,5 @@ Visual Studio 提供了实用的代码片段，可快速方便地生成常用代
 [代码片段](../ide/code-snippets.md)  
 [大纲显示](../ide/outlining.md)  
 [转到定义和速览定义](../ide/go-to-and-peek-definition.md)  
-[重构](../ide/refactoring-code-generation-quick-actions.md#refactoring)  
-[使用 IntelliSense](../ide/using-intellisense.md)  
+[重构](../ide/refactoring-in-visual-studio.md)  
+[使用 IntelliSense](../ide/using-intellisense.md)

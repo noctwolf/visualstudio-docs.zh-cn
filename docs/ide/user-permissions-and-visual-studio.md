@@ -18,19 +18,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3cf223b0b4d2f8ca710a5d5fdb349c7a423b1b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8062b6d37c675defeea369ebe8f8bf15fcbdd8ee
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
-出于安全目的，你应尽可能以普通用户的身份来运行 Visual Studio。  
+
+出于安全目的，你应尽可能以普通用户的身份来运行 Visual Studio。
 
 > [!WARNING]
->  你还应确保不要编译、启动或调试任何来自不受信任用户或地址的 Visual Studio 解决方案。  
+> 你还应确保不要编译、启动或调试任何来自不受信任用户或地址的 Visual Studio 解决方案。
 
- 作为普通用户，你可以在 Visual Studio IDE 中完成几乎所有操作，但你需要管理员权限才能完成以下任务：  
+作为普通用户，你可以在 Visual Studio IDE 中完成几乎所有操作，但你需要管理员权限才能完成以下任务：
 
 |区域|任务|更多相关信息|  
 |----------|----------|--------------------------|  
@@ -50,25 +51,21 @@ ms.lasthandoff: 12/22/2017
 |性能工具|分析应用程序。|[性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)|  
 |部署|在本地计算机上将 Web 应用程序部署到 Internet Information Services (IIS)。|[使用 Visual Studio 或 Visual Web Developer 将 ASP.NET Web 应用程序部署到承载提供程序：作为测试环境部署到 IIS](http://go.microsoft.com/fwlink/?LinkId=266478)|
 
-## <a name="running-visual-studio-as-an-administrator"></a>以管理员身份运行 Visual Studio  
- 每次启动 IDE 时，可利用管理权限启动 Visual Studio，或可以修改应用程序快捷方式以便始终利用管理权限运行。 有关详细信息，请参阅 Windows 帮助。  
+## <a name="running-visual-studio-as-an-administrator"></a>以管理员身份运行 Visual Studio
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd"></a>在 [!INCLUDE[win8](../debugger/includes/win8_md.md)]、[!INCLUDE[win81](../debugger/includes/win81_md.md)]、[!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] 或 [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]上利用管理权限运行 Visual Studio  
+每次启动 IDE 时，可利用管理权限启动 Visual Studio，或可以修改应用程序快捷方式以便始终利用管理权限运行。 有关详细信息，请参阅 Windows 帮助。
 
-1.  在“开始”屏幕上，键入“Visual Studio”。 你应会看到你所安装的一个或多个 Visual Studio 版本。  
+### <a name="to-run-visual-studio-with-administrative-permissions"></a>使用管理权限运行 Visual Studio
 
-2.  选择要启动的 Visual Studio 版本，然后调出快捷菜单（显示在屏幕底部）。 选择 **“以管理员身份运行”**。  
+这些说明适用于Windows 10。 它们与其他版本的 Windows 类似。
 
-     Visual Studio 启动时，标题栏的产品名后显示“(管理员)”。  
+1. 打开“开始”菜单，并滚动到 Visual Studio 2017。
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd"></a>在 [!INCLUDE[win7](../debugger/includes/win7_md.md)] 或 [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] 上利用管理权限运行 Visual Studio  
+1. 从右键菜单或从 Visual Studio 2017 的上下文菜单中，依次选择“更多” > “以管理员身份运行”。
 
-1.  在“开始”菜单上，选择“所有程序”。  
+     Visual Studio 启动时，标题栏的产品名后显示“(管理员)”。
 
-2.  在 **Microsoft Visual Studio** 版本文件夹中，选择 **Visual Studio** 版本，打开快捷菜单，然后选择“以管理员身份运行”。  
+## <a name="see-also"></a>请参阅
 
-     Visual Studio 启动时，标题栏的产品名后显示“(管理员)”。  
-
-## <a name="see-also"></a>请参阅  
- [移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
- [安装 Visual Studio](../install/install-visual-studio.md)
+[移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+[安装 Visual Studio](../install/install-visual-studio.md)

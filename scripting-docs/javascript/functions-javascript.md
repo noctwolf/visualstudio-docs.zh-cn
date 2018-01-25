@@ -18,11 +18,11 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd5626af6417b5f0010545874bd15c86b30a303a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7275985d07f9f564dac98ba39e5ec31618dcaac4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="functions-javascript"></a>函数 (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 函数执行操作，还可返回值。 有时返回的是计算或比较的结果。 函数也称为“全局方法”。  
@@ -232,7 +232,7 @@ console.log(f(3, 3, 3));
   
 <a name="Rest"></a>   
 ## <a name="rest-parameters"></a>Rest 参数  
- 通过由展开运算符 () 指定的 Rest 形参，可以将函数调用中的连续实参转换为数组。  
+ 通过由展开运算符 `...` 指定的 Rest 形参，可以将函数调用中的连续实参转换为数组。  
   
  Rest 参数使不再需要 `arguments` 对象。 Rest 参数与 `arguments` 对象有几个方面的区别，例如：  
   
@@ -260,5 +260,5 @@ console.log(f(3, "hello", true));
   
  有关展开运算符的其他用法，请参阅[展开运算符](../javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [JavaScript 语言参考](../javascript/javascript-language-reference.md)

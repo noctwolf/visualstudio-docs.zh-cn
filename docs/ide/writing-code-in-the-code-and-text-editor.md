@@ -63,11 +63,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bde177cb8f9ec8e72a331c785addfa7fead64dc7
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>在代码编辑器中编写代码
 Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写和管理代码和文本。 可通过使用大纲显示来展开和折叠不同的代码块。 可通过使用 IntelliSense、“对象浏览器”以及调用层次结构，了解有关代码的详细信息。 可使用“转到”、“转到定义”和“查找所有引用”等功能查找代码。 可以将插入代码块和代码片段，并且可以通过“使用时生成” 等功能生成代码。 如果之前从未用过 Visual Studio 编辑器，请参阅[编辑代码](https://www.visualstudio.com/features/ide-vs)进行快速概览。  
@@ -130,9 +130,10 @@ Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写
 ## <a name="customize-the-editor"></a>自定义编辑器  
 可以与其他开发者共享 Visual Studio 设置，可以让自己的设置符合某一标准，也可以使用“工具”菜单上的“导入和导出设置向导”命令恢复 Visual Studio 默认设置。 在“导入和导出设置向导”中，可以更改选定常规设置或语言以及项目专属设置。
 
-若要定义新热键或重新定义现有热键，请依次转到“工具”、“选项”、“环境”和“键盘”。 有关热键的详细信息，请参阅[默认键盘快捷键](../ide/default-keyboard-shortcuts-in-visual-studio.md)。  
+若要定义新热键或重新定义现有热键，请依次转到“工具”、“选项”、“环境”和“键盘”。 有关热键的详细信息，请参阅[默认键盘快捷键](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
-若要详细了解如何自定义编辑器，请参阅[自定义编辑器](../ide/customizing-the-editor.md)。 若要了解语言专用编辑器选项，请参阅[将 Visual Studio 开发环境用于 C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) 和[选项、文本编辑器、JavaScript、格式](../ide/reference/options-text-editor-javascript-formatting.md)。
+若要详细了解如何自定义编辑器，请参阅[自定义编辑器](../ide/customizing-the-editor.md)。 有关特定于 JavaScript 的编辑器选项，请参阅[选项、文本编辑器、JavaScript、格式设置](../ide/reference/options-text-editor-javascript-formatting.md)。
 
-## <a name="see-also"></a>请参阅  
- [Visual Studio IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>请参阅
+
+[Visual Studio IDE](../ide/visual-studio-ide.md)
