@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76b88d48b78ebab2058a2fa13feef327908f2b24
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>演练：创建多计算机生成环境
 
@@ -29,7 +29,6 @@ ms.lasthandoff: 12/22/2017
 本文档未授予在外部重新分布软件或向第三方提供生成环境的权利。  
   
 > 免责声明<br /><br /> 本文档“按原样”提供。 虽然我们已测试概述的步骤，但无法全面彻底地测试每一个配置。 我们将尝试保持文档与了解到的任何其他信息保持最新。 本文档中表达的信息和观点（包括 URL 和其他 Internet 网站引用）如有更改，恕不另行通知。 Microsoft 对此处提供的信息不提供任何明示或暗示的保证。 您自行承担其使用风险。<br /><br /> 本文档未向您提供任何 Microsoft 产品中任何知识产权的任何合法权利。 您可为了内部参考目的复制和使用本文档。<br /><br /> 您没有义务为 Microsoft 提供有关本文档的任何建议、评论或其他反馈（以下简称“反馈”）。 但是，可能在 Microsoft 产品和相关规范或其他文档（统称为“Microsoft 服务内容”）中使用您自愿提供的任何反馈，其他第三方可能反过来依赖这些内容来开发其自己的产品。 因此，如果您为 Microsoft 提供有关本文档任何形式或有关其适用于的 Microsoft 服务内容的反馈，则您同意：(a) Microsoft 可自由使用、重现、许可、分发您的反馈以及以其他方式使您的反馈在任何 Microsoft 服务内容中商业化；(b) 您还免费授予第三方权利，仅限于支持其他产品与吸收了您的反馈的 Microsoft 产品的任何特定部分结合使用或交互所需的专利权；以及 (c) 您不会向 Microsoft 提供任何符合下列条件的反馈 (i) 您有理由认为受任何第三方的任何专利、版权或其他知识产权或声明约束；或 (ii) 受追求需要任何 Microsoft 服务内容吸收或派生自此类反馈的许可条款、或要授予许可或以其他方式与任何第三方共享的其他 Microsoft 知识产权约束。
-
 
 已通过在命令行上执行 MSBuild 和通过使用 Team Foundation Build 对下列操作系统验证了此演练。  
   
@@ -47,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
  多计算机环境不能用于生成下列类型的应用程序：  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用。 若要生成 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用，您必须在生成计算机上安装 Visual Studio。  
+-   UWP 应用。 若要生成 UWP 应用，必须在生成计算机上安装 Visual Studio。  
   
 -   面向 .NET Framework 4 或更早版本的桌面应用程序。 若要生成这些类型的应用程序，您必须在生成计算机上安装 Visual Studio 或 .NET 引用程序集和工具（通过 Windows 7.1 SDK）。  
   
@@ -290,8 +289,8 @@ ms.lasthandoff: 12/22/2017
     |Vcvarsall.bat 参数|编译器|生成计算机体系结构|生成输出体系结构|  
     |----------------------------|--------------|---------------------------------|-------------------------------|  
     |x86（默认）|32 位本机|x86、x64|x86|  
-    |x86_amd64|x64 兼容|x86、x64|x64|  
-    |amd64|x64 本机|x64|X64|  
+    |x86_amd64|x64 兼容|x86、x64|X64|  
+    |amd64|x64 本机|X64|X64|  
   
      如果 vcvarsall.bat 运行成功（即，不显示任何错误消息），可以跳过下一步，继续执行本文的[将 MSBuild 程序集安装到生成计算机上的全局程序集缓存 (GAC) 中](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)部分中的步骤。  
   

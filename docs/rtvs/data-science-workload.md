@@ -15,15 +15,15 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: c757f67efb26d1ca9e029447b044d9b6c6ea8a65
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c83a24cbcbe13047ef103f86c8bd81fee1506c2d
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>数据科学和分析应用程序工作负载
 
-Visual Studio 中的数据科学和分析应用程序工作负载汇集了三种语言及其各自的运行时分发版本：
+Visual Studio 安装程序中显示的数据科学和分析应用程序工作负载汇集了三种语言及其各自的运行时分发版本：
 
 - [R 和 Microsoft R Client](../rtvs/index.md)
 - [Python 和 Anaconda](../python/python-in-visual-studio.md)

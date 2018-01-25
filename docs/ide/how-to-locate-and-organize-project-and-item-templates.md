@@ -16,19 +16,31 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 167ffa269ea8051a4791000d96a86cb5788af60d
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c58bda5570be9cdb7fba7a8f90a282df7b7167a2
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：查找和组织项目和项模板
 
-必须将模板文件放置在 Visual Studio 能识别的位置，以使模板出现在“新建项目”和“添加新项”对话框中。 可为将出现在对话框中的模板创建自定义子类别。
+必须将模板文件放置在 Visual Studio 能识别的位置，以使模板出现在“新建项目”和“添加新项”对话框中。 还可以在用户模板位置创建自定义子类别，类别显示在“新建项目”和“添加新项”对话框中。
 
-## <a name="locating-templates"></a>查找模板
+## <a name="locate-templates"></a>查找模板
 
-已安装的模板和用户模板存储在两个不同位置。 如果这两个位置存在包含 .vstemplate 文件的压缩文件，则“新建项目”或“添加新项”对话框中将显示该模板。
+已安装的模板和用户模板存储在两个不同位置。
+
+### <a name="user-templates"></a>用户模板
+
+如果将包含 .vstemplate 文件的压缩 (.zip) 文件添加到用户模板目录，则“新建项目”或“添加新项”对话框中将显示该模板。 默认情况下，用户模板位于：
+
+- %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates
+
+- %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates
+
+例如，以下目录包含用于 C# 的用户项目模板：
+
+   C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\
 
 > [!TIP]
 > 可在“工具” > “选项” > “项目和解决方案” > “位置”中为用户模板设置位置。
@@ -45,38 +57,14 @@ ms.lasthandoff: 01/05/2018
 
    C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
 
-### <a name="user-templates"></a>用户模板
+## <a name="organize-templates"></a>组织模板
 
-默认情况下，用户模板位于：
-
-- %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates
-
-- %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates
-
-例如，以下目录包含用于 C# 的用户项目模板：
-
-   C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\
-
-> [!NOTE]
-> 用户模板位置不包括已本地化的模板的区域设置子目录。
-
-可在“项目和解决方案” > “位置”下的“选项”对话框中更改用户模板的默认目录。
-
-## <a name="organizing-templates"></a>组织模板
-
-“新建项目”和“添加新项”对话框中的类别反映存在于已安装模板位置和用户模板位置的目录结构。 可以修改这些目录结构，以需要的方式组织模板。
+“新建项目”和“添加新项”对话框中的类别反映存在于已安装模板位置和用户模板位置的目录结构。 通过向用户模板目录添加新文件夹，可将用户模板组织到其各自的类别中。 “新建项目”和“添加新项”对话框将反映出对用户模板类别所做的任何更改。
 
 > [!NOTE]
 > 不能在编程语言级别创建新类别。 只能在每种语言中创建新类别。
 
-> [!NOTE]
-> 如果特定语言的已安装模板和用户模板的目录结构不相同（即一个文件夹下有目录，另一个没有），则所有类别都显示在“新建项目”对话框中。
-
-### <a name="organizing-user-templates"></a>组织用户模板
-
-通过在用户模板位置添加新文件夹，可将用户模板组织到其类别中。 “新建项目”对话框将反映出对模板类别所做的任何更改。
-
-#### <a name="to-create-new-user-project-template-categories"></a>若要创建新的用户项目模板类别
+### <a name="to-create-new-user-project-template-categories"></a>若要创建新的用户项目模板类别
 
 1. 在用户项目模板目录中的编程语言文件夹中创建一个文件夹。 例如，要为 C# 项目模板创建“HelloWorld”类别，请创建以下目录：
 
@@ -88,7 +76,7 @@ ms.lasthandoff: 01/05/2018
 
    “HelloWorld”类别出现在“已安装” > “Visual C#”下的“新建项目”对话框中。
 
-#### <a name="to-create-new-user-item-template-categories"></a>若要创建新的用户项模板类别
+### <a name="to-create-new-user-item-template-categories"></a>若要创建新的用户项模板类别
 
 1. 在用户项模板目录中的编程语言文件夹中创建一个文件夹。 例如，要为 C# 项模板创建“HelloWorld”类别，请创建以下目录：
 
@@ -100,7 +88,7 @@ ms.lasthandoff: 01/05/2018
 
    “HelloWorld”类别出现在“已安装” > “Visual C# 项”下的“添加新项”对话框中。
 
-### <a name="displaying-templates-in-parent-categories"></a>在父类别中显示模板
+### <a name="display-templates-in-parent-categories"></a>在父类别中显示模板
 
 可以通过使用 .vstemplate 文件中的 `NumberOfParentCategoriesToRollUp` 元素允许子类别中的模板显示在其父类别中。 对于项目模板和项模板，操作步骤相同。
 

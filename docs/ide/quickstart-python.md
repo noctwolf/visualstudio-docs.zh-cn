@@ -1,5 +1,6 @@
 ---
 title: "快速入门：使用 Visual Studio 创建第一个 Python Web 应用 | Microsoft Docs"
+description: "关于在 Visual Studio 中使用 Python（其将使用 Falcon 框架构建一个简单的 Web 应用）的简介。"
 ms.custom: 
 ms.date: 01/08/2018
 ms.reviewer: 
@@ -12,12 +13,14 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 dev_langs: python
-ms.workload: python
-ms.openlocfilehash: 226f673dbd305f9dabf759cb11c6537a2f3ba637
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>快速入门：使用 Visual Studio 创建第一个 Python Web 应用
 
@@ -67,7 +70,7 @@ Python 中的 Web 应用几乎总是使用众多可用 Python 库中的一个来
 
 有关 Falcon 的详细信息，请访问 [falconframework.org](https://falconframework.org/)。
 
-请注意，开发人员通常会创建一个“虚拟环境”用于安装特定项目的库，而不是在全局环境中安装库。 Visual Studio 中的许多 Python 项目模板都包含 `requirements.txt` 文件，该文件列出了模板所依赖的库。 从其中一个模板创建项目会触发创建用于安装库的虚拟环境。 有关详细信息，请参阅 [Python 环境 - 虚拟环境](../python/python-environments.md#virtual-environments)。
+请注意，开发人员通常会创建一个“虚拟环境”用于安装特定项目的库，而不是在全局环境中安装库。 Visual Studio 中的许多 Python 项目模板都包含 `requirements.txt` 文件，该文件列出了模板所依赖的库。 从其中一个模板创建项目会触发创建用于安装库的虚拟环境。 有关详细信息，请参阅 [Python 环境 - 虚拟环境](../python/python-environments.md#creating-virtual-environments)。
 
 ## <a name="add-a-code-file"></a>添加代码文件
 
