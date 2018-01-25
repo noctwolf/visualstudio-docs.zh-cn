@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d14263c228cdbedc0f74acc20d81cfe58380812f
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: b33c96844abc9bbf4cc7bcd403626980e0bf37a5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python 的 Azure 云服务项目
 
@@ -91,7 +91,7 @@ Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
 
 请注意，云服务实例不包括 C 编译器，因此，具有 C 扩展名的所有库都必须提供预编译二进制文件。
 
-会自动下载 pip 及其依赖项，以及 `requirements.txt` 中的包，并且这些内容可能被计为付费的带宽使用。 有关管理 `requirements.txt` 文件的详细信息，请参阅[管理所需的包](python-environments.md#managing-required-packages-requirementstxt)。
+会自动下载 pip 及其依赖项，以及 `requirements.txt` 中的包，并且这些内容可能被计为付费的带宽使用。 有关管理 `requirements.txt` 文件的详细信息，请参阅[管理所需的包](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt)。
 
 ## <a name="troubleshooting"></a>疑难解答
 

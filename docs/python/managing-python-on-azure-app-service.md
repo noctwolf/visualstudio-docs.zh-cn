@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>在 Azure App Service 上管理 Python
 
@@ -200,7 +200,7 @@ HttpPlatform 模块将套接字连接直接传递到独立的 Python 进程。 �
     建议使用 `requirements.txt`，因为这样可以轻松在本地和服务器上重新生成完全相同的包集。 只需记住在对 `requirements.txt` 进行任何更改后再访问控制台，然后再次运行该命令。
 
 > [!Note]
-> 应用服务上没有 C 编译器，因此需要为任何包含本机扩展模块的包安装该系统。 许多常用包本身附带滚轮。 对于不附带滚轮的包，请在本地开发计算机上使用 `pip wheel <package_name>`，然后将滚轮上传到站点。 有关示例，请参阅[管理所需的包](python-environments.md#managing-required-packages-requirementstxt)。
+> 应用服务上没有 C 编译器，因此需要为任何包含本机扩展模块的包安装该系统。 许多常用包本身附带滚轮。 对于不附带滚轮的包，请在本地开发计算机上使用 `pip wheel <package_name>`，然后将滚轮上传到站点。 有关示例，请参阅[管理所需的包](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt)。
 
 ### <a name="kudu-rest-api"></a>Kudu REST API
 
