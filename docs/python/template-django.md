@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 753c3d78ff3da45213ea7cb9625d765e564a88e1
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: b9a6c3240075107edfc5109fa6c62aaf6c23d92b
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="django-web-project-template"></a>Django Web 项目模板
 
@@ -45,7 +45,7 @@ Visual Studio 还为 Django 项目提供完整的[调试支持](debugging.md)：
 
 ![断点](media/template-django-debugging.png)
 
-Django 项目一般通过其 `manage.py` 文件管理，Visual Studio 会遵循此假设。 如果停止将该文件用作入口点，则实质上是中断了项目文件。 在这种情况下，需要[从现有文件重新创建项目](python-projects.md#creating-a-project-from-existing-files)，不将其标记为 Django 项目。
+Django 项目一般通过其 `manage.py` 文件管理，Visual Studio 会遵循此假设。 如果停止将该文件用作入口点，则实质上是中断了项目文件。 在这种情况下，需要[从现有文件重新创建项目](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files)，不将其标记为 Django 项目。
 
 ## <a name="django-management-console"></a>Django 管理控制台
 

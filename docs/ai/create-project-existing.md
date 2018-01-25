@@ -24,8 +24,8 @@
 8. 如果需要，可按 Ctrl+F5 或选择“调试”>“开始执行(不调试)”运行程序。 
 
 > [!div class="nextstepaction"]
-> [教程：在 Visual Studio 中使用 Python](https://docs.microsoft.com/visualstudio/python/vs-tutorial-01-00)
+> [教程：在 Visual Studio 中使用 Python](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [为现有 Python 解释器创建环境](https://docs.microsoft.com/visualstudio/python/python-environments#creating-an-environment-for-an-existing-interpreter)

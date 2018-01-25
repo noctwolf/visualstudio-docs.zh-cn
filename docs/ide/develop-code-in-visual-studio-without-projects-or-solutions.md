@@ -7,41 +7,32 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.texteditor
 dev_langs:
 - JScript
 - VB
 - CSharp
 helpviewer_keywords:
-- code, editing
-- code editor, syntax coloring
-- code editor [Visual Studio]
-- brace matching
-- code editor, line numbers
-- code editor, brace matching
-- line numbers
-- syntax coloring
-- code editor
-- code files
-- code
-ms.assetid: cb53bb9b-5b76-4759-b9b8-7bf32298bcbb
-caps.latest.revision: "44"
+- open folder [Visual Studio]
+- anycode [Visual Studio]
+- projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 252f09a8a2322bca4f94b9d631ca2c6da6b14824
+ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/18/2018
 ---
-# <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中开发代码而无需创建项目或解决方案  
+# <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中开发代码而无需创建项目或解决方案
+
 在 Visual Studio 2017 中，你可以在 Visual Studio 中打开几乎任何类型的基于目录的项目的代码，而无需创建解决方案或者项目文件。 这意味着（例如，在 Git 上找到一个代码项目时）可以克隆该项目，然后在 Visual Studio 中直接打开并开始开发，而无需创建解决方案或项目。  
 
 不仅可以在 Visual Studio 中编辑并生成代码，还能在代码中导航（例如通过 Navigate To 命令）。 代码带有语法着色，许多情况下还含有基本的语句完成和调试以及断点。 有些语言甚至会包含更多的功能。 请参阅[创建可移植的自定义编辑器设置](create-portable-custom-editor-options.md)，了解详细信息。  
 
-## <a name="open-code-anywhere"></a>在任意位置打开代码  
+## <a name="open-code-anywhere"></a>在任意位置打开代码
+
 可以通过以下方式，在 Visual Studio 中打开代码：  
 
 - 在 Visual Studio 菜单栏上，依次选择“文件”**、**“打开”**、**“文件夹”，然后浏览到代码位置。  
@@ -52,7 +43,8 @@ ms.lasthandoff: 01/05/2018
 
 - 打开从 GitHub 存储库中克隆的代码。  
 
-### <a name="to-open-code-from-a-cloned-github-repo"></a>打开克隆的 GitHub 存储库中的代码  
+### <a name="to-open-code-from-a-cloned-github-repo"></a>打开克隆的 GitHub 存储库中的代码
+
 以下示例演示如何克隆 GitHub 存储库，并在 Visual Studio 中打开其代码。 若要执行此过程，必须具有 GitHub 帐户，并且已经在系统上安装了适用于 Windows 的 Git。 请参阅[注册新的 GitHub 帐户](https://help.github.com/articles/signing-up-for-a-new-github-account/)和[适用于 Windows 的 Git](https://git-for-windows.github.io/) 了解详细信息。  
 
 1. 转到要在 GitHub 上克隆的存储库。  
@@ -88,7 +80,8 @@ ms.lasthandoff: 01/05/2018
 |---------|---------|
 |  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看视频](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171)，了解如何从 Visual Studio 中的 GitHub 存储库克隆并打开代码。 |
 
-## <a name="debug-your-code"></a>调试代码  
+## <a name="debug-your-code"></a>调试代码
+
 不通过项目或解决方案即可在 Visual Studio 中调试代码。 对某些语言进行调试时，可能需要在代码项目中指定一个有效的*启动文件*，例如脚本、可执行文件或项目。 调试代码时，Visual Studio 会首先运行此指定代码。  
 
 工具栏上“开始”按钮旁的下拉列表框中列出了 Visual Studio 检测到的所有启动项，以及你在文件夹中专门选择的项。  
@@ -107,31 +100,36 @@ Visual Studio 目前支持对下列语言进行调试：
 
 - 所有带有 PDB（Python 调试器）的可执行文件。  
 
-### <a name="to-debug-nodejs-and-python"></a>调试 Node.js 和 Python：  
+### <a name="to-debug-nodejs-and-python"></a>调试 Node.js 和 Python：
+
 1. 安装 Node.js 或 Python 工具或 Visual Studio 2017 和 Node.js 运行时。  
 
 1. 在解决方案资源管理器中的 JavaScript 文件的上下文菜单上，选择“设置为启动项”命令。  
 
 1. 选择 F5 键开始调试。  
 
-### <a name="to-debug-msbuild-projects"></a>调试 MSBuild 项目  
+### <a name="to-debug-msbuild-projects"></a>调试 MSBuild 项目
+
 1. 在 Visual Studio 菜单上，选择“调试”。 在下拉菜单上，选择该项目，或者选择想要在解决方案资源管理器中显示为启动项的项目或文件。  
 
 1. 选择 F5 键开始调试。  
 
-### <a name="to-debug-executable-files"></a>调试可执行文件  
+### <a name="to-debug-executable-files"></a>调试可执行文件
+
 1. 在 Visual Studio 菜单上，选择“调试”。 在下拉菜单上，选择该项目，或者选择想要在解决方案资源管理器中显示为启动项的项目或文件。  
 
 1. 选择 F5 键开始调试。  
 
 ## <a name="enable-custom-build-tools"></a>启用自定义生成工具
+
 Visual Studio 可以运行多种语言，但它不能运行所有语言。 如果 Visual Studio 可运行你的语言，你可以立即开始运行代码。 如果 Visual Studio 无法运行你尝试运行的代码，信息栏会提示你指定基本代码中的某个文件作为启动项。  
 
 如果基本代码使用 Visual Studio 无法识别的自定义生成工具，则在完成一些附加步骤前，可能无法在 Visual Studio 中运行和调试代码。 必须指定一个有效的可执行文件类型（如编译器）以及语言所需的任何自定义形式参数和实际参数。 为此，Visual Studio 提供生成任务。 可以通过创建生成任务来指定语言生成和运行此代码所需的所有项。  
 
 还可以通过创建任意的生成任务来执行你所需的几乎所有操作。 例如，可以创建一个任务来列出文件夹的内容或者重命名文件。 也可以创建针对性更强的自定义生成任务，例如使用特定自变量来编译和生成项目。 以下步骤演示了如何创建两种类型的生成任务。  
 
-#### <a name="to-create-an-arbitrary-build-task"></a>创建任意的生成任务  
+#### <a name="to-create-an-arbitrary-build-task"></a>创建任意的生成任务
+
 1. 在解决方案资源管理器中，选择要创建任务的项目的文件或文件夹，在文件或文件夹的上下文（右键单击）菜单上，选择“配置任务”。  
 
   ![配置任务](./media/VSIDE_Code_Config_Task.png)
@@ -166,6 +164,7 @@ Visual Studio 可以运行多种语言，但它不能运行所有语言。 如�
 1. 通过选择新的“列出输出”命令来执行该任务。  
 
 ### <a name="to-create-a-custom-build-task"></a>创建自定义生成任务
+
 在此过程中，我们将添加两个自定义生成任务，这两个任务使用 nMake 来生成和清除代码。  
 
 1. 在解决方案资源管理器中，选择项目文件，我们之后会将该文件指定为启动项。 在该文件的上下文（右键单击）菜单上，选择“配置任务”。  
@@ -222,15 +221,17 @@ Visual Studio 可以运行多种语言，但它不能运行所有语言。 如�
 
 除了环境变量（例如 `$env.var`）或键外，Visual Studio 还支持 tasks.vs.json 根目录中的 VSCode `$variable` 替换。  
 
-## <a name="specify-build-output"></a>指定生成输出  
+## <a name="specify-build-output"></a>指定生成输出
+
 如果需要对项目进行编译，可以在 tasks.vs.json 文件中添加名为 `output` 的额外标记。 这是一个示例。  
 
 `"output": "${workspaceRoot}\\bin\\hellomake.exe"`
 
 通过指定输出位置，可向 Visual Studio 指示项目生成输出的位置。  
 
-## <a name="tasksvsjson-file-location"></a>Tasks.vs.json 文件位置  
-默认情况下，tasks.vs.json 文件位于一个名为 `.vs` 的隐藏文件夹中。 若要在 Visual Studio 中查看隐藏文件夹，请在解决方案资源管理器工具栏上选择“显示所有文件”按钮。  
+## <a name="tasksvsjson-file-location"></a>Tasks.vs.json 文件位置
+
+默认情况下，tasks.vs.json 文件位于一个名为 `.vs` 的隐藏文件夹中。 若要在 Visual Studio 中查看隐藏文件夹，请在解决方案资源管理器工具栏上选择“显示所有文件”按钮。
 
 ![任意生成任务命令](./media/VSIDE_Code_Tasks_FileLocation.png)
 
@@ -239,4 +240,5 @@ tasks.vs.json 文件通常是隐藏状态，因为一般情况下大多数用户
 .vs 文件夹中可能存在其他 .json 文件，但唯一需要移动的文件是 tasks.vs.json 文件和 launch.vs.json 文件（如果存在）。 launch.vs.json 文件用于配置 Visual Studio 调试器，而 tasks.vs.json 文件用于配置 Visual Studio 中的生成。  
 
 ## <a name="see-also"></a>请参阅
+
 [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)

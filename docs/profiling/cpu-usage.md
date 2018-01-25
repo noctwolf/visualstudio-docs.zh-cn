@@ -13,16 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: eabbb315d03a6ba69d80d46276b0b6dff5846693
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cfe16da805ec8a43af8bed0c7e112e589d060bc4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 的使用量
 如需调查应用中的性能问题，最好从了解其使用 CPU 的方式开始。 **CPU 使用率** 工具可显示 CPU 耗用时间执行 Visual C++、Visual C#/Visual Basic 和 JavaScript 代码的位置。 从 Visual Studio 2015 Update 1 开始，不离开调试器即可查看每个函数的 CPU 使用率细目。 可以在调试时打开和关闭 CPU 分析，并在停止执行时（例如在断点处）查看结果。  
   
-有多个选项可用于运行和管理诊断会话。 例如，你可以在本地或远程计算机上或在模拟器或仿真程序中运行“CPU 使用率”  工具。 可以分析在 Visual Studio（附加在运行的应用上）中打开的项目的性能，或启动从 Microsoft 官方商城安装的应用。 有关详细信息，请参阅[使用或不使用调试器运行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 有关分析 UWP 应用性能的演练，请参阅[分析通用 Windows 应用 (UWP) 中的 CPU 使用率](analyze-cpu-usage-in-a-windows-universal-app.md)。 
+有多个选项可用于运行和管理诊断会话。 例如，你可以在本地或远程计算机上或在模拟器或仿真程序中运行“CPU 使用率”  工具。 可以分析在 Visual Studio（附加在运行的应用上）中打开的项目的性能，或启动从 Microsoft 官方商城安装的应用。 有关详细信息，请参阅[使用或不使用调试器运行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 
 在这里，我们将向你演示如何使用发行版本收集和分析 CPU 使用率。 若要在调试时分析 CPU 使用率，请参阅[性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)。 
   

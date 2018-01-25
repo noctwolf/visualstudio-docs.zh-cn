@@ -13,11 +13,11 @@ ms.author: tglee
 manager: ghogen
 dev_langs: vb
 ms.workload: multiple
-ms.openlocfilehash: 1ceda9e53426255331c85996b54378a91324a3fa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Visual Studio 中的 Visual Basic 入门
 在本 Visual Basic (VB) 教程中，将使用 Visual Studio 创建和运行几个不同的控制台应用，并在执行这些操作时研究 Visual Studio [集成开发环境 (IDE)](visual-studio-ide.md) 的某些功能。
@@ -82,11 +82,11 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
      Console.ReadKey(True)
     ```
 
-    此代码将替换现有 [Console.WriteLine](/dotnet/api/system.console.writeline?view=netframework-4.7.1)、[Console.Write](/dotnet/api/system.console.write?view=netframework-4.7.1) 和 [Console.ReadKey]() 语句。
+    此代码替换现有的 <xref:System.Console.WriteLine%2A>、<xref:System.Console.Write%2A> 和 <xref:System.Console.ReadKey%2A> 语句。
 
  ![显示“What Is Your Name”代码的代码窗口](../ide/media/vb-codewindow-what-name.png)
 
-3. 控制台窗口打开时，输入名字。 控制台窗口应如以下屏幕快照所示：       
+3. 控制台窗口打开时，输入名字。 控制台窗口应如以下屏幕快照所示：
 
    ![显示“What Is Your Name”、时间和日期以及“按任意键继续”消息的控制台窗口](../ide/media/vb-console-what-name.png)
 

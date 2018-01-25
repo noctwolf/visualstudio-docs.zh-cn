@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 620e847b9da1e8becf2df66d070a290071248d84
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 509d8b001ff00f754df8cec0cc08194dbfc2ff3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>为 Python 代码设置单元测试
 
@@ -35,7 +35,7 @@ Python 单元测试广泛应用于在程序设计期间验证方案。 针对 Vi
 
 根据惯例，Visual Studio 将测试标识为名称以“`test`”开头的方法。 若要查看此行为，请执行以下操作：
 
-1. 打开一个 Visual Studio 中加载的 [Python 项目](python-projects.md)，右键单击该项目，选择“添加”>“新建项目...”，然后选择其后有“添加”的“Python 单元测试”。
+1. 打开一个 Visual Studio 中加载的 [Python 项目](managing-python-projects-in-visual-studio.md)，右键单击该项目，选择“添加”>“新建项目...”，然后选择其后有“添加”的“Python 单元测试”。
 
 1. 如果直接运行脚本，此操作将创建具有导入标准 `unittest` 模块的代码的 `test1.py` 文件，从 `unittest.TestCase` 派生一个测试类，并调用 `unittest.main()`：
 
@@ -92,7 +92,7 @@ Python 单元测试广泛应用于在程序设计期间验证方案。 针对 Vi
 
 ![调试测试](media/unit-test-debugging.png)
 
-还可使用“分析所选测试的代码覆盖率”和“配置文件测试”命令，具体取决于 Visual Studio 版本（请参阅[功能矩阵](python-in-visual-studio.md#features-matrix)）。
+还可使用“分析所选测试的代码覆盖率”和“配置文件测试”命令，具体取决于 Visual Studio 版本（请参阅[功能矩阵](overview-of-python-tools-for-visual-studio.md#features-matrix)）。
 
 ### <a name="known-issues"></a>已知问题
 

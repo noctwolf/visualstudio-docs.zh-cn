@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0a866796ac9a4fb76c9f0ef8370d8c19217b8ee7
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: dfe00af70cdbfbe9c583d15fc5431dc7a85d8276
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入门：从 Cookiecutter 模板创建项目
 
-[在 Visual Studio 2017 中安装 Python 支持](installation.md)后，就可以从 Cookiecutter 模板轻松创建新项目，其中包括许多发布到 GitHub 的模板。 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) 可提供图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 Cookiecutter 在 Visual Studio 2017 中随附，在 Visual Studio 早期版本中可单独安装。
+[在 Visual Studio 2017 中安装 Python 支持](installing-python-support-in-visual-studio.md)后，就可以从 Cookiecutter 模板轻松创建新项目，其中包括许多发布到 GitHub 的模板。 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) 可提供图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 Cookiecutter 在 Visual Studio 2017 中随附，在 Visual Studio 早期版本中可单独安装。
 
 1. 在本快速入门教程中，首先安装 Anaconda3 Python 分发版本，其中包括此处所示的 Cookiecutter 模板必需的 Python 程序包。 运行 Visual Studio 安装程序，选择“修改”，展开右侧的“Python 开发”选项，选择“Anaconda3”（32 位或 64 位均可）。 请注意，安装可能需要一些时间，具体取决于 Internet 速度，但这是安装所需程序包最简单的方法。
 
@@ -48,11 +48,11 @@ ms.lasthandoff: 01/12/2018
 ## <a name="next-steps"></a>后续步骤
 
 > [!div class="nextstepaction"]
-> [教程：在 Visual Studio 中使用 Python](vs-tutorial-01-01.md)
+> [教程：在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>请参阅
 
 - [使用 Cookiecutter 扩展](cookiecutter.md)
-- [为现有 Python 解释器创建环境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
-- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installation.md)。
-- [安装位置](installation.md#install-locations)。
+- [为现有 Python 解释器创建环境](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)。
+- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)。
+- [安装位置](installing-python-support-in-visual-studio.md#install-locations)。

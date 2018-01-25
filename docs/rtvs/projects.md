@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f77630af8cf31e1e5b18cdf06fd5642c83a17a9
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>在 Visual Studio 中创建 R 项目
 
@@ -119,6 +119,6 @@ Visual Studio 解决方案可以在一个逻辑位置方便地收集和管理相
 以粗体突出显示的项目是解决方案的“启动”项目；若要进行更改，请右键单击其他项目，然后选择“设置为启动项目”。
 
 > [!Note]
-> 目前，没有任何明确可用的 R 与 C#/C++ 语言的集成（但有针对 Python 的集成，请参阅[创建适用于 Python 的 C++ 扩展](../python/cpp-and-python.md)）。  但有一些库可以为 R 提供 C# 和 C++ 桥接。
+> 目前，没有任何明确可用的 R 与 C#/C++ 语言的集成（但有针对 Python 的集成，请参阅[创建适用于 Python 的 C++ 扩展](../python/working-with-c-cpp-python-in-visual-studio.md)）。  但有一些库可以为 R 提供 C# 和 C++ 桥接。
 
 有关通常管理项目和解决方案的详细信息，请参阅 [Visual Studio 中的解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)。

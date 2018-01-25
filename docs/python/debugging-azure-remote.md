@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0cac283dacb0f63005f67dc279087726de26772
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 2703b526dd0823afa678dbe57eb6cf45e57b6da6
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>在 Azure 上远程调试 Python 代码
 
-[Visual Studio 中的 Python 支持](installation.md)包括远程调试在 Azure 应用服务上运行的 Python 代码的功能。 与简单的远程调试不同，此方案中的目标计算机不能直接通过 TCP 访问，因此 Visual Studio 提供一个通过 HTTP 公开调试器协议的代理。 使用 Web 模板创建的项目在生成的 `web.debug.config` 文件中自动配置此代理。 如 [发布到 Azure 应用服务](template-web.md#publishing-to-azure-app-service)中所述发布项目的调试配置时，同时启用了远程调试。
+[Visual Studio 中的 Python 支持](installing-python-support-in-visual-studio.md)包括远程调试在 Azure 应用服务上运行的 Python 代码的功能。 与简单的远程调试不同，此方案中的目标计算机不能直接通过 TCP 访问，因此 Visual Studio 提供一个通过 HTTP 公开调试器协议的代理。 使用 Web 模板创建的项目在生成的 `web.debug.config` 文件中自动配置此代理。 如 [发布到 Azure 应用服务](template-web.md#publishing-to-azure-app-service)中所述发布项目的调试配置时，同时启用了远程调试。
 
 由于 Azure 远程调试使用 Web 套接字，因此必须通过 [Azure 门户](https://portal.azure.com)为应用服务启用套接字，方法是转到“设置”>“应用程序设置”并将“常规设置”>“Web 套接字”切换为“打开”，然后选择“保存”应用更改。 （请注意，“调试”设置不适用于调试 Python。）
 

@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66f99665fc9d580a3c0c366fa2922ea6a15e0e7c
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 74be5c65cbb4b2498f9904c6e021c774400bfbf8
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入门：在 Visual Studio 中克隆 Python 代码存储库
 
-[在 Visual Studio 2017 中安装 Python 支持](installation.md)后，就可以轻松地克隆 Python 代码存储库并从中创建项目。
+[在 Visual Studio 2017 中安装 Python 支持](installing-python-support-in-visual-studio.md)后，就可以轻松地克隆 Python 代码存储库并从中创建项目。
 
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
 
@@ -71,15 +71,15 @@ ms.lasthandoff: 01/12/2018
 14. 再次运行程序，确保第一次检查顺利通过，程序在下一个 koan 处停止。 继续更正错误，然后根据需要重新运行程序。
 
 > [!Important]
-> 在本快速入门教程中，创建了对 GitHub 上 *python_koans* 存储库的直接克隆。 此类存储库的作者会对其设置保护，不允许直接更改，因此尝试将更改提交到存储库会失败。 在实际操作中，开发者会将此类存储库分叉到自己的 GitHub 帐户，在那里进行更改后，再创建拉取请求将这些更改提交到原始存储库。 [教程步骤 6：使用 Git](vs-tutorial-01-06.md) 介绍了这些步骤。
+> 在本快速入门教程中，创建了对 GitHub 上 *python_koans* 存储库的直接克隆。 此类存储库的作者会对其设置保护，不允许直接更改，因此尝试将更改提交到存储库会失败。 在实际操作中，开发者会将此类存储库分叉到自己的 GitHub 帐户，在那里进行更改后，再创建拉取请求将这些更改提交到原始存储库。 [教程步骤 6：使用 Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md) 介绍了这些步骤。
 
 ## <a name="next-steps"></a>后续步骤
 
 > [!div class="nextstepaction"]
-> [教程：在 Visual Studio 中使用 Python](vs-tutorial-01-01.md)
+> [教程：在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>请参阅
 
-- [为现有 Python 解释器创建环境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
-- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installation.md)。
-- [安装位置](installation.md#install-locations)。
+- [为现有 Python 解释器创建环境](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)。
+- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)。
+- [安装位置](installing-python-support-in-visual-studio.md#install-locations)。
