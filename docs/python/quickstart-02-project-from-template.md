@@ -15,19 +15,19 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 87fdca001430acc1ecef7e69b9afc2123dedafd0
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 4cc18515fd0fa2c24eb38e78f7be315e865f94d0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入门：从 Visual Studio 中的模板创建 Python 项目
 
-[在 Visual Studio 2017 中安装 Python 支持](installation.md)后，就可以使用各种模板轻松创建新的 Python 项目。
+[在 Visual Studio 2017 中安装 Python 支持](installing-python-support-in-visual-studio.md)后，就可以使用各种模板轻松创建新的 Python 项目。
 
 1. 启动 Visual Studio。
 
-1. 选择“文件”>“新建”>“项目”(Ctrl+Shift+N)。 在“新建项目”对话框中，搜索“Python”，然后选择所需的模板。 请注意，选择模板时会显示模板提供内容的简短说明。 （另请参阅 [Python 项目](python-projects.md#project-templates)。）
+1. 选择“文件”>“新建”>“项目”(Ctrl+Shift+N)。 在“新建项目”对话框中，搜索“Python”，然后选择所需的模板。 请注意，选择模板时会显示模板提供内容的简短说明。 （另请参阅 [Python 项目](managing-python-projects-in-visual-studio.md#project-templates)。）
 
     ![显示 Python 模板的 VS2017“新建项目”对话框](media/projects-new-project-dialog2.png)
 
@@ -87,10 +87,10 @@ ms.lasthandoff: 01/12/2018
 ## <a name="next-steps"></a>后续步骤
 
 > [!div class="nextstepaction"]
-> [教程：在 Visual Studio 中使用 Python](vs-tutorial-01-01.md)
+> [教程：在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>请参阅
 
-- [为现有 Python 解释器创建环境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
-- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installation.md)。
-- [安装位置](installation.md#install-locations)。
+- [为现有 Python 解释器创建环境](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)。
+- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)。
+- [安装位置](installing-python-support-in-visual-studio.md#install-locations)。

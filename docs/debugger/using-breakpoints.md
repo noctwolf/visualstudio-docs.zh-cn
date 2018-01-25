@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 也许你会为了查看代码变量的状态或查看调用堆栈而想要停止调试程序执行，此时，你可以设置断点。 在开发人员的工具箱中，它们是最重要的调试技术之一。  
@@ -160,6 +160,9 @@ ms.lasthandoff: 01/10/2018
  如果使用无效语法设置断点条件，则会显示警告消息。 如果在指定断点条件时使用的语法有效但语义无效，则在第一次命中断点将出现警告消息。 在这两种情况下，当命中无效断点时，调试器都会中断执行。 仅在条件有效且计算结果为 `false`时才会跳过断点。  
   
  条件可以是调试器能够识别的任何有效表达式。 有关有效表达式的详细信息，请参见 [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md)。  
+
+> [!NOTE]
+> 你可以使用**CTRL + Enter**关闭**断点设置**窗口。
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>在断点条件（C# 和 F #）中使用对象 ID  
  有时，你想要观察特定对象的行为；例如，你可能想要知道一个对象为何多次被插入到一个集合中。 在 C# 和 F# 中，你可以创建 [引用类型](/dotnet/csharp/language-reference/keywords/reference-types) 的特定实例的对象 ID，并在断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。  若要创建对象 ID，请执行以下操作：  
@@ -232,20 +235,6 @@ ms.lasthandoff: 01/10/2018
 ## <a name="export-and-import-breakpoints"></a>导出和导入断点  
  右键单击断点并选择 **“导出”**可以将断点导出到 XML 文件。 该文件默认保存在解决方案目录中。 要导入断点，请打开“断点”  窗口 (“CTRL + ALT + B”)，并在工具栏上单击向右箭头（工具提示为“从文件中导入断点” ）。  
   
-## <a name="troubleshoot"></a>断点疑难解答 
-  
-### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>我删除了断点，但在再次启动调试时继续命中该断点  
- 如果在调试时删除了断点，则某些情况下，可能会在下次启动调试时再次命中该断点。 要停止命中此断点，请确保从 **“断点”** 窗口删除该断点的所有实例。  
-  
-### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>调试器无法找到断点源文件的正确版本  
- 如果源文件已更改，且源与正在调试的代码不再匹配，即使存在源文件，调试器也将查找对应于断点的源文件。  
-  
-1.  如果要让 Visual Studio 中显示的版本不匹配的源代码进行调试，请选择**调试 > 选项和设置**。 在 **“调试”/“常规”** 页上，清除 **“要求源文件与原始版本完全匹配”** 选项。  
-  
-2.  你也可将断点绑定到源文件。 选择断点并在上下文菜单上选择 **“条件”** 。 选中 **“断点设置”** 窗口中的 **“允许源代码与原始版本不同”** 。  
-  
-### <a name="breakpoints-dont-work-in-a-dll"></a>断点在 DLL 中不起作用  
- 当调试器尚未为代码所在的模块加载调试信息时，不能在源文件中设置断点。 征兆可能包括 **“将不会设置断点”**等消息。 警告断点标志符号出现在断点位置。 但是，当加载代码时，这些警告断点将成为实际的断点。 有关加载符号的详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
-  
 ## <a name="see-also"></a>请参阅  
- [使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)
+[在 Visual Studio 调试器的断点疑难解答](../debugger/troubleshooting-breakpoints.md)  
+[使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)

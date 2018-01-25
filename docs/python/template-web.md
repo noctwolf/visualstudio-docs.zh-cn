@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b04bf8fcb72b9ea4578516dcd58fde35a6d4e347
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 569f827a549e240629a492237bb89ae5f0fcd25f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="python-web-project-templates"></a>Python Web 项目模板
 
@@ -33,7 +33,7 @@ Visual Studio 不包括框架本身。 必须通过右键单击项目并选择�
 
 每个 Bottle、Flask 和 Django 模板包括一个入门网站，其中包含一些页面和静态文件。 此代码足以本地运行和调试服务器（此情况下某些设置需从环境中获得），且足以部署到 Microsoft Azure（此情况下需要提供 [WSGI 应用](http://www.python.org/dev/peps/pep-3333/)对象）。
 
-从特定于框架的模板创建项目时，会出现一个对话框，有助于使用 pip 安装所需的包。 我们还建议对 Web 项目使用[虚拟环境](python-environments.md#global-and-virtual-environments)，以便发布网站时包含正确的依赖关项：
+从特定于框架的模板创建项目时，会出现一个对话框，有助于使用 pip 安装所需的包。 我们还建议对 Web 项目使用[虚拟环境](managing-python-environments-in-visual-studio.md#global-and-virtual-environments)，以便发布网站时包含正确的依赖关项：
 
 ![为项目模板安装所需包的对话框](media/template-web-requirements-txt-wizard.png)
 
@@ -81,7 +81,7 @@ Microsoft Azure 云服务支持 `requirements.txt` 文件。 详见 [Azure 云�
 
 ### <a name="sample-pyramid-configuration"></a>Pyramid 示例配置
 
-Pyramid 应用当前最好使用 `pcreate` 命令行工具进行创建。 创建应用后，可使用[基于现有 Python 代码](python-projects.md#creating-a-project-from-existing-files)模板将其导入。 这样操作后，选择“通用 Web 项目”自定义来配置选项。 这些设置假设将 Pyramid 安装到 `..\env` 处的虚拟环境。
+Pyramid 应用当前最好使用 `pcreate` 命令行工具进行创建。 创建应用后，可使用[基于现有 Python 代码](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files)模板将其导入。 这样操作后，选择“通用 Web 项目”自定义来配置选项。 这些设置假设将 Pyramid 安装到 `..\env` 处的虚拟环境。
 
 - **调试**组：
   - **服务器端口**：6543（或 .ini 文件中配置的任何内容）

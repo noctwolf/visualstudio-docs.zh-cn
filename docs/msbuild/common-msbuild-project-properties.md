@@ -1,7 +1,7 @@
 ---
 title: "常用的 MSBuild 项目属性 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-sdk
@@ -23,11 +23,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b78c2c1276f04a53a4f7a01e70a7d98efdba0514
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c70427c2dd1e2c7ceb071867b876750121445dde
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 下表列出了在 Visual Studio 项目文件中定义的或者在 MSBuild 提供的 .targets 文件中包括的经常使用的属性。  
@@ -75,12 +75,11 @@ ms.lasthandoff: 12/22/2017
 |IntermediateOutputPath|如果未指定路径，则为从 `BaseIntermediateOutputPath` 派生的完整中间输出路径。 例如 \obj\debug\\。 如果此属性被重写，则设置 `BaseIntermediateOutputPath` 不起任何作用。|  
 |KeyContainerName|强名称密钥容器的名称。|  
 |KeyOriginatorFile|强名称密钥文件的名称。|  
-|NoWin32Manifest|确定编译器是否在输出程序集中生成默认的 Win32 清单。 默认值 `false` 表示为所有应用程序生成默认的 Win32 清单。 此属性等效于 vbc.exe 的 `/nowin32manifest` 编译器开关。|  
 |ModuleAssemblyName|要将编译好的模块并入其中的程序集的名称。 该属性等效于 `/moduleassemblyname` 编译器开关。|  
 |NoLogo|一个指示是否关闭编译器徽标的布尔值。 此属性等效于 `/nologo` 编译器开关。|  
 |NoStdLib|一个指示是否避免引用标准库 (mscorlib.dll) 的布尔值。 默认值为 `false`。|  
 |NoVBRuntimeReference|一个布尔值，指示是否应将 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 运行时 (Microsoft.VisualBasic.dll) 包括为项目中的引用。|  
-|NoWin32Manifest|一个布尔值，指示是否将用户帐户控制 (UAC) 清单信息嵌入在应用程序的可执行文件中。 它仅适用于面向 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 的 Visual Studio 项目。 在使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 和免注册的 COM 部署的项目中，将忽略此元素。 `False`（默认值）指示是否将用户帐户控制 (UAC) 清单信息嵌入在应用程序的可执行文件中。 `True` 指定不嵌入 UAC 清单信息。<br /><br /> 此属性仅适用于针对 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 项目。 在使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 和免注册的 COM 部署的项目中，将忽略此属性。<br /><br /> 只有在不希望 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 在应用程序的可执行文件中嵌入任何清单信息时，才应该添加 NoWin32Manifest；此过程称为“虚拟化”。 若要使用虚拟化，请按照下列方式设置 `<ApplicationManifest>` 和 `<NoWin32Manifest>`：<br /><br /> -   对于 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目，请删除 `<ApplicationManifest>` 节点。 （在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目中，如果存在 `<ApplicationManifest>` 节点，将忽略 `<NoWin32Manifest>`）。<br />-   对于 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目，请将 `<ApplicationManifest>` 设置为 `False`，并将 `<NoWin32Manifest>` 设置为 `True`。 （在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目中，`<ApplicationManifest>` 会重写 `<NoWin32Manifest>`）。|  
+|NoWin32Manifest|一个布尔值，指示是否将用户帐户控制 (UAC) 清单信息嵌入在应用程序的可执行文件中。 它仅适用于面向 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 的 Visual Studio 项目。 在使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 和免注册的 COM 部署的项目中，将忽略此元素。 `False`（默认值）指示是否将用户帐户控制 (UAC) 清单信息嵌入在应用程序的可执行文件中。 `True` 指定不嵌入 UAC 清单信息。<br /><br /> 此属性仅适用于针对 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 项目。 在使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 和免注册的 COM 部署的项目中，将忽略此属性。<br /><br /> 只有在不希望 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 在应用程序的可执行文件中嵌入任何清单信息时，才应该添加 NoWin32Manifest；此过程称为“虚拟化”。 若要使用虚拟化，请按照下列方式设置 `<ApplicationManifest>` 和 `<NoWin32Manifest>`：<br /><br /> -   对于 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目，请删除 `<ApplicationManifest>` 节点。 （在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目中，如果存在 `<ApplicationManifest>` 节点，将忽略 `<NoWin32Manifest>`）。<br />-   对于 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目，请将 `<ApplicationManifest>` 设置为 `False`，并将 `<NoWin32Manifest>` 设置为 `True`。 （在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目中，`<ApplicationManifest>` 会重写 `<NoWin32Manifest>`）。<br /> 此属性等效于 vbc.exe 的 `/nowin32manifest` 编译器开关。|  
 |优化|一个布尔值，在设置为 `true` 时，允许进行编译器优化。 此属性等效于 `/optimize` 编译器开关。|  
 |OptionCompare|指定如何进行字符串比较。 有效值为“binary”或“text”。 此属性等效于 vbc.exe 的 `/optioncompare` 编译器开关。|  
 |OptionExplicit|一个布尔值，设置为 `true` 时，要求在源代码中显式声明变量。 此属性等效于 `/optionexplicit` 编译器开关。|  

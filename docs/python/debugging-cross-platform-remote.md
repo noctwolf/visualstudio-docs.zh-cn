@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: df8e23f0544571aa07e8b013c62922e1a69868d2
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 0d7c6644dc3f52629ff91d2f6b5dd44dbdba6b3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>在 Linux 上远程调试 Python 代码
 
@@ -38,7 +38,7 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
 - 在操作系统（如 Mac OSX 或 Linux）上运行 Python 的远程计算机。
 - 该计算机防火墙上的 5678 端口（入站）处于开启状态，这是远程调试的默认设置。
 
-你可以轻松[在 Azure 中创建 Linux 虚拟机](/azure/virtual-machines/linux/creation-choices)，并[使用 Windows 远程桌面访问虚拟机](/azure/virtual-machines/linux/use-remote-desktop)。 使用适用于 VM 的 Ubuntu 会非常方便，因为默认安装了 Python；否则，请查看[安装所选的 Python 解释器](python-environments.md#selecting-and-installing-python-interpreters)中的列表，获取有关其他 Python 下载位置的信息。
+你可以轻松[在 Azure 中创建 Linux 虚拟机](/azure/virtual-machines/linux/creation-choices)，并[使用 Windows 远程桌面访问虚拟机](/azure/virtual-machines/linux/use-remote-desktop)。 使用适用于 VM 的 Ubuntu 会非常方便，因为默认安装了 Python；否则，请查看[安装所选的 Python 解释器](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters)中的列表，获取有关其他 Python 下载位置的信息。
 
 有关为 Azure VM 创建防火墙规则的详细信息，请参阅[在 Azure 中使用 Azure 门户打开 VM 的端口](/azure/virtual-machines/windows/nsg-quickstart-portal)。
 

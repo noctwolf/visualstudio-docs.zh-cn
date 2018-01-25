@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 10da44e4766fa3a68a0f4d70a4c1e89f3f9ccf65
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 32e2f0d889bac5313201fd65bf98ce2a8243a284
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>发布到 Azure 应用服务
 
@@ -44,7 +44,7 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 
 在本演练中，需要一个基于 Bottle、Flask 或 Django 框架的 Web 应用项目。 如果还没有项目，但想尝试发布过程，可按下面所示创建一个简单的测试项目：
 
-1. 在 Visual Studio 中，选择“文件”>“新建”>“项目”，搜索“Bottle”，选择“Bottle Web 项目”，为项目指定名称和路径，然后单击“确定”。 （Bottle 模板随附于 Python 开发工作负载中；请参阅[安装](installation.md)。）
+1. 在 Visual Studio 中，选择“文件”>“新建”>“项目”，搜索“Bottle”，选择“Bottle Web 项目”，为项目指定名称和路径，然后单击“确定”。 （Bottle 模板随附于 Python 开发工作负载中；请参阅[安装](installing-python-support-in-visual-studio.md)。）
 
 1. 按提示安装外部程序包，并选择“安装到虚拟环境”和虚拟环境的首选基础解释器。 通常需要将此选项与 App Service 上安装的 Python 版本匹配。
 

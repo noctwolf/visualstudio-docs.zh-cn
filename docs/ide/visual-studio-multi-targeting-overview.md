@@ -1,7 +1,7 @@
 ---
 title: "在 Visual Studio 中以 .NET Framework 为目标 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: c3d388238b443fcb717502a893a674f99a315f38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目标概述
 
@@ -70,9 +70,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="resolving-system-and-user-assembly-references"></a>解析系统和用户程序集引用
 
 若要以 .NET Framework 版本为目标，必须先安装相应的程序集引用。 可以在 [.NET 下载](https://www.microsoft.com/net/download/windows)页下载针对不同版本 .NET Framework 的开发人员包。
-
-> [!NOTE]
-> 如果以 .NET Framework 4 或 3.5 为目标并希望了解有关 Client Profile 以及何时使用它的详细信息，请参阅 .NET Framework 4 文档中的 [.NET Framework Client Profile](http://msdn.microsoft.com/library/cc656912\(v=vs.100\).aspx)。
 
 “添加引用”对话框禁用不适合目标 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本的系统程序集，以便不会无意中将它们添加到项目中。 （系统程序集是包括在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本内的 .dll 文件。）若引用所属的框架版本低于目标版本，则无法解析引用，并且无法添加基于此类引用的控件。 若要启用此类引用，请将项目的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 目标重新设置为包括此引用。  有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 

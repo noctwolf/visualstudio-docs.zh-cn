@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6665452bd074c083216120732cff8a3f18a74dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e4f01a74a3246a326c1695371a303472901c9ea
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="property-pages-javascript"></a>属性页，JavaScript
 “属性页”提供对项目设置的访问。 可使用“属性页”中显示的页面来更改项目属性。  
@@ -68,11 +68,11 @@ ms.lasthandoff: 12/22/2017
  要启动的调试器  
  指定调试器的默认主机。  
 
--   选择“本地计算机”可在 Visual Studio 主机计算机上启动应用程序。 有关详细信息，请参阅[在本地计算机上运行应用](http://go.microsoft.com/fwlink/?LinkId=234912)。  
+-   选择“本地计算机”可在 Visual Studio 主机计算机上启动应用程序。 有关详细信息，请参阅[在本地计算机上运行应用](../../debugger/run-windows-store-apps-on-the-local-machine.md)。  
 
--   选择“模拟器”可在模拟器中启动应用程序。 有关详细信息，请参阅[在模拟器中运行应用](http://go.microsoft.com/fwlink/?LinkId=234913)。  
+-   选择“模拟器”可在模拟器中启动应用程序。 有关详细信息，请参阅[在模拟器中运行应用](../../debugger/run-windows-store-apps-in-the-simulator.md)。  
 
--   选择“远程计算机”可在远程计算机上启动应用程序。 有关远程调试的详细信息，请参阅[在远程计算机上运行应用](http://go.microsoft.com/fwlink/?LinkId=234914)。  
+-   选择“远程计算机”可在远程计算机上启动应用程序。 有关远程调试的详细信息，请参阅[在远程计算机上运行应用](../../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
 
 启动应用程序  
 指定按 F5 或依次单击“调试”、“启动调试”时是否启动应用程序。 选择“是”则启动应用程序；否则，请选择“否”。 如果选择“否”，而使用另一种方法来启动，则仍然可以调试应用程序。  
