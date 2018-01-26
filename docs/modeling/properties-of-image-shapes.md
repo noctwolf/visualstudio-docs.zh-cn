@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e3ab33282c89617a74cc80623040ffc9176b761a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 953be16c3bf48a865acf131a2fd8fe02085b0637
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-image-shapes"></a>图像形状的属性
 可以使用映像形状可以指定域类生成的设计器中的显示方式。 通过设置定义是映像形状`Image`类预定义的图像文件的属性。 支持以下格式：  
@@ -53,7 +53,7 @@ ms.lasthandoff: 01/13/2018
 |轮廓粗细|该形状的轮廓粗细。|0.03125|  
 |文本颜色|用于与此形状关联的文本修饰器颜色。|黑色|  
 |访问修饰符|几何形状 （公共或内部） 访问修饰符。|Public|  
-|自定义特性|用于将属性添加到从此形状生成源代码类。|\<无 >|  
+|自定义特性|用于将属性添加到从此形状生成源代码类。|\<none>|  
 |生成双派生|如果`True`，将生成的基本类和分部类 （以支持通过替代的自定义）。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|  
 |具有自定义的构造函数|如果`True`，自定义的构造函数将提供的源代码中。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|  
 |继承修饰符|介绍的从映像形状生成源代码类的继承的类型 (`none`，`abstract`或`sealed`)。|无|  
@@ -61,15 +61,15 @@ ms.lasthandoff: 01/13/2018
 |name|该形状的名称。|当前的名称|  
 |命名空间|隶属于此形状命名空间。|当前命名空间|  
 |工具提示类型|（固定的变量，或无） 其中定义工具提示的位置。 如果固定，然后的值`Fixed Tooltip Text`属性用作工具提示; 如果变量，工具提示将定义自定义代码中。|无|  
-|说明|与此形状相关联的非正式说明。|\<无 >|  
+|说明|与此形状相关联的非正式说明。|\<none>|  
 |初始高度|此图形，以英寸为单位的初始高度。|1|  
 |初始宽度|此形状，以英寸为单位的初始宽度。|1.5|  
 |作为属性公开的填充颜色<br /><br /> 公开的填充渐变模式<br /><br /> 作为属性公开轮廓颜色<br /><br /> 作为属性公开大纲短划线样式<br /><br /> 公开为属性的轮廓粗细<br /><br /> 公开文本颜色|如果`True`，用户可以设置形状的规定的属性。 若要对此设置，请右击形状定义，然后单击**添加公开**。|False|  
-|描述|用于记录生成的设计器。|\<无 >|  
-|显示名称|将此形状的生成设计器中显示的名称。|\<无 >|  
-|固定的工具提示文本|适用于固定的工具提示文本。|\<无 >|  
-|帮助关键字|用于编制索引此元素的 F1 帮助关键字。|\<无 >|  
-|图像|用于此形状的图像文件路径。|\<无 >|  
+|描述|用于记录生成的设计器。|\<none>|  
+|显示名称|将此形状的生成设计器中显示的名称。|\<none>|  
+|固定的工具提示文本|适用于固定的工具提示文本。|\<none>|  
+|帮助关键字|用于编制索引此元素的 F1 帮助关键字。|\<none>|  
+|图像|用于此形状的图像文件路径。|\<none>|  
   
 ## <a name="see-also"></a>请参阅  
- [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [域特定语言工具词汇表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

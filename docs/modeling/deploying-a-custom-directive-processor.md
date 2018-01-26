@@ -11,27 +11,29 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: be69cc9335480d901824ce8a4981728a34db6395
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
+
 若要在 Visual Studio 中使用自定义指令处理器，在任何计算机上，必须通过本主题中所述的方法之一对其进行注册。  
   
- 可用的方法包括：  
+可用的方法包括：  
   
--   [Visual Studio 扩展 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。 通过这种方法，可以在自己或他人的计算机上安装和卸载指令处理器。 通常，可能会在同一 VSIX 中包含其他功能。  
+-   [Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。 通过这种方法，可以在自己或他人的计算机上安装和卸载指令处理器。 通常，可能会在同一 VSIX 中包含其他功能。  
   
 -   [VSPackage](../extensibility/internals/vspackages.md)。 如果要定义一个包含指令处理器和其他功能的 VSPackage，有一种方便的方法可以注册指令处理器。  
   
 -   设置注册表项。 如果采用此方法，则会为指令处理器添加一个注册表项。  
   
- 你需要仅当你想要转换文本模板在 Visual Studio 中的使用这些方法之一或[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]。 如果在自己的应用程序中使用自定义宿主，则由自定义宿主负责查找每条指令的指令处理器。  
+你需要使用这些方法之一，仅当你想要转换文本模板在 Visual Studio 或 MSBuild。 如果在自己的应用程序中使用自定义宿主，则由自定义宿主负责查找每条指令的指令处理器。  
   
-## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指令处理器  
- 你可以添加到自定义指令处理器[Visual Studio 扩展 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。  
+## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指令处理器
+
+你可以添加到自定义指令处理器[Visual Studio 扩展 (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md)。
   
  需要确保 .vsix 文件包含以下两项：  
   
@@ -39,10 +41,10 @@ ms.lasthandoff: 01/13/2018
   
 -   注册指令处理器的 .pkgdef 文件。 文件的根名称必须与程序集相同。 例如，文件可以命名为 CDP.dll 和 CDP.pkgdef。  
   
- 若要检查或更改 .vsix 文件的内容，请将其文件扩展名更改为 .zip，然后将其打开。 编辑内容之后，将文件扩展名改回为 .vsix。  
-  
- 有几种方法可以创建 .vsix 文件。 以下过程将介绍其中一种方法。  
-  
+若要检查或更改 .vsix 文件的内容，请将其文件扩展名更改为 .zip，然后将其打开。 编辑内容之后，将文件扩展名改回为 .vsix。  
+
+有几种方法可以创建 .vsix 文件。 以下过程将介绍其中一种方法。  
+
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>在 VSIX 项目中开发自定义指令处理器  
   
 1.  在 Visual Studio 中创建一个 VSIX 项目。  
@@ -53,7 +55,7 @@ ms.lasthandoff: 01/13/2018
   
     1.  在 VSIX 清单编辑器中，在上**资产**选项卡上，选择**新建**并设置新项的属性：  
   
-         **内容类型** = **VSPackage**  
+         **Content Type** = **VSPackage**  
   
          **源项目** = \<*当前项目*>  
   
@@ -90,11 +92,11 @@ ms.lasthandoff: 01/13/2018
   
 5.  将下列引用添加到该项目中：  
   
-    -   **Microsoft.VisualStudio.TextTemplating。\*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces。\*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost。\*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
 6.  将自定义指令处理器类添加到项目。  
   
@@ -197,5 +199,6 @@ ms.lasthandoff: 01/13/2018
 |类|REG_SZ|\<**完全限定的类名**>|  
 |Assembly|REG_SZ|\<**GAC 中程序集名称**>|  
   
-## <a name="see-also"></a>请参阅  
- [创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)
+## <a name="see-also"></a>请参阅
+
+[创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)

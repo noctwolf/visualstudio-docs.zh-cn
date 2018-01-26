@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 744dffd17f13c821381de6014881ef2115c0f75c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 0c08986b9508e4061a44575d629937c70bffc06e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-diagrams"></a>图表属性
 你可以设置指定在生成的设计器中显示关系图的外观的属性。 例如，你可以在关系图中指定文本的默认颜色。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/13/2018
 |填充颜色|关系图填充颜色。|空白|  
 |文本颜色|关系图显示的文本颜色。|黑色|  
 |访问修饰符|类 （公共或内部） 的访问修饰符。|Public|  
-|自定义特性|用于将属性添加到生成的代码类。|\<无 >|  
+|自定义特性|用于将属性添加到生成的代码类。|\<none>|  
 |生成双派生|如果`True`，将生成的基本类和分部类 （以支持通过替代的自定义）。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|  
 |具有自定义的构造函数|如果`True`，自定义的构造函数将提供的源代码中。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
 |继承修饰符|描述的关系图生成源代码类的继承的类型 (`none`，`abstract`或`sealed`)。|无|  
@@ -38,12 +38,12 @@ ms.lasthandoff: 01/13/2018
 |name|此关系图的名称。|当前的名称|  
 |命名空间|与此关系图关联的命名空间。|当前命名空间|  
 |表示类|此关系图表示根域类。|如果适用的当前根类|  
-|说明|与此元素关联的非正式说明。|\<无 >|  
+|说明|与此元素关联的非正式说明。|\<none>|  
 |公开为属性填充颜色|如果`True`，用户可以设置生成的设计器的关系图的填充颜色。 若要对此设置，请右键单击关系图形状，然后单击**添加 Explosed**。|False|  
 |将作为属性公开文本颜色|如果`True`，用户可以在生成的设计器中设置关系图的文本颜色。 若要对此设置，请右键单击关系图形状，然后单击**添加 Explosed**。|False|  
-|描述|用于记录生成的设计器的说明。|\<无 >|  
-|显示名称|将显示在生成的设计器中为此关系图名称。|\<无 >|  
-|帮助关键字|用于编制索引为此关系图的 F1 帮助关键字。|\<无 >|  
+|描述|用于记录生成的设计器的说明。|\<none>|  
+|显示名称|将显示在生成的设计器中为此关系图名称。|\<none>|  
+|帮助关键字|用于编制索引为此关系图的 F1 帮助关键字。|\<none>|  
   
 ## <a name="see-also"></a>请参阅  
- [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [域特定语言工具词汇表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

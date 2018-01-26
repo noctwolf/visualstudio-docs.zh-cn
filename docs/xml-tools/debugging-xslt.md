@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fe3d624fdfd187ebec59f43fbde8c750958d6703
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d610a7410232104428281d90bf7c67992e2a378
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="debugging-xslt"></a>调试 XSLT
 您可以使用 Visual Studio 调试程序来调试 XSLT。 调试器支持设置断点、查看 XSLT 执行状态等。 Visual Studio Team System 和 Professional Edition 中支持 XSLT 调试。  
@@ -57,5 +57,5 @@ ms.lasthandoff: 12/22/2017
  [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)  
  介绍 Visual Studio 调试程序。  
   
- [XSLT 参考](http://msdn.microsoft.com/en-us/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [XSLT 参考](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  提供 XSLT 元素和函数的参考资料。

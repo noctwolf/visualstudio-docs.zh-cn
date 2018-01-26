@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5d489f41069f478abfba32a65690a5adc9c2272c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 4dabfb345d9a98228afae5e20b63e6ded760800d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>域特定语言工具用户界面的概述
 首次打开中的域特定语言工具 （DSL 工具） 解决方案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，用户界面将类似于下图。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 01/13/2018
   
  下表介绍了某些域模型关系图的元素。  
   
-|**术语**|**定义**|  
+|**Term**|**定义**|  
 |--------------|--------------------|  
 |域类|域类是您的模型中的元素的类型。<br /><br /> 域类可以出现一次在关系图中，如果它是多个关系的目标。<br /><br /> 若要添加的域类，拖动中的域类工具**工具箱**到**类和关系**侧的关系图。|  
 |域关系|域关系是您的模型中的元素之间的链接的类型。<br /><br /> *嵌入关系*指出的目标元素已拥有或包含的源元素，并显示为实线。 在模型中的每个元素应为目标的一种嵌入关系，以便模型形成一个树。 A*引用关系*指示模型元素之间的常规链接并且显示为虚线。 任何元素可包含任意数量的参考链接。<br /><br /> 通过单击该工具创建的关系**工具箱**，单击源域类中，，然后单击目标类。|  
@@ -48,5 +48,5 @@ ms.lasthandoff: 01/13/2018
   
 ## <a name="see-also"></a>请参阅  
  [域特定语言工具的概述](../modeling/overview-of-domain-specific-language-tools.md)   
- [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [域特定语言工具词汇表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)

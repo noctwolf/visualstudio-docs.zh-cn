@@ -10,25 +10,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 92db1c4d27eec5a9ac18d51644dfb0141c2fef34
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>域特定语言入门
-本主题介绍中定义和使用的建模 SDK for Visual Studio 创建域特定语言 (DSL) 的基本概念。  
+本主题介绍中定义和使用的建模 SDK for Visual Studio 创建域特定语言 (DSL) 的基本概念。
 
+> [!NOTE]
+> 在 Visual Studio 2017，文本模板转换 SDK 和 Visual Studio 建模 SDK 时会自动安装在安装 Visual Studio 的特定功能。 有关更多详细信息，请参阅[这篇博客文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
- 如果你不熟悉 Dsl，我们建议你通读**DSL 工具实验室**，你可以在此站点中查找： [Visualizaton 和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+如果你不熟悉 Dsl，我们建议你通读**DSL 工具实验室**，你可以在此站点中查找： [Visualizaton 和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>域特定语言，你可以做什么？  
  域特定语言是表示法，通常为图形，用于为特定目的而设计。 与此相反，例如 UML 的语言是通用的。 在 DSL，你可以定义类型的模型元素和它们之间的关系，以及它们在屏幕上的呈现方式。  
   
- 当您设计 DSL 时，可以将其作为 Visual Studio 集成扩展 (VSIX) 包的一部分进行分发。 用户使用在 DSL [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
+ 当您设计 DSL 时，可以将其作为 Visual Studio 集成扩展 (VSIX) 包的一部分进行分发。 用户要使用 Visual Studio 中 DSL:  
   
  ![家谱关系图、 工具箱和资源管理器](../modeling/media/familyt_instance.png "FamilyT_Instance")  
   
@@ -36,14 +35,14 @@ ms.lasthandoff: 01/13/2018
   
  Dsl 的主体应用程序之一是生成程序代码、 配置文件和其他项目。 特别是在大型项目和产品系列，其中将创建的一种产品的多个变体，从 Dsl 生成多个变量方面可以提供大幅增加在可靠性和非常快速响应要求更改。  
   
- 本概述的其余部分是一个演练，介绍创建和使用中的域特定语言的基本操作[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+ 本概述的其余部分是一个演练，介绍创建和使用 Visual Studio 中的域特定语言的基本操作。  
   
 ## <a name="prerequisites"></a>系统必备  
  若要定义 DSL，必须安装以下组件：  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |For Visual Studio 建模 SDK||  
 
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/13/2018
 
   
 ## <a name="creating-a-dsl-solution"></a>创建 DSL 解决方案  
- 若要创建新的域特定语言，创建一个新[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案通过使用域特定语言的项目模板。  
+ 若要创建新的域特定语言，请通过使用域特定语言的项目模板创建新的 Visual Studio 解决方案。  
   
 #### <a name="to-create-a-dsl-solution"></a>创建 DSL 解决方案  
   
@@ -100,7 +99,7 @@ ms.lasthandoff: 01/13/2018
   
 -   **Dsl 项目**此项目包含用于定义特定于域的语言代码。  
   
--   **DslPackage 项目**此项目包含允许的 DSL 来打开和编辑实例的代码[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+-   **DslPackage 项目**此项目包含允许的 DSL 来打开和编辑 Visual Studio 中的实例的代码。  
   
 ##  <a name="Debugging"></a>运行 DSL  
  一旦你已创建，则可以运行 DSL 解决方案。 更高版本，你可以修改 DSL 定义逐渐，每项更改后再次运行解决方案。  
@@ -110,15 +109,15 @@ ms.lasthandoff: 01/13/2018
 1.  单击**转换所有模板**解决方案资源管理器工具栏中。 这将重新生成大部分 DslDefinition.dsl 中的源代码。  
   
     > [!NOTE]
-    >  每当你更改 DslDefinition.dsl，必须单击**转换所有模板**重新生成解决方案之前。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动转换所有模板](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+    >  每当你更改 DslDefinition.dsl，必须单击**转换所有模板**重新生成解决方案之前。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。
   
 2.  按 F5，或在**调试**菜单上，单击**启动调试**。  
   
-     DSL 生成，并将在实验实例中的安装[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+     DSL 生成，并已安装 Visual Studio 的实验实例中。
   
-     此时将启动 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例。 实验实例将其设置从注册表中，单独子树其中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展注册以便进行调试。 正常实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的确可以访问那里注册的扩展。  
+     启动 Visual Studio 的实验实例。 实验实例将其设置从注册表中，其中以便进行调试注册 Visual Studio 扩展的单独子树。 Visual Studio 的正常实例不能访问到那里注册的扩展。  
   
-3.  在实验实例中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，打开名为的模型文件**测试**从**解决方案资源管理器**。  
+3.  在 Visual Studio 的实验实例中，打开名为的模型文件**测试**从**解决方案资源管理器**。  
   
      \- 或 -  
   
@@ -136,7 +135,7 @@ ms.lasthandoff: 01/13/2018
   
 5.  单击以更改它们的形状的标签。  
   
- 你实验[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将类似于下面的示例：  
+ 实验性 Visual Studio 将类似于下面的示例：  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
@@ -147,7 +146,7 @@ ms.lasthandoff: 01/13/2018
   
  你可以为中的树中查看模型**资源管理器**查看进行编辑模型时。 在形状添加到关系图中，模型元素还显示在浏览器。 即使没有关系图，可以使用资源管理器。  
   
- 如果你不能看到的调试实例中的资源管理器[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]上**视图**菜单中的指向**其他窗口**，然后单击*\<你语言 >***资源管理器**。  
+ 如果上看不到资源管理器中的 Visual Studio 中，调试实例**视图**菜单中的指向**其他窗口**，然后单击*\<你语言 >***资源管理器**。  
   
 ### <a name="the-api-of-your-dsl"></a>DSL 的 API  
  DSL 生成一个 API，使你能够读取和更新的 DSL 实例模型。 一个应用程序的 api 是从模型生成文本文件。 有关详细信息，请参阅[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。  
@@ -164,7 +163,7 @@ ms.lasthandoff: 01/13/2018
   
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>若要重新生成后的文本文件，将更改模型文件  
   
-1.  在实验实例中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，保存模型文件。  
+1.  在 Visual Studio 的实验实例中，保存模型文件。  
   
 2.  请确保每个.tt 文件中的文件名称参数指用于试验的模型文件。 保存.tt 文件。  
   
@@ -182,7 +181,7 @@ ms.lasthandoff: 01/13/2018
  有关详细信息，请参阅[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)和[编写代码，以自域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
   
 ## <a name="customizing-the-dsl"></a>自定义 DSL  
- 如果你想要修改的 DSL 定义，关闭实验实例并更新当中，该定义[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]实例。  
+ 如果你想要修改的 DSL 定义，关闭实验实例并更新主 Visual Studio 实例中的定义。  
   
 > [!NOTE]
 >  修改了 DSL 定义之后，你可能会丢失在使用早期版本创建的测试模型的信息。  例如，调试的解决方案包含名为示例，其中包含一些形状和连接符的文件。 你开始开发 DSL 定义后，它们将不可见，并保存文件时它们将会丢失。  
@@ -222,9 +221,9 @@ ms.lasthandoff: 01/13/2018
   
     2.  单击**转换所有模板**的工具栏中的解决方案资源管理器  
   
-    3.  按 F5。 等到的实验实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]显示。  
+    3.  按 F5。 等待，直到显示 Visual Studio 的实验实例。  
   
-4.  在实验实例中的调试解决方案中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，打开测试模型文件。 将元素从工具箱拖放到它上面。 请注意，已更改的工具标题和 DSL 资源管理器中的类型名称。  
+4.  在 Visual Studio 的实验实例中的调试解决方案中，打开测试模型文件。 将元素从工具箱拖放到它上面。 请注意，已更改的工具标题和 DSL 资源管理器中的类型名称。  
   
 5.  保存模型文件。  
   
@@ -348,7 +347,7 @@ ms.lasthandoff: 01/13/2018
   
 8.  保存 DSL 定义，请单击**转换所有模板**，然后按**F5**。  
   
-9. 在实验实例中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，打开测试模型文件。 使用新的工具创建城镇和城镇和人员之间的链接。 请注意，你只能创建正确类型的元素之间的链接。  
+9. 在 Visual Studio 的实验实例中，打开测试模型文件。 使用新的工具创建城镇和城镇和人员之间的链接。 请注意，你只能创建正确类型的元素之间的链接。  
   
 10. 创建列出每个人员的存在镇的代码。 文本模板是一种可在其中运行此类代码的位置。 例如，你可以修改调试解决方案中的现有 Sample.tt 文件，以使其包含以下代码：  
   
@@ -380,33 +379,32 @@ ms.lasthandoff: 01/13/2018
 ## <a name="validation-and-commands"></a>验证和命令  
  无法通过添加验证约束来开发此 DSL 进一步。 这些约束是你可以定义，请确保在模型处于正确状态的方法。 例如，你可以的子级的出生日期晚于其父级的定义一个约束以确保。 如果 DSL 用户尝试保存模型会中断任何约束，验证功能将显示警告。 有关详细信息，请参阅[域特定语言中的验证](../modeling/validation-in-a-domain-specific-language.md)。  
   
- 你还可以定义用户可调用的菜单命令。 命令可以修改模型。 此外可以与在其他模型进行交互它们[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和与外部资源。 有关详细信息，请参阅[如何： 修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
+ 你还可以定义用户可调用的菜单命令。 命令可以修改模型。 它们可以使用 Visual Studio 中的其他模型和外部资源进行交互。 有关详细信息，请参阅[如何： 修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
   
 ## <a name="deploying-the-dsl"></a>部署 DSL  
- 若要允许其他用户使用的域特定语言，你将分发[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展 (VSIX) 文件。 这被创建时生成的 DSL 解决方案。  
+ 若要允许其他用户使用的域特定语言，你将分发 Visual Studio 扩展 (VSIX) 文件。 这被创建时生成的 DSL 解决方案。  
   
- 你的解决方案的 bin 文件夹中找到.vsix 文件。 将其复制到你要在其安装它的计算机。 在该计算机中，双击 VSIX 文件。 可以在的所有实例中使用 DSL[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]在该计算机上。  
+ 你的解决方案的 bin 文件夹中找到.vsix 文件。 将其复制到你要在其安装它的计算机。 在该计算机中，双击 VSIX 文件。 DSL 可在该计算机上的 Visual Studio 的所有实例。  
   
- 你可以使用相同的过程在你自己的计算机上安装 DSL，则不需要使用的实验实例以[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+ 可以使用相同的过程可以在你自己的计算机上安装 DSL，这样，则不需要使用 Visual Studio 的实验实例。  
   
  有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
 ##  <a name="Reset"></a>删除旧的实验 Dsl  
- 如果你已创建实验 Dsl，你不再想，你可以将其从计算机删除通过重置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]实验实例。  
+ 如果你已创建但不再希望的实验 dsl 相关联，可以从您的计算机重置的 Visual Studio 实验实例来删除它们。  
   
- 这将从计算机中删除所有实验 Dsl 和其他试验性[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展。 这些是在调试模式下执行的扩展。  
+ 这将从计算机中删除你所有实验 Dsl 和其他实验性 Visual Studio 扩展。 这些是在调试模式下执行的扩展。  
   
- 此过程不会删除 Dsl 或其他[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]已通过执行的 VSIX 文件的完全安装的扩展。  
+ 此过程不会删除 Dsl 或已通过执行的 VSIX 文件的完全安装其他 Visual Studio 扩展。  
   
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>若要重置的 Visual Studio 实验实例  
   
 1.  单击**启动**，单击**所有程序**， **Microsoft Visual Studio 2010 SDK**，**工具**，，然后**重置 MicrosoftVisual Studio 2010 实验实例**。  
   
-2.  重新生成任何实验 Dsl 或其他实验[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]你仍想要使用的扩展。  
+2.  重新生成任何实验 Dsl 或你仍想要使用其他实验性 Visual Studio 扩展。  
   
-## <a name="see-also"></a>请参阅  
- [了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)   
- [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   
+## <a name="see-also"></a>请参阅
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)   
+[如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)
 

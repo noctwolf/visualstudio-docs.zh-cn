@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1b26da119360462c5237977a1b1da8ac5041d84a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 6848f2c0b6c8d25fe7964fdb5519aa3f075bde57
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定义锁定策略以创建只读段
 不可变性 API[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK 允许一个程序对锁定部分或全部域特定语言 (DSL) 模型，以便它可以读取但未更改。 无法使用此只读选项，例如，以便用户可以要求同事添加批注并查看 DSL 模型，但可以更改原始禁止它们。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 01/13/2018
 > [!NOTE]
 >  通过使用反射，可以绕过锁定策略。 它为第三方开发人员提供了清除边界，但不是提供强大的安全性。  
   
- 详细信息和示例位于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)][可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkId=186128) Web 站点。  
+ 详细信息和示例的 Visual Studio 可以[可视化和建模 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) Web 站点。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   

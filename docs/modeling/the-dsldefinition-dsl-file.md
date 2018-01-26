@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c58dc30285257a8292e8ce8dcf81b7b31cfee2c5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 86955d745e645d2d37e9e33f258a2662bcac59fe
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 文件
 本主题描述的 Dsl 项目中的 DslDefinition.dsl 文件的结构[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]解决方案，它定义*域特定语言*。 DslDefinition.dsl 文件描述的类和关系的域特定语言，以及关系图、 形状、 连接器、 序列化格式和**工具箱**域特定语言的并将其编辑工具。 在域特定语言解决方案中，将根据 DslDefinition.dsl 文件中的信息生成可定义这些工具的代码。  
@@ -151,15 +151,15 @@ ms.lasthandoff: 01/13/2018
   
  每个域类（包括关系、形状、连接符和关系图）都可能具有以下特性和子节点：  
   
--   **Id。**此属性是一个 GUID。 如果文件中未提供值，则域特定语言设计器将创建一个值。 （在本文档的插图中，通常忽略此特性以节省空间。）  
+-   **Id.**此属性是一个 GUID。 如果文件中未提供值，则域特定语言设计器将创建一个值。 （在本文档的插图中，通常忽略此特性以节省空间。）  
   
 -   **名称和 Namespace 中。** 这些特性生成的代码中指定的名称和命名空间的类。 在域特定语言中它们必须都是唯一的。  
   
--   **InheritanceModifier。** 此属性为"抽象"、"密封"，或 none。  
+-   **InheritanceModifier.** 此属性为"抽象"、"密封"，或 none。  
   
--   **DisplayName。** 此属性是名称，将出现在**属性**窗口。 DisplayName 特性可以包含空格和其他标点。  
+-   **DisplayName.** 此属性是名称，将出现在**属性**窗口。 DisplayName 特性可以包含空格和其他标点。  
   
--   **GeneratesDoubleDerived。** 如果此属性设置为 true，将生成两个类，并且有一个其他的子类。 所有生成的方法都位于基类中，而构造函数位于子类中。 通过设置此特性，你可以在自定义代码中重写任何生成的方法。  
+-   **GeneratesDoubleDerived.** 如果此属性设置为 true，将生成两个类，并且有一个其他的子类。 所有生成的方法都位于基类中，而构造函数位于子类中。 通过设置此特性，你可以在自定义代码中重写任何生成的方法。  
   
 -   **HasCustomConstructor**。 如果将此特性设置为 true，则从生成的代码中忽略构造函数，以便你可以编写自己的版本。  
   
@@ -546,6 +546,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  连接符映射还可以包含修饰器映射。  
   
 ## <a name="see-also"></a>请参阅  
- [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [域特定语言工具词汇表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [如何定义的域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   
  [了解模型、类和关系](../modeling/understanding-models-classes-and-relationships.md)

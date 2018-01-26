@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c0ecd953a0a4cb744f726fc6a62bee564d15579
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 581d4e907185339aa16bacce19a9bf31ff4d121d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自定义和扩展域特定语言
 Visual Studio 建模和可视化效果 SDK (VMSDK) 提供可以在其中定义建模工具的多个级别：  
@@ -55,7 +55,7 @@ Visual Studio 建模和可视化效果 SDK (VMSDK) 提供可以在其中定义�
 |删除、 重新设置父级，或删除元素时重新链接相关的元素。|设置**传播删除**关系角色的值。 对于更复杂的效果，重写`ShouldVisitRelationship`和`ShouldVisitRolePlayer`中的方法`MyDslDeleteClosure`中定义的类**DomainModel.cs**<br /><br /> 请参阅[自定义删除行为](../modeling/customizing-deletion-behavior.md)|  
 |保留形状布局和外观上复制和拖放。|将形状和连接符添加到复制`ElementGroupPrototype`。 最方便的方法重写`ElementOperations.CreateElementGroupPrototype()`<br /><br /> 请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)。|  
 |在所选位置（例如当前光标位置）粘贴形状。|重写`ClipboardCommandSet.ProcessOnCopy()`若要使用的位置特定版本`ElementOperations.Merge().`请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)。|  
-|在粘贴上创建更多链接|重写 ClipboardCommandSet.ProcessOnPasteCommand()|  
+|在粘贴上创建更多链接|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |启用从拖放此关系图中，其他 Dsl 和 Windows 元素|请参阅[如何： 添加一个拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |就像它已拖动到父上允许形状或工具拖动到子形状，如端口上。|一个元素合并指令对目标对象类定义，将转发到父级的拖放的对象。 请参阅[自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)。|  
 |允许形状或工具拖动到一个形状上，并有其他链接或创建的对象。 例如，若要允许要将其拖到它是要链接的项中的注释。|对目标域类，定义一个元素合并指令并定义要生成的链接。 在复杂的情况下，你可以添加自定义代码。 请参阅[自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)。|  
@@ -70,10 +70,10 @@ Visual Studio 建模和可视化效果 SDK (VMSDK) 提供可以在其中定义�
 |将多个 Dsl 集成，使它们作为一个应用程序的一部分工作。|请参阅[集成模型通过使用 Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。|  
 |允许 DSL 由第三方扩展，并控制扩展。|[使用 MEF 扩展 DSL](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [使用 DSL 库在 DSL 之间共享类](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [定义锁定策略以创建只读段](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
-## <a name="see-also"></a>请参阅  
- [如何定义的域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   
- [编写代码以自域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Visual Studio 的建模 SDK - 特定于域的语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+## <a name="see-also"></a>请参阅
+
+[如何定义的域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   
+[编写代码以自域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+[Visual Studio 的建模 SDK - 特定于域的语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
