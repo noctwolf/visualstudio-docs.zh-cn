@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 08517439e2b99ca9ceba29ad3c7558494cf6bb47
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 42c873fc8c7991d5397d611c0aa6009bfc1720c1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 在 Visual Studio 中，你可以使用模型帮助你理解和更改系统、应用程序或组件。 模型能帮助你可视化系统工作的环境、阐明用户需求、定义你系统的体系结构、分析代码并确保你的代码符合要求。 请参阅[第 9 频道视频： 通过建模改善体系结构](http://go.microsoft.com/fwlink/?LinkID=252078)。  
@@ -130,12 +130,13 @@ ms.lasthandoff: 01/13/2018
 |**博客**|[Visual Studio ALM + Team Foundation Server 博客](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技术文章和日志**|[MSDN 体系结构中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 体系结构工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
-## <a name="see-also"></a>请参阅  
- [在敏捷开发中使用模型](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)   
- [建立用户需求模型](../modeling/model-user-requirements.md)   
- [建模应用程序的体系结构](../modeling/model-your-app-s-architecture.md)   
- [基于模型开发测试](../modeling/develop-tests-from-a-model.md)   
- [安排建模解决方案](../modeling/structure-your-modeling-solution.md)
+## <a name="see-also"></a>请参阅
+
+[在敏捷开发中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+[为你的应用程序创建模型](../modeling/create-models-for-your-app.md)   
+[建立用户需求模型](../modeling/model-user-requirements.md)   
+[建模应用程序的体系结构](../modeling/model-your-app-s-architecture.md)   
+[基于模型开发测试](../modeling/develop-tests-from-a-model.md)   
+[安排建模解决方案](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

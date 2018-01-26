@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 64a7f5ae729ff2badfc03750efa43c70973a7498
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 9c21673f318d97ac5abb2b89bdd8d65ae01cef17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 使用设计时 T4 文本模板，你可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据来自数据生成的代码*模型*。 模型是文件或包含有关你的应用程序要求的关键信息的数据库。  
@@ -298,12 +298,11 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
  如果源模型发生更改，则应重新运行该解决方案中的所有模板。 若要手动执行此操作，选择**转换所有模板**上**生成**菜单。  
   
- 如果已安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可视化和建模 SDK，则可以在每次执行生成时自动转换所有模板。 为此，可在文本编辑器中编辑项目文件（.csproj 或 .vbproj），然后在文件末尾附近（其他任何 `<import>` 语句之后）添加以下行：  
+ 如果已安装 Visual Studio 建模 SDK，你可以每次执行生成时自动转换所有模板。 为此，可在文本编辑器中编辑项目文件（.csproj 或 .vbproj），然后在文件末尾附近（其他任何 `<import>` 语句之后）添加以下行：
 
+> [!NOTE]
+> 在 Visual Studio 2017，文本模板转换 SDK 和 Visual Studio 建模 SDK 时会自动安装在安装 Visual Studio 的特定功能。 有关更多详细信息，请参阅[这篇博客文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ```  
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />  
 <PropertyGroup>  

@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ee218f119d8c996c1be72ff911735c271df44e98
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 927b033928d200cbab5271be93679106e7f4fe72
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
 文本模板包含将从其生成的文本。 例如，用于创建网页的模板将包含"\<html > …"和所有其他标准部件的 HTML 页。 插入模板是*控制块*，这是程序代码的片段。 控制块提供变化值，允许文本部件是条件和重复的。  
@@ -258,9 +258,10 @@ Content of MyFile.txt is:
   
 ```  
   
- 还可以获取主机提供的其他服务。 有关详细信息，请参阅[访问 Visual Studio 或其他主机从模板](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
-  
-### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>设计时文本模板在单独的 AppDomain 中运行  
+还可以获取主机提供的其他服务。 有关详细信息，请参阅[访问 Visual Studio 或其他主机从模板](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。
+
+### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>设计时文本模板在单独的 AppDomain 中运行
+
  应该注意，[设计时文本模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)主应用程序分开的 AppDomain 中运行。 在大多数情况下这并不重要，但在某些复杂的情况下你可能会发现一些限制。 例如，如果要从单独的服务将数据传入模板或从中传出数据，则该服务必须提供可序列化的 API。  
   
  (这不是如此[运行时文本模板](../modeling/run-time-text-generation-with-t4-text-templates.md)，其中提供了你代码的其余部分一起编译的代码。)  

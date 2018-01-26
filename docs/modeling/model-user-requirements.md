@@ -13,13 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0ffbfd6da8abb0063ed16d7956bcec97626c9666
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 495e226a16e94dbe87584c54fa317ccb0ab84482
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
+
 通过绘制有关用户的活动和你的系统在帮助他们实现自己目标上所起到的作用的关系图，Visual Studio 可帮助你了解你的用户，并与他们展开讨论、沟通其要求。 需求模型是一组这样的关系图，每一张图都将重点放在用户需求的不同方面。 有关视频演示，请参阅： [业务域建模](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)。  
   
  若要查看支持每种类型的模型的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
@@ -43,10 +44,11 @@ ms.lasthandoff: 01/13/2018
  如果在与用户或其代表进行重点讨论时使用需求模型，并在每次迭代开始时重新查看需求模型，那么使用需求模型会获得最大的好处。 无需在编写代码之前详细地完成它。 即使是非常简单的部分工作的应用程序，通常也能构成与用户讨论需求时的最具激励性的基础。 模型是汇总讨论结果的一种有效方式。 有关详细信息，请参阅[在开发过程中使用模型](../modeling/use-models-in-your-development-process.md)。  
   
 > [!NOTE]
->  在这些主题中，“系统”表示正在开发的系统或应用程序。 它可能是许多软件和硬件组件的大型集合、单个应用程序或一个更大型系统内的某个软件组件。 在每种情况下，需求模型都描述了在系统外部可以通过用户界面或 API 看到的行为。  
+> 在这些主题中，“系统”表示正在开发的系统或应用程序。 它可能是许多软件和硬件组件的大型集合、单个应用程序或一个更大型系统内的某个软件组件。 在每种情况下，需求模型都描述了在系统外部可以通过用户界面或 API 看到的行为。  
   
-## <a name="common-tasks"></a>常规任务  
- 可以根据用户需求创建多个不同的视图。  每个视图都提供特定类型的信息。  在创建这些视图时，最好经常在视图间移动。 可以从任意视图开始。  
+## <a name="common-tasks"></a>常见任务
+
+可以根据用户需求创建多个不同的视图。  每个视图都提供特定类型的信息。  在创建这些视图时，最好经常在视图间移动。 可以从任意视图开始。  
   
 |关系图或文档|需求模型中描述的内容|节|  
 |-------------------------|-----------------------------------------------|-------------|  
@@ -56,8 +58,9 @@ ms.lasthandoff: 01/13/2018
   
  请注意，大多数关系图类型可以用于其他目的。 关系图类型的概述，请参阅[为你的应用程序创建模型](../modeling/create-models-for-your-app.md)。
   
-##  <a name="BusinessRules"></a> Showing Business Rules  
- 业务规则是一个不与特定用例相关联的要求，应在整个系统中进行观察。  
+##  <a name="BusinessRules"></a> Showing Business Rules
+
+业务规则是一个不与特定用例相关联的要求，应在整个系统中进行观察。  
   
  许多业务规则受概念类间关系的约束。 你可以编写这些*静态 * * 业务规则*作为概念类图上的相关类与关联的注释。 例如:  
   
@@ -75,8 +78,9 @@ ms.lasthandoff: 01/13/2018
 |--------------------|----------|  
 |如何开发符合业务规则的代码|[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
- 服务质量要求有多个类别。 它们包括以下类型：  
+##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+
+服务质量要求有多个类别。 它们包括以下类型：  
   
 -   性能  
   
@@ -88,17 +92,13 @@ ms.lasthandoff: 01/13/2018
   
 -   稳定性  
   
- 可以在特定用例的描述中包括其中的一些要求。 其他要求并不特定于用例，并已经非常高效地写入了单独文档。 如果可能，遵守要求模型定所定义的词汇非常有用。 在下面的示例中，请注意，要求中使用的主要词语是参与者、用例和上述插图中的类的标题：  
-  
- 如果餐厅在顾客订餐时删除了菜单项，则任何引用该菜单项的订单项将显示为红色。  
-  
- 下列主题提供了更多信息：  
-  
-|了解|读取|  
-|--------------------|----------|  
-|有关记录服务要求质量的更详细信息|[定义服务质量要求的准则](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
-|如何开发符合服务质量要求的代码|[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|  
-  
-## <a name="see-also"></a>请参阅  
- [在开发过程中使用模型](../modeling/use-models-in-your-development-process.md)   
- [应用体系结构建模](../modeling/model-your-app-s-architecture.md)   
+可以在特定用例的描述中包括其中的一些要求。 其他要求并不特定于用例，并已经非常高效地写入了单独文档。 如果可能，遵守要求模型定所定义的词汇非常有用。 在下面的示例中，请注意，要求中使用的主要词语是参与者、用例和上述插图中的类的标题：
+
+如果餐厅在顾客订餐时删除了菜单项，则任何引用该菜单项的订单项将显示为红色。
+
+请参阅[建模应用程序的体系结构](../modeling/model-your-app-s-architecture.md)若要了解如何开发的代码所遵循服务质量要求。
+
+## <a name="see-also"></a>请参阅
+
+[在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)  
+[应用体系结构建模](../modeling/model-your-app-s-architecture.md)

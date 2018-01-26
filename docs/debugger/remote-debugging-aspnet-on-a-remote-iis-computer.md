@@ -15,18 +15,18 @@ manager: ghogen
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 748da513053b981e88afccf6c16ccabd60d80b3e
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: f1938473a3a5e085e63b9b522bbc31678dedbbd4
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 远程 IIS 计算机上的远程调试 ASP.NET 核心
 若要调试的 ASP.NET 应用程序部署到 IIS，安装和在计算机上运行远程工具其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
 
 ![远程调试器组件](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-本指南说明如何设置和配置 Visual Studio 2017 ASP.NET Core、 将其部署到 IIS 中，并从 Visual Studio 中附加远程调试器。 远程调试 ASP.NET 4.5.2，请参阅[在 IIS 的计算机上的远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 你还可以部署和调试在 IIS 使用 Azure 上。 对 Azure App Service，你可以轻松部署和调试上 IIS 使用的预配置实例[快照调试器](../debugger/debug-live-azure-applications.md)或[将调试器附加服务器资源管理器](../debugger/remote-debugging-azure.md)。
+本指南说明如何设置和配置 Visual Studio 2017 ASP.NET Core、 将其部署到 IIS 中，并从 Visual Studio 中附加远程调试器。 远程调试 ASP.NET 4.5.2，请参阅[在 IIS 的计算机上的远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 你还可以部署和调试在 IIS 使用 Azure 上。 对 Azure App Service，你可以轻松部署和在 IIS 和远程调试器使用的预配置实例上进行调试[快照调试器](../debugger/debug-live-azure-applications.md)或[将调试器附加服务器资源管理器](../debugger/remote-debugging-azure.md)。
 
 这些过程已经过测试在这些服务器配置：
 * Windows Server 2012 R2 和 IIS 8

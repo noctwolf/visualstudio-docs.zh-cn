@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0f72632ccb56da42da3a9534a9a6d26d87dd6791
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a8208d41631985fb6027e2827a847bb3e5e1d7ec
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>使用域特定语言解决方案
 使用创建域特定语言 (DSL)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案。 本节是有关如何设置和自定义解决方案。  
@@ -47,5 +47,5 @@ ms.lasthandoff: 01/13/2018
  [如何：扩展域特定语言设计器](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  你可以自定义菜单命令 DSL 设计器。  
   
- [如何自动转换所有模板](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [如何自动转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  若要避免单击转换所有模板，你可以更加自动生成的一部分。

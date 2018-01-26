@@ -19,27 +19,23 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 972fa76d83c9ecfbe9efb23897a6e0ec5928c35f
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
-若要定义域特定语言 (DSL)，请从模板创建 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案。 解决方案的重要组成部分是 DSL 定义关系图，它存储在 DslDefinition.dsl 中。 DSL 定义将定义 DSL 的类和形状。 在进行修改并将所做修改添加到这些元素后，可以添加程序代码以更详细地自定义 DSL。  
-  
- 如果你不熟悉 Dsl，我们建议你通读**DSL 工具实验室**，你可以在此站点中查找： [Visualizaton 和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+若要定义的域特定语言 (DSL)，请从模板创建一个 Visual Studio 解决方案。 解决方案的重要组成部分是 DSL 定义关系图，它存储在 DslDefinition.dsl 中。 DSL 定义将定义 DSL 的类和形状。 在进行修改并将所做修改添加到这些元素后，可以添加程序代码以更详细地自定义 DSL。
 
+如果你不熟悉 Dsl，我们建议你通读**DSL 工具实验室**，你可以在此站点中查找： [Visualizaton 和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ##  <a name="templates"></a>选择模板解决方案  
  若要定义 DSL，必须安装以下组件：  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Visual Studio 可视化和建模 SDK||  
 
@@ -47,7 +43,7 @@ ms.lasthandoff: 01/13/2018
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
   
- 若要创建新的域特定语言，请使用域特定语言项目模板创建新的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案。  
+ 若要创建新的域特定语言，你创建一个新的 Visual Studio 解决方案，使用的域特定语言的项目模板。  
   
 #### <a name="to-create-a-dsl-solution"></a>创建 DSL 解决方案  
   
@@ -98,17 +94,17 @@ ms.lasthandoff: 01/13/2018
 ### <a name="test-the-solution"></a>测试解决方案  
  模板解决方案提供了一个工作 DSL，你可以对其进行修改或按原样使用。  
   
- 若要测试解决方案，请按 F5 或 CTRL+F5。 一个新的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 实例将以实验模式打开。  
+ 若要测试解决方案，请按 F5 或 CTRL+F5。 在实验模式下打开 Visual Studio 的新实例。  
   
- 在新的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 实例中，在“解决方案资源管理器”中，打开“Sample”文件。 它将打开为关系图，并带有一个工具箱。  
+ 在 Visual Studio 中，在解决方案资源管理器的新实例中打开示例文件。 它将打开为关系图，并带有一个工具箱。  
   
- 如果运行的解决方案具有从创建**最小语言**模板，你实验[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将类似于下面的示例：  
+ 如果运行的解决方案具有从创建**最小语言**模板，你实验性 Visual Studio 将类似于下面的示例：  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
  试验这些工具。 创建元素并连接它们。  
   
- 关闭 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例。  
+ 关闭 Visual Studio 的实验实例。  
   
 > [!NOTE]
 >  已修改 DSL 后，你将不再能够查看“Sample”测试文件上的形状。 但是，将能够创建新元素。  
@@ -217,11 +213,11 @@ ms.lasthandoff: 01/13/2018
   
 ##### <a name="to-test-the-new-domain-classes"></a>测试新的域类  
   
-1.  **单击转换所有模板**的工具栏中的解决方案资源管理器，生成的 DSL 设计器代码。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动转换所有模板](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+1.  **单击转换所有模板**的工具栏中的解决方案资源管理器，生成的 DSL 设计器代码。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。
   
-2.  **生成并运行 DSL。** 按 F5 或 CTRL + F5 运行的新实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]在实验模式下。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例中，打开或创建具有 DSL 的文件扩展名的文件。  
+2.  **生成并运行 DSL。** 按 F5 或 CTRL + F5 以在实验模式下运行 Visual Studio 的新实例。 在 Visual Studio 的实验实例中，打开或创建具有 DSL 的文件扩展名的文件。  
   
-3.  **打开资源管理器。** 在关系图的一端是语言资源管理器窗口中，通常名为*YourLanguage*资源管理器。 如果未看见此窗口，则它可能位于“解决方案资源管理器”下方的选项卡上。 如果找不到它，在**视图**菜单上，指向**其他窗口**，然后单击 * YourLanguage ***资源管理器**。  
+3.  **打开资源管理器。** 在关系图的一端是语言资源管理器窗口中，通常名为*YourLanguage*资源管理器。 如果未看见此窗口，则它可能位于“解决方案资源管理器”下方的选项卡上。 如果找不到它，在**视图**菜单上，指向**其他窗口**，然后单击*YourLanguage* **资源管理器**。  
   
      资源管理器将呈现模型的树视图。  
   
@@ -317,7 +313,7 @@ ms.lasthandoff: 01/13/2018
   
 1.  **单击转换所有模板**的工具栏中的解决方案资源管理器，生成的 DSL 设计器代码。  
   
-2.  **生成并运行 DSL。** 按 F5 或 CTRL + F5 运行的新实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]在实验模式下。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例中，打开或创建具有 DSL 的文件扩展名的文件。  
+2.  **生成并运行 DSL。** 按 F5 或 CTRL + F5 以在实验模式下运行 Visual Studio 的新实例。 在 Visual Studio 的实验实例中，打开或创建具有 DSL 的文件扩展名的文件。  
   
 3.  **验证元素工具显示在工具箱。**  
   
@@ -393,7 +389,7 @@ ms.lasthandoff: 01/13/2018
   
 1.  **单击转换所有模板**的工具栏中的解决方案资源管理器，生成的 DSL 设计器代码。  
   
-2.  **生成并运行 DSL。** 按 F5 或 CTRL + F5 运行的新实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]在实验模式下。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例中，打开或创建具有 DSL 的文件扩展名的文件。  
+2.  **生成并运行 DSL。** 按 F5 或 CTRL + F5 以在实验模式下运行 Visual Studio 的新实例。 在 Visual Studio 的实验实例中，打开或创建具有 DSL 的文件扩展名的文件。  
   
 3.  **验证连接工具出现在工具箱。**  
   
@@ -494,7 +490,7 @@ ms.lasthandoff: 01/13/2018
   
 1.  **单击转换所有模板**的工具栏中的解决方案资源管理器，生成的 DSL 设计器代码。  
   
-2.  **生成并运行 DSL。** 按 F5 或 CTRL + F5 运行的新实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]在实验模式下。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例中，打开或创建具有 DSL 的文件扩展名的文件。  
+2.  **生成并运行 DSL。** 按 F5 或 CTRL + F5 以在实验模式下运行 Visual Studio 的新实例。 在 Visual Studio 的实验实例中，打开或创建具有 DSL 的文件扩展名的文件。  
   
 3.  **验证工具出现在工具箱。**  
   
@@ -623,12 +619,10 @@ ms.lasthandoff: 01/13/2018
 |在 DSL 的资源管理器中，只显示元素及其类型名称。|在 DSL 定义中，选择类的一个域属性，在属性窗口中，设置**是元素名称**为 true。|  
 |始终在 XML 编辑器中打开 DSL。|发生这种情况是由于在读取文件的同时出现一个错误。 但是，即使在修复该错误后，也必须显式将该编辑器重置为 DSL 设计器。<br /><br /> 右键单击项目项，单击**打开**，然后选择 * YourLanguage ***设计器 （默认值）**。|  
 |在更改程序集名称后，不会显示 DSL 的工具箱。|检查并更新**DslPackage\GeneratedCode\Package.tt**详细信息，请参阅[如何： 更改域特定语言的 Namespace](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。|  
-|不会显示 DSL 的工具箱，但并未更改程序集名称。<br /><br /> 或者，显示一个报告加载扩展失败的消息框。|重置实验实例，并重新生成解决方案。<br /><br /> 1.在 Windows 开始菜单上，在**所有程序**，展开[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然后**工具**，然后单击**重置 Microsoft Visual Studio 实验实例**。<br />2.上[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**生成**菜单上，单击**重新生成解决方案**。|  
+|不会显示 DSL 的工具箱，但并未更改程序集名称。<br /><br /> 或者，显示一个报告加载扩展失败的消息框。|重置实验实例，并重新生成解决方案。<br /><br /> 1.在 Windows 开始菜单上，在**所有程序**，展开[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然后**工具**，然后单击**重置 Microsoft Visual Studio 实验实例**。<br />2.在 Visual Studio**生成**菜单上，单击**重新生成解决方案**。|  
   
 ## <a name="see-also"></a>请参阅  
  [Getting Started with 域特定语言](../modeling/getting-started-with-domain-specific-languages.md)   
  [创建 Windows 基于窗体的域特定语言](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [创建基于 WPF 的域特定语言](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 9b2823c15309e63262052fd3cc95d914bf1614c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: be1402da1677388712472d4309c40ce767358f7b
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>演练： 发布 Visual Studio 扩展
 
@@ -70,9 +70,7 @@ ms.lasthandoff: 12/22/2017
 
   ![将上载到应用商店](media/upload-to-marketplace.png)
 
-6. 选择你想要用于上载你的扩展的发布服务器。  您可以通过单击左上角的发布服务器名称更改发布服务器。
-
-  ![更改 Marketplace 发布者](media/change-marketplace-publisher.png)
+6. 选择你想要用于上载你的扩展的发布服务器。  你可以通过单击左侧列出的发布服务器名称更改发布服务器。  单击**新扩展**和选择**Visual Studio**。
 
 7. 在**1： 上载扩展**，你可以选择将 VSIX 文件上载到 Visual Studio 应用商店的直接或只需添加您自己的网站的链接。 在这种情况下，我们将以上载我们的扩展，TestPublish.vsix。  拖放你的扩展或使用**单击**链接以浏览到该文件。  在项目的 \bin\Release 文件夹中找不到你的扩展。  单击 **“继续”**。
 
@@ -86,7 +84,7 @@ ms.lasthandoff: 12/22/2017
     
     * **VSIX ID**是 Visual Studio 将使用你的扩展的唯一标识符。  如果你想要让您进行自动更新的扩展，这是必需的。  这从 source.extension.vsixmanifest 文件中是自动填充。
     
-    * **徽标**了将用于你的扩展。  这将从如果提供的 source.extension.vsixmanifest 文件中是自动填充。
+   * **徽标**了将用于你的扩展。  这将从如果提供的 source.extension.vsixmanifest 文件中是自动填充。
     
     * **简短说明**的你的扩展的用途。  这将从 source.extension.vsixmanifest 文件中是自动填充。
     
@@ -108,12 +106,32 @@ ms.lasthandoff: 12/22/2017
     
     * **扩展允许问答**将允许用户在你的扩展入口页上保留问题。
 
-9. 单击**保存并上载**。 你将转回你的发布者管理页。  尚未发布你的扩展。  若要将扩展悬停发布你的扩展项，然后单击**...**然后**公开**。  你可以查看如何扩展将如下所示在 Marketplace 上通过选择**查看详细信息**。  获取数字，请单击**报表**。  若要对你的扩展进行更改，请单击 **编辑*。
+9. 单击**保存并上载**。 你将转回你的发布者管理页。  尚未发布你的扩展。  若要发布你的扩展，右键单击你扩展并选择**设为公开**。  你可以查看如何扩展将如下所示在 Marketplace 上通过选择**视图扩展**。  获取数字，请单击**报表**。  若要对你的扩展进行更改，请单击 **编辑*。
 
   ![扩展条目菜单](media/extension-entry-menu.png)
 
 10. 单击后**设为公开**，你的扩展现在是公共。  搜索你的扩展 Visual Studio Marketplace。
 
+## <a name="add-additional-users-to-manage-your-publisher-account"></a>添加其他用户管理你的发布服务器帐户
+
+应用商店支持授予其他用户权限来访问和管理发布服务器帐户。
+
+1. 导航到要添加到的其他用户的发布服务器帐户。
+
+2. 选择**成员**，然后单击**添加**
+
+  ![添加其他用户](media/add-users.png)
+
+3. 你可以随后指定要添加并授予适当级别的下访问用户的电子邮件地址**选择一个角色**。  您可以选择下列项目:
+
+  * **创建者**： 用户可以发布扩展，但无法查看或管理其他用户所发布的扩展。
+  
+  * **读取器**： 用户可以查看扩展，但不能发布或管理扩展。
+  
+  * **参与者**： 用户可以发布和管理扩展，但不能编辑发布服务器设置或管理访问权。
+  
+  * **所有者**： 用户可以发布和管理扩展，编辑发布服务器设置和管理访问权限。
+  
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>从 Visual Studio 应用商店中安装扩展
 
 发布该扩展后，在 Visual Studio 中安装它并对其进行测试。
@@ -126,7 +144,7 @@ ms.lasthandoff: 12/22/2017
 
 4. 若要完成安装，请关闭 Visual Studio 的所有实例。
 
-## <a name="removing-the-extension"></a>删除扩展
+## <a name="remove-the-extension"></a>删除扩展
 
 从 Visual Studio 应用商店和你的计算机，可以删除该扩展。
 
@@ -136,7 +154,7 @@ ms.lasthandoff: 12/22/2017
 
 2. 在右上角中，单击**发布**扩展。  选取用于发布 TestPublish 发布服务器。  将显示 TestPublish 的列表。
 
-3. 将鼠标悬停在的扩展条目并单击**...**和**删除...**你将需要确认你是否要删除该扩展。  单击 **“确定”**。
+3. 右键单击扩展条目并单击**删除**你将需要确认你是否要删除该扩展。  单击 **“确定”**。
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>若要从你的计算机中删除扩展
 

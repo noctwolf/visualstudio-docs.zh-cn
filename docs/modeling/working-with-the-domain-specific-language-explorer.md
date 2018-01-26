@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 34d2008b4316d75d37292b5baa456bf9cdc65e15
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: d2d6d4ebfa8ca86179afb8d88b59dca6b42d9e26
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>使用域特定语言资源管理器
 **DSL 资源管理器**在树视图中显示的信息的几种类型。 有关大部分 DSL 资源管理器中的项的详细信息，请参阅[如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)。  
@@ -43,4 +43,4 @@ ms.lasthandoff: 01/13/2018
 -   **Xml 序列化行为**。 用于该模型的序列化设置。 有关序列化的详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [域特定语言工具词汇表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

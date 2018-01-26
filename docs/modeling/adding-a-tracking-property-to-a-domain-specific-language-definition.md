@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8250f21bd95816bf0d9424dc4a3fbb45302919d7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 21e31bd582fda7884f0f246bd6eda39e5e89a375
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>向域特定语言定义中添加跟踪属性
 本演练演示如何向域模型中添加跟踪属性。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/13/2018
   
  例如，在域特定语言工具 （DSL 工具），属性的域类具有一个默认值，通过使用域类，而是用户的名称来计算的显示名称可以在设计时更改的值或其重置为计算值。  
   
- 在本演练中，你将创建具有跟踪具有基于模型的默认 Namespace 属性的默认值的属性的 Namespace 的域特定语言 (DSL)。 有关跟踪属性的详细信息，请参阅[定义跟踪属性](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be)。  
+ 在本演练中，你将创建具有跟踪具有基于模型的默认 Namespace 属性的默认值的属性的 Namespace 的域特定语言 (DSL)。 有关跟踪属性的详细信息，请参阅[定义跟踪属性](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。  
   
 -   跟踪属性描述符 DSL 工具支持。 但是，DSL 设计器不能用于将跟踪属性添加到一种语言。 因此，你必须添加自定义代码以定义和实现跟踪属性。  
   
@@ -253,7 +253,7 @@ ms.lasthandoff: 01/13/2018
 #### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>若要修改 ExampleModel 域类的类型描述符  
   
 1.  将以下代码添加到 TypeDescriptor.cs 文件中。  
-  
+
     ```csharp  
     using System;  
     using System.ComponentModel;  

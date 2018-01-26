@@ -7,37 +7,38 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 417ec1ca-e2fa-4496-87cb-ac04c9f26741
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 38d37d1c7805e98d8cf90fbb2e96e1d3c444313c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d294a705f77e09cfcd4d17b37d2db4c0f318414b
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="xml-editor-components"></a>“XML 编辑器”的组件
-本节讨论“XML 编辑器”的窗口和对话框。 因为“XML 编辑器”基于“文本编辑器”，所以，某些集成开发环境 (IDE) 使用常规的“文本编辑器”设置进行配置。  
-  
-## <a name="in-this-section"></a>本节内容  
- [“选项”对话框 ->“文本编辑器”->“XML”->“杂项”](../xml-tools/miscellaneous-xml-text-editor-options-dialog-box.md)  
- 讨论“XML 编辑器”的自动完成和架构设置。  
-  
- [“属性”窗口 -> XML 文档属性](../xml-tools/xml-document-properties-properties-window.md)  
- 介绍可用的基本文档信息。  
-  
- [“选项”对话框 ->“文本编辑器”->“XML”->“格式设置”](../xml-tools/formatting-xml-text-editor-options-dialog-box.md)  
- 讨论控制属性如何格式化、如何处理混合内容等的设置。  
-  
- [XML 架构对话框](../xml-tools/xml-schemas-dialog-box.md)  
- 介绍如何选择 XML 架构与 XML 文档关联。  
-  
-## <a name="related-sections"></a>相关章节  
- [如何： 设置常规编辑器选项](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
- 描述如何设置常规设置，例如显示、语句完成等。  
-  
-## <a name="see-also"></a>请参阅  
- [XML 编辑器](../xml-tools/xml-editor.md)
+# <a name="xml-editor-components"></a>XML 编辑器组件
+
+本部分讨论 XML 编辑器窗口和对话框。 由于 XML 编辑器基于文本编辑器，某些集成的开发环境 (IDE) 使用的常规文本编辑器设置进行配置。
+
+## <a name="in-this-section"></a>本节内容
+
+[“选项”对话框 ->“文本编辑器”->“XML”->“杂项”](../xml-tools/miscellaneous-xml-text-editor-options-dialog-box.md)  
+讨论“XML 编辑器”的自动完成和架构设置。
+
+[“属性”窗口 -> XML 文档属性](../xml-tools/xml-document-properties-properties-window.md)  
+介绍可用的基本文档信息。
+
+[“选项”对话框 ->“文本编辑器”->“XML”->“格式设置”](../xml-tools/formatting-xml-text-editor-options-dialog-box.md)  
+讨论控制属性如何格式化、如何处理混合内容等的设置。
+
+[XML 架构对话框](../xml-tools/xml-schemas-dialog-box.md)  
+介绍如何选择 XML 架构与 XML 文档关联。
+
+## <a name="related-sections"></a>相关章节
+
+[更改在编辑器中的文本颜色](../ide/quickstart-personalize-the-ide.md#change-text-color)
+
+## <a name="see-also"></a>请参阅
+
+[XML 编辑器](../xml-tools/xml-editor.md)

@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 467874db7b9dc0dbdc8e168bd5396fd033b90fc7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 8a8b349e43f4728fee3ec676a689e6ba03cde758
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：创建域特定语言解决方案
 通过一个专用创建域特定语言 (DSL)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案。  
@@ -131,7 +131,8 @@ ms.lasthandoff: 01/13/2018
  如果你想要将 DSL 与另一个程序集相集成，请使用此选项。  
   
  有关强命名的详细信息，请参阅[创建和使用具有强名称程序集](http://go.microsoft.com/fwlink/?LinkId=186073)。  
-  
-## <a name="see-also"></a>请参阅  
- [如何定义的域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   
- [域特定语言工具词汇表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+
+## <a name="see-also"></a>请参阅
+
+[如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)  
+[域特定语言工具词汇表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

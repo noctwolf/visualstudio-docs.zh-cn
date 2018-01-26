@@ -25,19 +25,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f439ebbf7505086c3105fbb5aee9ba05f22de2e4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 26dbef0fce67b4af461e7bbc15ecb870f630ca0e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-models-for-your-app"></a>为你的应用程序创建模型
+
 建模图有助于理解、阐明和传达代码的构思和软件系统必须支持的用户需求。
-  
- 若要查看支持每种类型的关系图的 Visual Studio 的版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
-  
- 若要可视化系统的体系结构或现有代码，请创建以下关系图：  
-  
+
+若要查看支持每种类型的关系图的 Visual Studio 的版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+
+若要可视化系统的体系结构或现有代码，请创建以下关系图：  
+
 |**关系图**|**显示**|  
 |-----------------|---------------|  
 |[依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)<br /><br /> [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)|系统的上层体系结构|  
@@ -52,11 +53,10 @@ ms.lasthandoff: 01/13/2018
 |[建立用户需求模型](../modeling/model-user-requirements.md)|使用模型来阐明和传达用户的需求。|  
 |[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|使用模型来描述系统的整体结构和行为，并确保它满足用户的需求。|  
 |[在开发过程中验证系统](../modeling/validate-your-system-during-development.md)|确保软件与用户的需求和系统的整体体系结构保持一致。|  
-|[在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)<br /><br /> [在敏捷开发中使用模型](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|使用模型来帮助你在系统开发的过程中了解和更改你的系统。|  
+|[在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)<br /><br /> [在敏捷开发中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|使用模型来帮助你在系统开发的过程中了解和更改你的系统。|  
 |[安排建模解决方案](../modeling/structure-your-modeling-solution.md)|在大中型项目中组织模型。|  
   
-## <a name="external-resources"></a>外部资源  
-  
-|**类别**|**Links**|  
-|------------------|---------------|  
-|**论坛**|-   [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 可视化和建模 SDK（DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
+## <a name="resources"></a>资源
+
+[Visual Studio 可视化和建模工具论坛](http://go.microsoft.com/fwlink/?LinkId=184720)  
+[Visual Studio 扩展性论坛](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)
