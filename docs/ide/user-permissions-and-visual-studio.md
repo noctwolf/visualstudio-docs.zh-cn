@@ -12,17 +12,16 @@ helpviewer_keywords:
 - user permissions
 - administrative privileges
 - permissions
-ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8062b6d37c675defeea369ebe8f8bf15fcbdd8ee
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.workload:
+- multiple
+ms.openlocfilehash: 6a19d67530d3cb7ac81ee00e3e65f4cce74c8d07
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/12/2018
 ||安装、更新或移除本地 Help 内容。|[安装和管理本地内容](../ide/install-and-manage-local-content.md)|  
 |应用程序类型|部署 SharePoint 的解决方案。|[开发 SharePoint 解决方案的需求](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
 ||获取 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]的开发人员许可证。|[获取开发人员许可证](http://go.microsoft.com/fwlink/?LinkID=241313)|  
-|工具箱|将经典 COM 控件添加到“工具箱”。|[使用工具箱](../ide/using-the-toolbox.md)|  
+|工具箱|将经典 COM 控件添加到“工具箱”。|[工具箱](../ide/reference/toolbox.md)|  
 |外接程序|安装和使用通过使用 IDE 中的经典 COM 编写的加载项。|[创建外接程序和向导](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|  
 |生成|使用注册组件的后期生成事件。|[了解自定义生成步骤和生成事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
 ||在生成 C++ 项目时包括一个注册步骤。|[了解自定义生成步骤和生成事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
