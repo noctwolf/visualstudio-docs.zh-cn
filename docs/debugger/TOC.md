@@ -18,6 +18,7 @@
 # 操作指南
 ## [使用调试器浏览代码](navigating-through-code-with-the-debugger.md)
 ## [使用断点](using-breakpoints.md)
+### [故障排除断点](troubleshooting-breakpoints.md)
 ## [检查数据](debugger-windows.md)
 ### [检查变量](autos-and-locals-windows.md)
 ### [对变量设置监视](watch-and-quickwatch-windows.md)
