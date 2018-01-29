@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
@@ -21,11 +22,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4113eda7afc2a5509c4f3f19b74628d7a9eb36e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 1c4f90aae0644ec1ff0edad55904360ddddb4be5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中的 Python 选项
 
@@ -51,10 +52,10 @@ ms.lasthandoff: 01/12/2018
 | --- | --- | --- |
 | 在创建虚拟环境时显示输出窗口| On | 清除该选项可避免显示输出窗口。 |
 | 在安装或删除包时显示输出窗口 | On |  清除该选项可避免显示输出窗口。 |
-| 始终以管理员身份运行 pip | Off | 始终为所有环境提升 `pip install` 操作。 安装包时，如果环境位于文件系统（如 `c:\Program Files`）的保护区域内，Visual Studio 将提示需要管理员权限。 出现该提示时，可选择始终仅为此环境提升 `pip install`。 请参阅 [Python 环境 - pip 选项卡](python-environments.md#pip-tab)。 |
+| 始终以管理员身份运行 pip | Off | 始终为所有环境提升 `pip install` 操作。 安装包时，如果环境位于文件系统（如 `c:\Program Files`）的保护区域内，Visual Studio 将提示需要管理员权限。 出现该提示时，可选择始终仅为此环境提升 `pip install`。 请参阅 [Python 环境 - pip 选项卡](managing-python-environments-in-visual-studio.md#pip-tab)。 |
 | 初次使用时自动生成完成 DB | On | 要使 [IntelliSense 完成](code-editing.md#intellisense)可用于库，Visual Studio 必须为该库生成完成数据库。 安装库后，将在后台生成数据库，但有可能在开始编写代码时此过程还未完成。 选择此选项后，在编写使用某个库的代码时，Visual Studio 会优先完成此库的数据库。 |
-| 忽略系统级 PYTHONPATH 变量 | On | 默认情况下会忽略 PYTHONPATH，因为 Visual Studio 提供了一种更直接的方式来指定环境和项目中的搜索路径。 有关详细信息，请参阅 [Python 环境 - 搜索路径](python-environments.md#search-paths)。 |
-| 添加链接文件时更新搜索路径 | On | 如果设置此选项，将一个[链接文件](python-projects.md#linked-files)添加到项目会更新[搜索路径](python-environments.md#search-paths)，以便 IntelliSense 能在其完成数据库中包含链接文件的文件夹的内容。 清除此选项将从完成数据库中排除此类内容。 |
+| 忽略系统级 PYTHONPATH 变量 | On | 默认情况下会忽略 PYTHONPATH，因为 Visual Studio 提供了一种更直接的方式来指定环境和项目中的搜索路径。 有关详细信息，请参阅 [Python 环境 - 搜索路径](managing-python-environments-in-visual-studio.md#search-paths)。 |
+| 添加链接文件时更新搜索路径 | On | 如果设置此选项，将一个[链接文件](managing-python-projects-in-visual-studio.md#linked-files)添加到项目会更新[搜索路径](managing-python-environments-in-visual-studio.md#search-paths)，以便 IntelliSense 能在其完成数据库中包含链接文件的文件夹的内容。 清除此选项将从完成数据库中排除此类内容。 |
 | 在找不到导入模块时发出警告 | On | 当知道导入模块当前不可用但不会影响代码操作时，清除此选项可禁止发出警告。 |
 | 将缩进不一致报告为 | 警告 | 由于 Python 解释器严重依赖于正确的缩进来确定作用域，因此默认情况下，Visual Studio 将在检测到可能指示编码错误的缩进不一致时发出警告。 设置为“错误”可提升严格度，这样会导致出现这些情况时退出程序。 若要完全禁用此行为，请选择“不”。 |
 | 检查调查/新闻 | 每周一次 | 设置频率，允许 Visual Studio 以此频率打开窗口，此窗口包含一个网页，其中含有 Python 相关的调查和新闻条目（如果有）。 选项包括“从不”、“每天一次”、“每周一次”和“每月一次”。 |
@@ -88,7 +89,7 @@ ms.lasthandoff: 01/12/2018
 
 | 选项 | 默认 | 描述 |
 | --- | --- | --- |
-| 脚本 | 不可用 | 指定启动脚本的常规文件夹，将其应用于所有环境的交互窗口。 请参阅[启动脚本](python-environments.md#startup-scripts)。 但请注意，此功能当前无效。 |
+| 脚本 | 不可用 | 指定启动脚本的常规文件夹，将其应用于所有环境的交互窗口。 请参阅[启动脚本](managing-python-environments-in-visual-studio.md#startup-scripts)。 但请注意，此功能当前无效。 |
 | 可使用向上/向下箭头浏览历史记录 | On | 使用箭头键在交互窗口中浏览历史记录。 清除此设置可改为使用箭头键在交互窗口的输出中浏览。 |
 | 完成模式 | 仅评估表达式而无需调用函数 | 要确定交互窗口中表达式上的可用成员，可能需要评估当前未完成的表达式，这可能带来负作用或导致多次调用函数。 “仅评估表达式而无需调用函数”是默认设置，此设置可排除可能调用函数的表达式，并对其他表达式进行评估。 例如，会评估 `a.b`，但不会评估 `a().b`。  “永不评估表达式”仅使用常规 IntelliSense 引擎获取建议，可避免所有副作用。 “评估所有表达式”会评估完整的表达式以获取建议，不考虑是否存在副作用。 |
 | 隐藏静态分析建议 | Off | 如果设置此选项，将仅显示通过评估表达式获取的建议。 如果与完成模式“永不评估表达式”结合使用，交互窗口中将不会显示任何有用的完成。 |

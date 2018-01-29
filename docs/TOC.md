@@ -165,7 +165,7 @@
 ###### [重命名](ide/reference/rename-vb.md)
 ###### [同步类型和文件名](ide/reference/sync-type-and-file-vb.md)
 #### [工作效率提示](ide/productivity-tips-for-visual-studio.md)
-##### [提示和技巧](ide/tips-and-tricks-for-visual-studio.md)
+##### [键盘提示](ide/tips-and-tricks-for-visual-studio.md)
 ##### [针对 .NET 开发人员的提示](ide/visual-studio-2017-for-dotnet-developers.md)
 ##### [标识并自定义键盘快捷键](ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 ###### [常用命令的默认键盘快捷键](ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)

@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-caps.latest.revision: "59"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4e809363656b94dc4e922d558a57a0848dba46e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e12ce40375bbd4c24cde8fe3bf3e06d268aa1c20
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是一个用于生成应用程序的平台。 此引擎（也称为 MSBuild）为项目文件提供了一个 XML 架构，用于控制生成平台处理和生成软件的方式。 Visual Studio 会使用 MSBuild，但它不依赖于 Visual Studio。 通过在你的项目或解决方案文件中调用 msbuild.exe，你可以在未安装 Visual Studio 的环境中安排和生成产品。  
@@ -50,7 +52,7 @@ ms.lasthandoff: 12/22/2017
  你可以在 Visual Studio IDE 中编写代码，但使用 MSBuild 来运行生成。 或者，你也可以在开发计算机的 IDE 中生成代码，但使用 MSBuild 命令行生成从多个开发人员集成的代码。  
   
 > [!NOTE]
->  你可以使用 Team Foundation Build 自动编译、测试和部署你的应用程序。 你的生成系统会在开发人员签入代码（例如，作为持续集成策略的一部分）时或按照计划（例如，夜间版本验证测试生成）自动运行生成。 Team Foundation Build 使用 MSBuild 来编译你的代码。 有关详细信息，请参阅[生成应用程序](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
+>  你可以使用 Team Foundation Build 自动编译、测试和部署你的应用程序。 你的生成系统会在开发人员签入代码（例如，作为持续集成策略的一部分）时或按照计划（例如，夜间版本验证测试生成）自动运行生成。 Team Foundation Build 使用 MSBuild 来编译你的代码。 有关详细信息，请参阅[生成和发布](/vsts/build-release/index)。  
   
  本主题概述了 MSBuild。 有关介绍性教程，请参阅[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   

@@ -1,13 +1,15 @@
 ---
 title: "如何：使用引用管理器添加或删除引用 | Microsoft Docs"
 ms.custom: 
-ms.date: 06/21/2017
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ReferenceManager
+f1_keywords:
+- VS.ReferenceManager
 helpviewer_keywords:
 - Visual C# projects, references
 - references [Visual Studio], adding
@@ -23,12 +25,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 24c317a641fc178306013d8b75c3254f3d3f7b1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 34dd559abcbfa6172c52edd2ed5eae2898f0b358
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 
@@ -198,7 +201,7 @@ SDK 是文件集合，Visual Studio 将其视为单个组件。 在“扩展”�
 
 可以使用“浏览”按钮浏览查找文件系统中的组件。
 
-一个项目可以引用以不同 .NET Framework 版本为目标的组件。 例如，可以创建以 .NET Framework 4 Client Profile 为目标，并引用以 .NET Framework 2 为目标的组件的应用程序。 有关详细信息，请参阅[面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)。
+一个项目可以引用以不同 .NET Framework 版本为目标的组件。 例如，可以创建定目标到 .NET Framework 4 7，但引用的组件定目标到 .NET Framework 4 的应用程序。 有关详细信息，请参阅[面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)。
 
 应当避免添加对同一解决方案中另一项目的输出的文件引用，因为这种做法可能导致编译错误。 而应使用“引用管理器”对话框的“解决方案”选项卡来创建项目到项目的引用。 这样就可以更好地管理在项目中创建的类库，从而更易于进行团队开发。 有关详细信息，请参阅[有关损坏的引用的疑难解答](../ide/troubleshooting-broken-references.md)。
 

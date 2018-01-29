@@ -4,14 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+- JavaScript
 helpviewer_keywords:
 - dominators, memory analyzer (JavaScript)
 - memory leaks (JavaScript)
@@ -21,17 +19,17 @@ helpviewer_keywords:
 - JavaScript Memory Analyzer
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
-ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
-caps.latest.revision: "49"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 00162ab0ad516391b98ee0a17fa9c9f7294c92b3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>分析 UWP 应用中的 JavaScript 内存使用情况
 JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内存使用情况，在使用 JavaScript 为 Windows 构建的 UWP 应用中查找内存泄漏。 受支持的应用包括通用 Windows 应用的应用。
@@ -48,36 +46,14 @@ JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内
   
      不是直接在应用程序代码中创建的对象将被自动筛选出来。还可按对象名称筛选数据。  
   
- 有关引导用户在正在运行的应用中完成内存泄露查找过程的教程，请参阅[演练：查找内存泄漏 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
-  
- 本主题内容：  
-  
- [运行 JavaScript 内存分析器](#Run)   
- [检查内存使用量](#Check)   
- [Isolate a memory leak](#Isolate)   
- [查看实时内存使用量摘要](#LiveMemory)   
- [View a snapshot summary](#SnapshotSummary)   
- [查看快照详细信息](#SnapshotDetails)   
- [查看快照差异](#SnapshotDiff)   
- [按控制器查看对象](#FoldObjects)   
- [按标识符筛选数据](#Filter)   
- [在对象树中查找对象](#ShowInRootsView)   
- [查看共享对象引用](#References)   
- [显示内置对象](#BuiltInValues)   
- [保存诊断会话文件](#Save)   
- [Associate source code with memory usage data](#JSConsoleCommands)   
- [确定内存问题的提示](#Tips)  
-  
 ##  <a name="Run"></a> 运行 JavaScript 内存分析器  
- 如果工作的 UWP 应用在 Visual Studio 中打开或安装在运行 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更高版本的计算机上，则可使用内存分析器。  
+ 在 Visual Studio 中打开有效 UWP 应用时，可以使用内存分析器。
   
 #### <a name="to-run-the-memory-analyzer"></a>运行内存分析器  
   
 1.  打开 Visual Studio。  
   
-2.  如果从 Visual Studio 中运行应用，请在“标准”工具栏上的“启动调试”列表中，选择项目的调试目标：Windows Phone 仿真程序或 UWP 应用、“本地计算机”、“模拟器”或者“远程计算机”。  
-  
-     有关这些选项的详细信息，请参阅 [Run apps from Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
+2.  如果是通过 Visual Studio 运行应用，请在“标准”工具栏上的“开始调试”列表中，选择项目的调试目标，即“本地计算机”或“设备”。  
   
 3.  在菜单栏上，选择“调试”、“性能探查器...”。  
   
@@ -400,6 +376,3 @@ if (performance && performance.mark) {
          可以使用这两条命令来帮助隔离无法通过手动拍摄堆快照进行隔离的问题。  
   
     -   创建一个测试对象，并在 JavaScript 内存分析器视图（如类型视图）中跟踪该对象。 例如，可以将一个极大对象附加到另一个对象以查明特定对象或组件是否已进行垃圾回收。  
-  
-## <a name="see-also"></a>请参阅  
- [演练：查找内存泄漏 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

@@ -1,10 +1,11 @@
 ---
 title: "使用命令行参数安装 Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 09/22/2017
+ms.date: 01/17/2018
 ms.reviewer: tims
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,12 +16,13 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bfdce6484661354315a4f6b8b4a219f119ec8742
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 41e66e9fabd84bac7ed7e413d51f08e55ef93a6e
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令行参数安装 Visual Studio 2017
 通过命令提示符安装 Visual Studio 2017 时，可以使用各种命令行参数来控制或自定义安装。 通过命令行，可以执行下列操作：
@@ -40,7 +42,10 @@ ms.lasthandoff: 12/22/2017
 
 > 语法：`vs_enterprise.exe [command] <options>...`
 
-（将 `vs_enterprise.exe` 替换为要安装的相应产品版本。 有关示例，请参阅[命令行参数示例](command-line-parameter-examples.md)页。）
+（将 `vs_enterprise.exe` 替换为要安装的相应产品版本。）
+
+>[!TIP]
+> 有关如何使用命令行安装 Visual Studio 2017 的更多示例，请参阅[命令行参数示例](command-line-parameter-examples.md)页。
 
 | **命令** | **说明** |
 | ----------------------- | --------------- |
@@ -143,7 +148,6 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="see-also"></a>请参阅
 
- * [安装 Visual Studio 2017](install-visual-studio.md)
- * [创建 Visual Studio 2017 的脱机安装](create-an-offline-installation-of-visual-studio.md)
  * [Visual Studio 2017 安装的命令行参数示例](command-line-parameter-examples.md)
+ * [创建 Visual Studio 2017 的脱机安装](create-an-offline-installation-of-visual-studio.md)
  * [通过响应文件自动执行 Visual Studio 安装](automated-installation-with-response-file.md)

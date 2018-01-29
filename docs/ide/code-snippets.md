@@ -20,12 +20,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2d937f36fcf2b76af8f5865ecdf2b137188e15eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="code-snippets"></a>代码片段
 
@@ -35,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 
 Visual Studio 中有两种类型的代码片段：扩展代码片段和外侧代码片段，前者在指定的插入点添加，并且可以替换代码片段快捷方式，后者仅限 C# 和 C++，在所选代码块的周围添加。
 
-插入代码片段的示例：在 C# 中，使用快捷方式 tryf 来插入 try-finally 块：
+扩展代码片段示例：在 C# 中，使用快捷方式 tryf 插入 try-finally 块：
 
 ```csharp
 try

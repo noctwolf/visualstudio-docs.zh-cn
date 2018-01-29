@@ -7,11 +7,11 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 7f91a28449ffad135058438ec767095818cc8527
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: 5de4760b001e82a0c95c593c1308746946b2c630
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>设置和安装 Visual Studio for Mac
 
@@ -49,6 +49,18 @@ ms.lasthandoff: 12/07/2017
 
   ![选择项](media/installer-image5.png)
 
+  如果不希望安装所有平台，请参阅以下指南，它们有助于确定要安装的平台：
+
+  * **使用 Xamarin 的应用**：
+      - Xamarin.Forms - 选择“Android”和“iOS”平台。
+      - 仅限 iOS - 选择“iOS”平台（请注意，需要安装 [Xcode](https://developer.apple.com/xcode/)）。
+      - 仅限 Android - 选择“Android”平台（请注意，还应选择相关依赖项）。
+      - 仅限 Mac - 选择“macOS”平台（请注意，需要安装 [Xcode](https://developer.apple.com/xcode/)）。
+      - 完全跨平台的 Xamarin 应用 - 选择“Android”、“iOS”和“macOS”平台。
+  * **.NET Core 应用程序** - 选择“.NET Core”平台。
+  * **ASP.NET Core Web 应用程序** - 选择“.NET Core”平台。
+  * **跨平台 Unity 游戏开发** - 除 Visual Studio for Mac 之外，无需安装其他任何平台。 若要详细了解如何安装 Unity 扩展，请参阅 [Unity 安装指南](~/setup-vsmac-tools-unity.md)。
+
   此安装屏幕显示每个组件的版本和大小。 可单击每个组件查看该组件的依赖项列表（对于 Android），该组件下载的其他包（对于 .NET Core），或任何其他所需应用程序（对于 iOS 和 macOS）：
 
   ![Android 附加依赖项](media/installer-image6.png)
@@ -74,17 +86,6 @@ ms.lasthandoff: 12/07/2017
 > [!NOTE]
 如果在原始安装期间选择不安装平台或工具（通过在步骤 #6 中取消选择相关选项），且希望稍后添加该组件，必须再次运行[安装程序](https://www.visualstudio.com/vs/)。
 
-## <a name="manual-installation"></a>手动安装
-
-如果安装失败或任何单个组件的安装失败，可能能够通过手动安装解决问题。 若要查看所需的组件并逐个下载，请执行以下步骤：
-
-1. 在 Visual Studio 安装程序的第二个屏幕上，转到菜单栏并选择“查看手动安装说明”：
-
-    ![显示手动安装菜单项的选项](media/installer-image12.png)
-
-2. 按照说明下载并手动安装组件：
-
-  ![“手动安装”对话框](media/installer-image13.png)
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后安装 Visual Studio for Mac
 
@@ -92,4 +93,24 @@ ms.lasthandoff: 12/07/2017
 
 配置网络以允许访问下列位置：
 
-* [Visual Studio 终结点](https://docs.microsoft.com/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+* [Visual Studio 终结点](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+
+## <a name="next-steps"></a>后续步骤
+
+安装 Visual Studio for Mac 后，可以开始编写应用代码。 下面的指南逐步介绍了如何完成后续步骤，即编写和部署项目。
+
+### <a name="ios"></a>iOS
+
+1. [Hello，iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
+2. [设备预配](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)（以在设备上运行应用程序）。
+
+
+### <a name="android"></a>Android
+
+1. [使用 Xamarin Android SDK 管理器](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+2. [Android SDK 仿真器](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [设置设备进行开发](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+
+### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 应用、ASP.NET Core Web 应用、Unity 游戏开发
+
+有关其他工作负载，请参阅[工作负载](~/workloads.md)页。
