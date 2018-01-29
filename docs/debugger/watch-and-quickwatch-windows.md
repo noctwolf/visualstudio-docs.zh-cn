@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.watch
+f1_keywords:
+- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -15,22 +17,21 @@ helpviewer_keywords:
 - expression evaluation
 - registers, evaluating
 - debugging [Visual Studio], expression evaluation
-ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>在使用监视和 Visual Studio 中的快速监视窗口的变量上设置监视
-在调试时可以使用**监视**(**调试 > Windows > 监视 > 监视 （1、 2、 3、 4）**) 和**快速监视**(变量上右键单击 / **调试 > 快速监视**) 窗口来监视变量和表达式。  区别是“监视”  窗口可以显示多个变量，而“快速监视”  窗口一次仅显示单个变量。
+在调试时可以使用**监视**和**快速监视**窗口来监视变量和表达式。  区别是“监视”  窗口可以显示多个变量，而“快速监视”  窗口一次仅显示单个变量。 
 
-在调试会话期间，windows 才可用。 
+在调试会话期间，windows 才可用。 若要打开**监视**窗口中，选择**调试 > Windows > 监视 > 监视 （1、 2、 3、 4）**)。 若要打开**快速监视**窗口中，可以在变量上右键单击，选择**快速监视**或选择**调试 > 快速监视**。
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>使用“快速监视”观察单个变量  
  你可以使用“快速监视”  窗口观察单个变量。 例如，如果你有以下代码：  
@@ -54,11 +55,11 @@ static void Main(string[] args)
   
 2.  开始调试。 执行在断点处停止。  
   
-3.  打开**快速监视**窗口 (右键单击，然后选择**快速监视**，或**SHIFT + F9**)。
+3.  打开**快速监视**窗口 (右键单击`a`，然后选择**快速监视**，或选择`a`按**SHIFT + F9**)。
 
     你应看到中的变量**值**窗口中的，值为 1。
 
-    ![快速监视表达式](../debugger/media/watchexpression.png "QuickWatchExpression")  
+    ![QuickWatch Expression](../debugger/media/watchexpression.png "QuickWatchExpression")  
 
     如果你想要评估使用变量的表达式，添加一个表达式，如`a + b`到**表达式**窗口并单击**重新计算**。 
   

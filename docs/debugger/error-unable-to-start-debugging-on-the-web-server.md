@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,16 +27,17 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>错误：无法在 Web 服务器上启动调试
 
@@ -84,8 +86,10 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="server_error"></a>远程服务器返回了错误
 
-检查消息以帮助确定问题的原因中返回的错误代码。 以下是几个常见的错误代码。
-- (403) 禁止访问。 验证你是否连接到正确的服务器类型和 URL (在**属性 > Web > 服务器**或**属性 > 调试**，具体取决于项目类型)。 另外，请验证服务器的 web.config 包括`debug=true`编译元素中。 如果这些设置均已正确，请验证你的 Web 应用程序文件夹有正确的文件夹权限。 有关详细信息，请参阅[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
+检查你[IIS 日志文件](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0)错误子代码和其他信息，以及此 IIS 7[博客文章](https://blogs.iis.net/tomkmvp/troubleshoot-a-403)。
+
+此外，以下是一些常见的错误代码和一些建议。
+- (403) 禁止访问。 有许多可能的原因，此错误，因此请检查您的日志文件和网站的 IIS 安全设置。 请确保服务器的 web.config 包含`debug=true`编译元素中。 请确保你的 Web 应用程序文件夹有正确的权限并验证你的应用程序池配置正确 （密码可能已更改）。 请参阅[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。 如果这些设置是否已正确和本地调试，还验证连接到正确的服务器类型和 URL (在**属性 > Web > 服务器**或**属性 > 调试**，具体取决于你的项目类型）。
 - 不可用 (503) 服务器。 由于错误或配置更改，应用程序池可能已停止。 重新启动应用程序池。
 - (404) 找不到。 请确保应用程序池配置为 ASP.NET 的正确版本。
 
@@ -125,7 +129,7 @@ ms.lasthandoff: 01/05/2018
     
 * 请检查你的 Web 应用程序文件夹有正确的权限。
 
-    请确保您给 IIS_IUSRS、 IUSR 或与应用程序池读取关联的特定用户，并执行 Web 应用程序文件夹的权限。 修复该问题并重新启动应用程序池。
+    请确保你为提供 IIS_IUSRS，IUSR，或与特定用户关联[应用程序池](/iis/manage/configuring-security/application-pool-identities)读取和执行的 Web 应用程序文件夹的权限。 修复该问题并重新启动应用程序池。
 
 * 请确保在 IIS 上安装正确版本的 ASP.NET。
 

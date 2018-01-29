@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 09/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.remote.projnotconfigured
+f1_keywords:
+- vs.debug.remote.projnotconfigured
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-helpviewer_keywords: debugger, Web application errors
-caps.latest.revision: "22"
+helpviewer_keywords:
+- debugger, Web application errors
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6f1e206cc9327ef933f52f35960f628170e02c38
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: bd7ea7deea749831ebf26d3f8a406b1e3ad63fb0
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>错误：Web 服务器配置不正确
 
@@ -39,7 +43,7 @@ ms.lasthandoff: 01/05/2018
 
     如果 web 应用程序已复制到不同的计算机、 手动重命名或移动，可能不正确的物理路径。 重置 IIS，然后重试。
 
-3. 在 Visual Studio 中，验证，在属性中选择正确的服务器。 (打开**属性 > Web > 服务器**或**属性 > 调试**具体取决于你的项目类型。 对于 Web 窗体项目，打开**属性页 > 启动选项 > 服务器**)。
+3. 如果你正在进行本地调试 Visual Studio 中，请验证正确的服务器已选中的属性中。 (打开**属性 > Web > 服务器**或**属性 > 调试**具体取决于你的项目类型。 对于 Web 窗体项目，打开**属性页 > 启动选项 > 服务器**)。
 
     如果你使用如 IIS 外部 （自定义） 服务器，则该 URL 必须是正确的。 否则，请选择 IIS Express，然后重试。
 
