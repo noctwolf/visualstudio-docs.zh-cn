@@ -4,20 +4,22 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a969a75a7c0cda89d040b8829fc8313974646c07
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>要开始使用 Visual Studio 调试器
 Visual Studio 调试器在任何语言环境下都易于使用。 下面我们将介绍如何调试一个简单的 C# 程序，但你可以对 c + + 和 JavaScript 等其他语言中的代码应用相同的步骤。
@@ -27,7 +29,7 @@ Visual Studio 调试器在任何语言环境下都易于使用。 下面我们�
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a>调试一个基本 C# 项目  
  让我们从简单的 C# 控制台应用开始 (**文件 > 新建 > 项目**，然后选择**Visual C#**然后**控制台应用程序**)。 如果你从未使用 Visual Studio 之前过，请参阅[演练： 创建简单的应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。 **Main**方法只需将 1 添加到一个整数变量 10 次，并打印到控制台的结果：  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -56,7 +58,7 @@ static void Main(string[] args)
   
  你可以将鼠标悬停在**局部变量**变量以在数据提示中查看的当前值。  
   
- ![DBG &#95;基础知识 &#95; 数据 &#95;提示](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
   
  紧靠代码窗口正下方，你应看到**自动**，**局部变量**，和**监视**windows。 在执行时，这些窗口将显示变量的当前值。 这两个**自动**和**局部变量**windows 显示**局部变量**值为**10**。  
   
@@ -71,7 +73,7 @@ static void Main(string[] args)
   
  若要查看的区别**单步执行**和**逐过程**，我们需要添加由另一个方法调用的方法。 将方法添加到 C# 应用程序，并从 Main 方法中调用该方法。 代码应如下所示：  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     Method1();  

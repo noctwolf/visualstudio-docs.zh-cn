@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -22,16 +23,17 @@ helpviewer_keywords:
 - Trace.Listeners property
 - assertions, managed code
 ms.assetid: 70ab2522-6486-4076-a1a9-e0f11cd0f3a1
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: e60235e497f770d7e8ce30e27c3a86143f7144e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 90e39956f777ddd79fad080d8bb6d13b30d4ccd0
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="assertions-in-managed-code"></a>托管代码中的断言
 断言（或 `Assert` 语句）测试您指定为 `Assert` 语句的参数的条件。 如果此条件的计算结果为 true，则不发生操作。 如果此条件的计算结果 false，则断言失败。 如果正在使用调试版本运行，则程序将进入中断模式。  
@@ -68,7 +70,7 @@ Function IntegerDivide(ByVal dividend As Integer, ByVal divisor As Integer) As I
 End Function  
 ```  
   
-```CSharp  
+```csharp  
 int IntegerDivide ( int dividend , int divisor )  
     { Debug.Assert ( divisor != 0 );  
         return ( dividend / divisor ); }  
@@ -85,7 +87,7 @@ Debug.Assert(amount <= balance)
 SavingsAccount.Withdraw(amount)  
 ```  
   
-```CSharp  
+```csharp  
 float balance = savingsAccount.Balance;  
 Debug.Assert ( amount <= balance );  
 savingsAccount.Withdraw ( amount );  
@@ -100,7 +102,7 @@ Trace.Assert(amount <= balance)
 SavingsAccount.Withdraw(amount)  
 ```  
   
-```CSharp  
+```csharp  
 float balance = savingsAccount.Balance;  
 Trace.Assert ( amount <= balance );  
 savingsAccount.Withdraw ( amount );  
@@ -120,7 +122,7 @@ savingsAccount.Withdraw ( amount );
 Debug.Assert (meas(i) <> 0 )  
 ```  
   
-```CSharp  
+```csharp  
 // unsafe code  
 Debug.Assert (meas(i) != 0 );  
 ```  
@@ -132,7 +134,7 @@ temp = meas( i )
 Debug.Assert (temp <> 0)  
 ```  
   
-```CSharp  
+```csharp  
 temp = meas( i );  
 Debug.Assert ( temp != 0 );  
 ```  
@@ -168,7 +170,7 @@ Debug.Assert(stacksize > 0)
 Trace.Assert(stacksize > 0)  
 ```  
   
-```CSharp  
+```csharp  
 Debug.Assert ( stacksize > 0 );  
 Trace.Assert ( stacksize > 0 );   
 ```  
@@ -180,7 +182,7 @@ Debug.Assert(stacksize > 0, "Out of stack space")
 Trace.Assert(stacksize > 0, "Out of stack space")  
 ```  
   
-```CSharp  
+```csharp  
 Debug.Assert ( stacksize > 0, "Out of stack space" );  
 Trace.Assert ( stacksize > 0, "Out of stack space" );  
 ```  
@@ -193,7 +195,7 @@ Trace.Assert(stacksize > 0, "Out of stack space. Bytes left:" , Format(size, "G"
 Trace.Assert(stacksize > 0, "Out of stack space. Bytes left:", "inctemp failed on third call" )  
 ```  
   
-```CSharp  
+```csharp  
 Debug.Assert ( stacksize > 100, "Out of stack space" , "Failed in inctemp" );  
 Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );   
 ```  

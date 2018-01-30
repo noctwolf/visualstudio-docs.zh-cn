@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 08/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5221ba5a395e1cfbbe624b3d65e6762bedb8d2e1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 11770efcc517b9ec713656f540d75b0a2c412ae7
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 特性
 [DebuggerDisplayAttribute 类](/dotnet/api/system.diagnostics.debuggerdisplayattribute)控制对象、 属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。  
@@ -75,7 +77,7 @@ csc /t:library autoexp.cs
   
  减少表达式计算可能出现的问题的一种方法是创建执行操作并返回字符串的私有属性。 然后，DebuggerDisplay 特性可以显示该私有属性的值。 以下示例实现了这种模式：  
   
-```CSharp  
+```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
 public sealed class MyClass   
 {      
@@ -99,7 +101,7 @@ public sealed class MyClass
 |键|"three"|object {string}|  
 |“值”|3|object {int}|  
   
-```CSharp  
+```csharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  
 internal class KeyValuePairs  
 {  

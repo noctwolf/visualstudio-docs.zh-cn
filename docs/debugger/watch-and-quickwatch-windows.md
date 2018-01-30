@@ -22,8 +22,8 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/29/2018
@@ -36,7 +36,7 @@ ms.lasthandoff: 01/29/2018
 ## <a name="observing-a-single-variable-with-quickwatch"></a>使用“快速监视”观察单个变量  
  你可以使用“快速监视”  窗口观察单个变量。 例如，如果你有以下代码：  
   
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b;  
@@ -125,7 +125,7 @@ int main()
 ##  <a name="bkmk_refreshWatch"></a> 刷新过期的“监视”值  
  在某些情况下，你可能会看到一个刷新图标 （循环箭头） 时表达式计算中**监视**窗口。  例如，如果你有关闭属性计算 (**工具 > 选项 > 调试 > 启用属性求值和其他隐式函数调用**)，那么你具有以下代码：  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     List<string> list = new List<string>();  
@@ -177,7 +177,7 @@ var1 = var2
   
  在下面的代码中，一种方法创建`Person`使用局部变量，但你想要找出什么`Person`的名称是不同的方法中：  
   
-```CSharp  
+```csharp  
 class Person  
 {  
     public Person(string name)  
