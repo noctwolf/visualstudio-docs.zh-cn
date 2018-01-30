@@ -20,6 +20,7 @@
 ## [使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)
 ### [将单元测试作为 64 位进程运行](run-a-unit-test-as-a-64-bit-process.md)
 ### [演练：创建并运行 UWP 应用的单元测试](walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md)
+### [测试资源管理器常见问题解答](test-explorer-faq.md)
 ## [使用 .runsettings 文件配置单元测试](configure-unit-tests-by-using-a-dot-runsettings-file.md)
 ## [编写托管代码的单元测试](writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
 ### [演练：创建并运行托管代码的单元测试](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
