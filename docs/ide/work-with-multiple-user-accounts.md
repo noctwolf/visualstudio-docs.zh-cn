@@ -7,17 +7,16 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 33f8c8c8068f14d7cdf8bf32c4cff960b98957f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: def8b9347ec5c74cf369972602416c992dff39c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>使用多个用户帐户
 
@@ -52,7 +51,7 @@ ms.lasthandoff: 12/22/2017
 1. 选择解决方案资源管理器中的项目节点，然后选择“添加 -> 连接的服务”。 随即出现“添加连接的服务”向导，其中显示与 Visual Studio 登录 ID 相关联的 Azure 帐户中的服务列表。 请注意：无需单独登录 Azure。 但是，第一次尝试从给定计算机访问其资源时，你需要登录到其他帐户。
 
     > [!WARNING]
-    > 如果是第一次在特定计算机上的 Visual Studio 中创建 UWP 应用，则系统会提示你通过转到计算机上的“设置 &#124; 更新和安全 &#124; 面向开发人员”来启用设备的开发模式。 有关详细信息，请参阅[启用设备进行开发](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx)。
+    > 如果是第一次在特定计算机上的 Visual Studio 中创建 UWP 应用，则系统会提示你通过转到计算机上的“设置 &#124; 更新和安全 &#124; 面向开发人员”来启用设备的开发模式。 有关详细信息，请参阅[启用设备进行开发](/windows/uwp/get-started/enable-your-device-for-development)。
 
 ### <a name="access_azure"></a> 在 Web 项目中访问 Azure Active Directory
 

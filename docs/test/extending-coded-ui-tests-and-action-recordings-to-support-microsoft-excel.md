@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ae08752c7687844fbe620bf6314496b474b6e915
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0133db8e1060da48e5938a08ded187fa900b4d30
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>扩展编码的 UI 测试和操作录制以支持 Microsoft Excel
 编码的 UI 测试和操作录制的测试框架不支持的每个可能的用户界面。 它可能不支持你想要测试的特定 UI。 例如，不能立即创建编码的 UI 测试或 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 电子表格的操作录制。 但是，你可以为编码的 UI 测试框架创建自己的扩展，该扩展将通过利用编码的 UI 测试框架的扩展性支持特定的 UI。 以下主题提供的示例说明如何扩展框架以支持创建编码的 UI 测试和 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 的操作录制。 有关支持的平台的详细信息，请参阅[支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)。  
@@ -68,14 +69,16 @@ ms.lasthandoff: 01/09/2018
   
  你可能必须调整准确的复制路径，但无需进行其他安装。 在 64 位计算机上，使用 32 位 Visual Studio Enterprise 命令提示符运行 `CopyDrop.bat` 文件。  
   
-### <a name="testing-excel-with-the-sampletestproject"></a>使用 SampleTestProject 测试 Excel  
- 可以在提供的测试项目（使用你可能没有的特定 Excel 版本）中运行测试，或创建你自己的测试项目并记录你自己的测试。 有关详细信息，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
-  
-## <a name="see-also"></a>请参阅  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
- [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
- [编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)   
- [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+### <a name="testing-excel-with-the-sampletestproject"></a>使用 SampleTestProject 测试 Excel
+
+可以在提供的测试项目（使用你可能没有的特定 Excel 版本）中运行测试，或创建你自己的测试项目并记录你自己的测试。 有关详细信息，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)。
+
+## <a name="see-also"></a>请参阅
+
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
+[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
+[编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)   
+[支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

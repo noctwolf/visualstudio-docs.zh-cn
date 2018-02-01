@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,16 +16,17 @@ helpviewer_keywords:
 - diagrams, class structure of projects
 - class structure
 ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9856a7061bf6fbe70ad39b2b70f052c2bd8c9bd5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 606024fd031814b91cfb97e3e674d9d1240e3efb
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>使用类图（类设计器）
 类图可帮助你理解他人编写的 （或你在很久以前编写的） 项目的类结构。 你可以使用它们来自定义、共享并向其他人展示项目信息。  
@@ -39,6 +41,7 @@ ms.lasthandoff: 12/22/2017
 >  类设计器不会跟踪源文件的位置，因此更改项目结构或移动项目中的源文件就可能导致类设计器无法继续对类型进行跟踪，尤其是 typedef 的源类型、基类或关联类型。 可能会收到错误，如“类设计器无法显示此类型”。 如果收到错误，要将修改过的或被重新定位的源代码再次拖到类图中以重新显示。
   
 ## <a name="see-also"></a>请参阅
-[查看类型和关系](viewing-types-and-relationships.md)   
-[如何：自定义类图](how-to-customize-class-diagrams.md)   
-[如何：从类图中删除类型形状](http://msdn.microsoft.com/en-us/ae41897d-d066-4b8c-bb9b-05436e12ff39)
+
+[查看类型和关系](viewing-types-and-relationships.md)  
+[如何：自定义类图](how-to-customize-class-diagrams.md)  
+[如何：从类图中删除类型形状](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

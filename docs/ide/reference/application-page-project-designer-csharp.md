@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,19 +14,19 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
-caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: ec48d6a581eb756ee89d9db1a3dfaa78ac1fb3a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7f9b348ad39b26b22e1678e76a1310e2c3f9b863
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="application-page-project-designer-c"></a>“项目设计器”->“应用程序”页 (C#)
+
 使用“项目设计器”的“应用程序”页指定项目的应用程序设置和属性。  
   
 若要访问“应用程序”页，请在**解决方案资源管理器**中选择项目节点（而非“解决方案”节点）。 然后在菜单栏上依次选择“项目”、“属性”。 当项目设计器出现时，单击“应用程序”选项卡。  
@@ -98,8 +99,4 @@ ms.lasthandoff: 12/22/2017
 **资源文件**  
 若要为项目提供资源文件，则选中此单选按钮。 选择此选项会禁用“图标”和“清单”选项。  
   
-输入路径名或使用“浏览”按钮 (**...**)，以向项目添加 Win32 资源文件。  
-  
-## <a name="see-also"></a>请参阅  
-[管理应用程序属性](../../ide/application-properties.md)  
-[在 Office 解决方案中编写代码](/office-dev/office-dev/writing-code-in-office-solutions)
+输入路径名或使用“浏览”按钮 (**...**)，以向项目添加 Win32 资源文件。

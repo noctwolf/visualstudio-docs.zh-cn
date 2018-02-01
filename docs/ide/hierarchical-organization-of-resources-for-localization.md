@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - resources [Visual Studio], fallback system
 - resource files, fallback processes
 ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8235f246a52e3f8f53536abdf1aba2c0dede875d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cc663c02d3151e6dd55c1c35388ac7b33f049bb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>用于本地化的资源的分层组织
 在 Visual Studio 中，本地化资源（适用于各区域性的字符串和图像等数据）存储在单独的文件中并根据 UI 区域性设置进行加载。 若要了解本地化资源是如何加载的，可以将其想象成按层次结构的方式进行组织。  
@@ -50,10 +52,9 @@ ms.lasthandoff: 12/22/2017
   
  ![NeutralSpecificResources 图](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
-## <a name="see-also"></a>请参阅  
- [用于本地化的非特定资源语言](../ide/neutral-resources-languages-for-localization.md)   
- [安全性和已本地化的附属程序集](../ide/security-and-localized-satellite-assemblies.md)   
- [本地化应用程序](../ide/localizing-applications.md)   
- [对应用程序进行全球化和本地化](../ide/globalizing-and-localizing-applications.md)   
- [如何：为 Windows 窗体全球化设置区域性和用户界面的区域性](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0)   
- [如何：为 ASP.NET 网页全球化设置区域性和 UI 区域性](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+## <a name="see-also"></a>请参阅
+
+[用于本地化的非特定资源语言](../ide/neutral-resources-languages-for-localization.md)  
+[安全性和已本地化的附属程序集](../ide/security-and-localized-satellite-assemblies.md)  
+[本地化应用程序](../ide/localizing-applications.md)  
+[对应用程序进行全球化和本地化](../ide/globalizing-and-localizing-applications.md)
