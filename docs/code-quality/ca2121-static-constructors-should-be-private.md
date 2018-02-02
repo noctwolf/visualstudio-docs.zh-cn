@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - CA2121
 - StaticConstructorsShouldBePrivate
 ms.assetid: ee93c620-8fc1-4e47-866c-d389c3ca9f2e
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f21f736baae082257b736c21057634a5a2b6b2ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 33770496c5d7585979d0be4198155982068957cf
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121：静态构造函数应为私有
 |||  
@@ -39,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>规则说明  
  静态构造函数，也称为类构造函数，用于初始化类型。 系统在创建第一个类型实例或引用任何静态成员之前调用静态构造函数。 用户具有无法控制当调用该静态构造函数。 如果静态构造函数不是私有，则系统以外的代码可以调用它。 根据构造函数中执行的操作，这可能导致意外行为。  
   
- 通过 C# 和 Visual Basic.NET 编译器强制执行此规则。  
+ 此规则由 C# 和 Visual Basic 编译器强制执行。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  冲突通常是由以下操作之一导致的：  

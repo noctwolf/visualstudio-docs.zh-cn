@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 08/04/2017
 ms.reviewer: Jamie.Young
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
-caps.latest.revision: "10"
+caps.latest.revision: 
 ms.author: v-brickg
 manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 69fad7f5bab020aea442670687e5fc781eee2955
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- v-brickg
+ms.openlocfilehash: eb6ff923bd74b4c6350e8252d59c86cabff11428
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio 的 visual 语言字典
 Visual Studio 使用公共 visual 语言演示是其插图和其他图像的构建基块的概念。 在设计新图标，使用此字典来标识你要在你自己的映像中传达的概念。  
@@ -318,7 +320,7 @@ Visual Studio 使用公共 visual 语言演示是其插图和其他图像的构�
 | **设置**<br />服务过程 | ![设置图标](../../extensibility/ux-guidelines/media/vld_c_settings.png "VLD_C_Settings") | ![调用浏览器设置图标](../../extensibility/ux-guidelines/media/vld_c_settings_callbrowsersettings.png "VLD_C_Settings_CallBrowserSettings")<br />调用浏览器设置<br />![测试设置图标](../../extensibility/ux-guidelines/media/vld_c_settings_testsettings.png "VLD_C_Settings_TestSettings")<br />测试设置<br />![准备过程失败的图标](../../extensibility/ux-guidelines/media/vld_c_settings_prepareprocessfailed.png "VLD_C_Settings_PrepareProcessFailed")<br />准备过程失败 ||
 | **共享** | ![共享图标](../../extensibility/ux-guidelines/media/vld_c_share.png "VLD_C_Share") |||
 | **快捷方式** | ![快捷方式图标](../../extensibility/ux-guidelines/media/vld_c_shortcut.png "VLD_C_Shortcut") |||
-| **代码段** | ![代码段图标](../../extensibility/ux-guidelines/media/vld_c_snippet.png "VLD_C_Snippet") | ![检查的代码段图标](../../extensibility/ux-guidelines/media/vld_c_snippet_snippetchecked.png "VLD_C_Snippet_SnippetChecked")<br />检查的代码段<br />![标记或事件代码段图标](../../extensibility/ux-guidelines/media/vld_c_snippet_tagoreventsnippet.png "VLD_C_Snippet_TagOrEventSnippet")<br />标记或事件代码段 ||
+| 代码片段 | ![代码段图标](../../extensibility/ux-guidelines/media/vld_c_snippet.png "VLD_C_Snippet") | ![检查的代码段图标](../../extensibility/ux-guidelines/media/vld_c_snippet_snippetchecked.png "VLD_C_Snippet_SnippetChecked")<br />检查的代码段<br />![标记或事件代码段图标](../../extensibility/ux-guidelines/media/vld_c_snippet_tagoreventsnippet.png "VLD_C_Snippet_TagOrEventSnippet")<br />标记或事件代码段 ||
 | **源代码管理** | ![源控件图标](../../extensibility/ux-guidelines/media/vld_c_sourcecontrol.png "VLD_C_SourceControl") | ![更改源控件图标](../../extensibility/ux-guidelines/media/vld_c_sourcecontrol_changesourcecontrol.png "VLD_C_SourceControl_ChangeSourceControl")<br />更改源代码管理 ||
 | **Start**<br />运行 | ![开始图标](../../extensibility/ux-guidelines/media/vld_c_start.png "VLD_C_Start") | ![运行并发分析图标](../../extensibility/ux-guidelines/media/vld_c_start_runconcurrencyprofiling.png "VLD_C_Start_RunConcurrencyProfiling")<br />运行并发分析<br />![启动服务器图标](../../extensibility/ux-guidelines/media/vld_c_start_serverstarted.png "VLD_C_Start_ServerStarted")<br />启动服务器<br />![开始图形诊断图标](../../extensibility/ux-guidelines/media/vld_c_start_startgraphicdiagnostics.png "VLD_C_Start_StartGraphicDiagnostics")<br />启动图形诊断 ||
 | **步骤**<br />阶段阶段 | ![步骤图标](../../extensibility/ux-guidelines/media/vld_c_steps.png "VLD_C_Steps") | ![创建共享的步骤图标](../../extensibility/ux-guidelines/media/vld_c_steps_createsharedsteps.png "VLD_C_Steps_CreateSharedSteps")<br />创建共享步骤<br />![插入共享的步骤图标](../../extensibility/ux-guidelines/media/vld_c_steps_insertsharedsteps.png "VLD_C_Steps_InsertSharedSteps")<br />插入共享步骤<br />![播放所有步骤图标](../../extensibility/ux-guidelines/media/vld_c_steps_playallsteps.png "VLD_C_Steps_PlayAllSteps")<br />播放所有步骤 ||
@@ -448,7 +450,7 @@ Visual Studio 使用公共 visual 语言演示是其插图和其他图像的构�
 | **操作状态： 已暂停** | ![操作状态： 暂停图标](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused.png "VLD_S_ActionStatusPaused") | ![服务器已暂停图标](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused_serverpaused.png "VLD_S_ActionStatusPaused_ServerPaused")<br />服务器已暂停 |
 | **操作状态： 播放，运行** | ![操作状态： 播放、 运行图标](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning.png "VLD_S_ActionStatusPlayingRunning") | ![启动服务器图标](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning_serverstarted.png "VLD_S_ActionStatusPlayingRunning_ServerStarted")<br />启动服务器<br />![永远不会运行图标](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning_neverrun.png "VLD_S_ActionStatusPlayingRunning_NeverRun")<br />永远不会运行 |
 | **操作状态： 已停止** | ![操作状态： 停止图标](../../extensibility/ux-guidelines/media/vld_s_actionstatusstopped.png "VLD_S_ActionStatusStopped") | ![服务器停止图标](../../extensibility/ux-guidelines/media/vld_s_actionstatusstopped_serverstopped.png "VLD_S_ActionStatusStopped_ServerStopped")<br />服务器已停止 |
-| **警报** | ![警报图标](../../extensibility/ux-guidelines/media/vld_s_alert.png "VLD_S_Alert") | ![与错误选项卡提示图标的链接的表](../../extensibility/ux-guidelines/media/vld_s_alert_linkedtablewitherrortabcue.png "VLD_S_Alert_LinkedTableWithErrorTabCue")<br />与错误选项卡提示的链接的表<br />![代码分析窗口图标](../../extensibility/ux-guidelines/media/vld_s_alert_codeanalysiswindow.png "VLD_S_Alert_CodeAnalysisWindow")<br />代码分析窗口 |
+| **警报** | ![警报图标](../../extensibility/ux-guidelines/media/vld_s_alert.png "VLD_S_Alert") | ![与错误选项卡提示图标的链接的表](../../extensibility/ux-guidelines/media/vld_s_alert_linkedtablewitherrortabcue.png "VLD_S_Alert_LinkedTableWithErrorTabCue")<br />与错误选项卡提示的链接的表 |
 | **断点： 高级已禁用** | ![断点： 高级已禁用的图标](../../extensibility/ux-guidelines/media/vld_s_breakpointadvanceddisabled.png "VLD_S_BreakpointAdvancedDisabled") ||
 | **断点： 高级已启用**  |![断点： 高级已启用的图标](../../extensibility/ux-guidelines/media/vld_s_breakpointadvancedenabled.png "VLD_S_BreakpointAdvancedEnabled") ||
 | **断点： 绑定** | ![断点： 绑定的图标](../../extensibility/ux-guidelines/media/vld_s_breakpointbound.png "VLD_S_BreakpointBound") ||

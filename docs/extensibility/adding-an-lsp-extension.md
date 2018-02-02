@@ -4,24 +4,26 @@ ms.custom:
 ms.date: 11/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 92ea72f3d64edc31c187198a5af73ed98c0fc8be
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- vssdk
+ms.openlocfilehash: 98bbebfb5f82d10179897e94b6a49cbb3d8c6220
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>添加语言服务器协议扩展
 
-语言服务器协议 (LSP) 是一种常见协议，JSON RPC v2.0，用于提供各种代码编辑器向 service 功能的语言的形式。 使用协议时，开发人员可以编写单语言版服务器以提供 IntelliSense，错误诊断等服务功能的语言，查找所有引用，到各种支持 LSP 的代码编辑器等。 传统上，可以通过以下任一方法添加在 Visual Studio 中的语言服务使用 TextMate 语法文件提供基本功能，如语法突出显示，或通过编写自定义的语言服务使用完整的 Visual Studio 扩展性 Api 集到提供更丰富的数据。 现在，对 LSP 提供了一个第三个选项的支持。
+语言服务器协议 (LSP) 是一种常见协议，JSON RPC v2.0，用于提供各种代码编辑器向 service 功能的语言的形式。 使用协议时，开发人员可以编写单语言版服务器以提供 IntelliSense，错误诊断等服务功能的语言，查找所有引用，到各种支持 LSP 的代码编辑器的等等。 传统上，可以通过以下任一方法添加在 Visual Studio 中的语言服务使用 TextMate 语法文件提供基本功能，如语法突出显示，或通过编写自定义的语言服务使用完整的 Visual Studio 扩展性 Api 集到提供更丰富的数据。 现在，对 LSP 提供了一个第三个选项的支持。
 
 ![Visual Studio 中的语言服务器协议服务](media/lsp-service-in-VS.png)
 
@@ -33,7 +35,7 @@ ms.lasthandoff: 01/05/2018
 
 ![语言服务器协议实现](media/lsp-implementation.png)
 
-本文介绍如何在 Visual Studio 中使用的基于 LSP 语言服务器创建的扩展。 它假定你已开发了 LSP 基于语言服务器，并且只是想要将其集成到 Visual Studio。
+本文介绍如何创建一个 Visual Studio 扩展，使用 LSP 基于语言服务器。 它假定你已开发了 LSP 基于语言服务器，并且只是想要将其集成到 Visual Studio。
 
 有关 Visual Studio 中的支持，语言服务器能够与客户端 (Visual Studio) 通过以下机制：
 
@@ -53,18 +55,18 @@ LSP 支持以下功能在 Visual Studio 中到目前为止：
 已初始化 | 
 关机 | 是
 退出 | 是
-$/ cancelRequest | 是
-窗口/分隔开多个 | 是
-窗口/showMessageRequest | 是
-窗口/logMessage | 是
+$/cancelRequest | 是
+window/showMessage | 是
+window/showMessageRequest | 是
+window/logMessage | 是
 遥测/事件 |
-客户端/registerCapability |
-客户端/unregisterCapability |
-工作区/didChangeConfiguration | 是
-工作区/didChangeWatchedFiles | 是
-工作区/符号 | 是
-工作区/executeCommand | 是
-工作区/applyEdit | 是
+client/registerCapability |
+client/unregisterCapability |
+workspace/didChangeConfiguration | 是
+workspace/didChangeWatchedFiles | 是
+workspace/symbol | 是
+workspace/executeCommand | 是
+workspace/applyEdit | 是
 textDocument/publishDiagnostics | 是
 textDocument/didOpen | 是
 textDocument/didChange | 是
@@ -72,23 +74,23 @@ textDocument/willSave |
 textDocument/willSaveWaitUntil |
 textDocument/didSave |
 textDocument/didClose | 是
-textDocument/完成 | 是
-完成/解决 | 是
-textDocument/悬停 |
+textDocument/completion | 是
+completion/resolve | 是
+textDocument/hover |
 textDocument/signatureHelp |
-textDocument/引用 | 是
+textDocument/references | 是
 textDocument/documentHighlight |
 textDocument/documentSymbol | 是
-格式设置 textDocument / | 是
+textDocument/formatting | 是
 textDocument/rangeFormatting | 是
 textDocument/onTypeFormatting |
-textDocument/定义 | 是
+textDocument/definition | 是
 textDocument/codeAction | 是
 textDocument/codeLens |
-codeLens/解决 |
+codeLens/resolve |
 textDocument/documentLink |
-documentLink/解决 |
-textDocument/重命名 | 是
+documentLink/resolve |
+textDocument/rename | 是
 
 ## <a name="getting-started"></a>入门
 
@@ -100,7 +102,7 @@ textDocument/重命名 | 是
 
 ![创建 vsix 项目](media/lsp-vsix-project.png)
 
-对于预览版本，对 LSP VS 支持将 VSIX 形式 ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview))。 扩展开发人员想要创建使用 LSP 语言服务器的扩展，必须上此 VSIX 使依赖关系。 这意味着，对于客户希望安装的语言服务器扩展**必须首先安装语言服务器协议客户端预览版 VSIX。**
+对于预览版本，对 LSP VS 支持将 VSIX 形式 ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview))。 扩展开发人员想要创建使用 LSP 语言服务器的扩展，必须上此 VSIX 使依赖关系。 因此，客户希望安装的语言服务器扩展**必须首先安装语言服务器协议客户端预览版 VSIX。**
 
 若要定义 VSIX 依赖项，打开你的 VSIX 的 VSIX 清单设计器 （例如，通过双击打开 source.extension.vsixmanifest 文件中在你的项目中），并导航到**依赖关系**:
 
@@ -112,12 +114,13 @@ textDocument/重命名 | 是
 
 * **源**： 手动定义
 * **名称**： 语言服务器协议客户端预览版
-* **标识符**: Microsoft.VisualStudio.LanguageServer.Client.Preview
+* **Identifier**: Microsoft.VisualStudio.LanguageServer.Client.Preview
 * **版本范围**: [1.0,2.0)
 * **如何为依赖关系解析**： 由用户安装
 * **下载 URL**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
 
->**请注意**:**下载 URL**应该始终填写以便安装你的扩展的用户了解如何安装必需的依赖关系。
+> [!NOTE]
+> **下载 URL**以便安装你的扩展的用户了解如何安装必需的依赖关系必须填写。
 
 ### <a name="language-server-and-runtime-installation"></a>语言服务器和运行时安装
 
@@ -146,7 +149,7 @@ LSP 不包括有关如何提供语言的文本着色的规范。 若要提供自
 
 5. 右键单击文件并选择**属性**。 更改对指定的生成操作**内容**和**包括在 VSIX 中的**属性为 true。
 
-这将"语法"文件夹作为名为 MyLang 的存储库源添加包的安装目录 （MyLang 是只需消除歧义的名称，可以是任何唯一的字符串）。 作为潜力选取的所有语法 （.tmlanguage 文件） 和此目录中的主题文件 （.tmtheme 文件），并且会取代 TextMate 与提供的内置语法。 如果语法文件声明的扩展匹配所打开的文件的扩展名，将步骤 TextMate。
+完成前面的步骤后，"语法"文件夹添加到包的安装作为存储库源的目录名称为 MyLang （MyLang 是只需消除歧义的名称，可以是任何唯一的字符串）。 作为潜力选取的所有语法 （.tmlanguage 文件） 和此目录中的主题文件 （.tmtheme 文件），并且会取代 TextMate 与提供的内置语法。 如果语法文件声明的扩展匹配所打开的文件的扩展名，将步骤 TextMate。
 
 ## <a name="creating-a-simple-language-client"></a>创建简单的语言，客户端
 
@@ -156,7 +159,10 @@ LSP 不包括有关如何提供语言的文本着色的规范。 若要提供自
 
 * [Microsoft.VisualStudio.LanguageServer.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)
 
-你可以然后创建一个新类来实现[ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)接口，连接到基于 LSP 语言服务器的语言客户端所需的主要接口。
+> [!NOTE]
+> 当你对其执行一个依赖项 NuGet 包后完成前面的步骤时，Newtonsoft.Json 和 StreamJsonRpc 包添加到你的项目以及。 **除非您确信将 Visual Studio 的版本上安装了这些新的版本未更新这些包，扩展目标**。 程序集将不会包括在你的 VSIX-相反，它们将会拾取从 Visual Studio 安装目录。 如果你正在引用的程序集版本比你的扩展的用户的计算机上安装新*不起作用*。
+
+然后可以创建一个新的类以实现[ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)接口，连接到基于 LSP 语言服务器的语言客户端所需的主要接口。
 
 下面是一个示例：
 
@@ -209,9 +215,9 @@ namespace MockLanguageExtension
 }
 ```
 
-需要实现的主要方法为[OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017)和[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017)。 [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) Visual Studio 已加载你的扩展，并且你语言的服务器是否准备好启动时调用。 在此方法中，你可以调用[StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017)立即要指示应启动语言服务器，或可以执行其他逻辑，还可以调用委托[StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017)更高版本。 **若要激活语言服务器必须在某一时刻调用 StartAsync。**
+需要实现的主要方法为[OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017)和[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017)。 [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) Visual Studio 已加载你的扩展，并且你语言的服务器是否准备好启动时调用。 在此方法中，你可以调用[StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017)立即要指示应启动语言服务器，或可以执行其他逻辑，还可以调用委托[StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017)更高版本。 **若要激活语言服务器时，必须在某一时刻调用 StartAsync。**
 
-[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017)是通过调用最终调用的方法[StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017)委托; 它包含用于启动语言服务器并建立连接的逻辑。 连接对象需要返回其中包含用于写入到服务器或从服务器读取的流。 将捕获并显示给用户通过 Visual Studio 中的信息栏消息此处引发任何异常。
+[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017)是通过调用最终调用的方法[StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017)委托; 它包含用于启动语言服务器并建立连接的逻辑。 必须返回一个包含用于写入到服务器或从服务器读取的流的连接对象。 此处引发任何异常捕获并显示给用户通过 Visual Studio 中的信息栏消息。
 
 ### <a name="activation"></a>激活
 
@@ -242,7 +248,7 @@ Visual Studio 将使用[MEF](https://github.com/Microsoft/vs-mef/blob/master/doc
 
 ### <a name="content-type-definition"></a>内容类型定义
 
-当前加载你 LSP 基于语言的服务器扩展的唯一方法是通过文件内容类型。 即，定义语言客户端类时 (可实现[ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017))，你将需要定义类型的文件，打开时，将加载你的扩展。 如果不打开任何你定义的内容类型匹配的文件，将不加载你的扩展。
+当前加载你 LSP 基于语言的服务器扩展的唯一方法是通过文件内容类型。 即定义语言客户端类时 (可实现[ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017))，你将需要定义类型的文件，如果打开，则将导致你要加载的扩展。 如果不打开任何你定义的内容类型匹配的文件，将不加载你的扩展。
 
 通过定义一个或多个 ContentTypeDefinition 类完成此操作：
 
@@ -265,7 +271,7 @@ namespace MockLanguageExtension
 }
 ```
 
-在上面的示例中，为以.bar 文件扩展名结尾的文件创建的内容类型定义。 内容类型定义给定名称"栏"和**必须**派生自[CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017)。
+在前面的示例中，以结尾的文件创建的内容类型定义`.bar`文件扩展名。 内容类型定义给定名称"栏"和**必须**派生自[CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017)。
 
 在添加的内容类型定义之后, 你可以然后定义何时加载你语言的客户端扩展语言客户端类中：
 
@@ -277,13 +283,13 @@ namespace MockLanguageExtension
     }
 ```
 
-添加对 LSP 语言服务器的支持不需要你在 Visual Studio 中实现您自己的项目系统。 客户可以在 Visual Studio，若要开始使用你语言服务中打开单个文件或文件夹。 事实上，支持 LSP 语言服务器旨在仅在打开的文件夹/文件方案中工作。 如果实现自定义项目系统，某些功能，例如设置，将无法工作。
+添加对 LSP 语言服务器的支持不需要你在 Visual Studio 中实现您自己的项目系统。 客户可以在 Visual Studio，若要开始使用你语言服务中打开单个文件或文件夹。 事实上，支持 LSP 语言服务器旨在仅在打开的文件夹/文件方案中工作。 如果实现自定义项目系统时，某些功能 （如设置） 将不工作。
 
 ## <a name="advanced-features"></a>高级的功能
 
 ### <a name="settings"></a>设置
 
-支持自定义语言服务器特定设置可用于在 Visual Studio 中，LSP 支持预览版本，但它正在仍进行完善。 设置都特定于语言服务器支持，通常控制如何语言服务器发出数据。 例如，语言服务器可能具有的最大报告的错误数的设置。 扩展插件作者可以定义默认值，对于特定项目的用户可以更改。
+对自定义特定于语言的服务器的设置可用于在 Visual Studio 中，LSP 支持预览版本，但它正在仍进行完善的支持。 设置都特定于语言服务器支持，通常控制如何语言服务器发出数据。 例如，语言服务器可能具有的最大报告的错误数的设置。 扩展插件作者可以定义默认值，对于特定项目的用户可以更改。
 
 请按照以下步骤来将对设置的支持添加到你 LSP 语言服务的扩展操作：
 
@@ -320,7 +326,7 @@ namespace MockLanguageExtension
 
   ![编辑 vspackage 资产](media/lsp-add-vspackage-asset.png)
 
-  * **类型**: Microsoft.VisualStudio.VsPackage
+  * **Type**: Microsoft.VisualStudio.VsPackage
   * **源**： 在文件系统上的文件
   * **路径**: [pkgdef 文件路径]
 
@@ -338,7 +344,7 @@ namespace MockLanguageExtension
 ### <a name="enabling-diagnostics-tracing"></a>启用诊断跟踪
 可以启用诊断跟踪输出之间的客户端和服务器，在调试问题时很有用的所有消息。  若要启用诊断跟踪，请执行以下操作：
 
-1. 打开或创建工作区设置文件"VSWorkspaceSettings.json"（如上所示）。
+1. 打开或创建工作区设置文件"VSWorkspaceSettings.json"（请参见"工作区设置的编辑用户"）。
 2. 在设置 json 文件中添加以下行：
 
 ```json
@@ -352,7 +358,7 @@ namespace MockLanguageExtension
 * "消息": 跟踪打开的跟踪，但唯一的方法名称和响应 ID。
 * "详细": 跟踪打开状态;整个 rpc 消息会进行跟踪。
 
-启用跟踪后，内容将写入"%temp%\visualstudio\lsp"目录中的文件。  它将遵循命名格式 [LanguageClientName]-[日期时间戳].log。  当前，仅可以为打开文件夹方案启用跟踪。  打开单个文件以激活语言服务器不具有诊断跟踪支持。 
+内容打开跟踪时写入"%temp%\visualstudio\lsp"目录中的文件。  日志采用的命名格式`[LanguageClientName]-[Datetime Stamp].log`。  当前，仅可以为打开文件夹方案启用跟踪。  打开单个文件以激活语言服务器不具有诊断跟踪支持。
 
 ### <a name="custom-messages"></a>自定义消息
 
@@ -474,7 +480,7 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 
 **如果已存在 VS 受支持的语言安装的服务 (例如，JavaScript)，可以仍安装 LSP 语言服务器扩展，提供了附加功能 （如 linting)？**
 
-是，但并非所有功能都正常工作。 为 LSP 语言服务器扩展的最终目标是能够语言服务本身不支持的 Visual Studio。 你可以创建扩展提供更多支持使用 LSP 语言服务器，但某些功能，例如 IntelliSense、 将不会顺畅的体验。 通常我们建议用于提供新的语言体验 LSP 语言服务器扩展不扩展现有的。
+是，但并非所有功能都正常工作。 为 LSP 语言服务器扩展的最终目标是能够语言服务本身不支持的 Visual Studio。 你可以创建扩展提供更多支持使用 LSP 语言服务器，但某些功能 （例如 IntelliSense) 不会顺畅的体验。 一般情况下，建议用于提供新的语言体验，不扩展现有的 LSP 语言服务器扩展。
 
 **其中将我已完成的 LSP 语言服务器 VSIX 的发布？**
 

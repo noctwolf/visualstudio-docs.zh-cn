@@ -6,21 +6,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Presentation.View.ImportDesigner.UI
+f1_keywords:
+- System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 3873e444f3d9c68b632d52ab98bee07bf14af679
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cfa65ee24b99fd81712ec88e45f44bb2ed42c21a
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-use-the-imports-designer"></a>如何：使用导入设计器
-导入设计器允许您为将在表达式中使用的类型输入命名空间。 非常类似**导入**或**使用**Visual Basic.NET 和 C# 中，在导入设计器中指定命名空间中的关键字，您可以只需进入你的表达式而不是完全限定的类型名称版本类型名称。  
+导入设计器允许您为将在表达式中使用的类型输入命名空间。 非常类似**导入**或**使用**Visual Basic 和 C# 中，在导入设计器中指定命名空间中的关键字，您可以只需进入你的表达式而不是完全限定的类型名称版本类型名称。  
   
  导入设计器既响应 UI 中的更改，也响应保存工作流时进行的更改。 保存工作流后，会向导入设计器中自动添加命名空间。 这些要求包括：  
   

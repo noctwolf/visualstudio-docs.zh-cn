@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
 ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f9b0f8e36cddca227062550775c9f6098aeb1c6f
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>演练：对 C/C++ 代码进行缺陷分析
 本演练演示如何通过使用 C/c + + 代码的代码分析工具分析 C/c + + 代码以查找潜在的代码缺陷。  
@@ -41,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="prerequisites"></a>系统必备  
   
--   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]。  
+-   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或[!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]。  
   
 -   一份[演示示例](../code-quality/demo-sample.md)。  
   
@@ -85,9 +87,9 @@ ms.lasthandoff: 12/22/2017
   
 3.  使用 SUCCEEDED 宏更正此警告。 你的代码应类似于以下代码：  
   
-    ```  
-    if (SUCCEEDED (ReadUserAccount()) )  
-    ```  
+   ```cpp
+   if (SUCCEEDED (ReadUserAccount()) )  
+   ```  
   
 4.  在**错误列表**，双击以下警告：  
   
@@ -95,17 +97,17 @@ ms.lasthandoff: 12/22/2017
   
 5.  更正此警告的相等性测试。 你的代码应类似于以下代码：  
   
-    ```  
-    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
-    ```  
+   ```cpp
+   if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
+   ```  
   
 ### <a name="to-treat-warning-as-an-error"></a>若要将警告视为错误  
   
 1.  在 Bug.cpp 文件中，添加以下`#pragma`到开头的文件以将视为错误的警告 C6001 的语句：  
   
-    ```  
-    #pragma warning (error: 6001)  
-    ```  
+   ```cpp
+   #pragma warning (error: 6001)  
+   ```  
   
 2.  重新生成 CodeDefects 项目。  
   
@@ -141,17 +143,14 @@ ms.lasthandoff: 12/22/2017
   
 8.  若要更正此警告，请使用 if 语句来测试返回值。 你的代码应类似于以下代码：  
   
-     `if (NULL != newNode)`  
-  
-     `{`  
-  
-     `newNode->data = value;`  
-  
-     `newNode->next = 0;`  
-  
-     `node->next = newNode;`  
-  
-     `}`  
+   ```cpp
+   if (NULL != newNode)  
+   {  
+   newNode->data = value;  
+   newNode->next = 0;  
+   node->next = newNode;  
+   }
+   ```
   
 9. 重新生成批注项目。  
   
@@ -161,15 +160,13 @@ ms.lasthandoff: 12/22/2017
   
 1.  批注的正式参数和返回值的函数`AddTail`使用 Pre 和 Post 条件，此示例中所示：  
   
-     `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
-  
-     `(`  
-  
-     `[SA_Pre(Null=SA_Maybe)] LinkedList* node,`  
-  
-     `int value`  
-  
-     `)`  
+   ```cpp
+   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
+   (
+   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
+   int value
+   )
+   ```
   
 2.  重新生成批注项目。  
   
@@ -181,19 +178,21 @@ ms.lasthandoff: 12/22/2017
   
 4.  若要更正此警告，请使用 if 语句来测试返回值。 你的代码应类似于以下代码：  
   
-    ```  
-    . . .  
-    LinkedList *newNode = NULL;   
-    if (NULL == node)  
-    {  
-         return NULL;  
+   ```cpp
+   . . .  
+   LinkedList *newNode = NULL;   
+   if (NULL == node)  
+   {  
+        return NULL;  
         . . .  
-    }  
-    ```  
+   }  
+   ```  
   
 5.  重新生成批注项目。  
   
      生成项目，并且没有任何警告或错误。  
   
-## <a name="see-also"></a>请参阅  
- [演练：对托管代码进行代码缺陷分析](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+## <a name="see-also"></a>请参阅
+
+[演练：对托管代码进行代码缺陷分析](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)  
+[C/c + + 代码分析](../code-quality/code-analysis-for-c-cpp-overview.md)

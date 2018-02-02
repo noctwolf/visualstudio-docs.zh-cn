@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 05/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 59131181-1caa-4b7f-be4b-e84709634edf
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36045b311a73af96df51553f9025a1de84c93b78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断入门
 在此部分中，你会准备首次使用图形诊断，然后从 Direct3D 应用捕获帧并在图形分析器中检查它们。  
@@ -31,13 +31,6 @@ ms.lasthandoff: 12/22/2017
  可选的 Windows 功能*图形工具*提供 Windows 10 上的图形诊断所需的捕获和播放基础结构。  
   
  有关安装图形工具的信息，请参阅[安装图形工具适用于 Windows 10](#InstallGraphicsTools)。  
-  
-### <a name="windows-81-prerequisites"></a>Windows 8.1 先决条件  
- 适用于 Windows 8.1 的 Windows 软件开发工具包 (SDK) 提供 Windows 8.1 上的图形诊断所需的捕获和播放基础结构，并支持针对 Windows 8.1 和 Windows 8 的开发。  
-  
- [下载 Windows 8.1 的 Windows 软件开发工具包 (SDK)](https://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)  
-  
- 若要从运行 Windows 8.1 的开发计算机使用运行 Windows 10 的远程播放计算机，必须在开发计算机上安装 Windows 10 SDK，并在播放计算机上安装可选的图形工具功能。  
   
 ##  <a name="InstallGraphicsTools"></a>适用于 Windows 10 安装图形工具  
  在 Windows 10 中，图形诊断基础结构由 Windows 调用的一个可选功能*图形工具*。 在 Windows 10 上捕获和播放图形信息需要此功能（无论所捕获的应用是面向以前版本的 Windows 还是它所使用的 Direct3D 版本）。 可以选择提前安装图形工具功能；否则它会在你首次从 Visual Studio 启动图形诊断会话时按需安装。  
@@ -66,9 +59,7 @@ ms.lasthandoff: 12/22/2017
  如果你已有自己的 Direct3D 应用来探索图形诊断，非常好 ！ 否则，请使用以下项之一：
 
 - **DirectX 11 应用 (通用 Windows)**或**DirectX 12 应用 (通用 Windows)**适用于 Windows 10 项目模板。
-- **DirectX 应用 (Windows 8.1)** Windows 8.1 的项目模板。
 - [Direct3D 12 UAP 示例](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)适用于 Windows 10。  
-- [DirectX 大理石迷宫游戏示例](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)为 Windows 8.1。  
   
  确保在继续之前可以生成应用。  
   
