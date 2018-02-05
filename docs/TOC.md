@@ -1,5 +1,6 @@
 # [Visual Studio 文档](ide/index.md)
 # [概述](ide/visual-studio-ide.md)
+## [新增功能](ide/whats-new-in-visual-studio.md)
 # 安装
 ## [安装 Visual Studio](install/install-visual-studio.md)
 ## [登录 Visual Studio](ide/signing-in-to-visual-studio.md)
@@ -309,8 +310,7 @@
 #### [全球 Windows 窗体和 Web 窗体的区域性特定类](ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)
 ### [使用双向语言创建应用程序](ide/creating-applications-in-bi-directional-languages.md)
 # 参考
-## [新增功能](ide/whats-new-in-visual-studio.md)
-### 项目和项模板
+## 项目和项模板
 ### [模板参数](ide/template-parameters.md)
 ### [模板架构参考（扩展性）](extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default)
 ## 常规用户界面元素
