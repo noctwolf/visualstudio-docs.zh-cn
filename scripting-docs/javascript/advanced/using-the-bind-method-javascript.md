@@ -5,7 +5,8 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - bind method [JavaScript]
 - this object [JavaScript]
 ms.assetid: f608f95b-3b9d-437a-a67a-5a4ef8f6c07f
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c49f6e8c5606845f41cc947029ac9405f97665f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d185801cc5bba355751147edb79b9c47d21f8eed
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="using-the-bind-method-javascript"></a>使用 bind 方法 (JavaScript)
 JavaScript `bind` 方法具有几种用法。 通常，它用于为在其他上下文中执行的函数保留执行上下文。 `bind` 创建具有与原始函数相同的主体的新函数。 传递给 `bind` 的第一个参数指定绑定函数中的 `this` 关键字的值。 也可以将其他可选参数传递到 `bind`。 有关其他用法的示例，请参阅 [bind 方法（函数）](../../javascript/reference/bind-method-function-javascript.md)。 有关使用 `bind` 部分应用函数的示例，请参阅 [Hilo JavaScript 中的异步编程模式和提示（Microsoft Store）](http://msdn.microsoft.com/library/windows/apps/jj649740.aspx)。  
@@ -59,8 +60,7 @@ function dataReadyHandler() {
 setTimeout(function () {  
     data = [0, 1, 2, 3];  
     document.dispatchEvent(dataReadyEvent);  
-    }, 5000);  
-}  
+    }, 5000);
   
 var dataObj = new DataObject();  
   
@@ -70,7 +70,7 @@ var dataObj = new DataObject();
   
 ```  
   
- 如果注释掉使用 `bind` 的代码行，取消注释调用不带 `addEventListener` 的 `bind` 的代码行，然后重新运行此代码，则 `dataReadyHandler` 函数将失败。 例如，在 `dataReadyHander` 中，`this.name` 将是未定义的，并且 `this.data()` 将导致发生错误，因为 `this` 对象不再引用此数据对象。  
+ 如果注释掉使用 `bind` 的代码行，取消注释调用不带 `addEventListener` 的 `bind` 的代码行，然后重新运行此代码，则 `dataReadyHandler` 函数将失败。 例如，在 `dataReadyHandler` 中，`this.name` 将是未定义的，并且 `this.data()` 将导致发生错误，因为 `this` 对象不再引用此数据对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [bind 方法 (Function)](../../javascript/reference/bind-method-function-javascript.md)

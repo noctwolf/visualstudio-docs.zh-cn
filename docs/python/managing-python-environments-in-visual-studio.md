@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 146e3f80de674e6219d1f7c89ea4186b66ee310f
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="python-environments"></a>Python 环境
 
@@ -123,7 +123,7 @@ Visual Studio （所有版本）通过检查注册表（下面的 [PEP 514 - Win
 | --- | --- |
 | 使此环境成为新项目的默认环境 | 设置活动环境，这可能会导致 Visual Studio 在加载 IntelliSense 数据库时短时间无响应。 含有多个包的环境可能无响应的时间更长。 |
 | 访问分发服务器的网站 | 打开浏览器，访问 Python 分发所提供的 URL。 例如，对于 Python 3.x，会转到 python.org。 |
-| 打开交互窗口 | 在 Visual Studio 中为此环境打开[交互 (REPL) 窗口](interactive-repl.md)，应用任何[启动脚本（见下文）](#startup-scripts)。 |
+| 打开交互窗口 | 在 Visual Studio 中为此环境打开[交互 (REPL) 窗口](python-interactive-repl-in-visual-studio.md)，应用任何[启动脚本（见下文）](#startup-scripts)。 |
 | 浏览交互式脚本 | 请参阅[启动脚本](#startup-scripts)。 |
 | 使用 IPython 交互模式 | 设置后，将默认使用 IPython 打开交互窗口。 这样会启用内联绘图及扩展的 IPython 语法（如 `name?`）来查看 shell 命令的帮助和 `!command`。 建议在使用 Anaconda 分发时使用此选项，因为该选项需要额外的包。 有关详细信息，请参阅[在交互窗口中使用 IPython](interactive-repl-ipython.md)。 |
 | 在 PowerShell 中打开 | 在 PowerShell 命令窗口中启动解释器。 |
@@ -137,7 +137,7 @@ Visual Studio （所有版本）通过检查注册表（下面的 [PEP 514 - Win
 
 1. 安装环境时，Visual Studio 会创建文件夹 `Documents\Visual Studio 2017\Python Scripts\<environment>`，其中 &lt;environment> 对应环境的名称。 可以使用“浏览交互式脚本”命令轻松地导航到特定于环境的文件夹。 启动该环境的交互窗口时，它会按字母顺序加载和运行在此处找到的任何 `.py` 文件。
 
-1. “工具”>“选项”>“Python 工具”>“交互窗口”选项卡中的“脚本”控件（请参阅[交互窗口选项](options.md#interactive-windows-options)）用于为所有环境中加载和运行的启动脚本指定另一个文件夹。 但是，此功能目前无效。
+1. “工具”>“选项”>“Python 工具”>“交互窗口”选项卡中的“脚本”控件（请参阅[交互窗口选项](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)）用于为所有环境中加载和运行的启动脚本指定另一个文件夹。 但是，此功能目前无效。
 
 ### <a name="configure-tab"></a>配置选项卡
 
@@ -172,7 +172,7 @@ Visual Studio （所有版本）通过检查注册表（下面的 [PEP 514 - Win
 
 选择“安装或删除包时始终提升”可防止针对相应环境出现该对话框。 若要再次显示对话框，请转到“工具”>“选项”>“Python 工具”>“常规”，选择按钮，重置所有永久隐藏的对话框。
 
-在同一选项卡上，还可以选择“始终以管理员身份运行 pip”，针对所有环境禁止显示该对话框。 请参阅[选项 - “常规”选项卡](options.md#general-options)。
+在同一选项卡上，还可以选择“始终以管理员身份运行 pip”，针对所有环境禁止显示该对话框。 请参阅[选项 - “常规”选项卡](python-support-options-and-settings-in-visual-studio.md#general-options)。
 
 ### <a name="intellisense-tab"></a>IntelliSense 选项卡
 
@@ -232,7 +232,7 @@ Visual Studio （所有版本）通过检查注册表（下面的 [PEP 514 - Win
 
 ## <a name="managing-required-packages-requirementstxt"></a>管理所需的包 (requirements.txt)
 
-若要与其他人共享项目，使用生成系统或计划[将其发布到 Microsoft Azure](template-azure-cloud-service.md)，需要指定项目需要的外部包。 建议的方法是使用 [requirements.txt 文件](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，文件中包含安装相关包所需版本的 pip 命令列表。
+若要与其他人共享项目，使用生成系统或计划[将其发布到 Microsoft Azure](python-azure-cloud-service-project-template.md)，需要指定项目需要的外部包。 建议的方法是使用 [requirements.txt 文件](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，文件中包含安装相关包所需版本的 pip 命令列表。
 
 从技术上讲，任何文件名都可用于跟踪要求（通过安装包时使用 `-r <full path to file>`，但 Visual Studio 提供针对 `requirements.txt` 的特定支持：
 

@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 690eb875b0b9251dddcb36c4ad7ded17c36b67cb
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="options-page-debugging-node-properties"></a>“选项”页 ->“调试”节点属性
 下表描述了与“选项”对话框的“调试”类别 `DTE.Properties("Debugging", <Property Page>)` 关联的页面（或属性集合）。  
@@ -25,7 +27,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="general"></a>常规  
  `DTE.Properties("Debugging", "General")`  
   
-|属性项名称|值|描述|  
+|属性项名称|“值”|描述|  
 |------------------------|-----------|-----------------|  
 |PromptOnBreakpointDelete|Get/Set (Boolean)|确定调试器是否在删除项目中的所有断点之前请示授权。|  
 |BreakAllProcesses|Get/Set (Boolean)|确定调试器是否在单个进程中断时中断所有进程。|  
@@ -39,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 |ShowAllMembers|Get/Set (Boolean)|对于非用户对象，确定调试器是否在变量窗口中显示所有对象成员。 除非启用“仅我的代码”，否则此选项无效。|  
 |WarnIfNoUserCode|Get/Set (Boolean)|确定调试器是否在用户尝试附加到没有用户代码的进程时发出警告。 除非启用“仅我的代码”，否则此选项无效。|  
 |EnablePropertyEvaluation|Get/Set (Boolean)|确定调试器是否自动评估托管代码中的属性和隐式函数调用。|  
-|CallStringConversion|Get/Set (Boolean)|确定调试器是否对变量窗口中的对象隐式调用字符串转换函数。 此选项仅适用于 C# 和 JScript 代码。|  
+|CallStringConversion|Get/Set (Boolean)|确定调试器是否对变量窗口中的对象隐式调用字符串转换函数。|  
 |EnableSourceServer|Get/Set (Boolean)|确定调试器是否可以从源服务器访问代码。|  
 |PrintSourceServerDiagnostics|Get/Set (Boolean)|确定“输出”窗口是否显示与源服务器相关的诊断消息。 除非启用源服务器访问，否则此选项无效。|  
 |HighlightEntireLine|Get/Set (Boolean)|确定调试器是否突出显示断点的整行和当前语句。|  
@@ -55,7 +57,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="edit-and-continue"></a>编辑并继续  
  `DTE.Properties("Debugging", "EditAndContinue")`  
   
-|属性项名称|值|描述|  
+|属性项名称|“值”|描述|  
 |------------------------|-----------|-----------------|  
 |EnableEditAndContinue|Get/Set (Boolean)|确定是否启用“编辑并继续”。 此选项适用于所有支持“编辑并继续”的语言。|  
 |InvokedByCommands|Get/Set (Boolean)|确定当用户选择调试命令（例如“单步执行”或“继续”）时，是否自动将“编辑并继续”应用代码更改。 此选项仅适用于本机代码。|  
@@ -67,7 +69,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="just-in-time"></a>实时  
  `DTE.Properties("Debugging", "JustInTime")`  
   
-|属性项名称|值|描述|  
+|属性项名称|“值”|描述|  
 |------------------------|-----------|-----------------|  
 |JitManaged|Get/Set (Boolean)|确定是否为托管代码启用实时调试。|  
 |JitNative|Get/Set (Boolean)|确定是否为本机代码启用实时调试。|  
@@ -76,7 +78,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="native"></a>Native  
  `DTE.Properties("Debugging", "Native")`  
   
-|属性项名称|值|描述|  
+|属性项名称|“值”|描述|  
 |------------------------|-----------|-----------------|  
 |LoadDllExports|Get/Set (Boolean)|确定调试器是否加载 DLL 导出表。|  
 |EnableRPC|Get/Set (Boolean)|确定调试器是否可以单步执行 COM 远程过程调用。|  

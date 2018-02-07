@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - security [Visual Studio], applications
 - application design, securability
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 665f03744fc559727e96373512fc983e5d75293c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a95521c2ce49e5dfd00863ead6f0f878547f56ec
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="securing-applications"></a>保证应用程序的安全
 虽然大部分应用程序会面临共同的安全挑战，不过每个应用程序域都具有自己的安全挑战。  
@@ -31,19 +33,19 @@ ms.lasthandoff: 12/22/2017
  [安全性最佳做法](/cpp/top/security-best-practices-for-cpp)  
  提供有关在 Visual C++ 中工作时可用的安全功能和做法的信息。  
   
- [安全性和编程（C# 和 Visual Basic）](https://msdn.microsoft.com/en-us/library/ms233782(v=vs.100).aspx)  
+ [安全性和编程（C# 和 Visual Basic）](https://msdn.microsoft.com/library/ms233782(v=vs.100).aspx)  
  提供有关 Visual Basic 和 C# 开发人员面临的前三大安全问题的信息：权限、Web 应用程序和 Visual Studio 安装。  
   
 ## <a name="securing-mobile-applications"></a>保护移动应用程序  
  随着移动设备普及程度的增加，这些设备上的信息和数据的安全性便变得更加重要。  
   
- [设备的安全注意事项](http://msdn.microsoft.com/en-us/45fab484-8718-452e-8210-04fda3c6cb87)  
+ [设备的安全注意事项](http://msdn.microsoft.com/45fab484-8718-452e-8210-04fda3c6cb87)  
  介绍影响设备安全策略的几个因素。  
   
- [.NET Compact Framework 的安全性目标](http://msdn.microsoft.com/en-us/64ac2770-e2bc-40a3-abbf-56c8a2c0e364)  
+ [.NET Compact Framework 的安全性目标](http://msdn.microsoft.com/64ac2770-e2bc-40a3-abbf-56c8a2c0e364)  
  介绍 .NET Compact Framework 安全性的目标。  
   
- [设计安全的移动 Web 窗体页](http://msdn.microsoft.com/en-us/b69727c1-f81f-4221-a116-8f92f769365f)  
+ [设计安全的移动 Web 窗体页](http://msdn.microsoft.com/b69727c1-f81f-4221-a116-8f92f769365f)  
  讨论规划、实现和支持无线网络和移动设备中的安全性。  
   
 ## <a name="securing-web-applications"></a>保护 Web 应用程序  
@@ -55,10 +57,7 @@ ms.lasthandoff: 12/22/2017
  [ASP.NET Web 应用程序安全性](http://msdn.microsoft.com/Library/658d0430-1644-4744-b52d-08b0d6fcacb8)  
  详细介绍如何解决 ASP.NET 中的授权和身份验证问题。  
   
- [脚本的安全注意事项](http://msdn.microsoft.com/en-us/8572efc9-071a-472d-a1a4-f0a3b42644c1)  
- 详细介绍 JScript 程序员可能会遇到的一些安全缺陷。  
-  
- [如何：使用传输安全](http://msdn.microsoft.com/en-us/16210e41-5492-4cc8-9002-7366b1fc7297)  
+ [如何：使用传输安全](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
  介绍如何在连接到 WCF 服务时使用传输安全进行身份验证。  
   
 ## <a name="securing-desktop-applications"></a>保护桌面应用程序  

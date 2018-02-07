@@ -2,7 +2,7 @@
 title: "在 Visual Studio 中使用 Python - 第 3 步：交互 REPL 窗口 | Microsoft Docs"
 description: "在 Visual Studio 中使用 Python 的核心教程的第 3 步，介绍了 Python 交互 REPL 窗口。"
 ms.custom: 
-ms.date: 10/16/2017
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cdfcd81108437e611d7ba58f0a612b19931cc654
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: f251e49847655251de46d44a23ee1d4c1c9f0263
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>步骤 3：使用 REPL 交互窗口
 
@@ -102,5 +102,5 @@ ms.lasthandoff: 01/22/2018
 
 ### <a name="going-deeper"></a>深入了解
 
-- [使用交互窗口](interactive-repl.md)
+- [使用交互窗口](python-interactive-repl-in-visual-studio.md)
 - [使用 IPython REPL](interactive-repl-ipython.md)

@@ -5,12 +5,7 @@ ms.date: 09/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- JScript
-- VB
-- CSharp
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
@@ -19,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: abde071bd67ab3f6a65891d347b9214f6dd5257b
-ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
+ms.openlocfilehash: 5847c97f3fddea65b00c35a5a0f4d5665329ae7e
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>在代码编辑器中编写代码
 
@@ -68,7 +63,6 @@ Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写
 |转换为小写|将选定内容中的所有字符更改为小写；如果未选择任何内容，则将插入点处的字符更改为小写。|
 |将选定行上移|将选定行上移一行。 快捷键：ALT + 向上箭头。|
 |将选定行下移|将选定行下移一行。 快捷键：ALT + 向下箭头。|
-|验证文档|验证 JScript 代码文件。|
 |删除水平空白|删除当前行末尾的制表符或空格。|
 |查看空白|将空格显示为上移的点，将制表符显示为箭头。 文件末尾将显示为矩形标志符号。 如果已选择“工具/选项/文本编辑器/所有语言/自动换行/显示可见的自动换行标志符号”  ，则也将显示该标志符号。|
 |自动换行|使文档中的所有行在代码窗口中均可见。 可以在“文本编辑器的所有语言”设置中禁用和启用自动换行（“工具/选项/文本编辑器/所有语言”）。|

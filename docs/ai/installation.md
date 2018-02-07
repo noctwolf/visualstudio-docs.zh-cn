@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.workload: multiple
-ms.openlocfilehash: 55524900d59bf3631d724e2cb142e649bf82c839
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: db07adc39f807b4dfc938ddf599bd7f83378f475
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installation"></a>安装
 
@@ -117,7 +118,7 @@ Python 已成为用于深入学习应用程序的主要编程语言。
 ### <a name="python-on-visual-studio"></a>Visual Studio 中的 Python
 
 在 Visual Studio 中通过扩展完全支持 Python。
-详细了解如何安装 [Python for Visual Studio Tools](https://docs.microsoft.com/visualstudio/python/installation) 以获得详细信息。
+详细了解如何安装 [Python for Visual Studio Tools](../python/installing-python-support-in-visual-studio.md) 以获得详细信息。
 
 ### <a name="numpy-and-scipy"></a>NumPy 和 SciPy
 

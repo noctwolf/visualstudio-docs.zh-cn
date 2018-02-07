@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d0ef17900f515ff69f25c30fc797e4e3c9cc7a6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ef58c0eb177238075b0f1cd097f8949272538a75
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/22/2018
 
 1. 要在 Visual Studio 中创建新 Python 项目，请选择“文件”>“新建”>“项目”。 搜索"Python"，选择“Python 应用程序”模板，为其提供合适的名称和位置，然后选择“确定”。
 
-1. 在项目的 `.py` 文件中，粘贴以下代码，用于对双曲正切的计算进行基准测试（无需使用数学库即可实现，以便简化比较）。 可随意手动输入代码，体验某些 [Python 编辑功能](code-editing.md)。
+1. 在项目的 `.py` 文件中，粘贴以下代码，用于对双曲正切的计算进行基准测试（无需使用数学库即可实现，以便简化比较）。 可随意手动输入代码，体验某些 [Python 编辑功能](editing-python-code-in-visual-studio.md)。
 
     ```python
     from itertools import islice
@@ -289,7 +289,7 @@ Visual Studio 支持一起调试 Python 和 C++ 代码。
 
     ![在 C++ 代码中的断点处停止](media/cpp-debugging.png)
 
-1. 此时，可浏览 C++ 代码、检查变量等。 这些功能在[一起调试 Python 和 C++](debugging-mixed-mode.md) 中有详细介绍。
+1. 此时，可浏览 C++ 代码、检查变量等。 这些功能在[一起调试 Python 和 C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) 中有详细介绍。
 
 ## <a name="alternative-approaches"></a>替代方法
 

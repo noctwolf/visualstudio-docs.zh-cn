@@ -34,7 +34,7 @@
 
     ![Python MNIST 程序的第一次输出](media\create-project-repo\tensorflow-mnist-running.png)
 
-> 如果正在使用 Anaconda 并遇到与缺失 numpy 有关的错误，可能需要更改 python 环境，[将 python 环境使更改为使用 Anaconda](https://docs.microsoft.com/visualstudio/python/python-environments) 
+> 如果正在使用 Anaconda 并遇到与缺失 numpy 有关的错误，可能需要更改 python 环境，[将 python 环境使更改为使用 Anaconda](../python/managing-python-environments-in-visual-studio.md)
 
 11. 可以使用 TensorBoard 可视化进程。 右键单击项目，单击“运行 TensorBoard”，然后选择输出 TensorBoard 日志所在的目录。
 
