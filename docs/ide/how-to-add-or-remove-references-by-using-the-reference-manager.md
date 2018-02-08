@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
-- Visual C# projects, references
+- C# projects, references
 - references [Visual Studio], adding
 - assemblies [Visual Studio], references
 - Visual Basic projects, references
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 34dd559abcbfa6172c52edd2ed5eae2898f0b358
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: aefd0227717352e449b51950620d0f0900cf2e60
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 
@@ -164,7 +164,7 @@ ms.lasthandoff: 01/22/2018
 
 可以通过两种方式在 Visual Studio 中生成 WinMD 文件：
 
-- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用托管项目**：[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用项目可通过设置“项目属性”|“输出类型”=“WinMD 文件”来输出 WinMD 二进制文件。 WinMD 文件名必须是其中包含的所有命名空间的超集命名空间。 例如，如果项目包括命名空间 A.B 和 A.B.C，则其输出的 WinMD 的可能名称为 A.winmd 和 A.B.winmd。 如果用户输入与项目中的命名空间集不相交的“项目属性”|“程序集名称”或“项目属性”|“命名空间值”，或者项目中没有超集命名空间，则将生成一个生成警告：“A.winmd”不是此程序集的有效 .winmd 文件名。 Windows 元数据文件中的所有类型必须存在于文件名的子命名空间中。 无法在运行时查找文件名子命名空间中不存在的类型。 在此程序集中，最小的公共命名空间为“CSWSClassLibrary1”。 桌面 Visual Basic 或 Visual C# 项目只能使用通过 [!INCLUDE[win8](../debugger/includes/win8_md.md)] SDK 生成的 WinMD（也称为第一方 WinMD），无法生成 WinMD。
+- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用托管项目**：[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用项目可通过设置“项目属性”|“输出类型”=“WinMD 文件”来输出 WinMD 二进制文件。 WinMD 文件名必须是其中包含的所有命名空间的超集命名空间。 例如，如果项目包括命名空间 A.B 和 A.B.C，则其输出的 WinMD 的可能名称为 A.winmd 和 A.B.winmd。 如果用户输入与项目中的命名空间集不相交的“项目属性”|“程序集名称”或“项目属性”|“命名空间值”，或者项目中没有超集命名空间，则将生成一个生成警告：“A.winmd”不是此程序集的有效 .winmd 文件名。 Windows 元数据文件中的所有类型必须存在于文件名的子命名空间中。 无法在运行时查找文件名子命名空间中不存在的类型。 在此程序集中，最小的公共命名空间为“CSWSClassLibrary1”。 桌面 Visual Basic 或 C# 项目只能使用通过 [!INCLUDE[win8](../debugger/includes/win8_md.md)] SDK 生成的 WinMD（也称为第一方 WinMD），无法生成 WinMD。
 
 - **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用本机项目**：本机 WinMD 文件仅包含元数据。 它的实现存在于单独 DLL 文件中。 若要生成本机二进制文件，可在“新建项目”对话框中选择“Windows 运行时组件”项目模板，或者从空项目开始并修改项目属性以生成 WinMD 文件。 如果项目中包含不相交的命名空间，则将出现生成错误，告知用户合并命名空间或运行 MSMerge 工具。
 

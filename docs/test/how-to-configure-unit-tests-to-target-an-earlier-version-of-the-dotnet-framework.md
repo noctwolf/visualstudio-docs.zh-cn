@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 author: gewarren
-ms.openlocfilehash: a71eb54bad089e7d5bad24416604d93da615bd15
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 13780b561ba14cc06269e443265313e3b2e664c6
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：配置单元测试以面向 .NET Framework 的早期版本
 在 Microsoft Visual Studio 中创建测试项目时，默认将 .NET Framework 的最新版本设为要面向的版本。 此外，如果从 Visual Studio 的早期版本升级测试项目，那么它们将被升级为面向 .NET Framework 的最新版本。 通过编辑项目属性，可以显式使项目重新面向 .NET Framework 的早期版本。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 01/09/2018
   
      随即显示 Visual Basic 测试项目的属性。  
   
-5.  在“编译”选项卡上选择“高级编译选项”，如下图所示。  
+5.  在“编译”选项卡上，选择“高级编译选项”，如下面的插图中所示。
   
      ![高级编译选项](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
@@ -84,7 +85,7 @@ ms.lasthandoff: 01/09/2018
   
      随即显示 Visual C# 测试项目的属性。  
   
-5.  在“应用程序”选项卡上选择“目标框架”，然后从下拉列表中选择“.NET Framework 3.5”或更高版本，以更改目标框架，如下图所示。 不应指定客户端版本。  
+5.  在“应用程序”选项卡上，选择“目标框架”。 从下拉列表中，选择“.NET Framework 3.5”或更高版本，如下图中所示。 不应指定客户端版本。
   
      ![目标框架下拉列表](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
   
@@ -125,8 +126,8 @@ ms.lasthandoff: 01/09/2018
   
 8.  在解决方案资源管理器中，从新的 Visual C++ 测试项目的快捷菜单中选择“重载项目”。  
   
-## <a name="see-also"></a>请参阅  
- [为现有代码创建和运行单元测试](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [创建 SharePoint 解决方案](/office-dev/office-dev/create-sharepoint-solutions)   
- [生成和调试 SharePoint 解决方案](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [“高级编译器设置”对话框 (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+## <a name="see-also"></a>请参阅
+
+[创建 SharePoint 解决方案](/office-dev/office-dev/create-sharepoint-solutions)  
+[生成和调试 SharePoint 解决方案](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)  
+[“高级编译器设置”对话框 (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

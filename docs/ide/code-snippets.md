@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 32aded825454ce53193d488c01e3aad70d9032f8
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets"></a>代码片段
 
@@ -92,6 +92,6 @@ End Property
 [如何：分发代码片段](../ide/how-to-distribute-code-snippets.md)  
 [有关使用代码片段的最佳做法](../ide/best-practices-for-using-code-snippets.md)  
 [代码片段疑难解答](../ide/troubleshooting-snippets.md)  
-[Visual C# 代码片段](../ide/visual-csharp-code-snippets.md)  
+[C# 代码片段](../ide/visual-csharp-code-snippets.md)  
 [Visual C++ 代码片段](../ide/visual-cpp-code-snippets.md)  
 [代码片段架构参考](../ide/code-snippets-schema-reference.md)

@@ -4,31 +4,33 @@ ms.custom:
 ms.date: 06/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 78773b3a87aff91fae92ec64365ef55620e58d44
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 82b7503b937babd81a41136656d75c95e844b94c
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="customize-your-build"></a>自定义生成
-在 MSBuild 15 版之前的版本中，如果要向解决方案中的项目提供新的自定义属性，必须手动向解决方案中的每个项目文件添加一个针对该属性的引用。 另外，还必须在 .props 文件中定义属性，在解决方案的每个项目中显式导入该 .props 文件。
+在 MSBuild 15 版之前的版本中，如果要向解决方案中的项目提供新的自定义属性，必须手动向解决方案中的每个项目文件添加一个针对该属性的引用。 另外，还必须在 .props 文件中定义属性，然后在解决方案的每个项目中显式导入该 .props 文件。
 
-但现在通过在存储库根目录下名为 Directory.Build.props 的单个文件中定义一个新属性，只需一步即可向每个项目添加该属性。 MSBuild 运行时，Microsoft.Common.props 会搜索 Directory.Build.props 文件的目录结构（Microsoft.Common.targets 将查找 Directory.Build.targets）。 如果找到，就会导入该属性。 Directory.Build.props 是用户定义文件，对目录下的项目提供自定义选项。
+但现在通过在存储库根目录下名为 Directory.Build.props 的单个文件中定义一个新属性，只需一步即可向每个项目添加该属性。 在 MSBuild 运行时，Microsoft.Common.props 会搜索 Directory.Build.props 文件的目录结构（Microsoft.Common.targets 将查找 Directory.Build.targets）。 如果找到，就会导入该属性。 Directory.Build.props 是用户定义文件，对目录下的项目提供自定义选项。
 
 ## <a name="directorybuildprops-example"></a>Directory.Build.props 示例
-例如，如果想要使所有项目都可以访问新的 Roslyn /deterministic 功能（属性 `$(Deterministic)` 在 Roslyn CoreCompile 目标中公开了此功能），可以执行以下操作。
+例如，如果想要使所有项目都可以访问新的 Roslyn /deterministic 功能（属性 `$(Deterministic)` 在 Roslyn `CoreCompile` 目标中公开了此功能），可以执行以下操作。
 
 1. 在存储库根目录中创建一个名为 Directory.Build.props 的新文件。
 2. 将以下 XML 添加到此文件。
@@ -43,7 +45,7 @@ ms.lasthandoff: 01/05/2018
 3. 运行 MSBuild。 项目现有的 Microsoft.Common.props 和 Microsoft.Common.targets 导入会找到该文件并将其导入。
 
 ## <a name="search-scope"></a>搜索范围
-搜索 Directory.Build.props 文件时，MSBuild 将从项目位置 ($(MSBuildProjectFullPath)) 向上搜索目录结构，找到 Directory.Build.props 文件后停止。 例如，如果 $(MSBuildProjectFullPath) 为 c:\users\username\code\test\case1，MSBuild 将从该位置开始搜索，然后向上搜索目录结构，直到找到 Directory.Build.props 文件，如以下目录结构中所示。
+搜索 Directory.Build.props 文件时，MSBuild 将从项目位置 (`$(MSBuildProjectFullPath)`) 向上搜索目录结构，找到 Directory.Build.props 文件后停止。 例如，如果 `$(MSBuildProjectFullPath)` 为 c:\users\username\code\test\case1，MSBuild 将从该位置开始搜索，然后向上搜索目录结构，直到找到 Directory.Build.props 文件，如以下目录结构中所示。
 
 ```
 c:\users\username\code\test\case1
@@ -79,20 +81,20 @@ Directory.Build.props 很早便已导入 Microsoft.Common.props，因此它无�
     \Project2Tests
 ````
 
-则可能需要具有所有项目 `(1)` 的通用属性、`src` 项目 `(2-src)` 的通用属性，以及 `test` 项目 `(2-test)` 的通用属性。
+则可能需要具有所有项目 (1) 的通用属性、src 项目 (2-src) 的通用属性，以及 test 项目 (2-test) 的通用属性。
 
-为了 msbuild 正确地合并“内部”文件（`2-src` 和 `2-test`）和“外部”文件 (`1`)，必须考虑到 msbuild 找到 `Directory.Build.props` 文件后会立即停止进一步的扫描。 要继续扫描并合并到外部文件，请将此置于这两个内部文件中：
+为了 MSBuild 正确地合并“内部”文件（2-src 和 2-test）和“外部”文件 (1)，必须考虑到 msbuild 找到 Directory.Build.props 文件后会立即停止进一步的扫描。 要继续扫描并合并到外部文件，请将此置于这两个内部文件中：
 
 `<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
 
-msbuild 的常规方法的摘要如下所示：
+MSBuild 的常规方法汇总如下：
 
-- 对于任何给定的项目，msbuild 在解决方案结构中向上查找第一个 `Directory.Build.props`，将其与默认项合并，然后停止扫描
+- 对于任何给定的项目，MSBuild 在解决方案结构中向上查找第一个 Directory.Build.props，将其与默认项合并，然后停止扫描
 - 如果要找到并合并多个级别，则从“内部”文件 [`<Import...>`](../msbuild/property-functions.md#msbuild-getpathoffileabove)（如上所示）“外部”文件
 - 如果“外部”文件本身不会再导入其上的内容，则扫描在此处停止
 - 要控制扫描/合并过程，请使用 `$(DirectoryBuildPropsPath)` 和 `$(ImportDirectoryBuildProps)`
 
-或再简单点：不能导入任何内容的第一个 `Directory.Build.props` 即为 msbuild 停止的位置。
+或再简单点：不能导入任何内容的第一个 Directory.Build.props 即为 MSBuild 停止的位置。
 
 ## <a name="see-also"></a>请参阅  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   

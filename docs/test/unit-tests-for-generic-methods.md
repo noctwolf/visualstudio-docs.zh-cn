@@ -12,20 +12,23 @@ helpviewer_keywords:
 - unit tests, and generics
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: a0acdea369d19c19c4edf9ca427801ba8df54e0a
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 61c4afb816d5cd0be3628d9c801f578a5210b4a2
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的单元测试
-可采用与其他方法完全一样的方式为泛型方法生成单元测试，如[如何：创建和运行单元测试](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)中所述。 以下各节提供有关为泛型方法创建单元测试的信息和示例。  
-  
-## <a name="type-arguments-and-type-constraints"></a>类型参数和类型约束  
- 当 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 为泛型类生成单元测试（例如 `MyList<T>`）时，它会生成两个方法：通用帮助器方法和测试方法。 如果 `MyList<T>` 具有一个或多个类型约束，则类型参数必须满足所有类型约束。 为确保待测试的泛型代码按预期对允许的所有输入均有效，该测试方法将调用具有你希望测试的所有约束的通用帮助器方法。  
-  
+
+可采用与其他方法完全一样的方式为泛型方法生成单元测试。 以下各节提供有关为泛型方法创建单元测试的信息和示例。
+
+## <a name="type-arguments-and-type-constraints"></a>类型参数和类型约束
+
+当 Visual Studio 为泛型类生成单元测试（例如 `MyList<T>`）时，它会生成两个方法：通用帮助器方法和测试方法。 如果 `MyList<T>` 具有一个或多个类型约束，则类型参数必须满足所有类型约束。 为确保待测试的泛型代码按预期对允许的所有输入均有效，该测试方法将调用具有你希望测试的所有约束的通用帮助器方法。
+
 ## <a name="examples"></a>示例  
  以下示例阐释泛型的单元测试：  
   
@@ -197,6 +200,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>请参阅  
- [单元测试的剖析](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
- [单元测试代码](../test/unit-test-your-code.md)
+## <a name="see-also"></a>请参阅
+
+[单元测试代码](../test/unit-test-your-code.md)

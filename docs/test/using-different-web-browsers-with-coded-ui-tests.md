@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ca381d794569ebae4da2d46225d800dbfe4cf480
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 4573d87bbb7d5f447bf6d2038cec310132a0c9f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>对编码的 UI 测试使用不同的 Web 浏览器
 编码的 UI 测试可通过使用 Internet Explorer 记录你的测试来自动化 Web 应用程序的测试。 然后，你可以自定义你的测试并使用 Internet Explorer 或其他适用于这些 Web 应用程序的浏览器类型来播放测试。  
@@ -78,7 +79,7 @@ ms.lasthandoff: 01/09/2018
     > [!TIP]
     >  还可以从[此处](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)下载用于编码的 UI 跨浏览器测试的 Selenium 组件。  
   
- 若要详细了解如何创建和使用编码的 UI 测试，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
+ 若要详细了解如何创建和使用编码的 UI 测试，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)。  
   
 ### <a name="enable-debugging"></a>启用调试  
  若要能够调试 Web 应用程序，则必须完成以下配置选项：  
@@ -98,7 +99,7 @@ ms.lasthandoff: 01/09/2018
 ##  <a name="generate"></a>*在编码的 UI 测试中我看不到用于更改 BrowserWindow.CurrentBrowser 的选项。*  
  你使用的 [!INCLUDE[vs2011_first](../test/includes/vs2011_first_md.md)] 版本可能不支持使用各种 Web 浏览器的编码的 UI 测试。 若要使用此类编码的 UI 测试，你必须使用 Visual Studio Enterprise。  
   
- *我还应该知道什么？*  
+ *我应该知道哪些其他内容？*  
  **备注**  
   
 -   ![先决条件](../test/media/prereq.png "Prereq") 不支持 Apple Safari Web 浏览器。  

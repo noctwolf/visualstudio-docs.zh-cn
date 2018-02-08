@@ -1,5 +1,5 @@
 ---
-title: "在管理员门户中编辑订阅 | Visual Studio Marketplace"
+title: "在管理员门户中编辑订阅 | Microsoft 文档"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can edit subscription assignments.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c561e7a56f2e70cae1addd32902f68a582b49a02
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>编辑 Visual Studio 订阅分配
 
@@ -29,13 +29,15 @@ ms.lasthandoff: 12/01/2017
 
    ![编辑订阅者详细信息](_img\edit-license\edit-subscriber.png)
 
-注意：如果需要更改订阅者的订阅级别，则需要从门户中删除该用户，然后再重新添加。 订阅级别不可编辑。
+> [!NOTE]
+> 如果需要更改订阅者的订阅级别，则需要从门户中删除该用户，然后再重新添加。 订阅级别不可编辑。
 
 ## <a name="editing-multiple-subscribers-by-using-bulk-edit"></a>可使用批量编辑对多个订阅者进行编辑
 
 可使用批量编辑进程一次编辑多个订阅者。 此功能主要用于正在更改公司电子邮件地址的组织，或者决定对下载进行限制的组织。 
 
-重要说明：订阅级别（即 Enterprise、Professional 等）和订阅 GUID 无法更改。  如果尝试上传这些更改项，上传将失败。  
+> [!IMPORTANT]
+> 订阅级别（即 Enterprise、Professional 等）和订阅 GUID 无法更改。  如果尝试上传这些更改项，上传将失败。  
 
 1.  若要一次编辑多个订阅者，请导航到“订阅者”选项卡。在顶部功能区中，单击“批量编辑”。 
 

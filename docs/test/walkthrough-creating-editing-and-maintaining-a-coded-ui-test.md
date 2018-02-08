@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 1ca2e83bab05c336f4b4ed37a13271c636b457dc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 71d7f7e342ecd6d9ca3bff4e04b84352c65c0e17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>演练：创建、编辑和维护编码的 UI 测试
 在本演练中，你将创建一个简单的 Windows Presentation Foundation (WPF) 应用程序来演示如何创建、编辑和维护编码的 UI 测试。 本演练为更正由各种计时问题和控件重构中断的测试提供了解决方案。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 01/09/2018
   
 1.  在“文件”菜单上，指向“新建”，然后选择“项目”。  
   
-     此时将出现 “新建项目” 对话框。  
+     此时将出现“新建项目”对话框。  
   
 2.  在“已安装”窗格中，展开 **Visual C#**，然后选择“Windows 桌面”。  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 01/09/2018
   
 6.  选择要用于保存项目的文件夹。 在“位置”文本框中，键入文件夹的名称。  
   
-7.  选择 **“确定”**。  
+7.  选择**“确定”**。  
   
      用于 Visual Studio 的 WPF 设计器将打开，并显示项目的主窗口。  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 01/09/2018
   
 10. 选择 Button 控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 button1。 然后将“内容”属性的值从 Button 更改为 Start。  
   
-11. 选择 ProgressBar 控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 progressBar1。 然后将“最大值”属性的值从“100”更改为“10000”。  
+11. 选择 ProgressBar 控件。 在“属性”窗口中，将“名称”属性的值从\<无名称> 更改为 progressBar1。 然后将“最大值”属性的值从“100”更改为“10000”。  
   
 12. 选择 Checkbox 控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 checkBox1，然后清除“IsEnabled”属性。  
   
@@ -127,13 +128,13 @@ ms.lasthandoff: 01/09/2018
   
 3.  在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新建项目”。  
   
-     此时，将显示 **“添加新项目”** 对话框。  
+     此时，将显示“添加新项目”对话框。  
   
 4.  在“已安装”窗格中，展开 **Visual C#**，然后选择“测试”。  
   
 5.  在中间窗格中，选择“编码的 UI 测试项目”模板。  
   
-6.  选择 **“确定”**。  
+6.  选择“确定”。  
   
      在解决方案资源管理器中，将名为 **CodedUITestProject1** 的新编码的 UI 测试项目添加到你的解决方案中。  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 01/09/2018
   
      将显示“UIMap - 编码的 UI 测试生成器”，且 Visual Studio 窗口将最小化。  
   
-     有关对话框中的选项的详细信息，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
+     有关对话框中的选项的详细信息，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)。  
   
 8.  在“UIMap - 编码的 UI 测试生成器”中选择“开始记录”。  
   
@@ -215,7 +216,7 @@ ms.lasthandoff: 01/09/2018
   
 7.  选择“编码的 UI 测试编辑器”工具栏上的“移动代码”按钮。  
   
-8.  将显示一个 Microsoft Visual Studio 对话框。 该对话框将警告你，该方法将从 UIMap.uitest 文件移动到 UIMap.cs 文件，并且你将不能再使用编码的 UI 测试编辑器来编辑该方法。 选择 **“是”**。  
+8.  将显示一个 Microsoft Visual Studio 对话框。 该对话框将警告你，该方法将从 UIMap.uitest 文件移动到 UIMap.cs 文件，并且你将不能再使用编码的 UI 测试编辑器来编辑该方法。 选择“是”。  
   
      将从 UIMap.uitest 文件中移除该测试方法，并且“UI 操作”窗格中将不再显示该测试方法。 若要编辑移动的测试文件，请从解决方案资源管理器中打开 UIMap.cs 文件。  
   
@@ -368,26 +369,20 @@ ms.lasthandoff: 01/09/2018
   
 ## <a name="external-resources"></a>外部资源  
   
-### <a name="videos"></a>视频  
- ![链接至视频](../data-tools/media/playvideo.gif "PlayVideo") [编码的 UI 测试-DeepDive-第 1 集-入门](http://go.microsoft.com/fwlink/?LinkID=230573)  
+### <a name="videos"></a>视频
+
+视频链接![](../data-tools/media/playvideo.gif "播放视频")[编码的 UI 测试入门](http://go.microsoft.com/fwlink/?LinkID=230573)  
   
- ![链接至视频](../data-tools/media/playvideo.gif "PlayVideo") [编码的 UI 测试-DeepDive-第 2 集-维护和调试](http://go.microsoft.com/fwlink/?LinkID=230574)  
+视频链接![](../data-tools/media/playvideo.gif "播放视频")[编码的 UI 测试的维护和调试](http://go.microsoft.com/fwlink/?LinkID=230574)  
   
- ![链接至视频](../data-tools/media/playvideo.gif "PlayVideo") [编码的 UI 测试-DeepDive-第 3 集-手工编码](http://go.microsoft.com/fwlink/?LinkID=230575)  
+视频链接![](../data-tools/media/playvideo.gif "播放视频")[手工编码编码的 UI 测试](http://go.microsoft.com/fwlink/?LinkID=230575)
   
-### <a name="hands-on-lab"></a>动手实验  
- [MSDN 虚拟实验室：使用 Visual Studio 2010 创建编码的 UI 测试的简介](http://go.microsoft.com/fwlink/?LinkID=22508)  
+### <a name="faq"></a>FAQ
+
+[编码的 UI 测试常见问题](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
   
-### <a name="faq"></a>FAQ  
- [编码的 UI 测试常见问题 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
-  
- [编码的 UI 测试常见问题 - 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
-  
-### <a name="forum"></a>论坛  
- [Visual Studio UI 自动测试（包括 CodedUI）](http://go.microsoft.com/fwlink/?LinkID=224497)  
-  
-## <a name="see-also"></a>请参阅  
- [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
- [WPF 设计器入门](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
- [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [使用编码的 UI 测试编辑器编辑编码的 UI 测试](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+## <a name="see-also"></a>请参阅
+
+[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)  
+[支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+[使用编码的 UI 测试编辑器编辑编码的 UI 测试](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

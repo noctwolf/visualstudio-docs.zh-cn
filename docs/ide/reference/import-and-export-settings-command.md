@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Tools.ImportandExportSettings
+f1_keywords:
+- Tools.ImportandExportSettings
 helpviewer_keywords:
 - Tools.ImportandExportSettings
 - Import and Export Settings command
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d4337a5755a58c03c827849417412885f42127a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d3faa3d77a0aab8edfbe491b9df655931c2f6ed2
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="import-and-export-settings-command"></a>“导入和导出设置”命令
 导入、导出或重置 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 设置。  
@@ -42,16 +45,19 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
  /reset  
  可选。 重置当前设置。  
   
-## <a name="remarks"></a>备注  
- 不带任何开关运行此命令将打开“导入和导出设置”向导。 有关详细信息，请参阅[如何：在计算机之间或 Visual Studio 各版本之间共享设置](http://msdn.microsoft.com/en-us/1131fb10-35c1-42da-9cd8-91aa3235b882)。  
-  
-## <a name="example"></a>示例  
- 以下命令将当前设置导出到文件 `MyFile.vssettings`。  
-  
-```  
-Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)   
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
+## <a name="remarks"></a>备注
+
+不带任何开关运行此命令将打开“导入和导出设置”向导。 有关详细信息，请参阅[同步设置](../../ide/synchronized-settings-in-visual-studio.md)。
+
+## <a name="example"></a>示例
+
+以下命令将当前设置导出到文件 `MyFile.vssettings`。
+
+```shell
+Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
+```
+
+## <a name="see-also"></a>请参阅
+
+[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)  
+[Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

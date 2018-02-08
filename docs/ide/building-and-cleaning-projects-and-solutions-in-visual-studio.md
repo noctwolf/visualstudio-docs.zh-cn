@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,16 +23,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: faf5978119ef9029db99ae953d5c60876abddabf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 94f2683611dd04555fdd842e96f2c1ee4bb20fb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
 通过本主题中的过程，学会生成、重新生成或清除解决方案中的所有/部分项目/项目项。 有关分步教程，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。  
@@ -58,15 +60,15 @@ ms.lasthandoff: 12/22/2017
   
 1.  在“解决方案资源管理器”中，选择或打开项目。  
   
-2.  在菜单栏上选择“生成”，然后选择“生成 *ProjectName*”或“重新生成 *ProjectName*”。  
+2.  在菜单栏上选择“生成”，然后选择“生成***ProjectName”或“重新生成***ProjectName”。  
   
-    -   选择“生成 *ProjectName*”，仅生成自最近生成以来更改过的项目组件。  
+    -   选择“生成***ProjectName”可仅生成自最近生成以来更改过的项目组件。  
   
-    -   选择“重新生成 *ProjectName*”以清理项目，然后创建项目文件和所有项目组件。  
+    -   选择“重新生成***ProjectName”可以“清理”项目，然后生成项目文件和所有项目组件。  
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>仅生成启动项目及其依赖项  
   
-1.  在菜单栏上，依次选择“工具” 、“选项” 。  
+1.  在菜单栏上，依次选择“工具”、“选项”。  
   
 2.  在“选项”对话框框中，展开“项目和解决方案”节点，然后选择“生成和运行”页。  
   
@@ -111,11 +113,12 @@ ms.lasthandoff: 12/22/2017
     -   选择 Ctrl + Break 键。  
   
 ## <a name="see-also"></a>请参阅
-[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)   
-[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)   
-[编译和生成](../ide/compiling-and-building-in-visual-studio.md)   
-[了解生成配置](../ide/understanding-build-configurations.md)   
-[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
-[C/C++ 生成参考](/cpp/build/reference/c-cpp-building-reference)   
-[Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)   
+
+[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)  
+[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)  
+[编译和生成](../ide/compiling-and-building-in-visual-studio.md)  
+[了解生成配置](../ide/understanding-build-configurations.md)  
+[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)  
+[C/C++ 生成参考](/cpp/build/reference/c-cpp-building-reference)  
+[Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)  
 [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)

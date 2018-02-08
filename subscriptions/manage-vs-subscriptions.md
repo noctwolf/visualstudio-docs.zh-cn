@@ -9,11 +9,11 @@ Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="managing-subscriptions"></a>管理订阅
 ## <a name="signing-in-to-the-portal"></a>登录到门户
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/01/2017
 #### <a name="workschool-accounts"></a>工作或学校帐户
 如果订阅是由工作或学校提供的，那么你将收到一封欢迎电子邮件。  
 1.  访问[订阅者门户](https://my.visualstudio.com/)
-2.  输入向新 Visual Studio 订阅分配的电子邮件地址。 订阅者“欢迎信”中也标识了该地址。 如果未收到“欢迎信”，请检查垃圾邮件文件夹。
+2.  输入向新 Visual Studio 订阅分配的电子邮件地址。 订阅者欢迎电子邮件中也标识了该地址。 如果未收到欢迎电子邮件，请检查垃圾邮件文件夹。
 3.  单击“继续”
 4.  将重定向到公司的登录页。
 5.  输入密码。

@@ -7,32 +7,36 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: coded UI tests, best practices
+helpviewer_keywords:
+- coded UI tests, best practices
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: faeaa6aaa6902e35e0b878bda91609ca12dbf248
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a77c9c31cc12a802360a64499f730335762a508
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>编码的 UI 测试的最佳做法
-本主题介绍在开发编码的 UI 测试时应遵循的最佳做法。  
-  
- **要求**  
-  
--   Visual Studio Enterprise  
-  
-## <a name="best-practices"></a>最佳做法  
- 使用以下准则来创建灵活的编码的 UI 测试。  
+
+本主题介绍在开发编码的 UI 测试时应遵循的最佳做法。
+
+**要求**  
+
+- Visual Studio Enterprise
+
+## <a name="best-practices"></a>最佳做法
+
+使用以下准则来创建灵活的编码的 UI 测试。
   
 -   尽可能使用**编码的 UI 测试生成器**。  
   
 -   请不要直接修改 `UIMap.designer.cs` 文件。 如果执行此操作，将覆盖对该文件的更改。  
   
--   将测试创建为一系列记录的方法。 若要详细了解如何录制方法，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
+-   将测试创建为一系列记录的方法。 若要详细了解如何录制方法，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)。
   
 -   每个记录的方法应作用于单个页面、窗体或对话框。 为每个新页面、窗体或对话框创建新测试方法。  
   
@@ -55,9 +59,10 @@ ms.lasthandoff: 01/09/2018
  编码的 UI 测试能够自动适应用户界面中的许多更改。 例如，在大多数情况下，如果 UI 元素更改了位置或颜色，则编码的 UI 测试仍将找到正确的元素。  
   
  在测试运行期间，测试框架使用一组搜索属性来定位 UI 控件，这些属性应用于**编码的 UI 测试生成器**在 `UIMap.Designer.cs` 文件中创建的定义中的每个控件类。 搜索属性包含可用于标识控件的属性名称和属性值的名称-值对，例如控件的 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> 和 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> 属性。 如果搜索属性未更改，则编码的 UI 测试会在 UI 中成功找到控件。 如果搜索属性发生更改，编码的 UI 测试会使用一个智能匹配算法，应用试探方法在 UI 中查找控件和窗口。 当 UI 已更改时，你或许能够修改以前标识的元素的搜索属性，以确保能够找到这些元素。  
-  
-## <a name="what-to-do-if-your-user-interface-changes"></a>如果用户界面发生更改应如何操作  
- 在开发过程中，用户界面经常更改。 下面提供了一些可以降低这些更改的影响的方法：  
+
+## <a name="if-your-user-interface-changes"></a>如果用户界面发生更改
+
+在开发过程中，用户界面经常更改。 下面提供了一些可以降低这些更改的影响的方法：  
   
 -   查找引用此控件的已录制方法，并使用**编码的 UI 测试生成器**重新录制此方法的操作。 可对方法使用同一名称，以覆盖现有操作。  
   
@@ -71,10 +76,11 @@ ms.lasthandoff: 01/09/2018
   
  若要详细了解如何录制编码的 UI 测试，请参阅[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)。  
   
-## <a name="what-to-do-if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>需要先完成后台进程然后测试才能继续时应如何操作  
- 可能必须等到进程完成，然后才能继续下一个 UI 操作。 为此，可以使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> 在测试继续之前等待，如以下示例所示。  
-  
-```  
+## <a name="if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>如果需要先完成后台进程然后测试才能继续
+
+可能必须等到进程完成，然后才能继续下一个 UI 操作。 为此，可以使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> 在测试继续之前等待，如以下示例所示。  
+
+```csharp
 // Set the playback to wait for all threads to finish  
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.AllThreads;  
   
@@ -83,12 +89,13 @@ this.UIMap.ClickSubmit();
   
 // Reset the playback to wait only for the UI thread to finish  
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;  
-```  
-  
-## <a name="see-also"></a>请参阅  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting>   
- [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
- [创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)   
- [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+```
+
+## <a name="see-also"></a>请参阅
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
+<xref:Microsoft.VisualStudio.TestTools.UITesting>   
+[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
+[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)   
+[使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)   
+[支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

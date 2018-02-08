@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Surround-with snippets
 - snippets [C#], using Surround With
 ms.assetid: 23e5288e-7897-417a-9ded-cf60dfc889ee
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b67cf22f38366625d8aa7ff59ad1603a24074882
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d1cff0a8689635e55caf1e0ad1156fc97aa7bdbd
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>如何：使用外侧代码段
 下列过程描述如何使用环绕代码片段。 可通过 3 种方式使用环绕代码片段：键盘快捷方式、“编辑”菜单和上下文菜单。  
@@ -60,5 +62,5 @@ ms.lasthandoff: 12/22/2017
      或者，可以键入代码片段的名称，然后按 Tab 或 Enter。  
   
 ## <a name="see-also"></a>请参阅  
- [Visual C# 代码片段](../ide/visual-csharp-code-snippets.md)   
+ [C# 代码片段](../ide/visual-csharp-code-snippets.md)   
  [代码片段选择器](../ide/reference/code-snippet-picker.md)

@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e88e3999bdca7b926042685ca7bd2d561c12d5d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 3d97e1f37c1e60c3ec5bb122a6b3f26c2fb086f9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 01/22/2018
 
 |元素|描述|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|此程序包会安装下列系统必备组件：<br /><br /> - .NET Framework 2.0、3.0 和 3.5 版<br />- 支持 32 位 (x86) 和 64 位 (x64) 操作系统上的所有 .NET Framework 版本。<br />- 与程序包一起安装的每个 .NET Framework 版本的语言包。<br />- .NET Framework 2.0 和 3.0 服务包。<br /><br /> .NET Framework 3.0 随 Windows Vista 一起提供，.NET Framework 3.5 随 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 一起提供。 .NET Framework 3.5 是针对 32 位操作系统进行编译且目标框架设置为“.NET Framework 3.5”的所有 Visual Basic 和 Visual C# 项目的必需组件，也是针对 64 位操作系统编译的 Visual Basic 和 Visual C# 项目的必需组件。 （不支持 IA64。）注意，默认情况下 Visual Basic 和 Visual C# 项目是针对所有 CPU 体系结构编译的。 有关详细信息，请参阅 [Visual Studio 多目标概述](../../ide/visual-studio-multi-targeting-overview.md)、[再发行 .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) 和[部署 64 位应用程序的必备组件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。<br /><br /> 默认情况下，此项处于选定状态。|
+|**.NET Framework 3.5 SP1**|此程序包会安装下列系统必备组件：<br /><br /> - .NET Framework 2.0、3.0 和 3.5 版<br />- 支持 32 位 (x86) 和 64 位 (x64) 操作系统上的所有 .NET Framework 版本。<br />- 与程序包一起安装的每个 .NET Framework 版本的语言包。<br />- .NET Framework 2.0 和 3.0 服务包。<br /><br /> .NET Framework 3.0 随 Windows Vista 一起提供，.NET Framework 3.5 随 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 一起提供。 .NET Framework 3.5 是针对 32 位操作系统进行编译且目标框架设置为“.NET Framework 3.5”的所有 Visual Basic 和 C# 项目的必需组件，也是针对 64 位操作系统编译的 Visual Basic 和 C# 项目的必需组件。 （不支持 IA64。）注意，默认情况下 Visual Basic 和 C# 项目是针对所有 CPU 体系结构进行编译的。 有关详细信息，请参阅 [Visual Studio 多目标概述](../../ide/visual-studio-multi-targeting-overview.md)和[部署 64 位应用程序的必备组件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。<br /><br /> 默认情况下，此项处于选定状态。|
 |**Microsoft .NET Framework 4.x**|此包为 x86 和 x64 平台安装 .NET Framework 4.x。|
 |**Microsoft System CLR Types for SQL Server 2014 (x64 和 x86)**|此包为 x64 或 x86 平台安装 Microsoft System CLR Types for SQL Server 2014。|
 |**SQL Server 2008 R2 Express**|此包安装 Microsoft SQL Server 2008 R2 Express，这是免费版 Microsoft SQL Server 2008 R2，适用于小型网站、服务器或桌面应用程序的理想数据库。 它可免费用于开发和生产。 必须先进行免费[注册](http://go.microsoft.com/fwlink/?LinkId=130380)，然后才能随应用程序一起分发 SQL Server 2008 R2 Express。|
@@ -60,6 +60,5 @@ ms.lasthandoff: 01/22/2018
 
 [“项目设计器”->“发布”页](../../ide/reference/publish-page-project-designer.md)  
 [应用程序部署必备](../../deployment/application-deployment-prerequisites.md)  
-[再分发 .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)  
 [部署 64 位应用程序的必备组件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)  
 [Visual Studio 多目标概述](../../ide/visual-studio-multi-targeting-overview.md)

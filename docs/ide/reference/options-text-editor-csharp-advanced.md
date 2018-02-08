@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,22 +19,23 @@ helpviewer_keywords:
 - outlining options [C#]
 - XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 1f7bcff6d2e94944985789db2bf0ac80150a478e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 193b61ab95daa84c5815c251c7d52103c88977e1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="options-text-editor-c-advanced"></a>选项，文本编辑器，C#，高级
-使用此对话框可修改 Visual C# 的编辑器格式设置、代码重构设置和 XML 文档注释设置。 若要访问此对话框，请在“工具菜单”上单击“选项”，展开“文本编辑器”文件夹，再展开“C#”，然后单击“高级”。  
+# <a name="options-text-editor-c-advanced"></a>选项, 文本编辑器, C#, 高级
+使用此对话框可修改 C# 的编辑器格式设置、代码重构设置和 XML 文档注释设置。 若要访问此对话框，请在“工具菜单”上单击“选项”，展开“文本编辑器”文件夹，再展开“C#”，然后单击“高级”。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。  
+>  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="outlining"></a>大纲显示  
  打开文件时进入大纲模式  
@@ -74,11 +76,11 @@ ms.lasthandoff: 12/22/2017
  使用 #region 环绕生成的代码  
  使用实现接口或显式实现接口时，将在方法周围插入 #region \<接口名称> 成员。  
   
-## <a name="organize-usings"></a>组织用法  
+## <a name="organize-usings"></a>组织 Using  
  对 using 排序时将“System”指令排在第一位  
- 选中后，`System` using 指令将出现在其他 using 指令之前。 有关详细信息，请参阅 [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation) 中的组织 using。  
+ 选中后，`System` using 指令将出现在其他 using 指令之前。 有关详细信息，请参阅 [C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation) 中的组织 using。  
   
 ## <a name="see-also"></a>请参阅  
  [XML 文档注释](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [设置语言特定的编辑器选项](../../ide/reference/setting-language-specific-editor-options.md)   
- [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+ [C# IntelliSense](../../ide/visual-csharp-intellisense.md)

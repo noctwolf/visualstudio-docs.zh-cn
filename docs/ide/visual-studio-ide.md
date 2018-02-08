@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d4d302c84322388f96b37aa913e4debd3d331a7
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 5bde32fc86610fa451aa01659401362fe4207f5c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE 概述
 
@@ -30,7 +30,7 @@ Visual Studio 交互式开发环境 (IDE) 是一种创新启动板，可用于�
 
 ### <a name="create-mobile-apps"></a>创建移动应用
 
-可通过使用 Visual C# 和 Xamarin 或 Visual C++ 创建不同平台的本机移动应用，或者通过结合使用 JavaScript 和 Apache Cordova 创建混合应用。 可以编写适用于 Unity、Unreal、DirectX、Cocos 等的移动游戏。 Visual Studio 带有 Android 仿真程序，可以帮助你运行和调试 Android 应用。
+可通过使用 C# 和 Xamarin 或 Visual C++ 创建不同平台的本机移动应用，或者通过结合使用 JavaScript 和 Apache Cordova 创建混合应用。 可以编写适用于 Unity、Unreal、DirectX、Cocos 等的移动游戏。 Visual Studio 带有 Android 仿真程序，可以帮助你运行和调试 Android 应用。
 
 可以创建 Azure 应用服务，将云的强大功能应用到移动应用。 通过 Azure 应用服务，应用可将数据存储在云端、安全地验证用户身份并自动缩放其资源以满足你的应用和业务需求。 有关详细信息，请参阅[移动应用开发](https://www.visualstudio.com/vs/mobile-app-development/)。
 
@@ -56,7 +56,7 @@ Web 推动着现代社会前进，Visual Studio 可以帮助你编写 Web 应用
 
 ### <a name="build-cross-platform-apps-and-games"></a>生成跨平台应用和游戏
 
-可使用 Visual Studio 生成适用于 Android、iOS 和 Linux 等设备的应用和游戏。 若要了解详细信息，请参阅[跨平台移动开发](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)。 通用 Windows 应用可帮助在多个平台中利用代码。 有关详细信息，请参阅[通用 Windows 应用](https://dev.windows.com/en-us/windows-apps)。
+可使用 Visual Studio 生成适用于 Android、iOS 和 Linux 等设备的应用和游戏。 若要了解详细信息，请参阅[跨平台移动开发](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)。 通用 Windows 应用可帮助在多个平台中利用代码。 有关详细信息，请参阅[通用 Windows 应用](https://dev.windows.com/windows-apps)。
 
 基于应用要求和要使用的语言选择所需工具：
 
@@ -109,7 +109,7 @@ Visual Studio 现在达到了前所未有的轻量！ 通过模块化安装程�
 
   ![UWP 空白应用模板](../ide/media/new-uwp-blank-app-template.png)
 
-  此操作创建了一个新的空白 Universal Windows 应用项目，该项目使用 Visual C# 和 XAML 作为编程语言。 稍等片刻，等待 Visual Studio 设置项目。 如果系统出现任何信息提示，现在都接受默认值。
+  这会使用 C＃ 和 XAML 作为编程语言创建一个新的空白通用Windows 应用项目。 稍等片刻，等待 Visual Studio 设置项目。 如果系统出现任何信息提示，现在都接受默认值。
 
 1. 在“新通用 Windows 平台项目”对话框中，选择“确定”接受默认设置。
 
@@ -195,7 +195,7 @@ Visual Studio 现在达到了前所未有的轻量！ 通过模块化安装程�
 
  ![重构](../ide/media/VSIDE_refactor.png)
 
-- “IntelliSense”是一组常用功能的涵盖性术语，这些功能可用于在编辑器中直接显示代码的类型信息，并且可在某些情况下编写小段代码。 如同在编辑器中拥有了基本文档内联，从而节省了在单独帮助窗口查看类型信息的时间。 IntelliSense 功能因语言而异。 有关详细信息，请参阅 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)、[Visual C++ Intellisense](../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../ide/javascript-intellisense.md) 和 [Visual Basic 特定的 IntelliSense](../ide/visual-basic-specific-intellisense.md)。 下图显示了一些处于工作状态的 IntelliSense 功能：
+- “IntelliSense”是一组常用功能的涵盖性术语，这些功能可用于在编辑器中直接显示代码的类型信息，并且可在某些情况下编写小段代码。 如同在编辑器中拥有了基本文档内联，从而节省了在单独帮助窗口查看类型信息的时间。 IntelliSense 功能因语言而异。 有关详细信息，请参阅 [C# IntelliSense](../ide/visual-csharp-intellisense.md)、[Visual C++ Intellisense](../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../ide/javascript-intellisense.md) 和 [Visual Basic 特定的 IntelliSense](../ide/visual-basic-specific-intellisense.md)。 下图显示了一些处于工作状态的 IntelliSense 功能：
 
   ![Visual Studio 成员列表](../ide/media/vs2017_Intellisense.png)
 
@@ -237,7 +237,7 @@ Team Foundation Server (TFS) 是 Visual Studio 的应用程序生命周期管理
 
 ![Visual Studio 团队资源管理器](../ide/media/vs2017_teamexplorer.png)
 
-还可以自动执行生成过程以生成团队中的开发人员签入到版本控制的代码。 例如，您可以在夜间或每次签入此代码时生成一个或多个项目。 有关详细信息，请参阅 [Continuous integration on any platform](https://www.visualstudio.com/en-us/docs/build/overview)（任何平台上的持续集成）。
+还可以自动执行生成过程以生成团队中的开发人员签入到版本控制的代码。 例如，您可以在夜间或每次签入此代码时生成一个或多个项目。 有关详细信息，请参阅[生成和发布（VSTS 和 TFS）](/vsts/build-release/index)。
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>连接到服务、数据库和基于云的资源
 
@@ -280,6 +280,6 @@ Visual Studio 中的 **SQL Server 对象资源管理器**提供类似于 SQL Ser
 * [Visual Studio IDE](https://www.visualstudio.com/vs/)
 * [Visual Studio 下载](https://www.visualstudio.com/downloads/)
 * [Visual Studio 博客](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio 论坛](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
+* [Visual Studio 论坛](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
 * [Microsoft 虚拟学院](https://mva.microsoft.com/)
 * [第 9 频道](https://channel9.msdn.com/)

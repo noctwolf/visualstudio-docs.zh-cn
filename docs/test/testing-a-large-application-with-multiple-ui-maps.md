@@ -10,24 +10,26 @@ ms.topic: article
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: ca9114dfe601f523878749593a213b36465bd0a7
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: c2eff9fc8e8aedecb1fd9b99538fa600dbcc5eb1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>使用多个 UI 映射测试大型应用程序
+
 本主题讨论在使用多个 UI 映射来测试大型应用程序时如何使用编码的 UI 测试。  
   
  **要求**  
   
 -   Visual Studio Enterprise  
   
- 在创建新的编码的 UI 测试时，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 测试框架默认在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类中生成测试代码。 若要详细了解如何录制编码的 UI 测试，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)和[编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)。  
+ 在新建编码的 UI 测试时，Visual Studio 测试框架会默认在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类中生成测试代码。 若要详细了解如何录制编码的 UI 测试，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)和[编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)。  
   
  为 UI 映射生成的代码针对与测试交互的每个对象都包含一个类。 对于每个生成的方法，都会专门为该方法生成方法参数的伴生类。 如果应用程序中存在大量对象、页以及窗体和控件，UI 映射可能会变得很大。 而且，如果多个人正在执行测试，则只有一个大型 UI 映射文件的应用程序会变得难以操作。  
   
@@ -67,24 +69,25 @@ ms.lasthandoff: 01/09/2018
   
 4.  选择“添加”。  
   
-     此时，“[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]”窗口最小化，同时显示“编码的 UI 测试生成器”对话框。  
+     此时，Visual Studio 窗口最小化，同时显示“编码的 UI 测试生成器”对话框。  
   
 5.  录制第一个方法的操作，然后选择“生成代码”。  
   
 6.  录制第一个组件或页面的所有操作和断言并将它们分入方法后，关闭“编码的 UI 测试生成器”对话框。  
   
 7.  继续创建 UI 映射。 为每个组件录制操作和断言并将它们分组为方法，然后生成代码。  
-  
- 在许多情况下，应用程序的顶级窗口对所有向导、窗体和页保持不变。 尽管每个 UI 映射都有一个用于顶级窗口的类，但所有映射可能都引用同一个顶级窗口，应用程序的所有组件都在该窗口中运行。 编码的 UI 测试会按层次结构从顶级窗口开始从上至下搜索控件，所以在复杂应用程序中，每个 UI 映射中的实际顶级窗口可能是重复的。 如果实际顶级窗口是重复的，则在该窗口发生改变时，将会进行多项修改。 当你在 UI 映射之间进行切换时，这可能会引起性能问题。  
-  
- 为了尽量减小这种影响，可以使用 `CopyFrom()` 方法来确保该 UI 映射中的新顶级窗口与主顶级窗口相同。  
-  
-## <a name="example"></a>示例  
- 以下示例是某个实用工具类的一部分，该类可提供对每个组件及其子控件的访问权限，而这些子控件由在各种 UI 映射中生成的类表示。  
-  
- 对于本示例，名为 `Contoso` 的 Web 应用程序具有一个主页、一个产品页和一个购物车页。 上述每个页共享一个公共的顶级窗口，即浏览器窗口。 每页都有一个 UI 映射，而且实用工具类具有类似于下面的代码：  
-  
-```  
+
+ 在许多情况下，应用程序的顶级窗口对所有向导、窗体和页保持不变。 尽管每个 UI 映射都有一个用于顶级窗口的类，但所有映射可能都引用同一个顶级窗口，应用程序的所有组件都在该窗口中运行。 编码的 UI 测试会按层次结构从顶级窗口开始从上至下搜索控件，所以在复杂应用程序中，每个 UI 映射中的实际顶级窗口可能是重复的。 如果实际顶级窗口是重复的，则在该窗口发生改变时，将会进行多项修改。 当你在 UI 映射之间进行切换时，这可能会引起性能问题。
+
+ 为了尽量减小这种影响，可以使用 `CopyFrom()` 方法来确保该 UI 映射中的新顶级窗口与主顶级窗口相同。
+
+## <a name="example"></a>示例
+
+以下示例是某个实用工具类的一部分，该类可提供对每个组件及其子控件的访问权限，而这些子控件由在各种 UI 映射中生成的类表示。
+
+对于本示例，名为 `Contoso` 的 Web 应用程序具有一个主页、一个产品页和一个购物车页。 上述每个页共享一个公共的顶级窗口，即浏览器窗口。 每页都有一个 UI 映射，而且实用工具类具有类似于下面的代码：
+
+```csharp
 using ContosoProject.UIMaps;  
 using ContosoProject.UIMaps.HomePageClasses;  
 using ContosoProject.UIMaps.ProductPageClasses;  
@@ -135,12 +138,13 @@ namespace ContosoProject
     // Continue to create properties for each page, getting the   
     // page object from the corresponding UI Map and copying the   
     // top level window properties from the Home Page.  
-}  
-```  
-  
-## <a name="see-also"></a>请参阅  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>   
- [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
- [创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)
+}
+```
+
+## <a name="see-also"></a>请参阅
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>  
+<xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>  
+[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)  
+[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)  
+[编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)

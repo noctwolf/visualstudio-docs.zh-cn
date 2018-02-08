@@ -7,7 +7,8 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.tools.intellisense
+f1_keywords:
+- vc.tools.intellisense
 helpviewer_keywords:
 - IntelliSense, Complete Word
 - IntelliSense, completion mode
@@ -25,12 +26,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1423e3db18a3849fdcbf93bf0a4299a0f743b242
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 42e34f5933d06bf9021ff8e0cab5b12f316ef52e
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 
@@ -56,7 +58,7 @@ IntelliSense 的许多方面只支持特定语言。 有关不同语言的 Intel
 
 ## <a name="parameter-info"></a>参数信息
 
-“参数信息”提供方法、特性泛型形参（在 C# 中）或模板（在 C++ 中）中所需的参数数目、参数名称和参数类型的相关信息。
+“参数信息”提供方法、特性泛型类型参数（在 C# 中）或模板（在 C++ 中）中所需的参数数目、参数名称和参数类型的相关信息。
 
 以粗体显示的参数指示键入函数时所需的下一参数。 对于重载函数，可以使用向上和向下键查看函数重载的替代参数信息。
 
@@ -109,7 +111,7 @@ MessageBox( hWnd, "String literal|")
 ## <a name="see-also"></a>请参阅
 
 [Visual Basic 特定的 IntelliSense](../ide/visual-basic-specific-intellisense.md)  
-[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)  
+[C# IntelliSense](../ide/visual-csharp-intellisense.md)  
 [JavaScript IntelliSense](../ide/javascript-intellisense.md)  
 [编写和重构代码 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
 [提供 XML 代码注释](../ide/supplying-xml-code-comments.md)

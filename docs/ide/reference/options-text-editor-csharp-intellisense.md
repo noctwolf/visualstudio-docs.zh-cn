@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,22 +18,23 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: b0b69b7eafbfbb1b5c2c582fd0c734a183ea0a78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 322ae48b1ded8dfef7e25a80937da957e50f756f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-intellisense"></a>选项，文本编辑器，C#，IntelliSense
-使用“IntelliSense”属性页可以修改影响 IntelliSense for Visual C# 行为的设置。 通过单击“工具”菜单上的“选项”，再单击“文本编辑器”文件夹中的“C#”，然后单击“IntelliSense”，可以访问“IntelliSense”属性页。  
+使用“IntelliSense”属性页可以修改影响 IntelliSense for C# 行为的设置。 通过单击“工具”菜单上的“选项”，再单击“文本编辑器”文件夹中的“C#”，然后单击“IntelliSense”，可以访问“IntelliSense”属性页。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。  
+>  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。  
   
  “IntelliSense”属性页包含下列属性：  
   
@@ -44,7 +46,7 @@ ms.lasthandoff: 12/22/2017
  选择此选项后，IntelliSense 会将 C# 关键字（例如 [class](/dotnet/csharp/language-reference/keywords/class)）添加到完成列表中。  
   
  **将代码片段放入完成列表**  
- 选择此选项后，IntelliSense 将 C# 代码片段的别名添加到完成列表中。 如果代码片段别名与关键字相同（例如均为 [class](/dotnet/csharp/language-reference/keywords/class)），则快捷方式将替代关键字。 有关详细信息，请参阅 [Visual C#代码片段](../../ide/visual-csharp-code-snippets.md)。  
+ 选择此选项后，IntelliSense 将 C# 代码片段的别名添加到完成列表中。 如果代码片段别名与关键字相同（例如均为 [class](/dotnet/csharp/language-reference/keywords/class)），则快捷方式将替代关键字。 有关详细信息，请参阅 [C# 代码片段](../../ide/visual-csharp-code-snippets.md)。  
   
 ## <a name="selection-in-completion-lists"></a>完成列表中的选定内容  
  **通过键入以下字符提交：**  

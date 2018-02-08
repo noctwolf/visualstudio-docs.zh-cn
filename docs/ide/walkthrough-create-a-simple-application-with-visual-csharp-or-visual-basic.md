@@ -1,5 +1,5 @@
 ---
-title: "演练：使用 Visual C# 或 Visual Basic 创建简单应用程序 | Microsoft Docs"
+title: "演练：使用 C# 或 Visual Basic 创建简单应用程序 | Microsoft 文档"
 ms.custom: 
 ms.date: 10/03/2017
 ms.reviewer: 
@@ -11,18 +11,19 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 3490d9d4f88bbcc104132e35c3f86d3fe75622b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: b33816e074cf63826c931bcda0978ebdb5bb8bbe
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>演练：使用 Visual C# 或 Visual Basic 创建简单应用程序
+# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>演练：使用 C# 或 Visual Basic 创建简单应用程序
 通过完成本演练，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具、对话框和设计器。 你将创建一个简单的“Hello, World”应用程序、设计 UI、添加代码并调试错误，还会了解如何在集成开发环境 (IDE) 中工作。
   
 ##  <a name="BKMK_ConfigureIDE"></a> 配置 IDE  

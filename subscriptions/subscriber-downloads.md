@@ -1,5 +1,5 @@
 ---
-title: "在 Visuals Studio 订阅上使用订阅者下载 | Visual Studio Marketplace"
+title: "在 Visuals Studio 订阅上使用订阅者下载 | Microsoft 文档"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,15 +9,15 @@ Description: Learn how to locate and download Microsoft products included with y
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: d5826576cb0e36c0c8a6a145bc6ed3f34d2d43cc
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用订阅者下载
 订阅者权益包含可以下载各种各样的软件。  
-必须登录订阅才能访问[下载](https://my.visualstudio.com/downloads)选项卡。 
+必须登录订阅才能访问[下载](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)选项卡。 
 
 ## <a name="product-availability"></a>产品可用性
 一般而言，Visual Studio 订户可获得软件开发项目相关的所有商用和个人用 Microsoft 产品。 使用 Visual Studio 订阅，通常各产品常年可供下载（甚至在产品支持延长期到期之后依旧可以下载），从而让客户能够开发和测试旧版应用程序并过渡至新的平台。 但在一些情况下，我们无法按照如下所述为订阅者提供某些产品，不过我们会尽力减少这些情况的发生。
@@ -34,10 +34,12 @@ ms.lasthandoff: 12/01/2017
 ## <a name="what-do-i-get"></a>我能获得哪些内容？
 下载内容的数量和类型取决于订阅级别和计划成员身份。  例如，相较于通过 Microsoft 合作伙伴网络 或 BizSpark 计划订阅获得订阅的订阅者，具有 Visual Studio Enterprise 标准订阅的订阅者可以获得的下载内容可能有所不同。  要了解有关各订阅级别可获取的下载内容的详细信息，请下载[按权益级别分类的产品](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx)列表。
 
+无法确定正在使用哪些订阅？  请连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看分配给你电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
+
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>如何在订阅者门户中找到下载内容？ 
 [下载](https://my.visualstudio.com/downloads/featured)页仅显示订阅中包含的下载内容。  如果具有多个订阅或计划成员身份，即使目前正在查看其它订阅，也会显示你所具有的最高订阅的下载内容。  例如，如果你的 Visual Studio Professional 订阅和 Visual Studio Dev Essentials 成员身份都关联了同一个登录 ID，即使你目前正在查看 Dev Essentials 权益，也会显示 Professional 级别订阅中包含的下载内容。  
 
-访问[下载](https://my.visualstudio.com/downloads/featured)页时，可以看到按产品类型分组的热门下载。  可以在所示的热门下载中选择一项产品，也可以使用页面顶部的搜索栏搜索任何产品。 
+访问[下载](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs)页时，可以看到按产品类型分组的热门下载。  可以在所示的热门下载中选择一项产品，也可以使用页面顶部的搜索栏搜索任何产品。 
 
 ![订阅者下载页](_img\subscriber-downloads\subscriber-downloads-resized.png)
 

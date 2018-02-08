@@ -4,24 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Toolbox, Components tab
-ms.assetid: 332fafab-a763-4244-b388-15d1b5b5cc04
-caps.latest.revision: "14"
+helpviewer_keywords:
+- Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cf0ab13b104422771b117c17ed3ff89b53fa461f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="toolbox-components-tab"></a>工具箱，“组件”选项卡
-显示可以添加到 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 和 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 设计器的组件。 除 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 附带的 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 组件（如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 组件）外，还可向此选项卡添加自己的组件或第三方组件。有关详细信息，请参阅[如何：操作工具箱选项卡](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db)。  
+
+显示可以添加到 Visual Basic 和 C# 设计器的组件。 除 Visual Studio 附带的 .NET Framework 组件（如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 组件）外，还可向此选项卡添加自己的组件或第三方组件。
   
  若要显示此选项卡，请从“视图”菜单中选择“工具箱”。 在“工具箱”中，选择“组件”选项卡。  
   
