@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: text templates, transformation process
+helpviewer_keywords:
+- text templates, transformation process
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 469d2460bab93c73c227b08aeb763e6bfe18261e
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: e350b123f1945bdeafa7f3ff2ae3da55037922cf
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="the-text-template-transformation-process"></a>文本模板转换过程
 文本模板转换过程使用文本模板文件作为输入并生成新的文本文件，并作为输出。 例如，你可以使用文本模板生成 Visual Basic 或 C# 代码，或者可以生成 HTML 报告。  

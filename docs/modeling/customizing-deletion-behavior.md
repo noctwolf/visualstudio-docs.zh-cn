@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.deletebehavior
-helpviewer_keywords: Domain-Specific Language, deletion
+f1_keywords:
+- vs.dsltools.dsldesigner.deletebehavior
+helpviewer_keywords:
+- Domain-Specific Language, deletion
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c51c44d47f24994e75ca91b4f4d8d7f2c9a805a6
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-deletion-behavior"></a>自定义删除行为
 删除一个元素通常会导致同时删除相关的元素。 将删除连接到该元素的所有关系以及任何子元素。 此行为名为*删除传播*。 可以自定义删除传播，例如安排删除其他相关元素。 通过编写程序代码，可以根据模型的状态删除传播。 还可能发生其他更改以响应删除。  
@@ -285,7 +288,7 @@ partial class NestedShapesSampleDocData
   
 ```  
   
-##  <a name="unmerge"></a>取消合并  
+##  <a name="unmerge"></a> UnMerge  
  将子元素附加到其父级的操作称为*合并*。 当从工具箱创建新元素或元素组时、从模型的另一个部分进行移动时，或从剪贴板进行复制时，将会发生此情况。 除了在父级和其新子级之间创建嵌入关系，合并操作还可以设置其他关系、创建辅助元素以及设置元素中的属性值。 合并操作封装在元素合并指令 (EMD) 中。  
   
  EMD 也会封装补充*取消合并*或`MergeDisconnect`操作。 如果你具有已通过使用合并构造的元素的群集，则建议使用关联的取消合并将元素从该群集中移除（如果想要使剩余元素保留在一致的状态下）。 通常，取消合并操作将使用前面部分中所述的技术。  

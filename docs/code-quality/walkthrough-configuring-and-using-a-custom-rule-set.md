@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b72a86f10c6e864406929fdccfb59bdd9393752e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>演练：配置和使用自定义规则集
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 02/01/2018
   
 2.  在错误列表窗口中，单击**警告**，然后单击**说明**列标题以进行排序警告进行排序。  
   
-     在实际应用中，你将解决值得在此情况下，修复任何规则冲突或 （可选） 关闭或禁止显示一条规则，如果你确定它值得修复不是。 有关详细信息，请参阅[禁止显示警告使用 SuppressMessage 特性](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)。  
+     在实际应用中，你将解决值得在此情况下，修复任何规则冲突或 （可选） 关闭或禁止显示一条规则，如果你确定它值得修复不是。 有关详细信息，请参阅[禁止显示警告](../code-quality/in-source-suppression-overview.md)。
   
 3.  请注意 CA1704 警告。 此规则的这些冲突指示应"考虑提供一个更有意义的名称的参数。" 你无法纠正问题，在代码中或下一个过程中所述，可以禁用此规则。  
   

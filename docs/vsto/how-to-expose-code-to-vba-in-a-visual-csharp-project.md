@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,12 +19,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0be62faf81fc9d7da60a03596c25cc01a9bf0eac
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- office
+ms.openlocfilehash: 1b750137a52d30688f69c825f83f72c7cbeebe45
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：向 VBA 公开 Visual C# 项目中的代码
   如果你想要进行相互交互的代码的两个类型，可以公开 Visual C# 项目到 Visual Basic for Applications (VBA) 代码中的代码。  
@@ -80,7 +82,7 @@ ms.lasthandoff: 01/13/2018
   
      有关宿主项的详细信息，请参阅 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  
   
-6.  从要向 VBA 公开的类中提取一个接口。 在**提取接口**对话框框中，选择你想要在接口声明中包含的公共成员。 有关详细信息，请参阅[提取接口重构](../ide/reference/extract-interface-csharp.md)。
+6.  从要向 VBA 公开的类中提取一个接口。 在**提取接口**对话框框中，选择你想要在接口声明中包含的公共成员。 有关详细信息，请参阅[提取接口重构](../ide/reference/extract-interface.md)。
   
 7.  添加**公共**到接口声明关键字。  
   

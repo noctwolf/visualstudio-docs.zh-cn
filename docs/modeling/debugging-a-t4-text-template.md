@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, troubleshooting
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da101fa60d897a56c42b52ebbb8e0cc21a6d7a9f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>调试 T4 文本模板
 你可以在文本模板中设置断点。 要调试的设计时文本模板，将文本模板文件，保存，然后选择**调试 T4 模板**解决方案资源管理器中的文件的快捷菜单上。 若要调试的运行时文本模板，只需调试它属于该应用程序。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 01/13/2018
 |路径"{0}"必须是此计算机的本地或受信任区域的一部分。|当指令或程序集指令引用的文件，不在本地计算机或网络的受信任区域上，则会出现。|请确保指令或程序集指令所在位置的目录是在受信任区域中。 可以将网络目录添加到受信任区域中，通过 Internet 资源管理器。|  
 |如"无效令牌 catch"或"命名空间不能直接包含成员"的多个语法错误|模板代码中的右括号太多。 编译器为混淆它与标准的生成代码。|检查的右大括号和代码分隔符内的括号的数量。|  
 |循环或条件语句不编译或正确执行。 例如：`<#if (i>10)#> Number is: <#= i #>`。<br /><br /> 此代码始终输出的值我。 仅"数是:"有条件。|在 C# 中，始终使用大括号来括住控制语句中嵌入的文本块。|添加大括号： `<#if (i>10) { #>    Number is: <#= i #><# } #>`。|  
-|"表达式太复杂"时处理的设计时模板，或编译运行时 （预处理过的） 模板。<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]尝试检查由运行时模板生成的代码时停止工作。|文本块过长。 T4 将文本块转换为具有一个字符串为每个模板行文本的字符串串联表达式。 很长的文本块可以超越编译器的大小限制。|分解如将表达式块的长文本块：<br /><br /> `<#= "" #>`|  
+|"表达式太复杂"时处理的设计时模板，或编译运行时 （预处理过的） 模板。<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 尝试检查由运行时模板生成的代码时停止工作。|文本块过长。 T4 将文本块转换为具有一个字符串为每个模板行文本的字符串串联表达式。 很长的文本块可以超越编译器的大小限制。|分解如将表达式块的长文本块：<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>警告说明和修补程序  
  下表列出最常见的警告，以及修补程序，如果可用。  

@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6a2ae5a5e017980a6f7a5310ea3c76e49253249d
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 49539aea007a14eab68ad3f28d92d2e960618690
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="properties-of-domain-roles"></a>域角色的属性
 下表中的属性是与域角色关联。 有关域角色的信息，请参阅[了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展的域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 01/13/2018
 |类别|在其下生成的属性将显示在类别**属性**生成设计器窗口中的。 如果此属性为空，则生成的属性显示在**杂项**类别|< 无\>|  
 |描述|说明用于记录的代码并在生成的设计器 UI 中使用。<br /><br /> 描述将显示在角色播放器类上生成的属性的 Intellisense 工具提示。|`Description for`*角色的完整名称*|  
 |显示名称|域角色的生成设计器中显示的名称。|Name 属性的调整后的值。|  
-|帮助关键字|可选关键字用于编制索引的域角色的 F1 帮助。|\<无 >|  
+|帮助关键字|可选关键字用于编制索引的域角色的 F1 帮助。|\<none>|  
 |属性显示名称|生成的角色属性的生成设计器中显示的名称。|调整后的值的属性名称属性。|  
   
 > [!NOTE]

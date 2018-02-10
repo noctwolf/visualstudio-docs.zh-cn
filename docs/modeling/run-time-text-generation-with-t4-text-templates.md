@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Preprocessed Text Template project item
@@ -14,12 +13,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2bbc9fb84ae2487d3c90efcecf9d48c43c28df32
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 4f2681f3be13e98ff3b9dbf411b03ea9f3fc054a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 你可以在运行时应用程序中生成文本字符串，通过使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]运行时文本模板。 执行应用程序的计算机不必具有[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 运行时模板有时被称为"预处理文本模板"，因为在编译时，该模板会生成在运行时执行的代码。  

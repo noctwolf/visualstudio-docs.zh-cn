@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, deploying extensions
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 060cf2551f6c79259c7094d52f35db92f9ebcfef
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 311add860016c914aab232ffad6e3a4efadb15c9
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署层模型扩展
 其他 Visual Studio 用户可通过使用 Visual Studio 安装你创建的层建模扩展。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 01/13/2018
 2.  单击扩展的名称，然后单击**卸载**。  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>在 Team Foundation Build 服务器上安装扩展  
- 通常情况下，[!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 服务器并未安装 Visual Studio，因此无法通过对其双击来安装 VSIX。 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 的安装包括一些允许运行 VSIX 扩展的组件，但你必须手动安装该扩展。  
+ [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 服务器通常没有安装，Visual Studio，因此将不能安装 VSIX，通过双击它。 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 的安装包括一些允许运行 VSIX 扩展的组件，但你必须手动安装该扩展。  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>在 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 服务器上安装层扩展  
   
@@ -56,11 +57,11 @@ ms.lasthandoff: 01/13/2018
   
     -   仅为运行 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 的网络服务安装：  
   
-         %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version] \Extensions\Microsoft  
+         %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
     -   如果你已将 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 配置为在交互模式下以特定用户身份运行，则你可以仅为该用户安装：  
   
-         %LocalAppData%\Microsoft\VisualStudio\\[version] \Extensions\Microsoft  
+         %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  %Localappdata%通常是*DriveName*： 用户*用户名*AppDataLocal。  

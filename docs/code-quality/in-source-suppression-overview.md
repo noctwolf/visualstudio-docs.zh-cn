@@ -1,5 +1,5 @@
 ---
-title: "禁止显示代码分析警告在 Visual Studio 中使用 SuppressMessage 特性 |Microsoft 文档"
+title: "禁止显示 Visual Studio 中的代码分析警告 |Microsoft 文档"
 ms.custom: 
 ms.date: 01/29/2018
 ms.reviewer: 
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd3800e082673e9478eb32c6ae5627eef4d7e81
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="suppressing-code-analysis-warnings"></a>禁止显示代码分析警告
 
@@ -34,6 +34,9 @@ ms.lasthandoff: 02/01/2018
 
 > [!NOTE]
 > 不应在发布版本使用在源代码中禁止显示以防止意外传送在源代码中禁止显示元数据。 此外，由于禁止显示源中的处理开销，可以降低你的应用程序的性能。
+
+> [!NOTE]
+> 如果将项目迁移到 Visual Studio 2017 时，您可能会突然会遇到这样相当多的代码分析警告。 如果你不准备好修复警告，并且想要暂时关闭代码分析，打开项目的属性页 (**项目** > ***项目*属性...**) 并转到**代码分析**选项卡。取消选择**生成时启用代码分析**，然后重新生成你的项目。 或者，你可以选择的不同，较小的规则集以针对代码运行。 请记住将重新打开当你准备好修复警告的代码分析。
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 特性
 
@@ -95,7 +98,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 禁止显示特性可以应用于方法，但不能嵌入在方法体中。 这意味着如果你添加禁止所有冲突的特定规则<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性设为该方法。
 
-在某些情况下，你可能想要禁止显示该冲突，例如的特定实例，以便将来的代码不自动从代码分析规则中免除。 某些代码分析规则允许你执行此操作通过使用`MessageId`属性<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性。 一般情况下，旧的规则的冲突 （本地变量或参数） 的特定符号尊重`MessageId`属性。 [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)是此类规则的示例。 但是，在可执行代码 （非符号） 上的冲突的旧规则不遵从`MessageId`属性。 此外，不遵从 Roslyn 分析器`MessageId`属性。
+在某些情况下，你可能想要禁止显示该冲突，例如的特定实例，以便将来的代码不自动从代码分析规则中免除。 某些代码分析规则允许你执行此操作通过使用`MessageId`属性<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性。 一般情况下，旧的规则的冲突 （本地变量或参数） 的特定符号尊重`MessageId`属性。 [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)是此类规则的示例。 但是，在可执行代码 （非符号） 上的冲突的旧规则不遵从`MessageId`属性。 此外，.NET Compiler Platform ("Roslyn") 分析器不遵从`MessageId`属性。
 
 若要禁止显示特定的符号冲突的规则，指定的符号名称`MessageId`属性<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性。 下面的示例演示使用两个冲突的代码[CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;另一个用于`name`变量，一个用于`age`变量。 仅违反`age`符号将被取消。
 

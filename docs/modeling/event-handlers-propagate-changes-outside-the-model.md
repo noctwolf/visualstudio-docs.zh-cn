@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件处理程序在模型外部传播更改
 在可视化和建模 SDK，你可以定义存储事件处理程序以将更改传播到应用商店中，如非应用商店变量、 文件、 模型中其他存储或其他外部资源[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展。 存储事件处理程序将在其中触发的事件发生在事务结束后执行。 它们还将撤消或重做操作进行执行。 因此，与应用商店规则不同存储事件是最适用于更新存储之外的值。 与.NET 事件不同存储事件处理程序注册来侦听类： 无需注册每个实例的单独处理。 有关如何选择不同的方式来处理更改之间的详细信息，请参阅[响应和传播更改](../modeling/responding-to-and-propagating-changes.md)。  
