@@ -25,6 +25,7 @@
 ### [设置代码格式](formatting-python-code.md)
 ### [重构代码](refactoring-python-code.md)
 ### [使用 PyLint](linting-python-code.md)
+## [定义自定义菜单命令](defining-custom-python-project-commands.md)
 ## [交互式 Python (REPL)](python-interactive-repl-in-visual-studio.md)
 ### [使用 IPython REPL](interactive-repl-ipython.md)
 ## [调试](debugging-python-in-visual-studio.md)

@@ -7,20 +7,22 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: unit testing, create unit tests
+helpviewer_keywords:
+- unit testing, create unit tests
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: cf851d9fbd32bfdd07c6e1a67517ddf38784799c
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 763a16c4de3d3d087b813322af2fcd8518506863
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用“创建单元测试”命令创建单元测试方法存根
 
-Visual Studio 中的“创建单元测试”命令能够创建单元测试方法存根。 借助此功能，可以轻松地配置测试项目、测试类和其中的测试方法存根。 
+Visual Studio 中的“创建单元测试”命令能够创建单元测试方法存根。 借助此功能，可以轻松地配置测试项目、测试类和其中的测试方法存根。
 
 ## <a name="availability-and-extensions"></a>可用性和扩展
 
@@ -63,8 +65,7 @@ Visual Studio Marketplace 中提供了测试框架扩展：
 
 但此功能同样适用于以下情况：开发人员在开始时编写代码，然后使用该代码启动单元测试规程。 在编码流程中，开发人员可能想要为特定的一段代码快速创建一个单元测试方法存根（包含合适的测试类和合适的测试项目）。 
 
-## <a name="more-information"></a>详细信息
+## <a name="see-also"></a>请参阅
 
-请参阅博客文章 [Creating unit test method stubs with "Create Unit Tests"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)（使用“创建单元测试”创建单元测试方法存根）。
-
-单击[此处](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/)可阅读更多单元测试博客文章。
+[使用“创建单元测试”创建单元测试方法存根](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)  
+[单元测试博客文章](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/)
