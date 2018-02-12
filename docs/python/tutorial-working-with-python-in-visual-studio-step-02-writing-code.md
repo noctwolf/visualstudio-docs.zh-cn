@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4616b8df91ce87b8f886deb9143fa1ff55a976d7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 879b648fa761795efe38e45e1becf0433abf3755
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>步骤 2：编写和运行代码
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 01/22/2018
     print("Hello, Visual Studio")
     ```
 
-1. 注意语法着色如何区分 `print` 语句与 `"Hello Visual Studio"` 参数。 另外，暂时删除字符串上的最后一个 `"`，注意 Visual Studio 如何在包含语法错误的代码下方显示一条红色下划线。 然后，替换 `"` 以更正此代码。
+1. 注意语法着色如何区分 `print` 语句与 `"Hello Visual Studio"` 参数。 另外，暂时删除字符串上的最后一个 `"`，并注意 Visual Studio 如何在包含语法错误的代码下方显示一条红色下划线。 然后，替换 `"` 以更正此代码。
 
     ![IntelliSense 语法着色和错误突出显示](media/vs-getting-started-python-06-IntelliSense3b.png)
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/22/2018
     ```
 
     > [!Tip]
-    > 完成可处理键入时的子字符串，匹配单词的某些部分、单词开头的字母，甚至是跳过的字符。 请参阅[编辑代码 - 完成](code-editing.md#completions)，了解详细信息。
+    > 完成可处理键入时的子字符串，匹配单词的某些部分、单词开头的字母，甚至是跳过的字符。 请参阅[编辑代码 - 完成](editing-python-code-in-visual-studio.md#completions)，了解详细信息。
 
 1. 再添加一小段代码以输出 360 度的余弦值：
 
@@ -98,7 +98,7 @@ ms.lasthandoff: 01/22/2018
 
 ## <a name="going-deeper"></a>深入了解
 
-- [编辑代码](code-editing.md)
-- [设置代码格式](code-formatting.md)
-- [重构代码](code-refactoring.md)
-- [使用 PyLint](code-pylint.md)
+- [编辑代码](editing-python-code-in-visual-studio.md)
+- [设置代码格式](formatting-python-code.md)
+- [重构代码](refactoring-python-code.md)
+- [使用 PyLint](linting-python-code.md)

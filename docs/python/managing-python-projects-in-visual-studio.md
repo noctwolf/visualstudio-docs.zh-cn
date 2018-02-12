@@ -1,5 +1,5 @@
 ---
-title: "在 Visual Studio 中管理 Python 项目 | Microsoft Docs"
+title: "在 Visual Studio 中管理 Python 应用程序的项目 | Microsoft Docs"
 description: "介绍了 Visual Studio 中项目的用途，并展示了如何创建和管理 Python 代码项目，并概述了可用于 Python 的不同项目模板。"
 ms.custom: 
 ms.date: 01/16/2018
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 90a1c568b5e97afcaa975e1fe77230fa0b65d80d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: c1909a421cc4f80653438b2dd627aef8559005d6
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="python-projects"></a>Python 项目
 
@@ -73,8 +73,8 @@ Visual Studio 提供多种方法用于从零开始，或根据现有代码设置
 | --- | --- |
 | [根据现有 Python 代码](#creating-a-project-from-existing-files) | 从文件夹结构中的现有 Python 代码创建 Visual Studio 项目。  |
 | Python 应用程序 | 新 Python 应用程序的基本项目结构具有一个空的源文件。 默认情况下，项目在默认全局环境的控制台解释器中运行，通过[分配其他环境](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project)可以更改环境。 |
-| [Azure 云服务](template-azure-cloud-service.md) | 使用 Python 编写的 Azure 云服务项目。 |
-| [Web 项目](template-web.md) | 基于各种框架（包括 Bottle、Django、Flask、和 Flask/Jade）的 Web 服务器项目。 |
+| [Azure 云服务](python-azure-cloud-service-project-template.md) | 使用 Python 编写的 Azure 云服务项目。 |
+| [Web 项目](python-web-application-project-templates.md) | 基于各种框架（包括 Bottle、Django、Flask、和 Flask/Jade）的 Web 服务器项目。 |
 | IronPython 应用程序 | 与 Python 应用程序模板类似，但使用 IronPython 时，默认启用 .NET 互操作并通过 .NET 语言进行混合模式调试。 |
 | IronPython WPF 应用程序 | 将 IronPython 和 Windows Presentation Foundation XAML 文件配合使用以获得应用程序的用户界面的项目结构。 Visual Studio 提供 XAML UI 设计器，在 Python 中可以编写代码隐藏，以及运行应用程序时不显示控制台。 |
 | IronPython Silverlight 网页 | 在使用 Silverlight 的浏览器中运行的 IronPython 项目。 应用程序的 Python 代码作为脚本包含在网页中。 样本脚本标记会拉取一些 JavaScript 代码，这些代码会初始化在 Silverlight 中运行的 IronPython，Python 代码以此可与 DOM 交互。 |

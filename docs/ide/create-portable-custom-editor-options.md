@@ -6,22 +6,26 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editorconfig [Visual Studio]
+helpviewer_keywords:
+- editorconfig [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 516bd2de626fa7a5ffcbf4234c849e81860b9e08
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.openlocfilehash: 65eafeab083b85fb7e872adabf97f5497cc62291
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 
 在 Visual Studio 2017 中，可以向项目或基本代码添加 [EditorConfig](http://editorconfig.org/) 文件，强制对使用该基本代码的所有人实施一致的编码样式。 EditorConfig 设置优先于全局 Visual Studio 文本编辑器设置。 这意味着，可以调整每种基本代码，以使用特定于该项目的文本编辑器设置。 仍然可以在 Visual Studio“选项”对话框中设置个人编辑器首选项。 只要正在使用的基本代码没有 .editorconfig 文件，或者 .editorconfig 文件未替代特定设置，将应用这些设置。 此类首选项的一个示例为缩进样式 &mdash; 制表符或空格。
 
 许多代码编辑器和 IDE（包括 Visual Studio）都支持 EditorConfig 设置。 它是一种随代码移动的可移植组件，甚至可以在 Visual Studio 外强制实施编码样式。
+
+> [!NOTE]
+> 在 Visual Studio 中将 EditorConfig 文件添加到你的项目时，现有代码的格式设置不会更改，除非设置文档格式（“编辑” > “高级” > “设置文档格式”或 Ctrl+K，Ctrl+D）。 但任何新的代码行都将根据 EditorConfig 设置设置格式。
 
 ## <a name="coding-consistency"></a>编码一致性
 
@@ -48,7 +52,7 @@ Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.or
 
 ## <a name="adding-and-removing-editorconfig-files"></a>添加和删除 EditorConfig 文件
 
-将 EditorConfig文件添加到项目或基本代码不会将现有样式转换为新样式。 例如，如果文件中存在带制表符格式的缩进，并添加了以空格缩进的 EditorConfig 文件，则缩进字符不会转换为空格。 但任何新的代码行将根据 EditorConfig 文件进行格式化。
+将 EditorConfig文件添加到项目或基本代码不会将现有样式转换为新样式。 例如，如果文件中存在制表符格式的缩进，并添加了以空格缩进的 EditorConfig 文件，则缩进字符不会自动转换为空格。 但任何新的代码行都将根据 EditorConfig 文件设置格式。 此外，如果设置文档格式（“编辑” > “高级” > “设置文档格式”或 Ctrl+K，Ctrl+D），则 EditorConfig 文件中的设置将应用到现有代码行。
 
 如果从项目或基本代码库中删除 EditorConfig 文件，必须关闭并重新打开任何打开的代码文件才能还原到新代码行的全局编辑器设置。
 
@@ -68,16 +72,16 @@ Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.or
 
 1. 根据需要编辑文件，例如：
 
-```EditorConfig
-root = true
+   ```EditorConfig
+   root = true
 
-[*.{cs,vb}]
-indent_size = 4
-trim_trailing_whitespace = true
+   [*.{cs,vb}]
+   indent_size = 4
+   trim_trailing_whitespace = true
 
-[*.cs]
-csharp_new_line_before_open_brace = methods
-```
+   [*.cs]
+   csharp_new_line_before_open_brace = methods
+   ```
 
 或者，可安装 [EditorConfig 语言服务扩展](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)。 安装此扩展后，仅需右键单击解决方案节点、项目节点或解决方案资源管理器中的任何文件夹，从出现的菜单中，或在这些节点或文件夹的上下文菜单中选择“添加” > “.editorconfig 文件”即可。
 
@@ -91,7 +95,7 @@ csharp_new_line_before_open_brace = methods
 
 ![EditorConfig 层次结构](../ide/media/vside_editorconfig_hierarchy.png)
 
-如果只想替代某些设置并非所有设置，仅需在 .editorconfig 文件中指定这些设置。 将仅替代较低级别文件中显式列出的属性。 将继续应用更高级别的 .editorconfig 文件中的其他设置。 如果要确保_任何_更高级别的 .editorconfig 文件中_没有_设置应用于此部分代码库，请将 ```root=true``` 属性添加到较低级别的 .editorconfig 文件中：
+如果想替代一部分而非所有设置，请在 .editorconfig 文件中仅指定这些设置。 仅替代较低级别文件中显式列出的属性。 更高级别 .editorconfig 文件中的其他设置会继续应用。 如果要确保_任何_更高级别的 .editorconfig 文件中_没有_设置应用于此部分代码库，请将 ```root=true``` 属性添加到较低级别的 .editorconfig 文件中：
 
 ```EditorConfig
 # top-most EditorConfig file
@@ -143,7 +147,7 @@ indent_style = tab
 
    “该项目编码约定覆盖了此文件类型的用户首选项”。
 
-这意味着如果目录结构中位于与项目相同位置或在项目之上的某个 EditorConfig 文件中指定了“工具”、“选项”、“文本编辑器”中的任何编辑器设置（如缩进尺寸和样式、制表符大小或编码约定），则 EditorConfig 文件中的约定会替代“选项”中的设置。 可以通过在“工具”、“选项”、“文本编辑器”中切换“遵循项目编码约定”选项，来控制此行为。 取消选中该选项会关闭 Visual Studio 的 EditorConfig 支持。
+这意味着如果目录结构中与项目位于相同位置或在项目之上的某个 EditorConfig 文件中指定了“工具” > “选项” > “文本编辑器”中的任何编辑器设置（如缩进尺寸和样式、制表符大小或编码约定），则 EditorConfig 文件中的约定会替代“选项”中的设置。 可以通过在“工具” > “选项” > “文本编辑器”中切换“遵循项目编码约定”选项来控制此行为。 取消选中该选项会关闭 Visual Studio 的 EditorConfig 支持。
 
 ![工具选项 - 遵循项目编码约定](media/coding_conventions_option.png)
 
@@ -158,6 +162,7 @@ dir .editorconfig /s
 ## <a name="see-also"></a>请参阅
 
 [.NET 代码样式约定](../ide/editorconfig-code-style-settings-reference.md)  
+[.NET 命名约定](../ide/editorconfig-naming-conventions.md)  
 [支持语言服务的 EditorConfig](../extensibility/supporting-editorconfig.md)  
 [EditorConfig.org](http://editorconfig.org/)  
 [在编辑器中编写代码](writing-code-in-the-code-and-text-editor.md)

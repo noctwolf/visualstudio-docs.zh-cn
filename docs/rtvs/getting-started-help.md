@@ -1,23 +1,26 @@
 ---
 title: "针对 Visual Studio 的 R 工具中的帮助窗口 | Microsoft Docs"
+description: "在 Visual Studio 中，R 的相关帮助通过 ? 命令直接集成到交互 对话框。"
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 001/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 232c02bf68125afb1ffa5234e0feee049e9c5f69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: c95cb854a5c6d517b6e02e63bc744cd2bdc3ba1e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>针对 Visual Studio 的 R 工具中的帮助
 
@@ -28,7 +31,7 @@ ms.lasthandoff: 12/22/2017
 > [!Tip]
 > 与 Visual Studio 中的所有其他窗口一样，可按照任意喜欢的方式排列和停靠帮助窗口。 请参阅[在 Visual Studio 中自定义窗口布局](../ide/customizing-window-layouts-in-visual-studio.md)。
 >
-> 要在浏览器中打开帮助结果，请选择“R 工具”>“选项”菜单，并将“R 帮助浏览器”属性设置为 `External`。 请参阅[选项](options.md)。
+> 要在浏览器中打开帮助结果，请选择“R 工具”>“选项”菜单，并将“R 帮助浏览器”属性设置为 `External`。 请参阅[选项](options-for-r-tools-in-visual-studio.md)。
 
 若要搜索帮助，请使用 `??` 命令后跟搜索词的形式进行搜索。 如果搜索词包含空格，请使用引号：
 
@@ -52,7 +55,7 @@ ms.lasthandoff: 12/22/2017
     ![通过右键单击上下文菜单调用帮助](media/help-right-click.png)
 
 > [!Tip]
-> 若要在浏览器中打开集成帮助，请选择“R 工具”>“选项”，并将“F1 Web 浏览器”设置为 `External`。 请参阅[选项](options.md)。
+> 若要在浏览器中打开集成帮助，请选择“R 工具”>“选项”，并将“F1 Web 浏览器”设置为 `External`。 请参阅[选项](options-for-r-tools-in-visual-studio.md)。
 
 ## <a name="integrated-stackoverflow-search"></a>集成的 StackOverflow 搜索
 
@@ -64,4 +67,4 @@ ms.lasthandoff: 12/22/2017
 
 ![更改 F1 Web 搜索字符串选项](media/options-dialog.png)
 
-若要在浏览器中显示结果，则按[选项](options.md)中所述，更改“F1 Web 浏览器”选项。
+若要在浏览器中显示结果，则按[选项](options-for-r-tools-in-visual-studio.md)中所述，更改“F1 Web 浏览器”选项。

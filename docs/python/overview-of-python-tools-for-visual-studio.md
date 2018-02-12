@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 067684c7b5064e096849afe69d2f0db1bcc75ea6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>在 Visual Studio (Windows) 中使用 Python
 
@@ -32,21 +32,21 @@ Windows 上的 Visual Studio 通过 Python 开发和数据科学工作负载 (Vi
 若要开始使用 Python，请执行以下操作：
 
 - 按照[安装说明](installing-python-support-in-visual-studio.md)安装 Python 工作负载
-- 阅读一个或多个指导如何创建项目的快速入门教程。 如果不确定，可先从[从模板创建项目](quickstart-02-project-from-template.md)开始。
+- 阅读一个或多个指导如何创建项目的快速入门教程。 如果不确定，可先从[从模板创建项目](quickstart-02-python-in-visual-studio-project-from-template.md)开始。
 - 按照[在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) 教程操作，获得完整的端到端体验。
 - 然后使用下表中的链接了解与 Python 相关的功能，以及 Visual Studio 本身的功能。
 
-| 功能 | 描述 | Visual Studio 常规文档 |
+| 功能 | 说明 | Visual Studio 常规文档 |
 | --- | --- | --- |
 | [Visual Studio 项目系统](managing-python-projects-in-visual-studio.md) | 隐式选取 Python 代码的文件夹结构，同时允许显式控制以便标识应用代码、测试代码、网页、JavaScript、生成脚本等等。 | [Visual Studio 中的解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md) |
 | [项目模板](managing-python-projects-in-visual-studio.md#project-templates) | 快速创建用于控制台、Web、Azure、数据科学和其他类型项目的项目结构 | [Visual Studio 模板](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
-| 多个解释器支持 | 支持各种版本的 CPython 和 IronPython。 | 不可用 |
-| IPython 支持 | 包括对内联图的 REPL 中的 IPython/Jupyter 的支持以及对.NET 和 Windows Presentation Foundation (WPF) 的支持。 | 不可用 |
-| [多种多样的编辑、IntelliSense 和代码理解](code-editing.md) | 包括语法着色、跨所有代码和库的自动完成、[代码格式设置](code-formatting.md)、签名帮助、类视图、转到定义、查找所有引用、代码片段、[重构](code-refactoring.md)、[PyLint](code-pylint.md)等等。 | [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [交互窗口](interactive-repl.md) | 能够轻松突出显示代码的某一部分，然后将其发送到交互窗口，为 Python 提供快速的 REPL 体验。 | 不可用 |
-| [功能完备的调试](debugging.md) | 无论有无 Visual Studio 项目，均可完成调试，包括可对现有可执行文件进行调试、[Python/C++ 混合模式调试](debugging-mixed-mode.md)、对 Windows/Linux/Mac 进行[远程调试](debugging-cross-platform-remote.md)、[对 Azure 进行远程调试](debugging-azure-remote.md)，以及在交互窗口中进行调试。 | [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md) |
-| [具有丰富报表的分析工具](profiling.md) | 了解应用程序中所用的时间，包括比较不同分析运行之间的性能差异。 | [分析工具](../profiling/profiling-tools.md)（并非所有 Visual Studio 分析功能都可用于 Python） |
-| [单元测试工具](unit-testing.md) | 在 Visual Studio 测试资源管理器中发现、运行和管理测试，并且可轻松调试单元测试。 | [单元测试代码](../test/unit-test-your-code.md) |
+| 多个解释器支持 | 支持各种版本的 CPython 和 IronPython。 | n/a |
+| IPython 支持 | 包括对内联图的 REPL 中的 IPython/Jupyter 的支持以及对.NET 和 Windows Presentation Foundation (WPF) 的支持。 | n/a |
+| [多种多样的编辑、IntelliSense 和代码理解](editing-python-code-in-visual-studio.md) | 包括语法着色、跨所有代码和库的自动完成、[代码格式设置](formatting-python-code.md)、签名帮助、类视图、转到定义、查找所有引用、代码片段、[重构](refactoring-python-code.md)、[PyLint](linting-python-code.md)等等。 | [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [交互窗口](python-interactive-repl-in-visual-studio.md) | 能够轻松突出显示代码的某一部分，然后将其发送到交互窗口，为 Python 提供快速的 REPL 体验。 | n/a |
+| [功能完备的调试](debugging-python-in-visual-studio.md) | 无论有没有 Visual Studio 项目，均可完成调试，包括可对现有可执行文件进行调试、[Python/C++ 混合模式调试](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)、对 Windows/Linux/Mac 的 [Linux 进行远程调试](debugging-python-code-on-remote-linux-machines.md)、[对 Azure 进行远程调试](debugging-remote-python-code-on-azure.md)，以及在交互窗口中进行调试。 | [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md) |
+| [具有丰富报表的分析工具](profiling-python-code-in-visual-studio.md) | 了解应用程序中所用的时间，包括比较不同分析运行之间的性能差异。 | [分析工具](../profiling/profiling-tools.md)（并非所有 Visual Studio 分析功能都可用于 Python） |
+| [单元测试工具](unit-testing-python-in-visual-studio.md) | 在 Visual Studio 测试资源管理器中发现、运行和管理测试，并且可轻松调试单元测试。 | [单元测试代码](../test/unit-test-your-code.md) |
 
 Python 工作负载还包括[用于 Python 的 Azure SDK](azure-sdk-for-python.md)，它用于简化从 Windows、Mac OS X 和 Linux 应用使用 Azure 服务的过程。
 

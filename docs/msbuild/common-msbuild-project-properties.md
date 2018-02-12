@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c70427c2dd1e2c7ceb071867b876750121445dde
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: e1da05cbbb2415ad6ce701e1330f9e9e60568aeb
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 下表列出了在 Visual Studio 项目文件中定义的或者在 MSBuild 提供的 .targets 文件中包括的经常使用的属性。  
@@ -50,7 +52,7 @@ ms.lasthandoff: 01/22/2018
 |BaseOutputPath|指定输出文件的基路径。 如果设置此属性，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 将使用 `OutputPath = $(BaseOutputPath)\$(Configuration)\`。 示例语法：`<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>`|  
 |BaseIntermediateOutputPath|在其中创建所有配置特定的中间输出文件夹的顶级文件夹。 默认值为 `obj\`。 下面的代码是一个示例：`<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`|  
 |BuildInParallel|一个布尔值，指示在使用多处理器 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 时并行生成还是清理项目引用。 默认值为 `true`，该值表示如果系统有多个核心或处理器，则将并行生成项目。|  
-|BuildProjectReferences|一个布尔值，指示是否由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 生成项目引用。 如果在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中生成项目，则设置为 `false`；否则设置为 `true`。|  
+|BuildProjectReferences|一个布尔值，指示是否由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 生成项目引用。 如果在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中生成项目，则自动设置为 `false`；否则设置为 `true`。 可以在命令行上指定 `/p:BuildProjectReferences=false` 以避免检查引用的项目是否为最新。|  
 |CleanFile|将用作“清理缓存”的文件的名称。 清理缓存是要在清理操作期间删除的已生成文件的列表。 该文件由生成过程放在中间输出路径中。<br /><br /> 此属性只指定没有路径信息的文件名。|  
 |CodePage|指定要用于编译中所有源代码文件的代码页。 此属性等效于 `/codepage` 编译器开关。|  
 |CompilerResponseFile|可以传递给编译器任务的可选响应文件。|  
@@ -71,7 +73,7 @@ ms.lasthandoff: 01/22/2018
 |ExcludeDeploymentUrl|[GenerateDeploymentManifest 任务](../msbuild/generatedeploymentmanifest-task.md)会在项目文件包含下列任何元素时向部署清单中添加 deploymentProvider 标记：<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 不过，使用 ExcludeDeploymentUrl，可以防止 deploymentProvider 标记添加到部署清单，即使指定了任何上述 URL。 为此，请将以下属性添加到项目文件：<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>`注意：ExcludeDeploymentUrl 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中未显示，并且仅可通过手动编辑项目文件进行设置。 设置此属性不影响在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中发布；即 deploymentProvider 标记仍将添加到 PublishUrl 指定的 URL。|  
 |FileAlignment|指定输出文件各部分的对齐位置，以字节为单位。 有效值为 512、1024、2048、4096、8192。 此属性等效于 `/filealignment` 编译器开关。|  
 |FrameworkPathOverride|指定 mscorlib.dll 和 microsoft.visualbasic.dll 的位置。 此参数等效于 vbc.exe 编译器的 `/sdkpath` 开关。|  
-|GenerateDocumentation|（仅限 Visual Basic .NET）一个布尔型参数，指示是否由生成来生成文档。 如果设置为 `true`，生成过程将生成文档信息，并将此信息与生成任务所创建的可执行文件或库的名称一同放置在 .xml 文件中。|
+|GenerateDocumentation|（仅限 Visual Basic）一个布尔型参数，指示是否由生成来生成文档。 如果设置为 `true`，生成过程将生成文档信息，并将此信息与生成任务所创建的可执行文件或库的名称一同放置在 .xml 文件中。|
 |IntermediateOutputPath|如果未指定路径，则为从 `BaseIntermediateOutputPath` 派生的完整中间输出路径。 例如 \obj\debug\\。 如果此属性被重写，则设置 `BaseIntermediateOutputPath` 不起任何作用。|  
 |KeyContainerName|强名称密钥容器的名称。|  
 |KeyOriginatorFile|强名称密钥文件的名称。|  

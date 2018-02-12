@@ -1,10 +1,9 @@
 ---
-title: "EditorConfig 的 .NET 命名约定 | Microsoft Docs"
+title: "EditorConfig 文件的 .NET 命名约定 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -12,17 +11,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
-ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
+ms.openlocfilehash: 6b6eac818512b6681307e059131992a9ac0f4534
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="naming-conventions-for-editorconfig"></a>EditorConfig 的命名约定
+# <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 适用的 .NET 命名约定
 
 命名约定与类、属性和方法等码位元素的命名有关。 例如，可以指定公共成员必须采用大写形式，或者异步方法必须以“Async”结尾。 可以通过在 [.editorconfig 文件](../ide/create-portable-custom-editor-options.md)中指定这些规则来加以实施。 命名规则冲突显示在“错误列表”中，或者作为建议显示在名称之下，具体取决于为规则选择的严重性。 不需要生成项目即可查看冲突。
 

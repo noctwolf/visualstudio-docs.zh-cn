@@ -9,44 +9,28 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: mblome
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: mikeblome
-ms.openlocfilehash: 1b032b651603beb5771bfa68b8dc8628540d638e
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8a85bf908b1f0908b8c07a7573306536b9bf78d7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>如何测试 UWP 应用的 Visual C++ DLL 
+# <a name="how-to-test-a-visual-c-dll"></a>如何测试 Visual C++ DLL
+
 本主题介绍使用用于 C++ 的 Microsoft Test Framework 为通用 Windows 平台 (UWP) 应用的 C++ DLL 创建单元测试的一种方法。 RooterLib DLL 通过实现计算给定数的平方根的估计的函数来演示限制计算理论的模糊内存。 然后，可能会将 DLL 包括在一个 UWP 应用中，向用户展示可通过数学完成的有趣操作。  
   
  本主题演示如何使用单元测试作为开发的第一步。 在此方法中，首先编写验证要测试的系统的特定行为的测试方法，然后编写通过测试的代码。 通过按照以下过程的顺序进行更改，您可调转此策略的顺序，即先编写要测试的代码，然后编写单元测试。  
   
- 本主题还为单元测试和要测试的 DLL 创建一个 Visual Studio 解决方案和单独的项目。 你还可在 DLL 项目中直接包含单元测试，也可以为单元测试和 .DLL 创建不同的解决方案。 有关要使用的指令的提示，请参阅[向现有的 C++ 应用程序添加单元测试](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)。  
-  
-##  <a name="In_this_topic"></a> 主题内容  
-
- [创建解决方案和单元测试项目](#Create_the_solution_and_the_unit_test_project)  
-  
- [验证测试是否可在资源管理器中运行](#Verify_that_the_tests_run_in_Test_Explorer)  
-  
- [向解决方案添加 DLL 项目](#Add_the_DLL_project_to_the_solution)  
-  
- [使 DLL 函数对测试代码可见](#make_the_dll_functions_visible_to_the_test_code)  
-  
- [以迭代方式增加测试并使它们通过](#Iteratively_augment_the_tests_and_make_them_pass)  
-  
- [调试失败测试](#Debug_a_failing_test)  
-  
- [在不更改测试的情况下重构代码](#Refactor_the_code_without_changing_tests)  
+ 本主题还为单元测试和要测试的 DLL 创建一个 Visual Studio 解决方案和单独的项目。 你还可在 DLL 项目中直接包含单元测试，也可以为单元测试和 .DLL 创建不同的解决方案。 有关要使用的指令的提示，请参阅[向现有的 C++ 应用程序添加单元测试](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)。
   
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> 创建解决方案和单元测试项目  
   
-1.  在“文件”菜单上选择“新建”，然后选择“新建项目”。  
+1.  在“文件”菜单上，选择“新建” > “新建项目...”。
   
-2.  在“新建项目”对话框中，展开“已安装”，然后展开“Visual C++”，并选择“UWP”。 然后从项目模板列表中选择“单元测试库（UWP 应用）”。  
-  
-     ![创建 C&#43;&#43; 单元测试库](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
+2.  在“新建项目”对话框中，依次展开“已安装” > “Visual C#”，然后选择“Windows 通用”。 然后从项目模板列表中选择“单元测试应用(通用 Windows)”。
   
 3.  将项目命名为 `RooterLibTests`；指定位置；将解决方案命名为 `RooterLib`；确保选中了“创建解决方案的目录”。  
   

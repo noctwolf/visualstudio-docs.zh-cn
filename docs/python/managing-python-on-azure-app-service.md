@@ -1,14 +1,16 @@
 ---
-title: "在 Azure App Service 上管理 Python | Microsoft Docs"
+title: "在 Azure 应用服务上安装 Python 解释器和库 | Microsoft Docs"
+description: "如何在 Azure 应用服务上安装 Python 解释器和库，并配置 Web 应用程序，以正确引用该解释器。"
 ms.custom: 
 ms.date: 09/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ff8fb49321d12416391edd1463f651ae169b1bee
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>在 Azure App Service 上管理 Python
 
@@ -131,7 +133,7 @@ FastCGI 是在请求级别工作的接口。 IIS 接收传入的连接，并将�
 - `WSGI_HANDLER` 必须指向可从你的应用导入的 WSGI 应用。
 - `WSGI_LOG` 为可选，但建议在调试应用时使用。 
 
-有关 Bottle、Flask 和 Django Web 应用的 `web.config` 内容的更多详细信息，请参阅[发布到 Azure](publishing-to-azure.md)。
+有关 Bottle、Flask 和 Django Web 应用的 `web.config` 内容的更多详细信息，请参阅[发布到 Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 ### <a name="configuring-the-httpplatform-handler"></a>配置 HttpPlatform 处理程序
 

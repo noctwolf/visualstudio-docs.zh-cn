@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: JavaScript
-ms.workload: nodejs
-ms.openlocfilehash: 80822e4f323621a97beb453118d7e0836ae9ea92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Visual Studio 中的 Node.js 入门
 本教程介绍使用 Visual Studio 进行 Node.js 开发，将创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。  
@@ -134,6 +137,8 @@ ms.lasthandoff: 12/22/2017
 
 1. 单击这些按钮可显示不同的图像。
 
+    ![在浏览器中运行应用](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+
 1. 选择“视图”>“其他窗口”>“Node.js 交互式窗口”，打开 Node.js 交互式窗口。
 
    ![打开 Node.js 交互式窗口](../nodejs/media/tutorial-nodejs-interactive-window.png)  
@@ -144,7 +149,7 @@ ms.lasthandoff: 12/22/2017
 
 1. 关闭 Web 浏览器。  
 
-## <a name="publish-to-azure-app-service"></a>发布到 Azure 应用服务
+## <a name="optional-publish-to-azure-app-service"></a>（可选）发布到 Azure 应用服务
 
 1. 在解决方案资源管理器中，右键单击项目，选择“发布”。
 

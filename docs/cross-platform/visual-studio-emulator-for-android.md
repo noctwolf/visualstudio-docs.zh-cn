@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 07/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology:
+- tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df3e4def97d8563e3901662ede92e79acd5c5d4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3029954623ffbd5324a8a1ab9b67def375b1a486
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 仿真程序
 适用于 Android 的 Visual Studio 仿真器是一款可模拟 Android 设备的桌面应用程序。 它提供虚拟化的环境，你不需要物理设备便可在其中调试并测试 Android 应用程序。 它还为应用程序原型提供一个独立的环境。  
@@ -27,7 +29,9 @@ ms.lasthandoff: 12/22/2017
  你可以为每个 Android 平台、屏幕分辨率和适用于 Android 的 Visual Studio 仿真程序支持的其他硬件属性，在唯一设备配置文件上测试应用。
 
 > [!NOTE]
-> 建议将 Google Android 仿真器与用于 Apache Cordova 的 Visual Studio 工具配合使用。 有关详细信息，请参阅[在 Android 上运行 Apache Cordova 应用](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator)。
+> 建议在以下情况中使用 Google Android 仿真器：
+> - 使用适用于 Apache Cordova 的 Visual Studio 工具时。 有关详细信息，请参阅[在 Android 上运行 Apache Cordova 应用](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator)。
+> - 在需要仿真器映像时，请包含 Android 7.0 或更高版本，因为没有在适用于 Android 的 Visual Studio 仿真器中发布 Android 映像过去版本 6.0 以供使用的计划。
   
 ##  <a name="Installing"></a> 安装和卸载  
  安装  
@@ -79,7 +83,7 @@ ms.lasthandoff: 12/22/2017
  安装想要设为目标的配置文件集后，可按绿色“播放”按钮直接从管理器启用这些新的配置文件。 它们还将在任何 Visual Studio 跨平台移动项目类型中的调试目标下拉列表菜单中显示。  
   
 ##  <a name="FeaturesTest"></a> 可在仿真程序中测试的功能  
- 有关可在仿真程序中测试的功能的详细信息，请参阅此[文档](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)。  
+ 有关可以在仿真器中测试的功能的详细信息，请参阅此[博客文章](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)。  
   
 ##  <a name="FeaturesNonTest"></a> 无法在仿真程序中测试的功能  
  下表描述无法在仿真程序中测试的 Android 平台的功能。 必须在物理设备上测试这些功能。  

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6924f4a4b3c2f0b4319af14ab8518bf01eaab912
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 94ee933b80c92f18fcc47cb8cb8940b48bfe7fc7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>步骤 4：在调试器中运行代码
 
@@ -96,7 +96,7 @@ ms.lasthandoff: 01/22/2018
 
 1. 继续使用“单步执行(进入过程)”，直到再次部分进入 `make_dot_string`。 然后使用“单步执行(跳出过程)”，注意将返回到 `for` 循环。 使用“单步执行(跳出过程)”时，调试器运行函数的其余部分，然后在调用代码中自动暂停。 此命令对于以下情况非常有用：已单步调试某个要调试的较长函数的某一部分，但无需单步调试其余部分，并且不想在调用代码中设置显式断点。
 
-1. 若要继续运行程序直到下一个断点，请使用“继续”(F5)。 因为 `for` 循环中有断点，因此下一次迭代将中断。
+1. 若要继续运行程序直到下一个断点，请使用“继续”(F5)。 因为 `for` 循环中有断点，所以下一次迭代将中断。
 
 1. 单步调试某个循环的数百次迭代是一个很枯燥的过程，因此，Visual Studio 允许用户对断点添加*条件*。 仅当满足该条件时，调试器才会在断点处暂停程序。 例如，可以对 `for` 语句上的断点使用条件，使其仅在 `i` 值超过 1600 时暂停。 若要设置此条件，请右键单击红色断点，选择“条件...”(Alt+F9,C)。 在随即显示的“断点设置”弹出窗口中，输入 `i > 1600` 作为表达式，选择“关闭”。 按 F5 继续，注意程序在下一次中断前会运行多次迭代。
 
@@ -114,5 +114,5 @@ ms.lasthandoff: 01/22/2018
 
 ### <a name="going-deeper"></a>深入了解
 
-- [调试](debugging.md)。
+- [调试](debugging-python-in-visual-studio.md)
 - [在 Visual Studio 中调试](../debugger/debugger-feature-tour.md)提供了 Visual Studio 调试功能的完整文档。

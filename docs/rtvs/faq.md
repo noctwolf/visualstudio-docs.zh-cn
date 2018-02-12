@@ -1,23 +1,26 @@
 ---
 title: "针对 Visual Studio 的 R 工具常见问题解答 | Microsoft Docs"
+description: "有关 Visual Studio 中的 R 的常见问题。"
 ms.custom: 
 ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 9fe92fb38d1b03b081cb53fc620f60180daf5b24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: 8abdaa1e156cf2be07f08f6cebcf67031bf91c2f
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="frequently-asked-questions"></a>常见问题
 
@@ -67,7 +70,7 @@ ms.lasthandoff: 12/22/2017
 
 **问：从哪里可以下载这些解释器？**
 
-答： 请参阅[安装](installation.md)。
+答： 请参阅[安装](installing-r-tools-for-visual-studio.md)。
 
 问：**Microsoft R Server 是什么？**
 
@@ -89,7 +92,7 @@ ms.lasthandoff: 12/22/2017
 
 问： **Visual Studio 中的数据服务是什么？**
 
-答： Visual Studio 的远程 R 服务使你可以设置 Windows 或 Linux 计算机，然后从 RTVS 连接到它。 请参阅[设置远程工作区](workspaces-remote-setup.md)。
+答： Visual Studio 的远程 R 服务使你可以设置 Windows 或 Linux 计算机，然后从 RTVS 连接到它。 请参阅[设置远程工作区](setting-up-remote-r-workspaces.md)。
 
 问： **RTVS 是否可以连接到 Microsoft R Server？**
 
@@ -101,7 +104,7 @@ ms.lasthandoff: 12/22/2017
 
 问：**RTVS 是否可以连接到安装了 R 的远程计算机？**
 
-若要在远程计算机上执行 R 代码，必须存在某种侦听请求、接收代码并将结果发送回客户端计算机的服务。 这是 Visual Studio 的远程 R 服务所执行的操作。 请参阅[设置远程工作区](workspaces-remote-setup.md)。
+若要在远程计算机上执行 R 代码，必须存在某种侦听请求、接收代码并将结果发送回客户端计算机的服务。 这是 Visual Studio 的远程 R 服务所执行的操作。 请参阅[设置远程工作区](setting-up-remote-r-workspaces.md)。
 
 问： **远程会话是什么？**
 

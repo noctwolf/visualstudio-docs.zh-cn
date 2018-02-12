@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a3f788b114b4250819c4867136cb1b888c816cf8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 552d256b315d6506911ae4cf8724b33173cd39a4
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -31,12 +31,12 @@ ms.lasthandoff: 01/22/2018
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 及更早版本](#visual-studio-2013-and-earlier)
 
-对于 Visual Studio 2015 及更早版本，还需要单独安装所选的 Python 解释器（Python 3.5 及更早版本；不支持 3.6 并且将生成消息“不支持 Python 3.6 版本）。 有关详细信息，请参阅 [Python 环境](managing-python-environments-in-visual-studio.md)。 该页面还包含如何将现有 Python 解释器添加到 Visual Studio 2017 中的说明。
+对于 Visual Studio 2015 和更早版本，你还需要选择单独安装 Python 解释器（Python 3.5 和更早版本。3.6 不受支持，并生成消息“Python 版本 3.6 不受支持”）。 有关详细信息，请参阅 [Python 环境](managing-python-environments-in-visual-studio.md)。 该页面还包含如何将现有 Python 解释器添加到 Visual Studio 2017 中的说明。
 
 若要在执行安装步骤后快速测试 Python 支持，请按 Alt-I 并输入 `2+2` 打开 Python 交互式窗口。 如果看不到输出 `4`，请重新检查步骤。
 
 > [!Tip]
-> Python 工作负载包括有用的 Cookiecutter 扩展，扩展提供图形用户界面以发现模板、输入模板选项及创建项目和文件。 有关详细信息，请参阅[使用 Cookiecutter](cookiecutter.md)。
+> Python 工作负载包括有用的 Cookiecutter 扩展，扩展提供图形用户界面以发现模板、输入模板选项及创建项目和文件。 有关详细信息，请参阅[使用 Cookiecutter](using-python-cookiecutter-templates.md)。
 
 > [!Note]
 > 目前尚未在 Visual Studio for Mac 中提供 Python 支持，但可在 Mac 和 Linux 上通过 Visual Studio Code 获取相应支持。 请参阅[问题和解答](overview-of-python-tools-for-visual-studio.md#questions-and-answers)。
@@ -64,11 +64,11 @@ ms.lasthandoff: 01/22/2018
     | 选项 | 描述 |
     | --- | --- |
     | Python 分发版本 | 选择计划使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 分发版本的 32 位和 64 位变型的任意组合。 每个组合都包含分发版本的解释器、运行时和库。 具体来说，Anaconda 是开放数据科学平台，包含各种预安装的包。 （可随时返回 Visual Studio 安装程序来添加或删除分发版本。） |
-    | Cookiecutter 模板支持 | 安装 Cookiecutter 图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 请参阅[使用 Cookiecutter 扩展](cookiecutter.md)。 |
-    | Python Web 支持 | 安装用于 Web 开发的工具（包括 HTML、CSS 和 JavaScript 编辑支持）以及用于使用 Bottle、Flask 和 Django 框架的项目的模板。 请参阅 [Python Web 项目模板](template-web.md)。 |
+    | Cookiecutter 模板支持 | 安装 Cookiecutter 图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 请参阅[使用 Cookiecutter 扩展](using-python-cookiecutter-templates.md)。 |
+    | Python Web 支持 | 安装用于 Web 开发的工具（包括 HTML、CSS 和 JavaScript 编辑支持）以及用于使用 Bottle、Flask 和 Django 框架的项目的模板。 请参阅 [Python Web 项目模板](python-web-application-project-templates.md)。 |
     | Python IoT 支持 | 支持使用 Python 开发 Windows IoT Core。 |
     | Python 本机开发工具 | 安装 C++ 编译器和其他必要组件用于开发 Python 本机扩展。 请参阅[创建适用于 Python 的 C++ 扩展](working-with-c-cpp-python-in-visual-studio.md)。 若要获取全面的 C++ 支持，还请安装“使用 C++ 的桌面开发”工作负载。 |
-    | Azure 云服务核心工具 | 提供在 Python 中开发 Azure 云服务的其他支持。 请参阅 [Azure 云服务项目](template-azure-cloud-service.md)。 |
+    | Azure 云服务核心工具 | 提供在 Python 中开发 Azure 云服务的其他支持。 请参阅 [Azure 云服务项目](python-azure-cloud-service-project-template.md)。 |
 
 1. 安装后，安装程序会提供用于修改、启动、修复或卸载 Visual Studio 的选项。 如果有适用于任何已安装组件的 Visual Studio 更新可用，“修改”按钮会变为“更新”。 （随后在下拉菜单中提供修改选项。）还可搜索“Visual Studio”，从 Windows 开始菜单启动 Visual Studio 及安装程序。
 
