@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: 272b648b7b7bc27ae2f043a3a3d0541c87822258
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xamarin
+ms.openlocfilehash: e550d7f6220d4d555d8427bcb1c2a3e814a4f5c3
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio 和 Xamarin
 Xamarin 是一个移动应用开发平台，用于从常见的 C#/.NET 基本代码构建本机 iOS、Android 和 Windows 应用，可实现 75% 到将近 100% 的平台间代码重用。 通过 Xamarin 和 C# 编写的应用可完全访问基础平台 API 并可生成本机用户界面；由于这些应用与平台特定的包相兼容，因此几乎不影响运行时性能。 （注意：Xamarin 也支持 F#，但本文档将仅着重介绍 C#。 此时不支持 Visual Basic。）  

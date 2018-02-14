@@ -1,3 +1,5 @@
+---
+---
 # <a name="view-recent-job-performance-and-details"></a>查看最近的作业性能和详细信息
 提交作业后，可以查看作业列表，以查看作业状态和持续时间等。
 

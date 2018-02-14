@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: b72c0a0df85c4c37745faaec4e9d2da269e6c9cd
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- xamarin
+ms.openlocfilehash: e7ee514a3ca121b9259f1c1b5f54b49d58b0ac47
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>适用于 Xamarin 应用的应用程序生命周期管理 (ALM)
 借助 Xamarin，你可以使用 C#、.NET 和 Visual Studio 生成面向 Android、iOS 和 Windows 的跨平台移动应用。 Xamarin 允许在平台间共享大部分代码，只有一小部分需要特定于平台。 有关 Xamarin 的详细信息，请参阅 [Visual Studio 和 Xamarin](../cross-platform/visual-studio-and-xamarin.md)。  
@@ -87,7 +88,7 @@ ms.lasthandoff: 01/09/2018
 |规划测试、创建测试用例和组织测试套件|是||  
 |手动测试|是||  
 |测试管理器（记录和播放测试）|是|仅限 Visual Studio 中的 Windows 设备和 Android 仿真器。 可使用 [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder)（Xamarin 测试记录器）记录所有设备。|  
-|代码覆盖率|不可用||  
+|代码覆盖率|n/a||  
 |[单元测试代码](../test/unit-test-your-code.md)|是|对于 Windows 和 Android 目标，可以使用内置的 MSTest 工具。 若要在 Windows、Android 和 iOS 上运行单元测试，Xamarin 建议使用 NUnit。 请参阅 [为 Xamarin 配置 TFS](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) （Xamarin 网站）。|  
 |[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)|仅限 Windows|Visual Studio 的 UI 测试记录器仅用于 Windows。 有关所有平台，请参阅 [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder)（Xamarin 测试记录器）。|  
   

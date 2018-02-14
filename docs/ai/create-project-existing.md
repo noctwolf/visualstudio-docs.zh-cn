@@ -1,3 +1,5 @@
+---
+---
 # <a name="create-an-ai-project-from-existing-code"></a>通过现有代码创建 AI 项目
 
 [安装 Visual Studio Tools for AI](installation.md) 后，就可以轻松地将现有 Python 代码引入 Visual Studio 项目。

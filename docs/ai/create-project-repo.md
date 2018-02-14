@@ -1,3 +1,5 @@
+---
+---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>在 Visual Studio 中克隆 Python 代码存储库
 
 安装 [Visual Studio Tools for AI](installation.md) 后，就可以轻松地克隆 Python 代码存储库并从中创建项目。
