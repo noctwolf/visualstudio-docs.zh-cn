@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: msbuild, build order
+helpviewer_keywords:
+- msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-caps.latest.revision: "18"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7768d6ba35c2116c658dcd1b7968080932b99543
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fdf76debbaca82f9f60769ff5b5b166e40156c4c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="target-build-order"></a>目标生成顺序
 如果目标的输入取决于另一目标的输出，那么必须将目标排序。 可使用这些属性指定目标运行的顺序：  
@@ -71,7 +73,7 @@ ms.lasthandoff: 12/22/2017
  如果没有初始目标、默认目标或命令行目标，那么 MSBuild 会先运行项目文件中或任意导入的项目文件中出现的第一个目标。  
   
 ## <a name="target-dependencies"></a>目标依赖关系  
- 目标可描述相互依赖关系。 `DependsOnTargets` 属性表示目标依赖于其他目标。 例如，  
+ 目标可描述相互依赖关系。 `DependsOnTargets` 属性表示目标依赖于其他目标。 例如，应用于对象的  
   
 ```xml  
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />  

@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,22 +12,23 @@ helpviewer_keywords:
 - MSBuild, excluding files
 - wildcards, MSBuild
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
-caps.latest.revision: "16"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2148644e308e4e0c5a69d232082af2173f64ce8a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b11f292e27c192efcbd81376a79bcd67b0d08393
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>如何：将文件排除在生成过程外
 在项目文件中，可以使用通配符将所有文件包括在一个目录或一组嵌套目录中，以作为生成的输入。 但是，对于目录中的某个文件或嵌套目录中的某个目录，你可能并不希望将其作为生成的输入包括在内。 你可以从输入列表中显示排除该文件或目录。 有些时候，你只希望在特定情况下才包括项目中的某个文件。 那么你可以显式声明将文件包括在生成中的条件。  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>从生成的输入中排除文件或目录  
- 项列表是生成的输入文件。 要包括的项是使用 `Include` 属性单独或作为组声明的。 例如：  
+ 项列表是生成的输入文件。 要包括的项是使用 `Include` 属性单独或作为组声明的。 例如:  
   
 ```xml  
 <CSFile Include="Form1.cs"/>  

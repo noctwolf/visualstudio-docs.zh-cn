@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,16 +16,17 @@ helpviewer_keywords:
 - MSBuild, item metadata
 - MSBuild, well-known item metadata
 ms.assetid: b5e791b5-c68f-4978-ad8a-9247d03bb6c0
-caps.latest.revision: "12"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2f48162ed4c37358980c40b5c71c4f955880358
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 0a31e21ad45f03a3f72b49131f660988da71efee
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 常见的项元数据
 下表描述了创建每个项时分配给该项的元数据。 在每个示例中，以下项声明用于将文件 `C:\MyProject\Source\Program.cs` 包含在项目中。  

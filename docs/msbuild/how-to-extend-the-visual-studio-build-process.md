@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +13,17 @@ helpviewer_keywords:
 - MSBuild, extending Visual Studio builds
 - MSBuild, DependsOn properties
 ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bebac9ca310230fa0b5d63ce56a8caa6b524a145
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e9605bff5726de107019c9204c76e6e82b8d9f1
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：扩展 Visual Studio 生成过程
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程由导入到项目文件中的一系列 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 文件定义。 可扩展其中一个导入文件 Microsoft.Common.targets，以便在生成过程中的几个点上运行自定义任务。 本主题介绍两种可用于扩展 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程的方法：  
@@ -38,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  标识 Microsoft.Common.targets 中需要重写的预定义目标。 请参阅下表，了解可安全重写的目标的完整列表。  
   
-2.  在项目文件末尾（紧接在 `</Project>` 标记之前）定义一个或多个目标。 例如：  
+2.  在项目文件末尾（紧接在 `</Project>` 标记之前）定义一个或多个目标。 例如:  
   
     ```xml  
     <Project>  
@@ -87,7 +88,7 @@ ms.lasthandoff: 12/22/2017
 </PropertyGroup>  
 ```  
   
- 通过在项目文件末尾声明另一个名为 `BuildDependsOn` 的属性，可以重写此属性值。 通过在新属性中包括以前的 `BuildDependsOn` 属性，可以将新的目标添加到目标列表的开头和结尾。 例如：  
+ 通过在项目文件末尾声明另一个名为 `BuildDependsOn` 的属性，可以重写此属性值。 通过在新属性中包括以前的 `BuildDependsOn` 属性，可以将新的目标添加到目标列表的开头和结尾。 例如:  
   
 ```xml  
 <PropertyGroup>  
