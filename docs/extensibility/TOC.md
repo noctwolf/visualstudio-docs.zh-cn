@@ -189,7 +189,7 @@
 ## [如何：使用 Visual Studio 扩展的基于规则的 UI 上下文](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
 ## [如何：诊断扩展性能](how-to-diagnose-extension-performance.md)
 ## [VSPackages 故障排除](troubleshooting-vspackages.md)
-# [Shell（集成或独立）](shell/)
+# [Shell（集成或独立）](https://vspartner.com/pages/vsshells)
 # [传送 Visual Studio 扩展](shipping-visual-studio-extensions.md)
 ## [VSIX 项目模板](vsix-project-template.md)
 ## [VSIX 项目模板入门](getting-started-with-the-vsix-project-template.md)

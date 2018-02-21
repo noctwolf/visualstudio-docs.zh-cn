@@ -23,9 +23,8 @@
 ### 在网络上安装
 #### [创建基于网络的 Visual Studio 安装](install/create-a-network-installation-of-visual-studio.md)
 #### [更新基于网络的 Visual Studio 安装](install/update-a-network-installation-of-visual-studio.md)
-#### [在防火墙或代理服务器后安装 Visual Studio](install/install-visual-studio-behind-a-firewall-or-proxy-server.md)
-#### [更正代理授权错误](ide/reference/proxy-authorization-required.md)
-#### [将专用网络中的 URL 列入白名单](ide/whitelisting-urls-in-a-private-network.md)
+#### [在防火墙或代理服务器后安装和使用 Visual Studio](install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+##### [安装或使用 Visual Studio 时的网络错误疑难解答](install/troubleshooting-network-related-errors-in-visual-studio.md)
 ### 在企业中部署
 #### [通过响应文件自动执行 Visual Studio 安装](install/automated-installation-with-response-file.md)
 #### [在部署 Visual Studio 时自动应用产品密钥](install/automatically-apply-product-keys-when-deploying-visual-studio.md)
@@ -188,6 +187,7 @@
 ### [Office 和 SharePoint 开发](vsto/office-and-sharepoint-development-in-visual-studio.md)
 ### [使用 XML 和 XSLT 文件](xml-tools/xml-tools-in-visual-studio.md)
 ### 其他教程
+#### [使用 C# 或 Visual Basic 创建 WPF 应用](ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [教程 1：创建图片查看器 (C#)](ide/tutorial-1-create-a-picture-viewer.md)
 ##### [步骤 1：创建 Windows 窗体应用程序项目](ide/step-1-create-a-windows-forms-application-project.md)
 ##### [步骤 2：运行程序](ide/step-2-run-your-program.md)

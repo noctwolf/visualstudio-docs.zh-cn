@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 338ae08ee1f3e6a819a1faea7bd095c9acd8ecd2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/16/2018
 ---
 # <a name="how-to-resend-subscription-assignment-emails-from-within-volume-license-service-center-vlsc"></a>如何从批量许可服务中心 (VLSC) 重新发送订阅分配电子邮件
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 01/29/2018
 4.  单击“搜索”栏上的向下箭头。 
 5.  使用“电子邮件地址”字段搜索订阅者。
 6.  在搜索结果中找到订阅者，并单击姓氏。 
-7.  单击“编辑”。
+7.  单击“编辑” 。
 8.  对订阅进行编辑。 例如，从订阅者的电子邮件地址中删除字符。 单击“保存”按钮。
 9.  保存信息后，再次单击“编辑”，恢复刚刚所作的更改，然后单击“保存”。  
 
