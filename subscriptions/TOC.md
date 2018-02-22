@@ -1,48 +1,75 @@
-# [Visual Studio 订阅](index.md)
-# 概述
-## [比较订阅选项](compare-subscriptions.md)
-
-# 操作指南
-##  订阅者
-### [购买订阅](buy-vs-subscriptions.md)
-### [管理订阅](manage-vs-subscriptions.md)
-### [使用订阅者下载](subscriber-downloads.md)
-### [使用产品密钥](product-keys.md)
-### 如何激活权益
-#### 工具
-##### [Visual Studio IDE](vs-ide-benefit.md) 
-##### [Visual Studio Team Services](vs-vsts.md)
-##### [Microsoft Azure](vs-azure.md) 
-##### [Parasoft](vs-parasoft.md)
-##### [WhiteSource Bolt](vs-whitesource.md)
-##### [企业移动性 + 安全性](vs-ems.md)
-##### [Windows 开发人员帐户](vs-windows-dev.md)
-##### [Office 365 开发人员](vs-office-dev.md)
-##### [Power BI Pro](vs-pbi.md)
-##### [SmartOffice4TFS + ModernRequirements4TFS](vs-modernreq.md)
-##### [Microsoft Azure 即用即付](vs-azure-payg.md) 
-#### 教育
-##### [DataCamp](vs-datacamp.md)
-##### [LinkedIn 学习](vs-linkedin-learning.md)
-##### [Opsgility](vs-opsgility.md)
-##### [Pluralsight](vs-pluralsight.md)
-##### [Xamarin University 培训](vs-xamarin.md)
-##### [Microsoft E-learning](vs-elearn.md)
-##### [MSDN Magazine 订阅](vs-msdn.md)
-#### 支持
-##### [技术支持](vs-tech-support.md)
-
-## 管理员
-### [管理员概述](admin-responsibilities.md)
-### [访问管理员门户](access-admin-portal.md)
-### [使用管理员门户](using-admin-portal.md)
-### [分配订阅](assign-license.md)
-### [编辑订阅](edit-license.md)
-### [删除订阅](delete-license.md)
-### [搜索订阅](search-license.md)
-### [处理透支的订阅](handle-overclaimed-license.md)
-### [处理过期订阅](handle-expired-license.md)
-
+# [Visual Studio 订阅](index.md) 
+## 订阅者体验
+### [使用订阅者门户](using-the-subscriber-portal.md)
+#### [激活零售订阅](activate-store-subscriptions.md)
+#### [登录](signing-in.md)
+##### [使用别名登录](aliasing.md)
+#### [管理订阅](manage-vs-subscriptions.md)
+### [下载软件](subscriber-downloads.md)
+#### [可用软件下载列表](software-download-list.md)
+### [获取和管理产品密钥](product-keys.md)
+### Visual Studio Dev Essentials
+#### [加入 Visual Studio Dev Essentials](join-dev-essentials.md)
+#### [选择退出 Visual Studio Dev Essentials](leave-vsde.md)
+### [订阅者权益](subscriber-benefits.md)
+## 使用订阅者权益
+### 工具
+#### [Visual Studio IDE ](vs-ide-benefit.md) 
+#### [Visual Studio Team Services](vs-vsts.md)
+#### [Azure 信用额度](vs-azure.md) 
+#### [Visual Studio App Center](vs-visual-studio-app-center.md)
+#### [Parasoft ](vs-parasoft.md)
+#### [WhiteSource Bolt](vs-whitesource.md)
+#### [企业移动性和安全性](vs-ems.md)
+#### [Windows 开发人员帐户](vs-windows-dev.md)
+#### [Office 365 开发人员订阅](vs-office-dev.md)
+#### [Power BI Pro ](vs-pbi.md)
+#### [Modern Requirements4TFS](vs-modernreq.md)
+#### [Azure 即用即付](vs-azure-payg.md)
+### 专业开发
+#### [LinkedIn 学习](vs-linkedin-learning.md)
+#### [DataCamp](vs-datacamp.md)
+#### [Opsgility](vs-opsgility.md)
+#### [Pluralsight](vs-pluralsight.md)
+#### [Xamarin University 培训](vs-xamarin.md)
+#### [Microsoft E-Learning](vs-elearn.md)
+#### [MSDN Magazine 订阅](vs-msdn.md)
+### 支持权益
+#### [Azure 顾问聊天](vs-azure-advisory-chat.md)
+#### [Azure 社区](vs-azure-community.md)
+#### [技术支持](vs-tech-support.md)
+#### [论坛优先支持](vs-priority-support.md)
+#### [接待支持](vs-concierge-chat.md)
+## 管理订阅
+### 概述
+#### [了解订阅管理](subscription-management-info.md)
+#### [管理员职责](admin-responsibilities.md)
+#### [管理管理员](managing-admins.md)
+#### [访问门户](access-admin-portal.md)
+#### 加入组织
+##### [查找你的 PCN](find-pcn.md)
+##### [管理多个 PCN](multiple-pcns.md)
+##### [查找你的主要联系人](find-primary-contact.md)
+##### [查找订阅 ID](find-subscription-id.md)
+### 使用管理门户
+#### [分配订阅](assign-license.md)
+#### [重新发送分配电子邮件](resend-assignment-email.md)
+#### [编辑订阅](edit-license.md)
+#### [删除订阅](delete-license.md)
+#### [搜索订阅](search-license.md)
+#### [过度分配](handle-overclaimed-license.md)
+#### [过期订阅](handle-expired-license.md)
+#### [使用个人电子邮件登录的订阅者](personal-email-sign-ins.md)
+## 获取 Visual Studio 订阅
+### [比较订阅](compare-subscriptions.md)
+### 购买云订阅
+#### [概述](vscloud-overview.md)
+#### [首次购买](vscloud-first-purchase.md)
+#### [续订](vscloud-renewals.md)
+#### [购买更多](vscloud-buy-more.md)
+#### [取消](vscloud-cancel.md)
 ## 资源
-### [使用条款](vs-license-terms.md)
-### [订阅支持](https://www.visualstudio.com/subscriptions/support/)
+### [Visual Studio 许可条款](vs-license-terms.md)
+### [Visual Studio 许可白皮书](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
+### [比较订阅选项和定价](https://www.visualstudio.com/vs/pricing)
+### [比较 Visual Studio IDE 功能](https://www.visualstudio.com/vs/compare)
