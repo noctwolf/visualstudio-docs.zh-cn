@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 762b56336fa790d57ffa38510aa319e744b5959c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7e5fd1c6f2e2d33fe3841923f1b25728ad002f6e
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
@@ -52,9 +52,9 @@ R 是用于统计计算和图形的高度可扩展语言和环境。 它是使�
 
 另请参阅[常见问题](faq.md)。
 
-下面的视频也简要概览了 R 工具功能（5 分 48 秒）：
-
-> [!VIDEO https://www.youtube.com/embed/RcSDEfMgUvU]
+|   |   |
+|---|---|
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | [观看视频 (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ)，获取有关用于 Visual Studio 的 R 工具的概述（12 分 36 秒）。 另请参阅[更多 R 工具视频](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio)。 |
 
 ## <a name="send-us-your-feedback"></a>向我们发送反馈！
 
