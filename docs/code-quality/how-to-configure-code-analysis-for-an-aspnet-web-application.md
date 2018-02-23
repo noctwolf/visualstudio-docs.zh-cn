@@ -15,17 +15,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3d8d9b544b8cb4489ebfdfda8c6a237cb73c118f
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: 0f2aaf85128bd34f4e80a7b29763506b17d77911
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>如何：为 ASP.NET Web 应用程序配置代码分析
 
 在 Visual Studio 中，可以从列表中选择的代码分析*规则集*要应用于[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]Web 应用程序。 默认规则集是 Microsoft 最少量建议规则。 你可以选择另一个规则集以将应用于 Web 站点。
-
-## <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>为 ASP.NET 页框架项目配置规则集÷
 
 1. 选择中的 Web 站点**解决方案资源管理器**。
 
