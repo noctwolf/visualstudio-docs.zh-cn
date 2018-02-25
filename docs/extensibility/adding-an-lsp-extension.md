@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5124547737405af8309161df90356f607909c0fa
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>添加语言服务器协议扩展
 
@@ -136,7 +136,7 @@ LSP 不包括有关如何提供语言的文本着色的规范。 若要提供自
 
 1. 创建一个名为在你的扩展"语法"文件夹 （也可以是你选择的任何名称）。
 
-2. "语法"文件夹中，包括你想要提供自定义着色任何 *.tmlanguage 或 *.tmtheme 文件。
+2. "语法"文件夹中，包括任何 *.tmlanguage、 *.plist、 *.tmtheme 或你想要提供自定义着色 *.json 文件。
 
 3. 右键单击文件并选择**属性**。 更改对指定的生成操作**内容**和**包括在 VSIX 中的**属性为 true。
 
