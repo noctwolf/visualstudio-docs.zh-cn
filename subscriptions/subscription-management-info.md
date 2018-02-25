@@ -9,11 +9,11 @@ Description: Find More Information About Subscription Management?
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: ed2b39a7660f7e4307c142b801ba8d43014c4726
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: eca3bbc4c906639e1946776b17537480b816c32f
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="where-can-i-find-more-information-about-subscription-management"></a>在哪里可以找到有关订阅管理的详细信息？
 
@@ -21,5 +21,5 @@ ms.lasthandoff: 01/29/2018
 
 因为提供了不同的购买渠道，所以对于订阅管理员来说，必须了解其获取订阅的方式，以便使用相应的权限和用户指南。 
 
-Visual Studio 订阅团队最近创建了“Visual Studio [订阅管理门户](https://www.visualstudio.com/subscriptions-administration/)”。  此门户旨在帮助订阅管理员快速了解他们必须分配的工具和功能，以及在其组织中管理订阅。 
+Visual Studio 订阅团队创建了“Visual Studio [订阅管理门户](https://www.visualstudio.com/subscriptions-administration/)”。  此门户旨在帮助订阅管理员快速了解他们必须分配的工具和功能，以及在其组织中管理订阅。 
 

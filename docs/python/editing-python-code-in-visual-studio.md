@@ -2,7 +2,7 @@
 title: "在 Visual Studio 中编辑 Python 代码 | Microsoft Docs"
 description: "在 Visual Studio 中编辑 Python 提供 IntelliSense、代码片段和导航功能，以及格式设置、linting 和重构。"
 ms.custom: 
-ms.date: 07/10/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,21 +17,21 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2bbf7169e7d60d5dac1119f543cbcfe61e922ff
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 375508647c7a192b7b3869c4faaf80b8df2d0a4a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="editing-python-code"></a>编辑 Python 代码
 
-开发人员需要花费大量时间埋头于代码编辑器，因此可借助 [Visual Studio 中的 Python 的支持](installing-python-support-in-visual-studio.md)中的功能来提高工作效率。 这些功能包括 IntelliSense 语法突出显示、自动完成、签名帮助、方法重写、搜索和导航。 
+开发人员需要花费大量时间埋头于代码编辑器，因此可借助 [Visual Studio 中的 Python 的支持](installing-python-support-in-visual-studio.md)中的功能来提高工作效率。 这些功能包括 IntelliSense 语法突出显示、自动完成、签名帮助、方法重写、搜索和导航。
 
 编辑器还集成了 Visual Studio 中的交互式窗口，便于在两者之间交换代码。 请参阅[教程步骤 3：使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用交互窗口：将代码发送到交互命令](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command)了解详细信息。
 
-有关如何编辑 Python 代码的介绍，请观看[编辑 Python 代码](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)（Microsoft Virtual Academy，2 分 30 秒）：
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
+|   |   |
+|---|---|
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关编辑 Python 代码的演示，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567)（2 分 30 秒）。|
 
 有关在 Visual Studio 中编辑代码的常规文档，请参阅[在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)。 另请参阅 [Visual Studio 中的大纲显示](../ide/outlining.md)，方便你将重点放在代码的特定部分。
 

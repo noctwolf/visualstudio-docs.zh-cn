@@ -2,7 +2,7 @@
 title: "在 Visual Studio 中管理 Python 应用程序的项目 | Microsoft Docs"
 description: "介绍了 Visual Studio 中项目的用途，并展示了如何创建和管理 Python 代码项目，并概述了可用于 Python 的不同项目模板。"
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9f1cc2abdc78da1279367432741ca30b5885335
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="python-projects"></a>Python 项目
 
@@ -40,11 +40,10 @@ Visual Studio 提供多种 Python 项目模板用于快速设置多个应用程�
 >
 > 如[根据现有文件创建项目](#creating-a-project-from-existing-files)中所述，根据现有代码创建 Visual Studio 项目非常简单。
 
-有关 Visual Studio 中 Python 项目的介绍，请观看视频[获取 Python 代码](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567)（Microsoft Virtual Academy，2 分 17 秒）。
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567]
-
-还可以观看以前的视频 [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM)（深入了解：使用 Python 项目的源控件，youtube.com，8 分 55 秒）。
+|   |   |
+|---|---|
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关 Python 项目的介绍，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567)（2 分 17 秒）。 |
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 另请参阅[深入了解：使用 Python 项目的源控件](https://youtu.be/Aq8eqApnugM)（youtube.com，8 分 55 秒）。 |
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>添加文件、分配启动文件和设置环境
 

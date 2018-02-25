@@ -18,17 +18,20 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 150f4b1c7e151e0b5d6f802ae40f4b5cf6943937
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="debugging-python-and-c-together"></a>一起调试 Python 和 C++
 
 大多数常规 Python 调试器支持仅调试 Python 代码。 但是，实际上，Python 结合 C 或 C++ 一起使用时需要高性能或直接调用平台 API 的能力。 （有关演练，请参阅[创建适用于 Python 的 C++ 扩展](working-with-c-cpp-python-in-visual-studio.md)。）
 
 Visual Studio 为 Python 和本机 C/C++ 提供集成的同步混合模式调试，前提是为 Visual Studio 安装程序中的 Python 开发工作负载选择“Python 本机开发工具”选项。
+
+> [!Note]
+> 在 Visual Studio 2015 和更高版本中，针对 Visual Studio 1.x 的 Python 工具不提供混合模式调试。
 
 如本文所述，混合模式调试功能包括以下内容：
 
@@ -40,12 +43,9 @@ Visual Studio 为 Python 和本机 C/C++ 提供集成的同步混合模式调试
 
 ![混合模式调试](media/mixed-mode-debugging.png)
 
-有关使用 Visual Studio 生成、测试和调试本机 C 模块的视频介绍，请参阅[深入了解：创建本机模块](https://youtu.be/D9RlT06a1EI)（youtube.com，9 分 9 秒）。 该视频适用于 Visual Studio 2015 和 2017。
-
-> [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
-
-> [!Note]
-> 针对 Visual Studio 1.x 的 Python 工具不提供混合模式调试。
+|   |   |
+|---|---|
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关使用 Visual Studio 生成、测试和调试本机 C 模块的介绍，请参阅[深入了解：创建本机模块](https://youtu.be/D9RlT06a1EI)（youtube.com，9 分 09 秒）。 该视频适用于 Visual Studio 2015 和 2017。 |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>在 Python 项目中启用混合模式调试
 

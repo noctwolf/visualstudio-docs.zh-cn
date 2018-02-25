@@ -9,11 +9,11 @@ Description: Learn how to activate the Azure benefit included in your Visual Stu
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7354f96a441faa587e2f669ee39defcf3ced1ff6
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: a0587e063aa73666a0e97460b8d92f4614b3b116
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 
@@ -68,11 +68,16 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 ![Azure 仪表板](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>FAQ
-*单击此处了解更新*
+### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>问：如何从 Azure 门户提交技术支持事件？
+答：从 Azure 门户提交支持事件是一个三步过程。
+1. 激活技术支持权益，并获取合同 ID 访问 ID。
+2. 将支持合同链接到 Azure 订阅。 
+3. 提交支持事件。
+有关完整详细信息，请访问[技术支持](/visualstudio/subscriptions/vs-tech-support)文档。 
 
 ## <a name="support-resources"></a>支持资源
 -  需要与 Azure 有关的帮助？  请参阅下列资源：
-    - 技术支持：https://azure.microsoft.com/support/options/ 
-    - [文档](/azure/)
+    - 技术支持：[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+    - [Azure 文档](/visualstudio/azure/)
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://www.visualstudio.com/subscriptions/support/)联系。
 -  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://www.visualstudio.com/support/)。 

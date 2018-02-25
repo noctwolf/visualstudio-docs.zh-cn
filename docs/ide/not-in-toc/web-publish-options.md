@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # 哪些发布选项适合我？
 
@@ -50,6 +50,8 @@ ms.lasthandoff: 01/29/2018
 - 不需要在托管 Web 应用程序的服务器上进行任何计算机级别的自定义设置。
 
 > 如果想在自己的数据中心或其他本地计算机中使用 Azure 应用服务，可以使用 [Azure 堆栈](https://azure.microsoft.com/overview/azure-stack/)来实现。
+
+有关发布 ASP.NET Core 应用的详细信息，请参阅[使用 Visual Studio 将 ASP.NET Core Web 应用发布到 Azure App Service](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 
 ## Azure 虚拟机
 
@@ -83,7 +85,7 @@ ms.lasthandoff: 01/29/2018
 - 仅需要本地测试部署。
 - 在将应用程序文件发送到另一个部署目标之前，想单独对文件进行检查并在必要时进行修改。
 
-
+有关部署 .NET Core 应用的详细信息，请参阅[使用 Visual Studio 部署 .NET Core 应用](/dotnet/core/deploying/deploy-with-vs)。
 
 ## 自定义目标
 
@@ -103,3 +105,5 @@ ms.lasthandoff: 01/29/2018
 - 在除 Azure 以外的可通过 URL 访问的提供程序上使用云服务。
 - 希望用来进行部署的凭据不是在 Visual Studio 中所用的凭据或直接与 Azure 帐户相关联的凭据。
 - 希望在每次部署时从目标中删除文件。
+
+有关发布到 IIS 的详细信息，请参阅[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) 和[在远程 IIS 计算机上远程调试 ASP.NET](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。

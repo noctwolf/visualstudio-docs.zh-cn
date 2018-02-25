@@ -2,7 +2,7 @@
 title: "在 Visual Studio 中安装 Python 支持 | Microsoft Docs"
 description: "详细介绍了如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安装针对 Visual Studio 的 Python 工具 (PTVS)，包括选项和安装位置。"
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd0ef5cba2924c33857a8366105bde1f933a1ae9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 32a8e6413fd719bfa4be6296972d39d609eab411
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. 下载并运行最新 Visual Studio 2017 安装程序。 必须安装版本 15.2 及更高版本，才能使用 Python。
+1. 下载并运行最新 Visual Studio 2017 安装程序。 如果已安装 Visual Studio，请运行 Visual Studio 安装程序，并跳到步骤 2。
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">安装 Visual Studio 2017 Community</a>
@@ -55,7 +55,10 @@ ms.lasthandoff: 02/09/2018
 
     ![Visual Studio 安装程序中的 Python 开发工作负载](media/installation-python-workload.png)
 
-    可选：如果使用数据科学，还请考虑使用“数据科学和分析应用程序”工作负载（Visual Studio 2017 15.2 及更高版本）。 此工作负载包含对 Python 以及 R 和 F# 语言的支持。 有关详细信息，请参阅[数据科学和分析应用程序工作负载](../rtvs/data-science-workload.md)。
+    可选：如果使用数据科学，还可考虑使用**数据科学和分析应用程序**工作负载。 此工作负载包含对 Python 以及 R 和 F# 语言的支持。 有关详细信息，请参阅[数据科学和分析应用程序工作负载](../rtvs/data-science-and-analytical-applications-workload.md)。
+
+    > [!Note]
+    > Python 和数据科学工作负载仅可用于 Visual Studio 2017 版本 15.2 及更高版本。
 
 1. 如果需要，选择安装程序右侧的其他选项。 跳过此步骤，接受默认选项。
 
@@ -63,7 +66,7 @@ ms.lasthandoff: 02/09/2018
 
     | 选项 | 描述 |
     | --- | --- |
-    | Python 分发版本 | 选择计划使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 分发版本的 32 位和 64 位变型的任意组合。 每个组合都包含分发版本的解释器、运行时和库。 具体来说，Anaconda 是开放数据科学平台，包含各种预安装的包。 （可随时返回 Visual Studio 安装程序来添加或删除分发版本。） |
+    | Python 分发版本 | 选择计划使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 分发版本的 32 位和 64 位变型的任意组合。 每个组合都包含分发版本的解释器、运行时和库。 具体来说，Anaconda 是开放数据科学平台，包含各种预安装的包。 （可随时返回 Visual Studio 安装程序来添加或删除分发版本。）注意：如果已安装 Visual Studio 安装程序之外的分发版本，则无需检查此处的等效选项。 Visual Studio 会自动检测现有的 Python 安装。 请参阅 [Python 环境](managing-python-environments-in-visual-studio.md)。 |
     | Cookiecutter 模板支持 | 安装 Cookiecutter 图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 请参阅[使用 Cookiecutter 扩展](using-python-cookiecutter-templates.md)。 |
     | Python Web 支持 | 安装用于 Web 开发的工具（包括 HTML、CSS 和 JavaScript 编辑支持）以及用于使用 Bottle、Flask 和 Django 框架的项目的模板。 请参阅 [Python Web 项目模板](python-web-application-project-templates.md)。 |
     | Python IoT 支持 | 支持使用 Python 开发 Windows IoT Core。 |
@@ -74,7 +77,9 @@ ms.lasthandoff: 02/09/2018
 
     ![通过安装程序启动、修改或卸载 Visual Studio](media/installation-vs-launch.png)
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关在 Visual Studio 中安装 Python 支持，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567)。|
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 

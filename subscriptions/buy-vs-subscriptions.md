@@ -9,11 +9,11 @@ Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 73d0f1c5016a9ea908d7d280575e297357ba78ba
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 9564af525d0c801e311e42bc9ebe93bb16166147
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-buy-a-subscription"></a>如何购买订阅
 有两种主要类型的 Visual Studio 订阅，云订阅和标准订阅，[Visual Studio 定价页面](https://www.visualstudio.com/vs/pricing/)介绍了这些订阅。
@@ -26,13 +26,14 @@ ms.lasthandoff: 01/29/2018
 ## <a name="buy-visual-studio-standard-subscriptions"></a>购买 Visual Studio Standard 订阅
 需要联系软件经销商，购买标准 Visual Studio 订阅，或在线访问 [Microsoft 应用商店](https://www.microsoft.com/store)。
 
-*   若要注册 Azure 订阅，并从 Visual Studio Marketplace 进行购买，需要有“个人”[Microsoft 帐户](https://www.microsoft.com/account)或[“工作或学校帐户”](/azure/active-directory/sign-up-organization)（如果为组织购买），这些帐户使用 Azure Active Directory (Azure AD) 管理身份。
+
+
+### <a name="buy-visual-studio-cloud-subscriptions"></a>购买 Visual Studio 云订阅
+
+若要注册 Azure 订阅，并从 Visual Studio Marketplace 进行购买，需要有“个人”[Microsoft 帐户](https://www.microsoft.com/account)或[“工作或学校帐户”](/azure/active-directory/sign-up-organization)（如果为组织购买），这些帐户使用 Azure Active Directory (Azure AD) 管理身份。
 
 > [!WARNING]
 > 如果使用 Azure 订阅购买 Visual Studio 云订阅，则这些费用将显示为超额部分，且不会计入你的 Azure 货币承诺。 请在[常见问题解答](/vsts/billing/faq-azure-billing)中了解有关 Azure 计费的详细信息。  
-
-### <a name="buy-subscriptions"></a>购买订阅
-
 
 1.  登录到[“Visual Studio Marketplace”>“订阅”](https://marketplace.visualstudio.com/subscriptions)。
 

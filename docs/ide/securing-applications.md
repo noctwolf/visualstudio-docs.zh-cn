@@ -1,30 +1,29 @@
 ---
-title: "保证应用程序的安全 | Microsoft Docs"
+title: "在 Visual Studio 中保护应用程序 | Microsoft 文档"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - security [Visual Studio], applications
 - application design, securability
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
-caps.latest.revision: 
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a95521c2ce49e5dfd00863ead6f0f878547f56ec
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 4fcc188195a084169813d67a7d2e8680beab1f08
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="securing-applications"></a>保证应用程序的安全
+# <a name="securing-applications"></a>保护应用程序
+
 虽然大部分应用程序会面临共同的安全挑战，不过每个应用程序域都具有自己的安全挑战。  
   
 ## <a name="general-security-considerations"></a>一般安全注意事项  
@@ -66,5 +65,6 @@ ms.lasthandoff: 02/01/2018
  [Windows 窗体安全](/dotnet/framework/winforms/windows-forms-security)  
  提供 Windows 窗体安全实现的概述。  
   
-## <a name="see-also"></a>请参阅  
- [安全性](../ide/security-in-visual-studio.md)
+## <a name="see-also"></a>请参阅
+
+- [安全性](../ide/security-in-visual-studio.md)

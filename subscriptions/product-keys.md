@@ -9,11 +9,11 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 订阅中的产品密钥
 
@@ -72,15 +72,15 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 |    DreamSpark MAK 密钥         |    这些是面向 DreamSpark 计划消费者的 MAK 密钥。                                                                                                                                                                                                  |
 |
 
-可从产品的下载页索取密钥，或者在[“产品密钥”](https://my.visualstudio.com/productkeys)页上搜索所需的密钥。 
+可从产品的下载页索取密钥，或者在“[产品密钥](https://my.visualstudio.com/productkeys)”页上搜索所需的密钥。 
 
 ### <a name="claiming-product-keys"></a>索取产品密钥
-只有拥有活动订阅的订阅者才可下载产品和索取产品密钥。  当订阅处于活动状态时，可从[“产品密钥”](https://my.visualstudio.com/productkeys)页导出索取的密钥。  
+只有拥有活动订阅的订阅者才可下载产品和索取产品密钥。  当订阅处于活动状态时，可从“[产品密钥](https://my.visualstudio.com/productkeys)”页导出索取的密钥。  
 
 
 索取产品密钥：
 1.  登录到你的 Visual Studio 订阅。  必须登录才能下载产品或索取产品密码。 
-2.  单击[“产品密钥”](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)选项卡。
+2.  单击“[产品密钥](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)”选项卡。
 3.  产品密钥根据产品名称按字母顺序列出。  可以向下滚动到所需产品的名称，也可以使用页面顶部的搜索栏进行搜索。  
 ![搜索产品密钥](_img\product-keys\visio-product-key-cropped.png)
 
@@ -90,7 +90,8 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 ### <a name="exporting-your-claimed-keys"></a>导出已索取的密钥
 可以导出所有已索取的密钥以及众多自动标记为“已索取”的静态密钥和其他密钥的列表。  
 
-重要提示：如果订阅到期，则无法索取新的密钥或导出已索取的密钥。 
+> [!IMPORTANT] 
+> 如果订阅到期，则无法索取新的密钥或导出已索取的密钥。** 
 
 若要导出密钥，只需单击“产品密钥”页最右侧的“导出所有密钥”链接。  此时将创建名为 KeysExport.xml 的 .xml 文件，可选择打开或保存该文件。  你需要使用能够处理 .xml 文件的应用程序来打开此文件。  例如，可以将该文件作为 Excel 中的只读工作簿打开。  
 
@@ -100,7 +101,7 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 除了开发/测试权限，Visual Studio 订阅者可以根据需要使用许多 RDS 或 TS 连接。
 
 ### <a name="enabling-rds-access"></a>启用 RDS 访问 
-Visual Studio 订阅者可以输入[订阅门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)的[“产品密钥”](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)选项卡中的产品密钥，增加可通过 RDS 访问 Windows Server 的用户数量。 若要获得产品密钥，请连接到“产品密钥”页，然后向下滚动到正在运行的 Windows Server 版本。 找到“Windows Server <版本> R2 远程桌面服务 <用户或设备> 连接”，然后单击“索取密钥”链接。 例如，如果是在 Windows Server 2012 R2 上使用 RDS，且部署使用用户 CAL，请选择“Windows Server 2012 远程桌面服务用户连接(50)”。
+Visual Studio 订阅者可以输入[订阅门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)的“[产品密钥](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)”选项卡中的产品密钥，增加可通过 RDS 访问 Windows Server 的用户数量。 若要获得产品密钥，请连接到“产品密钥”页，然后向下滚动到正在运行的 Windows Server 版本。 找到“Windows Server <版本> R2 远程桌面服务 <用户或设备> 连接”，然后单击“索取密钥”链接。 例如，如果是在 Windows Server 2012 R2 上使用 RDS，且部署使用用户 CAL，请选择“Windows Server 2012 远程桌面服务用户连接(50)”。
 每种类型的 5 个密钥都支持 Windows Server 2008 R2，每个密钥支持 20 个连接。 对于 Windows Server 2012 R2，每种类型提供 4 个密钥，每个密钥支持 50 个连接。 
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>在 Windows Server 中启用其他连接： 

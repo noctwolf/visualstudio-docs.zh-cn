@@ -1,5 +1,5 @@
 ---
-title: "维护安全性 | Microsoft Docs"
+title: "维护应用安全性 | Microsoft 文档"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,18 +15,19 @@ helpviewer_keywords:
 - MBSA (Microsoft Baseline Security Analyzer)
 - security [.NET Framework], maintaining after deployment
 ms.assetid: 621d10c1-842b-4902-be60-bb9719591751
-caps.latest.revision: "18"
-author: TerryGLee
-ms.author: tglee
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 01c2867c60a3aa7b00462503da08bda0a8ac80fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3f4b3e958cbf02f09d850ed9c50fb3e248617398
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="maintaining-security"></a>维护安全性
+
 常言道安全靠常抓不懈。 尽管你在应用程序的设计和开发过程中非常专注于安全性，还是应当假设在部署之后会出现安全漏洞。 通过严格检查应用程序和分析事件日志，你可能会发现一些以前隐蔽起来的漏洞。  
   
  此外，你不仅必须对自己的应用程序保持警惕，还必须随时了解运行应用程序的平台以及应用程序所依赖的其他产品的安全威胁和漏洞。  

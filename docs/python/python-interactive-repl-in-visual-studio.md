@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 995c3d8512c3df9bf2cc40fe962106a95f9d6268
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e41e4af21a524215550c581b1e29efc2261aaa8f
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>使用 Python 交互窗口
 
@@ -40,9 +40,11 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 
 本主题介绍**标准** REPL 模式和**调试** REPL 模式。 有关 IPython 模式的详细信息，请参阅[使用 IPython REPL](interactive-repl-ipython.md)。
 
-有关包含示例的详细演练，包括与编辑器的交互（如 Ctrl+Enter），请参阅[教程步骤 3：使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。 有关视频介绍，请观看 [Python 交互窗口](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)（Microsoft Virtual Academy，2 分 22 秒）。
+有关包含示例的详细演练，包括与编辑器的交互（如 Ctrl+Enter），请参阅[教程步骤 3：使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。 
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
+|   |   |
+|---|---|
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关交互窗口的信息，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567)（2 分 22 秒）。|
 
 ## <a name="opening-an-interactive-window"></a>打开交互窗口
 

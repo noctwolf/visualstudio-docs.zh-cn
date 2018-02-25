@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a73226de18ea2003890c2923641ae65318dbfc1f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Visual Studio 的键盘提示
 
@@ -84,8 +84,8 @@ ms.lasthandoff: 01/29/2018
 |块选择|按住 Alt 并拖动鼠标，Shift+Alt+方向键||
 |上移/下移行|Alt+向上键/Alt+向下键||
 |复制行|Ctrl+E、V|Visual Studio 2017 版本 15.6 预览版 2|
-|展开选定内容|Ctrl+W|Visual Studio 2017 版本 15.5|
-|合拢选定内容|Ctrl+Shift+W|Visual Studio 2017 版本 15.5|
+|展开选定内容|Shift+Alt+=|Visual Studio 2017 版本 15.5|
+|合拢选定内容|Shift+Alt+-|Visual Studio 2017 版本 15.5|
 |转到定义|F12||
 |查看定义|Alt+F12||
 |转到定义堆栈|Ctrl+Shift+8（后退），Ctrl+Shift+7（前进）||
@@ -125,9 +125,9 @@ ms.lasthandoff: 01/29/2018
 
 ## <a name="see-also"></a>请参阅
 
-[键盘快捷方式（VSTS 和 TFS）](/vsts/collaborate/keyboard-shortcuts)  
-[Visual Studio 博客](http://blogs.msdn.com/b/visualstudio)  
-[Visual Studio 提示和技巧博客](http://blogs.msdn.com/b/zainnab)  
-[Channel 9 上的 Visual Studio 工具箱](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
-[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
-[Visual Studio 连接 bug](http://connect.microsoft.com/VisualStudio)
+- [键盘快捷方式（VSTS 和 TFS）](/vsts/collaborate/keyboard-shortcuts)
+- [Visual Studio 博客](http://blogs.msdn.com/b/visualstudio)
+- [Visual Studio 提示和技巧博客](http://blogs.msdn.com/b/zainnab)
+- [Channel 9 上的 Visual Studio 工具箱](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
+- [Visual Studio 连接 bug](http://connect.microsoft.com/VisualStudio)

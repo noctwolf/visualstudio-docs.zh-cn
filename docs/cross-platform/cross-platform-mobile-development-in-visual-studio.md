@@ -14,37 +14,25 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f047b143a7d0955d8ac3e2708098a903c73da59
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dfdd5aee71c74febbeca0b7c9683aaa6be915e6e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
+
 可使用 Visual Studio 生成适用于 Android、iOS 和 Windows 设备的应用。  设计应用时，可使用 Visual Studio 中的工具轻松添加连接的服务（如 Office 365、Azure App Service 和 Application Insights）。
 
- 使用 C# 和 .NET Framework、HTML 和 JavaScript 或者 C++ 生成应用。 还可共享代码、字符串和图像，某些情况下甚至可共享用户界面。
+使用 C# 和 .NET Framework、HTML 和 JavaScript 或者 C++ 生成应用。 还可共享代码、字符串和图像，某些情况下甚至可共享用户界面。
 
- 如果想要构建一款游戏或沉浸式图形应用，请安装 Visual Studio tools for Unity，借助 Unity 尽享 Visual Studio 中所有强大的生产力功能。Unity 是一款热门的跨平台游戏/图形引擎和开发环境，主要针对在 iOS、Android、Windows 和其他平台上运行的应用。
+如果想要构建一款游戏或沉浸式图形应用，请安装 Visual Studio tools for Unity，借助 Unity 尽享 Visual Studio 中所有强大的生产力功能。Unity 是一款热门的跨平台游戏/图形引擎和开发环境，主要针对在 iOS、Android、Windows 和其他平台上运行的应用。
 
- **本文内容：**
+## <a name="build-an-app-for-android-ios-and-windows-net-framework"></a>构建面向 Android、iOS 和 Windows 的应用 (.NET Framework)
 
--   [构建面向 Android、iOS 和 Windows 的应用 (.NET Framework)](#NET)
+![设备](../cross-platform/media/homedevices.png "家庭设备")
 
-    -   [通过单个基本代码面向 Android、iOS 和 Windows](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
-
-    -   [面向 Windows 10 设备](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
-
--   [构建面向 Android、iOS 和 Windows 的应用 (HTML/JavaScript)](#HTML)
-
--   [构建面向 Android 和 Windows 的应用 (C++)](#CPP)
-
--   [使用 Visual Studio Tools for Unity 构建面向 Android、iOS 和 Windows 的跨平台游戏](#Unity)
-
-##  <a name="NET"></a>构建面向 Android、iOS 和 Windows 的应用 (.NET Framework)
- ![设备](../cross-platform/media/homedevices.png "家庭设备")
-
- 借助 Xamarin，可在同一解决方案中面向 Android、iOS 和 Windows，进而共享代码甚至 UI。
+借助 Xamarin，可在同一解决方案中面向 Android、iOS 和 Windows，进而共享代码甚至 UI。
 
 |**了解详细信息**|
 |--------------------|

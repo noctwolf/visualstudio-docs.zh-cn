@@ -1,5 +1,5 @@
 ---
-title: "演练：我的第一个 WPF 桌面应用程序 | Microsoft Docs"
+title: "演练：我的第一个 WPF 桌面应用程序 | Microsoft 文档"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 71f0837bbc488518204e8b9336339c2d01c21600
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: c668d454cb4584cbaaa345c0ca00e286526c6aae
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>演练：我的第一个 WPF 桌面应用程序
 
@@ -33,13 +33,13 @@ ms.lasthandoff: 01/25/2018
 
 1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-1. 在“新建项目” 对话框框中，展开“Visual C#”或“Visual Basic”节点，再选择“Windows”节点，然后展开“Windows”节点并选择“经典桌面”节点。
+1. 在“新建项目”对话框框中，展开“Visual C#”或“Visual Basic”节点，再选择“Windows”节点，然后展开“Windows”节点并选择“经典桌面”节点。
 
 1. 在模板列表中，选择“WPF 应用程序”模板。
 
 1. 在“新建项目”文本框中，键入 `ExpenseIt`，然后选择“确定”按钮。
 
-    创建项目并且已将项目文件添加到“解决方案资源管理器”后，将显示名为 **MainWindow.xaml** 的默认应用程序窗口的设计器。
+    创建项目并且已将项目文件添加到“解决方案资源管理器” 后，将显示名为 **MainWindow.xaml** 的默认应用程序窗口的设计器。
 
 ### <a name="to-modify-the-main-window"></a>若要修改主窗口
 
@@ -58,9 +58,9 @@ ms.lasthandoff: 01/25/2018
   
      NavigationWindow 无法包含“网格”等其他 UI 元素。
 
-1. 在“新建项目” 窗口中，展开“常用”**Common**类别节点，然后选择“标题” 属性，再输入 `ExpenseIt` 并按“Enter”键。
+1. 在“新建项目”窗口中，展开“常用”类别节点，然后选择“标题”属性，再输入 `ExpenseIt` 并按“Enter”键。
   
-     请注意，XAML 窗口中的“标题”元素会更改以匹配新值。 可以修改 XAML 窗口或“属性”窗口中的 XAML 属性且更改会同步。
+     请注意，XAML 窗口中的“Title”属性会更改以匹配新值。 可以修改 XAML 窗口或“属性”窗口中的 XAML 属性且更改会同步。
 
 1. 在 XAML 窗口中，将“高度”元素的值设置为 `375`，并将“宽度”属性的值设置为 `500`。
   
@@ -116,7 +116,7 @@ ms.lasthandoff: 01/25/2018
 
 1. 在设计器中，选择“ExpenseItHome.xaml”选项卡（如果它还不是活动的设计器选项卡）。
 
-1. 选择 `<Title>` 元素并将标题更改为“ExpenseIt – Home”。
+1. 选择 `Title` 属性，并将其值更改为“ExpenseIt - 主页”。
   
      你的 **ExpenseItHome.xaml** 文件在 C# 中现应如下所示：  
   
@@ -142,7 +142,7 @@ ms.lasthandoff: 01/25/2018
     <Page x:Class="ExpenseItHome"  
     ```  
 
-1. 在设计器中，选择“MainWindow.xaml”选项卡。
+1. 在设计器中，选择“MainWindow.xaml”  选项卡。
 
 1. 查找行 `Title="ExpenseIt" Height="375" Width="500">` 元素并添加 `Source="ExpenseItHome.xaml"` 属性。
   
@@ -178,7 +178,7 @@ ms.lasthandoff: 01/25/2018
 
 1. 在设计器中，选择“ExpenseReportPage.xaml”选项卡（如果还不是活动的设计器选项卡）。
 
-1. 选择 `<Title>` 元素并将标题更改为“ExpenseIt – View Expense”。
+1. 选择 `Title` 属性，并将其值更改为“ExpenseIt - 查看费用”。
   
      你的 ExpenseReportPage.xaml 文件在 C# 中现应如下所示：  
   
@@ -218,7 +218,7 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="to-create-the-layout"></a>若要创建布局
 
-1. 打开“ExpenseItHome.xaml” ，并选择 `<Grid>` 元素。
+1. 打开“ExpenseItHome.xaml”，并选择 `<Grid>` 元素。
 
 1. 在“属性”窗口中，展开“布局”类别节点并将“边距”值设置为 `10`（左边距）、`10`（右边距）、`0`（上边距）和 `10`（下边距）。
 
@@ -498,7 +498,7 @@ ms.lasthandoff: 01/25/2018
 
 1. 生成并运行应用程序。
 
-1. 选择 “视图”按钮。
+1. 选择“视图”按钮。
   
      出现费用报告页。
   
@@ -508,7 +508,7 @@ ms.lasthandoff: 01/25/2018
   
 ### <a name="to-style-controls"></a>若要设置控件样式  
 
-1. 打开“App.xaml”文件 (C#) 或**“Application.xaml”文件 (Visual Basic)。
+1. 打开“App.xaml”文件 (C#) 或“Application.xaml”文件 (Visual Basic)。
 
 1. 将以下 XAML 添加到 `<Application.Resources>` 和 `</Application.Resources>` 标记之间：  
   
@@ -573,7 +573,7 @@ ms.lasthandoff: 01/25/2018
   
     -   `listHeaderTextStyle`：可设置列表标头“标签”的格式。
   
-    -   `buttonStyle`：可设置`Button`“ExpenseItHome.xaml”页面上的格式。
+    -   `buttonStyle`：可设置“ExpenseItHome.xaml”页面上`Button`的格式。
 
 1. 打开 ExpenseItHome.xaml，并使用以下 XAML替换 `<Grid>` 和 `</Grid>` 元素之间的所有内容：  
   
@@ -792,7 +792,7 @@ ms.lasthandoff: 01/25/2018
 
 1. 打开 **ExpenseReportPage.xaml**。
 
-1. 使用以下内容替换“姓名”和“部门”`<StackPanel`元素的 XAML 代码：  
+1. 使用以下内容替换“姓名”和“部门”`<StackPanel` 元素的 XAML 代码：  
   
     ```xaml  
     <!-- Name -->  

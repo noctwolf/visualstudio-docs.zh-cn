@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0700f1ba19c9c352aeaafe4dd3a3f9f4a12f864f
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 48419196050111d12fb149612394fd9ef7935494
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>提高 Visual Studio 使用效率的提示
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/23/2018
 
 使用以下功能快速编写代码。
 
-- **使用便捷命令**。 Visual Studio 提供各种有助于更快速完成常见编辑任务的命令。 例如，在 Visual Studio 2017 版本 15.6 预览版 2 及更高版本中，选择一个命令，即可轻松复制代码行，而无需复制它、重新定位光标并粘贴它。 依次选择“编辑” > “复制”，或按 Ctrl+E、V。 还可以依次选择“编辑” > “高级” > “展开选定内容”和“合拢选定内容”，或按 Ctrl+W 和 Ctrl+Shift+W（适用于 Visual Studio 2017 版本 15.5 及更高版本），快速展开或合拢选定文本内容。
+- **使用便捷命令**。 Visual Studio 提供各种有助于更快速完成常见编辑任务的命令。 例如，在 Visual Studio 2017 版本 15.6 预览版 2 及更高版本中，选择一个命令，即可轻松复制代码行，而无需复制它、重新定位光标并粘贴它。 依次选择“编辑” > “复制”，或按 Ctrl+E、V。 此外，还可以依次选择“编辑” > “高级” > “展开选定内容”或“编辑” > “高级” > “合拢选定内容”，或按 Shift+Alt+= 或 Shift+Alt+-（适用于 Visual Studio 2017 版本 15.5 及更高版本），快速展开或合拢选定文本内容。
 
 - **使用 IntelliSense**。 在编辑器中输入代码时，将会显示 IntelliSense 信息，如列表成员、参数信息、快速信息，签名帮助和完整单词。 这些功能支持文本的模糊匹配；例如，列表成员的结果列表不仅包括以您输入的字符开头的条目，还包括在名称的任何位置包含字符组合的条目。 有关详细信息，请参阅[使用 IntelliSense](../ide/using-intellisense.md)。
 
@@ -124,7 +124,7 @@ ms.lasthandoff: 01/23/2018
 
 ## <a name="see-also"></a>请参阅
 
-[常用命令的默认键盘快捷键](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)  
-[如何：自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)  
-[演练：创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)
+- [常用命令的默认键盘快捷键](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [如何：自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [演练：创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)

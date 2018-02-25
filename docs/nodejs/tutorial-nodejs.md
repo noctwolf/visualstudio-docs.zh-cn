@@ -16,11 +16,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Visual Studio 中的 Node.js 入门
 本教程介绍使用 Visual Studio 进行 Node.js 开发，将创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。  
@@ -37,6 +37,10 @@ ms.lasthandoff: 02/01/2018
      如果没有看到“基本 Azure Node.js Express 4 应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“Node.js 开发”工作负载，然后选择“修改”。 
 
     Visual Studio 创建新的解决方案并打开项目。 在编辑器（左窗格）中打开 App.js 项目文件。 如果不熟悉 Visual Studio 解决方案和项目，请参阅[快速入门：使用 Visual Studio 创建第一个 Node.js 应用](../ide/quickstart-nodejs.md)。
+
+4. 如果尚未安装 Node.js 运行时，请从 [Node.js](https://nodejs.org/en/download/) 网站进行安装。
+
+    一般情况下，Visual Studio 会自动检测已安装的 Node.js 运行时。 如果没有检测到已安装的运行时，则可配置项目来引用已安装的运行时。
 
 ## <a name="add-some-code"></a>添加一些代码
 
@@ -121,7 +125,7 @@ ms.lasthandoff: 02/01/2018
 
     ![选择调试目标](../nodejs/media/tutorial-nodejs-deploy-target.png) 
 
-1. 按 Ctrl+F5 运行应用程序。
+1. 按 F5（“调试” > “启动调试”）来运行该应用程序。
 
     调试器会在设置的断点处暂停。 现在，可以检查应用状态。
 
@@ -129,7 +133,7 @@ ms.lasthandoff: 02/01/2018
 
     ![检查变量](../nodejs/media/tutorial-nodejs-inspect-variables.png)
 
-1. 按 F5 继续。
+1. 按 F5（“调试” > “继续”）继续。
 
     应用将在浏览器中打开。
 
@@ -139,7 +143,7 @@ ms.lasthandoff: 02/01/2018
 
     ![在浏览器中运行应用](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. 选择“视图”>“其他窗口”>“Node.js 交互式窗口”，打开 Node.js 交互式窗口。
+1. 选择“视图” > “其他窗口” > “Node.js 交互式窗口”，打开 Node.js 交互式窗口。
 
    ![打开 Node.js 交互式窗口](../nodejs/media/tutorial-nodejs-interactive-window.png)  
 
