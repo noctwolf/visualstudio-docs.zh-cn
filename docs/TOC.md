@@ -97,6 +97,7 @@
 ##### [替换模板中的参数](ide/how-to-substitute-parameters-in-a-template.md)
 #### [Visual Studio IDE 64 位支持](ide/visual-studio-ide-64-bit-support.md)
 ### [不使用项目或解决方案而进行开发（“打开文件夹”）](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+#### [自定义生成和调试任务](ide/customize-build-and-debug-tasks-in-visual-studio.md)
 ### [在编辑器中编写代码](ide/writing-code-in-the-code-and-text-editor.md)
 #### [查找和替换文本](ide/finding-and-replacing-text.md)
 ##### [使用正则表达式](ide/using-regular-expressions-in-visual-studio.md)
