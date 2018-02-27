@@ -11,20 +11,20 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: db1e944f3ce12369b096c75a7fc12648a2d7e91d
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>面向 .NET 开发者的 Visual Studio 2017
 
 ## <a name="smart-code-editor"></a>智能代码编辑器
 
-[文档：使用 IntelliSense](using-intellisense.md)  
-[文档：智能编辑器功能](writing-code-in-the-code-and-text-editor.md)
+- [文档：使用 IntelliSense](using-intellisense.md)
+- [文档：智能编辑器功能](writing-code-in-the-code-and-text-editor.md)
 
-Visual Studio 通过 Roslyn 编译器深入理解代码，为用户提供众多智能编辑功能，比如语法着色、代码完成、拼写检查错误输入的变量、未导入的类型解析、大纲显示、结构可视化工具、[CodeLens](find-code-changes-and-other-history-with-codelens.md)、调用层次结构、可悬停的快速信息、参数帮助，以及用于重构、应用快速操作和生成代码的各种工具。
+Visual Studio 通过 .NET（“Roslyn”）编译器深入理解代码，为用户提供众多智能编辑功能，比如语法着色、代码完成、拼写检查错误输入的变量、未导入的类型解析、大纲显示、结构可视化工具、[CodeLens](find-code-changes-and-other-history-with-codelens.md)、调用层次结构、可悬停的快速信息、参数帮助，以及用于重构、应用快速操作和生成代码的各种工具。
 
 ![Visual Studio 智能代码编辑器](../ide/media/VSIDE_Productivity_SmartCodeEditor.png "VSIDE_Productivity_SmartCodeEditor")
 
@@ -50,14 +50,14 @@ Visual Studio 提供实时代码诊断，通过检测错误和可能有问题的
 
 [文档：Visual Studio 中的单元测试](../test/improve-code-quality.md)
 
-基于 MSTest、NUnit 或 XUnit 测试框架，为面向 .NET Framework、.NET Standard 或 .NET Core 的任何应用程序运行和调试单元测试。 在*测试资源管理器*中浏览并查看测试，或使用 *Live Unit Testing*（仅适用于企业版 SKU）在编辑器内实时查看代码更改对单元测试的影响。 
+基于 MSTest、NUnit 或 XUnit 测试框架，为面向 .NET Framework、.NET Standard 或 .NET Core 的任何应用程序运行和调试单元测试。 在*测试资源管理器*中浏览并查看测试，或使用 *Live Unit Testing*（仅适用于企业版 SKU）在编辑器内实时查看代码更改对单元测试的影响。
 
 ![Visual Studio 中的 Live Unit Testing](../ide/media/VSIDE_Productivity_LiveUnitTesting.png "VSIDE_Productivity_LiveUnitTesting")
 
 ## <a name="code-consistency-and-style"></a>代码一致性和样式
 
-[文档：可移植的自定义编辑器选项](create-portable-custom-editor-options.md)  
-[文档：用于 .NET 的 EditorConfig 代码样式设置](editorconfig-code-style-settings-reference.md)
+- [文档：可移植的自定义编辑器选项](create-portable-custom-editor-options.md)
+- [文档：用于 .NET 的 EditorConfig 代码样式设置](editorconfig-code-style-settings-reference.md)
 
 Visual Studio 支持编码约定配置，检测编码样式冲突，并使用 **Ctrl+.** 快捷方式提供快速修复 以更正样式问题。 使用 *EditorConfig* 可在存储库中配置并强制实施团队的格式设置、命名和代码样式约定，允许覆盖项目和文件级别的值。
 
@@ -107,8 +107,6 @@ Visual Studio 具有一个丰富的扩展生态系统，可在需要时安装或
 | **Shift+F12** | 查找所有引用 | 查看所有符号或文本引用 |
 | **Ctrl+.** （也可使用 C# 配置文件中的 **Alt+Enter**） | 快速操作和重构 | 查看光标位置或代码选定内容处可用的代码修复、代码生成操作、重构或其他快速操作 |
 | **Ctrl**+**E**、**V** | 复制行 | 复制光标所在的代码行（适用于 Visual Studio 2017 版本 15.6 预览版 2 及更高版本） |
-| **Ctrl**+**W** | 展开选定内容 | 将当前选定内容展开一个结构单元（适用于 Visual Studio 2017 版本 15.5） |
-| **Ctrl**+**Shift**+**W** | 合拢选定内容 | 将当前选定内容合拢（缩减）一个结构单元（适用于 Visual Studio 2017 版本 15.5） |
 | **Ctrl+Q** | 快速启动 | 搜索所有 Visual Studio 设置 |
 | **F5** | 开始调试 | 开始调试应用程序 |
 | **Ctrl+F5** | 不进行调试直接运行 | 不进行调试，直接在本地运行应用程序 |
