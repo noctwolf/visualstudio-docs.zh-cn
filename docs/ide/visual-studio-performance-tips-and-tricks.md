@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: f15f9b34a19617986ca64f9b13af1b28d4c9d01a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -86,7 +86,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
 ### <a name="managed-language-services-roslyn"></a>托管的语言服务 (Roslyn)
 
-有关 Roslyn 性能注意事项的信息，请参阅 [Performance considerations for large solutions] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)（大型解决方案的性能注意事项）。
+有关 .NET 编辑器平台（“Roslyn”）行性能注意事项的详细信息，请参阅[针对大型解决方案的性能注意事项] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)。
 
 - **禁用完整解决方案分析**
 

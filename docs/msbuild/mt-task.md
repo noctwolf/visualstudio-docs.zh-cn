@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,16 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: "6"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9a2da1c3012b65f71b63b61d2bc0415dbebd8b9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="mt-task"></a>MT 任务
 包装 Microsoft 清单工具 mt.exe。 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上的“Mt.exe”。  
@@ -55,11 +56,11 @@ ms.lasthandoff: 12/22/2017
 |**EnableDPIAwareness**|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则添加到将应用程序标记为 DPI 的清单信息。 编写可识别 DPI 的应用程序，可使用户界面通过各种高 DPI 显示设置显得美观一致。<br /><br /> 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上的“高 DPI”。|  
 |**GenerateCatalogFiles**|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则生成目录定义 (.cdf) 文件。<br /><br /> 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“Mt.exe”中的 /makecdfs 选项。|  
 |**GenerateCategoryTags**|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则会导致生成类型标记。 如果此参数为 `true`，还必须指定 ManifestFromManagedAssemblyMT 任务参数。<br /><br /> 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“Mt.exe”中的 /category 选项。|  
-|**InputResourceManifests**|可选 **String** 参数。<br /><br /> 从具有指定标识符的 RT_MANIFEST 类型的资源输入清单。 指定一种具有以下格式的资源：\<file>[;[#]<resource_id>]，其中可选 `resource_id` 参数是一个非负 16 位数字。<br /><br /> 如果没有指定 `resource_id`，则会使用 CREATEPROCESS_MANIFEST_RESOURCE 默认值 (1)。<br /><br /> 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“Mt.exe”中的 /inputresource 选项。|  
+|**InputResourceManifests**|可选 **String** 参数。<br /><br /> 从具有指定标识符的 RT_MANIFEST 类型的资源输入清单。 指定格式为 *\<file>[***;***[***#***]<resource_id>]* 的资源，其中可选 `resource_id` 参数是一个非负 16 位数字。<br /><br /> 如果没有指定 `resource_id`，则会使用 CREATEPROCESS_MANIFEST_RESOURCE 默认值 (1)。<br /><br /> 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“Mt.exe”中的 /inputresource 选项。|  
 |**ManifestFromManagedAssembly**|可选 **String** 参数。<br /><br /> 从指定的托管程序集生成清单。<br /><br /> 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“Mt.exe”中的 /managedassemblyname 选项。|  
 |**ManifestToIgnore**|可选 **String** 参数。<br /><br /> （未使用。）|  
 |**OutputManifestFile**|可选 **String** 参数。<br /><br /> 指定输出清单的名称。 如果省略了此参数，并且只有一个清单正在进行操作，则会就地修改该清单。<br /><br /> 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“Mt.exe”中的 /out 选项。|  
-|**OutputResourceManifests**|可选 **String** 参数。<br /><br /> 将清单输出到具有指定标识符的 RT_MANIFEST 类型的资源。 资源采用以下格式：\<file>[;[#]<resource_id>]，其中可选 `resource_id` 参数是一个非负 16 位数字。<br /><br /> 如果没有指定 `resource_id`，则会使用 CREATEPROCESS_MANIFEST_RESOURCE 默认值 (1)。<br /><br /> 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“Mt.exe”中的 /outputresource 选项。|  
+|**OutputResourceManifests**|可选 **String** 参数。<br /><br /> 将清单输出到具有指定标识符的 RT_MANIFEST 类型的资源。 资源采用以下格式：*\<file>[***;***[***#***]<resource_id>]*，其中可选 `resource_id` 参数是一个非负 16 位数字。<br /><br /> 如果没有指定 `resource_id`，则会使用 CREATEPROCESS_MANIFEST_RESOURCE 默认值 (1)。<br /><br /> 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“Mt.exe”中的 /outputresource 选项。|  
 |**RegistrarScriptFile**|可选 **String** 参数。<br /><br /> 指定要用于免注册 COM 清单支持的注册器脚本 (.rgs) 文件。<br /><br /> 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“Mt.exe”中的 /rgs 选项。|  
 |**ReplacementsFile**|可选 **String** 参数。<br /><br /> 指定注册器脚本 (.rgs) 文件中包含可替换字符串的值的文件。<br /><br /> 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“Mt.exe”中的 /replacements 选项。|  
 |**ResourceOutputFileName**|可选 **String** 参数。<br /><br /> 指定用于将清单嵌入项目输出的输出资源文件。|  

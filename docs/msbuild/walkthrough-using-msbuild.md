@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: MSBuild, tutorial
+helpviewer_keywords:
+- MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 00775856e57392355b1908d4849f1bbbd836c5f2
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="walkthrough-using-msbuild"></a>演练：使用 MSBuild
 MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBuild 的构建基块，并演示如何编写、操作和调试 MSBuild 项目。 学习内容：  
@@ -60,45 +61,33 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
      该项目文件出现在代码编辑器中。  
   
 ## <a name="targets-and-tasks"></a>目标和任务  
- 项目文件是 XML 格式的文件，带有根节点[项目](../msbuild/project-element-msbuild.md)。  
+项目文件是 XML 格式的文件，带有根节点[项目](../msbuild/project-element-msbuild.md)。  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<Project ToolsVersion="12.0" DefaultTargets="Build"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- 必须在 Project 元素中指定 xmlns 命名空间。  
+必须在 Project 元素中指定 xmlns 命名空间。 如果新项目中存在 `ToolsVersion`，则必须为“15.0”。
   
- 生成应用程序的工作由 [Target](../msbuild/target-element-msbuild.md) 和 [Task](../msbuild/task-element-msbuild.md) 元素完成。  
+生成应用程序的工作由 [Target](../msbuild/target-element-msbuild.md) 和 [Task](../msbuild/task-element-msbuild.md) 元素完成。  
   
 -   任务是工作的最小单位，换言之，它是生成的“原子”。 任务是可单独执行的组件，具有输入和输出。 目前尚没有在项目文件中引用或定义的任务。 以下各部分介绍如何将项目添加到项目文件。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)主题。  
   
--   目标是任务的已命名序列。 在项目文件末尾有两个目标，它们目前包含在 HTML注释中：BeforeBuild 和 AfterBuild。  
+-   目标是任务的已命名序列。 有关详细信息，请参阅[目标](../msbuild/msbuild-targets.md)主题。  
   
-    ```xml  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
-  
-     有关详细信息，请参阅[目标](../msbuild/msbuild-targets.md)主题。  
-  
- 项目节点具有可选的 DefaultTargets 属性，用于选择要在此例生成中生成的默认目标。  
-  
-```xml  
-<Project ToolsVersion="12.0" DefaultTargets="Build" ...  
-```  
-  
- 该生成目标不是在项目文件中定义的。 而是通过 [Import](../msbuild/import-element-msbuild.md) 元素从文件 Microsoft.CSharp.targets 导入的。  
+默认目标不是在项目文件中定义的。 而是在导入的项目中指定的。 [Import](../msbuild/import-element-msbuild.md) 元素可指定导入的项目。 例如在 C# 项目中，默认目标是从 Microsoft.CSharp.targets 文件中导入的。 
   
 ```xml  
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
 ```  
   
- 无论是否使用导入的文件，都会将其有效插入项目文件。  
+无论是否使用导入的文件，都会将其有效插入项目文件。  
+
+> [!NOTE]
+> 某些项目类型（如 .NET Core）将简化后的架构用于 `Sdk` 属性，而不是 `ToolsVersion`。 这些项目具有隐式导入项和不同的默认属性值。
   
- MSBuild 跟踪生成的目标，并保证每个目标生成次数不超过一次。  
+MSBuild 跟踪生成的目标，并保证每个目标生成次数不超过一次。  
   
 ## <a name="adding-a-target-and-a-task"></a>添加目标和任务  
  将目标添加到项目文件。 将任务添加到打印出消息的目标。  
@@ -158,9 +147,6 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
   
  通过在代码编辑器和命令窗口之间进行交替，可更改项目文件并快速查看结果。  
   
-> [!NOTE]
->  如果运行不带 /t 命令开关的 MSBuild，MSBuild 将生成由 Project 元素（在本例中为“Build”）的 DefaultTarget 属性给定的目标。 此操作生成 Windows 窗体应用程序 BuildApp.exe。  
-  
 ## <a name="build-properties"></a>生成属性  
  生成属性是引导生成的名称/值对。 已在项目文件顶部定义了几个生成属性：  
   
@@ -175,13 +161,13 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
 </PropertyGroup>  
 ```  
   
- 所有属性都是 PropertyGroup 元素的子元素。 属性的名称是子元素的名称，属性的值是子元素的文本元素。 例如，  
+ 所有属性都是 PropertyGroup 元素的子元素。 属性的名称是子元素的名称，属性的值是子元素的文本元素。 例如，应用于对象的  
   
 ```xml  
-<TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
+<TargetFrameworkVersion>v15.0</TargetFrameworkVersion>  
 ```  
   
- 定义名为 TargetFrameworkVersion 的属性，并为其指定字符串值“v12.0”。  
+ 定义名为 TargetFrameworkVersion 的属性，并为其指定字符串值“v15.0”。  
   
  可能会随时重新定义生成属性。 如果  
   
@@ -223,14 +209,14 @@ $(PropertyName)
   
     ```  
     Configuration is Debug  
-    MSBuildToolsPath is C:\Program Files\MSBuild\12.0\bin  
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin  
     ```  
   
 > [!NOTE]
 >  如果未看到这两行，则可能是忘记将项目文件保存到代码编辑器中。 请保存文件并重试。  
   
 ### <a name="conditional-properties"></a>条件属性  
- 许多属性（如配置）都是按条件进行定义的，也就是说，条件属性出现在 property 元素中。 仅当条件评估结果为“true”时才定义或重新定义条件属性。 请注意，会向未定义的属性给定空字符串的默认值。 例如，  
+ 许多属性（如配置）都是按条件进行定义的，也就是说，条件属性出现在 property 元素中。 仅当条件评估结果为“true”时才定义或重新定义条件属性。 请注意，会向未定义的属性给定空字符串的默认值。 例如，应用于对象的  
   
 ```xml  
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -297,7 +283,7 @@ $(PropertyName)
 ## <a name="build-items"></a>生成项  
  项是一段信息，通常是文件名，用作生成系统的输入。 例如，表示源文件的项集合可能会传递到名为“Compile”的任务，以将它们编译为程序集。  
   
- 所有项都是 ItemGroup 元素的子元素。 项名称是子元素的名称，项值是子元素的包含属性的值。 具有相同名称的项值将收集到该名称的项类型中。  例如，  
+ 所有项都是 ItemGroup 元素的子元素。 项名称是子元素的名称，项值是子元素的包含属性的值。 具有相同名称的项值将收集到该名称的项类型中。  例如，应用于对象的  
   
 ```xml  
 <ItemGroup>  
@@ -404,7 +390,7 @@ $(PropertyName)
   
  将图片文件夹和其所有子文件夹中所有文件扩展名为“.jpeg”的文件添加到照片项类型。 若要了解更多示例，请参阅[如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)。  
   
- 注意，项在声明时会被添加到项类型。 例如，  
+ 注意，项在声明时会被添加到项类型。 例如，应用于对象的  
   
 ```xml  
 <Photos Include="images\*.jpeg" />  
@@ -417,7 +403,7 @@ $(PropertyName)
 <Photos Include="images\*.jpeg;images\*.gif" />  
 ```  
   
- 可使用 Exclude 属性从项类型中排除项。 例如，  
+ 可使用 Exclude 属性从项类型中排除项。 例如，应用于对象的  
   
 ```xml  
 <Compile Include="*.cs" Exclude="*Designer*">  
@@ -425,7 +411,7 @@ $(PropertyName)
   
  将所有文件扩展名为“.cs”的文件添加到编译项类型，除了名称中包含字符串“Designer”的文件。 若要了解更多示例，请参阅[如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)。  
   
- Exclude 属性只会影响由 Include 属性添加的项（这两个属性均位于项元素中）。 例如，  
+ Exclude 属性只会影响由 Include 属性添加的项（这两个属性均位于项元素中）。 例如，应用于对象的  
   
 ```xml  
 <Compile Include="*.cs" />  

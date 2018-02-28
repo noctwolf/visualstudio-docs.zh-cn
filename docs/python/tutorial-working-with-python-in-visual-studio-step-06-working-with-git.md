@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
-ms.topic: get-started-article
-caps.latest.revision: 
+ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-working-with-git"></a>步骤 6：使用 Git
 
@@ -35,7 +35,7 @@ Visual Studio 提供与本地 Git 存储库以及驻留在 GitHub 和 Visual Stu
 
   ![将鼠标悬停在 Visual Studio 窗口中的 Git 控件上时显示附加信息](media/working-with-git-01.png)
 
-1. 选择存储库标头时，还会显示包含各种可用 Git 选项的“团队资源管理器”窗口。 如下所示的“同步”窗格提供用于发布到远程存储库的选项。
+1. 选择存储库标头时，还会显示包含各种可用 Git 选项的“团队资源管理器”窗口。 选择 Push 标头时显示的“同步”窗格提供用于发布到远程存储库的选项。
 
   ![创建本地存储库后 Visual Studio 中的团队资源管理器](media/working-with-git-02.png)
 
@@ -47,7 +47,7 @@ Visual Studio 提供与本地 Git 存储库以及驻留在 GitHub 和 Visual Stu
 
   ![Visual Studio 中显示分支的团队资源管理器](media/working-with-git-04.png)
 
-1. 使用本地存储库时，提交的更改直接进入存储库。 如果连接到远程存储库，请选择“同步”推送本地提交。
+1. 使用本地存储库时，提交的更改直接进入存储库。 如果已连接到远程存储库，则选择标头，再选择“同步”以切换到“同步”部分，然后处理此处显示的命令。
 
 ## <a name="going-deeper"></a>深入了解
 

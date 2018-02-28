@@ -1,6 +1,8 @@
+---
+---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>从 Visual Studio 中的模板创建 AI 项目
 
-[安装 Visual Studio Tools for AI](installation.md) 后，就可以使用各种模板轻松创建新的 Python 项目。
+[安装 Visual Studio Tools for AI](installation.md) 后，即可使用各种模板轻松创建新的 AI 项目。
 
 1. 启动 Visual Studio。
 
@@ -12,7 +14,7 @@
 
 1. Visual Studio 随即创建项目文件（磁盘上的 `.pyproj` 文件）以及模板所述的任何其他文件。 使用“TensorFlow 应用程序”模板时，项目包含一个与项目同名的文件。 默认情况下，该文件在 Visual Studio 编辑器中打开。
 
-    ![使用“Python 应用程序”模板时生成的项目](media\create-project\new-tensorflowapp.png)
+    ![使用 Python 应用程序模板时生成的项目](media\create-project\new-tensorflowapp.png)
 
 1. 请注意代码已导入几个库，包括 TensorFlow、numpy、sys 和 os。 此外，它还在启动应用程序时提供一些输入参数，以便轻松切换输入培训数据、输出模型和日志文件的位置。 将作业提交到多个计算上下文（即本地开发框上而非 Azure 文件共享上的目录）时，这些参数非常有用。 
 

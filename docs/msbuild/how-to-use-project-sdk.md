@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 01/25/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,14 +14,14 @@ ms.author: jeffkl
 manager: angerlic
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c12f319c8425bda8a90ace04c377b23aa76bd0
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 28027b21d3f562e3eda94dc91de16ddb38362d3c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 项目 SDK
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 引入了“项目 SDK”概念，此概念简化了需要导入属性和目标才能使用的软件开发工具包的用法。
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 版本引入了“项目 SDK”的概念，它可让你更轻松地使用需导入属性和目标的软件开发工具包。
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

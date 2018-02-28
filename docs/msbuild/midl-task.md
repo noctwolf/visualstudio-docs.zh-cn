@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,16 +26,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), MIDL task
 - MIDL task (MSBuild (Visual C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3dc6bcbf4814a05d05aa69a42e8d19f581e78863
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 51ed6c8c34fd5aa37eebffabcda077ca8554c498
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="midl-task"></a>MIDL 任务
 包装 Microsoft 接口定义语言 (MIDL) 编译器工具 midl.exe。 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上的“MIDL 命令行参考”。  
@@ -91,7 +92,7 @@ ms.lasthandoff: 12/22/2017
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**Signed**|**/char signed**|  
     |**Unsigned**|**/char unsigned**|  
@@ -115,7 +116,7 @@ ms.lasthandoff: 12/22/2017
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**无**|**/error none**|  
     |**EnableCustom**|**/error**|  
@@ -171,7 +172,7 @@ ms.lasthandoff: 12/22/2017
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**无**|**/client none**|  
     |**Stub**|**/client stub**|  
@@ -186,7 +187,7 @@ ms.lasthandoff: 12/22/2017
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**无**|**/server none**|  
     |**Stub**|**/server stub**|  
@@ -303,7 +304,7 @@ ms.lasthandoff: 12/22/2017
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**NotSet**|*\<none>*|  
     |**1**|**/Zp1**|  
@@ -337,7 +338,7 @@ ms.lasthandoff: 12/22/2017
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**NotSet**|*\<none>*|  
     |**Win32**|**/env win32**|  
@@ -360,7 +361,7 @@ ms.lasthandoff: 12/22/2017
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
@@ -409,7 +410,7 @@ ms.lasthandoff: 12/22/2017
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**0**|**/W0**|  
     |**1**|**/W1**|  

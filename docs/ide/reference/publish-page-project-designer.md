@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d9f050662ed38814920e17b36f77bf6795aabfa9
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="publish-page-project-designer"></a>“项目设计器”->“发布”页
 “项目设计器”  上的“发布”  页面用于针对 ClickOnce 部署配置属性。  
@@ -34,10 +34,8 @@ ms.lasthandoff: 01/29/2018
   
 ## <a name="uielement-list"></a>UIElement 列表  
  **发布文件夹所在的位置**  
- 指定发布应用程序的位置。 可以是驱动器路径 (`C:\deploy\myapplication`)、文件共享 (`\\server\myapplication`)、FTP 服务器 (`ftp://ftp.microsoft.com/myapplication`) 或网站 (`http://www.microsoft.com/myapplication`)。 请注意，“发布位置”  框中必须存在文本才能使浏览（“...”）按钮正常工作。  
-  
- 默认情况下，如果安装了 IIS，则发布位置为 `http://localhost/<projectname>/` ；如果未安装 IIS，则发布位置为 `publish\` 目录。 如果计算机在运行 Windows Vista，则默认值始终是 `publish\` 目录（无论是否安装了 IIS）。  
-  
+ 指定发布应用程序的位置。 可为驱动器路径 (`C:\deploy\myapplication`)、文件共享 (`\\server\myapplication`) 或 FTP 服务器 (`ftp://ftp.microsoft.com/myapplication`)。 请注意，“发布位置”  框中必须存在文本才能使浏览（“...”）按钮正常工作。  
+   
  **安装文件夹 URL**  
  可选。 指定用户要用于安装应用程序的网站。 仅当与“发布位置” 不同时（例如，将应用程序发布到暂存服务器时），这才是必需的。  
   

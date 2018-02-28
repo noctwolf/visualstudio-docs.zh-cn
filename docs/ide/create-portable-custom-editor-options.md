@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 65eafeab083b85fb7e872adabf97f5497cc62291
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 8be85bc578b31b087c77da1444ddd9950a6bc0ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 
@@ -106,7 +106,7 @@ EditorConfig 文件从上到下进行读取，最近的 EditorConfig 文件会�
 
 ## <a name="editing-editorconfig-files"></a>编辑 EditorConfig 文件
 
-Visual Studio 提供一些 IntelliSense 用于编辑 .editorconfig 文件。
+Visual Studio 提供 IntelliSense 完成列表，帮助你编辑 .editorconfig 文件。
 
 ![.editorconfig 文件中的 IntelliSense](media/editorconfig-intellisense-no-extension.png)
 

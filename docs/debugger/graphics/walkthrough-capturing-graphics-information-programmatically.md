@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
-ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
+ms.openlocfilehash: 3de32ab0b9ded416f57f4699e534b6401c2a483c
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>演练：以编程方式捕获图形信息
 你可以使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断以编程方式从 Direct3D 应用中捕获图形信息。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/05/2018
   
 -   当在手动测试中难以预计和捕获呈现问题，但可用通过使用有关运行时的应用状态信息以编程方式预测呈现问题时，调用 `CaptureCurrentFrame`。  
   
-##  <a name="CaptureDX11_2"></a>Windows 10 中的编程捕获  
+##  <a name="CaptureDX11_2"></a> Windows 10 中的编程捕获  
  本部分演练演示了在 Windows 10 中，它使用可靠捕获方法使用 DirectX 11.2 API 的应用中的编程捕获。
   
  本部分显示如何完成这些任务：  
@@ -79,7 +79,7 @@ ms.lasthandoff: 02/05/2018
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     请务必检查由 `HRESULT` 返回的 `DXGIGetDebugInterface1` ，以确保在使用它之前获得一个有效的接口：  
+     请务必检查`HRESULT`返回[则 dxgigetdebuginterface1 将](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx)以确保你使用它之前获得一个有效的接口：  
   
     ```  
     if (FAILED(getAnalysis))  

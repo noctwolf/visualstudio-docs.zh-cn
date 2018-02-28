@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: automated testing, lab management, test lab
+helpviewer_keywords:
+- automated testing, lab management, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 4dae17012ecf66258d65ff3c200a0dbe8e4c9429
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 25f1007458b691b97f0ea852a1bf0e7325d79d8a
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>使用 Build Management 或 Release Management（而不是实验室管理工具版）进行自动测试
 
@@ -26,7 +28,7 @@ ms.lasthandoff: 01/09/2018
 
 * [SCVMM 环境的自助式管理](#managescvmm)
 
-Build Management 和 Release Management 不支持自助式创建网络隔离的 SCVMM 环境，并且以后也不计划提供此支持。 但是，有一些[建议的替代方法](#isolatedenvir)。
+* [创建网络隔离环境](#isolatedenvir)
 
 <a name="bdtautomation"></a>
 ## <a name="build-deploy-test-automation"></a>生成-部署-测试自动化
@@ -36,7 +38,7 @@ XAML 生成依赖于在 MTM 中创建的各种构造（例如实验室环境、�
 
 | 步骤 | 使用 XAML 生成 | 使用 Build Management 或 Release Management |
 |-------|----------------------|-----------------|
-| 确定部署生成和运行测试的计算机。 | 使用这些计算机在 MTM 中创建标准实验室环境。 | 不可用 |
+| 确定部署生成和运行测试的计算机。 | 使用这些计算机在 MTM 中创建标准实验室环境。 | n/a |
 | 确定要运行的测试。 | 在 MTM 中创建测试套件、创建测试用例并将自动化与每个测试用例关联。 在 MTM 中创建测试设置，标识计算机在运行测试的实验室环境中的角色。 | 如果打算通过测试计划管理测试，则以相同的方式在 MTM 中创建自动测试套件。 如果想从生成产生的测试二进制文件直接运行测试，则可以跳过此步骤。 两种情况下都无需创建测试设置。 |
 | 自动部署和测试。 | 使用 LabDefaultTemplate.*.xaml 创建 XAML 生成定义。 在生成定义中指定生成、测试套件和实验室环境。 | 使用单一环境创建[生成定义或发布定义](https://www.visualstudio.com/team-services/continuous-integration/)。 使用命令行任务从 XAML 生成定义运行相同的部署脚本，并使用“测试代理部署”和“运行功能测试”任务运行自动测试。 将一系列计算机及其凭据指定为这些任务的输入。 |
 
@@ -74,14 +76,15 @@ XAML 生成依赖于在 MTM 中创建的各种构造（例如实验室环境、�
 | 执行环境的检查点，或将环境还原到干净的检查点。 | 在“环境查看器”中打开实验室环境。 选择执行检查点或还原到之前的检查点的选项。 | 使用 SCVMM 管理控制台直接对虚拟机执行这些操作。 或者若要在更大的自动化过程中执行这些步骤，则在发布定义的环境中包括 [SCVMM 集成扩展](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)中的检查点任务。 |
 
 <a name="isolatedenvir"></a>
-## <a name="self-service-creation-of-network-isolated-environments"></a>自助式创建网络隔离环境
+## <a name="creation-of-network-isolated-environments"></a>创建网络隔离环境
 
 网络隔离实验室环境是一系列 SCVMM 虚拟机，这些虚拟机可以在不引起网络冲突的情况下进行安全克隆。 根据使用一组网络接口卡在专用网络中配置虚拟机和使用另一组网络接口卡在公用网络中配置虚拟机的一系列说明，在 MTM 中完成此操作。
 
-随着时代发展现已具有更丰富的公有和私有云管理系统，例如 [Microsoft Azure](https://azure.microsoft.com/) 和 [Microsoft Azure Stack](https://azure.microsoft.com/overview/azure-stack/)，因此可以直接更多地依赖云管理工具实现类似功能。 Build Management 和 Release Management 中没有实现此目标的等效方法。
+但是，VSTS 和 TFS 与 SCVMM 生成和部署任务结合起来，即可用于管理 SCVMM 环境、预配隔离虚拟网络和实现生成-部署-测试方案。 例如，可执行任务以：
 
-如果需要网络隔离，建议考虑以下替代方法：
+* 创建、还原和删除检查点
+* 基于模板创建新的虚拟机
+* 启动和停止虚拟机
+* 针对 SCVMM 运行自定义 PowerShell 脚本
 
-* 网络隔离有一个动机就是简化多个克隆的配置。 每个克隆都是原始对象的精确副本，因此计算机名称和配置设置保留原样，这样便可轻松设置新环境。 但是，这种优势在生命周期（例如在生产中）后期会导致出现问题，因为最终部署应用程序的方式不同。 可改为考虑按设置生产的相同方式设置新环境，并避免使用网络隔离。
-
-* 使用 [Microsoft Azure](https://azure.microsoft.com/) 等公有云基础结构满足测试需求。 轻松使用 [Azure Marketplace](https://azure.microsoft.com/marketplace/) 或 [Azure 快速入门模板](https://azure.microsoft.com/documentation/templates/)提供的 [Azure 资格管理器模板](https://azure.microsoft.com/documentation/templates/)，只需通过代理或“跳转盒”即可设置通过私有网络连接，并向公用网络公开的一系列虚拟机。
+详情请参阅[创建用于生成-部署-测试方案的虚拟网络隔离环境](/vsts/build-release/actions/virtual-networks/create-virtual-network)。

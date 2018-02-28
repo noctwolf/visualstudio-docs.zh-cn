@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 01/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: code analysis, C++ core check
+helpviewer_keywords:
+- code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d5db13aa350e33a297981066f36c3d1dfd1ecb67
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e0e12941db7f8e6f539c88014fc5fa9c55ca809c
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C + + 核心准则检查程序参考
 本部分列出了 c + + 核心准则检查程序警告。 有关代码分析的信息，请参阅[/analyze （代码分析）](/cpp/build/reference/analyze-code-analysis)和[快速入门： C/c + + 代码分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)。  
@@ -197,7 +200,7 @@ C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL
 
 ## <a name="type-group"></a>类型组
 C26465 NO_CONST_CAST_UNNECESSARY  
-  不要使用`const_cast`转换掉`const`。 `const_cast`不是必需的;constness 或波动性不是通过此转换正在删除。 请参阅[c + + 核心准则 Type.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast)。  
+  不要使用`const_cast`转换掉`const`。 `const_cast` 不是必需的;constness 或波动性不是通过此转换正在删除。 请参阅[c + + 核心准则 Type.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast)。  
   
 C26466 NO_STATIC_DOWNCAST_POLYMORPHIC  
   不要使用`static_cast`向下转换方面。 从多态类型强制转换应使用 dynamic_cast。 请参阅[c + + 核心准则 Type.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast)。  
@@ -248,6 +251,20 @@ C26483 STATIC_INDEX_OUT_OF_RANGE
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)   
   表达式 %expr%： 指针 decay 到任何数组。 请参阅[c + + 核心准则 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)。  
-  
+
+## <a name="deprecated-warnings"></a>不推荐使用的警告
+
+以下警告核心准则检查器中，早期实验规则集的交集但现已弃用，可以安全地忽略。 通过从上面的列表的警告，警告所取代。
+
+- 26412 DEREF_INVALID_POINTER
+- 26413 DEREF_NULLPTR
+- 26420 ASSIGN_NONOWNER_TO_EXPLICIT_OWNER
+- 26421 ASSIGN_VALID_OWNER
+- 26422 VALID_OWNER_LEAVING_SCOPE
+- 26423 ALLOCATION_NOT_ASSIGNED_TO_OWNER
+- 26424 VALID_ALLOCATION_LEAVING_SCOPE
+- 26425 ASSIGNING_TO_STATIC
+- 26499 NO_LIFETIME_TRACKING
+
 ## <a name="see-also"></a>请参阅  
 [使用 c + + 核心准则检查器](using-the-cpp-core-guidelines-checkers.md)

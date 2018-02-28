@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,28 +17,41 @@ helpviewer_keywords:
 - debugging [Visual Studio], optimized code
 - optimized code, debugging
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c3dcd57568bdfaac3ba0f7aff33cefca8a0ee32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 23de1ec4e053a87c4f91cf7b599f49b8fe318015
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 优化和调试
-当调试托管应用程序，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]会默认取消优化实时 (JIT) 代码。 取消 JIT 优化意味着你调试的是非优化代码。 由于代码未优化，因此代码会运行得稍慢一些，但您的调试体验会更全面。 由于调试优化代码要更难一些，因此建议仅在遇到优化代码中发生的 bug 无法在非优化版本中重现时使用。  
-  
- 在中控制 JIT 优化[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]通过**在模块加载时取消 JIT 优化**选项。 您可以在找到此选项**常规**下页上**调试**中的节点**选项**对话框。  
-  
- 如果你清除**在模块加载时取消 JIT 优化**选项，则可以调试优化的 JIT 代码，但调试的能力可能是有限，因为优化的代码与源代码不匹配。 因此，如调试器窗口**局部变量**和**自动**窗口可能不会显示调试非优化代码会尽可能多的信息。  
-  
- 另一个重要差异是有关使用“仅我的代码”进行调试。 如果你正在使用“仅我的代码”进行调试，调试器就会将优化代码作为非用户代码处理，不在调试时显示。 因此，在调试 JIT 优化代码时，你可能想关闭“仅我的代码”。 有关详细信息，请参阅[限制单步执行仅我的代码](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)。  
-  
- 请记住，**在模块加载时取消 JIT 优化**选项会取消代码优化，当模块加载时。 如果附加到已正在运行的进程，它可能包含已加载的代码、JIT 编译的代码和优化的代码。 **在模块加载时取消 JIT 优化**选项不起对这些代码，尽管它会影响在附加后加载的模块。 此外，**在模块加载时取消 JIT 优化**选项不影响用 NGEN 创建的模块，如 WinForms.dll。  
-  
+**优化.NET 中的工作原理：**如果你尝试调试代码，它更容易。 当将该代码是否为**不**优化。 这是因为当代码进行了优化，编译器和运行时对代码进行更改发出 CPU，以便它运行速度更快，但具有到原始源代码的间接映射。 也就是说，调试器会经常无法告诉你的本地变量的值和代码单步执行，断点可能无法按预期工作。
+
+通常发布生成配置创建优化的代码并调试生成配置不。 `Optimize` MSBuild 属性控制是否被告知编译器优化代码。
+
+.NET 生态系统中, 打开的代码是从源到 CPU 两步骤过程中的说明进行操作： 首先，C# 编译器将你键入的文本转换为调用 MSIL 的中间二进制形式并将此写出到.dll 文件。 更高版本，.NET 运行时将此 MSIL 转换为 CPU 说明。 这两个步骤可以优化在某种程度上，但由.NET 运行时执行的第二步执行的更重要的优化。
+
+**在模块加载 （仅限托管） 时取消 JIT 优化选项：**调试器将显示一个选项，用于控制在目标进程内部的使用启用优化进行编译的 DLL 加载时，会发生什么情况。 如果未选中此选项 （默认状态），则当.NET 运行时编译到 CPU 的代码的 MSIL 代码，则会使启用优化。 如果选中此选项，调试器请求禁用优化。
+
+**在模块加载 （仅限托管） 时取消 JIT 优化**上找不到选项**常规**下页上**调试**中的节点**选项**对话框。
+
+**当应选中此选项：**选中此选项，当从另一个源，如 nuget 包，下载 Dll，并且你想要调试此 DLL 中的代码。 为了使这种方式，还必须针对此 DLL 中找到的符号 (.pdb) 文件。
+
+如果只想调试本地生成的代码，则最好选中此选项，因为在某些情况下，启用此选项将会显著降低调试。 有两个原因减慢：
+
+* 优化的代码运行速度更快。 如果你关闭了大量代码优化，可以添加对性能的影响。
+* 如果必须启用仅我的代码，则调试器将甚至不尝试并加载符号的进行了优化的 Dll。 查找符号可能需要很长时间。
+
+**此选项的限制：**有两种情况下，此选项会将其中**不**工作：
+
+1. 在将调试器附加到已运行的进程的其中的情况下，此选项将产生在已附加调试器时已经加载的模块上的任何影响。
+2. 此选项不起 Dll 已预编译为本机代码 (即 ngen'ed)。 但是，你可以通过与环境变量 COMPlus_ZapDisable 设置为 '1' 中启动该进程禁用预编译的代码的使用情况。
+
 ## <a name="see-also"></a>请参阅  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
  [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) （使用调试器浏览代码）  

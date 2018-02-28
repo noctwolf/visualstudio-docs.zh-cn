@@ -1,86 +1,119 @@
 ---
 title: "“选项”->“文本编辑器”->“C#”->“高级”| Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
-- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Advanced
-- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 helpviewer_keywords:
 - XML comments
 - XML documentation, generating
 - outlining options [C#]
 - XML documentation, creating
-ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 193b61ab95daa84c5815c251c7d52103c88977e1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 5d6cf8b655151e9b07111b6ac6fd64b6ad3c845f
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/12/2018
 ---
-# <a name="options-text-editor-c-advanced"></a>选项, 文本编辑器, C#, 高级
-使用此对话框可修改 C# 的编辑器格式设置、代码重构设置和 XML 文档注释设置。 若要访问此对话框，请在“工具菜单”上单击“选项”，展开“文本编辑器”文件夹，再展开“C#”，然后单击“高级”。  
-  
+# <a name="options-text-editor-c-advanced"></a>选项，文本编辑器，C#，高级
+
+可使用“高级”选项页修改 C# 的编辑器格式设置、代码重构设置和 XML 文档注释设置。 要访问此选项页，请选择“工具” > “选项”，然后选择“文本编辑器” > “C#” > “高级”。
+
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。  
-  
-## <a name="outlining"></a>大纲显示  
- 打开文件时进入大纲模式  
- 选中后，会自动大纲显示代码文件，这将创建可折叠代码块。 首次打开文件时，#region 块和非活动代码块处于折叠状态。  
-  
-## <a name="editor-help"></a>编辑器帮助  
- 在编辑器中用下划线标出错误  
- 标识代码中的生成错误。 选中此选项后，不同颜色的波浪下划线具有不同的特定含义：  
-  
--   分析错误为红色。  
-  
--   生成错误为蓝色。  
-  
--   生成警告为绿色。  
-  
--   无效的[编辑并继续](../../debugger/edit-and-continue.md)编辑为紫色。  
-  
-将指针移到用下划线标出的代码段，可查看包含错误相关信息的工具提示。  
-  
-显示实时语义错误  
-标识某些没有显式编译的编译错误，例如，声明和使用未知类型或引用未知属性。  
-  
-突出显示对光标下符号的引用  
-光标定位在符号内，或单击某个符号时，将突出显示代码文件中该符号的所有实例。  
-  
-## <a name="refactoring"></a>重构  
- 验证重构结果  
- 尝试重构含有生成错误的代码，或重构会导致将代码引用绑定到与其原始绑定不同的内容时，系统会显示“验证结果”对话框。  
-  
- 对具有编译器生成的引用的成员发出警告  
- 尝试重构的成员具有与编译器生成的引用相同的名称时，会显示警告对话框。  
-  
-## <a name="xml-documentation-comments"></a>XML 文档注释  
- 为 /// 生成 XML 文档注释  
- 选中后，将在键入 /// 注释说明后自动为 XML 文档注释插入 \<摘要> 开始和结束标记。 有关 XML 文档注释的详细信息，请参阅 [XML 文档注释](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)。  
-  
-## <a name="implement-interface"></a>实现接口  
- 使用 #region 环绕生成的代码  
- 使用实现接口或显式实现接口时，将在方法周围插入 #region \<接口名称> 成员。  
-  
-## <a name="organize-usings"></a>组织 Using  
- 对 using 排序时将“System”指令排在第一位  
- 选中后，`System` using 指令将出现在其他 using 指令之前。 有关详细信息，请参阅 [C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation) 中的组织 using。  
-  
-## <a name="see-also"></a>请参阅  
- [XML 文档注释](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
- [设置语言特定的编辑器选项](../../ide/reference/setting-language-specific-editor-options.md)   
- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 详情请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
+
+## <a name="analysis"></a>分析
+
+- 启用完整解决方案分析
+
+   针对解决方案中的所有文件启用代码分析，而不仅针对打开的代码文件。 详情请参阅[完整解决方案分析](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)。
+
+- 在外部进程中执行编辑器功能分析（实验）
+
+## <a name="using-directives"></a>Using 指令
+
+- 对 using 排序时将“System”指令排在第一位
+
+- 单独的 using 指令组
+
+- 建议对引用程序集中的类型使用 using
+
+- 建议对 NuGet 包中的类型使用 using
+
+## <a name="highlighting"></a>Highlighting
+
+- 突出显示对光标下符号的引用
+
+   光标定位在符号内，或单击某个符号时，将突出显示代码文件中该符号的所有实例。
+
+- 突出显示光标下相关的关键字
+
+## <a name="outlining"></a>大纲显示
+
+- 打开文件时进入大纲模式
+
+   选中后，会自动大纲显示代码文件，这将创建可折叠代码块。 首次打开文件时，#region 块和非活动代码块处于折叠状态。
+
+- 显示过程行分隔符
+
+- 显示声明级别构造的大纲
+
+- 显示代码级别构造的大纲
+
+- 显示注释和预处理器区域的大纲
+
+- 折叠到定义时可折叠 #regions
+
+## <a name="fading"></a>淡入淡出
+
+- 淡出未使用的 using
+
+- 淡出无法访问的代码
+
+## <a name="block-structure-guides"></a>块结构指南
+
+- 显示声明级别构造的指南
+
+- 显示代码级别构造的指南
+
+## <a name="editor-help"></a>编辑器帮助
+
+- 为 /// 生成 XML 文档注释
+
+   选中后，在键入 `///` 命令说明后为 XML 文档注释插入 XML 元素。 有关 XML 文档的详细信息，请参阅 [XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)。
+
+- 编写 /\* \*/ 命令时，在新行的开头插入 \*
+
+- 显示重命名跟踪的预览
+
+- 输入时拆分字符串文本
+
+- 报告“string.Format”调用中的无效占位符
+
+## <a name="extract-method"></a>提取方法
+
+- 不要在自定义结构上放置 ref 或 out
+
+## <a name="implement-interface-or-abstract-class"></a>实现接口或抽象类
+
+- 插入属性、事件和方法时，将其与同类型的其他元素放在一起或放在末尾
+
+- 生成属性时，首选操作是引发属性或使用自动属性
+
+## <a name="see-also"></a>另请参阅
+
+[如何项文档生成项插入 XML 注释](../../ide/reference/generate-xml-documentation-comments.md)  
+[XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)  
+[使用 XML 注释来记录代码（C# 指南）](/dotnet/csharp/codedoc)  
+[设置语言特定的编辑器选项](../../ide/reference/setting-language-specific-editor-options.md)  
+[C# IntelliSense](../../ide/visual-csharp-intellisense.md)
