@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49b27fcc972cf8b0bb0411f5ee54ea611cdd4d75
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b75aae5811fa2410cf169d3401184b8af7ca381d
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
@@ -35,7 +35,7 @@ Visual Studio 不包括框架本身。 必须通过右键单击项目并选择�
 
 每个 Bottle、Flask 和 Django 模板包括一个入门网站，其中包含一些页面和静态文件。 此代码足以本地运行和调试服务器（此情况下某些设置需从环境中获得），且足以部署到 Microsoft Azure（此情况下需要提供 [WSGI 应用](http://www.python.org/dev/peps/pep-3333/)对象）。
 
-从特定于框架的模板创建项目时，会出现一个对话框，有助于使用 pip 安装所需的包。 我们还建议对 Web 项目使用[虚拟环境](managing-python-environments-in-visual-studio.md#global-and-virtual-environments)，以便发布网站时包含正确的依赖关项：
+从特定于框架的模板创建项目时，会出现一个对话框，有助于使用 pip 安装所需的包。 我们还建议对 Web 项目使用[虚拟环境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)，以便发布网站时包含正确的依赖关项：
 
 ![为项目模板安装所需包的对话框](media/template-web-requirements-txt-wizard.png)
 

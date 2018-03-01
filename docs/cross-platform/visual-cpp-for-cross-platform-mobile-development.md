@@ -16,11 +16,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 2ae49bb09d30122297efc66779f808e0c39dd0d7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 10ac98027a4f7e50f66ec27636507e89f64849ee
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>用于跨平台移动开发的 Visual C++
 可通过适用于跨平台移动开发的 Visual C++，构建面向 iOS、Android 和 Windows 设备的本机 C++ 应用，并在为 iOS、Android 和 Windows 构建的库中分享通用代码。 这是安装了 SDK 以及共享库和本机应用的跨平台开发所需的工具的 Visual Studio 2015 中提供的一个选项。 安装后，你可以使用 Visual C++ 创建除了在 Windows、Windows Phone 和 Xbox，还可以在 iOS 和 Android 设备和平台上运行的代码。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 02/09/2018
  用于跨平台移动开发的 Visual C++ 是 Visual Studio 2015 附带的可安装选项。 有关系统必备和安装说明，请参阅 [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)。 若要生成用于 iOS 的代码，你还需要 Mac 计算机和 Apple iOS 开发人员帐户。 有关详细信息，请参阅 [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。  
   
 ## <a name="come-up-to-speed"></a>加快速度  
- 如果你来自 Android 或 iOS 开发部门，我们可以向你提供有关如何入门的有用资料。 Visual Studio 是一个表现力和功能均十分强大的开发环境。 若要了解如何使用，请阅读 [Android 开发人员入门](https://msdn.microsoft.com/en-us/library/windows/apps/dn275875.aspx) 或 [iOS 开发人员入门](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/jj657966.aspx)。 这些主题将向你介绍 Visual Studio 以及开发用于 Windows 和 Windows Phone 的跨平台应用时所需的概念。 若要开始编写你的第一个用于 iOS 和 Android 的跨平台应用，请参阅 [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)。  
+ 如果你来自 Android 或 iOS 开发部门，我们可以向你提供有关如何入门的有用资料。 Visual Studio 是一个表现力和功能均十分强大的开发环境。 若要了解如何使用，请阅读 [Android 开发人员入门](/previous-versions/windows/apps/dn275875\(v=win.10\)) 或 [iOS 开发人员入门](/previous-versions/windows/apps/jj657966\(v=win.10\))。 这些主题将向你介绍 Visual Studio 以及开发用于 Windows 和 Windows Phone 的跨平台应用时所需的概念。 若要开始编写你的第一个用于 iOS 和 Android 的跨平台应用，请参阅 [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)。  
   
  用于跨平台移动开发的 Visual C++ 包括多个模板，可帮助你开始编写应用：  
   

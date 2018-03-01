@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 520cd9eacf494ac1d8f8e26a7e1ef51581a49956
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: def17f215bd157da8d0e31f400e6b353a4d38f12
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 适用于 Android 的 Visual Studio 仿真程序在 Hyper-V（Windows 8 及以上版本的虚拟化技术）上作为虚拟机运行。 要运行仿真器，计算机必须满足本主题中所述的 Hyper-V 运行要求。  
   
- 安装程序在安装仿真器时尝试以静默方式配置这些先决条件。 安装程序成功配置这些先决条件后，仿真器即会按预期方式工作。 否则，可能需要手动实现这些先决条件。 如果必须手动配置这些先决条件，则步骤和工具与 [此处](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx) 所述的针对 Windows Phone 仿真器的步骤相同。  
+ 安装程序在安装仿真器时尝试以静默方式配置这些先决条件。 安装程序成功配置这些先决条件后，仿真器即会按预期方式工作。 否则，可能需要手动实现这些先决条件。 如果必须手动配置这些先决条件，则步骤和工具与 [此处](/previous-versions/windows/apps/jj863509\(v=vs.105\)) 所述的针对 Windows Phone 仿真器的步骤相同。  
   
 > [!IMPORTANT]
 >  仿真器的安装程序会检查运行 Visual Studio Emulator for Android 的先决条件。 如果先决条件不存在将显示警告，但并不需要这些条件。  
