@@ -2,14 +2,17 @@
 title: "极佳迁移 Studio (gmStudio) |Microsoft 文档"
 description: "可扩展、 自定义 VB6/ASP/COMM 向.NET 升级解决方案的重要迁移工具"
 ms.date: 09/05/2017
-ms.technology: devlang-vb
+ms.technology:
+- devlang-vb
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: visual-basic
+dev_langs:
+- visual-basic
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 8478f4f7cd3bc342f19b84a085b1889405ca6676
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
