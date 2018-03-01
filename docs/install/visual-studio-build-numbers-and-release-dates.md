@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 01/31/2018
+ms.date: 02/15/2018
 ms.topic: article
 helpviewer_keywords: 
 ms.technology:
@@ -13,17 +13,20 @@ ms.technology:
 ms.service: 
 ms.workload:
 - multiple
-ms.openlocfilehash: b6724896790d6fd3c6356bf63c6119f856640531
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 73b140b0d82174b8c433e0ab41afcbcc20074e64
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 生成号和发布日期
 下表列出了 Visual Studio 2017 的最新生成号和发布日期。
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.6.0 预览版 5.0 | 预览 | 2018/2/14 | 15.6.27413.0 |
+| 15.6.0 预览版 4.0 | 预览 | 2018/2/7 | 15.6.27406.0 |
+| 15.0.9 | 发布 | 2018/2/2 | 15.0.26228.23 |
 | 15.5.6 | 发布 | 2018 年 1 月 29 日 | 15.5.27130.2027 |
 | 15.5.5 | 发布 | 2018 年 1 月 25 日 | 15.5.27130.2026 |
 | 15.6.0 预览版 3.0 | 预览 | 2018 年 1 月 25 日 | 15.6.27323.2 |

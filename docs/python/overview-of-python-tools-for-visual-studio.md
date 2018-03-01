@@ -2,26 +2,26 @@
 title: "Visual Studio (Windows) 中的 Python 支持概述 | Microsoft Docs"
 description: "概述了 Visual Studio 中适用于 Python 的功能（亦称为“针对 Visual Studio 的 Python 工具 (PTVS)”），包括跨 Visual Studio 版本的问题和解答 (FAQ) 以及功能支持矩阵。"
 ms.custom: 
-ms.date: 01/09/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 8693e876d56a30b31cd873861c37dbef486e7284
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>在 Visual Studio (Windows) 中使用 Python
 
@@ -50,9 +50,10 @@ Windows 上的 Visual Studio 通过 Python 开发和数据科学工作负载 (Vi
 
 Python 工作负载还包括[用于 Python 的 Azure SDK](azure-sdk-for-python.md)，它用于简化从 Windows、Mac OS X 和 Linux 应用使用 Azure 服务的过程。
 
-有关视频介绍，请观看 Microsoft Virtual Academy 上的短期课程[针对 Visual Studio 的 Python 工具](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)（总共 22 分钟左右）。 
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关 Visual Studio 中 Python 的介绍，请[观看视频系列（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)（共 22 分钟）。 |
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 另请观看 Microsoft 虚拟学院的以下视频：<ul><li>[使用 Python 编程简介](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python 初学者：字符串和函数](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python 基础知识：列表和循环](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Python 热点问题](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>问题和解答
 
@@ -70,7 +71,7 @@ Python 工作负载还包括[用于 Python 的 Azure SDK](azure-sdk-for-python.m
 
 ## <a name="features-matrix"></a>功能矩阵
 
-如[安装指南](installing-python-support-in-visual-studio.md)所述，可在以下版本的 Visual Studio 中安装 Python 支持：
+如[安装指南](installing-python-support-in-visual-studio.md)所述，可在下述 Visual Studio 版本中安装 Python 功能：
 
 - [Visual Studio 2017（所有版本）](https://www.visualstudio.com/vs/)
 - [Visual Studio 2015（所有版本）](https://www.visualstudio.com/zh-cn/downloads/visual-studio-2015-downloads-vs)
@@ -81,7 +82,8 @@ Python 工作负载还包括[用于 Python 的 Azure SDK](azure-sdk-for-python.m
 - Visual Studio 2012（Pro 或更高版本）
 - Visual Studio 2010 SP1（Pro 或更高版本；需要 .NET 4.5）
 
-Visual Studio 各版本支持的功能：
+> [!Important]
+> 仅针对 Visual Studio 的最新版完全支持和维护这些功能。 可在早期版本中使用这些功能，但不主动维护它们。
 
 | Python 支持 | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
@@ -166,6 +168,8 @@ Visual Studio 各版本支持的功能：
 | 远程调试（Windows、Mac OS X、Linux） | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
 | 调试交互窗口 | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
+
+<a name="matrix-profiling"></a>
 
 | 分析 | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
