@@ -43,7 +43,6 @@
 #### [如何：收集网站性能数据](how-to-collect-performance-data-for-a-web-site.md)
 #### [如何：手动创建性能会话](how-to-manually-create-performance-sessions.md)
 #### [演练：发现性能问题](walkthrough-identifying-performance-problems.md)
-#### [PeopleTrax 示例（分析工具）](peopletrax-sample-profiling-tools.md)
 ### [配置性能会话](configuring-performance-sessions.md)
 #### [如何：引用 Windows 符号信息](how-to-reference-windows-symbol-information.md)
 #### [如何：选择收集方法](how-to-choose-collection-methods.md)
