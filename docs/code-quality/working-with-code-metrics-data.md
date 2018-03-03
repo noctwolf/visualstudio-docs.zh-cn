@@ -1,5 +1,5 @@
 ---
-title: "代码度量结果 Visual Studio 中的 |Microsoft 文档"
+title: "Visual Studio 中的代码度量结果窗口 |Microsoft 文档"
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -19,13 +19,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772533e74b214d48583e5d2dc1d64278416933df
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="working-with-code-metrics-data"></a>使用代码度量数据
+# <a name="using-the-code-metrics-results-window"></a>使用代码度量结果窗口
 
 **代码度量结果**窗口显示生成的代码度量值分析的数据。 有关代码度量数据值的详细信息，请参阅[代码度量值](../code-quality/code-metrics-values.md)。
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 
 - 上**视图**菜单上，选择**其他窗口** > **代码度量结果**。
 
-   **代码度量结果**显示窗口，即使不包含任何结果。
+**代码度量结果**显示窗口，即使不包含任何结果。
 
 ### <a name="to-view-code-metrics-details"></a>若要查看代码度量值详细信息
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 12/22/2017
 
 1. 单击**添加/删除列**按钮。
 
-     \-或-右键单击任何列标题，然后单击**添加/删除列**。
+     \- 或-右键单击任何列标题，然后单击**添加/删除列**。
 
 1. 在**添加/删除列**对话框中，清除该复选框为列你想要删除，然后单击**确定**。
 
@@ -131,5 +131,5 @@ VSTS 有关详细信息的工作项，请参阅[工作项 (VSTS)](/vsts/work/wor
 
 ## <a name="see-also"></a>请参阅
 
-[代码度量值](../code-quality/code-metrics-values.md)  
-[如何：生成代码度量数据](../code-quality/how-to-generate-code-metrics-data.md)
+- [代码度量值](../code-quality/code-metrics-values.md)
+- [如何： 生成代码度量数据](../code-quality/how-to-generate-code-metrics-data.md)

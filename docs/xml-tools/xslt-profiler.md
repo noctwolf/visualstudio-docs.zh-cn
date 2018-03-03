@@ -10,19 +10,22 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fc42d87dcd32fdc8a96c6295453f755e9623316c
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 95bad7dfdf38b4b8a8f2aa1a307cf7512732ae9c
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="xslt-profiler"></a>XSLT 探查器
 
-XSLT 探查器是一个性能分析探查器工具，可帮助您开发和调试 XSLT 文档。 开发人员可使用 XSLT 探查器来创建详细的 XSLT 性能报告，从而对 XSLT 代码中与性能相关的问题进行衡量和评估。 XSLT 探查器包含 XSL 和 XSLT 样式表优化的有用提示，这对需要最佳性能的基于 XSLT 的应用程序必不可少。
+XSLT 探查器是一个性能分析探查器工具，可帮助您开发和调试 XSLT 文档。 你可以测量，并对 XSLT 代码中的与性能相关问题评估来创建详细的 XSLT 性能报告。 XSLT 探查器包含 XSL 和 XSLT 样式表优化的有用提示，这对需要最佳性能的基于 XSLT 的应用程序必不可少。
 
 XSLT 探查器是 Visual Studio 的一部分，可以从**XML**菜单。
 
 ![XSLT 探查器](../xml-tools/media/profile-xslt-menu.png)
+
+> [!NOTE]
+> XSLT 探查器选项仅适用于 Visual Studio 2017 的 Enterprise edition。
 
 ## <a name="see-also"></a>请参阅
 

@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac4f31d1e93ed648bf2065bbff9dac8800c1d4f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：使用代码分析签入策略强制实现代码的可维护性
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何： 使用代码分析签入策略强制实现代码
 
-开发人员可以使用代码度量工具来测量的复杂性和可维护性其代码，但不是能作为签入策略的一部分中调用代码度量值。 但是，可以启用代码分析规则，验证你的代码符合代码度量标准，并强制实施通过签入策略规则。 有关代码度量值的详细信息，请参阅[代码度量值](../code-quality/code-metrics-values.md)。
+开发人员可以使用代码度量工具来测量的复杂性和可维护性其代码，但不是能作为签入策略的一部分中调用代码度量值。 但是，可以启用代码分析规则，验证你的代码符合代码度量值标准，并强制实施通过签入策略规则。 有关代码度量值的详细信息，请参阅[代码度量值](../code-quality/code-metrics-values.md)。
 
 你可以启用的继承深度、 类耦合、 可维护性指数和复杂性规则来借助代码分析签入策略强制实现代码。 所有四个。 这些规则在代码分析策略编辑器中"可维护性规则"类别下都找到。
 
