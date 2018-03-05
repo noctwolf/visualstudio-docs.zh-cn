@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0faae917aba237a85c6a01743d89cf66adf06296
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: c946f9d0fea5192f75d2fd0a9865827b6027ef50
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="profiling-python-code"></a>分析 Python 代码
 
@@ -38,6 +38,9 @@ ms.lasthandoff: 02/19/2018
 |   |   |
 |---|---|
 | ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关 Python 分析的演示，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567)（3 分 00 秒）。|
+
+> [!Note]
+> 目前，Visual Studio 仅支持此级别的全应用程序分析，但是我们当然希望听到你关于未来功能的反馈。 使用此页底部的[**提供产品反馈**按钮](#feedback)。
 
 ## <a name="profiling-for-ironpython"></a>IronPython 的分析
 
