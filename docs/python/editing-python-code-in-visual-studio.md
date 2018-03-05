@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 375508647c7a192b7b3869c4faaf80b8df2d0a4a
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="editing-python-code"></a>编辑 Python 代码
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense 可提供[完成](#completions)、[签名帮助](#signature-help)、[快速信息](#quick-info)和[代码着色](#code-coloring)等功能。 为了提高性能，IntelliSense 将取决于为项目中的每个 Python 环境生成的完成数据库。 添加、删除或更新包后可能需要刷新数据库。 数据库状态将显示在“IntelliSense”选项卡上的“Python 环境”窗口（解决方案资源管理器的同级）中（请参阅 [Python 环境](managing-python-environments-in-visual-studio.md)）。 
+IntelliSense 可提供[完成](#completions)、[签名帮助](#signature-help)、[快速信息](#quick-info)和[代码着色](#code-coloring)等功能。 为了提高性能，IntelliSense 将取决于为项目中的每个 Python 环境生成的完成数据库。 添加、删除或更新包后可能需要刷新数据库。 数据库状态将显示在“IntelliSense”选项卡上的“Python 环境”窗口（“解决方案资源管理器”的同级）中（请参阅 [Python 环境窗口引用](python-environments-window-tab-reference.md#intellisense-tab)）。
 
 ### <a name="completions"></a>完成
 

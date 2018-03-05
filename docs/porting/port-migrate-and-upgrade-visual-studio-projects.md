@@ -1,7 +1,7 @@
 ---
 title: "移植、迁移和升级 Visual Studio 项目 | Microsoft Docs"
 ms.custom: 
-ms.date: 02/12/2018
+ms.date: 02/21/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -23,11 +23,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fd23e22024e493256d2ba839998d561e2894a80
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: 035bf2c514988dc65fe5182ad4b5371915dd2dce
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>移植、迁移和升级 Visual Studio 项目
 
@@ -68,7 +68,7 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 | Silverlight | Visual Studio 2017 不支持 Silverlight 项目。 若要继续使用 Silverlight 应用程序，请继续使用 Visual Studio 2015。 |
 | SQL Server Reporting Services 和 SQL Server Analysis Services（SSRS、SSDT、SSAS、MSAS） | 通过 Visual Studio 库中的两个扩展来提供对这些项目类型的支持：[Microsoft Analysis Services 建模项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects)和 [Microsoft Reporting Services 项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 Visual Studio 2017 的数据存储和处理工作负载中还包括 SSDT 支持。 |
 | SQL Server Integration Services (SSIS) | 可通过 SQL Server Data Tools (SSDT) 获取 Visual Studio 2017 支持。 有关详细信息，请参阅 [SQL Server Integration Services 博客](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/)。 |
-| Visual C++ | 可以使用 Visual Studio 2017 按原样打开 Visual Studio 2015 中创建的解决方案和项目。 在较旧版本的 Visual Studio 中创建的项目可能需要进行升级或将项目重定向到较新工具集，才能使用 Visual Studio 2017 进行构建。 有关详细信息，请参阅 [Visual C++ 移植和升级指南](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide)。 |
+| Visual C++ | Visual Studio 2017 可用于在 Visual Studio 的早期版本中（追溯到 Visual Studio 2010 ）创建的项目中工作。 首次打开项目时，可以选择升级到最新的编译器和工具集，或者继续使用原始编译器和工具集。 如果选择继续使用原始编译器和工具集，Visual Studio 2017 将不会修改项目文件，并使用早期版本 Visual Studio 安装中的工具集来生成项目。 这意味着你仍可以在 Visual Studio 的原始版本中打开项目（如有必要）。 有关详细信息，请参阅 [使用 Visual Studio 中的本机多重目标生成旧项目](/cpp/porting/use-native-multi-targeting)。 |
 | Visual Studio 扩展性/VSIX | 更新 MinimumVersion 14.0 或更低版本中的项目以声明 MinimumVersion 15.0，这样可防止在早期版本的 Visual Studio 中打开该项目。 若要允许在早期版本中打开项目，请将 MinimumVersion 设置为 `$(VisualStudioVersion)`。 另请参阅[如何：将扩展性项目迁移到 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
 | Visual Studio 实验室管理工具版 | 你可以使用 Microsoft 测试管理器或 Visual Studio 2010 SP1 及更高版本打开在以上任一版本中创建的环境。 但对于 Visual Studio 2010 SP1，在可以创建环境之前，Microsoft 测试管理器的版本必须与 Team Foundation Server 的版本匹配。 |
 | Visual Studio Tools for Apache Cordova | 可以在 Visual Studio 2017 中打开项目，但此项目不具有向后兼容性。 从 Visual Studio 2015 中打开某个项目时，系统将提示允许修改项目。 此修改会将项目升级为使用工具集而非 `taco.json` 文件管理 Cordova 库、该库的平台和插件以及该库的节点/npm 依赖关系的版本控制。 有关详细信息，请参阅[迁移指南](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015)。 |

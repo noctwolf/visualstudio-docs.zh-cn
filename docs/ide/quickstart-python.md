@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 00b9d59ad1736d212dcd9fff3c097e81e0ad2a60
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>快速入门：使用 Visual Studio 创建第一个 Python Web 应用
 
@@ -71,7 +71,7 @@ Python 中的 Web 应用几乎总是使用众多可用 Python 库中的一个来
 
 有关 Falcon 的详细信息，请访问 [falconframework.org](https://falconframework.org/)。
 
-请注意，开发人员通常会创建一个“虚拟环境”用于安装特定项目的库，而不是在全局环境中安装库。 Visual Studio 中的许多 Python 项目模板都包含 `requirements.txt` 文件，该文件列出了模板所依赖的库。 从其中一个模板创建项目会触发创建用于安装库的虚拟环境。 有关详细信息，请参阅 [Python 环境 - 虚拟环境](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments)。
+请注意，开发人员通常会创建一个“虚拟环境”用于安装特定项目的库，而不是在全局环境中安装库。 Visual Studio 中的许多 Python 项目模板都包含 `requirements.txt` 文件，该文件列出了模板所依赖的库。 从其中一个模板创建项目会触发创建用于安装库的虚拟环境。 有关详细信息，请参阅[使用虚拟环境](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
 
 ## <a name="add-a-code-file"></a>添加代码文件
 

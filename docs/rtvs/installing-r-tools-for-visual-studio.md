@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: c4ca5a7fea1a84c4f4a38396daebd3e01412d9d7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>如何安装针对 Visual Studio 的 R 工具
 
@@ -44,7 +44,7 @@ Visual Studio for Mac 目前尚不支持 RTVS。
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>在 Visual Studio 2017 中安装 RTVS
 
-1. 运行 Visual Studio 安装程序。 （如果尚未安装 Visual Studio，请参阅[下载](https://www.visualstudio.com/downloads/)。）在 Windows 7 上，请确保安装程序已更新，显示 Visual Studio 版本 15.2（内部版本 26430.12）或更高版本。
+1. 运行 Visual Studio 安装程序。 （如果尚未安装 Visual Studio，请参阅[下载](https://www.visualstudio.com/downloads/)。）在 Windows 7 上，请确保安装程序已更新，显示 Visual Studio 2017 版本 15.2 内部版本 26430.12 或更高版本。
 
 1. 选择“数据科学和分析应用程序”工作负载：
 
@@ -81,12 +81,12 @@ RTVS for Visual Studio 2015 安装在以下位置：`%ProgramFiles(x86)%\Microso
 
 脱机安装适用于未连接到 Internet 的计算机：
 
-1. 按照说明创建当前版本 Visual Studio 的脱机安装程序： 
+1. 按照说明创建当前版本 Visual Studio 的脱机安装程序：
 
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. 对于 Visual Studio 2015，请从 [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) 和 [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip) 下载脱机 RTVS 安装程序。 
+1. 对于 Visual Studio 2015，请从 [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) 和 [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip) 下载脱机 RTVS 安装程序。
 
 1. 从脱机安装程序安装 Visual Studio 和 RTVS。
 

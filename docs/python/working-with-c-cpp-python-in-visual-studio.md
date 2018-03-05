@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31d36ede3293a72db06e9919545dafb779cee252
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -219,7 +219,7 @@ ms.lasthandoff: 02/09/2018
 1. 将目标配置设置为“发布”并再次生成 C++ 项目来验证代码。 如果遇到错误，请检查以下事例：
     - 无法找到 Python.h：验证项目属性中的“C/C ++> 常规> 附加包含目录”中的路径是否指向 Python 安装的 `include` 文件夹。
     - 无法找到 Python 库：验证项目属性中的“链接器 > 常规> 附加库目录”中的路径是否指向 Python 安装的 `libs` 文件夹。
-    - 与目标体系结构相关的链接器错误：更改 C++ 目标的项目体系结构以匹配 Python 安装。
+    - 与目标体系结构相关的链接器错误：更改 C++ 目标的项目体系结构以匹配 Python 安装。 例如，如果你将 C++ 项目的目标定为 x64，但是 Python 安装是 x86，则将 C++ 项目更改为目标 x86。
 
 ## <a name="test-the-code-and-compare-the-results"></a>测试代码和比较结果
 

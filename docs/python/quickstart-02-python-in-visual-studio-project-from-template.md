@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2af5a7412b6d4a6554d4bc11f5877541a3384115
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 648c1e2b4ee3a5c9bc10d74ee384a08bc5ddce64
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入门：从 Visual Studio 中的模板创建 Python 项目
 
@@ -93,6 +93,6 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>请参阅
 
-- [为现有 Python 解释器创建环境](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)。
+- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)。
 - [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)。
 - [安装位置](installing-python-support-in-visual-studio.md#install-locations)。

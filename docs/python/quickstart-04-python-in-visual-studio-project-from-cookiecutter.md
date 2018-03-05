@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67cf109b0964bcb9eca104ec138f968e273111e9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4b9b7a51436eeeb67634714216f9a583de679a07
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入门：从 Cookiecutter 模板创建项目
 
@@ -55,6 +55,6 @@ ms.lasthandoff: 02/09/2018
 ## <a name="see-also"></a>请参阅
 
 - [使用 Cookiecutter 扩展](using-python-cookiecutter-templates.md)
-- [为现有 Python 解释器创建环境](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)。
+- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)。
 - [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)。
 - [安装位置](installing-python-support-in-visual-studio.md#install-locations)。

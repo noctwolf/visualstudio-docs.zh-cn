@@ -29,4 +29,4 @@
 
 ## <a name="see-also"></a>请参阅
 
-- [为现有 Python 解释器创建环境](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [手动标识现有的 Python 环境](../python/managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)

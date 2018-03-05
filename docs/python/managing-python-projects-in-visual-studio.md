@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-projects"></a>Python 项目
 
@@ -54,7 +54,7 @@ Visual Studio 提供多种 Python 项目模板用于快速设置多个应用程�
 > [!Tip]
 > 如果从项目中删除了所选启动文件而不选择新文件，则运行项目会导致 Python 输出窗口显示后几乎立即消失。 如果遇到此行为，请检查你是否拥有分配的启动文件。 此外，若要在这种情况下使输出窗口保持打开状态，请选择“属性”，选择“调试”选项卡，然后将 `-i` 添加到**解释器参数**字段。 此参数会导致解释器在程序完成后进入交互模式，从而使窗口保持打开状态，直到按 Ctrl+Z、Enter 退出为止。
 
-新项目将始终与默认全局 Python 环境相关联。 若要将项目与其他环境（包括虚拟环境）相关联，请右键单击项目中的“Python 环境”节点，选择“添加/删除 Python 环境”，然后选择所需的环境。 若要更改活动的环境，请右键单击所需环境，并选择“激活环境”，如下所示。 有关详细信息，请参阅 [Python 环境](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project)。
+新项目将始终与默认全局 Python 环境相关联。 若要将项目与其他环境（包括虚拟环境）相关联，请右键单击项目中的“Python 环境”节点，选择“添加/删除 Python 环境”，然后选择所需的环境。 若要更改活动的环境，请右键单击所需环境，并选择“激活环境”，如下所示。 有关详细信息，请参阅[选择项目环境](selecting-a-python-environment-for-a-project.md)。
 
 ![激活 Python 项目的环境](media/projects-activate-environment.png)
 
@@ -71,7 +71,7 @@ Visual Studio 提供多种方法用于从零开始，或根据现有代码设置
 | 模板 | 描述 |
 | --- | --- |
 | [根据现有 Python 代码](#creating-a-project-from-existing-files) | 从文件夹结构中的现有 Python 代码创建 Visual Studio 项目。  |
-| Python 应用程序 | 新 Python 应用程序的基本项目结构具有一个空的源文件。 默认情况下，项目在默认全局环境的控制台解释器中运行，通过[分配其他环境](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project)可以更改环境。 |
+| Python 应用程序 | 新 Python 应用程序的基本项目结构具有一个空的源文件。 默认情况下，项目在默认全局环境的控制台解释器中运行，通过[分配其他环境](selecting-a-python-environment-for-a-project.md)可以更改环境。 |
 | [Azure 云服务](python-azure-cloud-service-project-template.md) | 使用 Python 编写的 Azure 云服务项目。 |
 | [Web 项目](python-web-application-project-templates.md) | 基于各种框架（包括 Bottle、Django、Flask、和 Flask/Jade）的 Web 服务器项目。 |
 | IronPython 应用程序 | 与 Python 应用程序模板类似，但使用 IronPython 时，默认启用 .NET 互操作并通过 .NET 语言进行混合模式调试。 |
@@ -136,7 +136,7 @@ Visual Studio 项目支持将引用添加到项目和扩展，添加的引用将
 
 如果磁盘上更新了扩展模块，Visual Studio 会在后台重新分析模块。 此操作对运行时行为没有任何影响，但分析完成之前，某些完成功能不可用。
 
-你可能还需要将[搜索路径](managing-python-environments-in-visual-studio.md#search-paths)添加到包含该模块的文件夹。
+你可能还需要将[搜索路径](search-paths.md)添加到包含该模块的文件夹。
 
 ### <a name="net-projects"></a>.NET 项目
 

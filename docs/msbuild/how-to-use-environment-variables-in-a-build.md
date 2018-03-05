@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 246f13b340c0acea519dccd323c1e7b2c28dd344
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3901e9df584ab9acd6bef86825a587026ae1a9e9
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>如何：在生成中使用环境变量
 在生成项目时，有时经常需要使用非项目文件或构成项目的文件中的信息来设置生成选项。 此信息通常存储在环境变量中。  
@@ -68,6 +68,6 @@ ms.lasthandoff: 02/09/2018
 ```  
   
 ## <a name="see-also"></a>请参阅  
-    [MSBuild ](../msbuild/msbuild.md)
-    [MSBuild Properties](../msbuild/msbuild-properties.md)
- [如何：使用不同选项生成相同的源文件](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[MSBuild ](../msbuild/msbuild.md)  
+[MSBuild 属性](../msbuild/msbuild-properties.md)  
+[如何：使用不同选项生成相同的源文件](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  

@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 97e9838e46a4e0158b281f243ffda7d46044ef2d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 962a7a5685a5d4a1d4ad5466710377d4885ad398
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="creating-visual-data-plots-with-r"></a>使用 R 创建可视数据图
 
@@ -28,9 +28,9 @@ ms.lasthandoff: 02/09/2018
 
 ![绘制英雄形象](media/plotting-hero-image.png)
 
-以下视频（2 分 02 秒）简要介绍了 RTVS 中的绘图：
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZTbKmz5RSgY" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | [观看视频 (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) 了解使用 R 进行绘制（2 分 02 秒）。 |
 
 ## <a name="the-plot-window"></a>绘图窗口
 
