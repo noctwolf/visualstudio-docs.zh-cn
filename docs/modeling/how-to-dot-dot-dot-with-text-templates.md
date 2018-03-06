@@ -24,7 +24,7 @@ ms.lasthandoff: 02/09/2018
   
  文本模板的常规介绍，阅读[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。  
   
-## <a name="how-to-"></a>如何。。。  
+## <a name="how-to-"></a>如何 ...  
   
 ### <a name="generate-part-of-my-application-code"></a>生成我的应用程序代码的一部分  
  我有一种配置或*模型*文件或数据库中。 我的代码的一个或多个部件取决于该模型。  

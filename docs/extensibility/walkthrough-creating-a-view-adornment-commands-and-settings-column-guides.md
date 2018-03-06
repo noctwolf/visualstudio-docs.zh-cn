@@ -4,15 +4,17 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -54,7 +56,7 @@ ms.lasthandoff: 12/22/2017
   
 -   没有`ColumnGuideCommands`.vsct 文件中声明的对象，实现用户命令并挂钩命令的命令处理程序。  
   
- **VSIX**。  使用**文件 &#124;新增功能。。。**命令以创建项目。  在左侧的导航窗格中选择 C# 下的扩展节点并选择**VSIX 项目**右窗格中。  输入 ColumnGuides 的名称，然后选择**确定**以创建该项目。  
+ **VSIX**。  使用**文件 &#124;新增功能 ...**命令以创建项目。  在左侧的导航窗格中选择 C# 下的扩展节点并选择**VSIX 项目**右窗格中。  输入 ColumnGuides 的名称，然后选择**确定**以创建该项目。  
   
  **查看修饰**。  在解决方案资源管理器中的项目节点上按右指针按钮。  选择**添加 &#124;新建项...**命令以添加新视图修饰项。  选择**扩展性 &#124;编辑器**左侧的导航窗格中，选择**编辑器视区修饰**右窗格中。  输入名称 ColumnGuideAdornment 作为项目名称，然后选择**添加**以将其添加。  
   
