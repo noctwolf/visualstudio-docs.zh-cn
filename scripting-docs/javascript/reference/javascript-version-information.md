@@ -20,11 +20,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0503abb3d62e9fd61149b884a7b58a685fbc62c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a2335c3697be9ef3e2d674ac37047ddd3de242d
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-version-information"></a>JavaScript 版本信息
 不同版本的 JavaScript 支持不同的 JavaScript 元素集。 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 应用支持 Internet Explorer 中略微不同的功能集。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 10/27/2017
  下表显示支持特定语言元素的 Internet Explorer 文档模式（以及表示 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 和 [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)]的应用商店应用）。 支持给定元素的文档模式在显示时带有字母 **Y**，不支持给定元素的文档模式在显示时带有字母 **N**。  
   
 > [!IMPORTANT]
->  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)]（Windows 10 中的边缘浏览器）不包括对旧的文档模式的支持。 对 [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] 应用的支持始于 Windows Phone 8.1。 实验功能 (关于： 标志) 由"Exp"指示。  
+>  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] （Windows 10 中的 edge 浏览器） 不包括对旧的文档模式的支持。 对 [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] 应用的支持始于 Windows Phone 8.1。 实验功能 (关于： 标志) 由"Exp"指示。  
   
  该表包含摘要信息。 有关更具体的信息，请参阅语言元素的文档。  
   
@@ -262,8 +262,8 @@ ms.lasthandoff: 10/27/2017
 |[message 属性](../../javascript/reference/message-property-error-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[min 函数](../../javascript/reference/math-min-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[MIN_VALUE 常量](../../javascript/reference/number-constants-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
-|[取模赋值运算符 (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
-|[取模运算符 (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|Y|Y|Y|Y|Y|Y|Y|  
+|[余数赋值运算符 (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
+|[余数运算符 （%）](../../javascript/reference/modulus-operator-decrementjavascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[moveFirst 方法](../../javascript/reference/movefirst-method-enumerator-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[moveNext 方法](../../javascript/reference/movenext-method-enumerator-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[multiline 属性](../../javascript/reference/multiline-property-regular-expression-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
@@ -412,7 +412,7 @@ ms.lasthandoff: 10/27/2017
 |[write 函数](../../javascript/reference/debug-write-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[writeln 函数](../../javascript/reference/debug-writeln-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
   
- \*支持 DOM 对象，但不是用户定义的对象。 可以指定 `enumerable` 和 `configurable` 特性，但不使用它们。  
+ \* 支持 DOM 对象，但不是用户定义的对象。 可以指定 `enumerable` 和 `configurable` 特性，但不使用它们。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [定义文档兼容性](http://go.microsoft.com/fwlink/?LinkId=208537)
