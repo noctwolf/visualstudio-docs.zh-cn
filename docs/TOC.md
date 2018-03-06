@@ -23,7 +23,7 @@
 ### 在网络上安装
 #### [创建基于网络的 Visual Studio 安装](install/create-a-network-installation-of-visual-studio.md)
 #### [更新基于网络的 Visual Studio 安装](install/update-a-network-installation-of-visual-studio.md)
-#### [在防火墙或代理服务器后安装和使用 Visual Studio](install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+#### [在防火墙或代理服务器后面安装和使用 Visual Studio](install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 ##### [安装或使用 Visual Studio 时的网络错误疑难解答](install/troubleshooting-network-related-errors-in-visual-studio.md)
 ### 在企业中部署
 #### [通过响应文件自动执行 Visual Studio 安装](install/automated-installation-with-response-file.md)
@@ -33,6 +33,8 @@
 #### [控制 Visual Studio 部署的更新](install/controlling-updates-to-visual-studio-deployments.md)
 ### 管理安装
 #### [用于检测和管理 Visual Studio 实例的工具](install/tools-for-managing-visual-studio-instances.md)
+### 管理订阅
+#### [Visual Studio 订阅：管理员概述](/visualstudio/subscriptions/admin-responsibilities) 
 ### [帮助查看器管理员指南](ide/help-viewer-administrator-guide.md)
 #### [Help Content Manager 的命令行参数](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Help Content Manager 重写](ide/help-content-manager-overrides.md)
@@ -46,7 +48,7 @@
 # 快速入门
 ## [Visual Studio 入门](ide/quickstart-ide-orientation.md)
 ## [项目和解决方案](ide/quickstart-projects-solutions.md)
-## [在编辑器中编写代码](ide/quickstart-editor.md)
+## [使用编辑器](ide/quickstart-editor.md)
 ## [个性化设置主题和文本颜色](ide/quickstart-personalize-the-ide.md)
 ## [C++：创建控制台应用](ide/getting-started-with-cpp-in-visual-studio.md)
 ## [Python：创建 Web 应用](ide/quickstart-python.md)
@@ -98,7 +100,7 @@
 #### [Visual Studio IDE 64 位支持](ide/visual-studio-ide-64-bit-support.md)
 ### [不使用项目或解决方案而进行开发（“打开文件夹”）](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 #### [自定义生成和调试任务](ide/customize-build-and-debug-tasks-in-visual-studio.md)
-### [在编辑器中编写代码](ide/writing-code-in-the-code-and-text-editor.md)
+### [使用编辑器](ide/writing-code-in-the-code-and-text-editor.md)
 #### [查找和替换文本](ide/finding-and-replacing-text.md)
 ##### [使用正则表达式](ide/using-regular-expressions-in-visual-studio.md)
 ##### [“查找-命令”框](ide/find-command-box.md)
