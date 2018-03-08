@@ -12,11 +12,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2276c65dd0ed0478003c1e4f2c99683eb88b0ac8
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: b91c4dc3cc3bc3550f11bc60c95f1c3ed511cf62
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用适用于 C++ 的 Boost.Test
 
@@ -35,18 +35,18 @@ Boost.Test 需要[Boost](http://www.boost.org/)！ 如果未安装 Boost，则�
 1. 安装 Boost.Test 动态或静态库：
 
     - 运行 vcpkg install boost-test 以安装 Boost.Test 动态库。
-    
+
        - 或 -
-       
+
     - 运行 vcpkg install boost-test:x86-windows-static 以安装 Boost.Test 静态库。
 
 1. 运行 vcpkg integrate install，使用该库以及 Boost 标头和二进制文件的包含路径配置 Visual Studio。
 
 ## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>添加项模板（Visual Studio 2017 版本 15.6 及更高版本）
 
-1. 要创建用于测试的 .cpp 文件，右键单击“解决方案资源管理器”中的项目节点，然后选择“添加新项”。 
- 
-![Boost.Test 项模板](media/boost_test_item_template.png "Boost.Test 项模板")
+1. 要创建用于测试的 .cpp 文件，右键单击“解决方案资源管理器”中的项目节点，然后选择“添加新项”。
+
+   ![Boost.Test 项模板](media/boost_test_item_template.png "Boost.Test 项模板")
 
 1. 新文件包含示例测试方法。 构建项目以启用“测试资源管理器”来发现方法。
 
@@ -54,14 +54,14 @@ Boost.Test 需要[Boost](http://www.boost.org/)！ 如果未安装 Boost，则�
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>创建测试项目（Visual Studio 2017 版本 15.5）
 
-在 Visual Studio 2017 版本 15.5 中，没有预配置测试项目或项模板可用于 Boost.Test。 因此，必须创建和配置控制台应用程序项目来存放测试。 
+在 Visual Studio 2017 版本 15.5 中，没有预配置测试项目或项模板可用于 Boost.Test。 因此，必须创建和配置控制台应用程序项目来存放测试。
 
 1. 在“解决方案资源管理器”中，右键单击解决方案节点，然后选择“添加”“新建项目...” > 。
 
 1. 在左窗格中，选择“Visual C++” > “Windows 桌面”，然后选择“Windows 控制台应用程序”模板。
 
 1. 为项目提供名称，然后选择“确定”。
-1. 删除 .cpp 文件中的 `main` 功能。 
+1. 删除 .cpp 文件中的 `main` 功能。
 
 1. 如果你使用的是 Boost.Test 的单标头或动态库版本，请转到[添加 include 指令](#add_include_directives)。 如果你使用的是静态库版本，则必须执行一些额外的配置：
 
@@ -126,7 +126,7 @@ BOOST_AUTO_TEST_CASE(my\_boost_test)
 ```
 
 ## <a name="write-and-run-tests"></a>编写和运行测试
-现在已准备就绪，可以编写和运行 Boost Test。 有关测试宏的信息，请参阅 [Boost Test 库文档](http://www.boost.org/doc/libs/1_38_0/libs/test/doc/html/index.html)。 有关使用“测试资源管理器”发现、运行和分组测试的信息，请参阅[使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)。
+现在已准备就绪，可以编写和运行 Boost Test。 有关测试宏的信息，请参阅 [Boost Test 库文档](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html)。 有关使用“测试资源管理器”发现、运行和分组测试的信息，请参阅[使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)。
 
 ## <a name="see-also"></a>请参阅
 [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)

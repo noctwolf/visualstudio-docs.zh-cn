@@ -14,11 +14,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45cd94161f492ea0326ff08fe40727149a733556
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 29260d2f33c9debfe698cb6af30f711e9617cdd1
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>将类型同步到文件名或反向操作
 
@@ -49,8 +49,8 @@ ms.lasthandoff: 02/09/2018
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名文件为 TypeName.cs”，其中“TypeName”是已选定的类型名称。
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名类型为 _Filename_”，其中“Filename”是当前文件名。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名文件为 TypeName.cs”，其中“TypeName”是已选定的类型名称。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名类型为 _Filename_”，其中“Filename”是当前文件名。
    - **鼠标**
      - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名文件为 TypeName.cs”，其中“TypeName”是已选定的类型名称。
      - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名类型为 _Filename_”，其中“Filename”是当前文件名。

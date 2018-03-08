@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -30,7 +31,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 898d0325b352f3ea8982dc68cf5a99a07181a31c
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -40,12 +42,12 @@ ms.lasthandoff: 01/10/2018
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Office 文档上的 Windows 窗体控件概述
   Windows 窗体控件是用户可与之交互以便输入或操作数据的对象。 在 Microsoft Office Excel 和 Microsoft Office Word 的文档级项目中，你可以在设计时向项目中的文档或工作簿添加 Windows 窗体控件，也可以在运行时以编程方式添加这些控件。 在 Excel 或 Word 的 VSTO 外接程序中，可以在运行时以编程方式向任何打开的文档或工作表添加这些控件。  
   
- 有关详细信息，请参阅 [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
+ 有关详细信息，请参阅 [如何：为 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="using-windows-forms-controls"></a>使用 Windows 窗体控件  
- 可以将 Windows 窗体控件添加到文档以及可自定义用户界面 (UI) 元素中，可自定义用户界面元素包括操作窗格、自定义任务窗格和 Windows 窗体。 通常，Windows 窗体控件在文档上的行为与在其他这些 UI 元素上的行为相同，但是也存在一些差异。 有关信息，请参阅 [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)。  
+ 可以将 Windows 窗体控件添加到文档以及可自定义用户界面 (UI) 元素中，可自定义用户界面元素包括操作窗格、自定义任务窗格和 Windows 窗体。 通常，Windows 窗体控件在文档上的行为与在其他这些 UI 元素上的行为相同，但是也存在一些差异。 有关信息，请参阅 [Office 文档上的 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)。  
   
  将 Windows 窗体控件添加到文档还是添加到其他某个 UI 元素的决定，取决于多个因素。 设计解决方案的 UI 时，请考虑下表中描述的 Windows 窗体控件的用法。  
   
@@ -75,7 +77,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="adding-windows-forms-controls-programmatically"></a>以编程方式添加 Windows 窗体控件  
  可以在运行时向 Word 文档和 Excel 工作表添加 Windows 窗体控件。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 提供了用于添加最常用的 Windows 窗体控件的帮助程序方法。 利用这些帮助程序方法，可以快速向 Office 文档添加控件并访问这些控件的组合的 Windows 窗体控件功能及 Office 相关功能。  
   
- 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 ## <a name="using-windows-forms-controls-in-document-level-projects"></a>在文档级项目中使用 Windows 窗体控件  
  在文档上使用 Windows 窗体控件的某些方面是特定于文档级项目的，它们允许你使用 Visual Studio 设计器设计文档的 UI。  
@@ -116,7 +118,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="preventing-old-data-from-appearing-in-excel-workbooks-during-loading"></a>防止加载过程中在 Excel 工作簿中显示旧数据  
  在设计时将 Windows 窗体控件添加到文档或工作表后，在用户关闭文档时，这些控件将保留在文档中。 在设计时添加的控件也称为 *静态控件*。  
   
- 打开一个包含静态控件的 Excel 工作簿后，该工作簿会在 ActiveX 控件中显示静态控件的位图，直到自定义项代码运行并加载实际控件。 Excel 创建此位图，并在每次保存工作簿时将位图存储在工作簿中。 位图显示上次保存工作簿时控件的外观，包括控件显示的所有数据。 有关包含 Windows 窗体控件和位图的 ActiveX 控件的详细信息，请参阅 [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)。  
+ 打开一个包含静态控件的 Excel 工作簿后，该工作簿会在 ActiveX 控件中显示静态控件的位图，直到自定义项代码运行并加载实际控件。 Excel 创建此位图，并在每次保存工作簿时将位图存储在工作簿中。 位图显示上次保存工作簿时控件的外观，包括控件显示的所有数据。 有关包含 Windows 窗体控件和位图的 ActiveX 控件的详细信息，请参阅 [Office 文档上的 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)。  
   
  某些情况下，代码不会进行加载而仅显示位图，例如当用户在设计模式下打开工作簿时。 而且，如果用户在未安装 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的计算机上打开工作簿，自定义项将无法运行以加载控件，因此只有控件的位图是可见的。 在保存工作簿并将其发送给其他用户之前，应总是从工作簿上的控件中删除个人信息，以确保不会意外泄漏你的个人信息。  
   
@@ -138,7 +140,7 @@ ms.lasthandoff: 01/10/2018
   
 -   若要将控件作为浮点形状添加到文档中，请使用接受此控件的左坐标和上坐标的重载。  
   
- 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
  如果在 Visual Studio 设计器中打开 Word 模板，则模板上的非内联控件可能不可见，因为 Visual Studio 在“普通”  视图中打开该模板。 若要查看控件，请将视图更改为“打印布局” 。  
   

@@ -9,33 +9,34 @@ ms.date: 11/13/2017
 ms.topic: how to article
 ms.devlang: multiple
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b45aa6b2ddfb37b99f7f1d92d4d2b205e905488
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1221459107a807c267583e46b6449dc63be094c1
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>在 Visual Studio 中通过 Azure 机器学习库创建 AI 项目
 
-Azure 机器学习与 Visual Studio Tools for AI 集成在一起。 可以使用它将机器学习作业提交到远程计算目标，如 Azure 虚拟机、Spark 群集等。 详细了解 [Azure 机器学习试验](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration) 
+Azure 机器学习与 Visual Studio Tools for AI 集成在一起。 可以使用它将机器学习作业提交到远程计算目标，如 Azure 虚拟机、Spark 群集等。 详细了解 [Azure 机器学习试验](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration)
 
 [安装 Visual Studio Tools for AI](installation.md) 之后，可以使用 Azure 机器学习示例库中的预制方案轻松地创建新 Python 项目。
 
-> [!NOTE] 
-> 必须安装 Azure 机器学习工作台。 要进行安装，请参阅 [Azure 机器学习安装快速入门](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation) 
+> [!NOTE]
+> 必须安装 Azure 机器学习工作台。 要进行安装，请参阅 [Azure 机器学习安装快速入门](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation)
 
-1. 启动 Visual Studio。 通过打开“AI 工具”菜单，然后选择“选择群集”，来打开“服务器资源管理器”  
+1. 启动 Visual Studio。 通过打开“AI 工具”菜单，然后选择“选择群集”，来打开“服务器资源管理器”
 
     ![群集选择器](media\create-project-gallery\select-cluster.png)
 
 1. 通过在服务器资源管理器中右键单击“Azure 机器学习”节点，然后选择“登录”并按照说明进行操作，来登录 Azure 机器学习订阅。
 
     ![登录](media\create-project-gallery\azureml-login.png)
- 
-2. 选择“AI 工具”>“Azure 机器学习示例库”。 
-    
+
+2. 选择“AI 工具”>“Azure 机器学习示例库”。
+
     ![示例库](media\create-project-gallery\gallery.png)
 
 1. 对于本快速入门，选择“使用 TensorFlow 的 MNIST”示例，然后单击“安装”。 提供以下内容：
@@ -47,14 +48,14 @@ Azure 机器学习与 Visual Studio Tools for AI 集成在一起。 可以使用
  - **添加到解决方案**：确定是添加到当前 Visual Studio 解决方案还是创建并打开新解决方案
  - **项目路径**：用于保存代码的位置
  - **项目名称**：键入 TensorFlowMNIST
-   
+
 ![使用 Python 应用程序模板时生成的项目](media/create-project-gallery/new-AzureSampleProject.png)
 
 1. Visual Studio 随即创建项目文件（磁盘上的 `.pyproj` 文件）以及示例中定义的其他文件。 对于“MNIST”模板，项目包含多个文件。
 
     ![mnist](media\create-project-gallery\azml-mnist.png)
 
-1. 将作业提交到 Azure 机器学习。 
+1. 将作业提交到 Azure 机器学习。
 
     ![mnist](media\create-project-gallery\submit-azml.png)
 

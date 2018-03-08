@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 1da2af4fd9ed552ad9e0232acfb6a7567718b5c6
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 15f34d6e512da839166b9c8bb9165a6cefbc9598
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>用 MSBuild 并行生成多个项目
 通过 MSBuild，可通过并行运行多个项目来更快地生成它们。 若要并行运行生成，请在一台多核或多处理器计算机上采用以下设置：  
@@ -44,7 +44,7 @@ ms.lasthandoff: 02/09/2018
  下面的示例指示 MSBuild 使用 3 个辅助进程。 如果使用此配置，MSBuild 可以同时生成三个项目。  
   
 ```  
-msbuild.exe myproj.proj /maxcpucount:3  
+msbuild.exe myproj.proj /maxcpucount:3   
 ```  
   
 ## <a name="buildinparallel-task-parameter"></a>BuildInParallel 任务参数  

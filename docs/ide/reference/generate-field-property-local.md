@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8de048928286017d4e6f79bda6aff804b49d3150
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4e5da77f3053aabc2e8e4813c8ef5e7fb3407b5f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>在 Visual Basic 中生成字段、属性或局部变量
 
@@ -47,11 +47,11 @@ ms.lasthandoff: 02/09/2018
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
      - 右键单击并选择“快速操作和重构”菜单。
-     - 将鼠标悬停在红色波浪线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已置于红色波浪线上，则此图标显示在左侧）。
+     - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
+     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
 
     ![生成字段/属性/本地内容预览](media/field-preview-cs.png)
 
@@ -72,5 +72,5 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>请参阅
 
-[代码生成](../code-generation-in-visual-studio.md)  
-[预览更改](../../ide/preview-changes.md)
+- [代码生成](../code-generation-in-visual-studio.md)
+- [预览更改](../../ide/preview-changes.md)

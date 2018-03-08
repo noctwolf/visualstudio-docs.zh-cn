@@ -16,11 +16,11 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d0a532e2e3e5bb8afa4a3c3dc9720134a1b7e8b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ab91e95d699b4a7fcc27ca1f6bcdf43b51af9c26
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>将 Get 方法转换为属性或反向转换
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/09/2018
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“用属性替换方法”。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“用属性替换方法”。
    - **鼠标**
      - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“用属性替换方法”。
 
@@ -73,7 +73,7 @@ public int MyValue
 
 功能：将属性转换为 Get 方法
 
-时机：有涉及多个立即设置或获取值的属性时 
+时机：有涉及多个立即设置或获取值的属性时
 
 ### <a name="how-to"></a>操作说明
 
@@ -82,7 +82,7 @@ public int MyValue
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“用方法替换属性”。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“用方法替换属性”。
    - **鼠标**
      - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“用方法替换属性”。
 
@@ -90,5 +90,5 @@ public int MyValue
 
 ## <a name="see-also"></a>请参阅
 
-[重构](../refactoring-in-visual-studio.md)  
-[预览更改](../../ide/preview-changes.md)
+- [重构](../refactoring-in-visual-studio.md)
+- [预览更改](../../ide/preview-changes.md)

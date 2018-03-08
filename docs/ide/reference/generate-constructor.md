@@ -11,11 +11,11 @@ ms.author: kaseyu
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78b1829ae6a302b7c5f71fa2c478152d0c20d1b8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0767b47fcf4456e1ac198674ece6c9de31850279
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中生成构造函数
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 02/09/2018
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
      - 右键单击并选择“快速操作和重构”菜单。
      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在此类中的空行上，它会出现在左边）。
@@ -79,7 +79,7 @@ ms.lasthandoff: 02/09/2018
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
      - 右键单击并选择“快速操作和重构”菜单。
      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含选定内容的行上，它会出现在左边）。
@@ -107,11 +107,11 @@ ms.lasthandoff: 02/09/2018
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
      - 右键单击并选择“快速操作和重构”菜单。
-     - 将鼠标悬停在红色波浪线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已置于红色波浪线上，则此图标显示在左侧）。
+     - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
+     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
 
     ![生成构造函数预览](media/constructor-preview-cs.png)
 
@@ -134,18 +134,18 @@ ms.lasthandoff: 02/09/2018
 
 1. 从现有构造函数调用添加参数。
 
-1. 将光标置于红色波浪线上，该线条表示指示使用了尚不存在的构造函数。
+1. 将光标放在有红色波形曲线的行上，该曲线指示使用了尚不存在的构造函数。
 
     ![生成构造函数突出显示](media/constructor4-highlight-cs.png)
 
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
      - 右键单击并选择“快速操作和重构”菜单。
-     - 将鼠标悬停在红色波浪线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已置于红色波浪线上，则此图标显示在左侧）。
+     - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
+     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
 
     ![生成构造函数预览](media/constructor4-preview-cs.png)
 
@@ -166,7 +166,7 @@ ms.lasthandoff: 02/09/2018
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
      - 右键单击并选择“快速操作和重构”菜单。
      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含所添加的参数的行上，它会出现在左边）。
@@ -181,5 +181,5 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>请参阅
 
-[代码生成](../code-generation-in-visual-studio.md)  
-[预览更改](../../ide/preview-changes.md)
+- [代码生成](../code-generation-in-visual-studio.md)
+- [预览更改](../../ide/preview-changes.md)

@@ -1,8 +1,14 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: 49882db50ed60b1e76d5e791251b11a9f7072274
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="monitor-with-tensorboard"></a>使用 TensorBoard 监视
 
-可以使用 TensorBoard 可视化模型培训进度。 
+可以使用 TensorBoard 可视化模型培训进度。
 
 1. 右键单击项目，单击“运行 TensorBoard”，然后选择输出 TensorBoard 日志所在的目录。
 

@@ -12,11 +12,11 @@ ms.author: kaseyu
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc380985231937073bff1cb9ce275c38eb70448f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0d3b4a481b56a27f17409d25646cfc235deaacf4
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>在 Visual Studio 中生成 C# Equals 和 GetHashCode 方法重写
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 02/09/2018
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
      - 右键单击并选择“快速操作和重构”菜单。
      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含类型声明的行上，它会出现在左边）。
@@ -67,5 +67,5 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>请参阅
 
-[代码生成](../code-generation-in-visual-studio.md)  
-[预览更改](../../ide/preview-changes.md)
+- [代码生成](../code-generation-in-visual-studio.md)
+- [预览更改](../../ide/preview-changes.md)

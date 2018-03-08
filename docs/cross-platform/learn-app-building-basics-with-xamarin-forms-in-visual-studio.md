@@ -7,24 +7,25 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
-caps.latest.revision: 
+ms.technology: vs-ide-mobile
 author: ghogen
 ms.author: ghogen
 manager: ghogen
 ms.workload:
 - xamarin
-ms.openlocfilehash: 3a066156f66a4e89132010a8c83edc7029dbe19e
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 71470cd03844c7761afbd07c9d454214f5dc36ca
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识
+
 完成 [Setup and install](../cross-platform/setup-and-install.md) 和 [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md)中的步骤后，此演练会立即演示如何借助 Xamarin.Forms 生成基本应用（如下所示）。 借助 Xamarin.Forms，可以在 .NET Standard 类库中一次性编写全部 UI 代码。 随后，Xamarin 会自动呈现 iOS、Android 和通用 Windows 平台的本机 UI 控件。 建议使用此方法（而不是共享项目），因为 .NET Standard 库仅包含跨所有目标平台受支持的 .NET API，并且 Xamarin.Forms 支持跨平台共享 UI 代码。  
   
- ![Android、iOS 和 Windows 上的“天气”应用示例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
+![Android、iOS 和 Windows 上的“天气”应用示例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
   
- 你将执行以下操作来生成它：  
+你将执行以下操作来生成它：  
   
 -   [设置你的解决方案](#solution)  
   
@@ -37,10 +38,11 @@ ms.lasthandoff: 01/22/2018
 -   [跨平台完成具有本机外观的 UI](#finish)  
   
 > [!TIP]
->  可以在 [xamarin-forms-samples repository on GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)（GitHub 上的 xamarin-forms-samples 存储库）中找到此项目完整的源代码。  
+> 可以在 [xamarin-forms-samples repository on GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)（GitHub 上的 xamarin-forms-samples 存储库）中找到此项目完整的源代码。  
   
 ##  <a name="solution"></a> 设置你的解决方案  
- 按照下面这些步骤操作可以创建 Xamarin.Forms 解决方案，其中包含共享代码的 .NET Standard 类库和两个添加的 NuGet 包。  
+
+按照下面这些步骤操作可以创建 Xamarin.Forms 解决方案，其中包含共享代码的 .NET Standard 类库和两个添加的 NuGet 包。  
   
 1.  在 Visual Studio 中，新建“跨平台应用 (Xamarin.Forms)”解决方案，并将它命名为“WeatherApp”。 在左侧列表中依次选择“Visual C#”和“跨平台”，以查找模板。  
   
@@ -98,11 +100,12 @@ ms.lasthandoff: 01/22/2018
 7.  生成解决方案并验证没有生成错误。  
   
 ##  <a name="dataservice"></a> 编写共享的数据服务代码  
- 在 WeatherApp 项目中，可以编写跨所有平台共享的 .NET Standard 库代码。 此库自动包含在 iOS、Android 和 Windows 项目生成的应用包中。  
+
+在 WeatherApp 项目中，可以编写跨所有平台共享的 .NET Standard 库代码。 此库自动包含在 iOS、Android 和 Windows 项目生成的应用包中。  
   
- 若要运行此示例，必须先在 [http://openweathermap.org/appid](http://openweathermap.org/appid) 注册免费 API 密钥。  
+若要运行此示例，必须先在 [http://openweathermap.org/appid](http://openweathermap.org/appid) 注册免费 API 密钥。  
   
- 然后，执行以下步骤，将代码添加到 .NET Standard 库，以访问和存储天气服务中的数据：  
+然后，执行以下步骤，将代码添加到 .NET Standard 库，以访问和存储天气服务中的数据：  
   
 1.  右键单击“WeatherApp”项目，然后选择“添加”>“类…”。在“添加新项”  对话框中，将文件命名为 **Weather.cs**。 将使用此类来存储天气数据服务的数据。  
   
@@ -206,7 +209,8 @@ ms.lasthandoff: 01/22/2018
 7.  生成 WeatherApp 库项目，以确保代码正确无误。  
   
 ##  <a name="uicode"></a> 开始编写共享的 UI 代码  
- 使用 Xamarin.Forms，可以在 .NET Standard 库中实现共享 UI 代码。 按照下面这些步骤操作可以向项目添加带按钮的页面，此按钮使用上一部分中添加的天气数据服务代码返回的数据来更新自己的文本：  
+
+使用 Xamarin.Forms，可以在 .NET Standard 库中实现共享 UI 代码。 按照下面这些步骤操作可以向项目添加带按钮的页面，此按钮使用上一部分中添加的天气数据服务代码返回的数据来更新自己的文本：  
   
 1.  右键单击“WeatherApp”项目，并依次选择“添加”>“新项…”，添加名为“WeatherPage.cs”的内容页。在“添加新项”对话框中，选择“内容页”。 请勿选择“内容页 (C#)”或“内容视图”。 将它命名为“WeatherPage.cs”。  
   
@@ -271,7 +275,8 @@ ms.lasthandoff: 01/22/2018
 5.  生成 WeatherApp 项目，以确保代码正确无误。  
   
 ##  <a name="test"></a> 使用适用于 Android 的 Visual Studio 仿真程序测试你的应用。  
- 现在即可运行应用！ 现在仅运行 Android 版本，验证该应用是否从天气服务获取数据。 稍后，在添加更多 UI 元素后，还将运行 iOS 和 UWP 版本。   
+
+现在即可运行应用！ 现在仅运行 Android 版本，验证该应用是否从天气服务获取数据。 稍后，在添加更多 UI 元素后，还将运行 iOS 和 UWP 版本。   
   
 1.  右键单击“WeatherApp.Android”项目，并选择“设为启动项目”，将它设为启动项目。  
   
@@ -284,7 +289,8 @@ ms.lasthandoff: 01/22/2018
      ![点击按钮前和点击后显示的天气应用](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")  
   
 ##  <a name="finish"></a>跨平台完成具有本机外观的 UI  
- Xamarin.Forms 会呈现每个平台的本机 UI 控件，以便你的应用会自动拥有本机外观。 若要更清晰地查看这一内容，可通过邮政编码的输入字段来完成 UI，然后显示从服务返回的天气数据。  
+
+Xamarin.Forms 会呈现每个平台的本机 UI 控件，以便你的应用会自动拥有本机外观。 若要更清晰地查看这一内容，可通过邮政编码的输入字段来完成 UI，然后显示从服务返回的天气数据。  
   
 1.  将 **WeatherPage.xaml** 的内容替换为以下代码。 使用之前介绍的 X:name 属性命名的元素可以通过代码引用。 Xamarin.Forms 还提供了许多[布局选项](http://developer.xamarin.com/guides/xamarin-forms/controls/layouts/) (xamarin.com)。 在本文中，WeatherPage 使用 [Grid](http://developer.xamarin.com/api/type/Xamarin.Forms.Grid/) (xamarin.com) 和 [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) (xamarin.com)。  
   
@@ -398,4 +404,4 @@ ms.lasthandoff: 01/22/2018
   
      ![Android、iOS 和 Windows Phone 上的天气应用示例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
   
- 此项目完整的源代码位于 [xamarin-forms-samples repository on GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)（GitHub 上的 xamarin-forms-samples 存储库）中。
+此项目完整的源代码位于 [xamarin-forms-samples repository on GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)（GitHub 上的 xamarin-forms-samples 存储库）中。

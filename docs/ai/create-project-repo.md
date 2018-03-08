@@ -1,13 +1,19 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: 73292b9e0c7df23db839a7a13f70dbc2432d564f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>在 Visual Studio 中克隆 Python 代码存储库
 
 安装 [Visual Studio Tools for AI](installation.md) 后，就可以轻松地克隆 Python 代码存储库并从中创建项目。
 
 1. 要连接到 GitHub 存储库，请运行 Visual Studio 安装程序，选择“修改”，然后选择“单个组件”选项卡。向下滚动到“代码工具”部分，选择“适用于 Visual Studio 的 GitHub 扩展”，然后选择“修改”。
-    
+
     ![在 Visual Studio 安装程序中选择 GitHub 扩展](media\create-project-repo\installation-github-extension.png)
-    
+
 2. 启动 Visual Studio。
 
 3. 选择“视图”>“团队资源管理器...”，打开“团队资源管理器”窗口，可在该窗口中连接到 GitHub 或 Visual Studio Team Services，或者克隆存储库。

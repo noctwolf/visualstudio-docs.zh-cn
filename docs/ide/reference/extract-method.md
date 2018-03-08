@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ccdab053e06efc11b6f9c42d391d4b4fc1f85f7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d66a0e41f0c68d3d5c4378a664ef36aba0d869b7
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="extract-a-method-refactoring"></a>“提取方法”重构
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 02/09/2018
 
    - **键盘**
      - 按“Ctrl+R”，然后按“Ctrl+M”。 （请注意，键盘快捷方式可能因所选的配置文件而有所不同。）
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单，然后从“预览”弹出窗口选择“提取方法”。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口选择“提取方法”。
    - **鼠标**
      - 选择“编辑 > 重构 > 提取方法”。
      - 右键单击代码，然后选择“重构 > 提取 > 提取方法”。
@@ -64,16 +64,16 @@ ms.lasthandoff: 02/09/2018
    > 还可以将注释和其他字符串更新为使用该新名称，也可在保存前使用“重命名”框（在 IDE 的右上方）中的复选框[预览更改](../../ide/preview-changes.md)。
 
    - C#：
-   
+
     ![重命名方法 - C#](media/extractmethod-rename-cs.png)
 
    - Visual Basic：
-   
+
     ![重命名方法 - Visual Basic](media/extractmethod-rename-vb.png)
 
 1. 对更改感到满意时，单击“应用”按钮或按 Enter 即可提交所做的更改。
 
 ## <a name="see-also"></a>请参阅
 
-[重构](../refactoring-in-visual-studio.md)  
-[预览更改](../../ide/preview-changes.md)
+- [重构](../refactoring-in-visual-studio.md)
+- [预览更改](../../ide/preview-changes.md)

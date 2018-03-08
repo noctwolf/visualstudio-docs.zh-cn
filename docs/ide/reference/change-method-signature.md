@@ -17,11 +17,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8358e14ccf9570207b3e52a552990fd2a3a80d49
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c181eb27ccdbc2f1efb7294e1610a6055245241c
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="change-a-method-signature-refactoring"></a>“更改方法签名”重构
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 02/09/2018
 
    - **键盘**
      - 按“Ctrl+R”，然后按“Ctrl+V”。  （请注意，键盘快捷方式可能因所选的配置文件而有所不同。）
-     - 按“Ctrl+.” 触发“快速操作和重构”菜单，然后从“预览”弹出窗口选择“更改签名”。
+     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口选择“更改签名”。
    - **鼠标**
      - 选择“编辑 > 重构 > 删除参数”。
      - 选择“编辑 > 重构 > 重新排列参数”。
@@ -84,5 +84,5 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>请参阅
 
-[重构](../refactoring-in-visual-studio.md)  
-[预览更改](../../ide/preview-changes.md)
+- [重构](../refactoring-in-visual-studio.md)
+- [预览更改](../../ide/preview-changes.md)
