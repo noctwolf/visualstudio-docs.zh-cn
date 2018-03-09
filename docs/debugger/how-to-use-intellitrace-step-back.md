@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 步骤后的视图快照
 
@@ -107,5 +107,7 @@ IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本�
 
     解决方法：
     * 通过结束调试会话中清除所有快照。 
+
+* 调试其过程具有大量唯一的内存区域，例如加载 Dll，数很大的应用程序的应用程序时使用启用的快照逐句性能可能会影响。 将在 Windows 的未来版本中解决此问题。 如果你遇到此问题，从而与与我们联系stepback@microsoft.com。 
 
 * 保存的文件时**调试 > IntelliTrace > 保存 IntelliTrace 会话**在事件和快照模式下，附加的数据从快照捕获中不可用时.itrace 文件。 在断点并单步事件，你将看到相同的信息，就像已在 IntelliTrace 事件仅模式下保存文件。 
