@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: ad77a685f3100533f790ec6ae82cd11201128902
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -267,9 +269,9 @@ ms.lasthandoff: 01/10/2018
   
 -   在 VSTO 外接程序中为不同应用程序创建自定义任务窗格。 有关支持自定义任务窗格的应用程序的详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
   
--   通过使用自定义任务窗格自动化 Microsoft Office 应用程序。 有关详细信息，请参阅 [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  
+-   通过使用自定义任务窗格自动化 Microsoft Office 应用程序。 有关详细信息，请参阅 [演练：从自定义任务窗格自动化应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  
   
--   在 Excel 中创建一个可用于隐藏或显示自定义任务窗格的功能区按钮。 有关详细信息，请参阅 [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
+-   在 Excel 中创建一个可用于隐藏或显示自定义任务窗格的功能区按钮。 有关详细信息，请参阅 [演练：将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义任务窗格](../vsto/custom-task-panes.md)   
