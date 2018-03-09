@@ -30,11 +30,11 @@ ms.lasthandoff: 10/27/2017
   
  例如，如果当前页是 https://employees.mycompany.com，则不能从以下 URL 访问数据：  
   
--   http://data.contoso.com，因为它使用 HTTP 而不 HTTPS。  
+-   http://data.contoso.com ，因为它使用 HTTP 而不 HTTPS。  
   
--   https://somedatasource.com，因为它是不同的域。  
+-   https://somedatasource.com ，因为它是不同的域。  
   
--   https://employees.mycompany.com:8888，因为它使用不同的端口。  
+-   https://employees.mycompany.com:8888 ，因为它使用不同的端口。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   

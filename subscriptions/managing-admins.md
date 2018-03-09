@@ -18,7 +18,7 @@ ms.lasthandoff: 01/29/2018
 # <a name="managing-administrator-rights-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 订阅管理员门户中管理管理员权限
 
 ## <a name="overview"></a>概述 
-在 Visual Studio 订阅管理员门户中 (https://manage.visualstudio.com)，有两个管理角色：
+在 Visual Studio 订阅管理员门户中 (https://manage.visualstudio.com) ，有两个管理角色：
 
 超级管理员：首次设置组织时，“主要联系人或通知联系人”在默认情况下会成为超级管理员。 主要联系人或通知联系人可以选择分配其他超级管理员或管理员。 除了管理各个订阅者的订阅，超级管理员还可以添加和删除其他管理员和超级管理员。 如果系统中有两个以上的超级管理员，为了安全起见，超级管理员可以删除最后两个以外的所有超级管理员。 
 
