@@ -22,7 +22,7 @@
 ### [演练：创建并运行 UWP 应用的单元测试](walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md)
 ### [测试资源管理器常见问题解答](test-explorer-faq.md)
 ## [使用 .runsettings 文件配置单元测试](configure-unit-tests-by-using-a-dot-runsettings-file.md)
-## [编写托管代码的单元测试](writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+## 编写托管代码的单元测试
 ### [演练：创建并运行托管代码的单元测试](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 ### [快速入门：通过测试资源管理器进行测试驱动开发](quick-start-test-driven-development-with-test-explorer.md)
 ### [在单元测试中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成员](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
@@ -53,7 +53,7 @@
 ### [在生成验证测试中分析代码覆盖率](analyzing-code-coverage-in-build-verification-tests.md)
 ### [代码覆盖率疑难解答](troubleshooting-code-coverage.md)
 ## [使用模拟器分离 Sharepoint 2010 应用程序的单元测试](using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md)
-# [Live Unit Testing 简介](live-unit-testing-intro.md)
+# [实时单元测试](live-unit-testing-intro.md)
 ## [ Live Unit Testing 中的新增功能](live-unit-testing-whats-new.md)
 ## [Live Unit Testing 入门](live-unit-testing-start.md)
 ## [使用 Visual Studio 2017 Enterprise Edition 中的实时单元测试](live-unit-testing.md)
@@ -88,4 +88,3 @@
 # [测试实验室管理](lab-management/using-a-lab-environment-for-your-application-lifecycle.md)
 ## [将生成或发布管理用于自动测试](lab-management/use-build-or-rm-instead-of-lab-management.md)
 ## [安装和配置测试代理](lab-management/install-configure-test-agents.md)
-## [将 SCVMM 2008 R2 升级到 SCVMM 2012](lab-management/upgrade-scvmm-2008-r2-scvmm-2012.md)

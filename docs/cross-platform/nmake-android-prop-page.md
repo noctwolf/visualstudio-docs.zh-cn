@@ -21,13 +21,13 @@ f1_keywords:
 - VC.Project.VCNMakeTool.ForcedIncludes
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 9f39aaaa17f48f832210ca26c1e255ae4b054514
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 955e3f7dfbab3293a01392c52b82aa2b7dce25c2
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="nmake-properties-android-c"></a>NMake 属性 (Android C++) 
+# <a name="nmake-properties-android-c"></a>NMake 属性 (Android C++)
 
 属性 | 描述
 --- | ---
@@ -38,4 +38,4 @@ ms.lasthandoff: 02/09/2018
 预处理器定义 | 指定源文件使用的预处理器定义。
 包含搜索路径 | 指定用于解析所含文件的包含搜索路径。
 强制包含 | 指定强制包含的文件。
-附加选项 | 指定分析 C++ 文件时 Intellisense 使用的附加编译器开关
+附加选项 | 指定分析 C++ 文件时 IntelliSense 使用的附加编译器开关

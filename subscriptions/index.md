@@ -10,11 +10,11 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a7768be8726fe38ade6857993b67c1c32f8611aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 订阅
 Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设备（包括 Windows、iOS、Android 和 Linux）上创建、部署及管理功能强大的应用程序。  订阅的权益包括可以获得开发和测试所需的开发人员工具、云服务和软件、培训及支持。
@@ -137,7 +137,7 @@ Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设
 ---
 
 <h2>优点</h2>
-<ul class="panelContent cardsW">
+<ul class="cardsD cols cols3">
     <li>
         <div class="cardSize">
             <div class="cardPadding">

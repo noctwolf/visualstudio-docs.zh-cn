@@ -8,7 +8,7 @@
 
 # [用户帐户](user-accounts.md)
 ## [登录](signing-in.md)
-## [激活](activation.md)
+## [启用订阅](activation.md)
 
 # [自定义 IDE](customizing-the-ide.md)
 ## [扩展 Visual Studio for Mac](extending-visual-studio-mac.md)

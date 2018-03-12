@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: f15239ed045185449735ec3b5e0bcdc514fa786d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>面向 .NET 开发者的 Visual Studio 2017
 
@@ -40,9 +40,9 @@ Visual Studio 通过 .NET（“Roslyn”）编译器深入理解代码，为用�
 
 [文档：重构和快速操作](refactoring-code-generation-quick-actions.md)
 
-Visual Studio 提供实时代码诊断，通过检测错误和可能有问题的代码，帮助提高代码质量。 我们提供快速操作 (**Ctrl+.**)，可解决跨文档、项目或解决方案检测到的问题。 启用*完整解决方案分析*可在整个解决方案中查找问题，即使未在编辑器中打开这些文件也是如此。
+Visual Studio 提供实时代码诊断，通过检测错误和可能有问题的代码，帮助提高代码质量。 我们提供快速操作 (Ctrl+.)，可解决跨文档、项目或解决方案检测到的问题。 启用*完整解决方案分析*可在整个解决方案中查找问题，即使未在编辑器中打开这些文件也是如此。
 
-此外，使用 **Ctrl+.** 快捷方式，还可从代码建议中了解最佳做法、存根或生成代码、重构代码 以及采用新语言功能。
+此外，使用 Ctrl+. 快捷方式，还可从代码建议中了解最佳做法、存根或生成代码、重构代码 以更正样式问题。
 
 ![使用灯泡菜单应用快速修复和重构](../ide/media/VSIDE_Productivity_CodeAnalysis.png "VSIDE_Productivity_CodeAnalysis")
 
@@ -59,7 +59,7 @@ Visual Studio 提供实时代码诊断，通过检测错误和可能有问题的
 - [文档：可移植的自定义编辑器选项](create-portable-custom-editor-options.md)
 - [文档：用于 .NET 的 EditorConfig 代码样式设置](editorconfig-code-style-settings-reference.md)
 
-Visual Studio 支持编码约定配置，检测编码样式冲突，并使用 **Ctrl+.** 快捷方式提供快速修复 以更正样式问题。 使用 *EditorConfig* 可在存储库中配置并强制实施团队的格式设置、命名和代码样式约定，允许覆盖项目和文件级别的值。
+Visual Studio 支持编码约定配置，检测编码样式冲突，并使用 Ctrl+. 快捷方式提供快速修复 以更正样式问题。 使用 *EditorConfig* 可在存储库中配置并强制实施团队的格式设置、命名和代码样式约定，允许覆盖项目和文件级别的值。
 
 ![使用 EditorConfig 配置并强制实施编码约定](../ide/media/VSIDE_Productivity_CodeStyle.png "VSIDE_Productivity_CodeStyle")
 
@@ -105,7 +105,7 @@ Visual Studio 具有一个丰富的扩展生态系统，可在需要时安装或
 | **F12**（也可使用 **Ctrl+单击**） | 转到定义 | 导航到定义符号的位置 |
 | **Ctrl+F12** | 转到实现 | 从基类型或基成员导航到各种实现 |
 | **Shift+F12** | 查找所有引用 | 查看所有符号或文本引用 |
-| **Ctrl+.** （也可使用 C# 配置文件中的 **Alt+Enter**） | 快速操作和重构 | 查看光标位置或代码选定内容处可用的代码修复、代码生成操作、重构或其他快速操作 |
+| Ctrl+. （也可使用 C# 配置文件中的 **Alt+Enter**） | 快速操作和重构 | 查看光标位置或代码选定内容处可用的代码修复、代码生成操作、重构或其他快速操作 |
 | **Ctrl**+**E**、**V** | 复制行 | 复制光标所在的代码行（适用于 Visual Studio 2017 版本 15.6 预览版 2 及更高版本） |
 | **Ctrl+Q** | 快速启动 | 搜索所有 Visual Studio 设置 |
 | **F5** | 开始调试 | 开始调试应用程序 |

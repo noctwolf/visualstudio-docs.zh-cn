@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 077bb266e6ed55bfe59ec4e537b516ccde59e0c3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 
@@ -56,11 +56,11 @@ Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-type
 |使匹配无效|(?!abc)|`real (?!ity)` 匹配“realty”和“really”中的“real”，但不匹配“reality”。 它还可找到“realityreal”中的第二个“real”（而非第一个“real”）。|
 |匹配不在给定字符集中的任意字符|[^abc]|`be[^n-t]` 匹配“before”中的“bef”，“behind”中的“beh”和“below”中的“bel”，但不匹配“beneath”。|
 |匹配符号前或符号后的表达式。|&#124;|`(sponge&#124;mud) bath` 匹配“sponge bath”和“mud bath”。|
-|对反斜杠后面的字符进行转义|\\|`\^` 与字符 ^ 相匹配。|
+|对反斜杠后面的字符进行转义| \\ |`\^` 匹配字符 ^。|
 |指定前面的字符或组的出现次数|{x}，其中 x 是出现次数|`x(ab){2}x` 匹配“xababx”，`x(ab){2,3}x` 匹配“xababx”和“xabababx”，但不匹配“xababababx”。|
 |匹配 Unicode 字符类中的文本，其中“X”是 Unicode 数字。 有关 Unicode 字符类的详细信息，请参阅 <br /><br /> [Unicode Standard 5.2 字符属性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}|`\p{Lu}` 匹配“Thomas Doe”中的“T”和“D”。|
 |与字边界匹配|`\b`（在字符类 \b 的外部指定字边界，而在字符类内部指定退格符）。|`\bin` 匹配“inside”中的“in”，不匹配“pinto”。|
-|与换行符（即回车符后跟新行）相匹配。|\r?\n|仅当“End”是一行的最后一个字符串，且“Begin”是下一行的第一个字符串时，`End\r?\nBegin` 才匹配“End”和“Begin”。|
+|与换行符（即新行后跟回车）相匹配。|\r?\n|仅当“End”是一行的最后一个字符串，且“Begin”是下一行的第一个字符串时，`End\r?\nBegin` 才匹配“End”和“Begin”。|
 |匹配任意字母数字字符|\w|`a\wd` 匹配“add”和“a1d”，不匹配“a d”。|
 |匹配任意空格字符。|(?([^\r\n])\s)|`Public\sInterface` 匹配词组“Public Interface”。|
 |匹配任意数字字符|\d|`\d` 匹配“3456”中的“3”，“23”中的“2”和“1”中的“1”。|

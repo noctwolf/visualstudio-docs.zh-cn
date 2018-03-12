@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8f389efcde93d9a618fbbac272b0f0b2cf5c75
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 9b7b9ad17c4d0c16066b9c10e3cc5b51f152c9dc
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>性能不佳的多线程应用程序的常见模式
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 02/21/2018
 
 ![I/O 效率低](../profiling/media/inefficient_io.png "Inefficient_IO")
 
-过度使用或误用 I/O 是导致应用程序效率低下的常见原因。 请参考上图。 可见时间线分析显示 I/O 使用了 42%的可见线程时间。 时间线显示大量 I/O，这指示 I/O 频繁地阻塞被分析应用程序。 若要深入了解 I/O 类型和程序被阻塞的位置，请放大存在问题的区域，检查可见时间线分析，然后单击特定 I/O 块以查看当前的调用堆栈。
+过度使用或误用 I/O 是导致应用程序效率低下的常见原因。 请参考上图。 可见时间线分析显示 I/O 使用了 44% 的可见线程时间。 时间线显示大量 I/O，这指示 I/O 频繁地阻塞被分析应用程序。 若要深入了解 I/O 类型和程序被阻塞的位置，请放大存在问题的区域，检查可见时间线分析，然后单击特定 I/O 块以查看当前的调用堆栈。
 
 ## <a name="lock-convoys"></a>锁保护
 

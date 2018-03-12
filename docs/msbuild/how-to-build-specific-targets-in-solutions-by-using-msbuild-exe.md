@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ec27d619b64353bf0cbac6a8b92c582ef5a590
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4437c8030f66ae24d94a83d796c0d0edf7e59c79
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>如何：使用 MSBuild.exe 生成解决方案中的特定目标
 你可以使用 MSBuild 在解决方案中生成特定项目的特定目标。  
@@ -31,15 +31,21 @@ ms.lasthandoff: 02/09/2018
   
 1.  在命令行中，键入 `MSBuild.exe <SolutionName>.sln`，其中 `<SolutionName>` 对应于包含要执行的目标的解决方案的文件名。  
   
-2.  指定 *ProjectName* 格式的 **/t** 开关后的目标：*TargetName*。  
+2. 指定 `ProjectName``:``TargetName` 格式的 `/target:` 开关后的目标。 如果项目名称包含任何字符 `%`、`$`、`@`、`;`、`.`、`(`、`)` 或 `'`，请将其替换为指定目标名称中的 `_`。
   
 ## <a name="example"></a>示例  
  以下示例执行 `NotInSlnFolder` 项目的 `Rebuild` 目标，然后执行位于 `NewFolder` 解决方案文件夹的 `InSolutionFolder` 项目的 `Clean` 目标。  
   
-```  
-msbuild SlnFolders.sln /t:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean  
-```  
-  
+```
+msbuild SlnFolders.sln /target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean`
+```
+
+## <a name="troubleshooting"></a>疑难解答
+
+如果想检查可用选项，可使用 MSBuild 提供的调试选项来执行此操作。 设置环境变量 `MSBUILDEMITSOLUTION=1` 并生成解决方案。 此操作将生成一个名为 `<SolutionName>.sln.metaproj` 的 MSBuild 文件，该文件在生成时显示 MSBuild 解决方案的内部视图。 可检查此视图以确定可以生成的目标。
+
+除非需要此内部视图，否则不要使用此环境变量集进行生成操作。 此设置可能会在解决方案中生成项目时导致问题产生。
+
 ## <a name="see-also"></a>请参阅  
  [命令行参考](../msbuild/msbuild-command-line-reference.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)   

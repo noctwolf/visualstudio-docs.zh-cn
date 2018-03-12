@@ -10,17 +10,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: cplusplus
-ms.openlocfilehash: e7b9d0ef40fd0efc4bbf071ef5da75b13e8dd82a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-general
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 38f6dfc375e776e4ad471fa8075b755dc3c31998
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="options-text-editor-cc-experimental"></a>选项, 文本编辑器, C/C++, 实验
 
@@ -33,7 +35,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 > 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="enable-predictive-intellisense"></a>启用预测 Intellisense
+## <a name="enable-predictive-intellisense"></a>启用预测 IntelliSense
 
 预测 IntelliSense 限制 IntelliSense 下拉列表中显示的结果数，以便你仅看到与上下文相关的结果。 例如，如果键入 <code>int x =</code> 并调用 IntelliSense 下拉列表，只会看到整数或返回整数的函数。 预测 IntelliSense 在默认情况下是关闭的。
 
@@ -58,5 +60,5 @@ Visual Studio 2017 版本 15.3 及更高版本：此功能当前被称为“启�
 
 ## <a name="see-also"></a>请参阅
 
-[设置语言特定的编辑器选项](../../ide/reference/setting-language-specific-editor-options.md)  
-[在 C++ 中重构（VC 博客）](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [设置语言特定的编辑器选项](../../ide/reference/setting-language-specific-editor-options.md)
+- [在 C++ 中重构（VC 博客）](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
