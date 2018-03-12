@@ -1,4 +1,4 @@
----
+﻿---
 title: "在低带宽或不可靠的网络环境中安装 | Microsoft Docs"
 description: "介绍了 Visual Studio 安装程序在不可靠的网络条件下的运行方式，以及如何在开始安装前下载安装文件。"
 ms.date: 01/17/2018
@@ -104,7 +104,7 @@ ms.lasthandoff: 01/22/2018
 | pt-BR | 葡萄牙语 - 巴西 |
 | ru-RU | 俄语 |
 | tr-TR | 土耳其语 |
-| zh-CN | 中文 - 简体 |
+| en-US | 中文 - 简体 |
 | zh-TW | 中文 - 繁体 |
 
 ## <a name="get-support"></a>获取支持
