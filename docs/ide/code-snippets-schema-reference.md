@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c267b110b67a69b526bb7efc985bb22bb954b3a1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets-schema-reference"></a>代码段架构参考
 IntelliSense 代码段是预编写的代码段，你可以随时使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将这些代码段插入到你的应用程序中。 可以通过提供代码段来减少键入重复代码或搜索示例所用的时间，从而提高工作效率。 可以使用 IntelliSense 代码段 XML 架构创建自己的代码段，并将它们添加到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 已包含的代码段中。  
@@ -240,7 +242,7 @@ $selected$ is a great color. I love $selected$.
  指定当 Visual Studio 中的文本或对象收到焦点时要执行的函数。  
   
 > [!NOTE]
->  仅 Visual C# 代码片段中支持 `Function` 元素。  
+>  仅 C# 代码片段中支持 `Function` 元素。  
   
 ```xml  
 <Function>  
@@ -563,7 +565,7 @@ $selected$ is a great color. I love $selected$.
   
 -   `Expansion`：允许将代码段插入到光标处。  
   
--   `Refactoring`：指定在 Visual C# 重构过程中使用代码段。 不能在自定义代码段中使用 `Refactoring`。  
+-   `Refactoring`：指定在 C# 重构过程中使用代码片段。 不能在自定义代码段中使用 `Refactoring`。  
   
 ##  <a name="snippettypes"></a> SnippetTypes 元素  
  对单个 `SnippetType` 元素进行分组。 如果 `SnippetTypes` 元素不存在，则代码段可以插入到代码中的任何位置。  

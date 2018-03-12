@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - architecture, dependency diagrams
@@ -14,30 +13,34 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b05e295830762939e2142b550863219afaa06ce
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 18477479255ff7af8216d093830c6c0d60fa50dc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>在代码中创建依赖项关系图
-若要直观显示你的软件系统的高级别，逻辑体系结构，请创建*依赖项关系图*Visual Studio 中。 若要确保你的代码保持与此设计保持一致，验证你的代码使用依赖项关系图。 你可以创建为 Visual C#.NET 和 Visual Basic.NET 项目的依赖项关系图。 若要查看支持此功能的 Visual Studio 的版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
-  
- ![创建依赖项关系图](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
-  
- 依赖项关系图，你将 Visual Studio 解决方案项组织到名为的逻辑抽象组*层*。 你可以使用层来描述这些项目执行的主要任务或系统的主要组件。 每个层可包含描述更详细任务的其他层。 你还可以指定预期的或现有*依赖关系*各层之间。 这些依赖项（表示为箭头）显示哪些层可以使用或当前正在使用由其他层表示的功能。 若要维护代码的体系结构控制，请在关系图上显示预期的依赖项，然后对照关系图验证代码。  
-  
- [视频： 验证实时体系结构依赖项](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
-  
-##  <a name="CreateDiagram"></a>创建依赖项关系图  
- 创建依赖项关系图之前，请确保你的解决方案具有一个建模项目。 
-  
+
+若要直观显示你的软件系统的高级别，逻辑体系结构，请创建*依赖项关系图*Visual Studio 中。 若要确保你的代码保持与此设计保持一致，验证你的代码使用依赖项关系图。 你可以创建为 Visual C# 和 Visual Basic 项目的依赖项关系图。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+
+![创建依赖项关系图](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+
+依赖项关系图，你将 Visual Studio 解决方案项组织到名为的逻辑抽象组*层*。 你可以使用层来描述这些项目执行的主要任务或系统的主要组件。 每个层可包含描述更详细任务的其他层。 你还可以指定预期的或现有*依赖关系*各层之间。 这些依赖项（表示为箭头）显示哪些层可以使用或当前正在使用由其他层表示的功能。 若要维护代码的体系结构控制，请在关系图上显示预期的依赖项，然后对照关系图验证代码。
+
+[视频： 验证实时体系结构依赖项](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
+
+##  <a name="CreateDiagram"></a>创建依赖项关系图
+
+创建依赖项关系图之前，请确保你的解决方案具有一个建模项目。
+
 > [!IMPORTANT]
->  不要添加、 拖动，或将现有依赖项关系图从一个建模项目复制到另一个建模项目或解决方案中的另一个位置。 这将保留原始关系图中的引用，即使你更改此关系图。 这也将阻止层验证正常操作，并可能导致出现其他问题，例如，尝试打开该关系图时元素缺失或出现其他错误。  
->   
->  相反，将新的依赖项关系图添加到建模项目。 将源关系图中的元素复制到新关系图中。 保存建模项目和新的依赖项关系图。  
-  
+> 不要添加、 拖动，或将现有依赖项关系图从一个建模项目复制到另一个建模项目或解决方案中的另一个位置。 这将保留原始关系图中的引用，即使你更改此关系图。 这也将阻止层验证正常操作，并可能导致出现其他问题，例如，尝试打开该关系图时元素缺失或出现其他错误。
+>
+> 相反，将新的依赖项关系图添加到建模项目。 将源关系图中的元素复制到新关系图中。 保存建模项目和新的依赖项关系图。
+
 #### <a name="to-add-a-new-dependency-diagram-to-a-modeling-project"></a>若要将新的依赖项关系图添加到建模项目  
   
 1.  上**体系结构**菜单上，选择**新依赖项关系图**。  

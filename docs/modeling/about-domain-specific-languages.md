@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language
+helpviewer_keywords:
+- Domain-Specific Language
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98b65fbb732b6736c91c605f03b7f2de2325487
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="about-domain-specific-languages"></a>关于域特定语言
 
@@ -53,7 +55,7 @@ DSL 定义后，可以将其分发给其他用户可以在自己的计算机上�
   
 通常情况下，开发团队必须编写为有好几种产品类似的代码时创建的域特定语言。 例如，专用化在行李处理系统中的公司可能定义行李跟踪 DSL 从中它们可能会产生一些每个安装的代码。 DSL 的优点是，它可以理解的客户，从它生成的代码是可靠的并且，系统可以快速更新如果客户的需求更改。  
   
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]允许你创建域特定语言具有图形设计器和你自己的关系图表示法，并随后使用语言生成相应的源代码中，每个项目。  
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 允许你创建域特定语言具有图形设计器和你自己的关系图表示法，并随后使用语言生成相应的源代码中，每个项目。  
   
 ## <a name="domain-specific-development"></a>特定于域的开发
 

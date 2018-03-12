@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, domain path
+helpviewer_keywords:
+- Domain-Specific Language, domain path
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e30d3af95db29b7e69b670e29a2cd1c925e3c6b4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: fb2b1dfa13bf00c29452798253198b2ad0e72e97
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="domain-path-syntax"></a>域路径语法
 DSL 定义使用类似 XPath 的语法在模型中查找特定元素。  
@@ -24,7 +26,7 @@ DSL 定义使用类似 XPath 的语法在模型中查找特定元素。
   
  域路径采用以下形式：  
   
- *RelationshipName.PropertyName/ ！角色*  
+ *RelationshipName.PropertyName/!Role*  
   
  ![CommentReferencesSubjects 引用关系](../modeling/media/dsl_reference.png "dsl_reference")  
   

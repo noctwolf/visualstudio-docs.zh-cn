@@ -4,22 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
+f1_keywords:
+- Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cbe2be8ec1012295f84fbbec4cc0f614fd86d8d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d9f050662ed38814920e17b36f77bf6795aabfa9
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="publish-page-project-designer"></a>“项目设计器”->“发布”页
 “项目设计器”  上的“发布”  页面用于针对 ClickOnce 部署配置属性。  
@@ -31,10 +34,8 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="uielement-list"></a>UIElement 列表  
  **发布文件夹所在的位置**  
- 指定发布应用程序的位置。 可以是驱动器路径 (`C:\deploy\myapplication`)、文件共享 (`\\server\myapplication`)、FTP 服务器 (`ftp://ftp.microsoft.com/myapplication`) 或网站 (`http://www.microsoft.com/myapplication`)。 请注意，“发布位置”  框中必须存在文本才能使浏览（“...”）按钮正常工作。  
-  
- 默认情况下，如果安装了 IIS，则发布位置为 `http://localhost/<projectname>/` ；如果未安装 IIS，则发布位置为 `publish\` 目录。 如果计算机在运行 Windows Vista，则默认值始终是 `publish\` 目录（无论是否安装了 IIS）。  
-  
+ 指定发布应用程序的位置。 可为驱动器路径 (`C:\deploy\myapplication`)、文件共享 (`\\server\myapplication`) 或 FTP 服务器 (`ftp://ftp.microsoft.com/myapplication`)。 请注意，“发布位置”  框中必须存在文本才能使浏览（“...”）按钮正常工作。  
+   
  **安装文件夹 URL**  
  可选。 指定用户要用于安装应用程序的网站。 仅当与“发布位置” 不同时（例如，将应用程序发布到暂存服务器时），这才是必需的。  
   
@@ -44,16 +45,16 @@ ms.lasthandoff: 12/22/2017
  对于 WPF Web 浏览器应用程序，“该应用程序也可以脱机使用”  选项处于禁用状态，因为此类应用程序只能联机使用。  
   
  **应用程序文件**  
- 打开 [Application Files Dialog Box](http://msdn.microsoft.com/en-us/b06dff3a-b87a-4caf-996b-7a4acf8137a8)，它用于指定如何以及在何处安装各个文件。  
+ 打开“应用程序文件”对话框，它用于指定如何以及在何处安装各个文件。  
   
  **系统必备**  
- 打开 [Prerequisites Dialog Box](../../ide/reference/prerequisites-dialog-box.md)，它用于指定要与应用程序一起安装的必备组件，如 .NET Framework。  
+ 打开“系统必备”对话框，它用于指定要与应用程序一起安装的必备组件，如 .NET Framework。  
   
  **更新**  
- 打开 [Application Updates Dialog Box](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)，它用于指定应用程序的更新行为。 选择了“该应用程序只能联机使用”  时不可用。  
+ 打开“应用程序更新”对话框，它用于指定应用程序的更新行为。 选择了“该应用程序只能联机使用”  时不可用。  
   
  **选项**  
- 打开 [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，它用于指定其他高级发布选项。  
+ 打开“发布选项”对话框，它用于指定其他高级发布选项。  
   
  **发布版本**  
  设置应用程序的发布版本号；版本号更改时，会将应用程序作为更新发布。 发布版本的每个部分（“主版本”、“次版本” 、“生成号” 、“修订号” ）的最大值可以是 65355 (<xref:System.UInt16.MaxValue>)，这是 <xref:System.Version>允许的最大值。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 12/22/2017
  可选。 选择此选项（默认）时，发布版本号的“修订号”  部分会在每次发布应用程序时递增 1。 这将导致应用程序作为更新发布。  
   
  **发布向导**  
- 打开 [Publish Wizard](http://msdn.microsoft.com/en-us/fc6abebd-13d6-48e4-a567-fbc52dad0872)。 完成“发布向导”的效果与运行“生成”  菜单上的“发布”  命令相同。  
+ 打开发布向导。 完成“发布向导”的效果与运行“生成”  菜单上的“发布”  命令相同。  
   
  **立即发布**  
  使用当前设置发布应用程序。 等效于“发布向导”中的“完成”按钮。  

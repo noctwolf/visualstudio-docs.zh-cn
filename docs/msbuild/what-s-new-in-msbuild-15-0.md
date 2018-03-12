@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 03/01/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
-caps.latest.revision: "23"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ae35bafc612b4fd7b76a06c47300fee4f35ce5ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 81ee5566181a96ef36e8ce8f1545a22964301198
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 中的新增功能
 MSBuild 现已推出，属于 [.NET Core SDK](https://www.microsoft.com/net/download/core)，且可在 Windows、macOS 和 Linux 上生成 .NET Core 项目。  
@@ -39,7 +39,7 @@ MSBuild 现已推出，属于 [.NET Core SDK](https://www.microsoft.com/net/down
 -   `SDK35ToolsPath` 和 `SDK40ToolsPath` 属性指向与此版 Visual Studio 一起打包的 .NET Framework SDK（例如，对于 4.X 工具，则指向 10.0A）。  
 
 ## <a name="updates"></a>更新
-- [项目元素](../msbuild/project-element-msbuild.md)具有新的 `SDK` 属性。 此外，`Xmlns` 属性现也是可选项。
+- [项目元素](../msbuild/project-element-msbuild.md)具有新的 `SDK` 属性。 此外，`Xmlns` 属性现也是可选项。 详情请参阅[包、元数据和框架](/dotnet/core/packages)和 [.NET Core 的 csproj 格式的新增内容](/dotnet/core/tools/csproj)。
 - 目标外的[项元素](../msbuild/item-element-msbuild.md)具有新的 `Update` 属性。 此外，已放弃对 `Remove` 属性的限制。
 - `Directory.Build.props` 是对目录下项目提供自定义选项的用户定义的文件。 除非 `ImportDirectoryBuildTargets` 属性设为 **false**，否则该文件将从 Microsoft.Common.props 自动导入。 `Directory.Build.targets` 由 Microsoft.Common.targets 导入。
 - 名称不与当前属性列表冲突的元数据可选择性地表示为属性。 有关详细信息，请参阅[项元素](../msbuild/item-element-msbuild.md)。

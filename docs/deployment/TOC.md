@@ -24,7 +24,7 @@
 ## Node.js
 ### [使用 Web 部署发布到 Azure 网站](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
 ## Python
-### [发布到 Azure 应用服务](/visualstudio/python/publishing-to-azure)
+### [发布到 Azure 应用服务](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
 # 操作指南
 ## [ClickOnce 安全和部署](clickonce-security-and-deployment.md)
 ### [选择 ClickOnce 部署策略](choosing-a-clickonce-deployment-strategy.md)

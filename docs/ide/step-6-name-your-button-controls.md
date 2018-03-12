@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 12065875980d114d6ea8b9912009701afb5cf9a0
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: d1981e8003941f14295cd137ba238808ec49229a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-name-your-button-controls"></a>步骤 6：命名按钮控件
 窗体上只有一个 PictureBox。 当添加此控件时，IDE 自动将其命名为“pictureBox1” 。 只有一个名为“checkBox1” 的 CheckBox。 很快，你将编写一些代码，并且这些代码将引用到上述的 CheckBox 和 PictureBox。 因为上述每种控件都只有一个控件，所以当你在代码中看到  “pictureBox1”或  “checkBox1”时，应知道其中的含义。  
@@ -74,7 +76,7 @@ ms.lasthandoff: 01/13/2018
   
      在为控件添加事件处理程序后，通过双击控件或在菜单栏上选择 “视图”、 “代码”，你可以随时从 Windows 窗体设计器返回到控件。  
   
-     生成程序时名称很重要，并且方法（包括事件处理程序）可以具有任何所需的名称。 使用 IDE 添加事件处理程序时，IDE 将基于控件的名称和正在处理的事件创建一个名称。 例如，名为  “showButton”的按钮的 Click 事件称为 `showButton_Click()` 事件处理程序方法。 此外，通常会在方法名称后面添加一对括号 ()，以表明正在讨论的对象是方法。 如果你决定要更改代码的变量名，请右键单击代码中的变量，然后选择 “重构”、 “重命名”。 将重命名代码中变量的所有实例。 有关详细信息，请参阅[重命名重构 (C#)](../ide/reference/rename-csharp.md)或[重命名重构 (Visual Basic)](../ide/reference/rename-vb.md)。
+     生成程序时名称很重要，并且方法（包括事件处理程序）可以具有任何所需的名称。 使用 IDE 添加事件处理程序时，IDE 将基于控件的名称和正在处理的事件创建一个名称。 例如，名为  “showButton”的按钮的 Click 事件称为 `showButton_Click()` 事件处理程序方法。 此外，通常会在方法名称后面添加一对括号 ()，以表明正在讨论的对象是方法。 如果你决定要更改代码的变量名，请右键单击代码中的变量，然后选择 “重构”、 “重命名”。 将重命名代码中变量的所有实例。 详情请参阅[重命名重构](../ide/reference/rename.md)。
   
 ### <a name="to-continue-or-review"></a>继续或查看  
   

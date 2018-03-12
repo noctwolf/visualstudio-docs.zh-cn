@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - resource files, fallback processes
 - user interface, culture setting
 ms.assetid: b0788993-e62d-4f68-8235-5f87b1d48525
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 9acc8f2e015b6ca2ad26881eeb1f53012d96e56d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 20eefe3933767e357d977e2f3a5a0626aa555c39
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>介绍基于 .NET Framework 的国际应用程序
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，世界通用的应用程序的创建包括两个部分：全球化（设计可以适应不同区域性的应用程序的过程）和本地化（为特定区域性转换资源的过程）。 有关为国际受众设计应用程序的常规信息，请参阅[开发全球通用应用程序的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)。  
@@ -47,7 +49,7 @@ ms.lasthandoff: 12/22/2017
   
  借助可同时用于 Windows 窗体和 Web 窗体的项目系统，用户可使用程序集资源文件模板构建资源文件、访问资源以及构建项目。 附属程序集将随主程序集一并创建。  
   
- 执行本地化应用程序时，其外观由两个区域性值确定。 （区域性是一组与用户语言、环境和区域性惯例相关的用户首选项信息。）UI 区域性设置确定将加载哪些资源。 UI 区域性在 Web.config 文件和页面指令中设置为 `UICulture`，在 Visual Basic 或 Visual C# 代码中设置为 <xref:System.Globalization.CultureInfo.CurrentUICulture%2A>。 区域性设置确定值的格式，如日期、数字、货币等。 区域性在 Web.config 文件和页面指令中设置为 `Culture`，在 Visual Basic 或 Visual C# 代码中设置为 <xref:System.Globalization.CultureInfo.CurrentCulture%2A>。  
+ 执行本地化应用程序时，其外观由两个区域性值确定。 （区域性是一组与用户语言、环境和区域性惯例相关的用户首选项信息。）UI 区域性设置确定将加载哪些资源。 UI 区域性在 Web.config 文件和页面指令中设置为 `UICulture`，在 Visual Basic 或 C# 代码中设置为 <xref:System.Globalization.CultureInfo.CurrentUICulture%2A>。 区域性设置确定值的格式，如日期、数字、货币等。 区域性在 Web.config 文件和页面指令中设置为 `Culture`，在 Visual Basic 或 C# 代码中设置为 <xref:System.Globalization.CultureInfo.CurrentCulture%2A>。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.Globalization>   

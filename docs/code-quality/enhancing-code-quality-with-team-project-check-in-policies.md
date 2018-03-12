@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36e0ab96c1c0c3deeced62ff9808737c903e682b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c82bc929fa7633719c06569cb3dded5df651a349
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>利用团队项目签入策略提高代码质量
 
@@ -48,7 +50,7 @@ ms.lasthandoff: 12/22/2017
 |任务|支持内容|
 |----------|------------------------|
 |**在开发过程中使用代码分析：** 团队成员在其开发计算机上运行代码分析。 在 Visual Studio 中，开发人员配置并运行各个代码项目的代码分析运行，查看和分析各个运行所发现的问题，并创建警告工作项。|[分析应用程序质量](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|
-|**创建和运行单元测试：** 单元测试为开发人员和测试人员提供了一种快捷的方式来查找 C#、Visual Basic .NET 和 C++ 项目中类的方法的逻辑错误。 可以创建一次单元测试，并在每次源代码更改时运行单元测试以确保没有引入任何 bug。|[单元测试代码](../test/unit-test-your-code.md)|
+|**创建并运行单元测试：**单元测试，开发人员和测试人员的快速方法来查找 C#、 Visual Basic 和 c + + 项目中的类的方法中的逻辑错误。 可以创建一次单元测试，并在每次源代码更改时运行单元测试以确保没有引入任何 bug。|[单元测试代码](../test/unit-test-your-code.md)|
 |**跟踪工作项和缺陷：** 可以使用工作项来跟踪和管理有关你的团队项目的工作和信息。 工作项是一个 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 用于跟踪工作分配和进度的数据库记录。 你可以使用不同类型的工作项来跟踪不同类型的工作，例如，客户要求、产品 Bug 和开发任务。|[工作项 (VSTS)](/vsts/work/work-items/index)|
 
 ## <a name="external-resources"></a>外部资源

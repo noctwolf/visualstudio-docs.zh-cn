@@ -9,11 +9,11 @@ Description: Compare features and benefits of Visual Studio standard and cloud s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 72492331ed44c55da243960049f1e56d2a3e52f8
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="compare-visual-studio-subscription-options"></a>比较 Visual Studio 订阅选项
 
@@ -39,10 +39,10 @@ Visual Studio 订阅汇集了最全面的一套开发者工具、云服务、软
 
 **计划**：除标准订阅和云订阅外，Microsoft 还通过各种特殊计划提供订阅。
 
-- [Imagine](https://imagine.microsoft.com/en-us/about)：面向学生的专业级开发者工具和软件，对创建游戏、应用和网站所需的一切资源均不收取任何费用。
+- [Imagine](https://imagine.microsoft.com/about)：面向学生的专业级开发者工具和软件，对创建游戏、应用和网站所需的一切资源均不收取任何费用。
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)：面向创业公司的免费产品和服务。  BizSpark 成员可免费获取所有 Microsoft 开发和测试软件，包括 Azure、Windows、Visual Studio、Office 和 SQL Server。 
-- [Microsoft 合作伙伴网络 (MPN)](https://partner.microsoft.com/en-us)：最多可以获得 10 个企业订阅，具体取决于用户在 MPN 中所处的级别 
-- [Microsoft 认证培训师](https://www.microsoft.com/en-us/learning/mct-certification.aspx)：唯一量身定制的计划，提供对资源的独占访问，帮助用户进一步提升专业知识和培训技能。
+- [Microsoft 合作伙伴网络 (MPN)](https://partner.microsoft.com/)：最多可以获得 10 个企业订阅，具体取决于用户在 MPN 中所处的级别 
+- [Microsoft 认证培训师](https://www.microsoft.com/learning/mct-certification.aspx)：唯一量身定制的计划，提供对资源的独占访问，帮助用户进一步提升专业知识和培训技能。 对于 MCT 软件及服务和 MCT 开发者软件及服务订阅，请参阅 [Microsoft 认证培训师网站](https://www.microsoft.com/learning/mct-certification.aspx#item-ID0EFAAAAACA)，了解可通过订阅获得的培训使用权的详细信息。 
 
 ## <a name="visual-studio-licensing"></a>Visual Studio 授权
 Visual Studio 订阅均按用户授权。 每个用户可以在任意数量的设备上使用软件设计、开发、测试或演示自己的程序。 Visual Studio 订阅还允许授权用户评估软件，以及模拟客户环境，以便诊断与其程序相关的问题。
@@ -62,4 +62,4 @@ Visual Studio 订阅许可证还允许最终用户访问软件，以便对程序
 
 [比较 Visual Studio IDE 功能](https://www.visualstudio.com/vs/compare/)。
 
-对于 MCT 软件及服务和 MCT 开发者软件及服务订阅，请参阅 [Microsoft 认证培训师网站](https://www.microsoft.com/learning/en-us/mct-certification.aspx#item-ID0EFAAAAACA)，了解可通过订阅获得的培训使用权的详细信息。  
+ 

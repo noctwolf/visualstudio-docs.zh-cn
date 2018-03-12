@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: vs.progression.debugwithcodemaps
+f1_keywords:
+- vs.progression.debugwithcodemaps
 dev_langs:
 - CSharp
 - VB
@@ -28,16 +30,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
-caps.latest.revision: "39"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.workload: multiple
-ms.openlocfilehash: 9d1efeee412d98c62b7dc6aa2c92d2bbab4fab6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 99f388fea1d6512760f99615256f71002099e9be
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>在 Visual Studio Enterprise 中进行调试时创建调用堆栈可视的学习的路线图
 创建一个代码图以进行调试时直观地跟踪调用堆栈。 你可以在图中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
@@ -46,7 +49,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   可调试的代码，例如 Visual C# .NET、Visual Basic .NET、C++、JavaScript 或 X++  
+-   你可以调试，如 Visual C#、 Visual Basic、 c + +、 JavaScript 或 X + + 的代码  
 
 下面是快速了解一下代码图：
   
@@ -95,7 +98,7 @@ ms.lasthandoff: 12/22/2017
  ![使用下一个调用堆栈更新代码图](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
 ##  <a name="AddRelatedCode"></a>向地图添加相关的代码  
- 现在你已生成一个图的新增功能下一步？ 如果你正在使用 Visual C#.NET 或 Visual Basic.NET，添加项，例如字段、 属性和其他方法，来跟踪代码中发生了什么情况。  
+ 现在你已生成一个图的新增功能下一步？ 如果你正在使用 Visual C# 或 Visual Basic，添加项，例如字段、 属性和其他方法，来跟踪代码中发生了什么情况。  
   
  双击某个方法以查看其代码定义，或者使用该方法的快捷菜单。 (键盘： 选择在图上按方法**F12**)  
   

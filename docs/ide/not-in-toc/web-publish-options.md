@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: ASP.NET, web applications, deployment, publishing
+helpviewer_keywords:
+- ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10cb0ca2d5190ce73f0fd67da5b1f795d5aa8dd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # 哪些发布选项适合我？
 
@@ -31,26 +34,24 @@ ms.lasthandoff: 12/22/2017
 
 在“发布”选项卡上，可以选择现有发布配置文件、导入现有发布配置文件或使用此处所述的选项新建发布配置文件。
 
-## Azure 应用服务
+## Azure 应用服务 Web 应用
 
-[Azure 应用服务](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/)帮助开发人员快速创建各种可缩放的 Web 应用程序和服务，而无需维护基础结构。
+[Azure 应用服务 Web 应用](/azure/app-service/app-service-web-overview)（或仅 Web 应用）帮助开发人员快速创建各种可缩放的 Web 应用程序和服务，而无需维护基础结构。
 
-尤其对于 Web 应用程序而言，应用服务就是一个用于 [*Web 应用*](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/)的容器，Web 应用的作用非常接近于传统的 Web 主机。 也就是说，Web 应用提供可以运行服务器端代码并使其可供 Internet 访问的必要计算资源。
-
-用户可通过为包含的应用服务选择[定价层或计划](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/)来确定 Web 应用具有的计算能力。 而且不必更改定价层就能让多个 Web 应用（和其他应用类型）共享同一个应用服务。 例如，可以在同一个应用服务上同时托管开发、过渡和生产 Web 应用。
+用户可通过为包含的应用服务选择[定价层或计划](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)来确定 Web 应用具有的计算能力。 而且不必更改定价层就能让多个 Web 应用（和其他应用类型）共享同一个应用服务。 例如，可以在同一个应用服务上同时托管开发、过渡和生产 Web 应用。
 
 应用服务在 Azure 的云托管虚拟机上运行，但这些虚拟机是为你而托管的。 应用服务中的每个 Web 应用均分配有一个唯一的 \*.azurewebsites.net URL；除免费层以外的所有定价层允许向站点分配自定义域名。
 
-### 何时选用 Azure 应用服务
+### 何时选用 Azure 应用服务 Web 应用
 
 - 希望部署可通过 Internet 访问的 Web 应用程序。
 - 希望根据需求自动缩放 Web 应用程序，而无需重新部署。
 - 无需维护服务器基础结构（包括软件更新）。
 - 不需要在托管 Web 应用程序的服务器上进行任何计算机级别的自定义设置。
 
-
 > 如果想在自己的数据中心或其他本地计算机中使用 Azure 应用服务，可以使用 [Azure 堆栈](https://azure.microsoft.com/overview/azure-stack/)来实现。
 
+有关发布 ASP.NET Core 应用的详细信息，请参阅[使用 Visual Studio 将 ASP.NET Core Web 应用发布到 Azure App Service](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 
 ## Azure 虚拟机
 
@@ -84,7 +85,7 @@ ms.lasthandoff: 12/22/2017
 - 仅需要本地测试部署。
 - 在将应用程序文件发送到另一个部署目标之前，想单独对文件进行检查并在必要时进行修改。
 
-
+有关部署 .NET Core 应用的详细信息，请参阅[使用 Visual Studio 部署 .NET Core 应用](/dotnet/core/deploying/deploy-with-vs)。
 
 ## 自定义目标
 
@@ -104,3 +105,5 @@ ms.lasthandoff: 12/22/2017
 - 在除 Azure 以外的可通过 URL 访问的提供程序上使用云服务。
 - 希望用来进行部署的凭据不是在 Visual Studio 中所用的凭据或直接与 Azure 帐户相关联的凭据。
 - 希望在每次部署时从目标中删除文件。
+
+有关发布到 IIS 的详细信息，请参阅[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) 和[在远程 IIS 计算机上远程调试 ASP.NET](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。

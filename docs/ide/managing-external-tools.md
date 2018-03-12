@@ -4,31 +4,35 @@ ms.custom:
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.externaltools
-helpviewer_keywords: external tools [Visual Studio]
+f1_keywords:
+- vs.externaltools
+helpviewer_keywords:
+- external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e796b1e5a1773183c04409781cf6e2026bfe96e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 78a3e1ee549a42681d6f15b432d0c6bb608976fd
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 
 可以使用“工具”菜单从 Visual Studio 内部调用外部工具。 “工具”菜单上提供了几个默认工具，但你也可以通过添加自己的其他可执行文件来自定义该菜单。
 
-## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Visual Studio Tools 菜单中提供的工具
+## <a name="tools-available-on-the-tools-menu"></a>“工具”菜单中提供的工具
 
 “工具”菜单包含若干内置命令，如：
 
 * 用于[管理 Visual Studio 扩展](finding-and-using-visual-studio-extensions.md)的“扩展和更新”
-* 用于[整理代码片段](code-snippets.md#code-snippet-manager)的“代码片段管理器...”
+* 用于[整理代码片段](code-snippets.md)的“代码片段管理器...”
 * 用于启动 [Dotfuscator Community Edition (CE)](dotfuscator/index.md)（如果[已安装](dotfuscator/install.md)）的 **PreEmptive Protection - Dotfuscator**
 * 用于[自定义菜单和工具栏](how-to-customize-menus-and-toolbars-in-visual-studio.md)的“自定义...”
 * 用于[为 Visual Studio IDE 和其他工具设置各种不同选项](reference/options-dialog-box-visual-studio.md)的“选项...”
@@ -37,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 
 可以添加将在“工具”菜单中显示的外部工具。
 
-1. 通过依次选择“工具”和“外部工具...”，打开“外部工具”对话框。
+1. 通过选择“工具” > “外部工具...”，打开“外部工具”对话框。
 
 1. 单击“添加”，然后填写信息。 例如，以下条目会导致 Windows 资源管理器在当前已在 Visual Studio 中打开的文件目录中打开：
 

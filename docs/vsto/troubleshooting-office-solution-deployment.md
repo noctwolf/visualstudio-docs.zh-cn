@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -63,7 +65,7 @@ ms.lasthandoff: 01/10/2018
  可以将 .NET Framework、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]和 Office 主互操作程序集作为随 Office 解决方案部署的先决条件添加到安装程序包中。 有关如何安装主互操作程序集的信息，请参阅[配置计算机以开发 Office 解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)和[如何： 安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)。  
   
 ## <a name="publishing-using-localhost-can-cause-installation-problems"></a>使用“Localhost”进行发布可能会导致安装问题  
- 使用“http://localhost”作为文档级解决方案的发布或安装位置时，“发布向导”  不会将字符串转换为实际计算机名称。 在这种情况下，必须在开发计算机上安装解决方案。 要使部署的解决方案在开发计算机上使用 IIS，请对所有 HTTP/HTTPS/FTP 位置使用完全限定的名称，而不是 localhost。  
+ 使用“http://localhost” 作为文档级解决方案的发布或安装位置时，“发布向导”  不会将字符串转换为实际计算机名称。 在这种情况下，必须在开发计算机上安装解决方案。 要使部署的解决方案在开发计算机上使用 IIS，请对所有 HTTP/HTTPS/FTP 位置使用完全限定的名称，而不是 localhost。  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>加载缓存的程序集而不是更新的程序集  
  当项目输出路径位于网络文件共享上、程序集使用强名称进行签名以及自定义项的程序集版本未更改时，Fusion（.NET Framework 程序集加载程序）会加载程序集的缓存副本。 如果更新的程序集符合这些条件，则更新不会在下次运行项目时出现，因为会加载缓存副本。  

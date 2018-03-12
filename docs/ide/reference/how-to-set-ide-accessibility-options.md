@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 08/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: accessibility [Visual Studio]
+helpviewer_keywords:
+- accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7b7623a60f5a6e06739596b02125806205c07b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6881e90a0035ed7c918acab924832013d9b17088
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：设置 IDE 辅助功能选项
 > [!TIP]
@@ -33,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="editors-dialogs-and-tool-windows"></a>编辑器、对话框和工具窗口  
  默认情况下，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的对话框和工具窗口使用与操作系统相同的字号和颜色。 IDE 框架、对话框、工具栏和工具窗口的颜色设置是基于配色方案的：深色或浅色。 可在[“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)中更改当前颜色主题。  
 
- 也可以在编辑器的“代码”视图中显示弹出窗口。 弹出窗口可以提示当前对象和参数的可用成员，以便完成函数或语句。 在键入有困难的情况下，这些窗口非常有用。 但是，它们会干扰代码编辑器中的焦点，这可能会对某些用户造成困扰。 通过打开“选项”对话框，并在“选项”对话框的“文本编辑器”->“所有语言”->“常规”页上清除“自动列出成员”和“参数信息”，可以关闭这些窗口。 有关详细信息，请参阅[如何：设置常规编辑器选项](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)。  
+ 也可以在编辑器的“代码”视图中显示弹出窗口。 弹出窗口可以提示当前对象和参数的可用成员，以便完成函数或语句。 在键入有困难的情况下，这些窗口非常有用。 但是，它们会干扰代码编辑器中的焦点，这可能会对某些用户造成困扰。 通过打开“选项”对话框，并在“选项”对话框的“文本编辑器”->“所有语言”->“常规”页上清除“自动列出成员”和“参数信息”，可以关闭这些窗口。
 
  可以在集成开发环境 (IDE) 中重新排列窗口，以最适合的方式开展工作。 可以停靠、浮动、隐藏或自动隐藏每个工具窗口。  
 

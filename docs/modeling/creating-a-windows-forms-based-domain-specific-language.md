@@ -4,22 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2aaa2426d506f9c498c4428bc0e7f4e8134ac1ab
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的域特定语言
 可以使用 Windows 窗体以显示域特定语言 (DSL) 模型，而不是使用 DSL 图的状态。 本主题将指导你将 Windows 窗体绑定到 DSL、 使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK。  
   
- ![DSL &#45;Wpf &#45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
 DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。  
   
 ## <a name="creating-a-windows-forms-dsl"></a>创建 Windows 窗体 DSL  
@@ -70,7 +71,7 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
 ## <a name="updating-the-dsl-definition"></a>更新 DSL 定义  
  本演练中使用 DSL 定义以下。  
   
- ![DSL &#45;Wpf &#45; 1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
   
 #### <a name="to-update-the-dsl-definition"></a>若要更新 DSL 定义  
   
@@ -123,13 +124,13 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
   
 2.  选择**对象**，**下一步**。  
   
-     展开**Dsl**， **Company.FarmApp**，然后选择**场**，这是你的模型的根类。 选择**完成**。  
+     展开**Dsl**， **Company.FarmApp**，然后选择**场**，这是你的模型的根类。 选择“完成”。  
   
      在解决方案资源管理器， **UI**项目现在包含**Properties\DataSources\Farm.datasource**  
   
      属性和关系的模型类出现在数据源窗口。  
   
-     ![DslWpf &#45; 3](../modeling/media/dslwpf-3.png "DslWpf 3")  
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")  
   
 #### <a name="to-connect-your-model-to-a-form"></a>若要向窗体连接您的模型  
   
@@ -304,7 +305,7 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
   
      你应能够编辑数据网格视图中的元素的名称。 此外可以在从此处删除它。  
   
- ![DSL &#45;Wpf &#45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
   
 ### <a name="about-the-code-to-add-an-element"></a>有关用于添加一个元素的代码  
  为新的元素按钮，下面的备用代码是稍微简单一些。  

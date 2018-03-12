@@ -2,12 +2,13 @@
 layout: LandingPage
 title: "在 Visual Studio 中调试应用 | Microsoft Docs"
 description: "了解如何使用 Visual Studio 2017 并以你喜欢的语言来调试适用于你的平台和设备的应用程序、服务和工具。"
+ms.topic: landing-page
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 87f55a02e4e37d4daa8da0282182f7e3a45a0efa
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 6c81a60b706a02a66fce176613fce1e0dae2496c
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="debugging-in-visual-studio"></a>在 Visual Studio 中进行调试
 
@@ -15,7 +16,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +34,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/getting-started-with-the-debugger">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,7 +52,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/navigating-through-code-with-the-debugger">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -87,7 +88,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/remote-debugging">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -105,7 +106,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/get-started-debugging-multithreaded-apps">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -123,7 +124,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
         <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/intellitrace">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/intellitrace">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -141,7 +142,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/debugger-tips-and-tricks">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-tips-and-tricks">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -159,7 +160,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -183,7 +184,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
 
 <ul class="panelContent cardsW">
     <li>
-        <a href="https://msdn.microsoft.com/en-us/library/ee661590.aspx">
+        <a href="https://msdn.microsoft.com/library/ee661590.aspx">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -196,7 +197,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/debug-interface-access/debug-interface-access-sdk">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/debug-interface-access-sdk">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -209,7 +210,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/spy-increment-help">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/spy-increment-help">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

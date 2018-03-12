@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: configure test agents, test lab
+helpviewer_keywords:
+- configure test agents, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 495f14643245f17a2e7fcef1e21d2fc1fe978a46
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 5caa566e15f7f3c4c69f8d33a6c7dd0eead38785
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="install-and-configure-test-agents"></a>安装和配置测试代理
 
@@ -81,7 +83,7 @@ A：建议在所有新的自动测试方案中都使用 Agents for Visual Studio
 | Agents for Visual Studio 2013 支持的方案 | TFS 和 TS 中的替代方案 |
 | --- | --- |
 | Visual Studio 中的“生成-部署-测试工”作流 | 用户可以在 TFS 中使用[生成定义](https://www.visualstudio.com/team-services/continuous-integration/)（而不是 XAML 生成）生成、部署和测试方案。 |
-| 使用本地远程计算机进行负载测试（性能测试） | 使用 Test Controller/Test Agents 2013 Update 5 在本地运行负载测试。 [详细信息](https://msdn.microsoft.com/en-us/library/ff400223.aspx)。 |
+| 使用本地远程计算机进行负载测试（性能测试） | 使用 Test Controller/Test Agents 2013 Update 5 在本地运行负载测试。 [详细信息](https://msdn.microsoft.com/library/ff400223.aspx)。 |
 | 使用实验室环境从 Microsoft 测试管理器远程执行自动测试 | 目前此方案没有替代方案。 建议在生成和发布定义（而不是 XAML 生成）中使用“运行功能测试”任务来远程执行测试。 |
 | 开发人员在 Visual Studio 中执行远程测试 | 不再支持。 |
 

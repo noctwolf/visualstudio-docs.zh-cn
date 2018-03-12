@@ -1,5 +1,5 @@
 ---
-title: "搜索和筛选 | Visual Studio Marketplace"
+title: "搜索和筛选 | Microsoft 文档"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can locate individual subscribers or group
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 65ffebd7cd1472dbf0acfdda2f102da6e8273c92
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: fddd8f950969d77ac879d8570bba21468f657123
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>搜索和筛选 Visual Studio 订阅中的订阅者
 通过 Visual Studio 订阅管理门户，可以基于各种条件查找订阅者的特定子集。 可以按名称、电子邮件地址、订阅级别以及其他各种信息对订阅者列表进行筛选。 

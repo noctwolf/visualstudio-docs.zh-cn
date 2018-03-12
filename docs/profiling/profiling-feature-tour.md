@@ -4,21 +4,24 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="profiling-feature-tour"></a>分析功能简介
 
@@ -32,7 +35,7 @@ Visual Studio 提供了各种分析工具，可依据你的应用类型帮助你
 
 ![诊断工具摘要视图](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Diagnostic Tools Summary")
 
-“诊断工具”窗口通常是分析应用的首选方式，但你也可改为对应用执行事后分析。 如果想要了解关于不同方法的详细信息，请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+“诊断工具”窗口通常是探查应用的首选方式，但对于版本生成，也可改为对应用执行事后分析。 如果想要了解关于不同方法的详细信息，请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 若要了解不同应用类型对应的探查工具支持，请参阅[我应使用哪个工具？](#tool_support_info)。
 
 ## <a name="analyze-cpu-usage"></a>分析 CPU 的使用量
 
@@ -119,13 +122,13 @@ CPU 使用率和内存使用量等分析工具可以与调试器配合使用（�
 
 ## <a name="analyze-performance-javascript"></a>分析性能 (JavaScript)
 
-对于 Windows 通用 HTML 应用，可以使用 JavaScript 内存工具和 HTML UI 响应能力工具。
+对于 UWP 应用，可以使用“JavaScript 内存”工具和“HTML UI 响应能力”工具。
 
 JavaScript 内存工具类似于适用于其他应用类型的内存使用量工具。 你可以使用此工具来了解内存使用量并查找应用中的内存泄露。 有关工具的详细信息，请参阅 [JavaScript 内存](../profiling/javascript-memory.md)。
 
 ![JavaScript 内存分析工具](../profiling/media/diagjsmemory.png "DiagJSMemory")
 
-若要在 Windows 通用 HTML 应用中诊断 UI 响应能力、减慢加载时间和减慢视觉对象更新，请使用 HTML UI 响应能力工具。 使用情况类似于适用于其他应用类型的应用程序时间线工具。 有关更多信息，请参阅 [HTML UI 响应能力](../profiling/html-ui-responsiveness.md)。
+若要对 UWP 应用执行 UI 响应能力、长时间加载和缓慢视觉对象更新诊断，请使用“HTML UI 响应能力”工具。 使用情况类似于适用于其他应用类型的应用程序时间线工具。 有关更多信息，请参阅 [HTML UI 响应能力](../profiling/html-ui-responsiveness.md)。
 
 ![HTML UI 响应能力分析工具](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
 
@@ -151,7 +154,7 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 
 下表列出了 Visual Studio 提供的不同工具以及适用的不同项目类型：
   
-|性能工具|Windows 桌面|Windows 通用/应用商店|ASP.NET/ASP.NET Core|  
+|性能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[内存使用率](../profiling/memory-usage.md)|是|是|是|  
 |[CPU 使用率](../profiling/cpu-usage.md)|是|是|是（不适用于 .NET Core/ASP.NET Core）|  

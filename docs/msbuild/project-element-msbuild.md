@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Project
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#Project
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - <Project> element [MSBuild]
 - Project element [MSBuild]
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
-caps.latest.revision: "31"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7735cce0a03f31c98cc45b481b8697d306f63f4d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: bf347f135368b2452170e7ebfa9c987ed19adf77
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="project-element-msbuild"></a>Project 元素 (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。  
@@ -38,8 +40,10 @@ ms.lasthandoff: 12/22/2017
 <Project InitialTargets="TargetA;TargetB"  
          DefaultTargets="TargetC;TargetD"  
          TreatAsLocalProperty="PropertyA;PropertyB"  
-         ToolsVersion=<version number>  
+         ToolsVersion=<version number>
+         Sdk="name[/version]"
          xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+    <Sdk... />
     <Choose>... </Choose>  
     <PropertyGroup>... </PropertyGroup>  
     <ItemGroup>... </ItemGroup>  
@@ -59,7 +63,7 @@ ms.lasthandoff: 12/22/2017
 |---------------|-----------------|  
 |`DefaultTargets`|可选特性。<br /><br /> 如果未指定目标，则默认目标将作为生成的入口点。 使用分号 (;) 分隔多个目标。<br /><br /> 如果未在 `DefaultTargets` 属性或 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 命令行中指定默认目标，那么引擎会在评估 [Import](../msbuild/import-element-msbuild.md) 元素后在项目文件中执行第一个目标。|  
 |`InitialTargets`|可选特性。<br /><br /> 会在 `DefaultTargets` 属性中或命令行上指定的目标前运行初始目标。 使用分号 (;) 分隔多个目标。|  
-|`SDK`|可选特性。 （仅适用于 Visual Studio 2017 或更高版本中的 .NET Core 项目。）<br /><br /> 用于创建添加到 .proj 文件的隐式 Import 语句的 SDK 版本。 例如 `<Project Sdk="Microsoft.NET.Sdk/1.0.0-RC" />`。|  
+|`Sdk`|可选特性。 <br /><br /> 用于创建添加到 .proj 文件的隐式 Import 语句的 SDK 名称和可选版本。 如果不指定任何版本，则 MSBuild 将尝试解析默认版本。  例如，`<Project Sdk="Microsoft.NET.Sdk" />` 或 `<Project Sdk="My.Custom.Sdk/1.0.0" />`。|  
 |`ToolsVersion`|可选特性。<br /><br /> 用于确定 $(MSBuildBinPath) 和 $(MSBuildToolsPath) 的值的工具集 MSBuild 的版本。|  
 |`TreatAsLocalProperty`|可选特性。<br /><br /> 不会被视为全局的属性名称。 此属性可防止特定命令行属性替代项目或目标文件和所有后续导入中设置的属性值。 使用分号 (;) 分隔多个属性。<br /><br /> 通常，全局属性会替代项目或文件中设置的属性值。 如果该属性在 `TreatAsLocalProperty` 值中列出，那么全局属性值不会替代在该文件或任何后续导入中设置的属性值。 有关详细信息，请参阅[如何：使用不同选项生成相同的源文件](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。 **注意：**可使用 **/property**（或 **/p**）开关在命令提示符处设置全局属性。 还可使用 MSBuild 任务的 `Properties` 属性为多项目生成中的子项目设置或修改全局属性。 有关详细信息，请参阅 [MSBuild 任务](../msbuild/msbuild-task.md)。|  
 |`Xmlns`|可选特性。<br /><br /> 如果指定，则 `xmlns` 属性必须具有“http://schemas.microsoft.com/developer/msbuild/2003”的值。|  
@@ -72,7 +76,8 @@ ms.lasthandoff: 12/22/2017
 |[Import](../msbuild/import-element-msbuild.md)|可选元素。<br /><br /> 启用项目文件，导入另一项目文件。 项目中可能有零个或零个以上的 `Import` 元素。|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|可选元素。<br /><br /> 各个项的分组元素。 使用 [Item](../msbuild/item-element-msbuild.md) 元素指定项。 项目中可能有零个或零个以上的 `ItemGroup` 元素。|  
 |[ProjectExtensions](../msbuild/projectextensions-element-msbuild.md)|可选元素。<br /><br /> 提供在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件中保留非 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 信息的方法。 项目中可能有零个或一个 `ProjectExtensions` 元素。|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|可选元素。<br /><br /> 各个属性的分组元素。 使用 [Property](../msbuild/property-element-msbuild.md) 元素指定属性。 项目中可能有零个或零个以上的 `PropertyGroup` 元素。|  
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|可选元素。<br /><br /> 各个属性的分组元素。 使用 [Property](../msbuild/property-element-msbuild.md) 元素指定属性。 项目中可能有零个或零个以上的 `PropertyGroup` 元素。|
+|[SDK](../msbuild/sdk-element-msbuild.md)|可选元素。<br /><br /> 引用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目 SDK。  此元素可以用作 SDK 属性的替代属性。|  
 |[Target](../msbuild/target-element-msbuild.md)|可选元素。<br /><br /> 包含一组要连续执行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务。 使用 [Task](../msbuild/task-element-msbuild.md) 元素指定任务。 项目中可能有零个或零个以上的 `Target` 元素。|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|可选元素。<br /><br /> 提供在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中注册任务的方法。 项目中可能有零个或零个以上的 `UsingTask` 元素。|  
 

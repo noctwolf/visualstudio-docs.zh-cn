@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.graphics.frameanalysis
-ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
-caps.latest.revision: "9"
+f1_keywords:
+- vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d15e781445605eb1e236f177669c2fe8041d90d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="graphics-frame-analysis"></a>图形帧分析
 使用 Visual Studio 图形分析器中的图形帧分析可分析并优化你的 Direct3D 游戏或应用的呈现性能。  
@@ -147,37 +148,32 @@ ms.lasthandoff: 12/22/2017
 ### <a name="gpu-counters"></a>GPU 计数器  
  对 GPU 硬件计数器的支持与硬件相关。  
   
- 因为当前由 Intel、AMD 或 nVidia 提供的计算机 GPU 都无法可靠地支持 GPU 硬件计数器，所以帧分析不会从中收集计数器。 但是，帧分析会从以下能够可靠地支持它们的 GPU 中收集硬件计数器：  
+ 因为当前由 Intel、AMD 或 nVidia 提供的计算机 GPU 都无法可靠地支持 GPU 硬件计数器，所以帧分析不会从中收集计数器。 但是，帧分析未从以下 GPU，可靠地支持它们收集硬件计数器：  
   
--   Qualcomm SOC（全部支持 Windows Phone）  
-  
--   nVidia T40 (Tegra4)。  
+-   nVidia T40 (Tegra4)
   
  任何其他支持帧分析的平台都不会收集 GPU 硬件计数器。  
   
 > [!NOTE]
 >  由于 GPU 硬件计数器为硬件资源，因此要收集每个呈现变体的完整硬件计数器整集可能要采取多个传递。 因此，收集计数器 GPU 应采取的顺序未指定。  
   
-### <a name="windows-phone"></a>Windows Phone  
- 在最初随 Windows Phone 8.1 或 Windows Phone 10 的 Windows Phone 手机上仅支持时间戳、 封闭查询和 GPU 硬件计数器。 帧分析需要它们以播放图形日志文件。 最初随 Windows Phone 8 的 Windows Phone 手机不支持帧分析，即使对于已更新为 Windows Phone 8.1 或 Windows Phone 10 的手机。  
-  
 ## <a name="unsupported-scenarios"></a>不支持的方案  
  不支持以某些方式使用帧分析，或者说它们是糟糕的方案。  
-  
-### <a name="warp"></a>WARP  
- 帧分析旨在用于配置和提升真实硬件上的呈现性能。 不阻止在 WARP 设备上运行帧分析（在 WARP 上运行 Windows Phone 模拟器），但是通常这么做不值得，因为在高端 CPU 上运行的 WARP 的运行速度甚至比功能最少的现代 GPU 还慢，而且根据其运行的特定 CPU，WARP 的性能可能差别很大。  
   
 ### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>低级别设备上高功能级别捕获的播放  
  在图形分析器中，当你播放使用比播放计算机支持的功能级别更高的图形日志文件时，它将自动回退到 WARP。 在帧分析中，它显然不会回退到 WARP，而且它会生成一个错误，因为 WARP 对于检查 Direct3D 应用的正确性（而非其性能）很有用。  
   
 > [!NOTE]
->  虽然记住功能级别的问题很重要，但是你可以在不同的硬件配置和设备上捕获并播放图形日志文件。 例如，你可以在 Windows Phone 上捕获图形信息，然后在台式计算机上播放它，反之亦然。 在这两种情况下，只要日志文件不包含 API 或使用在播放计算机上不受支持的功能级别，就可以播放图形日志。  
+>  虽然记住功能级别的问题很重要，但是你可以在不同的硬件配置和设备上捕获并播放图形日志文件。 只要日志文件不包含 Api 或使用在播放计算机上不受支持的功能级别，可以播放图形日志。  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 及更低版本  
  如果你的应用调用 Direct3D 10 API，则即使图形分析器工具已识别并使用它们，帧分析也不会识别或配置它们。
   
 > [!NOTE]
 >  这仅适用于你正在使用的 Direct3D API 调用，不适用于功能级别。
+
+### <a name="warp"></a>WARP  
+ 帧分析旨在用于配置和提升真实硬件上的呈现性能。 不阻止在 WARP 设备上运行帧分析，但它通常不是值得做，因为在高端 CPU 上运行的 WARP 比甚至支持最少的现代 Gpu，速度慢，并且由于 WARP 的性能可能大大有所不同具体取决于特定的 CPU上运行它。  
   
 ##  <a name="Variants"></a>变体  
  每个帧分析对播放期间帧的呈现的方式的更改称为*变体*。 帧分析检查的变体对应于你为了提升应用的呈现性能或视觉质量可能做出的相对容易的常见更改，例如，减小纹理大小、使用纹理压缩或启用不同种类的抗锯齿。 这些变体将重写应用的常用呈现上下文和参数。 摘要如下：  
@@ -185,9 +181,9 @@ ms.lasthandoff: 12/22/2017
 |变体|描述|  
 |-------------|-----------------|  
 |**1x1 视口大小**|将所有呈现器目标上的视口尺寸缩小为 1x1 像素。<br /><br /> 有关详细信息，请参阅[1x1 视口大小变体](1x1-viewport-size-variant.md)|  
-|**0 x MSAA**|在所有呈现器目标上禁用多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0x / 2 x / 4x msaa 变体](0x-2x-4x-msaa-variants.md)|  
-|**2 x MSAA**|在所有呈现器目标上启用 2x 多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0x / 2 x / 4x msaa 变体](0x-2x-4x-msaa-variants.md)|  
-|**4 x MSAA**|在所有呈现器目标上启用 4x 多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0x / 2 x / 4x msaa 变体](0x-2x-4x-msaa-variants.md)|  
+|**0x MSAA**|在所有呈现器目标上禁用多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0x / 2 x / 4x msaa 变体](0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|在所有呈现器目标上启用 2x 多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0x / 2 x / 4x msaa 变体](0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|在所有呈现器目标上启用 4x 多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0x / 2 x / 4x msaa 变体](0x-2x-4x-msaa-variants.md)|  
 |**点纹理筛选**|针对所有相应的纹理采样，将筛选模式设置为 `DXD11_FILTER_MIN_MAG_MIP_POINT`（点纹理筛选）。<br /><br /> 有关详细信息，请参阅[点、 Bilinear、 Trilinear 和 Anisotropic 纹理过滤变体](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
 |**双线性纹理筛选**|针对所有相应的纹理采样，将筛选模式设置为 `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT`（双线性纹理筛选）。<br /><br /> 有关详细信息，请参阅[点、 Bilinear、 Trilinear 和 Anisotropic 纹理过滤变体](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
 |**三线性纹理筛选**|针对所有相应的纹理采样，将筛选模式设置为 `DXD11_FILTER_MIN_MAG_MIP_LINEAR`（三线性纹理筛选）。<br /><br /> 有关详细信息，请参阅[点、 Bilinear、 Trilinear 和 Anisotropic 纹理过滤变体](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  

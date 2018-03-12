@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesDebug
+f1_keywords:
+- vb.ProjectPropertiesDebug
 helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a16f39d9f9ba6c3e0790a53c85d0824178083953
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 305f5160ab91fdfa61e9133ab9f867194e4a117f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="debug-page-project-designer"></a>“项目设计器”->“调试”页
 > [!WARNING]
@@ -29,16 +32,16 @@ ms.lasthandoff: 12/22/2017
   
  使用项目设计器的“调试”页为 Visual Basic 或 C# 项目中的调试行为设置属性。  
   
- 要访问“调试”页，请在解决方案资源管理器中选择项目节点。 在“项目”菜单上，选择 ProjectName 属性。 当项目设计器出现时，请单击“调试”选项卡。  
+ 要访问“调试”页，请在解决方案资源管理器中选择项目节点。 在“项目”菜单上，选择“*ProjectName*属性”。 当项目设计器出现时，请单击“调试”选项卡。  
   
 ## <a name="configuration-and-platform"></a>配置和平台  
  通过以下选项，可选择要显示或修改的配置和平台。  
   
  **配置**  
- 指定要显示或修改的配置设置。 设置可以为“调试”（默认）、“发布”或“所有配置”。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要显示或修改的配置设置。 设置可以为“调试”（默认）、“发布”或“所有配置”。
   
  **平台**  
- 指定要显示或修改的平台设置。 这些选择包括“任何 CPU”（默认）、“x64”和“x86”。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要显示或修改的平台设置。 这些选择包括“任何 CPU”（默认）、“x64”和“x86”。
   
 ## <a name="start-action"></a>启动操作  
  “启动操作”指示应用程序调试时要启动的项：项目、自定义程序、URL 或不启动任何项。 默认情况下，此选项设置为“启动项目”。 “调试”页上的“启动操作”设置确定 `StartAction` 属性的值。  
@@ -74,10 +77,10 @@ ms.lasthandoff: 12/22/2017
   
  要在安全区域调试，必须启用此选项并在[“高级安全设置”对话框](../../ide/reference/advanced-security-settings-dialog-box.md)中启用“使用所选的权限集调试此应用程序”。  
   
-## <a name="see-also"></a>请参阅  
- [在 Visual Studio 中进行调试](../../debugger/debugging-in-visual-studio.md)   
- [C# 调试配置的项目设置](../../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Visual Basic 调试配置的项目设置](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [管理调试属性](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [如何：使用受限权限对 ClickOnce 应用程序进行调试](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [如何：创建和编辑配置](../../ide/how-to-create-and-edit-configurations.md)
+## <a name="see-also"></a>请参阅
+
+[在 Visual Studio 中进行调试](../../debugger/debugging-in-visual-studio.md)  
+[C# 调试配置的项目设置](../../debugger/project-settings-for-csharp-debug-configurations.md)  
+[Visual Basic 调试配置的项目设置](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
+[如何：使用受限权限对 ClickOnce 应用程序进行调试](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)  
+[如何：创建和编辑配置](../../ide/how-to-create-and-edit-configurations.md)

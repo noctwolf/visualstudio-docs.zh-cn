@@ -1,5 +1,5 @@
 ---
-title: Visual C# IntelliSense | Microsoft Docs
+title: "C# IntelliSense | Microsoft 文档"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,25 +8,26 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C#, IntelliSense
+- C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 46f56fc6bad74b3144b3dbd4701248598a01883b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 9da494eaf71a02f7b46ce68b1cf9f781fe32e716
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-intellisense"></a>Visual C# IntelliSense
+# <a name="c-intellisense"></a>C# IntelliSense
 
-在编辑器中进行编码以及在[即时模式](../ide/reference/immediate-window.md)命令窗口中进行调试时，可以使用 Visual C# IntelliSense。
+在编辑器中进行编码以及在[即时模式](../ide/reference/immediate-window.md)命令窗口进行调试时，可以使用 C# IntelliSense。
 
 ## <a name="completion-lists"></a>完成列表
 
-Visual C# 中的 IntelliSense 完成列表包含来自列表成员、完成单词等的标记。 它提供到以下内容的快速访问：
+C# 中的 IntelliSense 完成列表包含来自列表成员、完成单词等的标记。 它提供到以下内容的快速访问：
 
 - 类型或命名空间的成员
 
@@ -42,15 +43,15 @@ C# 中的完成列表也足够智能，可筛选出不相关的标记，并可�
 
 ## <a name="code-snippets-in-completion-lists"></a>完成列表中的代码片段
 
-在 Visual C# 中，完成列表包含代码片段，可助你将预定义的代码体轻松插入程序。 代码片段作为片段的[快捷方式文本](../ide/code-snippets-schema-reference.md#shortcut)出现在完成列表中。 若要了解 Visual C# 中默认情况下可用的代码片段，请参阅 [Visual C# 代码片段](../ide/visual-csharp-code-snippets.md)。
+在 C# 中，完成列表包含代码片段，可帮助你将预定义的代码正文轻松插入程序。 代码片段作为片段的[快捷方式文本](../ide/code-snippets-schema-reference.md#shortcut)出现在完成列表中。 有关 C# 中默认情况下可用的代码片段的详细信息，请参阅 [C# 代码片段](../ide/visual-csharp-code-snippets.md)。
 
 ## <a name="language-keywords-in-completion-lists"></a>完成列表中的语言关键字
 
-在 Visual C# 中，完成列表还包括语言关键字。 若要了解 C# 语言关键字，请参阅 [C# 关键字](/dotnet/csharp/language-reference/keywords/index)。
+在 C# 中，完成列表还包括语言关键字。 若要了解 C# 语言关键字，请参阅 [C# 关键字](/dotnet/csharp/language-reference/keywords/index)。
 
 ## <a name="extension-methods-in-completion-lists"></a>完成列表中的扩展方法
 
-在 Visual C# 中，完成列表包含位于作用域的扩展方法。
+在 C# 中，完成列表包含位于作用域的扩展方法。
 
 > [!NOTE]
 > 完成列表不显示 <xref:System.String> 对象的所有扩展方法。
@@ -59,9 +60,9 @@ C# 中的完成列表也足够智能，可筛选出不相关的标记，并可�
 
 ## <a name="filtered-completion-lists"></a>经过筛选的完成列表
 
-IntelliSense 使用筛选器从完成列表中删除不必要的成员。 Visual C# 对针对这些项出现的完成列表进行筛选：
+IntelliSense 使用筛选器从完成列表中删除不必要的成员。 C# 对针对这些项出现的完成列表进行筛选：
 
-- 接口和基类：IntelliSense 自动从接口和基类完成列表、类声明基类和接口列表和约束列表中移除项。 例如，枚举不会出现在基类的完成列表中，因为枚举无法用于基类。 基类的完成列表仅包含接口和命名空间。 如果在列表中选择一个项，再键入逗号，则 IntelliSense 从完成列表移除基类，因为 Visual C# 不支持多重继承。 相同的行为也发生在约束子句中。
+- 接口和基类：IntelliSense 自动从接口和基类完成列表、类声明基类和接口列表和约束列表中移除项。 例如，枚举不会出现在基类的完成列表中，因为枚举无法用于基类。 基类的完成列表仅包含接口和命名空间。 如果在列表中选择一个项，再键入逗号，则 IntelliSense 将从完成列表移除基类，因为 C# 不支持多重继承。 相同的行为也发生在约束子句中。
 
 - **特性**：将特性应用于类型时，对完成列表进行筛选，从而使列表仅包含源自包含那些类型的命名空间的类型，如 <xref:System.Attribute>。
 
@@ -133,7 +134,7 @@ IntelliSense 提供了一个选项，可帮助你在使用代码编辑器时自�
 
 - 生成字段
 
-- 生成方法
+- **生成方法**
 
 - **生成类**
 

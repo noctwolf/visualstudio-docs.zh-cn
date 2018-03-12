@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 06/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.ExtensionManager
+f1_keywords:
+- vs.ExtensionManager
 helpviewer_keywords:
 - install extensions
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6ed49a18c7497eefc21a7fe7bfe9d35003863a5e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>查找和使用 Visual Studio 扩展
 
@@ -31,7 +34,7 @@ Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了
 你可以使用 **“扩展和更新”** 对话框安装来自网站或其他位置的 Visual Studio 扩展及示例，然后启用、禁用、更新或卸载这些扩展和示例。 （“工具”/“扩展和更新”，或在“快速启动”  窗口中输入 **扩展** ）。 该对话框还显示用于已安装的示例和扩展的更新。 还可以从网站下载扩展，或从其他开发人员处获取它们。
 
 > [!NOTE]
-> 从 Visual Studio 2015 开始，Visual Studio Marketplace 上托管的扩展将自动更新。  可以通过 **“扩展和更新”** 对话框更改此设置。  请参阅下面的 **“自动扩展更新”** 部分了解详细信息。
+> 从 Visual Studio 2015 开始，Visual Studio Marketplace 上托管的扩展将自动更新。 可以通过 **“扩展和更新”** 对话框更改此设置。  请参阅下面的 **“自动扩展更新”** 部分了解详细信息。
 
 ## <a name="finding-visual-studio-extensions"></a>查找 Visual Studio 扩展
 
@@ -66,24 +69,26 @@ Visual Studio Marketplace 有可用的新版本时，每用户扩展将自动更
 > [!NOTE]
 > 从 Visual Studio 2015 Update 2 开始，可以指定（在“工具”/“选项”/“环境”/“扩展和更新”中）是否需要为每用户扩展、所有用户扩展或两者（默认设置）进行自动更新。
 
-## <a name="extension-crash-notifications"></a>扩展故障通知
+## <a name="extension-crashunresponsiveness-notifications"></a>扩展崩溃/无响应通知
 
-在 Visual Studio 2017（版本 15.3 - 预览版）中，如果 Visual Studio 怀疑扩展已在之前的会话期间发生故障，将会就此发出通知。 Visual Studio 发生故障时，会存储异常堆栈。 下一次 Visual Studio 启动时，它会检查堆栈，同时开始处理叶和构建基础映像。 如果 Visual Studio 确定框架所属的模块属于已安装和已启用的扩展，你将获得以下所示的通知，
+在新的 Visual Studio 2017（版本 15.3）中，如果 Visual Studio 怀疑扩展已在之前的会话期间发生故障，将会就此发出通知。 Visual Studio 发生故障时，会存储异常堆栈。 下一次 Visual Studio 启动时，它会检查堆栈，同时开始处理叶和构建基础映像。 如果 Visual Studio 确定框架所属的模块属于已安装和已启用的扩展，它将显示一条通知。
 
-“之前的会话意外终止。 禁用扩展 ‘extension_name’ 可能有助于防止出现类似问题。”
+在新的 Visual Studio 2017 版本 15.6（预览版 3）中，如果 Visual Studio 怀疑某个扩展导致 UI 无响应，也会就此发出通知。
 
-可以忽略此通知，也可以执行以下任一操作：
+显示这些通知时，可以忽略它们，或者可以执行以下任一操作：
 
 - 选择“禁用此扩展”。 Visual Studio 会禁用扩展，并告知是否需要重启系统才能使禁用生效。 如果需要，可以重新启用“扩展和更新”对话框中的扩展。
 
-- 选择“不再显示此扩展的通知”。 IDE 将不再显示与此扩展相关联的故障的通知，但会显示与其他扩展相关联的故障的通知。
+- 选择“不再显示此消息”。
+  - 如果通知与以前会话中的故障有关，则在出现与该扩展相关联的故障时，Visual Studio 将不再显示通知。 当无响应可与该扩展相关联，或对于可与其他扩展相关联的故障或无响应，Visual Studio 仍将显示通知。
+  - 如果通知与无响应有关，则当该扩展与无响应相关联时，IDE 将不再显示通知。 Visual Studio 仍会显示与该扩展相关的故障通知，以及其他扩展与故障和无响应相关的通知。
 
-- 选择“了解更多”可在默认浏览器中查看本帮助主题。
+- 选择“了解详细信息”以转到此页。
 
-- 选择通知末尾的“X”按钮可以取消通知。 如果在将来的会话中，同一扩展发生故障，则通知会再次出现。
+- 选择通知末尾的“X”按钮可以取消通知。 对于以后与故障或 UI 无响应相关联的扩展实例将会显示新通知。
 
 > [!NOTE]
-> 故障通知表示仅扩展的一个模块位于故障的堆栈上。 但它并不一定意味着扩展本身导致发生故障。 可能是扩展调用的代码属于 Visual Studio，而该代码会导致发生故障。 但是，引发故障的场景不重要时，通知仍然有用。 在这种情况下，禁用该扩展可避免将来发生相同故障，不会影响工作效率。
+> UI 无响应或故障通知意味着当 UI 无响应或出现故障时，只有其中一个扩展模块在堆栈上， 但它并不一定意味着是扩展本身所导致的。 它可能是扩展所调用的代码是 Visual Studio 的一部分，进而导致 UI 无响应或崩溃。 但是，如果导致 UI 无响应或崩溃的扩展对你不重要，那么通知还是有用的。 在这种情况下，禁用该扩展可避免将来 UI 无响应或发生故障，而不会影响工作效率。
 
 ## <a name="sample-master-copies-and-working-copies"></a>主控副本和工作副本示例
 

@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.classdesigner.typedef
 - vs.classdesigner.aliasofline
-helpviewer_keywords: Class Designer [Visual Studio], typedefs
+helpviewer_keywords:
+- Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 63bd8657d62a05edb1c9772776ca1216a0eee5ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 96d7e8cee6ce024040184aca50b5f5cb6facf388
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>类设计器中的 Visual C++ Typedef
 Typedef 语句可在某个名称和其基础类型之间创建一个或多个间接层。 类设计器支持使用关键字 `typedef` 声明的 C++ typedef 类型，例如：  
@@ -48,10 +51,10 @@ typedef class coord
    unsigned x;  
    unsigned y;  
 };  
-```  
-  
-有关使用 `typedef` 类型的详细信息，请参阅 [typedef 说明符](https://msdn.microsoft.com/en-us/library/05w82thz.aspx)。  
-  
+```
+
+若要详细了解如何使用 `typedef` 类型，请参阅 [Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs)。
+
 C++ typedef 形状具有 typedef 中所指定类型的形状。 例如，如果源声明 `typedef class`，则形状具有圆角和标签 **Class**。 对于 `typedef struct`，形状具有方角和标签 **Struct**。  
   
 类和结构可在其自身内声明嵌套的 typedef；因此，类和结构的形状可以将嵌套的 typedef 声明显示为嵌套形状。  
@@ -201,5 +204,6 @@ typedef
 -> MyIntVect  
   
 ## <a name="see-also"></a>请参阅
-[使用 Visual Studio Code](working-with-visual-cpp-code.md)   
-[typedef 说明符](https://msdn.microsoft.com/en-us/library/05w82thz.aspx)
+
+[使用 Visual C++ 代码](working-with-visual-cpp-code.md)  
+[Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs)

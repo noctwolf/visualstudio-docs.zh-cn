@@ -7,11 +7,11 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 193eebd4849e6a133ade1d14cb17d5b345199811
-ms.sourcegitcommit: 24f81b8fb59722cf4a856005227f6a29bb2990cd
+ms.openlocfilehash: 193856ca96395db9a5b3bd494a5b8f1f7331f702
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
 
@@ -19,18 +19,18 @@ ms.lasthandoff: 11/17/2017
 
 本指南介绍了单独卸载每个产品的知识，可导航到相关部分查看。 遵循本指南中的全部指导，可卸载整个 Xamarin 工具集。
 
-如果之前在计算机上安装了 Xamarin Studio，那么除了执行下面的步骤之外，可能还需按照 developer.xamarin.com 上的[卸载](https://developer.xamarin.com/guides/cross-platform/getting_started/installation/uninstalling_xamarin/)指南进行操作。
+如果之前已在计算机上安装 Xamarin Studio，则除了执行以下步骤外，可能还需按照 developer.xamarin.com 上的[卸载](https://developer.xamarin.com/guides/cross-platform/getting_started/installation/uninstalling_xamarin/)指南进行操作。
 
 ## <a name="uninstall-script"></a>卸载脚本
 
-可通过使用位于[此处](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)的卸载脚本，一次性卸载 Visual Studio 及其关联的组件。
+可通过使用[卸载脚本](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)，一次性卸载 Visual Studio 及其关联的组件。
 
 卸载脚本中包含本文中出现的大部分命令。 由于可能存在外部依赖关系，脚本中忽略了两个主要部分：
 
 - **卸载 Mono**
 - **卸载 Android AVD**
 
-要运行脚本，请执行以下操作：
+要运行脚本，请执行以下步骤：
 
 1. 右键单击脚本，并选择“另存为...” 在 Mac 上保存文件。
 2. 打开“终端”，并将工作目录更改为下载脚本的位置：
@@ -48,11 +48,11 @@ ms.lasthandoff: 11/17/2017
 
 ## <a name="uninstall-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
 
-从 Mac 中卸载 Visual Studio 的第一步是在 /Applications 目录中找到 Visual Studio.app，并将其拖动到回收站。 或者，单击右键，然后选择“移到回收站”，如下所示：
+从 Mac 中卸载 Visual Studio 的第一步是在 /Applications 目录中找到 Visual Studio.app，并将其拖动到回收站。 或者，单击右键并选择“移到回收站”，如下图所示：
 
 ![将 Visual Studio 应用程序移动到回收站](media/uninstall-image1.png)
 
-删除此应用程序包会删除 Visual Studio for Mac，尽管文件系统上仍有与 Xamarin 相关的其他文件。
+删除此应用包会一并删除 Visual Studio for Mac，但文件系统上仍可能存在其他与 Xamarin 相关的文件。
 
 要删除 Visual Studio for Mac 的所有痕迹，应在终端运行以下命令：
 
@@ -60,17 +60,18 @@ ms.lasthandoff: 11/17/2017
 sudo rm -rf "/Applications/Visual Studio.app"
 rm -rf ~/Library/Caches/VisualStudio
 rm -rf ~/Library/Preferences/VisualStudio
-rm -rf "~/Library/Preferences/Visual Studio"
+rm -rf ~/Library/Preferences/Visual\ Studio
 rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Developer/Xamarin
-rm -rf "~/Library/Application Support/VisualStudio"
+rm -rf ~/Library/Application\ Support/VisualStudio
+rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
 
 ## <a name="uninstall-mono-sdk-mdk"></a>卸载 Mono SDK (MDK)
 
-Mono 是 Microsoft .NET Framework 的开放源代码实现，可供所有 Xamarin 产品（Xamarin.iOS、Xamarin.Android 和 Xamarin.Mac）使用，以便使用 C# 开发这些平台。
+Mono 是 Microsoft .NET Framework 的开放源代码实现，可供所有 Xamarin 产品（Xamarin.iOS、Xamarin.Android 和 Xamarin.Mac）使用，让用户能使用 C# 开发这些平台。
 
 > [!WARNING]
 > 除 Visual Studio for Mac 之外，还有其他应用程序使用 Mono，例如 Unity。
@@ -127,8 +128,6 @@ rm -rf ~/.android/avd
 
 Xamarin.iOS 支持使用 C# 或 F# 通过 Visual Studio for Mac 开发 iOS 应用程序。
 
-Xamarin 生成主机也是随早期版本的 Xamarin.iOS 自动安装的，以便在 Visual Studio 中进行 iOS 开发。 若要从计算机中卸载这二者，请遵循以下步骤：
-
 在终端使用以下命令从文件系统删除所有 Xamarin.iOS 文件：
 
 ```bash
@@ -142,7 +141,7 @@ sudo pkgutil --forget com.xamarin.xamarin.ios.pkg
 
 ## <a name="uninstall-xamarinmac"></a>卸载 Xamarin.Mac
 
-成功卸载 Visual Studio for Mac 后，可使用以下两个分别用于从 Mac 删除产品和许可证的命令从计算机删除 Xamarin.Mac：
+可使用以下两个命令分别彻底删除 Mac 上的产品和许可证，进而从计算机上删除 Xamarin.Mac：
 
 ```bash
 sudo rm -rf /Library/Frameworks/Xamarin.Mac.framework
@@ -157,7 +156,7 @@ rm -rf ~/Library/Xamarin.Mac
 sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstall
 ```
 
-对于旧版本，需手动删除以下各项：
+需要在旧版本手动删除以下项目：
 
 * 在 `"/Applications/Xamarin Workbooks.app"` 删除 Workbooks 应用
 * 在 `"Applications/Xamarin Inspector.app"` 删除 Inspector 应用

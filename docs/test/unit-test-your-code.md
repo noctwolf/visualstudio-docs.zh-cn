@@ -13,13 +13,14 @@ helpviewer_keywords:
 - testing code, automated tests
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: a70433a811ad8cf45bb44b12c2971c90c8f82ff2
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: bafabb6755a5d3c8cf8f2b60b67a9dc0d7af9792
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="unit-test-your-code"></a>单元测试代码
 通过单元测试，开发人员和测试人员可以快速查找 [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]、[!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] 和 [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] 项目中各个类的方法中的逻辑错误。  
@@ -43,14 +44,14 @@ ms.lasthandoff: 01/09/2018
   
 |任务|相关主题|  
 |-----------|-----------------------|  
-|**快速入门和演练：**借助以下主题从代码示例中学习 Visual Studio 中的单元测试。|-   [演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [向现有的 C++ 应用程序添加单元测试](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [使用测试资源管理器对本机代码进行单元测试](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|  
-|**使用“测试资源管理器”进行单元测试：**了解“测试资源管理器”如何帮助创建成效和效率更高的单元测试。|-   [单元测试基础](../test/unit-test-basics.md)<br />-   [创建单元测试项目](../test/create-a-unit-test-project.md)<br />-   [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)<br />-   [安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)<br />-   [从 Visual Studio 2010 升级单元测试](http://msdn.microsoft.com/en-us/9bb75856-f68a-4de2-a084-b08a947a1172)|  
+|**快速入门和演练：**借助以下主题从代码示例中学习 Visual Studio 中的单元测试。|-   [演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [向现有的 C++ 应用程序添加单元测试](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|  
+|**使用“测试资源管理器”进行单元测试：**了解“测试资源管理器”如何帮助创建成效和效率更高的单元测试。|-   [单元测试基础](../test/unit-test-basics.md)<br />-   [创建单元测试项目](../test/create-a-unit-test-project.md)<br />-   [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)<br />-   [安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)<br />-   [从 Visual Studio 2010 升级编码的 UI 测试](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)|  
 |**对托管代码进行单元测试：**|-   [用 Microsoft 适用于托管代码的单元测试框架编写 .NET Framework 的单元测试](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|  
 |**对 C++ 代码进行单元测试**|-   [用适用于 C++ 的 Microsoft 单元测试框架编写 C/C++ 单元测试](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|  
 |**隔离单元测试**|-   [用 Microsoft Fakes 隔离测试代码](../test/isolating-code-under-test-with-microsoft-fakes.md)|  
 |**使用代码覆盖率确定通过单元测试进行测试的项目代码的比例：**了解 [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] 测试工具的代码覆盖率功能。|-   [使用代码覆盖率确定所测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|  
-|**通过对单元测试使用负载测试来执行压力和性能分析**：可以创建负载测试并向其添加单元测试，以帮助隔离应用程序中的性能和压力问题。 **注意：**创建和使用负载测试需要 Visual Studio Enterprise。|-   [创建和编辑负载测试](http://msdn.microsoft.com/en-us/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [如何：将 Web 性能测试和单元测试添加到负载测试方案](http://msdn.microsoft.com/en-us/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [如何：从负载测试方案中删除 Web 测试和单元测试](http://msdn.microsoft.com/en-us/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|  
-|**设置和强制实施质量要求**：可以创建质量要求以在签入代码之前强制运行测试，从而帮助确保代码质量。|-   [设置和强制实施质量要求](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**通过对单元测试使用负载测试来执行压力和性能分析**：可以创建负载测试并向其添加单元测试，以帮助隔离应用程序中的性能和压力问题。|-   [负载测试（VSTS 和 TFS）](/vsts/load-test/)|  
+|设置和强制实施质量要求：可以创建质量要求以在签入代码之前强制运行测试，从而帮助确保代码质量。|-   [设置和强制实施质量要求](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
 |**扩展单元测试类型：**可以向可能不在单元测试框架内的测试添加功能。 例如，可以添加一个指定某个测试是否应以普通用户身份运行的测试属性。 也可以扩展框架，将行特性添加到某个方法并在测试内使用该行中的数据。|有关如何扩展单元测试框架的示例代码，请参见以下 [Microsoft 网站](http://go.microsoft.com/fwlink/?LinkId=185591)。|  
 |**设置测试选项：**例如，可以指定测试结果的存储位置。|[使用 .runsettings 文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   

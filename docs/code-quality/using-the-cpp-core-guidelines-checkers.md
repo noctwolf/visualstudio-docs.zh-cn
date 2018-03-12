@@ -6,17 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
-caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
+dev_langs:
+- CPP
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 97ada4fa2abd8975bd728b48fc24b9e3e9e2af41
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + 核心准则检查器
 C + + 核心准则所移动的一组准则、 规则和有关在 c + + 专家和设计器创建的 c + + 中对编码的最佳做法。 Visual Studio 当前支持 c + + 的这些规则作为其代码分析工具的一部分的子集。 核心原则检查器在 Visual Studio 2017，默认情况下已安装并且位于[可用作 Visual Studio 2015 的 NuGet 包](#vs2015_corecheck)。
@@ -191,7 +191,7 @@ CPPCORECHECK_BOUNDS_WARNINGS
 ```
 请确保添加 Microsoft.Cpp.targets 文件导入前的这些属性。 你可以选择特定的规则集或创建自定义规则集或使用包括其他 PREfast 检查默认规则集。
 
-你可以仅在指定的文件上运行 c + + 核心检查程序，通过使用相同的方法[前面所述](#coreckeck_per_file)，但使用 MSBuild 文件。 可以通过使用设置环境变量`BuildMacro`项：
+你可以仅在指定的文件上运行 c + + 核心检查程序，通过使用相同的方法[前面所述](#corecheck_per_file)，但使用 MSBuild 文件。 可以通过使用设置环境变量`BuildMacro`项：
 
 ```xml
 <ItemGroup>

@@ -4,62 +4,74 @@ ms.custom:
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9ee45132e4acf45bccffd3e05808defd3c7ced6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="view-snapshots-using-intellitrace-step-back"></a>使用 IntelliTrace 步骤后的视图快照
+# <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 步骤后的视图快照
+
 IntelliTrace 步骤后会自动编制的应用程序的每个断点和调试器快照步骤事件。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
 
 IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本，版本中开始提供，要求 Windows 10 周年 Update 或更高版本。 调试 ASP.NET、 WinForms、 WPF、 托管的控制台应用程序和托管的类库当前支持的功能。 当前不支持调试 ASP.NET Core、.NET 核心或 UWP 应用程序。 
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>启用 IntelliTrace 事件和快照模式 
-若要启用此功能，请转到**工具 > 选项 > IntelliTrace**设置，并选择选项**IntelliTrace 事件和快照**。 
 
-![启用 IntelliTrace 事件和快照模式](../debugger/media/intellitrace-enable-snapshots.png "启用 IntelliTrace 事件和快照模式")
+1. 在 Visual Studio Enterprise 中，转到**工具 > 选项 > IntelliTrace**设置，并选择选项**IntelliTrace 事件和快照**。 
 
-IntelliTrace 拍摄的快照应用程序的进程上每个调试器步骤和断点事件。 这些事件记录在**事件**选项卡中**诊断工具**窗口，同时还有其他 IntelliTrace 事件。 若要打开此窗口，请选择**调试 / Windows / 显示诊断工具**。
+    ![启用 IntelliTrace 事件和快照模式](../debugger/media/intellitrace-enable-snapshots.png "启用 IntelliTrace 事件和快照模式")
 
-快照可提供的事件旁边会出现一个相机图标。 
+2. 在 Visual Studio 中打开项目。
 
-![事件选项卡上使用快照](../debugger/media/intellitrace-events-tab-with-snapshots.png "与断点和步骤的快照的事件选项卡")
+3. 在你的项目中设置一个或多个断点并启动调试 (按**F5**)，或启动调试时逐句通过代码 (**F10**或**F11**)。
 
-出于性能原因，快照不会采取单步执行时速度非常快。 如果该步骤旁不显示任何照相机图标，请尝试单步执行速度更慢。
+    IntelliTrace 拍摄的快照应用程序的进程上每个调试器步骤和断点事件。 这些事件记录在**事件**选项卡中**诊断工具**窗口，同时还有其他 IntelliTrace 事件。 若要打开此窗口，请选择**调试** > **Windows** > **显示诊断工具**。
+
+    快照可提供的事件旁边会出现一个相机图标。 
+
+    ![事件选项卡上使用快照](../debugger/media/intellitrace-events-tab-with-snapshots.png "与断点和步骤的快照的事件选项卡")
+
+    出于性能原因，快照不会采取单步执行时速度非常快。 如果该步骤旁不显示任何照相机图标，请尝试单步执行速度更慢。
 
 ## <a name="navigate-and-view-snapshots"></a>导航并查看快照
 
-你可以使用事件之间导航**步骤向后 （Alt + [）**和**单步前进 (Alt +])**中调试工具栏按钮。 这些按钮导航中显示的事件**事件**选项卡中**诊断工具窗口**。 后退或前进到某个事件会自动激活所选事件的历史调试。
+1. 通过使用事件之间导航**步骤向后 （Alt + [）**和**单步前进 (Alt +])**中调试工具栏按钮。
 
-![向后移动和转发按钮](../debugger/media/intellitrace-step-back-icons-description.png "后退一步和单步前进按钮")
+    这些按钮导航中显示的事件**事件**选项卡中**诊断工具窗口**。 后退或前进到某个事件会自动激活所选事件的历史调试。
 
-返回一步或单步前进，Visual Studio 将进入历史调试模式。 在此模式下，将调试器的上下文切换到所选的事件记录时的时间。 Visual Studio 还将指针移到相应的源窗口中的代码行。 
+    ![向后移动和转发按钮](../debugger/media/intellitrace-step-back-icons-description.png "后退一步和单步前进按钮")
 
-从此视图中，你可以检查中的值**调用堆栈**，**局部变量**，**自动**，和**监视**windows。 你还可以悬停在变量以查看数据提示并执行中的表达式计算**即时**窗口。 你看到的数据是进程的从应用程序在该点按时间的快照。
+    返回一步或单步前进，Visual Studio 将进入历史调试模式。 在此模式下，将调试器的上下文切换到所选的事件记录时的时间。 Visual Studio 还将指针移到相应的源窗口中的代码行。 
 
-因此，举例来说，如果你已命中断点后，执行步骤 (**F10**)，则**步骤向后**按钮可使 Visual Studio 中的行处对应于断点的代码的历史模式。 
+    从此视图中，你可以检查中的值**调用堆栈**，**局部变量**，**自动**，和**监视**windows。 你还可以悬停在变量以查看数据提示并执行中的表达式计算**即时**窗口。 你看到的数据是进程的从应用程序在该点按时间的快照。
 
-![使用快照执行事件正在激活历史模式](../debugger/media/intellitrace-historical-mode-with-snapshot.png "正在激活历史模式使用快照执行事件")
+    因此，举例来说，如果你已命中断点后，执行步骤 (**F10**)，则**步骤向后**按钮可使 Visual Studio 中的行处对应于断点的代码的历史模式。 
 
-若要返回到实时执行，请选择**继续 (F5)**或单击**返回到实时调试**信息栏中的链接。 
+    ![使用快照执行事件正在激活历史模式](../debugger/media/intellitrace-historical-mode-with-snapshot.png "正在激活历史模式使用快照执行事件")
 
-你还可以查看从快照**事件**选项卡。选择具有快照的事件，然后单击**激活历史调试**。 你也可以单击相机图标以激活历史调试。
+2. 若要返回到实时执行，请选择**继续 (F5)**或单击**返回到实时调试**信息栏中的链接。 
 
-![事件激活历史调试](../debugger/media/intellitrace-activate-historical-debugging.png "事件激活历史调试")
+3. 你还可以查看从快照**事件**选项卡。若要执行此操作，选择具有快照的事件，然后单击**激活历史调试**。
 
-与不同**设置下一语句**命令，查看快照不会重新运行你的代码; 它提供的静态视图状态的应用程序的点处发生在过去的时间。
+    你也可以单击相机图标以激活历史调试。
 
-![概述 IntelliTrace 步骤回](../debugger/media/intellitrace-step-back-overview.png "概述的 IntelliTrace 步骤回")
+    ![事件激活历史调试](../debugger/media/intellitrace-activate-historical-debugging.png "事件激活历史调试")
+
+    与不同**设置下一语句**命令，查看快照不会重新运行你的代码; 它提供的静态视图状态的应用程序的点处发生在过去的时间。
+
+    ![概述 IntelliTrace 步骤回](../debugger/media/intellitrace-step-back-overview.png "概述的 IntelliTrace 步骤回")
 
 ## <a name="next-steps"></a>后续步骤  
  若要了解如何检查 Visual Studio 中的变量，请参阅[调试器功能教程](../debugger/debugger-feature-tour.md)  
@@ -95,5 +107,7 @@ IntelliTrace 拍摄的快照应用程序的进程上每个调试器步骤和断�
 
     解决方法：
     * 通过结束调试会话中清除所有快照。 
+
+* 调试其过程具有大量唯一的内存区域，例如加载 Dll，数很大的应用程序的应用程序时使用启用的快照逐句性能可能会影响。 将在 Windows 的未来版本中解决此问题。 如果你遇到此问题，从而与与我们联系stepback@microsoft.com。 
 
 * 保存的文件时**调试 > IntelliTrace > 保存 IntelliTrace 会话**在事件和快照模式下，附加的数据从快照捕获中不可用时.itrace 文件。 在断点并单步事件，你将看到相同的信息，就像已在 IntelliTrace 事件仅模式下保存文件。 

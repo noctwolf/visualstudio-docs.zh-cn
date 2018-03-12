@@ -2,10 +2,11 @@
 title: "创建 Visual Studio 的脱机安装 | Microsoft Docs"
 description: "了解如何脱机安装 Visual Studio。"
 ms.custom: 
-ms.date: 08/30/2017
+ms.date: 01/17/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,12 +17,13 @@ ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6eb68b00e429db1336f851d6e4789ae0b4c8b803
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b9badba3247846ce63b79d48da7482ff0c58b693
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 的脱机安装
 
@@ -41,7 +43,7 @@ ms.lasthandoff: 12/22/2017
 如果因为 Internet 连接不可用或不可靠想进行脱机安装，请参阅[在低带宽或不可靠的网络环境中安装 Visual Studio 2017](../install/install-vs-inconsistent-quality-network.md)。 可以使用命令行创建所需文件的本地缓存，以完成脱机安装。 此过程会替换以前版本可用的 ISO 文件。
 
 > [!NOTE]
-> 如果你是企业管理员，并且要将 Visual Studio 2017 部署到客户端工作站网络（与 Internet 之间设有防火墙），请参阅我们的[创建 Visual Studio 2017 的网络安装](../install/create-a-network-installation-of-visual-studio.md)和[在脱机环境中安装 Visual Studio 的特殊注意事项](../install/install-visual-studio-in-offline-environment.md)页面。
+> 若为企业管理员，并且要将 Visual Studio 2017 部署到客户端工作站网络（与 Internet 之间设有防火墙），请参阅[创建 Visual Studio 2017 的网络安装](../install/create-a-network-installation-of-visual-studio.md)和[安装 Visual Studio 脱机安装所需的证书](../install/install-certificates-for-visual-studio-offline.md)页。
 
 ## <a name="get-support"></a>获取支持
 有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。

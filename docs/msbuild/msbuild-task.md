@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - MSBuild task [MSBuild]
 - MSBuild, MSBuild task
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 264b5b379b7c3f2fa364d01260e1da825b5d64d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a5ecaef8f384a9597243fbe2026290e65295da8d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-task"></a>MSBuild 任务
 从另一 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目生成 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目。  
@@ -65,7 +67,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="passing-properties-to-projects"></a>将属性传递给项目  
  在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 之前的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 版本中，将不同的属性集传递到 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项中列出的不同项目具有一定的挑战性。 如果使用了 [MSBuild 任务](../msbuild/msbuild-task.md) 的属性特性，那么其设置则应用于正在生成的所有项目，除非批处理 [MSBuild 任务](../msbuild/msbuild-task.md)，并按条件为项列表中的每个项目提供不同的属性。  
   
- 但 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 提供了两个新的保留元数据项，属性和 AdditionalProperties，这两个元数据项提供了使用 [MSBuild 任务](../msbuild/msbuild-task.md)为正在生成的不同项目传递不同属性的一种灵活的方式。  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 版本提供两个新的保留元数据项，属性和 AdditionalProperties，让用能够灵活地使用 [MSBuild 任务](../msbuild/msbuild-task.md)为正在生成的不同项目传递不同的属性。  
   
 > [!NOTE]
 >  这些新的元数据项仅适用于在 [MSBuild任务](../msbuild/msbuild-task.md)的项目属性中传递的项。  

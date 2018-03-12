@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 12/08/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: f648f07923117b89278ba0e5f44e351b923f7c26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: da2e236c39cce72670a47212aedabb87afa4d217
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>如何：面向 .NET Framework 的某个版本
 
-本文档说明如何在创建项目时以 .NET Framework 版本为目标，以及如何更改现有 Visual Basic、Visual C# 或 Visual F# 项目中的目标版本。
+本文档说明如何在创建项目时以 .NET Framework 版本为目标，以及如何更改现有 Visual Basic、C# 或 Visual F# 项目中的目标版本。
 
 > [!IMPORTANT]
 > 有关如何更改 C++ 项目目标版本的信息，请参阅[如何：修改目标框架和平台工具集](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
@@ -33,7 +35,7 @@ ms.lasthandoff: 12/22/2017
 
 ### <a name="to-target-a-version-when-you-create-a-project"></a>创建项目时以某一版本为目标
 
-1.  在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。
+1.  在菜单栏上，依次选择“文件”、“新建”、“项目”。
 
 2.  在“新建项目”对话框顶部的列表中，选择你希望项目作为目标的 .NET Framework 版本。
 
@@ -43,7 +45,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="changing-the-target-version"></a>更改目标版本
 
-可以按照以下步骤，更改 Visual Basic、Visual C# 或 Visual F# 项目中的 .NET Framework 目标版本。
+可以按照以下步骤，更改 Visual Basic、C# 或 Visual F# 项目中的 .NET Framework 目标版本。
 
 有关如何更改 C++ 项目目标版本的信息，请参阅[如何：修改目标框架和平台工具集](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
 

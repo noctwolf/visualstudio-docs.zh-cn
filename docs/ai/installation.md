@@ -7,15 +7,16 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: article
-ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.workload: multiple
-ms.openlocfilehash: 55524900d59bf3631d724e2cb142e649bf82c839
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology: vs-ai-tools
+ms.workload:
+- multiple
+ms.openlocfilehash: 7e182a000dc9c8aaeb721b81036f878430260618
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="installation"></a>安装
 
@@ -23,11 +24,11 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="installing-visual-studio-tools-for-ai"></a>安装 Visual Studio Tools for AI
 
-此扩展适用于 [Visual Studio](https://docs.microsoft.com/visualstudio/) 2015、2017 、社区版或更高版本。 
+此扩展适用于 [Visual Studio](https://docs.microsoft.com/visualstudio/) 2015、2017 、社区版或更高版本。
 
-若要安装，请从 [Visual Studio MarketPlace](http://aka.ms/vstoolsforai) 或从 Visual Studio 中进行下载 
+若要安装，请从 [Visual Studio MarketPlace](http://aka.ms/vstoolsforai) 或从 Visual Studio 中进行下载
 
-1. **工具**> **扩展和更新** 
+1. **工具**> **扩展和更新**
 
 ![在 Windows 上安装 CUDA](media\installation\extensions.png)
 
@@ -117,7 +118,7 @@ Python 已成为用于深入学习应用程序的主要编程语言。
 ### <a name="python-on-visual-studio"></a>Visual Studio 中的 Python
 
 在 Visual Studio 中通过扩展完全支持 Python。
-详细了解如何安装 [Python for Visual Studio Tools](https://docs.microsoft.com/visualstudio/python/installation) 以获得详细信息。
+详细了解如何安装 [Python for Visual Studio Tools](../python/installing-python-support-in-visual-studio.md) 以获得详细信息。
 
 ### <a name="numpy-and-scipy"></a>NumPy 和 SciPy
 

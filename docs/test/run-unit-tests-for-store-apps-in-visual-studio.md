@@ -1,5 +1,5 @@
 ---
-title: "对 Visual Studio 中的 UWP 应用运行单元测试 | Microsoft Docs"
+title: "在 Visual Studio 中运行单元测试 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,49 +9,23 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: c9610360c0ea6d32c4825b1e2768f3eaaa06a6fa
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: c06ad430664f1e6cd5010e4af5d8d28efa1f8d25
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>对 Visual Studio 中的 UWP 应用运行单元测试
-本主题描述如何通过使用 Microsoft Visual Studio 中的测试资源管理器运行单元测试  
-  
-> [!NOTE]
->  本部分中的主题描述了 Visual Studio Express for Windows 8 的功能。 Visual Studio Community、Enterprise. 和 Professional 提供其他适用于单元测试的功能。  
->   
->  -   使用已为 Microsoft 测试资源管理器创建附加设备适配器的任何第三方或开放源代码单元测试框架。 还可为测试分析并显示代码覆盖率信息。  
-> -   在每次生成后运行测试。 你也可以使用 Microsoft Fakes（托管代码的隔离框架），通过替换系统和第三方功能的测试代码将你的测试集中于你自己的代码之上。  
->   
->  有关详细信息，请参阅 MSDN 库中的[单元测试代码](../test/unit-test-your-code.md)。  
-  
-##  <a name="BKMK_In_this_topic"></a> 在本主题中  
- [单元测试框架和测试项目](#BKMK_Unit_test_frameworks_and_test_projects)  
-  
- [在测试资源管理器中运行测试](#BKMK_Running_tests_in_Test_Explorer)  
-  
--   [运行测试](#BKMK_Running_tests)  
-  
- [查看测试结果](#BKMK_Viewing_test_results)  
-  
--   [查看测试详细信息](#BKMK_Viewing_test_details)  
-  
--   [查看测试方法的源代码](#BKMK_Viewing_the_source_code_of_a_test_method)  
-  
- [组织测试列表](#BKMK_Organizing_the_test_list)  
-  
--   [对测试进行分组](#BKMK_Grouping_tests)  
-  
--   [搜索和筛选测试列表](#BKMK_Searching_and_filtering_the_test_list)  
-  
- [调试单元测试](#BKMK_Debugging_unit_tests)  
-  
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> 单元测试框架和测试项目  
- 适用于 UWP 应用的 Visual Studio Express 包括针对托管和本机 C++ 代码的 Microsoft 单元测试框架。 测试资源管理器可从解决方案的多个测试项目以及从作为生产代码项目的一部分的测试类中运行测试。 测试项目可以是 Visual C++ 或 Visual C# 与 Visual Basic 单元测试框架的任意组合。 当测试中的代码针对 .NET Framework 进行编写时，无论目标代码使用何种语言，均可使用任何 .NET Framework 语言编写测试项目。 本机 C/C++ 代码项目必须使用 C++ 单元测试框架进行测试。  
-  
+# <a name="run-unit-tests-in-visual-studio"></a>在 Visual Studio 中运行单元测试
+
+本主题描述如何通过使用 Microsoft Visual Studio 中的测试资源管理器运行单元测试。
+
+##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> 单元测试框架和测试项目
+
+Visual Studio 包含适用于托管代码和本机 C++ 代码的 Microsoft 单元测试框架。 测试资源管理器可从解决方案的多个测试项目以及从作为生产代码项目的一部分的测试类中运行测试。 测试项目可以是 Visual C++ 或 Visual C# 与 Visual Basic 单元测试框架的任意组合。 当测试中的代码针对 .NET Framework 进行编写时，无论目标代码使用何种语言，均可使用任何 .NET Framework 语言编写测试项目。 本机 C/C++ 代码项目必须使用 C++ 单元测试框架进行测试。
+
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> 在测试资源管理器中运行测试  
  在生成测试项目时，测试将出现在测试资源管理器中。 如果测试资源管理器不可见，请选择 Visual Studio 菜单上的“测试”  ，然后依次选择“Windows” 、“测试资源管理器” 。  
   
@@ -117,7 +91,7 @@ ms.lasthandoff: 01/13/2018
 1.  在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。  
   
     > [!NOTE]
-    >  因为测试方法可以按任何顺序运行，请在想要调试的所有测试方法中设置断点。  
+    > 因为测试方法可以按任何顺序运行，请在想要调试的所有测试方法中设置断点。  
   
 2.  在测试资源管理器中，选择测试方法，然后选择快捷菜单上的“调试选定的测试”。  
   

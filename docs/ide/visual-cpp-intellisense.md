@@ -1,57 +1,59 @@
 ---
-title: Visual C++ Intellisense | Microsoft Docs
+title: Visual C++ IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fffb892efdbe3ad2731de5b0b81f6e59f237f884
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3d375ebccd96f6b8e987bd74f229abd70bfa9ab6
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="visual-c-intellisense"></a>Visual C++ Intellisense
+# <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
 用于 C++ 的 IntelliSense 可用于独立文件及作为 C++ 项目一部分的文件。 在跨平台项目中，一些 IntelliSense 功能可用于共享代码项目中的 .cpp 和 .c 文件，甚至当你处于 Android 或 iOS 上下文中也可以。
 
 ## <a name="intellisense-features-in-c"></a>C++ 中的 IntelliSense 功能
 
-IntelliSense 是使编码更方便的一组功能的名称。 由于不同的人对方便的定义有着不同的看法，几乎所有的 IntelliSense 功能都可以在“文本编辑器、C/C++、高级”属性页中启用或禁用。
+IntelliSense 是使编码更方便的一组功能的名称。 由于不同的人对方便的定义有着不同的看法，几乎所有的 IntelliSense 功能都可以在“选项”对话框中的“文本编辑器” > “C/C++” > “高级”下启用或禁用。 可从菜单栏上的“工具”菜单中访问“选项”对话框。
 
-![工具、选项、文本编辑器、C/C++、高级](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")
+![“工具选项”对话框](../ide/media/sintellisensecpptoolsoptions.PNG)
 
 可以使用下图所示的菜单项和键盘快捷方来访问 IntelliSense。
 
-![“Visual C++ IntelliSense”菜单](../ide/media/vs2015_cpp_intellisense_menu.png "vs2015_cpp_intellisense_menu")
+![IntelliSense 菜单](../ide/media/vs2015_cpp_intellisense_menu.png)
 
 ### <a name="statement-completion-and-member-list"></a>语句完成和成员列表
 
-当你开始键入关键字、类型、函数、变量名称或编译器可识别的其他程序元素时，编辑器会主动为你完成单词
+当你开始键入关键字、类型、函数、变量名称或编译器可识别的其他程序元素时，编辑器会主动为你完成单词。
 
 有关图标及其含义的列表，请参阅[类视图和对象浏览器图标](../ide/class-view-and-object-browser-icons.md)。
 
 ![“Visual C++ 完成单词”窗口](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
 
-首次调用成员列表时，它只显示当前上下文可访问的成员。 如果在此操作后使用 **Ctrl + J**，它将显示所有成员，而不考虑可访问性。 如果第三次调用它，则显示更宽的程序元素列表。 可在“C/C++ 常规选项”页中关闭语句完成。
+首次调用成员列表时，它只显示当前上下文可访问的成员。 如果在此操作后按 Ctrl+J，它将显示所有成员，而不考虑可访问性。 如果第三次调用它，则显示更宽的程序元素列表。 可在“选项”对话框中的“文本编辑器” > “C/C++” > “常规” > “自动列出成员”下关闭“成员列表”。
 
 ![Visual C++ 成员列表](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
 
 ### <a name="parameter-help"></a>参数帮助
 
-当你在类模板变量声明上键入函数调用的左大括号或尖括号时，该编辑器将显示具有函数或构造函数的每个重载的参数类型的小窗口。 基于光标所在的位置的“current”参数以粗体显示。 可在“C/C++ 常规选项”页中关闭语句完成。
+当你在类模板变量声明上键入函数调用的左大括号或尖括号时，该编辑器将显示具有函数或构造函数的每个重载的参数类型的小窗口。 基于光标所在的位置的“current”参数以粗体显示。 可在“选项”对话框中的“文本编辑器” > “C/C++” > “常规” > “参数信息”下关闭“参数信息”。
 
 ![Visual C++ 参数帮助](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
 
 ### <a name="quick-info"></a>快速信息
 
-将鼠标光标悬停在变量上时，将在内联出现一个小窗口，显示类型信息和在其中定义该类型的标头。 将鼠标悬停在函数调用上，以查看该函数的签名。 可在“文本编辑器、C/C++、高级”页上关闭快速信息。
+将鼠标光标悬停在变量上时，将在内联出现一个小窗口，显示类型信息和在其中定义该类型的标头。 将鼠标悬停在函数调用上，以查看该函数的签名。 可在“选项”对话框中的“文本编辑器” > “C/C++” > “高级” > “自动快速信息”下关闭“快速信息”。
 
 ![Visual C++ 快速信息](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
 
@@ -63,7 +65,7 @@ IntelliSense 是使编码更方便的一组功能的名称。 由于不同的人
 
 ### <a name="code-colorization-and-fonts"></a>代码着色和字体
 
-通过使用“环境、字体和颜色”属性页可以更改默认颜色和字体。 你可以在此处更改多个 UI 窗口（而不仅仅是编辑器）的字体。 特定于 C++ 的设置以“C++”开头；其他设置适用于所有语言。
+可在“选项”对话框中的“环境” > “字体和颜色”下更改默认颜色和字体。 你可以在此处更改多个 UI 窗口（而不仅仅是编辑器）的字体。 特定于 C++ 的设置以“C++”开头；其他设置适用于所有语言。
 
 ### <a name="cross-platform-intellisense"></a>跨平台的 IntelliSense
 
@@ -95,7 +97,7 @@ IntelliSense 是使编码更方便的一组功能的名称。 由于不同的人
 
 ### <a name="intellisense-for-stand-alone-files"></a>用于独立文件的 IntelliSense
 
-当你在任何项目外部打开单个文件时，你仍然会得到 IntelliSense。 转到“文本编辑器、C/C++、高级”打开或关闭 IntelliSense 功能，即可启用或禁用特定功能。 若要为不属于项目的单个文件配置 IntelliSense，请在“高级”部分中查找“IntelliSense 和浏览非项目文件”。 请参阅 [Visual C++ 指导教程](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)。
+当你在任何项目外部打开单个文件时，你仍然会得到 IntelliSense。 可在“选项”对话框中的“文本编辑器” > “C/C++” > “高级”下，启用或禁用特定 IntelliSense 功能。 若要为不属于项目的单个文件配置 IntelliSense，请参见“IntelliSense 和浏览非项目文件”部分。
 
 ![Visual C++ 单个文件 intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 

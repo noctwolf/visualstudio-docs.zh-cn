@@ -1,33 +1,30 @@
 ---
 title: "Visual Studio 中的 R 入门 | Microsoft Docs"
+description: "在 Visual Studio 中使用 R 的演练，其中包括项目创建、交互式窗口、代码编辑和调试。"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
-ms.devlang: r
+ms.technology:
+- devlang-r
+dev_langs:
+- R
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: d57ff0dcd89a9857f62371f81d65f7929aba18c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: 202fd9d7d644eabf9962d68f83d3daa0ab854005
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>针对 Visual Studio 的 R 工具入门
 
-安装了针对 Visual Studio 的 R 工具 (RTVS)（请参阅[安装](installation.md)）后，很快就能亲身感受这些工具提供的体验。 以下各节将引导你完成简短教程：
-
-- [创建 R 项目](#create-an-r-project)
-- [了解交互窗口和 IntelliSense](#explore-the-interactive-window-and-intellisense)
-- [体验代码编辑功能](#experience-code-editing-features)
-- [调试代码](#debugging-your-code)
-- [后续步骤](#next-steps)
+安装了针对 Visual Studio 的 R 工具 (RTVS)（请参阅[安装](installing-r-tools-for-visual-studio.md)）后，很快就能亲身感受这些工具提供的体验。 
 
 ## <a name="create-an-r-project"></a>创建 R 项目
 
@@ -39,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 
 1. 创建项目后，将看到以下窗口：
 
-    - 右侧是 Visual Studio 解决方案资源管理器，创建的项目将显示在其中一个包含的解决方案内。 （解决方案可以包含任意数量不同类型的项目，请参阅[项目](projects.md)了解详细信息。
+    - 右侧是 Visual Studio 解决方案资源管理器，创建的项目将显示在其中一个包含的解决方案内。 （解决方案可以包含任意数量不同类型的项目，请参阅[项目](r-projects-in-visual-studio.md)了解详细信息。
     - 左上角是新的 R 文件 (`script.R`)，可在其中使用 Visual Studio 的所有编辑功能编辑源代码。
     - 左下角是“R 交互”窗口，可在其中以交互方式开发和测试代码。
 
@@ -74,13 +71,13 @@ ms.lasthandoff: 12/22/2017
 
     ![Visual Studio 中的绘图显示](media/getting-started-07-plot-window.png)
 
-使用交互窗口，还可查看历史记录、加载和保存工作区、附加到调试器，以及与源代码文件交互，无需复制粘贴操作。 有关详细信息，请参阅 [Working with the R Interactive Window](interactive-repl.md)（使用 R 交互窗口）。
+使用交互窗口，还可查看历史记录、加载和保存工作区、附加到调试器，以及与源代码文件交互，无需复制粘贴操作。 有关详细信息，请参阅 [Working with the R Interactive Window](interactive-repl-for-r-in-visual-studio.md)（使用 R 交互窗口）。
 
 ## <a name="experience-code-editing-features"></a>体验代码编辑功能
 
 简短地使用交互窗口可证明 IntelliSense 等基本编辑功能在代码编辑器中也适用。 如果输入与之前相同的代码，将出现相同的自动完成选项和 IntelliSense 提示，但输出并不相同。
 
-通过在 `.R` 中编写代码，可一次性查看所有代码，还可更轻松地进行微小的更改，然后通过在交互窗口中运行代码快速查看结果。 可以根据需要在一个项目中包含任意数量的文件。 如果代码位于文件中，还可以在调试器中将其分步运行（本主题稍后讨论）。 如果要通过开发计算算法和编写代码来操作一个或多个数据集（尤其是想要检查所有中间结果时），这些功能都十分有用。
+通过在 `.R` 中编写代码，可一次性查看所有代码，还可更轻松地进行微小的更改，然后通过在交互窗口中运行代码快速查看结果。 可以根据需要在一个项目中包含任意数量的文件。 如果代码位于文件中，还可以在调试器中进行分步运行（本文稍后讨论）。 如果要通过开发计算算法和编写代码来操作一个或多个数据集（尤其是想要检查所有中间结果时），这些功能都十分有用。
 
 例如，以下步骤将创建一小段代码，用于了解[中心极限定理](https://en.wikipedia.org/wiki/Central_limit_theorem)（维基百科）。 （此示例改编自 Paul Teetor 的 R 指南。）
 
@@ -109,7 +106,7 @@ ms.lasthandoff: 12/22/2017
 
     ```R
     n <- 30
-    samp.means <- rnorm(N, mean = mu, sd = stddev / sqrt(n))    
+    samp.means <- rnorm(N, mean = mu, sd = stddev / sqrt(n))
     lines(density(samp.means))
     ```
 
@@ -139,7 +136,7 @@ ms.lasthandoff: 12/22/2017
 
     ![Visual Studio 中刻度适当的更新后双重绘图](media/getting-started-10-plot3.png)
 
-在编辑器中还可以执行其他操作。 有关详细信息，请参阅[编辑代码](code-editing.md)[IntelliSense](code-intellisense.md) 和[代码片段](code-snippets.md)。
+在编辑器中还可以执行其他操作。 有关详细信息，请参阅[编辑代码](editing-r-code-in-visual-studio.md)[IntelliSense](r-intellisense.md) 和[代码片段](code-snippets-for-r.md)。
 
 ## <a name="debugging-your-code"></a>调试代码
 
@@ -169,14 +166,14 @@ Visual Studio 的一个主要优势就是它的调试 UI。 RTVS 构建于这一
 
 1. 可继续逐行逐句执行程序，也可选择“继续”(F5) 运行程序，直到完成（或下一个断点）。
 
-若要深入了解，请参阅[调试](debugging.md)和[变量资源管理器](variable-explorer.md)。
+若要深入了解，请参阅[调试](debugging-r-in-visual-studio.md)和[变量资源管理器](variable-explorer.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
-本演练介绍了 R 项目的基础知识、交互窗口的使用、代码编辑和在 Visual Studio 中进行调试。 若要继续了解更多功能，请参阅以下主题以及目录中显示的主题：
+本演练介绍了 R 项目的基础知识、交互窗口的使用、代码编辑和在 Visual Studio 中进行调试。 若要继续了解更多功能，请参阅以下文章以及目录中显示的文章：
 
 - [示例项目](getting-started-samples.md)
-- [编辑代码](code-editing.md)
-- [调试](debugging.md)
-- [工作区](workspaces.md)
-- [可视化数据](visualizing-data.md)
+- [编辑代码](editing-r-code-in-visual-studio.md)
+- [调试](debugging-r-in-visual-studio.md)
+- [工作区](r-workspaces-in-visual-studio.md)
+- [可视化数据](visualizing-data-with-r-in-visual-studio.md)

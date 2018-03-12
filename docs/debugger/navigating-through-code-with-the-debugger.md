@@ -4,25 +4,28 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.execution
+f1_keywords:
+- vs.debug.execution
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>导航代码通过 Visual Studio 调试器
 熟悉的命令和快捷方式来浏览在调试器中的代码并将使变得更快、 更轻松地查找和解决你的应用程序中的问题。 虽然浏览在调试器中的代码，可以检查您的应用程序的状态或了解有关其执行流的详细信息。  
@@ -32,13 +35,13 @@ ms.lasthandoff: 12/22/2017
   
  绿色箭头还启动调试器 (与相同**F5**)。  
   
- ![DBG &#95;基础知识和 #95;开始 &#95; 调试](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
  你可以开始使用附有调试器的应用程序的几个其他方法包括**F11** ([单步执行代码](#BKMK_Step_into__over__or_out_of_the_code))， **F10** ([逐过程执行代码](#BKMK_Step_over_Step_out))，或通过使用**运行到光标处**。  在这些选项有什么作用，请参阅本主题面向信息的其他部分。  
   
  调试时，黄色线将显示下一步将执行的代码。  
   
- ![DBG &#95;基础知识和 #95;中断 &#95;模式](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
   
  调试时，你可以等命令之间进行切换**F5**， **F11**和使用其他功能，可用于快速访问你想要查看的代码 （例如断点） 的本主题中所述。  
   
@@ -56,7 +59,7 @@ ms.lasthandoff: 12/22/2017
   
 -   实际上，调试器逐句通过代码语句，而不是物理行。 例如， `if` 子句可以写在一行内：  
   
-    ```CSharp  
+    ```csharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  
@@ -78,7 +81,7 @@ ms.lasthandoff: 12/22/2017
 |键盘命令|菜单命令|描述|  
 |----------------------|------------------|-----------------|  
 |**F10**|**逐过程**|如果当前行包含函数调用，**逐过程**运行的代码，然后在调用的函数返回之后在代码的第一行处挂起执行。|  
-|**Shift + F11**|**跳出**|**单步跳出**会继续运行代码，在当前函数返回 （通过当前函数调试器跳） 时挂起执行。|  
+|**Shift+F11**|**跳出**|**单步跳出**会继续运行代码，在当前函数返回 （通过当前函数调试器跳） 时挂起执行。|  
   
 > [!TIP]
 >  如果你需要在你应用中查找的入口点，请先使用**F10**或**F11**。 检查你应用程序的状态或尝试了解有关其执行流的详细信息时，这些命令所通常很有用。  

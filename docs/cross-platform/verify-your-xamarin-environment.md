@@ -7,16 +7,17 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
-caps.latest.revision: "13"
+ms.technology: vs-ide-mobile
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: 203f977ac4bc9a0ba72284b54a6936a77bae0f61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xamarin
+ms.openlocfilehash: 03b5723ca0cbc3e6b8864bd49d2301e0485ff451
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="verify-your-xamarin-environment"></a>验证 Xamarin 环境
 安装程序完成安装后（详见[设置和安装](../cross-platform/setup-and-install.md)），请花几分钟时间验证 Xamarin 开发的体验准备事项是否均已就绪。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 12/22/2017
   
          ![选择 Windows Phone 模拟器作为调试目标](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin Verify 4")  
   
-    -   如果在使用模拟器时遇到问题，请参阅 [Windows Phone 8 模拟器疑难解答](https://msdn.microsoft.com/library/windows/apps/jj681694.aspx)。  
+    -   如果在使用模拟器时遇到问题，请参阅 [Windows Phone 8 模拟器疑难解答](/previous-versions/windows/apps/jj681694\(v%3dvs.105\))。  
   
 ## <a name="ios"></a>iOS  
   

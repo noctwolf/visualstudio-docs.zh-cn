@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,16 +14,17 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 9ad762745627c2c30378f5017d88e78b00921d4a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: f6728f940b1d8613587b6b879324bd37a2a35e2d
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
 Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备上的 UWP 应用的功率和能耗情况，这些低功率平板设备在所有时间或部分时间内靠自有电池运行。 在电池供电的设备上，如果应用程序使用过多的能量，可能导致客户非常不满，最终客户甚至可能将其卸载。 能量利用的优化可使更多的客户选择并使用你的应用程序。  
@@ -106,7 +108,7 @@ if (performance && performance.mark) {
      Visual Studio 将分析收集的数据并显示结果。  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> 收集已安装应用的能量分布曲线数据  
- 能耗工具只能在从 Visual Studio 解决方案启动或从 Windows 应用商店中安装的 Window Store 8.1 应用程序上运行。 在 Visual Studio 中打开解决方案时，默认目标为 **“启动项目”**。 面向已安装的应用程序：  
+ 只能对通过 Visual Studio 解决方案启动或从 Microsoft Store 中安装的 UWP 应用运行“能耗”工具。 在 Visual Studio 中打开解决方案时，默认目标为 **“启动项目”**。 面向已安装的应用程序：  
   
 1.  选择 **“更改目标”** ，然后选择 **“已安装的应用程序”**。  
   

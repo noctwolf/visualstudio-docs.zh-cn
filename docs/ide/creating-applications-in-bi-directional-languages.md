@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - bi-directional language support, about bi-directional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1b0d0010d9aa4c56fdffef2eceb458776a863d23
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>以双向语言创建应用程序
 通过使用 Visual Studio，可以创建能正确显示从右向左书写的语言（包括阿拉伯语和希伯来语）文本的应用程序。 对于某些功能，只需设置属性即可。 而在其他一些情况下，必须通过代码来实现功能。  
@@ -80,15 +82,16 @@ ms.lasthandoff: 12/22/2017
 -   代码和文本。 在代码编辑器（也是文本编辑器）中，可使用阿拉伯语或希伯来语命名类、函数、变量、属性、字符串文本、特性，等等。 但是，编辑器不支持从右向左的读取顺序；文本总是从左边开始。  
   
     > [!TIP]
-    >  建议将字符串文本放在资源文件中，而不是将其硬编码到程序中。 有关详细信息，请参阅[演练：本地化 Windows 窗体](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
+    > 建议将字符串文本放在资源文件中，而不是将其硬编码到程序中。 有关详细信息，请参阅[桌面应用中的资源 (.NET Framework)](/dotnet/framework/resources/index)。
   
     > [!NOTE]
-    >  用这些语言命名的对象的引用方式必须保持一致。 例如，如果使用 Kashida 命名阿拉伯语变量，则引用该变量时必须总是使用 Kashida，否则会产生错误。  
+    > 用这些语言命名的对象的引用方式必须保持一致。 例如，如果使用 Kashida 命名阿拉伯语变量，则引用该变量时必须总是使用 Kashida，否则会产生错误。  
   
 -   代码注释。 可使用阿拉伯语或希伯来语创建注释。 还可在注释生成器工具中使用这些语言。  
   
-## <a name="see-also"></a>请参阅  
- [Windows 窗体应用程序的双向支持](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [ASP.NET Web 应用程序的双向支持](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
- [全球化应用程序](../ide/globalizing-applications.md)   
- [本地化应用程序](../ide/localizing-applications.md)
+## <a name="see-also"></a>请参阅
+
+[Windows 窗体应用程序的双向支持](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)  
+[ASP.NET Web 应用程序的双向支持](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)  
+[全球化应用程序](../ide/globalizing-applications.md)  
+[本地化应用程序](../ide/localizing-applications.md)

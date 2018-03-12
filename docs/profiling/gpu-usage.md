@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="gpu-usage"></a>GPU 使用情况
 在 Visual Studio 性能和诊断中心使用 GPU 使用情况工具，更好地了解你 Direct3D 应用的高级硬件利用率。 你可以使用该工具来确定应用的性能是与 CPU 绑定还是与 GPU 绑定，并深入了解如何更有效地使用平台的硬件。 GPU 使用情况工具支持使用 Direct3D 12、Direct3D 11 和 Direct3D 10 的应用，但不支持其他图形 API（如 Direct2D 或 OpenGL）。  
@@ -118,7 +118,7 @@ ms.lasthandoff: 12/22/2017
 |**线程 ID**|事件源于的线程 ID。|  
   
 > [!IMPORTANT]
->  Windows 8.1 是事件归属所必需的。 此外，如果你的 GPU 或驱动程序不支持必要的检测功能，则所有事件将都显示为“无归属”。 如果遇到此问题，请确保更新 GPU 驱动程序，然后重试。 有关详细信息，请参阅下面的[硬件和驱动程序支持](#hwsupport)。  
+>  如果你的 GPU 或驱动程序不支持必要的检测功能，则所有事件都将显示为“无归属”。 如果遇到此问题，请确保更新 GPU 驱动程序，然后重试。 有关详细信息，请参阅下面的[硬件和驱动程序支持](#hwsupport)。  
   
 ## <a name="gpu-usage-settings"></a>GPU 使用情况设置  
  你可以将 GPU 使用情况工具配置为推迟收集分析信息，而不在应用启动后立即开始收集信息。 由于分析信息可能非常大，因此当你知道应用性能暂时不会降速时，这将很有用。  

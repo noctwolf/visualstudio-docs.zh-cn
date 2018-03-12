@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.cpuutilization
-helpviewer_keywords: Concurrency Visualizer, CPU Utilization View
+f1_keywords:
+- vs.performance.view.cpuutilization
+helpviewer_keywords:
+- Concurrency Visualizer, CPU Utilization View
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ee1168865d5827f4536b39b8b0822f1e1d67635e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 36a3d46186d98dbcd3d89ebb97003ba6e24fb3b7
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="utilization-view"></a>使用率视图
-**使用率视图**显示有关当前进程所使用的 CPU、GPU 和其他系统资源的信息。 它显示随着时间的推移，在系统上运行的分析的进程、空闲进程、系统进程和其他进程的平均核心使用率。 它不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。 通过将分析时间分成较短的时间段生成此视图。 对于每个时间段，此图绘制出该间隔期间内在逻辑核心上执行的进程线程的平均数量。  
+使用率视图显示有关当前进程所使用的 CPU、GPU 和其他系统资源的信息（选择“分析” > “并发可视化工具”来启动并发可视化工具）。 它显示随着时间的推移，在系统上运行的分析的进程、空闲进程、系统进程和其他进程的平均核心使用率。 它不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。 通过将分析时间分成较短的时间段生成此视图。 对于每个时间段，此图绘制出该间隔期间内在逻辑核心上执行的进程线程的平均数量。  
   
  ![CPU 使用率视图](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")  
   
@@ -32,7 +36,7 @@ ms.lasthandoff: 12/22/2017
   
  GPU 活动关系图显示随着时间的推移，使用中的 DirectX 引擎数。  如果引擎正在处理 DMA 数据包，它则正在使用中。  该关系图不会显示特定的 DirectX 引擎（例如，3D 引擎、视频引擎等）。  
   
-## <a name="purpose"></a>用途  
+## <a name="purpose"></a>目标  
  我们建议在使用并发可视化工具时，将使用率视图作为性能调查的起点。 因为它概述了随着时间的推移，应用中的并发程，因此，可使用它快速识别需要进行性能调整或并行化的区域。  
   
  如果对性能调整感兴趣，则可尝试识别不满足你期望的行为。 还可查找逻辑 CPU 核心使用率低的区域及原因。 此外，也可以查找 CPU 和 GPU 之间的使用模式。  

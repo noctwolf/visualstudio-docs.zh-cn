@@ -4,7 +4,8 @@ description: "了解更新 Visual Studio 的分步流程。"
 ms.date: 12/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,12 +15,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f9e4c2609c6739708437decd581dfdb88f87135d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e61def66e68d7f889349d0e7b7337238e220dce
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>将 Visual Studio 2017 更新到最新版本
 更新 Visual Studio 通常是为了扩展其功能和解决客户报告的问题。 为了确保 [Visual Studio 是经过优化的最新版本](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#release-history)，不妨进行更新。 操作方法如下。

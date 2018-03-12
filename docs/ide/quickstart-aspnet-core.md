@@ -10,17 +10,18 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: CSharp
+dev_langs:
+- CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 66c1b3ca7a877c001bc3aeb69c5331fdc828aad8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建第一个 ASP.NET Core web 应用
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
 在这个对 Visual Studio 集成开发环境 (IDE) 的 5-10 分钟简介中，可以创建简单的 C# ASP.NET Core web 应用程序。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
 
@@ -30,11 +31,11 @@ ms.lasthandoff: 12/22/2017
 
 1. 打开 Visual Studio 2017。
 
-1. 在顶部菜单栏上，依次选择“文件”、“新建”、“项目...”。
+1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。
 
 1. 在“新建项目”对话框的左窗格中，展开“Visual C#”，然后选择“.NET Core”。 在中间窗格中，选择“ASP.NET Core Web 应用程序”，然后选择“确定”。
 
-     如果没有看到“.NET Core”项目模板，取消“新建项目”对话框，然后在顶部菜单栏中依次选择“工具”、“获取工具和功能...”。Visual Studio 安装程序启动。 选择“ASP.NET 和 web 开发”工作负载，然后选择“修改”。
+     如果没有看到“.NET Core”项目模板类别，请选择左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“ASP.NET 和 web 开发”工作负载，然后选择“修改”。
 
      ![VS 安装程序的 ASP.NET 工作负载](../ide/media/quickstart-aspnet-workload.png)
 
@@ -64,7 +65,7 @@ ms.lasthandoff: 12/22/2017
  }
  ```
 
-1. “环境”和“字符串”下方将会出现两条波浪形下划线，因为这两种类型不在范围内。 打开“错误列表”工具栏，查看此处列出的相同错误。 （如果没有看到“错误列表”工具栏，从顶部菜单栏依次选择“视图”、“错误列表”。）
+1. “环境”和“字符串”下方将会出现两条波浪形下划线，因为这两种类型不在范围内。 打开“错误列表”工具栏，查看此处列出的相同错误。 （如果没有看到“错误列表”工具栏，请选择顶部菜单栏中的“视图” > “错误列表”。）
 
    ![错误列表](../ide/media/quickstart-aspnet-errorlist.png)
 
@@ -72,7 +73,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="run-the-application"></a>运行此应用程序
 
-1. 按“Ctrl+F5”可运行此应用程序并在 web 浏览器中打开它。
+1. 按 Ctrl+F5 运行此应用程序，并在 Web 浏览器中打开它。
 
 1. 在网站顶部，选择“About”可查看添加在“About”页的 `OnGet()` 方法中的目录消息。
 
@@ -85,5 +86,6 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="see-also"></a>请参阅
 
+[Visual Studio 中的 C# 和 ASP.NET 入门](tutorial-csharp-aspnet-core.md)  
 [借助 Visual Studio 开始使用 C# 和 Visual Basic](getting-started-with-visual-csharp-and-visual-basic.md)  
 [在 ASP.NET Core 中开始使用 Razor 页面](/aspnet/core/tutorials/razor-pages/razor-pages-start)

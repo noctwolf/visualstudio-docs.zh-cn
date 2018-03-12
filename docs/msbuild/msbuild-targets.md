@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: MSBuild, targets
+helpviewer_keywords:
+- MSBuild, targets
 ms.assetid: 8060b4d2-e4a9-48cf-a437-852649ceb417
-caps.latest.revision: "26"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1055a11a428d477ef44645fbc85d3f281b523357
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d72a820b4d733d7736ca356ebd71198b9252dcf8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-targets"></a>MSBuild 目标
 目标以特定的顺序将任务组合到一起，并允许生成过程分解为较小的单位。 例如，一个目标可能会删除输出目录中的所有文件以准备进行生成，而另一个目标可能会编译项目的输入并将它们置于该空目录中。 有关任务的详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  
@@ -32,7 +34,7 @@ ms.lasthandoff: 12/22/2017
 </Target>  
 ```  
   
- 与 MSBuild 属性一样，可以重新定义目标。 例如，  
+ 与 MSBuild 属性一样，可以重新定义目标。 例如，应用于对象的  
   
 ```xml  
 <Target Name="AfterBuild" >  
@@ -63,7 +65,7 @@ ms.lasthandoff: 12/22/2017
  有关目标生成顺序的详细信息，请参阅[目标生成顺序](../msbuild/target-build-order.md)。  
   
 ## <a name="target-batching"></a>目标批处理  
- 目标元素可能具有 `Outputs` 特性，该特性指定 %(元数据) 形式的元数据。 如果是这样，MSBuild 将针对每个唯一元数据值运行一次目标，对具有该元数据值的项进行分组或“批处理”。 例如，  
+ 目标元素可能具有 `Outputs` 特性，该特性指定 %(元数据) 形式的元数据。 如果是这样，MSBuild 将针对每个唯一元数据值运行一次目标，对具有该元数据值的项进行分组或“批处理”。 例如，应用于对象的  
   
 ```xml  
 <ItemGroup>  

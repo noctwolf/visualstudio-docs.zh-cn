@@ -4,46 +4,35 @@ ms.custom:
 ms.date: 12/06/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
-caps.latest.revision: "64"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e12acc12559b4295958906fd182c381933bb5d45
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: ace464f11d16f1498022cb1a0673b294a6ec408b
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
+
 可使用 Visual Studio 生成适用于 Android、iOS 和 Windows 设备的应用。  设计应用时，可使用 Visual Studio 中的工具轻松添加连接的服务（如 Office 365、Azure App Service 和 Application Insights）。
 
- 使用 C# 和 .NET Framework、HTML 和 JavaScript 或者 C++ 生成应用。 还可共享代码、字符串和图像，某些情况下甚至可共享用户界面。
+使用 C# 和 .NET Framework、HTML 和 JavaScript 或者 C++ 生成应用。 还可共享代码、字符串和图像，某些情况下甚至可共享用户界面。
 
- 如果想要构建一款游戏或沉浸式图形应用，请安装 Visual Studio tools for Unity，借助 Unity 尽享 Visual Studio 中所有强大的生产力功能。Unity 是一款热门的跨平台游戏/图形引擎和开发环境，主要针对在 iOS、Android、Windows 和其他平台上运行的应用。
+如果想要构建一款游戏或沉浸式图形应用，请安装 Visual Studio tools for Unity，借助 Unity 尽享 Visual Studio 中所有强大的生产力功能。Unity 是一款热门的跨平台游戏/图形引擎和开发环境，主要针对在 iOS、Android、Windows 和其他平台上运行的应用。
 
- **本文内容：**
+## <a name="build-an-app-for-android-ios-and-windows-net-framework"></a>构建面向 Android、iOS 和 Windows 的应用 (.NET Framework)
 
--   [构建面向 Android、iOS 和 Windows 的应用 (.NET Framework)](#NET)
+![设备](../cross-platform/media/homedevices.png "家庭设备")
 
-    -   [通过单个基本代码面向 Android、iOS 和 Windows](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
-
-    -   [面向 Windows 10 设备](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
-
--   [构建面向 Android、iOS 和 Windows 的应用 (HTML/JavaScript)](#HTML)
-
--   [构建面向 Android 和 Windows 的应用 (C++)](#CPP)
-
--   [使用 Visual Studio Tools for Unity 构建面向 Android、iOS 和 Windows 的跨平台游戏](#Unity)
-
-##  <a name="NET"></a>构建面向 Android、iOS 和 Windows 的应用 (.NET Framework)
- ![设备](../cross-platform/media/homedevices.png "家庭设备")
-
- 借助 Xamarin，可在同一解决方案中面向 Android、iOS 和 Windows，进而共享代码甚至 UI。
+借助 Xamarin，可在同一解决方案中面向 Android、iOS 和 Windows，进而共享代码甚至 UI。
 
 |**了解详细信息**|
 |--------------------|
@@ -91,8 +80,8 @@ ms.lasthandoff: 01/05/2018
 
 |**了解更多信息**|
 |--------------------|
-|[了解通用 Windows 应用](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) （Windows 开发人员中心）|
-|[生成首个 Windows 应用](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) （Windows 开发人员中心）|
+|[通用 Windows 平台简介](/windows/uwp/get-started/universal-application-platform-guide)|
+|[创建第一个应用](/windows/uwp/get-started/your-first-app)|
 |[开发通用 Windows 平台 (UWP) 的应用](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[将应用迁移到通用 Windows 平台 (UWP)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
 

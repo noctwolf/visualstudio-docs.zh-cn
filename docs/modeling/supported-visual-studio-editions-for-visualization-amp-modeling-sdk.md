@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language Tools, supported Visual Studio editions
+helpviewer_keywords:
+- Domain-Specific Language Tools, supported Visual Studio editions
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b76309249310afd5bd88c8d8553792512e208220
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 359bb9864532f2f3fbeb4fecca28c54ea0a96e17
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>支持的可视化效果的 Visual Studio 版本&amp;建模 SDK
 以下是一系列 Visual Studio 版本支持用于[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]的创作和部署环境中。 有关这些版本的详细信息，请参阅 Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [开发人员中心](http://go.microsoft.com/fwlink/?LinkId=75628)。  
@@ -32,7 +34,7 @@ ms.lasthandoff: 01/25/2018
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
 ## <a name="deployment-editions"></a>部署版  
- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 支持以下用于部署生成的域特定语言的配置：  
+ [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 对于部署生成的域特定语言支持以下配置：  
   
 -   Visual Studio Enterprise  
   

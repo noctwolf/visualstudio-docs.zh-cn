@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - architecture, dependency diagrams
@@ -14,12 +13,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ec8c0e9010cefd1e5c6b639edf02d785422800ff
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 840758b0b370c452ac4428c6bfdad525662ed420
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>依赖项关系图： 准则
 通过创建描述在高级别的应用程序的体系结构*依赖项关系图*Visual Studio 中。 确保你的代码通过验证你的代码使用依赖项关系图来保持与此设计保持一致。 还可以在生成过程中包括层验证。 请参阅[第 9 频道视频： 设计和验证体系结构使用依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 01/13/2018
  请参阅[在代码中创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)。  
   
 ##  <a name="CreateLayers"></a>定义层以表示功能区域或组件  
- 层表示的逻辑组*项目*，如项目、 代码文件、 命名空间、 类和方法。 可以从 Visual C# .NET 和 Visual Basic .NET 项目创建层，也可以通过链接文档（如 Word 文件或 PowerPoint 演示文稿）将规范或计划附加到层。 每一层显示为关系图上的一个矩形，并显示链接到它的项目数。 一个层可以包含描述更具体任务的嵌套的层。  
+ 层表示的逻辑组*项目*，如项目、 代码文件、 命名空间、 类和方法。 你可以从 Visual C# 和 Visual Basic 项目中创建层或者你可以将附加规范或计划到层通过链接文档，如 Word 文件或 PowerPoint 演示文稿。 每一层显示为关系图上的一个矩形，并显示链接到它的项目数。 一个层可以包含描述更具体任务的嵌套的层。  
   
  一般原则是按其功能命名层，例如“演示文稿”或“服务”。 如果这些项目依赖关系紧密，则将它们放在同一层。 如果可以分别更新或在单独的应用程序中使用这些项目，请将它们放在不同的层中。 若要了解有关分层模式，请访问模式和实践站点[http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794)。  
   

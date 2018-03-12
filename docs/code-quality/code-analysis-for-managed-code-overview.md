@@ -7,19 +7,21 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.projectpropertypages.codeanalysis
+f1_keywords:
+- vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
 - code analysis, managed code
 - managed code, code analysis
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 8739c5aafbc8914e3de5f0a51659b40234fa079c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>代码分析托管的代码概述
 
@@ -39,11 +41,11 @@ ms.lasthandoff: 01/22/2018
 
 对于托管代码的代码分析规则划分到*规则集*。 可以使用某个 Microsoft 标准规则集，也可以创建自定义规则集以满足特定需求。 有关详细信息，请参阅[使用规则集组合代码分析规则](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。
 
-## <a name="in-source-suppression"></a>在禁止显示源
+## <a name="suppress-warnings"></a>禁止显示警告
 
 它通常用于指示警告不适用。 这样，便可以通知开发人员以及可能会在以后检查代码的其他人员：已调查了一个警告，且禁止显示或忽略了该警告。
 
-在源中的禁止显示警告实现通过自定义特性。 若要禁止显示警告，请向源代码添加特性 `SuppressMessage`，如下面的示例所示：
+在源中的禁止显示警告是通过自定义特性实现的。 若要禁止显示警告，请向源代码添加特性 `SuppressMessage`，如下面的示例所示：
 
 ```csharp
 [System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
@@ -53,7 +55,10 @@ Public class MyClass
 }
 ```
 
-有关详细信息，请参阅[禁止显示警告使用 SuppressMessage 特性](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)。
+有关详细信息，请参阅[禁止显示警告](../code-quality/in-source-suppression-overview.md)。
+
+> [!NOTE]
+> 如果将项目迁移到 Visual Studio 2017 时，您可能会突然会遇到这样相当多的代码分析警告。 如果你不准备好修复警告，并且想要暂时关闭代码分析，打开项目的属性页 (**项目** > ***项目*属性...**) 并转到**代码分析**选项卡。取消选择**生成时启用代码分析**，然后重新生成你的项目。 或者，你可以选择的不同，较小的规则集以针对代码运行。 请记住将重新打开当你准备好修复警告的代码分析。
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>作为签入策略的一部分运行代码分析
 

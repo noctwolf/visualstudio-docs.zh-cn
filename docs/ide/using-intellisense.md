@@ -1,38 +1,31 @@
 ---
-title: "使用 IntelliSense | Microsoft Docs"
+title: Visual Studio IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.tools.intellisense
+f1_keywords:
+- vc.tools.intellisense
 helpviewer_keywords:
-- IntelliSense, Complete Word
-- IntelliSense, completion mode
-- parameter information
-- IntelliSense, List Members
-- Quick Info
-- Parameter Info
+- Quick info
+- Parameter info
+- Complete word
+- List members
 - IntelliSense [Visual Studio]
-- IntelliSense, suggestion mode
-- IntelliSense, Parameter Info
-- IntelliSense, customizing
-- Complete Word
-- IntelliSense
-- List Members
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1423e3db18a3849fdcbf93bf0a4299a0f743b242
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 88ee47502d0aa15e391155cae918c8e579e72194
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="using-intellisense"></a>Using IntelliSense
+# <a name="using-intellisense-in-visual-studio"></a>使用 Visual Studio IntelliSense
 
 IntelliSense 是许多功能的总称：列出成员、参数信息、快速信息和完成单词。 使用这些功能，可以详细了解使用的代码、跟踪键入的参数，还可以通过轻敲几个按键来添加属性和方法调用。
 
@@ -56,7 +49,7 @@ IntelliSense 的许多方面只支持特定语言。 有关不同语言的 Intel
 
 ## <a name="parameter-info"></a>参数信息
 
-“参数信息”提供方法、特性泛型形参（在 C# 中）或模板（在 C++ 中）中所需的参数数目、参数名称和参数类型的相关信息。
+“参数信息”提供方法、特性泛型类型参数（在 C# 中）或模板（在 C++ 中）中所需的参数数目、参数名称和参数类型的相关信息。
 
 以粗体显示的参数指示键入函数时所需的下一参数。 对于重载函数，可以使用向上和向下键查看函数重载的替代参数信息。
 
@@ -84,7 +77,7 @@ IntelliSense 的许多方面只支持特定语言。 有关不同语言的 Intel
 
 ## <a name="complete-word"></a>完成单词
 
-输入大量字符后，“完成单词”可将变量名、命令名或函数名剩余部分补充完整，避免产生歧义。 可通过选择“编辑” > “IntelliSense” > “完成单词”、按 Ctrl + 空格键或选择编辑器工具栏上的“完成单词”按钮，调用“完成单词”。
+输入大量字符后，“完成单词”可将变量名、命令名或函数名剩余部分补充完整，避免产生歧义。 可通过以下三种方式调用“完成单词”功能：选择“编辑” > “IntelliSense” > “完成单词”，按 Ctrl+空格，或者选择“编辑器”工具栏上的“完成单词”按钮。
 
 ## <a name="intellisense-options"></a>IntelliSense 选项
 
@@ -108,8 +101,8 @@ MessageBox( hWnd, "String literal|")
 
 ## <a name="see-also"></a>请参阅
 
-[Visual Basic 特定的 IntelliSense](../ide/visual-basic-specific-intellisense.md)  
-[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)  
+[Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)  
+[C# IntelliSense](../ide/visual-csharp-intellisense.md)  
 [JavaScript IntelliSense](../ide/javascript-intellisense.md)  
 [编写和重构代码 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
-[提供 XML 代码注释](../ide/supplying-xml-code-comments.md)
+[提供 XML 代码评论](../ide/supplying-xml-code-comments.md)

@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: bc836806e1acf33b35604419ac1d6aad41a2d795
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d12331bd074f77db83ae4574195b8b6f7e5c452a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Visual Studio for Mac 介绍
 
-Visual Studio for Mac 是一个新式且复杂的 IDE，其中包含多种用于创建移动、桌面和 Web 应用程序的功能。 它支持以下内容的开发：
+Visual Studio for Mac 是一个新式且复杂的 IDE，其中包含多种用于创建移动、桌面和 Web 应用程序的功能。 它支持以下开发：
 
 * .NET 移动应用：Android、iOS、tvOS、watchOS
 * Mac 桌面应用
@@ -22,9 +22,9 @@ Visual Studio for Mac 是一个新式且复杂的 IDE，其中包含多种用于
 * ASP.NET Core Web 应用程序
 * 跨平台 Unity 游戏
 
-它包括丰富的编辑器、调试、与 iOS、Mac 和 Android 的本机平台集成和集成源控件，可命名其众多功能中的几个功能。
+它包括丰富的编辑器、调试、与 iOS、Mac 和 Android 的本机平台集成和集成源控件等功能。
 
-本主题调查了 Visual Studio for Mac 的各个部分，并简要介绍了使其成为一款用于创建跨平台应用程序的强大工具的部分功能。
+本文调查了 Visual Studio for Mac 的各个部分，并简要介绍了使其成为一款用于创建跨平台应用程序的强大工具的部分功能。
 
 ## <a name="installation"></a>安装
 
@@ -36,7 +36,7 @@ Visual Studio for Mac 是一个新式且复杂的 IDE，其中包含多种用于
 
 ### <a name="c"></a>C#
 
-在 Visual Studio for Mac 中创建跨平台应用程序时，C# 是最常用的语言。 这包括对所有 C# 7 功能的完整支持。
+在 Visual Studio for Mac 中创建跨平台应用程序时，C# 是最常用的语言。 IDE 对所有 C# 7 功能提供完整支持。
 
 ### <a name="f"></a>F#
 
@@ -71,7 +71,7 @@ F# 是强类型函数编程语言，设计为专门用于在 .NET 上运行。 V
 
 Visual Studio 有其自己的集成 Android SDK 管理器。
 
-对于 Android 应用程序，Visual Studio for Mac 包含其自己的设计器，该设计器适用于 Android `.axml` 文件来直观地构造用户界面。 Visual Studio for Mac 将在其 Android 设计器中打开这些文件，如下所示：
+对于 Android 应用程序，Visual Studio for Mac 包含其自己的设计器，该设计器适用于 Android `.axml` 文件来直观地构造用户界面。 Visual Studio for Mac 将在其 Android 设计器中打开这些文件，如下图中所示：
 
 ![](media/intro-image31.png)
 
@@ -118,7 +118,7 @@ Xamarin Inspector 向用户提供交互式 C# 控制台以及工具。 检查实
 
 ## <a name="next-steps"></a>后续步骤
 
-* **掌握全局** - 概括了解 Visual Studio for Mac 中的大部分功能，请参阅 Visual Studio for Mac [IDE 教程](~/ide-tour.md)。
+* **获取教程** - 若要大致了解 Visual Studio for Mac 中的众多主要功能，请参阅 Visual Studio for Mac [IDE 教程](~/ide-tour.md)。
 * **安装** - 若要了解如何下载和安装 Visual Studio，请参阅[安装](~/installation.md)指南。
 * **Xamarin 教程** - 若要了解有关如何使用 Xamarin 开发代码的详细信息，请转到 Xamarin [开发人员中心](https://developer.xamarin.com)。
 * **视频** - 若要了解有关 Visual Studio for Mac 的其他功能和方面，请查看 [Xamarin University](https://university.xamarin.com) 网站上的视频。

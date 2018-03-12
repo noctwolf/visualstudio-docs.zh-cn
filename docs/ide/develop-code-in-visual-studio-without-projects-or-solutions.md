@@ -1,16 +1,10 @@
 ---
 title: "在 Visual Studio 中开发代码而无需创建项目或解决方案 | Microsoft Docs"
-ms.custom: 
-ms.date: 02/27/2017
+ms.date: 02/21/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- JScript
-- VB
-- CSharp
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
@@ -18,227 +12,108 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 252f09a8a2322bca4f94b9d631ca2c6da6b14824
-ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
+ms.workload:
+- multiple
+ms.openlocfilehash: 08c50a07992a1856ad0d5f45c0200e0b8a232cb7
+ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中开发代码而无需创建项目或解决方案
 
-在 Visual Studio 2017 中，你可以在 Visual Studio 中打开几乎任何类型的基于目录的项目的代码，而无需创建解决方案或者项目文件。 这意味着（例如，在 Git 上找到一个代码项目时）可以克隆该项目，然后在 Visual Studio 中直接打开并开始开发，而无需创建解决方案或项目。  
+在 Visual Studio 2017 中，你可以在 Visual Studio 中打开几乎任何类型的基于目录的项目的代码，而无需创建解决方案或者项目文件。 这意味着，例如，可以在 GitHub 上克隆一个存储库，然后在 Visual Studio 中直接打开并开始开发，而无需创建解决方案或项目。 如果需要，可以指定自定义生成任务并通过简单的 JSON 文件启动参数。
 
-不仅可以在 Visual Studio 中编辑并生成代码，还能在代码中导航（例如通过 Navigate To 命令）。 代码带有语法着色，许多情况下还含有基本的语句完成和调试以及断点。 有些语言甚至会包含更多的功能。 请参阅[创建可移植的自定义编辑器设置](create-portable-custom-editor-options.md)，了解详细信息。  
+在 Visual Studio 中打开代码文件之后，解决方案浏览器会显示文件夹中的所有文件。 可以单击任何文件开始编辑。 在后台，Visual Studio 开始对文件编制索引，以启用 IntelliSense、导航和重构功能。 在编辑、创建、移动或删除文件时，Visual Studio 会自动跟踪更改，并不断更新其 IntelliSense 索引。 代码带有语法着色，许多情况下还含有基本的 IntelliSense 语句完成。
 
-## <a name="open-code-anywhere"></a>在任意位置打开代码
+## <a name="open-any-code"></a>打开任何代码
 
-可以通过以下方式，在 Visual Studio 中打开代码：  
+可以通过以下任何方式，在 Visual Studio 中打开代码：
 
-- 在 Visual Studio 菜单栏上，依次选择“文件”**、**“打开”**、**“文件夹”，然后浏览到代码位置。  
-
-- 在包含该代码的文件夹的上下文（右键单击）菜单上，选择“在 Visual Studio 中打开”命令。  
-
-- 选择 Visual Studio“开始”页上的“打开文件夹”链接。  
-
-- 打开从 GitHub 存储库中克隆的代码。  
+- 在 Visual Studio 菜单栏上，依次选择“文件” > “打开” > “文件夹”，然后浏览到代码位置。
+- 在包含该代码的文件夹的上下文（右键单击）菜单上，选择“在 Visual Studio 中打开”命令。
+- 选择 Visual Studio“开始”页上的“打开文件夹”链接。
+- 如果是键盘用户，则在 Visual Studio 中按 Ctrl+Shift+Alt+O。
+- 打开克隆的 GitHub 存储库中的代码。
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>打开克隆的 GitHub 存储库中的代码
 
-以下示例演示如何克隆 GitHub 存储库，并在 Visual Studio 中打开其代码。 若要执行此过程，必须具有 GitHub 帐户，并且已经在系统上安装了适用于 Windows 的 Git。 请参阅[注册新的 GitHub 帐户](https://help.github.com/articles/signing-up-for-a-new-github-account/)和[适用于 Windows 的 Git](https://git-for-windows.github.io/) 了解详细信息。  
+以下示例演示如何克隆 GitHub 存储库，并在 Visual Studio 中打开其代码。 若要执行此过程，必须具有 GitHub 帐户，并且已经在系统上安装了适用于 Windows 的 Git。 请参阅[注册新的 GitHub 帐户](https://help.github.com/articles/signing-up-for-a-new-github-account/)和[适用于 Windows 的 Git](https://git-for-windows.github.io/) 了解详细信息。
 
-1. 转到要在 GitHub 上克隆的存储库。  
+1. 转到要在 GitHub 上克隆的存储库。
 
-1. 选择“克隆或下载”按钮，然后在下拉菜单中选择“复制到剪贴板”按钮，以便复制 GitHub 存储库的安全 URL。  
+1. 选择“克隆或下载”按钮，然后在下拉菜单中选择“复制到剪贴板”按钮，以便复制 GitHub 存储库的安全 URL。
 
-  ![GitHub 克隆按钮](./media/VSIDE_Code_Clone.png)
+   ![GitHub 克隆按钮](./media/VSIDE_Code_Clone.png)
 
-    > [!NOTE]
-    >  本示例演示如何通过使用安全 URL 方法克隆存储库，但是你也可以选择在桌面上打开项目，或者下载项目的 .zip 文件。
+1. 在 Visual Studio 中，选择“团队资源管理器”选项卡，打开团队资源管理器。 如果未看到选项卡，则从“视图” > “团队资源管理器”中将其打开。
 
-1. 在 Visual Studio 中，选择“团队资源管理器”选项卡，打开团队资源管理器。  
+1. 在团队资源管理器的“本地 Git 存储库”部分中，选择“克隆”命令，然后将 GitHub 页的 URL 粘贴到文本框。
 
-1. 在团队资源管理器的“本地 Git 存储库”部分中，选择“克隆”命令，然后将 GitHub 页的 URL 粘贴到文本框。  
+   ![克隆项目](./media/VSIDE_Code_Clone2.png)
 
-  ![克隆项目](./media/VSIDE_Code_Clone2.png)
+1. 选择“克隆”按钮，将项目的文件克隆到本地 Git 存储库。 此过程可能需要几分钟的时间，具体取决于存储库的大小。
 
-1. 选择“克隆”按钮，将项目的文件克隆到本地 Git 存储库。 此过程可能需要几分钟的时间，具体取决于存储库的大小。  
+1. 将存储库克隆到系统后，在“团队资源管理器”中，在新克隆存储库的上下文（右键单击）菜单上，选择“打开”命令。
 
-1. 将存储库克隆到系统后，在“团队资源管理器”中，在新克隆存储库的上下文（右键单击）菜单上，选择“打开”命令。  
+   ![已克隆的存储库](./media/VSIDE_Code_Clone3.png)
 
-  ![已克隆的存储库](./media/VSIDE_Code_Clone3.png)
+1. 选择“显示文件夹视图”命令，查看解决方案资源管理器中的文件
 
-1. 选择“显示文件夹视图”命令，查看解决方案资源管理器中的文件  
+   ![显示文件夹视图](./media/VSIDE_Code_Clone3_show.png)
 
-  ![显示文件夹视图](./media/VSIDE_Code_Clone3_show.png)
-
-  此时，可以浏览克隆存储库中的文件夹和文件，并在具有语法着色和其他功能的 Visual Studio 代码编辑器中查看和搜索代码。
-
-    ![搜索克隆项目的代码](./media/VSIDE_Code_Clone4.png)  
+   此时，可以浏览克隆存储库中的文件夹和文件，并在具有语法着色和其他功能的 Visual Studio 代码编辑器中查看和搜索代码。
 
 |         |         |
 |---------|---------|
-|  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看视频](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171)，了解如何从 Visual Studio 中的 GitHub 存储库克隆并打开代码。 |
+|  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")|    [观看视频](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171)，了解如何从 Visual Studio 中的 GitHub 存储库克隆并打开代码。 |
 
-## <a name="debug-your-code"></a>调试代码
+## <a name="run-and-debug-your-code"></a>运行和调试代码
 
-不通过项目或解决方案即可在 Visual Studio 中调试代码。 对某些语言进行调试时，可能需要在代码项目中指定一个有效的*启动文件*，例如脚本、可执行文件或项目。 调试代码时，Visual Studio 会首先运行此指定代码。  
+不通过项目或解决方案即可在 Visual Studio 中调试代码！ 对某些语言进行调试时，可能需要在代码库中指定一个有效的启动文件，例如脚本、可执行文件或项目。 工具栏上“开始”按钮旁的下拉列表框中列出了 Visual Studio 检测到的所有启动项，以及你在文件夹中专门指定的项。 调试代码时，Visual Studio 会首先运行此代码。
 
-工具栏上“开始”按钮旁的下拉列表框中列出了 Visual Studio 检测到的所有启动项，以及你在文件夹中专门选择的项。  
+配置代码以在 Visual Studio 中运行因代码类型和生成工具而异。
 
-![运行按钮](./media/VSIDE_Code_Run_Button.png)  
+### <a name="codebases-that-use-msbuild"></a>使用 MSBuild 的代码库
 
-Visual Studio 会自动识别项目，但是需要你将脚本（例如 Python 和 JavaScript）显式选择为启动项之后，项目才会出现在列表中。 此外，某些启动项（例如 MSBuild 和 CMake）可能有多个生成配置，这些生成配置会显示在运行按钮的下拉列表中。  
+基于 MSBuild 的代码库拥有多个生成配置，它们在“开始”按钮的下拉列表中显示。 选择要作为启动项使用的文件，然后选择“开始”按钮开始调试。
 
-Visual Studio 目前支持对下列语言进行调试：  
+> [!NOTE]
+> 对于 C# 和 Visual Basic 代码库，必须安装 .NET 桌面开发工作负载。 对于 C++ 代码库，必须安装使用 C++ 的桌面开发工作负载。
 
-- Node.js  
+### <a name="codebases-that-use-custom-build-tools"></a>使用自定义生成工具的代码库
 
-- Python  
+如果代码库使用自定义生成工具，则必须告知 Visual Studio 如何使用 .json 文件中定义的生成任务来生成代码。 有关详细信息，请参阅[自定义生成和调试任务](../ide/customize-build-and-debug-tasks-in-visual-studio.md)。
 
-- 基于 MSBuild 的项目（C#、VB、C++）  
+### <a name="codebases-that-contain-python-or-javascript-code"></a>包含 Python 或 JavaScript 代码的代码库
 
-- 所有带有 PDB（Python 调试器）的可执行文件。  
+如果代码库包含 Python 或 JavaScript 代码，则无需配置任何 .json 文件，但必须安装相应的工作负载。 还必须配置启动脚本：
 
-### <a name="to-debug-nodejs-and-python"></a>调试 Node.js 和 Python：
+1. 通过选择“工具” > “获取工具和功能…”，或者通过关闭 Visual Studio 并运行 Visual Studio 安装程序来安装 [Node.js 开发](https://www.visualstudio.com/vs/node-js/)或 [Python 开发](https://www.visualstudio.com/vs/python/)工作负载。
 
-1. 安装 Node.js 或 Python 工具或 Visual Studio 2017 和 Node.js 运行时。  
+   ![Node.js 和 Python 开发工作负载](media/python_nodejs_workloads.png)
 
-1. 在解决方案资源管理器中的 JavaScript 文件的上下文菜单上，选择“设置为启动项”命令。  
+1. 在“解决方案资源管理器”中，右键单击 JavaScript 或 Python 文件的上下文菜单上，选择“设置为启动项”命令。
 
-1. 选择 F5 键开始调试。  
+1. 选择“开始”按钮开始调试。
 
-### <a name="to-debug-msbuild-projects"></a>调试 MSBuild 项目
+### <a name="codebases-that-contain-c-code"></a>包含 C++ 代码的代码库
 
-1. 在 Visual Studio 菜单上，选择“调试”。 在下拉菜单上，选择该项目，或者选择想要在解决方案资源管理器中显示为启动项的项目或文件。  
+有关在 Visual Studio 中打开 C++ 代码而无需创建解决方案或项目的信息，请参阅 [C++ 的打开文件夹项目](/cpp/ide/non-msbuild-projects)。
 
-1. 选择 F5 键开始调试。  
+### <a name="codebases-that-contain-a-visual-studio-project"></a>包含 Visual Studio 项目的代码库
 
-### <a name="to-debug-executable-files"></a>调试可执行文件
+如果代码文件夹包含 Visual Studio 项目，则可以将项目指定为启动项。
 
-1. 在 Visual Studio 菜单上，选择“调试”。 在下拉菜单上，选择该项目，或者选择想要在解决方案资源管理器中显示为启动项的项目或文件。  
+![将项目设为启动项](media/customize-set-project-as-startup-item.png)
 
-1. 选择 F5 键开始调试。  
+“开始”按钮的文本将更改，以反映项目为启动项。
 
-## <a name="enable-custom-build-tools"></a>启用自定义生成工具
-
-Visual Studio 可以运行多种语言，但它不能运行所有语言。 如果 Visual Studio 可运行你的语言，你可以立即开始运行代码。 如果 Visual Studio 无法运行你尝试运行的代码，信息栏会提示你指定基本代码中的某个文件作为启动项。  
-
-如果基本代码使用 Visual Studio 无法识别的自定义生成工具，则在完成一些附加步骤前，可能无法在 Visual Studio 中运行和调试代码。 必须指定一个有效的可执行文件类型（如编译器）以及语言所需的任何自定义形式参数和实际参数。 为此，Visual Studio 提供生成任务。 可以通过创建生成任务来指定语言生成和运行此代码所需的所有项。  
-
-还可以通过创建任意的生成任务来执行你所需的几乎所有操作。 例如，可以创建一个任务来列出文件夹的内容或者重命名文件。 也可以创建针对性更强的自定义生成任务，例如使用特定自变量来编译和生成项目。 以下步骤演示了如何创建两种类型的生成任务。  
-
-#### <a name="to-create-an-arbitrary-build-task"></a>创建任意的生成任务
-
-1. 在解决方案资源管理器中，选择要创建任务的项目的文件或文件夹，在文件或文件夹的上下文（右键单击）菜单上，选择“配置任务”。  
-
-  ![配置任务](./media/VSIDE_Code_Config_Task.png)
-
-  选择“配置任务”可打开名为 tasks.vs.json 的文件。 如果此文件不存在，系统将创建此文件。 此文件中包含所选文件或文件夹的生成任务。  
-
-  ![Tasks.vs.json 文件](./media/VSIDE_Code_Tasks_JSON.png)
-
-1. 将以下生成任务添加到 tasks.vs.json。 此示例中，我们将添加一个名为“列出输出”的简单任务，该任务将在输出窗口中列出所选文件夹中的文件和子文件夹。 （新任务将添加到现有的“任务”数组中。）  
-
-  ```xml
-      {
-        "taskName": "List outputs",
-        "appliesTo": "*",
-        "type": "command",
-        "command": "${env.COMSPEC}",
-        "args": [
-          "dir ${outDir}"
-        ]
-      },
-  ```
-  完整的生成任务应如下所示。  
-
-  ![任意的生成任务](./media/VSIDE_Code_Tasks_ArbTask.png)
-
-1. 保存项目。  
-
-1. 打开所选文件夹的上下文菜单。 应该可以在上下文菜单底部看到新的任意生成任务。  
-
-  ![任意生成任务命令](./media/VSIDE_Code_Tasks_ArbTask2.png)
-
-1. 通过选择新的“列出输出”命令来执行该任务。  
-
-### <a name="to-create-a-custom-build-task"></a>创建自定义生成任务
-
-在此过程中，我们将添加两个自定义生成任务，这两个任务使用 nMake 来生成和清除代码。  
-
-1. 在解决方案资源管理器中，选择项目文件，我们之后会将该文件指定为启动项。 在该文件的上下文（右键单击）菜单上，选择“配置任务”。  
-
-  ![自定义生成任务命令](./media/VSIDE_Code_Tasks_CustTask1.png)
-
-1. 将以下生成任务添加到 tasks.vs.json。 本示例中，我们将添加两个任务：一个任务名为“makefile-build”，该任务使用 nMake 命令来生成项目；另一个任务名为“makefile-clean”，该任务调用带有“clean”自变量的 nMake 命令。 应将这两个任务添加到现有的“任务”数组中。 （请注意，这些仅是生成任务的示例。 要使其生效，还需要在系统上安装包含 [nNake](/cpp/build/nmake-reference) 的工作负载。）
-
-  ```xml
-  {
-  "taskName": "makefile-build",
-  "appliesTo": "makefile",
-  "type": "command",
-  "contextType": "build",
-  "command": "nmake"
-  },
-  {
-  "taskName": "makefile-clean",
-  "appliesTo": "makefile",
-  "type": "command",
-  "contextType": "clean",
-  "command": "nmake",
-  "args": [
-    "clean"
-    ]
-  },
-  ```
-  完整的自定义生成任务应如下所示。  
-
-  ![自定义生成任务](./media/VSIDE_Code_Tasks_CustTask2.png)
-
-1. 保存项目。  
-
-1. 打开所选文件的上下文菜单。 新的自定义生成任务应该出现在上下文菜单的中间位置。  
-
-  ![自定义生成任务命令](./media/VSIDE_Code_Tasks_CustTask3.png)
-
-  > [!NOTE]
-  > 由于命令的 `contextType` 设置，命令显示在“配置任务”命令下；“build”和“clean”是生成命令，因此它们出现在上下文菜单中间位置的生成部分。  
-
-  将自定义生成命令与文件相关联后，可以将该文件指定为启动项。  
-
-1. 在文件的上下文菜单中，选择“设置为启动项”。  
-
-  ![自定义生成任务命令](./media/VSIDE_Code_Tasks_CustTask4.png)
-
-1. 在工具栏上，选择“开始”按钮旁边的下拉箭头。 启动项现在显示为一个选项。  
-
-  ![自定义生成任务命令](./media/VSIDE_Code_Tasks_CustTask5.png)
-
-现可通过选择“开始”按钮或者 F5 键来运行基本代码。 即使 Visual Studio 无法识别基本代码的生成工具，也可以在 Visual Studio 中编辑和调试基本代码。 生成任务的输出将显示在“输出”窗口中，而生成错误将显示在“错误列表”中。 tasks.vs.json 生成任务文件将 Visual Studio 内部开发循环与基本代码所使用的自定义生成工具紧密结合起来。  
-
-可以将自定义生成任务添加到单个文件，也可以将其添加到某个特定类型的所有文件。 例如，可以将 NuGet 包文件配置为具有“还原包”任务，也可以将所有源文件配置为具有静态分析任务，例如所有 .js 文件的 linter。  
-
-除了环境变量（例如 `$env.var`）或键外，Visual Studio 还支持 tasks.vs.json 根目录中的 VSCode `$variable` 替换。  
-
-## <a name="specify-build-output"></a>指定生成输出
-
-如果需要对项目进行编译，可以在 tasks.vs.json 文件中添加名为 `output` 的额外标记。 这是一个示例。  
-
-`"output": "${workspaceRoot}\\bin\\hellomake.exe"`
-
-通过指定输出位置，可向 Visual Studio 指示项目生成输出的位置。  
-
-## <a name="tasksvsjson-file-location"></a>Tasks.vs.json 文件位置
-
-默认情况下，tasks.vs.json 文件位于一个名为 `.vs` 的隐藏文件夹中。 若要在 Visual Studio 中查看隐藏文件夹，请在解决方案资源管理器工具栏上选择“显示所有文件”按钮。
-
-![任意生成任务命令](./media/VSIDE_Code_Tasks_FileLocation.png)
-
-tasks.vs.json 文件通常是隐藏状态，因为一般情况下大多数用户不希望在源控件中打开该文件。 但是如果要在源控件中打开该文件，请将其拖入项目的根目录，此处将显示该文件。  
-
-.vs 文件夹中可能存在其他 .json 文件，但唯一需要移动的文件是 tasks.vs.json 文件和 launch.vs.json 文件（如果存在）。 launch.vs.json 文件用于配置 Visual Studio 调试器，而 tasks.vs.json 文件用于配置 Visual Studio 中的生成。  
+![“开始”按钮上的项目](media/customize-start-button-project.png)
 
 ## <a name="see-also"></a>请参阅
 
-[在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)
+- [自定义生成和调试任务](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
+- [C++ 的打开文件夹项目](/cpp/ide/non-msbuild-projects)
+- [C++ 中的 CMake 项目](/cpp/ide/cmake-tools-for-visual-cpp)
+- [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)

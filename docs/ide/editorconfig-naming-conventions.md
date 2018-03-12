@@ -1,10 +1,9 @@
 ---
-title: "EditorConfig 的 .NET 命名约定 | Microsoft Docs"
+title: "EditorConfig 文件的 .NET 命名约定 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -13,14 +12,15 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 2719ecd60a68de795c51ec4363a9130e4da9019c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="naming-conventions-for-editorconfig"></a>EditorConfig 的命名约定
+# <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 适用的 .NET 命名约定
 
 命名约定与类、属性和方法等码位元素的命名有关。 例如，可以指定公共成员必须采用大写形式，或者异步方法必须以“Async”结尾。 可以通过在 [.editorconfig 文件](../ide/create-portable-custom-editor-options.md)中指定这些规则来加以实施。 命名规则冲突显示在“错误列表”中，或者作为建议显示在名称之下，具体取决于为规则选择的严重性。 不需要生成项目即可查看冲突。
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 01/10/2018
 - protected\_internal 或 protected_friend
 
 > [!NOTE]
-> 必须在命名约定中指定可访问性级别，否则可能会忽略命名约定。
+> 如果可访问性不适用于目标符号种类，请勿在命名约定中指定可访问性级别。 例如，参数就没有可访问性级别。 如果为参数命名约定指定可访问性级别，那么命名规则将无法正常运行。
 
 ### <a name="symbol-modifiers"></a>符号修饰符
 
@@ -187,5 +187,6 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 
 ## <a name="see-also"></a>请参阅
 
-[.NET 语言和格式设置约定](../ide/editorconfig-code-style-settings-reference.md)  
-[创建可移植的自定义编辑器选项](../ide/create-portable-custom-editor-options.md)
+- [.NET 语言和格式设置约定](../ide/editorconfig-code-style-settings-reference.md)
+- [创建可移植的自定义编辑器选项](../ide/create-portable-custom-editor-options.md)
+- [.NET 编译器平台的 .editorconfig 文件](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

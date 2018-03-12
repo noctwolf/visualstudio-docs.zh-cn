@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 1af9c5634770b08b7903033226f44630bdb0e133
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>从 Visual Studio 2010 升级编码的 UI 测试
 在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 中创建的包含编码 UI 测试的测试项目在 Visual Studio 2012 或更高版本中打开时会以无提示方式修复。 如果测试项目已签入源控件中，则会签出项目文件进行此修复。 修复后，这些包含编码 UI 测试的测试项目既可用于 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1，也可用于 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 01/09/2018
 -   Visual Studio Enterprise  
   
 > [!NOTE]
->  Visual Studio 包括多个测试项目类型。 如果创建新的编码 UI 测试，将在编码 UI 测试项目类型中创建。 有关详细信息，请参见 [从 Visual Studio 的早期版本升级测试](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。  
+> Visual Studio 包括多个测试项目类型。 如果创建新的编码 UI 测试，将在编码 UI 测试项目类型中创建。
   
 > [!WARNING]
 >  在[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 或与 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 并行安装的 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 中打开包含编码 UI 测试的 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]测试项目时，必须重新生成该测试项目。  
@@ -66,6 +67,5 @@ ms.lasthandoff: 01/09/2018
 ## <a name="see-also"></a>请参阅
 
 [移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
-[从 Visual Studio 的早期版本升级测试](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
 [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)  
 [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

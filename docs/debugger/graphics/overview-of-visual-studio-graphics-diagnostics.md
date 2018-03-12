@@ -4,23 +4,23 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ddd429d9-ac70-4ac4-9e69-299c6ea2df09
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0fdc6c58f791c06d5f9287400d00bbfce2564e3b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8fb52530cf5a068081ce3af3325675d2167c57a9
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断概述
-Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用中的呈现和性能问题的工具。 可对在 Windows PC 上、在 Windows 设备模拟器中或在远程 PC 或设备上本地运行的应用使用图形诊断。  
+Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用中的呈现和性能问题的工具。 可以对在 Windows 电脑上或在远程 PC 或设备上本地运行的应用使用图形诊断。  
   
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>使用图形诊断调试呈现问题  
  对于图形丰富的应用程序，调试其中的呈现问题并不如启动调试器并逐句通过某些代码的方式直接。 在每个帧中，将生成数十万个唯一像素，每个像素都是根据一组复杂的状态、数据、参数和代码生成的，其中，可能只有少量像素会展示出你尝试诊断的问题。 生成每个像素的代码在并行处理数百个像素的专用硬件上执行，这使问题更加复杂。 传统调试工具和技术难以在包含少量线程的代码中使用，在处理大量数据时较为低效。  
@@ -33,10 +33,7 @@ Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 和 Direct3D 12  
  Windows 10 引入*Direct3D 12*，这是与 Direct3D 10 和 Direct3D 11 差别很大。 这些差异使 DirectX 重新符合现代图形硬件要求，并充分发挥其最大潜力，但是它们也导致对 API 的较大更改，并使程序员在管理资源生存期和争用方面具有更大的责任。 尽管存在差异，Direct3D 12 的图形诊断保持与支持 Direct3D 11.2 的图形诊断的同等功能。
   
- Windows 10 还保持对以前版本的 Direct3D 及依赖于它的游戏和应用程序的支持。 Visual Studio 中的图形诊断继续支持 Direct3D 10 和 Direct3D 11，在 Windows 10 上以及在 Windows 8.1。  
-  
-### <a name="windows-81-and-direct3d-112"></a>Windows 8.1 和 Direct3D 11.2  
- 在 [!INCLUDE[win81](../includes/win81_md.md)] 中，DirectX 11.2 介绍了一些新功能，包括对在其运行时期间捕获图形信息的支持。 [!INCLUDE[win81](../includes/win81_md.md)]使用新的运行时基于捕获-称为*可靠捕获*-专用于所有版本的 DirectX 的[!INCLUDE[win81](../includes/win81_md.md)]支持。 可靠捕获还支持 Direct3D 11.2 的新功能。  
+ Windows 10 还保持对以前版本的 Direct3D 及依赖于它的游戏和应用程序的支持。 Visual Studio 中的图形诊断将继续支持 Direct3D 10 和 Direct3D 11，在 Windows 10 上。
   
 ### <a name="limited-direct2d-support"></a>有限的 Direct2D 支持  
  由于 Direct2D 是 Direct3D 为基础构建的用户模式 API，你可以使用图形诊断以帮助调试使用 Direct2D 的应用中的呈现问题。 不过，由于只记录基础 Direct3D 事件而非更高级别的 Direct2D 事件，Direct2D 事件不会显示在图形事件列表中。 此外，Direct2D 事件和生成的 Direct3D 事件之间的关系并非始终明确，因此使用图形诊断来调试使用 Direct2D 的应用中的呈现问题并不是直接方式。 但是，你仍可使用图形诊断来获取有关使用 Direct2D 的应用中低级别呈现问题的信息。  

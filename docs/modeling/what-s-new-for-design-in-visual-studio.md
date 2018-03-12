@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: article
 helpviewer_keywords:
 - what's new [VIsual Studio ALM], architecture and modeling
@@ -14,12 +13,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 94f00e808df433279128a0241ffd3ab376ebc5b3
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: c3fe70c36daf9d137e77acf75b9bd712ecf556c7
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="what39s-new-for-design-in-visual-studio"></a>什么 &#39; s 用于 Visual Studio 中设计的新功能
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 01/13/2018
 
 Visual Studio 有多个版本。 并非所有版本支持体系结构和建模工具。 下表显示每个工具的可用性。  
   
-|**功能**|**Enterprise**|**Professional**|**Community**|**速成版**|  
+|**功能**|**Enterprise**|**Professional**|**Community**|**Express**|  
 |-----------------|--------------------|----------------------|-------------------|-----------------|  
 |**代码图**|是|请参阅注释 (1)|-|-|  
 |**依赖项关系图**|是|请参阅注释 (2)|请参阅注释 (2)|-|  

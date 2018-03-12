@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - Web applications, accessibility
 - accessibility, Web applications
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 789eafd7bc7137026bb6c144615f1234f7288f29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6df23292ef3ae5016d2ddd48f0ced93e3a577a2f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="resources-for-designing-accessible-applications"></a>用于设计支持辅助功能的应用程序的资源
 使用以下链接可查找有关支持可访问设计的信息以及用于开发可访问 Windows 应用程序和网站的提示和示例。 可以在 [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/) 处联机查找有关辅助功能的常规信息。  
@@ -33,7 +35,7 @@ ms.lasthandoff: 12/22/2017
   
 -   **Microsoft .NET 语音技术** Microsoft.NET Speech SDK 是一组 Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] 控件、一个 Microsoft Internet Explorer 语音外接程序、示例应用程序和文档，使 Web 开发人员可以创建、调试和部署支持语音的 [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] 应用程序。 这些工具无缝集成到 Microsoft Visual Studio 中，从而使开发人员可以利用熟悉的开发环境。 有关详细信息，请访问 [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx)。  
   
--   **了解 SAMI 1.0** Microsoft 同步可访问媒体交换 (SAMI) 技术为开发人员提供了一种为 PC 多媒体的音频内容添加字幕的方法。 有关详细信息，请访问 [http://msdn.microsoft.com/en-us/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx)。  
+-   **了解 SAMI 1.0** Microsoft 同步可访问媒体交换 (SAMI) 技术为开发人员提供了一种为 PC 多媒体的音频内容添加字幕的方法。 有关详细信息，请参阅[了解 SAMI 1.0](http://msdn.microsoft.com/library/ms971327.aspx)。  
   
 ## <a name="windows-applications"></a>Windows 应用程序  
   
@@ -45,13 +47,9 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="web-sites"></a>网站  
   
--   [演练：使用图像控件、菜单控件以及 AutoPostBack 的辅助功能准则](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) 本主题提供用于在示例网页中包含可访问控件的分步说明以及一些针对 Web 的辅助功能设计提示。  
+-   [演练：使用图像控件、菜单控件以及 AutoPostBack 的辅助功能准则](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) 本主题提供用于在示例网页中包含可访问控件的分步说明以及一些针对 Web 的辅助功能设计提示。
   
--   **使网页更易于访问** 此技术文章列出了可访问的 HTML 3.2 元素以及可进行访问以便在网站开发中使用的元素。 有关详细信息，请访问 [http://msdn2.microsoft.com/en-us/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx)。  
-  
--   **使用 DHTML 创建可访问网页** 此技术文章列出了可访问的 HTML 4.0 元素以及可访问 Web 设计提示。 有关详细信息，请访问 [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx)。  
-  
--   **无法访问的网页的文本替代项** 此技术文章介绍如何使用 XML 和 XSLT 提供相同网页的多个视图（如纯文本版本）。 有关详细信息，请访问 [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx)。  
+-   **使用 DHTML 创建可访问网页** 此技术文章列出了可访问的 HTML 4.0 元素以及可访问 Web 设计提示。 有关详细信息，请访问 [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx)。
   
 ### <a name="third-party-resources"></a>第三方资源  
   

@@ -5,16 +5,18 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: javascript
+ms.technology:
+- javascript
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.WebClient.Help.SCRIPT5
+f1_keywords:
+- VS.WebClient.Help.SCRIPT5
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 8a512060-d744-47af-a83e-4ba42ea2c5b2
-caps.latest.revision: "2"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 9c097cd09712d19acf5a0e4999b5c7a47469f958
@@ -28,11 +30,11 @@ ms.lasthandoff: 10/27/2017
   
  例如，如果当前页是 https://employees.mycompany.com，则不能从以下 URL 访问数据：  
   
--   http://data.contoso.com，因为它使用 HTTP 而不 HTTPS。  
+-   http://data.contoso.com ，因为它使用 HTTP 而不 HTTPS。  
   
--   https://somedatasource.com，因为它是不同的域。  
+-   https://somedatasource.com ，因为它是不同的域。  
   
--   https://employees.mycompany.com:8888，因为它使用不同的端口。  
+-   https://employees.mycompany.com:8888 ，因为它使用不同的端口。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   

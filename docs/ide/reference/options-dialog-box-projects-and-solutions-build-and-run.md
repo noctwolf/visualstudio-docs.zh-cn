@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,23 +16,24 @@ helpviewer_keywords:
 - run actions
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0187b8a70fc012fc6d2564f77ea5a2b2ff7c20d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 88f3ec2d9e8c682511c87cbcf5a5690ae797d8c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>选项对话框，项目和解决方案，生成和运行
 
-在此对话框中，可以指定可同时生成的 Visual C++ 或 Visual C# 项目的最大数量、某些默认生成行为及一些生成日志设置。 要访问这些选项，请选择“工具 > 选项”，展开“项目和解决方案”，然后选择“生成和运行”。
+在此对话框中，能够指定可同时生成的 Visual C++ 或 C# 项目的最大数、某些默认生成行为及一些生成日志设置。 要访问这些选项，请选择“工具 > 选项”，展开“项目和解决方案”，然后选择“生成和运行”。
   
 **最大并行项目生成数**  
-指定可以同时生成的 Visual C++ 和 Visual C# 项目的最大数量。 若要优化生成过程，最大并行项目生成数自动设置为你的计算机的 CPU 数量。 最大数量为 32。  
+指定可以同时生成的 Visual C++ 和 C# 项目的最大数。 若要优化生成过程，最大并行项目生成数自动设置为你的计算机的 CPU 数量。 最大数量为 32。  
 
 **在运行时仅生成启动项目和依赖项**  
 当使用 F5 键，选择“调试 > 启动”菜单命令或“生成”菜单上的适用命令时，仅生成启动项目及其依赖项。 如果清楚明确的话，则会生成所有项目和依赖项。 

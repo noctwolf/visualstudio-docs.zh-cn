@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>通知和 for Visual Studio 的进度
 ##  <a name="BKMK_NotificationSystems"></a>通知系统  
@@ -101,14 +103,14 @@ ms.lasthandoff: 12/22/2017
   
  通知窗口不是当前可扩展的。  
   
- ![Visual Studio 通知窗口](../../extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "0901年 06_VSNotificationsWindow")  
+ ![Visual Studio Notifications window](../../extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "0901-06_VSNotificationsWindow")  
   
  **Visual Studio 通知工具窗口**  
   
 ####  <a name="BKMK_ErrorList"></a>错误列表  
  错误列表中的通知指示错误和警告的编译过程中发生和或生成过程中，并允许用户在该特定代码错误的代码中进行导航。  
   
- ![错误列表](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901年 08_ErrorList")  
+ ![Error list](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901-08_ErrorList")  
   
  **Visual Studio 中的错误列表**  
   
@@ -238,8 +240,6 @@ ms.lasthandoff: 12/22/2017
   
  ![在窗口内的信息栏](../../extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903年 06_InfoBarInWindow")  
   
- **代码分析窗口中的信息栏**  
-  
 ##### <a name="inline"></a>内联  
  内联进度指示可以由任何进度加载器类型表示。 通常的进度指示器配对使用消息传送，但这不是一项要求。  
   
@@ -292,7 +292,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="overview"></a>概述  
  信息栏为用户提供接近其点关注指示器，并使用共享的信息栏控件确保视觉外观和交互的一致性。  
   
- ![信息栏](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904年 01_Infobar")  
+ ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
   
  **Visual Studio 中的信息栏**  
   
@@ -522,6 +522,6 @@ public interface IVsInfoBarUIEvents
 #### <a name="watermarks"></a>水印  
  有时是整个控件或窗口处于错误状态。 在此情况下，使用水印以指示错误。  
   
- ![水印](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905年 07_Watermark")  
+ ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **水印字段验证**

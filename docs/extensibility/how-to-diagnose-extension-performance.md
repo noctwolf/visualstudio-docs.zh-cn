@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.workload: bertaygu
-ms.openlocfilehash: 1d1034cce8b2fced5af48a0a4bfa8620b56994e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- bertaygu
+ms.openlocfilehash: ac6044406c4fa065d1e5ed3dcaa8dd998f4232fb
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="measuring-extension-impact-in-startup"></a>测量扩展中启动的影响
 
@@ -30,6 +32,9 @@ ms.lasthandoff: 12/22/2017
 ![管理 Visual Studio 性能](media/manage-performance.png)
 
 本文档旨在帮助扩展开发人员描述如何计算扩展影响，如何它可以进行分析本地测试如果扩展中可能显示为性能影响扩展。
+
+> [!NOTE]
+> 本文档重点介绍在启动和解决方案加载的扩展的影响。 扩展也影响 Visual Studio 性能时它们会导致 UI 以变得不响应。 有关本主题的详细信息，请参阅[如何： 诊断 UI 将延迟引起扩展](how-to-diagnose-ui-delays-caused-by-extensions.md)。
 
 ## <a name="how-extensions-can-impact-startup"></a>如何扩展可能会影响启动
 

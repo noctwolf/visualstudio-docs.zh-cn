@@ -9,17 +9,18 @@ Description: Learn how to activate the technical support benefit included with y
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 39d140f83f43d6032119d4a7e84d6f1f091af707
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4fb6294d6d70e827bd69544fcc4f07cad72b7c5a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活 Visual Studio 订阅中的技术支持权益
 
-解决非生产环境中的中断修复问题。  （注意：必须激活权益，然后才能提交支持请求。）Visual Studio Enterprise 标准年度云订阅接收四个事件，但 Visual Studio Professional 标准年度云订阅接收两个事件。  
+解决非生产环境中的中断修复问题。  （必须激活权益，然后才能提交支持请求。）Visual Studio Enterprise 标准年度云订阅接收四个事件，但 Visual Studio Professional 标准年度云订阅接收两个事件。  
 
-**注意：**并非所有给定级别的订阅都符合接收支持事件的条件。  通过 FTE、NFR、MPN、MCT 和其他程序获得的订阅不会收到支持事件。  如果订阅不符合接收技术支持事件的条件，则可用权益中不会显示“技术支持”磁贴。 
+> [!NOTE]
+> 并非所有给定级别的订阅都符合接收支持事件的条件。  通过 FTE、NFR、MPN、MCT 和其他程序获得的订阅不会收到支持事件。  如果订阅不符合接收技术支持事件的条件，则可用权益中不会显示“技术支持”磁贴。 
 
    ![技术支持权益磁贴](_img\vs-tech-support\vs-tech-support-tile.png)
 
@@ -33,7 +34,8 @@ ms.lasthandoff: 12/01/2017
 
     ![技术支持权益查找订阅 ID](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
-**注意：**若要激活非英语的支持帐户，请从[此列表](http://support.microsoft.com/activatesupport)选择所在国家/地区。   
+> [!NOTE]
+> 若要激活非英语的支持帐户，请从[此列表](http://support.microsoft.com/activatesupport)选择所在国家/地区。   
 
 # <a name="how-to-submit-an-incident"></a>如何提交事件
 合约 ID 和访问 ID 设置完成后，如果需要支持，可以拨打所在国家/地区的技术支持电话，[联机](http://support.microsoft.com/oas/)提交支持事件，或通过 Azure 门户提交事件。  如果希望通过电话获得支持，仍然可以联机提交事件，Microsoft 支持部门专业人员之后会给你回电。
@@ -85,7 +87,7 @@ ms.lasthandoff: 12/01/2017
 1.  请访问 https://portal.azure.com 并登录
 2.  从左侧导航中，单击“帮助 + 支持”
 3.  在“支持”下单击“链接支持合约”
-4.  输入在上面 #1 中提供的“访问 ID”和“联系人 ID”。
+4.  输入在上面 #1 中提供的“访问 ID”和“合同 ID”。
 完成这些步骤后，便能够选择与 Visual Studio 订阅权益关联的支持计划。  （计划名称可能包含“MSDN”。）
 
  

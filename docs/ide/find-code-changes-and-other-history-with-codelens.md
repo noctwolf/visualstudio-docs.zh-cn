@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b454893c2d68b23d130d6ff38be493d988dfb1fe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a1123d1c557f6e7f01eb98e668b4f13785ee6893
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 
@@ -40,9 +42,9 @@ ms.lasthandoff: 12/22/2017
 
 -  Visual Studio Enterprise 或 Visual Studio Professional
 
--  Visual C# .NET 或 Visual Basic .NET 代码
+-  C# 或 Visual Basic 代码
 
-选择“引用”  指示器（“Alt + 2”）。 如果看到“0 个引用” ，则没有来自 Visual C# 或 Visual Basic 代码的引用。 这不包括来自其他项（如 XAML 和 ASPX 文件）的引用。
+选择“引用”指示器（“Alt + 2”）。 如果看到 0 个引用，则没有来自 C# 或 Visual Basic 代码的引用。 这不包括来自其他项（如 XAML 和 ASPX 文件）的引用。
 
 ![CodeLens - 选择引用指示器](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
 
@@ -66,9 +68,9 @@ ms.lasthandoff: 12/22/2017
 
 - Team Foundation Server 2013 或更高版本、Visual Studio Team Services 或 Git
 
-- [Lync 2010 或更高版本、或 Skype for Business](http://technet.microsoft.com/en-us/lync)，可从代码编辑器联系你的团队  
+- [Lync 2010 或更高版本、或 Skype for Business](https://technet.microsoft.com/office/dn788773)，可从代码编辑器联系你的团队
 
-对于随 Team Foundation 版本控制 (TFVC) 或 Git 一起存储的 Visual C#.NET 或 Visual Basic.NET 代码，你可以获取类和方法级别的 CodeLens 详细信息（*代码元素级别* 指示器）。 如果你的 Git 存储库托管在 TfGit 中，则还可以获取指向 TFS 工作项的链接。  
+对于随 Team Foundation 版本控制 (TFVC) 或 Git 一起存储的 C# 或 Visual Basic 代码，你可以获取类和方法级别上的 CodeLens 详细信息（代码元素级别指示器）。 如果你的 Git 存储库托管在 TfGit 中，则还可以获取指向 TFS 工作项的链接。  
 
 ![代码元素 - 级别指示器](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
 
@@ -86,7 +88,7 @@ ms.lasthandoff: 12/22/2017
 
 ![CodeLens：获取 TFVC 中代码的更改历史记录](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
 
-默认时间段为最近 12 个月。 如果你的代码存储在 Team Foundation Server 中，则可以通过运行具有 [CodeIndex 命令](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) 和 [/indexHistoryPeriod](../ide/codeindex-command.md) 标志的 **TFSConfig 命令** 来对此进行更改。  
+默认时间段为最近 12 个月。 如果你的代码存储在 Team Foundation Server 中，则可以通过运行具有 [CodeIndex 命令](/vsts/tfs-server/command-line/tfsconfig-cmd) 和 [/indexHistoryPeriod](../ide/codeindex-command.md) 标志的 **TFSConfig 命令** 来对此进行更改。
 
 若要查看所有更改（包括一年前的更改）的详细历史记录，选择 **“显示所有文件更改”**。  
 
@@ -193,7 +195,7 @@ ms.lasthandoff: 12/22/2017
 
 -   Visual Studio Enterprise 或 Visual Studio Professional  
   
--   Visual C# .NET 或 Visual Basic .NET 代码  
+-   C# 或 Visual Basic 代码  
   
 -   一个 [单元测试项目](../test/unit-test-your-code.md) ，它具有针对应用程序代码的单元测试  
   
@@ -233,15 +235,15 @@ ms.lasthandoff: 12/22/2017
   
 ###  <a name="NoIndicators"></a>问：CodeLens 位于何处？
 
-**答：** CodeLens 出现在方法、类、索引器和属性级别的 Visual C#.NET 和 Visual Basic.NET 代码中。 对于所有其他文件类型，CodeLens 出现在文件级别。
+答：CodeLens 出现在方法、类、索引器和属性级别的 C# 和 Visual Basic 代码中。 对于所有其他文件类型，CodeLens 出现在文件级别。
 
 - 确保 CodeLens 开启。 请依次转到“工具”、“选项”、“文本编辑器”、“所有语言”和“CodeLens”。  
-  
-- 如果代码存储在 TFS 中，请确保使用 [CodeIndex 命令](../ide/codeindex-command.md) 和 [TFS Config 命令](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)打开代码索引。  
 
-- 仅当工作项已链接到代码并且你有权打开链接的工作项时，才显示与 TFS 相关的指示器。 [确认你具有团队成员权限。](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+- 如果代码存储在 TFS 中，请确保使用 [CodeIndex 命令](../ide/codeindex-command.md) 和 [TFS Config 命令](/vsts/tfs-server/command-line/tfsconfig-cmd)打开代码索引。
 
-- 当应用程序代码没有单元测试时，单元测试指示器不显示。 测试状态指示器自动显示在测试项目中。 如果你知道你的应用程序代码具有单元测试，但未显示任何测试指示器，请尝试生成解决方案 (**Ctrl + Shift + B**)。  
+- 仅当工作项已链接到代码并且你有权打开链接的工作项时，才显示与 TFS 相关的指示器。 [确认你具有团队成员权限](/vsts/work/scale/multiple-teams)。
+
+- 当应用程序代码没有单元测试时，单元测试指示器不显示。 测试状态指示器自动显示在测试项目中。 如果你知道你的应用程序代码具有单元测试，但未显示任何测试指示器，请尝试生成解决方案 (**Ctrl + Shift + B**)。
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>问：为什么没有看见提交的工作项详情？
 
@@ -263,19 +265,19 @@ CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所�
 
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>问：如何更改 CodeLens 的字体和颜色？
 
-**答：** 转到 **“工具”**、 **“选项”**、 **“环境”**和 **“字体和颜色”**。  
+**答：** 转到“工具”、“选项”、“环境”和“字体和颜色”。  
 
 ![CodeLens - 更改字体和颜色设置](../ide/media/codelensoptionsfontscolorssettings.png "CodeLensOptionsFontsColorsSettings")  
 
 使用键盘：
 
-1.  按 **Alt + T + O** 打开 **“选项”** 框。  
+1.  按 **Alt + T + O** 打开“选项”框。  
 
-2.  按向上键  或向下键  转到 **“环境”** 节点，然后按向左键  展开该节点。  
+2.  按向上键或向下键转到“环境”节点，然后按向左键展开该节点。  
 
-3.  按向下键  转到 **“字体和颜色”**。  
+3.  按向下键转到“字体和颜色”。  
 
-4.  按 **Tab** 转到 **“显示其设置”** 列表，然后按向下键  选择 **“CodeLens”**。  
+4.  按 **Tab** 转到“显示其设置”列表，然后按向下键选择“CodeLens”。  
 
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>问：我是否能移动 CodeLens 提醒显示？
 
@@ -301,11 +303,11 @@ CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所�
 
 ###  <a name="LocalVersion"></a>问：什么是“本地版本”？
 
-**答：**“本地版本”箭头指向本地版本的此文件中的最新变更集。 当服务器具有最新的变更集时，它们显示在 **“本地版本”** 箭头的上方或下方，具体取决于排列变更集的顺序。  
+**答：**“本地版本”箭头指向本地版本的此文件中的最新变更集。 当服务器具有最新的变更集时，它们显示在“本地版本”箭头的上方或下方，具体取决于排列变更集的顺序。
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>问：是否可以管理 CodeLens 如何处理代码以显示历史记录和链接的项？
 
-**答：** 可以，如果代码位于 TFS 中，请使用 [CodeIndex 命令](../ide/codeindex-command.md) 和 [TFS Config 命令](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)。
+**答：** 可以，如果代码位于 TFS 中，请使用 [CodeIndex 命令](../ide/codeindex-command.md) 和 [TFS Config 命令](/vsts/tfs-server/command-line/tfsconfig-cmd)。
 
 ## <a name="see-also"></a>请参阅
 

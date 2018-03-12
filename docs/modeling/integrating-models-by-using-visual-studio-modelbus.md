@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e590b0b0451864c69d548bb643ed4e915f08ad96
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 集成模型
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus 提供用于创建模型之间以及从其他工具的链接到模型的方法。 例如，你无法将链接域特定语言 (DSL) 模型和 UML 模型。 可以创建一组集成 DSL。  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 提供用于创建模型之间以及从其他工具的链接到模型的方法。 例如，你无法将链接域特定语言 (DSL) 模型和 UML 模型。 可以创建一组集成 DSL。  
   
  ModelBus 允许你创建对模型或模型中特定元素的唯一引用。 此引用可存储在该模型外部，例如另一个模型的元素中。 在随后的场合中，当工具想要获取对元素的访问权限时，模型总线基础结构将加载相应的模型并返回元素。 如果需要，可以向用户显示该模型。 如果不能在其以前的位置中访问该文件，则 ModelBus 将要求用户查找该文件。 如果用户找到该文件，则 ModelBus 将修复所有对该文件的引用。  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 01/13/2018
  文件夹 `ModelBusAdapters\bin\*` 包含由 `Dsl` 项目和 `ModelBusAdapters` 项目生成的程序集。 若要从另一个 DSL 引用此 DSL，应导入这些程序集。  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>确保元素可被引用  
- 默认情况下，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 适配器使用元素的 GUID 来标识它。 因此这些标识符必须保留在模型文件中。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 适配器使用的元素的 guid 来标识它，默认情况下。 因此这些标识符必须保留在模型文件中。  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>确保保留元素 ID  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 01/13/2018
 3.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例的调试项目中，添加作为每个 DSL 的实例的文件。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 只能解析对这些模型的引用，它们是同一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中的项。 例如，你无法创建对位于文件系统另一部分中的模型文件的引用。  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 只能解析对模型中相同的项的引用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案。 例如，你无法创建对位于文件系统另一部分中的模型文件的引用。  
   
 4.  在公开的 DSL 的实例中创建一些元素和链接，并将其保存。  
   

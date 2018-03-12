@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, validating
@@ -21,12 +20,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 484afcd70717162719e9eaf8ace294cb1f71cbcd
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用依赖项关系图验证代码
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 01/22/2018
   
 -   Team Foundation Build 服务器上的 Visual Studio，用于使用 Team Foundation Build 自动验证代码  
   
--   具有使用依赖项关系图的建模项目的解决方案。 此依赖项关系图必须链接到你想要验证的 Visual C#.NET 或 Visual Basic.NET 项目中的项。 请参阅[在代码中创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)。  
+-   具有使用依赖项关系图的建模项目的解决方案。 此依赖项关系图必须链接到你想要验证的 C# 或 Visual Basic 项目中的项。 请参阅[在代码中创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -120,7 +121,7 @@ ms.lasthandoff: 01/22/2018
 2.  若要查看每个错误的根源，请双击中的错误**错误列表**窗口。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可能会显示代码映射，而不是显示错误的根源。 代码不依赖项关系图中，由指定的程序集具有依赖关系或代码缺少依赖项关系图指定的依赖项时，将发生这种情况。 评审代码图或代码，以确定此依赖关系是否应该存在。 有关代码图的详细信息，请参阅[映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)。  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可能会显示代码图而不是错误的源。 代码不依赖项关系图中，由指定的程序集具有依赖关系或代码缺少依赖项关系图指定的依赖项时，将发生这种情况。 评审代码图或代码，以确定此依赖关系是否应该存在。 有关代码图的详细信息，请参阅[映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)。  
   
 3.  若要管理错误，请参阅[管理验证错误](#ManageErrors)。  
   

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,28 +13,28 @@ helpviewer_keywords:
 - editors, text viewing
 - Code Editor, word wrap
 ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e813e51511b88397f0accc637e85d9e546b48c47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 75a82b2c3e3e251dbd53ae8d2fc67edabb33f830
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>如何：在编辑器中管理自动换行
-可以设置和清除“自动换行”选项。 如果设置了此选项，较长行中超出代码编辑器窗口当前宽度的部分将在下一行显示。 如果清除了此选项，例如，为方便使用行号，则可以向右滚动查看较长行的末尾。  
-  
- 有关详细信息，请参阅[如何：设置常规编辑器选项](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)。  
-  
+
+可以设置和清除“自动换行”选项。 如果设置了此选项，较长行中超出代码编辑器窗口当前宽度的部分将在下一行显示。 如果清除了此选项，例如，为方便使用行号，则可以向右滚动查看较长行的末尾。
+
 > [!NOTE]
->  显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。  
-  
-## <a name="procedure"></a>过程  
-  
-#### <a name="to-set-word-wrap-preferences"></a>设置换行首选项  
+> 显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
+
+## <a name="procedure"></a>过程
+
+### <a name="to-set-word-wrap-preferences"></a>设置换行首选项
   
 1.  在“工具”菜单上选择“选项”。  
   
@@ -52,7 +53,8 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  这些提醒箭头不会添加到代码中：它们仅用于显示。  
   
-## <a name="see-also"></a>请参阅  
- [自定义编辑器](../../ide/customizing-the-editor.md)   
- [“选项”对话框 ->“文本编辑器”](../../ide/reference/text-editor-options-dialog-box.md)   
- [编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)
+## <a name="see-also"></a>请参阅
+
+[自定义编辑器](../../ide/customizing-the-editor.md)  
+[“选项”对话框 ->“文本编辑器”](../../ide/reference/text-editor-options-dialog-box.md)  
+[编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)

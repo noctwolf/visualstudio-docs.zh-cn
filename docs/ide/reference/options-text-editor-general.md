@@ -1,6 +1,5 @@
 ---
 title: "“选项”->“文本编辑器”->“常规”| Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -17,14 +16,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
 - VS.ToolsOptionsPages.Text_Editor.CSS
 - VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
-- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.General
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
 - VS.ToolsOptionsPages.Text_Editor.CSharp.General
 - VS.ToolsOptionsPages.Text_Editor.All_Languages
 - VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- vs.toolsoptionspages.text_editor.visual_jsharp
 - VS.ToolsOptionsPages.Text_Editor.F#.Tabs
 - VS.ToolsOptionsPages.Text_Editor.F#
 - VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
@@ -49,16 +46,16 @@ helpviewer_keywords:
 - Text Editor [Visual Studio]
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 55c4678954a274b99c0bdeadb250ec3c602d3b20
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b3ccc9628b5757f1ab4533b084736602274d8c92
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="options-text-editor-general"></a>选项，文本编辑器，常规
 使用此对话框可以更改 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 代码和文本编辑器的全局设置。 若要显示此对话框，请在“工具”菜单上单击“选项”，展开“文本编辑器”文件夹，然后单击“常规”。  

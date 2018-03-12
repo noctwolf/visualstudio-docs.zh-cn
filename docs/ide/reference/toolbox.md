@@ -1,55 +1,77 @@
 ---
-title: "工具箱 | Microsoft Docs"
+title: "Visual Studio 中的“工具箱”窗口 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.toolbox.general
 - vs.toolbox
 helpviewer_keywords:
-- Toolbox
-- Toolbox, adding controls
-- Toolbox, moving items
-ms.assetid: b754dad3-1f32-464f-8b9f-065e17e0bc22
-caps.latest.revision: "34"
+- Toolbox [Visual Studio]
+- custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dee9f1379dd7cd4c1d134714a35fc91d74f9f128
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 50c9cc96d501eb6d7d10ab31f48600eb65eb57a7
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="toolbox"></a>工具箱
-“工具箱”显示控件和可添加到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 项目的其他项的图标。 若要打开“工具箱”，请单击“视图”菜单上的“工具箱”。 可停靠“工具箱”，也可以将其固定在打开位置或将其设置为“自动隐藏”。  
-  
- 可将“工具箱”图标拖到设计视图或粘到代码编辑器中。 以上任一操作都将添加基本代码，以在活动的项目文件中创建“工具箱”项的一个实例。  
-  
- “工具箱”仅显示与正在使用的文件类型相对应的项。 你可以在工具箱中进行搜索，以进一步筛选显示的项。 如果你的项目需要客户端配置文件不支持的控件，则可以通过编辑项目属性将你的项目设置为面向整个框架。  
-  
+
+“工具箱”窗口显示可以添加到 Visual Studio 项目的控件。 若要打开“工具箱”，请选择“视图”菜单上的“工具箱”。
+
+![工具箱窗口](media/toolbox.png)
+
+还可以将不同的控件拖到和放置到你使用的设计器的图面上，然后调整控件的大小并将它们定位。
+
+工具箱与设计器视图（如 XAML 文件的设计器视图）一起显示。 工具箱仅显示可在当前设计器中使用的控件。 若要进一步筛选所显示的项，可以搜索工具箱。
+
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。  
-  
-## <a name="help-on-toolbox-tabs"></a>“工具箱”选项卡上的帮助  
- 以下文档提供有关特定“工具箱”选项卡的详细信息。  
-  
--   [“工具箱”->“数据”选项卡](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
-  
--   [“工具箱”->“组件”选项卡](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
-  
--   [“工具箱”->“HTML”选项卡](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
-  
--   [“工具箱”->“数据”选项卡](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
-  
--   [“工具箱”->“组件”选项卡](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
-  
--   [“工具箱”->“HTML”选项卡](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
-  
-## <a name="see-also"></a>请参阅  
- [使用工具箱](../../ide/using-the-toolbox.md)
+> 对于一些项目类型，工具箱可能不会显示任何项。
+
+项目定目标到的 .NET Framework 版本也会影响工具箱中显示的控件集。 在项目的属性页中，可以将项目设置为定目标到不同版本的 .NET Framework。 在“解决方案资源管理器”中选择项目节点，再在菜单栏上依次选择“项目” > “\<项目\> 属性”。 在“应用程序”选项卡上，使用“目标框架”下拉列表。
+
+## <a name="managing-the-toolbox-window-and-its-controls"></a>管理“工具箱”窗口及其控件
+
+默认情况下，工具箱折叠在 Visual Studio IDE 左侧，并在光标移至其上方时显示。 可固定工具箱（通过单击工具栏上的“固定”图标），这样它就可以在光标移动时仍一直处于打开状态。 也可以取消停靠“工具箱”窗口，并将它拖到屏幕上的任何位置。 若要停靠、取消停靠和隐藏工具箱，可以右键单击它的工具栏，并选择其中一个选项。
+
+若要重新排列“工具箱”选项卡中的项，或添加自定义选项卡和项，可以使用上下文菜单中的下列命令：
+
+- 重命名项 - 重命名所选的项。
+
+- 显示所有 - 显示所有可能的控件（不只是适用于当前设计器的控件）。
+
+- 列表视图 - 显示垂直列表中的控件。 如果未选中，则这些控件水平显示。
+
+- 选择项 - 打开“选择工具箱项”对话框即可指定“工具箱”中显示的项。 可以通过选中或清除复选框显示或隐藏项。
+
+- 按字母顺序对项排序 - 按名称对项排序。
+
+- **重置工具栏** - 还原默认“工具箱”设置和项。
+
+- **添加选项卡** - 添加新的“工具箱”选项卡。
+
+- 上移 - 将所选项上移。
+
+- 下移 - 将所选项下移。
+
+## <a name="creating-and-distributing-custom-toolbox-controls"></a>创建和分发自定义“工具箱”控件
+
+可以从基于 [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) 或 [Windows 窗体](../../extensibility/creating-a-windows-forms-toolbox-control.md)的项目模板入手，创建自定义“工具箱”控件。 然后，可以使用[“工具箱”控件安装程序](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)，将自定义控件分发给团队成员或发布到网上。
+
+## <a name="help-on-toolbox-tabs"></a>“工具箱”选项卡方面的帮助
+
+下列主题详细介绍了部分可用“工具箱”选项卡。
+
+- [“工具箱”->“数据”选项卡](../../ide/reference/toolbox-data-tab.md)
+
+- [“工具箱”->“组件”选项卡](../../ide/reference/toolbox-components-tab.md)
+
+- [“工具箱”->“HTML”选项卡](../../ide/reference/toolbox-html-tab.md)

@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fdbed997737b772b22d88b0542d212214e2b808f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
 中的文本模板[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供生成任何类型的文本的有效方法。 文本模板可用于在你的应用程序的一部分运行时和设计时生成你的项目代码的一些生成文本。 本主题总结了将最常要求"如何实现...？" 问题。  
@@ -23,7 +24,7 @@ ms.lasthandoff: 01/13/2018
   
  文本模板的常规介绍，阅读[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。  
   
-## <a name="how-to-"></a>如何。。。  
+## <a name="how-to-"></a>如何 ...  
   
 ### <a name="generate-part-of-my-application-code"></a>生成我的应用程序代码的一部分  
  我有一种配置或*模型*文件或数据库中。 我的代码的一个或多个部件取决于该模型。  

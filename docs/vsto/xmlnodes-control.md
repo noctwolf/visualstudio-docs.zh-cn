@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1a3759070d406e721a12e01950e0e99cea40d1fc
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -33,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Visual Studio 创建的 XML 节点集合后，可以直接而无需遍历 Word 对象模型编程控件。 <xref:Microsoft.Office.Tools.Word.XMLNodes>可以仅通过从文档中移除的元素映射中删除控件。  
   
 > [!NOTE]  
->  如果访问的子元素<xref:Microsoft.Office.Tools.Word.XMLNodes>通过控制<xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A>属性，它返回<xref:Microsoft.Office.Interop.Word.XMLNode>对象而不是<xref:Microsoft.Office.Tools.Word.XMLNode>控件。 有关更多信息，请参见 [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
+>  如果访问的子元素<xref:Microsoft.Office.Tools.Word.XMLNodes>通过控制<xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A>属性，它返回<xref:Microsoft.Office.Interop.Word.XMLNode>对象而不是<xref:Microsoft.Office.Tools.Word.XMLNode>控件。 有关更多信息，请参见 [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
   
 ## <a name="binding-data-to-the-control"></a>将数据绑定到控件  
  <xref:Microsoft.Office.Tools.Word.XMLNodes>控件不支持数据绑定。 这是因为<xref:Microsoft.Office.Tools.Word.XMLNodes>控件不具有复杂数据绑定功能，，简单数据绑定不能表示重复数据。  

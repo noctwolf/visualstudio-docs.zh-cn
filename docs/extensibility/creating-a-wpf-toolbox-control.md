@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0bc83d29eb076b70be5c9192acdbe39e301a6f16
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- vssdk
+ms.openlocfilehash: c1a8338f0ebd964e5d039ffa8dff000a441523f8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>创建 WPF 工具箱控件
 (Windows Presentation Framework) WPF 工具箱控件模板允许您创建自动添加到的 WPF 控件**工具箱**安装扩展后。 本主题演示如何使用模板创建**工具箱**可以分发给其他用户控件。  
@@ -61,7 +63,7 @@ ms.lasthandoff: 01/13/2018
   
 1.  在代码视图中打开 MyToolboxControl.xaml.cs。  
   
-2.  查找 MyToolboxControl 类并将它重命名为 TestControl。 (若要执行此操作的最快方法是重命名类，然后选择**重命名**从上下文菜单并完成步骤。 (有关详细信息**重命名**命令，请参阅[重命名重构 (C#)](../ide/reference/rename-csharp.md)。)
+2.  查找 MyToolboxControl 类并将它重命名为 TestControl。 (若要执行此操作的最快方法是重命名类，然后选择**重命名**从上下文菜单并完成步骤。 (有关详细信息**重命名**命令，请参阅[重命名重构 (C#)](../ide/reference/rename.md)。)
   
 3.  转到`ProvideToolboxControl`属性和更改的第一个参数的值**测试**。 这是将包含在控件组的名称**工具箱**。  
   

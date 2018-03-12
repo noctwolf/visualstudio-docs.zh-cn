@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-ms.devlang: python
+dev_langs:
+- python
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-dev_langs: python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 756419ce7390ba727bc5847d95c86399838d972a
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>快速入门：使用 Visual Studio 创建第一个 Python Web 应用
 
@@ -70,7 +71,7 @@ Python 中的 Web 应用几乎总是使用众多可用 Python 库中的一个来
 
 有关 Falcon 的详细信息，请访问 [falconframework.org](https://falconframework.org/)。
 
-请注意，开发人员通常会创建一个“虚拟环境”用于安装特定项目的库，而不是在全局环境中安装库。 Visual Studio 中的许多 Python 项目模板都包含 `requirements.txt` 文件，该文件列出了模板所依赖的库。 从其中一个模板创建项目会触发创建用于安装库的虚拟环境。 有关详细信息，请参阅 [Python 环境 - 虚拟环境](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments)。
+请注意，开发人员通常会创建一个“虚拟环境”用于安装特定项目的库，而不是在全局环境中安装库。 Visual Studio 中的许多 Python 项目模板都包含 `requirements.txt` 文件，该文件列出了模板所依赖的库。 从其中一个模板创建项目会触发创建用于安装库的虚拟环境。 有关详细信息，请参阅[使用虚拟环境](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
 
 ## <a name="add-a-code-file"></a>添加代码文件
 
@@ -146,6 +147,6 @@ Python 中的 Web 应用几乎总是使用众多可用 Python 库中的一个来
 > [!div class="nextstepaction"]
 > [教程：Visual Studio 中的 Python 入门](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)。
 
-- 了解 [Visual Studio 中的 Python Web 应用模板](../python/template-web.md)
-- 了解 [Python 调试](../python/debugging.md)
+- 了解 [Visual Studio 中的 Python Web 应用模板](../python/python-web-application-project-templates.md)
+- 了解 [Python 调试](../python/debugging-python-in-visual-studio.md)
 - 详细了解 [Visual Studio IDE](../ide/visual-studio-ide.md)

@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: '@if_JavaScriptKeyword'
+f1_keywords:
+- '@if_JavaScriptKeyword'
 dev_langs:
 - JavaScript
 - TypeScript
@@ -20,7 +22,7 @@ helpviewer_keywords:
 - else statement
 - '@if statement'
 ms.assetid: ff11b29d-c06a-4276-b11d-db73e2da98ac
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -76,7 +78,7 @@ ms.lasthandoff: 10/27/2017
  当编写用于网页的脚本时，始终将条件编译代码添加到注释中。 这样，不支持条件编译的主机就可以将其忽略。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何使用 **@if..。@elif..。@else...@end** 语句。  
+ 下面的示例演示如何使用**@if...@elif...@else...@end**语句。  
   
 ```JavaScript  
 /*@cc_on @*/  

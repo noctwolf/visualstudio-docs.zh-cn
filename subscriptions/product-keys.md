@@ -1,5 +1,5 @@
 ---
-title: "使用产品密钥"
+title: "使用产品密钥 | Microsoft 文档"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,13 +9,14 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 6d0da452a205042cee2b2c0b41990da50b303b3f
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 订阅中的产品密钥
+
 ## <a name="product-keys-overview"></a>产品密钥概述
 Visual Studio 订阅允许访问一系列 Microsoft 产品来设计、开发、测试和演示应用程序。 其中一些产品在安装过程中需要产品密钥，一些产品需要激活。
 
@@ -45,7 +46,7 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 研究表明，大多数订阅者的订阅中所含产品密钥的数量足以满足他们的需求。 如果需要其他密钥，可通过 Visual Studio 订阅[客户服务](https://www.visualstudio.com/subscriptions/support/)提交请求，我们将根据具体情况考虑是否批准你的请求。
 
 ## <a name="locating-and-claiming-product-keys"></a>查找并索取产品密钥
-必须登录你的 Visual Studio 订阅才能查看产品密钥。 可在如下所示的“[下载](https://my.visualstudio.com/downloads)”页中，选择某一特定产品的蓝色“获取密钥”链接来查找单个产品密钥。  所有密钥都可在“[产品密钥](https://my.visualstudio.com/productkeys)”页查找到。 如果一个产品有多个密钥，会在下载项的“注释”列中显示注释，帮助你确定应使用哪个密钥。
+必须登录你的 Visual Studio 订阅才能查看产品密钥。 可在如下所示的“[下载](https://my.visualstudio.com/downloads)”页中，选择某一特定产品的蓝色“获取密钥”链接来查找单个产品密钥。  所有密钥都可在“[产品密钥](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)”页查找到。 如果一个产品有多个密钥，会在下载项的“注释”列中显示注释，帮助你确定应使用哪个密钥。
 
 ![从“下载”页获取密钥](_img/product-keys/download-get-key.png)
 
@@ -79,7 +80,7 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 
 索取产品密钥：
 1.  登录到你的 Visual Studio 订阅。  必须登录才能下载产品或索取产品密码。 
-2.  单击“[产品密钥](https://my.visualstudio.com/productkeys)”选项卡。
+2.  单击“[产品密钥](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)”选项卡。
 3.  产品密钥根据产品名称按字母顺序列出。  可以向下滚动到所需产品的名称，也可以使用页面顶部的搜索栏进行搜索。  
 ![搜索产品密钥](_img\product-keys\visio-product-key-cropped.png)
 
@@ -89,9 +90,10 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 ### <a name="exporting-your-claimed-keys"></a>导出已索取的密钥
 可以导出所有已索取的密钥以及众多自动标记为“已索取”的静态密钥和其他密钥的列表。  
 
-重要提示：如果订阅到期，则无法索取新的密钥或导出已索取的密钥。 
+> [!IMPORTANT] 
+> 如果订阅到期，则无法索取新的密钥或导出已索取的密钥。** 
 
-若要导出密钥，只需单击“产品密钥”页最右侧的“导出所有密钥”按钮。  此时将创建名为 KeysExport.xml 的 .xml 文件，可选择打开或保存该文件。  你需要使用能够处理 .xml 文件的应用程序来打开此文件。  例如，可以将该文件作为 Excel 中的只读工作簿打开。  
+若要导出密钥，只需单击“产品密钥”页最右侧的“导出所有密钥”链接。  此时将创建名为 KeysExport.xml 的 .xml 文件，可选择打开或保存该文件。  你需要使用能够处理 .xml 文件的应用程序来打开此文件。  例如，可以将该文件作为 Excel 中的只读工作簿打开。  
 
 ## <a name="internet-demonstrations-via-terminal-services"></a>通过终端服务访问 Internet 演示
 凭借 Visual Studio 订阅，可允许最终用户使用终端服务（Windows Server 2003 或 Windows Server 2008）或远程桌面服务（Windows Server 2008 R2 或更高版本）访问你的程序的 Internet 演示。 使用这种方式，多达 200 位匿名用户可同时访问你的演示。 你的演示不得使用生产数据。 Visual Studio 订阅者可以向最终用户演示其应用程序。 在软件是通过 Visual Studio 订阅授权的情况下，未购买 Visual Studio 订阅的最终用户只能通过使用终端服务 (TS) 或远程桌面服务 (RDS) 的此 Internet 与演示应用程序交互。
@@ -99,8 +101,9 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 除了开发/测试权限，Visual Studio 订阅者可以根据需要使用许多 RDS 或 TS 连接。
 
 ### <a name="enabling-rds-access"></a>启用 RDS 访问 
-Visual Studio 订阅者可以输入[订阅门户](https://my.visualstudio.com)的“[产品密钥](https://my.visualstudio.com/productkeys)”选项卡中的产品密钥，增加可通过 RDS 访问 Windows Server 的用户数量。 若要获得产品密钥，请连接到“产品密钥”页，然后向下滚动到正在运行的 Windows Server 版本。 找到“Windows Server <版本> R2 远程桌面服务 <用户或设备> 连接”，然后单击“索取密钥”链接。 例如，如果是在 Windows Server 2012 R2 上使用 RDS，且部署使用用户 CAL，请选择“Windows Server 2012 远程桌面服务用户连接(50)”。
+Visual Studio 订阅者可以输入[订阅门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)的“[产品密钥](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)”选项卡中的产品密钥，增加可通过 RDS 访问 Windows Server 的用户数量。 若要获得产品密钥，请连接到“产品密钥”页，然后向下滚动到正在运行的 Windows Server 版本。 找到“Windows Server <版本> R2 远程桌面服务 <用户或设备> 连接”，然后单击“索取密钥”链接。 例如，如果是在 Windows Server 2012 R2 上使用 RDS，且部署使用用户 CAL，请选择“Windows Server 2012 远程桌面服务用户连接(50)”。
 每种类型的 5 个密钥都支持 Windows Server 2008 R2，每个密钥支持 20 个连接。 对于 Windows Server 2012 R2，每种类型提供 4 个密钥，每个密钥支持 50 个连接。 
+
 #### <a name="to-enable-additional-connections-in-windows-server"></a>在 Windows Server 中启用其他连接： 
 1.  打开服务器管理器。
 2.  打开左侧导航窗格中的“服务器”列表。
@@ -113,4 +116,4 @@ Visual Studio 订阅者可以输入[订阅门户](https://my.visualstudio.com)�
 - 若要进行应用程序演示，最多可以使用 200 个并发用户连接。 
 - Visual Studio 订阅者必须获得启用用户连接所需的产品密钥。
 
-如果需要获得有关如何在服务器上设置 RD 授权的说明，请参阅 [RD Licensing Configuration on Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx)（Windows Server 2012 上的 RD 授权配置）。 如果存在任何疑问，请访问 [Microsoft 远程桌面服务论坛](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)。 
+如果需要获得有关如何在服务器上设置 RD 授权的说明，请参阅 [RD Licensing Configuration on Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx)（Windows Server 2012 上的 RD 授权配置）。 如果存在任何疑问，请访问 [Microsoft 远程桌面服务论坛](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)。 

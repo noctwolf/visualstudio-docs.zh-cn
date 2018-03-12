@@ -3,21 +3,24 @@ title: "Visual Studio 性能提示和技巧 | Microsoft Docs"
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -32,7 +35,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
     如果将系统从 Windows 32 位版本升级到 64 位版本，那么 Visual Studio 的可用虚拟内存量会从 2 GB 扩展到 4 GB。 这样，即使 Visual Studio 是 32 位进程，也可以处理更大的工作负荷。
 
-    有关详细信息，请参阅[内存限制](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits)和 [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)（在 64 位 Windows 上使用 /LARGEADDRESSAWARE）。
+    有关详细信息，请参阅[内存限制](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits)和 [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)（在 64 位 Windows 上使用 /LARGEADDRESSAWARE）。
 
 ## <a name="configure-solution-and-projects"></a>配置解决方案和项目
 
@@ -47,6 +50,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
     可以将解决方案拆分为多个较小的解决方案文件，并在这些文件中包含常用的项目。 此重构可大幅减少工作流的内存使用率。 此外，解决方案越小，加载速度越快。
 
 ## <a name="configure-debugging-options"></a>配置调试选项
+
 如果经常在调试会话期间遇到内存不足的情况，可以通过更改一项或多项配置来优化性能。
 
 - **启用“仅我的代码”**
@@ -74,6 +78,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
     有关详细信息，请参阅[分析工具](../profiling/profiling-tools.md)。
 
 ## <a name="disable-tools-and-extensions"></a>禁用工具和扩展
+
 某些工具或扩展可能会关闭以提高性能。
 
 > [!TIP]
@@ -81,7 +86,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
 ### <a name="managed-language-services-roslyn"></a>托管的语言服务 (Roslyn)
 
-有关 Roslyn 性能注意事项的信息，请参阅 [Performance considerations for large solutions] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)（大型解决方案的性能注意事项）。
+有关 .NET 编辑器平台（“Roslyn”）行性能注意事项的详细信息，请参阅[针对大型解决方案的性能注意事项] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)。
 
 - **禁用完整解决方案分析**
 
@@ -123,7 +128,8 @@ CLR 使用垃圾回收内存管理系统。 在此系统中，内存有时会被
 
 如果强制垃圾回收确实可让方案正常工作，请通过 Visual Studio 反馈工具提交报告，因为这一行为可能是一个 Bug。
 
-有关 CLR 垃圾回收器的详细描述，请参阅 [Fundamental of Garbage Collection](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx)（垃圾回收的基本原理）。
+有关 CLR 垃圾回收器的详细描述，请参阅 [Fundamental of Garbage Collection](/dotnet/standard/garbage-collection/fundamentals)（垃圾回收的基本原理）。
 
-## <a name="see-also"></a>请参阅  
- [Visual Studio IDE](../ide/index.md)
+## <a name="see-also"></a>请参阅
+
+[Visual Studio IDE](../ide/visual-studio-ide.md)

@@ -1,14 +1,16 @@
 ---
 title: Azure SDK for Python | Microsoft Docs
+description: "Azure SDK for Python 使得从运行在任何平台上的 Python 应用程序中使用 Microsoft Azure 服务更加方便。"
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 01/22/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
-ms.devlang: python
+ms.technology:
+- devlang-python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: fa18c4a0b29b9f9dc05dae3093b4432e38635154
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: baa206dfbb9caf58ce872d0c9dee22e183403adb
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK for Python
 
@@ -30,19 +32,19 @@ Azure SDK for Python 使得从运行在 Windows、Mac OSX 和 Linux 上的应用
 
 从 [Python 包索引](https://pypi.python.org/pypi/azure)安装 Azure SDK。
 
-安装**最新稳定版**（支持 Python 2.7 和 3.3 及更高版本），如下所示：
+安装最新稳定版本（支持 Python 2.7 和 3.x），如下所示：
 
 ```command
 pip install azure
 ```
 
-还可按照 Azure 文档中的[安装 Python 和 SDK](https://azure.microsoft.com/documentation/articles/python-how-to-install/) 操作。
+还可按照 Azure 文档中的[安装 Python 和 SDK](https://docs.microsoft.com/azure/python-how-to-install/) 操作。
 
 ## <a name="documentation"></a>文档
 
 文档可能位于 [azure-sdk-for-python.readthedocs.org](http://azure-sdk-for-python.readthedocs.org/en/latest/index.html)。
 
-[Azure SDK for Python 开发人员中心](http://azure.microsoft.com/develop/python/)也有大量有用资源，其中包括许多教程，例如：
+[Azure SDK for Python 开发人员中心](http://azure.microsoft.com/develop/python/)也有大量有用资源，其中包括许多教程：
 
 - 使用 [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app)、[Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) 和 [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app) 创建 Web 应用。
 - [Blob 存储](/azure/storage/storage-python-how-to-use-blob-storage)

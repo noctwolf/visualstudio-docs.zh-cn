@@ -10,12 +10,15 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b71242bfd0744b2b2dc8c5561b87ab893fb81a9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2a8b1c99d1b084a6f8d3c050302e16ea40d64ac
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 代码片段
 
@@ -31,7 +34,7 @@ ms.lasthandoff: 12/22/2017
 
 - 在“编辑”/“IntelliSense”菜单中，选择“插入代码片段”
 
-- 使用热键：**CTRL + K + X**
+- 使用热键：CTRL+K+X
 
 将出现一个以“#if”开头的选择列表。 选择“#if”后，显示添加到文件的以下代码：
 
@@ -47,11 +50,11 @@ ms.lasthandoff: 12/22/2017
 
 若要使用代码片段来包围所选代码，请选择一行（或多行），然后执行下列操作之一：
 
-1. 右键单击以获取上下文菜单并选择“外侧代码”
+- 右键单击以获取上下文菜单并选择“外侧代码”
 
-2. 在“编辑”/“IntelliSense”菜单中，选择“外侧代码”
+- 在“编辑” > “IntelliSense”菜单中，选择“外侧代码”
 
-3. 使用热键：**CTRL + K + S**
+- 在键盘上按 Ctrl+K+S
 
 选择“#if”。 将显示如下所示的内容：
 

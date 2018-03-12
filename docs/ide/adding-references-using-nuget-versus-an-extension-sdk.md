@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4ec453e3bec8bbca0e01d0706b43f82fb413d162
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 101d16c647887aced273804fc80a890d5102d22c
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 与扩展 SDK 添加引用
 
@@ -66,7 +68,7 @@ ms.lasthandoff: 01/05/2018
 |可使用符号包调试支持。|Y|如果在 SDK 中放入 .pdb 文件，这些文件会被自动拾取。|Y||
 |该机制支持程序包管理器自动更新。|不可用|SDK 通过 MSBuild 进行修订。|Y||
 |该机制支持轻型清单格式。|Y|SDKManifest.xml 支持多个属性，但通常只需要一个小子集。|Y||
-|该机制适用于所有 Visual Studio 版本。|Y|SDK 支持从 Visual Studio Express 到 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 的所有 Visual Studio 版本。|Y|NuGet 支持从 Express 到 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 的所有 Visual Studio 版本。|
+|该机制适用于所有 Visual Studio 版本。|Y|SDK 支持所有 Visual Studio 版本。|Y|NuGet 支持所有 Visual Studio 版本。|
 |该机制适用于所有项目类型。|N|SDK 支持从 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 开始的 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用。|N|可以查看一系列允许的项目。|
 
 ## <a name="see-also"></a>请参阅

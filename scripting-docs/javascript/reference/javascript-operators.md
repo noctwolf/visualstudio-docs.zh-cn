@@ -5,24 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: JavaScript, operators
+helpviewer_keywords:
+- JavaScript, operators
 ms.assetid: aa1f6021-5419-4a2d-b7c4-2edc7844b300
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27be497a62a21aa8dc222c96539a48f7e5d62425
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e99ead2f921f5247757192bcb3330aa4ebca8d7
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-operators"></a>JavaScript 运算符
 下表列出了 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 运算符。  
@@ -65,8 +67,8 @@ ms.lasthandoff: 10/27/2017
 |对两个表达式执行逻辑与运算。|[逻辑“与”运算符 (&&)](../../javascript/reference/logical-and-operator-decrement-javascript.md)|  
 |对表达式执行逻辑求反。|[逻辑“非”运算符 (!)](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|  
 |对两个表达式执行逻辑析取。|[逻辑或运算符 (&#124; &#124;)](../../javascript/reference/logical-or-operator-decrement-javascript.md)|  
-|将变量值除以表达式值，并将余数赋给变量。|[取模赋值运算符 (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|  
-|使两个数字相除，并返回余数。|[取模运算符 (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|  
+|将变量值除以表达式值，并将余数赋给变量。|[余数赋值运算符 (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|  
+|使两个数字相除，并返回余数。|[余数运算符 （%）](../../javascript/reference/modulus-operator-decrementjavascript.md)|  
 |将变量值乘以表达式值，并将结果赋给变量。|[乘法赋值运算符 (*=)](../../javascript/reference/multiplication-assignment-operator-decrement-equal-javascript.md)|  
 |将两个数字相乘。|[乘法运算符 (*)](../../javascript/reference/multiplication-operator-decrement-javascript.md)|  
 |创建新对象。|[new 运算符](../../javascript/reference/new-operator-decrementjavascript.md)|  
@@ -81,5 +83,5 @@ ms.lasthandoff: 10/27/2017
 |右移表达式的位，不保留符号。|[无符号右移运算符 (>>>)](../../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|  
 |防止表达式返回值。|[void 运算符](../../javascript/reference/void-operator-decrementjavascript.md)|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [运算符优先级](../../javascript/operator-subtractprecedence-javascript.md)

@@ -1,23 +1,26 @@
 ---
 title: "欢迎使用针对 Visual Studio 的 R 工具 | Microsoft Docs"
+description: "已安装针对 Visual Studio 的 R 工具的开发人员的摘要信息。"
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 01/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
-ms.devlang: r
+ms.technology:
+- devlang-r
+dev_langs:
+- R
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 747744ca3a0d01b09cbba53a499902f13f3e8b51
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: 0314bd144cc43fc6a1bf2589c4ae407258076d3d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>欢迎使用针对 Visual Studio 的 R 工具
 
@@ -28,7 +31,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="resources"></a>资源
 
 - [文档](index.md)
-- [安装步骤](installation.md)
+- [安装步骤](installing-r-tools-for-visual-studio.md)
 - [在 GitHib 上提交和浏览 bug 以及功能请求](https://github.com/Microsoft/RTVS/issues)
 - [浏览和编写源代码](https://github.com/Microsoft/RTVS/blob/master/LICENSE)
 - 若要通过 Github（首选）之外的途径发送反馈，请使用 Visual Studio 中的“R 工具”>“反馈”菜单。

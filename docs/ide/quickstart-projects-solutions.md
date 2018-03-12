@@ -10,12 +10,13 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b757178f29439f162df9e8844ae65ed8df642bb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>快速入门：项目和解决方案
 
@@ -62,7 +63,7 @@ ms.lasthandoff: 12/22/2017
    随后名为“QuickDate”的项目出现在“解决方案资源管理器”中的解决方案下。 目前它包含一个名为“App.config”的文件。
 
    > [!NOTE]
-   > 如果在对话框的左侧窗格中看不到“Visual C#”，则需安装“.NET 桌面开发”工作负载。 执行此操作的简单方法是单击左侧窗格底部的“打开 Visual Studio 安装程序”链接。 “Visual Studio 安装程序”随即打开，从中选择正确的工作负载，然后选择“修改”按钮。
+   > 如果在对话框的左侧窗格中看不到“Visual C#”，则需安装“.NET 桌面开发”工作负载。 为此，一种简单方法是选择对话框左下角的“打开 Visual Studio 安装程序”链接。 在“Visual Studio 安装程序”启动后，选择“.NET 桌面开发”工作负载，再单击“修改”按钮。
 
    ![“打开 Visual Studio 安装程序”链接](media/quickstart-projects-open-installer.png)
 

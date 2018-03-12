@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - OverrideMethodsOnComparableTypes
 - CA1036
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9c8eedd58df2665b9e00051e40a07a0ac226ec6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d5e366144a70e25fc805d63ddcc7664a60df4303
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036：重写可比较类型中的方法
 |||  
@@ -53,7 +55,7 @@ ms.lasthandoff: 12/22/2017
  在 C# 中，用于表示这些运算符的令牌如下所示: = =、 ！ =、 \<，和 >。  
   
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 则可以安全地禁止显示此规则的警告，当因缺少运算符引起冲突和您的编程语言不支持运算符重载，这与 Visual Basic.NET 情况相同。 还有安全地禁止显示此规则的警告，而非 op_Equality 如果你确定实现运算符没有意义应用程序上下文中激发上相等运算符时。 但是，你应始终通过 op_Equality 与 = = 运算符，如果重写 Object.Equals。  
+ 则可以安全地禁止显示此规则的警告，当因缺少运算符引起冲突和您的编程语言不支持运算符重载，就像使用 Visual Basic 情况一样。 还有安全地禁止显示此规则的警告，而非 op_Equality 如果你确定实现运算符没有意义应用程序上下文中激发上相等运算符时。 但是，你应始终通过 op_Equality 与 = = 运算符，如果重写 Object.Equals。  
   
 ## <a name="example"></a>示例  
  下面的示例包含的类型正确实现<xref:System.IComparable>。 标识满足与相关的各种规则的方法的代码注释<xref:System.Object.Equals%2A>和<xref:System.IComparable>接口。  

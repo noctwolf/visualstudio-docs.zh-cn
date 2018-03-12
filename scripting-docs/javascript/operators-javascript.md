@@ -5,24 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: JavaScript, operators
+helpviewer_keywords:
+- JavaScript, operators
 ms.assetid: b8602b69-aba9-46e8-86e1-cb533ad41410
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9d0a098418399dba19b77a12c057a3fba334e31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3068a609da2468c59066ccd38f6de87cef1ed17
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="operators-javascript"></a>运算符 (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 具有各种运算符，包括算术、逻辑、按位、赋值，以及一些其他运算符。 有关说明和示例，请参阅特定运算符的相关主题。  
@@ -36,7 +38,7 @@ ms.lasthandoff: 10/27/2017
 |[递减](../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[乘法](../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[除法](../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[取模算术](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[余数算术](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[加法](../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[减法](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   
@@ -93,7 +95,7 @@ ms.lasthandoff: 10/27/2017
   
  基元字符串、数字和布尔按值进行比较。 如果它们具有相同的值，则相等。 对象（包括 `Array`、`Function`、`String`、Number、`Boolean`、Error、`Date` 和 `RegExp` 对象）按引用进行比较。 即使这些类型的两个变量具有相同的值，但也只有在引用完全相同的对象时它们才相等。  
   
- 例如：  
+ 例如:  
   
 ```JavaScript  
 // Two strings with the same value.  

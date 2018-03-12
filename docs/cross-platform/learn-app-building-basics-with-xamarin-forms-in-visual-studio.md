@@ -1,29 +1,31 @@
 ---
 title: "学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/19/2018
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
-caps.latest.revision: "11"
+ms.technology: vs-ide-mobile
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: b25344afa89c3b1244203a914b9b64347223870d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xamarin
+ms.openlocfilehash: 71470cd03844c7761afbd07c9d454214f5dc36ca
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识
-完成 [Setup and install](../cross-platform/setup-and-install.md) 和 [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md)中的步骤后，此演练会立即演示如何借助 Xamarin.Forms 生成基本应用（如下所示）。 借助 Xamarin.Forms，将在可移植类库 (PCL) 中将全部 UI 代码编写一次。 Xamarin 随后会自动呈现 iOS、Android 和 Windows 平台的本机 UI 控件。 我们建议使用这一方法，因为 PCL 选项可以最好地支持仅使用受所有目标平台支持的 .NET API，并且因为 Xamarin.Forms 能够让你跨平台共享 UI 代码。  
+
+完成 [Setup and install](../cross-platform/setup-and-install.md) 和 [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md)中的步骤后，此演练会立即演示如何借助 Xamarin.Forms 生成基本应用（如下所示）。 借助 Xamarin.Forms，可以在 .NET Standard 类库中一次性编写全部 UI 代码。 随后，Xamarin 会自动呈现 iOS、Android 和通用 Windows 平台的本机 UI 控件。 建议使用此方法（而不是共享项目），因为 .NET Standard 库仅包含跨所有目标平台受支持的 .NET API，并且 Xamarin.Forms 支持跨平台共享 UI 代码。  
   
- ![Android、iOS 和 Windows Phone 上的天气应用示例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
+![Android、iOS 和 Windows 上的“天气”应用示例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
   
- 你将执行以下操作来生成它：  
+你将执行以下操作来生成它：  
   
 -   [设置你的解决方案](#solution)  
   
@@ -36,51 +38,52 @@ ms.lasthandoff: 12/22/2017
 -   [跨平台完成具有本机外观的 UI](#finish)  
   
 > [!TIP]
->  可以在 [xamarin-forms-samples repository on GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)（GitHub 上的 xamarin-forms-samples 存储库）中找到此项目完整的源代码。  
+> 可以在 [xamarin-forms-samples repository on GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)（GitHub 上的 xamarin-forms-samples 存储库）中找到此项目完整的源代码。  
   
 ##  <a name="solution"></a> 设置你的解决方案  
- 这些步骤创建 Xamarin.Forms 解决方案，该方案包含共享代码的 PCL 和两个添加的 NuGet 包。  
+
+按照下面这些步骤操作可以创建 Xamarin.Forms 解决方案，其中包含共享代码的 .NET Standard 类库和两个添加的 NuGet 包。  
   
-1.  在 Visual Studio 中，创建新的“空白应用（Xamarin.Forms 可移植）”  解决方案，并将其命名为 **WeatherApp**。 通过在搜索字段中输入 **Xamarin.Forms** 可以非常方便地找到此模板。  
+1.  在 Visual Studio 中，新建“跨平台应用 (Xamarin.Forms)”解决方案，并将它命名为“WeatherApp”。 在左侧列表中依次选择“Visual C#”和“跨平台”，以查找模板。  
   
-     如果不存在，则可能需要安装 Xamarin 或启用 Visual Studio 2015 功能，请参阅[设置和安装](../cross-platform/setup-and-install.md)。  
+     如果找不到，建议安装 Xamarin 或启用 Visual Studio 2017 功能（请参阅[设置和安装](../cross-platform/setup-and-install.md)）。  
   
-     ![创建新的空白应用（Xamarin.Forms 可移植）项目](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin FormsGuide 2")  
+     ![新建空白应用“跨平台应用 (Xamarin.Forms)”项目](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin FormsGuide 2")
+
+2.  单击“确定”后，可以选择一些选项。 选取“空白应用”、“Xamarin.Forms”和“.NET Standard”：
+
+     ![新建跨平台应用项目](../cross-platform/media/crossplat-xamarin-formsguide-3.png "CrossPlat Xamarin FormsGuide 3")
   
-2.  单击“确定”创建解决方案后，将会得到多个单独项目：  
+3.  单击“确定”创建解决方案后，将会得到多个单独项目：  
   
-    -   WeatherApp（可移植）：PCL，用于在其中编写跨平台共享的代码，包括与 Xamarin.Forms 结合使用的常见业务逻辑和 UI 代码。  
+    -   **WeatherApp**：.NET Standard 库，可以在其中编写跨平台共享的代码，包括使用 Xamarin.Forms 的常见业务逻辑和 UI 代码。  
   
-    -   **WeatherApp.Droid**：包含本机 Android 代码的项目。 这将设置为默认启动项目。  
+    -   **WeatherApp.Android**：包含本机 Android 代码的项目。 这将设置为默认启动项目。  
   
     -   **WeatherApp.iOS**：包含本机 iOS 代码的项目。  
   
     -   **WeatherApp.UWP**：包含 Windows 10 UWP 代码的项目。  
   
-    -   **WeatherApp.Windows (Windows 8.1)**：包含本机 Windows 8.1 代码的项目。  
-  
-    -   **WeatherApp.WinPhone (Windows Phone 8.1)**：包含本机 Windows Phone 代码的项目。  
-  
     > [!NOTE]
-    >  可随意删除你不准备面向的目标平台的任何项目。 出于本演练的目的，我们将参考 Android、iOS 和 Windows Phone 8.1 项目 处理 UWP 和 Windows 8.1 项目与处理 Windows Phone 8.1 项目非常相似。  
+    >  可随意删除你不准备面向的目标平台的任何项目。   
   
      在每个本机项目中，你有权访问相应平台的本机设计器，并且可以根据需要实现特定于平台的屏幕和功能。  
   
-3.  将解决方案中的 Xamarin.Forms NuGet 包升级到最新稳定版本，如下所示。 我们建议每次创建新 Xamarin 解决方案时执行此操作：  
+4.  将解决方案中的 Xamarin.Forms NuGet 包升级到最新稳定版本，如下所示。 我们建议每次创建新 Xamarin 解决方案时执行此操作：  
   
     -   选择“工具”>“NuGet 包管理器”>“管理解决方案的 NuGet 包”。  
   
-    -   在“更新”  选项卡下，选中 **Xamarin.Forms** 更新并选中以解决方案中的所有项目。 （注意：不要选中 Xamarin.Android.Support 的任何更新。）  
+    -   在“更新”选项卡下，选中“Xamarin.Forms”包，并选中解决方案中的所有项目以供更新。 （注意：不要选中 Xamarin.Android.Support 的任何更新。）  
   
     -   将“版本”  字段更新为可用的“最新稳定”  版本。  
   
-    -   单击“更新” 。  
+    -   单击“安装” 。  
   
          ![更新 Xamarin.Forms NuGet 包](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin FormsGuide 4")  
   
-4.  将 Newtonsoft.Json 和 NuGet 包添加到 PCL 项目中，用于处理从天气数据服务中检索的信息：  
+5.  将 Newtonsoft.Json NuGet 包添加到 WeatherApp 项目中，用于处理从天气数据服务中检索到的信息：  
   
-    -   在 NuGet 包管理器中（从步骤 3 开始仍处于打开状态），选择“浏览”  选项卡，然后搜索 **Newtonsoft**。  
+    -   在 NuGet 包管理器中（自第 4 步起仍处于打开状态），选择“浏览”选项卡，再搜索“Newtonsoft”。  
   
     -   选择 **Newtonsoft.Json**。  
   
@@ -90,61 +93,51 @@ ms.lasthandoff: 12/22/2017
   
     -   单击“安装” 。  
   
-    -   ![查找和安装 Newtonsoft.Json NuGet 包](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
+    ![查找和安装 Newtonsoft.Json NuGet 包](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
   
-5.  重复步骤 4 以查找并安装 **Microsoft.Net.Http** 包。  
+6.  重复执行第 5 步，查找并安装“Microsoft.Net.Http”包。  
   
-6.  生成解决方案并验证没有生成错误。  
+7.  生成解决方案并验证没有生成错误。  
   
 ##  <a name="dataservice"></a> 编写共享的数据服务代码  
- WeatherApp（可移植）项目是将在其中编写可移植类库 (PCL) 代码的项目，该代码可在所有平台之间共享。 PCL 自动包含在 iOS、Android 和 Windows Phone 项目生成的应用包中。  
+
+在 WeatherApp 项目中，可以编写跨所有平台共享的 .NET Standard 库代码。 此库自动包含在 iOS、Android 和 Windows 项目生成的应用包中。  
   
- 若要运行此示例，必须先在 [http://openweathermap.org/appid](http://openweathermap.org/appid)注册一个免费 API 密钥。  
+若要运行此示例，必须先在 [http://openweathermap.org/appid](http://openweathermap.org/appid) 注册免费 API 密钥。  
   
- 然后，以下步骤会将代码添加到 PCL，以访问和存储天气服务的数据：  
+然后，执行以下步骤，将代码添加到 .NET Standard 库，以访问和存储天气服务中的数据：  
   
 1.  右键单击“WeatherApp”项目，然后选择“添加”>“类…”。在“添加新项”  对话框中，将文件命名为 **Weather.cs**。 将使用此类来存储天气数据服务的数据。  
   
 2.  将 **Weather.cs** 的全部内容替换为以下内容：  
   
     ```csharp  
-    namespace WeatherApp  
-    {  
-        public class Weather  
-        {  
-            public string Title { get; set; }  
-            public string Temperature { get; set; }  
-            public string Wind { get; set; }  
-            public string Humidity { get; set; }  
-            public string Visibility { get; set; }  
-            public string Sunrise { get; set; }  
-            public string Sunset { get; set; }  
-  
-            public Weather()  
-            {  
-                //Because labels bind to these values, set them to an empty string to  
-                //ensure that the label appears on all platforms by default.  
-                this.Title = " ";  
-                this.Temperature = " ";  
-                this.Wind = " ";  
-                this.Humidity = " ";  
-                this.Visibility = " ";  
-                this.Sunrise = " ";  
-                this.Sunset = " ";  
-            }  
-        }  
-    }  
+    namespace WeatherApp
+    {
+        public class Weather
+        {
+            // Because labels bind to these values, set them to an empty string to
+            // ensure that the label appears on all platforms by default.
+            public string Title { get; set; } = " ";
+            public string Temperature { get; set; } = " ";
+            public string Wind { get; set; } = " ";
+            public string Humidity { get; set; } = " ";
+            public string Visibility { get; set; } = " ";
+            public string Sunrise { get; set; } = " ";
+            public string Sunset { get; set; } = " ";
+        }
+    }
     ```  
   
-3.  将另一个名为 DataService.cs 的类添加到 PCL 项目中，该类用于处理天气数据服务的 JSON 数据。  
+3.  将另一个类“DataService.cs”添加到 WeatherApp 项目中，用于处理天气数据服务中的 JSON 数据。  
   
 4.  将 **DataService.cs** 的全部内容替换为以下代码：  
   
     ```csharp  
+    using System.Net.Http;  
     using System.Threading.Tasks;  
     using Newtonsoft.Json;  
-    using System.Net.Http;  
-  
+    
     namespace WeatherApp  
     {  
         public class DataService  
@@ -167,7 +160,7 @@ ms.lasthandoff: 12/22/2017
     }  
     ```  
   
-5.  将名为核心的第三个类添加到 PCL，将在此类中放置共享业务逻辑，例如通过使用邮政编码形成查询字符串、调用天气数据服务以及填充天气类的实例的逻辑。  
+5.  将第三个类“Core”添加到 WeatherApp 项目中，用于放置共享业务逻辑。 此代码形成包含邮政编码的查询字符串，调用天气数据服务，并填充 Weather 类实例。  
   
 6.  将 **Core.cs** 的内容替换为以下内容：  
   
@@ -213,25 +206,29 @@ ms.lasthandoff: 12/22/2017
     }  
     ```  
   
-7.  生成 **weatherapp** PCL 项目，以确保代码正确无误。  
+7.  生成 WeatherApp 库项目，以确保代码正确无误。  
   
 ##  <a name="uicode"></a> 开始编写共享的 UI 代码  
- Xamarin.Forms 使你可以在 PCL 中实现共享的 UI 代码。 在这些步骤中，将向 PCL 添加一个带有按钮的屏幕，该按钮使用由前一部分中添加的天气数据服务代码返回的数据更新其文本：  
+
+使用 Xamarin.Forms，可以在 .NET Standard 库中实现共享 UI 代码。 按照下面这些步骤操作可以向项目添加带按钮的页面，此按钮使用上一部分中添加的天气数据服务代码返回的数据来更新自己的文本：  
   
-1.  通过右键单击“WeatherApp”项目并选择“添加”>“新建项…”，添加名为 **WeatherPage.cs** 的**窗体 Xaml 页面**。在“添加新项”对话框中，搜索“窗体”，选择“窗体 Xaml 页面”，并将其命名 WeatherPage.cs。  
-  
-     Xamarin.Forms 基于 XAML，因此，此步骤创建 **WeatherPage.xaml** 文件和嵌套的代码隐藏文件 **WeatherPage.xaml.cs**。 这使你可以通过 XAML 或代码生成 UI。 在此演练中，将通过这两种方式执行一些操作。  
+1.  右键单击“WeatherApp”项目，并依次选择“添加”>“新项…”，添加名为“WeatherPage.cs”的内容页。在“添加新项”对话框中，选择“内容页”。 请勿选择“内容页 (C#)”或“内容视图”。 将它命名为“WeatherPage.cs”。  
   
      ![添加新的 Xamarin.Forms XAML 页面](../cross-platform/media/crossplat-xamarin-formsguide-6.png "CrossPlat Xamarin FormsGuide 6")  
   
-2.  要向 WeatherPage 屏幕中添加一个按钮，请将 WeatherPage.xaml 的内容替换为以下内容：  
+     Xamarin.Forms 基于 XAML，因此，此步骤创建 **WeatherPage.xaml** 文件和嵌套的代码隐藏文件 **WeatherPage.xaml.cs**。 这使你可以通过 XAML 或代码生成 UI。 在此演练中，将通过这两种方式执行一些操作。  
+  
+2.  若要向“WeatherPage”屏幕添加按钮，请将“WeatherPage.xaml”的内容替换为以下内容：  
   
     ```xaml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
-           x:Class="WeatherApp.WeatherPage">  
-      <Button x:Name="getWeatherBtn" Text="Get Weather"/>  
+           x:Class="WeatherApp.WeatherPage"
+           Title="Sample Weather App">  
+      <Button x:Name="getWeatherBtn" 
+              Text="Get Weather"
+              Clicked="GetWeatherBtn_Clicked" />  
     </ContentPage>  
     ```  
   
@@ -250,11 +247,9 @@ ms.lasthandoff: 12/22/2017
             public WeatherPage()  
             {  
                 InitializeComponent();  
-                this.Title = "Sample Weather App";  
-                getWeatherBtn.Clicked += GetWeatherBtn_Clicked;  
   
                 //Set the default binding to a default object for now  
-                this.BindingContext = new Weather();  
+                BindingContext = new Weather();  
             }  
   
             private async void GetWeatherBtn_Clicked(object sender, EventArgs e)  
@@ -270,122 +265,128 @@ ms.lasthandoff: 12/22/2017
   
     ```csharp  
     public App()  
-    {  
+    {
+        InitializeComponent();
+
         MainPage = new NavigationPage(new WeatherPage());  
     }  
     ```  
   
-5.  生成 WeatherApp PCL 项目，以确保代码正确无误。  
+5.  生成 WeatherApp 项目，以确保代码正确无误。  
   
 ##  <a name="test"></a> 使用适用于 Android 的 Visual Studio 仿真程序测试你的应用。  
- 现在即可运行应用！ 现在仅运行 Android 版本，验证该应用是否从天气服务获取数据。 稍后，在添加更多 UI 元素后，还将运行 iOS 和 Windows Phone 版本。 （注意：如果要在 Windows 7 上运行 Visual Studio，将遵循相同的步骤，但将改为使用 Xamarin 播放器。）  
+
+现在即可运行应用！ 现在仅运行 Android 版本，验证该应用是否从天气服务获取数据。 稍后，在添加更多 UI 元素后，还将运行 iOS 和 UWP 版本。   
   
-1.  通过右键单击“WeatherApp.Droid”  项目并选择“设为启动项目” ，将其设置为启动项目。  
+1.  右键单击“WeatherApp.Android”项目，并选择“设为启动项目”，将它设为启动项目。  
   
-2.  在 Visual Studio 工具栏中，将看到 WeatherApp.Droid 列为目标项目。 选择一个 Android 仿真程序以进行调试，并点击“F5” 。 我们建议使用其中一个“VS 仿真程序”  选项，它将运行适用于 Android 选项的 Visual Studio 仿真程序中的应用。  
+2.  在 Visual Studio 工具栏中，“WeatherApp.Android”被列为目标项目。 选择一个 Android 仿真程序以进行调试，并点击“F5” 。 建议使用“VisualStudio”仿真器选项之一，用于在适用于 Android 的 Visual Studio 仿真器中运行应用。  
   
-     ![选择 VS 模拟器调试目标](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")  
+     ![选择 Android Emulator 调试目标](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")  
   
-3.  当应用在仿真程序中启动时，单击“获取天气信息”  按钮。 应看到按钮文本更新为“伊利诺伊州，芝加哥”，这是从天气服务检索的数据的 Title 属性。  
+3.  当应用在仿真程序中启动时，单击“获取天气信息”  按钮。 应看到按钮文本更新为“芝加哥”，这是从天气服务检索到的数据的 Title 属性。  
   
      ![点击按钮前和点击后显示的天气应用](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")  
   
 ##  <a name="finish"></a>跨平台完成具有本机外观的 UI  
- Xamarin.Forms 会呈现每个平台的本机 UI 控件，以便你的应用会自动拥有本机外观。 若要更清晰地查看这一内容，可通过邮政编码的输入字段来完成 UI，然后显示从服务返回的天气数据。  
+
+Xamarin.Forms 会呈现每个平台的本机 UI 控件，以便你的应用会自动拥有本机外观。 若要更清晰地查看这一内容，可通过邮政编码的输入字段来完成 UI，然后显示从服务返回的天气数据。  
   
-1.  将 **WeatherPage.xaml** 的内容替换为以下代码。 请注意，使用之前介绍的 **X:name** 特性来命名每个元素，以便可以从代码中引用该元素。 Xamarin.Forms 还提供一系列 [布局选项](http://developer.xamarin.com/guides/xamarin-forms/controls/layouts/) (xamarin.com)；在此处，WeatherPage 使用 [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) (xamarin.com)。  
+1.  将 **WeatherPage.xaml** 的内容替换为以下代码。 使用之前介绍的 X:name 属性命名的元素可以通过代码引用。 Xamarin.Forms 还提供了许多[布局选项](http://developer.xamarin.com/guides/xamarin-forms/controls/layouts/) (xamarin.com)。 在本文中，WeatherPage 使用 [Grid](http://developer.xamarin.com/api/type/Xamarin.Forms.Grid/) (xamarin.com) 和 [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) (xamarin.com)。  
   
     ```xaml  
-    <?xml version="1.0" encoding="utf-8" ?>  
+    <?xml version="1.0" encoding="utf-8" ?>
     <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
-           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
-           x:Class="WeatherApp.WeatherPage">  
-  
-      <ContentPage.Resources>  
-        <ResourceDictionary>  
-          <Style x:Key="labelStyle" TargetType="Label">  
-            <Setter Property="TextColor" Value="#a8a8a8" />  
-            <Setter Property="FontSize" Value="Small" />  
-          </Style>  
-          <Style x:Key="fieldStyle" TargetType="Label">  
-            <Setter Property="TextColor">  
-              <OnPlatform x:TypeArguments="Color" iOS="Black" Android="White" WinPhone="White" />  
-            </Setter>  
-            <Setter Property="FontSize" Value="Medium" />  
-          </Style>  
-          <Style x:Key="fieldView" TargetType="ContentView">  
-            <Setter Property="Padding" Value="10,0,0,0" />  
-          </Style>  
-        </ResourceDictionary>  
-      </ContentPage.Resources>  
-  
-      <ContentPage.Content>  
-        <ScrollView>  
-          <StackLayout>  
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  
-                  BackgroundColor="#545454">  
-              <StackLayout Padding="10,10,10,10" HorizontalOptions="Start">  
-                <Label Text="Search by Zip Code" TextColor="White" FontAttributes="Bold"  
-                    FontSize="Medium" />  
-                <Label x:Name="zipCodeLabel" Text="Zip Code" Style="{StaticResource labelStyle}" />  
-                <Entry x:Name="zipCodeEntry" />  
-              </StackLayout>  
-              <StackLayout Padding="0,0,0,10" VerticalOptions="End">  
-                <Button x:Name="getWeatherBtn" Text="Get Weather" WidthRequest="185" BorderWidth="1" >  
-                  <!-- Set iOS colors; use defaults on other platforms -->  
-                  <Button.TextColor>  
-                    <OnPlatform x:TypeArguments="Color" iOS="White"/>  
-                  </Button.TextColor>  
-                  <Button.BorderColor>  
-                    <OnPlatform x:TypeArguments="Color" iOS="White"/>  
-                  </Button.BorderColor>  
-                </Button>  
-              </StackLayout>  
-            </StackLayout>  
-            <StackLayout Padding="10,10,10,10" HorizontalOptions="Start">  
-              <Label Text="Location" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label Text="{Binding Title}" Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-              <Label Text="Temperature" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label x:Name="tempLabel" Text="{Binding Temperature}"  
-                    Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-              <Label Text="Wind Speed" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label x:Name="windLabel" Text="{Binding Wind}" Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-              <Label Text="Humidity" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label x:Name="humidityLabel" Text="{Binding Humidity}"  
-                    Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-              <Label Text="Visibility" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label x:Name="visibilitylabel" Text="{Binding Visibility}"  
-                    Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-              <Label Text="Time of Sunrise" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label x:Name="sunriseLabel" Text="{Binding Sunrise}"  
-                    Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-              <Label Text="Time of Sunset" Style="{StaticResource labelStyle}" />  
-              <ContentView Style="{StaticResource fieldView}">  
-                <Label x:Name="sunsetLabel" Text="{Binding Sunset}"  
-                    Style="{StaticResource fieldStyle}" />  
-              </ContentView>  
-            </StackLayout>  
-          </StackLayout>  
-        </ScrollView>  
-      </ContentPage.Content>  
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+                 x:Class="WeatherApp.WeatherPage"
+                 Title="Sample Weather App">
+
+        <ContentPage.Resources>
+            <ResourceDictionary>
+                <Style x:Key="labelStyle" TargetType="Label">
+                    <Setter Property="FontSize" Value="Small" />
+                    <Setter Property="TextColor" Value="#404040" />
+                </Style>
+                <Style x:Key="fieldStyle" TargetType="Label">
+                    <Setter Property="FontSize" Value="Medium" />
+                    <Setter Property="Margin" Value="10,0,0,0" />
+                </Style>
+            </ResourceDictionary>
+        </ContentPage.Resources>
+
+        <StackLayout>
+            <Grid BackgroundColor="#545454" Padding="10, 10, 10, 10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+            
+                <Label Text="Search by Zip Code" 
+                       Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+                       HorizontalOptions="Center"
+                       TextColor="White" FontAttributes="Bold" FontSize="Medium" />
+            
+                <Label x:Name="zipCodeLabel" Text="Zip Code:" 
+                       Grid.Row="1" Grid.Column="0"
+                       VerticalOptions="Center"
+                       Style="{StaticResource labelStyle}"
+                       TextColor="#C0C0C0" />
+            
+                <Entry x:Name="zipCodeEntry"
+                       Grid.Row="1" Grid.Column="1"
+                       VerticalOptions="Center"
+                       Margin="5,0"
+                       BackgroundColor="DarkGray"
+                       TextColor="White" />
+            
+                <Button x:Name="getWeatherBtn" Text="Get Weather" 
+                        Grid.Row="1" Grid.Column="2"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        BorderWidth="1"
+                        BorderColor="White"
+                        BackgroundColor="DarkGray"
+                        TextColor="White"
+                        Clicked="GetWeatherBtn_Clicked" />
+            </Grid>
+
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout Padding="10,10,10,10" HorizontalOptions="Start">
+                    <Label Text="Location" Style="{StaticResource labelStyle}" />
+                    <Label Text="{Binding Title}" Style="{StaticResource fieldStyle}" />
+                
+                    <Label Text="Temperature" Style="{StaticResource labelStyle}" />
+                    <Label Text="{Binding Temperature}" Style="{StaticResource fieldStyle}" />
+                
+                    <Label Text="Wind Speed" Style="{StaticResource labelStyle}" />
+                    <Label Text="{Binding Wind}" Style="{StaticResource fieldStyle}" />
+                
+                    <Label Text="Humidity" Style="{StaticResource labelStyle}" />
+                    <Label Text="{Binding Humidity}" Style="{StaticResource fieldStyle}" />
+                
+                    <Label Text="Visibility" Style="{StaticResource labelStyle}" />
+                    <Label Text="{Binding Visibility}" Style="{StaticResource fieldStyle}" />
+                
+                    <Label Text="Time of Sunrise" Style="{StaticResource labelStyle}" />
+                    <Label Text="{Binding Sunrise}" Style="{StaticResource fieldStyle}" />
+                
+                    <Label Text="Time of Sunset" Style="{StaticResource labelStyle}" />
+                    <Label Text="{Binding Sunset}" Style="{StaticResource fieldStyle}" />
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
     </ContentPage>  
-    ```  
+     ```  
   
-     请注意，Xamarin.Forms 中 **OnPlatform** 标记的使用。 OnPlatform 将选择特定于运行应用的当前平台的属性值（请参阅[外部 XAML 语法](http://developer.xamarin.com/guides/xamarin-forms/user-interface/xaml-basics/essential_xaml_syntax/) (xamarin.com)。 在这里我们将使用它设置数据字段的不同文本颜色：Android 和 Windows Phone 上为白色，iOS 上则为黑色。 你可以将 **OnPlatform** 用于任何属性和任何数据类型，从而在 XAML 中的任意位置进行特定于平台的调整。 在代码隐藏文件中，你可以将 [Device.OnPlatform API](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) 用于同一目的。  
+     虽然本文未说明，但可以使用 OnPlatform 标记，选择当前运行应用的平台的专用属性值（请参阅[基本 XAML 语法](http://developer.xamarin.com/guides/xamarin-forms/user-interface/xaml-basics/essential_xaml_syntax/) (xamarin.com)）。 在代码隐藏文件中，你可以将 [Device.OnPlatform API](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) 用于同一目的。  
   
-2.  在 **WeatherPage.xaml.cs**中，将 **GetWeatherBtn_Clicked** 事件处理程序替换为以下代码。 此代码验证输入字段中是否存在邮政编码，检索该邮政编码的数据，将整个屏幕的绑定上下文设置为生成的天气实例，然后将按钮文本设置为“再次搜索”。 请注意，UI 中的每个标签都将绑定到天气类的一个属性，因此如果将屏幕的绑定上下文设置为天气实例，这些标签会自动更新。  
+2.  在 **WeatherPage.xaml.cs**中，将 **GetWeatherBtn_Clicked** 事件处理程序替换为以下代码。 此代码验证输入字段中是否有邮政编码，检索相应邮政编码的数据，将整个页面的绑定上下文设置为生成的 Weather 实例，再将按钮文本设置为“重新搜索”。 请注意，由于 UI 中的每个标签都绑定到 Weather 类属性，因此如果将屏幕的绑定上下文设置为 Weather 实例，这些标签会自动更新。  
   
     ```csharp  
     private async void GetWeatherBtn_Clicked(object sender, EventArgs e)  
@@ -393,14 +394,14 @@ ms.lasthandoff: 12/22/2017
         if (!String.IsNullOrEmpty(zipCodeEntry.Text))  
         {  
             Weather weather = await Core.GetWeather(zipCodeEntry.Text);  
-            this.BindingContext = weather;  
+            BindingContext = weather;  
             getWeatherBtn.Text = "Search Again";  
         }  
     }  
     ```  
   
-3.  通过右键单击相应的项目，选择“设置为启动项目”，并在设备上或仿真程序或模拟器中启动该应用，在所有三个平台上运行该应用 — Android、iOS 和 Windows Phone。 如下所示，输入有效的美国邮编（如 60601），然后按“获取天气信息”按钮以显示该地区的天气数据。 当然，在 iOS 项目的网络上，需要具有连接 Mac OS X 计算机的 Visual Studio。  
+3.  右键单击相应项目，选择“设为启动项目”，并在设备或仿真器/模拟器中启动应用，从而在所有三个平台（Android、iOS 和 Windows）上运行应用。 输入有效的美国五位数邮政编码，并按“获取天气信息”按钮，以显示相应区域的天气数据（如下所示）。 需要将 Visual Studio 连接到 iOS 项目网络上的 Mac OS X 计算机。  
   
      ![Android、iOS 和 Windows Phone 上的天气应用示例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
   
- 此项目完整的源代码位于 [xamarin-forms-samples repository on GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)（GitHub 上的 xamarin-forms-samples 存储库）中。
+此项目完整的源代码位于 [xamarin-forms-samples repository on GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)（GitHub 上的 xamarin-forms-samples 存储库）中。
