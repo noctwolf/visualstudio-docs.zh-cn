@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 906100a572170f218a23b1887ab7fddee37251b9
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -73,7 +75,7 @@ ms.lasthandoff: 01/10/2018
 ##  <a name="usingfeatures"></a> Using Features of Multiple Microsoft Office Applications in a Single Project  
  Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office 应用程序配合使用。 若要使用多个 Microsoft Office 应用程序的功能，或者使用 Visual Studio 中没有项目的应用程序或组件的功能，必须添加对所需 PIA 的引用。  
   
- 在大多数情况下，你都应添加对 Visual Studio 安装在 %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\ 目录中的 PIA 的引用。 这些版本的程序集显示在 **“引用管理器”** 对话框的 **“框架”** 选项卡上。 有关详细信息，请参阅 [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
+ 在大多数情况下，你都应添加对 Visual Studio 安装在 %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\ 目录中的 PIA 的引用。 这些版本的程序集显示在 **“引用管理器”** 对话框的 **“框架”** 选项卡上。 有关详细信息，请参阅 [如何：通过主互操作程序集面向 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
   
  如果你在全局程序集缓存中安装并注册了 PIA，则这些版本的程序集显示在 **“引用管理器”** 对话框的 **“COM”** 选项卡上。 你应当避免添加对这些版本的程序集的引用，因为使用它们时可能会出现某些开发问题。 例如，如果你在全局程序集缓存中注册了 PIA 的不同版本，则项目将自动绑定到你最后一次注册的程序集版本，即使在 **“引用管理器”** 对话框的 **“COM”** 选项卡上指定了其他程序集版本也是如此。  
   
@@ -110,7 +112,7 @@ ms.lasthandoff: 01/10/2018
  在全局程序集缓存中安装并注册 Office PIA（通过 Office，或通过为 PIA 安装可再发行组件包）时，绑定重定向程序集也只会安装在全局程序集缓存中。 这些程序集有助于确保在运行时加载主互操作程序集的正确版本。 例如，当引用 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 程序集的解决方案在装有同一主互操作程序集的 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的计算机上运行时，绑定重定向程序集会指示 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 运行时加载 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的主互操作程序集。 有关详细信息，请参阅[如何：启用和禁用自动绑定重定向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。  
   
 ## <a name="see-also"></a>请参阅  
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [如何：通过主互操作程序集面向 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Excel 对象模型概述](../vsto/excel-object-model-overview.md)   
  [InfoPath 解决方案](../vsto/infopath-solutions.md)   
  [Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)   

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -37,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  若要确定这些项目类型中的哪一个最适合你的解决方案，可思考一下你想要代码仅在打开特定文档时运行还是想只要运行应用程序就提供代码。 有关项目模板的详细信息，请参阅[Office 项目模板概述](../vsto/office-project-templates-overview.md)。  
   
- 可以创建的项目类型取决于在开发计算机上已安装的 Office 应用程序。 有关详细信息，请参阅 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)。  
+ 可以创建的项目类型取决于在开发计算机上已安装的 Office 应用程序。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
 ### <a name="document-level-customizations"></a>文档级自定义项  
  文档级自定义项包含与 Microsoft Office Word 或 Microsoft Office Excel 中的单个文档、工作簿或模板相关联的程序集。 打开关联的文档时，就会加载程序集。 仅当打开关联的文档时，才提供创建的自定义项中的功能。 自定义项不能进行应用程序范围内的更改，例如打开任何文档时显示新菜单项或功能区选项卡。  

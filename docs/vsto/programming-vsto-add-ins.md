@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -35,7 +36,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 58b6d40e2da962587b44e4b73c8331b3fba5590f
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -124,7 +126,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |运行代码以在加载 VSTO 外接程序时初始化 VSTO 外接程序。|将代码添加到 `ThisAddIn_Startup` 方法。 这是 <xref:Microsoft.Office.Tools.AddInBase.Startup> 事件的默认事件处理程序。 有关详细信息，请参阅 [Events in Office Projects](../vsto/events-in-office-projects.md)。|  
 |运行代码以清理 VSTO 外接程序在被卸载前使用的资源。|将代码添加到 `ThisAddIn_Shutdown` 方法。 这是 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件的默认事件处理程序。 有关详细信息，请参阅 [Events in Office Projects](../vsto/events-in-office-projects.md)。 **注意：**在 Outlook 中，默认情况下`ThisAddIn_Startup`事件处理程序并不总是调用 VSTO 外接程序卸载时。 有关详细信息，请参阅 [Events in Office Projects](../vsto/events-in-office-projects.md)。|  
 |显示自定义任务窗格。|使用 `CustomTaskPanes` 字段。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。|  
-|向其他 Microsoft Office 解决方案公开 VSTO 外接程序中的对象。|重写 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 有关详细信息，请参阅 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。|  
+|向其他 Microsoft Office 解决方案公开 VSTO 外接程序中的对象。|重写 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 有关详细信息，请参阅 [从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。|  
 |通过实现可扩展性接口，在 Microsoft Office 系统中自定义功能。|重写 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法以返回实现该接口的类的实例。 有关详细信息，请参阅 [Customizing UI Features By Using Extensibility Interfaces](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)。 **注意：**要自定义功能区 UI，你也可以替代<xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A>方法。|  
   
 ### <a name="understanding-the-design-of-the-thisaddin-class"></a>了解 ThisAddIn 类的设计  
@@ -139,12 +141,12 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
   
  如果你想要以类和设计器不支持的方式自定义这些功能之一，则还可以通过在 VSTO 外接程序中实现 *扩展性接口* 来自定义这些功能。 有关详细信息，请参阅 [Customizing UI Features By Using Extensibility Interfaces](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)。  
   
- 此外，你还可以通过生成扩展文档和工作簿的行为的主机项来修改 Word 文档和 Excel 工作簿的 UI。 这样，你便可以将托管控件添加到文档和工作表。 有关更多信息，请参见 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 此外，你还可以通过生成扩展文档和工作簿的行为的主机项来修改 Word 文档和 Excel 工作簿的 UI。 这样，你便可以将托管控件添加到文档和工作表。 有关更多信息，请参见 [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="calling-code-in-vsto-add-ins-from-other-solutions"></a>从其他解决方案调用 VSTO 外接程序中的代码  
  你可以向其他解决方案（包括其他 Office 解决方案）公开 VSTO 外接程序中的对象。 如果 VSTO 外接程序提供了你希望使其他解决方案能够使用的服务，这一点非常有用。 例如，如果某个 Microsoft Office Excel VSTO 外接程序从 Web 服务中执行财务数据计算，则其他解决方案可以通过在运行时调入该 Excel VSTO 外接程序来执行这些计算。  
   
- 有关详细信息，请参阅 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
+ 有关详细信息，请参阅 [从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   

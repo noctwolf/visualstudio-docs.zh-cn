@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,11 +21,12 @@ helpviewer_keywords:
 - applications [Visual Studio], ClickOnce deployment
 - deploying applications [ClickOnce], publishing ClickOnce applications
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 02b5f2477a18f3432bc255b9bd17a2ac11fbc030
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -65,7 +67,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="application-files-dialog-box"></a>“应用程序文件”对话框  
  在此对话框中，你可以指定如何在项目中对文件分类，以实现发布、动态下载和更新。 它包含一个网格，该网格中列出默认未排除或有下载组的项目文件。  
   
- 若要排除文件，将文件标记为数据文件或必备组件，并在 Visual Studio UI 中创建的用于有条件安装的文件组，请参阅[如何： 指定该文件通过 ClickOnce 发布](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)。 你还可以通过使用 Mage.exe 标记数据文件。 有关详细信息，请参阅 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+ 若要排除文件，将文件标记为数据文件或必备组件，并在 Visual Studio UI 中创建的用于有条件安装的文件组，请参阅[如何： 指定该文件通过 ClickOnce 发布](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)。 你还可以通过使用 Mage.exe 标记数据文件。 有关详细信息，请参阅 [如何：将数据文件包括到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
   
 ### <a name="prerequisites-dialog-box"></a>“系统必备”对话框  
  此对话框指定要安装的必备组件以及其安装方式。 有关详细信息，请参阅[如何： 与 ClickOnce 应用程序的安装必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)和[系统必备组件对话框](../ide/reference/prerequisites-dialog-box.md)。  

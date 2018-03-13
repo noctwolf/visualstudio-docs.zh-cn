@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -30,7 +31,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -130,7 +132,7 @@ Globals.ThisDocument.Save();
 ## <a name="managing-documents-on-a-server"></a>在服务器上管理文档  
  你可以在未安装 Microsoft Office Word 或 Microsoft Office Excel 的服务器上管理文档级自定义项的几个不同方面。 例如，你可以访问和修改文档数据缓存中的数据。 还可以管理与文档相关联的自定义程序集。 例如，你可以以编程方式从文档中删除程序集以使该文档不再运行你的代码，或者以编程方式将程序集附加到文档。  
   
- 有关详细信息，请参阅 [Managing Documents on a Server by Using the ServerDocument Class](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)。  
+ 有关详细信息，请参阅 [使用 ServerDocument 类管理服务器上的文档](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)。  
   
 ## <a name="customizing-the-user-interface-of-microsoft-office-applications"></a>自定义 Microsoft Office 应用程序的用户界面  
  使用文档级自定义项，你可以通过下列方式自定义 Word 和 Excel 的 UI：  
@@ -165,7 +167,7 @@ Globals.ThisDocument.Save();
   
 -   如果你想要将本机 Office 对象中获取扩展的对象，请使用 GetVstoObject 方法。 如果指定的本机 Office 对象具有扩展的对象，则此方法返回 <xref:Microsoft.Office.Tools.Excel.ListObject>、 <xref:Microsoft.Office.Tools.Excel.Workbook>、 <xref:Microsoft.Office.Tools.Excel.Worksheet>或 <xref:Microsoft.Office.Tools.Word.Document> 对象。 否则，返回 GetVstoObject **null**。 例如，GetVstoObject 方法返回<xref:Microsoft.Office.Tools.Word.Document>如果指定<xref:Microsoft.Office.Interop.Word.Document>是 Word 文档项目中的文档的基础对象。  
   
- 在文档级项目中，你不能使用 GetVstoObject 方法创建一个新<xref:Microsoft.Office.Tools.Excel.Workbook>， <xref:Microsoft.Office.Tools.Excel.Worksheet>，或<xref:Microsoft.Office.Tools.Word.Document>在运行时主机项。 此方法仅用于在设计时访问项目中现有的已生成宿主项。 如果想要在运行时创建新的宿主项，则必须开发 VSTO 外接程序项目。 有关详细信息，请参阅 [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) 和 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 在文档级项目中，你不能使用 GetVstoObject 方法创建一个新<xref:Microsoft.Office.Tools.Excel.Workbook>， <xref:Microsoft.Office.Tools.Excel.Worksheet>，或<xref:Microsoft.Office.Tools.Word.Document>在运行时主机项。 此方法仅用于在设计时访问项目中现有的已生成宿主项。 如果想要在运行时创建新的宿主项，则必须开发 VSTO 外接程序项目。 有关详细信息，请参阅 [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) 和 [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="using-the-getvstoobject-and-hasvstoobject-methods"></a>使用 GetVstoObject 和 HasVstoObject 方法  
  若要调用的 HasVstoObject 和 GetVstoObject 方法，请使用 Globals.Factory.GetVstoObject 或 Globals.Factory.HasVstoObject 方法，和的本机 Word 或 Excel 对象中传递 (如<xref:Microsoft.Office.Interop.Word.Document>或<xref:Microsoft.Office.Interop.Excel.Worksheet>)，你想要测试。  

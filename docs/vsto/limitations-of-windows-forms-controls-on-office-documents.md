@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,7 +24,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 2c8795b643afff2cc02d507a1764871aa0e0e181
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -96,7 +98,7 @@ ms.lasthandoff: 01/10/2018
 |控件的大小调整|如果你调整文档使用其中一个八个大小调整控点上的控件，新的控件维度不会反映在**属性**窗口，直到重新控件。|  
 |控件行为|当拆分工作表窗口时，Excel 工作表上的控件可能会发生不可预测行为。 例如，访问<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>工作表上可能仅能在一个窗口中。|  
 |控件命名|不能使用保留的字来命名控件。 例如，如果你添加<xref:Microsoft.Office.Tools.Excel.Controls.Button>到工作表和名称更改为**系统**，生成项目时，会发生错误。|  
-|以编程方式添加控件|不使用控件的构造函数以在运行时向文档添加控件。 相反，使用提供的帮助器方法[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 例如，使用<xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A>方法将一个按钮添加到工作表。 如果你想要添加这些帮助器方法不支持的控件，你可以使用 AddControl 方法。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。|  
+|以编程方式添加控件|不使用控件的构造函数以在运行时向文档添加控件。 相反，使用提供的帮助器方法[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 例如，使用<xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A>方法将一个按钮添加到工作表。 如果你想要添加这些帮助器方法不支持的控件，你可以使用 AddControl 方法。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。|  
 |复制控件|如果你复制的 Windows 窗体控件和在运行时将其粘贴到文档，一个空容器 ActiveX 控件将粘贴到文档。 在新位置中，不显示 Windows 窗体控件中，位于该原始控件背后的代码不会复制到容器 ActiveX 控件。|  
   
 ## <a name="limitations-in-document-level-projects"></a>文档级项目中的限制  
