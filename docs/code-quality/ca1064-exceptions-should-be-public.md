@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - ExceptionsShouldBePublic
 - CA1064
 ms.assetid: 83eb224c-2456-4368-acf4-3b3378e67759
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7779be831b32572addb6198b5a5be46616cdb1b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b376de69c288a084ff3bb33aba1e1b8a0bc881e5
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064：异常应该是公共的
 |||  
@@ -39,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>规则说明  
  内部异常仅在其自己的内部范围内可见。 当异常超出内部范围后，只能使用基异常来捕获该异常。 如果内部异常继承自<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>，外部代码将没有足够的信息来了解如何处理异常。  
   
- 但是，如果代码有更高版本用作基内部异常的公共异常，那么是合乎情理假定此代码进一步出将能够执行某些智能与使用基异常。 公共异常将包含与所提供的 T:System.Exception、 T:System.SystemException 或 T:System.ApplicationException 内容的详细信息。  
+ 但是，如果代码有更高版本用作基内部异常的公共异常，那么是合乎情理假定此代码进一步出将能够执行某些智能与使用基异常。 公共异常将包含与所提供的内容的详细信息<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  使该异常公共，或其派生从不是公共异常的内部异常<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>。  
