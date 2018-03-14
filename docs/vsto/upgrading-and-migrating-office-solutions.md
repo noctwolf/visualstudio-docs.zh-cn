@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: c81cba2c80f8eaabeae15fc5425ed7e02c378123
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -69,7 +71,7 @@ ms.lasthandoff: 01/10/2018
  Visual Studio 2013 中的 Office 项目可面向 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 和应用程序。 Visual Studio 将项目修改为面向已安装的 Office 的最新版本。 如果未安装任何上述版本的 Office，Visual Studio 将不会升级项目。  
   
 > [!NOTE]  
->  如果将 VSTO 外接程序项目升级为面向[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]或更高版本，请确保`ThisAddIn_Startup`事件处理程序的 VSTO 外接程序不包含访问应用程序中的文档的代码。 有关详细信息，请参阅 [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。  
+>  如果将 VSTO 外接程序项目升级为面向[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]或更高版本，请确保`ThisAddIn_Startup`事件处理程序的 VSTO 外接程序不包含访问应用程序中的文档的代码。 有关详细信息，请参阅 [在 Office 应用程序启动时访问文档](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。  
   
  对于文档级自定义， [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] 会将项目中具有二进制格式的文档（如具有 .xls 或 .doc 扩展名的文档）转换为 Office Open XML 格式。 有关 Open XML 的详细信息，请参阅 [新文件扩展名和 Open XML 格式简介](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1)。  
   
@@ -83,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  如果项目中的文档包含 Windows 窗体控件，则在升级该项目前你还必须安装 Visual Studio 2005 Tools for Office Second Edition Runtime。 如果在升级项目之前未在开发计算机上未安装此版本的运行时，升级后的项目可能包含编译或运行时错误。 完成项目升级后，如果它未被任何其他 Office 解决方案使用，你可以将 Visual Studio 2005 Tools for Office Second Edition Runtime 从开发计算机上卸载。 可以从 Microsoft 下载中心（网址为： [Microsoft Visual Studio 2005 Tools for Office Second Edition Runtime (VSTO 2005 SE) (x86)](http://go.microsoft.com/fwlink/?linkid=49612)）下载此版本的运行时作为可再发行组件包。  
   
 ### <a name="vsto-add-in-projects"></a>VSTO 外接程序项目  
- 如果原始项目的解决方案文件包含一个已配置为安装 VSTO 外接程序的安装项目或 InstallShield Limited Edition 项目，Visual Studio 将升级该项目，但不会对项目进行任何进一步的更改。 如果你想要继续使用 Windows Installer 文件来部署 VSTO 外接程序，则必须将安装项目或 InstallShield Limited Edition 项目修改为安装新的必备组件，如 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]、Visual Studio 2010 Tools for Office Runtime 和 VSTO 外接程序引用的主互操作程序集（可选）。 有关详细信息，请参阅 [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
+ 如果原始项目的解决方案文件包含一个已配置为安装 VSTO 外接程序的安装项目或 InstallShield Limited Edition 项目，Visual Studio 将升级该项目，但不会对项目进行任何进一步的更改。 如果你想要继续使用 Windows Installer 文件来部署 VSTO 外接程序，则必须将安装项目或 InstallShield Limited Edition 项目修改为安装新的必备组件，如 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]、Visual Studio 2010 Tools for Office Runtime 和 VSTO 外接程序引用的主互操作程序集（可选）。 有关详细信息，请参阅 [使用 Windows Installer 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
   
  如果你想要使用 ClickOnce 来部署 VSTO 外接程序，则可以完全删除安装项目或 InstallShield Limited Edition 项目。 有关使用 ClickOnce 部署 VSTO 外接程序的详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
   

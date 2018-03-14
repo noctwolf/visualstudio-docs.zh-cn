@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 01e9dfbe244d373eaa4e66c13e02c781b32b8691
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -32,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
  如果在设计时添加控件，则必须设置定位选项为每个控件。  
   
- 如果你以编程方式添加 Windows 窗体控件，并提供范围自变量，该控件自动调整大小范围内的单元格调整大小时。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 如果你以编程方式添加 Windows 窗体控件，并提供范围自变量，该控件自动调整大小范围内的单元格调整大小时。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 ## <a name="resizing-controls-at-design-time"></a>在设计时调整控件的大小  
   

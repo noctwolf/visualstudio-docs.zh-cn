@@ -4,15 +4,17 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-designers
+ms.technology:
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
-caps.latest.revision: "2"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: b815904a7ac2b8a050cd4b907698c43a91d929dc
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
@@ -20,7 +22,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 12/22/2017
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 源代码
-本主题包含并说明 [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md)的 XAML 源文件 L2DBForm.xaml。  
+本主题包含并说明 [使用 LINQ to XML 的 WPF 数据绑定示例](../designers/wpf-data-binding-using-linq-to-xml-example.md)的 XAML 源文件 L2DBForm.xaml。  
   
 ## <a name="overall-ui-structure"></a>总体 UI 结构  
  和典型的 WPF 项目一样，此文件包含一个父元素，该元素是一个与 <xref:System.Windows.Window> 命名空间中的派生类 `L2XDBFrom` 相关联的 `LinqToXmlDataBinding` XML 元素。  

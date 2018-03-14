@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,7 +14,8 @@ dev_langs:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -98,7 +100,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  此方法如果无需 VSTO 外接程序部署到用户的计算机上的安全位置。  
   
- 有关详细信息，请参阅 [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
+ 有关详细信息，请参阅 [使用 Windows Installer 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
   
 ##  <a name="Bypass"></a> Bypass Ribbon Reflection  
  如果使用 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]生成解决方案，请在部署解决方案确保用户已安装 Visual Studio 2010 Tools for Office Runtime 的最新版本。 该运行时的较旧版本反射到解决方案程序集，以定位功能区自定义。 此过程可导致 VSTO 外接程序加载变慢。  

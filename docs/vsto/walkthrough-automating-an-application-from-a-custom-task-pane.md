@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,7 +21,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 86f925cda43bf73354b94ecc966cdcae1a0c3ddd
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -139,9 +141,9 @@ ms.lasthandoff: 01/10/2018
   
 -   在 VSTO 外接程序中为不同应用程序创建自定义任务窗格。 有关支持自定义任务窗格的应用程序的详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
   
--   创建一个用于隐藏或显示自定义任务窗格的功能区按钮。 有关更多信息，请参见 [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
+-   创建一个用于隐藏或显示自定义任务窗格的功能区按钮。 有关更多信息，请参见 [演练：将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
   
--   为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅 [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
+-   为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅 [演练：在 Outlook 中与电子邮件一起显示自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义任务窗格](../vsto/custom-task-panes.md)   

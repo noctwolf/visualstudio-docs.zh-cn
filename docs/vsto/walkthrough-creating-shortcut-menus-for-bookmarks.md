@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -191,7 +193,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="next-steps"></a>后续步骤  
  以下是接下来可能要执行的一些任务：  
   
--   编写代码以响应在 Excel 中的主机控件的事件。 有关更多信息，请参见 [Walkthrough: Programming Against Events of a NamedRange Control](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
+-   编写代码以响应在 Excel 中的主机控件的事件。 有关更多信息，请参见 [演练：根据 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
   
 -   使用复选框来更改格式设置在书签中。 有关详细信息，请参阅[演练： 更改文档格式使用复选框控件](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
   
