@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: fe8b289dd30ea44331a2ae0c63dd451da8969369
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -29,7 +31,7 @@ ms.lasthandoff: 01/10/2018
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 > [!NOTE]  
->  无论是以编程方式复制工作表，还是最终用户手动复制工作表，新工作表都没有代码，并且新工作表上的控件无法运行。 这是因为新复制的工作表是 <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象而不 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主机项。 Windows 窗体控件和主机控件仅可以添加到主机项。 有关更多信息，请参见 [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
+>  无论是以编程方式复制工作表，还是最终用户手动复制工作表，新工作表都没有代码，并且新工作表上的控件无法运行。 这是因为新复制的工作表是 <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象而不 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主机项。 Windows 窗体控件和主机控件仅可以添加到主机项。 有关更多信息，请参见 [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
   
 ### <a name="to-add-a-copied-worksheet-to-a-workbook-in-a-document-level-customization"></a>将复制的工作表添加到文档级自定义项中的工作簿  
   
@@ -53,7 +55,7 @@ ms.lasthandoff: 01/10/2018
  [如何： 以编程方式选择工作表](../vsto/how-to-programmatically-select-worksheets.md)   
  [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)   
  [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
   
   

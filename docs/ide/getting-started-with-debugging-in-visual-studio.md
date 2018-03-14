@@ -4,23 +4,27 @@ ms.custom:
 ms.date: 12/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c75b5508cd23a2131bcdd64cf52aacc1486d2713
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Visual Studio 中的调试入门
 Visual Studio 提供一组强大的集成项目生成和调试工具。 本主题将介绍如何开始使用一组最基本的调试 UI 功能。  
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio"></a>我的代码不起作用。 请帮助我，Visual Studio！  
  你已经想到了编辑器并创建了一些代码。 现在，你想要开始调试该代码。 与大多数 IDE 一样，Visual Studio 有两个调试阶段：生成代码以捕获并解决项目和编译器错误；在环境中运行代码以捕获并解决运行时和动态错误。  
@@ -118,7 +122,7 @@ Visual Studio 提供一组强大的集成项目生成和调试工具。 本主�
 ### <a name="inspect-your-code-at-run-time"></a>在运行时检查代码  
  运行的代码命中断点并暂停时，标记为黄色的代码行（当前语句）尚未执行。 此时，建议执行当前语句，然后检查更改的值。 可以使用多个 step 命令在调试器中执行代码。 如果标记的代码是方法调用，可以按 F11 单步执行它。 还可以按 F10，“逐过程”执行该代码行。 有关其他命令及如何逐步执行代码的详细信息，请阅读[使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)。
 
- ![Visual Studio 运行时值检查](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value") 
+ ![Visual Studio 运行时值检查](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value")
 
  在上图中，可以按 F10 或 F11 使调试器前移一条语句（由于此处没有方法调用，因此这两个命令的结果相同）。
 
@@ -126,7 +130,7 @@ Visual Studio 提供一组强大的集成项目生成和调试工具。 本主�
 
  ![Visual Studio 运行时值检查](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
 
- 将鼠标悬停在变量上以查看它当前包含的值和引用。 如果出现意外值，则表示代码的前一行或调用行可能出现了 bug。  有关更深入的信息，请[了解更多](../debugger/getting-started-with-the-debugger.md)使用调试器的信息。 
+ 将鼠标悬停在变量上以查看它当前包含的值和引用。 如果出现意外值，则表示代码的前一行或调用行可能出现了 bug。  有关更深入的信息，请[了解更多](../debugger/getting-started-with-the-debugger.md)使用调试器的信息。
 
  此外，Visual Studio 显示“诊断工具”窗口，可从其中观察随时间变化的应用的 CPU 和内存使用情况。 之后在开发应用时，可以使用这些工具查找意外的高 CPU 使用率或内存分配。 结合使用“监视”窗口和断点，确定导致意外的高使用率或未释放的资源的原因。  有关详细信息，请参阅[分析功能简介](../profiling/profiling-feature-tour.md)。
 

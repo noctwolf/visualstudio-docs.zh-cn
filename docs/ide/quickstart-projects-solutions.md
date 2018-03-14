@@ -12,15 +12,17 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>快速入门：项目和解决方案
 
 这个 10 分钟的快速入门将探讨如何在 Visual Studio 中创建解决方案和项目。 我们会介绍项目的属性和其中包含的一些文件。 还会创建对第二个项目的引用。
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
 
 > [!TIP]
 > 在此快速入门中，我们会从头开始构建解决方案和项目，将此作为教学手段来介绍项目的概念。 一般来说，使用 Visual Studio 创建新项目时，很可能会用到 Visual Studio 提供的许多项目模板。

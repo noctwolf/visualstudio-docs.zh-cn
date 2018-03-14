@@ -14,15 +14,17 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bbdabf7d35c2705d028c84ddc6c6dc82f71ff48
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 082a89453d76ac70edfbd39681d33b6af2700cc7
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-use-the-code-editor"></a>快速入门：使用代码编辑器
 
 在这个 10 分钟的编辑器简介中，我们会向文件添加代码，了解 Visual Studio 编写、导航和了解代码的简便方法。
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
 
 此快速入门假定你已熟悉编程语言。 如果不熟悉，则建议首先查看其中一个编程快速入门，如使用 [Python](../ide/quickstart-python.md) 或 [C#](../ide/tutorial-csharp-aspnet-core.md) 创建 Web 应用，或使用 [Visual Basic](../ide/quickstart-visual-basic-console.md) 或 [C++](../ide/quickstart-cpp.md) 创建控制台应用。
 

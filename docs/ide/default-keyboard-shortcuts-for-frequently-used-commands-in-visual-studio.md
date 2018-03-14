@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45aaccf19518572211bf9468a133989e651504bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6389e5673f589f581818d68f5652dd9529da7500
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中的常用命令的默认键盘快捷键
 
@@ -66,7 +68,7 @@ ms.lasthandoff: 12/22/2017
 |编辑.删除|Delete [全局、团队资源管理器]<br /><br /> 或 Shift+Delete [序列图、UML 活动图、层关系图]<br /><br /> 或 Ctrl+Delete [类图]|  
 |编辑.查找|Ctrl+F [全局]|  
 |编辑.查找所有引用|Shift+F12 [全局]|  
-dit.FindinFiles|Ctrl+Shift+F [全局]|  
+|编辑.在文件中查找|Ctrl+Shift+F [全局]|  
 |编辑.查找下一个|F3 [全局]|  
 |编辑.查找下一个选定项|Ctrl+F3 [全局]|  
 |编辑.编排文档格式|Ctrl+K、Ctrl+D [文本编辑器]|  
@@ -82,7 +84,7 @@ dit.FindinFiles|Ctrl+Shift+F [全局]|
 |编辑.向下扩展列|Shift+Alt+向下箭 [文本编辑器]|  
 |编辑.上开新行|Ctrl+Enter [文本编辑器]|  
 |编辑.列出成员|Ctrl+J [文本编辑器、工作流设计器]<br /><br /> 或 Ctrl+K、Ctrl+L [工作流设计器]<br /><br /> 或 Ctrl+K、L [工作流设计器]|  
-dit.NavigateTo|Ctrl+, [全局]|  
+|Edit.NavigateTo|Ctrl+, [全局]|  
 |编辑.打开文件|Ctrl+Shift+G [全局]|  
 |编辑.改写模式|Insert [文本编辑器]|  
 |编辑.参数信息|Ctrl+Shift+空格键 [文本编辑器、工作流设计器]<br /><br /> 或 Ctrl+K、Ctrl+P [工作流设计器]<br /><br /> 或 Ctrl+K、P [工作流设计器]|  
@@ -93,7 +95,7 @@ dit.NavigateTo|Ctrl+, [全局]|
 |编辑.全选|Ctrl+A [全局]|  
 |编辑.选择当前字|Ctrl+W [文本编辑器]|  
 |编辑.取消选定|Esc [文本编辑器、报表设计器、设置设计器、Windows 窗体设计器、托管资源编辑器]|  
-dit.SurroundWith|Ctrl+K、Ctrl+S [全局]|  
+|编辑.外侧代码|Ctrl+K、Ctrl+S [全局]|  
 |编辑.左缩进|Shift+Tab [文本编辑器、报表设计器、Windows 窗体设计器]|  
 |编辑.切换所有大纲显示|Ctrl+M、Ctrl+L [文本编辑器]|  
 |编辑.切换书签|Ctrl+K、Ctrl+K [文本编辑器]|  
@@ -120,7 +122,7 @@ dit.SurroundWith|Ctrl+K、Ctrl+S [全局]|
 |文件.保存选定项|Ctrl+S [全局]|  
 |文件.在浏览器中查看|Ctrl+Shift+W [全局]|  
 
-## <a name="project"></a>Project
+## <a name="project"></a>项目
 
 |命令|键盘快捷键 [上下文]|  
 |--------------|-------------------------------------|  
@@ -155,7 +157,7 @@ dit.SurroundWith|Ctrl+K、Ctrl+S [全局]|
 |视图.服务器资源管理器|Ctrl+Alt+S [全局]|  
 |视图.显示智能标记|Ctrl+. [Global]<br /><br /> 或 Shift+Alt+F10 [全局、HTML 编辑器设计视图]|  
 |视图.解决方案资源管理器|Ctrl+Alt+L [全局]|  
-iew.TfsTeamExplorer|Ctrl+\\、Ctrl+M [全局]|  
+|视图.Tfs 团队资源管理器|Ctrl+\\、Ctrl+M [全局]|  
 |视图.工具箱|Ctrl+Alt+X [全局]|  
 |视图.查看代码|Enter [类图]<br /><br /> 或 F7 [设置设计器]|  
 |视图.视图设计器|Shift+F7 [HTML 编辑器源视图]|  

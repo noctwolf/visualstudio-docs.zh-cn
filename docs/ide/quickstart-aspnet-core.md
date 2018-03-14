@@ -7,23 +7,25 @@ ms.suite:
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: ba3c6655401501edf1f71e04f2aa249a6a001dda
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
-在这个对 Visual Studio 集成开发环境 (IDE) 的 5-10 分钟简介中，可以创建简单的 C# ASP.NET Core web 应用程序。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
+在这个对 Visual Studio 集成开发环境 (IDE) 的 5-10 分钟简介中，可以创建简单的 C# ASP.NET Core web 应用程序。
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
 
 ## <a name="create-a-project"></a>创建项目
 
@@ -86,6 +88,5 @@ ms.lasthandoff: 01/23/2018
 
 ## <a name="see-also"></a>请参阅
 
-[Visual Studio 中的 C# 和 ASP.NET 入门](tutorial-csharp-aspnet-core.md)  
-[借助 Visual Studio 开始使用 C# 和 Visual Basic](getting-started-with-visual-csharp-and-visual-basic.md)  
-[在 ASP.NET Core 中开始使用 Razor 页面](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+* [Visual Studio 中的 C# 和 ASP.NET 入门](tutorial-csharp-aspnet-core.md)
+* [在 ASP.NET Core 中开始使用 Razor 页面](/aspnet/core/tutorials/razor-pages/razor-pages-start)

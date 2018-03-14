@@ -5,21 +5,23 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 12/01/2017
+ms.date: 03/05/2018
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
-ms.workload: multiple
-ms.openlocfilehash: fee9a1edc3a96c3c1c2d7e4979a8ac589c55b86c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fb1cff04fcfb117c1b387ab1b16c5494fb561e86
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 组件目录
 
@@ -51,7 +53,7 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | 测试代理核心�
 
 组件 ID | name | 版本
 --- | --- | ---
-不可用 | 不可用 | 不可用
+n/a | 不可用 | n/a
 
 ## <a name="get-support"></a>获取支持
 有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。

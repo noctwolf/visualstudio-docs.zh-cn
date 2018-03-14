@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 8655a03659bd3b69e23fd155620d42df6d52386c
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -34,7 +36,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  下面的示例未使用密码保护；但是，在添加文档保护时，你可能想考虑使用密码。 有关详细信息，请参阅 [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)中的“文档保护器示例”。  
   
- 你也可以使用内容控件来保护文档的各个部分。 有关详细信息，请参阅 [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
+ 你也可以使用内容控件来保护文档的各个部分。 有关详细信息，请参阅 [如何：使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
   
 ## <a name="protecting-a-document-that-is-part-of-a-document-level-customization"></a>保护属于文档级自定义项的文档  
   

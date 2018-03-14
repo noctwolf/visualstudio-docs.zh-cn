@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -39,7 +40,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1512b4774efea9639f01135932ad076f6630ea12
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -77,12 +79,12 @@ ms.lasthandoff: 01/10/2018
   
  <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项并不会充当具有用户界面的控件的容器。 相反，此宿主项的设计器充当组件栏，这使你可以将一个组件（如 <xref:System.Data.DataSet>拖动到其设计图面上。 有关详细信息，请参阅 [Workbook Host Item](../vsto/workbook-host-item.md)。  
   
- 宿主项不能在文档级项目中以编程方式创建。 请改用`ThisDocument`， `ThisWorkbook`，或`Sheet`  *n*  Visual Studio 自动生成你的项目中在设计时的类。 这些生成的类派生自宿主项，并提供代码的入口点。 有关更多信息，请参见 [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
+ 宿主项不能在文档级项目中以编程方式创建。 请改用`ThisDocument`， `ThisWorkbook`，或`Sheet`  *n*  Visual Studio 自动生成你的项目中在设计时的类。 这些生成的类派生自宿主项，并提供代码的入口点。 有关更多信息，请参见 [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
   
 ### <a name="understanding-host-items-in-vsto-add-in-projects"></a>了解 VSTO 外接程序项目中的宿主项  
  在创建 VSTO 外接程序时，默认情况下你没有访问任何宿主项的权限。 但是，可以在运行时在 Word 和 Excel VSTO 加载项中生成 <xref:Microsoft.Office.Tools.Word.Document>、 <xref:Microsoft.Office.Tools.Excel.Workbook>和 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项。  
   
- 生成宿主项后，可以执行诸如向文档添加控件等任务。 有关更多信息，请参见 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 生成宿主项后，可以执行诸如向文档添加控件等任务。 有关更多信息，请参见 [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="host-controls"></a>宿主控件  
  主机控件扩展 Word 和 Excel 对象模型，如 Microsoft.Office.Interop.Word.ContentControl 中的各种用户界面 (UI) 对象和<xref:Microsoft.Office.Interop.Excel.Range>对象。  
@@ -127,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 -   将宿主控件从“数据源”  窗口拖动到文档和工作表。 这使你能够添加已绑定到数据的控件。 有关详细信息，请参阅[将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
- 在文档级别和 VSTO 外接程序项目中，可以在运行时将某些宿主控件添加到文档。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 在文档级别和 VSTO 外接程序项目中，可以在运行时将某些宿主控件添加到文档。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
  有关如何将宿主控件添加到文档的详细信息，请参阅以下主题：  
   
@@ -158,7 +160,7 @@ ms.lasthandoff: 01/10/2018
   
  如果在设计时向文档添加宿主控件，则不应在运行时以编程方式删除它，因为下次在代码中尝试使用控件时，将引发异常。 宿主控件的 `Delete` 方法仅删除在运行时添加到文档的宿主控件。 如果调用在设计时创建的宿主控件的 `Delete` 方法，将引发异常。  
   
- 例如，如果以编程方式添加到工作表，则 <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> 方法 <xref:Microsoft.Office.Tools.Excel.NamedRange> 仅成功删除 <xref:Microsoft.Office.Tools.Excel.NamedRange> ，这被称为动态创建宿主控件。 也可以通过将控件名称传递到 `Remove` 或 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> 属性的 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 方法来删除动态创建的宿主控件。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 例如，如果以编程方式添加到工作表，则 <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> 方法 <xref:Microsoft.Office.Tools.Excel.NamedRange> 仅成功删除 <xref:Microsoft.Office.Tools.Excel.NamedRange> ，这被称为动态创建宿主控件。 也可以通过将控件名称传递到 `Remove` 或 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> 属性的 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 方法来删除动态创建的宿主控件。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
  如果最终用户在运行时从文档中删除宿主控件，该解决方案可能会以意外的方式失败。 你可以使用 Word 和 Excel 中的文档保护功能来防止删除宿主控件。 有关详细信息，请参阅 [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)。  
   
@@ -172,7 +174,7 @@ ms.lasthandoff: 01/10/2018
 >  不应将 Excel 中 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 对象的 <xref:Microsoft.Office.Interop.Excel.Application> 属性设置为 **false**。 将此属性设置为 **false** 可防止 Excel 引发任何事件，包括宿主控件的事件。  
   
 ## <a name="see-also"></a>请参阅  
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [文档级自定义项编程](../vsto/programming-document-level-customizations.md)   
  [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)   

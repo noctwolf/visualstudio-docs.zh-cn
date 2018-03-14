@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1fa4c68b1d7dc89452376d6efc47e047f75d52d6
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ec06764bb898888657a144f682827896f52ce223
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>为 Python 项目定义自定义命令
 
@@ -154,7 +154,7 @@ Visual Studio 中的某些 Python 项目模板已使用其 `.targets` 文件添�
 | 自变量 | Optional | 指定要赋值给目标的参数字符串（若有）。 请注意，如果 TargetType 是 `script`，则向 Python 项目赋予参数，而不是 `python.exe`。 `code` TargetType 忽略此项。 |
 | ExecuteIn | 是 | 指定要运行命令的环境：<ul><li>控制台：（默认）如同直接在命令行上直接输入 Target 和 Arguments 一样运行它们。 这会在运行 Target 时显示命令窗口，该窗口随后自动关闭。</li><li>consolepause：同样在控制台中操作，但必须按键才能关闭窗口。</li><li>输出：运行 Target 并在 Visual Studio 的“输出”窗口中显示其结果。 如果 TargetType 为“pip”，则 Visual Studio 使用 Target 作为包名称并附加 Arguments。</li><li>repl：在 [Python 交互式窗口](interactive-repl.md)中运行 Target；可选显示名称用作窗口的标题。</li><li>无：与控制台的行为相同。</li></ul>|
 | WorkingDirectory | Optional | 要在其中运行命令的文件夹。 |
-| ErrorRegex<br>WarningRegEx | Optional | 仅可在 ExecuteIn 为 `output` 时使用。 这两个值均指定一个正则表达式，Visual Studio 使用此表达式来分析命令输出，以在“错误列表”窗口中显示错误和警报。 若未指定，则命令不会影响“错误列表”窗口。 有关 Visual Studio 所需内容的详细信息，请参阅[命令的捕获组](#named-capture-groups-for-regular-expression)。 |
+| ErrorRegex<br>WarningRegEx | Optional | 仅可在 ExecuteIn 为 `output` 时使用。 这两个值均指定一个正则表达式，Visual Studio 使用此表达式来分析命令输出，以在“错误列表”窗口中显示错误和警报。 若未指定，则命令不会影响“错误列表”窗口。 有关 Visual Studio 所需内容的详细信息，请参阅[命令的捕获组](#named-capture-groups-for-regular-expressions)。 |
 | RequiredPackages | Optional | 命令的包请求列表，其中命令的格式与 [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) 相同 (pip.readthedocs.io).。 “运行 PyLint”命令，例如指定 `pylint>=1.0.0`。 运行命令之前，Visual Studio 会先检查是否已安装列表中的所有包。 Visual Studio 使用 pip 命令来安装缺少的包。 |
 | 环境 | Optional | 运行命令前要定义的环境变量的字符串。 每个变量均使用 NAME=VALUE 形式，多个变量用分号隔开。 具有多个值的变量必须用单引号或双引号引起来，例如 'NAME=VALUE1;VALUE2' 形式。 |
 

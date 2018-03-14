@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: d6634fea629358368d3b61c5b505e5eec7ec0186
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -37,7 +39,7 @@ ms.lasthandoff: 01/10/2018
 -   你希望填充，范围传递作为参数传递给<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法。 此目标范围必须包括包含的初始值的范围。  
   
     > [!NOTE]  
-    >  不能将传递<xref:Microsoft.Office.Tools.Excel.NamedRange>控件来代替<xref:Microsoft.Office.Interop.Excel.Range>。 有关更多信息，请参见 [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
+    >  不能将传递<xref:Microsoft.Office.Tools.Excel.NamedRange>控件来代替<xref:Microsoft.Office.Interop.Excel.Range>。 有关更多信息，请参见 [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
   
 ## <a name="example"></a>示例  
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]

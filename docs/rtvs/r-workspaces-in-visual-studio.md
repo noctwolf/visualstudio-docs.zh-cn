@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 52867e51e158f2e2c2ccbccba7466c1f7246e128
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: bb520f317eb285bcc278ff9f37bb2dc25c91e950
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>控制 R 代码在工作区中的运行位置
 
@@ -31,17 +31,6 @@ ms.lasthandoff: 02/09/2018
 ![针对 Visual Studio (VS2017) 的 R 工具中的工作区](media/workspaces-window.png)
 
 在此窗口中，绿色选中标记表示 RTVS 绑定的活动工作区。 选择蓝色箭头来设置活动工作区。 通过每个工作区右侧的设置（齿轮）图标可更改工作区的名称、位置和命令行参数。 使用红色 X 可删除手动添加的工作区。
-
-本主题内容：
-
-- [保存和重置工作区](#saving-and-resetting-a-workspace)
-- [本地工作区](#local-workspaces)
-- [远程工作区](#remote-workspaces)
-- [远程工作区登录](#remote-workspace-logon)
-- [在工作区间进行切换](#switching-between-workspaces)
-- [本地和远程计算机上的目录](#directories-on-local-and-remote-computers)
-- [将项目文件复制到远程工作区](#copying-project-files-to-remote-workspaces)
-- [从远程工作区复制文件](#copying-files-from-a-remote-workspace)
 
 ## <a name="saving-and-resetting-a-workspace"></a>保存和重置工作区
 

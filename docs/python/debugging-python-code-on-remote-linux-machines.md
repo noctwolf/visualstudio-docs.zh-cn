@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f5f3edfc536dce9d42d09a099c3f53a8a8ab3c7
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 895abe0f9ce632f5c67c487726d0422607f8d427
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>在 Linux 上远程调试 Python 代码
 
@@ -48,29 +48,29 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
 
 1. 在远程计算机上，使用下面的代码创建名为 `guessing-game.py` 的 Python 文件：
 
-  ```python
-  import random
+    ```python
+    import random
 
-  guesses_made = 0
-  name = input('Hello! What is your name?\n')
-  number = random.randint(1, 20)
-  print('Well, {0}, I am thinking of a number between 1 and 20.'.format(name))
+    guesses_made = 0
+    name = input('Hello! What is your name?\n')
+    number = random.randint(1, 20)
+    print('Well, {0}, I am thinking of a number between 1 and 20.'.format(name))
 
-  while guesses_made < 6:
-      guess = int(input('Take a guess: '))
-      guesses_made += 1
-      if guess < number:
-          print('Your guess is too low.')
-      if guess > number:
-          print('Your guess is too high.')
-      if guess == number:
-          break
-  if guess == number:
-      print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
-  else:
-      print('Nope. The number I was thinking of was {0}'.format(number))
-  ```
- 
+    while guesses_made < 6:
+        guess = int(input('Take a guess: '))
+        guesses_made += 1
+        if guess < number:
+            print('Your guess is too low.')
+        if guess > number:
+            print('Your guess is too high.')
+        if guess == number:
+            break
+    if guess == number:
+        print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
+    else:
+        print('Nope. The number I was thinking of was {0}'.format(number))
+    ```
+
 1. 使用 `pip3 install ptvsd` 将 `ptvsd` 包安装到环境中。 （请注意：建议记录安装的 ptvsd 版本，以防需要进行故障排除；[ptvsd 列表](https://pypi.python.org/pypi/ptvsd)也显示了可用版本。）
 
 1. 将以下代码添加到 `guessing-game.py` 中其他代码前的最早可能点处，启用远程调试。 （虽然不是严格要求，但不能调试调用 `enable_attach` 函数前生成的任何后台线程。）
