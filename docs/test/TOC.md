@@ -50,7 +50,6 @@
 ### [运行 UWP 应用的单元测试](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [使用代码覆盖率确定所测试的代码量](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 ### [自定义代码覆盖率分析](customizing-code-coverage-analysis.md)
-### [在生成验证测试中分析代码覆盖率](analyzing-code-coverage-in-build-verification-tests.md)
 ### [代码覆盖率疑难解答](troubleshooting-code-coverage.md)
 ## [使用模拟器分离 Sharepoint 2010 应用程序的单元测试](using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md)
 # [实时单元测试](live-unit-testing-intro.md)
