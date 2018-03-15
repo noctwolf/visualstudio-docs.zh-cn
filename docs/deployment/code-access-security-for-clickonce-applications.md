@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,11 +24,12 @@ helpviewer_keywords:
 - ClickOnce applications, code access security policies
 - security, ClickOnce
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e4897ad027354ef54a77fdad3488d2e623264741
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -58,9 +60,9 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
   
  从不同位置部署的应用程序不经提示就会授予不同级别的权限。 例如，从 Internet 部署应用程序时，它会获得高度受限的权限集。 从本地 Intranet 安装时，它会获得更多权限，从 CD-ROM 安装时，它会获得完全信任权限。  
   
- 作为配置权限的起始点，你可以从 **“安全”** 页上的 **“区域”** 列表选择一个安全区域。 如果可能将从多个区域部署你的应用程序，请选择具有最少权限的区域。 有关详细信息，请参阅 [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。  
+ 作为配置权限的起始点，你可以从 **“安全”** 页上的 **“区域”** 列表选择一个安全区域。 如果可能将从多个区域部署你的应用程序，请选择具有最少权限的区域。 有关详细信息，请参阅 [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。  
   
- 可以设置的属性随着权限集变化；并非所有权限集都具有可配置属性。 有关你应用程序可以请求的权限的完整列表的详细信息，请参阅 <xref:System.Security.Permissions>。 有关如何为自定义区域设置权限的详细信息，请参阅 [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
+ 可以设置的属性随着权限集变化；并非所有权限集都具有可配置属性。 有关你应用程序可以请求的权限的完整列表的详细信息，请参阅 <xref:System.Security.Permissions>。 有关如何为自定义区域设置权限的详细信息，请参阅 [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
   
 ## <a name="debugging-an-application-that-has-restricted-permissions"></a>调试具有受限权限的应用程序  
  作为开发人员，很可能以完全信任权限运行你的开发计算机。 因此，调试应用程序时你不会看到与用户在使用受限权限运行应用程序时可能看到的安全性异常相同的安全性异常。  
@@ -71,7 +73,7 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
   
  此外，在编写代码时，代码编辑器中的 IntelliSense 功能将禁用未包含在已配置安全权限中的任意成员。  
   
- 有关更多信息，请参见 [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。  
+ 有关更多信息，请参见 [如何：使用受限权限对 ClickOnce 应用程序进行调试](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。  
   
 ## <a name="security-permissions-for-browser-hosted-applications"></a>浏览器托管的应用程序的安全权限  
  Visual Studio 为 Windows Presentation Foundation (WPF) 应用程序提供了以下项目类型：  
