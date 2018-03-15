@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,7 +22,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -50,7 +52,7 @@ ms.lasthandoff: 01/10/2018
   
 - [配置依赖组件为系统必备组件](#Configure)  
   
-- [Specify where you want to deploy the solution on the user's computer](#Location)  
+- [指定在用户计算机上安装解决方案的位置](#Location)  
   
 - [配置 VSTO 外接程序](#ConfigureRegisitry)  
   
@@ -77,7 +79,7 @@ ms.lasthandoff: 01/10/2018
 要让解决方案在用户计算机上运行，你必须以如下方式之一授予信任，或者用户必须在安装解决方案时响应信任提示。  
   
   
-- 使用能识别已知的受信任发布者的证书为清单签名。 有关更多信息，请参见 [Trusting the Solution by Signing the Application and Deployment Manifests](../vsto/granting-trust-to-office-solutions.md#Signing)。  
+- 使用能识别已知的受信任发布者的证书为清单签名。 有关更多信息，请参见[通过对应用程序和部署清单进行签名向解决方案授予信任](../vsto/granting-trust-to-office-solutions.md#Signing)。  
   
 - 将解决方案安装到用户的计算机上的 Program Files 目录中。  
   

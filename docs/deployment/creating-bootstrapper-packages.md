@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,11 +21,12 @@ helpviewer_keywords:
 - custom prerequisites
 - redistributables list
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
-caps.latest.revision: "45"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 5f269369084df3d81d323e75730fad27713831ca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -37,7 +39,7 @@ ms.lasthandoff: 12/22/2017
  引导程序首先检测是否已安装所有系统必备组件。 如果未安装系统必备组件，引导程序将首先显示相关许可协议。 接着，在最终用户接受许可协议后，将开始安装相应的系统必备组件。 否则，如果检测到所有的系统必备组件，引导程序将直接启动应用程序的安装程序。  
   
 ## <a name="creating-custom-packages"></a>创建自定义程序包  
- 可以使用 Visual Studio 中的 XML 编辑器来生成清单。 有关详细信息，请参阅 [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) 和 [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md)。 若要查看创建引导程序包的示例，请参阅 [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)。  
+ 可以使用 Visual Studio 中的 XML 编辑器来生成清单。 有关详细信息，请参阅 [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) 和 [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md)。 若要查看创建引导程序包的示例，请参阅 [演练：创建自定义引导程序以显示隐私提示](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)。  
   
  若要创建引导程序包，必须向引导程序清单生成器提供 EXE 或 MSI 文件形式的可再发行组件。 然后，引导程序清单生成器将会创建以下文件：  
   

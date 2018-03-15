@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 3a5ce9a160010d893a88f1ebc31b229597bba909
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -45,7 +47,7 @@ ms.lasthandoff: 01/10/2018
  [Office 文档上的 Windows 窗体控件概述](../vsto/windows-forms-controls-on-office-documents-overview.md)  
  提供有关在 Excel 和 Word 文档上使用 Windows 窗体控件以及它们与 Windows 窗体上控件之间的区别的信息。  
   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [在运行时将控件添加到 Office 文档](../vsto/adding-controls-to-office-documents-at-run-time.md)  
  描述如何将 Windows 窗体控件和主机控件添加到 Word 和 Excel 文档以及描述有关这些控件如何存留在文档中的限制的信息。  
   
 ## <a name="related-sections"></a>相关章节  
