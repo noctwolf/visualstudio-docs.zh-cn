@@ -17,16 +17,16 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccc9b014a3d31fef4e3f491da394cdf1e9fb3ecb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d2a38a2c0830b701796b8417c69a75582c5b2f89
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-provide-a-service"></a>如何： 提供服务
 VSPackage 可以提供其他 Vspackage 可以使用的服务。 若要提供服务，VSPackage 必须使用 Visual Studio 中注册该服务并添加服务。  
   
- <xref:Microsoft.VisualStudio.Shell.Package>类同时实现<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>和<xref:System.ComponentModel.Design.IServiceContainer>。 <xref:System.ComponentModel.Design.IServiceContainer>包含按需提供服务的回调方法。  
+ <xref:Microsoft.VisualStudio.Shell.Package>类同时实现<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>和<xref:System.ComponentModel.Design.IServiceContainer>。 <xref:System.ComponentModel.Design.IServiceContainer> 包含按需提供服务的回调方法。  
   
  有关服务的详细信息，请参阅[服务 Essentials](../extensibility/internals/service-essentials.md) 。  
   
@@ -35,7 +35,7 @@ VSPackage 可以提供其他 Vspackage 可以使用的服务。 若要提供服�
   
 #### <a name="implementing-a-service"></a>实现服务  
   
-1.  创建 VSIX 项目 (**文件 > 新建 > 项目 > Visual C# > Extensiblity > VSIX 项目**)。  
+1.  创建 VSIX 项目 (**文件 > 新建 > 项目 > Visual C# > 扩展性 > VSIX 项目**)。  
   
 2.  将 VSPackage 添加到项目。 选择中的项目节点**解决方案资源管理器**单击**添加 > 新项 > Visual C# 项 > 扩展性 > Visual Studio 包**。  
   
@@ -47,7 +47,7 @@ VSPackage 可以提供其他 Vspackage 可以使用的服务。 若要提供服�
   
     -   实现服务以及服务接口的类。  
   
-     下面的示例演示三种类型的非常基本实现。 服务类的构造函数必须设置服务提供程序。  
+     下面的示例演示三种类型的基本实现。 服务类的构造函数必须设置服务提供程序。  
   
     ```csharp  
     public class MyService : SMyService, IMyService  
@@ -117,7 +117,7 @@ VSPackage 可以提供其他 Vspackage 可以使用的服务。 若要提供服�
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  
-            return new SMyService(this);  
+            return new MyService(this);  
         return null;  
     }  
     ```  
@@ -125,7 +125,7 @@ VSPackage 可以提供其他 Vspackage 可以使用的服务。 若要提供服�
     > [!NOTE]
     >  Visual Studio 可以拒绝的请求提供服务。 如果另一个 VSPackage 已提供服务，它会以。  
   
-3.  现在，您可以获取该服务，使用它的方法。 我们将介绍此初始值设定项，但您可以获取的服务任意位置你想要使用服务。  
+3.  现在，您可以获取该服务，使用它的方法。 下面的示例演示使用初始值设定项中的服务，但你可以获得的服务任意位置你想要使用服务。  
   
     ```csharp  
     protected override void Initialize()  
@@ -136,7 +136,7 @@ VSPackage 可以提供其他 Vspackage 可以使用的服务。 若要提供服�
   
         MyService myService = (MyService) this.GetService(typeof(SMyService));  
         myService.Hello();  
-        string helloString = myService.myString;  
+        string helloString = myService.Goodbye();  
   
         base.Initialize();  
     }  

@@ -1,13 +1,13 @@
 ---
 title: "查看快照使用 IntelliTrace 步骤后的 Visual Studio |Microsoft 文档"
-ms.custom: 
+ms.custom: mvc
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 caps.latest.revision: 
 author: mikejo5000
@@ -15,27 +15,34 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e99b1bd44705a5a50c4138379a87a0ff8315ea29
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 步骤后的视图快照
 
 IntelliTrace 步骤后会自动编制的应用程序的每个断点和调试器快照步骤事件。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
 
-IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本，版本中开始提供，要求 Windows 10 周年 Update 或更高版本。 调试 ASP.NET、 WinForms、 WPF、 托管的控制台应用程序和托管的类库当前支持的功能。 当前不支持调试 ASP.NET Core、.NET 核心或 UWP 应用程序。 
+IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本，版本中开始提供，要求 Windows 10 周年 Update 或更高版本。 调试 ASP.NET、 WinForms、 WPF、 托管的控制台应用程序和托管的类库当前支持的功能。 从 Visual Studio 2017 Enterprise 版本 15.7 preview 1 开始，该功能还支持为 ASP.NET Core 和.NET 核心。 当前不支持调试 UWP 应用程序。
+
+在本教程中，你将：
+
+> [!div class="checklist"]
+> * 启用 Intellitrace 事件和快照
+> * 导航使用步骤上一页和步骤进命令事件
+> * 查看事件快照
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>启用 IntelliTrace 事件和快照模式 
 
-1. 在 Visual Studio Enterprise 中，转到**工具 > 选项 > IntelliTrace**设置，并选择选项**IntelliTrace 事件和快照**。 
+1. 在 Visual Studio Enterprise 中打开你的项目。
+
+1. 转到**工具 > 选项 > IntelliTrace**设置，并选择选项**IntelliTrace 事件和快照**。 
 
     ![启用 IntelliTrace 事件和快照模式](../debugger/media/intellitrace-enable-snapshots.png "启用 IntelliTrace 事件和快照模式")
 
-2. 在 Visual Studio 中打开项目。
-
-3. 在你的项目中设置一个或多个断点并启动调试 (按**F5**)，或启动调试时逐句通过代码 (**F10**或**F11**)。
+1. 在你的项目中设置一个或多个断点并启动调试 (按**F5**)，或启动调试时逐句通过代码 (**F10**或**F11**)。
 
     IntelliTrace 拍摄的快照应用程序的进程上每个调试器步骤和断点事件。 这些事件记录在**事件**选项卡中**诊断工具**窗口，同时还有其他 IntelliTrace 事件。 若要打开此窗口，请选择**调试** > **Windows** > **显示诊断工具**。
 
@@ -49,7 +56,7 @@ IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本�
 
 1. 通过使用事件之间导航**步骤向后 （Alt + [）**和**单步前进 (Alt +])**中调试工具栏按钮。
 
-    这些按钮导航中显示的事件**事件**选项卡中**诊断工具窗口**。 后退或前进到某个事件会自动激活所选事件的历史调试。
+    这些按钮导航中显示的事件**事件**选项卡中**诊断工具窗口**。 单步执行向后翻或转发到的事件自动激活[历史调试](../debugger/historical-debugging.md)所选事件。
 
     ![向后移动和转发按钮](../debugger/media/intellitrace-step-back-icons-description.png "后退一步和单步前进按钮")
 
@@ -73,9 +80,7 @@ IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本�
 
     ![概述 IntelliTrace 步骤回](../debugger/media/intellitrace-step-back-overview.png "概述的 IntelliTrace 步骤回")
 
-## <a name="next-steps"></a>后续步骤  
- 若要了解如何检查 Visual Studio 中的变量，请参阅[调试器功能教程](../debugger/debugger-feature-tour.md)  
- 有关历史调试的概述，请参阅[历史调试](../debugger/historical-debugging.md)。  
+    若要了解有关如何检查 Visual Studio 中的变量的详细信息，请参阅[调试器功能教程](../debugger/debugger-feature-tour.md)  
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
@@ -111,3 +116,10 @@ IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本�
 * 调试其过程具有大量唯一的内存区域，例如加载 Dll，数很大的应用程序的应用程序时使用启用的快照逐句性能可能会影响。 将在 Windows 的未来版本中解决此问题。 如果你遇到此问题，从而与与我们联系stepback@microsoft.com。 
 
 * 保存的文件时**调试 > IntelliTrace > 保存 IntelliTrace 会话**在事件和快照模式下，附加的数据从快照捕获中不可用时.itrace 文件。 在断点并单步事件，你将看到相同的信息，就像已在 IntelliTrace 事件仅模式下保存文件。 
+
+## <a name="next-steps"></a>后续步骤
+
+在本教程中，你已了解如何使用 IntelliTrace 步骤回。 你可能想要了解有关其他 IntelliTrace 功能的详细信息。
+
+> [!div class="nextstepaction"]
+> [IntelliTrace 功能](../debugger/intellitrace-features.md)

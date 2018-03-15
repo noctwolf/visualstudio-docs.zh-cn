@@ -41,16 +41,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.openlocfilehash: 95c6f87e120cd8a62aa3959548f968b70c820d39
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 也许你会为了查看代码变量的状态或查看调用堆栈而想要停止调试程序执行，此时，你可以设置断点。 在开发人员的工具箱中，它们是最重要的调试技术之一。  
   
-##  <a name="BKMK_Overview"></a>在源代码中设置行断点  
+##  <a name="BKMK_Overview"></a> 在源代码中设置行断点  
  源代码文件中，左边距中单击或通过将光标放在一行代码上，然后按 f9 键，可以在源代码中设置行断点的行。 断点显示为左边距中的一个红点，且该代码行也会变色：  
   
  ![设置断点](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
@@ -65,7 +65,30 @@ ms.lasthandoff: 01/24/2018
   
  可以在任意可执行代码行上设置断点。 例如，在上面的 C# 代码中，可以在变量声明、 `for` 循环或 `for` 循环内的任何代码上设置断点，但无法在命名空间、类声明或方法签名上设置断点。  
   
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> 设置其他种类的断点  
+##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> 设置函数断点  
+  调用函数时，可以中断执行。
+  
+1. 打开**断点**窗口，然后选择**新建 > 函数断点**。
+
+2. 输入中的函数名称**函数名称**框。 
+
+   若要缩小范围函数规范：
+   
+   使用完全限定的函数名称。 
+   示例： Namespace1.ClassX.MethodA()
+   
+   添加重载函数的参数类型。 
+   示例： MethodA （int，string）
+   
+   使用 ！ 来指定模块的符号。
+   示例： App1.dll ！MethodA
+   
+   在本机 c + + 中使用上下文运算符。
+   {函数，，[模块]}[+&lt;行相对于方法开头的偏移量&gt;] 示例: {MethodA，App1.dll}+2
+
+3. 在**语言**下拉列表中，选择你想要在发生中断的函数的特定语言。
+  
+##  <a name="BKMK_Set_a_breakpoint_in_a_function"></a> 设置其他种类的断点  
  还可以在调用堆栈中、在“反汇编”窗口中以及在本机 C++ 代码中、在数据条件或内存地址上设置断点。  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> 在调用堆栈窗口中设置断点  
@@ -178,7 +201,7 @@ ms.lasthandoff: 01/24/2018
   
 3.  在想要开展调查时添加一个新条件断点，例如将对象添加到集合中时。  
   
-4.  在“条件表达式”字段中使用对象 ID。 例如，如果变量`item`引用要添加到集合的对象，可使**item = = $n**，其中 **n** 是对象的 ID 号。  
+4.  在“条件表达式”字段中使用对象 ID。 例如，如果变量 `item` 引用将添加到集合中的对象，可使“item == $n” ，其中“n”  是对象的 ID 号。  
   
      会在将该对象添加到集合中时中断执行。  
   
@@ -213,7 +236,7 @@ ms.lasthandoff: 01/24/2018
 ##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> 断点操作和跟踪点  
  跟踪点是将消息打印到输出窗口的断点。 跟踪点的作用像这种编程语言中的一个临时跟踪语句。  
   
- 在 **“断点设置”** 窗口中，选中 **“操作”** 框。 在 **“操作”** 组中选择 **“将消息记录到输出窗口”** 。 可以打印通用字符串，例如 **this is a test**。 要包括变量或表达式的值，请将它放在大括号内。  
+ 在 **“断点设置”** 窗口中，选中 **“操作”** 框。 在 **“操作”** 组中选择 **“将消息记录到输出窗口”** 。 可以打印通用字符串，例如 **this is a test**。 要包括变量或表达式的值，请将它放在大括号内。  你还可以使用格式说明符 ([C#](../debugger/format-specifiers-in-csharp.md)和[c + +](../debugger/format-specifiers-in-cpp.md)) 包括在跟踪点的值。
   
  若要在命中跟踪点时中断执行，请清除 **“继续执行”** 复选框。 选中 **“继续执行”** 时，不会暂停执行。 在这两种情况下，都将打印消息。  
   

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1eaa8cc41e7b27d509e68d6785c34a9ae214ffd3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8c7a803933b3b1e6d353b9899cb8997dbaa6897e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="dynamically-adding-menu-items"></a>动态添加菜单项
 可以通过指定在运行时添加菜单项`DynamicItemStart`命令根据在 Visual Studio 命令表 (.vsct) 文件中，占位符按钮定义的标志，然后定义 （在代码中） 的菜单数项来显示和处理命令。 当加载 VSPackage 时，将占位符将被替换为动态菜单项。  
@@ -43,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 -   两个命令组、 一个包含菜单控制器和另一个包含在下拉列表中的菜单项  
   
--   类型的一个菜单元素`MenuController`  
+-   类型的一个菜单元素 `MenuController`  
   
 -   两个按钮，一个充当提供图标和工具栏上的工具提示的菜单项和一个占位符。  
   
@@ -209,7 +211,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="adding-the-command"></a>将命令添加  
  DynamicMenu 构造函数是在其中设置菜单命令，包括动态菜单和菜单项。  
   
-1.  在 DynamicMenuPackageGuids.cs，将添加该命令集的 GUID 和命令 ID:  
+1.  在 DynamicMenuPackage.cs，将添加该命令集的 GUID 和命令 ID:  
   
     ```csharp  
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
@@ -342,7 +344,7 @@ ms.lasthandoff: 12/22/2017
 [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]  
 [ProvideMenuResource("Menus.ctmenu", 1)]  
 [ProvideAutoLoad(UIContextGuids.SolutionHasMultipleProjects)]  
-[Guid(DynamicMenuPackageGuids.PackageGuidString)]  
+[Guid(DynamicMenuPackage.PackageGuidString)]  
 public sealed class DynamicMenuItemsPackage : Package  
 {}  
 ```  

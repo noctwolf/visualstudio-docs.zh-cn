@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7b1a6d953128317e89672d5d9b175ce7acc1b63f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何： 使用代码分析签入策略强制实现代码
 
@@ -31,23 +31,23 @@ Team foundation 版本控制的管理员可以将代码分析可维护性规则�
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>若要打开代码分析策略编辑器
 
-1.在**团队资源管理器**，右键单击团队项目，单击**团队项目设置**，然后单击**源代码管理**。
+1. 在**团队资源管理器**，右键单击团队项目，单击**团队项目设置**，然后单击**源代码管理**。
 
-     The **Source Control** dialog box appears.
+     **源代码管理**对话框随即出现。
 
-2.在**签入策略**卡，然后单击**添加**。
+2. 上**签入策略**卡，然后单击**添加**。
 
-     The **Add Check-in Policy** dialog box appears.
+     **添加签入策略**对话框随即出现。
 
-3.在**签入策略**列表中，选择**代码分析**复选框，并依次**确定**。
+3. 在**签入策略**列表中，选择**代码分析**复选框，并依次**确定**。
 
-     The **Code Analysis Policy Editor** dialog box appears.
+     **代码分析策略编辑器**对话框随即出现。
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>若要启用代码分析可维护性规则
 
-1.在**代码分析策略编辑器**对话框中，在**规则设置**，展开**可维护性规则**节点。
+1. 在**代码分析策略编辑器**对话框中，在**规则设置**，展开**可维护性规则**节点。
 
-2.选择以下的规则所对应的复选框：
+2. 选择以下的规则所对应的复选框：
 
     -   继承深度： **CA1501 AvoidExcessiveInheritance** -阈值： 在 5 个以上的层深度警告
 
@@ -59,9 +59,9 @@ Team foundation 版本控制的管理员可以将代码分析可维护性规则�
 
     此外，如果你想违反规则时阻止成功生成，则选择**将警告视为错误**规则说明旁边的复选框。
 
-3.单击**确定**。 现在，新签入策略应用到以后进行签入时。
+3. 单击 **“确定”**。 现在，新签入策略应用到以后进行签入时。
 
 ## <a name="see-also"></a>请参阅
 
-[代码度量值](../code-quality/code-metrics-values.md)
-[创建和使用代码分析签入策略](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [代码度量值](../code-quality/code-metrics-values.md)
+- [创建和使用代码分析签入策略](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

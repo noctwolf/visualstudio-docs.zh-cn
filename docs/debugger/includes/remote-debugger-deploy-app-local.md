@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: a55b2a12c9a45c5a3952e3e6f4e1627bec8ba520
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 37963e1ee5b7eeb0d07c36e0abe42c98eb6436fe
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 1. 在**解决方案资源管理器**，右键单击项目节点并选择**发布**(对于 Web 窗体，**发布 Web 应用**)。
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 10/27/2017
 5. 从 Visual Studio 计算机的 ASP.NET 项目目录复制到对 ASP.NET 应用程序配置的本地目录 (在此示例中， **C:\Publish**) Windows Server 计算机上。 在本教程中，我们假设你要手动复制，但你可以使用 PowerShell、 Xcopy 或 Robocopy 等其他工具。
 
     > [!CAUTION]
-    >  如果你需要更改代码或重新生成，你必须重新发布并重复此步骤。 复制到远程计算机的可执行文件必须与你的本地源和符号完全匹配。
+    >  如果你需要更改代码或重新生成，你必须重新发布并重复此步骤。 复制到远程计算机的可执行文件必须与你的本地源和符号完全匹配。    如果你不执行此将收到`cannot find or open the PDB file`警告 Visual Studio 中，当你尝试调试进程。
 
 6. 在 Windows 服务器上，验证可以正确运行该应用，通过在浏览器中打开应用程序。
 

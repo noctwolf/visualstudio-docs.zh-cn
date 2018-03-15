@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 273f7f94127929a3939d21414bd8da5c12abc83e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 01515701b6aeecc1166551c6376bfd6823e73976
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 功能
 
@@ -55,7 +55,7 @@ Visual Studio Enterprise 版中提供 IntelliTrace，但 Visual Studio Professio
 
 默认情况下，不启用此但 IntelliTrace 可以捕获的每个断点和调试器步骤事件，应用程序的快照，以及你可以在历史调试会话中查看这些快照。 快照为你提供了完整应用程序状态视图。 若要启用捕获快照，请转到**工具 > 选项 > IntelliTrace > 常规**，然后选择**IntelliTrace 事件和快照**。 有关详细信息，请参阅[查看使用 IntelliTrace 步骤后的快照](../debugger/how-to-use-intellitrace-step-back.md)
 
-快照可用于 Visual Studio Enterprise 2017 版本 15.5 和更高版本，并且它要求在 Windows 10 周年 Update 或更高版本。  快照不是当前可用于.NET Core 和 ASP.NET Core 应用程序。
+快照可用于 Visual Studio Enterprise 2017 版本 15.5 和更高版本，并且它要求在 Windows 10 周年 Update 或更高版本。  对于.NET Core 和 ASP.NET Core 应用，Visual Studio Enterprise 2017 版本 15.7 预览 1 是必需的。
 
 ## <a name="GoingFurther"></a> 收集 IntelliTrace 事件和调用信息
 

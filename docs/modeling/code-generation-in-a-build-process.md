@@ -14,11 +14,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8808fca81da991727fa439aae10d0e3541e81389
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2520d0b7b5aba982f3e9ca228ad6de85f6890d7f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>生成过程中的代码生成
 [文本转换](../modeling/code-generation-and-t4-text-templates.md)可以作为的一部分调用[生成过程](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案。 有一些专用于文本转换的生成任务。 T4 生成任务运行设计时文本模板，它们还编译运行时（已预处理的）文本模板。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/09/2018
   
  这意味着，你不能访问等项目文件的名称相同的方式生成 MSBuild 中的文本模板时。 但是，你可以[通过生成参数，将环境信息传递到文本模板和指令处理器](#parameters)。  
   
-##  <a name="buildserver"></a>配置计算机  
+##  <a name="buildserver"></a> 配置计算机  
  若要启用你的开发计算机上的生成任务，安装 Visual Studio 的建模 SDK。
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
  若要指定应覆盖只读文件，请插入此属性：  
   
- `<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`  
+ `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`  
   
  除非自定义后续处理步骤，否则会在覆盖文件时，在错误列表中记录相应的警告。  
   
@@ -208,7 +208,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
   
 ```  
   
-##  <a name="parameters"></a>将生成上下文数据传递到模板  
+##  <a name="parameters"></a> 将生成上下文数据传递到模板  
  你可以在项目文件中设置参数值。 例如，可以传递[生成](../msbuild/msbuild-properties.md)属性和[环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md):  
   
 ```xml  
@@ -242,7 +242,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 >  仅当你使用 MSBuild 时，`ResolveParameterValue` 才会通过 `T4ParameterValues` 获取数据。 当你使用 Visual Studio 转换模板时，参数将具有默认值。  
   
-##  <a name="msbuild"></a>在程序集中使用项目属性和 include 指令  
+##  <a name="msbuild"></a> 在程序集中使用项目属性和 include 指令  
  MSBuild 中，如 $ （solutiondir） 的 visual Studio 宏不起作用。 你可以改用项目属性。  
   
  编辑 .csproj 或 .vbproj 文件以定义项目属性。 此示例定义一个名为 `myLibFolder` 的属性：  

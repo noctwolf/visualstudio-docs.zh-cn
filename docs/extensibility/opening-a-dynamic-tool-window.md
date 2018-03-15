@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: tool windows, dynamic
+helpviewer_keywords:
+- tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c96250c79ea283117254a96875c3a1f03f4cb30b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 197bda3f825d0e709c1bc9ae08d8f0018b8b07c5
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="opening-a-dynamic-tool-window"></a>打开动态工具窗口
-从菜单中或等效的键盘快捷方式上的命令通常打开工具窗口。 有时，但是，你可能需要打开每当特定的 UI 上下文适用，并且 UI 上下文不再适用时，将关闭的工具窗口。 类似这样的工具窗口称为*动态*或*自动可见*。  
+从菜单中或等效的键盘快捷方式上的命令通常打开工具窗口。 有时，但是，你可能需要打开每当特定的 UI 上下文适用，并且 UI 上下文不再适用时，将关闭的工具窗口。 工具窗口的这些类型称为*动态*或*自动可见*。  
   
 > [!NOTE]
 >  有关预定义的 UI 上下文的列表，请参阅<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>。 有关  
@@ -37,21 +40,21 @@ ms.lasthandoff: 12/22/2017
   
 1.  创建一个名为的 VSIX 项目**DynamicToolWindow**并添加名为的工具窗口项模板**DynamicWindowPane.cs**。 有关详细信息，请参阅[使用工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
-2.  在 DynamicWindowPanePackage.cs 文件中查找 DynamicWindowPanePackage 声明。 添加<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>和 T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute 属性，以注册工具窗口。  
+2.  在 DynamicWindowPanePackage.cs 文件中查找 DynamicWindowPanePackage 声明。 添加<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>注册工具窗口的属性。  
   
     ```vb  
-    [[ProvideToolWindow(typeof(DynamicWindowPane)]  
+    [ProvideToolWindow(typeof(DynamicWindowPane)]  
     [ProvideToolWindowVisibility(typeof(DynamicWindowPane), VSConstants.UICONTEXT.SolutionExists_string)]  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
     [ProvideToolWindow(typeof(DynamicToolWindow.DynamicWindowPane))]  
-    [Guid(DynamicWindowPanePackageGuids.PackageGuidString)]  
+    [Guid(DynamicWindowPanePackage.PackageGuidString)]  
     public sealed class DynamicWindowPanePackage : Package  
     {. . .}  
     ```  
   
-     这将会注册命名 DynamicWindowPane 为一个暂时性的窗口，其中后关闭并重新打开 Visual Studio 并不会保持该工具窗口。 打开 DynamicWindowPane 每当<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string>应用，并且否则关闭。  
+     上述属性注册为一个暂时性的窗口，后关闭并重新打开 Visual Studio 并不会保持命名 DynamicWindowPane 的工具窗口。 打开 DynamicWindowPane 每当<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string>应用，并且否则关闭。  
   
 3.  生成项目并启动调试。 应显示的实验实例。 不应看到工具窗口。  
   

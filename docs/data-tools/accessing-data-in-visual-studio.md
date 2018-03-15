@@ -1,10 +1,6 @@
 ---
 title: "访问 Visual Studio 中的数据 |Microsoft 文档"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - "80025080"
@@ -13,18 +9,17 @@ helpviewer_keywords:
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ccee10630a4b5de0aebf361c7acf6cccf8cf49c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e7c4c9aada390259d4abd57484c20d25728ef91f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>访问 Visual Studio 中的数据
 
@@ -66,17 +61,17 @@ ms.lasthandoff: 02/09/2018
 许多数据库供应商和第三方通过 NuGet 包来支持 Visual Studio 集成。 在 nuget.org 上或通过 NuGet 包管理器在 Visual Studio 中，你可以浏览产品 (**工具** > **NuGet 包管理器** > **管理 NuGet解决方案包**)。 其他数据库产品与 Visual Studio 集成扩展。 你可以通过导航到浏览这些产品/服务在 Visual Studio Marketplace**工具**，**扩展和更新**，然后选择**联机**中的左窗格对话框。 有关详细信息，请参阅[for Visual Studio 兼容的数据库系统](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 > [!NOTE]
-> 对 SQL Server 2005 的延长的支持已于 2016 年 4 月 12 日结束。 没有数据工具在 Visual Studio 2015 及更高版本将继续使用 SQL Server 2005 在此日期之后能保证。 有关详细信息，请参阅[为 SQL Server 2005 结束支持公告](https://www.microsoft.com/server-cloud/products/sql-server-2005/)。
+> 对 SQL Server 2005 的延长的支持已于 2016 年 4 月 12 日结束。 没有数据工具在 Visual Studio 2015 及更高版本将继续使用 SQL Server 2005 在此日期之后能保证。 有关详细信息，请参阅[为 SQL Server 2005 结束支持公告](https://www.microsoft.com/sql-server/sql-server-2005)。
 
 ## <a name="net-languages"></a>.NET 语言
 
 所有.NET 数据访问，包括在.NET 核心中都基于 ADO.NET 中，为访问任何类型的数据源、 关系和非关系定义一个接口的一组类。 Visual Studio 具有几个工具和设计器，可使用 ADO.NET 来帮助你连接到数据库，操作数据，并向用户显示数据。 此部分中的文档介绍如何使用这些工具。 你可以直接对 ADO.NET 命令对象进行编程。 有关直接调用 ADO.NET Api 的详细信息，请参阅[ADO.NET](/dotnet/framework/data/adonet/index)。
 
-专门与 ASP.NET 相关的数据访问文档，请参阅[使用数据](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 站点上。 有关使用使用 ASP.NET MVC 的 Entity Framework 的教程，请参阅[Getting Started with Entity Framework 6 Code First 使用 MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
+专门与 ASP.NET 相关的数据访问文档，请参阅[使用数据](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 站点上。 有关使用使用 ASP.NET MVC 的 Entity Framework 的教程，请参阅[Getting Started with Entity Framework 6 Code First 使用 MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
 在 C# 或 Visual Basic 中的通用 Windows 平台 (UWP) 应用程序可以使用 Microsoft Azure SDK for.NET 来访问 Azure 存储空间和其他 Azure 服务。 Windows.Web.HttpClient 类，可与任何 RESTful 服务的通信。 有关详细信息，请参阅[如何连接到 HTTP 服务器是使用 Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)。
 
-对于本地计算机上的数据存储，建议的方法是使用 SQLite，在与应用程序相同的进程中运行。 如果需要对象关系映射 (ORM) 层，你可以使用实体框架。 有关详细信息，请参阅[数据访问](https://msdn.microsoft.com/windows/uwp/data-access/index)Windows 开发人员中心中。
+对于本地计算机上的数据存储，建议的方法是使用 SQLite，在与应用程序相同的进程中运行。 如果需要对象关系映射 (ORM) 层，你可以使用实体框架。 有关详细信息，请参阅[数据访问](/windows/uwp/data-access/index)Windows 开发人员中心中。
 
 如果你要连接到 Azure 服务，请务必下载最新[Azure SDK 工具](https://azure.microsoft.com/downloads/)。
 
@@ -92,8 +87,7 @@ ms.lasthandoff: 02/09/2018
 
 [LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)的更早版本生成的对象关系映射器。 它非常适用于不太复杂的方案，但不再正处于积极开发。
 
-[数据集](../data-tools/dataset-tools-in-visual-studio.md)  
-最早的三种建模技术。 它主要用于快速开发"forms over data"应用程序在其中你未处理大量数据或执行复杂的查询或转换。 数据集对象包含的数据表和 DataRow 逻辑上而不是.NET 对象更类似于 SQL 数据库对象的对象。 对于基于 SQL 数据源相对简单的应用程序，数据集可能仍是一个不错的选择。
+[数据集](../data-tools/dataset-tools-in-visual-studio.md)最旧的三种建模技术。 它主要用于快速开发"forms over data"应用程序在其中你未处理大量数据或执行复杂的查询或转换。 数据集对象包含的数据表和 DataRow 逻辑上而不是.NET 对象更类似于 SQL 数据库对象的对象。 对于基于 SQL 数据源相对简单的应用程序，数据集可能仍是一个不错的选择。
 
 没有无需使用任何一种技术。 在某些情况下，尤其是在性能非常重要，你可以只需使用 DataReader 对象从数据库读取，并将你所需的值复制到一个集合对象，如列表\<T >。
 
@@ -116,30 +110,31 @@ ms.lasthandoff: 02/09/2018
 ## <a name="python"></a>Python
 
 安装[Visual Studio 中的 Python 支持](../python/python-in-visual-studio.md)创建 Python 应用程序。 Azure 文档具有连接到数据，包括以下几个教程：
+
 - [Django 和在 Azure 上的 SQL 数据库](/azure/app-service/app-service-web-get-started-python)
 - [Django 和在 Azure 上的 MySQL](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
 - 使用[blob](/azure/storage/blobs/storage-quickstart-blobs-python)，[文件](/azure/storage/files/storage-python-how-to-use-file-storage)，[队列](/azure/storage/queues/storage-python-how-to-use-queue-storage)，和[表 (Cosmo DB)](/azure/cosmos-db/table-storage-how-to-use-python)。
 
 ## <a name="related-topics"></a>相关主题
 
-[数据、 设备和分析](https://msdn.microsoft.com/data-and-devices)提供对 Microsoft 智能云，包括 Cortana Analytics Suite 和物联网的支持的介绍。
+[Microsoft AI 平台](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;提供对 Microsoft 智能云，包括 Cortana Analytics Suite 和物联网的支持的介绍。
 
-[Microsoft Azure 存储空间](https://azure.microCsoft.com/documentation/services/storage/)介绍 Azure 存储空间，以及如何使用 Azure blob、 表、 队列和文件创建应用程序。
+[Microsoft Azure 存储空间](/azure/storage/)&mdash;介绍 Azure 存储空间，以及如何使用 Azure blob、 表、 队列和文件创建应用程序。
 
-[Azure SQL 数据库](https://azure.microsoft.com/documentation/services/sql-database/)介绍如何连接到 Azure SQL 数据库，关系数据库即服务。
+[Azure SQL 数据库](/azure/sql-database/)&mdash;介绍如何连接到 Azure SQL 数据库，关系数据库即服务。
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)介绍简化设计，浏览、 测试和部署的数据连接的应用程序和数据库的工具。
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)&mdash;介绍简化设计，浏览、 测试和部署的数据连接的应用程序和数据库的工具。
 
-[ADO.NET](/dotnet/framework/data/adonet/index)描述 ADO.NET 结构以及如何使用 ADO.NET 类来管理应用程序数据并与数据源和 XML 进行交互。
+[ADO.NET](/dotnet/framework/data/adonet/index)&mdash;描述 ADO.NET 结构以及如何使用 ADO.NET 类来管理应用程序数据并与数据源和 XML 进行交互。
 
-[ADO.NET 实体框架](https://msdn.microsoft.com/data/ef)描述如何创建允许开发人员对概念模型而不是直接针对关系数据库编程的数据应用程序。
+[ADO.NET 实体框架](https://msdn.microsoft.com/data/ef)&mdash;描述如何创建允许开发人员对概念模型而不是直接针对关系数据库编程的数据应用程序。
 
-[WCF 数据服务 4.5](/dotnet/framework/data/wcf/index)介绍如何使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]部署 web 或 intranet 上的数据服务实现[开放数据协议 (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)。
+[WCF 数据服务 4.5](/dotnet/framework/data/wcf/index)&mdash;介绍如何使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]部署 web 或 intranet 上的数据服务实现[开放数据协议 (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)。
 
-[Office 解决方案中的数据](../vsto/data-in-office-solutions.md)包含指向这些主题介绍了数据在 Office 解决方案中的工作方式。 这包括有关面向架构的编程、 数据缓存和服务器端数据访问的信息。
+[Office 解决方案中的数据](../vsto/data-in-office-solutions.md)&mdash;包含指向这些主题介绍了数据在 Office 解决方案中的工作方式。 这包括有关面向架构的编程、 数据缓存和服务器端数据访问的信息。
 
-[LINQ （语言集成查询）](/dotnet/csharp/linq/)描述内置于 C# 和 Visual Basic 和查询关系数据库、 XML 文档、 数据集和内存中集合的常见模型的查询功能。
+[LINQ （语言集成查询）](/dotnet/csharp/linq/)&mdash;描述内置于 C# 和 Visual Basic 和查询关系数据库、 XML 文档、 数据集和内存中集合的常见模型的查询功能。
 
-[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)讨论 XML 数据，调试 XSLT，.NET Framework XML 功能，使用和 XML 查询的体系结构。
+[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)&mdash;讨论 XML 数据，调试 XSLT，.NET Framework XML 功能，使用和 XML 查询的体系结构。
 
-[XML 文档和数据](/dotnet/standard/data/xml/index)概述了对全面、 集成的一组处理 XML 文档和.NET Framework 中的数据的类。
+[XML 文档和数据](/dotnet/standard/data/xml/index)&mdash;概述了对全面、 集成的一组处理 XML 文档和.NET Framework 中的数据的类。

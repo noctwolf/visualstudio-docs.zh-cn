@@ -22,11 +22,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c79c69e6c447b14e61fa67ccb8600d5d83bebd2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a9ff8c7942c773d138dd599956c41d1e583e6288
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="typeof-operator-javascript"></a>typeof 运算符 (JavaScript)
 返回标识表达式数据类型的字符串。  
@@ -41,9 +41,11 @@ typeof[(]expression[)] ;
 ## <a name="remarks"></a>备注  
  *表达式*自变量是为哪种类型查找信息任何表达式。  
   
- `typeof`运算符将类型信息作为字符串返回。 有六个可能的值`typeof`返回:"数字，""string，""布尔，""对象，""函数"和"未定义"。  
+ `typeof`运算符将类型信息作为字符串返回。 有七个可能的值`typeof`返回:"数字，""string，""布尔值"、"对象，""函数，""未定义，"和"未知"。  
   
  参数是可选的则括号`typeof`语法。  
+
+ 对象可能返回作为 XMLHTTPRequest 中的未知类型。 在 JavaScript 中不支持模拟 COM 对象可能还返回作为未知类型。
   
 ## <a name="example"></a>示例  
  下面的示例测试变量的数据类型。  
@@ -81,12 +83,12 @@ var result = (typeof obj.propNotDeclared === 'undefined');
 //  var result = (notDeclared === undefined);  
 ```  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Array.isArray 函数](../../javascript/reference/array-isarray-function-javascript.md)   
- [Object.getPrototypeOf 函数](../../javascript/reference/object-getprototypeof-function-javascript.md)   
+ [Object.getPrototypeOf Function](../../javascript/reference/object-getprototypeof-function-javascript.md)   
  [undefined 的常量](../../javascript/reference/undefined-constant-javascript.md)   
  [比较运算符](../../javascript/reference/comparison-operators-javascript.md)   
  [数据类型](../../javascript/data-types-javascript.md)   

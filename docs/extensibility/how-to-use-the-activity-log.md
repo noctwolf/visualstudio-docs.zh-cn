@@ -4,29 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c27934d043a067f88bd9f47efe7d8f7972959e10
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9f45e18ebb2ab3e83041ea0e1ba5c2de4c9b8532
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-use-the-activity-log"></a>如何： 使用活动日志
 Vspackage 可以将消息写入活动日志。 此功能非常适合在零售环境中进行调试 Vspackage。  
   
 > [!TIP]
->  活动日志始终开启。 Visual Studio 将保持最后一个个条目，以及具有常规配置信息的前 10 个项的一个循环缓冲区。  
+>  活动日志始终开启。 Visual Studio 将保留最后 100 个条目，以及具有常规配置信息的前 10 个项的一个循环缓冲区。  
   
 ### <a name="to-write-an-entry-to-the-activity-log"></a>若要向活动日志写入条目  
   
@@ -42,15 +44,17 @@ Vspackage 可以将消息写入活动日志。 此功能非常适合在零售环
         "Called for: {0}", this.ToString()));  
     ```  
   
-     此代码获取<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>服务并将强制转换到<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>写入到活动日志中，使用当前区域性上下文的信息项。  
+     此代码获取<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>服务并将强制转换到<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> 写入到活动日志中，使用当前区域性上下文的信息项。  
   
 2.  加载 VSPackage 后 （通常在调用命令或打开一个窗口），会在活动日志中写入文本。  
   
 ### <a name="to-examine-the-activity-log"></a>若要检查活动日志  
   
-1.  活动日志的子文件夹中查找 Visual Studio 数据： *%appdata%*\Microsoft\VisualStudio\15.0\ActivityLog.XML...  
+1.  运行使用 Visual Studio [/日志](../ide/reference/log-devenv-exe.md)命令行开关以在你的会话期间将 ActivityLog.xml 写入到磁盘。
+
+2.  关闭 Visual Studio 后, 找到活动日志的子文件夹中的 Visual Studio 数据： *%appdata%*\Microsoft\VisualStudio\15.0\ActivityLog.xml。  
   
-2.  使用任何文本编辑器中打开活动日志。 下面是一个典型条目：  
+3.  使用任何文本编辑器中打开活动日志。 下面是一个典型条目：  
   
     ```  
     Called for: Company.MyApp.MyAppPackage ...  
@@ -61,7 +65,8 @@ Vspackage 可以将消息写入活动日志。 此功能非常适合在零售环
   
  你应写入之前先获取活动日志。 不要缓存或保存活动日志供将来使用。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
+ [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
  [故障排除的 Vspackage](../extensibility/troubleshooting-vspackages.md)   

@@ -1,5 +1,5 @@
 ---
-title: "__proto__ 属性 (Object) (JavaScript) |Microsoft 文档"
+title: "__proto__属性 (Object) (JavaScript) |Microsoft 文档"
 ms.custom: 
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,17 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e38669c400acba6f4ed3c4ee3fb5836c31b1bc00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f8659c7a4ece5e30378838f20341ec6712f77ca3
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="proto-property-object-javascript"></a>__proto__属性 (Object) (JavaScript)
 包含对指定的对象的内部原型的引用。  
+
+> [!WARNING]
+> `__proto__`属性是旧的功能。 使用[Object.getPrototypeOf](../reference/object-getprototypeof-function-javascript.md)相反。
   
 ## <a name="syntax"></a>语法  
   
@@ -37,7 +40,7 @@ object.__proto__
   
 #### <a name="parameters"></a>参数  
  `object`  
- 必需。 在其上设置原型对象。  
+ 必须的。 在其上设置原型对象。  
   
 ## <a name="remarks"></a>备注  
  `__proto__`属性可以用于设置对象的原型。  
@@ -108,8 +111,8 @@ if (console && console.log) {
 }  
 ```  
   
-## <a name="requirements"></a>要求  
+## <a name="requirements"></a>惠?  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [原型和原型继承](../../javascript/advanced/prototypes-and-prototype-inheritance.md)
