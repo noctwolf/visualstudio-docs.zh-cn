@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1e82a4428dde7aa25c7e9a3d7d74017b9f2a874f
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -57,9 +59,9 @@ ms.lasthandoff: 01/10/2018
 ##  <a name="ClassNames"></a> 了解类型和 Message 类名称  
  Outlook 项目的类型名称与 Outlook 项目的 message 类名称不同。 例如，RSS 项的类型名称是 Microsoft.Office.Interop.Outlook.PostItem。 RSS 项的 message 类名是 IPM。Post.RSS。  
   
- 使用类型名称可在代码中引用 Outlook 项目。 有关类型名称的列表，请参阅 [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md)。  
+ 使用类型名称可在代码中引用 Outlook 项目。 有关类型名称的列表，请参阅 [将窗体区域与 Outlook 邮件类关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)。  
   
- 在  “新建 Outlook 窗体区域”向导中使用 Outlook 项目的 message 类名可将该项目与窗体区域关联。 有关有效 message 类名的列表，请参阅 [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md)。  
+ 在  “新建 Outlook 窗体区域”向导中使用 Outlook 项目的 message 类名可将该项目与窗体区域关联。 有关有效 message 类名的列表，请参阅 [将窗体区域与 Outlook 邮件类关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)。  
   
 ##  <a name="ReadingPane"></a> Designing Adjoining Form Regions for the Reading Pane  
  可以使用 Outlook 阅读窗格在不打开 Outlook 项目的情况下预览项目。 阅读窗格为只读。 因此，项目和窗体区域在阅读窗格中打开时，添加到相邻窗体区域（例如文本框）的输入控件可能不像预期那样工作。  

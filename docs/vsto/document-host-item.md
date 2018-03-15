@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,7 +22,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 85c3520d852575eef6e9dae1fd8c1120b9eccd74
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -48,7 +50,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="understanding-document-host-items-in-application-level-projects"></a>了解应用程序级项目中的文档宿主项  
  在 VSTO 外接程序项目中，可以在运行时为 Word 中打开的任何文档生成 <xref:Microsoft.Office.Tools.Word.Document> 宿主项。 可以使用 <xref:Microsoft.Office.Tools.Word.Document> 宿主项将控件添加到关联的文档中，或处理 <xref:Microsoft.Office.Interop.Word.Document> 对象中不可用的事件。  
   
- 若要生成<xref:Microsoft.Office.Tools.Word.Document>宿主项，请使用 GetVstoObject 方法。 有关更多信息，请参见 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 若要生成<xref:Microsoft.Office.Tools.Word.Document>宿主项，请使用 GetVstoObject 方法。 有关更多信息，请参见 [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   

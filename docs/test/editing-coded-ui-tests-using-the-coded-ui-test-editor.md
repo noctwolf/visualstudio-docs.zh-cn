@@ -197,7 +197,7 @@ ms.lasthandoff: 01/25/2018
  *我应该知道哪些其他内容？*  
  **备注**  
   
--   ![先决条件](../test/media/prereq.png "Prereq") 如果需要确保特定控件在 UI 操作前可用，应考虑使用相应的 UITestControl.WaitForControlXXX() 方法将自定义代码添加到测试方法中。 [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Making Coded UI Tests Wait For Specific Events During Playback](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。  
+-   ![先决条件](../test/media/prereq.png "Prereq") 如果需要确保特定控件在 UI 操作前可用，应考虑使用相应的 UITestControl.WaitForControlXXX() 方法将自定义代码添加到测试方法中。 [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][播放期间让编码的 UI 测试等待特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。  
   
  **提示**  
   

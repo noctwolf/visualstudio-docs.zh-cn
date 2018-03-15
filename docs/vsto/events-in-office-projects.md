@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -35,7 +36,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 31d7e8483865ed03830376012e780bac87fdda07
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -138,7 +140,7 @@ ms.lasthandoff: 01/10/2018
   
  `ThisAddIn_Startup` 事件处理程序中的代码是要运行的第一个用户代码，除非你的 VSTO 外接程序替代 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 在这种情况下，将在 `ThisAddIn_Startup` 之后调用 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>事件处理程序。  
   
- 未添加中的代码`ThisAdd-In_Startup`如果代码需要文档才能打开的事件处理程序。 相反，请将该代码添加到用户创建或打开文档时 Office 应用程序引发的事件。 有关详细信息，请参阅 [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。  
+ 未添加中的代码`ThisAdd-In_Startup`如果代码需要文档才能打开的事件处理程序。 相反，请将该代码添加到用户创建或打开文档时 Office 应用程序引发的事件。 有关详细信息，请参阅 [在 Office 应用程序启动时访问文档](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。  
   
  有关 VSTO 外接程序的启动顺序的详细信息，请参阅[体系结构的 VSTO 外接程序](../vsto/architecture-of-vsto-add-ins.md)。  
   
