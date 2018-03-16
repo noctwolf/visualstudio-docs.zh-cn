@@ -41,7 +41,7 @@ ms.lasthandoff: 03/09/2018
 
      ![VS 安装程序的 ASP.NET 工作负载](../ide/media/quickstart-aspnet-workload.png)
 
-1. 在“新建 ASP.NET Core Web 应用程序”对话框中，从顶部下拉菜单选择“ASP.NET Core 2.0”。 （如果没有在列表中看到“ASP.NET Core 2.0”，请通过“下载”链接进行安装，该链接显示在对话框顶部附近的黄色栏中。。）选择 **“确定”**。
+1. 在“新建 ASP.NET Core Web 应用程序”对话框中，从顶部下拉菜单选择“ASP.NET Core 2.0”。 （如果没有在列表中看到“ASP.NET Core 2.0”，请通过“下载”链接进行安装，该链接显示在对话框顶部附近的黄色栏中。）选择 **“确定”**。
 
    ![新建 ASP.NET Core Web 应用程序对话框](../ide/media/quickstart-aspnet-core20.png)
 
