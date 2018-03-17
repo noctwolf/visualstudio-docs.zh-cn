@@ -13,17 +13,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 7e911686d1f8bff191c439f4fc2b92c37d60a31f
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.openlocfilehash: b16c0627fbebf13566726a7f4bfb56ecb2e6a64a
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 03/17/2018
 ---
 1.  设备或服务器你想要调试的计算机 （而不是运行 Visual Studio 的计算机） 上，获取远程工具的正确版本。
 
     |版本|链接|说明|
     |-|-|-|
-    |Visual Studio 2017 版本 15.5|[远程工具](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|始终下载匹配设备操作系统 （x86 或 x64） 的版本。 如果启用了增强的安全模式 (Windows Server)，你必须添加新的受信任的站点如果系统提示。|
+    |Visual Studio 2017 （最新版本）|[远程工具](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|始终下载匹配设备操作系统 （x86 或 x64） 的版本。 如果启用了增强的安全模式 (Windows Server)，你必须添加新的受信任的站点如果系统提示。|
     |Visual Studio 2017 （较旧）|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|针对早期版本的 Visual Studio 2017 的远程工具是可从 My.VisualStudio.com。如果出现提示，联接免费的 Visual Studio Dev Essentials 组或使用你的 Visual Studio 订阅登录 id。 如果启用了增强的安全模式 (Windows Server)，你必须添加新的受信任的站点如果系统提示。|
     |Visual Studio 2015 Update 3|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果出现提示，联接免费的 Visual Studio Dev Essentials 组或使用你的 Visual Studio 订阅登录 id。 如果启用了增强的安全模式 (Windows Server)，你必须添加新的受信任的站点如果系统提示。|
     |Visual Studio 2015 （较旧）|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果出现提示，联接免费的 Visual Studio Dev Essentials 组或使用你的 Visual Studio 订阅登录 id。 如果启用了增强的安全模式 (Windows Server)，你必须添加新的受信任的站点如果系统提示。|

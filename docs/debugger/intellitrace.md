@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afad8b464e266477c4edbb97ffc3eb3d8436e4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 8f4edf6c446bdcd35585a60d97965d2d6ee21ad1
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -58,8 +58,8 @@ ms.lasthandoff: 02/21/2018
 |||
 |-|-|
 |**支持**|的使用.NET Framework 2.0 或更高版本 Visual Basic 和 Visual C# 应用程序。<br/>你可以调试大多数应用程序，包括 ASP.NET、Microsoft Azure、Windows 窗体、WCF、WPF、Windows 工作流、SharePoint 2010、SharePoint 2013 和 64 位应用。<br/>若要调试 SharePoint 应用程序使用 IntelliTrace，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要调试 intellitrace 的 Microsoft Azure 应用程序，请参阅[调试使用 IntelliTrace 和 Visual Studio 发布云服务](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。|
-|**有限的支持**|.NET 核心和 ASP.NET Core 应用仅支持事件<br />的实验证明 F # 应用程序<br />-UWP 应用仅支持事件|
-|不支持|C + +、 其他语言和脚本<br />-Windows 服务、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]应用|
+|**有限的支持**|.NET 核心和 ASP.NET Core 应用某些仅事件 （MVC 控制器、 ADO.NET 和 HTTPClicent 事件） 中支持本地调试。 .NET 核心或 ASP.NET Core 应用不支持独立收集器。<br />的实验证明 F # 应用程序<br />-UWP 应用仅支持事件|
+|**不支持**|C + +、 其他语言和脚本<br />-Windows 服务、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]应用|
 
 > [!NOTE]
 > 如果你想要调试的进程已在运行，你可以仅收集 IntelliTrace 事件 （没有调用信息）。 你可以附加到本地计算机上的 32 位或 64 位进程。 未收集发生之前附加到进程的事件。
@@ -132,7 +132,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
 - **.NET framework 事件**
 
-     默认情况下，IntelliTrace 记录最常见的 .NET Framework 事件。 例如:
+     默认情况下，IntelliTrace 记录最常见的 .NET Framework 事件。 例如：
 
     - 对于选中复选框事件，IntelliTrace 将收集复选框状态和文本。
 
