@@ -13,14 +13,107 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 40356c5d80ee8572b4e5a6e468b9abf2919524de
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: f80e5eb1d82fab7167e86550739faaaa19000786
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>更改日志（Visual Studio Tools for Unity）
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="3604"></a>3.6.0.4
+ 发布时间 2018-03-05
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **项目生成：**
+
+    -   修复了 Mono 版本检测的问题。
+
+-   **集成：**
+
+    -   修复了 2018.1 和插件激活的计时问题。
+
+## <a name="3603"></a>3.6.0.3
+ 发布时间 2018-02-23
+
+### <a name="new-features"></a>新增功能
+
+-   **项目生成：**
+
+    -   添加了对 .Net Standard 的支持。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **项目生成：**
+
+    -   修复了 Unity 目标框架检测的问题。
+
+-   **调试器：**
+
+    -   修复了用户代码外部引发的异常中断的问题。
+
+## <a name="3602"></a>3.6.0.2
+ 发布时间 2018-02-07
+
+### <a name="new-features"></a>新增功能
+
+-   **集成：**
+
+    -   更新 UnityMessage API 接口 2017.3。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成：**
+
+    -   仅对外部更改重载项目（含有限制）。
+ 
+## <a name="3601"></a>3.6.0.1
+ 发布时间 2018-01-24
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成：**
+
+    -   固定自动 pdb 到 mdb 调试符号转换。
+    
+    -   修复了在尝试更改数组大小时对 EditorPrefs.GetBool 的间接调用影响检查器的问题。
+ 
+## <a name="3600"></a>3.6.0.0
+ 发布时间 2018-01-10
+
+### <a name="new-features"></a>新增功能
+
+-   **项目生成：**
+
+    -   添加了对 2018.1 MonoIsland 引用模型的支持。
+
+-   **评估版：**
+
+    -   添加了对 $exception 标识符的支持。
+
+-   **调试器：**
+
+    -   添加了对含有新 Unity 运行时的 DebuggerHidden/DebuggerStepThrough 属性的支持。
+    
+-   **向导：**
+
+    -   引入向导的“最新”版本。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **项目生成：**
+
+    -   修复了播放器项目的项目 GUID 计算。
+
+-   **调试器：**
+
+    -   修复了处理突发事件的争用问题。
+    
+-   **向导：**
+
+    -   在插入方法前刷新 roslyn 上下文。
 
 ## <a name="3503"></a>3.5.0.3
  发布时间 2018-01-09

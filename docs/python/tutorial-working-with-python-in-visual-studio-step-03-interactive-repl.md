@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60b960a4a8f81f14bbbc2035670e6b9fd80b5312
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 598aa6332d69f7818f9f67134c3207a9bd365757
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>步骤 3：使用 REPL 交互窗口
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/09/2018
 
 1. 通过以下方式打开交互窗口：在解决方案资源管理器中右键单击项目的 Python 环境（比如先前图片中显示的“Python 3.6（32 位）”），选择“打开交互窗口”。 也可以从 Visual Studio 主菜单选择“视图”>“其他窗口”>“Python 交互窗口”。
 
-1. 交互窗口在编辑器下方打开，其中显示常用的 `>>>` Python REPL 提示符。 用户通常想要放大交互窗口，这一点可通过拖动两个窗口之间的分隔条实现：
+1. 交互窗口在编辑器下方打开，其中显示标准的 `>>>` Python REPL 提示符。 可通过“环境”下拉列表选择要使用的特定解释器。 通常还会想要放大交互窗口，这一点可通过拖动两个窗口之间的分隔条实现：
 
     ![Python 交互窗口以及通过拖动重设大小](media/vs-getting-started-python-11-interactive1b.png)
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 02/09/2018
 > [!div class="nextstepaction"]
 > [在调试器中运行代码](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-### <a name="going-deeper"></a>深入了解
+## <a name="going-deeper"></a>深入了解
 
 - [使用交互窗口](python-interactive-repl-in-visual-studio.md)
 - [使用 IPython REPL](interactive-repl-ipython.md)

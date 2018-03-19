@@ -2,7 +2,7 @@
 title: "在 Visual Studio 中使用 Python - 第 5 步：安装包 | Microsoft Docs"
 description: "在 Visual Studio 中使用 Python 的核心教程的第 5 步，展示了用于在 Python 环境中管理包的 Visual Studio 功能。"
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb0890d5f9433e1f73039e4036b884d7bfcb7933
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d633ce061d0624c44060c5e059cf9b29733260d9
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>步骤 5：在 Python 环境中安装程序包
 
@@ -44,19 +44,21 @@ Python 开发者社区制作了数千个有用的程序包，用户可以将它�
   ![在环境中安装 matplotlib](media/environments-add-matplotlib1.png)
 
 1. 如果系统提示同意提升，请同意。
- 
-1. 安装程序包后，它会显示在“Python 环境”窗口中。 单击程序包右侧的 **X** 可卸载它。 
+
+1. 安装程序包后，它会显示在“Python 环境”窗口中。 单击程序包右侧的 **X** 可卸载它。
 
   ![在环境中完成 matplotlib 的安装](media/environments-add-matplotlib2.png)
 
   环境下方的小进度条指示 Visual Studio 正在为新安装的程序包生成 IntelliSense 数据库。 “IntelliSense”选项卡也显示了更多详细信息。 请注意，完成该数据库之前，编辑器中的自动完成和语法检查等 IntelliSense 功能针对该程序包处于非活动状态。
 
+  请注意，Visual Studio 2017 版本 15.6 及更高版本采用不同且更快的方法来使用 IntelliSense，并在“IntelliSense”选项卡上显示一条大意如此的消息。
+
 1. 通过选择“文件”>“新建”>“项目”创建新项目，然后选择“Python 应用程序”模板。 在随即出现的代码文件中，粘贴以下代码，以创建像之前的教程步骤一样的余弦波，只不过这次以图形方式绘制：
 
     ```python
+    from math import radians
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
-    from math import radians
 
     def main():
         x = np.arange(0, radians(1800), radians(12))

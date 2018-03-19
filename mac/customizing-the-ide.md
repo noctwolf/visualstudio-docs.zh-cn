@@ -6,27 +6,27 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: f0192b63c76fe4c3fe51c0f5aa6700e072fb80d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bbc2f70f0d6774269f481cad5571dd9b78bac2da
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-ide"></a>自定义 IDE
 
-可以通过多种方式自定义 Visual Studio for Mac，因此用户可以在同时满足效率和美观需求的环境中开发应用。 本主题将探讨调整 Visual Studio for Mac 的各种方式以满足不的需要。
+可以通过多种方式自定义 Visual Studio for Mac，因此用户可以在同时满足效率和美观需求的环境中开发应用。 本文将探讨调整 Visual Studio for Mac 的各种方式以满足你的需要。
 
 ## <a name="dark-theme"></a>深色主题
 
 ![深色主题视图](media/customizing-the-ide-image7a.png)
 
-通过浏览到“Visual Studio”>“首选项...”>“环境”>“视觉样式”并从“用户界面主题”下拉列表中选择所需主题，可以切换 Visual Studio for Mac 的主题，如下方屏幕截图所示：
+通过浏览到“Visual Studio”>“首选项...”>“环境”>“视觉样式”并从“用户界面主题”下拉列表中选择所需主题，可以切换 Visual Studio for Mac 的主题，如下图中所示：
 
  ![深色主题选择](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>本地化
 
-Visual Studio for Mac 已采用 13 种语言进行本地化，便于更多开发人员使用。 下方列出了当前支持的语言：
+Visual Studio for Mac 已采用以下 13 种语言进行本地化，便于更多开发人员使用：
 
 * 简体中文 - 中国
 * 繁体中文 - 中国台湾
@@ -42,29 +42,29 @@ Visual Studio for Mac 已采用 13 种语言进行本地化，便于更多开发
 * 西班牙语
 * 土耳其语
 
-若要更改 Visual Studio for Mac 显示的语言，请浏览到“Visual Studio”>“首选项...”>“环境”>“视觉样式”并从“用户界面语言”下拉列表中选择所需语言，如下方屏幕截图所示：
+若要更改 Visual Studio for Mac 显示的语言，请浏览到“Visual Studio”>“首选项...”>“环境”>“视觉样式”并从“用户界面语言”下拉列表中选择所需语言，如下图中所示：
 
 
 ![语言选择](media/customizing-the-ide-image11a.png)
 
 ## <a name="author-information"></a>创建者信息
 
-在创建者信息面板中，可以添加你的相关信息，例如名字、电子邮件地址、作品的版权所有者、所在公司和商标，如下所示：
+在创建者信息面板中，可以添加你的相关信息，例如名字、电子邮件地址、作品的版权所有者、所在公司和商标：
 
  ![“编辑创建者信息”部分](media/customizing-the-ide-image9a.png)
 
-此信息用于填充标准文件标头（如许可证），这些标头可能会添加到 Visual Studio for Mac 中创建的新文件：
+此信息用于填充标准文件标头（如许可证），这些标头可能会添加到新文件中：
 
  ![“标准标头”选项](media/customizing-the-ide-image8a.png)
 
 
-填充的“名称”和“电子邮件”字段用于将信息添加到通过 Visual Studio for Mac 的版本控制完成的任何提交。 若尚未填充这些字段，Visual Studio for Mac 将在你尝试使用版本控制时提示你进行此操作。
+填充的“名称”和“电子邮件”字段用于通过 Visual Studio for Mac 的版本控制完成的任何提交。 若尚未填充这些字段，Visual Studio for Mac 将在你尝试使用版本控制时提示你进行此操作。
 
 ## <a name="key-bindings"></a>键绑定
 
 通过键绑定，可以调整开发环境，使得在 Visual Studio for Mac 中的移动更高效。 它为许多常用 IDE（如 Visual Studio (Windows)、ReSharper、Visual Studio Code 和 Xcode）提供熟悉的键绑定。
 
-通过浏览到“Visual Studio”>“首选项...”>“环境”>“键绑定”可以设置键绑定，如下所示：
+通过浏览到“Visual Studio”>“首选项...”>“环境”>“键绑定”可以设置键绑定，如下图中所示：
 
  ![设置键绑定](media/customizing-the-ide-image10a.png)
 
@@ -78,7 +78,7 @@ Visual Studio for Mac 的工作区由主要文档区域（通常是编辑器、�
 
 ### <a name="viewing-and-arranging-pads"></a>查看和排列面板
 
-在 Visual Studio for Mac 中打开任何新解决方案或文件时，应注意工作区中的一些面板，包括 Solution Pad、文档大纲和错误，如下所示：
+在 Visual Studio for Mac 中打开任何新解决方案或文件时，应注意工作区中的一些面板，包括 Solution Pad、文档大纲和错误：
 
 ![Solution Pad](media/customizing-the-ide-image2a.png)
 
@@ -103,7 +103,7 @@ Visual Studio for Mac 提供包含其他信息、工具和导航帮助的面板�
 
 随时都可以显示的面板依赖于当前的上下文。 例如，当使用可视化设计器时，工具箱和属性网格面板是最重要的；在调试时，能够使用调试器面板查看堆栈和局部变量将十分有用。
 
-打开面板的状态由“布局”表示 。 可以通过“视图”菜单手动切换布局，如下所示，或执行调试或打开 Storyboard 等操作时会自动切换布局：
+打开面板的状态由“布局”表示 。 可以通过“视图”菜单手动切换布局，如下图中所示，或执行调试或打开 Storyboard 等操作时会自动切换布局：
 
 ![选择新的布局](media/customizing-the-ide-image6b.png)
 
@@ -118,7 +118,7 @@ Visual Studio for Mac 提供包含其他信息、工具和导航帮助的面板�
 
 通过 Visual Studio for Mac，可以并行打开文本编辑器，或让一个编辑器作为独立的浮动窗口。
 
-通过选择“视图”>“编辑器列”>“2 列”，用“视图”菜单项启用 2 列模式，或通过将编辑器选项卡拖动到编辑器区域的一个边缘来启用该模式，如下所示：
+通过选择“视图”>“编辑器列”>“2 列”，用“视图”菜单项启用 2 列模式，或通过将编辑器选项卡拖动到编辑器区域的一个边缘来启用该模式：
 
  ![2 列并行模式](media/customizing-the-ide-sbs.png)
 

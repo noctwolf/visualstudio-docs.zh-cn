@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -231,7 +231,7 @@ ms.lasthandoff: 02/23/2018
 
 如果 Python 项目和 C++ 项目在相同的解决方案中，则使用第一种方法。 转到解决方案资源管理器，右键单击 Python 项目中的“引用”节点，然后选择“添加引用”。 在随即出现的对话框中，依次选择“项目”选项卡、“superfastcode”项目（或任何使用的名称），然后选择“确定”。
 
-另一种方法，如以下步骤所述，在全局 Python 环境中安装模块，使其也可供其他 Python 项目使用。 （执行此操作通常需要刷新该环境的 IntelliSense 完成数据库。 从环境中删除模块时也必须执行刷新。）
+另一种方法，如以下步骤所述，在全局 Python 环境中安装模块，使其也可供其他 Python 项目使用。 （执行此操作通常需要在 Visual Studio 2017 版本 15.5 和更早版本中刷新该环境的 IntelliSense 完成数据库。 从环境中删除模块时也必须执行刷新。）
 
 1. 如果使用 Visual Studio 2017，请运行 Visual Studio 安装程序，选择“修改”，然后选择“各个组件”>“编译器、生成工具和运行时”>“Visual C++ 2015.3 v140 工具集”。 此步骤是必需的，因为 Python（适用于 Windows）本身是使用 Visual Studio 2015（版本 14.0）生成的，并期望通过此处所述的方法生成扩展时能够使用这些工具。 （请注意，可能需要安装 32 位版本的 Python，并将 DLL 定向到 Win32 而不是 x64。）
 

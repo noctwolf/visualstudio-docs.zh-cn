@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 2d17a952c58e5ef7e593ee7aeb1980e09a376800
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 6ef9084e5cd571c0f3f2b60e2c08d8d7bb0b8518
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-build-system"></a>自定义生成系统
 
@@ -18,7 +18,7 @@ MSbuild 是 Microsoft 开发的生成引擎，可生成主要 .NET 应用程序�
 
 MSbuild 主要用作 Visual Studio for Mac 中项目的生成系统。 
 
-MSBuild 的工作原理是，将一组输入（如源文件）转换为输出（如可执行文件），然后通过编译器等调用工具获取输出。 
+MSBuild 的工作原理是，将一组输入（如源文件）转换为输出（如可执行文件）。 它通过调用编译器等工具获取此输出。 
 
 
 ## <a name="msbuild-file"></a>MSBuild 文件
@@ -26,11 +26,12 @@ MSBuild 的工作原理是，将一组输入（如源文件）转换为输出（
 MSBuild 使用 XML 文件作为项目文件，该文件定义项目（如图像资源）中的“项”和生成项目所需的“属性”。 该项目文件总是以 `proj` 文件扩展名结尾，例如：C# 项目的 `.csproj`。 
 
 ### <a name="viewing-the-msbuild-file"></a>查看 MSBuild 文件
-可通过右键单击项目名称并选择“在查找器中展现”定位此文件。 这将显示和项目有关的所有文件和文件夹，包括 `.csproj` 文件，如下所示：
+
+可通过右键单击项目名称并选择“在查找器中展现”定位 MSBuild 文件。 查找器窗口将显示和项目有关的所有文件和文件夹，包括 `.csproj` 文件，如下图所示：
 
 ![](media/customizing-build-system-image1.png)
 
-还可通过右键单击项目名称并浏览到“工具”>“编辑文件”，在 Visual Studio for Mac 中新建的选项卡中显示 `.csproj`：
+通过右键单击项目名称并浏览到“工具”>“编辑文件”，在 Visual Studio for Mac 中新建的选项卡中显示 `.csproj`：
 
 ![](media/customizing-build-system-image2.png)
 
@@ -44,7 +45,7 @@ MSBuild 使用 XML 文件作为项目文件，该文件定义项目（如图像�
 </Project>
 ```
 
-通常情况下，项目还将导入一个 `.targets` 文件，其中包含众多描述如何处理和生成各种文件的规则。 这常常出现在 `proj` 文件底部附近，在 C# 项目则如下所示：
+通常情况下，项目还将导入一个 `.targets` 文件。 该文件包含众多描述如何处理和生成各种文件的规则。 此导入常常出现在 `proj` 文件底部附近，在 C# 项目则如下所示：
 
 ```
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -54,7 +55,7 @@ MSBuild 使用 XML 文件作为项目文件，该文件定义项目（如图像�
 
 ### <a name="items-and-properties"></a>项和属性
 
-MSBuild 有两种基础数据类型：“项”和“属性”，下面将详细介绍这两种类型。
+MSBuild 有两种基础数据类型：“项”和“属性”，下列部分将详细介绍这两种类型。
 
 #### <a name="properties"></a>属性
 
@@ -62,7 +63,7 @@ MSBuild 有两种基础数据类型：“项”和“属性”，下面将详细
 
 属性使用 PropertyGroup 进行设置，且可以包含任意数量的 PropertiesGroup，而 PropertiesGroup 又可以包含任意数量的属性。 
 
-例如，简单的控制台应用程序的 PropertyGroup 可能如下所示：
+例如，简单的控制台应用程序的 PropertyGroup 可能如以下 XML 所示：
 
 ```
 <PropertyGroup>
@@ -84,7 +85,7 @@ MSBuild 有两种基础数据类型：“项”和“属性”，下面将详细
 
 可通过声明 `ItemGroup` 创建项。 可以有任意数量的 ItemGroup，后者也可以包含任意数量的项。 
 
-例如，以下代码片段创建 iOS 启动屏幕。 这些是 `BundleResource` 类型，其中包含作为图像路径的规范：
+例如，以下代码片段创建 iOS 启动屏幕。 启动屏幕具有生成类型 `BundleResource`，将 spec 作为映像的路径：
 
 ```
  <ItemGroup>

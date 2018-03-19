@@ -16,12 +16,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 945eb6e905613d3d068321e2d5993f4506036963
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-type-and-member-definitions"></a>查看类型和成员定义
 
@@ -70,7 +71,7 @@ ms.lasthandoff: 01/13/2018
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>查看反编译源定义，而不是元数据 (C#)
 
-在 **Visual Studio 2017 版本 15.6 预览版 2** 中的新增功能中，在查看 C# 类型或源代码不可用的成员的定义时，可以设置选项以查看反编译源代码。 若要开启此功能，请从菜单栏中选择“工具” > “选项”。 然后，展开“文本编辑器” > “C#” > “高级”，并选择“启用导航到反编译源代码”。
+在 Visual Studio 2017 版本 15.6 中的新增功能中，在查看 C# 类型或源代码不可用的成员的定义时，可以设置选项以查看反编译源代码。 若要开启此功能，请从菜单栏中选择“工具” > “选项”。 然后，展开“文本编辑器” > “C#” > “高级”，并选择“启用导航到反编译源代码”。
 
 ![查看反编译定义](media/go-to-definition-decompiled-sources.png)
 
@@ -79,5 +80,5 @@ ms.lasthandoff: 01/13/2018
 
 ## <a name="see-also"></a>请参阅
 
-[导航代码](../ide/navigating-code.md)  
-[如何：使用查看定义 (Alt+F12) 查看和编辑代码](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+[导航代码](../ide/navigating-code.md)
+[如何：使用“查看定义”查看和编辑代码 (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef143862c56f07edc844874bbf71cd916ac9eabc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="step-6-working-with-git"></a>步骤 6：使用 Git
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/09/2018
 
 Visual Studio 提供与本地 Git 存储库以及驻留在 GitHub 和 Visual Studio Team Services 等服务上的存储库的直接集成。 集成包括克隆存储库、提交更改和管理分支。
 
-本主题介绍如何为现有项目创建本地 Git 存储库。 有关从远程 Git 存储库创建项目的演练，请参阅[快速入门：在 Visual Studio 中克隆 Python 代码存储库](quickstart-03-python-in-visual-studio-project-from-repository.md)。
+本文介绍如何为现有项目创建本地 Git 存储库。 有关从远程 Git 存储库创建项目的演练，请参阅[快速入门：在 Visual Studio 中克隆 Python 代码存储库](quickstart-03-python-in-visual-studio-project-from-repository.md)。
 
 1. 在 Visual Studio 中打开项目后，比如[上一步](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)中的项目，右键单击解决方案并选择“将解决方案添加到源代码管理”。 Visual Studio 会创建一个包含项目代码的本地 Git 存储库，Git 相关控件也出现在 Visual Studio 窗口底部。 控件显示挂起的提交、更改、存储库名称和分支。 将鼠标悬停在控件上可查看附加信息。
 

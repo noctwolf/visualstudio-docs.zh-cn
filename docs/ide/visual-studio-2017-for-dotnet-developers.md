@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f15239ed045185449735ec3b5e0bcdc514fa786d
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: be14af66f5aa5389e9e701eb79dc68ee733c6068
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>面向 .NET 开发者的 Visual Studio 2017
 
@@ -106,7 +106,7 @@ Visual Studio 具有一个丰富的扩展生态系统，可在需要时安装或
 | **Ctrl+F12** | 转到实现 | 从基类型或基成员导航到各种实现 |
 | **Shift+F12** | 查找所有引用 | 查看所有符号或文本引用 |
 | Ctrl+. （也可使用 C# 配置文件中的 **Alt+Enter**） | 快速操作和重构 | 查看光标位置或代码选定内容处可用的代码修复、代码生成操作、重构或其他快速操作 |
-| **Ctrl**+**E**、**V** | 复制行 | 复制光标所在的代码行（适用于 Visual Studio 2017 版本 15.6 预览版 2 及更高版本） |
+| **Ctrl**+**E**、**V** | 复制行 | 复制光标所在的代码行（适用于 Visual Studio 2017 版本 15.6  及更高版本） |
 | **Ctrl+Q** | 快速启动 | 搜索所有 Visual Studio 设置 |
 | **F5** | 开始调试 | 开始调试应用程序 |
 | **Ctrl+F5** | 不进行调试直接运行 | 不进行调试，直接在本地运行应用程序 |

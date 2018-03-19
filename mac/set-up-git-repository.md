@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 2f6c06ff640007f28cfaed6512fdedc5dcb16e65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a8e32df2248f53a2b46a971b025b1138abba5101
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="setting-up-a-git-repository"></a>设置 Git 存储库
 
 Git 是分布式版本控制系统，使团队可以同时在同一文档上工作。 这意味着有一个单一服务器包含所有文件，但从此中央源中签出存储库时，整个存储库都会被克隆到本地计算机。
 
-虽然许多远程主机支持许使用 Git 进行版本控制，但最常用的是 GitHub。 虽然下面的示例使用 GitHub 主机，但可使用任何 Git 主机在 Visual Studio for Mac 中进行版本控制。
+虽然许多远程主机允许使用 Git 进行版本控制，但最常用的主机是 GitHub。 虽然下面的示例使用 GitHub 主机，但可使用任何 Git 主机在 Visual Studio for Mac 中进行版本控制。
 
-若要使用 GitHub，请确保先创建并配置一个帐户，再执行以下步骤。 
+若要使用 GitHub，请确保先创建并配置一个帐户，然后再执行本文中的步骤。 
 
 ## <a name="creating-a-remote-repo-on-github"></a>在 GitHub 上创建远程存储库
 
@@ -34,20 +34,22 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 
     ![设置 Git 存储库的详细信息](media/version-control-git2.png)
 
-3. 下一个位置提供一个选项，用于显示 HTTPS 或 SSH 地址，并将其复制到刚创建的存储库：
+3. 下页提供一个选项，用于显示 HTTPS 或 SSH 地址，并将其复制到已创建的存储库：
 
-    ![查看和复制地址](media/version-control-git3.png) 要将 Visual Studio for Mac 指向此存储库，需要 HTTPS 地址。
+    ![查看和复制地址](media/version-control-git3.png)
+
+  要将 Visual Studio for Mac 指向此存储库，需要 HTTPS 地址。
 
 
 ## <a name="publishing-an-existing-project"></a>发布现有项目
 
 4. 返回到 Visual Studio for Mac 中打开的项目。 
 
-5. 在菜单栏中，选择“版本控制”>“在版本控制中发布...”：
+5. 在菜单栏中，选择“版本控制”>“在版本控制中发布...” 显示“选择存储库”对话框：
 
     ![开始在 Visual Studio for Mac 中签出](media/version-control-git4-sml.png)
 
-6. 这将显示“选择存储库”对话框。 选择“已注册存储库”选项卡，然后按“添加”按钮：
+6. 选择“已注册存储库”选项卡，然后按“添加”按钮：
 
     ![](media/version-control-git5.png)
 
@@ -57,19 +59,19 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 
     请注意，也可使用 SSH 连接到 Git。
 
-8. 要尝试将应用发布到 Git，请选择刚创建的存储库，并确保“模块名称”和“信息”文本字段都已完成：
+8. 要尝试将应用发布到 Git，请选择存储库，并确保“模块名称”和“信息”文本字段都已完成：
 
     ![尝试将应用发布到 Git](media/version-control-git7.png)
 
 9. 单击“好的”，然后从警报对话框中单击“发布”。
 
-10. 如果尚未在 Visual Studio for Mac 首选项中输入 Git 凭据，请于现在输入。 首先需要创建访问令牌，该令牌可用于替代密码。 请按照 Git [访问令牌](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)文档中的步骤执行此操作。
+10. 如果尚未在 Visual Studio for Mac 首选项中输入 Git 凭据，请于现在输入。 首先需要创建访问令牌，该令牌可用于替代密码。 如果尚未创建访问令牌，请按照 Git [访问令牌](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)文档中的步骤进行操作。
 
 11. 输入用户名和个人访问令牌，然后按“好的”：
 
     ![输入 Git 用户名和密码](media/version-control-git9-sml.png)
 
-12. 几秒钟后，会发布初次提交的解决方案。 可通过浏览“版本控制”菜单项进行确认，该菜单中应已填充了许多选项： 
+12. 几秒钟后，会发布初次提交的解决方案。 可通过浏览“版本控制”菜单项确认已将其发布，该菜单中应已填充了许多选项： 
 
     ![“版本控制”菜单](media/version-control-git10.png)
 

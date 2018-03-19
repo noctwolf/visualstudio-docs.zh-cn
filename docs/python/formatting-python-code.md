@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e68fff14ea51816ae45a29410d09cb6633689534
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95ef8e1c5be39119574f838df93d067a7404f7f5
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="formatting-python-code"></a>设置 Python 代码格式
 
@@ -30,9 +30,13 @@ ms.lasthandoff: 02/09/2018
 - 若要设置选定内容的格式：请选择“编辑”>“高级”>“设置选定内容的格式”或按 Ctrl+E、F。
 - 若要设置整个文件的格式：请选择“编辑”>“高级”>“设置文档的格式”或按 Ctrl+E、D。
 
-通过“工具”>“选项”>“文本编辑器”>“Python”>“格式”及其嵌套选项卡设置选项，并且默认情况下设置为匹配 [PEP 8 样式指南](http://www.python.org/dev/peps/pep-0008/)的超集。 “常规”选项卡确定何时应用格式；本主题中介绍了设置其他三个选项卡。
+可通过“工具”>“选项”>“文本编辑器”>“Python”>“格式”及其嵌套选项卡来设置选项。 需要选择“显示所有设置”来显示这些选项：
 
-借助 [Visual Studio 中的 Python 支持](installing-python-support-in-visual-studio.md)，还可在“编辑”>“高级”菜单中添加有用的[“填充注释段落”](#fill-comment-paragraph-command)命令，如下所述。
+![Visual Studio 中的 Python“格式”选项](media/options-editor-formatting.png)
+
+默认情况下，“格式”选项设置为匹配 [PEP 8 样式指南](http://www.python.org/dev/peps/pep-0008/)的超集。 “常规”选项卡确定何时应用格式；本文介绍了其他三个选项卡的设置。
+
+借助 [Visual Studio 中的 Python 支持](installing-python-support-in-visual-studio.md)，还可在“编辑”>“高级”菜单中添加有用的[“填充注释段落”](#fill-comment-paragraph-command)命令，如下节所述。
 
 ## <a name="spacing"></a>间距
 

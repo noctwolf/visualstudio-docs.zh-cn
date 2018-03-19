@@ -2,7 +2,7 @@
 title: "在 Visual Studio 中调试 Python 代码 | Microsoft Docs"
 description: "Visual Studio 中专门用于 Python 代码的调试功能概述，包括设置断点、单步执行、检查值、查看异常以及在交互窗口中进行调试。"
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,17 +17,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="debugging-your-python-code"></a>调试 Python 代码
 
 Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行的进程，在监视窗口和即时窗口中计算表达式，检查局部变量、断点、单步执行/单步跳出/单步跳过语句、设置下一语句等。
 
-另请参阅以下情景特定的调试主题：
+另请参阅以下情景特定的调试文章：
 
 - [Linux 远程调试](debugging-python-code-on-remote-linux-machines.md)
 - [Azure 远程调试](debugging-remote-python-code-on-azure.md)
@@ -51,7 +51,7 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 
 基础调试工作流包括如以下各节中所述的设置断点、逐句通过代码、检查值以及处理异常。 有关 Visual Studio 调试器的完整详细信息，请参阅 [Visual Studio 中的调试](../debugger/debugging-in-visual-studio.md)。
 
-使用“调试”>“开始调试”命令、工具栏上的“开始”按钮或 F5 键启动调试会话。 这些操作使用项目的活动环境和任意命令行参数或项目属性中已指定的搜索路径（请参阅[项目调试选项](#project-debugging-options)）来启动项目的启动文件（在解决方案资源管理器中以粗体显示）。 但是，如果出于某种原因未设置启动文件，Python 输出窗口将短暂出现并消失。 在此情况下，请右键单击相应文件，然后选择“设为启动文件”。
+使用“调试”>“开始调试”命令、工具栏上的“开始”按钮或 F5 键启动调试会话。 这些操作使用项目的活动环境和任意命令行参数或项目属性中已指定的搜索路径（请参阅[项目调试选项](#project-debugging-options)）来启动项目的启动文件（在解决方案资源管理器中以粗体显示）。 如未设置启动文件，Visual Studio 2017 版本 15.6 和更高版本将提醒你。早期版本可能打开一个正在运行 Python 解释器的输出窗口，或输出窗口短暂出现和消失。 在任何情况下，请右键单击相应文件，然后选择“设为启动文件”。
 
 > [!Note]
 > 调试器始终通过项目的活动 Python 环境启动。 若要更改环境，请按照[为项目选择一个 Python 环境](selecting-a-python-environment-for-a-project.md)中所述，将其他环境更改为活动状态。
@@ -160,13 +160,13 @@ HTML、XML 和 JSON 可视化效果显示在单独的弹出窗口中，其中突
 | 解释器路径 | 替代与当前环境相关联的路径。  值可能可用于通过非标准解释器启动脚本。 |
 | 环境变量 | 在此多行文本框中，添加 `NAME=VALUE` 形式的条目。 由于除任何现有全局环境变量外，此设置是最后应用，因此在根据搜索路径设置设定 `PYTHONPATH` 之后，可以将该设置用于手动替代任何设置。 |
 
-<a name="the-debug-interactive-window"</a>
+<a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>即时窗口和交互窗口
 
 调试会话期间可使用两个交互窗口：标准 Visual Studio 即时窗口和 Python 调试交互窗口。
 
-即时窗口（“调试”>“窗口”>“即时”）用于快速计算 Python 表达式以及检查或分配正在运行的程序中的变量。 请参见常规[即时窗口](../ide/reference/immediate-window.md)主题，了解详细信息。
+即时窗口（“调试”>“窗口”>“即时”）用于快速计算 Python 表达式以及检查或分配正在运行的程序中的变量。 请参见常规[即时窗口](../ide/reference/immediate-window.md)一文，了解详细信息。
 
 Python 调试交互窗口（“调试”>“窗口”>“Python 调试交互窗口”）更丰富，因为它可以在调试（包括编写和运行代码）时提供完整的[交互式 REPL](python-interactive-repl-in-visual-studio.md) 体验。 它会自动连接到使用标准 Python 启动器在调试器中启动的任何进程（包括通过连接“调试”>“附加到进程”附加的进程）。 但使用 C/C++ 混合模式调试时，它不可用。
 

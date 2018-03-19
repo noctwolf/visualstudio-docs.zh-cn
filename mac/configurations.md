@@ -6,28 +6,28 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: e435418c0c77f1577e9db8ab35d76d6bd54f8447
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf27e89b6a1a606b2a7430fc7d4394b8c5ab22bc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="understanding-build-configurations"></a>了解生成配置
 
 ## <a name="project-build-configurations"></a>项目生成配置 
 
-项目可以有多种配置，生成时在这些配置之间进行切换可以得到不同的输出。 例如，使用调试配置时，输出将包括调试符号，使得调试程序可以从有故障的应用程序的堆栈跟踪中解决函数名称、参数或变量。 但是，使用调试配置会增加文件大小，因此对计划发布的应用程序并不适合。
+项目往往会有多种配置，生成时在这些配置之间进行切换可以得到不同的输出。 例如，调试配置将输出调试符号，使得调试程序可以从有故障的应用程序的堆栈跟踪中解决函数名称、参数或变量。 尽管此附加信息在开发期间很有用，但它会导致文件大小膨胀，并且不适合分发。
 
-每个平台都有针对自己生成特定的配置。 Xamarin.Android 开发一直只存在发布或调试配置。 Xamarin.iOS 具有更多配置。 较新版本的 iOS 项目只具有调试或发布配置，但可针对设备或任何安装的模拟器设置这些配置。
+每个平台都有针对自己生成特定的配置。 
 
 ## <a name="solution-configurations"></a>解决方案配置
 
-与项目配置类似，解决方案配置用于创建整个项目的自定义配置。 通过使用“生成”>“配置”项下的“配置映射”选项卡，可以为每个解决方案项分配一个目标配置，如下所示：
+与项目配置类似，解决方案配置用于创建整个项目的自定义配置。 通过使用“生成”>“配置”项下的“配置映射”选项卡，可以为每个解决方案项分配一个目标配置，如下图所示：
 
 
  ![配置映射选项](media/projects-and-solutions-image3.png)
 
-有关详细信息，请参阅 James Montemagno 的 [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg)（配置管理器）视频。
+有关配置的详细信息，请参阅 James Montemagno 的[配置管理器](https://www.youtube.com/watch?v=tjSdkqYh5Vg)视频。
 
 ## <a name="run-configuration"></a>运行配置
 

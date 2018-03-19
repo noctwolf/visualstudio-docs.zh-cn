@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 17108b8ff993d88d2e5ed179c3167f43d2895d7f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 469494b2c0c4704ac1eab42d36934657adc2313d
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>在 Visual Studio 中使用 Python
 
@@ -30,7 +30,7 @@ Python 是一种受欢迎的编程语言，它可靠、灵活、易于学习、�
 Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成以下步骤：
 
 - [步骤 0：安装](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [步骤 1：创建 Python 项目（本主题）](#step-1-create-a-new-python-project)
+- [步骤 1：创建 Python 项目（本文）](#step-1-create-a-new-python-project)
 - [步骤 2：编写和运行代码，以便在工作时查看 Visual Studio IntelliSense](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 - [步骤 3：在 REPL 交互窗口中创建更多代码](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 - [步骤 4：在 Visual Studio 调试器中运行已完成的程序](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

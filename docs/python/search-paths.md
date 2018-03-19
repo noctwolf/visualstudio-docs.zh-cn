@@ -1,7 +1,7 @@
 ---
 title: "如何应在 Visual Studio 中应用 Python 搜索路径 | Microsoft Docs"
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 43e42bf246af0ea5df69a2960d9f13ae97784f6a
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 2135515859ea32c8d134ec6c5824195c554ee97e
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜索路径
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/23/2018
 
 但 Visual Studio 会忽略搜索路径环境变量，即使已为整个系统设置了该变量。 实际上，它被忽略的原因确切地说是因为对整个系统进行了此设置，且因此引发了某些无法自动得到答复的问题：引用的模块是否适用于 Python 2.7 或 Python 3.3？ 它们是否将替代标准库模块？ 开发人员是否注意到此行为，或者它是一个恶意的攻击尝试？
 
-因此，Visual Studio 提供了一种方法，可直接在环境和项目中指定搜索路径。 在 Visual Studio 中运行或调试的代码会接收 `PYTHONPATH` 值（和其他等效变量）中的搜索路径。 通过添加搜索路径，Visual Studio 会检查这些位置中的库并为它们构建 IntelliSense 数据库（构建数据库需要一些时间，具体取决于库的数量）。
+因此，Visual Studio 提供了一种方法，可直接在环境和项目中指定搜索路径。 在 Visual Studio 中运行或调试的代码会接收 `PYTHONPATH` 值（和其他等效变量）中的搜索路径。 通过添加搜索路径，Visual Studio 会在需要时检查这些位置中的库并为它们构建 IntelliSense 数据库（Visual Studio 2017 版本 15.5 及更早版本；构建数据库需要一些时间，具体取决于库的数量）。
 
 若要添加搜索路径，请在解决方案资源管理器中右键单击“搜索路径”，选择“将文件夹添加到搜索路径...”，并选择要包括的文件夹。 此路径将用于与该项目关联的任何环境。 （如果环境基于 Python 3，在尝试将搜索路径添加到 Python 2.7 模块时，可能会发生错误。）
 
@@ -44,4 +44,4 @@ ms.lasthandoff: 02/23/2018
 - [在 Visual Studio 中管理 Python 环境](managing-python-environments-in-visual-studio.md)
 - [为项目选择解释器](selecting-a-python-environment-for-a-project.md)
 - [对依赖项使用 requirements.txt](managing-required-packages-with-requirements-txt.md)
-- [Python 环境窗口引用](python-environments-window-tab-reference.md)
+- [“Python 环境”窗口参考](python-environments-window-tab-reference.md)

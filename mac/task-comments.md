@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: 973e7b627a7b5c121ff388874577fe59c45529d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 674bae5b22c5b9ecc5d6fda4a9a4e30e4fcd1660
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="task-comments"></a>任务注释
 
-编写代码时，标准做法是显式注释未完成代码、可疑代码或带有警告的快速解决方法。 Visual Studio for Mac 提供的默认信号令牌是 TODO、HACK、FIXME 和 UNDONE，也可在“Visual Studio”>“首选项...”>“环境”>“任务”下定义个性化令牌，如下图所示：
+编写代码时，标准做法是显式注释未完成代码、可疑代码或带有警告的快速解决方法。 Visual Studio for Mac 提供的默认信号令牌包括 TODO、HACK、FIXME 和 UNDONE。 可以在“Visual Studio”>“首选项...”>“环境”>“任务”下定义个性化令牌，如下图所示：
 
  ![任务列表首选项](media/source-editor-image10.png)
 
-要添加新的任务注释，请添加包含任务关键字的注释。 例如: 
+要添加新的任务注释，请添加包含任务关键字的注释。 例如:
 
 ```
 //TODO: Finish this for all properties.

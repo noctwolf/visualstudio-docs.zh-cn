@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f3057ae7cf987c19e87329894249031b3af29806
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>查找和使用 Visual Studio 扩展
 
@@ -73,7 +73,7 @@ Visual Studio Marketplace 有可用的新版本时，每用户扩展将自动更
 
 在新的 Visual Studio 2017（版本 15.3）中，如果 Visual Studio 怀疑扩展已在之前的会话期间发生故障，将会就此发出通知。 Visual Studio 发生故障时，会存储异常堆栈。 下一次 Visual Studio 启动时，它会检查堆栈，同时开始处理叶和构建基础映像。 如果 Visual Studio 确定框架所属的模块属于已安装和已启用的扩展，它将显示一条通知。
 
-在新的 Visual Studio 2017 版本 15.6（预览版 3）中，如果 Visual Studio 怀疑某个扩展导致 UI 无响应，也会就此发出通知。
+在新的 Visual Studio 2017 版本 15.6 中，如果 Visual Studio 怀疑某个扩展导致 UI 无响应，也会就此发出通知。
 
 显示这些通知时，可以忽略它们，或者可以执行以下任一操作：
 

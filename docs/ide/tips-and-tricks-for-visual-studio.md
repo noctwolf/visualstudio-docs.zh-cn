@@ -1,26 +1,26 @@
 ---
 title: "Visual Studio 键盘快捷方式 | Microsoft Docs"
-ms.custom: 
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Visual Studio 的键盘提示
 
-使用本主题介绍的键盘快捷键，可以更轻松地在 Visual Studio 中导航。 本主题只介绍一部分可用的键盘快捷方式。 有关更完整的列表，请参阅 [Visual Studio 中的默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)。 有关如何优化 Visual Studio 的辅助功能的信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)。
+使用本文介绍的键盘快捷键，可以更轻松地在 Visual Studio 中导航。
+
+此处列出的快捷方式只介绍一部分可用的键盘快捷方式。 有关更完整的列表，请参阅 [Visual Studio 中的默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
+
+有关如何优化 Visual Studio 的辅助功能的信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)。
 
 ## <a name="window-management"></a>窗口管理
 
@@ -83,7 +83,7 @@ ms.lasthandoff: 02/19/2018
 |编辑器缩放|Ctrl+Shift+>（放大），Ctrl+Shift+<（缩小）||
 |块选择|按住 Alt 并拖动鼠标，Shift+Alt+方向键||
 |上移/下移行|Alt+向上键/Alt+向下键||
-|复制行|Ctrl+E、V|Visual Studio 2017 版本 15.6 预览版 2|
+|复制行|Ctrl+E、V|Visual Studio 2017 版本 15.6|
 |展开选定内容|Shift+Alt+=|Visual Studio 2017 版本 15.5|
 |合拢选定内容|Shift+Alt+-|Visual Studio 2017 版本 15.5|
 |转到定义|F12||

@@ -8,15 +8,15 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c0808635d0cd471f0fdaeb00e970ffde94a279c6
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 
-通过使用 .runsettings 文件，可配置 Visual Studio 中的单元测试。 例如，可更改正在运行测试的 .NET Framework 版本、提供测试结果的目录，或者在测试运行期间收集的数据。
+通过使用 .runsettings 文件，可配置 Visual Studio 中的单元测试。 例如，可更改正在运行测试的 .NET Framework 版本、测试结果的目录，或者在测试运行期间收集的数据。
 
 > [!NOTE]
 > 只要使用扩展名“.runsettings”，文件名就无关紧要。
@@ -57,6 +57,10 @@ ms.lasthandoff: 03/05/2018
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
+  
+     <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
+     <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->
@@ -129,6 +133,7 @@ ms.lasthandoff: 03/05/2018
 |`TreatTestAdapterErrorsAsWarnings`|False|false、true|
 |`TestAdaptersPaths`||TestAdapters 所在目录的一个或多个路径|
 |`MaxCpuCount`|1|此设置利用计算机上的可用内核，在运行单元测试时控制并行测试执行的程度。 测试执行引擎在每个可用内核上作为单独的进程启动，并为每个内核提供包含要运行的测试的容器。 容器可以是程序集、DLL 或相关项目。 测试容器即计划单位。 在每个容器中，测试将根据测试框架进行执行。 如果存在多个容器，进程在容器内完成测试执行时，系统会向它们提供下一个可用容器。<br /><br /> MaxCpuCount 可以是：<br /><br /> n，其中 1 <= n <= 内核数：最多将启动 n 个进程<br /><br /> n，其中 n = 任何其他值：启动的进程数将等于计算机上的可用内核数|
+|`TestSessionTimeout`||当测试会话超过给定时间，允许用户终止测试会话。 设置超时可确保资源被充分利用，并且测试会话被限制在一个设定时间内。 Visual Studio 2017 版本 15.5 及更高版本中提供了此设置。
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>诊断数据适配器（数据收集器）
 

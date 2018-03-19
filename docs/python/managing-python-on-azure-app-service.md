@@ -18,20 +18,20 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>在 Azure App Service 上管理 Python
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) 是适用于 Web 应用的平台即服务产品/服务，这些应用包括通过浏览器访问的站点、用户自己的客户端使用的 REST API 或事件触发的处理过程。 应用服务完全支持使用 Python 实现应用。
 
-Azure App Service 上的可自定义 Python 支持作为一组应用服务站点扩展来提供，其中每个扩展均包含特定版本的 Python 运行时。 如本主题中所述，你随后可以将任何所需的包直接安装到该环境中。 通过自定义应用服务自身中的环境，你无需维护 Web 应用项目中的包，也无需使用应用代码上传这些包。
+Azure App Service 上的可自定义 Python 支持作为一组应用服务站点扩展来提供，其中每个扩展均包含特定版本的 Python 运行时。 如本文所述，随后可以将任何所需的包直接安装到该环境中。 通过自定义应用服务自身中的环境，你无需维护 Web 应用项目中的包，也无需使用应用代码上传这些包。
 
 > [!Tip]
-> 默认情况下，虽然应用服务在服务器上的根文件夹中安装了 Python 2.7 和 Python 3.4，但是不能在这些环境中自定义或安装包，也不应依赖于它们的存在。 如本主题中所述，你应依赖于控制的站点扩展。
+> 默认情况下，虽然应用服务在服务器上的根文件夹中安装了 Python 2.7 和 Python 3.4，但是不能在这些环境中自定义或安装包，也不应依赖于它们的存在。 如本文所述，应依赖于控制的站点扩展。
 
 > [!Important]
 > 本文所述的过程会随时更改，尤其是出于改进目的。 将在 [Microsoft 博客上的 Python 工程](https://blogs.msdn.microsoft.com/pythonengineering/)中发布更改。

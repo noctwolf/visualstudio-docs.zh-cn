@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 57a33ce473cd82fcb6fb8517d7003c8772c1d4da
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c0cd7853c65d5501213076cb7ccb533c5134c9f4
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安装第三方单元测试框架
 Visual Studio 测试资源管理器可以运行任何针对该资源管理器开发了适配器接口的单元测试框架。 框架的安装程序会安装二进制文件，并为它支持的语言添加 Visual Studio 项目模板。 使用模板创建项目时，框架会向测试资源管理器注册。 Visual Studio 解决方案可以包含使用不同框架和面向不同语言的单元测试项目。 测试资源管理器可运行所有这些解决方案。  
@@ -56,7 +57,24 @@ Visual Studio 测试资源管理器可以运行任何针对该资源管理器开
   
 3.  在“分类”列表中（标记为“显示”），展开“工具”节点，然后选择“测试”。  
   
-4.  在结果列表中选择框架，以导航到该工具的 Visual Studio Marketplace 页。  
-  
-## <a name="see-also"></a>请参阅  
- [单元测试代码](../test/unit-test-your-code.md)
+4.  在结果列表中选择框架，以导航到该工具的 Visual Studio Marketplace 页。 
+
+## <a name="update-to-the-latest-test-adapters"></a>更新到最新版本的测试适配器
+
+更新到最新版本的稳定测试适配器，以体验更好的测试发现和执行。 有关更新到 MSTest、NUnit 和 xUnit 测试适配器的详细信息，请参阅 [Visual Studio 博客](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/)。
+
+### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>更新到最新版本的稳定测试适配器
+
+1. 导航到“工具”>“NuGet 包管理器”>“管理解决方案的 NuGet 包...”，打开解决方案的 Nuget 包管理器。
+
+2. 单击“更新”选项卡，并搜索已安装的 NUnit 或 xUnit 测试适配器。
+
+3. 选择每个测试适配器，然后选择下拉列表菜单中的最新稳定版本。
+
+4. 选择“安装”按钮。
+
+![升级测试适配器](media/installadapter-upgrade.png)
+
+## <a name="see-also"></a>请参阅
+
+- [单元测试代码](../test/unit-test-your-code.md)

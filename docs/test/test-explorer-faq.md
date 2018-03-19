@@ -18,11 +18,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 63c1b25ad597dc3d56dfc398ec9c6c463aec200d
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 测试资源管理器常见问题解答
 
@@ -64,9 +64,15 @@ ms.lasthandoff: 02/12/2018
 
 ### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8.如何在层次结构视图中进行测试结果排序？
 
-  层次结构视图按字母顺序对测试进行排序（与按结果排序相反）。 按设置划分的另一组通常按结果对测试结果进行排序，然后按字母排序。 下面显示按选项划分的其他组供你进行对比。 可通过[此 GitHub 问题](https://github.com/Microsoft/vstest/issues/1425)提供设计方面的反馈。
+  层次结构视图按字母顺序对测试进行排序（与按结果排序相反）。 按设置划分的另一组通常按结果对测试结果进行排序，然后按字母排序。 在下图中根据选项查看不同组以进行比较。 可通过[此 GitHub 问题](https://github.com/Microsoft/vstest/issues/1425)提供设计方面的反馈。
 
   ![SortingExamples](media/testex-sortingex.png)
+
+### <a name="9-in-the-hierarchy-view-there-are-passed-failed-skipped-and-not-run-icons-next-to-the-project-namespace-and-class-groupings-what-do-these-icons-mean"></a>9.在层次结构视图中，“项目”、“命名空间”和“类”分组旁存在“已传递”、“失败”、“已跳过”和“不运行”图标。 这些图标代表什么？
+
+  “项目”、“命名空间”和“类”分组旁的图标反映该分组中的测试状态。 请参见下表。
+
+  ![测试资源管理器层次结构图标](media/testex-hierarchyicons.png)
 
 ## <a name="features"></a>功能
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e41e4af21a524215550c581b1e29efc2261aaa8f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 0bd110b671806c37e59f5f0d52c62c1eed42e9cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>使用 Python 交互窗口
 
@@ -38,7 +38,7 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 | IPython | REPL 与 IPython 后端通信 | IPython 命令，Pylab 的便利 | 否 | 是，在 REPL 中内联 |
 | 带 Pylab 的 IPython | REPL 与 IPython 后端通信 | 标准 IPython | 否 | 是，单独窗口 | 
 
-本主题介绍**标准** REPL 模式和**调试** REPL 模式。 有关 IPython 模式的详细信息，请参阅[使用 IPython REPL](interactive-repl-ipython.md)。
+本文介绍标准 REPL 模式和调试 REPL 模式。 有关 IPython 模式的详细信息，请参阅[使用 IPython REPL](interactive-repl-ipython.md)。
 
 有关包含示例的详细演练，包括与编辑器的交互（如 Ctrl+Enter），请参阅[教程步骤 3：使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。 
 

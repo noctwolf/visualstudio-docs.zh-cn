@@ -2,7 +2,7 @@
 title: "Visual Studio 中的 Python 选项和设置 | Microsoft Docs"
 description: "Visual Studio 中与 Python 代码和项目相关的各种设置的引用。"
 ms.custom: 
-ms.date: 02/21/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,6 +16,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
 - VS.ToolsOptionsPages.Python_Tools.Diagnostics
+- VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
@@ -24,11 +25,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 9bb1316d46f252721230ce4ac1b14f4304693445
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中的 Python 选项
 
@@ -36,19 +37,21 @@ ms.lasthandoff: 02/23/2018
 
 ![Python“选项”对话框，“常规”选项卡](media/options-general.png)
 
-“文本编辑器”>“Python”>“高级”选项卡上还设有其它特定于 Python 的选项。
+在“文本编辑器”>“Python”>“高级”选项卡上，以及在“文本编辑器”组中的“环境”>“字体和颜色”选项卡上，还具有其他特定于 Python 的选项。
 
 > [!Note]
 > “实验”组包含用于仍在开发中且未记录在本文中的功能的选项。 通常可在 [Microsoft 博客 Python 工程](https://blogs.msdn.microsoft.com/pythonengineering/)上的文章中找到其相关信息。
 
 ## <a name="general-options"></a>常规选项
 
+（“工具”>“选项”>“Python”选项卡。）
+
 | 选项 | 默认 | 描述 |
 | --- | --- | --- |
 | 在创建虚拟环境时显示输出窗口| On | 清除该选项可避免显示输出窗口。 |
 | 在安装或删除包时显示输出窗口 | On | 清除该选项可避免显示输出窗口。 |
 | 始终以管理员身份运行 pip | Off | 始终为所有环境提升 `pip install` 操作。 安装包时，如果环境位于文件系统（如 `c:\Program Files`）的保护区域内，Visual Studio 将提示需要管理员权限。 出现该提示时，可选择始终仅为此环境提升 `pip install`。 请参阅[包选项卡](python-environments-window-tab-reference.md#packages-tab)。 |
-| 初次使用时自动生成完成 DB | On | 要使 [IntelliSense 完成](editing-python-code-in-visual-studio.md#intellisense)可用于库，Visual Studio 必须为该库生成完成数据库。 安装库后，将在后台生成数据库，但有可能在开始编写代码时此过程还未完成。 选择此选项后，在编写使用某个库的代码时，Visual Studio 会优先完成此库的数据库。 |
+| 初次使用时自动生成完成 DB | On | *应用 Visual Studio 2017 版本 15.5 和早期版本，并在使用 IntelliSense 数据库时应用更高版本。* 在编写使用某个库的代码时，优先完成此库的数据库。 有关详细信息，请参阅[环境窗口引用 - Intellisense 选项卡](python-environments-window-tab-reference.md)。 |
 | 忽略系统级 PYTHONPATH 变量 | On | 默认情况下会忽略 PYTHONPATH，因为 Visual Studio 提供了一种更直接的方式来指定环境和项目中的搜索路径。 请参阅[搜索路径](search-paths.md)了解详细信息。 |
 | 添加链接文件时更新搜索路径 | On | 如果已设置此选项，将一个[链接文件](managing-python-projects-in-visual-studio.md#linked-files)添加到项目会更新[搜索路径](search-paths.md)，以便 IntelliSense 能在其完成数据库中包含链接文件的文件夹的内容。 清除此选项将从完成数据库中排除此类内容。 |
 | 在找不到导入模块时发出警告 | On | 当知道导入模块当前不可用但不会影响代码操作时，清除此选项可禁止发出警告。 |
@@ -59,6 +62,8 @@ ms.lasthandoff: 02/23/2018
 ![Python“选项”对话框，“常规”选项卡](media/options-general.png)
 
 ## <a name="debugging-options"></a>调试选项
+
+（“工具”>“选项”>“Python”>“调试”选项卡。）
 
 | 选项 | 默认 | 描述 |
 | --- | --- | --- |
@@ -72,6 +77,8 @@ ms.lasthandoff: 02/23/2018
 
 ## <a name="diagnostics-options"></a>诊断选项
 
+（“工具”>“选项”>“Python”>“诊断”选项卡。）
+
 | 选项 | 默认 | 描述 |
 | --- | --- | --- |
 | 包含分析日志 | On | 在使用按钮将诊断保存到文件或将其复制到剪贴板时，包含与已安装 Python 环境分析相关的详细日志。 此选项可能会显著增加所生成文件的大小，但诊断 IntelliSense 问题时通常需要使用此选项。 |
@@ -81,6 +88,8 @@ ms.lasthandoff: 02/23/2018
 ![Python“选项”对话框，“诊断”选项卡](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>交互窗口选项
+
+（“工具”>“选项”>“Python”>“交互窗口”选项卡。）
 
 | 选项 | 默认 | 描述 |
 | --- | --- | --- |
@@ -92,6 +101,8 @@ ms.lasthandoff: 02/23/2018
 ![Python“选项”对话框，“交互窗口”选项卡](media/options-interactive-windows.png)
 
 ## <a name="advanced-python-editor-options"></a>高级 Python 编辑器选项
+
+（“工具”>“选项”>“文本编辑器”>“Python”>“高级”选项卡。）
 
 ### <a name="completion-results"></a>完成结果
 
@@ -105,7 +116,7 @@ ms.lasthandoff: 02/23/2018
 
 | 选项 | 默认 | 描述 |
 | --- | --- | --- |
-| 通过键入以下字符提交 | {}[]().,:;+-*/%&&#124;^~=<>#@\ | 这些字符通常位于可能是从完成列表中选取的标识符后面，因此只需键入字符即可轻松提交完成。 可根据需要在列表中删除或添加特定字符。  |
+| 通过键入以下字符提交 | `{}[]().,:;+-*/%&&#124;^~=<>#@\` | 这些字符通常位于可能是从完成列表中选取的标识符后面，因此只需键入字符即可轻松提交完成。 可根据需要在列表中删除或添加特定字符。  |
 | 按 Enter 提交当前完成 | On | 如果设置此选项，按 Enter 键将选择并应用当前选择的完成（和上面的字符一样）（但由于没有针对 Enter 的字符，因此它无法直接进入该列表！）。 |
 | 在完整键入的字末尾按 Enter 添加新行 | Off | 默认情况下，如果键入完成弹出窗口中显示的完整字词，然后按 Enter，则会提交该完成。 通过设置此选项，可在键入完标识符后有效提交完成，然后按 Enter 键即可插入新行。 |
 
@@ -118,3 +129,11 @@ ms.lasthandoff: 02/23/2018
 | 基于类型为名称着色 | On | 在 Python 代码中启用语法着色。 |
 
 ![Python 编辑器“选项”对话框，“高级”选项卡](media/options-editor-advanced.png)
+
+## <a name="fonts-and-colors-options"></a>“字体”和“颜色”选项
+
+（“文本编辑器”组中的“环境”>“字体和颜色”选项卡。）
+
+Python 选项的名称都带有“Python”前缀，且一目了然。 所有 Visual Studio 颜色主题的默认字体都为 10pt Consolas 常规体（不以粗体显示）。 默认颜色因主题而异。 通常情况下，当你在默认的字体或颜色设置下难以阅读文本时，你会对字体或颜色进行更改。
+
+![Python 字体和颜色选项](media/options-fonts-and-colors.png)

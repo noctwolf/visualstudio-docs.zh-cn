@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: ba92cd9a0e9ca28d132116f65fd41758bce1a1f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 925c928e171b76af76304074e736fd8962158564
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="refactoring"></a>重构
 
 重构代码方法可重新排列、重构和阐明现有代码，同时确保代码总体行为保持不变。
 
-该方法生成高质量的基本代码，使代码更易于使用、读取和管理，方便你或任何其他开发者或用户参考。
+重构生成高质量的基本代码，使代码更易于使用、读取和管理，方便你或任何其他开发者或用户参考。
 
-Visual Studio for Mac 与 Roslyn（Microsoft 的开源 .NET 编译器平台）集成之后支持更多重构操作，并完全支持最新的 C# 版本。
+Visual Studio for Mac 与 Roslyn（Microsoft 的开源 .NET 编译器平台）集成之后支持更多重构操作。
 
 ## <a name="renaming"></a>重命名 
 

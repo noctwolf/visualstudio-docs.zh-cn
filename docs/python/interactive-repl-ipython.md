@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ee982a1068f2ea89299b75ca825f7a7c1c4e6b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f18ba5e7ce44766262851f68c829c887bfc9581
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>在交互窗口中使用 IPython
 
-IPython 模式下的 Visual Studio 交互窗口是目前非常先进的用户友好交互式开发环境，具有交互式并行计算功能。 本主题演示如何在 Visual Studio 交互窗口中使用 IPython，其中所有常规[交互窗口](python-interactive-repl-in-visual-studio.md)功能均可用。
+IPython 模式下的 Visual Studio 交互窗口是目前非常先进的用户友好交互式开发环境，具有交互式并行计算功能。 本文演示如何在 Visual Studio 交互窗口中使用 IPython，其中所有常规[交互窗口](python-interactive-repl-in-visual-studio.md)功能均可用。
 
 要执行此演练，必须先安装 [Anaconda](https://www.continuum.io) 环境，其中包括 IPython 和必需的库。
 
@@ -83,7 +83,7 @@ IPython 模式下的 Visual Studio 交互窗口是目前非常先进的用户友
 
 IPython 有很多其他有用的功能，如转义到系统外壳、变量替换、捕获输出等。请参阅 [IPython 文档](http://ipython.org/documentation.html)了解详细信息。
 
-## <a name="related-topics"></a>相关主题
+## <a name="related-articles"></a>相关文章
 
 - 若要在不安装的情况下轻松使用 Jupyter，请试用免费的 [Azure 笔记本托管服务](https://notebooks.azure.com/)来保留笔记本并与他人进行共享。
 

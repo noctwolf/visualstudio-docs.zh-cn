@@ -6,19 +6,17 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 9005cf64f4b72f39923d6525e78de745d79c3953
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: abf772f1e00239b3a66e01c95dd827a392a12902
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中编译和生成
 
 Visual Studio for Mac 可用于在项目开发过程中生成应用程序和创建程序集。 请务必提早且经常编译和生成代码，以便确定类型不匹配和其他编译时错误。
 
-## <a name="choosing-a-build-method"></a>选择一种生成方法：
-
-### <a name="using-the-ide"></a>使用 IDE
+## <a name="building-from-the-ide"></a>从 IDE 生成
 
 使用 Visual Studio for Mac，可立即创建和运行生成，并保持对生成功能的控制。 Visual Studio for Mac 使用 MSBuild 作为基础生成系统。
 
@@ -40,13 +38,13 @@ Visual Studio for Mac 还可用于执行以下操作：
 
     ![添加自定义命令](media/compiling-and-building-image6.png)
 
-### <a name="building-from-command-line"></a>从命令行生成
+## <a name="building-from-command-line"></a>从命令行生成
 
 可使用 MSBuild 生成引擎通过命令行生成应用程序。
 
 请参阅 [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild) 内容，了解有关使用 MSBuild 的详细信息。
 
-### <a name="using-visual-studio-team-services"></a>使用 Visual Studio Team Services
+## <a name="building-from-visual-studio-team-services"></a>从 Visual Studio Team Services 生成
 
 * [生成 Xamarin 应用](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
 * [与 Xamarin 持续集成](https://developer.xamarin.com/guides/cross-platform/ci/)

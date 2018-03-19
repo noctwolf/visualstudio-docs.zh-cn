@@ -1,10 +1,11 @@
 ---
 title: "在 Visual Studio 中以 .NET Framework 为目标 | Microsoft Docs"
 ms.custom: 
-ms.date: 01/18/2018
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: e78f77993c510a223056696c0beac27147d18d5a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目标概述
 
@@ -48,7 +50,7 @@ ms.lasthandoff: 01/22/2018
 
 处理针对 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 早期版本的项目时，Visual Studio 会对开发环境进行如下动态更改：
 
-- 筛选“新建项目”对话框、“添加新项”对话框、“添加新引用”对话框和“添加服务引用”对话框中的项，以忽略在目标版本中不可用的选项。
+- 它筛选“添加新项”对话框、“添加新引用”对话框和“添加服务引用”对话框中的项，以忽略在目标版本中不可用的选项。
 
 - 在“工具箱”中筛选自定义控件，以删除在目标版本中不可用的控件，并在多个控件可用时仅显示最新版本。
 
@@ -65,7 +67,11 @@ ms.lasthandoff: 01/22/2018
 
 ## <a name="selecting-a-target-framework-version"></a>选择目标框架版本
 
-创建项目时，请在“新建项目”对话框中选择目标 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 根据选定内容对可用项目模板列表进行筛选。 对于现有项目，可在项目属性对话框中更改目标 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+创建项目时，请在“新建项目”对话框中选择目标 .NET Framework 版本。 可用框架的列表包含适用于所选模板类型的已安装框架版本。 对于不需要使用 .NET Framework 的模板类型（例如，.NET Core 模板），“框架”下拉列表将隐藏。
+
+![“新建项目”对话框中的“框架”下拉列表](media/vside-newproject-framework.png)
+
+对于现有项目，可在项目属性对话框中更改目标 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 ## <a name="resolving-system-and-user-assembly-references"></a>解析系统和用户程序集引用
 

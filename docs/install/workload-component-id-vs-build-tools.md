@@ -5,21 +5,23 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 12/01/2017
+ms.date: 03/05/2018
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
-ms.workload: multiple
-ms.openlocfilehash: 4b41304a893dbee45b7de08edb9a37e07ef8656d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4da292ede647539182b6b1f2e8aa6c843d2f0985
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio 生成工具 2017 组件目录
 
@@ -43,10 +45,10 @@ ms.lasthandoff: 12/22/2017
 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | 必需
-Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio 生成工具核心 | 15.0.27005.2 | 必需
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.0.27019.1 | 必需
-Microsoft.VisualStudio.Component.FSharp.MSBuild | F# 编译器 | 15.0.27019.1 | Optional
+Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio 生成工具核心 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.FSharp.MSBuild | F# 编译器 | 15.6.27406.0 | Optional
 
 ## <a name="net-core-build-tools"></a>.NET Core 生成工具
 
@@ -58,50 +60,64 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# 编译器 | 15.0.27019.1 | 
 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
-Microsoft.Net.Core.Component.SDK | .NET Core 1.0 - 1.1 开发工具 | 15.0.26606.0 | 必需
+Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目标和生成任务 | 15.0.26919.1 | 必需
-Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 桌面版开发工具 | 15.0.26919.1 | Optional
+Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 开发工具 | 15.6.27406.0 | Optional
 
-## <a name="visual-c-build-tools"></a>Visual C++ 生成工具
+## <a name="nodejs-build-tools"></a>Node.js 生成工具
 
-**ID：**Microsoft.VisualStudio.Workload.VCTools
+ID：Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**说明：**使用功能强大的 Visual C++ 工具集、ATL 以及 MFC 和 C++/CLI 等可选功能生成基于 Windows 的经典应用程序。
+**说明：**使用 Node.js（事件驱动的异步 JavaScript 运行时）生成可扩展的网络应用程序。 
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ 生成工具的核心功能 | 15.0.27005.2 | 必需
-Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Visual C++ 2017 Redistributable 更新 | 15.0.27019.1 | 必需
-Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 运行时 | 15.0.26621.2 | 必需
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 建议
-Microsoft.VisualStudio.Component.VC.CMake.Project | 适用于 CMake 的 Visual C++ 工具 | 15.0.27019.1 | 建议
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 v141 工具集（x86、x64） | 15.0.27019.1 | 建议
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.16299.0) | 15.0.27128.1 | 建议
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB 和 JS | 15.0.27128.1 | 建议
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.0.27128.1 | 建议
+Microsoft.VisualStudio.Component.Node.Build | Node.js 支持 | 15.6.27406.0 | 必需
+
+## <a name="visual-c-build-tools"></a>Visual C++ 生成工具
+
+**ID：**Microsoft.VisualStudio.Workload.VCTools
+
+说明：使用 Microsoft C++ 工具集、ATL 或 MFC 生成 Windows 桌面应用程序。
+
+### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
+
+组件 ID | name | 版本 | 依赖项类型
+--- | --- | --- | ---
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
+Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ 生成工具的核心功能 | 15.6.27406.0 | 必需
+Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Visual C++ 2017 Redistributable 更新 | 15.6.27406.0 | 必需
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 v141 工具集（x86、x64） | 15.6.27406.0 | 必需
+Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 运行时 | 15.6.27406.0 | 必需
+Microsoft.VisualStudio.Component.VC.CMake.Project | 适用于 CMake 的 Visual C++ 工具 | 15.6.27406.0 | 建议
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | 建议
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB 和 JS | 15.6.27406.0 | 建议
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | 建议
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 建议
-Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 15.0.27019.1 | Optional
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.0.26621.2 | Optional
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.VC.140 | 用于桌面的 VC++ 2015.3 v140 工具集（x86、x64） | 15.0.27019.1 | Optional
-Microsoft.VisualStudio.Component.VC.ATL | Visual C++ ATL 支持 | 15.0.26823.1 | Optional
-Microsoft.VisualStudio.Component.VC.ATLMFC | MFC 和 ATL 支持（x86 和 x64） | 15.0.27005.2 | Optional
-Microsoft.VisualStudio.Component.VC.ClangC2 | Clang/C2（实验） | 15.0.27019.1 | Optional
-Microsoft.VisualStudio.Component.VC.CLI.Support | C++/CLI 支持 | 15.0.27019.1 | Optional
-Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | 标准库模块（试验） | 15.0.27019.1 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM | 用于 ARM 的 Visual C++ 编译器和库 | 15.0.27019.1 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | 用于 ARM64 的 Visual C++ 编译器和库 | 15.0.27019.1 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.15063.0) | 15.0.27128.1 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB 和 JS | 15.0.27128.1 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.0.27128.1 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 适用于桌面 C++ [ARM 和 ARM64] 的 Windows 10 SDK (10.0.16299.0) | 15.0.27128.1 | Optional
-Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 和 UCRT SDK | 15.0.27019.1 | Optional
+Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 15.6.27309.0 | Optional
+Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.140 | 用于桌面的 VC++ 2015.3 v140 工具集（x86、x64） | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.ATL | Visual C++ ATL 支持 | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.ATLMFC | MFC 和 ATL 支持（x86 和 x64） | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.ClangC2 | Clang/C2（实验） | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.CLI.Support | C++/CLI 支持 | 15.6.27309.0 | Optional
+Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | 标准库模块（试验） | 15.6.27309.0 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.ARM | 用于 ARM 的 Visual C++ 编译器和库 | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | 用于 ARM64 的 Visual C++ 编译器和库 | 15.6.27309.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.15063.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 适用于桌面 C++ [ARM 和 ARM64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.WinXP | 针对 C++ 的 Windows XP 支持 | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 和 UCRT SDK | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | 针对 C++ 的 Windows XP 支持 | 15.6.27406.0 | Optional
 
 ## <a name="web-development-build-tools"></a>Web 开发生成工具
 
@@ -113,29 +129,31 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 和 
 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
-Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.0.26621.2 | 必需
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.0.26621.2 | 必需
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.0.27005.2 | 必需
-Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | WCF 开发生成工具 | 15.0.27019.1 | 必需
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web 开发生成工具 | 15.0.26323.1 | 必需
-Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目标包 | 15.0.26621.2 | 建议
-Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目标包 | 15.0.26621.2 | 建议
-Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目标包 | 15.0.26621.2 | 建议
-Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目标包 | 15.0.26621.2 | 建议
-Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目标包 | 15.0.26621.2 | 建议
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 开发工具 | 15.0.26606.0 | 建议
-Microsoft.Net.Core.Component.SDK | .NET Core 1.0 - 1.1 开发工具 | 15.0.26606.0 | 建议
+Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必需
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | 必需
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.6.27406.0 | 必需
+Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | WCF 开发生成工具 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web 开发生成工具 | 15.6.27406.0 | 必需
+Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目标包 | 15.6.27406.0 | 建议
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目标包 | 15.6.27406.0 | 建议
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目标包 | 15.6.27406.0 | 建议
+Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目标包 | 15.6.27406.0 | 建议
+Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目标包 | 15.6.27406.0 | 建议
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 开发工具 | 15.6.27406.0 | 建议
+Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | 建议
+Microsoft.VisualStudio.Component.AspNet45 | 高级 ASP.NET 功能 | 15.6.27428.1 | 建议
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目标和生成任务 | 15.0.26919.1 | 建议
-Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 开发工具 | 15.0.26621.2 | Optional
-Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.0.26208.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目标包 | 15.0.26208.0 | Optional
-Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.0.27128.1 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目标包 | 15.0.27019.1 | Optional
-Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.0.26419.1 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目标包 | 15.0.26621.2 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 开发工具 | 15.0.26621.2 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 开发工具 | 15.0.27019.1 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 开发工具 | 15.0.27005.2 | Optional
+Microsoft.VisualStudio.Component.TypeScript.2.6 | TypeScript 2.6 SDK | 15.0.27406.0 | 建议
+Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 开发工具 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目标包 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目标包 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目标包 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 开发工具 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 开发工具 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 开发工具 | 15.6.27406.0 | Optional
 
 ## <a name="unaffiliated-components"></a>独立组件
 
@@ -143,7 +161,13 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 开发工�
 
 组件 ID | name | 版本
 --- | --- | ---
-Microsoft.VisualStudio.Component.VC.Tools.14.11 | VC++ 2017 版本 15.4 v14.11 工具集 | 15.0.27128.1
+Microsoft.VisualStudio.Component.TypeScript.2.0 | TypeScript 2.0 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.1 | TypeScript 2.1 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.2 | TypeScript 2.2 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.3 | TypeScript 2.3 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.5 | TypeScript 2.5 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.VC.Tools.14.11 | VC++ 2017 版本 15.4 v14.11 工具集 | 15.0.27406.0
+Microsoft.VisualStudio.Component.VC.Tools.14.12 | VC++ 2017 版本 15.5 v14.12 工具集 | 15.0.27406.0
 
 ## <a name="get-support"></a>获取支持
 有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。

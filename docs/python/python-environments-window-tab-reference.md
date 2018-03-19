@@ -2,7 +2,7 @@
 title: "Python 环境窗口引用 - Visual Studio | Microsoft Docs"
 description: "在 Visual Studio 的 Python 环境窗口中出现的每个选项卡的详细信息。"
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92d5014c257cf35e556eca1928e1c5612f4913eb
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 13d84eb160b4ba82d4a03d48fe814cb0d92388b0
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>“Python 环境”窗口选项卡引用
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 02/23/2018
 
 启动脚本包含交互窗口自动加载并运行的代码，包括导入、函数定义及任何其他文字内容。 此类脚本通过以下两种方式引用：
 
-1. 安装环境时，Visual Studio 会创建文件夹 `Documents\Visual Studio 2017\Python Scripts\<environment>`，其中 &lt;environment> 对应环境的名称。 可以使用“浏览交互式脚本”命令轻松地导航到特定于环境的文件夹。 启动该环境的交互窗口时，它会按字母顺序加载和运行在此处找到的任何 `.py` 文件。
+1. 安装环境时，Visual Studio 会创建文件夹 `Documents\Visual Studio 2017\Python Scripts\<environment>`，其中 &lt;environment&gt; 对应环境的名称。 可以使用“浏览交互式脚本”命令轻松地导航到特定于环境的文件夹。 启动该环境的交互窗口时，它会按字母顺序加载和运行在此处找到的任何 `.py` 文件。
 
 1. “工具”>“选项”>“Python 工具”>“交互窗口”选项卡中的“脚本”控件（请参阅[交互窗口选项](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)）用于为所有环境中加载和运行的启动脚本指定另一个文件夹。 但是，此功能目前无效。
 
@@ -80,9 +80,17 @@ ms.lasthandoff: 02/23/2018
 
 在先前版本中还标记为“pip”。
 
-管理环境中安装的包，还允许搜索并安装新包（包括任何依赖项）。 搜索操作会筛选当前安装的包和 [PyPI](https://pypi.python.org)。 还可以在搜索框中直接输入任何 `pip install` 命令，包括标志（例如 `--user` 或 `--no-deps`）。
+管理环境中安装的包，还允许搜索并安装新包（包括任何依赖项）。
 
-![Python 环境包选项卡](media/environments-pip-tab.png)
+将显示已安装的程序包，并带有更新（向上箭头）和卸载（圈圈中的 X）程序包的控件：
+
+![Python 环境包选项卡](media/environments-pip-tab-controls.png)
+
+输入搜索词筛选已安装的程序包的列表以及可从 PyPI 中安装的程序包。
+
+![可以搜索“num”的 Python 环境程序包选项卡](media/environments-pip-tab.png)
+
+还可以在搜索框中直接输入任何 `pip install` 命令，包括标志（例如 `--user` 或 `--no-deps`）。
 
 安装一个包会在文件系统上环境的 `Lib` 文件中创建子文件夹。 例如，如果在 `c:\Python36` 中安装了 Python 3.6，则包会安装在 `c:\Python36\Lib` 中；如果在 `c:\Program Files\Anaconda3` 中安装了 Anaconda3，则包会安装在 `c:\Program Files\Anaconda3\Lib` 中。
 
@@ -102,7 +110,9 @@ ms.lasthandoff: 02/23/2018
 
 ![Python 环境 IntelliSense 选项卡](media/environments-intellisense-tab.png)
 
-数据库包含所有环境库的元数据，可提高 IntelliSense 速度并减少内存使用量。 Visual Studio 检测到新环境（或添加一个）时，它会通过分析库源文件，自动开始编译数据库 。 此过程可能会花一分钟到一小时不等或者更多时间，具体取决于安装的组件。 （例如，Anaconda 随附了许多库，需要花费一些时间来编译该数据库。）完成后，会获得 IntelliSense 的详细信息，并且在安装更多库之前，无需再次刷新数据库（使用“刷新 DB”按钮）。
+在 Visual Studio 2017 版本 15.5 和更早版本中，IntelliSense 完成依赖于为该库编译的数据库。 安装库后，将在后台生成数据库，但可能需要一些时间，并且可能在开始编写代码时此过程还未完成。 Visual Studio 2017 版本 15.6 和更高版本使用更快的方法提供不依赖于数据库的完成，除非专门选择启用它。
+
+Visual Studio 检测到新环境（或添加一个）时，它会通过分析库源文件，自动开始编译数据库 。 此过程可能会花一分钟到一小时不等或者更多时间，具体取决于安装的组件。 （例如，Anaconda 随附了许多库，需要花费一些时间来编译该数据库。）完成后，会获得 IntelliSense 的详细信息，并且在安装更多库之前，无需再次刷新数据库（使用“刷新 DB”按钮）。
 
 其中数据尚未编译的库将使用 **!** 标记；如果环境的数据库未完成，则 **!** 也会出现在主环境列表中该环境的旁边。
 
@@ -110,5 +120,5 @@ ms.lasthandoff: 02/23/2018
 
 - [在 Visual Studio 中管理 Python 环境](managing-python-environments-in-visual-studio.md)
 - [为项目选择解释器](selecting-a-python-environment-for-a-project.md)
-- [对依赖项使用 requirements.txt](managing-required-packages-with-requirements-txt.md) 
+- [对依赖项使用 requirements.txt](managing-required-packages-with-requirements-txt.md)
 - [搜索路径](search-paths.md)
