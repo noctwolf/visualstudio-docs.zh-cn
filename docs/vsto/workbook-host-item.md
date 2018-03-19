@@ -57,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 >  Visual Studio 中的 Office 开发工具不支持共享工作簿。  
   
 ## <a name="understanding-workbook-host-items-in-vsto-add-in-projects"></a>了解 VSTO 外接程序项目中的 Workbook 宿主项  
- 在 VSTO 外接程序项目中，可以在运行时为 Excel 中打开的任何工作簿生成 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项。 若要生成<xref:Microsoft.Office.Tools.Excel.Workbook>宿主项，请使用 GetVstoObject 方法。 有关更多信息，请参见 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 在 VSTO 外接程序项目中，可以在运行时为 Excel 中打开的任何工作簿生成 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项。 若要生成<xref:Microsoft.Office.Tools.Excel.Workbook>宿主项，请使用 GetVstoObject 方法。 有关更多信息，请参见 [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   

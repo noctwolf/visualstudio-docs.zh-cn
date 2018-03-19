@@ -53,7 +53,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>请参阅  
  [Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
+ [结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)   
  [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)   
  [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)   
