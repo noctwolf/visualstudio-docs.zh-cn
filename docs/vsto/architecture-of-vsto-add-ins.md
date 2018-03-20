@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: a8abb77978731a9fa5cd43acdcb4928944c605b1
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -96,7 +98,7 @@ ms.lasthandoff: 01/10/2018
   
 9. 如果你已重写 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 方法，则 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 将在 VSTO 外接程序中调用该方法。  
   
-     可以选择重写此方法，以向其他 Microsoft Office 解决方案公开 VSTO 外接程序中的对象。 有关详细信息，请参阅 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
+     可以选择重写此方法，以向其他 Microsoft Office 解决方案公开 VSTO 外接程序中的对象。 有关详细信息，请参阅 [从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
   
 10. 如果你已重写 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 方法，则 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 将在 VSTO 外接程序中调用该方法。  
   

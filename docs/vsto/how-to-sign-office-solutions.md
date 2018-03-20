@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 2883f75c6ca75e1875621f9c6779db09722d6945
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -29,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- 如果您手动编辑应用程序和部署清单通过使用清单生成和编辑工具 （mage.exe 和 mageui.exe），你必须重新为清单签名之后才能使用它们。 有关详细信息，请参阅 [How to: Re-sign Application and Deployment Manifests](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests)。  
+ 如果您手动编辑应用程序和部署清单通过使用清单生成和编辑工具 （mage.exe 和 mageui.exe），你必须重新为清单签名之后才能使用它们。 有关详细信息，请参阅 [如何：为应用程序和部署清单重新签名](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests)。  
   
 ## <a name="signing-by-using-a-certificate"></a>使用证书进行签名  
  证书是包含一个唯一键和解决方案发布服务器的标识的文件。 可以从证书颁发机构购买证书或创建你自己的证书，并且有对其进行签名的证书颁发机构。  
