@@ -14,11 +14,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5a4721eea178e4a9ab5766760ccf1405589684
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 17b3b0a107d263a213746a625ec5a65419695b4d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="installing-the-visual-studio-sdk"></a>安装 Visual Studio SDK
 Visual Studio SDK 是一项可选功能在 Visual Studio 安装。 你还可以在以后安装 VS SDK。  
@@ -35,6 +35,6 @@ Visual Studio SDK 是一项可选功能在 Visual Studio 安装。 你还可以�
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>从命令行安装 Visual Studio SDK  
-与任何 Visual Studio 工作负荷或组件，你还可以从命令行安装项。 请参阅[使用命令行参数来安装 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)有关的适当的命令行开关和如何确定工作负荷或组件标识符的详细信息。
+与任何 Visual Studio 工作负荷或组件，你可以安装**Visual Studio 扩展开发**工作负荷 (ID: Microsoft.VisualStudio.Workload.VisualStudioExtension) 从命令行。 请参阅[使用命令行参数来安装 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)有关适当的命令行开关和确定工作负荷或组件标识符的一般说明的详细信息。
   
  请注意，你必须使用的 Visual Studio 安装程序已安装 Visual Studio 的版本匹配。 例如，如果必须在计算机上安装的 Visual Studio Enterprise，你必须运行 Visual Studio Enterprise 安装程序 (vs_enterprise.exe)。

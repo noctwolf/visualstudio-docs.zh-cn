@@ -1,32 +1,35 @@
 ---
 title: "调试 Visual Studio 的 ASP.NET-|Microsoft 文档"
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: c740265220f844b24ba9b4eeb133de185773a7a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- aspnet
+ms.openlocfilehash: 0c6f3b0d074957ba8fabd93707e9a76f0dcd46e1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器进行调试 ASP.NET
 
-Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试你的应用。 本主题提供的快速方法，若要了解的一些基本功能。
+Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试你的应用。 本主题提供了一种快速了解部分基本功能的方法。
 
 ## <a name="create-a-new-project"></a>创建新项目 
 
-1. 在 Visual Studio 中，选择**文件 > 新建项目**。
+1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
 1. 下**Visual C#**，选择**Web**，，然后在中间窗格中选择**ASP.NET 核心 Web 应用程序**。
 
@@ -38,7 +41,7 @@ Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试
 
     ![选择一个 Web 应用程序](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
 
-    Visual Studio 创建项目。
+    Visual Studio 随即创建项目。
 
 1. 在解决方案资源管理器，打开 About.cshtml.cs （在下 Pages/About.cshtml) 并将下面的代码
 
@@ -49,7 +52,7 @@ Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试
     }
     ```
 
-    替换为以下代码：
+    替换为此代码：
 
     ```c#
     public void OnGet()
@@ -91,19 +94,19 @@ A*断点*标记，它指示 Visual Studio 应在哪个位置挂起你运行代�
     ![命中断点](../debugger/media/dbg-qs-hit-breakpoint-aspnet.png)
 
     > [!TIP]
-    > 如果你有循环或递归中的存在断点，或如果你有大量断点频繁单步执行，使用[条件断点](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)若要确保你的代码仅在满足特定条件时挂起。 这可以节省时间并可以还使其更轻松地调试难以重现的问题。
+    > 如果你具有循环或递归中的存在断点，或者如果你有许多频繁单步执行时的断点使用[条件断点](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)若要确保你的代码仅在满足特定条件时挂起。 这可以节省时间并可以还使其更轻松地调试难以重现的问题。
 
 ## <a name="navigate-code"></a>导航代码
 
-有不同的命令，以指示调试器以继续。 我们将演示 Visual Studio 2017 中有用的代码导航命令。
+有不同的命令，以指示调试器以继续。 我们显示 Visual Studio 2017 中有用的代码导航命令。
 
-- 在断点处暂停时，将鼠标悬停在该语句`return c2`直到绿色**运行单击**按钮![运行到单击](../debugger/media/dbg-tour-run-to-click.png)出现，，然后按**运行单击**按钮。
+在断点处暂停时，将鼠标悬停在该语句`return c2`直到绿色**运行单击**按钮![运行到单击](../debugger/media/dbg-tour-run-to-click.png)出现，，然后按**运行单击**按钮。
 
-    ![单击运行](../debugger/media/dbg-qs-run-to-click-aspnet.png)
+![单击运行](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
-    应用程序继续执行，并在其中单击该按钮的代码行上暂停。
+应用程序继续执行，并在其中单击该按钮的代码行上暂停。
 
-    用于的常见键盘命令逐步调试代码包括**F10**和**F11**。 有关更多深入说明，请参阅[初学者指南](../debugger/getting-started-with-the-debugger.md)。
+用于的常见键盘命令逐步调试代码包括**F10**和**F11**。 有关更多深入说明，请参阅[初学者指南](../debugger/getting-started-with-the-debugger.md)。
 
 ## <a name="inspect-variables-in-a-datatip"></a>检查在数据提示中的变量
 
@@ -133,9 +136,7 @@ A*断点*标记，它指示 Visual Studio 应在哪个位置挂起你运行代�
 
 ## <a name="next-steps"></a>后续步骤
 
-- 若要了解有关调试器的详细信息，请参阅[启动调试器，并导航代码](../debugger/getting-started-with-the-debugger.md)。
-- 若要了解有关断点的详细信息，请参阅[使用断点](../debugger/using-breakpoints.md)。
+在本教程中，你已了解如何启动调试器，单步执行代码，并检查变量。 你可能想要获取高级查看调试器功能，以及指向详细信息。
 
-## <a name="see-also"></a>请参阅  
- [在 Visual Studio 中进行调试](../debugger/index.md)  
- [调试器功能简介](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [调试器功能简介](../debugger/debugger-feature-tour.md)

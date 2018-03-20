@@ -1,24 +1,28 @@
 ---
-title: "了解如何使用 Visual Studio 调试 |Microsoft 文档"
-ms.custom: H1HackMay2017
-ms.date: 10/11/2017
+title: "了解如何调试的 Visual Studio |Microsoft 文档"
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+ms.custom: mvc
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: e0686a4138fc2489c8a63b207e98cf7780477782
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>了解如何使用 Visual Studio 进行调试
 
@@ -31,6 +35,15 @@ ms.lasthandoff: 01/04/2018
 |  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)调试显示类似的步骤。 |
 
 尽管演示应用程序是 C#，但功能都适用于 c + +、 Visual Basic、 JavaScript 和其他语言支持的 Visual Studio （除指明外）。
+
+在本教程中，你将：
+
+> [!div class="checklist"]
+> * 启动调试器并命中断点。
+> * 学习命令来单步执行在调试器中的代码
+> * 检查数据提示和调试器窗口中的变量
+> * 检查调用堆栈
+> * 使用异常帮助器
 
 ## <a name="start-the-debugger"></a>启动调试器 ！
 
@@ -79,11 +92,11 @@ ms.lasthandoff: 01/04/2018
 
 ## <a name="restart-your-app-quickly"></a>快速重新启动您的应用程序
 
-1. 单击**重新启动**![重新启动应用](../debugger/media/dbg-tour-restart.png "RestartApp") （Ctrl + Shift + F5） 的调试工具栏中的按钮。
+单击**重新启动**![重新启动应用](../debugger/media/dbg-tour-restart.png "RestartApp") （Ctrl + Shift + F5） 的调试工具栏中的按钮。
 
-    当你按**重新启动**，从而节省了时间而不是停止应用并重新启动调试器。 在第一个命中通过执行代码的断点处暂停调试器。
+当你按**重新启动**，从而节省了时间而不是停止应用并重新启动调试器。 在第一个命中通过执行代码的断点处暂停调试器。
 
-    调试器中设置的断点处再次停止`MainWindow`构造函数。
+调试器中设置的断点处再次停止`MainWindow`构造函数。
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>导航代码在调试器中使用步骤命令
 
@@ -145,20 +158,20 @@ ms.lasthandoff: 01/04/2018
 
 ## <a name="examine-the-call-stack"></a>检查调用堆栈
 
-- 在暂停时在`Update`方法中，单击**调用堆栈**窗口中，这是默认情况下在较低的右窗格中打开。
+在暂停时在`Update`方法中，单击**调用堆栈**窗口中，这是默认情况下在较低的右窗格中打开。
 
-     ![检查调用堆栈](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+![检查调用堆栈](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
 
-    **调用堆栈**窗口将显示在其中调用方法和函数获取的顺序。 顶部行显示当前函数 (`Update`教程应用程序中的方法)。 第二行显示`Update`从进行了调用`Path.set`属性，依次类推。
+**调用堆栈**窗口将显示在其中调用方法和函数获取的顺序。 顶部行显示当前函数 (`Update`教程应用程序中的方法)。 第二行显示`Update`从进行了调用`Path.set`属性，依次类推。
 
-    >  [!NOTE]
-    > **调用堆栈**在 Eclipse 如某些 Ide 窗口是类似于调试透视。
+>  [!NOTE]
+> **调用堆栈**在 Eclipse 如某些 Ide 窗口是类似于调试透视。
 
-    调用堆栈是一种好方法，以检查并了解应用程序的执行流。
+调用堆栈是一种好方法，以检查并了解应用程序的执行流。
 
-    你可以双击要打算看看该源代码的代码行，并还更改正在检查由调试器当前作用域。 此操作不提升调试器。
+你可以双击要打算看看该源代码的代码行，并还更改正在检查由调试器当前作用域。 此操作不提升调试器。
 
-    你还可以使用从右击菜单**调用堆栈**窗口来执行其他操作。 例如，可以将断点插入到指定的函数、 向前移动使用调试器**运行到光标处**，并转检查源代码。 有关详细信息，请参阅[如何： 检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
+你还可以使用从右击菜单**调用堆栈**窗口来执行其他操作。 例如，可以将断点插入到指定的函数、 向前移动使用调试器**运行到光标处**，并转检查源代码。 有关详细信息，请参阅[如何： 检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
 
 ## <a name="step-out"></a>跳出
 
@@ -280,7 +293,9 @@ ms.lasthandoff: 01/04/2018
 
 若要了解有关调试器的功能的详细信息，请参阅[调试器提示和技巧](../debugger/debugger-tips-and-tricks.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="next-steps"></a>后续步骤
 
-[在 Visual Studio 中进行调试](../debugger/index.md)  
-[调试器功能简介](../debugger/debugger-feature-tour.md)
+在本教程中，你已了解如何启动调试器，单步执行代码，并检查变量。 你可能想要获取高级查看调试器功能，以及指向详细信息。
+
+> [!div class="nextstepaction"]
+> [调试器功能简介](../debugger/debugger-feature-tour.md)
