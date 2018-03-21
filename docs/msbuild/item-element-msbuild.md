@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e490ad25535cddf20a2693c2f3b9b7642f0c46e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c57923c75d1ae62b45b6ac288e75ef4e34a2f742
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="item-element-msbuild"></a>Item 元素 (MSBuild)
 包含用户定义的项和其元数据。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目中使用的每一个项都必须被指定为 `ItemGroup` 元素的子元素。  
@@ -75,7 +75,7 @@ ms.lasthandoff: 02/09/2018
 
 |特性|描述|  
 |---------------|-----------------|  
-|`Include`|必需的特性。<br /><br /> 项列表中要包含的文件或通配符。|  
+|`Include`|可选特性。<br /><br /> 项列表中要包含的文件或通配符。|  
 |`Exclude`|可选特性。<br /><br /> 项列表中要排除的文件或通配符。|  
 |`Condition`|可选特性。<br /><br /> 要评估的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
 |`Remove`|可选特性。<br /><br /> 要从项列表中删除的文件或通配符。<br /><br />|  

@@ -1,22 +1,18 @@
 ---
 title: "如何在 Visual Studio 中使用适用于 C++ 的 CTest | Microsoft Docs"
-ms.custom: 
 ms.date: 11/07/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 8ae88a819dca24af504c954a00c4f25a9d61d38c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 602240df366d9ee978f632a8693bae3de21fcedf
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用适用于 C++ 的 CTest
 
@@ -24,7 +20,7 @@ ms.lasthandoff: 02/23/2018
 
 ## <a name="to-write-tests"></a>编写测试
 
-Visual Studio 中的 CMake 支持不涉及 Visual Studio 项目系统。 因此，可如同在任何 CMake 环境中一样编写和配置 CTest 测试。 有关在 Visual Studio 中使用 CMake 的详细信息，请参阅 [Visual C++ 的 CMake 工具](/cpp/ide/cmake-tools-for-visual-cpp)。 
+Visual Studio 中的 CMake 支持不涉及 Visual Studio 项目系统。 因此，可如同在任何 CMake 环境中一样编写和配置 CTest 测试。 有关在 Visual Studio 中使用 CMake 的详细信息，请参阅 [Visual C++ 的 CMake 工具](/cpp/ide/cmake-tools-for-visual-cpp)。
 
 ## <a name="to-run-tests-visual-studio-2017-version-156"></a>运行测试（Visual Studio 2017 版本 15.6）
 

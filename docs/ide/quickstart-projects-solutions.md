@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: f8845ab2de127b511b9180bebbe201b777c23455
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>快速入门：项目和解决方案
 
@@ -185,10 +185,10 @@ ms.lasthandoff: 03/09/2018
 
 ## <a name="see-also"></a>请参阅
 
-[快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
-[快速入门：个性化设置 Visual Studio IDE 和编辑器](../ide/quickstart-personalize-the-ide.md)  
-[快速入门：在编辑器中编码](../ide/quickstart-editor.md)  
-[管理项目和解决方案属性](../ide/managing-project-and-solution-properties.md)  
-[管理项目中的引用](../ide/managing-references-in-a-project.md)  
-[在 Visual Studio 中开发代码而无需项目或解决方案](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
-[Visual Studio IDE 概述](../ide/visual-studio-ide.md)
+- [快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)
+- [快速入门：个性化设置 Visual Studio IDE 和编辑器](../ide/quickstart-personalize-the-ide.md)
+- [快速入门：在编辑器中编码](../ide/quickstart-editor.md)
+- [管理项目和解决方案属性](../ide/managing-project-and-solution-properties.md)
+- [管理项目中的引用](../ide/managing-references-in-a-project.md)
+- [在 Visual Studio 中开发代码而无需项目或解决方案](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Visual Studio IDE 概述](../ide/visual-studio-ide.md)

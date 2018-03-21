@@ -18,11 +18,11 @@ ms.technology:
 - vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38f6dfc375e776e4ad471fa8075b755dc3c31998
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 78fe2950a0d708b32d5e3f8f9415b2e51af9687b
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="options-text-editor-cc-experimental"></a>选项, 文本编辑器, C/C++, 实验
 
@@ -46,7 +46,7 @@ Visual Studio 2017 版本 15.3 及更高版本：此功能当前被称为“启�
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Visual Studio Marketplace 中的其他功能
 
-可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Downloads) 中浏览其他文本编辑器功能。 一个示例是 [C++ 快速修补](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.CQuickFixes2017)，它支持以下内容：
+可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Downloads) 中浏览其他文本编辑器功能。 一个示例是 [C++ 快速修补](https://marketplace.visualstudio.com/items?itemName=VisualCppDevLabs.CQuickFixes2017)，它支持以下内容：
 
 - **添加缺少的 #include** - 建议对你代码中的未知符号使用相关的 #include
 
