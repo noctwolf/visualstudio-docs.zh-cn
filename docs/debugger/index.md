@@ -4,11 +4,11 @@ title: "在 Visual Studio 中调试应用 | Microsoft Docs"
 description: "了解如何使用 Visual Studio 2017 并以你喜欢的语言来调试适用于你的平台和设备的应用程序、服务和工具。"
 ms.topic: landing-page
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 6c81a60b706a02a66fce176613fce1e0dae2496c
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: b2b168c1a91011abf1d3c3c8277fdaacc8fff1d8
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debugging-in-visual-studio"></a>在 Visual Studio 中进行调试
 
@@ -52,24 +52,6 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>使用调试器导航代码</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-        <li>
         <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
         <div class="cardSize">
             <div class="cardPadding">
@@ -106,7 +88,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/how-to-use-intellitrace-step-back">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -116,25 +98,25 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>调试多线程应用</h3>
+                        <h3>查看 IntelliTrace 快照 (Visual Studio Enterprise)</h3>
                     </div>
                 </div>
             </div>
         </div>
         </a>
     </li>
-        <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/intellitrace">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debug-live-azure-applications">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>了解 IntelliTrace (Visual Studio Enterprise)</h3>
+                        <h3>调试实时 Azure 应用服务应用程序</h3>
                     </div>
                 </div>
             </div>
@@ -153,6 +135,24 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
                     </div>
                     <div class="cardText">
                         <h3>调试器提示和技巧</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_get-started.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>调试多线程应用</h3>
                     </div>
                 </div>
             </div>
