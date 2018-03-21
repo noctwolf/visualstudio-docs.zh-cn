@@ -11,11 +11,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2a65f2237b3fb28569a872c2e3926a2b88e11473
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ab83ba64ff8b34c19e7f10aada74ca3eec1441f6
+ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>在 Windows 窗体中嵌入图表
 您可以在 Windows 控件，它显示在控件中嵌入 DSL 图[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]窗口。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 02/09/2018
       panel1.Controls.Add(content);  
       this.docView = docView;  
     }  
-    private MyDSLDSLDocView docView;  
+    private MyDSLDocView docView;  
   
     ```  
   
@@ -152,6 +152,6 @@ ms.lasthandoff: 02/09/2018
   
      请注意列表框中显示的元素的列表，在模型中，以及它是正确和撤消和重做任何添加或删除操作后。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
