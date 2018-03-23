@@ -1,5 +1,5 @@
 ---
-title: "访问 Visual Studio 中的数据 |Microsoft 文档"
+title: 访问 Visual Studio 中的数据 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: article
 f1_keywords:
@@ -15,11 +15,11 @@ manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e7c4c9aada390259d4abd57484c20d25728ef91f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>访问 Visual Studio 中的数据
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/15/2018
 
 ||||
 |-|-|-|
-|SQL 数据库|DocumentDB|存储 （blob、 表、 队列、 文件）|
+|SQL 数据库|Azure Cosmos DB|存储 （blob、 表、 队列、 文件）|
 |SQL 数据仓库|SQL Server Stretch Database|StorSimple|
 
 更多内容...
