@@ -1,3 +1,11 @@
-- name: 文档
+- name: Docs
   tocHref: /
   topicHref: /
+  items:
+    - name: Visual Studio
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/
+      items:
+        - name: 通连环境
+          tocHref: /visualstudio/connected-environment/
+          topicHref: /visualstudio/connected-environment/

@@ -1,26 +1,26 @@
 ---
-title: "查看快照使用 IntelliTrace 步骤后的 Visual Studio |Microsoft 文档"
+title: 查看快照使用 IntelliTrace 步骤后的 Visual Studio |Microsoft 文档
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
 ms.date: 12/06/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9602aa5c75f9572f2ca0f5cd8ef3426cde8ed96a
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 8f9f0c65110ef1003c58c0a4002f90ec7e7e08e3
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 步骤后的视图快照
 
@@ -72,8 +72,6 @@ IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本�
 2. 若要返回到实时执行，请选择**继续 (F5)**或单击**返回到实时调试**信息栏中的链接。 
 
 3. 你还可以查看从快照**事件**选项卡。若要执行此操作，选择具有快照的事件，然后单击**激活历史调试**。
-
-    你也可以单击相机图标以激活历史调试。
 
     ![事件激活历史调试](../debugger/media/intellitrace-activate-historical-debugging.png "事件激活历史调试")
 
