@@ -1,8 +1,9 @@
-# [Visual Studio 订阅](index.md) 
+# [Visual Studio 订阅](index.md)
 ## 订阅者体验
 ### [使用订阅者门户](using-the-subscriber-portal.md)
 #### [激活零售订阅](activate-store-subscriptions.md)
 #### [登录](signing-in.md)
+#### [备用标识](vs-alternate-identity.md)
 ##### [使用别名登录](aliasing.md)
 #### [管理订阅](manage-vs-subscriptions.md)
 ### [下载软件](subscriber-downloads.md)
@@ -14,9 +15,9 @@
 ### [订阅者权益](subscriber-benefits.md)
 ## 使用订阅者权益
 ### 工具
-#### [Visual Studio IDE ](vs-ide-benefit.md) 
+#### [Visual Studio IDE ](vs-ide-benefit.md)
 #### [Visual Studio Team Services](vs-vsts.md)
-#### [Azure 信用额度](vs-azure.md) 
+#### [Azure 信用额度](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft ](vs-parasoft.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
@@ -61,15 +62,17 @@
 #### [过期订阅](handle-expired-license.md)
 #### [使用个人电子邮件登录的订阅者](personal-email-sign-ins.md)
 ## 获取 Visual Studio 订阅
-### [比较订阅](compare-subscriptions.md)
+### [比较订阅选项](https://www.visualstudio.com/vs/pricing)
 ### 购买云订阅
 #### [概述](vscloud-overview.md)
-#### [首次购买](vscloud-first-purchase.md)
-#### [续订](vscloud-renewals.md)
-#### [购买更多](vscloud-buy-more.md)
-#### [取消](vscloud-cancel.md)
+#### [账单常见问题解答](vscloud-billing-faq.md)
+#### [购买 CSP](vscloud-csp.md)
+### 通过计划提供的订阅
+#### [Microsoft 合作伙伴网络](program-mpn.md)
+#### [管理 MPN 订阅](manage-mpn-subscriptions.md)
+#### [启动 Microsoft](program-startups.md)
 ## 资源
 ### [Visual Studio 许可条款](vs-license-terms.md)
-### [Visual Studio 许可白皮书](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
+### [Visual Studio 许可白皮书](http://aka.ms/vslicensing)
 ### [比较订阅选项和定价](https://www.visualstudio.com/vs/pricing)
 ### [比较 Visual Studio IDE 功能](https://www.visualstudio.com/vs/compare)
