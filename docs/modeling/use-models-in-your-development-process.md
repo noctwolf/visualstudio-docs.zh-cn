@@ -1,11 +1,11 @@
 ---
-title: "在开发过程中使用模型 |Microsoft 文档"
-ms.custom: 
+title: 在开发过程中使用模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-modeling
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 author: gewarren
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8d9b5632831c1d336f359aa4e4468da1543c73
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: d5e75a3a56ddc272f296ef5cca5afcfd360d4ba1
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 
@@ -141,11 +141,11 @@ ms.lasthandoff: 02/20/2018
 
 ## <a name="see-also"></a>请参阅
 
-[在敏捷开发中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) 
-[为你的应用程序创建模型](../modeling/create-models-for-your-app.md) 
-[建立用户需求模型](../modeling/model-user-requirements.md) 
-[建模应用程序的体系结构](../modeling/model-your-app-s-architecture.md) 
-[基于模型开发测试](../modeling/develop-tests-from-a-model.md) 
+[在敏捷开发中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+[为你的应用程序创建模型](../modeling/create-models-for-your-app.md)
+[建立用户需求模型](../modeling/model-user-requirements.md)
+[建模应用程序的体系结构](../modeling/model-your-app-s-architecture.md)
+[基于模型开发测试](../modeling/develop-tests-from-a-model.md)
 [结构建模解决方案](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
