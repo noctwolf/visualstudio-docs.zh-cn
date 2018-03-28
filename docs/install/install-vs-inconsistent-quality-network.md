@@ -1,26 +1,26 @@
-﻿---
-title: "在低带宽或不可靠的网络环境中安装 | Microsoft Docs"
-description: "介绍了 Visual Studio 安装程序在不可靠的网络条件下的运行方式，以及如何在开始安装前下载安装文件。"
+---
+title: 在低带宽或不可靠的网络环境中安装 | Microsoft Docs
+description: 介绍了 Visual Studio 安装程序在不可靠的网络条件下的运行方式，以及如何在开始安装前下载安装文件。
 ms.date: 01/17/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing Visual Studio
 - no internet connection
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b78f51c3b408d5a8c0723779cdf0b2d165aeec1
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 205bbb3370c8a344b35f54da3cf523a24b142762
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>在低带宽或不可靠的网络环境中安装 Visual Studio 2017
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 01/22/2018
 | pt-BR | 葡萄牙语 - 巴西 |
 | ru-RU | 俄语 |
 | tr-TR | 土耳其语 |
-| en-US | 中文 - 简体 |
+| zh-CN | 中文 - 简体 |
 | zh-TW | 中文 - 繁体 |
 
 ## <a name="get-support"></a>获取支持
