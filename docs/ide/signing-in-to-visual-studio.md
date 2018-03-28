@@ -1,23 +1,24 @@
 ---
-title: "登录 Visual Studio | Microsoft Docs"
-ms.custom: 
+title: 登录 Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/16/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
-caps.latest.revision: "30"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7e2fbc1c603886eecfa929406dfd91a1ed4e400b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 740913d6979e38fb924e0fa16b81ffda130bc2dc
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="sign-in-to-visual-studio"></a>登录 Visual Studio
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>我为什么应该登录到 Visual Studio？
 
-登录后，可获得丰富的 Visual Studio 体验。 例如，登录后，可以跨设备同步设置、延长试用期，以及自动连接到 Azure 服务等。 
+登录后，可获得丰富的 Visual Studio 体验。 例如，登录后，可以跨设备同步设置、延长试用期，以及自动连接到 Azure 服务等。
 
 以下是登录后可体验的内容及可执行的操作的完整列表：  
 

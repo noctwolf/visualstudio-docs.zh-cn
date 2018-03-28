@@ -1,14 +1,14 @@
 ---
-title: "安装 Visual Studio 2017 | Microsoft Docs"
-description: "了解如何逐步安装 Visual Studio。"
-ms.custom: 
+title: 安装 Visual Studio 2017 | Microsoft Docs
+description: 了解如何逐步安装 Visual Studio。
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -22,11 +22,11 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b37b998347618ea346c3d4e7993d5192c1c82a8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ee1291e2ca304ed770eeee28c4996f68d2d07adb
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-visual-studio-2017"></a>安装 Visual Studio 2017
 欢迎以全新方式安装 Visual Studio！ 最新版本方便你更轻松地选择并仅安装所需功能。 此外，我们还减少了 Visual Studio 的最小内存需求量，使其安装速度变得更快，对系统的影响更小。
