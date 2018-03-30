@@ -1,0 +1,110 @@
+- name: 概述
+  href: overview-of-python-tools-for-visual-studio.md
+- name: 安装
+  href: installing-python-support-in-visual-studio.md
+  items:
+    - name: 安装 Python 解释器
+      href: installing-python-interpreters.md
+- name: 快速入门
+  items:
+    - name: 通过 Flask 创建 Web 应用
+      href: ../ide/quickstart-python.md?context=visualstudio/python/default
+    - name: 通过模板创建项目
+      href: quickstart-02-python-in-visual-studio-project-from-template.md
+    - name: 通过现有代码创建项目
+      href: quickstart-01-project-from-existing.md
+    - name: 通过存储库创建项目
+      href: quickstart-03-python-in-visual-studio-project-from-repository.md
+    - name: 通过 Cookiecutter 模板创建项目
+      href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
+- name: 教程
+  items:
+    - name: 0 - 安装 Python 支持
+      href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+    - name: 1 - 创建新的 Python 项目
+      href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
+    - name: 2 - 编写和运行代码
+      href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
+    - name: 3 - 使用交互式 REPL 窗口
+      href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
+    - name: 4 - 在调试器中运行代码
+      href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+    - name: 5 - 安装程序包和管理 Python 环境
+      href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
+    - name: 6 - 使用 Git
+      href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+- name: 概念
+  items:
+    - name: Python 项目
+      href: managing-python-projects-in-visual-studio.md
+      items:
+        - name: Web 项目模板
+          href: python-web-application-project-templates.md
+        - name: Django Web 项目模板
+          href: python-django-web-application-project-template.md
+        - name: Azure 云服务模板
+          href: python-azure-cloud-service-project-template.md
+    - name: Azure SDK for Python
+      href: azure-sdk-for-python.md
+- name: 操作指南
+  items:
+    - name: 管理环境
+      href: managing-python-environments-in-visual-studio.md
+      items:
+        - name: 为项目选择解释器
+          href: selecting-a-python-environment-for-a-project.md
+        - name: 对依赖项使用 requirements.txt
+          href: managing-required-packages-with-requirements-txt.md
+        - name: 搜索路径
+          href: search-paths.md
+        - name: 环境窗口引用
+          href: python-environments-window-tab-reference.md
+    - name: 编辑代码
+      href: editing-python-code-in-visual-studio.md
+      items:
+        - name: 设置代码格式
+          href: formatting-python-code.md
+        - name: 重构代码
+          href: refactoring-python-code.md
+        - name: 使用 PyLint
+          href: linting-python-code.md
+    - name: 定义自定义菜单命令
+      href: defining-custom-python-project-commands.md
+    - name: 交互式 Python (REPL)
+      href: python-interactive-repl-in-visual-studio.md
+      items:
+        - name: 使用 IPython REPL
+          href: interactive-repl-ipython.md
+    - name: 调试
+      href: debugging-python-in-visual-studio.md
+      items:
+        - name: 在远程 Linux 计算机上调试代码
+          href: debugging-python-code-on-remote-linux-machines.md
+    - name: 使用 Azure App Service
+      items:
+        - name: 在 Azure App Service 上管理 Python
+          href: managing-python-on-azure-app-service.md
+        - name: 发布到 Azure 应用服务
+          href: publishing-python-web-applications-to-azure-from-visual-studio.md
+        - name: Azure 远程调试
+          href: debugging-remote-python-code-on-azure.md
+        - name: Azure 远程调试疑难解答
+          href: debugging-remote-python-code-on-azure-troubleshooting.md
+    - name: 与 C++ 交互
+      items:
+        - name: 创建适用于 Python 的 C++ 扩展
+          href: working-with-c-cpp-python-in-visual-studio.md
+        - name: Python/C++ 混合模式调试
+          href: debugging-mixed-mode-c-cpp-python-in-visual-studio.md
+        - name: 混合模式调试的符号
+          href: debugging-symbols-for-mixed-mode-c-cpp-python.md
+    - name: 分析
+      href: profiling-python-code-in-visual-studio.md
+    - name: 单元测试
+      href: unit-testing-python-in-visual-studio.md
+    - name: 使用 Cookiecutter 扩展
+      href: using-python-cookiecutter-templates.md
+- name: 参考
+  items:
+    - name: 选项
+      href: python-support-options-and-settings-in-visual-studio.md
