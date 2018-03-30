@@ -1,6 +1,5 @@
 # [Visual Studio 文档](ide/index.md)
 # [概述](ide/visual-studio-ide.md)
-## [新增功能](ide/whats-new-in-visual-studio.md)
 # 安装
 ## [安装 Visual Studio](install/install-visual-studio.md)
 ## [登录 Visual Studio](ide/signing-in-to-visual-studio.md)
@@ -449,6 +448,17 @@
 ### [安装 Dotfuscator CE](ide/dotfuscator/install.md)
 ### [升级 Dotfuscator CE](ide/dotfuscator/upgrades.md)
 # 资源
+## [新增功能](ide/whats-new-in-visual-studio.md)
+## 发行说明和系统要求
+### [当前发行说明](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+### [预览发行说明](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default)
+### [发行说明历史记录](/visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default)
+### [发行节奏](/visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default)
+### [系统要求](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+### [平台兼容性](/visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default)
+### [许可](https://www.visualstudio.com/license-terms/)
+### [可分发代码](/visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default)
+### [支持生命周期和维护服务](/visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default)
 ## [如何报告 Visual Studio 的问题](ide/how-to-report-a-problem-with-visual-studio-2017.md)
 ## [用于排除 IDE 错误的资源](ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
 ## [与我们交流](ide/talk-to-us.md)
