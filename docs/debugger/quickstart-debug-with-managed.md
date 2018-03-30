@@ -1,27 +1,27 @@
 ---
-title: "使用托管代码中使用 Visual Studio 调试器进行调试 |Microsoft 文档"
-ms.custom: 
+title: 使用托管代码中使用 Visual Studio 调试器进行调试 |Microsoft 文档
+ms.custom: mvc
 ms.date: 03/18/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 212da1e214e6157f3e072df6466436883eced8f6
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: e44cf8d282c253da7fa3a09ed8d3b90ca46ca07a
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>使用托管代码中使用 Visual Studio 调试器进行调试
 

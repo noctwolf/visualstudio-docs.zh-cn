@@ -1,11 +1,12 @@
 ---
-title: "调试器基础知识 |Microsoft 文档"
-ms.custom: 
+title: 调试器基础知识 |Microsoft 文档
+ms.custom: ''
 ms.date: 07/11/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - debugger, about debugger
 - debugger, roadmap
 ms.assetid: 4da42a10-384d-44d7-b4dc-032202ff784b
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 873e08817eef7d1760a717d98e413d8d4096323b
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="debugger-basics"></a>调试器基础知识
 Visual Studio 调试程序允许你观察程序的运行时行为并确定逻辑错误的位置。 该调试器可用于所有的 Visual Studio 编程语言及其关联的库。 使用调试程序时，可以中断执行以逐句通过代码和计算应用程序中的变量。  
@@ -66,5 +68,5 @@ Visual Studio 调试程序允许你观察程序的运行时行为并确定逻辑
  [调试器安全](../debugger/debugger-security.md)  
  描述调试程序的安全实践。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [调试器功能简介](../debugger/debugger-feature-tour.md)

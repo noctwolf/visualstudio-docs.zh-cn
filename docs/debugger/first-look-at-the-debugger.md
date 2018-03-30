@@ -1,32 +1,32 @@
 ---
-title: "要开始使用 Visual Studio 中的调试器 |Microsoft 文档"
+title: 要开始使用 Visual Studio 中的调试器 |Microsoft 文档
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>要开始使用 Visual Studio 调试器
 Visual Studio 调试器在任何语言环境下都易于使用。 下面我们将介绍如何调试一个简单的 C# 程序，但你可以对 c + + 和 JavaScript 等其他语言中的代码应用相同的步骤。
 
 若要观看视频显示类似的功能，请参阅[调试器入门](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6)。
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a>调试一个基本 C# 项目  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a> 调试一个基本 C# 项目  
  让我们从简单的 C# 控制台应用开始 (**文件 > 新建 > 项目**，然后选择**Visual C#**然后**控制台应用程序**)。 如果你从未使用 Visual Studio 之前过，请参阅[演练： 创建简单的应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。 **Main**方法只需将 1 添加到一个整数变量 10 次，并打印到控制台的结果：  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  有关断点的详细信息，请参阅[使用断点](../debugger/using-breakpoints.md)。  
   
-##  <a name="BKMK_Inspect_Variables"></a>检查变量  
+##  <a name="BKMK_Inspect_Variables"></a> 检查变量  
  调试通常涉及到查找不包含所需值的特定点的变量。 我们将演示一些你可以检查变量的方法。  
   
  再次开始调试。 在执行 `Console.WriteLine` 代码之前停止执行。 你可以使其执行通过单步前进 (单击**调试 > 逐过程**或**F10**)。 在这种情况下你可能已选择**单步执行**(**F11**) 并获得了相同的结果; 我们稍后将介绍差异。 具有方法的最后一个大括号的行应已变为黄色。 查看控制台窗口。 你应该会看到**10**。  

@@ -10,17 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9f0c65110ef1003c58c0a4002f90ec7e7e08e3
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6634a72b7bbed51e3ae250289696511d67c70041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 步骤后的视图快照
 
@@ -39,11 +39,11 @@ IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本�
 
 1. 在 Visual Studio Enterprise 中打开你的项目。
 
-1. 转到**工具 > 选项 > IntelliTrace**设置，并选择选项**IntelliTrace 事件和快照**。 
+1. 打开**工具** > **选项** > **IntelliTrace**设置，并选择选项**IntelliTrace 事件和快照**. 
 
     ![启用 IntelliTrace 事件和快照模式](../debugger/media/intellitrace-enable-snapshots.png "启用 IntelliTrace 事件和快照模式")
 
-1. 在你的项目中设置一个或多个断点并启动调试 (按**F5**)，或启动调试时逐句通过代码 (**F10**或**F11**)。
+1. 在项目中，设置一个或多个断点，并开始调试 (按**F5**)，或启动调试时逐句通过代码 (**F10**或**F11**)。
 
     IntelliTrace 拍摄的快照应用程序的进程上每个调试器步骤和断点事件。 这些事件记录在**事件**选项卡中**诊断工具**窗口，同时还有其他 IntelliTrace 事件。 若要打开此窗口，请选择**调试** > **Windows** > **显示诊断工具**。
 

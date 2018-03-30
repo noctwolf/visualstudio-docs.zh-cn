@@ -1,13 +1,13 @@
 ---
-title: "创建调用堆栈的可视的学习路线图 |Microsoft 文档"
-ms.custom: 
+title: 创建调用堆栈的可视的学习路线图 |Microsoft 文档
+ms.custom: ''
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
 dev_langs:
@@ -30,17 +30,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
-caps.latest.revision: 
+caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f388fea1d6512760f99615256f71002099e9be
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: f5fc0025c9d7870b0de042922d87d3a23d7728c5
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>在 Visual Studio Enterprise 中进行调试时创建调用堆栈可视的学习的路线图
 创建一个代码图以进行调试时直观地跟踪调用堆栈。 你可以在图中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
@@ -73,7 +73,7 @@ ms.lasthandoff: 02/01/2018
   
  有关命令和使用代码图时，可以使用的操作的详细信息，请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。  
   
-##  <a name="MapStack"></a>映射调用堆栈  
+##  <a name="MapStack"></a> 映射调用堆栈  
   
 1.  开始调试。 (键盘： **F5**)  
   
@@ -87,17 +87,17 @@ ms.lasthandoff: 02/01/2018
   
      在你继续调试时，该代码图将自动更新。 请参阅[使用下一个调用堆栈更新图](#UpdateMap)。  
   
-##  <a name="MakeNotes"></a>对代码进行标注  
+##  <a name="MakeNotes"></a> 对代码进行标注  
  添加注释以跟踪代码中发生了什么情况。 若要在注释中添加新行，请按**Shift + Return**。  
   
  ![向代码图上调用堆栈添加注释](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")  
   
-##  <a name="UpdateMap"></a>使用下一个调用堆栈更新图  
+##  <a name="UpdateMap"></a> 使用下一个调用堆栈更新图  
  运行你的应用到下一个断点或单步执行某一函数。 此图将添加新的调用堆栈。  
   
  ![使用下一个调用堆栈更新代码图](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
-##  <a name="AddRelatedCode"></a>向地图添加相关的代码  
+##  <a name="AddRelatedCode"></a> 向地图添加相关的代码  
  现在你已生成一个图的新增功能下一步？ 如果你正在使用 Visual C# 或 Visual Basic，添加项，例如字段、 属性和其他方法，来跟踪代码中发生了什么情况。  
   
  双击某个方法以查看其代码定义，或者使用该方法的快捷菜单。 (键盘： 选择在图上按方法**F12**)  
@@ -121,7 +121,7 @@ ms.lasthandoff: 02/01/2018
   
  ![在调用堆栈代码图使用字段的方法](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")  
   
-##  <a name="FindBugs"></a>使用图发现 bug  
+##  <a name="FindBugs"></a> 使用图发现 bug  
  通过代码可视化，可帮助你更快发现 Bug。 例如，假设你正在调查的绘图程序中的 bug。 当你绘制一条线并尝试撤消该操作时，直到你绘制另一条线后才会发生变化。  
   
  因此，可在 `clear`、`undo` 和 `Repaint` 方法中设置断点，启动调试，然后生成如下所示的图：  
@@ -172,7 +172,7 @@ ms.lasthandoff: 02/01/2018
   
 -   **如何停止自动添加新的调用堆栈中的映射？**  
   
-     选择![按钮 &#45;显示调用堆栈代码图上自动](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon")图工具栏上。 若要手动添加到映射的当前调用堆栈，请按**Ctrl** + **Shift** + **`**。  
+     选择![按钮&#45;显示调用自动堆栈代码图上](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon")图工具栏上。 若要手动添加到映射的当前调用堆栈，请按**Ctrl** + **Shift** + **`**。  
   
      图中将继续进行调试时突出显示现有调用堆栈代码图上。  
   
@@ -194,7 +194,7 @@ ms.lasthandoff: 02/01/2018
   
 -   [使用图发现 bug](#FindBugs)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)   
  [使用代码图调试你的应用程序](../modeling/use-code-maps-to-debug-your-applications.md)   
  [使用代码图分析器查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)   

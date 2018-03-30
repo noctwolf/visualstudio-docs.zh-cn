@@ -1,13 +1,13 @@
 ---
-title: "在 Visual Studio 中的远程调试 |Microsoft 文档"
+title: 在 Visual Studio 中的远程调试 |Microsoft 文档
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
 dev_langs:
@@ -19,17 +19,17 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
+caps.latest.revision: 65
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: ddba7e3d75f796ed0667dc39efc08555034e2a59
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。
@@ -52,7 +52,7 @@ ms.lasthandoff: 01/23/2018
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="fileshare_msvsmon"></a>（可选）若要从文件共享运行远程调试器
+### <a name="fileshare_msvsmon"></a> （可选）若要从文件共享运行远程调试器
 
 你可以找到远程调试器 (**msvsmon.exe**) 在 Visual Studio Community、 Professional 或 Enterprise 已安装的计算机上。 在某些情况下，设置远程调试的最简单方法是从文件共享运行远程调试器 (msvsmon.exe)。 有关使用情况限制，请参阅将远程调试器的帮助页 (**帮助 > 用法**在远程调试器中)。
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 01/23/2018
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-### <a name="configure_msvsmon"></a>配置远程调试器  
+### <a name="configure_msvsmon"></a> 配置远程调试器  
 首次启动后，你可以更改远程调试器的部分配置。
   
 -   如果你需要为要连接到远程调试器，请选择其他用户添加权限**工具 > 权限**。 你必须拥有管理员特权才能授予或拒绝权限。
@@ -94,7 +94,7 @@ ms.lasthandoff: 01/23/2018
      > [!WARNING]
      >  可以选择在“无身份验证”模式下运行远程工具，但强烈建议不要使用此模式。 在此模式下运行时，无法保证网络安全。 只有在确认网络不会遇到恶意通信的情况下，才可选择“无身份验证”模式。
 
-##  <a name="bkmk_configureService"></a>（可选）配置远程调试器作为服务
+##  <a name="bkmk_configureService"></a> （可选）配置远程调试器作为服务
 用于调试在 ASP.NET 和其他服务器环境中，您必须以管理员身份运行远程调试器或时，如果你希望始终运行，作为服务运行远程调试器。
   
  如果你想要配置远程调试器作为服务，请按照下列步骤。  
@@ -123,7 +123,7 @@ ms.lasthandoff: 01/23/2018
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [调试器功能简介](../debugger/debugger-feature-tour.md)   
  [配置 Windows 防火墙以允许远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)   

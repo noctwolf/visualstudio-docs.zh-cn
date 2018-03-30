@@ -1,13 +1,13 @@
 ---
-title: "开始调试多线程应用程序 |Microsoft 文档"
+title: 开始调试多线程应用程序 |Microsoft 文档
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: 
+caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 48e912fdd04e25f9ad8f7babcf565afb5b739f05
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>开始调试 Visual Studio 中的多线程应用程序
 Visual Studio 提供的若干工具和用户界面元素，以帮助你调试多线程应用程序。 本教程演示如何使用线程标记**并行堆栈**窗口中，**并行监视**窗口中，条件断点，并筛选器断点。 本教程只需几分钟，但完成它将使您熟悉用于调试多线程应用程序的功能。
@@ -319,7 +319,7 @@ Visual Studio 提供的若干工具和用户界面元素，以帮助你调试多
 
 若要取消标记线程，可以右键单击一个或多个标记的线程中**并行监视**窗口，然后选择**取消标记**。
 
-## <a name="bkmk_freeze"></a>冻结和解冻线程执行 
+## <a name="bkmk_freeze"></a> 冻结和解冻线程执行 
 
 > [!TIP]
 > 你可以冻结和解冻 （挂起和恢复） 线程控制，线程执行工作的顺序。 这可以帮助你解决并发问题，例如死锁和争用条件。
@@ -340,7 +340,7 @@ Visual Studio 提供的若干工具和用户界面元素，以帮助你调试多
 
     应用程序还可以实例化某些新线程。 请注意，任何新线程是未标记，并且未被冻结。
 
-## <a name="bkmk_follow_a_thread"></a>通过使用条件断点按照单线程
+## <a name="bkmk_follow_a_thread"></a> 通过使用条件断点按照单线程
 
 有时，它可以帮助执行在调试器中单个线程。 你可以执行该操作的一种方法是通过冻结你不感兴趣的线程，但在某些情况下，你可能希望按照单个线程冻结其他线程 （与特定 bug，例如重现）。 若要遵循的线程不冻结其他线程的情况下，必须避免破坏到除你感兴趣的线程上的代码。 你可以执行此操作通过设置[条件断点](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。
 
@@ -382,6 +382,6 @@ Visual Studio 提供的若干工具和用户界面元素，以帮助你调试多
 
 - 请参阅[如何： 使用并行监视窗口](../debugger/how-to-use-the-parallel-watch-window.md) 
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在调试时切换到另一个线程](../debugger/how-to-switch-to-another-thread-while-debugging.md)
