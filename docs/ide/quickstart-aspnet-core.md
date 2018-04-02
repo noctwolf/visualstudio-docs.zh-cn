@@ -1,11 +1,11 @@
 ---
-title: "使用 Visual Studio 通过 C# 创建 ASP.NET Core web 应用 | Microsoft Docs"
-ms.custom: 
+title: 使用 Visual Studio 通过 C# 创建 ASP.NET Core web 应用 | Microsoft Docs
+ms.custom: ''
 ms.date: 10/10/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ba3c6655401501edf1f71e04f2aa249a6a001dda
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 654dd237dab7f0f320c399e3da1b4f1d24537750
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
@@ -86,7 +86,8 @@ ms.lasthandoff: 03/09/2018
 
 祝贺你完成此快速入门！ 我们希望你已对 Visual Studio IDE 有了一定了解。 若要深入了解其功能，请继续阅读目录中“教程”部分的教程。
 
-## <a name="see-also"></a>请参阅
+## <a name="next-steps"></a>后续步骤
+祝贺你完成此快速入门！ 希望你已对 C#、ASP.NET Core 和 Visual Studio IDE 有了一定了解。 若要更加深入地了解，请继续学习下面的教程。
 
-* [Visual Studio 中的 C# 和 ASP.NET 入门](tutorial-csharp-aspnet-core.md)
-* [在 ASP.NET Core 中开始使用 Razor 页面](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+> [!div class="nextstepaction"]
+> [Visual Studio 中的 C# 和 ASP.NET 入门](tutorial-csharp-aspnet-core.md)

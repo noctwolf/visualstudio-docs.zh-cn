@@ -1,7 +1,7 @@
 ---
-title: "在 Visual Studio 中使用 Build Management 或 Release Management 进行自动测试 | Microsoft Docs"
+title: 在 Visual Studio 中使用 Build Management 或 Release Management 进行自动测试 | Microsoft Docs
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - automated testing, lab management, test lab
@@ -10,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b12bffb6f2e5df0209fd3dfe3ea5fd005897d58d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 5596dbbe65dc57dcb1862b74ed6379d1e2c080cf
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>使用 Build Management 或 Release Management（而不是实验室管理工具版）进行自动测试
 
@@ -43,7 +43,7 @@ MTM 和实验室管理工具版依赖 XAML 生成定义来自动生成、部署�
 
 ## <a name="self-service-management-of-scvmm-environments"></a>SCVMM 环境的自助式管理
 
-[Microsoft 测试管理器的实验室中心](https://msdn.microsoft.com/library/dd997438.aspx)可以管理环境模板库，并使用 [SCVMM 服务器](/system-center/vmm/overview?view=sc-vmm-1801)根据需要配置环境。
+[Microsoft 测试管理器的测试中心](/vsts/manual-test/mtm/guidance-mtm-usage)可以管理环境模板库，并使用 [SCVMM 服务器](/system-center/vmm/overview?view=sc-vmm-1801)根据需要配置环境。
 
 实验室中心的自助式预配功能有两个不同的目标：
 

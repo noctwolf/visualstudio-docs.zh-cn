@@ -1,12 +1,13 @@
 ---
-title: "原型和原型继承 | Microsoft Docs"
-ms.custom: 
+title: 原型和原型继承 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - prototype [JavaScript]
 - prototype inheritance [JavaScript]
 ms.assetid: 1e1d0631-2a9f-4011-b9fe-fa338e1ef34c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ade60bcbbfad166bae18b650daa6906f9983d4cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 200ca757e72b2eec8f09fd48a841cc8eb816c85d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>原型和原型继承
 在 JavaScript 中，`prototype` 是函数的一个属性，同时也是由构造函数创建的对象的一个属性。 函数的原型为对象。 它主要在函数用作构造函数时使用。  
@@ -80,9 +81,12 @@ var bicycle = Object.create(Object.getPrototypeOf(Vehicle), {
  `bicycle` 对象具有属性 `wheels`、`engine`、`color` 和 `pedals`，并且其原型为 `Vehicle.prototype`。 JavaScript 引擎会查找 `pedals` 的 `bicycle` 属性，并查看原型链以便查找 `wheels` 的 `engine`、`color` 和 `Vehicle`。  
   
 ### <a name="changing-an-objects-prototype"></a>更改对象的原型  
- 在 Internet Explorer 11 中，可以通过 [__proto\_\_](../../javascript/reference/proto-property-object-javascript.md) 属性用新原型替换对象或函数的内部原型。 使用此属性时，将继承新原型的属性和方法以及其原型链中的其他属性和方法。  
+在 Internet Explorer 11 中，可以通过 [__proto__](../../javascript/reference/proto-property-object-javascript.md) 属性用新原型替换对象或函数的内部原型。 使用此属性时，将继承新原型的属性和方法以及其原型链中的其他属性和方法。  
+
+> [!WARNING]
+> `__proto__` 属性是一项旧功能。 改用 [Object.getPrototypeOf](../reference/object-getprototypeof-function-javascript.md)。
   
- 以下示例演示如何更改对象的原型。 此示例演示当更改对象原型时，对象的继承属性将如何更改。  
+以下示例演示如何更改对象的原型。 此示例演示当更改对象原型时，对象的继承属性将如何更改。  
   
 ```JavaScript  
 function Friend() {  

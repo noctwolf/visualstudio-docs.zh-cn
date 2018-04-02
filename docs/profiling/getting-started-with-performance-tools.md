@@ -1,28 +1,28 @@
 ---
-title: "性能工具入门 | Microsoft Docs"
-ms.custom: 
+title: 性能工具入门 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - getting started, performance
 - getting started, profiling tools
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
-caps.latest.revision: 
+caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: be3292cb4484263b9e70a4bbdde36f60f1ea7ccb
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: e63be8c89de677cf1cb644db2fcdecf4a20399b0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="getting-started-with-performance-tools"></a>性能工具入门
 本部分概述使用 Visual Studio 性能工具收集、查看和分析代码性能时要应用的概念和任务。  
@@ -33,13 +33,12 @@ ms.lasthandoff: 02/27/2018
   
 -   性能报告可提供不同级别的应用程序结构视图（从源代码行到进程）和程序执行数据（从特定函数的调用和被调用函数到整个应用程序的调用关系树）。  
   
-## <a name="common-tasks"></a>常规任务  
+## <a name="common-tasks"></a>常见任务  
   
 |任务|相关内容|  
 |----------|---------------------|  
 |**快速分析应用程序或网站：**使用“性能向导”可为 Visual Studio 解决方案或网站配置和运行分析会话。|-   [性能分析初学者指南](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [如何：为网站收集性能数据](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
 |**不使用向导分析应用程序：**了解如何使用性能会话属性页创建性能会话。|-   [如何：手动创建性能会话](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**尝试一下：**通过分析示例应用程序亲身体验。|-   [演练：确定性能问题](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax 示例](../profiling/peopletrax-sample-profiling-tools.md)|  
   
 ## <a name="see-also"></a>请参阅  
  [概述](../profiling/overviews-performance-tools.md)   

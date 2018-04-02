@@ -1,12 +1,13 @@
 ---
-title: "Visual Studio 中的 Node.js 入门 | Microsoft Docs"
-ms.custom: 
-ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+title: 创建 Node.js 和 Express 应用 - Visual Studio | Microsoft Docs
+description: 本教程会在 Visual Studio 中创建 Node.js 和 Express 应用
+ms.custom: ''
+ms.date: 03/13/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: 
+- vs-nodejs
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -16,31 +17,59 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
-# <a name="getting-started-with-nodejs-in-visual-studio"></a>Visual Studio 中的 Node.js 入门
-本教程介绍使用 Visual Studio 进行 Node.js 开发，将创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。  
+# <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 Express 应用
+本教程介绍如果使用 Node.js 和 Express 进行 Visual Studio 开发，教程会创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。  
+
+在本教程中，你将了解：
+> [!div class="checklist"]
+> * 创建 Node.js 项目
+> * 添加一些代码
+> * 使用 IntelliSense
+> * 运行应用
+> * 命中断点
+
+## <a name="prerequisites"></a>系统必备
+
+* 须安装 Visual Studio 且具有 Node.js 开发工作负载。
+
+    如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
+
+    如果需要安装工作负载，但已有 Visual Studio，则单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“Node.js 开发”工作负载，然后选择“修改”。
+
+* 须安装 Node.js 运行时。
+
+    如果未安装，请从 [Node.js](https://nodejs.org/en/download/) 网站安装 LTS 版本。 一般情况下，Visual Studio 会自动检测已安装的 Node.js 运行时。 如果系统未检测到已安装运行时，则可以将项目配置为引用属性页中已安装的运行时（创建项目后，右键单击项目节点并选择“属性”）。
 
 ## <a name="create-a-project"></a>创建项目
 首先，创建 Node.js Web 应用程序项目。
 
 1. 打开 Visual Studio 2017。  
 
-2. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。  
+1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。  
 
-3. 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“基本 Azure Node.js Express 4 应用程序”，然后选择“确定”。   
+1. 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“基本 Azure Node.js Express 4 应用程序”，然后选择“确定”。   
 
-     如果没有看到“基本 Azure Node.js Express 4 应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“Node.js 开发”工作负载，然后选择“修改”。 
+     如果未看到“基本 Azure Node.js Express 4 应用程序”项目模板，须先安装 Node.js 开发工作负载。 
 
-    Visual Studio 创建新的解决方案并打开项目。 在编辑器（左窗格）中打开 App.js 项目文件。 如果不熟悉 Visual Studio 解决方案和项目，请参阅[快速入门：使用 Visual Studio 创建第一个 Node.js 应用](../ide/quickstart-nodejs.md)。
+    Visual Studio 创建新的解决方案并打开项目。 在编辑器（左窗格）中打开 App.js 项目文件。
 
-4. 如果尚未安装 Node.js 运行时，请从 [Node.js](https://nodejs.org/en/download/) 网站进行安装。
+    - 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在文件系统中，此项目由项目文件夹中的 .njsproj 文件表示。 可以右键单击项目并选择“属性”，设置与项目相关的属性和环境变量。 可以使用其他开发工具执行往返，因为项目文件不对 Node.js 项目源做出自定义更改。
 
-    一般情况下，Visual Studio 会自动检测已安装的 Node.js 运行时。 如果没有检测到已安装的运行时，则可配置项目来引用已安装的运行时。
+    - 顶层是一个解决方案，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器。
+
+    - Npm 节点显示任何已安装的 npm 包。 可以右键单击 npm 节点搜索 npm 包，并使用对话框安装 npm 包。
+
+    - 项目文件（例如 app.js）显示在项目节点下。 app.js 是项目启动文件。
+
+1. 打开“npm”节点，确保其中存在所有必需的 npm 包。
+
+    如果有丢失的包（感叹号图标），可右键单击“npm”节点，然后选择“安装丢失的 npm 包”。
 
 ## <a name="add-some-code"></a>添加一些代码
 
@@ -91,7 +120,11 @@ ms.lasthandoff: 02/19/2018
     });
     ```
 
-1. 在 `data` 后键入 `: get`，IntelliSense 将显示 getData 函数。 选择 `getData`。
+## <a name="use-intellisense"></a>使用 IntelliSense
+
+1. 在 index.js 中，转到包含 `res.render` 的代码行。
+
+1. 在 `data` 字符串后键入 `: get`，IntelliSense 将显示 `getData` 函数。 选择 `getData`。
 
     ![使用 IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
 
@@ -143,14 +176,6 @@ ms.lasthandoff: 02/19/2018
 
     ![在浏览器中运行应用](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. 选择“视图” > “其他窗口” > “Node.js 交互式窗口”，打开 Node.js 交互式窗口。
-
-   ![打开 Node.js 交互式窗口](../nodejs/media/tutorial-nodejs-interactive-window.png)  
-
-    交互式窗口支持可采用代码执行的所有操作，包括使用 `require()` 语句。 以下屏幕截图中的代码定义一个变量，并显示 Node.js 解释器的位置。
-
-   ![Node.js 交互式窗口](../nodejs/media/tutorial-nodejs-interactive-window-example.png)  
-
 1. 关闭 Web 浏览器。  
 
 ## <a name="optional-publish-to-azure-app-service"></a>（可选）发布到 Azure 应用服务
@@ -175,5 +200,7 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="next-steps"></a>后续步骤 
 
-- 详细了解[针对 Visual Studio 的 Node.js 工具](https://github.com/Microsoft/nodejstools/wiki)  
-- 详细了解 [Visual Studio IDE](../ide/visual-studio-ide.md)  
+本教程介绍了如何使用 Express 创建和运行 Node.js 应用和使用调试程序命中断点。
+
+> [!div class="nextstepaction"]
+> [适用于 Visual Studio 的 Node.js 工具](https://github.com/Microsoft/nodejstools)

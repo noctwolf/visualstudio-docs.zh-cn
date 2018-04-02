@@ -1,12 +1,13 @@
 ---
-title: "快速入门：使用 Visual Studio 创建第一个 Node.js 应用 | Microsoft Docs"
-ms.custom: 
+title: 快速入门：使用 Visual Studio 创建第一个 Node.js 应用 | Microsoft Docs
+description: 本快速入门中，将在 Visual Studio 中创建 Node.js 应用
+ms.custom: ''
 ms.date: 11/15/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -17,11 +18,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 89ecece1701520bf9e88221b2d3961a631d66ca0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8597d7ee61820afdd8fcfdbff9cdb5be8dfaa61c
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>快速入门：使用 Visual Studio 创建第一个 Node.js 应用
 在这个对 Visual Studio 集成开发环境 (IDE) 的 5-10 分钟简介中，可以创建简单的 Node.js Web 应用程序。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。  
@@ -29,21 +30,21 @@ ms.lasthandoff: 02/19/2018
 ## <a name="create-a-project"></a>创建项目
 首先，创建 Node.js Web 应用程序项目。
 
+1. 如果尚未安装 Node.js 运行时，请从 [Node.js](https://nodejs.org/en/download/) 网站安装 LTS 版本。
+
+    一般情况下，Visual Studio 会自动检测已安装的 Node.js 运行时。 如果没有检测到已安装的运行时，则可配置项目来引用已安装的运行时。
+
 1. 打开 Visual Studio 2017。  
 
-2. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。  
+1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。  
 
-3. 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“空 Node.js Web 应用程序”，然后选择“确定”。   
+1. 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“空 Node.js Web 应用程序”，然后选择“确定”。   
 
      如果没有看到“空白 Node.js Web 应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“Node.js 开发”工作负载，然后选择“修改”。  
 
      ![VS 安装程序中的 Node.js 工作负载](../ide/media/quickstart-nodejs-workload.png)  
 
-    Visual Studio 创建新的解决方案并打开项目。 server.js 在编辑器中打开。
-
-4. 如果尚未安装 Node.js 运行时，请从 [Node.js](https://nodejs.org/en/download/) 网站进行安装。
-
-    一般情况下，Visual Studio 会自动检测已安装的 Node.js 运行时。 如果没有检测到已安装的运行时，则可配置项目来引用已安装的运行时。
+    Visual Studio 创建新的解决方案并打开项目。 server.js 在位于左侧窗格的编辑器中打开。
 
 ## <a name="explore-the-ide"></a>探索 IDE  
 
@@ -65,7 +66,7 @@ ms.lasthandoff: 02/19/2018
 
    ![转到定义上下文菜单](../ide/media/quickstart-nodejs-gotodefinition.png)  
 
-1. 将光标置于此代码行 `res.end('Hello World\n');` 中字符串的末尾处，并对其进行如下修改：
+1. 返回 server.js，然后将光标置于此代码行 `res.end('Hello World\n');` 中字符串的末尾处，并对其进行如下修改：
 
     `res.end('Hello World\n' + res.connection.`
 
@@ -88,6 +89,5 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="next-steps"></a>后续步骤 
 
-- 浏览 [Node.js 教程](../nodejs/tutorial-nodejs.md)  
-- 详细了解 [Visual Studio IDE](../ide/visual-studio-ide.md)  
-- 详细了解[针对 Visual Studio 的 Node.js 工具](https://github.com/Microsoft/nodejstools/wiki)
+- 浏览 [Node.js 和 Express 教程](../nodejs/tutorial-nodejs.md)  
+- 浏览 [Node.js 和 React 教程](../nodejs/tutorial-nodejs-with-react-and-jsx.md)  

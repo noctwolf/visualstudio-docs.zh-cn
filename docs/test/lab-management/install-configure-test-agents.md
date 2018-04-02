@@ -1,7 +1,7 @@
 ---
-title: "在 Visual Studio 中安装和配置测试代理 | Microsoft Docs"
+title: 为 Visual Studio 安装测试代理和测试控制器 | Microsoft Docs
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - configure test agents, test lab
@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e29676ec67bc3fd22313debe70ba8dbcd7fd76
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4eaba4be128042776382d63d1b0198a48cecef94
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="install-and-configure-test-agents"></a>安装和配置测试代理
+# <a name="install-test-agents-and-test-controllers"></a>安装测试代理和测试控制器
 
 对于使用 Visual Studio 和 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 的测试方案，无需测试控制器。 Visual Studio 的代理通过与 VSTS 或 TFS 通信来处理业务流程。 一种情况可能是你在 VSTS 或 TFS 中运行用于生成和发布工作流的连续测试。
 
@@ -32,7 +32,9 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="install-the-test-controller-and-test-agents"></a>安装测试控制器和测试代理
 
-可从 [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents) 中下载 Visual Studio 2017 的代理。查找 Visual Studio 2017 的代理，然后选择“代理”或“控制器”。 可以从[早期下载](https://www.visualstudio.com/vs/older-downloads/)页中下载 Visual Studio 2015 和 Visual Studio 2013 的代理。
+可从 [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents) 中下载 Visual Studio 2017 的代理。滚动到页面底部，然后查找适用于 Visual Studio 2017 的代理。 选择“代理”或“控制器”，然后选择“下载”。 运行已下载的可执行文件，以安装测试代理或控制器。
+
+可以从[早期下载](https://www.visualstudio.com/vs/older-downloads/)页中下载 Visual Studio 2015 和 Visual Studio 2013 的代理。
 
 这些安装程序可用作 ISO 文件，便于在虚拟机上安装。
 
@@ -59,10 +61,6 @@ ms.lasthandoff: 03/08/2018
 | Agents for Visual Studio 2013 支持的方案 | TFS 和 VSTS 中的替代方案 |
 | --- | --- |
 | Visual Studio 中的“生成-部署-测试工”作流 | 用户可以在 TFS 中使用[生成定义](/vsts/build-release/)（而不是 XAML 生成）生成、部署和测试方案。 |
-| 使用本地远程计算机进行负载测试（性能测试） | 使用 Test Controller 和 Test Agents 2013 Update 5 在本地运行负载测试。 有关详细信息，请参阅[在负载测试中使用测试控制器和测试代理](https://msdn.microsoft.com/library/ff400223.aspx)。 |
+| 使用本地远程计算机进行负载测试（性能测试） | 使用 Test Controller 和 Test Agents 2013 Update 5 在本地运行负载测试。 |
 | 使用实验室环境从 Microsoft 测试管理器远程执行自动测试 | 目前此方案没有替代方案。 建议在生成和发布定义（而不是 XAML 生成）中使用“运行功能测试”任务来远程执行测试。 |
 | 开发人员在 Visual Studio 中执行远程测试 | 不再支持。 |
-
-## <a name="see-also"></a>请参阅
-
-* [设置计算机和收集诊断信息](https://msdn.microsoft.com/library/dd286743%28v=vs.140%29.aspx)

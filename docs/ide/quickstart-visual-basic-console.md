@@ -1,12 +1,12 @@
 ---
-title: "快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用 | Microsoft Docs"
-ms.custom: 
+title: 快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用 | Microsoft Docs
+ms.custom: ''
 ms.date: 12/10/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a531582b2474305d7c286f936e29a7bc9804d7bf
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用
 在这个 5-10 分钟的 Visual Studio 集成开发环境 (IDE) 简介中，你将了解如何创建在控制台上运行的简单 Visual Basic 应用程序。
@@ -81,9 +81,8 @@ ms.lasthandoff: 01/05/2018
 
    ![显示 Hello World 和 Press any key to continue 的控制台窗口](../ide/media/vb-console-hello-world-press-any-key.png)
 
-祝贺你完成此快速入门！ 希望你已对 Visual Basic 和 Visual Studio IDE 有了一定了解。 若要深入了解，请继续阅读目录中“教程”部分的教程。
+## <a name="next-steps"></a>后续步骤
+祝贺你完成此快速入门！ 希望你已对 Visual Basic 和 Visual Studio IDE 有了一定了解。 若要更加深入地了解，请继续学习下面的教程。
 
-## <a name="see-also"></a>请参阅
-* [快速入门：通过 Visual Studio 借助 Visual Basic 创建“Hello World”Windows 窗体应用](quickstart-visual-basic-winforms.md)
-* [教程：Visual Studio 中的 Visual Basic 入门](tutorial-visual-basic-console.md)
-* [Visual Basic 代码文件的 IntelliSense](visual-basic-specific-intellisense.md)
+> [!div class="nextstepaction"]
+> [Visual Studio 中的 Visual Basic 入门](tutorial-visual-basic-console.md)

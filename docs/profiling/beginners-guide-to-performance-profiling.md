@@ -1,12 +1,12 @@
 ---
-title: "在 Visual Studio 中分析应用程序性能 | Microsoft Docs"
+title: 在 Visual Studio 中分析应用程序性能 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 
+caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bacc4e9ebb0b0125b22089ec53a97248e9e1f4e9
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 83268e1c7e4c4672caf17b6852cbf3fd38ea31b1
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>在 Visual Studio 中分析应用程序性能
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程演示如何使用诊断工具的“CPU 使用率”选项卡获取应用的性能数据。 Visual Studio 中的 .NET 开发（包括 ASP.NET、和本机 /C++ 开发）支持此诊断工具。
@@ -40,6 +40,9 @@ ms.lasthandoff: 01/04/2018
 |  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看介绍诊断工具用法的视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何分析 CPU 使用率以及如何分析内存使用情况。 |
 
 本主题讨论在普通调试工作流中分析 CPU 使用率。 还可以在不附加调试程序的情况下，或通过定目标到正在运行的应用来分析 CPU 使用率。有关详细信息，请参阅[在使用或不使用调试程序的情况下运行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[在不使用调试程序的情况下收集分析数据](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
+
+> [!NOTE]
+> 对于 .NET Core 和 ASP.NET Core，CPU 使用情况工具当前不通过可移植 PBD 提供精确结果。 请改为使用完整的 PDB。
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>步骤 1：收集分析数据 
   

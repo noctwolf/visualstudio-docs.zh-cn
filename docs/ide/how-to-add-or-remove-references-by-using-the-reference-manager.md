@@ -1,12 +1,12 @@
 ---
-title: "如何：使用引用管理器添加或删除引用 | Microsoft Docs"
-ms.custom: 
+title: 如何：使用引用管理器添加或删除引用 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.ReferenceManager
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: aefd0227717352e449b51950620d0f0900cf2e60
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 83c90ee535830f6747a7f847ac649078be03451e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 
@@ -41,15 +41,15 @@ ms.lasthandoff: 01/29/2018
 
 “引用管理器”对话框在左侧显示不同类别，具体取决于项目类型：
 
-- [程序集](#assemblies)，包含“框架”和“扩展”子组。
+- “程序集”组，包含“框架”和“扩展”子组。
 
-- [COM](#com)，列出可供引用的所有 COM 组件。
+- COM，列出可供引用的所有 COM 组件。
 
-- [解决方案](#solution)，包含“项目”子组。
+- “解决方案”组，包含“项目”子组。
 
-- [Windows](#windows)，包含“核心”和“扩展”子组。 可以使用“对象浏览器”浏览 Windows SDK 或扩展 SDK 中的引用。
+- “Windows”组，包含“核心”和“扩展”子组。 可以使用“对象浏览器”浏览 Windows SDK 或扩展 SDK 中的引用。
 
-- [浏览](#browse)，包含“最近”子组。
+- “浏览”组，包含“最近”子组。
 
 ## <a name="adding-and-removing-a-reference"></a>添加和移除引用
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 01/29/2018
 
    此时将打开“引用管理器”，并按组列出可用引用。
 
-## <a name="a-idassemblies-assemblies-tab"></a><a id="assemblies" />“程序集”选项卡
+## <a name="assemblies-tab"></a>“程序集”选项卡
 
 “程序集”选项卡列出可供引用的所有 .NET Framework 程序集。 “程序集”选项卡不会列出全局程序集缓存 (GAC) 中的任何程序集，因为 GAC 中的程序集是运行时环境的一部分。 如果某个应用程序包含对在 GAC 中注册的程序集的引用，则在部署或复制该应用程序时，无论“复制本地”设置为何，所引用的程序集都不会与该应用程序一起部署或复制。 有关详细信息，请参阅[管理项目中的引用](../ide/managing-references-in-a-project.md)。
 
@@ -75,25 +75,23 @@ ms.lasthandoff: 01/29/2018
 
 1. “框架”列出组成目标框架的所有程序集。
 
-    默认情况下，针对 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用的项目在项目创建时包含对目标[!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] 中所有程序集的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个框架的引用。 因此，“框架”选项卡不从框架枚举任何程序集，而是显示以下消息：“已引用所有框架程序集。 请使用对象浏览器浏览框架中的引用”。 对于桌面项目，“框架”选项卡枚举目标框架中的程序集，用户必须添加应用程序所需的引用。
+    针对 Windows 8.x Store 应用的项目在项目创建时默认包含对目标 [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] 中所有程序集的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个框架的引用。 因此，“框架”选项卡不从框架枚举任何程序集，而是显示以下消息：“已引用所有框架程序集。 请使用对象浏览器浏览框架中的引用”。 对于桌面项目，“框架”选项卡枚举目标框架中的程序集，用户必须添加应用程序所需的引用。
 
 2. “扩展”列出了组件和控件的外部供应商为扩展目标框架而开发的所有程序集。 根据用户应用程序的用途，可能需要这些程序集。
 
-    - “扩展”通过枚举在以下位置注册的程序集来填充：
+   “扩展”通过枚举在以下位置注册的程序集来填充：
 
-        ```
-        32-bit machine:
-        HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        64-bit machine:
-        HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        And older versions of the [Target Framework Identifier]  
-        ```
+   32 位计算机：
+   - HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]
 
-        例如，如果项目以 32 位计算机上的 .NET Framework 4 为目标，则“扩展”将枚举在 \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\、\Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\、Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ 和 \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\ 下注册的程序集。
+   64 位计算机：
+   - HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies] And older versions of the [Target Framework Identifier]
 
-列表中的一些组件可能不会显示，具体取决于项目的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 在下列条件下，可能会出现这种情况：
+   例如，如果项目以 32 位计算机上的 .NET Framework 4 为目标，则“扩展”将枚举在 \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\、\Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\、Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ 和 \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\ 下注册的程序集。
+
+列表中的某些组件可能不会显示，具体取决于项目的 .NET Framework 版本。 在下列条件下，可能会出现这种情况：
 
 - 使用最新版本的 .NET Framework 的组件与以早期版本的 .NET Framework 为目标的项目不兼容。
 
@@ -120,37 +118,37 @@ ms.lasthandoff: 01/29/2018
 
 - 设置指定要显示的程序集位置的注册表项：
 
-    对于 32 位操作系统，添加以下注册表项之一。
+   对于 32 位操作系统，添加以下注册表项之一。
 
-    - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"
+   - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"
 
-    - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"
+   - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"
 
-    对于 64 位操作系统，在 32 位注册表配置单元中添加以下注册表项之一。
+   对于 64 位操作系统，在 32 位注册表配置单元中添加以下注册表项之一。
 
-    - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"
+   - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"
 
-    - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"
+   - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"
 
-    VersionMinimum 是适用的最低 .NET Framework 版本。 如果 VersionMinimum 为 v3.0，则在 AssemblyFoldersEx 中指定的文件夹适用于面向 .NET Framework 3.0 和更高版本的项目。
+   VersionMinimum 是适用的最低 .NET Framework 版本。 如果 VersionMinimum 为 v3.0，则在 AssemblyFoldersEx 中指定的文件夹适用于面向 .NET Framework 3.0 和更高版本的项目。
 
-    AssemblyLocation 是要在“添加引用”对话框中显示的程序集目录，例如 C:\MyAssemblies\\。
+   AssemblyLocation 是要在“添加引用”对话框中显示的程序集目录，例如 C:\MyAssemblies\\。
 
-    通过在 HKEY_LOCAL_MACHINE 节点下创建注册表项，所有用户都可以在“添加引用”对话框中的指定位置看到这些程序集。 如果在 HKEY_CURRENT_USER 节点下创建注册表项，则只会影响当前用户的设置。
+   通过在 HKEY_LOCAL_MACHINE 节点下创建注册表项，所有用户都可以在“添加引用”对话框中的指定位置看到这些程序集。 如果在 HKEY_CURRENT_USER 节点下创建注册表项，则只会影响当前用户的设置。
 
-    再次打开“添加引用”对话框。 程序集应出现在“.NET”选项卡中。如果未显示，请确保这些程序集位于指定的 AssemblyLocation 目录中，然后重启 Visual Studio 并重试。
+   再次打开“添加引用”对话框。 程序集应出现在“.NET”选项卡中。如果未显示，请确保这些程序集位于指定的 AssemblyLocation 目录中，然后重启 Visual Studio 并重试。
 
-## <a name="a-idcom-com-tab"></a><a id="com" />“COM”选项卡
+## <a name="com-tab"></a>“COM”选项卡
 
 “COM”选项卡列出可供引用的所有 COM 组件。 如果要添加对包含内部清单的已注册 COM DLL 的引用，请先注销该 DLL。 否则，Visual Studio 会将程序集引用作为 ActiveX 控件而不是本机 DLL 添加。
 
 如果项目类型不支持 COM，则此选项卡不会显示在“引用管理器”对话框中。
 
-## <a name="a-idsolution-solution-tab"></a><a id="solution" />“解决方案”选项卡
+## <a name="solution-tab"></a>“解决方案”选项卡
 
 “解决方案”选项卡在“项目”子选项卡中列出当前解决方案中的所有兼容项目。
 
-一个项目可以引用以不同 .NET Framework 版本为目标的其他项目。 例如，可以创建一个以 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 为目标、但引用针对 .NET Framework 2 生成的程序集的项目。 不过，.NET Framework 2 项目不能引用 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 项目。 有关详细信息，请参阅[面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)。
+一个项目可以引用以不同 .NET Framework 版本为目标的其他项目。 例如，可以创建一个以 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 为目标、但引用针对 .NET Framework 2 生成的程序集的项目。 不过，.NET Framework 2 项目不能引用 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 项目。 有关详细信息，请参阅[多目标概述](../ide/visual-studio-multi-targeting-overview.md)。
 
 以 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 为目标的项目与以 [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] 为目标的项目不兼容。
 
@@ -158,15 +156,15 @@ ms.lasthandoff: 01/29/2018
 
 以 [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] 为目标的项目不能添加对以 .NET Framework 为目标的项目的项目引用，反之亦然。
 
-## <a name="a-idwindows-windows-tab"></a><a id="windows" />“Windows”选项卡
+## <a name="windows-tab"></a>“Windows”选项卡
 
 “Windows”选项卡列出特定于 Windows 操作系统运行所在平台的所有 SDK。
 
 可以通过两种方式在 Visual Studio 中生成 WinMD 文件：
 
-- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用托管项目**：[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用项目可通过设置“项目属性”|“输出类型”=“WinMD 文件”来输出 WinMD 二进制文件。 WinMD 文件名必须是其中包含的所有命名空间的超集命名空间。 例如，如果项目包括命名空间 A.B 和 A.B.C，则其输出的 WinMD 的可能名称为 A.winmd 和 A.B.winmd。 如果用户输入与项目中的命名空间集不相交的“项目属性”|“程序集名称”或“项目属性”|“命名空间值”，或者项目中没有超集命名空间，则将生成一个生成警告：“A.winmd”不是此程序集的有效 .winmd 文件名。 Windows 元数据文件中的所有类型必须存在于文件名的子命名空间中。 无法在运行时查找文件名子命名空间中不存在的类型。 在此程序集中，最小的公共命名空间为“CSWSClassLibrary1”。 桌面 Visual Basic 或 C# 项目只能使用通过 [!INCLUDE[win8](../debugger/includes/win8_md.md)] SDK 生成的 WinMD（也称为第一方 WinMD），无法生成 WinMD。
+- **Windows 8.x Store 应用托管项目**：Windows 8.x Store 应用项目可通过设置“项目属性”|“输出类型”=“WinMD 文件”来输出 WinMD 二进制文件。 WinMD 文件名必须是其中包含的所有命名空间的超集命名空间。 例如，如果项目包括命名空间 A.B 和 A.B.C，则其输出的 WinMD 的可能名称为 A.winmd 和 A.B.winmd。 如果用户输入与项目中的命名空间集不相交的“项目属性”|“程序集名称”或“项目属性”|“命名空间值”，或者项目中没有超集命名空间，则将生成一个生成警告：“A.winmd”不是此程序集的有效 .winmd 文件名。 Windows 元数据文件中的所有类型必须存在于文件名的子命名空间中。 无法在运行时查找文件名子命名空间中不存在的类型。 在此程序集中，最小的公共命名空间为“CSWSClassLibrary1”。 桌面 Visual Basic 或 C# 项目只能使用通过 Windows 8 SDK 生成的 WinMD（也称为第一方 WinMD），无法生成 WinMD。
 
-- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用本机项目**：本机 WinMD 文件仅包含元数据。 它的实现存在于单独 DLL 文件中。 若要生成本机二进制文件，可在“新建项目”对话框中选择“Windows 运行时组件”项目模板，或者从空项目开始并修改项目属性以生成 WinMD 文件。 如果项目中包含不相交的命名空间，则将出现生成错误，告知用户合并命名空间或运行 MSMerge 工具。
+- **Windows 8.x Store 应用本机项目**：本机 WinMD 文件仅包含元数据。 它的实现存在于单独 DLL 文件中。 若要生成本机二进制文件，可在“新建项目”对话框中选择“Windows 运行时组件”项目模板，或者从空项目开始并修改项目属性以生成 WinMD 文件。 如果项目中包含不相交的命名空间，则将出现生成错误，告知用户合并命名空间或运行 MSMerge 工具。
 
 “Windows”选项卡包括两个子组。
 
@@ -174,7 +172,7 @@ ms.lasthandoff: 01/29/2018
 
 “核心”子组列出目标 Windows 版本的 SDK 中的所有 WinMD（对于 Windows 运行时元素）。
 
-默认情况下，[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用项目在项目创建时包含对 [!INCLUDE[win8](../debugger/includes/win8_md.md)] SDK 中所有 WinMD 的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个 [!INCLUDE[win8](../debugger/includes/win8_md.md)] SDK 的引用。 因此，引用管理器中的“核心”子组不从 [!INCLUDE[win8](../debugger/includes/win8_md.md)] SDK 枚举任何程序集，而是显示消息：“已引用 Windows SDK。 请使用对象浏览器浏览 Windows SDK 中的引用”。
+默认情况下，Windows 8.x Store 应用项目在项目创建时包含对 Windows 8 SDK 中所有 WinMD 的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个 Windows 8 SDK 的引用。 因此，引用管理器中的“核心”子组不从 Windows 8 SDK 枚举任何程序集，而是显示消息：“已引用 Windows SDK。 请使用对象浏览器浏览 Windows SDK 中的引用”。
 
 在桌面项目中，默认情况下不显示“核心”子组。 若要添加 Windows 运行时，可打开项目节点的快捷菜单，选择“卸载项目”，添加以下代码片段，然后重新打开项目（在项目节点上选择“重新加载项目”）。 调用“引用管理器”对话框时，将显示“核心”子组。
 
@@ -188,7 +186,7 @@ ms.lasthandoff: 01/29/2018
 
 ### <a name="extensions-subgroup"></a>“扩展”子组
 
-“扩展”列出用于扩展目标 Windows 平台的用户 SDK。 此选项卡仅针对 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用项目显示。 桌面项目不显示此选项卡，因为这些项目仅使用第一方 .winmd 文件。
+“扩展”列出用于扩展目标 Windows 平台的用户 SDK。 此选项卡仅针对 Windows 8.x Store 应用项目显示。 桌面项目不显示此选项卡，因为这些项目仅使用第一方 .winmd 文件。
 
 SDK 是文件集合，Visual Studio 将其视为单个组件。 在“扩展”选项卡中，应用于调用了“引用管理器”对话框的项目的 SDK 将作为单个项列出。 添加到项目时，所有 SDK 内容将由 Visual Studio 使用，这样，用户无需采取任何额外操作即可使用 IntelliSense、工具箱、设计器、对象浏览器、生成、部署、调试和打包中的 SDK 内容。 若要了解如何在“扩展”选项卡中显示 SDK，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)。
 
@@ -197,11 +195,11 @@ SDK 是文件集合，Visual Studio 将其视为单个组件。 在“扩展”�
 
 如果项目类型不支持“扩展”，则此选项卡不会显示在“引用管理器”对话框中。
 
-## <a name="a-idbrowse-browse-button"></a><a id="browse" />“浏览”按钮
+## <a name="browse-button"></a>“浏览”按钮
 
 可以使用“浏览”按钮浏览查找文件系统中的组件。
 
-一个项目可以引用以不同 .NET Framework 版本为目标的组件。 例如，可以创建定目标到 .NET Framework 4 7，但引用的组件定目标到 .NET Framework 4 的应用程序。 有关详细信息，请参阅[面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)。
+一个项目可以引用以不同 .NET Framework 版本为目标的组件。 例如，可以创建定目标到 .NET Framework 4 7，但引用的组件定目标到 .NET Framework 4 的应用程序。 有关详细信息，请参阅[多目标概述](../ide/visual-studio-multi-targeting-overview.md)。
 
 应当避免添加对同一解决方案中另一项目的输出的文件引用，因为这种做法可能导致编译错误。 而应使用“引用管理器”对话框的“解决方案”选项卡来创建项目到项目的引用。 这样就可以更好地管理在项目中创建的类库，从而更易于进行团队开发。 有关详细信息，请参阅[有关损坏的引用的疑难解答](../ide/troubleshooting-broken-references.md)。
 

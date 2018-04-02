@@ -1,48 +1,45 @@
 ---
-title: "MSBuild 转换 | Microsoft Docs"
-ms.custom: 
+title: MSBuild 转换 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
-caps.latest.revision: 
+caps.latest.revision: 13
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 670465059f86e7dd5ccbe725bc0d86aed2fc97b1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b02c8b6c16bf0d1ffd75ee52d34d72446a06ed25
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="msbuild-transforms"></a>MSBuild 转换
 转换是指采用一对一的方式将一个项列表转换为另一项列表。 通过转换，不仅项目可以转换项列表，而且目标还可以标识其输入和输出之间的直接映射。 本主题介绍转换以及 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 如何使用转换更有效地生成项目。  
   
 ## <a name="transform-modifiers"></a>转换修饰符  
- 转换并不是任意的，而是受特殊语法的限制，其中所有的转换修饰符都必须采用 %(ItemMetaDataName) 格式。 任何项元数据都可用作转换修饰符。 这包括在创建每个项时为其分配的常见项元数据。 要获得常见项元数据的列表，请参阅[常见项元数据](../msbuild/msbuild-well-known-item-metadata.md)。  
+转换并不是任意的，而是受特殊语法的限制，其中所有的转换修饰符都必须采用 %(ItemMetaDataName) 格式。 任何项元数据都可用作转换修饰符。 这包括在创建每个项时为其分配的常见项元数据。 要获得常见项元数据的列表，请参阅[常见项元数据](../msbuild/msbuild-well-known-item-metadata.md)。  
   
- 在以下示例中，.resx 文件列表会转换为 .resources 文件列表。 %(Filename) 转换修饰符指定每个 .resources 文件与相应的 .resx 文件具有相同的文件名。  
+在以下示例中，.resx 文件列表会转换为 .resources 文件列表。 %(Filename) 转换修饰符指定每个 .resources 文件与相应的 .resx 文件具有相同的文件名。  
   
 ```  
 @(RESXFile->'%(filename).resources')  
-```  
-  
+```
+
+例如，如果 @(RESXFile) 项列表中的项为 Form1.resx、Form2.resx 和 Form3.resx，那么转换列表中的输出为 Form1.resources、Form2.resources 和 Form3.resources。  
+
 > [!NOTE]
->  可以为转换后的项列表指定自定义分隔符，其采用的方式与为标准项列表指定分隔符的相同。 例如，要使用逗号 (,) 而非默认的分号 (;) 分隔转换后的项列表，请使用下面的 XML。  
-  
-```  
-@(RESXFile->'Toolset\%(filename)%(extension)', ',')  
-```  
-  
- 例如，如果 @(RESXFile) 项列表中的各项为 `Form1.resx`、`Form2.resx` 和 `Form3.resx`，则转换后的列表中的输出为 `Form1.resources`、`Form2.resources` 和 `Form3.resources`。  
+>  可以为转换后的项列表指定自定义分隔符，其采用的方式与为标准项列表指定分隔符的相同。 例如，要使用逗号 (,) 而非默认的分号 (;) 分隔转换后的项列表，请使用下面的 XML：  
+> `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
   
 ## <a name="using-multiple-modifiers"></a>使用多个修饰符  
  转换表达式可包含多个修饰符，这些修饰符可按任何顺序组合，还可重复使用。 在以下示例中，包含文件的目录的名称会更改，但文件会保留原来的名称和文件扩展名。  
@@ -51,7 +48,7 @@ ms.lasthandoff: 02/09/2018
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   
- 例如，如果 `RESXFile` 项列表中包含的各项为 `Project1\Form1.resx`、`Project1\Form2.resx` 和 `Project1\Form3.text`，则转换后的列表中的输出为 `Toolset\Form1.resx`、`Toolset\Form2.resx` 和 `Toolset\Form3.text`。  
+ 例如，如果 `RESXFile` 项列表中包含的项为 Project1\Form1.resx、Project1\Form2.resx 和 Project1\Form3.text，那么转换列表中的输出为 Toolset\Form1.resx、Toolset\Form2.resx 和 Toolset\Form3.text。  
   
 ## <a name="dependency-analysis"></a>依赖项分析  
  转换可保证在转换后的项列表和原来的项列表之间存在一对一的映射关系。 因此，如果目标创建的输出转换为输入，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 就可分析输入和输出的时间戳，并确定是否跳过、生成或部分重新生成目标。  
@@ -97,7 +94,7 @@ ms.lasthandoff: 02/09/2018
 ```  
   
 ### <a name="comments"></a>注释  
- 本示例生成以下输出。  
+ 该示例产生下面的输出：  
   
 ```  
 rootdir: C:\  

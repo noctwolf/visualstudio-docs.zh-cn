@@ -1,27 +1,27 @@
 ---
-title: "用 MSBuild 获取生成日志 | Microsoft Docs"
-ms.custom: 
+title: 用 MSBuild 获取生成日志 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-caps.latest.revision: 
+caps.latest.revision: 27
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a2a7989e7b1cd98745d316ff01718653eda48f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ba20e37e9a984512e2d63de882d434b4f034120d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>用 MSBuild 获取生成日志
 使用 MSBuild 开关，可指定要查看的生成数据量，以及是否要将生成数据保存到一个或多个文件。 还可指定一个自定义记录器来收集生成数据。 对于本主题未涉及的 MSBuild 命令行开关的相关信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 02/09/2018
 ```  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
-  
+
 ## <a name="saving-the-build-log-to-a-file"></a>将生成日志保存到文件中  
  可使用 **/fileLogger** (**fl**) 开关将生成数据保存到文件。 以下示例将生成数据保存到名为 `msbuild.log` 的文件。  
   
@@ -72,7 +72,19 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 ```  
   
  有关详细信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
-  
+
+## <a name="saving-a-binary-log"></a>保存二进制日志
+
+可以使用 /binaryLogger (bl) 开关以压缩的二进制格式保存日志。 此日志包含生成进程的详细说明，并可以由某些日志分析工具读取。
+
+在以下示例中，创建了名为 `binarylogfilename` 的二进制日志文件。
+
+```  
+/bl:binarylogfilename.binlog
+``` 
+ 
+有关详细信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
+
 ## <a name="using-a-custom-logger"></a>使用自定义记录器  
  可以通过创作一个实现 <xref:Microsoft.Build.Framework.ILogger> 接口的托管类型来编写自己的记录器。 例如，可使用自定义记录程序，在电子邮件中发送生成错误，将其记录到数据库，或记录到 XML 文件。 有关详细信息，请参阅[生成记录器](../msbuild/build-loggers.md)。  
   

@@ -1,12 +1,12 @@
 ---
-title: "Visual Studio 中的 C# 和 ASP.NET Core 入门 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的 C# 和 ASP.NET Core 入门 | Microsoft Docs
+ms.custom: ''
 ms.date: 12/11/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a24ccbcecc2d5bd4d5799ada048fee0004514f7
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Visual Studio 中的 C# 和 ASP.NET 入门
 本教程介绍在 Visual Studio 中借助 ASP.NET Core 进行 C# 开发，将创建一个 C# ASP.NET Core Web 应用，向其添加代码，浏览 IDE 的某些功能并运行应用。
@@ -71,7 +71,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 #### <a name="add-a-project-template"></a>添加项目模板
 1. 在“新建 ASP.NET Core Web 应用程序”对话框中，选择“Web 应用程序(模型-视图-控制器)”项目模板。  
 
-2. 从顶部下拉菜单中选择“ASP.NET Core 2.0”。 （如果没有在列表中看到“ASP.NET Core 2.0”，请通过“下载”链接进行安装，该链接显示在对话框顶部附近的黄色栏中。。）选择 **“确定”**。
+2. 从顶部下拉菜单中选择“ASP.NET Core 2.0”。 （如果没有在列表中看到“ASP.NET Core 2.0”，请通过“下载”链接进行安装，该链接显示在对话框顶部附近的黄色栏中。）选择 **“确定”**。
 
    ![“新建 ASP.NET Core Web 应用程序”对话框](../ide/media/new-project-csharp-aspnet-web-app-mvc.png)
 
@@ -167,12 +167,9 @@ MVC 模式有助于创建比传统单片应用更易于测试和更新的应用�
 
  ![在工具栏上，单击“停止调试”按钮](../ide/media/csharp-aspnet-stop-debugging.png)
 
+## <a name="next-steps"></a>后续步骤
 
-恭喜你完成本教程！
+恭喜你完成本教程！ 希望你已对 C#、ASP.NET Core 和 Visual Studio IDE 有了一定了解。 若要更加深入地了解，请继续学习下面的教程。
 
-## <a name="see-also"></a>请参阅
-* [ASP.NET Core MVC 和 Visual Studio 入门](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
-* [在 ASP.NET Core 中开始使用 Razor 页面](/aspnet/core/tutorials/razor-pages/razor-pages-start)
-* [C# 中的新增功能](/dotnet/csharp/whats-new)
-* [C# 语言参考](/dotnet/csharp/language-reference/index)
-* [面向零基础初学者的 C# 基础知识](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169)视频课程
+ > [!div class="nextstepaction"]
+ > [ASP.NET Core MVC 和 Visual Studio 入门](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)

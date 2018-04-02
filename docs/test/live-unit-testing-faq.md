@@ -1,9 +1,7 @@
 ---
-title: "Live Unit Testing 常见问题解答 | Microsoft Docs"
+title: Live Unit Testing 常见问题解答 | Microsoft Docs
 ms.date: 2017-10-03
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,11 +10,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2437a138e9e83d3b723971b53dac413ad0ea4151
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: c9a4628d6c2b0d842d57711f1204fbe15f88fac9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常见问题解答
 
@@ -25,7 +23,6 @@ ms.lasthandoff: 02/21/2018
 **答：**
 
 若要了解从 Visual Studio 2017 版本 15.3 开始 Live Unit Testing 的新增功能和增强功能，请参阅 [Live Unit Testing 中的新增功能](live-unit-testing-whats-new.md)。
-
 
 ## <a name="what-test-frameworks-does-live-unit-testing-support-and-what-are-the-minimum-supported-versions"></a>Live Unit Testing 支持哪些测试框架和最低版本？
 
@@ -58,8 +55,7 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 如果你有引用 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的测试项目（该项目是基于较旧的 MSTest），并且不想移动到较新的 MSTest NuGet 包，请升级到 Visual Studio 2017 版本 15.4。
 
-在某些情况下，可能需要显式还原解决方案中项目引用的 NuGet 包，以便 Live Unit Testing 可正常运行。 你可以先通过显式生成解决方案（从顶级 Visual Studio 菜单中选择“生成”>“重新生成解决方案”）或通过还原解决方案中的包（右键单击解决方案并选择“还原 NuGet 包”）实现此操作，然后再启用 Living Unit Testing。
-
+在某些情况下，可能需要显式还原解决方案中项目引用的 NuGet 包，以便 Live Unit Testing 可正常运行。 可以先通过显式生成解决方案（从顶级 Visual Studio 菜单中选择“生成”、“重新生成解决方案”）或通过还原解决方案中的包（右键单击解决方案并选择“还原 NuGet 包”）来还原包，然后再启用 Living Unit Testing。
 
 ## <a name="does-live-unit-testing-work-with-net-core"></a>Live Unit Testing 是否适用于 .NET Core？
 
@@ -75,9 +71,9 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 - 如果未还原解决方案中项目引用的 NuGet 包，Live Unit Testing 不工作。 启用 Live Unit Testing 前，对解决方案执行显式生成或还原解决方案中的 NuGet 包应可解决此问题。
 
-- 如果在项目中使用基于 MSTest 的测试，请确保删除对 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的引用，并添加对最新 MSTest NuGet 包 `MSTest.TestAdapter`（要求最低版本为 1.1.11）和 `MSTest.TestFramework`（要求最低版本为 1.1.11）的引用。 有关详细信息，请参阅[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing](live-unit-testing.md#supported-test-frameworks) 主题的“支持的测试框架”部分。
+- 如果在项目中使用基于 MSTest 的测试，请确保删除对 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的引用，并添加对最新 MSTest NuGet 包 `MSTest.TestAdapter`（要求最低版本为 1.1.11）和 `MSTest.TestFramework`（要求最低版本为 1.1.11）的引用。 有关详细信息，请参阅[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing](live-unit-testing.md#supported-test-frameworks) 一文的“支持的测试框架”部分。
 
-- 解决方案中至少一个项目应有针对 xUnit、NUnit 或 MSTest 测试框架的 NuGet 引用或直接引用。 此项目还应引用相应的 Visual Studio 测试适配器 NuGet 包。 还可以通过 `.runsettings` 文件引用 Visual Studio 测试适配器。 `.runsettings` 文件必须包含如下条目：
+- 解决方案中至少一个项目应有针对 xUnit、NUnit 或 MSTest 测试框架的 NuGet 引用或直接引用。 此项目还应引用相应的 Visual Studio 测试适配器 NuGet 包。 还可以通过 `.runsettings` 文件引用 Visual Studio 测试适配器。 `.runsettings` 文件必须包含如下示例所示的条目：
 
    ```xml
     <RunSettings>
@@ -85,7 +81,7 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
        </RunConfiguration>
     </RunSettings>
-   ``` 
+   ```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>将 Visual Studio 项目中引用的测试适配器升级到支持的版本后，为什么 Live Unit Testing 显示错误的覆盖范围？
 
@@ -174,7 +170,7 @@ Live Unit Testing 尝试生成解决方案时为什么出现了以下错误：�
 
 **答：**
 
-请参阅[使用 Visual Studio 2017 Enterprise Edition 中的实时单元测试](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods)主题的“包括和排除测试项目和测试方法”部分，了解特定于用户的设置。 想要针对特定的编辑会话运行一组特定的测试或者保留个人偏好设置时，这非常有用。
+请参阅[使用 Visual Studio 2017 Enterprise Edition 中的实时单元测试](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods)一文的“包括和排除测试项目和测试方法”部分，了解特定于用户的设置。 想要针对特定的编辑会话运行一组特定的测试或者保留个人偏好设置时，这非常有用。
  
 对于特定于解决方案的设置，可采用编程方式应用 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> 属性，避免由 Live Unit Testing 来检测方法、属性、类或结构。 此外，还可以在项目文件中将 `<ExcludeFromCodeCoverage>` 属性设置为 `true`，排除整个项目进行检测。 Live Unit Testing 仍将运行未经检测的测试，但其范围将不进行可视化。
 
@@ -203,7 +199,7 @@ public class Class1
 
 **答：**
 
-此问题已在 Visual Studio 2017 版本 15.3 中修复，不复存在。 请升级至此版本的 Visual Studio。
+Visual Studio 2017 版本 15.3 已修复此问题，再也不会遇到了。 请升级到此版 Visual Studio。
 
 较旧版本的 Visual Studio 2017 中存在一个已知的 bug，它可能会导致 Live Unit Testing 无法嵌入以下 Win32 PE 标头数据：
 

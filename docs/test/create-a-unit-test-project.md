@@ -1,55 +1,53 @@
 ---
-title: "创建单元测试项目 |Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中创建单元测试项目 | Microsoft Docs
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 71a666a2e52b49f71f5c74419cfda0eb05d78938
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 2d01a2de95f05fd2d907082621f65c82e9de7954
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="create-a-unit-test-project"></a>创建单元测试项目
-单元测试往往反映被测代码的结构。 例如，系统会为项目中的每个代码项目创建一个单元测试项目。 测试项目可以与成品代码位于同一解决方案中，也可以位于单独的解决方案中。 解决方案中可以有多个单元测试项目。  
-  
+
+单元测试往往反映被测代码的结构。 例如，系统会为项目中的每个代码项目创建一个单元测试项目。 测试项目可以与成品代码位于同一解决方案中，也可以位于单独的解决方案中。 解决方案中可以有多个单元测试项目。
+
 > [!NOTE]
->  本机代码的单元测试位置和测试项目结构可能与本主题中描述的结构不同。 有关详细信息，请参阅[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)。  
-  
-## <a name="to-create-a-unit-test-project"></a>创建单元测试项目：  
-  
-1.  在“文件”  菜单上，选择“新建”  ，然后选择“项目”  （快捷键：Ctrl + Shift + N）。  
-  
-2.  在“新建项目”对话框中，展开“已安装” 节点，选择你想要用于测试项目的语言，然后选择“测试”。  
-  
-3.  若要使用 Microsoft 单元测试框架之一，请从项目模板的列表中选择“单元测试项目”  。 否则，请选择你想要使用的单元测试框架的项目模板。 为了测试我们示例中的“帐户”项目，您可以将该项目命名为“AccountsTests”。  
-  
-4.  在单元测试项目中，添加对被测代码的引用。  下面介绍了如何在同一解决方案中创建对代码项目的引用：  
-  
-    1.  在解决方案资源管理器中选择项目。  
-  
-    2.  在“项目”菜单上，选择“添加引用...” 。  
-  
-    3.  在“引用管理器”对话框中，打开“解决方案”节点，然后选择“项目”。 检查代码项目名称并关闭对话框。  
-  
-5.  如果要测试的代码位于其他位置，请参阅[管理项目中的引用](../ide/managing-references-in-a-project.md)了解有关添加引用的信息。  
-  
-## <a name="next-steps"></a>后续步骤  
- **编写单元测试**  
-  
- 请参阅以下部分之一：  
-  
--   [用 Microsoft 适用于托管代码的单元测试框架编写 .NET Framework 的单元测试](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
-  
--   [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)  
-  
- **运行单元测试**  
-  
- [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)
+>  本机代码的单元测试位置和测试项目结构可能与本主题中描述的结构不同。 有关详细信息，请参阅[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)。
+
+## <a name="to-create-a-unit-test-project"></a>创建单元测试项目：
+
+1.  在“文件”  菜单上，选择“新建”  ，然后选择“项目”  （快捷键：Ctrl + Shift + N）。
+
+2.  在“新建项目”对话框中，展开“已安装” 节点，选择你想要用于测试项目的语言，然后选择“测试”。
+
+3.  若要使用 Microsoft 单元测试框架之一，请从项目模板的列表中选择“单元测试项目”  。 否则，请选择你想要使用的单元测试框架的项目模板。 为了测试我们示例中的“帐户”项目，您可以将该项目命名为“AccountsTests”。
+
+4.  在单元测试项目中，添加对被测代码的引用。  下面介绍了如何在同一解决方案中创建对代码项目的引用：
+
+    1.  在解决方案资源管理器中选择项目。
+
+    2.  在“项目”菜单上，选择“添加引用...” 。
+
+    3.  在“引用管理器”对话框中，打开“解决方案”节点，然后选择“项目”。 检查代码项目名称并关闭对话框。
+
+5.  如果要测试的代码位于其他位置，请参阅[管理项目中的引用](../ide/managing-references-in-a-project.md)了解有关添加引用的信息。
+
+## <a name="next-steps"></a>后续步骤
+ **编写单元测试**
+
+ 请参阅以下部分之一：
+
+-   [用 Microsoft 适用于托管代码的单元测试框架编写 .NET Framework 的单元测试](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+
+-   [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)
+
+ **运行单元测试**
+
+- [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)

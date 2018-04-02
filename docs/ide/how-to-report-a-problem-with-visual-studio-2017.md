@@ -1,10 +1,10 @@
 ---
-title: "如何报告 Visual Studio 2017 的问题 | Microsoft Docs"
-ms.custom: 
-ms.date: 02/26/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+title: 如何报告 Visual Studio 2017 的问题 | Microsoft Docs
+ms.custom: ''
+ms.date: 03/11/2018
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -13,11 +13,11 @@ manager: ghogen
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e5e01abeb45e7cfdefebb7d6fd3d63320e1e31
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 6fa988ce97968949036a74ff473cfe11dd3b669e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何报告 Visual Studio 2017 的问题
 
@@ -69,7 +69,7 @@ ms.lasthandoff: 02/28/2018
 
  选择“提交”按钮发送报告，以及任何图像和跟踪或转储文件。 （如果“提交”按钮为灰色，请确保你已提供报告的标题和说明。）
 
-## 备用报表 <a name="alternate_reporting"></a>
+## 报告替换 <a name="alternate_reporting"></a>
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>使用 Visual Studio 安装程序报告问题
 
@@ -77,9 +77,9 @@ ms.lasthandoff: 02/28/2018
 
  ![可以使用 Tab 键定位到 Visual Studio 安装程序中的“提供反馈”按钮，从而打开反馈工具](../install/media/report-a-problem.png)
 
-### <a name="report-a-problem-directly-to-the-visual-studio-developer-community"></a>直接向 Visual Studio 开发者社区报告问题
+### <a name="search-for-problems-and-solutions-by-using-the-visual-studio-developer-community"></a>使用 Visual Studio 开发人员社区搜索有关问题和解决方案
 
-如果不想或不能使用 Visual Studio 报告问题，可直接向 Visual Studio 开发者社区报告问题。 有关详细信息，请参阅 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)页。
+如果不希望或不能使用 Visual Studio 报告问题，可能 Visual Studio 开发人员社区中已报告此问题并且已发布解决方案。 有关详细信息，请参阅 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)页。
 
 #### <a name="provide-product-feedback-or-a-suggestion"></a>提供产品反馈或建议
 

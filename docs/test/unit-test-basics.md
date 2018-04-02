@@ -1,11 +1,7 @@
 ---
-title: "单元测试基础知识 |Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的单元测试基础知识 | Microsoft Docs
 ms.date: 2016-01-07
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -14,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac60dbd14b16491f9de841f168cd5bf725c340d
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 939cbaa6cd99cbcc5f011a873f46c4e873c22543
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -30,7 +26,7 @@ ms.lasthandoff: 03/02/2018
 
 测试资源管理器还可以运行第三方和开放源代码单元测试框架，它们实现了测试资源管理器外接程序接口。 你可以通过 Visual Studio Extension Manager 和 Visual Studio 库添加其中许多框架。 请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)
 
-## <a name="quick-starts"></a>快速入门
+## <a name="getting-started"></a>入门
 
 关于直接进入编码的单元测试的简介，请参阅以下主题之一：
 
@@ -113,7 +109,7 @@ public void Withdraw(double amount)
 3.  若要使用 Microsoft 单元测试框架之一，请从项目模板的列表中选择“单元测试项目”  。 否则，请选择你想要使用的单元测试框架的项目模板。 若要测试我们的示例中的 `Accounts` 项目，你需要将该项目命名为 `AccountsTests`。
 
     > [!WARNING]
-    >  并非所有第三方和开放源代码单元测试框架都提供 Visual Studio 项目模板。 有关创建项目的信息，请参阅框架文档。
+    > 并非所有第三方和开放源代码单元测试框架都提供 Visual Studio 项目模板。 有关创建项目的信息，请参阅框架文档。
 
 4.  在你的单元测试项目中，将引用添加到所测试项目的代码中，在我们的示例中应添加到帐户项目中。
 

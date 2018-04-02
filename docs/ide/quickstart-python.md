@@ -1,13 +1,13 @@
 ---
-title: "快速入门：使用 Visual Studio 创建第一个 Python Web 应用 | Microsoft Docs"
-description: "关于在 Visual Studio 中使用 Python（其将使用 Falcon 框架构建一个简单的 Web 应用）的简介。"
-ms.custom: 
-ms.date: 01/08/2018
-ms.reviewer: 
-ms.suite: 
+title: 快速入门：使用 Visual Studio 创建第一个 Python Web 应用 | Microsoft Docs
+description: 关于在 Visual Studio 中使用 Python（其将使用 Falcon 框架构建一个简单的 Web 应用）的简介。
+ms.custom: ''
+ms.date: 03/14/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 2b1880d95fcb4aae04d98171c8ee7df7373aaceb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>快速入门：使用 Visual Studio 创建第一个 Python Web 应用
 
-在这个对 Visual Studio 集成开发环境 (IDE) 的 5-10 分钟简介中，可以创建简单的 Python Web 应用程序。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
+在这个对 Visual Studio 集成开发环境 (IDE) 的 5-10 分钟简介中，可以创建简单的 Python Web 应用程序。 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。 在安装程序中，请确保选择“Python 开发”工作负荷。
 
 ## <a name="create-the-project"></a>创建项目
 

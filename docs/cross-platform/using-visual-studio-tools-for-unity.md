@@ -1,11 +1,11 @@
 ---
-title: "使用 Visual Studio Tools for Unity | Microsoft Docs"
-ms.custom: 
+title: 使用 Visual Studio Tools for Unity | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 author: conceptdev
@@ -13,11 +13,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e99f3e626487381639d0c76f94ceb6eac99084af
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2e223132196d40c0418eb7869b36d20a3d15a235
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 在本部分中，你将了解如何使用 Visual Studio Tools for Unity 的集成和工作效率功能，以及如何使用 Visual Studio 调试器进行 Unity 开发。
@@ -134,6 +134,12 @@ ms.lasthandoff: 02/28/2018
 
 > [!IMPORTANT]
 >  由于 Visual Studio Tools for Unity 和 Unity 实例正在通过 UDP 网络套接字进行通信，因而你的防火墙可能会对其进行询问。 如果发生这种情况，则必须授权连接，以便 VSTU 和 Unity 可以进行通信。
+
+### <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>Unity 和 Visual Studio 之间的连接疑难解答
+
+#### <a name="confirm-editor-attaching-is-enabled"></a>确认已启用“编辑器连接”
+
+在 Unity 菜单中，选择“编辑”>“首选项”，然后选择“外部工具”选项卡。确定已启用“编辑器连接”复选框。 有关详细信息，请查阅 [Unity 首选项文档](https://docs.unity3d.com/Manual/Preferences.html)。
 
 ###  <a name="debugging-your-project-in-a-unity-player"></a>调试 Unity 播放器中的项目
  未运行 Unity 编辑器时，可以直接将 Visual Studio Tools for Unity 连接到在独立播放器上运行的 Unity 应用，或调试特定于平台的问题。

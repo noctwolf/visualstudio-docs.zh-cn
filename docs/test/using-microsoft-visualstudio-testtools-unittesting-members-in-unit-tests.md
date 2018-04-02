@@ -1,20 +1,20 @@
 ---
-title: "在单元测试中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成员| Microsoft Docs"
+title: 在单元测试中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成员| Microsoft Docs
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7c841210c41e7b2b9870c80cc148006f3e63290d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 1ae1f1bd4deb81b92ffc7a38c82164e5824b4d76
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="using-the-mstest-framework-in-unit-tests"></a>在单元测试中使用 MSTest 框架
+# <a name="use-the-mstest-framework-in-unit-tests"></a>在单元测试中使用 MSTest 框架
 
 [MSTest](<xref:Microsoft.VisualStudio.TestTools.UnitTesting>) 框架支持 Visual Studio 中的单元测试。 在编写单元测试的代码时使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 命名空间中的类和成员。 也可以在优化通过代码中生成的单元测试时使用它们。
 

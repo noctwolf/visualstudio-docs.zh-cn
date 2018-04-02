@@ -1,26 +1,28 @@
 ---
-title: "如何：在 Visual Studio 中更改字体和颜色 | Microsoft Docs"
-ms.custom: 
+title: 如何：在 Visual Studio 中更改字体和颜色 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ccfb4f178fa2e6db89b9ebaf16ca1f072cfc8720
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8b5d03f67edc604a7c2dd7e4cd32620a52812e09
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>如何：在 Visual Studio 中更改字体和颜色
 
@@ -41,7 +43,7 @@ ms.lasthandoff: 12/22/2017
 > 当你更改颜色主题时，IDE 中的文本将恢复为默认值或恢复为之前自定义的字体和大小。
 
 > [!TIP]
-> 可以通过安装 [Visual Studio 颜色主题编辑器](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor)创建和编辑 Visual Studio 主题。
+> 可以通过安装 [Visual Studio 颜色主题编辑器](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor)创建和编辑 Visual Studio 主题。
 
 ## <a name="use-windows-high-contrast-colors"></a>使用 Windows 高对比度颜色
 
@@ -71,5 +73,5 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="see-also"></a>请参阅
 
-[Visual Studio 的辅助功能](../ide/reference/accessibility-features-of-visual-studio.md)  
-[如何：在编辑器中更改字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+[Visual Studio 的辅助功能](../ide/reference/accessibility-features-of-visual-studio.md)
+[如何：更改编辑器中的字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

@@ -1,24 +1,24 @@
 ---
-title: "MSBuild 目标 Framework 和目标平台 | Microsoft Docs"
-ms.custom: 
+title: MSBuild 目标 Framework 和目标平台 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
-caps.latest.revision: 
+caps.latest.revision: 10
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e175a534cb35333b1f57c188c62a781f2fd68627
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: d8ee86a969279c3bdb8b09a0a0d2c9160d7691e0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目标 Framework 和目标平台
 可以生成要在目标框架（.NET Framework 的一个特定版本）和目标平台（一种特定的软件体系结构）上运行的项目。  例如，可将一个应用程序的目标设定为在与 802x86 处理器系列 (“x86”) 兼容的 32 位平台上的 .NET Framework 2.0 上运行。 目标框架与目标平台的组合称为“目标上下文”。  
@@ -67,14 +67,16 @@ ms.lasthandoff: 02/28/2018
  平台是定义特定运行时环境的硬件和软件的组合。 例如，应用于对象的  
   
 -   `x86` 指定在 Intel 80x86 处理器或等效处理器上运行的 32 位 Windows 操作系统。  
+
+-   `x64` 指定在 Intel x64 处理器或等效处理器上运行的 64 位 Windows 操作系统。
   
 -   `Xbox` 指定 Microsoft Xbox 360 平台。  
   
- 目标平台是指将在其上运行生成项目的特定平台。 目标平台是在项目文件中的 `Platform` 生成属性中指定的。 可通过在 IDE 中使用项目属性页或**配置管理器**来更改目标平台。  
+ 目标平台是指将在其上运行生成项目的特定平台。 目标平台是在项目文件中的 `PlatformTarget` 生成属性中指定的。 可通过在 IDE 中使用项目属性页或**配置管理器**来更改目标平台。  
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
 </PropertyGroup>  
   
 ```  
@@ -83,7 +85,7 @@ ms.lasthandoff: 02/28/2018
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
    <Configuration>Debug</Configuration>  
 <PropertyGroup>  
   

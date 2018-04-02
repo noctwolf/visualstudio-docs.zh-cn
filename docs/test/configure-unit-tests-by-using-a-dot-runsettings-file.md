@@ -1,18 +1,18 @@
 ---
-title: "在 Visual Studio 中使用 .runsettings 文件配置单元测试 | Microsoft Docs"
+title: 在 Visual Studio 中使用 .runsettings 文件配置单元测试 | Microsoft Docs
 ms.date: 02/28/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 94bcd0bc473a87246feb3b5e790ed060b615b4be
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/08/2018
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
-  
+
      <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
      <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
      <TestSessionTimeout>10000</TestSessionTimeout>
@@ -147,7 +147,7 @@ ms.lasthandoff: 03/08/2018
 
 视频数据收集器在运行测试时捕获屏幕录制。 此录制可用于对 UI 测试进行故障排除+。 视频数据收集器在 Visual Studio 2017 版本 15.5 及更高版本中可用。
 
-要自定义任何其他类型的诊断数据适配器，则必须使用测试设置文件。 有关详细信息，请参阅[指定 Visual Studio 测试的测试设置](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)。
+要自定义任何其他类型的诊断数据适配器，则必须使用测试设置文件。
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
@@ -181,4 +181,4 @@ public void HomePageTest()
 
 ## <a name="see-also"></a>请参阅
 
-[自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)
+- [自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)

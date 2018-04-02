@@ -1,12 +1,12 @@
 ---
-title: "管理项目中的引用 | Microsoft Docs"
-ms.custom: 
+title: 管理项目中的引用 | Microsoft Docs
+ms.custom: ''
 ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fbb9ddfd53210f460b5035f1f83159e46b5aa1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
 
@@ -108,7 +108,7 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以�
 
 您可以创建一些应用程序，这些应用程序引用的项目或程序集面向 .NET Framework 的不同版本。 例如，可以创建一个面向 [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] 的应用程序，该配置文件引用面向 [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)] 的程序集。 如果创建的项目面向 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的早期版本，则无法在该项目中设置对面向更新版本的项目或程序集的引用。
 
-有关详细信息，请参阅[面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)。
+有关详细信息，请参阅[多定向概述](../ide/visual-studio-multi-targeting-overview.md)。
 
 ## <a name="project-to-project-references"></a>项目到项目的引用
 
@@ -125,5 +125,5 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以�
 
 ## <a name="see-also"></a>请参阅
 
-[有关无效的引用的疑难解答](../ide/troubleshooting-broken-references.md)  
-[如何：使用引用管理器添加或移除引用](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+[无效引用疑难解答](../ide/troubleshooting-broken-references.md)
+[如何：使用引用管理器添加或删除引用](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

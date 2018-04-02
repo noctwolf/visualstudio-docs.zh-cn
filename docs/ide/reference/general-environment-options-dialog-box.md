@@ -1,11 +1,12 @@
 ---
-title: "“选项”对话框 ->“环境”->“常规”| Microsoft Docs"
-ms.custom: 
+title: “选项”对话框 ->“环境”->“常规”| Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.Message.0x800a002e
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - editors, autocompletion
 - Options dialog box, General Environment
 - General Environment Options dialog box
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de71795242cd5fbb1d41f3d071629e54cf5d04f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5c434b60efa054dbadcb8ef24470ed135d450e12
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“常规”
 
@@ -49,7 +51,7 @@ ms.lasthandoff: 12/22/2017
 
 为 IDE 选择“蓝色”、“浅色”或“深色”颜色主题。
 
-可以通过从 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor) 中下载并安装“Visual Studio 颜色主题编辑器”来安装其他预定义的主题并创建自定义主题。 安装此工具后，其他颜色主题将显示在“颜色主题”列表框中。
+可以通过从 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) 中下载并安装“Visual Studio 颜色主题编辑器”来安装其他预定义的主题并创建自定义主题。 安装此工具后，其他颜色主题将显示在“颜色主题”列表框中。
 
 **在菜单栏中应用标题大小写**
 
@@ -69,22 +71,17 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="other"></a>其他
 
-“窗口”菜单中显示的项  
-自定义“窗口”菜单的“窗口”列表中显示的窗口数。 键入一个介于 1 和 24 之间的数字。 默认情况下，该数字为 10。
+**“窗口”菜单中显示的项**自定义“窗口”菜单的“窗口”列表中显示的窗口数。 键入一个介于 1 和 24 之间的数字。 默认情况下，该数字为 10。
 
-“最近使用的文件”列表中显示的项  
-自定义出现在“文件”菜单上的最近使用过的项目和文件数。 键入一个介于 1 和 24 之间的数字。 默认情况下，该数字为 10。 这可以轻松地检索最近使用的项目和文件。
+**“最近使用的文件”列表中显示的项**自定义出现在“文件”菜单上的最近使用过的项目和文件数。 键入一个介于 1 和 24 之间的数字。 默认情况下，该数字为 10。 这可以轻松地检索最近使用的项目和文件。
 
-显示状态栏  
-显示状态栏。 状态栏位于 IDE 窗口的底部并显示关于正在进行的操作的进度信息。
+**显示状态栏**显示状态栏。 状态栏位于 IDE 窗口的底部并显示关于正在进行的操作的进度信息。
 
-“关闭”按钮只影响活动工具窗口  
-指定在单击“关闭”按钮时，只关闭具有焦点的工具窗口，而不是停靠集中的所有工具窗口。 默认情况下，该选项是选中的。
+**“关闭”按钮只影响活动工具窗口**指定在单击“关闭”按钮时，只关闭具有焦点的工具窗口，而不是停靠集中的所有工具窗口。 默认情况下，该选项是选中的。
 
-“自动隐藏”按钮只影响活动工具窗口  
-指定在单击“自动隐藏”按钮时，只自动隐藏具有焦点的工具窗口，而不是停靠集中的所有工具窗口。 默认情况下，不选择该选项。
+**“自动隐藏”按钮只影响活动工具窗口**指定在单击“自动隐藏”按钮时，只自动隐藏具有焦点的工具窗口，而不是停靠集中的所有工具窗口。 默认情况下，不选择该选项。
 
 ## <a name="see-also"></a>请参阅
 
-[“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)  
+[环境选项对话框](../../ide/reference/environment-options-dialog-box.md)
 [自定义窗口布局](../../ide/customizing-window-layouts-in-visual-studio.md)
