@@ -1,22 +1,18 @@
 ---
-title: "在 Visual Studio 中编写 C/C++ 单元测试 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中编写 C/C++ 单元测试 | Microsoft Docs
 ms.date: 11/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 25a5d358ce8c9b36286929232a42dad48099cff5
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: ecb611d7ab816ed99e4bcce954466309f7436f76
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 
@@ -36,12 +32,11 @@ Visual Studio 包含这些 C++ 测试框架，无需进行额外下载：
 
 **Visual Studio 2017 版本 15.5**
 
-1) **Google Test 适配器**作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它具有可以在“解决方案资源管理器”中通过解决方案节点上的“添加新项目”上下文菜单添加到解决方案的项目模板，以及可以通过“工具”|“选项”配置的选项。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
+- **Google Test 适配器**作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它具有可以在“解决方案资源管理器”中通过解决方案节点上的“添加新项目”上下文菜单添加到解决方案的项目模板，以及可以通过“工具”|“选项”配置的选项。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
 
-2) **Boost.Test**  作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它与“测试资源管理器”集成，但当前没有项目模板，因此必须手动配置。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Boost.Test](how-to-use-boost-test-for-cpp.md)。
+- **Boost.Test** 作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它与“测试资源管理器”集成，但当前没有项目模板，因此必须手动配置。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Boost.Test](how-to-use-boost-test-for-cpp.md)。
 
-3) **CTest** 支持随 [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-cpp) 组件附带，该组件是“使用 C++ 的桌面开发”工作负荷的一部分。 但是，CTest 尚未与“测试资源管理器”集成。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
-
+- **CTest** 支持随附在 [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-cpp) 组件中，该组件是“使用 C++ 的桌面开发”工作负荷的一部分。 但是，CTest 尚未与“测试资源管理器”集成。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
 
 **Visual Studio 2015 及更早版本**
 
@@ -96,16 +91,16 @@ TEST_METHOD 返回 void。 若要生成测试结果，请使用 `Assert` 类中�
 
 ### <a name="run-the-tests"></a>运行测试
 
-1.  在“测试”菜单中，依次选择“窗口”、“测试资源管理器”。 下图显示其测试尚未运行的测试项目。
+1. 在“测试”菜单中，依次选择“窗口” > “测试资源管理器”。 下图显示其测试尚未运行的测试项目。
 
-![运行测试之前的测试资源管理器](media/cpp-test-explorer.png "C++ 测试资源管理器")
+   ![运行测试之前的测试资源管理器](media/cpp-test-explorer.png "C++ 测试资源管理器")
 
-> [!NOTE]
-> CTest 与“测试资源管理器”的集成尚不可用。 从 CMake 主菜单运行 CTest 测试。
+   > [!NOTE]
+   > CTest 与“测试资源管理器”的集成尚不可用。 从 CMake 主菜单运行 CTest 测试。
 
-2. 如果窗口中看不见任何测试，则在“解决方案资源管理器”中右键单击其节点并选择“生成”或“重新生成”，来生成测试项目。
+1. 如果窗口中看不见任何测试，则在“解决方案资源管理器”中右键单击其节点并选择“生成”或“重新生成”，来生成测试项目。
 
-3.  在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。 运行所有测试之后，窗口会显示哪些测试通过和哪些测试失败：
+1. 在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。 运行所有测试之后，窗口会显示哪些测试通过和哪些测试失败：
 
 ![运行测试之后的测试资源管理器](media/cpp-test-explorer-passed.png "运行测试之后的 C++ 测试资源管理器")
 
