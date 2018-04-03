@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 中 EditorConfig 的 .NET 编码约定设置 | Microsoft Docs"
+title: Visual Studio 中 EditorConfig 的 .NET 编码约定设置 | Microsoft Docs
 ms.date: 02/28/2018
 ms.topic: article
 dev_langs:
@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 53345fa849715a8065b0bf569977393033608caa
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e69d7e291d1b13a5205aa4798c78c6a4e337db50
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 编码约定设置
 
@@ -77,10 +77,11 @@ none 或 silent | 如违反此规则，不会向用户显示任何内容。 但�
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
         - dotnet\_style\_explicit\_tuple_names
-        - dotnet\_style\_coalesce_expression
-        - dotnet\_style\_null_propagation
         - dotnet\_prefer\_inferred\_tuple_names
         - dotnet\_prefer\_inferred\_anonymous\_type\_member_names
+    - [“NULL”检查首选项](#null_checking)
+        - dotnet\_style\_coalesce_expression
+        - dotnet\_style\_null_propagation
 - C# 代码样式设置
     - [隐式和显式类型](#var)
         - csharp\_style\_var\_for\_built\_in_types
@@ -102,7 +103,7 @@ none 或 silent | 如违反此规则，不会向用户显示任何内容。 但�
         - csharp\_prefer\_simple\_default_expression
         - csharp\_style\_deconstructed\_variable_declaration
         - csharp\_style\_pattern\_local\_over\_anonymous_function
-    - [“NULL”检查首选项](#null_checking)
+    - [“NULL”检查首选项](#null_checking_csharp)
         - csharp\_style\_throw_expression
         - csharp\_style\_conditional\_delegate_call
     - [代码块首选项](#code_block)
@@ -380,7 +381,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 #### <a name="expression_level">表达式级首选项</a>
 
-本节中的样式规则与表达式级别首选项有关，包括对象初始值设定项、集合初始值设定项、显式元组名称、NULL 合并表达式与三元运算符、NULL 条件运算符的使用。
+本节中的样式规则与表达式级别首选项有关，包括对象初始值设定项、集合初始值设定项、显式或推断元组名称和推断匿名类型的使用。
 
 下表显示规则名称、规则 ID、适用的编程语言、默认值和第一个支持的 Visual Studio 版本：
 
@@ -389,10 +390,8 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 | dotnet_style_object_initializer | IDE0017 | C# 和 Visual Basic | true:suggestion | 首次发布 |
 | dotnet_style_collection_initializer | IDE0028 | C# 和 Visual Basic | true:suggestion | 首次发布 |
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0+ 和 Visual Basic 15+ | true:suggestion | 首次发布 |
-| dotnet_style_coalesce_expression | IDE0029 | C# 和 Visual Basic | true:suggestion | 首次发布 |
-| dotnet_style_null_propagation | IDE0031 | C# 6.0+ 和 Visual Basic 14+ | true:suggestion | 首次发布 |
-| dotnet_prefer_inferred_tuple_names | IDE0037 | C# 7.1+ 和 Visual Basic 15+ | true:suggestion | 15.6 |
-| dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# 和 Visual Basic | true:suggestion | 15.6 |
+| dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1+ 和 Visual Basic 15+ | true:suggestion | 15.6 |
+| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# 和 Visual Basic | true:suggestion | 15.6 |
 
 **dotnet\_style\_object_initializer**
 
@@ -475,6 +474,60 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
+dotnet\_style\_prefer\_inferred\_tuple_names
+
+- 此规则设置为 true 时，首选推断元组元素名称。
+- 此规则设置为 false 时，首选显式元组元素名称。
+
+代码示例：
+
+```csharp
+// dotnet_style_prefer_inferred_tuple_names = true
+var tuple = (age, name);
+
+// dotnet_style_prefer_inferred_tuple_names = false
+var tuple = (age: age, name: name);
+```
+
+**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
+
+- 此规则设置为 true 时，首选推断匿名类型成员名称。
+- 此规则设置为 false 时，首选显式匿名类型成员名称。
+
+代码示例：
+
+```csharp
+// dotnet_style_prefer_inferred_anonymous_type_member_names = true
+var anon = new { age, name };
+
+// dotnet_style_prefer_inferred_anonymous_type_member_names = false
+var anon = new { age = age, name = name };
+
+```
+
+这些规则可在 .editorconfig 文件中以如下方式出现：
+
+```EditorConfig
+# CSharp and Visual Basic code style settings:
+[*.{cs,vb}]
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+```
+
+#### <a name="null_checking">Null 检查首选项</a>
+
+本节中的样式规则与 Null 检查首选项有关。
+
+下表显示规则名称、规则 ID、适用的编程语言、默认值和第一个支持的 Visual Studio 版本：
+
+| 规则名称 | 规则 ID | 适用的语言 | Visual Studio 默认值 | Visual Studio 2017 版本 |
+| --------- | ------- | -------------------- | ----------------------| ---- |
+| dotnet_style_coalesce_expression | IDE0029 | C# 和 Visual Basic | true:suggestion | 首次发布 |
+| dotnet_style_null_propagation | IDE0031 | C# 6.0+ 和 Visual Basic 14+ | true:suggestion | 首次发布 |
+
 **dotnet\_style\_coalesce_expression**
 
 - 如果此规则设置为“true”，则 NULL 合并表达式为首选项，而非三元运算符检查。
@@ -525,49 +578,13 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-**dotnet\_prefer\_inferred\_tuple_names**
-
-- 此规则设置为 true 时，首选推断元组元素名称。
-- 此规则设置为 false 时，首选显式元组元素名称。
-
-代码示例：
-
-```csharp
-// dotnet_style_prefer_inferred_tuple_names = true
-var tuple = (age, name);
-
-// dotnet_style_prefer_inferred_tuple_names = false
-var tuple = (age: age, name: name);
-```
-
-**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
-
-- 此规则设置为 true 时，首选推断匿名类型成员名称。
-- 此规则设置为 false 时，首选显式匿名类型成员名称。
-
-代码示例：
-
-```csharp
-// dotnet_style_prefer_inferred_anonymous_type_member_names = true
-var anon = new { age, name };
-
-// dotnet_style_prefer_inferred_anonymous_type_member_names = false
-var anon = new { age = age, name = name };
-
-```
-
 这些规则可在 .editorconfig 文件中以如下方式出现：
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
-dotnet_style_object_initializer = true:suggestion
-dotnet_style_collection_initializer = true:suggestion
-dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
-dotnet_style_prefer_inferred_tuple_names = true:suggestion
-dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
 ### <a name="c-code-style-settings"></a>C# 代码样式设置
@@ -960,7 +977,7 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
-#### <a name="null_checking">“NULL”检查首选项</a>
+#### <a name="null_checking_csharp">“NULL”检查首选项</a>
 
 这些样式规则与 `null` 检查的相关语法有关，包括 `throw` 表达式或 `throw` 语句的使用，以及调用 [lambda 表达式](/dotnet/csharp/lambda-expressions)时是否执行 NULL 检查或使用条件合并运算符 (`?.`)。
 
@@ -1545,7 +1562,7 @@ MyMethod(argument);
 
 **csharp_space_between_parentheses**
 
-此规则不接受“true”或“false”值；此规则接受下表中的值：
+此规则接受下表中的一个或多个值：
 
 | “值” | 描述 |
 | ----- |:------------|
@@ -1553,14 +1570,16 @@ MyMethod(argument);
 | 表达式 | 在表达式的括号之间放置空格 |
 | type_casts | 在类型转换中的括号之间放置空格 |
 
+如果省略此规则或使用 `control_flow_statements`、`expressions` 或 `type_casts` 以外的值，则不会应用该设置。
+
 代码示例：
 
 ```csharp
 // csharp_space_between_parentheses = control_flow_statements
-for( int i;i<x;i++ ) { ... }
+for ( int i = 0; i < 10; i++ ) { }
 
 // csharp_space_between_parentheses = expressions
-var z = ( x * y ) - ( ( y - x ) * 3);
+var z = ( x * y ) - ( ( y - x ) * 3 );
 
 // csharp_space_between_parentheses = type_casts
 int y = ( int )x;

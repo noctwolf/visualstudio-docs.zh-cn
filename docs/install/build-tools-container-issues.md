@@ -1,22 +1,24 @@
 ---
-title: "容器的已知问题 | Microsoft Docs"
-ms.custom: 
+title: 容器的已知问题 | Microsoft Docs
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6edcc59a2d726fbd76fee86b750f21dc468b727e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 94b3acaeffc709978cc9c49645fd7e788abef177
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="known-issues-for-containers"></a>容器的已知问题
 
@@ -34,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="build-tools-container"></a>生成工具容器
 
-使用生成工具容器时可能会出现以下已知问题。 若要查看问题是否已修复，或者是否有其他已知问题，请访问 https://developercommunity.visualstudio.com。
+使用生成工具容器时可能会出现以下已知问题。 要查看问题是否已修复，或者是否有其他已知问题，请访问 https://developercommunity.visualstudio.com。
 
 * 在[某些情况](https://github.com/Microsoft/vstest/issues/940)下，IntelliTrace 在容器内可能无法正常工作。
 

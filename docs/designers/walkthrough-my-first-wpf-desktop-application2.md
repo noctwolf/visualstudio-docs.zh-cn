@@ -1,11 +1,11 @@
 ---
-title: "演练：我的第一个 WPF 桌面应用程序 | Microsoft Docs"
-ms.custom: 
+title: 演练：我的第一个 WPF 桌面应用程序 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c239e811ea47158dd63660e761f943b8f22e8e23
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95c35eae16f50b6fa8c0a8c86fa0d93732512a88
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>演练：我的第一个 WPF 桌面应用程序
 
@@ -320,7 +320,7 @@ ms.lasthandoff: 03/02/2018
 
     1. 查找行 `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`。 将 `Grid.Column="0"` 更改为 `Grid.Column="1"` 并将 `Grid.Row="2"` 更改为 `Grid.Row="3"`。
 
-1. 在 `<Border` 元素之前添加以下 XAML 代码以显示标题：
+1. 紧邻 `<Border` 元素之前添加以下 XAML 代码以显示标题：
 
     ```xaml
     <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"
@@ -573,7 +573,7 @@ ms.lasthandoff: 03/02/2018
 
     -   `listHeaderTextStyle`：可设置列表标头“标签” 的格式。
 
-    -   `buttonStyle`：可设置 `Button`**“ExpenseItHome.xaml”页面上** 的格式。
+    -   `buttonStyle`：可设置 “ExpenseItHome.xaml”页面上 `Button` 的格式。
 
 1. 打开 ExpenseItHome.xaml，并使用以下 XAML替换 `<Grid>` 和 `</Grid>` 元素之间的所有内容：
 
@@ -674,7 +674,7 @@ ms.lasthandoff: 03/02/2018
 
 ### <a name="to-bind-data-to-a-control"></a>若要将数据绑定到控件
 
-1. 打开 **ExpenseItHome.xaml** ，并选择 `<Grid>` 元素。
+1. 打开“ExpenseItHome.xaml”  ，并选择 `<Grid>` 元素。
 
 1. 添加以下 XAML 代码：
 

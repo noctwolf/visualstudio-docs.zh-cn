@@ -1,12 +1,8 @@
-﻿---
-title: "在 Visual Studio 中使用正则表达式 | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+---
+title: 在 Visual Studio 中使用正则表达式 | Microsoft Docs
+ms.custom: 03/26/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -21,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: cd7da9b9993f2a3ae2d1eb94cad18e99f5281fde
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 
@@ -33,7 +29,9 @@ Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-type
 
 ## <a name="replacement-patterns"></a>替换模式
 
-要了解可在替换模式中使用的正则表达式，请参阅[正则表达式中的替换 (.NET Guide)](/dotnet/standard/base-types/substitutions-in-regular-expressions)。 若要使用已编号的捕获组，语法为 `$1`（用于指定编号组）和 `(x)`（用于指定相关组）。 例如，已分组的正则表达式 `(\d)([a-z])` 在以下字符串中查找四个匹配项：**1a 2b 3c 4d**。 替换字符串 `z$1` 将该字符串转换为 **z1 z2 z3 z4**。
+要使用带编号的捕获组，请在正则表达式模式中用圆括号将该组括起来。 使用 `$number`（其中 `number` 是从 1 开始的整数）来指定替换模式中的特定编号组。 例如，已分组的正则表达式 `(\d)([a-z])` 定义了两个组：第一个组包含一个十进制数字，第二个组包含一个 a 到 z 之间的字符。 该表达式在以下字符串中查找四个匹配项：1a 2b 3c 4d。 替换字符串 `z$1` 仅引用第一个组，并将该字符串转换为 z1 z2 z3 z4。
+
+要了解可在替换模式中使用的正则表达式，请参阅[正则表达式中的替换 (.NET Guide)](/dotnet/standard/base-types/substitutions-in-regular-expressions)。
 
 ## <a name="regular-expression-examples"></a>正则表达式示例
 
@@ -52,7 +50,7 @@ Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-type
 |将匹配字符串定位到行尾|\r?$|`End\r?$` 仅在出现于行尾时才匹配“end”。|
 |匹配集中的任何单个字符|[abc]|`b[abc]` 匹配“ba”、“bb”和“bc”。|
 |匹配的字符范围中的任意字符|[a-f]|`be[n-t]` 匹配“between”中的“bet”，“beneath”中的“ben”，“beside”中的“bes”，但不匹配“below”。|
-|捕获包含在括号中的表达式并对其进行隐式编号|()|`([a-z])X\1` 匹配“aXa”和“bXb”，但不匹配“aXb”。 ". “\1”指第一个表达式组“[a-z]”。|
+|捕获包含在括号中的表达式并对其进行隐式编号|()|`([a-z])X\1` 匹配“aXa”和“bXb”，但不匹配“aXb”。 “\1”指第一个表达式组“[a-z]”。|
 |使匹配无效|(?!abc)|`real (?!ity)` 匹配“realty”和“really”中的“real”，但不匹配“reality”。 它还可找到“realityreal”中的第二个“real”（而非第一个“real”）。|
 |匹配不在给定字符集中的任意字符|[^abc]|`be[^n-t]` 匹配“before”中的“bef”，“behind”中的“beh”和“below”中的“bel”，但不匹配“beneath”。|
 |匹配符号前或符号后的表达式。|&#124;|`(sponge&#124;mud) bath` 匹配“sponge bath”和“mud bath”。|

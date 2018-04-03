@@ -1,11 +1,11 @@
 ---
-title: "MSBuild 保留属性和常见属性 | Microsoft Docs"
-ms.custom: 
+title: MSBuild 保留属性和常见属性 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -15,22 +15,22 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reserved properties
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
-caps.latest.revision: 
+caps.latest.revision: 29
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 89610426b944c3b3948c23c246337fd7aa9c1af8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9eafd9de132e2fa71ddfb4016115d84ef222db26
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild 保留属性和已知属性
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供了一组预定义的属性，这些属性存储项目文件和 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 二进制文件的相关信息。 这些属性的计算方式与其他 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 属性相同。 例如，要使用 `MSBuildProjectFile` 属性，应键入 `$(MSBuildProjectFile)`。  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供了一组预定义的属性，这些属性存储有关项目文件和 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 二进制文件的信息。 这些属性的计算方式与其他 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 属性相同。 例如，要使用 `MSBuildProjectFile` 属性，应键入 `$(MSBuildProjectFile)`。  
   
- MSBuild 使用下表中的值预定义保留的属性和已知的属性。 无法重写保留的属性，但可以使用名称相同的环境属性、全局属性或已在项目文件中声明的属性重写已知的属性。  
+ MSBuild 使用下表中的值预定义保留的属性和已知的属性。 无法重写保留的属性，但可以使用名称相同的环境属性、全局属性或已在项目文件中声明的属性重写已知的属性。
   
 ## <a name="reserved-and-well-known-properties"></a>保留的属性和已知的属性  
  下表介绍了 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 预定义的属性。  
@@ -61,6 +61,23 @@ ms.lasthandoff: 02/09/2018
 |`MSBuildThisFileName`|`MSBuildThisFileFullPath` 的文件名部分，不包含文件扩展名。|保留|  
 |`MSBuildToolsPath`|与 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]的值相关联的 `MSBuildToolsVersion` 版本的安装路径。<br /><br /> 不要将最终的反斜杠包含在路径中。<br /><br /> 不能重写此属性。|保留|  
 |`MSBuildToolsVersion`|用于生成项目的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工具集版本。<br /><br /> 注意：[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工具集由用于生成应用程序的任务、目标和工具组成。 工具包括编译器例如 csc.exe 和 vbc.exe。 有关详细信息，请参阅 [工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)和[标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)。|保留|  
-  
+
+## <a name="names-that-conflict-with-msbuild-elements"></a>与 MSBuild 元素冲突的名称
+
+除上述名称外，对应于 MSBuild 语言元素的名称也不能用于用户定义的属性、项或项元数据：
+
+* VisualStudioProject
+* 目标
+* PropertyGroup
+* 输出
+* ItemGroup
+* UsingTask
+* ProjectExtensions
+* OnError
+* ImportGroup
+* 选择
+* When
+* Otherwise
+
 ## <a name="see-also"></a>请参阅  
  [MSBuild 参考](../msbuild/msbuild-reference.md) [MSBuild 属性](../msbuild/msbuild-properties.md)

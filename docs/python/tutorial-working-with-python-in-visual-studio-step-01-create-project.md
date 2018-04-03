@@ -1,15 +1,15 @@
 ---
-title: "在 Visual Studio 中使用 Python - 第 1 步：创建项目 | Microsoft Docs"
-description: "在 Visual Studio 中使用 Python 的核心教程的第 1 步，不仅概述了整个教程和系统必备，并逐步介绍了新建 Python 项目的整个过程。"
-ms.custom: 
+title: 在 Visual Studio 中使用 Python - 第 1 步：创建项目 | Microsoft Docs
+description: 在 Visual Studio 中使用 Python 的核心教程的第 1 步，不仅概述了整个教程和系统必备，并逐步介绍了新建 Python 项目的整个过程。
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 469494b2c0c4704ac1eab42d36934657adc2313d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 22588c1e8221375f05b9fb62870662d9aa3d2f5e
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>在 Visual Studio 中使用 Python
 

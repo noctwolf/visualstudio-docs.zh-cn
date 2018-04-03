@@ -1,12 +1,12 @@
 ---
-title: "Visual Studio 中的默认键盘快捷键 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的默认键盘快捷键 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 715f07f64e730eda13537d50061af0089d18b958
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷键
 有关键盘辅助功能的详细信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)和[如何：仅使用键盘进行操作](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
@@ -1134,6 +1134,7 @@ ms.lasthandoff: 01/23/2018
 |设计.显示手柄|F9|  
 |设计.放大|Ctrl+Alt+=|  
 |设计.缩小|Ctrl+Alt+-|  
+|设计器选项|Ctrl+Shift+;|  
 |格式.编辑文本|F2|  
 |格式.重置布局.全部|Ctrl+Shift+R|  
 |运行项目代码|Ctrl+F9|  

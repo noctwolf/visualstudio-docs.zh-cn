@@ -1,39 +1,28 @@
 ---
-title: "Microsoft 合作伙伴网络 (MPN) Visual Studio 订阅 |Microsoft 文档"
+title: 管理通过 Microsoft 合作伙伴网络 (MPN) 提供的 Visual Studio 订阅 | Microsoft Docs
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
 Ms.date: 12/11/2017
 Ms.topic: Get-Started-Article
-Description: Managing Visual Studio subscriptions included with Microsoft Partner Network (MPN) Memberships
+Description: How to assign Visual Studio subscriptions to your end users, for MPN partners.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 20c8e0593fa6049a270c8575608d57d59d0c4d2d
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 308b682215556c645eeaf0257292e40fba35a9c1
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="managing-visual-studio-subscriptions-included-with-microsoft-partner-network-mpn-memberships"></a>管理 Microsoft 合作伙伴网络 (MPN) 成员身份附带的 Visual Studio 订阅
+# <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>管理通过 Microsoft 合作伙伴网络 (MPN) 提供的 Visual Studio 订阅
 
 ## <a name="overview"></a>概述
+具备相应资格或在 MPN 中购买了Action Pack 的合作伙伴可以使用 Visual Studio 订阅。 这些订阅按用户授权，并且仅在分配给为合作伙伴公司工作的特定命名用户时才有效。
 
-Visual Studio 订阅的数量和级别将随 Microsoft 合作伙伴网络 (MPN) 成员身份的级别变化，如 MPN [核心权益](https://partner.microsoft.com/membership/core-benefits)页上突出显示部分所示。  若要使用订阅，请联系你的计划管理员确保已向你分配 Visual Studio 订阅。  
+请参阅[提供给 Microsoft 合作伙伴网络 (MPN) 中的合作伙伴的 Visual Studio 订阅](program-mpn.md)了解详细信息。
 
-## <a name="resources--references"></a>资源和参考
-
-- 与 Microsoft 合作伙伴网络 [Visual Studio 订阅](https://partner.microsoft.com/membership/msdn-subscriptions)有关的详细信息
-
-- Microsoft 合作伙伴网络[计划管理员软件与联机服务权益指南]((https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) )
-    - 第 6 页 - 为 Action Pack 分配联系人角色和 Visual Studio 订阅
-
-> [!NOTE]
-> Visual Studio 订阅需要技术联系人角色
-    - 第 8 页 - 为能力合作伙伴分配 Visual Studio 订阅
-
-
-## <a name="high-level-assignment--access-flow"></a>高级分配和访问流程
+## <a name="high-level-assignment-and-access-flow"></a>高级分配和访问流程
 
 ### <a name="microsoft-action-pack-subscribers"></a>Microsoft Action Pack 订阅者
 Microsoft Action Pack 订阅者和 Visual Studio 订阅
@@ -48,7 +37,7 @@ Microsoft Action Pack 订阅者和 Visual Studio 订阅
 8. 选择所需的“个人”
 9. 单击“提交”
 10. 个人将收到一封电子邮件
-11. 被分配的个人将访问 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 进行登录
+11. 指定个人可访问 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 进行登录
 12. 可能会显示 Visual Studio 个人资料页，包括以下内容：
     - 名字
     - 姓氏
@@ -59,17 +48,27 @@ Microsoft Action Pack 订阅者和 Visual Studio 订阅
 ### <a name="competency-partners"></a>能力合作伙伴
 1. 选择“需求和资产”
 2. 选择“特权”
-3. 选择“MSDN 订阅”（注意：Visual Studio 订阅更新挂起）
+3. 选择“MSDN 订阅”（注意：这即将重新标记为“Visual Studio 订阅”）
 4. 找到所需的“个人”
 5. 单击“提交”
 6. 个人将收到一封电子邮件
-7. 被分配的个人将访问 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 进行登录
-8. 可能会显示 Visual Studio 个人资料页 
+7. 指定个人可访问 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 进行登录
+8. 可能会显示 Visual Studio 个人资料页
     - 名字
     - 姓氏
     - 联系人电子邮件
 9. 登录现已完成，订阅者应可以访问权益
 
+## <a name="resources-and-references"></a>资源和参考
+
+- 与 Microsoft 合作伙伴网络 [Visual Studio 订阅](https://partner.microsoft.com/membership/msdn-subscriptions)有关的详细信息
+
+- Microsoft 合作伙伴网络[计划管理员软件与联机服务权益指南](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)
+    - 第 6 页 - 为 Action Pack 分配联系人角色和 Visual Studio 订阅
+
+> [!NOTE]
+> Visual Studio 订阅需要技术联系人角色
+    - 第 8 页 - 为能力合作伙伴分配 Visual Studio 订阅
 
 ## <a name="need-help"></a>需要帮助？
 订阅者和计划管理器应直接与 Microsoft 合作伙伴网络支持团队协作，以解决订阅者访问订阅时出现的任何问题。 请访问[“支持合作伙伴”](https://partner.microsoft.com/support)页寻求帮助。 （需要提供 MPN 登录凭据。）

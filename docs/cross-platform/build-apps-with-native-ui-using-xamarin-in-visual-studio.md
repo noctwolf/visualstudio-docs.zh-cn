@@ -1,24 +1,24 @@
 ---
-title: "在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: 
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+caps.latest.revision: 31
+author: conceptdev
+ms.author: crdun
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: d9d9ecfd180ce3d4bbd54eb091e6c0e3153bd7cd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 71004088d421bcc2e0809fc4004cd7af887b95af
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用
 完成[设置和安装](../cross-platform/setup-and-install.md)以及[验证 Xamarin 环境](../cross-platform/verify-your-xamarin-environment.md)中的步骤后，此演示将介绍如何使用本机 UI 层生成基本 Xamarin 应用（如下所示）。 在本机 UI 中，共享代码驻留在可移植类库 (PCL) 中，并且单个平台项目都包含 UI 定义。  
@@ -101,7 +101,7 @@ ms.lasthandoff: 02/09/2018
   
  然后，以下步骤会将代码添加到 PCL，以访问和存储天气服务的数据：  
   
-1.  若要运行此示例，必须先在 [http://openweathermap.org/appid](http://openweathermap.org/appid)注册一个免费 API 密钥。  
+1.  要运行此示例，必须先在 [http://openweathermap.org/appid](http://openweathermap.org/appid) 注册免费 API 密钥。  
   
 2.  右键单击“WeatherApp”项目，然后选择“添加”>“类…”。在“添加新项”  对话框中，将文件命名为 **Weather.cs**。 将使用此类来存储天气数据服务的数据。  
   

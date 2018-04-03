@@ -1,22 +1,24 @@
 ---
-title: "容器的高级示例 | Microsoft Docs"
-ms.custom: 
+title: 容器的高级示例 | Microsoft Docs
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6009114d16871f4582aae298b25de9a3b9fe5888
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b5497a6957c457300f7741e1e0d4acc68240020a
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="advanced-example-for-containers"></a>容器的高级示例
 
@@ -27,7 +29,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 > 无法将 Visual Studio 到 microsoft/windowsservercore:10.0.14393.1593 中，后者具有与在容器中启动安装程序有关的已知问题。 有关详细信息，请参阅[已知问题](build-tools-container-issues.md)。
 
-该示例还使用生成工具 2017 引导程序，它安装与引导程序同时生成的特定版本。 产品仍无法通过发布通道进行更新，但这对于通常会重新生成的容器不是可行方案。 如果要获取特定通道的 URL，则可以从 https://aka.ms/vs/15/release/channel 下载该通道，打开 JSON 文件，然后检查引导程序 URL。 有关详细信息，请参阅[创建 Visual Studio 的网络安装](create-a-network-installation-of-visual-studio.md)。
+该示例还使用生成工具 2017 引导程序，它安装与引导程序同时生成的特定版本。 产品仍无法通过发布通道进行更新，但这对于通常会重新生成的容器不是可行方案。 如果要获取特定通道的 URL，可以从 https://aka.ms/vs/15/release/channel 下载该通道，打开 JSON 文件，然后检查引导程序 URL。 有关详细信息，请参阅[创建 Visual Studio 的网络安装](create-a-network-installation-of-visual-studio.md)。
 
 ```dockerfile
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
