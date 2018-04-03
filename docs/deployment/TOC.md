@@ -1,7 +1,8 @@
 # [部署文档](index.md)
 # 概述
-## [部署概述](deploying-applications-services-and-components.md)
+## [部署概述](deploying-applications-services-and-components-resources.md)
 # 快速入门
+## [初探部署](deploying-applications-services-and-components.md)
 ## [部署到本地文件夹](quickstart-deploy-to-local-folder.md)
 ## [部署到网站](quickstart-deploy-to-a-web-site.md)
 ## [部署到 Azure](quickstart-deploy-to-azure.md)
@@ -131,6 +132,4 @@
 #### [<Signature> 元素（ClickOnce 部署）](signature-element-clickonce-deployment.md)
 #### [<customErrorReporting> 元素（ClickOnce 部署）](customerrorreporting-element-clickonce-deployment.md)
 ### [ClickOnce 非托管 API 参考](clickonce-unmanaged-api-reference.md)
-# 资源
-## [部署应用程序、服务和组件](deploying-applications-services-and-components-resources.md)
 

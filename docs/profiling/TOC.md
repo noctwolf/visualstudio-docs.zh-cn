@@ -1,8 +1,8 @@
 
 # [分析文档](index.md)
 # 概述
-## [分析功能导览](profiling-feature-tour.md)
 # 快速入门
+## [初探分析](profiling-feature-tour.md)
 ## [分析 CPU 使用情况（托管）](quickstart-cpu-usage-managed.md)
 ## [分析 CPU 使用情况（本机）](quickstart-cpu-usage-native.md)
 ## [分析 CPU 使用情况 (ASP.NET)](quickstart-cpu-usage-aspnet.md)

@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 1ababcbc0903d474c2992b68e3571a71c4e88d99
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 Express 应用
 本教程介绍如果使用 Node.js 和 Express 进行 Visual Studio 开发，教程会创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。  
@@ -45,6 +45,8 @@ ms.lasthandoff: 03/15/2018
 * 须安装 Node.js 运行时。
 
     如果未安装，请从 [Node.js](https://nodejs.org/en/download/) 网站安装 LTS 版本。 一般情况下，Visual Studio 会自动检测已安装的 Node.js 运行时。 如果系统未检测到已安装运行时，则可以将项目配置为引用属性页中已安装的运行时（创建项目后，右键单击项目节点并选择“属性”）。
+
+    本教程已使用 Node.js 8.10.0 进行测试。
 
 ## <a name="create-a-project"></a>创建项目
 首先，创建 Node.js Web 应用程序项目。
@@ -119,6 +121,8 @@ ms.lasthandoff: 03/15/2018
         res.render('index', { title: 'Express', "data" });
     });
     ```
+
+    包含 `res.render` 的代码行中存在错误。 在应用可以运行前需要修复此错误。 下一节将修复此错误。
 
 ## <a name="use-intellisense"></a>使用 IntelliSense
 

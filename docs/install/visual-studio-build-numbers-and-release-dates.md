@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 03/19/2018
+ms.date: 03/22/2018
 ms.topic: article
 helpviewer_keywords: ''
 ms.technology:
@@ -13,11 +13,11 @@ ms.technology:
 ms.service: ''
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fb2238d8a0afb8334a05585bf040931da81d66a
-ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
+ms.openlocfilehash: bd209ce81800bd289a36e469fb23e6eec0dd008e
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 生成号和发布日期
 
@@ -25,6 +25,8 @@ ms.lasthandoff: 03/21/2018
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.6.4 | 发布 | 2018 年 3 月 22 日 | 15.6.27428.2015 |
+| 15.7.0 预览版 2.0 | 预览 | 2018 年 3 月 21 日 | 15.7.27520.0 |
 | 15.6.3 | 发布 | 2018 年 3 月 19 日 | 15.6.27428.2011 |
 | 15.7.0 预览版 1.0 | 预览 | 2018 年 3 月 13 日 | 15.7.27512.0 |
 | 15.6.2 | 发布 | 2018 年 3 月 13 日 | 15.6.27428.2005 |

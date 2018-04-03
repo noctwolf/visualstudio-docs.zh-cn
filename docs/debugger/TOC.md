@@ -1,7 +1,7 @@
 # [调试程序文档](index.md)
-# 概述
-## [调试器功能简介](debugger-feature-tour.md)
+# [概述](debugger-overview.md)
 # 快速入门
+## [初探调试器](debugger-feature-tour.md)
 ## [调试托管应用](quickstart-debug-with-managed.md)
 ## [调试本机应用](quickstart-debug-with-cplusplus.md)
 ## [调试 ASP.NET 应用](quickstart-debug-aspnet.md)
@@ -26,9 +26,6 @@
 ### [在可视化工具中查看字符串值](string-visualizer-dialog-box.md)
 ### [查看反汇编代码](how-to-use-the-disassembly-window.md)
 #### [如何：在内存中向上或向下翻页](how-to-page-up-or-down-in-memory.md)
-### [查看调用堆栈](how-to-use-the-call-stack-window.md)
-#### [“调用堆栈”窗口中的混合代码与丢失信息](mixed-code-and-missing-information-in-the-call-stack-window.md)
-#### [如何：在“调用堆栈”窗口中缺少本机框架时跳出托管代码](how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)
 ### [查看注册值](how-to-use-the-registers-window.md)
 #### [关于“寄存器”窗口](debugging-basics-registers-window.md)
 #### [如何：显示和隐藏寄存器组](how-to-display-and-hide-register-groups.md)
