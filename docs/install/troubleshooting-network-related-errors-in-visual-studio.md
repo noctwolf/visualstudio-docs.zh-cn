@@ -1,31 +1,31 @@
 ---
-title: "安装或使用 Visual Studio 时与网络相关错误的疑难解答 | Microsoft 文档"
-description: 
-ms.custom: 
+title: 安装或使用 Visual Studio 时与网络相关错误的疑难解答 | Microsoft 文档
+description: ''
+ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
-ms.assetid: 
+ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4d1e330a6ab378c61876b3f869f88b2a29c35a1
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: fc5f1c07f709c1cdb8e20704dbea9cb5550b14b3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>安装或使用 Visual Studio 时与网络相关错误的疑难解答
 对于你在防火墙或代理服务器后面安装或使用 Visual Studio 时，可能会遇到的最典型的与网络或代理相关的错误，我们已经有了解决方案。
@@ -102,7 +102,7 @@ Visual Studio 使用传输层安全性 (TLS) 1.2 协议连接到网络资源。 
 
 - &#42;.visualstudio.com
 
-- cdn.vsassets.io（主机内容交付网络或 CDN、内容）
+- cdn.vsassets.io（主机内容传送网络或 CDN、内容）
 
 - &#42;.gallerycdn.vsassets.io（主机 VSTS 扩展）
 

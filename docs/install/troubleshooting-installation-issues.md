@@ -1,25 +1,27 @@
 ---
-title: "安装问题疑难解答 | Microsoft Docs"
-description: "有时也会遇到问题。 如果 Visual Studio 安装或升级失败，可在此页寻求帮助。"
+title: 安装问题疑难解答 | Microsoft Docs
+description: 有时也会遇到问题。 如果 Visual Studio 安装或升级失败，可在此页寻求帮助。
 ms.date: 11/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
-author: timsneath
+author: tglee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9cd0a1b21cf7a61c9340c36be5db419d71c36e1b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5a8c86d4e3b28f32678c745ca7fd479881c43b18
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 安装和升级问题疑难解答
 
@@ -70,7 +72,7 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 
 | 问题       | 项                   | 解决方案 |
 | ----------- | ---------------------- | -------- |
-| 用户没有访问文件的权限。 | 权限 (ACL) | 请确保调整权限 (ACL)，以便它们在共享脱机安装前先向其他用户授予*读取*权限。 |
+| 用户没有访问文件的权限。 | 权限 (ACL) | 请确保调整权限 (ACL)，以便他们在共享脱机安装前先向其他用户授予“读取”权限。 |
 | 无法安装新的工作负载、组件或语言。  | `--layout`  | 若要通过部分布局进行安装，并选择之前未在此部分布局中下载过的工作负载、组件或语言，请确保可连接到 Internet。 |
 
 ## <a name="how-to-get-the-visual-studio-installation-logs"></a>如何获取 Visual Studio 安装日志

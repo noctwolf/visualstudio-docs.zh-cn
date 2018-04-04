@@ -1,26 +1,26 @@
 ---
-title: "目标生成顺序 | Microsoft Docs"
-ms.custom: 
+title: 目标生成顺序 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-caps.latest.revision: 
+caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf76debbaca82f9f60769ff5b5b166e40156c4c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9936c1529f0fbb5161d4cd766b1ce5eb0fc847c1
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="target-build-order"></a>目标生成顺序
 如果目标的输入取决于另一目标的输出，那么必须将目标排序。 可使用这些属性指定目标运行的顺序：  
@@ -113,7 +113,7 @@ ms.lasthandoff: 02/09/2018
   
 2.  运行由 **/target** 开关在命令行上指定的目标。 如果未在命令行上指定目标，则运行 `DefaultTargets` 目标。 如果都不存在，则运行出现的第一个目标。  
   
-3.  评估目标的 `Condition` 属性。 如果出现 `Condition` 属性且评估结果为 `false`，那么不会运行该目标，且目标不会对生成造成进一步影响。  
+3.  评估目标的 `Condition` 属性。 如果出现 `Condition` 属性且评估结果为 `false`，那么不会运行该目标，且目标不会对生成造成进一步影响。
   
 4.  执行目标前，运行其 `DependsOnTargets` 目标。  
   

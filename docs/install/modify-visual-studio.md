@@ -1,13 +1,14 @@
 ---
-title: "修改 Visual Studio 2017 | Microsoft Docs"
-description: "了解如何逐步修改 Visual Studio。"
+title: 修改 Visual Studio 2017 | Microsoft Docs
+description: 了解如何逐步修改 Visual Studio。
 ms.custom: H1Hack27Feb2017
 ms.date: 11/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -16,13 +17,14 @@ helpviewer_keywords:
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8278b138e8cf7a8780ad83d591a823fdb85f2b08
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 597da9be2ce4c6d22beaa6fc5fc419ef785ece94
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>通过添加或删除工作负载和组件修改 Visual Studio 2017
 我们不但简化了 Visual Studio 的个性化设置，让用户能够轻松匹配所需完成的任务，还简化了 Visual Studio 的自定义操作。 不必再通过控制面板进行修改；而是启动新的 Visual Studio 安装程序，即可进行所需更改。

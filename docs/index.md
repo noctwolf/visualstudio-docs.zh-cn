@@ -1,8 +1,8 @@
 ---
 layout: HubPage
-hide_bc: 
-title: "Visual Studio 文档| Microsoft Docs"
-description: "了解如何使用 Visual Studio 2017 并以你喜欢的语言来开发适用于你的平台和设备的应用程序、服务和工具。"
+hide_bc: true
+title: Visual Studio 文档| Microsoft Docs
+description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来开发适用于你的平台和设备的应用程序、服务和工具。
 ms.topic: hub-page
 ms.openlocfilehash: dfd72526fc24ae3b0a33014b8b8ac23e350fb6cf
 ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3

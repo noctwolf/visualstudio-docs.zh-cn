@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio Professional 2017 工作负载和组件 ID | Microsoft Docs"
-description: "使用工作负载和组件 ID 通过命令行安装 Visual Studio 或指定为 VSIX 清单中的依赖项"
-keywords: 
+title: Visual Studio Professional 2017 工作负载和组件 ID | Microsoft Docs
+description: 使用工作负载和组件 ID 通过命令行安装 Visual Studio 或指定为 VSIX 清单中的依赖项
+keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.date: 03/05/2018
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.workload:
 - multiple
-ms.openlocfilehash: 39720b8b1b34107bc7797b81e48d27ca37760b55
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 60b8746491934adf276f16b25aaad3ff42c9dcc3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Visual Studio Professional 2017 组件目录
 
@@ -683,7 +683,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID：**Microsoft.VisualStudio.Workload.Node
 
-**说明：**使用 Node.js（事件驱动的异步 JavaScript 运行时）生成可扩展的网络应用程序。 
+**说明：**使用 Node.js（事件驱动的异步 JavaScript 运行时）生成可扩展的网络应用程序。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -878,7 +878,7 @@ Microsoft.Component.VC.Runtime.OSSupport | 适用于 UWP 的 Visual C++ 运行�
 Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Graphics.Tools | 适用于 DirectX 的图形调试器和 GPU 探查器 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Graphics.Win81 | 图形工具 Windows 8.1 SDK | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Windows 10 移动版仿真程序 (Fall Creators Update) | 15.0.27406.0 | Optional
+Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Windows 10 移动版仿真程序（秋季创意者更新） | 15.0.27406.0 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.VC.Tools.ARM | 用于 ARM 的 Visual C++ 编译器和库 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 v141 工具集（x86、x64） | 15.6.27406.0 | Optional
@@ -954,7 +954,7 @@ Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.6.27421.1 | Optional
 Microsoft.VisualStudio.Component.Git | 用于 Windows 的 Git | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Graphics | 图像和 3D 模型编辑器 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Windows 10 移动版仿真程序 (Fall Creators Update) | 15.0.27406.0 | Optional
+Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Windows 10 移动版仿真程序（秋季创意者更新） | 15.0.27406.0 | Optional
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 数据类型 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VisualStudioData | 数据源和服务引用 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB 和 JS | 15.6.27406.0 | Optional

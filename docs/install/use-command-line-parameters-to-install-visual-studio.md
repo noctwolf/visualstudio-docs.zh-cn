@@ -1,13 +1,13 @@
 ---
-title: "使用命令行参数安装 Visual Studio | Microsoft Docs"
-ms.custom: 
+title: 使用命令行参数安装 Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/17/2018
 ms.reviewer: tims
-ms.suite: 
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - command-line parameters
 - switches
@@ -15,14 +15,14 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e66e9fabd84bac7ed7e413d51f08e55ef93a6e
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令行参数安装 Visual Studio 2017
 通过命令提示符安装 Visual Studio 2017 时，可以使用各种命令行参数来控制或自定义安装。 通过命令行，可以执行下列操作：
@@ -60,7 +60,7 @@ ms.lasthandoff: 01/22/2018
 | `--installPath <dir>` | 要对其执行操作的实例的安装目录。 对于安装命令，这是**可选**选项，表示实例的安装位置。 对于其他命令，此为必需选项，表示以前安装的实例的安装位置。 |
 | `--addProductLang <language-locale>` | **可选**：在安装或修改操作期间，这可确定要在产品中安装的 UI 语言包。 可以在命令行处多次使用此选项，从而添加多个语言包。 如果缺少此选项，将使用计算机区域设置进行安装。 有关详细信息，请参阅本页的[语言区域设置列表](#list-of-language-locales)部分。|
 | `--removeProductLang <language-locale>` | **可选**：在安装或修改操作期间，这可确定要从产品中删除的 UI 语言包。 可以在命令行处多次使用此选项，从而添加多个语言包。 有关详细信息，请参阅本页的[语言区域设置列表](#list-of-language-locales)部分。|
-| `--add <one or more workload or component IDs>` | **可选**：要添加的一个或多个工作负载或组件 ID。 将安装项目的所需组件，而不是建议组件或可选组件。 可以使用 `--includeRecommended` 和/或 `--includeOptional` 全局控制其他组件。 若要更精确地进行控制，可以将 `;includeRecommended` 或 `;includeOptional` 追加到 ID 中（例如，`--add Workload1;includeRecommended` 或 `--add Workload2;includeRecommended;includeOptional`）。 有关详细信息，请参阅[工作负载和组件 ID](workload-and-component-ids.md) 页。 可以根据需要重复此选项。|
+| `--add <one or more workload or component IDs>` | **可选**：要添加的一个或多个工作负荷或组件 ID。 将安装项目的所需组件，而不是建议组件或可选组件。 可以使用 `--includeRecommended` 和/或 `--includeOptional` 全局控制其他组件。 若要更精确地进行控制，可以将 `;includeRecommended` 或 `;includeOptional` 追加到 ID 中（例如，`--add Workload1;includeRecommended` 或 `--add Workload2;includeRecommended;includeOptional`）。 有关详细信息，请参阅[工作负载和组件 ID](workload-and-component-ids.md) 页。 可以根据需要重复此选项。|
 | `--remove <one or more workload or component IDs>` | **可选**：要删除的一个或多个工作负荷或组件 ID。 有关详细信息，请参阅[工作负载和组件 ID](workload-and-component-ids.md) 页。 可以根据需要重复此选项。|
 | `--in <path>` | **可选**：响应文件的 URI 或路径。  |
 | `--all` | **可选**：是否安装产品的所有工作负荷和组件。 |
@@ -71,7 +71,7 @@ ms.lasthandoff: 01/22/2018
 | `--passive, -p` | **可选**：显示用户界面，但不请求用户进行任何交互。 |
 | `--norestart` | **可选**：如果指定，包含 `--passive` 或 `--quiet` 的命令不会自动重启计算机（如有必要）。  如果 `--passive` 和 `--quiet` 均未指定，则忽略此选项。  |
 | `--nickname <name>` | **可选**：此参数定义分配给已安装产品的别名。 别名长度不能超过 10 个字符。  |
-| `--productKey` | **可选**：它定义要用于已安装产品的产品密钥。 由 25 个字母数字字符组成，格式为 `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` 或 `xxxxxxxxxxxxxxxxxxxxxxxxx`。 |
+| `--productKey` | **可选**：这定义要用于已安装产品的产品密钥。 由 25 个字母数字字符组成，格式为 `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` 或 `xxxxxxxxxxxxxxxxxxxxxxxxx`。 |
 | `--help, --?, -h, -?` | 显示此页的脱机版本。 |
 
 > 注意：指定多个工作负载和组件时，必须对每项重复运行 `--add` 或 `--remove` 命令行开关。
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/22/2018
 | ----------------------- | --------------- |
 | `--layout <dir>` | 指定用于创建脱机安装缓存的目录。 有关详细信息，请参阅[创建 Visual Studio 的网络安装](create-a-network-installation-of-visual-studio.md)。|
 | `--lang <one or more language-locales>` | **可选**：与 `--layout` 结合使用，以准备脱机安装缓存，以便使用包含指定语言的资源包。 有关详细信息，请参阅本页的[语言区域设置列表](#list-of-language-locales)部分。|
-| `--add <one or more workload or component IDs>` | **可选**：要添加的一个或多个工作负载或组件 ID。 将安装项目的所需组件，而不是建议组件或可选组件。 可以使用 `--includeRecommended` 和/或 `--includeOptional` 全局控制其他组件。 若要更精确地进行控制，可以将 `;includeRecommended` 或 `;includeOptional` 追加到 ID 中（例如，`--add Workload1;includeRecommended` 或 `--add Workload2;includeOptional`）。 有关详细信息，请参阅[工作负载和组件 ID](workload-and-component-ids.md) 页。 <br/>**注意**：如果使用了 `--add`，只会下载指定的工作负载和组件及其依赖项。 如果未指定 `--add`，所有工作负载和组件都会下载到布局中。|
+| `--add <one or more workload or component IDs>` | **可选**：要添加的一个或多个工作负荷或组件 ID。 将安装项目的所需组件，而不是建议组件或可选组件。 可以使用 `--includeRecommended` 和/或 `--includeOptional` 全局控制其他组件。 若要更精确地进行控制，可以将 `;includeRecommended` 或 `;includeOptional` 追加到 ID 中（例如，`--add Workload1;includeRecommended` 或 `--add Workload2;includeOptional`）。 有关详细信息，请参阅[工作负载和组件 ID](workload-and-component-ids.md) 页。 <br/>**注意**：如果使用了 `--add`，只会下载指定的工作负载和组件及其依赖项。 如果未指定 `--add`，所有工作负载和组件都会下载到布局中。|
 | `--includeRecommended` | **可选**：包含所有已安装工作负载的推荐组件，但不包含可选组件。 可使用 `--allWorkloads` 或 `--add` 指定工作负载。 |
 | `--includeOptional` | **可选**：添加布局中包含的任何工作负载的推荐*和*可选组件。 可使用 `--add` 指定工作负载。  |
 | `--keepLayoutVersion` | **15.3 中新增的可选选项**：无需更新布局版本，即可将更改应用到布局中。 |
@@ -97,9 +97,9 @@ ms.lasthandoff: 01/22/2018
 | `--productId <id>` | **可选**：将要安装的实例的产品 ID。 在正常安装条件下，这是预填充的。 |
 | `--wait` | **可选**：进程会先等待安装完成，然后再返回退出代码。 在需要等待安装完成以处理来自该安装的返回代码的自动安装中，这非常有用。 |
 | `--locale <language-locale>` | **可选**：更改安装程序本身的用户界面的显示语言。 将保留设置。 有关详细信息，请参阅本页的[语言区域设置列表](#list-of-language-locales)部分。|
-| `--cache` | **15.2 中新增的可选选项**：如果指定，将在安装后保存包，以便后续修复时使用。 这会替代用于后续安装、修复或修改的全局策略设置。 默认策略是缓存包。 对于卸载命令，忽略此选项。 有关详细信息，请了解如何[禁用或移动包缓存](disable-or-move-the-package-cache.md)。 |
+| `--cache` | **15.2 中的新增选项，可选**：如果指定，将在安装后保存包，以便后续修复时使用。 这会替代用于后续安装、修复或修改的全局策略设置。 默认策略是缓存包。 对于卸载命令，忽略此选项。 有关详细信息，请了解如何[禁用或移动包缓存](disable-or-move-the-package-cache.md)。 |
 | `--nocache` | **15.2 中新增的可选选项**：如果指定，将在安装或修复完成后删除包。 只有在需要时才会重新下载，并且会在使用后再次删除。 这会替代用于后续安装、修复或修改的全局策略设置。 默认策略是缓存包。 对于卸载命令，忽略此选项。 有关详细信息，请了解如何[禁用或移动包缓存](disable-or-move-the-package-cache.md)。 |
-| `--noUpdateInstaller` | **15.2 中新增的可选选项**：如果存在，指定无提示安装时阻止安装程序进行自我更新。 如果在需要更新安装程序时通过无提示安装指定 noUpdateInstaller，则安装程序将忽略该命令并返回非零退出代码。 |
+| `--noUpdateInstaller` | **15.2 中的新增功能（可选）**：如果存在，指定无提示安装时阻止安装程序进行自我更新。 如果在需要更新安装程序时通过无提示安装指定 noUpdateInstaller，则安装程序将忽略该命令并返回非零退出代码。 |
 | `--noWeb` | **15.3 中新增的可选选项**：安装程序现在从 Internet 下载要安装的所有内容。  离线布局中必须有要安装的所有内容。  如果布局中缺少内容，安装将失败。  有关详细信息，请参阅[从网络安装点进行部署](create-a-network-installation-of-visual-studio.md)。 |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>工作负荷 ID 和组件 ID 列表
@@ -140,7 +140,7 @@ ms.lasthandoff: 01/22/2018
 ## <a name="get-support"></a>获取支持
 有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
 
-下面是可供选择的另外几个支持渠道：
+下面是另外几个支持选项：
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
 * 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
