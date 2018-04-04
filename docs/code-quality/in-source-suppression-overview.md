@@ -1,9 +1,6 @@
 ---
-title: "禁止显示 Visual Studio 中的代码分析警告 |Microsoft 文档"
-ms.custom: 
+title: 禁止显示 Visual Studio 中的代码分析警告 |Microsoft 文档
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 helpviewer_keywords:
@@ -18,13 +15,13 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="suppressing-code-analysis-warnings"></a>禁止显示代码分析警告
+# <a name="suppress-code-analysis-warnings"></a>禁止显示代码分析警告
 
 通常它可用于指示警告不适用。 这将指示已检查代码，并且可以禁止显示警告的团队成员。 在源抑制 (ISS) 使用<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性以禁止显示警告。 该属性可以被放置在靠近产生该警告的代码段。 你可以添加<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性到源文件，通过键入它，或者你可以使用的快捷菜单中的警告**错误列表**以将其自动添加。
 
@@ -84,17 +81,17 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 在向其级别取消代码分析警告<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>应用特性。 例如，可以在程序集、 模块、 类型、 成员或参数级别应用该属性。 这样做的目的是紧密耦合对代码的禁止显示信息发生了冲突。
 
-禁止显示的一般形式包括规则类别和规则标识符，它包含可选的用户可读表示形式的规则名称。 例如:
+禁止显示的一般形式包括规则类别和规则标识符，它包含可选的用户可读表示形式的规则名称。 例如：
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-如果有尽量减少在源代码中禁止显示元数据的严格性能原因，则可以省略规则名称。 规则类别和其规则 ID 一起构成足够唯一的规则标识符。 例如:
+如果有尽量减少在源代码中禁止显示元数据的严格性能原因，则可以省略规则名称。 规则类别和其规则 ID 一起构成足够唯一的规则标识符。 例如：
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
 出于可维护性原因，不建议省略规则名称。
 
-## <a name="suppressing-selective-violations-within-a-method-body"></a>禁止显示在方法体内的选择性冲突
+## <a name="suppress-selective-violations-within-a-method-body"></a>禁止显示在方法体内的选择性冲突
 
 禁止显示特性可以应用于方法，但不能嵌入在方法体中。 这意味着如果你添加禁止所有冲突的特定规则<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性设为该方法。
 
@@ -160,7 +157,7 @@ public class Animal
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target`始终包含完全限定的项名称。
+> `Target` 始终包含完全限定的项名称。
 
 ## <a name="global-suppression-file"></a>全局禁止显示文件
 
@@ -168,4 +165,5 @@ public class Animal
 
 ## <a name="see-also"></a>请参阅
 
-<xref:System.Diagnostics.CodeAnalysis>
+- <xref:System.Diagnostics.CodeAnalysis>
+- [使用 Roslyn 分析器](../code-quality/use-roslyn-analyzers.md)
