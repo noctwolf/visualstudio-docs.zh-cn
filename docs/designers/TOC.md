@@ -20,6 +20,7 @@
 #### [辅助功能产品和服务 (Blend)](accessibility-products-and-services-blend.md)
 ### [XAML 设计器的键盘快捷键](keyboard-shortcuts-for-xaml-designer.md)
 ### [在 XAML 设计器中调试或禁用项目代码](debugging-or-disabling-project-code-in-xaml-designer.md)
+### [XAML 错误和警告](xaml-errors-warnings.md)
 ## [使用 Windows Presentation Foundation 创建新式桌面应用程序](create-modern-desktop-applications-with-windows-presentation-foundation.md)
 ### [WPF 入门](getting-started-with-wpf.md)
 #### [WPF 介绍](introduction-to-wpf.md)

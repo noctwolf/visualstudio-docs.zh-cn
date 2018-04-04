@@ -30,6 +30,7 @@
 
 # 如何
 ##[共享开发环境](how-to/share-dev-environment.md)
+##[使用自定义 NuGet 源](how-to/use-a-custom-nuget-feed.md)
 ##[对 Visual Studio 通连环境使用 kubectl](how-to/use-kubectl-with-vsce.md)
 
 # [疑难解答](troubleshooting.md)
