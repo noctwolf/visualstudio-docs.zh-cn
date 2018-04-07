@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 6d654cb3a7f0d0e952b447337603718c20eaee3e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>托管代码的代码分析概述
 
@@ -33,11 +33,11 @@ Visual Studio 2017 分析托管的代码通过两种方式： 使用旧版*FxCop
 
 若要生成项目每次运行代码分析，选择**生成时启用代码分析**项目的属性页上。 有关详细信息，请参阅[如何： 启用和禁用自动代码分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
-若要在项目上手动运行代码分析，从菜单栏选择**分析** > **运行代码分析** > **对运行代码分析<project>** . 有关详细信息，请参阅[如何： 启用和禁用自动代码分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
+若要在项目上手动运行代码分析，从菜单栏选择**分析** > **运行代码分析** > **对运行代码分析\<项目>**。
 
 ## <a name="rule-sets"></a>规则集
 
-对于托管代码的代码分析规则划分到*规则集*。 可以使用某个 Microsoft 标准规则集，也可以创建自定义规则集以满足特定需求。 有关详细信息，请参阅[使用规则集组合代码分析规则](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。
+对于托管代码的代码分析规则划分到[规则集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。 你可以使用 Microsoft 标准规则集，或者你可以[创建自定义规则集](../code-quality/how-to-create-a-custom-rule-set.md)以满足特定需求。
 
 ## <a name="suppress-warnings"></a>禁止显示警告
 
@@ -56,7 +56,7 @@ Public class MyClass
 有关详细信息，请参阅[禁止显示警告](../code-quality/in-source-suppression-overview.md)。
 
 > [!NOTE]
-> 如果将项目迁移到 Visual Studio 2017 时，您可能会突然会遇到这样相当多的代码分析警告。 如果你不准备好修复警告，并且想要暂时关闭代码分析，打开项目的属性页 (**项目** > ***项目*属性...**) 并转到**代码分析**选项卡。取消选择**生成时启用代码分析**，然后重新生成你的项目。 或者，你可以选择的不同，较小的规则集以针对代码运行。 请记住将重新打开当你准备好修复警告的代码分析。
+> 如果将项目迁移到 Visual Studio 2017 时，您可能会突然会遇到这样的大量代码分析警告。 如果你不准备好修复警告，并且想要立即提高工作效率，你可以*基线*你的项目的分析状态。 从**分析**菜单上，选择**运行代码分析和禁止显示活动问题**。
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>作为签入策略的一部分运行代码分析
 
