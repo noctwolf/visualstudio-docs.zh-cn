@@ -1,27 +1,27 @@
 ---
-title: "在 Visual Studio 中调试 Python 代码 | Microsoft Docs"
-description: "Visual Studio 中专门用于 Python 代码的调试功能概述，包括设置断点、单步执行、检查值、查看异常以及在交互窗口中进行调试。"
-ms.custom: 
+title: 调试 Python 代码 | Microsoft Docs
+description: Visual Studio 中专门用于 Python 代码的调试功能概述，包括设置断点、单步执行、检查值、查看异常以及在交互窗口中进行调试。
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a9e8cf75bcdf11994f549be3ef47d5a95868eeef
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="debugging-your-python-code"></a>调试 Python 代码
 
@@ -49,7 +49,7 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 
 ## <a name="basic-debugging"></a>基础调试
 
-基础调试工作流包括如以下各节中所述的设置断点、逐句通过代码、检查值以及处理异常。 有关 Visual Studio 调试器的完整详细信息，请参阅 [Visual Studio 中的调试](../debugger/debugging-in-visual-studio.md)。
+基础调试工作流包括如以下各节中所述的设置断点、逐句通过代码、检查值以及处理异常。
 
 使用“调试”>“开始调试”命令、工具栏上的“开始”按钮或 F5 键启动调试会话。 这些操作使用项目的活动环境和任意命令行参数或项目属性中已指定的搜索路径（请参阅[项目调试选项](#project-debugging-options)）来启动项目的启动文件（在解决方案资源管理器中以粗体显示）。 如未设置启动文件，Visual Studio 2017 版本 15.6 和更高版本将提醒你。早期版本可能打开一个正在运行 Python 解释器的输出窗口，或输出窗口短暂出现和消失。 在任何情况下，请右键单击相应文件，然后选择“设为启动文件”。
 
@@ -198,3 +198,7 @@ Python 调试交互窗口（“调试”>“窗口”>“Python 调试交互窗�
 调试交互窗口自身具有一组选项，可通过“工具”>“选项”>“Python 工具”>“调试交互窗口”进行访问。 与常规 Python 交互窗口（针对每个 Python 环境具有单独的实例）不同，该交互窗口只有一个调试交互窗口，并且它始终对正在调试的进程使用 Python 解释器。 请参阅[“选项”-“调试”选项](python-support-options-and-settings-in-visual-studio.md#debugging-options)。
 
 ![调试交互窗口选项](media/debugging-interactive-options.png)
+
+## <a name="see-also"></a>请参阅
+
+有关 Visual Studio 调试器的完整详细信息，请参阅 [Visual Studio 中的调试](../debugger/debugging-in-visual-studio.md)。

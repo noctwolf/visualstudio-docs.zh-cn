@@ -1,32 +1,34 @@
 ---
-title: "在 Visual Basic 中配置警告 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Basic 中配置警告 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中配置警告
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编译器提供了可能导致运行时错误的代码的一组警告。 可以使用这些信息编写 bug 较少的更干净、更快速和更好的代码。 例如，如果用户尝试调用未赋值的对象变量的成员，从未设置返回值的函数返回或者执行有逻辑错误的 `Try` 块来捕获异常，该编译器都将生成警告。  
   
- 有时该编译器替用户提供额外的逻辑，以便用户可以专注于正在进行的任务，而不用预先考虑可能出现的错误。 早期版本的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 使用 `Option Strict` 限制 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编译器提供的其他逻辑。 通过配置警告，可以用更精细的方式在单个警告级别限制此逻辑。  
+ 有时该编译器替用户提供额外的逻辑，以便用户可以专注于正在进行的任务，而不用预先考虑可能出现的错误。 在早期版本的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，使用“Option Strict”限制 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编译器提供的其他逻辑。 通过配置警告，可以用更精细的方式在单个警告级别限制此逻辑。  
   
  你可能需要自定义项目，并关闭与你的应用程序无关的某些警告，而将其他警告变为错误。 本页说明如何打开和关闭单个警告。  
   
@@ -75,13 +77,13 @@ ms.lasthandoff: 12/22/2017
   
  ID：42017  
   
-### <a name="operands-of-type-object-warnings"></a>Object 类型的操作数警告  
- 当出现针对 `Object` 的错误的 `Option Strict On` 类型的操作数时生成。 新项目的默认值为 On。  
+### <a name="operands-of-type-object-warnings"></a>“Object”类型的操作数警告  
+ 当出现会引发“Option Strict On”错误的 `Object` 类型的操作数时生成。 新项目的默认值为 On。  
   
  ID：42018 和 42019  
   
 ### <a name="declarations-require-as-clause-warnings"></a>声明需要“As”子句警告  
- 当变量、函数或属性声明缺少 `As` 子句会产生针对 `Option Strict On` 的错误时生成。 假定未指定类型的变量属于类型 `Object`。 新项目的默认值为 On。  
+ 当缺少 `As` 子句的变量、函数或属性声明会引发“Option Strict On”错误时生成。 假定未指定类型的变量属于类型 `Object`。 新项目的默认值为 On。  
   
  ID：42020（变量声明）、42021（函数声明）和 42022（属性声明）。  
   
@@ -125,5 +127,5 @@ ms.lasthandoff: 12/22/2017
  [Try...Catch...Finally 语句](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
  [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
  [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
- [“项目设计器”->“编译”页 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [默认情况下处于关闭状态的编译器警告](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
+ [“编译”页, 项目设计器 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
+ [默认关闭的编译器警告](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

@@ -1,25 +1,26 @@
 ---
-title: "如何应在 Visual Studio 中应用 Python 搜索路径 | Microsoft Docs"
-ms.custom: 
+title: 如何应用 Python 搜索路径 | Microsoft Docs
+description: 简要介绍 Visual Studio 如何在环境和项目中使用 Python 搜索路径。
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2135515859ea32c8d134ec6c5824195c554ee97e
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 9ebb5ac043253db76cc9613ac67e5d980d911bd3
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜索路径
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 03/08/2018
 1. 包含正在运行的 Python 代码的文件夹。
 1. 适用环境变量定义的“模块搜索路径”。 （请参阅核心 Python 文档中的[模块搜索路径](https://docs.python.org/2/tutorial/modules.html#the-module-search-path)和[环境变量](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH)。）
 
-但 Visual Studio 会忽略搜索路径环境变量，即使已为整个系统设置了该变量。 实际上，它被忽略的原因确切地说是因为对整个系统进行了此设置，且因此引发了某些无法自动得到答复的问题：引用的模块是否适用于 Python 2.7 或 Python 3.3？ 它们是否将替代标准库模块？ 开发人员是否注意到此行为，或者它是一个恶意的攻击尝试？
+但 Visual Studio 会忽略搜索路径环境变量，即使已为整个系统设置了该变量。 实际上，此变量被忽略的具体原因是整个系统都设置了此变量，从而引发了一些无法自动解答的问题，例如引用的模块是适用于 Python 2.7 还是 Python 3.6。 它们是否将替代标准库模块？ 开发人员是否注意到此行为，或者它是一个恶意的攻击尝试？
 
 因此，Visual Studio 提供了一种方法，可直接在环境和项目中指定搜索路径。 在 Visual Studio 中运行或调试的代码会接收 `PYTHONPATH` 值（和其他等效变量）中的搜索路径。 通过添加搜索路径，Visual Studio 会在需要时检查这些位置中的库并为它们构建 IntelliSense 数据库（Visual Studio 2017 版本 15.5 及更早版本；构建数据库需要一些时间，具体取决于库的数量）。
 

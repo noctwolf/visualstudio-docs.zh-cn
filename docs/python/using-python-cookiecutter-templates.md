@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio 中适用于 Python 的 CookieCutter 扩展 | Microsoft Docs"
-description: "Visual Studio 支持图形 Cookiecutter 扩展，以发现 Python 代码的模板并从这些模板创建项目。"
-ms.custom: 
+title: Python 的 CookieCutter 扩展 | Microsoft Docs
+description: Visual Studio 支持图形 Cookiecutter 扩展，以发现 Python 代码的模板并从这些模板创建项目。
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96590d2856d14b8c74a9c30f73e3a933cf572164
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d70a6a4041892166b383574730ac1814a19ad39a
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-the-cookiecutter-extension"></a>使用 Cookiecutter 扩展
 
@@ -35,7 +35,7 @@ Cookiecutter 需要 Python 3.3 或更高版本（32 位或 64 位）或者 Anaco
 
 ## <a name="cookiecutter-workflow"></a>Cookiecutter 工作流
 
-如以下各节所述，使用 Cookiecutter 的过程为：浏览和选择模板、将其克隆到本地计算机、设置选项，然后从该模板创建代码。
+如以下各节所述，使用 Cookiecutter 的过程为：浏览和选择模板、将其克隆到本地计算机、设置选项，然后基于该模板创建代码。
 
 ### <a name="browsing-templates"></a>浏览模板
 
@@ -52,7 +52,7 @@ Cookiecutter 主页上显示可选择的模板列表，分为以下几组：
 
 选择模板，然后选择“下一步”后，Cookiecutter 将生成待处理的本地副本。
 
-如果从“建议”组或“GitHub”组中选择模板，或在搜索框中输入自定义 URL 并选择该模板，则会将其克隆并安装在本地计算机上。 如果该模板已在 Visual Studio 的上一个会话中安装，将自动删除该模板，并且克隆最新版本。
+如果选择“推荐”组或“GitHub”组中的模板，或在搜索框中输入自定义 URL 并选择该模板，模板会进行克隆并安装到本地计算机上。 如果该模板已在 Visual Studio 的上一个会话中安装，将自动删除该模板，并且克隆最新版本。
 
 如果从“已安装”组中选择模板或在搜索框中输入自定义文件夹路径并选择该模板，Visual Studio 将加载该模板，但不进行克隆。
 
@@ -207,7 +207,7 @@ Cookiecutter 具有名为“后生成挂钩”的功能，允许文件生成后�
 
 ### <a name="hook-script-not-supported-on-windows"></a>Windows 不支持挂钩脚本
 
-如果后期脚本为 `.sh`，则可能不会与 Windows 计算机上的应用程序相关联。 可能会出现一个 Windows 对话框，要求在 Windows 应用商店中查找兼容的应用程序。
+如果后期脚本为 `.sh`，则可能与 Windows 计算机上的应用程序无关。 可能会出现一个 Windows 对话框，要求在 Windows 应用商店中查找兼容的应用程序。
 
 ### <a name="templates-with-known-issues"></a>具有已知问题的模板
 

@@ -53,6 +53,7 @@
 ## [Python：创建 Web 应用](ide/quickstart-python.md)
 ## [Node.js：创建 Web 应用](ide/quickstart-nodejs.md)
 ## [C#：创建 Web 应用](ide/quickstart-aspnet-core.md)
+## [C#：创建 UWP 应用](ide/quickstart-uwp-csharp.md)
 ## [Visual Basic：创建控制台应用](ide/quickstart-visual-basic-console.md)
 # 教程
 ## [Visual Studio 中的 C++...](/cpp/build/vscpp-step-0-installation)

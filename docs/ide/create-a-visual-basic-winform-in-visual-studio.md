@@ -1,13 +1,13 @@
 ---
-title: "在 Visual Studio 中使用 Visual Basic 创建 Windows 窗体应用 | Microsoft Docs"
-description: "了解如何在 Visual Studio 中使用 Visual Basic 分步创建 Windows 窗体应用。"
-ms.custom: 
+title: 在 Visual Studio 中使用 Visual Basic 创建 Windows 窗体应用 | Microsoft Docs
+description: 了解如何在 Visual Studio 中使用 Visual Basic 分步创建 Windows 窗体应用。
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.devlang: vb
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 592ad202ca41792c6a73a77b7c01bab71fdbcdc7
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: d3a6593a6e459b16541358a0e89dc5bc21fde982
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>在 Visual Studio 中使用 Visual Basic 创建 Windows 窗体应用
 在此 Visual Studio 集成开发环境 (IDE) 简介中，了解如何创建具有基于 Windows 的用户界面 (UI) 的简单 Visual Basic 应用程序。
@@ -59,13 +59,13 @@ ms.lasthandoff: 03/09/2018
 
      ![向窗体添加按钮](../ide/media/vb-add-a-button-to-form1.png)
 
-4. 在“属性”窗口的“外观”部分，键入“单击此处”，然后按 Enter。
+4. 在“属性”窗口的“外观”部分，键入 `Click this`，然后按 Enter。
 
      ![向窗体上的按钮添加文本](../ide/media/vb-button-control-text.png)  
 
      （如果看不到“属性”窗口，可从菜单栏打开。 若要执行此操作，请单击“视图” > “属性窗口”。 或按 F4。）
 
-5. 在“属性”窗口的“设计”部分，将名称从“Button1”更改为“btnClickThis”，然后按 Enter。
+5. 在“属性”窗口的“设计”部分，将名称从“Button1”更改为 `btnClickThis`，然后按 Enter。
 
      ![向窗体上的按钮添加功能](../ide/media/vb-button-control-function.png)
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 03/09/2018
 
 1. 从“工具箱”窗口选择“标签”控件，然后将其拖到窗体上，并放到“单击此处”按钮下方。
 
-2. 在“属性”窗口的“设计”部分，将名称从“Label1”更改为“lblHelloWorld”，然后按 Enter。
+2. 在“属性”窗口的“设计”部分，将名称从“Label1”更改为 `lblHelloWorld`，然后按 Enter。
 
 ### <a name="add-code-to-the-form"></a>向窗体添加代码
 

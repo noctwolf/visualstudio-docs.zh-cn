@@ -1,28 +1,28 @@
 ---
-title: "在 Visual Studio 中使用 C++ 和 Python | Microsoft Docs"
-description: "在 Visual Studio 中编写适用于 Python 的 C++ 扩展或模块的过程和步骤"
-ms.custom: 
+title: 使用 C++ 和 Python | Microsoft Docs
+description: 在 Visual Studio 中编写适用于 Python 的 C++ 扩展或模块的过程和步骤
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: 
-ms.topic: tutorial
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 12309747949e9f541c69fad64584e86627252907
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -50,6 +50,8 @@ ms.lasthandoff: 03/08/2018
 ## <a name="create-the-python-application"></a>创建 Python 应用程序
 
 1. 要在 Visual Studio 中创建新 Python 项目，请选择“文件”>“新建”>“项目”。 搜索"Python"，选择“Python 应用程序”模板，为其提供合适的名称和位置，然后选择“确定”。
+
+1. 必须具备 32 位 Python 解释器才可使用 C++（推荐 Python 3.6）。 在 Visual Studio 的“解决方案资源管理器”窗口中，展开项目节点，然后展开“Python 环境”节点。 如果发现默认值不是 32 位环境（加粗或标记为“全局默认值”），请按照[选择项目的 Python 环境](selecting-a-python-environment-for-a-project.md)中的说明进行操作。 如果未安装 32 位解释器，请参阅[安装 Python 解释器](installing-python-interpreters.md)。
 
 1. 在项目的 `.py` 文件中，粘贴以下代码，用于对双曲正切的计算进行基准测试（无需使用数学库即可实现，以便简化比较）。 可随意手动输入代码，体验某些 [Python 编辑功能](editing-python-code-in-visual-studio.md)。
 

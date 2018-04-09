@@ -7,7 +7,7 @@ ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 83268e1c7e4c4672caf17b6852cbf3fd38ea31b1
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 392bae77ffa2333fa9360dcda7f25b156e1601bc
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>在 Visual Studio 中分析应用程序性能
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程演示如何使用诊断工具的“CPU 使用率”选项卡获取应用的性能数据。 Visual Studio 中的 .NET 开发（包括 ASP.NET、和本机 /C++ 开发）支持此诊断工具。
@@ -43,6 +43,12 @@ ms.lasthandoff: 03/15/2018
 
 > [!NOTE]
 > 对于 .NET Core 和 ASP.NET Core，CPU 使用情况工具当前不通过可移植 PBD 提供精确结果。 请改为使用完整的 PDB。
+
+在本教程中，你将：
+
+> [!div class="checklist"]
+> * 收集 CPU 使用量数据
+> * 分析 CPU 使用量数据
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>步骤 1：收集分析数据 
   
@@ -155,9 +161,10 @@ ms.lasthandoff: 03/15/2018
 
 > [!TIP]
 > 如果分析调用 Windows 函数的外部代码，应确保具有最新的 .pdb 文件。 如果没有这些文件，报告视图将列出含义隐晦、难以理解的 Windows 函数名称。 有关如何确保具有所需文件的详细信息，请参阅[在调试器中指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
-  
-## <a name="see-also"></a>请参阅  
- [内存使用率](../profiling/memory-usage.md)  
- [CPU 使用率](../profiling/cpu-usage.md)  
- [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能简介](../profiling/profiling-feature-tour.md)
+
+## <a name="next-steps"></a>后续步骤
+
+本教程中介绍了如何收集和分析 CPU 使用量数据。 完成[探查器教程](../profiling/profiling-feature-tour.md)后，你可能想要快速了解如何分析应用中的内存使用情况。
+
+> [!div class="nextstepaction"]
+> [分析内存使用情况](../profiling/memory-usage.md) 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2dac5f48f69ce00ae914929638f08cf35f5a96ac
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>适用于 .NET 开发人员的 Visual Studio 2017 工作效率指南
 
@@ -31,12 +31,7 @@ ms.lasthandoff: 03/28/2018
 - [适用于 Visual Studio 的 HotKeys (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-![Visual Studio 扩展库](../ide/media/VSIDE_Productivity_Extensibility.png)
-
-以下是常用的 Visual Studio 快捷方式。 
-
-> [!NOTE]
-> 某些扩展取消绑定默认的 Visual Studio 键绑定，因此必须使用以下命令还原它们。 通过以下方式将键绑定还原到 Visual Studio 默认值：“工具”>“导入和导出设置...”>“重置所有设置”，或“工具”>“选项”>“键盘”>“重置”。
+Visual Studio 常用快捷方式如下： 
 
 | 快捷方式（所有配置文件） | 命令 | 描述 |
 |-|-|-|
@@ -52,6 +47,9 @@ ms.lasthandoff: 03/28/2018
 | **Ctrl+F5** | 不进行调试直接运行 | 不进行调试，直接在本地运行应用程序 |
 | **Ctrl+K,D**（默认配置文件）或 **Ctrl+E,D**（C# 配置文件） | 设置文档的格式 | 基于换行、间距和缩进设置，清理文件中的格式设置冲突 |
 | Ctrl+,E（默认配置文件）或 Ctrl+W,E（C# 配置文件）**\\** | 查看错误列表 | 查看文档、项目或解决方案中的所有错误 |
+
+> [!NOTE]
+> 一些扩展取消绑定默认的 Visual Studio 键绑定。 要使用以下命令，请按以下方式将键绑定还原为 Visual Studio 默认设置：转到“工具”>“导入和导出设置...”>“重置所有设置”，或转到“工具”>“选项”>“键盘”>“重置”。
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>我需要一种快速导航到文件或类型的方法。
 Visual Studio 2017 有一种名为“转到全部”(Ctrl+T) 的功能。 通过“转到全部”可快速跳转到任何文件、类型、成员或符号声明。

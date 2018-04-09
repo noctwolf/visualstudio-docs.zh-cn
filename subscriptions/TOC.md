@@ -42,22 +42,25 @@
 #### [论坛优先支持](vs-priority-support.md)
 #### [接待支持](vs-concierge-chat.md)
 ## 管理订阅
-### 概述
-#### [了解订阅管理](subscription-management-info.md)
-#### [管理员职责](admin-responsibilities.md)
-#### [管理管理员](managing-admins.md)
-#### [访问门户](access-admin-portal.md)
-#### 加入组织
-##### [查找你的 PCN](find-pcn.md)
-##### [管理多个 PCN](multiple-pcns.md)
-##### [查找你的主要联系人](find-primary-contact.md)
-##### [查找订阅 ID](find-subscription-id.md)
-### 使用管理门户
+### [管理员职责](admin-responsibilities.md)
+### [了解订阅管理](subscription-management-info.md)
+### 访问门户和管理管理员
+#### [对于批量许可](volume-license-admins.md)
+##### [VLSC 管理迁移常见问题解答](vlsc-admin-faq.md)
+##### 加入组织
+###### [加入电子邮件通信](volume-license-onboarding-email.md)
+###### [查找你的 PCN](find-pcn.md)
+###### [查找你的主要联系人](find-primary-contact.md)
+#### [对于 MPSA](mpsa.md)
+#### [对于云订阅](cloud-admin.md)
+#### [加入视频](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)
+### [使用管理门户](using-admin-portal.md)
 #### [分配订阅](assign-license.md)
 #### [重新发送分配电子邮件](resend-assignment-email.md)
 #### [编辑订阅](edit-license.md)
 #### [删除订阅](delete-license.md)
 #### [搜索订阅](search-license.md)
+#### [导出订阅](exporting-subscriptions.md)
 #### [过度分配](handle-overclaimed-license.md)
 #### [过期订阅](handle-expired-license.md)
 #### [使用个人电子邮件登录的订阅者](personal-email-sign-ins.md)
@@ -76,3 +79,6 @@
 ### [Visual Studio 许可白皮书](http://aka.ms/vslicensing)
 ### [比较订阅选项和定价](https://www.visualstudio.com/vs/pricing)
 ### [比较 Visual Studio IDE 功能](https://www.visualstudio.com/vs/compare)
+### [Visual Studio 管理和订阅支持](https://www.visualstudio.com/support/support-overview-vs)
+### [批量许可证和产品使用权限 (PUR)](http://www.microsoft.com/licensing/product-licensing/products.aspx)
+### [Microsoft 产品和服务协议 (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

@@ -1,16 +1,16 @@
 ---
-title: "Visual Studio 中适用于 Python 的 Azure 云服务项目模板 | Microsoft Docs"
-description: "使用 Python 编写的适用于 Azure 云服务的 Visual Studio 模板概述，包括角色部署、依赖项和故障排除。"
-ms.custom: 
+title: Python 的 Azure 云服务项目模板 |Microsoft Docs
+description: 使用 Python 编写的适用于 Azure 云服务的 Visual Studio 模板概述，包括角色部署、依赖项和故障排除。
+ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,17 +18,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e2c2fffddba8746ff2f5696a1eaccf701b83f314
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: b8e12d8823d3246da7c607ca63c056d1927b97d0
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python 的 Azure 云服务项目
 
 Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
 
-[云服务](http://go.microsoft.com/fwlink/?LinkId=306052)包含任意数量的辅助角色和 Web 角色，每个角色执行概念上独立的任务，但可以根据缩放需要在虚拟机中单独复制。 Web 角色为前端 Web 应用程序提供托管。 在使用 Python 的情况下，任何支持 WSGI 的 Web 框架都可用于编写这样的应用程序 - 如同受 [Web 项目模板](python-web-application-project-templates.md)支持一样。 辅助角色用于不直接与用户交互的长时间运行的进程。 它们通常使用[数据服务](http://go.microsoft.com/fwlink/?LinkId=401571)和[应用服务](http://go.microsoft.com/fwlink/?LinkId=401572)库，这些库可能通过 [`pip install azure`](http://pypi.org/project/azure) 进行安装。
+[云服务](http://go.microsoft.com/fwlink/?LinkId=306052)中包含数量不限的辅助角色和 Web 角色，其中每个角色执行在概念上独立的任务，但可根据缩放需求在虚拟机中单独复制。 Web 角色为前端 Web 应用程序提供托管。 在使用 Python 的情况下，任何支持 WSGI 的 Web 框架都可用于编写这样的应用程序 - 如同受 [Web 项目模板](python-web-application-project-templates.md)支持一样。 辅助角色用于不直接与用户交互的长时间运行的进程。 它们通常使用[数据服务](http://go.microsoft.com/fwlink/?LinkId=401571)和[应用服务](http://go.microsoft.com/fwlink/?LinkId=401572)库，这些库可能通过 [`pip install azure`](http://pypi.org/project/azure) 进行安装。
 
 本文详细介绍 Visual Studio 2017 中的项目模板和其他支持（早期版本相似，但有一些差异）。 有关通过 Python 使用 Azure 的详细信息，请访问 [Azure Python 开发人员中心](http://go.microsoft.com/fwlink/?linkid=254360)。
 

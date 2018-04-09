@@ -1,7 +1,7 @@
 ---
-title: "在云中运行 TensorFlow 模型"
-description: "在 Azure 深入学习 VM 中运行 tensorflow 模型"
-keywords: "ai, visual studio, 深入学习虚拟机"
+title: 在云中运行 TensorFlow 模型
+description: 在 Azure 深入学习 VM 中运行 tensorflow 模型
+keywords: ai, visual studio, 深入学习虚拟机
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -12,15 +12,15 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f02a03ca314138715b46e098416c7eef49e6d72
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 7006802f38076283221b9351ba9660448e64a696
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>在云中训练 TensorFlow 模型
 
-在本教程中，我们会在 Azure [深入学习](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview)虚拟机中使用 [MNIST 数据集](http://yann.lecun.com/exdb/mnist/)训练 TensorFlow 模型。
+在本教程中，我们会在 Azure [深入学习](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview)虚拟机上使用 [MNIST 数据集](http://yann.lecun.com/exdb/mnist/)训练 TensorFlow 模型。
 
 MNIST 数据库具有包含 60,000 个示例的训练集，以及包含 10,000 个手写数字示例的测试集。
 
@@ -42,7 +42,7 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ### <a name="download-sample-code"></a>下载示例代码
 
-下载包含示例的此 [GitHub 存储库](https://github.com/Microsoft/samples-for-ai)，以便开始在 TensorFlow、CNTK、Theano 等工具中进行深入学习。
+首先下载此 [GitHub 存储库](https://github.com/Microsoft/samples-for-ai)，在其内附的示例中深入了解 TensorFlow、CNTK、Theano 等工具。
 
 ## <a name="open-project"></a>打开项目
 

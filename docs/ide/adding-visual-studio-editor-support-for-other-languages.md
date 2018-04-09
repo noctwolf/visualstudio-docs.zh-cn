@@ -1,10 +1,10 @@
 ---
-title: "为其他语言添加 Visual Studio 编辑器支持 | Microsoft Docs"
-ms.custom: 
+title: 为其他语言添加 Visual Studio 编辑器支持 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - syntax colorization
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: 
+caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
@@ -23,11 +23,11 @@ ms.technology:
 - vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd53222baf58b0c609967bc86e3051c428073e1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 885563b456ca27c319e8b1eafb1963e77d9d1cfa
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>为其他语言添加 Visual Studio 编辑器支持
 了解 Visual Studio 编辑器如何在不同计算机语言间进行读取和导航，以及如何添加其他语言的 Visual Studio 编辑器支持。  
@@ -66,28 +66,28 @@ ms.lasthandoff: 01/29/2018
   
 -   C#  
   
- 所有这些文件类型均有上述功能，即使尚未安装对某种语言的支持也是如此。 安装某种语言的专门支持可能会提供其他语言支持，例如 IntelliSense 或其他高级语言功能（如灯泡）。  
+所有这些文件类型均有上述功能，即使尚未安装对某种语言的支持也是如此。 安装某种语言的专门支持可能会提供其他语言支持，例如 IntelliSense 或其他高级语言功能（如灯泡）。  
   
 ## <a name="adding-support-for-non-supported-languages"></a>添加对不受支持语言的支持  
  Visual Studio 2015 Update 1 及更高版本通过 [TextMate 语法](https://manual.macromates.com/en/language_grammars)在编辑器中提供语言支持。 如果你喜欢的编程语言当前在 Visual Studio 编辑器中不受支持，请先在 Web 上搜索，可能存在该语言的 TextMate 包。 如果还是找不到，可通过创建语言语法和代码段的 TextMate 包模型在 Visual Studio 2015 Update 1 及更高版本中自行添加对该语言的支持。  
   
  在以下文件夹中添加 Visual Studio 的任何新 TextMate 语法：  
   
- %userprofile%\\.vs\Extensions  
+ *%userprofile%\\.vs\Extensions*  
   
  如适用，请在此基路径下添加下列文件夹：  
   
 |文件夹名|描述|  
 |-----------------|-----------------|  
-|\\*\<language name>*|语言文件夹。 用语言的名称替换 *\<language name>*。 例如，**\Matlab**。|  
-|\Syntaxes|语法文件夹。 包含语言的语法 .json 文件，如 **Matlab.json**。|  
-|\Snippets|代码段文件夹。 包含语言的代码段。|  
+|\\*\<language name>*|语言文件夹。 用语言的名称替换 *\<language name>*。 例如，*\Matlab*。|  
+|*\Syntaxes*|语法文件夹。 包含语言的 .json 语法文件，如 Matlab.json。|  
+|*\Snippets*|代码段文件夹。 包含语言的代码段。|  
   
- 在 Windows 中，%userprofile% 解析为路径：c:\Users\\*\<user name>*。 如果系统上不存在扩展文件夹，则需要创建它。 如果该文件夹已存在，它将被隐藏。  
+ 在 Windows 中，%userprofile% 解析为路径 c:\Users\\\<user name>。 如果系统上不存在扩展文件夹，则需要创建它。 如果该文件夹已存在，它将被隐藏。  
   
  有关如何创建 TextMate 语法的详细信息，请参阅 [TextMate - Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)（TextMate - 语言语法简介：如何在 HTML 中添加嵌入的源代码语法突出显示）和 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)（如何创建 Textmate 包的语言语法和自定义主题说明）。  
   
 ## <a name="see-also"></a>请参阅  
- [Visual Studio 2013 Navigate To Improvements](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) （Visual Studio 2013“导航到”改进）  
+ [Visual Studio 2013 Navigate To improvements](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) （Visual Studio 2013 的“导航到”功能改进）  
  [演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)   
  [演练：显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)

@@ -1,36 +1,36 @@
 ---
-title: "适用于 Android 的 Visual Studio 仿真程序 | Microsoft Docs"
-ms.custom: 
+title: 适用于 Android 的 Visual Studio 仿真程序 | Microsoft Docs
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: de44978f60b42ccd91c6d362738981adffb05de9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4caa011bb0c7cdea3f9a1eed9e2eeb4adb089eb4
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 仿真程序
 适用于 Android 的 Visual Studio 仿真器是一款可模拟 Android 设备的桌面应用程序。 它提供虚拟化的环境，你不需要物理设备便可在其中调试并测试 Android 应用程序。 它还为应用程序原型提供一个独立的环境。  
+
+> [!IMPORTANT]
+> 在大多数情况下，建议使用 Google Android Emulator，而不是适用于 Android 的 Visual Studio 模拟器：
+> - 在需要带 Android 7.0 或更高版本的模拟器映像时，因为此情况下未计划发布版本 6.0 之前的 Android 映像供用户在适用于 Android 的 Visual Studio 模拟器中使用。
+> - 使用适用于 Apache Cordova 的 Visual Studio 工具时。 有关详细信息，请参阅[在 Android 上运行 Apache Cordova 应用](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator)。
   
  适用于 Android 的 Visual Studio 仿真程序旨在为实际设备提供水平相当的性能。 但是，在发布你的应用之前，我们建议你在物理设备上测试应用。  
   
  你可以为每个 Android 平台、屏幕分辨率和适用于 Android 的 Visual Studio 仿真程序支持的其他硬件属性，在唯一设备配置文件上测试应用。
-
-> [!NOTE]
-> 建议在以下情况中使用 Google Android 仿真器：
-> - 使用适用于 Apache Cordova 的 Visual Studio 工具时。 有关详细信息，请参阅[在 Android 上运行 Apache Cordova 应用](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator)。
-> - 在需要仿真器映像时，请包含 Android 7.0 或更高版本，因为没有在适用于 Android 的 Visual Studio 仿真器中发布 Android 映像过去版本 6.0 以供使用的计划。
   
 ##  <a name="Installing"></a> 安装和卸载  
  安装  

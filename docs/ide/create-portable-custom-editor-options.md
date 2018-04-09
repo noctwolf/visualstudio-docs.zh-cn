@@ -1,10 +1,10 @@
 ---
-title: "在 Visual Studio 中使用 EditorConfig 设置 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中使用 EditorConfig 设置 | Microsoft Docs
+ms.custom: ''
 ms.date: 12/13/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editorconfig [Visual Studio]
@@ -12,15 +12,15 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8be85bc578b31b087c77da1444ddd9950a6bc0ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e9ea6cde08724c00c4595774decea35b2bce44f4
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 
-在 Visual Studio 2017 中，可以向项目或基本代码添加 [EditorConfig](http://editorconfig.org/) 文件，强制对使用该基本代码的所有人实施一致的编码样式。 EditorConfig 设置优先于全局 Visual Studio 文本编辑器设置。 这意味着，可以调整每种基本代码，以使用特定于该项目的文本编辑器设置。 仍然可以在 Visual Studio“选项”对话框中设置个人编辑器首选项。 只要正在使用的基本代码没有 .editorconfig 文件，或者 .editorconfig 文件未替代特定设置，将应用这些设置。 此类首选项的一个示例为缩进样式 &mdash; 制表符或空格。
+在 Visual Studio 2017 中，可以向项目或基本代码添加 [EditorConfig](http://editorconfig.org/) 文件，强制对使用该基本代码的所有人实施一致的编码样式。 EditorConfig 设置优先于全局 Visual Studio 文本编辑器设置。 这意味着，可以调整每种基本代码，以使用特定于该项目的文本编辑器设置。 仍然可以在 Visual Studio“选项”对话框中设置个人编辑器首选项。 以下两种情况下将应用这些设置：每当在不具备 .editorconfig 文件的代码库中执行操作时，或者当 .editorconfig 文件不会替代特定设置时。 此类首选项的一个示例为缩进样式 &mdash; 制表符或空格。
 
 许多代码编辑器和 IDE（包括 Visual Studio）都支持 EditorConfig 设置。 它是一种随代码移动的可移植组件，甚至可以在 Visual Studio 外强制实施编码样式。
 
@@ -58,7 +58,7 @@ Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.or
 
 ### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>若要将 EditorConfig 文件添加到项目或解决方案
 
-1. 在 Visual Studio 中打开项目或解决方案。 选择项目或解决方案节点，具体取决于 .editorconfig 设置是要应用于解决方案中的所有项目还是仅应用于一个。 还可在项目或解决方案中选择一个文件夹，以将 .editorconfig 文件添加到该文件夹。
+1. 在 Visual Studio 中打开项目或解决方案。 根据要应用 .editorconfig 设置的对象（是解决方案中的所有项目还是其中一个项目），选择项目或解决方案节点。 还可在项目或解决方案中选择一个文件夹，向其添加 .editorconfig 文件。
 
 1. 从菜单栏中，选择“项目” > “添加新项...”，或按 Ctrl+Shift+A。
 
@@ -66,7 +66,7 @@ Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.or
 
 1. 在左侧的类别，选择“常规”，然后选择“文本文件”模板。 在“名称”文本框中，输入 `.editorconfig`，然后选择“添加”。
 
-   解决方案资源管理器中会出现一个 .editorconfig 文件，该文件会在编辑器中打开。
+   解决方案资源管理器中随即显示一个 .editorconfig 文件，且文件在编辑器中打开。
 
    ![解决方案资源管理器中的 .editorconfig 文件](media/editorconfig-in-solution-explorer.png)
 
@@ -89,7 +89,7 @@ Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.or
 
 ## <a name="override-editorconfig-settings"></a>替代 EditorConfig 设置
 
-如果在文件层次结构中将 .editorconfig 文件添加到文件夹，则其设置将应用于该级别和更低级别的所有适用文件。 还可替代特定项目、代码库或部分代码库的 EditorConfig 设置，以使其使用与代码库其他部分不同的约定。 当要包含其他地方的代码而不想更改其约定时，这会很有用。
+如果将 .editorconfig 文件添加到文件层次结构中的某文件夹，则其设置将应用于该级别及更低级别的所有适用文件。 还可替代特定项目、代码库或部分代码库的 EditorConfig 设置，以使其使用与代码库其他部分不同的约定。 当要包含其他地方的代码而不想更改其约定时，这会很有用。
 
 若要替代部分或全部 EditorConfig 设置，请在要应用这些替代设置的文件层次结构级别添加 .editorconfig 文件。 新的 EditorConfig 文件设置应用于同级目录和任何子目录中的文件。
 

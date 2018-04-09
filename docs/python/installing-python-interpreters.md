@@ -1,26 +1,26 @@
 ---
-title: "选择并安装 Python 解释器 | Microsoft Docs"
-description: "Visual Studio 中支持的 Python 解释器的完整列表，并简要说明了可以在哪里找到它们的安装程序。"
-ms.custom: 
+title: 选择并安装 Python 解释器 | Microsoft Docs
+description: Visual Studio 中支持的 Python 解释器的完整列表，并简要说明了可以在哪里找到它们的安装程序。
+ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bdec69c45cbd6ebb7943ce38853fd2207000a0f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 3b8d1bf4f0ac6c66222f86e73b7c18cfdceb3354
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-python-interpreters"></a>安装 Python 解释器
 
@@ -67,4 +67,4 @@ Visual Studio 在 [Python 环境窗口](managing-python-environments-in-visual-s
 - [为项目选择解释器](selecting-a-python-environment-for-a-project.md)
 - [对依赖项使用 requirements.txt](managing-required-packages-with-requirements-txt.md)
 - [搜索路径](search-paths.md)
-- [Python 环境窗口引用](python-environments-window-tab-reference.md)
+- [“Python 环境”窗口参考](python-environments-window-tab-reference.md)

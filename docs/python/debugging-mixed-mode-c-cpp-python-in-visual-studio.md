@@ -1,28 +1,28 @@
 ---
-title: "Visual Studio 中 Python 的混合模式调试 | Microsoft Docs"
-description: "如何在 Visual Studio 中同时调试 C++ 和 Python，包括在环境之间单步执行、查看值和评估表达式。"
-ms.custom: 
+title: Python 的混合模式调试 | Microsoft Docs
+description: 如何在 Visual Studio 中同时调试 C++ 和 Python，包括在环境之间单步执行、查看值和评估表达式。
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 4f555e24c1328a4d784e3f8c5b2d0f1a7c590f8b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="debugging-python-and-c-together"></a>一起调试 Python 和 C++
 
@@ -66,7 +66,7 @@ Visual Studio 为 Python 和本机 C/C++ 提供集成的同步混合模式调试
 
 1. 首次在混合模式下开始调试时，可能会看到“需要 Python 符号”对话框（请参阅[混合模式调试的符号](debugging-symbols-for-mixed-mode-c-cpp-python.md)）。 你只需为任何给定的 Python 环境安装一次符号。 如果通过 Visual Studio 2017 安装程序安装 Python 支持，则符号会自动包含在内。
 
-1. 为了在调试时可以使用标准 Python 本身的源代码，请访问 [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/)，然后下载适用于自身版本的存档并将其解压缩到文件夹。 无论系统何时发出提示，都需将 Visual Studio 指向该文件夹中的特定文件。
+1. 为了能够在调试时使用标准 Python 自身的源代码，请访问 [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/)，下载适合你的版本的存档，并将其解压缩到文件夹。 无论系统何时发出提示，都需将 Visual Studio 指向该文件夹中的特定文件。
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>在 C/C++ 项目中启用混合模式调试
 

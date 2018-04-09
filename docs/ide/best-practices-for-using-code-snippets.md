@@ -1,11 +1,11 @@
 ---
-title: "使用代码片段的最佳做法 | Microsoft Docs"
-ms.custom: 
+title: 使用代码片段的最佳做法 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code snippets, best practices
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 31951001512578446c4a3ab05efe3ade99223068
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6d5ac19f3caa795fc309b77d0845db0d412e1ccb
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>有关使用代码片段的最佳做法
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 02/09/2018
 
 - 将数据传递到脚本编写技术
 
-有关详细信息，请参阅[保证应用程序的安全](../ide/securing-applications.md)。
+有关详细信息，请参阅[保护应用程序](../ide/securing-applications.md)。
 
 ## <a name="downloaded-code-snippets"></a>下载的代码片段
 
@@ -73,6 +73,6 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>请参阅
 
-[Visual Basic IntelliSense 代码段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
+[Visual Basic IntelliSense 代码片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
 [保护应用程序](../ide/securing-applications.md)  
 [代码片段](../ide/code-snippets.md)

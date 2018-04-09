@@ -1,27 +1,27 @@
 ---
-title: "哪些发布选项适合我？ | Microsoft Docs"
-ms.custom: 
+title: 哪些发布选项适合我？ | Microsoft Docs
+ms.custom: ''
 ms.date: 03/09/2017
 ms.reviewer: riande
-ms.suite: 
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: 
+caps.latest.revision: 1
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 5e9eb5423b33fbdd27921afcd6ae6f5758bfc910
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/30/2018
 ---
 # 哪些发布选项适合我？
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/19/2018
 - [文件系统](#file-system)
 - [自定义目标（如 IIS、FTP 等）](#custom-targets)，包括所有任意的 Web 服务器。
 
-在“发布”选项卡上，可以选择现有发布配置文件、导入现有发布配置文件或使用此处所述的选项新建发布配置文件。
+在“发布”选项卡上，可以选择现有发布配置文件、导入现有发布配置文件或使用此处所述的选项新建发布配置文件。 若要查看教程了解 IDE 中针对不同应用类型的发布选项，请参阅[初探部署](../../deployment/deploying-applications-services-and-components.md)。
 
 ## Azure 应用服务 Web 应用
 

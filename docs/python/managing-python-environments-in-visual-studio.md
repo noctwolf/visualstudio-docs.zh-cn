@@ -1,26 +1,26 @@
 ---
-title: "如何在 Visual Studio 中管理 Python 环境和解释器 | Microsoft Docs"
-description: "如何在 Visual Studio 中使用 Python 环境窗口来管理全局和虚拟环境、设置自定义环境、安装 Python 解释器、安装包、设置搜索路径和管理 Visual Studio 项目环境。"
-ms.custom: 
-ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+title: 如何管理 Python 环境和解释器 | Microsoft Docs
+description: 如何在 Visual Studio 中使用 Python 环境窗口来管理全局和虚拟环境、设置自定义环境、安装 Python 解释器、安装包、设置搜索路径和管理 Visual Studio 项目环境。
+ms.custom: ''
+ms.date: 03/21/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: a1bf9c9c016a71c816ed8cc40b675c520e9c9397
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>在 Visual Studio 中管理 Python 环境
 
@@ -35,6 +35,8 @@ Python 环境是在其中运行 Python 代码的上下文，它包括全局、�
 
 另请注意，你无法管理使用“文件 > 打开 > 文件夹”命令仅以文件夹方式打开的 Python 代码的环境。 但是，[从现有代码创建 Python 项目](quickstart-01-python-in-visual-studio-project-from-existing-code.md)即可享受 Visual Studio 的环境功能。
 
+如果想在环境中安装包，请参阅[“包”选项卡](python-environments-window-tab-reference.md#packages-tab)。
+
 ## <a name="types-of-environments"></a>环境类型
 
 ### <a name="global-environments"></a>全局环境
@@ -47,7 +49,7 @@ Python 环境是在其中运行 Python 代码的上下文，它包括全局、�
 
 由于安装到全局环境中的包适用于使用此环境的所有项目，因此当两个项目需要不兼容的包或同一个包的不同版本时，可能会发生冲突。 虚拟环境通过使用全局环境中的解释器和标准库但将其自身包存储在独立文件夹来避免此类冲突。
 
-在 Visual Studio 中，可以为存储在项目子文件夹中的特定项目创建虚拟环境（请参阅[创建虚拟环境](selecting-a-python-environment-for-a-project.md#creating-a-virtual-environment)）。 项目文件也能识别虚拟环境。 Visual Studio 还会在项目 `requirements.txt` 文件中记录安装到虚拟环境的任何包。 之后如果共享项目，且其他开发者在其计算机上打开项目，Visual Studio 会提供重新创建虚拟环境的选项。
+在 Visual Studio 中，可针对项目子文件夹中存储的特定项目创建虚拟环境。 Visual Studio 提供基于虚拟环境生成 `requirements.txt` 的命令，简化了在其他计算机上重新创建环境的过程。 有关详细信息，请参阅[使用虚拟环境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
 
 ### <a name="conda-environments"></a>Conda 环境
 
@@ -87,7 +89,7 @@ Visual Studio 了解的环境显示在“Python 环境”窗口中。 若要打�
 
 ### <a name="what-if-no-environments-appear"></a>如果未出现环境该怎么办？
 
-如果未出现任何环境，这意味着 Visual Studio 在标准位置中未能检测到任何 Python 安装。 例如，你可能已安装 Visual Studio 2017 但清除了 Python 工作负荷的安装程序选项中的所有解释器选项。 同样地，你可能已安装 Visual Studio 2015 或更早版本，但未手动安装解释器（请参阅[选择并安装 Python 解释器](installing-python-interpreters.md)。
+如果未出现任何环境，这意味着 Visual Studio 在标准位置中未能检测到任何 Python 安装。 例如，你可能已安装 Visual Studio 2017 但清除了 Python 工作负荷的安装程序选项中的所有解释器选项。 同样地，你可能已安装 Visual Studio 2015 或更早版本，但未手动安装解释器（请参阅[安装 Python 解释器](installing-python-interpreters.md)）。
 
 如果你知道计算机上有一个 Python 解释器，但 Visual Studio（任何版本）未检测到它，则使用“+ 自定义...”命令来手动指定其位置。 请参阅下一部分[手动标识现有环境](#manually-identifying-an-existing-environment)。
 
@@ -106,9 +108,9 @@ Visual Studio 了解的环境显示在“Python 环境”窗口中。 若要打�
 
 1. 在“说明”字段中为该环境输入名称。
 
-1. 在“前缀路径”字段中输入或浏览（使用 **...***）到解释器的路径。
+1. 在“前缀路径”字段中输入或浏览（使用 **...**）到解释器的路径。
 
-1. 如果 Visual Studio 在该位置检测到 Python 解释器（如下面显示的 Conda 环境的路径），它将启用“自动检测”命令。 选择 *“自动检测”填写剩余的字段。 你还可以手动填写这些字段。
+1. 如果 Visual Studio 监测到此位置存在 Python 解释器（如下所示的 conda 环境的路径），它将启用“自动检测”命令。 选择 “自动检测”填写剩余的字段。 你还可以手动填写这些字段。
 
     ![启用“自动检测”命令](media/environments-custom-2.png)
 

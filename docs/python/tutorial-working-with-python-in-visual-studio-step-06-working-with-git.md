@@ -1,15 +1,15 @@
 ---
-title: "在 Visual Studio 中使用 Python - 第 6 步：使用 Git | Microsoft Docs"
-description: "在 Visual Studio 中使用 Python 的核心教程的第 6 步，介绍了 Visual Studio 的 Git 相关功能。"
-ms.custom: 
+title: 使用 Python - 第 6 步：使用 Git | Microsoft Docs
+description: 在 Visual Studio 中使用 Python 的核心教程的第 6 步，介绍了 Visual Studio 的 Git 相关功能。
+ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,41 +17,51 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef143862c56f07edc844874bbf71cd916ac9eabc
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: ec8534e7fd3121510a05e201e8bdea2e9a7fce1c
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-6-working-with-git"></a>步骤 6：使用 Git
 
 **上一步：[安装程序包和管理 Python 环境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
-Visual Studio 提供与本地 Git 存储库以及驻留在 GitHub 和 Visual Studio Team Services 等服务上的存储库的直接集成。 集成包括克隆存储库、提交更改和管理分支。
+Visual Studio 提供与本地 Git 存储库以及 GitHub 和 Visual Studio Team Services 等服务上的远程存储库的直接集成。 集成包括克隆存储库、提交更改和管理分支。
 
-本文介绍如何为现有项目创建本地 Git 存储库。 有关从远程 Git 存储库创建项目的演练，请参阅[快速入门：在 Visual Studio 中克隆 Python 代码存储库](quickstart-03-python-in-visual-studio-project-from-repository.md)。
+本文简要概述了如何创建现有项目的本地 Git 存储库，并介绍 Visual Studio 的一些 Git 相关功能。
 
-1. 在 Visual Studio 中打开项目后，比如[上一步](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)中的项目，右键单击解决方案并选择“将解决方案添加到源代码管理”。 Visual Studio 会创建一个包含项目代码的本地 Git 存储库，Git 相关控件也出现在 Visual Studio 窗口底部。 控件显示挂起的提交、更改、存储库名称和分支。 将鼠标悬停在控件上可查看附加信息。
+1. 在 Visual Studio 中打开项目后，比如[上一步](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)中的项目，右键单击解决方案并选择“将解决方案添加到源代码管理”。 Visual Studio 将创建包含项目代码的本地 Git 存储库。
 
-  ![将鼠标悬停在 Visual Studio 窗口中的 Git 控件上时显示附加信息](media/working-with-git-01.png)
+1. Visual Studio 检测到项目托管在 Git 存储库中时，Visual Studio 窗口右下角会显示 Git 相关控件。 控件显示挂起的提交、更改、存储库名称和分支。 将鼠标悬停在控件上可查看附加信息。
 
-1. 选择存储库标头时，还会显示包含各种可用 Git 选项的“团队资源管理器”窗口。 选择 Push 标头时显示的“同步”窗格提供用于发布到远程存储库的选项。
+    ![将鼠标悬停在 Visual Studio 窗口中的 Git 控件上时显示附加信息](media/working-with-git-01.png)
 
-  ![创建本地存储库后 Visual Studio 中的团队资源管理器](media/working-with-git-02.png)
+1. 新建一个存储库或选择任意 Git 控件时，Visual Studio 会打开“团队资源管理器”窗口。 （可随时通过“视图”>“团队资源管理器”菜单命令打开该窗口。）窗口带有三个主窗格，你可使用“团队资源管理器”标题上的下拉菜单进行切换。 选择“推送”控件（向上箭头图标）时，还显示可用于发布内容的“同步”窗格：
 
-1. 选择“更改”以查看未提交的更改并在需要时提交它们。
+    ![创建本地存储库后 Visual Studio 中的团队资源管理器](media/working-with-git-02.png)
 
-  ![Visual Studio 中显示未提交更改的团队资源管理器](media/working-with-git-03.png)
+1. 选择“更改”（或带铅笔图标的 Git 控件），以查看未提交的更改并在必要时进行提交。
 
-1. 选择“分支”以检查分支并执行合并和变基操作：
+    ![Visual Studio 中显示未提交更改的团队资源管理器](media/working-with-git-03.png)
 
-  ![Visual Studio 中显示分支的团队资源管理器](media/working-with-git-04.png)
+    双击“更改”列表中的文件打开该文件的差异视图：
 
-1. 使用本地存储库时，提交的更改直接进入存储库。 如果已连接到远程存储库，则选择标头，再选择“同步”以切换到“同步”部分，然后处理此处显示的命令。
+    ![文件更改的差异视图](media/working-with-git-05.png)
+
+1. 选择“分支”（或带分支名称的 Git 控件），以检查分支并执行合并和变基操作：
+
+    ![Visual Studio 中显示分支的团队资源管理器](media/working-with-git-04.png)
+
+1. 选择带存储库名称的 Git 控件（上图中的“CosineWave”）之后，团队资源管理器将显示可用于迅速彻底切换到其他存储库的“连接”接口。
+
+1. 使用本地存储库时，提交的更改直接进入存储库。 如果已连接到远程存储库，则选择团队资源管理器中的下拉列表标题，再选择“同步”以切换到“同步”部分，然后处理此处显示的拉取和提取命令。
 
 ## <a name="going-deeper"></a>深入了解
 
-有关使用 Git 的更广泛的教程，请参阅[与 Visual Studio 2017 和 VSTS Git 共享代码](/vsts/git/share-your-code-in-git-vs-2017)
+有关基于远程 Git 存储库创建项目的简短演练，请参阅[快速入门：在 Visual Studio 中克隆 Python 代码存储库](quickstart-03-python-in-visual-studio-project-from-repository.md)。
+
+有关更全面的教程（包括处理合并冲突、使用拉取请求查看代码、变基和挑拣分支之间的更改），请参阅[开始使用 Git 和 VSTS](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)。
 
 ## <a name="tutorial-review"></a>教程回顾
 
@@ -64,7 +74,7 @@ Visual Studio 提供与本地 Git 存储库以及驻留在 GitHub 和 Visual Stu
 - 安装程序包和管理 Python 环境
 - 使用 Git 存储库中的代码
 
-从此处了解概念和操作说明指南，其中包括：
+在此处了解概念和操作说明指南，其中包括下文：
 
 - [创建适用于 Python 的 C++ 扩展](working-with-c-cpp-python-in-visual-studio.md)
 - [发布到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

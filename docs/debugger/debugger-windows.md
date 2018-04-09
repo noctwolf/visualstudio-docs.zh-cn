@@ -1,25 +1,25 @@
 ---
-title: "调试器在 Visual Studio 中的 Windows |Microsoft 文档"
+title: 调试器在 Visual Studio 中的 Windows |Microsoft 文档
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 64c792594920cff47dfeac8331a73938a2512dcf
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>了解 Visual Studio 中的调试器窗口
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 02/09/2018
 |模块|CTRL+ALT+U|[如何：使用“模块”窗口](../debugger/how-to-use-the-modules-window.md)|
 |GPU 线程|-|[如何：使用“GPU 线程”窗口](../debugger/how-to-use-the-gpu-threads-window.md)|
 |任务|CTR:+SHIFT+D、K|[使用“任务”窗口](../debugger/using-the-tasks-window.md)|
-|Python 交互式调试|SHIFT+ALT+I|[Python 交互式 REPL](../python/interactive-repl.md)|
+|Python 交互式调试|SHIFT+ALT+I|[Python 交互式 REPL](../python/python-interactive-repl-in-visual-studio.md)|
 |JavaScript 控制台|CTRL+ALT+V、C|[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM 资源管理器|CTRL+ALT+V、D|[使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)|
 |实时可视化树|-|[在调试时检查 XAML 属性](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -53,6 +53,6 @@ ms.lasthandoff: 02/09/2018
 |反汇编|CTRL+ALT+D|[如何：使用“反汇编”窗口](../debugger/how-to-use-the-disassembly-window.md)|
 |寄存器|CTRL+ALT+G|[如何：使用“寄存器”窗口](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 [调试器基础知识](../debugger/debugger-basics.md)

@@ -7,7 +7,7 @@
 ## [调试 ASP.NET 应用](quickstart-debug-aspnet.md)
 # 教程
 ## [了解如何使用 Visual Studio 进行调试](getting-started-with-the-debugger.md)
-## [在调试器中运行 Python 代码...](../python/vs-tutorial-01-04.md)
+## [在调试器中运行 Python 代码...](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [调试实时 Azure 应用](debug-live-azure-applications.md)
 ## [使用 IntelliTrace 后退查看快照](how-to-use-intellitrace-step-back.md)
 # 操作指南

@@ -1,22 +1,24 @@
 ---
-title: "分析 Visual Studio 中的内存使用率 | Microsoft Docs"
+title: 分析 Visual Studio 中的内存使用率 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d6fc25c3a9d7306332c704453f22073df4e76546
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 38f4457146f8373ad0e4ce3a5477c98a43424538
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Visual Studio 中的配置文件内存使用
 使用集成了调试器的内存使用情况诊断工具在进行调试时查找内存泄漏和低效内存。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照，帮助理解对象类型的内存使用率影响。 可以收集 .NET、本机或混合模式（.NET 和本机）应用的快照。  
@@ -33,6 +35,12 @@ ms.lasthandoff: 01/04/2018
 >  **自定义分配器支持** 本机内存探查器的工作原理是在运行时收集 [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) 分配事件数据。  CRT 和 Windows SDK 中的分配器在源级别上注释，因此可以捕获其分配数据。  若要编写自己的分配器，对于返回的指针指向新分配的堆内存的任何函数，可使用 [__declspec](/cpp/cpp/declspec)(allocator) 进行修饰，如以下 myMalloc 示例所示：  
 >   
 >  `__declspec(allocator) void* myMalloc(size_t size)` 
+
+在本教程中，你将：
+
+> [!div class="checklist"]
+> * 拍摄内存快照
+> * 分析内存使用率数据
 
 ## <a name="collect-memory-usage-data"></a>收集内存使用率数据
 
@@ -159,12 +167,15 @@ ms.lasthandoff: 01/04/2018
 
 |         |         |
 |---------|---------|
-|  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看介绍诊断工具用法的视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何分析 Visual Studio 2017 中的内存使用率以及 CPU 使用率。 |
+|  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看介绍诊断工具用法的视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何在 Visual Studio 2017 中分析内存使用率以及 CPU 使用率。 |
 
  [调试时分析 CPU 和内存](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   
  [Visual C++ 博客：Visual C++ 2015 中的内存分析](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
-## <a name="see-also"></a>请参阅
- [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能简介](../profiling/profiling-feature-tour.md)
+## <a name="next-steps"></a>后续步骤
+
+在本教程中，你了解了如何收集和分析内存使用率数据。 如果已完成[探查器教程](../profiling/profiling-feature-tour.md)，则可能想要快速了解如何分析应用中的 CPU 使用率。
+
+> [!div class="nextstepaction"]
+> [分析 CPU 使用情况](../profiling/beginners-guide-to-performance-profiling.md) 

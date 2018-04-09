@@ -1,11 +1,7 @@
 ---
-title: "常见快速操作 | Microsoft Docs"
-ms.custom: 
-ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+title: 常见快速操作 | Microsoft Docs
+ms.date: 03/28/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
@@ -15,15 +11,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7ecb89ed732af828fb4ca26d123d131f6d1918
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8d751e122d0c9eca23d0349761054d092a438ba8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="common-quick-actions"></a>常见快速操作
 
-此主题的各个部分列出了同时适用于 C# 和 Visual Basic 代码的一些常见快速操作。
+此主题的各个部分列出了同时适用于 C# 和 Visual Basic 代码的一些常见快速操作。 这些操作为 Visual Studio 内置[分析程序规则](../code-quality/roslyn-analyzers-overview.md)的代码修补程序。
 
 ## <a name="actions-that-fix-errors"></a>修复错误的操作
 
@@ -176,7 +172,7 @@ End Function
 
 ## <a name="actions-that-remove-unnecessary-code"></a>删除不必要代码的操作
 
-### <a name="remove-unnecesary-usingsimports"></a>删除不必要的 using/Import
+### <a name="remove-unnecessary-usingsimports"></a>删除不必要的 using/Import
 
 “删除不必要的 using/Import”快速操作将删除当前文件中任何未使用的 `using` 和 `Import` 语句。  选择此项后，将立即删除未使用的命名空间导入。
 
@@ -260,7 +256,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 ## <a name="actions-that-add-missing-code"></a>添加缺失代码的操作
 
-### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>在引用程序集、NuGet 包或解决方案的其他类型中为类型添加 using/Import
+### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>在引用程序集、NuGet 包或解决方案的其他类型中为类型添加 using/import
 
 位于解决方案其他项目中的 using 类型将自动显示快速操作，但其他类型的快速操作则需要从“工具”>“选项”>“C#”或“基本”>“高级”选项卡中启用：
 
@@ -475,7 +471,7 @@ private static int thisFieldIsPublic;
 
 ## <a name="code-transformations"></a>代码转换
 
-### <a name="convert-if-construct-to-switch"></a>将 **if** 构造转换成 **switch**
+### <a name="convert-if-construct-to-switch"></a>将“if”构造转换成“switch”
 
 借助此快速操作，可以将 **if-then-else** 构造转换成 **switch** 构造。
 
@@ -741,7 +737,7 @@ int fibonacci(int n)
 }
 ```
 
-### <a name="convert-referenceequals-to-is-null"></a>将 `ReferenceEquals` 转换为 `is null`
+### <a name="convert-referenceequals-to-is-null"></a>将“ReferenceEquals”转换为“is null”
 
 |  诊断 ID | 适用的语言 |  支持的版本 |
 | ------- | -------------------- | ----------------  |
@@ -959,4 +955,4 @@ Console.WriteLine($"{x} {y}");
 
 ## <a name="see-also"></a>请参阅
 
-[快速操作](../ide/quick-actions.md)  
+[快速操作](../ide/quick-actions.md)

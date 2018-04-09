@@ -1,29 +1,29 @@
 ---
-title: "快速入门 - 在 Visual Studio 中从现有代码创建 Python 项目 | Microsoft Docs"
-description: "通过使用便捷的模板从现有代码中创建 Visual Studio 项目，快速入门 Python。"
-ms.custom: 
+title: 快速入门 - 基于现有代码创建 Python 项目 | Microsoft Docs
+description: 在此快速入门教程中，使用便捷的模板基于现有文件夹创建适合 Python 的 Visual Studio 项目。
+ms.custom: mvc
 ms.date: 01/08/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e8e57fb97b5e792375cefb344306a9bdc71836be
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: b31cda03c2ca233e90e1ba0194d83845805e28f3
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入门：从现有代码创建 Python 项目
+# <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入门：基于现有代码创建 Python 项目
 
 [在 Visual Studio 2017 中安装 Python 支持](installing-python-support-in-visual-studio.md)后，就可以轻松地将现有 Python 代码引入 Visual Studio 项目。
 

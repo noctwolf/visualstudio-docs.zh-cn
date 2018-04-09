@@ -1,15 +1,15 @@
 ---
-title: "在 Visual Studio 中使用 Python - 第 2 步：编写和运行代码 | Microsoft Docs"
-description: "在 Visual Studio 中使用 Python 的核心教程的第 2 步，介绍了如何编辑和运行简单的 Hello World 程序，接着还提供了更有意思的代码，以展示 Visual Studio 的编辑和 IntelliSense 功能。"
-ms.custom: 
+title: 使用 Python - 第 2 步：编写和运行代码 | Microsoft Docs
+description: 在 Visual Studio 中使用 Python 的核心教程的第 2 步，介绍了如何编辑和运行简单的 Hello World 程序，接着还提供了更有意思的代码，以展示 Visual Studio 的编辑和 IntelliSense 功能。
+ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a6efed0adae6a321595af2e58c4db79f0da2f679
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 6045b385754eebfe7b754b9d213f860a199b1824
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>步骤 2：编写和运行代码
 

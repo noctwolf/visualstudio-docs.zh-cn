@@ -1,26 +1,28 @@
 ---
-title: "在 Visual Studio 中编译和生成 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中编译和生成 | Microsoft Docs
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 29101e8e82fa9babf553be17414f1330cd6f7e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d8ae644ee96bdad6520661414d101eede86cf180
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中编译和生成
 
@@ -28,7 +30,7 @@ ms.lasthandoff: 12/22/2017
 
 通过经常生成你的代码，你可以快速识别编译时错误，如不正确的语法、拼错的关键字和类型不匹配项。 还可以通过频繁生成并运行调试版本的代码来快速检测和纠正运行时错误，如逻辑错误和语义错误。  
 
-成功的生成实质上是确认应用程序的源代码包含正确的语法，并且已解决对库、程序集和其他组件的所有静态引用。 这会生成一个应用程序可执行文件，然后可以在[调试环境](../debugger/index.md)中通过各种手动和自动测试[验证代码质量](../test/improve-code-quality.md)，测试该可执行文件以便正常运行。 该应用程序经过完全测试后，你可以编译一个发布版本以部署到你的客户。 有关此过程的简介，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。  
+成功的生成实质上是确认应用程序的源代码包含正确的语法，并且已解决对库、程序集和其他组件的所有静态引用。 这会生成一个应用程序可执行文件，然后可以在[调试环境](../debugger/index.md)中通过各种手动和自动测试[验证代码质量](../test/improve-code-quality.md)，测试该可执行文件以便正常运行。 该应用程序经过完全测试后，你可以编译一个发布版本以部署到你的客户。 要简要了解此过程，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。  
 
 在 Visual Studio 产品系列中，有三种方法可用于生成应用程序：Visual Studio IDE、MSBuild 命令行工具和 Visual Studio Team Services 上的 Team Foundation Build：
  
@@ -42,9 +44,9 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="overview-of-building-from-the-ide"></a>从 IDE 生成的概述  
 
-创建项目时，Visual Studio 创建了该项目的默认生成配置和包含该项目的解决方案。  这些配置定义如何生成和部署解决方案和项目。 尤其是项目配置，对于目标平台（如 Windows 或 Linux）和生成类型（如调试或发布）必须是唯一的。 但是，你可以根据喜好编辑这些配置，也可以根据需要创建自己的配置。
+创建项目时，Visual Studio 创建了该项目的默认生成配置和包含该项目的解决方案。  这些配置定义如何生成和部署解决方案和项目。 尤其对目标平台（如 Windows 或 Linux）和生成类型（如调试或发布）而言，项目配置必须唯一。 但是，你可以根据喜好编辑这些配置，也可以根据需要创建自己的配置。
 
-有关在 IDE 中生成的初次介绍，请参阅[演练：生成应用程序](walkthrough-building-an-application.md)。  
+若要初步了解如何在 IDE 中进行生成，请参阅[演练：生成应用程序](walkthrough-building-an-application.md)。  
 
 接下来，请参阅[在 Visual Studio 中生成和清理项目和解决方案](building-and-cleaning-projects-and-solutions-in-visual-studio.md)，了解你可以对过程进行哪些不同方面的自定义设置。 自定义包括[更改输出目录](how-to-change-the-build-output-directory.md)、[指定自定义生成事件](specifying-custom-build-events-in-visual-studio.md)、[管理项目依赖项](how-to-create-and-remove-project-dependencies.md)、[管理生成日志文件](how-to-view-save-and-configure-build-log-files.md)以及[禁止显示编译器警告](how-to-suppress-compiler-warnings.md)。
 

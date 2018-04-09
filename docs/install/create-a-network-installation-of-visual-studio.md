@@ -1,25 +1,27 @@
 ---
-title: "创建基于网络的 Visual Studio 安装 | Microsoft Docs"
-description: "介绍如何创建用于在企业中部署 Visual Studio 的网络安装点"
+title: 创建基于网络的 Visual Studio 安装 | Microsoft Docs
+description: 介绍如何创建用于在企业中部署 Visual Studio 的网络安装点
 ms.date: 10/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: timsneath
+author: tglee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f5e6c5a94ac4c875922d2da09e9171f4929035f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c85d839c76d272a0a90a37fa16fc812596c3198e
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 的网络安装
 
@@ -128,7 +130,7 @@ ms.lasthandoff: 12/22/2017
 
 如果使用 `--wait` 参数，`%ERRORLEVEL%` 环境变量会设置为下列值之一，具体视操作结果而定：
 
-  | **“值”** | **结果** |
+  | **值** | **结果** |
   | --------- | ---------- |
   | 0 | 操作成功完成 |
   | 3010 | 操作成功完成，但安装需要重启才能使用 |
@@ -143,7 +145,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 > 运行 [VisualStudio.com](http://www.visualstudio.com) 上的 Visual Studio 2017 引导程序时，会下载并安装最新版 Visual Studio 2017。 如果立即下载 Visual Studio 引导程序，并从现在开始运行 6 个月，那么它安装的是后者时间段发行的 Visual Studio 2017 版本。 如果创建布局，那么通过布局安装的是相应布局中的特定 Visual Studio 版本。 即使可能存在更高的联机版本，也只会获取布局中的 Visual Studio 版本。
 
-如果需要为旧版 Visual Studio 2017 创建布局，可以访问 https://my.visualstudio.com，下载“固定”版本的 Visual Studio 2017 引导程序，以获取支持的版本。
+如需创建适合旧版 Visual Studio 2017 的布局，可访问 https://my.visualstudio.com，下载“固定”版本的 Visual Studio 2017 引导程序。
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>如何获取关于脱机安装程序的支持
 

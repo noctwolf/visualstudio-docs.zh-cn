@@ -1,24 +1,24 @@
 ---
-title: "在 Azure 虚拟机上使用 Visual Studio | Microsoft Docs"
-description: "了解如何在 Azure 虚拟机上使用 Visual Studio"
+title: 在 Azure 虚拟机上使用 Visual Studio | Microsoft Docs
+description: 了解如何在 Azure 虚拟机上使用 Visual Studio
 ms.date: 03/03/2018
 ms.technology: vs-acquisition
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - azure services
 - virtual machine; VM
 - installation
 - visual studio
 author: PhilLee-MSFT
-ms.author: phillee
-manager: sacalla
+ms.author: tglee
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4492a35c7d58aa92c2c3e86de5bd6be8f8ad9eca
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 0a7e1a3646e2e30302548f2445b0ab657f8e3ec4
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 使用预配置的 Azure 虚拟机 (VM) 中的 Visual Studio 是从零构建开发环境的一种简单快速的方法。 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1) 中提供了具有不同 Visual Studio 配置的系统映像。
@@ -28,12 +28,13 @@ ms.lasthandoff: 03/08/2018
 ## <a name="what-configurations-and-versions-are-available"></a>提供了哪些可用的配置和版本？
 在 Azure Marketplace 中，可以看到最新主要版本的映像：Visual Studio 2017 和 Visual Studio 2015。 对于每个主要版本，可以看到最初发布的 (RTW) 版本和最新更新的版本。 其中每个版本都提供 Visual Studio Enterprise 和 Visual Studio Community 版本。 这些映像至少每月更新一次，以包含最新的 Visual Studio 和 Windows 更新。 映像的名称保持不变，但每个映像的说明将包含已安装的产品版本和映像的“截至”日期。
 
-| 发行版本              | 版本            | 产品版本     |
-|:-----------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017：最新（版本 15.6） |    Enterprise，Community     |      版本 15.6.0     |
-|         Visual Studio 2017：RTW           |    Enterprise，Community     |      版本 15.0.10    |
-|   Visual Studio 2015：最新 (Update 3)   |    Enterprise，Community     |  版本 14.0.25431.01  |
-|         Visual Studio 2015：RTW           |             无             | （已过维护期限） |
+| 发行版本                                              | 版本                     |     产品版本     |
+|:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
+| Visual Studio 2017：最新（版本 15.6）                    |    Enterprise，Community     |      版本 15.6.4     |
+| Visual Studio 2017：最新预览版（版本 15.7，预览版 3） |    Enterprise，Community     |      版本 15.7.0     |
+|         Visual Studio 2017：RTW                              |    Enterprise，Community     |      版本 15.0.10    |
+|   Visual Studio 2015：最新 (Update 3)                      |    Enterprise，Community     |  版本 14.0.25431.01  |
+|         Visual Studio 2015：RTW                              |             无             | （已过维护期限） |
 
 > [!NOTE]
 > 根据 Microsoft 服务策略，最初发布的 (RTW) Visual Studio 2015 版本已过维护期限。 Visual Studio 2015 Update 3 是 Visual Studio 2015 产品系列仅剩的版本。
@@ -54,7 +55,7 @@ ms.lasthandoff: 03/08/2018
 ```shell
     vs_enterprise.exe --allWorkloads --includeRecommended --passive ^
        add Microsoft.Net.Component.4.7.SDK ^
-       add Microsoft.Net.Component.4.7.TargetingPack ^ 
+       add Microsoft.Net.Component.4.7.TargetingPack ^
        add Microsoft.Net.Component.4.6.2.SDK ^
        add Microsoft.Net.Component.4.6.2.TargetingPack ^
        add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
@@ -75,14 +76,14 @@ Azure 提供一系列完整的虚拟机大小。 因为 Visual Studio 是一个�
    * Standard_D2_v2
    * Standard_D2S_v2
    * Standard_D3_v2
-    
+
 有关最新虚拟机大小的详细信息，请参阅 [Azure 中的 Windows 虚拟机大小](/azure/virtual-machines/windows/sizes)。
 
 在 Azure 中，可以通过调整 VM 的大小重新平衡最初的选择。 可以预配大小更为合适的新 VM，也可以根据不同的基础硬件调整现有 VM 的大小。 有关详细信息，请参阅[调整 Windows VM 大小](/azure/virtual-machines/windows/resize-vm)。
 
 ## <a name="after-the-vm-is-running-whats-next"></a>在 VM 运行后，接下来要做什么？
 Visual Studio 在 Azure 中遵循“自带许可”模型。 与在专有硬件上的安装类似，第一步都包括许可 Visual Studio 安装。 要解锁 Visual Studio，可以：
-- 使用与 Visual Studio 订阅关联的 Microsoft 帐户登录 
+- 使用与 Visual Studio 订阅关联的 Microsoft 帐户登录
 - 使用最初购买时附带的产品密钥解锁 Visual Studio
 
 有关详细信息，请参阅[登录到 Visual Studio](../ide/signing-in-to-visual-studio.md) 和[如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
@@ -93,7 +94,7 @@ Visual Studio 在 Azure 中遵循“自带许可”模型。 与在专有硬件�
 
 简而言之：使用系统准备工具 (Sysprep) 并关闭正在运行的 VM，然后通过 Azure 门户的 UI 来捕获（图 1） VM 作为映像。 Azure 将在你所选的存储帐户中保存包含映像的 `.vhd` 文件。 然后，新映像将在资源订阅列表中显示为映像资源。
 
-<img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*（图 1）通过 Azure 门户 UI 捕获映像*</center>
+<img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>（图 1）通过 Azure 门户 UI 捕获映像</center>
 
 有关详细信息，请参阅[在 Azure 中创建通用化 VM 的托管映像](/azure/virtual-machines/windows/capture-image-resource)。
 
