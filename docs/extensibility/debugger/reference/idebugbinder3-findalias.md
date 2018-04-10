@@ -1,29 +1,29 @@
 ---
-title: "IDebugBinder3::FindAlias |Microsoft 文档"
-ms.custom: 
+title: IDebugBinder3::FindAlias |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - IDebugBinder3::FindAlias
 helpviewer_keywords:
 - IDebugBinder3::FindAlias method
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
-caps.latest.revision: 
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: b88ae0da5f90da45d33ec56169665e9c8430846c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 此方法查找别名，指定一个名称。 这将在程序中搜索所有别名。  
@@ -57,6 +57,6 @@ int FindAlias(
 ## <a name="remarks"></a>备注  
  此方法将目标对象初始化为 null 之前调用;然后，它测试有空值以确定已找到别名。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

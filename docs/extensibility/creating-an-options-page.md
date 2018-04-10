@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: d0888a584e31c26c9f64cdcff70cc2f5dc8a1453
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-an-options-page"></a>创建选项页
 本演练创建一个简单工具/选项页面属性网格用于检查和设置属性。  
@@ -246,7 +246,7 @@ ms.lasthandoff: 12/22/2017
   
     ```  
   
-     此代码调用<xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A>创建或检索`OptionPageGrid`实例。 `OptionPageGrid`调用<xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A>加载其选项，它们为公共属性。  
+     此代码调用<xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A>创建或检索`OptionPageGrid`实例。 `OptionPageGrid` 调用<xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A>加载其选项，它们为公共属性。  
   
 2.  现在，添加名为的自定义命令项模板**MyToolsOptionsCommand**显示的值。 在**添加新项**对话框中，转到**Visual C# / 可扩展性**和选择**自定义命令**。 在**名称**在窗口底部字段中，命令文件名称更改为**MyToolsOptionsCommand.cs**。  
   
@@ -267,5 +267,5 @@ ms.lasthandoff: 12/22/2017
   
      一个消息框显示的当前值`OptionInteger`。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [选项和选项页](../extensibility/internals/options-and-options-pages.md)

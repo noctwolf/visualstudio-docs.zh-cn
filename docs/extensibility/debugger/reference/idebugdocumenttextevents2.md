@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2 |Microsoft 文档
+title: IDebugDocumentTextEvents2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb9e284435cdf8a5905e068b0044cd118a1621c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 使用此接口来通知 Visual Studio 的调试引擎提供对源文档的更改。  
@@ -38,7 +38,7 @@ IDebugDocumentTextEvents2 : IUnknown
  DE 实现此接口以支持对源代码进行更改。 实现对同一个对象通常实现此接口[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]获取通过调用此接口<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>接口从调用中获取<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>接口通过调用获取[QueryInterface](/cpp/atl/queryinterface)方法[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)接口。  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 获取通过调用此接口<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>接口从调用中获取<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>接口通过调用获取[QueryInterface](/cpp/atl/queryinterface)方法[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)接口。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDebugDocumentTextEvents2`。  
@@ -55,13 +55,13 @@ IDebugDocumentTextEvents2 : IUnknown
 ## <a name="remarks"></a>备注  
  仅提供自己的文档的调试引擎将利用`IDebugDocumentTextEvent2`接口。 此示例将脚本的调试引擎。 过程中解释脚本，新的源代码可以生成不存在任何磁盘文件中，仅对 DE 已知。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

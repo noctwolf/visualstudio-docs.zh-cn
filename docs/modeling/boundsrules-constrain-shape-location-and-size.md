@@ -1,9 +1,9 @@
 ---
-title: "BoundsRules 约束形状位置和大小 |Microsoft 文档"
-ms.custom: 
+title: BoundsRules 约束形状位置和大小 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, events
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c672cbc25c28bf4d74f01160212584875b51ba1a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules 约束形状位置和大小
 A*边界规则*是一个类，它定义的大小和形状的位置上的限制。 它提供的用户正在拖动形状或角或两边的形状时重复调用的方法。  
@@ -66,6 +66,6 @@ public class BarBoundsRule: BoundsRules
   
  请注意是否你想，可以约束的位置和大小。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>   
  [响应并传播更改](../modeling/responding-to-and-propagating-changes.md)

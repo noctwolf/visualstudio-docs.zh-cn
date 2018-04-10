@@ -1,10 +1,10 @@
 ---
-title: "使用 WPF 和 Entity Framework 6 中创建一个简单的数据应用程序 |Microsoft 文档"
-ms.custom: 
+title: 使用 WPF 和 Entity Framework 6 中创建一个简单的数据应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -15,10 +15,10 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 中创建一个简单的数据应用程序
 
@@ -118,7 +118,7 @@ ms.lasthandoff: 01/23/2018
         </Grid.RowDefinitions>
     ```
 
-5.  现在，以便你在设计器中查看它，打开 MainWindow.xaml。 这将导致数据源窗口显示为工具箱旁边的 Visual Studio 窗口距中的一个选项。 单击选项卡以打开窗口，或其他按**Shift + Alt + D**或选择**视图 &#124;其他 Windows &#124;数据源**。 我们将显示在其自己的单个文本框中的客户类中的每个属性。 第一次单击客户组合框中的箭头，然后选择**详细信息**。 然后，将节点拖到的中间部分的设计图面上，以便设计器知道你希望转中间行中。  如果你忘记放置位置，你可以手动更高版本在 XAML 中指定的行。 默认情况下这些控件都将置于垂直 grid 元素，但此时你可以按任何方式排列希望窗体上。  例如，可能会有用置于顶部，地址上面的名称文本框。 本文的示例应用程序对字段重新排序和重新为两列排列它们。  
+5.  现在，以便你在设计器中查看它，打开 MainWindow.xaml。 这将导致数据源窗口显示为工具箱旁边的 Visual Studio 窗口距中的一个选项。 单击选项卡以打开窗口，或其他按**Shift + Alt + D**或选择**视图&#124;其他窗口&#124;数据源**。 我们将显示在其自己的单个文本框中的客户类中的每个属性。 第一次单击客户组合框中的箭头，然后选择**详细信息**。 然后，将节点拖到的中间部分的设计图面上，以便设计器知道你希望转中间行中。  如果你忘记放置位置，你可以手动更高版本在 XAML 中指定的行。 默认情况下这些控件都将置于垂直 grid 元素，但此时你可以按任何方式排列希望窗体上。  例如，可能会有用置于顶部，地址上面的名称文本框。 本文的示例应用程序对字段重新排序和重新为两列排列它们。  
   
      ![为单个控件的客户数据源绑定](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "raddata 客户数据源绑定到单独的控件")  
   

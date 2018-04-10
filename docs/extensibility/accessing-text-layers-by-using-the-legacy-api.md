@@ -1,27 +1,27 @@
 ---
-title: "通过使用旧版 API 访问文本层 |Microsoft 文档"
-ms.custom: 
+title: 通过使用旧版 API 访问文本层 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text layers
 ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a5f7a80e8d594f3c9e62ecd2047cc1116948d2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>通过使用旧版 API 访问文本层
 文本层通常封装文本布局的某些方面。 例如，"函数的每一次的"层隐藏的文本之前和之后包含脱字号 （文本插入点） 的函数。  
@@ -51,7 +51,7 @@ ms.lasthandoff: 12/22/2017
   
 -   除了<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>，文本层必须实现<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>并激发中的事件<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>接口。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [语法着色中自定义编辑器](../extensibility/syntax-coloring-in-custom-editors.md)   
  [使用文本标记用于旧 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [使用旧版 API 自定义编辑器控件和菜单](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)

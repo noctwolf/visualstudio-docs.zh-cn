@@ -1,27 +1,27 @@
 ---
-title: "创建设置类别 |Microsoft 文档"
-ms.custom: 
+title: 创建设置类别 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-caps.latest.revision: 
+caps.latest.revision: 39
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2bdf3231f2df8b3700c7865fa53e60003b814a5f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-a-settings-category"></a>创建设置类别
 在本演练中，通过创建 Visual Studio 设置类别，并通过使用它来保存到的值，并从设置文件还原值。 设置类别是一组显示为"自定义设置点;"的相关属性的也就是说，作为处于的复选框**导入和导出设置**向导。 (你可找到该**工具**菜单。)保存或还原为类别，设置和单个设置不会显示在该向导。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  打开 VSPackage.resx 文件并添加以下三个字符串资源：  
   
-    |name|“值”|  
+    |名称|值|  
     |----------|-----------|  
     |106|我类别|  
     |107|我的设置|  

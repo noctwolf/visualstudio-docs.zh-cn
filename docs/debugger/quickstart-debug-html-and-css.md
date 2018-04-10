@@ -1,12 +1,12 @@
 ---
-title: "在 UWP 应用中进行调试 HTML 和 CSS |Microsoft 文档"
-ms.custom: 
+title: 在 UWP 应用中进行调试 HTML 和 CSS |Microsoft 文档
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-caps.latest.revision: 
+caps.latest.revision: 101
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - uwp
 ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 应用中进行调试 HTML 和 CSS
   
@@ -165,7 +165,7 @@ ms.lasthandoff: 01/19/2018
   
 11. 在“DOM 资源管理器”窗口中，选择 ID 为 `"fView"`的部分的 DIV 元素。 使用箭头键可以查看并选择正确的 DIV 元素。 （使用右键头键可以查看元素的子元素。）  
   
-     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![DOM 资源管理器](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  你还可以选择此 DIV 元素在 JavaScript 控制台窗口的左下角中通过键入`select(fView)`在 >> 输入提示符，然后按 enter 键。  
@@ -259,7 +259,7 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 >  指针悬停在元素上方时突出显示的元素在 Windows Phone 模拟器中仅部分受支持。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [调试 WebView 控件](../debugger/debug-a-webview-control.md)   

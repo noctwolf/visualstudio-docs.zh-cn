@@ -1,12 +1,12 @@
 ---
-title: "&lt;部署&gt;元素 （ClickOnce 部署） |Microsoft 文档"
-ms.custom: 
+title: '&lt;部署&gt;元素 （ClickOnce 部署） |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
@@ -22,17 +22,17 @@ dev_langs:
 helpviewer_keywords:
 - <deployment> element [ClickOnce deployment manifest]
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
-caps.latest.revision: 
+caps.latest.revision: 30
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 0caff13f84208152b3fa2ff4e56a7a2c7f0b6dd7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;部署&gt;元素 （ClickOnce 部署）
 标识用于部署更新并向系统公开的特性。  
@@ -70,7 +70,7 @@ ms.lasthandoff: 12/22/2017
 |---------------|-----------------|  
 |`install`|必须的。 指定此应用程序是否在 Windows 上定义存在性**启动**菜单和控制面板中**添加或删除程序**应用程序。 有效值为 `true` 和 `false`。 如果`false`，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]始终将从网络中，运行此应用程序的最新版本并将无法识别`subscription`元素。|  
 |`minimumRequiredVersion`|可选。 指定可在客户端运行此应用程序的最低版本。 如果应用程序的版本号小于部署清单中提供的版本号，将不会运行该应用程序。 版本号必须指定格式`N.N.N.N`，其中`N`是无符号的整数。 如果`install`属性是`false`，`minimumRequiredVersion`不能设置。|  
-|`mapFileExtensions`|可选。 默认为 `false`。 如果`true`，部署中的所有文件必须都具有.deploy 扩展名。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将关闭这些文件中剥离此扩展，只要它从 Web 服务器下载它们。 如果使用发布你的应用程序[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，它自动将此扩展添加到的所有文件。 此参数允许内的所有文件[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署从筛选器阻止传输文件等.exe"不安全的"扩展中的 Web 服务器下载。|  
+|`mapFileExtensions`|可选。 默认为 `false`。 如果`true`，部署中的所有文件必须都具有.deploy 扩展名。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 将关闭这些文件中剥离此扩展，只要它从 Web 服务器下载它们。 如果使用发布你的应用程序[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，它自动将此扩展添加到的所有文件。 此参数允许内的所有文件[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署从筛选器阻止传输文件等.exe"不安全的"扩展中的 Web 服务器下载。|  
 |`disallowUrlActivation`|可选。 默认为 `false`。 如果`true`，阻止从正在通过单击的 URL 或 Internet 资源管理器中输入 URL 来启动已安装应用程序。 如果`install`属性不存在，则忽略此属性。|  
 |`trustURLParameters`|可选。 默认为 `false`。 如果`true`、 允许 URL 包含到应用程序传递的查询字符串参数、 多 like 的命令行自变量传递给命令行应用程序。 有关详细信息，请参阅[如何： 在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。<br /><br /> 如果`disallowUrlActivation`属性是`true`，`trustUrlParameters`必须为排除从清单，或者显式设置为`false`。|  
   
@@ -80,15 +80,15 @@ ms.lasthandoff: 12/22/2017
  可选。 包含`update`元素。 `subscription`元素没有任何特性。 如果`subscription`元素不存在，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序将永远不会扫描更新。 如果`install`属性`deployment`元素是`false`、`subscription`元素被忽略，因为[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]始终启动从网络应用程序使用的最新版本。  
   
 ## <a name="update"></a>更新  
- 必须的。 此元素是的子级`subscription`元素，它包含`beforeApplicationStartup`或`expiration`元素。 `beforeApplicationStartup`和`expiration`无法同时指定相同的部署清单中。  
+ 必须的。 此元素是的子级`subscription`元素，它包含`beforeApplicationStartup`或`expiration`元素。 `beforeApplicationStartup` 和`expiration`无法同时指定相同的部署清单中。  
   
  `update`元素没有任何特性。  
   
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
- 可选。 此元素是的子级`update`元素且不具有特性。 当`beforeApplicationStartup`元素存在，该应用程序将被阻止时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]检查更新，如果客户端处于联机状态。 如果此元素不存在，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将根据为指定的值的更新会先扫描`expiration`元素。 `beforeApplicationStartup`和`expiration`无法同时指定相同的部署清单中。  
+ 可选。 此元素是的子级`update`元素且不具有特性。 当`beforeApplicationStartup`元素存在，该应用程序将被阻止时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]检查更新，如果客户端处于联机状态。 如果此元素不存在，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将根据为指定的值的更新会先扫描`expiration`元素。 `beforeApplicationStartup` 和`expiration`无法同时指定相同的部署清单中。  
   
 ## <a name="expiration"></a>过期  
- 可选。 此元素是的子级`update`元素，并没有任何子级。 `beforeApplicationStartup`和`expiration`无法同时指定相同的部署清单中。 后，就会执行更新检查检测到更新的版本，最新版本将缓存的现有版本运行时。 在下一步启动然后安装新版本[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
+ 可选。 此元素是的子级`update`元素，并没有任何子级。 `beforeApplicationStartup` 和`expiration`无法同时指定相同的部署清单中。 后，就会执行更新检查检测到更新的版本，最新版本将缓存的现有版本运行时。 在下一步启动然后安装新版本[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
   
  `expiration`元素支持下列属性。  
   
@@ -127,5 +127,5 @@ ms.lasthandoff: 12/22/2017
   </deployment>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)

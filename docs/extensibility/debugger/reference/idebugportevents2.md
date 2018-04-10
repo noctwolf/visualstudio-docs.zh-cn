@@ -1,29 +1,29 @@
 ---
-title: "IDebugPortEvents2 |Microsoft 文档"
-ms.custom: 
+title: IDebugPortEvents2 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - IDebugPortEvents2
 helpviewer_keywords:
 - IDebugPortEvents2 interface
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
-caps.latest.revision: 
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a5782f0a50ac37b45c4b7e3402bcdded96b4683
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 此接口通知的过程和程序创建和析构特定端口上的侦听器 （通常会话调试管理器 [SDM] 或调试引擎）。 此信息可以用于显示的进程和在端口上运行的程序的实时视图。  
@@ -48,17 +48,17 @@ IDebugPortEvents2 : IUnknown
 |[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|将发送描述的创建和析构的进程和程序的端口上的事件。|  
   
 ## <a name="remarks"></a>备注  
- `IDebugPortEvents2`此外可通过 SDM 调试正在调试的进程中运行的程序。  
+ `IDebugPortEvents2` 此外可通过 SDM 调试正在调试的进程中运行的程序。  
   
  此接口由传递给 SDM 端口事件。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

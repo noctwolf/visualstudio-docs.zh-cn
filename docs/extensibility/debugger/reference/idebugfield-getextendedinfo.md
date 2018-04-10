@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetExtendedInfo |Microsoft 文档
+title: IDebugField::GetExtendedInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: c6b2aaa953e47366e7a99fb5a821f530d37ed66e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 此方法获取扩展有关的某个字段的信息。  
@@ -50,7 +50,7 @@ int GetExtendedInfo(
  `guidExtendedInfo`  
  [in]选择要返回的信息。 有效值为：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |`guidConstantValue`|为一个字节序列的值。|  
 |`guidConstantType`|类型签名形式的类型。|  
@@ -67,5 +67,5 @@ int GetExtendedInfo(
 ## <a name="remarks"></a>备注  
  目前，此方法仅返回类型或常量的值。 调用方必须释放中返回的缓冲区`prgBuffer`通过调用 COM 的`CoTaskMemFree`函数 （c + +） 或<xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>(C#)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

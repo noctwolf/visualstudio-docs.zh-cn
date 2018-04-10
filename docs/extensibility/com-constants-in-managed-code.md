@@ -1,27 +1,27 @@
 ---
-title: "在托管代码中的 COM 常量 |Microsoft 文档"
-ms.custom: 
+title: 在托管代码中的 COM 常量 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
-caps.latest.revision: 
+caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: ca950fb5be94dc75ca038db4c109f5a46c6b2c0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="com-constants-in-managed-code"></a>在托管代码中的 COM 常量
 托管包框架 (MPF) 使某些标准的 COM 常量提供给托管代码。 供您参考下面列出了这些常量。  
@@ -132,5 +132,5 @@ ms.lasthandoff: 12/22/2017
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [错误处理和返回值](../extensibility/error-handling-and-return-values.md)

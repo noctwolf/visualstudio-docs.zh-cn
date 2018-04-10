@@ -1,12 +1,12 @@
 ---
-title: "“项目设计器”->“发布”页 | Microsoft Docs"
-ms.custom: 
+title: “项目设计器”->“发布”页 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
@@ -19,10 +19,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d9f050662ed38814920e17b36f77bf6795aabfa9
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="publish-page-project-designer"></a>“项目设计器”->“发布”页
 “项目设计器”  上的“发布”  页面用于针对 ClickOnce 部署配置属性。  
@@ -70,7 +70,7 @@ ms.lasthandoff: 02/12/2018
  **立即发布**  
  使用当前设置发布应用程序。 等效于“发布向导”中的“完成”按钮。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [发布 ClickOnce 应用程序](../../deployment/publishing-clickonce-applications.md)   
  [如何：使用发布向导发布 ClickOnce 应用程序](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [如何：指定 Visual Studio 复制文件的位置](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

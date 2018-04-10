@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 165f973fa9139f281211e6b01167b3d7044166df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 调试引擎 (DE) 使用此接口来将调试事件发送到会话调试管理器 (SDM)。  
@@ -35,7 +35,7 @@ IDebugEventCallback2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>实施者注意事项  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]实现此接口可从调试引擎接收事件。  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 实现此接口可从调试引擎接收事件。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  调试引擎通常接收此接口，当 SDM 调用[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)，[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)，或[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)。 调试引擎通过调用将事件发送至 SDM[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
@@ -52,14 +52,14 @@ IDebugEventCallback2 : IUnknown
   
  如果包实现[IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md)在托管代码中，强烈建议，<xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A>传递给在各种接口上调用[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)   

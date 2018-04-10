@@ -1,29 +1,29 @@
 ---
-title: "IDebugErrorEvent2::GetErrorMessage |Microsoft 文档"
-ms.custom: 
+title: IDebugErrorEvent2::GetErrorMessage |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - IDebugErrorEvent2::GetErrorMessage
 helpviewer_keywords:
 - IDebugErrorEvent2::GetErrorMessage
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
-caps.latest.revision: 
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 06ffcbaf1266f017b75e6c3662300096b534e209
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 返回允许构造的用户可读错误消息的信息。  
@@ -77,6 +77,6 @@ int GetErrorMessage(
 ## <a name="remarks"></a>备注  
  错误消息的格式应沿行`"What I was doing.  %1"`。 `"%1"`应该然后用来替换由调用方派生自的错误代码的错误消息 (在返回的这`hrErrorReason`)。 `pMessageType`参数指示调用方应如何显示最终的错误消息。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

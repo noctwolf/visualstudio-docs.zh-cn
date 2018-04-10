@@ -1,12 +1,12 @@
 ---
-title: "如何： 管理 ClickOnce 应用程序的更新 |Microsoft 文档"
-ms.custom: 
+title: 如何： 管理 ClickOnce 应用程序的更新 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -20,20 +20,20 @@ helpviewer_keywords:
 - updating data, ClickOnce
 - application updates
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>如何：管理 ClickOnce 应用程序的更新
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序可以自动或以编程方式检查更新。 作为开发人员，您可以非常灵活地指定何时以及如何执行更新检查、 是否强制进行更新和应用程序应检查更新。  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序可以自动或以编程方式检查更新。 作为开发人员，您可以非常灵活地指定何时以及如何执行更新检查、 是否强制进行更新和应用程序应检查更新。  
   
  你可以配置要在应用程序启动后检查更新自动前在应用程序启动，或在设置的时间间隔的应用程序。 此外可以指定最小所需的版本;也就是说，如果用户的版本低于所需版本，则会安装更新。  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  在**应用程序更新**对话框框中，请确保**应用程序应检查更新**复选框处于选中状态。  
   
-5.  在**更新位置**字段中，输入具有完全限定的 URL，使用格式 http://Hostname/ApplicationName 或使用格式的 UNC 路径的更新位置\\\Server\ApplicationName，或单击**浏览**按钮以浏览的更新位置。  
+5.  在**更新位置**字段中，输入具有完全限定的 URL，使用格式的更新位置http://Hostname/ApplicationName，或使用格式的 UNC 路径\\\Server\ApplicationName 或单击**浏览**按钮以浏览的更新位置。  
   
 ### <a name="to-check-for-updates-programmatically"></a>若要以编程方式检查更新  
   
@@ -105,13 +105,13 @@ ms.lasthandoff: 12/22/2017
   
 4.  在**应用程序更新**对话框框中，请确保**应用程序应检查更新**清除复选框。 （或者，你可以选中此复选框可检查更新，以编程方式，同时让 ClickOnce 运行时自动检查更新。）  
   
-5.  在**更新位置**字段中，输入具有完全限定的 URL，使用格式 http://Hostname/ApplicationName 或使用格式的 UNC 路径的更新位置\\\Server\ApplicationName，或单击**浏览**按钮以浏览的更新位置。 更新位置是应用程序将寻找本身的更新版本。  
+5.  在**更新位置**字段中，输入具有完全限定的 URL，使用格式的更新位置http://Hostname/ApplicationName，或使用格式的 UNC 路径\\\Server\ApplicationName 或单击**浏览**按钮以浏览的更新位置。 更新位置是应用程序将寻找本身的更新版本。  
   
 6.  用户将选择检查更新为 Windows 窗体上创建一个按钮、 菜单项或其他用户界面项。 从该项的事件处理程序，调用方法，以检查和安装更新。 中的此类的方法，可查找的 Visual Basic 和 Visual C# 代码示例[如何： 检查应用程序更新以编程方式使用 ClickOnce 部署 API](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)。  
   
 7.  生成你的应用程序。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Deployment.Application.ApplicationDeployment>   
  [应用程序更新对话框](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
  [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   

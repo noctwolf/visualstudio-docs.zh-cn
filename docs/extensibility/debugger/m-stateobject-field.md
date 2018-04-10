@@ -1,32 +1,32 @@
 ---
-title: "m_stateObject 字段 |Microsoft 文档"
-ms.custom: 
+title: m_stateObject Field | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - m_stateObject field, Task class [.NET Framework debug engines]
 ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
-caps.latest.revision: 
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9638be7b2f3f3a6c235a4768cdb493fea701a4dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="mstateobject-field"></a>m_stateObject 字段
 一个表示操作将使用的数据的对象。  
   
- **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **程序集：** mscorlib （mscorlib.dll) 中  
   
@@ -41,5 +41,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="remarks"></a>备注  
  这是`state`中的参数<xref:System.Threading.Tasks.Task.%23ctor%2A>构造函数。 它也是供后备字段<xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName>属性。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [任务类](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,27 +1,27 @@
 ---
-title: ".NET framework 的并行扩展内部 |Microsoft 文档"
-ms.custom: 
+title: .NET framework 的并行扩展内部 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - debug engines, internals [.NET Framework]
 ms.assetid: 93e07cfa-91fa-464c-b866-8bf5570411df
-caps.latest.revision: 
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4cc64270cabb3e30ee3c13a1617222349e7b3677
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>.NET framework 的并行扩展内部机制
 本部分介绍了内部类型、 方法和字段的类，用于帮助你实现一个自定义的.NET framework 的并行扩展的调试器。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 12/22/2017
  [AsyncVoidMethodBuilder 结构](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md)  
  内部成员进行了说明<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>结构。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
  [Visual Studio 调试器扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)   

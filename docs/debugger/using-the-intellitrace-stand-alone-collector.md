@@ -1,29 +1,29 @@
 ---
-title: "使用 IntelliTrace 独立收集器 |Microsoft 文档"
-ms.custom: 
+title: 使用 IntelliTrace 独立收集器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
 helpviewer_keywords:
 - IntelliTrace, debugging applications in production
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
-caps.latest.revision: 
+caps.latest.revision: 105
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 独立收集器
 **IntelliTrace 独立收集器** 可让你收集生产服务器或其他环境中应用的 IntelliTrace 诊断数据，而无需在目标计算机上安装 Visual Studio 或更改目标系统环境。 IntelliTrace 独立收集器可用于 Web、SharePoint、WPF 和 Windows 窗体应用中。 数据收集完毕后，只需删除收集器以进行卸载。  
@@ -100,7 +100,7 @@ ms.lasthandoff: 12/22/2017
   
         1.  复制以下文件夹中的 IntelliTraceCollection.cab：  
   
-             **..\Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
+             **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
   
         2.  将 IntelliTraceCollection.cab 放在收集器目录中，如： **C:\IntelliTraceCollector**  
   
@@ -121,21 +121,21 @@ ms.lasthandoff: 12/22/2017
   
 1.  在您的应用程序服务器上以管理员身份打开命令提示符窗口。  
   
-2.  使用 Windows **icacls** 命令授予服务器管理员访问收集器目录的完全权限。 例如:  
+2.  使用 Windows **icacls** 命令授予服务器管理员访问收集器目录的完全权限。 例如：  
   
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >*`":F`  
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`  
   
 3.  要收集 Web 应用或 SharePoint 应用程序中的数据，请：  
   
     1.  向将运行 IntelliTrace PowerShell cmdlet 的人员授予访问收集器目录的完全权限。  
   
-         例如:  
+         例如：  
   
-         `icacls "C:\IntelliTraceCollector" /grant "`*\<域 \ 用户 id >*`":F`  
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`  
   
     2.  授予 Web 应用或 SharePoint 应用程序的应用程序池对收集器目录的读取和执行权限。  
   
-         例如:  
+         例如：  
   
         -   对于“DefaultAppPool”  应用程序池中的 Web 应用：  
   
@@ -165,7 +165,7 @@ ms.lasthandoff: 12/22/2017
   
     2.  在 PowerShell 命令窗口，使用 **导入模块** 命令导入 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**。  
   
-         例如:  
+         例如：  
   
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`  
   
@@ -183,7 +183,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  针对 Web 应用或 SharePoint 应用程序，授予其应用程序池对 .iTrace 文件目录的完全权限。 你可以使用 Windows **icacls** 命令或使用 Windows 资源管理器（或文件资源管理器）。  
   
-     例如:  
+     例如：  
   
     -   要使用 Windows **icacls** 命令设置权限，请：  
   
@@ -217,7 +217,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  要开始收集数据，首先以管理员身份打开 PowerShell 命令窗口，然后运行此命令：  
   
-     `Start-IntelliTraceCollection``"`  *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*  
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*  
   
     > [!IMPORTANT]
     >  运行此命令后，键入“Y”  确认你希望开始收集数据。  
@@ -229,7 +229,7 @@ ms.lasthandoff: 12/22/2017
     |||  
     |-|-|  
     |*应用程序池*|应用程序运行的应用程序池名|  
-    |*收集计划路径*|收集计划路径，配置收集器设置的 .xml 文件。<br /><br /> 你可指定收集器附带的一个计划。 以下计划适合 Web 应用和 SharePoint 应用程序：<br /><br /> -collection_plan.asp.net.default.xml 更慢<br />     仅收集 IntelliTrace 事件和 SharePoint 事件，包括异常、数据库调用及 Web 服务器请求。<br />-collection_plan.ASP.NET.trace.xml<br />     收集 collection_plan.ASP.NET.default.xml 中的函数调用及所有数据。 该计划非常适合进行详细分析，但其可能导致你的应用速度比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 为避免应用速度变慢，自定义这些计划或创建自己的计划。 为安全起见，将所有自定义计划放在收集器文件所在的同一安全位置。 请参阅 [创建并自定义 IntelliTrace 收集计划](http://go.microsoft.com/fwlink/?LinkId=227871) 和 [如何在应用速度不减的前提下获取最多的数据？](#Minimizing) **注意：**默认情况下，.iTrace 文件的最大大小为 100 MB。 当.iTrace 文件达到此限制时，收集器会删除文件的最早的条目，以便为较新的项让出空间。 若要更改此上限，编辑收集计划的`MaximumLogFileSize`属性。 <br /><br /> *从何处可找到这些收集计划的本地版本？*<br /><br /> 可在收集器子文件夹中找到本地计划。|  
+    |*收集计划路径*|收集计划路径，配置收集器设置的 .xml 文件。<br /><br /> 你可指定收集器附带的一个计划。 以下计划适合 Web 应用和 SharePoint 应用程序：<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     仅收集 IntelliTrace 事件和 SharePoint 事件，包括异常、数据库调用及 Web 服务器请求。<br />-   collection_plan.ASP.NET.trace.xml<br />     收集 collection_plan.ASP.NET.default.xml 中的函数调用及所有数据。 该计划非常适合进行详细分析，但其可能导致你的应用速度比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 为避免应用速度变慢，自定义这些计划或创建自己的计划。 为安全起见，将所有自定义计划放在收集器文件所在的同一安全位置。 请参阅 [创建并自定义 IntelliTrace 收集计划](http://go.microsoft.com/fwlink/?LinkId=227871) 和 [如何在应用速度不减的前提下获取最多的数据？](#Minimizing) **注意：**默认情况下，.iTrace 文件的最大大小为 100 MB。 当.iTrace 文件达到此限制时，收集器会删除文件的最早的条目，以便为较新的项让出空间。 若要更改此上限，编辑收集计划的`MaximumLogFileSize`属性。 <br /><br /> *从何处可找到这些收集计划的本地版本？*<br /><br /> 可在收集器子文件夹中找到本地计划。|  
     |*跟踪文件目录的完整路径*|跟踪 .iTrace 文件目录的完整路径。 **安全说明：**提供完整路径，而不是相对路径。|  
   
      收集器连接到应用程序池并开始收集数据。  
@@ -240,7 +240,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  要获得 .iTrace 文件的快照，请使用该语法：  
   
-     `Checkpoint-IntelliTraceCollection``"`  *\<ApplicationPool >*`"`  
+     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`  
   
 4.  要检查收集状态，请使用该语法：  
   
@@ -248,7 +248,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  要停止收集数据，请使用该语法：  
   
-     `Stop-IntelliTraceCollection``"`  *\<ApplicationPool >*`"`  
+     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`  
   
     > [!IMPORTANT]
     >  运行此命令后，键入“Y”  确认你希望停止收集数据。 否则，收集器可能会继续收集数据、iTrace 文件将继续处于锁定状态或文件中可能包含一些无用的数据。  
@@ -259,7 +259,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  要同时启动应用并收集数据，请使用该语法：  
   
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:`  *\<PathToCollectionPlan >* `/f:`  *\<FullPathToITraceFileDirectoryAndFileName >*  *\<PathToAppExecutableFileAndFileName >*  
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*  
   
      如，要收集名为 **MyApp**的应用中的数据，请：  
   
@@ -268,7 +268,7 @@ ms.lasthandoff: 12/22/2017
     |||  
     |-|-|  
     |*IntelliTrace 收集器可执行文件完整路径*|收集器可执行文件的完整路径，IntelliTraceSC.exe|  
-    |*收集计划路径*|收集计划路径，配置收集器设置的 .xml 文件。<br /><br /> 你可指定收集器附带的一个计划。 以下计划适合托管应用：<br /><br /> -collection_plan.asp.net.default.xml 更慢<br />     仅收集 IntelliTrace 事件，包括异常、数据库调用及 Web 服务器请求。<br />-collection_plan.ASP.NET.trace.xml<br />     收集 collection_plan.ASP.NET.default.xml 中的函数调用及所有数据。 该计划非常适合进行详细分析，但其可能导致你的应用速度比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 为避免应用速度变慢，自定义这些计划或创建自己的计划。 为安全起见，将所有自定义计划放在收集器文件所在的同一安全位置。 请参阅 [创建并自定义 IntelliTrace 收集计划](http://go.microsoft.com/fwlink/?LinkId=227871) 和 [如何在应用速度不减的前提下获取最多的数据？](#Minimizing) **注意：**默认情况下，.iTrace 文件的最大大小为 100 MB。 当.iTrace 文件达到此限制时，收集器会删除文件的最早的条目，以便为较新的项让出空间。 若要更改此上限，编辑收集计划的`MaximumLogFileSize`属性。 <br /><br /> *从何处可找到这些收集计划的本地版本？*<br /><br /> 可在收集器子文件夹中找到本地计划。|  
+    |*收集计划路径*|收集计划路径，配置收集器设置的 .xml 文件。<br /><br /> 你可指定收集器附带的一个计划。 以下计划适合托管应用：<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     仅收集 IntelliTrace 事件，包括异常、数据库调用及 Web 服务器请求。<br />-   collection_plan.ASP.NET.trace.xml<br />     收集 collection_plan.ASP.NET.default.xml 中的函数调用及所有数据。 该计划非常适合进行详细分析，但其可能导致你的应用速度比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 为避免应用速度变慢，自定义这些计划或创建自己的计划。 为安全起见，将所有自定义计划放在收集器文件所在的同一安全位置。 请参阅 [创建并自定义 IntelliTrace 收集计划](http://go.microsoft.com/fwlink/?LinkId=227871) 和 [如何在应用速度不减的前提下获取最多的数据？](#Minimizing) **注意：**默认情况下，.iTrace 文件的最大大小为 100 MB。 当.iTrace 文件达到此限制时，收集器会删除文件的最早的条目，以便为较新的项让出空间。 若要更改此上限，编辑收集计划的`MaximumLogFileSize`属性。 <br /><br /> *从何处可找到这些收集计划的本地版本？*<br /><br /> 可在收集器子文件夹中找到本地计划。|  
     |*.iTrace文件目录及文件名完整路径*|.iTrace 文件目录及包含 **.itrace** 扩展名的 .iTrace 文件名的完整路径。 **安全说明：**提供完整路径，而不是相对路径。|  
     |*应用可执行文件及文件名路径*|托管应用的路径及文件名|  
   
