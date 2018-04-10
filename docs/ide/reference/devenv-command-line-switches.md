@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio devenv 命令行开关 | Microsoft Docs"
+title: Visual Studio devenv 命令行开关 | Microsoft Docs
 ms.date: 02/28/2018
 ms.technology: vs-ide-general
 ms.topic: article
@@ -66,7 +66,7 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
 |[/Log](../../ide/reference/log-devenv-exe.md)|启动 Visual Studio 并将所有活动记录到日志文件中。|
 |[/Run 或 /r](../../ide/reference/run-devenv-exe.md)|编译并运行指定的解决方案。|
 |[/Runexit](../../ide/reference/runexit-devenv-exe.md)|编译并运行指定的解决方案，在运行该解决方案时最小化 IDE，并在解决方案完成运行后关闭 IDE。|
-|[/UseEnv](../../ide/reference/useenv-devenv-exe.md)|使 IDE 使用 PATH、INCLUDE 和 LIB 环境变量进行 C++ 编译，而不是使用“选项”对话框中“项目”选项的“VC++ 目录”节中指定的设置。 此开关与使用 C++ 的桌面开发工作负载一起安装。 有关更多信息，请参阅 [Setting the Path and Environment Variables for Command-Line Builds](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds)。|
+|[/UseEnv](../../ide/reference/useenv-devenv-exe.md)|使 IDE 使用 PATH、INCLUDE 和 LIB 环境变量进行 C++ 编译，而不是使用“选项”对话框中“项目”选项的“VC++ 目录”节中指定的设置。 此开关与使用 C++ 的桌面开发工作负载一起安装。 有关更多信息，请参阅 [为命令行生成设置路径和环境变量](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds)。|
 |[/Edit](../../ide/reference/edit-devenv-exe.md)|在此应用程序的运行实例中打开指定的文件。 如果没有正在运行的实例，它启动具有简化的窗口布局的新实例。|
 |[/SafeMode](../../ide/reference/safemode-devenv-exe.md)|以安全模式启动 Visual Studio，并仅加载默认的环境和服务以及第三方包的发布版。|
 |[/ResetSkipPkgs](../../ide/reference/resetskippkgs-devenv-exe.md)|清除用户因希望避免加载有问题的 VSPackage 而添加到 VSPackage 中的所有 SkipLoading 标记。|
