@@ -1,9 +1,9 @@
 ---
-title: "T4 参数指令 |Microsoft 文档"
-ms.custom: 
+title: T4 参数指令 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f44e25f9256cd37692970e92744d7564bc3abd19
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="t4-parameter-directive"></a>T4 参数指令
 在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]文本模板`parameter`指令声明从外部的上下文中传递的值初始化的模板代码中的属性。 如果你编写代码时，将调用文本转换，可以设置这些值。  

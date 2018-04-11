@@ -1,9 +1,9 @@
 ---
-title: "创建 Windows 基于窗体的域特定语言 |Microsoft 文档"
-ms.custom: 
+title: 创建 Windows 基于窗体的域特定语言 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的域特定语言
 可以使用 Windows 窗体以显示域特定语言 (DSL) 模型，而不是使用 DSL 图的状态。 本主题将指导你将 Windows 窗体绑定到 DSL、 使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK。  
@@ -53,9 +53,9 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
   
  中的主实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，请注意 DSL 解决方案有关的以下几点：  
   
--   `DslDefinition.dsl`不包含任何关系图元素。 这是因为你将不使用 DSL 关系图来查看的此 DSL 实例模型。 相反，你将为模式，可以绑定 Windows 窗体和窗体上的元素将显示该模型。  
+-   `DslDefinition.dsl` 不包含任何关系图元素。 这是因为你将不使用 DSL 关系图来查看的此 DSL 实例模型。 相反，你将为模式，可以绑定 Windows 窗体和窗体上的元素将显示该模型。  
   
--   除了`Dsl`和`DslPackage`项目中，该解决方案包含一个名为的第三个项目`UI.` **UI**项目包含 Windows 窗体控件的定义。 `DslPackage`依赖于`UI`，和`UI`取决于`Dsl`。  
+-   除了`Dsl`和`DslPackage`项目中，该解决方案包含一个名为的第三个项目`UI.` **UI**项目包含 Windows 窗体控件的定义。 `DslPackage` 依赖于`UI`，和`UI`取决于`Dsl`。  
   
 -   在`DslPackage`项目，`UI\DocView.cs`包含显示 Windows 窗体控件中定义的代码`UI`项目。  
   
@@ -88,9 +88,9 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
   
 4.  使用**名为域类**工具来创建以下域类：  
   
-    -   `Field`-为此提供名为其他域属性`Size`。  
+    -   `Field` -为此提供名为其他域属性`Size`。  
   
-    -   `Animal`-在属性窗口中，设置**继承修饰符**到**抽象**。  
+    -   `Animal` -在属性窗口中，设置**继承修饰符**到**抽象**。  
   
 5.  使用**域类**工具来创建以下类：  
   
@@ -223,7 +223,7 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
   
 3.  在**FarmApp 资源管理器**，打开快捷菜单上**场**根节点，然后选择**添加新 Goat**。  
   
-     `Goat1`将出现在**动物**视图。  
+     `Goat1` 将出现在**动物**视图。  
   
     > [!WARNING]
     >  你必须使用的快捷菜单上**场**节点，不**动物**节点。  
@@ -326,7 +326,7 @@ private void NewSheepButton_Click(object sender, EventArgs e)
   
  因此我们建议你使用<xref:Microsoft.VisualStudio.Modeling.ElementOperations>来创建新元素。 有关详细信息，请参阅[移动数据和自定义元素创建](../modeling/customizing-element-creation-and-movement.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [如何定义的域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   
  [编写代码以自域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [Visual Studio 的建模 SDK - 特定于域的语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

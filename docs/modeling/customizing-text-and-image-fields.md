@@ -1,9 +1,9 @@
 ---
-title: "自定义文本和图像字段 |Microsoft 文档"
-ms.custom: 
+title: 自定义文本和图像字段 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f577669c685d6f42b73c80f947e8edad0c7b9088
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-text-and-image-fields"></a>自定义文本和图像字段
 当形状中定义的文本修饰器时，它表示由文本字段。 有关初始化 TextFields 和其他 ShapeFields 的示例，检查 DSL 解决方案中的 Dsl\GeneratedCode\Shapes.cs。  
@@ -268,7 +268,7 @@ partial class ExampleShape
   
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [定义形状和连接符](../modeling/defining-shapes-and-connectors.md)   
  [在关系图上设置背景图像](../modeling/setting-a-background-image-on-a-diagram.md)   
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   

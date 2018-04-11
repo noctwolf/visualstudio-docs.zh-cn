@@ -1,9 +1,9 @@
 ---
-title: "文本模板实用工具方法 |Microsoft 文档"
-ms.custom: 
+title: 文本模板实用工具方法 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, utility methods
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: a5b9b70eb8bbb756c399496acdd6866ff318427b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="text-template-utility-methods"></a>文本模板实用工具方法
 
@@ -120,7 +120,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- 一种`this.Host`取决于在其中执行模板的宿主类型。 在模板中，在 Visual Studio 中运行，可以强制转换`this.Host`到`IServiceProvider`来访问服务，例如 IDE。 例如:  
+ 一种`this.Host`取决于在其中执行模板的宿主类型。 在模板中，在 Visual Studio 中运行，可以强制转换`this.Host`到`IServiceProvider`来访问服务，例如 IDE。 例如：  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

@@ -1,9 +1,9 @@
 ---
-title: "响应并且将更改传播 |Microsoft 文档"
-ms.custom: 
+title: 响应并且将更改传播 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, events
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f814cc9ca963b59217dc486539d22f42f487a3db
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="responding-to-and-propagating-changes"></a>响应并传播更改
 元素是创建、 删除或更新时，你可以编写传播的更改的其他部分的模型，或对外部资源，如文件、 数据库或其他组件的代码。  
@@ -52,6 +52,6 @@ ms.lasthandoff: 02/09/2018
   
 -   **传递给规则和事件的事件自变量**这两个事件和传递规则`EventArgs`参数，其中包含有关如何信息的模型更改。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [如何： 截获点击形状或修饰器](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
  [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

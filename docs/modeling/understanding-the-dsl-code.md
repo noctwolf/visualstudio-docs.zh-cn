@@ -1,9 +1,9 @@
 ---
-title: "了解 DSL 代码 |Microsoft 文档"
-ms.custom: 
+title: 了解 DSL 代码 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, generated code
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 41cf1f19e03c1197c6266b5057af993b677c9c53
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
 域特定语言 (DSL) 解决方案将生成可用于在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中读取和更新 DSL 实例的 API。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="generated-files-in-dsl"></a>DSL 中生成的文件  
  以下生成的文件出现在**Dsl**项目。  
   
- *YourDsl*`Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
  包含 DSL 实例的文件的架构。 此文件复制到编译 (**bin**) 目录。 DSL 安装时，你可以将复制到此文件**files\microsoft Visual Studio 11.0\Xml\Schemas** ，以便可以验证模型文件。 有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 02/09/2018
   
  （在组件解决方案示例中，其中一个连接生成器称为 ConnectionBuilder，这是一个巧合，因为域关系名为 Connection。）  
   
- 在创建关系*关系*`Builder.Connect()`方法。 默认版本将验证源和目标模型元素是否为可接受，然后实例化该关系。 例如:  
+ 在创建关系*关系*`Builder.Connect()`方法。 默认版本将验证源和目标模型元素是否为可接受，然后实例化该关系。 例如：  
   
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`  
   
@@ -347,7 +347,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
   
  此文件控制将 DSL 打包到 Visual Studio 集成扩展 (VSIX) 中的方式。 有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [如何定义的域特定语言](../modeling/how-to-define-a-domain-specific-language.md)   
  [了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)   
  [自定义和扩展的域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)   

@@ -1,9 +1,9 @@
 ---
-title: "如何： 向快捷菜单添加命令 |Microsoft 文档"
-ms.custom: 
+title: 如何： 向快捷菜单添加命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 4f65964e1d7fd4221746d8ec17a498cf9ee3a354
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 可以将菜单命令添加到域特定语言 (DSL)，以便用户可以执行特定于 DSL 的任务。 当用户右键单击关系图时，这些命令将显示在上下文（快捷）菜单上。 你可以定义某个命令，以使它仅在特定情况下才显示在菜单中。 例如，可以使该命令仅在用户单击特定类型的元素或处于特定状态下的元素时才可见。  
@@ -51,7 +51,7 @@ ms.lasthandoff: 02/09/2018
   
  否则，请考虑使用 MEF 方法来定义命令。 有关详细信息，请参阅[使用 MEF 扩展 DSL](../modeling/extend-your-dsl-by-using-mef.md)。  
   
-##  <a name="VSCT"></a>声明 Commands.Vsct 中的命令  
+##  <a name="VSCT"></a> 声明 Commands.Vsct 中的命令  
  菜单命令将在 DslPackage\Commands.vsct 中声明。 这些定义指定菜单项的标签以及它们在菜单上显示的位置。  
   
  从多个.h 文件，位于目录中编辑，Commands.vsct，该文件导入定义*Visual Studio SDK 安装路径*\VisualStudioIntegration\Common\Inc。它还包括从 DSL 定义中生成的 GeneratedVsct.vsct。  
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
     -   `My Context Menu Command`  
   
-##  <a name="version"></a>更新 Package.tt 中的包版本  
+##  <a name="version"></a> 更新 Package.tt 中的包版本  
  每当添加或更改命令时，都要在发布新版本的域特定语言之前，更新应用于程序包类的 `version` 的 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 参数。  
   
  因为程序包类定义在生成的文件中，因此请在生成 Package.cs 文件的文本模板文件中更新该特性。  
@@ -142,11 +142,11 @@ ms.lasthandoff: 02/09/2018
   
 2.  查找 `ProvideMenuResource` 特性。  
   
-3.  递增特性的 `version` 参数，它是第二个参数。 如果需要，你可以显式编写参数名称以提醒你它的用途。 例如:  
+3.  递增特性的 `version` 参数，它是第二个参数。 如果需要，你可以显式编写参数名称以提醒你它的用途。 例如：  
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
-##  <a name="CommandSet"></a>定义命令的行为  
+##  <a name="CommandSet"></a> 定义命令的行为  
  DSL 已具有一些在 DslPackage\GeneratedCode\CommandSet.cs 中声明的分部类中实现的命令。 若要添加新命令，你必须通过创建包含同一个类的分部声明的新文件来扩展此类。 类的名称通常是 *\<YourDslName >*`CommandSet`。 这将有助于通过验证该类的名称以及检查其内容来开始操作。  
   
  命令集类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。  
@@ -161,7 +161,7 @@ ms.lasthandoff: 02/09/2018
   
 2.  在**DslPackage**，创建名为的文件夹**自定义代码**。 在此文件夹中，创建名为的新类文件`CommandSet.cs`。  
   
-3.  在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如:  
+3.  在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如：  
   
      `namespace Company.Language1 /* Make sure this is correct */`  
   
@@ -224,7 +224,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
 -   `this.CurrentSelection`。 用户右键单击的形状始终包含在此列表中。 如果用户单击关系图的空白部分，则“关系图”是该列表中的唯一成员。  
   
--   `this.IsDiagramSelected()` - `true`如果用户单击关系图的空白部分。  
+-   `this.IsDiagramSelected()` - `true` 如果用户单击关系图的空白部分。  
   
 -   `this.IsCurrentDiagramEmpty()`  
   
@@ -358,7 +358,7 @@ protected override IList<MenuCommand> GetMenuCommands()
   
 -   确保已卸载早期版本的程序包。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [编写代码以自域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [如何： 修改标准菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)   
  [部署的域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)   

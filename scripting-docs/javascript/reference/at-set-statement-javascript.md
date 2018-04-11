@@ -1,13 +1,13 @@
 ---
-title: "@set语句 (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: '@set 语句 (JavaScript) |Microsoft 文档'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '@set_JavaScriptKeyword'
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - '@set statement'
 - conditional compilation, variables
 ms.assetid: 36f15926-3e69-422d-82a2-d186dc088203
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 10f74a1d57a61d78897b660812a6fd8078244b6b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="set-statement-javascript"></a>@set语句 (JavaScript)
+# <a name="set-statement-javascript"></a>@set 语句 (JavaScript)
 创建使用条件编译语句的变量。  
   
 > [!WARNING]
@@ -44,10 +44,10 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="parameters"></a>参数  
  *varname*  
- 必需。 有效的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 变量名称。 必须始终在前面放置一个“@”字符。  
+ 必须的。 有效的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 变量名称。 必须始终在前面放置一个“@”字符。  
   
  `term`  
- 必需。 零个或多个一元运算符，其后跟一个常量、条件编译变量或用圆括号括起来的表达式。  
+ 必须的。 零个或多个一元运算符，其后跟一个常量、条件编译变量或用圆括号括起来的表达式。  
   
 ## <a name="remarks"></a>备注  
  条件编译支持数字变量和布尔变量。 不支持字符串。 使用 `@set` 创建的变量通常在条件编译语句中使用，但也可在 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 代码中的任何位置使用。  
@@ -96,5 +96,5 @@ ms.lasthandoff: 10/27/2017
 ## <a name="see-also"></a>另请参阅  
  [条件编译](../../javascript/advanced/conditional-compilation-javascript.md)   
  [条件编译变量](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on语句](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@cc_on 语句](../../javascript/reference/at-cc-on-statement-javascript.md)   
  [@if 语句](../../javascript/reference/at-if-statement-javascript.md)

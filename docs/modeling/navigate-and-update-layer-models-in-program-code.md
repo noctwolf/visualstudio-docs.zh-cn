@@ -1,9 +1,9 @@
 ---
-title: "导航和更新在程序代码中的层模型 |Microsoft 文档"
-ms.custom: 
+title: 导航和更新在程序代码中的层模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - layer models, navigating in program code
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: e79479e97efd953c1366348454eee70773faf07a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>在程序代码中导航和更新层模型
 本主题介绍了层模型中的元素和关系，可使用程序代码进行导航和更新。 有关从用户的角度来看的依赖项关系图的详细信息，请参阅[依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)和[依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)。  
@@ -124,7 +124,7 @@ public void ... (...)
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> 和 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> 也用于显示 UML 模型。 
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [向依赖项关系图添加命令和笔势](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
  [向依赖项关系图添加自定义体系结构验证](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [将自定义属性添加到依赖项关系图](../modeling/add-custom-properties-to-layer-diagrams.md)   

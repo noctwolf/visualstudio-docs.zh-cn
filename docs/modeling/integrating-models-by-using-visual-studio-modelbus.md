@@ -1,9 +1,9 @@
 ---
-title: "通过使用 Visual Studio Modelbus 集成模型 |Microsoft 文档"
-ms.custom: 
+title: 通过使用 Visual Studio Modelbus 集成模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 集成模型
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 提供用于创建模型之间以及从其他工具的链接到模型的方法。 例如，你无法将链接域特定语言 (DSL) 模型和 UML 模型。 可以创建一组集成 DSL。  
@@ -33,10 +33,10 @@ ms.lasthandoff: 02/09/2018
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
-##  <a name="provide"></a>提供对 DSL 访问权限  
+##  <a name="provide"></a> 提供对 DSL 访问权限  
  在可以创建对模型或其元素的 ModelBus 引用之前，必须定义用于 DSL 的 ModelBusAdapter。 实现此目的的最简单方法是使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 模型总线扩展，它可将命令添加到 DSL 设计器。  
   
-###  <a name="expose"></a>若要公开到模型总线 DSL 定义  
+###  <a name="expose"></a> 若要公开到模型总线 DSL 定义  
   
 1.  除非已安装 Visual Studio 模型总线扩展，否则请下载并安装它。 有关详细信息，请参阅[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 02/09/2018
  文件夹 `ModelBusAdapters\bin\*` 包含由 `Dsl` 项目和 `ModelBusAdapters` 项目生成的程序集。 若要从另一个 DSL 引用此 DSL，应导入这些程序集。  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>确保元素可被引用  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 适配器使用的元素的 guid 来标识它，默认情况下。 因此这些标识符必须保留在模型文件中。  
+ 默认情况下，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 适配器使用元素的 GUID 来标识它。 因此这些标识符必须保留在模型文件中。  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>确保保留元素 ID  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 02/09/2018
   
 -   重写 `ResolveElementReference` 以从模型总线引用中查找正确元素。  
   
-##  <a name="editRef"></a>从另一个 DSL 访问 DSL  
+##  <a name="editRef"></a> 从另一个 DSL 访问 DSL  
  你可以将模型总线引用存储在 DSL 的域属性中，也可以编写使用它们的自定义代码。 还可以允许用户通过选取模型文件和其中的元素来创建模型总线引用。  
   
  若要启用 DSL 用于对另一个 DSL 的引用，你应首先，设置它*使用者*的模型总线引用。  
@@ -144,7 +144,7 @@ ms.lasthandoff: 02/09/2018
 3.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例的调试项目中，添加作为每个 DSL 的实例的文件。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 只能解析对模型中相同的项的引用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案。 例如，你无法创建对位于文件系统另一部分中的模型文件的引用。  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 只能解析对这些模型的引用，它们是同一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中的项。 例如，你无法创建对位于文件系统另一部分中的模型文件的引用。  
   
 4.  在公开的 DSL 的实例中创建一些元素和链接，并将其保存。  
   
@@ -510,7 +510,7 @@ private const string INVALID_REF_FORMAT =
   
 -   在**DslPackage\source.extention.tt**，`|ModelBusAdapter|`添加为 MEF 组件。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [如何： 从在程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [如何： 添加一个拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [在文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

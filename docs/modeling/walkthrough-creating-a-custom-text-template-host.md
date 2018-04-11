@@ -1,9 +1,9 @@
 ---
-title: "演练： 创建自定义文本模板宿主 |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建自定义文本模板宿主 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ad2bc2a049a0a96a8093289af4648f077f2d1478
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>演练：创建自定义文本模板宿主
 A*文本模板 * * 主机*提供一个使环境*文本模板转换引擎*运行。 宿主负责管理引擎与文件系统的交互。 引擎或*指令处理器*需要一个文件或程序集可以从主机请求资源。 然后，宿主可以搜索目录和全局程序集缓存，以查找请求的资源。 有关详细信息，请参阅[文本模板转换过程](../modeling/the-text-template-transformation-process.md)。  
@@ -818,5 +818,5 @@ A*文本模板 * * 主机*提供一个使环境*文本模板转换引擎*运行�
 ## <a name="next-steps"></a>后续步骤  
  在本演练中，你创建了一个支持基本转换功能的文本模板转换主机。 您可以对该宿主进行扩展，以支持可调用自定义或生成的指令处理器的文本模板。 有关详细信息，请参阅[演练： 连接到生成的指令处理器的主机](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>

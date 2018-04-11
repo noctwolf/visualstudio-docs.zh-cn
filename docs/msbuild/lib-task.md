@@ -1,11 +1,11 @@
 ---
-title: "LIB 任务 | Microsoft Docs"
-ms.custom: 
+title: LIB 任务 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -25,17 +25,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), LIB task
 - LIB task (MSBuild (Visual C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-caps.latest.revision: 
+caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 13b6ceb908e45cf98f32f89605bf48f8e747b7aa
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="lib-task"></a>LIB 任务
 包装 Microsoft 32 位库管理器工具 (lib.exe)。 库管理器创建并管理通用对象文件格式 (COFF) 对象文件的库。 库管理器还可以创建导出文件和导入库，以便引用导出的定义。 有关详细信息，请参阅 [LIB 参考](/cpp/build/reference/lib-reference)和[运行 LIB](/cpp/build/reference/running-lib)。  
@@ -68,9 +68,9 @@ ms.lasthandoff: 02/09/2018
 |**TrackerLogDirectory**|可选 **String** 参数。<br /><br /> 指定跟踪器日志的目录。|  
 |**TreatLibWarningAsErrors**|可选 **Boolean** 参数。<br /><br /> 若为 `true`，**LIB** 任务不会在 lib.exe 生成警告时生成输出文件。 如果为 `false`，则生成输出文件。<br /><br /> 有关详细信息，请参阅[运行 LIB](/cpp/build/reference/running-lib) 中的 **/WX** 选项。|  
 |**UseUnicodeResponseFiles**|可选 **Boolean** 参数。<br /><br /> 如果为 `true`，则指示在生成库管理器时，项目系统生成 UNICODE 响应文件。 当项目中的文件具有 UNICODE 路径时，指定 `true`。|  
-|**Verbose**|可选 **Boolean** 参数。<br /><br /> 如果为 `true`，则显示有关会话进度的详细信息；这包括正在添加的 .obj 文件的名称。 信息被发送到标准输出，并可重定向到文件。<br /><br /> 详情请参阅[运行 LIB](/cpp/build/reference/running-lib) 中的 **/VERBOSE** 选项。|  
+|**Verbose**|可选 **Boolean** 参数。<br /><br /> 如果为 `true`，则显示有关会话进度的详细信息；这包括正在添加的 .obj 文件的名称。 信息被发送到标准输出，并可重定向到文件。<br /><br /> 有关详细信息，请参阅[运行 LIB](/cpp/build/reference/running-lib) 中的 **/VERBOSE** 选项。|  
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)

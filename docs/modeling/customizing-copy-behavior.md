@@ -1,9 +1,9 @@
 ---
-title: "自定义复制行为 |Microsoft 文档"
-ms.custom: 
+title: 自定义复制行为 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f8eba726c35b402e93bd1fd1b50048b8dce4bf2b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-copy-behavior"></a>自定义复制行为
 在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可视化和建模 SDK 创建的域特定语言 (DSL) 中，你可以更改当用户复制并粘贴元素时所发生的情况。  
@@ -216,7 +216,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **让用户元素拖放。**  
  请参阅[如何： 添加的拖放处理](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
   
-##  <a name="customizeLinks"></a>自定义链接复制行为  
+##  <a name="customizeLinks"></a> 自定义链接复制行为  
  当用户复制元素时，标准行为是还会复制所有嵌入元素。 可以修改标准复制行为。 在 DSL 定义中，选择关系的和属性窗口集中一方上的角色**传播复制**值。  
   
  ![传播域角色的副本属性](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  

@@ -1,9 +1,9 @@
 ---
-title: "T4 模板指令 |Microsoft 文档"
-ms.custom: 
+title: T4 模板指令 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3c4e53c4d123a5a5de493059c68ef09685c903a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="t4-template-directive"></a>T4 模板指令
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] T4 文本模板通常以 `template` 指令开头，该指令指定应如何处理模板。 文本模板及其包括的任何文件中不应有多个 template 指令。  
@@ -80,7 +80,7 @@ hostspecific="true"
   
  因为此属性的类型取决于宿主的类型，所以仅当编写只适用于特定宿主的文本模板时才有用。 它是适用于[设计时模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不是[运行时模板](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
- 当 `hostspecific` 为 `true`，而且正在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 时，可以将 `this.Host` 强制转换为 IServiceProvider，以访问 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 功能。 还可以使用 `Host.ResolvePath(filename)` 来获得项目中文件的绝对路径。 例如:  
+ 当 `hostspecific` 为 `true`，而且正在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 时，可以将 `this.Host` 强制转换为 IServiceProvider，以访问 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 功能。 还可以使用 `Host.ResolvePath(filename)` 来获得项目中文件的绝对路径。 例如：  
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -115,7 +115,7 @@ Content of myFile is:
   
  Language 特性指定的语言 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) 要用于语句和表达式块中的源代码。 从中生成输出的中间代码文件将使用此语言。 此语言与您的模板生成的语言无关，它可以是任何类型的文本。  
   
- 例如:  
+ 例如：  
   
 ```vb  
 <#@ template language="VB" #>  

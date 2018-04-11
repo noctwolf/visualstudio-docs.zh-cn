@@ -1,9 +1,9 @@
 ---
-title: "如何使用文本模板...|Microsoft 文档"
-ms.custom: 
+title: 如何使用文本模板...|Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
 中的文本模板[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供生成任何类型的文本的有效方法。 文本模板可用于在你的应用程序的一部分运行时和设计时生成你的项目代码的一些生成文本。 本主题总结了将最常要求"如何实现...？" 问题。  
@@ -73,14 +73,14 @@ ms.lasthandoff: 02/09/2018
   
 ### <a name="generate-files-from-a-complex-model"></a>从复杂的模型生成文件  
   
--   请考虑创建域特定语言 (DSL) 来表示该模型。 这样可以更轻松地编写一些模板，因为你使用的类型和属性来反映你的模型中的元素的名称。 无需分析该文件，或浏览 XML 节点。 例如:  
+-   请考虑创建域特定语言 (DSL) 来表示该模型。 这样可以更轻松地编写一些模板，因为你使用的类型和属性来反映你的模型中的元素的名称。 无需分析该文件，或浏览 XML 节点。 例如：  
   
      `foreach (Book book in this.Library) { ... }`  
   
      有关详细信息，请参阅[Getting Started with 域特定语言](../modeling/getting-started-with-domain-specific-languages.md)和[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)。  
   
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>从获取数据[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
- 若要使用中提供的服务[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，集`hostSpecific`特性并加载`EnvDTE`程序集。 例如:  
+### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>从获取数据 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+ 若要使用中提供的服务[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，集`hostSpecific`特性并加载`EnvDTE`程序集。 例如：  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  
@@ -101,7 +101,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ## <a name="more-general-questions"></a>更多常规问题  
   
-###  <a name="starting"></a>若要开始编写文本模板的最佳方法是什么？  
+###  <a name="starting"></a> 若要开始编写文本模板的最佳方法是什么？  
   
 1.  写入生成的文件的特定示例。  
   

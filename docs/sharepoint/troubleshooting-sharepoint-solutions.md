@@ -1,12 +1,12 @@
 ---
-title: "SharePoint 解决方案的疑难解答 |Microsoft 文档"
-ms.custom: 
+title: SharePoint 解决方案的疑难解答 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>SharePoint 解决方案疑难解答
   使用调试 SharePoint 解决方案时，可能发生以下问题或警报[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 有关详细信息，请参阅[调试 SharePoint 2007 工作流解决方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/10/2018
  如果你重命名导入的列表实例，然后运行它，则会发生此问题[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
 ### <a name="error-message"></a>错误消息  
- 生成错误： 部署步骤激活功能中发生错误： 文件 Template\Features\\[*导入项目**功能**名称*] \Files\Lists\\[*旧**列表名称*] \Schema.xml 不存在。  
+ 生成错误： 部署步骤激活功能中发生错误： 文件 Template\Features\\[*导入项目**功能**名称*] \Files\Lists\\[*旧 * * 列表名称*] \Schema.xml 不存在。  
   
 ### <a name="resolution"></a>解决方法  
  当你导入的列表实例时，一个名为 CustomSchema 特性添加到列表实例的 Elements.xml 文件中。 Elements.xml 包含列表实例自定义 schema.xml 的路径。 如果重命名中的列表实例[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、 自定义 schema.xml 的部署路径发生变化，但不是更新 CustomSchema 属性的路径值。 因此，列表实例找不到 schema.xml 文件时激活该功能由 CustomSchema 特性指定的旧路径中。  
@@ -282,7 +282,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="resolution"></a>解决方法  
  若要解决此问题，请确保 Visual Studio 中的 SharePoint 项目的“站点 URL”属性值与分配给 Web 应用程序的备用访问映射的默认区域的 URL 一致。 对 URL 使用其他区域（如 Intranet）将无法解决此错误。 项目的站点 URL 与默认区域中的 URL 必须一致。 若要访问备用访问映射，请打开 SharePoint 2010 管理中心实用工具，选择**应用程序管理**链接，然后，在**Web 应用程序**，选择**配置备用访问映射**链接。 有关详细信息，请参阅[创建 Web 应用程序的区域](http://go.microsoft.com/fwlink/?LinkId=192274)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [SharePoint 打包和部署疑难解答](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [在 Visual Studio 中进行调试](/visualstudio/debugger/debugging-in-visual-studio)  

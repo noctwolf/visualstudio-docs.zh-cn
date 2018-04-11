@@ -1,9 +1,9 @@
 ---
-title: "自定义删除行为 |Microsoft 文档"
-ms.custom: 
+title: 自定义删除行为 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.deletebehavior
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-deletion-behavior"></a>自定义删除行为
 删除一个元素通常会导致同时删除相关的元素。 将删除连接到该元素的所有关系以及任何子元素。 此行为名为*删除传播*。 可以自定义删除传播，例如安排删除其他相关元素。 通过编写程序代码，可以根据模型的状态删除传播。 还可能发生其他更改以响应删除。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [取消合并](#unmerge)-取消合并操作用于撤消附加到其父级的子元素的合并操作。  
   
-##  <a name="default"></a>默认删除行为  
+##  <a name="default"></a> 默认删除行为  
  默认情况下，以下规则控制删除传播：  
   
 -   如果删除某个元素，也将删除所有嵌入元素。 嵌入元素是作为嵌入关系的目标的元素，而此元素是嵌入关系的源。 例如，如果没有从嵌入关系**唱片集**到**首歌曲**，然后当删除特定唱片集时，也将删除所有歌曲。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 02/09/2018
   
 -   不管是在源角色上还是在目标角色上，都将删除连接到该元素的每个关系。 对方角色的元素的角色属性不再包含删除的元素。  
   
-##  <a name="property"></a>设置角色的传播删除选项  
+##  <a name="property"></a> 设置角色的传播删除选项  
  可以使删除沿着引用关系传播，或从嵌入子级传播到其父级。  
   
 #### <a name="to-set-delete-propagation"></a>设置删除传播  
@@ -78,7 +78,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  若要将程序代码添加到你的 DSL 定义，创建另一个代码文件中的**Dsl**项目，然后编写分部定义来加强生成的代码文件夹中的类。 有关详细信息，请参阅[编写代码，以自域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
   
-##  <a name="closure"></a>定义一个删除闭包  
+##  <a name="closure"></a> 定义一个删除闭包  
  删除操作使用类*YourModel * * * DeleteClosure** 若要确定要删除给定的初始选择哪些元素。 它将重复调用 `ShouldVisitRelationship()` 和 `ShouldVisitRolePlayer()`，从而遍历这些关系图。 可以重写这些方法。 ShouldVisitRolePlayer 提供的链接的元素和位于该链接的角色之一的标识。 它应返回以下值之一：  
   
 -   **VisitorFilterResult.Yes**-应当删除元素并查看器应继续尝试元素的其他链接。  
@@ -131,7 +131,7 @@ partial class MusicLibDeleteClosure
   
  但是，该技术假设删除在关系图中仅影响其邻近内容：无法使用此方法删除模型的另一部分中的元素。 如果想要添加元素或进行其他更改以响应删除，则不能使用此技术。  
   
-##  <a name="ondeleting"></a>使用 OnDeleting 和 OnDeleted  
+##  <a name="ondeleting"></a> 使用 OnDeleting 和 OnDeleted  
  可以在域类或域关系中重写 `OnDeleting()` 或 `OnDeleted()`。  
   
 1.  在将要删除元素时，但在该元素的关系已断开连接前，调用 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>。 该元素仍可在其他元素中来回导航，并且仍位于 `store.ElementDirectory` 中。  
@@ -198,7 +198,7 @@ partial class Artist
   
  当在元素上执行 <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> 时，将调用 OnDeleting 和 OnDeleted。 这些方法将始终执行以内联方式-即，立即之前和之后实际删除。 如果代码将删除两个或多个元素，则将在所有元素上按顺序交替调用 OnDeleting 和 OnDeleted。  
   
-##  <a name="rules"></a>删除规则和事件  
+##  <a name="rules"></a> 删除规则和事件  
  作为 OnDelete 处理程序的替代方法，你可以定义删除规则和删除事件。  
   
 1.  **删除**和**删除**仅在一个事务，并且不在撤消或重做操作触发的规则。 可以设置它们以进行排队，从而在执行删除的事务末尾执行它们。 Deleting 规则始终在队列中的任何 Deleted 规则之前执行。  
@@ -295,7 +295,7 @@ partial class NestedShapesSampleDocData
   
  有关详细信息，请参阅[移动数据和自定义元素创建](../modeling/customizing-element-creation-and-movement.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [自定义复制行为](../modeling/customizing-copy-behavior.md)   
  [自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)   
  [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

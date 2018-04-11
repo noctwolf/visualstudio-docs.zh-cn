@@ -1,9 +1,9 @@
 ---
-title: "从文本模板访问模型 |Microsoft 文档"
-ms.custom: 
+title: 从文本模板访问模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, accessing models
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>从文本模板访问模型
 通过使用文本模板，你可以创建报表文件、 源代码文件和其他基于域特定语言模型的文本文件。 有关文本模板的基本信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 文本模板时进行调试，DSL 在实验模式下将工作，并且还将在其部署 DSL 的计算机上工作。  
@@ -64,7 +64,7 @@ Here is a list of elements in the model:
   
 -   尽管编写的代码片段所用的语言是 C#，你可以生成任何类型的文本。 或者可以在编写代码[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]属性添加`language="VB"`到`template`指令。  
   
--   若要调试模板，添加`debug="true"`到`template`指令。 该模板将在另一个实例中打开[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]如果发生异常。 如果你想要在代码中的特定点在调试器中中断，insert 语句`System.Diagnostics.Debugger.Break();`  
+-   若要调试模板，添加`debug="true"`到`template`指令。 该模板将在另一个实例中打开[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]如果发生异常。 如果你想要在代码中的特定点在调试器中中断，insert 语句 `System.Diagnostics.Debugger.Break();`  
   
      有关详细信息，请参阅[调试 T4 文本模板](../modeling/debugging-a-t4-text-template.md)。  
   
@@ -99,7 +99,7 @@ Here is a list of elements in the model:
   
  如果找到错误，则它将报告在错误窗口中，并且结果文件将包含一条错误消息。  
   
-##  <a name="Multiple"></a>从文本模板访问多个模型  
+##  <a name="Multiple"></a> 从文本模板访问多个模型  
   
 > [!NOTE]
 >  此方法允许你读取同一模板中的多个模型，但不支持 ModelBus 引用。 若要读取的 ModelBus 引用关联的模型，请参阅[文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。  
@@ -177,7 +177,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
 ```  
   
- `LoopSplitter.tt`调用`LoopTemplate.t4`，，然后将生成的文件拆分为其片段。 请注意，此模板没有已建模的模板，因为它不会读取模型。  
+ `LoopSplitter.tt` 调用`LoopTemplate.t4`，，然后将生成的文件拆分为其片段。 请注意，此模板没有已建模的模板，因为它不会读取模型。  
   
 ```  
 <#@ template hostspecific="true" language="C#" #>  

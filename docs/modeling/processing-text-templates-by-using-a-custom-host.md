@@ -1,9 +1,9 @@
 ---
-title: "使用自定义宿主处理文本模板 |Microsoft 文档"
-ms.custom: 
+title: 使用自定义宿主处理文本模板 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, in application or VS extension
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: af3e5b50095b30a912f6de7b67ba8a40f99127f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>使用自定义宿主处理文本模板
 *文本模板转换*处理采用*文本模板*文件作为输入并生成一个文本文件作为输出。 从 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 扩展或安装有 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的计算机上运行的独立应用程序，可以调用文本转换引擎。 但是，你必须提供*文本模板化宿主*。 该类将模板连接到环境，查找资源（如程序集和包含文件），并处理输出和错误消息。  
@@ -49,7 +49,7 @@ string output = engine.ProcessTemplate(templateString, host);
   
  宿主必须能记录错误、解析对程序集和包含文件的引用、提供可在其中执行模板的应用程序域并为每条指令调用相应的处理器。  
   
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>在中定义**Microsoft.VisualStudio.TextTemplating。\*。0 dll**，和<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>中定义**Microsoft.VisualStudio.TextTemplating.Interfaces。\*。0 dll**。  
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 在中定义**Microsoft.VisualStudio.TextTemplating。\*。0 dll**，和<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>中定义**Microsoft.VisualStudio.TextTemplating.Interfaces。\*。0 dll**。  
   
 ## <a name="in-this-section"></a>本节内容  
  [演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)  

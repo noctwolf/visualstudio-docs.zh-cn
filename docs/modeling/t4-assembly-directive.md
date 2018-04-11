@@ -1,9 +1,9 @@
 ---
-title: "T4 程序集指令 |Microsoft 文档"
-ms.custom: 
+title: T4 程序集指令 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 9f586931bd14089beca787c24d92bc2605c4d5de
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="t4-assembly-directive"></a>T4 程序集指令
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 设计时文本模板中，`assembly` 指令可加载程序集，以便您的模板代码可使用其类型。 该作用类似于在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目中添加程序集引用。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 02/09/2018
   
 -   程序集的绝对路径  
   
- 你可以使用 `$(variableName)` 语法引用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 变量（如 `$(SolutionDir)`），以及使用 `%VariableName%` 来引用环境变量。 例如:  
+ 你可以使用 `$(variableName)` 语法引用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 变量（如 `$(SolutionDir)`），以及使用 `%VariableName%` 来引用环境变量。 例如：  
   
 ```  
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
@@ -65,7 +65,7 @@ ms.lasthandoff: 02/09/2018
   
 -   包含 DSL 的程序集。  
   
-##  <a name="msbuild"></a>使用在 MSBuild 和 Visual Studio 中的项目属性  
+##  <a name="msbuild"></a> 使用在 MSBuild 和 Visual Studio 中的项目属性  
  MSBuild 中，如 $ （solutiondir） 的 visual Studio 宏不起作用。 如果你想要在生成计算机中转换模板，则必须改用项目属性。  
   
  编辑 .csproj 或 .vbproj 文件以定义项目属性。 此示例定义一个名为 `myLibFolder` 的属性：  
@@ -91,5 +91,5 @@ ms.lasthandoff: 02/09/2018
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [T4 包含指令](../modeling/t4-include-directive.md)

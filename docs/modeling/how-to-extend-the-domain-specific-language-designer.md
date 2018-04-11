@@ -1,9 +1,9 @@
 ---
-title: "如何： 扩展的域特定语言设计器 |Microsoft 文档"
-ms.custom: 
+title: 如何： 扩展的域特定语言设计器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：扩展域特定语言设计器
 你可以扩展的设计器，用于编辑 DSL 定义。 你可以添加更多菜单命令添加处理程序拖双击手势和特定类型的值或关系更改时触发的规则的扩展的类型。 扩展可打包为 Visual Studio 集成扩展 (VSIX)，并可以分发给其他用户。  

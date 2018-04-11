@@ -1,9 +1,9 @@
 ---
-title: "通过使用 MEF 扩展 DSL |Microsoft 文档"
-ms.custom: 
+title: 通过使用 MEF 扩展 DSL |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 735de60d18bc5cbca7dc2ba509372d81622038be
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 可以通过使用 Managed Extensibility Framework (MEF) 扩展你的域特定语言 (DSL)。 你或其他开发人员将能够为 DSL 编写扩展，而无需更改的 DSL 定义和程序代码。 此类扩展包括菜单命令、 拖放处理程序和验证。 用户将能够安装 DSL，，然后根据需要为其安装扩展。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  创建一个名为的新文件夹**MefExtension**内**DslPackage**项目。 将以下文件添加到它：  
   
-     文件名：`CommandExtensionVSCT.tt`  
+     文件名： `CommandExtensionVSCT.tt`  
   
     > [!IMPORTANT]
     >  在此文件会作为 DslPackage\GeneratedCode\Constants.tt 中定义 GUID CommandSetId 相同中设置 GUID  
@@ -44,21 +44,21 @@ ms.lasthandoff: 02/09/2018
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
     ```  
   
-     文件名：`CommandExtensionRegistrar.tt`  
+     文件名： `CommandExtensionRegistrar.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
     ```  
   
-     文件名：`ValidationExtensionEnablement.tt`  
+     文件名： `ValidationExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
     ```  
   
-     文件名：`ValidationExtensionRegistrar.tt`  
+     文件名： `ValidationExtensionRegistrar.tt`  
   
      如果你添加此文件，你必须验证在中启用 DSL 使用至少一个中的交换机**EditorValidation** DSL 资源管理器中。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 02/09/2018
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
     ```  
   
-     文件名：`PackageExtensionEnablement.tt`  
+     文件名： `PackageExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -76,21 +76,21 @@ ms.lasthandoff: 02/09/2018
   
 2.  创建一个名为的新文件夹**MefExtension**内**Dsl**项目。 将以下文件添加到它：  
   
-     文件名：`DesignerExtensionMetaDataAttribute.tt`  
+     文件名： `DesignerExtensionMetaDataAttribute.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
     ```  
   
-     文件名：`GestureExtensionEnablement.tt`  
+     文件名： `GestureExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
     ```  
   
-     文件名：`GestureExtensionController.tt`  
+     文件名： `GestureExtensionController.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -176,7 +176,7 @@ ms.lasthandoff: 02/09/2018
 ### <a name="menu-commands"></a>菜单命令  
  若要编写菜单命令，定义一个类以实现<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>，并添加前缀具有 DSL，名为中定义的属性类*YourDsl*`CommandExtension`。 你可以编写多个菜单命令类。  
   
- `QueryStatus()`每当用户右击关系图都会调用。 它应检查当前选定内容和设置`command.Enabled`指出该命令适用。  
+ `QueryStatus()` 每当用户右击关系图都会调用。 它应检查当前选定内容和设置`command.Enabled`指出该命令适用。  
   
 ```  
 using System.ComponentModel.Composition;  
@@ -373,7 +373,7 @@ namespace MefExtension
   
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)   
  [Managed 的 Extensibility Framework (MEF)](/dotnet/framework/mef/index)   
  [如何： 添加一个拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)   

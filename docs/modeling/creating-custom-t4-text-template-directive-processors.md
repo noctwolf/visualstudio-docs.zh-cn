@@ -1,9 +1,9 @@
 ---
-title: "创建自定义 T4 文本模板指令处理器 |Microsoft 文档"
-ms.custom: 
+title: 创建自定义 T4 文本模板指令处理器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, custom directive processors
@@ -14,17 +14,17 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 305eb97d18e8513a92637cd92b1f28798677f314
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>创建自定义 T4 文本模板指令处理器
 *文本模板转换过程*采用*文本模板*文件作为输入并生成一个文本文件作为输出。 *文本模板转换引擎*与文本模板转换宿主和一个或多个文本模板过程中和引擎进行交互的控件*指令处理器*完成该过程。 有关详细信息，请参阅[文本模板转换过程](../modeling/the-text-template-transformation-process.md)。  
   
  若要创建自定义指令处理器，需要创建一个从 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 或 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 继承的类。  
   
- 这两个区别是，<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor>实现从用户获取参数以及生成的代码生成模板输出文件时需要的最小接口。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>实现需要/提供设计模式。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>处理两个特殊参数，`requires`和`provides`。  例如，自定义指令处理器可能接受从用户处打开的文件名称和读取该文件，并且然后将该文件的文本存储在变量名为`fileText`。 一个子类<xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>类可能的值作为用户需要的文件名称`requires`参数，并且要在其中存储的值作为文本变量的名称`provides`参数。 此处理器将打开，读取文件，然后将该文件的文本存储在指定的变量。  
+ 这两个区别是，<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor>实现从用户获取参数以及生成的代码生成模板输出文件时需要的最小接口。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 实现需要/提供设计模式。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 处理两个特殊参数，`requires`和`provides`。  例如，自定义指令处理器可能接受从用户处打开的文件名称和读取该文件，并且然后将该文件的文本存储在变量名为`fileText`。 一个子类<xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>类可能的值作为用户需要的文件名称`requires`参数，并且要在其中存储的值作为文本变量的名称`provides`参数。 此处理器将打开，读取文件，然后将该文件的文本存储在指定的变量。  
   
  从文本模板中调用自定义指令处理器之前[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您必须注册它。  
   
@@ -50,17 +50,17 @@ ms.lasthandoff: 02/09/2018
   
  最重要`DirectiveProcessor`必须实现的方法如下所示。  
   
--   `bool IsDirectiveSupported(string directiveName)`-返回`true`如果指令处理器可以处理命名指令。  
+-   `bool IsDirectiveSupported(string directiveName)` -返回`true`如果指令处理器可以处理命名指令。  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)`-模板引擎在每个出现的模板中的指令调用此方法。 你的处理器应保存结果。  
+-   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -模板引擎在每个出现的模板中的指令调用此方法。 你的处理器应保存结果。  
   
  在对 ProcessDirective() 的所有调用之后模板化引擎将调用这些方法：  
   
--   `string[] GetReferencesForProcessingRun()`-返回的模板代码需要的程序集的名称。  
+-   `string[] GetReferencesForProcessingRun()` -返回的模板代码需要的程序集的名称。  
   
--   `string[] GetImportsForProcessingRun()`-返回可使用的命名空间中的模板代码。  
+-   `string[] GetImportsForProcessingRun()` -返回可使用的命名空间中的模板代码。  
   
--   `string GetClassCodeForProcessingRun()`-返回代码的方法、 属性和模板代码可使用其他声明。 若要执行此操作的最简单方法是生成包含 C# 或 Visual Basic 代码的字符串。 若要使能够从使用任何 CLR 语言的模板调用指令处理器，可以构造 CodeDom 目录树形式的语句，然后返回结果的序列化的树中使用模板的语言。  
+-   `string GetClassCodeForProcessingRun()` -返回代码的方法、 属性和模板代码可使用其他声明。 若要执行此操作的最简单方法是生成包含 C# 或 Visual Basic 代码的字符串。 若要使能够从使用任何 CLR 语言的模板调用指令处理器，可以构造 CodeDom 目录树形式的语句，然后返回结果的序列化的树中使用模板的语言。  
   
 -   有关详细信息，请参阅[演练： 创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。  
   

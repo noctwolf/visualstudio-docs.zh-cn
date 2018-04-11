@@ -1,9 +1,9 @@
 ---
-title: "自定义属性窗口 |Microsoft 文档"
-ms.custom: 
+title: 自定义属性窗口 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 545c8181cdaa3f13d2de04f13101d2678f9fd0ab
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-the-properties-window"></a>自定义“属性”窗口
 你可以自定义的外观和行为的属性窗口中你的域特定语言 (DSL) 中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在 DSL 定义中，每个域类上定义域属性。 默认情况下时选择的类，在图上或在模型资源管理器的实例, 的每个域属性将列在属性窗口中。 这样你可以查看和编辑域属性值，即使你具有不到关系图上的形状字段映射它们。  
@@ -183,7 +183,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  在单独的代码文件中添加代码**Dsl**项目。  
   
- 例如:  
+ 例如：  
   
 ```  
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor  
@@ -223,7 +223,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
   
 ```  
   
- 定义一个从 <xref:System.ComponentModel.TypeConverter> 派生的类。 在单独的文件中添加代码**Dsl**项目。 例如:  
+ 定义一个从 <xref:System.ComponentModel.TypeConverter> 派生的类。 在单独的文件中添加代码**Dsl**项目。 例如：  
   
 ```csharp  
 /// <summary>  
@@ -317,5 +317,5 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)

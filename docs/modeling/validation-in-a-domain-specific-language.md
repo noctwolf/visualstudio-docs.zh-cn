@@ -1,9 +1,9 @@
 ---
-title: "域特定语言中的验证 |Microsoft 文档"
-ms.custom: 
+title: 域特定语言中的验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, constraints
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb2e734bd94608584ca700223fb75387eb484fb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="validation-in-a-domain-specific-language"></a>域特定语言中的验证
 作为域特定语言 (DSL) 的作者，你可以定义验证约束，以验证由用户创建的模型是否有意义。 例如，如果你的 DSL 允许用户绘制人员及其祖先的家族树，你可以编写一个约束，用于确保孩子的出生日期在其父母之后。  
@@ -142,7 +142,7 @@ public partial class ParentsHaveChildren
   
  该示例将应用到以下域模型。 ParentsHaveChildren 关系具有称为 Child 和 Parent 的角色。  
   
- ![DSL 定义关系图 &#45;王朝家谱模型](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![DSL 定义关系图&#45;王朝家谱模型](../modeling/media/familyt_person.png "FamilyT_Person")  
   
 ## <a name="validation-categories"></a>验证类别  
  在 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> 特性中，指定应何时执行验证方法。  
@@ -303,7 +303,7 @@ namespace Company.FamilyTree
   
  在影响链接或元素的“撤消”或“重做”操作后，还将调用处理程序。  
   
-##  <a name="custom"></a>自定义验证类别  
+##  <a name="custom"></a> 自定义验证类别  
  除了标准验证类别（如“菜单”和“打开”），还可以定义自己的类别。 可以从程序代码调用这些类别。 用户无法直接调用它们。  
   
  自定义类别通常用于定义测试模型是否满足特定工具的前提条件的类别。  
@@ -331,7 +331,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a>验证的替代方法  
+##  <a name="alternatives"></a> 验证的替代方法  
  验证约束报告错误，但不更改模型。 相反，如果你想要防止模型变为无效，则可以使用其他技术。  
   
  但是，不建议使用这些技术。 通常，最好让用户决定如何更正无效的模型。  
@@ -343,6 +343,6 @@ validationController.ValidateCustom
 > [!WARNING]
 >  请确保用户知道更改已调整或已回滚。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [事件处理程序在模型外部传播更改](../modeling/event-handlers-propagate-changes-outside-the-model.md)

@@ -1,30 +1,30 @@
 ---
-title: "MSBuild 批处理 | Microsoft Docs"
-ms.custom: 
+title: MSBuild 批处理 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
-caps.latest.revision: 
+caps.latest.revision: 9
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 4411b82fc5a86e4f3eeae965fefd65e2c38d207e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-batching"></a>MSBuild 批处理
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能基于项元数据将项列表划分为不同类别或批次，并对每批逐一运行目标或任务。  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够基于项元数据将项列表划分为不同类别或批，并对每批运行一次目标或任务。  
   
 ## <a name="task-batching"></a>任务批处理  
  借助任务批处理，可以用某种方式将项列表划分为不同批次，同时将每个批次单独地传递到任务中来简化项目文件。 这意味着项目文件只需要声明一次任务及其特性就可多次运行该任务。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 02/09/2018
  有关更具体的批处理示例，请参阅[任务批处理中的项元数据](../msbuild/item-metadata-in-task-batching.md)。  
   
 ## <a name="target-batching"></a>目标批处理  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 先检查目标的输入和输出是否最新，然后再运行该目标。 如果输入和输出都是最新的，则跳过该目标。 如果目标内的任务使用批处理，则 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 需要确定每批项的输入和输出是否是最新的。 否则，每次命中目标时，都会执行该目标。  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 会先检查目标的输入和输出是否是最新的，然后才运行该目标。 如果输入和输出都是最新的，则跳过该目标。 如果目标内的任务使用批处理，则 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 需要确定每批项的输入和输出是否是最新的。 否则，每次命中目标时，都会执行该目标。  
   
  以下示例通过 %(ItemMetaDataName) 表示法演示包含 `Outputs` 特性的 `Target` 元素。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 会基于 `Color` 项元数据将 `Example` 项列表划分为几个批次，并分析每个批次的输出文件的时间戳。 如果某个批次的输出不是最新的，则运行目标。 否则，跳过该目标。  
   
@@ -104,7 +104,7 @@ ms.lasthandoff: 02/09/2018
   
  有关属性函数详细信息，请参阅[属性函数](../msbuild/property-functions.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [ItemMetadata 元素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)   

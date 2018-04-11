@@ -1,9 +1,9 @@
 ---
-title: "自定义和扩展的域特定语言 |Microsoft 文档"
-ms.custom: 
+title: 自定义和扩展的域特定语言 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7617deb73ecaec835b0100d243b75bc26fd54a17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自定义和扩展域特定语言
 Visual Studio 建模和可视化效果 SDK (VMSDK) 提供可以在其中定义建模工具的多个级别：  
@@ -33,7 +33,7 @@ Visual Studio 建模和可视化效果 SDK (VMSDK) 提供可以在其中定义�
 > [!NOTE]
 >  已更新 DSL 定义文件，不要忘记单击**转换所有模板**在重新生成你的解决方案之前的解决方案资源管理器工具栏中。  
   
-##  <a name="customShapes"></a>本节内容  
+##  <a name="customShapes"></a> 本节内容  
   
 |若要实现这种效果|请参阅本主题|  
 |----------------------------|-------------------------|  
@@ -55,7 +55,7 @@ Visual Studio 建模和可视化效果 SDK (VMSDK) 提供可以在其中定义�
 |启用复制、 剪切和粘贴|设置**启用复制粘贴**属性**编辑器**DSL 资源管理器中的节点。|  
 |每当复制某个元素时，将复制引用链接和它们的目标。 例如，复制注释附加到的项。|设置**传播复制**（由 DSL 定义关系图的域关系的一端所在的行） 的源角色的属性。<br /><br /> 编写代码以覆盖 ProcessOnCopy 以实现更复杂的效果。<br /><br /> 请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)。|  
 |删除、 重新设置父级，或删除元素时重新链接相关的元素。|设置**传播删除**关系角色的值。 对于更复杂的效果，重写`ShouldVisitRelationship`和`ShouldVisitRolePlayer`中的方法`MyDslDeleteClosure`中定义的类**DomainModel.cs**<br /><br /> 请参阅[自定义删除行为](../modeling/customizing-deletion-behavior.md)|  
-|保留形状布局和外观上复制和拖放。|将形状和连接符添加到复制`ElementGroupPrototype`。 最方便的方法重写`ElementOperations.CreateElementGroupPrototype()`<br /><br /> 请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)。|  
+|保留形状布局和外观上复制和拖放。|将形状和连接符添加到复制`ElementGroupPrototype`。 最方便的方法重写 `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)。|  
 |在所选位置（例如当前光标位置）粘贴形状。|重写`ClipboardCommandSet.ProcessOnCopy()`若要使用的位置特定版本`ElementOperations.Merge().`请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)。|  
 |在粘贴上创建更多链接|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |启用从拖放此关系图中，其他 Dsl 和 Windows 元素|请参阅[如何： 添加一个拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)|  

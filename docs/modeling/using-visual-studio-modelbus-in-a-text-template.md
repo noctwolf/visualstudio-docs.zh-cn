@@ -1,9 +1,9 @@
 ---
-title: "文本模板中使用 Visual Studio ModelBus |Microsoft 文档"
-ms.custom: 
+title: 文本模板中使用 Visual Studio ModelBus |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 0184e3b543e509d0e523504c0ea07f6fcc36775f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>在文本模板中使用 Visual Studio ModelBus
 如果您编写读取模型包含的文本模板[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus 引用，你可能想要解决访问目标模型的引用。 在这种情况下，你必须调整文本模板以及引用的域特定语言 (Dsl):  
@@ -263,7 +263,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
 1.  通过使用最小语言解决方案模板创建新的 DSL。 命名语言 MBConsumer 并设置为".consume"的文件扩展名。  
   
-2.  在 DSL 项目中，添加 MBProvider DSL 的程序集的引用。 右键单击`MBConsumer\Dsl\References`，然后单击**添加引用**。 在**浏览**选项卡上，找到`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
+2.  在 DSL 项目中，添加 MBProvider DSL 的程序集的引用。 右键单击`MBConsumer\Dsl\References`，然后单击**添加引用**。 在**浏览**选项卡上，找到 `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
   
      这使你可以创建使用其他 DSL 的代码。 如果你想要创建对多个 Dsl 的引用，则还添加它们。  
   
@@ -408,7 +408,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
      如果该元素上设置 MBR，被引用的模型将打开，并且引用的元素处于选中状态。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [通过使用 Visual Studio Modelbus 集成模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)
  

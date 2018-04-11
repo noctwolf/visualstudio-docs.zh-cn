@@ -1,9 +1,9 @@
 ---
-title: "向依赖项关系图添加自定义体系结构验证 |Microsoft 文档"
-ms.custom: 
+title: 向依赖项关系图添加自定义体系结构验证 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>向依赖项关系图添加自定义体系结构验证
 在 Visual Studio 中，用户可以验证在对照层模型项目中的源代码，以便它们可以验证源代码符合依赖关系图上的依赖关系。 有标准的验证算法，但你可以定义自己的验证扩展。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/09/2018
 > [!WARNING]
 >  创建验证项目之后，请复制本主题末尾的 [示例代码](#example) ，然后根据自己的需要进行编辑。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  请参阅 [要求](../modeling/extend-layer-diagrams.md#prereqs)。  
   
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>在新的 VSIX 中定义层验证程序  
@@ -277,5 +277,5 @@ namespace Validator3
 }  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [扩展依赖项关系图](../modeling/extend-layer-diagrams.md)

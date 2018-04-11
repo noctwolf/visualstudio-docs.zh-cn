@@ -1,9 +1,9 @@
 ---
-title: "MSI 和 VSIX 部署的 DSL |Microsoft 文档"
-ms.custom: 
+title: MSI 和 VSIX 部署的 DSL |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,15 +12,15 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
-在你自己的计算机或其他计算机上，你可以安装的域特定语言。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]已必须在目标计算机上安装。  
+在你自己的计算机或其他计算机上，你可以安装的域特定语言。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 已必须在目标计算机上安装。  
   
-##  <a name="which"></a>VSIX 和 MSI 部署之间进行选择  
+##  <a name="which"></a> VSIX 和 MSI 部署之间进行选择  
  有两种方法可以部署域特定语言：  
   
 |方法|优点|  
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/09/2018
 |VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展)|非常易于部署： 复制和执行**.vsix** DslPackage 项目文件。<br /><br /> 有关详细信息请参阅[安装和使用 VSX 卸载 DSL](#Installing)。|  
 |MSI （安装程序文件）|-允许用户打开[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]通过双击 DSL 文件。<br />-将图标与目标计算机中的 DSL 文件类型关联。<br />-将 XSD （XML 架构） 与 DSL 文件类型关联。 这样可避免警告，当文件加载到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。<br /><br /> 必须将安装项目添加到解决方案以创建 MSI。<br /><br /> 有关详细信息，请参阅[使用 MSI 文件部署 DSL](#msi)。|  
   
-##  <a name="Installing"></a>安装和使用 VSX 卸载 DSL  
+##  <a name="Installing"></a> 安装和使用 VSX 卸载 DSL  
  此方法安装 DSL 后，用户可以从内打开 DSL 文件[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，但不能从 Windows 资源管理器中打开该文件。  
   
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>若要使用 VSX 安装 DSL  
@@ -65,7 +65,7 @@ ms.lasthandoff: 02/09/2018
   
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
-##  <a name="msi"></a>部署中 MSI DSL  
+##  <a name="msi"></a> 部署中 MSI DSL  
  通过为 DSL 定义 MSI (Windows Installer) 文件，你可以允许用户从 Windows 资源管理器中打开 DSL 文件。 您还可以与你的文件扩展名关联的图标和简短说明。 此外，MSI 可以安装可以用于验证 DSL 文件 XSD。 如果你想，也可以将其他组件添加到将在同一时间安装 MSI。  
   
  有关 MSI 文件和其他部署选项的详细信息，请参阅[部署应用程序、 服务和组件](../deployment/deploying-applications-services-and-components.md)。  
@@ -76,7 +76,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  设置`InstalledByMsi`扩展清单中。 这样可以防止 VSX 正在安装和卸载除 MSI。 这是重要信息： 如果将将其他组件包括在 MSI。  
   
-    1.  Open DslPackage\source.extension.tt  
+    1.  打开 DslPackage\source.extension.tt  
   
     2.  以下行之前插入行`<SupportedProducts>`:  
   

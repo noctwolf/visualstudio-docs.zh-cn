@@ -1,9 +1,9 @@
 ---
-title: "更新形状和连接符以反映模型 |Microsoft 文档"
-ms.custom: 
+title: 更新形状和连接符以反映模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 6d50d0258a44553451deed68a8ccf17c60d88965
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>更新形状和连接线以反映模型
 域特定语言中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，你可以反映的基础模型的状态的形状的外观。  
@@ -85,7 +85,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```  
   
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>使用 OnChildConfigured 初始化形状的属性  
- 若要设置形状的属性，第一个时创建，重写`OnChildConfigured()`图类的分部定义中。 关系图类指定在 DSL 定义中，并且生成的代码是在**Dsl\Generated Code\Diagram.cs**。 例如:  
+ 若要设置形状的属性，第一个时创建，重写`OnChildConfigured()`图类的分部定义中。 关系图类指定在 DSL 定义中，并且生成的代码是在**Dsl\Generated Code\Diagram.cs**。 例如：  
   
 ```csharp  
 partial class MyLanguageDiagram  
@@ -110,7 +110,7 @@ partial class MyLanguageDiagram
   
  域属性和非应用商店功能，例如形状的大小，则可以使用此方法。  
   
-##  <a name="OnAssociatedProperty"></a>使用 AssociateValueWith() 更新形状的其他功能  
+##  <a name="OnAssociatedProperty"></a> 使用 AssociateValueWith() 更新形状的其他功能  
  对于一个形状上，例如是否具有阴影或连接器的箭头样式的某些功能公开域属性的功能没有内置方法。  此类功能的更改不受控制的事务系统中。 因此，不合适更新它们使用规则，因为用户执行撤销命令时，不会调用规则。  
   
  相反，您可以通过使用更新此类功能<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>。 在下面的示例中，连接器的箭头样式控制的连接器显示的关系中的域属性值：  
@@ -154,6 +154,6 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`应调用一次为每个你想要注册的域属性。 已调用后，将调用对指定的属性的任何更改`OnAssociatedPropertyChanged()`中存在该属性的模型元素的任何形状。  
+ `AssociateValueWith()` 应调用一次为每个你想要注册的域属性。 已调用后，将调用对指定的属性的任何更改`OnAssociatedPropertyChanged()`中存在该属性的模型元素的任何形状。  
   
  不需要调用`AssociateValueWith()`每个实例。 尽管 InitializeResources 是实例方法，它被调用一次只能为每个形状类。

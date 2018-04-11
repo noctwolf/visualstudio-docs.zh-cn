@@ -1,27 +1,27 @@
 ---
-title: "创建转发记录器 | Microsoft Docs"
-ms.custom: 
+title: 创建转发记录器 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, forwarding loggers
 - MSBuild, logging
 ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
-caps.latest.revision: 
+caps.latest.revision: 9
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6dd9afd2c2ac4e7dab63ec94392f83c8268ea6ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-forwarding-loggers"></a>创建转发记录器
 在多处理器系统上生成项目时，转发记录器允许选择要监视的事件，提高了日志记录效率。 启用转发记录器后，可防止不必要的事件影响中心记录器、降低生成速度以及造成日志混乱。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="multi-processor-aware-loggers"></a>可识别多处理器的记录器  
  在多处理器系统上生成项目时，来自每个处理器的生成消息并不会按统一的顺序自动交错。 因此，必须使用附加到每条消息上的 <xref:Microsoft.Build.Framework.BuildEventContext> 类建立消息分组优先级。 有关多处理器生成的详细信息，请参阅[多处理器环境下的日志记录](../msbuild/logging-in-a-multi-processor-environment.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [生成记录器](../msbuild/build-loggers.md)   
  [多处理器环境下的日志记录](../msbuild/logging-in-a-multi-processor-environment.md)

@@ -1,12 +1,12 @@
 ---
-title: "如何： 向 Visual C# 项目中的 VBA 公开代码 |Microsoft 文档"
-ms.custom: 
+title: 如何： 向 Visual C# 项目中的 VBA 公开代码 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -22,10 +22,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 1b750137a52d30688f69c825f83f72c7cbeebe45
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：向 VBA 公开 Visual C# 项目中的代码
   如果你想要进行相互交互的代码的两个类型，可以公开 Visual C# 项目到 Visual Basic for Applications (VBA) 代码中的代码。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="exposing-code-in-a-visual-c-project"></a>公开 Visual C# 项目中的代码  
  若要使 VBA 代码能够调用 Visual C# 项目中的代码，修改代码，因此对于 COM 可见，并将**ReferenceAssemblyFromVbaProject**属性**True**设计器中。  
   
- 有关演示如何从 VBA 调用 Visual C# 项目中的方法的演练，请参阅[演练： 从 VBA 中 Visual C &#35; 调用代码项目](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)。  
+ 有关演示如何从 VBA 调用 Visual C# 项目中的方法的演练，请参阅[演练： 从 VBA 中 Visual C 调用代码&#35;项目](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)。  
   
 #### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>若要公开到 VBA Visual C# 项目中的代码  
   
@@ -105,11 +105,11 @@ ms.lasthandoff: 02/09/2018
   
 12. 生成项目。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
- [演练： 从 VBA 中 Visual C &#35; 的调用代码项目](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)   
+ [演练： 从 VBA 中 Visual C 调用代码&#35;项目](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [如何：在 Visual Basic 项目中向 VBA 公开代码](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   
