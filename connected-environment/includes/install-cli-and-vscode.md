@@ -8,8 +8,6 @@ curl -L https://aka.ms/get-vsce-mac | bash
 ```
 
 ### <a name="install-on-windows"></a>在 Windows 上安装
-1. 安装[适用于 Windows 的 Git](https://git-scm.com/downloads)，选择默认安装选项。 
-1. 从[此链接](https://storage.googleapis.com/kubernetes-release/release/v1.9.0/bin/windows/amd64/kubectl.exe)下载 kubectl.exe，并将其保存到你路径上的某个位置。
 1. 下载并运行[通连环境 CLI 安装程序](https://aka.ms/get-vsce-windows)。 
 
 ### <a name="install-on-linux"></a>在 Linux 上安装
@@ -23,5 +21,5 @@ curl -L https://aka.ms/get-vsce-mac | bash
 1. 安装扩展： 
 
 ```cmd
-code --install-extension path-to-downloaded-extension/vsce-0.1.0.vsix
+code --install-extension path-to-downloaded-extension/vsce-0.1.1.vsix
 ```

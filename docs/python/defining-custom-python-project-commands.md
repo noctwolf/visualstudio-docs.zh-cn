@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 755313a85c96c826335d390235477d76d68cd17f
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: a8e7f1f05ba6a93e696ee13e2f28305b8784d7c2
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>为 Python 项目定义自定义命令
 
@@ -50,7 +50,7 @@ Visual Studio 中的某些 Python 项目模板已使用其 `.targets` 文件添�
 
 此部分将演示一个使用 python.exe 直接运行项目启动文件的简单示例，帮助你熟悉自定义命令。 （此类命令的作用等同于使用“调试”>“启动但不调试”。）
 
-1. 使用“Python 应用程序”模板新建一个名为“Python-CustomCommands”的项目。 （如果尚不熟悉流程，请参阅[快速入门：基于模板创建 Python 项目](quickstart-02-project-from-template.md)以获取相关说明。）
+1. 使用“Python 应用程序”模板新建一个名为“Python-CustomCommands”的项目。 （如果尚不熟悉流程，请参阅[快速入门：基于模板创建 Python 项目](quickstart-02-python-in-visual-studio-project-from-template.md)以获取相关说明。）
 
 1. 在 `Python_CustomCommands.py` 中添加代码 `print("Hello custom commands")`。
 
@@ -152,7 +152,7 @@ Visual Studio 中的某些 Python 项目模板已使用其 `.targets` 文件添�
 | TargetType | 是 | 指定 Target 属性包含的内容以及如何将其与 Arguments 属性一并使用：<ul><li>可执行文件：运行在 Target 中命名的可执行文件，附加 Arguments 的值，就如在命令行中直接输入一般。 值仅可包含项目名称且不可带有参数。</li><li>脚本：向 Target 中的文件名运行 `python.exe`，再执行 Arguments 中的值。</li><li>模块：在 Target 中运行后接模块名的 `python -m`，再运行 Arguments 中的值。</li><li>代码：运行 Target 中包含的内联代码。 这会忽略 Arguments 值。</li><li>pip：通过 Target 中的命令运行 `pip`，后接 Arguments；但如果 ExecuteIn 设置为“输出”，pip 则假定 `install` 命令并使用 Target 作为包名称。</li></ul> |
 | 目标 | 是 | 要使用的文件名、模块名、代码或 pip 命令（取决于 TargetType）。 |
 | 自变量 | Optional | 指定要赋值给目标的参数字符串（若有）。 请注意，如果 TargetType 是 `script`，则向 Python 项目赋予参数，而不是 `python.exe`。 `code` TargetType 忽略此项。 |
-| ExecuteIn | 是 | 指定要运行命令的环境：<ul><li>控制台：（默认）如同直接在命令行上直接输入 Target 和 Arguments 一样运行它们。 这会在运行 Target 时显示命令窗口，该窗口随后自动关闭。</li><li>consolepause：同样在控制台中操作，但必须按键才能关闭窗口。</li><li>输出：运行 Target 并在 Visual Studio 的“输出”窗口中显示其结果。 如果 TargetType 为“pip”，则 Visual Studio 使用 Target 作为包名称并附加 Arguments。</li><li>repl：在 [Python 交互式窗口](interactive-repl.md)中运行 Target；可选显示名称用作窗口的标题。</li><li>无：与控制台的行为相同。</li></ul>|
+| ExecuteIn | 是 | 指定要运行命令的环境：<ul><li>控制台：（默认）如同直接在命令行上直接输入 Target 和 Arguments 一样运行它们。 这会在运行 Target 时显示命令窗口，该窗口随后自动关闭。</li><li>consolepause：同样在控制台中操作，但必须按键才能关闭窗口。</li><li>输出：运行 Target 并在 Visual Studio 的“输出”窗口中显示其结果。 如果 TargetType 为“pip”，则 Visual Studio 使用 Target 作为包名称并附加 Arguments。</li><li>repl：在 [Python 交互式窗口](python-interactive-repl-in-visual-studio.md)中运行 Target；可选显示名称用作窗口的标题。</li><li>无：与控制台的行为相同。</li></ul>|
 | WorkingDirectory | Optional | 要在其中运行命令的文件夹。 |
 | ErrorRegex<br>WarningRegEx | Optional | 仅可在 ExecuteIn 为 `output` 时使用。 这两个值均指定一个正则表达式，Visual Studio 使用此表达式来分析命令输出，以在“错误列表”窗口中显示错误和警报。 若未指定，则命令不会影响“错误列表”窗口。 有关 Visual Studio 所需内容的详细信息，请参阅[命令的捕获组](#named-capture-groups-for-regular-expressions)。 |
 | RequiredPackages | Optional | 命令的包请求列表，其中命令的格式与 [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) 相同 (pip.readthedocs.io).。 “运行 PyLint”命令，例如指定 `pylint>=1.0.0`。 运行命令之前，Visual Studio 会先检查是否已安装列表中的所有包。 Visual Studio 使用 pip 命令来安装缺少的包。 |
