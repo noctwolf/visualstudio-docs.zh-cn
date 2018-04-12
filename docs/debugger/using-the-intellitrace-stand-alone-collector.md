@@ -74,7 +74,7 @@ ms.lasthandoff: 04/10/2018
   
 5.  [从 Web 应用程序或 SharePoint 应用程序中收集数据](#BKMK_Collect_Data_from_IIS_Application_Pools)  
   
-     或  
+     -或-  
   
      [收集托管应用中的数据](#BKMK_Collect_Data_from_Executables)  
   
@@ -195,7 +195,7 @@ ms.lasthandoff: 04/10/2018
   
              `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
   
-         或  
+         -或-  
   
     -   要设置 Windows 资源管理器（或文件资源管理器）的权限，请：  
   
