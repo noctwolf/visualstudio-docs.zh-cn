@@ -38,7 +38,7 @@ ms.lasthandoff: 04/03/2018
 
 - 重新启动 Visual Studio。 这时会出现一个代理身份验证对话框。 出现提示时，在对话框中输入你的凭据。
 
-- 如果重启 Visual Studio 未能解决问题，这可能是由于你的代理服务器不提示需要提供 http:&#47;&#47;go.microsoft.com 地址的凭据，而是提示需要 &#42;.visualStudio.com 地址的凭据。 对于这些服务器，请考虑将以下 URL 列入到白名单，以取消对 Visual Studio 中所有登录场景的阻止：
+- 如果重启 Visual Studio 未能解决问题，这可能是由于你的代理服务器不提示需要提供 http:&#47;&#47;go.microsoft.com 地址的凭据，而是提示需要 &#42;.visualStudio.com 地址的凭据。 对于这些服务器，请考虑将以下 URL 列入到允许列表，以取消对 Visual Studio 中所有登录场景的阻止：
 
     - &#42;.windows.net
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/03/2018
 
     - &#42;.live.com
 
-- 否则，可以从白名单中删除 http:&#47;&#47;go.microsoft.com 地址，以便在重启 Visual Studio 时出现代理身份验证对话框，以提供 http:&#47;&#47;go.microsoft.com 地址和服务器终结点。
+- 否则，可以从允许列表中删除 http:&#47;&#47;go.microsoft.com 地址，以便在重启 Visual Studio 时出现代理身份验证对话框，以提供 http:&#47;&#47;go.microsoft.com 地址和服务器终结点。
 
     或
 

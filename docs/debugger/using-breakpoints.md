@@ -1,12 +1,12 @@
 ---
-title: "在 Visual Studio 中的调试器中使用断点 |Microsoft 文档"
+title: 在 Visual Studio 中的调试器中使用断点 |Microsoft 文档
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.debug.breakpointswin
@@ -35,7 +35,7 @@ f1_keywords:
 helpviewer_keywords:
 - breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
-caps.latest.revision: 
+caps.latest.revision: 57
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -191,7 +191,7 @@ ms.lasthandoff: 03/15/2018
 > 你可以使用**CTRL + Enter**关闭**断点设置**窗口。
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>在断点条件（C# 和 F #）中使用对象 ID  
- 有时，你想要观察特定对象的行为；例如，你可能想要知道一个对象为何多次被插入到一个集合中。 在 C# 和 F# 中，你可以创建 [引用类型](/dotnet/csharp/language-reference/keywords/reference-types) 的特定实例的对象 ID，并在断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。  若要创建对象 ID，请执行以下操作：  
+ 有时，你想要观察特定对象的行为；例如，你可能想要知道一个对象为何多次插入到一个集合中。 在 C# 和 F# 中，你可以创建 [引用类型](/dotnet/csharp/language-reference/keywords/reference-types) 的特定实例的对象 ID，并在断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。  若要创建对象 ID，请执行以下操作：  
   
 1.  在对象已被创建后的某个时间在代码中设置断点。  
   

@@ -1,14 +1,14 @@
 ---
-title: "将专用网络中的 URL 列入白名单 | Microsoft Docs"
-ms.custom: 
+title: 将专用网络中的 URL 列入允许列表 | Microsoft Docs
+ms.custom: ''
 ms.date: 09/19/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
-ms.assetid: 
+ms.assetid: ''
 author: gewarren
 ms.author: gewarren
 manager: ghogen
@@ -20,7 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/15/2018
 ---
-# <a name="whitelisting-urls-in-a-private-network"></a>将专用网络中的 URL 列入白名单
+# <a name="whitelisting-urls-in-a-private-network"></a>将专用网络中的 URL 列入允许列表
 
 如果在使用防火墙等安全设备的专用网络中使用 Visual Studio，则 Visual Studio 可能无法连接到某些网络资源。 这些资源包括用于登录和授权的 Visual Studio Team Services (VSTS)、NuGet 和 Azure 服务。 如果 Visual Studio 无法连接到上述某个资源，则会出现以下错误消息：
 

@@ -27,15 +27,15 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/03/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务
-如果你或贵组织使用防火墙或代理服务器等安全措施，则会有可能需要将其列入“白名单”的域 URL，以及可能需要打开的端口和协议，以便在安装和使用 Visual Studio 以及 Azure 服务时获得最佳体验。
+如果你或贵组织使用防火墙或代理服务器等安全措施，则会有可能需要将其列入“允许列表”的域 URL，以及可能需要打开的端口和协议，以便在安装和使用 Visual Studio 以及 Azure 服务时获得最佳体验。
 
-* **[安装 Visual Studio](#install-visual-studio)**：这些表包括要加入白名单的域 URL，以便你可访问所需的所有组件和工作负载。
+* **[安装 Visual Studio](#install-visual-studio)**：这些表包括要加入允许列表的域 URL，以便你可访问所需的所有组件和工作负载。
 
-* **[使用 Visual Studio 和 Azure 服务](#use-visual-studio-and-azure-services)**：此表包括要加入白名单的域 URL 以及要打开的端口和协议，以便你可访问所需的所有功能和服务。
+* **[使用 Visual Studio 和 Azure 服务](#use-visual-studio-and-azure-services)**：此表包括要加入允许列表的域 URL 以及要打开的端口和协议，以便你可访问所需的所有功能和服务。
 
 ## <a name="install-visual-studio"></a>安装 Visual Studio
-### <a name="urls-to-whitelist"></a>加入白名单的 URL
-因为 Visual Studio 安装程序从各个域及其下载服务器下载文件，以下是你可能需要在 UI 或部署脚本中以可信方式列入白名单的域 URL。
+### <a name="urls-to-whitelist"></a>加入允许列表的 URL
+因为 Visual Studio 安装程序从各个域及其下载服务器下载文件，以下是你可能需要在 UI 或部署脚本中以可信方式列入允许列表的域 URL。
 
 #### <a name="microsoft-domains"></a>Microsoft 域
 | Domain | 目标 |
@@ -72,8 +72,8 @@ ms.lasthandoff: 04/03/2018
 |  |  | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>使用 Visual Studio 和 Azure 服务
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>加入到白名单的 URL 和要打开的端口和协议
-若要确保在防火墙或代理服务器后面使用 Visual Studio 或 Azure 服务时可访问一切所需的内容，以下是应列入白名单的URL 和你可能需要打开的端口及协议。
+### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>加入到允许列表的 URL 和要打开的端口和协议
+若要确保在防火墙或代理服务器后面使用 Visual Studio 或 Azure 服务时可访问一切所需的内容，以下是应列入允许列表的URL 和你可能需要打开的端口及协议。
 
 | 服务或方案 | DNS 终结点 | 协议 | 端口 | 描述 |
 | --- | --- | --- | --- | --- |

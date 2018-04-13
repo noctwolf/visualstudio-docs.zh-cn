@@ -1,11 +1,12 @@
 ---
-title: "如何： 以编程方式在 Word 文档中插入文本 |Microsoft 文档"
-ms.custom: 
+title: 如何： 以编程方式在 Word 文档中插入文本 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- office-development
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 3e54850bd4cdd66786474f3f823e5e73dc54d344
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -63,7 +65,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]  
   
 ## <a name="replacing-text-in-a-range"></a>替换范围中的文本  
- 如果指定的范围包含文本，则该范围中的所有文本将被插入的文本替换。  
+ 如果指定的范围包含文本，则该范围中的所有文本将由插入的文本替换。  
   
 #### <a name="to-replace-text-in-a-range"></a>若要替换范围中的文本  
   

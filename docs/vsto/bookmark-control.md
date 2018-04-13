@@ -1,12 +1,12 @@
 ---
-title: "Bookmark 控件 |Microsoft 文档"
-ms.custom: 
+title: Bookmark 控件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VST.Toolbox.Bookmark
@@ -47,7 +47,7 @@ ms.lasthandoff: 01/10/2018
  可应用于 <xref:Microsoft.Office.Interop.Word.Bookmark> 的格式设置也可应用于 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 其中包括字体、缩进、间距、编号和样式。  
   
 ## <a name="assigning-text-to-the-bookmark"></a>向书签分配文本  
- <xref:Microsoft.Office.Interop.Word.Bookmark> 对象和 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件之间的另一个差异在于将文本分配给书签时其行为方式的不同。 如果向零长度 <xref:Microsoft.Office.Interop.Word.Bookmark>分配文本，文本将被追加到书签右侧，且书签的长度保持为零。 但是，如果向零长度 <xref:Microsoft.Office.Tools.Word.Bookmark>分配文本，文本将被插入到书签中，且书签的长度将扩展到所插入字符的总数。  
+ <xref:Microsoft.Office.Interop.Word.Bookmark> 对象和 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件之间的另一个差异在于将文本分配给书签时其行为方式的不同。 如果向零长度 <xref:Microsoft.Office.Interop.Word.Bookmark>分配文本，文本将被追加到书签右侧，且书签的长度保持为零。 但是，如果向零长度 <xref:Microsoft.Office.Tools.Word.Bookmark>分配文本，文本将插入到书签中，且书签的长度将扩展到所插入字符的总数。  
   
  <xref:Microsoft.Office.Tools.Word.Bookmark> 控件还具有 <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> 属性。 此属性与 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 的 <xref:Microsoft.Office.Tools.Word.Bookmark.Range%2A> 属性或 <xref:Microsoft.Office.Tools.Word.Bookmark> 对象的 <xref:Microsoft.Office.Interop.Word.Bookmark.Range%2A> 属性上可用的 <xref:Microsoft.Office.Interop.Word.Bookmark> 属性不同。  
   

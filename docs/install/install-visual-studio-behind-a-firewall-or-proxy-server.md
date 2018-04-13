@@ -1,20 +1,20 @@
 ---
-title: "在防火墙或代理服务器后安装 Visual Studio | Microsoft Docs"
-description: 
-ms.custom: 
+title: 在防火墙或代理服务器后安装 Visual Studio | Microsoft Docs
+description: ''
+ms.custom: ''
 ms.date: 08/01/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
-ms.assetid: 
+ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/15/2018
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后安装 Visual Studio
 
-Visual Studio 安装程序从各种域及其下载服务器下载文件。 此页列出了你希望在部署脚本中作为受信任的项列入“白名单”的域 URL。
+Visual Studio 安装程序从各种域及其下载服务器下载文件。 此页列出了你希望在部署脚本中作为受信任的项列入“允许列表”的域 URL。
 
 如果适用于环境，请考虑添加同时使用 HTTP 和 HTTPS 协议的以下域。
 
