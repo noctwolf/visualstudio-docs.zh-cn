@@ -1,11 +1,11 @@
 ---
-title: "Visual Studio 的高效工作提示 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 的高效工作提示 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -40,7 +40,7 @@ ms.lasthandoff: 03/08/2018
 
      若要插入代码片段，请在菜单栏上依次选择“编辑” > “IntelliSense” > “插入代码片段”或“包围方式”，也可以打开文件中的快捷菜单，并依次选择“代码片段” > “插入代码片段”或“包围方式”。 有关详细信息，请参阅[代码片段](../ide/code-snippets.md)。
 
-- **修复内联代码错误**。 通过快速操作，只凭单个操作便可轻松重构、生成或修改代码。 若要应用这些操作，可以使用灯泡图标 ![小灯泡图标](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall")，也可以按 Alt+Enter 或 Ctrl+.。 前提是光标位于相应的代码行上。 有关详细信息，请参阅[快速操作](quick-actions.md)。
+- **修复内联代码错误**。 通过快速操作，只凭单个操作便可轻松重构、生成或修改代码。 若要应用这些操作，可以使用灯泡图标 ![小灯泡图标](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall")，也可以按 Alt+Enter 或 Ctrl+. 前提是光标位于相应的代码行上。 有关详细信息，请参阅[快速操作](quick-actions.md)。
 
 - **显示并编辑代码元素的定义**。 你可以快速显示和编辑定义代码元素（如成员、变量或局部变量）的模块。
 
