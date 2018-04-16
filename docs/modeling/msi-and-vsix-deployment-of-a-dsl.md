@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/10/2018
 ---
@@ -104,7 +104,7 @@ ms.lasthandoff: 04/10/2018
   
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将创建名为的文件**CreateMsiSetupProject.vdproj**。  
   
-6.  在 Windows 资源管理器，复制 Dsl\\*.vdproj 到新的文件夹名为安装程序。  
+6.  在 Windows 资源管理器，复制 Dsl\\\*.vdproj 到新的文件夹名为安装程序。  
   
      （如果你想，你可以现在 CreateMsiSetupProject.tt 从项目中排除 Dsl。）  
   

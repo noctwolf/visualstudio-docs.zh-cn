@@ -17,7 +17,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/10/2018
 ---
@@ -79,7 +79,7 @@ ms.lasthandoff: 04/10/2018
 >  若要将程序代码添加到你的 DSL 定义，创建另一个代码文件中的**Dsl**项目，然后编写分部定义来加强生成的代码文件夹中的类。 有关详细信息，请参阅[编写代码，以自域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
   
 ##  <a name="closure"></a> 定义一个删除闭包  
- 删除操作使用类*YourModel * * * DeleteClosure** 若要确定要删除给定的初始选择哪些元素。 它将重复调用 `ShouldVisitRelationship()` 和 `ShouldVisitRolePlayer()`，从而遍历这些关系图。 可以重写这些方法。 ShouldVisitRolePlayer 提供的链接的元素和位于该链接的角色之一的标识。 它应返回以下值之一：  
+ 删除操作使用类 *YourModel***DeleteClosure** 若要确定要删除给定的初始选择哪些元素。 它将重复调用 `ShouldVisitRelationship()` 和 `ShouldVisitRolePlayer()`，从而遍历这些关系图。 可以重写这些方法。 ShouldVisitRolePlayer 提供的链接的元素和位于该链接的角色之一的标识。 它应返回以下值之一：  
   
 -   **VisitorFilterResult.Yes**-应当删除元素并查看器应继续尝试元素的其他链接。  
   

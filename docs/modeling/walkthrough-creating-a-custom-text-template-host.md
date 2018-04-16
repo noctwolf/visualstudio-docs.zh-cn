@@ -16,12 +16,12 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ad2bc2a049a0a96a8093289af4648f077f2d1478
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>演练：创建自定义文本模板宿主
-A*文本模板 * * 主机*提供一个使环境*文本模板转换引擎*运行。 宿主负责管理引擎与文件系统的交互。 引擎或*指令处理器*需要一个文件或程序集可以从主机请求资源。 然后，宿主可以搜索目录和全局程序集缓存，以查找请求的资源。 有关详细信息，请参阅[文本模板转换过程](../modeling/the-text-template-transformation-process.md)。  
+A *文本模板**主机* 提供一个使环境*文本模板转换引擎*运行。 宿主负责管理引擎与文件系统的交互。 引擎或*指令处理器*需要一个文件或程序集可以从主机请求资源。 然后，宿主可以搜索目录和全局程序集缓存，以查找请求的资源。 有关详细信息，请参阅[文本模板转换过程](../modeling/the-text-template-transformation-process.md)。  
   
  你可以编写自定义主机如果想要使用*文本模板转换*功能从外部[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或如果你想要将该功能集成到自定义工具。 若要创建自定义主机，你必须创建继承自 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> 的类。 有关各方法的文档，请参见 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。  
   

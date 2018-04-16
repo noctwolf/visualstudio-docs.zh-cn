@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/10/2018
 ---
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/10/2018
   
  若要将扩展部署到主[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，和其他计算机，请按照下列步骤：  
   
-1.  查找 VSIX 安装文件，在 VSIX 项目中 bin\\*\\\*.vsix  
+1.  查找 VSIX 安装文件，在 VSIX 项目中 bin\\*\*\\\*.vsix  
   
 2.  将此文件复制到目标计算机，然后在 Windows 资源管理器 （或文件资源管理器） 中，双击它。  
   
