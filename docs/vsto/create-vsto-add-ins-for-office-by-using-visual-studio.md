@@ -1,24 +1,23 @@
 ---
-title: "通过使用 Visual Studio 创建 VSTO 外接 for Office |Microsoft 文档"
-ms.custom: 
+title: 通过使用 Visual Studio 创建 VSTO 外接 for Office |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9a1b95c057163f3a90c8277744d1ec39a2f24cde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 76a81b61c585c0a35b5b535988e559f5e045da13
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 创建 VSTO 外接程序
   可以使用 Visual Studio 中的 Microsoft Office 开发人员工具来创建可扩展 Office 的 .NET Framework 应用程序。 这些应用程序也称为“Office 解决方案” 。  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
 -   [Microsoft Office 开发人员中心](http://go.microsoft.com/fwlink/?LinkId=83467) 包含一些链接，这些链接指向技术文章、代码示例、下载、社区信息、支持以及有关 Office 自定义项和 Office 业务应用程序 (OBA) 的其他文档。  
   
 ## <a name="in-this-section"></a>本节内容  
- [入门 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  提供一些链接，这些链接指向有关如何配置开发计算机以创建 Office 解决方案、如何开始创建 Office 解决方案以及 Visual Studio 中的 Office 开发的新增功能的信息。  
   
  [升级和迁移 Office 解决方案](../vsto/upgrading-and-migrating-office-solutions.md)  
@@ -86,13 +85,13 @@ ms.lasthandoff: 01/10/2018
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)  
  提供指向示例应用程序和主题的链接，这些主题提供有关执行常规任务的分步说明。  
   
- [常规参考 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [常规参考&#40;Visual Studio 中的 Office 开发&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  提供指向有关 Office 主互操作程序集、清单、用户界面元素和错误信息的详细信息链接。  
   
- [托管引用 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/managed-reference-office-development-in-visual-studio.md)  
+ [托管参考&#40;Visual Studio 中的 Office 开发&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
  提供指向有关在 Office 项目中使用的针对 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的 API 命名空间和类型的链接。 对于在 Office 项目中使用的针对 .NET Framework 3.5 的有关命名空间和类型的 API 参考文档，请参阅 Visual Studio 2008 文档中的下列参考资料部分： [2007 系统托管参考](http://go.microsoft.com/fwlink/?LinkId=160658)。  
   
- [非托管的 API 参考 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
+ [非托管 API 参考&#40;Visual Studio 中的 Office 开发&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  包含一些链接，这些链接指向有关可以使用 COM 接口执行各种操作（例如加载和卸载 Office 应用程序中托管 VSTO 外接程序）方面的信息。  
   
 ## <a name="related-sections"></a>相关章节  

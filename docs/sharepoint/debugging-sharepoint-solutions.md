@@ -1,13 +1,10 @@
 ---
-title: "调试 SharePoint 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 调试 SharePoint 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.WebConfigModificationDialog
 - VS.SharePointTools.Project.DebuggingNotEnabled
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85317332cd6b142bb8e0e916e3d7ac80e4aa836c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>调试 SharePoint 解决方案
   您可以通过使用调试 SharePoint 解决方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 当开始调试，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将项目文件部署到 SharePoint 服务器，然后打开在浏览器中的 SharePoint 网站的实例。 以下各节说明如何调试 SharePoint 应用程序[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -42,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [启用增强的调试信息](#EnhancedDebug)  
   
-##  <a name="EnableDebug"></a>启用调试  
+##  <a name="EnableDebug"></a> 启用调试  
  当你第一次调试 SharePoint 解决方案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，对话框中向你发出警报的 web.config 文件未配置为启用调试。 （在安装 SharePoint server 时，都会创建 web.config 文件。 有关详细信息，请参阅[使用 Web.config 文件](http://go.microsoft.com/fwlink/?LinkID=149266)。)对话框中显示的任一运行项目，而调试或修改 web.config 文件的选项，以启用调试。 如果选择第一个选项，则项目会正常运行。 如果选择第二个选项，则 web.config 文件将配置为：  
   
 -   在调用堆栈上打开 (`CallStack="true"`)  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 -   禁用编译调试 (`<compilation debug="false">`)  
   
-##  <a name="Deployment"></a>F5 调试和部署过程  
+##  <a name="Deployment"></a> F5 调试和部署过程  
  在调试模式下运行你的 SharePoint 项目时，SharePoint 部署过程将执行以下任务：  
   
 1.  运行的可自定义预先部署命令。  
@@ -118,16 +115,16 @@ ms.lasthandoff: 01/10/2018
   
 12. 在 Web 浏览器中显示相应的库、 列表或网站页。  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]每个任务完成后，请在输出窗口中显示的状态消息。 如果无法完成任务，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]在错误列表窗口中显示一条错误消息。  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 每个任务完成后，请在输出窗口中显示的状态消息。 如果无法完成任务，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]在错误列表窗口中显示一条错误消息。  
   
-##  <a name="Features"></a>SharePoint 项目功能  
+##  <a name="Features"></a> SharePoint 项目功能  
  一个功能是功能的一个可移植的站点修改使用简化的站点定义的模块化单元。 它也是一个软件包[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)](WSS) 元素的特定作用域可以激活，以帮助用户完成特定目标或任务。 模板作为功能进行部署。  
   
  当在调试模式下运行项目时，部署过程将创建的文件夹中*功能*在 %COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES 目录。 功能名称具有格式*项目名称*_Feature*x*，如 TestProject_Feature1。  
   
  功能目录中的解决方案的文件夹包含*功能定义*文件和一个*工作流定义*文件。 将功能定义文件 (Feature.xml) 描述的文件在项目的功能。 项目定义文件 (Elements.xml) 描述项目模板。 在找不到 Elements.xml**解决方案资源管理器**，但 Feature.xml 在创建解决方案包时生成。 有关这些文件的详细信息，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。  
   
-##  <a name="Workflow"></a>调试工作流  
+##  <a name="Workflow"></a> 调试工作流  
  调试工作流项目时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将 （具体取决于其类型） 的工作流模板添加到库或列表。 手动或通过添加或更新项，你可以随后启动工作流模板。 然后，可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试工作流。  
   
 > [!NOTE]  
@@ -137,12 +134,12 @@ ms.lasthandoff: 01/10/2018
   
  例如，如果你指定在工作流可以手动启动，请直接从库或列表中的项中启动工作流。 有关如何手动启动工作流的详细信息，请参阅[手动对文档项启动工作流](http://go.microsoft.com/fwlink/?LinkID=79938)。  
   
-##  <a name="FeatureEvents"></a>调试功能事件接收器  
+##  <a name="FeatureEvents"></a> 调试功能事件接收器  
  默认情况下，当你运行[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 应用程序，它的功能自动激活为你在 SharePoint 服务器上。 但是，这会导致问题在调试功能事件接收器，因为当通过激活功能[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，它在不同于调试器进程中运行。 这意味着某些调试功能，如断点，将无法在正常工作。  
   
  若要禁用自动激活 SharePoint 中的功能并允许进行适当的调试功能事件接收器，项目的值设置**活动部署配置**属性**无激活**之前调试。 然后，在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中开始调试 SharePoint 应用程序后，在 SharePoint 中手动激活此功能。 若要激活该功能，请打开**站点操作**在 SharePoint 中，菜单中，选择**站点设置**，选择**管理站点功能**链接，然后依次**激活**功能，以继续调试恢复为正常旁边的按钮。  
   
-##  <a name="EnhancedDebug"></a>启用增强的调试信息  
+##  <a name="EnhancedDebug"></a> 启用增强的调试信息  
  由于之间不时地进行复杂的交互[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]过程 (devenv.exe) [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 主机进程 (vssphost4.exe)、 SharePoint 和 WCF 层，可以是诊断构建、 部署和等时，会出现的错误挑战。 若要帮助你解决此类错误，可以启用增强的调试信息。 若要执行此操作，请转到 Windows 注册表中的以下注册表项：  
   
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools]  
