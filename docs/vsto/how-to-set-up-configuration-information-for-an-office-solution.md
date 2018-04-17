@@ -1,12 +1,10 @@
 ---
-title: "如何： 设置以便为 Office 解决方案的配置信息 |Microsoft 文档"
-ms.custom: 
+title: 如何： 设置以便为 Office 解决方案的配置信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - configuration files [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6f604fa40a9816d5e46593bc50fcb91f82d13325
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9659872fa6cb4e294d1757412862c10e42cde2e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>如何：为 Office 解决方案设置配置信息
   配置文件可用于配置特定于你的 Office 解决方案的设置。 你可以指定设置，如程序集绑定策略、 远程处理对象、 调试和跟踪设置。  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  在**名称**框中，键入相同的名称为程序集加上扩展名.config。例如，调用 ExcelWorkbook1.dll Excel 项目程序集的配置文件将被命名为 ExcelWorkbook1.dll.config。  
   
-5.  单击 **“添加”**。  
+5.  单击 **添加**。  
   
 6.  创建你根据应用程序配置文件架构的配置文件。 有关详细信息，请参阅[的.NET Framework 配置文件架构](/dotnet/framework/configure-apps/file-schema/index)。  
   

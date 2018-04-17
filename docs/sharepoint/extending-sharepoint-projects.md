@@ -1,12 +1,10 @@
 ---
-title: "扩展 SharePoint 项目 |Microsoft 文档"
-ms.custom: 
+title: 扩展 SharePoint 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 403ff3793dfd5ae4211444868af8c37dbd908672
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 622596249e92d73dd4f504a445d43405847e9629
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-projects"></a>扩展 SharePoint 项目
   当你想要自定义 SharePoint 项目的项目级别功能，请创建一个项目扩展。 例如，你可以添加自定义项目属性中，或用户开发的 Visual Studio 中的 SharePoint 解决方案时引发的项目级事件做出响应。  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
  有关演示如何创建、 部署和测试项目扩展的演练，请参阅[演练： 创建 SharePoint 项目扩展](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)。  
   
 ## <a name="understanding-the-relationship-between-project-extensions-and-project-instances"></a>了解项目扩展和项目实例之间的关系  
- 当你创建项目扩展时，该扩展加载任何类型的 SharePoint 项目中打开时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包括多种 SharePoint 项目模板，例如列表定义、 内容类型和事件接收器。 但是，没有只有一个 SharePoint 项目类型。 出现在项目类型**新项目**对话框是仅将捆绑在一起的一个或多个 SharePoint 项目项的模板。 由于只有一个 SharePoint 项目类型，创建一个项目的扩展将应用于所有 SharePoint 项目。 例如，不能创建一个扩展，仅适用于**内容类型**项目。  
+ 当你创建项目扩展时，该扩展加载任何类型的 SharePoint 项目中打开时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 包括多种 SharePoint 项目模板，例如列表定义、 内容类型和事件接收器。 但是，没有只有一个 SharePoint 项目类型。 出现在项目类型**新项目**对话框是仅将捆绑在一起的一个或多个 SharePoint 项目项的模板。 由于只有一个 SharePoint 项目类型，创建一个项目的扩展将应用于所有 SharePoint 项目。 例如，不能创建一个扩展，仅适用于**内容类型**项目。  
   
  若要访问的特定项目实例，处理之一<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>的事件*projectService*的实现中的参数<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法。 例如，若要确定 SharePoint 项目添加到解决方案时，处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded>事件。 有关详细信息，请参阅[如何： 创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   

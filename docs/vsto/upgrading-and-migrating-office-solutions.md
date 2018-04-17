@@ -1,13 +1,10 @@
 ---
-title: "升级和迁移 Office 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 升级和迁移 Office 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - migrating Office solutions in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c81cba2c80f8eaabeae15fc5425ed7e02c378123
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 920fc096072cb4304e76ca8171d52d3e40caeb3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-and-migrating-office-solutions"></a>升级和迁移 Office 解决方案
   如果你拥有在 Visual Studio 早期版本中创建的 Microsoft Office 项目，则必须升级该项目以在 Visual Studio 当前版本中使用。 若要升级 Microsoft Office 项目，请在包含 Microsoft Office 开发人员工具的 Visual Studio 版本中打开该项目。 有关包括 Microsoft Office 开发人员工具的版本的 Visual Studio 的详细信息，请参阅[配置计算机以开发 Office 解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
@@ -91,7 +88,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>请参阅  
  [如何：升级 Office 解决方案](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)   
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [将 Office 解决方案迁移到 .NET Framework 4 或更高版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [“选项”对话框，“项目升级”](../vsto/project-upgrade-options-dialog-box.md)  
   
   

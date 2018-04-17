@@ -1,13 +1,10 @@
 ---
-title: "演练： 使用内容控件创建模板 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用内容控件创建模板 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - content controls [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d221b9374bf71df3d66400289c50310263c2e9e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 8c7f5026d4cbe8b7c38b8163ce00d893e1e406f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-template-by-using-content-controls"></a>演练：使用内容控件创建模板
   本演练演示如何创建使用内容控件在 Microsoft Office Word 模板中创建可重用结构化内容的文档级自定义项。  
@@ -63,7 +60,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  具有名称创建一个 Word 模板项目**MyBuildingBlockTemplate**。 在向导中，选择在解决方案中创建新的文档。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]在设计器中打开新的 Word 模板并将添加**MyBuildingBlockTemplate**项目合并为**解决方案资源管理器**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在设计器中打开新的 Word 模板并将添加**MyBuildingBlockTemplate**项目合并为**解决方案资源管理器**。  
   
 ## <a name="creating-the-employee-table"></a>创建员工表  
  创建一个包含四种不同类型的内容控件的表格，用户可以在其中输入有关员工的信息。  
@@ -244,8 +241,8 @@ ms.lasthandoff: 01/10/2018
  [内容控件](../vsto/content-controls.md)   
  [如何： 向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [如何： 使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [宿主项和宿主控件概述](../vsto/host-items-and-host-controls-overview.md)   
+ [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [在运行时将控件添加到 Office 文档](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   

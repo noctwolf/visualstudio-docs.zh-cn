@@ -1,12 +1,10 @@
 ---
-title: "演练： 扩展 SharePoint 项目项类型 |Microsoft 文档"
-ms.custom: 
+title: 演练： 扩展 SharePoint 项目项类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e2f39fc15d73b2019e739d7695f40cf0e3fd0940
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ed2c425af4127af443254bfdc269d58c653bb3c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>演练：扩展 SharePoint 项目项类型
   你可以使用**业务数据连接模型**用于在 SharePoint 中创建业务数据连接 (BDC) 服务的型号项目项。 默认情况下，通过使用此项目项，创建模型时模型中的数据是不向用户显示。 你还必须在 SharePoint，以使用户能够查看数据中创建外部列表。  
@@ -80,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  在**名称**框中，输入**GenerateExternalDataLists**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**GenerateExternalDataLists**项目合并为**解决方案资源管理器**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**GenerateExternalDataLists**项目合并为**解决方案资源管理器**。  
   
 7.  如果未自动打开 source.extension.vsixmanifest 文件中，在 GenerateExternalDataLists 项目中，打开其快捷菜单，然后选择**打开**  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  在**名称**框中，输入**BdcProjectItemExtension**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**BdcProjectItemExtension**到解决方案的项目并打开默认 Class1 代码文件。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**BdcProjectItemExtension**到解决方案的项目并打开默认 Class1 代码文件。  
   
 6.  从项目中删除 Class1 代码文件。  
   

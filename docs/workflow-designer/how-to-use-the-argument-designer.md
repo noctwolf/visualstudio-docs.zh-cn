@@ -1,5 +1,5 @@
 ---
-title: "如何： 使用自变量设计器 |Microsoft 文档"
+title: 如何： 使用自变量设计器 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe9e4f7a3f4bc603d3f2661b91c5807bea8e4a6
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: b5f4af6e06bbebe3f543deed68ff85f4cd0a39be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-argument-designer"></a>如何：使用自变量设计器
 与以前版本的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 相比，该参数设计器使数据流入和流出某个活动更容易。 通过单击访问设计器**参数**设计画布左下角的按钮。 该设计器包含显示在表格窗体和可以按每一列标题排序除外的自变量列表**默认值**列。 每个自变量都包含名称、输入/输出/输入-输出/属性方向、类型和默认表达式值（如果有）。 名称和默认的表达式值都是可编辑的文本字段，类型和方向是下拉项。 有关详细信息，请参阅[变量和自变量 (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)。

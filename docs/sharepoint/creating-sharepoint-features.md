@@ -1,12 +1,10 @@
 ---
-title: "创建 SharePoint 功能 |Microsoft 文档"
-ms.custom: 
+title: 创建 SharePoint 功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9fa42efc654bd3835a4f1ec1a5002136813550a0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-features"></a>创建 SharePoint 功能
   SharePoint 功能可用于更易于部署的相关的 SharePoint 项目项进行分组。 你可以创建功能、 设置作用域，并通过使用 SharePoint 功能设计器将其他功能标记为依赖关系。 设计器还会生成一个清单，这是一个 XML 文件，描述每个功能。  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 |属性|描述|  
 |--------------|-----------------|  
-|标题|可选。 该功能的默认标题设置为*SolutionName**FeatureName*。|  
+|标题|可选。 该功能的默认标题设置为*解决方案名称 * * FeatureName*。|  
 |描述|可选。 SharePoint 功能的说明。|  
 |范围|必须的。 如果通过创建一项功能**解决方案资源管理器**，作用域默认设置为 Web。<br /><br /> -场： 激活的整个服务器场的功能。<br /><br /> 站点： 激活网站集中的所有 web 站点的功能。<br /><br /> -Web： 激活特定网站的功能。<br /><br /> -Web 应用程序： 激活某项功能的 web 应用中的所有 web 站点。|  
 |解决方案中的项|可以添加到该功能的所有 SharePoint 项。|  

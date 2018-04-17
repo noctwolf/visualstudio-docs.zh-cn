@@ -1,6 +1,6 @@
 
 # [分析文档](index.md)
-# 概述
+# [概述](profiling-overview.md)
 # 快速入门
 ## [初探分析](profiling-feature-tour.md)
 ## [分析 CPU 使用情况（托管）](quickstart-cpu-usage-managed.md)
@@ -208,15 +208,15 @@
 ##### [使用 VSPerfASPNETCmd 进行快速网站分析](rapid-web-site-profiling-with-vsperfaspnetcmd.md)
 ##### [使用探查器采样方法通过命令行收集 ASP.NET Web 应用程序的应用程序统计信息](collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)
 ###### [如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集应用程序统计信息](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)
-##### [使用探查器检测方法通过命令行收集 ASP.NET Web 应用程序的详细计时数据](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)
+##### [使用探查器检测方法通过命令行收集 ASP.NET Web 应用程序的详细计时数据](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)
 ###### [如何：使用探查器命令行检测静态编译的 ASP.NET Web 应用程序，并收集详细计时数据](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
-###### [如何：使用探查器命令行检测动态编译的 ASP.NET Web 应用程序，并收集详细计时数据](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
+###### [如何：使用探查器命令行检测动态编译的 ASP.NET Web 应用程序，并收集详细计时数据](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler.md)
 ##### [使用探查器命令行收集 ASP.NET Web 应用程序的并发数据](collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)
 ###### [如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集并发数据](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)
 ##### [使用探查器命令行收集 ASP.NET Web 应用程序的内存数据](collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)
 ###### [如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集内存数据](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)
 ###### [如何：使用探查器命令行检测静态编译的 ASP.NET Web 应用程序，并收集内存数据](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
-###### [如何：使用探查器命令行检测动态编译的 ASP.NET Web 应用程序，并收集内存数据](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+###### [如何：使用探查器命令行检测动态编译的 ASP.NET Web 应用程序，并收集内存数据](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
 ##### [如何：将 Web.Config 文件修改为检测和分析动态编译的 ASP.NET Web 应用程序](how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications.md)
 #### [通过命令行分析服务](command-line-profiling-of-services.md)
 ##### [使用探查器采样方法收集服务的应用程序统计信息](collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)

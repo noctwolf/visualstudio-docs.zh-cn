@@ -1,13 +1,10 @@
 ---
-title: "Office 解决方案开发概述 (VSTO) |Microsoft 文档"
-ms.custom: 
+title: Office 解决方案开发概述 (VSTO) |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f36b75b8c8c3cde4441520819ab566696d1d9066
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 解决方案开发概述 (VSTO)
   通过将 Microsoft Office 用作解决方案的前端，你可以利用熟悉的 Microsoft Office 用户界面和工具，例如 Word 中的文字处理功能、Excel 的数据分析功能、数据分析功能和 Outlook 的电子邮件管理功能。 你可以在 Visual Studio 中开发解决方案以自定义 Office 应用程序并添加业务流程所需的特定功能。 例如，你可以将 Word 转化为协定生成器，收集可进行编辑或不可编辑的预存在部件外部的协定。 通过使用 Excel，你可以为不同项目创建定制的自动化预算工作表。 你的用户也可以脱机使用 Office 解决方案，使复杂的解决方案比起在使用基于 Web 的体系结构时更简单实用。  
@@ -91,7 +88,7 @@ ms.lasthandoff: 01/10/2018
  当安装和加载 VSTO Office 解决方案时，将由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 对该解决方案强制进行一系列安全性检查。 这些检查包括验证部署清单的位置是否受信任或用于对部署清单签名的证书是否受信任。 有关详细信息，请参阅 [Securing Office Solutions](../vsto/securing-office-solutions.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [入门 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)   
  [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
  [入门文档级自定义项编程 for Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   

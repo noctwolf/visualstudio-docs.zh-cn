@@ -1,5 +1,5 @@
 ---
-title: "活动视图 （旧版） |Microsoft 文档"
+title: 活动视图 （旧版） |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 83dc68cd-2cb2-45c2-9a6e-10d82053171a
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10661aa3f12b83a383defaa204b5bba0b93e236a
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2cc053be2f9d11a9a1f3cd48c6c9d24e366410c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="activity-views-legacy"></a>活动视图（旧版）
 提供的活动的许多[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]，包括工作流，具有旧的 Windows 工作流设计器中可用的多个设计视图。 当将某个活动设计器从**工具箱**拖到设计图面中，并且之后每当选择该活动时，你可以通过使用不同的设计视图之间进行切换**工作流**菜单或通过右键单击选定的活动。 同时，当您将指针移到选定活动的名称上时，将出现一组以下拉方式显示的选项卡，可以用来在不同的视图之间切换。

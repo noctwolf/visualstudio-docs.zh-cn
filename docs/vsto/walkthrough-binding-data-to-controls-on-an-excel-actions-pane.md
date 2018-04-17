@@ -1,12 +1,10 @@
 ---
-title: "演练： 将数据绑定到 Excel 操作窗格上的控件 |Microsoft 文档"
-ms.custom: 
+title: 演练： 将数据绑定到 Excel 操作窗格上的控件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8588fef2fc5e9e4737a605e0767b8b68b2f721f4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 87d960c01d8ac28b2a148e2f48ee51a877d97c20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-data-to-controls-on-an-excel-actions-pane"></a>演练：将数据绑定到 Excel 操作窗格上的控件
   本演练演示对 Microsoft Office Excel 中的操作窗格上的控件的数据绑定。 控件演示 SQL Server 数据库中表之间的主/从关系。  

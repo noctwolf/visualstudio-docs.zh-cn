@@ -1,12 +1,10 @@
 ---
-title: "如何： 导入母版页或主题 |Microsoft 文档"
-ms.custom: 
+title: 如何： 导入母版页或主题 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,17 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 07c3e9fb88ea562a85e1c7555d2c57cb04d769ff
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e60977a44593953b4858ea0262befc61c3189cec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>如何：导入母版页或主题
-  你可以通过为提供页你 SharePoint 站点上一致的外观创建和使用母版页和主题。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不提供模板对这些元素，但是，你可在 SharePoint Designer 中创建它们，然后将其导入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关详细信息，请参阅[构建基块： 页和用户界面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 网站上。  
+  你可以通过为提供页你 SharePoint 站点上一致的外观创建和使用母版页和主题。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不提供模板对这些元素，但是，你可在 SharePoint Designer 中创建它们，然后将其导入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关详细信息，请参阅[构建基块： 页和用户界面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 网站上。  
   
 ### <a name="to-import-a-master-page-or-theme"></a>导入母版页或主题  
   

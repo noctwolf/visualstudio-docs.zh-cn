@@ -1,13 +1,10 @@
 ---
-title: "更改为面向.NET Framework 4 或.NET Framework 4.5 的 Office 项目的设计 |Microsoft 文档"
-ms.custom: 
+title: 更改为面向.NET Framework 4 或.NET Framework 4.5 的 Office 项目的设计 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2c6f050e98665d55c7a64261131cef7ba31c684f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>面向 .NET Framework 4 或 .NET Framework 4.5 的 Office 项目设计的更改
   从 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]开始，Visual Studio 引入了对面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的 Office 项目设计的一些更改。 如果你熟悉以前的 Visual Studio 版本中的 Office 项目，那么在开发面向 .NET Framework 4.0 或更高版本的 Office 项目之前，应了解这些更改。 默认情况下，使用 Visual Studio 2013 或更高版本创建的所有项目都面向 .NET Framework 4.0 或更高版本。  
@@ -59,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 |GetVstoObject 和 HasVstoObject 方法的语法已更改|必须在从主互操作程序集 (Pia) 的本机对象上访问这些或可以访问由你的项目中的 Globals.Factory 属性返回的对象上的这些方法时的 Globals.Factory 对象传递给这些方法。 有关详细信息，请参阅[更新 Excel 和 Word 项目迁移到.NET Framework 4 或.NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|  
 |Word 内容控件的事件与新委托相关联。|必须将处理 Word 内容控件的事件的任何代码修改为指定新委托。 有关详细信息，请参阅[更新 Excel 和 Word 项目迁移到.NET Framework 4 或.NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|  
 |OLEObject 和 OLEControl 类已重命名。|必须将使用这些类的实例的任何代码改为使用 <xref:Microsoft.Office.Tools.Excel.ControlSite> 或 <xref:Microsoft.Office.Tools.Word.ControlSite> 对象。 有关详细信息，请参阅[更新 Excel 和 Word 项目迁移到.NET Framework 4 或.NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|  
-|主机项类，如`ThisWorkbook`， `Sheet`  *n* ， `ThisDocument`，和`ThisAddIn`，不再提供可以重写的 Dispose 方法。|你必须将移动任何代码中的 Dispose 方法重写到关闭事件处理程序在主机项类中，例如， `ThisAddIn_Shutdown`，并从主机项类删除 Dispose 方法重写。|  
+|主机项类，如`ThisWorkbook`， `Sheet` *n*， `ThisDocument`，和`ThisAddIn`，不再提供可以重写的 Dispose 方法。|你必须将移动任何代码中的 Dispose 方法重写到关闭事件处理程序在主机项类中，例如， `ThisAddIn_Shutdown`，并从主机项类删除 Dispose 方法重写。|  
   
 ## <a name="see-also"></a>请参阅  
  [将 Office 解决方案迁移到 .NET Framework 4 或更高版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   

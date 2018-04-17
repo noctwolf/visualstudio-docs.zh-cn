@@ -1,13 +1,10 @@
 ---
-title: "&lt;自定义&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档"
-ms.custom: 
+title: '&lt;自定义&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customization> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8e1c2c21fe5cf3a038066a47f50fe4b813b277e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 4384dd8bea4fc5829362ccdb06ea3912607cd263
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;自定义&gt;元素 （Visual Studio 中的 Office 开发）
   `customization` 命名空间的 `vstov4` 元素描述特定 Office 解决方案。 对于文档级自定义项和 VSTO 外接程序，子元素是不同的。  
@@ -68,13 +65,13 @@ ms.lasthandoff: 01/10/2018
  `customization` 元素具有以下子元素。  
   
 #### <a name="document"></a>文档  
- `document`中的元素`vstov4`中定义命名空间[&#60; 文档 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/document-element-office-development-in-visual-studio.md).  
+ `document`中的元素`vstov4`中定义命名空间[&#60;文档&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/document-element-office-development-in-visual-studio.md)。  
   
 ### <a name="vsto-add-ins"></a>VSTO 外接程序  
  `customization` 元素具有以下子元素。  
   
 #### <a name="appaddin"></a>appAddin  
- `appAddin`中的元素`vstov4`中定义命名空间[&#60; appAddin &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/appaddin-element-office-development-in-visual-studio.md).  
+ `appAddin`中的元素`vstov4`中定义命名空间[ &#60;appAddin&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)。  
   
 ## <a name="example-of-a-document-level-customization"></a>文档级自定义项示例  
   

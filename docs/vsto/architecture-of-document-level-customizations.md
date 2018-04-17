@@ -1,13 +1,10 @@
 ---
-title: "文档级自定义项的体系结构 |Microsoft 文档"
-ms.custom: 
+title: 文档级自定义项的体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,14 +19,14 @@ helpviewer_keywords:
 - architecture [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09a8700086ec8a718e14764f807e57fcb1f882f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 659950fee0e292a0e0c37a82bb8a18fe2783824d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-document-level-customizations"></a>文档级自定义项的体系结构
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包括用于为 Microsoft Office Word 和 Microsoft Office Excel 创建文档级自定义项的项目。 本主题介绍文档级自定义项的以下方面：  
@@ -42,14 +39,14 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 有关创建文档级自定义项的常规信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)，[入门文档级自定义项编程 Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)，和[入门文档级自定义项编程 Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)。  
+ 有关创建文档级自定义项的常规信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)，[获取启动文档级自定义项编程 word](../vsto/getting-started-programming-document-level-customizations-for-word.md)，和[入门文档级自定义项编程 Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)。  
   
 ##  <a name="UnderstandingCustomizations"></a> Understanding Customizations  
  使用 Visual Studio 中的 Office 开发人员工具生成文档级自定义项时，会创建一个与特定文档关联的托管代码程序集。 带有链接程序集的文档或工作簿被认为具有托管代码扩展。 有关详细信息，请参阅 [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)。  
   
  当用户打开文档时，Microsoft Office 应用程序会加载程序集。 加载程序集后，自定义项将能在文档处于打开状态时对事件做出响应。 自定义项也可以调入对象模型，以便在文档处于打开状态时自动化和扩展应用程序，并且自定义项可以使用 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]中的任何类。  
   
- 程序集通过应用程序的主互操作程序集与应用程序的 COM 组件进行通信。 有关详细信息，请参阅[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)和[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ 程序集通过应用程序的主互操作程序集与应用程序的 COM 组件进行通信。 有关详细信息，请参阅[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)和[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  如果用户同时打开多个文档级自定义项，则会在不同的应用程序域中加载每个程序集。 这意味着，一个行为不正确的解决方案不会导致其他解决方案失败。 文档级自定义项设计为与单个应用程序域中的单个文档协同工作。 它们并不会用于跨文档通信。 有关应用程序域的详细信息，请参阅[应用程序域](/dotnet/framework/app-domains/application-domains)。  
   

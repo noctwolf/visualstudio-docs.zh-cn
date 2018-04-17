@@ -1,13 +1,10 @@
 ---
-title: "主机项和主机控件概述 |Microsoft 文档"
-ms.custom: 
+title: 主机项和主机控件概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -39,14 +36,14 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], deleting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1512b4774efea9639f01135932ad076f6630ea12
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 84e0b2cf74eb8c0d3faca8d1c28d3bea91c87f76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="host-items-and-host-controls-overview"></a>宿主项和宿主控件概述
   宿主项和宿主控件是帮助向通过使用 Visual Studio 中的 Office 开发工具创建的 Office 解决方案提供编程模型的类型。 宿主项和宿主控件与基于 COM 的 Microsoft Office Word 和 Microsoft Office Excel 的对象模型交互，但更像与托管对象（如 Windows 窗体控件）进行交互。  
@@ -79,7 +76,7 @@ ms.lasthandoff: 01/10/2018
   
  <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项并不会充当具有用户界面的控件的容器。 相反，此宿主项的设计器充当组件栏，这使你可以将一个组件（如 <xref:System.Data.DataSet>拖动到其设计图面上。 有关详细信息，请参阅 [Workbook Host Item](../vsto/workbook-host-item.md)。  
   
- 宿主项不能在文档级项目中以编程方式创建。 请改用`ThisDocument`， `ThisWorkbook`，或`Sheet`  *n*  Visual Studio 自动生成你的项目中在设计时的类。 这些生成的类派生自宿主项，并提供代码的入口点。 有关更多信息，请参见 [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
+ 宿主项不能在文档级项目中以编程方式创建。 请改用`ThisDocument`， `ThisWorkbook`，或`Sheet` *n* Visual Studio 自动生成你的项目中在设计时的类。 这些生成的类派生自宿主项，并提供代码的入口点。 有关更多信息，请参见 [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
   
 ### <a name="understanding-host-items-in-vsto-add-in-projects"></a>了解 VSTO 外接程序项目中的宿主项  
  在创建 VSTO 外接程序时，默认情况下你没有访问任何宿主项的权限。 但是，可以在运行时在 Word 和 Excel VSTO 加载项中生成 <xref:Microsoft.Office.Tools.Word.Document>、 <xref:Microsoft.Office.Tools.Excel.Workbook>和 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项。  
@@ -168,7 +165,7 @@ ms.lasthandoff: 01/10/2018
 >  请不要在文档或工作表的 `Shutdown` 事件处理程序过程中以编程方式删除控件。 发生 `Shutdown` 事件时，UI 元素将不再可用。 如果要在应用程序关闭之前删除控件，请将你的代码添加到另一个事件处理程序中，如 `BeforeClose` 或 `BeforeSave`。  
   
 ### <a name="programming-against-host-control-events"></a>针对宿主控件事件进行编程  
- 宿主控件扩展 Office 对象的一种方法是通过添加事件。 例如，在 Excel 中的 <xref:Microsoft.Office.Interop.Excel.Range> 对象和在 Word 中的 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象不具有事件，但 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 通过添加可编程事件来扩展这些对象。 你可以用访问 Windows 窗体上控件的事件的方式对这些事件进行访问和编码：通过 Visual Basic 中的事件下拉列表和 C# 中的事件属性页。 有关更多信息，请参见 [Walkthrough: Programming Against Events of a NamedRange Control](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
+ 宿主控件扩展 Office 对象的一种方法是通过添加事件。 例如，在 Excel 中的 <xref:Microsoft.Office.Interop.Excel.Range> 对象和在 Word 中的 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象不具有事件，但 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 通过添加可编程事件来扩展这些对象。 你可以用访问 Windows 窗体上控件的事件的方式对这些事件进行访问和编码：通过 Visual Basic 中的事件下拉列表和 C# 中的事件属性页。 有关更多信息，请参见 [演练：根据 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
   
 > [!NOTE]  
 >  不应将 Excel 中 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 对象的 <xref:Microsoft.Office.Interop.Excel.Application> 属性设置为 **false**。 将此属性设置为 **false** 可防止 Excel 引发任何事件，包括宿主控件的事件。  

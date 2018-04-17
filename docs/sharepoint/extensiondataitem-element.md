@@ -1,13 +1,10 @@
 ---
-title: "ExtensionDataItem 元素 |Microsoft 文档"
-ms.custom: 
+title: ExtensionDataItem 元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - ExtensionDataItem element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 65911101f7484b5e97d63df713c3e580c6964fe7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 8c991d3fece3e5997e8d470d168af9eba47c8663
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 元素
   表示键/值格式中的 SharePoint 项目项与相关联的自定义数据项。 键和值必须为字符串。  
@@ -42,7 +39,7 @@ ms.lasthandoff: 01/10/2018
 |特性|描述|  
 |---------------|-----------------|  
 |**Key**|所需**xs: string**属性。<br /><br /> 用于存储和检索数据的项键。|  
-|**“值”**|所需**xs: string**属性。<br /><br /> 数据项目的值。|  
+|**值**|所需**xs: string**属性。<br /><br /> 数据项目的值。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  

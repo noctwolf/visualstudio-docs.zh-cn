@@ -1,12 +1,10 @@
 ---
-title: "如何： 在功能区上显示开发人员选项卡 |Microsoft 文档"
-ms.custom: 
+title: 如何： 在功能区上显示开发人员选项卡 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Developer tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b0a4793de32956e3aa3de2965eef15623785716d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9921c10d8a886eb4051b3d5f3d8392ddc77c2da7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>如何：在功能区上显示“开发人员”选项卡
   访问**开发人员**选项卡功能区中的 Office 应用程序，你必须将它配置为显示该选项卡，因为它不会显示默认情况下。 例如，如果要向 Word 的文档级自定义项添加一个 <xref:Microsoft.Office.Tools.Word.GroupContentControl>，则必须显示该选项卡。  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
   
      ![Outlook 2013 Preview 中的选项按钮](../vsto/media/vsto-office2013-optionsbutton.png "Outlook 2013 Preview 中的选项按钮")  
   
-3.  在*ApplicationName***选项**对话框框中，选择**自定义功能区**按钮。  
+3.  在*ApplicationName * * * 选项** 对话框中，选择**自定义功能区**按钮。  
   
      下图显示**选项**对话框中和**自定义功能区**Excel 2010 中的按钮。 此按钮的位置在本主题顶部附近“适用于”部分中列出的所有其他应用程序中是类似的。  
   

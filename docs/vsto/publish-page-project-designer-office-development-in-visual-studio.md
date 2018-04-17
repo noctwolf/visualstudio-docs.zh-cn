@@ -1,13 +1,10 @@
 ---
-title: "发布页、 项目设计器 （在 Visual Studio 中的 Office 开发） |Microsoft 文档"
-ms.custom: 
+title: 发布页、 项目设计器 （在 Visual Studio 中的 Office 开发） |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.Publish.2007System
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - Property Pages dialog box, Publish [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9cc3fa102c0552893c6f7859a256b7df26e3af5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>项目设计器 ->“发布页”（Visual Studio 中的 Office 开发）
   “项目设计器”  的“发布”  页面用于针对部署配置属性。  
@@ -44,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
  可选的位置包括本地计算机、UNC 文件共享或 HTTP/HTTPS 网站。 路径可以是本地 (*c:\foldername\publishfolder*)、 相对 (*发布\\*)，或完全限定的位置 (*\\\servername\foldername*或 http://*servername/foldername*)。  
   
- 默认情况下，如果安装了 IIS，则发布位置为 *http://localhost/projectname/* ；如果未安装 IIS，则发布位置为 publish\ 目录。  
+ 默认情况下，发布位置是*http://localhost/projectname/*如果必须安装 IIS，或者如果你这样做的 publish\ 目录未安装 IIS。  
   
  **安装文件夹 URL**  
  可选。  

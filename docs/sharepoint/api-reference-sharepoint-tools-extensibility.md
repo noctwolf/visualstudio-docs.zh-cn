@@ -1,13 +1,10 @@
 ---
-title: "API 参考 （SharePoint 工具扩展） |Microsoft 文档"
-ms.custom: 
+title: API 参考 （SharePoint 工具扩展） |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, reference for project and tools extensibility
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a44f54e80ec3b4c91198666ed7066e6308d3e602
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 0aca731f3f57b7c7024135a3d06d7b17481ba924
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>API 参考（SharePoint 工具扩展）
   本部分包含用于扩展 Visual Studio 中的 SharePoint 工具的 API 参考文档。  
@@ -62,7 +59,7 @@ ms.lasthandoff: 01/10/2018
  包含用于为 SharePoint 项目自定义功能和包验证行为的类型。  
   
 ## <a name="see-also"></a>请参阅  
- [引用 &#40;SharePoint 工具扩展 &#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
+ [引用&#40;SharePoint 工具扩展&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [概述的编程模型的 SharePoint 工具扩展](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   

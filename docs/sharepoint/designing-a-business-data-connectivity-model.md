@@ -1,12 +1,10 @@
 ---
-title: "设计业务数据连接模型 |Microsoft 文档"
-ms.custom: 
+title: 设计业务数据连接模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe3de196219091478a30ff07d6c2f5916d423f15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6f34a754562674aacf989c294ff2662ca4f8f28f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>设计业务数据连接模型
   你可以通过将实体和方法添加到模型文件开发业务数据连接 (BDC) 服务的型号。 实体描述数据字段的集合。 例如，实体可以表示数据库中的表。 方法执行如添加、 删除或更新由实体表示的数据的任务。 有关详细信息，请参阅[将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio，可将复制模型中的参数之间的类型描述符。 例如，可以定义名为的类型描述符`CustomerTD`的返回参数`GetCustomer`方法。 你可以复制`CustomerTD`类型描述符中的**BDC 资源管理器**，然后将粘贴到的输入参数的类型描述符`CreateCustomer`方法。 这样会妨碍你无需多次定义相同的类型描述符。  
   
-##  <a name="MethodInstances"></a>方法实例  
+##  <a name="MethodInstances"></a> 方法实例  
  在你创建一个方法，Visual Studio 将添加默认方法实例。 方法实例是一种方法，以及参数的默认值对的引用。 一种方法可以有多个方法实例。 每个实例是一组默认值和方法签名的组合。 有关详细信息，请参阅[如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
  运行项目时，方法实例将显示在 SharePoint 列表上方的下拉列表中。 用户可以选择方法实例来查看数据。  

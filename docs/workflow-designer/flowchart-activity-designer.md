@@ -1,5 +1,5 @@
 ---
-title: "流程图活动设计器 |Microsoft 文档"
+title: 流程图活动设计器 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ f1_keywords:
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd8875fe9215f3ee8f0f187b84c0d38833764e3
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f7db449f538f09a247bc3c67ee26f487a6c81eb0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="flowchart-activity-designer"></a>流程图活动设计器
 <xref:System.Activities.Statements.Flowchart> 活动用于创建定义和管理复杂流控制的工作流。 可以使用代码或 <xref:System.Activities.Statements.Flowchart> 创作 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]。 本主题讲述 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 体验。 Windows 工作流设计器工作流活动设计器使开发人员创作工作流能够以自然的方式。

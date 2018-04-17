@@ -1,13 +1,10 @@
 ---
-title: "演练： 在运行时在 VSTO 外接程序向文档添加控件 |Microsoft 文档"
-ms.custom: 
+title: 演练： 在运行时在 VSTO 外接程序向文档添加控件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding controls at run time
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dcf309bbfdd608a4ca93809804c51006ce7c2dd7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1f26a60bdbd0db2464a8ac479b7534fb63f18cea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>演练：运行时在 VSTO 外接程序中将控件添加到文档
   你可以使用 VSTO 外接程序向任何打开的 Microsoft Office Word 文档添加控件。 本演练演示如何使用功能区来允许用户向文档添加 <xref:Microsoft.Office.Tools.Word.Controls.Button> 或 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。  
@@ -83,14 +80,14 @@ ms.lasthandoff: 01/10/2018
   
 8.  在 **“属性”** 窗口中，更改下列属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**addButtonCheckBox**|  
     |**标签**|**“添加”按钮**|  
   
 9. 将第二个复选框添加到 **group1**，然后更改下列属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**addRichTextCheckBox**|  
     |**标签**|**添加 RTF 控件**|  

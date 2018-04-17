@@ -1,13 +1,10 @@
 ---
-title: "常规参考 （Visual Studio 中的 Office 开发） |Microsoft 文档"
-ms.custom: 
+title: 常规参考 （Visual Studio 中的 Office 开发） |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb41929716fe89e6723f55ce7b87c8dcc7a78bcc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a1bc2816f696d72fd8d574c452701698cc6b655d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>常规参考（Visual Studio 中的 Office 开发）
   本部分包含有关 Visual Studio 中的 Microsoft Office 项目的技术详细信息。  
@@ -40,14 +37,14 @@ ms.lasthandoff: 01/10/2018
  [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)  
  介绍如何使用的 Office 解决方案部署清单。  
   
- [用户界面参考 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
+ [用户界面参考&#40;Visual Studio 中的 Office 开发&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
  列出这些主题介绍在各种对话框、 windows 和其他用户界面显示的选项。  
   
- [错误消息 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/error-messages-office-development-in-visual-studio.md)  
+ [错误消息&#40;Visual Studio 中的 Office 开发&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
  说明 for Office 项目的错误消息的主题列表。  
   
 ## <a name="related-sections"></a>相关章节  
- [入门 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  提供有关安装程序、 项目模板、 Office 主互操作程序集，和中的 Office 开发的新增信息的链接。  
   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)  

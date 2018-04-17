@@ -1,5 +1,5 @@
 ---
-title: "如何： 创建状态机工作流控制台应用程序 （旧版） |Microsoft 文档"
+title: 如何： 创建状态机工作流控制台应用程序 （旧版） |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: d6170b5d-5d4f-48e1-8257-c78604f27eac
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d345afcddaae2e3a139fbf7861b78f57774ead6
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: bc38466c29bbe88202561daf5ee9097367040310
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>如何：创建状态机工作流控制台应用程序（旧版）
 请按照下列步骤创建状态机工作流控制台应用程序项目使用旧的 Windows 工作流设计器提供的[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/12/2018
 
 1.  启动 Visual Studio。
 
-2.  上**文件**菜单上，指向**新建**，然后选择**项目**。
+2.  在“文件”菜单上，指向“新建”，然后选择“项目”。
 
      **“新建项目”** 对话框随即打开。
 

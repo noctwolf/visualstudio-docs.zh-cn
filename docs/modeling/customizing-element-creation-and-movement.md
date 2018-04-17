@@ -2,24 +2,22 @@
 title: 自定义元素创建和移动 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 900011925ff92e5994cd3a82ece621386d63c85b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>自定义元素创建和移动
 你可以允许将拖动到另一个字符串，从工具箱中，也可在粘贴或移动操作中的元素。 你可以移动的元素链接到目标元素中，使用你指定的关系。  
@@ -230,7 +228,7 @@ ms.lasthandoff: 04/10/2018
   
 5.  检查的内容**Dsl\Generated Files\DomainClasses.cs**。 命名方法搜索`MergeRelate`并检查其内容。 这将帮助你编写您自己的版本。  
   
-6.  在新代码文件中，编写一个分部类，接收的类，并重写`MergeRelate`方法。 请记住要调用基方法。 例如：  
+6.  在新代码文件中，编写一个分部类，接收的类，并重写`MergeRelate`方法。 请记住要调用基方法。 例如:   
   
     ```csharp  
     partial class ExampleModel  
@@ -316,7 +314,7 @@ ms.lasthandoff: 04/10/2018
   
      你不应看到不可用的指针，并且你应能够删除新**输入端口**基于现有。 选择新**输入端口**和将其拖到另一个点**组件**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [自定义工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)   
  [线路关系图示例 DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

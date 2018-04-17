@@ -1,12 +1,10 @@
 ---
-title: "演练： 更改缓存中的服务器上的工作簿的数据 |Microsoft 文档"
-ms.custom: 
+title: 演练： 更改缓存中的服务器上的工作簿的数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fcea73cfbd87a4e541654b91463091b08c47b8c0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d9303c165b0c04d36a873ee2ff2aae22365b24e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-cached-data-in-a-workbook-on-a-server"></a>演练：更改服务器上的工作簿中的缓存数据
   本演练演示如何修改而不启动 Excel 通过使用 Microsoft Office Excel 工作簿中缓存的数据集<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类。  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  单击 **“确定”**。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**AdventureWorksDataSet**项目合并为**解决方案资源管理器**并打开**Class1.cs**或**Class1.vb**代码文件。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**AdventureWorksDataSet**项目合并为**解决方案资源管理器**并打开**Class1.cs**或**Class1.vb**代码文件。  
   
 9. 在**解决方案资源管理器**，右键单击**Class1.cs**或**Class1.vb**，然后单击**删除**。 在本演练中不需要此文件。  
   
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  确保**创建新文档**已选中，然后单击**确定**。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]打开**AdventureWorksReport**设计器中的工作簿并将添加**AdventureWorksReport**项目合并为**解决方案资源管理器**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 打开**AdventureWorksReport**设计器中的工作簿并将添加**AdventureWorksReport**项目合并为**解决方案资源管理器**。  
   
 ## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>将数据集添加到 Excel 工作簿项目中的数据源  
  你可以在 Excel 工作簿中显示数据集之前，必须首先将数据集添加到 Excel 工作簿项目中的数据源。  
@@ -239,7 +238,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  单击 **“确定”**。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**DataWriter**项目合并为**解决方案资源管理器**并打开**Program.cs**或**Module1.vb**代码文件。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**DataWriter**项目合并为**解决方案资源管理器**并打开**Program.cs**或**Module1.vb**代码文件。  
   
 ## <a name="changing-data-in-the-cached-dataset-by-using-the-console-application"></a>更改使用控制台应用程序中缓存的数据集的数据  
  使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类在控制台应用程序，以将数据读入本地`AdventureWorksLTDataSet`对象，修改此数据，然后将其保存回缓存的数据集。  

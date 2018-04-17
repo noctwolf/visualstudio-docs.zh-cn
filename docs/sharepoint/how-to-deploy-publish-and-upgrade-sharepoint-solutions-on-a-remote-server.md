@@ -1,12 +1,10 @@
 ---
-title: "如何： 部署、 发布和升级远程服务器上的 SharePoint 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 如何： 部署、 发布和升级远程服务器上的 SharePoint 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 154af4ba9ac4a83c40c5d53a6b292c212aa71503
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 108474e725c95f495bf6eec0f9a2224ca971b3d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何：在远程服务器上部署、发布和升级 SharePoint 解决方案
   除了部署 SharePoint 解决方案到本地系统，你可以将沙盒 SharePoint 解决方案发布到远程站点或本地 SharePoint 站点。 远程发布过程将.wsp 文件复制到 SharePoint 服务器，安装该解决方案，然后，可以激活解决方案。 对它进行更改之后，你还可以升级远程安装的 SharePoint 解决方案。  
@@ -32,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  在**解决方案资源管理器**，打开你想要发布，然后选择沙盒 SharePoint 项目的快捷菜单**发布**。  
   
-2.  在**发布**对话框框中，选择**发布到 SharePoint 站点**选项按钮，然后再联机发布站点，如下面的示例的输入的 URL: **https://mytestsite.sharepoint.microsoftonline.com**。  
+2.  在**发布**对话框框中，选择**发布到 SharePoint 站点**选项按钮，然后再联机发布站点，如下面的示例的输入的 URL: **https://mytestsite.sharepoint.microsoftonline.com**.  
   
 3.  选择**浏览器中打开解决方案库页上，在发布后**选项按钮以查看中的解决方案的列表**解决方案库**发布后的页。  
   

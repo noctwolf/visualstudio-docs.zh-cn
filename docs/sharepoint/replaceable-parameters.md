@@ -1,12 +1,10 @@
 ---
-title: "可替换参数 |Microsoft 文档"
-ms.custom: 
+title: 可替换参数 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, replaceable parameters
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fa002f58ffd749cef9a4cbf9b536a36d7901b105
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 696388ca89102d588bd1a291b6f5689dc08e26a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="replaceable-parameters"></a>可替换参数
   可替换参数，或*令牌*，可以在项目文件内使用，为其实际值在设计时未知的 SharePoint 解决方案项提供值。 它们在功能上类似于标准 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 模板标记。 有关详细信息，请参阅[模板参数](/visualstudio/ide/template-parameters)。  
@@ -54,7 +53,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="tokens-list"></a>标记列表  
  下表列出了可用的标记。  
   
-|name|描述|  
+|名称|描述|  
 |----------|-----------------|  
 |$SharePoint.Project.FileName$|包含项目文件，如"NewProj.csproj"的名称。|  
 |$SharePoint.Project.FileNameWithoutExtension$|不带文件扩展名包含项目文件的名称。 例如，"NewProj"。|  

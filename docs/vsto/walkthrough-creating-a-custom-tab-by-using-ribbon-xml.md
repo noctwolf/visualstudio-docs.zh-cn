@@ -1,12 +1,10 @@
 ---
-title: "演练： 使用功能区 XML 创建自定义选项卡 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用功能区 XML 创建自定义选项卡 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1b736ace651854b3b6a527685e150f6f1ec7194c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 759aee9692ee905e33ce55ff068b74d4a289c78a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-ribbon-xml"></a>Walkthrough: Creating a Custom Tab by Using Ribbon XML
   本演练演示如何通过创建自定义功能区选项卡**功能区 (XML)**项。  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
      有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]打开**ThisAddIn.cs**或**ThisAddIn.vb**代码文件，并添加**MyRibbonAddIn**项目合并为**解决方案资源管理器**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 打开**ThisAddIn.cs**或**ThisAddIn.vb**代码文件，并添加**MyRibbonAddIn**项目合并为**解决方案资源管理器**。  
   
 ## <a name="creating-the-vsto-add-ins-tab"></a>创建 VSTO 外接程序选项卡  
  若要创建**外接程序**选项卡上，添加**功能区 (XML)**到你的项目的项。 在本演练的稍后部分中，将向此选项卡添加一些按钮。  

@@ -1,29 +1,27 @@
 ---
-title: "如何： 截获点击形状或修饰器 |Microsoft 文档"
-ms.custom: 
+title: 如何： 截获点击形状或修饰器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a4e096209c462452a7956f89560edaa74d8678cc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a1eecce61b59016c0fa359f861fc1edb0ebc61a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：截获对形状或修饰器的单击
 以下过程演示如何截获点击形状或图标修饰器。 可以截获单击、 双击、 拖动，而且其他笔势，并进行响应的元素。  
   
 ## <a name="to-intercept-clicks-on-shapes"></a>若要截获在形状上的单击  
- 在 Dsl 项目中，独立于生成的代码文件中，代码文件中编写形状类的分部类定义。 重写`OnDoubleClick()`或其他名称开头的方法之一`On...`。 例如:  
+ 在 Dsl 项目中，独立于生成的代码文件中，代码文件中编写形状类的分部类定义。 重写`OnDoubleClick()`或其他名称开头的方法之一`On...`。 例如:   
   
 ```  
 public partial class MyShape // change  

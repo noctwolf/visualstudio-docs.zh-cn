@@ -1,12 +1,10 @@
 ---
-title: "如何： 自定义内置选项卡 |Microsoft 文档"
-ms.custom: 
+title: 如何： 自定义内置选项卡 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - built-in tabs [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 251c1cf70ab1d528f65d558208f0f2d43e10388a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1343ee966d63b0ddc74bf1e18cbbe8bd6d476a0b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>如何：自定义内置选项卡
   可以将组和控件添加到内置选项卡。内置选项卡是已在 Microsoft Office 应用程序功能区的选项卡。 例如，**数据**选项卡是 Excel 中的内置选项卡。 创建自定义组时，它显示在选项卡末尾，但可以在选项卡上任意移动你的组。  

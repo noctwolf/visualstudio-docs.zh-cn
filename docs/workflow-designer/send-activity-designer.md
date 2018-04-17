@@ -1,5 +1,5 @@
 ---
-title: "Send 活动设计器 |Microsoft 文档"
+title: Send 活动设计器 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ad913623480599f8d299cba438b108a4511ae7
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 13cc79a498ca25e6aada15e4efd20c1928b4379a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-activity-designer"></a>Send 活动设计器
 
@@ -46,8 +46,8 @@ ms.lasthandoff: 03/12/2018
 |<xref:System.ServiceModel.Activities.Send.KnownTypes%2A>|False|此 <xref:System.ServiceModel.Activities.Send> 活动要调用的服务操作的已知类型集合。 此属性应与设置为 <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> 的 <xref:System.Runtime.Serialization.DataContractSerializer> 属性结合使用。 如果使用了 <xref:System.Xml.Serialization.XmlSerializer>，则忽略此项。<br /><br /> 单击旁的省略号按钮**KnownTypes**字段在属性网格中显示**类型集合编辑器**与其可添加相关类型的对话框。<br /><br /> 单击旁的省略号按钮**KnownTypes**字段在属性网格中显示**类型集合编辑器**对话框中可以使用该对话框添加相关类型。 有关使用此框的详细信息，请参阅[类型集合编辑器对话框](../workflow-designer/type-collection-editor-dialog-box.md)主题。|
 |<xref:System.ServiceModel.Activities.Send.ProtectionLevel%2A>|True|指定消息的 <xref:System.Net.Security.ProtectionLevel>。<br /><br /> 1。<xref:System.Net.Security.ProtectionLevel>意味着仅身份验证。<br />2。<xref:System.Net.Security.ProtectionLevel>意味着数据进行签名以帮助确保传输的数据的完整性。<br />3。<xref:System.Net.Security.ProtectionLevel>方法进行加密和签名数据以帮助确保保密性和传输数据的完整性。|
 |<xref:System.ServiceModel.Activities.Send.SerializerOption%2A>|True|<xref:System.ServiceModel.Activities.Send> 活动要调用的服务操作所用的序列化程序。 默认值为 <xref:System.Runtime.Serialization.DataContractSerializer>，它使用提供的数据协定将类型实例序列化和反序列化为 XML 流或文档。|
-|<xref:System.ServiceModel.Activities.Send.Action%2A>|False|指定消息的操作标头。 如果它未显式设置，其默认值为： https://tempuri.org/ {服务协定命名空间} / {服务协定名称} / {操作名称}。 如果该值是对 <xref:System.ServiceModel.Activities.Send> 活动指定的，则接收消息的 <xref:System.ServiceModel.Activities.Receive> 活动必须具有同一值才能正确传递该消息。|
-|<xref:System.ServiceModel.Activities.Send.TokenImpersonationLevel%2A>||<xref:System.Security.Principal.TokenImpersonationLevel> 可用于消息的接收方。 它定义安全模拟级别，控制服务器进程可以向其代表的客户端进程的程度。<xref:System.Security.Principal.TokenImpersonationLevel>指示未分配模拟级别。 <xref:System.Security.Principal.TokenImpersonationLevel> 指示服务器进程无法获取有关客户端的标识信息，且无法模拟客户端。 <xref:System.Security.Principal.TokenImpersonationLevel> 指示服务器进程可以获取有关客户端的信息（如安全标识符和特权），但它无法模拟客户端。 这对于导出自身对象的服务器非常有用，例如，导出表和视图的数据库产品。 在不能使用其他正使用客户端安全上下文的服务的情况下，服务器可以使用检索到的客户端安全信息做出访问验证决策。 <xref:System.Security.Principal.TokenImpersonationLevel> 指示服务器进程可以在其本地系统上模拟客户端的安全上下文。 服务器无法在远程系统上模拟客户端。 <xref:System.Security.Principal.TokenImpersonationLevel> 指示服务器进程可以在远程系统上模拟客户端的安全上下文。|
+|<xref:System.ServiceModel.Activities.Send.Action%2A>|False|指定消息的操作标头。 如果它未显式设置，其默认值为：https://tempuri.org/{service协定命名空间} / {服务协定名称} / {操作名称}。 如果该值是对 <xref:System.ServiceModel.Activities.Send> 活动指定的，则接收消息的 <xref:System.ServiceModel.Activities.Receive> 活动必须具有同一值才能正确传递该消息。|
+|<xref:System.ServiceModel.Activities.Send.TokenImpersonationLevel%2A>||<xref:System.Security.Principal.TokenImpersonationLevel> 可用于消息的接收方。 它定义安全模拟级别，控制服务器进程可以向其代表的客户端进程的程度。<xref:System.Security.Principal.TokenImpersonationLevel> 指示未分配模拟级别。 <xref:System.Security.Principal.TokenImpersonationLevel> 指示服务器进程无法获取有关客户端的标识信息，且无法模拟客户端。 <xref:System.Security.Principal.TokenImpersonationLevel> 指示服务器进程可以获取有关客户端的信息（如安全标识符和特权），但它无法模拟客户端。 这对于导出自身对象的服务器非常有用，例如，导出表和视图的数据库产品。 在不能使用其他正使用客户端安全上下文的服务的情况下，服务器可以使用检索到的客户端安全信息做出访问验证决策。 <xref:System.Security.Principal.TokenImpersonationLevel> 指示服务器进程可以在其本地系统上模拟客户端的安全上下文。 服务器无法在远程系统上模拟客户端。 <xref:System.Security.Principal.TokenImpersonationLevel> 指示服务器进程可以在远程系统上模拟客户端的安全上下文。|
 |<xref:System.ServiceModel.Activities.Send.Endpoint%2A>||<xref:System.ServiceModel.Endpoint> 活动要将消息发送到的 <xref:System.ServiceModel.Activities.Send>。 如果设置此属性<xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A>属性应为**null**。|
 |<xref:System.ServiceModel.Activities.Send.EndpointAddress%2A>||要将消息发送到的 <xref:System.ServiceModel.EndpointAddress>。|
 |<xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A>||终结点配置的名称。 在配置文件中配置终结点时设置此属性。 此属性应设置为中给定的名称**\<终结点 >**配置文件中的元素。 如果设置此属性，<xref:System.ServiceModel.Activities.Send.Endpoint%2A>属性应为**null**。|
@@ -57,6 +57,6 @@ ms.lasthandoff: 03/12/2018
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Receive](../workflow-designer/receive-activity-designer.md)
+- [接收](../workflow-designer/receive-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

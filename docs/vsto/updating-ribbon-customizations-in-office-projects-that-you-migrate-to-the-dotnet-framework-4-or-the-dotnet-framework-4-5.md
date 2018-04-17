@@ -1,13 +1,10 @@
 ---
-title: "更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义项 |Microsoft 文档"
-ms.custom: 
+title: 更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义项 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d3c2e834b3a618bf033ef7f37ca8bbac7d0efcf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 98c5dee34fd40506289cf4a9f31488c3acc710ba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到 .NET Framework 4 或 .NET Framework 4.5 的 Office 项目中的功能区自定义项
   如果你的项目包含通过使用创建的功能区自定义项**功能区 （可视化设计器）**项目项，则必须对你的项目代码进行以下更改，如果目标框架更改为[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本。  
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  在 Visual Basic 项目中，找到文件末尾的 `ThisRibbonCollection` 类。 修改此类的声明，以便它不再从 Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection 继承。  
   
-##  <a name="ribboncontrols"></a>实例化功能区控件  
+##  <a name="ribboncontrols"></a> 实例化功能区控件  
  必须修改可动态实例化功能区控件的任何代码。 在面向.NET Framework 3.5 的项目中，功能区控件是你可以直接在某些方案中进行实例化的类。 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，这些控件是你无法直接实例化的接口。 你必须通过使用由 <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> 对象提供的方法创建控件。  
   
  可通过两种方法来访问 <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> 对象：  
@@ -151,7 +148,7 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|  
   
-##  <a name="ribbonevents"></a>处理功能区事件  
+##  <a name="ribbonevents"></a> 处理功能区事件  
  必须修改可以处理功能区控件的事件的任何代码。 在面向 .NET Framework 3.5 的项目中，这些事件由泛型 <xref:System.EventHandler%601> 委托处理。 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，这些事件现在由其他委托处理。  
   
  下表列出了功能区事件以及在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中与它们关联的委托。  
@@ -192,7 +189,7 @@ this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [将 Office 解决方案迁移到 .NET Framework 4 或更高版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [功能区设计器](../vsto/ribbon-designer.md)  
   
   

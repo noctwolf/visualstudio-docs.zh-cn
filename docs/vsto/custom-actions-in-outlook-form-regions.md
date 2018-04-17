@@ -1,12 +1,10 @@
 ---
-title: "在 Outlook 中的自定义操作窗体区域 |Microsoft 文档"
-ms.custom: 
+title: 在 Outlook 中的自定义操作窗体区域 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 66a4d81728d438a749b46e42b003c02d08f13d67
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1e81528aa5008b7d6f78f560d0bc0139a1e0799a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 窗体区域中的自定义操作
   操作显示使用户能够对 Microsoft Office Outlook 项做出响应的按钮。 例如，若要响应一封邮件，用户单击**答复**，**全部答复**，或**转发**操作按钮。 每个这些操作创建一个新的邮件项，并使用原始项中的信息填充的项的字段。  

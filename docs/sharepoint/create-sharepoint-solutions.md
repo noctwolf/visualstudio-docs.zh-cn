@@ -1,13 +1,10 @@
 ---
-title: "创建 SharePoint 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 创建 SharePoint 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 84cc2df4bd683315676acaa7e3f0eead1c36e859
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 807fa532961edb4f2723858a47dcf1fe87134338
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-sharepoint-solutions"></a>创建 SharePoint 解决方案
   你可以将在 Visual Studio 中创建 SharePoint 应用程序作为在 SharePoint 设计器中创建它们的替代方法。 Visual Studio 可通过提供诸如高级调试工具、IntelliSense、语句完成和项目模板等功能加快对 SharePoint 的开发。 Visual Studio 还会利用基于 .NET Framework 的高级工具和语言。 你可以通过使用 Visual Basic 或 Visual C# 来开发 SharePoint 项目，也可以通过使用 JavaScript 来开发 SharePoint 应用程序。  
@@ -36,7 +33,7 @@ ms.lasthandoff: 01/10/2018
   
 |||  
 |-|-|  
-|![文档](../sharepoint/media/vs-icon-documentation.gif "文档")|**文档**<br /><br /> -   [入门 &#40;Visual Studio &#41; 中的 SharePoint 开发](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)<br />-   [本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
+|![文档](../sharepoint/media/vs-icon-documentation.gif "文档")|**文档**<br /><br /> -   [入门&#40;Visual Studio 中的 SharePoint 开发&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)<br />-   [本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
 |![文档](../sharepoint/media/vs-icon-documentation.gif "文档")|**特色的任务**<br /><br /> -   [演练： 创建网站栏、 内容类型和 SharePoint 列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [如何： 创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [如何： 创建 SharePoint Web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [如何： 为 SharePoint 应用程序页创建用户控件或 Web 部件](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
 |![演练](../sharepoint/media/vs-icon-walkthroughs.gif "演练")|**演练**<br /><br /> -   [SharePoint 开发演练](../sharepoint/sharepoint-development-walkthroughs.md)|  
 |![代码示例](../sharepoint/media/vs-icon-codesamples.gif "代码示例")|**代码示例**<br /><br /> -   [SharePoint 开发示例](../sharepoint/sharepoint-development-samples.md)<br />-   [SharePoint 开发人员工具下载](http://msdn.microsoft.com/sharepoint/aa905690.aspx)|  

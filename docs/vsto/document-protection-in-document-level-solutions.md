@@ -1,12 +1,10 @@
 ---
-title: "文档在文档级解决方案中的保护 |Microsoft 文档"
-ms.custom: 
+title: 文档在文档级解决方案中的保护 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 815bd65f9e1a0182736b2cc68d06c5f289fd4f68
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 546a74179b8bdf52541d771809426b5e4aec3e45
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-protection-in-document-level-solutions"></a>文档级解决方案中的文档保护
   你可以使用 Microsoft Office Word 和 Microsoft Office Excel 文档级项目中的保护的功能。 这些功能可以阻止未经授权的用户对受保护的文档部分进行更改。  

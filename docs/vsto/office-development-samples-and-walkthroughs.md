@@ -1,12 +1,10 @@
 ---
-title: "Office 开发示例和演练 |Microsoft 文档"
-ms.custom: 
+title: Office 开发示例和演练 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - examples [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d13c91bebf92632e0c53f4eda9d2b771f37f1949
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f70b2f786453bf194a6287d7254363d45c41c49b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 开发示例和演练
   本部分包含示例应用程序、 示例代码和说明语法、 结构和技术用于生成 Microsoft Office 解决方案的分步演练。  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 |主题|描述|  
 |-----------|-----------------|  
-|[入门 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/getting-started-office-development-in-visual-studio.md)|提供有关安装程序、 项目模板、 Office 主互操作程序集，和中的 Office 开发的新增信息的链接。|  
+|[入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|提供有关安装程序、 项目模板、 Office 主互操作程序集，和中的 Office 开发的新增信息的链接。|  
 |[Visual Studio 中 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)|从开发人员和最终用户的角度介绍如何将托管的代码 Office 解决方案的工作，并包括有关如何将托管代码适用于 Office 文档和应用程序的信息。|  
 |[Office 编程中的常规任务](../vsto/common-tasks-in-office-programming.md)|列出有关与 Visual Studio 中的 Office 开发的编程的常见问题并提供指向可帮助解决常见问题的主题。|  
 |[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)|提供指向有关如何创建 Microsoft Office 解决方案以及你的解决方案中的程序集的角色的信息。|  

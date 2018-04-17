@@ -1,12 +1,10 @@
 ---
-title: "BDC 模型设计工具概述 |Microsoft 文档"
-ms.custom: 
+title: BDC 模型设计工具概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Method_Details
 - VS.SharePointTools.BDC.Explorer
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designer
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 89b497221e17402567970588a5b55a49fec3d705
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 088afa321e5f4026735e88c3068900b0bfc8c07c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型设计工具概述
   你可以通过使用 BDC 设计器中，设计业务数据连接 (BDC) 模型**BDC 方法详细信息**窗口中，与**BDC 资源管理器**。  

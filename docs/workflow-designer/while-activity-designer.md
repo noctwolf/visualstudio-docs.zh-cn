@@ -1,5 +1,5 @@
 ---
-title: "While 活动设计器 |Microsoft 文档"
+title: While 活动设计器 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 541113e598246cf20f9fe625f57c51f68d7e9ca8
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2c5b75a2575a7e8d6eeed4f42a269849bc2df899
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="while-activity-designer"></a>While 活动设计器
 <xref:System.Activities.Statements.While>活动执行中包含的活动其<xref:System.Activities.Statements.While.Body%2A>时指定<xref:System.Activities.Statements.While.Condition%2A>计算结果为**true**。 包含的活动可能永远都不会执行。 如果希望所包含的活动至少执行一次，请改用 <xref:System.Activities.Statements.DoWhile> 活动。

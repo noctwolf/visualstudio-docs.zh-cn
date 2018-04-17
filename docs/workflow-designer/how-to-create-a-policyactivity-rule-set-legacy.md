@@ -1,5 +1,5 @@
 ---
-title: "如何： 创建 PolicyActivity 规则集 （旧版） |Microsoft 文档"
+title: 如何： 创建 PolicyActivity 规则集 （旧版） |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: f272489d-3342-4511-8b59-6a0fd7a42d70
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96fcb8dd8e1255863840cae8edd90759af605f1d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 4911912aa46f5dc8a6aea9b9b20e87c1f83e576f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>如何：创建 PolicyActivity 规则集（旧版）
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 03/12/2018
 
     -   键入规则集的名称。 单击**rulesetreference**省略号**[…]**，然后选择**编辑**中[选择规则设置对话框 （旧版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)。
 
-         或
+         -或-
 
     -   键入规则集的名称。 展开**rulesetreference**属性并选择省略号**[…]**中**RuleSet 定义**属性。
 

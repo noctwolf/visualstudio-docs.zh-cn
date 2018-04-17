@@ -1,12 +1,10 @@
 ---
-title: "演练： 使用按钮在工作表的文本框中显示文本 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用按钮在工作表的文本框中显示文本 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text boxes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7b88940aa1329bc330e5d8bb7d114c21fac3dacb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e141618fb5b647f0cdb5341627356588df932fed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>演练：使用按钮在工作表的文本框中显示文本
   本演练演示在 Microsoft Office Excel 工作表，以及如何创建使用 Visual Studio 中的 Office 开发工具的 Excel 项目中使用按钮和文本框的基础知识。 若要查看结果为已完成的示例，请参阅 Excel 控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  拖动**按钮**控件拖动到`Sheet1`和更改以下属性：  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**insertText**|  
     |**文本**|**插入文本**|  

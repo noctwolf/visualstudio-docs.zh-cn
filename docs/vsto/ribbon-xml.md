@@ -1,13 +1,10 @@
 ---
-title: "功能区 XML |Microsoft 文档"
-ms.custom: 
+title: 功能区 XML |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.Ribbon.RibbonXMLItem
 dev_langs:
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e12489431a7496b1d64d5aef93a24fcc239be81a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 76527949bcfc5b3023ebd75fe15726b02938d39e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-xml"></a>功能区 XML
   功能区 (XML) 项使你能够通过使用 XML 来自定义功能区。 如果想要通过功能区（可视化设计器）项不支持的方式自定义功能区，请使用功能区 (XML) 项。 有关可以与每个项执行的操作的比较，请参阅[功能区概述](../vsto/ribbon-overview.md)。  
@@ -144,7 +141,7 @@ ms.lasthandoff: 01/10/2018
   
 |方法|描述|  
 |------------|-----------------|  
-|`GetCustomUI`|返回功能区 XML 文件的内容。 Microsoft Office 应用程序调用此方法，以便获得一个定义自定义功能区用户界面的 XML 字符串。 此方法实现 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法。 **注意：** `GetCustomUI`应只为返回功能区 XML 文件中; 的内容而实现不应该用于初始化 VSTO 外接程序中。 特别是，不应在 `GetCustomUI` 实现中尝试显示对话框或其他窗口。 否则，自定义功能区可能无法正确工作。 如果必须运行初始化 VSTO 外接程序的代码，请将代码添加到 `ThisAddIn_Startup` 事件处理程序。|  
+|`GetCustomUI`|返回功能区 XML 文件的内容。 Microsoft Office 应用程序调用此方法，以便获得一个定义自定义功能区用户界面的 XML 字符串。 此方法实现 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法。 **注意：** `GetCustomUI`应只为返回功能区 XML 文件中; 的内容而实现不应该用于初始化 VSTO 外接程序中。   特别是，不应在 `GetCustomUI` 实现中尝试显示对话框或其他窗口。 否则，自定义功能区可能无法正确工作。 如果必须运行初始化 VSTO 外接程序的代码，请将代码添加到 `ThisAddIn_Startup` 事件处理程序。|  
 |`OnLoad`|将 <xref:Microsoft.Office.Core.IRibbonControl> 参数分配给 `ribbon` 字段。 当 Microsoft Office 应用程序加载自定义功能区时，它们将调用此方法。 此字段可用于动态更新自定义功能区。 有关详细信息，请参阅技术文章 [为开发人员自定义 Office (2007) 功能区用户界面（第 1 部分，共 3 部分）](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3)。|  
 |`GetResourceText`|由 `GetCustomUI` 方法调用，以获取功能区 XML 文件的内容。|  
   

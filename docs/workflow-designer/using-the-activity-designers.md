@@ -1,5 +1,5 @@
 ---
-title: "使用活动设计器 |Microsoft 文档"
+title: 使用活动设计器 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 3c2725c3-091b-49ab-81e7-d4c7028d47a2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a2cb19e2849b68eb74d70d0e2a8c6d9952f137
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: d246c7d88df588cfc47950bab20011d697c7175f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-activity-designers"></a>使用活动设计器
 Windows 工作流设计器包含大量的系统提供构造活动和工作流时可以使用的活动。 本节介绍系统提供的可用活动及其设计器的类别。 有关每个类别内各活动及其相应设计器的主题将介绍这些活动的用途并提供使用指南。

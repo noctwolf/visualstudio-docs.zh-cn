@@ -2,20 +2,18 @@
 title: 如何： 添加一个拖放处理程序 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61eff22f3a666f067f4a1eddd8ecab84429fea21
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 9b87a2e8a87721217f4c8e5442c25d9c4efd0236
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 可以将拖放事件的处理程序添加到 DSL，以便用户可以将项从其他关系图或 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的其他部分拖动到关系图上。 还可以添加诸如双击事件的处理程序。 组合在一起，称为拖放和双击处理程序*笔势处理程序*。  
@@ -586,7 +584,7 @@ namespace Company.CompartmentDrag  // EDIT.
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义复制行为](../modeling/customizing-copy-behavior.md)   
  [部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)
  

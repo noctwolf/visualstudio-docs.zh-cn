@@ -1,12 +1,10 @@
 ---
-title: "如何： 在 Visual Studio 中创建 Office 项目 |Microsoft 文档"
-ms.custom: 
+title: 如何： 在 Visual Studio 中创建 Office 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.SelectDocWizard.Page1
 - VST.SelectDocWizard.Http
@@ -23,16 +21,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 60addb19ba78734237e6ccf888cdb69f2629f98c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 50739bfde7578a49226e5396c8eeb78e56c4b0ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何：在 Visual Studio 中创建 Office 项目
-  你可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]创建 VSTO 外接程序和文档级自定义 Microsoft Office 应用程序。 有关这些类型的项目的详细信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  你可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]创建 VSTO 外接程序和文档级自定义 Microsoft Office 应用程序。 有关这些类型的项目的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -149,7 +148,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  如果在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 项目中使用现有文档，则只能使用在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 项目中创建的或转换为该项目格式的文档。 类似地，如果在 Word 2010 项目中使用现有文档，则只能使用在 Word 2010 中创建的或转换为该文档格式的文档。 如果使用 Word 早期版本创建的文档，将禁用文档中的某些功能。 如果尝试编写使用这些功能的代码，可能会在项目中出现错误。 若要将文档转换，打开在[!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]或 Word 2010 上**文件**功能区上选项卡上，选择**信息**，**转换**。  
   
-8.  选择**完成**。  
+8.  选择“完成”。  
   
 9. 在以下情况中将项目文件夹及其子文件夹添加到 Word“信任中心”中的受信任位置的列表中：  
   

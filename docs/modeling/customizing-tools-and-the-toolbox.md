@@ -1,10 +1,8 @@
 ---
-title: "自定义工具和工具箱 |Microsoft 文档"
-ms.custom: 
+title: 自定义工具和工具箱 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 160c1c27ab9d01dc76d6a5c76feb07179f7966b9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0644aa33d0e091fc3a2ff856109fe9661e2dc805
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自定义工具和工具箱
 你必须为你想要使用户添加到其模型的元素定义工具箱项。 有两种类型的工具：元素工具和连接工具。 在生成的设计器中，用户可以选择元素工具以将形状拖动到关系图中，也可以选择连接工具以在形状之间绘制链接。 通常，元素工具允许用户向其模型添加域类的实例，而连接工具允许他们添加域关系的实例。  
@@ -36,7 +34,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [自定义连接工具](#connections)  
   
-##  <a name="ToolboxDef"></a>定义工具箱的方式  
+##  <a name="ToolboxDef"></a> 定义工具箱的方式  
  在 DSL 资源管理器中，展开“编辑器”节点及其下面的节点。 通常，你将看到如下所示的层次结构：  
   
 ```  
@@ -93,7 +91,7 @@ Editor
   
      如果该工具未显示，请停止该实验 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在 Windows**启动**菜单上，运行**重置 Microsoft Visual Studio 2010 实验实例**。 上[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**生成**菜单上，单击**重新生成解决方案**。 然后，再次测试 DSL。  
   
-##  <a name="customizing"></a>自定义元素工具  
+##  <a name="customizing"></a> 自定义元素工具  
  默认情况下，该工具将创建指定类的单个实例，但是可通过两种方式改变这种情况：  
   
 -   在其他类上定义元素合并指令，从而允许它们接受此类的新实例，并允许它们在创建新元素后创建其他链接。 例如，你可以允许用户将“注释”放到其他元素上，从而在两个元素之间创建引用链接。  
@@ -104,7 +102,7 @@ Editor
   
 -   编写代码来自定义工具，以便它可以创建元素组。 该工具由 ToolboxHelper.cs 中可重写的方法进行初始化。 有关详细信息，请参阅[创建从一种工具的元素组](#groups)。  
   
-##  <a name="groups"></a>从工具创建的元素的组  
+##  <a name="groups"></a> 从工具创建的元素的组  
  每个元素工具都包含它应创建的元素的原型。 默认情况下，每个元素工具都将创建单个元素，但也可以使用一个工具创建一组相关对象。 为此，请使用包含相关项的 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 初始化工具。  
   
  以下示例取自 DSL，其中有晶体管类型。 每个晶体管具有三个命名的“终端”。 用于晶体管的元素工具将存储包含四个模型元素和三个关系链接的原型。 当用户将工具拖动到关系图上时，该原型将进行实例化并链接到模型根。  
@@ -154,7 +152,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-##  <a name="connections"></a>自定义连接工具  
+##  <a name="connections"></a> 自定义连接工具  
  通常，在创建新的连接符类后创建元素工具。 或者，可通过允许两个终端的类型确定关系类型来重载一个工具。 例如，可以定义一个可同时创建 Person-Person 关系和 Person-Town 关系的连接工具。  
   
  连接工具将调用连接生成器。 使用连接生成器来指定用户在生成的设计器中链接元素的方式。 连接生成器将指定可链接的元素以及在元素之间创建的链接类型。  

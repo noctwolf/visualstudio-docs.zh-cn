@@ -1,25 +1,24 @@
 ---
-title: "演练： 使用项目模板创建网站栏项目项，第 2 部分 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用项目模板创建网站栏项目项，第 2 部分 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f0472688f9f36d2b14c89cc904bf6ce4badd6ca6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>演练：使用项目模板创建网站栏项目项（第 2 部分）
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项目模板后，你可能还想要模板提供的向导。 该向导可用于从用户收集信息，在他们使用你的模板来创建一个包含项目项的新项目。 你收集的信息可以用于初始化项目项。  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
 -   调试和测试该向导。  
   
 > [!NOTE]  
->  你可以下载包含已完成的项目、 代码和从以下位置在本演练中的其他文件的示例： [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369)。  
+>  你可以下载包含已完成的项目、 代码和从以下位置在本演练中的其他文件的示例： [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369)。  
   
 ## <a name="prerequisites"></a>系统必备  
  若要执行本演练，你必须首先创建 SiteColumnProjectItem 解决方案通过完成[演练： 使用项目模板，第 1 部分中创建网站栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 -   在 SharePoint 中的网站栏。 有关详细信息，请参阅[列](http://go.microsoft.com/fwlink/?LinkId=183547)。  
   
-##  <a name="wizardcomponents"></a>了解向导组件  
+##  <a name="wizardcomponents"></a> 了解向导组件  
  在本演练演示了此向导包含多个组件。 下表介绍这些组件。  
   
 |组件|描述|  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  在项目模板列表中，选择**WPF 用户控件库**，命名该项目**ProjectTemplateWizard**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**ProjectTemplateWizard**到解决方案的项目，并打开默认 UserControl1.xaml 文件。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**ProjectTemplateWizard**到解决方案的项目，并打开默认 UserControl1.xaml 文件。  
   
 6.  从项目中删除 UserControl1.xaml 文件。  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  选择**类库**项目模板，将项目**SharePointCommands**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**SharePointCommands**到解决方案的项目并打开默认 Class1 代码文件。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**SharePointCommands**到解决方案的项目并打开默认 Class1 代码文件。  
   
 5.  从项目中删除 Class1 代码文件。  
   
@@ -163,7 +162,7 @@ ms.lasthandoff: 01/10/2018
   
 13. 如果你要开发 Visual Basic 项目，ProjectTemplateWizard 命名空间导入你的项目使用**项目设计器**。  
   
-     有关详细信息，请参阅[如何： 添加或删除已导入命名空间 &#40;Visual Basic &#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     有关详细信息，请参阅[如何： 添加或删除已导入命名空间&#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)。  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>若要配置 SharePointCommands 项目  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  选择箭头旁边**添加**按钮，，然后选择**添加为链接**上显示的菜单中的选项。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加到代码文件**SharePointCommands**为链接的项目。 代码文件位于**ProjectTemplateWizard**项目，但文件中的代码也会被编译中**SharePointCommands**项目。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加到代码文件**SharePointCommands**为链接的项目。 代码文件位于**ProjectTemplateWizard**项目，但文件中的代码也会被编译中**SharePointCommands**项目。  
   
 5.  在**SharePointCommands**项目中，添加名为命令的另一个代码文件。  
   
@@ -406,7 +405,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     有关详细信息`WizardExtension`元素，请参阅[WizardExtension 元素 &#40;Visual Studio 模板 &#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     有关详细信息`WizardExtension`元素，请参阅[WizardExtension 元素&#40;Visual Studio 模板&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates)。  
   
 3.  保存并关闭文件。  
   

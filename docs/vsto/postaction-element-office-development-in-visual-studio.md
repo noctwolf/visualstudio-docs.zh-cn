@@ -1,12 +1,10 @@
 ---
-title: "&lt;o n&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档"
-ms.custom: 
+title: '&lt;o n&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - postAction element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 63e15e2a02ac58ee385e38d5ed2d435c0e80dddb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2934b0ad761dcd512b21e2424515c06fb896dda5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;o n&gt;元素 （Visual Studio 中的 Office 开发）
   `postAction` 命名空间的 `vstav3` 元素包含与部署后操作（在安装 Office 解决方案后运行）相关联的 `entrypoint` 元素和所有 `postActionData` 元素。  
@@ -46,10 +45,10 @@ ms.lasthandoff: 01/10/2018
  `postAction` 具有下列元素。  
   
 ### <a name="entrypoint"></a>entrypoint  
- 可选。 角色`entryPoint`中的元素`vstav3`中定义命名空间[&#60; 入口点 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ 可选。 角色`entryPoint`中的元素`vstav3`中定义命名空间[&#60;入口点&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。  
   
 ### <a name="postactiondata"></a>postActionData  
- 可选。 角色`postActionData`中的元素`vstav3`中定义命名空间[&#60; a t a &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
+ 可选。 角色`postActionData`中的元素`vstav3`中定义命名空间[ &#60;a t a&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)。  
   
 ## <a name="post-deployment-action-example"></a>部署后操作示例  
   

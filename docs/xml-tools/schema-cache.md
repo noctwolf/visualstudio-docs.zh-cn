@@ -1,23 +1,21 @@
 ---
-title: "架构缓存 |Microsoft 文档"
-ms.custom: 
+title: 架构缓存 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a7a089e799c2480f667eb000d39c3036220d02e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="schema-cache"></a>架构缓存
 “XML 编辑器”提供的架构缓存位于 %InstallRoot%\Xml\Schemas 目录。 架构缓存适用于计算机上的所有用户，并且包含用于智能感知和 XML 文档验证的标准 XML 架构。  
@@ -29,22 +27,22 @@ ms.lasthandoff: 01/08/2018
 |Filename|描述|  
 |--------------|-----------------|  
 |catalog.xsd|“XML 编辑器”架构编录文件的架构。 有关架构编录的信息，请参见下文。|  
-|DotNetConfig.xsd|Web.Config 文件的架构“http://schemas.microsoft.com/.NETConfiguration/v2.0”。|  
-|msbuild.xsd|MSBuild 生成文件的架构“http://schemas.microsoft.com/developer/msbuild/2003”。|  
+|DotNetConfig.xsd|Web.Config 文件的架构"http://schemas.microsoft.com/.NETConfiguration/v2.0"。|  
+|msbuild.xsd|MSBuild 生成文件的架构"http://schemas.microsoft.com/developer/msbuild/2003"。|  
 |msdata.xsd|<xref:System.Data.DataSet> 类添加的 XSD 批注的架构“urn:schemas-microsoft-com:xml-msdata”。|  
 |msxsl.xsd|Microsoft XSLT 脚本块扩展的架构 urn:schemas-microsoft-com:xslt。|  
 |SnippetFormat.xsd|代码段 XML 文件的架构。 有关示例，请参见 %InstallDir%\VC#\Expansions。|  
-|Soap1.1.xsd|简单对象访问协议 (SOAP) 1.1 的架构 http://schemas.xmlsoap.org/soap/envelope/。|  
+|Soap1.1.xsd|简单对象访问协议 (SOAP) 1.1 版中，架构http://schemas.xmlsoap.org/soap/envelope/。|  
 |Soap1.2.xsd|简单对象访问协议 1.2 的架构。|  
-|SiteMapSchema.xsd|ASP.NET 站点地图 XML 文件的架构“http://schemas.microsoft.com/AspNet/SiteMap-File-1.0”。|  
-|wsdl.xsd|Web 服务描述语言的架构 http://schemas.xmlsoap.org/wsdl/。|  
-|xenc.xsd|XML 加密的架构 http://www.w3.org/2000/09/xmldsig#。|  
-|xhtml.xsd|XHTML 的架构 http://www.w3.org/1999/xhtml。|  
-|xlink.xsd|XLink1.0 的架构 http://www.w3.org/1999/xlink。|  
-|xml.xsd|描述 xml:space 和 xml:lang 属性的架构 http://www.w3.org/XML/1998/namespace。|  
-|xmlsig.xsd|XML 数字签名的架构 http://www.w3.org/2000/09/xmldsig#。|  
-|xsdschema.xsd|描述 XSD 本身的架构 http://www.w3.org/2001/XMLSchema。|  
-|xslt.xsd|XML 转换的架构 http://www.w3.org/1999/XSL/Transform。|  
+|SiteMapSchema.xsd|ASP.NET 站点地图 XML 文件架构"http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"。|  
+|wsdl.xsd|Web 服务描述语言的架构http://schemas.xmlsoap.org/wsdl/。|  
+|xenc.xsd|对于 XML 加密的架构http://www.w3.org/2000/09/xmldsig#。|  
+|xhtml.xsd|XHTML 的架构http://www.w3.org/1999/xhtml。|  
+|xlink.xsd|XLink1.0 的架构http://www.w3.org/1999/xlink。|  
+|xml.xsd|描述 xml: space 和 xml: lang 属性，架构http://www.w3.org/XML/1998/namespace。|  
+|xmlsig.xsd|XML 数字签名的架构http://www.w3.org/2000/09/xmldsig#。|  
+|xsdschema.xsd|描述 XSD 本身，架构http://www.w3.org/2001/XMLSchema。|  
+|xslt.xsd|转换的 XML 架构， http://www.w3.org/1999/XSL/Transform。|  
   
 ## <a name="updating-schemas-in-the-cache"></a>更新缓存中的架构  
  编辑器在加载“XML 编辑器”软件包时加载架构缓存目录，并在运行时监视是否发生更改。 如果架构已添加，将自动加载到已知架构的内存中索引。 如果架构已移除，它将自动从内存中索引移除。 如果架构已更新，将自动使此架构的内存中缓存失效。  

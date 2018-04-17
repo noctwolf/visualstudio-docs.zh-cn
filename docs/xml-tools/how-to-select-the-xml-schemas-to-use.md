@@ -1,23 +1,21 @@
 ---
-title: "如何： 选择使用的 XML 架构 |Microsoft 文档"
-ms.custom: 
+title: 如何： 选择使用的 XML 架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 80d0438e7c7dfb7fd346dc5faae6f364279658ef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6e7864481975a63745143f5ea8508bd74fffbf7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>如何：选择要使用的 XML 架构
 “XML 编辑器”提供的架构缓存位于 %InstallDir%\Xml\Schemas 目录。 架构缓存中包括用于智能感知和 XML 文档验证的常见 XML 架构。  
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
     -   选择一个列出中的架构**XML 架构**对话框中，单击**使用**列，，然后选择**使用此架构**。  
   
-     或  
+     -或-  
   
     -   选择多个架构中列出**XML 架构**对话框，右键单击并选择**使用此架构**。  
   
@@ -53,7 +51,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  在文档属性窗口中，单击按钮上**架构**字段。  
   
-2.  单击 **“添加”**。  
+2.  单击 **添加**。  
   
      这将打开**打开 XSD 架构**对话框。  
   

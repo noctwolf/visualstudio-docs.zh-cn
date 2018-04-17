@@ -1,12 +1,10 @@
 ---
-title: "Office 解决方案中的可选参数 |Microsoft 文档"
-ms.custom: 
+title: Office 解决方案中的可选参数 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,20 +18,21 @@ helpviewer_keywords:
 - parameters [Office development in Visual Studio], optional
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe40b6bc0af9df294408079c8a27dfac42df97b0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d417b5126989736c6126ae7c80bfcbc86f336a09
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 解决方案中的可选参数
   Microsoft Office 应用程序的对象模型中的许多方法都接受可选参数。 如果使用 Visual Basic 在 Visual Studio 中开发 Office 解决方案，你不必为可选参数传递值，因为系统会为每个缺少的参数自动使用默认值。 在大多数情况下，也可以省略 Visual C# 项目中的可选参数。 但是，不能省略可选**ref**参数`ThisDocument`在文档级 Word 项目中的类。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- 有关使用 Visual C# 和 Visual Basic 项目中的可选参数的详细信息，请参阅[命名和可选自变量 &#40;使用 c&#35;编程指南 &#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)和[可选参数 &#40;Visual Basic &#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
+ 有关使用 Visual C# 和 Visual Basic 项目中的可选参数的详细信息，请参阅[命名实参和可选实参&#40;C&#35;编程指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)和[&#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)。  
   
 > [!NOTE]  
 >  在 Visual Studio 的早期版本中，必须为 Visual C# 项目中的每个可选参数传递一个值。 为了方便起见，这些项目包括一个名为 `missing` 的全局变量，当你想要使用某个可选参数的默认值时，可以将该变量传递给该可选参数。 Visual C# 项目的 Visual Studio 中的 Office 仍包含`missing`变量，但你通常不需要开发中的 Office 解决方案时使用它[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，除非调用具有可选的方法**ref**中的参数`ThisDocument`Word 的文档级项目中的类。  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- 有关值和引用类型参数的详细信息，请参阅[传递自变量通过值和通过引用 &#40;Visual Basic &#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) （对于 Visual Basic) 和[传递参数 &#40;使用 c&#35;编程指南 &#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ 有关值和引用类型参数的详细信息，请参阅[通过值和通过引用传递自变量&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) （对于 Visual Basic) 和[传递参数&#40;C&#35;编程指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)。  
   
 ## <a name="see-also"></a>请参阅  
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   

@@ -1,13 +1,10 @@
 ---
-title: "Office 解决方案部署疑难解答 |Microsoft 文档"
-ms.custom: 
+title: Office 解决方案部署疑难解答 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 29c3cfdcf31609eb5b6aec0111fe2297ba8c01ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Office 解决方案部署疑难解答
   本主题包含有关如何解决在部署 Office 解决方案时可能遇到的常见问题的信息。  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  可以将 .NET Framework、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]和 Office 主互操作程序集作为随 Office 解决方案部署的先决条件添加到安装程序包中。 有关如何安装主互操作程序集的信息，请参阅[配置计算机以开发 Office 解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)和[如何： 安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)。  
   
 ## <a name="publishing-using-localhost-can-cause-installation-problems"></a>使用“Localhost”进行发布可能会导致安装问题  
- 使用“http://localhost” 作为文档级解决方案的发布或安装位置时，“发布向导”  不会将字符串转换为实际计算机名称。 在这种情况下，必须在开发计算机上安装解决方案。 要使部署的解决方案在开发计算机上使用 IIS，请对所有 HTTP/HTTPS/FTP 位置使用完全限定的名称，而不是 localhost。  
+ 当你使用"http://localhost"作为文档级解决方案的发布文件夹或安装位置**发布向导**不将字符串转换为实际计算机名称。 在这种情况下，必须在开发计算机上安装解决方案。 要使部署的解决方案在开发计算机上使用 IIS，请对所有 HTTP/HTTPS/FTP 位置使用完全限定的名称，而不是 localhost。  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>加载缓存的程序集而不是更新的程序集  
  当项目输出路径位于网络文件共享上、程序集使用强名称进行签名以及自定义项的程序集版本未更改时，Fusion（.NET Framework 程序集加载程序）会加载程序集的缓存副本。 如果更新的程序集符合这些条件，则更新不会在下次运行项目时出现，因为会加载缓存副本。  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>下载程序集而不是加载缓存副本  
   
-1.  在菜单栏上，选择**项目**， *ProjectName***属性**。  
+1.  在菜单栏上，选择**项目**，* ProjectName ***属性**。  
   
 2.  在“应用程序”  页上，选择“程序集信息” 。  
   
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="reinstalling-office-solutions-causes-an-argument-out-of-range-exception"></a>重新安装 Office 解决方案导致参数超出范围异常  
  重新安装 Office 解决方案时， <xref:System.ArgumentOutOfRangeException> 异常可能会出现，并显示以下错误消息：指定的参数已超出有效值的范围。  
   
- 如果安装位置 URL 的大小写不同，则会出现这种情况。 例如，如果第一次是从 [http://fabrikam.com/ExcelSolution.vsto](http://fabrikam.com/ExcelSolution.vsto) 安装的 Office 解决方案，而第二次使用的是 [http://fabrikam.com/excelsolution.vsto](http://fabrikam.com/excelsolution.vsto) ，则会出现此错误。  
+ 如果安装位置 URL 的大小写不同，则会出现这种情况。 例如，会出现此错误，如果你安装 Office 解决方案从[ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto)第一次，然后使用[ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto)第二次。  
   
  要防止出现该消息，请在安装 Office 解决方案时使用相同的大小写。  
   

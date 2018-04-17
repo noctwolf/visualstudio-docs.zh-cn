@@ -1,23 +1,21 @@
 ---
-title: "DslDefinition.dsl 文件 |Microsoft 文档"
-ms.custom: 
+title: DslDefinition.dsl 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92bd27f1590aae455c0d5bba540720421338b63c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 361f723997f898091b05a80cfb55c9cc5680ceb3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 文件
 本主题描述的 Dsl 项目中的 DslDefinition.dsl 文件的结构[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]解决方案，它定义*域特定语言*。 DslDefinition.dsl 文件描述的类和关系的域特定语言，以及关系图、 形状、 连接器、 序列化格式和**工具箱**域特定语言的并将其编辑工具。 在域特定语言解决方案中，将根据 DslDefinition.dsl 文件中的信息生成可定义这些工具的代码。  
@@ -157,9 +155,9 @@ ms.lasthandoff: 02/09/2018
   
 -   **名称和 Namespace 中。** 这些特性生成的代码中指定的名称和命名空间的类。 在域特定语言中它们必须都是唯一的。  
   
--   **InheritanceModifier.** 此属性为"抽象"、"密封"，或 none。  
+-   **InheritanceModifier。** 此属性为"抽象"、"密封"，或 none。  
   
--   **DisplayName.** 此属性是名称，将出现在**属性**窗口。 DisplayName 特性可以包含空格和其他标点。  
+-   **DisplayName。** 此属性是名称，将出现在**属性**窗口。 DisplayName 特性可以包含空格和其他标点。  
   
 -   **GeneratesDoubleDerived.** 如果此属性设置为 true，将生成两个类，并且有一个其他的子类。 所有生成的方法都位于基类中，而构造函数位于子类中。 通过设置此特性，你可以在自定义代码中重写任何生成的方法。  
   
@@ -441,7 +439,7 @@ ms.lasthandoff: 02/09/2018
   
  （连接关系具有其自己的 XML 类数据，该数据提供了此关系的元素和特性名称。）  
   
- 如果**OmitElement**属性设置为 true，关系角色省略名称时，该缩写的序列化的文件和不明确的如果两个类具有不超过一种关系。 例如:  
+ 如果**OmitElement**属性设置为 true，关系角色省略名称时，该缩写的序列化的文件和不明确的如果两个类具有不超过一种关系。 例如:   
   
 ```  
 <component name="Component3">  

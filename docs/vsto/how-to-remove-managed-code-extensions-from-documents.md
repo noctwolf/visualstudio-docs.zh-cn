@@ -1,12 +1,10 @@
 ---
-title: "如何： 从文档中删除托管的代码扩展 |Microsoft 文档"
-ms.custom: 
+title: 如何： 从文档中删除托管的代码扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c83f9794cdce71db9f51a6adca69fbeabc8c7a8e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7a5e70db36c0cd1b99a670e13a353e15f7558e7e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>如何：移除文档中的托管代码扩展
   从文档或工作簿的 Microsoft Office Word 或 Microsoft Office Excel 的文档级自定义项的一部分，可以以编程方式删除自定义程序集。 然后，用户可以打开的文档并查看内容，但你将添加到文档中的任何自定义用户界面 (UI) 将不会出现，并将不运行代码。  

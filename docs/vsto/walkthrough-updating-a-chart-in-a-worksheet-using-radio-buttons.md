@@ -1,12 +1,10 @@
 ---
-title: "演练： 更新使用单选按钮在工作表的图表 |Microsoft 文档"
-ms.custom: 
+title: 演练： 更新使用单选按钮在工作表的图表 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - worksheets, using radio buttons
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 36a83dc849260f9d58595e2f52bb422a1854b5ec
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fbdbcc8ae12e1b0f317b53a4f0ffd7e9b2885aec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>演练：使用单选按钮更新工作表中的图表
   本演练演示了使用 Microsoft Office Excel 工作表上的单选按钮，使用户可以快速选项之间切换方式的基础知识。 在这种情况下，选项更改图表样式。  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  选择<xref:Microsoft.Office.Tools.Excel.Chart>设计器中控制和更改中的以下属性**属性**窗口。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**dataChart**|  
     |**HasLegend**|**false**|  
@@ -135,28 +134,28 @@ ms.lasthandoff: 01/10/2018
   
 2.  从**公共控件**选项卡**工具箱**，拖动**单选按钮**控制到用户控件，并可以更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**columnChart**|  
     |**文本**|**柱形图**|  
   
 3.  将第二个单选按钮添加到用户控件，并更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**barChart**|  
     |**文本**|**条形图**|  
   
 4.  将第三个单选按钮添加到用户控件，并更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**lineChart**|  
     |**文本**|**折线图**|  
   
 5.  将第四个单选按钮添加到用户控件，并更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**areaBlockChart**|  
     |**文本**|**面积图**|  

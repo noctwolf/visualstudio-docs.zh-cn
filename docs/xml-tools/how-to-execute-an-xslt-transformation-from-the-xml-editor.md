@@ -1,23 +1,21 @@
 ---
-title: "如何： 在 XML 编辑器中执行 XSLT 转换 |Microsoft 文档"
-ms.custom: 
+title: 如何： 在 XML 编辑器中执行 XSLT 转换 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7f2cd765b36024048a4bba5680a0fdc2445a1cc3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2ce56195d0bc9750af3b869cb3e8bb0a780fdcde
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>如何：在 XML 编辑器中执行 XSLT 转换
 通过“XML 编辑器”可以将 XSLT 样式表与 XML 文档关联，执行转换，以及查看输出。 由 XSLT 转换生成的输出显示在新的文档窗口中。  
@@ -34,7 +32,7 @@ ms.lasthandoff: 12/22/2017
   
     -   将 `xml-stylesheet` 处理指令添加到 XML 文档中。 例如，将以下行 `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` 添加到文档序言中。  
   
-         或  
+         -或-  
   
     -   添加 XSLT 样式表使用**属性**窗口。 在文档中**属性窗口**，单击**浏览**按钮**样式表**字段中选择 XSLT 样式表，然后单击**打开**.  
   

@@ -1,18 +1,18 @@
 ---
-title: "运行时活动设计器 |Microsoft 文档"
+title: 运行时活动设计器 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: be18aa36-7909-4dd6-a786-b46959675a58
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 874bd63a044c3e1483bea7ec54af03b17b7e11bd
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 3069d4c5dde1235e9563c26c10af586001af007c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="runtime-activity-designers"></a>运行时活动设计器
 各运行时活动设计器用于持久保存和终止工作流活动。 本节中包含的主题介绍如何使用 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 活动设计器。
@@ -22,7 +22,7 @@ ms.lasthandoff: 03/12/2018
 
  [流程图](../workflow-designer/flowchart-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [消息传送](../workflow-designer/messaging-activity-designers.md)
 
  [基元](../workflow-designer/primitives-activity-designers.md)
 

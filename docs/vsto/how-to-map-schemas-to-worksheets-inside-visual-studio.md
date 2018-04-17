@@ -1,13 +1,10 @@
 ---
-title: "如何： 将架构映射到 Visual Studio 内部的工作表 |Microsoft 文档"
-ms.custom: 
+title: 如何： 将架构映射到 Visual Studio 内部的工作表 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], XML schemas
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ed0da1c2ac181db93105a93dd2269be55f0379a2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: b2d0caadfc08d7fa1d2ea29d04e84a5d954a42fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>如何：将架构映射到 Visual Studio 内部的工作表
   在 Visual Studio 中打开工作表时，你可以将 XML 架构映射到工作表。 使用相同的 Microsoft Office Excel 工具，你使用 Visual Studio 外部打开工作簿时。 Office 项目创建相同的对象是否将架构映射到工作表之前或之后创建 Excel 解决方案。  

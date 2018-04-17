@@ -1,23 +1,21 @@
 ---
-title: "XML 架构资源管理器 |Microsoft 文档"
-ms.custom: 
+title: XML 架构资源管理器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4bcf4042551c768a7386158d9de7d4e629095b85
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 84aead3cf496a28e67e6440fb77b8cbf4aca6462
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-schema-explorer"></a>XML 架构资源管理器
 XML 架构资源管理器与 Microsoft Visual Studio 和 XML 编辑器相集成，从而使您可以使用 XML 架构定义语言 (XSD) 架构。 当打开 XML 架构文件，**架构集**节点将出现在 XML 架构资源管理器。 目标文件的所有包含架构、导入架构或重新定义的架构，以及通过 `include` 或 `import` 语句引用的任何文件，也出现在 XML 架构资源管理器中。  

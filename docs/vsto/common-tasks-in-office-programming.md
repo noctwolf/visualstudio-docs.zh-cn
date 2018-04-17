@@ -1,13 +1,10 @@
 ---
-title: "Office 编程中的常见任务 |Microsoft 文档"
-ms.custom: 
+title: Office 编程中的常见任务 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 65a20b5d65ba49789aea857459bd6a4d316195eb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 32e24833e77ffd6f178a70c5548e9bc1277b06b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-tasks-in-office-programming"></a>Office 编程中的常规任务
   本主题旨在帮助针对使用 Visual Studio 对 Office 解决方案编程的下列常见问题找到解决方法。  
@@ -236,7 +233,7 @@ ms.lasthandoff: 01/10/2018
 -   [如何：更改 Office 解决方案的安装路径](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
   
 ## <a name="see-also"></a>请参阅  
- [入门 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)  
   

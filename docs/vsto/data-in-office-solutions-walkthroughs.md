@@ -1,12 +1,10 @@
 ---
-title: "Office 解决方案演练中的数据 |Microsoft 文档"
-ms.custom: 
+title: Office 解决方案演练中的数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ff2d79e0be978295ab6ad3228f8d576e0bce82cd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0a30280c2e47a5beac99c52eefb61fcbc7fbbdea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office 解决方案演练中的数据
   下列演练演示了如何将文档级自定义项和 VSTO 外接程序中的数据用于 Microsoft Office Word 和 Microsoft Office Excel。  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
  [Office UI 自定义演练](../vsto/office-ui-customization-walkthroughs.md)   
  [安全性和部署演练](../vsto/security-and-deployment-walkthroughs.md)   
  [Office 开发示例](../vsto/office-development-samples.md)   
- [入门 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)  
   

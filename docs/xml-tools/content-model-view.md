@@ -1,23 +1,21 @@
 ---
-title: "内容模型视图 |Microsoft 文档"
-ms.custom: 
+title: 内容模型视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 582082504b713988039af609d59150715f75ecfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1ee6860702fe672df5bebca38002ff7a8388cddd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="content-model-view"></a>内容模型视图
 内容模型视图提供局部和全局架构节点及其组件（包括简单类型和复杂类型、元素、模型组、特性及特性组）的图形表示形式。 在内容模型视图中不能查看 XML 注释和处理指令。 内容模型视图包含两个面板：**工作区**包含中的节点的列表的面板[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)，和设计图面，请参阅架构的内容模型在选择的节点**工作区**面板。 内容模型视图还包括 XML 架构设计器工具栏和痕迹栏。  

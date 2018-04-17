@@ -2,8 +2,6 @@
 title: 映射解决方案中的依赖关系 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -27,15 +25,15 @@ helpviewer_keywords:
 - code exploration, visualizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: aea44beeb2a8e6380bd9a568acdece79873e3050
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 8ce84bfc59782a27e517ae1813f3ee43d6cb3718
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>映射解决方案中的依赖项
 
@@ -233,7 +231,7 @@ ms.lasthandoff: 04/10/2018
 
      若要在地图上查看代码中，但不会显示成员，请单击**重新提取子级**图标![重新提取子级图标](../modeling/media/dependencygraph_deletednodesicon.png "DependencyGraph_DeletedNodesIcon")右上一个组的左上的角。  
 
-6.  若要查看更多与代码图上的项相关的项，请选择其中一个，再选择代码图工具栏上的“显示相关内容”  ，然后选择要添加到图中的相关项的类型。 或者，选择一个或多个项，打开快捷菜单，然后选择**显示...**的相关项的类型添加到图的选项。 例如：  
+6.  若要查看更多与代码图上的项相关的项，请选择其中一个，再选择代码图工具栏上的“显示相关内容”  ，然后选择要添加到图中的相关项的类型。 或者，选择一个或多个项，打开快捷菜单，然后选择**显示...**的相关项的类型添加到图的选项。 例如:   
 
      对于 **程序集**，请选择：  
 
@@ -345,7 +343,7 @@ ms.lasthandoff: 04/10/2018
 ### <a name="share-the-map-with-other-visual-studio-users"></a>与其他 Visual Studio 用户共享代码图  
  使用“文件”  菜单保存代码图。  
 
- 或  
+ -或-  
 
  若要将代码图作为特定项目的一部分图工具栏上，选择**共享**，**移动** \< *CodeMapName*>**.dgml到**，然后选择你想要保存代码图的项目。  
 

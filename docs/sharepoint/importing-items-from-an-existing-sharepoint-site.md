@@ -1,12 +1,10 @@
 ---
-title: "从现有的 SharePoint 网站导入项 |Microsoft 文档"
-ms.custom: 
+title: 从现有的 SharePoint 网站导入项 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a542a74bf162c4fc2bb2fe2c725b02742d568547
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b5a4f282923b073a87307d88f0c3e3b4365d1057
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="importing-items-from-an-existing-sharepoint-site"></a>从现有的 SharePoint 网站导入项
   利用“导入 SharePoint 解决方案包”项目模板，你可以在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 解决方案中重用现有 SharePoint 网站中的元素，例如，内容类型和字段。 虽然无需修改即可运行大多数导入的解决方案，但需要考虑一些限制和问题，尤其是在导入任何项后对这些项进行修改的情况下。  
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="item-name-character-limit"></a>项名称字符限制  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将项目和项目项名称（包括路径）限制为总共 260 个字符。 在导入解决方案时，如果项名称超出此限制，则会收到错误：  
   
- **指定的路径、 文件名，或两者都太长。完全限定的文件名必须少于 260 个字符，并且目录名称必须少于 248 个字符。**  
+ **指定的路径、 文件名，或两者都太长。完全限定文件名必须少于 260 个字符，而目录名必须少于 248 个字符。**  
   
  若收到此错误，则不会创建相应的项。 导入的模块最常出现此问题。 若要避免此问题，请执行下列操作：  
   

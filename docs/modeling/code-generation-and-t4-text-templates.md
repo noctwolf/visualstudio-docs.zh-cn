@@ -1,11 +1,9 @@
 ---
-title: "代码生成和 T4 文本模板 |Microsoft 文档"
-ms.custom: 
+title: 代码生成和 T4 文本模板 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-modeling
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
@@ -16,14 +14,14 @@ helpviewer_keywords:
 - generating code
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 029b5264d5275458aee1893df0ba4dd4d83d1a91
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c3bc5338114f0b310afc584b2892061716a711b0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-generation-and-t4-text-templates"></a>代码生成和 T4 文本模板
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中， *T4 文本模板* 是文本块与可生成文本文件的控制逻辑的混合体。 控制逻辑被编写为 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中的程序代码的片段。 使用 Visual Studio 2015 Update 2 及更高版本时，可在 T4 模板指令中使用 C# 6.0 版功能。 所生成的文件可以是任何类型的文本，例如 Web 网页、资源文件或任何语言的程序源代码。  
@@ -43,7 +41,7 @@ ms.lasthandoff: 02/09/2018
   
  此外，该模板包含程序代码的片段。 你可使用这些片段来重复文本节、创建条件节以及显示应用程序数据。  
   
- 若要生成输出，应用程序将调用由此模板生成的函数。 例如:  
+ 若要生成输出，应用程序将调用由此模板生成的函数。 例如:   
   
 ```csharp  
 string webResponseText = new MyTemplate().TransformText();  

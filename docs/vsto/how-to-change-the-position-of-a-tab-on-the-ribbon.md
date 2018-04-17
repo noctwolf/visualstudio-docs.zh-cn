@@ -1,13 +1,10 @@
 ---
-title: "如何： 更改的功能区上的选项卡位置 |Microsoft 文档"
-ms.custom: 
+title: 如何： 更改的功能区上的选项卡位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5016651a6cc4f1316536c22d555a65aaba64b788
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 65a610ac75af4fe6e29070b83286fb3b4f8b91cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>如何：更改功能区上选项卡的位置
   你可以通过更改功能区上的自定义选项卡的顺序**选项卡集合编辑器**。 之前或之后在功能区上的内置选项卡，您可以将自定义选项卡。 内置选项卡是已在 Microsoft Office 应用程序的功能区的选项卡。 例如，**数据**选项卡是 Excel 中的内置选项卡。  

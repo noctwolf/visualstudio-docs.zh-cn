@@ -1,12 +1,10 @@
 ---
-title: "演练： 创建你的第一个文档级自定义 Word |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建你的第一个文档级自定义 Word |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d37dde0027e33af16bdb6c146ec74076c686cf6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9bb85c10b2a66741bf0405d4a1313fb2343a708b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>演练：创建您的第一个 Word 文档级自定义项
   本介绍性演练演示了如何创建 Microsoft Office Word 的文档级自定义项。 仅在特定文档处于打开状态时，才可提供你在这种解决方案中创建的功能。 不能使用文档级自定义项进行应用程序范围的更改，例如在任何文档处于打开状态时显示新“功能区”选项卡。  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  选择**创建新文档**，然后单击**确定**。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]创建**FirstDocumentCustomization**项目，并将添加**FirstDocumentCustomization**文档和 ThisDocument 代码文件到项目。 **FirstDocumentCustomization**在设计器中自动打开文档。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建**FirstDocumentCustomization**项目，并将添加**FirstDocumentCustomization**文档和 ThisDocument 代码文件到项目。 **FirstDocumentCustomization**在设计器中自动打开文档。  
   
 ## <a name="closing-and-reopening-the-document-in-the-designer"></a>关闭并重新打开设计器中的文档  
  如果开发项目时有意或无意关闭了设计器中的文档，则可以重新打开它。  
@@ -158,7 +157,7 @@ ms.lasthandoff: 01/10/2018
 -   部署 Word 的文档级自定义项：[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Word 解决方案](../vsto/word-solutions.md)   
  [文档级自定义项编程](../vsto/programming-document-level-customizations.md)   
  [Word 对象模型概述](../vsto/word-object-model-overview.md)   

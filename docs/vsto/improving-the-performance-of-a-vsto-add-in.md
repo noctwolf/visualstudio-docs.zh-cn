@@ -1,26 +1,23 @@
 ---
-title: "提高 VSTO 外接程序的性能 |Microsoft 文档"
-ms.custom: 
+title: 提高 VSTO 外接程序的性能 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 17fbb8d0d1bdb2c3924645f494d8bd5eccd457a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>提高 VSTO 外接程序的性能
   可以通过优化为 Office 应用程序创建的 VSTO 外接程序为用户提供更好的体验，以便他们快速启动、关闭和打开项，以及执行其他任务。 如果你的 VSTO 外接程序是用于 Outlook 的，则还可以降低由于性能不佳而禁用 VSTO 外接程序的风险。 可以通过实现以下策略来提高 VSTO 外接程序的性能：  
@@ -84,9 +81,9 @@ ms.lasthandoff: 01/10/2018
   
     ```  
   
-     有关如何在 C# 项目中创建生成后事件的信息，请参阅[如何： 指定生成事件 &#40;C &#35; &#41;](/visualstudio/ide/how-to-specify-build-events-csharp).  
+     有关如何在 C# 项目中创建生成后事件的信息，请参阅[如何： 指定生成事件&#40;C&#35;&#41;](/visualstudio/ide/how-to-specify-build-events-csharp)。  
   
-     有关如何在 Visual Basic 项目中创建生成后事件的信息，请参阅[如何： 指定生成事件 &#40;Visual Basic &#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
+     有关如何在 Visual Basic 项目中创建生成后事件的信息，请参阅[如何： 指定生成事件&#40;Visual Basic&#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic)。  
   
 ##  <a name="Publish"></a> Publish Office Solutions by Using Windows Installer  
  如果使用 Windows Installer 发布解决方案，则在加载 VSTO外接程序时，Visual Studio 2010 Tools for Office Runtime 会绕过以下步骤。  

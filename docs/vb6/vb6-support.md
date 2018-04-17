@@ -1,8 +1,8 @@
 ---
-title: "Visual Basic 6.0 的支持语句 |Microsoft 文档"
+title: Visual Basic 6.0 的支持语句 |Microsoft 文档
 ms.date: 08/28/2017
 ms.technology: devlang-vb
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -13,11 +13,11 @@ author: paulyuk
 ms.author: paulyuk
 ms.workload:
 - paulyuk
-ms.openlocfilehash: cb25f85be6c77dfbef6969435d14f2cae61debf2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cc55dec5960717e3807602bc76031f7502ec90c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Visual Basic 6.0 在 Windows 上的支持声明
 
@@ -33,7 +33,7 @@ Visual Basic 团队提交到"它只需工作"Visual Basic 6.0 应用程序兼容
 - Windows Server 2012 R2 包括
 - Windows Server 2008 R2 包括
 
-Visual Basic 团队的目标是 Visual Basic 6.0 应用程序继续运行受支持的 Windows 版本上。 如本文档中所述，Visual Basic 6.0 核心运行时将支持的完整的生存期内的受支持的 Windows 版本，即五年的五年的扩展支持 (http://support.microsoft.com/gp/lifepolicy) 后跟的主流支持。 支持栏将限制为严重衰退和现有应用程序的关键安全问题。
+Visual Basic 团队的目标是 Visual Basic 6.0 应用程序继续运行受支持的 Windows 版本上。 完整的生存期内支持的 Windows 版本，即五年的主流支持的扩展支持的五年后跟将如本文档中所述，支持 Visual Basic 6.0 核心运行时 (http://support.microsoft.com/gp/lifepolicy)。 支持栏将限制为严重衰退和现有应用程序的关键安全问题。
 
 ## <a name="technical-summary"></a>技术摘要
 
@@ -73,8 +73,8 @@ Visual Basic 6.0 中运行时定义为最初包含 Visual Basic 6.0 中重新分
 
 支持和/或受支持的 Windows 版本上传送 Visual Basic 6.0 中运行时二进制文件不会更改的支持策略为 Visual Basic 6.0 IDE 或 Visual Studio 6.0 IDE 作为一个整体。 这些产品移出 2008 年 4 月 8 日的扩展支持。
 
-Http://support.microsoft.com/gp/lifepolicy 处找不到的 Microsoft 产品支持生命周期的详细信息。 作为此支持生命周期的一部分，Microsoft 将继续受支持的 Windows 版本上支持 Visual Basic 6.0 中运行时，这些操作系统的支持生存期内。 例如，这意味着，将为主流支持，2008 年 6 月和扩展的支持，2013 年 6 月之前在 Windows Server 2003 上中支持 Visual Basic 6.0 中运行时。
-有关支持生命周期，或要了解有关其他支持选项的详细信息，请访问我们支持页在 http://www.microsoft.com/support。
+Microsoft 产品的支持生命周期的详细信息，请参阅http://support.microsoft.com/gp/lifepolicy。 作为此支持生命周期的一部分，Microsoft 将继续受支持的 Windows 版本上支持 Visual Basic 6.0 中运行时，这些操作系统的支持生存期内。 例如，这意味着，将为主流支持，2008 年 6 月和扩展的支持，2013 年 6 月之前在 Windows Server 2003 上中支持 Visual Basic 6.0 中运行时。
+有关支持生命周期，或要了解有关其他支持选项的更多详细信息，请访问我们支持页在http://www.microsoft.com/support。
 
 ## <a name="64-bit-windows"></a>64 位 Windows
 
@@ -149,7 +149,7 @@ VB6 运行时将提供，会在 Windows Server 2016 支持的操作系统的生�
 
 
 > [!NOTE]
-> &#42; VB6 运行时支持受限制的 Windows 支持生命周期。  例如，如果将目标操作系统处于外延支持，VB6 不能有比的延长支持较高级别的支持。  [Windows 支持生命周期事实表](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet)包含其他生命周期有关先前和当前 Windows 版本的信息。
+> &#42;VB6 运行时支持受限制的 Windows 支持生命周期。  例如，如果将目标操作系统处于外延支持，VB6 不能有比的延长支持较高级别的支持。  [Windows 支持生命周期事实表](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet)包含其他生命周期有关先前和当前 Windows 版本的信息。
 
 ## <a name="visual-basic-60-runtime-usage-inside-vba-and-office"></a>Visual Basic 6.0 中运行时在 VBA 和 Office 内的使用情况
 
@@ -189,7 +189,7 @@ Microsoft 不能以提供针对第三方组件，如 OCX/ActiveX 控件支持。
 |ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   olepro32.dll|
 |ds32gt.dll|      mscpxl32.dll|    odbc32.dll|     olethk32.dll|
 |expsrv.dll|      msdadc.dll|      odbc32gt.dll|   regsvr32.exe|
-|hh.exe|          msdaenum.dll|    odbcad32.exe|   rpcns4.dll|
+|hh.exe|          msdaenum.dll|    Odbcad32.exe|   rpcns4.dll|
 |hhctrl.ocx|      msdaer.dll|      odbccp32.cpl|   rpcrt4.dll|
 |imagehlp.dll|    msdaora.dll|     odbccp32.dll|   scrrun.dll|
 |iprop.dll|       msdaosp.dll|     odbccr32.dll|   secur32.dll|

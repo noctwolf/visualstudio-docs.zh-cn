@@ -1,5 +1,5 @@
 ---
-title: "并行活动设计器 |Microsoft 文档"
+title: 并行活动设计器 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d40a016631632ace52257d7086d4b1dca87520f
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: b1c3f24af736dfd3762de7942ba1f52442dfd20c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parallel-activity-designer"></a>Parallel 活动设计器
 <xref:System.Activities.Statements.Parallel> 活动并发执行一组子活动。
@@ -42,6 +42,6 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="see-also"></a>请参阅
 
-- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [序列](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [控制流](../workflow-designer/control-flow-activity-designers.md)

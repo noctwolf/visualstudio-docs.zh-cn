@@ -1,12 +1,10 @@
 ---
-title: "&lt;postActions&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档"
-ms.custom: 
+title: '&lt;postActions&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - <postActions> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bbe0708ce97eb6410f006b6dcdc8d8194907b9c1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2c4dafa1c5ac7ef296ba388ecdfd93d00afef708
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions&gt;元素 （Visual Studio 中的 Office 开发）
   `postActions` 命名空间的 `vstav3` 元素包含描述部署后操作（在安装 Office 解决方案后运行）的 `postAction` 所有元素。  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
  `postActions` 具有以下元素。  
   
 ### <a name="postaction"></a>postAction  
- 可选。 角色`postAction`中的元素`vstav3`中定义命名空间[&#60; o n &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/postaction-element-office-development-in-visual-studio.md).  
+ 可选。 角色`postAction`中的元素`vstav3`中定义命名空间[ &#60;o n&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)。  
   
 ## <a name="post-deployment-action-example"></a>部署后操作示例  
   

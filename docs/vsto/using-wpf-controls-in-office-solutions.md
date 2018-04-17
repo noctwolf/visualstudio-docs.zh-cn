@@ -1,13 +1,10 @@
 ---
-title: "在 Office 解决方案中使用 WPF 控件 |Microsoft 文档"
-ms.custom: 
+title: 在 Office 解决方案中使用 WPF 控件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - WPF [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74ee8c574f6f654aca166844d85a30f2d3d9d4c3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d4aa0fce1700f6608d36231a3ab38db97e5ce826
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-wpf-controls-in-office-solutions"></a>在 Office 解决方案中使用 WPF 控件
   虽然使用 Visual Studio 中的 Office 开发工具创建的解决方案旨在直接使用 Windows 窗体控件，但你也可以在解决方案中使用 WPF 控件。 Windows Presentation Foundation (WPF) 就设计用户界面这方面而言可替代 Windows 窗体。 WPF 使用一种称为可扩展应用程序标记语言 (XAML) 的标记语言提供用于整合 UI、媒体和文档的新技术。 有关详细信息，请参阅[Visual Studio 2015 中的 WPF 简介](/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs)。  
@@ -86,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio 将自动创建一个在 Windows 窗体用户控件中承载 WPF 用户控件 <xref:System.Windows.Forms.Integration.ElementHost> 的对象。  
   
-8.  编写以编程方式将 Windows 窗体用户控件添加到文档或工作簿的代码。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+8.  编写以编程方式将 Windows 窗体用户控件添加到文档或工作簿的代码。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
     > [!NOTE]  
     >  不能将 Windows 窗体用户控件拖动到设计器中的文档或工作表中。  

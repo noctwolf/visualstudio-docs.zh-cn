@@ -1,12 +1,10 @@
 ---
-title: "发布向导 （Visual Studio 中的 Office 开发） |Microsoft 文档"
-ms.custom: 
+title: 发布向导 （Visual Studio 中的 Office 开发） |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
 - VST.PublishWizard.Publish.2007System
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 43b4869435c34a29cac5fd18a13d2b4b140e8b6c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>发布向导（Visual Studio 中的 Office 开发）
   使用**发布向导**若要将解决方案文件复制到指定位置中，创建清单的文件，并创建的安装程序。  
@@ -45,9 +44,9 @@ ms.lasthandoff: 01/10/2018
   
 -   通用命名约定 (UNC) 路径，如\\\ServerName\MyApplication\\。  
   
--   一个网站，如 http://www.microsoft.com/MyApplication URL。  
+-   Web URL 站点，如http://www.microsoft.com/MyApplication。  
   
- 默认情况下，如果安装了 IIS，则发布位置为 *http://localhost/projectname/* ；如果未安装 IIS，则发布位置为 publish\ 目录。  
+ 默认情况下，发布位置是*http://localhost/projectname/*如果必须安装 IIS，或者如果你这样做的 publish\ 目录未安装 IIS。  
   
 > [!NOTE]  
 >  如果目标计算机正在运行 Windows Vista，有更多注意事项。 你必须是 Windows Vista 计算机上的管理员才能使用本地发布选项。 此外，默认位置是始终*发布\\*目录中，而不考虑是否可以安装 IIS。  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>请参阅  
  [通过使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [在 Visual Studio &#41; 中发布页，项目设计器 &#40; 的 Office 开发](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [发布页、 项目设计器&#40;Visual Studio 中的 Office 开发&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)  
   
   

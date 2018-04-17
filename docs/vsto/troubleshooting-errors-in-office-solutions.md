@@ -1,13 +1,10 @@
 ---
-title: "在 Office 解决方案中的错误故障排除 |Microsoft 文档"
-ms.custom: 
+title: 在 Office 解决方案中的错误故障排除 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a077949de07d89adad76c6fc68754d2018fa461
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1166f183e49bfc01592a645916ce12c1148ec8de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Office 解决方案中错误的疑难解答
   在 Visual Studio 中开发 Office 解决方案时，如果执行下面的任务，可能会遇到问题：  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [调试项目](#debugging)  
   
-##  <a name="creating"></a>创建、 升级和打开项目  
+##  <a name="creating"></a> 创建、 升级和打开项目  
  创建或打开 Office 项目时，可能会遇到以下错误。  
   
 ### <a name="the-project-cannot-be-created"></a>无法创建项目  
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  完成项目升级后，如果它未被任何其他 Office 解决方案使用，你可以将 Visual Studio 2005 Tools for Office Second Edition Runtime 从开发计算机上卸载。  
   
-##  <a name="designers"></a>使用设计器  
+##  <a name="designers"></a> 使用设计器  
  在文档级项目中使用文档、工作簿或工作表设计器时，可能会遇到以下错误。  
   
 ### <a name="designer-failed-to-load-correctly"></a>设计器未能正确加载  
@@ -175,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  即使你已导入 Word 或 Excel 命名空间，并且有权访问其内部的所有类，则必须完全限定使用 Word 或 Excel，若要删除命名空间的多义性的所有类型。  
   
-##  <a name="building"></a>生成项目  
+##  <a name="building"></a> 生成项目  
  生成 Office 项目时，可能会遇到以下错误。  
   
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>无法生成基于具有受限权限的文档的文档级项目  
@@ -188,7 +185,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>删除 NamedRange 控件后发生编译器错误  
  如果从设计器中的非活动工作表的工作表中删除 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件，则可能不会从项目中移除自动生成的代码，并可能发生编译器错误。 为了确保删除这些代码，应在删除 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件前总是选中包含该控件的工作表，使其成为活动工作表。 如果在删除该控件时没有删除自动生成的代码，可激活该工作表并进行更改以将该工作表标记为已修改，从而令设计器删除这些代码。 重新生成项目时，将删除这些代码。  
   
-##  <a name="debugging"></a>调试项目  
+##  <a name="debugging"></a> 调试项目  
  调试 Office 项目时，可能会遇到以下错误。  
   
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>在开发计算机上发布和安装解决方案时显示卸载提示  

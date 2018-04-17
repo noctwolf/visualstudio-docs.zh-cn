@@ -1,12 +1,10 @@
 ---
-title: "演练： 使用项目模板创建网站栏项目项，第 1 部分 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用项目模板创建网站栏项目项，第 1 部分 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2266fc715322c024625e5f52f83805d0d582416b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>演练：使用项目模板创建网站栏项目项（第 1 部分）
   SharePoint 项目是一个或多个 SharePoint 项目项的容器。 可以通过创建你自己的 SharePoint 项目项类型，然后将其关联的项目模板来扩展 Visual Studio 中的 SharePoint 项目系统。 在此演练中，将为创建网站栏，定义项目项类型，然后你将在其中创建可用来创建一个包含网站栏项目项的新项目的项目模板。  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
  这是一个独立的演练。 完成本演练后，你可以通过将向导添加到项目模板来增强项目项。 有关详细信息，请参阅[演练： 使用项目模板，第 2 部分中创建网站栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
 > [!NOTE]  
->  你可以下载包含已完成的项目、 代码和从以下位置在本演练中的其他文件的示例： [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369)。  
+>  你可以下载包含已完成的项目、 代码和从以下位置在本演练中的其他文件的示例： [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369)。  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练的开发计算机上：  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  在**名称**框中，输入**SiteColumnProjectItem**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**SiteColumnProjectItem**项目合并为**解决方案资源管理器**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**SiteColumnProjectItem**项目合并为**解决方案资源管理器**。  
   
 #### <a name="to-create-the-project-template-project"></a>若要创建项目模板项目  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  在**名称**框中，输入**SiteColumnProjectTemplate**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**SiteColumnProjectTemplate**到解决方案的项目。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**SiteColumnProjectTemplate**到解决方案的项目。  
   
 6.  从项目中删除 Class1 代码文件。  
   
@@ -126,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  在**名称**框中，输入**ProjectItemTypeDefinition** ，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**ProjectItemTypeDefinition**到解决方案的项目并打开默认 Class1 代码文件。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**ProjectItemTypeDefinition**到解决方案的项目并打开默认 Class1 代码文件。  
   
 5.  从项目中删除 Class1 代码文件。  
   
@@ -434,7 +433,7 @@ ms.lasthandoff: 01/10/2018
   
     -   将添加`ProjectItem`的每个 filethat 元素的包含在每个项目实例。  
   
-    -   使用命名空间"http://schemas.microsoft.com/developer/vstemplate/2005"。 此解决方案中的其他项目文件使用"http://schemas.microsoft.com/developer/msbuild/2003"命名空间。 因此，将生成 XML 架构警告消息，但你可以在本演练中忽略它们。  
+    -   使用命名空间"http://schemas.microsoft.com/developer/vstemplate/2005"。 此解决方案使用的其他项目文件"http://schemas.microsoft.com/developer/msbuild/2003"命名空间。 因此，将生成 XML 架构警告消息，但你可以在本演练中忽略它们。  
   
      有关.vstemplate 文件的内容的详细信息，请参阅[Visual Studio 模板架构参考](/visualstudio/extensibility/visual-studio-template-schema-reference)。  
   

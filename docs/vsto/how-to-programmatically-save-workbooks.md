@@ -1,12 +1,10 @@
 ---
-title: "如何： 以编程方式保存工作簿 |Microsoft 文档"
-ms.custom: 
+title: 如何： 以编程方式保存工作簿 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - workbooks, saving backup copies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4d184d7122459b85b3ad20fbf8338a53f28bd6c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4f3421c5a00d062fb49cc73b8a7f2ba592dc5d74
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>如何：以编程方式保存工作簿
   可通过多种方式保存工作簿。 可以保存工作簿而不更改路径。 如果以前没有保存过工作簿，则应该通过指定一个路径来保存工作簿。 如果没有显式路径，Microsoft Office Excel 会使用创建文件时为其指定的名称将文件保存在当前文件夹中。 还可以保存工作簿的副本，而不修改内存中打开的工作簿。  
@@ -89,7 +88,7 @@ ms.lasthandoff: 01/10/2018
  [使用工作簿](../vsto/working-with-workbooks.md)   
  [工作簿主机项](../vsto/workbook-host-item.md)   
  [如何： 以编程方式关闭工作簿](../vsto/how-to-programmatically-close-workbooks.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)  
   

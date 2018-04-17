@@ -1,23 +1,21 @@
 ---
-title: "如何： 计算 XPath 表达式 |Microsoft 文档"
-ms.custom: 
+title: 如何： 计算 XPath 表达式 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8a0072df206fcdfc27966632e3801316bcfb7274
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c026e9d2005156189afc9dd478c75397a997d8f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>如何：计算 XPath 表达式
 你可以使用计算 XPath 表达式**快速监视**对话框。 XPath 表达式必须符合 W3C XPath 1.0 建议。 当前 XSLT 上下文 — 即`self::node()`中的节点**局部变量**窗口 — 为 XPath 表达式提供计算上下文。  

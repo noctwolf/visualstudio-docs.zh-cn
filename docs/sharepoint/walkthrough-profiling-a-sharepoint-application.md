@@ -1,12 +1,10 @@
 ---
-title: "演练： 分析 SharePoint 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 演练： 分析 SharePoint 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 91952e2f10f025568d356149f63bff63e0c0b1fc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f6eb4e9f78a9defaafb774551e301d6101cc40d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>演练：分析 SharePoint 应用程序
   本演练演示在 Visual Studio 中如何使用分析工具优化 SharePoint 应用程序的性能。 此示例应用程序是 SharePoint 功能事件接收器，其中包含降低功能事件接收器性能的空闲循环。 Visual Studio 探查器使您能够找到和消除开销最大的 （最慢执行） 部分的项目，也称为*热路径*。  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
--   支持的 Microsoft Windows 和 SharePoint 版本。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支持的 Microsoft Windows 和 SharePoint 版本。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]。  
   
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  选择**完成**按钮。 项目将出现在**解决方案资源管理器**。  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a>添加功能和功能事件接收器  
+##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> 添加功能和功能事件接收器  
  接下来，向项目中添加功能和该功能的事件接收器。 此事件接收器将包含要分析的代码。  
   
 #### <a name="to-add-a-feature-and-feature-event-receiver"></a>添加功能和功能事件接收器。  
@@ -191,7 +190,7 @@ ms.lasthandoff: 01/10/2018
   
 9. 保存项目。  
   
-##  <a name="BKMK_ConfigSharePointApp"></a>配置和部署 SharePoint 应用程序  
+##  <a name="BKMK_ConfigSharePointApp"></a> 配置和部署 SharePoint 应用程序  
  SharePoint 项目现已就绪，将其配置并部署到 SharePoint 服务器。  
   
 #### <a name="to-configure-and-deploy-the-sharepoint-application"></a>配置和部署 SharePoint 应用程序  
@@ -214,7 +213,7 @@ ms.lasthandoff: 01/10/2018
   
      该向导启用应用程序分析的服务器上，显示**性能资源管理器**窗口中，然后生成、 部署和运行 SharePoint 应用程序。  
   
-##  <a name="BKMK_RunSPApp"></a>运行 SharePoint 应用程序  
+##  <a name="BKMK_RunSPApp"></a> 运行 SharePoint 应用程序  
  激活 SharePoint 中的功能，触发要运行的 `FeatureActivation` 事件代码。  
   
 #### <a name="to-run-the-sharepoint-application"></a>运行 SharePoint 应用程序  
@@ -235,7 +234,7 @@ ms.lasthandoff: 01/10/2018
   
      在关闭 SharePoint 后，探查器将创建并显示一个示例分析报告并将其保存为.vsp 文件中**ProfileTest**项目的文件夹。  
   
-##  <a name="BKMK_ViewResults"></a>查看和解释分析结果  
+##  <a name="BKMK_ViewResults"></a> 查看和解释分析结果  
  现在你已运行并分析 SharePoint 应用程序，请查看测试结果。  
   
 #### <a name="to-view-and-interpret-the-profiling-results"></a>查看和解释分析结果  

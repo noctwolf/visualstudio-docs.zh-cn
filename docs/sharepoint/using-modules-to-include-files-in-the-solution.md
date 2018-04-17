@@ -1,12 +1,10 @@
 ---
-title: "使用模块包括解决方案中的文件 |Microsoft 文档"
-ms.custom: 
+title: 使用模块包括解决方案中的文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c7f0fff081215e1bf1a9e2c5320668f2c698b2e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9c11dd4ebd17b1ebef91c3d7752df7c15dd50da4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>使用模块包括解决方案中的文件
   可能有些时候你可能想要将文件部署到 SharePoint 服务器而不考虑其文件类型，如新的主页面。 若要执行此操作，可以使用*模块*(无法将其与混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]代码模块)。 模块是 SharePoint 解决方案中的文件的容器。 时部署了解决方案，该模块中的文件会复制到 SharePoint 服务器上的指定文件夹中。  

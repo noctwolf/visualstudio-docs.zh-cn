@@ -1,12 +1,10 @@
 ---
-title: "如何： 将控件添加到 Backstage 视图 |Microsoft 文档"
-ms.custom: 
+title: 如何： 将控件添加到 Backstage 视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - Microsoft Office Menu
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7a58b9b59dd3625b3b9b7d8e9e3e77964eb0f2a5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1cdda3960363ba87e9434cd14077c7182a9f56c4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何：向 Backstage 视图添加控件
   你可以使用功能区设计器将控件添加到当单击打开菜单**文件**选项运行该应用程序，你将添加到的控件时**文件**选项卡会显示一个名为组**外接程序**。  

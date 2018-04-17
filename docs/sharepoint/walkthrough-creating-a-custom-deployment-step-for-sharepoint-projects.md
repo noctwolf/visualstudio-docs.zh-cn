@@ -1,12 +1,10 @@
 ---
-title: "演练： 为 SharePoint 项目创建自定义部署步骤 |Microsoft 文档"
-ms.custom: 
+title: 演练： 为 SharePoint 项目创建自定义部署步骤 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 036f8d135e535547e9e5f790135186bf1f5728bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>演练：为 SharePoint 项目创建自定义部署步骤
   在部署 SharePoint 项目时，Visual Studio 以特定顺序执行一系列部署步骤。 Visual Studio 提供了许多内置部署步骤，但你也可以创建你自己。  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  选择**VSIX 项目**模板，将项目**UpgradeDeploymentStep**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**UpgradeDeploymentStep**项目合并为**解决方案资源管理器**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**UpgradeDeploymentStep**项目合并为**解决方案资源管理器**。  
   
 #### <a name="to-create-the-extension-project"></a>若要创建扩展项目  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  选择**类库**项目模板，将项目**DeploymentStepExtension**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**DeploymentStepExtension**到解决方案的项目并打开默认 Class1 代码文件。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**DeploymentStepExtension**到解决方案的项目并打开默认 Class1 代码文件。  
   
 5.  从项目中删除 Class1 代码文件。  
   
@@ -271,7 +270,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  选择**完成**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]创建 EmployeesListDefinition 项目。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建 EmployeesListDefinition 项目。  
   
 8.  打开 EmployeesListDefinition 项目的快捷菜单，选择**添加**，然后选择**新项**。  
   
@@ -289,7 +288,7 @@ ms.lasthandoff: 01/10/2018
   
     3.  **默认值 （空）**中选择**创建基于自定义的列表：**列表。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]创建员工列表项的标题列与单个空实例并打开列表设计器。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建员工列表项的标题列与单个空实例并打开列表设计器。  
   
 12. 在列表设计器中上,**列**选项卡上，选择**键入一个新的或现有的列名称**行，并将中的以下列**列显示名称**列表：  
   
@@ -433,7 +432,7 @@ ms.lasthandoff: 01/10/2018
   
      属性编辑器/Designer 随即打开。  
   
-4.  上**视图**选项卡上，选择**电子邮件**列，然后选择 **<** 键能够移从该列**所选列**列表到**可用列**列表。  
+4.  上**视图**选项卡上，选择**电子邮件**列，然后选择**<**键能够移从该列**所选列**列表到**可用列**列表。  
   
      此操作将删除这些字段的默认视图从**员工**SharePoint 站点上的列表。  
   

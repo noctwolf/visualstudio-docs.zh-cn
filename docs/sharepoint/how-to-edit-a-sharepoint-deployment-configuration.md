@@ -1,13 +1,10 @@
 ---
-title: "如何： 编辑 SharePoint 部署配置 |Microsoft 文档"
-ms.custom: 
+title: 如何： 编辑 SharePoint 部署配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e5e65e82910239b596e4b19f2ea1fa1f357266c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 97f6851b3d9aefee969851f355552373e7ecc7ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何：编辑 SharePoint 部署配置
   您可以创建部署配置或修改现有的部署配置。 例如，无法运行单步执行或更改在部署过程中的步骤的顺序。 你可能想要创建或修改的部署配置，因为不能更改的内置和以编程方式添加的配置。  
@@ -35,7 +32,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>若要创建 SharePoint 部署配置  
   
-1.  在**解决方案资源管理器**，选择 SharePoint 项目，，然后，在菜单栏上，选择**项目**， *ProjectName***属性**。  
+1.  在**解决方案资源管理器**，选择 SharePoint 项目，，然后，在菜单栏上，选择**项目**，* ProjectName ***属性**。  
   
 2.  上**SharePoint**选项卡上，选择**新建**按钮。  
   
@@ -52,7 +49,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-change-the-active-deployment-configuration"></a>若要更改的活动部署配置  
   
-1.  在**解决方案资源管理器**，选择 SharePoint 项目，，然后，在菜单栏上，选择**项目**， *ProjectName***属性**。  
+1.  在**解决方案资源管理器**，选择 SharePoint 项目，，然后，在菜单栏上，选择**项目**，* ProjectName ***属性**。  
   
 2.  选择**SharePoint**选项卡。  
   

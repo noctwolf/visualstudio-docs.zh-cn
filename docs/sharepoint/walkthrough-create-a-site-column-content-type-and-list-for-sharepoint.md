@@ -1,12 +1,10 @@
 ---
-title: "演练： 创建网站栏、 内容类型和 SharePoint 列表 |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建网站栏、 内容类型和 SharePoint 列表 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4db9ed078131e7152f3987c80f4e6181f888e540
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>演练：创建 SharePoint 的网站栏、内容类型和列表
   以下过程演示如何创建自定义 SharePoint 网站栏 — 或*字段*-以及所使用的站点列的内容类型。 它还演示如何创建使用新的内容类型的列表。  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Visual Studio。  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a>创建自定义网站栏  
+##  <a name="BKMK_CreatingCustSiteCols"></a> 创建自定义网站栏  
  此示例创建用于管理在医院患者列表。 首先，必须创建中的 SharePoint 项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]并将站点列添加到它，，如下所示。  
   
 #### <a name="to-create-the-project"></a>要创建项目  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  使用相同的过程中，向项目添加两个详细的网站栏：**患者 ID** (类型 ="Integer") 和**Doctor 名称**(类型 ="Text")。 将其组值设置为**Clinic 网站栏**。  
   
-##  <a name="BKMK_CreateCustContType"></a>创建自定义的内容类型  
+##  <a name="BKMK_CreateCustContType"></a> 创建自定义的内容类型  
  接下来，创建的内容类型-基于联系人内容类型，包括你在前面的过程中创建网站栏。 通过使基于现有的内容类型的内容类型，可以节省时间，因为基的内容类型提供多个站点列在新的内容类型中使用。  
   
 #### <a name="to-create-a-custom-content-type"></a>若要创建自定义内容类型  
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 11. 在菜单栏上，选择**文件**，**保存所有**，然后关闭设计器中内容类型。  
   
-##  <a name="BKMK_CreateList"></a>创建列表  
+##  <a name="BKMK_CreateList"></a> 创建列表  
  现在，创建使用新的内容类型和站点列的列表。  
   
 #### <a name="to-create-a-list"></a>若要创建的列表  
@@ -205,7 +204,7 @@ ms.lasthandoff: 01/10/2018
   
 15. 在**列名**列表中，选择**患者名称**，请确保**排序**列设置为**升序**，然后选择**确定**按钮。  
   
-##  <a name="BKMK_TestApp"></a>测试应用程序  
+##  <a name="BKMK_TestApp"></a> 测试应用程序  
  现在，自定义网站栏、 内容类型和列表准备就绪后，将它们部署到 SharePoint，并运行应用程序对其进行测试。  
   
 #### <a name="to-test-the-application"></a>测试应用程序  

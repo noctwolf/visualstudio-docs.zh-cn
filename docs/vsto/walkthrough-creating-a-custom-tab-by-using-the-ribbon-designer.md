@@ -1,12 +1,10 @@
 ---
-title: "演练： 使用功能区设计器创建自定义选项卡 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用功能区设计器创建自定义选项卡 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cdbbd7ee286c97a986e89ccdb5bdcfdde4ef7578
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7fdae2b6a867b6d87c6579fc1d24f9d0ebd07cf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>演练：使用功能区设计器创建自定义选项卡
   使用功能区设计器，可以创建自定义选项卡，然后在其中添加和放置控件。  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio 将在设计器中打开新的工作簿并将添加**为 myexcelribbon**项目合并为**解决方案资源管理器**。  
   
-##  <a name="BKMK_CreateActionsPanes"></a>创建操作窗格  
+##  <a name="BKMK_CreateActionsPanes"></a> 创建操作窗格  
  将两个自定义操作窗格添加到项目。 稍后会将显示和隐藏这些操作窗格的按钮添加到自定义选项卡中。  
   
 #### <a name="to-create-actions-panes"></a>创建操作窗格  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  重复步骤 1 至 5，再创建一个操作窗格和标签。 设置**文本**到第二个标签的属性**操作窗格 2**。  
   
-##  <a name="BKMK_CreateCustomTab"></a>创建自定义选项卡  
+##  <a name="BKMK_CreateCustomTab"></a> 创建自定义选项卡  
  Office 应用程序的设计准则之一是：用户应始终能控制 Office 应用程序 UI。 若要为操作窗格添加此功能，可以添加用于从功能区上的自定义选项卡显示和隐藏每个操作窗格的按钮。 若要创建自定义选项卡，添加**功能区 （可视化设计器）**到项目的项。 设计器可帮助你添加和放置控件、设置控件属性以及处理控件事件。  
   
 #### <a name="to-create-a-custom-tab"></a>创建自定义选项卡  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 14. 设置**标签**属性**隐藏操作窗格**。  
   
-##  <a name="BKMK_HideShowActionsPane"></a>隐藏和显示操作窗格，通过使用在自定义选项卡上的按钮  
+##  <a name="BKMK_HideShowActionsPane"></a> 隐藏和显示操作窗格，通过使用在自定义选项卡上的按钮  
  最后一个步骤是添加对用户进行响应的代码。 为上述两个按钮的 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> 事件和切换按钮的 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 事件添加事件处理程序。 在这些事件处理程序中添加相应代码即可隐藏和显示操作窗格。  
   
 #### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>使用自定义选项卡中的按钮隐藏和显示操作窗格  

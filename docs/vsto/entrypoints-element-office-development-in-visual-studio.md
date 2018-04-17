@@ -1,13 +1,10 @@
 ---
-title: "&lt;入口点&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档"
-ms.custom: 
+title: '&lt;入口点&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: de60c2164bfbb0f7f8f483ab937fed23ecea9195
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a620dae22e6fd67e3d880cbd87e8883911f28845
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;入口点&gt;元素 （Visual Studio 中的 Office 开发）
   `entryPoints` 命名空间的 `vstav3` 元素包含与 Office 解决方案关联的所有 `entryPoint` 元素。  
@@ -52,7 +49,7 @@ ms.lasthandoff: 01/10/2018
  `entryPoints` 具有下列元素。  
   
 ### <a name="entrypoint"></a>entryPoint  
- 必须的。 角色`entryPoint`中的元素`vstav3`中定义命名空间[&#60; 入口点 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
+ 必须的。 角色`entryPoint`中的元素`vstav3`中定义命名空间[&#60;入口点&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)。  
   
 ## <a name="document-level-customization-example"></a>文档级自定义项示例  
   

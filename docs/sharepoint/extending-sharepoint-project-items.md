@@ -1,12 +1,10 @@
 ---
-title: "扩展 SharePoint 项目项 |Microsoft 文档"
-ms.custom: 
+title: 扩展 SharePoint 项目项 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e990896720916048ab449c7ccb5a927577861256
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1cc202b2e3e303f8f6e92b82bbfbc6f5525966bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-project-items"></a>扩展 SharePoint 项目项
   当你想要将功能添加到已安装在 Visual Studio 中的 SharePoint 项目项类型时，请创建项目项扩展。 例如，你可以创建为内置的扩展**事件接收器**或**列表定义**项目项在 Visual Studio 中，或可以创建自定义项目项类型的扩展。 你还可以创建的 SharePoint 项目项的所有类型的扩展。  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="identifiers-for-sharepoint-project-items"></a>SharePoint 项目项的标识符  
  每个 SharePoint 项目项都有相应的字符串标识符。 如果你想要执行以下任务，你必须知道项目项的标识符：  
   
--   创建项目项的扩展。 在这种情况下，必须将你想要扩展的构造函数的项目项的标识符传递<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 若要为所有项目项类型创建的扩展，将传递 **\*** 字符串值。  
+-   创建项目项的扩展。 在这种情况下，必须将你想要扩展的构造函数的项目项的标识符传递<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 若要为所有项目项类型创建的扩展，将传递**\***字符串值。  
   
 -   以编程方式添加到项目的项目项。 在这种情况下，必须传递到的项目项的标识符<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A>方法。  
   

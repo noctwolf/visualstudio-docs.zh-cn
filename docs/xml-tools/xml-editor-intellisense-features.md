@@ -1,23 +1,21 @@
 ---
-title: "XML 编辑器的 IntelliSense 功能 |Microsoft 文档"
-ms.custom: 
+title: XML 编辑器的 IntelliSense 功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98f11cf9f4aef491951e1968105a30a679e687a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bc4a0e9cc3da9d2cfad86d1891514a68dd2b87fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 编辑器的 IntelliSense 功能
 XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中提供的其他语言编辑器相提并论。 本节介绍如何使用 XML 架构定义语言 (XSD) 和 XSLT 文档中的 IntelliSense。  
@@ -105,7 +103,7 @@ XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中�
   
  **自动插入**部分**杂项**页控制以下行为：  
   
-|name|描述|  
+|名称|描述|  
 |----------|-----------------|  
 |结束标记|为新元素插入结束标记。|  
 |属性引号|在输入新特性名时插入特性值引号。|  

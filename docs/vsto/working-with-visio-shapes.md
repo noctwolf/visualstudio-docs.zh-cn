@@ -1,12 +1,10 @@
 ---
-title: "使用 Visio 形状 |Microsoft 文档"
-ms.custom: 
+title: 使用 Visio 形状 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - shapes [Office development in Visual Studio], common tasks with Visio shapes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 559566753740cc07715ecad6ad4da0b4faf6b0ac
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ea904dd2d6d41394323b2ddc2ff3f4fcd66e5d69
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-visio-shapes"></a>使用 Visio 形状
   此部分中的主题提供有关使用 Microsoft Office Visio 对象模型处理 Office 项目中的形状的分步过程和代码示例。  
@@ -34,6 +33,6 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>请参阅  
  [Visio 解决方案](../vsto/visio-solutions.md)   
  [Visio 对象模型概述](../vsto/visio-object-model-overview.md)   
- [Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
   
   

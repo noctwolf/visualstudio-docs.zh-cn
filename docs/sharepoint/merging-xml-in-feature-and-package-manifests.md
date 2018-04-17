@@ -1,13 +1,10 @@
 ---
-title: "合并功能和包中的 XML 清单 |Microsoft 文档"
-ms.custom: 
+title: 合并功能和包中的 XML 清单 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 81e6f83dd4fc825e885843a47d45485918f7dabe
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ae4eef0cc0e596f6ecd0848363f51c55b606d4a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="merging-xml-in-feature-and-package-manifests"></a>合并功能和包清单中的 XML
   通过定义功能和包[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单文件。 这些打包的清单是从设计器和自定义生成的数据的组合[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单模板中输入的用户。 在打包时，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]合并自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]与设计器提供的语句[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]以组成打包[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单文件。 类似元素，与更高版本中合并的异常，记下的异常合并，以避免[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]验证错误后将文件部署到 SharePoint，并使清单文件更小、 更有效。  
@@ -31,12 +28,12 @@ ms.lasthandoff: 01/10/2018
  除非你禁用的功能或包设计器，您无法直接修改打包的清单文件。 但是，也可以手动添加自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]元素与清单模板通过功能和包设计器或[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]编辑器。 有关详细信息，请参阅[如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)和[如何： 自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
 ## <a name="feature-and-package-manifest-merge-process"></a>功能和包清单合并进程  
- 合并提供设计器的元素，以及自定义元素时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将使用下列过程。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]检查每个元素是否具有唯一的键值。 如果元素没有唯一的键值，则会将其追加到打包的清单文件。 同样，具有多个键的元素也无法合并。 因此，它们将追加到的清单文件。  
+ 合并提供设计器的元素，以及自定义元素时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将使用下列过程。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 检查每个元素是否具有唯一的键值。 如果元素没有唯一的键值，则会将其追加到打包的清单文件。 同样，具有多个键的元素也无法合并。 因此，它们将追加到的清单文件。  
   
  如果元素具有一个唯一密钥，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]设计器和自定义的键的值进行比较。 如果值匹配，他们会将合并为单个值。 如果这些值不同，将放弃的设计器的密钥值，并使用自定义密钥值。 集合还将合并。 例如，如果设计器生成[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]和自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]这两种包含程序集集合，则打包的清单包含只有一个程序集集合。  
   
 ## <a name="merge-exceptions"></a>合并异常  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]合并大多数设计器[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]以及类似的自定义元素[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]元素，只要它们具有唯一的标识属性。 但是，某些元素缺少所需的唯一标识符[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]合并。 这些元素称为*合并异常*。 在这些情况下，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不会合并自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]元素与设计器提供[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]元素，但改为将它们追加到打包的清单文件。  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 合并大多数设计器[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]以及类似的自定义元素[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]元素，只要它们具有唯一的标识属性。 但是，某些元素缺少所需的唯一标识符[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]合并。 这些元素称为*合并异常*。 在这些情况下，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不会合并自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]元素与设计器提供[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]元素，但改为将它们追加到打包的清单文件。  
   
  下面的功能和包的合并例外情况列出了[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单文件。  
   
@@ -56,8 +53,8 @@ ms.lasthandoff: 01/10/2018
 |ElementFile|位置|  
 |ElementManifests/ElementManifest|位置|  
 |属性/属性|键|  
-|CustomUpgradeAction|name|  
-|CustomUpgradeActionParameter|name|  
+|CustomUpgradeAction|名称|  
+|CustomUpgradeActionParameter|名称|  
   
 > [!NOTE]  
 >  因为修改 CustomUpgradeAction 元素的唯一方法是在自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]编辑器中，未合并的效果较低。  

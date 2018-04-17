@@ -1,5 +1,5 @@
 ---
-title: "如何： 将新项添加到工作流项目 （旧版） |Microsoft 文档"
+title: 如何： 将新项添加到工作流项目 （旧版） |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 130cd83d-942d-437b-bbb5-8088ec0a6d79
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b0c644854f8f08ff7aeeb05f92fe3fd359f45e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 1699b3f2d16bb481a7efb744eed58d395dbc8773
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>如何：向工作流项目添加新项（旧版）
 创建使用旧的 Windows 工作流设计器提供的工作流项目之后[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]面向[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]，你可以添加[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]项和其他熟悉[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项到你项目。

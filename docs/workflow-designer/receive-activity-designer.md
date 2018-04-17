@@ -1,5 +1,5 @@
 ---
-title: "Receive 活动设计器 |Microsoft 文档"
+title: Receive 活动设计器 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8058b13dd488ddca2237056048673529c379256
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="receive-activity-designer"></a>Receive 活动设计器
 **接收**活动设计器用于创建和配置<xref:System.ServiceModel.Activities.Receive>活动。 <xref:System.ServiceModel.Activities.Receive> 活动是接收消息的活动，可接收的消息包括内置类型（如 <xref:System.ServiceModel.Channels.Message>、<xref:System.IO.Stream> 或 <xref:System.Xml.Linq.XElement>）或者应用程序定义的数据协定、消息协定或可序列化的 XML 类。
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/12/2018
 |<xref:System.ServiceModel.Activities.Receive.KnownTypes%2A>|False|指定由此 <xref:System.ServiceModel.Activities.Receive> 活动实现的服务操作的已知类型集合。 此属性应与设置为 <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> 的 <xref:System.Runtime.Serialization.DataContractSerializer> 属性结合使用。 如果使用了 <xref:System.Xml.Serialization.XmlSerializer>，则忽略此项。<br /><br /> 单击旁的省略号按钮**KnownTypes**字段在属性网格中显示**类型集合编辑器**对话框中可以使用该对话框添加相关类型。 有关使用此框的详细信息，请参阅[类型集合编辑器对话框](../workflow-designer/type-collection-editor-dialog-box.md)主题。|
 |<xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A>|False|指定消息的 <xref:System.Net.Security.ProtectionLevel>。<br /><br /> 1。<xref:System.Net.Security.ProtectionLevel>意味着仅身份验证。<br />2。<xref:System.Net.Security.ProtectionLevel>意味着数据进行签名以帮助确保传输的数据的完整性。<br />3。<xref:System.Net.Security.ProtectionLevel>方法进行加密和签名数据以帮助确保保密性和传输数据的完整性。|
 |<xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>|False|指定 <xref:System.ServiceModel.Activities.Receive> 活动实现的服务操作所使用的序列化程序的类型。 默认值为 <xref:System.Runtime.Serialization.DataContractSerializer>，它使用提供的数据协定将类型实例序列化和反序列化为 XML 流或文档。 如果需要对 XML 进行更多控制，还可使用 <xref:System.Xml.Serialization.XmlSerializer>。|
-|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|指定消息的操作标头。 如果它未显式设置，其默认值为： https://tempuri.org/ {服务协定命名空间} / {服务协定名称} / {操作名称}。|
+|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|指定消息的操作标头。 如果它未显式设置，其默认值为：https://tempuri.org/{service协定命名空间} / {服务协定名称} / {操作名称}。|
 
 ## <a name="see-also"></a>请参阅
 

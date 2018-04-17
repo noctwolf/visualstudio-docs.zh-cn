@@ -1,27 +1,23 @@
 ---
-title: "迁移旧语言服务 |Microsoft 文档"
-ms.custom: 
+title: 迁移旧语言服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5f7cff29dd368acbbc3f599ec0cf623343031f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 412b09016a3f889e0d6c5e40ff75895d5ae8ff48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="migrating-a-legacy-language-service"></a>将旧语言服务迁移
 你可以通过更新项目并向项目添加 source.extension.vsixmanifest 文件迁移到更高版本的 Visual Studio 的旧语言服务。 语言服务本身将继续工作和前面一样，因为 Visual Studio 编辑器采用它。  
@@ -63,7 +59,7 @@ ms.lasthandoff: 12/22/2017
   
     -   上**应用程序**选项卡上，更改**目标框架**到**4.6.1**。  
   
-    -   上**调试**选项卡上，在**启动外部程序**框中，键入 **\<Visual Studio 安装路径 > \Common7\IDE\devenv.exe。**。  
+    -   上**调试**选项卡上，在**启动外部程序**框中，键入**\<Visual Studio 安装路径 > \Common7\IDE\devenv.exe**。  
   
          在**命令行自变量**框中，键入 /**rootsuffix Exp**。  
   
@@ -113,5 +109,5 @@ ms.lasthandoff: 12/22/2017
   
 12. 开始调试。 打开 Visual Studio 的第二个实例。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [旧版语言服务扩展性](../../extensibility/internals/legacy-language-service-extensibility.md)

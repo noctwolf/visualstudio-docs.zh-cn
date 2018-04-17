@@ -1,12 +1,10 @@
 ---
-title: "演练： 文档级项目中的简单数据绑定 |Microsoft 文档"
-ms.custom: 
+title: 演练： 文档级项目中的简单数据绑定 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 95029c946939bf0918e15034625ad31c1e5897b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 939d45246ea36f4227a0b914210cb0470b325c20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>演练：文档级项目中的简单数据绑定
   本演练演示的文档级项目中的数据绑定的基础知识。 SQL Server 数据库中的单个数据字段绑定到在 Microsoft Office Excel 中的命名区域中。 本演练还演示如何添加能够让你能滚动显示各个表中的所有记录控件。  
@@ -181,7 +180,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  确认第一条记录显示在单元格**A1**和**B1**。  
   
-3.  单击 **>**  (`Button3`) 按钮，然后确认下一条记录显示在单元格中**A1**和**B1**。  
+3.  单击**>** (`Button3`) 按钮，然后确认下一条记录显示在单元格中**A1**和**B1**。  
   
 4.  单击其他滚动按钮，以确认记录按预期发生变化。  
   

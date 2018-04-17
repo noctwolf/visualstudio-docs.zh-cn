@@ -1,13 +1,10 @@
 ---
-title: "演练： 创建书签的快捷菜单 |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建书签的快捷菜单 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6d54d23330c6d5fab836f168a291b15b90379117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>演练：创建书签的快捷菜单
   本演练演示如何创建快捷菜单<xref:Microsoft.Office.Tools.Word.Bookmark>Word 的文档级自定义项中的控件。 用户右键单击在书签中的文本，快捷菜单将显示，且提供了用于设置文本格式的用户选项。  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
   
-##  <a name="BKMK_CreateProject"></a>创建项目  
+##  <a name="BKMK_CreateProject"></a> 创建项目  
  第一步是在 Visual Studio 中创建的 Word 文档项目。  
   
 #### <a name="to-create-a-new-project"></a>创建新项目  
@@ -60,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio 将在设计器中打开新的 Word 文档和添加**我书签的快捷菜单**项目合并为**解决方案资源管理器**。  
   
-##  <a name="BKMK_addtextandbookmarks"></a>向文档添加文本和书签  
+##  <a name="BKMK_addtextandbookmarks"></a> 向文档添加文本和书签  
  向文档添加一些文本，然后再添加两个重叠书签。  
   
 #### <a name="to-add-text-to-your-document"></a>若要向文档添加文本  
@@ -77,18 +74,18 @@ ms.lasthandoff: 01/10/2018
   
 2.  选择"创建快捷菜单，右键单击文本时"的单词，然后单击**确定**。  
   
-     `bookmark1`将添加到文档。  
+     `bookmark1` 将添加到文档。  
   
 3.  添加另一个<xref:Microsoft.Office.Tools.Word.Bookmark>控制对单词"右键单击在书签中的文本"。  
   
-     `bookmark2`将添加到文档。  
+     `bookmark2` 将添加到文档。  
   
     > [!NOTE]  
     >  "右击的文本"会同时出现在单词`bookmark1`和`bookmark2`。  
   
  当在设计时向文档添加书签<xref:Microsoft.Office.Tools.Word.Bookmark>创建控件。 你可用于编程的书签的多个事件。 你可以在编写代码<xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>事件的书签，以便当用户右键单击书签的地方中的文本将出现快捷菜单。  
   
-##  <a name="BKMK_AddCmndsShortMenu"></a>将命令添加到快捷菜单  
+##  <a name="BKMK_AddCmndsShortMenu"></a> 将命令添加到快捷菜单  
  向右键单击该文档时，将出现的快捷菜单添加按钮。  
   
 #### <a name="to-add-commands-to-a-shortcut-menu"></a>将命令添加到快捷菜单  
@@ -148,7 +145,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]  
   
-##  <a name="BKMK_formattextbkmk"></a>设置在书签中的文本格式  
+##  <a name="BKMK_formattextbkmk"></a> 设置在书签中的文本格式  
   
 #### <a name="to-format-the-text-in-the-bookmark"></a>若要设置格式在书签中的文本  
   

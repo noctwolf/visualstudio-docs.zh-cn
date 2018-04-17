@@ -1,13 +1,10 @@
 ---
-title: "演练： 将控件添加到工作表中在运行时在 VSTO 外接程序项目 |Microsoft 文档"
-ms.custom: 
+title: 演练： 将控件添加到工作表中在运行时在 VSTO 外接程序项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - worksheets, adding controls at run time
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f32db4aa6b547f1555fbccc9cb03c00998169eaa
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 47c647e2b3af6941f7b4a4d6f28eccfac2b31e2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>演练：在运行时在 VSTO 外接程序项目中向工作表中添加控件
   可通过使用 Excel VSTO 外接程序向任何打开的工作表添加控件。 本演练演示如何利用功能区使用户能够向工作表添加 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.ListObject>。 有关信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
@@ -75,21 +72,21 @@ ms.lasthandoff: 01/10/2018
   
 5.  在 **“属性”** 窗口中，更改下列属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**Button**|  
     |**标签**|**Button**|  
   
 6.  将第二个复选框添加到 **group1**，然后更改下列属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**NamedRange**|  
     |**标签**|**NamedRange**|  
   
 7.  添加到一个第三个复选框**group1**，然后将更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**ListObject**|  
     |**标签**|**ListObject**|  

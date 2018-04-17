@@ -1,12 +1,10 @@
 ---
-title: "如何： 将自定义 SharePoint 节点添加到服务器资源管理器 |Microsoft 文档"
-ms.custom: 
+title: 如何： 将自定义 SharePoint 节点添加到服务器资源管理器 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5b5cc829451a4227625ae1ad8da9e5da8bd0d9d4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 47b51070a3f3368dbff636858c9a2e1ebf2e9f80
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>如何：向服务器资源管理器添加自定义 SharePoint 节点
   你可以自定义下添加节点**SharePoint 连接**中的节点**服务器资源管理器**。 这是有用的如果你想要显示的不会显示在其他 SharePoint 组件**服务器资源管理器**默认情况下。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。  

@@ -1,12 +1,10 @@
 ---
-title: "如何： 安装 Visual Studio Tools for Office Runtime 可再发行组件 |Microsoft 文档"
-ms.custom: 
+title: 如何： 安装 Visual Studio Tools for Office Runtime 可再发行组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - installing Office development tools in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5f76191ca8b41f252e5009c0d3e7e09415f6f081
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 552ef84dc5b4bba8b9f63173d41a43a4efd82a14
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>如何：安装 Visual Studio Tools for Office Runtime 可再发行组件
   必须在运行使用 Microsoft Office 开发人员工具中的创建的解决方案，每台计算机上安装 Visual Studio 2010 Tools for Office Runtime [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 安装 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 Microsoft Office 时会自动安装运行时。 有关详细信息，请参阅 [Visual Studio Tools for Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
      [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]包括的语言包。 如果 Windows 安装设置为非英语语言，则可以以 Windows 使用的语言显示运行时消息。 同样，如果最终用户安装 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，然后在设置为非英语语言的 Windows 安装上运行你的解决方案，则运行时消息将以与 Windows 相同的语言显示。 在某些情况下，可能需要其他语言包。 例如，你可能需要其他语言包，如果你的 Windows 副本使用多个语言设置，或者你已安装后切换到另一种语言[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 你可以找到语言包[Microsoft Visual Studio 2010 Tools，Microsoft Office System （版本 4.0 运行时） 语言包](http://go.microsoft.com/fwlink/?LinkId=140386)。  
   
 ## <a name="see-also"></a>请参阅  
- [入门 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
  [如何： 配置计算机以开发 Office 解决方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
  [如何： 安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)   

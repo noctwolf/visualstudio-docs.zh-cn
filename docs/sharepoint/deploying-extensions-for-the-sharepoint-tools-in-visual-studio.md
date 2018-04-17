@@ -1,13 +1,10 @@
 ---
-title: "部署 Visual Studio 中的 SharePoint 工具扩展 |Microsoft 文档"
-ms.custom: 
+title: 部署 Visual Studio 中的 SharePoint 工具扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80cc884e45d9db10f6552fa44e611e87b7b4f801
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>在 Visual Studio 中部署 SharePoint 工具扩展
   若要部署 SharePoint 工具扩展，创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含扩展程序集，以及你想要随此扩展分发的任何其他文件的扩展 (VSIX) 包。 VSIX 包是一个压缩的文件，遵循开放式打包约定 (OPC) 标准。 VSIX 包具有.vsix 扩展名。  
@@ -132,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  在**解决方案资源管理器**，打开你的项目模板或项模板项目的快捷菜单，然后选择**卸载项目**。  
   
-7.  同样，打开项目节点的快捷菜单，然后选择**编辑***YourTemplateProjectName***.csproj**或**编辑***YourTemplateProjectName***.vbproj**。  
+7.  同样，打开项目节点的快捷菜单，然后选择**编辑***YourTemplateProjectName***.csproj**或**编辑***YourTemplateProjectName***。vbproj**。  
   
 8.  找到以下`VSTemplate`项目文件中的元素。  
   

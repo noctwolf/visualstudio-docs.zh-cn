@@ -1,12 +1,10 @@
 ---
-title: "使用 Windows 窗体的 Excel 工作表上的控件 |Microsoft 文档"
-ms.custom: 
+title: 使用 Windows 窗体的 Excel 工作表上的控件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Window Forms controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2d4f783fd8e6746bed9f90e0fd59d8eb587bbc39
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d4c754c0fff7f7a0f5c3bf31293696e3ec57961f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-windows-forms-controls-on-excel-worksheets"></a>在 Excel 工作表中使用 Windows 窗体控件
   相同的方式将控件添加到 Windows 窗体中，可以将 Windows 窗体控件添加到您的 Microsoft Office Excel 工作簿。 有关使用文档上的控件的常规信息，请参阅[Office 文档概述上的 Windows 窗体控件](../vsto/windows-forms-controls-on-office-documents-overview.md)。  

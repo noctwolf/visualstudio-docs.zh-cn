@@ -1,12 +1,10 @@
 ---
-title: "如何： 以编程方式使用 Word 中的内置对话框 |Microsoft 文档"
-ms.custom: 
+title: 如何： 以编程方式使用 Word 中的内置对话框 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - dialog boxes, Word
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 961f6ac2aa9852170ecce35aa18ce4c39d7a9983
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 80406a8048529f811cf9cbeadc8d185577a114f4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>如何：以编程方式使用 Word 中的内置对话框
   当使用 Microsoft Office Word 时，有需要来显示对话框，用户输入的时间。 尽管可以创建你自己，但可能还想要采用的方法使用的内置对话框在 Word 中，它们都公开在<xref:Microsoft.Office.Interop.Word.Dialogs>集合<xref:Microsoft.Office.Interop.Word.Application>对象。 这使您能够访问的内置对话框框中，作为枚举表示的 200。  

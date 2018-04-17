@@ -1,5 +1,5 @@
 ---
-title: "浏览并选择.NET 类型对话框 |Microsoft 文档"
+title: 浏览并选择.NET 类型对话框 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 33e2ba5ff213c2bdd2684d72f411b172c0437c99
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 04aba24d3dffc96fb8e5288d74322258fa77ce19
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>“浏览并选择 .NET 类型”对话框
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 03/12/2018
 ## <a name="filtering-search-results-in-the-type-browser"></a>在类型浏览器中筛选搜索结果
  中的类型列表**类型名称**框获取更短，因为你键入更多字符可找到匹配项。 只有其完全限定名以您键入的字符串开头的类型或者其简短名称以您键入的字符串开头的类型会显示在筛选出的列表中。
 
- 例如:
+ 例如: 
 
 1.  键入**操作**匹配<xref:System.OperationCanceledException>但不是<xref:System.InvalidOperationException>。 若要匹配 <xref:System.InvalidOperationException>，请开始键入 System.I 或 Invalid。
 

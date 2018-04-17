@@ -1,12 +1,10 @@
 ---
-title: "如何： 以编程方式打开 Visio 文档 |Microsoft 文档"
-ms.custom: 
+title: 如何： 以编程方式打开 Visio 文档 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], opening Visio documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a558e0cd069c91a490f039198b59aa3a89c83662
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b5a837b4b12420c65817b6dfb156e0fe47fcdba6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>如何：以编程方式打开 Visio 文档
   用于打开现有的 Microsoft Office Visio 文档的两种方法： 打开和 OpenEx。 方法是打开的方法中，相同的但它提供调用方可以在其中指定文档打开方式的自变量。  

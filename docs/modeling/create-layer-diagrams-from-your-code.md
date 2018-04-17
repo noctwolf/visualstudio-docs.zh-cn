@@ -1,10 +1,8 @@
 ---
-title: "在代码中创建依赖项关系图 |Microsoft 文档"
-ms.custom: 
+title: 在代码中创建依赖项关系图 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, dependency diagrams
 - dependency diagrams
@@ -12,19 +10,19 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18477479255ff7af8216d093830c6c0d60fa50dc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9acc63c676463743ad598736f1d095f0ced0b388
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>在代码中创建依赖项关系图
 
-若要直观显示你的软件系统的高级别，逻辑体系结构，请创建*依赖项关系图*Visual Studio 中。 若要确保你的代码保持与此设计保持一致，验证你的代码使用依赖项关系图。 你可以创建为 Visual C# 和 Visual Basic 项目的依赖项关系图。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要直观显示你的软件系统的高级别，逻辑体系结构，请创建*依赖项关系图*Visual Studio 中。 若要确保你的代码保持与此设计保持一致，验证你的代码使用依赖项关系图。 你可以创建为 Visual C# 和 Visual Basic 项目的依赖项关系图。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ![创建依赖项关系图](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
 
@@ -32,7 +30,7 @@ ms.lasthandoff: 02/09/2018
 
 [视频： 验证实时体系结构依赖项](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
 
-##  <a name="CreateDiagram"></a>创建依赖项关系图
+##  <a name="CreateDiagram"></a> 创建依赖项关系图
 
 创建依赖项关系图之前，请确保你的解决方案具有一个建模项目。
 
@@ -51,7 +49,7 @@ ms.lasthandoff: 02/09/2018
   
 4.  在**将添加到建模项目**，浏览到并在你的解决方案中选择一个现有建模项目。  
   
-     或  
+     -或-  
   
      选择**创建一个新的建模项目**将新的建模项目添加到解决方案。  
   
@@ -78,7 +76,7 @@ ms.lasthandoff: 02/09/2018
 
 ![依赖项关系图生成代码图](media/dependency-validation-01.png)
   
-##  <a name="CreateLayers"></a>根据项目创建层  
+##  <a name="CreateLayers"></a> 根据项目创建层  
  你可以从 Visual Studio 解决方案项（如项目、代码文件、命名空间、类和方法）中创建层。 这将自动在这些层和项（包括在层验证过程中）之间创建链接。  
   
  你也可以将层链接到不支持验证的项（如 Word 文档或 PowerPoint 演示文稿）以便能够将层与规范或计划关联。 你还可以将层链接到项目中跨多个应用程序共享的文件，但验证过程将不包括带泛型名称（如“层 1”或“层 2”）的显示的层。  
@@ -107,7 +105,7 @@ ms.lasthandoff: 02/09/2018
   
 -   如果一个层包含链接到项目的其他层，则容器层也链接到这些项目，即使容器层上的数字不包括这些项目。  
   
-##  <a name="Managing"></a>管理层和项目之间的链接  
+##  <a name="Managing"></a> 管理层和项目之间的链接  
   
 1.  在依赖项关系图中，打开层的快捷菜单，然后选择**查看链接**。  
   
@@ -123,7 +121,7 @@ ms.lasthandoff: 02/09/2018
 |基于现有项目链接创建一个新层|将项目链接拖到关系图上的空白区域。|  
 |验证链接的项目支持对依赖项关系图的验证。|查看**支持验证**项目链接的列。|  
   
-##  <a name="Discovering"></a>现有依赖关系进行反向工程处理  
+##  <a name="Discovering"></a> 现有依赖关系进行反向工程处理  
  只要与一个层关联的项目引用与另一个层关联的项目，就存在依赖关系。 例如，一个层中的某个类声明了一个拥有其他层中的某个类的变量。 您可以对关系图上链接到层的项目的现有依赖关系进行反向工程处理。  
   
 > [!NOTE]
@@ -133,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
  通常，您会看到一些不应存在的依赖关系。 可以编辑这些依赖关系，使它们与预期的设计对齐。  
   
-##  <a name="EditDependencies"></a>编辑层和依赖项以显示预期的设计  
+##  <a name="EditDependencies"></a> 编辑层和依赖项以显示预期的设计  
  若要描述你打算对你的系统或计划的体系结构进行的更改，请编辑依赖项关系图：  
   
 |**若要**|**执行这些步骤**|  
@@ -144,10 +142,10 @@ ms.lasthandoff: 02/09/2018
 |指定与层关联的项目必须不属于指定的命名空间|键入命名空间中的层**Forbidden Namespaces**属性。 使用分号 (**;**) 到单独的命名空间。|  
 |指定与层关联的项目必须属于某个指定的命名空间|键入命名空间中的层**所需的命名空间**属性。 使用分号 (**;**) 到单独的命名空间。|  
   
-##  <a name="EditLayout"></a>更改元素在关系图的显示方式  
+##  <a name="EditLayout"></a> 更改元素在关系图的显示方式  
  通过编辑层或依赖项的属性，你可以更改层的大小、形状、颜色和位置或依赖项的颜色。  
   
-##  <a name="Codemaps"></a>发现模式和在代码图上的依赖关系  
+##  <a name="Codemaps"></a> 发现模式和在代码图上的依赖关系  
  在创建依赖项关系图时，还可以创建**代码图**。 这些关系图可以帮助你在浏览代码时发现模式和依赖项。 使用解决方案资源管理器、类视图或对象浏览器来浏览程序集、命名空间和类，这通常能很好地响应现有层。 有关代码图的详细信息，请参阅：  
   
 -   [映射解决方案中的依赖项](../modeling/map-dependencies-across-your-solutions.md)  

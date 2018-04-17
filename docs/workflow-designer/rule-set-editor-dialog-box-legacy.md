@@ -1,5 +1,5 @@
 ---
-title: "规则集编辑器对话框 （旧版） |Microsoft 文档"
+title: 规则集编辑器对话框 （旧版） |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 989e0ed3f390513efeb849a71f94d5d61aecc57e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>“规则集编辑器”对话框（旧版）
 本主题介绍如何使用**规则集编辑器**旧的 Windows 工作流设计器中的对话框。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
@@ -45,11 +45,11 @@ ms.lasthandoff: 03/12/2018
 |**名称：**|输入规则的名称。|
 |**优先级：**|为规则输入一个优先级。 默认优先级是 0。|
 |**重新评估：**|指定要将哪种规则重新计算类型用于规则。 可用选项为：<br /><br /> -   **始终**，这将导致根据需要重新计算规则。<br />-   **永远不会**，这将导致永远不会重新计算规则。 在此情况下，规则只执行一次。|
-|**Active**|选中以激活规则。|
+|**活动**|选中以激活规则。|
 |**条件：**|为规则条件输入一个表达式。 有关表达式语法的信息，请参见本页的“输入条件和操作表达式”一节。|
 |**Then 操作：**|为 Then 操作输入表达式。 有关表达式语法的信息，请参见本页的“输入条件和操作表达式”一节。|
 |**Else 操作：**|为 Else 操作输入表达式。 有关表达式语法的信息，请参见本页的“输入条件和操作表达式”一节。|
-|**OK**|单击可将规则集保存为 .rules 文件。|
+|**还行**|单击可将规则集保存为 .rules 文件。|
 
  有关规则集的详细信息，请参阅[使用 PolicyActivity 活动](http://go.microsoft.com/fwlink?LinkID=65004)。
 

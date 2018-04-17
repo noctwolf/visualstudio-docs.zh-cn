@@ -1,13 +1,10 @@
 ---
-title: "VSTO 外接程序编程 |Microsoft 文档"
-ms.custom: 
+title: VSTO 外接程序编程 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
 - VST.ProjectItem.AddinProject
@@ -35,14 +32,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58b6d40e2da962587b44e4b73c8331b3fba5590f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 192b366b4d41fed0baf0cca4af8e57fa00dc249a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-vsto-add-ins"></a>VSTO 外接程序编程
   通过创建 VSTO 外接程序扩展 Microsoft Office 应用程序时，可以直接接针对项目中的 `ThisAddIn` 类编写代码。 此类可用于执行下列任务，例如：访问 Microsoft Office 主机应用程序的对象模型、自定义应用程序的用户界面 (UI) 和向其他 Office 解决方公开 VSTO 外接程序中的对象。  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  在 VSTO 外接程序项目中编写代码与在 Visual Studio 中编写其他类型项目的代码在某些方面存在不同。 其中许多差异是由 Office 对象模型公开给托管代码的方式引起的。 有关详细信息，请参阅 [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)。  
   
- 有关 VSTO 外接程序和其他类型的解决方案可以通过使用 Visual Studio 中的 Office 开发工具创建的常规信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ 有关 VSTO 外接程序和其他类型的解决方案可以通过使用 Visual Studio 中的 Office 开发工具创建的常规信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
 ## <a name="using-the-thisaddin-class"></a>使用 ThisAddIn 类  
  你可以在 `ThisAddIn` 类中开始编写 VSTO 外接程序代码。 Visual Studio 会自动在 VSTO 外接程序项目中的 ThisAddIn.vb（在 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]中）或 ThisAddIn.cs（在 C# 中）代码文件中生成此类。 当 Microsoft Office 应用程序加载 VSTO 外接程序时， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将为你自动实例化此类。  

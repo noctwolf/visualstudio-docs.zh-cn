@@ -1,12 +1,10 @@
 ---
-title: "演练： 创建第一个 VSTO 外接程序 excel |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建第一个 VSTO 外接程序 excel |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: de2b241cd44adebecd91ee097ebf8f8875915937
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6c68bd90f1a0a106771bd011e9baf91552678ac6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-excel"></a>演练：创建你的第一个 Excel VSTO 外接程序
   本介绍性演练演示如何创建 Microsoft Office Excel 的应用程序级外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的工作簿无关。  
@@ -134,7 +133,7 @@ ms.lasthandoff: 01/10/2018
 -   部署 Excel 的 VSTO 外接程序：[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Excel 解决方案](../vsto/excel-solutions.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Excel 对象模型概述](../vsto/excel-object-model-overview.md)   

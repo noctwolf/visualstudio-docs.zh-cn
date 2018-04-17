@@ -1,12 +1,10 @@
 ---
-title: "创建 SharePoint 解决方案包 |Microsoft 文档"
-ms.custom: 
+title: 创建 SharePoint 解决方案包 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ee3da66dd8e683748198992041bec5a8139cb7e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e67073d1a12a9412b153adc0c06471c4d39ff15a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-solution-packages"></a>创建 SharePoint 解决方案包
   通过使用包设计器，你可以创建和自定义部署包。 例如，你可以添加 SharePoint 项目项和功能，重置 IIS 服务器、 设置功能激活作用域，和识别功能依赖关系。 设计器还会生成一个清单，一个用于描述每个包的 XML 文件。  
@@ -38,7 +37,7 @@ ms.lasthandoff: 01/10/2018
   
 |包设计器属性|默认设置的说明|  
 |-------------------------------|------------------------------------|  
-|name|必须的。 包的默认名称设置为*ProjectName*。|  
+|名称|必须的。 包的默认名称设置为*ProjectName*。|  
 |重置 web 服务器|可选。 如果你想要在 SharePoint 服务器上安装.wsp 文件之后重新启动 Web 服务器，请选择此选项。|  
 |部署服务器类型|必须的。 默认情况下，范围设置为应用程序服务器。<br /><br /> 应用程序服务器： 介绍承载服务的服务器。<br /><br /> WebFrontEnd： 介绍承载网站的服务器。|  
 |解决方案中的项|所有 SharePoint 项目项和可以添加到包的功能。|  

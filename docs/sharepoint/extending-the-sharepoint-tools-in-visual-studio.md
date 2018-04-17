@@ -1,12 +1,10 @@
 ---
-title: "扩展 Visual Studio 中的 SharePoint 工具 |Microsoft 文档"
-ms.custom: 
+title: 扩展 Visual Studio 中的 SharePoint 工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: db0afa41641cd9d5ae04cfe6d391dbf0fe814f0f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d5ad6f27574fcb7bd8a859bcd21ac65e159596e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-sharepoint-tools-in-visual-studio"></a>扩展 Visual Studio 中的 SharePoint 工具
   Visual Studio 中的 SharePoint 工具满足许多应用程序开发方案的要求。 但是，你可能会发现它们不提供你或其他开发人员需要的功能的情况。 在这些情况下，你可以扩展 SharePoint 工具以创建所需的功能。  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [SharePoint 工具扩展的编程概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
- [引用 &#40;SharePoint 工具扩展 &#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
+ [引用&#40;SharePoint 工具扩展&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [调试 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
  [在 Visual Studio 中部署 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   

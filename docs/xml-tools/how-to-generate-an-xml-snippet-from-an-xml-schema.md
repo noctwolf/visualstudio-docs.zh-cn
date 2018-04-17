@@ -1,23 +1,21 @@
 ---
-title: "如何： 从 XML 架构生成 XML 代码段 |Microsoft 文档"
-ms.custom: 
+title: 如何： 从 XML 架构生成 XML 代码段 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e8b30c782cea694fdc400cd84047f7ab1add823b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 68e306cfcc967c169622b8a02903fcde22c5c0c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：从 XML 架构生成 XML 代码段
 “XML 编辑器”可以从 XML 架构定义语言 (XSD) 架构生成 XML 代码段。 例如，在编写 XML 文件时，如果位置在元素名的旁边，可以通过按 TAB 键，使用从该元素的架构信息生成的 XML 数据来填充该元素。  
@@ -62,7 +60,7 @@ ms.lasthandoff: 01/08/2018
   
      **XSD 架构**对话框随即显示。  
   
-4.  单击 **“添加”**。  
+4.  单击 **添加**。  
   
      **打开 XSD 架构**对话框随即显示。  
   

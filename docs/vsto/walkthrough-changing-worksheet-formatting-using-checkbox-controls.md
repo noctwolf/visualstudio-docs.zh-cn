@@ -1,12 +1,10 @@
 ---
-title: "演练： 更改工作表格式设置使用复选框控件 |Microsoft 文档"
-ms.custom: 
+title: 演练： 更改工作表格式设置使用复选框控件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 196fb88af44d12338416bc2f00f5dc955d5046e8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 35394b5f45e3c1e456dfcfae8f4b6db50af12147
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>演练：使用 CheckBox 控件更改工作表格式设置
   本演练演示了使用 Microsoft Office Excel 工作表上的复选框来更改格式设置的基础知识。 将使用 Visual Studio 中的 Office 开发工具创建并将代码添加到你的项目。 若要查看结果为已完成的示例，请参阅 Excel 控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
@@ -69,21 +68,21 @@ ms.lasthandoff: 01/10/2018
   
 4.  请确保**Checkbox1**是可见的对象名称列表框中**属性**窗口中，并更改以下属性：  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**applyBoldFont**|  
     |**文本**|**加粗**|  
   
 5.  将第二个复选框，或其附近单元格**B4**和更改以下属性：  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**applyItalicFont**|  
     |**文本**|**斜体**|  
   
 6.  拖动一个第三个复选框，或其附近单元格**B6**和更改以下属性：  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**applyUnderlineFont**|  
     |**文本**|**下划线**|  
@@ -113,7 +112,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  请确保**NamedRange1**是可见的对象名称列表框中**属性**窗口中，并更改以下属性：  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**textFont**|  
     |**Value2**|**单击复选框来更改此文本的格式设置。**|  

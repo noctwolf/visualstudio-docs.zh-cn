@@ -1,12 +1,10 @@
 ---
-title: "Office 解决方案中的后期绑定 |Microsoft 文档"
-ms.custom: 
+title: Office 解决方案中的后期绑定 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - casting, object to specific type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 430c10ffa5f79be45282d637b48772943be638e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7e205874e1c5c4e5de639e28768d6369b43c1e1a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="late-binding-in-office-solutions"></a>Office 解决方案中的后期绑定
   Office 应用程序的对象模型中的某些类型提供可通过后期绑定功能的功能。 例如，一些方法和属性可以返回不同类型的具体取决于 Office 应用程序，上下文对象，并且某些类型可以公开不同的方法或在不同上下文中的属性。  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  在大多数情况下，参考文档列出了可能的返回值类型返回的成员<xref:System.Object>。 转换或的对象强制转换为对象在代码编辑器中启用智能感知。  
   
- 有关在 Visual Basic 中的转换的信息，请参阅[隐式和显式转换 &#40;Visual Basic &#41;](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)和[CType 函数 &#40;Visual Basic &#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ 有关在 Visual Basic 中的转换的信息，请参阅[隐式和显式转换&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)和[CType 函数&#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function)。  
   
 ### <a name="examples"></a>示例  
  下面的代码示例演示如何将对象转换为特定类型的 Visual Basic 项目中其中**Option Strict**上。 在此类型的项目，你必须显式转换<xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A>属性<xref:Microsoft.Office.Interop.Excel.Range>。 此示例中，需要使用一个名为的工作表类的文档级 Excel 项目`Sheet1`。  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>请参阅  
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
- [使用类型 dynamic &#40;使用 c&#35;编程指南 &#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+ [使用类型 dynamic &#40;C&#35;编程指南&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Option Strict 语句](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [反射 (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [反射 (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  

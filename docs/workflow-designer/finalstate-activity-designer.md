@@ -1,18 +1,18 @@
 ---
-title: "FinalState 活动设计器 |Microsoft 文档"
+title: FinalState 活动设计器 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5b9b8cc1fc0bdb390e1bf32a6a8f262b435a157
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 6360be9522fd8a3640780407cb5252da41515536
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="finalstate-activity-designer"></a>FinalState 活动设计器
 <xref:System.Activities.Core.Presentation.FinalState> 设计器用于创建终止状态机实例的 <xref:System.Activities.Statements.State>。
@@ -30,6 +30,6 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="see-also"></a>请参阅
 
-- [StateMachine](../workflow-designer/statemachine-activity-designer.md)
+- [状态机](../workflow-designer/statemachine-activity-designer.md)
 - [状态](../workflow-designer/state-activity-designer.md)
 - [转换](../workflow-designer/transition-activity-designer.md)

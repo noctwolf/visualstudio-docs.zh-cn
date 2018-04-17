@@ -2,20 +2,18 @@
 title: 通过使用 MEF 扩展 DSL |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 735de60d18bc5cbca7dc2ba509372d81622038be
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 66fb2c371f67d0da13ac88fee22225970557216f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 可以通过使用 Managed Extensibility Framework (MEF) 扩展你的域特定语言 (DSL)。 你或其他开发人员将能够为 DSL 编写扩展，而无需更改的 DSL 定义和程序代码。 此类扩展包括菜单命令、 拖放处理程序和验证。 用户将能够安装 DSL，，然后根据需要为其安装扩展。  
@@ -373,7 +371,7 @@ namespace MefExtension
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)   
  [Managed 的 Extensibility Framework (MEF)](/dotnet/framework/mef/index)   
  [如何： 添加一个拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)   

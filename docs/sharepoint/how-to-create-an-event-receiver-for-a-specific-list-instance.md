@@ -1,12 +1,10 @@
 ---
-title: "如何： 创建事件接收器的特定列表实例 |Microsoft 文档"
-ms.custom: 
+title: 如何： 创建事件接收器的特定列表实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 66801e82f64e23ee24e66c63a62dd895c58389dc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4d6d01b9f9ed0db8588124b71c982b2d37aa86ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：为特定列表实例创建事件接收器
   对列表定义的任何实例中发生的事件的响应列表实例事件接收器。 虽然事件接收器模板不会启用的特定列表实例的目标，你可以修改事件接收器划归到以响应特定列表实例中的事件的列表定义。  

@@ -1,13 +1,10 @@
 ---
-title: "使用 Windows Installer 部署 Office 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 使用 Windows Installer 部署 Office 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f2c51b101b890a2aaf2ea63edfd1f55d05abe18e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 解决方案
 了解如何使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]为你的 Office 解决方案创建 Windows Installer。  
@@ -239,7 +236,7 @@ ms.lasthandoff: 01/10/2018
   
 6. 在 **“另存为”** 对话框中，浏览到 **“桌面”** 文件夹。  
   
-7. 在**另存为类型**列表中，选择**所有文件 (&#42;。&#42;)**。  
+7. 在**另存为类型**列表中，选择**所有文件 (&#42;。&#42;)**.  
   
 8. 在 **“文件名”** 框中，输入 **Visual Studio 2010 Tools for Office Runtime.prq**，然后选择 **“保存”** 按钮。  
   
@@ -533,7 +530,7 @@ ms.lasthandoff: 01/10/2018
   
 9. 在菜单栏上，依次选择 **“生成”**、 **“生成 OfficeAddInSetup”**。  
   
-   在生成完成后，你可以找到的 setup.exe 文件**officeaddinsetup**项目上的以下位置： *OfficeAddInSetupProjectRoot***\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
+   在生成完成后，你可以找到的 setup.exe 文件**officeaddinsetup**项目上的以下位置： *OfficeAddInSetupProjectRoot * * * \OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
 ## <a name="see-also"></a>请参阅  

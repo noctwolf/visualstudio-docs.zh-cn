@@ -1,24 +1,22 @@
 ---
-title: "调试 T4 文本模板 |Microsoft 文档"
-ms.custom: 
+title: 调试 T4 文本模板 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 86d8bb0fafefab8a0273012ed8e45b44c31eac47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>调试 T4 文本模板
 你可以在文本模板中设置断点。 要调试的设计时文本模板，将文本模板文件，保存，然后选择**调试 T4 模板**解决方案资源管理器中的文件的快捷菜单上。 若要调试的运行时文本模板，只需调试它属于该应用程序。  
@@ -72,7 +70,7 @@ ms.lasthandoff: 02/09/2018
 |文件"{0}"的 include 指令将导致无限循环。|显示如果圆形 include 指令指定 （例如，文件的包含文件 B，其中包含文件 A）。|未指定循环 include 指令。|  
 |运行转换：|此将字符串追加到所有的错误或运行转换时生成的警告。|不适用。|  
 |在块中找到意外的开始或结束标记。 请确保没有不键入开始或结束标记，并且，在模板中不包含任何嵌套的块。|当你有一个异常时，显示\<# 或 #>。 也就是说，如果你有\<# 之后另一个打开的标记的未关闭，或您具有 #> 之前它没有闭合打开标记时。 消息提供不匹配的标记的行号。|请删除不匹配的开始或结束标记，或者使用转义符。|  
-|指令指定的格式错误。 将忽略该指令。 请以格式指定指令`<#@ name [parametername="parametervalue"]*  #>`|如果指令未采用正确的格式指定，则显示由分析器。 消息提供不正确的指令的行号。|请确保所有指令都是一种形式`<#@ name [parametername="parametervalue"]*  #>`。 有关详细信息，请参阅[T4 文本模板指令](../modeling/t4-text-template-directives.md)。|  
+|指令指定的格式错误。 将忽略该指令。 请以格式指定指令 `<#@ name [parametername="parametervalue"]*  #>`|如果指令未采用正确的格式指定，则显示由分析器。 消息提供不正确的指令的行号。|请确保所有指令都是一种形式`<#@ name [parametername="parametervalue"]*  #>`。 有关详细信息，请参阅[T4 文本模板指令](../modeling/t4-text-template-directives.md)。|  
 |无法加载程序集"{0}"的已注册指令处理器 {1}<br /><br /> {2}|无法加载指令处理器，主机时发生。 此消息标识提供为指令处理器和指令处理器的名称的程序集。|请确保已正确注册指令处理器，以及该程序集是否存在。|  
 |未能找到类型"{0}"中程序集 {1} 已注册指令处理器 {2}<br /><br /> {3}|无法从其程序集加载指令处理器类型时发生。 消息可提供的类型、 程序集和指令处理器的名称。|该 vshost 在注册表中查找指令处理器信息 （名称、 程序集和类型）。 请确保正确，注册指令处理器和该类型存在于程序集。|  
 |时加载程序集"{0}"出现问题|当加载的程序集问题时发生。 消息可提供程序集的名称。|你可以指定要在加载程序集\<@# assembly 号 > 指令，以及通过指令处理器。 遵循此字符串的错误消息应提供有关程序集加载失败的原因的更多的数据。|  

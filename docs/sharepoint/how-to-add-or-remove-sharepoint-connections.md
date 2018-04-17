@@ -1,12 +1,10 @@
 ---
-title: "如何： 添加或移除 SharePoint 连接 |Microsoft 文档"
-ms.custom: 
+title: 如何： 添加或移除 SharePoint 连接 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b7144f5f8c7c4d2ca42543abe236479ac364d7f8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: db37c29c049a4e233be96e468b93b8e2998c0565
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>如何：添加或移除 SharePoint 连接
   服务器资源管理器可以浏览 SharePoint 站点，以及数据连接。 但是，您可以浏览 SharePoint 站点的内容之前你必须将其添加到**SharePoint 连接**节点。  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  在**服务器资源管理器**，选择**SharePoint 连接**节点，然后在菜单栏上，选择**工具**，**添加 SharePoint 连接**.  
   
-3.  在**添加 SharePoint 连接**框中，输入[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]SharePoint 站点 (例如，http://testserver/sites/unittests)。  
+3.  在**添加 SharePoint 连接**框中，输入[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]SharePoint 站点 (例如， http://testserver/sites/unittests)。  
   
 ### <a name="to-delete-a-sharepoint-site-from-the-sharepoint-connections-node"></a>若要从 SharePoint 连接节点中删除 SharePoint 站点  
   

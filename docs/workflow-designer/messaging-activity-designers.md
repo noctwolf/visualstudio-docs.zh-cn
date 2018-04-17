@@ -1,18 +1,18 @@
 ---
-title: "消息传递活动设计器 |Microsoft 文档"
+title: 消息传递活动设计器 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e805fed01aa3dcb90d11f7f48c0fc1056d573add
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 38c34dea2dd0265d156bb4b379323559be4825b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="messaging-activity-designers"></a>消息传递活动设计器
 消息传递活动设计器用于在 [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 应用程序中创建和配置从中发送和接收 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 消息的消息传递活动。 [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)]引入了五个消息传递活动和 Windows 工作流设计器提供了两个新模板设计器，可用于管理消息传递工作流中。 本节中所包含并在下表中列出的各主题介绍如何使用 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 活动和模板设计器。

@@ -1,12 +1,10 @@
 ---
-title: "演练： 针对 NamedRange 控件的事件进行编程 |Microsoft 文档"
-ms.custom: 
+title: 演练： 针对 NamedRange 控件的事件进行编程 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - worksheets, automating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a06e8aa544cdaff2e75d8af942f8aea68e7bc960
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 623177120d58b7abd29b57d55db22b8490057bab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-programming-against-events-of-a-namedrange-control"></a>演练：根据 NamedRange 控件的事件进行编程
   本演练演示如何添加<xref:Microsoft.Office.Tools.Excel.NamedRange>控件添加到 Microsoft Office Excel 工作表并针对通过使用 Visual Studio 中的 Office 开发工具使用其事件进行编程。  
@@ -159,12 +158,12 @@ ms.lasthandoff: 01/10/2018
 -   部署项目。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [宿主项和宿主控件概述](../vsto/host-items-and-host-controls-overview.md)   
  [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
  [如何： 调整 NamedRange 控件的大小](../vsto/how-to-resize-namedrange-controls.md)   
  [如何： 向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)  
   
   

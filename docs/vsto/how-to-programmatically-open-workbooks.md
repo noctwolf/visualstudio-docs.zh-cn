@@ -1,12 +1,10 @@
 ---
-title: "如何： 以编程方式打开工作簿 |Microsoft 文档"
-ms.custom: 
+title: 如何： 以编程方式打开工作簿 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], opening workbooks
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 11fe801cf80c15953056f4f6fdd50c5c4fadd3c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a243e4972bcee77aa9d76957ab5cce289e30e120
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>如何：以编程方式打开工作簿
   <xref:Microsoft.Office.Interop.Excel.Workbooks>在 Microsoft Office Excel 中的集合有可能用于所有打开的工作簿并打开工作簿。  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
  [如何： 以编程方式创建新的工作簿](../vsto/how-to-programmatically-create-new-workbooks.md)   
  [如何： 以编程方式保存工作簿](../vsto/how-to-programmatically-save-workbooks.md)   
  [如何： 以编程方式关闭工作簿](../vsto/how-to-programmatically-close-workbooks.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)  
   

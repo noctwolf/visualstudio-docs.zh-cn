@@ -1,18 +1,18 @@
 ---
-title: "如何： 在工作流中设置断点 |Microsoft 文档"
+title: 如何： 在工作流中设置断点 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ed757fab518d9cfe23b26186e6bded06eafe1e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: e4112e74336faf1fb456ebd94dd7c7617747a11f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>如何：在工作流中设置断点
 当你使用 Windows 工作流设计器时，你可以在图形工作流上设置断点，像在 Visual Basic 或 C# 代码中一样。 正如所料，工作流执行将在设置的每个断点处停止。

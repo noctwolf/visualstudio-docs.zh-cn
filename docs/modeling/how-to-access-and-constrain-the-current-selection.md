@@ -2,22 +2,20 @@
 title: 如何： 访问和约束当前所选内容 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 81036e04abc9eac2cbed2879839e95cce52166fc
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 278947fdb9851bdc54a80ea7f2d47d72deba300e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>如何：访问和约束当前所选内容
 当您为域特定语言编写的命令或笔势处理程序时，你可以确定用户右击哪些元素。 你还可以选择阻止某些形状或字段。 例如，你可以排列当用户单击图标修饰器，而是选择包含它的形状。 约束以这种方式选择可减少你必须编写的处理程序的数量。 它还可方便的用户，可以单击任意位置在形状中而无需避免修饰器。  
@@ -207,7 +205,7 @@ namespace CompanyName.ProductName.GroupingDsl
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>   
  <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage>   
  <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView>   

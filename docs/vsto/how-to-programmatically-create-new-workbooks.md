@@ -1,13 +1,10 @@
 ---
-title: "如何： 以编程方式创建新的工作簿 |Microsoft 文档"
-ms.custom: 
+title: 如何： 以编程方式创建新的工作簿 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - workbooks, creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a1ed1679b5a50616219ef7f398261c72053c9a0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 0ba2054258beb762a6b554a49b7a64a77f83dd7a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-create-new-workbooks"></a>如何：以编程方式新建工作簿
   以编程方式创建工作簿时，它是一个本机 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象，而不是 <xref:Microsoft.Office.Tools.Excel.Workbook> 主机项。  
@@ -49,7 +46,7 @@ ms.lasthandoff: 01/10/2018
  [如何： 以编程方式打开工作簿](../vsto/how-to-programmatically-open-workbooks.md)   
  [如何： 以编程方式保存工作簿](../vsto/how-to-programmatically-save-workbooks.md)   
  [如何： 以编程方式关闭工作簿](../vsto/how-to-programmatically-close-workbooks.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)  
   

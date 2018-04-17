@@ -1,12 +1,10 @@
 ---
-title: "演练： 更改文档格式使用复选框控件 |Microsoft 文档"
-ms.custom: 
+title: 演练： 更改文档格式使用复选框控件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5b99f1a5d05d1eac173c40e7cc0c3b989f7c0cd3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ecbb0036fc74cf5d0d27ea61283ec5b733dca1a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>演练：使用 CheckBox 控件更改文档格式设置
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用 Windows 窗体控件来更改格式设置的文本。  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  在 **“属性”** 窗口中，更改下列属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**applyBoldFont**|  
     |**文本**|**加粗**|  
@@ -79,7 +78,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  将第二个复选框添加到下面的文档`ApplyBoldFont`复选框并更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**applyItalicFont**|  
     |**文本**|**斜体**|  
@@ -88,7 +87,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  将第三个复选框添加到下面的文档`ApplyItalicFont`复选框并更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**applyUnderlineFont**|  
     |**文本**|**下划线**|  

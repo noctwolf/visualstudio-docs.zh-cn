@@ -1,12 +1,10 @@
 ---
-title: "使用在 Visual Studio 的 Office 功能 |Microsoft 文档"
-ms.custom: 
+title: 使用在 Visual Studio 的 Office 功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office functionality inside Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fa848d522096b5df12db113cf0c7272ab61c80be
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5927c9b3288755efc8e4b5700487a138f7a04f63
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-office-functionality-inside-of-visual-studio"></a>在 Visual Studio 内使用 Office 功能
   当创建文档级项目时，文档和关联的应用程序承载在 Visual Studio 使你可以在设计和直接使用该文档。 如果必须在 Microsoft Office 应用程序在 Visual Studio 中打开，它通常按预期工作。 但是，某些应用程序是功能的不同的或不可访问。  

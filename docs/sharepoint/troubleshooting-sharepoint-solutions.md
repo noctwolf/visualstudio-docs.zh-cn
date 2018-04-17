@@ -2,12 +2,9 @@
 title: SharePoint 解决方案的疑难解答 |Microsoft 文档
 ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: ba8f84db31cbe41e8bd3f62a7806de0a6d2ea58e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>SharePoint 解决方案疑难解答
   使用调试 SharePoint 解决方案时，可能发生以下问题或警报[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 有关详细信息，请参阅[调试 SharePoint 2007 工作流解决方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -282,7 +279,7 @@ ms.lasthandoff: 04/10/2018
 ### <a name="resolution"></a>解决方法  
  若要解决此问题，请确保 Visual Studio 中的 SharePoint 项目的“站点 URL”属性值与分配给 Web 应用程序的备用访问映射的默认区域的 URL 一致。 对 URL 使用其他区域（如 Intranet）将无法解决此错误。 项目的站点 URL 与默认区域中的 URL 必须一致。 若要访问备用访问映射，请打开 SharePoint 2010 管理中心实用工具，选择**应用程序管理**链接，然后，在**Web 应用程序**，选择**配置备用访问映射**链接。 有关详细信息，请参阅[创建 Web 应用程序的区域](http://go.microsoft.com/fwlink/?LinkId=192274)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SharePoint 打包和部署疑难解答](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [在 Visual Studio 中进行调试](/visualstudio/debugger/debugging-in-visual-studio)  

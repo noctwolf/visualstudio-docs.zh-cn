@@ -1,12 +1,10 @@
 ---
-title: "如何： 将控件标记为安全控件 |Microsoft 文档"
-ms.custom: 
+title: 如何： 将控件标记为安全控件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9d34722f7dc9b9975429fac64311dd0b63c30fbe
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d703beb24821663b08ed69238fcf27e2a752d64b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>如何：将控件标记为安全控件
   为安全起见，SharePoint 区别不受脚本注入的 Web 控件和 Web 控件不是。 受保护控件，或*安全控件*，可以访问受信任的用户。 你可以将标记为安全地执行安全控件项属性的 SharePoint 项目项或控件**包设计器**时向包中添加程序集。 有关详细信息，请参见  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 12. 下表中所输入属性的值。  
   
-    |属性名|“值”|  
+    |属性名|值|  
     |-------------------|-----------|  
     |命名空间|控件中，完全限定的命名空间如**BdcModelProject1.VisualWebPart1**。|  
     |类型名称|Button1|  
@@ -107,7 +106,7 @@ ms.lasthandoff: 01/10/2018
   
 15. 下表中所输入属性的值。  
   
-    |属性名|“值”|  
+    |属性名|值|  
     |-------------------|-----------|  
     |命名空间|控件中，完全限定的命名空间如**BdcModelProject1.VisualWebPart1**。|  
     |类型名称|TextBox1|  

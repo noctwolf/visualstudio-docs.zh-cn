@@ -1,13 +1,10 @@
 ---
-title: "ListObject 控件 |Microsoft 文档"
-ms.custom: 
+title: ListObject 控件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.List
 dev_langs:
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - ListObject control, improving performance when bound to data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2100a1c30fda5981d3d7e58f2f5077e0cdf87a2d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ed8a11a62487e47cd86ae86b9f4126cb99b37159
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="listobject-control"></a>ListObject 控件
   <xref:Microsoft.Office.Tools.Excel.ListObject> 控件是公开事件并且可以绑定到数据的列表。 当将列表添加到工作表时，Visual Studio 将创建 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件，你可以直接针对此控件编程而无需遍历 Microsoft Office Excel 对象模型。  
@@ -39,7 +36,7 @@ ms.lasthandoff: 01/10/2018
  在文档级项目中，可以在设计时或运行时向工作表中添加 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 在 VSTO 外接程序项目中，只能在运行时向工作表添加 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 有关详细信息，请参阅 [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md)。  
   
 > [!NOTE]  
->  默认情况下，工作表关闭时，动态创建的列表对象不作为宿主控件保留在工作表中。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+>  默认情况下，工作表关闭时，动态创建的列表对象不作为宿主控件保留在工作表中。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 ## <a name="binding-data-to-the-control"></a>将数据绑定到控件  
  <xref:Microsoft.Office.Tools.Excel.ListObject> 控件支持简单和复杂数据绑定。 可以在设计时使用 <xref:Microsoft.Office.Tools.Excel.ListObject> 和 <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 属性或在运行时使用 <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> 方法将 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 控件绑定到数据源。  

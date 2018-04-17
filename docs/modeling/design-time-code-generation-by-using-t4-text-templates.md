@@ -1,10 +1,8 @@
 ---
-title: "使用 T4 文本模板生成设计时代码 |Microsoft 文档"
-ms.custom: 
+title: 使用 T4 文本模板生成设计时代码 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -15,15 +13,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff7f01274b47b8c7c333aedbbb6dc646e14b89d3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fea82e3343016ab4221a482e2c7975a6d39c1afb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 使用设计时 T4 文本模板，你可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据来自数据生成的代码*模型*。 模型是文件或包含有关你的应用程序要求的关键信息的数据库。  
@@ -294,7 +292,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  文本模板在它自己的应用域中运行，并通过封送访问服务。 在此情况下，GetCOMService() 比 GetService() 更可靠。  
   
-##  <a name="Regenerating"></a>自动重新生成代码  
+##  <a name="Regenerating"></a> 自动重新生成代码  
  通常，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中的多个文件都使用一个输入模型生成。 每个文件从其自己的模板生成，但这些模板全都引用同一个模型。  
   
  如果源模型发生更改，则应重新运行该解决方案中的所有模板。 若要手动执行此操作，选择**转换所有模板**上**生成**菜单。  
@@ -322,7 +320,7 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a>将现有文件转换为模板  
+##  <a name="Converting"></a> 将现有文件转换为模板  
  模板的一个非常有用的功能是：它们看起来与其生成的文件（加上一些插入的程序代码）非常相似。 这暗示了创建模板的一种有用方法。 首先创建作为原型，一个普通的文件，如[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]文件中，然后逐步引入可更改所生成文件的生成代码。  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>将现有文件转换为设计时模板  

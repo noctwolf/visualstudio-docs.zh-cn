@@ -1,12 +1,10 @@
 ---
-title: "如何： 以编程方式搜索中工作表范围内的文本 |Microsoft 文档"
-ms.custom: 
+title: 如何： 以编程方式搜索中工作表范围内的文本 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - text searches, worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 42c95ab26437ad590d457ad926db6e070a7c8de0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2749834f459085b8d182b58f12a4c372f7493cba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>如何：以编程方式在工作表范围内搜索文本
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>方法<xref:Microsoft.Office.Interop.Excel.Range>对象可用于搜索的范围内的文本。 此文本也可以是任何错误字符串，如出现在工作表单元格`#NULL!`或`#VALUE!`。 有关错误字符串的详细信息，请参阅[单元格错误值](http://msdn.microsoft.com/library/office/ff839168.aspx)。  

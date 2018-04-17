@@ -1,18 +1,18 @@
 ---
-title: "控制流活动设计器 |Microsoft 文档"
+title: 控制流活动设计器 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c68c94e5209a16caedb184cae515503ab87eaa9f
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 7b464f141dcda624c293a5abd5065a3263738932
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="control-flow-activity-designers"></a>控制流活动设计器
 
@@ -50,7 +50,7 @@ Windows 工作流设计器包含大量的系统提供的活动，你可以构造
 
  [流程图](../workflow-designer/flowchart-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [消息传送](../workflow-designer/messaging-activity-designers.md)
 
  [运行时](../workflow-designer/runtime-activity-designers.md)
 

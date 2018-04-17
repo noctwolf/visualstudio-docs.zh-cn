@@ -1,5 +1,5 @@
 ---
-title: "System.Activities 选项卡上，选择工具箱项对话框 |Microsoft 文档"
+title: System.Activities 选项卡上，选择工具箱项对话框 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07da20e7d412fc9904b6af1f36406afc9c35a9e8
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2da5aafcc684c9af71aebc094d817c64f579d0ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>“System.Activities”选项卡 ->“选择工具箱项”对话框
 此选项卡**选择工具箱项**对话框中显示的列表[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]活动、 模板和项提供给你。 若要显示此列表，选择**选择工具箱项**从**工具**菜单或通过右击**工具箱**并选择**选择项**以显示**选择工具箱项**对话框中，然后选择其**System.Activities**选项卡。在初始状态下，该列表包含 System.Activities、 System.ServiceModel.Activities 和 System.Activities.Core.Presentation 程序集; 的工作流活动但是，仅系统提供显示的活动和活动通过显示在其他程序集添加**工具箱**默认选中。 新添加的活动会自动选中，并显示在**工具箱**单击**确定**在对话框中。 此外，这些项显示在**工具箱**对应于活动/项/模板所在的命名空间的新类别下。

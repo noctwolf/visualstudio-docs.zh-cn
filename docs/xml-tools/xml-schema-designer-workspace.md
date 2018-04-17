@@ -1,23 +1,21 @@
 ---
-title: "XML 架构设计器工作区 |Microsoft 文档"
-ms.custom: 
+title: XML 架构设计器工作区 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7a3da032000d5d286e8476673b3c53b993b18303
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a44f620319ed1d706a1fbefec52438512ebefc41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-schema-designer-workspace"></a>XML 架构设计器工作区
 XML 架构设计器（XSD 设计器）是一个图形工具，可帮助您浏览 XML 架构。 除了[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)，它可以浏览和导航 XML 架构树以及执行搜索，XSD 设计器提供了三个视图，可用于浏览 XSD 架构的更多详细信息。 起始视图，它是 XSD 设计器的启动点；从起始视图可以导航到 XSD 设计器的其他视图，并查看架构集的详细信息。 图形视图，利用它可查看架构集的概览以及架构节点之间的关系。 内容模型视图，它以图形表示形式提供局部和全局架构节点（包括简单类型和复杂类型、元素、组、特性及特性组）的详细信息。  

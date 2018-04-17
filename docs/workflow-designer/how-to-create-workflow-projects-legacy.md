@@ -1,5 +1,5 @@
 ---
-title: "如何： 创建工作流项目 （旧版） |Microsoft 文档"
+title: 如何： 创建工作流项目 （旧版） |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 32299555-662c-469d-a90d-89f4700dc78c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc38c6b323ee06ed9b312811eb892e7654134d05
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: ca6fdbbd8a744c472c06fdefbdafce77679ec2c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>如何：创建工作流项目（旧版）
 按照这些步骤可创建面向 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 的 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 项目。 此过程使用旧的 Windows 工作流设计器提供的[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/12/2018
 
 1.  启动 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)]。
 
-2.  上**文件**菜单上，指向**新建**，然后选择**项目**。
+2.  在“文件”菜单上，指向“新建”，然后选择“项目”。
 
      **“新建项目”** 对话框随即打开。
 

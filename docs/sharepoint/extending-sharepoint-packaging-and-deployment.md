@@ -1,13 +1,10 @@
 ---
-title: "扩展 SharePoint 打包和部署 |Microsoft 文档"
-ms.custom: 
+title: 扩展 SharePoint 打包和部署 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fa807472a0787f0f1ae4c61f074fd8bb3ad5055
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c91c78e6ab78ac39eb5c53c32a70ead895129df0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-packaging-and-deployment"></a>扩展 SharePoint 打包和部署
   可以扩展 SharePoint 项目的打包和部署过程。
@@ -33,7 +30,7 @@ ms.lasthandoff: 01/10/2018
  有关演示如何创建部署步骤的演练，请参阅[演练： 为 SharePoint 项目创建自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。  
   
 ##  <a name="creating-deployment-configurations"></a>创建部署配置  
- 部署配置是一组针对给定项目执行，但可能会影响所有 SharePoint 项目项的部署步骤。 每个部署配置都包含一组在部署项目时执行的步骤，以及在收回项目时执行的另一组步骤。 [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)]包括两个内置部署配置，但你也可以创建你自己。 创建部署配置时，可以包含内置部署步骤和你创建的部署步骤。  
+ 部署配置是一组针对给定项目执行，但可能会影响所有 SharePoint 项目项的部署步骤。 每个部署配置都包含一组在部署项目时执行的步骤，以及在收回项目时执行的另一组步骤。 [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] 包括两个内置部署配置，但你也可以创建你自己。 创建部署配置时，可以包含内置部署步骤和你创建的部署步骤。  
   
  有关演示如何创建部署配置的演练，请参阅[演练： 为 SharePoint 项目创建自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。  
   

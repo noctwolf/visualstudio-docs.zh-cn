@@ -1,12 +1,10 @@
 ---
-title: "如何： 本地化功能 |Microsoft 文档"
-ms.custom: 
+title: 如何： 本地化功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1ddb5e705fd581ce2717539ac6daf3e9a2081f6d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 08756ce33d97e156d63fd873c63d4d6fc282285b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-localize-a-feature"></a>如何：本地化功能
   默认情况下，功能的标题和说明使用硬编码的字符串值。 若要本地化功能标题和说明，请使用引用本地化的资源的表达式替换这些字符串。  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  若要本地化**标题**和**说明**字段在功能中，使用以下格式在其框中输入值：  
   
-     `$Resources:`*字符串 ID*  
+     `$Resources:` *字符串 ID*  
   
      例如，输入 $Resources:**标题**中**功能标题**框中和 $Resources:**说明**中**功能说明**框.  
   

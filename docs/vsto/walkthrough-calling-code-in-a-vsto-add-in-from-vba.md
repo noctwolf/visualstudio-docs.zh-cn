@@ -1,12 +1,10 @@
 ---
-title: "演练： VSTO 外接程序中从 VBA 调用代码 |Microsoft 文档"
-ms.custom: 
+title: 演练： VSTO 外接程序中从 VBA 调用代码 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - calling code from VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 677ddfef196c79d1dd696889fd16dcfa0300ccff
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 74ca5c12acf7b3bde5a009d5a45d4741451b1760
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>演练：从 VBA 调用 VSTO 外接程序中的代码
   本演练演示如何向其他 Microsoft Office 解决方案（包括 Visual Basic for Applications (VBA) 和 COM VSTO 外接程序）公开 VSTO 外接程序中的对象。  

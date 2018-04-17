@@ -1,13 +1,10 @@
 ---
-title: "开发 SharePoint 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 开发 SharePoint 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
 - VS.SharePointTools.Project.ProjectItemProperties
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 848ddab54dd9e7617cce7758fa06d939700f2c3b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>开发 SharePoint 解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中可提供多种 SharePoint 项目类型模板，用于创建 SharePoint 站点和站点元素。 有关可用的项目类型的列表，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是对 SharePoint 项目元素和属性的说明。  
@@ -56,7 +53,7 @@ ms.lasthandoff: 01/10/2018
  当将某个功能添加到 SharePoint 项目时，此功能会作为节点显示在“解决方案资源管理器”  中，默认名称为 Feature*x*.feature，其中的 *x* 是唯一的编号。 将某个功能部署到 SharePoint Server 后，SharePoint 管理员可以将其激活，使其可用于 SharePoint 站点用户。  
   
 #### <a name="package-node"></a>包节点  
- “包”  节点只包含一个作为 SharePoint 项目分发机制的文件。 此文件，名为*解决方案**包*，是。基于 CAB 的使用。WSP 扩展。 解决方案包是一种可部署的且可重用的文件，其中包含一组可应用于 SharePoint 站点的并且可以单独启用或禁用的功能、站点定义和程序集。 **包**节点也始终包含名为 Package.wspdef 的文件[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]包定义文件。 一旦将包部署到运行 SharePoint 的服务器，SharePoint 管理员就可以对其进行安装并激活其功能。  
+ “包”  节点只包含一个作为 SharePoint 项目分发机制的文件。 此文件，名为*解决方案 * * 包*，是。基于 CAB 的使用。WSP 扩展。 解决方案包是一种可部署的且可重用的文件，其中包含一组可应用于 SharePoint 站点的并且可以单独启用或禁用的功能、站点定义和程序集。 **包**节点也始终包含名为 Package.wspdef 的文件[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]包定义文件。 一旦将包部署到运行 SharePoint 的服务器，SharePoint 管理员就可以对其进行安装并激活其功能。  
   
  你可以查看或更改包的内容在包设计器，通过双击包节点或通过打开其快捷菜单，然后选择**打开**。 有关详细信息，请参阅[创建 SharePoint 解决方案包](../sharepoint/creating-sharepoint-solution-packages.md)。  
   
@@ -132,10 +129,10 @@ ms.lasthandoff: 01/10/2018
 |[如何：添加和删除映射文件夹](../sharepoint/how-to-add-and-remove-mapped-folders.md)|描述如何将映射的文件夹添加到项目以便更容易访问 SharePoint 资源。|  
 |[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)|描述与沙盒解决方案相关联的问题。|  
 |[SharePoint 解决方案的安全性](../sharepoint/security-for-sharepoint-solutions.md)|描述有关在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中开发 SharePoint 解决方案的安全注意事项。|  
-|[URL 选取器对话框 &#40;Visual Studio &#41; 中的 SharePoint 开发](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|描述将路径引用添加到项目中或在本地 SharePoint 服务器上所使用的对话框。|  
+|[URL 选取器对话框&#40;Visual Studio 中的 SharePoint 开发&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|描述将路径引用添加到项目中或在本地 SharePoint 服务器上所使用的对话框。|  
   
 ## <a name="see-also"></a>请参阅  
- [入门 &#40;Visual Studio &#41; 中的 SharePoint 开发](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
+ [入门&#40;Visual Studio 中的 SharePoint 开发&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

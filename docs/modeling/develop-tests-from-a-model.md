@@ -1,23 +1,21 @@
 ---
-title: "基于模型开发测试 |Microsoft 文档"
-ms.custom: 
+title: 基于模型开发测试 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2937edee2040d8e48938b9cbbf8e78e48780884
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0982bc72a98be6f015d580f3170a5790fe941867
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-tests-from-a-model"></a>基于模型开发测试
 可以使用要求模型和体系结构模型来帮助组织系统及其组件的测试。 这种做法有助于确保你测试了对于用户和其他利益干系人而言非常重要的要求，并可帮助你在要求发生变化时快速更新测试。 如果你使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，还可以维护模型和测试之间的链接。  
@@ -131,7 +129,7 @@ Assert (countAfter == countBefore = 1);
   
  从测试的角度来看，可以将需求模型看做是测试的简略形式。 因此，在整个项目中维护测试和模型之间的关系非常重要。  
   
-##  <a name="Attaching"></a>附加到模型元素的测试用例  
+##  <a name="Attaching"></a> 附加到模型元素的测试用例  
  如果你的项目使用 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]，则你可以将测试链接到模型中的元素。 这样你便可以快速找到受要求中的更改影响的测试，并且可帮助你跟踪要求的实现程度。  
   
  你可以将测试链接到所有类型的元素。 以下是一些示例。  

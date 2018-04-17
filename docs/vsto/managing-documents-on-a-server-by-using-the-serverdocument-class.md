@@ -1,12 +1,10 @@
 ---
-title: "使用 ServerDocument 类管理服务器上的文档 |Microsoft 文档"
-ms.custom: 
+title: 使用 ServerDocument 类管理服务器上的文档 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - ServerDocument class, managing documents on server
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2120e7c70abaddd4f51c0214a2c5ae517cf955cc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ef676de4ff352a557019f68037203364a97834d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-documents-on-a-server-by-using-the-serverdocument-class"></a>Managing Documents on a Server by Using the ServerDocument Class
   你可以使用 ServerDocument 类中的[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]管理几个方面的文档级自定义项，即使未安装 Microsoft Office Word 和 Microsoft Office Excel。 你可以执行以下任务：  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  如果你有 Office system 中使用 Visual Studio 工具使用 ServerDocument 类的旧版应用程序 (3.0 版运行时)，Visual Studio Tools for Office system (3.0 版运行时) 必须安装在运行该应用程序的计算机上。 Visual Studio 2010 Tools for Office 运行时无法运行这些应用程序。  
   
-##  <a name="CachedData"></a>使用文档中的缓存数据  
+##  <a name="CachedData"></a> 使用文档中的缓存数据  
  ServerDocument 类提供了可用于处理与数据缓存在自定义文档中的成员。 有关缓存数据的详细信息，请参阅[缓存数据](../vsto/caching-data.md)和[访问的服务器上的文档数据](../vsto/accessing-data-in-documents-on-the-server.md)。  
   
  下表列出可用于处理与缓存的数据的成员。  
@@ -53,7 +52,7 @@ ms.lasthandoff: 01/10/2018
 |若要确定文档是否有数据缓存。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> 方法。|  
 |若要访问文档中缓存的数据。<br /><br /> 有关详细信息，请参阅 [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md)。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 属性。|  
   
-##  <a name="CustomizationInfo"></a>管理文档自定义项  
+##  <a name="CustomizationInfo"></a> 管理文档自定义项  
  ServerDocument 类的成员可用于管理与文档相关联的自定义项程序集。 例如，你可以以编程方式删除自定义项从文档使该文档不再是一部分的自定义项。  
   
  下表列出可用于管理自定义程序集的成员。  

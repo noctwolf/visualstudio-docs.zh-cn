@@ -1,13 +1,10 @@
 ---
-title: "演练： 将自定义任务窗格与功能区按钮同步 |Microsoft 文档"
-ms.custom: 
+title: 演练： 将自定义任务窗格与功能区按钮同步 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7368c580d2f00d929bdeefd11665e9f579af17f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ff3252a1ae234615cc4d4ed83a07d98a15092bee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>演练：将自定义任务窗格与功能区按钮同步
   本演练演示如何创建用户可以通过单击功能区上的切换按钮进行隐藏或显示的自定义任务窗格。 应始终创建一个可供用户单击以显示或隐藏你的自定义任务窗格的用户界面 (UI) 元素，如按钮，因为 Microsoft Office 应用程序不提供用户用于显示或隐藏自定义任务窗格的默认方式。  
@@ -174,7 +171,7 @@ ms.lasthandoff: 01/10/2018
   
 -   从自定义任务窗格自动化应用程序。 有关详细信息，请参阅 [演练：从自定义任务窗格自动化应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  
   
--   为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅 [演练：为 Outlook 中的电子邮件显示自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
+-   为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅 [演练：在 Outlook 中与电子邮件一起显示自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义任务窗格](../vsto/custom-task-panes.md)   

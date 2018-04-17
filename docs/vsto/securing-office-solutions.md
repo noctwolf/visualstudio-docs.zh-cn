@@ -1,12 +1,10 @@
 ---
-title: "保护 Office 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 保护 Office 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - security [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 271aad509d5ad2adb764b55f93fa65a8178424bd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a587534406d128655f9c24c9195902afb8e8817b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-office-solutions"></a>保护 Office 解决方案的安全
   Office 解决方案的安全模型涉及多项技术： [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]， [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]，Microsoft Office 和 Internet Explorer 受限的站点区域中的信任中心。 以下各节介绍不同安全功能的工作方式：  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-##  <a name="GrantingTrustToSolutions"></a>向 Office 解决方案授予信任  
+##  <a name="GrantingTrustToSolutions"></a> 向 Office 解决方案授予信任  
  向 Office 解决方案授予信任信任意味着修改每个最终用户的安全策略，以便基于以下证据信任 Office 解决方案：  
   
 -   用于对部署清单进行签名的证书。  
@@ -50,16 +49,16 @@ ms.lasthandoff: 01/10/2018
   
  有关详细信息，请参阅[向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)。  
   
-##  <a name="GrantingTrustToDocuments"></a>向文档授予信任  
+##  <a name="GrantingTrustToDocuments"></a> 向文档授予信任  
  文档级自定义项要求文档位于被指定为可信位置的目录中。 有关更多信息，请参见 [Granting Trust to Documents](../vsto/granting-trust-to-documents.md)。  
   
-##  <a name="GrantingTrustWindowsInstaller"></a>使用 Windows Installer 时授予信任  
+##  <a name="GrantingTrustWindowsInstaller"></a> 使用 Windows Installer 时授予信任  
  可使用 Windows Installer 创建 MSI 文件以将 Office 解决方案安装到 Program Files 目录，此操作需要管理员权限。 对于 Program Files 目录中的 Office 解决方案，Visual Studio 2010 Tools for Office Runtime 将这些 Office 解决方案视为受信任和不显示 ClickOnce 信任提示。  
   
-##  <a name="Security"></a>Office 解决方案的特定安全注意事项  
+##  <a name="Security"></a> Office 解决方案的特定安全注意事项  
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]、[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 和 Microsoft Office 提供的安全功能有助保护 Office 解决方案免受各种可能的安全威胁。 有关更多信息，请参见 [Specific Security Considerations for Office Solutions](../vsto/specific-security-considerations-for-office-solutions.md)。  
   
-##  <a name="SecurityDuringDeployment"></a>开发过程中的安全性  
+##  <a name="SecurityDuringDeployment"></a> 开发过程中的安全性  
  为了简化开发过程，Visual Studio 设置了每次生成项目时在计算机上运行和调试解决方案所需的安全策略。 在某些方案中，可能需要采取其他安全措施来开发项目。  
   
 ### <a name="document-level-solutions"></a>文档级解决方案  
@@ -78,7 +77,7 @@ ms.lasthandoff: 01/10/2018
   
  在经过一段时间后，可能会有很多临时证书，因此应不定期地清除临时证书。  
   
-##  <a name="VisualStudioToolsForOfficeRuntime"></a>Visual Studio Tools for Office Runtime  
+##  <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools for Office Runtime  
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]进行验证发布者身份以及授予自定义的权限。 它通过一系列安全检查来验证这些权限。  
   
 ### <a name="security-during-customization-loading"></a>自定义加载过程中的安全性  

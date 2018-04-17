@@ -1,12 +1,10 @@
 ---
-title: "如何： 在 Office 项目中创建事件处理程序 |Microsoft 文档"
-ms.custom: 
+title: 如何： 在 Office 项目中创建事件处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c392d365ca14daeb204f4ee2f331bb1fe86ad304
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 833e41979d1dac9def7e647b396161d0ac5e2b67
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>如何：在 Office 项目中创建事件处理程序
   有多种 Visual Basic 和 C# 中创建事件处理程序。 在设计视图中，你可以通过双击控件，创建默认值为控件的事件处理程序或使用的事件窗格**属性**窗口控件上创建任何事件的处理。 但是，如果要在代码视图中，你可能不想要切换到设计视图，以创建一个事件处理程序。  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
   
 ### <a name="to-create-an-event-handler-in-c"></a>在 C# 中创建事件处理程序  
   
-1.  创建中的事件委托**启动**通过键入限定的事件名称后, 跟一个空格，然后键入类事件的 **+=** 没有空格。 例如:  
+1.  创建中的事件委托**启动**通过键入限定的事件名称后, 跟一个空格，然后键入类事件的**+=**没有空格。 例如:   
   
      `this.<object name>.<event name> +=`  
   

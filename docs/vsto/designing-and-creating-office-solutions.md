@@ -1,12 +1,10 @@
 ---
-title: "设计和创建 Office 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 设计和创建 Office 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Office project types in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f5a0163d422e5bb04e3c43b5455cc94dde06f09
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e43824ed3fa34a7cd22b98fb25f946f36cb8eab6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-and-creating-office-solutions"></a>Designing and Creating Office Solutions
   Visual Studio 提供可用于创建几种不同类型的 Office 解决方案的项目模板。 文档的此部分将介绍项目模板和提供有关创建 Office 项目的指导。 有关如何创建你的项目后实现代码和用户界面自定义的信息，请参阅[开发 Office 解决方案](../vsto/developing-office-solutions.md)。  
@@ -100,7 +99,7 @@ ms.lasthandoff: 01/10/2018
  [在 Visual Studio 环境中的 office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)   
  [Office 项目中的属性](../vsto/properties-in-office-projects.md)   
  [Microsoft Office 的不同版本中运行解决方案](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)   
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [如何：通过主互操作程序集面向 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [应用程序和 Office 解决方案中的部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)   
  [如何： 设置以便为 Office 解决方案的配置信息](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
  [使用在 Visual Studio 的 Office 功能](../vsto/using-office-functionality-inside-of-visual-studio.md)   

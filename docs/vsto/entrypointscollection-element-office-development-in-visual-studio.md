@@ -1,12 +1,10 @@
 ---
-title: "&lt;entryPointsCollection&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档"
-ms.custom: 
+title: '&lt;entryPointsCollection&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - entryPointsCollection element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 478731cde6c1ac08ca0d197f918e2fee4a8673ee
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 357e2b4d7aedb82b63676055f1ad1215171a25cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt;元素 （Visual Studio 中的 Office 开发）
   `entryPointsCollection` 命名空间的 `vstav3` 元素包含所有与 Office 解决方案关联的 `entryPoints` 元素。  
@@ -50,7 +49,7 @@ ms.lasthandoff: 01/10/2018
  `entryPointsCollection` 具有下列元素。  
   
 ### <a name="entrypoints"></a>entryPoints  
- 必须的。 角色`entryPoints`中的元素`vstav3`中定义命名空间[&#60; 入口点 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ 必须的。 角色`entryPoints`中的元素`vstav3`中定义命名空间[&#60;入口点&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。  
   
 ## <a name="document-level-customization-example"></a>文档级自定义项示例  
   

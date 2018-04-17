@@ -1,12 +1,10 @@
 ---
-title: "如何： 添加 Windows 窗体控件添加到 Office 文档 |Microsoft 文档"
-ms.custom: 
+title: 如何： 添加 Windows 窗体控件添加到 Office 文档 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 937c64f8fadf8763d4e5b3ad32489262cddafdfd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ebd26c78e30e522b3d961d42226fc42825eb2a2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>How to: Add Windows Forms Controls to Office Documents
   你可以在设计时在文档级项目中，将 Windows 窗体控件添加到 Microsoft Office Excel 和 Microsoft Office Word 文档。 在运行时，你可以在文档级自定义项和 VSTO 外接程序中添加控件。例如，你可以将 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> 控件添加到工作表，以便用户可以从选项列表选择。  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  ![视频链接](../vsto/media/playvideo.gif "视频链接")相关的视频演示，请参阅[如何执行 i： 将控件添加到文档图面在运行时？](http://go.microsoft.com/fwlink/?LinkId=132782)。  
   
-##  <a name="designtime"></a>在设计时添加控件  
+##  <a name="designtime"></a> 在设计时添加控件  
  有几种方式在设计时向文档级项目中的文档添加 Windows 窗体控件。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -102,10 +101,10 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  当在 Excel 中选择一个控件时， **“公式栏”** 中将显示 **=EMBED("WinForms.Control.Host","")**。 此文本是必需的并且不应删除。  
   
-##  <a name="runtimedoclevel"></a>在运行时在文档级项目中添加控件  
- 你可以在运行时以编程方式向文档添加 Windows 窗体控件。 在 Word 中，请使用 `ThisDocument` 类的 <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> 属性的方法。 在 Excel 中，使用的方法<xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A>属性`Sheet`  *n* 类。 每种方法都具有好几个重载，使你能够以不同的方式指定控件的位置。  
+##  <a name="runtimedoclevel"></a> 在运行时在文档级项目中添加控件  
+ 你可以在运行时以编程方式向文档添加 Windows 窗体控件。 在 Word 中，请使用 `ThisDocument` 类的 <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> 属性的方法。 在 Excel 中，使用的方法<xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A>属性`Sheet` *n*类。 每种方法都具有好几个重载，使你能够以不同的方式指定控件的位置。  
   
- 当在运行时向文档添加 Windows 窗体控件时，关闭文档时该控件将不会保存在文档中。 你可以在下次打开文档时重新创建该控件。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 当在运行时向文档添加 Windows 窗体控件时，关闭文档时该控件将不会保存在文档中。 你可以在下次打开文档时重新创建该控件。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 #### <a name="to-add-a-windows-forms-control-at-run-time"></a>在运行时添加 Windows 窗体控件  
   
@@ -116,10 +115,10 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#4)]  
   
-##  <a name="runtimeaddin"></a>在运行时在 VSTO 外接程序中添加控件  
+##  <a name="runtimeaddin"></a> 在运行时在 VSTO 外接程序中添加控件  
  你可以在运行时以编程方式将 Windows 窗体控件添加到任何打开的文档。 首先，生成一个基于打开的文档或工作表的主机项。 然后，在 Word 中，使用新主机项的 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 属性的方法。 然后，在 Excel 中，使用新主机项的 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> 属性的方法。 每种方法都具有好几个重载，使你能够以不同的方式指定控件的位置。  
   
- 当在运行时向文档添加 Windows 窗体控件时，关闭文档时该控件将不会保存在文档中。 你可以在下次打开文档时重新创建该控件。 有关详细信息，请参阅 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 当在运行时向文档添加 Windows 窗体控件时，关闭文档时该控件将不会保存在文档中。 你可以在下次打开文档时重新创建该控件。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
  有关在 VSTO 外接程序项目中生成主机项的详细信息，请参阅[扩展 Word 文档和 Excel VSTO 外接程序在运行时中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
@@ -139,6 +138,6 @@ ms.lasthandoff: 01/10/2018
  [Windows 窗体上的控件 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [如何： 调整工作表单元格中的控件的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [宿主项和宿主控件概述](../vsto/host-items-and-host-controls-overview.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
   

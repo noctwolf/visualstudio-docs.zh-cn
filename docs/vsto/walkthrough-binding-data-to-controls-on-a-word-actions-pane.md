@@ -1,12 +1,10 @@
 ---
-title: "演练： 将数据绑定到 Word 操作窗格上的控件 |Microsoft 文档"
-ms.custom: 
+title: 演练： 将数据绑定到 Word 操作窗格上的控件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c53c8ba65c07f2c488f33835cb045524069e3285
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d84c42e2b51d55cbbb73a7f26d6d6853ff7a3392
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-data-to-controls-on-a-word-actions-pane"></a>演练：将数据绑定到“Word 操作”窗格上的控件
   本演练演示数据绑定到 Word 中的操作窗格上的控件。 控件演示 SQL Server 数据库中表之间的主/从关系。  
@@ -132,7 +131,7 @@ ms.lasthandoff: 01/10/2018
   
 11. 右键单击<xref:System.Windows.Forms.Button>，单击**属性**的快捷菜单上，并更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|插入|  
     |**文本**|插入|  

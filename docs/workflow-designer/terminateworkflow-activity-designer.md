@@ -1,5 +1,5 @@
 ---
-title: "TerminateWorkflow 活动设计器 |Microsoft 文档"
+title: TerminateWorkflow 活动设计器 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 683c482436e968ff9d2a1bd4ce0bbb8e173a5520
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 444ea597fd6c76c8312369afcbc497e640bace6f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow 活动设计器
 **TerminateWorkflow**活动设计器用于创建和配置<xref:System.Activities.Statements.TerminateWorkflow>活动。
@@ -39,4 +39,4 @@ ms.lasthandoff: 03/12/2018
 ## <a name="see-also"></a>请参阅
 
 - [运行时](../workflow-designer/runtime-activity-designers.md)
-- [Persist](../workflow-designer/persist-activity-designer.md)
+- [保留](../workflow-designer/persist-activity-designer.md)

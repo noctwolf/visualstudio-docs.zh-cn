@@ -1,13 +1,10 @@
 ---
-title: "如何： 生成 SharePoint 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 如何： 生成 SharePoint 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, building
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 71355ad98765a2022521a24c3c5bd3e4b535776d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a6afa8e521ae11653d401b97a286e9478dde4bec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>如何：生成 SharePoint 解决方案
   构建 SharePoint 解决方案是比构建 Visual Studio 中的其他应用程序没有什么不同。 有关生成应用程序的详细信息，请参阅[编译和 Visual Studio 中生成](/visualstudio/ide/compiling-and-building-in-visual-studio)。 有关特定于 SharePoint 解决方案的一些注意事项的讨论，请参阅[如何： 部署和发布到本地 SharePoint 站点的 SharePoint 解决方案](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)。  
