@@ -1,13 +1,10 @@
 ---
-title: "在 Office 解决方案中编写代码 |Microsoft 文档"
-ms.custom: 
+title: 在 Office 解决方案中编写代码 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
 dev_langs:
@@ -36,14 +33,14 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9670bb35023b2a2cf4147d3d30008243203c9c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c6119db86fdd67079b63434a6bb494cb04cd31d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-in-office-solutions"></a>在 Office 解决方案中编写代码
   编写 Office 项目代码与编写 Visual Studio 中其他类型的代码在某些方面存在不同。 其中许多差异与 Office 对象模型公开给托管代码的方式相关。 其他差异与 Office 项目的设计相关。  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  有关详细信息，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Office 解决方案中的命名空间注意事项  
- 创建项目后，不能更改 Office 项目的 *“默认命名空间”* （或 Visual Basic 中的 *“根命名空间”* ）。 创建项目后，默认命名空间将始终与你指定的项目名匹配。 如果你重命名项目，将不会更改默认命名空间。 在项目中的默认命名空间的详细信息，请参阅[应用程序页、 项目设计器 &#40;C &#35; &#41;](/visualstudio/ide/reference/application-page-project-designer-csharp)和[应用程序页、 项目设计器 &#40;Visual Basic &#41;](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ 创建项目后，不能更改 Office 项目的 *“默认命名空间”* （或 Visual Basic 中的 *“根命名空间”* ）。 创建项目后，默认命名空间将始终与你指定的项目名匹配。 如果你重命名项目，将不会更改默认命名空间。 在项目中的默认命名空间的详细信息，请参阅[应用程序页上，项目设计器&#40;C&#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp)和[应用程序页上，项目设计器&#40;Visual Basic&#41;](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>更改 C# 项目中的主机项类的命名空间  
  主机项类（例如， `ThisAddIn`、 `ThisWorkbook`或 `ThisDocument` 类）在 Visual C# Office 项目中具有自己的命名空间。 默认情况下，在创建项目后，项目中的主机项的命名空间与你指定的项目名相匹配。  
@@ -110,7 +107,7 @@ ms.lasthandoff: 01/10/2018
 |功能|描述|Visual Basic 支持|Visual C# 支持|  
 |-------------|-----------------|--------------------------|------------------------|  
 |可选参数|许多 Microsoft Office 方法具有调用该方法时不需要的参数。 如果没有为参数传递任何值，则使用默认值。|Visual Basic 支持可选参数。|Visual C# 在大多数情况下支持可选参数。 有关详细信息，请参阅[Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)。|  
-|按引用传递参数|大多数 Microsoft Office 主互操作程序集中的可选参数可以按值传递。 但是，在某些主互操作程序集中，接受引用类型的可选参数必须按引用传递。<br /><br /> 有关值和引用类型参数的详细信息，请参阅[传递自变量通过值和通过引用 &#40;Visual Basic &#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) （对于 Visual Basic) 和[传递参数 &#40;使用 c&#35;编程指南 &#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|按引用传递参数不需要完成任何额外工作。 Visual Basic 编译器在必要时会自动按引用传递参数。|大多数情况下，Visual C# 编译器在必要时会自动按引用传递参数。 有关详细信息，请参阅[Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)。|  
+|按引用传递参数|大多数 Microsoft Office 主互操作程序集中的可选参数可以按值传递。 但是，在某些主互操作程序集中，接受引用类型的可选参数必须按引用传递。<br /><br /> 有关值和引用类型参数的详细信息，请参阅[通过值和通过引用传递自变量&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) （对于 Visual Basic) 和[传递参数&#40;C&#35;编程指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)。|按引用传递参数不需要完成任何额外工作。 Visual Basic 编译器在必要时会自动按引用传递参数。|大多数情况下，Visual C# 编译器在必要时会自动按引用传递参数。 有关详细信息，请参阅[Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)。|  
 |参数化属性|某些属性接受参数，并充当只读函数。|Visual Basic 支持接受参数的属性。|Visual C# 支持接受参数的属性。|  
 |后期绑定|后期绑定涉及在运行时确定对象的属性，而不是在设计时将变量强制转换为对象类型。|当 **Option Strict** 处于关闭状态时，Visual Basic 执行后期绑定。 当 **Option Strict** 处于启用状态时，必须显式转换对象并使用 <xref:System.Reflection> 命名空间中的类型访问后期绑定成员。 有关更多信息，请参见 [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md)。|Visual C# 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的项目中执行后期绑定。 有关更多信息，请参见 [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md)。|  
   
@@ -119,13 +116,13 @@ ms.lasthandoff: 01/10/2018
   
 |功能|描述|Visual Basic 和 Visual C# 支持|  
 |-------------|-----------------|-----------------------------------------|  
-|数组索引|Microsoft Office 应用程序中集合的数组下限从 1 开始。 Visual Basic 和 Visual C# 使用基于 0 的数组。 有关详细信息，请参阅[数组 &#40;使用 c&#35;编程指南 &#41;](/dotnet/csharp/programming-guide/arrays/index)和[Visual Basic 中的数组](/dotnet/visual-basic/programming-guide/language-features/arrays/index)。|若要访问 Microsoft Office 应用程序对象模型中某个集合的第一项，请使用索引 1，而不是 0。|  
+|数组索引|Microsoft Office 应用程序中集合的数组下限从 1 开始。 Visual Basic 和 Visual C# 使用基于 0 的数组。 有关详细信息，请参阅[数组&#40;C&#35;编程指南&#41;](/dotnet/csharp/programming-guide/arrays/index)和[Visual Basic 中的数组](/dotnet/visual-basic/programming-guide/language-features/arrays/index)。|若要访问 Microsoft Office 应用程序对象模型中某个集合的第一项，请使用索引 1，而不是 0。|  
   
 ## <a name="see-also"></a>请参阅  
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
  [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 项目中的事件](../vsto/events-in-office-projects.md)   
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [如何：通过主互操作程序集面向 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [如何： 在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)   
  [在 Office 解决方案中的后期绑定](../vsto/late-binding-in-office-solutions.md)   
  [合作开发 Office 解决方案](../vsto/collaborative-development-of-office-solutions.md)  

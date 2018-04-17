@@ -1,12 +1,10 @@
 ---
-title: "演练： 导入自定义母版页和网站页的映像 |Microsoft 文档"
-ms.custom: 
+title: 演练： 导入自定义母版页和网站页的映像 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 544c3c727046fdcabcde90f221f4b630c11cf29f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f90f85e7f22cf3bdecf90aaf6f8d61af3f399a68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>演练：导入带有图像的自定义母版页和网站页
   本演练演示如何导入 SharePoint 的自定义母版页和网站页具有图像成为[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>系统必备  
  你必须具有以下组件来完成本演练：  
   
--   支持的版本的[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支持的版本的[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
 -   Visual Studio。  
   
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  打开 SharePoint 站点，以查看已部署的项。  
   
- 文件导入到一种备用方法[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和将其部署到 SharePoint 是将文件添加到中的模块[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][如何： 导入母版页或主题](../sharepoint/how-to-import-a-master-page-or-theme.md)和[使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
+ 文件导入到一种备用方法[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和将其部署到 SharePoint 是将文件添加到中的模块[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [如何： 导入母版页或主题](../sharepoint/how-to-import-a-master-page-or-theme.md)和[使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [从现有的 SharePoint 网站导入项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   

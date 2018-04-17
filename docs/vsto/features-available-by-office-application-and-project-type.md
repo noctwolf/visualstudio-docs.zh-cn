@@ -1,12 +1,10 @@
 ---
-title: "按 Office 应用程序和项目类型提供的功能 |Microsoft 文档"
-ms.custom: 
+title: 按 Office 应用程序和项目类型提供的功能 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b79c7a913e8ce06b1d833f78aad9e8565d54aff2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff8128f9c142193d9fcde2f139e29a3fb4f3326e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>按 Office 应用程序和项目类型提供的功能
   Visual Studio 具有几种类型的项目模板，它们支持 Microsoft Office 应用程序的不同业务方案，包括以下类型：  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
   
 -   VSTO 外接程序  
   
- 并非所有应用程序都可以使用所有项目类型。 例如，文档级项目仅可用于 Microsoft Office Word 和 Microsoft Office Excel。 同样，某些功能仅可用于特定类型的项目或应用程序。 例如，操作窗格仅在文档级项目中可用，而功能区扩展仅可用于某些应用程序。 有关不同项目类型的详细信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ 并非所有应用程序都可以使用所有项目类型。 例如，文档级项目仅可用于 Microsoft Office Word 和 Microsoft Office Excel。 同样，某些功能仅可用于特定类型的项目或应用程序。 例如，操作窗格仅在文档级项目中可用，而功能区扩展仅可用于某些应用程序。 有关不同项目类型的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
 > [!NOTE]  
 >  Office 项目模板仅在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的某些版本中可用。 有关详细信息，请参阅 [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
@@ -69,12 +68,12 @@ ms.lasthandoff: 01/10/2018
 |可视化文档设计器。|文档级项目。|[Visual Studio 环境中的 Office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>请参阅  
- [入门 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [操作窗格概述](../vsto/actions-pane-overview.md)   
  [功能区概述](../vsto/ribbon-overview.md)   
  [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [宿主项和宿主控件概述](../vsto/host-items-and-host-controls-overview.md)   
  [文档级自定义项中缓存的数据](../vsto/cached-data-in-document-level-customizations.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)  
   

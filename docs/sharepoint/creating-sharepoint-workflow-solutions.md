@@ -1,12 +1,10 @@
 ---
-title: "创建 SharePoint 工作流解决方案 |Microsoft 文档"
-ms.custom: 
+title: 创建 SharePoint 工作流解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VSTO.NewSharePointWorkflowWizard.Page3
 - VS.SharePointTools.Workflow.WorkflowName
@@ -22,16 +20,17 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bb0dce0aa162260ca784593ec34ee5c39acd1f31
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>创建 SharePoint 工作流解决方案
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供工具以帮助您创建自定义管理生命周期的文档和 SharePoint 网站中的列表项的工作流。 提供的项包括设计器、一组活动控件以及必需的程序集引用。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]此外包括**SharePoint 自定义向导**来帮助创建和配置工作流。  
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供工具以帮助您创建自定义管理生命周期的文档和 SharePoint 网站中的列表项的工作流。 提供的项包括设计器、一组活动控件以及必需的程序集引用。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此外包括**SharePoint 自定义向导**来帮助创建和配置工作流。  
   
  有关用于创建 SharePoint 项目中的必备组件列表[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。 有关 SharePoint 的详细信息，请参阅[Microsoft SharePoint 产品和技术](http://go.microsoft.com/fwlink/?LinkId=178470)。  
   
@@ -124,12 +123,12 @@ ms.lasthandoff: 01/10/2018
  此外可以通过使用 SharePoint 库或列表中的项的属性，从用户中收集信息。 名为的 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 类的实例的主代码文件 （Workflow1.cs 或 Workflow1.vb） 声明`workflowProperties`。 使用`workflowProperties`对象来访问的库或在代码中的列表的属性。 有关示例，请参阅[演练： 创建和调试 SharePoint 工作流解决方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)。  
   
 ## <a name="debugging-a-sharepoint-workflow-template"></a>调试 SharePoint 工作流模板  
- 你可以调试 SharePoint 工作流项目相同如调试其他[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]基于 Web 的项目。 当你启动[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用你在中指定的设置**SharePoint 自定义向导**以打开相应的 SharePoint 网站，并自动将工作流模板相关联与相应的库或列表。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]此外会将附加[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]到调试器[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]名为 w3wp.exe 进程。  
+ 你可以调试 SharePoint 工作流项目相同如调试其他[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]基于 Web 的项目。 当你启动[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用你在中指定的设置**SharePoint 自定义向导**以打开相应的 SharePoint 网站，并自动将工作流模板相关联与相应的库或列表。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此外会将附加[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]到调试器[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]名为 w3wp.exe 进程。  
   
  若要测试工作流，必须手动启动它。 详细信息，请参阅"调试工作流"一节中[调试 SharePoint 解决方案](../sharepoint/debugging-sharepoint-solutions.md)。 有关详细信息[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 应用程序调试，请参阅[调试 Web 应用程序和脚本](/visualstudio/debugger/debugging-web-applications-and-script)。  
   
 ## <a name="deploying-a-sharepoint-workflow-template"></a>部署 SharePoint 工作流模板  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]就像其他部署 SharePoint 工作流项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。 有关详细信息，请参阅[打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 就像其他部署 SharePoint 工作流项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。 有关详细信息，请参阅[打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。  
   
 ## <a name="importing-globally-reusable-workflows"></a>导入全局可重用工作流  
  除了创建特定于站点的可重用工作流，SharePoint 设计器使您能够创建*全局可重用工作流*，这是工作流，可由任何 SharePoint 站点使用。 中的导入可重用工作流项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]当前不导入全局可重用工作流。 但是，你可以使用 SharePoint Designer 将全局可重用工作流转换为可重用工作流，或导入作为未转换的声明性工作流的工作流。 有关详细信息，请参阅[从现有的 SharePoint 网站导入项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)。  

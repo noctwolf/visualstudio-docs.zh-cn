@@ -2,12 +2,9 @@
 title: Bookmark 控件 |Microsoft 文档
 ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Bookmark
 dev_langs:
@@ -20,21 +17,21 @@ helpviewer_keywords:
 - Bookmark control
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38e3286d24f0591ca4ced3339118b6d0d4bfe1d7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f70fa1016762e0811da0e4850eda0428278c463e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bookmark-control"></a>Bookmark 控件
   <xref:Microsoft.Office.Tools.Word.Bookmark> 控件是一个具有唯一名称且用于公开事件的书签，可以绑定到数据。 可以将书签用作占位符以在 Microsoft Office Word 文档中标记项或位置。 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件是 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象和 <xref:Microsoft.Office.Interop.Word.Range> 对象的组合。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- 在文档级项目中，你可以在设计时或运行时向文档中添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 在 VSTO 外接程序项目中，可以在运行时向任何打开的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 有关更多信息，请参见 [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
+ 在文档级项目中，你可以在设计时或运行时向文档中添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 在 VSTO 外接程序项目中，可以在运行时向任何打开的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 有关更多信息，请参见 [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
   
 ## <a name="binding-data-to-the-control"></a>将数据绑定到控件  
  <xref:Microsoft.Office.Tools.Word.Bookmark> 控件支持简单数据绑定。 应该使用 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 属性将书签绑定到数据源。 书签的默认数据绑定属性是 <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> 属性。  
@@ -113,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>请参阅  
  [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)   
- [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [演练： 创建书签的快捷菜单](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  

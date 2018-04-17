@@ -1,12 +1,10 @@
 ---
-title: "自定义 XML 部件概述 |Microsoft 文档"
-ms.custom: 
+title: 自定义 XML 部件概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,20 +23,21 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], custom XML parts
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8dc3e4b1abc5f60f9ca63e374ab8870df6bb0d41
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 672be641d34f524f1be1972542e89d1e97a1b3d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-xml-parts-overview"></a>Custom XML Parts Overview
   对于某些 Microsoft Office 应用程序，可在文档中嵌入 XML 数据。 时在文档中嵌入 XML 数据，数据被称为*自定义 XML 部件*。  
   
  可使用 Visual Studio 中的 VSTO 外接程序或文档级解决方案来创建和修改自定义 XML 部件。 无需启动 Microsoft Office 应用程序来创建和修改自定义 XML 部件。  
   
- **适用于：**本主题中的信息适用于文档级别项目和 VSTO 外接程序项目于 Excel、 PowerPoint 和 Word。 有关详细信息，请参阅 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **适用于：**本主题中的信息适用于文档级别项目和 VSTO 外接程序项目于 Excel、 PowerPoint 和 Word。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
 > [!NOTE]  
 >  Visual Studio 还使你能够在文档级自定义项中缓存数据对象。 尽管有一些相似之处，此功能并不同于自定义 XML 部件。 有关详细信息，请参阅[文档级自定义项中缓存数据](../vsto/cached-data-in-document-level-customizations.md)。  

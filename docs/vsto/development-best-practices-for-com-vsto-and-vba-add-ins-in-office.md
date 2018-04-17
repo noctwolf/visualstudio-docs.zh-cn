@@ -1,23 +1,24 @@
 ---
-title: "用于 COM、 VSTO 和 VBA 办公室中的外接程序的开发最佳做法 |Microsoft 文档"
-ms.custom: 
+title: 用于 COM、 VSTO 和 VBA 办公室中的外接程序的开发最佳做法 |Microsoft 文档
+ms.custom: ''
 ms.date: 07/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: 
-helpviewer_keywords: 
+ms.technology:
+- office-development
+ms.topic: conceptual
+dev_langs:
+- ''
+helpviewer_keywords:
+- ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>开发适用于 Office 中的 COM、 VSTO 和 VBA 外接程序的最佳做法
   如果你正在开发 COM，for Office 的 VSTO 或 VBA 外接程序将按照本文中所述的开发最佳做法。   这将有助于确保：
@@ -62,7 +63,7 @@ ms.lasthandoff: 01/10/2018
 
 若要提供 Office 客户端应用程序 （例如，Word 或 Excel） 的支持声明，首先验证你的外接程序运行在当前的 Office 版本中，以及然后提交如果外接程序中断的未来版本中提供更新。 不需要 Microsoft 发布了新的生成或对 Office 的更新时，请测试你的外接程序。 Microsoft 很少更改 Office 中的 COM、 VSTO 和 VBA 扩展性平台，这些更改将妥善记录这些异常。
 
->重要说明： Microsoft 要维护对准备情况报表和 ISV 联系人信息的加载项受支持的列表。 若要获取外接程序列出，请参阅[https://aka.ms/readyforwindows](https://aka.ms/readyforwindows)。
+>重要说明： Microsoft 要维护对准备情况报表和 ISV 联系人信息的加载项受支持的列表。 若要获取外接程序列出，请参阅[ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows)。
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>使用进程监视器来帮助调试安装或加载问题
 如果外接程序在安装或负载过程具有兼容性问题，它们可能与使用文件或注册表访问问题相关。 使用[进程监视器](/sysinternals/downloads/procmon)或类似的调试工具日志，并比较针对某个工作环境，以帮助确定此问题的行为。

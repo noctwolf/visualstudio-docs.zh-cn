@@ -1,12 +1,10 @@
 ---
-title: "如何： 向 Visual Basic 项目中的 VBA 公开代码 |Microsoft 文档"
-ms.custom: 
+title: 如何： 向 Visual Basic 项目中的 VBA 公开代码 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,20 +16,21 @@ helpviewer_keywords:
 - host items [Office development in Visual Studio], exposing code to VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d3d007024cdca160c194285da8f0a741100253d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 39dc659f7c8841bcf350249332278091232a32d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>How to: Expose Code to VBA in a Visual Basic Project
   你可以公开中的代码[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]项目到 Visual Basic for Applications (VBA) 代码，如果你想要进行相互交互的代码的两个类型。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Visual Basic 过程是不同的 Visual C# 过程。 有关详细信息，请参阅[如何： 向 Visual C# 35; 中的 VBA 公开代码项目](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。  
+ Visual Basic 过程是不同的 Visual C# 过程。 有关详细信息，请参阅[如何： 向在 Visual C 中的 VBA 公开代码&#35;项目](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。  
   
  主机项类中的代码不同于它适用于其他类中的代码进行的过程：  
   
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  ![视频链接](../vsto/media/playvideo.gif "视频链接")相关的视频演示，请参阅[如何执行 i： 调用 VSTO 代码从 VBA？](http://go.microsoft.com/fwlink/?LinkId=136757)。  
   
-##  <a name="HostItemCode"></a>公开主机项类中的代码  
+##  <a name="HostItemCode"></a> 公开主机项类中的代码  
  若要使 VBA 代码能够调用 Visual Basic 代码中某个主机项类，将设置**EnableVbaCallers**主机项的属性**True**。  
   
  有关演示如何公开主机项类的方法，然后从 VBA 调用它的演练，请参阅[演练： 从 Visual Basic 项目中的 VBA 调用代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)。 有关宿主项的详细信息，请参阅 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  生成项目。  
   
-##  <a name="NonHostItem"></a>公开不是主机项类中的代码  
+##  <a name="NonHostItem"></a> 公开不是主机项类中的代码  
  若要使 VBA 代码能够调用不是主机项类中的 Visual Basic 代码，请修改代码，而对 VBA 可见。  
   
 #### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>若要公开不是主机项类，向 VBA 中的代码  
@@ -123,8 +122,8 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>请参阅  
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
+ [结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)   
  [演练： 从 Visual Basic 项目中的 VBA 中调用代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [如何： 向 Visual C# 35; 中的 VBA 公开代码项目](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
+ [如何： 向在 Visual C 中的 VBA 公开代码&#35;项目](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
   
   

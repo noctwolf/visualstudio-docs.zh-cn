@@ -1,12 +1,10 @@
 ---
-title: "创建项模板和项目模板的 SharePoint 项目项 |Microsoft 文档"
-ms.custom: 
+title: 创建项模板和项目模板的 SharePoint 项目项 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating custom templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f64abf2327d4e7702020a53c88d0d2c640e0756
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>为 SharePoint 项目项创建项模板和项目模板
   当定义自定义的 SharePoint 项目项类型时，你可以将其与关联的项模板或项目模板，以便其他开发人员可以使用 Visual Studio 中的项目项。 你还可以创建模板向导。  
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/10/2018
   
  项模板和项目模板是包含 Visual Studio 用来创建的项目项或项目的文件的.zip 文件。 有关项模板和项目模板的基础知识的详细信息，请参阅[创建项目和项模板](/visualstudio/ide/creating-project-and-item-templates)。  
   
-##  <a name="creatingitemtemplates"></a>创建项模板  
+##  <a name="creatingitemtemplates"></a> 创建项模板  
  在创建 SharePoint 项目项的项模板时，有一些始终是必需的文件和可选可能使用的某些类型的项目项的文件。 有关演示如何定义 SharePoint 项目项类型并为它创建项模板的演练，请参阅[演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。  
   
  下表列出了所需的文件，以创建 SharePoint 项目项的项模板。  

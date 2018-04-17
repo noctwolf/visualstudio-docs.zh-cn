@@ -1,12 +1,10 @@
 ---
-title: "如何： 配置包含列表安全性 |Microsoft 文档"
-ms.custom: 
+title: 如何： 配置包含列表安全性 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b95b85f028ac003cedb05248b6884c24ca32008
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f8995e95ed1a35841aab945daa1ea35854946b56
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>如何：配置包含列表安全性
   如果具有管理员权限，则可以配置[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示，以控制最终用户是否可以通过将信任决定保存到包含列表中安装 Office 解决方案的选择。 有关包含列表的信息，请参阅[使用包含列表信任 Office 解决方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。  
@@ -55,9 +54,9 @@ ms.lasthandoff: 01/10/2018
   
 3.  添加以下子键作为**字符串值**，如果它们尚不存在，及关联的值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
-    |**Internet**|**AuthenticodeRequired**|  
+    |**internet**|**AuthenticodeRequired**|  
     |**UntrustedSites**|已禁用|  
     |**MyComputer**|**启用**|  
     |**LocalIntranet**|**启用**|  
@@ -114,10 +113,10 @@ ms.lasthandoff: 01/10/2018
   
 3.  添加以下子键作为**字符串值**，如果它们尚不存在，及关联的值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |**UntrustedSites**|已禁用|  
-    |**Internet**|**AuthenticodeRequired**|  
+    |**internet**|**AuthenticodeRequired**|  
     |**MyComputer**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
     |**TrustedSites**|**AuthenticodeRequired**|  
@@ -171,10 +170,10 @@ ms.lasthandoff: 01/10/2018
   
 3.  添加以下子键作为**字符串值**，如果它们尚不存在，及关联的值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |**UntrustedSites**|已禁用|  
-    |**Internet**|已禁用|  
+    |**internet**|已禁用|  
     |**MyComputer**|已禁用|  
     |**LocalIntranet**|已禁用|  
     |**TrustedSites**|已禁用|  

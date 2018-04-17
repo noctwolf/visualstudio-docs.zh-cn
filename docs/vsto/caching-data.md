@@ -1,12 +1,10 @@
 ---
-title: "缓存数据 |Microsoft 文档"
-ms.custom: 
+title: 缓存数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0d036f11d60a8da1362464a875fdc0f2771cac0e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 094a4e6c639007fcf09ce28f0be2e398b8245858
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="caching-data"></a>缓存数据
   你可以缓存文档级自定义项中的数据对象，以便脱机，或无需打开 Microsoft Office Word 或 Microsoft Office Excel 可以访问的数据。 若要缓存对象，该对象必须满足某些要求的数据类型。 .NET Framework 中的许多常见数据类型满足这些要求，包括<xref:System.String>， <xref:System.Data.DataSet>，和<xref:System.Data.DataTable>。  

@@ -1,12 +1,10 @@
 ---
-title: "文档级自定义项中已缓存数据 |Microsoft 文档"
-ms.custom: 
+title: 文档级自定义项中已缓存数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1fe9465c3f238941ace0d5b6fc438c7d5d93ec64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0919e046f9e50578df46853c6db9f60cea2f71e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cached-data-in-document-level-customizations"></a>文档级自定义项中的缓存数据
   文档级自定义项的主要目标是将数据从 Office 文档中的视图。 数据是指存储在文档中，包括数字和文本的信息。 视图是指用户界面和 Microsoft Office Word 和 Microsoft Office Excel 的对象模型。  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 有关文档级自定义项的详细信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)和[的文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)。  
+ 有关文档级自定义项的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)和[体系结构的文档级自定义](../vsto/architecture-of-document-level-customizations.md)。  
   
 ## <a name="understanding-the-cached-data-programming-model"></a>了解缓存的数据编程模型  
  数据岛可以包含满足某些要求的解决方案中的任何对象。 这些对象包括<xref:System.Data.DataSet>对象，<xref:System.Data.DataTable>对象，并可以通过序列化的任何其他对象<xref:System.Xml.Serialization.XmlSerializer>类。 有关详细信息，请参阅[缓存数据](../vsto/caching-data.md)。  

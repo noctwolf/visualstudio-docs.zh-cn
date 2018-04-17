@@ -1,12 +1,10 @@
 ---
-title: "打包和部署 SharePoint 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 打包和部署 SharePoint 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging and deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e25d0829305f414712590296b6121d62583736a2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8faeb21b7c32f1af91a9149b1b9f6bcadafeed7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="packaging-and-deploying-sharepoint-solutions"></a>打包和部署 SharePoint 解决方案
   通常情况下，SharePoint 解决方案部署到 SharePoint 服务器通过使用解决方案包 (.wsp) 文件。 将你的 SharePoint 项目项组织到功能以及用于创建包以部署你的 SharePoint 功能，你可以使用 Visual Studio。  
@@ -39,12 +38,12 @@ ms.lasthandoff: 01/10/2018
   
 -   [部署 SharePoint 解决方案中的文件](#DeployingFiles)  
   
-##  <a name="Creating"></a>创建功能和包  
+##  <a name="Creating"></a> 创建功能和包  
  你可以使用 Visual Studio 将相关的 SharePoint 元素到*功能*。 例如，联系人列表定义的功能可能包括列表实例和列表定义。 可以将这两个元素合并到单个功能以进行部署。 有关功能的详细信息，请参阅[构建基块： 功能](http://go.microsoft.com/fwlink/?LinkID=169183)。  
   
  接下来，你可以创建 SharePoint 解决方案包 (.wsp) 捆绑到一个包中，在多个功能、 站点定义，程序集和其他文件将文件存储在由 SharePoint 所需文件部署到服务器的格式。 有关详细信息，请参阅[构建基块： 解决方案](http://go.microsoft.com/fwlink/?LinkID=169186)。  
   
-##  <a name="Tools"></a>功能和打包工具支持  
+##  <a name="Tools"></a> 功能和打包工具支持  
  可以使用在 Visual Studio 中的 SharePoint 开发工具快速将 SharePoint 文件组织为功能和更易于部署的解决方案包。 以下工具可用于配置功能和解决方案包。  
   
 -   功能设计器和包设计器。  
@@ -88,12 +87,12 @@ ms.lasthandoff: 01/10/2018
 ### <a name="solution-explorer"></a>“解决方案资源管理器”  
  解决方案资源管理器可用于导航和打开 SharePoint 项目的文件。 在解决方案资源管理器中使用上下文菜单添加功能，功能事件接收器和功能的资源。 此外，你可以打开功能设计器和包设计器配置的功能和部署的包。  
   
-##  <a name="Deploying"></a>部署 SharePoint 解决方案  
+##  <a name="Deploying"></a> 部署 SharePoint 解决方案  
  自定义功能和 Visual Studio 中的包后，你可以创建.wsp 文件将部署到 SharePoint 服务器。 可以使用 Visual Studio 进行调试和测试.wsp 仅在开发计算机上的 SharePoint 服务器上。 有关如何将 SharePoint 解决方案部署到远程 SharePoint 服务器的详细信息，请参阅[部署解决方案](http://go.microsoft.com/fwlink/?LinkID=169194)。  
   
  你还可以自定义开发计算机上的执行部署步骤。 有关详细信息，请参阅[部署、 发布和升级 SharePoint 解决方案包](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)。  
   
-##  <a name="DeployingFiles"></a>部署 SharePoint 解决方案中的文件  
+##  <a name="DeployingFiles"></a> 部署 SharePoint 解决方案中的文件  
  通常情况下，当你将 SharePoint 项目项添加到 SharePoint 解决方案时，所有所需的文件包含。 可以是文件编译 （代码文件） 都内置于解决方案的输出程序集。 但是，你可能还需要将非可编译的文件，例如，.xml、.txt 或资源文件添加到 SharePoint 项目。 这些文件不是自动打包到你的解决方案中。 若要确保它们打包，请将文件添加到映射的文件夹或 SharePoint 项目项。  
   
  部署解决方案时，添加到映射的文件夹的文件自动会复制到的 SharePoint 配置单元。 添加到 SharePoint 项目项文件部署到中指定的位置**部署位置**每个文件，部分设置的属性基于**部署类型**属性。 默认情况下，**部署类型**属性值是**NoDeployment**，这意味着没有与解决方案部署该文件。 你必须设置为要将文件包括在包的属性的其他值。  

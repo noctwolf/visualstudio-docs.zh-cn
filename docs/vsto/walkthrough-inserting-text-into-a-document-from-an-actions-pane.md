@@ -1,12 +1,10 @@
 ---
-title: "演练： 将文本插入到操作窗格中的文档 |Microsoft 文档"
-ms.custom: 
+title: 演练： 将文本插入到操作窗格中的文档 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 26d79087a4dbf7fc176ab3deb2c98cd5fdb5ba8a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9e562f66dd43b4adc45727c8de1457a24ddf97b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>演练：从操作窗格将文本插入到文档中
   本演练演示如何在 Microsoft Office Word 文档中创建操作窗格。 操作窗格包含收集输入，然后将文本发送到文档的两个控件。  
@@ -112,25 +111,25 @@ ms.lasthandoff: 01/10/2018
   
 4.  添加**文本框中**控制到操作窗格控件，并可以更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
-    |**名称**|**getName**|  
+    |**名称**|**GetName**|  
     |**Size**|**130, 20**|  
   
 5.  添加第二个**标签**控制到操作窗格控件，并可以更改**文本**属性**地址**。  
   
 6.  添加第二个**文本框中**控制到操作窗格控件，并可以更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
-    |**名称**|**getAddress**|  
+    |**名称**|**GetAddress**|  
     |**接受返回**|**True**|  
     |**多行**|**True**|  
     |**Size**|**130, 40**|  
   
 7.  添加**按钮**控制到操作窗格控件，并可以更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**addText**|  
     |**文本**|插入|  

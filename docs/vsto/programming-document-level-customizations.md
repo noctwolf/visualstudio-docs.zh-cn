@@ -1,13 +1,10 @@
 ---
-title: "文档级自定义项编程 |Microsoft 文档"
-ms.custom: 
+title: 文档级自定义项编程 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Sheet3
 - thisWorkbook
@@ -30,14 +27,14 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 5f44b7d5a283d6e2946eb26e5036f47b09729de8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-document-level-customizations"></a>对文档级自定义项进行编程
   在使用文档级自定义项扩展 Microsoft Office Word 或 Microsoft Office Excel 时，可以执行以下任务：  
@@ -58,7 +55,7 @@ ms.lasthandoff: 01/10/2018
   
  在文档级项目中编写代码与在 Visual Studio 中编写其他类型项目的代码在某些方面存在不同。 其中许多差异是由 Office 对象模型公开给托管代码的方式引起的。 有关详细信息，请参阅 [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)。  
   
- 有关文档级自定义项和其他类型的解决方案可以通过使用 Visual Studio 中的 Office 开发工具创建的常规信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ 有关文档级自定义项和其他类型的解决方案可以通过使用 Visual Studio 中的 Office 开发工具创建的常规信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
 ## <a name="using-the-generated-classes-in-document-level-projects"></a>使用文档级项目中生成的类  
  创建文档级项目时，Visual Studio 将在项目中自动生成一个可用开始编写代码的类。 Visual Studio 针对 Word 和 Excel 生成不同的类：  
@@ -84,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 -   `ThisWorkbook`：派生自 <xref:Microsoft.Office.Tools.Excel.WorkbookBase>。  
   
--   `Sheet` *n*：派生自 <xref:Microsoft.Office.Tools.Excel.WorksheetBase>。  
+-   `Sheet` *n*： 派生自<xref:Microsoft.Office.Tools.Excel.WorksheetBase>。  
   
  这些基类将对其成员的所有调用重定向到 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中相应宿主项接口的内部实现。 例如，如果你调用 <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> 类的 `ThisDocument` 方法，则 <xref:Microsoft.Office.Tools.Word.DocumentBase> 类将此调用重定向搭配 <xref:Microsoft.Office.Tools.Word.Document> 中的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]接口的内部实现。  
   
@@ -174,7 +171,7 @@ Globals.ThisDocument.Save();
   
 ## <a name="see-also"></a>请参阅  
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
+ [结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)   
  [使用 ServerDocument 类管理服务器上的文档](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   

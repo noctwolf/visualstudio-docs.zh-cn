@@ -1,13 +1,10 @@
 ---
-title: "演练： 使用 IntelliTrace 调试 SharePoint 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用 IntelliTrace 调试 SharePoint 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - IntelliTrace
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9f3e5ae5997f7ae4f7c7f94bc61dc526404f144
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>演练：使用 IntelliTrace 调试 SharePoint 应用程序
 
@@ -56,9 +53,9 @@ ms.lasthandoff: 02/21/2018
 
 - 受支持的 Windows 和 SharePoint 的版本。 请参阅[开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。
 
-- Visual Studio Enterprise.
+- Visual Studio Enterprise。
 
-## <a name="BKMK_CreateReceiver">创建功能接收器</a>
+## <a name="BKMK_CreateReceiver"></a> 创建功能接收器
 
 首先，你创建的空 SharePoint 项目具有功能接收器。
 
@@ -76,7 +73,7 @@ ms.lasthandoff: 02/21/2018
 
 4. 为 Feature1.feature，打开快捷菜单，然后选择**添加事件接收器**将代码模块添加到功能。
 
-## <a name="BKMK_AddCode">向功能接收器中添加代码</a>
+## <a name="BKMK_AddCode"></a> 向功能接收器中添加代码
 
 接下来，将代码添加到功能接收器中的两个方法：`FeatureActivated`和`FeatureDeactivating`。 激活或停用在 SharePoint 中，分别功能时，将触发这些方法。
 
@@ -250,7 +247,7 @@ ms.lasthandoff: 02/21/2018
     }
     ```
 
-## <a name="BKMK_Test1">测试项目</a>
+## <a name="BKMK_Test1"></a> 测试项目
 
 现在，不会向功能接收器中添加代码，数据收集器正在运行，部署并运行 SharePoint 解决方案以测试是否它能否正常工作。
 
@@ -277,7 +274,7 @@ ms.lasthandoff: 02/21/2018
 
      FeatureDeactivating() 事件处理程序引发错误。
 
-## <a name="BKMK_CollectDiagnosticData">使用 Microsoft Monitoring Agent 收集 IntelliTrace 数据</a>
+## <a name="BKMK_CollectDiagnosticData"></a> 使用 Microsoft Monitoring Agent 收集 IntelliTrace 数据
 
 如果运行 SharePoint 的系统上安装 Microsoft Monitoring Agent，您可以通过使用 IntelliTrace 返回的泛型信息比更具体的数据来调试 SharePoint 解决方案。 代理会在 Visual Studio 之外工作方式是使用 PowerShell cmdlet 以捕获你的 SharePoint 解决方案运行时的调试信息。
 
@@ -302,7 +299,7 @@ ms.lasthandoff: 02/21/2018
 
      **Stop-WebApplicationMonitoring**  *"\<SharePointSite>\\<SharePointAppName\>"*
 
-## <a name="BKMK_DebugSolution">调试并修复 SharePoint 解决方案</a>
+## <a name="BKMK_DebugSolution"></a> 调试并修复 SharePoint 解决方案
 
 现在你可以以查找并修复 SharePoint 解决方案中的错误的 Visual Studio 中查看 IntelliTrace 日志文件。
 

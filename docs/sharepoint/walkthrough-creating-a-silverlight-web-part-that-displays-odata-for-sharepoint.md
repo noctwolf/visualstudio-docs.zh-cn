@@ -1,13 +1,10 @@
 ---
-title: "演练： 创建的 Silverlight Web 部件显示 SharePoint OData |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建的 Silverlight Web 部件显示 SharePoint OData |Microsoft 文档
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
 dev_langs:
@@ -15,14 +12,14 @@ dev_langs:
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3c2c66490e0eb46508fce0f346fe44563548b407
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 019c1d4b20f1d7a53fc68ef561d45989e93eee28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>演练：创建显示 SharePoint OData 的 Silverlight Web 部件
   SharePoint 2010 通过 OData 公开其列表数据。 在 SharePoint 中，由 rest 样式服务 ListData.svc 实现 OData 服务。 本演练演示如何创建 SharePoint web 部件承载 Silverlight 应用程序。 Silverlight 应用程序通过使用 ListData.svc 来显示 SharePoint 公告列表信息。 有关详细信息，请参阅[SharePoint Foundation REST 接口](http://go.microsoft.com/fwlink/?LinkId=225999)和[开放数据协议](http://go.microsoft.com/fwlink/?LinkId=226000)。  
@@ -32,7 +29,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
--   支持的 Microsoft Windows 和 SharePoint 版本。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支持的 Microsoft Windows 和 SharePoint 版本。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]。  
   
@@ -82,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  中的地址框**添加服务引用**对话框框中，输入你的 SharePoint 站点的 URL，如**http://MySPSite**，然后选择**转**按钮。  
   
-     Silverlight 定位 SharePoint OData 服务 ListData.svc，它也将使用完整的服务的 URL 替换地址。 此示例中，http://myserver 变得 http://myserver/_vti_bin/ListData.svc。  
+     Silverlight 定位 SharePoint OData 服务 ListData.svc，它也将使用完整的服务的 URL 替换地址。 对于此示例，http://myserver变得http://myserver/_vti_bin/ListData.svc。  
   
 4.  选择**确定**按钮添加到项目中，服务引用，然后使用默认服务名称，ServiceReference1。  
   

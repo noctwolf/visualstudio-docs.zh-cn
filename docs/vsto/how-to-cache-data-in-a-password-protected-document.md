@@ -1,12 +1,10 @@
 ---
-title: "如何： 在受密码保护的文档中缓存数据 |Microsoft 文档"
-ms.custom: 
+title: 如何： 在受密码保护的文档中缓存数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 240debad9945c397290375f1931f4bce9ffa1f34
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 71ce65cd253ea6473a07a98542449a1e47ae9d7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：在受密码保护的文档中缓存数据
   如果数据添加到的数据缓存中的文档或使用密码保护的工作簿时，将不会自动保存对缓存数据的更改。 通过重写你的项目中的两种方法，可以将更改保存到缓存的数据。  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>在使用密码保护的 Excel 工作簿中缓存数据  
   
-1.  在`ThisWorkbook`类或之一`Sheet`  *n* 类中，标记的公共字段或属性将缓存。 有关更多信息，请参见 [Caching Data](../vsto/caching-data.md)。  
+1.  在`ThisWorkbook`类或之一`Sheet` *n*类中，标记的公共字段或属性将缓存。 有关更多信息，请参见 [Caching Data](../vsto/caching-data.md)。  
   
 2.  重写<xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A>中的方法`ThisWorkbook`类，并从该工作簿中删除保护。  
   

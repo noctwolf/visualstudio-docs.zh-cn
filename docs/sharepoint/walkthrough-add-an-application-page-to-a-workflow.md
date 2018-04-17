@@ -1,12 +1,10 @@
 ---
-title: "演练： 向工作流添加的应用程序页 |Microsoft 文档"
-ms.custom: 
+title: 演练： 向工作流添加的应用程序页 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - application page [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 86b402e1f8b8be3adf477d67eb11387fa3091afd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 97c720ded65e46e85f8d9f20f9f509b31f2cebbb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>演练：向工作流中添加应用程序页
   本演练演示如何添加显示派生自工作流到工作流项目的数据的应用程序页。 基于本主题所述的项目[演练： 创建带有关联和启动窗体的工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。  
@@ -337,7 +336,7 @@ ms.lasthandoff: 01/10/2018
   
 14. 重复步骤 11 13 共享文档列表中的其他文档。 （文档的精确数目并不重要。）  
   
-15. 通过在 Web 浏览器中打开以下 URL 显示费用报表汇总应用程序页： **http://***系统名称***/_layouts/ExpenseReport/ApplicationPage1.aspx**.  
+15. 通过在 Web 浏览器中打开以下 URL 显示费用报表汇总应用程序页： **http://***系统名称***/_layouts/ExpenseReport/ApplicationPage1.aspx**。  
   
      支出报表摘要页列出所有超过分配的量的费用报表、 它，超出的金额和所有报表的总金额。  
   

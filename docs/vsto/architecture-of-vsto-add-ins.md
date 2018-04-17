@@ -1,13 +1,10 @@
 ---
-title: "VSTO 外接程序的体系结构 |Microsoft 文档"
-ms.custom: 
+title: VSTO 外接程序的体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], architecture
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8abb77978731a9fa5cd43acdcb4928944c605b1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 94c8a9fa83cd4a37918c22ae0e38ab23c3ca94d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO 外接程序的体系结构
   使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序具有强调稳定性和安全性的体系结构功能，并使其能够与 Microsoft Office 紧密合作。 本主题介绍 VSTO 外接程序的以下方面：  
@@ -39,12 +36,12 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- 有关创建 VSTO 外接程序的常规信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)和[入门 VSTO 外接程序编程](../vsto/getting-started-programming-vsto-add-ins.md)。  
+ 有关创建 VSTO 外接程序的常规信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)和[获取启动 VSTO 外接程序编程](../vsto/getting-started-programming-vsto-add-ins.md)。  
   
 ##  <a name="UnderstandingAddIns"></a> 了解 VSTO 外接程序  
  使用 Visual Studio 中的 Office 开发人员工具生成 VSTO 外接程序时，将创建一个由 Microsoft Office 应用程序加载的托管代码程序集。 加载该程序集后，VSTO 外接程序可以响应在应用程序中引发的事件（例如，用户单击菜单项时）。 VSTO 外接程序也可以调入对象模型，以便实现应用程序自动化和扩展应用程序，并且它可以使用 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]中的任何类。  
   
- 程序集通过应用程序的主互操作程序集与应用程序的 COM 组件进行通信。 有关详细信息，请参阅[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)和[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ 程序集通过应用程序的主互操作程序集与应用程序的 COM 组件进行通信。 有关详细信息，请参阅[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)和[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  如果为应用程序安装了多个 VSTO 外接程序，那么，每个 VSTO 外接程序都会加载到不同的应用程序域中。 这意味着某个行为不正确的 VSTO 外接程序不会导致其他 VSTO 外接程序失败。 这还有助于确保在关闭应用程序时，所有 VSTO 外接程序程序集都将从内存中卸载。 有关应用程序域的详细信息，请参阅[应用程序域](/dotnet/framework/app-domains/application-domains)。  
   

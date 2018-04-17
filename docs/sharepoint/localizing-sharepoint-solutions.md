@@ -1,12 +1,10 @@
 ---
-title: "本地化 SharePoint 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 本地化 SharePoint 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7a1ca2b08bda0a3336b573da7df910872e13470b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>本地化 SharePoint 解决方案
   准备你的应用程序，以便它们可以全球范围内使用的过程被称为本地化。 本地化所转换到特定区域性的资源。 有关详细信息，请参阅[Globalizing 和本地化应用程序](/visualstudio/ide/globalizing-and-localizing-applications)。 本主题提供有关如何本地化 SharePoint 解决方案的概述。  
@@ -90,7 +89,7 @@ $Resources:String ID
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
- 例如:  
+ 例如:   
   
 ```  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  
@@ -102,7 +101,7 @@ $Resources:String ID
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
- 例如:  
+ 例如:   
   
 ```  
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
@@ -113,7 +112,7 @@ $Resources:String ID
 ### <a name="localizing-code"></a>本地化代码  
  除了本地化功能字符串和[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]标记中，你还需要本地化的消息字符串和解决方案代码中显示的错误字符串。 本地化的信息性和错误消息包含在附属程序集。 附属程序集包含用户均可见，如字符串[!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)]文本和输出消息，如异常。  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用标准.NET Framework 集散模型。 在中心或主程序程序集，包含的默认语言资源。 轮辐或附属程序集，包含特定于语言的资源。 有关详细信息，请参阅[打包和部署资源](http://go.microsoft.com/fwlink/?LinkId=179280)。 从资源 (.resx) 文件编译的附属程序集。 当将特定于语言的资源文件添加到你的项目和解决方案包中，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将资源文件编译到附属程序集中名为*项目名称*。 resources.dll。  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 使用标准.NET Framework 集散模型。 在中心或主程序程序集，包含的默认语言资源。 轮辐或附属程序集，包含特定于语言的资源。 有关详细信息，请参阅[打包和部署资源](http://go.microsoft.com/fwlink/?LinkId=179280)。 从资源 (.resx) 文件编译的附属程序集。 当将特定于语言的资源文件添加到你的项目和解决方案包中，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将资源文件编译到附属程序集中名为*项目名称*。 resources.dll。  
   
  与 ASPX 标记，通过将单独的资源文件项目项添加到你的项目; 本地化 SharePoint 应用程序代码一个用于默认语言，另一个用于每个本地化语言。 但是，如前所述，如果你已有用于本地化 ASPX 标记的资源文件，你可以重复使用它们来本地化代码。 如果你需要创建资源文件，请为默认语言资源文件提供一个带.resx 扩展名追加你选择的名称。 名称在相同的名称后追加的特定于语言的区域性的本地化的资源文件[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 设置为嵌入的资源，若要启用的附属资源程序集创建的每个资源文件的生成操作属性。  
   

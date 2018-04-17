@@ -1,12 +1,10 @@
 ---
-title: "概述的编程模型的 SharePoint 工具扩展 |Microsoft 文档"
-ms.custom: 
+title: 概述的编程模型的 SharePoint 工具扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,20 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8eaa1f5d1cfe8120ec6a01c2fe7f646cf90be44a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a52d05dd22ae88deecc2d79d3ab3de7d3c3b6344
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>SharePoint 工具扩展的编程模型的概述
   在 Visual Studio 中创建 SharePoint 工具扩展时，首先将实现由 SharePoint 工具公开的一个或多个扩展性接口。 在大多数情况下，你还将使用 SharePoint 工具提供的其他类型来实现扩展中的功能。 在某些方案中，你还可以使用 Visual Studio 和 SharePoint 提供的其他对象模型中的类型。 您必须了解每个这些对象模型的用途，并且知道如何使用它们彼此以创建 SharePoint 工具扩展。  
   
 ## <a name="extending-the-sharepoint-tools-by-implementing-extensibility-interfaces"></a>通过实现扩展性接口来扩展 SharePoint 工具  
- Visual Studio 使用 .NET Framework 4 中的 Managed Extensibility Framework (MEF) 为 SharePoint 工具提供扩展性模型。 MEF 是一个在 System.ComponentModel.Composition 程序集中实现的 API，它使应用程序能够公开扩展性点，并在运行时发现和加载扩展。 有关 MEF 的详细信息，请参阅[Managed Extensibility Framework &#40;MEF &#41;](/dotnet/framework/mef/index).  
+ Visual Studio 使用 .NET Framework 4 中的 Managed Extensibility Framework (MEF) 为 SharePoint 工具提供扩展性模型。 MEF 是一个在 System.ComponentModel.Composition 程序集中实现的 API，它使应用程序能够公开扩展性点，并在运行时发现和加载扩展。 有关 MEF 的详细信息，请参阅[Managed Extensibility Framework &#40;MEF&#41;](/dotnet/framework/mef/index)。  
   
  若要扩展 SharePoint 工具，请实现由 Visual Studio 公开的一个或多个扩展性接口。 必要时，你还必须将 <xref:System.ComponentModel.Composition.ExportAttribute> 和其他特定于 SharePoint 工具的特性应用于接口实现。 下表列出了一些接口，可实现这些接口以扩展 SharePoint 工具。  
   

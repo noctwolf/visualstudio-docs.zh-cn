@@ -1,12 +1,10 @@
 ---
-title: "为 SharePoint 创建 Web 部件 |Microsoft 文档"
-ms.custom: 
+title: 为 SharePoint 创建 Web 部件 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d0c5acfac06702894f67a8bfc1547462a0069e15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 52f35f095c91422f8882724074c54ad48edd88f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>为 SharePoint 创建 Web 部件
   通过使用 web 部件，可以使用浏览器来修改内容、 外观和行为的 SharePoint 站点的页。 Web 部件是在 web 部件页内运行的服务器端控件： 它们是在 SharePoint 站点显示的页的构建基块。 请参阅[构建基块： Web 部件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
@@ -105,7 +104,7 @@ ms.lasthandoff: 01/10/2018
  有关沙盒解决方案的详细信息，请参阅[差异之间沙盒解决方案和场解决方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)。  
   
 ## <a name="creating-older-style-sharepoint-based-web-parts"></a>创建旧样式的基于 SharePoint Web 部件  
- 你可以使用在 Visual Studio 中的模板来创建自定义[!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]for SharePoint web 部件。 [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]均构建在 web 部件之上[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]web 部件基础结构，并且为新项目的建议的类型。  
+ 你可以使用在 Visual Studio 中的模板来创建自定义[!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]for SharePoint web 部件。 [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] 均构建在 web 部件之上[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]web 部件基础结构，并且为新项目的建议的类型。  
   
  在极少数情况下，你可能需要使用较旧的形式的基于 SharePoint web 部件创建 web 部件。 你可以使用 Visual Studio 创建这些类型的 web 部件，但 Visual Studio 不提供任何专用于帮助你创建它们的模板。  
   

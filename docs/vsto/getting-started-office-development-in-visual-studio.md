@@ -1,13 +1,10 @@
 ---
-title: "入门 （Visual Studio 中的 Office 开发） |Microsoft 文档"
-ms.custom: 
+title: 入门 （Visual Studio 中的 Office 开发） |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, getting started
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04be00558cd3dd22cb9aa7546d6797778b1bae2c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2e0c945667f99fdd6df431413e3f1f96d06eca4b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-office-development-in-visual-studio"></a>入门（Visual Studio 中的 Office 开发）
   本部分包含可帮助你开始在 Visual Studio 中使用 Microsoft Office 开发人员工具的主题。  
@@ -31,7 +28,7 @@ ms.lasthandoff: 01/10/2018
 >  开发扩展的 Office 体验跨解决方案是否有兴趣[多个平台](https://dev.office.com/add-in-availability)？ 查看全新[Office 外接程序模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 外接程序具有内存占用较小与 VSTO 外接程序和解决方案，相比，并且你可以通过使用几乎任何 web 编程技术，例如 HTML5、 JavaScript、 CSS3 和 XML 生成它们。  
   
 ## <a name="in-this-section"></a>本节内容  
- [Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  提供用于在 Visual Studio 中开发 Office 解决方案的背景信息。  
   
  [面向 .NET Framework 4 或 .NET Framework 4.5 的 Office 项目设计更改](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  

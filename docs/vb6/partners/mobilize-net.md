@@ -1,11 +1,10 @@
 ---
-title: "调动.Net 的 Visual Basic 升级助理 (VBUC) |Microsoft 文档"
-description: "调动有关从 Visual Basic 6 迁移到 Visual Basic.NET 和 C#.Net 的工具"
+title: 调动.Net 的 Visual Basic 升级助理 (VBUC) |Microsoft 文档
+description: 调动有关从 Visual Basic 6 迁移到 Visual Basic.NET 和 C#.Net 的工具
 ms.date: 09/05/2017
 ms.technology:
 - devlang-vb
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - visual-basic
 author: rpetrusha
@@ -13,11 +12,11 @@ ms.author: ronpet
 manager: wpickett
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7fa2a16143368b829f29f43a4c8f60536b55c52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d80fa0e2f00ec9ea834483e8dd2c5c262a5eea0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobilizenets-visual-basic-upgrade-companion-vbuc"></a>调动.Net 的 Visual Basic 升级助理 (VBUC)
 
@@ -87,7 +86,7 @@ Visual Basic 升级助理包括大量的强大的功能和代码转换过程中�
 有关更新、 更详细的功能的列表，请访问[VBUC 的技术站点](http://www.vbtonet.com/?msdn)。
 
 ## <a name="learn-more-and-try-it-for-yourself"></a>了解详细信息并亲自尝试
-了解更多有关 VBUC、 读取客户证据，访问白皮书、 视频和 webcast 或下载在 http://www.mobilize.net/solution/msdn 免费试用版。
+了解有关 VBUC、 读取客户证据、 访问白皮书、 视频和 webcast 或下载免费http://www.mobilize.net/solution/msdn。
 
 ## <a name="additional-resources"></a>其他资源
 

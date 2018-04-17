@@ -1,13 +1,10 @@
 ---
-title: "入门 VSTO 外接程序编程 |Microsoft 文档"
-ms.custom: 
+title: 入门 VSTO 外接程序编程 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Outlook
 dev_langs:
@@ -18,17 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], getting started
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f395ce7fb85d71ed6e8c3f7dfb10726907832873
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: fb257a709f2f81f124e2510403a9d6853180a56b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-programming-vsto-add-ins"></a>Getting Started Programming VSTO Add-ins
-  你可以使用 VSTO 外接程序来实现 Microsoft Office 应用程序自动化、扩展应用程序的功能，以及自定义应用程序的用户界面 (UI)。 可以通过使用 Visual Studio 创建 VSTO 外接程序如何与其他类型的 Office 解决方案进行比较有关信息，请参阅[Office 解决方案开发概述 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  你可以使用 VSTO 外接程序来实现 Microsoft Office 应用程序自动化、扩展应用程序的功能，以及自定义应用程序的用户界面 (UI)。 可以通过使用 Visual Studio 创建 VSTO 外接程序如何与其他类型的 Office 解决方案进行比较有关信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
@@ -62,7 +59,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="customizing-the-user-interface-of-applications"></a>自定义应用程序的用户界面  
  通过使用 VSTO 外接程序，可采用多种方式来自定义主机应用程序的 UI：  
   
--   对于 Excel 和 Word，可以向文档中添加托管控件。 有关更多信息，请参见 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+-   对于 Excel 和 Word，可以向文档中添加托管控件。 有关更多信息，请参见 [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 -   如果应用程序支持功能区，则你可以自定义它。 有关详细信息，请参阅[功能区概述](../vsto/ribbon-overview.md)。  
   
@@ -93,7 +90,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>请参阅  
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [入门 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   
  [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  
