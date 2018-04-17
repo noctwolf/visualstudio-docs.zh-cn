@@ -2,26 +2,22 @@
 title: 演练： 显示签名帮助 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-caps.latest.revision: 28
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced0eb5d3545a75ee31cff55d0e4fb9dab8c8bcb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a714fdb268f44fd2a65d04184d899ced3de53bb9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-signature-help"></a>演练： 显示签名帮助
 签名帮助 (也称为*参数信息*) 用户键入的参数列表的起始字符 （通常是一个左括号） 时，将显示工具提示中的方法的签名。 参数和参数分隔符 （通常为逗号） 已类型化，工具提示会更新以显示下一个参数以粗体显示。 你可以定义签名帮助语言服务上下文中或可以定义你自己的文件名称扩展和内容类型，并显示只是该类型的签名帮助或可以为现有的内容类型 （例如，"文本"） 显示签名帮助。 本演练演示如何显示为"text"的内容类型的签名帮助。  
@@ -250,5 +246,5 @@ ms.lasthandoff: 12/22/2017
   
 4.  键入左括号后，你应看到显示的两个签名列表的工具提示`add()`方法。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

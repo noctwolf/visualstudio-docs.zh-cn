@@ -2,28 +2,24 @@
 title: SccSetOption 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccSetOption
 helpviewer_keywords:
 - SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70fe624984adce58191ee7d354185eac0bb527ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 916378ea594d14c9493535b3a28e72ea49ed4733
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函数
 此函数设置控制的插件的源控件的行为的选项。  
@@ -51,7 +47,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功设置选项。|  
 |SCC_I_SHARESUBPROJOK|时返回`nOption`已`SCC_OPT_SHARESUBPROJ`和源代码管理插件允许 IDE 以设置目标文件夹。|  
@@ -75,7 +71,7 @@ SCCRTN SccSetOption(
  如果`nOption`是`SCC_OPT_EVENTQUEUE`，禁用 （或重新启用） IDE 后台处理。 例如，在编译期间 IDE 可能指示源代码管理插件以停止在空闲处理的任何类型。 编译之后, 它会重新启用保持即插即用接程序的事件队列中最新的后台处理。 对应于`SCC_OPT_EVENTQUEUE`值`nOption`，有两个可能值`dwVal`，也就是说，`SCC_OPT_EQ_ENABLE`和`SCC_OPT_EQ_DISABLE`。  
   
 ## <a name="sccopthascancelmode"></a>SCC_OPT_HASCANCELMODE  
- 如果值`nOption`是`SCC_OPT_HASCANCELMODE`，IDE 允许用户取消长时间运行。 设置`dwVal`到`SCC_OPT_HCM_NO`（默认值） 指示 IDE 提供无取消模式。 如果想要能够取消用户，源代码管理插件必须提供其自己的取消按钮。 `SCC_OPT_HCM_YES`指示 IDE 提供取消操作，因此 SCC 插件不需要显示其自己的取消按钮的功能。 如果 IDE 设置`dwVal`到`SCC_OPT_HCM_YES`，它已准备好响应`SCC_MSG_STATUS`和`DOCANCEL`消息发送到`lpTextOutProc`回调函数 (请参阅[LPTEXTOUTPROC](../extensibility/lptextoutproc.md))。 如果 IDE 未设置此变量，该插件发送不应这两条消息。  
+ 如果值`nOption`是`SCC_OPT_HASCANCELMODE`，IDE 允许用户取消长时间运行。 设置`dwVal`到`SCC_OPT_HCM_NO`（默认值） 指示 IDE 提供无取消模式。 如果想要能够取消用户，源代码管理插件必须提供其自己的取消按钮。 `SCC_OPT_HCM_YES` 指示 IDE 提供取消操作，因此 SCC 插件不需要显示其自己的取消按钮的功能。 如果 IDE 设置`dwVal`到`SCC_OPT_HCM_YES`，它已准备好响应`SCC_MSG_STATUS`和`DOCANCEL`消息发送到`lpTextOutProc`回调函数 (请参阅[LPTEXTOUTPROC](../extensibility/lptextoutproc.md))。 如果 IDE 未设置此变量，该插件发送不应这两条消息。  
   
 ## <a name="sccoptnamechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
  如果 nOption 设置为`SCC_OPT_NAMECHANGEPFN`，和这两个源控件插件和 IDE 允许它，该插件可以实际重命名或移动的文件在源代码管理操作过程。 `dwVal`将设置为类型的函数指针[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)。 在源代码管理操作，该插件可以调用此函数，并在三个参数传递。 这些是文件的旧名称 （带有完全限定路径），该文件中，以及指向相关 IDE 的信息的指针 （带有完全限定路径） 的新名称。 IDE 将发送此最后一个指针在通过调用`SccSetOption`与`nOption`设置为`SCC_OPT_USERDATA`，与`dwVal`指向数据。 支持此函数是可选的。 VSSCI 即插即用-可使用此功能必须将初始化为其函数指针和用户数据变量`NULL`，并且它必须不会调用重命名功能，除非它已被授予一个。 它应还准备保留为其指定的值或更改以响应对的新调用`SccSetOption`。 此操作不会在源代码管理命令操作，但它可能会发生命令之间。  
@@ -86,7 +82,7 @@ SCCRTN SccSetOption(
 ## <a name="sccoptsharesubproj"></a>SCC_OPT_SHARESUBPROJ  
  如果`nOption`设置为`SCC_OPT_SHARESUBPROJ`，IDE 是否正在测试是否从源代码管理中添加文件时，源代码管理插件可以使用指定的本地文件夹。 值`dwVal`参数在此情况下并不重要。 如果该插件允许 IDE 以指定文件会添加从源的位置的本地目标文件夹控制[SccAddFromScc](../extensibility/sccaddfromscc-function.md)调用，则该插件必须返回`SCC_I_SHARESUBPROJOK`时`SccSetOption`技术支持部门调用。 然后使用 IDE`lplpFileNames`参数`SccAddFromScc`函数传递目标文件夹中。 该插件使用该目标文件夹将添加从源代码管理中的文件。 如果该插件不返回`SCC_I_SHARESUBPROJOK`时`SCC_OPT_SHARESUBPROJ`设置选项，则 IDE 假定该插件是否能够将文件添加仅在当前的本地文件夹中。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   

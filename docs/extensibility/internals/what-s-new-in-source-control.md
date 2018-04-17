@@ -1,32 +1,30 @@
 ---
-title: "什么 &#39; s 源代码管理中的新增功能 |Microsoft 文档"
-ms.custom: 
+title: 什么&#39;源代码管理中的新增功能的 s |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9fc1c5956a4d3c20f8b9abec36d554f3ec56c8c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b46730ab1acac6605af2e1ff1c418dbe8c886406
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-source-control"></a>什么 &#39; s 源代码管理中的新增功能
+# <a name="what39s-new-in-source-control"></a>什么&#39;s 源代码管理中的新增功能
 在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]你可以通过实现 VSPackage 的源控件提供深入地集成的源代码管理解决方案。 此部分描述源控件 Vspackage 的功能，并提供的实现步骤概述。  
   
 ## <a name="the-source-control-vspackage"></a>源控件 VSPackage  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支持两种类型的源控制解决方案。 在所有版本的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，仍可以将集成基于源控制插件 API 的插件。 你还可以创建用于源代码管理提供深层集成 VSPackage[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]适合需要的复杂程度和自主性高级别的源控制解决方案的路径。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持两种类型的源控制解决方案。 在所有版本的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，仍可以将集成基于源控制插件 API 的插件。 你还可以创建用于源代码管理提供深层集成 VSPackage[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]适合需要的复杂程度和自主性高级别的源控制解决方案的路径。  
   
  VSPackage 可以添加几乎任何类型的功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 源代码管理 VSPackage 提供的完整源代码管理功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，从显示到与源代码管理系统的后端通信的用户的 UI。  
   
@@ -46,7 +44,7 @@ ms.lasthandoff: 12/22/2017
   
 6.  您的源代码管理 VSPackage 必须侦听事件如实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>接口以及跟踪项目文档 (TPD) 事件 (的实施方式<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>接口) 并采取必要措施。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   

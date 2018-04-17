@@ -1,31 +1,29 @@
 ---
-title: "消息枚举器 |Microsoft 文档"
-ms.custom: 
+title: 消息枚举器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6a24db9c50bd298f068c23af0b6bad5755ec252d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bc945908ac61a0eaa4df49c76725b2291686eac3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="message-enumerator"></a>消息枚举器
 以下标志用于`TEXTOUTPROC`函数，这是一个 IDE 提供时，它调用的回调函数[SccOpenProject](../extensibility/sccopenproject-function.md) (请参阅[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)有关回调的详细信息函数）。  
   
- 如果 IDE 需要取消该过程，它可能会收到一条取消消息。 在这种情况下，源代码管理插件使用`SCC_MSG_STARTCANCEL`提出 IDE 以显示**取消**按钮。 此后，可能会发送普通消息的任何集。 如果任何这些返回`SCC_MSG_RTN_CANCEL`，则该插件会退出该操作并返回。 插件还轮询`SCC_MSG_DOCANCEL`定期以确定用户已取消该操作。 完成的所有操作，或如果用户已取消，插件将发送时`SCC_MSG_STOPCANCEL`。 `SCC_MSG_INFO`，SCC_MSG_WARNING，和 SCC_MSG_ERROR 类型用于消息滚动列表中显示的消息。 `SCC_MSG_STATUS`是一种特殊类型，该值指示，文本应显示在状态栏或临时的显示区域中。 它不会保留永久列表中。  
+ 如果 IDE 需要取消该过程，它可能会收到一条取消消息。 在这种情况下，源代码管理插件使用`SCC_MSG_STARTCANCEL`提出 IDE 以显示**取消**按钮。 此后，可能会发送普通消息的任何集。 如果任何这些返回`SCC_MSG_RTN_CANCEL`，则该插件会退出该操作并返回。 插件还轮询`SCC_MSG_DOCANCEL`定期以确定用户已取消该操作。 完成的所有操作，或如果用户已取消，插件将发送时`SCC_MSG_STOPCANCEL`。 `SCC_MSG_INFO`，SCC_MSG_WARNING，和 SCC_MSG_ERROR 类型用于消息滚动列表中显示的消息。 `SCC_MSG_STATUS` 是一种特殊类型，该值指示，文本应显示在状态栏或临时的显示区域中。 它不会保留永久列表中。  
   
 ## <a name="syntax"></a>语法  
   
@@ -71,6 +69,6 @@ enum {
  SCC_MSG_STOPCANCEL  
  停止取消循环。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件](../extensibility/source-control-plug-ins.md)   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

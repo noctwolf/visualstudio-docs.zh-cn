@@ -1,26 +1,24 @@
 ---
-title: "测试区域 7： 共享 |Microsoft 文档"
-ms.custom: 
+title: 测试区域 7： 共享 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], sharing items
 - source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f87ff08ea8d5e325ac66d923300927b59ab06452
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: fa74d6ff2291288a1ca0e7f17a2edb1e126f222b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-7-share"></a>测试区域 7： 共享
 此测试区域涉及通过位置之间的共享项**共享**命令。  
@@ -62,5 +60,5 @@ ms.lasthandoff: 12/22/2017
 |加载的项目到共享的文件夹，递归|1.创建新项目。<br />2.将解决方案添加到源代码管理。<br />3.选择的项目。<br />4.打开**共享**对话框 (**文件** -> **源代码管理** -> **共享**)。<br />5.选择的文件夹。<br />6.项目到共享文件夹以递归方式。|常见的预期的行为。|  
 |共享到另一个项目中的多个文件|1.使用在其中的多个文件创建新项目。<br />2.将解决方案添加到源代码管理。<br />3.关闭解决方案。<br />4.在新的解决方案中创建新项目。<br />5.将解决方案添加到源代码管理。<br />6.选择的项目。<br />7.打开**共享**对话框 (**文件** -> **源代码管理** -> **共享**)。<br />8.共享多个文件从以前创建的项目到当前打开的项目。|常见的预期的行为。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

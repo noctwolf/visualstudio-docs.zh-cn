@@ -1,23 +1,21 @@
 ---
-title: "读取模型和其他 Visual Studio 版本中的关系图 |Microsoft 文档"
-ms.custom: 
+title: 读取模型和其他 Visual Studio 版本中的关系图 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bec543b7adbf4ea27dca40be4ba51dc0eb622669
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0b25a69293e98ffb56c3536683837d1320fea319
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中读取模型和关系图
 如果你在一个不支持创建模型的 Visual Studio 中打开模型，该模型将以只读模式打开。 在此模式下，你可以更改的关系图的布局，但不能更改该模型。  
@@ -54,11 +52,11 @@ ms.lasthandoff: 02/09/2018
   
  你可以保存这些更改。 如果你想要使所做的更改对其他用户可见，则必须至少发送更新**.layout**文件。  
   
-##  <a name="RelatedTopics"></a>相关的主题  
+##  <a name="RelatedTopics"></a> 相关的主题  
   
 |标题|描述|  
 |-----------|-----------------|  
 |[依赖项关系图：参考](../modeling/layer-diagrams-reference.md)|层关系图显示现有或建议的体系结构的结构。 写入代码后，可以自动依照层关系图对代码进行验证。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [为应用程序创建模型](../modeling/create-models-for-your-app.md)

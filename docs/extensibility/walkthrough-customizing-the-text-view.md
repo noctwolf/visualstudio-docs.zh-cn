@@ -2,26 +2,22 @@
 title: 演练： 自定义文本视图 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - customizing the view
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
-caps.latest.revision: 22
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ecbf5e3bed5ba506278f00b2b5b0b76f8f02850a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4fb4762a422102b91c44d755d387168ab0572f2a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>演练： 自定义文本视图
 你可以通过修改其编辑器格式映射中的下列属性的任何自定义文本视图：  
@@ -60,9 +56,9 @@ ms.lasthandoff: 12/22/2017
   
 3.  声明一个名为类`TestViewCreationListener`继承自<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>。 导出此类具有以下属性：  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>若要指定的内容应用到此侦听器的类型。  
+    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 若要指定的内容应用到此侦听器的类型。  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>若要指定该侦听器的角色。  
+    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 若要指定该侦听器的角色。  
   
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]  
@@ -97,5 +93,5 @@ ms.lasthandoff: 12/22/2017
   
 5.  打开可见空白。 (在**编辑**菜单上，指向**高级**，然后单击**查看空白**)。 键入文本中的某些选项卡。 应显示红色箭头表示选项卡。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

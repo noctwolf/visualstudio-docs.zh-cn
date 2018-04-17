@@ -1,29 +1,27 @@
 ---
-title: "依赖项关系图扩展疑难解答 |Microsoft 文档"
-ms.custom: 
+title: 依赖项关系图扩展疑难解答 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, extension errors
 - dependency diagrams, troubleshooting extensions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 21a14ed32bb1b63e2363736e438139479ff5bf60
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b546fa6a858ed959d93d4ec388c7bb8fb913864f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>依赖项关系图扩展疑难解答
 本主题解决了你在创建层模型扩展时可能会遇到的一些问题。  
   
-#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-includevsprvscode-qualityincludesvsprvsmdmd"></a>当我按 F5 调试我的扩展时，我命令、 笔势处理程序、 验证扩展或自定义属性不显示在实验实例中的依赖项关系图[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-includevsprvscode-qualityincludesvsprvsmdmd"></a>当我按 F5 调试我的扩展时，我命令、 笔势处理程序、 验证扩展或自定义属性不显示在实验实例中的依赖项关系图 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
   
 1.  在实验实例中的打开扩展解决方案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，然后在**生成**菜单上，单击**重新生成解决方案**。  
   
@@ -52,5 +50,5 @@ ms.lasthandoff: 02/09/2018
   
 4.  在**source.extension.vsixmanifest**在层验证项目中，请确保你已添加同时**MEF 组件**项和**自定义扩展类型**项下面**内容**。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [扩展依赖项关系图](../modeling/extend-layer-diagrams.md)

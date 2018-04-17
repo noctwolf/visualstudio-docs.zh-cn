@@ -1,27 +1,25 @@
 ---
-title: "升级项目 |Microsoft 文档"
-ms.custom: 
+title: 升级项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cb64d71a50cb59a3c981dd87695bbb685f793761
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-projects"></a>升级项目
 一个版本的模型更改为项目模型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]到下一个可能需要项目和解决方案进行升级以便它们可以在较新版本上运行。 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]提供可以用于在您自己的项目中实现升级支持的接口。  
@@ -57,7 +55,7 @@ ms.lasthandoff: 12/22/2017
   
  有关备份并将项目升级的详细信息，请参阅注释为 IVsProjectUpgrade vsshell2.idl 中。  
   
-## <a name="upgrading-custom-projects"></a>升级自定义项目
+## <a name="upgrading-custom-projects"></a> 升级自定义项目
 如果你更改保留在产品的不同 Visual Studio 版本之间的项目文件中的信息，则你需要支持将项目文件从旧版本升级到新版本。 若要支持升级，您可以参与**Visual Studio 转换向导**，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>接口。 此接口包含可用于复制升级的唯一机制。 项目的升级作为解决方案打开的一部分而发生。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>接口由项目工厂实现或至少应为可获得从项目工厂。  
   
  使用的旧机制<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>接口仍受支持，但从概念上讲作为项目打开的一部分升级项目系统。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>接口因此由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]环境即使<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>调用或实现接口。 此方法允许你使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>实现复制项目的升级时，仅部分并通过委托进行就地 （可能在新的位置） 工作的其余部分<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>接口。  
@@ -92,7 +90,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  使用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger>发布升级相关的用户使用 Visual Studio 迁移向导的消息。  
   
-6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade>接口用于实现需作为项目升级的一部分发生的文件升级任何类型。 此接口不能从调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>，但会将其作为一种机制来升级属于项目系统中，但主项目系统的文件可能不是直接感知到。 例如，如果编译器相关文件和属性未由处理项目系统其余部分的同一开发团队处理，则可能会发生这种情况。  
+6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> 接口用于实现需作为项目升级的一部分发生的文件升级任何类型。 此接口不能从调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>，但会将其作为一种机制来升级属于项目系统中，但主项目系统的文件可能不是直接感知到。 例如，如果编译器相关文件和属性未由处理项目系统其余部分的同一开发团队处理，则可能会发生这种情况。  
   
 ### <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade 实现  
  如果你的项目系统实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>仅，它不能参与**Visual Studio 转换向导**。 但是，即使你实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>接口，你可以仍将文件升级委派到<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>实现。  
@@ -176,5 +174,5 @@ ms.lasthandoff: 12/22/2017
   
 2.  在时您的项目项获取的项目升级时，通知**Visual Studio 转换向导**仍显示。 因此，应使用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger>接口，以提供到向导 UI 升级的消息。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [项目](../../extensibility/internals/projects.md)   

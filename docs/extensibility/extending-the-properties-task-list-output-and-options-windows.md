@@ -1,12 +1,10 @@
 ---
-title: "扩展属性、 任务列表、 输出和选项 Windows |Microsoft 文档"
-ms.custom: 
+title: 扩展属性、 任务列表、 输出和选项 Windows |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
 - task list
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 631c336d0350fdf8a43d747eb6bda7b01e9d1eba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4db9bb9101bd06921814132856fab0335a4a2530
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>扩展属性、 任务列表、 输出和选项 Windows
 你可以访问 Visual Studio 中的任何工具窗口。 本演练演示如何将工具窗口有关的信息集成到一个新**选项**页和上的新设置**属性**页上，以及如何将写入到**任务列表**和**输出**windows。  
@@ -150,7 +148,7 @@ ms.lasthandoff: 12/22/2017
   
      可供用户工具窗口时，将由 TodoItems 表示列表框中的项。 当用户选择其中一项在列表框中，**属性**窗口将显示有关项目的信息。  
   
-     若要使数据中可用**属性**窗口中，你将数据转换为具有两个的特殊属性的公共属性`Description`和`Category`。 `Description`是的底部将显示的文本**属性**窗口。 `Category`确定属性应显示时**属性**窗口显示在**按分类顺序**视图。 在下面的图中，**属性**窗口处于**按分类顺序**视图中，**名称**中的属性**ToDo 字段**类别选择，和的描述**名称**属性显示在窗口的底部。  
+     若要使数据中可用**属性**窗口中，你将数据转换为具有两个的特殊属性的公共属性`Description`和`Category`。 `Description` 是的底部将显示的文本**属性**窗口。 `Category` 确定属性应显示时**属性**窗口显示在**按分类顺序**视图。 在下面的图中，**属性**窗口处于**按分类顺序**视图中，**名称**中的属性**ToDo 字段**类别选择，和的描述**名称**属性显示在窗口的底部。  
   
      ![属性窗口](../extensibility/media/t5properties.png "T5Properties")  
   

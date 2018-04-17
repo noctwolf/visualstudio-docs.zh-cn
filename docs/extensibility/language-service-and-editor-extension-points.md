@@ -2,26 +2,22 @@
 title: 语言服务和编辑器扩展点 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
-caps.latest.revision: 33
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e62f1f3cac8f279dedbc79f283b908119d66ff2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3c253ba52da1fd6bb9133e44ba6858e8f1a4151
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="language-service-and-editor-extension-points"></a>语言服务和编辑器扩展点
 该编辑器还提供可扩展作为 Managed Extensibility Framework (MEF) 组件部分，包括大多数语言服务功能的扩展点。 主要扩展点类别如下：  
@@ -47,9 +43,9 @@ ms.lasthandoff: 12/22/2017
 ## <a name="extending-content-types"></a>扩展内容类型  
  内容类型是类型的文本，例如由编辑器、"text"、"代码"或"CSharp"的定义。 通过声明类型的变量的定义新的内容类型<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>并向新的内容类型提供一个唯一的名称。 要使用编辑器中注册内容类型，请将其导出以及以下特性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>是的内容类型的名称。  
+-   <xref:Microsoft.VisualStudio.Utilities.NameAttribute> 是的内容类型的名称。  
   
--   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>是从中派生此内容类型的内容类型的名称。 内容类型可以从多个其他内容的类型继承。  
+-   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> 是从中派生此内容类型的内容类型的名称。 内容类型可以从多个其他内容的类型继承。  
   
  因为<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>类为密封类，则可以将它导出使用任何类型参数。  
   
@@ -298,7 +294,7 @@ internal IViewTagAggregatorFactoryService ViewTagAggregatorFactoryService { get;
   
 -   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>： 这将导致要在 UI 中显示的格式  
   
- 在构造函数中，可定义的显示名称和标记的外观。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A>定义填充颜色，和<xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A>定义的边框颜色。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A>是可本地化名称的格式定义。  
+ 在构造函数中，可定义的显示名称和标记的外观。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> 定义填充颜色，和<xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A>定义的边框颜色。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A>是可本地化名称的格式定义。  
   
  下面是格式定义的示例：  
   
@@ -346,7 +342,7 @@ internal AdornmentLayerDefinition testLayerDefinition;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 此类内容 （例如，"text"或"代码"） 修饰的有效。  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>： 此修饰的有效的文本视图的类型。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>具有一组预定义的文本视图角色。 例如，<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>主要用于文本的文件的视图。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>用于在用户可以编辑或使用鼠标和键盘导航的文本视图。 示例<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>视图是编辑器文本视图和**输出**窗口。  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>： 此修饰的有效的文本视图的类型。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>具有一组预定义的文本视图角色。 例如，<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>主要用于文本的文件的视图。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 用于在用户可以编辑或使用鼠标和键盘导航的文本视图。 示例<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>视图是编辑器文本视图和**输出**窗口。  
   
  下面的示例演示导出特性修饰提供程序。  
   
@@ -374,7 +370,7 @@ internal AdornmentLayerDefinition testAdornmentLayer;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 你修饰的有效内容 （例如，"text"或"代码"） 的类型。  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>： 此文本视图种标记或修饰是否有效。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>具有一组预定义的文本视图角色。 例如，<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>主要用于文本的文件的视图。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>用于在用户可以编辑或使用鼠标和键盘导航的文本视图。 示例<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>视图是编辑器文本视图和**输出**窗口。  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>： 此文本视图种标记或修饰是否有效。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>具有一组预定义的文本视图角色。 例如，<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>主要用于文本的文件的视图。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 用于在用户可以编辑或使用鼠标和键盘导航的文本视图。 示例<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>视图是编辑器文本视图和**输出**窗口。  
   
 -   <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>： 类型的标记或已定义的修饰。 你必须添加第二个<xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>为<xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>。  
   
@@ -514,7 +510,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource>已弃用鉴于<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 已弃用鉴于<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
   
  此外，你必须实现一种相同类型的提供商：  
   
@@ -527,7 +523,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider>已弃用鉴于<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 已弃用鉴于<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。  
   
  你必须导出该提供程序以及以下特性：  
   

@@ -1,24 +1,22 @@
 ---
-title: "向依赖项关系图添加命令和笔势 |Microsoft 文档"
-ms.custom: 
+title: 向依赖项关系图添加命令和笔势 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5a8f1a2ff8e5ffc95d885b847a17e6cc16965837
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 276098a2c288f98441e8a111ed8807e22d5cfda2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>向依赖项关系图添加命令和笔势
 你可以定义上下文菜单命令和笔势处理程序在 Visual Studio 中的依赖项关系图上。 可以将这些扩展打包到 Visual Studio 集成扩展 (VSIX) 中，以便将其分发给其他 Visual Studio 用户。  
@@ -28,7 +26,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  你还可以自定义体系结构验证，在其中对用户的源中的代码进行比较和依赖项关系图。 应在单独的 Visual Studio 项目中定义体系结构验证。 你可以将其添加到其他扩展所在的同一 VSIX 中。 有关详细信息，请参阅[向依赖项关系图添加自定义体系结构验证](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  请参阅 [要求](../modeling/extend-layer-diagrams.md#prereqs)。  
   
 ## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>在新的 VSIX 中定义命令或笔势  
@@ -262,6 +260,6 @@ namespace MyLayerExtensions // change to your preference
 -   已为某些类型的拖动项定义了处理程序。 例如，用户可以将项从解决方案资源管理器拖动到依赖项关系图。 无法为这些类型的项定义拖动处理程序。 在这些情况下，不会调用 `DragDrop` 方法。  
   
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [导航和更新在程序代码中的层模型](../modeling/navigate-and-update-layer-models-in-program-code.md)   
  [向依赖项关系图添加自定义体系结构验证](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   

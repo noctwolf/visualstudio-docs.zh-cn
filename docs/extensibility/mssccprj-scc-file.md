@@ -1,26 +1,24 @@
 ---
-title: "MSSCCPRJ。SCC 文件 |Microsoft 文档"
-ms.custom: 
+title: MSSCCPRJ。SCC 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ef076a93d27cc2c133404d6fe6463d32cb449956
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ。SCC 文件
 Visual Studio 解决方案或项目置于受源代码管理使用 IDE 后，IDE 会从源代码管理插件中字符串的形式接收两个关键信息。 两个字符串，"AuxPath"和"ProjName"是不透明的 IDE 中，但它们用于由该插件在版本控制中找到解决方案或项目。 IDE 通常获取这些字符串首次通过调用[SccGetProjPath](../extensibility/sccgetprojpath-function.md)，它然后将它们保存在解决方案或项目文件中以便将来调用[SccOpenProject](../extensibility/sccopenproject-function.md)。 当嵌入的解决方案和项目文件中，"AuxPath"和"ProjName"字符串不会自动更新用户分支，分叉，或将复制解决方案和项目版本控制中的文件时。 若要确保解决方案和项目文件指向它们在版本控制中的正确位置，用户必须手动更新的字符串。 由于字符串要作为不透明，它可能不始终会清除它们的更新方式。  
@@ -46,23 +44,23 @@ Visual Studio 解决方案或项目置于受源代码管理使用 IDE 后，IDE 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>举例说明了 MSSCCPRJ。SCC 文件格式  
  以下是 MSSCCPRJ 一个示例。SCC 文件格式 （仅提供作为指南，和不应在文件正文中包含的行号）：  
   
- [第 1 行]`SCC = This is a Source Code Control file`  
+ [第 1 行] `SCC = This is a Source Code Control file`  
   
  [第 2 行]  
   
- [第 3 行]`[TestApp.sln]`  
+ [第 3 行] `[TestApp.sln]`  
   
- [第 4 行]`SCC_Aux_Path = "\\server\vss\"`  
+ [第 4 行] `SCC_Aux_Path = "\\server\vss\"`  
   
- [第 5 行]`SCC_Project_Name = "$/TestApp"`  
+ [第 5 行] `SCC_Project_Name = "$/TestApp"`  
   
  [第 6 行]  
   
- [第 7 行]`[TestApp.csproj]`  
+ [第 7 行] `[TestApp.csproj]`  
   
- [第 8 行]`SCC_Aux_Path = "\\server\vss\"`  
+ [第 8 行] `SCC_Aux_Path = "\\server\vss\"`  
   
- [第 9 行]`SCC_Project_Name = "$/TestApp"`  
+ [第 9 行] `SCC_Project_Name = "$/TestApp"`  
   
  第一个行状态的文件的用途，并且用作此类型的所有文件的签名。 此行应显示在所有 MSSCCPRJ 完全一样。SCC 文件：  
   
@@ -76,6 +74,6 @@ Visual Studio 解决方案或项目置于受源代码管理使用 IDE 后，IDE 
   
  到此部分没有结束分隔符。 Scc.h 标头文件中定义的文件，以及在文件中，显示的所有文本的名称。 有关详细信息，请参阅[字符串用作密钥用于查找源代码管理插件](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件](../extensibility/source-control-plug-ins.md)   
  [作为用于查找源代码管理插件的密钥的字符串](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

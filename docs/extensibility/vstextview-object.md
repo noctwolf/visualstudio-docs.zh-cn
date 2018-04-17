@@ -2,29 +2,25 @@
 title: VSTextView 对象 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTextView
 helpviewer_keywords:
 - VSTextView object, reference
 - views [Visual Studio SDK], reference
 ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
-caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f169c3302b3e6fd72e5017193e34836ed3e5340e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5be89d01a668fd05e70e73e31ffaf3742317c272
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vstextview-object"></a>VSTextView 对象
 文本视图是一个窗口，允许用户查看和编辑文本缓冲区的 Unicode 文本。 从根本上来说，该视图是大多数用户所称为的编辑器。 由于各种文本层 （自动换行、 大纲显示文本等） 的情况下，该视图从缓冲区分开的视图不保证可精确地表示的缓冲区中的文本。 有关文本视图的详细信息，请参阅[使用旧版 API 访问文本视图](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
@@ -38,12 +34,12 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|标准 OLE 接口。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|标准 OLE 接口。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|允许创建复合操作 （即，在单个撤消/重做单元进行分组的操作）。|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|用于管理和访问视图中提供的基本方法。 `IVsTextView`不是线程安全的。|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|用于管理和访问视图中提供的基本方法。 `IVsTextView` 不是线程安全的。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|创建和管理窗口窗格。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|与文本层交互。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|来自不同线程中执行视图上的操作。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [数字编辑](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
  [VSTextBuffer 对象](../extensibility/vstextbuffer-object.md)   
  [通过使用旧版 API 访问文本视图](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

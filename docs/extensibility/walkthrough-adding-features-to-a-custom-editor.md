@@ -2,26 +2,22 @@
 title: 演练： 将功能添加到自定义编辑器 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-caps.latest.revision: 38
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c207b80686a66d9a06b8c50321b4dce2257ada
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 14642a13553f3c4a09b86daa2d7638183fe7d8d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>演练： 将功能添加到自定义编辑器
 创建自定义编辑器后，你可以向其添加更多的功能。  
@@ -148,7 +144,7 @@ ms.lasthandoff: 12/22/2017
   
 -   若要防止出现拥挤的 UI 中的菜单命令，你应使用的现有命令在 IDE 中之前在发明新的命令。 共享的命令 SharedCmdDef.vsct 和 ShellCmdDef.vsct 中定义。 这些文件安装的 VisualStudioIntegration\Common\Inc 子目录中的默认情况下你[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]安装。  
   
--   `ISelectionContainer`可以表示单个和多个选择。 每个选定的对象作为实现`IDispatch`对象。  
+-   `ISelectionContainer` 可以表示单个和多个选择。 每个选定的对象作为实现`IDispatch`对象。  
   
 -   IDE 实现`IOleUndoManager`作为服务从可访问<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>或对象可通过实例化<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>。 编辑器实现`IOleUndoUnit`每个接口`Undo`操作。  
   
@@ -158,6 +154,6 @@ ms.lasthandoff: 12/22/2017
   
     -   `Window.Object`  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [导致自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)   
  [如何： 为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)

@@ -1,26 +1,24 @@
 ---
-title: "测试区域 8： 插件切换 |Microsoft 文档"
-ms.custom: 
+title: 测试区域 8： 插件切换 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
 - source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9f6a518d618b3a98ec85cbbe015d3b2c5fc7a710
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 534bd9338181c5b682779b62a9c118a5ccaf8cda
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-8-plug-in-switching"></a>测试区域 8： 插件切换
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 具有用户界面 (UI) 若要更改当前源代码管理插件。 此测试区域选取的插件用于解决方案源代码管理的过程中提供的测试用例。  
@@ -56,5 +54,5 @@ ms.lasthandoff: 12/22/2017
 |------------|----------------|--------------------------------|  
 |更改的插件的解决方案|1.选择插件在测试为当前 (**工具** -> **选项** -> **源代码管理** -> **插件选择**)。<br />2.创建新项目和解决方案。<br />3.将解决方案添加到源代码管理。<br />4.取消绑定从源代码管理解决方案 (使用**更改源代码管理**对话框)。<br />5.选择其他插件 (例如， [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)])。<br />6.如果卸载，重新加载从磁盘解决方案。<br />7.将解决方案添加到源代码管理。<br />8.取消绑定从源代码管理解决方案 (使用**更改源代码管理**对话框)。<br />9.受测再次插件的选择。<br />10.如果卸载，重新加载从磁盘的解决方案。<br />11.将解决方案绑定到原始位置 (使用**更改源代码管理**对话框)。|通过使用所选将解决方案添加到源代码管理插件。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

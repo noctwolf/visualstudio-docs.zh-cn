@@ -2,28 +2,24 @@
 title: SccQueryInfo 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
 - SccQueryInfo function
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
-caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bda59c3bf674354e38fa306abe1fbb673f40e19
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e2838709d7c2c2ad6e6b1eeef36c2cc0018a1a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函数
 此函数可获取一组在源代码管理下的所选文件的状态信息。  
@@ -55,7 +51,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|查询已成功。|  
 |SCC_E_ACCESSFAILURE|时访问网络或争用问题引起的可能的源控制系统出现问题。 建议重试。|  
@@ -69,14 +65,14 @@ SCCRTN SccQueryInfo(
   
  在使用此函数来签出文件，请注意以下`MSSCCI`状态要求：  
   
--   `SCC_STATUS_OUTBYUSER`当前用户具有签出文件时设置。  
+-   `SCC_STATUS_OUTBYUSER` 当前用户具有签出文件时设置。  
   
--   `SCC_STATUS_CHECKEDOUT`不能设置，除非`SCC_STATUS_OUTBYUSER`设置。  
+-   `SCC_STATUS_CHECKEDOUT` 不能设置，除非`SCC_STATUS_OUTBYUSER`设置。  
   
--   `SCC_STATUS_CHECKEDOUT`仅时该文件已签出到指定的工作目录设置。  
+-   `SCC_STATUS_CHECKEDOUT` 仅时该文件已签出到指定的工作目录设置。  
   
 -   如果该文件已签出当前用户到工作目录，之外的目录`SCC_STATUS_OUTBYUSER`设置但`SCC_STATUS_CHECKEDOUT`不是。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [文件状态代码](../extensibility/file-status-code-enumerator.md)

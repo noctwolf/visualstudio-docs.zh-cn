@@ -2,29 +2,25 @@
 title: 项目元素 （Visual Studio 模板） |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fd8881d484f35a0183d83d1b540fc2249e9c4f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3ef09516237ad30a18f9790ddae40260d834af21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-element-visual-studio-templates"></a>Project 元素（Visual Studio 模板）
 指定的文件或要添加到项目目录。  
@@ -75,9 +71,9 @@ ms.lasthandoff: 12/22/2017
   
  `Project`元素是用于指定一个项目，并因此，仅有效项目模板中。  
   
- `Project`元素可以具有[文件夹](../extensibility/folder-element-visual-studio-project-templates.md)子元素或[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)子元素，但不是两者的混合`Folder`和`ProjectItem`子元素。  
+ `Project` 元素可以具有[文件夹](../extensibility/folder-element-visual-studio-project-templates.md)子元素或[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)子元素，但不是两者的混合`Folder`和`ProjectItem`子元素。  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]会自动重命名根据输入中的用户的名称的项目文件名称**新项目**对话框。 使用`TargetFileName`属性如果你想要提供备用文件名称的使用模板创建的项目文件。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 会自动重命名根据输入中的用户的名称的项目文件名称**新项目**对话框。 使用`TargetFileName`属性如果你想要提供备用文件名称的使用模板创建的项目文件。  
   
 ## <a name="example"></a>示例  
  下面的示例演示用于的项目模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]应用程序。  
@@ -106,7 +102,7 @@ ms.lasthandoff: 12/22/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [ProjectItem 元素 （Visual Studio 项目模板）](../extensibility/projectitem-element-visual-studio-project-templates.md)   

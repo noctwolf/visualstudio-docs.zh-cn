@@ -1,26 +1,24 @@
 ---
-title: "工具窗口显示配置 |Microsoft 文档"
-ms.custom: 
+title: 工具窗口显示配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 585ea78e0591ad979d09a3e5b208635c3f75f903
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 175e2005047312f6815e90c21c60ab831c036064
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tool-window-display-configuration"></a>工具窗口显示配置
 可选值以指定 VSPackage 时注册工具窗口、 的默认位置、 大小、 停靠样式和可见性的其他信息。 工具窗口注册的详细信息，请参阅[注册表中的工具窗口](../extensibility/tool-windows-in-the-registry.md)  
@@ -39,12 +37,12 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|name|类型|数据|描述|  
+|名称|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
-|name|REG_SZ|"短名称在此处显示"|描述该工具窗口的短名称。 仅用于注册表中的引用。|  
+|名称|REG_SZ|"短名称在此处显示"|描述该工具窗口的短名称。 仅用于注册表中的引用。|  
 |Float|REG_SZ|"X1，Y1，X2，Y2"|四个以逗号分隔值。 X1，Y1 是工具窗口的左上角的坐标。 X2，Y2 是右下角的坐标。 所有值都都以屏幕坐标。|  
 |样式|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "链接"<br /><br /> "选项卡式"<br /><br /> "AlwaysFloat"|指定初始关键字显示的工具窗口的状态。<br /><br /> "MDI"= 与 MDI 窗口停靠在一起。<br /><br /> "Float"= 浮动。<br /><br /> "链接"= 链接在一起 （在窗口中的项中指定） 的另一个窗口。<br /><br /> "选项卡式"= 与另一个工具窗口结合使用。<br /><br /> "AlwaysFloat"= 不能固定。<br /><br /> 有关详细信息，请参阅下面的注释部分。|  
-|窗口|REG_SZ|*\<GUID >*|到工具窗口可以链接或选项卡式窗口的 GUID。 GUID 可能属于其自己的窗口之一或之一中的窗口[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE。|  
+|窗口|REG_SZ|*\<GUID &GT;*|到工具窗口可以链接或选项卡式窗口的 GUID。 GUID 可能属于其自己的窗口之一或之一中的窗口[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE。|  
 |方向|REG_SZ|"左"<br /><br /> "右侧"<br /><br /> "Top"<br /><br /> "底部"|请参阅下面的注释部分。|  
 |DontForceCreate|REG_DWORD|0 或 1|此项存在后，其值不为零，窗口将加载，但不是立即显示。|  
   
@@ -88,10 +86,10 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|name|类型|数据|描述|  
+|名称|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
 |(默认)|REG_SZ|无|将保留为空。|  
-|*\<GUID >*|REG_DWORD 或 REG_SZ|0 或一个描述性的字符串。|可选。 项的名称必须是命令需要可见性的 GUID。 只包含一个信息性的字符串值。 通常情况下，值是`reg_dword`设置为 0。|  
+|*\<GUID &GT;*|REG_DWORD 或 REG_SZ|0 或一个描述性的字符串。|可选。 项的名称必须是命令需要可见性的 GUID。 只包含一个信息性的字符串值。 通常情况下，值是`reg_dword`设置为 0。|  
   
 ### <a name="example"></a>示例  
   
@@ -110,5 +108,5 @@ HKEY_LOCAL_MACHINE\
                 {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [VSPackage](../extensibility/internals/vspackages.md)

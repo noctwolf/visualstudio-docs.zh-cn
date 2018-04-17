@@ -1,27 +1,25 @@
 ---
-title: "实验实例 |Microsoft 文档"
-ms.custom: 
+title: 实验实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
 - VSPackages, experimental builds
 - VSIP, experimental builds
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
-caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a656baf951e573a5913960b19c1b583797de090f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c80c071866e46528fe7edd287e082df3af166973
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-experimental-instance"></a>实验实例
 为了防止未经测试的应用程序可能会更改它从 Visual Studio 开发环境，VSSDK 提供可用于试验的实验空间。 像往常一样，使用 Visual Studio 开发新应用程序，但你通过使用此实验实例运行它们。  

@@ -2,28 +2,24 @@
 title: SccAddFromScc 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92950bc833c2d2658c3e13cd7e800e877b32de9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ce2d9d179fd46bcc63340c911437486e1a459195
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函数
 此函数允许用户浏览源代码管理系统中已有的文件，并随后使这些文件属于当前项目。 例如，此函数可以获取的常见头文件在当前项目而不复制该文件。 返回数组的文件， `lplpFileNames`，包含的用户想要将添加到 IDE 项目的文件列表。  
@@ -55,7 +51,7 @@ SCCRTN SccAddFromScc (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功，文件已位于，并添加到项目。|  
 |SCC_I_OPERATIONCANCELED|操作已取消造成任何影响。|  
@@ -66,13 +62,13 @@ SCCRTN SccAddFromScc (
   
  当调用`SccAddFromScc`函数返回时，该插件已将值分配到`lpnFiles`和`lplpFileNames`，根据需要的文件名称数组分配内存 (请注意，此分配替代中的指针`lplpFileNames`)。 源代码管理插件负责将所有文件都放到用户的目录或指定的指定文件夹中。 然后，IDE 将文件添加到 IDE 项目。  
   
- 最后，IDE 调用此函数的第二次，并传入`NULL`为`lpnFiles`。 通过源代码管理插件用于释放为的文件名称数组中分配的内存被解释为特殊的信号`lplpFileNames``.`  
+ 最后，IDE 调用此函数的第二次，并传入`NULL`为`lpnFiles`。 通过源代码管理插件用于释放为的文件名称数组中分配的内存被解释为特殊的信号 `lplpFileNames``.`  
   
- `lplpFileNames`是`char ***`指针。 源代码管理插件放置一个指针到指向文件的名称，因此此 api 以标准方式传递列表的指针的数组。  
+ `lplpFileNames` 是`char ***`指针。 源代码管理插件放置一个指针到指向文件的名称，因此此 api 以标准方式传递列表的指针的数组。  
   
 > [!NOTE]
 >  VSSCI API 的初始版本未提供一种方法，以指示添加的文件的目标项目。 以适应这的语义`lplpFIleNames`参数已增强，从而将它设一个输入/输出参数，而不是输出参数。 如果只指定了单个文件，即指向的值由`lpnFiles`= 1，则第一个元素的`lplpFileNames`包含目标文件夹。 若要使用这些新的语义，IDE 调用`SccSetOption`起作用`nOption`参数设置为`SCC_OPT_SHARESUBPROJ`。 如果源代码管理插件不支持语义，它将返回`SCC_E_OPTNOTSUPPORTED`。 执行使用的是禁用**从源代码管理中的添加**功能。 如果插件支持**从源代码管理中的添加**功能 (`SCC_CAP_ADDFROMSCC`)，则它必须支持新的语义，并返回`SCC_I_SHARESUBPROJOK`。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

@@ -2,28 +2,24 @@
 title: SccInitialize 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccInitialize
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bf217218dcc1830cc2acf2833aa7e31e85745d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 函数
 此函数初始化源代码管理插件，并提供功能和集成的开发环境 (IDE) 的限制。  
@@ -71,7 +67,7 @@ SCCRTN SccInitialize (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|源控件初始化成功。|  
 |SCC_E_INITIALIZEFAILED|无法初始化系统。|  
@@ -85,11 +81,11 @@ SCCRTN SccInitialize (
   
  `lpCallerName`和`lpSccName`参数启用 IDE 和源代码管理插件交换名称。 这些名称只可用于区分多个实例，或它们可能会实际出现在菜单或对话框。  
   
- `lpAuxPathLabel`参数是为一个注释用于标识辅助项目路径，存储在解决方案文件并到源代码管理插件对的调用中传递一个字符串[SccOpenProject](../extensibility/sccopenproject-function.md)。 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]使用字符串"SourceSafe 项目:";其他源控件插件应避免使用此特定的字符串。  
+ `lpAuxPathLabel`参数是为一个注释用于标识辅助项目路径，存储在解决方案文件并到源代码管理插件对的调用中传递一个字符串[SccOpenProject](../extensibility/sccopenproject-function.md)。 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 使用字符串"SourceSafe 项目:";其他源控件插件应避免使用此特定的字符串。  
   
  `lpSccCaps`参数给出源代码管理插件一个位置来存储 bitflags，该值指示即插即用接程序的功能。 (有关功能 bitflags 的完整列表，请参阅[功能标志](../extensibility/capability-flags.md))。 例如，如果将结果写入到一个调用方提供的回调函数，该插件会设置功能的插件计划位 SCC_CAP_TEXTOUT。 这将指示 IDE 以为版本控制结果创建窗口。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccUninitialize](../extensibility/sccuninitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   

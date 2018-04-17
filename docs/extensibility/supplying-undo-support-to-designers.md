@@ -2,26 +2,22 @@
 title: 提供撤消支持添加到设计器 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98243c15f5f69a9aecba589b966d56a68201ab2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5fc289426c2560e978819efcd8eaf17e56b224a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supplying-undo-support-to-designers"></a>提供撤消支持添加到设计器
 设计器中的，如编辑器，通常需要支持撤消操作，因此，修改代码元素时，用户可以反向他们最近的更改。  
@@ -30,7 +26,7 @@ ms.lasthandoff: 12/22/2017
   
  需要撤消功能提供支持的设计器实现：  
   
--   通过实现的抽象基类提供撤消管理<xref:System.ComponentModel.Design.UndoEngine>  
+-   通过实现的抽象基类提供撤消管理 <xref:System.ComponentModel.Design.UndoEngine>  
   
 -   通过实现来提供持久性和 CodeDOM 支持<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>和<xref:System.ComponentModel.Design.IComponentChangeService>类。  
   
@@ -73,7 +69,7 @@ ms.lasthandoff: 12/22/2017
   
  环境 SDK 提供 CodeDOM 和持久性支持通过提供：  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>作为的实现<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+-   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> 作为的实现 <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
  A<xref:System.ComponentModel.Design.IComponentChangeService>由[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]' 设计宿主。  
   
@@ -100,13 +96,13 @@ ms.lasthandoff: 12/22/2017
   
 -   属性更改都通过<xref:System.ComponentModel.TypeDescriptor>对象。  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService>提交可撤消更改时，会手动生成事件。  
+-   <xref:System.ComponentModel.Design.IComponentChangeService> 提交可撤消更改时，会手动生成事件。  
   
 -   在设计器上的进行修改的上下文中创建<xref:System.ComponentModel.Design.DesignerTransaction>。  
   
 -   设计器中选择显式创建撤消单元使用提供的实现的标准撤消单元<xref:System.ComponentModel.Design.UndoEngine.UndoUnit>或 Visual Studio 特定实现<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>，它派生自<xref:System.ComponentModel.Design.UndoEngine.UndoUnit>还提供了实现同时<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
  [扩展设计时支持](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

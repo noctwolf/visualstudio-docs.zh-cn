@@ -1,12 +1,10 @@
 ---
-title: "SharePoint 解决方案的安全性 |Microsoft 文档"
-ms.custom: 
+title: SharePoint 解决方案的安全性 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, security
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6e9aff74a49f738f4a0ed0df68ffe2e9a5b33525
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 471de3ab69a969f5153723658c628d659038c3a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 解决方案的安全性
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含以下功能来帮助提高的 SharePoint 应用程序的安全性。  
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 包含以下功能来帮助提高的 SharePoint 应用程序的安全性。  
   
 ## <a name="safe-control-entries"></a>安全控件项  
  在中创建的每个 SharePoint 项目项[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]具有**安全控件项**表示一个安全的属性控制集合。 其**安全**子属性，可指定你考虑安全的控件。 有关详细信息，请参阅[提供打包和部署信息在项目项中](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)和[指定安全 Web 部件](http://go.microsoft.com/fwlink/?LinkId=177521)。  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
  *脚本注入*是指将潜在恶意代码插入控件或网页。 为了帮助保护对脚本注入的 SharePoint 2010 站点，contributors （参与者） 不能查看或编辑默认情况下的 Web 部件或其属性。 通过调用 SafeAgainstScript SafeControl 特性控制此行为。 在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，将此属性设置中的项目项**安全控件项**子属性**安全应对脚本**。 有关详细信息，请参阅[提供打包和部署信息在项目项中](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)和[如何： 为安全控件的标记控件](../sharepoint/how-to-mark-controls-as-safe-controls.md)。  
   
 ## <a name="vista-and-windows-7-user-account-control"></a>Vista 和 Windows 7 的用户帐户控制  
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)]和[!INCLUDE[win7](../sharepoint/includes/win7-md.md)]包含一个名为用户帐户控制 (UAC) 的安全功能。 若要开发 SharePoint 解决方案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]上[!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)]和[!INCLUDE[win7](../sharepoint/includes/win7-md.md)]系统，UAC 要求你运行[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]作为系统管理员。 从**启动**菜单上，打开快捷菜单[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，然后选择**以管理员身份运行**。  
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] 和[!INCLUDE[win7](../sharepoint/includes/win7-md.md)]包含一个名为用户帐户控制 (UAC) 的安全功能。 若要开发 SharePoint 解决方案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]上[!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)]和[!INCLUDE[win7](../sharepoint/includes/win7-md.md)]系统，UAC 要求你运行[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]作为系统管理员。 从**启动**菜单上，打开快捷菜单[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，然后选择**以管理员身份运行**。  
   
  若要配置[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]快捷方式，以便始终以管理员身份运行，打开其快捷菜单，选择**属性**，选择**高级**按钮**属性**对话框中，然后选择**以管理员身份运行**复选框。  
   
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [生成安全的 ASP.NET 应用程序： 身份验证、 授权和安全通信](http://go.microsoft.com/fwlink/?LinkId=177494)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)  
   

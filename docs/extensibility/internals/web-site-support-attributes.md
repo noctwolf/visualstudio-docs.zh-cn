@@ -1,27 +1,23 @@
 ---
-title: "网站支持特性 |Microsoft 文档"
-ms.custom: 
+title: 网站支持特性 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - web site projects, registration
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e9dcfd511a95ce1ea27af64a3a7f8302fe2827
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: b312322c1d707f13c5121f1fd159f3fd7736886c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-site-support-attributes"></a>网站支持属性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 网站项目可以扩展以支持 Web 编程语言。 语言必须注册自行向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以便项目模板可以出现在**新网站**对话框时选择的语言。
@@ -60,5 +56,5 @@ public class PythonPackage : Package, IOleComponent
 
  IVsIntellisenseProject 实现处理引用，并当具有代码的 Web 页请求，但未缓存时调用的语言编译器。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
  [网站支持](../../extensibility/internals/web-site-support.md)

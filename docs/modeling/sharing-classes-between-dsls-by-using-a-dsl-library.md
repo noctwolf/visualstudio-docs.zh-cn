@@ -1,21 +1,19 @@
 ---
-title: "共享类之间使用 DSL 库 Dsl |Microsoft 文档"
-ms.custom: 
+title: 共享类之间使用 DSL 库 Dsl |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a58726bdc4e6e139963ae8cca2d12f26e0696246
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f1164b0a96a10e7fa9cda3f8082bb052a0b445e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 库在 DSL 之间共享类
 在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK，你可以创建，你可以导入到另一个 DSL 的 DSL 定义不完整。 这样可以考虑因素的类似模型的公共部分。  
@@ -44,7 +42,7 @@ ms.lasthandoff: 02/09/2018
   
 6.  生成项目。  
   
-7.  让其他人有机会使用 DSL 分发时，必须提供编译的程序集 (DLL) 和文件`DslDefinition.dsl`。 你可以在下的文件夹中找到编译的程序集`Dsl\bin\*`  
+7.  让其他人有机会使用 DSL 分发时，必须提供编译的程序集 (DLL) 和文件`DslDefinition.dsl`。 你可以在下的文件夹中找到编译的程序集 `Dsl\bin\*`  
   
 #### <a name="to-import-a-dsl-library"></a>若要导入 DSL 库  
   
@@ -64,7 +62,7 @@ ms.lasthandoff: 02/09/2018
   
  DSL 库可以导入其他库。 当你导入的库，其导入也会自动出现在 DSL 资源管理器。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

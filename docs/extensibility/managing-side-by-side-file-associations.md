@@ -2,26 +2,22 @@
 title: 管理并排显示文件关联 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - verbs, setting default
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
-caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d0a6f8ec88a49b785b771aef51dc25b5646ffda
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e9144125786e7aa5f2a70823a033d49ac3fa2990
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-side-by-side-file-associations"></a>管理并排显示文件关联
 如果你的 VSPackage 提供的文件关联，你必须决定如何处理在其中通过并行安装的特定版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]应被调用来打开文件。 文件格式不兼容复合问题。  
@@ -49,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
     -   Visual Studio.NET 2003年是最新版本，仅当存在和[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]不存在。  
   
-    -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]如果它是仅存在版本，是最新版本。  
+    -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 如果它是仅存在版本，是最新版本。  
   
      最终结果是 DEVENV_EXE_LATEST 包含 devenv.exe 的最新版本的路径。  
   
@@ -88,6 +84,6 @@ ms.lasthandoff: 12/22/2017
   
 -   提供配置选项的页面或对话框框中，从而让用户选择文件关联，并回收丢失的关联。 指示用户卸载后运行它。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [注册-并排部署的文件扩展名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [注册文件扩展名的谓词](../extensibility/registering-verbs-for-file-name-extensions.md)

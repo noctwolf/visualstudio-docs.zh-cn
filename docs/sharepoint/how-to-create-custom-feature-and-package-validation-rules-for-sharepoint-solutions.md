@@ -1,12 +1,10 @@
 ---
-title: "如何： 为 SharePoint 解决方案创建自定义功能和包验证规则 |Microsoft 文档"
-ms.custom: 
+title: 如何： 为 SharePoint 解决方案创建自定义功能和包验证规则 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, validation rules
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: efc9cc2988125621212698576deeca1247e26a58
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0c68df756e24fc45603d34dd6982a09889bd5203
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>如何：为 SharePoint 解决方案创建自定义功能和包验证规则
   你可以创建自定义验证规则来验证解决方案包生成的 Visual Studio。 可以在整个功能或包上执行完全验证，通过选择**验证**包或中的新功能的上下文菜单中**PackagingExplorer**。 当将新 SharePonit 项目项或功能添加到项目中以确定包或功能将能处于有效状态，将执行部分验证。  
@@ -60,7 +59,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="deploying-the-extension"></a>部署扩展  
  若要部署的扩展，创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包的程序集和你想要随此扩展分发的任何其他文件。 有关详细信息，请参阅[部署 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
   
   

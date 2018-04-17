@@ -2,32 +2,28 @@
 title: 源控制集成概述 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 19d75936e21729729dfeafaa041d800acbe01caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-overview"></a>源代码管理集成概述
 本部分比较的两种方法将集成到 Visual Studio 源代码管理;源代码管理插件和 VSPackage 提供源代码管理解决方案，并突出显示新的源控件功能。 Visual Studio 允许的源控件 Vspackage 和源控件插件之间进行手动切换，以及自动基于解决方案的切换。  
   
 ## <a name="source-control-integration"></a>源代码管理集成  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支持两种类型的源代码管理集成选项。 在所有版本的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，你仍可以集成基于源控件插件 API （以前也称为 MSSCCI API），它使用 Visual Studio 源控制用户接口 （同时提供基本源代码管理功能的插件UI)。 源代码管理 VSPackage，另一方面，提供新的深度集成[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]路径适用于要求高的复杂程度和自主性在其源控件模型中的源代码管理集成。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持两种类型的源代码管理集成选项。 在所有版本的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，你仍可以集成基于源控件插件 API （以前也称为 MSSCCI API），它使用 Visual Studio 源控制用户接口 （同时提供基本源代码管理功能的插件UI)。 源代码管理 VSPackage，另一方面，提供新的深度集成[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]路径适用于要求高的复杂程度和自主性在其源控件模型中的源代码管理集成。  
   
  ![源控件概述](../../extensibility/internals/media/sourcectnrloverview.gif "SourceCtnrlOverview")  
   
@@ -61,7 +57,7 @@ ms.lasthandoff: 12/22/2017
 -   很容易地实现了源代码管理插件比源控件 VSPackage。  
   
 ## <a name="source-control-vspackage"></a>源控件 VSPackage  
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]允许深度集成到 Visual Studio 使用的源代码管理功能的完全控制和 Visual Studio 提供的源控制用户界面的完全替换。 源代码管理 VSPackage 注册 Visual Studio，并提供源控件功能。 尽管可以使用 Visual Studio 注册 Vspackage 的多个源代码管理，其中只有一可以处于活动状态一次。 处于活动状态时，源代码管理 VSPackage Visual Studio 中具有完全控制的源代码管理功能和外观。 所有其他源控件可能会在系统中注册的 Vspackage 处于非活动状态，并将不显示任何 UI。  
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 允许深度集成到 Visual Studio 使用的源代码管理功能的完全控制和 Visual Studio 提供的源控制用户界面的完全替换。 源代码管理 VSPackage 注册 Visual Studio，并提供源控件功能。 尽管可以使用 Visual Studio 注册 Vspackage 的多个源代码管理，其中只有一可以处于活动状态一次。 处于活动状态时，源代码管理 VSPackage Visual Studio 中具有完全控制的源代码管理功能和外观。 所有其他源控件可能会在系统中注册的 Vspackage 处于非活动状态，并将不显示任何 UI。  
   
  实现源代码管理 VSPackage 需要使用"所有或执行任何操作"的策略。 源控件 VSPackage 的创建者必须投入大量的精力实现大量的源控制接口和新的 UI 元素 （对话框、 菜单和工具栏） 以涵盖整个源控件的功能。 请参阅[创建源控件 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)有关详细信息。  
   
@@ -79,7 +75,7 @@ ms.lasthandoff: 12/22/2017
   
 -   VSPackage 不局限于特定的源控件模型中。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理](../../extensibility/internals/source-control.md)   
  [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [创建源控件 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)   

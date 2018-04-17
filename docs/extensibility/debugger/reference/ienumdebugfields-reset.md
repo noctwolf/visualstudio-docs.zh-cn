@@ -2,28 +2,24 @@
 title: IEnumDebugFields::Reset |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEnumDebugFields::Reset
 helpviewer_keywords:
 - IEnumDebugFields::Reset method
 ms.assetid: 38ff61e4-0120-42e8-971a-16be6050b425
-caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5490fa4e134b7fd32ede48002b7a7396320ea90
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 54b2bdaf0c638f233a47ebc76d86b9f0e6a5bf00
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 此方法将枚举重置为第一个元素。  
@@ -47,6 +43,6 @@ int Reset();
 ## <a name="remarks"></a>备注  
  调用此方法，对下一个调用后[下一步](../../../extensibility/debugger/reference/ienumdebugfields-next.md)返回枚举的第一个元素。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [下一篇](../../../extensibility/debugger/reference/ienumdebugfields-next.md)

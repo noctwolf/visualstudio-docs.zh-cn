@@ -1,12 +1,10 @@
 ---
-title: "如何： 以编程方式在联系人中电子邮件地址搜索 |Microsoft 文档"
-ms.custom: 
+title: 如何： 以编程方式在联系人中电子邮件地址搜索 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - searching contacts
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d9ab451d433536c7ebf5931aa2c971b08ed5c09b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 16b79f5f14f1e0d8c5c82a00f5f2ccf2412b991b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-search-for-an-e-mail-address-in-contacts"></a>如何：以编程方式在联系人中搜索电子邮件地址
   以下示例将在联系人文件夹搜索电子邮件地址中具有域名 **example.com** 的联系人。  
@@ -37,7 +36,7 @@ ms.lasthandoff: 01/10/2018
   
 -   电子邮件地址中具有域名 **example.com** （例如， `somebody@example.com`且具有的名字和姓氏的联系人。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用联系人项](../vsto/working-with-contact-items.md)   
  [如何： 以编程方式发送电子邮件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
  [如何： 以编程方式访问 Outlook 联系人](../vsto/how-to-programmatically-access-outlook-contacts.md)   

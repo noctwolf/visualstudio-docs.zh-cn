@@ -2,12 +2,9 @@
 title: ClickOnce 和应用程序设置 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - ClickOnce deployment, application settings
 ms.assetid: 891caba6-faef-4a3c-8f71-60e6fadb60eb
-caps.latest.revision: 10
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 862f51aa7d124c3dbaa6514b666d74c26334e299
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 69563869fe6518d112273da13889fc04db96d09f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和应用程序设置
 Windows 窗体的应用程序设置，可以轻松创建、 存储和维护自定义应用程序和客户端上的用户首选项。 以下文档介绍了在 ClickOnce 应用程序中，应用程序设置文件的工作原理以及用户升级到下一个版本时，ClickOnce 如何迁移设置。  
@@ -33,11 +29,11 @@ Windows 窗体的应用程序设置，可以轻松创建、 存储和维护自�
  下面的信息仅适用于默认应用程序设置提供程序，<xref:System.Configuration.LocalFileSettingsProvider>类。 如果提供自定义提供程序，它将其数据的存储和如何升级版本之间其设置将确定该提供程序。 应用程序设置提供程序的详细信息，请参阅[应用程序设置体系结构](/dotnet/framework/winforms/advanced/application-settings-architecture)。  
   
 ## <a name="application-settings-files"></a>应用程序设置文件  
- 应用程序设置使用两个文件：*应用*。.exe.config 并且 user.config，其中*应用*是 Windows 窗体应用程序的名称。 user.config 创建应用程序存储用户范围的设置的客户端第一个时间。 *应用*。 exe.config，与此相反，如果会存在在部署之前定义设置的默认值。 Visual Studio 将自动地包括此文件，当你使用其**发布**命令。 如果创建 ClickOnce 应用程序使用 Mage.exe 或 MageUI.exe 中，你必须确保此文件是包含你的应用程序的其他文件时填充你的应用程序清单。  
+ 应用程序设置使用两个文件：*应用*.exe.config 并且 user.config，其中*应用*是 Windows 窗体应用程序的名称。 user.config 创建应用程序存储用户范围的设置的客户端第一个时间。 *应用*。 exe.config，与此相反，如果会存在在部署之前定义设置的默认值。 Visual Studio 将自动地包括此文件，当你使用其**发布**命令。 如果创建 ClickOnce 应用程序使用 Mage.exe 或 MageUI.exe 中，你必须确保此文件是包含你的应用程序的其他文件时填充你的应用程序清单。  
   
- 在 Windows 窗体应用程序中不使用 ClickOnce，应用程序部署*应用*。.exe.config 文件存储在应用程序目录中，而 user.config 文件存储在用户的**Documents and Settings**文件夹。 在 ClickOnce 应用程序，*应用*。 exe.config 驻留在 ClickOnce 应用程序缓存中，内部的应用程序目录和 user.config 驻留在该应用程序的 ClickOnce 数据目录。  
+ 在 Windows 窗体应用程序中不使用 ClickOnce，应用程序部署*应用*.exe.config 文件存储在应用程序目录中，而 user.config 文件存储在用户的**Documents and Settings**文件夹。 在 ClickOnce 应用程序，*应用*。 exe.config 驻留在 ClickOnce 应用程序缓存中，内部的应用程序目录和 user.config 驻留在该应用程序的 ClickOnce 数据目录。  
   
- 无论你部署你的应用程序的方式，应用程序设置确保安全的读取访问权限*应用*。.exe.config，并且对 user.config 安全的读/写访问。  
+ 无论你部署你的应用程序的方式，应用程序设置确保安全的读取访问权限*应用*.exe.config，并且对 user.config 安全的读/写访问。  
   
  在 ClickOnce 应用程序中，使用应用程序设置的配置文件的大小受 ClickOnce 缓存的大小的约束。 有关详细信息，请参阅[ClickOnce 缓存概述](../deployment/clickonce-cache-overview.md)。  
   

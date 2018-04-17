@@ -1,23 +1,21 @@
 ---
-title: "自定义关系图上的演示文稿 |Microsoft 文档"
-ms.custom: 
+title: 自定义关系图上的演示文稿 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, diagram
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 04da9b7cd82533601a77fcb434f4e7e835930245
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 75c2b31e28b9b44154538ed919ec8bd4460fa887
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>自定义图表的演示
 关系图是域特定语言设计器的主呈现区域。 通常，用户将使用关系图构造其模型。 可以自定义该关系图，如以下主题所述。  
@@ -36,5 +34,5 @@ ms.lasthandoff: 02/09/2018
   
 -   [在 Windows 窗体中嵌入图表](../modeling/embedding-a-diagram-in-a-windows-form.md)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)

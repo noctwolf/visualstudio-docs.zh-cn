@@ -1,23 +1,21 @@
 ---
-title: "计算和自定义存储属性 |Microsoft 文档"
-ms.custom: 
+title: 计算和自定义存储属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1b5d89a621c0f325fd20dbff47c30975f760a6f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 153ff58e5ace618fbf9e6f0e3bb25614d21fc98a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calculated-and-custom-storage-properties"></a>计算的和自定义的存储属性
 域特定语言 (DSL) 中的所有域属性可对用户在关系图上并在你语言资源管理器，显示，并可以由程序代码访问。 但是，其值将存储的方式不同属性。  
@@ -69,7 +67,7 @@ ms.lasthandoff: 02/09/2018
     }  }  
     ```  
   
-8.  如果你设置**类型**到**自定义存储**，你还需要提供`Set`方法。 例如:  
+8.  如果你设置**类型**到**自定义存储**，你还需要提供`Set`方法。 例如：  
   
     ```  
     void SetAgeValue(int value)  
@@ -84,7 +82,7 @@ ms.lasthandoff: 02/09/2018
   
 10. 测试属性。 请确保你尝试**撤消**和**重做**。  
   
-##  <a name="setters"></a>事务和自定义的 Setter  
+##  <a name="setters"></a> 事务和自定义的 Setter  
  中的自定义存储属性的 Set 方法中，你无需打开事务，因为通常在活动事务内调用该方法。  
   
  但是，如果用户调用撤消或重做，或者如果正在回滚事务可能也称为 Set 方法。 当<xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A>为 true，Set 方法的行为，如下所示：  
@@ -93,7 +91,7 @@ ms.lasthandoff: 02/09/2018
   
 -   但是，它应更新任何外部资源，如数据库或文件内容或 store 外的对象。 这将确保使它们保持在 synchronism 中存储的值。  
   
- 例如:  
+ 例如：  
   
 ```  
 void SetAgeValue(int value)  
@@ -110,7 +108,7 @@ void SetAgeValue(int value)
   
  有关事务的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [域属性的属性](../modeling/properties-of-domain-properties.md)   
  [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)

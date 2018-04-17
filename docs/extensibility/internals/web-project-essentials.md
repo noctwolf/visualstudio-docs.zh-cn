@@ -1,27 +1,23 @@
 ---
-title: "Web 项目 Essentials |Microsoft 文档"
-ms.custom: 
+title: Web 项目 Essentials |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac781256ee78becf3b0cfdffbbec6f0c6bc30225
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6918c539409a31dfe5249adb5858ca20c8c2337c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-project-essentials"></a>Web 项目 Essentials
 Web 项目创建 Web 应用程序。 可以使用 Web 项目创建的 Web 应用程序有智能 Web 页。 智能网页上的呈现按需 Web 页面的服务器端代码。  
@@ -63,5 +59,5 @@ Web 项目创建 Web 应用程序。 可以使用 Web 项目创建的 Web 应用
   
     -   始终应在代码编辑器的主缓冲区中创建错误标记 （红色标记）。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Web 项目](../../extensibility/internals/web-projects.md)

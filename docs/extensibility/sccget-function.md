@@ -2,28 +2,24 @@
 title: SccGet 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGet
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73f5c55b39d855eb084206ef27e2254d50377b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb793eb5c35c4ca9ee22a58496ebe175b83c68e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccget-function"></a>SccGet 函数
 此函数可检索用于查看和编译但不能用于编辑的一个或多个文件的副本。 在大多数系统中，文件被标记为只读的。  
@@ -63,7 +59,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|Get 操作成功与否。|  
 |SCC_E_FILENOTCONTROLLED|文件不是在源代码管理下。|  
@@ -81,7 +77,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL`标志可以与组合`SCC_GET_RECURSIVE`标志来检索给定目录中的所有文件和以及所有子目录。  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE`永远不会传递且`SCC_GET_ALL`。 另请注意，是否目录 C:\A 和 C:\A\B 上递归传递 get，C:\A\B 和所有子目录将实际来检索两次。 它是 IDE 的责任-并不是源代码管理插件-若要确保使超出数组保持这样的重复项。  
+>  `SCC_GET_RECURSIVE` 永远不会传递且`SCC_GET_ALL`。 另请注意，是否目录 C:\A 和 C:\A\B 上递归传递 get，C:\A\B 和所有子目录将实际来检索两次。 它是 IDE 的责任-并不是源代码管理插件-若要确保使超出数组保持这样的重复项。  
   
  最后，即使源代码管理插件指定`SCC_CAP_GET_NOUI`上初始化，指示它不具有 Get 命令的用户界面、 通过 IDE 以检索文件仍可能调用此函数的标志。 标志只意味着 IDE 不显示 Get 菜单项，并且，该插件不需要提供任何 UI。  
   
@@ -106,6 +102,6 @@ SCCRTN SccGet(
   
     6.  现在可以检查更新的 b.txt 文件。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [特定命令使用的位标志](../extensibility/bitflags-used-by-specific-commands.md)

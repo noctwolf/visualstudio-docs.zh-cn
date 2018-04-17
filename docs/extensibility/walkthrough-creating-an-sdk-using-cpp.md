@@ -1,23 +1,21 @@
 ---
-title: "演练： 创建使用 c + + SDK |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建使用 c + + SDK |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7a4091506bcd16222ff02600bd924d3526d57c38
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 33880dc3b9c359798c47c666debc3d5564524794
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>演练： 创建使用 c + + 的 SDK
 本演练演示如何创建一个本机 c + + 的数学库 SDK，包的 SDK 作为 Visual Studio 扩展 (VSIX)，并使用它来创建应用。 本演练分为以下步骤：  
@@ -31,7 +29,7 @@ ms.lasthandoff: 01/09/2018
 ## <a name="prerequisites"></a>系统必备  
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
-##  <a name="createClassLibrary"></a>若要创建的本机和 Windows 运行时库  
+##  <a name="createClassLibrary"></a> 若要创建的本机和 Windows 运行时库  
   
 1.  在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/09/2018
   
 9. 在菜单栏上，依次选择 **“生成”**、 **“生成解决方案”**。  
   
-##  <a name="createVSIX"></a>若要创建 NativeMathVSIX 扩展项目  
+##  <a name="createVSIX"></a> 若要创建 NativeMathVSIX 扩展项目  
   
 1.  在**解决方案资源管理器**，打开快捷菜单**解决方案 NativeMath**，然后选择**添加**，**新项目**。  
   
@@ -143,7 +141,7 @@ ms.lasthandoff: 01/09/2018
   
 18. 选择**安装**按钮，等待安装完成，然后再启动 Visual Studio。  
   
-##  <a name="createSample"></a>若要创建的示例应用程序使用类库  
+##  <a name="createSample"></a> 若要创建的示例应用程序使用类库  
   
 1.  在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
   
@@ -171,7 +169,7 @@ ms.lasthandoff: 01/09/2018
   
 9. 选择 F5 键以运行应用程序。  
   
-10. 在应用中，输入任何两个数字，选择某一操作，，然后选择 **=** 按钮。  
+10. 在应用中，输入任何两个数字，选择某一操作，，然后选择**=**按钮。  
   
      将显示正确的结果。  
   
@@ -179,6 +177,6 @@ ms.lasthandoff: 01/09/2018
   
 ## <a name="next-steps"></a>后续步骤  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [演练： 创建使用 C# 或 Visual Basic 的 SDK](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [获取软件开发工具包](../extensibility/creating-a-software-development-kit.md)

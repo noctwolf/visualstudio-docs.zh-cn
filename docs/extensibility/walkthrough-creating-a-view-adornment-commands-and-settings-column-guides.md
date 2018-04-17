@@ -1,25 +1,21 @@
 ---
-title: "创建视图修饰、 命令和设置 |Microsoft 文档"
-ms.custom: 
+title: 创建视图修饰、 命令和设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 57a7696eae0da92d88babf64c580a4767775dffd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>演练： 创建视图修饰、 命令和设置 （列指南）
 你可以扩展 Visual Studio 文本/代码编辑器与命令和视图效果。  本主题演示了如何开始使用一种常用的扩展功能，列参考线。  列参考线是在文本编辑器的视图来帮助你管理你的代码特定列宽上绘制的直观地浅色行。  格式经过特别设计的代码可能很重要的示例包括在文档中，博客文章或 bug 报表。  
@@ -56,13 +52,13 @@ ms.lasthandoff: 12/22/2017
   
 -   没有`ColumnGuideCommands`.vsct 文件中声明的对象，实现用户命令并挂钩命令的命令处理程序。  
   
- **VSIX**。  使用**文件 &#124;新增功能 ...**命令以创建项目。  在左侧的导航窗格中选择 C# 下的扩展节点并选择**VSIX 项目**右窗格中。  输入 ColumnGuides 的名称，然后选择**确定**以创建该项目。  
+ **VSIX**。  使用**文件 & #124;新增功能 ...**命令以创建项目。  在左侧的导航窗格中选择 C# 下的扩展节点并选择**VSIX 项目**右窗格中。  输入 ColumnGuides 的名称，然后选择**确定**以创建该项目。  
   
- **查看修饰**。  在解决方案资源管理器中的项目节点上按右指针按钮。  选择**添加 &#124;新建项...**命令以添加新视图修饰项。  选择**扩展性 &#124;编辑器**左侧的导航窗格中，选择**编辑器视区修饰**右窗格中。  输入名称 ColumnGuideAdornment 作为项目名称，然后选择**添加**以将其添加。  
+ **查看修饰**。  在解决方案资源管理器中的项目节点上按右指针按钮。  选择**添加&#124;新建项...**命令以添加新视图修饰项。  选择**扩展性&#124;编辑器**左侧的导航窗格中，选择**编辑器视区修饰**右窗格中。  输入名称 ColumnGuideAdornment 作为项目名称，然后选择**添加**以将其添加。  
   
  你可以看到此项模板添加到的项目 （以及引用和等等） 的两个文件： ColumnGuideAdornment.cs 和 ColumnGuideAdornmentTextViewCreationListener.cs。  模板只需在视图上绘制紫色矩形。  下面将更改几个中行的视图创建侦听器，并替换 ColumnGuideAdornment.cs 的内容。  
   
- **命令**。  在解决方案资源管理器中的项目节点上按右指针按钮。  选择**添加 &#124;新建项...**命令以添加新视图修饰项。  选择**扩展性 &#124;VSPackage**左侧的导航窗格中，选择**自定义命令**右窗格中。  输入名称 ColumnGuideCommands 作为项目名称，然后选择**添加**以将其添加。  多个引用，除了添加的命令和包添加 ColumnGuideCommands.cs、 ColumnGuideCommandsPackage.cs 和 ColumnGuideCommandsPackage.vsct。  下面将替换第一个和最后一个文件，以定义和实现命令的内容。  
+ **命令**。  在解决方案资源管理器中的项目节点上按右指针按钮。  选择**添加&#124;新建项...**命令以添加新视图修饰项。  选择**扩展性&#124;VSPackage**左侧的导航窗格中，选择**自定义命令**右窗格中。  输入名称 ColumnGuideCommands 作为项目名称，然后选择**添加**以将其添加。  多个引用，除了添加的命令和包添加 ColumnGuideCommands.cs、 ColumnGuideCommandsPackage.cs 和 ColumnGuideCommandsPackage.vsct。  下面将替换第一个和最后一个文件，以定义和实现命令的内容。  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>设置文本视图创建侦听器  
  在编辑器中打开 ColumnGuideAdornmentTextViewCreationListener.cs。  此代码将实现一个处理程序，用于每当 Visual Studio 将创建文本视图。  还有控制当处理程序调用根据视图的特征的特性。  
@@ -1216,7 +1212,7 @@ private int GetApplicableColumn(EventArgs e)
   
 ```  
   
- `GetCurrentEditorColumn`必须更深入地介绍若要获取一个小<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>代码视图。  如果通过跟踪`GetActiveTextView`， `GetActiveView`，和`GetTextViewFromVsTextView`，你可以看到如何执行该操作。  下面是相关的代码抽象化，从当前所选内容，然后获取所选内容的帧，然后获取作为帧的 DocView <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>，然后获取<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>IVsTextView，然后获取大量视图和最后 IWpfTextView:  
+ `GetCurrentEditorColumn` 必须更深入地介绍若要获取一个小<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>代码视图。  如果通过跟踪`GetActiveTextView`， `GetActiveView`，和`GetTextViewFromVsTextView`，你可以看到如何执行该操作。  下面是相关的代码抽象化，从当前所选内容，然后获取所选内容的帧，然后获取作为帧的 DocView <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>，然后获取<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>IVsTextView，然后获取大量视图和最后 IWpfTextView:  
   
 ```csharp  
    IVsMonitorSelection selection =  
@@ -1290,7 +1286,7 @@ private static int GetCaretColumn(IWpfTextView textView)
  与当前列在手动在用户单击，该代码只需调用设置管理器添加或删除列。  设置管理器，将引发此事件写入所有`ColumnGuideAdornment`对象侦听。  当触发事件时，这些对象使用新的列指南设置更新与其关联的文本视图。  
   
 ## <a name="invoking-command-from-the-command-window"></a>调用命令从命令窗口  
- 列指南示例使用户能够为窗体的扩展性调用两个命令从命令窗口。  如果你使用**视图 &#124;其他 Windows &#124;命令窗口**命令时，你可以看到命令窗口。  可以通过输入"编辑"交互与命令窗口并使用命令名称完成和提供的自变量 120，你具备以下：  
+ 列指南示例使用户能够为窗体的扩展性调用两个命令从命令窗口。  如果你使用**视图&#124;其他窗口&#124;命令窗口**命令时，你可以看到命令窗口。  可以通过输入"编辑"交互与命令窗口并使用命令名称完成和提供的自变量 120，你具备以下：  
   
 ```  
 > Edit.AddColumnGuide 120  
@@ -1354,7 +1350,7 @@ private int GetApplicableColumn(EventArgs e)
   
  你还可以尝试使用此 Visual Studio 库列指南功能版本[扩展](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [在编辑器内](../extensibility/inside-the-editor.md)   
  [扩展编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)   
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)   

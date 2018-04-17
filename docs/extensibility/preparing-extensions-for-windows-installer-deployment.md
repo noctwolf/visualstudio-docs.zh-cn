@@ -1,27 +1,23 @@
 ---
-title: "为 Windows Installer 部署准备扩展 |Microsoft 文档"
-ms.custom: 
+title: 为 Windows Installer 部署准备扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - vsix msi
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b72fc46d64034ddc22e929fb1a1eff26115cce70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef51b3cb0f84a470f104ff688c1149e607d16f71
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>准备 Windows Installer 部署扩展
 Windows Installer 包 (MSI) 不能用于部署 VSIX 包。 但是，你可以提取 MSI 部署 VSIX 包的内容。 本文档说明如何准备其默认输出是包含在安装项目的 VSIX 包的项目。  
@@ -60,6 +56,6 @@ Windows Installer 包 (MSI) 不能用于部署 VSIX 包。 但是，你可以提
   
 5.  将剩余的文件添加到你的安装项目。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 安装程序部署](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
  [演练： 创建自定义操作](http://msdn.microsoft.com/en-us/4bd4b63a-2b91-431e-839c-5752443f0eaf)

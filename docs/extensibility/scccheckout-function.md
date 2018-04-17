@@ -2,28 +2,24 @@
 title: SccCheckout 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccCheckout
 helpviewer_keywords:
 - SccCheckout function
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
-caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8aac642ecd21f8f4709874e4e3e6ff0b3e58b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 671e4ecebb44f0910eba3bb835a6da6f9a7f3903
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函数
 给定的完全限定的文件名的列表，此函数将它们签出到本地驱动器。 注释适用于被签出的所有文件。该注释参数可以是`null`字符串。  
@@ -67,7 +63,7 @@ SCCRTN SccCheckout (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功签出。|  
 |SCC_E_FILENOTCONTROLLED|所选的文件不是源代码管理下。|  
@@ -79,6 +75,6 @@ SCCRTN SccCheckout (
 |SCC_E_FILEOUTEXCLUSIVE|另一个用户完成对此文件的独占方式签出。|  
 |SCC_I_OPERATIONCANCELED|在完成之前已取消操作。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [特定命令使用的位标志](../extensibility/bitflags-used-by-specific-commands.md)

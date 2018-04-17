@@ -1,26 +1,24 @@
 ---
-title: "VSIX 项目模板 |Microsoft 文档"
-ms.custom: 
+title: VSIX 项目模板 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: de8de116a9853391249a7a37a35bd54d0a6946d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bff05b0b1b05a6b00b7924f0fb5bfc957adba41c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsix-project-template"></a>VSIX 项目模板
 你可以使用 VSIX 项目模板将一个或多个 Visual Studio 扩展包装在一个 VSIX 项目中，然后将包发布上[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点。  
@@ -82,8 +80,8 @@ ms.lasthandoff: 12/22/2017
   
 8.  生成解决方案。  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]生成包含 VSIX 清单文件、 [Content_Types].xml 文件，和的所有扩展资产添加到项目的.vsix 文件。  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成包含 VSIX 清单文件、 [Content_Types].xml 文件，和的所有扩展资产添加到项目的.vsix 文件。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [VSIX 扩展架构 2.0 参考](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)

@@ -1,12 +1,10 @@
 ---
-title: "如何： 定义方法实例 |Microsoft 文档"
-ms.custom: 
+title: 如何： 定义方法实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], method
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: aa5f1adcaacacd2b9e08d4c12cdcafbd5f561200
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 44a31af455b09db5fb359339cee8da7b3ca0c77e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-define-a-method-instance"></a>如何：定义方法实例
   您的模型中，必须定义至少一个方法实例对于每个方法。  
@@ -44,7 +43,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  在**属性**窗口中，设置方法实例的属性。 有关每个属性的详细信息，请参阅[实例，但](http://go.microsoft.com/fwlink/?LinkID=169282)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
  [如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [如何： 向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   

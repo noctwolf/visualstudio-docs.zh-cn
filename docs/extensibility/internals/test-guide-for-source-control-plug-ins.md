@@ -1,12 +1,10 @@
 ---
-title: "测试对源控件插件指南 |Microsoft 文档"
-ms.custom: 
+title: 测试对源控件插件指南 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
 - source control [Visual Studio SDK], testing plug-ins
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - testing, source control plug-ins
 - source control plug-ins, test guide
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0fdab6cb0b259fe169a9ebd43c92158a5ce20d4b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 37af6a289b59b6066a71836e4d44e380b584ec70
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>为源控件插件测试指南
 本部分提供用于测试你的源代码管理插件与指南[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 提供的最常见的测试区域，以及一些可能会出现问题的更复杂区域的广泛概述。 本概述不是测试用例的穷举列表。  
@@ -109,5 +107,5 @@ ms.lasthandoff: 12/22/2017
   
     -   案例 8b： 基于解决方案的更改  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理插件](../../extensibility/source-control-plug-ins.md)

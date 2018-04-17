@@ -1,23 +1,21 @@
 ---
-title: "域特定语言工具的概述 |Microsoft 文档"
-ms.custom: 
+title: 域特定语言工具的概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89ff0565bf33936f15c18c0964fc9fb2f64ab9b8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cd105ae8553d39a6fe1a1bd23136d5027da17ec3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>域特定语言工具的概述
 域特定语言工具 （DSL 工具），它承载在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，但仍使设计的域特定语言，然后生成用户必须具有创建基于语言的模型的所有内容。  
@@ -53,7 +51,7 @@ ms.lasthandoff: 02/09/2018
   
  此向导将创建[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案，它具有以下项目：  
   
--   Dsl  
+-   dsl  
   
      Dsl 项目定义的域特定语言和及其编辑和处理的工具。  
   
@@ -77,6 +75,6 @@ ms.lasthandoff: 02/09/2018
   
  当生成并运行 DSL 工具解决方案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，第二个实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]显示语言的用户看到你的域特定语言的样子。 验证一切是否正常工作后，你可以将分发`.vsix`你将在 DslPackage 项目的生成文件夹中找到的文件。 此文件可以用于安装作为 DSL[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]在其他计算机上的扩展。  有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [实验实例](../extensibility/the-experimental-instance.md)   
  [域特定语言工具词汇表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

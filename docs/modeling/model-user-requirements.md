@@ -1,24 +1,22 @@
 ---
-title: "建立用户需求模型 |Microsoft 文档"
-ms.custom: 
+title: 建立用户需求模型 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1401328b53f03d6ff1121e93ac7e56ebba0e585e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3837c6876c8eb1beecea13fb501a78c764555d9e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 
@@ -63,7 +61,7 @@ ms.lasthandoff: 02/09/2018
 
 业务规则是一个不与特定用例相关联的要求，应在整个系统中进行观察。  
   
- 许多业务规则受概念类间关系的约束。 你可以编写这些*静态 * * 业务规则*作为概念类图上的相关类与关联的注释。 例如:  
+ 许多业务规则受概念类间关系的约束。 你可以编写这些*静态 * * 业务规则*作为概念类图上的相关类与关联的注释。 例如：  
   
  ![附加到 Order 类的注释中的规则。] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
   

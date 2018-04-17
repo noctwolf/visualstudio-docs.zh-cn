@@ -1,26 +1,24 @@
 ---
-title: "Visual Studio 的常见控件模式 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 的常见控件模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ded7ed6dd843a7879100704276766bfcb528b6f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8383537a7e9d49f79e98da4dd95a3474803315d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio 的常见控件模式
-##  <a name="BKMK_CommonControls"></a>公共控件  
+##  <a name="BKMK_CommonControls"></a> 公共控件  
   
 ### <a name="overview"></a>概述  
 公共控件构成了 Visual Studio 中的用户界面的大部分。 在 Visual Studio 界面中使用的最常见的控件应遵循[Windows 桌面交互准则](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)。 本主题是特定于 Visual Studio，并介绍了特殊的情况下或增加这些 Windows 准则的详细信息。  
@@ -52,10 +50,10 @@ ms.lasthandoff: 12/22/2017
   
 -   **工具窗口、 文档编辑器，设计图面和主题的对话框：**使用使用颜色服务的专门主题的外观。  
   
-###  <a name="BKMK_Scrollbars"></a>滚动条  
+###  <a name="BKMK_Scrollbars"></a> 滚动条  
  滚动条应遵循[常见的交互模式适用于 Windows 滚动条](https://msdn.microsoft.com/en-us/library/windows/desktop/bb787527\(v=vs.85\).aspx)除非它们扩充内容信息，如在代码编辑器中。  
   
-###  <a name="BKMK_InputFields"></a>输入的字段  
+###  <a name="BKMK_InputFields"></a> 输入的字段  
  对于典型交互行为，请按照[文本框中的 Windows 桌面准则](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742442\(v=vs.85\).aspx)。  
   
 #### <a name="visual-style"></a>视觉样式  
@@ -78,7 +76,7 @@ ms.lasthandoff: 12/22/2017
   
      ![更正输入的字段长度： 输入的字段是合理预期的内容宽度。] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707年 02_CorrectInputFieldControl")<br />更正输入的字段长度： 输入的字段是合理预期的内容宽度。
   
-###  <a name="BKMK_ComboBoxesAndDropDowns"></a>组合框和下拉列表  
+###  <a name="BKMK_ComboBoxesAndDropDowns"></a> 组合框和下拉列表  
 对于典型交互行为，请按照[下拉列表和组合框的 Windows 桌面准则](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742404\(v=vs.85\).aspx)。  
   
 #### <a name="visual-style"></a>视觉样式  
@@ -94,7 +92,7 @@ ms.lasthandoff: 12/22/2017
   
 ![正确： 下拉列表的大小以允许翻译增长，但不是会不必要地长。] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707年 04_CorrectDropDownLayout")<br />正确： 下拉列表的大小以允许翻译增长，但不是会不必要地长。 
   
-###  <a name="BKMK_CheckBoxes"></a>复选框  
+###  <a name="BKMK_CheckBoxes"></a> 复选框  
 对于典型交互行为，请按照[复选框的 Windows 桌面准则](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742401\(v=vs.85\).aspx)。  
   
 #### <a name="visual-style"></a>视觉样式  
@@ -113,7 +111,7 @@ ms.lasthandoff: 12/22/2017
   
      ![正确： 复选框对齐文本的第一行。] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707年 06_CorrectCheckBoxAlign")<br />正确： 复选框对齐文本的第一行。
   
-###  <a name="BKMK_RadioButtons"></a>单选按钮  
+###  <a name="BKMK_RadioButtons"></a> 单选按钮  
 对于典型交互行为，请按照[单选按钮的 Windows 桌面准则](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742436\(v=vs.85\).aspx)。  
   
 #### <a name="visual-style"></a>视觉样式  
@@ -122,7 +120,7 @@ ms.lasthandoff: 12/22/2017
 #### <a name="specialized-interactions"></a>专用的交互  
 不需要使用组框架括起单选选择，除非你需要维护组紧密布局中的差异。  
   
-###  <a name="BKMK_GroupFrames"></a>组框架  
+###  <a name="BKMK_GroupFrames"></a> 组框架  
 对于典型交互行为，请按照[组框架的 Windows 桌面准则](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742405\(v=vs.85\).aspx)。  
   
 #### <a name="visual-style"></a>视觉样式  
@@ -136,7 +134,7 @@ ms.lasthandoff: 12/22/2017
   
 -   因此，有时可接受使用水平规则而不是组框架容器。  
   
-##  <a name="BKMK_TextControls"></a>文本控件
+##  <a name="BKMK_TextControls"></a> 文本控件
 
 ### <a name="static-text-fields"></a>静态文本字段
 
@@ -217,7 +215,7 @@ ms.lasthandoff: 12/22/2017
 
 如果你希望用户能够复制信息的能力，动态文本应为只读的文本字段中。
   
-##  <a name="BKMK_ButtonsAndHyperlinks"></a>按钮和超链接  
+##  <a name="BKMK_ButtonsAndHyperlinks"></a> 按钮和超链接  
   
 ### <a name="overview"></a>概述  
 按钮和链接控件 （的超链接） 应遵循[的超链接的基本 Windows 桌面指南](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742406\(v=vs.85\).aspx)对于用法，词语、 调整大小，和间距。  
@@ -331,11 +329,11 @@ Visual Studio 中的大多数按钮将显示实用程序对话框中，并且不
   
 -   悬停时，不应显示下划线。 相反，向用户链接处于活动状态的反馈是略颜色更改和相应的链接光标。  
   
-##  <a name="BKMK_TreeViews"></a>树视图  
+##  <a name="BKMK_TreeViews"></a> 树视图  
   
 树视图提供一种组织复杂方式列出到父-子组。 用户可以展开或折叠父组，以显示或隐藏基础子项目。 可以选择的树视图中每个项，以提供进一步的操作。  
   
-###  <a name="BKMK_TreeViewVisualStyle"></a>树视图视觉样式  
+###  <a name="BKMK_TreeViewVisualStyle"></a> 树视图视觉样式  
   
 #### <a name="expanders"></a>扩展器  
 使用 Windows 和 Visual Studio 的扩展器设计应符合树视图控件。 每个节点使用的扩展器控件来显示或隐藏基础项。 使用扩展器控件的用户可能会遇到 Windows 和 Visual Studio 中的不同的树视图中提供一致性。  
@@ -359,7 +357,7 @@ Visual Studio 中的大多数按钮将显示实用程序对话框中，并且不
   
 ![因为内容已经超出了树视图控件的限制，则会显示这两个垂直和水平滚动条。] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />因为内容已经超出了树视图控件的限制，则会显示这两个垂直和水平滚动条。
   
-###  <a name="BKMK_TreeViewInteractions"></a>树视图交互  
+###  <a name="BKMK_TreeViewInteractions"></a> 树视图交互  
   
 #### <a name="context-menus"></a>上下文菜单  
 树视图节点可能会显示上下文菜单中的子菜单选项。 通常，用户已用鼠标右键单击某个项或使用选择的项的 Windows 键盘上按下菜单键时出现此情况。 很重要，该节点获得焦点，并选择。 这有助于用户确定哪一项所属的子菜单。  

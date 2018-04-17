@@ -1,21 +1,19 @@
 ---
-title: "控制的可见性图标或修饰器 |Microsoft 文档"
-ms.custom: 
+title: 控制的可见性图标或修饰器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 835d9d356a06c831bb3decf6d0a5a6a4b5620302
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7682bbb448caa6dbd1938dfc6dcdb6d89c083680
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制图标或修饰器的可见性
 A*修饰器*是图标还是在域特定语言 (DSL) 中的一个形状显示的文本行。 可以进行修饰器出现，并根据模型中的属性的状态进行消失。 例如上一个形状上表示个人，, 你可以有不同的图标显示具体取决于该人员的性别，子节点，数量等。  
@@ -67,7 +65,7 @@ A*修饰器*是图标还是在域特定语言 (DSL) 中的一个形状显示的�
   
      **名称**例如**DecoratorControl**  
   
-     **Type** = `Boolean`  
+     **类型** = `Boolean`  
   
      有关详细信息，请参阅[计算和自定义存储属性](../modeling/calculated-and-custom-storage-properties.md)。  
   
@@ -91,7 +89,7 @@ A*修饰器*是图标还是在域特定语言 (DSL) 中的一个形状显示的�
   
 6.  请注意缺少命名空间、 类和方法。  例如，Company.FamilyTree.Person.GetDecoratorControlValue()。  
   
-7.  在单独的代码文件中，编写包含缺失的方法的分部类定义。 例如:  
+7.  在单独的代码文件中，编写包含缺失的方法的分部类定义。 例如：  
   
     ```  
     namespace Company.FamilyTree  
@@ -106,7 +104,7 @@ A*修饰器*是图标还是在域特定语言 (DSL) 中的一个形状显示的�
   
 8.  重新生成并运行解决方案。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [定义形状和连接符](../modeling/defining-shapes-and-connectors.md)   
  [在关系图上设置背景图像](../modeling/setting-a-background-image-on-a-diagram.md)   
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   

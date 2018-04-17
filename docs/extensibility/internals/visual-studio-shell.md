@@ -1,26 +1,24 @@
 ---
-title: "Visual Studio Shell |Microsoft 文档"
-ms.custom: 
+title: Visual Studio Shell |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9240df0a4f551ab4fa47fc2ceacaf0654dc562e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71b624cee0e55f95f90a86eac943828bbc26ac97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]外壳是中的集成主代理[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 Shell 提供必要的功能，以允许 Vspackage 共享公共服务。 因为的体系结构目标[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是在 Vspackage，vest 主功能命令行程序是一个框架，以提供基本功能，并且支持 Vspackage 其组件之间的跨通信。  
@@ -44,9 +42,9 @@ ms.lasthandoff: 12/22/2017
   
     -   当前项目  
   
-    -   当前项目项或 ItemID 当前<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+    -   当前项目项或 ItemID 当前 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-    -   为当前所选内容**属性**窗口或`SelectionContainer`  
+    -   为当前所选内容**属性**窗口或 `SelectionContainer`  
   
     -   UI 上下文 Id 或控制的可见性命令、 菜单和工具栏的 CmdUIGuids  
   
@@ -82,7 +80,7 @@ ms.lasthandoff: 12/22/2017
   
 -   **工具箱**  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>   

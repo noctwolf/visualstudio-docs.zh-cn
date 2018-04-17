@@ -2,29 +2,25 @@
 title: SupportsCodeSeparation 元素 （Visual Studio 模板） |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
 - SupportsCodeSeparation element [Visual Studio Templates]
 - <SupportsCodeSeparation> element [Visual Studio Templates]
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: affe4d6c73271bea467e373bd8100b3b7f06c0ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 元素（Visual Studio 模板）
 指定是否**将代码放在单独的文件**在中启用复选框**添加新项**对话框。  
@@ -64,7 +60,7 @@ ms.lasthandoff: 12/22/2017
   
  `SupportsCodeSeparation`元素功能仅适用于 Web 项模板。  
   
- 单独的代码或代码隐藏页模型，可以将标记保留在一个文件，并在另一个文件中的编程代码。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]和其他.NET 语言使用此模型。  
+ 单独的代码或代码隐藏页模型，可以将标记保留在一个文件，并在另一个文件中的编程代码。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 和其他.NET 语言使用此模型。  
   
 ## <a name="example"></a>示例  
  下面的示例指定要显示**将代码放在单独的文件**选项。  
@@ -91,6 +87,6 @@ ms.lasthandoff: 12/22/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

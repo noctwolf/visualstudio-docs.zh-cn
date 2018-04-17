@@ -1,25 +1,23 @@
 ---
-title: "自定义文件存储和 XML 序列化 |Microsoft 文档"
-ms.custom: 
+title: 自定义文件存储和 XML 序列化 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a15a331d465c2450f0f1e6230eac3415106e860b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2ca1b9f8e6261ae04217b0d74e13073a3683915c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 当用户保存实例，或*模型*，域特定语言 (DSL) 中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，创建或更新的 XML 文件。 可以重新加载文件以重新创建存储区中的模型。  
@@ -53,7 +51,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="the-default-serialization-scheme"></a>默认序列化方案  
  若要创建一个用于本主题的示例，使用以下 DSL 定义。  
   
- ![DSL 定义关系图 &#45;王朝家谱模型](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![DSL 定义关系图&#45;王朝家谱模型](../modeling/media/familyt_person.png "FamilyT_Person")  
   
  此 DSL 用于创建在屏幕具有以下外观的模型。  
   
@@ -101,7 +99,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="understanding-monikers"></a>了解名字对象  
  名字对象用于表示的模型和关系图文件不同部分之间的交叉引用。 它们也用在`.diagram`文件来指代模型文件中的节点。 有两种形式的名字对象：  
   
--   *Id 名字对象*quote 目标元素的 GUID。 例如:  
+-   *Id 名字对象*quote 目标元素的 GUID。 例如：  
   
     ```  
     <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
@@ -275,7 +273,7 @@ ms.lasthandoff: 02/09/2018
 |为自定义|将其设置为**True**如果你想要编写此域类自己序列化和反序列化代码。<br /><br /> 生成解决方案并调查要发现的详细的说明的错误。|  
 |域类|此类数据节点应用到的域类。 只读。|  
 |元素名称|此类的元素的 Xml 节点名称。 默认值为域类名称的小写版本。|  
-|名字对象属性名称|标记元素以包含引用的属性的名称。 如果保留为空，则使用的键属性或 id 的名称。<br /><br /> 在此示例中，它是"name":`<personMoniker name="/Mike Nash"/>`|  
+|名字对象属性名称|标记元素以包含引用的属性的名称。 如果保留为空，则使用的键属性或 id 的名称。<br /><br /> 在此示例中，它是"name":  `<personMoniker name="/Mike Nash"/>`|  
 |标记元素名称|用于引用此类的元素的名字对象的 xml 元素的名称。<br /><br /> 默认值为"标记"后缀的类名称的小写版本。 例如 `personMoniker`。|  
 |标记类型名称|为此类的元素的名字对象生成的 xsd 类型的名称。 XSD 处于**Dsl\Generated 代码\\\*Schema.xsd**|  
 |序列化 Id|如果为 True，在文件中包含该元素 GUID。 这必须是 true，如果没有任何属性标记为可供**名字对象键**和 DSL 定义与此类的引用关系。|  
@@ -306,6 +304,6 @@ ms.lasthandoff: 02/09/2018
 |角色元素名称|指定派生自的源角色的 XML 元素的名称。 默认值为角色属性名称。|  
 |使用完整的窗体|如果为 true，每个目标元素或标记括在 XML 节点表示关系中。 这应设置为 true，如果关系具有其自己的域属性。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)

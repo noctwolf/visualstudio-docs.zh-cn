@@ -2,24 +2,20 @@
 title: 颜色和样式 for Visual Studio |Microsoft 文档
 ms.custom: ''
 ms.date: 07/31/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af9522d5773fd74eabcd3b7fce84b7bd56e0cd2a
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 5cee3ec1308ee103d279a0d77ded4092e4ccf9b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>颜色和 Visual Studio 的样式
 ## <a name="using-color-in-visual-studio"></a>使用 Visual Studio 中的颜色
@@ -79,7 +75,7 @@ Visual Studio 源代码包括多个包定义文件中包含标记名称和每个
 
 有时，你将想要允许最终用户创建的代码编辑器或设计图面时像一样自定义你的 UI。 可自定义 UI 组件都位于**字体和颜色**部分**工具&gt;选项**对话框中，用户可以选择要更改的前景色和 / 或背景色。
 
-![Tools &gt; Options dialog](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />工具&gt;选项对话框
+![工具&gt;选项对话框](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")<br />工具&gt;选项对话框
 
 ##  <a name="BKMK_TheVSColorService"></a> VSColor 服务
 Visual Studio 提供的环境颜色服务，也称为 VSColor 服务或 shell 颜色服务。 此服务，可将你的 UI 元素的颜色值绑定到的名称-值颜色集包含每个主题的颜色。 必须对于所有 UI 元素，使用 VSColor 服务，以便颜色自动改变以反映当前用户所选主题设置，以便 UI 绑定到的环境颜色服务将与和集成新的主题在将来版本的 Visual Studio。

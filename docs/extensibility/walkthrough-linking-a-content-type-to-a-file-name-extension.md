@@ -2,26 +2,22 @@
 title: 演练： 将内容类型链接到的文件名称扩展 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
-caps.latest.revision: 24
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5df3bab0a453f4f8edcff3be86e5a767065b59da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cca12f7c04b51bcf2b695e00d9305a7feb72ebc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>演练： 将内容类型链接到文件扩展名
 你可以定义您自己的内容类型，并将文件扩展名为链接到它，通过使用编辑器 Managed Extensibility Framework (MEF) 扩展。 在某些情况下，文件扩展名已定义由语言服务;不过，将它用于 MEF 你仍必须将其链接到的内容类型。  
@@ -107,5 +103,5 @@ ms.lasthandoff: 12/22/2017
     [ContentType("hid")]  
     ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

@@ -1,28 +1,26 @@
 ---
-title: "CreatePkgDef 实用程序 |Microsoft 文档"
-ms.custom: 
+title: CreatePkgDef 实用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package definition
 - create pkgdef
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 47316f6bd47d5d528dc6e36dfe3a4bcb67e00909
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b8ae53766a42ac2ed218bc92f59088d27e4434e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 实用程序
 采用 Visual Studio 扩展作为参数的.dll 文件，并创建一个.pkgdef 文件随附.dll。 .Pkgdef 文件包含否则将在安装扩展时写入到系统注册表的所有信息。  
@@ -57,5 +55,5 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
 > [!NOTE]
 >  **扩展和更新**工具不能用于访问扩展，除非它作为 VSIX 包的一部分安装。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [CreateExpInstance 实用工具](../../extensibility/internals/createexpinstance-utility.md)

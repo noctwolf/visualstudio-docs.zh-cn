@@ -2,26 +2,22 @@
 title: 演练： 创建边距标志符号 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
-caps.latest.revision: 29
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc813ed3c29c2fe0a4cac1c348ffed18ae8fd2d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 811985ef45fb43b08b771f2bc417a512c290726c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>演练： 创建边距标志符号
 你可以使用自定义编辑器扩展自定义编辑器边距的外观。 本演练将自定义标志符号置于上指示器边距，只要代码注释中显示单词"todo"。  
@@ -59,7 +55,7 @@ ms.lasthandoff: 12/22/2017
      [!code-csharp[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_3.cs)]
      [!code-vb[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_3.vb)]  
   
-5.  实现`GenerateGlyph`通过定义标志符号用户界面 (UI) 元素。 `TodoTag`稍后在本演练定义。  
+5.  实现`GenerateGlyph`通过定义标志符号用户界面 (UI) 元素。 `TodoTag` 稍后在本演练定义。  
   
      [!code-csharp[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_4.cs)]
      [!code-vb[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_4.vb)]  

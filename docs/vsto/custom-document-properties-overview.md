@@ -1,13 +1,10 @@
 ---
-title: "自定义文档属性概述 |Microsoft 文档"
-ms.custom: 
+title: 自定义文档属性概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - _AssemblyName property
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 672eaf3ed82a80983b919a37b2aeff4c99621f43
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: c5ca93d7a761ca8757f0e43ab88cb6586c203160
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-document-properties-overview"></a>Custom Document Properties Overview
 
@@ -35,11 +32,11 @@ ms.lasthandoff: 02/20/2018
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="assemblyname"></a>\_AssemblyName
+## <a name="assemblyname"></a>\_程序集名称
 
 此属性包含中的 Office 解决方案加载程序组件的接口的 CLSID [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 CLSID 值为 4E3C66D5-58 D 4-491E-A7D4-64AF99AF6E8B。 你应该永不更改此值。
 
-## <a name="assemblylocation"></a>\_AssemblyLocation
+## <a name="assemblylocation"></a>\_程序集位置
 
 此属性包含的自定义项中提供有关部署清单的详细信息的字符串。 有关清单的详细信息，请参阅[应用程序和部署清单在 Office 解决方案中](../vsto/application-and-deployment-manifests-in-office-solutions.md)。
 

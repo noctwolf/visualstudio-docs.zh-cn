@@ -1,21 +1,19 @@
 ---
-title: "域特定语言入门 |Microsoft 文档"
-ms.custom: 
+title: 域特定语言入门 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 68b750735c8f5d5f6bd7f1497565692c8836914c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 791686b948c5a0541cbe8f8cb420f38ef885c9d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>域特定语言入门
 本主题介绍中定义和使用的建模 SDK for Visual Studio 创建域特定语言 (DSL) 的基本概念。
@@ -102,7 +100,7 @@ ms.lasthandoff: 02/09/2018
   
 -   **DslPackage 项目**此项目包含允许的 DSL 来打开和编辑 Visual Studio 中的实例的代码。  
   
-##  <a name="Debugging"></a>运行 DSL  
+##  <a name="Debugging"></a> 运行 DSL  
  一旦你已创建，则可以运行 DSL 解决方案。 更高版本，你可以修改 DSL 定义逐渐，每项更改后再次运行解决方案。  
   
 #### <a name="to-experiment-with-the-dsl"></a>尝试使用 DSL  
@@ -198,7 +196,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  在 DslDefinition 图中，重命名**ExampleModel**到**FamilyTreeModel**， **ExampleElement**到**人员**， **目标**到**父级**，和**源**到**子级**。 你可以单击每个标签以更改它。  
   
-     ![DSL 定义关系图 &#45;王朝家谱模型](../modeling/media/familyt_person.png "FamilyT_Person")  
+     ![DSL 定义关系图&#45;王朝家谱模型](../modeling/media/familyt_person.png "FamilyT_Person")  
   
 2.  重命名的元素和连接器工具。  
   
@@ -391,7 +389,7 @@ ms.lasthandoff: 02/09/2018
   
  有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
-##  <a name="Reset"></a>删除旧的实验 Dsl  
+##  <a name="Reset"></a> 删除旧的实验 Dsl  
  如果你已创建但不再希望的实验 dsl 相关联，可以从您的计算机重置的 Visual Studio 实验实例来删除它们。  
   
  这将从计算机中删除你所有实验 Dsl 和其他实验性 Visual Studio 扩展。 这些是在调试模式下执行的扩展。  

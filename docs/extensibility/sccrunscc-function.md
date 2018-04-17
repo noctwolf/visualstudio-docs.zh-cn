@@ -2,28 +2,24 @@
 title: SccRunScc 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccRunScc
 helpviewer_keywords:
 - SccRunScc function
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ad179325c4f34cd206a3c5e6b0840a69dd46037
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 322ebe148144260106fb895273b66e1b9f5696f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函数
 此函数将调用源代码管理管理工具。  
@@ -55,7 +51,7 @@ SCCRTN SccRunScc(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功调用了源代码管理管理工具。|  
 |SCC_I_OPERATIONCANCELED|已取消该操作。|  
@@ -72,7 +68,7 @@ SCCRTN SccRunScc(
   
  当用户选择通常调用此函数**启动\<源代码管理服务器 >**从**文件** -> **源代码管理**菜单。 这**启动**菜单选项可始终处于禁用状态或甚至隐藏通过设置注册表项。 请参阅[如何： 安装源代码管理插件](../extensibility/internals/how-to-install-a-source-control-plug-in.md)有关详细信息。 仅当调用此函数[SccInitialize](../extensibility/sccinitialize-function.md)返回`SCC_CAP_RUNSCC`功能位 (请参阅[功能标志](../extensibility/capability-flags.md)有关此选项及其他功能位的详细信息)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [如何： 安装了源代码管理插件](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [功能标志](../extensibility/capability-flags.md)   

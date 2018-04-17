@@ -1,26 +1,24 @@
 ---
-title: "源控件插件术语表 |Microsoft 文档"
-ms.custom: 
+title: 源控件插件术语表 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 - source control plug-ins, glossary
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b77cc0ea260ae86460de3c7a7752277a99291778
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ccfd4cbbbca86d3b6e93d9998410c5dea117328d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-plug-in-glossary"></a>源控件插件术语表
 以下有用的术语和定义适用于源控件插件 SDK 文档。  
@@ -68,5 +66,5 @@ ms.lasthandoff: 12/22/2017
  Revision  
  文件历史记录或文件组已提交的更改。 修订都是一个持续不断变化的项目中的快照。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理插件](../extensibility/source-control-plug-ins.md)

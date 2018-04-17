@@ -1,22 +1,19 @@
 ---
-title: "映像服务和目录 |Microsoft 文档"
-ms.custom: 
+title: 映像服务和目录 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d9b393d9dcf732d9042338dc0786d824351deca3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-service-and-catalog"></a>映像服务和目录
 此指南包含指导和采用 Visual Studio 映像服务和 Visual Studio 2015 中引入的映像目录的最佳做法。  
@@ -176,7 +173,7 @@ ms.lasthandoff: 12/22/2017
 ||||  
 |-|-|-|  
 |**元素**|**属性 （所有所需）**|**定义**|  
-|\<大小 >|“值”|源将用于给定的大小 （以设备为单位） 的映像。 图像将正方形。|  
+|\<大小 >|值|源将用于给定的大小 （以设备为单位） 的映像。 图像将正方形。|  
 |\<SizeRange >|MinSize，最大大小|源将可用于映像从 MinSize 到最大大小 （以设备为单位） （含）。 图像将正方形。|  
 |\<维度 >|宽度、 高度|源将用于给定的宽度和高度 （以设备为单位） 的映像。|  
 |\<DimensionRange >|MinWidth，MinHeight，<br /><br /> MaxWidth MaxHeight|源将用于从最小宽度/高度最大宽度/高度 （以设备为单位） 的映像 （含）。|  
@@ -660,7 +657,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ### <a name="samples"></a>示例  
  已更新多个在 GitHub 上的 Visual Studio 示例来演示如何使用映像服务一部分的各个 Visual Studio 扩展点。  
   
- 检查[http://github.com/Microsoft/VSSDK-Extensibility-Samples](http://github.com/Microsoft/VSSDK-Extensibility-Samples)有关最新示例。  
+ 检查[ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples)有关最新示例。  
   
 ### <a name="tooling"></a>工具  
  创建一组映像服务的支持工具以帮助创建/更新适用于映像服务的用户界面。 有关每个工具的详细信息，请检查工具所附带的文档。 这些工具是的一部分包括[Visual Studio 2015 SDK。](http://msdn.microsoft.com/library/bb166441.aspx)  

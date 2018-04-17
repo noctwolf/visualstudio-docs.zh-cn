@@ -1,23 +1,21 @@
 ---
-title: "Roslyn 分析器和代码识别库 ImmutableArrays |Microsoft 文档"
-ms.custom: 
+title: Roslyn 分析器和代码识别库 ImmutableArrays |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6870f1733d507f2cf46d196b2bba027b998b5ba4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6ebafdd09e6fca0e1266c4eb03c4f6cb66554d06
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和代码识别 ImmutableArrays 库
 
@@ -28,8 +26,8 @@ ms.lasthandoff: 12/22/2017
 需要下列项才能生成此示例：
 
 * Visual Studio 2015 (非 Express Edition) 或更高版本。  你可以使用免费[Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
-* [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  你也可以在安装 Visual Studio 中，检查在常用的工具在同一时间安装 SDK 的 Visual Studio 扩展性工具。  如果你已安装 Visual Studio，则还可以通过转到主菜单来安装此 SDK**文件 &#124;新 &#124;项目...**，在左侧的导航窗格中，选择 C#，然后选择扩展性。  当你选择"**安装 Visual Studio 扩展性工具**"痕迹导航项目模板，它将提示你下载并安装 SDK。
-* [.NET compiler Platform ("Roslyn") SDK](http://aka.ms/roslynsdktemplates)。  你还可以通过转到主菜单上安装此 SDK**文件 &#124;新 &#124;项目...**，选择**C#**在左侧的导航窗格中，并选择**扩展性**。  当你选择"**下载.NET 编译器平台 SDK**"痕迹导航项目模板，它将提示你下载并安装 SDK。  此 SDK 包括[Roslyn 语法可视化工具](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。  找出哪些代码模型类型此非常有用的工具可帮助你应该查找你分析器中。  到你的代码的特定代码模型类型，因此你的代码仅在必要时执行，并可以专注于分析相关的代码仅在分析器基础结构调用。
+* [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  你也可以在安装 Visual Studio 中，检查在常用的工具在同一时间安装 SDK 的 Visual Studio 扩展性工具。  如果你已安装 Visual Studio，则还可以通过转到主菜单来安装此 SDK**文件&#124;新建&#124;项目...**，在左侧的导航窗格中，选择 C#，然后选择扩展性。  当你选择"**安装 Visual Studio 扩展性工具**"痕迹导航项目模板，它将提示你下载并安装 SDK。
+* [.NET compiler Platform ("Roslyn") SDK](http://aka.ms/roslynsdktemplates)。  你还可以通过转到主菜单上安装此 SDK**文件&#124;新建&#124;项目...**，选择**C#**在左侧的导航窗格中，并选择**扩展性**。  当你选择"**下载.NET 编译器平台 SDK**"痕迹导航项目模板，它将提示你下载并安装 SDK。  此 SDK 包括[Roslyn 语法可视化工具](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。  找出哪些代码模型类型此非常有用的工具可帮助你应该查找你分析器中。  到你的代码的特定代码模型类型，因此你的代码仅在必要时执行，并可以专注于分析相关的代码仅在分析器基础结构调用。
 
 ## <a name="whats-the-problem"></a>怎么了？
 
@@ -59,13 +57,13 @@ Console.WriteLine("b2.Length = { 0}", b2.Length);
 
 ## <a name="finding-relevant-syntax-node-types-to-trigger-your-analyzer"></a>查找相关的语法来触发你分析器的节点类型
 
- 若要开始生成分析器，首先计算出需要查找 SyntaxNode 哪种类型。 启动从菜单语法可视化工具**视图 &#124;其他 Windows &#124;Roslyn 语法可视化工具**。
+ 若要开始生成分析器，首先计算出需要查找 SyntaxNode 哪种类型。 启动从菜单语法可视化工具**视图&#124;其他窗口&#124;Roslyn 语法可视化工具**。
 
 编辑器的光标放置在声明行上`b1`。  你将看到语法可视化工具显示处于`LocalDeclarationStatement`的语法树的节点。  此节点具有`VariableDeclaration`，该子元素又具有`VariableDeclarator`，该子元素又具有`EqualsValueClause`，并且最后没有`ObjectCreationExpression`。  当单击节点的语法可视化工具树中时，在编辑器窗口中的语法突出显示，以显示该节点表示的代码。  SyntaxNode 子类型的名称匹配的 C# 语法中使用的名称。
 
 ## <a name="creating-the-analyzer-project"></a>创建分析器项目
 
-在主菜单中选择**文件 &#124;新 &#124;项目...**.在**新项目**对话框下**C#**项目在左侧的导航栏中，选择扩展，然后在右窗格中选择**与代码修复分析器**项目模板。  输入一个名称，然后确认对话框。
+在主菜单中选择**文件&#124;新建&#124;项目...**.在**新项目**对话框下**C#**项目在左侧的导航栏中，选择扩展，然后在右窗格中选择**与代码修复分析器**项目模板。  输入一个名称，然后确认对话框。
 
 模板将打开 DiagnosticAnalyzer.cs 文件。  选择该编辑器缓冲区选项卡。此文件具有分析器类 (格式为项目指定的名称)，派生自`DiagnosticAnalyzer`（Roslyn API 类型）。  你的新类`DiagnosticAnalyzerAttribute`声明你分析器是与 C# 语言，以便编译器发现并加载你分析器。
 
@@ -312,7 +310,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 你可以看到所有完成的代码[此处](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)。  子文件夹 DoNotUseImmutableArrayCollectionInitializer 和 DoNotUseImmutableArrayCtor 每个已为查找问题和 C# 文件中实现的代码的修补程序显示在 Visual Studio 电灯泡 UI C# 文件。  请注意，完成的代码有少量的多个抽象，以免提取 ImmutableArray\<T > 反复类型对象。  它使用嵌套的已注册的操作将类型对象保存在可用的上下文中时的子操作 （分析对象创建和分析集合初始化） 执行。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 * [\\\Build 2015 talk](http://channel9.msdn.com/events/Build/2015/3-725)
 * [在 GitHub 上的已完成的代码](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

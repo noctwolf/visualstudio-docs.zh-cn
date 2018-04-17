@@ -2,12 +2,9 @@
 title: VSIX 清单设计器 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-caps.latest.revision: 20
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d7af3ab109c922a8182a93db6852a331229ceca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b90f8acd95d913e563ff167e21b743cbffec2ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 清单设计器
 修改 VSIX 包清单文件，它设置 Visual Studio 扩展的安装行为。  
@@ -154,6 +150,6 @@ ms.lasthandoff: 12/22/2017
   
  标识符必须与匹配`ID`的依赖项包元数据的属性。 源可以是当前的解决方案、 当前安装的扩展或文件中的项目。 **如何为依赖关系解析**设置可以是嵌套的包相对路径或依赖项的下载位置的 URL。 ID、 版本和依赖项包的分辨率对应于`Id`， `Version`，和`Location`属性关联的`Dependency`元素。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [VSIX 扩展架构 2.0 参考](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)

@@ -1,25 +1,22 @@
 ---
-title: "VSPackage 安装方案 |Microsoft 文档"
-ms.custom: 
+title: VSPackage 安装方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 452a5cfee55bd314bb062d2d1ddd8496593190fa
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: b58400330bb2032354d28a7b76729a5d7f85fd3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安装方案
 
@@ -81,7 +78,7 @@ ms.lasthandoff: 02/28/2018
 
 通过并行程序集部署的详细信息，请参阅[简化部署和使用.NET Framework 解决 DLL 灾难](http://msdn.microsoft.com/library/ms973843.aspx)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-[Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)  
+[Windows 安装程序](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)  
 [支持多个版本的 Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

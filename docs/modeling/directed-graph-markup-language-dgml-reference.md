@@ -1,21 +1,19 @@
 ---
-title: "定向图形标记语言 (DGML) 引用 |Microsoft 文档"
-ms.custom: 
+title: 定向图形标记语言 (DGML) 引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cfa143669f757a3a71ddb89ea731ffbfc5059d24
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 49ae2e854908afa6b7decb7ea94cca63b4203fbe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>定向图形标记语言 (DGML) 引用
 定向图形标记语言 (DGML) 描述用于可视化和执行复杂分析的信息，并且是用于存留 Visual Studio 中的代码图的格式。 DGML 使用简单 XML 来描述循环和非循环的定向关系图。 定向关系图是一组由链接或边缘连接的节点。 可以使用节点和链接来表示网络结构，如软件项目中的元素。  
@@ -25,7 +23,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  在编辑 .dgml 文件时，IntelliSense 可帮助您标识对每个元素及其值可用的特性。 若要指定特性中的颜色，请使用常用颜色的名称，如“Blue”或 ARGB 十六进制值（如“#ffa0b1c3”）。 DGML 使用一小部分 Windows Presentation Foundation (WPF) 颜色定义格式。 有关详细信息，请参阅[颜色类](http://go.microsoft.com/fwlink/?LinkId=182345)。  
   
-##  <a name="DGML"></a>DGML 语法  
+##  <a name="DGML"></a> DGML 语法  
  下表描述在 DGML 中使用的各种元素：  
   
 -   `<DirectedGraph></DirectedGraph>`  
@@ -95,7 +93,7 @@ ms.lasthandoff: 02/09/2018
   
      下面的列表描述可包含的部分可选特性：  
   
-     `Label`的节点显示名称。  
+     `Label` 的节点显示名称。  
   
      样式特性。 请参阅 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
   
@@ -301,7 +299,7 @@ ms.lasthandoff: 02/09/2018
     </DirectedGraph>  
     ```  
   
-###  <a name="AddAlias"></a>常用路径的别名  
+###  <a name="AddAlias"></a> 常用路径的别名  
  将常用路径替换为别名有助于减小 .dgml 文件的大小和加载或保存该文件所需的时间。 若要创建别名，请在 .dgml 文件的结尾处添加 `<Paths></Paths>` 部分。 在此部分添加 `<Path/>` 元素以定义路径的别名：  
   
 ```xml  
@@ -321,7 +319,7 @@ ms.lasthandoff: 02/09/2018
 </Properties>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)   
  [使用代码图调试你的应用程序](../modeling/use-code-maps-to-debug-your-applications.md)   
  [使用代码图分析查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)

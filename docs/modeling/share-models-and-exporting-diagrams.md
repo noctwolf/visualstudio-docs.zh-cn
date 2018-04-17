@@ -1,29 +1,27 @@
 ---
-title: "共享模型和导出关系图 |Microsoft 文档"
-ms.custom: 
+title: 共享模型和导出关系图 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8a615fcbd55d8520e2c340d3b1d0afe0321fd1f9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a40e35ef01698639f89aa64cc1494d7721506895
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="share-models-and-exporting-diagrams"></a>共享模型和导出关系图
 在 Visual Studio 中，你可以通过多种方式与同事共享模型和关系图。  
   
- 若要查看支持此功能的 Visual Studio 的版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="working-on-a-model-as-a-team"></a>作为团队处理模型  
  Visual Studio 的用户可以创建和编辑模型、 依赖项关系图和定向关系图。  
@@ -35,7 +33,7 @@ ms.lasthandoff: 02/09/2018
  有关组织中型或大型项目中的模型的建议，请参阅[结构建模解决方案](../modeling/structure-your-modeling-solution.md)。  
   
 ## <a name="reading-and-reviewing-models"></a>读取和查看模型  
- 使用某些版本的 Visual Studio （这不能创建模型） 的团队成员可以读取模型、 建模关系图和定向关系图，但不能对其进行编辑。  若要查看支持此功能的 Visual Studio 的版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 使用某些版本的 Visual Studio （这不能创建模型） 的团队成员可以读取模型、 建模关系图和定向关系图，但不能对其进行编辑。  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
  仅在其中创建的模型中，可以打开依赖项关系图。 若要提供对关系图的访问，你必须提供对所有建模项目文件的访问，或提供其副本。  
   
@@ -54,5 +52,5 @@ ms.lasthandoff: 02/09/2018
 |[将关系图导出为图像](../modeling/export-diagrams-as-images.md)|你可以将部分关系图复制到 PowerPoint 或 Word 等应用程序，或将关系图打印到 XPS 文件。|  
 |[体系结构分析和建模](../modeling/analyze-and-model-your-architecture.md)|模型和关系图概述|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)

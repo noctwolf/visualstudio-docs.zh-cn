@@ -2,28 +2,24 @@
 title: SccPopulateList 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
 - SccPopulateList function
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 474bb834d36661c7cd85b98db78c13f619d7cba6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26e7bbb4a99c3cd649eedb7638feb5b6170b3b59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函数
 此函数更新的特定源控件命令的文件列表，并提供所有给定文件的源代码管理状态。  
@@ -71,7 +67,7 @@ SCCRTN SccPopulateList (
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|成功。|  
 |SCC_E_NONSPECIFICERROR|非特定的失败。|  
@@ -87,7 +83,7 @@ SCCRTN SccPopulateList (
 > [!NOTE]
 >  源代码管理插件始终可以选择只需从此函数，因为它是离开列表立即返回。 如果插件实现此函数，则可以通过设置表示此`SCC_CAP_POPULATELIST`功能首次调用中的位标志[SccInitialize](../extensibility/sccinitialize-function.md)。 默认情况下，插件应始终假设的文件正在传递的所有项。 但是，如果 IDE 设置`SCC_PL_DIR`中标记出来`fOptions`参数，正在传递的所有项都都视为目录。 插件应将添加所属的所有文件的目录中。 IDE 永远不会将传入文件和目录的混合。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)   

@@ -1,23 +1,21 @@
 ---
-title: "如何： 更改域特定语言的 Namespace |Microsoft 文档"
-ms.custom: 
+title: 如何： 更改域特定语言的 Namespace |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 468cf24ccb16452c93583b2aa99af560d920bcf4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0e05aaf6d8049aa780b9b00843ca8382463f1c31
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何：更改域特定语言的命名空间
 你可以更改域特定语言的命名空间。 必须进行的更改**DSL 资源管理器**、 Dsl 包项目的属性以及中的程序集信息。  

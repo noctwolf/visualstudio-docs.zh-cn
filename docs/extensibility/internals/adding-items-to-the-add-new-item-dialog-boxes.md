@@ -2,26 +2,22 @@
 title: 将项添加到添加新项对话框 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a24a6d531812a170768f8c100f14ad64ab1e68c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>将项添加到添加新项对话框
 将项添加到的过程**添加新项**对话框开头的注册表项。 下列注册表项中所示，AddItemTemplates 部分包含的路径和名称在中可用的项中的目录**添加新项**放对话框。  
@@ -41,7 +37,7 @@ ms.lasthandoff: 12/22/2017
   
  "SortPriority"= dword:00000064  
   
-|name|类型|数据 （来自.rgs file)|描述|  
+|名称|类型|数据 （来自.rgs file)|描述|  
 |----------|----------|-----------------------------|-----------------|  
 |@ （默认值）|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY %|资源 ID**添加项**模板。|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\SomeProjectItems|在对话框中显示的项目项路径**添加新项**向导。|  
@@ -69,7 +65,7 @@ ms.lasthandoff: 12/22/2017
  例如，在 Visual Basic 项目中，您可能 Web 项目和客户端项目。 Web 窗体不是有用的项将添加到客户端项目，且 windows 窗体不是有用的项将添加到 Web 服务器项目。 因此，你可以创建一个包含两种类型的项目的所有文件的模板目录。 然后通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>，您可以隐藏不应显示基于项目或项目中的项目设置的类型的项目。  
   
 ## <a name="filtering-project-items"></a>筛选的项目项  
- `IVsFilterAddProjectItemDlg2`提供用于通过以下方式筛选树 （左窗格中） 和项目文件 （右窗格） 中的元素：  
+ `IVsFilterAddProjectItemDlg2` 提供用于通过以下方式筛选树 （左窗格中） 和项目文件 （右窗格） 中的元素：  
   
 -   本地化的名称 （.vsdir 文件中包含的对话框中显示的标题） 通过提供`IVsFilterAddProjectItemDlg`。  
   
@@ -81,7 +77,7 @@ ms.lasthandoff: 12/22/2017
   
  如果你实现此筛选器功能，你不需要映射应隐藏的每个项的表。 你只需对项进行分类为类型并置于.vsdir 文件或文件的分类。 然后您可以隐藏所有通过实现该接口具有特定分类的项。 在这种方式，可以进行中的项**添加新项**对话框框中动态基于项目中的状态。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)   
  [通常用于扩展项目的对象的 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   

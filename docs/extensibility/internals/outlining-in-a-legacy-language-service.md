@@ -1,27 +1,25 @@
 ---
-title: "旧语言服务中的大纲显示 |Microsoft 文档"
-ms.custom: 
+title: 旧语言服务中的大纲显示 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining
 - language services [managed package framework], outlining
 - outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 76f47edd31892a98ec3235bfc4a00f5f2e647408
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b899f53ba6b2a0b58997cc51a83a0d9ca8480e63
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>旧语言服务中的大纲显示
 以大纲方式显示使可以折叠到概述或大纲复杂程序。 例如，在 C# 中的所有方法可以都折叠导航到单个行中，显示仅方法签名。 此外，结构和类可以折叠以仅显示的名称的结构和类。 在单一方法中，可以折叠复杂的逻辑以通过如显示仅语句的第一行中显示的总体流程`foreach`， `if`，和`while`。  
@@ -121,6 +119,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [旧语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [注册旧语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)

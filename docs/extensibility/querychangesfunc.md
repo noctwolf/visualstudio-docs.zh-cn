@@ -1,30 +1,26 @@
 ---
-title: "QUERYCHANGESFUNC |Microsoft 文档"
-ms.custom: 
+title: QUERYCHANGESFUNC |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - QUERYCHANGESFUNC
 helpviewer_keywords:
 - QUERYCHANGESFUNC callback function
 - QUERYCHANGESDATA structure
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43add362011b31ce695e9a8d9e77d6ca2dedb0e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d1df5f21ffed27c45ebee6315fcc29ee1dcc8fa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 这是由一个回调函数[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作枚举文件名称的集合，并确定每个文件的状态。  
@@ -50,13 +46,13 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>返回值  
  IDE 返回相应的错误代码：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|继续进行处理。|  
 |SCC_I_OPERATIONCANCELED|停止处理。|  
 |SCC_E_xxx|任何相应的 SCC 错误应停止处理。|  
   
-##  <a name="LinkQUERYCHANGESDATA"></a>QUERYCHANGESDATA 结构  
+##  <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 结构  
  每个文件中传递的结构如下所示：  
   
 ```cpp  
@@ -104,7 +100,7 @@ struct QUERYCHANGESDATA_W
  lpLatestName  
  此项的当前文件名称。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [由 IDE 实现的回调函数](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)   
  [错误代码](../extensibility/error-codes.md)

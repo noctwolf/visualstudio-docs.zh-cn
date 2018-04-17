@@ -1,27 +1,23 @@
 ---
-title: "何时创建项目类型 |Microsoft 文档"
-ms.custom: 
+title: 何时创建项目类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f766619054ed1912d677ac08fad511cfd3a3dcb4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 732d71e09d00cd5dbaa077b8a62e240fe401540b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="when-to-create-project-types"></a>何时创建项目类型
 创建新的项目类型提供了用于自定义的基础[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]为你的用户。 但是，创建新的项目类型不需要所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]自定义项。 以下准则可帮助您确定是否为你的方案需要新的项目类型。  
@@ -63,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="create-a-project-subtype"></a>创建项目子类型  
  你可以使用项目子类型而无需创建新的项目类型扩展的托管的项目类型。 项目子类型使用 COM 聚合来扩展在 Microsoft 中编写的托管的项目[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]。 使用 COM 聚合，可以重复使用的托管的项目系统实现大部分并仍用于特定方案通过聚合和支持接口使用自定义。 有关项目子类型的详细信息，请参阅[项目子类型](../../extensibility/internals/project-subtypes.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [文档窗口和编辑器](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)   
  [清单： 创建新项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)

@@ -1,26 +1,24 @@
 ---
-title: "验证旧语言服务中的断点 |Microsoft 文档"
-ms.custom: 
+title: 验证旧语言服务中的断点 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 85d9add1e66fdde2fcdbfd5c83bf99b6180a4642
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 03bf1534789ba24e1bbf597874ea427057073b61
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>验证旧语言服务中的断点
 断点指示它在调试器中运行时程序执行应停止某个特定点。 由于编辑器中具有不知道什么构成有效的断点位置，用户可以在源文件中的任意行上放置一个断点。 当启动调试器时，所有 （称为挂起断点） 的标记断点绑定到正在运行的程序中的适当位置。 在同一时间断点进行验证以确保它们标记的有效代码位置。 例如上注释, 的断点无效，因为在该位置的源代码中没有任何代码。 调试器将禁用无效的断点。  
@@ -102,5 +100,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [旧语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)

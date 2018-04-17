@@ -1,27 +1,25 @@
 ---
-title: "卸载使用 Windows Installer VSPackage |Microsoft 文档"
-ms.custom: 
+title: 卸载使用 Windows Installer VSPackage |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - packages, uninstalling
 - VSPackages, uninstalling
 - uninstalling VSPackages
 ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ee8ad89e02dfa8aebbb39a9d7ebe523ad01bb7e9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d8a62692003b26afcd5b7814bdc03320fa1c453a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>卸载使用 Windows Installer VSPackage
 Windows Installer 大多数情况下，可以只需通过卸载你的 VSPackage"撤消"它未安装你的 VSPackage。 自定义操作中所述[命令，必须为运行后安装](../../extensibility/internals/commands-that-must-be-run-after-installation.md)必须也卸载后运行。 由于指向 devenv.exe 的调用发生在安装和卸载的情况下了 InstallFinalize 标准操作之前，所以 CustomAction 和 InstallExecuteSequence 表条目将用作这两种情况。  
@@ -40,8 +38,8 @@ Windows Installer 大多数情况下，可以只需通过卸载你的 VSPackage"
  一种替代方法是将添加`OR Installed`来启动卸载过程并不重要的条件。 这将确保该条件在卸载期间始终为 true，且因此不会显示启动条件错误消息。  
   
 > [!NOTE]
->  `Installed`是 Windows Installer 设置在检测到你的 VSPackage，已安装在系统上的属性。  
+>  `Installed` 是 Windows Installer 设置在检测到你的 VSPackage，已安装在系统上的属性。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Windows 安装程序](http://msdn.microsoft.com/en-us/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
  [检测系统要求](../../extensibility/internals/detecting-system-requirements.md)

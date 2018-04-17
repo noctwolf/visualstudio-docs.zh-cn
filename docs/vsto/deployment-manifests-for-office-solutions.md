@@ -1,12 +1,10 @@
 ---
-title: "部署 Office 解决方案的清单 |Microsoft 文档"
-ms.custom: 
+title: 部署 Office 解决方案的清单 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, deployment manifests
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0cbee926a2f9590526b11c1fb1ad70cfa2013011
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e1276650d38f16f8ccc36720f7e273472e609367
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Office 解决方案的部署清单
   部署清单是 XML 文件，用于描述 Office 解决方案的部署设置，并标识当前的应用程序版本。  
@@ -186,7 +185,7 @@ ms.lasthandoff: 01/10/2018
 </asmv1:assembly>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)  
   
   

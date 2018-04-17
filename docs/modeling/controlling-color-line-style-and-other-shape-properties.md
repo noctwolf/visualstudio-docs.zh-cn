@@ -1,21 +1,19 @@
 ---
-title: "控制颜色、 线条样式和其他形状属性 |Microsoft 文档"
-ms.custom: 
+title: 控制颜色、 线条样式和其他形状属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5903c6cc79e637514b75c9e44cb4cbe5c0342ee7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e49e6cbc6ecfba85e2c2684b0a7e71e05757ab59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>控制颜色、线型和其他形状属性
 某些形状属性如颜色可以公开-即，链接到形状的域属性。 其他需要直接控制。  
@@ -28,7 +26,7 @@ ms.lasthandoff: 02/09/2018
  形状现在具有一个域属性，你可以在程序代码中或作为用户设置。  
   
 ## <a name="dynamically-updating-an-exposed-property"></a>动态更新公开的属性  
- 通常，你想要公开的属性依赖于另一个属性。 例如，你可能想小于零的某个形状将特定域属性时变为红色。 若要使此依赖关系，创建[规则](../modeling/rules-propagate-changes-within-the-model.md)。 例如:  
+ 通常，你想要公开的属性依赖于另一个属性。 例如，你可能想小于零的某个形状将特定域属性时变为红色。 若要使此依赖关系，创建[规则](../modeling/rules-propagate-changes-within-the-model.md)。 例如：  
   
 ```csharp  
 using System;  

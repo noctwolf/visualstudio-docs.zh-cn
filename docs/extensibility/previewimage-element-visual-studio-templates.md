@@ -1,26 +1,24 @@
 ---
-title: "PreviewImage 元素 （Visual Studio 模板） |Microsoft 文档"
-ms.custom: 
+title: PreviewImage 元素 （Visual Studio 模板） |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <PreviewImage> Element (Visual Studio Templates)
 - PreviewImage Element (Visual Studio Templates)
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 56cef17add36ae1310b94421bfcf8a31951e00be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ee25a764326572531e02eb91985aa6150c310715
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 元素（Visual Studio 模板）
 指定作为文件名称，对于预览图像将出现在预览图像，**新项目**或**添加新项**对话框。  
@@ -58,6 +56,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="remarks"></a>备注  
  `PreviewImage` 是可选元素。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

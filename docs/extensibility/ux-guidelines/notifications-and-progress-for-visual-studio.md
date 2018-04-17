@@ -1,28 +1,24 @@
 ---
-title: "通知和 for Visual Studio 的进度 |Microsoft 文档"
-ms.custom: 
+title: 通知和 for Visual Studio 的进度 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 237ed5c382a6ac880b0be59165a33ad338370976
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>通知和 for Visual Studio 的进度
-##  <a name="BKMK_NotificationSystems"></a>通知系统  
+##  <a name="BKMK_NotificationSystems"></a> 通知系统  
   
 ### <a name="overview"></a>概述  
  有多种方法向用户通知发生了什么情况 Visual Studio 中有关其软件开发任务。  
@@ -61,14 +57,14 @@ ms.lasthandoff: 02/01/2018
   
 ### <a name="notification-methods"></a>通知方法  
   
-####  <a name="BKMK_ModalErrorMessageDialogs"></a>模式错误消息对话框  
+####  <a name="BKMK_ModalErrorMessageDialogs"></a> 模式错误消息对话框  
  模式错误消息对话框用于显示错误消息，要求用户确认或操作。  
   
  ![模式错误消息](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "0901年 01_ModalErrorMessage")  
   
  **警报数据库无效的连接字符串的用户模式错误消息对话框**  
   
-####  <a name="BKMK_IDEStatusBar"></a>IDE 状态栏会显示  
+####  <a name="BKMK_IDEStatusBar"></a> IDE 状态栏会显示  
  用户注意到状态栏文本的可能性关联到其综合性计算机体验和特定 Windows 平台的体验。 Visual Studio 客户群往往是这两个方面的经验，但即使经验丰富的 Windows 用户可能缺少状态栏中的更改。 因此，状态栏最好使用用于信息说明或作为冗余提示信息的信息显示在其他位置。 在对话框中或在通知工具窗口中，应提供任何类型的用户必须立即解决的关键信息。  
   
  Visual Studio 状态栏旨在允许的几种类型的信息显示。 此方案分为反馈、 设计器、 进度栏、 动画和客户端的区域。  
@@ -81,59 +77,59 @@ ms.lasthandoff: 02/01/2018
   
  **IDE 状态栏颜色**  
   
-####  <a name="BKMK_EmbeddedInfobar"></a>嵌入式信息栏  
+####  <a name="BKMK_EmbeddedInfobar"></a> 嵌入式信息栏  
  可以在文档窗口或工具窗口顶部的使用信息栏，以通知状态或条件的用户。 它还可以提供命令，以便用户可以具有一方式来轻松地执行操作。 信息栏是一个标准的 shell 控件。 避免创建你自己，这将执行操作，并显示与其他人在 IDE 中不一致。 请参阅[信息栏](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)实现详细信息和使用指南。  
   
  ![嵌入的信息栏](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901年 03_EmbeddedInfobar")  
   
  **信息栏嵌入在文档窗口中，警报 IDE 处于历史调试模式和编辑器将不会响应方式相同方式与其在标准调试模式下的用户。**  
   
-####  <a name="BKMK_MouseCursorChanges"></a>鼠标光标更改  
+####  <a name="BKMK_MouseCursorChanges"></a> 鼠标光标更改  
  当将鼠标光标更改，使用绑定到 VSColor 服务，并且已与游标关联的颜色。 光标发生变化，可用于指示正在进行的操作，以及命中的区域用户悬停的目标，可以拖动、 放置到，或用于选择的对象的位置。  
   
  仅当所有可用的 CPU 时间必须保留对于操作，防止用户表达任何进一步的输入时，请使用忙/等待鼠标光标。 在使用多线程处理的正确编写应用程序的大多数情况下，当不允许用户执行其他操作的时间应该很少见。  
   
  请记住光标发生变化，可按所提供冗余信息提示提供其他位置。 不要依赖于光标更改作为用户必须解决是非常关键的尤其是在尝试传递的内容与用户进行通信的唯一方式。  
   
-####  <a name="BKMK_NotSysProgressIndicators"></a>进度指示器  
+####  <a name="BKMK_NotSysProgressIndicators"></a> 进度指示器  
  进度指示器很重要，在需要超过几秒钟来完成的过程将用户提供反馈。 可以显示进度指示器的就地 （附近正在进行的操作的启动点），在嵌入的状态栏中、 在模式对话框中，或在 Visual Studio 的状态栏中。 请按照中的指导[进度指示器](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators)有关它们的使用和实现。  
   
-####  <a name="BKMK_VSNotificationsToolWindow"></a>Visual Studio 通知窗口  
+####  <a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio 通知窗口  
  Visual Studio 通知窗口通知开发人员的有关许可、 环境 (Visual Studio)、 扩展和更新。 用户可以消除单独通知，或者可以选择忽略某些类型的通知。 在中管理忽略的通知列表**工具 > 选项**页。  
   
  通知窗口不是当前可扩展的。  
   
- ![Visual Studio Notifications window](../../extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "0901-06_VSNotificationsWindow")  
+ ![Visual Studio 通知窗口](../../extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "0901年 06_VSNotificationsWindow")  
   
  **Visual Studio 通知工具窗口**  
   
-####  <a name="BKMK_ErrorList"></a>错误列表  
+####  <a name="BKMK_ErrorList"></a> 错误列表  
  错误列表中的通知指示错误和警告的编译过程中发生和或生成过程中，并允许用户在该特定代码错误的代码中进行导航。  
   
- ![Error list](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901-08_ErrorList")  
+ ![错误列表](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901年 08_ErrorList")  
   
  **Visual Studio 中的错误列表**  
   
-####  <a name="BKMK_EmbeddedStatusBars"></a>嵌入式的状态栏  
+####  <a name="BKMK_EmbeddedStatusBars"></a> 嵌入式的状态栏  
  IDE 状态栏会显示为动态，使用其客户端区域上下文设置为活动文档窗口中，然后更新用户的上下文和/或系统响应上的信息，因为很难维护连续显示信息或为状态提供上长期异步进程。 例如，IDE 状态栏会显示不适合的多个运行和/或立即可操作的项选择的测试运行结果的通知。 请务必保留此类的上下文中的用户进行的选择或启动一个进程的文档或工具窗口的状态信息。  
   
  ![嵌入式的状态栏](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901年 09_EmbeddedStatusBar")  
   
  **Visual Studio 中的嵌入式的状态栏**  
   
-####  <a name="BKMK_WindowsTray"></a>Windows 任务栏通知  
+####  <a name="BKMK_WindowsTray"></a> Windows 任务栏通知  
  Windows 通知区域为旁边系统时钟在 Windows 任务栏上。 许多实用工具和软件组件提供此区域中的图标，以便用户可以获得系统级任务，例如，更改屏幕分辨率或获取软件更新的上下文菜单。  
   
  环境级别通知应显示在 Visual Studio 通知中心，不 Windows 通知区域中。  
   
-####  <a name="BKMK_NotificationBubbles"></a>通知气泡  
+####  <a name="BKMK_NotificationBubbles"></a> 通知气泡  
  通知气泡可为信息性，在编辑器/设计器中或 Windows 通知区域的一部分出现。 用户感觉这是一项优势非关键通知这些气泡为更高版本，它们可以解决的问题。 气泡有不适合于用户必须立即解决的关键信息。 如果你在 Visual Studio 中使用通知气泡，请按照[通知气泡的 Windows 桌面指南](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742472\(v=vs.85\).aspx)。  
   
  ![通知气泡](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901年 07_NotificationBubbles")  
   
  **用于 Visual Studio 的 Windows 通知区域中的通知气泡**  
   
-##  <a name="BKMK_ProgressIndicators"></a>进度指示器  
+##  <a name="BKMK_ProgressIndicators"></a> 进度指示器  
   
 ### <a name="overview"></a>概述  
  进度指示器是一个通知系统，用于提供用户反馈的重要组成部分。 进程和操作将完成时，它们会告知用户。 熟悉的指示器类型包括进度栏、 旋转游标和动态的图标。 类型和进度指示器的位置取决于上下文，包括正在报告和多长时间的进程或操作将花费完成。  
@@ -287,7 +283,7 @@ ms.lasthandoff: 02/01/2018
   
  **正在进行的进程状态下的输出窗口和等待消息传送**  
   
-##  <a name="BKMK_Infobars"></a>信息栏  
+##  <a name="BKMK_Infobars"></a> 信息栏  
   
 ### <a name="overview"></a>概述  
  信息栏为用户提供接近其点关注指示器，并使用共享的信息栏控件确保视觉外观和交互的一致性。  
@@ -476,13 +472,13 @@ public interface IVsInfoBarUIEvents
   
 ```  
   
-##  <a name="BKMK_ErrorValidation"></a>错误验证  
+##  <a name="BKMK_ErrorValidation"></a> 错误验证  
  当用户输入是不可接受，如已必填的字段跳过或格式不正确的数据输入的信息时，最好使用控件验证或而不是使用阻止的弹出窗口错误对话框控件附近的反馈。  
   
 ### <a name="field-validation"></a>字段验证  
  窗体和字段验证包括三个组件： 控件、 一个图标，图标和工具提示。 尽管几种类型的控件可以使用此，在文本框中将用作示例。  
   
- ![字段验证 &#40; 空白 &#41;] (../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905年 01_FieldValidation")  
+ ![字段验证&#40;空白&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905年 01_FieldValidation")  
   
  如果该字段是必需的则应水印文本指出**\<必需 >**和字段后台应浅色黄色 (VSColor: `Environment.ControlEditRequiredBackground`) 和前台应为灰色 (VSColor: `Environment.ControlEditRequiredHintText`):  
   
@@ -515,7 +511,7 @@ public interface IVsInfoBarUIEvents
 #### <a name="in-place-warning-text"></a>就地警告文本  
  如果空间可用于将控件接近的错误消息放入错误的状态，这是优于使用单独的工具提示。  
   
- ![在 &#45; 位置警告](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905年 06_InPlaceWarning")  
+ ![在&#45;放置警告](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905年 06_InPlaceWarning")  
   
  **就地警告文本**  
   

@@ -1,23 +1,21 @@
 ---
-title: "Visual Studio 的 UX Essentials |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 的 UX Essentials |Microsoft 文档
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f9d04da421b3b59609269b4f91a487d22adc80e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 52081c5a7f88a39ab25cf868164bd0258dd37885
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 的 UX Essentials
 ## <a name="best-practices"></a>最佳实践  
@@ -108,7 +106,7 @@ ms.lasthandoff: 12/22/2017
 强制用户在解除 UI 之前阅读解释性文本是 Visual Studio 中的反模式。 正确设计、 视频链接应显示带有其他信息的工具提示上悬停时，然后单击"&times;"应关闭而无需进一步交互消息。
 
 
- ![解释性文本反 &#45; 模式 &#45;不正确](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />视频的链接不正确模式
+ ![解释性文本反&#45;模式&#45;不正确](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />视频的链接不正确模式
   
 #### <a name="result"></a>结果  
  而不是简单的关闭按钮 （一次单击），强制用户使用两次单击只需关闭显示的视频的链接的每个位置中的用户界面。  
@@ -116,7 +114,7 @@ ms.lasthandoff: 12/22/2017
 #### <a name="alternatives"></a>替代项  
  这种情况下的正确设计可以访问 Internet 资源管理器、 Office 和 Visual Studio 的常见模式： 悬停时，用户可以看到的工具提示说明并一次单击隐藏用户界面。  
   
- ![解释性文本反 &#45; 模式 &#45;正确](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti 模式更正")<br />正确的视频链接模式
+ ![解释性文本反&#45;模式&#45;正确](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti 模式更正")<br />正确的视频链接模式
   
 ### <a name="using-command-bars-for-settings"></a>使用命令栏设置  
  **图 A**表示此反模式： 将适用于以外的其他命令的命令按钮下方的设置。 在此草有除了启动调试的命令-如在浏览器、 启动但不调试，和单步执行视图-将遵从所选的设置。  

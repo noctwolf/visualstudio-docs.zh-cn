@@ -1,30 +1,28 @@
 ---
-title: "将关系图导出为图像 |Microsoft 文档"
-ms.custom: 
+title: 将关系图导出为图像 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5bbe67a270305dfb9f8e73d869963908502348b7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2761cc222d4ce8cc15db484d21c17da46eaa400c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="export-diagrams-as-images"></a>将关系图导出为图像
 在 Visual Studio 中，你可以保存建模图在只读格式中的，以便您可以与利益干系人、 用户或不使用相同版本的 Visual Studio 项目团队成员共享它们。  
   
- 若要查看支持此功能的 Visual Studio 的版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>将关系图或部分关系图复制到另一个应用程序  
   
@@ -44,6 +42,6 @@ ms.lasthandoff: 02/09/2018
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)   
  [共享模型和导出关系图](../modeling/share-models-and-exporting-diagrams.md)

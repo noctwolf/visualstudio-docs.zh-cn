@@ -1,13 +1,10 @@
 ---
-title: "如何： 检索 SharePoint 项目服务 |Microsoft 文档"
-ms.custom: 
+title: 如何： 检索 SharePoint 项目服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint project service
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1abdf4a48d05285a7394469dd391caf48981f9f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f1e8cdcc863cfd363b1a73f11ed05ffb5a5ff12e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何：检索 SharePoint 项目服务
   你可以访问以下类型的解决方案中的 SharePoint 项目服务：  
@@ -104,7 +101,7 @@ ms.lasthandoff: 01/10/2018
   
  在 Visual Studio 扩展有权访问<xref:EnvDTE80.DTE2>对象，你可以请求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>通过使用对象<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>方法<xref:Microsoft.VisualStudio.Shell.ServiceProvider>对象。 有关详细信息，请参阅[从 DTE 对象获取服务](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)   
  [如何： 将获得的服务](../extensibility/how-to-get-a-service.md)   
  [如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)  

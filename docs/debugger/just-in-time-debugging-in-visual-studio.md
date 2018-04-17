@@ -1,26 +1,24 @@
 ---
-title: "如何： 响应中实时调试器 |Microsoft 文档"
-ms.custom: 
+title: 如何： 响应中实时调试器 |Microsoft 文档
+ms.custom: ''
 ms.date: 05/23/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
-caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8c954cd95da7b6dd2ba0c2938852b939ae396525
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4da0cad183aa39e26c39f48bca401194c9eab2f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>如何： 响应中实时调试器
 
@@ -51,5 +49,5 @@ ms.lasthandoff: 12/22/2017
 
     在 IIS 管理器中，右键单击服务器节点并选择**切换到功能视图**。 在 ASP.NET 部分中，选择**.NET 编译**并确保你选择**False**为 （步骤会有所不同，在较旧版本的 IIS） 的调试行为。
   
-## <a name="see-also"></a>请参阅    
+## <a name="see-also"></a>另请参阅    
  [调试器基础知识](../debugger/debugger-basics.md)   

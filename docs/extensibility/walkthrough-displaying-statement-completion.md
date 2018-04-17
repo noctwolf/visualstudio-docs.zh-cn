@@ -2,26 +2,22 @@
 title: 演练： 显示语句结束 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-caps.latest.revision: 36
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9c3b44bd46c34a864896cbf1002505085be5143
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bbdc79275dd99c502533c82665741b84620be928
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>演练： 显示语句结束
 你可以通过定义你想要提供完成的标识符，然后触发完成会话实现基于语言的语句结束。 你可以定义语言服务上下文中的语句完成、 定义你自己的文件扩展名和内容类型，然后显示完成只是该类型，或者可以触发完成现有内容类型 — 例如，"纯文本"。 本演练演示如何在触发"纯文本"内容类型，这是文本文件的内容类型的语句结束。 "Text"内容类型是所有其他内容类型，包括代码和 XML 文件的上级。  
@@ -207,5 +203,5 @@ ms.lasthandoff: 12/22/2017
   
 4.  当您第一次键入"a"，然后"d"，应显示包含"添加"和"改写"的列表。 请注意，添加处于选中状态。 当你键入另一个"d"时，该列表应包含仅"添加"，现在处于选中状态。 可以通过按空格键、 Tab 或 Enter 键，提交"添加"，也可以通过键入 Esc 或按任意键关闭该列表。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

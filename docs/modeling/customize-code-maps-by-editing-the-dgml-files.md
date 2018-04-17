@@ -1,10 +1,8 @@
 ---
-title: "通过编辑 DGML 文件自定义代码图 |Microsoft 文档"
-ms.custom: 
+title: 通过编辑 DGML 文件自定义代码图 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency graphs, creating path aliases
 - dependency graphs, linking items to nodes
@@ -20,15 +18,15 @@ helpviewer_keywords:
 - dependency graphs, assigning categories and properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a0000482b34ea3c98ac6467cbebccc83bd8b5a74
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2a23bc9b82941fda5a771f49a2aaf5c944a210bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 若要自定义代码图，可以编辑代码图的定向关系图标记语言 (.dgml) 文件。 例如，可以编辑元素来指定自定义样式，向代码元素和链接分配属性和类别，或将文档（或 URL）链接到代码元素（或链接）。 有关 DGML 元素的详细信息，请参阅[定向图形标记语言 (DGML) 引用](../modeling/directed-graph-markup-language-dgml-reference.md)。  
@@ -38,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  若要创建代码图，必须具有 Visual Studio Enterprise。 在 Visual Studio 中编辑代码图时，Visual Studio 会在保存 .dgml 文件时删除所有未使用的 DGML 元素和属性以进行清理。 当手动添加新链接时，它还将自动创建代码元素。 当你保存 .dgml 文件时，你添加到元素的任何特性可能会按字母顺序重新排列。  
   
-##  <a name="OrganizeNodes"></a>代码元素进行分组  
+##  <a name="OrganizeNodes"></a> 代码元素进行分组  
  你可以添加新组，也可以将现有节点转换为一个组。  
   
 1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
@@ -66,7 +64,7 @@ ms.lasthandoff: 02/09/2018
   
     -   指定组代码元素与其子代码元素之间的 `Category` 关系的 `Contains` 特性  
   
-     例如:  
+     例如：  
   
     ```xml  
     <Links>  
@@ -79,7 +77,7 @@ ms.lasthandoff: 02/09/2018
   
      有关详细信息`Category`属性，请参阅[将类别分配给代码元素和链接](#AssignCategories)。  
   
-##  <a name="ChangeGraphStyle"></a>更改地图的样式  
+##  <a name="ChangeGraphStyle"></a> 更改地图的样式  
  你可以通过编辑代码图的 .dgml 文件来更改代码图的背景色和边框颜色。 若要更改的代码元素和链接的样式，请参阅[更改的代码元素和链接的样式](#Highlight)。  
   
 1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
@@ -98,7 +96,7 @@ ms.lasthandoff: 02/09/2018
     Stroke="StrokeValue"  
     ```  
   
-     例如:  
+     例如：  
   
     ```xml  
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >  
@@ -107,7 +105,7 @@ ms.lasthandoff: 02/09/2018
     </DirectedGraph>  
     ```  
   
-##  <a name="Highlight"></a>更改的代码元素和链接的样式  
+##  <a name="Highlight"></a> 更改的代码元素和链接的样式  
   
 ###  <a name="CreateCustomStyles"></a>   
  你可以将自定义样式应用于以下代码元素：  
@@ -268,7 +266,7 @@ ms.lasthandoff: 02/09/2018
   
 2.  在 `<Style/>` 元素中，添加一个包含 `<Condition/>` 特性的 `Expression` 元素，以指定返回布尔值的表达式。  
   
-     例如:  
+     例如：  
   
     ```xml  
     <Condition Expression="MyCategory"/>  
@@ -294,7 +292,7 @@ ms.lasthandoff: 02/09/2018
   
      <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+     <Operator> :: ="<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "！ =" &#124; " &#124; "和" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
      <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
@@ -302,15 +300,15 @@ ms.lasthandoff: 02/09/2018
   
      <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-     <PropertyGet>:: = 标识符  
+     <PropertyGet> :: = 标识符  
   
      <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   
      <Identifier> ::= [^. ]*  
   
-     <Literal>:: = 单引号或双引号括起来的字符串文本  
+     <Literal> :: = 单引号或双引号括起来的字符串文本  
   
-     <Number>:: = 带有可选小数点的数字的字符串  
+     <Number> :: = 带有可选小数点的数字的字符串  
   
      你可以指定多个`<Condition/>`元素必须均为 true 才能应用样式。  
   
@@ -437,7 +435,7 @@ ms.lasthandoff: 02/09/2018
 </DirectedGraph>  
 ```  
   
-##  <a name="AssignProperties"></a>将属性分配给代码元素和链接  
+##  <a name="AssignProperties"></a> 将属性分配给代码元素和链接  
  你可以通过向代码元素和链接分配属性来组织代码元素和链接。 例如，可以选择具有特定属性的代码元素，以便能够对这些代码元素进行分组、更改它们的样式或隐藏它们。  
   
 #### <a name="to-assign-a-property-to-a-code-element"></a>向代码元素分配属性  
@@ -482,7 +480,7 @@ ms.lasthandoff: 02/09/2018
     </Properties>  
     ```  
   
-##  <a name="AssignCategories"></a>将类别分配给代码元素和链接  
+##  <a name="AssignCategories"></a> 将类别分配给代码元素和链接  
  以下各节演示如何通过将类别分配给代码元素来组织代码元素，以及如何创建可帮助组织代码元素并通过使用继承将特性添加到子类别的分层类别。  
   
 #### <a name="to-assign-a-category-to-a-code-element"></a>向代码元素分配类别  
@@ -553,7 +551,7 @@ ms.lasthandoff: 02/09/2018
   
      在此示例中，`MyFirstNode` 的背景为绿色，因为它的 `Category` 特性继承 `Background` 的 `MyParentCategory` 特性。  
   
-##  <a name="AddReferences"></a>链接到代码元素和链接的文档或 Url  
+##  <a name="AddReferences"></a> 链接到代码元素和链接的文档或 Url  
  可以通过以下方式将文档或 URL 链接到代码元素或链接：编辑代码图的 .dgml 文件并将 `Reference` 特性添加到代码元素的 `<Node/>` 元素或链接的 `<Link/>` 元素。 然后，你可以打开并查看代码元素或链接的内容。 `Reference` 特性指定该内容的路径。 此路径可能是相对于 .dgml 文件位置的路径，也可能是绝对路径。  
   
 > [!CAUTION]
@@ -609,7 +607,7 @@ ms.lasthandoff: 02/09/2018
   
         4.  使用`Label`特性以指定在代码元素的显示文本**转到引用**快捷菜单。  
   
-     例如:  
+     例如：  
   
     ```xml  
     <Nodes>  
@@ -640,7 +638,7 @@ ms.lasthandoff: 02/09/2018
   
 5.  若要查看引用的代码元素或代码图中的代码元素，请打开代码元素或链接的快捷菜单。 选择**转到引用**，然后代码元素。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)   
  [使用代码图调试你的应用程序](../modeling/use-code-maps-to-debug-your-applications.md)   
  [使用代码图分析器查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)   

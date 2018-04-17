@@ -1,23 +1,21 @@
 ---
-title: "延迟文档加载 |Microsoft 文档"
-ms.custom: 
+title: 延迟文档加载 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e69ee994f434e122894989d82b97ea79e4bd995c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc10d7807633433b38fa8587d41c2ac3c0273ebe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="delayed-document-loading"></a>延迟文档加载
 当用户重新打开 Visual Studio 解决方案时，不会立即加载大部分关联的文档。 文档窗口框架将创建处于挂起的初始化状态，并占位符文档 （称为存根 （stub） 帧） 被放在正在运行文档表 (RDT)。  
@@ -49,7 +47,7 @@ ms.lasthandoff: 12/22/2017
   
  你可以通过之前你请求的相关属性调用以下方法之一来避免不必要的文档加载： 寻求其他属性之前。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>使用<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 使用<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>。  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>。 此方法返回<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>包括一个值的对象<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>如果文档尚未初始化。  
   

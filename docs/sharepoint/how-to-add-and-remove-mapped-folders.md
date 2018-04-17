@@ -1,13 +1,10 @@
 ---
-title: "如何： 添加和移除映射的文件夹 |Microsoft 文档"
-ms.custom: 
+title: 如何： 添加和移除映射的文件夹 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.MappedFolder
 dev_langs:
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - mapped folders [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 29809344ee8a3f446589ba84f2fc47b1cf407582
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 43ec8b7c18d99880b1ab932ea28a371a7604b636
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>如何：添加和移除映射文件夹
   某些常用的文件夹在 SharePoint 中，如图像和布局，深度嵌套的文件层次结构中。 你可以将这些文件夹映射到 SharePoint 项目，以便更轻松地访问它们。 映射的文件夹是 SharePoint 项目中的 SharePoint 服务器安装的文件的物理位置相对应的文件夹。  
@@ -86,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  若要从项目中移除映射的文件夹，打开其快捷菜单，选择**删除**，然后选择**确定**按钮在对话框中确认该删除。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

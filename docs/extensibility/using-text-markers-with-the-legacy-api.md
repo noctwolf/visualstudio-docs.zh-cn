@@ -2,26 +2,22 @@
 title: 使用文本标记用于旧 API |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ebef6593a019b09e7ee00cced56777d8488323f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>使用文本标记用于旧 API
 文本标记是文本的一个浮点的缓冲区中，可能会影响显示范围和文本区域的行为。 标记包括断点、 书签、 波浪形下划线，和只读的区域。 文本标记存在基本上不同语法着色。 语法着色可快速，进行通信的文本区域与关联的语言语法。 Windows 屏幕上，可时重新绘制速度很重要时，通常被请求语法着色。 语法着色的文本颜色的更改。 文本标记可以更改许多其他文本属性。 文本标记可以"浮动"，应用特殊行为和着色。  

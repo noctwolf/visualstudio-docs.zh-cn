@@ -1,26 +1,24 @@
 ---
-title: "测试区域 6： 删除 |Microsoft 文档"
-ms.custom: 
+title: 测试区域 6： 删除 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 204038ac7a86c0b458ea08c2f4bd2c6a4dffe7cd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 97fc6ab9746e7ef2188c78dc77ec357f7d415a42
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-6-delete"></a>测试区域 6： 删除
 此源代码管理插件测试区域介绍删除操作。  
@@ -56,5 +54,5 @@ ms.lasthandoff: 12/22/2017
 |删除文件系统 Web 项目|1.创建文件系统 Web 项目 （使用浏览按钮来指定的 UNC 路径）。<br />2.将解决方案添加到源代码管理。<br />3.从解决方案中删除整个项目。<br />4.为本地的 Web 项目重复步骤 1 到 3 （执行不同的路径通过代码，但具有相同的外部接口和行为）。|常见的预期的行为。|  
 |从文件系统 Web 项目中删除文件|1.创建文件系统 Web 项目。<br />2.将解决方案添加到源代码管理。<br />3.从项目中删除文件。<br />4.为本地的 Web 项目重复步骤 1 到 3 （执行不同的路径通过代码，但具有相同的外部接口和行为）。|常见的预期的行为。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
