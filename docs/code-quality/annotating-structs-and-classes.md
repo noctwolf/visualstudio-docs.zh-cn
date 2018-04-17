@@ -1,12 +1,10 @@
 ---
-title: "批注结构和类 |Microsoft 文档"
-ms.custom: 
+title: 批注结构和类 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
 - _Field_size_bytes_full_opt_
@@ -23,16 +21,16 @@ f1_keywords:
 - _Field_size_full_
 - _Field_size_full_opt_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
-caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8aafad0da7581f1fa07f1e0134df0032655d679a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2735ae7ba6763a3006edce146df1b19cbaed2f2c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-structs-and-classes"></a>批注结构和类
 还可以通过使用批注，即可充当固定协定批注结构和类成员，它们将假定应满足的任何函数调用或函数入口/出口涉及该封闭结构作为参数或结果值。  
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
   
      具有读取和写入大小在元素 （或字节） 为指定的字段`size`。  
   
-     适用于结构或类声明。  指示该类型的有效对象可能会大于声明的类型，使用指定的字节数`size`。  例如:  
+     适用于结构或类声明。  指示该类型的有效对象可能会大于声明的类型，使用指定的字节数`size`。  例如：  
   
     ```cpp  
   
@@ -77,7 +75,7 @@ ms.lasthandoff: 12/22/2017
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   
