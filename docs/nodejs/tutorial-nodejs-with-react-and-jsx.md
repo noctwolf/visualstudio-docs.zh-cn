@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4a6a16f2e67c2e50b46109142d95db4ba07fcfaf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 通过 Visual Studio 可以轻松创建 Node.js 项目并利用 IntelliSense 和其他支持 Node.js 的内置功能。 此 Visual Studio 教程将从 Visual Studio 模板创建 Node.js Web 应用程序项目。 然后，使用 React 创建一个简单的应用程序。 
@@ -349,11 +349,20 @@ ms.lasthandoff: 04/03/2018
 
     当 DOM 资源管理器和 JavaScript 控制台在 Visual Studio 中打开，表明已正确附加调试程序。 这些调试工具类似于 Chrome 开发人员工具和 Edge 的 F12 工具。
 
+    > [!NOTE]
+    > 如果未附加调试程序，则会看到消息“无法附加到进程。 操作在当前状态中是非法的。” 然后在调试模式中启用 Chrome 前，先使用任务管理器关闭所有 Chrome 实例。 Chrome 扩展可能正在运行并阻止完整的调试模式。
+
 1. 由于已执行有断点的代码，因此要刷新浏览器页面以命中断点。
 
     在调试器中暂停时，可以通过在变量上悬停光标并使用调试器窗口，检查应用状态。 逐句通过代码（F5、F10 和 F11），推进调试器进度。
 
-    可能会在 app-bundle.js 中或在 app.tsx 中断点的映射位置处命中断点，具体取决于环境和浏览器状态。 无论在哪里命中，均可单步执行代码并检查变量。 （如果中途需访问 .tsx 文件中的代码但又无法执行此操作，可尝试使用 `debugger;` 语句或在 Chrome 开发人员工具中设置断点。）
+    可能会在 app-bundle.js 中或在 app.tsx 中断点的映射位置处命中断点，具体取决于环境和浏览器状态。 无论在哪里命中，均可单步执行代码并检查变量。
+
+    * 如果需要中断 app.tsx 中的代码但又无法执行此操作，请按照之前所述的步骤，使用“附加到进程”来附加调试程序。 然后通过打开“脚本文档” > “app.tsx”，从解决方案资源管理器打开动态生成“app.tsx”文件，设置断点并刷新浏览器中的页面。
+
+        或者，如果需要中断 app.tsx 中的代码但又无法执行此操作，可尝试使用 app.tsx 中的 `debugger;` 语句或改为在 Chrome 开发人员工具中设置断点。
+
+    * 如果需要中断 app-bundle.js 中的代码但又无法执行此操作，请删除 sourcemap 文件 app-bundle.js.map。
 
     > [!TIP]
     > 首次通过这些步骤附加到进程后，可选择“调试” > “重新附加到进程”，快速重新附加到 Visual Studio 2017 中的同一进程。

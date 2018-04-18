@@ -1,23 +1,23 @@
 ---
-title: "使用订阅者门户 - http://my.visualstudio.com | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/4/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the full range of benefits available to you on the Visual Studio subscriptions portal
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2c2939ff8b4d20f2db7dd736c6a0dee28785645c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 使用订阅者门户 - http://my.visualstudio.com | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/04/2018
+ms.topic: Get-Started-Article
+description: 了解 Visual Studio 订阅门户为你提供的所有权益
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cb6e33e442a5b4d63f4c1950df382da9a439643f
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>使用订阅者门户 - my.<span></span>visualstudio<span></span>.com
 
-Visual Studio 订阅门户 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)，为一体化资源，可充分利用通过 Visual Studio 订阅提供的全方位权益。 
+Visual Studio 订阅门户 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 为一体化资源，可利用通过 Visual Studio 订阅提供的所有权益。 
 
 需要通过与订阅相关联的身份进行登录才能使用该门户。  这可能是你的 Microsoft 帐户 (MSA) 或组织（如工作单位或学校）提供给你的电子邮件地址。  了解[登录](/visualstudio/subscriptions/signing-in)。
 

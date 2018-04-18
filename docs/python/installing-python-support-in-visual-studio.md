@@ -13,15 +13,15 @@ ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 33b9a56d88b4f64c4253126dafa5e3515aa498c6
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 6276c70cebd8f4d71e056142258422645c50cdfa
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -80,6 +80,16 @@ ms.lasthandoff: 03/28/2018
 |   |   |
 |---|---|
 | ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关在 Visual Studio 中安装 Python 支持，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567)。|
+
+### <a name="troubleshooting"></a>疑难解答
+
+如果在 Visual Studio 中安装或运行 Python 时遇到问题，请尝试以下操作：
+
+- 确定使用 Python CLI（即在命令提示符中运行 `python.exe`）时是否会出现相同的问题。
+- 使用 [Visual Studio 安装程序中的修复选项](../install/repair-visual-studio.md)。
+- 在 Windows 中通过“设置”>“应用和功能”修复或重新安装 Python。
+
+**示例错误**：未能启动交互式进程: System.ComponentModel.Win32Exception (0x80004005): Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext() 出现未知错误 (0xc0000135)。
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 

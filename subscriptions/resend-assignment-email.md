@@ -1,21 +1,21 @@
 ---
-title: "如何重新发送来自 Manage.visualstudio.com 或 VLSC 的订阅分配电子邮件 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/13/2018
-Ms.topic: Get-Started-Article
-Description: Learn how to resend the subscription assignment to subscribers from manage.visualstudio.com or VLSC
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 0ba7d6e36c25ced78b0c6b25688e5eb5b26eb04a
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: 如何重新发送来自 Manage.visualstudio.com 或 VLSC 的订阅分配电子邮件 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/13/2018
+ms.topic: Get-Started-Article
+description: 了解如何从 manage.visualstudio.com 或 VLSC 将订阅分配重新发送给订阅者
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 080ec95c73ed649168838d823a0dcc5d809ee89a
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="how-to-resend-subscription-assignment-emails"></a>如何重新发送订阅分配电子邮件：
+# <a name="how-to-resend-subscription-assignment-emails-in-the-visual-studio-subscription-management-portal"></a>如何在 Visual Studio 订阅管理门户中重新发送订阅分配电子邮件
 
 重新发送分配电子邮件所需的步骤将取决于你使用哪个门户来管理订阅。 
 
@@ -40,9 +40,9 @@ ms.lasthandoff: 02/19/2018
 4. 单击“搜索”栏上的向下箭头。  
 5. 使用“电子邮件地址”字段搜索订阅者。
 6. 从结果列表中，单击订阅者的“姓氏”。
-7. 单击“编辑”。
+7. 单击“编辑” 。
 8. 对订阅进行编辑。 所做的具体更改并不重要 - 只是需要更改一下。  例如，从订阅者的电子邮件地址中删除一个字符 - 从 .com 中删除“m”。单击“保存”按钮
-9. 保存信息后，再次单击“编辑”按钮，然后更正邮件中缺少的字符。 单击“保存”。
+9. 保存信息后，再次单击“编辑”按钮，然后更正邮件中缺少的字符。 单击“保存” 。
    
 这将会使 VLSC 识别到订阅上已发生的更改，并将分配电子邮件重新发送到门户上列出的电子邮件。 
 

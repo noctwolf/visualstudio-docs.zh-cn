@@ -1,25 +1,30 @@
 ---
-title: "在哪里可以找到有关订阅管理的详细信息？ | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/29/2017
-Ms.topic: Get-Started-Article
-Description: Find More Information About Subscription Management?
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: eca3bbc4c906639e1946776b17537480b816c32f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: 了解订阅管理 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/13/2018
+ms.topic: Get-Started-Article
+description: 查找有关订阅管理的详细信息
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: f3294d37202dd8a9454fdeb056f35b298fdba554
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="where-can-i-find-more-information-about-subscription-management"></a>在哪里可以找到有关订阅管理的详细信息？
+# <a name="learn-about-subscription-management"></a>了解订阅管理
 
-已通过批量许可服务中心 (VLSC)、Microsoft 产品和服务协议 (MPSA) 或 Visual Studio 云订阅获取订阅的客户均可以使用订阅管理功能。  
+已通过批量许可协议、Microsoft 产品和服务协议 (MPSA) 或 Visual Studio 云订阅获取订阅的客户均可以使用订阅管理功能。  
 
-因为提供了不同的购买渠道，所以对于订阅管理员来说，必须了解其获取订阅的方式，以便使用相应的权限和用户指南。 
+因为提供了不同的购买渠道，所以对于订阅管理员来说，必须了解其获取订阅的方式，以便使用相应的权限和用户设置。 有关如何为每个协议类型设置管理员的信息，请查看“访问门户”一节。 
 
 Visual Studio 订阅团队创建了“Visual Studio [订阅管理门户](https://www.visualstudio.com/subscriptions-administration/)”。  此门户旨在帮助订阅管理员快速了解他们必须分配的工具和功能，以及在其组织中管理订阅。 
 
+在订阅管理门户上，可以了解如下主题：
+- 在[订阅管理门户](https://manage.visualstudio.com)中管理订阅。
+- 通过批量许可服务中心，为尚未迁移到订阅管理门户的组织管理订阅。 
+- 迁移到新的门户。
+- 订阅管理者专属的其他提示和技巧。

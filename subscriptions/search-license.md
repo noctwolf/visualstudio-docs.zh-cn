@@ -1,19 +1,19 @@
 ---
-title: "搜索和筛选 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can locate individual subscribers or groups in the Administrator Portal.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: fddd8f950969d77ac879d8570bba21468f657123
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 搜索和筛选 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: 了解管理员如何在管理员门户中查找各个订阅者或群组。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 45786b846cb62f5c02d6cc1e0e1c9fcb7dbb1993
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>搜索和筛选 Visual Studio 订阅中的订阅者
 通过 Visual Studio 订阅管理门户，可以基于各种条件查找订阅者的特定子集。 可以按名称、电子邮件地址、订阅级别以及其他各种信息对订阅者列表进行筛选。 
@@ -22,7 +22,7 @@ ms.lasthandoff: 01/29/2018
 
     ![筛选订阅者](_img\edit-license\filter-list.png)
 
-2.  你将看到许多可用于筛选的字段。 选择希望用作搜索基准的条件，然后单击“筛选”。 随即可以看到与所选条件匹配的订阅者列表。
+2.  你将看到出现很多字段，可以将其用作搜索条件。 选择希望用作搜索基准的所需条件，然后单击“筛选”。 随即可以看到与所选条件匹配的订阅者列表。
 
     ![查找订阅者](_img\search-filter\search-filter-find.png)
 

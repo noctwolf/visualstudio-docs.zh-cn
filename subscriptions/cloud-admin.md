@@ -1,0 +1,50 @@
+---
+title: 设置云订阅的管理员 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/28/2018
+ms.topic: Get-Started-Article
+description: 设置云订阅的管理员
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 3c48c89a729f7eeb26680163c997669f3976e417
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/06/2018
+---
+# <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>设置 Visual Studio 云订阅的管理员
+
+Visual Studio 云订阅由管理员进行管理。  管理员可以分配订阅、编辑分配、添加或删除订阅以及执行其他的订阅管理工作。 
+
+## <a name="the-azure-subscription-owner-is-the-first-administrator"></a>Azure 订阅所有者是第一个管理员 
+
+当购买 Visual Studio 云订阅后，如果你是购买时所用的 Azure 订阅的所有者，系统会自动将你设置为这些订阅的管理员。 
+
+可通过 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) 或联系云解决方案提供商购买云订阅。  如果通过 Visual Studio Marketplace 购买，在购买过程的最后，你将获得管理用户的机会。  选择该选项后将转到 Visual Studio 订阅管理门户 - [https://manage.visualstudio.com](https://manage.visualstudio.com)。
+
+购买订阅后，你随时可以访问[管理门户](https://manage.visualstudio.com)。  只需登录到门户，并在左上角选择相应的 Azure 订阅即可。 
+
+如果你是购买云订阅所用的 Azure 订阅的所有者，还可以分配其他管理员。
+
+## <a name="adding-administrators"></a>添加管理员
+
+添加管理员需执行以下操作：
+1. 在 [portal.azure.com](https://portal.azure.com) 上连接到 Azure 门户。
+2. 使用用于购买 Visual Studio 云订阅的帐户登录。
+3. 在左侧导航窗格中，向下滚动到“成本管理 + 计费”。
+4. 在“我的订阅”列表中，选择用于进行购买的 Azure 订阅。
+5. 左侧导航窗格中列表顶部附近单击“访问控制”。  
+6. 在页面顶部单击“添加”选项卡。 
+7. 在右侧弹出窗格中，单击你想让其成为管理员的订阅者的姓名。
+8. 在窗格顶部单击“角色”下拉列表，向下滚动，然后选择“用户访问管理员”。
+9. 单击“保存” 。
+此时页面中心将显示你指定的订阅者，并且其角色将显示为“用户访问管理员”。  
+
+新管理员这时可以登录到[管理门户](https://manage.visualstudio.com)，从页面左上角的列表中选择用于购买云订阅的同一个 Azure 订阅，然后开始管理这些订阅。 
+
+
+有关 Visual Studio 云订阅的信息，请参阅“购买云订阅”下的[概述](/vscloud-overview/)。 要购买 Visual Studio 云订阅，请访问 Visual Studio Marketplace：[https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)。 
+

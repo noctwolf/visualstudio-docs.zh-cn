@@ -1,19 +1,19 @@
 ---
-title: "我如何知道哪些软件可供下载？ | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/28/2017
-Ms.topic: Get-Started-Article
-Description: Find a list of the software downloads included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 072b39475f9020b84df0d72acca87119e12ce3b9
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: 我如何知道哪些软件可供下载？ | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/28/2017
+ms.topic: Get-Started-Article
+description: 查找 Visual Studio 订阅随附的软件下载列表。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: c59565e903947df54ec0ae593421ee0cc447e8c5
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-do-i-know-what-software-is-available-for-download"></a>我如何知道哪些软件可供下载？
 
@@ -27,6 +27,6 @@ ms.lasthandoff: 02/19/2018
 要快速查找产品，请使用页面顶部的“搜索”功能或单击左侧的其他产品类型。
 
 > [!TIP]
-> 如果正在查找产品密钥，请单击页面顶部的“产品密钥”。
+> 如果正在查找产品密钥，请在页面顶部单击“产品密钥”选项卡。
 
 同时你还可以针对每个订阅类型下载 Excel 电子表格，其中包含[可用软件标题](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)的大量列表。  

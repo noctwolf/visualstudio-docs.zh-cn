@@ -1,19 +1,19 @@
 ---
-title: "Visual Studio 订阅 - 订阅者权益"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the benefits included in your Visual Studio subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b42d4f826d6bc589ecf16db2d1d4eddb98d81ff9
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Visual Studio 订阅 - 订阅者权益
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/12/2018
+ms.topic: Get-Started-Article
+description: 了解 Visual Studio 订阅中包含的权益
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio 订阅中包含的权益
 
@@ -22,7 +22,7 @@ Visual Studio 订阅提供最全面的资源集合，便于你在首选平台和
 权益分为以下三类：
 
 ## <a name="tools"></a>工具
-工具类别提供了一组种类丰富的权益，包括 [Visual Studio IDE](/vs-ide-benefit)、[Visual Studio Team Services](/vs-vsts) 和 [Azure](/vs-azure)等核心权益。  根据订阅级别，你还会看到 Windows 和 Office 365 开发人员帐户、Visual Studio App Center，以及 WhiteSource Bolt 和 ModernRequirements 等合作伙伴提供的权益。
+工具类别提供了一组种类丰富的权益，包括 [Visual Studio IDE](/vs-ide-benefit/)、[Visual Studio Team Services](/vs-vsts/) 和 [Azure](/vs-azure/)等核心权益。  根据订阅级别，你还会看到 Windows 和 Office 365 开发人员帐户、Visual Studio App Center，以及 WhiteSource Bolt 和 ModernRequirements 等合作伙伴提供的权益。
 
 ## <a name="professional-development"></a>专业开发
 为帮助你持续增强技能并关注最新技术，我们提供了一些来自业界领导者的最佳在线培训。 例如，可用的优质内容包括：

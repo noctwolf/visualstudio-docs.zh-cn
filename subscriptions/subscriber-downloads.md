@@ -1,19 +1,19 @@
 ---
-title: "在 Visuals Studio 订阅上使用订阅者下载 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to locate and download Microsoft products included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 在 Visuals Studio 订阅上使用订阅者下载 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: 了解如何查找和下载 Visual Studio 订阅中包含的 Microsoft 产品。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用订阅者下载
 订阅者权益包含可以下载各种各样的软件。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/29/2018
 ## <a name="what-do-i-get"></a>我能获得哪些内容？
 下载内容的数量和类型取决于订阅级别和计划成员身份。  例如，相较于通过 Microsoft 合作伙伴网络 或 BizSpark 计划订阅获得订阅的订阅者，具有 Visual Studio Enterprise 标准订阅的订阅者可以获得的下载内容可能有所不同。  要了解有关各订阅级别可获取的下载内容的详细信息，请下载[按权益级别分类的产品](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx)列表。
 
-无法确定正在使用哪些订阅？  请连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看分配给你电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
+无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>如何在订阅者门户中找到下载内容？ 
 [下载](https://my.visualstudio.com/downloads/featured)页仅显示订阅中包含的下载内容。  如果具有多个订阅或计划成员身份，即使目前正在查看其它订阅，也会显示你所具有的最高订阅的下载内容。  例如，如果你的 Visual Studio Professional 订阅和 Visual Studio Dev Essentials 成员身份都关联了同一个登录 ID，即使你目前正在查看 Dev Essentials 权益，也会显示 Professional 级别订阅中包含的下载内容。  

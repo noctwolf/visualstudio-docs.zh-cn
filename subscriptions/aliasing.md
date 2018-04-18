@@ -1,23 +1,23 @@
 ---
-title: "使用别名登录 Visual Studio 订阅可能会失败 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/2/2018
-Ms.topic: Get-Started-Article
-Description: Sign-in may fail if aliases or friendly names are used.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8c07bc8d3cf674d86c2152ff80f20e4fac003fc3
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 使用别名登录 Visual Studio 订阅可能会失败 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/02/2018
+ms.topic: Get-Started-Article
+description: 如果别名或友好名称已被使用，登录可能会失败
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="signing-in-to-visual-studio-subscriptions-may-fail-with-aliases"></a>使用别名登录 Visual Studio 订阅可能会失败
+# <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用别名登录 Visual Studio 订阅可能会失败
 
-根据用于登录的帐户类型，登录到 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 时，可用订阅可能无法正确显示。一个潜在的原因是使用了“别名”或“友好名称”来代替订阅所分配到的登录标识。 这就是所谓的“别名”。 
+根据用于登录的帐户类型，登录 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 时，可用订阅可能无法正确显示。一个潜在的原因是使用了“别名”或“友好名称”来代替订阅所分配到的登录标识。 这就是所谓的“别名”。 
 
 ## <a name="what-is-aliasing"></a>别名是什么？
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 01/29/2018
 ## <a name="as-an-administrator-what-options-do-i-have"></a>作为管理员，有哪些选项可供我选择？
 
 作为管理员，有两种选择可确保你的订阅者在 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 上成功登录。 
-1. 第一个选项（建议）是将目录帐户作为批量许可服务中心 (VLSC) 中分配的地址。 有关详细信息，请参阅本文中[将订阅者分配给目录帐户](#assigning-subscribers-to-a-directory-account)部分。
-2. 第二种选项（较不安全）是允许订阅者将他们的“工作或学校”电子邮件地址与“个人”帐户（又名： Microsoft 帐户或 MSA）关联。 有关详细信息，请参阅本文[将工作或学校帐户定义为个人帐户](#defining-a-work-or-school-account-as-a-personal-account )部分。
+- 第一个选项（建议）是将目录帐户作为批量许可服务中心 (VLSC) 中分配的地址。 有关详细信息，请参阅本文中[将订阅者分配给目录帐户](#assigning-subscribers-to-a-directory-account)部分。
+- 第二种选项（较不安全）是允许订阅者将他们的“工作或学校”电子邮件地址与“个人”帐户（又名： Microsoft 帐户或 MSA）关联。 有关详细信息，请参阅本文[将工作或学校帐户定义为个人帐户](#defining-a-work-or-school-account-as-a-personal-account )部分。
 
 > [!NOTE]
 > 公司迁移到新的 Visual Studio 订阅[管理门户](https://manage.visualstudio.com)后，你将能够利用新的管理体验，可将目录和电子邮件地址作为订阅者个人资料的一部分提供。  详细了解此[迁移](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)。
@@ -86,7 +86,7 @@ ms.lasthandoff: 01/29/2018
 
 6. 从结果列表中，单击订阅者的“姓氏”。
 
-7. 单击“编辑”。
+7. 单击“编辑” 。
 
 8. 将“电子邮件地址”字段更改为所需的目录地址，然后单击“保存”。
 
@@ -101,7 +101,7 @@ ms.lasthandoff: 01/29/2018
 
 已向你分配 Visual Studio 订阅。  请访问 https://my.visualstudio.com，并使用 %DIRECTORY ADDRESS% 地址登录，以激活和访问你的订阅。 
 
-如果遇到问题，请联系支持团队 (https://www.visualstudio.com/subscriptions/support/)。
+如果遇到问题，请联系支持团队 (https://www.visualstudio.com/subscriptions/support/))。
 
 在页面底部，选择以下内容：
    - 帐户、订阅和账单支持
@@ -122,13 +122,13 @@ ms.lasthandoff: 01/29/2018
 ### <a name="defining-an-email-address-as-a-personal-account"></a>将电子邮件地址定义为个人帐户
 在向订阅者分配订阅后，他们将收到一封电子邮件，要求他们访问 https://my.visualstudio.com 以利用其订阅权益。  当尝试登录时，Visual Studio 订阅登录将失败，并显示一条错误，指出帐户无法识别。  在登录 https://my.visualstudio.com 之前，请要求订阅者遵循这些指示。  如有必要，可在分配订阅后使用此[模板](#notifying-your-subscribers-using-personal-accounts)来通知订阅者。
 
-1. 导航到 https://my.visualstudio.com，然后单击“创建新的Microsoft帐户”。
+1. 导航到 https://my.visualstudio.com，然后单击“创建新的 Microsoft 帐户”。
 
 2. 填写字段：
     - 在 Someone@example.com 框中输入接收欢迎电子邮件的电子邮件地址
     - 创建密码
     - 选择促销设置
-    - 单击“下一步”
+    - 单击“下一步” 
 
 3. 完成验证步骤，然后单击“下一步”。
 
@@ -144,7 +144,7 @@ ms.lasthandoff: 01/29/2018
 
 %SUBSCRIBER NAME% 你好
 
-已向你分配 Visual Studio 订阅，并且可通过欢迎电子邮件指示来登录 https://my.visualstudio.com。  虽然这是使用权益的正确网站，但我们的组织要求你在访问该网站之前执行一些额外步骤。  请按照以下说明帮助你创建一个与我们的公司电子邮件地址绑定的“Microsoft帐户”。  完成这些步骤后，可使用你的电子邮件地址来访问订阅权益。
+我们已向你分配了 Visual Studio 订阅，你可以按照欢迎电子邮件的指示登录 https://my.visualstudio.com。  虽然这是使用权益的正确网站，但我们的组织要求你在访问该网站之前执行一些额外步骤。  请按照以下说明帮助你创建一个与我们的公司电子邮件地址绑定的“Microsoft帐户”。  完成这些步骤后，可使用你的电子邮件地址来访问订阅权益。
 1. 访问 https://my.visualstudio.com
 
 2. 单击右侧的“创建新的 Microsoft 帐户”
@@ -161,9 +161,9 @@ ms.lasthandoff: 01/29/2018
 
 6. 你现在应可看到你的权益
 
-注意：以后访问 https://my.visualstudio.com 时，可能会提示你选择想要使用的帐户（例如“工作或学校帐户”或“个人帐户”）。  执行上述步骤后，你将需要利用“个人帐户”选项。
+注意：以后访问 https://my.visualstudio.com 时，系统可能会提示你选择想要使用的帐户（例如“工作或学校帐户”或“个人帐户”）。  执行上述步骤后，你将需要利用“个人帐户”选项。
 
-如果遇到问题，请联系支持团队 (https://www.visualstudio.com/subscriptions/support/)。
+如果遇到问题，请联系支持团队 (https://www.visualstudio.com/subscriptions/support/))。
 
 在页面底部，选择以下内容：
    - 帐户、订阅和账单支持

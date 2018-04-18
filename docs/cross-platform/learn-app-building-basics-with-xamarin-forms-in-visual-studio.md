@@ -1,7 +1,7 @@
 ---
 title: 学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识 | Microsoft Docs
 ms.custom: ''
-ms.date: 01/19/2018
+ms.date: 03/30/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,19 +13,23 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 6c0659e63feb685f002b7be969ee827e5e047cdd
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6982768950ffe0e4afb664f1cfeb7423e65bbbc4
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识
 
-完成 [Setup and install](../cross-platform/setup-and-install.md) 和 [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md)中的步骤后，此演练会立即演示如何借助 Xamarin.Forms 生成基本应用（如下所示）。 借助 Xamarin.Forms，可以在 .NET Standard 类库中一次性编写全部 UI 代码。 随后，Xamarin 会自动呈现 iOS、Android 和通用 Windows 平台的本机 UI 控件。 建议使用此方法（而不是共享项目），因为 .NET Standard 库仅包含跨所有目标平台受支持的 .NET API，并且 Xamarin.Forms 支持跨平台共享 UI 代码。  
+完成[设置和安装](../cross-platform/setup-and-install.md)及[验证 Xamarin 环境](../cross-platform/verify-your-xamarin-environment.md)中的步骤后，此演练会演示如何借助 Xamarin.Forms 生成基本应用。 借助 Xamarin.Forms，可以在 .NET Standard 类库中一次性编写全部 UI 代码。 随后，Xamarin 会自动呈现 iOS、Android 和通用 Windows 平台的本机 UI 控件。 
+
+建议使用 .NET Standard 库（而不是共享项目）编写此通用代码。 .NET Standard 库包含可在所有目标平台上运行的 .NET API。  
+
+以下是即将生成的应用程序。 应用程序运行的平台（从左到右）分别是 iOS 手机、Android 手机和 Windows 10 的通用 Windows 平台 (UWP)：
   
-![Android、iOS 和 Windows 上的“天气”应用示例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
+[![iOS、Android 和 UWP 上的“天气”应用示例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")](../cross-platform/media/crossplat-xamarin-formsguide-1-Large.png#lightbox)
   
-你将执行以下操作来生成它：  
+生成此应用程序需执行以下步骤：  
   
 -   [设置你的解决方案](#solution)  
   
@@ -40,25 +44,27 @@ ms.lasthandoff: 03/22/2018
 > [!TIP]
 > 可以在 [xamarin-forms-samples repository on GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)（GitHub 上的 xamarin-forms-samples 存储库）中找到此项目完整的源代码。  
   
-##  <a name="solution"></a> 设置你的解决方案  
+<a name="solution" />
 
-按照下面这些步骤操作可以创建 Xamarin.Forms 解决方案，其中包含共享代码的 .NET Standard 类库和两个添加的 NuGet 包。  
-  
-1.  在 Visual Studio 中，新建“跨平台应用 (Xamarin.Forms)”解决方案，并将它命名为“WeatherApp”。 在左侧列表中依次选择“Visual C#”和“跨平台”，以查找模板。  
-  
-     如果找不到，建议安装 Xamarin 或启用 Visual Studio 2017 功能（请参阅[设置和安装](../cross-platform/setup-and-install.md)）。  
-  
-     ![新建空白应用“跨平台应用 (Xamarin.Forms)”项目](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin FormsGuide 2")
+## <a name="set-up-your-solution"></a>设置你的解决方案  
 
-2.  单击“确定”后，可以选择一些选项。 选取“空白应用”、“Xamarin.Forms”和“.NET Standard”：
-
-     ![新建跨平台应用项目](../cross-platform/media/crossplat-xamarin-formsguide-3.png "CrossPlat Xamarin FormsGuide 3")
+按照下面这些步骤操作可以创建 Xamarin.Forms 解决方案，其中包含共享代码的 .NET Standard 类库和两个添加的 NuGet 包。 
   
-3.  单击“确定”创建解决方案后，将会得到多个单独项目：  
+1. 在 Visual Studio 中，新建“跨平台应用 (Xamarin.Forms)”解决方案，并将它命名为“WeatherApp”。 在左侧列表中依次选择“Visual C#”和“跨平台”，以查找模板。  
+    
+    ![新建跨平台 Xamarin.Forms 应用项目](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin FormsGuide 2")
+
+    如果不存在该模板，则可能需要安装 Xamarin 或启用 Visual Studio 2017 功能。 请参阅[设置和安装](../cross-platform/setup-and-install.md)。  
+
+2.  单击“确定”后，可以选择一些选项。 选择“空白应用”，然后选择“.NET Standard”：
+
+    ![新建跨平台应用项目](../cross-platform/media/crossplat-xamarin-formsguide-3.png "CrossPlat Xamarin FormsGuide 3")
+  
+3.  单击“确定”创建解决方案，得到的解决方案含有四个项目：  
   
     -   **WeatherApp**：.NET Standard 库，可以在其中编写跨平台共享的代码，包括使用 Xamarin.Forms 的常见业务逻辑和 UI 代码。  
   
-    -   **WeatherApp.Android**：包含本机 Android 代码的项目。 这将设置为默认启动项目。  
+    -   **WeatherApp.Android**：包含本机 Android 代码的项目。  
   
     -   **WeatherApp.iOS**：包含本机 iOS 代码的项目。  
   
@@ -69,25 +75,27 @@ ms.lasthandoff: 03/22/2018
   
      在每个本机项目中，你有权访问相应平台的本机设计器，并且可以根据需要实现特定于平台的屏幕和功能。  
   
-4.  将解决方案中的 Xamarin.Forms NuGet 包升级到最新稳定版本，如下所示。 我们建议每次创建新 Xamarin 解决方案时执行此操作：  
+4.  将解决方案中的 Xamarin.Forms NuGet 包升级到最新稳定版本，如下所示：  
   
     -   选择“工具”>“NuGet 包管理器”>“管理解决方案的 NuGet 包”。  
   
-    -   在“更新”选项卡下，选中“Xamarin.Forms”包，并选中解决方案中的所有项目以供更新。 （注意：不要选中 Xamarin.Android.Support 的任何更新。）  
+    -   在“更新”选项卡下，选中“Xamarin.Forms”包，并选中解决方案中的所有项目以供更新。 （不要选择对 Xamarin Android 支持库进行任何更新。）  
   
     -   将“版本”  字段更新为可用的“最新稳定”  版本。  
   
     -   单击“安装” 。  
   
          ![更新 Xamarin.Forms NuGet 包](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin FormsGuide 4")  
+
+    应养成每创建一个新的 Xamarin.Forms 解决方案就更新一次 Xamarin.Forms 版本的习惯。 不要更新任何 Android 支持库。 如有必要，可在更新 Xamarin.Forms 版本时更新这些库。
   
-5.  将 Newtonsoft.Json NuGet 包添加到 WeatherApp 项目中，用于处理从天气数据服务中检索到的信息：  
+5.  将 Newtonsoft.Json NuGet 包添加到 WeatherApp 项目。 此库用于处理从天气数据服务检索到的信息：  
   
     -   在 NuGet 包管理器中（自第 4 步起仍处于打开状态），选择“浏览”选项卡，再搜索“Newtonsoft”。  
   
     -   选择 **Newtonsoft.Json**。  
   
-    -   检查 **weatherapp** 项目（这是唯一需要安装包的项目）。  
+    -   检查 weatherapp 项目（这是唯一需要安装包的项目）。  
   
     -   确保“版本”  字段设置为“最新稳定”  版本。  
   
@@ -95,13 +103,15 @@ ms.lasthandoff: 03/22/2018
   
     ![查找和安装 Newtonsoft.Json NuGet 包](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
   
-6.  重复执行第 5 步，查找并安装“Microsoft.Net.Http”包。  
+6.  重复步骤 5 找到 Microsoft.CSharp 包并将其安装在 .NET Standard 项目中。 在 .NET Standard 库中使用 C# `dynamic` 数据类型时，需要此库。
   
 7.  生成解决方案并验证没有生成错误。  
   
-##  <a name="dataservice"></a> 编写共享的数据服务代码  
+<a name="dataservice" /> 
 
-在 WeatherApp 项目中，可以编写跨所有平台共享的 .NET Standard 库代码。 此库自动包含在 iOS、Android 和 Windows 项目生成的应用包中。  
+## <a name="write-shared-data-service-code"></a>编写共享的数据服务代码  
+
+在 WeatherApp .NET Standard 库项目中编写跨所有平台共享的代码。 iOS、Android 和 Windows 项目生成的应用包将引用此库。  
   
 要运行此示例，必须先在 [http://openweathermap.org/appid](http://openweathermap.org/appid) 注册免费 API 密钥。  
   
@@ -109,7 +119,7 @@ ms.lasthandoff: 03/22/2018
   
 1.  右键单击“WeatherApp”项目，然后选择“添加”>“类…”。在“添加新项”  对话框中，将文件命名为 **Weather.cs**。 将使用此类来存储天气数据服务的数据。  
   
-2.  将 **Weather.cs** 的全部内容替换为以下内容：  
+2.  将 Weather.cs 的全部内容替换为以下代码：  
   
     ```csharp  
     namespace WeatherApp
@@ -160,9 +170,9 @@ ms.lasthandoff: 03/22/2018
     }  
     ```  
   
-5.  将第三个类“Core”添加到 WeatherApp 项目中，用于放置共享业务逻辑。 此代码形成包含邮政编码的查询字符串，调用天气数据服务，并填充 Weather 类实例。  
+5.  将第三个类“Core.cs”添加到 WeatherApp 项目中，用于放置共享业务逻辑。 此代码形成包含邮政编码的查询字符串，调用天气数据服务，并填充 `Weather` 类实例。  
   
-6.  将 **Core.cs** 的内容替换为以下内容：  
+6.  将 Core.cs 的内容替换为以下代码：  
   
     ```csharp  
     using System;  
@@ -175,7 +185,7 @@ ms.lasthandoff: 03/22/2018
             public static async Task<Weather> GetWeather(string zipCode)  
             {  
                 //Sign up for a free API key at http://openweathermap.org/appid  
-                string key = "YOUR KEY HERE";  
+                string key = "YOUR API KEY HERE";  
                 string queryString = "http://api.openweathermap.org/data/2.5/weather?zip="  
                     + zipCode + ",us&appid=" + key + "&units=imperial";  
   
@@ -205,20 +215,24 @@ ms.lasthandoff: 03/22/2018
         }  
     }  
     ```  
-  
-7.  生成 WeatherApp 库项目，以确保代码正确无误。  
-  
-##  <a name="uicode"></a> 开始编写共享的 UI 代码  
 
-使用 Xamarin.Forms，可以在 .NET Standard 库中实现共享 UI 代码。 按照下面这些步骤操作可以向项目添加带按钮的页面，此按钮使用上一部分中添加的天气数据服务代码返回的数据来更新自己的文本：  
+7. 将“在此处输入你的 API 密钥”替换为你获得的 API 密钥。 仍需使用引号将其引起来！     
   
-1.  右键单击“WeatherApp”项目，并依次选择“添加”>“新项…”，添加名为“WeatherPage.cs”的内容页。在“添加新项”对话框中，选择“内容页”。 请勿选择“内容页 (C#)”或“内容视图”。 将它命名为“WeatherPage.cs”。  
+8.  生成 WeatherApp 库项目，以确保代码正确无误。  
   
-     ![添加新的 Xamarin.Forms XAML 页面](../cross-platform/media/crossplat-xamarin-formsguide-6.png "CrossPlat Xamarin FormsGuide 6")  
+ <a name="uicode" /> 
+
+## <a name="begin-writing-shared-ui-code"></a>开始编写共享的 UI 代码  
+
+使用 Xamarin.Forms 可以在 .NET Standard 库中实现共享 UI 代码。 执行以下步骤可向项目添加一个带按钮的页面。 此按钮将页面中的文本更新为上一节所述的天气服务返回的数据：  
   
-     Xamarin.Forms 基于 XAML，因此，此步骤创建 **WeatherPage.xaml** 文件和嵌套的代码隐藏文件 **WeatherPage.xaml.cs**。 这使你可以通过 XAML 或代码生成 UI。 在此演练中，将通过这两种方式执行一些操作。  
+1.  右键单击“WeatherApp”项目，并依次选择“添加”>“新项…”，添加名为“WeatherPage”的内容页。在“添加新项”对话框中，选择“内容页”。 请勿选择“内容页 (C#)”或“内容视图”。 将它命名为“WeatherPage.xaml”。  
   
-2.  若要向“WeatherPage”屏幕添加按钮，请将“WeatherPage.xaml”的内容替换为以下内容：  
+    ![添加新的 Xamarin.Forms XAML 页面](../cross-platform/media/crossplat-xamarin-formsguide-6.png "CrossPlat Xamarin FormsGuide 6")  
+  
+     Xamarin.Forms 基于 XAML，因此，此步骤创建 **WeatherPage.xaml** 文件和嵌套的代码隐藏文件 **WeatherPage.xaml.cs**。 使用 XAML 或代码编写用户界面逻辑皆可。 在此演练中，将通过这两种方式执行一些操作。  
+  
+2.  要向“WeatherPage”屏幕添加按钮，请将“WeatherPage.xaml”的内容替换为以下标记：  
   
     ```xaml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -232,9 +246,9 @@ ms.lasthandoff: 03/22/2018
     </ContentPage>  
     ```  
   
-     请注意，必须使用 **X:name** 特性定义按钮名称，以便可以从代码隐藏文件内部通过名称引用此按钮。  
+     请注意，必须使用 `x:Name` 特性定义按钮名称，以便可以从代码隐藏文件内部通过名称引用此按钮。  
   
-3.  若要为按钮的已单击事件添加事件处理程序以更新按钮文本，请用以下代码替换 WeatherPage.xaml.cs 的内容。 （可随意将“60601”更改为其他邮政编码。）  
+3.  若要为按钮的 `Clicked` 事件添加事件处理程序以更新按钮文本，请用以下代码替换 WeatherPage.xaml.cs 的内容。 （可随意将“60601”更改为其他邮政编码。）  
   
     ```csharp  
     using System;  
@@ -261,7 +275,7 @@ ms.lasthandoff: 03/22/2018
     }  
     ```  
   
-4.  若要在应用启动时将 **WeatherPage** 作为第一个屏幕打开，请将 **App.cs** 中的默认构造函数替换为以下代码：  
+4.  若要在应用启动时将 WeatherPage 作为第一个屏幕打开，请将 App.xaml.cs 中的默认构造函数替换为以下代码：  
   
     ```csharp  
     public App()  
@@ -274,7 +288,9 @@ ms.lasthandoff: 03/22/2018
   
 5.  生成 WeatherApp 项目，以确保代码正确无误。  
   
-##  <a name="test"></a> 使用适用于 Android 的 Visual Studio 仿真程序测试你的应用。  
+<a name="test" /> 
+
+## <a name="test-your-app-using-the-visual-studio-emulator-for-android"></a>使用适用于 Android 的 Visual Studio 仿真程序测试你的应用。  
 
 现在即可运行应用！ 现在仅运行 Android 版本，验证该应用是否从天气服务获取数据。 稍后，在添加更多 UI 元素后，还将运行 iOS 和 UWP 版本。   
   
@@ -282,17 +298,22 @@ ms.lasthandoff: 03/22/2018
   
 2.  在 Visual Studio 工具栏中，“WeatherApp.Android”被列为目标项目。 选择一个 Android 仿真程序以进行调试，并点击“F5” 。 建议使用“VisualStudio”仿真器选项之一，用于在适用于 Android 的 Visual Studio 仿真器中运行应用。  
   
-     ![选择 Android Emulator 调试目标](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")  
+    ![选择 Android Emulator 调试目标](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")
+
+    > [!NOTE]
+    > 如果 Visual Studio 指示 Android 项目找不到 Newtonsoft.Json 文件，请将该 NuGet 包添加到 Android 项目。   
   
-3.  当应用在仿真程序中启动时，单击“获取天气信息”  按钮。 应看到按钮文本更新为“芝加哥”，这是从天气服务检索到的数据的 Title 属性。  
+3.  当应用在仿真程序中启动时，单击“获取天气信息”  按钮。 应看到按钮文本更新为“芝加哥”，这是从天气服务检索到的数据的 `Title` 属性。  
   
      ![点击按钮前和点击后显示的天气应用](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")  
-  
-##  <a name="finish"></a>跨平台完成具有本机外观的 UI  
 
-Xamarin.Forms 会呈现每个平台的本机 UI 控件，以便你的应用会自动拥有本机外观。 若要更清晰地查看这一内容，可通过邮政编码的输入字段来完成 UI，然后显示从服务返回的天气数据。  
+<a name="finish" /> 
+
+## <a name="finish-the-ui-with-a-native-look-and-feel-across-platforms"></a>跨平台完成具有本机外观的 UI  
+
+Xamarin.Forms 会呈现每个平台的本机 UI 控件，以便你的应用会自动拥有本机外观。 在完成 UI，加入邮政编码的输入字段和用于显示天气数据的控件后，可以发现此本机的外观更清晰了。  
   
-1.  将 **WeatherPage.xaml** 的内容替换为以下代码。 使用之前介绍的 X:name 属性命名的元素可以通过代码引用。 Xamarin.Forms 还提供了许多[布局选项](http://developer.xamarin.com/guides/xamarin-forms/controls/layouts/) (xamarin.com)。 在本文中，WeatherPage 使用 [Grid](http://developer.xamarin.com/api/type/Xamarin.Forms.Grid/) (xamarin.com) 和 [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) (xamarin.com)。  
+1.  将 WeatherPage.xaml 的内容替换为以下标记。 使用之前介绍的 `x:Name` 属性命名的元素可以通过代码引用。 Xamarin.Forms 还提供了许多[布局选项](/xamarin/xamarin-forms/controls/layouts/)。 在本文中，WeatherPage 使用 [Grid](http://developer.xamarin.com/api/type/Xamarin.Forms.Grid/) 和 [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/)。  
   
     ```xaml  
     <?xml version="1.0" encoding="utf-8" ?>
@@ -384,9 +405,9 @@ Xamarin.Forms 会呈现每个平台的本机 UI 控件，以便你的应用会�
     </ContentPage>  
      ```  
   
-     虽然本文未说明，但可以使用 OnPlatform 标记，选择当前运行应用的平台的专用属性值（请参阅[基本 XAML 语法](http://developer.xamarin.com/guides/xamarin-forms/user-interface/xaml-basics/essential_xaml_syntax/) (xamarin.com)）。 在代码隐藏文件中，你可以将 [Device.OnPlatform API](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) 用于同一目的。  
+     虽然本文未体现，但可以在 XAML 文件中使用 `OnPlatform` 标记选择当前运行应用的平台的专用属性值（请参阅[基本 XAML 语法](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax/)。）在代码隐藏文件中，可以通过比较 [`Device.RuntimePlatform`](https://developer.xamarin.com/api/property/Xamarin.Forms.Device.RuntimePlatform/) 属性与 [`Device`](https://developer.xamarin.com/api/type/Xamarin.Forms.Device/) 类中定义的常量 [`Device.iOS`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.iOS/)、[`Device.Android`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.Android/) 和 [`Device.UWP`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.UWP/)，确定应用程序在哪个平台上运行。  
   
-2.  在 **WeatherPage.xaml.cs**中，将 **GetWeatherBtn_Clicked** 事件处理程序替换为以下代码。 此代码验证输入字段中是否有邮政编码，检索相应邮政编码的数据，将整个页面的绑定上下文设置为生成的 Weather 实例，再将按钮文本设置为“重新搜索”。 请注意，由于 UI 中的每个标签都绑定到 Weather 类属性，因此如果将屏幕的绑定上下文设置为 Weather 实例，这些标签会自动更新。  
+2.  在 WeatherPage.xaml.cs 中，将 `GetWeatherBtn_Clicked` 事件处理程序替换为以下代码。 此代码用于验证输入字段中存在邮政编码，并检索该邮政编码的数据。 然后将整页的绑定上下文设置为生成的 `Weather` 实例。 该代码结束时，按钮文本设置为“Search Again”。 UI 中的每个标签都绑定到 `Weather` 类的属性。 将屏幕的绑定上下文设置为 `Weather` 实例时，这些标签会自动更新。  
   
     ```csharp  
     private async void GetWeatherBtn_Clicked(object sender, EventArgs e)  
@@ -400,8 +421,8 @@ Xamarin.Forms 会呈现每个平台的本机 UI 控件，以便你的应用会�
     }  
     ```  
   
-3.  右键单击相应项目，选择“设为启动项目”，并在设备或仿真器/模拟器中启动应用，从而在所有三个平台（Android、iOS 和 Windows）上运行应用。 输入有效的美国五位数邮政编码，并按“获取天气信息”按钮，以显示相应区域的天气数据（如下所示）。 需要将 Visual Studio 连接到 iOS 项目网络上的 Mac OS X 计算机。  
+3.  右键单击相应项目，选择“设为启动项目”，并在设备或模拟器中启动应用，从而在所有三个平台上运行应用。 输入有效的美国五位数邮政编码，并按“获取天气信息”按钮显示相应区域的天气数据。 需要将 Visual Studio 连接到 iOS 项目网络上的 Mac 计算机。  
   
-     ![Android、iOS 和 Windows Phone 上的天气应用示例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")  
+     [![iOS、Android 和 UWP 上的“天气”应用示例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")](../cross-platform/media/crossplat-xamarin-formsguide-1-Large.png#lightbox)
   
 此项目完整的源代码位于 [xamarin-forms-samples repository on GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)（GitHub 上的 xamarin-forms-samples 存储库）中。

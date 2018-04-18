@@ -1,29 +1,29 @@
 ---
-title: "Visual Studio 订阅中的 Pluralsight 权益 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/4/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Pluralsight training subscription included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 118fa74608bc0a36c8ce0a6941915fec535aad84
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio 订阅中的 Pluralsight 权益 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 1/4/2018
+ms.topic: Get-Started-Article
+description: 了解 Visual Studio 订阅中随附的 Pluralsight 培训订阅。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 973909a6ebc2730bfa7f4b9a0c576960175a8b7e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Pluralsight 培训权益
-## <a name="overview"></a>概述
+
 通过专家创作的课程、学习路径、适应技能水平测量等内容提升你的技能！  根据你拥有的 Visual Studio 订阅或计划成员身份，你可能有资格在长达 6 个月的时间内免费无限制地访问整个 Pluralsight 目录。 
 
 下表详细介绍了每种 Visual Studio 订阅类型可以使用的 Pluralsight 订阅权益。  一些订阅者在完整目录访问订阅到期后仍将能够利用有限数目的课程进行学习。 完整目录订阅到期时，Pluralsight 会指导你完成该过程。 
 
  并非所有之前使用过通过 Visual Studio 订阅提供的 Pluralsight 订阅的订阅者都无法兑换新的 Pluralsight 权益产品/服务，具体取决于其具有的订阅类型。 如果你没有资格兑换额外的 Pluralsight 培训权益，则在尝试激活 Pluralsight 网站上的权益时，你会收到一条通知。  
 
-### <a name="eligibility"></a>资格
+## <a name="eligibility"></a>资格
 | 订阅级别/计划                                 | 好处               | 是否续订？                                                         |
 |--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
 | Visual Studio Enterprise Standard                            | 为期 6 个月的订阅 | 不是。  到期后可获得为期 12 个月的受限目录。 |
@@ -47,12 +47,12 @@ ms.lasthandoff: 01/29/2018
 | Visual Studio Enterprise – MCT 软件和服务开发人员 | 不可用         |                                                                    |
 <sup>1</sup>  包括限制转售 (NFR)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)  
 
-无法确定正在使用哪些订阅？  请连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看分配给你电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
+无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
  
 
 
 ## <a name="activation-steps"></a>激活步骤
-1. 若要激活订阅，请连接到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，然后单击 Pluralsight 权益磁贴（位于“专业开发”部分）上的“获取代码”链接。 
+1. 要激活订阅，请连接到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，然后在“专业开发”部分中的 Pluralsight 权益磁贴上单击“获取代码”链接。 
 
     ![Pluralsight 权益磁贴](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
 
@@ -103,8 +103,8 @@ ms.lasthandoff: 01/29/2018
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>问：Pluralsight 订阅到期后，会发生什么情况？  
 答：免费 Pluralsight 订阅结束时，有两个选项可供选择：
-1. 根据 Visual Studio 订阅，可能会额外提供为期 12 个月的受限课程。  请检查[资格表](#eligibility)这一表格，以查看订阅是否符合条件。
-2. 你可以选择直接从 Pluralsight 购买订阅。  请联系 [Pluralsight](http://www.pluralsight.com) 获取完整详细信息。  
+1. 你获得了一套课程 12 个月的免费使用权限（请检查[资格表](#eligibility)，了解你的订阅是否符合条件），该课程仅限 50 节课，内容涉及以下三大关键领域之一：云上的应用开发；AI、机器学习和数据；以及云中的 DevOps。 请注意 Pluralsight 发送的电子邮件，在到期后索取免费使用权限。 可以在每个部分库下看到[课程列表](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit)。
+2. 可以选择从 Pluralsight 以 10% 的折扣直接购买订阅，购买后便可访问完整课程目录。  请联系 [Pluralsight](http://www.pluralsight.com) 获取完整详细信息。  
 
 ## <a name="support-resources"></a>支持资源
 -  [Pluralsight 帮助中心](https://help.pluralsight.com/help)可以在参加 Pluralsight 课程或使用 Pluralsight 网站方面提供帮助。 

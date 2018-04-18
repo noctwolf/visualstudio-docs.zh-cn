@@ -1,5 +1,5 @@
 ---
-title: "如何续订通过 Microsoft Store 获取的 Visual Studio 订阅？ | Microsoft Docs"
+title: 如何续订通过 Microsoft Store 获取的 Visual Studio 订阅？ | Microsoft Docs
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,13 +10,13 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 1cf92c870521907c90332a9b9d1292b7b297c8d6
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="how-do-i-renew-a-subscription-purchased-through-microsoft-store"></a>如何续订通过 Microsoft Store 购买的订阅？
-概述：零售订阅通常从 Microsoft Store 购买而得，并且可以通过查看 https://my.visualstudio.com/subscriptions 上提供的订阅信息标识为“零售”。 
+概述：零售订阅通常从 Microsoft Store 购买而得，并且可以通过查看 https://my.visualstudio.com/subscriptions 上提供的订阅信息，标识为“零售”。 
 
 ## <a name="renew-your-subscription"></a>续订你的订阅： 
 
@@ -30,8 +30,8 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="activate-your-subscription"></a>激活订阅： 
 可以从你的付款“确认页”或“确认电子邮件”中激活订阅。  （如果没有看到“确认电子邮件”，请务必检查垃圾邮件文件夹。）   
-1. 单击“单击此处登录”。  将定向到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs)。
+1. 单击“单击此处登录”。  你将会转到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs)。
 2. 登录到你的订阅。  （获取帮助[登录](/visualstudio/subscriptions/signing-in)。）
 3. 输入付款“确认页”或“确认电子邮件”提供的“产品密钥”信息，然后单击“激活”。
     ![输入产品密钥](_img//buy-retail/enter-product-key.png)
-4. 订阅现在应显示在 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs) 上。
+4. 现在应可以在 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs) 看到订阅。

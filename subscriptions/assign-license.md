@@ -1,39 +1,44 @@
 ---
-Title: Assign licenses to Visual Studio Subscriptions | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can assign licenses to subscribers
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b82f02b968398d0a8d1ce4872ce00e8447a2ae4d
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 将许可证分配给 Visual Studio 订阅 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: 了解管理员如何将许可证分配给订阅者
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: b035f748f6d99595bc2570b54a4d6413cab72af5
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 订阅管理员门户中分配许可证
 
+作为 Visual Studio 订阅管理员，可以使用 Visual Studio 订阅管理员门户为个人用户分配订阅。  
+可以每次分配一个订阅，也可以使用“批量添加”功能快速轻松地上传订阅者列表及其订阅信息。 
+
 ## <a name="assigning-a-single-user"></a>分配给单个用户
 如果拥有 Visual Studio 订阅的可用许可证，可以将这些许可证分配给新用户，让他们能够享受订阅权益。 
-1.  要分配给单个 Visual Studio 订阅者，请在表的顶部单击“添加”。
+1.  登录到[管理员门户](https://manage.visualstudio.com)
+
+2.  要分配给单个 Visual Studio 订阅者，请在表的顶部单击“添加”。
 
     ![添加订阅者](_img\assign-license-add\assign-license-add.png)
 
-2.  在表单字段中输入新订阅者的信息。 如果组织使用 Azure Active Directory，则此字段可充当搜索功能，查找当前目录中的用户，以便从搜索结果中选择正确的用户。 选择用户后，系统会自动填充该用户的名称、登录电子邮件和通知电子邮件，如下所示。 
+3.  在表单域中输入新订阅者的信息。 如果组织使用 Azure Active Directory，则此字段可充当搜索功能，查找当前目录中的用户，以便从搜索结果中选择正确的用户。 选择用户后，系统会自动填充该用户的名称、登录电子邮件和通知电子邮件，如下所示。 
 
-如果组织用于接收和用于登录的电子邮件不同，可选择在此处输入用于接收的电子邮件。 选择指示“使用不同于登录电子邮件的电子邮件进行通信？”的超链接。 
+    如果组织用于接收和用于登录的电子邮件不同，可选择在此处输入用于接收的电子邮件。 选择指示“使用不同于登录电子邮件的电子邮件进行通信？”的超链接。 
 
-如果希望此订阅者在登录 [Visual Studio 订阅门户](https:/my.visualstudio.com?wt.mc_id=o~msft~docs)时可以访问软件下载，请务必选中“下载”框。 如果选择取消选中此框，用户会无法访问软件下载，但仍可使用订阅中包含的所有其他权益。 完成后，单击“添加”。
+    如果希望此订阅者在登录 [Visual Studio 订阅门户](https:/my.visualstudio.com?wt.mc_id=o~msft~docs)时可以访问软件下载，请务必选中“下载”框。 如果选择取消选中此框，用户会无法访问软件下载，但仍可使用订阅中包含的所有其他权益。 完成后，单击“添加”。
 
-   ![输入订阅者信息](_img\assign-license-add\add-subscriber-1.png)
+    ![输入订阅者信息](_img\assign-license-add\add-subscriber-1.png)
 
-   ![输入订阅者信息](_img\assign-license-add\add-subscriber-2.png)
+    ![输入订阅者信息](_img\assign-license-add\add-subscriber-2.png)
 
-3.  添加订阅者后，系统会向新订阅者自动发送一封分配电子邮件，为其提供进一步说明。 通过选中订阅者和单击顶部菜单中的“重新发送”按钮，可以随时再次发送分配电子邮件。
+4.  添加订阅者后，系统会向新订阅者自动发送一封分配电子邮件，为其提供进一步说明。 通过选中订阅者和单击顶部菜单中的“重新发送”按钮，可以随时再次发送分配电子邮件。
 
     ![订阅者已添加](_img\assign-license-add\add-subscriber-complete.png)
 
@@ -52,7 +57,7 @@ ms.lasthandoff: 01/29/2018
     - 删除用户名等表单域前后的空格。
     - 确保用户名在名字和姓氏两部分之间不含额外空格（例如，“Maggie May”不能输成“Maggie  May”，因为系统不会删减额外空格）
 
-   ![批量添加模板](_img\assign-license-add\bulk-template.png)
+    ![批量添加模板](_img\assign-license-add\bulk-template.png)
 
 4.  返回 Visual Studio 订阅管理门户，在“上传多个订阅者”对话框中，单击“浏览”。 导航到之前保存的 Excel 文件，然后单击“确定”。 屏幕上随即显示上传进度。 
 

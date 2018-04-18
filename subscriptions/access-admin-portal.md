@@ -1,5 +1,5 @@
 ---
-title: "访问管理员门户 | Visual Studio Marketplace"
+title: 访问管理员门户 | Visual Studio Marketplace
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>访问 Visual Studio 订阅管理员门户
 ## <a name="for-mpsa"></a>对于 MPSA
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/29/2018
 ## <a name="for-cloud-subscriptions"></a>对于云订阅
 购买 Visual Studio 云订阅后，系统就会自动将你设置为这些订阅的管理员。  如果已购买云订阅，则可以在 [https://manage.visualstudio.com](https://manage.visualstudio.com) 上进行管理。
 
-若要购买 Visual Studio 云订阅，请访问 Visual Studio Marketplace ([https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscriptions))。
+要购买 Visual Studio 云订阅，请访问 Visual Studio Marketplace：[https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscriptions)。
 
 
 ## <a name="for-programs-subscriptions"></a>对于计划订阅
@@ -49,7 +49,7 @@ ms.lasthandoff: 01/29/2018
 
 
 ### <a name="imagine"></a>Imagine
-如果你是 Microsoft Imagine 管理员，请访问 [https://imagine.microsoft.com/institutions/index](https://imagine.microsoft.com/institutions/index)。
+如果你是 Microsoft Imagine 管理员，请访问[https://imagine.microsoft.com/institutions/index](https://imagine.microsoft.com/institutions/index)。
 
 
 ### <a name="partner"></a>合作伙伴

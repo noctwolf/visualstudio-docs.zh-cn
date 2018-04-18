@@ -2,7 +2,7 @@
 title: 使用 C++ 和 Python | Microsoft Docs
 description: 在 Visual Studio 中编写适用于 Python 的 C++ 扩展或模块的过程和步骤
 ms.custom: ''
-ms.date: 01/16/2018
+ms.date: 04/03/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -14,36 +14,39 @@ ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 12309747949e9f541c69fad64584e86627252907
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 3f81a9f14d64e014fd2b40b0628d7d71884810a3
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
 使用 C++（或 C）编写的模块常用于扩展 Python 解释器的功能和启用对低级别操作系统功能的访问。 主要有以下 3 种类型的模块：
 
-- 加速器模块：Python 是一种解释型语言，某些代码段可使用 C++ 进行编写来提高性能。 
-- 包装器模块：包装器向 Python 代码公开现有 C/C++ 接口，或公开易于通过 Python 使用的更“Python 化”的 API。
+- 加速器模块：Python 是一种解释型语言，某些代码段可使用 C++ 进行编写来提高性能。
+- 包装器模块：向 Python 代码公开现有 C/C++ 接口，或公开易于通过 Python 使用的更“Python 化”的 API。
 - 低级别系统访问模块：用于访问 CPython 运行时的较低级别功能、操作系统或基础硬件。
 
 本文介绍了如何为 CPython 生成 C++ 扩展模块，该模块计算双曲正切并从 Python 代码中调用它。 首先使用 Python 实现此例程，以演示使用 C++ 实现此相同例程时可获得的相对性能提升。
 
 此处采用的方法适用于 [Python 文档](https://docs.python.org/3/c-api/)中所述的标准 CPython 扩展。 本文末尾的[替代方法](#alternative-approaches)下将此方法与其他方法进行了比较。
 
+要获取本演练的完整示例，请访问 [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub)。
+
 ## <a name="prerequisites"></a>系统必备
 
 - 将 **C++ 桌面开发**和 **Python 开发**工作负载作为默认选项安装的 Visual Studio 2017。
 - 在“Python 开发”工作负载中，同时选择右侧的“Python 本机开发工具”方框。 此选项设置本文所述的大部分配置。 （此选项还自动包括 C++ 工作负载。）
 
-![选择“Python 本机开发工具”选项](media/cpp-install-native.png)
+    ![选择“Python 本机开发工具”选项](media/cpp-install-native.png)
 
-- 安装**数据科学和分析应用程序**工作负载还包括默认安装 Python 和“Python 本机开发工具”选项。
+    > [!Tip]
+    > 安装**数据科学和分析应用程序**工作负载还包括默认安装 Python 和“Python 本机开发工具”选项。
 
 有关详细信息，请参阅[安装针对 Visual Studio 的 Python 支持](installing-python-support-in-visual-studio.md)，其中包括使用其他版本的 Visual Studio。 如果单独安装 Python，请务必在安装程序的“高级选项”下选择“下载调试符号”和“下载调试二进制文件”。 此选项确保在选择进行调试生成时能够使用必要的调试库。
 
@@ -91,10 +94,11 @@ ms.lasthandoff: 03/28/2018
         print('{} took {:.3f} seconds\n\n'.format(name, duration))
 
         for d in result:
-            assert -1 <= d <=1, " incorrect values"
+            assert -1 <= d <= 1, " incorrect values"
 
     if __name__ == "__main__":
         print('Running benchmarks with COUNT = {}'.format(COUNT))
+
         test(sequence_tanh, 'sequence_tanh')
 
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d]')
@@ -104,11 +108,17 @@ ms.lasthandoff: 03/28/2018
 
 ## <a name="create-the-core-c-project"></a>创建核心 C++ 项目
 
-1. 在解决方案资源管理器中右键单击解决方案，然后选择“添加”>“新建项目...”。Visual Studio 解决方案可以同时包含 Python 和 C++ 项目。
+1. 在解决方案资源管理器中右键单击解决方案，然后选择“添加”>“新建项目...”。一个 Visual Studio 解决方案可同时包含 Python 和 C++ 项目（这是使用 Visual Studio for Python 的优势之一）。
 
-1. 搜索“C++”，选择“空项目”，指定名称（本文使用“superfastcode”），并选择“确定”。 注意：如果随 Visual Studio 2017 一起安装了 **Python 本机开发工具**，则可从 **Python 扩展模块**模板开始，其中有许多现成的此处所述内容。 但是，对于本演练，从空项目开始可以逐步演示如何生成扩展模块。
+1. 搜索“C++”，选择“空项目”，指定名称（本文使用“superfastcode”），并选择“确定”。
 
-1. 在新项目中创建 C++ 文件，方法是右键单击“源文件”节点，然后选择“添加”>“新建项...”，选择“C++ 文件”，指定其名称（例如 `module.cpp`），然后选择“确定”。 如果要在后续步骤中返回 C++ 属性页，则必须执行此步骤。
+    > [!Tip]
+    > 如果在 Visual Studio 2017 中安装了 Python 本机开发工具，则可改为从 Python 扩展模块模板开始，其中有许多现成的以下所述的内容。 但是，对于本演练，从空项目开始可以逐步演示如何生成扩展模块。 了解该过程后，在编写自己的扩展时，使用模板可帮助你节省时间。
+
+1. 在新项目中创建 C++ 文件，方法是右键单击“源文件”节点，然后选择“添加”>“新建项...”，选择“C++ 文件”，将其命名为 `module.cpp`，然后选择“确定”。
+
+    > [!Important]
+    > 需要扩展名为 `.cpp` 的文件才能在随后步骤中打开 C++ 属性页。
 
 1. 右键单击解决方案中的 C++ 项目，选择“属性”。
 
@@ -136,7 +146,7 @@ ms.lasthandoff: 03/28/2018
 
 1. 右键单击 C++ 项目，然后选择“生成”来测试配置（包括“调试”和“发布”）。 `.pyd` 文件位于解决方案文件夹中的“调试”和“发布”下，而非位于 C++ 项目文件夹本身。
 
-1. 将以下代码添加到 C++ 项目的主 `.cpp` 文件：
+1. 将以下代码添加到 C++ 项目的 `module.cpp` 文件：
 
     ```cpp
     #include <Windows.h>
@@ -161,19 +171,17 @@ ms.lasthandoff: 03/28/2018
 
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>将 C++ 项目转换为适用于 Python 的扩展
 
-若要使 C++ DLL 成为适用于 Python 的扩展，首先应修改导出的方法以与 Python 类型交互。 然后，添加一个可导出模块的函数以及该模块的方法的定义。 有关此处所显示内容的背景信息，请参阅 python.org 上的 [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html)（Python/C API 参考手册）和重点的 [Module Objects](https://docs.python.org/3/c-api/module.html)（模块对象）。（务必从右上角的下拉控件中选择相应 Python 版本。）
+若要使 C++ DLL 成为适用于 Python 的扩展，首先应修改导出的方法以与 Python 类型交互。 然后，添加一个可导出模块的函数以及该模块的方法的定义。
 
-> [!Note]
-> 这些说明适用于 Python 3.x。 如果使用的是 Python 2.7，请参阅[使用 C 或 C++ 扩展 Python 2.7](https://docs.python.org/2.7/extending/extending.html) 和[将扩展模块移植到 Python 3](https://docs.python.org/2.7/howto/cporting.html) (python.org)。
+要了解本节介绍的有关 Python 3.x 的背景信息，请在 python.org 上参阅 [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html)（Python/C API 参考手册），并着重了解 [Module Objects](https://docs.python.org/3/c-api/module.html)（模块对象）（请不要忘记从右上角的下拉列表中选择你的 Python 版本，以便查看正确的文档）。
+
+如果使用的是 Python 2.7，请改为参阅 python.org 上的 [Extending Python 2.7 with C or C++](https://docs.python.org/2.7/extending/extending.html)（使用 C 或 C++ 扩展 Python 2.7）和 [Porting Extension Modules to Python 3](https://docs.python.org/2.7/howto/cporting.html)（将扩展模块移植到 Python 3）。
 
 1. 在 C++ 文件的顶部，添加 `Python.h`：
 
     ```cpp
     #include <Python.h>
     ```
-
-    > [!Tip]
-    > 如果看到“E1696：无法打开源文件‘Python.h’”和/或“C1083：无法打开包含文件：‘Python.h’：没有此类文件或目录”，请验证是否已按照[创建核心 C++ 项目](#create-the-core-c-project)下的步骤 6 所述，将项目属性中的“C/C++ > 常规 > 附加包含目录”设置，设置为 Python 安装的 `include` 文件夹。
 
 1. 修改 `tanh_impl` 方法以接受和返回 Python 类型（即，`PyOjbect*`）：
 
@@ -219,8 +227,8 @@ ms.lasthandoff: 03/28/2018
     ```
 
 1. 将目标配置设置为“发布”并再次生成 C++ 项目来验证代码。 如果遇到错误，请检查以下事例：
-    - 无法找到 Python.h：验证项目属性中的“C/C ++> 常规> 附加包含目录”中的路径是否指向 Python 安装的 `include` 文件夹。
-    - 无法找到 Python 库：验证项目属性中的“链接器 > 常规> 附加库目录”中的路径是否指向 Python 安装的 `libs` 文件夹。
+    - 找不到 Python.h（E1696：无法打开源文件“Python.h”和/或 C1083：无法打开包含文件：“Python.h”：没有此类文件或目录）：请验证项目属性中“C/C++”>“常规”>“附加包含目录”中的路径是否指向 Python 安装的 `include` 文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-project)中的步骤 6。
+    - 无法找到 Python 库：验证项目属性中的“链接器 > 常规> 附加库目录”中的路径是否指向 Python 安装的 `libs` 文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-project)中的步骤 6。
     - 与目标体系结构相关的链接器错误：更改 C++ 目标的项目体系结构以匹配 Python 安装。 例如，如果你将 C++ 项目的目标定为 x64，但是 Python 安装是 x86，则将 C++ 项目更改为目标 x86。
 
 ## <a name="test-the-code-and-compare-the-results"></a>测试代码和比较结果
@@ -232,6 +240,8 @@ ms.lasthandoff: 03/28/2018
 可通过两种方法使 DLL 可供 Python 使用。
 
 如果 Python 项目和 C++ 项目在相同的解决方案中，则使用第一种方法。 转到解决方案资源管理器，右键单击 Python 项目中的“引用”节点，然后选择“添加引用”。 在随即出现的对话框中，依次选择“项目”选项卡、“superfastcode”项目（或任何使用的名称），然后选择“确定”。
+
+![添加对 superfastcode 项目的引用](media/cpp-add-reference.png)
 
 另一种方法，如以下步骤所述，在全局 Python 环境中安装模块，使其也可供其他 Python 项目使用。 （执行此操作通常需要在 Visual Studio 2017 版本 15.5 和更早版本中刷新该环境的 IntelliSense 完成数据库。 从环境中删除模块时也必须执行刷新。）
 
@@ -269,7 +279,18 @@ ms.lasthandoff: 03/28/2018
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 
-1. 运行 Python 程序（“调试 > 开始执行(不调试)”或按 Ctrl+F5），观察 C++ 例程的运行速度比 Python 实现快五到 20 倍。 再次尝试增加 `COUNT` 变量，让差异变得更明显。 另请注意，C++ 模块调试版本的运行速度慢于发布版本的运行速度，因为调试版本优化程度较低，并包含各种错误检查。 请随意在这些配置之间切换，以便比较。
+1. 运行 Python 程序（“调试 > 开始执行(不调试)”或按 Ctrl+F5），观察 C++ 例程的运行速度比 Python 实现快五到 20 倍。 典型输出形式如下：
+
+    ```output
+    Running benchmarks with COUNT = 500000
+    sequence_tanh took 1.542 seconds
+
+    [tanh(x) for x in d] took 1.087 seconds
+
+    [fast_tanh(x) for x in d] took 0.158 seconds
+    ```
+
+1. 尝试增加 `COUNT` 变量，让差异变得更明显。 C++ 模块调试版本的运行速度慢于发布版本的运行速度，因为调试版本优化程度较低，并包含各种错误检查。 请随意在这些配置之间切换，以便比较。
 
 ## <a name="debug-the-c-code"></a>调试 C++ 代码
 
@@ -301,7 +322,13 @@ Visual Studio 支持一起调试 Python 和 C++ 代码。
 | 方法 | 年份 | 代表用户 | 优点 | 缺点 |
 | --- | --- | --- | --- | --- |
 | 适用于 CPython 的 C/C++ 扩展模块 | 1991 | 标准库 | [丰富的文档和教程](https://docs.python.org/3/c-api/)。 完全控制。 | 编译、可移植性、引用管理。 扎实的 C 知识。 |
-| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 针对多种语言立即生成绑定。 | 如果 Python 是唯一目标，则开销过大。 |
+| [pybind11](https://github.com/pybind/pybind11)（推荐用于 C++） | 2015 |  | 用于创建现有 C++ 代码的 Python 绑定的轻量型纯标头库。 依赖项少。 兼容 PyPy。 | 较新，不够成熟。 需使用大量 C++11 功能。 支持的编译器较少（包含 Visual Studio）。 |
+| Cython（推荐用于 C） | 2007 | [gevent](http://www.gevent.org/)、[kivy](https://kivy.org/) | 类似于 Python。 非常成熟。 高性能。 | 编译、新语法、新工具链。 |
+| [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | 几乎可与任何 C++ 编译器一起使用。 | 库套件较大且复杂；包含旧编译器的许多解决方法。 |
 | ctype | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 无编译，广泛可用性。 | 访问和转变 C 结构的过程比较繁琐且容易出错。 |
-| Cython | 2007 | [gevent](http://www.gevent.org/)、[kivy](https://kivy.org/) | 类似于 Python。 非常成熟。 高性能。 | 编译、新语法、新工具链。 |
-| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/)、[pypy](http://pypy.org/) | 易于集成，与 PyPy 兼容。 | 新推出，不够成熟。 |
+| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 针对多种语言立即生成绑定。 | 如果 Python 是唯一目标，则开销过大。 |
+| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/)、[pypy](http://pypy.org/) | 易于集成，与 PyPy 兼容。 | 较新，不够成熟。 |
+
+## <a name="see-also"></a>请参阅
+
+要获取本演练的完整示例，请访问 [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub)。

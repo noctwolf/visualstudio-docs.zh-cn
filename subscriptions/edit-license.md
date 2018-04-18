@@ -1,25 +1,28 @@
 ---
-title: "在管理员门户中编辑订阅 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can edit subscription assignments.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 在管理员门户中编辑订阅 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: 了解管理员如何编辑订阅分配。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>编辑 Visual Studio 订阅分配
 
+作为订阅管理员，你可以更改分配给组织内个人的订阅。  本文讨论可以进行更改的类型并提供必要的步骤。 
+
 ## <a name="making-changes-to-subscriber-information"></a>对订阅者的信息进行更改
 可以编辑订阅者的信息来更正错误或更新信息。 
-注意，编辑订阅者的电子邮件地址将导致任何现有权益被重置。
+> [!NOTE]
+> 编辑订阅者的电子邮件地址将导致任何现有权益被重置。
 
 若要对订阅者进行编辑，请在鼠标悬停在订阅者的电子邮件地址旁时，选择出现的省略号 (…)。 此时将显示下拉列表。  选择“编辑”，以修改订阅者的详细信息。 也可双击网格中订阅者的行来打开编辑窗口。
 
@@ -53,7 +56,7 @@ ms.lasthandoff: 01/29/2018
 
     ![编辑许可证 - 批量编辑文件上传](_img\edit-license\edit-license-bulk-file-upload1.png)
 
-5.  文件上传后，将看到上传成功的通知。 
+5.  文件上传后，将看到上传成功的通知。 此时，编辑将反映到订阅者信息当中。 
 
     ![编辑许可证 - 批量编辑上传完成](_img\edit-license\edit-license-bulk-upload-complete.png)
 

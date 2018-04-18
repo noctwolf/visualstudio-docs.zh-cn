@@ -1,21 +1,21 @@
 ---
-title: "登录 Visual Studio 订阅 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/11/2017
-Ms.topic: Get-Started-Article
-Description: How to Sign In to Your Visual Studio Subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: bb6313e06525967f7ac8dd0aa6dd74bb4417ffef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 登录 Visual Studio 订阅 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/11/2017
+ms.topic: Get-Started-Article
+description: 如何登录 Visual Studio 订阅
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: a6a29a67882e36a23f5c61757b80cf9558b93be1
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="signing-in-to-your-visual-studio-subscription"></a>登录到你的 Visual Studio 订阅
+# <a name="signing-in-to-your-visual-studio-subscription"></a>登录 Visual Studio 订阅
 
 登录到 Visual Studio 订阅的步骤取决于你所使用的帐户类型。  例如，你可能正在使用由你的公司或学校提供的 Microsoft 帐户 (MSA) 或电子邮件地址。  
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 01/29/2018
    > [!NOTE]
    > 在你收到的订阅者欢迎电子邮件中也标识了该地址。 如果在查找欢迎电子邮件时遇到问题，请检查垃圾邮件文件夹。 
 
-3. 单击“继续”。
+3. 单击 **“继续”**。
 4. 将重定向到公司的登录页。
 5. 输入密码。
 6. 单击“登录” 
@@ -63,7 +63,7 @@ ms.lasthandoff: 01/29/2018
    > [!NOTE]
    > 订阅者“欢迎信”中也标识了该地址。 如果未收到“欢迎信”，请检查垃圾邮件文件夹。
 
-3. 单击“继续”。
+3. 单击 **“继续”**。
 4. 你将重定向到“决策页”。
     - 如果订阅是和与 Azure Active Directory (AAD) 租户关联的“工作或学校”帐户关联，请选择“工作或学校帐户”。
     - 如果订阅与“公司”电子邮件地址相关联，但也已转换为”个人”Microsoft 帐户 (MSA)，请选择“个人”。

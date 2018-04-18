@@ -1,19 +1,19 @@
 ---
-title: "处理过期许可证 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can handle expired Visual Studio subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: ffe9a2367d2ce0933e7f57831400fafb9aeac26e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 处理过期许可证 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: 了解管理员如何处理过期的 Visual Studio 订阅
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: f4f1e049ce5f236fc1bce958d698b15637cb265d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="handling-expired-subscriptions"></a>处理过期订阅
 
@@ -21,4 +21,8 @@ ms.lasthandoff: 01/29/2018
 
 ![过期订阅列表](_img\expired-subscriptions\expired-list.png) 
 
-若要续订订阅，请与批量许可经销商或 Microsoft 经销商联系。 向他们提供你的协议编号和购买帐号。 你的经销商或 Microsoft 经销商会指导你完成续订或购买附加订阅的过程。 下订单或续订合约后，新订阅随即可用，并且可以分配给订阅者。
+**续订订阅**
+1.  请与批量许可经销商或 Microsoft 经销商联系。 
+2.  向他们提供你的协议编号和购买帐号。 
+
+你的经销商或 Microsoft 经销商会指导你完成续订或购买附加订阅的过程。 下订单或续订合约后，新订阅随即可用，并且可以[分配给订阅者](/assign-license/)。 
