@@ -184,7 +184,7 @@ ms.lasthandoff: 04/16/2018
 
 -   [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)  
 
--   [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
+-   [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
 
 -   通过 [运行分析器](../modeling/find-potential-problems-using-code-map-analyzers.md)发现代码中的潜在问题。  
 
@@ -328,7 +328,7 @@ ms.lasthandoff: 04/16/2018
 
 -   使用代码图工具栏上的“包括父级”  按钮关闭自动添加父项。  
 
--   直接编辑代码图文件，以删除不需要的节点和链接。 更改代码图不会影响基础代码。 请参阅 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
+-   直接编辑代码图文件，以删除不需要的节点和链接。 更改代码图不会影响基础代码。 请参阅 [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
 
  ![跳过生成和包括父级按钮](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
 
@@ -384,4 +384,4 @@ ms.lasthandoff: 04/16/2018
 
 -   [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)  
 
--   [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+-   [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
