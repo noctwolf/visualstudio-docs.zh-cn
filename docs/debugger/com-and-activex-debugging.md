@@ -1,13 +1,10 @@
 ---
-title: "调试 COM 和 ActiveX |Microsoft 文档"
-ms.custom: 
+title: 调试 COM 和 ActiveX |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - debugging COM containers
 - ActiveX controls, debugging
 ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2854a74bd8da32db5d954a0e68a33a484b7eb493
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a0351d3f0d020f86c3c3c10ff830999772ca0780
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="com-and-activex-debugging"></a>调试 COM 和 ActiveX
 本节提供有关调试 COM 应用程序和 ActiveX 控件的提示。  
@@ -51,7 +47,7 @@ ms.lasthandoff: 12/22/2017
  [调试器功能简介](../debugger/debugger-feature-tour.md)  
  提供指向调试文档的较大章节的链接。 涉及的信息包括：调试器的新增功能，设置和准备，断点，处理异常，编辑和继续，调试托管代码，调试 Visual C++ 项目，调试 COM 和 ActiveX，调试 DLL，调试 SQL，以及用户界面参考。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [COM 简介](/cpp/atl/introduction-to-com)   
  [ActiveX 控件](/cpp/mfc/activex-controls)   

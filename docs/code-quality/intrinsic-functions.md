@@ -1,12 +1,10 @@
 ---
-title: "内部函数 |Microsoft 文档"
-ms.custom: 
+title: 内部函数 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _String_length_
 - _Param_
@@ -15,16 +13,16 @@ f1_keywords:
 - _Nullterm_length_
 - _Inexpressible_
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
-caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c25c76ba43c983a6029c8d50e183ccf839ef08bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 932d034fb1510a1e73d439d62ad3129c78841bed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intrinsic-functions"></a>内部函数
 在 SAL 表达式可以是 C/c + + 表达式，前提是它是不具有副作用的表达式-例如，+ +，--，和所有在此上下文中具有副作用的函数调用。  但是，SAL 提供一些类似函数的对象和可以在 SAL 表达式中使用某些保留的符号。 这些被称为*内部函数*。  
@@ -36,9 +34,9 @@ ms.lasthandoff: 12/22/2017
 |----------------|-----------------|  
 |`_Curr_`|要批注的对象的同义词。  当`_At_`批注正在使用，`_Curr_`等同于第一个参数`_At_`。  否则，将参数或批注与词法关联的整个函数/返回值。|  
 |`_Inexpressible_(expr)`|表示的缓冲区大小太复杂，无法使用的批注表达式表示的情况-例如，当计算扫描输入的数据集，然后计算所选成员。|  
-|`_Nullterm_length_(param)`|`param`是中最多到缓冲区，但不是包括 null 终止符的元素数。 它可应用于任何缓冲区的非聚合、 非 void 类型。|  
+|`_Nullterm_length_(param)`|`param` 是中最多到缓冲区，但不是包括 null 终止符的元素数。 它可应用于任何缓冲区的非聚合、 非 void 类型。|  
 |`_Old_(expr)`|在不满足前提条件，计算时`_Old_`返回输入的值`expr`。  当它将计算后置条件中时，会返回值`expr`根据它进行计算中不满足前提条件。|  
-|`_Param_(n)`|`n`Th 函数参数，请从 1 到计数`n`，和`n`是文本的整数常量。 如果该参数命名为，此批注等同于按名称访问参数。 **注意：** `n`可能更愿意使用由省略号，或者可能在不使用名称在函数原型中使用的位置参数。|  
+|`_Param_(n)`|`n`Th 函数参数，请从 1 到计数`n`，和`n`是文本的整数常量。 如果该参数命名为，此批注等同于按名称访问参数。 **注意：** `n`可能更愿意使用由省略号，或者可能在不使用名称在函数原型中使用的位置参数。  |  
 |`return`|C/c + + 保留关键字`return`可以 SAL 表达式中使用以指示函数的返回值。  Post 状态;，值才可用它是导致语法错误的以前状态使用它。|  
   
 ## <a name="string-specific"></a>特定于字符串  
@@ -46,11 +44,11 @@ ms.lasthandoff: 12/22/2017
   
 |批注|描述|  
 |----------------|-----------------|  
-|`_String_length_(param)`|`param`是中最多到字符串，但不是包括 null 终止符的元素数。 此批注留待字符串的字符类型。|  
-|`strlen(param)`|`param`是中最多到字符串，但不是包括 null 终止符的元素数。 此批注保留供使用的字符数组和类似于 C 运行时函数[strlen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)。|  
-|`wcslen(param)`|`param`是 （但不是包括） 的字符串中的元素数 null 终止符的占用。 此批注保留为使用宽字符数组和类似于 C 运行时函数[wcslen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)。|  
+|`_String_length_(param)`|`param` 是中最多到字符串，但不是包括 null 终止符的元素数。 此批注留待字符串的字符类型。|  
+|`strlen(param)`|`param` 是中最多到字符串，但不是包括 null 终止符的元素数。 此批注保留供使用的字符数组和类似于 C 运行时函数[strlen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)。|  
+|`wcslen(param)`|`param` 是 （但不是包括） 的字符串中的元素数 null 终止符的占用。 此批注保留为使用宽字符数组和类似于 C 运行时函数[wcslen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   

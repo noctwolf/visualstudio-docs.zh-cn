@@ -1,11 +1,8 @@
 ---
-title: "将 WPF 控件绑定到数据集 |Microsoft 文档"
-ms.custom: 
+title: 将 WPF 控件绑定到数据集 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 072adcf912e5921164647cf77ee561617f844786
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: f4034651b68194906285c6d1911f7f650287074d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 在本演练中，你将创建一个包含数据绑定控件的 WPF 应用程序。 这些控件将绑定到在数据集中封装的产品记录。 你还将添加用于浏览产品和保存对产品记录所做的更改的按钮。  
@@ -183,11 +180,11 @@ ms.lasthandoff: 12/22/2017
 7.  在**属性**窗口中，选择旁边的复选框**IsReadOnly**属性。  
   
 ## <a name="navigating-product-records"></a>导航产品记录  
- 添加可让用户来滚动产品记录通过使用代码 **\<** 和 **>** 按钮。  
+ 添加可让用户来滚动产品记录通过使用代码**\<**和**>**按钮。  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>使用户能够导航产品记录  
   
-1.  在设计器中，双击 **<** 窗口图面上的按钮。  
+1.  在设计器中，双击**<**窗口图面上的按钮。  
   
      Visual Studio 将打开代码隐藏文件，并创建一个新`backButton_Click`事件处理程序<xref:System.Windows.Controls.Primitives.ButtonBase.Click>事件。  
   
@@ -201,7 +198,7 @@ ms.lasthandoff: 12/22/2017
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
   
-4.  返回到设计器，然后双击 **>** 按钮。  
+4.  返回到设计器，然后双击**>**按钮。  
   
 5.  将以下代码添加到 `nextButton_Click` 事件处理程序中：  
   
@@ -236,7 +233,7 @@ ms.lasthandoff: 12/22/2017
   
     -   文本框显示具有图片的第一条产品记录的数据。 本产品，并且在产品 ID 为 713，名称**Long-sleeve Logo Jersey，S**。  
   
-    -   你可以单击 **>** 或 **<** 按钮来导航其他产品记录。  
+    -   你可以单击**>**或**<**按钮来导航其他产品记录。  
   
 2.  在某条产品记录，更改**大小**值，并依次**保存更改**。  
   

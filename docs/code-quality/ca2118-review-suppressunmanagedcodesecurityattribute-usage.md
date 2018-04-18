@@ -1,12 +1,10 @@
 ---
-title: "CA2118： 检查 SuppressUnmanagedCodeSecurityAttribute 用法 |Microsoft 文档"
-ms.custom: 
+title: CA2118： 检查 SuppressUnmanagedCodeSecurityAttribute 用法 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2118
 - ReviewSuppressUnmanagedCodeSecurityUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ReviewSuppressUnmanagedCodeSecurityUsage
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6a6c5e60ed84a79e6e81d4cd066d75b1270bdb71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8d862f285efa3487c428aed2e5aed3a67c3baef6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118：检查 SuppressUnmanagedCodeSecurityAttribute 用法
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  公共或受保护的类型或成员具有<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>属性。  
   
 ## <a name="rule-description"></a>规则说明  
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>执行使用 COM 互操作或平台调用的非托管的代码的成员更改默认的安全系统行为。 通常情况下，系统会进行[数据和建模](/dotnet/framework/data/index)非托管的代码权限。 此要求为每个成员，运行时将会发生，并且检查权限的调用堆栈中的每个调用方。 当存在该属性时，系统会进行[链接需求](/dotnet/framework/misc/link-demands)的权限： 调用方进行 JIT 编译时，将检查直接调用方的权限。  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> 执行使用 COM 互操作或平台调用的非托管的代码的成员更改默认的安全系统行为。 通常情况下，系统会进行[数据和建模](/dotnet/framework/data/index)非托管的代码权限。 此要求为每个成员，运行时将会发生，并且检查权限的调用堆栈中的每个调用方。 当存在该属性时，系统会进行[链接需求](/dotnet/framework/misc/link-demands)的权限： 调用方进行 JIT 编译时，将检查直接调用方的权限。  
   
  该特性主要用于提高性能；不过，提高性能的同时会显著增加安全风险。 如果您将该属性放置在调用本机方法的公共成员时，调用堆栈 （而不是直接调用方） 中的调用方不必执行非托管的代码的非托管的代码权限。 根据公共成员的操作和输入的处理，则可能会使不受信任调用方访问功能通常仅限由可信的代码。  
   
@@ -72,7 +70,7 @@ ms.lasthandoff: 12/22/2017
   
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>   
  [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)   
  [数据和建模](/dotnet/framework/data/index)  

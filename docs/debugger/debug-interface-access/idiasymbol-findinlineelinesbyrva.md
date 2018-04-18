@@ -1,27 +1,23 @@
 ---
-title: "IDiaSymbol::findInlineeLinesByRVA |Microsoft 文档"
-ms.custom: 
+title: IDiaSymbol::findInlineeLinesByRVA |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: ac108db1-9dbf-4dc4-bf48-159ca8d3725c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc9c5b87933940b2f1f98766c1fd477460bf18b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 87dc51b740c213e41cae4ddd7cb4a890550610c4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
 检索一个枚举，允许客户端循环访问它们内联，直接或间接地，在此符号中的指定的相对虚拟地址 (RVA) 中的所有函数的行号信息。  
@@ -47,7 +43,7 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD           
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)   

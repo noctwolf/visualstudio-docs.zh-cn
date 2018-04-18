@@ -1,12 +1,10 @@
 ---
-title: "对函数行为进行批注 |Microsoft 文档"
-ms.custom: 
+title: 对函数行为进行批注 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _On_failure_
 - _Return_type_success_
@@ -20,16 +18,16 @@ f1_keywords:
 - _Check_return_
 - _Use_decl_annotations_
 ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
-caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 60cebdd015263ac5d05045e168d3f1063e0527a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9c061c12e7c34a67692af41b72ea7b04b6f06e07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-function-behavior"></a>对函数行为进行批注
 除了批注[函数参数和返回值](../code-quality/annotating-function-parameters-and-return-values.md)，还可以批注整个函数的属性。  
@@ -39,7 +37,7 @@ ms.lasthandoff: 12/22/2017
   
 |批注|描述|  
 |----------------|-----------------|  
-|`_Called_from_function_class_(name)`|不是为了单独存在；相反，它是一个旨在与 `_When_` 批注一起使用的谓词。 有关详细信息，请参阅[和指定时其中批注适用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。<br /><br /> `name`参数是一个任意字符串，也将出现在`_Function_class_`某些函数的声明中的批注。  `_Called_from_function_class_`返回非零，如果当前分析的函数批注使用`_Function_class_`具有相同的值`name`; 否则为它将返回零。|  
+|`_Called_from_function_class_(name)`|不是为了单独存在；相反，它是一个旨在与 `_When_` 批注一起使用的谓词。 有关详细信息，请参阅[和指定时其中批注适用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。<br /><br /> `name`参数是一个任意字符串，也将出现在`_Function_class_`某些函数的声明中的批注。  `_Called_from_function_class_` 返回非零，如果当前分析的函数批注使用`_Function_class_`具有相同的值`name`; 否则为它将返回零。|  
 |`_Check_return_`|批注一个返回值，并声明调用方应检查此值。 如果在 void 上下文中调用函数，则检查器将报告错误。|  
 |`_Function_class_(name)`|`name` 参数为由用户指定的任意字符串。  它存在于与其他命名空间不同的命名空间中。 函数、函数指针或（最有用）函数指针类型可指定为属于一个或多个函数类。|  
 |`_Raises_SEH_exception_`|根据 `_When_` 和 `_On_failure_` 条件，批注始终引发结构化异常处理程序 (SEH) 异常的函数。 有关详细信息，请参阅[和指定时其中批注适用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。|  
@@ -57,7 +55,7 @@ ms.lasthandoff: 12/22/2017
 |`_Return_type_success_(expr)`|可以应用于 typedef。 表示将批注所有返回该类型并且不显式具有 `_Success_` 的所有函数，就像它们具有 `_Success_(expr)`。 `_Return_type_success_` 不能用于函数或函数指针类型。|  
 |`_Success_(expr)`|`expr` 是生成右值的表达式。 当 `_Success_` 批注位于函数声明或定义上时，函数上以及后置条件中的每个批注 (`anno`) 的行为就像它已编码为 `_When_(expr, anno)`。 `_Success_` 批注只能用于函数，而不能用于函数的参数或返回类型。 一个函数上最多可以有一个 `_Success_` 批注，并且不能位于任何 `_When_`、`_At_` 或 `_Group_` 中。 有关详细信息，请参阅[和指定时其中批注适用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   

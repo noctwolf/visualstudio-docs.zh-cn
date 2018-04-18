@@ -1,23 +1,20 @@
 ---
-title: "Visual Studio 中的实体框架工具 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 中的实体框架工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: f288d794040c533f2d00e95d628f7d04e55e96e4
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- data-storage
+ms.openlocfilehash: c9335e5d5bba077a2fd517e80398fa452718fed3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio 中的实体框架工具
 实体框架是一种对象关系映射技术，使.NET 开发人员能够通过使用特定于域的对象处理关系数据。 它不要求提供开发人员通常需要编写的大部分数据访问代码。 实体框架成为建模为新的.NET 应用程序的技术建议的对象关系映射 (ORM)。  
@@ -54,5 +51,5 @@ ms.lasthandoff: 01/05/2018
 |[实体框架 (EF) 文档）](https://msdn.microsoft.com/library/ee712907(v=vs.113).aspx)|提供视频、 教程和高级的文档帮助你充分利用实体框架的索引。|  
 |[ASP.NET 5 应用程序指向新数据库](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|描述如何使用实体框架 7 创建新的 ASP.NET 5 应用程序。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [适用于 NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

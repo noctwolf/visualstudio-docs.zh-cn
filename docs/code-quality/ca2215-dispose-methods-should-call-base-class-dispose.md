@@ -1,12 +1,10 @@
 ---
-title: "CA2215: Dispose 方法应调用基类的 dispose |Microsoft 文档"
-ms.custom: 
+title: 'CA2215: Dispose 方法应调用基类的 dispose |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2215
 - DisposeMethodsShouldCallBaseClassDispose
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - DisposeMethodsShouldCallBaseClassDispose
 - CA2215
 ms.assetid: c772e7a6-a87e-425c-a70e-912664ae9042
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 791de4f70113df3759e920591ec94da5108eec9a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d8eb5c56ab3affe6322a858dfcd34c3b138f26d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215：Dispose 方法应调用基类的 Dispose
 |||  
@@ -41,10 +39,10 @@ ms.lasthandoff: 12/22/2017
  如果类型继承自可释放类型，则必须调用<xref:System.IDisposable.Dispose%2A>方法从其自身中的基类型<xref:System.IDisposable.Dispose%2A>方法。 调用基类方法释放可以确保创建的基类型的任何资源被释放。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，调用`base`。<xref:System.IDisposable.Dispose%2A>中你<xref:System.IDisposable.Dispose%2A>方法。  
+ 若要修复与此规则的冲突，调用`base`。<xref:System.IDisposable.Dispose%2A> 在你<xref:System.IDisposable.Dispose%2A>方法。  
   
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 则可以安全地禁止显示此规则的警告，如果调用`base`。<xref:System.IDisposable.Dispose%2A>发生时的更深入地调用级别比规则检查。  
+ 则可以安全地禁止显示此规则的警告，如果调用`base`。<xref:System.IDisposable.Dispose%2A> 发生时的更深入地调用级别比规则检查。  
   
 ## <a name="example"></a>示例  
  下面的示例演示一种类型`TypeA`实现<xref:System.IDisposable>。  
@@ -56,6 +54,6 @@ ms.lasthandoff: 12/22/2017
   
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.IDisposable?displayProperty=fullName>   
  [释放模式](/dotnet/standard/design-guidelines/dispose-pattern)

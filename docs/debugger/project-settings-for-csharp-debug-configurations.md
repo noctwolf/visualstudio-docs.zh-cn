@@ -1,12 +1,10 @@
 ---
-title: "项目 C# 调试配置的设置 |Microsoft 文档"
-ms.custom: 
+title: 项目 C# 调试配置的设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - project configurations, debug
 - debugging [C#], debugger settings
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 054a015c5fcd6a70696ed6945faa5cbd01547168
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7f51964a303641e8e430417d63d0241603d7f360
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 调试配置的项目设置
 你可以更改中的 C# 调试配置的项目设置**属性页**窗口，如下所述[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示在何处可以找到中与调试器相关的设置**属性页**窗口。  
@@ -37,7 +35,7 @@ ms.lasthandoff: 01/19/2018
 > [!WARNING]
 >  本主题不适用于 UWP 应用。 请参阅[启动调试会话 (VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a>调试选项卡  
+##  <a name="BKMK_Debug_tab"></a> 调试选项卡  
   
 |**设置**|**说明**|  
 |-----------------|---------------------|  
@@ -49,7 +47,7 @@ ms.lasthandoff: 01/19/2018
 |**启用非托管代码调试**|使你能够从托管应用程序中调试对本机（非托管）Win32 代码的调用。|  
 |**启用 SQL Server 调试**|允许对 SQL Server 数据库对象进行调试。|  
   
-##  <a name="BKMK_Build_tab"></a>生成选项卡  
+##  <a name="BKMK_Build_tab"></a> 生成选项卡  
   
 |设置|描述|  
 |-------------|-----------------|  
@@ -60,5 +58,5 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 > 有关详细信息中找到的调试选项**高级**按钮，请参阅[高级生成设置对话框 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。 符号 (.pdb) 文件的可移植格式是为.NET 核心的最新的跨平台格式。 
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)

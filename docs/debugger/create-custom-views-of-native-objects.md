@@ -2,28 +2,24 @@
 title: 在调试器中创建本机对象的自定义视图 |Microsoft 文档
 ms.custom: ''
 ms.date: 06/27/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
 - C++
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
-caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 340d0d7366749f402cb76f3075778fb2b7ea215b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40a78f95ed98b0486b1ffa85eabea3ae8591b823
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中创建本机对象的自定义视图
 Visual Studio Natvis 框架允许你自定义 Visual Studio 在调试器变量窗口中显示本机类型的方式 (例如，**监视**窗口中，**局部变量**窗口中，然后在**数据提示**。
@@ -222,7 +218,7 @@ Visual Studio Natvis 框架允许你自定义 Visual Studio 在调试器变量�
 ```  
   
 ####  <a name="BKMK_Versioning"></a> Version 元素  
- 使用 `Version` 元素将可视化效果的作用范围限定为特定模块及其版本，以便最大程度地减少名称冲突，并使不同的可视化效果可用于类型的不同版本。 例如:  
+ 使用 `Version` 元素将可视化效果的作用范围限定为特定模块及其版本，以便最大程度地减少名称冲突，并使不同的可视化效果可用于类型的不同版本。 例如：  
   
 ```xml
 <Type Name="DirectUI::Border">  
@@ -464,7 +460,7 @@ Visual Studio Natvis 框架允许你自定义 Visual Studio 在调试器变量�
 -   `ValueNode` 可以留空或使用 `this` 来引用链接列表节点自身。  
   
 #### <a name="customlistitems-expansion"></a>CustomListItems 展开  
- `CustomListItems` 展开允许编写自定义逻辑，以遍历数据结构（如哈希表）。 应使用`CustomListItems`来可视化数据结构，你需要评估在所有内容都可通过 c + + 表达式表示，但不太适合的模具`ArrayItems`， `TreeItems`，或`LinkedListItems.`  
+ `CustomListItems` 展开允许编写自定义逻辑，以遍历数据结构（如哈希表）。 应使用`CustomListItems`来可视化数据结构，你需要评估在所有内容都可通过 c + + 表达式表示，但不太适合的模具`ArrayItems`， `TreeItems`，或 `LinkedListItems.`  
   
  CAtlMap 的可视化工具是 `CustomListItems` 适用的一个精彩示例。  
   
@@ -542,7 +538,7 @@ Visual Studio Natvis 框架允许你自定义 Visual Studio 在调试器变量�
 ####  <a name="BKMK_ExpandedItem_expansion"></a> ExpandedItem 展开  
  通过显示基类或数据成员的属性（仿佛它们是该可视化类型的子级）， `ExpandedItem` 元素可用于生成合成子视图。 指定的表达式得到计算，结果的子节点被追加到该可视化类型的子列表。 例如，假设我们拥有智能指针类型`auto_ptr<vector<int>>`，将通常显示为：  
   
- ![自动 （&) #95; ptr & #60; 向量 & #60; int & #62; & #62;默认扩展](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
+ ![自动&#95;ptr&#60;向量&#60;int&#62; &#62;默认扩展](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
   
  要查看矢量的值，你需要在变量窗口中经 _Myptr 成员深入两个级别。 通过添加 `ExpandedItem` 元素，可以消除层次结构中的 `_Myptr` 变量并直接查看矢量元素：  
   
@@ -555,7 +551,7 @@ Visual Studio Natvis 框架允许你自定义 Visual Studio 在调试器变量�
 </Type>  
 ```  
   
- ![自动 （&) #95; ptr & #60; 向量 & #60; int & #62; & #62;ExpandedItem 展开](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![自动&#95;ptr&#60;向量&#60;int&#62; &#62; ExpandedItem 扩展](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
   
  下面的示例演示如何从派生类中的基类聚合属性。 假定 `CPanel` 类派生自 `CFrameworkElement`。 不重复来自基项 `CFrameworkElement` 类的属性，而是 `ExpandedItem` 节点允许这些属性追加到 `CPanel` 类的子列表。 **Nd**格式说明符，它可关闭派生的类匹配的可视化效果，在此有必要。 否则为表达式`*(CFrameworkElement*)this`导致`CPanel`可视化效果将再次应用，因为默认可视化类型匹配规则认为它是最合适的选项。 使用**nd**格式说明符指示调试器使用基类可视化效果或基类默认展开，如果基类没有可视化效果。  
   

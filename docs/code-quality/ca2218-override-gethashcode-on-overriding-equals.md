@@ -1,12 +1,10 @@
 ---
-title: "CA2218： 重写 GetHashCode 重写 Equals |Microsoft 文档"
-ms.custom: 
+title: CA2218： 重写 GetHashCode 重写 Equals |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2218
 - OverrideGetHashCodeOnOverridingEquals
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - OverrideGetHashCodeOnOverridingEquals
 - CA2218
 ms.assetid: 69b020cd-29e8-45a6-952e-32cf3ce2e21d
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eed9ae032a89eb30785acb71feac47d6c4f8cdc3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a7844f4bc10acabeef81001a0c0890c603410ec5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218：重写 Equals 时重写 GetHashCode
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  公共类型重写<xref:System.Object.Equals%2A?displayProperty=fullName>但不重写<xref:System.Object.GetHashCode%2A?displayProperty=fullName>。  
   
 ## <a name="rule-description"></a>规则说明  
- <xref:System.Object.GetHashCode%2A>返回一个值，基于当前实例，适用于哈希算法和哈希表之类的数据结构。 具有相同的类型和相等的两个对象必须返回相同的哈希代码，以确保正常工作的以下类型的实例：  
+ <xref:System.Object.GetHashCode%2A> 返回一个值，基于当前实例，适用于哈希算法和哈希表之类的数据结构。 具有相同的类型和相等的两个对象必须返回相同的哈希代码，以确保正常工作的以下类型的实例：  
   
 -   <xref:System.Collections.Hashtable?displayProperty=fullName>  
   
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 -   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>  
   
--   实现的类型<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>  
+-   实现的类型 <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  若要修复与此规则的冲突，提供的实现<xref:System.Object.GetHashCode%2A>。 用于一对相同类型的对象，你必须确保实现返回相同的值，如果你实现<xref:System.Object.Equals%2A>返回`true`此对的。  
@@ -102,7 +100,7 @@ ms.lasthandoff: 12/22/2017
   
  [CA2231：重写 ValueType.Equals 时应重载相等运算符](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Object.Equals%2A?displayProperty=fullName>   
  <xref:System.Object.GetHashCode%2A?displayProperty=fullName>   
  <xref:System.Collections.Hashtable?displayProperty=fullName>   

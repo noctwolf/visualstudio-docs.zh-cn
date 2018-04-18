@@ -1,23 +1,21 @@
 ---
-title: "了解 SAL |Microsoft 文档"
-ms.custom: 
+title: 了解 SAL |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: deb1825bb514afec4db3bf705ac787aadb88cc11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-sal"></a>了解 SAL
 Microsoft 源代码注释语言 (SAL) 提供一组你可以使用来描述函数如何使用其参数、 有关，它使的假设和它使它完成时的保证的批注。 标头文件中定义批注`<sal.h>`。 C + + 的 visual Studio 代码分析使用 SAL 批注来修改其分析的函数。 适用于 Windows 驱动程序开发 SAL 2.0 的详细信息，请参阅[SAL 2.0 批注的 Windows 驱动程序](http://go.microsoft.com/fwlink/?LinkId=250979)。  
@@ -47,7 +45,7 @@ void * memcpy(
   
  该文档包含几个建议，你的代码必须维护某些属性，以确保程序正确性的位的信息：  
   
--   `memcpy`副本`count`从源缓冲区到目标缓冲区的字节。  
+-   `memcpy` 副本`count`从源缓冲区到目标缓冲区的字节。  
   
 -   目标缓冲区必须至少与源缓冲区一样大。  
   
@@ -131,9 +129,9 @@ wchar_t * wmemcpy(
   
 -   调用方必须提供缓冲区，并对其进行初始化。  
   
--   `_In_`指定"只读"。 一个常见错误，将应用`_In_`到应有的参数`_Inout_`批注相反。  
+-   `_In_` 指定"只读"。 一个常见错误，将应用`_In_`到应有的参数`_Inout_`批注相反。  
   
--   `_In_`允许在非指针参数标量分析器但忽略。  
+-   `_In_` 允许在非指针参数标量分析器但忽略。  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  
@@ -161,7 +159,7 @@ void BadInCaller()
  如果在此示例使用 Visual Studio 代码分析，它会验证调用方将非 Null 指针传递到初始化缓冲区`pInt`。 在这种情况下，`pInt`指针不能为 NULL。  
   
 ### <a name="example-the-inopt-annotation"></a>示例： _In_opt\_批注  
- `_In_opt_`等同于`_In_`，只不过允许输入的参数为 NULL，因此，该函数应检查这一点。  
+ `_In_opt_` 等同于`_In_`，只不过允许输入的参数为 NULL，因此，该函数应检查这一点。  
   
 ```cpp  
   
@@ -189,7 +187,7 @@ void InOptCaller()
  Visual Studio 代码分析验证函数检查为空，然后才能访问缓冲区。  
   
 ### <a name="example-the-out-annotation"></a>示例： 缩小 （_o)\_批注  
- `_Out_`支持一种常见的方案，在其中传入指向元素缓冲区的非 NULL 指针和函数初始化元素。 调用方无需调用; 之前将缓冲区初始化所调用的函数承诺来返回之前对其进行初始化。  
+ `_Out_` 支持一种常见的方案，在其中传入指向元素缓冲区的非 NULL 指针和函数初始化元素。 调用方无需调用; 之前将缓冲区初始化所调用的函数承诺来返回之前对其进行初始化。  
   
 ```cpp  
   
@@ -216,7 +214,7 @@ void OutCaller()
  Visual Studio 代码分析工具验证调用方将非 NULL 指针传递给缓冲区`pInt`和其返回之前，将缓冲区初始化函数。  
   
 ### <a name="example-the-outopt-annotation"></a>示例： _Out_opt\_批注  
- `_Out_opt_`等同于`_Out_`，只不过允许参数为 NULL，因此，该函数应检查这一点。  
+ `_Out_opt_` 等同于`_Out_`，只不过允许参数为 NULL，因此，该函数应检查这一点。  
   
 ```cpp  
   
@@ -244,7 +242,7 @@ void OutOptCaller()
  Visual Studio 代码分析会验证此函数检查 null 之前`pInt`取消引用，并且如果`pInt`不为 NULL，返回之前，由该函数初始化缓冲区。  
   
 ### <a name="example-the-inout-annotation"></a>示例： _Inout\_批注  
- `_Inout_`用于对可能会发生更改函数的指针参数进行批注。 指针必须指向有效的调用之前初始化的数据，即使它更改，它仍需返回时必须具有有效的值即可。 批注指定函数可能自由地读取和写入到一个元素缓冲区。 调用方必须提供缓冲区，并对其进行初始化。  
+ `_Inout_` 用于对可能会发生更改函数的指针参数进行批注。 指针必须指向有效的调用之前初始化的数据，即使它更改，它仍需返回时必须具有有效的值即可。 批注指定函数可能自由地读取和写入到一个元素缓冲区。 调用方必须提供缓冲区，并对其进行初始化。  
   
 > [!NOTE]
 >  如`_Out_`，`_Inout_`必须将应用于可修改的值。  
@@ -276,7 +274,7 @@ void BadInOutCaller()
  Visual Studio 代码分析验证调用方将非 NULL 指针传递到初始化缓冲区`pInt`，而且，在返回时之前,`pInt`仍非 null 和初始化缓冲区。  
   
 ### <a name="example-the-inoutopt-annotation"></a>示例： _Inout_opt\_批注  
- `_Inout_opt_`等同于`_Inout_`，只不过允许输入的参数为 NULL，因此，该函数应检查这一点。  
+ `_Inout_opt_` 等同于`_Inout_`，只不过允许输入的参数为 NULL，因此，该函数应检查这一点。  
   
 ```cpp  
   
@@ -306,7 +304,7 @@ void InOutOptCaller()
  Visual Studio 代码分析会验证此函数检查是否为空，它访问缓冲区中之前，且是否`pInt`不为 NULL，返回之前，由该函数初始化缓冲区。  
   
 ### <a name="example-the-outptr-annotation"></a>示例： _Outptr\_批注  
- `_Outptr_`用于添加批注具有用于返回指针的参数。  参数本身不应为 NULL，所调用的函数在它返回非 NULL 指针和该指针指向初始化的数据。  
+ `_Outptr_` 用于添加批注具有用于返回指针的参数。  参数本身不应为 NULL，所调用的函数在它返回非 NULL 指针和该指针指向初始化的数据。  
   
 ```cpp  
   
@@ -337,7 +335,7 @@ void OutPtrCaller()
  Visual Studio 代码分析验证调用方传递的非 NULL 指针`*pInt`，并返回之前，将缓冲区初始化函数。  
   
 ### <a name="example-the-outptropt-annotation"></a>示例： _Outptr_opt\_批注  
- `_Outptr_opt_`等同于`_Outptr_`，只不过该参数是可选-调用方可以传递一个 NULL 指针的参数。  
+ `_Outptr_opt_` 等同于`_Outptr_`，只不过该参数是可选-调用方可以传递一个 NULL 指针的参数。  
   
 ```cpp  
   
@@ -412,7 +410,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ## <a name="related-resources"></a>相关资源  
  [代码分析团队博客](http://go.microsoft.com/fwlink/p/?LinkId=251197)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   
  [对函数行为进行批注](../code-quality/annotating-function-behavior.md)   

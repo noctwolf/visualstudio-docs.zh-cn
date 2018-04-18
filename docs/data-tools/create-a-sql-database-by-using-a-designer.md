@@ -1,27 +1,24 @@
 ---
-title: "创建一个数据库文件并在 Visual Studio 中使用表设计器 |Microsoft 文档"
-ms.custom: 
+title: 创建一个数据库文件并在 Visual Studio 中使用表设计器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - database tables, creating
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ffbb2259ff556dcf96021adc47c733fdbcd9125d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 99f5c341df6ca04c25abf325146c4dac961bafc7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>创建数据库并在 Visual Studio 中添加表
 可以使用 Visual Studio 创建和更新 SQL Server Express LocalDB 中的本地数据库文件。 你还可以通过执行 TRANSACT-SQL 语句中的创建数据库**SQL Server 对象资源管理器**Visual Studio 中的工具窗口。 在本主题中，我们将创建的.mdf 文件，并使用表设计器中添加表和键。
@@ -57,7 +54,7 @@ ms.lasthandoff: 12/22/2017
 
 10. 上**将连接字符串保存到应用程序配置文件**页上，选择**下一步**。
 
-11. 一个**选择数据库对象**页上，你将看到一条消息，指出数据库不包含任何对象。 选择**完成**。
+11. 一个**选择数据库对象**页上，你将看到一条消息，指出数据库不包含任何对象。 选择“完成”。
 
 ### <a name="to-view-properties-of-the-data-connection"></a>若要查看的数据连接属性
 你可以通过打开数据连接属性窗口来查看 SampleDatabase.mdf 文件的连接字符串：

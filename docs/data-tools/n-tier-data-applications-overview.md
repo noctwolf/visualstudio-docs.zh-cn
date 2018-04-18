@@ -1,28 +1,25 @@
 ---
-title: "N 层数据应用程序概述 |Microsoft 文档"
-ms.custom: 
+title: N 层数据应用程序概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - presentation tier
 - middle tier
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 894e3f7d2ad605aa1e8b8a52a72cd8f83dc90192
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: bf82b55ebc0b86a043dffffbf82c100cceb58e72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 *N 层*数据应用程序是数据应用程序分离到多个*层*。 N 层应用程序也称为"分布式应用程序"和"多层应用程序"，它们将处理分为分布式客户端和服务器之间的相互独立的层。 当开发数据访问应用程序时，你应具有组成应用程序各层之间形成清晰的隔离。  

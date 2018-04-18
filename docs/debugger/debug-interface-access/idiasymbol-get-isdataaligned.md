@@ -1,29 +1,25 @@
 ---
-title: "Idiasymbol:: Get_isdataaligned |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_isdataaligned |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_isDataAligned method
 ms.assetid: ddd11a41-6c00-4829-acf4-aa1ace8c21a7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36743939fdbc8c41967bbbe2ae71aeb72f954cb4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bc83909c398b7736c78f4eb2c3607578e40a9aa3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 检索用于指定是否用户定义类型 (UDT) 对齐某些特定内存边界的标志。  
@@ -47,14 +43,14 @@ HRESULT get_isDataAligned(
 >  返回值`S_FALSE`意味着属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 如果使用非默认数据对齐编译可执行文件通常设置此属性。 例如，Microsoft c + + 编译器可以更改的数据对齐方式，使用命令行选项，/Zp*#*，其中 *#* 是一个字节值。  
+ 如果使用非默认数据对齐编译可执行文件通常设置此属性。 例如，Microsoft c + + 编译器可以更改的数据对齐方式，使用命令行选项，/Zp*#*，其中*#*是一个字节值。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
   
 |需求|描述|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

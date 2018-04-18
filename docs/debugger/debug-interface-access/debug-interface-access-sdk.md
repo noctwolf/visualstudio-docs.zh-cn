@@ -1,13 +1,10 @@
 ---
-title: "调试接口访问 SDK |Microsoft 文档"
-ms.custom: 
+title: 调试接口访问 SDK |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - debugger [DIA SDK]
 - DIA SDK
 ms.assetid: 4c0abe53-11d3-4b7a-bdc7-b054f85aaf40
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd84741d006304f7dfefe8ee4a1060ba64ffdb8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ae5afe3b5eacaad31ae7b4fcd6aeb092aa37300c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-interface-access-sdk"></a>调试接口访问 SDK
 Microsoft 调试接口访问软件开发工具包 (DIA SDK) 提供访问存储在由 Microsoft 后置编译器工具生成的程序数据库 (.pdb) 文件中的调试信息。 后置编译器工具生成的.pdb 文件的格式进行常量的修订版本，因为公开格式是不切实际的。 使用 DIA API 时，你可以开发的应用程序用于搜索和浏览存储在.pdb 文件的调试信息。 此类应用程序无法，例如，报告堆栈跟踪信息和分析性能数据。  

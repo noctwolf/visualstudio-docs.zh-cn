@@ -1,12 +1,10 @@
 ---
-title: "CA1309： 使用序号 StringComparison |Microsoft 文档"
-ms.custom: 
+title: CA1309： 使用序号 StringComparison |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - UseOrdinalStringComparison
 - CA1309
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - UseOrdinalStringComparison
 - CA1309
 ms.assetid: 19be0854-cb6e-4efd-a4c8-a5c1fc6f7a71
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cf913eea3f156595c9b9194b3d8a74e71b848367
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 96718a9402b2bafcf8728004efb3df5e94da8126
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309：使用序号 StringComparison
 |||  
@@ -47,6 +45,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
  它是安全的库或应用程序旨在为有限的本地用户或应使用当前区域性的语义时禁止显示此规则的警告。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [全球化警告](../code-quality/globalization-warnings.md)   
  [CA1307：指定 StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

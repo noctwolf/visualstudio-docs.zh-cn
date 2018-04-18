@@ -1,29 +1,25 @@
 ---
-title: "Idiasession:: Put_loadaddress |Microsoft 文档"
-ms.custom: 
+title: 'Idiasession:: Put_loadaddress |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSession::put_loadAddress method
 ms.assetid: b157b245-1ea0-4b80-8962-d8b278dbc742
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4721ee818c4dc75d883c7accd2faa162521de13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa8f7c12e07f68d8c3fdd85f0d33d964847abf22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
 在此符号存储区中将对应的可执行文件的负载地址设置为符号。  
@@ -46,5 +42,5 @@ HRESULT put_loadAddress (
 > [!NOTE]
 >  你必须调用此方法，当您获取[IDiaSession](../../debugger/debug-interface-access/idiasession.md)对象，并在开始操作之前使用的对象，如果你需要使用符号上的任何虚拟属性。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

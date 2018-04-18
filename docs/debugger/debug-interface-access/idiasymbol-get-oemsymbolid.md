@@ -1,29 +1,25 @@
 ---
-title: "Idiasymbol:: Get_oemsymbolid |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_oemsymbolid |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_oemSymbolId method
 ms.assetid: 187801f0-bd82-4c5b-9fae-8eeb1a4ac0ce
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2581d357fe2b35ad80f4d2085b0f8f2dbb28cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 582e76f0436b29a7ec571b2170ef810fa5998631
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 检索原始设备制造商 (OEM) 符号的 ID 值。  
@@ -51,6 +47,6 @@ HRESULT get_oemSymbolId (
   
  此属性仅适用于具有符号[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)类型`SymTagCustomType`。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)

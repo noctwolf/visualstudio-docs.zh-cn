@@ -1,12 +1,10 @@
 ---
-title: "将附加到正在运行的进程，使用 Visual Studio 中调试程序 |Microsoft 文档"
+title: 将附加到正在运行的进程，使用 Visual Studio 中调试程序 |Microsoft 文档
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
 - vs.debug.process
@@ -27,16 +25,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], attaching to processes
 - debugger, processes
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
-caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b726cd5d29093d88e27e7de6bd5a22fcb491d20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到运行的进程
 你可将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。 进程正在运行后，单击**调试 > 附加到进程**(或按**CTRL + ALT + P**) 以打开**附加到进程**对话框。
@@ -46,7 +44,7 @@ ms.lasthandoff: 01/10/2018
 > [!TIP]
 > 无法确定是否需要使用**附加到进程**为你的调试方案？ 请参阅[常见调试方案](#BKMK_Scenarios)。 如果你想要调试 ASP.NET 应用程序部署到 IIS，请参阅[远程 IIS 计算机上的远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。
 
-##  <a name="BKMK_Attach_to_a_running_process"></a>将附加到本地计算机上正在运行的进程  
+##  <a name="BKMK_Attach_to_a_running_process"></a> 将附加到本地计算机上正在运行的进程  
  若要附加到进程，你必须知道该进程的名称 (请参阅[常见调试方案](#BKMK_Scenarios)的几个常见的进程名称)。
   
 1.  在 Visual Studio 中，选择**调试 > 附加到进程**(或按**CTRL + ALT + P**)。
@@ -71,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  单击 **“附加”**。
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>附加到远程计算机上的进程  
+##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> 附加到远程计算机上的进程  
  若要附加到进程，你必须知道该进程的名称 (请参阅[常见调试方案](#BKMK_Scenarios)的几个常见的进程名称)。 对于已部署到 IIS 的 ASP.NET 应用程序的更完整指南，请参阅[远程 IIS 计算机上的远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 对于其他应用，或许能够在任务管理器中找到进程的名称。
   
  当使用 **“附加到进程”** 对话框时，你可以选择另一台已经针对远程调试进行设置的计算机。 有关详细信息，请参阅[远程调试](../debugger/remote-debugging.md)。 选择了一台远程计算机后，可以查看该计算机上运行的可用进程的列表，并附加到一个或多个进程以进行调试。
@@ -112,7 +110,7 @@ ms.lasthandoff: 01/10/2018
      
 5.  单击 **“附加”**。
 
-## <a name="BKMK_reattach"></a>将重新附加到进程
+## <a name="BKMK_reattach"></a> 将重新附加到进程
 
 你可以快速重新附加到以前已通过选择附加到的进程**调试 > 重新附加到进程...**(**Shift + Alt + P**)。 当选择此命令时，调试器将立即尝试附加到最后一个附加到使用的进程**附加到进程**对话框。
 
@@ -129,7 +127,7 @@ ms.lasthandoff: 01/10/2018
   
 在某些情况下，在“远程桌面”（“终端服务”）会话中进行调试时， **“可用进程”** 列表不会显示所有可用进程。 如果以具有有限用户帐户的用户身份运行 Visual Studio，“可用进程”  列表将不显示在会话 0 中运行的进程，会话 0 用于服务与其他服务器进程，包括 w3wp.exe。 你可以通过以下方法解决该问题：使用管理员帐户运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 或从服务器控制台而不是“终端服务”会话运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 如果这两种解决方法都不奏效，第三种方法是通过从 Windows 命令行运行 `vsjitdebugger.exe -p` *ProcessId* 来附加到进程。 你可以使用 tlist.exe 来确定进程 ID。 若要获取 tlist.exe，可从  [WDK 和 WinDbg 下载](http://go.microsoft.com/fwlink/?LinkId=168279)中下载并安装 Windows 调试工具。
 
-## <a name="BKMK_Scenarios"></a>常见的调试方案
+## <a name="BKMK_Scenarios"></a> 常见的调试方案
 
 若要帮助你确定是否需要使用**附加到进程**和要附加到，哪些进程的几个常见的调试方案如下所示 （列表并不详尽）。 其中提供了详细说明，我们提供了链接。
 
@@ -160,7 +158,7 @@ ms.lasthandoff: 01/10/2018
 
 某些本地调试的情况下，您可以在 Visual Studio 中使用调试源不能访问正确的符号文件是否存在与该应用程序 （默认情况下，需要调试版本）。 有关详细信息，请参阅[指定符号和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
   
-##  <a name="BKMK_Troubleshoot_attach_errors"></a>解决附加错误  
+##  <a name="BKMK_Troubleshoot_attach_errors"></a> 解决附加错误  
  当调试器附加到一个正在运行的进程时，该进程可能包含一种或多种类型的代码。 可在 **“选择代码类型”** 对话框中显示并选择可将调试器附加到的代码类型。  
   
  有时，调试器能够成功附加到一种代码类型，但不能附加到另一种代码类型。 这种情况可能发生在你尝试附加到远程计算机上运行的进程时。 原因是远程计算机上可能安装了一些代码类型的远程调试组件，但没有安装另一些代码类型的远程调试组件。 这种情况还可能发生在你尝试为直接数据库调试附加到两个或多个进程时。 SQL 调试仅支持附加到单个进程。  
@@ -189,7 +187,7 @@ ms.lasthandoff: 01/10/2018
   
      此时，附加将彻底失败，并且你将收到一条特定的错误消息。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [调试多个进程](../debugger/debug-multiple-processes.md)   
  [在实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [远程调试](../debugger/remote-debugging.md)

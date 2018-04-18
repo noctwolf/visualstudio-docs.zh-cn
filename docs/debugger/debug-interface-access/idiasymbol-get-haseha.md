@@ -1,29 +1,25 @@
 ---
-title: "Idiasymbol:: Get_haseha |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_haseha |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_hasEHa method
 ms.assetid: cb61dfd9-fe69-461c-8185-288440454864
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 965d090868e3ea47f5802d12b6fc0296026f90a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2359c46149254aadd637015e90d616317e84b8f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
 检索用于指定该函数是否包含异步 （结构化） 的异常处理的标志。  
@@ -49,12 +45,12 @@ HRESULT get_hasEHa(
 ## <a name="remarks"></a>备注  
  可以混合使用异步或结构化异常处理与 c + + 样式异常处理，但它需要特定的编译器开关，/EHa，若要启用它。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
   
 |需求|描述|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,13 +1,10 @@
 ---
-title: "&lt;assemblyIdentity&gt;元素 （ClickOnce 应用程序） |Microsoft 文档"
-ms.custom: 
+title: '&lt;assemblyIdentity&gt;元素 （ClickOnce 应用程序） |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assemblyIdentity
 dev_langs:
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - <assemblyIdentity> element [ClickOnce application manifest]
 ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: b731522897512300459a32f8e01c4d54277eaa5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 86a9aedcd3f21d4dbc1cc4f09106421542b188f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt;元素 （ClickOnce 应用程序）
 标识部署中的应用程序[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。  
@@ -51,7 +47,7 @@ ms.lasthandoff: 12/22/2017
 |特性|描述|  
 |---------------|-----------------|  
 |`Name`|必须的。 标识应用程序的名称。<br /><br /> 如果`Name`包含特殊字符，例如单引号或双引号引号，应用程序可能无法激活。|  
-|`Version`|必须的。 采用以下格式指定应用程序的版本号：`major.minor.build.revision`|  
+|`Version`|必须的。 采用以下格式指定应用程序的版本号： `major.minor.build.revision`|  
 |`publicKeyToken`|可选。 指定的 16 个字符的十六进制字符串表示的最后 8 个字节`SHA-1`的应用程序集签名的公钥的哈希值。 用于对目录进行签名的公钥必须是 2048 位或更高版本。<br /><br /> 虽然为程序集签名是可选但建议，此属性是必需的。 如果程序集未签名，你应从自签名的程序集复制值或使用"假"全为零的值。|  
 |`processorArchitecture`|必须的。 指定处理器。 有效值为`msil`适用于所有处理器`x86`适用于 32 位 Windows`IA64`适用于 64 位 Windows 和`Itanium`Intel 64 位 Itanium 处理器的。|  
 |`language`|必须的。 标识由两部分语言代码 (例如， `en-US`) 的程序集。 此元素处于`asmv2`命名空间。 如果未指定，默认值是`neutral`。|  
@@ -73,6 +69,6 @@ ms.lasthandoff: 12/22/2017
   type="win32" />  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)   
  [\<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)

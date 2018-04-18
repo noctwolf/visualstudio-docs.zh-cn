@@ -1,12 +1,10 @@
 ---
-title: "CA2103： 检查命令性安全 |Microsoft 文档"
-ms.custom: 
+title: CA2103： 检查命令性安全 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2103
 - ReviewImperativeSecurity
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2103
 - ReviewImperativeSecurity
 ms.assetid: d24fde71-bdf6-46c0-8965-9a73dc33c1aa
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 051c94905e8d62d39ef837b6ef2520f345b8ca56
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f5a46629efacc37af593e4cd7487b69031cf6bb1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103：检查命令性安全
 |||  
@@ -47,6 +45,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
  则可以安全地禁止显示此规则的警告，如果权限不依赖于变化的数据。 但是，最好更改为其等效的声明性的强制性要求。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)   
  [数据和建模](/dotnet/framework/data/index)

@@ -1,12 +1,10 @@
 ---
-title: "如何： 为 CD 安装启用自动启动 |Microsoft 文档"
-ms.custom: 
+title: 如何： 为 CD 安装启用自动启动 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,21 +14,21 @@ helpviewer_keywords:
 - ClickOnce deployment, installation on CD or DVD
 - deploying applications [ClickOnce], installation on CD or DVD
 ms.assetid: caaec619-900c-4790-90e3-8c91f5347635
-caps.latest.revision: "17"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e830e1be1b7b36e53fd45bc11457452db805ae02
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 896d0f97df444ae24e81037e49d211084e5f577e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>如何：为 CD 安装启用自动启动
 在部署时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]通过可移动媒体如 CD-ROM 或 DVD-ROM 的应用程序，你可以启用`AutoStart`以便[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]插入媒体时自动启动应用程序。  
   
- `AutoStart`可以在上启用**发布**页**项目设计器**。  
+ `AutoStart` 可以在上启用**发布**页**项目设计器**。  
   
 ### <a name="to-enable-autostart"></a>若要启用自动启动  
   
@@ -48,6 +46,6 @@ ms.lasthandoff: 12/22/2017
   
      在发布应用程序时，才能将 Autorun.inf 文件复制到发布位置。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

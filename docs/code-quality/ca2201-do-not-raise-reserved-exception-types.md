@@ -1,12 +1,10 @@
 ---
-title: "CA2201： 不要引发保留的异常类型 |Microsoft 文档"
-ms.custom: 
+title: CA2201： 不要引发保留的异常类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
 - CA2201
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2201
 - DoNotRaiseReservedExceptionTypes
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 11e00594c1cf279fb6b07791bb48f2222cc9c79b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cd95bedc273a14d9b3d455db5fd25eac1cf74aa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201：不要引发保留的异常类型
 |||  
@@ -67,19 +65,19 @@ ms.lasthandoff: 12/22/2017
   
 |参数说明|例外|  
 |---------------------------|---------------|  
-|`null`引用|<xref:System.ArgumentNullException?displayProperty=fullName>|  
+|`null` 引用|<xref:System.ArgumentNullException?displayProperty=fullName>|  
 |超出允许的范围的值 （如集合或列表的索引）|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|  
 |无效`enum`值|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|  
 |包含不符合的一种方法的参数规范的格式 (如的格式字符串`ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|  
 |否则为无效|<xref:System.ArgumentException?displayProperty=fullName>|  
   
- 当操作对对象引发的当前状态无效<xref:System.InvalidOperationException?displayProperty=fullName>  
+ 当操作对对象引发的当前状态无效 <xref:System.InvalidOperationException?displayProperty=fullName>  
   
- 对已释放的对象执行操作时引发<xref:System.ObjectDisposedException?displayProperty=fullName>  
+ 对已释放的对象执行操作时引发 <xref:System.ObjectDisposedException?displayProperty=fullName>  
   
- 当不支持操作 (如在被重写**Stream.Write**打开以进行读取流中) 引发<xref:System.NotSupportedException?displayProperty=fullName>  
+ 当不支持操作 (如在被重写**Stream.Write**打开以进行读取流中) 引发 <xref:System.NotSupportedException?displayProperty=fullName>  
   
- 当转换会导致溢出 （如显式强制转换运算符重载） 时引发<xref:System.OverflowException?displayProperty=fullName>  
+ 当转换会导致溢出 （如显式强制转换运算符重载） 时引发 <xref:System.OverflowException?displayProperty=fullName>  
   
  对于所有其他情况下，请考虑创建您自己的派生自类型<xref:System.Exception>并引发该异常。  
   

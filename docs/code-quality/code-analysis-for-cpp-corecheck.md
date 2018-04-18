@@ -2,25 +2,22 @@
 title: Visual Studio c + + 核心指南检查器引用 |Microsoft 文档
 ms.custom: ''
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0825ea42ca74b224574299846504dfde7dd6f809
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: f0b657781981b6204bda42fcbf18f8945fb59004
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C + + 核心准则检查程序参考
 
@@ -29,7 +26,7 @@ ms.lasthandoff: 03/22/2018
 > [!NOTE]
 > 一些警告属于多个组，并且并非所有警告都有一个完整的参考主题。
 
-## <a name="ownerpointer-group"></a>OWNER_POINTER Group
+## <a name="ownerpointer-group"></a>OWNER_POINTER 组
 
 [C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)返回而不是堆分配的作用域的对象，如果它具有移动构造函数。 请参阅[c + + 核心准则 R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
 
@@ -49,7 +46,7 @@ ms.lasthandoff: 03/22/2018
 
 [C26431 DONT_TEST_NOTNULL](C26431.md)表达式 %expr%的类型已 gsl::not_null。 不会测试它 nullness。 请参阅[c + + 核心准则 F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value)。
 
-## <a name="rawpointer-group"></a>RAW_POINTER Group
+## <a name="rawpointer-group"></a>RAW_POINTER 组
 
 [C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md)不分配的分配或函数调用结果的所有者\<T > 的值返回到原始指针; 使用所有者\<T > 改为。 请参阅[c + + 核心准则 I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)。
 
@@ -72,7 +69,7 @@ ms.lasthandoff: 03/22/2018
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)。
 表达式 %expr%： 指针 decay 到任何数组。 请参阅[c + + 核心准则 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)。
 
-## <a name="uniquepointer-group"></a>UNIQUE_POINTER Group
+## <a name="uniquepointer-group"></a>UNIQUE_POINTER 组
 
 [C26410 NO_REF_TO_CONST_UNIQUE_PTR](C26410.md)参数 %参数 %是指`const`唯一指针，使用 const T * 或 const T 和相反。 请参阅[c + + 核心准则 R.32](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-uniqueptrparam)。
 
@@ -82,7 +79,7 @@ ms.lasthandoff: 03/22/2018
 
 [C26415 SMART_PTR_NOT_NEEDED](C26415.md)智能指针参数 %符号 %仅用于访问包含的指针。 使用 T * 或 T （&) 相反。 请参阅[c + + 核心准则 R.30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam)。
 
-## <a name="sharedpointer-group"></a>SHARED_POINTER Group
+## <a name="sharedpointer-group"></a>SHARED_POINTER 组
 
 [C26414 RESET_LOCAL_SMART_PTR](C26414.md)移动、 复制、 重新分配，或重置本地智能指针 %符号 %。 请参阅[c + + 核心准则 R.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped)。
 
@@ -199,7 +196,7 @@ ms.lasthandoff: 03/22/2018
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)表达式 %expr%： 指针 decay 到任何数组。 请参阅[c + + 核心准则 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-## <a name="gsl-group"></a>GSL Group
+## <a name="gsl-group"></a>GSL 组
 
 [C26445 NO_SPAN_REF](c26445.md)指`gsl::span`或`std::string_view`可能生存期问题的迹象。
 请参阅[c + + 核心准则 GSL.view： 视图](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)

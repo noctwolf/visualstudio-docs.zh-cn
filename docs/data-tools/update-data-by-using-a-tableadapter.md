@@ -1,11 +1,8 @@
 ---
-title: "使用 TableAdapter 更新数据 |Microsoft 文档"
-ms.custom: 
+title: 使用 TableAdapter 更新数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,17 @@ helpviewer_keywords:
 - data [Visual Studio], updating
 - saving data
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 4968eab5e1d355543a8658e72540bc66fa2543b9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: c5188f56e440f7ec00f7537602aff10723441c3a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新数据
 在修改数据集中的数据并将其验证后，你可以更新将数据发送回数据库通过调用`Update`方法[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。 `Update`方法更新单个数据表并运行的命令正确无误 （INSERT、 UPDATE 或 DELETE） 基于<xref:System.Data.DataRow.RowState%2A>的表中每个数据行。 当数据集有相关的表时，Visual Studio 将生成用于执行更新操作的 TableAdapterManager 类。 TableAdapterManager 类可确保按正确的顺序基于数据库中定义的外键约束进行更新。 当你使用数据绑定控件时，数据绑定体系结构将创建名为 tableAdapterManager TableAdapterManager 类的成员变量。 
@@ -53,5 +50,5 @@ ms.lasthandoff: 12/22/2017
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

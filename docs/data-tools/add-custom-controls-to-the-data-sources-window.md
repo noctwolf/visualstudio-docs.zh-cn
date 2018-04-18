@@ -1,11 +1,8 @@
 ---
-title: "将自定义控件添加到数据源窗口 |Microsoft 文档"
-ms.custom: 
+title: 将自定义控件添加到数据源窗口 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
@@ -16,18 +13,17 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ffa55100e9bbec33fdbca19ab2757c4de63f5030
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d00e818c0cfaa2659f55e5eb8bb8e4e4a87e8abc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>向“数据源”窗口添加自定义控件
 中的项的拖时**数据源**到设计图面可创建数据绑定控件的窗口中，你可以选择你创建的控件的类型。 窗口中的每个项，有一个显示你可以从选择的控件的下拉列表。 通过项的数据类型确定与每个项关联的控件集。 如果你想要创建该控件不出现在列表中，你可以按照本主题中的说明将控件添加到列表。  
@@ -37,7 +33,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改你的设置，在**工具**菜单上，选择**导入和导出设置**。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-##  <a name="customizinglist"></a>自定义数据类型可绑定控件的列表  
+##  <a name="customizinglist"></a> 自定义数据类型可绑定控件的列表  
  若要添加或从可用控件中的项的列表中删除控件**数据源**窗口具有特定的数据类型，请执行以下步骤。  
   
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>若要选择要为数据类型列出的控件  
@@ -71,7 +67,7 @@ ms.lasthandoff: 12/22/2017
   
      在中选择的控件**关联控件**框现在显示在下拉列表菜单项。  
   
-##  <a name="addingcontrols"></a>将控件添加到数据类型的关联控件的列表  
+##  <a name="addingcontrols"></a> 将控件添加到数据类型的关联控件的列表  
  如果你想要将某个控件与数据类型，但控件未出现在**关联控件**框中，你必须将控件添加到列表。 该控件必须位于当前解决方案中，也可以引用的程序集中。 它还必须位于**工具箱**，并且具有一个属性，指定控件的数据绑定行为。  
   
 #### <a name="to-add-controls-to-the-list-of-associated-controls"></a>将控件添加到关联的控件的列表  
@@ -93,5 +89,5 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  只有是位于当前解决方案中引用的程序集中的控件可以添加到关联的控件的列表。 （控件还必须实现数据绑定特性之一上表中。）若要将数据绑定到在中不可用的自定义控件**数据源**窗口中，将从该控件拖动**工具箱**拖到设计图面上，然后拖动要将绑定到中的项**数据源**窗口拖动到控件。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -1,23 +1,21 @@
 ---
-title: "为托管代码扩展的设计准则规则规则设置 |Microsoft 文档"
-ms.custom: 
+title: 为托管代码扩展的设计准则规则规则设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 78b9d5a2c2f147ade02e3123e2e5c08f130b29de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 137b1bfc0af92596d48a4014b4ff5ac1bb4ecccd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>托管代码的“扩展的设计准则规则”规则集
 Microsoft 扩展的设计准则规则规则集扩展基本设计准则规则，以最大化报告的可用性和可维护性问题。 额外的强调置于命名规则。 你应考虑包含此设置，如果你的项目包括库代码，或者如果你想要强制实施有关编写代码容易维护的最高标准的规则。  
@@ -28,7 +26,7 @@ Microsoft 扩展的设计准则规则规则集扩展基本设计准则规则，�
   
 |规则|描述|  
 |----------|-----------------|  
-|[CA1001 具有](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|具有可释放字段的类型应该是可释放的|  
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|具有可释放字段的类型应该是可释放的|  
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|正确声明事件处理程序|  
 |[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|用 AssemblyVersionAttribute 标记程序集|  
 |[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|接口方法应可由子类型调用|  

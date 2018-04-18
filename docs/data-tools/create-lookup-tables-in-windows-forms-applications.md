@@ -1,26 +1,23 @@
 ---
-title: "在 Windows 窗体应用程序中创建查找表 |Microsoft 文档"
-ms.custom: 
+title: 在 Windows 窗体应用程序中创建查找表 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: f27fdbe216b6ba2a738f6d9f45d746344d542b38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 75035b12972299c0c9d4b9b515cb4cbd51308739
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows 窗体应用程序中创建查找表
 术语*查找表*描述绑定到两个相关的数据表的控件。 这些查找控件显示基于在第二个表中选择的值的第一个表中的数据。  
@@ -55,10 +52,10 @@ ms.lasthandoff: 12/22/2017
   
     |属性|设置说明|  
     |--------------|----------------------------|  
-    |**数据源**|Visual Studio 将此属性设置为你拖到控件上的表所创建的 <xref:System.Windows.Forms.BindingSource>（相对于创建该控件时所创建的 <xref:System.Windows.Forms.BindingSource>）。<br /><br /> 如果你需要进行调整，则设置此为<xref:System.Windows.Forms.BindingSource>与你想要显示的列的表。|  
+    |**DataSource**|Visual Studio 将此属性设置为你拖到控件上的表所创建的 <xref:System.Windows.Forms.BindingSource>（相对于创建该控件时所创建的 <xref:System.Windows.Forms.BindingSource>）。<br /><br /> 如果你需要进行调整，则设置此为<xref:System.Windows.Forms.BindingSource>与你想要显示的列的表。|  
     |**DisplayMember**|对于你拖动到控件上的表，则 Visual Studio 将此属性设置为该主键后的具有字符串数据类型的第一列。<br /><br /> 如果你需要进行调整，然后将此设置为你想要显示的列名称。|  
     |**ValueMember**|Visual Studio 将此属性设置为参与主键的第一列，或表中的第一列（如果未定义任何键）。<br /><br /> 如果你需要进行调整，然后将此设置为具有你想要显示的列的表中的主键。|  
     |**SelectedValue**|Visual Studio 将此属性设置为从删除的原始列**数据源**窗口。<br /><br /> 如果你需要进行调整，然后将此设置为相关表中的外键列。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

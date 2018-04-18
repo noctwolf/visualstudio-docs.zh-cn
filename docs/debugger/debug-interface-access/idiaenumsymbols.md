@@ -1,29 +1,25 @@
 ---
-title: "IDiaEnumSymbols |Microsoft 文档"
-ms.custom: 
+title: IDiaEnumSymbols |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumSymbols interface
 ms.assetid: 649f7bfd-86ac-49a5-8533-aff77e1bc62e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d972ad65bd6ff3f4f9f5d7dd71893d9fe09c2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e4e6384e6822c03190d3650d2a1371f7b9fffe59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 枚举数据源中包含的各种符号。  
@@ -63,7 +59,7 @@ IDiaEnumSymbols : IUnknown
  此示例演示如何获取`IDiaEnumSymbols`接口，然后使用该枚举列表用户定义类型 (Udt)。  
   
 > [!NOTE]
->  `CDiaBSTR`是包装的类`BSTR`和自动处理并实例化超出范围时释放字符串。  
+>  `CDiaBSTR` 是包装的类`BSTR`和自动处理并实例化超出范围时释放字符串。  
   
 ```C++  
 void ShowUDTs(IDiaSymbol *pGlobals)  
@@ -91,14 +87,14 @@ void ShowUDTs(IDiaSymbol *pGlobals)
 }  
 ```  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： Dia2.h  
   
  库： diaguids.lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [接口 （调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Idiasourcefile:: Get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   

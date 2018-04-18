@@ -1,30 +1,26 @@
 ---
-title: "CA2102： 在常规处理程序中捕捉非 CLSCompliant 异常 |Microsoft 文档"
-ms.custom: 
+title: CA2102： 在常规处理程序中捕捉非 CLSCompliant 异常 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA2102
 - CatchNonClsCompliantExceptionsInGeneralHandlers
 helpviewer_keywords:
 - CA2102
 ms.assetid: bf2df68f-d386-4379-ad9e-930a2c2e930d
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17238e140f8672e9d2d5a67594eb26b415c0b8d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cff8d36cd80a31cf05ca461730d51703afc106ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102：在常规处理程序中捕捉非 CLSCompliant 异常
 |||  
@@ -42,7 +38,7 @@ ms.lasthandoff: 12/22/2017
   
 -   C#：`catch {}`  
   
--   C + +:`catch(...) {}`或`catch(Object^) {}`  
+-   C + +:`catch(...) {}`或 `catch(Object^) {}`  
   
  在 catch 块中删除以前允许的权限时，未处理的非 CLS 符合异常将成为安全问题。 由于不符合 CLS 符合异常未被捕获，引发的异常的不符合 CLS 的恶意方法无法使用提升的权限运行。  
   
@@ -84,7 +80,7 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ## <a name="related-rules"></a>相关的规则  
  [CA1031：不要捕捉一般异常类型](../code-quality/ca1031-do-not-catch-general-exception-types.md)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [异常和异常处理](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling)   
  [Ilasm.exe（IL 汇编程序）](/dotnet/framework/tools/ilasm-exe-il-assembler)   
  [语言独立性和与语言无关的组件](/dotnet/standard/language-independence-and-language-independent-components)

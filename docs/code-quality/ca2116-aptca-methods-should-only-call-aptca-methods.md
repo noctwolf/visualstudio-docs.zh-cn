@@ -1,12 +1,10 @@
 ---
-title: "CA2116: APTCA 方法应只调用 APTCA 方法 |Microsoft 文档"
-ms.custom: 
+title: 'CA2116: APTCA 方法应只调用 APTCA 方法 |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3a7818c3d758e8e92724af37dfe955f9a466746
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52e757e2e83974a532a4dc16ce7075105606b1ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116：APTCA 方法应只调用 APTCA 方法
 |||  
@@ -41,9 +39,9 @@ ms.lasthandoff: 12/22/2017
   
  APTCA 特性在完全受信任的程序集后，该程序集执行代码中不允许部分受信任的调用方的另一个程序集，则可能产生安全漏洞。 如果两个方法`M1`和`M2`满足以下条件，则恶意调用方可以使用该方法`M1`绕过的隐式的完全信任链接要求保护`M2`:  
   
--   `M1`在完全受信任的程序集具有 APTCA 特性中声明的公共方法。  
+-   `M1` 在完全受信任的程序集具有 APTCA 特性中声明的公共方法。  
   
--   `M1`调用方法`M2`外部`M1`的程序集。  
+-   `M1` 调用方法`M2`外部`M1`的程序集。  
   
 -   `M2`程序集不具有 APTCA 特性，并且，因此，不应执行的操作或代表部分受信任的调用方。  
   
@@ -77,7 +75,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-rules"></a>相关的规则  
  [CA2117：APTCA 类型应只扩展 APTCA 基类型](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)   
  [通过部分受信任的代码使用库](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
  [链接需求](/dotnet/framework/misc/link-demands)   

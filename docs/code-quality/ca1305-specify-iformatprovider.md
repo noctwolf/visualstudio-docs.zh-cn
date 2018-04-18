@@ -1,12 +1,10 @@
 ---
-title: "CA1305： 指定 IFormatProvider |Microsoft 文档"
-ms.custom: 
+title: CA1305： 指定 IFormatProvider |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - SpecifyIFormatProvider
 - CA1305
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1305
 - SpecifyIFormatProvider
 ms.assetid: fb34ed9a-4eab-47cc-8eef-3068a4a1397e
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8bb3d993cc79ebf683f0a2622628bfc87d7c065a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d54b14c42ae6f656ad3329b8663c37e1dd29b4d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305：指定 IFormatProvider
 |||  
@@ -62,7 +60,7 @@ ms.lasthandoff: 12/22/2017
  则可以安全地禁止显示此规则的警告时确定的默认区域性/格式提供程序是正确的选择，并且代码可维护性不是重要的开发优先级。  
   
 ## <a name="example"></a>示例  
- 在下面的示例中，`BadMethod`导致冲突的此规则的两种情况。 `GoodMethod`通过将传递到固定区域性更正第一次冲突<xref:System.String.Compare%2A>，并通过将传递到当前区域性更正第二个冲突<xref:System.String.ToLower%2A>因为`string3`向用户显示。  
+ 在下面的示例中，`BadMethod`导致冲突的此规则的两种情况。 `GoodMethod` 通过将传递到固定区域性更正第一次冲突<xref:System.String.Compare%2A>，并通过将传递到当前区域性更正第二个冲突<xref:System.String.ToLower%2A>因为`string3`向用户显示。  
   
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1305-specify-iformatprovider_1.cs)]  
   
@@ -78,5 +76,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-rules"></a>相关的规则  
  [CA1304：指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
 [使用 CultureInfo 类](/dotnet/standard/globalization-localization/globalization#Cultures)  

@@ -1,12 +1,10 @@
 ---
-title: "C/c + + 断言 |Microsoft 文档"
-ms.custom: 
+title: C/c + + 断言 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -28,16 +26,16 @@ helpviewer_keywords:
 - Assertion Failed dialog box
 - failures, finding locations
 ms.assetid: 2d7b0121-71aa-414b-bbb6-ede1093d0bfc
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a53c03f1ab2c8680329f17bfa36a49b12062bff5
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8c5180e1ef5a75a31ff6ceb6c225480e1abba5fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cc-assertions"></a>C/C++ 断言
 断言语句指定您希望在程序中点应满足的条件。 如果该条件不为 true，则断言失败，程序的执行被中断，和[断言失败对话框](../debugger/assertion-failed-dialog-box.md)显示。  
@@ -77,17 +75,17 @@ ms.lasthandoff: 01/22/2018
   
 -   [查找未经处理的错误](#BKMK_Testing_error_conditions_)  
   
-##  <a name="BKMK_How_assertions_work"></a>断言的工作原理  
+##  <a name="BKMK_How_assertions_work"></a> 断言的工作原理  
  当调试器暂停由于 MFC 或 C 运行时库断言时，然后源是否可用，如果调试器导航到断言的发生位置的源文件中的点。 断言消息同时出现在[输出窗口](../ide/reference/output-window.md)和**断言失败**对话框。 你可以复制断言消息从**输出**窗口文本窗口中，如果你想要将其保存以供将来参考。 **输出**窗口可能包含其他错误信息。 这些消息仔细检查，因为它们提供了断言失败的原因的线索。  
   
  使用断言，以在开发过程中检测错误。 一般来说，为每个假设使用一个断言。 例如，当你假定参数不为 NULL，使用断言测试这一假定。  
   
  [在本主题中](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a>调试和发布版本中的断言  
+##  <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> 调试和发布版本中的断言  
  断言语句编译仅当`_DEBUG`定义。 否则，编译器将断言视为 null 语句。 因此，断言语句在施加无开销或性能成本在最终版本程序中，并允许你可以避免使用`#ifdef`指令。  
   
-##  <a name="BKMK_Side_effects_of_using_assertions"></a>使用断言的副作用  
+##  <a name="BKMK_Side_effects_of_using_assertions"></a> 使用断言的副作用  
  当将断言添加到你的代码时，请确保断言不具有副作用。 例如，考虑以下的断言，修改`nM`值：  
   
 ```  
@@ -95,7 +93,7 @@ ASSERT(nM++ > 0); // Don't do this!
   
 ```  
   
- 因为`ASSERT`程序，发行版中未计算表达式`nM`将在调试和发布版本具有不同的值。 若要避免此问题在 MFC 中的，可以使用[验证](/cpp/mfc/reference/diagnostic-services#verify)宏而不是`ASSERT`。  `VERIFY`在所有版本中的表达式的计算结果，但不会检查的版本中的结果。  
+ 因为`ASSERT`程序，发行版中未计算表达式`nM`将在调试和发布版本具有不同的值。 若要避免此问题在 MFC 中的，可以使用[验证](/cpp/mfc/reference/diagnostic-services#verify)宏而不是`ASSERT`。  `VERIFY` 在所有版本中的表达式的计算结果，但不会检查的版本中的结果。  
   
  应特别小心断言语句中使用函数调用，因为计算函数可能会产生意外的副作用。  
   
@@ -104,11 +102,11 @@ ASSERT ( myFnctn(0)==1 ) // unsafe if myFnctn has side effects
 VERIFY ( myFnctn(0)==1 ) // safe  
 ```  
   
- `VERIFY`调用`myFnctn`在调试和发布版本中，因此它是可接受的使用。 但是，使用`VERIFY`有一定的发行版中的不必要的函数调用的开销。  
+ `VERIFY` 调用`myFnctn`在调试和发布版本中，因此它是可接受的使用。 但是，使用`VERIFY`有一定的发行版中的不必要的函数调用的开销。  
   
  [在本主题中](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_CRT_assertions"></a>CRT 断言  
+##  <a name="BKMK_CRT_assertions"></a> CRT 断言  
  CRTDBG。H 标头文件中定义[_ASSERT 和 _ASSERTE 宏](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros)有关断言检查。  
   
 |宏|结果|  
@@ -116,7 +114,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
 |`_ASSERT`|如果指定的表达式的计算结果为 FALSE 时，文件名称和行号的`_ASSERT`。|`_ASSERTE`|  
 |`_ASSERTE`|与相同`_ASSERT`，加上的字符串表示形式所断言的表达式。|  
   
- `_ASSERTE`因为它可以报告断言的表达式结果为 FALSE，则是更强大。 这可能是足够可以识别问题，而不会引用的源代码。 但是，你的应用程序的调试版本将包含断言使用每个表达式的字符串常量`_ASSERTE`。 如果使用许多`_ASSERTE`宏，这些字符串表达式将占用大量的内存。 如果，证明是问题，使用`_ASSERT`以节省内存。  
+ `_ASSERTE` 因为它可以报告断言的表达式结果为 FALSE，则是更强大。 这可能是足够可以识别问题，而不会引用的源代码。 但是，你的应用程序的调试版本将包含断言使用每个表达式的字符串常量`_ASSERTE`。 如果使用许多`_ASSERTE`宏，这些字符串表达式将占用大量的内存。 如果，证明是问题，使用`_ASSERT`以节省内存。  
   
  当`_DEBUG`定义，`_ASSERTE`宏的定义如下：  
   
@@ -160,7 +158,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
   
  [在本主题中](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_MFC_assertions"></a>MFC 断言  
+##  <a name="BKMK_MFC_assertions"></a> MFC 断言  
  MFC 定义[断言](http://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c)的宏，断言检查。 它还定义`MFC ASSERT_VALID`和`CObject::AssertValid`方法可以检查的内部状态`CObject`-派生对象。  
   
  如果 MFC 的自变量`ASSERT`宏计算结果为零或 false，宏会停止程序执行，通知用户; 否则，执行会继续运行。  
@@ -182,8 +180,8 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
   
  `ASSERT`宏生成发行版中的任何代码。 如果你需要计算该表达式的发行版中，使用[验证](/cpp/mfc/reference/diagnostic-services#verify)宏而不是断言。  
   
-###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a>MFC ASSERT_VALID 和 CObject::AssertValid  
- [CObject::AssertValid](/cpp/mfc/reference/cobject-class.md#CObject__AssertValid)方法提供了运行时检查的对象的内部状态。 尽管你无需重写`AssertValid`从您的类派生时`CObject`，你可以使您的类更可靠通过执行此操作。 `AssertValid`上的所有对象的成员变量，以验证它们包含有效的值，应都执行断言。 例如，它应检查指针成员变量不为 NULL。  
+###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID 和 CObject::AssertValid  
+ [CObject::AssertValid](/cpp/mfc/reference/cobject-class.md#CObject__AssertValid)方法提供了运行时检查的对象的内部状态。 尽管你无需重写`AssertValid`从您的类派生时`CObject`，你可以使您的类更可靠通过执行此操作。 `AssertValid` 上的所有对象的成员变量，以验证它们包含有效的值，应都执行断言。 例如，它应检查指针成员变量不为 NULL。  
   
  下面的示例演示如何声明`AssertValid`函数：  
   
@@ -259,7 +257,7 @@ void CMyData::AssertValid( ) const
   
 ```  
   
- `CMyData`使用`AssertValid`机制以测试在其数据成员中存储的对象的有效性。 重写`AssertValid`的`CMyData`时，将调用`ASSERT_VALID`自己 m_pDataList 成员变量的宏。  
+ `CMyData` 使用`AssertValid`机制以测试在其数据成员中存储的对象的有效性。 重写`AssertValid`的`CMyData`时，将调用`ASSERT_VALID`自己 m_pDataList 成员变量的宏。  
   
  有效性测试不会停止在此级别因为类`CObList`还将重写`AssertValid`。 此替代执行附加有效性测试列表的内部状态。 因此，有效期测试`CMyData`对象导致存储的内部状态的其他有效性测试`CObList`列表对象。  
   
@@ -267,14 +265,14 @@ void CMyData::AssertValid( ) const
   
  为调试生成时，这是功能强大的机制。 当你随后生成版本时，机制被自动关闭。  
   
-###  <a name="BKMK_Limitations_of_AssertValid"></a>AssertValid 的限制  
+###  <a name="BKMK_Limitations_of_AssertValid"></a> AssertValid 的限制  
  触发的断言指示该对象是一定有误且将停止执行。 但是，缺少断言仅指示将未找到任何问题，但该对象不能保证无法正常工作。  
   
  [在本主题中](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Using_assertions"></a>使用断言  
+##  <a name="BKMK_Using_assertions"></a> 使用断言  
   
-###  <a name="BKMK_Catching_logic_errors"></a>捕捉逻辑错误  
+###  <a name="BKMK_Catching_logic_errors"></a> 捕捉逻辑错误  
  你可以按照在必须为 true 根据你的程序逻辑的条件设置断言。 断言无任何影响，除非发生逻辑错误。  
   
  例如，假设你正在模拟一个容器，而变量中的天然气分子`numMols`表示分子总数。 此数字不能小于零，因此你可能会包括 MFC 断言语句如下：  
@@ -294,7 +292,7 @@ _ASSERT(numMols >= 0);
   
  [在本主题中](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Checking_results_"></a>检查结果  
+###  <a name="BKMK_Checking_results_"></a> 检查结果  
  断言很有价值用于测试其结果并非明显来自快速 visual 检查的操作。  
   
  例如，考虑下面的代码，这将更新变量`iMols`基于链接列表指向的内容`mols`:  
@@ -317,7 +315,7 @@ _ASSERT(iMols<=numMols); // CRT version
   
  [在本主题中](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Testing_error_conditions_"></a>查找未经处理的错误  
+###  <a name="BKMK_Testing_error_conditions_"></a> 查找未经处理的错误  
  可以使用断言要测试在的点处的错误情况你的代码在其中的任何错误应已处理。 在下面的示例中，图形例程返回错误代码或零表示成功。  
   
 ```  
@@ -347,7 +345,7 @@ _ASSERT(!myErr); // Don't do this, either!
   
  [在本主题中](#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [调试本机代码](../debugger/debugging-native-code.md)   
  [托管代码中的断言](../debugger/assertions-in-managed-code.md)

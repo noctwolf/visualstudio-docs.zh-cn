@@ -1,11 +1,8 @@
 ---
-title: "如何： 连接到服务中的数据 |Microsoft 文档"
-ms.custom: 
+title: 如何： 连接到服务中的数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - data [Visual Studio], connecting to Web services
 - data sources, creating from Web services
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - Web services, as data sources
 - Web services, connecting
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 58d22a756edd625a9c664862d05de5fe405fd9f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 6e85af7411da7ff9f7912c4127d51db100f82063
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何：连接到服务中的数据
 通过运行从服务返回的数据将应用程序连接[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)并选择**服务**上**选择数据源类型**页。  
@@ -62,6 +59,6 @@ ms.lasthandoff: 12/22/2017
   
 -   选择中的项**数据源**窗口并将其拖到窗体上创建绑定的控件。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [将 WPF 控件绑定到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
  [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

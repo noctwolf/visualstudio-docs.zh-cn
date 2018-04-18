@@ -1,24 +1,22 @@
 ---
-title: "演练对托管代码进行代码缺陷 |Microsoft 文档"
-ms.custom: 
+title: 演练对托管代码进行代码缺陷 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1c708f31d31dd811017015cd37c7e60d49beef9
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>演练： 代码的分析托管的代码缺陷
 
@@ -30,7 +28,7 @@ ms.lasthandoff: 02/01/2018
 
 ### <a name="to-create-a-class-library"></a>若要创建一个类库
 
-1. 上**文件**菜单上，选择**新建** > **项目...**.
+1. 在“文件”菜单上，选择“新建” > “项目...”。
 
 1. 在**新项目**对话框框中，展开**已安装** > **Visual C#**，然后选择**Windows 经典桌面**。
 
@@ -112,7 +110,7 @@ ms.lasthandoff: 02/01/2018
 
    1. 将代码添加`using System.Runtime.Serialization;`到 Class1.cs 文件的开头。
 
-   1. 接下来，添加构造函数`protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   1. 接下来，添加构造函数 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
    [CA1032： 实现标准异常构造函数](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design： 与此类添加下面的构造函数： 公共 demo()
 

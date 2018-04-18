@@ -1,23 +1,21 @@
 ---
-title: "代码分析问题疑难解答 | Microsoft Docs"
-ms.custom: 
+title: 代码分析问题疑难解答 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a0773c429ad8e738e0de280b4fe2abbf2fa6e5c3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d50bbe4a5969d0614370e0aa0e1a15455b6a458a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>代码分析问题疑难解答
 本主题包含以下 Visual Studio 代码分析问题的疑难解答信息。  
@@ -33,7 +31,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  重新打开此规则集，撤消更改，然后再次保存。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [分析应用程序质量](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
  [分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [使用规则集对代码分析规则进行分组](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

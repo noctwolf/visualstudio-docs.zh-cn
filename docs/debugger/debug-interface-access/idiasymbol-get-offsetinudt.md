@@ -1,29 +1,25 @@
 ---
-title: "Idiasymbol:: Get_offsetinudt |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_offsetinudt |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_offsetInUdt method
 ms.assetid: 442f20d9-9d6a-44a1-83fb-c3f8c14b6c97
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d777fde50ed03508d5771f961904ef57b1e74e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 13d60785aa3a624f1e8a281522d77d1549118e98
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
 检索到的用户定义的类型 (UDT) 的用户定义的类型中的成员的开头的偏移量。  
@@ -49,12 +45,12 @@ HRESULT get_offsetInUdt(
 ## <a name="remarks"></a>备注  
  仅在优化版本中的本地记录中使用此函数。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： Dia2.h  
   
  库： diaguids.lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,11 +1,8 @@
 ---
-title: "将 WPF 控件绑定到 WCF 数据服务 |Microsoft 文档"
-ms.custom: 
+title: 将 WPF 控件绑定到 WCF 数据服务 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ec13e17aac37a24e92732b9b052147c7d9faa916
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a10ce63d969f67c12197f13f0ab285bc05e258cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 在本演练中，你将创建一个包含数据绑定控件的 WPF 应用程序。 这些控件将绑定到在 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] 中封装的客户记录。 你还将添加客户可用于查看和更新记录的按钮。  
@@ -247,11 +244,11 @@ ms.lasthandoff: 12/22/2017
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]  
   
 ## <a name="navigate-sales-records"></a>导航销售记录  
-添加代码，使用户能够通过使用滚动销售记录 **\<** 和 **>** 按钮。  
+添加代码，使用户能够通过使用滚动销售记录**\<**和**>**按钮。  
   
 #### <a name="to-enable-users-to-navigate-sales-records"></a>使用户能够导航销售记录  
   
-1.  在设计器中，双击 **<** 窗口图面上的按钮。  
+1.  在设计器中，双击**<**窗口图面上的按钮。  
   
      Visual Studio 将打开代码隐藏文件，并创建一个新`backButton_Click`事件处理程序<xref:System.Windows.Controls.Primitives.ButtonBase.Click>事件。  
   
@@ -260,7 +257,7 @@ ms.lasthandoff: 12/22/2017
      [!code-csharp[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]
      [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]  
   
-3.  返回到设计器中，然后双击 **>** 按钮。  
+3.  返回到设计器中，然后双击**>**按钮。  
   
      Visual Studio 将打开代码隐藏文件，并创建一个新`nextButton_Click`事件处理程序<xref:System.Windows.Controls.Primitives.ButtonBase.Click>事件。  
   
@@ -302,7 +299,7 @@ ms.lasthandoff: 12/22/2017
   
     -   文本框中显示的数据的销售订单 id 的第一个销售记录的不同字段**71774**。  
   
-    -   你可以单击 **>** 或 **<** 按钮来导航其他销售记录。  
+    -   你可以单击**>**或**<**按钮来导航其他销售记录。  
   
 5.  在某条销售记录中, 键入一些文本**注释**框中，并依次**保存更改**。  
   

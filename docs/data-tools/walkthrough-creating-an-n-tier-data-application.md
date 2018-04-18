@@ -1,11 +1,8 @@
 ---
-title: "演练： 创建 N 层数据应用程序 |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建 N 层数据应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 09/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 9e513fc346991912dcc91e9a56062e49760d9779
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: a22ba174310aa9fc3f7e2676c140d164911d5bf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>演练：创建 N 层数据应用程序
 *N 层*数据应用程序是应用程序访问数据且分为多个逻辑层，或*层*。 通过将应用程序组件分离到相对独立的层中，可以提高应用程序的可维护性和可伸缩性。 该结构之所以具有这种优点，是因为它有利于采用可应用于单个层而无需重新设计整个解决方案的新技术。 N 层体系结构包括一个表示层、一个中间层和一个数据层。 中间层通常包括数据访问层、业务逻辑层和共享组件（例如身份验证和验证）。 数据层则包括关系数据库。 N 层应用程序通常将敏感信息存储在中间层的数据访问层中，目的是将它们与访问表示层的最终用户隔离。 有关详细信息，请参阅[N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。  
@@ -124,7 +121,7 @@ ms.lasthandoff: 01/23/2018
   
      如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。  
   
-     或  
+     -或-  
   
      选择**新连接**以打开**添加连接**对话框。  
   
@@ -154,7 +151,7 @@ ms.lasthandoff: 01/23/2018
   
 4.  在**数据集项目**列表中，选择**DataEntityTier**。  
   
-5.  上**生成**菜单上，选择**生成解决方案**。  
+5.  在“生成”菜单上，选择“生成解决方案”。  
   
  将数据集和 TableAdapter 分离到两个类库项目中。 最初包含整个数据集的项目 (DataAccessTier) 现在只包含 TableAdapter。 中指定的项目**数据集项目**属性 (DataEntityTier) 包含类型化数据集： NorthwindDataSet.Dataset.Designer.vb （或 NorthwindDataSet.Dataset.Designer.cs）。  
   
@@ -381,7 +378,7 @@ MaxReceivedMessageSize 的默认值不足够大以保存从 Customers 和 Orders
   
 -   将其他方法添加到服务，以将数据更新回数据库。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [处理在 n 层应用程序中的数据集](../data-tools/work-with-datasets-in-n-tier-applications.md)   
  [分层更新](../data-tools/hierarchical-update.md)   
  [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)

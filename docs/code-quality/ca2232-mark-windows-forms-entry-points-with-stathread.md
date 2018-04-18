@@ -1,12 +1,10 @@
 ---
-title: "CA2232： 使用 STAThread 标记 Windows 窗体入口点 |Microsoft 文档"
-ms.custom: 
+title: CA2232： 使用 STAThread 标记 Windows 窗体入口点 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MarkWindowsFormsEntryPointsWithStaThread
 - CA2232
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2232
 - MarkWindowsFormsEntryPointsWithStaThread
 ms.assetid: a3c95130-8e7f-4419-9fcd-b67d077e8efb
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fe12ce5947a22414aaf07c59945fd667b106101f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2d28300d33d02fa4ca11ee1b7110a10a677b64bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232：使用 STAThread 标记 Windows 窗体的入口点
 |||  
@@ -37,10 +35,10 @@ ms.lasthandoff: 12/22/2017
  程序集引用<xref:System.Windows.Forms>命名空间，并且其入口点未用标记<xref:System.STAThreadAttribute?displayProperty=fullName>属性。  
   
 ## <a name="rule-description"></a>规则说明  
- <xref:System.STAThreadAttribute>指示的 COM 线程模型为应用程序是单线程单元。 使用 Windows 窗体的任何应用程序的入口点上必须存在此特性；如果没有此特性，则 Windows 组件可能无法正常工作。 如果该属性不存在，则应用程序使用多线程的单元模型，这不支持为 Windows 窗体。  
+ <xref:System.STAThreadAttribute> 指示的 COM 线程模型为应用程序是单线程单元。 使用 Windows 窗体的任何应用程序的入口点上必须存在此特性；如果没有此特性，则 Windows 组件可能无法正常工作。 如果该属性不存在，则应用程序使用多线程的单元模型，这不支持为 Windows 窗体。  
   
 > [!NOTE]
->  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]使用应用程序框架的项目不需要将标记**Main**使用 STAThread 的方法。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]编译器自动执行。  
+>  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 使用应用程序框架的项目不需要将标记**Main**使用 STAThread 的方法。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]编译器自动执行。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  若要修复与此规则的冲突，将添加<xref:System.STAThreadAttribute>属性设为入口点。 如果<xref:System.MTAThreadAttribute?displayProperty=fullName>特性不存在，将其删除。  

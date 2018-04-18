@@ -1,12 +1,10 @@
 ---
-title: "&lt;fileAssociation&gt;元素 （ClickOnce 应用程序） |Microsoft 文档"
-ms.custom: 
+title: '&lt;fileAssociation&gt;元素 （ClickOnce 应用程序） |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - <fileAssociation> element [ClickOnce application manifest]
 - manifests [ClickOnce], fileAssociation element
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
-caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bd5d7ed1a37923cefc4a6b7975610b6016fd0ae6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4da80f852526afa4692b7ecd6eefea3cc3c3de7e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;元素 （ClickOnce 应用程序）
 标识要与应用程序相关联的文件扩展。  
@@ -54,7 +52,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="remarks"></a>备注  
  此元素必须包括到的 XML 命名空间参考"urn： 架构-microsoft-com:clickonce.v1"。 如果`<fileAssociation>`元素时，它必须后`<application>`其父代中的元素[\<程序集 > 元素](../deployment/assembly-element-clickonce-application.md)。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将不会覆盖现有文件关联。 但是，ClickOnce 应用程序可以重写当前用户的文件扩展名。 卸载该 ClickOnce 应用程序后，ClickOnce 删除文件关联的用户，并重新处于活动状态的每台计算机关联。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 将不会覆盖现有文件关联。 但是，ClickOnce 应用程序可以重写当前用户的文件扩展名。 卸载该 ClickOnce 应用程序后，ClickOnce 删除文件关联的用户，并重新处于活动状态的每台计算机关联。  
   
 ## <a name="example"></a>示例  
  下面的代码示例阐释了`fileAssociation`应用程序中的元素的文本编辑器应用程序使用部署清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 此代码示例还包括[\<文件 > 元素](../deployment/file-element-clickonce-application.md)按所需的`defaultIcon`属性。  
@@ -82,5 +80,5 @@ ms.lasthandoff: 12/22/2017
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

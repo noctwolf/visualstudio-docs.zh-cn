@@ -1,13 +1,10 @@
 ---
-title: "保护 ClickOnce 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 保护 ClickOnce 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - deploying applications, ClickOnce security
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a7825ef0b664007fc119d7ed08066e8585ee59ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8f41fb12c8ec9a5a3cec0a802f7fc5b4216a39d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-clickonce-applications"></a>保护 ClickOnce 应用程序
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序受 .NET Framework 中代码访问安全性约束的限制，以帮助限制代码访问受保护的资源和操作的权限。 因此，了解代码访问安全性的含义以相应地编写 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序是十分重要的。 您的应用程序可以使用完全信任或使用部分区域（如 Internet 区域和 Intranet 区域）来限制访问权限。  
@@ -51,7 +47,7 @@ ms.lasthandoff: 12/22/2017
   
  如果包括应用程序部署区域的默认权限集以外的权限，则会导致在安装或更新时提示最终用户授予权限。 如果不想让系统提示用户，系统管理员可以指定一个 ClickOnce 部署策略，将某个特定的应用程序发行者定义为受信任的来源。 在部署此策略的计算机上，系统会自动授予权限而不会提示用户授予权限。  
   
- 作为开发人员，您有责任确保您的应用程序将以适当的权限运行。 如果应用程序在运行时请求区域之外的权限，则可能会出现安全性异常。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使你能够在目标安全区域中调试应用程序。 并帮助你开发安全应用程序。 有关更多信息，请参见 [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。  
+ 作为开发人员，您有责任确保您的应用程序将以适当的权限运行。 如果应用程序在运行时请求区域之外的权限，则可能会出现安全性异常。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使你能够在目标安全区域中调试应用程序。 并帮助你开发安全应用程序。 有关更多信息，请参见 [如何：使用受限权限对 ClickOnce 应用程序进行调试](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。  
   
  有关代码访问安全性和 ClickOnce 的更多信息，请参见 [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md)。  
   
@@ -82,6 +78,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="deploying-obfuscated-assemblies"></a>部署经过模糊处理的程序集  
  Visual Studio 提供了免费[PreEmptive 保护-Dotfuscator Community Edition](../ide/dotfuscator/index.md)，可以用于保护你 ClickOnce 应用程序可以通过代码混淆处理和活动保护度量值。  有关详细信息，请参阅[Dotfuscator Community Edition 用户指南的 ClickOnce 部分](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html)。
 
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)

@@ -1,11 +1,8 @@
 ---
-title: "将数据保存回数据库 |Microsoft 文档"
-ms.custom: 
+title: 将数据保存回数据库 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - datasets [Visual Basic], validating data
 - data validation, datasets
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 733a495c7f6865e9973f5288c9c324baef7f1d8e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1e7d2b27f0d90677d99d3f0fbc434493fdc7da83
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 数据集是内存中副本的数据。 如果修改此数据，最好将这些更改保存回数据库。 执行了此三种方式之一的操作：  
@@ -158,7 +155,7 @@ ms.lasthandoff: 12/22/2017
   
  你可以创建使用的已更改记录的子集`GetChanges`数据表的方法 (<xref:System.Data.DataTable.GetChanges%2A>) 或数据集 (<xref:System.Data.DataSet.GetChanges%2A>) 本身。 如果你对数据表调用方法时，它将返回具有已更改的记录的表的副本。 同样，如果调用方法对数据集上时，你在其中收到新的数据集与更改的记录。  
   
- `GetChanges`通过自身返回所有更改的记录。 与此相反，通过将传递所需<xref:System.Data.DataRowState>作为参数传递给`GetChanges`方法，可指定所需的更改记录哪些子集： 新添加的记录，记录已标记为删除，分离记录，或修改记录。  
+ `GetChanges` 通过自身返回所有更改的记录。 与此相反，通过将传递所需<xref:System.Data.DataRowState>作为参数传递给`GetChanges`方法，可指定所需的更改记录哪些子集： 新添加的记录，记录已标记为删除，分离记录，或修改记录。  
   
  你想要将记录发送到另一个组件进行处理时，获取已更改的记录的子集非常有用。 而不是发送整个数据集，你可以减少通过获取该组件需要仅记录与另一个组件进行通信的开销。   
   

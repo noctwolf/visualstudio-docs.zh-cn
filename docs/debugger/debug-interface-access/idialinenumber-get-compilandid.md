@@ -1,29 +1,25 @@
 ---
-title: "Idialinenumber:: Get_compilandid |Microsoft 文档"
-ms.custom: 
+title: 'Idialinenumber:: Get_compilandid |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaLineNumber::get_compilandId method
 ms.assetid: 2cd6f551-8091-47c7-803f-3f79a766a211
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b47a5faa6da14977a7dfb28810cfe273e09105c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82ae4894d8ef9d708f8b364ca6a95bec72bbff21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
 检索提供此行编译单位的唯一标识符。  
@@ -43,5 +39,5 @@ HRESULT get_compilandId (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

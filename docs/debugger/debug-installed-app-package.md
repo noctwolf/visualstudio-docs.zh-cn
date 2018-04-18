@@ -1,13 +1,10 @@
 ---
-title: "调试已安装的应用程序包 (UWP) |Microsoft 文档"
+title: 调试已安装的应用程序包 (UWP) |Microsoft 文档
 ms.custom: H1Hack27Feb2017
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.installedapppackagelauncher
 - vs.debug.remote.connection
@@ -20,17 +17,16 @@ dev_langs:
 helpviewer_keywords:
 - app package, debug
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 9c1406637b6d1dce312b0574cfba3c9a4f7356e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>调试 Visual Studio (UWP) 的安装的应用包
 
@@ -62,7 +58,7 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 > Visual Studio 也可以通过选择附加到任何运行的 UWP 应用进程**调试**，，然后**附加到进程**。 将附加到正在运行的进程不需要原始的 Visual Studio 项目中，但加载进程的符号将帮助显著调试你没有的原始代码的进程。
   
-## <a name="remote"></a>调试远程计算机上的安装或运行应用程序 
+## <a name="remote"></a> 调试远程计算机上的安装或运行应用程序 
 
 当第一次调试远程计算机上安装的应用包时，Visual Studio 安装你的目标设备的远程工具的正确版本。 Windows 10 计算机、 XBox、 HoloLens 或 IoT 设备，必须是你的目标设备。
 
@@ -97,7 +93,7 @@ ms.lasthandoff: 01/19/2018
 
 有关远程部署的 UWP 应用的高级选项的信息，请参阅[部署和调试 UWP 应用](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options)。 
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)  
  [远程调试](../debugger/remote-debugging.md)  

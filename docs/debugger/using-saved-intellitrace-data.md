@@ -1,13 +1,10 @@
 ---
-title: "使用已保存 IntelliTrace 数据 |Microsoft 文档"
-ms.custom: 
+title: 使用已保存 IntelliTrace 数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - IntelliTrace log files
 - .iTrace files
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 2a39531134d4c2f041c170d328c79d157fd74a0d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>使用保存的 IntelliTrace 数据
 从 IntelliTrace 日志 (.iTrace) 文件开始调试时，转到应用程序执行中的特定点。 此文件可包含应用程序运行时 IntelliTrace 记录下的性能事件、异常、线程、测试步骤、模块和其他系统信息。  
@@ -165,13 +161,13 @@ ms.lasthandoff: 01/09/2018
   
 1.  从源复制 SharePoint 相关 ID。  
   
-     例如:  
+     例如：  
   
-     ![IntelliTrace &#45;SharePoint 错误 &#45;相关 ID](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
+     ![IntelliTrace &#45; SharePoint 错误&#45;相关 ID](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
   
 2.  打开 .iTrace 文件，然后转到“分析”  并输入 SharePoint 相关 ID，以查看匹配的 Web 请求和记录的事件。  
   
-     ![IntelliTrace 日志 &#45;输入 SharePoint 相关 ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+     ![IntelliTrace 日志&#45;输入 SharePoint 关联 ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3.  在“请求事件” 下，检查事件。 从顶部开始，事件按发生顺序显示。  
   
@@ -179,7 +175,7 @@ ms.lasthandoff: 01/09/2018
   
     2.  选择“启动调试”  ，在事件发生点开始调试。  
   
-     ![IntelliTrace 日志文件 &#45;查看 web 请求 （&#43;事件](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+     ![IntelliTrace 日志文件&#45;查看 web 请求&#43;事件](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
  你可以同时查看以下类型的 SharePoint 事件和 IntelliTrace 事件：  
   
@@ -209,7 +205,7 @@ ms.lasthandoff: 01/09/2018
   
 3.  选择“调试异常”  以在异常发生的位置和时间点开始调试。  
   
-     ![IntelliTrace 日志 &#45;SharePoint 未经处理的异常](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+     ![IntelliTrace 日志&#45;SharePoint 未经处理的异常](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
  有关演练，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 类型的数据的代理记录，请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   

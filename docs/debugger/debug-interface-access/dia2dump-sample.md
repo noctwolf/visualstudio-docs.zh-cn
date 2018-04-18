@@ -1,30 +1,26 @@
 ---
-title: "Dia2dump 示例 |Microsoft 文档"
-ms.custom: 
+title: Dia2dump 示例 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - sample applications [DIA SDK]
 - Dia2dump sample [DIA SDK]
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd21806dee94031c6d5486daf1696e1f97e2956f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: acec3fa2def0c478c9d94d71a80b89cda6709897
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 示例
 Dia2dump 示例随 Visual Studio 安装，并包含 Dia2dump.cpp 源文件。 已编译可执行文件从命令行中运行，并且显示整个程序数据库 (.pdb) 文件的内容。  
@@ -39,7 +35,7 @@ Dia2dump 示例随 Visual Studio 安装，并包含 Dia2dump.cpp 源文件。 �
   
 1.  在 Visual Studio 中打开 Dia2dump.sln 文件。 （如有必要，Visual Studio 将首先帮助你升级 Dia2dump 项目。）  
   
-2.  在项目属性页中，在**C/c + +** &#124;**常规**&#124;**附加包含目录**属性，指定`..\DIA SDK\include`目录。 这可保证编译器可以找到 dia2.h 文件。  
+2.  在项目属性页中，在**C/c + +** &#124; **常规** &#124; **附加包含目录**属性，指定`..\DIA SDK\include`目录。 这可保证编译器可以找到 dia2.h 文件。  
   
 3.  上**生成**菜单上，单击**重新生成解决方案**。  
   
@@ -53,6 +49,6 @@ Dia2dump 示例随 Visual Studio 安装，并包含 Dia2dump.cpp 源文件。 �
     dia2dump filename  
     ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Dia2dump.cpp 源文件](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
  [移植、迁移和升级 Visual Studio 项目](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

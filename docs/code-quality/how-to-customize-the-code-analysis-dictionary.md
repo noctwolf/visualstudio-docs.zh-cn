@@ -1,27 +1,25 @@
 ---
-title: "如何： 自定义代码分析字典 |Microsoft 文档"
-ms.custom: 
+title: 如何： 自定义代码分析字典 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7fa5f88a3578998fca325500a3815b909b6ce4a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b2d60b2a187b7fccf4d5f564d9554badd5da9dec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自定义代码分析字典
 代码分析使用内置的字典来检查拼写，语法情况下和的其他命名约定中的错误代码中的标识符[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]准则。 你可以创建要添加、 删除或修改条款、 缩写，以及对内置字典首字母缩写词的自定义字典 Xml 文件。  
@@ -75,7 +73,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [字典/首字母缩写词/CasingExceptions/首字母缩写词](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
-###  <a name="BKMK_DictionaryWordsRecognizedWord"></a>字典/单词/识别/中的单词  
+###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> 字典/单词/识别/中的单词  
  若要在代码分析标识正确地拼写的术语的列表中包含一个术语，请为字典/单词/识别/Word 元素内部文本添加术语。 字典/单词/识别/Word 元素中的条款不区分大小写。  
   
  **示例**  
@@ -110,7 +108,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [CA2204：应正确拼写文本](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>字典/单词/无法识别的/中的单词  
+###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> 字典/单词/无法识别的/中的单词  
  若要从代码分析标识正确地拼写的术语的列表中排除一个术语，添加条件以排除字典/单词/无法识别/Word 元素的内部文本。 字典/单词/无法识别/Word 元素中的条款不区分大小写。  
   
  **示例**  
@@ -145,7 +143,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [CA2204：应正确拼写文本](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>字典/单词/弃用/术语 [@PreferredAlternate]  
+###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> 字典/单词/弃用/术语 [@PreferredAlternate]  
  若要在代码分析标识为不推荐使用的术语的列表中包含一个术语，请为字典/单词/已弃用/术语元素内部文本添加术语。 不推荐使用的术语是一个字的拼写正确，但不应使用。  
   
  若要在警告中包含建议的替代字词，字词元素 PreferredAlternate 特性中指定备用服务器。 如果你不想要建议替代方法，可以将属性值留空。  
@@ -182,7 +180,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [CA1726：使用首选词条](../code-quality/ca1726-use-preferred-terms.md)  
   
-###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>字典/单词/复合/术语 [@CompoundAlternate]  
+###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> 字典/单词/复合/术语 [@CompoundAlternate]  
  内置字典标识为单个、 离散的词，而不是为复合字词的一些术语。 若要在代码分析的组合词作为标识的术语的列表中包括一个术语，并指定术语的正确大小写，字典/单词/复合/术语元素内部文本的形式添加字词。 在术语元素 CompoundAlternate 属性中，指定利用不同的单词 （Pascal 大小写） 的第一个字母组成的复合术语的各单词。 请注意，则内部文本中指定的术语自动添加到字典/单词/DiscreteExceptions 列表。  
   
 -   字典/字不推荐使用的术语/已弃用/术语元素不区分大小写。  
@@ -215,7 +213,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [CA1704：标识符应正确拼写](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>字典/单词/DiscreteExceptions/术语  
+###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> 字典/单词/DiscreteExceptions/术语  
  若要排除的代码分析标识为单个的字词列表中的字词，离散 word 时由复合词的大小写规则检查术语字典/单词/DiscreteExceptions/术语元素内部文本的形式添加字词。 字典/单词/DiscreteExceptions/术语元素中的术语不区分大小写。  
   
  **示例**  
@@ -240,7 +238,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [CA1702：复合词应采用正确的大小写](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
-###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>字典/首字母缩写词/CasingExceptions/首字母缩写词  
+###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> 字典/首字母缩写词/CasingExceptions/首字母缩写词  
  若要包括的代码分析标识为拼写正确的术语列表中的首字母缩写词并指示时由大小写检查术语的首字母缩写的规则的复合词，字典/首字母缩写词/CasingExceptions 内部文本的形式添加字词 /Acronym 元素。 字典/首字母缩写词/CasingExceptions/首字母缩写词元素中的首字母缩写是区分大小写。  
   
  **示例**  
@@ -263,7 +261,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [CA1709：标识符的大小写应当正确](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
-##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>若要应用于项目的自定义字典  
+##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> 若要应用于项目的自定义字典  
   
 1.  在**解决方案资源管理器**，使用以下过程之一：  
   

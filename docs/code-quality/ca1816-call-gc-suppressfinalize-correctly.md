@@ -1,12 +1,10 @@
 ---
-title: "CA1816： 调用 GC。SuppressFinalize 正确 |Microsoft 文档"
-ms.custom: 
+title: CA1816： 调用 GC。SuppressFinalize 正确 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1816
 - DisposeMethodsShouldCallSuppressFinalize
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DisposeMethodsShouldCallSuppressFinalize
 - CA1816
 ms.assetid: 47915fbb-103f-4333-b157-1da16bf49660
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8d0287b570ed1ff5393ff0ff04b9e5d2252c29bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9d6d65561e9b902202d4fc69d15d200482880cf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816：正确调用 GC.SuppressFinalize
 |||  
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 -   一个方法调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>并传递 this (Me 以外在 Visual Basic 中）。  
   
 ## <a name="rule-description"></a>规则说明  
- <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法可让用户在任何时间变得可用于垃圾回收的对象之前释放资源。 如果<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法调用，因此它释放的对象的资源。 这使得无需终止。 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>应调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>以便垃圾回收器不会调用的对象的终结器。  
+ <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法可让用户在任何时间变得可用于垃圾回收的对象之前释放资源。 如果<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法调用，因此它释放的对象的资源。 这使得无需终止。 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 应调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>以便垃圾回收器不会调用的对象的终结器。  
   
  若要防止具有终结器的派生的类型无需重新实现<xref:System.IDisposable>和调用它，未密封的类型没有终结器应仍调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。  
   
@@ -75,5 +73,5 @@ ms.lasthandoff: 12/22/2017
   
  [CA2216：可释放类型应声明终结器](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [释放模式](/dotnet/standard/design-guidelines/dispose-pattern)

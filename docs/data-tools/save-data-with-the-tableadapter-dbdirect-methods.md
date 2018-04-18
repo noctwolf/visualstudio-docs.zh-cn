@@ -1,11 +1,8 @@
 ---
-title: "使用 TableAdapter DBDirect 方法保存数据 |Microsoft 文档"
-ms.custom: 
+title: 使用 TableAdapter DBDirect 方法保存数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 628a3cfc75f786ceb989145ada6e2f2579f349cd
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: 687ba719b74be8daf0a4fb5e52bfa41d431df8a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法保存数据
 本演练提供有关使用 TableAdapter 的 DBDirect 方法直接对数据库运行 SQL 语句的详细的说明。 TableAdapter 的 DBDirect 方法提供良好的控制数据库更新级别。 可用于运行特定的 SQL 语句和存储的过程的调用单个`Insert`， `Update`，和`Delete`方法根据需要由你的应用程序 (而不是重载`Update`执行更新的方法INSERT 和 DELETE 语句，所有在一次调用中的)。  
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/23/2018
   
     -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。  
   
-         或  
+         -或-  
   
     -   选择**新连接**以启动**添加/修改连接**对话框。  
   
@@ -118,7 +115,7 @@ ms.lasthandoff: 01/23/2018
   
 2.  设置以下**名称**和**文本**每个按钮上的属性。  
   
-    |name|Text|  
+    |名称|Text|  
     |----------|----------|  
     |`InsertButton`|插入|  
     |`UpdateButton`|**更新**|  
@@ -170,5 +167,5 @@ ms.lasthandoff: 01/23/2018
   
 -   通过选择将其他表添加到数据集**使用向导配置数据集**中**数据源**窗口。 可以通过将相关节点拖到窗体上来添加显示相关数据的控件。 有关详细信息，请参阅[数据集中的关系](relationships-in-datasets.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

@@ -1,12 +1,10 @@
 ---
-title: "CA2147： 透明方法不得使用安全断言 |Microsoft 文档"
-ms.custom: 
+title: CA2147： 透明方法不得使用安全断言 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - SecurityTransparentCodeShouldNotAssert
 - CA2147
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - CA2128
 - SecurityTransparentCodeShouldNotAssert
 ms.assetid: 5d31e940-e599-4b23-9b28-1c336f8d910e
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 38ac5492c987515c7c6504c91d2e035f8b8645ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 75d841da0c738ff7504e95b372ecd4e06f9c77f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147：透明方法不得使用安全断言
 |||  
@@ -64,5 +62,5 @@ ms.lasthandoff: 12/22/2017
   
  另一个选项是从代码中，删除该断言，让任何后续的文件 I/O 权限需求流超出 SecurityTransparentMethod 给调用方。 这使安全检查。 在这种情况下，通常需要无任何安全审核，因为权限要求将流到调用方和/或应用程序域。 通过安全策略、 宿主环境中，并相应地代码源权限授予密切控制权限需求。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [安全警告](../code-quality/security-warnings.md)

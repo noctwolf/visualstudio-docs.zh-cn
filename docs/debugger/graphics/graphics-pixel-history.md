@@ -1,27 +1,23 @@
 ---
-title: "图形像素历史记录 |Microsoft 文档"
-ms.custom: 
+title: 图形像素历史记录 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966f15e0aac212207e0f6afe96dececc8950aab2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 73e51108c4280d6e3ebf69000c9863610e4a25da
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-pixel-history"></a>图形像素历史记录
 Visual Studio 中的“图形像素历史记录”窗口可以帮助你了解，在游戏或应用的某个帧期间，Direct3D 事件如何对某一特定像素产生影响。  
@@ -41,7 +37,7 @@ Visual Studio 中的“图形像素历史记录”窗口可以帮助你了解，
   
  你可以展开每个基元来检查像素着色器输出是如何与现有的像素颜色合并产生最后生成的颜色的。 你也可以从这里检查或调试与基元相关的像素着色器代码，也可以进一步展开顶点着色器节点来检查顶点着色器输入。  
   
-###  <a name="exclusion"></a>基元排除  
+###  <a name="exclusion"></a> 基元排除  
  如果基元被排除了影响像素颜色的可能性，造成这一排除的原因可能是多种的。 这个表格中所述的图标各代表一个原因：  
   
 |图标|排除原因|  
@@ -80,6 +76,6 @@ Visual Studio 中的“图形像素历史记录”窗口可以帮助你了解，
 ### <a name="links-to-graphics-objects"></a>指向图形对象的链接  
  如果要了解像素历史记录中的图形事件，你可能需要了解事件发生时设备状态的有关信息或事件所引用的 Direct3D 对象的有关信息。 中的像素历史记录，每个事件**图形像素历史记录**提供了指向当时设备状态和相关对象。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [演练： 因而缺少对象设备状态](walkthrough-missing-objects-due-to-device-state.md)   
  [演练：调试因着色引起的呈现错误](walkthrough-debugging-rendering-errors-due-to-shading.md)

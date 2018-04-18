@@ -1,23 +1,21 @@
 ---
-title: "为托管代码的全球化规则规则设置 |Microsoft 文档"
-ms.custom: 
+title: 为托管代码的全球化规则规则设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 3c4032ee-0805-4581-8c48-b1827cd6b213
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 07a2e8da87eb486f8247a79263ec371a8fd4afc5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 54e1df6f8c49112747ccd7254f01a57d33dccf0e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>托管代码的“全球化规则”规则集
 你可以使用的 Microsoft 全球化规则规则集重点解决问题，可能会阻止从以不同语言、 区域设置中和区域文化正确显示应用程序中的数据。 你应包含此规则集如果本地化你的应用程序，则全球化，或两个。  

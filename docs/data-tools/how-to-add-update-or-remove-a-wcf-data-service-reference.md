@@ -1,11 +1,8 @@
 ---
-title: "如何： 添加、 更新或删除 WCF 数据服务引用 |Microsoft 文档"
-ms.custom: 
+title: 如何： 添加、 更新或删除 WCF 数据服务引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - service references [Visual Studio]
 - WCF Data Service reference
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c35fdaabf3de306af0541fb4781a085a3c409ff8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 2e128268a0dd81aead3204436bb8f4ea80b5a048
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：添加、更新或移除 WCF 数据服务引用
 A*服务参考*，项目可访问一个或多个[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。 使用**添加服务引用**对话框中，搜索[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]当前解决方案中、 本地、 在局域网或 Internet 上。  
@@ -41,7 +38,7 @@ A*服务参考*，项目可访问一个或多个[!INCLUDE[ssAstoria](../data-too
 2.  在**地址**框中，输入该服务的 URL，然后单击**转**搜索服务。 如果该服务实现用户名称和密码安全性，你可能会提示输入用户名和密码。  
   
     > [!NOTE]
-    >  你应仅从受信任的源中引用服务。 添加来自非信任源的引用可能会降低安全性。  
+    >  应仅从受信任源引用服务。 从不受信任的源添加引用可能会危及安全性。  
   
      你还可以选择从 URL**地址**列表中，它存储在其中找到了有效的服务元数据前 15 个。  
   
@@ -94,5 +91,5 @@ A*服务参考*，项目可访问一个或多个[!INCLUDE[ssAstoria](../data-too
     > [!NOTE]
     >  引用的服务引用的任何代码将需要手动删除。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

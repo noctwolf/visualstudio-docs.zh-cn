@@ -1,13 +1,10 @@
 ---
-title: "CRT 调试库使用 |Microsoft 文档"
-ms.custom: 
+title: CRT 调试库使用 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.debug.runtime
 dev_langs:
@@ -29,17 +26,16 @@ helpviewer_keywords:
 - DEBUG linker option [C++]
 - /LDd compiler function [C++]
 ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 420dcc98aad4f4ca2ad76d16b7f4c6c7c51d2beb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3dba4e434384900affb5474c5dd9741bf8b71c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="crt-debug-library-use"></a>CRT 调试库使用
 C 运行库提供广泛的调试支持。 若要使用 CRT 调试库之一，你必须与链接[/调试](/cpp/build/reference/debug-generate-debug-info)和使用进行编译**/MDd**， **/MTd**，或**/LDd**。  
@@ -53,6 +49,6 @@ C 运行库提供广泛的调试支持。 若要使用 CRT 调试库之一，你
   
  你可以使用的各种运行时库的详细信息，请参阅[C 运行时库](/cpp/c-runtime-library/crt-library-features)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [CRT 调试技术](../debugger/crt-debugging-techniques.md)   
- [/MD、 /MT、 /LD （使用运行时库）](/cpp/build/reference/md-mt-ld-use-run-time-library)
+ [/MD、/MT、/LD（使用运行时库）](/cpp/build/reference/md-mt-ld-use-run-time-library)

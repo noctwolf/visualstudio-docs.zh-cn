@@ -1,11 +1,8 @@
 ---
-title: "创建参数化的 TableAdapter 查询 |Microsoft 文档"
-ms.custom: 
+title: 创建参数化的 TableAdapter 查询 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,17 @@ helpviewer_keywords:
 - TableAdapters, searching data
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 65c4ab52ead981d54cf9b0c64c7a3c1c941de5b0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 361bb7f9acea5d07283b63cb1b3b1b97bb495a8e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>创建参数化的 TableAdapter 查询
 参数化查询将返回满足查询内的 WHERE 子句条件的数据。 例如，通过在返回客户列表的 SQL 语句的末尾添加 `WHERE City = @City`，可以参数化客户列表，使之只显示某个城市的客户。  
@@ -46,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
 -   将 WHERE 子句和所需参数添加到 SQL 语句中，以创建新的 TableAdapter。 有关详细信息，请参阅[创建和配置 Tableadapter](../data-tools/create-and-configure-tableadapters.md)。  
   
-     或  
+     -或-  
   
 -   将 WHERE 子句和所需参数添加到 SQL 语句中，以向现有 TableAdapter 中添加查询。
   
@@ -71,7 +68,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  中键入一个名称**新查询名称**框中，如果要创建新查询。  
   
-     或  
+     -或-  
   
      选择一个查询中的**现有查询名称**框。  
   
@@ -103,5 +100,5 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
   
 3.  选择允许 null 值的参数并设置**AllowDbNull**属性`true`。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)

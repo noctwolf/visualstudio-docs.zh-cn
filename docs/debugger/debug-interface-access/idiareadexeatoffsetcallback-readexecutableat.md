@@ -1,29 +1,25 @@
 ---
-title: "Idiareadexeatoffsetcallback:: Readexecutableat |Microsoft 文档"
-ms.custom: 
+title: 'Idiareadexeatoffsetcallback:: Readexecutableat |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaReadExeAtOffsetCallback::ReadExecutableAt method
 ms.assetid: 30b1cef0-b366-4712-8e89-d21f640964f8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1250bef977c887be9d4d98fb4372a597c4e22072
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e43bb15eb91e3ffdaa7306140206ca80c2547b0b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 读取指定的可执行文件从指定的偏移量处开始的字节数。  
@@ -55,6 +51,6 @@ HRESULT ReadExecutableAt (
 ## <a name="remarks"></a>备注  
  若要从使用绝对文件偏移量的可执行文件加载数据字节的 DIA 支持代码通过调用此方法。 此方法称为 support 的[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

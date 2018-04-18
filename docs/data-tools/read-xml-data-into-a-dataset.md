@@ -1,11 +1,8 @@
 ---
-title: "读取 XML 数据读入数据集 |Microsoft 文档"
-ms.custom: 
+title: 读取 XML 数据读入数据集 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 093dbb5ee8f088a7f2e4ccd1dd063cfeecc2c5e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 4942d0c60d5219e563057b11e7b13b5ab43307e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML 数据读入数据集
 ADO.NET 提供用于处理 XML 数据的简单方法。 在本演练中，你创建的 Windows 应用程序将 XML 数据加载到数据集。 数据集随后显示在<xref:System.Windows.Forms.DataGridView>控件。 最后，根据 XML 文件的内容的 XML 架构被显示在文本框中。  
@@ -246,6 +243,6 @@ ADO.NET 提供用于处理 XML 数据的简单方法。 在本演练中，你创
   
 -   编辑数据集中的数据并将其写出到数据库。 有关详细信息，请参阅[保存数据](../data-tools/saving-data.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)       
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

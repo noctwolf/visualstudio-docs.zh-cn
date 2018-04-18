@@ -1,12 +1,10 @@
 ---
-title: "CA2243： 字符串应正确分析特性文本 |Microsoft 文档"
-ms.custom: 
+title: CA2243： 字符串应正确分析特性文本 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2243
 - AttributeStringLiteralsShouldParseCorrectly
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AttributeStringLiteralsShouldParseCorrectly
 - CA2243
 ms.assetid: bfadb366-379d-4ee4-b17b-c4a09bf1106b
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 79ffda960d85c05648a0f1ea7d6c759fc9e76f78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0715624391b766649e48775470ed9e27f47f9613
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243：应正确分析特性字符串文本
 |||  
@@ -62,5 +60,5 @@ ms.lasthandoff: 12/22/2017
   
 -   包含 uri、 urn 或 url，无法被分析为 System.Uri 参数。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [CA1054：URI 参数不应为字符串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

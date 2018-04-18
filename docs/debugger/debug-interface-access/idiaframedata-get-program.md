@@ -1,29 +1,25 @@
 ---
-title: "Idiaframedata:: Get_program |Microsoft 文档"
-ms.custom: 
+title: 'Idiaframedata:: Get_program |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaFrameData::get_program method
 ms.assetid: 9201409e-b4b1-4e2e-a9f8-d17678ac538b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10d5d331c4308586485ea77824cda4864c6ee943
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dc770db5f5cf16d9870e05ada01e235206b94078
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 检索用于计算的寄存器集之前对当前函数的调用的程序字符串。  
@@ -44,7 +40,7 @@ HRESULT get_program (
  如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 程序字符串为宏的序列，以便建立序言解释。 例如，典型的堆栈帧可能会使用程序字符串`"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`。 格式为反向波兰语表示法，其中这些运算符遵循操作数。 `T0`表示在堆栈上的临时变量。 此示例将执行以下步骤：  
+ 程序字符串为宏的序列，以便建立序言解释。 例如，典型的堆栈帧可能会使用程序字符串`"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`。 格式为反向波兰语表示法，其中这些运算符遵循操作数。 `T0` 表示在堆栈上的临时变量。 此示例将执行以下步骤：  
   
 1.  将寄存器的内容移动`ebp`到`T0`。  
   
@@ -56,5 +52,5 @@ HRESULT get_program (
   
  请注意，程序字符串是特定于 CPU 设置为表示由当前的堆栈帧的函数的调用约定。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -1,23 +1,20 @@
 ---
-title: "一个或多个选定的数据库对象返回与目标类的架构不匹配的架构 |Microsoft 文档"
-ms.custom: 
+title: 一个或多个选定的数据库对象返回与目标类的架构不匹配的架构 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: e188947f51cb8e277c71a072dfcee72922f37982
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 24ffc57e126a01eb91d6d539568a4e3dce462538
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>一个或多个所选数据库对象返回与目标类的架构不匹配的架构
 一个或多个选定数据库对象返回了与目标类的架构不匹配的架构。 没有向设计器中添加任何内容。  

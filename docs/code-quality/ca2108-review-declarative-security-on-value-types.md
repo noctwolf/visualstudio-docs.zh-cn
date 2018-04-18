@@ -1,12 +1,10 @@
 ---
-title: "CA2108： 检查有关值类型的声明性安全 |Microsoft 文档"
-ms.custom: 
+title: CA2108： 检查有关值类型的声明性安全 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - ReviewDeclarativeSecurityOnValueTypes
 - CA2108
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ReviewDeclarativeSecurityOnValueTypes
 - CA2108
 ms.assetid: d62bffdd-3826-4d52-a708-1c646c5d48c2
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b05873b87767fa39cc6e0d675980bf658d76c584
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ba05728d1b12cee50512185e0875be12fa55b957
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108：检查有关值类型的声明性安全
 |||  
@@ -60,6 +58,6 @@ ms.lasthandoff: 12/22/2017
  **结构自定义构造函数： 请求失败。**  
 **新值 SecuredTypeStructure 100 100**  
 **新值 SecuredTypeStructure 200 200**   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [链接需求](/dotnet/framework/misc/link-demands)   
  [数据和建模](/dotnet/framework/data/index)

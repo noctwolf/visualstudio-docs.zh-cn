@@ -1,29 +1,25 @@
 ---
-title: "Idiaaddressmap:: Get_relativevirtualaddressenabled |Microsoft 文档"
-ms.custom: 
+title: 'Idiaaddressmap:: Get_relativevirtualaddressenabled |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaAddressMap::get_relativeVirtualAddressEnabled method
 ms.assetid: 4c48af81-7148-4d9a-818e-dbe62cbfc638
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e7b3c58145330a8071797fc7a8832b7c6f48f53
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3c0875560668f79dca705200a222f9ccadc3003f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaaddressmapgetrelativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
 指示是否启用的计算和的相对虚拟地址 (RVA) 的使用。  
@@ -48,7 +44,7 @@ HRESULT get_relativeVirtualAddressEnabled (
   
  此外，可以通过调用建立新的映像标头[idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)方法接着调用`put_relativeVirtualAddressEnabled`方法可用来启用的 rva 也使用新的映像标头。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [Idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)   
  [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)

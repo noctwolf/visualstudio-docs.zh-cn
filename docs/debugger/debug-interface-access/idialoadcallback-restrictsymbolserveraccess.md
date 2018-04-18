@@ -1,29 +1,25 @@
 ---
-title: "Idialoadcallback:: Restrictsymbolserveraccess |Microsoft 文档"
-ms.custom: 
+title: 'Idialoadcallback:: Restrictsymbolserveraccess |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaLoadCallback::RestrictSymbolServerAccess method
 ms.assetid: db37ad9f-f75e-4f0c-83bf-21a6e66ba859
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05c79edf44b9a853917ade19d1616219ae2c1308
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 35bd0febb76661c9e0bd3e1b965bc54d6d58d700
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idialoadcallbackrestrictsymbolserveraccess"></a>IDiaLoadCallback::RestrictSymbolServerAccess
 确定是否允许访问到符号服务器来解析符号。  
@@ -40,5 +36,5 @@ HRESULT RestrictSymbolServerAccess();
 ## <a name="remarks"></a>备注  
  之外的任何返回代码`S_OK`禁止使用要解析符号的符号服务器。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

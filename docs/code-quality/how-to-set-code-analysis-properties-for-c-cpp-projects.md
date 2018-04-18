@@ -1,12 +1,10 @@
 ---
-title: "如何： 设置 C/c + + 项目的代码分析属性 |Microsoft 文档"
-ms.custom: 
+title: 如何： 设置 C/c + + 项目的代码分析属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native
 - VC.Project.VCCLCompilerTool.EnablePrefast
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - code analysis properties
 - C/C++ code analysis properties
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
-caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 629bc4dc36ade84f6a6e55518775f0d11165da7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 89671da363d6079ad7a81dc41f1c6f82b713d32d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：设置 C/C++ 项目的代码分析属性
 你可以配置使用哪些规则的代码分析工具来分析你的项目的每个配置中的代码。 此外，你可以指示代码分析，以禁止显示警告的代码与已生成并由第三方工具添加到你的项目。  
@@ -53,6 +51,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-sets"></a>规则集  
  如果你的项目包含托管的代码，你可以选择通过选择规则集从应用中的代码分析规则**运行此规则集**列表。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [C/C++ 代码分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)

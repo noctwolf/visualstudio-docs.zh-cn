@@ -1,12 +1,10 @@
 ---
-title: "CA1415: P 调用正确声明 |Microsoft 文档"
-ms.custom: 
+title: 'CA1415: P 调用正确声明 |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1415
 - DeclarePInvokesCorrectly
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1415
 - DeclarePInvokesCorrectly
 ms.assetid: 42a90796-0264-4460-bf97-2fb4a093dfdc
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b1bacff8f97a27a02ccdf8e6f6047bfd6ad9c90b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bfad5d5a699fda54c91e674365b65305ef7fad0d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415：正确声明 P/Invoke
 |||  
@@ -50,5 +48,5 @@ ms.lasthandoff: 12/22/2017
   
  [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [与非托管代码交互操作](/dotnet/framework/interop/index)

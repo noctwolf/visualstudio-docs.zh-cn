@@ -1,26 +1,23 @@
 ---
-title: "演练： 自定义插入、 更新和删除的实体类的行为 |Microsoft 文档"
-ms.custom: 
+title: 演练： 自定义插入、 更新和删除的实体类的行为 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: f59add8b557a07ed43608e1fcac6ccc80b1d9782
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: 38dc02e4c1cd7a0d6bead05a585b878f242209ba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练： 自定义插入、 更新和删除的实体类的行为
 
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/23/2018
   
 5.  单击**LINQ to SQL 类**模板和类型**Northwind.dbml**中**名称**框。  
   
-6.  单击 **“添加”**。  
+6.  单击 **添加**。  
   
      这会将一个空的 LINQ to SQL 类文件 (Northwind.dbml) 添加到该项目中，并且会打开 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。  
   

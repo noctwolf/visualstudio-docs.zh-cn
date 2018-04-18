@@ -1,11 +1,8 @@
 ---
-title: "在填充数据集时关闭约束 |Microsoft 文档"
-ms.custom: 
+title: 在填充数据集时关闭约束 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - DataRow.BeginEdit
 - DataRow.EndEdit
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - constraints [Visual Basic], suspending during dataset update
 ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 88c8687511dd600802cc7c6ecdc12f0827fd7f6f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: e32aecbe10c9c02fec62240977b3f4e3a3338791
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>在填充数据集时关闭约束
 如果数据集包含约束 （如外键约束），则它们可以引发顺序对数据集执行的操作相关的错误。 例如，加载子记录之前加载相关的父记录可以违反约束，并会导致错误。 一旦加载子记录时，约束检查相关的父记录，并引发错误。  
@@ -52,6 +49,6 @@ ms.lasthandoff: 12/22/2017
   
 2.  在**属性**窗口中，设置<xref:System.Data.DataSet.EnforceConstraints%2A>属性`false`。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [通过使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)   
  [数据集中的关系](../data-tools/relationships-in-datasets.md)

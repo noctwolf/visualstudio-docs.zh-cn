@@ -1,28 +1,25 @@
 ---
-title: "自定义 Visual Studio 如何创建数据绑定控件的标题 |Microsoft 文档"
-ms.custom: 
+title: 自定义 Visual Studio 如何创建数据绑定控件的标题 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 60d98d6b8cefc2f7fb7829d841001f92bd9063de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 031301edc2fbf0c9acc08f92d3324160dd5383cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自定义 Visual Studio 如何创建数据绑定控件的标题
 当拖动项时从[数据源窗口](add-new-data-sources.md)拖到设计器，特别注意派上用场： 标题标签中的列名称重新格式化为一个更具可读性的字符串，当两个或更多的单词发现连接在一起。 你可以自定义创建的方式在其中这些标签，通过设置**SmartCaptionExpression**， **SmartCaptionReplacement**，和**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 设计器**注册表项。  
@@ -44,14 +41,14 @@ ms.lasthandoff: 12/22/2017
   
 |注册表项|默认值|说明|  
 |-------------------|-------------------|-----------------|  
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124; _ +|匹配大写字符或下划线后跟一个小写字符。|  
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|匹配大写字符或下划线后跟一个小写字符。|  
 |**SmartCaptionReplacement**|$1 $2|$1 表示匹配的第一个表达式的括号内的任意字符，$2 表示匹配的第二个括号内的任意字符。 替代功能第一个匹配项、 空格和第二个匹配项。|  
-|**SmartCaptionSuffix**|:|将字符追加到返回的字符串表示。 例如，如果标题是`Company Name`，后缀便`Company Name:`|  
+|**SmartCaptionSuffix**|:|将字符追加到返回的字符串表示。 例如，如果标题是`Company Name`，后缀便 `Company Name:`|  
   
 > [!CAUTION]
 > 你应执行任何操作在注册表编辑器时请格外小心。 编辑它之前备份注册表。 如果没有正确使用注册表编辑器，你可能会导致严重的问题，可能需要重新安装操作系统。 Microsoft 不保证可以解决通过注册表编辑器使用不当导致的问题。 使用注册表编辑器的风险由您自己承担。  
 >   
->  以下知识库文章包含有关备份、 编辑和还原注册表的说明：[的 Microsoft Windows 注册表说明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)  
+>  以下知识库文章包含有关备份、 编辑和还原注册表的说明：[的 Microsoft Windows 注册表说明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-我们; 256986)  
   
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>若要修改的数据源窗口的智能标题行为  
   
@@ -109,5 +106,5 @@ ms.lasthandoff: 12/22/2017
   
     下一次拖动项时从**数据源**标题标签窗口中，创建的未修改的标题。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
 [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)

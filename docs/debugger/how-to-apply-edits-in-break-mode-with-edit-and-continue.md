@@ -1,13 +1,10 @@
 ---
-title: "如何： 在应用编辑中断模式下的使用编辑并继续 |Microsoft 文档"
-ms.custom: 
+title: 如何： 在应用编辑中断模式下的使用编辑并继续 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - coding, editing in break mode
 - code, editing in break mode
 ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54fb069f5328dd9bc7cabab16c0688109312dfd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37c172c49132f8080dc29040fa7325c19f1871f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>如何：使用“编辑并继续”在中断模式下应用编辑
 可以在中断模式下使用“编辑并继续”编辑代码，然后不必停止和重新启动执行即可继续。  
@@ -46,11 +42,11 @@ ms.lasthandoff: 12/22/2017
   
     -   在代码中，设置断点，然后选择**启动调试**从**调试**菜单，然后等待应用程序命中断点。  
   
-         或  
+         -或-  
   
     -   启动调试，，然后选择**全部中断**从**调试**菜单。  
   
-         或  
+         -或-  
   
     -   发生异常时，选择**启用编辑**上**异常助手**。  
   
@@ -65,6 +61,6 @@ ms.lasthandoff: 12/22/2017
   
      在你所做的编辑已并入项目并已应用的情况下，你的代码继续执行。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [受支持的代码更改 （C# 和 Visual Basic](../debugger/supported-code-changes-csharp.md)   
  [编辑并继续 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

@@ -1,11 +1,8 @@
 ---
-title: "验证数据集中的数据 |Microsoft 文档"
-ms.custom: 
+title: 验证数据集中的数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - DataTable.ColumnChanging
 - System.Data.DataTable.ColumnChanging
@@ -20,17 +17,17 @@ helpviewer_keywords:
 - validating data, datasets
 - updating datasets, validating data
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
-caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b5cc63d5a83c9f1400dd183982fa68864d35fdbf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a85e7b429300ce86290e707bb612d778b8fbb20e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 数据进行验证是确认输入到数据对象的值符合中的数据集的架构的约束的过程。 验证过程还确认这些值是遵循已为你的应用程序设定的规则。 最好将更新发送到基础数据库之前的数据进行验证。 这将减少错误以及潜在应用程序和数据库之间的往返次数。  

@@ -1,12 +1,10 @@
 ---
-title: "应用程序部署必备 |Microsoft 文档"
-ms.custom: 
+title: 应用程序部署必备 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-caps.latest.revision: "51"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-deployment-prerequisites"></a>应用程序部署必备
 为确保应用程序成功安装和运行，必须先确保应用程序依赖的所有组件都已安装在目标计算机上。 例如，用 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)][!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 创建的大多数应用程序都会依赖 ；在安装应用程序前，目标计算机上必须存在正确版本的公共语言运行时。  
@@ -48,10 +46,10 @@ ms.lasthandoff: 12/22/2017
   
 -   必须预先安装在全局程序集缓存 (GAC) 中的任何程序集及所有程序集的最低版本（由程序集清单中的程序集依赖项声明指定）。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]能够检测到缺少的先决条件，并可以使用引导程序来安装系统必备组件。 有关详细信息，请参阅[如何： 与 ClickOnce 应用程序的安装必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 能够检测到缺少的先决条件，并可以使用引导程序来安装系统必备组件。 有关详细信息，请参阅[如何： 与 ClickOnce 应用程序的安装必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
   
 > [!NOTE]
->  若要更改由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MageUI.exe 之类的工具生成的清单中的默认值，你需要在文本编辑器中编辑应用程序清单，然后重新对应用程序和部署清单进行签名。 有关详细信息，请参阅[如何： 重新签名的应用程序和部署清单](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+>  若要更改由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MageUI.exe 之类的工具生成的清单中的默认值，你需要在文本编辑器中编辑应用程序清单，然后重新对应用程序和部署清单进行签名。 有关详细信息，请参阅 [如何：为应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
  如果你使用 Visual Studio 和 ClickOnce 来部署应用程序，则默认选中的引导程序包取决于解决方案中的 .NET Framework 版本。 但是，如果你更改目标.NET Framework 版本，则必须更新中的选项**系统必备组件对话框**手动。  
   
@@ -78,13 +76,13 @@ ms.lasthandoff: 12/22/2017
 |---------------------------|-----------------|  
 |**-？，-h、-帮助**|显示一个“帮助”对话框。|  
 |**-url，-componentsurl**|显示用于此安装的存储 URL 和组件 URL。|  
-|**-url =**`location`|设置 Setup.exe 将在其中查找 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的 URL。|  
-|**-componentsurl =**`location`|设置 Setup.exe 将在其中查找依赖项（如 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]）的 URL。|  
-|**-homesite =** `true` **&#124;**`false`|当`true`，从供应商的站点上的首选位置下载依赖项。 此设置将替代**-componentsurl**设置。 当`false`，从指定的 URL 下载依赖项**-componentsurl**。|  
+|**-url =** `location`|设置 Setup.exe 将在其中查找 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的 URL。|  
+|**-componentsurl =** `location`|设置 Setup.exe 将在其中查找依赖项（如 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]）的 URL。|  
+|**-homesite =** `true`**&#124;** `false`|当`true`，从供应商的站点上的首选位置下载依赖项。 此设置将替代**-componentsurl**设置。 当`false`，从指定的 URL 下载依赖项**-componentsurl**。|  
   
 ## <a name="operating-system-support"></a>操作系统支持  
  Windows Server 2008 服务器核心或 Windows Server 2008 R2 服务器核心提供功能有限的低级维护服务器环境，不支持 Visual Studio 引导程序。 例如，“服务器核心”安装选项仅支持 .NET Framework 3.5 服务器核心配置文件，因此依赖于完整的 .NET Framework 的 Visual Studio 功能无法运行。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)

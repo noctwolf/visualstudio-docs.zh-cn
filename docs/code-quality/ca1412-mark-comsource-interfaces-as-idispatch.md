@@ -1,12 +1,10 @@
 ---
-title: "CA1412： 将 ComSource 接口标记为 IDispatch |Microsoft 文档"
-ms.custom: 
+title: CA1412： 将 ComSource 接口标记为 IDispatch |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MarkComSourceInterfacesAsIDispatch
 - CA1412
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1412
 - MarkComSourceInterfacesAsIDispatch
 ms.assetid: 131a7563-0410-443c-a8f5-52104250cfb4
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2523397f59affa2d7e1e60e69e7ba2047438135
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cca84ed1470d43df2163de265e15a7efcbce0b62
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412：将 ComSource 接口标记为 IDispatch
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  类型将标有<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>属性和至少一个指定的接口未用标记<xref:System.Runtime.InteropServices.InterfaceTypeAttribute>属性设置为`InterfaceIsDispatch`值。  
   
 ## <a name="rule-description"></a>规则说明  
- <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>用于标识向组件对象模型 (COM) 客户端类公开的事件接口。 这些接口必须公开为`InterfaceIsIDispatch`若要启用 Visual Basic 6 COM 客户端接收事件通知。 默认情况下，如果接口未用标记<xref:System.Runtime.InteropServices.InterfaceTypeAttribute>属性，它作为双重接口公开。  
+ <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> 用于标识向组件对象模型 (COM) 客户端类公开的事件接口。 这些接口必须公开为`InterfaceIsIDispatch`若要启用 Visual Basic 6 COM 客户端接收事件通知。 默认情况下，如果接口未用标记<xref:System.Runtime.InteropServices.InterfaceTypeAttribute>属性，它作为双重接口公开。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  若要修复与此规则的冲突，添加或修改<xref:System.Runtime.InteropServices.InterfaceTypeAttribute>特性，使其值设为使用指定的所有接口 InterfaceIsIDispatch<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>属性。  
@@ -54,5 +52,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-rules"></a>相关的规则  
  [CA1408：请不要使用 AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [与非托管代码交互操作](/dotnet/framework/interop/index)

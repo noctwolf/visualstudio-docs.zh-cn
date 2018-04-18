@@ -1,12 +1,10 @@
 ---
-title: "Ca1800： 避免进行不强制不必要地转换 |Microsoft 文档"
-ms.custom: 
+title: Ca1800： 避免进行不强制不必要地转换 |Microsoft 文档
+ms.custom: ''
 ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1800
 - DoNotCastUnnecessarily
@@ -14,19 +12,19 @@ helpviewer_keywords:
 - DoNotCastUnnecessarily
 - CA1800
 ms.assetid: b79a010a-6627-421e-8955-6007e32fa808
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - VB
 - CSharp
-ms.workload: multiple
-ms.openlocfilehash: 260ced17d030d083854022ff3d1812184700d20d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 81a8260b63e5f2206a124e98db9d519bd3dda6fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800：避免进行不必要的强制转换
 |||  
@@ -62,6 +60,6 @@ ms.lasthandoff: 12/22/2017
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
  [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
 [作为 （C# 参考）](/dotnet/csharp/language-reference/keywords/as)   
 [是 （C# 参考）](/dotnet/csharp/language-reference/keywords/is)

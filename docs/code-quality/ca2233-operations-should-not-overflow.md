@@ -1,12 +1,10 @@
 ---
-title: "CA2233： 运算不应溢出 |Microsoft 文档"
-ms.custom: 
+title: CA2233： 运算不应溢出 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - OperationsShouldNotOverflow
 - CA2233
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - OperationsShouldNotOverflow
 - CA2233
 ms.assetid: 3a2b06ba-6d1b-4666-9eaf-e053ef47ffaa
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f5d048476997517a835337b568930367f97c2c92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 35fafef574f7d72d54e4e9c44b1b1091ccb0de7b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233：运算不应溢出
 |||  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="example-of-a-violation"></a>冲突的示例  
   
 ### <a name="description"></a>描述  
- 下面的示例中的方法操作违反了此规则的整数。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]需要**删除**整数溢出选项禁用此激发。  
+ 下面的示例中的方法操作违反了此规则的整数。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 需要**删除**整数溢出选项禁用此激发。  
   
 ### <a name="code"></a>代码  
  [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
@@ -114,7 +112,7 @@ End Sub
   
 3.  选择**检查算术上溢/下溢**单击**确定**。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.OverflowException?displayProperty=fullName>   
  [C# 运算符](/dotnet/csharp/language-reference/operators/index)   
  [Checked and Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked)

@@ -1,13 +1,10 @@
 ---
-title: "分配挂钩函数 |Microsoft 文档"
-ms.custom: 
+title: 分配挂钩函数 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - allocation hooks
 - hooks, allocation
 ms.assetid: 6bfbdb65-8cb1-4c21-8c45-7194a2b77c1e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe5ac5ec207bb52884c097d1562a85a3414ba7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b87c41a6a31a2c66663ed121204611b4964b9c4d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="allocation-hook-functions"></a>分配挂钩函数
 分配挂钩函数，使用安装[_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook)，每次分配、 重新分配或释放内存时调用。 该类型的挂钩可用于很多不同用途。 例如，可用它测试应用程序处理内存不足情况的方式，检查分配模式，或记录分配信息以供将来分析。  
@@ -58,6 +54,6 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
   
  当运行时库调用您的挂钩， *nAllocType*参数用于指示哪些分配即将执行的操作 (**_HOOK_ALLOC**， **_HOOK_REALLOC**，或**_HOOK_FREE**)。 在释放或重新分配的情况下，`pvData` 包含指向将释放块的用户主题的指针。 但在分配情况下，该指针为空，因为分配尚未发生。 剩余的自变量包含所讨论分配的大小、其块类型、与它关联的顺序请求编号，以及指向在其中进行分配的文件名和行号的指针（如果有）。 挂钩函数执行所有分析及其他任务其作者需要后，它必须返回**TRUE**，指示分配操作可以继续，或**FALSE**，以指示，操作应失败。 检查目前为止，分配的内存量，则返回此类型的简单挂钩可能**FALSE**如果该数量超出小限制。 然后应用程序将经历分配错误，这种错误通常只会在可用内存极为不足时发生。 较复杂的挂钩可以跟踪分配模式，分析内存使用，或在特定情况发生时进行报告。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [分配挂钩和 C 运行时内存分配](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [编写调试挂钩函数](../debugger/debug-hook-function-writing.md)   

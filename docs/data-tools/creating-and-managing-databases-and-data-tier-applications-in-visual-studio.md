@@ -1,28 +1,25 @@
 ---
-title: "数据库项目、 服务器项目，和 Visual Studio 中的 DAC 项目 |Microsoft 文档"
-ms.custom: 
+title: 数据库项目、 服务器项目，和 Visual Studio 中的 DAC 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - managing change, databases
 - database features of Visual Studio, managing change
 - databases, managing change
 - managing change, database servers
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
-caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 8e599e1d309ab254c2b2d5a3a490c0cd912b8823
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: baca17712d6cf39753dab51c60fee901c0ea08ca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>数据库项目和 Visual Studio 中的数据层应用程序  
 你可以使用数据库项目创建新数据库，新数据层应用程序 (Dac)，并更新现有数据库和数据层应用程序。 数据库项目和 DAC 项目，可以将版本控制和项目管理技术应用于数据库开发工作中，基本相同的方法将这些技术应用于托管或本机代码中。 您可以帮助开发团队管理对数据库和数据库服务器的更改通过创建*DAC 项目*，*数据库项目*，或*服务器项目*并将其放置在版本控制。 你的团队成员可以然后签出文件，以使、 生成和测试中的更改*独立的开发环境*，或沙盒之前与团队共享它们。 为了帮助确保代码质量，团队可完成和部署到生产环境所做的更改之前在过渡环境中测试的数据库的特定版本的所有更改。  

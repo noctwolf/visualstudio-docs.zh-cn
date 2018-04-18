@@ -1,12 +1,10 @@
 ---
-title: "CA1304： 指定 CultureInfo |Microsoft 文档"
-ms.custom: 
+title: CA1304： 指定 CultureInfo |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - SpecifyCultureInfo
 - CA1304
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - SpecifyCultureInfo
 - CA1304
 ms.assetid: b912d76a-54fd-4c93-b25d-16491e0ae319
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 932ac7e8f731974896991cea5ae504e452e9a036
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ee1a90d2499cc0a22f695cdf0840bd1c9b50b941
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304：指定 CultureInfo
 |||  
@@ -62,7 +60,7 @@ ms.lasthandoff: 12/22/2017
  则可以安全地禁止显示此规则的警告时某些默认的区域性/格式提供程序正确的选择，并且该代码可维护性不重要的开发优先级。  
   
 ## <a name="example"></a>示例  
- 在下面的示例中，`BadMethod`导致冲突的此规则的两种情况。 `GoodMethod`通过将固定区域性传递到 System.String.Compare，更正第一次冲突并通过将传递到当前区域性更正第二个冲突<xref:System.String.ToLower%2A>因为`string3`向用户显示。  
+ 在下面的示例中，`BadMethod`导致冲突的此规则的两种情况。 `GoodMethod` 通过将固定区域性传递到 System.String.Compare，更正第一次冲突并通过将传递到当前区域性更正第二个冲突<xref:System.String.ToLower%2A>因为`string3`向用户显示。  
   
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]  
   
@@ -78,5 +76,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-rules"></a>相关的规则  
  [CA1305：指定 IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
 [使用 CultureInfo 类](/dotnet/standard/globalization-localization/globalization#Cultures)  

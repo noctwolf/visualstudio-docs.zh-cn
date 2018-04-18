@@ -1,11 +1,8 @@
 ---
-title: "服务引用疑难解答 |Microsoft 文档"
-ms.custom: 
+title: 服务引用疑难解答 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - service references [Visual Studio], troubleshooting
 - WCF services, troubleshooting
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b57547aa9a5fa3c036a534c85cb55bb1749a421b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 827533f76f8807cca146b9ea0b7483cb8fb84caf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-service-references"></a>服务引用疑难解答
 本主题列出了你正在使用时可能发生的常见问题[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]或[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]中引用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -33,7 +30,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="error-returning-data-from-a-service"></a>从服务返回数据时出错  
  当您返回`DataSet`或`DataTable`从一种服务，你可能会收到"已超过为传入消息的最大大小配额"异常。 默认情况下，`MaxReceivedMessageSize`对于某些绑定的属性设置为一个相对较小的值，以降低遭受拒绝服务攻击。 您可以增大此值以避免此异常。 有关详细信息，请参阅<xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>。  
   
- 若要修复此错误：  
+ 修复此错误的方法：  
   
 1.  在**解决方案资源管理器**，双击 app.config 文件以打开它。  
   
@@ -42,14 +39,14 @@ ms.lasthandoff: 12/22/2017
 ## <a name="cannot-find-a-service-in-my-solution"></a>找不到我的解决方案中的服务  
  当你单击**发现**按钮**添加服务引用**对话框中，解决方案中的一个或多个 WCF 服务库项目并不出现在服务列表。 如果服务库已添加到解决方案，但尚未编译便会出现此问题。  
   
- 若要修复此错误：  
+ 修复此错误的方法：  
   
 -   在**解决方案资源管理器**，右键单击 WCF 服务库项目，然后单击**生成**。  
   
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>通过远程桌面访问服务时出错  
  如果用户访问 Web 承载的 WCF 服务通过远程桌面连接和用户不具有管理权限，则使用 NTLM 身份验证。 如果用户不具有管理权限，用户可能会收到以下错误消息:"HTTP 请求得到具有客户端身份验证方案匿名身份验证。 从服务器收到的身份验证标头已 NTLM。"  
   
- 若要修复此错误：  
+ 修复此错误的方法：  
   
 1.  在网站项目中，打开**属性**页。  
   
@@ -99,5 +96,5 @@ ms.lasthandoff: 12/22/2017
   
 4.  单击**确定**关闭**Internet 选项**对话框。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

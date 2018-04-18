@@ -1,27 +1,25 @@
 ---
-title: "匿名方法和代码分析 |Microsoft 文档"
-ms.custom: 
+title: 匿名方法和代码分析 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - methods, anonymous
 - code analysis, anonymous methods
 - anonymous methods, code analysis
 ms.assetid: bf0a1a9b-b954-4d46-9c0b-cee65330ad00
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0c7016145d5d34c9077f45f2dbf6c1507aa0e6fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ced736f74be4216a069b27aed096989a89cf518d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>匿名方法和代码分析
 *匿名方法*是没有名称的方法。 匿名方法是最常用于将代码块作为委托参数传递。  
@@ -153,5 +151,5 @@ class Class
   
  你可以解决此问题的两种方式之一。 你可以声明**anonymousMethod**公共构造函数中的所有构造函数链。 或者，你无法将其声明中初始化方法调用的所有构造函数。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

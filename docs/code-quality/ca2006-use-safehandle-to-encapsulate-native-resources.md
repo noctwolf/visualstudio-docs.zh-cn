@@ -1,12 +1,10 @@
 ---
-title: "CA2006： 使用 SafeHandle 封装本机资源 |Microsoft 文档"
-ms.custom: 
+title: CA2006： 使用 SafeHandle 封装本机资源 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2006
 - UseSafeHandleToEncapsulateNativeResources
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - UseSafeHandleToEncapsulateNativeResources
 - CA2006
 ms.assetid: a71950bd-bcc1-463d-b1f2-5233bc451456
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d70c453e502dd0a7f4eda2e9247dbc3ec3229ebe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0fdef78fdad92eb08012a474afff5c4c8c4d7ab8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006：使用 SafeHandle 封装本机资源
 |||  
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
  在这种情况下，安全性或可靠性问题还会存在如果允许对多线程的访问`IntPtr`和释放资源所表示的一种方法`IntPtr`提供。 这些问题涉及回收`IntPtr`在资源释放时同时使用的资源正在进行另一个线程上的值。 这可能导致争用条件，其中一个线程可以读取或写入错误的资源与关联的数据。 例如，如果你的类型将作为 OS 句柄存储`IntPtr`并允许用户请同时调用**关闭**和任何其他方法使用该句柄，同时和不同步的某种类型的情况下，你的代码有回收的句柄问题。  
   
- 此句柄回收问题可能导致数据损坏和，通常情况下，安全漏洞。 `SafeHandle`和其同级类<xref:System.Runtime.InteropServices.CriticalHandle>提供一种机制来封装对资源的本机句柄，以便可以避免此类线程处理问题。 此外，你可以使用`SafeHandle`和其同级类`CriticalHandle`有关其他线程处理问题，例如，若要仔细控制对本机方法的调用中包含的本机句柄的副本的托管对象的生存期。 在此情况下，你通常可以消除对调用`GC.KeepAlive`。 使用时产生性能系统开销也`SafeHandle`和一定程度上， `CriticalHandle`，通常可以通过仔细设计减少。  
+ 此句柄回收问题可能导致数据损坏和，通常情况下，安全漏洞。 `SafeHandle` 和其同级类<xref:System.Runtime.InteropServices.CriticalHandle>提供一种机制来封装对资源的本机句柄，以便可以避免此类线程处理问题。 此外，你可以使用`SafeHandle`和其同级类`CriticalHandle`有关其他线程处理问题，例如，若要仔细控制对本机方法的调用中包含的本机句柄的副本的托管对象的生存期。 在此情况下，你通常可以消除对调用`GC.KeepAlive`。 使用时产生性能系统开销也`SafeHandle`和一定程度上， `CriticalHandle`，通常可以通过仔细设计减少。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  将转换`IntPtr`使用情况与`SafeHandle`以便安全地管理对本机资源的访问。 请参阅<xref:System.Runtime.InteropServices.SafeHandle>示例的参考主题。  
@@ -49,5 +47,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
  不应禁止显示此警告。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.IDisposable>

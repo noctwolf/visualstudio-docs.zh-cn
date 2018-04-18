@@ -1,23 +1,21 @@
 ---
-title: "混合最少量规则规则集 |Microsoft 文档"
-ms.custom: 
+title: 混合最少量规则规则集 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 430984d0f34c7596e78408d4138cd7506fdc7ba3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 783e88e22456f4babffa8d6f1748385c6dac819e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>“混合最少量规则”规则集
 Microsoft 混合最少量规则专注于你支持公共语言运行时，包括潜在安全漏洞和应用程序崩溃的 c + + 项目中的最关键问题。 应包括在任何自定义规则集中设置为 c + + 项目支持公共语言运行时创建此规则。  
@@ -154,7 +152,7 @@ Microsoft 混合最少量规则专注于你支持公共语言运行时，包括�
 |[C28305](../code-quality/c28305.md)|在分析标记时发现错误。|  
 |[C28350](../code-quality/c28350.md)|批注介绍了无条件适用的情形。|  
 |[C28351](../code-quality/c28351.md)|批注介绍了在条件中无法使用动态值（变量）的位置。|  
-|[CA1001 具有](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|具有可释放字段的类型应该是可释放的|  
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|具有可释放字段的类型应该是可释放的|  
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|移除空终结器|  
 |[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|应释放可释放的字段|  
 |[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|重写 ValueType.Equals 时应重载相等运算符|

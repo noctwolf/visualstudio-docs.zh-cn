@@ -1,11 +1,8 @@
 ---
-title: "将 Visual Studio 中的绑定对象 |Microsoft 文档"
-ms.custom: 
+title: 将 Visual Studio 中的绑定对象 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - object binding
 - binding, to objects
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 64031303545f293d9274158eeb1527ba26676751
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 71922f3fb6dffb63c1a6c5ed1b12e5cbce402323
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-objects-in-visual-studio"></a>将 Visual Studio 中的绑定对象
 Visual Studio 提供用于处理用作你的应用程序中的数据源的自定义对象的设计时工具。 如果你想要将绑定到 UI 控件的对象中存储数据库中的数据，建议的方法是使用实体框架生成的类。 实体框架自动生成的所有样本更改跟踪代码，这意味着，对本地对象的任何更改自动保存到数据库时在 DbSet 对象上调用 AcceptChanges。 有关详细信息，请参阅[实体框架文档](https://ef.readthedocs.org/en/latest/)。  
@@ -142,5 +139,5 @@ Visual Studio 提供用于处理用作你的应用程序中的数据源的自定
  [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
  [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)
