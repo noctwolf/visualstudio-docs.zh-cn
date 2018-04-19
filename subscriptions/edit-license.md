@@ -28,7 +28,7 @@ ms.lasthandoff: 04/06/2018
 
    ![选择要对其进行编辑的订阅者](_img\edit-license\select-subscriber.png)
 
-可以更新订阅者的名字、姓氏、国家、语言和下载。 编辑订阅者的信息，然后单击“保存”。
+可以更新订阅者的名字、姓氏、国籍、语言和下载。 编辑订阅者的信息，然后单击“保存”。
 
    ![编辑订阅者详细信息](_img\edit-license\edit-subscriber.png)
 
