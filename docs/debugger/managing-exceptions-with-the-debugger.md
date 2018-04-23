@@ -1,13 +1,9 @@
 ---
-title: "管理 Visual Studio 调试器的异常 |Microsoft 文档"
-ms.custom: 
+title: 管理 Visual Studio 调试器的异常 |Microsoft 文档
+ms.custom: ''
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -33,17 +29,16 @@ helpviewer_keywords:
 - native run-time checks
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 978c78ba68460a2f038d85afb92246275acfb9ef
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 4ed17cc303bfb7194c7f438e32afb1be7f484eb5
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>管理 Visual Studio 中的调试器异常
 
@@ -145,7 +140,7 @@ ms.lasthandoff: 01/29/2018
   
  ![还原异常设置中的默认值](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a>让调试器在遇到用户未经处理异常时继续  
+##  <a name="BKMK_UserUnhandled"></a> 让调试器在遇到用户未经处理异常时继续  
  如果正在使用 [Just My Code](../debugger/just-my-code.md)调试 .NET 或 JavaScript 代码，则对于未在用户代码中进行处理但在其他地方进行了处理的异常，可以让调试程序不要执行中断操作。  
   
 1.  在 **“异常设置”** 窗口中，通过在窗口中右键单击打开上下文菜单，然后选择 **“显示列”**。 （如果已禁用 **“仅我的代码”**，则将看不到此命令。）  
@@ -156,7 +151,7 @@ ms.lasthandoff: 01/29/2018
   
  例如，ASP.NET Web 应用程序通过将异常转换为 HTTP 500 状态代码来处理异常（[ASP.NET API 中的异常处理](http://www.asp.net/web-api/overview/error-handling/exception-handling)），该方法可能无法帮助你确定异常的源。 在下面的示例中，用户代码对引发 `String.Format()` 的 <xref:System.FormatException>进行调用。 异常中断如下所示：  
   
- ![位置中断用户 &#45; 分隔符异常](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![将在用户处中断&#45;分隔符异常](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ## <a name="add-and-delete-exceptions"></a>添加和删除异常  
  可以添加和删除异常。 通过选择异常并单击 **“异常设置”** 工具栏上的 **“删除”** 按钮，或右键单击异常并从上下文菜单选择 **“删除”** ，可以从任何类别删除任何类型的异常。 删除异常与取消选中异常的效果一样，即调试程序在该异常被引发时将不会执行中断操作。  
@@ -190,7 +185,7 @@ public class GenericException<T> : Exception
 你可以设置条件中的异常上**异常设置**对话框。 当前支持的条件包括用于包含或排除异常的模块名称。 通过将模块名称设置为条件，你可以选择仅在特定代码模块上异常中断或可以避免在特定的模块上的换行。
 
 > [!NOTE]
-> 将条件添加到异常是中的新增功能[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+> 将条件添加到异常是中的新增功能 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 若要添加条件异常，请选择**编辑条件**图标异常设置对话框框中或右键单击异常并选择**编辑条件**。
 

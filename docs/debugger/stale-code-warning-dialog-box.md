@@ -1,13 +1,9 @@
 ---
-title: "陈旧代码警告对话框中 |Microsoft 文档"
-ms.custom: 
+title: 陈旧代码警告对话框中 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.ENC.stalecode
 dev_langs:
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - warnings, Stale Code Warning dialog box
 - Edit and Continue, stale code
 ms.assetid: 594b894c-e652-4e13-a980-9909473d5712
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77fbbd558e424103b8d6ecc69e3724c9011365c1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ec80baa04529bcc6a9705d1c8df03e120e6bc64e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="stale-code-warning-dialog-box"></a>“陈旧代码警告”对话框
 此对话框中显示时所做更改为本机代码**编辑并继续**操作未能立即应用。 因此，当前堆栈帧中的某些本机代码是过时的、陈旧的。 有关详细信息，请参阅[如何： 使用陈旧代码](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4)。  

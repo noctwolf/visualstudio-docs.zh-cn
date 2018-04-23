@@ -1,12 +1,9 @@
 ---
-title: "使用 DebuggerTypeProxy 特性 |Microsoft 文档"
-ms.custom: 
+title: 使用 DebuggerTypeProxy 特性 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - DebuggerTypeProxyAttribute class
 - DebuggerTypeProxy attribute
 ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36e80508ce0febc7678585faf6518bf6b838a289
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: af0f2521b2276d28b07a4712009c4c4ae85a4d2d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>使用 DebuggerTypeProxy 特性
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> 指定类型的代理或替身，并更改类型在调试器窗口中的显示方式。 查看具有代理的变量时，代理将代替原始类型出现在**显示**。 调试器变量窗口仅显示代理类型的公共成员。 不会显示私有成员。  

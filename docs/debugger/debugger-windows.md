@@ -2,24 +2,19 @@
 title: 调试器在 Visual Studio 中的 Windows |Microsoft 文档
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
-caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c792594920cff47dfeac8331a73938a2512dcf
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: fa0c7fb04b05ef1ec1c83fe744458fdcc6ca3743
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>了解 Visual Studio 中的调试器窗口
 
@@ -53,6 +48,6 @@ ms.lasthandoff: 04/08/2018
 |反汇编|CTRL+ALT+D|[如何：使用“反汇编”窗口](../debugger/how-to-use-the-disassembly-window.md)|
 |寄存器|CTRL+ALT+G|[如何：使用“寄存器”窗口](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 [调试器基础知识](../debugger/debugger-basics.md)

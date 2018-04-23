@@ -1,12 +1,9 @@
 ---
-title: "如何： 调用堆栈窗口中的缺少本机框架时跳出托管代码 |Microsoft 文档"
-ms.custom: 
+title: 如何： 调用堆栈窗口中的缺少本机框架时跳出托管代码 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -21,18 +18,17 @@ helpviewer_keywords:
 - stepping, out of managed code
 - managed code, stepping out of
 ms.assetid: 97cdd2a8-02a9-4a06-a5b1-c92b1e431979
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 7599c99c9375cda7b5f24432db8c137c5c4357df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e21d45cd65fc6bc6a66f2f7c698952f0cdd788b9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>如何：在“调用堆栈”窗口中缺少本机框架时跳出托管代码
 如果代码中有中不可见的本机框架**调用堆栈**窗口中，托管代码中跳出会产生意外的结果。 作为一种解决方法，你可以使用断点来代替**单步跳出**。  

@@ -1,28 +1,25 @@
 ---
-title: "在模拟器中运行 UWP 应用 |Microsoft 文档"
-ms.custom: 
+title: 在模拟器中运行 UWP 应用 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
-caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 99881b657f6d3cb6877c7ce6d1fbf80f4eb1d731
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模拟器中运行的 UWP 应用
 适用于 UWP 应用的 Visual Studio 模拟器是一个桌面应用程序，可模拟 UWP 应用。 通常情况下，你将想要在本地计算机、 连接的设备或远程计算机上进行调试。 但是，在某些情况下，你可能想要使用的 Visual Studio 模拟器可以模拟不同的物理屏幕大小和分辨率。 此外可以模拟常用的触摸和旋转事件，并模拟网络连接属性。
@@ -99,7 +96,7 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 >  可在应用程序中保存位图的缩放版本，而 Windows 将加载适合当前比例的图像。 有关详细信息，请参阅[设计和用户界面简介](/windows/uwp/layout/design-and-ui-intro)。 但是，如果更改模拟器分辨率，以使 Windows 选取不同图像以适合该分辨率，则必须停止再重新启动调试会话才能查看新图像。  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>捕获的应用程序提交到 Microsoft 应用商店的屏幕快照  
+##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> 捕获的应用程序提交到 Microsoft 应用商店的屏幕快照  
  在提交到 Microsoft 应用商店应用程序时，必须包括应用的屏幕快照。  
   
 > [!NOTE]

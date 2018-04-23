@@ -1,12 +1,9 @@
 ---
-title: "部署 64 位应用程序的先决条件 |Microsoft 文档"
-ms.custom: 
+title: 部署 64 位应用程序的先决条件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - 64-bit programming [Visual Studio]
 - 64-bit applications [Visual Studio]
 ms.assetid: 87399e20-5510-41e4-b5b7-4a87c5773f21
-caps.latest.revision: "23"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 6e0134b0a0a6151b6ae6544f1ad8272a6d4cac47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ed3ffb52e73be1f86b9ae4be67d130807fc7e238
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>部署 64 位应用程序的必备组件
 ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台是**x86**对于 32 位平台， **x64**机支持 AMD64 和 EM64T 指令集和**Itanium**在 64 位 Itanium 处理器。  

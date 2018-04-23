@@ -1,34 +1,30 @@
 ---
-title: "Visual Studio 中的 JavaScript 控制台命令 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 中的 JavaScript 控制台命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
 - debugging JavaScript, console [UWP apps]
-caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 1f2d6f356d4e886488f4b6558c6cfb92d7b9c974
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 2c0151bb0810529f0dad36d72b80a13ae519e8b0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 控制台命令
   
  你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 有关演示如何使用该窗口的示例，请参阅[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主题中的信息适用于 UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 Cordova 应用中受支持的控制台命令的信息，请参阅[调试应用](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 有关在 Internet Explorer F12 工具中使用控制台的信息，请参阅 [本主题](http://msdn.microsoft.com/library/ie/dn255006.aspx)。  
   
- 如果 JavaScript 控制台窗口已关闭，你可以打开它通过选择在 Visual Studio 中调试时**调试** > **Windows** > **JavaScript控制台**。  
+ 如果“JavaScript 控制台”窗口已关闭，可在 Visual Studio 中调试时，单击 **“调试”** > **“窗口”** > **“JavaScript 控制台”**。  
   
 > [!NOTE]
 >  如果该窗口在调试会话期间不可用，请确保在项目的“调试”属性中将调试器类型设置为 **“脚本”** 。  
@@ -89,7 +85,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>检查“JavaScript 控制台”窗口中的对象  
  使用“JavaScript 控制台”窗口时，你可以与范围内的任何对象进行交互。 若要检查控制台窗口中超出范围的对象，请在代码中使用 `console.log` 、 `console.dir`或其他命令。 当对象在范围内时，你还可以在代码中设置断点（**“断点”** > **Insert “断点”**），从控制台窗口与对象进行交互。  
   
-##  <a name="ConsoleLog"></a>格式化 console.log 输出  
+##  <a name="ConsoleLog"></a> 格式化 console.log 输出  
  若将多个参数传递给 `console.log`，则控制台将这些参数视为数组并连接输出。  
   
 ```javascript  

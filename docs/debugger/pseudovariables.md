@@ -1,12 +1,9 @@
 ---
-title: "伪变量 |Microsoft 文档"
-ms.custom: 
+title: 伪变量 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], pseudovariables
 - pseudovariables
 ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
-caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f2bde32d67bb2e106d058c5a9e62801940d3df25
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 256dd9ae424ffbfab08ec7e8a405528188bb756f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中的伪变量
 伪变量是用于在变量窗口中显示某些信息的术语或**快速监视**对话框。 你可以像输入普通变量那样输入伪变量。 但伪变量不是变量，它不与程序中的变量名相对应。  
@@ -49,10 +46,10 @@ $handles
 |`$env`|在字符串查看器中显示环境块。|  
 |`$cmdline`|显示已启动程序的命令行字符串。|  
 |`$pid`|显示进程 ID。|  
-|`$` *registername*<br /><br /> 或<br /><br /> `@` *registername*|显示寄存器的内容*寄存器名*。<br /><br /> 通常，只需输入寄存器名便可以显示寄存器的内容。 仅在寄存器名重载变量名时才需要使用此语法。 如果寄存器名与当前范围内的某个变量名同名，则调试器将该名称解释为变量名。 即，当`$`*寄存器名*或`@`*寄存器名*会非常方便。|  
+|`$` *寄存器名*<br /><br /> 或<br /><br /> `@` *寄存器名*|显示寄存器的内容*寄存器名*。<br /><br /> 通常，只需输入寄存器名便可以显示寄存器的内容。 仅在寄存器名重载变量名时才需要使用此语法。 如果寄存器名与当前范围内的某个变量名同名，则调试器将该名称解释为变量名。 即，当`$`*寄存器名*或`@`*寄存器名*会非常方便。|  
 |`$clk`|以时钟形式显示时间。|  
 |`$user`|显示一个结构，在该结构中含有应用程序运行于的帐户的帐户信息。 出于安全原因，将不显示密码信息。|  
-|`$exceptionstack`|显示当前 Windows 运行时异常的堆栈跟踪。 `$ exceptionstack`仅在 UWP 应用中有效。 C++ 异常和 SHE 异常不支持 `$ exceptionstack`|  
+|`$exceptionstack`|显示当前 Windows 运行时异常的堆栈跟踪。 `$ exceptionstack` 仅在 UWP 应用中有效。 C++ 异常和 SHE 异常不支持 `$ exceptionstack`|  
 |`$ReturnValue`|显示 .NET Framework 方法的返回值。|  
   
  在 C# 和 Visual Basic 中，可使用的伪变量如下表所示：  

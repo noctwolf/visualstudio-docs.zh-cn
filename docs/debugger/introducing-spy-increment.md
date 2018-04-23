@@ -1,27 +1,22 @@
 ---
-title: "Spy + + 简介 |Microsoft 文档"
-ms.custom: 
+title: Spy + + 简介 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++
 ms.assetid: 733b514b-63a9-402d-89aa-4f0416766655
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb12ef13e73e33b213d2b8ca79c2439b517fbda9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 826ef03bcca176d095c2110ed14227bb5faa2dbd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="introducing-spy"></a>Spy++ 简介
 可利用 Spy++ 执行以下任务：  

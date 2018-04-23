@@ -1,28 +1,25 @@
 ---
-title: "调试应用程序 |Microsoft 文档"
-ms.custom: 
+title: 调试应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: f7f08402-610e-47f0-ba10-575dd395a0f0
-caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cb0ed99e341e89aaaa295d2fc4a4cf25f726e2f5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d1ed00ca584bc9dce703585e4a1630c62d6496f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-applications"></a>调试应用程序
 以下各节介绍了对不同类型的应用程序进行调试的信息。 应用程序类型和语言不同，需要的设置和技术也会不同，并且需要调试的问题也不同。  

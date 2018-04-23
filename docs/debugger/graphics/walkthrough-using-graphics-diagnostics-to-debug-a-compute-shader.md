@@ -1,23 +1,20 @@
 ---
-title: "演练： 使用图形诊断来调试计算着色器 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用图形诊断来调试计算着色器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ef73c45b39c638b2dfc1f88be3323d083efa8493
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b26772dd0cb74d90a8b7a401961fd33f86521a82
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>演练：使用图形诊断来调试计算着色器
 本演练演示如何使用 Visual Studio 图形诊断工具来调查生成错误结果的计算着色器。  
@@ -56,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  检查**图形事件列表**呈现数据集的 draw 事件。 若要简化此过程，请输入`Draw`中**搜索**右上角的框**图形事件列表**窗口。 这将筛选列表，使其仅包含在其标题中具有的“Draw”的事件。 在此方案中，你将发现发生了以下 draw 事件：  
   
-     ![事件列表 &#40; EL &#41;显示 draw 事件。] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+     ![事件列表&#40;EL&#41;显示 draw 事件。] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
 3.  查看图形日志文档选项卡中的呈现目标时，请浏览每个 draw 事件。  
   
@@ -102,11 +99,11 @@ ms.lasthandoff: 12/22/2017
   
 6.  检查力计算步骤的计算着色器源代码。 在此方案中，你可以确定此处为错误源。  
   
-     ![调试 ForceCS &#95;简单的计算着色器。] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
+     ![调试 ForceCS&#95;简单计算着色器。] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
   
  确定错误的位置之后，可以停止调试并修改计算着色器源代码，以正确地计算相互作用的粒子之间的距离。 在此方案中，只需将行 `float2 diff = N_position + P_position;` 更改为 `float2 diff = N_position - P_position;`：  
   
- ![已更正的计算 &#45; 着色器代码。] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
+ ![已更正的计算&#45;着色器代码。] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
   
  在此方案中，因为计算着色器是在运行时进行编译的，所以在更改后只需重新启动该应用便可观察更改对模拟的影响。 无需重新生成应用。 运行应用时，可发现此时模拟运行正常。  
   

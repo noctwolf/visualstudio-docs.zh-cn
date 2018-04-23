@@ -1,12 +1,9 @@
 ---
-title: "可视化工具 API 参考 |Microsoft 文档"
-ms.custom: 
+title: 可视化工具 API 参考 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - reference, visualizer APIs
 - visualizers, API reference
 ms.assetid: b9ff4ed0-9e80-49df-9016-a81189319afd
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 064c16fee5615750df32b02e660429e8fceaec86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5b4f05611f02abfd754ec2f71fd60a8598603030
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="visualizer-api-reference"></a>可视化工具 API 参考
 可视化工具 API 是专为希望为 Visual Studio 调试器编写可视化工具的用户而提供的。 可视化工具是一种小应用程序，它扩展了 Visual Studio 调试器用户界面的功能。 可视化工具可以显示 （和 （可选） 编辑） 可视化工具旨在为其特定类型的数据对象。  

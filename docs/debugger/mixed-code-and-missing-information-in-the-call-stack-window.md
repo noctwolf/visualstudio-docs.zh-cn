@@ -1,12 +1,9 @@
 ---
-title: "混合代码与丢失信息中调用堆栈窗口 |Microsoft 文档"
-ms.custom: 
+title: 混合代码与丢失信息中调用堆栈窗口 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -23,16 +20,16 @@ helpviewer_keywords:
 - mixed-mode debugging, call stack
 - stepping, out of managed code
 ms.assetid: dd628427-e8d6-4fc2-b524-9d6393ea5376
-caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a234529f13217cabf59a8d3827427e2f5341fb53
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b2733cbf5d9b833ac23ee573e1f39e9c8750224
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>“调用堆栈”窗口中的混合代码与丢失信息
 由于托管代码和本机代码的调用堆栈之间存在差异，因此对于混合的代码类型，调试器不能始终显示完整的调用堆栈。 当本机代码调用托管的代码时，你可能注意到以下差异在**调用堆栈**窗口：  

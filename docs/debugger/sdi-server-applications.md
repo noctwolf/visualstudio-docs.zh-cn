@@ -1,12 +1,9 @@
 ---
-title: "SDI 服务器应用程序 |Microsoft 文档"
-ms.custom: 
+title: SDI 服务器应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - SDI server applications
 - SDI server applications, debugging
 ms.assetid: 09713718-1376-4753-b119-26f36639693e
-caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: feec570217240c7b7dd7d71b7f40987b756869de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9047c9b39bad5f4f790327b5ee65b4de688db9d8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="sdi-server-applications"></a>SDI 服务器应用程序
 如果你正在调试的 SDI 服务器应用程序，你必须指定`/Embedding`或`/Automation`中**命令行自变量**中的属性*项目*属性页对话框中，C/c + +，C# 中，或Visual Basic 项目。  

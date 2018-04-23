@@ -1,13 +1,9 @@
 ---
-title: "错误： 无法启动 Web 服务器上调试 |Microsoft 文档"
-ms.custom: 
+title: 错误： 无法启动 Web 服务器上调试 |Microsoft 文档
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -27,17 +23,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: e58f8152d5c927271161bbf9615b1dfe3944e6dd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>错误：无法在 Web 服务器上启动调试
 
@@ -59,32 +54,32 @@ ms.lasthandoff: 01/29/2018
 - [调试器无法连接到远程计算机](#cannot_connect)
 - [请参阅有关常见配置错误的帮助。运行在调试器外部的网页，可能会提供进一步的信息。](#see_help)
 
-## <a name="IISlist"></a>IIS 不会列出网站相匹配的启动 url
+## <a name="IISlist"></a> IIS 不会列出网站相匹配的启动 url
 
 - 重新启动 Visual Studio 以管理员身份，然后重试调试。 （某些 ASP.NET 调试方案需要提升的权限。）
 
     你可以配置 Visual Studio 始终以管理员身份运行，请右键单击 Visual Studio 快捷方式图标，选择**属性 > 高级**，然后选择要始终以管理员身份运行。
 
-## <a name="web_server_config"></a>Web 服务器配置不正确
+## <a name="web_server_config"></a> Web 服务器配置不正确
 
 - 请参阅[错误： web 服务器配置不正确](../debugger/error-the-web-server-is-not-configured-correctly.md)。
 
-## <a name="unabletoconnect"></a>无法连接到 web 服务器
+## <a name="unabletoconnect"></a> 无法连接到 web 服务器
 
 - 是否在同一台计算机上运行 Visual Studio 和 Web 服务器和调试使用**F5** (而不是**附加到进程**)？ 打开项目属性，并确保将项目配置为连接到正确的 Web 服务器并启动 URL。 (打开**属性 > Web > 服务器**或**属性 > 调试**具体取决于你的项目类型。 对于 Web 窗体项目，打开**属性页 > 启动选项 > 服务器**。)
 
 - 否则为请重新启动应用程序池，然后重置 IIS。 有关详细信息，请参阅[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
 
-## <a name="webservertimeout"></a>Web 服务器未及时响应
+## <a name="webservertimeout"></a> Web 服务器未及时响应
 
 - 重置 IIS，然后重试调试。 多个调试器实例可能会附加到 IIS 进程;重置将终止它们。 有关详细信息，请参阅[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
 
-## <a name="msvsmon"></a>Microsoft visual studio 远程调试 monitor(msvsmon.exe) 似乎没有在远程计算机上运行
+## <a name="msvsmon"></a> Microsoft visual studio 远程调试 monitor(msvsmon.exe) 似乎没有在远程计算机上运行
 
 - 如果你正在调试远程计算机上，请确保你具有[安装且正在运行远程调试器](../debugger/remote-debugging.md)。 如果该消息指出了防火墙，请确保[更正防火墙中的端口](../debugger/remote-debugger-port-assignments.md)处于打开状态，尤其当你在使用第三方防火墙。
 - 如果你使用的主机文件，请确保配置正确。 例如，如果调试使用**F5** (而不是**附加到进程**)，主机文件中必须包含相同的项目 URL 如下所示项目属性中，**属性 > Web > 服务器**或**属性 > 调试**，具体取决于项目类型。
 
-## <a name="server_error"></a>远程服务器返回了错误
+## <a name="server_error"></a> 远程服务器返回了错误
 
 检查你[IIS 日志文件](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0)错误子代码和其他信息，以及此 IIS 7[博客文章](https://blogs.iis.net/tomkmvp/troubleshoot-a-403)。
 
@@ -93,24 +88,24 @@ ms.lasthandoff: 01/29/2018
 - 不可用 (503) 服务器。 由于错误或配置更改，应用程序池可能已停止。 重新启动应用程序池。
 - (404) 找不到。 请确保应用程序池配置为 ASP.NET 的正确版本。
 
-## <a name="aspnet"></a>无法启动 ASP.NET 调试
+## <a name="aspnet"></a> 无法启动 ASP.NET 调试
 
 - 重新启动应用程序池和重置 IIS。 有关详细信息，请参阅[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
 - 如果进行 URL 重写时，测试与任何 URL 重写基本 web.config。 请参阅**注意**有关 URL 重写中的模块[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
 
-## <a name="cannot_connect"></a>调试器无法连接到远程计算机
+## <a name="cannot_connect"></a> 调试器无法连接到远程计算机
 
 如果正在进行本地调试，因为 Visual Studio 是一个 32 位应用程序中，因此它使用 64 位版远程调试器来调试 64 位应用程序可能发生此错误。 打开项目属性，并确保将项目配置为连接到正确的 Web 服务器和 URL。 (打开**属性 > Web > 服务器**或**属性 > 调试**具体取决于你的项目类型。)
 
 此外，如果你使用的主机文件，请确保配置正确。 例如，主机文件中必须包含相同的项目 URL 如下所示项目属性中，**属性 > Web > 服务器**或**属性 > 调试**，具体取决于项目类型。
 
-## <a name="see_help"></a>请参阅有关常见配置错误的帮助。 运行在调试器外部的网页，可能会提供进一步的信息。
+## <a name="see_help"></a> 请参阅有关常见配置错误的帮助。 运行在调试器外部的网页，可能会提供进一步的信息。
 
 - 你运行 Visual Studio 和 Web 服务器在同一计算机上？ 打开项目属性，并确保将项目配置为连接到正确的 Web 服务器并启动 URL。 (打开**属性 > Web > 服务器**或**属性 > 调试**具体取决于你的项目类型。)
 
 - 如果这不起作用或进行远程调试，按照步骤[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a>请检查您的 IIS 配置
+##  <a name="vxtbshttpservererrorsthingstocheck"></a> 请检查您的 IIS 配置
 
 后执行步骤此处详细描述来解决此问题，并在再次尝试调试前，你可能还需要重置 IIS。 你可以执行该操作通过打开提升的命令提示符并键入`iisreset`。 
 

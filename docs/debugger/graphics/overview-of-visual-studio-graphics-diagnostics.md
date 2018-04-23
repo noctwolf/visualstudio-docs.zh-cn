@@ -1,23 +1,19 @@
 ---
-title: "Visual Studio 图形诊断概述 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 图形诊断概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb52530cf5a068081ce3af3325675d2167c57a9
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 08a942830893bc7a195c64765f5915df32b5ecfb
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断概述
 Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用中的呈现和性能问题的工具。 可以对在 Windows 电脑上或在远程 PC 或设备上本地运行的应用使用图形诊断。  

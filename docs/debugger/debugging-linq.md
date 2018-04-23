@@ -1,12 +1,9 @@
 ---
-title: "调试 LINQ |Microsoft 文档"
-ms.custom: 
+title: 调试 LINQ |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,21 +16,21 @@ helpviewer_keywords:
 - LINQ, stepping
 - LINQ, edit and continue
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2e159e89fe1854f2d26267793e196aa91b570ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52b4c9eb74207e966c17a212b9a9181293581297
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-linq"></a>调试 LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支持对语言集成查询 (LINQ) 代码进行调试，但是有一些限制。 大多数调试功能都使用 LINQ 语句，其中包括单步执行、设置断点以及在调试器窗口中查看结果。 本主题介绍 LINQ 调试的主要限制。  
   
-##  <a name="BKMK_ViewingLINQResults"></a>查看 LINQ 结果  
+##  <a name="BKMK_ViewingLINQResults"></a> 查看 LINQ 结果  
  使用数据提示功能、“监视”窗口和“快速监视”对话框，可以查看 LINQ 语句的结果。 在使用源窗口时，可以将指针停放在源窗口中的某个查询上，这样会出现“数据提示”。 可以将一个 LINQ 变量复制并粘贴到“监视”窗口或“快速监视”对话框中。  
   
  在 LINQ 中，查询不会在创建或声明时进行计算，而只在使用时才进行计算。 因此，查询经过计算后才具有值。 创建查询和计算的完整说明，请参阅[LINQ 查询 (C#) 简介](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)或[编写你的第一个 LINQ 查询](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query)。  
@@ -44,7 +41,7 @@ ms.lasthandoff: 12/22/2017
   
 -   计算查询可能产生副作用，这些副作用表现为对数据的值或程序状态的更改。 不是所有查询都具有副作用。 若要确定查询是否可以安全计算而不具有副作用，必须理解实现查询的代码。  
   
-##  <a name="BKMK_SteppingAndLinq"></a>单步执行和 LINQ  
+##  <a name="BKMK_SteppingAndLinq"></a> 单步执行和 LINQ  
  调试 LINQ 代码时，单步执行具有一些你应知道的行为差异。  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
@@ -108,7 +105,7 @@ End Function
   
  修改后的查询在每次遍历 `IsEven` 时都会调用函数 `items`。 你可以使用调试器窗口来查看每个“item”是否满足指定条件，并且可以单步执行 `IsEven` 中的代码。 此示例中的谓词相当简单。 但是，如果必须调试一个更复杂的谓词，这种技术也会十分有用。  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>编辑并继续 LINQ 不支持  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> 编辑并继续 LINQ 不支持  
  编辑并继续支持对 LINQ 查询中使用限制的更改。 有关详细信息，请参阅[EnC 受支持的更改](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>请参阅  

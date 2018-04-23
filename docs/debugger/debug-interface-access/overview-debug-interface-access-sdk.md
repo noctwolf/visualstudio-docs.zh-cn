@@ -1,13 +1,9 @@
 ---
-title: "概述 （调试接口访问 SDK） |Microsoft 文档"
-ms.custom: 
+title: 概述 （调试接口访问 SDK） |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -22,17 +18,16 @@ helpviewer_keywords:
 - compilands
 - executable images
 ms.assetid: 720b4479-a8bc-4fec-860e-80c1a0780405
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb13b9a77bcd34b22a7a82182a63440cb02a4e76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 807690edaf5626e3ec007a005717622592c14ce9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="overview-debug-interface-access-sdk"></a>概述（调试接口访问 SDK）
 DIA SDK 用于访问 Microsoft 调试信息。 DIA SDK 提供对基于 COM 的无需重写代码，当 Microsoft 发生更改时的调试信息的格式的 API 集。 DIA SDK 还可以从选定的一组以前版本的调试信息，位于由生成的.pdb 和.dbg 文件读取[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]5.0 及更高版本。  

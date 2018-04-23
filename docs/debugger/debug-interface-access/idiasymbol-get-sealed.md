@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_sealed |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_sealed |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_sealed method
 ms.assetid: cd1fef1f-47de-47c7-885f-f6f0a9a07d8c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7d1e5394dc7f07aeb97fb34cc11428fee13e457
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d6ec278fd3ed2b3fef157c30300c16ccaaa8087b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
 检索用于指定是否已密封的类或方法的标志。  
@@ -49,7 +44,7 @@ HRESULT get_sealed(
 ## <a name="remarks"></a>备注  
  密封类不能用作基类。 密封的方法不能被重写。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： Dia2.h  
   
  库： diaguids.lib  

@@ -1,13 +1,9 @@
 ---
-title: "错误： 目标计算机上的 Visual Studio 远程调试器服务无法连接到此计算机返回 |Microsoft 文档"
-ms.custom: 
+title: 错误： 目标计算机上的 Visual Studio 远程调试器服务无法连接到此计算机返回 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -15,17 +11,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4553bceb8757b49c6d21f4bbe85e47f90e5b4dc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3cfd2db1e4bf5b87d12eb5d5ffcf94d06e142516
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>错误: 目标计算机上的 Visual Studio 远程调试器服务无法重新连接到此计算机
 此错误表示“Visual Studio 远程调试器”服务正在运行，但是运行它的用户帐户在连接到正在从中进行调试的计算机时无法进行身份验证。  

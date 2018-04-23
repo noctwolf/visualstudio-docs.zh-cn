@@ -1,29 +1,24 @@
 ---
-title: "进程视图 |Microsoft 文档"
-ms.custom: 
+title: 进程视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.processesview
 helpviewer_keywords:
 - Processes view
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2dc97cbe5c6bc178e4b14c89287a3f1c3794dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4cd848f2e771a2207e89d67eddbead22d2180990
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="processes-view"></a>进程视图
 进程视图显示你的系统上的所有活动进程树。 显示进程 ID 和模块名称。 如果你想要检查特定的系统进程，它通常对应于执行程序，请使用进程视图。 进程标识由模块名称，或者其指定为"系统 processes"。  
@@ -38,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  从**Spy**菜单上，选择**进程**。  
   
- ![Spy &#43; &#43;进程视图](../debugger/media/spy--_processes.png "Spy + + _Processes")  
+ ![Spy&#43; &#43;进程视图](../debugger/media/spy--_processes.png "Spy + + _Processes")  
 Spy++ 进程视图  
   
  上图显示了与进程和线程节点已展开的进程视图。  

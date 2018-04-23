@@ -1,13 +1,9 @@
 ---
-title: "导航代码与 Visual Studio 中的调试器 |Microsoft 文档"
+title: 导航代码与 Visual Studio 中的调试器 |Microsoft 文档
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 helpviewer_keywords:
@@ -15,17 +11,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: ae96b360620a58fa323d080e6262c7f2966fa160
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>导航代码通过 Visual Studio 调试器
 熟悉的命令和快捷方式来浏览在调试器中的代码并将使变得更快、 更轻松地查找和解决你的应用程序中的问题。 虽然浏览在调试器中的代码，可以检查您的应用程序的状态或了解有关其执行流的详细信息。  
@@ -47,7 +42,7 @@ ms.lasthandoff: 01/29/2018
   
  大多数调试器功能，例如，在局部变量窗口中查看变量值，或在监视窗口中计算表达式是可用的仅在暂停时调试器 (也称为*中断模式下*)。 调试器暂停时，你应用程序的状态已挂起函数，变量时，对象保留在内存中。 在中断模式下，你可以检查元素的位置和状态，以查看存在冲突或 bug。 对于某些项目类型，你还可以调整到在中断模式下应用。 若要观看视频显示这些功能，请参阅[调试器入门](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6)。
   
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a>单步执行代码逐行  
+##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> 单步执行代码逐行  
  若要在代码 （每个语句） 的每个行上停止调试时，使用**F11**键盘快捷方式 (或**调试** > **单步执行**菜单上)。  
   
 > [!TIP]
@@ -75,7 +70,7 @@ ms.lasthandoff: 01/29/2018
   
  若要直观地跟踪调用堆栈，单步执行函数时，请参阅[调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。  
   
-##  <a name="BKMK_Step_over_Step_out"></a>单步执行代码，跳过函数  
+##  <a name="BKMK_Step_over_Step_out"></a> 单步执行代码，跳过函数  
  当在调试器中运行代码，通常你会了解，你不需要查看特定的函数中会发生什么情况 (不关心或你知道工作，方式类似于经过的库代码)。 使用这些命令来跳过代码 （函数仍执行，当然，但调试器跳过它们）。  
   
 |键盘命令|菜单命令|描述|  
@@ -86,7 +81,7 @@ ms.lasthandoff: 01/29/2018
 > [!TIP]
 >  如果你需要在你应用中查找的入口点，请先使用**F10**或**F11**。 检查你应用程序的状态或尝试了解有关其执行流的详细信息时，这些命令所通常很有用。  
   
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>运行到特定位置或函数  
+##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> 运行到特定位置或函数  
  通常调试代码的首选的方法，这些方法都很有用当你知道你想要检查，具体的代码时，或至少你知道你想要开始调试。  
   
 -   **在代码中设置断点**  
@@ -132,7 +127,7 @@ ms.lasthandoff: 01/29/2018
   
      ![选择断点对话框](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
   
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a>移动指针以更改执行流  
+##  <a name="BKMK_Set_the_next_statement_to_execute"></a> 移动指针以更改执行流  
  在调试器暂停时，你可以移动指令指针，设置下一步要执行的代码语句。 源窗口或“反汇编”窗口的空白区域中的黄色箭头标记要执行的下一条语句的位置。 通过移动此箭头，可以跳过部分代码或返回到以前执行过的行。 在某些情况下可以使用此方法，例如，跳过包含已知 bug 的代码段。  
   
  ![将指针移](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")

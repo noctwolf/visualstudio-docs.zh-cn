@@ -1,13 +1,9 @@
 ---
-title: "使用 Microsoft.NET Framework 2.0 或 3.0 时仅支持混合的模式调试 |Microsoft 文档"
-ms.custom: 
+title: 使用 Microsoft.NET Framework 2.0 或 3.0 时仅支持混合的模式调试 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_to_old
 dev_langs:
@@ -16,17 +12,16 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: f607af6f-57fe-472a-a32e-b6202067aa96
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c521592ed6ede141727d2ac9b40c7c350d72053b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5492c79fa15582c5aeaf9b7794958a37bd569313
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>仅当使用 Microsoft .NET Framework 2.0 或 3.0 时才支持混合模式调试
 低于 2.0 的 Microsoft .NET Framework 版本不支持对 64 位进程进行混合模式调试。 这意味着，当你进行调试时，无法从托管代码单步执行到本机代码，也无法从本机代码单步执行到托管代码。  

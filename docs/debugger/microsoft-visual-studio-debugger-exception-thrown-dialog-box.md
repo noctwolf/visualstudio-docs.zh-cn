@@ -2,11 +2,7 @@
 title: Microsoft Visual Studio 调试器 （引发异常） 对话框中 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.exceptions.thrown
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - debugger, exceptions
 - throwing exceptions, during debugging
 ms.assetid: 1fe98d10-c8f9-4b39-a920-99169bfd542e
-caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1020711c21fb7171a8f7f8b87296d300f53b78b1
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 24ccb3de6b22f54b239b5b772490a8d05a990dbd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>“Microsoft Visual Studio 调试器（引发异常）”对话框
 程序中发生了异常。 此对话框报告引发异常的类型。 您的代码需要处理此异常。 可从下列用于处理异常的选项中进行选择：  

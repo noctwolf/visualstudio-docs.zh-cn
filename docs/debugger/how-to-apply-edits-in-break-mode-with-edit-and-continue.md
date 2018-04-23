@@ -2,8 +2,7 @@
 title: 如何： 在应用编辑中断模式下的使用编辑并继续 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
@@ -25,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c172c49132f8080dc29040fa7325c19f1871f1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: f031598e0c8f290907e759bcfceac85c1b063f5f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>如何：使用“编辑并继续”在中断模式下应用编辑
 可以在中断模式下使用“编辑并继续”编辑代码，然后不必停止和重新启动执行即可继续。  
@@ -61,6 +60,6 @@ ms.lasthandoff: 04/16/2018
   
      在你所做的编辑已并入项目并已应用的情况下，你的代码继续执行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [受支持的代码更改 （C# 和 Visual Basic](../debugger/supported-code-changes-csharp.md)   
  [编辑并继续 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

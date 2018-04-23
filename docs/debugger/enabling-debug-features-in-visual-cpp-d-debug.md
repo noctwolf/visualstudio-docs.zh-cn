@@ -1,13 +1,9 @@
 ---
-title: "启用调试 Visual c + + 的功能 (-/d_debug) |Microsoft 文档"
-ms.custom: 
+title: 启用调试 Visual c + + 的功能 (-/d_debug) |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -25,17 +21,16 @@ helpviewer_keywords:
 - debug builds, MFC
 - _DEBUG macro
 ms.assetid: 276e2254-7274-435e-ba4d-67fcef4f33bc
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f1067ee5b60b8a8a402c9612357f2d83b6da138
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5298879d93bf4e86df7610d5891e73bdbb67c4a1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>在 Visual C++ 中启用调试功能 (/D_DEBUG)
 在[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，调试功能，例如，如果符号重新编译程序时启用断言**_DEBUG**定义。 你可以定义**_DEBUG**在两种方式之一：  

@@ -1,13 +1,9 @@
 ---
-title: "如何： 查看脚本文档 |Microsoft 文档"
-ms.custom: 
+title: 如何： 查看脚本文档 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - Script Explorer
 ms.assetid: 8b621e53-4508-4b4a-9995-70995b0b9ac8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7daecd0974abd5be733e7cec3426045c1f859eb8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5bfa273f98cebdf61f865e03a02c9b2d5f22bfa9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-view-script-documents"></a>如何：查看脚本文档
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的早期版本中，从服务器端脚本生成的客户端脚本文件显示在“脚本资源管理器”窗口中。 “脚本资源管理器”窗口通常是隐藏的，因此客户端脚本的可用性并非总是显而易见。  
@@ -35,7 +30,7 @@ ms.lasthandoff: 12/22/2017
   
  客户端脚本文件仅在调试模式或中断模式下显示。 它们将出现在**脚本文档**节点。  
   
- 服务器端脚本文件始终可见。 它们将出现在**\<网站路径名 >**节点。 节点的名称类似于以下示例：`c:\...\Website2\`  
+ 服务器端脚本文件始终可见。 它们将出现在**\<网站路径名 >**节点。 节点的名称类似于以下示例： `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>查看服务器端脚本文档  
   

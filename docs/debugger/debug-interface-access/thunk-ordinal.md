@@ -1,29 +1,24 @@
 ---
-title: "THUNK_ORDINAL |Microsoft 文档"
-ms.custom: 
+title: THUNK_ORDINAL |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Thunk_Ordinal enumeration
 ms.assetid: 026f98a9-36b8-41ef-8a72-12d7cbc2d362
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0911b01bf52bd73cd438be024dab2580c5a94d1f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b0701706deee68cf2dde522d48f9aa62b9a00142
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 指定转换 （thunk） 类型。  
@@ -69,7 +64,7 @@ typedef enum THUNK_ORDINAL {
 ## <a name="remarks"></a>备注  
  此枚举中的值返回到调用[idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)方法。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： cvconst.h  
   
 ## <a name="see-also"></a>请参阅  

@@ -3,26 +3,21 @@ title: Visual Studio 调试器功能教程-|Microsoft 文档
 description: Visual Studio 调试器浏览
 ms.custom: mvc
 ms.date: 03/27/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e031716c68d44a9d08a4b074c5dcb58d5553041
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: bb84fbfa4b8916b963f3f3cc35e044593c5a47e1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>快速入门： 先来看一下 Visual Studio 调试器
 
@@ -234,5 +229,5 @@ F10 使调试器，而无需单步执行函数或应用程序代码 （仍执行
 
 -   [调试接口访问 SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md)描述 Microsoft 调试接口访问软件开发工具包 (DIA SDK)。 DIA SDK 提供对存储在由 Microsoft 后置编译器工具生成的程序数据库 (.pdb) 文件中的调试信息的访问。  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)

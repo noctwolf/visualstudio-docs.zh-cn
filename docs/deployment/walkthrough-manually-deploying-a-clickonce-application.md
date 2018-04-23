@@ -2,8 +2,7 @@
 title: 演练： 手动部署 ClickOnce 应用程序 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,16 +17,16 @@ helpviewer_keywords:
 - manual ClickOnce deployments
 - manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 001aa8f3436e1594b198a81779c77258ca829a21
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 71ab59e09f450d1656d77c551b3f44d0a60f1a57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>演练：手动部署 ClickOnce 应用程序
 如果你不能使用 Visual Studio 部署你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，或你需要使用高级的部署功能，如受信任的应用程序部署，你应使用 Mage.exe 命令行工具来创建你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]清单。 本演练介绍如何创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]通过使用命令行版本 (Mage.exe) 或清单生成和编辑工具的图形版本 (MageUI.exe) 部署。  
@@ -204,7 +203,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>后续步骤  
  当你需要部署应用程序的新版本时，创建一个名为的新版本的新目录-例如，1.0.0.1—and 将新的应用程序文件复制到新的目录。 接下来，你需要按照前面的步骤以创建和注册一个新的应用程序清单，并更新以及部署清单进行签名。 请注意，在这两个在 Mage.exe 中指定相同的更高版本`-New`和`-Update`调用，作为[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]仅使用最重要的最左边的整数中更新更高版本。 如果你使用 MageUI.exe，你可以更新部署清单通过打开它，选择**应用程序引用**选项卡上，单击**选择清单**按钮，，然后选择已更新应用程序清单。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe（图形化客户端中的清单生成和编辑工具）](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   

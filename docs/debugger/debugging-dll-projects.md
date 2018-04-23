@@ -1,12 +1,9 @@
 ---
-title: "调试 DLL 项目 |Microsoft 文档"
-ms.custom: 
+title: 调试 DLL 项目 |Microsoft 文档
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - DLLs, debugging
 - debugging [Visual Studio], DLLs
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7b43d7c5fb8d66e758a44b86d4918f04599d6147
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8c5da503dd3eb1aec83c5f1fdef58261960d66d7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>从 Visual Studio 的调试 DLL 项目
 下面的 Visual Studio 模板创建 Dll:  
@@ -106,7 +103,7 @@ ms.lasthandoff: 12/22/2017
   
      断点将被命中，然后您将可以逐步调试 `Test`。 当执行离开 `Test`后，调试器将返回设计模式。
 
-## <a name="vxtskdebuggingdllprojectsexternal"></a>调试 c + + 项目的外部 DLL
+## <a name="vxtskdebuggingdllprojectsexternal"></a> 调试 c + + 项目的外部 DLL
 
 如果你正在调试的 DLL 外部到你的项目，可用 （如逐句通过代码） 的调试功能将依赖于[的 DLL 的调试配置](#vxtskdebuggingdllprojectsbuildingadebugversion)已生成时，以及是否[.pdb 文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)且可提供其他所需的 dll 文件。
 

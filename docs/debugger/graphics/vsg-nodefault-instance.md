@@ -1,23 +1,20 @@
 ---
-title: "VSG_NODEFAULT_INSTANCE |Microsoft 文档"
-ms.custom: 
+title: VSG_NODEFAULT_INSTANCE |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 19c95b0d-9a4d-441f-9ed7-3acb39e67521
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7f94aa50908097b161929e51f260d3bcc058bd5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d064f4a5b983058d9f1ad4428e2b37cf2e82dcf
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
 通过其存在定义是否的默认实例[VsgDbg 类](vsgdbg-class.md)类，它提供编程捕获界面-提供。  
@@ -28,7 +25,7 @@ ms.lasthandoff: 12/22/2017
 #define VSG_NODEFAULT_INSTANCE  
 ```  
   
-## <a name="value"></a>“值”  
+## <a name="value"></a>值  
  通过其存在或缺失的预处理器符号决定是否提供 `VsgDbg` 类的默认实例。 如果定义此符号，则不提供 `VsgDbg` 类的默认实例；否则，将在程序运行前提供并初始化默认实例。  
   
  通过具有全局范围的指针 `g_pVsgDbg` 提供编程捕获接口。  

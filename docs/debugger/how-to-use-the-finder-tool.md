@@ -1,32 +1,27 @@
 ---
-title: "如何： 使用查找程序工具 |Microsoft 文档"
-ms.custom: 
+title: 如何： 使用查找程序工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8930726d4f45164842a41fdf87ea3a8f55397278
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f358adbd8721a55d278c392018463d49e5a8a60e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-use-the-finder-tool"></a>如何：使用查找程序工具
 你可以使用在查找程序工具**查找窗口**对话框以显示窗口属性或消息。 查找程序工具还可以找到已禁用的子窗口，并识别的窗口，以突出显示如果禁用子窗口重叠。  
   
- ![Spy &#43; &#43;查找窗口对话框](../debugger/media/icon_spy--_find.png "Icon_Spy + + _Find")  
+ ![Spy&#43; &#43;查找窗口对话框](../debugger/media/icon_spy--_find.png "Icon_Spy + + _Find")  
 在查找窗口对话框中查找程序工具  
   
  上图显示以下第 3 步后的查找窗口对话框。  

@@ -1,29 +1,24 @@
 ---
-title: "IDiaSymbol |Microsoft 文档"
-ms.custom: 
+title: IDiaSymbol |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol interface
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c35accc7ca75a987dae615c06df68b4f85bba4a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a456abd2d3d80a122d4182ae882ca28b07788596
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 描述符号实例的属性。  
@@ -267,7 +262,7 @@ IDiaSymbol : IUnknown
  此示例演示如何在给定的相对虚拟地址处显示的函数的本地变量。 它还演示如何彼此相关的不同类型的符号。  
   
 > [!NOTE]
->  `CDiaBSTR`是包装的类`BSTR`和自动处理并实例化超出范围时释放字符串。  
+>  `CDiaBSTR` 是包装的类`BSTR`和自动处理并实例化超出范围时释放字符串。  
   
 ```C++  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  
@@ -341,8 +336,8 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 }  
 ```  
   
-## <a name="requirements"></a>惠?  
- `Header:`Dia2.h  
+## <a name="requirements"></a>要求  
+ `Header:` dia2.h  
   
  库： diaguids.lib  
   

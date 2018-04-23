@@ -1,27 +1,22 @@
 ---
-title: "如何： 调试.NET Framework 源代码 |Microsoft 文档"
-ms.custom: 
+title: 如何： 调试.NET Framework 源代码 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/23/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging, .NET Framework source
 ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75f3665afcf5d4937fae46e2a6871e0f7121b561
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 8377ed73479441272b2f1910767fa7e2a4ff0196
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-net-framework-source"></a>如何：调试 .NET Framework 源代码
 若要调试.NET Framework 源代码，你必须访问的调试符号的代码。 你还需要启用单步执行到.NET Framework 源代码。  

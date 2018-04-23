@@ -1,13 +1,9 @@
 ---
-title: "用于报告的宏 |Microsoft 文档"
-ms.custom: 
+title: 用于报告的宏 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.macros
 dev_langs:
@@ -23,17 +19,16 @@ helpviewer_keywords:
 - debugging [CRT], reporting macros
 - _RPTn macro
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af21a708a05bfdc0338ca1c5b2bc038e192eb4b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dd2dbb0651aa35243090fb554fa9142573e04e04
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="macros-for-reporting"></a>用于报告的宏
 你可以使用**_RPTn**，和**_RPTFn** CRTDBG 中定义的宏。H、 要替换的使用`printf`语句进行调试。 在你的发布中自动消失这些宏生成时**_DEBUG**未定义的因此没有无需将它们括在**#ifdef**s。  

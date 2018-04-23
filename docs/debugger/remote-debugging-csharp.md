@@ -1,13 +1,9 @@
 ---
-title: "远程调试 C# 或 Visual Studio 中的 VB 项目 |Microsoft 文档"
+title: 远程调试 C# 或 Visual Studio 中的 VB 项目 |Microsoft 文档
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: a9753fbb-e7f4-47f0-9dbe-9de90c6c8457
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 18cd64e24481111e22b3b9b842433bb1b1c19e0f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>远程调试 Visual Studio 中的 C# 或 Visual Basic 项目
 若要调试的 Visual Studio 应用程序已部署在另一台计算机，安装和其中部署您的应用程序的计算机上运行远程工具，你将项目配置为从 Visual Studio 中，连接到远程计算机，然后运行你的应用程序。
@@ -36,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
 有关远程调试通用 Windows 应用 (UWP) 的信息，请参阅[调试安装的应用程序包](debug-installed-app-package.md)。
 
-## <a name="requirements"></a>惠?
+## <a name="requirements"></a>要求
 
 远程调试器都支持 Windows 7 和更高版本 (不 phone) 和从 Windows Server 2008 Service Pack 2 的 Windows Server 版本。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
@@ -50,14 +45,14 @@ ms.lasthandoff: 01/10/2018
 > [!TIP]
 > 在某些情况下，它可以从文件共享运行远程调试器方式效率最高。 有关详细信息，请参阅[从文件共享运行远程调试器](../debugger/remote-debugging.md#fileshare_msvsmon)。
   
-## <a name="BKMK_setup"></a>设置远程调试器
+## <a name="BKMK_setup"></a> 设置远程调试器
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > 如果你需要添加其他用户的权限更改身份验证模式中，或者远程调试器端口号，请参阅[配置远程调试器](../debugger/remote-debugging.md#configure_msvsmon)。
   
-## <a name="remote_csharp"></a>远程调试项目
+## <a name="remote_csharp"></a> 远程调试项目
 调试器不能将 Visual C# 或 Visual Basic 桌面应用程序部署到远程计算机，但你仍然可以按如下所示方法远程调试它们。 以下过程假设你想要在名为的计算机上进行调试它**MJO DL**，如在下图中所示。
   
 1.  创建一个名为的 WPF 项目**MyWpf**。  
@@ -97,7 +92,7 @@ ms.lasthandoff: 01/10/2018
   
 13. 如果出现提示，输入用于连接到远程计算机的网络凭据。  
   
-     所需的凭据会有所不同，具体取决于你的网络安全配置。 例如，在域计算机上，可以输入你的域用户名和密码。 在非域计算机上，你可以输入计算机名和有效的用户帐户名称，如 **MJO-DL\name@something.com** ，以及正确的密码。
+     所需的凭据会有所不同，具体取决于你的网络安全配置。 例如，在域计算机上，可以输入你的域用户名和密码。 在非域计算机上，你可以输入计算机名和有效的用户帐户名称，如**MJO-DL\name@something.com**，以及正确的密码。
 
      你应看到 WPF 应用程序的主窗口处于打开远程计算机上。
   

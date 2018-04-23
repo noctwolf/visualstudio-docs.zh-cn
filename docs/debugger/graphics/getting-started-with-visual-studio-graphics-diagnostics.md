@@ -1,28 +1,24 @@
 ---
-title: "Visual Studio 图形诊断入门 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 图形诊断入门 |Microsoft 文档
+ms.custom: ''
 ms.date: 05/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: c2804b07db0b7cf8d01c8578877d4b722d6ceb96
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断入门
 在此部分中，你会准备首次使用图形诊断，然后从 Direct3D 应用捕获帧并在图形分析器中检查它们。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  若要在 Visual Studio 中使用图形诊断，你必须使用 Visual Studio Enterprise、 Visual Studio Professional 或 Visual Studio Community。  其他版本，包括 Visual Studio 代码，不包含此功能。
  
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]  
@@ -32,7 +28,7 @@ ms.lasthandoff: 02/01/2018
   
  有关安装图形工具的信息，请参阅[安装图形工具适用于 Windows 10](#InstallGraphicsTools)。  
   
-##  <a name="InstallGraphicsTools"></a>适用于 Windows 10 安装图形工具  
+##  <a name="InstallGraphicsTools"></a> 适用于 Windows 10 安装图形工具  
  在 Windows 10 中，图形诊断基础结构由 Windows 调用的一个可选功能*图形工具*。 在 Windows 10 上捕获和播放图形信息需要此功能（无论所捕获的应用是面向以前版本的 Windows 还是它所使用的 Direct3D 版本）。 可以选择提前安装图形工具功能；否则它会在你首次从 Visual Studio 启动图形诊断会话时按需安装。  
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>为 Windows 10 安装图形工具  

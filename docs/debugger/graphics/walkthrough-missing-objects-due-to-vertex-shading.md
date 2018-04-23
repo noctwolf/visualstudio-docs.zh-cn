@@ -1,23 +1,20 @@
 ---
-title: "演练： 缺少因顶点着色而对象 |Microsoft 文档"
-ms.custom: 
+title: 演练： 缺少因顶点着色而对象 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f374bbbdf30a80bdea70b789da5d5febbeee7a82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>演练：因顶点着色而缺少对象
 本演练演示了如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具调查因顶点着色器阶段出现的错误而缺少的对象。  
@@ -124,7 +121,7 @@ ms.lasthandoff: 12/22/2017
   
  若要解决此问题，可将设置 `m_marbleConstantBufferData.projection` 的值的代码行移动到对局部变量 `projection`的值进行初始化的行之后。  
   
- ![已更正的 C# 43; &#43;源代码](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
+ ![已更正的 C&#43; &#43;源代码](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
  修复代码后，你可以重新生成并运行应用以查明呈现的问题是否已解决：  
   

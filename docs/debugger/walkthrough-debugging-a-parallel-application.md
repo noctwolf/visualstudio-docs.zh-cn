@@ -2,12 +2,8 @@
 title: 演练： 调试并行应用程序 |Microsoft 文档
 ms.custom: H1HackMay2017
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -22,17 +18,16 @@ helpviewer_keywords:
 - parallel applications, debugging [Visual Basic]
 - parallel applications, debugging [C#]
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
-caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af74685428f15cebdcaf0992ae3ad529f2dd41b8
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: aceeb00f81bb858b1cebe19168b7366f08562745
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>演练： 调试并行应用程序在 Visual Studio 中
 本演练演示如何使用**并行任务**和**并行堆栈**窗口调试并行应用程序。 这些 windows 帮助你了解和验证使用的代码的运行时行为[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[并发运行时](/cpp/parallel/concrt/concurrency-runtime)。 本演练提供了具有内置断点的代码示例。 代码中断后，本演练演示如何使用**并行任务**和**并行堆栈**windows 来对其进行检查。  
@@ -299,7 +294,7 @@ ms.lasthandoff: 03/28/2018
 ## <a name="summary"></a>总结  
  本演练演示了**并行任务**和**并行堆栈**调试器窗口。 请在采用多线程代码的实际项目中使用这些窗口。 可以检查用 C++、C# 或 Visual Basic 编写的并行代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  

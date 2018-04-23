@@ -1,13 +1,9 @@
 ---
-title: "错误： 无法自动单步执行服务器 |Microsoft 文档"
-ms.custom: 
+title: 错误： 无法自动单步执行服务器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.causality_no_server_response
 dev_langs:
@@ -18,17 +14,16 @@ dev_langs:
 - JScript
 helpviewer_keywords:
 - remote debugging, notification error
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890c3e650b656d3c69a574ba477b797ba120c0a6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a8c79669da0e20bc7376d68c4ea782d280eb6df3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>错误：无法自动单步执行服务器
 此错误显示如下：  

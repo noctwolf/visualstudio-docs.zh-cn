@@ -2,8 +2,7 @@
 title: 调试 UWP 应用的 Visual Studio |Microsoft 文档
 ms.custom: ''
 ms.date: 01/17/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b178f66257082bc837e2dfa0835bab3d21a8071e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 522837b2e5475ea5cb25b638d67aaa4d01438271
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>调试 Visual Studio 中的通用 Windows 应用 (UWP)
 
@@ -33,5 +32,5 @@ Visual Studio 调试器提供了对调试 UWP 应用的完整支持。
 |[调试安装的应用包](../debugger/debug-installed-app-package.md)|调试已部署的应用，本地和远程。|
 |[适用于 UWP 应用的预提取内容](../debugger/prefetch-content-for-windows-store-apps.md)|分析 UWP 应用上的 ContentPrefetcher 类的效果。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用静态代码分析来分析代码质量](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)

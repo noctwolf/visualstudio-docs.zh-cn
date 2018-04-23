@@ -1,12 +1,8 @@
 ---
-title: "无法连接到 Microsoft Visual Studio 远程调试监视器 |Microsoft 文档"
-ms.custom: 
+title: 无法连接到 Microsoft Visual Studio 远程调试监视器 |Microsoft 文档
+ms.custom: ''
 ms.date: 08/24/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_debug
@@ -18,14 +14,14 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6efbb27052dc837ab10a74d8f43e949dfb816190
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: a5b7af9c41aac0531a9af014a49e9e0a1e71763d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因为远程调试监视器未正确设置远程计算机上或远程计算机是由于网络问题或存在防火墙而无法访问，则可能出现此消息。
@@ -46,7 +42,7 @@ ms.lasthandoff: 02/01/2018
 - [访问被拒绝](#access_denied)
 - [发生安全程序包特定错误](#security_package)
 
-## <a name="cannot_connect"></a>调试器无法连接到远程计算机。 调试器无法解析指定的计算机名
+## <a name="cannot_connect"></a> 调试器无法连接到远程计算机。 调试器无法解析指定的计算机名
 
 尝试以下步骤：
 
@@ -66,17 +62,17 @@ ms.lasthandoff: 02/01/2018
 
 4. 如果这些步骤未解决此错误，请参阅[远程计算机不可访问](#dns)。
 
-## <a name="rejected"></a>连接请求被拒绝的远程调试器
+## <a name="rejected"></a> 连接请求被拒绝的远程调试器
 
 在**附加到进程**对话框框中，或在项目属性中，请确保远程计算机名称和端口号匹配远程调试器窗口中显示的名称和端口号。 如果不正确，修复，然后重试。
 
 如果这些值是否正确，并且该消息指出了**Windows 身份验证**模式下，远程调试器处于正确的身份验证模式的检查 (**工具 > 选项**)。
 
-## <a name="invalid_access"></a>无效访问内存位置
+## <a name="invalid_access"></a> 无效访问内存位置
 
 出现内部错误。 重新启动 Visual Studio，然后重试。
 
-## <a name="no_server"></a>由远程计算机上运行指定的名称没有服务器
+## <a name="no_server"></a> 由远程计算机上运行指定的名称没有服务器
 
 Visual Studio 无法连接到远程调试器。 出现此消息可能的原因：
 
@@ -87,7 +83,7 @@ Visual Studio 无法连接到远程调试器。 出现此消息可能的原因�
 - 远程调试器版本与 Visual Studio 不匹配。 若要获取远程调试器的正确版本，请参阅[远程调试](../debugger/remote-debugging.md)
 
 
-## <a name="#valid_name"></a>请求的名称是有效的但未找到请求的类型的任何数据
+## <a name="#valid_name"></a> 请求的名称是有效的但未找到请求的类型的任何数据
 
 远程计算机存在，但 Visual Studio 无法连接到远程调试器。 出现此消息可能的原因：
 
@@ -99,29 +95,29 @@ Visual Studio 无法连接到远程调试器。 出现此消息可能的原因�
 
 - 远程调试器版本与 Visual Studio 不匹配。 若要获取远程调试器的正确版本，请参阅[远程调试](../debugger/remote-debugging.md)。
 
-## <a name="cant_connect_back"></a>目标计算机上的 Visual Studio 远程调试器无法重新连接到此计算机
+## <a name="cant_connect_back"></a> 目标计算机上的 Visual Studio 远程调试器无法重新连接到此计算机
 
 可能在不同的用户帐户下运行远程调试器。 在远程调试器中，打开**工具 > 权限**将用户添加到远程调试器权限。 有关详细信息，请参阅[使用不同的用户帐户运行远程调试器](#user_accounts)。
 
 如果该错误消息还指出了防火墙，本地计算机上的防火墙可能阻止从远程计算机返回到 Visual Studio 的通信。 请参阅[这些步骤](#firewall)。
 
-## <a name="access_denied"></a>访问被拒绝
+## <a name="access_denied"></a> 访问被拒绝
 
 如果你尝试在从 32 位计算机 （不支持） 的 64 位远程计算机上进行调试，你可能会看到此错误。
 
-## <a name="security_package"></a>发生安全程序包特定错误
+## <a name="security_package"></a> 发生安全程序包特定错误
 
 这可能是特定于 Windows XP 和 Windows 7 的旧问题。 请参阅此[信息](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package)。 
 
 ## <a name="causes-and-recommendations"></a>原因和建议
 
-### <a name="dns"></a>远程计算机不可访问 
+### <a name="dns"></a> 远程计算机不可访问 
 
 如果你不能使用远程计算机名称进行连接，请尝试改为使用的 IP 地址。 你可以使用`ipconfig`要获取的 IPv4 地址的远程计算机上的命令行中。 如果你使用的主机文件，请验证已正确配置。
 
 如果失败，请验证远程计算机可以访问网络上 ([ping](https://technet.microsoft.com/en-us/library/cc732509(v=ws.10).aspx)远程计算机)。 不支持通过 Internet 的远程调试，除非在某些 Microsoft Azure 方案。
   
-### <a name="server_incorrect"></a>服务器名称不正确或第三方软件干扰远程调试器
+### <a name="server_incorrect"></a> 服务器名称不正确或第三方软件干扰远程调试器
 
 在 Visual Studio 中，查看项目属性，并确保服务器名称正确。 请参阅主题[C# 和 Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)和[c + +](../debugger/remote-debugging-cpp.md#remote_cplusplus)。 对于 ASP.NET，打开**属性 / Web / 服务器**或**属性 / 调试**具体取决于你的项目类型。
 
@@ -130,7 +126,7 @@ Visual Studio 无法连接到远程调试器。 出现此消息可能的原因�
 
 如果服务器名称是否正确，则你的防病毒软件或第三方防火墙可能阻止远程调试器。 在本地调试时，这可能是因为 Visual Studio 是一个 32 位应用程序中，因此它使用 64 位版远程调试器来调试 64 位应用程序。 32 位和 64 位进程使用本地计算机内的本地网络进行通信。 计算机会持续进行网络通信，但第三方安全软件可能会阻止通信。
 
-### <a name="user_accounts"></a>使用不同的用户帐户运行远程调试器 
+### <a name="user_accounts"></a> 使用不同的用户帐户运行远程调试器 
 
 远程调试器将默认情况下，仅接受来自连接启动的远程调试器和 Administrators 组的成员的用户。 其他用户必须显式授予权限。 
  
@@ -147,7 +143,7 @@ Visual Studio 无法连接到远程调试器。 出现此消息可能的原因�
   
 -   或者，你可以允许任何用户进行远程调试。 在远程调试器窗口中，转到**工具 > 选项**对话框。 选中“无身份验证”   后，可选中 “允许任何用户进行调试”。 但是，你应该尝试此选项，仅当其他选项失败，或如果您在专用网络上。
 
-### <a name="firewall"></a>远程计算机上的防火墙不允许传入连接到远程调试器  
+### <a name="firewall"></a> 远程计算机上的防火墙不允许传入连接到远程调试器  
  Visual Studio 计算机上的防火墙和远程计算机上的防火墙都必须配置为允许在 Visual Studio 和远程调试器之间进行通信。 有关远程调试器使用的端口的信息，请参阅 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。 有关配置 Windows 防火墙的信息，请参阅 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。
   
 ### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>远程调试器的版本的 Visual Studio 的版本不匹配  

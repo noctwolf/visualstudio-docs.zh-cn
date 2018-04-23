@@ -2,29 +2,24 @@
 title: 演练： 用 C# 编写可视化工具 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
 ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
-caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e161b3c914d0a87a720f1217b52a571b85f5ff9
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+ms.openlocfilehash: 490c2c2b15eff701cee751b57bbf55024910beab
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>演练：用 C# 编写可视化工具 #
 本演练演示如何使用 C# 编写简单的可视化工具。 将在本演练中创建的可视化工具显示使用的 Windows 窗体消息框字符串内容。 此简单字符串可视化工具不是本身而言，尤其有用，但它演示创建其他数据类型的更多有用可视化工具时必须遵循的基本步骤。  
@@ -59,7 +54,7 @@ ms.lasthandoff: 01/02/2018
 2.  将名称从 Class1.cs 更改为有意义的名称，如 debuggerside.cs。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]自动更改的类声明，在 debuggerside.cs 中，以便与新文件名匹配。  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 自动更改的类声明，在 debuggerside.cs 中，以便与新文件名匹配。  
   
 3.  在**解决方案资源管理器**，右键单击**引用**选择**添加引用**快捷菜单上。  
   
@@ -89,7 +84,7 @@ ms.lasthandoff: 01/02/2018
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
- `DialogDebuggerVisualizer`具有一个抽象方法 (`Show`)，必须重写。  
+ `DialogDebuggerVisualizer` 具有一个抽象方法 (`Show`)，必须重写。  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>重写 DialogDebuggerVisualizer.Show 方法  
   
@@ -257,7 +252,7 @@ ms.lasthandoff: 01/02/2018
   
 4.  在**名称**框中，键入适当的名称，如 SecondVisualizer.cs。  
   
-5.  单击 **“添加”**。  
+5.  单击 **添加**。  
   
  这是向其所有没有。 看一下 SecondVisualizer.cs 的文件，并查看该模板添加为你的代码。 请继续并该代码。 既然你知道基础知识，你可以在你创建更复杂和有用可视化工具你自己。  
   
