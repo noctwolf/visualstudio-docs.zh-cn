@@ -1,26 +1,24 @@
 ---
-title: "组件管理 |Microsoft 文档"
-ms.custom: 
+title: 组件管理 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 398986499732a36819808b07f05f7d6b46787a94
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2798d820249f0a1c4310569d22d8510710ca13ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="component-management"></a>组件管理
 在 Windows 安装程序中的任务的单位称为 （有时称为 WICs 或只是组件） 的 Windows 安装程序组件。 一个 GUID 标识每个 WIC，这是安装和引用计数使用 Windows Installer 的设置的基本单位。  
@@ -51,6 +49,6 @@ ms.lasthandoff: 12/22/2017
   
      如果这样做，在安装另一个版本控制 VSPackage 时，将覆盖的共享的密钥。 删除第二个版本后，密钥指向文件将消失。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [选择共享并设置其版本 Vspackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [VSPackage 安装方案](../../extensibility/internals/vspackage-setup-scenarios.md)

@@ -1,25 +1,22 @@
 ---
-title: "查找 Visual Studio |Microsoft 文档"
-ms.custom: 
+title: 查找 Visual Studio |Microsoft 文档
+ms.custom: ''
 ms.date: 08/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5623ea382266fdbcd59bbe57b71522a7a1f4a31e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ed6125c69b9068ebfb3d776ccbefaf88043f83a4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="locating-visual-studio"></a>查找 Visual Studio
 
@@ -27,7 +24,7 @@ ms.lasthandoff: 12/22/2017
 
 这是与用于本机和托管代码的 NuGet 包的快速、 只读的 API。
 
-| 代码 | Package |
+| 代码 | 包 |
 | ---- | --- |
 | Native | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
 | Managed | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
@@ -44,6 +41,6 @@ ms.lasthandoff: 12/22/2017
 | [VSSetup cmdlet](https://github.com/Microsoft/vssetup.powershell) | 支持的 PowerShell cmdlet 2.0 和更高版本，返回可用来查找实例基于相同的条件作为对象的丰富信息_vswhere_和以发现实例有关的更多属性。 请参阅[wiki](https://github.com/Microsoft/vssetup.powershell/wiki)有关示例。 |
 | [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 自动定位_VSIXInstaller_并传递通过命令行安装_*.vsix_文件。 这可以在安装程序没有为查询 Api 直接支持。 请参阅[wiki](https://github.com/Microsoft/vsixbootstrapper/wiki)有关示例。 |
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 * [Visual Studio 自 2017 年 1 安装程序的变化](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)

@@ -1,26 +1,24 @@
 ---
-title: "如何： 打开标准编辑器 |Microsoft 文档"
-ms.custom: 
+title: 如何： 打开标准编辑器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
 - projects [Visual Studio SDK], opening standard editors
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: dcf36dc8f4ef818a84719bc534a09ecf30baf76f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2adcdc0f2d05061c412c5233a16e21a1b9fb252a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-open-standard-editors"></a>如何： 打开标准编辑器
 标准编辑器打开时，你将让 IDE 确定指定的文件类型，而不是指定的文件的项目特定编辑器的标准编辑器。  
@@ -53,7 +51,7 @@ ms.lasthandoff: 12/22/2017
   
      如果在一个窗口框架中，成功放置文档视图或文档视图对象，该对象初始化与它的数据通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A>。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [打开和保存项目项](../extensibility/internals/opening-and-saving-project-items.md)   
  [如何： 打开项目特定编辑器](../extensibility/how-to-open-project-specific-editors.md)   

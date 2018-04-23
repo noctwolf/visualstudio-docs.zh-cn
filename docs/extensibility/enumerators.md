@@ -2,26 +2,22 @@
 title: 枚举器 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, enumerators
 ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
-caps.latest.revision: 19
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7929ead4ced01561adb8c11dcaa56bc97f57884b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 84102435092096b7154a46100e9d857a31537482
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enumerators"></a>枚举器
 本部分列出了源代码管理插件必须要知道源控制插件 API 中的枚举器数据类型。  
@@ -30,7 +26,7 @@ ms.lasthandoff: 12/22/2017
  [命令代码](../extensibility/command-code-enumerator.md)  
  枚举的选项[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)和[SccPopulateList](../extensibility/sccpopulatelist-function.md)函数。  
   
- [消息](../extensibility/message-enumerator.md)  
+ [Message](../extensibility/message-enumerator.md)  
  枚举标记用于打印的回调， [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)。  
   
  [文件状态代码](../extensibility/file-status-code-enumerator.md)  

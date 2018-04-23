@@ -1,30 +1,28 @@
 ---
-title: "源控制集成 Essentials |Microsoft 文档"
-ms.custom: 
+title: 源控制集成 Essentials |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0c3e93eb86fdc252f162331033207db5bdaa1569
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-essentials"></a>Essentials 源控件的集成
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支持两种类型的源代码管理集成： 提供基本功能，并使用源控件插件 API （前称 MSSCCI API） 和一个基于 VSPackage 的源控制集成解决方案生成了源代码管理插件，提供更强大的功能。  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持两种类型的源代码管理集成： 提供基本功能，并使用源控件插件 API （前称 MSSCCI API） 和一个基于 VSPackage 的源控制集成解决方案生成了源代码管理插件，提供更强大的功能。  
   
 ## <a name="source-control-plug-in"></a>源代码管理插件  
  源代码管理插件编写为 DLL 实现源控制插件 API。 注册和源控件集成功能提供通过 API。 这种方法是更轻松地实现都比源代码管理 VSPackage，并使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]大多数源代码管理操作的用户界面 (UI)。  
@@ -54,7 +52,7 @@ ms.lasthandoff: 12/22/2017
   
  有关详细信息，请参阅[创建源控件 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [概述](../../extensibility/internals/source-control-integration-overview.md)   
  [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [创建源代码管理 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)

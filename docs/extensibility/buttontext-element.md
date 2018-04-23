@@ -1,26 +1,24 @@
 ---
-title: "ButtonText 元素 |Microsoft 文档"
-ms.custom: 
+title: ButtonText 元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - ButtonText element (VSCT XML schema)
 - VSCT XML schema elements, ButtonText
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c9f2374af403c37f18d1aa91700e51bd038a71c6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2fca0fbb22bf51353eeaa64f519face53bfb23c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buttontext-element"></a>ButtonText 元素
 此字段允许你指定各种菜单中显示的文本。 默认情况下，`ButtonText`元素出现在菜单控制器中。 `ButtonText`元素也成为默认的如果其他文本字段为空白。 `ButtonText`元素不能为空，即使指定了其他文本字段。  
@@ -49,5 +47,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="text-value"></a>文本值  
  文本值`ButtonText`元素提供的菜单项、 组合和其他用户界面 (UI) 元素具有可见文本显示的文本。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

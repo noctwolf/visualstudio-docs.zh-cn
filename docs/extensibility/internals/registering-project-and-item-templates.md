@@ -1,12 +1,10 @@
 ---
-title: "注册项目和项模板 |Microsoft 文档"
-ms.custom: 
+title: 注册项目和项模板 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -14,19 +12,19 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c064a6632741eba69a553be87fb8f829063b266b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 85c22d0191d015979dff5a4845c4dda0af96ee60
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-project-and-item-templates"></a>注册项目和项模板
-项目类型必须注册其项目和项目项模板的位置的目录。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用与你的项目类型关联的注册信息确定要显示在内容**添加新项目**和**添加新项**对话框。  
+项目类型必须注册其项目和项目项模板的位置的目录。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用与你的项目类型关联的注册信息确定要显示在内容**添加新项目**和**添加新项**对话框。  
   
  有关模板的详细信息，请参阅[添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)。  
   
@@ -41,11 +39,11 @@ ms.lasthandoff: 12/22/2017
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|name|类型|描述|  
+|名称|类型|描述|  
 |----------|----------|-----------------|  
 |@|REG_SZ|这种类型的项目的默认名称。|  
 |DisplayName|REG_SZ|在包下注册的名称的资源 ID，从附属 DLL 中检索。|  
-|Package|REG_SZ|在包下注册的包的类 ID。|  
+|包|REG_SZ|在包下注册的包的类 ID。|  
 |ProjectTemplatesDir|REG_SZ|默认的项目模板文件的路径。 项目模板文件将由**新项目**模板。|  
   
 ### <a name="registering-item-templates"></a>注册项模板  
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
 "SortPriority"=dword:00000064  
 ```  
   
-|name|类型|描述|  
+|名称|类型|描述|  
 |----------|----------|-----------------|  
 |@|REG_SZ|添加项模板的资源 ID。|  
 |TemplatesDir|REG_SZ|在对话框中显示的项目项路径**添加新项**向导。|  
@@ -86,7 +84,7 @@ ms.lasthandoff: 12/22/2017
 "SortPriority"=dword:00000064  
 ```  
   
-|name|类型|描述|  
+|名称|类型|描述|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|使中的筛选器的常见筛选器之一**在文件中查找**对话框。 在未标记为公共的筛选器之前的筛选器列表中列出了常用的筛选器。|  
 |CommonOpenFilesFilter|REG_DWORD|使中的筛选器的常见筛选器之一**打开的文件**对话框。 在未标记为公共的筛选器之前的筛选器列表中列出了常用的筛选器。|  
@@ -120,7 +118,7 @@ ms.lasthandoff: 12/22/2017
   
  \WizardFiles  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [向导](../../extensibility/internals/wizards.md)   
  [本地化应用程序](../../ide/localizing-applications.md)   

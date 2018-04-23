@@ -1,27 +1,23 @@
 ---
-title: "命令处理 |Microsoft 文档"
-ms.custom: 
+title: 命令处理 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - command handling
 ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ecbff62570067b25aae9ad525138687eb281c9f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 542277c5d8ab1b9b130f31bbb06215d8da7bc2ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-handling"></a>命令处理
 你的编辑器可以定义新的命令。 在菜单中，在工具栏上，或在上下文菜单中，通常会显示命令。  
@@ -53,5 +49,5 @@ ms.lasthandoff: 12/22/2017
   
  你还可以使用无需在.vsct 文件中定义的预定义的命令。 例如，如果您检查 EditorPane.cs 文件以生成由 Visual Studio 包模板，您发现的一组预定义命令，如<xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID>由定义<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>，会在命令处理程序，如 onSelectAll 方法中处理。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

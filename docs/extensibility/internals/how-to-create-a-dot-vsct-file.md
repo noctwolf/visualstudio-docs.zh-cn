@@ -2,26 +2,22 @@
 title: 如何： 创建。Vsct 文件 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-caps.latest.revision: 19
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64d9b35030a18a6258de52ed0f12f9796044ba5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c6456b0b866f08956862fa197719354bedf0ecf6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-vsct-file"></a>如何： 创建。Vsct 文件  
   
@@ -102,9 +98,9 @@ ms.lasthandoff: 12/22/2017
   
 3.  在 Visual Studio 命令提示符处，转到包含 .cto 和 .ctsym 文件的目录。  
   
-4.  类型 **vsct.exe** *ctofilename***.cto** *vsctfilename***.vsct -S***symfilename***.ctsym**。  
+4.  类型**vsct.exe** *ctofilename * * *.cto** * vsctfilename***.vsct-S***symfilename ***.ctsym**。  
   
-     `ctofilename`是.cto 文件的名称`vsctfilename`是你想要创建的 vsct 文件的名称和`symfilename`是.ctsym 文件的名称。  
+     `ctofilename` 是.cto 文件的名称`vsctfilename`是你想要创建的 vsct 文件的名称和`symfilename`是.ctsym 文件的名称。  
   
      此过程可创建新的 .vsct XML 命令表编译器文件。 可像任何其他 .vsct 文件一样，使用 vsct.exe（vsct 编译器）来编辑和编译此文件。  
   
@@ -150,7 +146,7 @@ ms.lasthandoff: 12/22/2017
   
      第一个参数值必须匹配在项目文件中定义的资源名称特性的值。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [创作。Vsct 文件](../../extensibility/internals/authoring-dot-vsct-files.md)   
  [Visual Studio 命令表 (。Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)

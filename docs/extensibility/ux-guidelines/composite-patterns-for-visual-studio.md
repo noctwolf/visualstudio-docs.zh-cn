@@ -1,23 +1,21 @@
 ---
-title: "Visual Studio 的复合模式 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 的复合模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6515b5aefc0536ea92f09a92b1a17050b820008d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio 的复合模式
 复合模式将交互和设计元素不同的配置合并。 一些 Visual Studio 中关于一致性的最重要复合模式包括：  
@@ -32,7 +30,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [触摸屏输入](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)  
   
-##  <a name="BKMK_DataVisualization"></a>数据可视化  
+##  <a name="BKMK_DataVisualization"></a> 数据可视化  
   
 ### <a name="overview"></a>概述  
  图是一种可视方式进行聚合和可视化数据处理以增强决策。 它们可以帮助用户面临着大量的数据，但很少，则表示看到什么都应该注意，而且新增功能可能需要一项操作。  
@@ -85,7 +83,7 @@ ms.lasthandoff: 12/22/2017
 |![样本 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|# 79D7F2|121,215,242|  
 |![样本 B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|# B5B5B5|181,181,181|  
   
-##  <a name="BKMK_OnObjectUI"></a>对象上的 UI 和扫视  
+##  <a name="BKMK_OnObjectUI"></a> 对象上的 UI 和扫视  
  本部分向上下文扫视，也称为代码查看视图中，一种类型的唯一到 Visual Studio 的对象上的 UI。  
   
 ### <a name="overview"></a>概述  
@@ -161,7 +159,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  持久性和提交模型  
   
-    -   暂时性故障  
+    -   暂时  
   
     -   Durable  
   
@@ -251,7 +249,7 @@ ms.lasthandoff: 12/22/2017
   
 -   **永远不会**似乎是可编辑或邀请用户交互的悬停时的显示内容。 此行为可以会让用户灰心如果他们尝试将光标悬停在详细信息内容，如工具提示的标准行为是以立即关闭光标位于时不再的主控形状上方生成它的内容。  
   
-##  <a name="BKMK_SelectionModels"></a>所选内容模型  
+##  <a name="BKMK_SelectionModels"></a> 所选内容模型  
   
 ### <a name="overview"></a>概述  
  所选内容模型是用于指示并确认对一个或多个对象中的用户界面相关的操作的机制。 本主题讨论选择交互模式中的 Visual Studio 文档编辑器： 文本编辑器、 设计图面和建模图面。  
@@ -309,7 +307,7 @@ ms.lasthandoff: 12/22/2017
 #### <a name="region-selection-box-selection"></a>区域选择 （框选择）  
  Visual Studio 在文本编辑器中，支持区域的选择，这称为框选择。 框中选择允许用户选择不遵循以下常规文本流的文本的区域。 与标准文本所选内容，所选内容必须是连续的。 通过使用鼠标拖动的同时按住 Alt 键启动的框中选择。 此外可以通过使用箭头键以指示所选内容的区域同时按住 Alt 和 Shift 键启动框选择。 框中选择使用正常选择突出显示，并显示在所选内容区域的一端闪烁插入点光标。  
   
- ![区域 &#40; 框 &#41;Visual Studio 中的选择](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713年 04_BoxSelection")  
+ ![区域&#40;框&#41;Visual Studio 中的选择](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713年 04_BoxSelection")  
   
  **Visual Studio 中的区域 （框） 选择**  
   
@@ -394,19 +392,19 @@ ms.lasthandoff: 12/22/2017
   
  **两个辅助选择不变的主要选择**  
   
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a>图形对象选择外观  
+####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> 图形对象选择外观  
  选择是按矩形模式的对象的范围框周围绘制的平方。 下图显示一个图形对象可以拥有句柄、 大小调整，与在就地编辑外观的各种状态的示例。 句柄大小应依赖于窗口边框和边缘度量值使用**GetSystemMetrics** API。  
   
 |状态|外观|Visual 详细信息|  
 |-----------|----------------|--------------------|  
 |**未选定**|默认|![这是默认按钮状态](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713年 10_DefaultState")||  
-|**主要选择**|可调整大小|![使用的主要选择大小调整图柄](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713年 11_PrimaryResize")|![使用的主要选择重设大小句柄 &#40; 放大 &#41;] (../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713年 12_PrimaryResizeZoom")|  
-|**主要选择**|不可调整大小|![没有主选择大小调整图柄](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713年 13_PrimaryNoResize")|![没有主选择重设大小句柄 &#40; 放大 &#41;] (../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713年 14_PrimaryNoResizeZoom")|  
-|**主要选择**|锁定|![锁定的主要选择](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713年 15_PrimaryLocked")|![锁定的主要选择 &#40; 放大 &#41;] (../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713年 16_PrimaryLockedZoom")|  
-|**次要选择**|可调整大小|![与的次要选择大小调整图柄](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713年 17_SecondaryResize")|![与的次要选择重设大小句柄 &#40; 放大 &#41;] (../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713年 18_SecondaryResizeZoom")|  
-|**次要选择**|不可调整大小|![没有的次要选择大小调整图柄](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713年 19_SecondaryNoResize")|![没有重设大小 &#40; 的次要选择缩放 &#41;] (../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713年 20_SecondaryNoResizeZoom")|  
-|**次要选择**|锁定|![锁定的次要选择](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713年 21_SecondaryLocked")|![锁定的次要选择 &#40; 放大 &#41;] (../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713年 22_SecondaryLockedZoom")|  
-|**UI 活动**|默认|![UI 活动状态](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713年 23_UIActive")|![UI 活动状态 &#40; 放大 &#41;] (../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713年 24_UIActiveZoom")|  
+|**主要选择**|可调整大小|![使用的主要选择大小调整图柄](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713年 11_PrimaryResize")|![使用的主要选择大小调整图柄&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713年 12_PrimaryResizeZoom")|  
+|**主要选择**|不可调整大小|![没有主选择大小调整图柄](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713年 13_PrimaryNoResize")|![没有主选择大小调整图柄&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713年 14_PrimaryNoResizeZoom")|  
+|**主要选择**|锁定|![锁定的主要选择](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713年 15_PrimaryLocked")|![锁定的主要选择&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713年 16_PrimaryLockedZoom")|  
+|**次要选择**|可调整大小|![与的次要选择大小调整图柄](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713年 17_SecondaryResize")|![与的次要选择大小调整图柄&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713年 18_SecondaryResizeZoom")|  
+|**次要选择**|不可调整大小|![没有的次要选择大小调整图柄](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713年 19_SecondaryNoResize")|![没有重设大小的次要选择&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713年 20_SecondaryNoResizeZoom")|  
+|**次要选择**|锁定|![锁定的次要选择](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713年 21_SecondaryLocked")|![锁定的次要选择&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713年 22_SecondaryLockedZoom")|  
+|**UI 活动**|默认|![UI 活动状态](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713年 23_UIActive")|![UI 活动状态&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713年 24_UIActiveZoom")|  
   
 ### <a name="view-selection-models"></a>查看所选内容模型  
   
@@ -475,7 +473,7 @@ ms.lasthandoff: 12/22/2017
   
 -   按下 F2 键激活就地编辑当前所选单元格。  
   
-##  <a name="BKMK_PersistenceAndSavingSettings"></a>持久性和保存设置  
+##  <a name="BKMK_PersistenceAndSavingSettings"></a> 持久性和保存设置  
   
 ### <a name="overview"></a>概述  
  尽管 Visual Studio 中的每个软件组件是通常负责其自己的状态和持久性，但 Visual Studio 自动设置在某些情况下，如将与保存的窗口大小和位置。 下表是自动保存的设置和设置需要显式的用户或编程要执行操作的组合。  
@@ -510,7 +508,7 @@ ms.lasthandoff: 12/22/2017
 #### <a name="profile-specific-layouts"></a>配置文件特定布局  
  每个配置文件包括工具窗口布局，方式为专用开发人员熟悉组织 (Visual c + + 开发人员希望看到**解决方案资源管理器**IDE，而 C# 开发人员希望看到左侧**解决方案资源管理器**右侧)。 用户选择在启动时的配置文件后加载配置文件特定窗口布局。 程序包作者应确定最适合其客户的体验，窗口布局知道随后将保存到窗口配置的用户进行的更改。  
   
-##  <a name="BKMK_TouchInput"></a>触摸屏输入  
+##  <a name="BKMK_TouchInput"></a> 触摸屏输入  
  用户日益在触摸设备上使用 Microsoft 开发产品。 但是，有一些难以在触摸设备上使用开发工具的障碍。 用户将希望我们的产品中提供可靠，并且是精确触摸体验。 这些准则的目的是通知以合并，并鼓励一致触摸体验跨 Visual Studio 和相关的产品哪些触摸功能有关的决策。  
   
 ### <a name="levels-of-experience"></a>级别的体验  

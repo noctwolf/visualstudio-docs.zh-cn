@@ -1,26 +1,24 @@
 ---
-title: "设计器的初始化和元数据配置 |Microsoft 文档"
-ms.custom: 
+title: 设计器的初始化和元数据配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
 - designers [Visual Studio SDK], configuring metadata
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 61624d9926f4d984386f1a8b3fe8a575ce465331
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a6334f65b942b2eab3543d866ae1b98a186569ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>设计器的初始化和元数据配置
 与设计器或设计器组件关联的元数据和筛选器属性的操作提供用于应用程序定义将哪些工具由特定的设计器，用于处理不同的机制<xref:System.Type>对象 （如数据结构类或图形实体），设计器不可用时，以及如何配置 Visual Studio IDE 以支持设计器 (该实例**工具箱**类别或选项卡上的可用)。  
@@ -97,7 +95,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  目前，设计图面仅支持创建组件，并且因此仅组件可以本地元数据。 在上面的示例中，我们已尝试修改一个属性，例如`Color`对象的属性。 如果`false`传入的全局标志，`CustomBrowser`将永远不会显示，因为设计器永远不会实际创建的实例`Color`。 将全局标志设置为`false`用于组件，如控件、 计时器和对话框。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   

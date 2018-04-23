@@ -1,12 +1,10 @@
 ---
-title: "CreateExpInstance 实用程序 |Microsoft 文档"
-ms.custom: 
+title: CreateExpInstance 实用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
 - experimental hive
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - createexpinstance
 - createexpinst
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c1104ebfbd066ad438262fcca0186acfb3854dbd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bdcb37374c63b96e2169de28c6fe21742024ca98
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 实用程序
 重置，请使用 CreateExpInstance 实用程序来创建，或删除 Visual Studio 的实验实例。 实验实例可用于调试和测试而无需更改基础产品的 Visual Studio 扩展。  
@@ -63,5 +61,5 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
   
  **CreateExpInstance.exe /Reset /VSInstance = 14.0 /RootSuffix = Exp**  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [VSPackage](../../extensibility/internals/vspackages.md)

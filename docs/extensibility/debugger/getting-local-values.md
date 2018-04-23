@@ -1,27 +1,25 @@
 ---
-title: "获取本地值 |Microsoft 文档"
-ms.custom: 
+title: 获取本地值 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], local values
 - expression evaluation, getting local values
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 284821c9c1a31105f865333a45944a23792cd33a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4b38b346b8429ba04fb3730ea4c5fef0b2b6da1d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-local-values"></a>获取本地值
 > [!IMPORTANT]
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 4.  返回所有请求的属性中[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)结构。  
   
 ## <a name="managed-code"></a>托管代码  
- 此示例演示如何实现`IDebugProperty2::GetPropertyInfo`为一种方法的本地在托管代码中。 它还演示了一个帮助器函数， `Field.GetType`，即用于获取字段的类型。 `Field.GetValue`中所示[评估局部变量](../../extensibility/debugger/evaluating-locals.md)。 Helper 函数`Field.MapModifiersToAttributes`（未显示） 只需转换的一个字段的[FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md)标志到[DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md)值。  
+ 此示例演示如何实现`IDebugProperty2::GetPropertyInfo`为一种方法的本地在托管代码中。 它还演示了一个帮助器函数， `Field.GetType`，即用于获取字段的类型。 `Field.GetValue` 中所示[评估局部变量](../../extensibility/debugger/evaluating-locals.md)。 Helper 函数`Field.MapModifiersToAttributes`（未显示） 只需转换的一个字段的[FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md)标志到[DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md)值。  
   
 ```csharp  
 namespace EEMC  
@@ -442,7 +440,7 @@ HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )
 }  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [局部变量的实现示例](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [获取本地属性](../../extensibility/debugger/getting-local-properties.md)   
  [计算上下文](../../extensibility/debugger/evaluation-context.md)

@@ -1,28 +1,24 @@
 ---
-title: "如何： 创建 Atom 馈送为专用库 |Microsoft 文档"
-ms.custom: 
+title: 如何： 创建 Atom 馈送为专用库 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b966aa30fa2e7e9eae07b56c1a578f9688772a0
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: dc39e4d11d826741239f11f62955fa4d2fb167cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何： 创建 Atom 馈送为专用库
 你可以创建 Atom (RSS) 源到 intranet 位置包含扩展并添加到源**扩展和更新**作为专用库。 有关详细信息，请参阅[专用库](../extensibility/private-galleries.md)。  
@@ -78,5 +74,5 @@ ms.lasthandoff: 03/08/2018
   
  请注意两个链接标记引用的映像的生成文件夹中的屏幕截图。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [专用库](../extensibility/private-galleries.md)

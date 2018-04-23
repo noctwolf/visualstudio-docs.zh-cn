@@ -1,26 +1,24 @@
 ---
-title: "自定义可着色项 |Microsoft 文档"
-ms.custom: 
+title: 自定义可着色项 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 78c4823e3644dc755cef518dcbbba5f42c7aebc1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b23ff39abcb9a1354ea28becab3b7df867378ddf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-colorable-items"></a>自定义可着色项
 你可以重写类型的列表着色，如关键字和注释，通过实现自定义可着色项作为语言服务的一部分。  
@@ -68,7 +66,7 @@ ms.lasthandoff: 12/22/2017
   
  有关如何实现的示例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>接口，请参阅<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [旧语言服务模型](../../extensibility/internals/model-of-a-legacy-language-service.md)   
  [语法着色中自定义编辑器](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [语法着色中旧语言服务](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   

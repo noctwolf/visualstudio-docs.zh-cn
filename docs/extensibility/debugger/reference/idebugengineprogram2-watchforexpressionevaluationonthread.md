@@ -1,29 +1,25 @@
 ---
-title: "IDebugEngineProgram2::WatchForExpressionEvaluationOnThread |Microsoft 文档"
-ms.custom: 
+title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e40af42d1dd639b80ffac3e2f3cf9c4501782b45
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a3f89502beeb1e8165450c7c07f3f55f83dd39e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 允许 （或不允许） 表达式计算上才会出现的给定线程，即使程序已停止。  
@@ -74,7 +70,7 @@ int WatchForExpressionEvaluationOnThread(
   
  程序中的表达式计算可能会导致代码运行在另一个，由于函数求值或评估的任何`IDispatch`属性。 因此，此方法允许运行并完成即使可能在此程序已停止线程的表达式计算。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

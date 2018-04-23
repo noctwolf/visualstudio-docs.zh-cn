@@ -1,27 +1,23 @@
 ---
-title: "如何： 创建自定义文本标记 |Microsoft 文档"
-ms.custom: 
+title: 如何： 创建自定义文本标记 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d30ad5b61f59e6183067ddcc789b2fc796c7aef9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f5c44a507cc291b203fc9ba330b248a854f61b81
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-custom-text-markers"></a>如何： 创建自定义文本标记
 如果你想要创建自定义文本标记，来强调或将代码组织，你必须执行以下步骤：  
@@ -57,15 +53,15 @@ ms.lasthandoff: 12/22/2017
   
     -   DisplayName  
   
-    -   Package  
+    -   包  
   
-    -   `Default`是可选为 REG_SZ 条目。 设置时，项的值是包含一些有用的标识信息，例如"自定义文本标记"的字符串。  
+    -   `Default` 是可选为 REG_SZ 条目。 设置时，项的值是包含一些有用的标识信息，例如"自定义文本标记"的字符串。  
   
-    -   `Service`类型为 REG_SZ 项所在的服务，它提供的自定义文本标记 proffering 此 GUID 字符串<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>。 格式为 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
+    -   `Service` 类型为 REG_SZ 项所在的服务，它提供的自定义文本标记 proffering 此 GUID 字符串<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>。 格式为 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
   
-    -   `DisplayName`类型为 REG_SZ 项所在的自定义文本标记的名称的资源 ID。 格式为 #YYYY。  
+    -   `DisplayName` 类型为 REG_SZ 项所在的自定义文本标记的名称的资源 ID。 格式为 #YYYY。  
   
-    -   `Package`是项的类型 REG_SZ 包含`GUID`VSPackage 提供服务的服务下列出。 格式为 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
+    -   `Package` 是项的类型 REG_SZ 包含`GUID`VSPackage 提供服务的服务下列出。 格式为 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
   
 ### <a name="to-create-a-custom-text-marker"></a>若要创建自定义文本标记  
   
@@ -93,7 +89,7 @@ ms.lasthandoff: 12/22/2017
   
      一个标识你的服务返回唯一的 cookie。 更高版本可以使用此 cookie 撤消你的自定义标记类型服务通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>方法<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService>接口指定此 cookie 值。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用文本标记用于旧 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
  [如何： 实现错误标记](../extensibility/how-to-implement-error-markers.md)   

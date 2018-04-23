@@ -1,27 +1,23 @@
 ---
-title: "导致添加新项对话框 |Microsoft 文档"
-ms.custom: 
+title: 导致添加新项对话框 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 923d95256a3ab0e63bdcf35c7ae38d70a117fa02
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6d8b35537828f99fe3683e03feac3960d6ca4adc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>导致添加新项对话框
 项目子类型可以提供完整的项的新目录**添加新项**通过注册的对话框**添加项**下的模板`Projects`注册表子项。  
@@ -47,6 +43,6 @@ ms.lasthandoff: 12/22/2017
   
  你可以筛选中的项**添加新项**对话框中，通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>项目子类型聚合器对象上的接口。 例如，通过进行聚合来实现的数据库项目的项目子类型才能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]项目中，可以筛选[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]特定项从**添加新项**可通过实现筛选，然后在对话框中打开，则可以添加通过支持数据库项目的特定项`VSHPROPID_ AddItemTemplatesGuid`中<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。 有关详细信息筛选和将项添加到**添加新项**对话框中，请参阅[将项添加到添加新项对话框](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [通常用于扩展项目的对象的 CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

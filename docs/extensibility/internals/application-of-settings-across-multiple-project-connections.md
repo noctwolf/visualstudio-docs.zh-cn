@@ -2,26 +2,22 @@
 title: 跨多个项目连接设置的应用程序 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, application of settings
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
-caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5d66bf7670d5ba9b6423461bdb5e5482819592f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0dff30ea80fb2de9bf4d90ffa48cd2f9b3d40756
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多个项目连接设置的应用程序
 源代码管理插件生成使用源控件的插件 API 1.2 中，可以使用批处理操作来执行相同的源代码管理操作跨多个项目或多个连接上下文。 批处理可以用于消除冗余，每个项目中的用户体验的对话框。  
@@ -29,7 +25,7 @@ ms.lasthandoff: 12/22/2017
  如果用户选择了属于在源代码管理插件的多个连接使用源控件插件 API 1.1 （例如，在不同的文件共享计算机上两个 Web 项目） 生成的多个项，并检查其，用户将看到相同的对话框中重复。 发生这种情况是即使用户单击**应用于所有**复选框在对话框中，因为 IDE 重置其状态为每个连接上下文。  
   
 ## <a name="new-capability-flag"></a>新功能标志  
- `SccBeginBatch`函数集`SCC_CAP_BATCH`标志以指示批处理操作正在进行  
+ `SccBeginBatch` 函数集`SCC_CAP_BATCH`标志以指示批处理操作正在进行  
   
 ## <a name="new-functions"></a>新的函数  
  以下新功能支持批处理操作：  
@@ -38,7 +34,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)  
   
- `SCCBeginBatch`函数开始源代码管理操作的组。 `SccEndBatch`关闭组。 不能嵌套组。  
+ `SCCBeginBatch`函数开始源代码管理操作的组。 `SccEndBatch` 关闭组。 不能嵌套组。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -2,28 +2,24 @@
 title: SccAdd 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
 - SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
-caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52137da9d14920a2fd5213f1110a74d895e51c7f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2933d00b7450f946a5fd5409bcaeecc2527a9f64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccadd-function"></a>SccAdd 函数
 此函数将新文件添加到源代码管理系统。  
@@ -67,7 +63,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|添加操作已成功。|  
 |SCC_E_FILEALREADYEXISTS|所选的文件已位于源代码管理下。|  
@@ -88,16 +84,16 @@ SCCRTN SccAdd(
   
  下面是在中使用的标志的列表`pfOptions`数组：  
   
-|选项|“值”|含义|  
+|选项|值|含义|  
 |------------|-----------|-------------|  
 |SCC_FILETYPE_AUTO|0x00|源代码管理插件应该会检测到的文件类型。|  
 |SCC_FILETYPE_TEXT|0x01|指示一个 ASCII 文本文件。|  
 |SCC_FILETYPE_BINARY|0x02|指示文件类型而非 ASCII 文本。|  
-|SCC_ADD_STORELATEST|0x04，则|存储仅该文件，没有的增量可以保持的最新副本。|  
+|SCC_ADD_STORELATEST|0x04|存储仅该文件，没有的增量可以保持的最新副本。|  
 |SCC_FILETYPE_TEXT_ANSI|0x08|将该文件视为 ANSI 文本。|  
 |SCC_FILETYPE_UTF8|0x10|将文件视作 UTF8 格式中的 Unicode 文本。|  
 |SCC_FILETYPE_UTF16LE|0x20|将文件视作中 UTF16 Unicode 文本稍有 Endian 格式。|  
 |SCC_FILETYPE_UTF16BE|0x40|将文件另存为中 UTF16 Big Endian Unicode 文本格式。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

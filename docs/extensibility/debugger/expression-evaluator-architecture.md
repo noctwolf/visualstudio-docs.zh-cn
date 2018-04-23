@@ -1,27 +1,25 @@
 ---
-title: "表达式计算器体系结构 |Microsoft 文档"
-ms.custom: 
+title: 表达式计算器体系结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, expression evaluators
 - expression evaluators, architecture
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3ccfca52bb4fe2190837202342915e248dbd6167
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7fdcdfef67531af40027a2dfe8c731fe9ba5128f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator-architecture"></a>表达式计算器体系结构
 > [!IMPORTANT]
@@ -39,7 +37,7 @@ ms.lasthandoff: 12/22/2017
  DE 创建实现的对象[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)接口，将`IDebugParsedExpression`对象插入`IDebugExpression2`对象，并返回`IDebugExpression2`对象`IDebugExpressionContext2::ParseText`。  
   
 ### <a name="evaluating-the-expression"></a>计算表达式  
- Visual Studio 调用[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)已分析的表达式进行求值。 这两种方法调用[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync`调用的方法立即，而`IDebugExpression2::EvaluateAsync`调用通过后台线程的方法) 来计算已分析的表达式，并返回[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)表示的值和分析的表达式类型的接口。 `IDebugParsedExpression::EvaluateSync`使用提供的 SH、 地址和联编程序将已分析的表达式转换为一个实际值，由表示`IDebugProperty2`接口。  
+ Visual Studio 调用[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)已分析的表达式进行求值。 这两种方法调用[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync`调用的方法立即，而`IDebugExpression2::EvaluateAsync`调用通过后台线程的方法) 来计算已分析的表达式，并返回[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)表示的值和分析的表达式类型的接口。 `IDebugParsedExpression::EvaluateSync` 使用提供的 SH、 地址和联编程序将已分析的表达式转换为一个实际值，由表示`IDebugProperty2`接口。  
   
 ### <a name="for-example"></a>例如  
  在正在运行的程序命中断点后，用户选择查看中的变量**快速监视**对话框。 此对话框显示变量的名称、 其值和其类型。 通常，用户可以更改值。  
@@ -57,7 +55,7 @@ ms.lasthandoff: 12/22/2017
  [键表达式计算器接口](../../extensibility/debugger/key-expression-evaluator-interfaces.md)  
  描述需要在编写 EE，以及评估上下文时的重要接口。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [显示局部变量](../../extensibility/debugger/displaying-locals.md)   
  [更改局部值](../../extensibility/debugger/changing-the-value-of-a-local.md)

@@ -1,27 +1,23 @@
 ---
-title: "使用编辑器项模板创建扩展 |Microsoft 文档"
-ms.custom: 
+title: 使用编辑器项模板创建扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb66dfffaf8fa8339ce9060c912dc358fb454a7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>使用编辑器项模板创建扩展
 你可以使用 Visual Studio SDK，以创建基本的编辑器扩展添加到编辑器中的分类器、 修饰和边距中包含的项模板。 编辑器项模板是适用于 Visual C# 或 Visual Basic VSIX 项目。  
@@ -102,5 +98,5 @@ ms.lasthandoff: 12/22/2017
   
 4.  生成此项目并启动调试。 实验实例中出现。 如果你打开一个文本文件，水平滚动条下面是否显示绿色边距有单词"Hello EditorMargin1"。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

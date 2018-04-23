@@ -1,29 +1,25 @@
 ---
-title: "IDebugObject::GetValue |Microsoft 文档"
-ms.custom: 
+title: IDebugObject::GetValue |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugObject::GetValue
 helpviewer_keywords:
 - IDebugObject::GetValue method
 ms.assetid: eec6051e-8ecb-49fa-bdd4-dd786f211692
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c96a9224d77f8693226b4474bfed2893b39e27f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 50f65cba807abf4e8a0d7bc85ed28c765f7c6849
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 作为一系列连续字节中获取对象的值。  
@@ -57,5 +53,5 @@ int GetValue(
 ## <a name="remarks"></a>备注  
  获取的值可以通过调用提取的字节总数[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)方法。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,21 +1,18 @@
 ---
-title: "如何： 使用 Visual Studio 扩展基于规则的 UI 上下文 |Microsoft 文档"
-ms.custom: 
+title: 如何： 使用 Visual Studio 扩展基于规则的 UI 上下文 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-ms.workload: vssdk
-ms.openlocfilehash: 92166106c1470aaf1af7198a133495dba333c121
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8597c413c899b54e61e848649c3c524cbdb20724
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何： 使用 Visual Studio 扩展基于规则的 UI 上下文
 Visual Studio 允许加载 Vspackage 时某些已知<xref:Microsoft.VisualStudio.Shell.UIContext>s 被激活。 但是，这些 UI 上下文不是精细粒度，离开无选择的扩展插件作者但选取可用的 UI 上下文的点之前，激活就确实需要小心 VSPackage 加载。 有关的已知 UI 上下文的列表，请参阅<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。  
@@ -137,7 +134,7 @@ Visual Studio 允许加载 Vspackage 时某些已知<xref:Microsoft.VisualStudio
 |ConfigSettingsStoreQuery:\<查询 >|"查询"到配置设置存储区必须计算为非零值表示完整路径。 查询拆分为"集合"和"属性名称"，在最后一个斜杠。|  
 |ActiveProjectFlavor:\<projectTypeGuid >|术语将为 true，只要风格当前选定的项目 （聚合） 并且具有与给定的项目类型 GUID 匹配风格。|  
 |ActiveEditorContentType:\<contentType >|如果选定的文档是与给定的内容类型的文本编辑器，术语将为 true。|  
-|ActiveProjectCapability:\<表达式 >|活动项目功能与提供的表达式匹配时，术语是如此。 表达式可以有类似 VB &#124;CSharp|  
+|ActiveProjectCapability:\<表达式 >|活动项目功能与提供的表达式匹配时，术语是如此。 表达式可以是类似于 VB &#124; CSharp|  
 |SolutionHasProjectCapability:\<表达式 >|在解决方案中包含的表达式匹配任何加载的项目时，与上述相似，但术语是如此。|  
 |SolutionHasProjectFlavor:\<projectTypeGuid >|每当解决方案有风格 （聚合） 的项目，并且具有与给定的项目类型 GUID 匹配风格，术语将为 true。|
 

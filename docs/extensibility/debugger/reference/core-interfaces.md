@@ -1,27 +1,23 @@
 ---
-title: "核心接口 |Microsoft 文档"
-ms.custom: 
+title: 核心接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54ecbe034f4fa7054be2725205a013e5899849e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 45521c0db16ac892d2e0e43e34c4b030075f7be2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="core-interfaces"></a>核心接口
 下列接口是用于通过扩展调试器的核心接口[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。  
@@ -71,7 +67,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Visual Studio (VS)  
   
-##  <a name="Breakpoints"></a>断点  
+##  <a name="Breakpoints"></a> 断点  
  相关这些接口的实现和跟踪断点。  
   
 |接口|由实现|描述|  
@@ -92,7 +88,7 @@ ms.lasthandoff: 12/22/2017
 |[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|通过一组绑定断点表示枚举。|  
 |[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|通过一组无法绑定到的内存位置的断点表示枚举。|  
   
-##  <a name="Contexts"></a>上下文  
+##  <a name="Contexts"></a> 上下文  
  这些接口表示各种类型的上下文内被调试的程序。  
   
 |接口|由实现|描述|  
@@ -106,7 +102,7 @@ ms.lasthandoff: 12/22/2017
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|表示在断点或异常的堆栈帧上下文。|  
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|表示在代码的上下文中的某一集合的枚举。|  
   
-##  <a name="CoreServer"></a>核心服务器  
+##  <a name="CoreServer"></a> 核心服务器  
  这些接口表示正在其调试程序的计算机。 这些功能通过实现[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]，但可以为调用的调试引擎。  
   
 |接口|由实现|描述|  
@@ -114,7 +110,7 @@ ms.lasthandoff: 12/22/2017
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|提供对端口和端口供应商，以及有关计算机的信息的访问。|  
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|表示[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)支持远程调试。|  
   
-##  <a name="DebugEngines"></a>调试引擎  
+##  <a name="DebugEngines"></a> 调试引擎  
  这些接口表示的调试引擎和及其关联的事件。  
   
 |接口|由实现|描述|  
@@ -126,7 +122,7 @@ ms.lasthandoff: 12/22/2017
 |[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE PS|表示处理多个调试引擎的程序节点。|  
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|提供 SDM 接口获得的调试引擎从线程、 程序或堆栈帧的方法。|  
   
-##  <a name="Documents"></a>文档  
+##  <a name="Documents"></a> 文档  
  这些接口表示文档 （源文件） 和其关联的元素。  
   
 |接口|由实现|描述|  
@@ -186,7 +182,7 @@ ms.lasthandoff: 12/22/2017
 |[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|销毁线程时，由 DE 发送。|  
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|当一个线程已更改其名称由 DE 发送。|  
   
-##  <a name="Expressions"></a>表达式  
+##  <a name="Expressions"></a> 表达式  
  这些接口表示要在特定上下文中计算表达式。  
   
 |接口|由实现|描述|  
@@ -195,7 +191,7 @@ ms.lasthandoff: 12/22/2017
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|表示表达式的计算的上下文。 从获取[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)接口。|  
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|由 DE 异步表达式求值完成后发送。|  
   
-##  <a name="Memory"></a>内存  
+##  <a name="Memory"></a> 内存  
  这些接口表示内存中的字节序列。  
   
 |接口|由实现|描述|  
@@ -214,7 +210,7 @@ ms.lasthandoff: 12/22/2017
 |[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|表示 PDB 文件中包含的源服务器信息。|  
 |[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|通过一组模块的已知表示枚举[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)。|  
   
-##  <a name="Ports"></a>端口  
+##  <a name="Ports"></a> 端口  
  这些接口表示端口和端口供应商。  
   
 |接口|由实现|描述|  
@@ -234,7 +230,7 @@ ms.lasthandoff: 12/22/2017
 |[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)|VS PS|通过一组的端口表示枚举。|  
 |[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)|VS|表示在某一端口供应商提供的集合的枚举。|  
   
-##  <a name="Processes"></a>进程  
+##  <a name="Processes"></a> 进程  
  这些接口表示进程，包含一个或多个程序的单个可执行文件。  
   
 |接口|由实现|描述|  
@@ -246,7 +242,7 @@ ms.lasthandoff: 12/22/2017
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|表示必须跟踪会话附加到它的进程。|  
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|表示一组在端口上的进程的枚举。|  
   
-##  <a name="Programs"></a>程序  
+##  <a name="Programs"></a> 程序  
  这些接口表示程序，并不一定对应于物理可执行文件或模块的逻辑单元的执行。  
   
 |接口|由实现|描述|  
@@ -279,7 +275,7 @@ ms.lasthandoff: 12/22/2017
 |[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|通过一组表示枚举[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构用于描述变量、 寄存器、 参数和表达式。|  
 |[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|通过一组表示枚举[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)结构。|  
   
-##  <a name="StackFrames"></a>堆栈帧  
+##  <a name="StackFrames"></a> 堆栈帧  
  这些接口表示一个堆栈帧，上下文断点或异常已发生。  
   
 |接口|由实现|描述|  
@@ -300,7 +296,7 @@ ms.lasthandoff: 12/22/2017
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|当一个线程已更改其名称由 DE 发送。|  
 |[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|表示在线程某一集合的枚举。|  
   
-##  <a name="TypeVisualizers"></a>类型可视化工具  
+##  <a name="TypeVisualizers"></a> 类型可视化工具  
  这些接口为类型可视化工具提供支持。 由表达式计算器，通常会实现这些接口。  
   
 |接口|由实现|描述|  
@@ -309,6 +305,6 @@ ms.lasthandoff: 12/22/2017
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|提供用于获取对要传递给类型可视化工具的数据的访问方法。|  
 |[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|表示一个属性，提供对访问[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)实现。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [创建自定义调试引擎](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

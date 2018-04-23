@@ -1,27 +1,25 @@
 ---
-title: "解决方案 (。Sln) 文件 |Microsoft 文档"
-ms.custom: 
+title: 解决方案 (。Sln) 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - sln files, VSPackages
 - solutions, .sln files
 - .sln files, VSPackages
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ad918b72d38e61fb1670adda8ff1f730987c2aa3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 73d6f7fb83e9420f59122135761ce44ea641fe57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solution-sln-file"></a>解决方案 (。Sln) 文件
 一种解决方案是用于组织 Visual Studio 中的项目的结构。 解决方案维护基于文本的 (共享） 的.sln 和.suo （二进制、 特定于用户的解决方案选项） 文件中的项目的状态信息。 .Suo 文件的详细信息，请参阅[解决方案用户选项 (。Suo) 文件](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  
@@ -96,13 +94,13 @@ EndGlobal
   
  如果没有要保存信息<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>接口称为的指向<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A>方法。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A>方法然后调用由环境后，若要检索的名称-值对从`IPropertyBag`接口，并将信息写入.sln 文件。  
   
- `SaveSolutionProps`和`WriteSolutionProps`对象以递归方式调用由环境以检索用于保存从信息`IPropertyBag`接口之前的所有更改都已都输入到.sln 文件。 这种方式，可以确保将使用的解决方案和可用下次打开解决方案时保留的信息。  
+ `SaveSolutionProps` 和`WriteSolutionProps`对象以递归方式调用由环境以检索用于保存从信息`IPropertyBag`接口之前的所有更改都已都输入到.sln 文件。 这种方式，可以确保将使用的解决方案和可用下次打开解决方案时保留的信息。  
   
  每个加载的 VSPackage 枚举以查看是否有任何内容将保存到.sln 文件。 它是仅在注册表项都查询的加载时间。 因为它们在内存中保存解决方案时，则环境知道有关的所有加载的包。  
   
  只有.sln 文件包含中的条目`preSolution`和`postSolution`部分。 没有类似部分.suo 文件中由于解决方案需要此信息来正确加载。 .Suo 文件包含特定于用户的选项，例如，不应共享或放置在源代码管理下的私人便笺。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   
  [解决方案用户选项 (。Suo) 文件](../../extensibility/internals/solution-user-options-dot-suo-file.md)   
  [解决方案](../../extensibility/internals/solutions.md)

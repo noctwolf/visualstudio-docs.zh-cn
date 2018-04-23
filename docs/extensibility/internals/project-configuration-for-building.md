@@ -1,26 +1,24 @@
 ---
-title: "项目生成的配置 |Microsoft 文档"
-ms.custom: 
+title: 项目生成的配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2d8f37068d197d133ba8798703c8f82093261aca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4d78ac1cabc356db162639d3eb19d0bff71e295e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-configuration-for-building"></a>生成的项目配置
 由解决方案配置对话框中，给定的解决方案的解决方案配置的列表进行管理。  
@@ -51,9 +49,9 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  已通过显式指定的依赖关系由于环境添加项目列表中的，具有其复选框处于选中状态，但它们显示为灰色<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>接口，并不能更改。 例如，添加项目引用从[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]到另一个项目的项目会自动添加只能删除通过删除该引用的生成依赖项。 不能选择的项目的复选框是很明显，并显示为灰色，因为这样会在创建依赖关系循环 （例如，Project1 将依赖于 Project2，和将依赖于 Project1 Project2），这将停止生成。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]生成过程中，包括典型编译和链接使用单个生成命令调用的操作。 此外可以支持两个其他生成进程： 从之前的版本和最新的检查，以确定是否已更改配置中的输出项中删除所有输出项的清理操作。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 生成过程中，包括典型编译和链接使用单个生成命令调用的操作。 此外可以支持两个其他生成进程： 从之前的版本和最新的检查，以确定是否已更改配置中的输出项中删除所有输出项的清理操作。  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>对象返回相应<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>(从返回<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) 来管理它们生成的进程。 若要报告生成操作的状态，正在进行中时，配置进行了调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>、 一个接口实现由下的环境和任何其他对象是否有兴趣生成状态事件。  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> 对象返回相应<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>(从返回<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) 来管理它们生成的进程。 若要报告生成操作的状态，正在进行中时，配置进行了调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>、 一个接口实现由下的环境和任何其他对象是否有兴趣生成状态事件。  
   
  生成后，配置设置可以用于确定可以运行这些受控制的调试器。 配置实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>以支持调试。  
   
@@ -61,7 +59,7 @@ ms.lasthandoff: 12/22/2017
   
  此外，你可以提供的网格项目依赖关系窗口中。 有关详细信息，请参阅[属性显示网格](../../extensibility/internals/properties-display-grid.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [管理配置选项](../../extensibility/internals/managing-configuration-options.md)   
  [用于管理部署的项目配置](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
  [用于输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)

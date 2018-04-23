@@ -1,27 +1,23 @@
 ---
-title: "异常处理 (Visual Studio SDK) |Microsoft 文档"
-ms.custom: 
+title: 异常处理 (Visual Studio SDK) |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], exception handling
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88a862c26dad97eecdb5f372f41a76d7886f32be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 646479184061b093d5d84f81827a4106bd3cda47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>异常处理 (Visual Studio SDK)
 下面描述所发生异常时的过程。  
@@ -40,7 +36,7 @@ ms.lasthandoff: 12/22/2017
   
     -   如果该方法返回，则为 S_OK，则调用[IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)。  
   
-         或  
+         -或-  
   
          如果该方法返回 S_FALSE，该程序正在调试有第二个机会处理异常。  
   
@@ -54,5 +50,5 @@ ms.lasthandoff: 12/22/2017
   
 10. 如果该方法返回，则为 S_OK，则调用`IDebugExceptionEvent2::PassToDebuggee`。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

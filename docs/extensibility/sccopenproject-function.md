@@ -2,28 +2,24 @@
 title: SccOpenProject 函数 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10afe84716153b67c419f4ddbd1a7b838b68cbf9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 15d9cf6d5fa4533b5ee0ff65f8aeae86df3d571a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 函数
 此函数打开现有的源代码管理项目，或创建一个新。  
@@ -70,12 +66,12 @@ SCCRTN SccOpenProject (
  [in]可选的回调函数显示从源代码管理插件输出的文本。  
   
  dwFlags  
- [in]信号是否需要如果项目是未知的源创建新项目控制插件。 值可以是的组合`SCC_OP_CREATEIFNEW`和`SCC_OP_SILENTOPEN.`  
+ [in]信号是否需要如果项目是未知的源创建新项目控制插件。 值可以是的组合`SCC_OP_CREATEIFNEW`和 `SCC_OP_SILENTOPEN.`  
   
 ## <a name="return-value"></a>返回值  
  此函数的源代码控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|打开项目的成功。|  
 |SCC_E_INITIALIZEFAILED|无法初始化项目。|  
@@ -94,9 +90,9 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  IDE 可能还需要执行的第一个操作可能是对的调用`SccOpenProject`函数或[SccGetProjPath](../extensibility/sccgetprojpath-function.md)。 因此，这两个具有相同`lpUser`参数。  
   
- `lpAuxProjPath`和`lpProjName`读取解决方案文件，或它们返回到调用`SccGetProjPath`函数。 这些参数包含源代码管理插件将与项目相关联的字符串，并且仅对插件有意义。 如果没有此类字符串中的解决方案文件并且用户不提示浏览 (这将返回一个字符串通过`SccGetProjPath`函数)，IDE 将空字符串传递两个`lpAuxProjPath`和`lpProjName`，而且我们预期要更新这些值通过插件在此函数返回。  
+ `lpAuxProjPath` 和`lpProjName`读取解决方案文件，或它们返回到调用`SccGetProjPath`函数。 这些参数包含源代码管理插件将与项目相关联的字符串，并且仅对插件有意义。 如果没有此类字符串中的解决方案文件并且用户不提示浏览 (这将返回一个字符串通过`SccGetProjPath`函数)，IDE 将空字符串传递两个`lpAuxProjPath`和`lpProjName`，而且我们预期要更新这些值通过插件在此函数返回。  
   
- `lpTextOutProc`是由源代码管理插件用于显示命令结果输出到 IDE 提供的回调函数指针。 中详细描述此回调函数[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)。  
+ `lpTextOutProc` 是由源代码管理插件用于显示命令结果输出到 IDE 提供的回调函数指针。 中详细描述此回调函数[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)。  
   
 > [!NOTE]
 >  如果打算充分利用此源代码管理插件，它必须为其设置`SCC_CAP_TEXTOUT`中标记出来[SccInitialize](../extensibility/sccinitialize-function.md)。 如果未设置该标志，或者如果 IDE 不支持此功能，`lpTextOutProc`将`NULL`。  
@@ -111,7 +107,7 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  `SCC_CAP_REENTRANT`源控件插件 API 版本 1.1 中引入了位。 其未设置或版本 1.0，在将被忽略，并且所有版本 1.0 源控件插件都被都认为是 nonreentrant。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccCloseProject](../extensibility/scccloseproject-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)   

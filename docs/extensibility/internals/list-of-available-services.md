@@ -1,29 +1,27 @@
 ---
-title: "可用服务列表 |Microsoft 文档"
-ms.custom: 
+title: 可用服务列表 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
-caps.latest.revision: "49"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 50016483ea1fa5a04c41e49493eda92b6a270b8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6f2caeaee433fc0c47d8332c4443d104e26a7ee7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-of-available-services"></a>可用服务列表
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]和 Visual Studio SDK 支持以下服务。 某些包提供未在此处列出其自己服务 — 例如，语言服务没有单个服务 GUID。 你必须使用的语言的名称来在注册表中查找语言服务的 GUID。  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和 Visual Studio SDK 支持以下服务。 某些包提供未在此处列出其自己服务 — 例如，语言服务没有单个服务 GUID。 你必须使用的语言的名称来在注册表中查找语言服务的 GUID。  
   
  使用此处列出或从某个其他源 （例如，语言服务） 中获取的服务 Guid 来获取主接口或显示与每个服务的接口。  
   
@@ -161,6 +159,6 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>|是|是|使 VSPackage 来获取包的一部分可能位于窗口框架。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|是|是|提供对与特定的元数据文件相关联的 XML 格式的文档文件的访问。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [COM 和托管的服务](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
  [使用并提供服务](../../extensibility/using-and-providing-services.md)

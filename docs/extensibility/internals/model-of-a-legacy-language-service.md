@@ -2,26 +2,22 @@
 title: 旧语言服务模型 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: 20
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 943f0f013045e3082af3069ed4d45aaed1096869
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-of-a-legacy-language-service"></a>旧语言服务模型
 语言服务定义的元素和特定语言的功能，用于提供对该语言的特定信息的编辑器。 例如，编辑器需要知道的元素和语言关键字，才能支持语法突出显示。  
@@ -52,7 +48,7 @@ ms.lasthandoff: 12/22/2017
 |“代码”窗口|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|文档窗口，其中包含一个或多个文本视图。 当[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是在多文档界面 (MDI) 模式下，代码窗口是 MDI 子窗体。|  
 |文本视图|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|窗口可让用户导航并通过使用键盘和鼠标查看文本。 作为一个编辑器，向用户显示的文本视图。 您可以使用普通的编辑器窗口、 输出窗口和即时窗口中的文本视图。 此外，你可以配置代码窗口中的一个或多个文本视图。|  
 |文本管理器|由<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>服务，无法获取的其中<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>指针|维护由前面所述的所有组件共享的通用信息的组件。|  
-|语言服务|依赖于; 实现实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|一个对象，提供特定于语言的信息，如语法突出显示、 语句完成和大括号匹配的编辑器。|  
+|语言服务|依赖于; 实现实现 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|一个对象，提供特定于语言的信息，如语法突出显示、 语句完成和大括号匹配的编辑器。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [自定义编辑器中的文档数据和文档视图](../../extensibility/document-data-and-document-view-in-custom-editors.md)

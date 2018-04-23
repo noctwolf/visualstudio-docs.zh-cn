@@ -1,12 +1,10 @@
 ---
-title: "Excel 对象模型概述 |Microsoft 文档"
-ms.custom: 
+title: Excel 对象模型概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bbf76579baeebfabf3ec796498c20b32feed4cac
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="excel-object-model-overview"></a>Excel Object Model Overview
   若要开发使用 Microsoft Office Excel 的解决方案，可与由 Excel 对象模型提供的对象进行交互。 本主题介绍最重要的对象：  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
  本主题概要介绍 Excel 对象模型。 有关可从中了解关于整个 Excel 对象模型的详细的资源，请参阅[使用 Excel 对象模型文档](#ExcelOMDocumentation)。  
   
- ![视频链接](../vsto/media/playvideo.gif "视频链接")相关的视频演示，请参阅[如何执行 i： 使用事件处理程序 Excel 2007 外接程序中？](http://go.microsoft.com/fwlink/?LinkID=130291)，和[如何执行 i： 使用形状创建气泡图在 Excel 中的图表？](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![视频链接](../vsto/media/playvideo.gif "视频链接")相关的视频演示，请参阅[如何执行 i： 使用事件处理程序 Excel 2007 外接程序中？](http://go.microsoft.com/fwlink/?LinkID=130291)，和[如何执行 i： 使用形状创建气泡图在 Excel 中？](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="accessing-objects-in-an-excel-project"></a>访问 Excel 项目中的对象  
  为 Excel 创建新的 VSTO 外接程序项目时，Visual Studio 将自动创建 ThisAddIn.vb 或 ThisAddIn.cs 代码文件。 可以通过使用 `Me.Application` 或 `this.Application` 访问应用程序对象。  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 |Sheet2.vb|Sheet2.cs|  
 |Sheet3.vb|Sheet3.cs|  
   
- 可以在项目中使用 `Globals` 类来从各个类的外部访问 `ThisWorkbook`、`Sheet1`、`Sheet2` 或 `Sheet3`。 有关详细信息，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。 下面的示例调用<xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>方法`Sheet1`而不考虑是否将代码放置在之一`Sheet`  *n* 类或`ThisWorkbook`类。  
+ 可以在项目中使用 `Globals` 类来从各个类的外部访问 `ThisWorkbook`、`Sheet1`、`Sheet2` 或 `Sheet3`。 有关详细信息，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。 下面的示例调用<xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>方法`Sheet1`而不考虑是否将代码放置在之一`Sheet` *n*类或`ThisWorkbook`类。  
   
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]  
@@ -102,7 +101,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio 通过提供 <xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 类型来扩展 <xref:Microsoft.Office.Interop.Excel.Range> 对象。 这些类型具有与 <xref:Microsoft.Office.Interop.Excel.Range> 对象相同的大部分功能以及数据绑定功能等新功能和新事件。 有关详细信息，请参阅[NamedRange 控件](../vsto/namedrange-control.md)和[XmlMappedRange 控件](../vsto/xmlmappedrange-control.md)。  
   
-##  <a name="ExcelOMDocumentation"></a>使用 Excel 对象模型文档  
+##  <a name="ExcelOMDocumentation"></a> 使用 Excel 对象模型文档  
  有关 Excel 对象模型的完整信息，可以参考 Excel 主互操作程序集 (PIA) 引用和 VBA 对象模型引用。  
   
 ### <a name="primary-interop-assembly-reference"></a>主互操作程序集引用  

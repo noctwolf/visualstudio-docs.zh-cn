@@ -1,27 +1,23 @@
 ---
-title: "在启动后附加 |Microsoft 文档"
-ms.custom: 
+title: 在启动后附加 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 890023b8336f130cf3b8cfcfe640da46af9cf0d1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 69f9f9cde76c5fa66294fd2cdbdc5252169e0183
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="attaching-after-a-launch"></a>在启动后附加
 已启动程序后，调试会话已准备好的调试引擎 (DE) 附加到所述的程序。  
@@ -49,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
  DE 现在被附加到程序和准备好发送任何启动事件。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [附加到的程序直接](../../extensibility/debugger/attaching-directly-to-a-program.md)   
  [通知端口](../../extensibility/debugger/notifying-the-port.md)   
  [调试任务](../../extensibility/debugger/debugging-tasks.md)   

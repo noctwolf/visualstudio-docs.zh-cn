@@ -1,27 +1,23 @@
 ---
-title: "属性窗口概述 |Microsoft 文档"
-ms.custom: 
+title: 属性窗口概述 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f766fe903df4f7a7ea36fb4ec1654b889457f65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e255795a52064723477eda4e1aca532adedb6be1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-overview"></a>属性窗口概述
 **属性**窗口用于显示在 windows 中提供两种主要类型中选择的对象的属性[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。 Windows 这两种类型是：  
@@ -44,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|提供的类别对列表**属性**窗口，并将每个属性映射到类别。|  
 |[IDispatch 接口](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)|公开对象的方法和为编程工具和其他应用程序支持自动化的属性。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|提供的省略号 （...） 按钮调用*生成器*打开模式对话框 windows 实现的对象本身。 在文本字段中用户无法轻松地键入一个值时使用。 例如，它可能用于打开颜色选取器，它为你确定的 RGB 值。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|提供用于更新中显示的信息的对象的访问权限**属性**窗口。 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>是为每个窗口，其中包含要显示相关属性与可选择对象实现的 Vspackage。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|提供用于更新中显示的信息的对象的访问权限**属性**窗口。 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 是为每个窗口，其中包含要显示相关属性与可选择对象实现的 Vspackage。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|提供接口和结构的字段的信息 （例如方法） 的对象的类型。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|使 Vspackage 可以接收通知的选择事件，以及如何检索有关当前项目层次结构、 项、 元素值和命令 UI 上下文的信息。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|提供有权访问多个选择的环境。|  
@@ -54,6 +50,6 @@ ms.lasthandoff: 12/22/2017
   
  有关详细信息`IDispatch`，请参阅 MSDN 库。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [扩展属性](../../extensibility/internals/extending-properties.md)   
  [属性窗口字段和界面](../../extensibility/internals/properties-window-fields-and-interfaces.md)

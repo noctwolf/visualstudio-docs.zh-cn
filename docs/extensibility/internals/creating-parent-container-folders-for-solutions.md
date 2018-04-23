@@ -1,26 +1,24 @@
 ---
-title: "为解决方案创建父容器文件夹 |Microsoft 文档"
-ms.custom: 
+title: 为解决方案创建父容器文件夹 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b2aa63a0c55ad196edf6c209475a816c0c3c027c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2104c0c109db0d410cbd08683ce227c62982fd65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>为解决方案创建父容器文件夹
 在源控件插件 API 版本 1.2，用户可以指定单个根源控件目标的解决方案中的所有 Web 项目。 此单个根称为超级统一根 (SUR)。  
@@ -64,9 +62,9 @@ ms.lasthandoff: 12/22/2017
   
  无论该操作已取消还是因出错而失败情况下，会创建 SUR 文件夹和子文件夹。 它们不会自动删除在取消或错误条件。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]如果源代码管理插件不返回默认为版本 1.1 行为`SCC_CAP_CREATESUBPROJECT`和`SCC_CAP_GETPARENTPROJECT`功能标志。 此外，用户的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以选择通过将以下项的值设置为 dword: 00000001 恢复到版本 1.1 行为：  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 如果源代码管理插件不返回默认为版本 1.1 行为`SCC_CAP_CREATESUBPROJECT`和`SCC_CAP_GETPARENTPROJECT`功能标志。 此外，用户的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以选择通过将以下项的值设置为 dword: 00000001 恢复到版本 1.1 行为：  
   
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl"= dword: 00000001  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

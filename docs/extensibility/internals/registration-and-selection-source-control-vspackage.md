@@ -1,26 +1,24 @@
 ---
-title: "注册和选择 (源控件 VSPackage) |Microsoft 文档"
-ms.custom: 
+title: 注册和选择 (源控件 VSPackage) |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b0f02abe4cad58db27700aee3c29ec8d2dd7a7e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1d7bcdb8f930430ac00335777e2c088ce52a34bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>注册和选择 (源控件 VSPackage)
 必须注册 VSPackage 来公开到源代码管理[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 如果注册多个源控件 VSPackage 时，用户可以选择哪些 VSPackage 加载在适当的时间。 请参阅[Vspackage](../../extensibility/internals/vspackages.md)有关 Vspackage 以及如何对它们进行注册的更多详细信息。  
@@ -53,7 +51,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="selecting-a-source-control-package"></a>选择源代码管理包  
  多个基于源控制插件 API 的插件和源代码的管理可能同时注册 Vspackage。 选择源代码管理插件或 VSPackage 的过程必须确保[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]加载插件或 VSPackage 在适当的时间，并可以推迟加载不必要的组件，直到它们是必需的。 此外，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必须从其他非活动状态的 Vspackage，包括菜单项、 对话框和工具栏，删除所有的 UI，并显示为活动的 VSPackage 的 UI。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]加载源代码管理 VSPackage 时执行以下操作之一：  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 加载源代码管理 VSPackage 时执行以下操作之一：  
   
 -   （当解决方案时在源代码管理下），打开解决方案。  
   
@@ -64,14 +62,14 @@ ms.lasthandoff: 12/22/2017
  VSPackage 应加载仅时它们实际上会成为所需的任何组件的源控件使用 （也称为延迟加载）。  
   
 ### <a name="automatic-solution-based-vspackage-swapping"></a>自动基于解决方案的 VSPackage 交换  
- 你可以手动交换源代码管理 Vspackage 通过[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**选项**对话框中的下**源代码管理**类别。 基于解决方案包自动交换意味着打开该解决方案时，已指派给特定解决方案源代码管理包自动设置为活动。 每个源代码管理包应实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]处理这两个之间交换机源控件的插件 （实现源控件插件 API） 和源控件，Vspackage。  
+ 你可以手动交换源代码管理 Vspackage 通过[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**选项**对话框中的下**源代码管理**类别。 基于解决方案包自动交换意味着打开该解决方案时，已指派给特定解决方案源代码管理包自动设置为活动。 每个源代码管理包应实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 处理这两个之间交换机源控件的插件 （实现源控件插件 API） 和源控件，Vspackage。  
   
  源代码管理适配器包用于切换到任何基于源控制插件 API 的插件。 切换到中间的源控件适配器包并确定哪些源代码管理插件的过程必须设置为活动或非活动用户是透明的。 适配器包始终处于活动状态的任何源代码管理插件处于活动状态时。 只需加载和卸载插件 DLL 的两个源控制插件金额之间切换。 切换到源控件 VSPackage，但是，涉及 IDE 加载相应的 VSPackage，与之进行交互。  
   
  源代码管理打开的任何解决方案和 VSPackage 的注册表项是在解决方案文件时调用 VSPackage。 当打开解决方案时，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]查找注册表值并加载相应的源控件 VSPackage。 所有源控件 Vspackage 必须都具有上面所述的注册表项。 在源代码管理下的解决方案被标记为正在与特定的源代码管理 VSPackage 关联。 源的控件，Vspackage 必须实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>若要启用自动基于解决方案的 VSPackage 交换。  
   
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Visual Studio 为包选择和切换用户界面  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供用于源代码管理 VSPackage 的 UI 和中的插件选定内容**选项**对话框中的下**源代码管理**类别。 它允许用户选择活动的源代码管理插件或 VSPackage。 下拉列表包括：  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供用于源代码管理 VSPackage 的 UI 和中的插件选定内容**选项**对话框中的下**源代码管理**类别。 它允许用户选择活动的源代码管理插件或 VSPackage。 下拉列表包括：  
   
 -   所有已安装的源代码管理包  
   
@@ -83,7 +81,7 @@ ms.lasthandoff: 12/22/2017
   
  与以前版本的不同[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，IDE 不再重新启动切换 Vspackage 的源代码管理的唯一方法。 VSPackage 选择是自动的。 切换包需要 Windows 用户特权 （不管理员或超级用户）。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   
  [功能](../../extensibility/internals/source-control-vspackage-features.md)   
  [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)   

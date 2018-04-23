@@ -1,26 +1,24 @@
 ---
-title: "将菜单添加到 Visual Studio 菜单栏 |Microsoft 文档"
-ms.custom: 
+title: 将菜单添加到 Visual Studio 菜单栏 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus, creating top level
 - top-level menus
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
-caps.latest.revision: "51"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7e334a148a205338a872e9581bce1c3c1a70b7df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 3a391da85c38176d79a1c77ce8836ce510e8d27e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>将菜单添加到 Visual Studio 菜单栏
 本演练演示如何向 Visual Studio 集成的开发环境 (IDE) 的菜单栏添加菜单。 IDE 菜单栏包含菜单类别如**文件**，**编辑**，**视图**，**窗口**，和**帮助**.  
@@ -97,5 +95,5 @@ ms.lasthandoff: 12/22/2017
   
      一个消息框应该显示，并显示消息"第包内 TopLevelMenu.TestCommand.MenuItemCallback() TestCommand"。 这表示该新命令起作用。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -2,28 +2,24 @@
 title: IEnumDebugFrameInfo2::Skip |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEnumDebugFrameInfo2::Skip
 helpviewer_keywords:
 - IEnumDebugFrameInfo2::Skip
 ms.assetid: 68cd3948-022a-41ad-bd9f-9ab776cf6248
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 364afea4082d1855f92f71f98441422d3f732189
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 450b74909b27f452a2a9f5383436ac9486cb2228
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ienumdebugframeinfo2skip"></a>IEnumDebugFrameInfo2::Skip
 跳过指定数量的元素。  
@@ -52,5 +48,5 @@ int Skip(
 ## <a name="remarks"></a>备注  
  如果`celt`指定一个值大于数剩余元素的枚举设置为结束和`S_FALSE`返回。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

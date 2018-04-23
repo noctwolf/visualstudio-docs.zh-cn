@@ -1,27 +1,25 @@
 ---
-title: "创建可重用的按钮的组 |Microsoft 文档"
-ms.custom: 
+title: 创建可重用的按钮的组 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - button groups, creating in VSPackages
 - VSPackages, creating reusable button groups
 - buttons, creating reusable groups
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
-caps.latest.revision: "44"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c2ac175d2fd267500f19e9f22cd46d88dcc9f314
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 97ee7cc2ec63a94036472ccce07b1dc9fa736504
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>创建可重用的按钮的组
 命令组是一套始终可以一起出现，菜单或工具栏的命令。 可以将其分配给不同的父菜单的.vsct 文件的 CommandPlacements 部分中重新使用任何命令组。  
@@ -46,7 +44,7 @@ ms.lasthandoff: 12/22/2017
     </GuidSymbol>  
     ```  
   
-     默认情况下，命令项模板创建一个名为组**MyGroup**和一个按钮，已提供，以及每个 IDSymbol 条目的名称。  
+     默认情况下，命令项模板创建一个名为组**MyMenuGroup**和一个按钮，已提供，以及每个 IDSymbol 条目的名称。  
   
 5.  在组部分中，创建具有给定符号部分中的相同的 GUID 和 ID 属性的组元素。 你也可以使用现有组，或使用提供的命令模板，如以下示例所示的条目。 此组将出现在**工具**菜单  
   

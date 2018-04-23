@@ -1,27 +1,25 @@
 ---
-title: "注册项目类型 |Microsoft 文档"
-ms.custom: 
+title: 注册项目类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8e6c91f2c92dd121cd135aef4291c7f7983206ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-project-type"></a>注册项目类型
 在创建新的项目类型时，你必须创建注册表条目，用于启用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以识别并使用你的项目类型。 通常情况下，通过使用注册表脚本 (.rgs) 文件需要创建这些注册表项。  
@@ -51,7 +49,7 @@ ms.lasthandoff: 12/22/2017
    @="devenv.exe \"%1\""  
 ```  
   
-|name|类型|数据|描述|  
+|名称|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrjFile`|名称和具有扩展.figp 项目类型文件的说明。|  
 |`Content Type`|REG_SZ|`Text/plain`|项目文件的内容类型。|  
@@ -83,9 +81,9 @@ ms.lasthandoff: 12/22/2017
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
 ```  
   
-|name|类型|数据|描述|  
+|名称|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
-|`@`（默认值）|REG_SZ|`FigPrj Project VSPackage`|这可本地化的名称注册 VSPackage （项目类型）。|  
+|`@` （默认值）|REG_SZ|`FigPrj Project VSPackage`|这可本地化的名称注册 VSPackage （项目类型）。|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|项目类型 DLL 的路径。 IDE 加载此 DLL，并将传递到 VSPackage CLSID`DllGetClassObject`获取<xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory>构造<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>对象。|  
 |`CompanyName`|REG_SZ|`Microsoft`|开发项目类型的公司名称。|  
 |`ProductName`|REG_SZ|`Figure Project Sample`|对于项目类型的名称。|  
@@ -134,7 +132,7 @@ ms.lasthandoff: 12/22/2017
    "SortPriority"=dword:00000064  
 ```  
   
-|name|类型|数据|描述|  
+|名称|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrj Project`|此类型的项目的默认名称。|  
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|在包下注册的名称的资源 ID，从附属 DLL 中检索。|  
@@ -174,7 +172,7 @@ ms.lasthandoff: 12/22/2017
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|name|类型|数据|描述|  
+|名称|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|新的项目模板的资源 ID。|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|默认为已注册的项目类型的项目的路径。|  
@@ -195,7 +193,7 @@ ms.lasthandoff: 12/22/2017
    "SortPriority"=dword:00000064  
 ```  
   
-|name|类型|数据|描述|  
+|名称|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|无|默认值，该值指示以下条目适用于的杂项文件项目项。|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|添加新项模板文件的资源 ID 值。|  
@@ -224,7 +222,7 @@ ms.lasthandoff: 12/22/2017
   
  最后一个字段标识 CTMENU 资源的版本号。 你可以通过更改的版本号试合并菜单。  
   
-|name|类型|数据|描述|  
+|名称|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
 |%Clsid_package%|REG_SZ|`,1000,1`|要检索的菜单信息的资源。|  
   
@@ -238,7 +236,7 @@ ms.lasthandoff: 12/22/2017
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|name|类型|数据|描述|  
+|名称|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|数字项目新项目模板的资源 ID 值。|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|新的项目目录的默认路径。 此目录中的项将显示在**新项目向导**对话框。|  
@@ -253,7 +251,7 @@ ms.lasthandoff: 12/22/2017
    "UseInterface"=dword:00000001  
 ```  
   
-|name|类型|数据|描述|  
+|名称|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
 |`Package`|REG_SZ|`%CLSID_Package%`|已注册 VSPackage 的类 ID。|  
 |`UseInterface`|REG_DWORD|`1`|1 表示 UI 将用于与此项目进行交互。 0 指示没有 UI 界面。|  
@@ -268,7 +266,7 @@ ms.lasthandoff: 12/22/2017
   
  这意味着如果包括 PROJECT_TYPE =.vsz 文件，环境会找到你.vsz 文件中指定以前的 ProductDir 目录中的 EF 条目。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [清单： 创建新项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [项目模型的元素](../../extensibility/internals/elements-of-a-project-model.md)   
  [使用项目工厂创建项目实例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

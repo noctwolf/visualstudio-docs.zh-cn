@@ -1,26 +1,24 @@
 ---
-title: "注册互操作程序集命令处理程序 |Microsoft 文档"
-ms.custom: 
+title: 注册互操作程序集命令处理程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a25f8adc91efe9d9e8b96079b4fe2e35145abf25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a4b2c0d40029cbc84d64a4ffe5ee50c59c893b95
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>注册互操作程序集命令处理程序
 VSPackage 必须注册[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，以便集成的开发环境 (IDE) 将正确路由其命令。  
@@ -58,7 +56,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 |-------------|-----------------|  
 |\<*资源 DLL 路径*>|这是资源包含菜单资源 DLL 的完整路径或此保留为空，指示 VSPackage 的资源 DLL 要使用 （如指定在其中注册 VSPackage 本身的包子项）。<br /><br /> 它是通常将此字段保留为空。|  
 |\<*菜单资源 ID*>|这是资源 ID `CTMENU` vspackage 包含所有的 UI 元素，如从编译的资源[.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)文件。|  
-|\<*菜单版本*>|这是用来为进行版本`CTMENU`资源。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用此值来确定它是否需要 remerge 的内容`CTMENU`具有其缓存的所有资源`CTMENU`资源。 Remerge 触发的执行 devenv 安装程序命令。<br /><br /> 此值应最初设置为 1，在每次更改后递增`CTMENU`资源和 remerge 发生之前。|  
+|\<*菜单版本*>|这是用来为进行版本`CTMENU`资源。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用此值来确定它是否需要 remerge 的内容`CTMENU`具有其缓存的所有资源`CTMENU`资源。 Remerge 触发的执行 devenv 安装程序命令。<br /><br /> 此值应最初设置为 1，在每次更改后递增`CTMENU`资源和 remerge 发生之前。|  
   
 ### <a name="example"></a>示例  
  下面是几个资源条目示例：  
@@ -70,6 +68,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [使用互操作程序集的命令和菜单](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

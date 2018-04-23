@@ -1,27 +1,25 @@
 ---
-title: "在 Vspackage 中的资源 |Microsoft 文档"
-ms.custom: 
+title: 在 Vspackage 中的资源 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, resources in
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ee9d108e7a7a6a5bd971b20c12858edf28ac0cf3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d252f61a9f634f4bb8435626c41c586bbe5cb839
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resources-in-vspackages"></a>在 Vspackage 中的资源
 你可以在本机附属 UI Dll 托管的附属 Dll 或托管的 VSPackage 本身中嵌入的本地化的资源。  
@@ -85,10 +83,10 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```  
   
 ## <a name="implementation-notes"></a>实现说明  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]只要有可能的 Vspackage 的延迟加载。 在 VSPackage 中嵌入首席技术官文件的结果是，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必须在安装期间，这是在构建合并的命令表时将加载在内存中的所有此类 Vspackage。 通过检查元数据，而无需在 VSPackage 中运行代码，可以从 VSPackage 中提取资源。 最小的性能损失而在此时，VSPackage 未初始化。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 只要有可能的 Vspackage 的延迟加载。 在 VSPackage 中嵌入首席技术官文件的结果是，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必须在安装期间，这是在构建合并的命令表时将加载在内存中的所有此类 Vspackage。 通过检查元数据，而无需在 VSPackage 中运行代码，可以从 VSPackage 中提取资源。 最小的性能损失而在此时，VSPackage 未初始化。  
   
  当[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]从安装后，VSPackage 的资源的请求，该程序包很可能已加载并初始化，因此是最小的性能损失。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [管理 Vspackage](../../extensibility/managing-vspackages.md)   
  [MFC 应用程序中已本地化的资源：附属 DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)   

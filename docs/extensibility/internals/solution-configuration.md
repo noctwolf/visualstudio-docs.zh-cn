@@ -1,27 +1,23 @@
 ---
-title: "解决方案配置 |Microsoft 文档"
-ms.custom: 
+title: 解决方案配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 129f86fae5de5501d72b0cdbe5e261717e60e780
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f7b2a453d4ea4e8b92b40ee126f9441e6f353606
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solution-configuration"></a>解决方案配置
 解决方案配置存储解决方案级别的属性。 它们指示的行为**启动**(f5) 和**生成**命令。 默认情况下，这些命令将生成并启动调试配置。 解决方案配置的上下文中执行这两个命令。 这意味着用户可以启动和生成通过设置配置任何活动解决方案中期望 F5。 环境旨在针对解决方案而不是项目到构建和运行时进行优化。  
@@ -61,7 +57,7 @@ ms.lasthandoff: 12/22/2017
   
  一旦添加新的解决方案配置，用户可以选择它从要生成和/或启动该配置标准工具栏上的解决方案配置下拉列表框。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [管理配置选项](../../extensibility/internals/managing-configuration-options.md)   
  [生成的项目配置](../../extensibility/internals/project-configuration-for-building.md)   
  [项目配置对象](../../extensibility/internals/project-configuration-object.md)

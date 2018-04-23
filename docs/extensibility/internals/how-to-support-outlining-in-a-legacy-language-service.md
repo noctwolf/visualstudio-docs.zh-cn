@@ -1,27 +1,25 @@
 ---
-title: "如何： 支持旧语言服务中的大纲显示 |Microsoft 文档"
-ms.custom: 
+title: 如何： 支持旧语言服务中的大纲显示 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
 - language services, supporting Collapse to Definitions command
 - hidden text, Collapse to Definitions command
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fa57b0d09cb8422a9dde1f70306d2f3808b0384e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: f9880c5c255118478d15f34f9a9245a1c25d97fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何： 支持旧语言服务中的大纲显示
 以大纲方式显示用于展开或折叠的文本的不同区域。 方式大纲显示使用不同的语言可以以不同方式定义。 有关详细信息，请参阅[大纲显示](../../ide/outlining.md)。  
@@ -49,6 +47,6 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  请谨慎使用隐藏新行字符。 隐藏的文本应将扩展从第一个行的开头到最后一个字符的部分中，仅显示最后一个新行字符的最后一行。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [如何： 隐藏的文本在提供支持，旧语言服务](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
  [如何：提供旧版语言服务中扩展的大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

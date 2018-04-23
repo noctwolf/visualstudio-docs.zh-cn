@@ -1,27 +1,25 @@
 ---
-title: "通过使用打开文件命令显示文件 |Microsoft 文档"
-ms.custom: 
+title: 通过使用打开文件命令显示文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
 - Open File command
 - persistence, supporting Open File command
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 75d714399f851aa479f398064e576790c793fffa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6b84992dc1803f1eee4fc36d477db1708eb90904
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>通过使用打开文件命令显示文件
 以下步骤描述了 IDE 如何处理**打开的文件**命令，可在找到**文件**菜单中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步骤还介绍项目应如何响应来自此命令的调用。  
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  然后，该项目包含通过使用特定于项目的编辑器或标准编辑器打开文件的选项。 有关详细信息，请参阅[如何： 打开项目特定编辑器](../../extensibility/how-to-open-project-specific-editors.md)和[如何： 打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)分别。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [通过使用命令打开显示文件](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)   
  [如何： 打开项目特定编辑器](../../extensibility/how-to-open-project-specific-editors.md)   

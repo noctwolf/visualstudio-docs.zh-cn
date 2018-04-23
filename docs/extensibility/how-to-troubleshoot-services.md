@@ -1,27 +1,23 @@
 ---
-title: "如何： 解决服务问题 |Microsoft 文档"
-ms.custom: 
+title: 如何： 解决服务问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71ac3cda8e3df935ab743fed7aa94a5152c152a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9efe3c1c7032f1db41272a03cf689e015a79522
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-troubleshoot-services"></a>如何： 解决服务问题
 有几个常见的问题，当你尝试将获得的服务时可能发生：  
@@ -62,7 +58,7 @@ if (log == null) return;
   
     2.  未 GUID 显式分配给的接口。 因此，系统会创建为根据需要的对象的默认 GUID。  
   
-3.  请确保已放置 VSPackage 请求该服务。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]构造它之后和调用之前站点 VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>。  
+3.  请确保已放置 VSPackage 请求该服务。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 构造它之后和调用之前站点 VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>。  
   
      如果你需要一种服务的 VSPackage 构造函数中有代码，则将其移到的 Initialize 方法。  
   
@@ -72,7 +68,7 @@ if (log == null) return;
   
      如果工具窗口托管的用户控件或任何其他控件容器，容器将被放置 Windows 组件模型，并且将不具有访问任何[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]服务。 你可以调用<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>若要获取的 VSPackage 服务提供程序中的控件容器。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [可用服务列表](../extensibility/internals/list-of-available-services.md)   
  [使用和提供服务](../extensibility/using-and-providing-services.md)   
  [服务基础知识](../extensibility/internals/service-essentials.md)

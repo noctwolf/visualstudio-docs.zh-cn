@@ -1,27 +1,23 @@
 ---
-title: "设计 XML 命令表 (。Vsct) 文件 |Microsoft 文档"
-ms.custom: 
+title: 设计 XML 命令表 (。Vsct) 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcb8533dda001d447fd10fcb69b3cccd6d2d91a1
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 865baa3f7b4b0fe4cbbaf2cdf34e9e8041d5c121
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>设计 XML 命令表 (。Vsct) 文件
 XML 命令表 (.vsct) 文件描述的布局和命令项的对为 VSPackage 的外观。 命令项包括按钮、 组合框、 菜单、 工具栏和命令项组。 本主题介绍 XML 命令表文件、 它们如何影响命令项目和菜单，以及如何创建它们。
@@ -127,5 +123,5 @@ XML 命令表 (.vsct) 文件描述的布局和命令项的对为 VSPackage 的�
 
  通过使用命令行运行该工具**CreateExpInstance /Reset**。 请记住，此工具会从实验性配置单元通常不被安装的所有已注册的 Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
  [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)

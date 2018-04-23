@@ -2,26 +2,22 @@
 title: 下拉栏 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - drop-down bar
 ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
-caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7058c0b93cd0ff4afb2a13b625cd7ef034b03699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0cf01e8a416407c570076812bf18aa6b21c21583
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="drop-down-bar"></a>下拉栏
 下拉栏提供在代码窗口顶部，包含两个下拉列表。  
@@ -29,7 +25,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="drop-down-bar-interfaces"></a>下拉栏接口  
  在[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，例如，下拉栏包含列表[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]项和[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]项成员函数，如下图中所示。  
   
- ![拖放 &#45; 向下条](../extensibility/media/vsdropdown_bar.gif "vsDropdown_bar")  
+ ![删除&#45;向下条](../extensibility/media/vsdropdown_bar.gif "vsDropdown_bar")  
 下拉栏  
   
  当实现一个下拉栏，有四个接口最为重要的：  
@@ -53,6 +49,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="attaching-a-drop-down-bar-to-a-code-window"></a>附加到代码窗口的下拉栏  
  若要附加下拉栏到代码窗口中，创建时，语言服务应该附加到下拉栏时<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>调用方法。 如果调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A>方法指示下拉栏不已不存在，然后调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.AddDropdownBar%2A>。 访问<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>界面，请调用<xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A>从<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>指针返回到你时你<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>实现已附加。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [通过使用旧版 API 的自定义代码窗口](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)   
  [旧版语言服务中的导航栏支持](../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)

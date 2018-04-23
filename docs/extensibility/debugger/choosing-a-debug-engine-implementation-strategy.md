@@ -1,27 +1,23 @@
 ---
-title: "选择调试引擎实现策略 |Microsoft 文档"
-ms.custom: 
+title: 选择调试引擎实现策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fae5211ac270832f07038faafbd6f5bc463d3944
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3c3715bac00b25cd2080a1162c8e2ce8cb33e63a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>选择调试引擎实现策略
 使用运行时体系结构来确定你的调试引擎 (DE) 实现策略。 调试引擎可能会创建进程到程序要调试进程为 Visual Studio 会话调试管理器 (SDM) 或到这两个进程外。 以下准则应帮助这些三个策略之间进行选择。  
@@ -37,5 +33,5 @@ ms.lasthandoff: 12/22/2017
   
 -   如果 DE 必须调用程序访问符号存储区，创建 DE 进程内运行的程序。 在这种情况下，程序创建 DE 的实例。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 调试器可扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

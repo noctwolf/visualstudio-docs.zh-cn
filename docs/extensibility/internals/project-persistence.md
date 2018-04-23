@@ -1,26 +1,24 @@
 ---
-title: "项目持久性 |Microsoft 文档"
-ms.custom: 
+title: 项目持久性 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - persistence, projects
 - projects [Visual Studio SDK], persistance
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d77c307ec7b732ba727b7210b4f4eaacb44584aa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b85bb6155ca25abec67b582dc4d877dbd8290501
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-persistence"></a>项目持久性
 持久性是你的项目的关键设计注意事项。 大多数项目使用代表文件; 的项目项[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]还支持其数据是不基于文件的项目。 必须保留这两个拥有的项目和项目文件的文件。 IDE 指示要保存自身或项目项的项目。  
@@ -46,6 +44,6 @@ ms.lasthandoff: 12/22/2017
   
  上的方法`IVsPersistHierarchyItem2`使用接口来确定是否可以重新加载项，如果可以将项，重新加载它。 此外，<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A>方法可实现来导致已更改的项，要放弃未保存。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [清单： 创建新项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [使用项目工厂创建项目实例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

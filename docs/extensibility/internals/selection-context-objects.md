@@ -1,26 +1,24 @@
 ---
-title: "选择上下文对象 |Microsoft 文档"
-ms.custom: 
+title: 选择上下文对象 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d97dd10661beb5acb28b464a8bc0d88ba5946924
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 04ccc4a57ac7af144c134761119433b7533e9bec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="selection-context-objects"></a>选择上下文对象
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 使用全局选择上下文对象来确定在 IDE 中应显示的内容。 在 IDE 中的每个窗口可以推送到全局选择上下文自己选择上下文对象。 该窗口拥有焦点时，IDE 窗口中的值更新全局选择上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。  
@@ -43,7 +41,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  VSPackage 作用于它接收通过执行活动，例如更新层次结构中，重新激活一个工具或其他类似的任务的事件。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>   
  [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)   

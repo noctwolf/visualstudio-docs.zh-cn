@@ -1,12 +1,10 @@
 ---
-title: "参数信息，请参阅旧语言 Service1 |Microsoft 文档"
-ms.custom: 
+title: 参数信息，请参阅旧语言 Service1 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
 - method tips
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 70f6a24a8d5a3d516286efe01cffc6e1d3514e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 50450d1968c626e0a5b32dee4c6f03d005d6ede9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>参数信息，请参阅旧语言服务
 IntelliSense 参数信息工具提示向用户提供有关他们的语言构造中的位置的提示。  
@@ -40,7 +38,7 @@ IntelliSense 参数信息工具提示向用户提供有关他们的语言构造�
   
  参数信息工具提示是通过命令截获语言服务启动的。 若要截获用户字符，语言服务对象必须实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口，并传递指向的指针的文本视图你<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>实现中的，通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>中的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。 命令筛选器截获到代码窗口中键入的命令。 监视知道何时向用户显示参数信息的命令信息。 用于语句完成、 错误标记和等，可以使用相同的命令筛选器。  
   
- 当你键入的关键字，该语言服务可以为其提供提示时，然后该语言服务创建<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>对象并调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A>中的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>通知 IDE 以显示提示接口。 创建<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>对象使用`VSLocalCreateInstance`并指定组件类`CLSID_VsMethodTipWindow`。 `VsLocalCreateInstance`是调用标头文件 vsdoc.h 中定义的函数`QueryService`为本地注册表和调用`CreateInstance`此对象上`CLSID_VsMethodTipWindow`。  
+ 当你键入的关键字，该语言服务可以为其提供提示时，然后该语言服务创建<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>对象并调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A>中的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>通知 IDE 以显示提示接口。 创建<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>对象使用`VSLocalCreateInstance`并指定组件类`CLSID_VsMethodTipWindow`。 `VsLocalCreateInstance` 是调用标头文件 vsdoc.h 中定义的函数`QueryService`为本地注册表和调用`CreateInstance`此对象上`CLSID_VsMethodTipWindow`。  
   
 ## <a name="providing-a-method-tip"></a>提供的方法提示  
  若要提供的方法提示，请调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A>中的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>接口，将其传递的实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>接口。  

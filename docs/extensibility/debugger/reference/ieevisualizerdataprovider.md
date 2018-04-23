@@ -2,28 +2,24 @@
 title: IEEVisualizerDataProvider |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerDataProvider
 helpviewer_keywords:
 - IEEVisualizerDataProvider interface
 ms.assetid: 5fdfe6e3-b94e-4edb-acc5-41d8773d8ca5
-caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edf2cfe689caa58e1c0402a91fa31237cb2c7215
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8e37561957d592ecd9ae855f2816c860f84e7b20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -55,14 +51,14 @@ IEEVisualizerDataProvider : IUnknown
 ## <a name="remarks"></a>备注  
  可视化工具服务 (由表示[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)接口，并返回[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)) 都会保留对对象实现引用`IEEVisualizerDataProvider`接口. 因此，`IEEVisualizerDataProvider`不应实现的相同对象上实现接口[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)如果该对象保留的引用`IEEVisualizerService`对象： 循环引用结果和当对象被销毁时，将发生死锁。 建议的方法是实现`IEEVisualizerDataProvider`到一个单独的对象上`IDebugProperty2`对象而不调用的委托`IUnknown::AddRef`在其上。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： ee.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [表达式评估接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   

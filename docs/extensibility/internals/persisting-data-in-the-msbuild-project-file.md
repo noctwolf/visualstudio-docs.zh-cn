@@ -2,26 +2,22 @@
 title: MSBuild 项目文件中的持久保存数据 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
-caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2bb73602a6cba07fe9cbde4ddae4219f5a2b350
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 324f9dfd4e381e9580e4940f06f652ef64d9d3ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild 项目文件中的持久保存数据
 项目子类型可能需要将特定于子类型的数据保存到项目文件以供将来使用。 项目子类型使用项目文件持久性满足以下要求：  
@@ -30,7 +26,7 @@ ms.lasthandoff: 12/22/2017
   
     1.  独立于配置的数据。 即在与空或缺失的条件的 MSBuild 元素中存储的数据。  
   
-    2.  依赖于配置的数据。 也就是说，以针对特定项目配置的 MSBuild 元素中存储的数据。 例如:  
+    2.  依赖于配置的数据。 也就是说，以针对特定项目配置的 MSBuild 元素中存储的数据。 例如：  
   
         ```  
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">  
@@ -45,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="persisting-build-related-information"></a>保存与生成相关的信息  
  通过 MSBuild 处理持久性数据可用于生成项目。 MSBuild 系统维护与生成相关信息的主表。 项目子类型负责访问此数据来获取和设置属性值。 通过添加要保留的其他属性，并删除属性，因此它们不会保留，项目子类型还可以增加与生成相关的数据表。  
   
- 若要修改的 MSBuild 数据，项目子类型是负责从通过在基本项目系统中检索 MSBuild 属性对象<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>是一个接口，核心项目系统和聚合项目子类型查询上实现它，通过运行`QueryInterface`。  
+ 若要修改的 MSBuild 数据，项目子类型是负责从通过在基本项目系统中检索 MSBuild 属性对象<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 是一个接口，核心项目系统和聚合项目子类型查询上实现它，通过运行`QueryInterface`。  
   
  以下过程概述了用于删除属性使用的步骤<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>。  
   
@@ -82,5 +78,5 @@ ms.lasthandoff: 12/22/2017
       </ProjectExtensions>  
     ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [项目子类型](../../extensibility/internals/project-subtypes.md)

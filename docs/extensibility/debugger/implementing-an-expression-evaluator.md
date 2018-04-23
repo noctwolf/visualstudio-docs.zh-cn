@@ -1,26 +1,24 @@
 ---
-title: "实现表达式计算器 |Microsoft 文档"
-ms.custom: 
+title: 实现表达式计算器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9f18e2e131b6baa325bd7e0b65babee4c3679ed8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ed1df74c187b3f0a93e1a1ec84e8803bc164d223
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-an-expression-evaluator"></a>实现表达式计算器
 > [!IMPORTANT]
@@ -50,7 +48,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
- EE 实现[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)。 `IDebugProperty2`提供用于描述表达式求值的结果，如本地变量、 一个基元或到 Visual Studio，然后显示中的相应信息的对象的机制**局部变量**， **监视**，或**即时**窗口。  
+ EE 实现[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)。 `IDebugProperty2` 提供用于描述表达式求值的结果，如本地变量、 一个基元或到 Visual Studio，然后显示中的相应信息的对象的机制**局部变量**， **监视**，或**即时**窗口。  
   
  SP 是提供给 EE DE 时系统会要求提供信息。 SP 可实现描述地址和域，如下面的接口和及其衍生产品的接口：  
   
@@ -66,5 +64,5 @@ ms.lasthandoff: 12/22/2017
  [表达式计算器实施策略](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  
  定义了表达式计算器 (EE) 实现策略一个三步骤过程。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -1,27 +1,25 @@
 ---
-title: "创建 Windows 窗体工具箱控件 |Microsoft 文档"
-ms.custom: 
+title: 创建 Windows 窗体工具箱控件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4229d9045dfe64fcb320eca7cf004de56e7f8f0d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6a7d5bae07d3596902f94417cda20c3d40feed2f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
 包含在 Visual Studio 扩展性工具 (VS SDK) 的 Windows 窗体工具箱控件项目模板允许你创建的控件，将自动添加到**工具箱**安装扩展后。 本主题演示如何使用模板来创建可以分发给其他用户的简单计数器控件。  
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  在**属性**窗口中，设置以下值设计图面上的控件。  
   
-    |控件|属性|“值”|  
+    |控件|属性|值|  
     |-------------|--------------|-----------|  
     |`Label1`|**文本**|""|  
     |`Button1`|**名称**|btnReset|  
@@ -212,7 +210,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="next-steps"></a>后续步骤  
  生成“工具箱”  控件时，Visual Studio 将在项目的 \bin\debug\ 文件夹中创建一个名为 *项目名称*.vsix 的文件。 你可以通过将 .vsix 文件上载到网络或网站来部署此控件。 当用户打开.vsix 文件时，该控件被安装，并添加到 Visual Studio**工具箱**用户的计算机上。 或者，你可以上载.vsix 文件到[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点，以便用户可以在浏览时找到它**工具 / 扩展和更新**对话框。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)   
  [创建 WPF 工具箱控件](../extensibility/creating-a-wpf-toolbox-control.md)   
  [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)   

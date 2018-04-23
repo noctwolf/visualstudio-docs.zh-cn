@@ -1,23 +1,21 @@
 ---
-title: "AppliesTo 元素 （Visual Studio 模板） |Microsoft 文档"
-ms.custom: 
+title: AppliesTo 元素 （Visual Studio 模板） |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 35e11a53b2b9b63a71aab2858151721cfdfd7f9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e27ee1ab0ba42a82d61e2adbe9fb4c6c81cbb48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 元素（Visual Studio 模板）
 指定一个可选表达式以匹配一个或多个功能。 （请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>）。 项目类型通过层次结构将功能公开为属性 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>。 这使得具有公共适用功能的多个项目类型可以共享此模板。  
@@ -56,7 +54,7 @@ ms.lasthandoff: 12/22/2017
   
  有效表达式语法按以下方式定义：  
   
--   功能表达式，如"(VisualC &#124;CSharp) + (MSTest &#124;NUnit)"。  
+-   功能表达式，如"(VisualC &#124; CSharp) + (MSTest &#124; NUnit)"。  
   
 -   "&#124;"是 OR 运算符。  
   
@@ -68,7 +66,7 @@ ms.lasthandoff: 12/22/2017
   
 -   null 或空表达式作为匹配计算。  
   
--   项目功能可以是除以下保留字符之外的任何字符:"':;,+-*/\\！ ~ &#124; & %$@^()={} [] <>？ \t\b\n\r  
+-   项目功能可以是除以下保留字符之外的任何字符:"':;,+-*/\\！ ~&#124;和 %$@^()={} [] <>？ \t\b\n\r  
   
 ## <a name="example"></a>示例  
  下面的示例演示三个不同模板。 `Template1` 适用于所有 C# 项目类型或支持 `WindowsAppContainer` 功能的任何其他项目类型。 `Template2` 适用于所有类型的 C# 项目。 `Template3` 适用于 `WindowsAppContainer` 项目以外的 C# 项目。  
@@ -100,6 +98,6 @@ ms.lasthandoff: 12/22/2017
   
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

@@ -1,32 +1,30 @@
 ---
-title: "实现语法着色 |Microsoft 文档"
-ms.custom: 
+title: 实现语法着色 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5502bd30378130e5977d427acb9df5b73226a05b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-syntax-coloring"></a>实现语法着色
-时语言服务提供了语法着色，分析器将一行文本转换为着色的项的数组，并返回与这些着色项对应的令牌类型。 分析器应返回属于可着色项的列表的令牌类型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]根据由着色器对象分配给相应的令牌类型的属性的代码窗口中显示每个可着色的项。  
+时语言服务提供了语法着色，分析器将一行文本转换为着色的项的数组，并返回与这些着色项对应的令牌类型。 分析器应返回属于可着色项的列表的令牌类型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根据由着色器对象分配给相应的令牌类型的属性的代码窗口中显示每个可着色的项。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]不指定分析器接口，并且分析器实现完全由您。 但是，在 Visual Studio 语言包项目提供默认分析器实现。 对于托管代码，托管的包框架 (MPF) 提供对着色文本的完整支持。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 不指定分析器接口，并且分析器实现完全由您。 但是，在 Visual Studio 语言包项目提供默认分析器实现。 对于托管代码，托管的包框架 (MPF) 提供对着色文本的完整支持。  
   
  旧语言服务实现的 VSPackage，一部分但实现语言服务功能的新方法是使用 MEF 扩展。 若要了解有关实现语法颜色设置的新方式的详细信息，请参阅[演练： 突出显示文本](../../extensibility/walkthrough-highlighting-text.md)。  
   
@@ -66,7 +64,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="managed-package-framework-colorizer"></a>托管的包框架着色器  
  托管的包框架 (MPF) 提供实现着色程序所需的所有类。 语言服务类应该继承<xref:Microsoft.VisualStudio.Package.LanguageService>类，实现所需的方法。 必须通过实现提供扫描仪和分析器<xref:Microsoft.VisualStudio.Package.IScanner>接口，并返回从该接口的实例<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>方法 (必须在中实现的方法之一<xref:Microsoft.VisualStudio.Package.LanguageService>类)。 有关详细信息，请参阅[旧语言服务中的语法着色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [如何： 使用内置可着色项](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [自定义可着色项](../../extensibility/internals/custom-colorable-items.md)   
  [开发旧语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)   

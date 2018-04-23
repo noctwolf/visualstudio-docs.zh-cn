@@ -1,26 +1,24 @@
 ---
-title: "测试区域 5： 更改源控制 |Microsoft 文档"
-ms.custom: 
+title: 测试区域 5： 更改源控制 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
 - source control plug-ins, changing source control
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ffe029ecf5839f03732a1e5162dd22da4fe0a18e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e7fd014bf520ee2f0515e284f2fb5430961cd407
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-5-change-source-control"></a>测试区域 5： 更改源代码管理
 此源代码管理插件测试区域涉及更改通过的源控件**更改源代码管理**命令。  
@@ -76,5 +74,5 @@ ms.lasthandoff: 12/22/2017
 |重新绑定仅无需关闭解决方案**更改源代码管理**对话框|1.创建项目。<br />2.仅将解决方案添加到源控件使用 (**文件**，**源代码管理**，**添加选定的项目添加到源代码管理**。<br />3.打开**更改源代码管理**对话框。<br />4.取消绑定仅该解决方案 (不要关闭**更改源代码管理**对话框。)<br />5.将绑定仅解决方案。<br />6.单击“确定”关闭对话框。<br />7.签出解决方案和解决方案项 （如果有。）|解决方案将保持受控。<br /><br /> 项目还是保持不受控制。|  
 |重新绑定解决方案/仅时相同的目录中的项目|1.创建项目。<br />2.将只将项目添加到源控件使用 (**文件**，**源代码管理**，**添加选定的项目添加到源代码管理**。<br />3.关闭解决方案。<br />4.使用至少两个项目创建一个新的解决方案。<br />5.将解决方案添加到源代码管理。<br />6.添加在步骤 1 中创建从源代码管理的项目。<br />7.如果系统提示，请接受解决方案签的出。<br />8.检查整个解决方案中。<br />9.打开**更改源代码管理**对话框。<br />10.选择 （从步骤 6) 添加的项目，然后单击**拆散**。<br />11.单击“确定”关闭对话框。<br />12.如果系统提示，请接受签出。<br />13.重新打开**更改源代码管理**对话框。<br />14.选择 （从步骤 6) 添加的项目，然后单击**绑定**。<br />15.选择原始位置。|解决方案和项目保持受控。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -1,26 +1,24 @@
 ---
-title: "实现的端口供应商提供 |Microsoft 文档"
-ms.custom: 
+title: 实现的端口供应商提供 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], implementing port suppliers
 - port suppliers, implementing
 ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: aa70e2a6019a97c248e6d4b411dacc222be59a1f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b0743f307dc579f6197880b0b89acaf2db0dda08
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-a-port-supplier"></a>实现端口供应商
 端口供应商提供对会话调试管理器 (SDM) 请求的端口。 端口供应商需要调试到非 DCOM 机时或当新设备需要支持时实现。 例如，若要提供了与移动电话的调试，则可能会实现提供端口连接到移动电话 （可能通过 IR 或单元格连接） 和枚举的进程和手机上运行的程序的端口供应商提供。  
@@ -38,5 +36,5 @@ ms.lasthandoff: 12/22/2017
  [调试器概念](../../extensibility/debugger/debugger-concepts.md)  
  描述调试的主要体系结构概念。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 调试器可扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

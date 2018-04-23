@@ -1,26 +1,24 @@
 ---
-title: "用于扩展项目系统 IDE 定义命令 |Microsoft 文档"
-ms.custom: 
+title: 用于扩展项目系统 IDE 定义命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, project systems
 - project systems, environment-defined commands
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3b450a55de29e112d158cb783ad366eb4fbcaca7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4941f5d842f311f078594ee9a9deef02219ea05d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>用于扩展项目系统 IDE 定义命令
 如果你想要扩展项目系统，可以使用命令和命令提供的组[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。  
@@ -73,7 +71,7 @@ ms.lasthandoff: 12/22/2017
 |IDG_VS_CTXT_PROJECT_TRANSFER|命令进行剪切、 复制和粘贴操作。|  
 |IDG_VS_CTXT_PROJECT_PROPERTIES|提供对访问权限的命令**项目属性**对话框。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [MenuCommands 与OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [创建可重复使用的按钮组](../../extensibility/creating-reusable-groups-of-buttons.md)

@@ -1,26 +1,24 @@
 ---
-title: "支持项目和配置属性 |Microsoft 文档"
-ms.custom: 
+title: 支持项目和配置属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
 - configuration properties, suppporting with Visual Studio SDK
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 823bfa0453d3e33fea2daa51779b1fe4800a1a86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支持项目和配置属性
 **属性**中的窗口[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 可以显示项目和配置属性。 可以为你自己的项目类型提供属性页，以便用户可以设置你的应用程序的属性。  
@@ -32,7 +30,7 @@ ms.lasthandoff: 01/22/2018
 ## <a name="persistence-of-project-and-configuration-properties"></a>项目和配置属性的持久性  
  项目和配置的属性保存在项目文件中包含任何与项目类型，例如关联的文件扩展名、.csproj、.vbproj 和.myproj。 语言项目通常使用的模板文件生成的项目文件。 但是，有实际多种项目类型和模板进行关联。 有关详细信息，请参阅[模板目录说明 (。Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
   
- 通过将项添加到模板文件创建项目和配置属性。 然后，这些属性是可用于通过使用此模板的项目类型创建任何项目。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]项目和两个使用 MPFProj[不在生成： MSBuild 概述](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde)模板文件的架构。 这些文件具有每个配置一个 PropertyGroup 节。 配置参数设置为 null 的字符串的第一 PropertyGroup 节通常保留的项目的属性。  
+ 通过将项添加到模板文件创建项目和配置属性。 然后，这些属性是可用于通过使用此模板的项目类型创建任何项目。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目和两个使用 MPFProj[不在生成： MSBuild 概述](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde)模板文件的架构。 这些文件具有每个配置一个 PropertyGroup 节。 配置参数设置为 null 的字符串的第一 PropertyGroup 节通常保留的项目的属性。  
   
  下面的代码演示了基本的 MSBuild 项目文件的开头。  
   
@@ -62,9 +60,9 @@ ms.lasthandoff: 01/22/2018
   
  `SettingsPage`类和`Microsoft.VisualStudio.Package.ProjectNode`类提供这些方法以保持项目和配置属性：  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty`和`Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty`保留项目属性。  
+-   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` 和`Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty`保留项目属性。  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty`和`Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty`保留配置属性。  
+-   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 和`Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty`保留配置属性。  
   
     > [!NOTE]
     >  实现`Microsoft.VisualStudio.Package.SettingsPage`和`Microsoft.VisualStudio.Package.ProjectNode`类使用`Microsoft.Build.BuildEngine`(MSBuild) 方法来获取和设置从项目文件的项目和配置属性。  
@@ -94,7 +92,7 @@ ms.lasthandoff: 01/22/2018
   
  `MyConfigProp`配置属性显示在为此配置属性页**我的配置属性**类别中**我类别**。 如果选择了选项，说明，**我说明**，将显示在说明面板。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [添加和删除属性页](../../extensibility/adding-and-removing-property-pages.md)   
  [项目](../../extensibility/internals/projects.md)   
  [模板目录说明 (.Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

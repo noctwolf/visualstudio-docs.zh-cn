@@ -1,27 +1,23 @@
 ---
-title: "控制执行 |Microsoft 文档"
-ms.custom: 
+title: 控制执行 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a76b14f28bdb74345813931fc334f98090abd93c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c9fc47a0b73d07e4b24ef55c736ad80197f282cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="control-of-execution"></a>控制执行
 调试引擎 (DE) 通常情况下发送以下事件之一作为最后的启动事件：  
@@ -45,11 +41,11 @@ ms.lasthandoff: 12/22/2017
   
 5.  如果用户选择进入并单步超过，或从函数，IDE 将提示调试会话才能调用程序的`Step`方法，将其传递的步骤 （指令、 语句或行） 和步骤的类型的单位-即，是否进入并单步，超过或跳出函数。 步骤完成后，DE 将发送到调试会话，即停止事件的步骤完成事件。  
   
-     或  
+     -或-  
   
      如果用户选择继续执行当前指令指针从，IDE 会提示调试会话才能调用程序的**执行**方法。 程序继续执行，直到遇到下一个停止条件。  
   
-     或  
+     -或-  
   
      调试会话调试会话是忽略特定 stopping 事件，如果调用程序的**继续**方法。 如果它遇到停止条件时，程序已逐句执行、 逐过程执行或跳出函数，则它继续步骤。  
   
@@ -65,5 +61,5 @@ ms.lasthandoff: 12/22/2017
   
  SDM 对的调用`Step`，**执行**，和**继续**是异步的这意味着 SDM 需要调用迅速返回。 如果 DE 发送 SDM stopping 事件之前在同一线程`Step`，**执行**，或**继续**返回，SDM 挂起。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [调试任务](../../extensibility/debugger/debugging-tasks.md)

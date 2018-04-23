@@ -1,27 +1,25 @@
 ---
-title: "提供以大纲方式显示语言服务中的支持 |Microsoft 文档"
-ms.custom: 
+title: 提供以大纲方式显示语言服务中的支持 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
 - language services, supporting outlining
 - outlining, supporting
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1133166560fa371bbb5a2b008175034d48a2a7b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6467a1e3386daedc4a67aa420c06cf01187b8d22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>如何： 扩展大纲显示在提供支持，旧语言服务
 有两个选项用于扩展对你仅仅是支持的语言的大纲显示支持**折叠到定义**命令。 你可以添加控制编辑器的大纲区域，并添加客户端控制大纲区域。  
@@ -31,7 +29,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-implement-an-editor-controlled-outline-region"></a>若要实现控制编辑器的大纲区域  
   
-1.  调用`QueryService`为<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>  
+1.  调用`QueryService`为 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>  
   
      这将返回一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>。  
   

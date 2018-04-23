@@ -1,23 +1,21 @@
 ---
-title: "创建自定义起始页 |Microsoft 文档"
-ms.custom: 
+title: 创建自定义起始页 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f1ce8112adffabcee835d7adf598e73d327ca3b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71892262d98b175b111218068a02d03ad3d04caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-custom-start-page"></a>创建自定义起始页
 你可以按照本文档中的步骤来创建自定义起始页。  
@@ -73,7 +71,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  将你的 XAML 文件，以及任何支持的文本文件或标记文件，为复制**%USERPROFILE%\My Documents\Visual Studio 2015 \startpages\\** 文件夹。  
   
-2.  如果你的起始页引用的任何控件或未安装 Visual studio 的程序集中的类型，复制程序集，然后粘贴在*Visual Studio 安装文件夹***\Common7\IDE\PrivateAssemblies\\**。  
+2.  如果你的起始页引用的任何控件或未安装 Visual studio 的程序集中的类型，复制程序集，然后粘贴在 * Visual Studio 安装文件夹 ***\Common7\IDE\PrivateAssemblies\\** .  
   
 3.  在 Visual Studio 命令提示符处，键入**devenv /rootsuffix Exp**若要打开 Visual Studio 的实验实例。  
   
@@ -87,7 +85,7 @@ ms.lasthandoff: 12/22/2017
   
 -   在测试起始页并发现前者更稳定后，使用**自定义起始页**选项**选项**对话框中，可以选择作为 Visual Studio 的主实例中的开始页  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [演练： 将自定义 XAML 添加到开始页](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
  [将用户控件添加到开始页](../extensibility/adding-user-control-to-the-start-page.md)   
  [将 Visual Studio 命令添加到起始页](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   

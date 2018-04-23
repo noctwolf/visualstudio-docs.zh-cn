@@ -1,27 +1,25 @@
 ---
-title: "属性页 |Microsoft 文档"
-ms.custom: 
+title: 属性页 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: cedf021321b66c47690450823a7da92cd19888eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1b08e210a57388d77859600c02c0e6a30a404884
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="property-pages"></a>属性页
 用户可以查看和更改项目依赖于配置和-独立属性使用属性页。 A**属性页**在中启用按钮**属性**窗口或对象，它提供所选对象的属性页面视图的解决方案资源管理器工具栏上。 属性页由环境，可用于解决方案和项目。 它们，但是，也可以是可进行的项目项使用的配置相关的属性。 在项目中的文件需要不同的编译器生成正确的交换机设置时，可能会使用此功能。  
@@ -50,7 +48,7 @@ ms.lasthandoff: 12/22/2017
   
  顶级类别下显示每个类别都表示单独的属性页。 类别和子类别可用项对话框中的由你实现`ISpecifyPropertyPages`和`IVsPropertyPage`。  
   
- `IDispatch`用于选择容器中有要显示在属性页实现的属性的项的对象`ISpecifyPropertyPages`枚举类 Id 的列表。 类 Id 作为变量传递到`ISpecifyPropertyPages`和用于实例化的属性页。 类 Id 的列表还传递给`IVsPropertyPage`左侧的对话框中创建树状结构。 然后，此属性页传递信息回`IDispatch`实现对象`ISpecifyPropertyPages`并填充每个页的信息。  
+ `IDispatch` 用于选择容器中有要显示在属性页实现的属性的项的对象`ISpecifyPropertyPages`枚举类 Id 的列表。 类 Id 作为变量传递到`ISpecifyPropertyPages`和用于实例化的属性页。 类 Id 的列表还传递给`IVsPropertyPage`左侧的对话框中创建树状结构。 然后，此属性页传递信息回`IDispatch`实现对象`ISpecifyPropertyPages`并填充每个页的信息。  
   
  使用浏览对象的属性进行检索`IDispatch`选择容器中每个对象。  
   
@@ -73,17 +71,17 @@ ms.lasthandoff: 12/22/2017
   
      你可以指定一个项目或项目从解决方案的属性页中，它将在用户按下 F5 或从生成菜单中选择运行时开始。 这适用的方式类似于在使用粗体字体其名称显示在解决方案资源管理器的意义上旧的活动项目。  
   
-     可以通过调用自动化模型中的属性中检索启动项目`DTE.Solution.SolutionBuild.StartupProjects`。 在 VSPackage，你调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>方法。 `IVsSolutionBuildManager`作为由服务提供`QueryService`SID_SVsSolutionBuildManager 上。 有关详细信息，请参阅[项目配置对象](../../extensibility/internals/project-configuration-object.md)和[解决方案配置](../../extensibility/internals/solution-configuration.md)。  
+     可以通过调用自动化模型中的属性中检索启动项目`DTE.Solution.SolutionBuild.StartupProjects`。 在 VSPackage，你调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>方法。 `IVsSolutionBuildManager` 作为由服务提供`QueryService`SID_SVsSolutionBuildManager 上。 有关详细信息，请参阅[项目配置对象](../../extensibility/internals/project-configuration-object.md)和[解决方案配置](../../extensibility/internals/solution-configuration.md)。  
   
 -   活动解决方案生成配置  
   
-     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]具有一个活动解决方案配置中，通过实现自动化模型中可用`DTE.Solution.SolutionBuild.ActiveConfiguration`。 解决方案配置为包含每个项目 （每个项目可以具有不同名称的多个平台有多个配置） 解决方案中的一个项目配置的集合。 与解决方案的属性页相关的详细信息，请参阅[解决方案配置](../../extensibility/internals/solution-configuration.md)。  
+     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 具有一个活动解决方案配置中，通过实现自动化模型中可用`DTE.Solution.SolutionBuild.ActiveConfiguration`。 解决方案配置为包含每个项目 （每个项目可以具有不同名称的多个平台有多个配置） 解决方案中的一个项目配置的集合。 与解决方案的属性页相关的详细信息，请参阅[解决方案配置](../../extensibility/internals/solution-configuration.md)。  
   
 -   当前所选的项目  
   
      实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A>方法来检索的项目层次结构和项目项或选择的项。 从 DTE，将使用`SelectedItems.SelectedItem.Project`和`SelectedItems.SelectedItem.ProjectItem`方法。 没有在核心中这些标题下的示例代码[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]文档。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>   
  [管理配置选项](../../extensibility/internals/managing-configuration-options.md)   
  [项目配置对象](../../extensibility/internals/project-configuration-object.md)   

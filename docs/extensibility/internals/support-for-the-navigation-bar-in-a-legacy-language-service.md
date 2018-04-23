@@ -1,26 +1,24 @@
 ---
-title: "支持旧语言服务中的导航栏 |Microsoft 文档"
-ms.custom: 
+title: 支持旧语言服务中的导航栏 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5e2d7ddfd4904923cbdea415fa5a0d2086cc071f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5d4dd17f3bb1bd50a97b24b42cf40edc27bf51db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>对旧语言服务中的导航栏的支持
 在编辑器视图的顶部导航栏显示文件中的类型和成员。 在左侧的下拉列表，显示类型，成员将显示在右侧下拉列表。 当用户选择一种类型时，脱字号位于类型的第一行。 当用户选择成员时，脱字号位于成员的定义。 下拉列表框将更新以反映当前插入符号的位置。  

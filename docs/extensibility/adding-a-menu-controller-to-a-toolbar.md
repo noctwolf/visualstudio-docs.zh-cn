@@ -1,27 +1,25 @@
 ---
-title: "将菜单控制器添加到工具栏 |Microsoft 文档"
-ms.custom: 
+title: 将菜单控制器添加到工具栏 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding menu controllers
 - menus, adding menu controllers to toolbars
 - menu controllers, adding to toolbars
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
-caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 720aeb5670127d64e7b3fc9b016a032c0526c083
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 63db98df400333216f5e753f8b6f82a61e785cd5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>将菜单控制器添加到工具栏
 本演练基于[将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md)演练并演示如何将菜单控制器添加到工具窗口工具栏。 此处显示的步骤也可以应用于在中创建的工具栏[将工具栏添加](../extensibility/adding-a-toolbar.md)演练。  
@@ -228,6 +226,6 @@ ms.lasthandoff: 12/22/2017
   
      同时显示消息会出现一个对话框**选择菜单控制器项 3**。 请注意该消息对应于菜单控制器按钮上的文本。 菜单控制器按钮现在显示**MC 项 3**。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [添加工具栏](../extensibility/adding-a-toolbar.md)

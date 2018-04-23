@@ -1,26 +1,24 @@
 ---
-title: "在旧语言服务中的注释代码 |Microsoft 文档"
-ms.custom: 
+title: 在旧语言服务中的注释代码 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - comments, supporting in language services [managed package framework]
 - language services [managed package framework], commenting code
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e6dfeb31ab062d5182b56ba450450d41a6dab807
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5b573b464c26c3864cece697191cf03545ada779
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>在旧语言服务中的注释代码
 编程语言通常提供一种添加批注或注释代码的方法。 注释是文本来提供有关代码的其他信息，但在编译或解释期间将忽略某一部分。  
@@ -65,6 +63,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [旧语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [注册旧语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)

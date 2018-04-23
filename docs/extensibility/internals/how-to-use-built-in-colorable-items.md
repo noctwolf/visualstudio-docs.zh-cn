@@ -1,26 +1,24 @@
 ---
-title: "如何： 使用内置可着色项 |Microsoft 文档"
-ms.custom: 
+title: 如何： 使用内置可着色项 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, built-in colorable items
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 545d5fa19182678ec1610fa7b689332e272f9962
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a6cf51516677aeca71dba269bcdd132e0830b6b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>如何： 使用内置可着色项
 使用内置可着色项之前，你必须首先向发出信号集成的开发环境 (IDE) 不提供你自己自定义可着色项，在这种情况下将是<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>对象。 通过设置语言服务的注册表项来执行此操作。  
@@ -36,7 +34,7 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  如果你要提供自定义可着色项，则未设置此注册表项。 有关详细信息，请参阅[自定义可着色项](../../extensibility/internals/custom-colorable-items.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [语法着色中自定义编辑器](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [语法着色中旧语言服务](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [实现语法着色](../../extensibility/internals/implementing-syntax-coloring.md)   

@@ -1,23 +1,21 @@
 ---
-title: "为 Visual Studio 共享的颜色 |Microsoft 文档"
-ms.custom: 
+title: 为 Visual Studio 共享的颜色 |Microsoft 文档
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b9093eef6166c86eb6e1ffdf602b4fb75841834d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual studio 共享的颜色
 当您设计使用公共 Visual Studio shell 元素的 UI，或你想要界面元素与类似功能一致时，使用包定义文件中现有标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。  
@@ -858,7 +856,7 @@ ms.lasthandoff: 12/22/2017
 | 链接背景 | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />（梯度停止点未在主题 UI 中使用此令牌。） |
 | 前景（链接文本） | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a>树视图  
+###  <a name="BKMK_TreeView"></a> 树视图  
 多个工具窗口，包括解决方案资源管理器、 服务器资源管理器和类视图实现其颜色由中的颜色名称控制的分层组织方案`TreeView`类别。 树视图中的所有项都具有背景和文本颜色。 具有嵌套子元素的项还具有指示该项是展开还是折叠的标志符号。  
 
 ![树视图 （红线）](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303年 147_TreeViewRedline")<br />树视图 （红线）
@@ -1041,7 +1039,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="command-structures"></a>命令结构  
 
-###  <a name="BKMK_CommandMenus"></a>菜单  
+###  <a name="BKMK_CommandMenus"></a> 菜单  
 菜单可以出现在 Visual Studio 中的多个位置： 主菜单栏、 嵌入在文档或工具窗口或整个 IDE 的各个位置右键单击上。 与其他 UI 元素关联的菜单的实现在针对相应元素的部分中进行讨论。 应始终使用由 Visual Studio 环境提供的标准菜单实现。 但是，在某些极少数情况下，你可能无法访问标准 Visual Studio 菜单。 在这些情况下，请使用以下标记名称以确保 UI 与 Visual Studio 中的其他菜单保持一致。  
 
 ![Visual Studio 菜单 （红线）](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303年 000_MenuRedline")<br />Visual Studio 菜单 （红线）
@@ -1282,7 +1280,7 @@ ms.lasthandoff: 12/22/2017
 | 前景（文本） | `Environment.CommandBarTextInactive` |
 | Border | 不可用 |
 
-####  <a name="BKMK_CommandComboBox"></a>命令栏组合框
+####  <a name="BKMK_CommandComboBox"></a> 命令栏组合框
 
 > [!IMPORTANT]
 > 组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑文本区域，使用的颜色令牌[命令栏下拉列表](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)。  
@@ -1307,7 +1305,7 @@ ms.lasthandoff: 12/22/2017
 
 **命令栏下拉按钮： 这是默认状态**  
 
-![组合框中放 &#45; 向下按钮](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303年 031_ComboBoxDropdownButton")<br />命令栏下拉按钮
+![组合框下拉&#45;向下按钮](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303年 031_ComboBoxDropdownButton")<br />命令栏下拉按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1414,7 +1412,7 @@ ms.lasthandoff: 12/22/2017
 | 背景 | 无 |
 | 前景（标志符号） | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a>命令栏下拉列表
+####  <a name="BKMK_CommandDropDown"></a> 命令栏下拉列表
 
 > [!IMPORTANT]
 >  下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，使用的颜色令牌[命令栏组合框](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)。  
@@ -1489,7 +1487,7 @@ ms.lasthandoff: 12/22/2017
 
  **命令栏下拉选择字段： 按下状态**  
 
-![拖放 &#45; 下按下的选择字段](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303年 049_DropdownSelectionFieldPressed")<br />条形下拉选择字段的按下的命令
+![删除&#45;下按下的选择字段](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303年 049_DropdownSelectionFieldPressed")<br />条形下拉选择字段的按下的命令
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |

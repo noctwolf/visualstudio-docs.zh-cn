@@ -1,27 +1,25 @@
 ---
-title: "添加最近使用过的子菜单的列表 |Microsoft 文档"
-ms.custom: 
+title: 添加最近使用过的子菜单的列表 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - MRU lists
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-caps.latest.revision: "46"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 087faaae07c4c240b53830ee238cee4f9065d21f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 67eb08feff5d8edd1251c8fcff09d8f148b51b96
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>最近添加大多数使用子菜单的列表
 本演练基于中演示[将子菜单添加到菜单](../extensibility/adding-a-submenu-to-a-menu.md)，并演示如何将动态列表添加到子菜单。 动态列表窗体创建最近使用的 (MRU) 列表的基础。  
@@ -207,5 +205,5 @@ ms.lasthandoff: 12/22/2017
   
 4.  再次打开子菜单。 请注意，**项 3**现在位于列表的顶部和其他项均收到推送下移一个位置。 单击**项 3**再次和消息框仍显示"所选项目为 3"的字样，以指示文本已正确移动到新位置以及命令标签。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [动态添加菜单项](../extensibility/dynamically-adding-menu-items.md)

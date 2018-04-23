@@ -1,27 +1,23 @@
 ---
-title: "项目优先级 |Microsoft 文档"
-ms.custom: 
+title: 项目优先级 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae692249ea952970b096825c8f6968158eb2f17f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 27341f78fb17fa5346a9dfbc7cdd3f86439d3d23
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-priority"></a>项目优先级
 项目项通常是解决方案中只有一个项目的成员。 因此，IDE 可以轻松地确定哪些项目用于打开该项目。 但是，如果项是多个项目的成员，IDE 将使用优先级方案来确定打开项的最佳项目。  
@@ -38,7 +34,7 @@ ms.lasthandoff: 12/22/2017
   
 -   指定的最高优先级项目有打开的文档的上下文。 如果两个项目返回相同的优先级值，将首选活动项目。 如果解决方案中的没有项目响应，它可以打开的文档，IDE 会将文档置于杂项文件项目。 有关详细信息，请参阅[杂项文件项目](../../extensibility/internals/miscellaneous-files-project.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [杂项文件项目](../../extensibility/internals/miscellaneous-files-project.md)   
  [如何： 打开编辑器的打开的文档](../../extensibility/how-to-open-editors-for-open-documents.md)   
  [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)

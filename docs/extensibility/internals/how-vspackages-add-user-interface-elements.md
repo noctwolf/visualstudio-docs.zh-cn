@@ -1,27 +1,25 @@
 ---
-title: "Vspackage 如何添加用户界面元素 |Microsoft 文档"
-ms.custom: 
+title: Vspackage 如何添加用户界面元素 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 142e2a24f866db7e3ae20217b60b1ea0c201c749
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 930ab9e741b2fd5bbc0ca2954192fe5e2c4313d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何添加用户界面元素
 VSPackage 可以添加用户界面 (UI) 元素，例如，菜单、 工具栏和工具窗口，到 Visual Studio 通过.vsct 文件。  
@@ -64,7 +62,7 @@ VSPackage 可以添加用户界面 (UI) 元素，例如，菜单、 工具栏和
 </Symbols>  
 ```  
   
- 顶级元素`Symbols`部分[GuidSymbol 元素](../../extensibility/guidsymbol-element.md)。 `GuidSymbol`元素名称映射到 IDE 用于标识包和其组成部分的 Guid。  
+ 顶级元素`Symbols`部分[GuidSymbol 元素](../../extensibility/guidsymbol-element.md)。 `GuidSymbol` 元素名称映射到 IDE 用于标识包和其组成部分的 Guid。  
   
 > [!NOTE]
 >  Visual Studio 包模板自动生成 Guid。 你还可以通过单击创建的唯一 GUID**创建 GUID**上**工具**菜单。  
@@ -195,11 +193,11 @@ priority="0x0100" type="Menu">
 |元素|在本节中的命令表定义|可能包含 (作为父项，或通过中的放置位置来`CommandPlacements`部分中，和/或文件名)|可能包含 （也称为父）|  
 |-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
 |Group|[Groups 元素](../../extensibility/groups-element.md)，IDE、 其他 Vspackage|菜单上，一个组，针对项本身|菜单、 组和命令|  
-|菜单|[菜单元素](../../extensibility/menus-element.md)，IDE、 其他 Vspackage|1 到 *n* 组|0 到 *n* 组|  
-|Toolbar|[菜单元素](../../extensibility/menus-element.md)，IDE、 其他 Vspackage|针对项本身|0 到 *n* 组|  
-|菜单项|[按钮元素](../../extensibility/buttons-element.md)，IDE、 其他 Vspackage|1 到 *n* 组，而针对项本身|-0 到 *n* 组|  
-|Button|[按钮元素](../../extensibility/buttons-element.md)，IDE、 其他 Vspackage|1 到 *n* 组，而针对项本身||  
-|组合|[组合元素](../../extensibility/combos-element.md)，IDE、 其他 Vspackage|1 到 *n* 组，而针对项本身||  
+|菜单|[菜单元素](../../extensibility/menus-element.md)，IDE、 其他 Vspackage|1 到*n*组|0 到*n*组|  
+|Toolbar|[菜单元素](../../extensibility/menus-element.md)，IDE、 其他 Vspackage|针对项本身|0 到*n*组|  
+|菜单项|[按钮元素](../../extensibility/buttons-element.md)，IDE、 其他 Vspackage|1 到*n*组，而针对项本身|-0 到*n*组|  
+|Button|[按钮元素](../../extensibility/buttons-element.md)，IDE、 其他 Vspackage|1 到*n*组，而针对项本身||  
+|组合|[组合元素](../../extensibility/combos-element.md)，IDE、 其他 Vspackage|1 到*n*组，而针对项本身||  
   
 ### <a name="menu-command-and-group-placement"></a>菜单、 命令和组放置  
  菜单、 组或命令可以出现在 IDE 中的多个位置中。 在多个位置显示的项，必须将它添加到`CommandPlacements`部分作为[CommandPlacement 元素](../../extensibility/commandplacement-element.md)。 可以作为命令放置添加任何菜单、 组或命令。 但是，工具栏不能以这种方式定位因为它们不能出现在多个上下文相关的位置。  
@@ -214,7 +212,7 @@ priority="0x0100" type="Menu">
 ##### <a name="visibility-constraints"></a>可见性约束  
  可见性约束设置为[VisibilityItem 元素](../../extensibility/visibilityitem-element.md)中`VisibilityConstraints`部分。 可见性约束定义特定 UI 上下文的目标项处于可见。 仅当定义的上下文中的一个处于活动状态，菜单或包括在本部分的命令才可见。 如果本部分中未引用的菜单或命令，将始终默认情况下可见。 本节不适用于组。  
   
- `VisibilityItem`元素必须具有三个特性，如下所示：`guid`和`id`的目标 UI 元素，并`context`。 `context`属性指定当目标项将是可见的并采用任何有效的 UI 上下文作为其值。 Visual Studio 的 UI 上下文常量属于<xref:Microsoft.VisualStudio.VSConstants>类。 每个`VisibilityItem`元素接受只有一个上下文的值。 若要应用的第二个上下文，创建第二个`VisibilityItem`指向同一个项，如下面的示例中所示的元素。  
+ `VisibilityItem` 元素必须具有三个特性，如下所示：`guid`和`id`的目标 UI 元素，并`context`。 `context`属性指定当目标项将是可见的并采用任何有效的 UI 上下文作为其值。 Visual Studio 的 UI 上下文常量属于<xref:Microsoft.VisualStudio.VSConstants>类。 每个`VisibilityItem`元素接受只有一个上下文的值。 若要应用的第二个上下文，创建第二个`VisibilityItem`指向同一个项，如下面的示例中所示的元素。  
   
 ```xml  
 <VisibilityConstraints>  
@@ -233,24 +231,24 @@ priority="0x0100" type="Menu">
  AlwaysCreate  
  即使它具有任何组或按钮创建菜单。  
   
- 适用于：`Menu`  
+ 适用于： `Menu`  
   
  CommandWellOnly  
  将应用此标志如果该命令不显示在顶级菜单上，你想要使其可供其他外壳自定义设置，例如，将其绑定到一个密钥。 安装 VSPackage 后，用户可以通过自定义这些命令打开**选项**对话框中，然后编辑下的命令放置**键盘环境**类别。 不会影响在快捷菜单、 工具栏、 菜单控制器或子菜单上的位置。  
   
- 有关有效： `Button`，`Combo`  
+ 有关有效： `Button`， `Combo`  
   
  DefaultDisabled  
  默认情况下，如果未加载 VSPackage 实现命令或者尚未调用 QueryStatus 方法，则禁用该命令。  
   
- 有关有效： `Button`，`Combo`  
+ 有关有效： `Button`， `Combo`  
   
  DefaultInvisible  
  默认情况下，该命令是不可见，如果未加载 VSPackage 实现命令或者尚未调用 QueryStatus 方法。  
   
  应结合`DynamicVisibility`标志。  
   
- 有关有效： `Button`， `Combo`，`Menu`  
+ 有关有效： `Button`， `Combo`， `Menu`  
   
  DynamicVisibility  
  可以使用 QueryStatus 方法或上下文中包含的 GUID 更改该命令的可见性`VisibilityConstraints`部分。  
@@ -261,12 +259,12 @@ priority="0x0100" type="Menu">
   
  应结合`DefaultInvisible`标志。  
   
- 有关有效： `Button`， `Combo`，`Menu`  
+ 有关有效： `Button`， `Combo`， `Menu`  
   
  NoShowOnMenuController  
  如果命令具有此标志位于菜单控制器，该命令不出现在下拉列表中。  
   
- 适用于：`Button`  
+ 适用于： `Button`  
   
  有关命令标志的详细信息，请参阅[命令标志元素](../../extensibility/command-flag-element.md)文档。  
   
@@ -291,7 +289,7 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>界面元素外观  
  选择和定位命令元素的注意事项如下所示：  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供以不同方式显示，具体取决于放置的许多 UI 元素。  
+-   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供以不同方式显示，具体取决于放置的许多 UI 元素。  
   
 -   UI 元素定义的使用`DefaultInvisible`标志将不会显示在 IDE 除非它是由其 VSPackage 实现显示<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>方法，或与中的特定 UI 上下文关联`VisibilityConstraints`部分。  
   
@@ -303,5 +301,5 @@ priority="0x0100" type="Menu">
   
 -   若要使某些用户界面元素在 IDE 中显示，必须实现一个或多个接口，或编写一些代码。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)

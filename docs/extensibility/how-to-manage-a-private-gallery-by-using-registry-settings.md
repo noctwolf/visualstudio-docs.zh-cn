@@ -1,26 +1,24 @@
 ---
-title: "如何： 使用注册表设置来管理专用库 |Microsoft 文档"
-ms.custom: 
+title: 如何： 使用注册表设置来管理专用库 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8d88c4b440f61e87792210e8a0844b6b622e8f05
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c9631ffa4bce25752b838a78f306ddd3c2313a20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何： 使用注册表设置来管理专用库
 如果你是管理员或开发人员的独立 Shell 扩展，你可以控制对控件、 模板和 Visual Studio 库、 示例库或专用库中的工具访问。 若要使库可用或不可用，请创建一个.pkgdef 文件，用于描述已修改的注册表项和它们的值。  
@@ -71,5 +69,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [专用库](../extensibility/private-galleries.md)

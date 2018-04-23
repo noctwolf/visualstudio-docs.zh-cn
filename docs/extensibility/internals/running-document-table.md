@@ -1,12 +1,10 @@
 ---
-title: "运行 Document 表 |Microsoft 文档"
-ms.custom: 
+title: 运行 Document 表 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4a49a5267fcccbde60e194e3fc58b0f6b6ea7552
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-document-table"></a>正在运行的文档表
 IDE 维护称为正在运行的文档表 (RDT) 的内部结构中的所有当前打开的文档的列表。 此列表包括所有打开的文档在内存中，而不考虑是否当前正在编辑这些文档。 文档是保持不变，包括在项目或主项目文件 （例如，.vcxproj 文件） 的文件的任何项。  
@@ -36,7 +34,7 @@ IDE 维护称为正在运行的文档表 (RDT) 的内部结构中的所有当前
 |文档标记|一个字符串，唯一标识文档数据对象。 这是一个管理文件 (例如，C:\MyProject\MyFile) 的项目系统的绝对文件路径。 此字符串还用于保存在文件系统，如在数据库中的存储过程以外的存储中的项目。 在这种情况下，项目系统可以创建的唯一字符串，它可以识别和可能分析来确定如何将文档存储。|  
 |层次结构所有者|拥有该文档，所表示的层次结构对象<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>接口。|  
 |项 ID|层次结构中的特定项的项标识符。 此值是唯一的而拥有本文档的层次结构中的所有文档，但此值不一定是唯一的不同的层次结构。|  
-|文档数据对象|最小值，这是`IUnknown`<br /><br /> 的名称。 IDE 不需要任何特定界面超出`IUnknown`为自定义编辑器的文档数据对象的接口。 但是，对于标准编辑器中，编辑器的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>需要接口来处理文件从项目的持久性调用。 有关详细信息，请参阅[保存标准文档](../../extensibility/internals/saving-a-standard-document.md)。|  
+|文档数据对象|最小值，这是 `IUnknown`<br /><br /> 的名称。 IDE 不需要任何特定界面超出`IUnknown`为自定义编辑器的文档数据对象的接口。 但是，对于标准编辑器中，编辑器的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>需要接口来处理文件从项目的持久性调用。 有关详细信息，请参阅[保存标准文档](../../extensibility/internals/saving-a-standard-document.md)。|  
 |Flags|条目添加到 RDT 时，可以指定可控制是否保存文档后，是否将应用的读取或编辑锁，标志等。 有关详细信息，请参见 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 枚举。|  
 |编辑锁计数|编辑锁的计数。 编辑锁指示某些编辑器打开以便进行编辑的文档。 当编辑锁的计数转换为零时，用户是系统提示保存文档时，如果修改它。 例如，每次在使用编辑器中打开文档时**新窗口**命令时，编辑锁添加 RDT 中该文档。 要设置的编辑锁的顺序，该文档必须具有层次结构或项 id。|  
 |读取锁计数|读取锁的计数。 读取的锁定指示文档正在通读如向导某种机制。 读取的锁定包含 RDT 中处于活动状态时，该值指示不能编辑文档的文档。 你可以设置读取的锁定，即使该文档不具有层次结构或项 id。 此功能，可在内存中打开文档，并将其填入 RDT 而无需拥有的任何层次结构的文档。 很少使用此功能。|  
@@ -60,6 +58,6 @@ IDE 维护称为正在运行的文档表 (RDT) 的内部结构中的所有当前
   
 -   使用层次结构或项 ID 请项目系统要求的完整文档路径，然后在 RDT 中查找项。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [RDT_ReadLock 使用情况](../../extensibility/internals/rdt-readlock-usage.md)   
  [持久性和正在运行的文档表](../../extensibility/internals/persistence-and-the-running-document-table.md)

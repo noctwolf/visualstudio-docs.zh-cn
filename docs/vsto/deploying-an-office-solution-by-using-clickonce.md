@@ -1,12 +1,10 @@
 ---
-title: "通过使用 ClickOnce 部署 Office 解决方案 |Microsoft 文档"
-ms.custom: 
+title: 通过使用 ClickOnce 部署 Office 解决方案 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a989fe2bc88d25ad81238b65bf8ecd775c39bc35
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 解决方案
   如果使用 ClickOnce，则部署 Office 解决方案的步骤更少。 如果发布更新，解决方案将自动检测并安装更新。 不过，ClickOnce 需要你分别为计算机的每个用户安装解决方案。 因此，如果有多个用户将在同一计算机上运行你的解决方案，应考虑使用 Windows Installer (.msi)。  
@@ -48,8 +47,8 @@ ms.lasthandoff: 01/10/2018
   
  有关如何通过创建 Windows Installer 文件部署 Office 解决方案的详细信息，请参阅[部署 Office 解决方案使用 Windows installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
   
-##  <a name="Publish"></a>发布解决方案  
- 你可以通过使用发布你的解决方案**发布向导**或**项目设计器**。 在此过程中，你将使用**项目设计器**因为它提供了一组完整的发布选项。 请参阅[发布向导 &#40; 的 Office 开发中 Visual Studio &#41;](../vsto/publish-wizard-office-development-in-visual-studio.md)。  
+##  <a name="Publish"></a> 发布解决方案  
+ 你可以通过使用发布你的解决方案**发布向导**或**项目设计器**。 在此过程中，你将使用**项目设计器**因为它提供了一组完整的发布选项。 请参阅[发布向导&#40;Visual Studio 中的 Office 开发&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md)。  
   
 #### <a name="to-publish-the-solution"></a>发布解决方案  
   
@@ -136,12 +135,12 @@ ms.lasthandoff: 01/10/2018
   
 14. 将解决方案文件复制到你先前在此过程中指定的安装位置。  
   
-##  <a name="Trust"></a>决定你想要向解决方案授予信任  
+##  <a name="Trust"></a> 决定你想要向解决方案授予信任  
  要让解决方案在用户计算机上运行，你必须授予信任，或用户必须在安装解决方案时响应信任提示。 要向解决方案授予信任，请使用能识别已知受信任发布者的证书为清单签名。 请参阅[向解决方案授予信任的签名的应用程序和部署清单](../vsto/granting-trust-to-office-solutions.md#Signing)。  
   
  如果要部署的文档级自定义项，并且你想要将放置文件夹的用户的计算机上的文档或使文档在 SharePoint 站点上可用，请确保 Office 信任文档的位置。 请参阅[向文档授予信任](../vsto/granting-trust-to-documents.md)。  
   
-##  <a name="Helping"></a>帮助用户安装解决方案  
+##  <a name="Helping"></a> 帮助用户安装解决方案  
  用户可通过运行安装程序、打开部署清单（或对于文档集自定义项，直接打开文档）来安装解决方案。 作为最佳做法，用户应使用安装程序来安装解决方案。 其他两种方法不能确保安装必备软件。 如果用户希望从安装位置打开文档，则必须将此文档添加到 Office 应用程序信任中心的受信任位置列表。  
   
 ### <a name="opening-the-document-of-a-document-level-customization"></a>打开文档级自定义项的文档  
@@ -190,7 +189,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  为使更改生效，必须重新启动万维网发布服务或者等待工作进程回收。 随后，必须刷新浏览器的磁盘缓存，并尝试再次打开 .vsto 文件。  
   
-##  <a name="Put"></a>将解决方案文档置于最终用户的计算机上 （仅文档级自定义）  
+##  <a name="Put"></a> 将解决方案文档置于最终用户的计算机上 （仅文档级自定义）  
  通过创建后期部署操作，你可以为其复制到最终用户的计算机上你解决方案的文档。 这样一来，用户不需要手动将文档复制从安装位置到其计算机后用户安装解决方案。 你将需要创建定义后期部署操作的类、 生成和发布解决方案，修改应用程序清单和应用程序和部署清单进行重新签名。  
   
  下面的过程假定项目名称即**ExcelWorkbook**并将其发布到解决方案**C:\publish**目录在你的计算机上。  
@@ -309,7 +308,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  将 ExcelWorkbook.vsto 文件复制到**c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_目录。  
   
-##  <a name="SharePoint"></a>将解决方案文档置于运行 SharePoint （仅文档级自定义） 的服务器  
+##  <a name="SharePoint"></a> 将解决方案文档置于运行 SharePoint （仅文档级自定义） 的服务器  
  可以使用 SharePoint 将文档级自定义项发布到最终用户。 当用户转到 SharePoint 站点并打开文档时，运行时会将解决方案从共享网络文件夹自动安装到用户的本地计算机。 将解决方案安装到本地后，即使将文档复制到其他位置（例如桌面），自定义项仍可正常工作。  
   
 #### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>将文档置于运行 SharePoint 的服务器上  
@@ -330,7 +329,7 @@ ms.lasthandoff: 01/10/2018
   
         3.  选择**允许我 （不推荐） 的网络上的受信任位置**复选框，然后依次**添加新位置**按钮。  
   
-        4.  在**路径**框中，输入包含上载文档的 SharePoint 文档库的 URL (例如， *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).  
+        4.  在**路径**框中，输入包含上载文档的 SharePoint 文档库的 URL (例如， *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*)。  
   
              请勿添加默认网页，例如 default.aspx 或 AllItems.aspx 的名称。  
   
@@ -338,7 +337,7 @@ ms.lasthandoff: 01/10/2018
   
              当用户从 SharePoint 站点打开文档时，将打开文档，并安装自定义项。 用户可将文档复制到他们的桌面。 自定义项仍将运行，因为文档中的属性指向文档的网络位置。  
   
-##  <a name="Custom"></a>创建自定义安装程序  
+##  <a name="Custom"></a> 创建自定义安装程序  
  为 Office 解决方案，而不是使用发布解决方案时，为你创建的安装程序，可以创建自定义安装程序。 例如，可以使用登录脚本来启动安装，或者使用批处理文件来安装解决方案，而无需用户交互。 如果最终用户计算机上已安装了系统必备组件，则这些方案都能顺利实现。  
   
  在自定义安装过程中，调用适用于 Office 解决方案的安装程序工具 (VSTOInstaller.exe)，此工具在默认情况下安装在以下位置：  
@@ -372,12 +371,12 @@ ms.lasthandoff: 01/10/2018
 |-401|无法卸载解决方案。|  
 |-500|由于未能安装或卸载解决方案，或者未能下载部署清单，操作已取消。|  
   
-##  <a name="Update"></a>发布更新  
+##  <a name="Update"></a> 发布更新  
  若要更新解决方案，它再次使用发布**项目设计器**或**发布向导**，然后将更新后的解决方案复制到安装位置。 将文件复制到安装位置时，请确保覆盖先前文件。  
   
  下一步时，在解决方案检查更新时，它将查找和自动加载新版本。  
   
-##  <a name="Location"></a>更改解决方案的安装位置  
+##  <a name="Location"></a> 更改解决方案的安装位置  
  可以在发布解决方案后添加或更改安装路径。 你可能需要出于以下一个或多个原因更改安装路径：  
   
 -   在编译安装程序时，安装路径未知。  
@@ -435,7 +434,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  不带 /url 参数运行安装程序，以便在指定的位置中安装解决方案。  
   
-##  <a name="Roll"></a>解决方案回滚到早期版本  
+##  <a name="Roll"></a> 解决方案回滚到早期版本  
  在回滚解决方案时，会将用户还原到此解决方案的早期版本。  
   
 #### <a name="to-roll-back-a-solution"></a>回滚解决方案  
@@ -459,7 +458,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  仅为解决方案的一个早期版本保存本地数据。 如果回滚两个版本，不保留本地数据。 有关本地数据的详细信息，请参阅[访问本地数据和 ClickOnce 应用程序中的远程数据](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [发布 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   

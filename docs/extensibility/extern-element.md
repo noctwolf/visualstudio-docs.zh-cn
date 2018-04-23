@@ -2,29 +2,25 @@
 title: Extern 元素 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Extern
 helpviewer_keywords:
 - VSCT XML schema elements, Extern
 - Extern element (VSCT XML schema)
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
-caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff198f5c4b574bf3a27ae1ee8fb6ffdd482c7f71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ea14d985265d02c3e60ee12c8b46deafba2bcd72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extern-element"></a>Extern 元素
 Extern 元素引用在编译时合并使用.vsct 文件的任何外部标头 (.h) 文件。 要合并的文件必须在 Include 路径提供给 VSCT 编译器或引用的[包括元素](../extensibility/include-element.md)。 文件可能是其他.vsct 文件或 c + + 标头文件。  
@@ -75,7 +71,7 @@ Extern 元素
 </CommandTable>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 命令表 (。Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

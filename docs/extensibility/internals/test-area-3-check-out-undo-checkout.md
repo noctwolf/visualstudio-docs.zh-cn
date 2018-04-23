@@ -1,28 +1,26 @@
 ---
-title: "测试区域 3： 检查传出撤消签出 |Microsoft 文档"
-ms.custom: 
+title: 测试区域 3： 检查传出撤消签出 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, checkout
 - source control plug-ins, undo checkout
 - source control [Visual Studio SDK], checking out
 - source control [Visual Studio SDK], undo checkout
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8835f1f8c312b3aba72353625a1d97b514dc21b8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5d769fdc52ac92053c258a3f82fa53cec5c56fa7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>测试区域 3： 签出/撤消签出
 此源代码管理插件测试区域涉及通过版本存储中的编辑和恢复项目**签出**和**撤消签出**命令。  
@@ -137,5 +135,5 @@ ms.lasthandoff: 12/22/2017
 |向项目添加文件后撤消签出的一个项目|1.创建新项目并将其添加到源代码管理。<br />2.签出该项目。<br />3.将文件添加到项目。<br />4.撤消签出的项目。|从解决方案资源管理器中的项目中删除添加的文件。<br /><br /> 项目不再签出。|  
 |从项目中删除文件后撤消签出的一个项目|1.创建新项目并将其添加到源代码管理。<br />2.签出该项目。<br />3.从项目中删除文件。<br />4.撤消签出的项目。|已删除的文件将出现在解决方案资源管理器中的项目下。<br /><br /> 项目不再签出。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

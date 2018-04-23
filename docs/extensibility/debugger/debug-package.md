@@ -1,27 +1,23 @@
 ---
-title: "调试包 |Microsoft 文档"
-ms.custom: 
+title: 调试包 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], packages
 ms.assetid: 99947fd4-fb87-4c69-b26c-65634e17d285
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2cbb124dcb2d2d7a0bbcba1bc57eb3c704dd770
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6ca438b7ed8c9b6a4b84693f975144040f998f01
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-package"></a>调试包
 调试包在 Visual Studio shell 中运行，并处理所有 UI。 它使用 Visual Studio 调试接口，并与会话调试管理器 (SDM) 进行通信。  
@@ -32,7 +28,7 @@ ms.lasthandoff: 12/22/2017
   
  由 vsdebug.dll 实现调试包。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [会话调试管理器](../../extensibility/debugger/session-debug-manager.md)   
  [堆栈帧](../../extensibility/debugger/stack-frames.md)   
  [线程](../../extensibility/debugger/threads.md)   

@@ -1,26 +1,24 @@
 ---
-title: "使用项目工厂创建项目实例 |Microsoft 文档"
-ms.custom: 
+title: 使用项目工厂创建项目实例 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8a331c131eaf48eb7be8bc3709599412aa01b1ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b3a59eee6701caf0b4d3b56df273b280f8bf6ece
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>使用项目工厂创建项目实例
 中的项目类型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*项目工厂*创建的项目对象实例。 项目工厂是类似于 cocreatable COM 对象的标准类工厂。 但是，项目对象不是 cocreatable： 仅可以通过使用项目工厂创建它们。  
@@ -50,7 +48,7 @@ ms.lasthandoff: 12/22/2017
   
  一个项目都可以还使用任何文件，并将其项目状态相反，存储在文件系统，例如数据库或 Web 服务器以外的存储机制。 在这种情况下，文件名称参数传递给`CreateProject`方法不是实际的文件系统路径，而一个唯一字符串-URL-标识项目数据。 不需要将传递给模板文件复制`CreateProject`触发要执行的适当构造序列。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   

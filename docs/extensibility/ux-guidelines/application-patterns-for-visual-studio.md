@@ -1,26 +1,24 @@
 ---
-title: "Visual Studio 的应用程序模式 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 的应用程序模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a793651660c456213c0e91c0d6c6474cccf3f7d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio 的应用程序模式
-##  <a name="BKMK_WindowInteractions"></a>窗口交互  
+##  <a name="BKMK_WindowInteractions"></a> 窗口交互  
   
 ### <a name="overview"></a>概述  
 在 Visual Studio 中使用的两个主窗口类型是文档编辑器和工具窗口。 少见，但可能，是大无模式对话框。 尽管这些是在外壳程序中所有无模式，其模式是完全不同。 本部分介绍文档窗口、 工具窗口和无模式对话框之间的差异。 中介绍了模式对话框模式[对话框](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)。  
@@ -42,7 +40,7 @@ A**工具窗口**通常显示为单独的较小窗口中折叠针对 IDE 的边�
 | **实例** | *多实例*<br /><br /> 当某些编辑器还允许相同的文件可在多个编辑器中打开时，可以在同一时间和编辑不同的文件，打开多个编辑器 (使用**窗口&gt;新窗口**命令)。<br /><br /> 在同一时间 （项目设计器），单个编辑器可能正在编辑一个或多个文件。 | *单-或多-instance*<br /><br /> 内容发生更改以反映上下文 （如所示属性浏览器） 或将焦点/上下文推送到其他窗口 （解决方案资源管理器中的任务列表）。<br /><br /> 如果没有人信服的理由不到，单实例和多实例工具窗口应与活动文档窗口相关联。 | *单实例* |  
 | **示例** | **文本编辑器**，如代码编辑器<br /><br /> **设计图面**，如窗体设计器或建模图面<br /><br /> **控制布局类似于对话框**，如清单设计器 | **解决方案资源管理器**提供解决方案和解决方案中包含的项目<br /><br /> **服务器资源管理器**提供用户选择在窗口中打开的服务器和数据连接的分层视图。 从数据库层次结构，如查询中，打开对象打开文档窗口，并允许用户编辑查询。<br /><br /> **属性浏览器**显示在文档窗口或另一个工具窗口中的所选对象的属性。 属性在层次结构的网格视图中或复杂的类似于对话框的控件中已提供，并允许用户设置这些属性的值。 | |  
   
-##  <a name="BKMK_ToolWindows"></a>工具窗口  
+##  <a name="BKMK_ToolWindows"></a> 工具窗口  
   
 ### <a name="overview"></a>概述  
 工具窗口支持文档窗口中的用户的工作。 它们可以用于显示表示 Visual Studio 提供，并可以操作的基本根对象的层次结构。  
@@ -149,7 +147,7 @@ Visual Studio 工具窗口具有不同的状态，其中一些用户激活 （�
 | 寄存器 ||  
 | 线程 ||  
   
-##  <a name="BKMK_DocumentEditorConventions"></a>文档编辑器约定  
+##  <a name="BKMK_DocumentEditorConventions"></a> 文档编辑器约定  
   
 ### <a name="document-interactions"></a>文档交互  
 "文档也"是在 IDE 中的最大空间，其中用户通常一直致力于他们注意若要完成其任务，由补充工具窗口协助。 文档编辑器表示的基本用户打开和保存 Visual Studio 中的工作单元。 它们仍然保留了所选内容与解决方案资源管理器或其他活动的层次结构窗口相关联的明确识别。 用户应该能够指向一个这些层次结构窗口和解决方案、 项目或 Visual Studio 包所提供的另一个根对象知道包含该文档和及其之间的关系。  
@@ -257,7 +255,7 @@ Visual Studio 工具窗口具有不同的状态，其中一些用户激活 （�
   
 -   用户必须能够与使用键盘、 只可通过激活编辑器并按 tab 键浏览控件或通过使用标准的助记键的控件进行交互。  
   
-##  <a name="BKMK_Dialogs"></a>对话框  
+##  <a name="BKMK_Dialogs"></a> 对话框  
   
 ### <a name="introduction"></a>介绍  
 Visual Studio 中的对话框通常应支持一个离散的用户的工作单位，然后关闭。  
@@ -313,12 +311,12 @@ Specialty"签名"对话框可能主题。 主题对话框都具有独特的外�
   
 -   [向导](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards)可用于将定向逻辑的步骤来完成任务序列通过用户。 选择一系列顺序面板，有时引入了不同的工作流 （"分支"） 依赖于在上一面板中所做的选择中提供。  
   
-####  <a name="BKMK_SimpleDialogs"></a>简单对话框  
+####  <a name="BKMK_SimpleDialogs"></a> 简单对话框  
 简单对话框是一个模式窗口中的控件的演示。 此演示文稿可能包含变体的复杂控件模式，如域选取器。 有关简单对话框，请遵循标准的常规布局，以及所需的复杂控件分组任何特定布局。
   
 ![> 创建强名称密钥是一个简单的对话框在 Visual Studio 中的一个示例。] (../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704年 01_CreateStrongNameKey")<br />创建强名称密钥是一个简单的对话框在 Visual Studio 中的一个示例。
   
-####  <a name="BKMK_LayeredDialogs"></a>分层的对话框  
+####  <a name="BKMK_LayeredDialogs"></a> 分层的对话框  
 分层的对话框包括选项卡、 仪表板和嵌入的树。 它们用于最大化房地产有多个组的一段单独的 UI 中提供的控件时。 分组进行分层，以便用户可以选择以在任何时候查看哪些分组。  
   
 在最简单的情况下，用于分组之间进行切换的机制是选项卡控件。 有多种可选方案。 请参阅优先级和有关如何选择最合适的样式的分层。  
@@ -327,7 +325,7 @@ Specialty"签名"对话框可能主题。 主题对话框都具有独特的外�
   
 ![工具 > 选项是分层对话框在 Visual Studio 中的一个示例。] (../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704年 02_ToolsOptions")<br />工具 > 选项是分层对话框在 Visual Studio 中的一个示例。
   
-####  <a name="BKMK_Wizards"></a>向导  
+####  <a name="BKMK_Wizards"></a> 向导  
 向导可用于将用户通过一系列逻辑步骤定向中的任务完成。 选择一系列提供连续面板中，用户必须继续完成然后再继续到下的每个步骤。 一旦足够的默认值为可用，**完成**按钮处于启用状态。  
   
  模式向导用于任务的：  
@@ -408,7 +406,7 @@ Specialty"签名"对话框可能主题。 主题对话框都具有独特的外�
 #### <a name="imagery"></a>图像  
 在对话框中尽量少使用映像。 请勿使用大图标对话框中仅使用了空间。 仅当它们是传达给用户，例如警告图标或状态动画消息的重要组成部分，请使用映像。  
   
-###  <a name="BKMK_PrioritizingAndLayering"></a>确定需求优先顺序和分层  
+###  <a name="BKMK_PrioritizingAndLayering"></a> 确定需求优先顺序和分层  
   
 #### <a name="prioritizing-your-ui"></a>优先处理你的 UI  
 它可能需要某些用户界面元素置于前端，更高级的行为和到对话框选项 （包括晦涩命令）。 通过使腾出空间供它，并使其可见的文本标签 UI 在默认情况下显示的对话框时，可在前端中将常用的功能。  
@@ -423,7 +421,7 @@ Specialty"签名"对话框可能主题。 主题对话框都具有独特的外�
 | 切换机制 | 优点和相应的使用 | 缺点和不恰当地使用 |  
 | --- | --- | --- |  
 | Tab 控件 | 进行逻辑分组到相关设置的对话框页面<br /><br />用于少于五个 （或对话框调整在一行中的选项卡的数目） 对话框中相关控件的页<br /><br />选项卡标签必须是短： 可以轻松地识别的内容的一个或两个单词<br /><br />常见的系统对话框样式<br /><br />示例：**文件资源管理器&gt;项属性** | 就很难做出描述性短标签<br /><br />通常不能超越一个对话框中的五个选项卡<br /><br />如果你有一个行 （使用备用分层技术） 的过多选项卡不适合<br /><br />不可扩展 |  
-| 边栏导航 | 可以容纳更多的类别选项卡比的简单切换设备<br /><br />类别 （无层次结构） 的简单列表<br /><br />可扩展<br /><br />示例：**自定义...&gt;添加命令** | 使用的水平空间少于三个组是否不好<br /><br />任务可能是更好地适合于下拉列表 |  
+| 边栏导航 | 可以容纳更多的类别选项卡比的简单切换设备<br /><br />类别 （无层次结构） 的简单列表<br /><br />可扩展<br /><br />示例：**自定义...&gt; 添加命令** | 使用的水平空间少于三个组是否不好<br /><br />任务可能是更好地适合于下拉列表 |  
 | 树控件 | 允许不受限制的类别<br /><br />允许的分组和/或类别的层次结构<br /><br />可扩展<br /><br />示例：**工具&gt;选项** | 很大程度嵌套层次结构可能会导致过多的水平滚动<br /><br />Visual Studio 具有过度使用了树视图 |  
 | 向导 | 引导用户完成基于任务的顺序步骤与完成任务的帮助： 向导表示的高级任务，并且单个面板表示完成整个任务所需的子任务<br /><br />当跨 Ui 边界，作为时用户那些原本要使用多个编辑器和工具窗口完成任务的任务时有用<br /><br />当此任务需要分支时有用<br /><br />当任务中包含步骤之间的依赖关系时有用<br /><br />当使用一个决策分叉的多个类似任务可以显示在一个对话框，以减少的数量不同类似对话框时有用 | 不适合于任何不需要的顺序工作流的任务<br /><br />用户可以成为失控和混淆具有太多步骤的向导<br /><br />向导具有本质上被有限的屏幕的实际空间 |  
   
@@ -437,7 +435,7 @@ Specialty"签名"对话框可能主题。 主题对话框都具有独特的外�
 ##### <a name="adaptive-ui"></a>自适应用户界面  
 显示或隐藏用户界面基于使用情况或用户的自助报告的体验是另一种同时隐藏了其他部分中提供必要的 UI。 这不是建议在 Visual Studio 中，用于确定何时显示或隐藏 UI 算法可能会很棘手，以及规则将始终为错误的情况下的某一集。  
   
-##  <a name="BKMK_Projects"></a>项目  
+##  <a name="BKMK_Projects"></a> 项目  
   
 ### <a name="projects-in-the-solution-explorer"></a>在解决方案资源管理器的项目  
 大多数项目被归类为基于引用的、 基于目录或混合。 在解决方案资源管理器中同时支持所有三种类型的项目。 使用项目中的用户体验的根在此窗口内发生。 尽管所不同的项目节点的引用、 目录或混合模式类型的项目，但是没有拆分成特定于项目的用户模式之前应该作为起始点应用常见的交互模式。  
@@ -508,19 +506,19 @@ Specialty"签名"对话框可能主题。 主题对话框都具有独特的外�
 | 没有修饰符 | 操作 | 移动 | 链接 |  
 | 没有修饰符 | 目标 | 将引用添加到原始项目 | 将引用添加到原始项目 |  
 | 没有修饰符 | 源 | 删除对原始项目的引用 | 保留原始项目 |  
-| 没有修饰符 | 结果 | `DROPEFFECT_MOVE`作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_LINK`作为从操作返回`::Drop`并项保留在存储中的原始位置 |  
+| 没有修饰符 | 结果 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_LINK` 作为从操作返回`::Drop`并项保留在存储中的原始位置 |  
 | 按住 shift + 拖动 | 操作 | 移动 | 不拖放 |  
 | 按住 shift + 拖动 | 目标 | 将引用添加到原始项目 | 不拖放 |  
 | 按住 shift + 拖动 | 源 | 删除对原始项目的引用 | 不拖放 |  
-| 按住 shift + 拖动 | 结果 | `DROPEFFECT_MOVE`作为从操作返回`::Drop`并项保留在存储中的原始位置 | 不拖放 |  
+| 按住 shift + 拖动 | 结果 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`并项保留在存储中的原始位置 | 不拖放 |  
 | Ctrl + 拖 | 操作 | 复制 | 不拖放 |  
 | Ctrl + 拖 | 目标 | 将引用添加到原始项目 | 不拖放 |  
 | Ctrl + 拖 | 源 | 保留原始项目引用 | 不拖放 |  
-| Ctrl + 拖 | 结果 | `DROPEFFECT_COPY`作为从操作返回`::Drop`并项保留在存储中的原始位置 | 不拖放 |  
+| Ctrl + 拖 | 结果 | `DROPEFFECT_COPY` 作为从操作返回`::Drop`并项保留在存储中的原始位置 | 不拖放 |  
 | Ctrl + Shift + 拖 | 操作 | 链接 | 链接 |  
 | Ctrl + Shift + 拖 | 目标 | 将引用添加到原始项目 | 将引用添加到原始项目 |  
 | Ctrl + Shift + 拖 | 源 | 保留原始项目引用 | 保留原始项目 |  
-| Ctrl + Shift + 拖 | 结果 | `DROPEFFECT_LINK`作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_LINK`作为从操作返回`::Drop`并项保留在存储中的原始位置 |  
+| Ctrl + Shift + 拖 | 结果 | `DROPEFFECT_LINK` 作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_LINK` 作为从操作返回`::Drop`并项保留在存储中的原始位置 |  
 | Ctrl + Shift + 拖 | 说明 | 在 Windows 资源管理器的快捷方式拖放行为相同。 ||  
 | 剪切/粘贴 | 操作 | 移动 | 链接 |  
 | 剪切/粘贴 | 目标 | 将引用添加到原始项目 | 将引用添加到原始项目 |  
@@ -538,15 +536,15 @@ Specialty"签名"对话框可能主题。 主题对话框都具有独特的外�
 | --- | --- | --- | --- |  
 | 没有修饰符 | 操作 | 移动 | 移动 |  
 | 没有修饰符 | 目标 | 到的目标位置的副本项 | 到的目标位置的副本项 |  
-| 没有修饰符 | 源 | 删除对原始项目的引用 | 删除对原始项目的引用 | | 没有修饰符 | 结果 | `DROPEFFECT_MOVE`作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_MOVE`作为从操作返回`::Drop`并项保留在存储中的原始位置 |  
+| 没有修饰符 | 源 | 删除对原始项目的引用 | 删除对原始项目的引用 | | 没有修饰符 | 结果 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`并项保留在存储中的原始位置 |  
 | 按住 shift + 拖动 | 操作 | 移动 | 移动 |  
 | 按住 shift + 拖动 | 目标 | 到的目标位置的副本项 | 到的目标位置的副本项 |  
 | 按住 shift + 拖动 | 源 | 删除对原始项目的引用 | 从原始位置删除项 |
-| 按住 shift + 拖动 | 结果 | `DROPEFFECT_MOVE`作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_MOVE`作为从操作返回`::Drop`并项保留在存储中的原始位置 |  
+| 按住 shift + 拖动 | 结果 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`并项保留在存储中的原始位置 |  
 | Ctrl + 拖 | 操作 | 复制 | 复制 |  
 | Ctrl + 拖 | 目标 | 到的目标位置的副本项 | 到的目标位置的副本项 |  
 | Ctrl + 拖 | 源 | 保留原始项目引用 | 保留原始项目引用 |  
-| Ctrl + 拖 | 结果 | `DROPEFFECT_COPY`作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_COPY`作为从操作返回`::Drop`并项保留在存储中的原始位置 |  
+| Ctrl + 拖 | 结果 | `DROPEFFECT_COPY` 作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_COPY` 作为从操作返回`::Drop`并项保留在存储中的原始位置 |  
 | Ctrl + Shift + 拖 | | 不拖放 | 不拖放 |  
 | 剪切/粘贴 | 操作 | 移动 | 移动 |  
 | 剪切/粘贴 | 目标 | 到的目标位置的副本项 | 到的目标位置的副本项 |  
@@ -565,19 +563,19 @@ Specialty"签名"对话框可能主题。 主题对话框都具有独特的外�
 | 没有修饰符 | 操作 | 移动 | 移动 |
 | 没有修饰符 | 目标 | 将引用添加到原始项目 | 到的目标位置的副本项 |
 | 没有修饰符 | 源 | 删除对原始项目的引用 | 删除对原始项目的引用 |
-| 没有修饰符 | 结果 | `DROPEFFECT_ MOVE`作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_ MOVE`作为从操作返回`::Drop`和从存储中的原始位置中删除项目 |
+| 没有修饰符 | 结果 | `DROPEFFECT_ MOVE` 作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_ MOVE` 作为从操作返回`::Drop`和从存储中的原始位置中删除项目 |
 | 按住 shift + 拖动 | 操作 | 移动 | 移动 |
 | 按住 shift + 拖动 | 目标 | 将引用添加到原始项目 | 到的目标位置的副本项 |
 | 按住 shift + 拖动 | 源 | 删除对原始项目的引用 | 从原始位置删除项 | 
-| 按住 shift + 拖动 | 结果 | `DROPEFFECT_ MOVE`作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_ MOVE`作为从操作返回`::Drop`和从存储中的原始位置中删除项目 |
+| 按住 shift + 拖动 | 结果 | `DROPEFFECT_ MOVE` 作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_ MOVE` 作为从操作返回`::Drop`和从存储中的原始位置中删除项目 |
 | Ctrl + 拖 | 操作 | 复制 | 复制 |
 | Ctrl + 拖 | 目标 | 将引用添加到原始项目 | 到的目标位置的副本项 |
 | Ctrl + 拖 | 源 | 保留原始项目引用 | 保留原始项目 |
-| Ctrl + 拖 | 结果 | `DROPEFFECT_ COPY`作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_ COPY`作为从操作返回`::Drop`并项保留在存储中的原始位置 |
+| Ctrl + 拖 | 结果 | `DROPEFFECT_ COPY` 作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_ COPY` 作为从操作返回`::Drop`并项保留在存储中的原始位置 |
 | Ctrl + Shift + 拖 | 操作 | 链接 | 链接 |
 | Ctrl + Shift + 拖 | 目标 | 将引用添加到原始项目 | 将引用添加到原始的源项 |
 | Ctrl + Shift + 拖 | 源 | 保留原始项目引用 | 保留原始项目 |
-| Ctrl + Shift + 拖 | 结果 | `DROPEFFECT_ LINK`作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_ LINK`作为从操作返回`::Drop`并项保留在存储中的原始位置 |
+| Ctrl + Shift + 拖 | 结果 | `DROPEFFECT_ LINK` 作为从操作返回`::Drop`并项保留在存储中的原始位置 | `DROPEFFECT_ LINK` 作为从操作返回`::Drop`并项保留在存储中的原始位置 |
 | 剪切/粘贴 | 操作 | 移动 | 移动 |
 | 剪切/粘贴 | 目标 | 到的目标位置的副本项 | 到的目标位置的副本项 |
 | 剪切/粘贴 | 源 | 删除对原始项目的引用 | 从原始位置删除项 |

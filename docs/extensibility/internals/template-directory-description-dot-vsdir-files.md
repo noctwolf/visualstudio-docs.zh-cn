@@ -1,27 +1,25 @@
 ---
-title: "模板目录说明 (。Vsdir) 文件 |Microsoft 文档"
-ms.custom: 
+title: 模板目录说明 (。Vsdir) 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsdir files
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 739dd0d41fb63c4993dad0d66737aaada1cf01c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 14ea2e0bcc11324e6529c70c04c11874ec4a3399
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="template-directory-description-vsdir-files"></a>模板目录说明 (。Vsdir) 文件
 模板目录说明文件 (.vsdir) 是一个文本文件，使集成的开发环境 (IDE) 显示文件夹、 向导.vsz 文件和与你在对话框中的项目相关联的模板文件。 内容包括每个文件或文件夹的一个记录。 引用位置中的所有.vsdir 文件会都合并，尽管只有一个.vsdir 文件通常用于描述多个文件夹，向导或模板文件。  
@@ -66,6 +64,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
   
 -   如果你删除.vsz 文件和文件夹或模板文件，你还必须从.vsdir 文件删除其关联的记录。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [向导](../../extensibility/internals/wizards.md)   
  [向导 (.Vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)

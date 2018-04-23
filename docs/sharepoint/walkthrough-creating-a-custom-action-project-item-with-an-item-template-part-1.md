@@ -1,12 +1,10 @@
 ---
-title: "演练： 使用项模板创建的自定义操作项目项，第 1 部分 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用项模板创建的自定义操作项目项，第 1 部分 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: dae92a4c20130425fa93a413856f3d2cb5a37387
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e690d18bae72b59234f2f90cbcf903b9941df7d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>演练： 使用项模板创建的自定义操作项目项，第 1 部分
   可以通过创建自己的项目项类型来扩展 Visual Studio 中的 SharePoint 项目系统。 在本演练中，你将创建可以添加到 SharePoint 项目，以便在 SharePoint 站点上创建自定义操作项目项。 此自定义操作将添加到菜单项**站点操作**菜单中的 SharePoint 站点。  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
  这是一个独立的演练。 完成本演练后，你可以通过将向导添加到项模板增强项目项。 有关详细信息，请参阅[演练： 使用项模板，第 2 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
   
 > [!NOTE]  
->  你可以下载包含已完成的项目、 代码和从以下位置在本演练中的其他文件的示例： [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369)。  
+>  你可以下载包含已完成的项目、 代码和从以下位置在本演练中的其他文件的示例： [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369)。  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练的开发计算机上：  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  在**名称**框中，输入**CustomActionProjectItem**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**CustomActionProjectItem**项目合并为**解决方案资源管理器**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**CustomActionProjectItem**项目合并为**解决方案资源管理器**。  
   
 #### <a name="to-create-the-item-template-project"></a>若要创建项模板项目  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  在**名称**框中，输入**ItemTemplate**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**ItemTemplate**到解决方案的项目。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**ItemTemplate**到解决方案的项目。  
   
 #### <a name="to-create-the-extension-project"></a>若要创建扩展项目  
   
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  在**名称**框中，输入**ProjectItemDefinition**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**ProjectItemDefinition**到解决方案的项目并打开默认 Class1 代码文件。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**ProjectItemDefinition**到解决方案的项目并打开默认 Class1 代码文件。  
   
 5.  从项目中删除 Class1 代码文件。  
   
@@ -430,7 +429,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  如果**脚本调试已禁用**对话框出现时，选择**是**按钮以继续调试项目。  
   
-4.  上**站点操作**菜单上，选择**SharePoint 开发人员中心**，验证浏览器打开网站 http://msdn.microsoft.com/sharepoint/default.aspx，，然后关闭 web 浏览器。  
+4.  上**站点操作**菜单上，选择**SharePoint 开发人员中心**，验证浏览器打开网站http://msdn.microsoft.com/sharepoint/default.aspx，然后关闭 web 浏览器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清理开发计算机  
  完成项目项的测试后，从 Visual Studio 的实验实例中删除项目项模板。  
@@ -452,13 +451,13 @@ ms.lasthandoff: 01/10/2018
 ## <a name="next-steps"></a>后续步骤  
  完成本演练后，你可以将向导添加到项模板。 当用户将自定义操作项目项添加到 SharePoint 项目中时，向导可收集有关的操作 （如其位置和要选择操作时，导航到的 URL） 信息并将此信息添加到新的项目项中的 Elements.xml 文件。 有关详细信息，请参阅[演练： 使用项模板，第 2 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [演练： 使用项模板创建的自定义操作项目项，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
  [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)   
  [Visual Studio 模板架构参考](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [图标的图像编辑器](/cpp/windows/image-editor-for-icons)   
- [一个图标或其他图像 &#40; 上的图像编辑器创建图标 &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [创建图标或其他图像&#40;图标的图像编辑器&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

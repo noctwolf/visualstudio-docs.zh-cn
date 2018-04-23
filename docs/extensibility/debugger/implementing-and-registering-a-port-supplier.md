@@ -1,29 +1,27 @@
 ---
-title: "实现和注册的端口供应商提供 |Microsoft 文档"
-ms.custom: 
+title: 实现和注册的端口供应商提供 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 54d6a4ab90b5ad169c5c940f52322dfd9b4974a4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>实现和注册端口供应商
-端口供应商提供的角色是跟踪并提供反过来管理进程的端口。 在需要创建某个端口时，端口供应商是实例化可以共同创建使用端口供应商的 GUID （端口供应商选定的用户或指定的项目系统端口供应商，将使用会话调试管理器 [SDM]）。 然后将调用 SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)以查看是否可以添加任何端口。 如果可以添加一个端口，通过调用请求一个新的端口[添加](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)并将其传递[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)描述该端口。 `AddPort`将返回一个新的端口，由表示[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口。  
+端口供应商提供的角色是跟踪并提供反过来管理进程的端口。 在需要创建某个端口时，端口供应商是实例化可以共同创建使用端口供应商的 GUID （端口供应商选定的用户或指定的项目系统端口供应商，将使用会话调试管理器 [SDM]）。 然后将调用 SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)以查看是否可以添加任何端口。 如果可以添加一个端口，通过调用请求一个新的端口[添加](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)并将其传递[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)描述该端口。 `AddPort` 将返回一个新的端口，由表示[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口。  
   
 ## <a name="discussion"></a>讨论  
  端口供应商，这是与计算机或调试服务器反过来关联创建一个端口。 服务器可以枚举通过其端口供应商[EnumPortSuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)方法和端口供应商可以枚举其端口到[EnumPorts](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)方法。  
@@ -63,7 +61,7 @@ RemoveMetric(metrictypePortSupplier,
   
  端口供应商可以通过方法提供其名称和 GUID [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)和[GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)分别。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [实现端口供应商](../../extensibility/debugger/implementing-a-port-supplier.md)   
  [SDK 适用于调试的帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [端口提供程序](../../extensibility/debugger/port-suppliers.md)

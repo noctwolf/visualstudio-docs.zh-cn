@@ -2,28 +2,24 @@
 title: IDebugExceptionEvent2 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugExceptionEvent2
 helpviewer_keywords:
 - IDebugExceptionEvent2 interface
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6dacbac1092e211ba129417bd4e47aea31b733
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f2cb866c12cacc2c0fcc81c3021e7cc5af448d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 当前正在执行的程序中引发异常时，调试引擎 (DE) 会将此接口发送到会话调试管理器 (SDM)。  
@@ -50,17 +46,17 @@ IDebugExceptionEvent2 : IUnknown
 |[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)|确定的调试引擎 (DE) 支持将此异常传递给执行恢复时被调试的程序的选项。|  
 |[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|指定异常应该传递到如果执行恢复，被调试的程序是否应放弃该异常。|  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>备注  
  在之前将该事件的发送，DE 检查是否此异常事件已由及早或第二次异常的以前调用[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)。 如果已指定为最可能的异常，`IDebugExceptionEvent2`向 SDM 发送事件。 如果没有，DE 使应用程序有机会处理异常。 如果没有异常处理提供，并且已指定为第二个机会异常，异常`IDebugExceptionEvent2`向 SDM 发送事件。 否则为 DE 继续执行程序，并且操作系统或运行时处理异常。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

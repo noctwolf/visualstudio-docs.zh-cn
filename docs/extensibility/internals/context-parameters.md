@@ -1,26 +1,24 @@
 ---
-title: "上下文参数 |Microsoft 文档"
-ms.custom: 
+title: 上下文参数 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - wizards, context parameters
 - context parameters
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 45c05f738086cad87d204e1421513da54a01e211
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cb6646e917b4cb94b4cd0534b513d148490cf69d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="context-parameters"></a>上下文参数
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)，你可以添加到向导**新项目**，**添加新项**，或**添加子项目**对话框。 添加的向导位于**文件**菜单或通过右键单击中的项目**解决方案资源管理器**。 IDE 将上下文参数传递给该向导的实现。 当 IDE 调用向导时，上下文参数定义项目的状态。  
@@ -62,7 +60,7 @@ ms.lasthandoff: 12/22/2017
 |`InstallationDirectory`|目录路径[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是安装。|  
 |`Silent`|布尔值，该值指示是否应以无提示方式运行向导就像**完成**已单击 (`TRUE`)。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>   
  [自定义参数](../../extensibility/internals/custom-parameters.md)   

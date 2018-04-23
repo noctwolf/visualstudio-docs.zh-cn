@@ -1,26 +1,24 @@
 ---
-title: "UI 文本和 Visual Studio 的帮助 |Microsoft 文档"
-ms.custom: 
+title: UI 文本和 Visual Studio 的帮助 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 555fd622f5655a69ba77f3905a39635e01831c76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 697c794d17f3004b0f37e668ff67afb703490e18
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文本和 Visual Studio 的帮助
-##  <a name="BKMK_UITextAndTerminology"></a>UI 文本和术语  
+##  <a name="BKMK_UITextAndTerminology"></a> UI 文本和术语  
  易于理解的文本至关重要有效 UI。 软件用户倾向于读取标签第一次，即那些完成手头的任务最相关。 使用较少频率读取静态文本。 若要使用的整个窗口中，跟此大致顺序中的用户界面的读取一次快速扫描启动其工作会话的用户的计划：  
   
 1.  中心中的交互式控件  
@@ -428,7 +426,7 @@ public class HelpForm : Form
 }  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [字体和 Visual Studio 的格式设置](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)   
  [Visual Studio 的布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md)   
  [Visual Studio 的通知和进度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

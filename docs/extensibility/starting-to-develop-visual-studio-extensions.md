@@ -1,26 +1,24 @@
 ---
-title: "开始开发 Visual Studio 扩展 |Microsoft 文档"
-ms.custom: 
+title: 开始开发 Visual Studio 扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 09/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Visual Studio integration
 - Visual Studio, integration
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 44403b5d60fc13666ffc6ec00558b80ef3a50ea9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>开始开发 Visual Studio 扩展
 如果您从未编写过 Visual Studio 扩展之前，可能会出现一些问题。 我们已列出了一些最常见的。 如果看不到你正在寻找的信息，请使用反馈按钮 (**是很有帮助的此页面？**在屏幕底部) 以询问有关所需。  
@@ -60,7 +58,7 @@ ms.lasthandoff: 01/05/2018
   
 -   [Visual Studio 独立 Shell](../extensibility/visual-studio-isolated-shell.md)  
   
-##  <a name="BKMK_ProjectTemplate"></a>项目模板提供的 VSSDK？  
+##  <a name="BKMK_ProjectTemplate"></a> 项目模板提供的 VSSDK？  
  扩展的两种主要类型是 Vspackage 和 MEF 扩展。 一般情况下，VSPackage 扩展的扩展的使用或扩展命令、 工具窗口和项目使用。 MEF 扩展用于扩展或自定义 Visual Studio 编辑器。  
   
  对于 Visual C# 和 Visual Basic 扩展，VSSDK 提供了空的 VSIX 项目模板，可以与创建菜单命令、 工具窗口和编辑器扩展将新项模板一起使用。 此外可以分发给其他用户使用此模板包项目模板、 代码段和其他项目。  

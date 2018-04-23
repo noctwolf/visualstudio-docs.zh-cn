@@ -1,28 +1,26 @@
 ---
-title: "如何： 将依赖项添加到 VSIX 包 |Microsoft 文档"
-ms.custom: 
+title: 如何： 将依赖项添加到 VSIX 包 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package reference
 - package assembly
 - package dll
 - vsix reference
 ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 27fbf8c079ca1270074d7cae683ef6f8127e2a5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0704a72ba70e2a00baab99d327702ec6c08f1775
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何： 将依赖项添加到 VSIX 包
 
@@ -51,6 +49,6 @@ ms.lasthandoff: 12/22/2017
 VSIXInstaller 将检测 Visual Studio 的早期版本，并通知用户需要更高版本的更新。
 
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
  [VSIX 扩展架构 1.0 引用](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)[剖析 VSIX 包](../extensibility/anatomy-of-a-vsix-package.md)[准备 Windows Installer 部署扩展](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

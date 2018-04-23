@@ -1,26 +1,24 @@
 ---
-title: "程序 |Microsoft 文档"
-ms.custom: 
+title: 程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], programs
 - programs, debugging
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 03b4885e653d879e3aaec1d9a68bc9be144cb676
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dd3d1c1e72524c393fdb3adc4477ea9ae374fbfa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programs"></a>Programs
 在调试器体系结构，方面**程序**:  
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
 -   由[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)接口，创建附加程序之前，或作为附加的进程，具体取决于实现的一部分。 当一个端口枚举进程的程序时，根据相应创建每个程序[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)接口传递的自变量作为[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)。 时的调试引擎还创建`IDebugProgram2`接口来表示程序，这些程序不会创建根据程序节点。 `IDebugProgramNode2`接口由 DE 用于实际调试时通过端口创建的那些仅用于发现哪些程序正在进程中运行。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [进程](../../extensibility/debugger/processes.md)   
  [程序节点](../../extensibility/debugger/program-nodes.md)   
  [模块](../../extensibility/debugger/modules.md)   

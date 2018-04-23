@@ -1,34 +1,30 @@
 ---
-title: "服务 Essentials |Microsoft 文档"
-ms.custom: 
+title: 服务 Essentials |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4db5404ed4cb307064d9d913c240b16051c25977
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c5a9858109c9fe0d8af0d00621b717417a0c0e53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="service-essentials"></a>服务 Essentials
-服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供一组特定的接口，另一个 VSPackage 来使用。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]本身就是向其他 Vspackage 提供服务的 Vspackage 集合的形式。  
+服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供一组特定的接口，另一个 VSPackage 来使用。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 本身就是向其他 Vspackage 提供服务的 Vspackage 集合的形式。  
   
  例如，SVsActivityLog 服务可用于获取 IVsActivityLog 接口，它可用于写入活动日志。 有关详细信息，请参阅[如何： 使用活动日志](../../extensibility/how-to-use-the-activity-log.md)。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]此外提供了一些内置服务未注册。 Vspackage 可以通过提供服务重写替换内置或其他服务。 仅一个服务重写被允许的任何服务。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 此外提供了一些内置服务未注册。 Vspackage 可以通过提供服务重写替换内置或其他服务。 仅一个服务重写被允许的任何服务。  
   
  服务具有任何可发现性。 因此，你必须知道你想要使用，服务的服务标识符 (SID)，而且你必须知道它提供的接口。 该服务的参考文档提供此信息。  
   
@@ -70,7 +66,7 @@ ms.lasthandoff: 12/22/2017
   
 你可以通过调用静态获取大多数 Visual Studio 服务<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。  
   
-<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>依赖于缓存服务上放置初始化首次从包派生的任何 VSPackage 的提供程序。 必须保证此条件满足时，，，否则是 null 服务为做好准备。  
+<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 依赖于缓存服务上放置初始化首次从包派生的任何 VSPackage 的提供程序。 必须保证此条件满足时，，，否则是 null 服务为做好准备。  
   
 幸运的是，<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>正常大部分时间。  
   
@@ -97,7 +93,7 @@ ms.lasthandoff: 12/22/2017
     
     此代码包含 SVsActivityLog 服务，并将其强制转换为 IVsActivityLog 接口，它可以用于写入活动日志。 有关示例，请参阅[如何： 使用活动日志](../../extensibility/how-to-use-the-activity-log.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [可用服务列表](../../extensibility/internals/list-of-available-services.md)   
  [使用和提供服务](../../extensibility/using-and-providing-services.md)   
  [强制转换和类型转换](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)   

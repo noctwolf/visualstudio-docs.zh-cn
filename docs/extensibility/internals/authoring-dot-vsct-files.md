@@ -2,26 +2,22 @@
 title: 创作。Vsct 文件 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa274c807aaa1ed212a7b283a35e510615561eb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65fc62d5685ca7c81b3ebb7f524db3cdbebe72c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-vsct-files"></a>创作。Vsct 文件
 本文档演示如何创作要将菜单项、 工具栏和其他用户界面 (UI) 元素添加到 Visual Studio 集成的开发环境 (IDE) 的.vsct 文件。 UI 元素添加到不具备.vsct 文件 Visual Studio 包 (VSPackage) 时，请使用以下步骤。  
@@ -234,12 +230,12 @@ ms.lasthandoff: 12/22/2017
  某些菜单和按钮的类型包括专用的行为。 下表介绍一些专用的菜单和按钮类型。 对于其他类型，请参阅`types`属性中的描述[Menu 元素](../../extensibility/menu-element.md)， [Button 元素](../../extensibility/button-element.md)，和[组合元素](../../extensibility/combo-element.md)。  
   
  组合框  
- 组合框进行了可以使用工具栏的下拉列表。 若要将组合框添加到 UI 中，创建[组合](../../extensibility/combos-element.md)中的元素`Commands`元素。 然后将添加到`Combos`元素`Combo`的每个组合框，以添加元素。 `Combo`元素具有相同的特性和子级作为`Button`元素，并且还具有`DefaultWidth`和`idCommandList`属性。 `DefaultWidth`属性以像素为单位设置宽度和`idCommandList`属性指向用于填充组合框命令 ID。 有关详细信息，请参阅`Combo`元素文档。  
+ 组合框进行了可以使用工具栏的下拉列表。 若要将组合框添加到 UI 中，创建[组合](../../extensibility/combos-element.md)中的元素`Commands`元素。 然后将添加到`Combos`元素`Combo`的每个组合框，以添加元素。 `Combo` 元素具有相同的特性和子级作为`Button`元素，并且还具有`DefaultWidth`和`idCommandList`属性。 `DefaultWidth`属性以像素为单位设置宽度和`idCommandList`属性指向用于填充组合框命令 ID。 有关详细信息，请参阅`Combo`元素文档。  
   
  MenuController  
  菜单控制器是具有它旁边的箭头按钮。 单击的箭头可打开列表。 若要将菜单控制器添加到 UI 中，创建`Menu`元素，并设置其`type`属性设为**MenuController**或**MenuControllerLatched**，取决于你想要的行为。 若要填充菜单控制器，请将其设置为的父级`Group`元素。 菜单控制器将显示其下拉列表上的该组的所有子级。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)   
  [Visual Studio 命令表 (。Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)

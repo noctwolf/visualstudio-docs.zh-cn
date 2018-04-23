@@ -1,22 +1,19 @@
 ---
-title: "寻址 DPI 问题 2 |Microsoft 文档"
-ms.custom: 
+title: 寻址 DPI 问题 2 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6218e01d061bbf65e0cae051050076e4b8267a2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc0801d3fb43188ac3371ed7e5e7394b0e3aad72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="addressing-dpi-issues"></a>寻址 DPI 问题
 越来越多的设备将随"高分辨率"屏幕。 这些屏幕通常具有超过 200 个每英寸像素数 (ppi)。 使用这些计算机上的应用程序将需要要向上扩展以满足的需求查看设备的正常查看距离处的内容的内容。 从 2014 年开始高密度显示的主要目标是移动计算设备 （平板电脑、 壳式便携式计算机和手机）。  
@@ -31,13 +28,13 @@ ms.lasthandoff: 12/22/2017
   
 -   Windows 可以自动缩放内容向上到 250%超过 280 ppi （截至 Windows 8.1 S14) 的新设备上。  
   
- Windows 拥有一种处理 UI 向上扩展的方式，以利用的增加的像素数。 应用程序来选择加入到此系统通过将其自身声明为"system 识别 DPI。 请执行此操作的应用程序是向上扩展系统。 这可以导致整个应用程序所在统一像素拉伸"模糊"用户体验。 例如:  
+ Windows 拥有一种处理 UI 向上扩展的方式，以利用的增加的像素数。 应用程序来选择加入到此系统通过将其自身声明为"system 识别 DPI。 请执行此操作的应用程序是向上扩展系统。 这可以导致整个应用程序所在统一像素拉伸"模糊"用户体验。 例如：  
   
  ![DPI 问题模糊](../extensibility/media/dpi-issues-fuzzy.png "DPI 问题模糊")  
   
  Visual Studio 选择正在 DPI 缩放感知型，并因此不"虚拟化的。"  
   
- Windows （和 Visual Studio） 利用多种 UI 技术，其具有不同的缩放比例系数系统设置的处理方式。 例如:  
+ Windows （和 Visual Studio） 利用多种 UI 技术，其具有不同的缩放比例系数系统设置的处理方式。 例如：  
   
 -   WPF 测量控件的独立于设备的方式 （单位，不是以像素）。 注册当前 DPI 自动缩放 WPF UI。  
   
@@ -54,7 +51,7 @@ ms.lasthandoff: 12/22/2017
  本节是主要用于开发人员在扩展 Visual Studio 2013。 对于 Visual Studio 2015 中，使用内置于 Visual Studio 映像服务。 您还可能会发现你需要支持/目标多个版本的 Visual Studio，并且因此使用 2015年中的映像服务不是选项由于不存在以前版本中。 本部分也是为你然后。  
   
 ## <a name="scaling-up-images-that-are-too-small"></a>按比例增加太小的图像  
- 可以向上扩展"并 GDI 和使用某些常见的方法的 WPF 呈现图像太小。 托管的 DPI 帮助器类可供内部和外部 Visual Studio 集成商到缩放图标、 位图、 imagestrips 和 imagelists 的地址。 基于 Win32 的本机 C / C + + 帮助程序是可用于缩放任务栏、 HBITMAP、 HIMAGELIST 和 VsUI::GdiplusImage。 缩放的位图通常仅需要一个行更改后包括对的帮助程序库的引用。 例如:  
+ 可以向上扩展"并 GDI 和使用某些常见的方法的 WPF 呈现图像太小。 托管的 DPI 帮助器类可供内部和外部 Visual Studio 集成商到缩放图标、 位图、 imagestrips 和 imagelists 的地址。 基于 Win32 的本机 C / C + + 帮助程序是可用于缩放任务栏、 HBITMAP、 HIMAGELIST 和 VsUI::GdiplusImage。 缩放的位图通常仅需要一个行更改后包括对的帮助程序库的引用。 例如：  
   
 ```cpp  
 (Unmanaged)  VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);  
@@ -85,7 +82,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
  ![DPI 问题缩放](../extensibility/media/dpi-issues-scaling.png "DPI 问题缩放")  
   
 ## <a name="layout-issues"></a>布局问题  
- 主要由保持点，在 UI 中扩展和相对于另一个，而非通过使用绝对位置 （具体而言，以像素为单位），则可以避免常见的布局问题。 例如:  
+ 主要由保持点，在 UI 中扩展和相对于另一个，而非通过使用绝对位置 （具体而言，以像素为单位），则可以避免常见的布局问题。 例如：  
   
 -   布局/文本位置需要调整到的扩展型映像的帐户。  
   
@@ -123,7 +120,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  若要从将在 Visual Studio 环境内运行的托管代码访问的 DPI 帮助器函数：  
   
--   使用项目必须引用 Shell MPF 的最新版本。 例如:  
+-   使用项目必须引用 Shell MPF 的最新版本。 例如：  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
@@ -131,7 +128,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 -   确保项目具有对引用**System.Windows.Forms**， **PresentationCore**，和**PresentationUI**。  
   
--   在代码中，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 类的命名空间和调用静态函数。 对于支持的类型 （点、 大小、 矩形和等等），没有提供返回新的扩展函数扩展对象。 例如:  
+-   在代码中，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 类的命名空间和调用静态函数。 对于支持的类型 （点、 大小、 矩形和等等），没有提供返回新的扩展函数扩展对象。 例如：  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -178,7 +175,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  步骤 1: Prescale 200%到 300%，依此类推使用 NearestNeighbor。  
   
- Prescale 使用任一转换器应用在绑定上，或使用 XAML 标记扩展的映像。 例如:  
+ Prescale 使用任一转换器应用在绑定上，或使用 XAML 标记扩展的映像。 例如：  
   
 ```xaml  
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />  
@@ -216,7 +213,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   如果不知道原始图像的大小，可以使用 LayoutTransform 以缩小最终映像对象。 例如:  
+-   如果不知道原始图像的大小，可以使用 LayoutTransform 以缩小最终映像对象。 例如：  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  

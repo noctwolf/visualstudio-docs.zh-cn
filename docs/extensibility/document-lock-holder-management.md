@@ -1,27 +1,23 @@
 ---
-title: "文档锁定持有者管理 |Microsoft 文档"
-ms.custom: 
+title: 文档锁定持有者管理 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: df782cd974adcd589824e8a47cd0249842bd8d48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65f5a38f5d4da0986b7f95c9287a94e657efa9c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-lock-holder-management"></a>文档锁定持有者管理
 正在运行的文档表 (RDT) 维护打开的文档和它们具有任何编辑锁的计数。 以编程方式编辑在后台，而用户看到在文档窗口中的打开文档时，可以放 RDT 中的文档的编辑锁。 修改通过图形用户界面的多个文件的设计器经常使用此功能。  
@@ -45,6 +41,6 @@ ms.lasthandoff: 12/22/2017
   
  很多时候一个 UI 设计器，以编程方式修改代码文件将对多个文件中做出更改。 在这种情况下<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A>方法可处理的一个或多个文档的方式保存**你想要将更改保存到以下各项？**对话框。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [正在运行的文档表](../extensibility/internals/running-document-table.md)   
  [持久性和正在运行的文档表](../extensibility/internals/persistence-and-the-running-document-table.md)

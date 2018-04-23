@@ -1,23 +1,21 @@
 ---
-title: "Visual Studio 2017 扩展性中的重大更改 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 2017 扩展性中的重大更改 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/09/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
-caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 068b71a78149bb1c52e28bc47245d0dc888496bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bff9c97b052f359f3d03e12093b1cdae86d5dfbd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 扩展性中的更改
 
@@ -65,7 +63,7 @@ ms.lasthandoff: 12/22/2017
   * 从安装程序已删除 GAC 中的副本。
   * 添加了一个.pkgdef 文件来指定程序集的基本代码的项。
 
-    例如:
+    例如：
     
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]

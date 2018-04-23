@@ -1,26 +1,24 @@
 ---
-title: "旧语言服务分析器和扫描程序 |Microsoft 文档"
-ms.custom: 
+title: 旧语言服务分析器和扫描程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 755516fb9d341193005ad39e419e708b6d28867c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a838b193689d480c7e02053dd67adb6bfbd2314f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>旧语言服务分析器和扫描程序
 分析器是语言服务的核心。 托管包框架 (MPF) 语言类需要的语言分析程序，可以选择要显示的代码的相关信息。 分析器将文本分隔为词法令牌，然后确定这些令牌的类型和功能。  
@@ -116,7 +114,7 @@ namespace MyNamespace
   
 12. 完成操作。  
   
-### <a name="summary"></a>摘要  
+### <a name="summary"></a>总结  
  通常局限于的语言元素的简单对匹配的大括号操作。 更复杂的元素，如匹配三元组 ("`if(...)`"，"`{`"和"`}`"，或"`else`"，"`{`"和"`}`")，可以突出显示为单词完成操作的一部分。 例如，完成"else"word 时，相匹配的"`if`"语句可以突出显示。 如果没有一系列`if` / `else if`语句，所有这些无法通过使用相同的机制，作为匹配的大括号突出显示。 <xref:Microsoft.VisualStudio.Package.Source>基类已支持此操作，请按如下所述： 扫描仪必须返回令牌触发器值<xref:Microsoft.VisualStudio.Package.TokenTriggers>与触发器值结合使用<xref:Microsoft.VisualStudio.Package.TokenTriggers>为的光标位置之前的令牌。  
   
  有关详细信息，请参阅[旧语言服务中的大括号匹配](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)。  
@@ -135,7 +133,7 @@ namespace MyNamespace
   
  <xref:Microsoft.VisualStudio.Package.AuthoringSink>对象作为的一部分传递到分析器<xref:Microsoft.VisualStudio.Package.ParseRequest>对象，并且新<xref:Microsoft.VisualStudio.Package.AuthoringSink>对象是每次创建一个新<xref:Microsoft.VisualStudio.Package.ParseRequest>创建对象。 此外，<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法必须返回<xref:Microsoft.VisualStudio.Package.AuthoringScope>对象，用于处理各种智能感知操作。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>对象维护声明的列表和列表的方法，或者其中填充，具体取决于分析的原因。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>必须实现类。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [实现旧语言服务](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [旧语言服务概述](../../extensibility/internals/legacy-language-service-overview.md)   
  [在旧语言服务中的语法着色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   

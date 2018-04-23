@@ -1,12 +1,10 @@
 ---
-title: "选项和选项页 |Microsoft 文档"
-ms.custom: 
+title: 选项和选项页 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1177a9a4df1f07c93540fa039117c5fa81289e17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d85b900779a5df8af077b292b2e2f70b0592e35c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-and-options-pages"></a>选项和选项页
 单击**选项**上**工具**打开菜单**选项**对话框。 在此对话框中的选项统称为选项页。 在导航窗格中的树控件包含选项类别，每个类别包含选项页。 当选择页时，其选项出现在右窗格中。 这些页面允许您更改确定 VSPackage 的状态选项的值。  
@@ -56,11 +54,11 @@ ms.lasthandoff: 12/22/2017
 ## <a name="option-attributes-and-layout"></a>选项特性和布局  
  此页提供了用户界面 (UI) 确定自定义选项页中选项的外观。 布局、 标签和通用选项页中的选项的说明确定以下属性：  
   
--   <xref:System.ComponentModel.CategoryAttribute>确定选项的类别。  
+-   <xref:System.ComponentModel.CategoryAttribute> 确定选项的类别。  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>确定选项的显示名称。  
+-   <xref:System.ComponentModel.DisplayNameAttribute> 确定选项的显示名称。  
   
--   <xref:System.ComponentModel.DescriptionAttribute>确定选项的说明。  
+-   <xref:System.ComponentModel.DescriptionAttribute> 确定选项的说明。  
   
     > [!NOTE]
     >  等效属性、 SRCategory、 LocDisplayName 和 SRDescription，用于本地化的字符串资源，并在中定义[托管的项目示例](http://go.microsoft.com/fwlink/?LinkId=122774)。  

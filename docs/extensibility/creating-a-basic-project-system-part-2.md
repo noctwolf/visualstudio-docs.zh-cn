@@ -1,27 +1,25 @@
 ---
-title: "创建基本项目系统，第 2 部分 |Microsoft 文档"
-ms.custom: 
+title: 创建基本项目系统，第 2 部分 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 699f9176fd39cacaf2bb4f433cd9d2ceb8e326b5
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: f39150f02481e18997035a8027518648fa410f48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>创建基本项目系统中，第 2 部分
 本系列第一个演练[创建基本项目系统，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，演示如何创建基本项目系统。 本演练基于基本项目系统，并添加 Visual Studio 模板、 属性页中和其他功能。 在开始此之前，必须完成第一个演练。  
@@ -354,7 +352,7 @@ ZipProjects:
   
 -   OutputType  
   
--   RootNamespace.  
+-   根命名空间。  
   
 1.  在 SimpleProjectPackage.cs 文件中，添加此`ProvideObject`属性设为`SimpleProjectPackage`类：  
   

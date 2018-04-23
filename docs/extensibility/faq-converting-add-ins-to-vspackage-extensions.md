@@ -1,23 +1,21 @@
 ---
-title: "常见问题： 将外接程序转换为 VSPackage 扩展 |Microsoft 文档"
-ms.custom: 
+title: 常见问题： 将外接程序转换为 VSPackage 扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 43376b304637ffe59d443ee82350d5492133db2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: daec495ee71bf27bc40174b74cd95a6df47c247f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常见问题：将外接程序转换为 VSPackage 扩展
 外接程序现在已弃用。 若要使新的 Visual Studio 扩展，你需要创建 VSIX 扩展。 以下是一些有关如何将 Visual Studio 外接程序转换为 VSIX 扩展的常见问题的答案。  
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>可以将我的外接程序项目转换为一个 VSIX 项目中？  
  无法直接到一个 VSIX 项目转换外接程序项目，因为在 VSIX 项目中使用的机制并不作为外接程序项目中的相同。 VSIX 项目模板，以及正确的项目项模板已大量使相对较容易即可启动，并且作为 VSIX 扩展正在运行的代码。  
   
-##  <a name="BKMK_StartDeveloping"></a>如何开始开发 VSIX 扩展？  
+##  <a name="BKMK_StartDeveloping"></a> 如何开始开发 VSIX 扩展？  
  下面是如何建立 VSIX 具有菜单的命令：  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>若要使 VSIX 扩展，必须菜单命令  
@@ -56,7 +54,7 @@ ms.lasthandoff: 12/22/2017
   
      上**工具**（在实验实例中） 的菜单，您应该看到名为的按钮**我命令名称**。 当选择此按钮时，应显示一条消息：**内 TestVSPackagePackage.MenuItemCallback()**。  
   
-##  <a name="BKMK_RunAddin"></a>如何运行我外接程序的代码在 VSPackage 中？  
+##  <a name="BKMK_RunAddin"></a> 如何运行我外接程序的代码在 VSPackage 中？  
  通常采用以下两种方式之一来运行外接程序代码：  
   
 -   由菜单命令触发（代码位于 `IDTCommandTarget.Exec` 方法中）  

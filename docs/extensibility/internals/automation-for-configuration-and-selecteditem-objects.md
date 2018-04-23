@@ -1,26 +1,24 @@
 ---
-title: "有关配置和 SelectedItem 对象的自动化 |Microsoft 文档"
-ms.custom: 
+title: 有关配置和 SelectedItem 对象的自动化 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], SelectedItem object
 - automation [Visual Studio SDK], builds
 ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8a9446a5c63df7f20d6e4dbdc3cb60bf20183bb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4d4ac269664136aed51542e53900ffc1c87f21fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>有关配置和 SelectedItem 对象的自动化
 你可以自动生成和中的选定的项进程[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
@@ -33,7 +31,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="automation-for-selecteditem"></a>SelectedItem 的自动化  
  无需提供一个实现`SelectedItem`对象，因为 Visual Studio 包含标准的实现。 但是，你可以实现`SelectedItem`对象如果您更喜欢。 必须实现一个对象，包含`SelectedItem`接口，并返回到调用的响应<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>VSITEMID 方法设置为<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>   
  [导致自动化模型](../../extensibility/internals/contributing-to-the-automation-model.md)   
  [了解生成配置](../../ide/understanding-build-configurations.md)

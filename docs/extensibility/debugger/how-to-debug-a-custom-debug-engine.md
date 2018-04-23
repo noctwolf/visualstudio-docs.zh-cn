@@ -1,26 +1,24 @@
 ---
-title: "如何： 调试自定义调试引擎 |Microsoft 文档"
-ms.custom: 
+title: 如何： 调试自定义调试引擎 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0b814b441846479163aad4e003480cc9cfadde44
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 95a2db2bc5e8990f536abc851941c337a1dee277
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何： 调试自定义调试引擎
 项目类型中启动的调试引擎 (DE)<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 这意味着 DE 启动的实例的控制之下[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]控制项目类型。 但是，该实例[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]无法调试 DE。 下面是可用于调试自定义 DE 的步骤。  
@@ -77,5 +75,5 @@ ms.lasthandoff: 12/22/2017
   
 9. 如果你选择调试启动 DE 的过程，你可以将它启动后附加到你 DE 的"调试自定义调试引擎"步骤中执行的步骤。 这将为你提供的三个实例[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]运行： 一个用于您的项目类型源、 附加到你 DE 第三个您实例化的项目类型，以及第二个。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)

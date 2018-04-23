@@ -2,28 +2,24 @@
 title: IDebugPendingBreakpoint2 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugPendingBreakpoint2
 helpviewer_keywords:
 - IDebugPendingBreakpoint2 interface
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef986bd657a080c08fd0ebb85908ba59757bf207
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3e5e84180747a3e6a3b9e5a34e7694f4cd07867c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 此接口表示断点已准备好将绑定到的代码位置。  
@@ -58,18 +54,18 @@ IDebugPendingBreakpoint2 : IUnknown
 |[删除](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|删除此挂起断点和从其绑定的所有断点。|  
   
 ## <a name="remarks"></a>备注  
- `IDebugPendingBreakpoint2`可以将断点绑定到可以应用于一个或多个程序的代码所需的所有必要的信息的提供程序作为认为。  
+ `IDebugPendingBreakpoint2` 可以将断点绑定到可以应用于一个或多个程序的代码所需的所有必要的信息的提供程序作为认为。  
   
  挂起断点可能会产生多个绑定的断点。 例如，c + + 样式模板中的断点可能产生每个唯一的实例，该模板的绑定的的断点。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)   
  [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)   
  [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)   

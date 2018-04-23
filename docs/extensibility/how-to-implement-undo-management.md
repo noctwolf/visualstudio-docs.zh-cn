@@ -2,26 +2,22 @@
 title: 如何： 实现撤消管理 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
 ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf57b24d81e193294f5ab90f71af07b229ec5839
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b01b7b8edf5ebe4b8c3e5277e87f9797860b552f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-implement-undo-management"></a>如何： 实现撤消管理
 用于撤消管理的主要接口为<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>，由环境实现。 若要支持撤消管理，请实现单独撤消单元 (即， <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>，其中可以包含多个单独的步骤。  
@@ -83,7 +79,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  撤消管理器对象是广泛使用的文本编辑器，它是为文本编辑器没有特定支持的通用组件。 如果你想要支持多级撤消或重做，可以使用此对象进行管理。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
  [如何： 清除撤消堆栈](../extensibility/how-to-clear-the-undo-stack.md)

@@ -1,12 +1,10 @@
 ---
-title: "如何： 以编程方式打开文本文件作为工作簿 |Microsoft 文档"
-ms.custom: 
+title: 如何： 以编程方式打开文本文件作为工作簿 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - text files, opening as workbooks
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 45d2b85ea8c005d56ddc076d0b758a0c9e4a2d67
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: cafe64ce693972bd9c254a6bdfc1dcbf70f004c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>如何：以编程方式及工作簿形式打开文本文件
   为工作簿，可以打开一个文本文件。 必须传递你想要打开的文本文件的名称。 你可以指定多个可选参数，例如到开始分析以及文件中的数据的列格式的行号。  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
 -   该文本文件`Test.txt`似乎存储在驱动器 c。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用工作簿](../vsto/working-with-workbooks.md)   
  [如何： 以编程方式打开工作簿](../vsto/how-to-programmatically-open-workbooks.md)   
  [如何： 以编程方式创建新的工作簿](../vsto/how-to-programmatically-create-new-workbooks.md)   

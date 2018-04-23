@@ -1,25 +1,21 @@
 ---
-title: "图像和图标 for Visual Studio |Microsoft 文档"
-ms.custom: 
+title: 图像和图标 for Visual Studio |Microsoft 文档
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 164a450ca346fe2bd7b267d951ce522d27f14160
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 3fae6a5350d5204219edcb14732c7686984035e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="images-and-icons-for-visual-studio"></a>图像和图标 for Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> 在 Visual Studio 中的映像使用  
@@ -96,7 +92,7 @@ ms.lasthandoff: 03/13/2018
 |||  
 |-|-|  
 |**"Search"**|**"Zoom"**|  
-|![Search icon](../../extensibility/ux-guidelines/media/0404-09_search.png "0404-09_Search")|![缩放图标](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404年 10_Zoom")|  
+|![搜索图标](../../extensibility/ux-guidelines/media/0404-09_search.png "0404年 09_Search")|![缩放图标](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404年 10_Zoom")|  
   
  在树视图中，不要使用此文件夹图标和修饰符。 如果可能，使用仅修饰符。  
   
@@ -274,11 +270,11 @@ ms.lasthandoff: 03/13/2018
 ### <a name="base-palette"></a>基调色板  
  所有的标准图标包含三种基本的颜色。 图标包含没有渐变或投影有三维工具图标的一个或两个例外。  
   
-|用法|name|值 （浅色主题）|样本|示例|  
+|用法|名称|值 （浅色主题）|样本|示例|  
 |-----------|----------|---------------------------|------------|-------------|  
 |后台/深色|VS BG|424242 / 66,66,66|![样本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![基调色板示例](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405年 02_BasePaletteExample")|  
-|前景/轻型|VS FG|F0EFF1 / 240,239,241|![Swatch F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
-|轮廓|VS 出|F6F6F6 / 246,246,246|![Swatch F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||  
+|前景/轻型|VS FG|F0EFF1 / 240,239,241|![样本 F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
+|轮廓|VS 出|F6F6F6 / 246,246,246|![样本 F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||  
   
  除了基本的颜色，每个图标可能包含一种其他颜色从扩展调色板。  
   
@@ -287,19 +283,19 @@ ms.lasthandoff: 03/13/2018
 #### <a name="action-modifiers"></a>操作修饰符  
  下面的四个颜色指示所需操作的操作修饰符的类型：  
   
-|用法|name|值 （所有的主题）|样本|  
+|用法|名称|值 （所有的主题）|样本|  
 |-----------|----------|--------------------------|------------|  
-|正|VS 操作绿色|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|正|VS 操作绿色|388A34 / 56,138,52|![样本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |负数|VS 操作红色|A1260D / 161,38,13|![样本 A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
-|非特定语言|VS 操作蓝色|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|创建/新|VS 操作橙色|C27D1A / 194,156,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
+|非特定语言|VS 操作蓝色|00539C / 0,83,156|![样本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|创建/新|VS 操作橙色|C27D1A / 194,156,26|![样本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
   
 ##### <a name="examples"></a>示例  
  绿色用于正操作修饰符，如"添加"，"运行，""播放，"和"验证"。  
   
 |||||  
 |-|-|-|-|  
-|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />运行|![执行查询图标](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405年 04_ExecuteQuery")<br />执行查询|![播放所有步骤图标](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405年 05_PlayAllSteps")<br />播放所有步骤|![添加控件图标](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405年 06_AddControl")<br />添加控件|  
+|![运行图标](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405年 03_ActionModifierRun")<br />运行|![执行查询图标](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405年 04_ExecuteQuery")<br />执行查询|![播放所有步骤图标](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405年 05_PlayAllSteps")<br />播放所有步骤|![添加控件图标](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405年 06_AddControl")<br />添加控件|  
   
  红色用于负操作修饰符，如"Delete""停止，""取消"和"关闭"。  
   
@@ -311,7 +307,7 @@ ms.lasthandoff: 03/13/2018
   
 |||||  
 |-|-|-|-|  
-|![转到字段图标](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405年 11_GoToField")<br />转到字段|![批处理检查&#45;图标中](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405年 12_BatchedCheckIn")<br />批处理签入|![Address editor icon](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405-13_AddressEditor")<br />地址编辑器|![关联编辑器图标](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405年 14_AssociationEditor")<br />关联编辑器|  
+|![转到字段图标](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405年 11_GoToField")<br />转到字段|![批处理检查&#45;图标中](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405年 12_BatchedCheckIn")<br />批处理签入|![地址编辑器图标](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405年 13_AddressEditor")<br />地址编辑器|![关联编辑器图标](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405年 14_AssociationEditor")<br />关联编辑器|  
   
  深色金牌主要用于"新建"修饰符。  
   
@@ -324,47 +320,47 @@ ms.lasthandoff: 03/13/2018
   
 ||||||  
 |-|-|-|-|-|  
-|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />运行|![停止图标](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405年 19_Stop")<br />停止|![删除图标](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405年 20_Delete")<br />删除|![保存图标](../../extensibility/ux-guidelines/media/0405-21_save.png "0405年 21_Save")<br />保存|![导航后退图标](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405年 22_NavigateBack")<br />向后导航|  
+|![运行图标](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405年 03_ActionModifierRun")<br />运行|![停止图标](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405年 19_Stop")<br />停止|![删除图标](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405年 20_Delete")<br />删除|![保存图标](../../extensibility/ux-guidelines/media/0405-21_save.png "0405年 21_Save")<br />保存|![导航后退图标](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405年 22_NavigateBack")<br />向后导航|  
   
 ### <a name="code-hierarchy-palette"></a>代码层次结构调色板  
   
 #### <a name="folder"></a>文件夹  
   
-|用法|name|值 （所有的主题）|样本|示例|  
+|用法|名称|值 （所有的主题）|样本|示例|  
 |-----------|----------|--------------------------|------------|-------------|  
-|文件夹|文件夹|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![文件夹颜色图标](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405年 23_FolderColor")|  
+|文件夹|文件夹|DCB67A / 220,182,122|![样本 DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![文件夹颜色图标](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405年 23_FolderColor")|  
   
 #### <a name="visual-studio-languages"></a>Visual Studio 语言  
  每个通用的语言或 Visual Studio 中提供的平台都有一个关联的颜色。 在基本图标，或出现在复合图标的右上角的语言修饰符上使用这些颜色。  
   
-|用法|name|值 （所有的主题）|样本|  
+|用法|名称|值 （所有的主题）|样本|  
 |-----------|----------|--------------------------|------------|  
 |ASP，HTML，WPF|ASP HTML WPF 蓝色|0095D7 / 0,149,215|![Swatch 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
 |C++|CPP 紫色|9B4F96 / 155,79,150|![样本 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
-|C#|CS 绿色 （VS 操作绿色）|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
-|CSS|CSS 红色|BD1E2D / 189,30,45|![Swatch BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
-|F#|FS 紫色|672878 / 103,40,120|![Swatch 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
-|JavaScript|JS 橙色|F16421 / 241,100,33|![Swatch F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
-|VB|VB 蓝色 （VS 操作蓝色）|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|TypeScript|TS 橙色|E04C06 / 224,76,6|![Swatch E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
-|Python|上一年度绿色|879636 / 135,150,54|![Swatch 879636](../../extensibility/ux-guidelines/media/0405_879636.png "0405_879636")|  
+|C#|CS 绿色 （VS 操作绿色）|388A34 / 56,138,52|![样本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|CSS|CSS 红色|BD1E2D / 189,30,45|![样本 BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
+|F#|FS 紫色|672878 / 103,40,120|![样本 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
+|JavaScript|JS 橙色|F16421 / 241,100,33|![样本 F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
+|VB|VB 蓝色 （VS 操作蓝色）|00539C / 0,83,156|![样本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|TypeScript|TS 橙色|E04C06 / 224,76,6|![样本 E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
+|Python|上一年度绿色|879636 / 135,150,54|![样本 879636](../../extensibility/ux-guidelines/media/0405_879636.png "0405_879636")|  
   
 ##### <a name="examples-of-icons-with-language-modifiers"></a>图标与语言修饰符的示例  
   
 |||||||  
 |-|-|-|-|-|-|  
-|![Visual Basic 图标](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405年 25_VB")<br />VB|![C&#35;图标](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405年 26_CSharp")<br />C#|![C&#43;&#43; icon](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F&#35; icon](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![JavaScript icon](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")<br />JavaScript|![Python icon](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")<br />Python|  
-|![HTML 图标](../../extensibility/ux-guidelines/media/0405-31_html.png "0405年 31_HTML")<br />HTML|![WPF icon](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP icon](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS icon](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript icon](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||  
+|![Visual Basic 图标](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405年 25_VB")<br />VB|![C&#35;图标](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405年 26_CSharp")<br />C#|![C&#43; &#43;图标](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405年 27_CPlusPlus")<br />C++|![F&#35;图标](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405年 28_FSharp")<br />F#|![JavaScript 图标](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405年 29_JavaScript")<br />JavaScript|![Python 图标](../../extensibility/ux-guidelines/media/0405-30_python.png "0405年 30_Python")<br />Python|  
+|![HTML 图标](../../extensibility/ux-guidelines/media/0405-31_html.png "0405年 31_HTML")<br />HTML|![WPF 图标](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405年 32_WPF")<br />WPF|![ASP 图标](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405年 33_ASP")<br />ASP|![CSS 图标](../../extensibility/ux-guidelines/media/0405-34_css.png "0405年 34_CSS")<br />CSS|![TypeScript 图标](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405年 35_TypeScript")<br />TypeScript||  
   
 #### <a name="intellisense"></a>IntelliSense  
  IntelliSense 图标使用独占的调色板。 这些颜色用于帮助用户快速区分 IntelliSense 弹出列表中的不同项。  
   
-|用法|name|值 （所有的主题）|样本|  
+|用法|名称|值 （所有的主题）|样本|  
 |-----------|----------|--------------------------|------------|  
-|类事件|VS 操作橙色|C27D1A / 194,125,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
-|扩展方法，方法，模块中委托|VS 操作紫色|652D90 / 101,45,144|![Swatch 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
-|字段、 枚举项、 宏、 结构、 联合值类型，运算符，接口|VS 操作蓝色|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|对象|VS 操作绿色|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|类事件|VS 操作橙色|C27D1A / 194,125,26|![样本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
+|扩展方法，方法，模块中委托|VS 操作紫色|652 D 90 / 101,45,144|![样本 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
+|字段、 枚举项、 宏、 结构、 联合值类型，运算符，接口|VS 操作蓝色|00539C / 0,83,156|![样本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|对象|VS 操作绿色|388A34 / 56,138,52|![样本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |常量，异常、 枚举项、 映射、 地图项、 Namespace，模板，类型定义|背景 (VS BG)|424242 / 66,66,66|![样本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
 ##### <a name="examples-of-intellisense-icons"></a>IntelliSense 图标的示例  
@@ -377,14 +373,14 @@ ms.lasthandoff: 03/13/2018
 ### <a name="notifications"></a>通知  
  Visual Studio 中的通知用于指示状态。 通知调色板使用以下四种颜色，以及黑色或白色前景填充选项，以定义具有以下状态级别的通知。  
   
-|用法|name|值 （所有的主题）|样本|  
+|用法|名称|值 （所有的主题）|样本|  
 |-----------|----------|--------------------------|------------|  
 |状态： 非特定语言|通知蓝色 （VS 蓝色）|1BA1E2 / 27,161,226|![样本 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
-|状态： 正|通知绿色 （VS 绿色）|339933 / 51,153,51|![Swatch 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
-|状态： 负|通知红色 （VS 红色）|E51400 / 229,20,0|![Swatch E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|  
-|状态： 警告|通知黄色 （VS 橙色）|FFCC00 / 255,204,0|![Swatch FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
+|状态： 正|通知绿色 （VS 绿色）|339933 / 51,153,51|![样本 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
+|状态： 负|通知红色 （VS 红色）|E51400 / 229,20,0|![样本 E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|  
+|状态： 警告|通知黄色 （VS 橙色）|FFCC00 / 255,204,0|![样本 FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
 |前景填充|通知黑色 （黑色）|000000 / 0,0,0|![样本&#35;000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
-|前景填充|通知空白 （白色）|FFFFFF / 255,255,255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|前景填充|通知空白 （白色）|FFFFFF / 255,255,255|![样本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
   
 #### <a name="examples-of-notification-icons"></a>通知图标示例  
   
@@ -395,40 +391,40 @@ ms.lasthandoff: 03/13/2018
 ### <a name="visual-studio-online"></a>Visual Studio Online  
  一般情况下，Visual Studio Online 功能组成托管浏览器中。 在不同的环境颜色各不相同，但样式保持不变。  
   
-|Group|用法|name|值 （所有的主题）|样本|  
+|Group|用法|名称|值 （所有的主题）|样本|  
 |-----------|-----------|----------|--------------------------|------------|  
 |TFS|背景|TFSO BG|656565/ 101, 101, 101|![样本 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
-|TFS|轮廓|OUT TFSO|FFFFFF / 255，255，255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|Napa|背景|空白|FFFFFF / 255，255，255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|Monaco|背景|空白|FFFFFF / 255，255，255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|F12|背景|空白|FFFFFF / 255，255，255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|TFS|轮廓|OUT TFSO|FFFFFF / 255，255，255|![样本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|Napa|背景|空白|FFFFFF / 255，255，255|![样本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|Monaco|背景|空白|FFFFFF / 255，255，255|![样本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|F12|背景|空白|FFFFFF / 255，255，255|![样本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |F12|普通|F12 Grey_Primary|555555 / 85, 85, 85|![样本 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|  
-|F12|悬停|F12 Blue_Hover|2279BF / 34,121,191|![Swatch 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
-|F12|已禁用|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Swatch ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
+|F12|悬停|F12 Blue_Hover|2279BF / 34,121,191|![样本 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
+|F12|已禁用|F12 LtGrey_Disabled|ABABAC / 171,171,172|![样本 ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
 |F12|将鼠标悬停背景|将鼠标悬停 bg|D9EBF7 / 217,235,247|![Swatch D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
 |F12|按下的背景|按下的 bg|B2D7F0 / 178,215,240|![Swatch B2D7F0](../../extensibility/ux-guidelines/media/0405_b2d7f0.png "0405_B2D7F0")|  
-|F12|轮廓|VS 出|F6F6F6 / 246,246,246|![Swatch F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|  
-|F12|信息|信息|00BCF2 / 0,188,242|![Swatch 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|  
-|F12|警告|警告|F28300 / 242,131,0|![Swatch F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|  
-|F12|错误 / 负|Error_Negative|E81123 / 232,17,35|![Swatch E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|  
-|F12|启动 / 正|Start_Positive|009E49 / 0,158,73|![Swatch 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|  
+|F12|轮廓|VS 出|F6F6F6 / 246,246,246|![样本 F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|  
+|F12|信息|信息|00BCF2 / 0,188,242|![样本 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|  
+|F12|警告|警告|F28300 / 242,131,0|![样本 F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|  
+|F12|错误 / 负|Error_Negative|E81123 / 232,17,35|![样本 E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|  
+|F12|启动 / 正|Start_Positive|009E49 / 0,158,73|![样本 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|  
 |F12|中断类型|中断类型|9B4F96 / 155,79,150|![样本 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
-|F12|事件标记|事件标记|A51F00 / 165,31,0|![Swatch A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|  
-|F12|用户标记|用户标记|F16220 / 241,98,32|![Swatch F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|  
+|F12|事件标记|事件标记|A51F00 / 165,31,0|![样本 A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|  
+|F12|用户标记|用户标记|F16220 / 241,98,32|![样本 F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|  
   
 #### <a name="examples-of-visual-studio-online-icons"></a>Visual Studio Online 的图标的示例  
   
-|TFS Online||||  
+|TFS 联机||||  
 |----------------|-|-|-|  
 |![TFS Online 团队图标](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405年 49_TFSOnlineTeam")<br />Online 团队|![TFS 信息图标](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405年 50_TFSInformation")<br />信息|![TFS 历史记录图标](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405年 51_TFSHistory")<br />历史记录|![TFS 分支图标](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405年 52_TFSBranch")<br />分支|  
   
 |Napa||||  
 |----------|-|-|-|  
-|![Napa 内容图标](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405年 53_NapaContent")<br />内容|![Napa office 邮件图标](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405年 54_NapaOfficeMail")<br />Office 邮件|![Napa SharePoint icon](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405-55_NapaSharePoint")<br />SharePoint|![Napa 任务窗格图标](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405年 56_NapaTaskPane")<br />任务窗格|  
+|![Napa 内容图标](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405年 53_NapaContent")<br />内容|![Napa office 邮件图标](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405年 54_NapaOfficeMail")<br />Office 邮件|![Napa SharePoint 图标](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405年 55_NapaSharePoint")<br />SharePoint|![Napa 任务窗格图标](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405年 56_NapaTaskPane")<br />任务窗格|  
   
 |Monaco||||  
 |------------|-|-|-|  
-|![Monaco 文件图标](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405年 57_MonacoFiles")<br />文件|![Monaco Git icon](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405-58_MonacoGit")<br />Git|![Monaco 搜索图标](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405年 59_MonacoSearch")<br />搜索|![Monaco 文本图标](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405年 60_MonacoText")<br />Text|  
+|![Monaco 文件图标](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405年 57_MonacoFiles")<br />文件|![Monaco Git 图标](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405年 58_MonacoGit")<br />Git|![Monaco 搜索图标](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405年 59_MonacoSearch")<br />搜索|![Monaco 文本图标](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405年 60_MonacoText")<br />Text|  
   
 |F12|||  
 |---------|-|-|  

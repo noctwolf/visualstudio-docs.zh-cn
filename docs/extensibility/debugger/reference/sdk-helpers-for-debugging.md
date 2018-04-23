@@ -1,12 +1,10 @@
 ---
-title: "SDK 帮助器调试 |Microsoft 文档"
-ms.custom: 
+title: SDK 帮助器调试 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e80344b8cec1bc013e044be39638879b049c8d0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK 适用于调试的帮助程序
 这些函数和声明是有关在 c + + 中实现的调试引擎，表达式计算器和符号提供程序的全局帮助器函数。  
@@ -276,7 +274,7 @@ HRESULT EnumMetricSections(
 >  格式存储所有 Guid `{GUID}`。 例如 `{123D150B-FA18-461C-B218-45B3E4589F9B}`。  
   
 ### <a name="debug-engines"></a>调试引擎  
- 下面是在注册表中的调试引擎度量值组织。 `Engine`为调试引擎的度量值的类型名称并且对应于*[指标类型]*上面的注册表子树中。  
+ 下面是在注册表中的调试引擎度量值组织。 `Engine` 为调试引擎的度量值的类型名称并且对应于*[指标类型]*上面的注册表子树中。  
   
  `Engine`\  
   
@@ -303,7 +301,7 @@ HRESULT EnumMetricSections(
 |*[端口供应商 guid]*|端口供应商，如果任何 GUID。 许多的调试引擎使用默认端口供应商，并因此不指定其自己的供应商。 在此情况下，该子项`PortSupplier`将不存在。|  
   
 ### <a name="port-suppliers"></a>端口供应商  
- 下面是注册表中的端口供应商指标的组织。 `PortSupplier`是的端口供应商提供的度量值的类型名称并且对应于*[指标类型]*。  
+ 下面是注册表中的端口供应商指标的组织。 `PortSupplier` 是的端口供应商提供的度量值的类型名称并且对应于*[指标类型]*。  
   
  `PortSupplier`\  
   
@@ -321,7 +319,7 @@ HRESULT EnumMetricSections(
 |*[类 guid]*|实现此端口供应商的类的 GUID|  
   
 ### <a name="symbol-providers"></a>符号提供程序  
- 下面是在注册表中的符号供应商度量值组织。 `SymbolProvider`是符号提供程序的度量值的类型名称并且对应于*[指标类型]*。  
+ 下面是在注册表中的符号供应商度量值组织。 `SymbolProvider` 是符号提供程序的度量值的类型名称并且对应于*[指标类型]*。  
   
  `SymbolProvider`\  
   
@@ -349,7 +347,7 @@ HRESULT EnumMetricSections(
 |*[类 guid]*|实现此符号提供程序的类的 GUID|  
   
 ### <a name="expression-evaluators"></a>表达式计算器  
- 下面是在注册表中的表达式计算器度量值组织。 `ExpressionEvaluator`是表达式计算器的度量值的类型名称并且对应于*[指标类型]*。  
+ 下面是在注册表中的表达式计算器度量值组织。 `ExpressionEvaluator` 是表达式计算器的度量值的类型名称并且对应于*[指标类型]*。  
   
 > [!NOTE]
 >  度量值类型`ExpressionEvaluator`未定义中 dbgmetric.h，因为假定所有度量值的更改的表达式计算器将经过适当的表达式计算器指标函数 (的布局`ExpressionEvaluator`子项是某种程度上复杂，因此详细信息隐藏在 dbgmetric.lib）。  
@@ -380,7 +378,7 @@ HRESULT EnumMetricSections(
 |*[调试引擎 guid]*|此表达式计算器适用于调试引擎的 GUID|  
   
 ### <a name="expression-evaluator-extensions"></a>表达式计算器扩展  
- 下面是在注册表中的表达式计算器扩展度量值组织。 `EEExtensions`为计算器扩展的表达式的度量值的类型名称并且对应于*[指标类型]*。  
+ 下面是在注册表中的表达式计算器扩展度量值组织。 `EEExtensions` 为计算器扩展的表达式的度量值的类型名称并且对应于*[指标类型]*。  
   
  `EEExtensions`\  
   
@@ -395,7 +393,7 @@ HRESULT EnumMetricSections(
 |*[扩展 guid]*|表达式计算器扩展的 GUID|  
   
 ### <a name="exceptions"></a>异常  
- 下面是在注册表中的异常度量值组织。 `Exception`是的异常的度量值的类型名称并且对应于*[指标类型]*。  
+ 下面是在注册表中的异常度量值组织。 `Exception` 是的异常的度量值的类型名称并且对应于*[指标类型]*。  
   
  `Exception`\  
   
@@ -421,12 +419,12 @@ HRESULT EnumMetricSections(
 |*[异常类型]*|标识可以处理的异常的类的子项常规标题。 典型的名称是**c + + 异常**， **Win32 异常**，**公共语言运行时异常**，和**本机运行时检查**。 这些名称还用于标识异常向用户的特定类。|  
 |*[异常]*|异常的名称： 例如， **_com_error**或**控制中断**。 这些名称还用于标识向用户的特定异常。|  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  这些文件位于[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]SDK 安装目录 (默认情况下， *[驱动器]*files\microsoft Visual Studio 2010 SDK\\)。  
   
  标头： includes\dbgmetric.h  
   
  库： libs\ad2de.lib、 libs\dbgmetric.lib  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

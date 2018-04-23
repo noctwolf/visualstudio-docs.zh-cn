@@ -1,29 +1,25 @@
 ---
-title: "CANSTOP_REASON |Microsoft 文档"
-ms.custom: 
+title: CANSTOP_REASON |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CANSTOP_REASON
 helpviewer_keywords:
 - CANSTOP_REASON enumeration
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98b1e4a9db18490079dd443cb296481aed64376a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 791132d94526126e8fc611b2becbb8b7545bb578
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 用于确定程序可以停止在到达的执行过程中的某个特定点后的执行。  
@@ -55,13 +51,13 @@ public enum enum_CANSTOP_REASON {
 ## <a name="remarks"></a>备注  
  作为自变量传递[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)方法确认使用会话调试管理器 (SDM)，如果可以停止在达到该程序的入口点或之后单步执行函数或方法。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

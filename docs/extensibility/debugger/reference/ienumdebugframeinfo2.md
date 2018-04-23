@@ -2,28 +2,24 @@
 title: IEnumDebugFrameInfo2 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEnumDebugFrameInfo2
 helpviewer_keywords:
 - IEnumDebugFrameInfo2
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fce74b91512ee22eda7ce8c3e61de0ac03636d2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 858250c3c951880cf905ea6ee150f1ff61008204
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 此接口枚举[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)结构。  
@@ -54,14 +50,14 @@ IEnumDebugFrameInfo2 : IUnknown
 ## <a name="remarks"></a>备注  
  Visual Studio 将获取此接口来处理断点、 异常或用户生成的暂停正在调试的程序上的第一步。 列表[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)结构表示当前的调用堆栈，并指定当前位于开头的列表以及最旧的函数的函数调用的调用列表的末尾。 每个`FRAMEINFO`表示堆栈帧，在其中可以计算表达式并查看本地变量的上下文。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

@@ -2,27 +2,23 @@
 title: 如何： 实现嵌套的项目 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9e5331ceb1efd9fe26a7d713cd57b735fae2054
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: c90434fd8deae2f5f71c150759fc836b9ed43077
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-implement-nested-projects"></a>如何： 实现嵌套的项目
 当你创建嵌套的项目类型，存在几个附加步骤必须实现。 父项目采用上某些相同解决方案具有为其嵌套 （子） 项目的职责。 父项目是类似于解决方案的项目的容器。 具体而言，有几个解决方案和通过要生成嵌套的项目的层次结构的父项目必须引发的事件。 创建嵌套的项目的以下过程介绍了这些事件。

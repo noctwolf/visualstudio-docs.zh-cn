@@ -2,26 +2,22 @@
 title: 提供代码的自动化 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - CodeModel object
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e59f3826cbb2ed83510cd98209b4c83f9278397d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9f9dbb7a8ddad39f01f5b29443168eebe12a2da8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="providing-automation-for-code"></a>提供代码的自动化
 创建自动化模型为你的代码不是必需的。 环境 SDK 不提供有关执行此操作的示例。 代码模型见解，请参阅<xref:EnvDTE.CodeModel>对象。  
@@ -38,5 +34,5 @@ ms.lasthandoff: 12/22/2017
   
  如果你想要添加的功能，例如方法或属性，未提供的标准`CodeModel`和`FileCodeModel`接口，创建你自己继承自标准的接口。 请务必记下此信息与你的项目系统以便最终用户将了解来查找它。 返回的标准接口，但用户可以调用`QueryInterface`方法或强制转换为你的接口，如果它已知的存在。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [自动化模型概述](../../extensibility/internals/automation-model-overview.md)

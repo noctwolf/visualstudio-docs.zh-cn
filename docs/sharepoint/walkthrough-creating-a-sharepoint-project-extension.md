@@ -1,12 +1,10 @@
 ---
-title: "演练： 创建 SharePoint 项目扩展 |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建 SharePoint 项目扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a03dd09525d29aaea31ef5c376814bd09747f90e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 17722233c5215858dce59a0d85a05f668de85446
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-sharepoint-project-extension"></a>演练：创建 SharePoint 项目扩展
   本演练阐释了如何创建 SharePoint 项目扩展。 项目扩展可用于响应项目级事件，如当添加、 删除或重命名项目。 你可以添加自定义属性，或当属性值更改时进行响应。 与项目项扩展不同项目扩展不能与特定的 SharePoint 项目类型关联。 当你创建项目扩展时，该扩展加载任何类型的 SharePoint 项目中打开时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  在**名称**框中，输入**ProjectExtension**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**ProjectExtension**到解决方案的项目并打开默认 Class1 代码文件。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**ProjectExtension**到解决方案的项目并打开默认 Class1 代码文件。  
   
 5.  从项目中删除 Class1 代码文件。  
   
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  在**解决方案资源管理器**，打开 source.extension.vsixmanifest 文件中的快捷菜单，然后选择**打开**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]在清单设计器中打开文件。 在显示的信息**元数据**选项卡也将出现在**扩展和更新**。 所有 VSIX 包都需要 extension.vsixmanifest 文件。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 引用](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在清单设计器中打开文件。 在显示的信息**元数据**选项卡也将出现在**扩展和更新**。 所有 VSIX 包都需要 extension.vsixmanifest 文件。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 引用](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在**产品名称**框中，输入**自定义项目属性**。  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  启动你的项目的调试版本，请选择**F5**关键的或在菜单栏中，选择**调试**，**启动调试**。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom 项目 Property\1.0 安装扩展和启动的实验实例[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom 项目 Property\1.0 安装扩展和启动的实验实例[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
 3.  在实验实例中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、 创建场解决方案，一个 SharePoint 项目和在向导中的其他值中使用的默认值。  
   
@@ -203,7 +202,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  关闭 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的实验实例。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [扩展 SharePoint 项目](../sharepoint/extending-sharepoint-projects.md)   
  [如何： 向 SharePoint 项目中添加属性](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [SharePoint 项目系统类型和其他 Visual Studio 项目类型之间进行转换](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   

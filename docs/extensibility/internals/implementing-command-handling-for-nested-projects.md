@@ -2,26 +2,22 @@
 title: 实现命令处理嵌套项目 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4ed9efab34a51bdfaacea1773a33637437b2ced
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3f02752fad6932bac90597d56f27257e78b84cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>实现处理嵌套的项目的命令
 IDE 将通过传递的命令可以传递<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口向嵌套的项目或父项目可以筛选或重写命令。  
@@ -57,7 +53,7 @@ IDE 将通过传递的命令可以传递<xref:Microsoft.VisualStudio.Shell.Inter
   
      父项目不需要将命令传送到子项目。 IDE 执行此任务...  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
  [命令、 菜单和工具栏](../../extensibility/internals/commands-menus-and-toolbars.md)   
  [嵌套项目](../../extensibility/internals/nesting-projects.md)

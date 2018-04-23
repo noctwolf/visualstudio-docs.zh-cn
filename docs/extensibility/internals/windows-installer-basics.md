@@ -1,26 +1,24 @@
 ---
-title: "Windows 安装程序基础知识 |Microsoft 文档"
-ms.custom: 
+title: Windows 安装程序基础知识 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1a9f895db0d202dd573e7c665b1185f6e3f4b751
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8fba35aba1e1947ee4eeeb59ca2225253e2aa3a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-installer-basics"></a>Windows 安装程序基础知识
 Windows Installer 安装和卸载应用程序或用户的计算机上的软件产品在名为 Windows 安装程序组件 （有时称为 WICs 或只是组件） 的单元中执行这些任务。 一个 GUID 标识每个 WIC，这是安装和引用计数设置使用 Windows 安装程序的基本单位。  
@@ -75,5 +73,5 @@ Windows Installer 安装和卸载应用程序或用户的计算机上的软件�
   
 -   无版本控制的资源不断应在多个 WIC 装运。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [如果组件规则被中断，会发生什么情况？](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

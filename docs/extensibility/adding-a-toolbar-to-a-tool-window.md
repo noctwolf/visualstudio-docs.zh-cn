@@ -1,26 +1,24 @@
 ---
-title: "将工具栏添加到工具窗口 |Microsoft 文档"
-ms.custom: 
+title: 将工具栏添加到工具窗口 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-caps.latest.revision: "48"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 07b5eea4fe6d5f58ec4b05563af253aeef0c5f6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 47ff5f69ff559ea1c08d0ae9bdd7192a257c844e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>将工具栏添加到工具窗口
 本演练演示如何将工具栏添加到工具窗口。  
@@ -117,5 +115,5 @@ ms.lasthandoff: 12/22/2017
   
 3.  在工具栏上，单击图标以显示消息**TWTestCommandPackage 内 TWToolbar.TWTestCommand.MenuItemCallback()**。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [添加工具栏](../extensibility/adding-a-toolbar.md)

@@ -1,26 +1,24 @@
 ---
-title: "测试区域 4： 签入 |Microsoft 文档"
-ms.custom: 
+title: 测试区域 4： 签入 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
 - source control plug-ins, checking items in
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 698b46c7ccb0a3fb13c799349d36de0cadf80af1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e7f3e8a343823016f391735aae59e58dfefe1a5f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-4-check-in"></a>测试区域 4： 签入
 此源代码管理插件测试区域涉及将已更新的项目发送到的版本存储区通过**签入**命令。  
@@ -70,5 +68,5 @@ ms.lasthandoff: 12/22/2017
 |将项目添加到源代码管理下的空白解决方案 (**签入**对话框)|1.创建一个空白解决方案。<br />2.将解决方案添加到源代码管理。<br />3.添加新项目。<br />4.如果系统提示，请接受签出的解决方案。<br />5.通过签入**签入**对话框。|常见的预期的行为。|  
 |将项目添加到源代码管理下的空白解决方案 (**挂起签入**窗口)|1.创建一个空白解决方案。<br />2.将解决方案添加到源代码管理。<br />3.添加新项目。<br />4.如果系统提示，请接受签出的解决方案。<br />5.从解决方案签入**挂起签入**窗口。|常见的预期的行为。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

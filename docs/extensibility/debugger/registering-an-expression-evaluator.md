@@ -1,26 +1,24 @@
 ---
-title: "注册的表达式计算器 |Microsoft 文档"
-ms.custom: 
+title: 注册的表达式计算器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluators, registering
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9a8aa71d6c529aa4d06acf1d887f10a58cd8367e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a34278ecca071c31e62ff4e405e9d7ada112d425
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-an-expression-evaluator"></a>注册的表达式计算器
 > [!IMPORTANT]
@@ -117,7 +115,7 @@ namespace EEMC
   
     |指标|描述|  
     |------------|-----------------|  
-    |`metricCLSID`|`CLSID`EE 类工厂|  
+    |`metricCLSID`|`CLSID` EE 类工厂|  
     |`metricName`|作为可显示字符串 EE 的名称|  
     |`metricLanguage`|旨在评估 EE 的语言的名称|  
     |`metricEngine`|`GUID`s 的使用此 EE 的调试引擎 (DE)|  
@@ -214,6 +212,6 @@ static HRESULT RegisterMetric( bool registerIt )
 }  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [用于调试的 SDK 帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

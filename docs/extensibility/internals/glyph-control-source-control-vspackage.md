@@ -1,26 +1,24 @@
 ---
-title: "标志符号控件 (源控件 VSPackage) |Microsoft 文档"
-ms.custom: 
+title: 标志符号控件 (源控件 VSPackage) |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - glyphs, source control packages
 - source control packages, glyphs
 ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e41fc2a7d09f50d70caca939e3fdd691b1d05c9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c3787b0afad7f89743950a922d5b19c2d204bdd9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="glyph-control-source-control-vspackage"></a>标志符号控件 (源控件 VSPackage)
 可用于源代码管理 Vspackage 深度集成的一部分是能够显示其自己的标志符号，以指示在源代码管理下的项的状态。  
@@ -38,7 +36,7 @@ ms.lasthandoff: 12/22/2017
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A>方法由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]为了获取显示各种源控件的图像列表的状态。 源代码管理 VSPackage IDE 返回其自定义标志符号的图像列表的句柄。 IDE 此时生成的图像列表的副本，并更高版本使用它来选择要显示的标志符号。 如果不支持的新接口或`IVsSccGlyphs::GetCustomGlyphList`方法返回 E_NOTIMPL，则 IDE 从提供的标志符号的默认列表中获取其标志符号[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>

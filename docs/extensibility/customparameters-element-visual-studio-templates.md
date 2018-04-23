@@ -1,29 +1,25 @@
 ---
-title: "CustomParameters 元素 （Visual Studio 模板） |Microsoft 文档"
-ms.custom: 
+title: CustomParameters 元素 （Visual Studio 模板） |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameters
 helpviewer_keywords:
 - CustomParameters element [Visual Studio project templates]
 ms.assetid: cf3efc91-1532-4022-bbb8-a18658424fee
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b5fa3543113641666977816fadec49a02bc912a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4c09d320b1a9185e79e36d54ff0363219d3dabc6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters 元素（Visual Studio 模板）
 组的自定义参数的向导进行参数替换时要传递给模板向导。  
@@ -67,7 +63,7 @@ ms.lasthandoff: 12/22/2017
 </CustomParameters>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [CustomParameter 元素 （Visual Studio 模板）](../extensibility/customparameter-element-visual-studio-templates.md)   
  [模板参数](../ide/template-parameters.md)   
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

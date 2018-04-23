@@ -1,28 +1,26 @@
 ---
-title: "选择和 IDE 中的货币 |Microsoft 文档"
-ms.custom: 
+title: 选择和 IDE 中的货币 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - currency, Visual Studio IDE
 - IDE, selection
 - selection, Visual Studio IDE
 - IDE, currency
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e46c18f424130a29085aaccad19328c9f86682f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf8c58cb08f82b10970424600843b0fedcf477fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="selection-and-currency-in-the-ide"></a>选择和 IDE 中的货币
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 维护有关用户的信息当前所选对象，通过选择*上下文*。 与所选内容的上下文中，Vspackage 可以参与货币跟踪两种方式：  
@@ -38,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 |-------------|-----------------|  
 |当前层次结构|通常当前项目;NULL 当前层次结构指示作为一个整体解决方案是最新。|  
 |当前 ItemID|当前层次结构; 内的选定的项当在项目窗口中的多个选择，可以有多个当前项。|  
-|当前`SelectionContainer`|包含为其属性窗口应显示属性的一个或多个对象。|  
+|当前 `SelectionContainer`|包含为其属性窗口应显示属性的一个或多个对象。|  
   
  此外，环境负责维护两个全局列表：  
   
@@ -66,6 +64,6 @@ ms.lasthandoff: 12/22/2017
   
 -   更改跟踪的窗口框架选择上下文中的元素的事件。 示例包括更改 DocObject 内的选择或更改在项目类型的窗口中的选择。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [选择上下文对象](../../extensibility/internals/selection-context-objects.md)   
  [为用户提供反馈](../../extensibility/internals/feedback-to-the-user.md)

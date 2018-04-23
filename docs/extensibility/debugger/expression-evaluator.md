@@ -1,27 +1,25 @@
 ---
-title: "表达式计算器 |Microsoft 文档"
-ms.custom: 
+title: 表达式计算器 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK]
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 55aaa595c49d0c50cff5f874d1b322c3adbb9729
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8dd2cc4409dbdb7650454715e133fd76dda5b780
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator"></a>表达式计算器
 表达式计算器 (EE) 检查语言来分析和在运行时，计算变量和表达式的语法，从而使它们可以在中断模式下 IDE 时由用户查看。  
@@ -33,7 +31,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  调试包获取`IDebugExpressionContext2`对象[IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)接口，然后调用`IDebugStackFrame2::ParseText`方法以获取[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)对象。  
   
-3.  调试包调用[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)方法或[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法以获取表达式的值。 `IDebugExpression2::EvaluateAsync`从命令中的即时窗口调用。 所有其他用户界面组件调用`IDebugExpression2::EvaluateSync`。  
+3.  调试包调用[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)方法或[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法以获取表达式的值。 `IDebugExpression2::EvaluateAsync` 从命令中的即时窗口调用。 所有其他用户界面组件调用`IDebugExpression2::EvaluateSync`。  
   
 4.  表达式计算的结果是[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)对象，其中包含名称、 类型和表达式的计算结果值。  
   
@@ -44,5 +42,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="implementation-notes"></a>实现说明  
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]的调试引擎希望与表达式计算器使用公共语言运行时 (CLR) 接口。 因此，表达式计算器适用于[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]的调试引擎必须支持 CLR (调试接口的所有 CLR 的完整列表可以位于 debugref.doc，是一部分的[!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)])。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [调试器组件](../../extensibility/debugger/debugger-components.md)

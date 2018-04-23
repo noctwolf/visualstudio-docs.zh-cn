@@ -1,26 +1,24 @@
 ---
-title: "公共语言运行时和表达式计算 |Microsoft 文档"
-ms.custom: 
+title: 公共语言运行时和表达式计算 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f3fe862f0115ae4890bd07e0b4f0171ecafcb4b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 370b7963c71b74674c7d323a5fa1c2650d3f08d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>公共语言运行时和表达式计算
 > [!IMPORTANT]
@@ -39,5 +37,5 @@ ms.lasthandoff: 12/22/2017
   
  当 CLR DE 调用专有的 EE 计算的表达式时，DE 提供 EE 具有 SP 和联编程序对象的接口。 因此，编写基于 CLR 的调试引擎意味着它只有才需要实现适当的表达式计算器接口;CLR 将负责的绑定和为你处理的符号。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

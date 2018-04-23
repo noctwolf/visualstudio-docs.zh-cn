@@ -1,27 +1,23 @@
 ---
-title: "在编辑器内 |Microsoft 文档"
-ms.custom: 
+title: 在编辑器内 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 585da54c691bda21a363dfe1308c6ed229a024ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inside-the-editor"></a>在编辑器内
 编辑器由组成大量的其他子系统，旨在使编辑器文本模型单独从文本视图和用户界面。  
@@ -50,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a>子系统的概述  
+##  <a name="overview"></a> 子系统的概述  
   
 ### <a name="text-model-subsystem"></a>文本模型子系统  
  文本模型子系统负责表示文本并启用其操作。 文本模型子系统包含<xref:Microsoft.VisualStudio.Text.ITextBuffer>接口，描述由编辑器显示的字符序列。 此文本可以修改、 跟踪，并且其他操作在许多方面。 文本模型还提供有关以下方面的类型：  
@@ -80,7 +76,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>进一步查看文本模型和文本视图  
   
-###  <a name="textmodel"></a>文本模型  
+###  <a name="textmodel"></a> 文本模型  
  文本模型子系统包括不同类型的文本的分组。 其中包括文本缓冲区、 文本快照和文本段。  
   
 #### <a name="text-buffers-and-text-snapshots"></a>文本缓冲区和文本快照  
@@ -135,7 +131,7 @@ abXefYj
   
  只有一个<xref:Microsoft.VisualStudio.Text.ITextEdit>可以实例化对象的文本缓冲区在任何时候，并且必须拥有文本缓冲区 （如果已声明所有权） 的线程上执行所有文本编辑。 可以通过调用放弃文本编辑其`Cancel`方法或其`Dispose`方法。  
   
- <xref:Microsoft.VisualStudio.Text.ITextBuffer>此外提供了`Insert()`， `Delete()`，和`Replace()`方法类似于在上找到<xref:Microsoft.VisualStudio.Text.ITextEdit>接口。 调用这些具有相同的效果与创建<xref:Microsoft.VisualStudio.Text.ITextEdit>对象，进行类似的调用，，然后将应用编辑。  
+ <xref:Microsoft.VisualStudio.Text.ITextBuffer> 此外提供了`Insert()`， `Delete()`，和`Replace()`方法类似于在上找到<xref:Microsoft.VisualStudio.Text.ITextEdit>接口。 调用这些具有相同的效果与创建<xref:Microsoft.VisualStudio.Text.ITextEdit>对象，进行类似的调用，，然后将应用编辑。  
   
 #### <a name="tracking-points-and-tracking-spans"></a>跟踪点和跟踪范围  
  <xref:Microsoft.VisualStudio.Text.ITrackingPoint>表示文本缓冲区中的字符位置。 如果缓冲区中引起要移动的字符的位置的方式进行编辑，跟踪点会转而使用它。 例如，如果跟踪点是指位置 10 在缓冲区中，并且在缓冲区的开头插入五个字符，跟踪点然后指位置 15。 如果插入的操作发生在精确地表示跟踪点的位置，其行为由其<xref:Microsoft.VisualStudio.Text.PointTrackingMode>，这可以是`Positive`或`Negative`。 如果跟踪模式为正，跟踪点是指同一字符，现在位于末尾插入;如果跟踪模式为负，跟踪点是指原始位置插入第一个字符。 如果删除由跟踪点位置处的字符，则跟踪点将在后面已删除的范围的第一个字符中下移。 例如，如果跟踪点是指位置 5，处的字符，并且删除位置 3 到 6 个字符，跟踪点是指位置 3 处的字符。  
@@ -153,7 +149,7 @@ abXefYj
   
  开发人员可以定义自己的内容类型和使用注册<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>。 许多编辑器功能可通过使用相对于特定的内容类型定义<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>。 例如，编辑器边距、 修饰和鼠标处理程序可以定义，以便它们仅适用于显示特定内容类型的编辑器。  
   
-###  <a name="textview"></a>文本视图  
+###  <a name="textview"></a> 文本视图  
  模型视图控制器 (MVC) 模式的视图部分定义的视图，如在滚动条和插入符号的图形元素格式的文本视图。 Visual Studio 编辑器中的所有表示法元素基于 WPF。  
   
 #### <a name="text-views"></a>文本视图  
@@ -181,7 +177,7 @@ abXefYj
 #### <a name="formatted-text"></a>格式化的文本  
  在文本视图中显示的文本组成<xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>对象。 每个文本视图行对应于一行文本视图中的文本。 基础的文本缓冲区中的长行可以将部分遮盖 （如果未启用的自动换行），或者已被分成多个文本视图行。 <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>接口包含方法和属性为坐标和字符，之间的映射和可能与行关联的修饰。  
   
- <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>通过使用创建对象<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>接口。 如果你只是担心当前视图中显示的文本，则可以忽略格式设置的源。 如果你感兴趣的不是文本格式显示在视图中 （例如，若要支持多格式文本剪切并粘贴），则可以使用<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>来设置文本格式的文本缓冲区中。  
+ <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> 通过使用创建对象<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>接口。 如果你只是担心当前视图中显示的文本，则可以忽略格式设置的源。 如果你感兴趣的不是文本格式显示在视图中 （例如，若要支持多格式文本剪切并粘贴），则可以使用<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>来设置文本格式的文本缓冲区中。  
   
  文本视图格式一个<xref:Microsoft.VisualStudio.Text.ITextSnapshotLine>一次。  
   
@@ -202,7 +198,7 @@ abXefYj
   
 -   IntelliSense  
   
-###  <a name="tagsandclassifiers"></a>标记和分类器  
+###  <a name="tagsandclassifiers"></a> 标记和分类器  
  标记是与文本范围的关联的标记。 它们可以显示不同的方式，例如，通过使用文本着色、 下划线、 图形或弹出窗口。 分类器是标记的一种类型。  
   
  其他类型的标记是<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>的文本突出显示，<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>的大纲显示，和<xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>编译错误。  
@@ -234,14 +230,14 @@ abXefYj
   
  <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap>是从分类类型映射到一组的格式设置属性的文本。 在编辑器中的格式映射实现处理分类格式的所有的导出。  
   
-###  <a name="adornments"></a>修饰  
+###  <a name="adornments"></a> 修饰  
  修饰是与的字体和颜色的文本视图中的字符不直接相关的图形效果。 例如，用于标记在许多编程语言的非编译代码，红色波形曲线下划线嵌入的修饰，同时工具提示弹出修饰。 修饰派生自<xref:System.Windows.UIElement>和实现<xref:Microsoft.VisualStudio.Text.Tagging.ITag>。 两种特殊类型的修饰标记<xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>，对于占据相同的空间视图中的文本的修饰和<xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>，为波形曲线下划线。  
   
  嵌入的修饰是构成格式化的文本视图的一部分的图形。 其组织在不同的 Z 顺序层。 有三个内置的层，，如下所示： 文本、 插入符号和所选内容。 但是，开发人员可以定义多个层，并将它们放在相对于其他的顺序。 嵌入修饰的三类是相对于文本的修饰 （其中移动时移动文本，并删除时删除的文本）、 视图相对修饰 （它们具有如何处理非文本视图部分） 和所有者控制修饰 (开发人员必须管理它们的位置）。  
   
  弹出修饰是在文本视图，例如，工具提示的上一个小窗口中显示的图形。  
   
-###  <a name="projection"></a>投影  
+###  <a name="projection"></a> 投影  
  投影是一种技术用于构造一种不同的不实际存储文本，而改为将合并来自其他文本缓冲区的文本的文本缓冲区。 例如，若要串联两个其他缓冲区中的文本，并显示结果，就像它是一个缓冲区中或隐藏的一个缓冲区中的文本部分，则可以使用投影缓冲区。 投影缓冲区可以充当另一个投影缓冲区的源缓冲区。 可以构造的一组通过投影相关的缓冲区进行不同的方式排列文本。 (也称为是这样一组*缓冲区关系图*。)Visual Studio 文本大纲显示功能的实施方式使用投影缓冲区以隐藏折叠的文本，并且 Visual Studio 编辑器中的用于 ASP.NET 页使用投影来支持嵌入的语言，如 Visual Basic 和 C#。  
   
  <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer>通过创建<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>。 投影缓冲区由的有序<xref:Microsoft.VisualStudio.Text.ITrackingSpan>对象称为*源范围*。 这些范围的内容显示为字符序列。 从中绘制源范围的文本缓冲区名为*源缓冲区*。 投影缓冲区的客户端不需要注意，不同于普通文本缓冲区。  
@@ -275,22 +271,22 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>事件和投影缓冲区  
  投影缓冲区修改时，修改从发送投影缓冲区依赖于它的缓冲区。 所有缓冲区被都修改后，会引发缓冲区更改事件，从最深的缓冲区。  
   
-###  <a name="outlining"></a>大纲显示  
+###  <a name="outlining"></a> 大纲显示  
  以大纲方式显示为展开或折叠不同的文本视图中的文本块的能力。 以大纲方式显示被定义为一种类型的<xref:Microsoft.VisualStudio.Text.Tagging.ITag>中的相同方式定义修饰。 A<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>是一个标记，定义要展开或折叠的文本区域。 若要使用大纲显示，必须导入<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService>获取<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>。 大纲显示管理器枚举，折叠，且将扩展的不同块，表示为<xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible>对象，并相应地引发事件。  
   
-###  <a name="mousebindings"></a>鼠标绑定  
+###  <a name="mousebindings"></a> 鼠标绑定  
  鼠标绑定链接鼠标移动到不同的命令。 通过定义鼠标绑定<xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>，键绑定使用定义的和<xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>。 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>自动实例化的所有绑定，并将它们连接到视图中的鼠标事件。  
   
  <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor>接口包含预进程和后续处理的事件处理程序不同的鼠标事件。 到事件中的一个的句柄，您可以重写中的方法的一些<xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>。  
   
-###  <a name="editoroperations"></a>编辑器操作  
+###  <a name="editoroperations"></a> 编辑器操作  
  编辑器操作可以用于自动执行与编辑器中的，用于脚本编写或其他目的的交互。 你可以导入<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService>上访问操作到给定<xref:Microsoft.VisualStudio.Text.Editor.ITextView>。 然后可以使用这些对象以修改所选内容、 滚动视图，或将插入符号移动到视图的不同部分。  
   
-###  <a name="intellisense"></a>IntelliSense  
+###  <a name="intellisense"></a> IntelliSense  
  IntelliSense 支持语句完成、 签名帮助 （也称为参数信息）、 快速信息和电灯泡。  
   
  语句结束提供的方法名称、 XML 元素和其他编码或标记元素的潜在完整内容的弹出列表。 一般情况下，用户手势调用完成会话。 会话显示的潜在完成列表和用户可以选择一个或关闭该列表。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>负责创建和触发<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>计算<xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet>会话完成项。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)   
  [编辑器导入](../extensibility/editor-imports.md)

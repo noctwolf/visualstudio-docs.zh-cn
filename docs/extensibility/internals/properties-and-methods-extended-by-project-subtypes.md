@@ -1,26 +1,24 @@
 ---
-title: "通过项目子类型的属性和方法扩展 |Microsoft 文档"
-ms.custom: 
+title: 通过项目子类型的属性和方法扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, extended methods
 - project subtypes, extended properties
 ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 288e8f680d12aeffb2979c3f0d89b44b0553b62e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 23510ffbb42e0c0c37c07e0ee80ae15f99e5df00
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>属性和扩展，由项目子类型的方法
 项目子类型具有大量的能力，因为它被构造为基本项目的聚合器影响的项目的行为。 本部分总结了一些可以增强或修改的项目子类型的功能。  
@@ -52,5 +50,5 @@ ms.lasthandoff: 12/22/2017
   
  该基项目提供了上述属性的默认实现。 基本项目获取这些通过调用`QueryInterface`为<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>外面项目子类型，从而允许项目子类型，以重写属性的实现。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [项目子类型设计](../../extensibility/internals/project-subtypes-design.md)

@@ -2,26 +2,22 @@
 title: 源控件插件体系结构 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
-caps.latest.revision: 24
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22929c34d656fb4f163076ca0b5dfb498d44c884
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 498f3aeb87855a0dac5afacc1baa7e2e816375f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-plug-in-architecture"></a>源控件插件体系结构
 可以添加到源控件支持[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 的实现并附加了源代码管理插件。 IDE 将连接到源代码管理插件通过定义完善的源控件插件 API。 IDE 提供组成工具栏和菜单命令的用户界面 (UI) 来公开的源控制系统版本控制功能。 源代码管理插件实现源代码管理功能。  
@@ -43,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
  源代码管理插件不能进行更改到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]shell，因此，对源控件适配器包或源控制由 IDE 提供用户界面。 它必须进行最大使用通过贡献集成体验的最终用户的各种源控件插件 API 函数的实现所提供的灵活性。 源控件插件 API 文档的参考部分包括一些高级的源代码管理插件功能的信息。 若要利用这些功能，源代码管理插件必须声明为 IDE 其高级的功能在初始化期间，和它必须实现每个功能的特定高级的函数。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件](../../extensibility/source-control-plug-ins.md)   
  [术语表](../../extensibility/source-control-plug-in-glossary.md)   
  [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -2,28 +2,24 @@
 title: IDebugEngine3::SetJustMyCodeState |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugEngine3::SetJustMyCodeState
 helpviewer_keywords:
 - IDebugEngine3::SetJustMyCodeState
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
-caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08d396d378f168b9a54e3b640e69dfeb3f6c9ba1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fda672cc9d6861520b9da3a894b94d51f4100683
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 此方法的 JustMyCode 状态信息告知的调试引擎。  
@@ -51,7 +47,7 @@ int SetJustMyCodeState(
  [in]非零 (`TRUE`) 若要更新的当前信息，零 (`FALSE`) 若要重置 （忽略以前设置了任何内容） 的所有信息。  
   
  `dwModules`  
- [in]信息中的结构数`rgJMCSpec.`  
+ [in]信息中的结构数 `rgJMCSpec.`  
   
  `rgJMCSpec`  
  [in]数组[JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)结构使用。  
@@ -62,6 +58,6 @@ int SetJustMyCodeState(
 ## <a name="remarks"></a>备注  
  JustMyCode 是调试仅属于用户的代码并忽略所有的中间代码，例如系统代码的概念，即使该系统代码提供了源代码。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   
  [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)

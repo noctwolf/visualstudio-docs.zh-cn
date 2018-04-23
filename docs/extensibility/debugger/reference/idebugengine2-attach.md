@@ -2,28 +2,24 @@
 title: IDebugEngine2::Attach |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::Attach
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb45d2196a9f84b8f956b8ede665df6e3ed249c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 264ef65472bf3d003852f2f7efc0fe21ee45d2a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 将调试引擎 (DE) 附加到的程序或程序。 由会话调试管理器 (SDM) DE 进程到 SDM 时调用。  
@@ -72,11 +68,11 @@ int Attach(
 ## <a name="remarks"></a>备注  
  有三个原因将附加到程序中，如下所示：  
   
--   `ATTACH_REASON_LAUNCH`指示，DE 附加到程序中，因为用户启动包含它的进程。  
+-   `ATTACH_REASON_LAUNCH` 指示，DE 附加到程序中，因为用户启动包含它的进程。  
   
--   `ATTACH_REASON_USER`指示用户已显式请求 DE 将附加到程序 （或包含的程序的过程）。  
+-   `ATTACH_REASON_USER` 指示用户已显式请求 DE 将附加到程序 （或包含的程序的过程）。  
   
--   `ATTACH_REASON_AUTO`指示 DE 附加到特定的程序，因为它已调试其他程序在特定的进程中。 这也称为自动附加。  
+-   `ATTACH_REASON_AUTO` 指示 DE 附加到特定的程序，因为它已调试其他程序在特定的进程中。 这也称为自动附加。  
   
  当调用此方法时，DE 需要将这些事件发送序列中：  
   
@@ -92,7 +88,7 @@ int Attach(
   
  在调用由给定数组中的程序节点的方法之前`pProgram`或`rgpProgramNodes`，模拟，如有必要，应上启用`IDebugProgram2`表示程序节点的接口。 通常情况下，但是，此步骤不需要。 有关详细信息，请参阅[安全问题](../../../extensibility/debugger/security-issues.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

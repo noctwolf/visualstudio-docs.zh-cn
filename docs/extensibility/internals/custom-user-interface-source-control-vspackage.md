@@ -1,26 +1,24 @@
 ---
-title: "自定义用户界面 (源控件 VSPackage) |Microsoft 文档"
-ms.custom: 
+title: 自定义用户界面 (源控件 VSPackage) |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ebd2361e94e9b1430f5bac99f2e71dc53a02ebf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自定义用户界面 (源控件 VSPackage)
 VSPackage 通过 Visual Studio 命令表 (.vsct) 文件中声明其菜单项，则其默认状态。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 在加载 VSPackage 之前为其默认状态显示的菜单项。 随后，<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用方法来启用或禁用菜单项。  
@@ -49,7 +47,7 @@ VSPackage 通过 Visual Studio 命令表 (.vsct) 文件中声明其菜单项，�
   
  所需<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>，且还与源代码管理关联任何可选接口将不会调用时 VSPackage 的源控件处于非活动状态。  
   
- 当[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 启动[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令 UI 上下文设置为当前的默认源控件 VSPackage id。 的 ID 这将导致活动的源控件显示在 IDE 中，而无实际加载 VSPackage 的 VSPackage 的静态 UI。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]vspackage，以将注册暂停[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>VSPackage 任何调用之前。  
+ 当[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 启动[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令 UI 上下文设置为当前的默认源控件 VSPackage id。 的 ID 这将导致活动的源控件显示在 IDE 中，而无实际加载 VSPackage 的 VSPackage 的静态 UI。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vspackage，以将注册暂停[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>VSPackage 任何调用之前。  
   
  下表介绍的特定详细信息，如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 隐藏不同 UI 项。  
   
@@ -59,7 +57,7 @@ VSPackage 通过 Visual Studio 命令表 (.vsct) 文件中声明其菜单项，�
 |工具窗口|源代码管理 VSPackage 隐藏它拥有进行处于非活动状态时任何工具窗口。|  
 |源代码管理特定于 VSPackage 的选项页|注册表项 HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts 允许 VSPackage 设置在其中需要要显示其选项页的上下文。 此项下的注册表项都通过使用服务 ID (SID) 的源控件服务并将其分配 DWORD 值 1 来创建。 每次在上下文中向注册 VSPackage 的源控件，UI 事件发生时，如果它处于活动状态，将调用 VSPackage。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>   

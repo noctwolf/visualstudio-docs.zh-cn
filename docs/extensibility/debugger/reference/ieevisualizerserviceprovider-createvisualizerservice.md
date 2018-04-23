@@ -2,28 +2,24 @@
 title: IEEVisualizerServiceProvider::CreateVisualizerService |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerServiceProvider::CreateVisualizerService
 helpviewer_keywords:
 - IEEVisualizerServiceProvider::CreateVisualizerService method
 ms.assetid: f366f7c9-358d-46c8-993f-32ff86539833
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9c34f5b11aed9ed51ca10f662ea161d792e54b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f59d86e94be5c0295786b747f6b57753aa087b07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 此方法创建可视化工具服务。  
@@ -70,9 +66,9 @@ int CreateVisualizerService(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- `binder`， `pSymProv`，和`pAddress`参数已传递给`IDebugParsedExpression::EvaluateSync`方法。 `CreateVisualizerService`是仅从调用`IDebugParsedExpression::EvaluateSync`作为类型可视化工具的表达式计算器支持的一部分。  
+ `binder`， `pSymProv`，和`pAddress`参数已传递给`IDebugParsedExpression::EvaluateSync`方法。 `CreateVisualizerService` 是仅从调用`IDebugParsedExpression::EvaluateSync`作为类型可视化工具的表达式计算器支持的一部分。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

@@ -1,12 +1,10 @@
 ---
-title: "Guid 和 Id 的 Visual Studio 工具栏 |Microsoft 文档"
-ms.custom: 
+title: Guid 和 Id 的 Visual Studio 工具栏 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - visual studio groups
 - toolbars
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - tool window toolbar
 - guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: bbb14818cebb35f703ec6f5ade084d96ac383d6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 394e0991d734279879df89422ac23fdd26899eeb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Guid 和 Id 的 Visual Studio 工具栏
 本主题枚举包含在 Visual Studio 集成的开发环境 (IDE) 中，工具栏的 GUID 和 ID 值，并它们所包含的组。 在 Visual Studio SDK 的一部分安装的.vsct 文件中定义这些值。 有关详细信息，请参阅[IDE-Defined 命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -65,7 +63,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="standard-toolbar-groups"></a>标准工具栏组  
   
-|name|Id|  
+|名称|Id|  
 |----------|--------|  
 |保存/打开|IDG_VS_TOOLSB_SAVEOPEN|  
 |剪切/复制|IDG_VS_TOOLSB_CUTCOPY|  
@@ -79,14 +77,14 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="build-toolbar-groups"></a>生成工具栏组  
   
-|name|Id|  
+|名称|Id|  
 |----------|--------|  
 |生成栏|IDG_VS_BUILDBAR|  
 |取消|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="text-editor-toolbar-groups"></a>文本编辑器工具栏组  
   
-|name|Id|  
+|名称|Id|  
 |----------|--------|  
 |完成|IDM_VS_TOOL_TEXTEDITOR|  
 |降级|IDG_VS_EDITTOOLBAR_INDENT|  
@@ -95,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="debug-toolbar-groups"></a>调试工具栏组  
   
-|name|Id|  
+|名称|Id|  
 |----------|--------|  
 |执行|IDM_DEBUG_TOOLBAR|  
 |单步执行|IDG_DEBUG_TOOLBAR_STEPPING|  
@@ -104,7 +102,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="debug-location-toolbar-groups"></a>调试位置工具栏组  
   
-|name|Id|  
+|名称|Id|  
 |----------|--------|  
 |调试位置|IDG_DEBUG_CONTEXT_TOOLBAR|  
   
@@ -138,7 +136,7 @@ ms.lasthandoff: 12/22/2017
 |内存 1-4|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1...4|IDG_MEMORY_EXPRESSION1...4<br /><br /> IDG_MEMORY_COLUMNS1...4|  
 |进程|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [将菜单控制器添加到工具栏](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
  [将工具栏添加到工具窗口](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [Visual Studio 菜单中的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

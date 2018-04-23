@@ -1,27 +1,25 @@
 ---
-title: "实现源代码管理插件的最佳实践 |Microsoft 文档"
-ms.custom: 
+title: 实现源代码管理插件的最佳实践 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, best practices
 - best practices, source control plug-ins
 - source control [Visual Studio SDK], plug-ins
 ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e406bc0cd5d7e4cb082e1f5e34fa6645538d02ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d5e9972b28d435f5cba360b2328ecdd6d18eb52e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>实现源代码管理插件的最佳做法
 以下技术详细信息可帮助你可靠地实现了源代码管理插件中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -61,6 +59,6 @@ ms.lasthandoff: 12/22/2017
   
  这种方式，未定义最用户可配置的设置选项，因为它们广泛有所不同源控件插件。因此，建议的机制是**高级**按钮。 例如，在**获取**对话框中，则 IDE 将显示它了解，但它还显示的信息**高级**按钮如果插件都有为此命令的选项。 当用户单击**高级**按钮，IDE 调用[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)启用源代码管理插件以提示用户输入信息，如 bitflags 或日期/时间。 该插件在恢复期间传递的结构中返回此信息`SccGet`命令。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源控件插件](../extensibility/source-control-plug-ins.md)   
  [创建源代码管理插件](../extensibility/internals/creating-a-source-control-plug-in.md)

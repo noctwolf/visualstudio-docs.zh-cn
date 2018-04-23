@@ -1,26 +1,24 @@
 ---
-title: "如何： 安装了源代码管理插件 |Microsoft 文档"
-ms.custom: 
+title: 如何： 安装了源代码管理插件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: dab9270b55f5980d36256db78db89b5e4ac186f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4ffabd7adf35956163c8744eae6539e96990f38a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何： 安装了源代码管理插件
 创建源代码管理插件包括三个步骤：  
@@ -32,7 +30,7 @@ ms.lasthandoff: 12/22/2017
 3.  通过进行相应的注册表项注册 DLL。  
   
 ## <a name="integration-with-visual-studio"></a>与 Visual Studio 的集成  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支持源控件插件符合源控制插件 API。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持源控件插件符合源控制插件 API。  
   
 ### <a name="registering-the-source-control-plug-in"></a>注册源代码管理插件  
  正在运行的集成的开发环境 (IDE) 可以调入源代码管理系统之前，必须首先找到源控制导出 API 的插件 DLL。  
@@ -83,7 +81,7 @@ ms.lasthandoff: 12/22/2017
   
      此条目的名称为提供程序 （与相同为 SCCServerName 条目指定的值），用户可读名称，值再次，为步骤 1 中创建的子项。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\*[显示名称]* = 软件\\*[公司名称]* \\ *[产品名称]*。  
   
-     例如:  
+     例如：  
   
     |示例注册表条目|示例值|  
     |---------------------------|------------------|  
@@ -120,5 +118,5 @@ ms.lasthandoff: 12/22/2017
   
  如果满足这两种情况，可以调用在版本 1.2 和 1.3 支持的新函数。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [入门](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

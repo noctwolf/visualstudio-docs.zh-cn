@@ -1,13 +1,10 @@
 ---
-title: "&lt;appAddin&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档"
-ms.custom: 
+title: '&lt;appAddin&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27f286f9bde8db68a7190796f1d154a402fb208d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 9def97d044af74f02a2064703691333ec9f176aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt;元素 （Visual Studio 中的 Office 开发）
   `appAddin` 命名空间的 `vstov4` 元素存储 VSTO 外接程序特定于自定义项的信息。  
@@ -54,13 +51,13 @@ ms.lasthandoff: 01/10/2018
  `appAddin` 元素具有以下子元素。  
   
 ### <a name="friendlyname"></a>FriendlyName  
- 可选。 `friendlyName`元素述[&#60; friendlyName &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ 可选。 `friendlyName`元素述[ &#60;friendlyName&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)。  
   
 ### <a name="description"></a>说明  
- 可选。 `description`元素述[&#60; 说明 &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/description-element-office-development-in-visual-studio.md).  
+ 可选。 `description`元素述[&#60;说明&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/description-element-office-development-in-visual-studio.md)。  
   
 ### <a name="formregions"></a>formRegions  
- 仅为包含窗体区域的 Outlook VSTO 外接程序所需。 `formRegions`元素述[&#60; formRegions &#62;元素 &#40; Visual Studio &#41; 中的 Office 开发](../vsto/formregions-element-office-development-in-visual-studio.md).  
+ 仅为包含窗体区域的 Outlook VSTO 外接程序所需。 `formRegions`元素述[ &#60;formRegions&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)。  
   
 ## <a name="vsto-add-in-example"></a>VSTO 外接程序示例  
   
@@ -92,7 +89,7 @@ ms.lasthandoff: 01/10/2018
 </vstov4:appAddIn>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  

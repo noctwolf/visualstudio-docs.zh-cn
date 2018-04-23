@@ -2,26 +2,22 @@
 title: Visual Studio SDK 术语表 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa0f7eaed09df717eb0746076715f9c780464df1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a08985c4977896e35fa8cd94014385ac32dd8bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK 术语表
 此术语表提供有关在中使用的术语定义[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]文档。  
@@ -76,7 +72,7 @@ ms.lasthandoff: 12/22/2017
  用于引用常规于整个文档-同时`DocData`和`DocView`。 例如，DocumentFrame 包含`DocView`，但它还会保留对引用`DocData`来处理持久性。  
   
  DocView  
- 在用户查看和操作基础交互 DocObject/Embedding/窗格`DocData`。 请注意，用户不需要利用是的一部分的文档/视图分离`DocObject`接口设计。 用户使用整个 DocObject 充当而不是使用名为的基础数据的更抽象 （和较低正式） 的概念视图`DocData`。 `DocView`与在 IDE 的文档框架对象 （MDI 子窗口） 始终嵌入对象。  
+ 在用户查看和操作基础交互 DocObject/Embedding/窗格`DocData`。 请注意，用户不需要利用是的一部分的文档/视图分离`DocObject`接口设计。 用户使用整个 DocObject 充当而不是使用名为的基础数据的更抽象 （和较低正式） 的概念视图`DocData`。 `DocView` 与在 IDE 的文档框架对象 （MDI 子窗口） 始终嵌入对象。  
   
  DTE  
  `DTE` （开发工具扩展性） 对象是在 Visual Studio 自动化模型中，允许你以编程方式自动化和扩展 IDE 的最顶层的访问点。  

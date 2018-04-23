@@ -1,29 +1,27 @@
 ---
-title: "公开 Visual Studio SDK 中的事件 |Microsoft 文档"
-ms.custom: 
+title: 公开 Visual Studio SDK 中的事件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 74a9ff54d14b6212d0fc484acd2bd25fad18bb87
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 02ddcf0c2321f6f4c07170117c6474b993c340f4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>公开 Visual Studio SDK 中的事件
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]允许通过使用自动化源事件。 我们建议源项目和项目项的事件。  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 允许通过使用自动化源事件。 我们建议源项目和项目项的事件。  
   
  从自动化者中检索事件<xref:EnvDTE.DTEClass.Events%2A>对象或<xref:EnvDTE.DTEClass.GetObject%2A>("EventObjectName")。 环境调用`IDispatch::Invoke`使用`DISPATCH_METHOD`或`DISPATCH_PROPERTYGET`标志返回事件。  
   
@@ -56,7 +54,7 @@ ms.lasthandoff: 12/22/2017
   
  "AutomationProjectItemEvents"="返回 AutomationProjectItemsEvents 对象"  
   
-|name|类型|范围|描述|  
+|名称|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |默认值 (@)|REG_SZ|未使用|未使用。 数据字段可用于文档。|  
 |AutomationProjectsEvents|REG_SZ|事件对象的名称。|仅密钥的名称为相关。 数据字段可用于文档。<br /><br /> 此示例来自于基本项目示例。|  
@@ -113,6 +111,6 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
   
  从相同的中心位置，检索事件对象`DTE.Events`对象。 这样一来，所有事件对象被都组合在一起，以便最终用户不必浏览整个对象模型以查找特定事件。 这还允许你提供特定的 VSPackage 对象，而不是要求你可以实现你自己的代码的系统级事件。 但是，最终用户，用户必须找到的事件你`ProjectItem`接口，它不是立即清除从中检索该事件对象。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>   
  [VSSDK 示例](http://aka.ms/vs2015sdksamples)

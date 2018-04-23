@@ -2,26 +2,22 @@
 title: 必须在安装后运行的命令 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-caps.latest.revision: 22
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ff4b1e572fd1e0c5c500fbd756d01063665bd1f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 84f1651f311fbad7aefe40a2744c61dc7d81725c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必须在安装后运行的命令
 如果通过.msi 文件部署你的扩展，则必须运行`devenv /setup`中对 Visual Studio 来发现你的扩展的顺序对安装的一部分。  
@@ -34,7 +30,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>要查找来自不同版本的 Visual Studio 的 devenv.exe 的 RegLocator 表行  
   
-|Signature_|根|键|name|类型|  
+|Signature_|根|键|名称|类型|  
 |-----------------|----------|---------|----------|----------|  
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|  
@@ -73,7 +69,7 @@ ms.lasthandoff: 12/22/2017
  到要在安装过程的执行计划它们的 InstallExecuteSequence 表，必须编写自定义操作。 使用条件列中每一行中的相应属性以防止从正在运行，如果该自定义操作的版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]在系统上未安装。  
   
 > [!NOTE]
->  `Null`属性计算结果为`False`时在条件中使用。  
+>  `Null` 属性计算结果为`False`时在条件中使用。  
   
  为每个自定义操作的序列列的值取决于你的 Windows Installer 包中的其他序列值。 序列值应是这样，运行方式的 devenv.exe 自定义操作尽可能接近立即在了 InstallFinalize 标准操作之前。  
   
@@ -86,5 +82,5 @@ ms.lasthandoff: 12/22/2017
 |CA_RunDevenv2005|DEVENV_EXE_2005|6605|  
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用 Windows Installer 安装 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

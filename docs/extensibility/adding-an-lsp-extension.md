@@ -1,25 +1,21 @@
 ---
-title: "添加语言服务器协议扩展 |Microsoft 文档"
-ms.custom: 
+title: 添加语言服务器协议扩展 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: bb6c82eab6878e99c9840ed593d9b9993056d391
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>添加语言服务器协议扩展
 
@@ -55,18 +51,18 @@ LSP 支持以下功能在 Visual Studio 中到目前为止：
 已初始化 | 是
 关机 | 是
 退出 | 是
-$/cancelRequest | 是
-window/showMessage | 是
+$/ cancelRequest | 是
+窗口/分隔开多个 | 是
 window/showMessageRequest | 是
-window/logMessage | 是
+窗口/logMessage | 是
 遥测/事件 |
-client/registerCapability |
-client/unregisterCapability |
+客户端/registerCapability |
+客户端/unregisterCapability |
 workspace/didChangeConfiguration | 是
 workspace/didChangeWatchedFiles | 是
-workspace/symbol | 是
+工作区/符号 | 是
 workspace/executeCommand | 是
-workspace/applyEdit | 是
+工作区/applyEdit | 是
 textDocument/publishDiagnostics | 是
 textDocument/didOpen | 是
 textDocument/didChange | 是
@@ -74,14 +70,14 @@ textDocument/willSave |
 textDocument/willSaveWaitUntil |
 textDocument/didSave | 是
 textDocument/didClose | 是
-textDocument/completion | 是
-completion/resolve | 是
+textDocument/完成 | 是
+完成/解决 | 是
 textDocument/hover | 是
 textDocument/signatureHelp | 是
 textDocument/references | 是
 textDocument/documentHighlight |
 textDocument/documentSymbol | 是
-textDocument/formatting | 是
+格式设置 textDocument / | 是
 textDocument/rangeFormatting | 是
 textDocument/onTypeFormatting |
 textDocument/definition | 是
@@ -114,7 +110,7 @@ textDocument/rename | 是
 
 * **源**： 手动定义
 * **名称**： 语言服务器协议客户端预览版
-* **Identifier**: Microsoft.VisualStudio.LanguageServer.Client.Preview
+* **标识符**: Microsoft.VisualStudio.LanguageServer.Client.Preview
 * **版本范围**: [1.0,2.0)
 * **如何为依赖关系解析**： 由用户安装
 * **下载 URL**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
@@ -303,7 +299,7 @@ namespace MockLanguageExtension
 
 请按照以下步骤来将对设置的支持添加到你 LSP 语言服务的扩展操作：
 
-1. 添加 JSON 文件 (例如，"MockLanguageExtensionSettings.json") 在项目中包含的设置和其默认值。 例如:
+1. 添加 JSON 文件 (例如，"MockLanguageExtensionSettings.json") 在项目中包含的设置和其默认值。 例如：
 
   ```json
   {
@@ -336,7 +332,7 @@ namespace MockLanguageExtension
 
   ![编辑 vspackage 资产](media/lsp-add-vspackage-asset.png)
 
-  * **Type**: Microsoft.VisualStudio.VsPackage
+  * **类型**: Microsoft.VisualStudio.VsPackage
   * **源**： 在文件系统上的文件
   * **路径**: [pkgdef 文件路径]
 
@@ -344,7 +340,7 @@ namespace MockLanguageExtension
 
 1. 用户打开包含你的服务器拥有的文件的工作区。
 2. 用户调用"VSWorkspaceSettings.json"的".vs"文件夹中添加文件。
-3. 用户将行添加到该服务器提供的设置的 VSWorkspaceSettings.json 文件。 例如:
+3. 用户将行添加到该服务器提供的设置的 VSWorkspaceSettings.json 文件。 例如：
 
   ```json
   {

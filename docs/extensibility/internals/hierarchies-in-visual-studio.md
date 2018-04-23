@@ -1,26 +1,24 @@
 ---
-title: "Visual Studio 中的层次结构 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 中的层次结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - hierarchies, Visual Studio IDE
 - IDE, hierarchies
 ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e4b0bc2e7c60a4b474f54fd32fd522712326c157
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8d1f018b9cc48d059761a26721c808024f60bb3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的层次结构
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 显示为项目*层次结构*。 在 IDE 中，层次结构是的节点，其中每个节点具有一组关联的属性的树。 A*项目层次结构*是保存项目的项、 的项的关系和项目的关联的属性和命令的容器。  
@@ -36,7 +34,7 @@ ms.lasthandoff: 12/22/2017
   
  当用户在编辑器中打开某个项时，控制该项目的层次结构选择，并且将成为活动的层次结构。 所选层次结构确定的一套命令可用于在项上执行操作。 跟踪用户焦点以这种方式使层次结构，以反映用户的当前上下文。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [项目类型](../../extensibility/internals/project-types.md)   
  [选择和 IDE 中的货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [VSSDK 示例](http://aka.ms/vs2015sdksamples)

@@ -1,24 +1,24 @@
 ---
-title: "Visual Studio 的颜色值参考 |Microsoft 文档"
-description: "用于创建新的 Visual Studio 颜色标记的引用： 十六进制代码"
-keywords: "颜色、 十六进制代码、 色调，主题 UI、 主题"
+title: Visual Studio 的颜色值参考 |Microsoft 文档
+description: 用于创建新的 Visual Studio 颜色标记的引用： 十六进制代码
+keywords: 颜色、 十六进制代码、 色调，主题 UI、 主题
 author: brickgeorge
 ms.author: v-brickg
 ms.date: 08/04/2017
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: 
+ms.custom: ''
 ms.reviewer: Jamie.Young
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-sdk
+manager: douge
+ms.workload:
+- v-brickg
+ms.openlocfilehash: 421fca16db2ed2792a539ead2ab46d325cee3a11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的颜色值参考
 本主题是用于创建新的颜色标记的引用。 当创建新的用户界面时，你可以使用从现有的 UI 中的相似颜色以选择为每个主要的主题颜色和高对比度主题该元素的系统颜色名称。 
@@ -162,9 +162,9 @@ ms.lasthandoff: 12/22/2017
 | 背景： 按下 | ![#FF007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 样本")<br />`#FF007ACC` | ![#FF007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 样本")<br />`#FF007ACC` | ![#FF007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 样本")<br />`#FF007ACC` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
 | 前景： 禁用 | ![#FFA2A4A5 样本](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 样本")<br />`#FFA2A4A5` | ![#FF656565 样本](../../extensibility/ux-guidelines/media/656565.png "#FF656565 样本")<br />`#FF656565` | ![#FFA2A4A5 样本](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 样本")<br />`#FFA2A4A5` | ![GrayText 样本](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText 样本")<br />`GrayText` |
 | 背景： 禁用 | ![#FFF5F5F5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 样本")<br />`#FFF5F5F5` | ![#FF252526 样本](../../extensibility/ux-guidelines/media/252526.png "#FF252526 样本")<br />`#FF252526` | ![#FFF6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 样本")<br />`#FFF6F6F6` | ![窗口样本](../../extensibility/ux-guidelines/media/HCWindow.png "窗口样本")<br />`Window` |
-| 边框： 悬停 | ![#FFC9DEF5 样本](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 样本")<br />`#FFC9DEF5` | ![#FF3E3E40 样本](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 样本")<br />`#FF3E3E40` |![#FFFEFEFE 样本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 样本")<br /> `#FFFEFEFE` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
-| 边框： 按下 | ![#FF007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 样本")<br />`#FF007ACC` | ![#FF007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 样本")<br />`#FF007ACC` |![#FF007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 样本")<br /> `#FF007ACC` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
-| 边框： 禁用 | ![#FFCCCEDB 样本](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 样本")<br />`#FFCCCEDB` | ![#FF434346 样本](../../extensibility/ux-guidelines/media/434346.png "#FF434346 样本")<br />`#FF434346` | ![#FFC6C6C6 样本](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 样本")<br />`#FFC6C6C6` | ![WindowFrame 样本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 样本")<br />`WindowFrame` |
+| 边框： 悬停 | ![#FFC9DEF5 样本](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 样本")<br />`#FFC9DEF5` | ![ #FF3E3E40 样本](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 样本")<br />`#FF3E3E40` |![#FFFEFEFE 样本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 样本")<br /> `#FFFEFEFE` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
+| 边框： 按下 | ![#FF007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 样本")<br />`#FF007ACC` | ![ #FF007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 样本")<br />`#FF007ACC` |![#FF007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 样本")<br /> `#FF007ACC` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
+| 边框： 禁用 | ![#FFCCCEDB 样本](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 样本")<br />`#FFCCCEDB` | ![ #FF434346 样本](../../extensibility/ux-guidelines/media/434346.png "#FF434346 样本")<br />`#FF434346` | ![#FFC6C6C6 样本](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 样本")<br />`#FFC6C6C6` | ![WindowFrame 样本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 样本")<br />`WindowFrame` |
 
 ## <a name="properties-grid-control-elements"></a>属性网格控件元素
 
@@ -309,7 +309,7 @@ ms.lasthandoff: 12/22/2017
 | 前景 （文本）： 悬停 | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
 | 背景： 悬停 | ![#FFC9DEF5 样本](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 样本")<br />`#FFC9DEF5` | ![#FF606060 样本](../../extensibility/ux-guidelines/media/606060.png "#FF606060 样本")<br />`#FF606060` | ![#FFFDF4BF 样本](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF 样本")<br />`#FFFDF4BF` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
 | 前景 （文本）： 按下 | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
-| 背景： 按下 | ![#FF3399FF 样本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 样本")<br />`#FF3399FF` | ![#FF3399FF 样本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 样本")<br />`#FF3399FF` | ![#FF3399FF 样本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 样本")<br />`#FF3399FF` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
+| 背景： 按下 | ![#FF3399FF 样本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 样本")<br />`#FF3399FF` | ![ #FF3399FF 样本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 样本")<br />`#FF3399FF` | ![#FF3399FF 样本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 样本")<br />`#FF3399FF` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
 | 前景 （文本）： 所选 | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
 | 背景： 所选 | ![#FF3399FF 样本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 样本")<br />`#FF3399FF` | ![#FF3399FF 样本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 样本")<br />`#FF3399FF` | ![#FF3399FF 样本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 样本")<br />`#FF3399FF` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
 
@@ -398,7 +398,7 @@ ms.lasthandoff: 12/22/2017
 | 背景 | ![#FEFEFE 样本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE 样本")<br />`#FEFEFE` | ![#252526 样本](../../extensibility/ux-guidelines/media/252526.png "#252526 样本")<br />`#252526` | ![#FEFEFE 样本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE 样本")<br />`#FEFEFE` | ![控件样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
 | Border | ![#717171 样本](../../extensibility/ux-guidelines/media/717171.png "#717171 样本")<br />`#717171` | ![#999999 样本](../../extensibility/ux-guidelines/media/999999.png "#999999 样本")<br />`#999999` | ![#717171 样本](../../extensibility/ux-guidelines/media/717171.png "#717171 样本")<br />`#717171` | ![ControlDark 样本](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 样本")<br />`ControlDark` |
 | Text | ![#1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 样本")<br />`#1E1E1E` | ![#F1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 样本")<br />`#F1F1F1` | ![#1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 样本")<br />`#1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
-| 标志符号 | ![样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 样本")<br />`#1E1E1E` | ![#F1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 样本")<br />`#F1F1F1` | ![#1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 样本")<br />`#1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
+| 标志符号 | ![ 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 样本")<br />`#1E1E1E` | ![#F1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 样本")<br />`#F1F1F1` | ![#1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 样本")<br />`#1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
 
 ### <a name="disabled"></a>已禁用
 

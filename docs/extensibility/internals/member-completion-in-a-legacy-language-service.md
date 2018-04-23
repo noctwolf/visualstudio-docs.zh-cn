@@ -1,27 +1,25 @@
 ---
-title: "在旧语言服务的成员自动补全 |Microsoft 文档"
-ms.custom: 
+title: 在旧语言服务的成员自动补全 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Member Completion tool tip
 - Member Completion, supporting in language services [managed package framework]
 - language services [managed package framework], IntelliSense Member Completion
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e77511bdaaa96dc75f5be75c175b63fcd3cc3253
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0cc22190c9228d2e166be94ed0d5cc78105e2404
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>在旧语言服务的成员自动补全
 IntelliSense 成员完成为工具提示显示特定的作用域，如类、 结构、 枚举或命名空间的可能成员的列表。 例如，在 C# 中，如果用户键入"this"跟一个句点的类或结构在当前范围内的所有成员的列表显示，用户可以从中选择的列表中。  

@@ -1,28 +1,26 @@
 ---
-title: "向用户反馈 |Microsoft 文档"
-ms.custom: 
+title: 向用户反馈 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user model feedback
 - environment, context
 - IDE, context
 - IDE, user feedback
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3a5e31eb2acb50d9803bedd77e48d0821cbaea61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 629d12974a52bca30c0db96e838c5c731ae1abf7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="feedback-to-the-user"></a>向用户的反馈
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)，有关可用的功能取决于用户的当前所选内容和全局选择上下文的视觉反馈。 下表列出不同的选择上下文中提供的功能。  
@@ -61,7 +59,7 @@ ms.lasthandoff: 12/22/2017
   
 -   活动的层次结构窗口，这通常是**解决方案资源管理器**，和其标题栏更新以反映当前上下文和上下文相关**项目**菜单命令将应用于活动站点应用程序项目。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [选择和 IDE 中的货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [选择上下文对象](../../extensibility/internals/selection-context-objects.md)   
  [层次结构和选择](../../extensibility/internals/hierarchies-and-selection.md)

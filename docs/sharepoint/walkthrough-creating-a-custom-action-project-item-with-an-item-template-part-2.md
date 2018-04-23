@@ -1,25 +1,24 @@
 ---
-title: "演练： 使用项模板创建的自定义操作项目项，第 2 部分 |Microsoft 文档"
-ms.custom: 
+title: 演练： 使用项模板创建的自定义操作项目项，第 2 部分 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>演练：使用项模板创建自定义操作项目项（第 2 部分）
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项模板关联后，你可能还想要模板提供的向导。 可以使用向导收集从用户的信息，当用户使用你的模板添加到项目的项目项的新实例。 你收集的信息可以用于初始化项目项。  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  选择**WPF 用户控件库**项目模板，将项目**ItemTemplateWizard**，然后选择**确定**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将添加**ItemTemplateWizard**到解决方案的项目。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**ItemTemplateWizard**到解决方案的项目。  
   
 6.  从项目中删除 UserControl1 项。  
   
@@ -209,7 +208,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     有关详细信息`WizardExtension`元素，请参阅[WizardExtension 元素 &#40;Visual Studio 模板 &#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     有关详细信息`WizardExtension`元素，请参阅[WizardExtension 元素&#40;Visual Studio 模板&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates)。  
   
 3.  保存并关闭文件。  
   
@@ -327,7 +326,7 @@ ms.lasthandoff: 01/10/2018
   
      **列表设置**页将出现。  
   
-4.  下**通信**页面顶部附近标题下，选择**SharePoint 开发人员中心**链接，请验证浏览器打开网站 http://msdn.microsoft.com/sharepoint/default.aspx，，然后关闭浏览器。  
+4.  下**通信**页面顶部附近标题下，选择**SharePoint 开发人员中心**链接，请验证浏览器打开网站http://msdn.microsoft.com/sharepoint/default.aspx，然后关闭浏览器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清理开发计算机  
  完成项目项的测试后，从 Visual Studio 的实验实例中删除项目项模板。  
@@ -344,7 +343,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  关闭 Visual Studio （实验实例和 CustomActionProjectItem 解决方案处于打开状态的 Visual Studio 的实例） 的两个实例。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [演练： 使用项模板创建的自定义操作项目项，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   

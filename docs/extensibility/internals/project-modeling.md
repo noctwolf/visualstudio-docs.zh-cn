@@ -1,31 +1,29 @@
 ---
-title: "项目建模 |Microsoft 文档"
-ms.custom: 
+title: 项目建模 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
 - project models, automation
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 31c3d87a44838ead7663ff4c156985ab1b8e98eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: adb0204afd889ab487070578d136aea736bb63a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-modeling"></a>项目建模
 你的项目实现标准项目对象提供自动化的下一步：<xref:EnvDTE.Projects>和`ProjectItems`集合;`Project`和<xref:EnvDTE.ProjectItem>对象; 和剩余的对象唯一的实现。 Dteinternal.h 文件中定义这些标准的对象。 BscPrj 示例中提供了标准的对象的实现。 可以为模型中使用这些类创建您自己独立并排显示的标准项目对象与其他项目类型的项目对象。  
   
- 自动化使用者假定要能够调用<xref:EnvDTE.Solution>("`<UniqueProjName>")`和<xref:EnvDTE.ProjectItems>(`n`) 其中 n 是一个用于获取解决方案中的特定项目的索引编号。 进行此自动化调用将导致产生环境，以调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A>相应的项目层次结构，将 VSITEMID_ROOT 作为 ItemID 参数和 VSHPROPID_ExtObject 作为 VSHPROPID 参数传递。 `IVsHierarchy::GetProperty`返回`IDispatch`提供核心的自动化对象的指针`Project`接口，该已实现接口。  
+ 自动化使用者假定要能够调用<xref:EnvDTE.Solution>("`<UniqueProjName>")`和<xref:EnvDTE.ProjectItems>(`n`) 其中 n 是一个用于获取解决方案中的特定项目的索引编号。 进行此自动化调用将导致产生环境，以调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A>相应的项目层次结构，将 VSITEMID_ROOT 作为 ItemID 参数和 VSHPROPID_ExtObject 作为 VSHPROPID 参数传递。 `IVsHierarchy::GetProperty` 返回`IDispatch`提供核心的自动化对象的指针`Project`接口，该已实现接口。  
   
  以下是的语法`IVsHierarchy::GetProperty`。  
   
@@ -57,7 +55,7 @@ Projects
   
  如果你未实现`Project`对象，则环境仍将返回泛型`Project`对象，其中包含仅项目的名称。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:EnvDTE.Projects>   
  <xref:EnvDTE.ProjectItem>   
  <xref:EnvDTE.ProjectItems>

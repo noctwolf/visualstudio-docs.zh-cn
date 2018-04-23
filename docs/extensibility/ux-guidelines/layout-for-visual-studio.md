@@ -1,28 +1,26 @@
 ---
-title: "Visual Studio 布局 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 布局 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ef3c590a82fc3a7b89d21684ffe2e4b0f216ca98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e26caa6e47f0f2ee2a20611cf12e166832e007b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio 的布局
 Visual Studio 对话框的大部分[实用工具对话框布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，这是 unthemed 对话框该按照标准[Windows 桌面对话框布局原则](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)。 Visual Studio 移动，以便刷新其 UI，一部分变得较为突出对话框必须建立它们为产品定义体验的新设计。 这些[主题对话框布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有主题的外观。  
   
-##  <a name="BKMK_UtilityDialogLayout"></a>实用程序对话框布局  
+##  <a name="BKMK_UtilityDialogLayout"></a> 实用程序对话框布局  
   
 -   实用工具对话框内的所有控件应开始顶部/左侧，向下流动。  
   
@@ -104,7 +102,7 @@ Visual Studio 对话框的大部分[实用工具对话框布局](../../extensibi
   
 -   行长度应该是用户可以分析和读取适应宽度。 中等规模对话框应不超过 550 像素宽。  
   
-####  <a name="BKMK_InteriorCommandButtons"></a>内部命令按钮  
+####  <a name="BKMK_InteriorCommandButtons"></a> 内部命令按钮  
  在更复杂的对话框中，内部控件可能具有其自己的相关的按钮，这可能会影响对话框的提交按钮的位置。  
   
 -   使用内部垂直对齐方式 （列） 按钮时**确定**/**取消**在右下角的水平方向。  
@@ -124,7 +122,7 @@ Visual Studio 对话框的大部分[实用工具对话框布局](../../extensibi
 #### <a name="browse-button"></a>[浏览...]按钮  
  **[浏览...]**出"浏览 …"，请按照文本框中的按钮应拼写以完整、 包括省略号。 如果空间紧密或有多个**[浏览...]**在屏幕上，该按钮的按钮可以减少到仅省略号。  
   
-##  <a name="BKMK_ThemedDialogLayout"></a>主题对话框布局  
+##  <a name="BKMK_ThemedDialogLayout"></a> 主题对话框布局  
  Visual Studio 中的主题对话框具有更轻的外观，并提供更多的空白区域。 版式提供更多强调和感兴趣，它提供了更加开放的行距和变化的字体大小和权重。 如果可能，具有已减少 chrome 和标题栏或将其删除。 这些对话框的布局应遵循此基本模式：  
   
 1.  对话框的背景为白色。  
@@ -158,7 +156,7 @@ Visual Studio 对话框的大部分[实用工具对话框布局](../../extensibi
   
  **图 k: 08.01 主题对话框颜色**  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Studio 的应用程序模式](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   
  [控件 (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)   
  [对话框 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)

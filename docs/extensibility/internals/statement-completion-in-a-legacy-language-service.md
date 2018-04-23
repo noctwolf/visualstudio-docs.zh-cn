@@ -1,26 +1,24 @@
 ---
-title: "在旧语言服务中的语句结束 |Microsoft 文档"
-ms.custom: 
+title: 在旧语言服务中的语句结束 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7208d38966e2caa9f9510c48c34952742d06c1b3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d76face8f43bcb428a9c3b997083f8299d332cc8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>在旧语言服务中的语句结束
 语句结束是依据语言服务可帮助用户完成语言关键字或它们已启动在核心编辑器中键入的元素的过程。 本主题讨论语句完成的工作原理以及如何在你的语言服务中实现它。  
@@ -40,5 +38,5 @@ ms.lasthandoff: 12/22/2017
   
  当在编辑器中输入该触发器-具体而言，文本缓冲区-语言服务然后调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>方法。 这将导致编辑器弹出用户界面，以便用户可以选择从语句完成候选项。 此方法要求你实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>和<xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags>标志作为参数。 滚动列表框中显示的完成项的列表。 用户继续键入，在列表框中选择会更新以反映最新的字符与最接近类型。 核心编辑器实现用于语句完成、 UI 但语言服务必须实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>接口可定义一组语句的候选完成项。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [截获旧版语言服务命令](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

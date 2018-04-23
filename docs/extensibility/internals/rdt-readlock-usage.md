@@ -1,32 +1,30 @@
 ---
-title: "RDT_ReadLock 使用情况 |Microsoft 文档"
-ms.custom: 
+title: RDT_ReadLock 使用情况 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - RDT_ReadLock
 - visible
 - RDT_EditLock
 - invisible
 ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 31c13d9255442459c884379e83b619e1f73a1c2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7fda2fbb4a4b03dff9d677d9c7581a4138d9fcf7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock 使用情况
 
-<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>是标志，它提供逻辑以锁定文档中运行的文档表 (RDT)，即当前打开的 Visual Studio IDE 的所有文档的列表。 此标志确定当打开文档，以及文档是否是在用户界面中可见或保持不可见的方式在内存中。
+<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 是标志，它提供逻辑以锁定文档中运行的文档表 (RDT)，即当前打开的 Visual Studio IDE 的所有文档的列表。 此标志确定当打开文档，以及文档是否是在用户界面中可见或保持不可见的方式在内存中。
 
 通常情况下，将使用<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>满足下列情况之一时：
 
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock 和文档修改
 
-前面提到的标志指示不可见的打开的文档将产生其`RDT_EditLock`到可见用户打开文档时**新建窗口**。 当发生这种情况时，则用户会看到与**保存**提示时可见**新建窗口**已关闭。 `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel`使用实现，<xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager>服务最初工作时仅`RDT_ReadLock`（即时不可见的方式打开该文档进行分析信息） 执行。 更高版本，如果必须修改该文档，然后锁升级到为弱**RDT_EditLock**。 如果用户然后打开该文档中的可见**新建窗口**、`CodeModel`的弱`RDT_EditLock`释放。
+前面提到的标志指示不可见的打开的文档将产生其`RDT_EditLock`到可见用户打开文档时**新建窗口**。 当发生这种情况时，则用户会看到与**保存**提示时可见**新建窗口**已关闭。 `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` 使用实现，<xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager>服务最初工作时仅`RDT_ReadLock`（即时不可见的方式打开该文档进行分析信息） 执行。 更高版本，如果必须修改该文档，然后锁升级到为弱**RDT_EditLock**。 如果用户然后打开该文档中的可见**新建窗口**、`CodeModel`的弱`RDT_EditLock`释放。
 
 如果用户然后关闭**新建窗口**并选择**否**当系统提示保存打开的文档，则`CodeModel`实现释放文档中的所有信息并重新打开从磁盘不可见的方式的详细信息，才能使用该文档的下一步时间的文档。 种微妙的此行为是在用户打开其中一个实例**新建窗口**的不可见打开的文档中，对其进行修改，将其关闭，然后选择**否**当系统提示保存文档。 在此情况下，如果该文档具有`RDT_ReadLock`，文档实际上不会关闭，然后经过修改的文档将保持打开状态不可见的方式在内存中，即使用户选择不保存文档。
 

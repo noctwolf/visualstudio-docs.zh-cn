@@ -1,27 +1,25 @@
 ---
-title: "通过使用命令打开显示文件 |Microsoft 文档"
-ms.custom: 
+title: 通过使用命令打开显示文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open With command
 - Open With command
 - persistence, supporting Open With command
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a1631632a2ceb66380d1d0c41e54b5a4244a31a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9c708bb5a510748b08cac5b46b6829b908e74e0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>通过使用命令打开显示文件
 一个项目可以要求 IDE 以显示**打开**对话框。 此请求将提示用户打开具有选定的标准编辑器的文件。 以下步骤介绍了此过程。  
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  用户选择中的一个项时，就会立即**打开**对话框中，IDE 然后通过调用打开文档<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法。 有关详细信息，请参阅[如何： 打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)   
  [通过使用打开文件命令显示文件](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
  [如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)

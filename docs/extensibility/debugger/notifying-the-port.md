@@ -1,27 +1,23 @@
 ---
-title: "通知端口 |Microsoft 文档"
-ms.custom: 
+title: 通知端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154a5891d9a11dd77c92f3f297a2e905d40f0327
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1420ca8768ddf1eaedc0d515810bc88b3491c4db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="notifying-the-port"></a>通知端口
 启动程序之后, 该端口必须要得到通知，，如下所示：  
@@ -50,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
  了解 DE 的标识后, SDM 已准备好将其附加到该程序。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [启动程序](../../extensibility/debugger/launching-a-program.md)   
  [在启动后附加](../../extensibility/debugger/attaching-after-a-launch.md)   
  [调试任务](../../extensibility/debugger/debugging-tasks.md)

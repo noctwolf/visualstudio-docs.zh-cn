@@ -1,31 +1,29 @@
 ---
-title: "用于管理部署项目配置 |Microsoft 文档"
-ms.custom: 
+title: 用于管理部署项目配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, managing deployment
 - projects [Visual Studio SDK], configuration for managing deployment
 ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4859e47f8a7ade34a920e4d8e2fac3be58508de3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 723edd078636eb324fc2d5dfca2ae81ef3249a43
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-configuration-for-managing-deployment"></a>用于管理部署的项目配置
 部署是以物理方式将从生成过程的输出项移动到预期位置用于调试和安装的行为。 例如，Web 应用程序可能会在本地计算机上生成并将其放在服务器上。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支持项目的两种方法可以参与部署：  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持项目的两种方法可以参与部署：  
   
 -   作为部署过程的主题。  
   
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
  配置可以指定对其生成或部署操作影响的依赖关系。 生成或部署依赖关系是，必须生成或部署之前或之后的配置自己生成或部署的项目。 描述生成项目之间的依赖项都<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>接口，并在部署依赖关系<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>接口。 有关详细信息，请参阅[构建的项目配置](../../extensibility/internals/project-configuration-for-building.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [管理配置选项](../../extensibility/internals/managing-configuration-options.md)   
  [生成的项目配置](../../extensibility/internals/project-configuration-for-building.md)   
  [用于输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)

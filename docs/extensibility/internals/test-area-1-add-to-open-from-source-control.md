@@ -1,26 +1,24 @@
 ---
-title: "测试区域 1： 从源代码管理添加到打开 |Microsoft 文档"
-ms.custom: 
+title: 测试区域 1： 从源代码管理添加到打开 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1891e0242463f3673d22d22e0f9a2d000b01ae60
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6e95ef13a3d8f7a61c53c9938564479adf362a2c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>测试区域 1： 从源代码管理添加到 / 打开
 此源代码管理插件测试区域介绍将放置在源代码管理下的项目或解决方案，并检索它们从源代码管理。  
@@ -87,5 +85,5 @@ ms.lasthandoff: 12/22/2017
 |将添加到与单个项目的解决方案-单个项目|1.与单个项目创建一个解决方案。<br />2.将解决方案添加到源代码管理。<br />3.关闭解决方案。<br />4.创建第二个空解决方案。<br />5.从源代码管理中添加以前受控的解决方案 (**文件**，**源代码管理**，**从源代码管理中添加项目**)。|添加的项目将出现在**解决方案资源管理器**并签入。|  
 |将添加到解决方案，按选定内容添加到源代码管理的解决方案|1.使用项目创建一个解决方案。<br />2.为选择仅解决方案添加到源代码管理。 如果此步骤成功，则继续下一步。<br />3.关闭解决方案。<br />4.创建一个新的解决方案。<br />5.从源代码管理中添加以前受控的解决方案 (**文件**，**源代码管理**，**从源代码管理中添加项目**)。|`Result from Step 2:`<br /><br /> 项目不在源控件下。<br /><br /> `Result from Step 5:`<br /><br /> 如果第一种解决方案有解决方案项，它们不能添加从源代码管理，因此它们不会显示。<br /><br /> 从第一个解决方案的项目将显示为不可用。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

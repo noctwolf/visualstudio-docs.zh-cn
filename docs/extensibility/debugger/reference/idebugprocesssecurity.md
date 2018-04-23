@@ -2,29 +2,25 @@
 title: IDebugProcessSecurity |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity interface
 ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
-caps.latest.revision: 4
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7acdb0f16182ebca904229d7620b80f5ec81d1de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6e78baf34a3ecb6d5b40162b424c11a104617669
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity`实现端口供应商来警告用户附加到进程是不安全。  
+`IDebugProcessSecurity` 实现端口供应商来警告用户附加到进程是不安全。  
   
 ## <a name="syntax"></a>语法  
   
@@ -43,14 +39,14 @@ IDebugProcessSecurity : IUnknown
 ## <a name="remarks"></a>备注  
  实现此接口可显示一条警告，并允许用户取消如果您将连接的过程可被视为不安全。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [端口](../../../extensibility/debugger/ports.md)   
  [端口供应商](../../../extensibility/debugger/port-suppliers.md)   
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   

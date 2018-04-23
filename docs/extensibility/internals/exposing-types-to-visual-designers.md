@@ -1,30 +1,28 @@
 ---
-title: "公开到可视化设计器的类型 |Microsoft 文档"
-ms.custom: 
+title: 公开到可视化设计器的类型 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
 - designers [Visual Studio SDK], exposing types
 - custom tools, exposing types to visual designers
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 28dcc17c74a5b5ef3c9784fafe972beb6f170d90
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-types-to-visual-designers"></a>公开到可视化设计器的类型
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必须有权类和类型定义在设计时为了显示可视化设计器中。 类将从一组预定义的包含完整的依赖项集的当前项目 （引用加上其依赖项） 的程序集加载。 此外可能有必要对可视化设计器的访问权限类和在自定义工具生成的文件中定义的类型。  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须有权类和类型定义在设计时为了显示可视化设计器中。 类将从一组预定义的包含完整的依赖项集的当前项目 （引用加上其依赖项） 的程序集加载。 此外可能有必要对可视化设计器的访问权限类和在自定义工具生成的文件中定义的类型。  
   
  [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]和[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]项目系统提供了支持访问生成的类和类型通过临时的可移植可执行文件 (临时 PEs)。 自定义工具生成的任何文件可以编译到临时程序集，以便可以从这些程序集加载类型，并将其公开给设计器。 每个自定义工具的输出会编译成单独的临时 PE，并是成功还是失败的此临时编译仅取决于可以编译生成的文件。 即使的项目可能不生成作为一个整体，单个临时 PEs 可能仍可供设计器。  
   
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
  自定义工具，它们利用临时 PE 支持必须遵循以下规则：  
   
--   `GeneratesDesignTimeSource`必须设置为 1 的注册表中。  
+-   `GeneratesDesignTimeSource` 必须设置为 1 的注册表中。  
   
      没有程序可执行文件编译将无此设置的位置。  
   
@@ -47,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
      编译临时 PE 后，向编译器提供的唯一源文件是自定义工具输出。 因此，使用临时 PE 的自定义工具必须生成可以独立于项目中的其他文件编译的输出文件。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [简介 BuildManager 对象](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [实现单个文件生成器](../../extensibility/internals/implementing-single-file-generators.md)   
  [注册单个文件生成器](../../extensibility/internals/registering-single-file-generators.md)
