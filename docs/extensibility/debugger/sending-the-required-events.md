@@ -2,26 +2,22 @@
 title: 发送所需的事件 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], required events
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
-caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2fa28a3429c52e3d4eb8b5fc9faefbd86ee04d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: deeffb814dacc58b1fb3a3f993203139d9b1a081
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sending-the-required-events"></a>发送所需的事件
 用于发送所需的事件使用此过程。  
@@ -42,5 +38,5 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  许多语言使用他们的代码开头的全局初始值设定项或外部的预编译的函数 （从的 CRT 库或 _Main）。 如果在调试程序的语言包含以下任一这些类型的元素之前的初始入口点，然后运行此代码并不会发送入口点事件的用户入口点时，如**主要**或`WinMain`，为止。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [启用要进行调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

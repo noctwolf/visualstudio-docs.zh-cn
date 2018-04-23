@@ -1,26 +1,24 @@
 ---
-title: "键表达式计算器接口 |Microsoft 文档"
-ms.custom: 
+title: 键表达式计算器接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, interfaces
 ms.assetid: 1cac9aa3-0867-4e12-a16e-1e90abbc0fb6
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1e0d655f18ec7ec50dffa52e3ac4ce363fb02fd3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: fe0c592c65e2c6ab7429cef44a830325a834ecdc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="key-expression-evaluator-interfaces"></a>键表达式计算器接口
 > [!IMPORTANT]
@@ -36,7 +34,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
-     具有[绑定](../../extensibility/debugger/reference/idebugbinder-bind.md)方法，获取包含符号的当前值的内存区域。 给定两个包含，所表示的方法[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象，并且符号自身，由表示[IDebugField](../../extensibility/debugger/reference/idebugfield.md)对象，`IDebugBinder::Bind`返回的符号值。 `IDebugBinder`通常由 DE 实现。  
+     具有[绑定](../../extensibility/debugger/reference/idebugbinder-bind.md)方法，获取包含符号的当前值的内存区域。 给定两个包含，所表示的方法[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象，并且符号自身，由表示[IDebugField](../../extensibility/debugger/reference/idebugfield.md)对象，`IDebugBinder::Bind`返回的符号值。 `IDebugBinder` 通常由 DE 实现。  
   
 -   [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
@@ -60,5 +58,5 @@ ms.lasthandoff: 12/22/2017
   
      此接口表示一个值和其类型，是表达式计算的结果。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [计算上下文](../../extensibility/debugger/evaluation-context.md)

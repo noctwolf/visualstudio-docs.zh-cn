@@ -1,26 +1,24 @@
 ---
-title: "表达式计算器实现策略 |Microsoft 文档"
-ms.custom: 
+title: 表达式计算器实现策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, implementation strategy
 - debug engines, implementation strategies
 ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 48b871eeccb5ff561ef4b95689f12a9f58302bc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e67b2496c2e30428cd4cc830526e53cf0cc61fdd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>表达式计算器实现策略
 > [!IMPORTANT]
@@ -31,8 +29,8 @@ ms.lasthandoff: 12/22/2017
 ## <a name="discussion"></a>讨论  
  可能的实现序列开头实现[IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)。 [分析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)和[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)方法需要实施要显示局部变量。 调用`IDebugExpressionEvaluator::GetMethodProperty`返回`IDebugProperty2`对象，表示的方法： 即[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)对象。 方法本身不会显示在**局部变量**窗口。  
   
- [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)应下一步实现方法。 调试引擎 (DE) 调用此方法来获取本地变量和自变量的列表传递`IDebugProperty2::EnumChildren``guidFilter`参数`guidFilterLocalsPlusArgs`。 `IDebugProperty2::EnumChildren`调用[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)和[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)，结合单个枚举中的结果。 请参阅[显示局部变量](../../extensibility/debugger/displaying-locals.md)有关详细信息。  
+ [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)应下一步实现方法。 调试引擎 (DE) 调用此方法来获取本地变量和自变量的列表传递`IDebugProperty2::EnumChildren``guidFilter`参数`guidFilterLocalsPlusArgs`。 `IDebugProperty2::EnumChildren` 调用[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)和[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)，结合单个枚举中的结果。 请参阅[显示局部变量](../../extensibility/debugger/displaying-locals.md)有关详细信息。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [实现表达式计算器](../../extensibility/debugger/implementing-an-expression-evaluator.md)   
  [显示局部](../../extensibility/debugger/displaying-locals.md)

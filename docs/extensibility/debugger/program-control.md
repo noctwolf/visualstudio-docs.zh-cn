@@ -1,27 +1,23 @@
 ---
-title: "控件编程 |Microsoft 文档"
-ms.custom: 
+title: 控件编程 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 244f6c2113aef3b3c3576288a0c403d702d8b17a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8c227f38c926cb6d764ddf47541b8bd744eb6f7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="program-control"></a>程序控件
 Visual Studio 中调试，所有以下单步执行和继续例程在级别上发生程序：  
@@ -52,5 +48,5 @@ Visual Studio 中调试，所有以下单步执行和继续例程在级别上发
   
  对于多线程程序中，你还必须实现[IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)方法和的所有方法[IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md)接口。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [执行控件和状态计算](../../extensibility/debugger/execution-control-and-state-evaluation.md)

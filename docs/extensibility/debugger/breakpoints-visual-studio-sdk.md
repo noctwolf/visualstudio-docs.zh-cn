@@ -1,27 +1,23 @@
 ---
-title: "断点 (Visual Studio SDK) |Microsoft 文档"
-ms.custom: 
+title: 断点 (Visual Studio SDK) |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints
 ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be8f0b36ebe57041e9d36b8f606bd5bddd0601bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 42f2efe2785f508bedb104e495309ed40fc6ce39
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>断点 (Visual Studio SDK)
 有三种类型的断点： 挂起绑定和错误。  
@@ -50,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
 -   由[IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)接口。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [程序](../../extensibility/debugger/programs.md)   
  [调试器概念](../../extensibility/debugger/debugger-concepts.md)   
  [代码上下文](../../extensibility/debugger/code-context.md)   

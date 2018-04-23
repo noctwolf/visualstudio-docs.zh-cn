@@ -1,27 +1,23 @@
 ---
-title: "调用调试器事件 |Microsoft 文档"
-ms.custom: 
+title: 调用调试器事件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a3870921fab82c92b57b9c64dd30bda109c3bcb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3960d464b1a6d44fb77eba23cd518fea1f2e5a39
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calling-debugger-events"></a>调用调试器事件
 在调试会话中的事件将按特定顺序发生。  
@@ -53,5 +49,5 @@ ms.lasthandoff: 12/22/2017
   
 12. [异常处理](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)

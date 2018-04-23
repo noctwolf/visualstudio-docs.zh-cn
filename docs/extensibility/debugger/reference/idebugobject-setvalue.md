@@ -2,28 +2,24 @@
 title: IDebugObject::SetValue |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugObject::SetValue
 helpviewer_keywords:
 - IDebugObject::SetValue method
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adb5987e8537938c5d6f6c6241cd466654bf4793
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ae6f8f589c0dca8c97e1a9664d9eaa93bf9e8741
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 设置对象的值从一系列连续的字节。  
@@ -57,6 +53,6 @@ int SetValue(
 ## <a name="remarks"></a>备注  
  数组中的值复制到此[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象，同时将替换任何现有值。 新值的大小可大于或小于的现有值。 这`IDebugObject`不能为 null 引用。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

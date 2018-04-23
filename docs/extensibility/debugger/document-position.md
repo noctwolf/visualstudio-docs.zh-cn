@@ -1,27 +1,23 @@
 ---
-title: "文档位置 |Microsoft 文档"
-ms.custom: 
+title: 文档位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9d447588f39e29957cf401c52b2716f34eeafaa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 10c2c3d50c9353caf14db18a22d93cc363903961
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-position"></a>文档位置
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试，**文档位置**:  
@@ -32,7 +28,7 @@ ms.lasthandoff: 12/22/2017
   
 -   由实现[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)接口。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [代码上下文](../../extensibility/debugger/code-context.md)   
  [文档上下文](../../extensibility/debugger/document-context.md)   
  [符号提供程序](../../extensibility/debugger/symbol-provider.md)   

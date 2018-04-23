@@ -1,27 +1,25 @@
 ---
-title: "将图标添加到菜单命令 |Microsoft 文档"
-ms.custom: 
+title: 将图标添加到菜单命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], adding to toolbars
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 06d90b5174cc9ff2d09d7ccba8b2f39bc1d2a077
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8591c55a176493ace23df2de61ba26d58a3155e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-icons-to-menu-commands"></a>将图标添加到菜单命令
 命令可以显示在菜单和工具栏上。 在工具栏上很常见的命令与只是一个图标 （以节省空间） 时在菜单上显示命令通常将出现并图标和文本。  
@@ -85,6 +83,6 @@ ms.lasthandoff: 12/22/2017
   
 8.  测试您的图标。 生成项目并启动调试。 在实验实例中，找到命令。 它应显示图标添加。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)   
  [VSCT XML 架构参考](../extensibility/vsct-xml-schema-reference.md)

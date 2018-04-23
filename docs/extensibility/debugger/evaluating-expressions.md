@@ -1,27 +1,25 @@
 ---
-title: "计算表达式 |Microsoft 文档"
-ms.custom: 
+title: 计算表达式 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK], evaluating
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 24cc20166bad875dcaebbd5492a7fe8317539d47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 47de275d63f5be1743408aa93c971dcff2959c25
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="evaluating-expressions"></a>计算表达式
 表达式是从字符串向下传递，从自动、 监视、 快速监视，或即时窗口中创建的。 计算表达式，则它会生成一个可打印字符串，包含的名称和类型的变量或自变量和其值。 此字符串显示在相应的 IDE 窗口中。  
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
  若要启用表达式求值，DE 必须实现[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)和[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)接口。 同步和异步评估要求实现[IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [堆栈帧](../../extensibility/debugger/stack-frames.md)   
  [表达式计算上下文](../../extensibility/debugger/expression-evaluation-context.md)   
  [调试任务](../../extensibility/debugger/debugging-tasks.md)

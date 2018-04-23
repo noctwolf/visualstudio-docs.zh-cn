@@ -1,27 +1,23 @@
 ---
-title: "附加到的程序直接 |Microsoft 文档"
-ms.custom: 
+title: 附加到的程序直接 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c528925e323e4cff5784365e3097cc7f5f414963
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6885cb0dea801ab95e2e88e3f8168c139fea0e0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="attaching-directly-to-a-program"></a>附加到的程序直接
 用户想要调试程序已在通常运行的过程中按照以下步骤：  
@@ -46,6 +42,6 @@ ms.lasthandoff: 12/22/2017
   
  第二个例外情况是，发送 DE 附加到已在运行的程序的启动事件未通常包括输入点事件。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [在启动之后发送启动事件](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
  [调试任务](../../extensibility/debugger/debugging-tasks.md)

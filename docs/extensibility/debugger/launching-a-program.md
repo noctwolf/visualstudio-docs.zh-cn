@@ -1,26 +1,24 @@
 ---
-title: "启动程序 |Microsoft 文档"
-ms.custom: 
+title: 启动程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5762b59a52cce2bf918c50630bbf82e176d9e82f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 714d751e9855b5567bf76ccd902fada727e14ba1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="launching-a-program"></a>启动程序
 想要调试的程序的用户可以按 f5 键以从 IDE 运行调试器。 该解决方案从开始一系列事件，最终导致 IDE 的连接到调试引擎 (DE)，后者反过来连接，或附加，到程序，如下所示：  
@@ -29,7 +27,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  如果指定 DE，DE 调用操作系统启动程序。 正在启动程序，因此加载程序的运行时环境。 例如，如果程序在 MSIL 中编写的公共语言运行时将调用以运行程序。  
   
-     或  
+     -或-  
   
      如果未指定 DE，端口调用操作系统启动程序，这会导致要加载的程序的运行时环境。  
   

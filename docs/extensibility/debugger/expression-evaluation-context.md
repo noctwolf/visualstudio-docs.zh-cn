@@ -1,27 +1,23 @@
 ---
-title: "表达式计算上下文 |Microsoft 文档"
-ms.custom: 
+title: 表达式计算上下文 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, context
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab4e57f500c2dfbfe673713c784cbc93ff52a73d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d1fade5bb18e59a1b9b9e2655ce01b0b5559484e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluation-context"></a>表达式计算上下文
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试，**表达式评估上下文**:  
@@ -34,6 +30,6 @@ ms.lasthandoff: 12/22/2017
   
      给定`BSTR`和[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)接口，可以创建调试引擎 (DE) [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)接口通过分析表达式。 给定`IDebugExpression2`接口，DE 可以获取一个值，通过同步或异步表达式计算。 显示的情况下，此值的名称和类型的变量或参数，以及发送到 IDE。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [表达式评估接口](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [调试器上下文](../../extensibility/debugger/debugger-contexts.md)

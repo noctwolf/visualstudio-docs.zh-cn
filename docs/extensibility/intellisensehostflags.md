@@ -1,30 +1,26 @@
 ---
-title: "IntelliSenseHostFlags |Microsoft 文档"
-ms.custom: 
+title: IntelliSenseHostFlags |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IntellisenseHostFlags
 helpviewer_keywords:
 - IntelliSense, IntellisenseHostFlags enumeration
 - IntellisenseHostFlags enumeration
 ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36cf7ba40deba4bd133f2c4baf92c310665ed275
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a096e79a64168f74150103a5f3ba3a8683fe184e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 指定 IntelliSense 主机标志。  
@@ -52,8 +48,8 @@ enum IntellisenseHostFlags
 |`IHF_FORCECOMMITTOCONTEXT`|与 `CanCommitIntoReadOnlyBuffer` 相同。|  
 |`IHF_OVERTYPE`|编辑 （使用者或上下文） 中时，应该在改写模式来完成。|  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  SingleFileeditor.idl  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

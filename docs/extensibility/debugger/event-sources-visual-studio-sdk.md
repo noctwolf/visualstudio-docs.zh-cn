@@ -1,27 +1,23 @@
 ---
-title: "事件源 (Visual Studio SDK) |Microsoft 文档"
-ms.custom: 
+title: 事件源 (Visual Studio SDK) |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd6acee81b2202500c9d84f5920cd4f1019a3b2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6d1dac50183422b6895f6496b7ca78d24312c33e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="event-sources-visual-studio-sdk"></a>事件源 (Visual Studio SDK)
 有两个源的事件： 调试管理器 (SDM) 进行的调试引擎 (DE) 和会话。 从 DE 发送的事件有一个非 NULL 引擎，而从 SDM 发送的事件有一个 NULL 引擎。  
@@ -78,5 +74,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
   
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [发送事件](../../extensibility/debugger/sending-events.md)

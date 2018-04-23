@@ -1,27 +1,25 @@
 ---
-title: "添加和删除属性页 |Microsoft 文档"
-ms.custom: 
+title: 添加和删除属性页 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
 - property pages, project subtypes
 - property pages, removing
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 98d6edf4da8b7f0275a7b361f5492f4f49a1f747
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8a8130056437bf35a1617544ae7d1ecfb9068946
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-and-removing-property-pages"></a>添加和删除属性页
 项目设计器提供集中管理项目属性、 设置和中的资源[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它显示为中的单个窗口[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 和包含大量的访问通过在左侧选项卡右侧的窗格。 项目设计器中 （通常称为属性页） 的窗格因项目类型和语言而异。 项目设计器可通过访问**属性**命令**项目**菜单。  
@@ -209,5 +207,5 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  本主题中提供的所有代码示例都是一个更大的示例中的部分[VSSDK 示例](http://aka.ms/vs2015sdksamples)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [项目子类型](../extensibility/internals/project-subtypes.md)

@@ -1,34 +1,32 @@
 ---
-title: "Getting Started with 调试器扩展性 |Microsoft 文档"
-ms.custom: 
+title: Getting Started with 调试器扩展性 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Debugging SDK
 - debugging [Debugging SDK], getting started
 - Debugging SDK, getting started
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 964b6bcc18e74174aa59e7a1bb4441e24d3918d7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 98d6e0200c1a68ae3819d3276ce8a04aaada2e78
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Getting Started with 调试器扩展性
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]提供必须具有创建和自定义使用调试程序中的调试器组件的信息[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]环境。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试具有添加派生自上以前测试执行的大量可用性的改进[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器。 你可以使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试单步执行的多语言应用程序中，也可以实现即时上调试应用程序和多语言解决方案时编辑的变量。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 调试具有添加派生自上以前测试执行的大量可用性的改进[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器。 你可以使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试单步执行的多语言应用程序中，也可以实现即时上调试应用程序和多语言解决方案时编辑的变量。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试执行的进程外与正在调试的程序，因此在应用程序的进程空间少受侵入。 因此，并更轻松地写入与调试器的交互的组件，而不会影响调试程序。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 调试执行的进程外与正在调试的程序，因此在应用程序的进程空间少受侵入。 因此，并更轻松地写入与调试器的交互的组件，而不会影响调试程序。  
   
  最大效用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，你应该熟悉以下：  
   

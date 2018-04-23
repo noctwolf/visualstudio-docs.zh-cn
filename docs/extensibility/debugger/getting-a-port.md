@@ -1,26 +1,24 @@
 ---
-title: "获取一个端口 |Microsoft 文档"
-ms.custom: 
+title: 获取一个端口 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - ports, getting
 - debugging [Debugging SDK], ports
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5f6065c91845df020325e279a1fa3858a4f75505
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6c20b3e3bdc2644e7af7d9a35de06af7f96d7680
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-a-port"></a>获取端口
 端口表示与在其运行进程的计算机的连接。 该计算机可以是本地计算机或远程计算机 (这无法可能运行非基于 Windows 的操作系统，请参阅[端口](../../extensibility/debugger/ports.md)有关详细信息)。  
@@ -100,7 +98,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 }  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [注册程序](../../extensibility/debugger/registering-the-program.md)   
  [启用要调试程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)   
  [端口供应商](../../extensibility/debugger/port-suppliers.md)   
