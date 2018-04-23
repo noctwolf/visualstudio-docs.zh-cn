@@ -1,12 +1,9 @@
 ---
-title: "在调试器中指定符号 (.pdb) 和源文件 |Microsoft 文档"
+title: 在调试器中指定符号 (.pdb) 和源文件 |Microsoft 文档
 ms.custom: H1Hack27Feb2017
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
 - VS.ToolsOptionsPages.Debugger.Symbols
@@ -27,16 +24,16 @@ helpviewer_keywords:
 - pdb files
 - debugger
 ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
-caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cbef364c316f51be8996e79f63a493b51e619f1e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b0a77ef00ee549006f9b4c6efb255c23543d6746
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件
 程序数据库 (.pdb) 文件，也称为符号文件，将在类、 方法和其他代码，以便在你的项目的已编译可执行文件中使用的标识符的源代码中创建的标识符映射。 .pdb 文件还可以将源代码中的语句映射到可执行文件中的执行指令。 调试器使用此信息来确定两个关键信息：
@@ -49,7 +46,7 @@ ms.lasthandoff: 12/22/2017
 > [!TIP]
 > 如果你想要你的项目源代码之外调试代码，如 Windows 代码或第三方代码项目调用，你必须指定.pdb （和 （可选） 的外部代码的源文件） 的位置，这些文件需要与 t 的内部版本完全匹配他可执行文件。  
  
-##  <a name="BKMK_Find_symbol___pdb__files"></a>调试器未在其中搜索符号文件？ 
+##  <a name="BKMK_Find_symbol___pdb__files"></a> 调试器未在其中搜索符号文件？ 
   
 1.  在 DLL 或可执行文件中指定的位置。  
   
@@ -69,14 +66,14 @@ ms.lasthandoff: 12/22/2017
 ##  <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> 为什么符号文件需要与可执行文件完全匹配？  
 调试器只会为可执行文件加载与该可执行文件生成之时所创建的 .pdb 文件完全匹配的 .pdb 文件（即该 .pdb 文件必须是原始 .pdb 文件或其副本）。 由于除了创建正确且高效的代码的主要任务之外，编译器的编译速度也得到了优化，因此可执行文件的实际布局可更改，即使代码本身未更改也是如此。 有关详细信息，请参阅 [为什么 Visual Studio 要求调试器符号文件必须与同时生成的二进制文件完全匹配？](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
   
-##  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>配置其中调试器查找符号文件和符号加载行为
+##  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> 配置其中调试器查找符号文件和符号加载行为
  调试 Visual Studio IDE 中的项目时，调试器将自动加载位于项目目录中的符号文件。 你可以指定可选搜索路径和符号 Microsoft、 Windows 或中的第三方组件服务器**工具 > 选项 > 调试 > 符号**。 你还可以指定您希望调试器自动加载的符号的特定模块。 之后，你可以在主动进行调试时手动更改这些设置。  
   
 1.  在 Visual Studio 中，打开**工具 > 选项 > 调试 > 符号**页。  
   
-     ![工具 &#45;选项 &#45;调试 &#45;符号页](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
+     ![工具&#45;选项&#45;调试&#45;符号页](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
   
-2.  选择的文件夹![工具和 #47;选项 &#47;调试和 #47;符号文件夹图标](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon")图标。 **“符号文件(.pdb)位置”** 框中将显示可编辑的文本。  
+2.  选择的文件夹![工具&#47;选项&#47;调试&#47;符号文件夹图标](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon")图标。 **“符号文件(.pdb)位置”** 框中将显示可编辑的文本。  
   
 3.  键入符号服务器或符号位置的 URL 或目录路径。 语句结束有助于找到正确的格式。
 
@@ -148,7 +145,7 @@ ms.lasthandoff: 12/22/2017
   
 -   若要更改搜索路径，请选择未选定的路径或选择 **“新建”** ，然后输入新路径。 选择 **“加载”** 以再次搜索路径，并在找到符号文件时加载符号文件。  
   
--   选择“浏览并查找 *executable-name***...** ”重写任何符号选项并重试搜索路径。 如果找到符号文件，或显示了文件资源管理器供你手动选择符号文件，则加载符号文件。  
+-   选择**浏览并查找***可执行文件名称***...**来重写任何符号选项并重试搜索路径。 如果找到符号文件，或显示了文件资源管理器供你手动选择符号文件，则加载符号文件。  
   
 -   选择**更改符号设置...**以显示**调试** > **符号**页的 VS 选项对话框。  
   
@@ -156,7 +153,7 @@ ms.lasthandoff: 12/22/2017
   
 -   若要在未找到源文件或符号文件的情况下始终显示反汇编，请选择 **“选项”** 对话框链接，然后选择 **“启用地址级调试”** 和 **“源代码不可用时显示反汇编”**。  
   
-     ![选项 &#47;调试和 #47;常规反汇编选项](../debugger/media/dbg_options_general_disassembly_checkbox.png "DBG_Options_General_disassembly_checkbox")  
+     ![选项&#47;调试&#47;常规反汇编选项](../debugger/media/dbg_options_general_disassembly_checkbox.png "DBG_Options_General_disassembly_checkbox")  
   
  **从快捷菜单更改符号选项**  
   
@@ -213,7 +210,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  模块的 .pdb 的源信息。 这可能是生成模块时源文件的位置，也可能是源服务器的命令。  
   
-###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a>查找并加载源文件使用 Source/No 未加载任何符号页  
+###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> 查找并加载源文件使用 Source/No 未加载任何符号页  
  当调试器在源文件不可用的位置中断执行时，它将显示 **“未加载任何源”** 或 **“未加载任何符号”** 页，这些页可帮助你查找源文件。 当调试器无法找到可执行文件的符号 (.pdb) 文件来完成搜索时，将显示 **“未加载任何符号”** 。 “无符号”页将提供用于搜索文件的选项。 如果在执行选项之一后找到 .pdb，并且调试器可以使用符号文件中的信息检索源文件，则将显示源。 否则，将显示描述问题的 **“未加载任何源”** 页。 此页将显示选项链接，这些链接可执行可以解决问题的操作。  
   
 ###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> 将源文件搜索路径添加到解决方案  
@@ -223,7 +220,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  在 **“公共属性”** 节点下，选择 **“调试源文件”**。  
   
-3.  单击文件夹![工具和 #47;选项 &#47;调试和 #47;符号文件夹图标](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon")图标。 可编辑文本将显示在 **“包含源代码的目录”** 列表中。  
+3.  单击文件夹![工具&#47;选项&#47;调试&#47;符号文件夹图标](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon")图标。 可编辑文本将显示在 **“包含源代码的目录”** 列表中。  
   
 4.  添加要搜索的路径。  
   

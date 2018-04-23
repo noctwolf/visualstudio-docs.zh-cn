@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio 中的自动功能挂起 |Microsoft 文档"
+title: Visual Studio 中的自动功能挂起
 ms.date: 11/04/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 - performance
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: d71960fb51d061e9c3ac9c165497582578a719ee
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: d7b3659716decd542980c1d4b69481b7064d4916
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="automatic-feature-suspension"></a>自动功能挂起
 

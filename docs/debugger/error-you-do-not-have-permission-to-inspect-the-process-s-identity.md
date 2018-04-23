@@ -1,29 +1,26 @@
 ---
-title: "错误： 您没有权限检查进程 &#39; s 标识 |Microsoft 文档"
-ms.custom: 
+title: 错误： 您没有检查进程权限&#39;s 标识 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.topic: troubleshooting
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f51087d4f7882c34826942a898328640107a5ac6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f37cf6f6a1a72435b549942fa03d821c900718a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>错误： 您没有权限检查进程 &#39; s 标识
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>错误： 您没有检查进程权限&#39;s 标识
 您没有检查进程标识的权限。 这可能是您系统的配置造成的。  
   
  调试器无法检查进程标识，而进程标识是调试的必备信息。 最有可能的原因是“终端服务”被禁用了。 默认情况下，“终端服务”服务是处于启用状态的。 您可按照以下步骤重新启用该服务。  
@@ -56,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  单击**启动**，然后右键单击**我的电脑**。  
   
-2.  选择**属性**。  
+2.  选择“属性”。  
   
      **系统属性**显示窗口。  
   

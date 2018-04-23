@@ -1,12 +1,9 @@
 ---
-title: "演练： 调试 Windows 窗体 |Microsoft 文档"
-ms.custom: 
+title: 演练： 调试 Windows 窗体 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -22,16 +19,16 @@ helpviewer_keywords:
 - Windows Forms, debugging
 - debugging Windows Forms, walkthroughs
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1d0ab1ccdf6f5365c04c4a7ee0cac8ce75ab5f17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b4e256aeef1a068ddc46d13e98b344bcce56d08b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>演练：调试 Windows 窗体
 Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标准的 Windows 应用程序。 你可以完成本演练使用 Visual Basic、 C# 或 c + +。  
@@ -90,7 +87,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
     textBox1->Text = "Button was clicked!";  
     ```  
   
-11. 上**生成**菜单上，选择**生成解决方案**。  
+11. 在“生成”菜单上，选择“生成解决方案”。  
   
      项目应顺利生成，没有错误。  
   

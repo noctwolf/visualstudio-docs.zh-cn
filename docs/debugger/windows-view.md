@@ -1,36 +1,31 @@
 ---
-title: "窗口视图 |Microsoft 文档"
-ms.custom: 
+title: 窗口视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
 helpviewer_keywords:
 - Windows view
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94aae2c271b0b9030d63597fe8100e8c8f2bccbe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f1379071a095f5ad1e0c28ec69ed813cb6212fff
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="windows-view"></a>窗口视图
 当你首次打开 Spy + + 时，Windows 视图将显示在系统中的所有 windows 和控件的树。 显示的窗口句柄和类名。 在当前的桌面窗口位于该树顶部。 所有其他 windows 桌面的子级，并根据标准的窗口层次结构列出。 同级窗口显示在其父下方缩进的可扩展列表。  
   
  下图显示的顶级节点，展开与典型的 Spy + + 窗口视图。  
   
- ![Spy &#43; &#43;窗口视图](../debugger/media/spy--_windowsview.png "Spy + + _WindowsView")  
+ ![Spy&#43; &#43; Windows 视图](../debugger/media/spy--_windowsview.png "Spy + + _WindowsView")  
 Spy++ 窗口视图  
   
  在当前的桌面窗口位于该树顶部。 所有其他 windows 桌面的子级和同级窗口按 Z 顺序排序列出根据标准的窗口层次结构。 您可以展开或折叠的树的任何父节点，通过单击 + 或-节点旁边的符号。  

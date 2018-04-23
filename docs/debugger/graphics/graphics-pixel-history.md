@@ -2,8 +2,7 @@
 title: 图形像素历史记录 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73e51108c4280d6e3ebf69000c9863610e4a25da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 9e0302e4b245a4fbf94d0eb49850101c404cd8a2
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-pixel-history"></a>图形像素历史记录
 Visual Studio 中的“图形像素历史记录”窗口可以帮助你了解，在游戏或应用的某个帧期间，Direct3D 事件如何对某一特定像素产生影响。  
@@ -76,6 +75,6 @@ Visual Studio 中的“图形像素历史记录”窗口可以帮助你了解，
 ### <a name="links-to-graphics-objects"></a>指向图形对象的链接  
  如果要了解像素历史记录中的图形事件，你可能需要了解事件发生时设备状态的有关信息或事件所引用的 Direct3D 对象的有关信息。 中的像素历史记录，每个事件**图形像素历史记录**提供了指向当时设备状态和相关对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 因而缺少对象设备状态](walkthrough-missing-objects-due-to-device-state.md)   
  [演练：调试因着色引起的呈现错误](walkthrough-debugging-rendering-errors-due-to-shading.md)

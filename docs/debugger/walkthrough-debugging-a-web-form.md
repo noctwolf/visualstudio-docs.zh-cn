@@ -1,12 +1,9 @@
 ---
-title: "演练： 调试 Web 窗体 |Microsoft 文档"
-ms.custom: 
+title: 演练： 调试 Web 窗体 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -22,16 +19,16 @@ helpviewer_keywords:
 - debugging ASP.NET Web applications, Web Forms
 - debugging [Visual Studio], Web Forms
 ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
-caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 842b52d063b5de701c74501410e3249da7358776
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 22fd6f033dd76e15311912256bc0597dfc3260c6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>演练：调试 Web 窗体
 本演练中的步骤向您演示如何调试 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序（也称为 Web 窗体）。 它演示如何启动和停止执行、 设置断点，和在中检查变量**监视**窗口。  

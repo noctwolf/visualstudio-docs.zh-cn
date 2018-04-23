@@ -1,25 +1,21 @@
 ---
-title: "图形帧分析 |Microsoft 文档"
-ms.custom: 
+title: 图形帧分析 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 9fe34c421d06fea1e4eefc064d344727382ca1d8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-frame-analysis"></a>图形帧分析
 使用 Visual Studio 图形分析器中的图形帧分析可分析并优化你的 Direct3D 游戏或应用的呈现性能。  
@@ -75,7 +71,7 @@ ms.lasthandoff: 02/01/2018
 #### <a name="timeline"></a>时间线  
  时间线显示彼此相关的绘图调用计时的概述。 因为较大的直条对应于较长的绘图时间，所以你可以使用它快速地定位帧中能耗最高的绘图调用。 当捕获的帧包含大量绘图调用时，多个绘图调用将合并到一个直条中，其长度为这些绘图调用的总和。  
   
- ![时间线显示绘图 &#45; 调用成本。] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![时间线显示绘图&#45;调用成本。] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  你可以释放直条上的指针，以查看该直条对应于哪个绘图调用事件。 选择该直条会使事件列表同步到该事件。  
   
@@ -137,7 +133,7 @@ ms.lasthandoff: 02/01/2018
   
  帧分析将重试次数限制为 10。 如果你的平台包含积极的电源管理或门控时钟，它可能会导致帧分析失败并报告错误，因为它已经超过了重试限制。 你也许可以通过将平台的电源管理和时钟速度重置以降低积极性来缓解此问题（如果平台启用了它）。  
   
-##  <a name="HardwareSupport"></a>硬件支持  
+##  <a name="HardwareSupport"></a> 硬件支持  
   
 ### <a name="timestamps-and-occlusion-queries"></a>时间戳和封闭查询  
  在支持帧分析的所有平台上都受支持的时间戳。 深度封闭查询（对于“封闭的像素”计数器是必需的）在支持功能级别 9.2 或更高级别的平台上均受支持。  
@@ -175,13 +171,13 @@ ms.lasthandoff: 02/01/2018
 ### <a name="warp"></a>WARP  
  帧分析旨在用于配置和提升真实硬件上的呈现性能。 不阻止在 WARP 设备上运行帧分析，但它通常不是值得做，因为在高端 CPU 上运行的 WARP 比甚至支持最少的现代 Gpu，速度慢，并且由于 WARP 的性能可能大大有所不同具体取决于特定的 CPU上运行它。  
   
-##  <a name="Variants"></a>变体  
+##  <a name="Variants"></a> 变体  
  每个帧分析对播放期间帧的呈现的方式的更改称为*变体*。 帧分析检查的变体对应于你为了提升应用的呈现性能或视觉质量可能做出的相对容易的常见更改，例如，减小纹理大小、使用纹理压缩或启用不同种类的抗锯齿。 这些变体将重写应用的常用呈现上下文和参数。 摘要如下：  
   
 |变体|描述|  
 |-------------|-----------------|  
 |**1x1 视口大小**|将所有呈现器目标上的视口尺寸缩小为 1x1 像素。<br /><br /> 有关详细信息，请参阅[1x1 视口大小变体](1x1-viewport-size-variant.md)|  
-|**0x MSAA**|在所有呈现器目标上禁用多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0x / 2 x / 4x msaa 变体](0x-2x-4x-msaa-variants.md)|  
+|**0 x MSAA**|在所有呈现器目标上禁用多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0x / 2 x / 4x msaa 变体](0x-2x-4x-msaa-variants.md)|  
 |**2x MSAA**|在所有呈现器目标上启用 2x 多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0x / 2 x / 4x msaa 变体](0x-2x-4x-msaa-variants.md)|  
 |**4x MSAA**|在所有呈现器目标上启用 4x 多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0x / 2 x / 4x msaa 变体](0x-2x-4x-msaa-variants.md)|  
 |**点纹理筛选**|针对所有相应的纹理采样，将筛选模式设置为 `DXD11_FILTER_MIN_MAG_MIP_POINT`（点纹理筛选）。<br /><br /> 有关详细信息，请参阅[点、 Bilinear、 Trilinear 和 Anisotropic 纹理过滤变体](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  

@@ -1,12 +1,8 @@
 ---
-title: "符号加载信息对话框 |Microsoft 文档"
-ms.custom: 
+title: 符号加载信息对话框 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.symbols.loadinfo
@@ -16,17 +12,16 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: 414580a0-175e-4a61-b82e-6755c8f7d208
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e945b39074c87e17634ee8b063306f9bd9991d
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 9cd9cca539a79e6779a3b886223d407db19b6e14
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="symbol-load-information-dialog-box"></a>“符号加载信息”对话框
 **符号加载信息**上右键单击时，对话框将打开**模块**窗口，然后选择**符号加载信息**。  

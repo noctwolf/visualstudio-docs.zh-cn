@@ -1,27 +1,24 @@
 ---
-title: "图形对象表 |Microsoft 文档"
-ms.custom: 
+title: 图形对象表 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.datavisualizer
 - vs.graphics.objecttable
 - vs.graphics.bufferviewer
 ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eb03ab88ca3d1d50b559cef87bfdf045a0a81319
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d58c219069efcc98fccaa52dff5bd156212ea64d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-object-table"></a>图形对象表
 Visual Studio 图形分析中的图形对象表可帮助你了解支持游戏或应用程序的帧的 Direct3D 对象。  
@@ -51,7 +48,7 @@ Visual Studio 图形分析中的图形对象表可帮助你了解支持游戏或
 |**宽度**|纹理对象的宽度。 不适用于其他对象类型。|  
 |**高度**|纹理对象的高度。 不适用于其他对象类型。|  
 |**深度**|三维纹理对象的深度。 如果纹理不是三维纹理，则这个值为 0。 不适用于其他对象类型。|  
-|**Mips**|纹理对象具有的 MIP 级别数。 不适用于其他对象类型。|  
+|**mips**|纹理对象具有的 MIP 级别数。 不适用于其他对象类型。|  
 |**ArraySize**|纹理数组中的纹理数。 范围是从 1 到当前功能级别由定义的上限。 对于多维数据集映射，此值是数组中的多维数据集映射数的 6 倍。|  
 |**示例**|每个像素的多样本数。|  
   

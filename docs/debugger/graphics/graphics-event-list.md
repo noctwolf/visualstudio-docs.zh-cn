@@ -1,27 +1,22 @@
 ---
-title: "图形事件列表 |Microsoft 文档"
-ms.custom: 
+title: 图形事件列表 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3640a1bbb06de7b05eeb62f847504690921b324
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-event-list"></a>图形事件列表
 使用 Visual Studio 图形分析器中的图形事件列表来浏览在呈现游戏或应用的帧时所记录的 Direct3D 事件。  
@@ -75,8 +70,8 @@ ms.lasthandoff: 12/22/2017
 |----------|-----------------------|  
 |（无图标）|常规事件<br /> 用户定义的事件、用户定义的事件组或绘图事件之外的任何事件。|  
 |![绘制事件图标](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|绘图事件<br /> 标记在捕获的帧期间发生的绘图事件。|  
-|![用户 &#45; 定义的事件标记图标](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|用户定义的事件组<br /> 与组相关的事件，由应用定义。|  
-|![用户 &#45; 定义的事件标记图标](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|用户定义的事件标记<br /> 标记特定位置，由应用定义。|  
+|![用户&#45;定义事件标记图标](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|用户定义的事件组<br /> 与组相关的事件，由应用定义。|  
+|![用户&#45;定义事件标记图标](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|用户定义的事件标记<br /> 标记特定位置，由应用定义。|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>标记应用中用户定义的事件  
  用户定义的事件特定于你的应用。 你可以使用它们，将发生在应用中的重要事件和图形事件列表中的事件关联起来。 例如，你可以创建用户定义的事件组来将相关事件（例如，呈现用户界面的事件）组织到组或层次结构中，以便你可以更加轻松地浏览事件列表，或者，你可以在绘制某种对象时创建标记，以便你可以在事件列表中轻松查找其图形事件。  
@@ -106,7 +101,7 @@ ms.lasthandoff: 12/22/2017
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
-##资源历史记录 Visual Studio 中 2017年并更高版本包含**资源历史记录**窗口。  选择监视图标![监视图标](media/gfx_watch.png)旁边将项记入**事件列表**窗口将显示**资源历史记录**窗口如下所示：
+## 资源历史记录 Visual Studio 中 2017年并更高版本包含**资源历史记录**窗口。  选择监视图标![监视图标](media/gfx_watch.png)旁边将项记入**事件列表**窗口将显示**资源历史记录**窗口如下所示：
 
 ![资源历史记录](media/gfx_diag_resource_history.png)
 

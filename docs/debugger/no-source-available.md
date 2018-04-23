@@ -1,13 +1,9 @@
 ---
-title: "无可用的源 |Microsoft 文档"
-ms.custom: 
+title: 无可用的源 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.nosource
 dev_langs:
@@ -18,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - No Source Code Available for the Current Location dialog box
 ms.assetid: ed0732bc-4b8c-490f-adb1-af06869a2a6b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a11770bc54a7b96aa918b73b34e0028731bf0f9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aae4b2428470e3e33477cfdb36699c2c1da20c1f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="no-source-available"></a>无可用的源
 你的项目不包含你尝试查看代码的源代码。 原因通常双击中没有源代码的模块**调用堆栈窗口**或**线程窗口**。 可以继续调试，但不能使用源窗口设置断点并在此位置执行其他操作。 如果你需要设置断点，使用**反汇编窗口**相反。  

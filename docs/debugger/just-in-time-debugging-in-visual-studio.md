@@ -2,8 +2,7 @@
 title: 如何： 响应中实时调试器 |Microsoft 文档
 ms.custom: ''
 ms.date: 05/23/17
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da0cad183aa39e26c39f48bca401194c9eab2f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c506e12fc8e6637e2b53852587e6a37c57cbf5ce
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>如何： 响应中实时调试器
 
@@ -49,5 +48,5 @@ ms.lasthandoff: 04/16/2018
 
     在 IIS 管理器中，右键单击服务器节点并选择**切换到功能视图**。 在 ASP.NET 部分中，选择**.NET 编译**并确保你选择**False**为 （步骤会有所不同，在较旧版本的 IIS） 的调试行为。
   
-## <a name="see-also"></a>另请参阅    
+## <a name="see-also"></a>请参阅    
  [调试器基础知识](../debugger/debugger-basics.md)   

@@ -2,8 +2,7 @@
 title: 如何： 在混合模式下调试 |Microsoft 文档
 ms.custom: ''
 ms.date: 06/19/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b39191422eeb4c808faf858fc1ef8abb9a0a41e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 09d18fec3e8d3830764846d1c25c9109b79b6fe4
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>How to: Debug in Mixed Mode
 以下过程描述如何调试托管代码和本机代码，这一过程也称作混合模式调试。 根据 DLL 或应用程序是否用本机代码编写，有两种方案可以用来进行调试：  
@@ -60,5 +59,5 @@ ms.lasthandoff: 04/16/2018
 
     ![启用本机代码调试](../debugger/media/dbg-mixed-mode-from-csharp.png "启用本机代码调试")
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)

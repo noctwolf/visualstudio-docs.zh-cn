@@ -2,8 +2,7 @@
 title: 字符串可视化工具中查看字符串 |Microsoft 文档
 ms.custom: ''
 ms.date: 07/11/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -23,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 637e046ff99bfaee01ec2484c784d69734ff5118
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: a3a0575b02422bf83dd560d3eae5724b0a50d3f3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>在 Visual Studio 中的字符串可视化工具中查看字符串
 虽然你进行调试，你可以打开到太长，在数据提示或调试器窗口中查看的查看字符串的字符串可视化工具。 在许多情况下，可视化工具可以帮助您标识格式不正确的字符串。
@@ -66,5 +65,5 @@ ms.lasthandoff: 04/16/2018
 
 ![HTML 字符串可视化工具](../debugger/media/dbg-string-visualizers-html.png "HTML 字符串可视化工具")
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建自定义可视化工具 （C#、 Visual Basic）](../debugger/create-custom-visualizers-of-data.md)

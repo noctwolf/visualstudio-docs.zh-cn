@@ -1,13 +1,9 @@
 ---
-title: "混合的模式调试支持对 x64 进程是仅当使用 microsoft.net Framework 4 或更高版本 |Microsoft 文档"
-ms.custom: 
+title: 混合的模式调试支持对 x64 进程是仅当使用 microsoft.net Framework 4 或更高版本 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_x64
 dev_langs:
@@ -16,17 +12,16 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: b7495655-54c0-4315-8422-43bf63b8c22e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d5c52192c30ccc3b34bfa609c3f6a7ffb99566
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5ceb332fab5e09fa4aaf57d3a89e20270643b705
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>仅当使用 Microsoft .NET Framework 4 或更高版本时，才支持对 x64 进程进行混合模式调试
 低于 4 的 .NET Framework 版本不支持对 x64 进程进行混合模式调试。 这意味着，当您进行调试时，无法从托管代码单步执行到本机代码，也无法从本机代码单步执行到托管代码。  
@@ -35,11 +30,11 @@ ms.lasthandoff: 12/22/2017
   
 -   更新项目，使其使用 Microsoft .NET Framework 4 或更高版本。  
   
-     或  
+     -或-  
   
      在单独的调试会话中调试托管代码和本机代码。  
   
-     或  
+     -或-  
   
      作为 32 位进程调试混合代码，如下面的过程所述。  
   

@@ -1,13 +1,9 @@
 ---
-title: "本机运行时检查自定义 |Microsoft 文档"
-ms.custom: 
+title: 本机运行时检查自定义 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
 dev_langs:
@@ -23,17 +19,16 @@ helpviewer_keywords:
 - customizing CRT error checking
 - native run-time checks, customizing
 ms.assetid: 76a365fe-6439-49db-8603-34058b78e5a8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9483983b6cbd5644827af8f647425cce61502ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5f07e2e2258190196ee001a19d79989ee58239ff
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="native-run-time-checks-customization"></a>本机运行时检查自定义
 使用编译**/RTC** （运行时检查） 或使用`runtime_checks`杂注，C 运行库提供了本机运行时检查。 某些情况下，可能需要自定义运行时检查：  

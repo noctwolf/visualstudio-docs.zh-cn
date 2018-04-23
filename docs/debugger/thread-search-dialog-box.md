@@ -2,26 +2,21 @@
 title: 线程搜索对话框 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Thread Search
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
-caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f6cf674581b4e4368aab87e7ddd6c64096efe5e
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 44ce2c01bc943945439e0682b9462f24c7d9c5fd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="thread-search-dialog-box"></a>“线程搜索”对话框
 使用此对话框来查找和选择的节点中的特定线程[线程视图](../debugger/threads-view.md)。 若要显示此对话框中，将焦点移至**线程**视图窗口。 然后选择**查找线程**从**搜索**菜单。  

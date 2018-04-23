@@ -1,10 +1,8 @@
 ---
-title: CA1058： 类型不应扩展某些基类型 |Microsoft 文档
-ms.custom: ''
+title: CA1058：类型不应扩展某些基类型
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - TypesShouldNotExtendCertainBaseTypes
 - CA1058
@@ -17,73 +15,73 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d7ec2767542db8e38d60198b5f00554897e4ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bd3461cae62f1d4b23f5afa22b0af67c78d41fc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058：类型不应扩展某些基类型
-|||  
-|-|-|  
-|TypeName|TypesShouldNotExtendCertainBaseTypes|  
-|CheckId|CA1058|  
-|类别|Microsoft.Design|  
-|是否重大更改|重大|  
-  
-## <a name="cause"></a>原因  
- 外部可见的类型扩展某些基类型。 目前，此规则将报告以下类型派生的类型：  
-  
--   <xref:System.ApplicationException?displayProperty=fullName>  
-  
--   <xref:System.Xml.XmlDocument?displayProperty=fullName>  
-  
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>  
-  
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>  
-  
--   <xref:System.Collections.Queue?displayProperty=fullName>  
-  
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>  
-  
--   <xref:System.Collections.SortedList?displayProperty=fullName>  
-  
--   <xref:System.Collections.Stack?displayProperty=fullName>  
-  
-## <a name="rule-description"></a>规则说明  
- 有关[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]版本 1，它建议派生新异常从<xref:System.ApplicationException>。 此建议已更改和新的异常应派生自<xref:System.Exception?displayProperty=fullName>或在其子类之一<xref:System>命名空间。  
-  
- 不创建的一个子类<xref:System.Xml.XmlDocument>如果你想要创建基础的对象模型或数据源的 XML 视图。  
-  
-### <a name="non-generic-collections"></a>非泛型集合  
- 使用和/或延长尽可能的泛型集合。 除非以前传送不会扩展在代码中，有非泛型集合。  
-  
- **不正确的用法的示例**  
-  
-```csharp  
-public class MyCollection : CollectionBase  
-{  
-}  
-  
-public class MyReadOnlyCollection : ReadOnlyCollectionBase  
-{  
-}  
-```  
-  
- **正确用法示例**  
-  
-```csharp  
-public class MyCollection : Collection<T>  
-{  
-}  
-  
-public class MyReadOnlyCollection : ReadOnlyCollection<T>  
-{  
-}  
-```  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，请从不同的基类型或泛型集合派生类型。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
+|||
+|-|-|
+|TypeName|TypesShouldNotExtendCertainBaseTypes|
+|CheckId|CA1058|
+|类别|Microsoft.Design|
+|是否重大更改|重大|
+
+## <a name="cause"></a>原因
+ 外部可见的类型扩展某些基类型。 目前，此规则将报告以下类型派生的类型：
+
+-   <xref:System.ApplicationException?displayProperty=fullName>
+
+-   <xref:System.Xml.XmlDocument?displayProperty=fullName>
+
+-   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+
+-   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+
+-   <xref:System.Collections.Queue?displayProperty=fullName>
+
+-   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+
+-   <xref:System.Collections.SortedList?displayProperty=fullName>
+
+-   <xref:System.Collections.Stack?displayProperty=fullName>
+
+## <a name="rule-description"></a>规则说明
+ 有关[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]版本 1，它建议派生新异常从<xref:System.ApplicationException>。 此建议已更改和新的异常应派生自<xref:System.Exception?displayProperty=fullName>或在其子类之一<xref:System>命名空间。
+
+ 不创建的一个子类<xref:System.Xml.XmlDocument>如果你想要创建基础的对象模型或数据源的 XML 视图。
+
+### <a name="non-generic-collections"></a>非泛型集合
+ 使用和/或延长尽可能的泛型集合。 除非以前传送不会扩展在代码中，有非泛型集合。
+
+ **不正确的用法的示例**
+
+```csharp
+public class MyCollection : CollectionBase
+{
+}
+
+public class MyReadOnlyCollection : ReadOnlyCollectionBase
+{
+}
+```
+
+ **正确用法示例**
+
+```csharp
+public class MyCollection : Collection<T>
+{
+}
+
+public class MyReadOnlyCollection : ReadOnlyCollection<T>
+{
+}
+```
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，请从不同的基类型或泛型集合派生类型。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止有关显示此规则，冲突的警告<xref:System.ApplicationException>。 则可以安全地禁止违反此规则的警告显示有关<xref:System.Xml.XmlDocument>。 则可以安全地禁止显示警告有关非泛型集合，如果以前发布的代码。

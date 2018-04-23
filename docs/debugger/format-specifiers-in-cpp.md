@@ -2,12 +2,8 @@
 title: 格式说明符在调试器 （c + +） |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -28,17 +24,16 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f8d9d2ecc00e0d29f39cb82dab997fb28704f518
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>在 c + + 在 Visual Studio 调试器中的格式说明符
 你可以使用格式说明符更改在“监视”  窗口中显示值所用的格式。  
@@ -76,18 +71,18 @@ int main() {
 |x<br /><br /> **h**|十六进制整数|102|0xcccccccc|  
 |X<br /><br /> **H**|十六进制整数|102|0xcccccccc|  
 |c|单个字符|0x0065, c|101 'e'|  
-|秒|const char * 字符串|\<location> "hello world"|"hello world"|  
-|**sb**|const char * 字符串 （无引号）|\<location> "hello world"|hello world|  
+|秒|const char * 字符串|\<位置 >"你好 world"|"hello world"|  
+|**sb**|const char * 字符串 （无引号）|\<位置 >"你好 world"|hello world|  
 |s8|UTF-8 字符串|\<位置 >"This is utf-8 咖啡 cup â˜•"|"This is utf-8 咖啡 cup ☕"|
-|**s8b**|Utf-8 字符串 （无引号）|\<location> "hello world"|hello world|  
-|su|Unicode （utf-16 编码） 字符串|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|  
-|sub|Unicode （utf-16 编码） 字符串 （无引号）|\<location> L"hello world"|hello world|  
-|bstr|BSTR string|\<location> L"hello world"|L"hello world"|  
+|**s8b**|Utf-8 字符串 （无引号）|\<位置 >"你好 world"|hello world|  
+|su|Unicode （utf-16 编码） 字符串|\<位置 > L"你好 world"|L"hello world"<br /><br /> u"hello world"|  
+|sub|Unicode （utf-16 编码） 字符串 （无引号）|\<位置 > L"你好 world"|hello world|  
+|bstr|BSTR string|\<位置 > L"你好 world"|L"hello world"|  
 |env|环境块 （双 null 结尾的字符串）|\<位置 > L"=:: =::\\\\"|L"=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
-|**s32**|UTF-32 string|\<location> U"hello world"|u"hello world"|  
-|**s32b**|UTF-32 string (no quotation marks)|\<location> U"hello world"|hello world|  
+|**s32**|UTF-32 string|\<位置 > U"你好 world"|u"hello world"|  
+|**s32b**|UTF-32 string (no quotation marks)|\<位置 > U"你好 world"|hello world|  
 |**en**|enum|Saturday(6)|星期六|  
-|**hv**|指针类型 - 指示被检查的指针值是数组的堆分配的结果，如 `new int[3]`。|\<location>{\<first member>}|\<位置 > {\<第一个成员 >，\<第二个成员 >，...}|  
+|**hv**|指针类型 - 指示被检查的指针值是数组的堆分配的结果，如 `new int[3]`。|\<位置 > {\<第一个成员 >}|\<位置 > {\<第一个成员 >，\<第二个成员 >，...}|  
 |**na**|取消指向对象的指针的内存地址。|\<位置 >，{成员 = value...}|{member=value...}|  
 |**nd**|仅显示基类信息，忽略派生的类|`(Shape*) square` 包括基类和派生类信息|仅显示基类信息|  
 |hr|HRESULT 或 Win32 错误代码。 （调试器自动将 HRESULT 解码，因此这些情况下不需要该说明符。）|S_OK|S_OK|  

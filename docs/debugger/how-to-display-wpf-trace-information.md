@@ -1,12 +1,9 @@
 ---
-title: "如何： 显示 WPF 跟踪信息 |Microsoft 文档"
-ms.custom: 
+title: 如何： 显示 WPF 跟踪信息 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,19 +13,19 @@ helpviewer_keywords:
 - WPF, debugging
 - debugging, WPF
 ms.assetid: be3c6859-06e1-459e-9fd0-46375b5f55ef
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e210d575b17552d7b5e4d6dc126335ff3711ee5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 99fc861c627a094f9f5e4e67a6b034ecdd407688
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-display-wpf-trace-information"></a>如何：显示 WPF 跟踪信息
-[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]可以接收来自 WPF 应用程序的调试跟踪信息以及显示在该信息**输出**窗口。 若要显示调试跟踪信息，必须启用 WPF 跟踪。  
+[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 可以接收来自 WPF 应用程序的调试跟踪信息以及显示在该信息**输出**窗口。 若要显示调试跟踪信息，必须启用 WPF 跟踪。  
   
  可以在 App.Config 文件中启用 WPF 跟踪，或通过使用 <xref:System.Diagnostics.PresentationTraceSources> 类以编程方式启用 WPF 跟踪。 若要启用 WPF 跟踪更简单的方法是使用**选项**窗口。 不支持针对 Web 应用程序的 WPF 跟踪。  
   

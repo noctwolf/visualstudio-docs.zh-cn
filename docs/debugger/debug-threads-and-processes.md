@@ -1,12 +1,9 @@
 ---
-title: "若要调试线程和进程的工具 |Microsoft 文档"
-ms.custom: 
+title: 若要调试线程和进程的工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 04/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - debugging threads
 - debugging [Visual Studio], threads
 ms.assetid: 9f0c8505-b6b2-452b-adfd-076db14d8115
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e6c6c8c239d27952c35486be308e5947aff50952
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f42159b15bbba4bd092dcde34404459212e26ab3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>若要调试线程和 Visual Studio 中的进程的工具
 *线程*和*进程*是在计算机科学中的相关的概念。 二者都表示必须按特定顺序执行的指令序列。 但是不同线程或进程中的指令可以并行执行。  

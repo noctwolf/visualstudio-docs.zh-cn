@@ -1,25 +1,20 @@
 ---
-title: "命令行捕获工具 |Microsoft 文档"
-ms.custom: 
+title: 命令行捕获工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4290ccb1184f658d04d6903520f709384e58e837
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: ddbce0e003f2825d76458146e1d2fe009a43709e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="command-line-capture-tool"></a>命令行捕获工具
 DXCap.exe 是一个用于图形诊断捕获和播放的命令行工具。 它在所有功能级别支持从 Direct3D 10 到 Direct3D 12 的所有版本。  
@@ -167,15 +162,15 @@ DXCap.exe -e map
  上面的命令枚举匹配"map"; 的 UWP 应用下面是输出：  
   
  **包"Microsoft.BingMaps":**  
- **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **名称： Microsoft.BingMaps**  
- **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **发布者： CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond、 S = 华盛顿，C = US**  
  **版本： 2.1.2914.1734**  
  **可启动应用程序：**  
  **Id: AppexMaps**  
- **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA： 否**  
  * * AppSpec （以启动）： **DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** 为每个枚举应用的输出的最后一行显示可用于从它捕获图形信息的命令。  
   
@@ -299,4 +294,4 @@ DXCap.exe -p regression_test_12.vsglog -toXML temp.xml
 </Method>  
 ```  
   
-## <a name="requirements"></a>惠?
+## <a name="requirements"></a>要求

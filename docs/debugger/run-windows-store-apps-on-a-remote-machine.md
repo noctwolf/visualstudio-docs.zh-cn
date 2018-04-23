@@ -1,28 +1,25 @@
 ---
-title: "在远程计算机上运行 UWP 应用 |Microsoft 文档"
-ms.custom: 
+title: 在远程计算机上运行 UWP 应用 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/05/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
-caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 2c09d29340584f3f6187175342fd1171dd59ba37
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Visual Studio 中的远程计算机上运行 UWP 应用
   
@@ -51,11 +48,11 @@ ms.lasthandoff: 01/19/2018
 > [!WARNING]
 >  没有无法保证网络安全身份验证模式设置为时**世界 （未加密的协议）**或**无**。 只有在确认网络不会遇到恶意通信的请选择这些模式。  
   
-##  <a name="BKMK_DirectConnect"></a>如何直接使用 USB 电缆进行连接 
+##  <a name="BKMK_DirectConnect"></a> 如何直接使用 USB 电缆进行连接 
 
 在 Windows 10 中，你可以部署到连接了 USB 的设备通过选择**设备**而不是**远程计算机**作为部署目标 (可以执行此操作**标准**工具栏或在调试属性页）。
 
-##  <a name="BKMK_ConnectVS"></a>配置远程调试的 Visual Studio 项目  
+##  <a name="BKMK_ConnectVS"></a> 配置远程调试的 Visual Studio 项目  
  可在项目的属性中指定所连接到的远程计算机。 该过程因编程语言而有所不同。 您可以键入远程设备的网络名称也可以选择从**远程连接**对话框。  
   
  ![选择远程调试器连接对话框](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/19/2018
 > [!TIP]
 >  如果连接到远程设备时遇到问题，则尝试访问设备的 IP 地址。 若要确定设备的 IP 地址，请打开命令窗口，然后键入 **ipconfig**。 随后将以 **IPv4 Address**为标题列出 IP 地址。  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a>选择 C# 和 Visual Basic 项目的远程设备  
+###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> 选择 C# 和 Visual Basic 项目的远程设备  
   
 1.  在解决方案资源管理器中选择项目名称，然后从快捷菜单中选择 **“属性”** 。  
   
@@ -77,7 +74,7 @@ ms.lasthandoff: 01/19/2018
 
     ![管理项目属性以便进行远程调试](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a>选择远程设备为 JavaScript 和 c + + 项目  
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 选择远程设备为 JavaScript 和 c + + 项目  
   
 1.  在解决方案资源管理器中选择项目名称，然后从快捷菜单中选择 **“属性”** 。  
   
@@ -87,19 +84,19 @@ ms.lasthandoff: 01/19/2018
   
 4.  在 **“计算机名称”** 框中输入远程设备的网络名称，或选择该框中的下箭头，从 **“选择远程调试器连接”** 对话框中选择该设备。  
 
-    ![C# 43; &#43;项目属性以便进行远程调试](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+    ![C&#43; &#43;项目属性以便进行远程调试](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
   
-## <a name="BKMK_download"></a>下载并安装远程工具 （预创建者更新）
+## <a name="BKMK_download"></a> 下载并安装远程工具 （预创建者更新）
 
 如果要将以前的创建者的更新版本的 Windows 10，然后按照这些说明。 否则，你可以跳过此部分。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>设置远程调试器
+### <a name="BKMK_setup"></a> 设置远程调试器
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]  
   
-##  <a name="BKMK_RunRemoteDebug"></a>启动远程调试会话  
+##  <a name="BKMK_RunRemoteDebug"></a> 启动远程调试会话  
  开始、停止和导航远程调试会话的方法与进行本地会话相同。 在以前的创建者的更新版本的 Windows 10 中，确保在远程设备上运行远程调试监视器。  
   
  然后在 **“调试”** 菜单上，选择 **“启动调试”** （键盘：F5）。 项目会重新编译，然后部署到远程设备上并启动。 调试器在断点暂停执行，以使您可进入逐语句执行、逐过程执行和跳出代码。 选择 **“停止调试”** 以结束调试会话并关闭远程应用程序。

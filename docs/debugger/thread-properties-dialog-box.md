@@ -1,26 +1,23 @@
 ---
-title: "线程属性对话框中 |Microsoft 文档"
-ms.custom: 
+title: 线程属性对话框中 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - Spy++, thread properties
 - thread properties, Spy++
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0abdebd821051d6821567c8a8ec87329868c6b28
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c6c64db60f7e8a7b8cc7f00157bf33ac38732416
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="thread-properties-dialog-box"></a>“线程属性”对话框
 使用此对话框可以查找有关特定线程详细信息。 若要显示此对话框中，将焦点移至[线程视图](../debugger/threads-view.md)窗口中或打开[消息视图](../debugger/messages-view.md)展开一条消息。 在树中，选择任何线程节点，然后选择**属性**从**视图**菜单。  

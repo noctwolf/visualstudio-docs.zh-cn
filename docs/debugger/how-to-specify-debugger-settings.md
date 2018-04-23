@@ -1,12 +1,9 @@
 ---
-title: "如何： 指定调试器设置 |Microsoft 文档"
-ms.custom: 
+title: 如何： 指定调试器设置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], debugger settings
 - options, debugging
 ms.assetid: ea172841-7fef-47bf-bd02-e7da4c3c7109
-caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d6cc67f446c2b7f6ee428184395ef0230864dc7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 489966bb3a596551e1b687f3dedac228171f7ebf
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-specify-debugger-settings"></a>如何：指定调试器设置
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可为调试器行为指定各种设置，包括如何显示变量，是否显示某些警告，如何设置断点以及中断如何影响正在运行的程序。 指定中的调试器设置**选项**对话框。  

@@ -1,27 +1,22 @@
 ---
-title: "图形管道阶段 |Microsoft 文档"
-ms.custom: 
+title: 图形管道阶段 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pipeline
 ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 393661fba27341ec858aa5c099ea9d131e42273a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c708320442c32158ef193ccf7f08669882135d82
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-pipeline-stages"></a>图形管道阶段
 “图形管道阶段”窗口可帮助了解 Direct3D 图形管道的每个阶段如何转换各个绘图调用。  

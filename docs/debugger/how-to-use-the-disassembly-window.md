@@ -1,13 +1,9 @@
 ---
-title: "在 Visual Studio 中的调试器中查看反汇编代码 |Microsoft 文档"
+title: 在 Visual Studio 中的调试器中查看反汇编代码 |Microsoft 文档
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -22,17 +18,16 @@ helpviewer_keywords:
 - Disassembly window
 - machine code
 ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c53f5404eb127f2f5eb9ec844024beafaad22e86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 46c0ae689a9d514983aeb747bebc6cb9905c6e11
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中查看反汇编代码
 仅当启用了地址级调试后提供了此功能**选项**对话框中，**调试**节点。 但对于脚本或 SQL 调试是不可用的。  

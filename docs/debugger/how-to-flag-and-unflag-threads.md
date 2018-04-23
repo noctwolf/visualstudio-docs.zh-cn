@@ -1,13 +1,9 @@
 ---
-title: "如何： 标记线程和取消标记线程 |Microsoft 文档"
-ms.custom: 
+title: 如何： 标记线程和取消标记线程 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - treads, switching [debugging]
 ms.assetid: 952d579d-6911-413e-b3e5-54e7e797e70c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 489403e4ce5052cb526a361e4548ab8823a20b18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 052c9d65e833152c0d3d3f67eda41742119eccaf
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>如何：标记线程和取消标记线程
 你可以标记一个线程你想要通过将其标记为图标中为提供特别注意**线程**，**并行堆栈**（线程视图），**并行监视**，和**GPU 线程**windows。 此图标有助于您和其他人将标记的线程与其他线程区别开来。  

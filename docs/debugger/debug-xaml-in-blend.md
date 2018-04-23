@@ -1,28 +1,25 @@
 ---
-title: "在 Blend 中调试 XAML |Microsoft 文档"
-ms.custom: 
+title: 在 Blend 中调试 XAML |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 8406f07b6f74211b4df873c7eae054e9ab67749c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: ebcf0508c5bc4d5788be1f7515604b5b4be228f1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中调试 XAML
 你可以使用 [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] 中的工具在应用中调试 XAML。 生成项目时，任何错误都显示在**结果**面板。 双击一个错误可找到与该错误相关的标记。 如果你需要更多的工作空间，可以隐藏**结果**通过按 F12 的面板。  
@@ -109,13 +106,13 @@ ms.lasthandoff: 12/22/2017
   
 1.  双击列表中的第一个错误。 此描述为“值‘<’在特性中无效”。 双击该错误时，指针会在代码中找到相应的位置。 `<` 前面的 `Button` 是有效的，但不是错误消息中建议的特性。 如果你查看上一个代码行，则会注意到特性 `Top` 的右引号缺失。 键入右引号。 请注意，中的错误列表**结果**面板更新以反映所做的更改。  
   
-2.  双击描述"'0' 无效名称的开头。" `Margin="0,149,0,0"`看上去正确。 但请注意，`Margin` 的颜色编码与代码中的其他 `Margin` 实例不匹配。 由于前面的名称/值对 (`VerticalAlignment="Top`) 中缺少右引号，因此 `Margin="` 将作为前面的特性值的一部分读取，而 0 将作为名称/值对的开头读取。 为 `Top` 键入右引号。 中的错误列表**结果**面板更新以反映所做的更改。  
+2.  双击描述"'0' 无效名称的开头。" `Margin="0,149,0,0"` 看上去正确。 但请注意，`Margin` 的颜色编码与代码中的其他 `Margin` 实例不匹配。 由于前面的名称/值对 (`VerticalAlignment="Top`) 中缺少右引号，因此 `Margin="` 将作为前面的特性值的一部分读取，而 0 将作为名称/值对的开头读取。 为 `Top` 键入右引号。 中的错误列表**结果**面板更新以反映所做的更改。  
   
 3.  双击剩余错误“结束 XML 标记‘Button’不匹配”。 指针位于结束**网格**标记 (`</Grid>`)，指示错误在`Grid`对象。 请注意，第二个 `Button` 对象缺少结束标记。 添加结束后`/`、**结果**面板列表会进行更新。 现在已纠正这些初始错误，并且已标识另外两个错误。  
   
 4.  双击“无法识别或访问成员‘content’”。 `c` 中的 `content` 应为大写。 将小写“c”替换为大写“c”。  
   
-5.  双击“‘http://schemas.microsoft.com/winfx/2006/xaml’命名空间中没有属性‘Mame’”。 “Mame”中的“M”应为“N”。 将“M”替换为“N”。 现在可以分析 XAML，应用程序将显示在设计图面上。  
+5.  双击"的属性 'Mame' 中不存在http://schemas.microsoft.com/winfx/2006/xaml命名空间。" “Mame”中的“M”应为“N”。 将“M”替换为“N”。 现在可以分析 XAML，应用程序将显示在设计图面上。  
   
      ![调试在 Blend for Visual Studio 中的 XAML](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")  
   

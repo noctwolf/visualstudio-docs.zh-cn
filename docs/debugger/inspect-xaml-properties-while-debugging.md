@@ -1,23 +1,20 @@
 ---
-title: "调试时检查 XAML 属性 |Microsoft 文档"
-ms.custom: 
+title: 调试时检查 XAML 属性 |Microsoft 文档
+ms.custom: ''
 ms.date: 03/06/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
-caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 40ff41cc6728244d11e93541057af1cb525c7af3
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: fcb2877a79afc310985102972d870caae560b393
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在调试时检查 XAML 属性
 你可以获取与你正在运行 XAML 代码的实时视图**实时可视化树**和**实时属性资源管理器**。 这些工具为你提供了正在运行的 XAML 应用程序的 UI 元素的树视图，并显示你选择的任何 UI 元素的运行时属性。  
@@ -93,7 +90,7 @@ private void button_Click(object sender, RoutedEventArgs e)
   
  **在运行的应用程序中显示布局装饰器**。 当选择“启用选择”按钮右侧紧靠的按钮时，可以启用此模式。 当**显示布局装饰器**处于打开状态，它将导致在应用程序窗口中显示所选对象的边界沿水平和垂直的行，以便你能够看到它与什么对齐，以及显示边距的矩形。 例如，将同时**启用选择**和**显示布局**，然后选择**添加项**应用程序中的文本块。 你应看到中的文本块节点**实时可视化树**和中的文本块属性**实时属性查看器**，以及的水平和垂直文本块边界上。  
   
- ![LivePropertyViewer in DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")  
+ ![在 DisplayLayout LivePropertyViewer](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer DisplayLayout")  
   
  **预览所选内容**。 你可以通过选择“实时可视化树”工具栏上从左侧起第三个按钮来启用此模式。 如果你有访问该应用程序的源代码的权限，则此模式将在声明元素处显示 XAML。 选择**启用选择**和**预览所选内容**，然后在测试应用程序中选择按钮。 MainWindow.xaml 文件在 Visual Studio 中打开并且光标放置在定义按钮的行上。  
   

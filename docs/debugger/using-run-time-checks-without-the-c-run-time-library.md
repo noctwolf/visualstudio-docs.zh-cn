@@ -1,13 +1,9 @@
 ---
-title: "使用无 C 运行库运行时检查 |Microsoft 文档"
-ms.custom: 
+title: 使用无 C 运行库运行时检查 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.runtime
 dev_langs:
@@ -24,17 +20,16 @@ helpviewer_keywords:
 - run-time checks, /RTC option
 - debugging [Visual Studio], run-time routines
 ms.assetid: 30ed90f3-9323-4784-80a4-937449eb54f6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc81dd57ca6a91cd748da82c792c2bbeca88bb25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 533e4254b6222af1713691a0c448cad1383cd273
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>使用无 C 运行库的运行时检查
 如果链接程序而不 C 运行时库，使用**/NODEFAULTLIB**，并想要使用运行时检查，则必须链接 runtmchk.lib。  

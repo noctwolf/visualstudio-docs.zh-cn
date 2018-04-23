@@ -2,11 +2,7 @@
 title: 编辑并继续错误消息对话框 |Microsoft 文档
 ms.custom: ''
 ms.date: 06/22/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -19,17 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - Edit and Continue Error Message dialog box
 ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
-caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01cd34aacb4abea5f2f3ce29fcb53ba34aaeaf21
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 5b521eafcc62a49f2dd2a4c327158070bdbe62ce
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>“编辑并继续”错误消息对话框
 当在支持编辑并继续的语言中进行调试时，会出现此对话框但**编辑并继续**不可用于所做的代码更改的类型。 此框中的错误消息提供了更加详细的说明。 此对话框出现的可能原因包括：  

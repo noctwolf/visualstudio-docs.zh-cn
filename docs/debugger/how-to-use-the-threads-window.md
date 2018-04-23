@@ -1,13 +1,9 @@
 ---
-title: "调试多线程应用程序使用线程窗口 |Microsoft 文档"
+title: 调试多线程应用程序使用线程窗口 |Microsoft 文档
 ms.custom: H1HackMay2017
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +13,16 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 367bade1041012670ae47937c21be42e38157dca
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 09fccc98f52c80a00c2c6a215742ae25b2fc7a4d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>演练： 调试多线程应用程序在 Visual Studio 中使用线程窗口
 Visual Studio 提供**线程**窗口和其他用户界面元素，以帮助你调试多线程应用程序。 本教程演示如何使用**线程**窗口和**调试位置**工具栏。 有关其他工具的信息，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 本教程只需几分钟，但完成它将使您熟悉用于调试多线程应用程序的功能。   
@@ -215,7 +210,7 @@ Visual Studio 提供**线程**窗口和其他用户界面元素，以帮助你�
   
      内容**调用堆栈**窗口已更改。 
 
-## <a name="bkmk_freeze"></a>冻结和解冻线程执行 
+## <a name="bkmk_freeze"></a> 冻结和解冻线程执行 
 
 你可以冻结和解冻 （挂起和恢复） 线程控制，线程执行工作的顺序。 这可以帮助你解决并发问题，例如死锁和争用条件。
 

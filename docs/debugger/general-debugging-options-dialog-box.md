@@ -2,8 +2,7 @@
 title: 调试，常规选项对话框 |Microsoft 文档
 ms.custom: ''
 ms.date: 05/23/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -24,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce77ce26e4eadfba97ca47c95fea502825fabc41
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: b153f5e411cabc8975ad1a2dca1ed212372b63ee
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“常规”
 **工具 > 选项 > 调试 > 常规**页，可以设置以下选项：  
@@ -199,6 +198,6 @@ ms.lasthandoff: 04/16/2018
   
 因为新的调试引擎不支持计算 .NET C++ 表达式，因此应在调试 .NET C++ 代码时使用此选项。 但是，启用本机兼容模式会禁用依赖于当前调试器实现来操作的许多功能。 例如，旧引擎缺少很多可视化工具内置类型等`std::string`Visual Studio 2015 项目中。   请在这些情况下使用 Visual Studio 2013 项目以便获得最佳的调试体验。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)

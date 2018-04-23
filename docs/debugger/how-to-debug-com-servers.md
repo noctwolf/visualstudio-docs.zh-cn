@@ -2,8 +2,7 @@
 title: 如何： 调试 COM 服务器 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -25,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec74da221add5f7cc6c59014617ceec1593fdd9c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 87d5bedd98aed5ab7bddc7027eaac9e7678d533c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-com-servers"></a>如何：调试 COM 服务器
 调试 COM 服务器应用程序会引起一系列不总是容易解决的独特问题。  
@@ -44,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  启动容器应用程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)   
  [如何： 调试 COM 客户端和服务器使用 RPC 调试](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [COM 服务器和容器调试](../debugger/com-server-and-container-debugging.md)   

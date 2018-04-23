@@ -2,8 +2,7 @@
 title: 如何： 测试和调试可视化工具 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6189abf72a8459618a83a4e5b12d5c3edb1b6a52
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 860d6bd5f89ff85f3abf75f1beceb62b6b860d54
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>如何：测试和调试可视化工具
 编写完可视化工具后，需要对其进行调试和测试。  
@@ -55,7 +54,7 @@ ms.lasthandoff: 04/16/2018
   
      有关更完整示例，请参阅[演练： 在 C# 中编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [如何： 安装可视化工具](../debugger/how-to-install-a-visualizer.md)   
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)

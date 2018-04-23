@@ -1,27 +1,22 @@
 ---
-title: "如何： 搜索线程视图中的线程 |Microsoft 文档"
-ms.custom: 
+title: 如何： 搜索线程视图中的线程 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - threads, searching
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6aa48e8a83263ed31a36c97020a0f495a7a50f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b5eee67e195821f89dbd820f930288eb24f20a11
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>如何：在线程视图中搜索线程
 可以通过将其线程 ID 或模块字符串用作搜索条件来搜索特定线程在线程视图中。 你还可以指定搜索的初始方向。 在对话框中的字段将显示所选线程的属性的线程树中。  

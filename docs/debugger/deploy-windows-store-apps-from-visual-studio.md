@@ -1,27 +1,24 @@
 ---
-title: "Visual Studio 中的 UWP 应用部署 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 中的 UWP 应用部署 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: fda8e9b09fadfb57145331b1fc09acc1687e58e7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio 中的 UWP 应用部署
   
@@ -39,7 +36,7 @@ ms.lasthandoff: 01/19/2018
   
 -   部署由另一个应用或方法启动时将进行调试的应用。
   
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>如何部署的 UWP 应用  
+##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何部署的 UWP 应用  
  手动部署应用是一个非常简单的过程：  
   
 1.  如果你要部署到远程设备，请在应用的启动项目的属性项目页中指定设备的名称或 IP 地址。 （执行此操作的步骤在本主题靠后的位置列出)。  
@@ -81,7 +78,7 @@ ms.lasthandoff: 01/19/2018
   
  **在 JavaScript 或 Visual C++ 项目页中指定远程设备**  
   
- ![C# 43; &#43;项目属性以便进行远程调试](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
+ ![C&#43; &#43;项目属性以便进行远程调试](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
   
 1.  从 **“要启动的调试器”** 列表中选择 **“远程调试器”** 。  
   

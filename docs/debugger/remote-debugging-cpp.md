@@ -1,13 +1,9 @@
 ---
-title: "远程调试 Visual c + + 项目 |Microsoft 文档"
+title: 远程调试 Visual c + + 项目 |Microsoft 文档
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fb8230c2a70cf98a20993db930ddc1d494e989d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 334a0b964033282458c211d69af30aad20dbd6bc
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>远程调试 Visual Studio 中的 Visual c + + 项目
 若要调试 Visual Studio 应用程序的其他计算机上，安装，并在计算机上运行远程工具将在其中部署您的应用程序配置你的项目，以从 Visual Studio 中，连接到远程计算机然后部署并运行你的应用。
@@ -36,7 +31,7 @@ ms.lasthandoff: 01/10/2018
 
 有关远程调试通用 Windows 应用 (UWP) 的信息，请参阅[调试安装的应用程序包](debug-installed-app-package.md)。
 
-## <a name="requirements"></a>惠?
+## <a name="requirements"></a>要求
 
 远程调试器都支持 Windows 7 和更高版本 (不 phone) 和从 Windows Server 2008 Service Pack 2 的 Windows Server 版本。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
@@ -50,14 +45,14 @@ ms.lasthandoff: 01/10/2018
 > [!TIP]
 > 在某些情况下，它可以从文件共享运行远程调试器方式效率最高。 有关详细信息，请参阅[从文件共享运行远程调试器](../debugger/remote-debugging.md#fileshare_msvsmon)。
   
-## <a name="BKMK_setup"></a>设置远程调试器
+## <a name="BKMK_setup"></a> 设置远程调试器
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > 如果你需要添加其他用户的权限更改身份验证模式中，或者远程调试器端口号，请参阅[配置远程调试器](../debugger/remote-debugging.md#configure_msvsmon)。
 
-## <a name="remote_cplusplus"></a>远程调试 Visual c + + 项目  
+## <a name="remote_cplusplus"></a> 远程调试 Visual c + + 项目  
  在下面的过程的名称和路径的项目是 C:\remotetemp\MyMfc，和远程计算机的名称是**MJO DL**。  
   
 1.  创建 MFC 应用程序名为**mymfc。**  
@@ -72,7 +67,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  对属性进行以下更改：  
   
-    |设置|“值”|
+    |设置|值|
     |-|-|  
     |远程命令|C:\remotetemp\mymfc.exe|  
     |工作目录|C:\remotetemp|  
@@ -96,7 +91,7 @@ ms.lasthandoff: 01/10/2018
   
 10. 如果出现提示，输入用于连接到远程计算机的网络凭据。  
   
-     特定于你的网络安全配置所需的凭据。 例如，在域计算机上，可能会选择一个安全证书或输入你的域用户名和密码。 在非域计算机上，你可以输入计算机名和有效的用户帐户名称，如 **MJO-DL\name@something.com** ，以及正确的密码。  
+     特定于你的网络安全配置所需的凭据。 例如，在域计算机上，可能会选择一个安全证书或输入你的域用户名和密码。 在非域计算机上，你可以输入计算机名和有效的用户帐户名称，如**MJO-DL\name@something.com**，以及正确的密码。  
   
 11. 在 Visual Studio 计算机上，你应看到在断点处已停止执行。  
   

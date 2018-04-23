@@ -2,8 +2,7 @@
 title: 编辑并继续 （Visual c + +） |Microsoft 文档
 ms.custom: ''
 ms.date: 05/31/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 107014740c9d976be65fb2a268723184a9134868
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 5d5195dd92e53a6657747758c03c87ee5463c1d5
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 可以使用 Visual C++ 项目中的“编辑并继续”。 请参阅[支持代码更改 （c + +）](../debugger/supported-code-changes-cpp.md)有关限制的编辑并继续的信息。
@@ -81,5 +80,5 @@ ms.lasthandoff: 04/16/2018
   
  在这种情况下，调试器会继续执行原始代码，直至可以应用更改。 陈旧的代码在单独的源窗口中作为临时源文件窗口显示，并带有一个类似 `enc25.tmp`的标题。 编辑过的源继续在原始源窗口中显示。 当您尝试编辑陈旧的代码时，会显示一条警告信息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [受支持的代码更改 (C++)](../debugger/supported-code-changes-cpp.md)

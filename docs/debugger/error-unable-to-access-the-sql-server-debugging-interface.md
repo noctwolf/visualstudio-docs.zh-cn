@@ -1,13 +1,9 @@
 ---
-title: "错误： 无法访问 SQL Server 调试界面 |Microsoft 文档"
-ms.custom: 
+title: 错误： 无法访问 SQL Server 调试界面 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlde_debugging_not_enabled
 dev_langs:
@@ -16,17 +12,16 @@ dev_langs:
 - FSharp
 - C++
 - SQL
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d288a1697afcc4ed5bcf315c30c66e2d87c0a0d3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 338c2e0ab90fe6f518ad853dd6d4a0106c4af8b3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>错误：无法访问 SQL Server 调试界面
 当在未启用 SQL 调试的计算机上尝试 SQL 调试时，此消息会出现。  

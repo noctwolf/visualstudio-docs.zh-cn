@@ -1,12 +1,9 @@
 ---
-title: "如何： 为调试指定.NET Framework 版本 |Microsoft 文档"
-ms.custom: 
+title: 如何： 为调试指定.NET Framework 版本 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - .NET Framework, specifying version for debugging
 - debugging [Visual Studio], specifying .NET Framework version
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 69fa33ac76f39f7f37cc9aa84d61fd3cf7b0fe45
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 2cb8da54b53814e7f044c67855e8071c627cf2e1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>如何：指定用于调试的 .NET Framework 版本
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 调试器支持调试 Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的早期版本和当前版本。 如果从 Visual Studio 中启动应用程序，调试器始终可以标识的正确版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]正在调试的应用程序。 如果已在运行应用程序并使用**将附加到**，调试器可能始终无法识别的较旧版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 如果发生这种情况，您将收到一条错误消息，指出：  
