@@ -2,8 +2,7 @@
 title: IDiaEnumFrameData |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 254a7995261009f832d3ceb0f16bd3ddb9628d21
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: c39057a77da9b459852e0b591ea8d69186ee6f8d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 枚举中的数据源包含的各种帧数据元素。  
@@ -109,7 +108,7 @@ void ShowFrameData(IDiaSession *pSession)
   
  **DLL:** msdia80.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [接口 （调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

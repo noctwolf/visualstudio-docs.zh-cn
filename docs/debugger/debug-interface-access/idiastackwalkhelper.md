@@ -1,29 +1,24 @@
 ---
-title: "IDiaStackWalkHelper |Microsoft 文档"
-ms.custom: 
+title: IDiaStackWalkHelper |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaStackWalkHelper2 interface
 ms.assetid: d66e5c84-565d-494e-8486-f91db9a34548
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cbd88bbe3e8a752721047ee80d847e72cf115b9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1dac563f99697a8e43b5f7db9831e075c0ed7087
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 便于审核堆栈使用程序调试数据库 (.pdb) 文件。  
@@ -57,7 +52,7 @@ IDiaStackWalkHelper: IUnknown
 ## <a name="notes-for-callers"></a>调用方的说明  
  客户端应用程序实现此接口以支持在程序执行期间审核堆栈。 此接口的实例传递给[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)或[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)方法。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： Dia2.h  
   
  库： diaguids.lib  

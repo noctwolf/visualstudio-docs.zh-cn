@@ -2,8 +2,7 @@
 title: 编译单位 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6420c235098414d09de2f0c269ebf85333d5c1f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 6236a585c635ed62f8316191940899dc60a89c03
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="compiland"></a>编译单位
 还有一个`SymTagCompiland`符号将每个编译单位链接到的.exe 文件。 编译单位信息拆分之间具有符号`SymTagCompiland`标记，可检索而无需加载其他编译单位符号和符号与`SymTagCompilandDetails`标记，这可能需要加载其他符号。  
@@ -39,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|索引 ID 的符号。|  
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返回`SymTagCompiland`(之一[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)值)。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)   
  [CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)   
  [符号类型的词法层次结构](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

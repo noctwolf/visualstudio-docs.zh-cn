@@ -2,8 +2,7 @@
 title: IDiaSymbol::get_numberOfColumns |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 437edf507227ac5e10e478cb093495e1f309a0ee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 4d01c4e3c13168ebf36e24388986b1c86cfe6f92
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetnumberofcolumns"></a>IDiaSymbol::get_numberOfColumns
 检索矩阵中的列的数。  
@@ -36,5 +35,5 @@ HRESULT get_numberOfColumns(
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

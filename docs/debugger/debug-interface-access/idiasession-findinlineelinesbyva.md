@@ -1,27 +1,22 @@
 ---
-title: "IDiaSession::findInlineeLinesByVA |Microsoft 文档"
-ms.custom: 
+title: IDiaSession::findInlineeLinesByVA |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: dffe6594-e0d1-4ed5-aeea-8773f88d82a6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9deb36ed20ad57e08e62f6c4972e9eb650705c23
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bfbe97837e377f79e81368e55b0f02823cd6f7f2
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
 检索一个枚举，允许客户端循环访问的行号信息的所有函数的内联，直接或间接地，由指定的父符号和都包含在指定的虚拟地址 (VA)。  

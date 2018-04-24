@@ -2,8 +2,7 @@
 title: 'Idiasymbol:: Get_container |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 597d88bc35952189cce8b1aadf3d57c289d16d40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: e4a04a505b694d5ed4081b12a39815256ed68d3e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 此函数可检索为表示此符号父/容器符号的指针。  
@@ -49,5 +48,5 @@ HRESULT get_container(
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

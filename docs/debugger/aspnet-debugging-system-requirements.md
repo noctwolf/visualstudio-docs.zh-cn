@@ -2,8 +2,7 @@
 title: ASP.NET 调试： 系统要求 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: d928b290a4156df07baa2a1bb88009853a7916cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: a0d591c9f68e5331b2047ee749fff148c8844937
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 调试：系统要求
 本主题描述了 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 调试方案的软件和安全性要求：  
@@ -53,6 +52,6 @@ ms.lasthandoff: 04/16/2018
 > [!CAUTION]
 >  在将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程更改为使用其他帐户运行之前，应考虑如果 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程在使用该帐户运行时会受到攻击，将可能出现哪些后果。 ASPNET 和 NETWORK SERVICE 用户帐户以最低的权限运行，从而降低了进程受到攻击时可能造成的损坏程度。 如果必须将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程更改为使用具有较高权限的帐户运行，则会增大受损的可能性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 ASP.NET 应用程序](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
  [如何：在用户帐户下运行辅助进程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

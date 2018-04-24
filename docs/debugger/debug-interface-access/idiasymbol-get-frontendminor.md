@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_frontendminor |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_frontendminor |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_frontEndMinor method
 ms.assetid: 40792153-827c-4859-be7c-6aa16d5abab6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f276239d76f02b9db68f7acacc52e693056f061
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b020762aecbe25b58759777b1a72b42c71e3600b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
 检索前端次版本号。  
@@ -51,7 +46,7 @@ HRESULT get_frontEndMinor (
   
  前端或后端版本号由三个部分组成：\<主要 >。\<次要 >。\<生成 >，其中\<主要 > 是的主要版本号，\<次要 > 是的次要版本号，和\<生成 > 是的生成号。 例如，13.10.3077。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
   
 |需求|描述|  
 |-----------------|-----------------|  

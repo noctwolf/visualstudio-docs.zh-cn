@@ -2,8 +2,7 @@
 title: 配置防火墙以允许进行远程调试对话框 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.firewallconfiguration
@@ -23,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8a3bef8a355b27fd5a566ccef7ac1a96223f119
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 982e677639cec6a98ae3aafe3d0ae624df588ccd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>“为远程调试配置防火墙”对话框
 当 Windows 防火墙阻止调试器在网络上接收信息时，会出现此对话框。 若要继续进行远程调试，您必须在防火墙上打开一个口以使调试器能够接收信息。  
@@ -45,7 +44,7 @@ ms.lasthandoff: 04/16/2018
  **取消阻止从任何计算机的远程调试**  
  启用网络上任何位置的计算机的远程调试。 此设置是最不安全的。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [远程调试](../debugger/remote-debugging.md)  
  [调试用户界面参考](../debugger/debugging-user-interface-reference.md)

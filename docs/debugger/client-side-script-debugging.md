@@ -2,8 +2,7 @@
 title: 客户端脚本调试 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6db58ee98ffded99ac9eeaa790f9f255842b5905
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: f31897cc4fb48fd7c814d4d25cb41ce0cb7e57da
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="client-side-script-debugging"></a>客户端脚本调试
 Visual Studio 调试器提供了一个全面的调试环境，以便查找和更正 ASP.NET 页上客户端脚本中的错误。  
@@ -61,7 +60,7 @@ Visual Studio 调试器提供了一个全面的调试环境，以便查找和更
   
  [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)中打开任何脚本文档。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 ASP.NET 和 AJAX 应用程序](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [脚本调试的限制](../debugger/limitations-on-script-debugging.md)   
  [变量窗口](../debugger/debugger-windows.md)   

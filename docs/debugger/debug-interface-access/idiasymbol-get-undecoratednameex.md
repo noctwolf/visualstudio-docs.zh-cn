@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_undecoratednameex |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_undecoratednameex |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_undecoratedNameEx method
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d0b25b2306cc957015ec4c205a22cd44660357
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 078826c799cf99cadd1812ff88dc29663a759baf
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 检索部分或全部 c + + 的未修饰名称修饰 （链接） 名称。  
@@ -59,7 +54,7 @@ HRESULT get_undecoratedNameEx(
 |Flag|值|描述|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|启用完全 undecoration。|  
-|UNDNAME_NO_LEADING_UNDERSCORES|从 0x0001|从 Microsoft 扩展关键字前导下划线的删除。|  
+|UNDNAME_NO_LEADING_UNDERSCORES|0x0001|从 Microsoft 扩展关键字前导下划线的删除。|  
 |UNDNAME_NO_MS_KEYWORDS|0x0002|禁用扩展的 Microsoft 扩展关键字。|  
 |UNDNAME_NO_FUNCTION_RETURNS|0x0004|禁用扩展的主声明返回类型。|  
 |UNDNAME_NO_ALLOCATION_MODEL|0x0008|禁用的声明模型的扩展。|  

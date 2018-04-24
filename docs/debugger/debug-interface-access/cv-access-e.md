@@ -2,8 +2,7 @@
 title: CV_access_e |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cd11b7d72e84eb773a833414bb6c14716827cf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 35b10f8a98284fdec9e94043a4b827fab226d3aa
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="cvaccesse"></a>CV_access_e
 指定可见性 （访问级别） 成员函数和变量的作用的域。  
@@ -50,7 +49,7 @@ typedef enum CV_access_e {
 ## <a name="requirements"></a>要求  
  标头： cvconst.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [Idiasymbol:: Get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
  [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

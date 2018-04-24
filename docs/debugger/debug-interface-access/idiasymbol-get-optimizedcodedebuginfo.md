@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_optimizedcodedebuginfo |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_optimizedcodedebuginfo |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_optimizedCodeDebugInfo method
 ms.assetid: 57ef4170-37a9-46b0-8217-c1a674725113
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0ae8a0ef1e088667f51fa2f5886601cc8ddfd25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a2032fab7263b3fff2645b5fccd5844a45dbb85e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetoptimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
 检索一个标志，指示该函数是否包含特定于优化代码的调试信息。  
@@ -46,7 +41,7 @@ HRESULT get_optimizedCodeDebugInfo(
 > [!NOTE]
 >  返回值`S_FALSE`意味着属性不是可用于符号。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
   
 |需求|描述|  
 |-----------------|-----------------|  

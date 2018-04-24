@@ -2,8 +2,7 @@
 title: BaseClass |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4146cc06ef4ac2204024053c07cf175ed6f2fc0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: b86e6e9b0fc6a2649c41ddfc00da2ffbdca2ff74
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="baseclass"></a>BaseClass
 用户定义类型 (UDT) 符号每个基类由具有的子项`SymTagBaseClass`标记。 [Idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)属性为基础的 UDT，包含符号和用户定义的基础类型的所有属性都都可以作为此 BaseClass 符号的一部分。  
@@ -63,6 +62,6 @@ ms.lasthandoff: 04/16/2018
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|虚拟表形状符号 ID。|  
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果基类标记为易失性。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [符号类型的类层次结构](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [UDT](../../debugger/debug-interface-access/udt.md)

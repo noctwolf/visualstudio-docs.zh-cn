@@ -2,8 +2,7 @@
 title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e42ce2113ed578802074714beac2e317786619b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 6620993582501e157bc8d53e5c295b4cfe5cb50d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
 给定相应的标记值，则此方法将返回指定的相对虚拟地址在此存根 （stub） 函数中包含的符号的枚举。  
@@ -47,6 +46,6 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
 ## <a name="remarks"></a>备注  
  仅在调用此方法`IDiaSymbol`对应于快捷键存根 （stub） 函数的接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

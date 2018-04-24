@@ -2,8 +2,7 @@
 title: 'Idiaaddressmap:: Put_imagealign |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c40e2f325ac30eb109f72615e5cc74a5d30e5eba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: e1c87592dc04c244e394f1df06cfa46d77f595a1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
 设置的图像对齐方式。  
@@ -47,6 +46,6 @@ HRESULT put_imageAlign (
 > [!NOTE]
 >  可以调用此方法时已加载映像。 `put_imageAlign`当映像已被移动或更改并且需要新的对齐方式时，通常使用方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)

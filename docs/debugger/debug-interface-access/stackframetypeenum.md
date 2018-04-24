@@ -1,29 +1,24 @@
 ---
-title: "StackFrameTypeEnum |Microsoft 文档"
-ms.custom: 
+title: StackFrameTypeEnum |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - StackFrameTypeEnum enumeration
 ms.assetid: 61e40163-eee0-4c1f-af47-cef3771bdc41
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dcb46fc2fb3936e0cee91426b4787945bd14f59
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 329661e857859a1f6452506ba2984ac962bf4ff2
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 指定的堆栈帧类型。  
@@ -63,7 +58,7 @@ enum StackFrameTypeEnum {
 ## <a name="remarks"></a>备注  
  此枚举中的值返回通过调用[idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)方法。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： cvconst.h  
   
 ## <a name="see-also"></a>请参阅  

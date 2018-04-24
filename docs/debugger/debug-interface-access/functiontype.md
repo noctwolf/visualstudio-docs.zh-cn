@@ -2,8 +2,7 @@
 title: FunctionType |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d78f8385237d26618ceb0b0cd261da59b37c40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: dc54990490a1412e60fce8beca1d61462f37458c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="functiontype"></a>FunctionType
 每个唯一的函数签名由`SymTagFunctionType`符号。 每个参数标识为具有的类子符号`SymTagFunctionArgType`标记。  
@@ -46,7 +45,7 @@ ms.lasthandoff: 04/16/2018
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` 如果该函数未对齐。|  
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果该函数被标记为易失性。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [符号类型的类层次结构](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)   
  [FunctionArgType](../../debugger/debug-interface-access/functionargtype.md)

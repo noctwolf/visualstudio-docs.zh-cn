@@ -2,8 +2,7 @@
 title: 在调试器中创建本机对象的自定义视图 |Microsoft 文档
 ms.custom: ''
 ms.date: 06/27/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40a78f95ed98b0486b1ffa85eabea3ae8591b823
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 38656b9c5ce4165f2a04b5e6d76411ce7f005855
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中创建本机对象的自定义视图
 Visual Studio Natvis 框架允许你自定义 Visual Studio 在调试器变量窗口中显示本机类型的方式 (例如，**监视**窗口中，**局部变量**窗口中，然后在**数据提示**。
@@ -86,7 +85,7 @@ Visual Studio Natvis 框架允许你自定义 Visual Studio 在调试器变量�
   
 2.  加载的 c + + 项目或顶级解决方案项的一部分的.natvis 文件。 此组包括所有已加载的 c + + 项目，包括类库，但它不包括其他语言的项目 （例如，不能加载.natvis 文件从 C# 项目）。 对于可执行项目，应使用解决方案项托管任何尚不存在于 .pdb 中的 .natvis 文件，因为没有任何可用的 C++ 项目。  
   
-3.  特定于用户的 natvis 目录 (例如， **%USERPROFILE%\Documents\Visual Studio 2017\Visualizers**或**%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers**)。  
+3.  特定于用户的 natvis 目录 (例如， **%USERPROFILE%\Documents\Visual Studio 2017\Visualizers**或 **%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers**)。  
   
 4.  系统级 Natvis 目录 (**%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers**)。 此目录是随 Visual Studio 一起安装的.natvis 文件被复制到其中。 如果具有管理员权限，你可以向此目录添加其他文件。  
   
@@ -97,7 +96,7 @@ Visual Studio Natvis 框架允许你自定义 Visual Studio 在调试器变量�
   
  如果.natvis 文件嵌入到.pdb 中，您无法在调试时对它进行修改。  
   
- 使用**.natvisreload**命令时 natvis 文件升级到较新版本 （例如，如果它已签入源代码管理，并且你想要选取人否则对文件所做的最新更改）。 建议使用 Visual Studio XML 编辑器来编辑 natvis 文件。  
+ 使用 **.natvisreload**命令时 natvis 文件升级到较新版本 （例如，如果它已签入源代码管理，并且你想要选取人否则对文件所做的最新更改）。 建议使用 Visual Studio XML 编辑器来编辑 natvis 文件。  
   
 ##  <a name="BKMK_Expressions_and_formatting"></a> 表达式和格式化  
  Natvis 可视化效果使用 C++ 表达式指定需显示的数据项。 除了增强和中所述从调试器中的 c + + 表达式的限制[上下文运算符 （c + +）](../debugger/context-operator-cpp.md)，应该注意以下差异：  

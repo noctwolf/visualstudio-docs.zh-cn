@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_libraryname |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_libraryname |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_libraryName method
 ms.assetid: d04ddd9a-812d-46e4-bd39-28bdf3edfb70
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fc404f7a4933f40aaaff47ec5ad1e3cc309964d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 631104cb6328b715f18b7afd564a627f275a503d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
 检索从其加载对象的库或对象文件的文件名称。  

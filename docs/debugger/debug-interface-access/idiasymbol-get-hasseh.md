@@ -2,8 +2,7 @@
 title: 'Idiasymbol:: Get_hasseh |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbb4d1b7267957cdaf7db6c4981e77bdc5ecb869
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: dcc6cb799b5d218cec09095115a9046605780c65
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 检索一个标志，用于指定函数是否包含任何[结构化异常处理 （C/c + +）](/cpp/cpp/structured-exception-handling-c-cpp) (例如，__try /\__except 块)。  
@@ -49,6 +48,6 @@ HRESULT get_hasSEH(
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [结构化异常处理 (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp)

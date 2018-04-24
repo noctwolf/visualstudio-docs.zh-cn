@@ -2,8 +2,7 @@
 title: 'Idiaenumframedata:: Skip |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d33a83fff2d09cd2c0a9c74a71ee4ce10a52fd7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 26f75ca23d1df6b81a23277fc94e60f9c0a2920f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
 跳过指定的数目的帧枚举序列中的数据元素。  
@@ -39,5 +38,5 @@ HRESULT Skip (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`是否存在要跳过没有更多记录。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

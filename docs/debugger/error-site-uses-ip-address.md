@@ -1,13 +1,9 @@
 ---
-title: "错误： 站点使用 IP 地址 |Microsoft 文档"
-ms.custom: 
+title: 错误： 站点使用 IP 地址 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_siteusesipaddress
 dev_langs:
@@ -17,17 +13,16 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debugger, Web application errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6073fd88221e307b46a90173526876f2e2186d4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b726902c57cc95b694f2ab7e656a444ed42a0ba9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-site-uses-ip-address"></a>错误：站点使用 IP 地址
 调试器尝试自动附加到正在使用 IP 地址的 Web 应用程序时，会发生该错误。 发生这种情况是如果你更改**网站标识**到**使用特定 IP 地址**在 IIS 中。  

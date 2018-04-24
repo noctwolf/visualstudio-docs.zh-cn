@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_compilername |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_compilername |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_compilerName method
 ms.assetid: 66eaaf72-68d4-40ee-b132-97bea9fe395c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdfd0bdfcd958b1fe49089d4e550c1743f391777
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 33ddeedf423c75f35486680082138706b6d5823f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
 返回用于生成的编译器的名称[编译单位](../../debugger/debug-interface-access/compiland.md)。  
@@ -48,7 +43,7 @@ HRESULT get_compilerName (
   
 ## <a name="remarks"></a>备注  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
   
 |需求|描述|  
 |-----------------|-----------------|  

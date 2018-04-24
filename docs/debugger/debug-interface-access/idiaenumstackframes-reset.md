@@ -2,8 +2,7 @@
 title: 'Idiaenumstackframes:: Reset |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b94d79bd00502f8b73ca181c3a11bbcb7cf2a8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: ea0dd46ab99d3f8d52e8be82af74b0e3ab1e340f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaenumstackframesreset"></a>IDiaEnumStackFrames::Reset
 将枚举序列重置到开头。  
@@ -33,5 +32,5 @@ HRESULT Reset();
 ## <a name="return-value"></a>返回值  
  返回 `S_OK`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)

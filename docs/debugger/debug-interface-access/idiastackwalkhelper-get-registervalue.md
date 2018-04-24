@@ -2,8 +2,7 @@
 title: IDiaStackWalkHelper::get_registerValue |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6aacde400309c6d0f9f78c8ec0fc540fea1428
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 6ccc491ec9e966b8d893b6d669aafc64ebc5c8cf
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 检索寄存器的值。  
@@ -46,6 +45,6 @@ HRESULT get_registerValue (
 ## <a name="remarks"></a>备注  
  虽然的大，但`pRetVal`参数，实现应只什么注册通常包含存储。 例如，一个 8 位寄存器保存仅最低 8 位的给定的值。 为 64 位从此方法返回时扩展此 8 位的值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [CV_HREG_e 枚举](../../debugger/debug-interface-access/cv-hreg-e.md)

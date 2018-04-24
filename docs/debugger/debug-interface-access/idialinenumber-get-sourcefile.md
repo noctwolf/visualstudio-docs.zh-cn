@@ -2,8 +2,7 @@
 title: 'Idialinenumber:: Get_sourcefile |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32f1261048e6a03ad96f9538c34e155e6e875e19
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 8833d1a5ccc39cac70cef6995a4e9a5c1bf99125
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
 检索到源代码文件的引用。  
@@ -39,6 +38,6 @@ HRESULT get_sourceFile (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

@@ -1,27 +1,22 @@
 ---
-title: "IDiaSymbol::findInlineFramesByRVA |Microsoft 文档"
-ms.custom: 
+title: IDiaSymbol::findInlineFramesByRVA |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: e7a6d9cb-2726-4ac7-9f38-415ad215bf9c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf203beaad8274e623935eaed6be8a559fafc83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3e9b3778072ea3643bc672516ab16d318669ac85
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
 检索一个枚举，允许客户端用于循环访问所有上指定的相对虚拟地址 (RVA) 的嵌入式框架。  

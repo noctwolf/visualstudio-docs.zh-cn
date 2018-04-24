@@ -2,8 +2,7 @@
 title: 'Idiasymbol:: Get_isaggregated |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c4ffad95f7c1b5c0e344e4ef09bd952efb374d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 2ed27b239595034b55b66dfe71c261bb9f721371
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 检索用于指定数据符号是否为聚合或集合的符号; 的一部分的标志编译器会将聚合的符号视为单独的实体，但它们实际上是单个更大的符号的一部分。  
@@ -52,6 +51,6 @@ HRESULT get_isAggregated(
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)

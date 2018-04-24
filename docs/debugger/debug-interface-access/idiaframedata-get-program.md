@@ -2,8 +2,7 @@
 title: 'Idiaframedata:: Get_program |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc770db5f5cf16d9870e05ada01e235206b94078
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 2c78c6f1c2c6e8368efd86dc3ffa03a021e46da3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 检索用于计算的寄存器集之前对当前函数的调用的程序字符串。  
@@ -52,5 +51,5 @@ HRESULT get_program (
   
  请注意，程序字符串是特定于 CPU 设置为表示由当前的堆栈帧的函数的调用约定。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

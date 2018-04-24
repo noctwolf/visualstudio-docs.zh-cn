@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_backendbuild |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_backendbuild |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_backEndBuild method
 ms.assetid: 423af497-9294-438e-92b4-456c6f56dc56
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0434cd419f06baa20d028e0a94f4c4f746124a56
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f792b822d4bee138f66b418c338a467a290377a8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetbackendbuild"></a>IDiaSymbol::get_backEndBuild
 检索编译器的后端内部版本号。  
@@ -51,7 +46,7 @@ HRESULT get_backEndBuild (
   
  前端或后端版本号由三个部分组成：\<主要 >。\<次要 >。\<生成 >，其中\<主要 > 是的主要版本号，\<次要 > 是的次要版本号，和\<生成 > 是的生成号。 例如，13.10.3077。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
   
 |需求|描述|  
 |-----------------|-----------------|  

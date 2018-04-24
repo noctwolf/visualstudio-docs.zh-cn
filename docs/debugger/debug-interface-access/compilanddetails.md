@@ -2,8 +2,7 @@
 title: CompilandDetails |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16f9239028cada1108092af3bc5a511964f89c6d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 8b1288a3bde1a8d17f40971744298adb1e1ecffb
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 编译单位信息拆分之间具有符号`SymTagCompiland`标记 （低详细信息） 和一个`SymTagCompilandDetails`标记 （高详细信息）。 `SymTagCompilandDetails` 需要加载其他符号。 但是，它提供了丰富的信息不适用于编译单位`SymTagCompiland`符号。  
@@ -55,6 +54,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="remarks"></a>备注  
  编译器通常出现在窗体中称为双步编译器;在某些版本的编译器，由一个单独的程序处理每个传递。 这些被称为前端和后端编译器，分别，因此后端和前端版本号的符号属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编译单位](../../debugger/debug-interface-access/compiland.md)   
  [符号类型的词法层次结构](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

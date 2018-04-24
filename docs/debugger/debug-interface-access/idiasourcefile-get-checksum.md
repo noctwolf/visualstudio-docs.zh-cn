@@ -2,8 +2,7 @@
 title: 'Idiasourcefile:: Get_checksum |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83670a9319bf6a16fad12f4f8443057144d8d2ca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 002ad16d94467c135e08ef0040fd7ffd51462719
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 检索的校验和字节。  
@@ -54,6 +53,6 @@ HRESULT get_checksum (
   
  典型的校验和永远不会超过 32 个字节的大小，但不是会假定这是校验和的最大大小。 设置`data`参数`NULL`若要获取的检索校验和所需的字节数。 然后分配适当的大小的缓冲区，并调用此方法一次使用新的缓冲区。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)

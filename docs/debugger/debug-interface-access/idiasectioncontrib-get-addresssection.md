@@ -2,8 +2,7 @@
 title: 'Idiasectioncontrib:: Get_addresssection |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2f939b6de24aa999a2f27086800b6d5ac9272f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 9a0fb267e2a3e4c0a2b8f5a1e5ce95e986e4c1ee
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasectioncontribgetaddresssection"></a>IDiaSectionContrib::get_addressSection
 检索的贡献地址的部分部分。  
@@ -39,5 +38,5 @@ HRESULT get_addressSection (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

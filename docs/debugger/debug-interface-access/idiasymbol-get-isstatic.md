@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_isstatic |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_isstatic |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_isStatic method
 ms.assetid: 3be5fe1b-46e8-4b07-90d8-4929dbbe7ff7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ecb091f1314961cf94f4d0ad7acbb6b6f938fc5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f2ac087fbd967319d6b853a916c708a6f6a9a776
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetisstatic"></a>IDiaSymbol::get_isStatic
 检索用于指定是否已标记的函数或转换 （thunk） 的层为静态的标志。  
@@ -46,7 +41,7 @@ HRESULT get_isStatic(
 > [!NOTE]
 >  返回值`S_FALSE`意味着属性不是可用于符号。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
   
 |需求|描述|  
 |-----------------|-----------------|  

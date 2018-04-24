@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_iscvtcil |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_iscvtcil |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_isCVTCIL method
 ms.assetid: 711b81fd-9549-44dc-9761-5eb862ed64c0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e66b87a143629643b02e03a880349124c3adaa64
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a959b145775bdc1ea5e6073e03b304ad33f84c83
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 检索一个标志，指示是否模块已转换的公共中间语言 (CIL) 模块为本机模块。  
@@ -49,7 +44,7 @@ HRESULT get_isCVTCIL(
 ## <a name="remarks"></a>备注  
  此属性是可从`SymTagCompilandDetails`符号类型 (请参阅[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
   
 |需求|描述|  
 |-----------------|-----------------|  

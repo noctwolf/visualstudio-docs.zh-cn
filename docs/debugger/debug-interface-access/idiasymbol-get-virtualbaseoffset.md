@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_virtualbaseoffset |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_virtualbaseoffset |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_virtualBaseOffset method
 ms.assetid: 103b034f-36c4-42d5-aa34-1449a1e66d03
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 471383f9b21fbb8d025d49a02576c439738ff7bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e26ef0435b2e4f3fde14d8e58b4f5cb8321b1d0d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetvirtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
 检索虚拟函数的虚函数表中的偏移量。  

@@ -2,8 +2,7 @@
 title: 'Idiasectioncontrib:: Get_nopad |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6bf648e44a857d938bbfecbe202d8a7c8f5d5d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: b26005e6e7062fcf5a3a6f0a9aba4ac7a79b92f7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
 检索一个标志，指示是否部分应不填充到下一步的内存边界。  
@@ -42,5 +41,5 @@ HRESULT get_nopad(
 ## <a name="remarks"></a>备注  
  这是通常仅在较旧的文件上会出现一个属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

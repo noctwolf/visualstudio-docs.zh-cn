@@ -2,8 +2,7 @@
 title: 选择断点对话框 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.breakpt.choose
@@ -24,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71f0c0b7fef9c5d7fb85290eb166bd00fe7b3c4c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 99ca31b8fa1536e23cce691629ddf5015721d9c9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="choose-breakpoints-dialog-box"></a>“选择断点”对话框
 **选择断点**对话框随即打开，当你尝试从二义性输入中设置断点时**新断点**对话框。 二义性输入的一个常见示例是重载的函数名称。  
@@ -42,5 +41,5 @@ ms.lasthandoff: 04/16/2018
  **无**  
  清除中列出的所有断点**断点**框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用断点](../debugger/using-breakpoints.md)

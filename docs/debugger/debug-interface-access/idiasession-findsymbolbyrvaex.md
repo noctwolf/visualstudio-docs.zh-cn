@@ -1,29 +1,24 @@
 ---
-title: "Idiasession:: Findsymbolbyrvaex |Microsoft 文档"
-ms.custom: 
+title: 'Idiasession:: Findsymbolbyrvaex |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSession::findSymbolByRVAEx method
 ms.assetid: 61344966-fed4-4c02-9e27-20356ec2ef7c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aab08637099ea10da5357cbbba2d8c20ee21a0e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 809598b5203878b70b57a061b75bc60d4dc84bac
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
 检索包含，或与具有指定的相对虚拟地址 (RVA) 和偏移量最接近指定的符号类型。  

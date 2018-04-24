@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_issplitted |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_issplitted |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_isSplitted method
 ms.assetid: ff160cf6-003b-4ef5-a406-20a7b287b2bf
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82197c35a0fc20a2c8562e441c4098aacd495776
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 15420c56dfa16f1bbb4566b1afe3fc7ac958fc07
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
 检索用于指定是否已将数据符号拆分为聚合或集合的其他符号; 的标志编译器将符号视为单独的实体，即使它们实际上是更大的符号的一部分。  
@@ -49,7 +44,7 @@ HRESULT get_isSplitted(
 ## <a name="remarks"></a>备注  
  [Idiasymbol:: Get_isaggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)方法返回`TRUE`属于拆分符号的所有符号。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
   
 |需求|描述|  
 |-----------------|-----------------|  

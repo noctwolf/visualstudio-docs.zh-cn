@@ -1,13 +1,9 @@
 ---
-title: "ManagedType |Microsoft 文档"
-ms.custom: 
+title: ManagedType |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +11,16 @@ helpviewer_keywords:
 - managed type symbol
 - ManagedType symbol
 ms.assetid: 5db99e2a-4f2e-4796-89b7-b401b151826f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ba534199433390adfd12babf5bd28449e838ffa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d7f9058c207ff7830a6e3580e0a5bc66759973ef
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="managedtype"></a>ManagedType
 托管的类型 （由元数据或与 C# 等语言的内存和资源管理功能的本机定义任何符号） 由标识`SymTagManagedType`符号。  

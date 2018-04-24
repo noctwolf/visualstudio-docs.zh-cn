@@ -2,8 +2,7 @@
 title: 'Idiasymbol:: Get_hasnestedtypes |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f288c8b36b8a66cfe434c43811fc20ff71dc7f7e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 0952abadc15dc5cd80f81baa4a7042c03a03ed2e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgethasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
 检索用于指定该用户定义数据类型是否具有嵌套类型定义的标志。  
@@ -49,5 +48,5 @@ HRESULT get_hasNestedTypes (
 |标头：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

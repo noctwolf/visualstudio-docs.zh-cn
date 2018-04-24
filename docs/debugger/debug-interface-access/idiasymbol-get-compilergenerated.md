@@ -2,8 +2,7 @@
 title: 'Idiasymbol:: Get_compilergenerated |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37a1cecfcea59fa9dd558f05fdf4163eb1fe011e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 27a3e432784d7164c14b99fa15c135cc09052800
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
 检索一个标志，指示是否已由编译器生成符号。  
@@ -49,5 +48,5 @@ HRESULT get_compilerGenerated (
 |标头：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

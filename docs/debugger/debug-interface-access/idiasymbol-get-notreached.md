@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_notreached |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_notreached |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_notReached method
 ms.assetid: e44ba922-6cda-40c2-9b62-44e5a8628e63
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8989a4ac2ed8c7688f0ffc37a71901d44e16c343
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 304fb3f47d2946b68ebe1ad742f49f8e4d0369b3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
 检索用于指定是否从未到达的函数或标签的标志。  
@@ -46,7 +41,7 @@ HRESULT get_notReached(
 > [!NOTE]
 >  返回值`S_FALSE`意味着属性不是可用于符号。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
   
 |需求|描述|  
 |-----------------|-----------------|  

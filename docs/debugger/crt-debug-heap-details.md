@@ -2,8 +2,7 @@
 title: CRT 调试堆详细信息 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -76,11 +75,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3bbbed8eb7e7ca7294ca23386b5b1ec9add31e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 4bf71bd4d424c372a6dadf85593fd3b456bc7ec0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="crt-debug-heap-details"></a>CRT 调试堆详细信息
 本主题详细描述了 CRT 调试堆。  
@@ -148,7 +147,7 @@ typedef struct _CrtMemBlockHeader
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> 调试堆中的块类型  
- 调试堆中的每个内存块都分配以五种分配类型之一。 出于泄漏检测和状态报告目的对这些类型进行不同地跟踪和报告。 你可以指定块的类型，方法是使用对其中一个调试堆分配函数的直接调用来分配[_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)。 调试堆中的内存块的五种类型 (在中设置**nBlockUse**的成员**_CrtMemBlockHeader**结构) 如下所示：  
+ 调试堆中的每个内存块都分配以五种分配类型之一。 出于泄漏检测和状态报告目的对这些类型进行不同地跟踪和报告。 你可以指定块的类型，方法是使用对其中一个调试堆分配函数的直接调用来分配[_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)。 调试堆中的内存块的五种类型 (在中设置**nBlockUse**的成员 **_CrtMemBlockHeader**结构) 如下所示：  
   
  **_NORMAL_BLOCK**  
  调用[malloc](/cpp/c-runtime-library/reference/malloc)或[calloc](/cpp/c-runtime-library/reference/calloc)创建普通块。 如果你想要使用正常的块，而客户端块不需要，你可能希望定义[_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)，这将导致所有堆分配调用映射到它们在调试版本中的调试等效项。 这将允许将关于每个分配调用的文件名和行号信息存储到对应的块头中。  
@@ -172,7 +171,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  **_IGNORE_BLOCK**  
  有可能在一段时间内关闭调试堆操作。 在该时间段内，内存块保留在列表上，但被标记为“忽略”块。  
   
- 若要确定类型和给定块的子类型，请使用函数[_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)和宏**_BLOCK_TYPE**和**_BLOCK_SUBTYPE**。 宏的定义（在 crtdbg.h 中）如下所示：  
+ 若要确定类型和给定块的子类型，请使用函数[_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)和宏 **_BLOCK_TYPE**和 **_BLOCK_SUBTYPE**。 宏的定义（在 crtdbg.h 中）如下所示：  
   
 ```  
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)  
@@ -194,11 +193,11 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
 |位域|默认<br /><br /> 值|描述|  
 |---------------|-----------------------|-----------------|  
-|**_CRTDBG_ALLOC_MEM_DF**|On|打开调试分配。 当该位为 off，分配仍链接在一起，但它们的块类型是**_IGNORE_BLOCK**。|  
-|**_CRTDBG_DELAY_FREE_MEM_DF**|Off|防止实际释放内存，与模拟内存不足情况相同。 打开此位时，已释放的块保留在调试堆链接列表中，但标记为**_FREE_BLOCK**和并用特殊字节值填充。|  
-|**_CRTDBG_CHECK_ALWAYS_DF**|Off|导致**_CrtCheckMemory**每个分配和解除分配时要调用。 这将减慢执行，但可快速捕捉错误。|  
-|**_CRTDBG_CHECK_CRT_DF**|Off|导致标记作为类型的块**_CRT_BLOCK**要包括在泄漏检测和状态差异操作中。 当该位为 off 时，在这些操作期间将忽略由运行库内部使用的内存。|  
-|**_CRTDBG_LEAK_CHECK_DF**|Off|导致在程序退出时通过调用来执行泄漏检查**_CrtDumpMemoryLeaks**。 如果应用程序未能释放其所分配的所有内存，将生成错误报告。|  
+|**_CRTDBG_ALLOC_MEM_DF**|On|打开调试分配。 当该位为 off，分配仍链接在一起，但它们的块类型是 **_IGNORE_BLOCK**。|  
+|**_CRTDBG_DELAY_FREE_MEM_DF**|Off|防止实际释放内存，与模拟内存不足情况相同。 打开此位时，已释放的块保留在调试堆链接列表中，但标记为 **_FREE_BLOCK**和并用特殊字节值填充。|  
+|**_CRTDBG_CHECK_ALWAYS_DF**|Off|导致 **_CrtCheckMemory**每个分配和解除分配时要调用。 这将减慢执行，但可快速捕捉错误。|  
+|**_CRTDBG_CHECK_CRT_DF**|Off|导致标记作为类型的块 **_CRT_BLOCK**要包括在泄漏检测和状态差异操作中。 当该位为 off 时，在这些操作期间将忽略由运行库内部使用的内存。|  
+|**_CRTDBG_LEAK_CHECK_DF**|Off|导致在程序退出时通过调用来执行泄漏检查 **_CrtDumpMemoryLeaks**。 如果应用程序未能释放其所分配的所有内存，将生成错误报告。|  
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
@@ -304,11 +303,11 @@ typedef struct _CrtMemState
   
 |函数|描述|  
 |--------------|-----------------|  
-|[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|将保存在堆的快照**_CrtMemState**应用程序提供的结构。|  
+|[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|将保存在堆的快照 **_CrtMemState**应用程序提供的结构。|  
 |[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|比较两个内存状态结构，在第三个状态结构中保存二者之间的差异，如果两个状态不同，则返回 TRUE。|  
-|[_CrtMemDumpStatistics](/cpp/c-runtime-library/reference/crtmemdumpstatistics)|转储给定**_CrtMemState**结构。 该结构可能包含给定时刻调试堆状态的快照或两个快照之间的差异。|  
-|[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|转储有关在堆的给定快照之后，或是从执行开始时起，分配的所有对象的信息。 每次它转储**_CLIENT_BLOCK**块，它调用应用程序，所提供的挂钩函数，如果一个已安装使用**_CrtSetDumpClient**。|  
-|[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|确定自程序开始执行以来是否发生过内存泄漏，如果发生过，则转储所有已分配对象。 每次**_CrtDumpMemoryLeaks**转储**_CLIENT_BLOCK**块，它调用应用程序，所提供的挂钩函数，如果一个已安装使用**_CrtSetDumpClient**.|  
+|[_CrtMemDumpStatistics](/cpp/c-runtime-library/reference/crtmemdumpstatistics)|转储给定 **_CrtMemState**结构。 该结构可能包含给定时刻调试堆状态的快照或两个快照之间的差异。|  
+|[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|转储有关在堆的给定快照之后，或是从执行开始时起，分配的所有对象的信息。 每次它转储 **_CLIENT_BLOCK**块，它调用应用程序，所提供的挂钩函数，如果一个已安装使用 **_CrtSetDumpClient**。|  
+|[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|确定自程序开始执行以来是否发生过内存泄漏，如果发生过，则转储所有已分配对象。 每次 **_CrtDumpMemoryLeaks**转储 **_CLIENT_BLOCK**块，它调用应用程序，所提供的挂钩函数，如果一个已安装使用 **_CrtSetDumpClient**.|  
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
@@ -319,11 +318,11 @@ typedef struct _CrtMemState
   
  标识发生错误的特定堆分配调用的最简单方法是利用与调试堆中的每个块关联的唯一分配请求编号。 当其中一个转储函数报告某块的有关信息时，该分配请求编号将括在大括号中（例如“{36}”）。  
   
- 一旦您知道某个错误分配块的分配请求编号，你可以将该编号传递到[_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc)可创建一个断点。 执行将恰在分配该块以前中断，您可以向回追踪以确定哪个例程执行了错误调用。 若要避免重新编译，你可以完成同样的操作在调试器中通过设置**_crtBreakAlloc**到你感兴趣的分配请求编号。  
+ 一旦您知道某个错误分配块的分配请求编号，你可以将该编号传递到[_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc)可创建一个断点。 执行将恰在分配该块以前中断，您可以向回追踪以确定哪个例程执行了错误调用。 若要避免重新编译，你可以完成同样的操作在调试器中通过设置 **_crtBreakAlloc**到你感兴趣的分配请求编号。  
   
  **创建分配例程的调试版本**  
   
- 略微复杂的方法是创建您自己的分配例程，类似于调试版本**_dbg**版本[堆分配函数](../debugger/debug-versions-of-heap-allocation-functions.md)。 然后，可以将源文件和行号自变量传递给基础堆分配例程，并能立即看到错误分配的出处。  
+ 略微复杂的方法是创建您自己的分配例程，类似于调试版本 **_dbg**版本[堆分配函数](../debugger/debug-versions-of-heap-allocation-functions.md)。 然后，可以将源文件和行号自变量传递给基础堆分配例程，并能立即看到错误分配的出处。  
   
  例如，假定您的应用程序包含与下面类似的常用例程：  
   
@@ -367,5 +366,5 @@ int addNewRecord(struct RecStruct *prevRecord,
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试本机代码](../debugger/debugging-native-code.md)

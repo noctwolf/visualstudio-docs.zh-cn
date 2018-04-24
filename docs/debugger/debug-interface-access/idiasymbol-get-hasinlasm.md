@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_hasinlasm |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_hasinlasm |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_hasInlAsm method
 ms.assetid: 7001c7cc-1459-4929-851b-a08066a803c6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb8906a73ca6c15418c204ad25f449f3847725de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 584f2410400bc18b461ea9dc9ba05cde1c1a3681
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
 检索用于指定该函数是否包含内联程序集的标志。  
@@ -46,7 +41,7 @@ HRESULT get_hasInlAsm(
 > [!NOTE]
 >  返回值`S_FALSE`意味着属性不是可用于符号。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
   
 |需求|描述|  
 |-----------------|-----------------|  

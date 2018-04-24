@@ -2,8 +2,7 @@
 title: COM 服务器和容器调试 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -24,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa27c3d63a21bf3a1cad31bb705df6532eed873c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 5b4c23d362a930f28ccb1a097de44a936e55cacf
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="com-server-and-container-debugging"></a>调试 COM 服务器和容器
 COM 应用程序执行若干不直接受程序员控制的任务。 DLL 间的通信、对象的使用计数和剪贴板操作只是可能遇到意外行为的少数几个情况。 发生这种情况时，第一步是抓住问题的根源。  
@@ -56,5 +55,5 @@ COM 应用程序执行若干不直接受程序员控制的任务。 DLL 间的�
   
  访问*项目*属性页对话框中，右键单击解决方案资源管理器中的项目，然后从快捷菜单选择属性。 若要找到“命令行自变量”属性，请展开“配置属性”类别并单击“调试”页。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)

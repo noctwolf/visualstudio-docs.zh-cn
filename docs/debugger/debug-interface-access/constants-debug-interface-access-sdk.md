@@ -2,8 +2,7 @@
 title: 常量 （调试接口访问 SDK） |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d625146e1c7777955186100a805e7db8e22e63b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: c77febb7ad9f41880fef604849af75aa065ff593
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常量（调试接口访问 SDK）
 这些字符串常量可以用于标识程序调试数据库 (PDB) 文件通过 DIA SDK 的各个部分。  
@@ -57,7 +56,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ## <a name="requirements"></a>要求  
  标头： dia2.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [引用](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
  [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [接口 （调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

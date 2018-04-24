@@ -2,8 +2,7 @@
 title: 'Idiasession:: Findsymbolbyaddr |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c36328c231751be36fd0043aa4bcad9c239252
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 06f3a19073c13415a2e1dd021911c391e63f87ae
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
 检索指定的符号类型包含，或接近指定的地址。  
@@ -58,7 +57,7 @@ IDiaSymbol* pFunc;
 pSession->findSymbolByAddr( isect, offset, SymTagFunction, &pFunc );  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)

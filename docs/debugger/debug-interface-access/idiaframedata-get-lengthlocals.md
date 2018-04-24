@@ -2,8 +2,7 @@
 title: 'Idiaframedata:: Get_lengthlocals |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87b4854e02673d8ace18ef5a247b4c2da03f0e95
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 31dd2eb35ccf8a9adb4392c55bbfb3feb8b010e5
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaframedatagetlengthlocals"></a>IDiaFrameData::get_lengthLocals
 检索推送到堆栈上的本地变量的字节数。  
@@ -42,6 +41,6 @@ HRESULT get_lengthLocals (
 ## <a name="remarks"></a>备注  
  此方法返回的值通常采用的解释程序字符串 (请参阅[idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)程序字符串的定义的方法)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

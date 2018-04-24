@@ -2,8 +2,7 @@
 title: 调试 64 位应用程序 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bc0b90658a5ab54c936dfabd84878e0567508c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 17577684c7adffe46326d2151710e88745c60e1f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-64-bit-applications"></a>调试 64 位应用程序
 您可以调试运行于本地计算机或远程计算机上的 64 位应用程序。  
@@ -54,7 +53,7 @@ ms.lasthandoff: 04/16/2018
   
 -   你正遇到挂起或 Visual Studio 性能问题。 如果该问题定期发生，你可收集 Visual Studio (devenv.exe) 和辅助进程 (msvsmon.exe) 的转储并将其发送给 Microsoft。 有关报告问题的详细信息，请参阅 [How to Report a Problem with Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md)。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [64 位应用程序](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [配置 64 位的程序](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
  [Visual Studio IDE 64 位支持](../ide/visual-studio-ide-64-bit-support.md)   

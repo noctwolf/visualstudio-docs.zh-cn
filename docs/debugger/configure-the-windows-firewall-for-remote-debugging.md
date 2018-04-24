@@ -2,8 +2,7 @@
 title: 配置 Windows 防火墙以允许远程调试 |Microsoft 文档
 ms.custom: ''
 ms.date: 05/18/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e8c0a99e010058f513341c18d6088b6bb10b3f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: d9fdd6db229bf1aa6f607e096715ea485ec5c5ce
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以便进行远程调试
 本主题介绍如何配置防火墙以在运行以下操作系统的计算机上启用远程调试：  
@@ -121,5 +120,5 @@ ms.lasthandoff: 04/16/2018
 |500, 4500|传出|UDP|如果你的域策略需要通过 IPSec 进行网络通信，则需要。|  
 |80|传出|TCP|Web 服务器调试所必需。|
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [远程调试](../debugger/remote-debugging.md)

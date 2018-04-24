@@ -2,8 +2,7 @@
 title: 'Idiasectioncontrib:: Get_discardable |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5dca36e6c171316354ec0c45c5feb64822d1cc5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 7a34741f995431fa04a3e6d75ad7988b306d1358
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasectioncontribgetdiscardable"></a>IDiaSectionContrib::get_discardable
 检索一个标志，指示是否可以放弃部分。  
@@ -39,5 +38,5 @@ HRESULT get_discardable (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

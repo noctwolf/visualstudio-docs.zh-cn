@@ -2,8 +2,7 @@
 title: 'Idiaenuminjectedsources:: Reset |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3c51bbd0f2ecd44bdb0d960b9ceafd962b36d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: a5182cd4e5c8a85f9ccd9f4683036a5ea958e573
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaenuminjectedsourcesreset"></a>IDiaEnumInjectedSources::Reset
 将枚举序列重置到开头。  
@@ -33,5 +32,5 @@ HRESULT Reset();
 ## <a name="return-value"></a>返回值  
  返回 `S_OK`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

@@ -1,27 +1,22 @@
 ---
-title: "IDiaSession::findInlineeLinesByAddr |Microsoft 文档"
-ms.custom: 
+title: IDiaSession::findInlineeLinesByAddr |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bb70e408-eed1-4c9c-b5b1-44323125f48b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18767e591d2fa22c78207b109861ed3ea4c091c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 139bc3c9291650b5e3e991324dbf8c560078c2de
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 检索一个枚举，允许客户端循环访问的行号信息的所有函数的内联，直接或间接地，由指定的父符号和都包含在指定的地址范围。  

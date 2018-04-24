@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_indirectvirtualbaseclass |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_indirectvirtualbaseclass |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_indirectVirtualBaseClass method
 ms.assetid: 853b5c6f-e1cb-4675-ad36-9ee16e3341c3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 144abb85b011112c2f7c7cc218611da7ca86f07e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b7806d8e8faa64dbf1f7faaaf3afdb128f8a03b5
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetindirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
 检索指定用户定义数据类型是否为间接虚拟基类的标志。  
@@ -46,7 +41,7 @@ HRESULT get_indirectVirtualBaseClass (
 > [!NOTE]
 >  返回值`S_FALSE`意味着属性不是可用于符号。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
   
 |需求|描述|  
 |-----------------|-----------------|  

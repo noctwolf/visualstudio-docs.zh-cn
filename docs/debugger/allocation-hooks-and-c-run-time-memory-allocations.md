@@ -2,8 +2,7 @@
 title: 分配挂钩和 C 运行时内存分配 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
@@ -23,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 932beab91e5f98023196e3feff2dec11e6a8b179
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 2b0d4a14ff8df32ea783f74bd911ba97fa179563
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>分配挂钩和 C 运行时内存分配
 对分配挂钩函数的一个非常重要的限制是，当它们调用任何分配内部内存的 C 运行库函数时，必须显式忽略 `_CRT_BLOCK` 块（由 C 运行库函数内部进行的内存分配）。 可通过在分配挂钩函数起始包括如下代码来忽略 `_CRT_BLOCK` 块：  
@@ -41,5 +40,5 @@ if ( nBlockUse == _CRT_BLOCK )
   
  如果检查运行库源文件时，你将看到，默认分配挂钩函数， **CrtDefaultAllocHook** (只返回**TRUE**)，位于其自己的单独的文件DBGHOOK。C。 如果您希望您的分配挂钩，即使对于在你的应用程序之前执行的运行时启动代码的分配调用**主要**函数，您可以使用你自己的而不是替换此默认函数使用[_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编写调试挂钩函数](../debugger/debug-hook-function-writing.md)   

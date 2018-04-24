@@ -2,8 +2,7 @@
 title: 将附加到正在运行的进程，使用 Visual Studio 中调试程序 |Microsoft 文档
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -30,11 +29,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b726cd5d29093d88e27e7de6bd5a22fcb491d20
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: fe345773cfa4a91789681969623e2174db60c54c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到运行的进程
 你可将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。 进程正在运行后，单击**调试 > 附加到进程**(或按**CTRL + ALT + P**) 以打开**附加到进程**对话框。
@@ -187,7 +186,7 @@ ms.lasthandoff: 04/16/2018
   
      此时，附加将彻底失败，并且你将收到一条特定的错误消息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多个进程](../debugger/debug-multiple-processes.md)   
  [在实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [远程调试](../debugger/remote-debugging.md)

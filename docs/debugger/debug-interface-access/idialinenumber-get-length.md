@@ -2,8 +2,7 @@
 title: 'Idialinenumber:: Get_length |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14e338958020bc085dd725f39b30d5a99935ce53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 21323095ffd427f860f750521605832377f9a22b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
 检索块中的字节的数。  
@@ -42,5 +41,5 @@ HRESULT get_length (
 ## <a name="remarks"></a>备注  
  块是在行上的源代码的长度，由表示[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

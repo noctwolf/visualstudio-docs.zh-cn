@@ -1,33 +1,28 @@
 ---
-title: "查询。Pdb 文件 |Microsoft 文档"
-ms.custom: 
+title: 查询。Pdb 文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - PDB files
 - .pdb files, querying
 ms.assetid: 8da07d1c-2712-45f9-8fbf-f34040408a8a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da12d0cde9e8dae0d291985bc8bf88931ab35ec5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3b552300926ae0448aacd084b54934f03527f81e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="querying-the-pdb-file"></a>查询 .Pdb 文件
-程序数据库文件 (扩展名为.pdb) 是包含类型和符号化调试信息编译和链接项目的过程中收集的二进制文件。 编译用 C/c + + 程序时会创建 PDB 文件**/ZI**或**/Zi**或[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，或[!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)]编程**/调试**选项。 对象文件包含调试信息的.pdb 文件的引用。 Pdb 文件的详细信息，请参阅[PDB 文件](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f)。 DIA 应用程序可以使用下列常规步骤以获取有关各种符号、 对象和可执行映像中的数据元素的详细信息。  
+程序数据库文件 (扩展名为.pdb) 是包含类型和符号化调试信息编译和链接项目的过程中收集的二进制文件。 编译用 C/c + + 程序时会创建 PDB 文件 **/ZI**或 **/Zi**或[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，或[!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)]编程 **/调试**选项。 对象文件包含调试信息的.pdb 文件的引用。 Pdb 文件的详细信息，请参阅[PDB 文件](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f)。 DIA 应用程序可以使用下列常规步骤以获取有关各种符号、 对象和可执行映像中的数据元素的详细信息。  
   
 ### <a name="to-query-the-pdb-file"></a>查询.pdb 文件  
   

@@ -2,8 +2,7 @@
 title: 数据集可视化工具对话框 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
@@ -24,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d57b12ee11eebf942e70d00ddbeb591dd90e0e4a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: caa7e79ed33871cbcd816cd09edfe84b167e1702
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="dataset-visualizer-dialog-box"></a>“数据集可视化工具”对话框
 使用数据集可视化工具可以查看 DataSet、DataTable、DataView 或 DataViewManager 对象的内容。 通过在调试器变量窗口或数据提示中单击这些对象之一的“值”旁显示的放大镜图标，可以访问此可视化工具。  
@@ -39,7 +38,7 @@ ms.lasthandoff: 04/16/2018
  表  
  使用此下拉列表框在要对其进行可视化处理的数据集中选择一个表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)   
  [调试器窗口](../debugger/debugger-windows.md)   
