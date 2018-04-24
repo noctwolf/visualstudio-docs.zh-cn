@@ -1,10 +1,8 @@
 ---
-title: CA2242： 正确测试 NaN |Microsoft 文档
-ms.custom: ''
+title: CA2242：正确测试 NaN
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - TestForNaNCorrectly
 - CA2242
@@ -16,34 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a782c0b3f32c9733b47ded29852e006f8ba7c1aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3c87b3e3528f12c07f728a5b82b56e75ee6551c1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242：正确测试 NaN
-|||  
-|-|-|  
-|TypeName|TestForNaNCorrectly|  
-|CheckId|CA2242|  
-|类别|Microsoft.Usage|  
-|是否重大更改|非重大更改|  
-  
-## <a name="cause"></a>原因  
- 表达式对照测试某个值<xref:System.Single.NaN?displayProperty=fullName>或<xref:System.Double.NaN?displayProperty=fullName>。  
-  
-## <a name="rule-description"></a>规则说明  
- <xref:System.Double.NaN?displayProperty=fullName>这表示不数字时是不确定的算术运算, 的结果。 任何表达式，以便测试之间的值相等性和<xref:System.Double.NaN?displayProperty=fullName>始终返回`false`。 任何表达式，以便测试之间的值是否不相等和<xref:System.Double.NaN?displayProperty=fullName>始终返回`true`。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，并准确地确定某个值是否表示<xref:System.Double.NaN?displayProperty=fullName>，使用<xref:System.Single.IsNaN%2A?displayProperty=fullName>或<xref:System.Double.IsNaN%2A?displayProperty=fullName>测试该值。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 不禁止显示此规则发出的警告。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示不正确地测试对值的两个表达式<xref:System.Double.NaN?displayProperty=fullName>和正确使用的表达式<xref:System.Double.IsNaN%2A?displayProperty=fullName>测试该值。  
-  
+|||
+|-|-|
+|TypeName|TestForNaNCorrectly|
+|CheckId|CA2242|
+|类别|Microsoft.Usage|
+|是否重大更改|非重大更改|
+
+## <a name="cause"></a>原因
+ 表达式对照测试某个值<xref:System.Single.NaN?displayProperty=fullName>或<xref:System.Double.NaN?displayProperty=fullName>。
+
+## <a name="rule-description"></a>规则说明
+ <xref:System.Double.NaN?displayProperty=fullName>这表示不数字时是不确定的算术运算, 的结果。 任何表达式，以便测试之间的值相等性和<xref:System.Double.NaN?displayProperty=fullName>始终返回`false`。 任何表达式，以便测试之间的值是否不相等和<xref:System.Double.NaN?displayProperty=fullName>始终返回`true`。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，并准确地确定某个值是否表示<xref:System.Double.NaN?displayProperty=fullName>，使用<xref:System.Single.IsNaN%2A?displayProperty=fullName>或<xref:System.Double.IsNaN%2A?displayProperty=fullName>测试该值。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 不禁止显示此规则发出的警告。
+
+## <a name="example"></a>示例
+ 下面的示例演示不正确地测试对值的两个表达式<xref:System.Double.NaN?displayProperty=fullName>和正确使用的表达式<xref:System.Double.IsNaN%2A?displayProperty=fullName>测试该值。
+
  [!code-vb[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/VisualBasic/ca2242-test-for-nan-correctly_1.vb)]
  [!code-csharp[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/CSharp/ca2242-test-for-nan-correctly_1.cs)]

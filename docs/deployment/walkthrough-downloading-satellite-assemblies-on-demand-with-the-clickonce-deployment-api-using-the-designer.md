@@ -1,12 +1,9 @@
 ---
-title: "演练： 下载附属程序集使用 ClickOnce 部署使用设计器的 API 按需 |Microsoft 文档"
-ms.custom: 
+title: 演练： 下载附属程序集使用 ClickOnce 部署使用设计器的 API 按需 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +17,16 @@ helpviewer_keywords:
 - ClickOnce deployment, localization
 - walkthroughs, localization
 ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b96665bb2d9e6395d32d85344e2fe2cdabc21951
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a8a56cc87978ebc5b8c64c0a2a6774186048efa7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：在设计器中使用 ClickOnce 部署 API 按需下载附属程序集
 通过使用附属程序集，可以为多个区域性配置 Windows 窗体应用程序。 *附属程序集* 是一种包含除应用程序默认区域性以外区域性的应用程序资源的程序集。  
@@ -53,7 +50,7 @@ ms.lasthandoff: 12/22/2017
   
      附属程序集将具有名称的形式*isoCode*\ApplicationName.resources.dll，其中*isoCode*是 RFC 1766 格式的语言标识符。  
   
-5.  单击**新...**中**下载组**每个语言标识符的列表。 如果提示输入下载组名称，请输入语言标识符。 例如，对于日语附属程序集，将指定的下载组名称`ja-JP`。  
+5.  单击**新...** 中**下载组**每个语言标识符的列表。 如果提示输入下载组名称，请输入语言标识符。 例如，对于日语附属程序集，将指定的下载组名称`ja-JP`。  
   
 6.  关闭**应用程序文件**对话框。  
   

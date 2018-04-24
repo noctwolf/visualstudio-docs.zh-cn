@@ -1,27 +1,24 @@
 ---
-title: "如何： 创建本地化的引导程序包 |Microsoft 文档"
-ms.custom: 
+title: 如何： 创建本地化的引导程序包 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
 - prerequisites, creating localized bootstrapper packages
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
-caps.latest.revision: "15"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9a3339b4bd6724fec782857a74a6b51463fe8028
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6948bd0a9cb3469141ea8c879effa130e7b00e86
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：创建本地化的引导程序包
 在你创建引导程序包以后，你可以通过为每个区域设置再创建两个文件（软件许可条款文件（如 eula.rtf）和包清单 (package.xml)）来创建引导程序包的本地化版本。  

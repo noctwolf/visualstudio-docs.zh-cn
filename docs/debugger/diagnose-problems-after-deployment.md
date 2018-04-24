@@ -1,23 +1,20 @@
 ---
-title: "部署后诊断问题 |Microsoft 文档"
-ms.custom: 
-ms.date: 06/20/2017
-ms.reviewer: 
-ms.suite: 
+title: 部署后诊断问题 |Microsoft 文档
+ms.custom: ''
+ms.date: 04/10/2018
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
-caps.latest.revision: "60"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 562222296ca79a568a3b68aac55a879c8f2f51b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 54a29e25c19d3dae18efd967a4fb26e1cd4f576a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="diagnose-problems-after-deployment"></a>诊断部署后出现的问题
 要在使用 IntelliTrace 部署后诊断 ASP.NET Web 应用中的问题，请加入发行版本信息，以便 Visual Studio 自动查找调试 IntelliTrace 日志所需的正确源文件及符号文件。  
@@ -34,18 +31,14 @@ ms.lasthandoff: 12/22/2017
 
 -   用于查看诊断数据并使用 IntelliTrace 调试代码的 Visual Studio Enterprise（但不是 Professional 或 Community 版本）  
 
-##  <a name="SetUpBuild"></a>步骤 1： 包括生成发行信息  
+##  <a name="SetUpBuild"></a> 步骤 1： 包括生成发行信息  
  设置生成过程以为你的 Web 项目创建生成清单（BuildInfo.config 文件）并在发布中包含此清单。 此清单包含有关项目、源代码管理和用于创建特定生成的生成系统的信息。 在你打开 IntelliTrace 日志以查看记录的事件时，此信息可帮助 Visual Studio 查找匹配的源和符号。  
 
-###  <a name="AutomatedBuild"></a>创建使用 Team Foundation Server 为自动化生成的生成清单  
-
- 无论你使用 Team Foundation 版本控制还是 Git，请按照这些步骤进行操作。
-  
- **步骤 2：** [步骤 2： Release your app](#DeployRelease)  
+###  <a name="AutomatedBuild"></a> 创建使用 Team Foundation Server 为自动化生成的生成清单  
   
  无论你使用 Team Foundation 版本控制还是 Git，请按照这些步骤进行操作。  
  
- ####  <a name="TFS2017"></a>Team Foundation Server 自 2017 年 1
+ ####  <a name="TFS2017"></a> Team Foundation Server 自 2017 年 1
 
  设置生成定义以将源、生成和符号的位置添加到生成清单（BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。
   
@@ -55,7 +48,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  如果创建新模板时，请选择 ASP.NET Core (.NET Framework) 模板。 
   
-     ![选择生成过程模板 &#45;TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+     ![选择生成过程模板&#45;TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
   
 3.  指定保存符号 (PDB) 文件的位置，以便自动为你的源编制索引。  
   
@@ -72,8 +65,10 @@ ms.lasthandoff: 12/22/2017
      任何可访问你的 Web 服务器的人都可以在生成清单中看见这些位置。 请确保你的源服务器是安全的。
   
 6.  运行新的生成。  
+  
+    转到[步骤 2： 发布你的应用](#DeployRelease)  
 
-####  <a name="TFS2013"></a>Team Foundation Server 2013  
+####  <a name="TFS2013"></a> Team Foundation Server 2013  
  设置生成定义以将源、生成和符号的位置添加到生成清单（BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。  
 
 1.  [编辑生成定义或创建新的生成定义。](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
@@ -82,7 +77,7 @@ ms.lasthandoff: 12/22/2017
 
 2.  选择默认模板 (TfvcTemplate.12.xaml) 或自己的自定义模板。  
 
-     ![选择生成过程模板 &#45;TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+     ![选择生成过程模板&#45;TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
 
 3.  指定保存符号 (PDB) 文件的位置，以便自动为你的源编制索引。  
 
@@ -116,9 +111,9 @@ ms.lasthandoff: 12/22/2017
 
 6.  运行新的生成。  
 
- **步骤 2：** [步骤 2： Release your app](#DeployRelease)  
+    转到[步骤 2： 发布你的应用](#DeployRelease)  
 
-####  <a name="TFS2012_2010"></a>Team Foundation Server 2012 或 2010  
+####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 或 2010  
  若要为项目自动创建生成清单（BuildInfo.config 文件）并将其置于你的项目的输出文件夹中，请执行以下步骤。 此文件在输出文件夹中显示为“*ProjectName*.BuildInfo.config”，但是在你发布应用后将在部署文件夹中重命名为“BuildInfo.config”。  
 
 1.  在你的 Team Foundation Build 服务器上安装 Visual Studio 2013（任意版本）。  
@@ -141,9 +136,9 @@ ms.lasthandoff: 12/22/2017
 
 4.  运行新的生成。  
 
- **步骤 2：** [步骤 2： Release your app](#DeployRelease)  
+    转到[步骤 2： 发布你的应用](#DeployRelease)  
 
-###  <a name="ManualBuild"></a>创建手动生成使用 Visual Studio 的生成清单  
+###  <a name="ManualBuild"></a> 创建手动生成使用 Visual Studio 的生成清单  
  若要为项目自动创建生成清单（BuildInfo.config 文件）并将其置于你的项目的输出文件夹中，请执行以下步骤。 此文件在输出文件夹中显示为“*ProjectName*.BuildInfo.config”，但是在你发布应用后将在部署文件夹中重命名为“BuildInfo.config”。  
 
 1.  在“解决方案资源管理器” 中，卸载 Web 项目。  
@@ -168,9 +163,9 @@ ms.lasthandoff: 12/22/2017
 
 4.  运行新的生成。  
 
- **步骤 2：** [步骤 2： Release your app](#DeployRelease)  
+    转到[步骤 2： 发布你的应用](#DeployRelease)  
 
-###  <a name="MSBuild"></a>创建手动生成使用 MSBuild.exe 生成清单  
+###  <a name="MSBuild"></a> 创建手动生成使用 MSBuild.exe 生成清单  
  运行生成时添加这些生成参数：  
 
  **/p:GenerateBuildInfoConfigFile = true**  
@@ -179,7 +174,7 @@ ms.lasthandoff: 12/22/2017
 
  **/p: buildsymbolstorepath =**\<*符号的路径*>  
 
-##  <a name="DeployRelease"></a>步骤 2： 发布你的应用  
+##  <a name="DeployRelease"></a> 步骤 2： 发布你的应用  
  如果使用生成过程创建的 [Web.Deploy 包](http://msdn.microsoft.com/library/dd394698.aspx) 来部署你的应用，则生成清单从“*ProjectName*.BuildInfo.config”自动重命名为“BuildInfo.config”，并在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。  
 
  如果你使用其他方法部署应用，请确保生成清单从“*ProjectName*.BuildInfo.config”重命名为“BuildInfo.config”，并且在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。  
@@ -187,7 +182,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="step-3-monitor-your-app"></a>步骤 3：监视你的应用  
  在 Web 服务器上设置应用程序性能监视，以便可以监视应用程序中的问题、记录诊断事件并将这些事件保存到 IntelliTrace 日志文件中。 请参阅[监视你的发布的部署问题](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
 
-##  <a name="InvestigateEvents"></a>步骤 4： 查找问题  
+##  <a name="InvestigateEvents"></a> 步骤 4： 查找问题  
  你的开发计算机或另一台计算机上将需要 Visual Studio Enterprise，以查看记录的事件并使用 IntelliTrace 调试代码。 你还可以使用诸如 CodeLens、调试器映射和代码映射等工具帮助你诊断问题。  
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>打开 IntelliTrace 日志和匹配的解决方案  
@@ -208,7 +203,7 @@ ms.lasthandoff: 12/22/2017
 
      否则，请选择其他工作区或创建新的工作区。 Visual Studio 会将整个分支映射到此工作区。  
 
-     ![从源代码管理打开 &#45;创建新的工作区](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
+     ![从源代码管理打开&#45;创建新的工作区](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
 
      若要创建具有特定映射的工作区或不是计算机名称的名称，请选择“管理” 。  
 
@@ -254,13 +249,13 @@ ms.lasthandoff: 12/22/2017
 
      现在你可以查看其他记录的值和调用堆栈，或者使用“IntelliTrace”  窗口 [在其他记录的事件、相关代码和在这些时间点记录的值之间“及时”前后移动](../debugger/intellitrace.md)。 [所有这些其他事件和 IntelliTrace 日志中的信息是什么？](../debugger/using-saved-intellitrace-data.md)  
 
-###  <a name="WhatElse"></a>可以做些什么我从此处？  
+###  <a name="WhatElse"></a> 可以做些什么我从此处？  
 
 -   [获取有关此代码的详细信息](../ide/find-code-changes-and-other-history-with-codelens.md)。 若要查找对此代码的引用，其更改历史记录、 相关的 bug、 工作项、 代码评审或单元测试的所有操作都在编辑器的 CodeLens 指示器编辑器中使用。  
 
-     ![CodeLens &#45;查看对此代码的引用](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
+     ![CodeLens&#45;查看对此代码的引用](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
 
-     ![CodeLens &#45;查看更改为此代码的历史记录](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
+     ![CodeLens&#45;视图更改为此代码的历史记录](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
 
 -   [在调试时，将映射代码中的位置。](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) 要直观地跟踪在你的调试会话期间调用的方法，请映射调用堆栈。  
 
@@ -268,12 +263,12 @@ ms.lasthandoff: 12/22/2017
 
 ###  <a name="FAQ"></a> 问题解答  
 
-####  <a name="WhyInclude"></a>问： 为什么都包含有关我的项目、 源代码管理、 生成和符号与我的发布？  
+####  <a name="WhyInclude"></a> 问： 为什么都包含有关我的项目、 源代码管理、 生成和符号与我的发布？  
  Visual Studio 使用此信息针对你尝试调试的发布查找匹配的解决方案和源。 在你打开 IntelliTrace 日志并选择要开始调试的事件后，Visual Studio 使用符号查找并向你显示发生事件的代码。 然后你可以查看记录的值，并在代码的执行中向前或向后移动。  
 
  如果使用 TFS，并且此信息不在生成清单 （BuildInfo.config 文件）、 Visual Studio 查找匹配的源和你当前连接的 TFS 上的符号。 如果 Visual Studio 找不到正确的 TFS 或匹配的源，将提示你选择不同的 TFS。  
 
-####  <a name="InvalidConfigFile"></a>问： IntelliTrace 日志缺少有关部署的应用程序的信息。 为何发生这种情况？ 我该怎么办？  
+####  <a name="InvalidConfigFile"></a> 问： IntelliTrace 日志缺少有关部署的应用程序的信息。 为何发生这种情况？ 我该怎么办？  
  当你从开发计算机部署或在部署期间未连接到 TFS 时，可能发生此情况。  
 
 1.  转到项目的部署文件夹。  
@@ -284,7 +279,7 @@ ms.lasthandoff: 12/22/2017
 
 -   **ProjectName**  
 
-     Visual Studio 中你的项目的名称。 例如:  
+     Visual Studio 中你的项目的名称。 例如：  
 
     ```  
     <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
@@ -302,7 +297,7 @@ ms.lasthandoff: 12/22/2017
 
         -   **ProjectVersionSpec**：项目的版本  
 
-         例如:  
+         例如：  
 
         ```  
         <SourceControl type="TFS">  
@@ -324,7 +319,7 @@ ms.lasthandoff: 12/22/2017
 
         -   **CommitId**：你的提交的 ID  
 
-         例如:  
+         例如：  
 
         ```  
         <SourceControl type="Git">   
@@ -350,7 +345,7 @@ ms.lasthandoff: 12/22/2017
 
     -   **BuiltSolution**：Visual Studio 用于查找和打开匹配的解决方案的解决方案文件的路径。 这是 **SolutionPath** MsBuild 属性的内容。  
 
-     例如:  
+     例如：  
 
     -   **TFS**  
 
@@ -377,17 +372,17 @@ ms.lasthandoff: 12/22/2017
         </Build>  
         ```  
 
-####  <a name="IneligibleWorkspace"></a>问： Visual Studio 为什么提示我选中的工作区域是不合格？  
+####  <a name="IneligibleWorkspace"></a> 问： Visual Studio 为什么提示我选中的工作区域是不合格？  
  **答：** 选中的工作区域没有源代码管理文件夹和本地文件夹之间的任何映射。 若要为此工作区创建映射，请选择“管理” 。 否则，请选择已映射的工作区或创建新的工作区。  
 
  ![从没有映射工作区的源代码管理打开](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
 
-####  <a name="ChooseTeamProject"></a>问： 为什么无法继续之前选择团队集合或不同的集合？  
+####  <a name="ChooseTeamProject"></a> 问： 为什么无法继续之前选择团队集合或不同的集合？  
  **答：** 这种情况可能是由于以下原因导致的：  
 
 -   Visual Studio 未连接到 TFS。  
 
-     ![从源代码管理打开 &#45;未连接](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
+     ![从源代码管理打开&#45;未连接](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
 
 -   Visual Studio 未在你的当前团队集合中找到解决方案或项目。  
 
@@ -397,12 +392,12 @@ ms.lasthandoff: 12/22/2017
 
      指定的 TFS 可能不再具有匹配的源，甚至不存在（可能是因为你已迁移到新的 TFS）。 如果指定的 TFS 不存在，Visual Studio 在一分钟后可能会超时，然后会提示你连接到不同的集合。 若要继续，请连接到正确的 TFS 服务器。  
 
-     ![从源代码管理打开 &#45;迁移](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
+     ![从源代码管理打开&#45;迁移](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
-####  <a name="WhatWorkspace"></a>问： 什么是工作区？  
+####  <a name="WhatWorkspace"></a> 问： 什么是工作区？  
  **答：**你[工作区存储源的副本](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)以便你可以单独开发和测试它之前检查在你的工作。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。  
 
-####  <a name="UntrustedSymbols"></a>问： 为什么收到有关不受信任的符号的消息？  
+####  <a name="UntrustedSymbols"></a> 问： 为什么收到有关不受信任的符号的消息？  
  ![使用不受信任的符号路径进行调试？] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
  **答：**时，此消息会出现在生成清单文件中的符号路径 (\<*ProjectName*>。BuildInfo.config) 不包括在受信任的符号路径列表。 你可将路径添加到调试器选项中的符号路径列表。

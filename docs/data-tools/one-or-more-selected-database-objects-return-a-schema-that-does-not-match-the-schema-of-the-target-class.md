@@ -1,8 +1,7 @@
 ---
-title: 一个或多个选定的数据库对象返回与目标类的架构不匹配的架构 |Microsoft 文档
-ms.custom: ''
+title: 一个或多个所选数据库对象返回与目标类的架构不匹配的架构
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
 author: gewarren
 ms.author: gewarren
@@ -10,23 +9,25 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 24ffc57e126a01eb91d6d539568a4e3dce462538
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a8f40d4789cb9e533a0652377acac09b6e43faf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>一个或多个所选数据库对象返回与目标类的架构不匹配的架构
-一个或多个选定数据库对象返回了与目标类的架构不匹配的架构。 没有向设计器中添加任何内容。  
-  
- 在将数据库对象拖动到现有实体类上时，由数据库对象返回的数据必须与目标实体类的架构相匹配。 请验证是否选择了正确的数据库对象以及是否以正确的实体类为目标。  
-  
-### <a name="to-correct-this-error"></a>更正此错误  
-  
-1.  单击**确定**以关闭对话框。  
-  
-2.  选择一个数据库对象，该对象返回的数据与目标类（要在 O/R 设计器中将该数据库对象拖动到它上面的类）的架构相匹配。  
-  
+
+一个或多个选定数据库对象返回了与目标类的架构不匹配的架构。 没有向设计器中添加任何内容。
+
+在将数据库对象拖动到现有实体类上时，由数据库对象返回的数据必须与目标实体类的架构相匹配。 请验证是否选择了正确的数据库对象以及是否以正确的实体类为目标。
+
+## <a name="to-correct-this-error"></a>更正此错误
+
+1. 单击**确定**以关闭对话框。
+
+2. 选择一个数据库对象，该对象返回的数据与目标类（要在 O/R 设计器中将该数据库对象拖动到它上面的类）的架构相匹配。
+
 ## <a name="see-also"></a>请参阅
-[O-R 设计器消息](../data-tools/o-r-designer-messages.md)  
-[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+
+- [O-R 设计器消息](../data-tools/o-r-designer-messages.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

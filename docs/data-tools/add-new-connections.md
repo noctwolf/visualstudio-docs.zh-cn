@@ -1,6 +1,5 @@
 ---
-title: 添加新的连接 |Microsoft 文档
-ms.custom: ''
+title: 添加新连接
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +8,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0355b4fe3c05fb089e6feaac5bb52ff7f3f56da0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28633fcc4c744269a2a90cc72c8136afbda6f561
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="add-new-connections"></a>添加新连接
 
@@ -37,9 +36,9 @@ ms.lasthandoff: 04/16/2018
 
 ![服务器资源管理器的新连接图标](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata 服务器资源管理器中新的连接图标")
 
-这将显示**添加连接**对话框。 在这里，我们输入 SQL Server LocalDB 实例的名称。  
+这将显示**添加连接**对话框。 在这里，我们输入 SQL Server LocalDB 实例的名称。
 
-![添加新连接](../data-tools/media/raddata-add-new-connection-dialog.png "raddata 添加新连接对话框")  
+![添加新连接](../data-tools/media/raddata-add-new-connection-dialog.png "raddata 添加新连接对话框")
 
 ## <a name="change-the-provider"></a>更改提供程序
 
@@ -57,4 +56,4 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>请参阅
 
-[适用于 NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [适用于 NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

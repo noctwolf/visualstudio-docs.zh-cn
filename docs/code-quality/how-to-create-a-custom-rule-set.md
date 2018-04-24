@@ -1,5 +1,5 @@
 ---
-title: 创建自定义代码分析规则在 Visual Studio 中设置 |Microsoft 文档
+title: 创建自定义代码分析规则集在 Visual Studio 中
 ms.date: 04/04/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57800f36c3a81e021c1fb40bab1c07bbed3e7f9d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9297d862b0fa47ecc4f5b7b08f6b754e1b5dfc3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="custom-rule-sets"></a>自定义规则集
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/16/2018
 
      \- 或 -
 
-    - 选择**\<浏览 … >**可以指定现有规则集不是在列表中。
+    - 选择**\<浏览 … >** 可以指定现有规则集不是在列表中。
 
 4. 选择**打开**若要在规则集编辑器中显示的规则。
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 04/16/2018
 
 3. 选择“打开” 。
 
-   新*.ruleset*规则集编辑器中打开文件。
+   新 *.ruleset*规则集编辑器中打开文件。
 
 ### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>创建自定义规则集来自多个规则集
 
@@ -56,13 +56,13 @@ ms.lasthandoff: 04/16/2018
 
 2. 上**属性**页，选择**代码分析**选项卡。
 
-3. 选择**\<选择多个规则集...>**从**运行此规则集**。
+3. 选择**\<选择多个规则集...>** 从**运行此规则集**。
 
 4. 在**添加或移除规则集**对话框中，选择规则集你想要包括在新的规则集。
 
    ![添加或删除规则设置对话框](media/add-remove-rule-sets.png)
 
-5. 选择**另存为**，输入的名称*.ruleset*文件，，然后选择**保存**。
+5. 选择**另存为**，输入的名称 *.ruleset*文件，，然后选择**保存**。
 
    在中选择新的规则集**运行此规则集**列表。
 

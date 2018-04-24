@@ -2,8 +2,7 @@
 title: 应用程序部署必备 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48f72640bdf8efc53b278e4600c6b262dc1a26bf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="application-deployment-prerequisites"></a>应用程序部署必备
 为确保应用程序成功安装和运行，必须先确保应用程序依赖的所有组件都已安装在目标计算机上。 例如，用 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)][!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 创建的大多数应用程序都会依赖 ；在安装应用程序前，目标计算机上必须存在正确版本的公共语言运行时。  
@@ -78,11 +77,11 @@ ms.lasthandoff: 04/16/2018
 |**-url，-componentsurl**|显示用于此安装的存储 URL 和组件 URL。|  
 |**-url =** `location`|设置 Setup.exe 将在其中查找 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的 URL。|  
 |**-componentsurl =** `location`|设置 Setup.exe 将在其中查找依赖项（如 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]）的 URL。|  
-|**-homesite =** `true`**&#124;** `false`|当`true`，从供应商的站点上的首选位置下载依赖项。 此设置将替代**-componentsurl**设置。 当`false`，从指定的 URL 下载依赖项**-componentsurl**。|  
+|**-homesite =** `true`**&#124;** `false`|当`true`，从供应商的站点上的首选位置下载依赖项。 此设置将替代 **-componentsurl**设置。 当`false`，从指定的 URL 下载依赖项 **-componentsurl**。|  
   
 ## <a name="operating-system-support"></a>操作系统支持  
  Windows Server 2008 服务器核心或 Windows Server 2008 R2 服务器核心提供功能有限的低级维护服务器环境，不支持 Visual Studio 引导程序。 例如，“服务器核心”安装选项仅支持 .NET Framework 3.5 服务器核心配置文件，因此依赖于完整的 .NET Framework 的 Visual Studio 功能无法运行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)

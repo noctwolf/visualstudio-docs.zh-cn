@@ -1,12 +1,9 @@
 ---
-title: "如何： 检查应用程序更新使用 ClickOnce 部署 API 以编程方式 |Microsoft 文档"
-ms.custom: 
+title: 如何： 检查应用程序更新使用 ClickOnce 部署 API 以编程方式 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - application updates
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
-caps.latest.revision: "9"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 02e6a4c0b69bf9e9d6170175b4324ccb226854e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5953af7c6aafe914be409d8c3ab459b6b4261e54
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>如何：使用 ClickOnce 部署 API 以编程方式检查应用程序更新
 ClickOnce 提供两种方法部署后更新的应用程序。 在第一种方法，你可以配置 ClickOnce 部署，以自动检查更新某些时间间隔。 在第二个方法中，你可以编写使用的代码<xref:System.Deployment.Application.ApplicationDeployment>类，以检查更新基于事件，例如用户请求。  
@@ -50,7 +47,7 @@ ClickOnce 提供两种方法部署后更新的应用程序。 在第一种方法
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>使用 Mage.exe 部署的应用程序以编程方式检查更新  
   
--   按照说明部署应用程序中所述使用 Mage.exe[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 当调用 Mage.exe 生成部署清单，请确保使用命令行开关`providerUrl`，并指定 ClickOnce 检查更新的位置的 URL。 如果你的应用程序将更新从[http://www.adatum.com/MyApp](http://www.adatum.com/MyApp)，例如，若要生成的部署清单的调用可能如下所示：  
+-   按照说明部署应用程序中所述使用 Mage.exe[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 当调用 Mage.exe 生成部署清单，请确保使用命令行开关`providerUrl`，并指定 ClickOnce 检查更新的位置的 URL。 如果你的应用程序将更新从[ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp)，例如，若要生成的部署清单的调用可能如下所示：  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  

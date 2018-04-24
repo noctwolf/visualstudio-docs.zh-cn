@@ -1,10 +1,8 @@
 ---
-title: CA2146： 类型必须是至少与其基类型和接口一样关键 |Microsoft 文档
-ms.custom: ''
+title: CA2146：类型必须至少与其基类型和接口一样关键
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2146
 ms.assetid: 241fb784-1f6b-46e5-8ceb-c438e341d38e
@@ -13,31 +11,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b956397818c171091e4ad982d92adc5e62370a39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d480b3b9fc2d6d294f13b15742e79c118ffec8f6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146：类型必须至少与其基类型和接口一样关键
-|||  
-|-|-|  
-|TypeName|TypesMustBeAtLeastAsCriticalAsBaseTypes|  
-|CheckId|CA2146|  
-|类别|Microsoft.Security|  
-|是否重大更改|重大|  
-  
-## <a name="cause"></a>原因  
- 透明类型派生自类型标记为<xref:System.Security.SecuritySafeCriticalAttribute>或<xref:System.Security.SecurityCriticalAttribute>，或将标有一种<xref:System.Security.SecuritySafeCriticalAttribute>属性派生自类型标记为<xref:System.Security.SecurityCriticalAttribute>属性。  
-  
-## <a name="rule-description"></a>规则说明  
- 当派生类型具有的安全透明特性与其基类型或实现的接口不是同样关键时，将引发此规则。 只有关键类型可以从关键基类型派生或实现关键接口，并且只有关键或关键安全类型可以从安全关键基类型派生或实现关键安全接口。 2 级透明度中此规则的冲突导致<xref:System.TypeLoadException>派生的类型。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要解决此冲突，标记是至少同样关键时的基类型或接口的透明特性派生或实现类型。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 不禁止显示此规则发出的警告。  
-  
-## <a name="example"></a>示例  
+|||
+|-|-|
+|TypeName|TypesMustBeAtLeastAsCriticalAsBaseTypes|
+|CheckId|CA2146|
+|类别|Microsoft.Security|
+|是否重大更改|重大|
+
+## <a name="cause"></a>原因
+ 透明类型派生自类型标记为<xref:System.Security.SecuritySafeCriticalAttribute>或<xref:System.Security.SecurityCriticalAttribute>，或将标有一种<xref:System.Security.SecuritySafeCriticalAttribute>属性派生自类型标记为<xref:System.Security.SecurityCriticalAttribute>属性。
+
+## <a name="rule-description"></a>规则说明
+ 当派生类型具有的安全透明特性与其基类型或实现的接口不是同样关键时，将引发此规则。 只有关键类型可以从关键基类型派生或实现关键接口，并且只有关键或关键安全类型可以从安全关键基类型派生或实现关键安全接口。 2 级透明度中此规则的冲突导致<xref:System.TypeLoadException>派生的类型。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要解决此冲突，标记是至少同样关键时的基类型或接口的透明特性派生或实现类型。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 不禁止显示此规则发出的警告。
+
+## <a name="example"></a>示例
  [!code-csharp[FxCop.Security.CA2146.TypesMustBeAtLeastAsCriticalAsBaseTypes#1](../code-quality/codesnippet/CSharp/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces_1.cs)]

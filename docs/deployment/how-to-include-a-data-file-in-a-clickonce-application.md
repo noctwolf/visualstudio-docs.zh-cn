@@ -1,12 +1,9 @@
 ---
-title: "如何： 在 ClickOnce 应用程序包含一个数据文件 |Microsoft 文档"
-ms.custom: 
+title: 如何： 在 ClickOnce 应用程序包含一个数据文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], data files
 - data access, ClickOnce applications
 ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
-caps.latest.revision: "15"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a7ddfdb0518a8e3154d966fdea884bf7f2e3ea37
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8240e4bb8ba540fcdd4453e39d9fa6b00b31bef2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>How to: Include a Data File in a ClickOnce Application
 每个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]你安装的应用程序分配应用程序可以在其中管理其自己的数据的目标计算机的本地磁盘上的数据目录。 数据文件可以包含任何类型的文件： 文本文件、 XML 文件或甚至 Microsoft Access 数据库 (.mdb) 文件。 下面的过程演示如何将添加到任何类型的数据文件你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  

@@ -1,5 +1,5 @@
 ---
-title: 如何： 启用和禁用托管代码的完整解决方案分析 |Microsoft 文档
+title: 如何： 启用和禁用托管代码的完整解决方案分析
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ manager: douge
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5221f2a97f892f272cce33b4f464a9ff223e8824
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52b181fe58297bb10e1a2abd0f9ff7bf9c78069e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>如何： 启用和禁用托管代码的完整解决方案分析
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 若要打开**选项**对话框中，Visual Studio 中的菜单栏上选择**工具** > **选项**。
 
-1. 在**选项**对话框框中，选择**文本编辑器** > **C#**或**基本** >  **高级**。
+1. 在**选项**对话框框中，选择**文本编辑器** > **C#** 或**基本** >  **高级**。
 
 1. 选择**启用完整解决方案分析**复选框以启用完整解决方案分析，或清除相应的框以禁用它。 选择**确定**当你已完成。
 

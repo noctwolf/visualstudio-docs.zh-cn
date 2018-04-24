@@ -3,11 +3,7 @@ title: 部署概述-Visual Studio |Microsoft 文档
 description: 了解有关将应用从 Visual Studio 部署选项。
 ms.custom: mvc
 ms.date: 11/26/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-deployment
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -23,17 +19,16 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], about deploying applications
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca458c0234de89fec814cfa5e639c13db9e6ca9b
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: c0b21e8bf8abae2e5543d68751fd53b07778c8b3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入门： 第一次查看 Visual Studio 中的部署
 
@@ -43,7 +38,7 @@ ms.lasthandoff: 04/03/2018
 
 ### <a name="deploy-to-local-folder"></a>将部署到本地文件夹
 
-- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和**.NET 核心**： 使用发布工具将部署到本地文件夹。 确切的可用选项取决于你的应用程序类型。 在解决方案资源管理器，右键单击你的项目并选择**发布**，然后选择**文件夹**。 有关详细信息，请参阅[部署到本地文件夹](quickstart-deploy-to-local-folder.md)。
+- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和 **.NET 核心**： 使用发布工具将部署到本地文件夹。 确切的可用选项取决于你的应用程序类型。 在解决方案资源管理器，右键单击你的项目并选择**发布**，然后选择**文件夹**。 有关详细信息，请参阅[部署到本地文件夹](quickstart-deploy-to-local-folder.md)。
 
     ![选择发布](../deployment/media/quickstart-publish.png)
 
@@ -51,7 +46,7 @@ ms.lasthandoff: 04/03/2018
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>发布到 Web 或部署到网络共享
 
-- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和**.NET 核心**： 你可以使用发布工具将部署到使用 FTP 或 Web 部署的网站。 有关详细信息，请参阅[部署到网站](quickstart-deploy-to-a-web-site.md)。
+- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和 **.NET 核心**： 你可以使用发布工具将部署到使用 FTP 或 Web 部署的网站。 有关详细信息，请参阅[部署到网站](quickstart-deploy-to-a-web-site.md)。
 
     在解决方案资源管理器中，右键单击项目，选择“发布”。 在发布工具中，选择你想，并执行的配置步骤的选项。
 

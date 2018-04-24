@@ -1,12 +1,9 @@
 ---
-title: "调试多个进程 |Microsoft 文档"
-ms.custom: 
+title: 调试多个进程 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
 - vs.debug.processes.attaching
@@ -19,21 +16,21 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7d0aaa97009662000bf1376c1684d9ca41a7133a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 08a089feceb6ba66791358096e3c4663df06494e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-multiple-processes"></a>调试多个进程
 下面介绍了如何启动调试进程、 在进程之间切换、 中断和继续执行、 逐步执行源、 停止调试，并终止或与进程分离。  
   
-##  <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>配置多个进程的执行行为  
+##  <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a> 配置多个进程的执行行为  
  默认情况下，当多个进程在调试器中运行时，中断、分步和停止调试器命令通常会影响所有进程。 例如，在断点处暂停一个进程时，所有其他进程的执行也会被暂停。 您可以更改此默认行为以获取对执行命令的目标的更多控制。  
   
 1.  单击**调试 > 选项和设置**。  
@@ -42,14 +39,14 @@ ms.lasthandoff: 12/22/2017
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a>查找源文件和符号 (.pdb) 文件  
+##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> 查找源文件和符号 (.pdb) 文件  
  若要浏览进程的源代码，调试器需要访问进程的源文件和符号文件。 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
  如果无法访问进程的文件，可以通过使用反汇编窗口中进行导航。 请参阅[如何： 使用反汇编窗口](../debugger/how-to-use-the-disassembly-window.md)  
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a>启动 VS 解决方案中的多个进程，附加到进程，自动在调试器中启动的进程  
+##  <a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> 启动 VS 解决方案中的多个进程，附加到进程，自动在调试器中启动的进程  
   
 -   [开始调试 Visual Studio 解决方案中的多个进程](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution)  
   
@@ -68,25 +65,25 @@ ms.lasthandoff: 12/22/2017
 >   
 >  -   在子进程启动后附加到该子进程。  
 >   
->      或  
+>      -或-  
 > -   配置 Windows 以自动启动调试器的新实例中的子进程。  
   
-###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a>开始调试 Visual Studio 解决方案中的多个进程  
+###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> 开始调试 Visual Studio 解决方案中的多个进程  
  如果您在 Visual Studio 解决方案中有多个可独立运行的项目（在独立进程中运行的项目），则可以选择调试器将启动的项目。  
   
  ![更改项目的启动类型](../debugger/media/dbg_execution_startmultipleprojects.png "DBG_Execution_StartMultipleProjects")  
   
-####  <a name="BKMK_Change_the_startup_project"></a>更改启动项目  
+####  <a name="BKMK_Change_the_startup_project"></a> 更改启动项目  
  若要更改解决方案的启动项目，在解决方案资源管理器中选择项目，然后选择**设为启动项目**从上下文菜单。  
   
-####  <a name="BKMK_Start_a_specific_project_in_a_solution"></a>启动解决方案中的特定项目  
+####  <a name="BKMK_Start_a_specific_project_in_a_solution"></a> 启动解决方案中的特定项目  
  若要启动而无需更改默认启动项目的解决方案的项目，在解决方案资源管理器中选择项目，然后选择**调试**从上下文菜单。 然后，您可以选择**启动新实例**或**单步执行新实例**。  
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [启动 VS 解决方案中的多个进程，附加到进程，自动在调试器中启动的进程](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a>启动解决方案中的多个项目  
+####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a> 启动解决方案中的多个项目  
   
 1.  在解决方案资源管理器中选择解决方案，然后选择**属性**上下文菜单上。  
   
@@ -98,7 +95,7 @@ ms.lasthandoff: 12/22/2017
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-###  <a name="BKMK_Attach_to_a_process"></a>附加到进程  
+###  <a name="BKMK_Attach_to_a_process"></a> 附加到进程  
  调试器还可以*附加*到在 Visual Studio 外部的进程中运行的程序，包括在远程设备运行的程序。 一旦附加到某个程序，就可以使用调试器执行命令、检查程序状态，等等。 检查程序的能力可能会受到某些限制，这取决于程序是否用调试信息生成，是否可以访问程序源代码，以及公共语言运行时 JIT 编译器是否在跟踪调试信息。  
   
  请参阅[附加到运行进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)有关详细信息。  
@@ -111,7 +108,7 @@ ms.lasthandoff: 12/22/2017
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a>自动在调试器中启动的进程  
+###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> 自动在调试器中启动的进程  
  有时，你可能需要调试由另一个进程启动的程序的启动代码。 这样的示例包括服务和自定义设置操作。 在这些情况下，可以让调试器在应用程序启动时启动并自动附加。  
   
 1.  启动注册表编辑器 (**regedit.exe**)。  
@@ -136,13 +133,13 @@ ms.lasthandoff: 12/22/2017
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a>切换进程，中断并继续执行，逐步执行源  
+##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> 切换进程，中断并继续执行，逐步执行源  
   
 -   [在进程之间切换](#BKMK_Switch_between_processes)  
   
 -   [中断、 单步执行，并继续命令](#BKMK_Break__step__and_continue_commands)  
   
-###  <a name="BKMK_Switch_between_processes"></a>在进程之间切换  
+###  <a name="BKMK_Switch_between_processes"></a> 在进程之间切换  
  调试时可以附加到多个进程，但在任何给定时间，调试器中只有一个进程处于活动状态。 你可以设置活动或*当前*进程在调试位置工具栏或**进程**窗口。 若要在两个进程间切换，这两个进程必须处于中断模式。  
   
  **若要设置当前进程**  
@@ -165,7 +162,7 @@ ms.lasthandoff: 12/22/2017
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-###  <a name="BKMK_Break__step__and_continue_commands"></a>中断、 单步执行，并继续命令  
+###  <a name="BKMK_Break__step__and_continue_commands"></a> 中断、 单步执行，并继续命令  
   
 > [!NOTE]
 >  默认情况下，中断、继续和分步调试器命令会影响所有正在调试的进程。 若要更改此行为，请参阅[配置多个进程的执行行为](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
@@ -186,7 +183,7 @@ ms.lasthandoff: 12/22/2017
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a>停止调试、 终止进程或与进程分离  
+##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> 停止调试、 终止进程或与进程分离  
   
 -   [停止、 终止和分离命令](#BKMK_Stop__terminate__and_detach_commands)  
   
@@ -205,7 +202,7 @@ ms.lasthandoff: 12/22/2017
   
 -   打开**进程**窗口 (快捷**Ctrl + Alt + Z**)。 选择的进程，然后选中或清除**调试停止时分离**复选框。  
   
-###  <a name="BKMK_Stop__terminate__and_detach_commands"></a>停止、 终止和分离命令  
+###  <a name="BKMK_Stop__terminate__and_detach_commands"></a> 停止、 终止和分离命令  
   
 |||  
 |-|-|  

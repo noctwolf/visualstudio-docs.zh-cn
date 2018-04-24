@@ -2,9 +2,8 @@
 title: ClickOnce 部署清单 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce, deployment manifests
 - deployment manifests [ClickOnce]
 ms.assetid: 8457e615-e3b6-4990-8dcf-11bc590e4e9b
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5664c3505c44cb519365e7f15344d390eeebac0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd67f3db61662535a0a8522575e716886602f5b7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署清单
 部署清单是一个 XML 文件，用于描述 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，包括要部署的当前 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序版本的标识。  
@@ -119,5 +118,5 @@ ms.lasthandoff: 04/16/2018
 </Signature></asmv1:assembly>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

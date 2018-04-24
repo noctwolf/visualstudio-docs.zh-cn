@@ -1,12 +1,9 @@
 ---
-title: "ClickOnce 如何执行应用程序更新 |Microsoft 文档"
-ms.custom: 
+title: ClickOnce 如何执行应用程序更新 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - deploying applications [ClickOnce], application updates
 ms.assetid: d54313c2-cf0c-420d-b151-99953a95f0bb
-caps.latest.revision: "9"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 6ee199aa98c0c5b72a5693c840b892929e55477a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bbe09cfe546d947bf07334e9dd6468226884e9e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce 如何执行应用程序更新
 ClickOnce 使用应用程序的部署清单中指定的文件版本信息来决定是否要更新应用程序的文件。 ClickOnce 更新开始后，使用一种称为技术*文件修补*从而避免冗余下载的应用程序文件。  

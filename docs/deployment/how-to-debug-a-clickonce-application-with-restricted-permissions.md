@@ -1,12 +1,9 @@
 ---
-title: "如何： 调试具有受限权限的 ClickOnce 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 如何： 调试具有受限权限的 ClickOnce 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, debugging
 - ClickOnce applications, debugging
 ms.assetid: 6991ea91-5253-451b-923d-22273a3d38b1
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4ce173268be43cde12ecec4dd859623123a0bee5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 318316c4c2a0f545f6e038581d94d9f7fb21eca4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>如何：使用受限权限对 ClickOnce 应用程序进行调试
 作为开发人员，你很可能使用完全信任权限运行开发计算机，因此在调试 ClickOnce 应用程序时不会遇到最终用户在使用受限权限运行它时可能会遇到的相同安全异常。  

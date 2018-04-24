@@ -1,12 +1,9 @@
 ---
-title: "本地化 ClickOnce 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 本地化 ClickOnce 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,16 +18,16 @@ helpviewer_keywords:
 - Windows Forms, ClickOnce applications
 - console applications, ClickOnce applications
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
-caps.latest.revision: "16"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e1b5b9697445b2d8cc35a73841526db0bd69b5f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c3d7ebc762c7b1feb895323f7ef9ee0180ce954e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="localizing-clickonce-applications"></a>本地化 ClickOnce 应用程序
 本地化是使你的应用程序适用于特定区域性的过程。 此过程涉及使用正确的日期和货币格式、调整窗体上控件的大小以及根据需要从右到左镜像处理控件，从而将用户界面 (UI) 文本转换为特定于区域的语言。  

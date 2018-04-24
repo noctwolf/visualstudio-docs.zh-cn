@@ -1,5 +1,5 @@
 ---
-title: 演练： 创建自定义指令处理器 |Microsoft 文档
+title: 演练：创建自定义指令处理器
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: f302435bcc5c8b9b66d9822888527a6840baaad5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 322de4ea4cd5c92f57e46daa4a8256b7a212c0a3
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>演练： 创建自定义指令处理器
 
@@ -658,7 +658,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     |----------|----------|----------|
     |(默认)|REG_SZ|(未设置值)|
     |类|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |CodeBase|REG_SZ|**\<解决方案的路径 >**CustomDP\bin\Debug\CustomDP.dll|
+    |CodeBase|REG_SZ|**\<解决方案的路径 >** CustomDP\bin\Debug\CustomDP.dll|
 
      如果已将程序集放置在 GAC 中，则值应如下所示：
 

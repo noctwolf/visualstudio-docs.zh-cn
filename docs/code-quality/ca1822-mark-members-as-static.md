@@ -1,10 +1,8 @@
 ---
-title: CA1822： 将成员标记为静态 |Microsoft 文档
-ms.custom: ''
+title: CA1822：将成员标记为 static
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
 - CA1822
@@ -17,35 +15,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7524db68b984155a8a03f1f0cb1cce0373b382a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 19ca5639b72462f49a818b50a9aaae6e795342b9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822：将成员标记为 static
-|||  
-|-|-|  
-|TypeName|MarkMembersAsStatic|  
-|CheckId|CA1822|  
-|类别|Microsoft.Performance|  
-|是否重大更改|无间断-如果不是程序集外部可见成员而不考虑更改你进行。 非重大更改-如果你只需更改成员的实例成员为`this`关键字。<br /><br /> 中断性-如果从实例成员的成员更改为静态成员，并且它是程序集外部可见。|  
-  
-## <a name="cause"></a>原因  
- 不会访问实例数据的成员未标记为 static (在共享[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。  
-  
-## <a name="rule-description"></a>规则说明  
- 可以将不访问实例数据或不调用实例方法的成员标记为 static（在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中为 Shared）。 在将这些方法标记为 static 之后，编译器将向这些成员发出非虚拟调用站点。 发出非虚拟调用站点将禁止在每个调用，以确保当前的对象指针为非 null 的运行时检查。 这可以实现使性能敏感的代码得到显著提高。 在某些情况下，无法访问当前的对象实例表示的正确性问题。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 将标记为静态成员 (或共享中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 或使用 this / Me 方法中的正文，如果适用。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 则可以安全地禁止显示此规则，以前发布的解决方法将一项重大更改的代码的警告。  
-  
-## <a name="related-rules"></a>相关的规则  
- [CA1811：避免使用未调用的私有代码](../code-quality/ca1811-avoid-uncalled-private-code.md)  
-  
- [CA1812：避免未实例化的内部类](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
-  
+|||
+|-|-|
+|TypeName|MarkMembersAsStatic|
+|CheckId|CA1822|
+|类别|Microsoft.Performance|
+|是否重大更改|无间断-如果不是程序集外部可见成员而不考虑更改你进行。 非重大更改-如果你只需更改成员的实例成员为`this`关键字。<br /><br /> 中断性-如果从实例成员的成员更改为静态成员，并且它是程序集外部可见。|
+
+## <a name="cause"></a>原因
+ 不会访问实例数据的成员未标记为 static (在共享[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
+
+## <a name="rule-description"></a>规则说明
+ 可以将不访问实例数据或不调用实例方法的成员标记为 static（在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中为 Shared）。 在将这些方法标记为 static 之后，编译器将向这些成员发出非虚拟调用站点。 发出非虚拟调用站点将禁止在每个调用，以确保当前的对象指针为非 null 的运行时检查。 这可以实现使性能敏感的代码得到显著提高。 在某些情况下，无法访问当前的对象实例表示的正确性问题。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 将标记为静态成员 (或共享中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 或使用 this / Me 方法中的正文，如果适用。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 则可以安全地禁止显示此规则，以前发布的解决方法将一项重大更改的代码的警告。
+
+## <a name="related-rules"></a>相关的规则
+ [CA1811：避免使用未调用的私有代码](../code-quality/ca1811-avoid-uncalled-private-code.md)
+
+ [CA1812：避免未实例化的内部类](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+
  [CA1804：移除未使用的局部变量](../code-quality/ca1804-remove-unused-locals.md)

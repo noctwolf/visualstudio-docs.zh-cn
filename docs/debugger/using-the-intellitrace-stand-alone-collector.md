@@ -2,8 +2,7 @@
 title: 使用 IntelliTrace 独立收集器 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9533c2a79a8fb692e970cf2f59d4be6feaaefc5f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 410b8a979334edd1c333a43851f996da2b69bd03
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 独立收集器
 **IntelliTrace 独立收集器** 可让你收集生产服务器或其他环境中应用的 IntelliTrace 诊断数据，而无需在目标计算机上安装 Visual Studio 或更改目标系统环境。 IntelliTrace 独立收集器可用于 Web、SharePoint、WPF 和 Windows 窗体应用中。 数据收集完毕后，只需删除收集器以进行卸载。  

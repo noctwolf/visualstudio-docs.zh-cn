@@ -1,10 +1,8 @@
 ---
-title: CA1051： 不要声明可见实例字段 |Microsoft 文档
-ms.custom: ''
+title: CA1051：不要声明可见实例字段
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1051
 - DoNotDeclareVisibleInstanceFields
@@ -17,41 +15,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c89e5113e787ca59b4892c64de0077bd27204802
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fb322ffb6f3603001e9fa673eb9daf9f28d73b18
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051：不要声明可见实例字段
-|||  
-|-|-|  
-|TypeName|DoNotDeclareVisibleInstanceFields|  
-|CheckId|CA1051|  
-|类别|Microsoft.Design|  
-|是否重大更改|重大|  
-  
-## <a name="cause"></a>原因  
- 外部可见的类型具有一个外部可见实例字段。  
-  
-## <a name="rule-description"></a>规则说明  
- 字段的主要用途应是作为实现的详细信息。 字段应为`private`或`internal`并应通过使用属性公开。 它是很容易就能访问的字段，以及随着类型的特性的扩展，而不会引入的重大更改，可以更改的属性访问器中的代码访问的属性。 仅返回一个私有或内部字段的值的属性了优化，可与相媲美访问字段; 执行很少的性能提升属性的高于外部可见的字段的用法与相关联。  
-  
- 外部可见指`public`， `protected`，和`protected internal`(`Public`， `Protected`，和`Protected Friend`在 Visual Basic 中) 可访问性级别。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，请字段`private`或`internal`和公开使用外部可见的属性。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 不禁止显示此规则发出的警告。 外部可见的字段不提供任何权益，这是对属性不可用。 此外，无法保护公共字段[链接需求](/dotnet/framework/misc/link-demands)。 请参阅[CA2112： 受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示一种类型 (`BadPublicInstanceFields`) 了违反此规则。 `GoodPublicInstanceFields` 显示已纠正的代码。  
-  
- [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]  
-  
-## <a name="related-rules"></a>相关的规则  
- [CA2112：受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
-  
-## <a name="see-also"></a>另请参阅  
+|||
+|-|-|
+|TypeName|DoNotDeclareVisibleInstanceFields|
+|CheckId|CA1051|
+|类别|Microsoft.Design|
+|是否重大更改|重大|
+
+## <a name="cause"></a>原因
+ 外部可见的类型具有一个外部可见实例字段。
+
+## <a name="rule-description"></a>规则说明
+ 字段的主要用途应是作为实现的详细信息。 字段应为`private`或`internal`并应通过使用属性公开。 它是很容易就能访问的字段，以及随着类型的特性的扩展，而不会引入的重大更改，可以更改的属性访问器中的代码访问的属性。 仅返回一个私有或内部字段的值的属性了优化，可与相媲美访问字段; 执行很少的性能提升属性的高于外部可见的字段的用法与相关联。
+
+ 外部可见指`public`， `protected`，和`protected internal`(`Public`， `Protected`，和`Protected Friend`在 Visual Basic 中) 可访问性级别。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，请字段`private`或`internal`和公开使用外部可见的属性。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 不禁止显示此规则发出的警告。 外部可见的字段不提供任何权益，这是对属性不可用。 此外，无法保护公共字段[链接需求](/dotnet/framework/misc/link-demands)。 请参阅[CA2112： 受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
+
+## <a name="example"></a>示例
+ 下面的示例演示一种类型 (`BadPublicInstanceFields`) 了违反此规则。 `GoodPublicInstanceFields` 显示已纠正的代码。
+
+ [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]
+
+## <a name="related-rules"></a>相关的规则
+ [CA2112：受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+
+## <a name="see-also"></a>请参阅
  [链接需求](/dotnet/framework/misc/link-demands)

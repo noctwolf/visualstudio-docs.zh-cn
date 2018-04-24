@@ -2,12 +2,8 @@
 title: 使用任务窗口 |Microsoft 文档
 ms.custom: ''
 ms.date: 03/18/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.paralleltasks
 dev_langs:
@@ -18,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
-caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 889c78e17898a8f5f3d84b81c9605761919d7a2e
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 85319575766ca9ff3ace297bf1e4e577d49ee6d9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-the-tasks-window"></a>使用“任务”窗口
 **任务**窗口类似于**线程**窗口中，但它显示有关的信息<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](/cpp/parallel/concrt/reference/task-group-class)，或[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)而不是每个线程的对象。 与线程一样，任务表示可并行运行的异步操作；但是，多个任务可以在同一个线程上运行。 
@@ -61,7 +56,7 @@ ms.lasthandoff: 03/22/2018
 |**位置**|任务调用堆栈中的当前位置。 将鼠标指针悬停在此单元格上可以查看任务的整个调用堆栈。 已计划的任务在该列中没有相应的值。|  
 |**Task**|创建任务时传递到该任务的初始方法以及任何自变量。|  
 |**AsyncState**|对于托管代码，即任务状态。 默认情况下，此列被隐藏。 若要显示此列，请打开其中一个列标题的上下文菜单。 选择**列**， **AsyncState**。|  
-|**Parent**|创建此任务的任务的 ID。 如果为空白，则说明该任务没有父级。 这仅适用于托管程序。|  
+|**父**|创建此任务的任务的 ID。 如果为空白，则说明该任务没有父级。 这仅适用于托管程序。|  
 |**线程分配**|运行任务的线程的 ID 和名称。|  
 |**AppDomain**|对于托管代码，该列表示要在其中执行任务的应用程序域。|  
 |**task_group**|对于本机代码的地址[task_group](/cpp/parallel/concrt/reference/task-group-class.mdd)计划任务的对象。 对于异步代理和轻量级任务，该列设置为 0。|  
@@ -96,7 +91,7 @@ ms.lasthandoff: 03/22/2018
 
 **切换到任务**命令使当前任务活动的任务。 **切换到帧**命令使所选的堆栈帧的活动堆栈帧。 调试器上下文切换到当前任务或所选的堆栈帧。
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
  [并行编程](/dotnet/standard/parallel-programming/index)   

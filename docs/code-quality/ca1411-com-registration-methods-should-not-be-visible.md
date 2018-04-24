@@ -1,10 +1,8 @@
 ---
-title: 'CA1411: COM 注册方法应该是不可见 |Microsoft 文档'
-ms.custom: ''
+title: CA1411：COM 注册方法应该是不可见的
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1411
 - ComRegistrationMethodsShouldNotBeVisible
@@ -17,42 +15,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c946152fe0962dcf3d02afc36982548c98a6932
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1fbb8a3f9dd442e26ee18abd345d92be3f650c67
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411：COM 注册方法应该是不可见的
-|||  
-|-|-|  
-|TypeName|ComRegistrationMethodsShouldNotBeVisible|  
-|CheckId|CA1411|  
-|类别|Microsoft.Interoperability|  
-|是否重大更改|重大|  
-  
-## <a name="cause"></a>原因  
- 将标有一个方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>或<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>属性是外部可见。  
-  
-## <a name="rule-description"></a>规则说明  
- 程序集注册时与组件对象模型 (COM)，会将条目添加到程序集中的每个 COM 可见类型的注册表。 使用标记的方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>和<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>属性可通过调用在注册和注销过程，分别运行特定于这些类型注册/注销的用户代码。 此代码不应在这些进程外部调用。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，更改到方法的可访问性`private`或`internal`(`Friend`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 不禁止显示此规则发出的警告。  
-  
-## <a name="example"></a>示例  
- 下面的示例显示与该规则冲突的两种方法。  
-  
+|||
+|-|-|
+|TypeName|ComRegistrationMethodsShouldNotBeVisible|
+|CheckId|CA1411|
+|类别|Microsoft.Interoperability|
+|是否重大更改|重大|
+
+## <a name="cause"></a>原因
+ 将标有一个方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>或<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>属性是外部可见。
+
+## <a name="rule-description"></a>规则说明
+ 程序集注册时与组件对象模型 (COM)，会将条目添加到程序集中的每个 COM 可见类型的注册表。 使用标记的方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>和<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>属性可通过调用在注册和注销过程，分别运行特定于这些类型注册/注销的用户代码。 此代码不应在这些进程外部调用。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，更改到方法的可访问性`private`或`internal`(`Friend`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 不禁止显示此规则发出的警告。
+
+## <a name="example"></a>示例
+ 下面的示例显示与该规则冲突的两种方法。
+
  [!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
- [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]  
-  
-## <a name="related-rules"></a>相关的规则  
- [CA1410：应对 COM 注册方法进行匹配](../code-quality/ca1410-com-registration-methods-should-be-matched.md)  
-  
-## <a name="see-also"></a>另请参阅  
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>   
- [向 COM 注册程序集](/dotnet/framework/interop/registering-assemblies-with-com)   
- [Regasm.exe（程序集注册工具）](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)
+ [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
+
+## <a name="related-rules"></a>相关的规则
+ [CA1410：应对 COM 注册方法进行匹配](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+
+## <a name="see-also"></a>请参阅
+ <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [向 COM 注册程序集](/dotnet/framework/interop/registering-assemblies-with-com) [Regasm.exe （程序集注册工具）](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)

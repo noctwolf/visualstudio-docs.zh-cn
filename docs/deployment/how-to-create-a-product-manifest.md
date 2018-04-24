@@ -1,12 +1,9 @@
 ---
-title: "如何： 创建产品清单 |Microsoft 文档"
-ms.custom: 
+title: 如何： 创建产品清单 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - prerequisites, custom bootstrapper package
 - dependencies, custom bootstrapper package
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 071bfa46df7e11f760bc32cda0a732388835d2d4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7cac17f0b4ca7a2dd4e5c4cf6f1f2da9e4dc5f54
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-a-product-manifest"></a>如何：创建产品清单
 若要部署你的应用程序的先决条件，你可以创建引导程序包。 引导程序包包含一个单个产品清单文件，但是包清单的每个区域设置。 包清单中包含包的本地化特定的方面。 这包括字符串、 最终用户许可协议和语言包。  
@@ -68,7 +65,7 @@ ms.lasthandoff: 12/22/2017
   
 6.  复制或移动到 C:\package 文件夹 CorePackage.msi 文件。  
   
-7.  添加 XML，以使用引导程序命令安装包。 引导程序会自动添加**/qn**将以无提示方式安装的.msi 文件的标志。 如果该文件是.exe，引导程序通过使用命令行界面运行.exe 文件。 下面的 XML 演示没有自变量到 CorePackage.msi，但你可以将命令行自变量放入参数属性。  
+7.  添加 XML，以使用引导程序命令安装包。 引导程序会自动添加 **/qn**将以无提示方式安装的.msi 文件的标志。 如果该文件是.exe，引导程序通过使用命令行界面运行.exe 文件。 下面的 XML 演示没有自变量到 CorePackage.msi，但你可以将命令行自变量放入参数属性。  
   
     ```  
     <Commands>  

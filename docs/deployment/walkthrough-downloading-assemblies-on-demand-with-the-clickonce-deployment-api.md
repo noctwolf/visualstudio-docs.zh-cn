@@ -1,12 +1,9 @@
 ---
-title: "演练： 下载使用 ClickOnce 部署 API 按需程序集 |Microsoft 文档"
-ms.custom: 
+title: 演练： 下载使用 ClickOnce 部署 API 按需程序集 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, on-demand download
 - on-demand assemblies, ClickOnce
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
-caps.latest.revision: "16"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 640c0852a3745d11aae119e3c00e024b594d9132
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 48ed3828f70424ee328c1fc52873e1a0f7e620aa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：使用 ClickOnce 部署 API 按需下载程序集
 默认情况下，所有程序集包括在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]首次运行应用程序时，会下载应用程序。 但是，您可能必须使用你的用户的一小部分的应用程序的部分。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将标记为"可选"应用程序中的某些程序集和如何通过使用下载中的类<xref:System.Deployment.Application>当公共语言运行时 (CLR) 要求它们时的命名空间。  

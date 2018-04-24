@@ -1,12 +1,9 @@
 ---
-title: "ClickOnce 部署中的特定错误的疑难解答 |Microsoft 文档"
-ms.custom: 
+title: ClickOnce 部署中的特定错误的疑难解答 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - troubleshooting ClickOnce deployments
 - ClickOnce deployment, troubleshooting
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
-caps.latest.revision: "13"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ffa7449347fe5e898f2984237dfc8908e3bb2003
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a9829a80916f6e18e9adaf3d0e41fe825541438
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 部署中的特定错误的疑难解答
 本主题列出了在部署时可能发生的以下常见错误[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，并提供解决每个问题的步骤。  
@@ -72,13 +69,13 @@ ms.lasthandoff: 12/22/2017
   
 -   验证部署清单中的更新间隔。 如果此间隔设置为定期间隔，例如一次每六个小时，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将不会扫描更新之前经过此时间间隔。 你可以更改要在应用程序启动每次更新的扫描的清单。 更改的更新间隔是在开发期间一个方便的选项以验证正在安装更新，但它会减慢应用程序激活。  
   
--   请尝试在开始菜单上重新启动应用程序。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]可能具有在后台，检测到更新，但将提示你在下一步激活上安装 bits。  
+-   请尝试在开始菜单上重新启动应用程序。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可能具有在后台，检测到更新，但将提示你在下一步激活上安装 bits。  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>更新期间会接收以下日志条目的错误:"部署中的引用与应用程序清单中定义的标识不匹配"  
  因为你已手动编辑部署和应用程序清单，并导致无法包含其他不同步的一个清单中标识的程序集的说明，可能出现此错误。 程序集的标识由其名称、 版本、 区域性和公钥标记组成。 检查在你的清单中的标识说明并更正任何差异。  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>第一次从本地磁盘或 CD-ROM 激活成功，但从开始菜单的后续激活将不会成功  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用部署提供程序 URL 接收更新的应用程序。 验证 URL 指向的位置正确。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用部署提供程序 URL 接收更新的应用程序。 验证 URL 指向的位置正确。  
   
 #### <a name="error-cannot-start-the-application"></a>错误:"无法启动应用程序"  
  此错误消息通常指示没有安装到此应用程序问题[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]存储。 应用程序出现错误，或者存储已损坏。 日志文件可能会告诉您发生错误的位置。  
@@ -106,7 +103,7 @@ ms.lasthandoff: 12/22/2017
  如果您要发布的 url，请确保目标计算机具有启用 FrontPage 服务器扩展。  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>错误消息： 无法创建网站\<站点 >。 未安装用于与 FrontPage 服务器扩展进行通信的组件。  
- 确保你有 Microsoft Visual Studio Web 创作组件安装在你发布从计算机上。 对于 Express 用户，默认情况下未安装此组件。 有关详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310)。  
+ 确保你有 Microsoft Visual Studio Web 创作组件安装在你发布从计算机上。 对于 Express 用户，默认情况下未安装此组件。 有关详细信息，请参阅 [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310)。  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>错误消息： 找不到文件 Microsoft.Windows.Common 的控件，版本 = 6.0.0.0，区域性 = *，PublicKeyToken = 6595b64144ccf1df，ProcessorArchitecture =\*，类型 = win32  
  当你尝试发布启用了视觉样式的 WPF 应用程序时，会出现此错误消息。 若要解决此问题，请参阅[如何： 发布具有启用视觉样式的 WPF 应用程序](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)。  
@@ -132,11 +129,11 @@ ms.lasthandoff: 12/22/2017
 |无法继续。 应用程序的格式不正确。 应用程序发布者联系以获取帮助。<br /><br /> 应用程序验证未成功。 无法继续。<br /><br /> 无法检索应用程序文件。 在部署中损坏的文件。|部署中的清单文件之一无效语法，或包含不能为与相应的文件进行对帐哈希。 此错误也可能表示在程序集中嵌入的清单已损坏。 重新创建你的部署和重新编译你的应用程序，或找到并在清单中手动修复错误。|  
 |无法检索应用程序。 身份验证错误。<br /><br /> 应用程序安装未成功。 找不到服务器上的应用程序文件。 联系的应用程序发行者或管理员联系以获取帮助。|无法下载部署中的一个或多个文件，因为您没有权限来访问它们。 这可能引起所返回的 Web 服务器，如果你在部署中的文件之一结尾扩展，可将其视为受保护的文件的 Web 服务器可能会出现一个 403 禁止访问错误。 此外，包含一个或多个应用程序的文件的目录可能需要用户名和密码才能访问。|  
 |无法下载应用程序。 应用程序缺少必需的文件。 与应用程序供应商或你的系统管理员联系以获取帮助。|在服务器上找不到一个或多个应用程序清单中列出的文件。 验证你已上载部署的所有依赖文件，然后重试。|  
-|应用程序下载未成功。 检查网络连接，或与系统管理员或网络服务提供商。|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]无法建立网络连接到服务器。 检查服务器的可用性和你网络的状态。|  
+|应用程序下载未成功。 检查网络连接，或与系统管理员或网络服务提供商。|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 无法建立网络连接到服务器。 检查服务器的可用性和你网络的状态。|  
 |URLDownloadToCacheFile 失败，HRESULT\<编号 >。 尝试下载时出错\<文件 >。|如果用户具有 Internet 资源管理器高级安全选项"如果之间安全的更改，则发出警告和非安全模式"的计算机上设置部署目标，并且安装程序正在安装 ClickOnce 应用程序的重定向 URL 从非安全到安全站点 （或反之亦然），则安装将失败，因为 Internet Explorer 警告中断它。<br /><br /> 若要解决此问题，你可以执行下列其中一项：<br /><br /> -清除安全选项。<br />-请确保不使用这种方式来更改安全模式重定向设置 URL。<br />-完全删除重定向，并指向实际设置 URL。|  
 |出现错误写入到硬盘。 可能有足够的空间，可用磁盘上。 与应用程序供应商或你的系统管理员联系以获取帮助。|这可能表示没有足够的磁盘空间来存储应用程序，但当你尝试将应用程序文件保存到驱动器时，它还可指示更多常规的 I/O 错误。|  
 |无法启动应用程序。 磁盘上没有足够的可用空间。|硬盘已满。 清理空间并尝试再次运行应用程序。|  
-|过多的已部署的激活尝试一次加载。|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]限制可以在同一时间开始的不同应用程序的数量。 这主要是为了帮助防止恶意发起拒绝服务攻击尝试针对本地[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]服务; 请尝试以相同的应用程序启动重复，快速进行后续、 仅最终将得到的单个实例的用户应用程序。|  
+|过多的已部署的激活尝试一次加载。|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 限制可以在同一时间开始的不同应用程序的数量。 这主要是为了帮助防止恶意发起拒绝服务攻击尝试针对本地[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]服务; 请尝试以相同的应用程序启动重复，快速进行后续、 仅最终将得到的单个实例的用户应用程序。|  
 |无法通过网络激活快捷方式。|快捷方式[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]仅可以在本地硬盘上启动应用程序。 它们不能通过打开指向远程服务器上的快捷方式文件的 URL 来启动。|  
 |太大而无法联机在部分信任环境中运行应用程序。 与应用程序供应商或你的系统管理员联系以获取帮助。|在部分信任环境中运行的应用程序不能大于联机应用程序配额，它们的默认值为 250 MB 的大小的一半。|  
   

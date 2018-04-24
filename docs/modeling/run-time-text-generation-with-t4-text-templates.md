@@ -1,6 +1,5 @@
 ---
-title: 使用 T4 文本模板的运行时文本生成 |Microsoft 文档
-ms.custom: ''
+title: 使用 T4 文本模板的运行时文本生成
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,11 +16,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 30956435c321a45a3a1ee32a305080d35b073293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d5cfc884cc595e1e95df4b309bfaeb0e12949d34
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 
@@ -65,7 +64,7 @@ This report is Company Confidential.
 
 4. 选择“添加”。
 
-    创建新的文件具有扩展名**.tt**。 其**自定义工具**属性设置为**TextTemplatingFilePreprocessor**。 它包含以下行：
+    创建新的文件具有扩展名 **.tt**。 其**自定义工具**属性设置为**TextTemplatingFilePreprocessor**。 它包含以下行：
 
     ```
     <#@ template language="C#" #>
@@ -86,9 +85,9 @@ This report is Company Confidential.
 2. 设置文件的**自定义工具**属性**TextTemplatingFilePreprocessor**。 在解决方案资源管理器，该文件的快捷菜单上选择**属性**。
 
     > [!NOTE]
-    > 如果已设置该属性，请确保它是**TextTemplatingFilePreprocessor**和 not **TextTemplatingFileGenerator**。 可能的原因是包含已具有扩展名的文件**.tt**。
+    > 如果已设置该属性，请确保它是**TextTemplatingFilePreprocessor**和 not **TextTemplatingFileGenerator**。 可能的原因是包含已具有扩展名的文件 **.tt**。
 
-3. 更改到文件扩展名**.tt**。 虽然此步骤是可选的它可帮助你避免在不适当的编辑器中打开该文件。
+3. 更改到文件扩展名 **.tt**。 虽然此步骤是可选的它可帮助你避免在不适当的编辑器中打开该文件。
 
 4. 从文件名称的主要部分中删除任何空格或标点。 例如，"我的 Web Page.tt"将是不正确，但是"MyWebPage.tt"正确。 文件名称将用作生成的代码中的类名称。
 
@@ -108,7 +107,7 @@ This report is Company Confidential.
 
 ### <a name="plain-content"></a>纯文本内容
 
-编辑**.tt**文件，以包含您的应用程序生成的文本。 例如: 
+编辑 **.tt**文件，以包含您的应用程序生成的文本。 例如：
 
 ```html
 <html><body>
@@ -120,7 +119,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>嵌入的程序代码
 
-你可以将插入程序代码之间`<#`和`#>`。 例如: 
+你可以将插入程序代码之间`<#`和`#>`。 例如：
 
 ```csharp
 <table>
@@ -151,7 +150,7 @@ This report is Company Confidential.
 
 ### <a name="the-code-built-from-the-template"></a>从模板生成的代码
 
-在您保存**.tt**文件，分公司**.cs**或**.vb**生成文件。 若要查看此文件在解决方案资源管理器中的，展开**.tt**文件节点。 在 Visual Basic 项目中，首先选择**显示所有文件**解决方案资源管理器工具栏中。
+在您保存 **.tt**文件，分公司 **.cs**或 **.vb**生成文件。 若要查看此文件在解决方案资源管理器中的，展开 **.tt**文件节点。 在 Visual Basic 项目中，首先选择**显示所有文件**解决方案资源管理器工具栏中。
 
 请注意，附属文件包含分部类，其中包含调用的方法`TransformText()`。 你可以从你的应用程序调用此方法。
 

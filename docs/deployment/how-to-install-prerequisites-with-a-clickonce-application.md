@@ -1,12 +1,9 @@
 ---
-title: "如何： 与 ClickOnce 应用程序一起安装系统必备组件 |Microsoft 文档"
-ms.custom: 
+title: 如何： 与 ClickOnce 应用程序一起安装系统必备组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - components, bootstrapping
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
-caps.latest.revision: "13"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 83458b627949cda5f918ec06a5f84bd9697ba6d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d803ae651d75dd6195e4046b86a77d46d3174fc4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>如何：与 ClickOnce 应用程序一起安装系统必备组件
 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序需要，在能够运行之前在计算机上安装.NET Framework 的正确版本; 许多应用程序具有其他系统必备组件。 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，你可以选择一组的必备组件与你的应用程序一起打包。 在安装时，将执行检查以确定它是否已存在; 每个系统必备组件如果在安装之前将不安装[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  

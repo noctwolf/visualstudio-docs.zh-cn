@@ -1,12 +1,9 @@
 ---
-title: "调试使用 System.Deployment.Application 的 ClickOnce 应用程序 |Microsoft 文档"
-ms.custom: 
+title: 调试使用 System.Deployment.Application 的 ClickOnce 应用程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - debugging, System.Deployment
 - deploying applications [ClickOnce], debugging
 ms.assetid: 86f31948-2ca8-47c0-8e8b-c2b817bbf79f
-caps.latest.revision: "14"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: cc4d2a778449be4cbb441397c0a5a427ef91e8dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 30cbf4aab2975b95703c24462604c1a43ed3554c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>调试使用 System.Deployment.Application 的 ClickOnce 应用程序
 在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可让你配置如何更新应用程序。 但是，如果你需要使用和自定义高级[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署功能，你将需要访问由提供的部署对象模型<xref:System.Deployment.Application>。 你可以使用<xref:System.Deployment.Application>Api，可用于高级任务，如：  

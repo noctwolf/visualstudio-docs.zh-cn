@@ -1,12 +1,9 @@
 ---
-title: "选择 ClickOnce 更新策略 |Microsoft 文档"
-ms.custom: 
+title: 选择 ClickOnce 更新策略 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - updates, ClickOnce
 - ClickOnce deployment, update strategies
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
-caps.latest.revision: "23"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a056b8d7d7581b63941fb952def0892c25382b44
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0013b9f7ae004b709a1651af0e32e36dd45f909c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>选择 ClickOnce 更新策略
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以提供应用程序自动更新。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序会定期读取其部署清单文件，以查看是否有可用的应用程序更新。 如果有，则会下载并运行应用程序的新版本。 为提高效率，仅下载那些已更改的文件。  

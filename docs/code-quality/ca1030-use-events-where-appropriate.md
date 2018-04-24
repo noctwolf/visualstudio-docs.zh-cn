@@ -1,10 +1,8 @@
 ---
-title: Ca1030： 在适用处使用事件 |Microsoft 文档
-ms.custom: ''
+title: CA1030：在适用处使用事件
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseEventsWhereAppropriate
 - CA1030
@@ -17,38 +15,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 644e8c32c3c827431d347966d8bbecdc13585c5f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 66b9893d6ad0c47dde69fa2cb6d35ee228cff59e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030：在适用处使用事件
-|||  
-|-|-|  
-|TypeName|UseEventsWhereAppropriate|  
-|CheckId|CA1030|  
-|类别|Microsoft.Design|  
-|是否重大更改|非重大|  
-  
-## <a name="cause"></a>原因  
- 公共、 受保护或私有方法名称开头以下项之一：  
-  
--   加载项  
-  
--   RemoveOn  
-  
--   激发  
-  
--   引发  
-  
-## <a name="rule-description"></a>规则说明  
- 该规则检测名称通常用于事件的方法。 事件遵循观察者或发布-订阅设计模式;必须将一个对象中的状态更改传送到其他对象时使用它们。 如果一种方法获取调用以响应明确定义的状态更改，则应由事件处理程序调用的方法。 调用该方法的对象应引发事件而不是直接调用该方法。  
-  
- 在其中用户操作，例如单击按钮会导致一段代码执行的用户界面应用程序中找到事件一些常见示例。 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]事件模型并不局限于用户界面; 应使用随处必须通信状态将更改为一个或多个对象。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 如果对象的状态更改时调用该方法，则应考虑更改设计以确保使用[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]事件模型。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
+|||
+|-|-|
+|TypeName|UseEventsWhereAppropriate|
+|CheckId|CA1030|
+|类别|Microsoft.Design|
+|是否重大更改|非重大|
+
+## <a name="cause"></a>原因
+ 公共、 受保护或私有方法名称开头以下项之一：
+
+-   加载项
+
+-   RemoveOn
+
+-   激发
+
+-   引发
+
+## <a name="rule-description"></a>规则说明
+ 该规则检测名称通常用于事件的方法。 事件遵循观察者或发布-订阅设计模式;必须将一个对象中的状态更改传送到其他对象时使用它们。 如果一种方法获取调用以响应明确定义的状态更改，则应由事件处理程序调用的方法。 调用该方法的对象应引发事件而不是直接调用该方法。
+
+ 在其中用户操作，例如单击按钮会导致一段代码执行的用户界面应用程序中找到事件一些常见示例。 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]事件模型并不局限于用户界面; 应使用随处必须通信状态将更改为一个或多个对象。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 如果对象的状态更改时调用该方法，则应考虑更改设计以确保使用[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]事件模型。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  禁止显示此规则的警告，如果该方法并不适用于[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]事件模型。

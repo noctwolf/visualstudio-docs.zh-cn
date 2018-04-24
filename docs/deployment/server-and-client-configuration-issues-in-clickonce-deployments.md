@@ -1,12 +1,9 @@
 ---
-title: "服务器和 ClickOnce 部署中的客户端配置问题 |Microsoft 文档"
-ms.custom: 
+title: 服务器和 ClickOnce 部署中的客户端配置问题 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, troubleshooting
 - Windows applications, ClickOnce deployments
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
-caps.latest.revision: "33"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b50dbe51f58af79b8c1074c592f98abccbe8ba7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 077333237d1b384208355be7edb1aeb184678a05
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的服务器和客户端配置问题
 如果你在 Windows Server 上使用 Internet 信息服务 (IIS)，而你的部署包含 Windows 无法识别的文件类型，如 Microsoft Word 文件，IIS 将拒绝传输该文件中，并且你的部署将不会成功。  
@@ -51,9 +48,9 @@ ms.lasthandoff: 12/22/2017
  A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序可以正常工作通过 SSL，除 Internet 资源管理器时引发有关 SSL 证书提示。 出现错误证书，如当站点名称不匹配的证书或证书已过期时，可以引发提示符。 若要使[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]工作通过 SSL 连接，请确保该证书是最新的且证书数据是否匹配的站点数据。  
   
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce 和代理身份验证  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]从.NET Framework 3.5 的 Windows 集成代理身份验证提供支持。 没有特定 machine.config 指令是必需的。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]不提供其他身份验证协议，如基本或摘要式所需的支持。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 从.NET Framework 3.5 的 Windows 集成代理身份验证提供支持。 没有特定 machine.config 指令是必需的。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不提供其他身份验证协议，如基本或摘要式所需的支持。  
   
- 你也可以适用于.NET Framework 2.0，以启用此功能的修补程序。 有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=158730。  
+ 你也可以适用于.NET Framework 2.0，以启用此功能的修补程序。 有关详细信息，请参阅http://go.microsoft.com/fwlink/?LinkId=158730。  
   
  有关详细信息，请参阅[ \<defaultProxy > 元素 （网络设置）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)。  
   
@@ -96,7 +93,7 @@ ms.lasthandoff: 12/22/2017
  如果使用 Visual Studio 发布 ClickOnce 应用程序，你不能作为安装位置指定映射的驱动器。 但是，你可以修改 ClickOnce 应用程序使用的清单生成器和编辑器 （Mage.exe 和 MageUI.exe） 从映射的驱动器安装。 有关详细信息，请参阅[Mage.exe （清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)和[MageUI.exe （清单生成和编辑工具，图形化客户端）](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP 协议不支持用于安装应用程序  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]从任何 HTTP 1.1 Web 服务器或文件服务器中安装应用程序的支持。 FTP 文件传输协议不支持用于安装应用程序。 你可以使用 FTP 发布仅限于应用程序。 下表总结了这些差异：  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 从任何 HTTP 1.1 Web 服务器或文件服务器中安装应用程序的支持。 FTP 文件传输协议不支持用于安装应用程序。 你可以使用 FTP 发布仅限于应用程序。 下表总结了这些差异：  
   
 |URL 类型|描述|  
 |--------------|-----------------|  
@@ -122,7 +119,7 @@ ms.lasthandoff: 12/22/2017
   
 -   如果你创建带扩展名的 MIME 类型"*"和"应用程序/八进制数流"的 MIME 类型，它将允许取消阻止的文件类型，要下载的文件。 （但是，阻止不能下载类型如.aspx 和.asmx 文件。）  
   
- 有关 Windows Server 上配置 MIME 类型的特定说明，请参阅 Microsoft 知识库文章 KB326965，"IIS 6.0 不提供未知 MIME 类型"在[http://support.microsoft.com/default.aspx?scid=kb;en-us;326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+ 有关 Windows Server 上配置 MIME 类型的特定说明，请参阅 Microsoft 知识库文章 KB326965，"IIS 6.0 不提供未知 MIME 类型"在[ http://support.microsoft.com/default.aspx?scid=kb; en-我们; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)。  
   
 ## <a name="content-type-mappings"></a>内容类型映射  
  .Application 文件的内容类型 （也称为 MIME 类型） 在通过 HTTP 发布时，应为"应用程序/x 的 ms-应用程序。" 如果你有[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]服务器上安装，这将设置为你自动。 如果未安装，则你需要创建的 MIME 类型关联[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序虚拟根目录 （或整个服务器）。  

@@ -1,6 +1,5 @@
 ---
-title: 如何： 使用事务保存数据 |Microsoft 文档
-ms.custom: ''
+title: 如何： 使用事务保存数据
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,38 +17,39 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f830884763e30cdcb915b2c940051e7c5858cebf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b4fd7ad7168edc155227f9c26cb6f93454240dd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何： 使用事务保存数据
-将数据在事务中保存通过<xref:System.Transactions>命名空间。 使用<xref:System.Transactions.TransactionScope>对象能够参与自动为您管理的事务。  
-  
-项目不会对 System.Transactions 程序集的引用创建，因此你需要手动添加对使用事务的项目的引用。  
-  
-实现事务的最简单方法是实例化<xref:System.Transactions.TransactionScope>对象在`using`语句。 (有关详细信息，请参阅[Using 语句](/dotnet/visual-basic/language-reference/statements/using-statement)，和[using 语句](/dotnet/csharp/language-reference/keywords/using-statement)。)运行中的代码`using`语句参与该事务。  
-  
-若要提交事务，调用<xref:System.Transactions.TransactionScope.Complete%2A>作为中使用的最后一个语句的方法阻止。  
-  
-若要回滚事务，应引发异常之前调用<xref:System.Transactions.TransactionScope.Complete%2A>方法。  
-  
-## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>若要添加对 System.Transactions.dll 的引用  
-  
-1.  上**项目**菜单上，选择**添加引用**。  
-  
-2.  上**.NET**选项卡 (**SQL Server**对于 SQL Server 项目的选项卡)，选择**System.Transactions**，然后选择**确定**。  
-  
-     System.Transactions.dll 的引用添加到项目。  
-  
-## <a name="to-save-data-in-a-transaction"></a>若要将数据保存在事务中  
-  
--   添加代码以保存在中使用的数据包含事务的语句。 下面的代码演示如何创建和实例化<xref:System.Transactions.TransactionScope>对象在 using 语句：  
-  
+将数据在事务中保存通过<xref:System.Transactions>命名空间。 使用<xref:System.Transactions.TransactionScope>对象能够参与自动为您管理的事务。
+
+项目不会对 System.Transactions 程序集的引用创建，因此你需要手动添加对使用事务的项目的引用。
+
+实现事务的最简单方法是实例化<xref:System.Transactions.TransactionScope>对象在`using`语句。 (有关详细信息，请参阅[Using 语句](/dotnet/visual-basic/language-reference/statements/using-statement)，和[using 语句](/dotnet/csharp/language-reference/keywords/using-statement)。)运行中的代码`using`语句参与该事务。
+
+若要提交事务，调用<xref:System.Transactions.TransactionScope.Complete%2A>作为中使用的最后一个语句的方法阻止。
+
+若要回滚事务，应引发异常之前调用<xref:System.Transactions.TransactionScope.Complete%2A>方法。
+
+## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>若要添加对 System.Transactions.dll 的引用
+
+1.  上**项目**菜单上，选择**添加引用**。
+
+2.  上 **.NET**选项卡 (**SQL Server**对于 SQL Server 项目的选项卡)，选择**System.Transactions**，然后选择**确定**。
+
+     System.Transactions.dll 的引用添加到项目。
+
+## <a name="to-save-data-in-a-transaction"></a>若要将数据保存在事务中
+
+-   添加代码以保存在中使用的数据包含事务的语句。 下面的代码演示如何创建和实例化<xref:System.Transactions.TransactionScope>对象在 using 语句：
+
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
-     [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]  
-  
+     [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
+
 ## <a name="see-also"></a>请参阅
-[将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)  
-[演练：在事务中保存数据](../data-tools/save-data-in-a-transaction.md)  
+
+- [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
+- [演练：在事务中保存数据](../data-tools/save-data-in-a-transaction.md)

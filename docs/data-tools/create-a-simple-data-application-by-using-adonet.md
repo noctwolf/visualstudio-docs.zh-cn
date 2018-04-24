@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用 ADO.NET 创建简单的数据应用程序 |Microsoft 文档
+title: 在 Visual Studio 中使用 ADO.NET 创建简单的数据应用程序
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,11 +12,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8bde01870a4511b261759cc7dd5dca04b211f2bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9501b9f33290f3b2116d6b84371675682e8deb05
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
 
 2. 右键单击**数据连接**，然后选择 * * 创建新的 SQL Server 数据库..."。
 
-3. 在**服务器名称**文本框中，输入**(localdb) \mssqllocaldb**。
+3. 在**服务器名称**文本框中，输入 **(localdb) \mssqllocaldb**。
 
 4. 在**新的数据库名称**文本框中，输入**销售**，然后选择**确定**。
 

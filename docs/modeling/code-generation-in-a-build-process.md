@@ -1,21 +1,21 @@
 ---
-title: Visual Studio 中生成过程中的代码生成 |Microsoft 文档
+title: 在 Visual Studio 中生成过程中的代码生成
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5c79cc30e7619ddd02fe05d4f8911d4d9b81f330
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 9895e0cc6cb0b65df51af4ff165d7aa34960763d
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>在生成过程中的代码生成
 

@@ -1,12 +1,9 @@
 ---
-title: "如何： 指定 ClickOnce 脱机或联机安装模式 |Microsoft 文档"
-ms.custom: 
+title: 如何： 指定 ClickOnce 脱机或联机安装模式 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - offline applications
 - ClickOnce install mode
 ms.assetid: 0aee5fc1-e966-4bda-9b8f-d9997aeaa779
-caps.latest.revision: "8"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b1c0f8615513639081351bdf77ea9ec63fc8309b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 18e758def9a92bc4402812dc0e2d665d8acae848
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>如何：指定 ClickOnce 脱机或联机安装模式
 `Install Mode`为[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序确定应用程序是脱机还是联机。 当你选择**应用程序仅可联机**，用户必须有权[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]发布 （网页或文件共享） 才能运行应用程序的位置。 当你选择**应用程序也可以脱机使用**，应用程序将条目添加到**启动**菜单和**添加或删除程序**对话框; 用户是能够在不连接时运行该应用程序。  

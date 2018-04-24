@@ -1,12 +1,9 @@
 ---
-title: "如何： 指定最终用户将从安装位置 |Microsoft 文档"
-ms.custom: 
+title: 如何： 指定最终用户将从安装位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - installation, specifying installation an URL
 - Installation URL property
 ms.assetid: 04a804bf-ed55-4a7a-a1e6-f63ed99c0276
-caps.latest.revision: "9"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a3a2770933f4a9f600b12a2d601deca855de3a94
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0152cf6b03f2e089ee8633ef4abae9043e41bc24
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>如何：指定最终用户将从中进行安装的位置
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，用户可以下载和安装应用程序的位置不一定是最初在其中发布应用程序的位置。 例如，在某些组织开发人员可能应用程序发布到临时服务器，然后管理员将移动到 Web 服务器应用程序。  
@@ -43,7 +40,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  单击**发布**选项卡。  
   
-3.  在安装 URL 字段中，输入使用完全限定的 URL 使用格式 http://www.microsoft.com/ApplicationName 或使用格式的 UNC 路径的安装位置\\\Server\ApplicationName。  
+3.  在安装 URL 字段中，输入使用完全限定的 URL 格式的安装位置http://www.microsoft.com/ApplicationName，或使用格式的 UNC 路径\\\Server\ApplicationName。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：指定 Visual Studio 复制文件的位置](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

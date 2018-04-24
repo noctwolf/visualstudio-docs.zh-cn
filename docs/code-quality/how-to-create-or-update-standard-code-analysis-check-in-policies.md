@@ -1,6 +1,5 @@
 ---
-title: 如何： 创建或更新标准代码分析签入策略 |Microsoft 文档
-ms.custom: ''
+title: 如何：创建或更新标准代码分析签入策略
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d6a28c5dd0ae8d72f11c76d33ff15268d4dda4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb0642828daa96d7904d4e4bb967afc5f1c563d9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：创建或更新标准代码分析签入策略
 
@@ -50,10 +49,10 @@ ms.lasthandoff: 04/16/2018
 
 选中或清除以下选项：
 
-    |选项|描述|  
-    |------------|-----------------|  
-    |**执行签入以只包含属于当前解决方案的文件。**|只能对解决方案和项目配置文件中指定的文件，可以运行代码分析。 此策略可确保所有代码都是解决方案的一部分进行都分析。|  
-    |**强制实施 C/c + + 代码分析 （/分析）**|需要所有 C 或 c + + 项目用都生成 /analyze 编译器选项，它们可以签入前运行代码分析。|  
+    |选项|描述|
+    |------------|-----------------|
+    |**执行签入以只包含属于当前解决方案的文件。**|只能对解决方案和项目配置文件中指定的文件，可以运行代码分析。 此策略可确保所有代码都是解决方案的一部分进行都分析。|
+    |**强制实施 C/c + + 代码分析 （/分析）**|需要所有 C 或 c + + 项目用都生成 /analyze 编译器选项，它们可以签入前运行代码分析。|
     |**为托管代码强制实施代码分析**|需要所有的托管的项目运行代码分析和生成，然后才能签入。|
 
 ### <a name="to-specify-a-managed-rule-set"></a>若要指定托管的规则设置

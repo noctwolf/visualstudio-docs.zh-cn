@@ -1,10 +1,8 @@
 ---
-title: CA2207： 以内联方式初始化值类型的静态字段 |Microsoft 文档
-ms.custom: ''
+title: CA2207：以内联方式初始化值类型的静态字段
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InitializeValueTypeStaticFieldsInline
 - CA2207
@@ -17,33 +15,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5d063cda94451feef28aba9715033234d9adaa1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0a05dda7678fe4a468f3674cbbb1a401a8612df2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207：以内联方式初始化值类型的静态字段
-|||  
-|-|-|  
-|TypeName|InitializeValueTypeStaticFieldsInline|  
-|CheckId|CA2207|  
-|类别|Microsoft.Usage|  
-|是否重大更改|非重大更改|  
-  
-## <a name="cause"></a>原因  
- 某值类型声明显式静态构造函数。  
-  
-## <a name="rule-description"></a>规则说明  
- 当声明值类型时，它将进行默认初始化值类型的所有字段都设置为零，其中所有引用类型字段都都设置为`null`(`Nothing`在 Visual Basic 中)。 只能保证在实例构造函数之前运行了显式静态构造函数或调用静态成员的类型。 因此，而不会调用实例构造函数创建的类型，如果静态构造函数是不能确保运行。  
-  
- 如果所有静态数据是初始化的内联的并声明没有显式静态构造函数，C# 和 Visual Basic 编译器添加`beforefieldinit`标志设为 MSIL 类定义。 编译器还会添加包含静态初始化代码的私有静态构造函数。 此专用的静态构造函数是保证能运行，访问该类型的任何静态字段之前。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突时初始化所有静态数据它声明并移除静态构造函数。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 不禁止显示此规则发出的警告。  
-  
-## <a name="related-rules"></a>相关的规则  
+|||
+|-|-|
+|TypeName|InitializeValueTypeStaticFieldsInline|
+|CheckId|CA2207|
+|类别|Microsoft.Usage|
+|是否重大更改|非重大更改|
+
+## <a name="cause"></a>原因
+ 某值类型声明显式静态构造函数。
+
+## <a name="rule-description"></a>规则说明
+ 当声明值类型时，它将进行默认初始化值类型的所有字段都设置为零，其中所有引用类型字段都都设置为`null`(`Nothing`在 Visual Basic 中)。 只能保证在实例构造函数之前运行了显式静态构造函数或调用静态成员的类型。 因此，而不会调用实例构造函数创建的类型，如果静态构造函数是不能确保运行。
+
+ 如果所有静态数据是初始化的内联的并声明没有显式静态构造函数，C# 和 Visual Basic 编译器添加`beforefieldinit`标志设为 MSIL 类定义。 编译器还会添加包含静态初始化代码的私有静态构造函数。 此专用的静态构造函数是保证能运行，访问该类型的任何静态字段之前。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突时初始化所有静态数据它声明并移除静态构造函数。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 不禁止显示此规则发出的警告。
+
+## <a name="related-rules"></a>相关的规则
  [CA1810：以内联方式初始化引用类型的静态字段](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

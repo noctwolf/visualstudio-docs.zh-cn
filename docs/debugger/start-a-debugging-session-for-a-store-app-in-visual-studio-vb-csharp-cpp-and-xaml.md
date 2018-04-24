@@ -1,12 +1,9 @@
 ---
-title: "Visual Studio 中启动的 UWP 应用的调试会话 |Microsoft 文档"
-ms.custom: 
+title: Visual Studio 中启动的 UWP 应用的调试会话 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/04/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
 - VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior
@@ -34,16 +31,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 718d24ab0f9fbb310d2482b63bc98dd139658330
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: b298e2b17f1aa8805e0ab896c6978744c6c3bd53
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Visual Studio 中启动的 UWP 应用的调试会话
   
@@ -79,7 +76,7 @@ ms.lasthandoff: 01/19/2018
 |**设备**|调试连接了 USB 的设备上的应用。 设备必须是开发人员解锁，而且必须解锁屏幕。|  
 |**移动仿真程序**|使用的模拟器名称中指定的配置启动仿真程序，部署该应用，并开始调试。 仿真程序是仅在启用 HYPER-V 计算机上可用。|  
 
-##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>选择其他调试选项  
+##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> 选择其他调试选项  
 
 如果你需要配置其他调试选项，打开项目的属性页。
   
@@ -89,11 +86,11 @@ ms.lasthandoff: 01/19/2018
   
     -   对于 Visual C# 和 Visual Basic 应用程序，选择 **“调试”**。  
   
-         ![使用 c&#35;&#47;VB 项目调试属性页](../debugger/media/dbg_csvb_debugpropertypage.png)  
+         ![C&#35; &#47; VB 项目调试属性页](../debugger/media/dbg_csvb_debugpropertypage.png)  
   
     -   对于 Visual c + + 和 JavaScript 的应用程序中，展开**配置属性**节点，然后选择**调试**。  
   
-         ![C# 43; &#43;UWP 应用调试属性页](../debugger/media/dbg_cpp_debugpropertypage.png)  
+         ![C&#43; &#43; UWP 应用调试属性页](../debugger/media/dbg_cpp_debugpropertypage.png)  
 
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> 选择要使用的调试器  
 默认情况下，Visual Studio 调试 C# 和 Visual Basic 应用程序中的托管代码。 对于 C# 和 Visual Basic 应用程序，可选择同时调试应用程序中的托管和本机 C/C++ 代码。 在 c + + 应用中，Visual Studio 默认情况下调试本机代码。 在 JavaScript 应用中，Visual Studio 默认情况下调试脚本。 
@@ -179,11 +176,11 @@ ms.lasthandoff: 01/19/2018
   
 若要在调试器中启动安装的应用程序，选择**调试**，然后**其他调试目标**，，然后**调试安装的应用程序包**。 有关更多说明，请参阅[调试已安装的应用程序包](../debugger/debug-installed-app-package.md)。
 
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>将调试器附加到正在运行的 UWP 应用  
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> 将调试器附加到正在运行的 UWP 应用  
 
 若要调试正在运行的 UWP 应用，选择**调试**，然后**其他调试目标**，，然后**调试安装的应用程序包**。 有关更多说明，请参阅[调试已安装的应用程序包](../debugger/debug-installed-app-package.md)。
   
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>将调试器附加到正在运行的 Windows 8.x 应用
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> 将调试器附加到正在运行的 Windows 8.x 应用
  若要将调试器附加到 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用程序，必须使用可调式包管理器将应用程序设置为以调试模式运行。 可调式包管理器与远程工具安装 for Visual Studio。  
   
  当需要调试已安装的应用程序（如从 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]安装的应用程序）时，将调试器附加到应用程序很有用。 在拥有应用程序的源文件，但没有应用程序的 Visual Studio 项目时，必须进行附加。 例如，你的自定义生成系统可能不使用 Visual Studio 项目或解决方案。  

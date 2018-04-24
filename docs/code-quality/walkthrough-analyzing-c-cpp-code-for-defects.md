@@ -1,9 +1,7 @@
 ---
-title: 演练： 对 C/c + + 代码进行缺陷分析 |Microsoft 文档
-ms.custom: ''
+title: 演练：对 C/C++ 代码进行缺陷分析
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
@@ -12,18 +10,18 @@ helpviewer_keywords:
 - code analysis tool, walkthroughs
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c4c0a053a103ec719792acd7b5d234aa99154ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 60cdc07b35480509152fd09fefb484557358fba0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>演练：对 C/C++ 代码进行缺陷分析
 
-本演练演示如何通过使用 C/c + + 代码的代码分析工具分析 C/c + + 代码以查找潜在的代码缺陷。 
+本演练演示如何通过使用 C/c + + 代码的代码分析工具分析 C/c + + 代码以查找潜在的代码缺陷。
 
 - 对本机代码运行代码分析。
 - 分析代码缺陷警告。
@@ -166,7 +164,7 @@ ms.lasthandoff: 04/16/2018
 
    ```cpp
    . . .
-   LinkedList *newNode = NULL; 
+   LinkedList *newNode = NULL;
    if (NULL == node)
    {
         return NULL;

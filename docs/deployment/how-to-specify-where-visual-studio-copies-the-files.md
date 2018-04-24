@@ -2,8 +2,7 @@
 title: 如何： 指定 Visual Studio 将文件复制到其中的内容 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - publishing, specifying location
 - Publish Location property
 ms.assetid: 6c552700-dda3-49fe-af98-4717344fda07
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e865bff247b150ae32e7e6d412d8d720277cddd0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b4e626253d9d07a9f263304d02739bdb3f4b012
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>如何：指定 Visual Studio 复制文件的位置
 使用 ClickOnce 发布应用程序时，“`Publish Location`”属性指定放置应用程序文件和清单的位置。 这可以是文件路径或 FTP 服务器的路径。  
@@ -46,6 +45,6 @@ ms.lasthandoff: 04/16/2018
   
      请注意，必须存在于文本**发布位置**框中才能浏览 (**...**) 按钮正常工作。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

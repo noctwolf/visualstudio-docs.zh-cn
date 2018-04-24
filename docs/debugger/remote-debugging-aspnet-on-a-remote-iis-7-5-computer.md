@@ -1,25 +1,20 @@
 ---
-title: "远程调试远程 IIS 计算机上的 ASP.NET |Microsoft 文档"
+title: 远程调试远程 IIS 计算机上的 ASP.NET |Microsoft 文档
 ms.custom: remotedebugging
 ms.date: 07/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6f11ec81c740a6930ce4eaef16d4e4e389aaca47
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: ff8408ecdf8036a6ec00bdbc3ec93f4b41a2a7fa
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 若要调试的 ASP.NET 应用程序部署到 IIS，安装和在计算机上运行远程工具其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
@@ -31,7 +26,7 @@ ms.lasthandoff: 01/23/2018
 这些过程已经过测试在这些服务器配置：
 * Windows Server 2012 R2 和 IIS 8 （对于 Windows Server 2008 R2 中，服务器步骤会有所不同，）
 
-## <a name="requirements"></a>惠?
+## <a name="requirements"></a>要求
 
 在从 Windows Server 2008 Service Pack 2 的 Windows Server 上支持远程调试器。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
@@ -44,7 +39,7 @@ ms.lasthandoff: 01/23/2018
 
 2. 打开 HomeController.cs 文件，并在 `About()` 方法中设置断点。
 
-## <a name="bkmk_configureIIS"></a>安装和 Windows Server 上配置 IIS
+## <a name="bkmk_configureIIS"></a> 安装和 Windows Server 上配置 IIS
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -61,7 +56,7 @@ ms.lasthandoff: 01/23/2018
 
 当你下载的软件时，可能会收到请求授予加载各种 web 站点脚本和资源的权限。 在大多数情况下，这些其他资源不需要安装软件。
 
-## <a name="BKMK_deploy_asp_net"></a>在 Windows Server 上安装 ASP.NET 4.5
+## <a name="BKMK_deploy_asp_net"></a> 在 Windows Server 上安装 ASP.NET 4.5
 
 如果你想要在 IIS 上安装 ASP.NET 的更多详细的信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
@@ -76,11 +71,11 @@ ms.lasthandoff: 01/23/2018
 
 2. 重新启动系统 (或执行**net 停止已 /y**跟**net 启动 w3svc**从命令提示符以拾取到系统路径的更改)。
 
-## <a name="BKMK_install_webdeploy"></a>（可选）安装 Web 部署 Windows Server 上的 3.6
+## <a name="BKMK_install_webdeploy"></a> （可选）安装 Web 部署 Windows Server 上的 3.6
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a>在 Windows Server 计算机上配置 ASP.NET 网站
+## <a name="BKMK_deploy_asp_net"></a> 在 Windows Server 计算机上配置 ASP.NET 网站
 
 1. 打开 Windows 资源管理器并创建一个新的文件夹， **C:\Publish**，稍后将部署 ASP.NET 项目。
 
@@ -98,7 +93,7 @@ ms.lasthandoff: 01/23/2018
 
 8. 选择在 IIS 管理器站点后，选择**编辑权限**，并确保该 IUSR、 IIS_IUSRS 或配置应用程序池为授权的用户使用读取和执行权限的用户。 如果任何这些用户是否存在，将 IUSR 添加为具有读取和执行权限的用户。
 
-## <a name="bkmk_webdeploy"></a>（可选）发布和使用 Web 部署从 Visual Studio 部署应用
+## <a name="bkmk_webdeploy"></a> （可选）发布和使用 Web 部署从 Visual Studio 部署应用
 
 [!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
 
@@ -125,7 +120,7 @@ ms.lasthandoff: 01/23/2018
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="BKMK_msvsmon"></a>下载并在 Windows Server 上安装远程工具
+## <a name="BKMK_msvsmon"></a> 下载并在 Windows Server 上安装远程工具
 
 在本教程中，我们将使用 Visual Studio 2017。
 
@@ -134,7 +129,7 @@ ms.lasthandoff: 01/23/2018
 > [!TIP]
 > 在某些情况下，它可以从文件共享运行远程调试器方式效率最高。 有关详细信息，请参阅[从文件共享运行远程调试器](../debugger/remote-debugging.md#fileshare_msvsmon)。
   
-## <a name="BKMK_setup"></a>设置 Windows Server 上的远程调试器
+## <a name="BKMK_setup"></a> 设置 Windows Server 上的远程调试器
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -149,7 +144,7 @@ ms.lasthandoff: 01/23/2018
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 年，你可以重新附加到你以前通过使用附加到的相同进程**调试 > 重新附加到进程...**(Shift+Alt+P). 
+    > 在 Visual Studio 2017 年，你可以重新附加到你以前通过使用附加到的相同进程**调试 > 重新附加到进程...**(Shift + Alt + P)。 
 
 3. 将限定符字段设置为**\<远程计算机名称 >: 4022**。
 4. 单击**刷新**。
@@ -171,7 +166,7 @@ ms.lasthandoff: 01/23/2018
 
     应在 Visual Studio 中命中断点。
 
-## <a name="bkmk_openports"></a>疑难解答： 打开 Windows Server 上的所需的端口
+## <a name="bkmk_openports"></a> 疑难解答： 打开 Windows Server 上的所需的端口
 
 在大多数系统中，打开 ASP.NET 和远程调试器的安装所需的端口。 但是，你可能需要验证的端口打开。
 

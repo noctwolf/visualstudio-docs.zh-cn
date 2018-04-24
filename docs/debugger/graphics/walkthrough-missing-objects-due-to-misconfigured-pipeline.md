@@ -1,23 +1,20 @@
 ---
-title: "演练： 因而缺少对象管线误配置 |Microsoft 文档"
-ms.custom: 
+title: 演练： 因而缺少对象管线误配置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8b6809f3238c4d239d6d07f0df35d9b4a035d945
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2833c3ae2a8f03b69314db9e3723a640c4327587
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>演练：因管线误配置而缺少对象
 本演练演示如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具来调查由于未设置的像素着色器而缺失的对象。  
@@ -101,7 +98,7 @@ ms.lasthandoff: 12/22/2017
   
  若要解决此问题，通过 `ID3D11DeviceContext::PSSetShader` API 调用的第一个参数来分配正确的像素着色器。  
   
- ![已更正的 C# 43; &#43;源代码](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+ ![已更正的 C&#43; &#43;源代码](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
  修复代码后，你可以重新生成并运行应用以验证呈现问题是否已解决：  
   

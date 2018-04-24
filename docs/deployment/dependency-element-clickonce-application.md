@@ -1,12 +1,9 @@
 ---
-title: "&lt;依赖项&gt;元素 （ClickOnce 应用程序） |Microsoft 文档"
-ms.custom: 
+title: '&lt;依赖项&gt;元素 （ClickOnce 应用程序） |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,16 +23,16 @@ helpviewer_keywords:
 - manifests [ClickOnce], dependency element
 - <dependency> element [ClickOnce application manifest]
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
-caps.latest.revision: "34"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 7c3319661a4c0df298cd844c4d71c6855cad818c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c5d84dba671d1fddda0569015d936b95e5e58d1d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;依赖项&gt;元素 （ClickOnce 应用程序）
 标识所需的应用程序的平台或程序集依赖项。  
@@ -98,7 +95,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="dependentos"></a>dependentOS  
  可选。 包含`osVersionInfo`元素。 `dependentOS`和`dependentAssembly`元素是互相排斥： 一个或另一个必须存在`dependency`元素，但不是两者。  
   
- `dependentOS`支持以下属性。  
+ `dependentOS` 支持以下属性。  
   
 |特性|描述|  
 |---------------|-----------------|  
@@ -124,7 +121,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="dependentassembly"></a>dependentAssembly  
  可选。 包含`assemblyIdentity`元素。 `dependentOS`和`dependentAssembly`元素是互相排斥： 一个或另一个必须存在`dependency`元素，但不是两者。  
   
- `dependentAssembly`具有以下属性。  
+ `dependentAssembly` 具有以下属性。  
   
 |特性|描述|  
 |---------------|-----------------|  
@@ -140,7 +137,7 @@ ms.lasthandoff: 12/22/2017
 |特性|描述|  
 |---------------|-----------------|  
 |`name`|必须的。 标识应用程序的名称。|  
-|`version`|必须的。 采用以下格式指定应用程序的版本号：`major.minor.build.revision`|  
+|`version`|必须的。 采用以下格式指定应用程序的版本号： `major.minor.build.revision`|  
 |`publicKeyToken`|可选。 指定的 16 个字符的十六进制字符串表示的最后 8 个字节`SHA-1`的应用程序集签名的公钥的哈希值。 用于对目录进行签名的公钥必须是 2048 位或的详细信息。|  
 |`processorArchitecture`|可选。 指定处理器。 有效值为`x86`适用于 32 位 Windows 和`I64`适用于 64 位 Windows。|  
 |`language`|可选。 标识由两部分语言代码，例如 EN-US，程序集。|  
@@ -148,7 +145,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="hash"></a>hash  
  `hash`元素是可选的子`assemblyIdentity`元素。 `hash`元素没有任何特性。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用应用程序中的所有文件的哈希算法作为一种安全检查，以确保部署之后的任何文件发生更改。 如果`hash`元素不包含，则不会执行此检查。 因此，省略`hash`元素不建议。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用应用程序中的所有文件的哈希算法作为一种安全检查，以确保部署之后的任何文件发生更改。 如果`hash`元素不包含，则不会执行此检查。 因此，省略`hash`元素不建议。  
   
 ### <a name="dsigtransforms"></a>dsig:Transforms  
  `dsig:Transforms`元素是必需的子`hash`元素。 `dsig:Transforms`元素没有任何特性。  

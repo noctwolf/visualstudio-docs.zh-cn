@@ -1,12 +1,9 @@
 ---
-title: "如何： 指定 ClickOnce 应用程序的发布页 |Microsoft 文档"
-ms.custom: 
+title: 如何： 指定 ClickOnce 应用程序的发布页 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - publishing, ClickOnce
 - ClickOnce deployment, specifying publish page
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
-caps.latest.revision: "18"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 491ef29c955c5ab06b8539ec5089f2ed32feaf36
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 864d0ef0f4934e040722a9a9fc00ba7a54f3331c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的发布页
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序中，生成默认网页 (publish.htm) 并将其随应用程序一起发布。 此页包含的应用程序、 将其安装应用程序和/或任何必备项的链接和帮助主题描述的链接名称[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 **发布页**为你的项目的属性，可指定 Web 页的名称你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  

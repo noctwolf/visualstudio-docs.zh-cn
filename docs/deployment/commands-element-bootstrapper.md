@@ -1,13 +1,9 @@
 ---
-title: "&lt;命令&gt;元素 （引导程序） |Microsoft 文档"
-ms.custom: 
+title: '&lt;命令&gt;元素 （引导程序） |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ac3ae61012bec5f8134a48714678110951c03b76
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;命令&gt;元素 （引导程序）
 `Commands`元素实现下的元素所描述的测试`InstallChecks`元素，并声明哪些软件包[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]引导程序应安装如果测试失败。  
@@ -96,7 +91,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="bypassif"></a>BypassIf  
  `BypassIf`元素是的子`InstallConditions`元素，并说明应在其下执行命令的正条件。 每个`InstallConditions`元素可包含零个或多`BypassIf`元素。  
   
- `BypassIf`具有以下属性。  
+ `BypassIf` 具有以下属性。  
   
 |特性|描述|  
 |---------------|-----------------|  
@@ -108,7 +103,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="failif"></a>FailIf  
  `FailIf`元素是的子`InstallConditions`元素，并描述了正条件应停止安装。 每个`InstallConditions`元素可包含零个或多`FailIf`元素。  
   
- `FailIf`具有以下属性。  
+ `FailIf` 具有以下属性。  
   
 |特性|描述|  
 |---------------|-----------------|  
@@ -119,10 +114,10 @@ ms.lasthandoff: 12/22/2017
 |`Schedule`|可选。 名称`Schedule`定义应在何时计算此规则的标记。|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- `ExitCodes`元素是的子`Command`元素。 `ExitCodes`元素包含一个或多个`ExitCode`元素，用于确定安装应在响应来自包的退出代码中执行的操作。 可以有一个可选`ExitCode`元素下的`Command`元素。 `ExitCodes`不具有属性。  
+ `ExitCodes`元素是的子`Command`元素。 `ExitCodes`元素包含一个或多个`ExitCode`元素，用于确定安装应在响应来自包的退出代码中执行的操作。 可以有一个可选`ExitCode`元素下的`Command`元素。 `ExitCodes` 不具有属性。  
   
 ## <a name="exitcode"></a>exitCode  
- `ExitCode`元素是的子`ExitCodes`元素。 `ExitCode`元素确定安装应在响应来自包的退出代码中执行的操作。 `ExitCode`不包含子元素，并具有以下属性。  
+ `ExitCode`元素是的子`ExitCodes`元素。 `ExitCode`元素确定安装应在响应来自包的退出代码中执行的操作。 `ExitCode` 不包含子元素，并具有以下属性。  
   
 |特性|描述|  
 |---------------|-----------------|  

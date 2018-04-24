@@ -1,12 +1,9 @@
 ---
-title: "生成 ClickOnce 应用程序从命令行 |Microsoft 文档"
-ms.custom: 
+title: 生成 ClickOnce 应用程序从命令行 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - publishing
 - publishing, ClickOnce
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
-caps.latest.revision: "23"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 39a64737c3e34b7e0c4d89824b22f169d60d4fd0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4488f32b135d766f494bc94946fbf77d42eb1e95
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>从命令行生成 ClickOnce 应用程序
 在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，你可以生成从命令行的项目，即使它们在集成的开发环境 (IDE) 中创建。 事实上，你可以重新生成与创建的项目[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]只有的另一台计算机上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安装。 这样您就可以重现使用自动化的过程生成，例如，在中心生成实验室或使用高级脚本编写超出范围的生成项目本身的技巧。  
@@ -112,7 +109,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  发布属性进行控制[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]从**发布**，**安全**，和**签名**属性页**项目设计器**. 下面是发布的属性以及相对值的每个应用程序设计器的各种属性页中的设置方式的说明：  
   
--   `AssemblyOriginatorKeyFile`确定用于对进行签名的密钥文件你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单。 这个相同密钥还可能用于你的程序集分配强名称。 此属性上设置**签名**页**项目设计器**。  
+-   `AssemblyOriginatorKeyFile` 确定用于对进行签名的密钥文件你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单。 这个相同密钥还可能用于你的程序集分配强名称。 此属性上设置**签名**页**项目设计器**。  
   
  下面的属性上设置**安全**页：  
   
@@ -122,41 +119,41 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  下面的属性上设置**发布**页：  
   
--   `PublishUrl`是其中应用程序将发布到在 IDE 中的位置。 插入到[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单如果既没有`InstallUrl`或`UpdateUrl`指定属性。  
+-   `PublishUrl` 是其中应用程序将发布到在 IDE 中的位置。 插入到[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单如果既没有`InstallUrl`或`UpdateUrl`指定属性。  
   
--   `ApplicationVersion`指定的版本[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 这是四位数字的版本号。 如果最后一个数字为"*"，则`ApplicationRevision`替换为在生成时插入到清单中的值。  
+-   `ApplicationVersion` 指定的版本[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 这是四位数字的版本号。 如果最后一个数字为"*"，则`ApplicationRevision`替换为在生成时插入到清单中的值。  
   
--   `ApplicationRevision`指定的修订版本。 这是一个整数，它每次在 IDE 中发布的时都会递增。 请注意，不自动递增为生成在命令行执行。  
+-   `ApplicationRevision` 指定的修订版本。 这是一个整数，它每次在 IDE 中发布的时都会递增。 请注意，不自动递增为生成在命令行执行。  
   
--   `Install`确定应用程序是否已安装应用程序或运行从 Web 应用程序。  
+-   `Install` 确定应用程序是否已安装应用程序或运行从 Web 应用程序。  
   
--   `InstallUrl`（未显示） 是用户将在其中安装应用程序的位置。 如果指定，此值刻录到 setup.exe 引导程序中，如果`IsWebBootstrapper`启用属性。 它也会插入到应用程序清单如果`UpdateUrl`未指定。  
+-   `InstallUrl` （未显示） 是用户将在其中安装应用程序的位置。 如果指定，此值刻录到 setup.exe 引导程序中，如果`IsWebBootstrapper`启用属性。 它也会插入到应用程序清单如果`UpdateUrl`未指定。  
   
--   `SupportUrl`（未显示） 中链接的位置**添加/删除程序**已安装应用程序的对话框。  
+-   `SupportUrl` （未显示） 中链接的位置**添加/删除程序**已安装应用程序的对话框。  
   
  在中设置以下属性**应用程序更新**对话框中，从访问**发布**页。  
   
--   `UpdateEnabled`指示应用程序是否应检查更新。  
+-   `UpdateEnabled` 指示应用程序是否应检查更新。  
   
--   `UpdateMode`指定前景更新或后台更新。  
+-   `UpdateMode` 指定前景更新或后台更新。  
   
--   `UpdateInterval`指定应用程序检查更新的频率。  
+-   `UpdateInterval` 指定应用程序检查更新的频率。  
   
--   `UpdateIntervalUnits`指定是否`UpdateInterval`值是以小时、 天或周为单位。  
+-   `UpdateIntervalUnits` 指定是否`UpdateInterval`值是以小时、 天或周为单位。  
   
--   `UpdateUrl`（未显示） 是应用程序将从其接收更新的位置。 如果指定，则此值插入应用程序清单。  
+-   `UpdateUrl` （未显示） 是应用程序将从其接收更新的位置。 如果指定，则此值插入应用程序清单。  
   
 -   在中设置以下属性**发布选项**对话框中，从访问**发布**页。  
   
--   `PublisherName`指定在安装或运行应用程序时显示的提示中显示发布服务器的名称。 对于已安装的应用程序，它还用于在指定的文件夹名称**启动**菜单。  
+-   `PublisherName` 指定在安装或运行应用程序时显示的提示中显示发布服务器的名称。 对于已安装的应用程序，它还用于在指定的文件夹名称**启动**菜单。  
   
--   `ProductName`指定在安装或运行应用程序时显示的提示中显示的产品的名称。 对于已安装的应用程序，它还用于在指定的快捷名称**启动**菜单。  
+-   `ProductName` 指定在安装或运行应用程序时显示的提示中显示的产品的名称。 对于已安装的应用程序，它还用于在指定的快捷名称**启动**菜单。  
   
 -   在中设置以下属性**先决条件**对话框中，从访问**发布**页。  
   
--   `BootstrapperEnabled`确定是否生成的 setup.exe 引导。  
+-   `BootstrapperEnabled` 确定是否生成的 setup.exe 引导。  
   
--   `IsWebBootstrapper`确定 setup.exe 引导程序是否可以通过 Web 或基于磁盘的方式。  
+-   `IsWebBootstrapper` 确定 setup.exe 引导程序是否可以通过 Web 或基于磁盘的方式。  
   
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL、 SupportUrl、 PublishURL 和 UpdateURL  
  下表显示 ClickOnce 部署的四个 URL 选项。  

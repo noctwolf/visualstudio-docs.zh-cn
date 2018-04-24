@@ -1,10 +1,8 @@
 ---
-title: 'CA1901: P Invoke 声明应为可移植 |Microsoft 文档'
-ms.custom: ''
+title: 'CA1901: P Invoke 声明应为可移植'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1901
 - PInvokeDeclarationsShouldBePortable
@@ -17,65 +15,65 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c58860c09ab1ef0bb1f6cac15c380fe22dfc93
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45adbedf9318c70b1e73088765cf5487d997d1e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901：P/Invoke 声明应为可移植声明
-|||  
-|-|-|  
-|TypeName|PInvokeDeclarationsShouldBePortable|  
-|CheckId|CA1901|  
-|类别|Microsoft.Portability|  
-|是否重大更改|是-如果 P/Invoke 集外可见。 非重大更改-如果 P/Invoke 不是程序集外部可见。|  
-  
-## <a name="cause"></a>原因  
- 此规则计算 P/Invoke 的返回值和每个参数的大小，并验证其大小，当封送到非托管代码在 32 位和 64 位平台上，验证正确。 与此规则的最常见的冲突是将固定大小整数传递要求取决于平台，指针大小的变量的位置。  
-  
-## <a name="rule-description"></a>规则说明  
- 下列任一情况下与该规则冲突发生：  
-  
--   返回值或参数的类型为固定大小整数类型应为`IntPtr`。  
-  
--   返回值或参数被类型化为`IntPtr`时它的类型应为固定大小的整数。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 你可以通过使用来解决此冲突`IntPtr`或`UIntPtr`表示句柄而不是`Int32`或`UInt32`。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 不应禁止显示此警告。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示此规则的冲突。  
-  
-```csharp  
-internal class NativeMethods  
-{  
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]  
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
-        string lpszExeFileName, IntPtr nIconIndex);  
-}  
-```  
-  
- 在此示例中，`nIconIndex`参数声明为`IntPtr`，即宽 32 位平台和 8 个字节宽在 64 位平台上的 4 个字节。 在非托管声明中后面，你可以看到，`nIconIndex`是在所有平台上的 4 字节无符号的整数。  
-  
-```csharp  
-HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,   
-    UINT nIconIndex);  
-```  
-  
-## <a name="example"></a>示例  
- 若要解决冲突，请将声明更改为以下：  
-  
-```csharp  
-internal class NativeMethods{  
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]   
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
-        string lpszExeFileName, uint nIconIndex);  
-}  
-```  
-  
-## <a name="see-also"></a>另请参阅  
+|||
+|-|-|
+|TypeName|PInvokeDeclarationsShouldBePortable|
+|CheckId|CA1901|
+|类别|Microsoft.Portability|
+|是否重大更改|是-如果 P/Invoke 集外可见。 非重大更改-如果 P/Invoke 不是程序集外部可见。|
+
+## <a name="cause"></a>原因
+ 此规则计算 P/Invoke 的返回值和每个参数的大小，并验证其大小，当封送到非托管代码在 32 位和 64 位平台上，验证正确。 与此规则的最常见的冲突是将固定大小整数传递要求取决于平台，指针大小的变量的位置。
+
+## <a name="rule-description"></a>规则说明
+ 下列任一情况下与该规则冲突发生：
+
+-   返回值或参数的类型为固定大小整数类型应为`IntPtr`。
+
+-   返回值或参数被类型化为`IntPtr`时它的类型应为固定大小的整数。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 你可以通过使用来解决此冲突`IntPtr`或`UIntPtr`表示句柄而不是`Int32`或`UInt32`。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 不应禁止显示此警告。
+
+## <a name="example"></a>示例
+ 下面的示例演示此规则的冲突。
+
+```csharp
+internal class NativeMethods
+{
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,
+        string lpszExeFileName, IntPtr nIconIndex);
+}
+```
+
+ 在此示例中，`nIconIndex`参数声明为`IntPtr`，即宽 32 位平台和 8 个字节宽在 64 位平台上的 4 个字节。 在非托管声明中后面，你可以看到，`nIconIndex`是在所有平台上的 4 字节无符号的整数。
+
+```csharp
+HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
+    UINT nIconIndex);
+```
+
+## <a name="example"></a>示例
+ 若要解决冲突，请将声明更改为以下：
+
+```csharp
+internal class NativeMethods{
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)] 
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,
+        string lpszExeFileName, uint nIconIndex);
+}
+```
+
+## <a name="see-also"></a>请参阅
  [Portability Warnings](../code-quality/portability-warnings.md)

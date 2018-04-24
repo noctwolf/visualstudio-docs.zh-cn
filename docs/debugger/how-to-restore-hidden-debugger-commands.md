@@ -1,12 +1,9 @@
 ---
-title: "如何： 还原隐藏的调试器命令 |Microsoft 文档"
-ms.custom: 
+title: 如何： 还原隐藏的调试器命令 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], restoring commands
 - commands, debugger
 ms.assetid: 76ac9b77-f536-43b5-a9fc-984854b1c566
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ebd03748a94c13dd80a9f38b0fa11c1c20e7e2eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f47f8cbb342f480e6124f765b3b427a615ec6a38
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>如何：还原隐藏的调试器命令
 安装 Visual Studio 时，系统会要求您为主要的编程语言选择一组默认的 IDE 设置。 某些语言的默认 IDE 设置可能会隐藏某些调试器命令。  
@@ -42,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  在**菜单栏：**下拉列表中，选择**调试**你想要包含已还原的命令的菜单。  
   
-4.  单击**添加命令...**按钮。  
+4.  单击**添加命令...** 按钮。  
   
 5.  在**添加命令**框中，选择你想要添加，然后单击的命令**确定**。  
   

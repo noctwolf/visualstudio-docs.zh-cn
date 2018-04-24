@@ -1,6 +1,5 @@
 ---
-title: 使用的域特定语言解决方案 |Microsoft 文档
-ms.custom: ''
+title: 使用域特定语言解决方案
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,42 +8,32 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e5b7335fb7f57f05dcccd6eeeed84050a42ac57c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b601d348f01334377e765285fbf8b37e0f7089fb
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>使用域特定语言解决方案
-使用创建域特定语言 (DSL)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案。 本节是有关如何设置和自定义解决方案。  
-  
-## <a name="in-this-section"></a>本节内容  
- [关于域特定语言](../modeling/about-domain-specific-languages.md)  
- 讨论如何开发 Dsl 以及如何将其应用。  
-  
- [域特定语言工具的概述](../modeling/overview-of-domain-specific-language-tools.md)  
- 说明中开发和分发 DSL 的主要任务。  
-  
- [域特定语言工具用户界面的概述](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)  
- 描述与 Dsl 关联的窗口。  
-  
- [选择域特定语言解决方案模板](../modeling/choosing-a-domain-specific-language-solution-template.md)  
- 说明如何选择要启动 DSL 项目的模板。  
-  
- [如何：创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)  
- 介绍设置 DSL 的步骤。  
-  
- [使用 DSL 定义图表](../modeling/working-with-the-dsl-definition-diagram.md)  
- 说明该关系图的部件。  
-  
- [使用域特定语言资源管理器](../modeling/working-with-the-domain-specific-language-explorer.md)  
- 说明资源管理器的内容  
-  
- [如何：更改域特定语言的命名空间](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)  
- 从 DSL 生成的代码时启动你的解决方案设置的命名空间，但你可以在以后更改它。  
-  
- [如何：扩展域特定语言设计器](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
- 你可以自定义菜单命令 DSL 设计器。  
-  
- [如何自动转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
- 若要避免单击转换所有模板，你可以更加自动生成的一部分。
+使用创建域特定语言 (DSL)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案。 本节是有关如何设置和自定义解决方案。
+
+## <a name="in-this-section"></a>本节内容
+ [有关域特定语言](../modeling/about-domain-specific-languages.md)讨论如何开发 Dsl 以及如何将其应用。
+
+ [域特定语言工具的概述](../modeling/overview-of-domain-specific-language-tools.md)说明中开发和分发 DSL 的主要任务。
+
+ [域特定语言工具用户界面概述](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)描述 Dsl 与关联的窗口。
+
+ [选择的域特定语言解决方案模板](../modeling/choosing-a-domain-specific-language-solution-template.md)说明如何选择要启动 DSL 项目的模板。
+
+ [如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)介绍设置 DSL 的步骤。
+
+ [使用 DSL 定义关系图](../modeling/working-with-the-dsl-definition-diagram.md)说明关系图的组成部分。
+
+ [使用域特定语言资源管理器](../modeling/working-with-the-domain-specific-language-explorer.md)说明资源管理器的内容
+
+ [如何： 更改域特定语言的 Namespace](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)从 DSL 生成的代码具有时启动你的解决方案设置的命名空间，但你可以在之后更改它。
+
+ [如何： 扩展域特定语言设计器](../modeling/how-to-extend-the-domain-specific-language-designer.md)可以自定义菜单命令 DSL 设计器。
+
+ [如何自动转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)若要避免单击转换所有模板，你可以更加自动生成的一部分。

@@ -1,26 +1,21 @@
 ---
-title: "有关快照调试疑难解答和已知问题 |Microsoft 文档"
+title: 有关快照调试疑难解答和已知问题 |Microsoft 文档
 ms.date: 11/07/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 ms.assetid: 511a0697-c68a-4988-9e29-8d0166ca044a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 7340b5f6ce7e9f8cbcbb0e2673b22712b3ab45a3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>有关在 Visual Studio 中调试快照的疑难解答和已知问题
 
@@ -71,7 +66,7 @@ ms.lasthandoff: 01/19/2018
 
 - 当前不支持针对相同的应用程序服务的多个 Visual Studio 客户端调试的快照。
 - ASP.NET 核心项目不完全支持 Roslyn IL 优化。 对于某些 ASP.NET Core 项目，你可能无法看到某些变量或条件语句中使用某些变量。 
-- 特殊变量，如*$FUNCTION*或*$CALLER*，无法计算条件语句或 logpoints 对于 ASP.NET Core 项目中。
+- 特殊变量，如 *$FUNCTION*或 *$CALLER*，无法计算条件语句或 logpoints 对于 ASP.NET Core 项目中。
 - 快照调试不能在应用程序服务具有[本地缓存](/azure/app-service/app-service-local-cache)开启。
 - 当前不支持调试 API 应用程序的快照。
 

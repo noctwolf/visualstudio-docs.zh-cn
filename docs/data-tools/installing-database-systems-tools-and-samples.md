@@ -1,6 +1,5 @@
 ---
-title: Visual Studio 数据库兼容性 |Microsoft 文档
-ms.custom: ''
+title: Visual Studio 数据库兼容性
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +13,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c8cffef6144c188fd5f53e504f6065c4e7d0c1d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1415ec8166ae98d6178c036fec043cc473aca7d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio 的兼容的数据库系统
 
@@ -56,5 +55,5 @@ Firebird 是一种开放源代码 SQL 数据库系统。 你可以下载它从[F
 
 ## <a name="see-also"></a>请参阅
 
-[在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)  
-[如何确定的版本和 SQL Server 及其组件的版本](http://support.microsoft.com/kb/321185)
+- [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)
+- [如何确定的版本和 SQL Server 及其组件的版本](http://support.microsoft.com/kb/321185)

@@ -1,13 +1,9 @@
 ---
-title: "错误： Windows 文件共享已配置...|Microsoft 文档"
-ms.custom: 
+title: 错误： Windows 文件共享已配置...|Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
 dev_langs:
@@ -15,17 +11,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bbd8d00a6939030068bbe6dd565fb57393d18be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 591b051cb6164f4c8d260be3de29833154c96255
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>错误：已配置 Windows 文件共享...
 已配置 Windows 文件共享，因此您将使用另一不同的用户名连接到远程计算机。 这与远程调试不兼容  

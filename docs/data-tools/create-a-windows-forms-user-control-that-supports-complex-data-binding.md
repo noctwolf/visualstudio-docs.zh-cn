@@ -1,6 +1,5 @@
 ---
-title: 创建与数据绑定的 Windows 窗体用户控件 |Microsoft 文档
-ms.custom: ''
+title: 创建与数据绑定的 Windows 窗体用户控件
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7dac1b763e444349f741f72dae8c41fa8087a26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b7431ca6f0d4ac73a07a51893fd0c17c4fada57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>创建支持复杂数据绑定的 Windows 窗体用户控件
 
@@ -80,7 +79,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 在 Visual Studio 中，在**文件**菜单上，选择**新建**，**项目...**.
 
-1. 展开**Visual C#**或**Visual Basic**在左侧窗格中，然后选择**Windows 经典桌面**。
+1. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 经典桌面**。
 
 1. 在中间窗格中，选择**Windows 窗体应用程序**项目类型。
 
@@ -111,7 +110,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="add-the-required-data-binding-attribute"></a>添加所需的数据绑定特性
 
 对于支持数据绑定的复杂控件，你可以实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>。
-  
+
 ### <a name="to-implement-the-complexbindingproperties-attribute"></a>实现 ComplexBindingProperties 特性
 
 1. 交换机**ComplexDataGridView**控件添加到代码视图。 (在**视图**菜单上，选择**代码**。)
@@ -173,7 +172,7 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="to-create-data-bound-controls-on-the-form"></a>在窗体上创建数据绑定控件
 
-将主**客户**节点从**数据源**拖到窗体的窗口。验证**ComplexDataGridView**控件用于显示表的数据。  
+将主**客户**节点从**数据源**拖到窗体的窗口。验证**ComplexDataGridView**控件用于显示表的数据。
 
 ## <a name="running-the-application"></a>运行应用程序
 
@@ -191,6 +190,6 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>请参阅
 
-[在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)  
-[设置从“数据源”窗口中拖动时要创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)  
-[Windows 窗体控件](/dotnet/framework/winforms/controls/index)
+- [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [设置从“数据源”窗口中拖动时要创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
+- [Windows 窗体控件](/dotnet/framework/winforms/controls/index)

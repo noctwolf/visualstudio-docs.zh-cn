@@ -1,12 +1,9 @@
 ---
-title: "如何： 更改 ClickOnce 应用程序发布语言 |Microsoft 文档"
-ms.custom: 
+title: 如何： 更改 ClickOnce 应用程序发布语言 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, changing publish language
 - publishing, ClickOnce
 ms.assetid: ef5024c4-cda1-4970-bc75-32a2a10c92c3
-caps.latest.revision: "19"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 7d368f036e8a5f8599a802bb6f57eba7bc6d767d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d39535138b8b6e6be0c3384c73ab660d368c9b0c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>如何：更改 ClickOnce 应用程序的发布语言
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，在安装到的语言和开发计算机的区域性的默认设置过程中显示的用户界面。 如果发布的本地化的应用程序，你将需要指定语言和区域性的本地化的版本匹配。 这由`Publish language`为你的项目的属性。  

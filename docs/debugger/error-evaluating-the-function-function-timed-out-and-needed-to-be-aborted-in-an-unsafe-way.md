@@ -1,26 +1,23 @@
 ---
-title: "错误： 评估函数 &#39; 函数 &#39;操作已超时，需以不安全的方式中止 |Microsoft 文档"
-ms.custom: 
+title: 错误： 对函数求值&#39;函数&#39;超时，并且需要以不安全的方式将中止 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d0d03efbb844c29195eca7c13303a850c168e0f
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 9843dd870521312f45353c894908130fba0074c7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>错误： 评估函数 &#39; 函数 &#39;操作已超时，需以不安全的方式中止
+# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>错误： 对函数求值&#39;函数&#39;超时，并且需要将中止以不安全的方式
 
 完整消息文本： 函数 function 求值超时，并且需要以不安全的方式将中止。 这可能会损坏目标进程。 
 
@@ -37,9 +34,9 @@ ms.lasthandoff: 02/28/2018
 错误消息将通知调试器尝试调用该函数的名称。 如果可以修改此函数，则你可以调用属性 getter 或 ToString 方法阻止调试器。 请尝试以下方法之一：
  
 * 将方法更改为某些其他类型的属性 getter 除了代码或 ToString 方法和问题将会消失。
-    或
+    -或-
 * （对于 ToString)在类型上定义 DebuggerDisplay 特性，可以让调试器评估 ToString 之外的内容。
-    或
+    -或-
 * （适用于属性 getter)Put`[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]`的属性上的属性。 这很有用，如果你的需要的属性的 API 兼容性原因，一个方法，但它确实应该为一种方法。
  
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>解决方案 2： 具有目标代码要求调试器中止评估

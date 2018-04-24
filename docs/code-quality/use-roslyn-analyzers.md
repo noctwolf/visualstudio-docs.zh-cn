@@ -1,5 +1,5 @@
 ---
-title: 使用以及在 Visual Studio 配置 Roslyn 分析器 |Microsoft 文档
+title: 使用以及在 Visual Studio 配置 Roslyn 分析器
 ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 17758b8cd901a03e2ce4f93fe5dfcfdbe97eadab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2eeebb1fb631c0890c7bcb11160109813a31eef1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>配置和使用 Roslyn 分析程序规则
 
@@ -126,7 +126,7 @@ A[规则集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
    在**预览更改**对话框中，选择**应用**。
 
 > [!NOTE]
-> 在.NET 核心项目中，如果添加对具有 NuGet 分析器的项目的引用这些分析器将自动添加到依赖项目太。 若要禁用此行为，例如如果依赖项目为单元测试项目中，将标记为私有中的 NuGet 包*.csproj*或*.vbproj*引用项目文件：
+> 在.NET 核心项目中，如果添加对具有 NuGet 分析器的项目的引用这些分析器将自动添加到依赖项目太。 若要禁用此行为，例如如果依赖项目为单元测试项目中，将标记为私有中的 NuGet 包 *.csproj*或 *.vbproj*引用项目文件：
 >
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />

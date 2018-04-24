@@ -1,13 +1,9 @@
 ---
-title: "如何： 指定通过 ClickOnce 发布的文件 |Microsoft 文档"
-ms.custom: 
+title: 如何： 指定通过 ClickOnce 发布的文件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
@@ -18,17 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, file exclusion
 - files, publishing via ClickOnce
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eee0e88b23a26ae7a89005ff304b565dd3d84c34
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5c59ffc2324f25c42b505505b0dbea9160ef023a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>如何：指定通过 ClickOnce 发布的文件
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]与应用程序一起部署的项目中的应用程序、 所有非代码文件。 在某些情况下，可能不希望或需要发布某些文件，或者你可能想要安装基于条件对某些文件。 Visual Studio 提供的功能，若要排除的文件，将文件标记为数据文件或必备组件，并创建用于条件安装的文件组。  
@@ -100,7 +95,7 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  文件必须具有**生成操作**属性设置为**内容**文件名称出现在之前**应用程序文件**对话框。  
   
-5.  在**下载组**字段中，选择**\<新建 … >**从下拉列表。  
+5.  在**下载组**字段中，选择**\<新建 … >** 从下拉列表。  
   
 6.  在**新建组**对话框中，输入组的名称，然后单击**确定**。  
   

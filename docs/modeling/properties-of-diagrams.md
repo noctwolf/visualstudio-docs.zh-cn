@@ -1,52 +1,50 @@
 ---
-title: 关系图的属性 |Microsoft 文档
-ms.custom: ''
+title: 图表属性
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.dsltools.dsldesigner.dsldiagram
 helpviewer_keywords:
 - Domain-Specific Language, diagram
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c00ec651510da84594c370e312112c50bc545606
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: bd02bd7f91d80392553d4c9f5e7ff10ab71b1abe
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="properties-of-diagrams"></a>图表属性
-你可以设置指定在生成的设计器中显示关系图的外观的属性。 例如，你可以在关系图中指定文本的默认颜色。  
-  
- 有关详细信息，请参阅[如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展的域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
-  
- 下表列出的属性关系图。  
-  
-|属性|描述|默认|  
-|--------------|-----------------|-------------|  
-|填充颜色|关系图填充颜色。|空白|  
-|文本颜色|关系图显示的文本颜色。|黑色|  
-|访问修饰符|类 （公共或内部） 的访问修饰符。|Public|  
-|自定义特性|用于将属性添加到生成的代码类。|\<none>|  
-|生成双派生|如果`True`，将生成的基本类和分部类 （以支持通过替代的自定义）。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|  
-|具有自定义的构造函数|如果`True`，自定义的构造函数将提供的源代码中。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
-|继承修饰符|描述的关系图生成源代码类的继承的类型 (`none`，`abstract`或`sealed`)。|无|  
-|基本图|此关系图的基类。|(无)|  
-|名称|此关系图的名称。|当前的名称|  
-|命名空间|与此关系图关联的命名空间。|当前命名空间|  
-|表示类|此关系图表示根域类。|如果适用的当前根类|  
-|说明|与此元素关联的非正式说明。|\<none>|  
-|公开为属性填充颜色|如果`True`，用户可以设置生成的设计器的关系图的填充颜色。 若要对此设置，请右键单击关系图形状，然后单击**添加 Explosed**。|False|  
-|将作为属性公开文本颜色|如果`True`，用户可以在生成的设计器中设置关系图的文本颜色。 若要对此设置，请右键单击关系图形状，然后单击**添加 Explosed**。|False|  
-|描述|用于记录生成的设计器的说明。|\<none>|  
-|显示名称|将显示在生成的设计器中为此关系图名称。|\<none>|  
-|帮助关键字|用于编制索引为此关系图的 F1 帮助关键字。|\<none>|  
-  
-## <a name="see-also"></a>另请参阅  
- [域特定语言工具词汇表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+你可以设置指定在生成的设计器中显示关系图的外观的属性。 例如，你可以在关系图中指定文本的默认颜色。
+
+ 有关详细信息，请参阅[如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展的域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
+
+ 下表列出的属性关系图。
+
+|属性|描述|默认|
+|--------------|-----------------|-------------|
+|填充颜色|关系图填充颜色。|空白|
+|文本颜色|关系图显示的文本颜色。|黑色|
+|访问修饰符|类 （公共或内部） 的访问修饰符。|Public|
+|自定义特性|用于将属性添加到生成的代码类。|\<无 >|
+|生成双派生|如果`True`，将生成的基本类和分部类 （以支持通过替代的自定义）。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
+|具有自定义的构造函数|如果`True`，自定义的构造函数将提供的源代码中。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
+|继承修饰符|描述的关系图生成源代码类的继承的类型 (`none`，`abstract`或`sealed`)。|无|
+|基本图|此关系图的基类。|(无)|
+|名称|此关系图的名称。|当前的名称|
+|命名空间|与此关系图关联的命名空间。|当前命名空间|
+|表示类|此关系图表示根域类。|如果适用的当前根类|
+|说明|与此元素关联的非正式说明。|\<无 >|
+|公开为属性填充颜色|如果`True`，用户可以设置生成的设计器的关系图的填充颜色。 若要对此设置，请右键单击关系图形状，然后单击**添加 Explosed**。|False|
+|将作为属性公开文本颜色|如果`True`，用户可以在生成的设计器中设置关系图的文本颜色。 若要对此设置，请右键单击关系图形状，然后单击**添加 Explosed**。|False|
+|描述|用于记录生成的设计器的说明。|\<无 >|
+|显示名称|将显示在生成的设计器中为此关系图名称。|\<无 >|
+|帮助关键字|用于编制索引为此关系图的 F1 帮助关键字。|\<无 >|
+
+## <a name="see-also"></a>请参阅
+
+- [域特定语言工具词汇表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

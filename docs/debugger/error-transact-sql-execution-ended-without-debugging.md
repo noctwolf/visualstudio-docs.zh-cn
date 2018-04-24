@@ -1,13 +1,9 @@
 ---
-title: "错误： TRANSACT-SQL 执行结束，而不进行调试 |Microsoft 文档"
-ms.custom: 
+title: 错误： TRANSACT-SQL 执行结束，而不进行调试 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlde_sql_executed_but_not_debugged
 dev_langs:
@@ -16,17 +12,16 @@ dev_langs:
 - FSharp
 - C++
 - SQL
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 793e516c334d39cd7befc82a15e793df44d22f3b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3ccb86621295bb102738e5154f30bd45c6db358
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>错误：Transact-SQL 执行未经调试便已结束
 当尝试调试 Transact-SQL 或 SQLCLR 过程而调试器未从 SQL Server 接收调试消息时，会发生此错误。  

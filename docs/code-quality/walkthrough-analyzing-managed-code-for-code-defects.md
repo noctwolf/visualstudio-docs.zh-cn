@@ -1,6 +1,5 @@
 ---
 title: 演练对托管代码进行代码缺陷 |Microsoft 文档
-ms.custom: ''
 ms.date: 01/29/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98d1bbd347870bd704a0d17d7ae559da00e9adb5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>演练： 代码的分析托管的代码缺陷
 
@@ -32,7 +31,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 在**新项目**对话框框中，展开**已安装** > **Visual C#**，然后选择**Windows 经典桌面**。
 
-1. 选择**类库 (.NET Framework)**模板。
+1. 选择**类库 (.NET Framework)** 模板。
 
 1. 在**名称**文本框中，键入**CodeAnalysisManagedDemo** ，然后单击**确定**。
 
@@ -61,21 +60,21 @@ ms.lasthandoff: 04/16/2018
 ### <a name="to-analyze-a-managed-project-for-code-defects"></a>若要分析托管的项目进行代码缺陷
 
 1. 选择中的 CodeAnalysisManagedDemo 项目**解决方案资源管理器**。
-  
+
 1. 在“项目”菜单上，单击“属性”。
-  
+
      将显示 CodeAnalysisManagedDemo 属性页。
-  
+
 1. 选择**代码分析**选项卡。
-  
+
 1. 请确保**生成时启用代码分析**已选中。
-  
+
 1. 从**运行此规则集**下拉列表中，选择**Microsoft 所有规则**。
-  
+
 1. 上**文件**菜单上，单击**保存选定项**，然后关闭属性页。
-  
+
 1. 上**生成**菜单上，单击**生成 CodeAnalysisManagedDemo**。
-  
+
     CodeAnalysisManagedDemo 项目生成警告形式均为**错误列表**和**输出**windows。
 
 ## <a name="correct-the-code-analysis-issues"></a>更正代码分析问题

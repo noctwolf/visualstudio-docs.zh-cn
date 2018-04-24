@@ -2,8 +2,7 @@
 title: 如何： 为 ClickOnce 部署错误设置自定义日志文件位置 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, troubleshooting
 - ClickOnce deployment, error logging
 ms.assetid: 77424414-7f0e-4b99-94bb-ea130de92d09
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a54946f5750e901c937dd91772eb7d7ecb740e48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 647eed5145d9d80f9fc62249763726a5940a7345
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>如何：为 ClickOnce 部署错误设置一个自定义日志文件位置
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 维护激活的所有部署的日志文件。 这些日志记录的安装和初始化相关的任何错误[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。 默认情况下，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]会创建每个部署激活的一个日志文件。 它在 Internet 临时文件文件夹中存储这些日志文件。 向用户显示部署的日志文件，当出现激活失败，并且用户单击**详细信息**生成的错误对话框中。  
@@ -48,5 +47,5 @@ ms.lasthandoff: 04/16/2018
   
      此位置必须是用户具有写入访问权限的目录中。 例如，在 Windows Vista 上，创建以下文件夹结构并设置`LogFilePath`到 C:\Users\\< 用户名\>\Documents\Logs\ClickOnce\installation.log。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 部署疑难解答](../deployment/troubleshooting-clickonce-deployments.md)

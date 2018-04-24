@@ -1,12 +1,9 @@
 ---
-title: "如何： 创建 ClickOnce 应用程序的文件关联 |Microsoft 文档"
-ms.custom: 
+title: 如何： 创建 ClickOnce 应用程序的文件关联 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,19 +12,19 @@ helpviewer_keywords:
 - file associations, ClickOnce applications
 - ClickOnce deployment, file associations
 ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
-caps.latest.revision: "7"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: c6d0a2c0912b98995bb6d933766a46f4ebc527a4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bf60327e622f8eb32757d29051e3dce94661722d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>如何：为 ClickOnce 应用程序创建文件关联
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序可以与一个或多个文件扩展名关联，以便应用程序将自动启动，当用户打开这些类型的文件。 添加到的文件名称扩展支持[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序非常简单。  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序可以与一个或多个文件扩展名关联，以便应用程序将自动启动，当用户打开这些类型的文件。 添加到的文件名称扩展支持[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序非常简单。  
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>若要创建 ClickOnce 应用程序的文件关联  
   
@@ -45,7 +42,7 @@ ms.lasthandoff: 12/22/2017
   
     -   `progid`： 唯一标识要将其标记在注册表中的文件类型一个字符串。  
   
-    -   `defaultIcon`： 要用于此文件类型一个图标。 图标必须添加为应用程序清单中的文件资源。 有关详细信息，请参阅 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+    -   `defaultIcon`： 要用于此文件类型一个图标。 图标必须添加为应用程序清单中的文件资源。 有关详细信息，请参阅 [如何：将数据文件包括到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
   
      有关的示例`file`和`fileAssociation`元素，请参阅[ \<fileAssociation > 元素](../deployment/fileassociation-element-clickonce-application.md)。  
   

@@ -1,10 +1,8 @@
 ---
-title: CA2123： 重写链接请求应与基相同 |Microsoft 文档
-ms.custom: ''
+title: CA2123：重写的链接请求应与基相同
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2123
 - OverrideLinkDemandsShouldBeIdenticalToBase
@@ -17,39 +15,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c23bdf9246855fc4a91d5cd5f748f8f8fb17a67
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7aa696c1d08b71078ff4ae3beed7283d0b0333e2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123：重写的链接请求应与基相同
-|||  
-|-|-|  
-|TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|  
-|CheckId|CA2123|  
-|类别|Microsoft.Security|  
-|是否重大更改|重大|  
-  
-## <a name="cause"></a>原因  
- 公共或受保护方法的公共类型中重写一个方法或实现一个接口，并且不具有同一[链接需求](/dotnet/framework/misc/link-demands)与该接口或虚方法。  
-  
-## <a name="rule-description"></a>规则说明  
- 该规则将一个方法与其基方法（该基方法为另一个类型中的接口或虚方法）相匹配，然后比较两者的链接请求。 如果在方法或基方法具有链接要求和另一个不会报告冲突。  
-  
- 如果违反了此规则，则恶意调用方只需调用不安全的方法，可以跳过链接要求。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，应用到重写方法或实现相同的链接要求。 如果这是不可能，将标记具有完全的请求的方法或完全删除特性。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 不禁止显示此规则发出的警告。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示各种违反此规则。  
-  
- [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]  
-  
-## <a name="see-also"></a>另请参阅  
- [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)   
- [链接需求](/dotnet/framework/misc/link-demands)
+|||
+|-|-|
+|TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
+|CheckId|CA2123|
+|类别|Microsoft.Security|
+|是否重大更改|重大|
+
+## <a name="cause"></a>原因
+ 公共或受保护方法的公共类型中重写一个方法或实现一个接口，并且不具有同一[链接需求](/dotnet/framework/misc/link-demands)与该接口或虚方法。
+
+## <a name="rule-description"></a>规则说明
+ 该规则将一个方法与其基方法（该基方法为另一个类型中的接口或虚方法）相匹配，然后比较两者的链接请求。 如果在方法或基方法具有链接要求和另一个不会报告冲突。
+
+ 如果违反了此规则，则恶意调用方只需调用不安全的方法，可以跳过链接要求。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，应用到重写方法或实现相同的链接要求。 如果这是不可能，将标记具有完全的请求的方法或完全删除特性。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 不禁止显示此规则发出的警告。
+
+## <a name="example"></a>示例
+ 下面的示例演示各种违反此规则。
+
+ [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
+
+## <a name="see-also"></a>请参阅
+ [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)[链接需求](/dotnet/framework/misc/link-demands)

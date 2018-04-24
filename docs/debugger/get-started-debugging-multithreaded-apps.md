@@ -2,11 +2,7 @@
 title: 开始调试多线程应用程序 |Microsoft 文档
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,17 +13,16 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48e912fdd04e25f9ad8f7babcf565afb5b739f05
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 067f28cfbc90d26088b37eb40b730edca37533d2
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>开始调试 Visual Studio 中的多线程应用程序
 Visual Studio 提供的若干工具和用户界面元素，以帮助你调试多线程应用程序。 本教程演示如何使用线程标记**并行堆栈**窗口中，**并行监视**窗口中，条件断点，并筛选器断点。 本教程只需几分钟，但完成它将使您熟悉用于调试多线程应用程序的功能。
@@ -382,6 +377,6 @@ Visual Studio 提供的若干工具和用户界面元素，以帮助你调试多
 
 - 请参阅[如何： 使用并行监视窗口](../debugger/how-to-use-the-parallel-watch-window.md) 
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在调试时切换到另一个线程](../debugger/how-to-switch-to-another-thread-while-debugging.md)

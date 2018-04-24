@@ -1,13 +1,9 @@
 ---
-title: "错误： 未 &#39; t 可能因为内核调试程序上启用调试系统 |Microsoft 文档"
-ms.custom: 
+title: 错误： 调试并不&#39;t 可能因为系统上启用了内核调试程序 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
 dev_langs:
@@ -17,19 +13,18 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - kernel debugger
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0841b6e6d592a8b09b85e744d693f0b356fcbf9d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>错误： 未 &#39; t 可能因为内核调试程序上启用调试系统
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>错误： 调试并不&#39;t 可能因为系统上启用了内核调试程序
 调试托管代码时，你可能会收到以下错误消息：  
   
 ```  

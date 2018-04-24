@@ -1,6 +1,5 @@
 ---
-title: 如何： 保存和编辑连接字符串 |Microsoft 文档
-ms.custom: ''
+title: 如何：保存和编辑连接字符串
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
@@ -10,18 +9,19 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3d1da0eba7a113a1a7430b2a2685663dfbd4626
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 820808a79c8ed18c08c6c54ba416c0993aac06d5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>如何：保存和编辑连接字符串
 可以保存在应用程序配置文件 （也称为应用程序设置） 或硬编码在你的应用程序中直接在 Visual Studio 应用程序中的连接字符串。 在应用程序配置文件中保存连接字符串简化了维护应用程序的任务。 如果连接字符串需要进行更改，则可以在应用程序设置文件中对其进行更新（这与必须在源代码中对其进行更改并重新编译应用程序相反）。
 
 将敏感信息（如密码）存储在连接字符串中可能会影响应用程序的安全性。 保存在应用程序配置文件中的连接字符串是未经加密处理的，因此其他人有可能访问该文件并查看其内容。 若要控制对数据库的访问，一种较为安全的方法是使用 Windows 集成安全性。
 
-如果不选择使用 Windows 集成安全性，并且数据库需要用户名和密码，则可以在连接字符串中省略这些内容，但需要应用程序提供此信息才能成功连接到数据库。 例如，可以创建一个对话框提示用户提供此信息并在运行时动态生成连接字符串。 如果在发送到数据库的途中该信息被截获，则安全性将得不到保证。 有关详细信息，请参阅[保护连接信息](/dotnet/framework/data/adonet/protecting-connection-information)。
+如果不选择使用 Windows 集成安全性，并且数据库需要用户名和密码，则可以在连接字符串中省略这些内容，但需要应用程序提供此信息才能成功连接到数据库。 例如，可以创建一个对话框提示用户提供此信息并在运行时动态生成连接字符串。 如果在发送到数据库的途中该信息被截获，则安全性将得不到保证。
+有关详细信息，请参阅[保护连接信息](/dotnet/framework/data/adonet/protecting-connection-information)。
 
 ## <a name="to-save-a-connection-string-from-within-the-data-source-configuration-wizard"></a>若要保存连接字符串中数据源配置向导
 在**数据源配置向导**，选择将连接保存在连接字符串保存到应用程序配置文件页上的选项。
@@ -32,19 +32,19 @@ ms.lasthandoff: 04/16/2018
 - 输入连接字符串的名称。 当在代码中访问该连接字符串时引用此名称。
 - 设置 （连接字符串） 的类型。
 - 将范围设置为应用程序。
-- 在值字段中，键入你的连接字符串，或单击值字段，以打开连接属性对话框中，以生成连接字符串中的省略号 （...） 按钮。  
+- 在值字段中，键入你的连接字符串，或单击值字段，以打开连接属性对话框中，以生成连接字符串中的省略号 （...） 按钮。
 
 ## <a name="editing-connection-strings-stored-in-application-settings"></a>编辑存储在应用程序设置的连接字符串
-你可以修改通过使用项目设计器保存在应用程序设置的连接信息。  
+你可以修改通过使用项目设计器保存在应用程序设置的连接信息。
 
 ### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>编辑存储在应用程序设置中的连接字符串
 - 在解决方案资源管理器中，双击我的项目图标 (Visual Basic 中) 或属性图标 (C#) 以打开项目设计器。
 - 选择设置选项卡。
 - 找到你想要编辑，并在值字段中选择文本的连接。
-- 编辑连接字符串的值字段中，或单击要编辑与连接属性对话框中的连接的值字段中的省略号 （...） 按钮。  
+- 编辑连接字符串的值字段中，或单击要编辑与连接属性对话框中的连接的值字段中的省略号 （...） 按钮。
 
 ## <a name="editing-connection-strings-for-datasets"></a>编辑数据集的连接字符串
-你可以修改为数据集中的每个 TableAdapter 的连接信息。  
+你可以修改为数据集中的每个 TableAdapter 的连接信息。
 
 ### <a name="to-edit-a-connection-string-for-a-tableadapter-in-a-dataset"></a>若要编辑数据集中 TableAdapter 的连接字符串
 - 在解决方案资源管理器中，双击具有你想要编辑的连接的数据集 （.xsd 文件）。
@@ -55,6 +55,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="security"></a>安全性
 将敏感信息（如密码）存储在连接字符串中可能会影响应用程序的安全性。 若要控制对数据库的访问，一种较为安全的方法是使用 Windows 集成安全性。
 有关详细信息，请参阅[保护连接信息](/dotnet/framework/data/adonet/protecting-connection-information)。
-  
+
 ## <a name="see-also"></a>请参阅
-[添加连接](../data-tools/add-new-connections.md)
+
+- [添加连接](../data-tools/add-new-connections.md)

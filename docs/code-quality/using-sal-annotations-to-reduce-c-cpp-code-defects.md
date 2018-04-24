@@ -1,9 +1,7 @@
 ---
-title: 使用 SAL 批注以减少 C/c + + 代码缺陷 |Microsoft 文档
-ms.custom: ''
+title: 使用 SAL 批注以减少 C/C++ 代码缺陷
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations
@@ -12,54 +10,54 @@ helpviewer_keywords:
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2a9e0259640f0a5f32401e115dfe901250bb17e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4be29e09e58b54ee567514cd0dcbccf1c1c5434e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>使用 SAL 批注以减少 C/C++ 代码缺陷
-SAL 是 Microsoft 源代码注释语言。 通过使用源代码注释，你可以明确意向你的代码后面。 这些批注还启用自动化的静态分析工具来使用少得多的误报和漏报更准确地说，分析你的代码。  
-  
- 文档本部分中的文章讨论的 SAL 方面，提供用于 SAL 语法参考并授予其用法的示例。  
-  
--   [了解 SAL](../code-quality/understanding-sal.md)  
-  
-     提供信息和示例，演示核心 SAL 批注。  
-  
--   [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)  
-  
-     列出有关函数和函数参数的 SAL 批注。  
-  
--   [对函数行为进行批注](../code-quality/annotating-function-behavior.md)  
-  
-     列出函数和函数行为的 SAL 批注。  
-  
--   [批注结构和类](../code-quality/annotating-structs-and-classes.md)  
-  
-     列出结构和类的 SAL 批注。  
-  
--   [对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)  
-  
-     说明如何使用 SAL 批注与锁定机制。  
-  
--   [指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
-  
-     列出指定的条件或作用域 （放置） 的其他 SAL 批注的 SAL 批注。  
-  
--   [内部函数](../code-quality/intrinsic-functions.md)  
-  
-     列出的内部函数的 SAL 批注。  
-  
--   [最佳做法和示例](../code-quality/best-practices-and-examples-sal.md)  
-  
-     提供演示如何使用 SAL 注释的示例。 此外介绍了常见的问题。  
-  
-## <a name="related-resources"></a>相关资源  
- [代码分析团队博客](http://go.microsoft.com/fwlink/?LinkId=251197)  
-  
-## <a name="see-also"></a>另请参阅  
+SAL 是 Microsoft 源代码注释语言。 通过使用源代码注释，你可以明确意向你的代码后面。 这些批注还启用自动化的静态分析工具来使用少得多的误报和漏报更准确地说，分析你的代码。
+
+ 文档本部分中的文章讨论的 SAL 方面，提供用于 SAL 语法参考并授予其用法的示例。
+
+-   [了解 SAL](../code-quality/understanding-sal.md)
+
+     提供信息和示例，演示核心 SAL 批注。
+
+-   [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)
+
+     列出有关函数和函数参数的 SAL 批注。
+
+-   [对函数行为进行批注](../code-quality/annotating-function-behavior.md)
+
+     列出函数和函数行为的 SAL 批注。
+
+-   [批注结构和类](../code-quality/annotating-structs-and-classes.md)
+
+     列出结构和类的 SAL 批注。
+
+-   [对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)
+
+     说明如何使用 SAL 批注与锁定机制。
+
+-   [指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+
+     列出指定的条件或作用域 （放置） 的其他 SAL 批注的 SAL 批注。
+
+-   [内部函数](../code-quality/intrinsic-functions.md)
+
+     列出的内部函数的 SAL 批注。
+
+-   [最佳做法和示例](../code-quality/best-practices-and-examples-sal.md)
+
+     提供演示如何使用 SAL 注释的示例。 此外介绍了常见的问题。
+
+## <a name="related-resources"></a>相关资源
+ [代码分析团队博客](http://go.microsoft.com/fwlink/?LinkId=251197)
+
+## <a name="see-also"></a>请参阅
  [SAL 2.0 的 Windows 驱动程序批注](http://go.microsoft.com/fwlink/?LinkId=250979)

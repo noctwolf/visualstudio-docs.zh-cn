@@ -1,12 +1,9 @@
 ---
-title: "如何： 发布 ClickOnce 应用程序使用发布向导 |Microsoft 文档"
-ms.custom: 
+title: 如何： 发布 ClickOnce 应用程序使用发布向导 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - Windows applications, ClickOnce deployments
 - publishing, ClickOnce
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
-caps.latest.revision: "25"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d314763f8ff4dc170148cca166e3ecdff051ae24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 613c576e895042055d5faee9eeb7c8ca27da078a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>如何：使用发布向导发布 ClickOnce 应用程序
 ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可移动媒体，才能供用户使用。 你可以通过使用发布向导中; 发布应用程序与发布相关的其他属性都位于**发布**页**项目设计器**。 有关详细信息，请参阅[发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)。  

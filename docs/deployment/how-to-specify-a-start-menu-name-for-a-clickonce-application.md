@@ -1,12 +1,9 @@
 ---
-title: "如何： 指定 ClickOnce 应用程序的开始菜单名称 |Microsoft 文档"
-ms.custom: 
+title: 如何： 指定 ClickOnce 应用程序的开始菜单名称 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - Start menu name
 - ClickOnce deployment, Start menu name
 ms.assetid: 4b5183b2-2fd4-4433-9310-4a73bb12c4e3
-caps.latest.revision: "17"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: f01bb5750f31101a6d8ec0cb5f33669e5fbf2b4b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a089fa67c975496c56d29d2d55c2f055888c96d9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的“开始”菜单名称
 当[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]用于联机和脱机安装应用程序，条目添加到**启动**菜单和**添加或删除程序**列表。 默认情况下，显示名称是应用程序的程序集的名称相同，但你可以通过设置更改的显示名称**产品名称**中**发布选项**对话框。  

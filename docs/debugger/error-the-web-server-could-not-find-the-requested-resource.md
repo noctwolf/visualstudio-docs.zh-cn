@@ -1,13 +1,9 @@
 ---
-title: "错误： Web 服务器找不到请求的资源 |Microsoft 文档"
-ms.custom: 
+title: 错误： Web 服务器找不到请求的资源 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 dev_langs:
 - CSharp
 - VB
@@ -15,17 +11,16 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debugger, Web application errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5cc83d8d2d0b37d3bb7203e1a20c93478fb96b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 48d4a5845dd5e5f364d34544f57e1ef7bdfe6052
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>错误：Web 服务器未能找到请求的资源
 为了安全起见，IIS 已返回泛型错误。  

@@ -1,10 +1,8 @@
 ---
-title: CA2104： 不要声明只读可变引用类型 |Microsoft 文档
-ms.custom: ''
+title: CA2104：不要声明只读可变引用类型
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
 - CA2104
@@ -17,39 +15,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e14bc99d49ed7e089b3d6d6f63f49eb5b8d3ecae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fcf9379f9950264aca5c76355867ccb44ba40282
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104：不要声明只读可变引用类型
-|||  
-|-|-|  
-|TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|  
-|CheckId|CA2104|  
-|类别|Microsoft.Security|  
-|是否重大更改|非重大|  
-  
-## <a name="cause"></a>原因  
- 外部可见类型包含外部可见的只读字段，该字段为可变的引用类型。  
-  
-## <a name="rule-description"></a>规则说明  
- 可变类型是实例数据可被修改的类型。 <xref:System.Text.StringBuilder?displayProperty=fullName>类是可变的引用类型的示例。 它包含可以更改类的实例的值的成员。 不可变的引用类型的一个示例是<xref:System.String?displayProperty=fullName>类。 已实例化后，其值可能永远不会更改。  
-  
- 只读的修饰符 ([readonly](/dotnet/csharp/language-reference/keywords/readonly)在 C# 中， [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]，和[const](/cpp/cpp/const-cpp) c + + 中) 引用类型字段 （c + + 中的指针） 阻止字段替换为引用类型的不同实例。 但是，修饰符不会阻止从正在修改通过引用类型的实例数据的字段。  
-  
- 只读数组字段不受此规则，但是会导致违反了[CA2105： 数组字段不应将只读](../code-quality/ca2105-array-fields-should-not-be-read-only.md)规则。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，删除只读修饰符，或如果一项重大更改是可接受，替换不可变类型的字段。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 则可以安全地禁止显示此规则的警告，如果字段的类型是不可变。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示了一个会导致与此规则的冲突的字段声明。  
-  
+|||
+|-|-|
+|TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|
+|CheckId|CA2104|
+|类别|Microsoft.Security|
+|是否重大更改|非重大|
+
+## <a name="cause"></a>原因
+ 外部可见类型包含外部可见的只读字段，该字段为可变的引用类型。
+
+## <a name="rule-description"></a>规则说明
+ 可变类型是实例数据可被修改的类型。 <xref:System.Text.StringBuilder?displayProperty=fullName>类是可变的引用类型的示例。 它包含可以更改类的实例的值的成员。 不可变的引用类型的一个示例是<xref:System.String?displayProperty=fullName>类。 已实例化后，其值可能永远不会更改。
+
+ 只读的修饰符 ([readonly](/dotnet/csharp/language-reference/keywords/readonly)在 C# 中， [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]，和[const](/cpp/cpp/const-cpp) c + + 中) 引用类型字段 （c + + 中的指针） 阻止字段替换为引用类型的不同实例。 但是，修饰符不会阻止从正在修改通过引用类型的实例数据的字段。
+
+ 只读数组字段不受此规则，但是会导致违反了[CA2105： 数组字段不应将只读](../code-quality/ca2105-array-fields-should-not-be-read-only.md)规则。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，删除只读修饰符，或如果一项重大更改是可接受，替换不可变类型的字段。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 则可以安全地禁止显示此规则的警告，如果字段的类型是不可变。
+
+## <a name="example"></a>示例
+ 下面的示例演示了一个会导致与此规则的冲突的字段声明。
+
  [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CPP/ca2104-do-not-declare-read-only-mutable-reference-types_1.cpp)]
  [!code-csharp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CSharp/ca2104-do-not-declare-read-only-mutable-reference-types_1.cs)]
  [!code-vb[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/VisualBasic/ca2104-do-not-declare-read-only-mutable-reference-types_1.vb)]

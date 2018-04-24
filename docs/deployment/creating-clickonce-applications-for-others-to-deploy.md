@@ -1,12 +1,9 @@
 ---
-title: "创建 ClickOnce 部署应用程序供其他 |Microsoft 文档"
-ms.custom: 
+title: 创建 ClickOnce 部署应用程序供其他 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,16 +21,16 @@ helpviewer_keywords:
 - ClickOnce applications, deployed by others
 - ClickOnce applications, previous .NET Framework
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d3a9762872f74b39d8cef387703488c01647dbcc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>创建供其他人部署的 ClickOnce 应用程序
 并非所有开发人员正在使用 ClickOnce 部署都计划部署应用程序本身。 许多它们只需将其应用程序打包使用 ClickOnce，然后将文件提交给客户，例如大型公司。 客户成为一个负责承载其网络上的应用程序。 本主题讨论一些.NET Framework 3.5 版之前的版本中的这种部署中固有的问题。 然后，它将介绍通过使用.NET Framework 3.5 中的新的"使用信任的清单"功能提供一个新的解决方案。 最后，则可以确定创建仍使用较旧版本.NET Framework 的客户的 ClickOnce 部署的建议策略。  

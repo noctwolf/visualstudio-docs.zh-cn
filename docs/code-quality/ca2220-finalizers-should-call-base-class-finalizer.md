@@ -1,10 +1,8 @@
 ---
-title: CA2220： 终结器应调用基类的终结器 |Microsoft 文档
-ms.custom: ''
+title: CA2220：终结器应调用基类的终结器
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2220
 - FinalizersShouldCallBaseClassFinalizer
@@ -17,36 +15,36 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b2d5181e04a9a44516716ff280802eb5232f8da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 874f0d744f00808d038cdf2bc0343ae7438b76db
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220：终结器应调用基类的终结器
-|||  
-|-|-|  
-|TypeName|FinalizersShouldCallBaseClassFinalizer|  
-|CheckId|CA2220|  
-|类别|Microsoft.Usage|  
-|是否重大更改|非重大更改|  
-  
-## <a name="cause"></a>原因  
- 重写的类型<xref:System.Object.Finalize%2A?displayProperty=fullName>不调用<xref:System.Object.Finalize%2A>其基类中的方法。  
-  
-## <a name="rule-description"></a>规则说明  
- 终止必须通过继承层次结构传播。 若要确保这一点，类型必须调用其基类<xref:System.Object.Finalize%2A>方法从其自身<xref:System.Object.Finalize%2A>方法。 C# 编译器会自动添加对基类的终结器的调用。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，调用基类型的<xref:System.Object.Finalize%2A>方法从你<xref:System.Object.Finalize%2A>方法。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 不禁止显示此规则发出的警告。 面向公共语言运行时的某些编译器插入的 Microsoft 中间语言 (MSIL) 的基类型的终结器调用。 如果报告此规则的警告，你的编译器不会插入调用，并且必须将其添加到你的代码。  
-  
-## <a name="example"></a>示例  
- 下面的 Visual Basic 示例演示一种类型`TypeB`正确调用<xref:System.Object.Finalize%2A>其基类中的方法。  
-  
- [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2220-finalizers-should-call-base-class-finalizer_1.vb)]  
-  
-## <a name="see-also"></a>另请参阅  
+|||
+|-|-|
+|TypeName|FinalizersShouldCallBaseClassFinalizer|
+|CheckId|CA2220|
+|类别|Microsoft.Usage|
+|是否重大更改|非重大更改|
+
+## <a name="cause"></a>原因
+ 重写的类型<xref:System.Object.Finalize%2A?displayProperty=fullName>不调用<xref:System.Object.Finalize%2A>其基类中的方法。
+
+## <a name="rule-description"></a>规则说明
+ 终止必须通过继承层次结构传播。 若要确保这一点，类型必须调用其基类<xref:System.Object.Finalize%2A>方法从其自身<xref:System.Object.Finalize%2A>方法。 C# 编译器会自动添加对基类的终结器的调用。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，调用基类型的<xref:System.Object.Finalize%2A>方法从你<xref:System.Object.Finalize%2A>方法。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 不禁止显示此规则发出的警告。 面向公共语言运行时的某些编译器插入的 Microsoft 中间语言 (MSIL) 的基类型的终结器调用。 如果报告此规则的警告，你的编译器不会插入调用，并且必须将其添加到你的代码。
+
+## <a name="example"></a>示例
+ 下面的 Visual Basic 示例演示一种类型`TypeB`正确调用<xref:System.Object.Finalize%2A>其基类中的方法。
+
+ [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2220-finalizers-should-call-base-class-finalizer_1.vb)]
+
+## <a name="see-also"></a>请参阅
  [释放模式](/dotnet/standard/design-guidelines/dispose-pattern)

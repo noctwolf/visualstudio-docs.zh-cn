@@ -2,8 +2,7 @@
 title: 如何查明指针是否损坏了内存地址？ | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -23,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e15681f304cdbf3e62bbc9b466507d541a707b5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 8965ec268e5d236b9a33e5c3e8acfa35e51dcdb3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何查明指针是否损坏了内存地址？
 ## <a name="problem-description"></a>问题描述  
@@ -45,6 +44,6 @@ ms.lasthandoff: 04/16/2018
   
 2.  当命中断点时，使用**内存**窗口，以查看内存内容从 0x00408000 开始。 有关详细信息，请参阅[内存窗口](../debugger/memory-windows.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试本机代码常见问题](../debugger/debugging-native-code-faqs.md)   
  [调试本机代码](../debugger/debugging-native-code.md)

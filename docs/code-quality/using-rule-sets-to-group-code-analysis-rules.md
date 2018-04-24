@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中的代码分析规则集 |Microsoft 文档
+title: 在 Visual Studio 中的代码分析规则集
 ms.date: 04/02/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8db113ef3e86fce0a3359a98a7641c47b67ae0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a445aecdd5a9f02bca8d43e42646c991742a626
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用规则集组合代码分析规则
 
@@ -26,9 +26,9 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="rule-set-format"></a>规则将格式设置
 
-中的 XML 格式指定规则集*.ruleset*文件。 包含 ID 的规则和*操作*，按分析器 ID 和文件中的命名空间进行分组。
+中的 XML 格式指定规则集 *.ruleset*文件。 包含 ID 的规则和*操作*，按分析器 ID 和文件中的命名空间进行分组。
 
-XML 内容*.ruleset*文件类似于以下：
+XML 内容 *.ruleset*文件类似于以下：
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">

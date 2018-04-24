@@ -1,12 +1,9 @@
 ---
-title: "如何： 设置 ClickOnce 发布版本 |Microsoft 文档"
-ms.custom: 
+title: 如何： 设置 ClickOnce 发布版本 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - publishing, ClickOnce
 - Publish Version property
 ms.assetid: 06f15504-6385-40a6-b01d-cd90ca36dc73
-caps.latest.revision: "9"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: db6bfae35bbbd14190028fb0e32dfc8d35cb9bac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 96bb991efed7d5a353fc7b73bcb647190438ff84
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>如何：设置 ClickOnce 发布版本
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version`属性确定你发布的应用程序是否将被视为更新。 每个时间版本将递增，将作为更新发布应用程序。  

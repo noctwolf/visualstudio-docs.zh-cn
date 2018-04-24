@@ -2,12 +2,8 @@
 title: 查看使用并行堆栈窗口的线程 |Microsoft 文档
 ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
 dev_langs:
@@ -18,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
-caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72c7c38dece8924f48298c0b7b661f564f9b1afc
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: d19e39ef16bddce9910a65c6833e79d9263fba97
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>查看线程和任务使用并行堆栈窗口
 **并行堆栈**时你正在调试多线程应用程序窗口非常有用。 其**线程视图**显示你的应用程序中的所有线程的都调用堆栈信息。 使用该视图可以在线程和这些线程上的堆栈帧之间进行导航。 在托管代码中，**任务视图**显示调用堆栈的<xref:System.Threading.Tasks.Task?displayProperty=fullName>对象。 在本机代码中，**任务视图**显示调用堆栈的[任务组](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)，[并行算法](/cpp/parallel/concrt/parallel-algorithms)，[异步代理](/cpp/parallel/concrt/asynchronous-agents)，和[轻量级任务](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)。  
@@ -120,7 +115,7 @@ ms.lasthandoff: 04/10/2018
   
  通过切换到新堆栈帧，可使该方法成为当前方法，并在窗口中显示新方法的所有调用方和被调用方。 这可能会导致某些线程显示在视图中或从视图中消失，具体取决于线程的调用堆栈上是否显示该方法。 若要返回堆栈视图，请再次单击“方法视图”工具栏按钮。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)   
  [演练： 调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  

@@ -1,10 +1,8 @@
 ---
-title: CA1306： 设置的数据类型的区域设置 |Microsoft 文档
-ms.custom: ''
+title: CA1306：设置数据类型的区域设置
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1306
 - SetLocaleForDataTypes
@@ -17,40 +15,36 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 344b93f6c48ba1848c272522b4580b03ec4f0b5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d7c95c72978e3828d566598e6076bde904169f4b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306：设置数据类型的区域设置
-|||  
-|-|-|  
-|TypeName|SetLocaleForDataTypes|  
-|CheckId|CA1306|  
-|类别|Microsoft.Globalization|  
-|是否重大更改|非重大|  
-  
-## <a name="cause"></a>原因  
- 某方法或构造函数创建一个或多个<xref:System.Data.DataTable?displayProperty=fullName>或<xref:System.Data.DataSet?displayProperty=fullName>实例和没有显式设置区域设置属性 (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName>或<xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>)。  
-  
-## <a name="rule-description"></a>规则说明  
- 区域设置决定数据，如所用的数值、 货币符号和排序顺序格式区域性特定显示的元素。 当你创建<xref:System.Data.DataTable>或<xref:System.Data.DataSet>，应显式设置的区域设置。 默认情况下，这些类型的区域设置为当前区域性。 对于存储在数据库或文件并且全局共享的数据，区域设置应通常设置为固定区域性 (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>)。 当跨区域性共享数据时，使用默认区域设置可能会导致的内容<xref:System.Data.DataTable>或<xref:System.Data.DataSet>要显示或不正确地解释。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，显式设置的区域设置<xref:System.Data.DataTable>或<xref:System.Data.DataSet>。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 则可以安全地禁止显示此规则的警告，当库或应用程序适用于有限的本地用户的、 不共享的数据，或默认设置可以生成所需的行为在所有支持的方案。  
-  
-## <a name="example"></a>示例  
- 下面的示例创建两个<xref:System.Data.DataTable>实例。  
-  
- [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]  
-  
-## <a name="see-also"></a>另请参阅  
- <xref:System.Data.DataTable?displayProperty=fullName>   
- <xref:System.Data.DataSet?displayProperty=fullName>   
- <xref:System.Globalization.CultureInfo?displayProperty=fullName>   
- <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>   
- <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>
+|||
+|-|-|
+|TypeName|SetLocaleForDataTypes|
+|CheckId|CA1306|
+|类别|Microsoft.Globalization|
+|是否重大更改|非重大|
+
+## <a name="cause"></a>原因
+ 某方法或构造函数创建一个或多个<xref:System.Data.DataTable?displayProperty=fullName>或<xref:System.Data.DataSet?displayProperty=fullName>实例和没有显式设置区域设置属性 (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName>或<xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>)。
+
+## <a name="rule-description"></a>规则说明
+ 区域设置决定数据，如所用的数值、 货币符号和排序顺序格式区域性特定显示的元素。 当你创建<xref:System.Data.DataTable>或<xref:System.Data.DataSet>，应显式设置的区域设置。 默认情况下，这些类型的区域设置为当前区域性。 对于存储在数据库或文件并且全局共享的数据，区域设置应通常设置为固定区域性 (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>)。 当跨区域性共享数据时，使用默认区域设置可能会导致的内容<xref:System.Data.DataTable>或<xref:System.Data.DataSet>要显示或不正确地解释。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，显式设置的区域设置<xref:System.Data.DataTable>或<xref:System.Data.DataSet>。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 则可以安全地禁止显示此规则的警告，当库或应用程序适用于有限的本地用户的、 不共享的数据，或默认设置可以生成所需的行为在所有支持的方案。
+
+## <a name="example"></a>示例
+ 下面的示例创建两个<xref:System.Data.DataTable>实例。
+
+ [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
+
+## <a name="see-also"></a>请参阅
+ <xref:System.Data.DataTable?displayProperty=fullName> <xref:System.Data.DataSet?displayProperty=fullName> <xref:System.Globalization.CultureInfo?displayProperty=fullName> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>

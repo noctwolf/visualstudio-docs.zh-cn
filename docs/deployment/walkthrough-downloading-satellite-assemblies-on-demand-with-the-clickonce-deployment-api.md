@@ -2,8 +2,7 @@
 title: 演练： 下载附属程序集使用 ClickOnce 部署 API 按需 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,16 +18,16 @@ helpviewer_keywords:
 - localization, ClickOnce deployment
 - ClickOnce deployment, localization
 ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6cae5427d985175d351a5fde8c54397923af660
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b686feb370ff522b2b26866990cc8069b465d96
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：使用 ClickOnce 部署 API 按需下载附属程序集
 通过使用附属程序集，可以为多个区域性配置 Windows 窗体应用程序。 *附属程序集* 是一种包含除应用程序默认区域性以外区域性的应用程序资源的程序集。  
@@ -67,5 +66,5 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>后续步骤  
  在生产环境中，可能需要删除将 <xref:System.Threading.Thread.CurrentUICulture%2A> 设置为特定值的代码示例中的行，因为客户端计算机将以默认方式设置正确值。 例如，当在日语客户端计算机上运行应用程序时，默认情况下， <xref:System.Threading.Thread.CurrentUICulture%2A> 将设置为 `ja-JP` 。 以编程方式设置此值是在部署应用程序之前测试附属程序集的一个很好的方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [本地化 ClickOnce 应用程序](../deployment/localizing-clickonce-applications.md)

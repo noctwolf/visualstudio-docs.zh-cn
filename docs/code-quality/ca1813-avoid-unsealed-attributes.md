@@ -1,10 +1,8 @@
 ---
-title: CA1813： 避免使用未密封的特性 |Microsoft 文档
-ms.custom: ''
+title: CA1813：避免使用未密封的特性
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1813
 - AvoidUnsealedAttributes
@@ -17,42 +15,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04f557dea4fca796de4e786737f7cef2b59a3896
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: db86642cc5b65a93cd2d2bb565ed3ed786362f54
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813：避免使用未密封的特性
-|||  
-|-|-|  
-|TypeName|AvoidUnsealedAttributes|  
-|CheckId|CA1813|  
-|类别|Microsoft.Performance|  
-|是否重大更改|重大|  
-  
-## <a name="cause"></a>原因  
- 公共类型都继承自<xref:System.Attribute?displayProperty=fullName>、 不是抽象的和未密封 (`NotInheritable`在 Visual Basic 中)。  
-  
-## <a name="rule-description"></a>规则说明  
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 类库提供用于检索自定义特性的方法。 默认情况下，这些方法搜索特性继承层次结构;例如<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>搜索指定的属性类型或任何扩展的指定的属性类型的属性类型。 密封特性，无需搜索继承层次结构中，且可以提高性能。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，密封属性类型，或使其成为抽象。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 则可以安全地禁止显示此规则的警告。 仅当定义了属性层次结构和不能密封属性或使其成为抽象时，应执行此操作。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示满足此规则的自定义特性。  
-  
+|||
+|-|-|
+|TypeName|AvoidUnsealedAttributes|
+|CheckId|CA1813|
+|类别|Microsoft.Performance|
+|是否重大更改|重大|
+
+## <a name="cause"></a>原因
+ 公共类型都继承自<xref:System.Attribute?displayProperty=fullName>、 不是抽象的和未密封 (`NotInheritable`在 Visual Basic 中)。
+
+## <a name="rule-description"></a>规则说明
+ [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 类库提供用于检索自定义特性的方法。 默认情况下，这些方法搜索特性继承层次结构;例如<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>搜索指定的属性类型或任何扩展的指定的属性类型的属性类型。 密封特性，无需搜索继承层次结构中，且可以提高性能。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，密封属性类型，或使其成为抽象。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 则可以安全地禁止显示此规则的警告。 仅当定义了属性层次结构和不能密封属性或使其成为抽象时，应执行此操作。
+
+## <a name="example"></a>示例
+ 下面的示例演示满足此规则的自定义特性。
+
  [!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
- [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]  
-  
-## <a name="related-rules"></a>相关的规则  
- [CA1019：定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)  
-  
- [CA1018：用 AttributeUsageAttribute 标记特性](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)  
-  
-## <a name="see-also"></a>另请参阅  
+ [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]
+
+## <a name="related-rules"></a>相关的规则
+ [CA1019：定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+
+ [CA1018：用 AttributeUsageAttribute 标记特性](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+
+## <a name="see-also"></a>请参阅
  [特性](/dotnet/standard/design-guidelines/attributes)

@@ -1,27 +1,22 @@
 ---
-title: "将发布到 Azure App Service 的 Visual Studio |Microsoft 文档"
-ms.custom: 
+title: 将发布到 Azure App Service 的 Visual Studio |Microsoft 文档
+ms.custom: ''
 ms.date: 11/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 52da1a2e618d9ececa1c8fd0d90a86e651cd7fde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: dd3fa975070656f54a48452a50e51c172d51c785
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>向 Azure App Service 中使用 Visual Studio 发布 ASP.NET 或 ASP.NET Core 应用
 
@@ -33,7 +28,7 @@ ms.lasthandoff: 01/10/2018
 
 1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
-1. 下**Visual C#**或**Visual Basic**，选择**Web**，然后在中间窗格中选择**ASP.NET Web 应用程序 (.NET Framework)**或 (仅限 C#) **ASP.NET 核心 Web 应用程序**，然后单击**确定**。
+1. 下**Visual C#** 或**Visual Basic**，选择**Web**，然后在中间窗格中选择**ASP.NET Web 应用程序 (.NET Framework)** 或 (仅限 C#) **ASP.NET 核心 Web 应用程序**，然后单击**确定**。
 
 1. 选择**MVC**，请确保**无身份验证**已选择，然后单击**确定**。
 
@@ -67,7 +62,7 @@ ms.lasthandoff: 01/10/2018
 
     在此对话框中，你可以选择使用的订阅，选择或创建 Azure 资源组，等等。
 
-1. 单击 **“创建”**。
+1. 单击“创建” 。
 
     Visual Studio 将应用部署到你的 Azure 应用程序服务，并在浏览器中加载 web 应用程序。
 

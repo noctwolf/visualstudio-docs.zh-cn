@@ -1,13 +1,9 @@
 ---
-title: "如何在触发挂起、 继续和后台事件调试 UWP 应用时 |Microsoft 文档"
-ms.custom: 
+title: 如何在触发挂起、 继续和后台事件调试 UWP 应用时 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
 dev_langs:
@@ -15,17 +11,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 00e448da2f5a23c2f6aebf6e163181080949129a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何在触发挂起、 继续和后台事件调试 Visual Studio 中的 UWP 应用时
 不调试时，Windows **进程生命期管理** (PLM) 根据用户操作和设备状态控制应用程序的执行状态 - 启动、挂起、继续和终止应用程序。 在调试时，Windows 禁用这些激活事件。 本主题介绍如何在调试器中触发这些事件。  
@@ -83,11 +78,11 @@ ms.lasthandoff: 01/19/2018
   
     -   对于 Visual C# 和 Visual Basic 项目，选择 **“不启动，但在启动时调试代码”**  
   
-         ![C &#35; &#47;VB 调试启动应用程序属性](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
+         ![C&#35;&#47;VB 调试启动应用程序属性](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   
     -   对于 JavaScript 和 Visual C++ 项目，从 **“启动应用程序”** 列表中选择 **“否”** 。  
   
-         ![C &#43; &#43; &#47;VB 启动应用程序调试属性](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
+         ![C&#43;&#43;&#47;VB 启动应用程序调试属性](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
   
 4.  按 **F5** 使应用程序进入调试模式。 注意， **“调试位置”** 工具栏上的 **“进程”** 列表显示应用程序包名称以指示您处于调试模式下。  
   

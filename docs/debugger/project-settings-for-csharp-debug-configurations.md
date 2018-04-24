@@ -2,8 +2,7 @@
 title: 项目 C# 调试配置的设置 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -23,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7f51964a303641e8e430417d63d0241603d7f360
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 65b30c1dc0b4306c7104b4d0b3dcd38a2cc55b1d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 调试配置的项目设置
 你可以更改中的 C# 调试配置的项目设置**属性页**窗口，如下所述[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示在何处可以找到中与调试器相关的设置**属性页**窗口。  
@@ -58,5 +57,5 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]
 > 有关详细信息中找到的调试选项**高级**按钮，请参阅[高级生成设置对话框 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。 符号 (.pdb) 文件的可移植格式是为.NET 核心的最新的跨平台格式。 
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)

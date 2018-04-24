@@ -1,10 +1,8 @@
 ---
-title: CA1721： 属性名不应与 get 方法 |Microsoft 文档
-ms.custom: ''
+title: CA1721：属性名不应与 get 方法冲突
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1721
 - PropertyNamesShouldNotMatchGetMethods
@@ -17,42 +15,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59812963f719da4c587d0a59b69619573b0e8a48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29db0561f15a16bf9b449f03f209feedf80dbd88
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721：属性名不应与 get 方法冲突
-|||  
-|-|-|  
-|TypeName|PropertyNamesShouldNotMatchGetMethods|  
-|CheckId|CA1721|  
-|类别|Microsoft.Naming|  
-|是否重大更改|重大|  
-  
-## <a name="cause"></a>原因  
- 公共或受保护成员的名称以 Get，否则匹配公共或受保护的属性的名称。 例如，包含名为 GetColor 以及名为颜色的属性的方法的类型与该规则冲突。  
-  
-## <a name="rule-description"></a>规则说明  
- Get 方法和属性应具有明确表示其功能的名称。  
-  
- 命名约定提供了通用的外观的库，面向公共语言运行时。 这可减少所需了解新的软件库和客户更有信心库由在开发的托管代码中有专业技能的人员的时间。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 更改名称，以便与前缀为 Get 方法的名称不匹配。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 不禁止显示此规则发出的警告。  
-  
+|||
+|-|-|
+|TypeName|PropertyNamesShouldNotMatchGetMethods|
+|CheckId|CA1721|
+|类别|Microsoft.Naming|
+|是否重大更改|重大|
+
+## <a name="cause"></a>原因
+ 公共或受保护成员的名称以 Get，否则匹配公共或受保护的属性的名称。 例如，包含名为 GetColor 以及名为颜色的属性的方法的类型与该规则冲突。
+
+## <a name="rule-description"></a>规则说明
+ Get 方法和属性应具有明确表示其功能的名称。
+
+ 命名约定提供了通用的外观的库，面向公共语言运行时。 这可减少所需了解新的软件库和客户更有信心库由在开发的托管代码中有专业技能的人员的时间。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 更改名称，以便与前缀为 Get 方法的名称不匹配。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 不禁止显示此规则发出的警告。
+
 > [!NOTE]
->  如果 Get 方法由实现 iextenderprovider 接口接口可能排除此警告。  
-  
-## <a name="example"></a>示例  
- 下面的示例包含的方法和违反了此规则的属性。  
-  
+>  如果 Get 方法由实现 iextenderprovider 接口接口可能排除此警告。
+
+## <a name="example"></a>示例
+ 下面的示例包含的方法和违反了此规则的属性。
+
  [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
- [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]  
-  
-## <a name="related-rules"></a>相关的规则  
+ [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]
+
+## <a name="related-rules"></a>相关的规则
  [CA1024：在适用处使用属性](../code-quality/ca1024-use-properties-where-appropriate.md)

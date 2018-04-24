@@ -1,12 +1,9 @@
 ---
-title: "如何： 为 ClickOnce 部署中的各个系统必备项指定一个支持 URL |Microsoft 文档"
-ms.custom: 
+title: 如何： 为 ClickOnce 部署中的各个系统必备项指定一个支持 URL |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, prerequisites
 - ClickOnce deployment, URLs
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4a73d6cd0996f3f0e91b5a5381ee1b8ccd58a2a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f4fe4deb04dbcc29a04036973d479803ee4667c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：为 ClickOnce 部署中的各个系统必备项指定一个支持 URL
 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以为大量的系统必备组件，必须在客户端计算机上可测试[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]要运行应用程序。 其中包括所需的最低版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，以及操作系统，必须预先安装在全局程序集缓存 (GAC 中) 的任何程序集的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]但是，无法安装任何这些系统必备组件然后重试。如果未找到系统必备组件，它只需暂停安装并显示一个对话框，以解释安装失败的原因。  

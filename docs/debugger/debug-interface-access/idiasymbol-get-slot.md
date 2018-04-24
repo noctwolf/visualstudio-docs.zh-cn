@@ -2,8 +2,7 @@
 title: 'Idiasymbol:: Get_slot |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f2b92f696f86ae2943b1e01ce94278366a332b5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 6a996b35bab371bb331dfbe068258a2469c0e2df
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
 检索的位置槽编号。 何时使用[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)是`LocIsSlot`。  
@@ -42,6 +41,6 @@ HRESULT get_slot (
 > [!NOTE]
 >  返回值`S_FALSE`意味着属性不是可用于符号。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)

@@ -1,12 +1,9 @@
 ---
-title: "如何： 使用设计器禁用 ClickOnce 应用程序的 URL 激活 |Microsoft 文档"
-ms.custom: 
+title: 如何： 使用设计器禁用 ClickOnce 应用程序的 URL 激活 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - URL activation, ClickOnce applications
 - ClickOnce deployment, URL activation
 ms.assetid: a337a582-e67c-409a-b52e-607cd1a8fc57
-caps.latest.revision: "16"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d4df4bab3b3dd7ed29dd3e5d3ca2ff7e56c1922d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 366c4362ca3c3b6140380ab64000a01fe8e1aa6b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>如何：使用设计器禁用 ClickOnce 应用程序的 URL 激活
 通常情况下，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安装从 Web 服务器之后立即应用程序将自动启动。 出于安全原因，您可以决定禁用此行为，并告知用户启动应用程序从**启动**菜单相反。 以下过程描述了如何禁用 URL 激活。  

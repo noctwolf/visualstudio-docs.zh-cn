@@ -1,10 +1,8 @@
 ---
-title: CA1026： 默认参数不应使用 |Microsoft 文档
-ms.custom: ''
+title: CA1026：不应使用默认参数
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1026
 - DefaultParametersShouldNotBeUsed
@@ -17,41 +15,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3bc307b0c82400a209d09b490ba0882e6474db3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 173a9a62ea6a3106c50fd18f37180b583e0bb42c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026：不应使用默认参数
-|||  
-|-|-|  
-|TypeName|DefaultParametersShouldNotBeUsed|  
-|CheckId|CA1026|  
-|类别|Microsoft.Design|  
-|是否重大更改|重大|  
-  
-## <a name="cause"></a>原因  
- 外部可见类型包含外部可见方法使用的默认参数。  
-  
-## <a name="rule-description"></a>规则说明  
- 使用默认参数的方法允许在公共语言规范 (CLS);但是，CLS 允许编译器忽略为这些参数分配的值。 为忽略默认参数值的编译器编写的代码必须显式提供每个默认参数的自变量。 若要维护需要跨编程语言的行为，应使用提供默认参数的方法重载替换使用默认参数的方法。  
-  
- 在访问托管的代码时，编译器将默认参数的值的托管扩展忽略 c + +。 Visual Basic 编译器支持具有默认参数使用方法的[可选](/dotnet/visual-basic/language-reference/modifiers/optional)关键字。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，将使用提供默认参数的方法重载使用默认参数的方法。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 不禁止显示此规则发出的警告。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示使用默认参数的方法并提供等效的功能的重载的方法。  
-  
- [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]  
-  
-## <a name="related-rules"></a>相关的规则  
- [CA1025：用形参数组替换重复的实参](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)  
-  
-## <a name="see-also"></a>另请参阅  
+|||
+|-|-|
+|TypeName|DefaultParametersShouldNotBeUsed|
+|CheckId|CA1026|
+|类别|Microsoft.Design|
+|是否重大更改|重大|
+
+## <a name="cause"></a>原因
+ 外部可见类型包含外部可见方法使用的默认参数。
+
+## <a name="rule-description"></a>规则说明
+ 使用默认参数的方法允许在公共语言规范 (CLS);但是，CLS 允许编译器忽略为这些参数分配的值。 为忽略默认参数值的编译器编写的代码必须显式提供每个默认参数的自变量。 若要维护需要跨编程语言的行为，应使用提供默认参数的方法重载替换使用默认参数的方法。
+
+ 在访问托管的代码时，编译器将默认参数的值的托管扩展忽略 c + +。 Visual Basic 编译器支持具有默认参数使用方法的[可选](/dotnet/visual-basic/language-reference/modifiers/optional)关键字。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，将使用提供默认参数的方法重载使用默认参数的方法。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 不禁止显示此规则发出的警告。
+
+## <a name="example"></a>示例
+ 下面的示例演示使用默认参数的方法并提供等效的功能的重载的方法。
+
+ [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
+
+## <a name="related-rules"></a>相关的规则
+ [CA1025：用形参数组替换重复的实参](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+
+## <a name="see-also"></a>请参阅
  [语言独立性和与语言无关的组件](/dotnet/standard/language-independence-and-language-independent-components)

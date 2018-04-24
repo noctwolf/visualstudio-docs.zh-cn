@@ -1,12 +1,9 @@
 ---
-title: "如何： 对应用程序和部署清单重新签名 |Microsoft 文档"
-ms.custom: 
+title: 如何： 对应用程序和部署清单重新签名 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce deployment, signing manifests
 - Office development in Visual Studio, signing manifests
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
-caps.latest.revision: "17"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e3c6551269df19c554dfa50409108bf952c4b326
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ba634ffb30d6459c940811f0ea080f8b71a37f34
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何：为应用程序和部署清单重新签名
 对 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序 (xbap) 或 Office 解决方案的应用程序清单中的部署属性进行更改后，这两个应用程序必须重新进行签名和部署清单与证书。 此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。  

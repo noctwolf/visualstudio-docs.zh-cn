@@ -1,8 +1,8 @@
 ---
-title: CA1065： 不要引发意外的位置中的异常 |Microsoft 文档
+title: CA1065：不要在意外的位置引发异常
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CA1065
 - DoNotRaiseExceptionsInUnexpectedLocations
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 946a729fc3ffd99c4c0b3c435b093a97986d68b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 477286e437a901d15dd7a13a6bc1d9f7634b3b73
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065：不要在意外的位置引发异常
 
@@ -124,7 +124,7 @@ ms.lasthandoff: 04/16/2018
 
 A<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法不应引发异常。 释放情况通常称作中的清理逻辑的一部分`finally`子句。 因此，显式释放从引发异常强制用户添加异常处理内部`finally`子句。
 
-**Dispose(false)**代码路径应永远不会引发异常，因为释放几乎总是调用从一个终结器。
+**Dispose(false)** 代码路径应永远不会引发异常，因为释放几乎总是调用从一个终结器。
 
 ### <a name="equality-operators--"></a>相等运算符 (= =、 ！ =)
 

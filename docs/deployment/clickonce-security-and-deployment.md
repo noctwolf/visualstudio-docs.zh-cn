@@ -1,12 +1,9 @@
 ---
-title: "ClickOnce 安全和部署 |Microsoft 文档"
-ms.custom: 
+title: ClickOnce 安全和部署 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,21 +14,21 @@ helpviewer_keywords:
 - ClickOnce deployment
 - publishing, ClickOnce
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
-caps.latest.revision: "32"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 1923c39669d50303f907974816fbb54297c477c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4ec2e74623c39640517ae73786d7865143bf1505
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全和部署
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行最少的用户交互。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用于发布和更新如果您已开发您的项目与 Visual Basic 和 Visual C# 使用 ClickOnce 技术部署的应用程序提供完全支持。 有关部署 Visual c + + 应用程序的信息，请参阅[Visual c + + 应用程序的 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行最少的用户交互。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 用于发布和更新如果您已开发您的项目与 Visual Basic 和 Visual C# 使用 ClickOnce 技术部署的应用程序提供完全支持。 有关部署 Visual c + + 应用程序的信息，请参阅[Visual c + + 应用程序的 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署没有与此部署中的三个主要问题：  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署没有与此部署中的三个主要问题：  
   
 -   **在更新应用程序的问题。** 使用 Microsoft Windows Installer 部署后，每当更新应用程序时，用户可以安装更新，msp 文件，并将其应用到已安装的产品中。与[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，你可以提供更新自动。 仅这些应用程序已更改部分不下载，和从新的并排显示文件夹然后重新安装完整的更新应用程序。  
   
@@ -44,9 +41,9 @@ ms.lasthandoff: 12/22/2017
 ## <a name="what-is-a-clickonce-application"></a>ClickOnce 应用程序是什么？  
  A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序是任何 Windows Presentation Foundation (.xbap)、 Windows 窗体 (.exe)、 控制台应用程序 (.exe)，还是使用发布 Office 解决方案 (.dll)[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]技术。 你可以将发布[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]三个不同的方式应用程序： 在网页上，从网络文件共享，或如 CD-ROM 的媒体。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]可以某个最终用户的计算机上安装应用程序，并将其本地运行，即使计算机处于脱机状态，或者它可以在仅联机模式下运行，而无需永久最终用户计算机上安装任何内容。 有关详细信息，请参阅[选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序可以自我更新;它们可以检查较新版本，因为它们变得可用，并自动将任何更新的文件。 开发人员可以指定更新行为;网络管理员还可以控制更新策略，例如，将标记为必需的更新。 更新可以还将其回滚到早期版本的最终用户或管理员。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序可以自我更新;它们可以检查较新版本，因为它们变得可用，并自动将任何更新的文件。 开发人员可以指定更新行为;网络管理员还可以控制更新策略，例如，将标记为必需的更新。 更新可以还将其回滚到早期版本的最终用户或管理员。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
   
- 因为[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序是独立安装或运行[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序无法破坏现有应用程序。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序是自包含;每个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安装到应用程序并将其从安全每个用户，每个应用程序缓存运行。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在 Internet 或 Intranet 安全区域中运行应用程序。 如有必要，应用程序可以请求提升的安全权限。 有关详细信息，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。  
+ 因为[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序是独立安装或运行[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序无法破坏现有应用程序。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序是自包含;每个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安装到应用程序并将其从安全每个用户，每个应用程序缓存运行。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在 Internet 或 Intranet 安全区域中运行应用程序。 如有必要，应用程序可以请求提升的安全权限。 有关详细信息，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。  
   
 ## <a name="how-clickonce-security-works"></a>ClickOnce 安全性工作原理  
  核心[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安全性取决于证书、 代码访问安全策略和 ClickOnce 信任提示。  
@@ -87,7 +84,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  **发布向导**在 Visual Studio 中可用来执行这些步骤。  
   
- 除了部署位置中，部署清单还包含应用程序检查更新版本的其中一个更新位置 （网页或网络文件共享）。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]**发布**属性用于指定应用程序时间和频率应检查更新。 更新行为可以指定在部署清单中，或者它可以为通过应用程序的用户界面中的用户选项提供[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Api。 此外，**发布**属性还可以应用以强制进行更新或回滚到早期版本。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
+ 除了部署位置中，部署清单还包含应用程序检查更新版本的其中一个更新位置 （网页或网络文件共享）。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **发布**属性用于指定应用程序时间和频率应检查更新。 更新行为可以指定在部署清单中，或者它可以为通过应用程序的用户界面中的用户选项提供[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Api。 此外，**发布**属性还可以应用以强制进行更新或回滚到早期版本。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
   
 ### <a name="third-party-installers"></a>第三方安装程序  
  你可以自定义 ClickOnce 安装程序，以安装第三方组件以及你的应用程序。 你必须具有可再发行组件包 （.exe 或.msi 文件），并描述一个非特定于语言的产品清单和特定于语言的包清单的包。 有关详细信息，请参阅[创建引导程序包](../deployment/creating-bootstrapper-packages.md)。  

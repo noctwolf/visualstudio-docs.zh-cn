@@ -1,13 +1,9 @@
 ---
-title: "在调试器中查看线程 |Microsoft 文档"
-ms.custom: 
+title: 在调试器中查看线程 |Microsoft 文档
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
 dev_langs:
@@ -24,17 +20,16 @@ helpviewer_keywords:
 - '@TIB'
 - debugging [Visual Studio], threads
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bde9f1c8aa09f8e5961bd228a5f1947c2fc30f82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ec5cdf340002c9f454c67b170b4e849360de0166
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-threads-in-the-debugger-in-visual-studio-using-the-threads-window"></a>使用线程窗口的 Visual Studio 中的调试器中查看线程
 在**线程**窗口中，你可以检查和使用的线程中的应用程序进行调试。 有关如何使用的分步指南**线程**窗口中，请参阅[演练： 使用线程窗口进行调试](../debugger/how-to-use-the-threads-window.md)。

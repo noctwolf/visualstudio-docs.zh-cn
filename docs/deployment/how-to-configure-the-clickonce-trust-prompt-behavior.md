@@ -1,12 +1,9 @@
 ---
-title: "如何： 配置 ClickOnce 信任提示行为 |Microsoft 文档"
-ms.custom: 
+title: 如何： 配置 ClickOnce 信任提示行为 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce applications, trust prompt
 - ClickOnce deployment, trust prompt
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
-caps.latest.revision: "11"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 8822d0aa9947dccbdfabc43d7090b52eba7d0844
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d37e5fa465a5e19b1bfb7577f6ab06c61782f775
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何：配置 ClickOnce 信任提示行为
 你可以配置 ClickOnce 信任提示到控件，最终用户是否可以选择安装 ClickOnce 应用程序，如 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序、 控制台应用程序、 WPF 浏览器应用程序和 Office 解决方案。 通过在每个最终用户计算机上设置注册表项配置信任提示。  
@@ -71,7 +68,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  添加以下子键作为**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |`Internet`|`Enabled`|  
     |`UntrustedSites`|`Disabled`|  
@@ -130,7 +127,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  添加以下子键作为**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`AuthenticodeRequired`|  
@@ -187,7 +184,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  添加以下子键作为**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`Disabled`|  

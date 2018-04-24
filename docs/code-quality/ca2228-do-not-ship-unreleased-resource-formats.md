@@ -1,10 +1,8 @@
 ---
-title: CA2228： 不要发行未发布的资源格式 |Microsoft 文档
-ms.custom: ''
+title: CA2228：不要发行未发布的资源格式
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotShipUnreleasedResourceFormats
 - CA2228
@@ -17,28 +15,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b244dda388e5044b910259a4e92266671722e562
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1928cb4626ea5d5af15ecf800a8842d66f3e244d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228：不要发行未发布的资源格式
-|||  
-|-|-|  
-|TypeName|DoNotShipUnreleasedResourceFormats|  
-|CheckId|CA2228|  
-|类别|Microsoft.Usage|  
-|是否重大更改|非重大更改|  
-  
-## <a name="cause"></a>原因  
- 资源文件使用版本生成的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，目前不支持。  
-  
-## <a name="rule-description"></a>规则说明  
- 通过使用预发行版本生成的资源文件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可能无法用于受支持的.NET Framework 版本。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，生成使用的受支持的版本的资源[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
+|||
+|-|-|
+|TypeName|DoNotShipUnreleasedResourceFormats|
+|CheckId|CA2228|
+|类别|Microsoft.Usage|
+|是否重大更改|非重大更改|
+
+## <a name="cause"></a>原因
+ 资源文件使用版本生成的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，目前不支持。
+
+## <a name="rule-description"></a>规则说明
+ 通过使用预发行版本生成的资源文件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可能无法用于受支持的.NET Framework 版本。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，生成使用的受支持的版本的资源[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。

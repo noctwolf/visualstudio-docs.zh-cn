@@ -1,10 +1,8 @@
 ---
-title: CA1052： 应密封静态容器类型 |Microsoft 文档
-ms.custom: ''
+title: CA1052：应密封静态容器类型
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
 - CA1052
@@ -17,49 +15,49 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fc3954c4c446ff578790e92bc60dd97e42a0d8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3866b303414b63cb073d7b548243cede1be1cea7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052：应密封静态容器类型
-|||  
-|-|-|  
-|TypeName|StaticHolderTypesShouldBeSealed|  
-|CheckId|CA1052|  
-|类别|Microsoft.Design|  
-|是否重大更改|重大|  
-  
-## <a name="cause"></a>原因  
- 公共或受保护类型仅包含静态成员，并且不声明与[密封](/dotnet/csharp/language-reference/keywords/sealed)([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) 修饰符。  
-  
-## <a name="rule-description"></a>规则说明  
- 此规则假定只包含静态成员的类型未设计为被继承，因为类型没有提供可以重写派生类型中的任何功能。 未计划继承的类型应该用 `sealed` 修饰符进行标记，以便禁止其作为基类型使用。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，将类型标记为`sealed`。 如果你正面向[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]2.0 或更高版本，更好的方法是将类型标记为`static`。 在这种方式，你应避免出现声明一个私有构造函数，以防止从正在创建的类。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 禁止显示此规则的警告，仅当类型都旨在被继承。 缺少`sealed`修饰符意味着类型非常有用的基类型。  
-  
-## <a name="example-of-a-violation"></a>冲突的示例  
-  
-### <a name="description"></a>描述  
- 下面的示例演示与该规则冲突的类型。  
-  
-### <a name="code"></a>代码  
+|||
+|-|-|
+|TypeName|StaticHolderTypesShouldBeSealed|
+|CheckId|CA1052|
+|类别|Microsoft.Design|
+|是否重大更改|重大|
+
+## <a name="cause"></a>原因
+ 公共或受保护类型仅包含静态成员，并且不声明与[密封](/dotnet/csharp/language-reference/keywords/sealed)([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) 修饰符。
+
+## <a name="rule-description"></a>规则说明
+ 此规则假定只包含静态成员的类型未设计为被继承，因为类型没有提供可以重写派生类型中的任何功能。 未计划继承的类型应该用 `sealed` 修饰符进行标记，以便禁止其作为基类型使用。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，将类型标记为`sealed`。 如果你正面向[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]2.0 或更高版本，更好的方法是将类型标记为`static`。 在这种方式，你应避免出现声明一个私有构造函数，以防止从正在创建的类。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 禁止显示此规则的警告，仅当类型都旨在被继承。 缺少`sealed`修饰符意味着类型非常有用的基类型。
+
+## <a name="example-of-a-violation"></a>冲突的示例
+
+### <a name="description"></a>描述
+ 下面的示例演示与该规则冲突的类型。
+
+### <a name="code"></a>代码
  [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
  [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
- [!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]  
-  
-## <a name="fix-with-the-static-modifier"></a>修复静态修饰符  
-  
-### <a name="description"></a>描述  
- 下面的示例演示如何修复此规则的冲突错误标记具有的类型`static`修饰符。  
-  
-### <a name="code"></a>代码  
- [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]  
-  
-## <a name="related-rules"></a>相关的规则  
+ [!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]
+
+## <a name="fix-with-the-static-modifier"></a>修复静态修饰符
+
+### <a name="description"></a>描述
+ 下面的示例演示如何修复此规则的冲突错误标记具有的类型`static`修饰符。
+
+### <a name="code"></a>代码
+ [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
+
+## <a name="related-rules"></a>相关的规则
  [CA1053：静态容器类型不应具有构造函数](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

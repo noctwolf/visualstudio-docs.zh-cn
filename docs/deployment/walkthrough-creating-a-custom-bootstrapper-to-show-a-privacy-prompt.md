@@ -1,12 +1,9 @@
 ---
-title: "演练： 创建自定义的引导程序，以显示隐私提示 |Microsoft 文档"
-ms.custom: 
+title: 演练： 创建自定义的引导程序，以显示隐私提示 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - Windows Installer deployment, prerequisites
 - prerequisites [.NET Framework], custom bootstrapper package
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 97b5ba379eb715c63e5432b22999e2c4f12bf50d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>演练：创建自定义引导程序以显示隐私提示
 你可以配置自动更新时使用较新的文件版本和程序集版本的程序集可用的 ClickOnce 应用程序。 若要确保你的客户同意此行为，可以向其显示隐私提示。 然后，他们可以选择是否用于授予对应用程序的自动更新权限。 如果应用程序不允许自动更新，它不安装。  

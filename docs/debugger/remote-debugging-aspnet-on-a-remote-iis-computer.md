@@ -1,25 +1,21 @@
 ---
-title: "远程调试远程 IIS 计算机上的 ASP.NET Core |Microsoft 文档"
+title: 远程调试远程 IIS 计算机上的 ASP.NET Core |Microsoft 文档
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f1938473a3a5e085e63b9b522bbc31678dedbbd4
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: e4c0311f8e011b8cab3e189f309cd618a485bd71
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 远程 IIS 计算机上的远程调试 ASP.NET 核心
 若要调试的 ASP.NET 应用程序部署到 IIS，安装和在计算机上运行远程工具其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
@@ -32,7 +28,7 @@ ms.lasthandoff: 01/25/2018
 * Windows Server 2012 R2 和 IIS 8
 * Windows Server 2016 和 IIS 10
 
-## <a name="requirements"></a>惠?
+## <a name="requirements"></a>要求
 
 不支持调试通过代理连接的两台计算机之间。 国家/地区中调试通过高延迟或低带宽连接，如拨号 Internet，或通过 Internet 不建议和可能失败也是非常慢。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
@@ -48,7 +44,7 @@ ms.lasthandoff: 01/25/2018
 
 4. 打开 About.cshtml.cs 文件和中设置断点`OnGet`方法 (在以前的模板，打开 HomeController.cs 而是和中设置断点`About()`方法)。
 
-## <a name="bkmk_configureIIS"></a>安装和 Windows Server 上配置 IIS
+## <a name="bkmk_configureIIS"></a> 安装和 Windows Server 上配置 IIS
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -70,15 +66,15 @@ ms.lasthandoff: 01/25/2018
 1. 安装[.NET 核心 Windows 服务器承载](https://aka.ms/dotnetcore-2-windowshosting)主机系统上的软件包。 .NET Core 运行时，.NET 核心库和 ASP.NET 核心模块安装捆绑。 有关更多深入说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
     > [!NOTE]
-    > 如果系统没有连接到 Internet，获取并安装 *[Microsoft Visual c + + 2015年可再发行组件](https://www.microsoft.com/download/details.aspx?id=53840)*之前安装.NET 核心 Windows 服务器承载捆绑。
+    > 如果系统没有连接到 Internet，获取并安装 *[Microsoft Visual c + + 2015年可再发行组件](https://www.microsoft.com/download/details.aspx?id=53840)* 之前安装.NET 核心 Windows 服务器承载捆绑。
 
 3. 重新启动系统 (或执行**net 停止已 /y**跟**net 启动 w3svc**从命令提示符以拾取到系统路径的更改)。
 
-## <a name="BKMK_install_webdeploy"></a>（可选）安装 Web 部署 Windows Server 上的 3.6
+## <a name="BKMK_install_webdeploy"></a> （可选）安装 Web 部署 Windows Server 上的 3.6
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a>在 Windows Server 计算机上配置 ASP.NET 网站
+## <a name="BKMK_deploy_asp_net"></a> 在 Windows Server 计算机上配置 ASP.NET 网站
 
 1. 打开 Windows 资源管理器并创建一个新的文件夹， **C:\Publish**，稍后将部署 ASP.NET 项目。
 
@@ -98,7 +94,7 @@ ms.lasthandoff: 01/25/2018
 
     如果你看不到具有权限的这些用户之一，请完成步骤将 IUSR 添加为具有读取和执行权限的用户。
 
-## <a name="bkmk_webdeploy"></a>（可选）发布和使用 Web 部署从 Visual Studio 部署应用
+## <a name="bkmk_webdeploy"></a> （可选）发布和使用 Web 部署从 Visual Studio 部署应用
 
 [!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
 
@@ -108,14 +104,14 @@ ms.lasthandoff: 01/25/2018
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="BKMK_msvsmon"></a>下载并在 Windows Server 上安装远程工具
+## <a name="BKMK_msvsmon"></a> 下载并在 Windows Server 上安装远程工具
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
 > [!TIP]
 > 在某些情况下，它可以从文件共享运行远程调试器方式效率最高。 有关详细信息，请参阅[从文件共享运行远程调试器](../debugger/remote-debugging.md#fileshare_msvsmon)。
   
-## <a name="BKMK_setup"></a>设置 Windows Server 上的远程调试器
+## <a name="BKMK_setup"></a> 设置 Windows Server 上的远程调试器
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -155,7 +151,7 @@ ms.lasthandoff: 01/25/2018
 
     应在 Visual Studio 中命中断点。
 
-## <a name="bkmk_openports"></a>疑难解答： 打开 Windows Server 上的所需的端口
+## <a name="bkmk_openports"></a> 疑难解答： 打开 Windows Server 上的所需的端口
 
 在大多数系统中，打开 ASP.NET 和远程调试器的安装所需的端口。 但是，你可能需要验证的端口打开。
 

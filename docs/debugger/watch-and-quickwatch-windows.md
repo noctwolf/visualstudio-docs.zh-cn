@@ -1,13 +1,9 @@
 ---
-title: "在 Visual Studio 中的变量上设置监视 |Microsoft 文档"
+title: 在 Visual Studio 中的变量上设置监视 |Microsoft 文档
 ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -19,14 +15,14 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 187c9e682877a0f0633e7d3210454d40cae9de0f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>在使用监视和 Visual Studio 中的快速监视窗口的变量上设置监视
 在调试时可以使用**监视**和**快速监视**窗口来监视变量和表达式。  区别是“监视”  窗口可以显示多个变量，而“快速监视”  窗口一次仅显示单个变量。 
@@ -59,7 +55,7 @@ static void Main(string[] args)
 
     你应看到中的变量**值**窗口中的，值为 1。
 
-    ![QuickWatch Expression](../debugger/media/watchexpression.png "QuickWatchExpression")  
+    ![快速监视表达式](../debugger/media/watchexpression.png "QuickWatchExpression")  
 
     如果你想要评估使用变量的表达式，添加一个表达式，如`a + b`到**表达式**窗口并单击**重新计算**。 
   
@@ -217,7 +213,7 @@ public class Program
   
 2.  启动调试，当执行在断点处停止时，在“局部变量”  窗口中找到该变量，右键单击该变量，然后选择“创建对象 ID” 。  
   
-3.  你应该会看到 **$** 外加一个数字中**局部变量**窗口中，它表示对象 id。  
+3.  你应该会看到**$** 外加一个数字中**局部变量**窗口中，它表示对象 id。  
   
 4.  将对象 ID 添加到“监视”窗口中。  
   
@@ -229,7 +225,7 @@ public class Program
 >  如果你想要查看对象的属性，如`Person.Name`在上面的示例中，你必须启用属性求值。  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>在“监视”窗口（仅 C++）中使用寄存器  
- 如果你正在调试本机代码，则可以添加寄存器名以及变量名使用 **$\<注册名称 >**或 **@\<注册名称 >**.  有关详细信息，请参阅 [Pseudovariables](../debugger/pseudovariables.md)。  
+ 如果你正在调试本机代码，则可以添加寄存器名以及变量名使用 **$\<注册名称 >** 或 **@\<注册名称 >**.  有关详细信息，请参阅 [Pseudovariables](../debugger/pseudovariables.md)。  
   
 ## <a name="dynamic-view-and-the-watch-window"></a>动态视图和监视窗口  
  某些脚本语言 （例如，JavaScript 或 Python） 使用动态或[鸭子类型化](https://en.wikipedia.org/wiki/Duck_typing)，而.NET 语言 （在版本 4.0 以及更高版本） 支持对象难以观察使用一般调试窗口中，因为它们可能具有运行时属性和方法，无法显示。  

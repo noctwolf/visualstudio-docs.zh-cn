@@ -1,12 +1,9 @@
 ---
-title: "如何： 创建的包清单 |Microsoft 文档"
-ms.custom: 
+title: 如何： 创建的包清单 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - prerequisites, custom bootstrapper package
 - dependencies, custom bootstrapper packages
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
-caps.latest.revision: "12"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 463286eb8360b728b3b7e3ce9396c9f4b7e11305
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 54c2e6a231ce597e2ec6a3e04cf74521b6c10d2e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：创建程序包清单
 若要部署你的应用程序的先决条件，你可以使用引导程序包。 引导程序包包含一个单个产品清单文件，但是包清单的每个区域设置。 产品清单都应共享的功能分布在不同的本地化版本。  

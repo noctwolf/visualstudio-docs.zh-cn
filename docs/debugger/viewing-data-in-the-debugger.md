@@ -1,13 +1,9 @@
 ---
-title: "在调试器中创建的数据的自定义视图 |Microsoft 文档"
-ms.custom: 
+title: 在调试器中创建的数据的自定义视图 |Microsoft 文档
+ms.custom: ''
 ms.date: 06/27/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -20,17 +16,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], inspecting programs
 - debugger, viewing data
 ms.assetid: 13e1105f-f987-402e-9108-ec6ac12be042
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f008ba3cde911ed5c21f281d30fda2a77bf824
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5ccf8b24618aeb2cb4b8774786bf96b2184f5da9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中创建数据的自定义的视图
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器提供了各种用于检查和修改程序状态的工具。 这些工具中的大多数仅在中断模式下有效。

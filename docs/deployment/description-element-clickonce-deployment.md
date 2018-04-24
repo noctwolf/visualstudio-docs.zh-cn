@@ -1,13 +1,9 @@
 ---
-title: "&lt;说明&gt;元素 （ClickOnce 部署） |Microsoft 文档"
-ms.custom: 
+title: '&lt;说明&gt;元素 （ClickOnce 部署） |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#description
 dev_langs:
@@ -17,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <description> element [ClickOnce deployment manifest]
 ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5045f9203d5413efdd6d192d2667e94d0119220
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 06a8f1a1e5ec5f4663ed999566158d104c6a7364
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;说明&gt;元素 （ClickOnce 部署）
 标识应用程序信息用于创建 shell 表示和**添加或删除程序**控制面板中的项。  

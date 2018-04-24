@@ -1,6 +1,5 @@
 ---
-title: 适用于 c + + 的 visual Studio data tools |Microsoft 文档
-ms.custom: ''
+title: 适用于 c + + 的 visual Studio data tools
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,11 +11,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: a853edf80cd11400b2e54c17dfe95f1ccfb1c822
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b258db15ddf879e8ef64e442082936d0d37e732
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visual-studio-data-tools-for-c"></a>适用于 c + + 的 visual Studio data tools
 
@@ -26,22 +25,22 @@ ms.lasthandoff: 04/16/2018
 
 利用 SQL Server 2005 中的自定义功能和更高版本，使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 本机客户端还包含 SQL Server ODBC 驱动程序以及一个本机动态链接库 (DLL) 中的 SQL Server OLE DB 提供程序。 这些支持使用本机代码 Api （ODBC、 OLE DB 和 ADO） 到 Microsoft SQL Server 的应用程序。  SQL Server Native Client 随同一起 SQL Server Data Tools 安装。 编程指南是此处： [SQL Server Native Client 编程](/sql/relational-databases/native-client/sql-server-native-client-programming)。
 
-## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>若要从 c + + 应用程序连接到 localDB 通过 ODBC 和 SQL Native Client  
-  
-1.  安装 SQL Server Data Tools。  
-  
-2.  如果你需要连接到一个示例 SQL 数据库，下载 Northwind 数据库，并将其解压缩到新位置。  
-  
-3.  使用 SQL Server Management Studio 将解压缩的 Northwind.mdf 文件附加到 localDB。 SQL Server Management Studio 启动时，连接到 (localdb) \MSSQLLocalDB。  
-  
-     ![使用 SSMS 连接对话框](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS 连接对话框")  
-  
-     右键单击左窗格中中的 localdb 节点，然后选择**附加**。  
-  
-     ![SSMS 附加数据库](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS 附加数据库")  
-  
+## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>若要从 c + + 应用程序连接到 localDB 通过 ODBC 和 SQL Native Client
+
+1.  安装 SQL Server Data Tools。
+
+2.  如果你需要连接到一个示例 SQL 数据库，下载 Northwind 数据库，并将其解压缩到新位置。
+
+3.  使用 SQL Server Management Studio 将解压缩的 Northwind.mdf 文件附加到 localDB。 SQL Server Management Studio 启动时，连接到 (localdb) \MSSQLLocalDB。
+
+     ![使用 SSMS 连接对话框](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS 连接对话框")
+
+     右键单击左窗格中中的 localdb 节点，然后选择**附加**。
+
+     ![SSMS 附加数据库](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS 附加数据库")
+
 4.  下载 ODBC Windows SDK 示例中，并将其解压缩到新位置。 此示例演示用于连接到数据库和问题查询和命令的基本 ODBC 命令。 你可以了解有关这些函数中[Microsoft 开放式数据库连接 (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc)。 当你首次加载的解决方案 （它是在 c + + 文件夹） 时，将提供 Visual Studio 升级到当前版本的 Visual Studio 的解决方案。 单击 **“是”**。
-  
+
 5.  若要使用的本机客户端，你需要其标头文件和 lib 文件。 这些文件包含函数和特定于 SQL Server，超出 sql.h 中定义的 ODBC 函数定义。 在**项目** > **属性** > **VC + + 目录**，添加以下包含目录：
 
 **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
@@ -50,25 +49,25 @@ ms.lasthandoff: 04/16/2018
 
 **%ProgramFiles%\Microsoft SQL Server\110\SDK\Lib**
 
-6.  将这些行添加 odbcsql.cpp 中。 #Define 阻止从正在编译的不相关 OLE DB 定义。  
-  
+6.  将这些行添加 odbcsql.cpp 中。 #Define 阻止从正在编译的不相关 OLE DB 定义。
+
     ```cpp
-    #define _SQLNCLI_ODBC_  
-    #include <sqlncli.h>  
-    ```  
-  
-    请注意，此示例不实际使用的任何本机客户端功能，因此前面的步骤，则不需要为其编译和运行。 但是，项目现在配置为使用你要使用此功能。 有关详细信息，请参阅[SQL Server Native Client 编程](/sql/relational-databases/native-client/sql-server-native-client)。  
-  
-7.  指定要在 ODBC 子系统中使用的驱动程序。 此示例将作为命令行参数传递中的驱动程序连接字符串属性。 在**项目** > **属性** > **调试**，添加此命令自变量：  
-  
+    #define _SQLNCLI_ODBC_
+    #include <sqlncli.h>
+    ```
+
+    请注意，此示例不实际使用的任何本机客户端功能，因此前面的步骤，则不需要为其编译和运行。 但是，项目现在配置为使用你要使用此功能。 有关详细信息，请参阅[SQL Server Native Client 编程](/sql/relational-databases/native-client/sql-server-native-client)。
+
+7.  指定要在 ODBC 子系统中使用的驱动程序。 此示例将作为命令行参数传递中的驱动程序连接字符串属性。 在**项目** > **属性** > **调试**，添加此命令自变量：
+
     ```cpp
-    DRIVER="SQL Server Native Client 11.0"  
-    ```  
-  
-8.  按 F5 生成并运行该应用程序。 你应看到一个对话框会提示你输入的数据库的驱动程序中。 输入`(localdb)\MSSQLLocalDB`，并检查**使用信任连接**。 Press **OK**. 你应看到消息，指示成功的连接的控制台。 你应看到命令提示符下可以在其中键入 SQL 语句中。 下面的屏幕显示的示例查询和结果：  
-  
-     ![ODBC 示例查询输出](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC 示例查询输出")  
-  
+    DRIVER="SQL Server Native Client 11.0"
+    ```
+
+8.  按 F5 生成并运行该应用程序。 你应看到一个对话框会提示你输入的数据库的驱动程序中。 输入`(localdb)\MSSQLLocalDB`，并检查**使用信任连接**。 Press **OK**. 你应看到消息，指示成功的连接的控制台。 你应看到命令提示符下可以在其中键入 SQL 语句中。 下面的屏幕显示的示例查询和结果：
+
+     ![ODBC 示例查询输出](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC 示例查询输出")
+
 ## <a name="see-also"></a>请参阅
 
-[在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)
+- [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)

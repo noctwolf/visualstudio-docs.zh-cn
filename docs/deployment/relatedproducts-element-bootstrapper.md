@@ -1,13 +1,9 @@
 ---
-title: "&lt;RelatedProducts&gt;元素 （引导程序） |Microsoft 文档"
-ms.custom: 
+title: '&lt;RelatedProducts&gt;元素 （引导程序） |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
 - MSBuild.GenerateBootstrapper.DuplicateItems
@@ -22,17 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - <RelatedProducts> element [bootstrapper]
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 548c1002eae581dc0e231f8dd2e28ee4a8376e27
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 574b7180efb7495b755d823c798ffa0c21339390
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;元素 （引导程序）
 `RelatedProducts`元素定义取决于或当前产品中包括的其他产品。  
@@ -61,7 +56,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="dependsonproduct"></a>DependsOnProduct  
  `DependsOnProduct`元素表示当前产品取决于指定的产品，和的命名的产品，应安装在当前之前。 它是的子级`RelatedProducts`元素。 A`RelatedProducts`元素可能具有一个或多`DependsOnProduct`元素。  
   
- `DependsOnProduct`具有以下属性。  
+ `DependsOnProduct` 具有以下属性。  
   
 |特性|描述|  
 |---------------|-----------------|  
@@ -73,7 +68,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="includesproduct"></a>IncludesProduct  
  `IncludesProduct`元素表示一种产品包含在当前的安装，并不需要单独安装。 它是的子级`RelatedProducts`元素。 A`RelatedProducts`元素可能具有一个或多`IncludesProduct`元素。  
   
- `IncludesProduct`具有以下属性。  
+ `IncludesProduct` 具有以下属性。  
   
 |特性|描述|  
 |---------------|-----------------|  

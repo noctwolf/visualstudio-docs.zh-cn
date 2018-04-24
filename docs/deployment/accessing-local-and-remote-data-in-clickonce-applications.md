@@ -1,12 +1,9 @@
 ---
-title: "访问 ClickOnce 应用程序中的本地和远程数据 |Microsoft 文档"
-ms.custom: 
+title: 访问 ClickOnce 应用程序中的本地和远程数据 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, data
 - data access, ClickOnce applications
 ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
-caps.latest.revision: "21"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d22180b0e48a875eaef3ab9e3b8ceac35b1fa6ef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: df2652a2da7abd0536c3e5cb60c7d36842b5430a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 应用程序中访问本地数据和远程数据
 大多数应用程序使用或生成数据。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 为你提供多种选项用于在本地及远程读取和写入数据。  

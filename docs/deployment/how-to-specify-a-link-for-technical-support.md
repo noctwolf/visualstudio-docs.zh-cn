@@ -1,12 +1,9 @@
 ---
-title: "如何： 获取技术支持指定的链接 |Microsoft 文档"
-ms.custom: 
+title: 如何： 获取技术支持指定的链接 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +17,16 @@ helpviewer_keywords:
 - customer support, ClickOnce applications
 - URLs, ClickOnce applications
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
-caps.latest.revision: "15"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 3953148355321f4ed17d5d4f539c6f31c1a5872c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 24052420ecc04ab8a369f739efa885a6fa821fbd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>如何：指定技术支持链接
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，**支持 URL**属性标识网页或文件共享，其中用户可以转至以获取有关应用程序的信息。 此属性是可选的;如果提供，将应用程序的条目中显示该 URL**添加或删除程序**对话框。  

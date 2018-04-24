@@ -1,23 +1,20 @@
 ---
-title: "如何： 包括与 ClickOnce 应用程序的系统必备组件 |Microsoft 文档"
-ms.custom: 
+title: 如何： 包括与 ClickOnce 应用程序的系统必备组件 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
-caps.latest.revision: "16"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4fbab9bacc8c5272588a4b2dfe819650bfc6110f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 54cdcdb89896662a6d4e474c7df2ee09cea4d8bf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>如何：将必备组件与 ClickOnce 应用程序包括在一起
 你必须先将必备软件的安装程序包下载到开发计算机上，然后才能使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序分发这些软件。 当你发布应用程序并选择**从与我的应用程序相同的位置下载系统必备组件**，将会出错，如果安装程序包不在**包**文件夹。  
@@ -25,7 +22,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  若要添加.NET framework 的安装程序包，请参阅[开发人员的.NET Framework 部署指南](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx)。  
   
-##  <a name="Package"></a>使用 Package.xml 添加安装程序包  
+##  <a name="Package"></a> 使用 Package.xml 添加安装程序包  
   
 1.  在文件资源管理器，打开**包**文件夹。  
   

@@ -2,8 +2,7 @@
 title: 如何： 启用 ClickOnce 安全设置 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security settings
 - security settings, ClickOnce deployment
 ms.assetid: 73cd3e9d-cd72-4ad2-8cae-94d6bb6b01e0
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c59786a49f09efd2dc4d906511ac2602c765c07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bc3f87e590c6b915d5b3d9db5d2517d80965dd6c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>How to: Enable ClickOnce Security Settings
 若要发布应用程序，必须启用 ClickOnce 应用程序的代码访问安全性。 在发布使用发布向导的应用程序时，这会自动完成。  
@@ -58,7 +57,7 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]
     >  每次发布应用程序时使用发布向导中，将选中此复选框;你必须在每个成功发布后再次清除它。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  

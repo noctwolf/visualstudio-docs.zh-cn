@@ -1,13 +1,9 @@
 ---
-title: "在 Visual Studio 调试器中查看调用堆栈 |Microsoft 文档"
+title: 在 Visual Studio 调试器中查看调用堆栈 |Microsoft 文档
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,17 +25,16 @@ helpviewer_keywords:
 - stack, switching stack frames
 - Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d20a1ac9f1a09b93f577c6aa90f550ccd6ff0def
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>查看调用堆栈和使用 Visual Studio 调试器中调用堆栈窗口
 
@@ -71,7 +66,7 @@ ms.lasthandoff: 12/22/2017
   
 **[\<外部代码 >]**  
   
-## <a name="bkmk_switch"></a>切换到另一个堆栈帧 （更改调试器上下文）
+## <a name="bkmk_switch"></a> 切换到另一个堆栈帧 （更改调试器上下文）
   
 1.  在**调用堆栈**窗口中，右击堆栈帧其代码和你想要查看的数据。
 
@@ -113,9 +108,9 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="change-the-optional-information-displayed"></a>更改显示的可选信息  
   
--   右键单击**调用堆栈**窗口和设置或清除**显示\<** *所需的信息* **>** .  
+-   右键单击**调用堆栈**窗口和设置或清除**显示\<***所需的信息***>**。  
   
-## <a name="bkmk_symbols"></a>模块加载符号
+## <a name="bkmk_symbols"></a> 模块加载符号
 在**调用堆栈**窗口中，你可以加载调试符号的当前不具有加载的符号的代码。 这些符号可以是从 Microsoft 公共符号服务器下载的 .NET Framework 符号或系统符号，也可以是正在调试的计算机上的某个符号路径中的符号。  
   
 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  

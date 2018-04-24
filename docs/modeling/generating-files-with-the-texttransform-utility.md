@@ -1,21 +1,21 @@
 ---
-title: 在 Visual Studio 中生成使用 TextTransform 实用工具的文件 |Microsoft 文档
+title: 在 Visual Studio 中生成使用 TextTransform 实用工具的文件
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5ecc5af3c37889bc79dc5978c33caf8249433978
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 065d9e23a8ae8b5e328786bb195d191df1388abb
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>生成使用 TextTransform 实用工具的文件
 
@@ -58,7 +58,7 @@ TextTransform [<options>] <templateName>
 |**-r** \<assembly>|程序集，用于编译和运行文本模板。|
 |**-u** \<namespace>|用于编译模板命名空间。|
 |**-I** \<includedirectory>|包含指定的文本模板中包括的文本模板的目录。|
-|**-P** \<referencepath>|要搜索的文本模板中指定的程序集或使用目录**-r**选项。<br /><br /> 例如，若要包括用于 Visual Studio API 的程序集，使用<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
+|**-P** \<referencepath >|要搜索的文本模板中指定的程序集或使用目录 **-r**选项。<br /><br /> 例如，若要包括用于 Visual Studio API 的程序集，使用<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|名称、 完整类型名称和可以用于处理文本模板中的自定义指令的指令处理器的程序集。|
 |**-a** [processorName]![directiveName]!\<parameterName>!\<parameterValue>|指定指令处理器的参数值。 如果你指定只需的参数名称和值，该参数将可供所有指令处理器。 如果指定指令处理器，参数是仅供指定的处理器。 如果指定指令的名称，仅当正在处理指定的指令参数才可用。<br /><br /> 若要访问从指令处理器或文本模板的参数值，使用[ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx)。 在文本模板中，包括`hostspecific`的 template 指令中并调用消息`this.Host`。 例如：<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`。<br /><br /> 始终键入 ！ 将标记，即使你省略了可选的处理器和指令的名称。 例如：<br /><br /> `-a !!param!value`|
 |**-h**|提供帮助。|

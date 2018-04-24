@@ -1,12 +1,9 @@
 ---
-title: "查找内存泄漏使用 CRT 库 |Microsoft 文档"
-ms.custom: 
+title: 查找内存泄漏使用 CRT 库 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -29,16 +26,16 @@ helpviewer_keywords:
 - _CRTDBG_MAP_ALLOC
 - _CrtSetDbgFlag
 ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e67f3c3b8cc10e6aa3e7c9b996cd1c608d893eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d858b6c67893e49b4d4e9ec87c3b20fce56dd7c4
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 库查找内存泄漏
 内存泄漏，即未能正确释放以前分配的内存，是 C/C++ 应用程序中最难以捉摸也最难以检测到的 Bug 之一。 最初少量内存泄漏可能不引人注目，但随着时间的推移，内存泄漏越来越多，就会出现一些征兆，包括性能下降，在应用程序内存不足时发生崩溃。 更严重的是，占用了所有可用内存的泄漏应用程序可能会导致其他应用程序崩溃，从而无法确定问题出在哪个应用程序。 即使看似无害的内存泄漏也可能说明存在其他问题应当纠正。  

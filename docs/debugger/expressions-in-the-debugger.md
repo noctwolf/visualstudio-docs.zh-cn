@@ -1,13 +1,9 @@
 ---
-title: "调试器中的表达式 |Microsoft 文档"
-ms.custom: 
+title: 调试器中的表达式 |Microsoft 文档
+ms.custom: ''
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
 helpviewer_keywords:
@@ -20,17 +16,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 - debugging [Visual Studio], variable evaluation
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1a477a7d02171eecea51b26f796d9c958c09eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dccd4af0c14787ef34c1c558f83ecb2d6f0c1cea
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的表达式
 Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”** 对话框、 **“监视”** 窗口或 **“即时”** 窗口中输入表达式时，这些计算器可以对其进行计算。 这些表达式计算器还可以在 **“断点”** 窗口和调试器中的许多其他位置使用。

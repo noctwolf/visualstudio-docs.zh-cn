@@ -1,20 +1,18 @@
 ---
-title: 混合建议规则规则集 |Microsoft 文档
-ms.custom: ''
+title: “混合建议规则”规则集
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dfecf4019244e02816686783171cb34cd0c0c1d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b84c218ad6a369cfc5d9f06a5f5833fb277692ee
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>“混合建议规则”规则集
 
@@ -215,7 +213,7 @@ Microsoft 混合建议规则专注于支持公共语言运行时，包括潜在�
 |[C28253](../code-quality/c28253.md)|函数的批注不一致：参数在此实例中包含另一个批注。|
 |[C28254](../code-quality/c28254.md)|批注中不支持 dynamic_cast<>()|
 |[C28262](../code-quality/c28262.md)|对于批注，在函数中找到了批注的语法错误|
-|[C28263](../code-quality/c28263.md)|在条件批注中找到内部批注的语法错误| 
+|[C28263](../code-quality/c28263.md)|在条件批注中找到内部批注的语法错误|
 |[C28267](../code-quality/c28267.md)|在函数中找到了批注的语法错误。|
 |[C28272](../code-quality/c28272.md)|在检查参数时，函数的批注与函数声明不一致|
 |[C28273](../code-quality/c28273.md)|对于函数，线索与函数声明不一致|

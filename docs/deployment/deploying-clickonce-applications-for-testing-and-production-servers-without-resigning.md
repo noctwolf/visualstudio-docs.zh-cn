@@ -1,12 +1,9 @@
 ---
-title: "为测试部署 ClickOnce 应用程序服务器和生产服务器无需重新签名 |Microsoft 文档"
-ms.custom: 
+title: 为测试部署 ClickOnce 应用程序服务器和生产服务器无需重新签名 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - deploymentProvider tag
 - manifests [ClickOnce]
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ec7265f91d5c202d5885b7f1994aa6f037d6d2ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b4c71e1bd6f224fdd0198ce7850c92364126d7e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>在不重新签名的情况下为测试服务器和生产服务器部署 ClickOnce 应用程序
 本主题讨论 ClickOnce.NET Framework 版本 3.5，而无需重新签名，或更改 ClickOnce 可以从多个网络位置的 ClickOnce 应用程序的部署清单中引入的新功能。  
@@ -54,13 +51,13 @@ ms.lasthandoff: 12/22/2017
   
  要记住的要点是，应用程序排除`deploymentProvider`期间无法更改其安装位置更新，直到它们提供的更新包含`deploymentProvider`再次标记。  
   
- 下面是两个示例来澄清这一点。 在第一个示例中，发布的 ClickOnce 应用程序未包含任何`deploymentProvider`标记，并且你要求用户从 http://www.adatum.com/MyApplication/ 安装它。 如果你决定你想要将下一步更新 http://subdomain.adatum.com/MyApplication/ 应用程序的发布，则将必须没有表明这驻留在 http://www.adatum.com/MyApplication/ 部署清单中的方法。 你可以执行以下两项操作之一：  
+ 下面是两个示例来澄清这一点。 在第一个示例中，发布的 ClickOnce 应用程序未包含任何`deploymentProvider`标记，并且你要求用户从http://www.adatum.com/MyApplication/。 如果你决定你想要将应用程序的下一步更新发布http://subdomain.adatum.com/MyApplication/，你将有任何方式来表明这驻留在部署清单中http://www.adatum.com/MyApplication/。 你可以执行以下两项操作之一：  
   
 -   通知用户卸载以前的版本中，并从新位置中安装新版本。  
   
--   包括的更新，包括 http://www.adatum.com/MyApplication/`deploymentProvider`指向 http://www.adatum.com/MyApplication/。 然后，释放更高版本与另一个更新`deploymentProvider`指向 http://subdomain.adatum.com/MyApplication/。  
+-   在包括更新http://www.adatum.com/MyApplication/包括`deploymentProvider`指向http://www.adatum.com/MyApplication/。 然后，释放更高版本与另一个更新`deploymentProvider`指向http://subdomain.adatum.com/MyApplication/。  
   
- 在第二个示例中，发布 ClickOnce 应用程序，指定`deploymentProvider`，，然后决定将其删除。 不带一次新的版本`deploymentProvider`已下载到客户端，你将无法重定向之前发布的应用程序具有的版本，用于更新的路径`deploymentProvider`还原。 与第一个示例中，`deploymentProvider`最初必须指向当前的更新位置，而不是新位置。 在此情况下，如果你尝试插入`deploymentProvider`，是指 http://subdomain.adatum.com/MyApplication/，则下一次更新将失败。  
+ 在第二个示例中，发布 ClickOnce 应用程序，指定`deploymentProvider`，，然后决定将其删除。 不带一次新的版本`deploymentProvider`已下载到客户端，你将无法重定向之前发布的应用程序具有的版本，用于更新的路径`deploymentProvider`还原。 与第一个示例中，`deploymentProvider`最初必须指向当前的更新位置，而不是新位置。 在此情况下，如果你尝试插入`deploymentProvider`，是指http://subdomain.adatum.com/MyApplication/，则下一次更新将失败。  
   
 ## <a name="creating-a-deployment"></a>创建部署  
  创建可以从不同的网络位置部署的部署分步指南，请参阅[演练： 手动部署 ClickOnce 应用程序，不会不需要重新签名并且该保留的品牌信息](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  

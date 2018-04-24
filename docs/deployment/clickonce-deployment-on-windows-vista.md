@@ -1,12 +1,9 @@
 ---
-title: "在 Windows Vista 上的 ClickOnce 部署 |Microsoft 文档"
-ms.custom: 
+title: 在 Windows Vista 上的 ClickOnce 部署 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - manifest generation
 - Windows, ClickOnce deployment
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
-caps.latest.revision: "12"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 49ea73293e8cc491b515644a7e7d3f226a799339
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c546d7e4287fc47a3770baa306a43a1631be2f06
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista 上的 ClickOnce 部署
 在 Windows Vista 上的用户帐户控制 (UAC) 通常会生成嵌入的清单，Visual Studio 中生成应用程序编码为二进制的 XML 数据，应用程序的可执行文件中。 ClickOnce 和免注册 COM 应用程序需要外部清单，因为 Visual Studio 将生成这些类型的项目包含 UAC 数据而不是嵌入的清单的文件。 默认情况下，Visual Studio 使用信息从调用应用程序清单文件来生成外部 UAC 清单信息 （对于 ClickOnce 和免注册 COM 部署），或将其嵌入在应用程序的可执行文件 （对于所有其他情况下）。 Visual Studio 针对清单生成提供以下选项：  

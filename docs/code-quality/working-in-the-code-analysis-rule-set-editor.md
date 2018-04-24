@@ -1,5 +1,5 @@
 ---
-title: 使用 Visual Studio 中的代码分析规则集编辑器 |Microsoft 文档
+title: 使用 Visual Studio 中的代码分析规则集编辑器
 ms.date: 04/-4/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab1a49cd8f0376a8a144f1a6f889bac0c5963b6e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3bd9f02142b803cc9a09fce79cb687ea521dea9e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用代码分析规则集编辑器
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/16/2018
 |---------------------|-----------------|
 |**全部展开**|所有组中显示的规则。|
 |**全部折叠**|隐藏所有组中的规则。|
-|**Group By**|指定规则分组所依据的字段。 单击**\<无 >**以显示不分组的规则。|
+|**Group By**|指定规则分组所依据的字段。 单击**\<无 >** 以显示不分组的规则。|
 |**列选项**|指定要显示的规则字段。|
 |**不适用于当前解决方案的隐藏规则**|显示或隐藏不属于解决方案的目标类型相同的规则。|
 |**显示可以生成代码分析错误的规则**|显示或隐藏分配了错误操作的规则。|

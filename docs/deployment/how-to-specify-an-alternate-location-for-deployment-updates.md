@@ -1,12 +1,9 @@
 ---
-title: "如何： 指定部署更新的备用位置 |Microsoft 文档"
-ms.custom: 
+title: 如何： 指定部署更新的备用位置 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - deployment update, alternative locations
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
-caps.latest.revision: "15"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 637f4517734d3a0bbf86c3894c4f0fc7dd5b5e8d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 14c6778d5cad698e6eea541b94df6f8eb793746c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何：指定部署更新的其他位置
 你可以安装你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序最初从 CD 或文件共享，但应用程序必须检查在 Web 上找到的定期更新。 可以在你的部署清单中指定更新的备用位置，以便你的应用程序在其初始安装后可从 Web 自行更新。  
@@ -50,9 +47,9 @@ ms.lasthandoff: 12/22/2017
   
 1.  打开.NET Framework 命令提示符。  
   
-2.  设置使用以下命令的更新位置。 在此示例中， **HelloWorld.exe.application**是路径你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]始终具有.application 扩展名，应用程序清单和**http://adatum.com/Update/Path**是 URL[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将检查应用程序更新。  
+2.  设置使用以下命令的更新位置。 在此示例中， **HelloWorld.exe.application**是路径你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]始终具有.application 扩展名，应用程序清单和**http://adatum.com/Update/Path**是该的URL[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将检查应用程序更新。  
   
-     **Mage-更新 HelloWorld.exe.application-ProviderUrl http://adatum.com/Update/Path**  
+     **Mage-更新 HelloWorld.exe.application ProviderUrl http://adatum.com/Update/Path**  
   
 3.  保存该文件。  
   

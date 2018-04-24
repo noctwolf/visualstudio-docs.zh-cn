@@ -1,12 +1,9 @@
 ---
-title: "&lt;文件&gt;元素 （ClickOnce 应用程序） |Microsoft 文档"
-ms.custom: 
+title: '&lt;文件&gt;元素 （ClickOnce 应用程序） |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -22,16 +19,16 @@ helpviewer_keywords:
 - <file> element [ClickOnce application manifest]
 - manifests [ClickOnce], file element
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
-caps.latest.revision: "24"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8fccbd816d578a95e3e43e15c83d615756dcddcb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;文件&gt;元素 （ClickOnce 应用程序）
 标识下载和应用程序使用的所有非程序集文件。  
@@ -95,7 +92,7 @@ ms.lasthandoff: 12/22/2017
 |`name`|必须的。 标识文件的名称。|  
 |`size`|必须的。 指定的大小，以字节的文件。|  
 |`group`|可选的如果`optional`属性未指定或设置为`false`; 如果存在`optional`是`true`。 此文件所属的组的名称。 名称可以是由开发人员，选择任何 Unicode 字符串值，用于下载文件使用按需<xref:System.Deployment.Application.ApplicationDeployment>类。|  
-|`optional`|可选。 指定此文件必须下载第一个应用程序时运行，还是是否文件之前应用程序请求它按需应驻留在服务器上仅。 如果`false`或未定义，该文件将下载时首次运行或安装应用程序。 如果`true`、`group`必须为有效的应用程序清单中指定。 `optional`不能为 true 如果`writeableType`值指定`applicationData`。|  
+|`optional`|可选。 指定此文件必须下载第一个应用程序时运行，还是是否文件之前应用程序请求它按需应驻留在服务器上仅。 如果`false`或未定义，该文件将下载时首次运行或安装应用程序。 如果`true`、`group`必须为有效的应用程序清单中指定。 `optional` 不能为 true 如果`writeableType`值指定`applicationData`。|  
 |`writeableType`|可选。 指定此文件是一个数据文件。 目前，唯一有效的值是`applicationData`。|  
   
 ## <a name="typelib"></a>类型库  
@@ -160,7 +157,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="hash"></a>hash  
  `hash`元素是可选的子`file`元素。 `hash`元素没有任何特性。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用应用程序中的所有文件的哈希算法作为一种安全检查，以确保部署之后的任何文件发生更改。 如果`hash`元素不包含，则不会执行此检查。 因此，省略`hash`元素不建议。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用应用程序中的所有文件的哈希算法作为一种安全检查，以确保部署之后的任何文件发生更改。 如果`hash`元素不包含，则不会执行此检查。 因此，省略`hash`元素不建议。  
   
  如果清单包含不进行哈希处理的文件，无法对该清单进行数字签名，因为用户无法验证未经哈希的文件的内容。  
   

@@ -2,8 +2,7 @@
 title: 受支持的代码更改 （C# 和 Visual Basic） |Microsoft 文档
 ms.custom: ''
 ms.date: 10/11/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: eba3de7930b650ad7c1fc2d6ad4511ca3ca4c9d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 855e8111721480b98c1395811090a54dd6e3ab2a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>受支持的代码更改 （C# 和 Visual Basic）
 “编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，你必须停止调试，重新开始新版本的代码。
@@ -106,6 +105,6 @@ ms.lasthandoff: 04/16/2018
   
 -   如果由于生成错误无法生成新版本的代码，则对旧版本的代码进行调试。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编辑并继续 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [如何：使用“编辑并继续”(C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

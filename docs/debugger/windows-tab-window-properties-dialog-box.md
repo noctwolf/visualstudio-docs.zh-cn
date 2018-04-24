@@ -1,27 +1,22 @@
 ---
-title: "Windows 选项卡上，属性选项卡 |Microsoft 文档"
-ms.custom: 
+title: Windows 选项卡上，属性选项卡 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Windows Tab
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8336d854f8288429c40ff308e0f0c8004edfe1c
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: e3589f3242c72002bf28e8aee135b2713c39fdb7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>“窗口属性”对话框 ->“窗口”选项卡
 使用**Windows**选项卡来显示在 windows 上的信息与所选的窗口。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，焦点移到[Windows 视图](../debugger/windows-view.md)窗口。 在树中，选择任何窗口节点，然后选择**属性**从**视图**菜单。  

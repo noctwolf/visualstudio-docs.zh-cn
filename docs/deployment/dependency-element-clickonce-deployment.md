@@ -1,13 +1,9 @@
 ---
-title: "&lt;依赖项&gt;元素 （ClickOnce 部署） |Microsoft 文档"
-ms.custom: 
+title: '&lt;依赖项&gt;元素 （ClickOnce 部署） |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,17 +22,16 @@ dev_langs:
 helpviewer_keywords:
 - <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8716da20c989a1a8d1e36d9e071e9802a06219bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 72e217413a428c8c22712ac3a90836b1ea4fbc35
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;依赖项&gt;元素 （ClickOnce 部署）
 标识要安装，应用程序的版本和应用程序清单的位置。  
@@ -98,7 +93,7 @@ ms.lasthandoff: 12/22/2017
 |特性|描述|  
 |---------------|-----------------|  
 |`Name`|必须的。 标识应用程序的名称。|  
-|`Version`|必须的。 采用以下格式指定该应用程序的版本号：`major.minor.build.revision`|  
+|`Version`|必须的。 采用以下格式指定该应用程序的版本号： `major.minor.build.revision`|  
 |`publicKeyToken`|必须的。 指定的 16 字符十六进制字符串表示的应用程序集签名的公钥的 sha-1 哈希的最后 8 个字节。 用于对进行签名的公钥必须是 2048 位或更高版本。|  
 |`processorArchitecture`|必须的。 指定微处理器。 有效值为`x86`适用于 32 位 Windows 和`IA64`适用于 64 位 Windows。|  
 |`Language`|可选。 标识程序集的两个部分语言代码。 例如，EN-US，代表对于英语 （美国）。 默认值为 `neutral`。 此元素处于`asmv2`命名空间。|  
@@ -107,7 +102,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="hash"></a>hash  
  `hash`元素是可选的子`file`元素。 `hash`元素没有任何特性。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用应用程序中的所有文件的哈希算法作为一种安全检查以确保部署之后的任何文件发生更改。 如果`hash`元素不包含，则不会执行此检查。 因此，省略`hash`元素不建议。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用应用程序中的所有文件的哈希算法作为一种安全检查以确保部署之后的任何文件发生更改。 如果`hash`元素不包含，则不会执行此检查。 因此，省略`hash`元素不建议。  
   
 ## <a name="dsigtransforms"></a>dsig:Transforms  
  `dsig:Transforms`元素是必需的子`hash`元素。 `dsig:Transforms`元素没有任何特性。  

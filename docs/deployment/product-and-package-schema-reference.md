@@ -1,12 +1,9 @@
 ---
-title: "产品和程序包架构引用 |Microsoft 文档"
-ms.custom: 
+title: 产品和程序包架构引用 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -25,16 +22,16 @@ helpviewer_keywords:
 - package files [ClickOnce]
 - Windows Installer, bootstrapper elements
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
-caps.latest.revision: "7"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 149dd62b38bdcb0863d30f4280b35950361f58cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="product-and-package-schema-reference"></a>产品和包架构引用
 A*产品文件*是描述所有所需的外部依赖关系的 XML 清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 外部依赖关系的示例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft 数据访问组件 (MDAC)。 包文件类似于产品文件，但用于安装依赖于区域性的组件的依赖项，如本地化的程序集、 许可协议和文档。  
@@ -54,7 +51,7 @@ A*产品文件*是描述所有所需的外部依赖关系的 XML 清单[!INCLUDE
 ## <a name="remarks"></a>备注  
  包架构都会使用 Setup.exe，包含其自身的少硬编码的逻辑 MS Build 引导任务生成的存根 （stub） 程序。 该架构可以促进安装过程的各个方面。  
   
- `InstallChecks`测试该 setup.exe 应执行给定包存在。 `PackageFiles`列出所有安装过程可能需要安装，应指定的测试失败的包。 在命令下，每个命令输入执行一个测试所描述`InstallChecks`，并指定哪些`PackageFile`运行应在测试失败。 你可以使用`Strings`要本地化产品名称和错误消息，以便可以使用一个安装二进制文件安装应用程序为任意数目的语言元素。  
+ `InstallChecks` 测试该 setup.exe 应执行给定包存在。 `PackageFiles` 列出所有安装过程可能需要安装，应指定的测试失败的包。 在命令下，每个命令输入执行一个测试所描述`InstallChecks`，并指定哪些`PackageFile`运行应在测试失败。 你可以使用`Strings`要本地化产品名称和错误消息，以便可以使用一个安装二进制文件安装应用程序为任意数目的语言元素。  
   
 ## <a name="example"></a>示例  
  下面的代码示例演示用于安装的完整的产品文件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  

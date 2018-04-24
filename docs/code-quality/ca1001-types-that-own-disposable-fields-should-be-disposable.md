@@ -1,10 +1,8 @@
 ---
-title: Ca1001： 具有可释放字段的类型应该是可释放 |Microsoft 文档
-ms.custom: ''
+title: CA1001：具有可释放字段的类型应该是可释放的
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1001
 - TypesThatOwnDisposableFieldsShouldBeDisposable
@@ -17,43 +15,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1306f594af4639d1b2af24d07e4654f8825cd3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3def21cf32dd45c006045a5301293da2a5d0f70
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001：具有可释放字段的类型应该是可释放的
-|||  
-|-|-|  
-|TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|  
-|CheckId|CA1001|  
-|类别|Microsoft.Design|  
-|是否重大更改|无间断-如果类型不是程序集外部可见。<br /><br /> 中断性-如果该类型是在程序集外可见。|  
-  
-## <a name="cause"></a>原因  
- 一个类声明并实现一个实例字段，它是<xref:System.IDisposable?displayProperty=fullName>类型和类未实现<xref:System.IDisposable>。  
-  
-## <a name="rule-description"></a>规则说明  
- 类实现<xref:System.IDisposable>接口来释放它拥有的非托管资源。 是的实例字段<xref:System.IDisposable>类型指示该字段拥有非托管的资源。 声明的类<xref:System.IDisposable>字段间接拥有非托管的资源，并且应该实现<xref:System.IDisposable>接口。 如果类不直接拥有任何非托管的资源，它不应实现终结器。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要修复与此规则的冲突，实现<xref:System.IDisposable>和从<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法调用<xref:System.IDisposable.Dispose%2A>字段方法。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 不禁止显示此规则发出的警告。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示与该规则冲突的类和类通过实现满足该规则<xref:System.IDisposable>。 类未实现终结器，因为类不直接拥有任何非托管的资源。  
-  
+|||
+|-|-|
+|TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
+|CheckId|CA1001|
+|类别|Microsoft.Design|
+|是否重大更改|无间断-如果类型不是程序集外部可见。<br /><br /> 中断性-如果该类型是在程序集外可见。|
+
+## <a name="cause"></a>原因
+ 一个类声明并实现一个实例字段，它是<xref:System.IDisposable?displayProperty=fullName>类型和类未实现<xref:System.IDisposable>。
+
+## <a name="rule-description"></a>规则说明
+ 类实现<xref:System.IDisposable>接口来释放它拥有的非托管资源。 是的实例字段<xref:System.IDisposable>类型指示该字段拥有非托管的资源。 声明的类<xref:System.IDisposable>字段间接拥有非托管的资源，并且应该实现<xref:System.IDisposable>接口。 如果类不直接拥有任何非托管的资源，它不应实现终结器。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复与此规则的冲突，实现<xref:System.IDisposable>和从<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法调用<xref:System.IDisposable.Dispose%2A>字段方法。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 不禁止显示此规则发出的警告。
+
+## <a name="example"></a>示例
+ 下面的示例演示与该规则冲突的类和类通过实现满足该规则<xref:System.IDisposable>。 类未实现终结器，因为类不直接拥有任何非托管的资源。
+
  [!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
- [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]  
-  
-## <a name="related-rules"></a>相关的规则  
- [CA2213：应释放可释放的字段](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
-  
- [CA2216：可释放类型应声明终结器](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
-  
- [CA2215：Dispose 方法应调用基类 Dispose](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)  
-  
+ [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
+
+## <a name="related-rules"></a>相关的规则
+ [CA2213：应释放可释放的字段](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+
+ [CA2216：可释放类型应声明终结器](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+
+ [CA2215：Dispose 方法应调用基类 Dispose](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+
  [CA1049：拥有本机资源的类型应可释放](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)

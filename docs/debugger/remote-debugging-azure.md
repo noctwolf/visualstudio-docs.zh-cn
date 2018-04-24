@@ -1,26 +1,22 @@
 ---
-title: "远程调试在 IIS 和 Azure 上的 ASP.NET Core |Microsoft 文档"
+title: 远程调试在 IIS 和 Azure 上的 ASP.NET Core |Microsoft 文档
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: fc8e657f6fb67884bd12de3f8e65c78077fa9b2e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 在 Azure 中的 IIS 上的远程调试 ASP.NET 核心
 
@@ -47,7 +43,7 @@ ms.lasthandoff: 01/23/2018
 > 请务必删除时已完成本教程中的步骤创建 Azure 资源。 这样可以避免产生不必要的费用。
 
 
-### <a name="requirements"></a>惠?
+### <a name="requirements"></a>要求
 
 不支持调试通过代理连接的两台计算机之间。 国家/地区中调试通过高延迟或低带宽连接，如拨号 Internet，或通过 Internet 不建议和可能失败也是非常慢。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
@@ -63,7 +59,7 @@ ms.lasthandoff: 01/23/2018
 
 4. 打开 About.cshtml.cs 文件和中设置断点`OnGet`方法 (在以前的模板，打开 HomeController.cs 而是和中设置断点`About()`方法)。
 
-## <a name="remote_debug_azure_app_service"></a>在 Azure App Service 上的远程调试 ASP.NET 核心
+## <a name="remote_debug_azure_app_service"></a> 在 Azure App Service 上的远程调试 ASP.NET 核心
 
 从 Visual Studio 中，可以快速发布和调试你的应用的完全设置的 IIS 实例。 但是，预设的 IIS 配置，并且你无法自定义它。 有关详细说明，请参阅[ASP.NET 核心 web 应用部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果需要自定义 IIS 的功能，请尝试调试[Azure VM](#BKMK_azure_vm)。) 
 
@@ -83,7 +79,7 @@ ms.lasthandoff: 01/23/2018
 
     就这么简单！ 本主题中的步骤的其余部分适用于 Azure VM 上的远程调试。
 
-## <a name="remote_debug_azure_vm"></a>在 Azure VM 上的远程调试 ASP.NET 核心
+## <a name="remote_debug_azure_vm"></a> 在 Azure VM 上的远程调试 ASP.NET 核心
 
 你可以创建一个 Azure VM 的 Windows 服务器，然后安装和配置 IIS 和其他所需的软件组件。 这比将部署到 Azure App Service 的更多时间，并要求你按照本教程中的剩余步骤。
 
@@ -109,15 +105,15 @@ ms.lasthandoff: 01/23/2018
 1. 安装[.NET 核心 Windows 服务器承载](https://aka.ms/dotnetcore-2-windowshosting)主机系统上的软件包。 捆绑包将安装.NET Core 运行时，.NET 核心库和 ASP.NET 核心模块。 有关更多深入说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
     > [!NOTE]
-    > 如果系统没有连接到 Internet，获取并安装 *[Microsoft Visual c + + 2015年可再发行组件](https://www.microsoft.com/download/details.aspx?id=53840)*之前安装.NET 核心 Windows 服务器承载捆绑。
+    > 如果系统没有连接到 Internet，获取并安装 *[Microsoft Visual c + + 2015年可再发行组件](https://www.microsoft.com/download/details.aspx?id=53840)* 之前安装.NET 核心 Windows 服务器承载捆绑。
 
 3. 重新启动系统 (或执行**net 停止已 /y**跟**net 启动 w3svc**从命令提示符以拾取到系统路径的更改)。
 
-### <a name="BKMK_install_webdeploy"></a>（可选）安装 Web 部署 Windows Server 上的 3.6
+### <a name="BKMK_install_webdeploy"></a> （可选）安装 Web 部署 Windows Server 上的 3.6
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-### <a name="BKMK_deploy_asp_net"></a>在 Windows Server 计算机上配置 ASP.NET 网站
+### <a name="BKMK_deploy_asp_net"></a> 在 Windows Server 计算机上配置 ASP.NET 网站
 
 1. 打开“Internet 信息服务(IIS)管理器”  并转到“站点” 。
 
@@ -129,7 +125,7 @@ ms.lasthandoff: 01/23/2018
 
     如果你看不到具有权限的这些用户之一，请完成步骤将 IUSR 添加为具有读取和执行权限的用户。
 
-### <a name="bkmk_webdeploy"></a>（可选）发布和使用 Web 部署从 Visual Studio 部署应用
+### <a name="bkmk_webdeploy"></a> （可选）发布和使用 Web 部署从 Visual Studio 部署应用
 
 如果你安装 Web 部署使用 Web 平台安装程序，你可以部署该应用程序直接从 Visual Studio。
 
@@ -169,11 +165,11 @@ ms.lasthandoff: 01/23/2018
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-### <a name="BKMK_msvsmon"></a>下载并在 Windows Server 上安装远程工具
+### <a name="BKMK_msvsmon"></a> 下载并在 Windows Server 上安装远程工具
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>设置 Windows Server 上的远程调试器
+### <a name="BKMK_setup"></a> 设置 Windows Server 上的远程调试器
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -186,7 +182,7 @@ ms.lasthandoff: 01/23/2018
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 年，你可以重新附加到你以前通过使用附加到的相同进程**调试 > 重新附加到进程...**(Shift+Alt+P). 
+    > 在 Visual Studio 2017 年，你可以重新附加到你以前通过使用附加到的相同进程**调试 > 重新附加到进程...**(Shift + Alt + P)。 
 
 3. 将限定符字段设置为**\<远程计算机名称 >: 4022**。
 4. 单击**刷新**。
@@ -211,7 +207,7 @@ ms.lasthandoff: 01/23/2018
 
     应在 Visual Studio 中命中断点。
 
-### <a name="bkmk_openports"></a>疑难解答： 打开 Windows Server 上的所需的端口
+### <a name="bkmk_openports"></a> 疑难解答： 打开 Windows Server 上的所需的端口
 
 在大多数系统中，打开 ASP.NET 和远程调试器的安装所需的端口。 但是，如果你正在排查部署问题，并且该应用程序承载在防火墙后面，你可能需要验证打开了正确的端口。
 

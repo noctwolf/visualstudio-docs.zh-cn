@@ -1,12 +1,9 @@
 ---
-title: "演练： 在 Visual Basic 中编写可视化工具 |Microsoft 文档"
-ms.custom: 
+title: 演练： 在 Visual Basic 中编写可视化工具 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
 ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7ad673736334daec79860b9832a056c17781a082
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 70e1e42eee6003baabc0beec291795c6a1f74a1e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>演练：用 Visual Basic 编写可视化工具
 本演练演示如何使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编写简单的可视化工具。 本演练中创建的可视化工具使用 Windows 窗体消息框显示字符串的内容。 此简单字符串可视化工具是一个基本示例，将演示如何创建更加适合您项目的其他数据类型的可视化工具。  
@@ -62,7 +59,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  在**解决方案资源管理器**，右键单击**我的第一个可视化工具**，然后在快捷菜单上，单击**添加引用**。  
   
-4.  在**添加引用**对话框中，在**.NET**选项卡上，单击 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
+4.  在**添加引用**对话框中，在 **.NET**选项卡上，单击 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
   
 5.  单击 **“确定”**。  
   
@@ -108,7 +105,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  在**解决方案资源管理器**，右键单击**引用**，然后在快捷菜单上，单击**添加引用**。  
   
-2.  在**添加引用**对话框中，在**.NET**选项卡上，单击**System.Windows.Forms**。  
+2.  在**添加引用**对话框中，在 **.NET**选项卡上，单击**System.Windows.Forms**。  
   
 3.  单击 **“确定”**。  
   
@@ -180,7 +177,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  在**解决方案资源管理器**，右键单击**MyTestConsole**，然后在快捷菜单上，单击**添加引用**。  
   
-2.  在**添加引用**对话框中，在**.NET**选项卡上，单击 Microsoft.VisualStudio.DebuggerVisualizers。  
+2.  在**添加引用**对话框中，在 **.NET**选项卡上，单击 Microsoft.VisualStudio.DebuggerVisualizers。  
   
 3.  单击 **“确定”**。  
   

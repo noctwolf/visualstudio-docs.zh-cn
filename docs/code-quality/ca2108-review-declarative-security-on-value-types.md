@@ -1,10 +1,8 @@
 ---
-title: CA2108： 检查有关值类型的声明性安全 |Microsoft 文档
-ms.custom: ''
+title: CA2108：检查有关值类型的声明性安全
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ReviewDeclarativeSecurityOnValueTypes
 - CA2108
@@ -17,47 +15,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba05728d1b12cee50512185e0875be12fa55b957
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d07245724d70b5bc6ba69deae4311dcb2a10056
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108：检查有关值类型的声明性安全
-|||  
-|-|-|  
-|TypeName|ReviewDeclarativeSecurityOnValueTypes|  
-|CheckId|CA2108|  
-|类别|Microsoft.Security|  
-|是否重大更改|非重大更改|  
-  
-## <a name="cause"></a>原因  
- 公共或受保护值类型受[数据和建模](/dotnet/framework/data/index)或[链接需求](/dotnet/framework/misc/link-demands)。  
-  
-## <a name="rule-description"></a>规则说明  
- 值类型是分配和之前执行其他构造函数通过其默认构造函数初始化。 如果值类型受需或 LinkDemand，并且调用方没有权限而不满足的安全检查，任何构造函数的默认值将失败，并且将会引发安全异常。 未释放的值类型;它会保留在其默认构造函数设置的状态。 不要假定传递值类型的实例调用方有权创建或访问该实例。  
-  
-## <a name="how-to-fix-violations"></a>如何解决冲突  
- 不能解决与此规则的冲突，除非从类型，删除的安全检查和使用方法级别的安全检查在其位置。 请注意，这种方式解决了冲突不会阻止从获取值类型的实例的权限不足的调用方。 你必须确保实例的值类型，在其默认状态下，未公开敏感信息，并且不能在有害的方式。  
-  
-## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
- 如果任何调用方可以获得在其默认状态的值类型的实例，而不会造成安全风险，可以禁止显示此规则的警告。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示包含违反此规则的值类型的库。 请注意，`StructureManager`类型假定传递值类型的实例调用方有权创建或访问该实例。  
-  
- [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]  
-  
-## <a name="example"></a>示例  
- 以下应用程序演示库的漏洞。  
-  
- [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]  
-  
- 本示例生成以下输出。  
-  
- **结构自定义构造函数： 请求失败。**  
-**新值 SecuredTypeStructure 100 100**  
-**新值 SecuredTypeStructure 200 200**   
-## <a name="see-also"></a>另请参阅  
- [链接需求](/dotnet/framework/misc/link-demands)   
- [数据和建模](/dotnet/framework/data/index)
+|||
+|-|-|
+|TypeName|ReviewDeclarativeSecurityOnValueTypes|
+|CheckId|CA2108|
+|类别|Microsoft.Security|
+|是否重大更改|非重大更改|
+
+## <a name="cause"></a>原因
+ 公共或受保护值类型受[数据和建模](/dotnet/framework/data/index)或[链接需求](/dotnet/framework/misc/link-demands)。
+
+## <a name="rule-description"></a>规则说明
+ 值类型是分配和之前执行其他构造函数通过其默认构造函数初始化。 如果值类型受需或 LinkDemand，并且调用方没有权限而不满足的安全检查，任何构造函数的默认值将失败，并且将会引发安全异常。 未释放的值类型;它会保留在其默认构造函数设置的状态。 不要假定传递值类型的实例调用方有权创建或访问该实例。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 不能解决与此规则的冲突，除非从类型，删除的安全检查和使用方法级别的安全检查在其位置。 请注意，这种方式解决了冲突不会阻止从获取值类型的实例的权限不足的调用方。 你必须确保实例的值类型，在其默认状态下，未公开敏感信息，并且不能在有害的方式。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 如果任何调用方可以获得在其默认状态的值类型的实例，而不会造成安全风险，可以禁止显示此规则的警告。
+
+## <a name="example"></a>示例
+ 下面的示例演示包含违反此规则的值类型的库。 请注意，`StructureManager`类型假定传递值类型的实例调用方有权创建或访问该实例。
+
+ [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
+
+## <a name="example"></a>示例
+ 以下应用程序演示库的漏洞。
+
+ [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
+
+ 本示例生成以下输出。
+
+ **结构自定义构造函数： 请求失败。** 
+**新值 SecuredTypeStructure 100 100**
+**新值 SecuredTypeStructure 200 200**
+## <a name="see-also"></a>请参阅
+ [链接需求](/dotnet/framework/misc/link-demands)[数据和建模](/dotnet/framework/data/index)

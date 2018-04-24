@@ -1,12 +1,9 @@
 ---
-title: "为 ASP.NET 应用程序启用调试 |Microsoft 文档"
+title: 为 ASP.NET 应用程序启用调试 |Microsoft 文档
 ms.custom: H1HackMay2017
 ms.date: 09/21/17
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,28 +14,28 @@ helpviewer_keywords:
 - Web.config configuration file, debug mode
 - debugging [Visual Studio], ASP.NET
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
-caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 3418e1d2e05d687f8cb73a7857178ae1060d56f8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>调试 Visual Studio 中的 ASP.NET 应用程序
 
 你可以调试从 Visual Studio 的 ASP.NET 应用程序。
 
-## <a name="requirements"></a>惠?
+## <a name="requirements"></a>要求
 
 若要按照本主题中的说明，你需要：
 
 - IIS Express，它包括默认情况下，在 Visual Studio 2012 及更高版本
 
-    或
+    -或-
 
 - 本地 IIS web 服务器 （版本 8.0 或更高版本），已正确配置，可以运行 ASP.NET 应用程序且未发生错误。
 
@@ -142,7 +139,7 @@ IIS express，你不需要配置 web 服务器 （跳过此部分）。 IIS Expr
     > [!NOTE]
     > 如果你使用的 Windows Server 2008 R2，安装 ASP.NET 4 而不使用此命令：
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. 打开**Internet Information Services (IIS) 管理器**。 (在服务器管理器的左窗格中，选择**IIS**。 右键单击服务器并选择**Internet Information Services (IIS) Manager**。)
 
@@ -215,9 +212,9 @@ IIS express，web 应用会自动进行部署在开始调试时 （跳过此部�
 
   
 ## <a name="robust-programming"></a>可靠编程  
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]会自动检测对 Web.config 文件的任何更改，并应用新的配置设置。 不必重新启动计算机或 IIS 服务器，更改即可生效。  
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 会自动检测对 Web.config 文件的任何更改，并应用新的配置设置。 不必重新启动计算机或 IIS 服务器，更改即可生效。  
   
-一个网站可包含多个虚拟目录和子目录，而 Web.config 文件可能存在于每个目录中。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]应用程序从 URL 路径中的较高级别上的 Web.config 文件中继承设置。 分层配置文件，可以更改设置若干个[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]在相同的时间，例如层次结构中其下的所有应用程序的应用程序。 但是，如果`debug`设置在文件层次结构中较低的情况下，它将替代较高值。  
+一个网站可包含多个虚拟目录和子目录，而 Web.config 文件可能存在于每个目录中。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序从 URL 路径中的较高级别上的 Web.config 文件中继承设置。 分层配置文件，可以更改设置若干个[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]在相同的时间，例如层次结构中其下的所有应用程序的应用程序。 但是，如果`debug`设置在文件层次结构中较低的情况下，它将替代较高值。  
   
 例如，可以指定`debug="true"`www.microsoft.com/aaa/Web.config，并且 aaa 文件夹中或在任何应用程序在 aaa 的任何子文件夹继承该设置。 因此，如果你[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]应用程序位于 www.microsoft.com/aaa/bbb，它将继承该设置，如将任何[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]www.microsoft.com/aaa/ccc 和 www.microsoft.com/aaa/ddd，等中的应用程序。 唯一的例外情况是其中一个应用程序通过自己的较低级的 Web.config 文件提替代设置。  
   

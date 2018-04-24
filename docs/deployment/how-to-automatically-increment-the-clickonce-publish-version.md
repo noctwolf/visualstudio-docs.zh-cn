@@ -1,12 +1,9 @@
 ---
-title: "如何： 自动递增 ClickOnce 发布版本 |Microsoft 文档"
-ms.custom: 
+title: 如何： 自动递增 ClickOnce 发布版本 |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, incrementing publish version automatically
 - publishing, ClickOnce
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
-caps.latest.revision: "9"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 2e1399795400d52543b92cb13635a8485b160f22
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 178599f8f32ff2cbe1c12996eafb15feee62d463
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>如何：自动递增 ClickOnce 发布版本
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，更改`Publish Version`属性导致应用程序作为更新发布。 默认情况下，Visual Studio 会自动增大`Revision`数`Publish Version`每次您发布应用程序。  
