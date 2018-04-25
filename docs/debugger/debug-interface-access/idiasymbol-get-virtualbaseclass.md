@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_virtualbaseclass |Microsoft 文档"
-ms.custom: 
+title: 'Idiasymbol:: Get_virtualbaseclass |Microsoft 文档'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_virtualBaseClass method
 ms.assetid: 474eddc6-bf16-4731-9145-6db2f2a0b4fd
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b556f6960ea237d288b0c6c70174181b3d3b87
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a70bbf139301498425052886545ca6c3b668438
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetvirtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
 检索指定用户定义数据类型是否为虚拟基类的标志。  

@@ -1,29 +1,24 @@
 ---
-title: "IDiaSymbol::get_liveRangeStartAddressOffset |Microsoft 文档"
-ms.custom: 
+title: IDiaSymbol::get_liveRangeStartAddressOffset |Microsoft 文档
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_liveRangeStartAddressOffset
 ms.assetid: f5b28914-0a14-4b22-8259-59d7f97ee610
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cedf13b3d9c948835d54a4f294b610691c3ce8a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 471c9ecfb7ee1aa318e2db9c1c7de0cd56a1184f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 返回本地符号的范围的起始地址的偏移量的部分。  
@@ -51,7 +46,7 @@ HRESULT get_liveRangeStartAddressOffset (
   
  若要获取的地址部分部分，使用[IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md)。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头： Dia2.h  
   
  库： diaguids.lib  

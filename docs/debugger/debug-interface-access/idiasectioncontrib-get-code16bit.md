@@ -2,8 +2,7 @@
 title: 'Idiasectioncontrib:: Get_code16bit |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dbc950732f259f228a95721cc98dcf91ccc9b2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: e253b440712a26b67870f76b241a85f5979158b3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
 检索一个标志，指示的部分是否包含 16 位编码。  
@@ -42,5 +41,5 @@ HRESULT get_code16bit(
 ## <a name="remarks"></a>备注  
  此方法仅指示代码是否 16 位。 如果代码是不是 16 位，则可能是任何其他，如 32 位或 64 位代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -2,8 +2,7 @@
 title: 类符号类型的层次结构 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24371e1e09d3eb4404eac751cd4ef651afbfb7e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: aa8aeb208c4015d205efbfe018ee324a8ba0ede6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>符号类型的类层次结构
 下表介绍类层次结构中的符号类型。  
@@ -47,7 +46,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]
 >  每个符号可以容纳有关的符号，以及对其他符号的引用的属性。 中的各个符号主题列出了这些属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)   
  [符号类型的词法层次结构](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [符号和符号标记](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

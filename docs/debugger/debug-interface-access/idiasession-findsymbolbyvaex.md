@@ -2,8 +2,7 @@
 title: 'Idiasession:: Findsymbolbyvaex |Microsoft 文档'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eabb922ddcf70731edfcddd2a2c1cd80e049d7cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: e3fad26dfd43057f02105e867c5f1f0add57b20d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
 检索包含，或与具有指定的虚拟地址 (VA) 和偏移量最接近指定的符号类型。  
@@ -59,7 +58,7 @@ LONG disp = 0;
 pSession->findSymbolByVAEx( va, SymTagFunction, &pFunc, &disp );  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Idiasession:: Findsymbolbyva](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   

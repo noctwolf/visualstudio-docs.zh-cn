@@ -2,8 +2,7 @@
 title: C/c + + 断言 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -31,11 +30,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c5180e1ef5a75a31ff6ceb6c225480e1abba5fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: fcef94e9333b9c1050b76744351723924baaf0ab
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="cc-assertions"></a>C/C++ 断言
 断言语句指定您希望在程序中点应满足的条件。 如果该条件不为 true，则断言失败，程序的执行被中断，和[断言失败对话框](../debugger/assertion-failed-dialog-box.md)显示。  
@@ -345,7 +344,7 @@ _ASSERT(!myErr); // Don't do this, either!
   
  [在本主题中](#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [调试本机代码](../debugger/debugging-native-code.md)   
  [托管代码中的断言](../debugger/assertions-in-managed-code.md)
