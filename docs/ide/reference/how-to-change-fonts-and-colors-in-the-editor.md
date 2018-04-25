@@ -1,12 +1,10 @@
 ---
-title: "如何：在编辑器中更改字体和颜色 | Microsoft Docs"
-ms.custom: 
+title: 如何：在编辑器中更改字体和颜色 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
 - text, color
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - text, fonts
 - editors, text color
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 58053640dabb74a8044eeca70f03673656c0bc26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0510cbc9d6f98f9c36347c6be93d768e483aa24a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：更改编辑器中的字体和颜色
 在“代码编辑器”中，可以更改默认字体、调整字体大小以及更改不同文本“显示项”的前景色和背景色。 更改字体设置时，请牢记以下信息：  

@@ -1,12 +1,10 @@
 ---
-title: "杂项文件 | Microsoft Docs"
-ms.custom: 
+title: 杂项文件 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.newfile
 - VS.OpenWith
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - files [Visual Studio], outside of containers
 - files [Visual Studio], Miscellaneous Files folder
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cd45af08abd3d3523e2c88af13f46d81ebdb8e2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e020e1cc38898f830537afc2346fd20711cd587
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="miscellaneous-files"></a>杂项文件
 你可能需要使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 编辑器独立于项目或解决方案来处理文件。 打开某个解决方案后，可以打开和修改文件，而不必将其添加到解决方案或项目中。 要独立于容器来处理的文件称为杂项文件。 杂项文件位于解决方案和项目的外部，不包括在生成中，而且无法包括在受源代码管理的解决方案中。  

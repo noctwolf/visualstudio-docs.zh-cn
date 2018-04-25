@@ -1,26 +1,24 @@
 ---
-title: "“选项”页 ->“文本编辑器”节点属性 | Microsoft Docs"
-ms.custom: 
+title: “选项”页 ->“文本编辑器”节点属性 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
 ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0c4e4021dd1d54013f10f8b4bd4e7da3e81d91d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6678901da33593f8a73b9a0af42eabe721bf91d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-page-text-editor-node-properties"></a>“选项”页 ->“文本编辑器”节点属性
 本文档描述了与“选项”对话框的“文本编辑器”类别 `DTE.Properties("TextEditor", <Property Page>)` 关联的一些页面（或属性集合）。 每个小节的标题都是用于访问 `Properties` 集合的调用，而每个小节中的表都列出了集合中的属性。  
@@ -30,7 +28,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="general"></a>常规  
  `DTE.Properties("TextEditor", "General")`  
   
-|属性项名称|值|描述|  
+|属性项名称|“值”|描述|  
 |------------------------|-----------|-----------------|  
 |GoToAnchorAfterEscape|Get/Set (Boolean)|如果为 `True`，当有选定内容时按 Escape 会导致插入点移动到在初始化创建选定内容的操作之前的位置。 如果为 `False`，则将插入点移动到选定内容的另一端。|  
 |DragNDropTextEditing|Get/Set (Boolean)|确定是否可以将文本的选定区域从文档中的一个位置拖动到其他位置，以执行复制或剪切/粘贴操作。|  
@@ -49,7 +47,7 @@ ms.lasthandoff: 12/22/2017
   
  编辑文本文件时，`PlainText` 编辑器选项会影响编辑器设置。 每种编程语言和每个 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 程序包都有其自身特定的**文本编辑器**设置。 例如，若要查看或更改 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 编辑器设置，请使用 `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`。 对于“SQL 脚本”编辑器设置，请使用 `DTE.Properties("TextEditor", "SQL ")`。  
   
-|属性项名称|值|描述|  
+|属性项名称|“值”|描述|  
 |------------------------|-----------|-----------------|  
 |AutoListMembers|Get/Set (Boolean)|确定用户在变量引用后面键入句点时是否自动显示可用成员列表。|  
 |AutoListParams|Get/Set (Boolean)|确定用户在函数名后面键入“(”时是否自动显示参数列表的说明。|  

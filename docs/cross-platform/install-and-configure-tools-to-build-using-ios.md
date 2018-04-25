@@ -1,26 +1,22 @@
 ---
-title: "安装并配置使用 iOS 进行构建的工具 | Microsoft Docs"
-ms.custom: 
+title: 安装并配置使用 iOS 进行构建的工具 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
+manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: d015b927f8ba0fa62244a6cd09ff19efcb46451d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5374001e63f83f13e0956314e9af88808d624dae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 可以使用用于跨平台移动开发的 Visual C++ 来编辑、调试 iOS 代码，并将其部署到 iOS 模拟器或 iOS 设备，但由于许可限制，该代码必须在 Mac 上远程生成和运行。 若要使用 Visual Studio 生成和运行 iOS 应用，需要在 Mac 上安装并配置远程代理 [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)。 该远程代理会处理来自 Visual Studio 的生成请求，并在连接到 Mac 的 iOS 设备上或 Mac 上的 iOS 仿真程序中运行应用。  

@@ -1,28 +1,26 @@
 ---
-title: "如何：在成员表示法与关联表示法之间转换（类设计器） | Microsoft Docs"
-ms.custom: 
+title: 如何：在成员表示法与关联表示法之间转换（类设计器） | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - notation, member
 - association notation
 - member notation
 - notation, association
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 24b073c5dddea390972438ad9730f46aba97a85c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ef4216cb18ee46ded66c482749b39715f7f0e252
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>如何：在成员表示法与关联表示法之间转换（类设计器）
 在“类设计器”中，可以更改类图表示两种类型（从成员表示法到关联表示法）之间的关联关系的方式，反之亦然。 通常，显示为关联行的成员可提供类型关联方式的有用可视化。  

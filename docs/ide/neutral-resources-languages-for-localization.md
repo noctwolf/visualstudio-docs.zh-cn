@@ -1,12 +1,10 @@
 ---
-title: "用于本地化的非特定资源语言 | Microsoft Docs"
-ms.custom: 
+title: 用于本地化的非特定资源语言 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - localization [Visual Studio], resources
 - NeutralResourcesLanguageAttribute class
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - culture, locating resources
 - neutral resources
 ms.assetid: ef064995-3b84-4698-a708-9689b7723533
-caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 755be1dac065f2a8cd9ee769557f0a48e72ce03f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0bbddac532d242ce42330c955a797603b2d7e4a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="neutral-resources-languages-for-localization"></a>用于本地化的非特定资源语言
 <xref:System.Resources.NeutralResourcesLanguageAttribute> 类指定包含在主程序集中的资源的区域性。 此属性作为增强性能使用，以便 <xref:System.Resources.ResourceManager> 对象不会搜索包含在主程序集中的资源。  
