@@ -1,19 +1,19 @@
 ---
 title: Visual Studio 中的负载测试记录设置 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, logging, modifying
 ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: bc2916c6b5f109b3846095769468d8ddb55e7a09
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7f33d25f471e683a50fd37eab669917a319cf60a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="modify-load-test-logging-settings"></a>修改负载测试记录设置
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/19/2018
 
 ## <a name="related-tasks"></a>相关任务
 
-相关属性是“计时详细信息存储”。 有关详细信息，请参阅[如何：配置收集完整详细信息以启用虚拟用户活动图表](../test/how-to-configure-load-tests-to-collect-full-details.md)。
+相关属性是“计时详细信息存储”。 有关详细信息，请参阅[如何：配置“收集完整详细信息”以启用虚拟用户活动图表](../test/how-to-configure-load-tests-to-collect-full-details.md)。
 
 ## <a name="see-also"></a>请参阅
 

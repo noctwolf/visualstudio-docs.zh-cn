@@ -1,18 +1,18 @@
 ---
-title: "示例 Excel 扩展：PropertyProvider 类 | Microsoft Docs"
+title: 示例 Excel 扩展：PropertyProvider 类 | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c8917661d4df4034cfb97a94c7a515659c558da5
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: a3da33b0c99c84f3680f323b483cebf31448ba62
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-excel-extension-propertyprovider-class"></a>示例 Excel 扩展：PropertyProvider 类
 此内部类扩展 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> 类，并为 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 元素提供属性服务，以录制和播放用户界面 (UI) 测试。

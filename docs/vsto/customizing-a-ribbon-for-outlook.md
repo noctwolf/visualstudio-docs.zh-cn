@@ -43,7 +43,7 @@ ms.lasthandoff: 04/16/2018
  可以向项目添加多个功能区。 如果多个功能区共享一个功能区 ID，重中`ThisAddin`的你项目中指定的功能区上以在运行时显示的类。 有关详细信息，请参阅[功能区概述](../vsto/ribbon-overview.md)。 有关每个功能区类型的详细信息，请参阅技术文章[自定义 Outlook 2007 中的功能区](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170)。  
   
 ## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>使用功能区 XML 指定功能区类型  
- 如果你使用**功能区 (XML)**项，请检查的值*ribbonID*中的参数<xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>方法并返回相应的功能区。  
+ 如果你使用**功能区 (XML)** 项，请检查的值*ribbonID*中的参数<xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>方法并返回相应的功能区。  
   
  <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法由 Visual Studio 在功能区代码文件中自动生成。 *RibbonID*参数是用于标识资源管理器或检查器的特定类型的字符串。 有关的可能值的完整列表*ribbonID*参数，请参阅技术文章[自定义 Outlook 2007 中的功能区](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170)。  
   

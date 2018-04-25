@@ -1,26 +1,23 @@
 ---
-title: "“函数”视图 - 采样数据 | Microsoft Docs"
-ms.custom: 
+title: “函数”视图 - 采样数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Functions View
 - Functions view
 ms.assetid: 029d5ebb-e551-46b0-b64e-2c553d9dbb8e
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 31aa1a09739203039ca5af2c6265502ed7ac09a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4f4b1eddfd2d4b0ab0f285b727b6bc6638ca2e8d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="functions-view---sampling-data"></a>“函数”视图 - 采样数据
 采样分析方法的“函数”报表视图列出分析运行期间采样的函数。  

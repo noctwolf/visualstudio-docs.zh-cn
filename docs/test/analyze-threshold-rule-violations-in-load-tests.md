@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中分析负载测试中的阈值规则冲突 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.monitor.threshholdresult
 helpviewer_keywords:
@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 761d277612242cc4b14b0a24d1a2ac7663b2b152
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 42463515a8c3da9661f22d1a39c8dd8346c63aea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用负载测试分析器分析负载测试中的阈值规则冲突
+# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用负载测试分析器分析负载测试中的阈值规则冲突 
 
 阈值规则与特定的性能计数器关联，存在冲突意味着性能计数器超过或低于设定的值。 运行负载测试时，可以依据之前设置的阈值规则分析所发生的冲突。
 
@@ -54,13 +54,13 @@ ms.lasthandoff: 03/19/2018
 
  ![没有阈值冲突](../test/media/icon_ltest_1.gif "Icon_LTest_1")没有阈值冲突。
 
- ![在上一个间隔内发生严重阈值冲突。](../test/media/icon_ltest_2.gif "Icon_LTest_2")在上一个间隔内发生严重阈值冲突。
+ ![在上一个间隔内发生严重阈值冲突](../test/media/icon_ltest_2.gif "Icon_LTest_2")在上一个间隔内发生严重阈值冲突。
 
- ![在前面的某个间隔内发生严重阈值冲突。](../test/media/icon_ltest_3.gif "Icon_LTest_3")在前面的某个间隔内发生严重阈值冲突。
+ ![在前面的某个间隔内发生严重阈值冲突](../test/media/icon_ltest_3.gif "Icon_LTest_3")在前面的某个间隔内严重阈值冲突。
 
- ![在上一个间隔内发生警告阈值冲突。](../test/media/icon_ltest_4.gif "Icon_LTest_4")在上一个间隔内发生警告阈值冲突。
+ ![在上一个间隔内发生警告阈值冲突](../test/media/icon_ltest_4.gif "Icon_LTest_4")在上一个间隔内发生警告阈值冲突。
 
- ![在前面的某个间隔内发生警告阈值冲突。](../test/media/icon_ltest_5.gif "Icon_LTest_5")在前面的某个间隔内发生警告阈值冲突。
+ ![在前面的某个间隔内发生警告阈值冲突](../test/media/icon_ltest_5.gif "Icon_LTest_5")在前面的某个间隔内发生警告阈值冲突。
 
  也可以在关系图上显示阈值冲突。 阈值图标显示在关系图上发生阈值冲突的数据点旁边。
 

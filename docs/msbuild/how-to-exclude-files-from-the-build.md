@@ -1,28 +1,24 @@
 ---
-title: "如何：将文件排除在生成过程外 | Microsoft Docs"
-ms.custom: 
+title: 如何：将文件排除在生成过程外 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
 - MSBuild, excluding files
 - wildcards, MSBuild
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b11f292e27c192efcbd81376a79bcd67b0d08393
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: eb8e8ba51f4aaeed0242147d46fd282b95452d91
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>如何：将文件排除在生成过程外
 在项目文件中，可以使用通配符将所有文件包括在一个目录或一组嵌套目录中，以作为生成的输入。 但是，对于目录中的某个文件或嵌套目录中的某个目录，你可能并不希望将其作为生成的输入包括在内。 你可以从输入列表中显示排除该文件或目录。 有些时候，你只希望在特定情况下才包括项目中的某个文件。 那么你可以显式声明将文件包括在生成中的条件。  

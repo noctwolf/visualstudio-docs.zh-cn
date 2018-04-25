@@ -110,7 +110,7 @@ ms.lasthandoff: 04/16/2018
   
  **\<代码目录 > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix**  
   
- 若要安装扩展，您的朋友需要关闭所有打开的实例的 Visual Studio 中，然后双击.vsix 文件，随后会显示**VSIX Installer**。 文件复制到**%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions**目录。  
+ 若要安装扩展，您的朋友需要关闭所有打开的实例的 Visual Studio 中，然后双击.vsix 文件，随后会显示**VSIX Installer**。 文件复制到 **%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions**目录。  
   
  当您的朋友再次将打开 Visual Studio 时，他将查找中的 FirstMenuCommand 扩展**工具 / 扩展和更新**。 他可以转到**扩展和更新**卸载或禁用扩展，太。  
   

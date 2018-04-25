@@ -34,18 +34,18 @@ ms.lasthandoff: 04/16/2018
   
 1.  创建注册表项，如下所示：  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >*\Text Editor\External 标记\\*\<MarkerGUID >*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* \Text Editor\External 标记\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >*是`GUID`用于标识要添加标记  
+     *\<MarkerGUID >* 是`GUID`用于标识要添加标记  
   
-     *\<版本 >*是版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，例如 8.0  
+     *\<版本 >* 是版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，例如 8.0  
   
-     *\<PackageGUID >*是 VSPackage 实现自动化对象的 GUID。  
+     *\<PackageGUID >* 是 VSPackage 实现自动化对象的 GUID。  
   
     > [!NOTE]
-    >  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路径\\*\<版本 >*可用重写备用根初始化 Visual Studio shell 时，有关详细信息，请参阅[命令行开关](../extensibility/command-line-switches-visual-studio-sdk.md)。  
+    >  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路径\\*\<版本 >* 可用重写备用根初始化 Visual Studio shell 时，有关详细信息，请参阅[命令行开关](../extensibility/command-line-switches-visual-studio-sdk.md)。  
   
-2.  创建四个值下 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >*\Text Editor\External 标记\\*\<MarkerGUID>*  
+2.  创建四个值下 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* \Text Editor\External 标记\\*\<MarkerGUID>*  
   
     -   (默认)  
   

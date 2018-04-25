@@ -2,11 +2,8 @@
 title: GenerateApplicationManifest 任务 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
 dev_langs:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-caps.latest.revision: 24
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a2fc5e184b566e0c9783f6f64beecc7ca882a2
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: e40e74dd8e7b2b83f6d4239e6b66c9852c6de604
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 任务
 生成 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单或本机清单。 本机清单通过为组件定义唯一标识，并标识组成该组件的所有程序集和文件来描述组件。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单通过指示应用程序的入口点并指定应用程序安全级别来扩展本机清单。  
@@ -354,7 +350,7 @@ ms.lasthandoff: 04/10/2018
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [GenerateDeploymentManifest 任务](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile 任务](../msbuild/signfile-task.md)   

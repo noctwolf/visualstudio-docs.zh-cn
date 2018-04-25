@@ -1,15 +1,14 @@
 ---
-title: "块选择 | Microsoft Docs"
+title: 块选择
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: dfc46f3297dccda0692332efc451aa04e7997d36
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fe304ea9ca76f34c403cea6e028603fce63accba
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="block-selection"></a>块选择
 通过 Visual Studio for Mac，可以轻松地选择、剪切、复制和粘贴选定部分的代码。 可以使用代码块上的“选项 + 拖动”命令突出显示和选择矩形代码块。 粘贴块时会保留此块选择部分的格式。

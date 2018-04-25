@@ -1,29 +1,24 @@
 ---
-title: "使用率视图 | Microsoft Docs"
-ms.custom: 
+title: 使用率视图 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cpuutilization
 helpviewer_keywords:
 - Concurrency Visualizer, CPU Utilization View
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36a3d46186d98dbcd3d89ebb97003ba6e24fb3b7
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: cb49d47dbd01b1d84228e1f01dc4cbf7f49dfc8d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="utilization-view"></a>使用率视图
 使用率视图显示有关当前进程所使用的 CPU、GPU 和其他系统资源的信息（选择“分析” > “并发可视化工具”来启动并发可视化工具）。 它显示随着时间的推移，在系统上运行的分析的进程、空闲进程、系统进程和其他进程的平均核心使用率。 它不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。 通过将分析时间分成较短的时间段生成此视图。 对于每个时间段，此图绘制出该间隔期间内在逻辑核心上执行的进程线程的平均数量。  

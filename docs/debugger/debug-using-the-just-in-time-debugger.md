@@ -1,26 +1,23 @@
 ---
-title: "使用实时调试器调试 |Microsoft 文档"
-ms.custom: 
+title: 使用实时调试器调试 |Microsoft 文档
+ms.custom: ''
 ms.date: 07/06/17
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
-caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4bcdd28247b767321d3d5fed9681082538ba2b12
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e6abdd96f740d36b4f6806b16e6cdd9ba946cb95
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>调试使用 Visual Studio 中的实时调试器
 在实时调试 Visual Studio 会自动启动的应用程序正在运行 Visual Studio 外部中发生异常或崩溃时。 这使您要测试你的应用程序，如果未运行 Visual Studio，并开始使用 Visual Studio 进行调试时出现问题。
@@ -30,7 +27,7 @@ ms.lasthandoff: 12/22/2017
 > [!TIP] 
 > 如果你只想要知道如何响应实时调试器对话框中，请参阅[本主题](../debugger/just-in-time-debugging-in-visual-studio.md)。
 
-##  <a name="BKMK_Enabling"></a>启用或禁用在实时调试  
+##  <a name="BKMK_Enabling"></a> 启用或禁用在实时调试  
 你可以启用或禁用实时调试从 Visual Studio**工具 > 选项**对话框。
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>启用或禁用实时调试  
@@ -55,7 +52,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>通过编辑注册表禁用实时调试  
   
-1.  上**启动**菜单，搜索并运行`regedit.exe`  
+1.  上**启动**菜单，搜索并运行 `regedit.exe`  
   
 2.  在**注册表编辑器**窗口中，找到并删除下列注册表项：  
   
@@ -125,7 +122,7 @@ static void Main(string[] args)
   
  生成解决方案 (在 Visual Studio 中，选择**生成 > 重新生成解决方案**)。 你可以选择调试或发布配置 (选择**调试**完整的调试体验)。 有关生成配置的详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)。  
   
- 生成过程创建可执行 ThrowsNullException.exe。 你可以在其中创建 C# 项目的文件夹下找到它： **...\ThrowsNullException\ThrowsNullException\bin\Debug**或**...\ThrowsNullException\ThrowsNullException\bin\Release**。  
+ 生成过程创建可执行 ThrowsNullException.exe。 你可以在其中创建 C# 项目的文件夹下找到它： **...\ThrowsNullException\ThrowsNullException\bin\Debug**或 **...\ThrowsNullException\ThrowsNullException\bin\Release**。  
   
  双击 ThrowsNullException.exe。 你应看到如下命令窗口：  
   
@@ -144,7 +141,7 @@ static void Main(string[] args)
   
  ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")  
   
- 下**可能的调试器**，您应该会看到**Microsoft Visual Studio 的新实例<available version>**选择行。 如果已选中，请现在将其选中。  
+ 下**可能的调试器**，您应该会看到**Microsoft Visual Studio 的新实例<available version>** 选择行。 如果已选中，请现在将其选中。  
   
  在窗口的底部下**你想要调试使用选定的调试器？**，单击**是**。  
   

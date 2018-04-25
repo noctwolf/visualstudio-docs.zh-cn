@@ -67,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  创建具有菜单命令的 VSPackage。 (有关详细信息，请参阅[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。)  
   
-2.  打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 >*Package.cs。)  
+2.  打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 >* Package.cs。)  
   
 3.  将以下 `using` 语句添加到文件中：  
   
@@ -129,7 +129,7 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>从 VSPackage 中获取 DTE 对象  
   
-1.  在 VSIX 项目与 Visual Studio 包项目模板中，查找*\<项目名称 >*Package.cs 文件。 这是派生自 <xref:Microsoft.VisualStudio.Shell.Package> 的类；它可以帮助你与 Visual Studio 进行交互。 在这种情况下，请使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 来获取 <xref:EnvDTE80.DTE2> 对象。  
+1.  在 VSIX 项目与 Visual Studio 包项目模板中，查找*\<项目名称 >* Package.cs 文件。 这是派生自 <xref:Microsoft.VisualStudio.Shell.Package> 的类；它可以帮助你与 Visual Studio 进行交互。 在这种情况下，请使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 来获取 <xref:EnvDTE80.DTE2> 对象。  
   
 2.  添加以下 `using` 语句：  
   
@@ -161,7 +161,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  创建具有菜单的命令，如 VSPackage[如何开始开发 VSIX 扩展？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)部分。  
   
-2.  打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 >*Package.cs。)  
+2.  打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 >* Package.cs。)  
   
 3.  添加以下 `using` 语句：  
   
@@ -209,7 +209,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  创建具有菜单的命令，如 VSPackage[如何开始开发 VSIX 扩展？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)部分。  
   
-2.  打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 >*Package.cs。)  
+2.  打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 >* Package.cs。)  
   
 3.  添加以下 `using` 语句：  
   

@@ -163,7 +163,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  在**MIME 类型**窗口中，选择**新建**按钮。  
   
-6.  在**MIME 类型**窗口中，输入**.vsto**作为扩展名，并输入**应用程序/x 的 ms vsto**作为 MIME 类型，，然后应用新设置。  
+6.  在**MIME 类型**窗口中，输入 **.vsto**作为扩展名，并输入**应用程序/x 的 ms vsto**作为 MIME 类型，，然后应用新设置。  
   
     > [!NOTE]  
     >  为使更改生效，必须重新启动万维网发布服务或者等待工作进程回收。 随后，必须刷新浏览器的磁盘缓存，并尝试再次打开 .vsto 文件。  
@@ -208,7 +208,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  在菜单栏上，依次选择“项目”、“添加引用”。  
   
-7.  上**.NET**选项卡上，添加对 Microsoft.VisualStudio.Tools.Applications.Runtime 和 microsoft.visualstudio.tools.applications.serverdocument 的引用。  
+7.  上 **.NET**选项卡上，添加对 Microsoft.VisualStudio.Tools.Applications.Runtime 和 microsoft.visualstudio.tools.applications.serverdocument 的引用。  
   
 8.  将类重命名为 `FileCopyPDA`，然后使用代码替换文件内容。 这段代码执行下列任务：  
   
@@ -282,7 +282,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="re-sign-the-application-and-deployment-manifests"></a>对应用程序清单和部署清单进行重新签名  
   
-1.  在**%USERPROFILE%\Documents\Visual Studio 2013 \ projects\excelworkbook\excelworkbook**文件夹中，复制**ExcelWorkbook_TemporaryKey.pfx**证书文件，并将其粘贴到*PublishFolder* **\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_文件夹。
+1.  在 **%USERPROFILE%\Documents\Visual Studio 2013 \ projects\excelworkbook\excelworkbook**文件夹中，复制**ExcelWorkbook_TemporaryKey.pfx**证书文件，并将其粘贴到*PublishFolder* **\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_文件夹。
   
 2.  打开 Visual Studio 命令提示符，然后再将目录更改为**c:\publish\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_文件夹 (例如， **c:\publish\Application Files\ExcelWorkbook_1_0_0_4**)。  
   

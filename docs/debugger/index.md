@@ -1,14 +1,17 @@
 ---
 layout: LandingPage
-title: "在 Visual Studio 中调试应用 | Microsoft Docs"
-description: "了解如何使用 Visual Studio 2017 并以你喜欢的语言来调试适用于你的平台和设备的应用程序、服务和工具。"
+title: 在 Visual Studio 中调试应用 | Microsoft Docs
+description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来调试适用于你的平台和设备的应用程序、服务和工具。
 ms.topic: landing-page
 ms.technology: vs-ide-debug
-ms.openlocfilehash: b2b168c1a91011abf1d3c3c8277fdaacc8fff1d8
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.author: mikejo
+author: mikejo5000
+manager: douge
+ms.openlocfilehash: c9d997985d4e19b68a326b3b69e28875942b8bfb
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-in-visual-studio"></a>在 Visual Studio 中进行调试
 

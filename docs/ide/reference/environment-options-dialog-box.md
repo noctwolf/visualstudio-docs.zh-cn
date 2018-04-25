@@ -1,26 +1,24 @@
 ---
-title: "“选项”对话框 ->“环境”| Microsoft Docs"
-ms.custom: 
+title: “选项”对话框 ->“环境”| Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.OptionsDialog.Environment
 - VS.ToolsOptionsPages.Environment
 ms.assetid: 3f463cf0-734b-4fdc-b4ff-b47f9bb99069
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 567d1c8248ff00a1387ccd1c40a8c8c658b551ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8ca71a3dd2daa3af52969c74333d9d81ef17b016
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="environment-options-dialog-box"></a>“选项”对话框 ->“环境”
 使用“选项”对话框的“环境”文件夹中的页，可设置集成开发环境 (IDE) 的某些元素的显示和行为方式。 可通过在菜单栏上依次选择“工具”、“选项”、“环境”来访问“环境”页。  
@@ -28,7 +26,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  显示在计算机上的对话框和菜单命令可能与“帮助”中说明的不同，具体取决于处于活动状态的设置以及你使用的 Visual Studio 版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。  
   
-|有关如何执行下列操作的信息|请参阅|  
+|有关如何执行下列操作的信息|查看|  
 |----------------------------------|---------|  
 |自定义窗口、菜单和其他 IDE 元素的外观和行为。|[“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)|  
 |更改文件的自动保存和还原设置。|[“选项”对话框 ->“环境”->“自动恢复”](../../ide/reference/autorecover-environment-options-dialog-box.md)|  

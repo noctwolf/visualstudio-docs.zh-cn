@@ -2,11 +2,8 @@
 title: 快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用 | Microsoft Docs
 ms.custom: ''
 ms.date: 12/10/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +13,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 13d8084effd5057d20f7fc5d4f72d4e27d5b857b
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 39e7b9f03a5ef0a37594dad015084648eaa2bade
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用
 在这个 5-10 分钟的 Visual Studio 集成开发环境 (IDE) 简介中，你将了解如何创建在控制台上运行的简单 Visual Basic 应用程序。

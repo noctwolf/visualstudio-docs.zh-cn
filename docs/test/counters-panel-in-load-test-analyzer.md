@@ -1,23 +1,23 @@
 ---
 title: 用于分析 Visual Studio 中负载测试的计数器面板 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, counters panel
 ms.assetid: e1a388d7-5d33-4631-931a-5653ac4aefdc
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9e693872784519f5cdcacbd0691b6f69334af22e
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f6543cc42d6ac62a252b450a232700b17f05b719
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>在关系图视图和表视图中使用计数器面板
 
-在运行负载测试时或分析负载测试结果时，在负载测试分析器的关系图视图和表视图中可以看见计数器面板。 有关详细信息，请参阅[在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)、[在表视图中分析负载测试结果](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)和[如何：访问负载测试结果以进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+在运行负载测试时或分析负载测试结果时，在负载测试分析器的关系图视图和表视图中可以看见计数器面板。 有关详细信息，请参阅[在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)、[在表视图中分析负载测试结果和错误](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)和[如何：访问负载测试结果以进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
 计数器面板显示在负载测试期间收集的所有性能计数器的结构化视图。 可以通过选择负载测试分析器工具栏上的“显示计数器面板”来显示或隐藏计数器面板。
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 03/19/2018
 
 负载测试编辑器的运行设置中有一个名为“计时详细信息存储”的属性。 如果启用了“计时详细信息存储”属性，则在负载测试过程中执行各个测试、事务和页所需的时间都存储在负载测试结果储存库中。 这使得 90% 和 95% 的数据显示在负载测试分析器的“测试”、“事务”和“页”表中。
 
-可通过两种方法来启用运行设置属性中的“计时详细信息存储”属性：“StatisticsOnly”和“AllIndividualDetails”。 无论采用哪个选项，所有单个测试、页和事务均会计时，且根据单个计时数据来计算百分比数据。 它们的区别是，使用“StatisticsOnly”选项时，在计算完百分比数据之后，将立即从储存库中删除单个计时数据。 删除数据可以减少使用计时详细信息时储存库中所需的空间量。 但是，高级用户可能需要使用 SQL 工具以其他方式来处理计时详细信息数据。 如果是这样，则应使用“AllIndividualDetails”选项，以便计时详细信息数据可用于该处理。 此外，如果将属性设置为“AllIndividualDetails”，则可以在负载测试运行结束后，使用负载测试分析器中的虚拟用户活动图来分析虚拟用户活动。 有关详细信息，请参阅[在详细信息视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。
+可通过两种方法来启用运行设置属性中的“计时详细信息存储”属性：“StatisticsOnly”和“AllIndividualDetails”。 无论采用哪个选项，所有单个测试、页和事务均会计时，且根据单个计时数据来计算百分比数据。 它们的区别是，使用“StatisticsOnly”选项时，在计算完百分比数据之后，将立即从存储库中删除单个计时数据。 删除数据可以减少使用计时详细信息时储存库中所需的空间量。 但是，高级用户可能需要使用 SQL 工具以其他方式来处理计时详细信息数据。 如果是这样，则应使用“AllIndividualDetails”选项，以便计时详细信息数据可用于该处理。 此外，如果将属性设置为“AllIndividualDetails”，则可以在负载测试运行结束后，使用负载测试分析器中的虚拟用户活动图来分析虚拟用户活动。 有关详细信息，请参阅[在详细信息视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。
 
 负载测试结果储存库中存储计时详细信息数据所需的空间可能会非常大，尤其是对于运行时间较长的负载测试。 另外，在负载测试结束时将此数据存储到负载测试结果储存库中所需的时间也较长，因为在负载测试完成执行之前此数据一直存储在负载测试代理上。 负载测试完成时，数据将存储到储存库中。 默认情况下，将启用“计时详细信息存储”属性。 如果这对测试环境来说有问题，则可能需要将“计时详细信息存储”设置为“无”。
 

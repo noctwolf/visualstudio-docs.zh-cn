@@ -1,7 +1,7 @@
 ---
 title: 如何：从 Visual Studio 的储存库中删除负载测试结果 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - results, load test
 - load tests, deleting results
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0bdcc566b17d642ba4de2f476c2e8a96994da6f9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7c76f18e55e079539d8348ee68c95f32431bff49
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>如何：从储存库中删除负载测试结果
 
-运行负载测试时，在运行期间收集的信息都存储到负载测试结果储存库中。 负载测试结果储存库中包含性能计数器数据和有关任何错误的信息。 有关详细信息，请参阅[管理负载测试结果储存库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
+运行负载测试时，在运行期间收集的信息都存储到负载测试结果储存库中。 负载测试结果储存库中包含性能计数器数据和有关任何错误的信息。 有关详细信息，请参阅[管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 
  可以使用“打开和管理负载测试结果”对话框，从“负载测试编辑器”中管理负载测试结果。 你可以打开、导入、导出和移除负载测试结果。
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/19/2018
 
 2.  在嵌入式工具栏上，选择“打开和管理结果”。
 
-     将显示“打开和管理负载测试结果”对话框。
+     随即出现“打开和管理负载测试结果”对话框。
 
 3.  在“请输入要用来查找负载测试结果的控制器名称”中选择一个控制器。 选择“\<本地 - 无控制器>”以访问在本地存储的结果。
 

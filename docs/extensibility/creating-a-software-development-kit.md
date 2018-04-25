@@ -58,7 +58,7 @@ ms.lasthandoff: 04/16/2018
 |DesignTime 文件夹|包含仅在调试前运行/时间需要的文件。 这些文档可能为 XML 文档、 库、 标头、 工具箱设计时二进制文件、 MSBuild 项目和等<br /><br /> XML 文档，理想情况下，被放在 \DesignTime 文件夹中，但引用的 XML 文档将继续与 Visual Studio 中的参考文件一起放置。 例如，XML 文档中的引用 \References\\[config]\\[arch]\sample.dll 将 \References\\[config]\\[arch]\sample.xml 和该文档的本地化的版本将 \References\\[config]\\[体系结构]\\[locale]\sample.xml。|  
 |配置文件夹|可以有只有三个文件夹： 调试、 零售和 CommonConfiguration。 如果应使用相同的 SDK 文件集，而不考虑 SDK 使用者将目标配置，SDK 作者可放置在 CommonConfiguration 其文件。|  
 |体系结构文件夹|可以存在的任何支持的体系结构文件夹。 Visual Studio 支持以下体系结构： x86、 x64、 ARM、 和特定。 注意： Win32 将映射为 x86，而 AnyCPU 映射到非特定语言。<br /><br /> 仅在 \CommonConfiguration\neutral MSBuild 查找平台 Sdk。|  
-|SDKManifest.xml|此文件描述 Visual Studio 应如何使用 SDK。 看一看 SDK 清单[!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:**对象浏览器将显示浏览列表中的值。<br /><br /> **PlatformIdentity:**此属性是否存在告知 Visual Studio 和 MSBuild SDK 是一个平台 SDK 和添加从它的引用，不应复制本地。<br /><br /> **TargetFramework:** Visual Studio 使用此属性以确保仅集来投射该目标中的值指定相同的框架特性可以使用 SDK。<br /><br /> **MinVSVersion:** Visual Studio 使用此属性使用仅应用于它的 Sdk。<br /><br /> **参考：**此属性必须指定用于包含控件的这些引用。 有关如何指定引用是否包含控件的信息，请参阅下面。|  
+|SDKManifest.xml|此文件描述 Visual Studio 应如何使用 SDK。 看一看 SDK 清单[!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** 对象浏览器将显示浏览列表中的值。<br /><br /> **PlatformIdentity:** 此属性是否存在告知 Visual Studio 和 MSBuild SDK 是一个平台 SDK 和添加从它的引用，不应复制本地。<br /><br /> **TargetFramework:** Visual Studio 使用此属性以确保仅集来投射该目标中的值指定相同的框架特性可以使用 SDK。<br /><br /> **MinVSVersion:** Visual Studio 使用此属性使用仅应用于它的 Sdk。<br /><br /> **参考：**此属性必须指定用于包含控件的这些引用。 有关如何指定引用是否包含控件的信息，请参阅下面。|  
   
 ##  <a name="ExtensionSDKs"></a> 扩展 Sdk  
  以下各节描述了你需要为部署的扩展 SDK 执行的操作。  
@@ -126,7 +126,7 @@ ms.lasthandoff: 04/16/2018
   
     ```  
   
-     XML 参考文档位于一起的参考文件。 例如，引用针对 XML 文档**\References\\< 配置\>\\< 体系结构\>\sample.dll**程序集是**\References\\< 配置\>\\< 体系结构\>\sample.xml**，该文档的本地化的版本为**\References\\< 配置\>\\<体系结构\>\\< 区域设置\>\sample.xml**。  
+     XML 参考文档位于一起的参考文件。 例如，引用针对 XML 文档 **\References\\< 配置\>\\< 体系结构\>\sample.dll**程序集是 **\References\\< 配置\>\\< 体系结构\>\sample.xml**，该文档的本地化的版本为 **\References\\< 配置\>\\<体系结构\>\\< 区域设置\>\sample.xml**。  
   
 5.  配置文件夹： 三个子文件夹： 调试、 零售版和 CommonConfiguration。 SDK 作者可放置在 CommonConfiguration 其文件，应使用相同的 SDK 文件集，而不考虑针对 SDK 使用者的配置。  
   

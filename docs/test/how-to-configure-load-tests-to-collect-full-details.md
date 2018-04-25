@@ -1,20 +1,20 @@
 ---
 title: 为 Visual Studio 中的负载测试收集虚拟用户的完整详细信息 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual user activity chart, configuring
 - virtual user activity chart, configuring
 ms.assetid: cb22e43b-af4d-4e09-9389-3c3fa00786f7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b410c91ff2b6c57b86c7fe377df4bf31173f9384
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: d18a93fad0d113369f48e21ae74a08484b99485c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>如何：将负载测试配置为收集完整详细信息，以便在测试结果中启用虚拟用户活动
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/19/2018
     > [!NOTE]
     > 必须选择“所有的详细信息”选项才能启用负载测试结果中的虚拟用户数据信息。
 
--   **无：**不收集任何单独计时详细信息。 但是，平均值仍然可用。
+-   **无：**不收集任何计时详细信息。 但是，平均值仍然可用。
 
 -   **仅统计信息：**存储单独的计时数据，但仅作为百分比数据。 此选项节省空间资源。
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 03/19/2018
 
 3.  选择要配置的运行设置，例如“Run Settings1[Active]”。
 
-4.  打开“属性”窗口。 在“视图”菜单上选择“属性”窗口。
+4.  打开“属性”窗口。 在“视图”菜单上选择“属性窗口”。
 
 5.  在“结果”类别下，选择“计时详细信息存储”属性，然后选择“所有的详细信息”。
 

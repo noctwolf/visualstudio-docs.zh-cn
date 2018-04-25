@@ -47,9 +47,9 @@ VSPackage 可以提供控件的字体和颜色到其文本[!INCLUDE[vsprvs](../c
 
 ## <a name="to-create-or-identify-categories"></a>若要创建或标识类别
 
--   构造一个特殊类型的类别下的注册表项 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >*\FontAndColors\\`<Category>`]
+-   构造一个特殊类型的类别下的注册表项 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >* \FontAndColors\\`<Category>`]
 
-     *\<类别 >*是类别的非本地化名称。
+     *\<类别 >* 是类别的非本地化名称。
 
 -   填充具有两个值注册表：
 
@@ -62,9 +62,9 @@ VSPackage 可以提供控件的字体和颜色到其文本[!INCLUDE[vsprvs](../c
 
 ## <a name="to-create-or-identify-groups"></a>若要创建或标识组
 
--   构造一个特殊类型的类别下的注册表项 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >*\FontAndColors\\  *\<组 >*]
+-   构造一个特殊类型的类别下的注册表项 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >* \FontAndColors\\  *\<组 >*]
 
-     *\<组 >*是组的非本地化名称。
+     *\<组 >* 是组的非本地化名称。
 
 -   填充具有两个值注册表：
 

@@ -1,26 +1,24 @@
 ---
-title: "“选项”页 ->“字体和颜色”节点属性 | Microsoft Docs"
-ms.custom: 
+title: “选项”页 ->“字体和颜色”节点属性 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options settings, Fonts and Colors node properties
 - automation [Visual Studio], controlling Tools Options
 ms.assetid: 8e1ab784-5f85-4e2b-8ef9-e5d59ca4dbcb
-caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a26dd168e83584b19a9d6ddad37496082c166f2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e7bd2eaca14fb2043e477d20fae7fed7d9779c38
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>“选项”页 ->“字体和颜色”节点属性
 本文档介绍某个工具窗口的字体和颜色属性，该窗口注册显示在“选项”对话框“环境”类别中的”字体和颜色”下。 这支持可着色项组的动态特性，安装或卸载 VSPackages 时，这些特性可能会发生更改。  
@@ -38,7 +36,7 @@ ms.lasthandoff: 12/22/2017
   
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`  
   
-|属性项名称|值|描述|  
+|属性项名称|“值”|描述|  
 |------------------------|-----------|-----------------|  
 |FontFamily|Get/Set (String)|要使用的字体名称，如“Courier New”。|  
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|<xref:EnvDTE.vsFontCharSet> 值，指定要使用的字符集的类型，例如希伯来语或俄语。|  

@@ -74,12 +74,12 @@ ms.lasthandoff: 04/16/2018
   
 2.  在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
   
-3.  在**新项目**对话框框中，展开**Visual C#**或**Visual Basic**节点，然后选择**扩展性**节点。  
+3.  在**新项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**扩展性**节点。  
   
     > [!NOTE]  
     >  **扩展性**节点是安装 Visual Studio SDK 时才可用。 有关详细信息，请参阅本主题前面的先决条件部分。  
   
-4.  在对话框中的顶部，选择**.NET Framework 4.5**在列表中的.NET framework 的版本。  
+4.  在对话框中的顶部，选择 **.NET Framework 4.5**在列表中的.NET framework 的版本。  
   
 5.  选择**VSIX 项目**模板，将项目**WebPartNode**，然后选择**确定**按钮。  
   
@@ -89,9 +89,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**解决方案资源管理器**，打开解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。  
   
-2.  在**新项目**对话框框中，展开**Visual C#**节点或**Visual Basic**节点，然后选择**Windows**节点。  
+2.  在**新项目**对话框框中，展开**Visual C#** 节点或**Visual Basic**节点，然后选择**Windows**节点。  
   
-3.  在对话框中的顶部，选择**.NET Framework 4.5**在列表中的.NET framework 的版本。  
+3.  在对话框中的顶部，选择 **.NET Framework 4.5**在列表中的.NET framework 的版本。  
   
 4.  在项目模板列表中，选择**类库**，命名该项目**WebPartNodeExtension**，然后选择**确定**按钮。  
   
@@ -103,9 +103,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**解决方案资源管理器**，打开解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。  
   
-2.  在**新项目**对话框框中，展开**Visual C#**节点或**Visual Basic**节点，然后选择**Windows**节点。  
+2.  在**新项目**对话框框中，展开**Visual C#** 节点或**Visual Basic**节点，然后选择**Windows**节点。  
   
-3.  在对话框中的顶部，选择**.NET Framework 3.5**在列表中的.NET framework 的版本。  
+3.  在对话框中的顶部，选择 **.NET Framework 3.5**在列表中的.NET framework 的版本。  
   
 4.  
   

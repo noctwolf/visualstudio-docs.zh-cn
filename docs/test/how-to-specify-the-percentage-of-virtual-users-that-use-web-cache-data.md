@@ -1,19 +1,19 @@
 ---
 title: 在 Visual Studio 中指定使用 Web 缓存数据进行负载测试的虚拟用户的百分比 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual users
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: c1aa64c0ecee9f214d1bd892c62ba79090d2ce15
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 76d611af76877a9638ed2815a7d8dc5f77e45c8c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>如何：指定使用 Web 缓存数据的虚拟用户的百分比
 
@@ -32,11 +32,11 @@ ms.lasthandoff: 03/19/2018
 
 1.  打开一个负载测试。
 
-     此时将显示“负载测试编辑器”。 其中显示负载测试树。
+     “负载测试编辑器”随即显示。 其中显示负载测试树。
 
 2.  在负载测试树的“方案”文件夹中，选择要为其指定所用代理的方案节点。
 
-3.  在“视图”菜单上选择“属性”窗口。
+3.  在“视图”菜单上选择“属性窗口”。
 
      该方案的类别和属性将显示在“属性”窗口中。
 

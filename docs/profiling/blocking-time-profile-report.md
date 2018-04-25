@@ -1,29 +1,24 @@
 ---
-title: "阻塞时间分析报告 | Microsoft Docs"
-ms.custom: 
+title: 阻塞时间分析报告 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.blocking
 helpviewer_keywords:
 - Concurrency Visualizer, Blocking Time Profile Report
 ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 748b547cda2a3c07ed84337d37f2a7e096ee112d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 860449ea4bd4d8aa3ea6c36ab7ff3572c2679488
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="blocking-time-profile-report"></a>阻塞时间分析报告
 分析报告提供特定于每个阻塞类别（例如，“I/O”或“同步”）的调用堆栈的合计阻塞时间数据。 优先报告列出抢占当前进程的进程以及抢占实例数。 为了生成阻塞分析报告，工具会收集阻塞 API 调用并将它们累计到调用堆栈树中。 这些报告中显示的数据因当前时间范围、隐藏线程和以下两个可能应用的筛选器而异：  
@@ -39,7 +34,7 @@ ms.lasthandoff: 12/22/2017
   
 |列名称|描述|  
 |-----------------|-----------------|  
-|名称|调用堆栈每个级别的函数的名称。|  
+|name|调用堆栈每个级别的函数的名称。|  
 |实例数|可见时间段内阻塞调用的实例数。|  
 |非独占阻塞时间|在上滚到此调用堆栈树级别的所有堆栈上所花费的总阻塞时间。 非独占数是此函数的独占阻塞时间及其所有子节点的独占阻塞时间的总和。|  
 |独占阻塞时间|此函数处于最低调用堆栈级别期间所花费的总阻塞时间。 具有较高独占阻塞时间的唯一调用堆栈项可能是相关的函数。|  

@@ -1,23 +1,20 @@
 ---
-title: "使用探查器命令行从 .NET Framework 服务收集内存数据 | Microsoft Docs"
-ms.custom: 
+title: 使用探查器命令行从 .NET Framework 服务收集内存数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: a20c3cff1ee86e0dc0a9530e9ac75aabe881bacb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 5857f0e64014ff6570bfddd087d7c3aafe33b713
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>使用探查器命令行从 .NET Framework 服务收集内存数据
 本部分介绍从使用命令行中使用采样方法收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服务的内存分配和对象生存期数据的步骤和选项。  

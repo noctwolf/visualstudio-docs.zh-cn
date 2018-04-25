@@ -167,7 +167,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
     ```  
   
-     不要忘记将更改 *\<userpath >*到文件名和您的计算机有意义的路径 ！  
+     不要忘记将更改 *\<userpath >* 到文件名和您的计算机有意义的路径 ！  
   
 2.  生成并运行代码。 出现 Visual Studio 的实验实例后，打开的解决方案。 这将导致自动上载到 AsyncPackage。 当运行具有初始值设定项时，你应在你指定的位置中找到的文件。  
   

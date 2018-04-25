@@ -1,25 +1,21 @@
 ---
-title: "步骤 2：创建随机加法问题 | Microsoft Docs"
-ms.custom: 
+title: 步骤 2：创建随机加法问题 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6fbad245748985dc05445a11869e7da20f6aa51
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7212f5df1ef5be0033d17a4f7a57dba455e7022d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步骤 2：创建随机加法问题
 在本教程中的第 2 部分中，您将添加几道基于随机数的数学题，从而让测验变得有挑战性。 您还将添加一个名为 `StartTheQuiz()` 的方法，此方法可填充题目并启动倒计时计时器。 在本教程的后面部分中，您将添加减法、乘法和除法问题。

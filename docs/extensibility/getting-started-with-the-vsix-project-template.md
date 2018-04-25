@@ -35,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
     2.  在“项目”菜单上，单击“导出模板”。 完成向导的步骤。  
   
-         %USERPROFILE%\My Documents\Visual Studio 中创建一个.zip 文件*\<版本 >*\My 导出模板\\。  
+         %USERPROFILE%\My Documents\Visual Studio 中创建一个.zip 文件*\<版本 >* \My 导出模板\\。  
   
 2.  创建一个空的 VSIX 项目。  
   

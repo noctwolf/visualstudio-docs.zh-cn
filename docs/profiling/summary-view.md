@@ -1,13 +1,9 @@
 ---
-title: "“摘要”视图 | Microsoft Docs"
-ms.custom: 
+title: “摘要”视图 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
 helpviewer_keywords:
@@ -16,17 +12,16 @@ helpviewer_keywords:
 - profiling tools, Summary view
 - Summary view
 ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 552a2c66bd71d83ff1c8cd3453154c065d8bdb3d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 51747dca8e11f7a23b911bbfe8ddcdb81d275d69
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="summary-view"></a>“摘要”视图
 “摘要”视图显示有关分析运行期间，性能开销最大的函数或对象的信息。 此视图根据分析方法的性能指标，提供一个时间线图，以及性能开销最大的函数或对象的两个或多个列表。 此视图中的数据取决于所用的分析方法（采样、检测或并发）以及是否收集 .NET 内存分配。  

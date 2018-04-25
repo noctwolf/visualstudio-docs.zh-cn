@@ -1,20 +1,20 @@
 ---
 title: 在 Visual Studio 中编辑测试组合模型 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9a95b42dac07fd74e1b2cc8f8e0c4018b4bf4560
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: ebcb58ea848bbb04dd4fdb132a87c66707bc4af8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-text-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>编辑测试组合模型以指定运行测试的虚拟用户的概率
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 03/19/2018
 
 2.  在负载测试树的“方案”文件夹中，选择要为其指定最大测试迭代次数的方案节点。
 
-3.  在“视图”菜单上选择“属性”窗口。
+3.  在“视图”菜单上选择“属性窗口”。
 
      将显示该方案的类别和属性。
 

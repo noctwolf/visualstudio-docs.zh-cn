@@ -1,12 +1,9 @@
 ---
-title: "常用的 MSBuild 项目项 | Microsoft Docs"
-ms.custom: 
+title: 常用的 MSBuild 项目项 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, common project items
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f48ccd08b0891581f12c055fc12860214926d76
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 46ea8c1ffd52805be4f93fb59c2831f5f0fe610c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，项是对一个或多个文件的命名引用。 项包含元数据（如文件名、路径和版本号）。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有项目类型具有几个通用项。 在文件 Microsoft.Build.CommonTypes.xsd 中定义了这些项。  

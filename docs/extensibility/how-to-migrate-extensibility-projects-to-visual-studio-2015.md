@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  从项目中删除 VS SDK 引用程序集，通过选择它们，右键单击和**删除**。  
   
-3.  添加 VS SDK 引用程序集的 NuGet 版本。  仍中时，在**解决方案资源管理器引用**节点，打开**管理 NuGet 包...**对话框。  如果你想要了解有关此对话框的详细信息，请参阅[包管理器 UI](/NuGet/Tools/Package-Manager-UI)。 VS SDK 引用程序集在上发布[nuget.org](http://www.nuget.org)通过[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)。  
+3.  添加 VS SDK 引用程序集的 NuGet 版本。  仍中时，在**解决方案资源管理器引用**节点，打开**管理 NuGet 包...** 对话框。  如果你想要了解有关此对话框的详细信息，请参阅[包管理器 UI](/NuGet/Tools/Package-Manager-UI)。 VS SDK 引用程序集在上发布[nuget.org](http://www.nuget.org)通过[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)。  
   
 4.  使用**nuget.org**作为你**包源**，搜索匹配的所需的引用程序集的 NuGet 包名称 (例如： microsoft.visualstudio.shell.14.0 的引用) 并安装在你项目。  NuGet 可以添加多个引用程序集，以满足初始程序集的依赖关系。  
   

@@ -1,26 +1,23 @@
 ---
-title: "服务的命令行分析 | Microsoft Docs"
-ms.custom: 
+title: 服务的命令行分析 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling toos,services
 - profiling services
 ms.assetid: f0d62318-b0e8-49c6-9a30-9f7a6adef2f6
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0a82cc33e46c37ddba141ba1defab0aa51fcb1d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: aeb738d9a994d617c5960a9be2aacca53f338188
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="command-line-profiling-of-services"></a>服务的命令行分析
 本部分介绍从命令行使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集 Windows 服务的性能数据的步骤和选项。  

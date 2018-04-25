@@ -1,29 +1,24 @@
 ---
-title: "执行分析报告 | Microsoft Docs"
-ms.custom: 
+title: 执行分析报告 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.execution
 helpviewer_keywords:
 - Concurrency Visualizer, Execution Profile Report
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 263ff80703a680ab799e373fad62c05ced62028f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 93a6d699845d8cce3eb1a410720d4e5fbbfd69d0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="execution-profile-report"></a>执行分析报告
 执行分析报告是传统的采样分析。 线程在逻辑内核上运行期间内，将大约每毫秒进行一次采样，并且并发可视化工具可通过调用累积的堆栈集构建典型的调用关系树。 此表中的数据可能受到当前时间范围、隐藏线程和可能应用的筛选器的影响：  
@@ -36,7 +31,7 @@ ms.lasthandoff: 12/22/2017
   
 |列|描述|  
 |------------|-----------------|  
-|名称|调用堆栈每个级别的函数的名称。|  
+|name|调用堆栈每个级别的函数的名称。|  
 |非独占样本数|为汇总到此调用堆栈树级别的所有堆栈收集的样本总数。 非独占数是此函数的独占样本数和所有子节点的非独占计数器的总和。|  
 |独占样本|收集的样本总数，其中此函数是最低的调用堆栈。|  
 |非独占百分比|非独占样本列中显示的总样本百分比。 百分比舍入到两个小数位。|  

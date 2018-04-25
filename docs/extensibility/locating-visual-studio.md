@@ -39,7 +39,7 @@ ms.lasthandoff: 04/16/2018
 | ------- | ----------- |
 | [vswhere](https://github.com/Microsoft/vswhere) | 单个文件本机可执行文件才能找到满足条件，例如发布或预发行版、 已安装哪种产品，日期和安装的工作负荷的实例。 此外支持查找 Visual Studio 2010 和更高版本，尽管较少的信息返回的有关 Visual Studio 2017 和更高版本。 请参阅[wiki](https://github.com/Microsoft/vswhere/wiki)有关示例。 |
 | [VSSetup cmdlet](https://github.com/Microsoft/vssetup.powershell) | 支持的 PowerShell cmdlet 2.0 和更高版本，返回可用来查找实例基于相同的条件作为对象的丰富信息_vswhere_和以发现实例有关的更多属性。 请参阅[wiki](https://github.com/Microsoft/vssetup.powershell/wiki)有关示例。 |
-| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 自动定位_VSIXInstaller_并传递通过命令行安装_*.vsix_文件。 这可以在安装程序没有为查询 Api 直接支持。 请参阅[wiki](https://github.com/Microsoft/vsixbootstrapper/wiki)有关示例。 |
+| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 自动定位_VSIXInstaller_并传递通过命令行安装 _*.vsix_文件。 这可以在安装程序没有为查询 Api 直接支持。 请参阅[wiki](https://github.com/Microsoft/vsixbootstrapper/wiki)有关示例。 |
 
 ## <a name="see-also"></a>另请参阅
 

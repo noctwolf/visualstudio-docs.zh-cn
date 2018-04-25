@@ -1,12 +1,9 @@
 ---
-title: "Visual Studio 集成 (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 集成 (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1495fa1ae7408874f2c1cfcede2ed495fea3f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dd9dd101508fc55ff6287af534ee57e53e95d4e8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 Visual Studio 承载有 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用以加载和生成托管项目。 由于 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 负责处理项目，因此，可以在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中成功使用几乎任何 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]格式的项目（即使项目是用另一种工具编写的，而且这些项目有自定义的生成过程）。  
@@ -54,10 +50,10 @@ Condition=" '$(Configuration)' == 'Release' "
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将针对 `PropertyGroup`、 `ItemGroup`、 `Import`、 property、 and item elements for this purpose.  
+ 为了达到这个目的，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将针对 `PropertyGroup`, `ItemGroup`, `Import`、属性和项元素检查条件。  
   
 ## <a name="additional-build-actions"></a>其他生成操作  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可用于通过[文件属性](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959)窗口的“生成操作”属性更改项目中文件的项类型名称。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 项类型名称始终会在此菜单中列出，此菜单中同时还会列出项目中已有的任何其他项类型名称。 若要确保任何自定义的项类型名称在此菜单中始终可用，可以将这些名称添加到名为 `AvailableItemName`的项类型。 例如，如果在项目文件中添加下面的内容，就会为导入它的所有项目在此菜单中添加自定义类型 `JScript` ：  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 允许你使用 **“文件属性”** 窗口的 [“生成操作”](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) 属性来更改项目中文件的项类型名称。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 项类型名称始终会在此菜单中列出，此菜单中同时还会列出项目中已有的任何其他项类型名称。 若要确保任何自定义的项类型名称在此菜单中始终可用，可以将这些名称添加到名为 `AvailableItemName`的项类型。 例如，如果在项目文件中添加下面的内容，就会为导入它的所有项目在此菜单中添加自定义类型 `JScript` ：  
   
 ```xml  
 <ItemGroup>  
@@ -147,7 +143,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4.  在 **“解决方案资源管理器”**中，打开不可用项目的快捷菜单，然后选择 **“重新加载项目”**。  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense 和验证  
- 使用 XML 编辑器编辑项目文件时，IntelliSense 和验证由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 架构文件驱动。 这些安装在架构缓存中，安装目录为 *\<Visual Studio 安装目录>*\Xml\Schemas\1033\MSBuild。  
+ 使用 XML 编辑器编辑项目文件时，IntelliSense 和验证由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 架构文件驱动。 这些安装在架构缓存中，安装目录为 *\<Visual Studio 安装目录>* \Xml\Schemas\1033\MSBuild。  
   
  核心 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 类型是在 Microsoft.Build.Core.xsd 中定义的，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用的通用类型则是在 Microsoft.Build.CommonTypes.xsd 中定义的。 若要自定义架构，以便设置针对自定义项类型名称、属性和任务的 IntelliSense 和验证，你可以编辑 Microsoft.Build.xsd，或创建包括 CommonTypes 或核心架构的自己的架构。 如果创建自己的架构，则必须使用 **“属性”** 窗口指引 XML 编辑器找到它。  
   

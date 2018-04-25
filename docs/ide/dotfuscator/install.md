@@ -1,10 +1,11 @@
 ---
-title: "安装 Dotfuscator Community Edition (CE) | Microsoft Docs"
+title: 安装 Dotfuscator Community Edition (CE) | Microsoft Docs
 ms.date: 2017-06-22
 ms.devlang: dotnet
-ms.technology: vs-ide-general
-ms.topic: article
-keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保护, 社区版, 混淆, .NET, 免费, Visual Studio 2017, 安装"
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
+keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保护, 社区版, 混淆, .NET, 免费, Visual Studio 2017, 安装
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - install Dotfuscator
 - installing Dotfuscator
 - set up Dotfuscator
-description: "了解如何安装 Visual Studio 2017 中包含的免费 Dotfuscator Community Edition。"
+description: 了解如何安装 Visual Studio 2017 中包含的免费 Dotfuscator Community Edition。
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
-manager: ghogen
-ms.openlocfilehash: 6e3151a7ce26fcc998df7fbce1cefda54249a384
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: 871ec8c98bac4477ef95c85688484011027e2d20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>安装 Dotfuscator Community Edition (CE)
 
@@ -68,7 +69,7 @@ Visual Studio 2017 引入了一种影响较小的新式安装体验。
 
 安装完成后即可开始使用 Dotfuscator CE。 有关详细信息，请参阅[完整 Dotfuscator CE 用户指南的入门页][get-started]。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 [完整 Dotfuscator CE 用户指南中的本主题][full]
 

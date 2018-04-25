@@ -1,13 +1,9 @@
 ---
-title: "如何：在正在运行的进程中附加和分离性能工具 | Microsoft Docs"
-ms.custom: 
+title: 如何：在正在运行的进程中附加和分离性能工具 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
 helpviewer_keywords:
@@ -17,17 +13,16 @@ helpviewer_keywords:
 - performance tools, detach process
 - profiler
 ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e847e1295e4514f8e1c327f207a6ae7166c892df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0c53dcbec5d41b6aa93eef115bba966076fcfda2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：在正在运行的进程中附加和分离性能工具
 探查器可用于附加到运行中的进程或从运行中的进程分离，以更轻松地进行采样和收集性能数据。 在想要避免收集有关应用程序加载时间的数据，或在进程达到某一特定状态后监视其性能时，可使用此方法分析进程。  

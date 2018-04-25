@@ -48,7 +48,7 @@ Vspackage 可以将消息写入活动日志。 此功能非常适合在零售环
   
 1.  运行使用 Visual Studio [/日志](../ide/reference/log-devenv-exe.md)命令行开关以在你的会话期间将 ActivityLog.xml 写入到磁盘。
 
-2.  关闭 Visual Studio 后, 找到活动日志的子文件夹中的 Visual Studio 数据： *%appdata%*\Microsoft\VisualStudio\15.0\ActivityLog.xml。  
+2.  关闭 Visual Studio 后, 找到活动日志的子文件夹中的 Visual Studio 数据： *%appdata%* \Microsoft\VisualStudio\15.0\ActivityLog.xml。  
   
 3.  使用任何文本编辑器中打开活动日志。 下面是一个典型条目：  
   

@@ -1,23 +1,23 @@
 ---
 title: 用于 Visual Studio 中负载测试的单步负载模式的单步增加时间 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, load patterns
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: fdf692057fdd99ee201b38c14454ccd29109d765
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0ed9a9ec360072c45ea2f59483e031dfe856b8e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>如何：为分级负载模式指定单步负载增加时间属性
 
-在用“新建负载测试向导”创建负载测试之后，可使用“负载测试编辑器”来更改方案属性以满足测试需求和目标。 有关详细信息，请参阅[演练：创建和运行负载测试](../test/walkthrough-create-and-run-a-load-test.md)。
+在用“新建负载测试向导”创建负载测试之后，可以使用“负载测试编辑器”来更改方案属性以满足测试需求和目标。 有关详细信息，请参阅[演练：创建和运行负载测试](../test/walkthrough-create-and-run-a-load-test.md)。
 
 > [!NOTE]
 > 有关负载测试方案属性及其说明的完整列表，请参阅[负载测试方案属性](../test/load-test-scenario-properties.md)。
@@ -49,7 +49,7 @@ ms.lasthandoff: 03/19/2018
 
 1.  打开一个负载测试。
 
-     此时将显示“负载测试编辑器”。 其中显示负载测试树。
+     “负载测试编辑器”随即显示。 其中显示负载测试树。
 
 2.  在负载测试树的“方案”文件夹中，打开要为其指定单步负载增加时间的方案节点。
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/19/2018
     > [!NOTE]
     > 该方案的负载模式必须是分级负载模式。 如果不是，则负载模式将显示当前与该方案关联的负载模式类型。 有关详细信息，请参阅[编辑负载模式以便为虚拟用户活动建模](../test/edit-load-patterns-to-model-virtual-user-activities.md)。
 
-4.  在“视图”菜单上选择“属性”窗口。
+4.  在“视图”菜单上选择“属性窗口”。
 
      该方案的类别和属性将显示在“属性”窗口中。
 

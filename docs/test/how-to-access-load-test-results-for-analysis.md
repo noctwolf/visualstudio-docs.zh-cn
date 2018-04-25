@@ -1,7 +1,7 @@
 ---
 title: 分析 Visual Studio 中的负载测试结果 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - results, load test
 - load test results, accessing
@@ -13,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2e44b6818d30c3452259b4249c047b40bd70bf43
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: d3a1e3f54544215ed89f07a64d440ae3844c996f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>如何：访问负载测试结果以进行分析
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 03/19/2018
 
 6.  将显示负载测试分析器。 所选的负载测试结果显示在“摘要”视图中。 有关详细信息，请参阅[负载测试结果摘要概述](../test/load-test-results-summary-overview.md)。
 
-     可以在“打开和管理结果”对话框中管理负载测试结果的其他方面，包括导入、导出和删除负载测试结果。 有关详细信息，请参阅[管理负载测试结果储存库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
+     可以在“打开和管理结果”对话框中管理负载测试结果的其他方面，包括导入、导出和删除负载测试结果。 有关详细信息，请参阅[管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 
 ## <a name="see-also"></a>请参阅
 

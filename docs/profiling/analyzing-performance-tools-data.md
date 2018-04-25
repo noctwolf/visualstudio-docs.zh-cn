@@ -1,12 +1,9 @@
 ---
-title: "分析性能工具数据 | Microsoft Docs"
-ms.custom: 
+title: 分析性能工具数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - performance, viewing data
 - performance reports, performance data
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - Profiling Tools,data views
 - Profiling Tools,reports
 ms.assetid: ae3e198a-b994-4ecb-a633-dec98bd4fd45
-caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 33ae54490ab9dbb7015df1ce6bafc4794d8254ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fe9ddcc2a374661525744e064929ca20daa83c97
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analyzing-performance-tools-data"></a>分析性能工具数据
 通过 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的性能报告可查看并分析应用程序性能问题。 本部分概述了可用于检查性能数据的性能报告和视图。  

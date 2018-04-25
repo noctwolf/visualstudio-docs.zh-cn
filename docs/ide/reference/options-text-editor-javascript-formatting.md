@@ -1,27 +1,25 @@
 ---
-title: "“选项”->“文本编辑器”->“JavaScript”->“格式设置”| Microsoft Docs"
-ms.custom: 
+title: “选项”->“文本编辑器”->“JavaScript”->“格式设置”| Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.New_Lines
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8902d63f89167e4d977f130757af10557bffb529
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a640aba7cca3048a8b680983dc67e2edff91f62c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-text-editor-javascript-formatting"></a>选项，文本编辑器，JavaScript，格式
 使用“选项”对话框的“格式设置”页在代码编辑器中设置用于代码格式设置的选项。 若要访问此页，请在菜单栏上选择“工具”、“选项”，然后依次展开“文本编辑器”、“JavaScript”和“格式设置”。  

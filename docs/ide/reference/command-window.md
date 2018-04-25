@@ -1,13 +1,10 @@
 ---
-title: "“命令”窗口 | Microsoft Docs"
-ms.custom: 
+title: “命令”窗口 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.CommandWindow
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b1de69c905757c8d28922cd09eadd5abf7d05e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5093c409a86e4488ef7c572c9f4f847bd803bbfd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-window"></a>“命令”窗口
 “命令”窗口用于直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中执行命令或别名。 可以执行菜单命令和不在任何菜单上出现的命令。 若要显示“命令”窗口，请在“视图”菜单中选择“其他窗口”，然后选择“命令窗口”。  
@@ -104,7 +100,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 如果短格式开关组合为一组，而且给定一个值，则该值应用于每个开关。 例如，`/pgm:123` 等同于 `/p:123 /g:123 /m:123`。 如果该组中的任何开关都不接受值，则发生错误。  
   
 ## <a name="escape-characters"></a>转义字符  
- 命令行中的插入符号 (^) 字符表示紧随其后的字符将按字面意思而不是作为控制字符进行解释。 这可以用于嵌入参数或开关值中的直引号 (")、空格、前导斜杠，插入符号或其他任何字符，开关名称除外。 例如，  
+ 命令行中的插入符号 (^) 字符表示紧随其后的字符将按字面意思而不是作为控制字符进行解释。 这可以用于嵌入参数或开关值中的直引号 (")、空格、前导斜杠，插入符号或其他任何字符，开关名称除外。 例如，应用于对象的  
   
 ```  
 >Edit.Find ^^t /regex  

@@ -2,11 +2,8 @@
 title: GenerateResource 任务 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, GenerateResource task
 - GenerateResource task [MSBuild]
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
-caps.latest.revision: 15
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37aacbfd2095cf4edae78393569702fe4fea6c7e
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: e26aae610407ceb1ebe050081f5b555d82badc92
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource 任务
 将文本 .txt 和 .resx（基于 XML 的资源格式）文件转换为公共语言运行时二进制 .resources 文件，这些 .resources 文件可嵌入到运行时二进制可执行文件中或编译到附属程序集中。 此任务通常用于将 .txt 或 .resx 文件转换为 .resource 文件。 `GenerateResource` 任务在功能上类似于 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)。  
@@ -95,6 +91,6 @@ ms.lasthandoff: 04/10/2018
   
  如果没有 \<LogicalName> 元数据，则资源会被命名为 myAssembly.myResource.resources。  此示例仅适用于 Visual Basic 和 Visual C# 生成过程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

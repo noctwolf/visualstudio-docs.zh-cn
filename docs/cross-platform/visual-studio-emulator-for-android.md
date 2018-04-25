@@ -2,23 +2,19 @@
 title: 适用于 Android 的 Visual Studio 仿真程序 | Microsoft Docs
 ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
-caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4caa011bb0c7cdea3f9a1eed9e2eeb4adb089eb4
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 55e1e24a1482f40664d3f0c154d362c08bb9fa17
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 仿真程序
 适用于 Android 的 Visual Studio 仿真器是一款可模拟 Android 设备的桌面应用程序。 它提供虚拟化的环境，你不需要物理设备便可在其中调试并测试 Android 应用程序。 它还为应用程序原型提供一个独立的环境。  
@@ -102,6 +98,6 @@ ms.lasthandoff: 04/10/2018
   
 -   在 Visual Studio 或在仿真程序管理器中使用“发送笑脸”工具来报告问题。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [适用于 Android 的 Visual Studio 模拟程序的系统要求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
  [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

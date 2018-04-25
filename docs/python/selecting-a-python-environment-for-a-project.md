@@ -1,26 +1,21 @@
 ---
-title: 为项目选择环境 | Microsoft Docs
+title: 为项目选择环境
 description: 在 Visual Studio 解决方案资源管理器中，可以分配一个特定的 Python 解释器（环境）以始终用于任何给定项目，忽略默认环境。 还可以创建和管理虚拟环境。
-ms.custom: ''
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 28070c9864162c7af5c68644dedb296107af81d0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>选择在项目中使用的 Python 解释器和环境
 
@@ -111,7 +106,7 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 
 要安装新的包，右键单击环境并选择“安装 Python 包…”以切换到“Python 环境”窗口中的“包”选项卡。 输入搜索词（通常是包名称），Visual Studio 将显示匹配的包。
 
-在 Visual Studio 中，从 [Python 包索引 (PyPI)](https://pypi.python.org/pypi) 下载包（及其依赖项），还可以在其中搜索可用的包。 Visual Studio 的状态栏和输出窗口显示有关安装的信息。 若要卸载包，请右键单击它，选择“删除”。
+在 Visual Studio 中，从 [Python 包索引 (PyPI)](https://pypi.org) 下载包（及其依赖项），还可以在其中搜索可用的包。 Visual Studio 的状态栏和输出窗口显示有关安装的信息。 若要卸载包，请右键单击它，选择“删除”。
 
 请注意，显示的项未必总准确，且安装和卸载可能不可靠或不可用。 Visual Studio 使用 pip 程序包管理器（如果可用），并且需要时会下载并安装它。 Visual Studio 还可以使用 easy_install 程序包管理器。 也会显示使用 `pip` 或 `easy_install` 从命令行安装的包。
 

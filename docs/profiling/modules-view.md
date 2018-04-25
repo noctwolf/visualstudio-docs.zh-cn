@@ -1,13 +1,9 @@
 ---
-title: "“模块”视图 | Microsoft Docs"
-ms.custom: 
+title: “模块”视图 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.modules
 helpviewer_keywords:
@@ -15,17 +11,16 @@ helpviewer_keywords:
 - profiling tools reports, Modules view
 - profiling tools, Modules view
 ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be5b8481170ee6d733fbe4cfc36d4606b644517e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eb86cc9809bcb620033820b8c422313305d95d53
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modules-view"></a>“模块”视图
 “模块”视图列出分析数据的模块。 每个模块是一个层次结构树的根节点。 模块的分析函数在模块节点下列出。 如果分析数据是使用采样方法收集的，则行信息在函数节点下列出，指令指针数据在行节点下列出。  

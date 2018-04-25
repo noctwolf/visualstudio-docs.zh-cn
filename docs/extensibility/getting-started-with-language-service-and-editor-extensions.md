@@ -66,9 +66,9 @@ ms.lasthandoff: 04/16/2018
 ## <a name="running-extensions-in-the-experimental-instance"></a>在实验实例中运行扩展  
  在通过将其部署在以下实验文件夹 （在 Windows Vista 和 Windows 7） 中开发扩展时，可以防止你正在使用 Visual Studio 的版本：  
   
- *%LOCALAPPDATA%*\VisualStudio\10.0Exp\Extensions\\*公司*\\*扩展 Id*  
+ *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*公司*\\*扩展 Id*  
   
- 其中*%LOCALAPPDATA%*是登录的用户的名称*公司*是拥有扩展，该公司的名称和*扩展 Id*是扩展的 ID。  
+ 其中 *%LOCALAPPDATA%* 是登录的用户的名称*公司*是拥有扩展，该公司的名称和*扩展 Id*是扩展的 ID。  
   
  在扩展部署到实验位置时，它将在调试模式下运行。 Visual Studio 的第二个实例已启动，并且名为**Microsoft Visual Studio 的实验实例**。  
   

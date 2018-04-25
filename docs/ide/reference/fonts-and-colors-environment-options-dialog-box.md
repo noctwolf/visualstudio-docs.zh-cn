@@ -1,12 +1,10 @@
 ---
-title: "“选项”对话框 ->“环境”->“字体和颜色”| Microsoft Docs"
-ms.custom: 
+title: “选项”对话框 ->“环境”->“字体和颜色”| Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 23e6712dbf66c898757176aca9e89b98de2f65bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a089bc9fe61d1ddc8e4510c4da03235c7ab782ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“字体和颜色”
 通过“选项”对话框的“字体和颜色”页，可以为集成开发环境 (IDE) 中的各种用户界面元素建立自定义字体和配色方案。 单击“工具”/“选项”，然后选择“环境”/“字体和颜色”即可访问此对话框。 如果此页未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  

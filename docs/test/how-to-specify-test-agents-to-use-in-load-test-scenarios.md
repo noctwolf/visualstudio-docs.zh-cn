@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中指定负载测试方案中要使用的测试代理 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - test agents, load tests
 - load tests, scenarios
@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1871078022efb153c1ceea9bdeb29cb9552179ab
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: dd6ca0c9b92f8eaa27c2a8726cc9d2cea49636b2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>如何：指定要在负载测试方案中使用的测试代理
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 03/19/2018
 
 2.  在负载测试树的“方案”文件夹中，选择要为其指定所用代理的方案节点。
 
-3.  在“视图”菜单上选择“属性”窗口。
+3.  在“视图”菜单上选择“属性窗口”。
 
      该方案的类别和属性将显示在“属性”窗口中。
 

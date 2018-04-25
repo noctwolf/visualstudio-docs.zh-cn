@@ -1,25 +1,20 @@
 ---
-title: "运行带或不带调试器的分析工具 | Microsoft Docs"
-ms.custom: 
+title: 运行带或不带调试器的分析工具 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 462b164d0a6d3e9cba0f9698b7dba3b01aa5fee5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>运行带或不带调试器的分析工具
 Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU 使用率”和“内存使用率”）可在使用/不使用调试器的情况下运行。 不带调试器的性能工具用于在发布配置上运行，而集成了调试器的工具用于在调试配置上运行。  

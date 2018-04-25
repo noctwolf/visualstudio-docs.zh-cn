@@ -47,7 +47,7 @@ ms.lasthandoff: 04/16/2018
   
     2.  在 Windows 资源管理器，右键单击包含两个 XML 文件的文件夹，单击发送到，然后单击压缩 (zipped) 文件夹。 将生成的.zip 文件重命名为 Filename.vsix，这里的文件名是安装你的包的可再发行文件的名称。  
   
- Visual studio 能够识别起始页，`Content Element`的 VSIX 清单必须包含`CustomExtension Element`具有`Type`属性设置为`"StartPage"`。 已安装使用 VSIX 部署起始页扩展将出现在**自定义起始页**列表上**启动**选项页上为**[安装的扩展]***扩展名*。  
+ Visual studio 能够识别起始页，`Content Element`的 VSIX 清单必须包含`CustomExtension Element`具有`Type`属性设置为`"StartPage"`。 已安装使用 VSIX 部署起始页扩展将出现在**自定义起始页**列表上**启动**选项页上为 **[安装的扩展]***扩展名*。  
   
  如果你的起始页包包括程序集，必须添加绑定路径注册，以便在 Visual Studio 启动时才可用。 若要执行此操作，请确保你的包，包含一个.pkgdef 文件，其中包含以下信息。  
   

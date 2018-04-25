@@ -1,30 +1,25 @@
 ---
-title: "分析 UWP 应用中的能量使用 | Microsoft Docs"
-ms.custom: 
+title: 分析 UWP 应用中的能量使用 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: f6728f940b1d8613587b6b879324bd37a2a35e2d
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 05b5b87afda20990f122597520b0e2cf7e9b7ac1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
 Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备上的 UWP 应用的功率和能耗情况，这些低功率平板设备在所有时间或部分时间内靠自有电池运行。 在电池供电的设备上，如果应用程序使用过多的能量，可能导致客户非常不满，最终客户甚至可能将其卸载。 能量利用的优化可使更多的客户选择并使用你的应用程序。  

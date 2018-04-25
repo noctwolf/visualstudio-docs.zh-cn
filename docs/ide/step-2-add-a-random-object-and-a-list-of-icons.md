@@ -1,25 +1,21 @@
 ---
-title: "步骤 2：添加随机对象和图标列表 | Microsoft Docs"
-ms.custom: 
+title: 步骤 2：添加随机对象和图标列表 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c54c94c27b21e120d2e3fe187a6598e0115d737f
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 2a4f6cf0b5b12c93de788e83c181c445a5fc6a50
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步骤 2：添加随机对象和图标列表
 在本步骤中，你要为游戏创建一组匹配的符号。 每个符号将添加到窗体上 TableLayoutPanel 中的两个随机单元格。 为此，请使用两个 `new` 语句创建两个对象。 第一个是 `Random` 对象，类似于数学测验游戏中使用的对象。 此代码中使用它来随机选择 TableLayoutPanel 中的单元格。 第二个对象是用于存储随机选择的符号的 `List` 对象，你可能没有见过。

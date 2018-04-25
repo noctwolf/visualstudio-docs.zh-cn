@@ -1,27 +1,22 @@
 ---
-title: "并发可视化工具命令行实用工具 (CVCollectionCmd) | Microsoft Docs"
-ms.custom: 
+title: 并发可视化工具命令行实用工具 (CVCollectionCmd) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53dd29671e20f19c0ef83d5920581c7038f32c9f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 606a6c021247a00b2244986d5f91ad19d6a167f4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>并发可视化工具命令行实用工具 (CVCollectionCmd)
 你可以使用并发可视化工具命令行实用程序 (CVCollectionCmd.exe) 以从命令行收集跟踪，使你可以在 Visual Studio 的并发可视化工具中查看它们。 这些工具可以在未安装 Visual Studio 的计算机上使用。  
@@ -44,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
  **CvCollectionCmd /?**  
   
-|选项|说明|参数|返回值|  
+|选项|描述|参数|返回值|  
 |------------|-----------------|----------------|-------------------|  
 |查询|返回是否可以启动收集。|无|如果准备开始启动收集，则为 0。<br /><br /> 如果收集已在进行中，则为 1。<br /><br /> 如果收集未在进行，但是已经启用一个或多个必需的 [ETW](/dotnet/framework/wcf/samples/etw-tracing) 会话，则为 2。|  
 |启动|在并发可视化工具下运行指定的进程。|可执行文件的路径。|如果运行已成功，则为 0。<br /><br /> 如果因为目标应用程序无法启动而运行失败，则为 1。<br /><br /> 如果因为 CVCollectionCmd 没有足够的权限写入指定的输出目录而运行失败，则为 13。|  
@@ -67,7 +62,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="configuration-file-tags"></a>配置文件标记  
  此配置文件基于 XML 文件。 以下是有效的标记和值：  
   
-|标记|说明|值|  
+|标记|描述|值|  
 |---------|-----------------|------------|  
 |配置|划分整体配置文件。|必须包含以下元素：<br /><br /> -   MinorVersion<br />-   MajorVersion|  
 |MajorVersion|指定配置文件的主要版本。|对于 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 项目，必须为 1。 如果不是 1，则实用工具不起作用。|  
@@ -79,7 +74,7 @@ ms.lasthandoff: 12/22/2017
 |MarkerProvider|指定单个标记提供程序。|必须包含以下元素：<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 可以包含以下元素：<br /><br /> -   Categories<br />-   IsEnabled|  
 |级别|设置 MarkerProvider 的重要性级别。|-   低<br />-   普通<br />-   高<br />-   严重<br />-   全部|  
 |GUID|ETW 标记提供程序的全局唯一标识符。|一个 GUID。|  
-|名称|指定标记提供程序的说明。|一个字符串。|  
+|name|指定标记提供程序的说明。|一个字符串。|  
 |类别|指定为标记提供程序收集的类别。|一个以逗号分隔的数字或数字范围的字符串。|  
 |IsEnabled|设置一个值，该值确定是否针对收集启用标记提供程序。|-   True<br />-   False|  
 |FilterConfig|指定 ETW 事件的配置选项的列表，这些事件筛选自收集。|可能包含以下元素：<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  

@@ -1,34 +1,32 @@
 ---
-title: "Visual Studio 命令 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 命令 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, commands
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b58cec1da21daf67c8a77d53312e92fdbf4dfb0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c4fc6746648e57903bd0da45bc15758b30a60801
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 Visual Studio 命令允许你调用“命令”  窗口、“即时”  窗口或“查找/命令”  框中的命令。 在每种情况下，都使用大于号 (`>`) 指示后面跟随的是命令，而不是搜索或调试操作。  
   
  可以在“键盘，环境选项”  对话框中找到命令及其语法的完整列表。  
   
- Visual Studio 命令的转义符是一个插入符号 (^) 字符，其表示紧随其后的字符将按字面意思而不是作为控制字符进行解释。 这可以用于嵌入参数或开关值中的直引号 (")、空格、前导斜杠，插入符号或其他任何字符，开关名称除外。 例如，  
+ Visual Studio 命令的转义符是一个插入符号 (^) 字符，其表示紧随其后的字符将按字面意思而不是作为控制字符进行解释。 这可以用于嵌入参数或开关值中的直引号 (")、空格、前导斜杠，插入符号或其他任何字符，开关名称除外。 例如，应用于对象的  
   
 ```  
 >Edit.Find ^^t /regex  

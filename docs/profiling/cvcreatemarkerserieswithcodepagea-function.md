@@ -1,29 +1,24 @@
 ---
-title: "CvCreateMarkerSeriesWithCodePageA 函数 | Microsoft Docs"
-ms.custom: 
+title: CvCreateMarkerSeriesWithCodePageA 函数 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmakers/CvCreateMarkerSeriesWithCodePageA
 helpviewer_keywords:
 - CvCreateMarkerSeriesWithCodePageA method
 ms.assetid: 3d7ed601-2222-4be9-a557-f217db008753
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d40f895133ce4fc36a40292d7931c47dd166e8e4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 3bf258dbca695fe3f1516d977e02a21058377e02
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA 函数
 为给定提供程序和指定代码页创建标记系列。 此函数可用于为标记 API ANSI 函数写出的文本显式指定代码页。 设置代码页对不同计算机使用不同的区域设置或语言来捕获然后分析跟踪非常有用。 默认情况下使用 GetACP() 函数返回的代码页。  

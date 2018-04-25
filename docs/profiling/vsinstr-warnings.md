@@ -1,12 +1,9 @@
 ---
-title: "VSInstr 警告 | Microsoft Docs"
-ms.custom: 
+title: VSInstr 警告 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - instrumentation, VSInstr tool
 - warnings
@@ -14,16 +11,16 @@ helpviewer_keywords:
 - warnings, VSInstr tool
 - performance tools, VSInstr tool
 ms.assetid: 47512bc9-a8e9-4628-883a-d9888edab786
-caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 25156aa6087e5ce1b00e1a4230d4fbf42ef75513
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 60ea2bcf1770e8c20db61c93a2b4ed6516b0daff
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出了由 VSInstr.exe 工具发出的警告。 可使用 NOWARN 选项及警告编号来禁止显示警告。  

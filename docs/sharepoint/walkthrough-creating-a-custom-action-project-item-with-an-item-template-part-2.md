@@ -62,9 +62,9 @@ ms.lasthandoff: 04/16/2018
   
 2.  在**解决方案资源管理器**，打开解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。  
   
-3.  在**新项目**对话框框中，展开**Visual C#**或**Visual Basic**节点，然后选择**Windows**节点。  
+3.  在**新项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**Windows**节点。  
   
-4.  在顶部**新项目**对话框框中，请确保**.NET Framework 4.5**选择在列表中的.NET framework 的版本。  
+4.  在顶部**新项目**对话框框中，请确保 **.NET Framework 4.5**选择在列表中的.NET framework 的版本。  
   
 5.  选择**WPF 用户控件库**项目模板，将项目**ItemTemplateWizard**，然后选择**确定**按钮。  
   
@@ -83,7 +83,7 @@ ms.lasthandoff: 04/16/2018
   
      对于 Visual C# 项目，你可以将此值设置上**应用程序**选项卡。对于 Visual Basic 项目，你可以将此值设置上**编译**选项卡。有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
-3.  在**ItemTemplateWizard**项目中，添加**Window (WPF)**项目到项目中，并将其命名项**WizardWindow**。  
+3.  在**ItemTemplateWizard**项目中，添加**Window (WPF)** 项目到项目中，并将其命名项**WizardWindow**。  
   
 4.  添加两个分别名为 CustomActionWizard 和字符串的代码文件。  
   
@@ -279,7 +279,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在实验实例中的 Visual Studio 中，在菜单栏上，选择**文件**，**新建**，**项目**。  
   
-2.  展开**Visual C#**或**Visual Basic**节点 （具体取决于您的项模板支持的语言），展开**SharePoint**节点，然后选择**2010年**节点。  
+2.  展开**Visual C#** 或**Visual Basic**节点 （具体取决于您的项模板支持的语言），展开**SharePoint**节点，然后选择**2010年**节点。  
   
 3.  在项目模板列表中，选择**SharePoint 2010 项目**，命名该项目**CustomActionWizardTest**，然后选择**确定**按钮。  
   

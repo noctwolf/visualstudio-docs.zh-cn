@@ -1,24 +1,24 @@
 ---
 title: 在 Visual Studio 的负载测试运行设置中指定测试迭代数 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
 ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: c05326a7c21eb8c3836fbd2896cc9478d4b82e32
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 06e99eafc6089853b90dd2196fb9152e2639b32b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>如何：在负载测试运行设置中指定测试迭代数
 
-用“新建负载测试向导”创建负载测试之后，可使用“负载测试编辑器”来更改方案属性以满足测试需求和目标。 有关详细信息，请参阅[演练：创建和运行负载测试](../test/walkthrough-create-and-run-a-load-test.md)。
+在用“新建负载测试向导”创建负载测试之后，可以使用“负载测试编辑器”来更改方案属性以满足测试需求和目标。 有关详细信息，请参阅[演练：创建和运行负载测试](../test/walkthrough-create-and-run-a-load-test.md)。
 
 使用“负载测试编辑器”，可以在“属性”窗口中编辑运行设置的“测试迭代”属性的值。 “测试迭代”属性使用“负载测试编辑器”指定要对负载测试的所有方案中的所有 Web 性能测试和单元测试运行的迭代数。
 

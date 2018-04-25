@@ -2,11 +2,8 @@
 title: LIB 任务 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
 - VC.Project.VCLibrarianTool.TreatLibWarningsAsErrors
@@ -25,17 +22,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), LIB task
 - LIB task (MSBuild (Visual C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-caps.latest.revision: 7
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b6ceb908e45cf98f32f89605bf48f8e747b7aa
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 69dec38691969eafa92a13dea0333fbc17060354
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="lib-task"></a>LIB 任务
 包装 Microsoft 32 位库管理器工具 (lib.exe)。 库管理器创建并管理通用对象文件格式 (COFF) 对象文件的库。 库管理器还可以创建导出文件和导入库，以便引用导出的定义。 有关详细信息，请参阅 [LIB 参考](/cpp/build/reference/lib-reference)和[运行 LIB](/cpp/build/reference/running-lib)。  
@@ -72,5 +68,5 @@ ms.lasthandoff: 04/10/2018
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)

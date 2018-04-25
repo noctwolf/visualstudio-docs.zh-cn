@@ -1,7 +1,7 @@
 ---
 title: 配置用于 Visual Studio 中的负载测试的测试迭代 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios, iterations
 - load test, iterations
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9d714723bdd19fae443b19ef293e66c21929c32d
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 6aac1f950bcfaf4c8308913d389d6fd3dec15c2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在负载测试方案中配置测试迭代
 
@@ -75,7 +75,7 @@ ms.lasthandoff: 03/19/2018
 
 1.  打开一个负载测试。
 
-     此时显示“负载测试编辑器”。 其中显示负载测试树。
+     “负载测试编辑器”随即显示。 其中显示负载测试树。
 
 2.  在负载测试树的“方案”文件夹中，选择要为其指定所用代理的方案节点。
 

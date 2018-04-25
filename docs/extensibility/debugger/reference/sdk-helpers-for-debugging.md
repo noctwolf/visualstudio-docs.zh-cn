@@ -264,7 +264,7 @@ HRESULT EnumMetricSections(
 |占位符|描述|  
 |-----------------|-----------------|  
 |*[注册表项]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
-|*[版本根]*|Visual Studio 的版本 (例如， `7.0`， `7.1`，或`8.0`)。 但是，此根也可以修改使用**/rootsuffix**切换到**devenv.exe**。 VSIP，对于此修饰符通常是**Exp**，因此版本根是，例如，8.0Exp。|  
+|*[版本根]*|Visual Studio 的版本 (例如， `7.0`， `7.1`，或`8.0`)。 但是，此根也可以修改使用 **/rootsuffix**切换到**devenv.exe**。 VSIP，对于此修饰符通常是**Exp**，因此版本根是，例如，8.0Exp。|  
 |*[指标根]*|这可以是`AD7Metrics`或`AD7Metrics(Debug)`，取决于是否使用 dbgmetric.lib 的调试版本。 **注意：**是否使用 dbgmetric.lib 时，此命名约定应遵守如果必须调试和发布之间的差异必须反映在注册表中的版本。|  
 |*[指标类型]*|要写入的度量值的类型： `Engine`， `ExpressionEvaluator`， `SymbolProvider`，等等。这些都被定义为如下所示为 dbgmetric.h `metricTypeXXXX`，其中`XXXX`是特定类型名称。|  
 |*[指标]*|要为其赋值才能设置该度量值的项的名称。 实际的组织的度量值取决于度量值的类型。|  
@@ -274,7 +274,7 @@ HRESULT EnumMetricSections(
 >  格式存储所有 Guid `{GUID}`。 例如 `{123D150B-FA18-461C-B218-45B3E4589F9B}`。  
   
 ### <a name="debug-engines"></a>调试引擎  
- 下面是在注册表中的调试引擎度量值组织。 `Engine` 为调试引擎的度量值的类型名称并且对应于*[指标类型]*上面的注册表子树中。  
+ 下面是在注册表中的调试引擎度量值组织。 `Engine` 为调试引擎的度量值的类型名称并且对应于 *[指标类型]* 上面的注册表子树中。  
   
  `Engine`\  
   
@@ -301,7 +301,7 @@ HRESULT EnumMetricSections(
 |*[端口供应商 guid]*|端口供应商，如果任何 GUID。 许多的调试引擎使用默认端口供应商，并因此不指定其自己的供应商。 在此情况下，该子项`PortSupplier`将不存在。|  
   
 ### <a name="port-suppliers"></a>端口供应商  
- 下面是注册表中的端口供应商指标的组织。 `PortSupplier` 是的端口供应商提供的度量值的类型名称并且对应于*[指标类型]*。  
+ 下面是注册表中的端口供应商指标的组织。 `PortSupplier` 是的端口供应商提供的度量值的类型名称并且对应于 *[指标类型]*。  
   
  `PortSupplier`\  
   
@@ -319,7 +319,7 @@ HRESULT EnumMetricSections(
 |*[类 guid]*|实现此端口供应商的类的 GUID|  
   
 ### <a name="symbol-providers"></a>符号提供程序  
- 下面是在注册表中的符号供应商度量值组织。 `SymbolProvider` 是符号提供程序的度量值的类型名称并且对应于*[指标类型]*。  
+ 下面是在注册表中的符号供应商度量值组织。 `SymbolProvider` 是符号提供程序的度量值的类型名称并且对应于 *[指标类型]*。  
   
  `SymbolProvider`\  
   
@@ -347,7 +347,7 @@ HRESULT EnumMetricSections(
 |*[类 guid]*|实现此符号提供程序的类的 GUID|  
   
 ### <a name="expression-evaluators"></a>表达式计算器  
- 下面是在注册表中的表达式计算器度量值组织。 `ExpressionEvaluator` 是表达式计算器的度量值的类型名称并且对应于*[指标类型]*。  
+ 下面是在注册表中的表达式计算器度量值组织。 `ExpressionEvaluator` 是表达式计算器的度量值的类型名称并且对应于 *[指标类型]*。  
   
 > [!NOTE]
 >  度量值类型`ExpressionEvaluator`未定义中 dbgmetric.h，因为假定所有度量值的更改的表达式计算器将经过适当的表达式计算器指标函数 (的布局`ExpressionEvaluator`子项是某种程度上复杂，因此详细信息隐藏在 dbgmetric.lib）。  
@@ -378,7 +378,7 @@ HRESULT EnumMetricSections(
 |*[调试引擎 guid]*|此表达式计算器适用于调试引擎的 GUID|  
   
 ### <a name="expression-evaluator-extensions"></a>表达式计算器扩展  
- 下面是在注册表中的表达式计算器扩展度量值组织。 `EEExtensions` 为计算器扩展的表达式的度量值的类型名称并且对应于*[指标类型]*。  
+ 下面是在注册表中的表达式计算器扩展度量值组织。 `EEExtensions` 为计算器扩展的表达式的度量值的类型名称并且对应于 *[指标类型]*。  
   
  `EEExtensions`\  
   
@@ -393,7 +393,7 @@ HRESULT EnumMetricSections(
 |*[扩展 guid]*|表达式计算器扩展的 GUID|  
   
 ### <a name="exceptions"></a>异常  
- 下面是在注册表中的异常度量值组织。 `Exception` 是的异常的度量值的类型名称并且对应于*[指标类型]*。  
+ 下面是在注册表中的异常度量值组织。 `Exception` 是的异常的度量值的类型名称并且对应于 *[指标类型]*。  
   
  `Exception`\  
   
@@ -420,7 +420,7 @@ HRESULT EnumMetricSections(
 |*[异常]*|异常的名称： 例如， **_com_error**或**控制中断**。 这些名称还用于标识向用户的特定异常。|  
   
 ## <a name="requirements"></a>要求  
- 这些文件位于[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]SDK 安装目录 (默认情况下， *[驱动器]*files\microsoft Visual Studio 2010 SDK\\)。  
+ 这些文件位于[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]SDK 安装目录 (默认情况下， *[驱动器]* files\microsoft Visual Studio 2010 SDK\\)。  
   
  标头： includes\dbgmetric.h  
   

@@ -1,12 +1,10 @@
 ---
-title: "项目设计器 ->“引用”页 (Visual Basic) | Microsoft Docs"
-ms.custom: 
+title: 项目设计器 ->“引用”页 (Visual Basic) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vb.ProjectPropertiesReference
 - vb.ProjectPropertiesUnusedReference
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - Project Designer, References page
 - Unused References dialog box
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
-caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a6fb8d57be1101f8faa5826b2459a9a1658009d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0d21e095ee6a81a257c33fe43be0673766cce43d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="references-page-project-designer-visual-basic"></a>项目设计器 ->“引用”页 (Visual Basic)
 使用项目设计器的“引用”页可以管理项目中的引用、Web 引用和导入的命名空间。 项目可包含对 COM 组件、XML Web service、.NET Framework 类库或程序集以及其他类库的引用。 有关使用引用的详细信息，请参阅[管理项目中的引用](../../ide/managing-references-in-a-project.md)。  

@@ -75,7 +75,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  单击新建按钮。  
   
-     程序消息的对话框**ToolbarButtonPackage 内 SolutionToolbar.ToolbarButton.MenuItemCallback()**应显示。  
+     程序消息的对话框**ToolbarButtonPackage 内 SolutionToolbar.ToolbarButton.MenuItemCallback()** 应显示。  
   
 ## <a name="controlling-the-visibility-of-a-button"></a>控制按钮的可见性  
  本部分演练演示如何控制工具栏上按钮的可见性。 通过将上下文设置为中的一个或多个项目`<VisibilityConstraints>`部分 SolutionToolbar.vsct 文件的限制按钮出现只有当一个项目均为打开。  

@@ -1,19 +1,19 @@
 ---
 title: 在 Visual Studio 中为分布式负载测试创建测试设置 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - test settings, for distributed load tests
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 38bcbe49850929105199cef360956f29f22a8d0c
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 30b9cf45b60b108e51cc1cbe5defd5e8d8cac0e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>如何：为分布式负载测试创建测试设置
 
@@ -56,7 +56,7 @@ Visual Studio 的测试设置存储在一个文件中。 测试设置定义了�
     > [!NOTE]
     > Visual Studio Enterprise 所显示的测试设置列表派生自“解决方案项”文件夹中的测试设置文件列表。 例如，在使用“测试”菜单上的“选择活动的测试设置”选项时，将显示“解决方案项”文件夹中的测试设置文件。 这表明，如果将测试设置文件移动到解决方案层次结构中的其他位置，那么该文件不能再用作 Visual Studio 集成开发环境中的测试设置。
 
-5.  此时将显示“测试设置”对话框。 “常规”页处于选定状态。
+5.  此时会显示“测试设置”对话框。 “常规”页处于选中状态。
 
      你现在可以编辑并保存测试设置值。
 

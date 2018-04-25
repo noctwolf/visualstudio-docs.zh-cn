@@ -1,27 +1,22 @@
 ---
-title: "筛选报告视图 | Microsoft Docs"
-ms.custom: 
+title: 筛选报告视图 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e82450286d5da47a11217401ebbc17133530b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="filtering-report-views"></a>筛选报告视图
 可以将筛选器应用于分析数据文件，限制“性能报告”视图中显示的和导出到报告文件的分析数据。 可以将报告现定于两个时间戳值之间的数据，并可以将数据限定于特定的进程和线程。 可以将筛选器保存到文件，然后通过导入保存的筛选器，在另一分析数据文件中创建筛选器。  
@@ -45,7 +40,7 @@ ms.lasthandoff: 12/22/2017
     |And/Or|如果此子句和下一个子句必须都为 true 才能匹配结果，则选择“与”。 如果此子句或下一个子句为 true 即可匹配结果，则选择“或”。|  
     |**字段**|从显示的数据字段列表中选择要在筛选器子句中使用的报告字段。|  
     |**Operator**|选择用于指定子句中字段与值之间的关系的运算符。<br /><br /> =    等于<br /><br /> <>  不等于<br /><br /> <    小于<br /><br /> >    大于<br /><br /> <=  小于或等于<br /><br /> >=  大于或等于|  
-    |**“值”**|选择或输入要查找的值。 某些字段会列出字段的可用值。|  
+    |**值**|选择或输入要查找的值。 某些字段会列出字段的可用值。|  
   
 3.  
   

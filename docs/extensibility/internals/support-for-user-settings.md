@@ -33,14 +33,14 @@ VSPackage 可以定义一个或多个设置类别，是一组时用户选择持�
      如果单个 VSPackage 支持多个自定义设置点，每个自定义设置点实现的一个单独的类，并且每个注册的唯一实例<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>类。 因此，实现类设置可以支持多个设置类别。  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>自定义设置点注册表项的详细信息  
- 在以下位置的注册表条目中创建自定义设置点： HKLM\Software\Microsoft\VisualStudio\\*\<版本 >*\UserSettings\\`<CSPName>`，其中`<CSPName>`是 VSPackage 支持的自定义设置点的名称和*\<版本 >*是版本的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 8.0。  
+ 在以下位置的注册表条目中创建自定义设置点： HKLM\Software\Microsoft\VisualStudio\\*\<版本 >* \UserSettings\\`<CSPName>`，其中`<CSPName>`是 VSPackage 支持的自定义设置点的名称和*\<版本 >* 是版本的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 8.0。  
   
 > [!NOTE]
->  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路径\\*\<版本 >*可以替换备用根时[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 是初始化。 有关详细信息，请参阅[命令行开关](../../extensibility/command-line-switches-visual-studio-sdk.md)。  
+>  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路径\\*\<版本 >* 可以替换备用根时[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 是初始化。 有关详细信息，请参阅[命令行开关](../../extensibility/command-line-switches-visual-studio-sdk.md)。  
   
  注册表项的结构如下所示：  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<版本 >*\UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<版本 >* \UserSettings\  
   
  `<CSPName`> = '#12345' s  
   

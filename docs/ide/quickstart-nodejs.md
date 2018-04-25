@@ -3,26 +3,23 @@ title: 快速入门：使用 Visual Studio 创建第一个 Node.js 应用 | Micr
 description: 本快速入门中，将在 Visual Studio 中创建 Node.js 应用
 ms.custom: ''
 ms.date: 11/15/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8597d7ee61820afdd8fcfdbff9cdb5be8dfaa61c
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: c1c40d3d62abb855906b7b61a75c698d21622d1d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>快速入门：使用 Visual Studio 创建第一个 Node.js 应用
 在这个对 Visual Studio 集成开发环境 (IDE) 的 5-10 分钟简介中，可以创建简单的 Node.js Web 应用程序。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。  

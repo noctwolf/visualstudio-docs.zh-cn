@@ -1,13 +1,9 @@
 ---
-title: "如何：开始和结束性能数据收集 | Microsoft Docs"
-ms.custom: 
+title: 如何：开始和结束性能数据收集 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.summarypage
 helpviewer_keywords:
@@ -16,17 +12,16 @@ helpviewer_keywords:
 - performance sessions, ending
 - profiling tools, ending sessions
 ms.assetid: 9f6eb0d5-d9e9-4bec-b627-445065610bce
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae5470e92a3583ebc5cc18edb1c1662f155c41cd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ad9c3e469cc17f64d9d2e551a528d7b87f71732b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>如何：开始和结束性能数据收集
 启动分析之前，必须将要分析的目标二进制文件添加到性能会话中。 若要添加目标，请在“性能资源管理器”中右键单击“目标”，然后单击“添加目标二进制文件”。 在“添加目标二进制文件”对话框中，选择文件名，然后单击“打开”。 将添加一个新的二进制文件。  

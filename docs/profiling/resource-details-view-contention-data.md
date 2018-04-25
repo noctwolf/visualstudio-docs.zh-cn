@@ -1,29 +1,24 @@
 ---
-title: "“资源详细信息”视图 - 争用数据 | Microsoft Docs"
-ms.custom: 
+title: “资源详细信息”视图 - 争用数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcedetails
 helpviewer_keywords:
 - Resource Details view
 ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a3deacd563759c2c6185ed8d2a57a2c0b00ce63
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ac06fa18ee9459d8dc43bd0c536b68f9d027c97d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resource-details-view---contention-data"></a>“资源详细信息”视图 - 争用数据
 “资源详细信息”视图显示针对所选资源的争用所导致的阻塞事件的时间线关系图。 如果由于另一个线程已锁定对资源的访问，因此线程被迫挂起执行，则会发生阻塞事件。  

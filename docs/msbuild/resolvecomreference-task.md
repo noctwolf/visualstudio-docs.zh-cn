@@ -2,11 +2,8 @@
 title: ResolveComReference 任务 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, ResolveCOMReference task
 - ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
-caps.latest.revision: 26
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07381c84ec7213fe17aabb1db91cc1ab3be6188d
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: ac8bf991ca4bec8befde5a11673dcb056f5e50f4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 任务
 获取一个或多个类型库名称或 .tlb 文件的列表，将这些类型库解析为磁盘上的位置。  
@@ -82,6 +78,6 @@ ms.lasthandoff: 04/10/2018
 ## <a name="remarks"></a>备注  
  除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Utilities.Task> 类继承参数。 有关这些其他参数的列表及其说明，请参阅[任务基类](../msbuild/task-base-class.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

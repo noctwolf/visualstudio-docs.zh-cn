@@ -1,25 +1,20 @@
 ---
-title: "Visual Studio 中的数据科学和分析应用程序工作负载 | Microsoft Docs"
-description: "Visual Studio 中的数据科学和分析应用程序工作负载汇集了 Python、R、F# 及其各自的运行时分发版本，包括 Anaconda。"
-ms.custom: 
+title: 数据科学和分析应用程序工作负载
+description: Visual Studio 中的数据科学和分析应用程序工作负载汇集了 Python、R、F# 及其各自的运行时分发版本，包括 Anaconda。
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-- devlang-python
-ms.tgt_pltfrm: 
-ms.topic: landing-page
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs - vs-python
+ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 3c84e2f3f79d49596ccd24f9f99da06eecc04351
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dc6d1548a95dd60f2dc05dc1a04953525c4b3b4a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>数据科学和分析应用程序工作负载
 
@@ -45,7 +40,7 @@ R 和 Python 是用于数据科学的两大脚本语言。 这两种语言易于
   - Python 语言支持
   - [Anaconda3 64 位](https://www.continuum.io)（Python 分发版本，包含大量数据科学库和一个 Python 解释器）
   - Python Web 支持
-  - - Cookiecutter 模板支持
+  - Cookiecutter 模板支持
 - R:
   - R 语言支持
   - R 开发工具运行时支持

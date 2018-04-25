@@ -1,29 +1,24 @@
 ---
-title: "基于可见时间范围的报表 | Microsoft Docs"
-ms.custom: 
+title: 基于可见时间范围的报表 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
 helpviewer_keywords:
 - Concurrency Visualizer, Report Based on Visible Time Range
 ms.assetid: ef4f6259-a110-43b6-a325-364154e1ba00
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea4f4593f40ae08cd865d65550f6316baaee618
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76c7217b9b4159a368575d5acef92b03775478b4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="report-based-on-visible-time-range"></a>基于可见时间范围的报表
 “分析”视图显示基于当前可见的时间范围和通道的报表。 若要查看不同数据子集的详细信息，请单击图例中的相应项。  

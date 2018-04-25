@@ -1,13 +1,10 @@
 ---
-title: "“选项”对话框 ->“环境”->“任务列表” | Microsoft Docs"
-ms.custom: 
+title: “选项”对话框 ->“环境”->“任务列表” | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
 - VS.ToolsOptionsPag.Environment.Task_List
@@ -24,17 +21,16 @@ helpviewer_keywords:
 - tokens, and the Task List
 - Task List, comment tasks
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 475c228dc7031dbb7cb98d9f325fcce89f31223b
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 31aa18a219d49f3f18e8b98fbe010141cf5e69c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="task-list-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“任务列表”
 该选项页允许添加、删除和更改生成“任务列表”提醒的注释标记。 要显示这些设置，请从“工具”菜单选择“选项”，展开“环境”文件夹，然后选择“任务列表”。  

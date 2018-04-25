@@ -1,12 +1,10 @@
 ---
-title: "主程序集和已本地化的附属程序集的版本号 | Microsoft Docs"
-ms.custom: 
+title: 主程序集和已本地化的附属程序集的版本号 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - satellite assemblies, version numbers
 - SatelliteContractVersionAttribute
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - assemblies [Visual Studio], version numbers
 - versioning, assemblies
 ms.assetid: 5489aea1-57b4-4561-9bb4-24d490269602
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 35dfc24f22d223fcd6f1db225342bb406e73c3ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 361a2ff0d35c71250acca59788c199fbe69f57ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>用于主程序集和已本地化的附属程序集的版本号
 <xref:System.Resources.SatelliteContractVersionAttribute> 类为通过资源管理器使用本地化资源的主程序集提供版本控制支持。 通过将 <xref:System.Resources.SatelliteContractVersionAttribute> 应用于应用程序的主程序集，可在不更新其附属程序集的情况下，更新和重新部署该程序集。 例如，可以将 <xref:System.Resources.SatelliteContractVersionAttribute> 类与不会引入新资源的服务包配合使用，而无需重新生成和重新部署附属程序集。 若要使本地化资源可用，主程序集的附属协定版本必须与附属程序集的 <xref:System.Reflection.AssemblyVersionAttribute> 类匹配。 必须在 <xref:System.Resources.SatelliteContractVersionAttribute> 中指定确切的版本号；不允许使用通配符，如“*”。 有关详细信息，请参阅 [检索资源](/dotnet/framework/resources/retrieving-resources-in-desktop-apps)。  

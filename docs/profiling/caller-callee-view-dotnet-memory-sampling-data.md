@@ -1,27 +1,22 @@
 ---
-title: "“调用方 - 被调用方”视图 - .NET 内存采样数据 | Microsoft Docs"
-ms.custom: 
+title: “调用方 - 被调用方”视图 - .NET 内存采样数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 275ec14b1b6a0d43d2c8fdb88bbf1056db86d097
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c5a80233a6c1aaed56770e0ec2bb6733a800ce06
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>“调用方/被调用方”视图 - .NET 内存采样数据
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的 .NET 内存分析数据。 “调用方/被调用方”视图包含三个网格。  

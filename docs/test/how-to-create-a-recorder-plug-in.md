@@ -1,19 +1,19 @@
 ---
 title: 在 Visual Studio 中创建适用于 Web 性能测试的记录器插件 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b61da58ca621f04628697382e83c209187016f5d
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 145fc290360b8f8cac55a952b5c24a367ef847ad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>如何：创建记录器插件
 
@@ -107,7 +107,7 @@ ms.lasthandoff: 03/19/2018
     > [!WARNING]
     > 在运行使用插件的 Web 性能测试或负载测试时，可能会出现与下类似的错误：
     >
-    > **请求失败：\<插件> 事件中的异常：无法加载文件或程序集 '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken = null' 或其依赖项之一。系统找不到指定的文件。**
+    > **请求失败：\<插件> 事件中的异常：无法加载文件或程序集 '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其依赖项之一。系统找不到指定的文件。**
     >
     > 如果对任何插件进行代码更改并创建新 DLL 版本 (Version=0.0.0.0)，则会引发这种情况，但插件仍会引用原来的插件版本。 若要更正此问题，请执行以下步骤：
     >

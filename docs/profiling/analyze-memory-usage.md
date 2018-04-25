@@ -1,22 +1,19 @@
 ---
-title: "分析 Visual Studio 中的内存使用率 | Microsoft Docs"
-ms.custom: 
+title: 分析 Visual Studio 中的内存使用率 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
-caps.latest.revision: "13"
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: aac1c901f98d63b8cf77b41a165548cccede4f21
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f29251a7b8f5e38e5b74a6aabd17ae0ccfec7651
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analyze-memory-usage"></a>分析内存使用量
 使用集成了调试器的内存使用率诊断工具，查找内存泄漏和低效内存使用的情况。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照  。 可以收集 .NET、本机或混合模式（.NET 和本机）应用的快照。  

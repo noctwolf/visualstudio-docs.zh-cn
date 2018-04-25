@@ -2,28 +2,24 @@
 title: 在 Visual Basic 中配置警告 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 265d86365c9084dac9d75a04df1e1ea243b3b585
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中配置警告
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编译器提供了可能导致运行时错误的代码的一组警告。 可以使用这些信息编写 bug 较少的更干净、更快速和更好的代码。 例如，如果用户尝试调用未赋值的对象变量的成员，从未设置返回值的函数返回或者执行有逻辑错误的 `Try` 块来捕获异常，该编译器都将生成警告。  

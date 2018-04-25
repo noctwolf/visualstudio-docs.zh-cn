@@ -68,7 +68,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |名称|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
-|(默认)|REG_SZ|文本|默认值可以用于文档的语言的名称。 此键的名称是在中有相应条目的表达式计算器的 GUID  *\<VS Reg 根 >*\AD7Metrics\Expression 计算器。|  
+|(默认)|REG_SZ|文本|默认值可以用于文档的语言的名称。 此键的名称是在中有相应条目的表达式计算器的 GUID  *\<VS Reg 根 >* \AD7Metrics\Expression 计算器。|  
   
 ### <a name="example"></a>示例  
   
@@ -159,7 +159,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-logical-view-options"></a>逻辑视图选项的注册表项  
- *VS Reg 根*\Editors\\*编辑器 GUI >*\LogicalViews 键可包含以下值。  
+ *VS Reg 根*\Editors\\*编辑器 GUI >* \LogicalViews 键可包含以下值。  
   
 |名称|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  

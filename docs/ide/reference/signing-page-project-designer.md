@@ -1,13 +1,10 @@
 ---
-title: "“项目设计器”->“签名”页 | Microsoft Docs"
-ms.custom: 
+title: “项目设计器”->“签名”页 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.AddNewStrongNameKey
 - ResolveKeySource.KeyFileForSignAssemblyNotImported
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fe343002de3f89431927c95f36a0c092b36c2c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d5af28d3a9f40f7ee74b852fa7bd3e14dda8b3ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="signing-page-project-designer"></a>“项目设计器”->“签名”页
 使用“项目设计器”的“签名”页对应用程序和部署清单及程序集进行签名（强名称签名）。  

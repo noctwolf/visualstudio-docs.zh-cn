@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 37079cfaa1204cd8ce7a77e1e2f5aa91ea844ea5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/19/2018
+---
 1. 启动 Visual Studio，然后选择“文件”>“新建”>“项目”。
 
 1. 在“新建项目”对话框中，搜索“Python”，选择“从现有的 Python 代码”模板，为项目提供名称和位置，然后选择“确定”。

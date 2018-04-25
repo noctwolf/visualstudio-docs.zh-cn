@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中的 Intellitrace 数据 | Microsoft Docs
 ms.date: 10/13/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, configuring test settings
 - Diagnostic Data Adapter, InteliTrace
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04c4c1cd4429228ffa90e06ac9675901602c3cd0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: e1f36aefaad2e43d8875c9c0164ac938b004999d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>如何：收集 IntelliTrace 数据以帮助调试难题
 
@@ -71,7 +71,7 @@ IntelliTrace 数据存储在扩展名为 .iTrace 的文件中。 运行测试时
 
 5.  选择“常规”选项卡。选择“仅 IntelliTrace 事件”以记录测试时对性能影响最小的重要诊断事件。
 
-     **-**或-
+     **-** 或-
 
      选择“IntelliTrace 事件和调用信息”以记录诊断事件以及用于显示调用信息的方法级别跟踪。 在运行测试时，此跟踪级别可能对性能有影响。
 

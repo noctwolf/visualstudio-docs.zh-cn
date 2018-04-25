@@ -40,7 +40,7 @@ ms.lasthandoff: 04/16/2018
  有关 SharePoint 基础知识的信息，请参阅[SharePoint Foundation 构建基块](http://go.microsoft.com/fwlink/?LinkId=179404)。 高级的用户可以创建自定义项目和项目项模板。 有关详细信息，请参阅[扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)。  
   
 ##  <a name="project-templates"></a>项目模板  
- 下面是 SharePoint 项目模板列表的信息。 若要查看 Visual Studio 中的 SharePoint 项目模板在**新项目**对话框框中，展开**SharePoint**下**Visual C#**或**Visual Basic**，然后选择**2010年**。  
+ 下面是 SharePoint 项目模板列表的信息。 若要查看 Visual Studio 中的 SharePoint 项目模板在**新项目**对话框框中，展开**SharePoint**下**Visual C#** 或**Visual Basic**，然后选择**2010年**。  
   
 ### <a name="sharepoint-2010-project"></a>SharePoint 2010 项目  
  内容*SharePoint 2010 项目*都包括在每个 SharePoint 项目模板。 SharePoint 2010 项目包含：  
@@ -72,7 +72,7 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="project-item-templates"></a>项目项模板  
  以下是 SharePoint 项目项模板的列表。 项目项模板将文件添加到 SharePoint 解决方案以支持 SharePoint 功能，如网站栏、 列表和内容类型。 例如，将站点列添加到你的解决方案添加站点列包含的项目，Elements.xml 定义文件。 添加可视 web 部件将可视 web 部件项目添加到包含 Elements.xml 文件、 用户控件项和可视 web 部件项目的解决方案。  
   
- 若要查看在 SharePoint 项目项模板，**解决方案资源管理器**，打开 SharePoint 项目的快捷菜单，然后选择**添加**，**新项**。 展开**SharePoint**下**Visual C#**或**Visual Basic**，然后选择**2010年**。  
+ 若要查看在 SharePoint 项目项模板，**解决方案资源管理器**，打开 SharePoint 项目的快捷菜单，然后选择**添加**，**新项**。 展开**SharePoint**下**Visual C#** 或**Visual Basic**，然后选择**2010年**。  
   
 ### <a name="application-page-farm-solution-only"></a>应用程序页上 （仅场解决方案）  
  **（仅场解决方案） 应用程序页**项使你能够设计[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]网页上的 SharePoint 站点。 可以仅在场解决方案中使用应用程序页。 你可以仅向场解决方案中添加此项目项。 有关详细信息，请参阅[如何： 创建应用程序页](../sharepoint/how-to-create-an-application-page.md)和[应用程序 _layouts 页类型](http://go.microsoft.com/fwlink/?LinkId=179434)。  

@@ -1,12 +1,10 @@
 ---
-title: "如何：可视化集合关联（类设计器） | Microsoft Docs"
-ms.custom: 
+title: 如何：可视化集合关联（类设计器） | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
 - vs.classdesigner.ShowAssociationException
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - collections, collection associations
 - Class Designer [Visual Studio], collection associations
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 234c70896b28f27815b7563b814fb6b4bd933ebd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ebf7f8c7971b78247e87def172eca169b38b6b80
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>如何：可视化集合关联（类设计器）
 属于其他类型的集合的属性和字段可在类图上作为集合关联显示。 普通关联可将字段或属性显示为行，此行将拥有的类链接到字段的类型，与此不同，集合关联作为行显示，此行将拥有的类链接到已收集的类型。  

@@ -1,23 +1,20 @@
 ---
-title: "从命令行创建可移植的分析数据文件 | Microsoft Docs"
-ms.custom: 
+title: 从命令行创建可移植的分析数据文件 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 95302666d8bd5c5738f93a2fb0a8ec698c5bb7d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dd329df74c88f5edadef27444bf3b3c89ee1b30d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>从命令行创建可移植的分析数据文件
 若要更轻松地共享分析数据，可以使用 [VSPerfReport](../profiling/vsperfreport.md) 命令行工具将用于分析运行的符号嵌入到 .vsp 文件中。  
@@ -43,6 +40,6 @@ ms.lasthandoff: 12/22/2017
   
 -   在命令提示符窗口中，键入以下命令：  
   
-     \<Path>**VSPerfReport \<**VSP File> **/SummaryFile** [**/Output:**\<File Name>]  
+     \<Path>**VSPerfReport \<** VSP File> **/SummaryFile** [**/Output:**\<File Name>]  
   
      默认采用 .vsp 文件的基名称对 .vsps 文件进行命名。 可以通过使用“输出”选项指定替代名称。

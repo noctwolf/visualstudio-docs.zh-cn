@@ -1,23 +1,20 @@
 ---
-title: "如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序 | Microsoft Docs"
-ms.custom: 
+title: 如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 0c827df346b6521303d5d42c3423b513ed497086
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: fb14e5dfd8f03505dfa331cbe90040015f0597f3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序
 使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具检测方法，可以从动态编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序收集详细计时数据、.NET 内存分配数据和 .NET 对象生存期数据。  
@@ -142,7 +139,7 @@ ms.lasthandoff: 12/22/2017
     |特性名|特性值|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**值**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
+    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
 4.  再添加一个 **add** 元素作为 **appSettings** 元素的子元素。  
   
@@ -151,7 +148,7 @@ ms.lasthandoff: 12/22/2017
     |特性名|特性值|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**值**|`PerformanceToolsFolder`|  
+    |**value**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder` 是探查器可执行文件的路径。 如果 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 安装在默认位置，则该值将为 **C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**  
   
@@ -223,5 +220,5 @@ ms.lasthandoff: 12/22/2017
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [如何：检测动态编译的 ASP.NET 应用程序并收集详细计时数据](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [如何：检测动态编译的 ASP.NET 应用程序并收集内存数据](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+ [如何：检测动态编译的 ASP.NET 应用程序并收集详细计时数据](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler.md)   
+ [如何：检测动态编译的 ASP.NET 应用程序并收集内存数据](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

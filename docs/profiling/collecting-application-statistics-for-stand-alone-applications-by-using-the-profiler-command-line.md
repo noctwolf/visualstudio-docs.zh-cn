@@ -1,26 +1,23 @@
 ---
-title: "使用探查器命令行收集独立应用程序的应用程序统计信息 | Microsoft Docs"
-ms.custom: 
+title: 使用探查器命令行收集独立应用程序的应用程序统计信息 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
 - profilng tools,sampling method
 ms.assetid: be2dbdd0-fc88-45f9-a1d5-bcb4f64e17ad
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ce2cc34174131d1a8799d66381da0595d7ac4507
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d1d102629c2a99c5ddf2e79809e58a76c96f1f79
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用探查器命令行收集独立应用程序的统计信息
 本部分介绍从命令行使用采样方法收集客户端（独立）应用程序的性能统计信息的步骤和选项。  

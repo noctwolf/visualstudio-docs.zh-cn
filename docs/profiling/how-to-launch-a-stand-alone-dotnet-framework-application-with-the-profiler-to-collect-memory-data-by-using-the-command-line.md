@@ -1,37 +1,20 @@
 ---
-title: "如何：使用命令行通过探查器启动独立 .NET Framework 应用程序以收集内存数据 | Microsoft Docs"
-ms.custom: 
+title: 如何：使用命令行通过探查器启动独立 .NET Framework 应用程序以收集内存数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
-caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3de39533453db343e8020994db140399214ce8b8
-
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 456e8fff1b4e484648c1e30a9b588a4f5923fc91
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令行通过探查器启动独立 .NET Framework 应用程序以收集内存数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动 .NET Framework 独立（客户端）应用程序以及收集内存数据。  
@@ -66,7 +49,7 @@ ms.openlocfilehash: 3de39533453db343e8020994db140399214ce8b8
   
      可以将以下任意选项与 **/start:sample** 选项一起使用。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定要在分析期间收集的 Windows 性能计数器。|  
     |[/automark](../profiling/automark.md) **:** `Interval`|仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500 毫秒。|  
@@ -84,7 +67,7 @@ ms.openlocfilehash: 3de39533453db343e8020994db140399214ce8b8
   
      可以将以下任意选项与 **/launch** 选项一起使用。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/args](../profiling/args.md) **:** `Arguments`|指定一个字符串，其中包含要传递给目标应用程序的命令行参数。|  
     |[/console](../profiling/console.md)|在另一个窗口中启动目标命令行应用程序。|  
@@ -115,7 +98,7 @@ ms.openlocfilehash: 3de39533453db343e8020994db140399214ce8b8
   
     -   关闭目标应用程序。  
   
-         - 或 -  
+         或  
   
     -   键入 **VSPerfCmd /detach**  
   
@@ -123,11 +106,6 @@ ms.openlocfilehash: 3de39533453db343e8020994db140399214ce8b8
   
      **VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

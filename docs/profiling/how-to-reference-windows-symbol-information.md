@@ -1,28 +1,25 @@
 ---
-title: "如何：引用 Windows 符号信息 | Microsoft Docs"
-ms.custom: 
+title: 如何：引用 Windows 符号信息 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, symbol servers
 - servers, symbol servers
 - profiling tools, symbol servers
 - symbol servers
 ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
-caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6578a6fe623afe8ceb20f9db32e7fa005f06618c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 247a152cd04a262115cbde78a7a06ad2e95f250c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>如何：引用 Windows 符号信息
 Visual Studio 分析工具使用符号 (.pdb) 文件来解析符号名称，例如，程序二进制文件中的函数名称。 可以按照以下步骤为本地计算机上的 Windows 版本自动下载和更新正确的 .pdb 文件。  

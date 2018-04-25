@@ -1,30 +1,25 @@
 ---
-title: "如何：序列化符号信息 | Microsoft Docs"
-ms.custom: 
+title: 如何：序列化符号信息 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Performance.General
 helpviewer_keywords:
 - profiling tools, serializing symbol information
 - performance tools, serializing symbol information
 ms.assetid: 9e0da706-6325-4073-83d1-aeab3b7c137a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4941d3b5225a1d9c6b22eda3c8f79ef009f2b169
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 69c59395eb74f2c79c6a7d7e1b9c56f420e9705a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-serialize-symbol-information"></a>如何：序列化符号信息
 可以序列化分析应用程序所需的符号。 符号序列化的作用是将符号添加到 .vsp 文件中。 通过向 .vsp 文件添加符号信息，其他人可以在没有原始符号访问权限的情况下分析性能报告。 如果未序列化符号，则需要有受检测的原始 .exe 和 .pdb 文件才能分析 .vsp 文件。  

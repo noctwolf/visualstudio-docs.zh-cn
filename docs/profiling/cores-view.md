@@ -1,29 +1,24 @@
 ---
-title: "“核心”视图 | Microsoft Docs"
-ms.custom: 
+title: “核心”视图 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cores
 helpviewer_keywords:
 - Concurrency Visualizer, Cores View
 ms.assetid: e47af672-9785-4899-bd45-4d9dda3c396f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1867f2b0ba84590068b1ae54b0a7aa1d48475247
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: aeac6a7322cb5f08751512f68797560d83ac4fd8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cores-view"></a>内核视图
 核心视图显示线程执行如何映射到逻辑处理器核心（选择“分析” > “并发可视化工具”来启动并发可视化工具）。 如果要编写服务器应用程序，则此视图可以帮助您通过使用线程关联或线程池管理来优化缓存性能。 如果在使用线程关联之后实际上加剧了跨核迁移问题，则此视图还可帮助您以直观方式检查相关情况。 内核视图包括关系图和图例两个部分。  

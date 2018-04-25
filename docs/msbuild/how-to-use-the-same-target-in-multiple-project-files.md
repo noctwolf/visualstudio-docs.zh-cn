@@ -1,27 +1,23 @@
 ---
-title: "如何：在多个项目文件中使用同一目标 | Microsoft Docs"
-ms.custom: 
+title: 如何：在多个项目文件中使用同一目标 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, importing
 - MSBuild, using the same target in multiple project files
 ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be56829881865887eb07810d2545ee1ed965ab3a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 41c1ed02a32136d6c80e24f0644e0fab660e8ed0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：在多个项目文件中使用同一目标
 如果你创建了若干个 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件后，或许发现自己可能需要在不同项目文件中使用相同的任务和目标。 无需将这些任务或目标的完整说明包含在每个项目文件中，相反，你可以将目标保存在单独的项目文件中，然后将该项目导入任何需要使用该目标的其他项目。  

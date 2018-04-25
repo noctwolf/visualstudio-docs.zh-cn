@@ -1,29 +1,25 @@
 ---
-title: "类设计器中的 Visual C++ 类 | Microsoft Docs"
-ms.custom: 
+title: 类设计器中的 Visual C++ 类 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
 helpviewer_keywords:
 - Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 813e52dec03975c6573ed5eb75c7b5c3ed9bb9fd
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 3a71c74569ee17728c5d1423d8aeb19d1d9af554
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-c-classes-in-class-designer"></a>类设计器中的 Visual C++ 类
 类设计器支持 C++ 类，直观呈现本机 C++ 类的方式与直观呈现 Visual Basic 和 C# 类形状时大致相同，不同之处在于 C++ 类可以有多个继承关系。 可以展开类形状来显示类中的更多字段和方法，也可以折叠类形状来节省空间。  
@@ -129,7 +125,7 @@ typedef struct
 ## <a name="template-classes"></a>模板类  
 类设计器支持直观呈现模板类。 支持嵌套声明。 下表列出了一些典型声明。  
   
-|码位元素|类设计器视图|  
+|Code 元素|类设计器视图|  
 |------------------|-------------------------|  
 |`template <class T>`<br /><br /> `class A {};`|`A<T>`<br /><br /> 模板类|  
 |`template <class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> 模板类|  
@@ -137,7 +133,7 @@ typedef struct
 |`template <class T, template <class K> class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> 模板类|  
 下表列出了一些分部专用化示例。  
   
-|码位元素|类设计器视图|  
+|代码元素|类设计器视图|  
 |------------------|-------------------------|  
 |`template<class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> 模板类|  
 |`template<class T>`<br /><br /> `class A<T, T> {};`|`A<T, T>`<br /><br /> 模板类|  
@@ -146,13 +142,13 @@ typedef struct
   
 下表列出了一些分部专用化继承示例。  
   
-|码位元素|类设计器视图|  
+|代码元素|类设计器视图|  
 |------------------|-------------------------|  
 |`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> 模板类<br /><br /> `B`<br /><br /> 类<br /><br /> （指向类 A）<br /><br /> `C`<br /><br /> 类<br /><br /> （指向类 A）|  
   
 下表列出了一些分部专用化模板函数示例。  
   
-|码位元素|类设计器视图|  
+|代码元素|类设计器视图|  
 |------------------|-------------------------|  
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U>（+ 1 重载）|  
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> 模板类<br /><br /> `B<T2>`<br /><br /> 模板类<br /><br /> （B 包含在类 A 中的“嵌套类型”下）|  
@@ -160,13 +156,13 @@ typedef struct
   
 下表列出了一些模板继承示例。  
   
-|码位元素|类设计器视图|  
+|Code 元素|类设计器视图|  
 |------------------|-------------------------|  
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> 类<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> 类<br /><br /> （B 包含在类 C 中的“嵌套类型”下）<br /><br /> `C<T>`<br /><br /> 模板类|  
   
 下表列出了一些规范专用化类连接示例。  
   
-|码位元素|类设计器视图|  
+|代码元素|类设计器视图|  
 |------------------|-------------------------|  
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> 类<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> 类<br /><br /> `C<T>`<br /><br /> 模板类<br /><br /> `D`<br /><br /> 类<br /><br /> ->C\<float>|  
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|  

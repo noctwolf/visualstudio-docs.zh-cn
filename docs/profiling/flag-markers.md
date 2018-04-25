@@ -1,27 +1,22 @@
 ---
-title: "标志标记 | Microsoft Docs"
-ms.custom: 
+title: 标志标记 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.flag
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79105e43cba14c12cf0f82edd05b57286c012ee5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76024adcc36a0925345025ac628e79c6e8b1b7bc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="flag-markers"></a>标志标记
 标志标记表示某一瞬间在应用中发生的事。 标志可以表示许多应用程序事件。 例如，标志可以显示特定工作项的计划时间或引发异常的时间。 诸如任务并行库等运行时也可以生成标志。  

@@ -1,26 +1,23 @@
 ---
-title: "演练：使用探查器 API | Microsoft Docs"
-ms.custom: 
+title: 演练：使用探查器 API | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
 ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a592082cac8cf493a742c9ce6f7de3bb0c706aad
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9bebc312858e16688598ba289e4c53d93010122b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-using-profiler-apis"></a>演练：使用探查器 API
 本演练使用 C# 应用程序演示如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具 API。 用户将使用探查器 API 限制在检测分析期间收集的数据量。  
@@ -35,7 +32,7 @@ ms.lasthandoff: 12/22/2017
   
  对于本机代码，Visual Studio 探查器 API 位于 VSPerf.dll 中。 头文件 VSPerf.h 和导入库 VSPerf.lib 位于 Microsoft Visual Studio 9\Team Tools\Performance Tools 目录中。  
   
- 对于托管代码，探查器 API 位于 Microsoft.VisualStudio.Profiler.dll 中。 此 DLL 位于 Microsoft Visual Studio 9\Team Tools\Performance Tools 目录中。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.Profiler>。  
+ 对于托管代码，探查器 API 位于 Microsoft.VisualStudio.Profiler.dll 中。 此 DLL 位于 Microsoft Visual Studio 9\Team Tools\Performance Tools 目录中。 有关更多信息，请参见<xref:Microsoft.VisualStudio.Profiler>。  
   
 ## <a name="prerequisites"></a>系统必备  
  本演练假定用户选择的开发环境配置为支持调试和采样。 以下主题概述了这些系统必备：  

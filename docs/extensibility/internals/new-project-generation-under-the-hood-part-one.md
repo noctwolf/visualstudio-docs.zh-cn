@@ -62,7 +62,7 @@ devenv /installvstemplates
 ```  
   
 ### <a name="project-types"></a>项目类型  
- 位置和名称**项目类型**根节点，如**Visual C#**和**其他语言**，由系统注册表项。 组织的子节点，如**数据库**和**智能设备**，镜像包含相应的.vstemplate 文件的文件夹的层次结构。 让我们看一下根节点第一次。  
+ 位置和名称**项目类型**根节点，如**Visual C#** 和**其他语言**，由系统注册表项。 组织的子节点，如**数据库**和**智能设备**，镜像包含相应的.vstemplate 文件的文件夹的层次结构。 让我们看一下根节点第一次。  
   
 #### <a name="project-type-root-nodes"></a>项目类型的根节点  
  当[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是初始化，遍历系统注册表项 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs 来生成，并将命名的根节点的子项**项目类型**树。 此信息缓存供以后使用。 看一看 TemplateDirs\\{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1 键。 每个条目为 VSPackage 的 GUID。 子项的名称 （/ 1） 将被忽略，但它的存在指示这是**项目类型**根节点。 根节点可能有多个控制在其外观的子项**项目类型**树。 让我们看一下其中一些。  
@@ -131,7 +131,7 @@ devenv /installvstemplates
 <ProjectType>CSharp</ProjectType>  
 ```  
   
- \<ProjectType > 标记中，并且不在 ProjectTemplates 文件夹中，子文件夹确定中的应用程序的根节点**项目类型**树。 在示例中，Windows CE 应用程序将出现在下**Visual C#**根节点下，即使你是将 WindowsCE 文件夹移到 VisualBasic 文件夹，Windows CE 应用程序仍将出现在**Visual C#**根节点。  
+ \<ProjectType > 标记中，并且不在 ProjectTemplates 文件夹中，子文件夹确定中的应用程序的根节点**项目类型**树。 在示例中，Windows CE 应用程序将出现在下**Visual C#** 根节点下，即使你是将 WindowsCE 文件夹移到 VisualBasic 文件夹，Windows CE 应用程序仍将出现在**Visual C#** 根节点。  
   
 ##### <a name="localizing-the-node-name"></a>本地化的节点名称  
  当 Visual Studio 遍历 ProjectTemplates 文件夹时，它将检查它找到的任何.vstdir 文件。 .Vstdir 文件是一个 XML 文件，用于控制中的项目类型的外观**新项目**对话框。 在.vstdir 文件中，使用\<LocalizedName > 标记添加到名称**项目类型**节点。  
@@ -142,7 +142,7 @@ devenv /installvstemplates
 <LocalizedName Package="{462b036f-7349-4835-9e21-bec60e989b9c}" ID="4598"/>  
 ```  
   
- 这将确定在这种情况下，命名的根节点，则本地化字符串的附属 DLL 和资源 ID**数据库**。 本地化的名称可以包含特殊字符，如将不可用的文件夹名称**.NET**。  
+ 这将确定在这种情况下，命名的根节点，则本地化字符串的附属 DLL 和资源 ID**数据库**。 本地化的名称可以包含特殊字符，如将不可用的文件夹名称 **.NET**。  
   
  如果没有\<LocalizedName > 标记，该文件夹本身，命名该项目类型**SmartPhone2003**。  
   
@@ -208,7 +208,7 @@ devenv /installvstemplates
   
  打开 Visual Studio。  
   
-1.  打开**新项目**对话框框中，展开**Visual C#**项目节点。  
+1.  打开**新项目**对话框框中，展开**Visual C#** 项目节点。  
   
  ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   

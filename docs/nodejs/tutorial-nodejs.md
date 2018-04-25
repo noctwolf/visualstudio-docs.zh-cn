@@ -3,28 +3,24 @@ title: 创建 Node.js 和 Express 应用 - Visual Studio | Microsoft Docs
 description: 本教程会在 Visual Studio 中创建 Node.js 和 Express 应用
 ms.custom: ''
 ms.date: 03/13/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7d0774753178c9cb0dbcae1800da6b00ab02a0e
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 47bf06fabba9197029831382b6ad6e9068e7829c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 Express 应用
-本教程介绍如果使用 Node.js 和 Express 进行 Visual Studio 开发，教程会创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。  
+本教程介绍如果使用 Node.js 和 Express 进行 Visual Studio 开发，教程会创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
 
 在本教程中，你将了解：
 > [!div class="checklist"]
@@ -51,13 +47,13 @@ ms.lasthandoff: 04/03/2018
 ## <a name="create-a-project"></a>创建项目
 首先，创建 Node.js Web 应用程序项目。
 
-1. 打开 Visual Studio 2017。  
+1. 打开 Visual Studio 2017。
 
-1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。  
+1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。
 
-1. 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“基本 Azure Node.js Express 4 应用程序”，然后选择“确定”。   
+1. 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“基本 Azure Node.js Express 4 应用程序”，然后选择“确定”。
 
-     如果未看到“基本 Azure Node.js Express 4 应用程序”项目模板，须先安装 Node.js 开发工作负载。 
+     如果未看到“基本 Azure Node.js Express 4 应用程序”项目模板，须先安装 Node.js 开发工作负载。
 
     Visual Studio 创建新的解决方案并打开项目。 在编辑器（左窗格）中打开 App.js 项目文件。
 
@@ -130,11 +126,11 @@ ms.lasthandoff: 04/03/2018
 
 1. 在 `data` 字符串后键入 `: get`，IntelliSense 将显示 `getData` 函数。 选择 `getData`。
 
-    ![使用 IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
+    ![使用 IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 
 1. 删除 `"data"` 前的逗号 (`,`)，将看到针对该表达式的绿色语法突出显示。 将鼠标悬停在语法突出显示上。
 
-    ![查看语法错误](../nodejs/media/tutorial-nodejs-syntax-checking.png) 
+    ![查看语法错误](../nodejs/media/tutorial-nodejs-syntax-checking.png)
 
     此消息的最后一行告诉你，JavaScript 解释器需要一个逗号 (`,`)。
 
@@ -152,15 +148,15 @@ ms.lasthandoff: 04/03/2018
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
-    断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在哪个位置挂起你的运行代码，以使你可以查看变量的值或内存的行为，或确定代码的分支是否运行。 
+    断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在哪个位置挂起你的运行代码，以使你可以查看变量的值或内存的行为，或确定代码的分支是否运行。
 
-    ![设置断点](../nodejs/media/tutorial-nodejs-set-breakpoint.png) 
+    ![设置断点](../nodejs/media/tutorial-nodejs-set-breakpoint.png)
 
 ## <a name="run-the-application"></a>运行此应用程序
 
 1. 在调试工具栏中选择调试目标。
 
-    ![选择调试目标](../nodejs/media/tutorial-nodejs-deploy-target.png) 
+    ![选择调试目标](../nodejs/media/tutorial-nodejs-deploy-target.png)
 
 1. 按 F5（“调试” > “启动调试”）来运行该应用程序。
 
@@ -178,15 +174,15 @@ ms.lasthandoff: 04/03/2018
 
 1. 单击这些按钮可显示不同的图像。
 
-    ![在浏览器中运行应用](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+    ![在浏览器中运行应用](../nodejs/media/tutorial-nodejs-running-in-browser.png)
 
-1. 关闭 Web 浏览器。  
+1. 关闭 Web 浏览器。
 
 ## <a name="optional-publish-to-azure-app-service"></a>（可选）发布到 Azure 应用服务
 
 1. 在解决方案资源管理器中，右键单击项目，选择“发布”。
 
-   ![发布到 Azure 应用服务](../nodejs/media/tutorial-nodejs-publish-to-azure.png)  
+   ![发布到 Azure 应用服务](../nodejs/media/tutorial-nodejs-publish-to-azure.png)
 
 1. 选择“Microsoft Azure 应用服务”。
 
@@ -198,11 +194,11 @@ ms.lasthandoff: 04/03/2018
 
     成功部署后，应用将在 Azure 应用服务中运行的浏览器中打开。 单击按钮可显示图像。
 
-   ![Azure 应用服务中运行的应用](../nodejs/media/tutorial-nodejs-running-in-azure.png)  
+   ![Azure 应用服务中运行的应用](../nodejs/media/tutorial-nodejs-running-in-azure.png)
 
 恭喜你完成本教程！
 
-## <a name="next-steps"></a>后续步骤 
+## <a name="next-steps"></a>后续步骤
 
 本教程介绍了如何使用 Express 创建和运行 Node.js 应用和使用调试程序命中断点。
 

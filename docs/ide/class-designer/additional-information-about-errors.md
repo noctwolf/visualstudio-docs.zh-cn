@@ -1,12 +1,10 @@
 ---
-title: "有关类设计器错误的附加信息 | Microsoft Docs"
-ms.custom: 
+title: 有关类设计器错误的附加信息 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CPlusPlusViewInDiagramNoTypeFound
 - vs.classdesigner.CPlusPlusNoTypeFound
@@ -28,16 +26,16 @@ helpviewer_keywords:
 - error messages, class diagrams
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 53b61b1fa49ffcbc047d47dd26586b45ae883c5f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8cd6223786db06506c1fa4ac9b6bd3118eb5e3d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="additional-information-about-class-designer-errors"></a>有关类设计器错误的附加信息
 类设计器不会跟踪源文件的位置，因此修改项目结构或移动项目中的源文件就可能导致类设计器无法继续对类型（尤其是 typedef 的源类型、基类或关联类型）进行跟踪。 可能会收到错误，如“类设计器无法显示此类型”。 如果收到错误，要将修改过的或被重新定位的源代码再次拖到类图中以重新显示。  

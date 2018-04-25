@@ -1,18 +1,19 @@
 ---
-title: "Visual Studio for Mac 相较于 Xamarin Studio 的优势 | Microsoft Docs"
+title: Visual Studio for Mac 相较于 Xamarin Studio 的优势
+description: ''
+ms.topic: overview
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
-ms.openlocfilehash: 08e693e92d6d07da21f8230f9c1de49f071c05e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: db4a328bceb79c1b99fdea95da89cc6cc7451523
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Visual Studio for Mac 相较于 Xamarin Studio 的优势 
- 
+
 在 Mac 上，Visual Studio for Mac 已经取代了 Xamarin Studio，成为功能完备的 IDE。 它提供的功能可用于开发 Web 应用和服务、跨平台移动和桌面应用及游戏。 此外，不论是要发布到 Azure，还是要创建 Azure Functions，它都可轻松实现与 Azure 的集成。 它能够满足你对现代 IDE 的所有期望，包括功能完备的源代码编辑器、功能强大的调试器、可自定义的工作区、Git 集成和丰富的扩展系统，都专为 Mac 本机设计。 
 
 其他功能包括： 

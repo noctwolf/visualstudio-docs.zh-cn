@@ -1,27 +1,22 @@
 ---
-title: "“模块”视图 - .NET 内存检测数据 | Microsoft Docs"
-ms.custom: 
+title: “模块”视图 - .NET 内存检测数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e67b1676495b6217a6134bc7e0f3f4cf74b1faf6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c04ecdc1de848a95ad9f5051cc9ec54da02a3625
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>“模块”视图 - .NET 内存检测数据
 使用检测方法收集的 .NET 内存分配数据的“模块”视图按分析运行期间执行的模块对内存和计时数据进行分组。 模块的各函数的分析数据在模块节点下列出。  

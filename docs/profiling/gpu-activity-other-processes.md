@@ -1,26 +1,23 @@
 ---
-title: "GPU 活动(其他进程) | Microsoft Docs"
-ms.custom: 
+title: GPU 活动(其他进程) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.gpuother
 - vs.cv.threads.timeline.gpuactivity
 ms.assetid: 8a68df65-eb63-452f-9285-fb4ffc92f2b2
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bd39910631ce67693e1e039307813a5ded13e326
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 586aeb9b2b6d674c14106a911872c967c272f3e6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="gpu-activity-other-processes"></a>GPU 活动(其他进程)
 并发可视化工具的“线程”视图中的“GPU 活动(其他进程)”段表示 GPU 代表系统上的其他进程处理请求的时间。 这些请求以直接内存访问 (DMA) 数据包的形式发送到 GPU。  段的长度代表 GPU 处理数据包的持续时间。  

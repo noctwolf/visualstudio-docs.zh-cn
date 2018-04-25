@@ -1,29 +1,24 @@
 ---
-title: "“资源争用”视图 - 争用数据 | Microsoft Docs"
-ms.custom: 
+title: “资源争用”视图 - 争用数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcecontention
 helpviewer_keywords:
 - Resource Contentions view
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5cb6b102025591a6ef00ca594657dca511f5b8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e33a27d5f2b14effc9d8a90e903b34822d81edfb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resource-contentions-view---contention-data"></a>“资源争用”视图 - 争用数据
 “资源争用”视图列出作为争用事件源的资源的争用数据。 如果由于另一个线程中的函数已获取对资源的独占访问权限，因此线程中的函数被迫等待获取对资源的访问权限，则会发生争用事件。 每个资源都是显示争用事件中产生的函数执行路径的调用树的根节点。  

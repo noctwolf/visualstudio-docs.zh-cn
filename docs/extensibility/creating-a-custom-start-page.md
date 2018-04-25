@@ -69,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-test-a-manually-created-custom-start-page"></a>若要测试手动创建自定义起始页  
   
-1.  将你的 XAML 文件，以及任何支持的文本文件或标记文件，为复制**%USERPROFILE%\My Documents\Visual Studio 2015 \startpages\\** 文件夹。  
+1.  将你的 XAML 文件，以及任何支持的文本文件或标记文件，为复制 **%USERPROFILE%\My Documents\Visual Studio 2015 \startpages\\** 文件夹。  
   
 2.  如果你的起始页引用的任何控件或未安装 Visual studio 的程序集中的类型，复制程序集，然后粘贴在 * Visual Studio 安装文件夹 ***\Common7\IDE\PrivateAssemblies\\** .  
   

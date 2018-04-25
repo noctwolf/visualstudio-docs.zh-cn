@@ -26,15 +26,15 @@ ms.lasthandoff: 04/16/2018
   
 -   **调试包：** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器提供了相同的用户界面，不论正在调试。  
   
--   **会话调试管理器 (SDM):**提供一致的编程接口，到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器对各种的调试引擎的管理。 由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+-   **会话调试管理器 (SDM):** 提供一致的编程接口，到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器对各种的调试引擎的管理。 由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
--   **过程调试管理器 (PDM):**管理，所有运行的实例为[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，可以是或正在调试的所有程序的列表。 由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+-   **过程调试管理器 (PDM):** 管理，所有运行的实例为[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，可以是或正在调试的所有程序的列表。 由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
--   **调试引擎 (DE):**负责监视正在调试的程序进行通信的 SDM 和 PDM，正在运行的程序的状态并提供对进行实时分析的表达式计算器和符号提供程序与之交互程序的内存和变量的状态。 由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（为它支持的语言） 和第三方供应商想要支持其自己的运行的时。  
+-   **调试引擎 (DE):** 负责监视正在调试的程序进行通信的 SDM 和 PDM，正在运行的程序的状态并提供对进行实时分析的表达式计算器和符号提供程序与之交互程序的内存和变量的状态。 由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（为它支持的语言） 和第三方供应商想要支持其自己的运行的时。  
   
--   **表达式计算器 (EE):**用于动态评估变量和表达式的用户提供的程序已停止的特定点时提供支持。 由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（为它支持的语言） 和第三方供应商想要支持他们自己的语言。  
+-   **表达式计算器 (EE):** 用于动态评估变量和表达式的用户提供的程序已停止的特定点时提供支持。 由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（为它支持的语言） 和第三方供应商想要支持他们自己的语言。  
   
--   **符号提供程序 (SP):**也称为符号处理程序，映射程序的调试符号到该程序的运行实例，以便可以提供有意义的信息 （如代码源级调试和表达式计算）。 由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（为公共语言运行时 [CLR] 符号和程序数据库 [PDB] 符号文件格式） 和由第三方供应商有其自己的存储调试信息的专有方法。  
+-   **符号提供程序 (SP):** 也称为符号处理程序，映射程序的调试符号到该程序的运行实例，以便可以提供有意义的信息 （如代码源级调试和表达式计算）。 由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（为公共语言运行时 [CLR] 符号和程序数据库 [PDB] 符号文件格式） 和由第三方供应商有其自己的存储调试信息的专有方法。  
   
  下图显示在 Visual Studio 调试器这些元素之间的关系。  
   

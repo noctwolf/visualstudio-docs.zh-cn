@@ -33,7 +33,6 @@
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Xamarin University 培训](vs-xamarin.md)
-#### [Microsoft E-Learning](vs-elearn.md)
 #### [MSDN Magazine 订阅](vs-msdn.md)
 ### 支持权益
 #### [Azure 顾问聊天](vs-azure-advisory-chat.md)

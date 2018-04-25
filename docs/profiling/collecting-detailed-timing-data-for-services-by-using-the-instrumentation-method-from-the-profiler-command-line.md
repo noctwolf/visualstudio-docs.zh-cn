@@ -1,23 +1,20 @@
 ---
-title: "从探查器命令行使用检测方法收集服务的详细计时数据 | Microsoft Docs"
-ms.custom: 
+title: 从探查器命令行使用检测方法收集服务的详细计时数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1c32a2008fa18f7edf8d50b95104c35c6b1b2058
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3864702edf15a60a7b3cbf161a2313a65dcf40fb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>从探查器命令行使用检测方法收集服务的详细计时数据
 本部分介绍从命令行使用检测方法收集 Windows 服务的详细性能数据的步骤和选项。  
@@ -45,7 +42,7 @@ ms.lasthandoff: 12/22/2017
 |任务|相关内容|  
 |----------|---------------------|  
 |**分析独立（客户端）应用程序**|-   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
-|**分析 ASP.NET Web 应用程序**|-   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**分析 ASP.NET Web 应用程序**|-   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>分析检测数据视图和报告  
  [检测方法数据视图](../profiling/instrumentation-method-data-views.md)

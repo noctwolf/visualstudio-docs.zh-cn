@@ -25,7 +25,7 @@ ms.lasthandoff: 04/16/2018
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 将存储修改后的设置字体和颜色在注册表中。 你可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口来访问这些设置。
 
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>若要启动的字体和颜色的状态持久性
- 字体和颜色信息存储在以下注册表位置中按类别: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >*\FontAndColors\\ *\<CategoryGUID >*]，其中 *\<CategoryGUID >*类别 GUID。
+ 字体和颜色信息存储在以下注册表位置中按类别: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >* \FontAndColors\\ *\<CategoryGUID >*]，其中 *\<CategoryGUID >* 类别 GUID。
 
  因此，若要启动持久性，VSPackage 必须：
 

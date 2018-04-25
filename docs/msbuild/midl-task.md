@@ -2,11 +2,8 @@
 title: MIDL 任务 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
 - VC.Project.VCMidlTool.ApplicationConfigurationMode
@@ -26,17 +23,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), MIDL task
 - MIDL task (MSBuild (Visual C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-caps.latest.revision: 8
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ed6c8c34fd5aa37eebffabcda077ca8554c498
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: b46e4dc771ad5bb95185647a4769359427886f24
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="midl-task"></a>MIDL 任务
 包装 Microsoft 接口定义语言 (MIDL) 编译器工具 midl.exe。 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上的“MIDL 命令行参考”。  
@@ -92,7 +88,7 @@ ms.lasthandoff: 04/10/2018
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**Signed**|**/char signed**|  
     |**Unsigned**|**/char unsigned**|  
@@ -116,7 +112,7 @@ ms.lasthandoff: 04/10/2018
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**无**|**/error none**|  
     |**EnableCustom**|**/error**|  
@@ -172,7 +168,7 @@ ms.lasthandoff: 04/10/2018
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**无**|**/client none**|  
     |**Stub**|**/client stub**|  
@@ -187,7 +183,7 @@ ms.lasthandoff: 04/10/2018
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**无**|**/server none**|  
     |**Stub**|**/server stub**|  
@@ -304,7 +300,7 @@ ms.lasthandoff: 04/10/2018
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**NotSet**|*\<none>*|  
     |**1**|**/Zp1**|  
@@ -338,7 +334,7 @@ ms.lasthandoff: 04/10/2018
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**NotSet**|*\<none>*|  
     |**Win32**|**/env win32**|  
@@ -361,7 +357,7 @@ ms.lasthandoff: 04/10/2018
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
@@ -410,7 +406,7 @@ ms.lasthandoff: 04/10/2018
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |值|命令行选项|  
+    |“值”|命令行选项|  
     |-----------|--------------------------|  
     |**0**|**/W0**|  
     |**1**|**/W1**|  
@@ -422,5 +418,5 @@ ms.lasthandoff: 04/10/2018
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)

@@ -1,14 +1,12 @@
 ---
-title: "在 Visual Studio 中重构重命名 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中重构重命名 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/26/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -16,11 +14,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd15d1b59eb5d593fe2b069c2b6721ca623ae99c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5735203131811b9423cd34f430665fb16a51ad34
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>“重命名代码符号”重构
 
@@ -30,7 +28,7 @@ ms.lasthandoff: 02/09/2018
 
 - Visual Basic
 
-功能：重命名代码符号的标识符，例如字段、局部变量、方法、命名空间、属性和类型。
+功能：重命名代码符号的标识符，例如字段、本地变量、方法、命名空间、属性和类型。
 
 时机：想要安全地进行重命名（无需查找所有实例）并复制/粘贴新名称。
 

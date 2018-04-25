@@ -2,26 +2,22 @@
 title: 使用多个处理器生成项目 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - multiple processors
 - MSBuild, multiple processor systems
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
-caps.latest.revision: 13
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8bf385b6ee34c532e70557c0f04754ba0c56bb9
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: aff6d2ff6f509bca31283e2fbb04896f6e8adce9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>使用多个处理器生成项目
 MSBuild 可以利用具有多个处理器或多核处理器的系统。 为每个可用处理器创建单独的生成进程。 例如，如果系统具有四个处理器，则创建四个生成进程。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以同时处理这些生成，从而缩短总体生产时间。 但是，并行生成会在生成方式上引入了一些更改。 本主题将讨论这些更改。  
@@ -43,6 +39,6 @@ MSBuild 可以利用具有多个处理器或多核处理器的系统。 为每�
   
  为了避免此问题但仍启用多处理器生成，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可使用“进程隔离”。 通过使用进程隔离，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以创建最多 `n` 个进程，其中 `n` 为系统上可用的处理器数。 例如，如果 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 在具有两个处理器的系统上生成解决方案，则仅创建两个生成进程。 重复使用这两个进程可生成解决方案中的所有项目。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [任务](../msbuild/msbuild-tasks.md)

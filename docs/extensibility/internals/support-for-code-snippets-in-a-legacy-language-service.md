@@ -52,15 +52,15 @@ ms.lasthandoff: 04/16/2018
   
  通常有两个代码段模板文件的存储位置的位置： 1） 的位置安装你的语言以及 2） 在用户的文件夹。 这些位置添加到注册表因此，Visual Studio**代码片段管理器**可以找到这些代码段。 用户的文件夹是由用户创建的代码段的存储位置。  
   
- 已安装的代码段模板文件的典型文件夹布局如下所示： *[InstallRoot]*\\*[TestLanguage]*\Snippets\\*[LCID]*\Snippets。  
+ 已安装的代码段模板文件的典型文件夹布局如下所示： *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets。  
   
- *[InstallRoot]*是你的语言安装中的文件夹。  
+ *[InstallRoot]* 是你的语言安装中的文件夹。  
   
- *[TestLanguage]*是你作为文件夹名称的语言的名称。  
+ *[TestLanguage]* 是你作为文件夹名称的语言的名称。  
   
- *[LCID]*是区域设置 id。 这是你的代码段的如何本地化的版本存储。 例如，英语的区域设置 ID 为 1033，因此*[LCID]*替换为 1033年。  
+ *[LCID]* 是区域设置 id。 这是你的代码段的如何本地化的版本存储。 例如，英语的区域设置 ID 为 1033，因此 *[LCID]* 替换为 1033年。  
   
- 必须提供一个附加的文件，并且是索引文件，通常称为 SnippetsIndex.xml 或 ExpansionsIndex.xml （你可以使用任何有效的文件名以.xml）。 此文件通常存储在*[InstallRoot]*\\*[TestLanguage]*文件夹，并指定 snippets 文件夹，以及语言 ID 的确切位置和 GUID 的语言使用这些代码段的服务。 在"安装注册表项"的后面部分所述的索引文件的准确路径被置于注册表。 下面是 SnippetsIndex.xml 文件的示例：  
+ 必须提供一个附加的文件，并且是索引文件，通常称为 SnippetsIndex.xml 或 ExpansionsIndex.xml （你可以使用任何有效的文件名以.xml）。 此文件通常存储在 *[InstallRoot]*\\ *[TestLanguage]* 文件夹，并指定 snippets 文件夹，以及语言 ID 的确切位置和 GUID 的语言使用这些代码段的服务。 在"安装注册表项"的后面部分所述的索引文件的准确路径被置于注册表。 下面是 SnippetsIndex.xml 文件的示例：  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -81,7 +81,7 @@ ms.lasthandoff: 04/16/2018
   
  此示例假定你已在 Visual Studio 安装文件夹安装语言服务。 %LCID%将被替换为用户的当前区域设置 id。 多个\<SnippetDir > 标记可以添加，一个用于每个不同的目录和区域设置。 此外，代码段文件夹可以包含子文件夹，其中每个索引文件中标识\<SnippetSubDir > 标记嵌入在\<SnippetDir > 标记。  
   
- 用户还可以创建你的语言自己段。 这些通常存储在用户的设置文件夹中，例如*[TestDocs]*\Code 代码段\\*[TestLanguage]*\Test 代码段，其中*[TestDocs]*是 Visual Studio 的用户的设置文件夹的位置。  
+ 用户还可以创建你的语言自己段。 这些通常存储在用户的设置文件夹中，例如 *[TestDocs]* \Code 代码段\\ *[TestLanguage]* \Test 代码段，其中 *[TestDocs]* 是 Visual Studio 的用户的设置文件夹的位置。  
   
  以下的替换元素可以放在路径存储在\<DirPath > 标记中的索引文件。  
   
@@ -91,7 +91,7 @@ ms.lasthandoff: 04/16/2018
 |%Installroot%|Visual Studio 中，例如，C:\Program Files\Microsoft Visual Studio 8 的根安装文件夹。|  
 |%Projdir%|包含当前项目文件夹。|  
 |%Projitem%|包含当前的项目项的文件夹。|  
-|%Testdocs%|用户的设置文件夹，例如，C:\Documents and Settings 文件夹中\\*[username]*documents\visual Studio\8。|  
+|%Testdocs%|用户的设置文件夹，例如，C:\Documents and Settings 文件夹中\\ *[username]* documents\visual Studio\8。|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>启用语言服务的代码段  
  你可以启用代码段语言服务的添加<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>属性设为你的 VSPackage (请参阅[注册旧语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)有关详细信息)。 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A>和<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A>参数是可选的但应包括`SearchPaths`命名参数，以便通知**代码片段管理器**你的代码段的位置。  

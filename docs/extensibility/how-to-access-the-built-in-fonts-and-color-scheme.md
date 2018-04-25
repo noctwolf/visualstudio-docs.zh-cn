@@ -51,9 +51,9 @@ Visual Studio 集成的开发环境 (IDE) 有与编辑器窗口相关联的字�
 
 1.  构造一个特殊类型的类别中的以下位置的注册表条目：
 
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>*\FontAndColors\\*\<Category>*]
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>* \FontAndColors\\*\<Category>*]
 
-     *\<类别 >*是类别的非本地化名称。
+     *\<类别 >* 是类别的非本地化名称。
 
 2.  填充注册表以具有四个值中使用的常用字体和颜色方案：
 

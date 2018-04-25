@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>若要注册的源控件插件 DLL  
   
-1.  指定你的产品名称子项后跟你公司名称子项中的软件子项中再添加两项在 HKEY_LOCAL_MACHINE 键下。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\\*[公司名称]*\\*[产品名称]*\\*[entry]* = value。 SCCServerName 和 SCCServerPath 始终调用两个条目。 每个是规则的字符串。  
+1.  指定你的产品名称子项后跟你公司名称子项中的软件子项中再添加两项在 HKEY_LOCAL_MACHINE 键下。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\\ *[公司名称]*\\ *[产品名称]*\\ *[entry]* = value。 SCCServerName 和 SCCServerPath 始终调用两个条目。 每个是规则的字符串。  
   
      例如，如果你的公司名称是 Microsoft 和你的源代码控制产品名为 SourceSafe，则此注册表路径将 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe。 在此子项中的第一个条目，SCCServerName，为命名你的产品用户可读字符串。 第二个条目，SCCServerPath，是对源的完整路径控制 IDE 应连接到的插件 DLL。 下面提供了示例注册表条目：  
   
@@ -55,9 +55,9 @@ ms.lasthandoff: 04/16/2018
   
          HideInVisualStudio 为 DWORD 值，并设置为 1 以隐藏插件或 0，则显示插件。 如果未显示的注册表项，默认行为是显示该插件。  
   
-    -   可以使用 DisableSccManager 注册表项来禁用或隐藏**启动\<源代码管理服务器 >**通常下显示的菜单选项**文件** ->  **源代码管理**子菜单。 选择此菜单选项调用[SccRunScc](../../extensibility/sccrunscc-function.md)函数。 你的源代码管理插件可能不支持外部程序，因此你可能想要禁用或甚至隐藏**启动**菜单选项。  
+    -   可以使用 DisableSccManager 注册表项来禁用或隐藏**启动\<源代码管理服务器 >** 通常下显示的菜单选项**文件** ->  **源代码管理**子菜单。 选择此菜单选项调用[SccRunScc](../../extensibility/sccrunscc-function.md)函数。 你的源代码管理插件可能不支持外部程序，因此你可能想要禁用或甚至隐藏**启动**菜单选项。  
   
-         DisableSccManager 是 DWORD 值设置为 0，以启用**启动\<源代码管理服务器 >**菜单选项，设置为 1 可禁用的菜单选项，并将设置为 2，若要隐藏菜单选项。 如果未显示此注册表项，默认行为是显示的菜单选项。  
+         DisableSccManager 是 DWORD 值设置为 0，以启用**启动\<源代码管理服务器 >** 菜单选项，设置为 1 可禁用的菜单选项，并将设置为 2，若要隐藏菜单选项。 如果未显示此注册表项，默认行为是显示的菜单选项。  
   
     |示例注册表条目|示例值|  
     |---------------------------|------------------|  
@@ -66,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  添加下的子项，SourceCodeControlProvider，在软件的子项的 HKEY_LOCAL_MACHINE 键。  
   
-     在此子项下的注册表项 ProviderRegKey 设置为一个字符串，表示放置在步骤 1 中的注册表子项。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = 软件\\*[公司名称]*\\*[产品名称]*。  
+     在此子项下的注册表项 ProviderRegKey 设置为一个字符串，表示放置在步骤 1 中的注册表子项。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = 软件\\ *[公司名称]*\\ *[产品名称]*。  
   
      下面是此子项的示例内容。  
   
@@ -79,7 +79,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  创建名 InstalledSCCProviders 为 SourceCodeControlProvider 子项下, 一个子项，然后进行该子项下的一个条目。  
   
-     此条目的名称为提供程序 （与相同为 SCCServerName 条目指定的值），用户可读名称，值再次，为步骤 1 中创建的子项。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\*[显示名称]* = 软件\\*[公司名称]* \\ *[产品名称]*。  
+     此条目的名称为提供程序 （与相同为 SCCServerName 条目指定的值），用户可读名称，值再次，为步骤 1 中创建的子项。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[显示名称]* = 软件\\ *[公司名称]* \\ *[产品名称]*。  
   
      例如：  
   

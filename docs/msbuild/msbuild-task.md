@@ -2,11 +2,8 @@
 title: MSBuild 任务 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild task [MSBuild]
 - MSBuild, MSBuild task
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
-caps.latest.revision: 32
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5ecaef8f384a9597243fbe2026290e65295da8d
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 04b76df9a174bcbc03269e42ce37b1103c3bfd2f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild-task"></a>MSBuild 任务
 从另一 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目生成 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目。  
@@ -40,7 +36,7 @@ ms.lasthandoff: 04/10/2018
 |---------------|-----------------|  
 |`BuildInParallel`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，会并行生成 `Projects` 参数中指定的项目（如有可能）。 默认值为 `false`。|  
 |`Projects`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要生成的项目文件。|  
-|`Properties`|可选 `String` 参数。<br /><br /> 以分号分隔的作为全局属性应用到子项目的属性名称/值对列表。 指定此参数时，它在功能上等效于使用 [MSBuild.exe ](../msbuild/msbuild-command-line-reference.md) 进行生成时设置具有 **/property** 开关的属性。 例如：<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 通过 `Properties` 参数将属性传递到项目时，即使已加载了项目文件，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 也会创建项目的新实例。 创建项目的新实例后，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 将其视为具有不同全局属性且可与项目的其他实例并行生成的不同项目。 例如，可同时生成发布配置和调试配置。|  
+|`Properties`|可选 `String` 参数。<br /><br /> 以分号分隔的作为全局属性应用到子项目的属性名称/值对列表。 指定此参数时，它在功能上等效于使用 [MSBuild.exe ](../msbuild/msbuild-command-line-reference.md) 进行生成时设置具有 **/property** 开关的属性。 例如:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 通过 `Properties` 参数将属性传递到项目时，即使已加载了项目文件，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 也会创建项目的新实例。 创建项目的新实例后，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 将其视为具有不同全局属性且可与项目的其他实例并行生成的不同项目。 例如，可同时生成发布配置和调试配置。|  
 |`RebaseOutputs`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则生成项目中目标输出项的相对路径将其路径调整为相对于调用项目。 默认值为 `false`。|  
 |`RemoveProperties`|可选 `String` 参数。<br /><br /> 指定要删除的全局属性的集。|  
 |`RunEachTargetSeparately`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务一次一个地调用被传递到 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的列表中调用一个目标，不会同时调用目标。 将此参数设置为 `true` 可确保即使先前调用目标失败，也可调用后续目标。 否则，生成错误将停止调用所有后续目标。 默认值为 `false`。|  
@@ -191,6 +187,6 @@ ms.lasthandoff: 04/10/2018
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

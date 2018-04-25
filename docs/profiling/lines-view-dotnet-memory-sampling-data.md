@@ -1,27 +1,22 @@
 ---
-title: "“行”视图 - .NET 内存采样数据 | Microsoft Docs"
-ms.custom: 
+title: “行”视图 - .NET 内存采样数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
 ms.assetid: 6631ab87-0e62-4c76-a063-4ea7222b07da
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a10c38ec29e9a149d6756bcbe5bbfa1e65fcbe24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cb92e37a8bc1543cfdf2efa142768d9edbea4f69
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>“行”视图 - .NET 内存采样数据
 使用采样方法的 .NET 内存分配分析数据的“行”视图列出分析运行期间分配内存的语句。 这些列还包括分配的大小和数量。  

@@ -3,28 +3,24 @@ title: 创建 Node.js 和 React 应用 - Visual Studio | Microsoft Docs
 description: 本教程会在 Visual Studio 中创建 Node.js 和 React 应用
 ms.custom: mvc
 ms.date: 02/19/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 21debd24f69b79cb2dbbf9e9ceea928ac9dd851e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
-通过 Visual Studio 可以轻松创建 Node.js 项目并利用 IntelliSense 和其他支持 Node.js 的内置功能。 此 Visual Studio 教程将从 Visual Studio 模板创建 Node.js Web 应用程序项目。 然后，使用 React 创建一个简单的应用程序。 
+通过 Visual Studio 可以轻松创建 Node.js 项目并利用 IntelliSense 和其他支持 Node.js 的内置功能。 此 Visual Studio 教程将从 Visual Studio 模板创建 Node.js Web 应用程序项目。 然后，使用 React 创建一个简单的应用程序。
 
 在本教程中，你将了解：
 > [!div class="checklist"]
@@ -51,17 +47,17 @@ ms.lasthandoff: 04/06/2018
 ## <a name="create-a-project"></a>创建项目
 首先，创建一个 Node.js Web 应用程序项目。
 
-1. 打开 Visual Studio 2017。  
+1. 打开 Visual Studio 2017。
 
-1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。  
+1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。
 
-1. 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“空白 Node.js Web 应用程序”，键入名称“NodejsWebAppBlank”，然后选择“确定”。   
+1. 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“空白 Node.js Web 应用程序”，键入名称“NodejsWebAppBlank”，然后选择“确定”。
 
-     如果未看到“空白 Node.js Web 应用程序”项目模板，须先安装 Node.js 开发工作负载。 
+     如果未看到“空白 Node.js Web 应用程序”项目模板，须先安装 Node.js 开发工作负载。
 
     Visual Studio 创建新的解决方案并打开项目。
 
-    ![解决方案资源管理器中的 Node.js 项目](../nodejs/media/tutorial-nodejs-react-project-structure.png)  
+    ![解决方案资源管理器中的 Node.js 项目](../nodejs/media/tutorial-nodejs-react-project-structure.png)
 
     - 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在文件系统中，此项目由项目文件夹中的 .njsproj 文件表示。 可以右键单击项目并选择“属性”，设置与项目相关的属性和环境变量。 可以使用其他开发工具执行往返，因为项目文件不对 Node.js 项目源做出自定义更改。
 
@@ -117,7 +113,7 @@ ms.lasthandoff: 04/06/2018
 
     以下安装后显示在解决方案资源管理器中的 npm 模块。
 
-    ![npm 包](../nodejs/media/tutorial-nodejs-react-npm-modules.png) 
+    ![npm 包](../nodejs/media/tutorial-nodejs-react-npm-modules.png)
 
     > [!NOTE]
     > 如果想要使用命令行安装 npm 包，则右键单击项目节点并选择“在此处打开命令提示符”。 使用标准的 Node.js 命令安装包。
@@ -171,7 +167,7 @@ ms.lasthandoff: 04/06/2018
 
     ```javascript
     declare var require: any
-    
+
     var React = require('react');
     var ReactDOM = require('react-dom');
 
@@ -267,7 +263,7 @@ ms.lasthandoff: 04/06/2018
 
     命令提示符窗口显示结果。
 
-    ![运行 webpack](../nodejs/media/tutorial-nodejs-react-run-webpack.png) 
+    ![运行 webpack](../nodejs/media/tutorial-nodejs-react-run-webpack.png)
 
     如果看到错误而不是前面的输出，则必须在应用开始运行之前解决这些错误。 如果 npm 包版本不是本教程中所示的版本，则可能引发错误。 修复错误的一种方法是使用前面步骤中使用的版本。 此外，如果所使用的一个或多个包版本是已弃用的版本，并导致发生错误，则可能需要安装较新版本以消除错误。
 
@@ -279,7 +275,7 @@ ms.lasthandoff: 04/06/2018
 
 1. 如果系统提示从外部重新加载已修改的文件，请单击“全是”。
 
-    ![加载已修改的文件](../nodejs/media/tutorial-nodejs-react-reload-files.png) 
+    ![加载已修改的文件](../nodejs/media/tutorial-nodejs-react-reload-files.png)
 
 每次对 app.tsx 进行更改时，必须重新运行 webpack 命令。
 
@@ -287,7 +283,7 @@ ms.lasthandoff: 04/06/2018
 
 1. 请确保将 Chrome 选为当前的调试目标。
 
-    ![选择 Chrome 作为调试目标](../nodejs/media/tutorial-nodejs-react-debug-target.png)  
+    ![选择 Chrome 作为调试目标](../nodejs/media/tutorial-nodejs-react-debug-target.png)
 
 1. 若要运行应用，请按 F5（“调试” > “开始调试”）或者绿色箭头按钮。
 
@@ -295,7 +291,7 @@ ms.lasthandoff: 04/06/2018
 
     Visual Studio 通过启动启动文件 server.js 来启动应用。
 
-    ![在浏览器中运行 React](../nodejs/media/tutorial-nodejs-react-running-react.png) 
+    ![在浏览器中运行 React](../nodejs/media/tutorial-nodejs-react-running-react.png)
 
 1. 关闭浏览器窗口。
 
@@ -305,9 +301,9 @@ ms.lasthandoff: 04/06/2018
 
 1. 在 server.js 中，单击 `staticPath` 声明左侧的滚动条槽以设置断点：
 
-    ![设置断点](../nodejs/media/tutorial-nodejs-react-set-breakpoint.png) 
+    ![设置断点](../nodejs/media/tutorial-nodejs-react-set-breakpoint.png)
 
-    断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在哪个位置挂起你的运行代码，以使你可以查看变量的值或内存的行为，或确定代码的分支是否运行。 
+    断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在哪个位置挂起你的运行代码，以使你可以查看变量的值或内存的行为，或确定代码的分支是否运行。
 
 1. 若要运行应用，请按 F5（“调试” > “启动调试”）。
 
@@ -333,7 +329,7 @@ ms.lasthandoff: 04/06/2018
 
 1. 如下图所示，切换到 Visual Studio 并在 `render()` 函数的 app-bundle.js 代码中设置断点：
 
-    ![设置断点](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png) 
+    ![设置断点](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
 1. 在选择 Chrome 作为 Visual Studio 中调试目标的情况下，按 Ctrl+F5（“调试” > “启动时不调试”）在浏览器中运行应用。
 
@@ -345,7 +341,7 @@ ms.lasthandoff: 04/06/2018
 
 1. 使用正确的主机端口（此例中为 1337）选择 Chrome 进程，然后单击“附加”。
 
-    ![附加到进程](../nodejs/media/tutorial-nodejs-react-attach-to-process.png) 
+    ![附加到进程](../nodejs/media/tutorial-nodejs-react-attach-to-process.png)
 
     当 DOM 资源管理器和 JavaScript 控制台在 Visual Studio 中打开，表明已正确附加调试程序。 这些调试工具类似于 Chrome 开发人员工具和 Edge 的 F12 工具。
 
@@ -367,7 +363,7 @@ ms.lasthandoff: 04/06/2018
     > [!TIP]
     > 首次通过这些步骤附加到进程后，可选择“调试” > “重新附加到进程”，快速重新附加到 Visual Studio 2017 中的同一进程。
 
-## <a name="next-steps"></a>后续步骤 
+## <a name="next-steps"></a>后续步骤
 
 本教程介绍了如何创建 Node.js 和 React 应用、转译 JSX 和进行调试。 若要了解有关“针对 Visual Studio 的 Node.js 工具”的详细信息，请参阅 Wiki 页。
 

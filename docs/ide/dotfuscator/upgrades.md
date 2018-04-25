@@ -1,10 +1,11 @@
 ---
-title: "升级 Dotfuscator Community Edition (CE) | Microsoft Docs"
+title: 升级 Dotfuscator Community Edition (CE) | Microsoft Docs
 ms.date: 2017-02-08
 ms.devlang: dotnet
-ms.technology: vs-ide-general
-ms.topic: article
-keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保护, 社区版, 混淆, .NET, 免费, Visual Studio 2017, 升级, 命令行"
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
+keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保护, 社区版, 混淆, .NET, 免费, Visual Studio 2017, 升级, 命令行
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -19,15 +20,15 @@ helpviewer_keywords:
 - registering Dotfuscator
 - Dotfuscator command line
 - Dotfuscator Professional
-description: "了解如何升级 Visual Studio 2017 中包含的免费 Dotfuscator Community Edition。"
+description: 了解如何升级 Visual Studio 2017 中包含的免费 Dotfuscator Community Edition。
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
-manager: ghogen
-ms.openlocfilehash: 261fc98312914f5a80d2302a90e360dfde2ca17f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: 03fdaae7a152db2af4ca042d14748e6508185b78
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>升级 Dotfuscator Community Edition (CE)
 
@@ -45,7 +46,7 @@ Dotfuscator CE 的注册用户可以访问其他功能（如[命令行支持][cl
 ## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
 虽然 Dotfuscator Community Edition 提供了基本级别的保护，但 **_PreEmptive Protection - Dotfuscator_ Professional Edition** 包含增强的模糊处理转换和保护功能。
-其中包括:
+这些方法包括：
 
 * 知识产权保护
   * 其他重命名选项，包括 Enhanced Overload Induction™ 和随机标识符选择。
@@ -74,7 +75,7 @@ Dotfuscator Professional 是行业标准的 [.NET 模糊处理程序][net-obfusc
 有关 Dotfuscator Professional 的高级应用程序保护功能的详细信息，请访问 PreEmptive Solutions 的 [Dotfuscator 概述页][ product-about]和[将其与 Community Edition 进行比较][product-compare]。
 [可在 preemptive.com 申请有全面支持的试用版][eval]。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 [完整 Dotfuscator CE 用户指南中的本主题][full]
 

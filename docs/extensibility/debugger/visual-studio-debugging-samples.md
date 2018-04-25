@@ -24,6 +24,6 @@ ms.lasthandoff: 04/16/2018
 # <a name="visual-studio-debugging-samples"></a>Visual Studio 调试示例
 两个示例演示如何扩展 Visual Studio 调试器使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  
   
--   调试器表达式计算器示例中，对于托管语言，包括在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]窗口中，单击**示例**选项卡上，单击**所有**或**C#**中语言，然后单击列表中**调试器**。  
+-   调试器表达式计算器示例中，对于托管语言，包括在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]窗口中，单击**示例**选项卡上，单击**所有**或**C#** 中语言，然后单击列表中**调试器**。  
   
 -   Visual Studio 调试引擎示例中，对于本机语言，MSDN 代码库里有可用。 有关详细信息，请参阅此页在 Microsoft 网站： [Visual Studio 调试引擎示例](http://go.microsoft.com/fwlink/?LinkId=150236)。

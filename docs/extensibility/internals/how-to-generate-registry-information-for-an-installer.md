@@ -25,7 +25,7 @@ ms.lasthandoff: 04/16/2018
 RegPkg.exe 实用程序可用来为托管的 VSPackage 生成注册清单。 清单可以合并到 Windows Installer 安装程序包中。 RegPkg 还可以生成一个文件，可包含在基于安装程序源文件[Windows Installer XML 工具集](http://go.microsoft.com/fwlink/?LinkId=62238)。  
   
 > [!IMPORTANT]
->  RegPkg 生成特定于你开发的系统的路径名称，因此，每次使用 RegPkg，必须编辑输出以供使用适当的 Windows Installer 格式属性。 例如，InprocServer32 值应为**[SystemFolder]mscoree.dll**和路径应使用**[#filekey]**和**[$componentkey]**。 调整以这种方式输出支持与安装在不同的驱动器或其他目录、 本地化的目录名称和用户可以选择的路径中的 Windows 的计算机。 有关详细信息，请参阅[格式化](http://go.microsoft.com/fwlink/?LinkId=71120)中 Windows Installer SDK。 如果你遵循 RegPkg 约定你开发的系统路径的 — 例如，文件 Id 的窗体 File_*filename*-需要进行更少的更改。  
+>  RegPkg 生成特定于你开发的系统的路径名称，因此，每次使用 RegPkg，必须编辑输出以供使用适当的 Windows Installer 格式属性。 例如，InprocServer32 值应为 **[SystemFolder]mscoree.dll**和路径应使用 **[#filekey]** 和 **[$componentkey]**。 调整以这种方式输出支持与安装在不同的驱动器或其他目录、 本地化的目录名称和用户可以选择的路径中的 Windows 的计算机。 有关详细信息，请参阅[格式化](http://go.microsoft.com/fwlink/?LinkId=71120)中 Windows Installer SDK。 如果你遵循 RegPkg 约定你开发的系统路径的 — 例如，文件 Id 的窗体 File_*filename*-需要进行更少的更改。  
   
 ### <a name="to-create-a-registration-manifest"></a>创建注册清单  
   

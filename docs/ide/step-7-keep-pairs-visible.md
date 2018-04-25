@@ -1,23 +1,21 @@
 ---
-title: "步骤 7：保持对可见 | Microsoft Docs"
-ms.custom: 
+title: 步骤 7：保持对可见 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
-caps.latest.revision: "21"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b1aa3a18f8632890cd41a5ee7cb64e3d7c744888
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eaa39aa35217ab55daa8739a76d75ae2a741afae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-7-keep-pairs-visible"></a>步骤 7：保持对可见
 只要玩家仅选择不匹配的图标对，游戏即可顺畅地运行。 但是，请考虑玩家选择匹配对时发生的情况。 游戏不是通过打开计时器（使用 `Start()` 方法）来使图标消失，而应当进行重置，这样游戏就不再使用 `firstClicked` 和 `secondClicked` 引用变量跟踪任何标签，而且无需重置选择的两个标签的颜色。  

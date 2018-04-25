@@ -1,27 +1,22 @@
 ---
-title: "“调用树”视图 - 争用数据 | Microsoft Docs"
-ms.custom: 
+title: “调用树”视图 - 争用数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c829f11efd5eddda0ea819422856cb2bcc30c2ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b4e21b91ceda5b51a26633b7595aed4e0ee12059
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="call-tree-view---contention-data"></a>“调用树”视图 - 争用数据
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都列出它所调用的所有函数、函数被阻止的次数，以及函数由于与其他线程或进程争用资源而被阻止的时间量。  

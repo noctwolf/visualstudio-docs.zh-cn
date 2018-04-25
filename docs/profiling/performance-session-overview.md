@@ -1,26 +1,23 @@
 ---
-title: "性能会话概述 | Microsoft Docs"
-ms.custom: 
+title: 性能会话概述 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
 - performance sessions
 ms.assetid: 35752f95-a57a-4def-b64d-cf4899669e99
-caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4996f6cd60889412958765a02811b1b6728f2efa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-session-overview"></a>性能会话概述
 本概述说明分析的基础知识。 刚接触性能工作的开发者会了解 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具如何帮助他们快速提高工作效率以及提高其代码的性能。 在分析方面经验丰富的开发者可以获得特定分析工具功能和过程的概述。  

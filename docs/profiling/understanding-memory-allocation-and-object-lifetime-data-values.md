@@ -1,30 +1,26 @@
 ---
-title: "了解内存分配数据值和对象生存期数据值 | Microsoft Docs"
-ms.custom: 
+title: 了解内存分配数据值和对象生存期数据值 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools, .NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d7594ea2356c737d555423082f3c3010835cc7f
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 9b7569b36b954553dbb03e8a3934c375012a4349
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>了解内存分配数据值和对象生存期数据值
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的 *.NET 内存分配*分析工具收集有关在分配中创建或在垃圾回收中销毁的对象大小和数量的信息，并收集事件发生时有关函数*调用堆栈*的其他信息。 调用堆栈是一种动态结构，用于存储有关在处理器中执行的函数的信息。
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的 .NET 内存分配分析工具收集有关在分配中创建或在垃圾回收中销毁的对象大小和数量的信息，并收集事件发生时有关函数调用堆栈的其他信息。 调用堆栈是一种动态结构，用于存储有关在处理器中执行的函数的信息。
 
 .NET 内存分配分析方法在被分析的应用程序中每次分配 .NET Framework 对象时都中断计算机处理器。 同时收集对象生存期数据时，探查器会在每个 .NET Framework 垃圾回收之后中断处理器。 会为每个分析的函数以及每种类型的对象聚合数据。
 

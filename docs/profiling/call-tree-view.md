@@ -1,13 +1,9 @@
 ---
-title: "“调用树”视图 | Microsoft Docs"
-ms.custom: 
+title: “调用树”视图 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.calltree
 helpviewer_keywords:
@@ -16,17 +12,16 @@ helpviewer_keywords:
 - performance reports, Call Tree view
 - profiling tools, Call Tree view
 ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e55e469112053d7a78416c21a685d423a6bfa31
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f098b18100bd54e8078ea0c855a1b3e51926b93
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="call-tree-view"></a>“调用关系树”视图
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都列出它调用的所有函数以及有关这些函数调用的性能数据。  

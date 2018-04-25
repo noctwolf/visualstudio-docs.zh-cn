@@ -1,20 +1,20 @@
 ---
 title: 在 Visual Studio 中创建适用于 web 性能测试的请求级插件 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 59ca0964b72631b8ad5620f351cd57c85099a4ff
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: ea574f2f0c9b4d3f0f6da029433b5b600a400702
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>如何：创建请求级插件
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 03/19/2018
     > [!WARNING]
     > 在运行使用插件的 Web 性能测试或负载测试时，可能会出现与下类似的错误：
     >
-    > **请求失败：\<插件> 事件中的异常：无法加载文件或程序集 '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken = null' 或其依赖项之一。系统找不到指定的文件。**
+    > **请求失败：\<插件> 事件中的异常：无法加载文件或程序集 '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其依赖项之一。系统找不到指定的文件。**
     >
     > 如果对任何插件进行代码更改并创建新 DLL 版本 (Version=0.0.0.0)，则会引发这种情况，但插件仍会引用原来的插件版本。 若要更正此问题，请执行以下步骤：
     >

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中的负载测试计数器集 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.dialog.countersetmapping
 helpviewer_keywords:
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 21f093187fa1c2405253cc60713a0dfbea384d53
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: b2ff43592819e5834f1e5f7b5088c00f61d8b1c4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>如何：使用负载测试编辑器管理计数器集
 
-在使用“新建负载测试向导”创建负载测试时，需添加一个初始计数器集。 该计数器集为你的负载测试提供了一组预定义计数器集。
+使用“新建负载测试向导”创建负载测试时，需添加一个初始计数器集。 该计数器集为你的负载测试提供了一组预定义计数器集。
 
 > [!NOTE]
 > 如果负载测试分布在多台远程计算机之间，则会将控制器和代理计数器映射到控制器和代理计数器集中。 有关如何在负载测试中使用远程计算机的详细信息，请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。

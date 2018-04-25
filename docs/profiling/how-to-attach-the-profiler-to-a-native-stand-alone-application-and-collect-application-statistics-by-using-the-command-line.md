@@ -1,43 +1,26 @@
 ---
-title: "如何：使用命令行将探查器附加到本机独立应用程序并收集应用程序统计信息 | Microsoft Docs"
-ms.custom: 
+title: 如何：使用命令行将探查器附加到本机独立应用程序并收集应用程序统计信息 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: df44fe42-281b-4398-b3fc-277b62ae41f1
-caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: db3a61e77cb4f74f538ef6781701df03ae593b46
-ms.lasthandoff: 02/22/2017
-
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c9ef8415aaa9a5004528841c2fc9c466a8374459
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令行将探查器附加到本机独立应用程序并收集应用程序统计信息
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到运行中的本机独立（客户端）应用程序，以及如何使用采样方法收集性能统计信息。  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 > [!NOTE]
 >  分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
@@ -61,7 +44,7 @@ ms.lasthandoff: 02/22/2017
   
      可以将以下任意选项与 **/start:sample** 选项一起使用。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定拥有所分析进程的帐户的域和用户名。 仅当运行进程的用户不是已登录用户时，才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。|  
     |[/crosssession](../profiling/crosssession.md)|启用其他会话中的进程分析。 如果 ASP.NET 应用程序在其他会话中运行，则需要此选项。 会话标识符在 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中列出。 可以将 **/CS** 指定为 **/crosssession** 的缩写。|  
@@ -77,7 +60,7 @@ ms.lasthandoff: 02/22/2017
   
      默认情况下，性能数据为每 10,000,000 个非暂停处理器时钟周期采样一次。 在 1GH 处理器上，每秒约为 100 次。 可以指定以下选项之一，更改时钟周期间隔或指定不同的采样事件。  
   
-    |样本事件|说明|  
+    |样本事件|描述|  
     |------------------|-----------------|  
     |[/timer](../profiling/timer.md) **:** `Interval`|将采样间隔更改为 `Interval` 所指定的非暂停时钟周期数目。|  
     |[/pf](../profiling/pf.md)[**:**`Interval`]|将采样事件更改为页面错误。 如果已指定 `Interval`，则会设置样本之间的页面错误数目。 默认值为 10。|  
@@ -106,7 +89,7 @@ ms.lasthandoff: 02/22/2017
   
     -   键入 **VSPerfCmd /detach**  
   
-         - 或 -  
+         或  
   
     -   关闭目标应用程序。  
   
@@ -118,6 +101,6 @@ ms.lasthandoff: 02/22/2017
   
      **VSPerfClrEnv /off**  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [采样方法数据视图](../profiling/profiler-sampling-method-data-views.md)

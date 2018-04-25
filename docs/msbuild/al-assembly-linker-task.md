@@ -2,11 +2,8 @@
 title: AL（程序集链接器）任务 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AL
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-caps.latest.revision: 22
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d9d3b433e7ae14603a41b7ad802ff386c7aac52
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 022e7f47f17292c62b851868b85773e8295a6991
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="al-assembly-linker-task"></a>AL（程序集链接器）任务
 AL 任务包装 AL.exe（一种随 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 一起分发的工具）。 此程序集链接器工具用于创建包含来自一个或多个文件（这些文件可以是模块或资源文件）的清单的程序集。 编译器和开发环境可能已提供这些功能，因此通常不需要直接使用此任务。 对于需要从多个组件文件（例如可能从混合语言开发生成的组件文件）创建单个程序集的开发人员来说，程序集链接器非常有用。 此任务不能将模块合并到单个程序集文件；单个模块必须仍为分布式且可用，以便正确加载生成程序集。 有关 AL.exe 的详细信息，请参阅 [Al.exe（程序集链接器）](/dotnet/framework/tools/al-exe-assembly-linker)。  
@@ -96,6 +92,6 @@ AL 任务包装 AL.exe（一种随 [!INCLUDE[winsdklong](../deployment/includes/
 </AL>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [任务](../msbuild/msbuild-tasks.md)

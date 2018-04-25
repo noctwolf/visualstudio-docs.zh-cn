@@ -1,12 +1,10 @@
 ---
-title: "“选项”对话框 ->“环境”->“区域设置”| Microsoft Docs"
-ms.custom: 
+title: “选项”对话框 ->“环境”->“区域设置”| Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.InternationalSettings
 - VS.ToolsOptionsPages.Environment.International_Settings
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - Options dialog box, international settings
 - languages, specifying default
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e086111be924d1262866f882b77d821659af909d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 33e206e4c38b4bde715d72c6b8eb4b5bdf9c5dd8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“区域设置”
 当你的计算机上安装有多个语言版本的集成开发环境 (IDE) 时，可通过国际设置页面更改默认语言。 要访问此对话框，可从“工具”菜单中选择“选项”，然后从“环境”文件夹中选择“区域设置”。 如果此页未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  

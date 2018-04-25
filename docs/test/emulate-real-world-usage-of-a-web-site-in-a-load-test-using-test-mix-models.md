@@ -1,20 +1,20 @@
 ---
 title: 在 Visual Studio 的负载测试中模拟网站的实际使用情况 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load model, specifying
 - load test load model, specifying
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b5df4fe7db024ea7d958494faf4f332fc1a30db5
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0458135040209f79648ca299bc56ba3acae21908
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-models"></a>使用测试组合模型在负载测试中模拟网站或应用程序的预期实际使用情况
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/19/2018
 
 你可以为负载测试方案指定以下测试组合模型选项之一：
 
--   **基于总测试数：**确定虚拟用户启动测试迭代时运行哪个 Web 性能或单元测试。 在负载测试结束时，运行特定测试的次数与分配的测试分布相匹配。 使测试组合基于 IIS 日志或生产数据中的事务百分比时，可使用此测试组合模型。 有关详细信息，请参阅[基于已启动测试数的百分比](#BasedOnTestsStarted)。
+-   **基于总测试数：**确定虚拟用户启动测试迭代时运行的 Web 性能或单元测试。 在负载测试结束时，运行特定测试的次数与分配的测试分布相匹配。 使测试组合基于 IIS 日志或生产数据中的事务百分比时，可使用此测试组合模型。 有关详细信息，请参阅[基于已启动测试数的百分比](#BasedOnTestsStarted)。
 
 -   **基于虚拟用户数：**确定将运行特定 Web 性能或单元测试的虚拟用户的百分比。 在负载测试的任何时刻，运行特定测试的用户数都与分配的分布相匹配。 使测试组合基于运行特定测试的用户的百分比时，可使用此测试组合模型。 有关详细信息，请参阅[基于虚拟用户数的百分比](#PercentageBasedonVirtualUsers)。
 
@@ -102,7 +102,7 @@ ms.lasthandoff: 03/19/2018
 
 - [编辑测试组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 - [编辑负载模式以便为虚拟用户活动建模](../test/edit-load-patterns-to-model-virtual-user-activities.md)
-- [编辑测试组合以指定在负载测试方案中包括哪些测试](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
+- [编辑测试组合以指定在负载测试方案中包括的测试](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [配置负载测试运行设置](../test/configure-load-test-run-settings.md)
 - [负载测试方案属性](../test/load-test-scenario-properties.md)
 - [在方案中更改测试组合模型](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

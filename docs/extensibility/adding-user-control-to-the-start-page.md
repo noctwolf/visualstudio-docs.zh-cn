@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在**解决方案资源管理器**，右键单击该解决方案，单击**添加**，然后单击**新项目**。  
   
-3.  在左窗格中**新项目**对话框框中，展开**Visual Basic**或**Visual C#**节点，然后单击**Windows**。 在中间窗格中，选择**WPF 用户控件库**。  
+3.  在左窗格中**新项目**对话框框中，展开**Visual Basic**或**Visual C#** 节点，然后单击**Windows**。 在中间窗格中，选择**WPF 用户控件库**。  
   
 4.  命名该控件`WebUserControl`，然后单击**确定**。  
   
@@ -174,7 +174,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>测试手动创建自定义起始页  
   
-1.  将你的 XAML 文件，以及任何支持的文本文件或标记文件，为复制**%USERPROFILE%\My Documents\Visual Studio 2015 \startpages\\** 文件夹。  
+1.  将你的 XAML 文件，以及任何支持的文本文件或标记文件，为复制 **%USERPROFILE%\My Documents\Visual Studio 2015 \startpages\\** 文件夹。  
   
 2.  如果你的起始页引用的任何控件或未安装 Visual studio 的程序集中的类型，复制程序集，然后粘贴在 * Visual Studio 安装文件夹 ***\Common7\IDE\PrivateAssemblies\\** .  
   

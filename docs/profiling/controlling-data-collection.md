@@ -1,26 +1,23 @@
 ---
-title: "控制数据收集 | Microsoft Docs"
-ms.custom: 
+title: 控制数据收集 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - advanced tasks for profiling tools
 - profiling tools, advanced tasks
 ms.assetid: e713ad63-b948-46f3-8db9-59b30922ebe5
-caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8cbbbb2ce9002512eeba4e838edf0d4d960b38c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 824a67ec2ce71a9b7810ace93001a942dc73e60e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="controlling-data-collection"></a>控制数据收集
 通过 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具可控制性能会话期间收集分析数据的时间，并指定分析的函数。 本节介绍如何从“性能资源管理器”和“数据收集控制”窗口启动和停止数据收集，以及如何限制要收集其分析数据的对象。  

@@ -31,7 +31,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  安装 Visual Studio 中的 Office 开发人员工具支持的 Office 的版本。 有关详细信息，请参阅 [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
   
-     请确保也为安装的 Office 版本安装的 PIA。 默认情况下，PIA 随 Office 一起安装。 如果修改 Office 安装程序，请确保**.NET 可编程性支持**功能想要面向的应用程序选择。  
+     请确保也为安装的 Office 版本安装的 PIA。 默认情况下，PIA 随 Office 一起安装。 如果修改 Office 安装程序，请确保 **.NET 可编程性支持**功能想要面向的应用程序选择。  
   
 3.  如果你有 Visual Studio 的英语版本，但对 Windows 使用非英语设置，你可以安装[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]语言包，以查看[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]与 Windows 相同的语言中的消息。 Visual Studio 的非英语版本将自动安装该语言包。 语言包可从[Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=140386)。  
   

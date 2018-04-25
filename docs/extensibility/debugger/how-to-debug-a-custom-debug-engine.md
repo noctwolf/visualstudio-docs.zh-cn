@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  启动[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]正常注册表配置单元和负载中你的项目类型 （这是，将源与你的项目类型，不你的项目类型的实例化） 的项目。  
   
-2.  打开项目属性并转到**调试**页。 有关**命令**，键入的路径[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (默认情况下，这是*[驱动器]*files\microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe)。  
+2.  打开项目属性并转到**调试**页。 有关**命令**，键入的路径[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (默认情况下，这是 *[驱动器]* files\microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe)。  
   
 3.  有关**命令参数**，类型`/rootsuffix exp`实验注册表配置单元 （VSIP 安装时创建）。  
   

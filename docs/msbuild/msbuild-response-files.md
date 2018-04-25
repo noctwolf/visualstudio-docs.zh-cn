@@ -2,11 +2,8 @@
 title: MSBuild 响应文件 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, .rsp files
 - .rsp files
 ms.assetid: 9f53987b-20ee-470a-ab62-fce997bb5e15
-caps.latest.revision: 3
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a9f7b6e1456c511e70937ac6a1cff23dad30d0
-ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
+ms.openlocfilehash: f685364bbcf69b8d4b91635cb42079f3f06e5311
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild-response-files"></a>MSBuild 响应文件
 响应 (.rsp) 文件是包含 MSBuild.exe 命令行开关的文本文件。 每个开关可以单独占一行，或者所有开关仅占一行。 注释行以 # 符号开头。 @ 开关用于将另一个响应文件传递给 MSBuild.exe。  

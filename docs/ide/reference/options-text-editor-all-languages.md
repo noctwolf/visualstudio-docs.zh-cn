@@ -1,12 +1,10 @@
 ---
-title: "“选项”->“文本编辑器”->“所有语言”| Microsoft Docs"
-ms.custom: 
+title: “选项”->“文本编辑器”->“所有语言”| Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - line numbers
 - virtual space
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ef5133f1d92d9f18a62117e40a0788766dfe439
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 762fc7ffbf3ca4dbf8cb768ee96f73cb1f9190aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-text-editor-all-languages"></a>选项、文本编辑器、所有语言
 使用此对话框可更改代码编辑器的默认行为。 这些设置也适用于其他基于代码编辑器的编辑器，如 HTML 设计器的“源”视图。 若要打开此对话框，请从“工具”菜单中选择“选项”。 在“文本编辑器”文件夹中，展开“所有语言”子文件夹，然后选择“常规”。  

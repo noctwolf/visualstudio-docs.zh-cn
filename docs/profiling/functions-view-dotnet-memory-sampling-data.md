@@ -1,27 +1,22 @@
 ---
-title: "“函数”视图 - .NET 内存采样数据 | Microsoft Docs"
-ms.custom: 
+title: “函数”视图 - .NET 内存采样数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92d2df0182f976af36e9182d080ef6b51130c826
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eea5a55f57ed6b3fb710195dfe94839bdb17fb7e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>“函数”视图 - .NET 内存采样数据
 使用采样方法收集的 .NET 内存分配分析数据的“函数”视图会列出分析运行期间分配内存的函数，并报告分配的大小和数量。  

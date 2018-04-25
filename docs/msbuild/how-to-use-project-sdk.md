@@ -1,27 +1,24 @@
 ---
-title: "如何：引用 MSBuild 项目 SDK | Microsoft 文档"
-ms.custom: 
+title: 如何：引用 MSBuild 项目 SDK | Microsoft 文档
+ms.custom: ''
 ms.date: 01/25/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
-author: jeffkl
-ms.author: jeffkl
-manager: angerlic
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28027b21d3f562e3eda94dc91de16ddb38362d3c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b595f08883023d1150612415fcdb6c50411db7e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 项目 SDK
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 版本引入了“项目 SDK”的概念，它可让你更轻松地使用需导入属性和目标的软件开发工具包。
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 引入了“项目 SDK”概念，此概念简化了需要导入属性和目标才能使用的软件开发工具包的用法。
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

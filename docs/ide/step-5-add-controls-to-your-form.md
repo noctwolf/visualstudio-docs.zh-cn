@@ -1,23 +1,21 @@
 ---
-title: "步骤 5：向窗体添加控件 | Microsoft Docs"
-ms.custom: 
+title: 步骤 5：向窗体添加控件 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
-caps.latest.revision: "20"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7cf60293ca2d0a0ebd18dc9715d2954bd1128b2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0636ec38846fbfd591e0c8b6f22af6fd8e043008
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-5-add-controls-to-your-form"></a>步骤 5：向窗体添加控件
 在此步骤中，将向窗体添加控件（如 `PictureBox` 控件和 `CheckBox` 控件）。 然后向窗体添加按钮。  

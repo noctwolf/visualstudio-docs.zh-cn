@@ -2,11 +2,8 @@
 title: ToolTaskExtension 基类 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - MSBuild.ToolTask.ToolCommandFailed
 dev_langs:
@@ -15,17 +12,16 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
-caps.latest.revision: 4
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f17c22a4f93be23ba5f29c8a225eef5bdd555c30
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 01d2abbed85b891378b0a9d5c4a41029bdc46cf3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基类
 很多任务继承自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类，该类继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类，后者本身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 此继承链向从它们派生的任务添加了几个参数。 本文档中列出了这些参数。  
@@ -52,6 +48,6 @@ ms.lasthandoff: 04/10/2018
 |<xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A>|可选 `bool` 参数。<br /><br /> 设置为 `true` 时，此任务会为命令行创建一个批处理文件，并使用命令处理器执行它（而不是直接执行命令）。|  
 |<xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A>|可选 `bool` 参数。<br /><br /> 设置为 `true` 时，此任务会在其任务执行时生成节点。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [任务](../msbuild/msbuild-tasks.md)

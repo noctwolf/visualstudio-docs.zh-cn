@@ -35,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
 -   ShellCmdPlace.vsct  
   
- 这些文件位于 *\<Visual Studio SDK 安装路径 >*\VisualStudioIntegration\Common\Inc\\。 这些文件提供定义和菜单和可用于你的 VSPackage 的命令表 (.vsct) 配置文件中作为容器你自己的菜单、 组和命令的组的 Guid。  
+ 这些文件位于 *\<Visual Studio SDK 安装路径 >* \VisualStudioIntegration\Common\Inc\\。 这些文件提供定义和菜单和可用于你的 VSPackage 的命令表 (.vsct) 配置文件中作为容器你自己的菜单、 组和命令的组的 Guid。  
   
 ## <a name="in-this-section"></a>本节内容  
  [Visual Studio 菜单中的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  

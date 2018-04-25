@@ -1,20 +1,20 @@
 ---
 title: 在 Visual Studio 中创建用于测试的诊断数据适配器 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter [Visual Studio ALM]
 - Diagnostic Data Adapter
 ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 91f340fee26b908ea90ad540e9c9fb2fdb1acf81
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0410fd52e115e2c2c257811e088c46a831d0082d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>创建诊断数据适配器以收集自定义数据或影响测试计算机
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 03/19/2018
 
 可以使用配置设置文件为自定义诊断数据适配器提供默认输入。 例如，可以提供要收集并附加到测试结果中的文件的位置相关信息，也可提供希望系统留出的磁盘空间数。 可为你创建的每个测试设置配置此数据。 可使用 Microsoft 测试管理器中提供的默认编辑器显示和编辑此数据，也可以创建自己的用户控件用作编辑器。 在编辑器中对适配器配置所做的任何更改都将随测试设置一起存储。
 
-如果你是从 Visual Studio 运行测试，则必须将这些测试设置设置为处于活动状态。 有关测试设置的详细信息，请参阅[使用测试设置来收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)。
+如果你是从 Visual Studio 运行测试，则必须将这些测试设置设置为处于活动状态。 有关测试设置的详细信息，请参阅[使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)。
 
 ## <a name="tasks"></a>任务
 
