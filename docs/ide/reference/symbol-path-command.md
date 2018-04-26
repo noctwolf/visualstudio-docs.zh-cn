@@ -1,10 +1,9 @@
 ---
-title: “符号路径”命令 | Microsoft Docs
-ms.custom: ''
+title: “符号路径”命令
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.symbolpath
 helpviewer_keywords:
@@ -17,42 +16,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1b35c5d55eed31111746f2e2dbf9befb4fb7591
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22a27d795e5491081dca98a395c788cf8407e43e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="symbol-path-command"></a>“符号路径”命令
-设置调试器的目录列表，以搜索符号。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-Debug.SymbolPath pathname1;pathname2;... pathnameN  
-```  
-  
-## <a name="arguments"></a>自变量  
- `pathname`  
- 可选。 调试器路径列表的分号分隔列表，用于搜索符号。  
-  
-## <a name="remarks"></a>备注  
- 如果没有指定 `pathname`，该命令将列出当前符号路径。  
-  
-## <a name="example"></a>示例  
- 该示例向符号目录的列表添加两条路径。  
-  
-```  
-Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2  
-```  
-  
-## <a name="example"></a>示例  
- 该示例显示当前符号路径的分号分隔列表。  
-  
-```  
-Debug.SymbolPath  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [“命令”窗口](../../ide/reference/command-window.md)   
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
+设置调试器的目录列表，以搜索符号。
+
+## <a name="syntax"></a>语法
+
+```
+Debug.SymbolPath pathname1;pathname2;... pathnameN
+```
+
+## <a name="arguments"></a>自变量
+ `pathname`
+
+ 可选。 调试器路径列表的分号分隔列表，用于搜索符号。
+
+## <a name="remarks"></a>备注
+ 如果没有指定 `pathname`，该命令将列出当前符号路径。
+
+## <a name="example"></a>示例
+ 该示例向符号目录的列表添加两条路径。
+
+```
+Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
+```
+
+## <a name="example"></a>示例
+ 该示例显示当前符号路径的分号分隔列表。
+
+```
+Debug.SymbolPath
+```
+
+## <a name="see-also"></a>请参阅
+
+- [“命令”窗口](../../ide/reference/command-window.md)
+- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

@@ -18,14 +18,15 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c6c2ea2b46fcd05360e079dc84da9bfe807ff489
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d54811f2fe46733d256a473c5fcb1c523a15a71e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML 数据读入数据集
 ADO.NET 提供用于处理 XML 数据的简单方法。 在本演练中，你创建的 Windows 应用程序将 XML 数据加载到数据集。 数据集随后显示在<xref:System.Windows.Forms.DataGridView>控件。 最后，根据 XML 文件的内容的 XML 架构被显示在文本框中。

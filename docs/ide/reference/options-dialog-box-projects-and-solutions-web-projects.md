@@ -1,10 +1,9 @@
 ---
-title: “选项”对话框 ->“项目和解决方案”->“Web 项目”| Microsoft Docs
-ms.custom: ''
+title: 选项对话框、项目和解决方案、Web 项目
 ms.date: 07/14/2017
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba7c35cc61867930a94500d00195c246bfd39969
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 79863ec5038b420bcfa00ed67fe105c28cf9fff7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>选项对话框、项目和解决方案、Web 项目
 
@@ -26,16 +25,20 @@ ms.lasthandoff: 04/16/2018
 默认情况下，在 Visual Studio 中运行 Web 项目使用 Visual Studio 开发服务器。 有关详细信息，请参阅 [Visual Studio 中用于 ASP.NET Web 项目的 Web 服务器](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328)。
 
 > [!NOTE]
->  对话框中的可用选项以及显示的菜单命令的名称和位置可能与“帮助”中的描述不同，具体取决于您的当前设置或版本。 此“帮助”页根据“Web 设置”编写。 若要查看或更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。  
-  
-## <a name="settings"></a>设置  
+> 对话框中的可用选项以及显示的菜单命令的名称和位置可能与“帮助”中的描述不同，具体取决于您的当前设置或版本。 此“帮助”页根据“Web 设置”编写。 若要查看或更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
 
-**对网站和项目使用 64 位版本的 IIS Express**  
+
+## <a name="settings"></a>设置
+
+**对网站和项目使用 64 位版本的 IIS Express**
+
 选择此选项，以使用 IIS Express，而不是 Visual Studio 开发服务器。 有关详细信息，请参阅 [IIS Express 简介](http://go.microsoft.com/?linkid=9747914)和 [IIS Express 概述](http://go.microsoft.com/?linkid=9747915)。
 
-**如果错误列表中存在错误，则在开始运行 Web 应用程序之前发出警告**  
+**如果错误列表中存在错误，则在开始运行 Web 应用程序之前发出警告**
+
 如果已设置此选项，则在尝试运行存在编译错误的 Web 应用程序时，将发出警告。
 
-## <a name="see-also"></a>请参阅  
-[“选项”对话框 ->“项目和解决方案”](projects-and-solutions-options-dialog-box.md)  
-[“选项”对话框 ->“项目和解决方案”->“生成和运行”](options-dialog-box-projects-and-solutions-web-projects.md)
+## <a name="see-also"></a>请参阅
+
+- [“选项”对话框 ->“项目和解决方案”](projects-and-solutions-options-dialog-box.md)
+- [“选项”对话框 ->“项目和解决方案”->“生成和运行”](options-dialog-box-projects-and-solutions-web-projects.md)

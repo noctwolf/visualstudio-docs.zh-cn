@@ -11,14 +11,15 @@ ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d898260d14b92bbc740023e01f521f98927b160
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5b1701b95f86f3645ea7d54a47f8b3c7b36b3fd4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>设置从“数据源”窗口中拖动时要创建的控件
 你可以通过将某些项从创建数据绑定控件**数据源**窗口拖到 WPF 设计器或 Windows 窗体设计器。 在每个项**数据源**窗口具有时将其拖到设计器中创建的默认控件。 但是，你可以选择创建一个不同的控件。

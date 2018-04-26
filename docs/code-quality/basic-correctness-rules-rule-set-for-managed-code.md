@@ -1,6 +1,7 @@
 ---
 title: 托管代码的“基本更正规则”规则集
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6523c532d46329f3453744caab9bc9f0935702f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5bbd43b47e104dc775629e0e517ba8c47c2a49ea
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>托管代码的“基本更正规则”规则集
 基本更正规则规则集重点关注逻辑错误和 framework Api 用法的常见错误。 基本更正规则包含集中的最少量建议规则的规则的规则。 有关详细信息，请参阅[托管建议规则规则设置对于托管代码](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)应包括此规则集可展开的最小值建议规则所报告的警告的列表上。

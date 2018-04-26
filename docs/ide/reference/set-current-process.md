@@ -1,10 +1,9 @@
 ---
-title: 设置当前进程 | Microsoft Docs
-ms.custom: ''
+title: 设置当前进程
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Debug.SetCurrentProcess command
 - Set Current Process command
@@ -14,35 +13,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea3028be32fdccffd70f7b3d0aa9d3b4eba172c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 907ef900283cb3f15d9e65f7196c3cf42e191ed3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-current-process"></a>设置当前进程
-将指定的进程设置为调试器中的活动进程。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-Debug.SetCurrentProcess index  
-```  
-  
-## <a name="arguments"></a>自变量  
- `index`  
- 必须的。 进程的索引。  
-  
-## <a name="remarks"></a>备注  
- 调试时可以附加到多个进程，但在任何给定时间，调试器中只有一个进程处于活动状态。 可以使用 `SetCurrentProcess` 命令设置活动进程。  
-  
-## <a name="example"></a>示例  
-  
-```  
->Debug.SetCurrentProcess 1  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
- [“命令”窗口](../../ide/reference/command-window.md)   
- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+将指定的进程设置为调试器中的活动进程。
+
+## <a name="syntax"></a>语法
+
+```
+Debug.SetCurrentProcess index
+```
+
+## <a name="arguments"></a>自变量
+ `index`
+
+ 必须的。 进程的索引。
+
+## <a name="remarks"></a>备注
+ 调试时可以附加到多个进程，但在任何给定时间，调试器中只有一个进程处于活动状态。 可以使用 `SetCurrentProcess` 命令设置活动进程。
+
+## <a name="example"></a>示例
+
+```
+>Debug.SetCurrentProcess 1
+```
+
+## <a name="see-also"></a>请参阅
+
+- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
+- [“命令”窗口](../../ide/reference/command-window.md)
+- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)

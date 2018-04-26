@@ -1,9 +1,10 @@
 ---
-title: 面向 .NET 开发者的 Visual Studio 2017 | Microsoft Docs
+title: 面向 .NET 开发者的 Visual Studio 2017
 description: 概述 Visual Studio 2017 功能如何帮助用户更快编写更好的 .NET 代码。
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -11,15 +12,15 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31291814c2158c9aeb8d48b1b7b3073a4ccbcaf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b7625a074732949e9fb876627dbff1abf005982
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>适用于 .NET 开发人员的 Visual Studio 2017 工作效率指南
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) 使开发人员工作更为高效！ 改进了解决方案启动和加载、测试发现以及键入时延迟问题的性能和可靠性。 此外，还添加并增强了有助于更快更好地写入代码的功能。 这些功能包括：导航到反编译程序集、键入的变量名称建议、测试资源管理器中的层次结构视图、“转到全部”(Ctrl+T) 导航到文件/类型/成员/符号声明、智能异常帮助程序、代码类型配置和执行、以及众多重构和代码修补程序。 
+[Visual Studio 2017](https://www.visualstudio.com/downloads/) 使开发人员工作更为高效！ 改进了解决方案启动和加载、测试发现以及键入时延迟问题的性能和可靠性。 此外，还添加并增强了有助于更快更好地写入代码的功能。 这些功能包括：导航到反编译程序集、键入的变量名称建议、测试资源管理器中的层次结构视图、“转到全部”(Ctrl+T) 导航到文件/类型/成员/符号声明、智能异常帮助程序、代码类型配置和执行、以及众多重构和代码修补程序。
 
 按照本指南优化工作效率。
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/16/2018
 - [适用于 Visual Studio 的 HotKeys (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-Visual Studio 常用快捷方式如下： 
+Visual Studio 常用快捷方式如下：
 
 | 快捷方式（所有配置文件） | 命令 | 描述 |
 |-|-|-|
@@ -61,7 +62,7 @@ Visual Studio 2017 有一种名为“转到全部”(Ctrl+T) 的功能。 通过
 
 ## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>我的团队对基本代码强制实施代码样式规则。
 可以使用 .editorconfig 文件编写编码约定，并使其跟随源。
-- 建议安装 [EditorConfig 语言服务扩展](https://aka.ms/editorconfig)，以用于在 Visual Studio 中添加和编辑 .editorconfig 文件。 
+- 建议安装 [EditorConfig 语言服务扩展](https://aka.ms/editorconfig)，以用于在 Visual Studio 中添加和编辑 .editorconfig 文件。
 - 签出所有 .NET 编码约定选项的[文档](https://aka.ms/editorconfigDocs)。
 - 查看[此要点](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8)获取示例 .editorconfig。
 
@@ -70,10 +71,10 @@ Visual Studio 2017 有一种名为“转到全部”(Ctrl+T) 的功能。 通过
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>我需要更多重构和代码修补程序。
 Visual Studio 2017 包含大量重构、代码生成操作和代码修补程序。 红色波浪线表示错误，绿色波浪线表示警告，三个灰色点表示代码建议。 若要访问代码修补程序，可以单击灯泡/螺丝刀图标或按 Ctrl+.  或 Alt+Enter。 每个修补程序都附带一个显示修补工作方式实时代码差异的预览窗口。
 
-- 常用的快速修复和重构包括： 
+- 常用的快速修复和重构包括：
   - *重命名*
   - *提取方法*
-  - *更改方法签名* 
+  - *更改方法签名*
   - *生成构造函数*
   - *生成方法*
   - 将类型移动到文件
@@ -81,8 +82,8 @@ Visual Studio 2017 包含大量重构、代码生成操作和代码修补程序�
   - 添加参数
   - 删除不必要的 Using
   - 请阅读[文档](https://aka.ms/refactorings)，查看详细信息
-- 使用 [Roslyn 分析器](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix)编写自己的重构或代码修补程序。 
-- 有几个社区成员写了一些免费扩展，这些扩展添加了其他的代码检查： 
+- 使用 [Roslyn 分析器](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix)编写自己的重构或代码修补程序。
+- 有几个社区成员写了一些免费扩展，这些扩展添加了其他的代码检查：
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
   - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
@@ -93,10 +94,10 @@ Visual Studio 2017 包含大量重构、代码生成操作和代码修补程序�
 Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 详细了解[代码导航功能](../ide/navigating-code.md)
 
 | 功能 | 快捷键 | 详细信息/改进 |
-|- | - | -| 
+|- | - | -|
 | 查找所有引用 | **Shift+F12**| 结果已着色，可按项目、定义等分组。还可“锁定”结果。 |
 | 转到实现 | **Ctrl+F12** | 可以对 `override` 关键字使用转到定义来导航到重写成员 |
-| 转到定义 | **F12** 或 **Ctrl+Click**| 按住 Ctrl，同时单击以导航到定义 | 
+| 转到定义 | **F12** 或 **Ctrl+Click**| 按住 Ctrl，同时单击以导航到定义 |
 | 查看定义 | **Alt+F12** | 定义的内联视图 |
 | 结构可视化工具 | 括号中的灰色虚线 | 悬停鼠标查看代码结构 |
 | 导航到反编译的程序集 | **F12** 或 **Ctrl+Click** | 通过启用以下功能导航到外部源：“工具”>“选项”>“文本编辑器”>“C#”>“高级”>“启用导航到反编译源”。 |
@@ -112,8 +113,8 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 ![Visual Studio 中的文本资源管理器的层次结构视图](../ide/media/VSGuide_Testing.png)
 
 ## <a name="i-want-to-debug-my-code"></a>我想要调试代码。
-我们已在 Visual Studio 2017 中添加了大量新的调试功能。 
-- “运行到点击位置”功能具有以下作用：你将鼠标悬停在一行代码旁，点击出现的绿色“运行”图标，则程序会运行到该行停止。 
+我们已在 Visual Studio 2017 中添加了大量新的调试功能。
+- “运行到点击位置”功能具有以下作用：你将鼠标悬停在一行代码旁，点击出现的绿色“运行”图标，则程序会运行到该行停止。
 - 新的异常帮助程序将最重要的信息（如哪些变量在 NullReferenceException 中是“NULL”）置于对话框顶层。
 - [后退](../debugger/how-to-use-intellitrace-step-back.md)让你可以返回到上一个断点或步骤，并查看当时应用程序的状态。
 - [快照调试](/azure/application-insights/app-insights-snapshot-debugger)让你可以在引发异常时调查实时 Web 应用的状态（必须是在 Azure 上）。
@@ -121,8 +122,8 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 ![VS2017 中新的异常帮助程序](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>我想要在项目中使用版本控制。
-可以使用 git 或 TFVC 在 Visual Studio 中存储和更新代码。 
-- 利用团队资源管理器整理本地更改，并使用状态栏跟踪挂起的提交和更改。 
+可以使用 git 或 TFVC 在 Visual Studio 中存储和更新代码。
+- 利用团队资源管理器整理本地更改，并使用状态栏跟踪挂起的提交和更改。
 - 在 Visual Studio 中通过 [Visual Studio 持续交付工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)扩展设置项目的持续集成和交付，以采用敏捷开发者工作流。
 
 ![Visual Studio 中的源控件](../ide/media/VSIDE_Productivity_SourceControl.png)

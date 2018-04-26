@@ -1,6 +1,7 @@
 ---
 title: Blend 中的“美工板”修改键
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74859e0a7655f45be26061d158e482255ad2855e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a6e48dea790b5cb3adb6396a2bdd74b4625e30ec
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend 中的“美工板”修改键
 某些键盘快捷方式没有关联的菜单项，这意味着你无法使用 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 用户界面来发现这些键盘快捷方式。 下表列出了修改操作（例如调整对象的大小）的快捷方式。

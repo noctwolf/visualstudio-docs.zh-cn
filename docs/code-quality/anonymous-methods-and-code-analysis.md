@@ -1,6 +1,7 @@
 ---
 title: 匿名方法和代码分析
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c219bbd3f674d564fe1341057de213b451f755f3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9e069976badeffbce04b2f245277426441d3df2f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>匿名方法和代码分析
 *匿名方法*是没有名称的方法。 匿名方法是最常用于将代码块作为委托参数传递。
@@ -105,7 +106,7 @@ class Class
 
  类可以包含内联匿名方法，将值分配给具有多个构造函数的字段。 在这种情况下，警告和度量值都与关联的所有构造函数除非该构造函数将链接到同一类中的另一个构造函数。
 
- 例如，在下面的类的声明中找到任何警告**anonymousMethod**应针对引发**Class(int)**和**Class(string)**但不是针对**Class()**。
+ 例如，在下面的类的声明中找到任何警告**anonymousMethod**应针对引发**Class(int)** 和**Class(string)** 但不是针对**Class()**。
 
 ```vb
 
@@ -145,7 +146,7 @@ class Class
 }
 ```
 
- 尽管这看起来有点意外，这是因为编译器输出为每个构造函数都未链接到另一个构造函数的唯一方法。 由于此行为，任何违反它将出现在**anonymousMethod**必须单独取消。 这也意味着，如果新的构造函数是引入了针对以前禁止显示警告**Class(int)**和**Class(string)**必须也被抑制针对新的构造函数。
+ 尽管这看起来有点意外，这是因为编译器输出为每个构造函数都未链接到另一个构造函数的唯一方法。 由于此行为，任何违反它将出现在**anonymousMethod**必须单独取消。 这也意味着，如果新的构造函数是引入了针对以前禁止显示警告**Class(int)** 和**Class(string)** 必须也被抑制针对新的构造函数。
 
  你可以解决此问题的两种方式之一。 你可以声明**anonymousMethod**公共构造函数中的所有构造函数链。 或者，你无法将其声明中初始化方法调用的所有构造函数。
 

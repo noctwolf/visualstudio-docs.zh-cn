@@ -1,9 +1,8 @@
 ---
-title: XML 架构设计器 |Microsoft 文档
-ms.custom: ''
+title: XML 架构设计器
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: ffdf63ee-faa6-45b7-bbf9-a5644dc8aca2
 author: gewarren
@@ -11,32 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7d613ab2789ced0e43e8809d4dd8285b5385c8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: da0a935d255185be82e3f0300009d971802b955e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xml-schema-designer"></a>XML 架构设计器
-XML 架构设计器（XSD 设计器）是一个图形工具，可用于在不同的抽象级别使架构集可视化。 以下是 XSD 设计器的主要组件：  
-  
--   [XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)使您能够浏览和导航 XML 架构树以及执行搜索。  
-  
--   [起始视图](../xml-tools/start-view.md)是的启动点 XSD 设计器; 从起始视图，你可以导航到 XSD 设计器的其他视图，并查看架构集的详细信息。  
-  
--   [图形视图](../xml-tools/graph-view.md)使你可以查看架构集和架构节点之间的关系的概述。  
-  
--   [内容模型视图](../xml-tools/content-model-view.md)提供的图形表示形式的局部和全局架构节点，包括简单和复杂类型、 元素、 组、 属性和属性组的详细信息。  
-  
-## <a name="in-this-section"></a>本节内容  
- [XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)  
- 概述 XML 架构资源管理器以及它如何使您能够使用 XML 架构定义语言 (XSD) 架构。  
-  
- [XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)  
- 概述 XSD 架构设计器工作区。  
-  
- [与 XML 编辑器的集成](../xml-tools/integration-with-xml-editor.md)  
- 介绍 XML 架构设计器如何与 XML 编辑器集成。  
-  
- [XML 架构设计器任务](../xml-tools/xml-schema-designer-tasks.md)  
- 介绍如何使用 XML 架构设计器工具完成常见任务。
+
+XML 架构设计器（XSD 设计器）是一个图形工具，可用于在不同的抽象级别使架构集可视化。 以下是 XSD 设计器的主要组件：
+
+-   [XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)使您能够浏览和导航 XML 架构树以及执行搜索。
+
+-   [起始视图](../xml-tools/start-view.md)是的启动点 XSD 设计器; 从起始视图，你可以导航到 XSD 设计器的其他视图，并查看架构集的详细信息。
+
+-   [图形视图](../xml-tools/graph-view.md)使你可以查看架构集和架构节点之间的关系的概述。
+
+-   [内容模型视图](../xml-tools/content-model-view.md)提供的图形表示形式的局部和全局架构节点，包括简单和复杂类型、 元素、 组、 属性和属性组的详细信息。

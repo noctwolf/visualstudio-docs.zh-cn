@@ -1,10 +1,9 @@
 ---
-title: 项目属性引用 | Microsoft Docs
-ms.custom: ''
+title: 项目属性引用
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - user interface [Visual Studio], projects
 - projects [Visual Studio], user interface
@@ -14,32 +13,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a80497983c189084bcd64cf87acabc7d54628a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9670d5789e57c4a3c156cca0608840762d094b9f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="project-properties-reference"></a>项目属性引用
-详细了解如何配置和自定义项目属性。  
-  
-## <a name="project-properties-pages"></a>项目属性页  
-  
-|标题|描述|  
-|-----------|-----------------|  
-|[“项目设计器”->“应用程序”页 (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|使用此页指定 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 项目的应用程序设置和属性。|  
-|[“项目设计器”->“应用程序”页 (C#)](../../ide/reference/application-page-project-designer-csharp.md)|使用此页指定 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目的应用程序设置和属性。|  
-|[“项目设计器”->“生成事件”页 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)|使用此窗格指定生成配置说明。|  
-|[“项目设计器”->“生成”页 (C#)](../../ide/reference/build-page-project-designer-csharp.md)|使用此窗格指定 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目的生成配置属性。|  
-|[“项目设计器”->“编译”页 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)|使用此窗格指定 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 项目的编译属性。|  
-|||  
-|[“项目设计器”->“调试”页](../../ide/reference/debug-page-project-designer.md)|使用此页指定项目的调试属性。|  
-|[“项目设计器”->“代码分析”](../../ide/reference/code-analysis-project-designer.md)|使用此页配置代码分析工具。|  
-|[“项目设计器”->“发布”页](../../ide/reference/publish-page-project-designer.md)|使用此页配置 [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 的属性。|  
-|||  
-|[项目设计器 ->“引用”页 (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md)|使用此页管理项目所使用的引用。|  
-|[“项目设计器”->“安全”页](../../ide/reference/security-page-project-designer.md)|使用此页配置使用 [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 部署部署的应用程序的代码访问安全性设置。|  
-|[“项目设计器”->“签名”页](../../ide/reference/signing-page-project-designer.md)|使用此页对应用程序和部署清单及程序集进行签名。|  
-  
-## <a name="see-also"></a>请参阅  
- [解决方案和项目](../../ide/solutions-and-projects-in-visual-studio.md)
+详细了解如何配置和自定义项目属性。
+
+## <a name="project-properties-pages"></a>项目属性页
+
+|标题|描述|
+|-----------|-----------------|
+|[“项目设计器”->“应用程序”页 (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|使用此页指定 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 项目的应用程序设置和属性。|
+|[“项目设计器”->“应用程序”页 (C#)](../../ide/reference/application-page-project-designer-csharp.md)|使用此页指定 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目的应用程序设置和属性。|
+|[“项目设计器”->“生成事件”页 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)|使用此窗格指定生成配置说明。|
+|[“项目设计器”->“生成”页 (C#)](../../ide/reference/build-page-project-designer-csharp.md)|使用此窗格指定 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目的生成配置属性。|
+|[“项目设计器”->“编译”页 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)|使用此窗格指定 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 项目的编译属性。|
+|||
+|[“项目设计器”->“调试”页](../../ide/reference/debug-page-project-designer.md)|使用此页指定项目的调试属性。|
+|[“项目设计器”->“代码分析”](../../ide/reference/code-analysis-project-designer.md)|使用此页配置代码分析工具。|
+|[“项目设计器”->“发布”页](../../ide/reference/publish-page-project-designer.md)|使用此页配置 [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 的属性。|
+|||
+|[项目设计器 ->“引用”页 (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md)|使用此页管理项目所使用的引用。|
+|[“项目设计器”->“安全”页](../../ide/reference/security-page-project-designer.md)|使用此页配置使用 [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 部署部署的应用程序的代码访问安全性设置。|
+|[“项目设计器”->“签名”页](../../ide/reference/signing-page-project-designer.md)|使用此页对应用程序和部署清单及程序集进行签名。|
+
+## <a name="see-also"></a>请参阅
+
+- [解决方案和项目](../../ide/solutions-and-projects-in-visual-studio.md)

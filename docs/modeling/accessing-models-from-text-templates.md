@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 397e60225740c34d1d70555ccd8294522550a3e1
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 54bd5c4989f23b1de64a17bdf8d88ccebeb65a38
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>从文本模板访问模型
 通过使用文本模板，你可以创建报表文件、 源代码文件和其他基于域特定语言模型的文本文件。 有关文本模板的基本信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 文本模板时进行调试，DSL 在实验模式下将工作，并且还将在其部署 DSL 的计算机上工作。

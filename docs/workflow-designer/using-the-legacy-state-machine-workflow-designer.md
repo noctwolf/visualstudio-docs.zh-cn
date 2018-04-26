@@ -1,7 +1,9 @@
 ---
-title: 使用旧版状态机工作流设计器 |Microsoft 文档
+title: 工作流设计器-使用旧版状态机工作流设计器
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - StateFinalizationActivity activity
 - StateActivity activity
@@ -17,16 +19,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16178d2f83ef9cc45ef7007350e30d2b36d6993a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6ad09c2e999d9432b3c4e1062cb3031eb20ff56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>使用旧版状态机工作流设计器
-当创建新的状态机工作流项目中[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]面向[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]，你可以选择使用**状态机工作流控制台应用程序**或**状态机工作流库**旧项目模板。 如果选择其中一个状态机项目模板，则会以旧工作流设计器用户界面的形式呈现状态机设计器。 有关旧状态机项目模板的信息，请参阅[如何： 创建状态机工作流控制台应用程序 （旧版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)和[如何： 创建状态机工作流库 （旧版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
- 状态机工作流由一组状态组成。 一个状态被指示为初始状态。 每个状态都可以接收一组特定事件。 视事件而定，可以转换到另一个状态。 状态机工作流可以有最终状态。 当转换到最终状态时，工作流将完成。
+当你在面向.NET Framework 版本 3.5 或 WinFX 的 Visual Studio 2010 中创建新的状态机工作流项目时，你可以选择使用**状态机工作流控制台应用程序**或**状态机工作流库**旧项目模板。 如果选择其中一个状态机项目模板，则会以旧工作流设计器用户界面的形式呈现状态机设计器。 有关旧状态机项目模板的信息，请参阅[如何： 创建状态机工作流控制台应用程序 （旧版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)和[如何： 创建状态机工作流库 （旧版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+
+状态机工作流由一组状态组成。 一个状态被指示为初始状态。 每个状态都可以接收一组特定事件。 视事件而定，可以转换到另一个状态。 状态机工作流可以有最终状态。 当转换到最终状态时，工作流将完成。
 
 ## <a name="state-machine-designer-views"></a>状态机设计器视图
  状态机设计器是一种自由形式的设计器，这意味着可以在设计图面上自由移动活动。 状态机设计器有两个视图：*状态*视图和*事件驱动*视图。

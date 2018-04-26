@@ -1,6 +1,7 @@
 ---
-title: Visual Studio IDE 64 位支持 | Microsoft Docs
+title: Visual Studio IDE 64 位支持
 ms.date: 02/21/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e6067e3280a998f4b2296f880471080bd7bb6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b911a6529e3e32075ca8599c921ae8369afb691
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64 位支持
 
@@ -32,5 +33,5 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="debugging-a-64-bit-application"></a>调试 64 位应用程序
 
-[调试 64 位应用程序](../debugger/debug-64-bit-applications.md)
-[使用转储文件](../debugger/using-dump-files.md)
+- [调试 64 位应用程序](../debugger/debug-64-bit-applications.md)
+- [使用转储文件](../debugger/using-dump-files.md)

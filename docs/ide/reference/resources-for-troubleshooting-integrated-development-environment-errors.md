@@ -1,10 +1,9 @@
 ---
-title: 用于排除集成开发环境错误的资源 | Microsoft Docs
-ms.custom: ''
+title: 用于排除集成开发环境错误的资源
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
 - VS.Message.0x00005A8E
@@ -96,11 +95,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48516bd598719112a3a94216b3510b628579f032
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a87d0b6aeec41071fd1e1018155b0a7898ed4a6c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用于排除集成开发环境错误的资源
 
@@ -120,6 +119,6 @@ ms.lasthandoff: 04/16/2018
 
 如果借助其他资源仍不能解决问题，则可以访问 [Microsoft 支持](http://go.microsoft.com/fwlink/?linkid=1782)网站，与 Microsoft 支持服务联系。 若要了解所在区域中可用的产品支持，请参阅[与我们联系](../../ide/talk-to-us.md)。
 
- ## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>请参阅
 
 * [代理错误疑难解答](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)

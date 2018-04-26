@@ -1,6 +1,7 @@
 ---
 title: 最佳做法和示例 (SAL)
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: mikeblome
@@ -8,11 +9,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: d26f5329f530af2d6547f44b73ded82c5db53f4f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5e1b86508b803844255458f3aa2c7f33d859af93
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳做法和示例 (SAL)
 下面是一些关于充分利用源代码批注语言 (SAL)，并避免一些常见问题的方法。

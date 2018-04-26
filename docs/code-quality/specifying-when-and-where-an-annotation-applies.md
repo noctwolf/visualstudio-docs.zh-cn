@@ -1,6 +1,7 @@
 ---
 title: 指定何时以及在何处应用批注
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
@@ -14,11 +15,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 288d422de6d4e4c0f372820d838d0173c990f2a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9d99ebce3adc27039763e11ed4882a20199e8469
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>指定何时以及在何处应用批注
 条件批注时，则可能需要其他批注以指定的分析器。  例如，如果函数具有可以是同步还是异步的变量，将函数的行为，如下所示： 在同步的情况下始终最终成功，但在异步的情况下它报告错误如果它不能立即成功。 以同步方式调用该函数时，检查的结果值提供到代码分析器的任何值，因为它将不返回。  但是，当以异步方式调用该函数，且还未签函数结果时, 可能发生严重错误。 此示例演示如何在其中你可以使用的情况下`_When_`批注 — 在本文的后面介绍-若要启用检查。

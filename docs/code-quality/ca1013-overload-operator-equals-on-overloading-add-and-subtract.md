@@ -1,6 +1,7 @@
 ---
 title: CA1013：重载加法方法和减法方法时重载相等运算符
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -19,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fd43cc3077c037b70eaa8107563bd8f40b6a096
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 11841248192bc9b726076641e1219f54ab526447
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013：重载加法方法和减法方法时重载相等运算符
 |||
@@ -73,10 +74,10 @@ return left.Equals(right);
 
  本示例生成以下输出。
 
- **错误类型: {2，2} {2，2} 是否相等？不**
-**良好类型: {3，3} {3，3} 是否相等？是**
-**良好类型: {3，3} {3，3} 包括 = =？ 是**
-**错误类型: {2，2} {9,9} 相等？不**
-**良好类型: {3，3} {9,9} 包括 = =？ 不**
+ **错误类型： {2,2} {2,2}相等？不**
+**良好类型： {3,3} {3,3}相等？是**
+**良好类型： {3,3} {3,3}包括 = =？ 是**
+**错误类型： {2,2} {9,9}相等？不**
+**良好类型： {3,3} {9,9}包括 = =？ 不**
 ## <a name="see-also"></a>请参阅
  [相等运算符](/dotnet/standard/design-guidelines/equality-operators)

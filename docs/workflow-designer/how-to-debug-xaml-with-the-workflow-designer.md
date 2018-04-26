@@ -1,28 +1,31 @@
 ---
-title: 如何： 使用工作流设计器调试 XAML |Microsoft 文档
+title: 工作流设计器-如何： 使用工作流设计器调试 XAML
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c0ac923de3c5381add6f0a33612258e8b9d64824
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eac6294861080614cbdd46e6ac1cc9a05d7124ff
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>如何：使用工作流设计器调试 XAML
-工作流是以 XAML 的形式定义的。 工作流的 UI 表示形式建立在定义该工作流的 XAML 树之上。 调试体验是类似于调试 Windows 工作流设计器中的工作流。 例如，调试 XAML 时，“局部变量”、“监视”和“线程”窗口与它们在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 调试中的工作方式相同。 此外，在 XAML 调试过程中，“调用堆栈”视图是工作流执行流的基于行的分层视图。
+
+工作流是以 XAML 的形式定义的。 工作流的 UI 表示形式建立在定义该工作流的 XAML 树之上。 调试体验是类似于调试 Windows 工作流设计器中的工作流。 例如，调试 XAML 时，局部变量、 监视，以及线程窗口适用相同的方式与它们在工作流设计器调试。 此外，在 XAML 调试过程中，“调用堆栈”视图是工作流执行流的基于行的分层视图。
 
 > [!NOTE]
 > 如果工作流的 XAML 位于活动所在的同一程序集中，将不包括类名称的程序集部分。 没有类（活动）名称的此部分，将不能在运行时加载 XAML。 建议不要在主项目所在的同一命名空间中定义活动；否则，在设计器中编辑后需要手动编辑 XAML。
 
-### <a name="to-debug-workflow-xaml"></a>调试工作流 XAML
+## <a name="to-debug-workflow-xaml"></a>调试工作流 XAML
 
-1.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中打开工作流或活动项目。
+1.  在 Visual Studio 中打开工作流或活动项目。
 
 2.  在活动或你想要调试中所述的活动上设置断点[如何： 在工作流中设置断点](../workflow-designer/how-to-set-breakpoints-in-workflows.md)。
 

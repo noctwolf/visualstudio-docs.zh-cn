@@ -12,14 +12,15 @@ ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1088a20181d9af5072d5335c63f3cb3ace47f4db
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a484388223b7dae62f165e13b2fc75368b0e642f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>创建 Windows 窗体用户控件支持简单数据绑定
 当在 Windows 应用程序中的窗体上显示数据，你可以选择从现有控件**工具箱**，或如果你的应用程序需要在标准控件中不可用的功能，还可以创作自定义控件。 本演练显示了如何创建实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute> 的控件。 用于实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute> 的控件可以包含一个可以绑定到数据的属性。 此类控件类似于 <xref:System.Windows.Forms.TextBox> 或 <xref:System.Windows.Forms.CheckBox>。

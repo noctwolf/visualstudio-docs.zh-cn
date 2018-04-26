@@ -2,8 +2,7 @@
 title: ClickOnce 和应用程序设置 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - ClickOnce deployment, application settings
 ms.assetid: 891caba6-faef-4a3c-8f71-60e6fadb60eb
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69563869fe6518d112273da13889fc04db96d09f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e325ed1d66729eaed18c577c27f09a3db45d98f6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和应用程序设置
 Windows 窗体的应用程序设置，可以轻松创建、 存储和维护自定义应用程序和客户端上的用户首选项。 以下文档介绍了在 ClickOnce 应用程序中，应用程序设置文件的工作原理以及用户升级到下一个版本时，ClickOnce 如何迁移设置。  
@@ -54,7 +53,7 @@ Windows 窗体的应用程序设置，可以轻松创建、 存储和维护自�
 ## <a name="clickonce-and-roaming-settings"></a>ClickOnce 和漫游设置  
  ClickOnce 并不适用于漫游设置，它允许你设置文件，以便在网络上计算机之间跟随您。 如果你需要漫游设置，你将需要为实现将设置存储在网络上的应用程序设置提供程序或开发您自己的自定义设置类来存储远程计算机上的设置。 设置提供程序中的详细信息，请参阅[应用程序设置体系结构](/dotnet/framework/winforms/advanced/application-settings-architecture)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [应用程序设置概述](/dotnet/framework/winforms/advanced/application-settings-overview)   
  [ClickOnce 缓存概述](../deployment/clickonce-cache-overview.md)   

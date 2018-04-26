@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a54aca1e3732f366172abc0b4acea92cd28c6fae
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 8cc48c70cd6fe8bd45ed65b96732d3db31a386e2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 可以通过使用 Managed Extensibility Framework (MEF) 扩展你的域特定语言 (DSL)。 你或其他开发人员将能够为 DSL 编写扩展，而无需更改的 DSL 定义和程序代码。 此类扩展包括菜单命令、 拖放处理程序和验证。 用户将能够安装 DSL，，然后根据需要为其安装扩展。
@@ -106,7 +107,7 @@ ms.lasthandoff: 04/20/2018
 
 5.  DSL 资源管理器，在选择**Editor\Validation**。
 
-6.  在属性窗口中，请确保至少一个属性名为**使用...**是`true`。
+6.  在属性窗口中，请确保至少一个属性名为**使用...** 是`true`。
 
 7.  在解决方案资源管理器工具栏中，单击**转换所有模板**。
 

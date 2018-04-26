@@ -1,10 +1,9 @@
 ---
-title: “选项”对话框 ->“环境”->“常规”| Microsoft Docs
-ms.custom: ''
+title: “选项”对话框 ->“环境”->“常规”
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -28,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c427752fa1b89acb2fa55afc7acd8c4535686c37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f12249cc8d0e8bd8396e1e1ebbbfefeddbb22b60
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“常规”
 
@@ -67,17 +66,27 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="other"></a>其他
 
-**“窗口”菜单中显示的项**自定义“窗口”菜单的“窗口”列表中显示的窗口数。 键入一个介于 1 和 24 之间的数字。 默认情况下，该数字为 10。
+“窗口”菜单中显示的项
 
-**“最近使用的文件”列表中显示的项**自定义出现在“文件”菜单上的最近使用过的项目和文件数。 键入一个介于 1 和 24 之间的数字。 默认情况下，该数字为 10。 这可以轻松地检索最近使用的项目和文件。
+自定义“窗口”菜单的“窗口”列表中显示的窗口数。 键入一个介于 1 和 24 之间的数字。 默认情况下，该数字为 10。
 
-**显示状态栏**显示状态栏。 状态栏位于 IDE 窗口的底部并显示关于正在进行的操作的进度信息。
+“最近使用的文件”列表中显示的项
 
-**“关闭”按钮只影响活动工具窗口**指定在单击“关闭”按钮时，只关闭具有焦点的工具窗口，而不是停靠集中的所有工具窗口。 默认情况下，该选项是选中的。
+自定义出现在“文件”菜单上的最近使用过的项目和文件数。 键入一个介于 1 和 24 之间的数字。 默认情况下，该数字为 10。 这可以轻松地检索最近使用的项目和文件。
 
-**“自动隐藏”按钮只影响活动工具窗口**指定在单击“自动隐藏”按钮时，只自动隐藏具有焦点的工具窗口，而不是停靠集中的所有工具窗口。 默认情况下，不选择该选项。
+显示状态栏
+
+显示状态栏。 状态栏位于 IDE 窗口的底部并显示关于正在进行的操作的进度信息。
+
+“关闭”按钮只影响活动工具窗口
+
+指定在单击“关闭”按钮时，只关闭具有焦点的工具窗口，而不是停靠集中的所有工具窗口。 默认情况下，该选项是选中的。
+
+“自动隐藏”按钮只影响活动工具窗口
+
+指定在单击“自动隐藏”按钮时，只自动隐藏具有焦点的工具窗口，而不是停靠集中的所有工具窗口。 默认情况下，不选择该选项。
 
 ## <a name="see-also"></a>请参阅
 
-[环境选项对话框](../../ide/reference/environment-options-dialog-box.md)
-[自定义窗口布局](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)
+- [自定义窗口布局](../../ide/customizing-window-layouts-in-visual-studio.md)

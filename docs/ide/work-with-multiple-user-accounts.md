@@ -1,7 +1,7 @@
 ---
-title: 使用多个用户帐户 | Microsoft Docs
-ms.custom: ''
+title: 使用多个用户帐户
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
 author: TerryGLee
@@ -9,11 +9,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b93a57592ae87daa8d60d5a4d5e7166d26cfe61f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55121b8cdaa55bed158aac25163462705c2aeec8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>使用多个用户帐户
 
@@ -78,4 +78,4 @@ Azure AD 支持 ASP.NET MVC web 应用程序中的最终用户单一登录或 We
 
 ## <a name="see-also"></a>请参阅
 
-[登录 Visual Studio](signing-in-to-visual-studio.md)
+- [登录 Visual Studio](signing-in-to-visual-studio.md)

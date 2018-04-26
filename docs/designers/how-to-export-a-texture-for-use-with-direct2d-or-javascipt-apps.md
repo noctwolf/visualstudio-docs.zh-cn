@@ -1,6 +1,7 @@
 ---
 title: 如何：导出纹理以用于 Direct2D 或 Javascipt 应用程序
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1592488b58c42c238c75378185037d670fe89d0d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 81bfc2b3b171dffdcf77a22ccf02d5e3f70658a6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：导出纹理以用于 Direct2D 或 Javascipt 应用程序
 图像内容管道可以生成与 Direct2D 的内部呈现约定兼容的纹理。 这种类型的纹理适合在使用 Direct2D 的应用和使用 JavaScript 创建的 UWP 应用中使用。

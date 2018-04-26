@@ -1,8 +1,9 @@
 ---
-title: 用于 Excel 的编码的 UI 测试扩展示例 | Microsoft Docs
+title: 适用于 Excel 的示例编码的 UI 测试扩展
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: sample
 helpviewer_keywords:
 - coded UI tests, extensions for Excel
 ms.author: gewarren
@@ -10,13 +11,13 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7c13ede1045734a1038cd89a8faab82c3b48f66d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c76ba569a6f9f34d28d6aaaa268a366c1be7b31
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="sample-coded-ui-test-extension-for-excel"></a>用于 Excel 的编码的 UI 测试扩展示例
+# <a name="sample-coded-ui-test-extension-for-excel"></a>适用于 Excel 的示例编码的 UI 测试扩展
 此示例的扩展组件在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 编码的 UI 测试进程中运行，某种程度上和底层的 `ExtensionPackage` 类组成层次结构。 `TechnologyManager`、`ActionFilter` 和 `PropertyProvider` 类在下一层，而控件元素位于顶层。
 
  ![Excel 测试扩展体系结构](../test/media/excel_extarch.png "Excel_ExtArch") Excel 扩展体系结构

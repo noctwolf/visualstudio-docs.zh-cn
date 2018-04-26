@@ -1,9 +1,9 @@
 ---
-title: 代码片段选择器 | Microsoft Docs
-ms.custom: ''
+title: 代码段选择器
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
 helpviewer_keywords:
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb01cfc51591264b258518f4c90276a7ece11250
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 774ee47f02fe146caade0540be5ee2fb7f59904e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-snippet-picker"></a>代码段选择器
 
@@ -47,15 +47,17 @@ Visual Studio 代码编辑器提供一种代码片段选择器，让你单击几
 
 ## <a name="uielement-list"></a>UIElement 列表
 
-项名称  
+项名称
+
 可编辑文本字段，显示在“项列表”中选定的项的名称。 若要执行渐进式搜索以查找所需的项，请首先在此字段中键入其名称。 继续添加字母，直到在“项列表”中选定所需的项。
 
-项列表  
+项列表
+
 可以插入的代码片段的列表，或包含代码片段的文件夹的列表。 若要插入片段或展开文件夹，请选择所需的项，然后按 Enter。
 
 ## <a name="see-also"></a>请参阅
 
-[有关使用代码片段的最佳做法](../../ide/best-practices-for-using-code-snippets.md)  
-[Visual Basic IntelliSense 代码段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[在代码中设置书签](../../ide/setting-bookmarks-in-code.md)  
-[如何：使用外侧代码片段](../../ide/how-to-use-surround-with-code-snippets.md)
+- [有关使用代码片段的最佳做法](../../ide/best-practices-for-using-code-snippets.md)
+- [Visual Basic IntelliSense 代码段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [在代码中设置书签](../../ide/setting-bookmarks-in-code.md)
+- [如何：使用外侧代码片段](../../ide/how-to-use-surround-with-code-snippets.md)

@@ -1,18 +1,19 @@
 ---
 title: 疑难解答 | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: article
-ms.technology: vsce-kubernetes
+ms.topic: troubleshooting
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: 使用 Azure 上的容器和微服务快速开发 Kubernetes
 keywords: Docker, Kubernetes, Azure, AKS, Azure 容器服务, 容器
-manager: ghogen
-ms.openlocfilehash: 0f35e31e3f3a109e65565592b56b6dc4177dd7c0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: b41d228bcced6149c95b09b2445dd656ed9772d6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="troubleshooting-guide"></a>故障排除指南
 

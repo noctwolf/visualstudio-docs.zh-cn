@@ -1,9 +1,9 @@
 ---
-title: Visual Studio 中的 Visual Basic 入门 | Microsoft Docs
+title: Visual Studio 中的 Visual Basic 入门
 ms.custom: ''
 ms.date: 12/08/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -13,32 +13,44 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c3fe8351196e11073e836d875e940a9ce17d36
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Visual Studio 中的 Visual Basic 入门
+
 在本 Visual Basic (VB) 教程中，将使用 Visual Studio 创建和运行几个不同的控制台应用，并在执行这些操作时研究 Visual Studio [集成开发环境 (IDE)](visual-studio-ide.md) 的某些功能。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
 
 ## <a name="before-you-begin"></a>在开始之前
+
 下面是一个快速 FAQ，介绍一些关键概念。
+
 ### <a name="what-is-visual-basic"></a>什么是 Visual Basic？
+
 Visual Basic 是一种易于学习的类型安全编程语言。 它派生自 BASIC，BASIC 的意指“初学者通用符号指令代码”。
+
 ### <a name="what-is-visual-studio"></a>什么是 Visual Studio？
-Visual Studio 是适用于开发人员的生产力工具集成开发套件。 可将其视为可用于创建程序和应用程序的程序。  
+
+Visual Studio 是适用于开发人员的生产力工具集成开发套件。 可将其视为可用于创建程序和应用程序的程序。
+
 ### <a name="what-is-a-console-app"></a>什么是控制台应用？
+
 控制台应用获取输入，在命令行窗口（也称为 控制台）中显示输出。
+
 ### <a name="what-is-net-core"></a>.NET 核心是什么？
+
 .NET Core 是 .NET Framework 的进一步演化。 .NET Framework 允许跨编程语言共享代码，而 .NET Core 增加了跨平台共享代码的功能。 此外，它还为开放源。 （.NET Framework 和 .NET Core 都包含预生成功能的库以及公共语言运行时 (CLR)，公共语言运行时充当用于运行代码的虚拟机。）
 
 ## <a name="start-developing"></a>开始开发
+
 已准备好开始开发？ 那就开始吧！
 
 ### <a name="create-a-project"></a>创建项目
+
 首先，创建一个 Visual Basic 应用程序项目。 项目类型随附了所需的全部模板文件，无需添加任何内容！
 
 1. 打开 Visual Studio 2017。
@@ -62,11 +74,13 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
    ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>方式 2：使用“工具”菜单栏
+
 1. 取消“新建项目”对话框，然后在顶部菜单栏中选择“工具” > “获取工具和功能...”。
 
 2. Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”。   
 
 ## <a name="create-a-what-is-your-name-application"></a>创建一个“What Is Your Name”应用程序
+
 创建一个应用，它会提示你输入名字，然后将名字随日期和时间一起显示。 操作方法如下：
 
 1. 打开 WhatIsYourName 项目（如果尚未打开）。
@@ -93,6 +107,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 5. 按任意键关闭控制台窗口。
 
 ## <a name="create-a-calculate-this-application"></a>创建“Calculate This”应用程序
+
 1. 打开 Visual Studio 2017，然后在顶部菜单栏中，选择“文件” > “新建” > “项目...”。
 
 2. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 然后将文件命名为 CalculateThis。  
@@ -123,6 +138,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
     ![显示“CaluculateThis”应用的控制台窗口，其中包括要执行的操作的相应提示。](../ide/media/vb-console-calculate-this.png)
 
 ## <a name="next-steps"></a>后续步骤
+
 恭喜你完成本教程！ 若要更加深入地了解 Visual Basic 和 Visual Studio IDE，请参阅以下页面。
 
 * [Visual Basic 指南](/dotnet/visual-basic/index)

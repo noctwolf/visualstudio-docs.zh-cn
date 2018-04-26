@@ -1,10 +1,9 @@
 ---
-title: “转到”命令 | Microsoft Docs
-ms.custom: ''
+title: “转到”命令
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.goto
 helpviewer_keywords:
@@ -16,40 +15,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b817fd11d2a731ad2c6347949f03906328c741f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b55e399dab41065fb96f9f3ac8e80484860f5187
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="go-to-command"></a>“转到”命令
-将光标移到指定的行。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-Edit.GoTo [linenumber]  
-```  
-  
-## <a name="arguments"></a>自变量  
- `linenumber`  
- 可选。 一个表示要转到的行号的整数。  
-  
-## <a name="remarks"></a>备注  
- 行号从 1 开始。 如果 `linenumber` 的值小于 1，则显示第一行。 如果 `linenumber` 的值大于最后一行的行号，则显示最后一行。  
-  
- 如果未指定 `linenumber` 的值，则显示“转到行”对话框。  
-  
- 此命令的别名为 GoToLn。  
-  
-## <a name="example"></a>示例  
-  
-```  
->Edit.GoTo 125  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
- [“命令”窗口](../../ide/reference/command-window.md)   
- [“查找/命令”框](../../ide/find-command-box.md)   
- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+将光标移到指定的行。
+
+## <a name="syntax"></a>语法
+
+```
+Edit.GoTo [linenumber]
+```
+
+## <a name="arguments"></a>自变量
+ `linenumber`
+
+ 可选。 一个表示要转到的行号的整数。
+
+## <a name="remarks"></a>备注
+ 行号从 1 开始。 如果 `linenumber` 的值小于 1，则显示第一行。 如果 `linenumber` 的值大于最后一行的行号，则显示最后一行。
+
+ 如果未指定 `linenumber` 的值，则显示“转到行”对话框。
+
+ 此命令的别名为 GoToLn。
+
+## <a name="example"></a>示例
+
+```
+>Edit.GoTo 125
+```
+
+## <a name="see-also"></a>请参阅
+
+- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
+- [“命令”窗口](../../ide/reference/command-window.md)
+- [“查找/命令”框](../../ide/find-command-box.md)
+- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)

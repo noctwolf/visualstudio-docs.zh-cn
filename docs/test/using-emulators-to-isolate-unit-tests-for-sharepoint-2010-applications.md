@@ -1,6 +1,7 @@
 ---
-title: 使用仿真器隔离 Sharepoint 2010 应用的单元测试 | Microsoft Docs
+title: 使用模拟器分离 Sharepoint 2010 应用程序的单元测试
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 994e13d7155dd5490d3f3f02865b14845bae498b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13f06279857897ba1562c157a7ffa1c76dd3c6c8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>使用模拟器分离 Sharepoint 2010 应用程序的单元测试
 Microsoft.SharePoint.Emulators 包提供了一组帮助你对 Microsoft SharePoint 2010 应用程序创建独立单元测试的库。 仿真器使用 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) 隔离框架中的[垫片](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)来创建轻型内存中对象，以模仿 SharePoint API 的最常见对象和方法。 当未仿真 SharePoint 方法，或者当你想要更改仿真程序的默认行为时，可以通过创建 Fakes 填充码来提供所需的结果。
@@ -302,7 +303,8 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
  下面是实现 Fakes 委托的现有测试方法 `GetAppointmentsForTodayReturnsOnlyTodaysAppointments` 的修改。 所需的更改在注释中标识：
 
 > [!IMPORTANT]
->  如果在 `EmulationMode.Passthrough` 上下文中运行测试，则显式创建 Fakes 填充码的测试方法将引发 `ShimNotSupported` 异常。 若要避免此问题，请使用一个变量来设置 `EmulationMode` 值，并将任何 Fakes 代码包装到测试该值的 `if` 语句中。
+> 如果在 `EmulationMode.Passthrough` 上下文中运行测试，则显式创建 Fakes 填充码的测试方法将引发 `ShimNotSupported` 异常。 若要避免此问题，请使用一个变量来设置 `EmulationMode` 值，并将任何 Fakes 代码包装到测试该值的 `if` 语句中。
+
 
 ```csharp
 // class level field to set emulation mode

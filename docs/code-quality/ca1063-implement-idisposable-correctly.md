@@ -1,6 +1,7 @@
 ---
 title: CA1063：正确实现 IDisposable
 ms.date: 02/12/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9205c20730681969550c3a2368e6ec889056648b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063：正确实现 IDisposable
 
@@ -60,21 +61,21 @@ ms.lasthandoff: 04/19/2018
 
 检查你的代码并确定哪些以下解决方法将修复此冲突。
 
-- 从的由 {0} 实现，而是重写基类释放实现的接口列表中删除 IDisposable。
+- 从由实现的接口列表中删除 IDisposable{0}和改为重写基类释放实现。
 
-- 从类型 {0} 中删除终结器，重写释放 （bool 释放），并且将终止逻辑放入的代码路径其中释放是 false。
+- 从类型中删除终结器{0}，重写释放 （bool 释放），并且将终止逻辑放入的代码路径其中释放是 false。
 
-- 删除 {0}，重写释放 （bool 释放），并且将释放逻辑放入的代码路径其中释放为 true。
+- 删除{0}，重写释放 （bool 释放），并且将释放逻辑放入的代码路径其中释放为 true。
 
-- 请确保该 {0} 被声明为公共和密封。
+- 确保{0}声明为公共的密封。
 
-- 重命名为释放"{0}，并确保它被声明为公共和密封。
+- 重命名{0}到释放，并确保它被声明为公共和密封。
 
-- 请确保该 {0} 声明为受保护，虚拟的并且未密封。
+- 请确保{0}声明为受保护，虚拟的并在未密封的。
 
-- 修改 {0}，使它调用 Dispose(true)，然后调用 GC。当前对象实例上的 SuppressFinalize (this 或 Me 中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])，然后返回。
+- 修改{0}，以便它调用 Dispose(true)，然后调用 GC。当前对象实例上的 SuppressFinalize (this 或 Me 中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])，然后返回。
 
-- 修改 {0}，以便它调用 Dispose(false)，然后返回。
+- 修改{0}，以便它调用 Dispose(false)，然后返回。
 
 - 如果要创建的未密封的类型的声明并实现 IDisposable 接口，请确保 IDisposable 的实现遵循本节中前面介绍的模式。
 

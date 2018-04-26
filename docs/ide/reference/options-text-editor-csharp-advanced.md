@@ -1,6 +1,7 @@
 ---
-title: “选项”->“文本编辑器”->“C#”->“高级”| Microsoft Docs
+title: 选项，文本编辑器，C#，高级
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -16,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0df7b6b38f8982e92d3b7cdee3165ae19e5567a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7675d711a4a1df6af4643a459f49b6ef518e5b4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="options-text-editor-c-advanced"></a>选项，文本编辑器，C#，高级
 
@@ -109,8 +110,8 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>请参阅
 
-[如何项文档生成项插入 XML 注释](../../ide/reference/generate-xml-documentation-comments.md)  
-[XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)  
-[使用 XML 注释来记录代码（C# 指南）](/dotnet/csharp/codedoc)  
-[设置语言特定的编辑器选项](../../ide/reference/setting-language-specific-editor-options.md)  
-[C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+- [如何项文档生成项插入 XML 注释](../../ide/reference/generate-xml-documentation-comments.md)
+- [XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+- [使用 XML 注释来记录代码（C# 指南）](/dotnet/csharp/codedoc)
+- [设置语言特定的编辑器选项](../../ide/reference/setting-language-specific-editor-options.md)
+- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)

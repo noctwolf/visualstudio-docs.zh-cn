@@ -1,7 +1,9 @@
 ---
-title: 延迟活动设计器 |Microsoft 文档
+title: 工作流设计器-Delay 活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Delay.UI
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7159330588151d4845184fcb6688b20f8d13afd0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e22c80712bcb0c792fb929ae85b84912122a0bc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="delay-activity-designer"></a>Delay 活动设计器
+
 **延迟**活动设计器用于创建和配置<xref:System.Activities.Statements.Delay>活动。
 
 ## <a name="the-delay-activity"></a>Delay 活动
- <xref:System.Activities.Statements.Delay> 活动可将工作流的执行延迟指定时长。
+
+<xref:System.Activities.Statements.Delay> 活动可将工作流的执行延迟指定时长。
 
 ### <a name="using-the-delay-activity-designer"></a>使用 Delay 活动设计器
- **延迟**在找不到活动设计器**基元**类别**工具箱**，通过单击访问的哪一**工具箱**选项卡[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，选择**工具栏**从**视图**菜单上或 CTRL + ALT + X。)
 
- **延迟**活动设计器可以拖动从**工具箱**拖放到[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]图面任何位置通常放置活动的如内<xref:System.Activities.Statements.Sequence>。 这将创建具有 Delay 的默认 <xref:System.Activities.Statements.Delay> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑**延迟**活动设计器中或在**DisplayName**属性网格的框。
+**延迟**在找不到活动设计器**基元**类别**工具箱**，通过单击访问的哪一**工具箱**工作流设计器选项卡 (或者，选择**工具栏**从**视图**菜单上或 CTRL + ALT + X。)
+
+**延迟**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，只要通常放置活动的如内<xref:System.Activities.Statements.Sequence>。 这将创建具有 Delay 的默认 <xref:System.Activities.Statements.Delay> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑**延迟**活动设计器中或在**DisplayName**属性网格的框。
 
 ### <a name="the-delay-properties"></a>Delay 属性
- 下表列出 <xref:System.Activities.Statements.Delay> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中进行编辑，其中一些属性还可以在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 设计器图面上进行编辑。
+
+下表列出 <xref:System.Activities.Statements.Delay> 属性并说明如何在设计器中使用它们。 可以在属性网格中编辑这些属性，其中一些可以编辑工作流 Designerdesigner 图面上。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|
