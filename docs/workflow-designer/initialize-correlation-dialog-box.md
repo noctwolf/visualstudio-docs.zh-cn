@@ -1,7 +1,9 @@
 ---
-title: 初始化相关对话框 |Microsoft 文档
+title: 工作流设计器的初始化相关对话框
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - InitializeCorrelation.UI
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aac62d4439c2280e977ef929c79bb103348c170a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 93ce95c7a821d243af842170ba30ec82647933ab
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="initialize-correlation-dialog-box"></a>“初始化相关”对话框
 
@@ -29,7 +31,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>启动“初始化相关”对话框
 
--   单击**视图**上**InitializeCorrelation**活动设计器或选择<xref:System.ServiceModel.Activities.InitializeCorrelation>中的活动[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]然后单击省略号按钮旁边<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>中的属性属性网格中。
+-   单击**视图**上**InitializeCorrelation**活动设计器或选择<xref:System.ServiceModel.Activities.InitializeCorrelation>活动在工作流设计器和然后单击省略号按钮旁边<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>中的属性属性网格。
 
 ## <a name="see-also"></a>请参阅
 

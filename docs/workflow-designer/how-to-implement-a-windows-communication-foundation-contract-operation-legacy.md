@@ -1,25 +1,28 @@
 ---
-title: 如何： 实现 Windows Communication Foundation 协定操作 （旧版） |Microsoft 文档
+title: 工作流设计器-如何： 实现 Windows Communication Foundation 协定操作 （旧版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71bf4e4e6f5abc1d2984362396f21f3c613de795
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b069d8ca8c1adb72e2869eb59644e8abeff14ae
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>如何：实现 Windows Communication Foundation 协定操作（旧版）
-本主题介绍如何实现[!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)]协定操作使用旧的 Windows 工作流设计器面向[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- 拖动之后**ReceiveActivity**到工作流设计图面上活动从工具箱中的，您将创建一个新[!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)]协定或导入现有协定和实现操作。 选择和/或创建您的协定和通过其操作[选择操作对话框 （旧版）](../workflow-designer/choose-operation-dialog-box-legacy.md)。
+本主题介绍如何实现使用旧的 Windows 工作流设计器的 Windows Communication Foundation (WCF) 协定操作会针对.NET Framework 版本 3.5 或 WinFX。
 
-### <a name="to-implement-a-wcf-contract-operation"></a>实现 WCF 协定操作
+拖动之后**ReceiveActivity**到工作流设计图面上活动从工具箱中的，您将创建一个新[!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)]协定或导入现有协定和实现操作。 选择和/或创建您的协定和通过其操作[选择操作对话框 （旧版）](../workflow-designer/choose-operation-dialog-box-legacy.md)。
+
+## <a name="to-implement-a-wcf-contract-operation"></a>实现 WCF 协定操作
 
 1.  双击**ReceiveActivity**活动设计器中的，或单击省略号旁边**ServiceOperationInfo**中的属性**属性**窗格。
 

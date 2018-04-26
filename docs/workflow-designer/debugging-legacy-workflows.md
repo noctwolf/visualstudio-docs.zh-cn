@@ -1,7 +1,9 @@
 ---
-title: 调试旧版工作流 |Microsoft 文档
+title: 工作流设计器-调试旧工作流
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, debugging
 - debugging, workflows
@@ -12,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2710266446e285d9107f4450c09ffe2e8e87e090
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33a8358c5d62b938fc64d608c9b4546ab1745aaa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-legacy-workflows"></a>调试旧版工作流
 
-如果你使用中的旧 Windows 工作流设计器[!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)]生成[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]，面向.net Framework 3.0 或 3.5，你可以通过设置断点、 附加到进程、 检查调试工作流与任何其他程序类似的应用程序线程和调用堆栈。 您还可以选择远程调试。
+如果你使用旧的 Windows 工作流设计器在 Visual Studio 中生成 Windows Workflow Foundation (WF) 应用程序，该面向.net Framework 3.0 或 3.5，你可以通过调试工作流与任何其他程序类似设置断点、 附加到进程、和检查线程和调用堆栈。 您还可以选择远程调试。
 
 > [!NOTE]
 > 如果计算机上安装并卸载过 Visual Studio 的多个版本，在以下两种情况下 WF3 调试可能失败：
@@ -32,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 >
 > 如果在调试 .NET Framework 3.0 或 3.5 工作流时发生以上任一情况，请对 Visual Studio 安装进行修复。
 
- [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 集成具有以下标准 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试窗口：
+ Windows Workflow Foundation 与以下标准 Visual Studio 调试窗口集成：
 
 -   **断点**： 按预期工作，但你指定的函数名称的活动。
 

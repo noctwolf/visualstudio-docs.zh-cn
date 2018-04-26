@@ -1,7 +1,9 @@
 ---
-title: 调用 Visual Studio Debugger for Windows Workflow Foundation （旧版） |Microsoft 文档
+title: 工作流设计器-调用 Visual Studio Debugger for Windows Workflow Foundation （旧版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - stepping
 - Step Over command
@@ -19,23 +21,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e3563b175359e00a051138451292eb015958480
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a326f8b6dc482c2adfc2caba797c38094a99f8c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>调用 Visual Studio Debugger for Windows Workflow Foundation（旧版）
-本主题介绍如何使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]调试器来调试[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]旧的 Windows 工作流设计器中的应用程序。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- 通常，您可以像调试用其他 Visual Studio 编程语言编写的程序那样来调试旧工作流。 您可以通过以下方式启动 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] Debugger for Windows Workflow Foundation：
+本主题介绍如何使用 Visual Studio 调试器来调试旧的 Windows 工作流设计器中的 Windows Workflow Foundation (WF) 应用程序。 当你需要以面向.NET Framework 版本 3.5 或 WinFX 时，请使用旧工作流设计器。
+
+通常，您可以像调试用其他 Visual Studio 编程语言编写的程序那样来调试旧工作流。 你可以通过以下方式启动 Visual Studio Debugger for Windows Workflow Foundation:
 
 -   选择**附加到进程**上**调试**菜单从可用的进程选择正在运行的工作流实例。
 
 -   按**F5**来启动运行实例的工作流，或继续运行后命中断点。
 
 ## <a name="stepping-through-code"></a>逐句通过代码
- 此调试器支持一个最常见的调试过程，即单步执行，此过程每次执行一行代码。 存在以下三个逐句通过代码的命令：
+
+此调试器支持一个最常见的调试过程，即单步执行，此过程每次执行一行代码。 存在以下三个逐句通过代码的命令：
 
 -   **单步执行**： 可以单步执行活动使用**F11**。 此调试器可以单步执行任何定义的处理程序。 如果未定义处理程序，则可以逐过程执行该活动，或者对于包含其他活动的复合活动，您可以单步执行第一个要执行的活动。 单步执行代码处理程序从设计器不支持以下活动： **IfElseActivity**， **WhileActivity**， **ConditionedActivityGroup**，或**ReplicatorActivity**。 若要调试与这些活动关联的处理程序，你必须在代码中放置显式断点。
 
@@ -51,7 +55,7 @@ ms.lasthandoff: 04/16/2018
 
  在解决方案资源管理器中设置启动项目，右键单击项目名称，然后选择**设为启动项目**。 将路径设置到中的主机**启动外部程序**属性，双击工作流项目的**属性**在解决方案资源管理器，选择的节点**调试**选项卡。下**启动操作**，选择**启动外部程序**并输入承载要调试的工作流的.exe 文件的路径。
 
- 如果将主机应用程序设置为启动项目，则只调用 Visual Studio 调试器来进行调试；不会调用 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] Debugger for Windows Workflow Foundation。 如果使用 Visual Studio 调试器，则只会命中 C# 或 Visual Basic 代码断点；而不会命中在工作流设计器中设置的断点。 例如，如果使用 <xref:System.Workflow.Activities.ParallelActivity> Debugger for Windows Workflow Foundation，则会命中您在设计器中在 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] 活动处设置的断点，如果使用 Visual Studio 调试器，则不会命中此断点。
+ 如果主机应用程序设置为启动项目，进行调试; 调用仅 Visual Studio 调试器Visual Studio Debugger for Windows Workflow Foundation 不会被调用。 如果使用 Visual Studio 调试器，则只会命中 C# 或 Visual Basic 代码断点；而不会命中在工作流设计器中设置的断点。 例如，在设置的断点<xref:System.Workflow.Activities.ParallelActivity>如果使用 Visual Studio Debugger for Windows Workflow Foundation，而不是在你使用 Visual Studio 调试器命中设计器中的活动。
 
 ## <a name="see-also"></a>请参阅
 

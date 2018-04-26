@@ -1,7 +1,9 @@
 ---
-title: 如何： 使用自变量设计器 |Microsoft 文档
+title: 工作流设计器-如何： 使用自变量设计器
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5f4af6e06bbebe3f543deed68ff85f4cd0a39be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b94656c7242c4bc6bc1dd1430230dac62a5322f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-argument-designer"></a>如何：使用自变量设计器
-与以前版本的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 相比，该参数设计器使数据流入和流出某个活动更容易。 通过单击访问设计器**参数**设计画布左下角的按钮。 该设计器包含显示在表格窗体和可以按每一列标题排序除外的自变量列表**默认值**列。 每个自变量都包含名称、输入/输出/输入-输出/属性方向、类型和默认表达式值（如果有）。 名称和默认的表达式值都是可编辑的文本字段，类型和方向是下拉项。 有关详细信息，请参阅[变量和自变量 (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)。
 
-### <a name="to-create-a-new-argument"></a>创建新自变量
+与以前版本的.NET Framework 相比，自变量设计器可以轻松以允许数据流入和流出活动。 通过单击访问设计器**参数**设计画布左下角的按钮。 该设计器包含显示在表格窗体和可以按每一列标题排序除外的自变量列表**默认值**列。 每个自变量都包含名称、输入/输出/输入-输出/属性方向、类型和默认表达式值（如果有）。 名称和默认的表达式值都是可编辑的文本字段，类型和方向是下拉项。 有关详细信息，请参阅[变量和自变量 (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)。
 
-1.  在 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 中打开一个工作流或活动解决方案。
+## <a name="to-create-a-new-argument"></a>创建新自变量
+
+1.  在 Visual Studio 2010 中打开一个工作流或活动解决方案。
 
 2.  通过单击打开参数设计器**参数**设计画布左下角的按钮。 此时将显示自变量设计器。
 

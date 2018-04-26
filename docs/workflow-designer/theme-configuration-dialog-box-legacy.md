@@ -1,7 +1,9 @@
 ---
-title: 主题配置对话框 （旧版） |Microsoft 文档
+title: 工作流设计器的主题配置对话框 （旧版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.UI
 helpviewer_keywords:
@@ -13,20 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ec33bbce8ee8ac770607d77918547fdbd705ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07ae376a09afd73c5744f7d1587c637a4b55410d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>“主题配置”对话框（旧版）
-本主题介绍如何使用**主题配置**旧的 Windows 工作流设计器中的对话框。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- 主题定义工作流的背景和前景颜色、样式、图标及其他可视元素。 可以保存主题以供其他工作流重复使用。
+本主题介绍如何使用**主题配置**旧的 Windows 工作流设计器中的对话框。 当你需要以面向.NET Framework 版本 3.5 或 WinFX 时，请使用旧工作流设计器。
 
- 创建和编辑主题使用**主题配置**对话框。 若要打开对话框中，选择**创建新主题**上**工作流**菜单上，或者右键单击工作流设计图面并选择**创建新主题**。
+主题定义工作流的背景和前景颜色、样式、图标及其他可视元素。 可以保存主题以供其他工作流重复使用。
 
- 下表描述的用户界面 (UI) 元素**主题配置**对话框。
+创建和编辑主题使用**主题配置**对话框。 若要打开对话框中，选择**创建新主题**上**工作流**菜单上，或者右键单击工作流设计图面并选择**创建新主题**。
+
+下表描述的用户界面 (UI) 元素**主题配置**对话框。
 
 |UI 元素|描述|
 |----------------|-----------------|

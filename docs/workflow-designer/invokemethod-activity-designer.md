@@ -1,7 +1,9 @@
 ---
-title: InvokeMethod 活动设计器 |Microsoft 文档
+title: 工作流设计器-InvokeMethod 活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -10,25 +12,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2e1cbb097d86d0e13ba8581389d7356001ff92
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b612966da1244c745edbe8a5c92b1b300554a388
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活动设计器
+
 **InvokeMethod**设计器用于创建和配置<xref:System.Activities.Statements.InvokeMethod>活动。
 
 ## <a name="the-invokemethod-activity"></a>InvokeMethod 活动
- <xref:System.Activities.Statements.InvokeMethod> 调用指定对象或类型的公共方法。
+
+<xref:System.Activities.Statements.InvokeMethod> 调用指定对象或类型的公共方法。
 
 ### <a name="using-the-invokemethod-activity-designer"></a>使用 InvokeMethod 活动设计器
- **InvokeMethod**在找不到活动设计器**基元**类别**工具箱**，通过单击访问的哪一**工具箱**选项卡[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，选择**工具栏**从**视图**菜单上或 CRTL + ALT + X。)
+ **InvokeMethod**在找不到活动设计器**基元**类别**工具箱**，通过单击访问的哪一**工具箱**选项卡上的工作流设计器 (或者，选择**工具栏**从**视图**菜单上或 CRTL + ALT + X。)
 
- **InvokeMethod**活动设计器可以拖动从**工具箱**拖放到[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]图面任何位置通常放置活动的如内<xref:System.Activities.Statements.Sequence>。 这将创建具有 InvokeMethod 的默认 <xref:System.Activities.Statements.InvokeMethod> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑**InvokeMethod**活动设计器中或在**DisplayName**属性网格的框。
+ **InvokeMethod**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，在任何位置通常放置活动的如内<xref:System.Activities.Statements.Sequence>。 这将创建具有 InvokeMethod 的默认 <xref:System.Activities.Statements.InvokeMethod> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑**InvokeMethod**活动设计器中或在**DisplayName**属性网格的框。
 
 ### <a name="the-invokemethod-properties"></a>InvokeMethod 属性
- 下表列出 <xref:System.Activities.Statements.InvokeMethod> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中进行编辑，其中一些属性还可以在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 设计器图面上进行编辑。
+ 下表列出 <xref:System.Activities.Statements.InvokeMethod> 属性并说明如何在设计器中使用它们。 可以在属性网格中编辑这些属性和一些可以在工作流 Designerdesigner 图面上编辑。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|

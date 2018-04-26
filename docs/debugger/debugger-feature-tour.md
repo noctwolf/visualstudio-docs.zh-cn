@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 调试器功能教程-|Microsoft 文档
-description: Visual Studio 调试器浏览
+title: 先来看一下调试器
+description: 要快速查看 Visual Studio 调试器的不同功能。
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb84fbfa4b8916b963f3f3cc35e044593c5a47e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>快速入门： 先来看一下 Visual Studio 调试器
+# <a name="first-look-at-the-visual-studio-debugger"></a>先来看一下 Visual Studio 调试器
 
 本主题介绍 Visual Studio 调试器的功能。 如果你想要遵循通过在 Visual Studio 中打开你自己的应用，你可以这样做，或者你可以遵循示例应用程序使用[初学者指南](../debugger/getting-started-with-the-debugger.md)。
 
@@ -157,7 +157,7 @@ F10 使调试器，而无需单步执行函数或应用程序代码 （仍执行
 
 ![监视窗口](../debugger/media/dbg-tour-watch-window.png "监视窗口")
 
-在此示例中，必须在上设置监视`File`对象，也可以查看当你移动通过调试器时更改其值。 与其他变量窗口中，不同**监视**windows 始终显示的变量正在监视 （它们灰显时超出范围）。
+在此示例中，必须在上设置监视`f`对象，也可以查看当你移动通过调试器时更改其值。 与其他变量窗口中，不同**监视**windows 始终显示的变量正在监视 （它们灰显时超出范围）。
 
 有关详细信息，请参阅[设置使用监视和快速监视窗口监视](../debugger/watch-and-quickwatch-windows.md)
 
@@ -213,21 +213,9 @@ F10 使调试器，而无需单步执行函数或应用程序代码 （仍执行
 
 有关详细信息，请参阅[使用 IntelliTrace 后退查看快照](../debugger/how-to-use-intellitrace-step-back.md)页。
 
-## <a name="more-features-to-look-at"></a>要查看的多个功能
+## <a name="next-steps"></a>后续步骤
 
--   [调试器提示和技巧](../debugger/debugger-tips-and-tricks.md)了解如何使用调试器提高生产率。
+在本教程中，你已经有许多调试器功能快速了解一下。 你可能希望在使用示例应用程序的这些功能的更深入探讨
 
--   [编辑并继续](../debugger/edit-and-continue.md)对于语言 (C#、 c + +、 Visual Basic) 的一个子集，编辑并继续功能允许你编辑在调试会话过程的代码。
-
--   [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)描述如何调试多线程应用程序。 
-
--   [远程调试](../debugger/remote-debugging.md)描述如何调试在其他计算机或设备上运行的应用。 
-  
--   [IntelliTrace](../debugger/intellitrace.md)介绍 Visual Studio Enterprise 中的 IntelliTrace 功能。 你可以使用该记录和跟踪你代码的执行历史记录。
-
--   [网络使用情况](../profiling/network-usage.md)描述可用于调试 web 服务和其他网络资源在通用 Windows 应用 (UWP) 的分析工具。 该工具用于检查有效负载。
-
--   [调试接口访问 SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md)描述 Microsoft 调试接口访问软件开发工具包 (DIA SDK)。 DIA SDK 提供对存储在由 Microsoft 后置编译器工具生成的程序数据库 (.pdb) 文件中的调试信息的访问。  
-
-## <a name="see-also"></a>请参阅  
- [在 Visual Studio 中进行调试](../debugger/index.md)
+> [!div class="nextstepaction"]
+> [了解如何使用 Visual Studio 进行调试](../debugger/getting-started-with-the-debugger.md)

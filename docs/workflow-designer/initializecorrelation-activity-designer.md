@@ -1,7 +1,9 @@
 ---
-title: InitializeCorrelation 活动设计器 |Microsoft 文档
+title: 工作流设计器-InitializeCorrelation 活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.InitializeCorrelation.UI
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
@@ -10,29 +12,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72778ac3757cc259019df5fb5616115f41ce0c34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 24d319af36b5d07661213edb3cff48d376bd3736
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 活动设计器
+
 **InitializeCorrelation**活动设计器用于创建和配置<xref:System.ServiceModel.Activities.InitializeCorrelation>用于发送或接收其之前的消息之间建立相关的活动。
 
 ## <a name="the-initializecorrelation-activity"></a>InitializeCorrelation 活动
- <xref:System.ServiceModel.Activities.InitializeCorrelation> 活动用于在不发送或接收消息的情况下初始化相关。 通常，相关是在发送或接收消息时初始化的。 如果必须在发送或接收消息前建立相关，请使用 <xref:System.ServiceModel.Activities.InitializeCorrelation> 来初始化该相关。
+
+<xref:System.ServiceModel.Activities.InitializeCorrelation> 活动用于在不发送或接收消息的情况下初始化相关。 通常，相关是在发送或接收消息时初始化的。 如果必须在发送或接收消息前建立相关，请使用 <xref:System.ServiceModel.Activities.InitializeCorrelation> 来初始化该相关。
 
 ### <a name="using-the-initializecorrelation-activity-designer"></a>使用 InitializeCorrelation 活动设计器
- **InitializeCorrelation**在找不到活动设计器**消息**类别**工具箱**，通过单击访问的哪一**工具箱**选项卡上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，选择**工具栏**从**视图**菜单或 CTRL + ALT + X。)
+ **InitializeCorrelation**在找不到活动设计器**消息**类别**工具箱**，通过单击访问的哪一**工具箱**工作流设计器上的选项卡 (或者，选择**工具栏**从**视图**菜单或 CTRL + ALT + X。)
 
- **InitializeCorrelation**活动设计器可以拖动从**工具箱**拖放到[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]面。 这将创建<xref:System.ServiceModel.Activities.InitializeCorrelation>默认值的活动<xref:System.Activities.Activity.DisplayName%2A>的 InitializeCorrelation.The<xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑**InitializeCorrelation**活动设计器中或在**DisplayName**框**属性**窗口。
+ **InitializeCorrelation**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面。 这将创建<xref:System.ServiceModel.Activities.InitializeCorrelation>默认值的活动<xref:System.Activities.Activity.DisplayName%2A>的 InitializeCorrelation.The<xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑**InitializeCorrelation**活动设计器中或在**DisplayName**框**属性**窗口。
 
  <xref:System.ServiceModel.Activities.CorrelationHandle>可以是指定在**相关**字段**属性**上的窗口**InitializeCorrelation**活动设计器图面。
 
  单击省略号按钮，除了**CorrelationData**字段**属性**窗口或上的"视图 …"提示文本**InitializeCorrelation**活动设计器图面显示**初始化相关**对话框中，你可以在其中指定相关句柄和用于对其进行初始化的键 / 值对。 有关使用此对话框中的详细信息，请参阅[类型集合编辑器对话框](../workflow-designer/type-collection-editor-dialog-box.md)主题。
 
 ### <a name="the-initializecorrelation-properties"></a>InitializeCorrelation 属性
- 下表列出 <xref:System.ServiceModel.Activities.InitializeCorrelation> 属性并说明如何在设计器中使用它们。 可以在中编辑这些属性**属性**窗口或在[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]面。
+ 下表列出 <xref:System.ServiceModel.Activities.InitializeCorrelation> 属性并说明如何在设计器中使用它们。 可以在中编辑这些属性**属性**窗口或工作流设计器图面上。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|

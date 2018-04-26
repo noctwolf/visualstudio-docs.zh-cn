@@ -1,7 +1,9 @@
 ---
-title: 流程图活动设计器 |Microsoft 文档
+title: 工作流设计器-流程图活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Flowchart.UI
 - System.Activities.Statements.FlowStep.UI
@@ -12,27 +14,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7db449f538f09a247bc3c67ee26f487a6c81eb0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81af4a51da2bb15bafd17fc7ba98d676f7b0decc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="flowchart-activity-designer"></a>流程图活动设计器
-<xref:System.Activities.Statements.Flowchart> 活动用于创建定义和管理复杂流控制的工作流。 可以使用代码或 <xref:System.Activities.Statements.Flowchart> 创作 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]。 本主题讲述 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 体验。 Windows 工作流设计器工作流活动设计器使开发人员创作工作流能够以自然的方式。
+
+<xref:System.Activities.Statements.Flowchart> 活动用于创建定义和管理复杂流控制的工作流。 A<xref:System.Activities.Statements.Flowchart>可以在代码中或通过使用工作流设计器创作。 本主题介绍工作流设计器体验。 Windows 工作流设计器工作流活动设计器使开发人员创作工作流能够以自然的方式。
 
 ## <a name="the-flowchart-activity"></a>Flowchart 活动
- <xref:System.Activities.Statements.Flowchart> 指定工作流启动时执行的唯一 <xref:System.Activities.Statements.Flowchart.StartNode%2A>，并使用链接的 <xref:System.Activities.Statements.Flowchart.Nodes%2A> 网络创建任意循环或将执行流在任意给定时间转移到工作流中的其他任何位置。
+
+<xref:System.Activities.Statements.Flowchart> 指定工作流启动时执行的唯一 <xref:System.Activities.Statements.Flowchart.StartNode%2A>，并使用链接的 <xref:System.Activities.Statements.Flowchart.Nodes%2A> 网络创建任意循环或将执行流在任意给定时间转移到工作流中的其他任何位置。
 
 ### <a name="using-the-flowchart-activity-designer"></a>使用 Flowchart 活动设计器
- **流程图**在找不到活动设计器**流程图**类别**工具箱**，通过单击访问的哪一**工具箱**选项卡上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，选择**工具栏**从**视图**菜单或 CTRL + ALT + X。)
 
- **流程图**活动设计器可以拖动从**工具箱**拖放到[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]图面活动设计器放置的任何位置通常情况下，作为根活动或作为子级另一个控制流活动。 如果**流程图**活动设计器放到一个空白[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]图面上，它创建<xref:System.Activities.Statements.Flowchart>活动，该默认情况下处于启动执行的开始节点展开视图中显示活动表示为一个绿球。 如果**流程图**活动设计器放到另一个控制流活动，它可以通过双击扩展的最小化视图中显示**流程图**活动设计器。 中的任何活动**工具箱**可以拖动直接到**流程图**活动设计器中，包括其他控制流活动。
+**流程图**在找不到活动设计器**流程图**类别**工具箱**，通过单击访问的哪一**工具箱**工作流设计器上的选项卡 (或者，选择**工具栏**从**视图**菜单或 CTRL + ALT + X。)
 
- 将各种活动设计器拖到 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 画布上之后，这些活动设计器表示的 <xref:System.Activities.Activity> 对象可链接在一起以指定执行顺序。 若要在源活动与目标活动之间创建链接，请将鼠标悬停在源活动的设计器上，此时将在该设计器的每一侧显示正方形处理框。 单击这些正方形处理框之一并按下鼠标按钮将其拖到当鼠标悬停在目标活动上时该活动周围以类似方式显示的处理框之一。 松开鼠标按钮，此时将在这两个活动之间创建一个链接，表示为从源设计器指向目标设计器的箭头。
+**流程图**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，只要通常放置活动设计器，无论是作为根活动还是作为另一个控制流活动的子级。 如果**流程图**活动设计器放置到空白的工作流设计器图面，将会创建<xref:System.Activities.Statements.Flowchart>活动，该默认情况下处于启动执行的开始节点展开视图中显示活动表示为一个绿球。 如果**流程图**活动设计器放到另一个控制流活动，它可以通过双击扩展的最小化视图中显示**流程图**活动设计器。 中的任何活动**工具箱**可以拖动直接到**流程图**活动设计器中，包括其他控制流活动。
+
+拖到工作流设计器画布上，拖动各种活动设计器之后<xref:System.Activities.Activity>它们表示的对象可以链接在一起以指定执行顺序。 若要在源活动与目标活动之间创建链接，请将鼠标悬停在源活动的设计器上，此时将在该设计器的每一侧显示正方形处理框。 单击这些正方形处理框之一并按下鼠标按钮将其拖到当鼠标悬停在目标活动上时该活动周围以类似方式显示的处理框之一。 松开鼠标按钮，此时将在这两个活动之间创建一个链接，表示为从源设计器指向目标设计器的箭头。
 
 ### <a name="flowchart-activity-properties"></a>Flowchart 活动属性
- 下表列出 <xref:System.Activities.Statements.Flowchart> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中或设计器图面上进行编辑。
+
+下表列出 <xref:System.Activities.Statements.Flowchart> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中或设计器图面上进行编辑。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|

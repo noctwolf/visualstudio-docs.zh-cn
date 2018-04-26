@@ -1,6 +1,7 @@
 ---
 title: 托管代码的“扩展的更正规则”规则集
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccee4f6e139ef502a90a13a231c65f7e87141c78
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5bb373879bf4dd9c31ed7d8a7d832a270a158279
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>托管代码的“扩展的更正规则”规则集
 Microsoft 扩展的更正规则规则集，从而最大化代码分析来报告逻辑和 framework 用法错误。 侧重于特定的方案，如 COM 互操作性和移动应用程序。 你应考虑包含此规则集如果其中一种情形适用于你的项目，或在你的项目中查找其他问题。

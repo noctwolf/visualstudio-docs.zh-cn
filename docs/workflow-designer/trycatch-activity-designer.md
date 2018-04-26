@@ -1,7 +1,9 @@
 ---
-title: TryCatch 活动设计器 |Microsoft 文档
+title: 工作流设计器-TryCatch 活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TryCatch.UI
 - System.Activities.Statements.Catch`1.UI
@@ -11,22 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae4cd4340bc30249ea649a2806afe3e027fc439
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2983dd9aa53443c616504672ef76f76ac9bd9add
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活动设计器
+
 **TryCatch**活动设计器用于创建和配置<xref:System.Activities.Statements.TryCatch>活动。
 
 ## <a name="the-trycatch-activity"></a>TryCatch 活动
- <xref:System.Activities.Statements.TryCatch>活动包含<xref:System.Activities.Statements.TryCatch.Try%2A>活动的一个集合**捕获\<TException >**和<xref:System.Activities.Statements.TryCatch.Finally%2A>活动。 A<xref:System.Activities.Statements.Catch%601>类型的**TException**包含<xref:System.Activities.Statements.Catch%601.ExceptionType%2A>和<xref:System.Activities.Statements.Catch%601.Action%2A>。 将它们结合使用可实现典型的基于异常的错误处理机制。 <xref:System.Activities.Statements.TryCatch> 活动尝试执行其 <xref:System.Activities.Statements.TryCatch.Try%2A> 活动。 如果<xref:System.Activities.Statements.TryCatch.Try%2A>活动会引发任何异常，<xref:System.Activities.Statements.TryCatch>活动使用其**捕获 < TException\>** 集合来匹配该异常。 如果没有匹配项，则<xref:System.Activities.Statements.Catch%601.Action%2A>相应**捕获\<TException >**充当处理异常的逻辑错误的执行。 如果 <xref:System.Activities.Statements.TryCatch.Try%2A> 节中的活动已成功完成或 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中的活动已成功完成，则 <xref:System.Activities.Statements.TryCatch> 活动执行其 <xref:System.Activities.Statements.TryCatch.Finally%2A> 活动。 有关详细信息，请参阅[Windows 工作流异常](/dotnet/framework/windows-workflow-foundation/exceptions)。
+ <xref:System.Activities.Statements.TryCatch>活动包含<xref:System.Activities.Statements.TryCatch.Try%2A>活动的一个集合**捕获\<TException >** 和<xref:System.Activities.Statements.TryCatch.Finally%2A>活动。 A<xref:System.Activities.Statements.Catch%601>类型的**TException**包含<xref:System.Activities.Statements.Catch%601.ExceptionType%2A>和<xref:System.Activities.Statements.Catch%601.Action%2A>。 将它们结合使用可实现典型的基于异常的错误处理机制。 <xref:System.Activities.Statements.TryCatch> 活动尝试执行其 <xref:System.Activities.Statements.TryCatch.Try%2A> 活动。 如果<xref:System.Activities.Statements.TryCatch.Try%2A>活动会引发任何异常，<xref:System.Activities.Statements.TryCatch>活动使用其**捕获 < TException\>** 集合来匹配该异常。 如果没有匹配项，则<xref:System.Activities.Statements.Catch%601.Action%2A>相应**捕获\<TException >** 充当处理异常的逻辑错误的执行。 如果 <xref:System.Activities.Statements.TryCatch.Try%2A> 节中的活动已成功完成或 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中的活动已成功完成，则 <xref:System.Activities.Statements.TryCatch> 活动执行其 <xref:System.Activities.Statements.TryCatch.Finally%2A> 活动。 有关详细信息，请参阅[Windows 工作流异常](/dotnet/framework/windows-workflow-foundation/exceptions)。
 
 ### <a name="using-the-trycatch-activity-designer"></a>使用 TryCatch 活动设计器
- **TryCatch**在找不到活动设计器**错误处理**类别**工具箱**，通过单击访问的哪一**工具箱**的左侧选项卡[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，选择**工具栏**从**视图**菜单上或 CTLR + ALT + X。)
+ **TryCatch**在找不到活动设计器**错误处理**类别**工具箱**，通过单击访问的哪一**工具箱**工作流设计器左侧的选项卡 (或者，选择**工具栏**从**视图**菜单上或 CTLR + ALT + X。)
 
- **TryCatch**活动设计器可以拖动从**工具箱**拖放到[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]图面任何位置通常放置活动的如内<xref:System.Activities.Statements.Sequence>。 这将创建具有 TryCatch 的默认 <xref:System.Activities.Statements.TryCatch> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑值**TryCatch**活动设计器中或在**DisplayName**属性网格的框。 其他属性必须在的图面上编辑**TryCatch**活动设计器。
+ **TryCatch**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，只要通常放置活动的如内<xref:System.Activities.Statements.Sequence>。 这将创建具有 TryCatch 的默认 <xref:System.Activities.Statements.TryCatch> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑值**TryCatch**活动设计器中或在**DisplayName**属性网格的框。 其他属性必须在的图面上编辑**TryCatch**活动设计器。
 
  单击右上角的展开按钮**TryCatch**设计器才能看到**重**，**捕获**，和**最后**框中展开的视图。 若要添加 catch，请单击**添加新捕获**按钮上**TryCatch**设计器。 该按钮将变为类型组合框。 选择一个异常类型，然后按 Enter 键添加该 catch。 在添加后**捕获**，catch 区域将展开，可以放入 catch 以定义该 catch 的执行逻辑的活动。 请注意，在展开的 catch 区域右侧有一个文本框。 可以使用此文本框为异常变量命名。 异常变量只能在同一个活动**捕获**。
 

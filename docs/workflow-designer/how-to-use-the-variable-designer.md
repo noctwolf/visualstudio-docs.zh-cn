@@ -1,7 +1,9 @@
 ---
-title: 如何： 使用变量设计器 |Microsoft 文档
+title: 工作流设计器-如何： 使用变量设计器
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
@@ -10,20 +12,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5ea858c6ebe448b7faf77533395a044bcc2fb32
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc180df4a9be83c0f0b755bffd7ed40009b41497
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-variable-designer"></a>如何：使用变量设计器
+
 变量设计器用于创建在数据绑定方案和条件语句中使用的变量。 通过单击访问设计器**变量**设计画布左下角的按钮。 该设计器包含的变量显示在表格窗体并可以按每一列标题中，除排序列表**默认**列。 每个变量都包含名称、变量类型、作用域和默认值（如果有）。 名称和默认值是可编辑的文本字段，而类型和作用域是下拉项。 作用域是调用变量设计器时选择的活动。 如果无法在选定的范围内创建某个变量，则范围将默认为允许变量在其范围内创建的最靠近选定内容的上级活动。 有关详细信息，请参阅[变量和自变量 (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)。
 
  在用户显式使用其中一种排序控件、关闭并重新打开变量设计器或创建另一个变量后，才会应用排序顺序。
 
-### <a name="to-create-a-new-variable"></a>创建新变量
+## <a name="to-create-a-new-variable"></a>创建新变量
 
-1.  在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 中打开一个工作流或活动解决方案。
+1.  在 Visual Studio 中打开一个工作流或活动解决方案。
 
 2.  在设计画布上，选择工作流中的一个活动。
 

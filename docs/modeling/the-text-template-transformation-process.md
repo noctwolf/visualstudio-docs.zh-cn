@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 322a8aac233f739180de903779210e1446306166
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b9c65762bbc1fe068889c0420f0dec3d28000130
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="the-text-template-transformation-process"></a>文本模板转换过程
 文本模板转换过程使用文本模板文件作为输入并生成新的文本文件，并作为输出。 例如，你可以使用文本模板生成 Visual Basic 或 C# 代码，或者可以生成 HTML 报告。

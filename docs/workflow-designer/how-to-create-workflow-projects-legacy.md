@@ -1,7 +1,9 @@
 ---
-title: 如何： 创建工作流项目 （旧版） |Microsoft 文档
+title: 工作流设计器-如何： 创建工作流项目 （旧版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -11,27 +13,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca6fdbbd8a744c472c06fdefbdafce77679ec2c9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb5d58c6d450a5e68d804e33785ec76349bfb6d8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>如何：创建工作流项目（旧版）
-按照这些步骤可创建面向 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 的 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 项目。 此过程使用旧的 Windows 工作流设计器提供的[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。
 
-### <a name="to-create-a-workflow-project"></a>创建一个工作流项目
+按照这些步骤创建一个面向.NET Framework 版本 3.5 或 WinFX 的 Windows Workflow Foundation (WF) 项目。 此过程使用 Visual Studio 2010 提供的旧 Windows 工作流设计器。
 
-1.  启动 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)]。
+## <a name="to-create-a-workflow-project"></a>创建一个工作流项目
+
+1.  启动 Visual Studio。
 
 2.  在“文件”菜单上，指向“新建”，然后选择“项目”。
 
      **“新建项目”** 对话框随即打开。
 
-3.  选择**.NET Framework 3.0**选项或**.NET Framework 3.5**的下拉列表的顶部列表中的选项**新项目**窗口，以访问旧设计器。
+3.  选择 **.NET Framework 3.0**选项或 **.NET Framework 3.5**的下拉列表的顶部列表中的选项**新项目**窗口，以访问旧设计器。
 
     > [!NOTE]
-    > 中的默认选项[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]是**.NET Framework 4**。 此选项用于创建面向 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 的 [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] 应用程序，并且不使用旧设计器。
+    > Visual Studio 2010 中的默认选项才 **.NET Framework 4**。 此选项可用于创建面向.NET Framework 4 的 Windows Workflow Foundation (WF) 应用程序并不使用旧设计器。
 
 4.  在**项目类型**窗格中，选择 Visual C# 项目或 Visual Basic 项目，然后选择**工作流**。
 

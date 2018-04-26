@@ -1,7 +1,9 @@
 ---
-title: 创建旧版工作流项目 |Microsoft 文档
+title: 工作流设计器-创建旧版工作流项目
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d78712ff91d92ef0f710dfbbef926f2a7b55e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9988e85fe791e543b2b191b256e64099d5a3b658
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-legacy-workflow-projects"></a>创建旧版工作流项目
-本部分介绍如何创建使用 vs2010 Windows 工作流设计器提供的旧工作流项目。 旧 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 面向 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。 它包括有关如何使用下表所列出的工作流项目模板的信息。
+
+本部分介绍如何创建工作流项目使用由 Visual Studio 2010 提供的旧 Windows 工作流设计器。 旧工作流设计器面向.NET Framework 版本 3.5 或 WinFX。 它包括有关如何使用下表所列出的工作流项目模板的信息。
 
 |项目模板|描述|
 |----------------------|-----------------|
@@ -29,25 +32,6 @@ ms.lasthandoff: 04/16/2018
 |状态机工作流控制台应用程序|用于创建状态机工作流控制台应用程序的项目。|
 |状态机工作流库|用于创建一个状态机工作流库的项目。|
 |空工作流项目|用于创建一个工作流应用程序的空项目。|
-
-## <a name="in-this-section"></a>本节内容
- [如何：创建工作流项目（旧版）](../workflow-designer/how-to-create-workflow-projects-legacy.md)
-
- [如何：创建顺序工作流控制台应用程序（旧版）](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
-
- [如何：创建顺序工作流库（旧版）](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
-
- [如何：创建工作流活动库（旧版）](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
-
- [如何：创建状态机工作流控制台应用程序（旧版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
-
- [如何：创建一个状态机工作流库（旧版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
-
- [如何：创建空工作流项目（旧版）](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)
-
- [如何：配置工作流项目属性（旧版）](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
-
- [如何：向工作流项目添加新项（旧版）](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
 ## <a name="see-also"></a>请参阅
 

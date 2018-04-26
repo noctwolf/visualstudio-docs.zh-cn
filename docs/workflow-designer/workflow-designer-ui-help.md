@@ -1,7 +1,9 @@
 ---
-title: 工作流设计器用户界面帮助 |Microsoft 文档
+title: 工作流设计器 UI 帮助
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Visual Studio 2010 Workflow Designer [WFD], user interface help
 - Workflow Designer [WFD], user interface help
@@ -11,13 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8049362e7765b2ac9f8f3529f8d283ca43bc7b13
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c87a7089044fb8b2c5be14062952e7546a63abb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="workflow-designer-ui-help"></a>工作流设计器 UI 帮助
-本部分包含有关 Windows 工作流设计器的上下文相关帮助主题。 在中工作时[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]，你可以从用户界面访问这些主题，通过按**F1**时[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]对话框处于打开状态。
 
- 本节还包含与导航和错误消息有关的多个主题。
+本部分包含有关 Windows 工作流设计器的上下文相关帮助主题。 当在 Visual Studio 2010 中工作，你可以通过按，从用户界面访问这些主题**F1**打开工作流设计器对话框中时。
+
+本节还包含与导航和错误消息有关的多个主题。

@@ -1,18 +1,20 @@
 ---
-title: 如何： 使用痕迹导航 |Microsoft 文档
+title: 工作流设计器-如何： 使用痕迹导航
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c88a8c47bfaa2e1ccd135baec95f19a49c4e5a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92f3e35d4182297601741bd603aa3c5a17e54d67
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>如何：使用痕迹导航
 
@@ -24,22 +26,22 @@ ms.lasthandoff: 04/16/2018
 
 3.  就地展开或折叠活动。
 
-### <a name="using-breadcrumb-navigation"></a>使用痕迹导航
+## <a name="using-breadcrumb-navigation"></a>使用痕迹导航
 
-1.  双击 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 的活动，将根活动改为单击的活动。 此时单击的活动将在根处完全展开，其祖先将显示在痕迹栏中。 这有时称为钻入或钻出某个活动。
+1.  双击活动的工作流设计器的根活动改为单击的活动。 此时单击的活动将在根处完全展开，其祖先将显示在痕迹栏中。 这有时称为钻入或钻出某个活动。
 
 2.  若要导航到当前根活动的一个祖先，请单击痕迹栏中的相应活动。
 
-### <a name="expanding-or-collapsing-an-activity-in-place"></a>就地展开或折叠活动
+## <a name="expanding-or-collapsing-an-activity-in-place"></a>就地展开或折叠活动
 
 1.  单击活动上的 V 形将就地展开或折叠该活动。
 
 2.  单击该按钮更改展开状态时，新的展开状态将保存在 XAML 中。
 
     > [!WARNING]
-    > 并非所有活动都可就地展开。 在两种情况下不能就地展开活动：一种是活动的父级不允许其子级就地展开（例如，流程图中的活动不能就地展开），另一种是活动设计器不允许自身就地展开。 虽然 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 中包含的所有活动设计器都没有后一种行为，但有的自定义活动可能具有此行为。
+    > 并非所有活动都可就地展开。 在两种情况下不能就地展开活动：一种是活动的父级不允许其子级就地展开（例如，流程图中的活动不能就地展开），另一种是活动设计器不允许自身就地展开。 尽管所有工作流设计器中包含的活动设计器都没有后一种行为，但某些自定义活动可能会出现此行为。
 
-### <a name="expanding-all-or-collapsing-all-activities"></a>展开或折叠所有活动
+## <a name="expanding-all-or-collapsing-all-activities"></a>展开或折叠所有活动
 
 1.  使用**全部展开**和**全部折叠**要展开或折叠当前痕迹根下的所有活动的用户界面中的按钮。 请注意，全部展开和全部折叠是全局状态。 这意味着更改根活动使用痕迹导航，全部展开或全部折叠状态时保持直到您单击**还原**。
 

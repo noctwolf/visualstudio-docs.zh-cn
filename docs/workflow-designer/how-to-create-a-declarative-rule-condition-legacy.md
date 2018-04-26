@@ -1,7 +1,9 @@
 ---
-title: 如何： 创建声明性规则条件 （旧版） |Microsoft 文档
+title: 工作流设计器-如何： 创建声明性规则条件 （旧版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - declarative rule conditions
 - condition statements, declarative rule conditions
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8b1d1220f11d27ee193e3e82168f4c10558d86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43b359040256788db240274f43f706b41f01d021
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>如何：创建声明性规则条件（旧版）
-本主题介绍如何声明该目标的使用旧的 Windows 工作流设计器的规则条件[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- 条件语句的计算结果为**True**或**False**。 声明性规则条件是通过创建一个条件语句[规则条件编辑器对话框 （旧版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)并将存储为 XML 与工作流。 声明性规则条件可以包括一些谓词，这些谓词比较工作流状态和组合多个谓词的布尔代数。
+本主题介绍如何对.NET Framework 3.5 或 WinFX 声明使用该目标的旧的 Windows 工作流设计器的规则条件。
 
- 声明性规则条件用在以下 Windows Workflow Foundation 现成可用的活动中：
+条件语句的计算结果为**True**或**False**。 声明性规则条件是通过创建一个条件语句[规则条件编辑器对话框 （旧版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)并将存储为 XML 与工作流。 声明性规则条件可以包括一些谓词，这些谓词比较工作流状态和组合多个谓词的布尔代数。
+
+声明性规则条件用在以下 Windows Workflow Foundation 现成可用的活动中：
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -37,7 +40,7 @@ ms.lasthandoff: 04/16/2018
 
 -   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
 
-### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>使用规则条件编辑器创建声明性规则条件
+## <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>使用规则条件编辑器创建声明性规则条件
 
 1.  在活动的**属性**窗口中，单击**条件**属性或**UntilCondition**属性，具体取决于该活动。
 
@@ -47,7 +50,7 @@ ms.lasthandoff: 04/16/2018
 
 4.  单击**ConditionName**属性。
 
-5.  单击**ConditionName**省略号**[…]**以打开**选择条件**对话框。
+5.  单击**ConditionName**省略号 **[…]** 以打开**选择条件**对话框。
 
 6.  单击**新条件**以打开**规则条件编辑器**对话框。
 

@@ -1,7 +1,9 @@
 ---
-title: Visual Studio 工作流窗口 （旧版） |Microsoft 文档
+title: 工作流设计器的 Visual Studio 工作流窗口 （旧版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, designer windows
 ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
@@ -10,20 +12,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 524b589e7da8da02b2fafcaed5b10f4b754d2b58
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39e2b66a7203cd4ac80d855b8752683e126a0b27
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio 工作流窗口（旧版）
-[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 提供的旧 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 可用于面向 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。 这一旧设计器是可用于创建工作流的可视化设计器。 你可以将活动从**工具箱**到设计图面并对其进行配置存在。 作为一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 编辑器窗口，它占用了由其他 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 编辑器窗口使用的主窗口区域。 工作流的名称显示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 窗口标题栏中。
 
- 有经验的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 用户应该很熟悉旧设计器的大多数窗口。 下表描述主窗口。
+通过 Visual Studio 2010 的旧工作流设计器提供可用于面向.NET Framework 版本 3.5 或 WinFX。 这一旧设计器是可用于创建工作流的可视化设计器。 你可以将活动从**工具箱**到设计图面并对其进行配置存在。 作为一个 Visual Studio 编辑器窗口，它占用了其他 Visual Studio 编辑器窗口所使用的主窗口区域。 工作流的名称显示在 Visual Studio 窗口标题栏中。
+
+旧设计器窗口的大多数都很有经验的 Visual Studio 用户所熟悉。 下表描述主窗口。
 
 |窗口|描述|
 |------------|-----------------|
-|旧工作流设计图面|可视化设计器图面，用于创建面向 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 的工作流。 它提供了构成活动以可视方式拖活动设计器从能力**工具箱**到设计图面。|
+|旧工作流设计图面|一个可视化设计器图面，用于创建面向.NET Framework 版本 3.5 或 WinFX 工作流。 它提供了构成活动以可视方式拖活动设计器从能力**工具箱**到设计图面。|
 |工具箱|提供可拖到设计图面上的活动的图形化表示形式。|
 |属性|用于配置工作流活动属性。|
 |解决方案资源管理器|在分层树视图中显示工作流项目并使帮助管理项目的功能可供使用。|

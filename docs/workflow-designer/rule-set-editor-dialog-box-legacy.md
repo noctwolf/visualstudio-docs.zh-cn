@@ -1,7 +1,9 @@
 ---
-title: 规则集编辑器对话框 （旧版） |Microsoft 文档
+title: 工作流设计器中的规则集编辑器对话框 （旧版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
 helpviewer_keywords:
@@ -12,26 +14,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77bb10e5237b33c60b0cd309c2d3c6c634182bc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>“规则集编辑器”对话框（旧版）
-本主题介绍如何使用**规则集编辑器**旧的 Windows 工作流设计器中的对话框。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- **规则集编辑器**对话框用于创建和修改[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)规则集，序列化为.rules 文件。
+本主题介绍如何使用**规则集编辑器**旧的 Windows 工作流设计器中的对话框。 当你需要以面向.NET Framework 版本 3.5 或 WinFX 时，请使用旧工作流设计器。
+
+**规则集编辑器**对话框用于创建和修改[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)规则集，序列化为.rules 文件。
 
 > [!NOTE]
 > 如果你想要打开.rules 文件**带编码的 XML 编辑器**，必须先关闭工作流或活动的关联设计器窗口。
 
- 有关如何访问**规则集编辑器**对话框中，请参阅[如何： 创建 PolicyActivity 规则集 （旧版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。
+有关如何访问**规则集编辑器**对话框中，请参阅[如何： 创建 PolicyActivity 规则集 （旧版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。
 
 > [!WARNING]
-> 用于面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 的旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 的规则编辑器不支持多目标。
+> 用于面向.NET Framework 版本 3.5 或 WinFX 旧工作流设计器的规则编辑器不支持多目标功能。
 
- 下表描述的用户界面 (UI) 元素**规则集编辑器**对话框。
+下表描述的用户界面 (UI) 元素**规则集编辑器**对话框。
 
 |UI 元素|描述|
 |----------------|-----------------|

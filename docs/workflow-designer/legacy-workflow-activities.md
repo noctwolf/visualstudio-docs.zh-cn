@@ -1,7 +1,9 @@
 ---
-title: 旧工作流活动 |Microsoft 文档
+title: 工作流设计器的旧工作流活动
 ms.date: 01/18/2017
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, activities
 - activities
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ff7ac208d4b06ce454ef309d35400cb79f97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45c24c0be518e58ce87af11a38486818ca4a3ac7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="legacy-workflow-activities"></a>旧版工作流活动
 
-[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 包含一组默认活动，这组活动提供了用于控制流、条件、事件处理、状态管理以及与应用程序和服务通信的功能。 在设计工作流，你可以使用系统提供的活动提供的 Windows 工作流设计器中，或者可以创建自己的自定义活动。
+Windows Workflow Foundation (WF) 包括一组默认的活动，以提供功能控制流、 条件、 事件处理、 状态管理和通信的应用程序和服务。 在设计工作流，你可以使用系统提供的活动提供的 Windows 工作流设计器中，或者可以创建自己的自定义活动。
 
- 下表列出了 [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 框架现成可用的活动集。 许多，但并非所有这些活动的由表示活动设计器可以从访问**工具箱**的[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]。 若要创建活动，将其设计器从**工具箱**并将其放在设计图面上。
+下表列出了 Windows Workflow Foundation 框架现成可用的活动集。 许多，但并非所有这些活动的由表示活动设计器可以从访问**工具箱**的工作流设计器。 若要创建活动，将其设计器从**工具箱**并将其放在设计图面上。
 
 |活动|描述|
 |--------------|-----------------|
@@ -64,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 |<xref:System.Workflow.Activities.WebServiceOutputActivity>|对工作流发出的 Web 服务请求做出响应。 有关详细信息，请参阅[使用 WebServiceOutputActivity 活动](http://go.microsoft.com/fwlink?LinkID=65092)。|
 |<xref:System.Workflow.Activities.WhileActivity>|使工作流能够在条件得到满足之前进行循环。 有关详细信息，请参阅[使用 WhileActivity 活动](http://go.microsoft.com/fwlink?LinkID=65091)。|
 
- 有关如何创建自定义活动的详细信息，请参阅[开发自定义活动](http://go.microsoft.com/fwlink?LinkID=65023)和[使用旧版活动设计器](../workflow-designer/using-the-legacy-activity-designer.md)。
+有关如何创建自定义活动的详细信息，请参阅[开发自定义活动](http://go.microsoft.com/fwlink?LinkID=65023)和[使用旧版活动设计器](../workflow-designer/using-the-legacy-activity-designer.md)。
 
 ## <a name="see-also"></a>请参阅
 

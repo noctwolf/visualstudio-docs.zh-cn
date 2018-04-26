@@ -1,7 +1,9 @@
 ---
-title: 禁用 Visual Studio Debugger for Windows Workflow Foundation （旧版） |Microsoft 文档
+title: 工作流设计器-禁用 Visual Studio Debugger for Windows Workflow Foundation （旧版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, disabling debugger
 - debugging workflows, disabling debugger
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a609062f3f84538f7c1655cd5ca82971fc608f62
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 473ee507e35f5ec5df902df64ee34326dcf90a2b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>禁用 Visual Studio Debugger for Windows Workflow Foundation（旧版）
 
-本主题介绍如何禁用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]调试器使用配置文件时生成[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]旧的 Windows 工作流设计器中的应用程序。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
+本主题介绍如何禁用 Visual Studio 调试器生成旧的 Windows 工作流设计器中的 Windows Workflow Foundation (WF) 应用程序时使用配置文件。 当你需要以面向.NET Framework 版本 3.5 或 WinFX 时，请使用旧工作流设计器。
 
- 默认情况下，为宿主进程启用了 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] Debugger for [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]。 若要禁用工作流调试，你必须显式将其关闭通过添加"DisableWorkflowDebugging"项**\<交换机 >**中的元素 **\<system.diagnostics >**主机配置文件节。
+ 默认情况下，主机进程启用的 Visual Studio 调试器的 Windows Workflow Foundation (WF)。 若要禁用工作流调试，你必须显式将其关闭通过添加"DisableWorkflowDebugging"项**\<交换机 >** 中的元素 **\<system.diagnostics >** 主机配置文件节。
 
  以下示例显示如何修改主机配置文件以禁用工作流调试。
 

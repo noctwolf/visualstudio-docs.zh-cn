@@ -1,23 +1,26 @@
 ---
-title: 如何： 向工作流项目添加新项 |Microsoft 文档
+title: 工作流设计器-如何： 向工作流项目添加新项
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb3024573a9ca4732066610c2c29c05fa1d73891
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0aa2be7fd8ecccbd8de0aa54c2693dd6b02c7e10
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>如何：向工作流项目添加新项
-创建工作流项目之后，可以将工作流活动、设计器和其他熟悉的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项添加到项目中。
 
- 下表列出了可添加到工作流项目中的 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 项。
+创建工作流项目后，可以将工作流活动、 设计器和其他熟悉的 Visual Studio 项添加到你的项目。
+
+下表列出了你可以添加到工作流项目的 Windows Workflow Foundation (WF) 项目。
 
 |名称|描述|
 |----------|-----------------|
@@ -26,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 |Code 活动|一个采用代码编写执行逻辑的活动。 已为您生成一个源代码文件，该文件带有 <xref:System.Activities.CodeActivity.Execute%2A> 方法的重写。|
 |WCF 工作流服务|使用工作流活动生成的 [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] 服务。 选择此项将相同的文件添加到项目，选择时要获得**WCF 工作流服务应用程序**新项目的模板。 有关此过程的详细信息，请参阅[如何： 创建 WCF 工作流服务应用程序](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md)。|
 
-### <a name="to-add-a-new-item-to-a-workflow-project"></a>向工作流项目添加新项
+## <a name="to-add-a-new-item-to-a-workflow-project"></a>向工作流项目添加新项
 
 1.  上**项目**菜单上，单击**添加新项...**.
 

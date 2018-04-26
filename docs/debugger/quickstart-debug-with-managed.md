@@ -1,5 +1,6 @@
 ---
-title: 使用托管代码中使用 Visual Studio 调试器进行调试 |Microsoft 文档
+title: 调试托管的代码 |Microsoft 文档
+description: 调试 C# 或 Visual Basic 使用 Visual Studio 调试器
 ms.custom: mvc
 ms.date: 03/18/2018
 ms.technology: vs-ide-debug
@@ -12,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e209ef4385466be1009b19dde850751695344afe
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e895fe9844740fbb3fdd670ff53dfe0b72dbdfb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>使用托管代码中使用 Visual Studio 调试器进行调试
+# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>快速入门： 使用托管代码中使用 Visual Studio 调试器进行调试
 
 Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试你的应用。 本主题提供了一种快速了解部分基本功能的方法。
 
@@ -26,9 +27,9 @@ Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试
 
 1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
-2. 下**Visual C#**或**Visual Basic**，选择**.NET 核心**，，然后在中间窗格中选择**控制台应用程序 (.NET Core)**。
+2. 下**Visual C#** 或**Visual Basic**，选择 **.NET 核心**，，然后在中间窗格中选择**控制台应用程序 (.NET Core)**。
 
-     如果没有看到“控制台应用(.NET Core)”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择**.NET 桌面开发**和**.NET 核心**工作负荷，然后选择**修改**。
+     如果没有看到“控制台应用(.NET Core)”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择 **.NET 桌面开发**和 **.NET 核心**工作负荷，然后选择**修改**。
 
 3. 键入的名称，例如**MyDbgApp**单击**确定**。
 

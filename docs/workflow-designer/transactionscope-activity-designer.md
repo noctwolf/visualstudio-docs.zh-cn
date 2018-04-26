@@ -1,7 +1,9 @@
 ---
-title: TransactionScope 活动设计器 |Microsoft 文档
+title: 工作流设计器-TransactionScope 活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TransactionScope.UI
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
@@ -10,25 +12,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d09d025c8fd312ffa28f7ea2b991b9f1bae91b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67c8a5c610492f298d3f2ef6de35444c96f7310f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope 活动设计器
+
 **TransactionScope**活动设计器用于创建和配置<xref:System.Activities.Statements.TransactionScope>活动。
 
 ## <a name="the-transactionscope-activity"></a>TransactionScope 活动
  <xref:System.Activities.Statements.TransactionScope> 活动在单个事务中执行所包含的活动。 在 <xref:System.Activities.Statements.TransactionScope.Body%2A> 活动以及该事务中的所有其他参与者成功完成时将提交该事务。
 
 ### <a name="using-the-transactionscope-activity-designer"></a>使用 TransactionScope 活动设计器
- **TransactionScope**在找不到活动设计器**事务**类别**工具箱**，通过单击访问的哪一**工具箱**选项卡[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，选择**工具栏**从**视图**菜单或 CTRL + ALT + X。)
+ **TransactionScope**在找不到活动设计器**事务**类别**工具箱**，通过单击访问的哪一**工具箱**工作流设计器选项卡 (或者，选择**工具栏**从**视图**菜单或 CTRL + ALT + X。)
 
- **TransactionScope**活动设计器可以拖动从**工具箱**拖放到[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]图面任何位置通常放置活动的如内<xref:System.Activities.Statements.Sequence>。 这将创建具有 TransactionScope 的默认 <xref:System.Activities.Statements.TransactionScope> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑值**TransactionScope**活动设计器中或在**DisplayName**属性网格的框。
+ **TransactionScope**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，只要通常放置活动的如内<xref:System.Activities.Statements.Sequence>。 这将创建具有 TransactionScope 的默认 <xref:System.Activities.Statements.TransactionScope> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑值**TransactionScope**活动设计器中或在**DisplayName**属性网格的框。
 
 ### <a name="the-transactionscope-properties"></a>TransactionScope 属性
- 下表列出 <xref:System.Activities.Statements.TransactionScope> 属性并说明如何在设计器中使用它们。 <xref:System.Activities.Activity.DisplayName%2A> 和 <xref:System.Activities.Statements.TransactionScope.Body%2A> 属性可在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 图面上编辑。 但其他属性必须在属性网格上编辑。
+ 下表列出 <xref:System.Activities.Statements.TransactionScope> 属性并说明如何在设计器中使用它们。 <xref:System.Activities.Activity.DisplayName%2A>和<xref:System.Activities.Statements.TransactionScope.Body%2A>属性可以在工作流设计器图面上编辑。 但其他属性必须在属性网格上编辑。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|

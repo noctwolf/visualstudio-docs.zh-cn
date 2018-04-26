@@ -1,7 +1,9 @@
 ---
-title: 如何： 调试基于 ASP.NET 的工作流 （旧版） |Microsoft 文档
+title: 工作流设计器-如何： 调试基于 ASP.NET 的工作流 （旧版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - ASP.NET, debugging workflows
 - debugging workflows, ASP.NET workflows
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ed3f4f23ff02291df33b2676bdb980de191b281b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bf16a6a88c5d4cd063f1c32ca846031d8b2588d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>如何：调试基于 ASP.NET 的工作流（旧版）
-本主题介绍如何调试[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-基于[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]应用程序面向[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]旧的 Windows 工作流设计器中。
 
- 通过附加到承载工作流的进程，可以调试在 ASP.NET 中启动的旧工作流或以 Web 服务形式发布的旧工作流。
+本主题介绍如何调试基于 ASP.NET 的 Windows Workflow Foundation (WF) 应用程序，面向.NET Framework 版本 3.5 或 WinFX 旧的 Windows 工作流设计器中。
 
-### <a name="to-debug-an-aspnet-based-workflow"></a>调试基于 ASP.NET 的工作流
+通过附加到承载工作流的进程，可以调试在 ASP.NET 中启动的旧工作流或以 Web 服务形式发布的旧工作流。
+
+## <a name="to-debug-an-aspnet-based-workflow"></a>调试基于 ASP.NET 的工作流
 
 1.  启用 ASP.NET 应用程序通过设置调试**调试 = true** web.config 文件中。
 

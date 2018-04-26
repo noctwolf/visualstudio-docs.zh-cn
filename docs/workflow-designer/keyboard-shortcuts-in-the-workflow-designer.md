@@ -1,7 +1,9 @@
 ---
-title: 键盘快捷方式在工作流设计器 |Microsoft 文档
+title: 工作流设计器的工作流设计器中的键盘快捷键
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d96eb6d738fbf23749bec601743002a451ad06
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流设计器中的键盘快捷键
 
@@ -22,11 +24,11 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>使用键盘导航工作流设计器
 
-在 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 中，全局快捷键和调试快捷键适用于 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]。 此外，还创建了很多 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 特定的键盘快捷键。 在 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 中，可以重新映射所有键盘快捷键。 但是，在重新承载的应用程序中，对这些键盘快捷键进行了硬编码。
+在 Visual Studio 2010 中，全局快捷键和调试快捷键适用于工作流设计器。 此外，已创建大量的工作流设计器特定的键盘快捷方式。 在 Visual Studio 2010 中，所有键盘快捷方式可被重新映射。 但是，在重新承载的应用程序中，对这些键盘快捷键进行了硬编码。
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>工作流设计器键盘快捷键
 
-下表汇总了分配给 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 命令的默认键盘快捷键。
+下表汇总了分配给工作流设计器命令的默认键盘快捷键。
 
 |快捷键|用途|
 |--------------|-------------|
@@ -46,7 +48,7 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="flowchart"></a>流程图
 
-下表列出了通过键盘构造流程图所使用的笔势。 与在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 的其他内容中一样，会使用 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 提供的全局工具箱快捷键将活动添加到设计器图面。
+下表列出了通过键盘构造流程图所使用的笔势。 如下所示的工作流设计器的其余部分，将活动添加到使用随 Visual Studio 2010 提供的全局工具箱快捷键设计器图面。
 
 - 若要移动某个活动，请选择该活动并使用箭头键重新定位该活动。
 
@@ -74,7 +76,7 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="expression-editing"></a>表达式编辑
 
-默认情况下，用于 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 文本编辑的默认键盘快捷键适用于 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 中的表达式编辑器，但具有以下限制：
+默认情况下，Visual Basic 文本编辑的默认键盘快捷方式应用内的表达式编辑器中工作流设计器中，有以下限制：
 
 - 重新映射以下命令的键盘快捷键无效。 编辑表达式时，只能使用默认的键盘快捷键访问这些命令。
 
@@ -85,4 +87,4 @@ ms.lasthandoff: 04/16/2018
    - 撤消
    - 重做
 
-- 若要重新映射 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 的 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 中表达式编辑命令的键盘快捷键，请在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 作用域中编辑这些快捷键。 在文本编辑器作用域所进行的更改不会自动应用于 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]。 如果您希望在这两个位置都重新映射快捷键，则必须应用两次更改（每个作用域应用一次）。
+- 若要重新映射 Visual Studio 2010 中的工作流设计器内的表达式编辑命令的键盘快捷方式，请编辑工作流设计器作用域中的快捷方式。 工作流设计器自动不适用于在文本编辑器作用域中所做的更改。 如果您希望在这两个位置都重新映射快捷键，则必须应用两次更改（每个作用域应用一次）。

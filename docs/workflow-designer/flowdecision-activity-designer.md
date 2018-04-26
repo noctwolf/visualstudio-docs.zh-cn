@@ -1,7 +1,9 @@
 ---
-title: FlowDecision 活动设计器 |Microsoft 文档
+title: 工作流设计器-FlowDecision 活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
@@ -10,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fccddd294b11b6d7c4eee7f48fa00b77b1148717
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 033eeff34c095b4598a02a386794379d06086450
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision 活动设计器
+
 <xref:System.Activities.Statements.FlowDecision> 节点是一个条件节点，它根据指定条件是否成立来将控制流分支到两个备分支之一。 如果流需要的分支超过两个，请改用 <xref:System.Activities.Statements.FlowSwitch%601>。
 
 ## <a name="the-flowdecision-node"></a>FlowDecision 节点
- 当流可以分支到两条路径时可使用 <xref:System.Activities.Statements.FlowDecision>。 一个 <xref:System.Activities.Statements.FlowDecision> 节点具有一个 <xref:System.Activities.Statements.FlowDecision.Condition%2A>，并且两个可能结果中的每一个都有一个关联的 <xref:System.Activities.Statements.FlowNode>，这两个可能的结果为：<xref:System.Activities.Statements.FlowDecision.True%2A> 和 <xref:System.Activities.Statements.FlowDecision.False%2A>。 将对 <xref:System.Activities.Statements.FlowDecision.Condition%2A> 进行计算，此计算值决定要在 <xref:System.Activities.Statements.FlowNode> 中处理的下一个 <xref:System.Activities.Statements.Flowchart>。
+
+当流可以分支到两条路径时可使用 <xref:System.Activities.Statements.FlowDecision>。 一个 <xref:System.Activities.Statements.FlowDecision> 节点具有一个 <xref:System.Activities.Statements.FlowDecision.Condition%2A>，并且两个可能结果中的每一个都有一个关联的 <xref:System.Activities.Statements.FlowNode>，这两个可能的结果为：<xref:System.Activities.Statements.FlowDecision.True%2A> 和 <xref:System.Activities.Statements.FlowDecision.False%2A>。 将对 <xref:System.Activities.Statements.FlowDecision.Condition%2A> 进行计算，此计算值决定要在 <xref:System.Activities.Statements.FlowNode> 中处理的下一个 <xref:System.Activities.Statements.Flowchart>。
 
 ### <a name="using-the-flowdecision-designer"></a>使用 FlowDecision 设计器
- **Flowdecision**在找不到设计器**流程图**类别**工具箱**，通过单击访问的哪一**工具箱**选项卡上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，选择**工具栏**从**视图**菜单上或 CTRL + ALT + X。)
+ **Flowdecision**在找不到设计器**流程图**类别**工具箱**，通过单击访问的哪一**工具箱**在工作流设计器上的选项卡 (或者，选择**工具栏**从**视图**菜单上或 CTRL + ALT + X。)
 
- **Flowdecision**设计器可以拖动从**工具箱**拖放到[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]图面中**流程图**活动设计器。 这将创建<xref:System.Activities.Statements.FlowDecision>标记为**决策**内<xref:System.Activities.Statements.Flowchart>活动。 鼠标悬停在设计器和**True**和**False**正方形处理框的两个分支显示。
+ **Flowdecision**设计器可以拖动从**工具箱**和放置到工作流设计器图面中**流程图**活动设计器。 这将创建<xref:System.Activities.Statements.FlowDecision>标记为**决策**内<xref:System.Activities.Statements.Flowchart>活动。 鼠标悬停在设计器和**True**和**False**正方形处理框的两个分支显示。
 
  拖动之后**flowdecision**设计器和其他设计器拖到**流程图**，节点可链接在一起以指定执行顺序。 若要创建的源节点之间的链接 (包括**True**和**False**的分支**flowdecision**) 和目标节点，鼠标悬停在设计器的源节点和它的每一侧显示正方形处理框。 单击这些正方形处理框之一并按下鼠标按钮将其拖到当鼠标悬停在目标节点上时该节点周围以类似方式显示的处理框之一。 松开鼠标按钮，此时将在这两个节点之间创建一个链接，表示为从源设计器指向目标设计器的箭头。
 

@@ -1,5 +1,6 @@
 ---
-title: 调试 Visual Studio 的 ASP.NET-|Microsoft 文档
+title: 调试 ASP.NET
+description: 调试 ASP.NET 使用 Visual Studio 调试器
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
@@ -12,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: c9cc8022a6080b63792cdadcc87af07e08ef749e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5f731e5d40205776682e706aa4e32d988a76f0f0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="debug-aspnet-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器进行调试 ASP.NET
+# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入门： 使用 Visual Studio 调试器调试 ASP.NET
 
 Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试你的应用。 本主题提供了一种快速了解部分基本功能的方法。
 
@@ -32,7 +33,7 @@ Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试
 
 1. 在显示的对话框中，选择**Web 应用程序**在中间窗格中，然后单击**确定**。
 
-     如果看不到**Web 应用程序**项目模板中，单击**打开 Visual Studio 安装程序**中的左窗格中的链接，**新项目**对话框。 Visual Studio 安装程序启动。 选择**ASP.NET**和**.NET 核心**工作负荷，然后选择**修改**。
+     如果看不到**Web 应用程序**项目模板中，单击**打开 Visual Studio 安装程序**中的左窗格中的链接，**新项目**对话框。 Visual Studio 安装程序启动。 选择**ASP.NET**和 **.NET 核心**工作负荷，然后选择**修改**。
 
     ![选择一个 Web 应用程序](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
 

@@ -1,18 +1,20 @@
 ---
-title: 控制流活动设计器 |Microsoft 文档
+title: 工作流设计器的控制流活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b464f141dcda624c293a5abd5065a3263738932
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dea0806b1abc4febbdcf89c59025452c5879addb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="control-flow-activity-designers"></a>控制流活动设计器
 
@@ -44,7 +46,7 @@ Windows 工作流设计器包含大量的系统提供的活动，你可以构造
 
 ## <a name="related-sections"></a>相关章节
 
-有关其他类型活动设计器的信息，请参见下列主题。
+有关其他类型的活动设计器，请参阅以下主题：
 
  [使用活动设计器](../workflow-designer/using-the-activity-designers.md)
 

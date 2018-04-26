@@ -1,7 +1,9 @@
 ---
-title: 顺序工作流视图 （旧版） |Microsoft 文档
+title: 工作流设计器的顺序工作流视图 （旧版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflow views
 - sequential workflows, views
@@ -11,20 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b42ba9c1c9f7dbe2beb4a741501967e4968508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce1217ea629ae0301b72b444161d61db4fe448b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sequential-workflow-views-legacy"></a>顺序工作流视图（旧版）
-[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 提供了一个旧的 Windows 工作流设计器，可以使用指向[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]提供了一种以图形方式创建 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 应用程序的方法（使用熟悉的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 用户界面）。 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 应用程序由名为活动的工作流过程步骤组成。 若要创建工作流，构成活动设计图面上的，通过拖动其相应的活动设计器从**工具箱**拖到设计图面。
+Visual Studio 2010 提供了一个旧的 Windows 工作流设计器，可用于面向.NET Framework 版本 3.5 或 WinFX。
 
- 当你创建一个顺序工作流，这是[SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)，工作流的三个视图都可用。 这些视图是从可访问**工作流**菜单和设计图面上的上下文菜单。
+工作流设计器使您能够以图形方式创建使用熟悉的 Visual Studio 用户界面的 Windows Workflow Foundation (WF) 应用程序。 Windows Workflow Foundation (WF) 应用程序由名为活动的工作流过程步骤组成。 若要创建工作流，构成活动设计图面上的，通过拖动其相应的活动设计器从**工具箱**拖到设计图面。
 
- 下表列出了每个视图的名称和说明。
+当你创建一个顺序工作流，这是[SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)，工作流的三个视图都可用。 这些视图是从可访问**工作流**菜单和设计图面上的上下文菜单。
+
+下表列出了每个视图的名称和说明。
 
 |菜单/选项卡选项|描述|
 |----------------------|-----------------|

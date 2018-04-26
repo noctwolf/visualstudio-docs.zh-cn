@@ -1,7 +1,9 @@
 ---
-title: AddToCollection&lt;T&gt;活动设计器 |Microsoft 文档
+title: 工作流设计器-AddToCollection<T>活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c961c8ab893b1d8b4a2d519d8b9dce27fd6f93c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b32df48f79d60500cb23a40c5273ceeedfc9c56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt;活动设计器
-**AddToCollection\<T >**活动设计器用于创建和配置<xref:System.Activities.Statements.AddToCollection%601>活动。
+# <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > 活动设计器
 
-## <a name="the-addtocollectiont-activity"></a>AddToCollection < T\>活动
- <xref:System.Activities.Statements.AddToCollection%601> 活动向集合添加一项。
+**AddToCollection\<T >** 活动设计器用于创建和配置<xref:System.Activities.Statements.AddToCollection%601>活动。
+
+## <a name="the-addtocollectiont-activity"></a>AddToCollection\<T > 活动
+
+<xref:System.Activities.Statements.AddToCollection%601> 活动向集合添加一项。
 
 ### <a name="using-the-addtocollectiont-activity-designer"></a>使用 AddToCollection\<T > 活动设计器
- **AddToCollection\<T >**在找不到活动设计器**集合**类别**工具箱**，这通过单击访问**工具箱**选项卡[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，选择**工具栏**从**视图**菜单或 CTRL + ALT + X。)
 
- **AddToCollection\<T >**活动设计器可以拖动从**工具箱**拖放到[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]图面任何位置通常放置活动的如内<xref:System.Activities.Statements.Sequence>. 这将创建<xref:System.Activities.Statements.AddToCollection%601>默认值的活动<xref:System.Activities.Activity.DisplayName%2A>的 AddToCollection < Int32\>。 (默认情况下， *TypeArgument*是**Int32**。 可在属性网格中更改此值。）<xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑值**AddToCollection < T\>** 活动设计器中或在**DisplayName**属性网格的框。 其他属性必须在属性网格上编辑。
+**AddToCollection\<T >** 在找不到活动设计器**集合**类别**工具箱**，这通过单击访问**工具箱**工作流设计器选项卡 (或者，选择**工具栏**从**视图**菜单或 CTRL + ALT + X。)
 
-### <a name="the-addtocollectiont-properties"></a>AddToCollection < T\>属性
- 下表列出 <xref:System.Activities.Statements.AddToCollection%601> 属性并说明如何在设计器中使用它们。
+**AddToCollection\<T >** 活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，只要放置活动的如与内部<xref:System.Activities.Statements.Sequence>. 删除**AddToCollection\<T >** 活动设计器创建<xref:System.Activities.Statements.AddToCollection%601>默认值的活动<xref:System.Activities.Activity.DisplayName%2A>的 AddToCollection < Int32\>。 (默认情况下， *TypeArgument*是**Int32**。 TypeArgument 可以更改在属性网格中。）<xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑值**AddToCollection < T\>** 活动设计器中或在**DisplayName**属性网格的框。 其他属性必须在属性网格上编辑。
+
+### <a name="the-addtocollectiont-properties"></a>AddToCollection\<T > 属性
+
+下表列出 <xref:System.Activities.Statements.AddToCollection%601> 属性并说明如何在设计器中使用它们。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|

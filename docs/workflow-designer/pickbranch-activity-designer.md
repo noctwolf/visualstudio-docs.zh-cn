@@ -1,7 +1,9 @@
 ---
-title: PickBranch 活动设计器 |Microsoft 文档
+title: 工作流设计器-PickBranch 活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
@@ -10,26 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c7fbb7dcacbf8d790e161a2af864c7a5e7e2c35
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ea106a96a5d6b81ee0b0b898c881eb752582f8d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 活动设计器
+
 <xref:System.Activities.Statements.PickBranch> 在可由传入事件触发的 <xref:System.Activities.Statements.Pick> 活动中提供基于事件的执行路径。
 
 ## <a name="pickbranch"></a>PickBranch
- <xref:System.Activities.Statements.PickBranch> 对象包含在 <xref:System.Activities.Statements.Pick.Branches%2A> 活动的 <xref:System.Activities.Statements.Pick> 集合中。 每个 <xref:System.Activities.Statements.PickBranch> 都包含在 <xref:System.Activities.Statements.Pick> 活动的一个分支中，并可因某些用作触发器的传入事件而执行。 在这种方式 Windows 工作流设计器提供基于事件的控制流建模。 每个 <xref:System.Activities.Statements.PickBranch> 都包含一个 <xref:System.Activities.Statements.PickBranch.Trigger%2A> 和一个 <xref:System.Activities.Statements.PickBranch.Action%2A>。
+
+<xref:System.Activities.Statements.PickBranch> 对象包含在 <xref:System.Activities.Statements.Pick.Branches%2A> 活动的 <xref:System.Activities.Statements.Pick> 集合中。 每个 <xref:System.Activities.Statements.PickBranch> 都包含在 <xref:System.Activities.Statements.Pick> 活动的一个分支中，并可因某些用作触发器的传入事件而执行。 在这种方式 Windows 工作流设计器提供基于事件的控制流建模。 每个 <xref:System.Activities.Statements.PickBranch> 都包含一个 <xref:System.Activities.Statements.PickBranch.Trigger%2A> 和一个 <xref:System.Activities.Statements.PickBranch.Action%2A>。
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>如何使用 Pick 活动设计器
- **Pickbranch**在找不到设计器**控制流**类别**工具箱**，通过单击访问的哪一**工具箱**选项卡上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，选择**工具栏**从**视图**菜单上或 CTRL + ALT + X)。
 
- 两个空<xref:System.Activities.Statements.PickBranch>对象显示名称为**Branch1**和**Branch2**默认情况下创建的元素作为<xref:System.Activities.Statements.Pick>活动时**选取**最初，活动设计器放到[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]。 二者各自<xref:System.Activities.Statements.PickBranch.DisplayName%2A>属性值可以在中编辑**pickbranch**设计器标头或**属性**为每个分支的窗口。
+**Pickbranch**在找不到设计器**控制流**类别**工具箱**，通过单击访问的哪一**工具箱**工作流设计器上的选项卡 (或者，选择**工具栏**从**视图**菜单上或 CTRL + ALT + X)。
 
- 有两种方法来添加<xref:System.Activities.Statements.PickBranch>到的集合对象<xref:System.Activities.Statements.Pick>对象： 中拖放**pickbranch**从设计器**工具箱**或通过从上下文菜单在**选取**设计图面：
+两个空<xref:System.Activities.Statements.PickBranch>对象显示名称为**Branch1**和**Branch2**默认情况下创建的元素作为<xref:System.Activities.Statements.Pick>活动时**选取**最初，活动设计器放到工作流设计器。 二者各自<xref:System.Activities.Statements.PickBranch.DisplayName%2A>属性值可以在中编辑**pickbranch**设计器标头或**属性**为每个分支的窗口。
 
-1.  **Pickbranch**设计器将创建<xref:System.Activities.Statements.PickBranch>时从拖**工具箱**，放入的分支中的一个**选取**上的活动设计器[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]面。 新 <xref:System.Activities.Statements.PickBranch> 对象可放置在 <xref:System.Activities.Statements.Pick> 设计器内已包含在集合中的任何现有 <xref:System.Activities.Statements.PickBranch> 元素的左侧或右侧。 拖动时**pickbranch**设计器拖到**选取**使用鼠标，设计器**选取**设计器使用垂直的蓝灰条来指示在何处<xref:System.Activities.Statements.PickBranch>为给定的鼠标放置位置添加了。
+有两种方法来添加<xref:System.Activities.Statements.PickBranch>到的集合对象<xref:System.Activities.Statements.Pick>对象： 中拖放**pickbranch**从设计器**工具箱**或通过从上下文菜单在**选取**设计图面：
+
+1.  **Pickbranch**设计器将创建<xref:System.Activities.Statements.PickBranch>时从拖**工具箱**，放入的分支中的一个**选取**上的活动设计器工作流设计器图面。 新 <xref:System.Activities.Statements.PickBranch> 对象可放置在 <xref:System.Activities.Statements.Pick> 设计器内已包含在集合中的任何现有 <xref:System.Activities.Statements.PickBranch> 元素的左侧或右侧。 拖动时**pickbranch**设计器拖到**选取**使用鼠标，设计器**选取**设计器使用垂直的蓝灰条来指示在何处<xref:System.Activities.Statements.PickBranch>为给定的鼠标放置位置添加了。
 
 2.  右键单击**选取**活动设计器 (但不是能在**pickbranch**设计器) 获取上下文菜单并选择**创建分支**添加新<xref:System.Activities.Statements.PickBranch>。 请注意，新<xref:System.Activities.Statements.PickBranch>添加到现有的右侧<xref:System.Activities.Statements.PickBranch>中的对象**选取**设计器。
 
@@ -46,7 +51,7 @@ ms.lasthandoff: 04/16/2018
  请务必选择**pickbranch**设计器中，选择其中一个内的活动作为其**触发器**或**操作**框是误删除这些活动之一而不<xref:System.Activities.Statements.PickBranch>对象。
 
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>工作流设计器中的 PickBranch 属性
- 下表列出最有用的 <xref:System.Activities.Statements.PickBranch> 属性并说明如何在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 中使用它们。
+ 下表列出最有用<xref:System.Activities.Statements.PickBranch>属性并说明如何在工作流设计器中使用它们。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|

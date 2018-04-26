@@ -1,7 +1,9 @@
 ---
-title: 浏览并选择.NET 类型对话框 |Microsoft 文档
+title: 工作流设计器-浏览并选择.NET 类型对话框
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
@@ -11,15 +13,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04aba24d3dffc96fb8e5288d74322258fa77ce19
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4d136c98acd2719abd07f8feb2f9def48ec6b2ec
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>“浏览并选择 .NET 类型”对话框
 
-在**属性**窗口、 对话框框中或如变量设计器中，当你选择的设计器**浏览类型...**从数据类型的列表，**浏览并选择.NET 类型**对话框中 （在"类型浏览器"以缩写形式称为）。 在此对话框中，可以从程序集和项目的树视图中选择类型。
+在**属性**窗口、 对话框框中或如变量设计器中，当你选择的设计器**浏览类型...** 从数据类型的列表，**浏览并选择.NET 类型**对话框中 （在"类型浏览器"以缩写形式称为）。 在此对话框中，可以从程序集和项目的树视图中选择类型。
 
  在很多用户方案中都使用此对话框，这些方案包括：
 
@@ -34,7 +36,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>从类型浏览器中选择值或引用类型
 
-#### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>从类型浏览器中选择值或引用类型
+### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>从类型浏览器中选择值或引用类型
 
 1.  在**类型名称**框中，输入你想要使用的类型的名称。
 
@@ -44,7 +46,7 @@ ms.lasthandoff: 04/16/2018
 
     -   键入足够多的字符中**类型名称**中，用于唯一标识你想要使用，然后按 enter 以选择的类型的类型
 
-#### <a name="to-select-a-generic-type-from-the-type-browser"></a>从类型浏览器中选择一个泛型类型
+### <a name="to-select-a-generic-type-from-the-type-browser"></a>从类型浏览器中选择一个泛型类型
 
 1.  在**类型名称**框中，键入你想要使用的类型的名称。
 
@@ -60,7 +62,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="filtering-search-results-in-the-type-browser"></a>在类型浏览器中筛选搜索结果
  中的类型列表**类型名称**框获取更短，因为你键入更多字符可找到匹配项。 只有其完全限定名以您键入的字符串开头的类型或者其简短名称以您键入的字符串开头的类型会显示在筛选出的列表中。
 
- 例如: 
+ 例如：
 
 1.  键入**操作**匹配<xref:System.OperationCanceledException>但不是<xref:System.InvalidOperationException>。 若要匹配 <xref:System.InvalidOperationException>，请开始键入 System.I 或 Invalid。
 

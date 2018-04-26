@@ -1,19 +1,19 @@
 ---
-title: 使用 XML 数据 |Microsoft 文档
-ms.custom: ''
+title: 使用 XML 数据
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e92bd40eba56c486c95be4d85e376f80beffccf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="working-with-xml-data"></a>使用 XML 数据
 
@@ -45,28 +45,16 @@ XML 架构设计器与 Visual Studio 和 XML 编辑器，以使你能够使用 X
 
 Visual Studio 支持调试 XSLT 样式表。 使用调试程序，可以在 XSLT 样式表中设置断点，从代码进入并逐行执行 XSLT 样式表，等等。
 
-## <a name="in-this-section"></a>本节内容
-
-[XML 编辑器](../xml-tools/xml-editor.md)  
-介绍“XML 编辑器”。
-
-[XML 架构设计器](../xml-tools/xml-schema-designer.md)  
-讨论 XML 架构设计器以及如何使用 XML 架构定义语言 (XSD) 架构。
-
 ## <a name="related-sections"></a>相关章节
 
-[调试 XSLT](../xml-tools/debugging-xslt.md)  
-讨论如何使用 Visual Studio 调试程序调试样式表。
+[调试 XSLT](../xml-tools/debugging-xslt.md)讨论如何调试使用 Visual Studio 调试器的样式表。
 
-[XML 标准参考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-提供有关 XML 技术的信息，其中包括 XML、文档类型定义 (DTD)、XML 架构定义语言 (XSD) 和 XSLT。
+[XML 标准参考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供有关 XML 技术，包括 XML、 文档类型定义 (DTD)、 XML 架构定义语言 (XSD) 和 XSLT 的信息。
 
-[在 Visual Studio 中创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
-介绍用于创建数据集的设计时工具。
+[创建和配置 Visual Studio 中的数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)介绍用于创建数据集的设计时工具。
 
-[在托管代码中的 XML Web 服务](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
-讨论如何创建和部署 XML Web 服务以及如何访问 XML Web 服务。
+[托管代码中的 XML Web Services](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)讨论如何创建和部署 XML Web 服务以及如何访问 XML Web 服务。
 
 ## <a name="see-also"></a>请参阅
 
-[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)
+- [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

@@ -1,6 +1,7 @@
 ---
 title: 代码分析策略错误
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 625b67972095728d1e9f5c0fd9fa9e5d8da60786
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac981d51dd11b03d7ce35f2583f2c91274129714
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-analysis-policy-errors"></a>代码分析策略错误
 如果在签入时未满足代码分析策略，会发生以下错误：
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/19/2018
 
 3.  在 Visual Studio 指定的规则集不包含在团队项目代码分析签入策略中指定的规则集中指定的所有规则。
 
- **代码分析策略失败。项目 {0} 中出现错误或生成不是最新。**
+ **代码分析策略失败。在项目中有错误{0}或版本不是最新。**
 
  要么生成包含错误或已修复的错误，但此修补程序后未执行代码分析。
 
@@ -44,31 +45,31 @@ ms.lasthandoff: 04/19/2018
 
  代码分析策略要求要签入的所有文件都必须在当前打开的解决方案。 没有打开的解决方案，但"挂起签入"视图中的某些文件不是当前打开的解决方案的一部分，则会出现此错误。 若要更正此错误，打开包含要签入的文件的解决方案。
 
- **"{0}"的版本不正确。强名称的策略中指定为 {1}。**
+ **版本{0}不正确。强名称的策略中指定为{1}。**
 
  此错误适用于.NET 项目。 所需的代码分析策略规则.dll 存在的本地计算机上，但版本/公钥不匹配。 若要更正此错误，策略创建者必须更新中的.dll *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static 分析 Tools\FxCop\Rules\\* 目录在其计算机上。
 
- **"{0}"的策略中指定的程序集不存在。**
+ **{0}的策略中指定的程序集不存在。**
 
  此错误适用于.NET 项目。 代码分析策略所需的规则没有对应的客户端计算机上安装的 dll。 若要更正此错误，策略创建者必须更新该 dll 中的*C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static 分析 Tools\FxCop\Rules\\* 目录在其计算机上。
 
- **项目 {0} 规则设置不是使用代码分析策略的一致性。**
+ **项目{0}规则设置不是使用代码分析策略的一致性。**
 
  此错误适用于.NET 项目。 托管的代码规则设置不是像策略要求的那样严格的。 若要更正此错误，客户端设置必须相同或比在服务器上的策略要求更严格。
 
- **活动配置上未启用代码分析。切换到配置 {0} 并签入前生成项目 {1}。**
+ **活动配置上未启用代码分析。切换到配置{0}和生成项目{1}在签入前。**
 
  在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、 活动的配置未启用代码分析，但没有启用的至少一种代码分析。
 
- **必须为项目 {0} 属性中的托管二进制文件时启用代码分析，并生成在签入之前。**
+ **你必须为项目中的托管二进制文件时启用代码分析{0}属性和生成在签入前的。**
 
  此错误适用于[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].NET 应用程序。 策略需要托管的代码分析，以执行，但未启用客户端上当前项目中。
 
- **必须在项目 {0} 属性中启用代码分析，并生成在签入之前。**
+ **你必须在项目中启用代码分析{0}属性和生成在签入前的。**
 
  应用于此错误[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目和 Web 项目。 策略需要托管的代码分析，以执行，但未启用客户端上当前项目中。
 
- **必须在项目 {0} 属性中启用 C/c + + 代码分析，并在签入之前生成。**
+ **你必须在项目中启用 C/c + + 代码分析{0}属性和生成在签入前的。**
 
  此错误适用于非托管项目。 代码分析策略要求代码分析为 C/c + +，但未启用客户端上当前项目中。
 
