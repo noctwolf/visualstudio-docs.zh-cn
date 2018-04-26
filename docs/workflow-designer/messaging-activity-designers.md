@@ -1,21 +1,24 @@
 ---
-title: 消息传递活动设计器 |Microsoft 文档
+title: 工作流设计器的消息传递活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c34dea2dd0265d156bb4b379323559be4825b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03809ffdf421e97b993b840fe4a352b344554e47
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="messaging-activity-designers"></a>消息传递活动设计器
-消息传递活动设计器用于在 [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 应用程序中创建和配置从中发送和接收 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 消息的消息传递活动。 [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)]引入了五个消息传递活动和 Windows 工作流设计器提供了两个新模板设计器，可用于管理消息传递工作流中。 本节中所包含并在下表中列出的各主题介绍如何使用 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 活动和模板设计器。
+
+消息传递活动设计器用于创建和配置发送和接收来自 Windows Workflow Foundation (WF) 应用程序中的 Windows Communication Foundation (WCF) 消息的消息传递活动。 .NET Framework 4 引入了五个消息传递活动和 Windows 工作流设计器提供了两个新模板设计器，可用于管理消息传递工作流中。 本节中所包含并在下表中列出的主题提供有关如何使用工作流设计器活动和模板设计器的指南。
 
 ## <a name="reference"></a>参考
  <xref:System.Activities.Activity>

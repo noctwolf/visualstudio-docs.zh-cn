@@ -11,12 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 003318b8c8e26112ee83dceb9cdc3c453dc6956f
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 6d51b660235a793182cd968423522ade35ce1a56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="export-diagrams-as-images"></a>将关系图导出为图像
 在 Visual Studio 中，你可以保存建模图在只读格式中的，以便您可以与利益干系人、 用户或不使用相同版本的 Visual Studio 项目团队成员共享它们。

@@ -1,31 +1,33 @@
 ---
-title: 如何： 创建活动库 |Microsoft 文档
+title: 工作流设计器-如何： 创建活动库
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef62a5098581042a4995d6c522e0757c361e9d4f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>如何：创建活动库
-自定义活动用于在工作流中对特定业务流程进行建模。 中的活动库模板[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]已提供了可使你能够创建此类自定义活动，以可视方式使用 Windows 工作流设计器。
+自定义活动用于在工作流中对特定业务流程进行建模。 提供了 Visual Studio 2010 中的活动库模板，用于使你能够创建此类自定义活动，以可视方式使用 Windows 工作流设计器。
 
 ### <a name="to-create-a-workflow-activity-library"></a>创建工作流活动库
 
-1.  启动 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。
+1.  启动 Visual Studio 2010。
 
-2.  上**文件**菜单上，指向**新建**，然后选择**项目...**.
+2.  在“文件”菜单上，指向“新建”，然后选择“项目”。
 
      **“新建项目”** 对话框随即打开。
 
-3.  在**项目类型**窗格中，选择**工作流**从**Visual C#**项目或**Visual Basic**分组，具体取决于你语言首选项。
+3.  在**项目类型**窗格中，选择**工作流**从**Visual C#** 项目或**Visual Basic**分组，具体取决于你语言首选项。
 
 4.  在**模板**窗格中，选择**活动库**。
 
@@ -36,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 7.  在**解决方案**框中，键入你的解决方案的描述性名称，然后单击**确定**。
 
     > [!NOTE]
-    > 如果你想要添加到现有的解决方案的工作流控制台应用程序，打开该解决方案中的[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]，右键单击该解决方案中的**解决方案资源管理器**，然后选择**添加**，然后**新建项目...**以打开**新项目**对话框。 按照此过程中的上述步骤继续操作。
+    > 如果你想要添加到现有的解决方案的工作流控制台应用程序，在 Visual Studio 2010 中打开该解决方案，右键单击该解决方案中的**解决方案资源管理器**，然后选择**添加**，然后**新项目**以打开**新项目**对话框。 按照此过程中的上述步骤继续操作。
 
 8.  该项目模板将创建一个 XAML 格式的活动定义。 Windows 工作流设计器打开并显示自定义活动的画布。
 

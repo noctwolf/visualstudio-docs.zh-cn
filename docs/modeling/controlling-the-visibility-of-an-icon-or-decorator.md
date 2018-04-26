@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 070f49b09086d463a13470f389a4857225b7add9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 2f2e0671229635eb3dd5fdd50aca15ce11d1ac3a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制图标或修饰器的可见性
 A*修饰器*是图标还是在域特定语言 (DSL) 中的一个形状显示的文本行。 可以进行修饰器出现，并根据模型中的属性的状态进行消失。 例如上一个形状上表示个人，, 你可以有不同的图标显示具体取决于该人员的性别，子节点，数量等。

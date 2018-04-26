@@ -1,7 +1,9 @@
 ---
-title: 工作流设计器 Shell 功能 |Microsoft 文档
+title: 工作流设计器 Shell 功能
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf7d88b6436ba117b85c2ea6cc423520f9fd873
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="workflow-designer-shell-features"></a>工作流设计器 Shell 功能
 
@@ -27,7 +29,7 @@ Windows 工作流设计器由三个主要的 UI 区域组成： 设计器图面�
  摘要图显示当前痕迹根处的整个活动的缩小版本，包括该根的所有子级和这些子级的所有已展开子级。 视区（即带有橙色边框的矩形）中突出显示编辑器内当前显示的活动部分。 在摘要图中四处拖动该矩形将会滚动工作流设计器并更改编辑器的视图。
 
 > [!NOTE]
-> [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 用户界面是虚拟化的。 只在需要时才呈现活动设计器。 如果从未将工作流的某一部分拖到设计器图面，该部分在摘要图上将显示为空白。 在摘要图中四处滚动将绘制出完整的工作流。
+> 虚拟化的工作流设计器用户界面。 只在需要时才呈现活动设计器。 如果从未将工作流的某一部分拖到设计器图面，该部分在摘要图上将显示为空白。 在摘要图中四处滚动将绘制出完整的工作流。
 
 ## <a name="copying-or-saving-workflows-as-images"></a>将工作流复制或另存为图像
  可以用位图格式复制工作流，或者用位图或向量格式保存工作流。 复制或保存图像提供了一种将当前痕迹根处的整个活动的视图（包括该根的所有子级和这些子级的所有已展开子级）导出到其他程序的方法。
@@ -36,4 +38,4 @@ Windows 工作流设计器由三个主要的 UI 区域组成： 设计器图面�
 
 ## <a name="fonts-and-colors"></a>字体和颜色
 
-在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 内的 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 中使用的字体由环境字体控制。 如果您使用的是高对比度的操作系统主题配色方案，[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 中显示的颜色将发生更改。 在对字体或颜色设置进行更改后，必须重新启动 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 才能使更改在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 中生效。
+在 Visual Studio 2010 内的工作流设计器中使用的字体由环境字体控制。 如果将高对比度配色方案用于您的操作系统主题，更改工作流设计器中显示的颜色。 在工作流设计器中所做的更改生效之前，对字体或颜色设置进行更改后，必须重新启动 Visual Studio 2010。

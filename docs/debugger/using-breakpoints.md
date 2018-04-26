@@ -36,11 +36,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f1ad8f7b3bc4ac1a93718943803d445aa6ca9a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 04834f335fd4c9a49a2ef4de6b55adf6443d6e7c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 也许你会为了查看代码变量的状态或查看调用堆栈而想要停止调试程序执行，此时，你可以设置断点。 在开发人员的工具箱中，它们是最重要的调试技术之一。  
@@ -247,8 +247,7 @@ ms.lasthandoff: 04/18/2018
 |**$PNAME**|进程名|  
 |**$TID**|线程 ID|  
 |**$TNAME**|线程名|  
-|**$TICK**||  
-|**$TNAME**||  
+|**$TICK**|刻度计数 (在 Windows 中`GetTickCount`)|  
   
 ##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> 断点标签  
  断点标签仅用于在 **“断点”** 窗口中对断点列表进行排序和筛选。 若要将标签添加到断点中，请选择断点行，然后在上下文菜单中选择 **“标签”** 。  

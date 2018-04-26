@@ -1,7 +1,9 @@
 ---
-title: 工作流设计器中的错误消息 |Microsoft 文档
+title: 工作流设计器中的错误消息
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDErrorMessages.UI
 - System.Activities.Presentation.ErrorActivity.UI
@@ -12,17 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4deecb6617e85263abc5eaad11dd829abecb05d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c644922f240cd07c47e68e65432289c68bbe318
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="error-messages-in-workflow-designer"></a>工作流设计器中的错误消息
+
 本主题介绍可以使用 Windows 工作流设计器时遇到的错误消息的类型。
 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>工作流设计器中出现错误的情况
- 在以下情况下 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 中会出现错误：
+
+在以下情况下会发生在工作流设计器中的错误：
 
 1.  表达式中存在错误。
 
@@ -32,12 +36,12 @@ ms.lasthandoff: 04/16/2018
 
 4.  XAML 文件中存在错误，导致工作流无法加载。
 
- 无效的表达式和未满足的验证约束不会导致工作流无法生成。 会成功生成工作流，但在运行时将引发 <xref:System.Activities.InvalidWorkflowException>。 如果 XAML 文件中存在错误，生成将失败。
+无效的表达式和未满足的验证约束不会导致工作流无法生成。 会成功生成工作流，但在运行时将引发 <xref:System.Activities.InvalidWorkflowException>。 如果 XAML 文件中存在错误，生成将失败。
 
- 内部[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，当加载工作流时，其错误都显示在**错误列表**。 若要导航到错误的源的活动，双击中的错误**错误列表**。
+在 Visual Studio 时加载工作流时，其错误都显示在**错误列表**。 若要导航到错误的源的活动，双击中的错误**错误列表**。
 
 ### <a name="expression-errors"></a>表达式错误
- 无效表达式用红色圆圈表示，并且该表达式旁有一个白色感叹号。 悬停在此图标上将显示描述错误来源的工具提示。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 内，单击该表达式可查看对错误来源加下划线的行。 悬停在此加下划线的文本上将显示描述错误来源的工具提示。
+ 无效表达式用红色圆圈表示，并且该表达式旁有一个白色感叹号。 悬停在此图标上将显示描述错误来源的工具提示。 在 Visual Studio 中，单击要查看错误来源加下划线的行的表达式。 悬停在此加下划线的文本上将显示描述错误来源的工具提示。
 
 ### <a name="activity-validation-errors"></a>活动验证错误
  活动的验证约束未满足时，红色圆圈及白色感叹号显示在该活动的右上角。 悬停在此图标上将显示描述错误来源的工具提示。

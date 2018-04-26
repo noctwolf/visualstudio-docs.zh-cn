@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 566558390e29f9198b2328463dfce26327f76565
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: cf990ea206a299c72ec55150bf2e4935b80fb473
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-element-tools"></a>自定义元素工具
 在某些 DSL 定义，作为一组元素表示在一个概念。 例如，如果你创建在其中一个组件具有一组固定的端口的一个模型，你始终希望要在其父组件在同一时间创建的端口。 因此，你必须自定义的元素创建工具，以便它创建的一组而并非仅仅一个元素。 若要实现此目的，你可以自定义如何初始化元素创建工具。

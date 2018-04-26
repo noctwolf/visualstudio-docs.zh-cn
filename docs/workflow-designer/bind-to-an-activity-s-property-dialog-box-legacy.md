@@ -1,7 +1,9 @@
 ---
-title: 将绑定到活动&#39;s 属性对话框 （旧版） |Microsoft 文档
+title: 工作流设计器-将绑定到活动&#39;s 属性对话框 （旧版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ActivityBindForm.UI
 helpviewer_keywords:
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a799b57169116343f5d83e54ce5bd87dedfd801
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8922864a32c08d8feaed11e530314176557a785f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>将绑定到活动&#39;s 属性对话框 （旧版）
-本主题介绍如何使用**将绑定到活动的属性**旧的 Windows 工作流设计器中的对话框。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
+# <a name="bind-to-an-activitys-property-dialog-box-legacy"></a>“绑定到活动的属性”对话框（旧版）
+
+本主题介绍如何使用**将绑定到活动的属性**旧的 Windows 工作流设计器中的对话框。 当你需要以面向.NET Framework 版本 3.5 或 WinFX 时，请使用旧工作流设计器。
 
  依赖项属性的实例类型可以绑定到另一个活动的公共属性或事件。 有关活动绑定的详细信息，请参阅[使用依赖项属性](http://go.microsoft.com/fwlink?LinkID=65007)。
 
- 选择要绑定到使用的属性**将绑定到活动的属性**对话框。 通过单击省略号打开此对话框**[…]**中所选的属性的文本框末尾**属性**窗口中，或通过单击出现在属性浏览器中的属性名称旁边的蓝色感叹号图标。
+ 选择要绑定到使用的属性**将绑定到活动的属性**对话框。 通过单击省略号打开此对话框 **[…]** 中所选的属性的文本框末尾**属性**窗口中，或通过单击出现在属性浏览器中的属性名称旁边的蓝色感叹号图标。
 
  下表描述的用户界面 (UI) 元素**将绑定到活动的属性**对话框。
 

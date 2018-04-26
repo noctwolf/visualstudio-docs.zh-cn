@@ -1,7 +1,9 @@
 ---
-title: 如何： 使用表达式编辑器 |Microsoft 文档
+title: 工作流设计器-如何： 使用表达式编辑器
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
@@ -10,16 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9873d341238f3278779277d70da6df56f29f721
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2e14a967b9721973d8d545e10f58cab3c68b8e15
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-expression-editor"></a>如何：使用表达式编辑器
+
 表达式编辑器是在许多工作流活动中用作输入和计算这些表达式的方式的 Windows 工作流设计器控件。 表达式编辑器提供全面的 IDE 编辑体验，包括 IntelliSense、着色、ParamInfo、错误波形曲线和其他功能。 编译器在表达式输入后对它进行验证。 如果表达式无效，则显示一个错误图标。 此外可以作为打开编辑器**表达式编辑器**对话框。
 
- 表达式是绑定到参数或属性的文本值或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 代码。 表达式包含与操作进行组合以生成新值的值元素（如变量、常量、文本、属性）。 表达式使用 VB.NET 语法编写，即使应用程序使用 C# 编程也如此。 这意味着大写并不重要，比较不执行使用单等号 （"="） 而不是 （"= ="） 的登录，布尔运算符是单词"和"和"而不是符号"& &"和"&#124;&#124;"，和**执行任何操作**而不是使用**null**。 有关详细信息表达式和运算符中的[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]和一些示例，请参阅[运算符和 Visual Basic 中的表达式](http://go.microsoft.com/fwlink/?LinkId=186818)。
+ 表达式是绑定到参数或属性的文本值或 Visual Basic 代码。 表达式包含与操作进行组合以生成新值的值元素（如变量、常量、文本、属性）。 表达式使用 VB.NET 语法编写，即使应用程序使用 C# 编程也如此。 这意味着大写并不重要，比较不执行使用单等号 （"="） 而不是 （"= ="） 的登录，布尔运算符是单词"和"和"而不是符号"& &"和"&#124;&#124;"，和**执行任何操作**而不是使用**null**。 表达式和运算符在 Visual Basic 中的详细信息以及一些示例，请参阅[运算符和 Visual Basic 中的表达式](http://go.microsoft.com/fwlink/?LinkId=186818)。
 
  **表达式编辑器**行为，如下所示：
 
@@ -30,11 +33,11 @@ ms.lasthandoff: 04/16/2018
 -   如果在重新承载的工作流设计器中将焦点置于表达式编辑器，则该编辑器的行为类似于 TextBox。 当在重新承载的工作流设计器中失去焦点后，表达式编辑器看上去又像一个常规 TextBlock 了。
 
 > [!NOTE]
-> 表达式编辑器的 IntelliSense 仅在 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 内可用。 在 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 和重新承载的方案中，编译器在表达式输入后对它进行验证，如果该表达式无效，则表达式编辑器将显示一个错误图标。
+> IntelliSense 的表达式编辑器是仅在 Visual Studio 2010 内部可用。 在 Visual Studio 2010 和重新承载的方案中，编译器在表达式后验证输入和表达式编辑器将显示错误图标，如果表达式无效。
 
-### <a name="using-the-expression-editor"></a>使用表达式编辑器
+## <a name="use-the-expression-editor"></a>使用表达式编辑器
 
-1.  在 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 中，打开一个新的或现有的工作流项目。
+1.  在 Visual Studio 2010 中，打开一个新的或现有的工作流项目。
 
 2.  向工作流添加诸如 <xref:System.Activities.Statements.Assign> 之类的活动。
 
@@ -43,7 +46,7 @@ ms.lasthandoff: 04/16/2018
 
 3.  在 <xref:System.Activities.Statements.Assign> 活动的活动设计器中单击左侧表达式编辑器。
 
-     灰色水印字符串**\<到 >**和**\<输入 VB 表达式 >**是默认值的文本字符串中的表达式编辑器<xref:System.Activities.Statements.Assign>活动。
+     灰色水印字符串**\<到 >** 和**\<输入 VB 表达式 >** 是默认值的文本字符串中的表达式编辑器<xref:System.Activities.Statements.Assign>活动。
 
 4.  输入表达式。 如果您输入一个字符串，请确保在该字符串两端加上引号。 如果您选择将表达式参数绑定到一个变量，请不要使用引号。
 

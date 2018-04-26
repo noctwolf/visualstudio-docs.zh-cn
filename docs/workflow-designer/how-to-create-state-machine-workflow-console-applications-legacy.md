@@ -1,7 +1,9 @@
 ---
-title: 如何： 创建状态机工作流控制台应用程序 （旧版） |Microsoft 文档
+title: 工作流设计器-如何： 创建状态机工作流控制台应用程序 （旧版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - console applications, state machine workflows
 - state machine workflow console applications
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc38466c29bbe88202561daf5ee9097367040310
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 805b048a9e30f7a637e178d223b962259dadd926
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>如何：创建状态机工作流控制台应用程序（旧版）
-请按照下列步骤创建状态机工作流控制台应用程序项目使用旧的 Windows 工作流设计器提供的[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
-### <a name="to-create-a-state-machine-application-project"></a>创建状态机应用程序项目
+请按照下列步骤创建使用 Windows 工作流设计器提供的 Visual Studio 2010 的旧状态机工作流控制台应用程序项目。 当你需要以面向.NET Framework 版本 3.5 或 WinFX 时，请使用旧工作流设计器。
+
+## <a name="to-create-a-state-machine-application-project"></a>创建状态机应用程序项目
 
 1.  启动 Visual Studio。
 
@@ -29,10 +32,10 @@ ms.lasthandoff: 04/16/2018
 
      **“新建项目”** 对话框随即打开。
 
-3.  选择**.NET Framework 3.0**选项或**.NET Framework 3.5**的下拉列表的顶部列表中的选项**新项目**窗口，以访问旧设计器。
+3.  选择 **.NET Framework 3.0**选项或 **.NET Framework 3.5**的下拉列表的顶部列表中的选项**新项目**窗口，以访问旧设计器。
 
     > [!NOTE]
-    > 中的默认选项[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]是**.NET Framework 4**。 此选项用于创建面向 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 的 [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] 应用程序，并且不使用旧设计器。
+    > Visual Studio 2010 中的默认选项才 **.NET Framework 4**。 此选项可用于创建面向.NET Framework 4 的 Windows Workflow Foundation (WF) 应用程序并不使用旧设计器。
 
 4.  在**项目类型**窗格中，选择 Visual C# 或 Visual Basic (下**其他语言**)，然后选择**工作流**。
 

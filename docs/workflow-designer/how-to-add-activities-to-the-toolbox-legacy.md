@@ -1,7 +1,9 @@
 ---
-title: 如何： 将活动添加到工具箱 （旧） |Microsoft 文档
+title: 工作流设计器-如何： 将活动添加到工具箱 （旧版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Toolbox, adding activities
 - activities, adding to Toolbox
@@ -11,16 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 779735cb1d163db9e7b05e2892d01a991a4a4c2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99a8e1cef2ff5ddd526133355c608fa5218573d1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>如何：向工具箱添加活动（旧版）
-生成该目标的与旧的 Windows 工作流设计器的工作流解决方案时[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]，可以将自定义活动添加到工作流项目并将其设计器置于**工具箱**为轻松访问。 你还可以直接添加活动**工具箱**从动态链接库 (DLL)。
 
-### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>从 DLL 中将活动添加到工具箱
+在生成与旧的 Windows 工作流设计器面向.NET Framework 版本 3.5 或 WinFX 工作流解决方案时，可以将自定义活动添加到工作流项目并将其设计器置于**工具箱**为轻松访问。 你还可以直接添加活动**工具箱**从动态链接库 (DLL)。
+
+## <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>从 DLL 中将活动添加到工具箱
 
 1.  右键单击工具箱窗口图面下的**Windows 工作流**，然后单击**选择项**。
 

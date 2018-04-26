@@ -14,14 +14,15 @@ ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe90d81c2fa6f06bdf29adc6ab223c58b8440daa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 81edef642fd2d83f6bb65c01f9a1726812ba0fca
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF 应用程序中创建查找表
 术语*查找表*(有时称为*查找绑定*) 描述显示从另一个表中的外键字段的值的一个数据表的信息的控件。 你可以通过将父表的主节点中创建查找表或对象中**数据源**窗口拖动到控件已绑定到一个列或相关的子表中的属性。

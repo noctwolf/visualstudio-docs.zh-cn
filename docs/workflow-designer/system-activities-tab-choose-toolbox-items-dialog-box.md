@@ -1,7 +1,9 @@
 ---
-title: System.Activities 选项卡上，选择工具箱项对话框 |Microsoft 文档
+title: 工作流设计器-System.Activities 选项卡上，选择工具箱项对话框
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES COMPONENTS
@@ -11,21 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2da5aafcc684c9af71aebc094d817c64f579d0ea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82303d173a3d5a066919f8597e4636d63a005f02
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>“System.Activities”选项卡 ->“选择工具箱项”对话框
-此选项卡**选择工具箱项**对话框中显示的列表[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]活动、 模板和项提供给你。 若要显示此列表，选择**选择工具箱项**从**工具**菜单或通过右击**工具箱**并选择**选择项**以显示**选择工具箱项**对话框中，然后选择其**System.Activities**选项卡。在初始状态下，该列表包含 System.Activities、 System.ServiceModel.Activities 和 System.Activities.Core.Presentation 程序集; 的工作流活动但是，仅系统提供显示的活动和活动通过显示在其他程序集添加**工具箱**默认选中。 新添加的活动会自动选中，并显示在**工具箱**单击**确定**在对话框中。 此外，这些项显示在**工具箱**对应于活动/项/模板所在的命名空间的新类别下。
+
+此选项卡**选择工具箱项**对话框向用户显示可用的 Windows Workflow Foundation (WF) 活动、 模板和选项的列表。 若要显示此列表，选择**选择工具箱项**从**工具**菜单或通过右击**工具箱**并选择**选择项**以显示**选择工具箱项**对话框中，然后选择其**System.Activities**选项卡。在初始状态下，该列表包含 System.Activities、 System.ServiceModel.Activities 和 System.Activities.Core.Presentation 程序集; 的工作流活动但是，仅系统提供显示的活动和活动通过显示在其他程序集添加**工具箱**默认选中。 新添加的活动会自动选中，并显示在**工具箱**单击**确定**在对话框中。 此外，这些项显示在**工具箱**对应于活动/项/模板所在的命名空间的新类别下。
 
 > [!WARNING]
 > 如果您试图添加未包含任何工作流活动的程序集，则将显示一个错误对话框，指出该程序集没有包含任何活动。
 
  此对话框是项目不可知的因而**System.Activities**选项卡继续显示在独立的 XAML 或非工作流项目类型。
 
- 对每个选项卡都会执行筛选。这意味着不能添加工作流活动通过**.NET 组件**选项卡。他们需要通过添加**System.Activities**选项卡本身。
+ 对每个选项卡都会执行筛选。这意味着不能添加工作流活动通过 **.NET 组件**选项卡。他们需要通过添加**System.Activities**选项卡本身。
 
  你可以取消选中不希望若要查看在任何的项**工具箱**从该对话框选项卡上，或或者，你可以使用来完成**删除**中的上下文菜单选项**工具箱**取消引用程序集不会删除的项和**工具箱**。
 
@@ -35,12 +38,20 @@ ms.lasthandoff: 04/16/2018
 
  此对话框中的列包含以下信息：
 
- 本地计算机上当前注册名称列表工作流活动的名称。
+ 名称
 
- Namespace 显示定义活动的结构的.NET Framework 类库命名空间层次结构。
+ 列出当前已在您的本地计算机上注册的工作流活动的名称。
 
- 程序集名称显示的名称和版本的.NET Framework 程序集包含的活动。
+ 命名空间
 
- 目录显示包含工作流活动的.NET Framework 程序集的位置。 所有程序集的默认位置是全局程序集缓存。
+ 显示定义活动结构的 .NET Framework 类库命名空间的层次结构。
+
+ 程序集名称
+
+ 显示包含活动的 .NET Framework 程序集的名称和版本。
+
+ 目录
+
+ 显示包含工作流活动的 .NET Framework 程序集的位置。 所有程序集的默认位置是全局程序集缓存。
 
  若要对所列组件排序，请选择任意列标题。

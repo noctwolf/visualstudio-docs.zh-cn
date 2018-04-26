@@ -1,6 +1,7 @@
 ---
 title: 了解 SAL
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
@@ -9,11 +10,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 928ecfc2ebe652ae307d506d0747746d02c7c269
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 82d6719ee57000ebec8ad88a90543031e0d3eeb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understanding-sal"></a>了解 SAL
 Microsoft 源代码注释语言 (SAL) 提供一组你可以使用来描述函数如何使用其参数、 有关，它使的假设和它使它完成时的保证的批注。 标头文件中定义批注`<sal.h>`。 C + + 的 visual Studio 代码分析使用 SAL 批注来修改其分析的函数。 适用于 Windows 驱动程序开发 SAL 2.0 的详细信息，请参阅[SAL 2.0 批注的 Windows 驱动程序](http://go.microsoft.com/fwlink/?LinkId=250979)。

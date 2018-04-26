@@ -1,7 +1,9 @@
 ---
-title: 选择规则集对话框 （旧版） |Microsoft 文档
+title: 工作流设计器-选择规则集对话框 （旧版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
 helpviewer_keywords:
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 376b76e93849e58ac2d26f5c9360dc7673f2a3f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b199f5cd0ee71d9b4a5ce0991e84660ee031fa59
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>“选择规则集”对话框（旧版）
-本主题介绍如何使用**选择规则集**旧的 Windows 工作流设计器中的对话框。 在需要面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- **选择规则集**对话框用于选择一种你可以使用规则集[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)活动。 有关如何访问**选择规则集**对话框中，请参阅[如何： 创建 PolicyActivity 规则集 （旧版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。
+本主题介绍如何使用**选择规则集**旧的 Windows 工作流设计器中的对话框。 当你需要以面向.NET Framework 版本 3.5 或 WinFX 时，请使用旧工作流设计器。
 
- 下表描述的用户界面 (UI) 元素**选择规则集**对话框。
+**选择规则集**对话框用于选择一种你可以使用规则集[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)活动。 有关如何访问**选择规则集**对话框中，请参阅[如何： 创建 PolicyActivity 规则集 （旧版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。
+
+下表描述的用户界面 (UI) 元素**选择规则集**对话框。
 
 |UI 元素|描述|
 |----------------|-----------------|
@@ -37,7 +40,7 @@ ms.lasthandoff: 04/16/2018
  有关如何创建和编辑规则集的详细信息，请参阅[规则设置编辑器对话框 （旧版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)。
 
 > [!WARNING]
-> 用于面向 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 的旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 的规则编辑器不支持多目标。
+> 用于面向.NET Framework 版本 3.5 或 WinFX 旧工作流设计器的规则编辑器不支持多目标功能。
 
  有关条件的详细信息，请参阅[在工作流中使用条件](http://go.microsoft.com/fwlink?LinkID=65009)。
 

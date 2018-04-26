@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c0490e69ef63dc109ef0563d27a6412f7b54746
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7b97151ba98a4d854802d96205aefa59fbbdbfac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
 你可以创建应用商店规则传播到另一个中可视化和建模 SDK (VMSDK) 从在元素更改。 时对存储区中任何元素发生了更改，规则都计划在最外层事务提交时通常要执行。 有不同类型的不同种类的事件，如添加元素，或删除它的规则。 你可以附加到特定类型的元素、 形状或关系图的规则。 许多内置功能由规则定义： 例如，规则确保在模型更改时，更新关系图。 你可以通过添加您自己的规则自定义你的域特定语言。

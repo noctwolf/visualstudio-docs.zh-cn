@@ -1,18 +1,20 @@
 ---
-title: 如何： 向工具箱添加活动 |Microsoft 文档
+title: 工作流设计器-如何： 向工具箱添加活动
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb101f5dff84f7e8d586ce33c63adbe30fa0dbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4edb752ca64afd899ac9b3e463b9d29e4b3b68a1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>如何：向工具箱添加活动
 
@@ -27,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 3.  生成项目。 如果生成成功中的新类别**工具箱**名为"\<*项目名称*>"显示与该类别中包含自定义活动。
 
     > [!NOTE]
-    > 如果重置工具箱中，则将删除自定义活动，即使重新生成解决方案。 要在重置后使用自定义活动重新填充工具箱，请重新启动 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。
+    > 如果重置工具箱中，则将删除自定义活动，即使重新生成解决方案。 若要重新填充了自定义活动的工具箱，已被重置后，重新启动 Visual Studio 2010。
 
     > [!NOTE]
     > 工具箱只能显示具有给定名称的一个活动。 如果来自不同程序集的两个活动具有相同的类名称，将显示一个活动。
@@ -47,7 +49,7 @@ ms.lasthandoff: 04/16/2018
 
 2.  从**工具**菜单上，选择**选择工具箱项...**.
 
-3.  在**选择工具箱项**对话框中，选择**System.Activities 组件**选项卡，然后单击**浏览...**以导航到包含自定义活动的程序集要添加。
+3.  在**选择工具箱项**对话框中，选择**System.Activities 组件**选项卡，然后单击**浏览...** 以导航到包含自定义活动的程序集要添加。
 
 4.  选择程序集，然后单击**确定**。 自定义活动组件将添加到组件列表中并自动处于选中状态。
 

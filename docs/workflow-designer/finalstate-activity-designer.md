@@ -1,27 +1,32 @@
 ---
-title: FinalState 活动设计器 |Microsoft 文档
+title: 工作流设计器-FinalState 活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6360be9522fd8a3640780407cb5252da41515536
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d89e9f81bb7dc8237069a79784eadc0e5d375d6e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="finalstate-activity-designer"></a>FinalState 活动设计器
+
 <xref:System.Activities.Core.Presentation.FinalState> 设计器用于创建终止状态机实例的 <xref:System.Activities.Statements.State>。
 
 ## <a name="using-the-finalstate-activity-designer"></a>使用 FinalState 活动设计器
- **FinalState**设计器用于创建<xref:System.Activities.Statements.State>预配置为在状态机终止状态。 A <xref:System.Activities.Statements.State> ，它创建使用<xref:System.Activities.Core.Presentation.FinalState>活动设计器有其<xref:System.Activities.Statements.State.IsFinal%2A>属性设置为**true**，未包含任何<xref:System.Activities.Statements.State.Exit%2A>活动和没有源自它的转换。 若要使用<xref:System.Activities.Core.Presentation.FinalState>活动设计器添加<xref:System.Activities.Statements.State>预配置为在状态机中，终止状态的活动拖动**FinalState**活动设计器从**状态机**部分**工具箱**并将其放到工作流设计器上。 <xref:System.Activities.Core.Presentation.FinalState> 活动设计器可以放置到 <xref:System.Activities.Statements.StateMachine> 上，以后可添加转换；或在删除 <xref:System.Activities.Core.Presentation.FinalState> 活动设计器时可创建转换。 创建转换的详细信息，请参阅[转换](../workflow-designer/transition-activity-designer.md)。
+
+**FinalState**设计器用于创建<xref:System.Activities.Statements.State>预配置为在状态机终止状态。 A <xref:System.Activities.Statements.State> ，它创建使用<xref:System.Activities.Core.Presentation.FinalState>活动设计器有其<xref:System.Activities.Statements.State.IsFinal%2A>属性设置为**true**，未包含任何<xref:System.Activities.Statements.State.Exit%2A>活动和没有源自它的转换。 若要使用<xref:System.Activities.Core.Presentation.FinalState>活动设计器添加<xref:System.Activities.Statements.State>预配置为在状态机中，终止状态的活动拖动**FinalState**活动设计器从**状态机**部分**工具箱**并将其放到工作流设计器上。 <xref:System.Activities.Core.Presentation.FinalState> 活动设计器可以放置到 <xref:System.Activities.Statements.StateMachine> 上，以后可添加转换；或在删除 <xref:System.Activities.Core.Presentation.FinalState> 活动设计器时可创建转换。 创建转换的详细信息，请参阅[转换](../workflow-designer/transition-activity-designer.md)。
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>工作流设计器中的 State 活动属性
- 下表列出可使用 <xref:System.Activities.Core.Presentation.FinalState> 设计器设置的属性并说明如何在设计器中使用它们。 其中一些属性可以在属性网格中进行编辑，另一些属性可以在设计器图面上进行编辑。
+
+下表列出可使用 <xref:System.Activities.Core.Presentation.FinalState> 设计器设置的属性并说明如何在设计器中使用它们。 其中一些属性可以在属性网格中进行编辑，另一些属性可以在设计器图面上进行编辑。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|

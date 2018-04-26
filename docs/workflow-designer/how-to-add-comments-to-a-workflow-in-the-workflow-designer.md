@@ -1,7 +1,9 @@
 ---
-title: 如何： 向工作流设计器中的工作流添加注释 |Microsoft 文档
+title: 工作流设计器-如何： 向工作流中添加注释
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
@@ -11,15 +13,15 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fb7505d773f26a26df0b31477d99f7f5636d8c40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba21ba5b2ce6126d29d34f5df662e9e332359ed3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中给工作流添加备注
 
-为方便创建更大、更复杂的工作流，[!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] 允许开发人员在设计器中将批注添加到以下类型的项：
+为方便创建更大、 更复杂的工作流，.NET Framework 4.5，请允许开发人员将批注添加到以下类型的设计器中的项：
 
 -   <xref:System.Activities.Activity>
 
@@ -36,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 > [!IMPORTANT]
 > 批注的内容作为纯文本保存到与工作流关联的 XAML 文件，并可能被其他人读取。 将敏感信息输入批注时要谨慎。
 
-### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>在设计器中将批注添加到活动
+## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>在设计器中将批注添加到活动
 
 1. 在工作流设计器中，右键单击设计器，然后选择工作流中的项**批注**，**添加批注**。
 
@@ -44,7 +46,7 @@ ms.lasthandoff: 04/16/2018
 
    项将显示一个批注图标。 悬停在批注图标将显示批注的文本。
 
-### <a name="displaying-an-annotation-in-an-activitys-designer"></a>在活动设计器中显示批注
+## <a name="displaying-an-annotation-in-an-activitys-designer"></a>在活动设计器中显示批注
 
 1.  与活动设计器，它具有批注显示在活动外，单击**Pin**中批注装饰器图标。
 
@@ -56,7 +58,7 @@ ms.lasthandoff: 04/16/2018
 
    ![活动的注释外显示批注](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
 
-### <a name="showing-or-hiding-all-annotations"></a>显示或隐藏所有批注
+## <a name="showing-or-hiding-all-annotations"></a>显示或隐藏所有批注
 
 1. 右键单击一个有批注的活动。 选择**批注**，**显示所有批注**。
 
@@ -64,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 若要显示的活动设计器之外的所有批注，右键单击该活动并选择**批注**，**隐藏所有批注**。
 
-### <a name="editing-or-deleting-an-annotation-for-an-activity"></a>编辑或删除活动的批注
+## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>编辑或删除活动的批注
 
 1. 右键单击一个有批注的活动。
 
@@ -74,7 +76,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 若要同时删除所有批注，请右键单击工作流设计器，然后选择**批注**，**都删除所有批注**。
 
-### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>添加、编辑和删除变量或自变量的批注
+## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>添加、编辑和删除变量或自变量的批注
 
 1. 右键单击某个变量或参数，然后选择“添加批注”。
 

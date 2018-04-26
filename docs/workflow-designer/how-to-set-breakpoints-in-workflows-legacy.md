@@ -1,7 +1,9 @@
 ---
-title: 如何： 在工作流 （旧版） 中设置断点 |Microsoft 文档
+title: 工作流设计器-如何： 在工作流 （旧版） 中设置断点
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - breakpoints, setting in workflows
 - debugging, setting breakpoints in workflows
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d62395a4b719827cf33eacad46a650bd057c43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c0c70b630404830fa8c733a7310e4700da8f08b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>如何：在工作流中设置断点（旧版）
-本主题介绍如何在中设置断点[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]应用程序生成使用旧的 Windows 工作流设计器。 在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 应用程序需要面向 [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- 当使用 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 中的旧 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 生成 [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 应用程序时，可像在 Visual Studio 中那样，在 C# 和Visual Basic 代码中设置断点。 正如所料，工作流执行将在设置的每个断点处停止。
+本主题介绍如何在 Windows Workflow Foundation (WF) 应用程序生成使用旧的 Windows 工作流设计器中设置断点。 当你的 Windows Workflow Foundation 应用程序需要以面向.NET Framework 版本 3.5 或 WinFX 时，请使用旧工作流设计器。
+
+ 当你使用在 Visual Studio 2010 旧工作流设计器生成的 Windows Workflow Foundation 应用程序时，你可以在 C# 和 Visual Basic 代码中设置断点，像在 Visual Studio 中。 正如所料，工作流执行将在设置的每个断点处停止。
 
  断点具有三种状态：*挂起*，*绑定*，和*错误*。 当您设置断点时，断点处于“挂起”状态，并且由一个空心的红色图标表示。 当运行时加载了工作流类型后，断点将变为“绑定”状态，并且由一个实心的红色图标表示。 如果为断点指定了不正确的格式，如同无效活动名称的情况一样，将出现一个错误窗口。 断点仍然会添加到断点窗口，但标有一个小“x”。
 

@@ -1,7 +1,9 @@
 ---
-title: 如果活动设计器 |Microsoft 文档
+title: 工作流设计器-如果活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.If.UI
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
@@ -10,21 +12,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 948359e0c6458fb0ad03d0d032676439d8062ca4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 58adde57c6de49a4abb0456ba5c80df27a45b069
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="if-activity-designer"></a>If 活动设计器
+
 <xref:System.Activities.Statements.If> 活动计算条件并根据该计算结果执行活动。 当使用编程的过程建模样式时，此活动最有用。 例如，<xref:System.Activities.Statements.If> 活动可嵌套在 <xref:System.Activities.Statements.Sequence> 活动或 <xref:System.Activities.Statements.Parallel> 活动内。 如果您使用的是 <xref:System.Activities.Statements.Flowchart> 活动，请考虑改用 <xref:System.Activities.Statements.FlowDecision> 活动。
 
 ## <a name="if-properties-in-the-workflow-designer"></a>工作流设计器中的 If 属性
- 下表列出最有用的 <xref:System.Activities.Statements.If> 活动属性并说明如何在设计器中使用它们。
+
+下表列出最有用的 <xref:System.Activities.Statements.If> 活动属性并说明如何在设计器中使用它们。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Statements.If.Condition%2A>|True|用于确定要执行哪个子活动的条件。 若要设置<xref:System.Activities.Statements.If.Condition%2A>，键入一个[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中的表达式**条件**框**如果**活动设计器或在属性网格中。|
+|<xref:System.Activities.Statements.If.Condition%2A>|True|用于确定要执行哪个子活动的条件。 若要设置<xref:System.Activities.Statements.If.Condition%2A>，键入在 Visual Basic 表达式**条件**框**如果**活动设计器或在属性网格中。|
 |<xref:System.Activities.Statements.If.Else%2A>|False|如果执行的活动<xref:System.Activities.Statements.If.Condition%2A>是**false**。 若要添加活动，则由<xref:System.Activities.Statements.If.Else%2A>分支，将活动从**工具箱**到**Else**框**如果**带提示文本的活动设计器"在此处放置活动"。|
 |<xref:System.Activities.Statements.If.Then%2A>|False|如果执行的活动<xref:System.Activities.Statements.If.Condition%2A>是**true**。 若要添加活动，则由<xref:System.Activities.Statements.If.Then%2A>分支，将活动从**工具箱**到**然后**框**如果**带提示文本的活动设计器"在此处放置活动"。|
 

@@ -19,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dd9ae424ffbfab08ec7e8a405528188bb756f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e1a674e854aaf587aca28f096883839ebd82e1e8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中的伪变量
 伪变量是用于在变量窗口中显示某些信息的术语或**快速监视**对话框。 你可以像输入普通变量那样输入伪变量。 但伪变量不是变量，它不与程序中的变量名相对应。  
@@ -49,7 +49,7 @@ $handles
 |`$` *寄存器名*<br /><br /> 或<br /><br /> `@` *寄存器名*|显示寄存器的内容*寄存器名*。<br /><br /> 通常，只需输入寄存器名便可以显示寄存器的内容。 仅在寄存器名重载变量名时才需要使用此语法。 如果寄存器名与当前范围内的某个变量名同名，则调试器将该名称解释为变量名。 即，当`$`*寄存器名*或`@`*寄存器名*会非常方便。|  
 |`$clk`|以时钟形式显示时间。|  
 |`$user`|显示一个结构，在该结构中含有应用程序运行于的帐户的帐户信息。 出于安全原因，将不显示密码信息。|  
-|`$exceptionstack`|显示当前 Windows 运行时异常的堆栈跟踪。 `$ exceptionstack` 仅在 UWP 应用中有效。 C++ 异常和 SHE 异常不支持 `$ exceptionstack`|  
+|`$exceptionstack`|显示当前 Windows 运行时异常的堆栈跟踪。 `$ exceptionstack` 仅在 UWP 应用中有效。 `$ exceptionstack` 不支持的 c + + 和 SEH 异常|  
 |`$ReturnValue`|显示 .NET Framework 方法的返回值。|  
   
  在 C# 和 Visual Basic 中，可使用的伪变量如下表所示：  

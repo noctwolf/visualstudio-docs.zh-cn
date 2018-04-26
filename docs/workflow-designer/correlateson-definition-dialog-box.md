@@ -1,7 +1,9 @@
 ---
-title: CorrelatesOn 定义对话框 |Microsoft 文档
+title: 工作流设计器-CorrelatesOn 定义对话框
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - CorrelatesOnDefinition.UI
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
@@ -10,18 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 930f291f68e62e70c4d2a03f490f84fd8d36f657
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 490740f8f2682ad6b82bc60edb5d24e6d410b192
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="correlateson-definition-dialog-box"></a>“CorrelatesOn 定义”对话框
+
 **CorrelatesOn**对话框中使用 Windows 工作流设计器中，若要编辑<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>属性<xref:System.ServiceModel.Activities.Receive>活动。 有关详细信息，请参阅[接收](../workflow-designer/receive-activity-designer.md)主题。
 
- <xref:System.ServiceModel.Activities.Receive> 活动之间的关联指定工作流中的不同服务操作如何相互连接。
+<xref:System.ServiceModel.Activities.Receive> 活动之间的关联指定工作流中的不同服务操作如何相互连接。
 
- 下表描述的用户界面 (UI) 元素**CorrelatesOn**对话框。
+下表描述的用户界面 (UI) 元素**CorrelatesOn**对话框。
 
 |UI 元素|描述|
 |----------------|-----------------|
@@ -29,7 +32,8 @@ ms.lasthandoff: 04/16/2018
 |**XPath 查询**|包含用于从传入消息中提取相关数据的查询的键/值对。 它对应于 <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> 属性。 XPath 查询包含在 <xref:System.ServiceModel.MessageQuerySet> 对象中。|
 
 ## <a name="to-launch-the-correlateson-dialog-box"></a>启动“CorrelatesOn”对话框
- **接收**活动设计器可以拖动从**工具箱**拖放到[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]图面任何位置通常放置活动的。 这将创建具有 Receive 的默认 <xref:System.ServiceModel.Activities.Receive> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 选择**接收**活动设计器，然后为 （集合） 文本旁的省略号按钮的单击**CorrelatesOn**属性在属性网格**CorrelatesOn 定义**对话框出现。
+
+**接收**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，只要通常放置活动的。 这将创建具有 Receive 的默认 <xref:System.ServiceModel.Activities.Receive> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 选择**接收**活动设计器，然后为 （集合） 文本旁的省略号按钮的单击**CorrelatesOn**属性在属性网格**CorrelatesOn 定义**对话框出现。
 
 ## <a name="see-also"></a>请参阅
 

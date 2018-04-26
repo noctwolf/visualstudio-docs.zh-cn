@@ -1,37 +1,23 @@
 ---
-title: XML 编辑器组件 |Microsoft 文档
-ms.custom: ''
+title: “XML 编辑器”的组件
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99c0cdac45c2be8146ff86b7c779165f0d312fec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2da894b45cfe1822de0cf421811e00908c039fce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xml-editor-components"></a>XML 编辑器组件
 
 本部分讨论 XML 编辑器窗口和对话框。 由于 XML 编辑器基于文本编辑器，某些集成的开发环境 (IDE) 使用的常规文本编辑器设置进行配置。
-
-## <a name="in-this-section"></a>本节内容
-
-[“选项”对话框 ->“文本编辑器”->“XML”->“杂项”](../xml-tools/miscellaneous-xml-text-editor-options-dialog-box.md)  
-讨论“XML 编辑器”的自动完成和架构设置。
-
-[“属性”窗口 -> XML 文档属性](../xml-tools/xml-document-properties-properties-window.md)  
-介绍可用的基本文档信息。
-
-[“选项”对话框 ->“文本编辑器”->“XML”->“格式设置”](../xml-tools/formatting-xml-text-editor-options-dialog-box.md)  
-讨论控制属性如何格式化、如何处理混合内容等的设置。
-
-[XML 架构对话框](../xml-tools/xml-schemas-dialog-box.md)  
-介绍如何选择 XML 架构与 XML 文档关联。
 
 ## <a name="related-sections"></a>相关章节
 
@@ -39,4 +25,4 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>请参阅
 
-[XML 编辑器](../xml-tools/xml-editor.md)
+- [XML 编辑器](../xml-tools/xml-editor.md)

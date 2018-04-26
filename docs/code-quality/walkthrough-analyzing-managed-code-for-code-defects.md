@@ -1,6 +1,7 @@
 ---
 title: 演练对托管代码进行代码缺陷 |Microsoft 文档
 ms.date: 01/29/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 98d1bbd347870bd704a0d17d7ae559da00e9adb5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bb13e88e07741327088e8d138dfcf8b92a9075a6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>演练： 代码的分析托管的代码缺陷
 
