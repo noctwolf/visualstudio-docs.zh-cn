@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 394e31bf0660557c1eba571006cacf213263c07e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="initialize-code-for-docker-and-kubernetes-development"></a>初始化用于 Docker 和 Kubernetes 开发的代码
 到目前为止，我们已经有了可以在本地运行的基本 Web 应用。 现在将通过创建定义应用容器的资产来容器化应用，并了解如何将其部署到 Kubernetes。 在通连环境中，可以轻松完成这一操作： 
 

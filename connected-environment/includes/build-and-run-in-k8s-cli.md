@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: b10d15b90f7f413d26adf8037c6f52c711a9ed69
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="build-and-run-code-in-kubernetes"></a>在 Kubernetes 中生成并运行代码
 我们来运行代码！ 在终端窗口中，从根代码文件夹 webfrontend 运行以下命令：
 

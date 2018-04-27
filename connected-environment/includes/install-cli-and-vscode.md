@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 78de57178350d4317896c41a455efbeeb553c58d
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="install-the-connected-environment-cli"></a>安装通连环境 CLI
 通连环境需要最少的本地计算机设置。 大部分开发环境配置都存储在云中，并可与其他用户共享。
 

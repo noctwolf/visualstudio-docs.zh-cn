@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 30d3f9da291feb52674937d4b2f1b86f3efd0386
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/27/2018
+---
 到目前为止，我们已经运行了应用程序代码，但感觉我们像是应用的唯一开发者。 在本节中，我们将介绍通连环境如何实现简化团队开发过程：
 * 让开发者团队能够在相同的开发环境中工作。
 * 让每位开发者都能够独立地迭代自己的代码，无需担心会破坏他人的代码。
