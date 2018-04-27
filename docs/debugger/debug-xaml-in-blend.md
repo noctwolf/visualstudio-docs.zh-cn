@@ -112,7 +112,7 @@ ms.lasthandoff: 04/18/2018
   
 4.  双击“无法识别或访问成员‘content’”。 `c` 中的 `content` 应为大写。 将小写“c”替换为大写“c”。  
   
-5.  双击"的属性 'Mame' 中不存在http://schemas.microsoft.com/winfx/2006/xaml命名空间。" “Mame”中的“M”应为“N”。 将“M”替换为“N”。 现在可以分析 XAML，应用程序将显示在设计图面上。  
+5.  双击"的属性 'Mame' 中不存在 http://schemas.microsoft.com/winfx/2006/xaml 命名空间。" “Mame”中的“M”应为“N”。 将“M”替换为“N”。 现在可以分析 XAML，应用程序将显示在设计图面上。  
   
      ![调试在 Blend for Visual Studio 中的 XAML](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")  
   

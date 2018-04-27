@@ -88,7 +88,7 @@ ms.lasthandoff: 04/19/2018
   
 4.  在**应用程序更新**对话框框中，请确保**应用程序应检查更新**复选框处于选中状态。  
   
-5.  在**更新位置**字段中，输入具有完全限定的 URL，使用格式的更新位置http://Hostname/ApplicationName，或使用格式的 UNC 路径\\\Server\ApplicationName 或单击**浏览**按钮以浏览的更新位置。  
+5.  在**更新位置**字段中，输入具有完全限定的 URL，使用格式的更新位置 http://Hostname/ApplicationName，或使用格式的 UNC 路径\\\Server\ApplicationName 或单击**浏览**按钮以浏览的更新位置。  
   
 ### <a name="to-check-for-updates-programmatically"></a>若要以编程方式检查更新  
   
@@ -100,7 +100,7 @@ ms.lasthandoff: 04/19/2018
   
 4.  在**应用程序更新**对话框框中，请确保**应用程序应检查更新**清除复选框。 （或者，你可以选中此复选框可检查更新，以编程方式，同时让 ClickOnce 运行时自动检查更新。）  
   
-5.  在**更新位置**字段中，输入具有完全限定的 URL，使用格式的更新位置http://Hostname/ApplicationName，或使用格式的 UNC 路径\\\Server\ApplicationName 或单击**浏览**按钮以浏览的更新位置。 更新位置是应用程序将寻找本身的更新版本。  
+5.  在**更新位置**字段中，输入具有完全限定的 URL，使用格式的更新位置 http://Hostname/ApplicationName，或使用格式的 UNC 路径\\\Server\ApplicationName 或单击**浏览**按钮以浏览的更新位置。 更新位置是应用程序将寻找本身的更新版本。  
   
 6.  用户将选择检查更新为 Windows 窗体上创建一个按钮、 菜单项或其他用户界面项。 从该项的事件处理程序，调用方法，以检查和安装更新。 中的此类的方法，可查找的 Visual Basic 和 Visual C# 代码示例[如何： 检查应用程序更新以编程方式使用 ClickOnce 部署 API](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)。  
   

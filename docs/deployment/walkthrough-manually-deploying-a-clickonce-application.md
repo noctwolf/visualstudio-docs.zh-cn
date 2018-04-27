@@ -123,7 +123,7 @@ ms.lasthandoff: 04/19/2018
   
 10. 将在部署目录中的所有文件复制到部署目标地址或媒体中。 这可能是网站或 FTP 站点、 文件共享或 CD-ROM 上的任一的文件夹。  
   
-11. 为用户提供 URL、 UNC 或安装你的应用程序所需的物理介质。 如果你提供 URL 或 UNC，则必须为你的用户的完整路径向部署清单。 例如，如果 AppToDeploy 部署到http://webserver01/AppToDeploy 目录中，在完整的 URL 路径应http://webserver01/AppToDeploy/AppToDeploy.application。  
+11. 为用户提供 URL、 UNC 或安装你的应用程序所需的物理介质。 如果你提供 URL 或 UNC，则必须为你的用户的完整路径向部署清单。 例如，如果 AppToDeploy 部署到 http://webserver01/ AppToDeploy 目录中，在完整的 URL 路径应 http://webserver01/AppToDeploy/AppToDeploy.application 。   
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>若要部署的应用程序 MageUI.exe 图形工具  
   
@@ -198,7 +198,7 @@ ms.lasthandoff: 04/19/2018
   
 28. 将在部署目录中的所有文件复制到部署目标地址或媒体中。 这可能是网站或 FTP 站点、 文件共享或 CD-ROM 上的任一的文件夹。  
   
-29. 为用户提供 URL、 UNC 或安装你的应用程序所需的物理介质。 如果你提供 URL 或 UNC，则必须为你的用户部署清单的完整路径。 例如，如果 AppToDeploy 部署到http://webserver01/AppToDeploy 目录中，在完整的 URL 路径应http://webserver01/AppToDeploy/AppToDeploy.application。  
+29. 为用户提供 URL、 UNC 或安装你的应用程序所需的物理介质。 如果你提供 URL 或 UNC，则必须为你的用户部署清单的完整路径。 例如，如果 AppToDeploy 部署到 http://webserver01/ AppToDeploy 目录中，在完整的 URL 路径应 http://webserver01/AppToDeploy/AppToDeploy.application 。   
   
 ## <a name="next-steps"></a>后续步骤  
  当你需要部署应用程序的新版本时，创建一个名为的新版本的新目录-例如，1.0.0.1—and 将新的应用程序文件复制到新的目录。 接下来，你需要按照前面的步骤以创建和注册一个新的应用程序清单，并更新以及部署清单进行签名。 请注意，在这两个在 Mage.exe 中指定相同的更高版本`-New`和`-Update`调用，作为[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]仅使用最重要的最左边的整数中更新更高版本。 如果你使用 MageUI.exe，你可以更新部署清单通过打开它，选择**应用程序引用**选项卡上，单击**选择清单**按钮，，然后选择已更新应用程序清单。  
