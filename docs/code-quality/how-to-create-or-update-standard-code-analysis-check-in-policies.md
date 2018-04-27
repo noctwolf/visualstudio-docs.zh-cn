@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecda4cc1ab237bed9e377f977295e19c74893673
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：创建或更新标准代码分析签入策略
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 
 - 通过指定的签入策略设置对于托管代码，*规则集*，其中包含的代码分析规则子集。
 
-- 对于 C/c + + 代码，签入策略要求，所有代码分析规则会都运行。 你可以添加预处理器指令，以禁用在你的团队项目中的单个代码项目的特定规则。
+- 对于 C/c + + 代码，Visual Studio 2017 版本 15.6 及更早版本，在签入策略要求，所有代码分析规则会都运行。 你可以添加预处理器指令，以禁用在你的团队项目中的单个代码项目的特定规则。 15.7 及更高版本，你可以使用 **/ 分析： ruleset**来指定要运行的规则。 有关详细信息，请参阅[使用规则集指定运行的 c + + 规则](using-rule-sets-to-specify-the-cpp-rules-to-run.md)。
 
 指定用于托管代码签入策略后，团队成员可以同步其设置为对团队项目的策略设置的代码项目的代码分析。
 

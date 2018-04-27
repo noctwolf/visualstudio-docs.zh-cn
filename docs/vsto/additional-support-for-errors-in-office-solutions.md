@@ -2,8 +2,8 @@
 title: 在 Office 解决方案中的错误的其他支持 |Microsoft 文档
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VST.MSBuild.errAppInfoTaskInsertCtlFailed
@@ -59,11 +59,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a9a4c0d4df2e97d151b6a6a310848812b02d77d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13e0520df662b1a48c3f2a603356d46e21c2f4f2
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 解决方案错误的其他支持
   可以使用以下资源来帮助你查找你会遇到的 Visual Studio 中创建 Office 解决方案的问题的答案。  
@@ -90,7 +90,7 @@ ms.lasthandoff: 04/16/2018
  [用于开发 Office 解决方案的其他资源](../vsto/additional-resources-for-developing-office-solutions.md)  
  提供的更多地了解开发 Office 解决方案和使用 Visual Studio 的 Office 开发的其他资源的链接。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在 Office 解决方案中的错误故障排除](../vsto/troubleshooting-errors-in-office-solutions.md)   
  [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)   
  [Office 解决方案部署疑难解答](../vsto/troubleshooting-office-solution-deployment.md)   
