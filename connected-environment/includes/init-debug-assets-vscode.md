@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: dbf7482acb02c6347c9c0d0765ef962cfb43a050
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="initialize-debug-assets-with-the-vs-code-extension"></a>使用 VS Code 扩展初始化调试资产
 首先需配置代码项目，以便 VS Code 与 Azure 中的开发环境通信。 通连环境的 VS Code 扩展提供了帮助程序命令来设置调试配置。 
 
