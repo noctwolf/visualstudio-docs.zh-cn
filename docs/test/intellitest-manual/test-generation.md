@@ -1,6 +1,7 @@
 ---
-title: 测试生成 | Microsoft IntelliTest 开发人员测试工具 | Microsoft Docs
+title: 测试生成 | Microsoft IntelliTest 开发人员测试工具
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +11,21 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 259ff0818cebde6d7c603428c6cdb88cd51ca293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="test-generation"></a>测试生成
 
-传统的单元测试需要多个部分组合成一个测试：
+在传统单元测试中，测试包含多项内容：
+
+* [方法调用的序列](test-generation.md#test-generators)
+* 调用方法时使用的参数，即[测试输入](input-generation.md)
+* 通过声明一组[断言](#assumptions-and-assertions)来验证测试应用程序的预期行为
+
+下面是一个示例测试结构：
 
 ```
 [Test]
@@ -34,12 +41,6 @@ void MyTest() {
     Assert.AreEqual(a[0], 5);
 }
 ```
-
-测试包含多个不同方面：
-
-* 修复[方法调用的序列](test-generation.md#test-generators)
-* 修复调用方法时使用的参数，即[测试输入](input-generation.md)
-* 通过声明一组[断言](#assumptions-and-assertions)来验证测试应用程序的预期行为
 
 IntelliTest 通常可以自动确定更常规[参数化单元测试](#parameterized-unit-testing)的相关参数值，提供方法调用和断言序列。
 

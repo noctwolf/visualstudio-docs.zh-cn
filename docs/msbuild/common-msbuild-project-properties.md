@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3483a47946d51890708186a38fc05ae2576ed1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 61fa8f0f447bddcfb1c8e468ca6d88bbdf503f5c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 下表列出了在 Visual Studio 项目文件中定义的或者在 MSBuild 提供的 .targets 文件中包括的经常使用的属性。  
@@ -69,9 +69,10 @@ ms.lasthandoff: 04/19/2018
 |FileAlignment|指定输出文件各部分的对齐位置，以字节为单位。 有效值为 512、1024、2048、4096、8192。 此属性等效于 `/filealignment` 编译器开关。|  
 |FrameworkPathOverride|指定 mscorlib.dll 和 microsoft.visualbasic.dll 的位置。 此参数等效于 vbc.exe 编译器的 `/sdkpath` 开关。|  
 |GenerateDocumentation|（仅限 Visual Basic）一个布尔型参数，指示是否由生成来生成文档。 如果设置为 `true`，生成过程将生成文档信息，并将此信息与生成任务所创建的可执行文件或库的名称一同放置在 .xml 文件中。|
-|IntermediateOutputPath|如果未指定路径，则为从 `BaseIntermediateOutputPath` 派生的完整中间输出路径。 例如 \obj\debug\\。 如果此属性被重写，则设置 `BaseIntermediateOutputPath` 不起任何作用。|  
+|IntermediateOutputPath|如果未指定路径，则为从 `BaseIntermediateOutputPath` 派生的完整中间输出路径。 例如 \obj\debug\\。|  
 |KeyContainerName|强名称密钥容器的名称。|  
 |KeyOriginatorFile|强名称密钥文件的名称。|  
+|MSBuildProjectExtensionsPath|指定项目扩展所在的路径。 默认情况下，该路径与 `BaseIntermediateOutputPath` 具有相同值。|  
 |ModuleAssemblyName|要将编译好的模块并入其中的程序集的名称。 该属性等效于 `/moduleassemblyname` 编译器开关。|  
 |NoLogo|一个指示是否关闭编译器徽标的布尔值。 此属性等效于 `/nologo` 编译器开关。|  
 |NoStdLib|一个指示是否避免引用标准库 (mscorlib.dll) 的布尔值。 默认值为 `false`。|  
