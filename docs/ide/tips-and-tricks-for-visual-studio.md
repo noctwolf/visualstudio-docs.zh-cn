@@ -1,26 +1,25 @@
 ---
-title: "Visual Studio 键盘快捷方式 | Microsoft Docs"
+title: Visual Studio 键盘快捷方式 | Microsoft Docs
 ms.date: 06/21/2017
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a4d53ec38ee006e73f7d3f0d454e928527cc0120
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="keyboard-tips-for-visual-studio"></a>Visual Studio 的键盘提示
+# <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的键盘快捷方式
 
 使用本文介绍的键盘快捷键，可以更轻松地在 Visual Studio 中导航。
 
-此处列出的快捷方式只介绍一部分可用的键盘快捷方式。 有关更完整的列表，请参阅 [Visual Studio 中的默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
-
-有关如何优化 Visual Studio 的辅助功能的信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)。
+> [!TIP]
+> 此处列出的快捷方式只介绍一部分可用的键盘快捷方式。 有关更完整的列表，请参阅 [默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
 ## <a name="window-management"></a>窗口管理
 
@@ -39,9 +38,9 @@ ms.lasthandoff: 03/08/2018
 |-|-|
 |移动/停靠浮动窗口|Win+向左键/Win+向右键|
 |最大化/最小化窗口|Win+向上键/Win+向下键|
-|显示跳转列表|Win+Alt+n|
-|启动新实例|Win+Shift+n|
-|在窗口之间切换|Win+n|
+|显示跳转列表|Win+Alt+N|
+|启动新实例|Win+Shift+N|
+|在窗口之间切换|Win+N|
 
 ## <a name="visual-studio-search"></a>Visual Studio 搜索
 
@@ -78,10 +77,10 @@ ms.lasthandoff: 03/08/2018
 |代码段选择器|Ctrl+K,X 或 ?,Tab (VB)||
 |环绕|Ctrl+K,S||
 |显示快速信息|Ctrl+K,I||
-|定位到|Ctrl+,||
+|定位到|**Ctrl**+**,**||
 |导航突出显示的引用|Ctrl+Shift+Up（上一个），Ctrl+Shift+Down（下一个）||
-|编辑器缩放|Ctrl+Shift+>（放大），Ctrl+Shift+<（缩小）||
-|块选择|按住 Alt 并拖动鼠标，Shift+Alt+方向键||
+|编辑器缩放|**Ctrl**+**Shift**+**>**（放大）、**Ctrl**+**Shift**+**<**（缩小）||
+|块选择|按住 **Alt** 并拖动鼠标，Shift+Alt+方向键||
 |上移/下移行|Alt+向上键/Alt+向下键||
 |复制行|Ctrl+E、V|Visual Studio 2017 版本 15.6|
 |展开选定内容|Shift+Alt+=|Visual Studio 2017 版本 15.5|
@@ -91,16 +90,16 @@ ms.lasthandoff: 03/08/2018
 |转到定义堆栈|Ctrl+Shift+8（后退），Ctrl+Shift+7（前进）||
 |关闭“查看定义”窗口|Esc||
 |将“查看定义”窗口提升为常规文档选项卡|Ctrl+Alt+Home||
-|在多个“查看定义”窗口之间导航|Ctrl+Alt+- 和 Ctrl+Alt+=||
-|在多个查看结果之间导航|F8 和 Shift+F8||
+|在多个“查看定义”窗口之间导航|**Ctrl**+**Alt**+**-** 和 **Ctrl**+**Alt**+**=**||
+|在多个查看结果之间导航|**F8** 和 **Shift**+**F8**||
 |在“代码编辑器”窗口和“查看定义”窗口之间切换|Shift+Esc||
 
 ## <a name="toolbars"></a>工具栏
 
 |||
 |-|-|
-|添加按钮|单击工具栏溢出按钮|
-|标准工具栏中的查找组合框|Ctrl+D|
+|添加按钮|选择工具栏溢出按钮|
+|标准工具栏中的查找组合框|**Ctrl**+**D**|
 |查找文本框命令模式|键入“>”|
 |新建别名|>alias NewAlias 命令|
 
@@ -125,9 +124,6 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="see-also"></a>请参阅
 
+- [辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)
 - [键盘快捷方式（VSTS 和 TFS）](/vsts/collaborate/keyboard-shortcuts)
-- [Visual Studio 博客](http://blogs.msdn.com/b/visualstudio)
-- [Visual Studio 提示和技巧博客](http://blogs.msdn.com/b/zainnab)
-- [Channel 9 上的 Visual Studio 工具箱](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
-- [Visual Studio 连接 bug](http://connect.microsoft.com/VisualStudio)
+- [Visual Studio tips and tricks blog](http://blogs.msdn.com/b/zainnab)（Visual Studio 提示和技巧博客）

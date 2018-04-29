@@ -1,16 +1,15 @@
 ---
-title: "启用 Visual Studio for Mac 的订阅 | Microsoft Docs"
-description: "本文介绍如何使用你的 Microsoft 帐户在 Visual Studio for Mac 中启用你的订阅和解锁功能"
+title: 启用 Visual Studio for Mac 的订阅
+description: 本文介绍如何使用你的 Microsoft 帐户在 Visual Studio for Mac 中启用你的订阅和解锁功能
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 9202229c1562c89e0ddd9852113d63dc85e0bcd2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4d4e2485b1fe536cae92a419b3d0f1a9e20556c8
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="enable-subscription"></a>启用订阅
 
@@ -28,7 +27,7 @@ Visual Studio for Mac 有三种不同的订阅级别可供选择，一次下载�
 
 如果订阅已过期，有两个选项可供选择：
 
-1. 续订你的订阅 可通过浏览到 [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/) 来续订订阅。
+1. 续订你的订阅 可通过浏览到 [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/) 续订你的订阅。
 
 2. 如果你的另一个帐户拥有活动订阅，可将其添加到 Visual Studio for Mac，有关详细信息请参阅[添加多个用户帐户](~/signing-in.md)一文。 Visual Studio for Mac 会检测已添加的所有帐户中最适合的许可证。 
 

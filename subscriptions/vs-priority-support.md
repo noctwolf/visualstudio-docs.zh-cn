@@ -1,26 +1,27 @@
 ---
-title: "Visual Studio 订阅中的优先支持权益 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/16/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Priority Support benefit included in Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b62a60207f306c623d53f67fbe7e473c5ee8164d
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio 订阅中的优先支持权益 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/16/2018
+ms.topic: Get-Started-Article
+description: 了解有关 Visual Studio 订阅中包含的优先支持权益。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的优先支持权益
 
-## <a name="overview"></a>概述 
 优先支持权益提供对各种支持社区论坛的访问权限，你可在其中搜索现有文章或提出新问题。  如果你的问题在两天内未得到社区的回答，Microsoft 的支持团队将给予答复。  
 
 具有选定的 Visual Studio 订阅的订阅者有资格通过涵盖各类主题的大量论坛受到优先支持。
+
+## <a name="included-forums"></a>包含的论坛
 
 ### <a name="net-framework"></a>.NET Framework
    - .NET Framework 设置与维护 
@@ -194,37 +195,9 @@ ms.lasthandoff: 01/29/2018
    - SQL Server XML 
 
 
-
-### <a name="eligibility"></a>资格
-| 订阅级别/计划                                 | 好处               | 是否续订？                                                         |
-|--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | Included              | 是                                                                |
-| Visual Studio Enterprise 年度                              | Included              | 是                                                                |
-| Visual Studio Enterprise 月度                             | 不可用         |                                                                    |
-| Visual Studio Professional Standard                          | Included              | 是                                                                |
-| Visual Studio Professional 年度                            | Included              | 是                                                                | 
-| Visual Studio Professional 月度                           | 不可用         |                                                                    |
-| Visual Studio Test Pro                                       | Included              | 是                                                                |
-| MSDN 平台                                               | Included              | 是                                                                |
-| Visual Studio Dev Essentials                                 | Included              | 是                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                               | Included              | 是                                                                |
-| Visual Studio Enterprise - FTE                               | Included              | 是                                                                |
-| Visual Studio Enterprise - MPN                               | 不可用         |                                                                    |
-| Visual Studio Professional - MPN                             | 不可用         |                                                                    |
-| Visual Studio Enterprise - MVP/RD                            | 不可用         |                                                                    |
-| Visual Studio Enterprise – Imagine（标准）                | Included              | 是                                                                |
-| Visual Studio Enterprise – Imagine（高级）                 | Included              | 是                                                                |
-| Visual Studio Enterprise – BizSpark                          | 不可用         |                                                                    |
-| Visual Studio Enterprise – MCT 软件和服务           | 不可用         |                                                                    |
-| Visual Studio Enterprise – MCT 软件和服务开发人员 | 不可用         |                                                                    |
-<sup>1</sup>  包括限制转售 (NFR)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)  
-
-无法确定正在使用哪些订阅？  请连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看分配给你电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
-
-
 ## <a name="activation-steps"></a>激活步骤
 获取对优先支持的访问权限十分简单。 
-1. 请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在“支持”部分找到“优先支持”磁贴。  单击“获取帮助”。
 
@@ -238,8 +211,20 @@ ms.lasthandoff: 01/29/2018
 
     ![优先支持示例](_img/vs-priority-support/vs-priority-support-example.png)
 
-## <a name="faq"></a>FAQ
-*单击此处了解更新*
+## <a name="eligibility"></a>资格
+| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | Included       |  是          |
+| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | Included                                                            |是 |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | Included                                                            |是 |
+| MSDN 平台（标准）                                          | VL、零售                                              | Included                                                            |是 |
+| Visual Studio Dev Essentials | NA  | Included                                                            |是 |
+| Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
+
+<sup>1</sup> 包括：限制转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、Imagine。不包括：Microsoft 合作伙伴网络（MPN）、MCT 软件和服务、MCT 软件和服务开发人员、BizSpark、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)。
+
+无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
+
 
 ## <a name="support-resources"></a>支持资源
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://www.visualstudio.com/subscriptions/support/)联系。

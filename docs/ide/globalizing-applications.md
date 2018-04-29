@@ -1,38 +1,33 @@
 ---
-title: "全球化应用程序 | Microsoft Docs"
-ms.custom: 
+title: 全球化应用程序 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Basic code, international applications
 - globalization [Visual Studio], international applications
 - C#, international applications
 ms.assetid: 8e1b9920-e1ac-4691-928e-cd95bfc6550b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3654b68f3ba12160947c465f8511127136b3103
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 8dfcdb9d78b58c4079664dfa3824c852ff9b43ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="globalizing-applications"></a>全球化应用程序
-全球化是指设计和开发针对多个区域性的软件产品的过程。 本节内容适用于 Windows 窗体和 Web 窗体页面。  
+全球化是指设计和开发针对多个区域性的软件产品的过程。 以下文章适用于 Windows 窗体和 Web 窗体页面。  
   
-## <a name="in-this-section"></a>本节内容  
  [全球 Windows 窗体和 Web 窗体的区域性特定类](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)  
  介绍根据区域性设置，为日期、时间、数字、货币和其他信息设置格式的类。  
   
-## <a name="related-sections"></a>相关章节  
+### <a name="see-also"></a>请参阅  
  [全球化 Windows 窗体](/dotnet/framework/winforms/advanced/globalizing-windows-forms)  
  提供 Windows 窗体全球化帮助页的链接。  
   

@@ -1,20 +1,20 @@
 ---
 title: 在 Visual Studio 中向负载测试运行设置中添加上下文参数 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 03db08b701574a4e910b96c843d0f2638e71a4f7
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0d563adc5e6b43aa5371fe08f410880a6aba0a09
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：向负载测试运行设置中添加上下文参数
 
@@ -62,9 +62,9 @@ ms.lasthandoff: 03/19/2018
 
      如果运行设置已经包含“上下文参数”文件夹，则可以右键单击该文件夹，然后选择“添加上下文参数”。
 
-4.  在“属性”窗口中，根据需要更改“名称”的值（例如，WebServer1）。 在“属性”窗口中，将“值”更改为要使用的参数（例如，http://CorporateStagingWebServer）。
+4.  在“属性”窗口中，根据需要更改“名称”的值（例如，WebServer1）。 在“属性”窗口中，将“值”更改为要使用的参数（例如，http://CorporateStagingWebServer)）。
 
-5.  （可选）重复步骤 3 至 5 并对“值”属性使用其他字符串（例如，http://CorporateProductionWebServer）。
+5.  （可选）重复步骤 3 至 5 并对“值”属性使用其他字符串（例如，http://CorporateProductionWebServer)）。
 
 6.  选择你希望哪些运行设置处于活动状态。 打开运行设置上的快捷菜单并选择“设置为活动的”。
 

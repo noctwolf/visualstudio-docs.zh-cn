@@ -1,24 +1,22 @@
 ---
-title: "创建 Visual Studio 的多文件项模板 | Microsoft Docs"
-ms.custom: 
+title: 创建 Visual Studio 的多文件项模板 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f1d5b11c97b7f214a13225b5605f47e3d3a45966
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: fc494f7fa3134984ccb2330e835332fb3e711c19
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：创建多文件项模板
 
@@ -40,7 +38,7 @@ ms.lasthandoff: 01/05/2018
 
 1. 创建项模板与手动创建单文件项模板一样，但包括每个构成多文件项的文件。
 
-1. 在 .vstemplate XML 文件中，为每个单个文件添加 `ProjectItem` 元素，并向此元素添加 `TargetFileName` 属性。 将 `TargetFileName` 属性的值设为 $fileinputname$.FileExtension，此处 FileExtension 为模板中包含的文件的文件扩展名。 例如:
+1. 在 .vstemplate XML 文件中，为每个单独文件添加 `ProjectItem` 元素，并向此元素添加 `TargetFileName` 属性。 将 `TargetFileName` 属性的值设为 $fileinputname$.FileExtension，此处 FileExtension 为模板中包含的文件的文件扩展名。 例如:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -59,13 +57,13 @@ ms.lasthandoff: 01/05/2018
 
 1. 选择要包含在模板中的文件，右键单击所选文件，然后选择“发送至” > “压缩的文件夹（zip 格式）”。
 
-   所选的文件被压缩到一个 .zip 文件中。
+   所选的文件将压缩到一个 .zip 文件中。
 
 1. 将该 .zip 文件复制到用户项模板位置。 默认情况下，该目录为 %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates。 有关详细信息，请参阅[如何：查找和组织模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 1. 关闭 Visual Studio，然后重新打开它。
 
-1. 创建一个新项目，或打开现有项目，然后选择“项目” > 添加新项”... 或按 Ctrl + Shift + A。
+1. 创建一个新项目，或打开现有项目，然后选择“项目” > “添加新项”或按 Ctrl+Shift+A。
 
    多文件项模板在“添加新项”对话框中显示。
 

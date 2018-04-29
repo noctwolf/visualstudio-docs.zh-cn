@@ -1,24 +1,24 @@
 ---
-title: "Azure PAYG 权益"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to set up your Azure Pay-As-You-Go account.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4add5862ba05a588a3320b3f2530787ff153c974
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+title: Azure PAYG 权益
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: 了解如何设置 Azure 即用即付帐户。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cd1b545e4b3f6300431c6bfd7c28c9998572dacf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="setting-up-azure-devtest-pay-as-you-go-subscription"></a>设置 Azure 开发/测试即用即付订阅
+# <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>设置 Azure 开发/测试即用即付订阅
 与团队在云中协作。  创建多个开发和测试即用即付订阅，这样可与其他订阅者进行协作，并将团队与环境隔离。  可享受针对开发/测试的专享优惠小时费率，还可获得 Azure 上订阅软件的云使用权限。
 
-1.  要使用 Azure 即用即付订阅权益，请单击权益磁贴底部的“激活”链接。   
+1.  要使用 Azure 即用即付订阅权益，请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 并单击权益磁贴底部的“激活”链接。   
 
     ![Azure PAYG 磁贴](_img\vs-azure-payg\vs-azure-payg-tile.png) 
 

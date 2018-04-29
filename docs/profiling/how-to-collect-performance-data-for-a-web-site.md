@@ -1,13 +1,9 @@
 ---
-title: "如何：为 Web 站点收集性能数据 | Microsoft Docs"
-ms.custom: 
+title: 如何：为 Web 站点收集性能数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -20,14 +16,14 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db9cefe31201a3b67ba176a56fed58bbe155bcf0
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 7e07594e9b90fabd8e0a2bcc66dd0920db0973aa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：为 Web 站点收集性能数据
 
@@ -82,11 +78,11 @@ ms.lasthandoff: 02/21/2018
 
 5. 在向导第三页的“运行 Web 应用程序的 URL 或路径是什么”  框中，在应用程序主页上输入 URL，然后单击“下一步” 。
 
-    - 对于基于网站的服务器 (IIS)，键入 URL，如 **http://localhost/MySite/default.aspx**。 这将导致对 MySite 应用程序根目录上本地计算机中的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序进行分析，并且在 Internet Explorer 中启动该站点网页 default.aspx，从而启动会话。
+    - 对于基于服务器 (IIS) 的网站，请键入一个 URL（如 http://localhost/MySite/default.aspx）。 这将导致对 MySite 应用程序根目录上本地计算机中的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序进行分析，并且在 Internet Explorer 中启动该站点网页 default.aspx，从而启动会话。
 
     - 对于基于文件的网站，请键入路径，例如文件 ///**c:\WebSites\MySite\default.aspx**。 这将导致对位于 c:\webSites\MySite 上的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序进行分析，并且在 Internet Explorer 中启动 http://localhost:nnnn/MySite/default.aspx 网页，从而启动会话。
 
-    - 对于想要在其收集 JavaScript 数据的外部网站，键入 URL，例如 http://www.contoso.com。
+    - 对于想在其中收集 JavaScript 数据的外部网站，请输入 URL（如 http://www.contoso.com）。
 
      有关详细信息，请查看 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 目标二进制文件的属性页。
 

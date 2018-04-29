@@ -1,13 +1,10 @@
 ---
 title: 在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务 | Microsoft 文档
-description: ''
+description: 如果组织使用防火墙或代理服务器，请检查希望列入白名单或打开的域 URL、端口和协议
 ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -20,24 +17,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f9f83c89e09e07d6024b779a89b9a6c4374112
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务
-如果你或贵组织使用防火墙或代理服务器等安全措施，则会有可能需要将其列入“允许列表”的域 URL，以及可能需要打开的端口和协议，以便在安装和使用 Visual Studio 以及 Azure 服务时获得最佳体验。
+
+如果你或贵组织使用防火墙或代理服务器等安全措施，则会有可能需要将其列入“白名单”的域 URL，以及可能需要打开的端口和协议，以便在安装和使用 Visual Studio 以及 Azure 服务时获得最佳体验。
 
 * **[安装 Visual Studio](#install-visual-studio)**：这些表包括要加入允许列表的域 URL，以便你可访问所需的所有组件和工作负载。
 
 * **[使用 Visual Studio 和 Azure 服务](#use-visual-studio-and-azure-services)**：此表包括要加入允许列表的域 URL 以及要打开的端口和协议，以便你可访问所需的所有功能和服务。
 
 ## <a name="install-visual-studio"></a>安装 Visual Studio
+
 ### <a name="urls-to-whitelist"></a>加入允许列表的 URL
+
 因为 Visual Studio 安装程序从各个域及其下载服务器下载文件，以下是你可能需要在 UI 或部署脚本中以可信方式列入允许列表的域 URL。
 
 #### <a name="microsoft-domains"></a>Microsoft 域
+
 | Domain | 目标 |
 | ------ | ------- |
 | go.microsoft.com | 安装程序 URL 解析 |
@@ -57,6 +58,7 @@ ms.lasthandoff: 04/03/2018
 |  |  | |
 
 #### <a name="non-microsoft-domains"></a>非 Microsoft 域
+
 | Domain | 安装这些工作负载 |
 | ------ | ------- |
 | archive.apache.org |  使用 JavaScript 的移动开发 (Cordova) |
@@ -72,8 +74,10 @@ ms.lasthandoff: 04/03/2018
 |  |  | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>使用 Visual Studio 和 Azure 服务
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>加入到允许列表的 URL 和要打开的端口和协议
-若要确保在防火墙或代理服务器后面使用 Visual Studio 或 Azure 服务时可访问一切所需的内容，以下是应列入允许列表的URL 和你可能需要打开的端口及协议。
+
+### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>加入到白名单的 URL 和要打开的端口和协议
+
+若要确保在防火墙或代理服务器后面使用 Visual Studio 或 Azure 服务时可访问一切所需的内容，以下是应列入白名单的URL 和你可能需要打开的端口及协议。
 
 | 服务或方案 | DNS 终结点 | 协议 | 端口 | 描述 |
 | --- | --- | --- | --- | --- |
@@ -116,18 +120,21 @@ ms.lasthandoff: 04/03/2018
 |打包服务 | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 只有某些生成任务方案（例如 NuGet 工具安装程序、节点工具安装程序）或在计划通过 Feeds 使用公共上游时，才需要 *.npmjs.org、*.nuget.org 和 *.nodejs.org。  要使用打包服务的核心功能，还需具备其他三个域。 |
 |||||||
 
-
 ## <a name="troubleshoot-network-related-errors"></a>与网络相关错误的疑难解答
+
 有时，当你在防火墙或代理服务器后安装或使用 Visual Studio 时，可能会遇到与网络或代理相关的错误。 有关此类错误消息的解决方案的详细信息，请参阅[安装或使用 Visual Studio 时与网络相关错误的疑难解答](troubleshooting-network-related-errors-in-visual-studio.md)页面。
 
 ## <a name="get-support"></a>获取支持
+
 下面是可供选择的另外几个支持选项：
+
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
-* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
+* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题并找到答案。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。 （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
+
 * [对 Visual Studio 中与网络相关错误的故障排除](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [安装 Visual Studio 2017](install-visual-studio.md)

@@ -1,12 +1,10 @@
 ---
-title: "如何：配置项目以面向目标平台 | Microsoft Docs"
-ms.custom: 
+title: 如何：配置项目以面向目标平台 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project settings [Visual Studio], targeting platforms
 - platforms, targeting specific CPUs
@@ -17,26 +15,26 @@ helpviewer_keywords:
 - CPUs, targeting specific
 - 64-bit applications [Visual Studio]
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0ccca87721c39daa7e613d7426c9d5fed6a144cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dc85686b9b60692a625e3e09403e0e7b571f2b2f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：配置项目以面向目标平台
-可使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将应用程序设置为面向不同平台（包括 64 位平台）。 若要深入了解 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中对 64 位平台的支持，请参阅 [64 位应用程序](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。  
+可使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将应用程序设置为面向不同平台（包括 64 位平台）。 有关 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中对 64 位平台的支持的详细信息，请参阅 [64 位应用程序](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。  
   
-## <a name="targeting-platforms-with-the-configuration-manager"></a>使用配置管理器设定目标平台  
+## <a name="target-platforms-with-the-configuration-manager"></a>使用 Configuration Manager 设定目标平台  
  “配置管理器”提供了一种快速添加面向项目的新平台的方法。 如果选择 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 附带的平台之一，则将修改项目属性，以便生成适用于所选平台的项目。  
   
 #### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>将项目配置为面向 64 位平台  
   
-1.  在菜单栏上，依次选择 **“生成”**、 **“配置管理器”**。  
+1.  在菜单栏上，依次选择“生成” > “Configuration Manager”。  
   
 2.  在“活动解决方案平台”列表中，选择一个 64 位平台作为解决方案目标，然后选择“关闭”按钮。  
   
@@ -53,7 +51,7 @@ ms.lasthandoff: 12/22/2017
   
  面向 64 位平台的所有项目的属性均已更新，并将为 64 位平台优化项目的下一个生成。  
   
-## <a name="targeting-platforms-in-the-project-designer"></a>在项目设计器中设定平台目标  
+## <a name="target-platforms-in-the-project-designer"></a>在项目设计器中设定平台目标  
  项目设计器还提供使项目面向不同平台的方法。 如果在“新建解决方案平台”对话框的列表中选择的平台之一不适合自己的解决方案，则可以创建自定义配置名称并修改“项目设计器”中的配置以面向正确的平台。  
   
  此任务的执行根据所用编程语言而有所不同。 有关详细信息，请参阅以下链接：  
@@ -66,6 +64,6 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="see-also"></a>请参阅  
  [了解生成平台](../ide/understanding-build-platforms.md)   
- [-platform（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)   
+ [/platform（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)   
  [64 位应用程序](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Visual Studio IDE 64 位支持](../ide/visual-studio-ide-64-bit-support.md)

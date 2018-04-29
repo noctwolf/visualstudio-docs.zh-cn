@@ -1,12 +1,10 @@
 ---
-title: 将生成工具安装到容器 | Microsoft Docs
+title: 将 Visual Studio 生成工具安装到容器
+description: 了解如何将 Visual Studio 生成工具安装到 Windows 容器，以支持持续集成和持续交付 (CI/CD) 工作流。
 ms.custom: ''
-ms.date: 10/18/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.date: 04/18/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
@@ -14,11 +12,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a63b954c87e6b5308e499be2422948fa865964
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: d9dc5b1add4f81e91d0ea0e2cdc20e2581116525
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-build-tools-into-a-container"></a>将生成工具安装到容器
 
@@ -46,7 +44,7 @@ ms.lasthandoff: 04/03/2018
 
 ## <a name="step-2-install-docker-for-windows"></a>步骤 2。 安装用于 Windows 的 Docker
 
-如果使用 Windows 10，则可以下载并安装[用于 Windows 的 Docker 社区版](https://www.docker.com/docker-windows)。 可以使用 PowerShell [安装用于 Windows Server 2016 的 Docker 企业版](https://docs.docker.com/engine/installation/windows/docker-ee)（使用 Desired State Configuration (DSC)，或使用[程序包提供程序](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/deploy-containers-on-server)进行简单的单独安装）。
+如果使用 Windows 10，则可以[下载并安装 Docker 社区版](https://docs.docker.com/docker-for-windows/install)。 如果使用 Windows Server 2016，请遵循[安装 Docker 企业版的说明](https://docs.docker.com/install/windows/docker-ee)。
 
 ## <a name="step-3-switch-to-windows-containers"></a>步骤 3。 切换到 Windows 容器
 
@@ -54,7 +52,7 @@ ms.lasthandoff: 04/03/2018
 
 ## <a name="step-4-expand-maximum-container-disk-size"></a>步骤 4。 扩展最大容器磁盘大小
 
-Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量磁盘空间以用于安装的所有工具。 即使我们的示例 Dockerfile 禁用程序包缓存，仍必须增加容器映像的磁盘大小以容纳所需空间。 当前在 Windows 上，只能通过更改 Docker 配置来增加磁盘大小。
+Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量磁盘空间以用于安装的所有工具。 即使示例 Dockerfile 禁用包缓存，仍必须增加容器映像的磁盘大小以容纳所需空间。 当前在 Windows 上，只能通过更改 Docker 配置来增加磁盘大小。
 
 **在 Windows 10 上**：
 
@@ -116,7 +114,7 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
 
 ## <a name="step-5-create-and-build-the-dockerfile"></a>步骤 5。 创建和生成 Dockerfile
 
-必须将下面的示例 Dockerfile 保存到磁盘上的新文件。 如果该文件仅仅命名为“Dockerfile”，则默认情况下会识别它。
+将下面的示例 Dockerfile 保存为磁盘上的新文件。 如果该文件仅仅命名为“Dockerfile”，则默认情况下会识别它。
 
 > [!NOTE]
 > 此示例 Dockerfile 只排除无法安装到容器的较旧 Windows SDK。 较旧版本会导致生成命令失败。
@@ -137,22 +135,22 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
 3. 将以下内容保存到 C:\BuildTools\Dockerfile。
 
    ```dockerfile
-   # Use the latest Windows Server Core image.
-   FROM microsoft/windowsservercore
+   # escape=`
 
-   # Download useful tools to C:\Bin.
-   ADD https://dist.nuget.org/win-x86-commandline/v4.1.0/nuget.exe C:\\Bin\\nuget.exe
+   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
+   FROM microsoft/dotnet-framework:4.7.1
 
-   # Download the Build Tools bootstrapper outside of the PATH.
-   ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\\TEMP\\vs_buildtools.exe
+   # Download the Build Tools bootstrapper.
+   ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
-   # Add C:\Bin to PATH and install Build Tools excluding workloads and components with known issues.
-   RUN setx /m PATH "%PATH%;C:\Bin" \
-    && C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache --installPath C:\BuildTools --all \
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 \
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 \
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 \
-       --remove Microsoft.VisualStudio.Component.Windows81SDK \
+   # Install Build Tools excluding workloads and components with known issues.
+   RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+       --installPath C:\BuildTools `
+       --all `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+       --remove Microsoft.VisualStudio.Component.Windows81SDK `
     || IF "%ERRORLEVEL%"=="3010" EXIT 0
 
    # Start developer command prompt with any other commands specified.
@@ -162,13 +160,16 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
    CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
+   > [!NOTE]
+   > 如果映像直接基于 microsoft/windowsservercore，可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。
+
 4. 从该目录处运行以下命令。
 
    ```shell
    docker build -t buildtools2017:latest -m 2GB .
    ```
 
-   此命令使用 2GB 内存在当前目录中生成 Dockerfile。 当安装了某些工作负荷时，默认值 1 GB 会不够用；但是根据生成环境，你可能能够只使用 1 GB 内存进行生成。
+   此命令使用 2 GB 内存在当前目录中生成 Dockerfile。 安装某些工作负载后，默认值 1 GB 会不够用；你有可能只使用 1 GB 内存进行生成，具体取决于生成环境。
 
    最终映像带有标记“buildtools2017:latest”，因此你可以在作为“buildtools2017”的容器中轻松运行它因为如果未指定任何标记，则默认情况下使用“latest”标记。 如果要在更[高级的方案](advanced-build-tools-container.md)中使用特定版本的 Visual Studio 15 生成工具 2017加，则你可以改为使用特定 Visual Studio 生成号以及“latest”来标记容器，因此容器可以按一致方式使用特定版本。
 
@@ -186,12 +187,14 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
 若要将此映像用于 CI/CD 工作流，可以将它发布到自己的 [Azure 容器注册表](https://azure.microsoft.com/services/container-registry)或其他内部 [Docker 注册表](https://docs.docker.com/registry/deploying)，以便服务器只需拉取它即可。
 
 ## <a name="get-support"></a>获取支持
+
 有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
 
 下面是另外几个支持选项：
+
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
-* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
+* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题并找到答案。
 * 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅

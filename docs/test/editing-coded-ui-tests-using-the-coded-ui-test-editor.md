@@ -2,21 +2,21 @@
 title: 在 Visual Studio 中编辑编码的 UI 测试 | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 77aa1fd259d671e4ba97eaa6eef29bbff87c18bf
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 942d532aa2ee370b65ae8dfb81a5a383b8c68cc2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用编码的 UI 测试编辑器编辑编码的 UI 测试
 通过编码的 UI 测试编辑器，可轻松修改编码的 UI 测试。 使用编码的 UI 测试编辑器，可以查找、查看和编辑测试方法和 UI 操作的属性。 此外，你还可以使用 UI 控件图查看和编辑其对应的控件。
@@ -71,7 +71,7 @@ ms.lasthandoff: 03/19/2018
 
  若要修改 UI 操作的属性，在 **“UI 操作”** 窗格中，展开包含你想要为其编辑属性的 UI 操作的测试方法，选择 UI 操作，然后通过“属性”窗口修改属性。
 
- 例如，如果服务器不可用，并且 UI 操作与指示“转到 Web 页 'http://Contoso1/default.aspx'”的 Web 浏览器关联，则可以将 URL 更改为 `'http://Contoso2/default.aspx'`。
+ 例如，如果服务器不可用，并且 UI 操作与指示“转到网页 'http://Contoso1/default.aspx'”的 Web 浏览器关联，则可以将 URL 更改为 `'http://Contoso2/default.aspx'`。
 
  ![控件属性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")
 

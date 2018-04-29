@@ -1,21 +1,19 @@
 ---
-title: "使用 Visual Studio 中的查看定义 | Microsoft Docs"
-ms.custom: 
+title: 使用 Visual Studio 中的查看定义 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a7465b8432d00df83638dbfa98a36cf8dee469a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用“查看定义”查看和编辑代码 (Alt+F12)
 
@@ -76,10 +74,10 @@ ms.lasthandoff: 01/13/2018
 |功能|键盘快捷键|
 |-------------------|:-----------------------:|
 |打开定义窗口|Alt+F12|
-|关闭定义窗口|Esc|
+|关闭定义窗口|**Esc**|
 |将定义窗口提升为一个常规文档选项卡|Shift+Alt+Home|
-|在定义窗口间导航|Ctrl+Alt+- 和 Ctrl+Alt+=|
-|在多个结果间导航|F8 和 Shift+F8|
+|在定义窗口间导航|**Ctrl**+**Alt**+**-** 和 **Ctrl**+**Alt**+**=**|
+|在多个结果间导航|**F8** 和 **Shift**+**F8**|
 |在代码编辑器窗口和定义窗口之间切换|Shift+Esc|
 
 > [!NOTE]

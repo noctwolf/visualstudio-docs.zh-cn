@@ -1,33 +1,31 @@
 ---
-title: 通过响应文件自动执行 Visual Studio 安装 | Microsoft Docs
+title: 通过响应文件自动执行 Visual Studio 安装
 description: 了解如何创建 JSON 响应文件，以便自动安装 Visual Studio
 ms.date: 08/14/2017
-ms.reviewer: tims
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - response file
 - automate
 - installation
 - command-line
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bbfff39dce34bfa8595f4e34222e3e61ac67fb5
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: ef060f77a7ac580cb93c93f8e48889b7f19e4fab
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>如何在响应文件中定义设置
+
 部署 Visual Studio 的管理员可以使用 `--in` 参数来指定响应文件，如下例所示：
 
-```
+```cmd
 vs_enterprise.exe --in customInstall.json
 ```
 
@@ -35,7 +33,7 @@ vs_enterprise.exe --in customInstall.json
 
 命令行中指定的参数将替代响应文件中的设置，但参数采用多个输入时除外（例如，`--add`）。 具有多个输入时，命令行中提供的输入将与响应文件中的设置合并。
 
-# <a name="setting-a-default-configuration-for-visual-studio"></a>设置 Visual Studio 默认配置
+## <a name="setting-a-default-configuration-for-visual-studio"></a>设置 Visual Studio 默认配置
 
 如果使用 `--layout` 创建了网络布局缓存，则会在布局中创建初始 `response.json` 文件。 如果创建一个部分布局，此响应文件将包含与布局中相同的工作负载和语言。  使用此 response.json 文件通过此布局自动运行安装程序，它将选择与布局中相同的工作负载和组件。  安装 Visual Studio 之前，用户仍可选择或取消选择安装 UI 中的任何工作负载。
 
@@ -59,9 +57,11 @@ vs_enterprise.exe --in customInstall.json
   "productId": "Microsoft.VisualStudio.Product.Enterprise"
 }
 ```
+
 创建或更新布局时，会同时创建一个 response.template.json 文件。  此文件包含所有可用的工作负载、组件和语言 ID。  此文件以模板形式提供，可包含自定义安装中的所有内容。  管理员可使用此文件作为自定义响应文件的起点。  仅需删除不需要安装的内容的 ID，并将其保存在自己的响应文件中。  请勿自定义 response.template.json 文件，否则一旦布局更新，所做更改就会丢失。
 
 ## <a name="example-layout-response-file-content"></a>布局响应文件内容示例
+
 下列示例将安装包含六个常见工作负载和组件且 UI 语言为英语和法语的 Visual Studio Enterprise。 可以将此示例用作模板，只需将工作负载和组件更改为你要安装的内容即可：
 
 ```json
@@ -96,13 +96,16 @@ vs_enterprise.exe --in customInstall.json
 ```
 
 ## <a name="get-support"></a>获取支持
+
 有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
 
 下面是另外几个支持选项：
+
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
-* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
+* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题并找到答案。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。 （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
+
 * [Visual Studio 2017 工作负载和组件 ID](workload-and-component-ids.md)

@@ -1,15 +1,9 @@
 ---
-title: 快速入门 - 使用模板创建 Python 项目 | Microsoft Docs
+title: 快速入门 - 使用模板创建 Python 项目
 description: 在此快速入门教程中，使用基本 Flask 应用的内置模板创建适合 Python 的 Visual Studio 项目。
-ms.custom: mvc
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d4d81676d9f63751455f4f51ae5993c46dd0f04
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 39e4b718ab7563e086f6ca2e85c31bd53b3c371c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入门：在 Visual Studio 中利用模板创建 Python 项目
+# <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入门：从 Visual Studio 中的模板创建 Python 项目
 
 [在 Visual Studio 2017 中安装 Python 支持](installing-python-support-in-visual-studio.md)后，就可以使用各种模板轻松创建新的 Python 项目。 在此快速入门教程中，使用模板创建简单的 Flask 应用。 生成的项目与按照[快速入门 - 通过 Flask 创建 Web 应用](../ide/quickstart-python.md)手动创建的项目相似。
 

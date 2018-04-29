@@ -1,12 +1,10 @@
 ---
-title: "创建 Visual Studio 的 Web 模板 | Microsoft Docs"
-ms.custom: 
+title: 创建 Visual Studio 的 Web 模板 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
 - templates [Visual Studio], Web
@@ -14,19 +12,19 @@ helpviewer_keywords:
 - project templates [Visual Studio], Web
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f94823131e568b3f1f254ead9d760210a4c9c1e0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 0f7dcc6f14bc631d4d5880d0d7f1ee123bde0306
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手动创建 Web 模板
 
-创建 Web 模板与创建其他种类的模板不同。 由于 Web 项目模板出现在”添加新网站“对话框中，并且 Web 项目项由编程语言分类，vstemplate 文件必须将模板指定为 Web 模板，并识别该编程语言。
+创建 Web 模板与创建其他种类的模板不同。 由于 Web 项目模板出现在“添加新网站”对话框中，并且 Web 项目项由编程语言分类，vstemplate 文件必须将模板指定为 Web 模板，并识别该编程语言。
 
 > [!NOTE]
-> Web 模板必须包含一个空的 .webproj 文件，并且必须在 `Project` 元素的 `File` 属性的 .vstemplate 文件中引用它。 尽管 Web 项目不需要 \*proj 项目文件，但有必要创建此存根文件以便 Web 模板正确运行。
+> Web 模板必须包含一个空的 .webproj 文件，并且必须在 `Project` 元素的 `File` 属性的 .vstemplate 文件中引用它。 尽管 Web 项目不需要 proj 项目文件，但有必要创建此存根文件以便 Web 模板正确运行。
 
 ### <a name="to-manually-create-a-web-template"></a>手动创建 Web 模板
 
@@ -56,7 +54,7 @@ ms.lasthandoff: 01/05/2018
     </TemplateData>
     ```
 
-1. 选择模板中的文件（包括 .vstemplate 文件），右键单击所选文件，然后选择“发送至” > “压缩的文件夹（zip 格式）”。 这些文件被压缩到一个 .zip 文件中。
+1. 选择模板中的文件（包括 .vstemplate 文件），右键单击所选文件，然后选择“发送至” > “压缩的文件夹（zip 格式）”。 这些文件会压缩到一个 .zip 文件中。
 
 1. 将该 .zip 模板文件放入 Visual Studio 项目模板目录。 默认情况下，此目录为 %USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates。
 

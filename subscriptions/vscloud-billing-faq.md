@@ -1,22 +1,24 @@
 ---
 title: Visual Studio Enterprise 和 Visual Studio Professional 云订阅计费常见问题解答
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/2/2018
-Ms.topic: Get-Started-Article
-Description: Billing questions for cloud subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7c89c562ab49ffd95af7cfce699d13aa8a639c81
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/02/2018
+ms.topic: Get-Started-Article
+description: 云订阅的计费问题。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 284b448c6c5eade7e85793c2d21196b83de9fdc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 云订阅计费常见问题解答
 请确保[比较云订阅权益和定价](https://www.visualstudio.com/vs/pricing/)，了解每种 Visual Studio 订阅的权益，云订阅与标准 Visual Studio 订阅之间的不同之处，以及订阅者权益的相关详细信息等。
+
+## <a name="general-purchasing-questions"></a>购买的常见问题
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>问：我可以使用采购订单购买 Visual Studio 云订阅吗？
 答：不能。 所有 Visual Studio 云订阅都必须使用 Azure 订阅购买。 （可将其视作你的 Azure 计费帐户。）
@@ -79,7 +81,7 @@ ms.lasthandoff: 03/22/2018
 
 ### <a name="q-can-i-use-the-monthly-azure-credits-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>问：我是否可以将每月 Azure 额度用作 Visual Studio 订阅者来购买更多 Visual Studio 云订阅？
 
-答：不可以，不能将[每月 Azure 额度用作 Visual Studio 订阅者](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)来支付 Visual Studio Marketplace 购买费用。 任何 Visual Studio 云订阅购买都会对信用卡计费。
+答：不可以，作为 Visual Studio 订阅者，不能将[每月 Azure 额度](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)用于支付 Visual Studio Marketplace 购买费用。 任何 Visual Studio 云订阅购买都会对信用卡计费。
 购买之前，需要先[移除支出限制](https://azure.microsoft.com/pricing/spending-limits/)。
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>问：年度和月度云订阅有何区别？

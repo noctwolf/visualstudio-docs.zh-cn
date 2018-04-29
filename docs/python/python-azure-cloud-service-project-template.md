@@ -1,36 +1,30 @@
 ---
-title: Python 的 Azure 云服务项目模板 |Microsoft Docs
+title: Python 的 Azure 云服务项目模板
 description: 使用 Python 编写的适用于 Azure 云服务的 Visual Studio 模板概述，包括角色部署、依赖项和故障排除。
-ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b8e12d8823d3246da7c607ca63c056d1927b97d0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 2acaa7a8012d8ef411eed065d8b4e134b4e52c1e
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python 的 Azure 云服务项目
 
 Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
 
-[云服务](http://go.microsoft.com/fwlink/?LinkId=306052)中包含数量不限的辅助角色和 Web 角色，其中每个角色执行在概念上独立的任务，但可根据缩放需求在虚拟机中单独复制。 Web 角色为前端 Web 应用程序提供托管。 在使用 Python 的情况下，任何支持 WSGI 的 Web 框架都可用于编写这样的应用程序 - 如同受 [Web 项目模板](python-web-application-project-templates.md)支持一样。 辅助角色用于不直接与用户交互的长时间运行的进程。 它们通常使用[数据服务](http://go.microsoft.com/fwlink/?LinkId=401571)和[应用服务](http://go.microsoft.com/fwlink/?LinkId=401572)库，这些库可能通过 [`pip install azure`](http://pypi.org/project/azure) 进行安装。
+[云服务](https://docs.microsoft.com/en-us/azure/cloud-services/)中包含数量不限的辅助角色和 Web 角色，其中每个角色执行在概念上独立的任务，但可根据缩放需求在虚拟机中单独复制。 Web 角色为前端 Web 应用程序提供托管。 在使用 Python 的情况下，任何支持 WSGI 的 Web 框架都可用于编写这样的应用程序 - 如同受 [Web 项目模板](python-web-application-project-templates.md)支持一样。 辅助角色用于不直接与用户交互的长时间运行的进程。 它们通常使用同 [`pip install azure`](http://pypi.org/project/azure) 一起安装的“azure”包中的包。
 
-本文详细介绍 Visual Studio 2017 中的项目模板和其他支持（早期版本相似，但有一些差异）。 有关通过 Python 使用 Azure 的详细信息，请访问 [Azure Python 开发人员中心](http://go.microsoft.com/fwlink/?linkid=254360)。
+本文详细介绍 Visual Studio 2017 中的项目模板和其他支持（早期版本相似，但有一些差异）。 有关通过 Python 使用 Azure 的详细信息，请访问 [Azure Python 开发人员中心](https://docs.microsoft.com/en-us/python/azure/?view=azure-python)。
 
 ## <a name="create-a-project"></a>创建项目
 

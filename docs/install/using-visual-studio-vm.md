@@ -1,8 +1,9 @@
 ---
-title: 在 Azure 虚拟机上使用 Visual Studio | Microsoft Docs
+title: 在 Azure 虚拟机上使用 Visual Studio
 description: 了解如何在 Azure 虚拟机上使用 Visual Studio
 ms.date: 03/03/2018
 ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
@@ -14,18 +15,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a7e1a3646e2e30302548f2445b0ab657f8e3ec4
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f0c87d482c2bc7ad174f7074091767fb6127bf70
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
+
 使用预配置的 Azure 虚拟机 (VM) 中的 Visual Studio 是从零构建开发环境的一种简单快速的方法。 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1) 中提供了具有不同 Visual Studio 配置的系统映像。
 
 初次使用 Azure？ [创建免费的 Azure 帐户](https://azure.microsoft.com/free)。
 
 ## <a name="what-configurations-and-versions-are-available"></a>提供了哪些可用的配置和版本？
+
 在 Azure Marketplace 中，可以看到最新主要版本的映像：Visual Studio 2017 和 Visual Studio 2015。 对于每个主要版本，可以看到最初发布的 (RTW) 版本和最新更新的版本。 其中每个版本都提供 Visual Studio Enterprise 和 Visual Studio Community 版本。 这些映像至少每月更新一次，以包含最新的 Visual Studio 和 Windows 更新。 映像的名称保持不变，但每个映像的说明将包含已安装的产品版本和映像的“截至”日期。
 
 | 发行版本                                              | 版本                     |     产品版本     |
@@ -42,6 +45,7 @@ ms.lasthandoff: 04/03/2018
 有关详细信息，请参阅 [Visual Studio 服务策略](/visualstudio/productinfo/vs-servicing-vs)。
 
 ## <a name="what-features-are-installed"></a>安装了哪些功能？
+
 每个映像都包含针对该 Visual Studio 版本的建议功能集。 通常情况下，安装包括：
 
 * 所有可用的工作负载，包括每个工作负载的建议可选组件
@@ -67,6 +71,7 @@ ms.lasthandoff: 04/03/2018
 如果映像不包含所需的 Visual Studio 功能，请通过页面右上角的反馈工具提供反馈。
 
 ## <a name="what-size-vm-should-i-choose"></a>我应该选择哪种大小的 VM？
+
 Azure 提供一系列完整的虚拟机大小。 因为 Visual Studio 是一个功能强大的多线程应用程序，所以需要至少包含 2 个处理器和 7 GB 内存的 VM 大小。 建议 Visual Studio 映像采用下列 VM 大小：
 
    * Standard_D2_v3
@@ -82,6 +87,7 @@ Azure 提供一系列完整的虚拟机大小。 因为 Visual Studio 是一个�
 在 Azure 中，可以通过调整 VM 的大小重新平衡最初的选择。 可以预配大小更为合适的新 VM，也可以根据不同的基础硬件调整现有 VM 的大小。 有关详细信息，请参阅[调整 Windows VM 大小](/azure/virtual-machines/windows/resize-vm)。
 
 ## <a name="after-the-vm-is-running-whats-next"></a>在 VM 运行后，接下来要做什么？
+
 Visual Studio 在 Azure 中遵循“自带许可”模型。 与在专有硬件上的安装类似，第一步都包括许可 Visual Studio 安装。 要解锁 Visual Studio，可以：
 - 使用与 Visual Studio 订阅关联的 Microsoft 帐户登录
 - 使用最初购买时附带的产品密钥解锁 Visual Studio
@@ -107,6 +113,7 @@ Visual Studio 在 Azure 中遵循“自带许可”模型。 与在专有硬件�
 此外，开发任务或技术可能需要更大的规模，例如各种开发配置和多个计算机配置。 可以使用 Azure 开发测试实验室来创建可自动构建“黄金映像”的方案。 还可以使用开发测试实验室针对团队运行的 VM 管理策略。 [使用适用于开发人员的 Azure DevTest 实验室](/azure/devtest-lab/devtest-lab-developer-lab)是详细了解 Azure DevTest 实验室的最佳来源。
 
 ## <a name="next-steps"></a>后续步骤
+
 现已了解有关预配置的 Visual Studio 映像的信息，下一步是创建新的 VM：
 
 * [通过 Azure 门户创建 VM](/azure/virtual-machines/windows/quick-create-portal)

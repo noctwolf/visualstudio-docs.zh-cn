@@ -1,12 +1,10 @@
 ---
-title: "如何：对应用程序和部署清单进行签名 | Microsoft Docs"
-ms.custom: 
+title: 如何：对应用程序和部署清单进行签名 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - code signing [Visual Studio], Authenticode
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0ca5caa822108d5a6417e69f827e1ba754b0d105
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d3696762d950c913effb10d1ce15f22bd2cfc075
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单进行签名
 如果想要通过使用 ClickOnce 部署发布应用程序，则必须通过验证码技术使用公钥/私钥对应用程序和部署清单进行签名。 可以使用 Windows 证书存储或密钥文件中的证书对清单进行签名。  
@@ -35,14 +33,14 @@ ms.lasthandoff: 12/22/2017
   
  对于基于 .exe 的应用程序，对 ClickOnce 清单进行签名是可选的。 有关详细信息，请参阅本文档的“生成未签名的清单”部分。  
   
- 有关创建密钥的信息，请参阅[如何：创建公钥/私钥对](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。  
+ 有关创建密钥文件的信息，请参阅[如何：创建公钥/私钥对](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 仅支持具有 .pfx 扩展名的个人信息交换 (PFX) 密钥文件。 但是，可通过单击项目属性“签名”页上的“从存储中选择”，从当前用户的 Windows 证书存储中选择其他类型的证书。  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>使用证书对应用程序和部署清单进行签名  
   
-1.  转到项目属性窗口（在“解决方案资源管理器”中，右键单击项目节点并选择“属性”，或在“快速启动”窗口中键入 **project properties**，或在“解决方案资源管理器”窗口中按 ALT + ENTER）。 在“签名”选项卡上，选中“为 ClickOnce 清单签名”复选框。  
+1.  转到项目属性窗口（在“解决方案资源管理器”中，右键单击项目节点并选择“属性”，或在“快速启动”窗口中键入项目属性，或在“解决方案资源管理器”窗口中按 Alt+Enter）。 在“签名”选项卡上，选中“为 ClickOnce 清单签名”复选框。  
   
 2.  单击“从存储中选择”按钮。  
   
@@ -70,7 +68,7 @@ ms.lasthandoff: 12/22/2017
   
      “输入密码以打开文件”对话框随即出现。 （如果 .pfx 文件已经存储在 Windows 证书存储中或没有密码保护，则不会提示输入密码。）  
   
-4.  输入访问密钥文件的密码，然后按 ENTER。  
+4.  输入访问密钥文件的密码，然后按 Enter。  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>使用测试证书对应用程序和部署清单进行签名  
   
@@ -80,7 +78,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  在“创建测试证书”对话框中，输入密码以帮助保护测试证书的安全。  
   
-## <a name="generating-unsigned-manifests"></a>生成未签名的清单  
+## <a name="generate-unsigned-manifests"></a>生成未签名的清单  
  对于基于 .exe 的应用程序，对 ClickOnce 清单进行签名是可选的。 下面的过程演示如何生成未签名的 ClickOnce 清单。  
   
 > [!IMPORTANT]
@@ -112,5 +110,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="see-also"></a>请参阅  
  [具有强名称的程序集](/dotnet/framework/app-domains/strong-named-assemblies)   
  [如何：创建公钥/私钥对](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)   
- [“项目设计器”->“签名”页](../ide/reference/signing-page-project-designer.md)   
+ [项目设计器的签名页](../ide/reference/signing-page-project-designer.md)   
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)

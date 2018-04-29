@@ -1,12 +1,10 @@
 ---
-title: "如何：在 Visual Studio 中自定义菜单和工具栏 | Microsoft Docs"
-ms.custom: 
+title: 如何：在 Visual Studio 中自定义菜单和工具栏 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.renametoolbar
 - vs.customize.toolbars
@@ -27,16 +25,16 @@ helpviewer_keywords:
 - toolbars [Visual Studio], customizing
 - toolbars [Visual Studio], customizing in the IDE
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
-caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7c852033d5835c4da4cc7f1e3bdf5d20472439c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9de1cef61395e6b2fd4c1a38000ead2367143e4e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自定义菜单和工具栏
 在自定义 Visual Studio 时，不仅可以添加和删除工具栏及菜单栏上的菜单，还可以添加和删除任何给定工具栏或菜单上的命令。  
@@ -44,9 +42,9 @@ ms.lasthandoff: 12/22/2017
 > [!WARNING]
 >  自定义工具栏或菜单后，请确保在“自定义”对话框中继续选中其复选框。 否则，在关闭并重新打开 Visual Studio 之后，你所做的更改将不会保留。
   
-## <a name="adding-removing-or-moving-a-menu-on-the-menu-bar"></a>添加、移除或移动菜单栏上的菜单  
+## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>添加、删除或移动菜单栏上的菜单  
   
-1.  在菜单栏上，依次选择“工具”、“自定义”。  
+1.  在菜单栏上，依次选择“工具” > “自定义”。  
   
      此时将打开“自定义”对话框。  
   
@@ -60,9 +58,9 @@ ms.lasthandoff: 12/22/2017
   
     -   若要移动菜单栏内的菜单，请在“控件”列表中选择该菜单，然后选择“上移”或“下移”按钮。  
   
-## <a name="adding-removing-or-moving-a-toolbar"></a>添加、移除或移动工具栏  
+## <a name="add-remove-or-move-a-toolbar"></a>添加、删除或移动工具栏  
   
-1.  在菜单栏上，依次选择“工具”、“自定义”。  
+1.  在菜单栏上，依次选择“工具” > “自定义”。  
   
      此时将打开“自定义”对话框。  
   
@@ -86,7 +84,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="customizing_menu">自定义菜单或工具栏</a>
   
-1.  在菜单栏上，依次选择“工具”、“自定义”。  
+1.  在菜单栏上，依次选择“工具” > “自定义”。  
   
     此时将打开“自定义”对话框。  
   
@@ -106,9 +104,9 @@ ms.lasthandoff: 12/22/2017
   
     -   若要将命令分组到一条水平线下，请在“控件”列表中选择第一个命令，选择“修改所选内容”按钮，然后在显示的菜单中选择“开始一组”。  
   
-## <a name="resetting-a-menu-or-a-toolbar"></a>重置菜单或工具栏  
+## <a name="reset-a-menu-or-a-toolbar"></a>重置菜单或工具栏  
   
-1.  在菜单栏上，依次选择“工具”、“自定义”。  
+1.  在菜单栏上，依次选择“工具” > “自定义”。  
   
     此时将打开“自定义”对话框。  
   
@@ -121,5 +119,5 @@ ms.lasthandoff: 12/22/2017
     还可以选择“全部重置”按钮，从而重置所有菜单和工具栏。
 
 ## <a name="see-also"></a>请参阅
-[个性化设置 IDE](../ide/personalizing-the-visual-studio-ide.md)  
+[个性化 IDE](../ide/personalizing-the-visual-studio-ide.md)  
 [自定义编辑器](../ide/customizing-the-editor.md)

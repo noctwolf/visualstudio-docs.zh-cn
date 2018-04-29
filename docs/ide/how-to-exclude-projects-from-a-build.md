@@ -1,23 +1,21 @@
 ---
-title: "如何：从生成中排除项目 | Microsoft Docs"
-ms.custom: 
+title: 如何：从生成中排除项目 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8392a17a1d1f0648176c6b68463102e31c61cf20
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a09f18ccb491474c5db20724ccea501fc94c14a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>如何：从生成中排除项目
 你可以生成解决方案，但不生成其包含的所有项目。 例如，你可以排除会中断生成的项目。 在调查并解决问题之后，你可以再生成该项目。  
@@ -32,7 +30,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>从活动解决方案配置中暂时删除项目  
   
-1.  在菜单栏上，依次选择 **“生成”**、 **“配置管理器”**。  
+1.  在菜单栏上，依次选择“生成” > “Configuration Manager”。  
   
 2.  在“项目上下文”表中，找到要从生成中排除的项目。  
   
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>创建排除项目的解决方案配置  
   
-1.  在菜单栏上，依次选择 **“生成”**、 **“配置管理器”**。  
+1.  在菜单栏上，依次选择“生成” > “Configuration Manager”。  
   
 2.  在“活动解决方案配置”列表中，选择“\<新建>”。  
   
@@ -54,7 +52,7 @@ ms.lasthandoff: 12/22/2017
   
 6.  在“标准”工具栏上，确保“解决方案配置”框中的新解决方案配置是活动配置。  
   
-7.  在菜单栏上，依次选择“生成”、“重新生成解决方案”。  
+7.  在菜单栏上，依次选择“生成” > “重新生成解决方案”。  
   
 ## <a name="see-also"></a>请参阅  
  [了解生成配置](../ide/understanding-build-configurations.md)   

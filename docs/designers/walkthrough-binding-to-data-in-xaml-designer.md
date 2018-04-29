@@ -1,12 +1,8 @@
 ---
-title: "演练：将数据绑定到 XAML 设计器 | Microsoft Docs"
-ms.custom: 
+title: 在 XAML 设计器中绑定数据
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 dev_langs:
@@ -14,16 +10,16 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ef8826fd01c0eec45f2daea5900c5e440a5cebb0
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: a94f3c4637ab76b8b0d00d1899de5c475dc8e7e4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>演练：将数据绑定到 XAML 设计器
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>演练：在 XAML 设计器中绑定数据
 
 在 XAML 设计器中，可以通过使用美工板和“属性”窗口设置数据绑定属性。 本演练中的示例演示如何将数据绑定到控件。 具体而言，本演练展示如何创建具有名为 `ItemCount` 的 [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) 的简单购物车类，然后将 `ItemCount` 属性绑定到 [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) 控件的 **Text** 属性。
 
@@ -103,5 +99,5 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="see-also"></a>请参阅
 
-[使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)  
-[添加值转换器”对话框](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [添加值转换器”对话框](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

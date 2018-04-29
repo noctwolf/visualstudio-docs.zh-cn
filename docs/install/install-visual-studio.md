@@ -3,11 +3,8 @@ title: 安装 Visual Studio 2017 | Microsoft Docs
 description: 了解如何逐步安装 Visual Studio。
 ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -22,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f6acdd338b0ae8d23fba338c8564d2bd95ad45
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: c39496b09c72c6c5eb72fb1c5bedb59285d01347
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-visual-studio-2017"></a>安装 Visual Studio 2017
+
 欢迎以全新方式安装 Visual Studio！ 最新版本方便你更轻松地选择并仅安装所需功能。 此外，我们还减少了 Visual Studio 的最小内存需求量，使其安装速度变得更快，对系统的影响更小。
 
 想要详细了解此版本的其他新增功能？ 请参阅我们的[发行说明](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)。
@@ -62,7 +60,7 @@ ms.lasthandoff: 04/03/2018
 
 然后，运行引导程序文件以安装 Visual Studio 安装程序。 这个新的轻型安装程序包括安装和自定义 Visual Studio 2017 所需的一切。
 
-1.  在“下载”文件夹中，双击与下列文件之一匹配或类似的引导程序文件：
+1. 在“下载”文件夹中，双击与下列文件之一匹配或类似的引导程序文件：
 
   * 对于 Visual Studio Enterprise，请运行 **vs_enterprise.exe**
   * 对于 Visual Studio Professional，请运行 **vs_professional.exe**
@@ -70,7 +68,7 @@ ms.lasthandoff: 04/03/2018
 
   如果收到用户帐户控制通知，请单击“是”。
 
-2.  我们会要求确认 Microsoft [许可条款](https://www.visualstudio.com/license-terms/)和 Microsoft [隐私声明](https://go.microsoft.com/fwlink/?LinkID=824704)。 单击 **“继续”**。  
+2. 我们会要求确认 Microsoft [许可条款](https://www.visualstudio.com/license-terms/)和 Microsoft [隐私声明](https://go.microsoft.com/fwlink/?LinkID=824704)。 单击 **“继续”**。  
 
    ![许可条款和隐私声明](media/vs2017-privacy-and-license-terms.PNG "Microsoft 许可条款和隐私声明")
 
@@ -78,20 +76,20 @@ ms.lasthandoff: 04/03/2018
 
 安装该安装程序后，可以通过选择所需的功能集或工作负载来使用该程序自定义安装。 操作方法如下。
 
-1.  在“安装 Visual Studio”屏幕中找到所需的工作负载。
+1. 在“安装 Visual Studio”屏幕中找到所需的工作负载。
 
  ![从 Visual Studio 2017 设置对话框中选择工作负载](../install/media/install-visual-studio-enterprise.png)
 
      例如，选择“.NET 桌面开发”工作负载。 它附带默认核心编辑器，该编辑器针对超过 20 种语言提供基本代码编辑支持，能够打开和编辑任意文件夹中的代码（而无需使用项目），还提供集成的源代码管理。  
 
-2.  选择所需的工作负载后，单击“安装”。
+2. 选择所需的工作负载后，单击“安装”。
 
     接下来，会出现多个显示 Visual Studio 安装进度的状态屏幕。
 
-3.  安装完新的工作负载和组件后，单击“启动”。  
+3. 安装完新的工作负载和组件后，单击“启动”。  
 
 > [!TIP]
->  在安装之后，可以随时安装最初未安装的工作负荷或组件。 如果已打开 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 或者，从“开始”菜单打开“Visual Studio 安装程序”。 在此处可以选择要安装的工作负荷或组件，然后单击“修改”。  
+> 在安装之后，可以随时安装最初未安装的工作负荷或组件。 如果已打开 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 或者，从“开始”菜单打开“Visual Studio 安装程序”。 在此处可以选择要安装的工作负荷或组件，然后单击“修改”。  
 
 |         |         |
 |---------|---------|
@@ -121,8 +119,8 @@ ms.lasthandoff: 04/03/2018
 
 更改默认语言的另一种方法是从命令行运行安装程序。 例如，可以通过运行以下命令来强制安装程序用英语运行：`vs_installer.exe --locale en-US`。 安装程序下一次运行时会记住此设置。 安装程序支持以下语言标记：zh-cn、zh-tw、cs-cz、en-us、es-es、fr-fr、de-de、it-it、ja-jp、ko-kr、pl-pl、pt-br、ru-ru 和 tr-tr。
 
-
 ## <a name="step-7---start-developing"></a>第 7 步 - 开始开发
+
 1. Visual Studio 安装完成后，单击“启动”按钮，[开始使用 Visual Studio 进行开发](../ide/get-started-developing-with-visual-studio.md)。
 
 2. 单击“文件”，然后单击“新建项目”。
@@ -132,15 +130,18 @@ ms.lasthandoff: 04/03/2018
    若要[生成 C# 应用](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)，请单击“已安装”，展开“Visual C#”，然后选择要生成的 C# 项目类型。
 
 ## <a name="get-support"></a>获取支持
+
 有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
 
 下面是另外几个支持选项：
+
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
-* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
+* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题并找到答案。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。 （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
+
 * [更新 Visual Studio 2017](update-visual-studio.md)
 * [修改 Visual Studio 2017](modify-visual-studio.md)
 * [卸载 Visual Studio 2017](uninstall-visual-studio.md)

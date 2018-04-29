@@ -1,19 +1,19 @@
 ---
-title: "Visual Studio 订阅许可条款"
+title: Visual Studio 订阅许可条款
 author: evanwindom
 ms.author: jaunger
-Manager: evelynp
-ms.date: 10/3/2017
+manager: evelynp
+ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-description: "Visual Studio 订阅许可条款。"
+description: Visual Studio 订阅许可条款。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 68e5a55156b3a5e67f047df585f20c83e808386a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/16/2018
 ---
 适用于以下 VISUAL STUDIO 订阅的 MICROSOFT 软件许可条款：
 
@@ -97,9 +97,9 @@ _______________________________________
        You may run, at any one time, only one instance of SQL Server 2014 Standard Edition in one physical or virtual operating system environment on one server solely to support the software. You do not need SQL Server CALs for this use.
 
 
-   b.  实用程序。 软件包含以下网址上的实用程序列表中列出的某些项：[http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409。](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  您可以在您或其他第三方的计算机上复制和安装这些项。 请注意，实用程序仅供临时使用，Microsoft 无法从软件的其余部分单独修补或更新实用程序，并且部分实用程序的性质可让他人访问安装该实用程序的计算机。 因此，应用程序和数据库调试或部署完毕后，应删除已安装的所有实用程序。 Microsoft 对第三方如何使用和访问您在任何计算机上安装的实用程序概不负责。
+   b.  实用程序。 该软件包含 [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409) 处实用程序列表上的某些项  您可以在您或其他第三方的计算机上复制和安装这些项。 请注意，实用程序仅供临时使用，Microsoft 无法从软件的其余部分单独修补或更新实用程序，并且部分实用程序的性质可让他人访问安装该实用程序的计算机。 因此，应用程序和数据库调试或部署完毕后，应删除已安装的所有实用程序。 Microsoft 对第三方如何使用和访问您在任何计算机上安装的实用程序概不负责。
 
-   c. 生成服务器。 软件包含以下网址上的生成服务器列表中列出的某些项：[http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409。](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  您可以将软件包含的项复制并安装到生成计算机上。 生成过程中，您和组织中的其他人只能在生成计算机上使用这些项来编译、生成、验证和归档应用程序或运行质量或性能测试。
+   c. 生成服务器。 该软件包含 [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409) 处生成服务器列表上的某些项  您可以将软件包含的项复制并安装到生成计算机上。 生成过程中，您和组织中的其他人只能在生成计算机上使用这些项来编译、生成、验证和归档应用程序或运行质量或性能测试。
 
    d. 许可范围. 您不得对软件进行反向工程、反编译或反汇编，或以其他方式尝试导出软件源码，仅限以下情况除外：(i) 尽管有此限制，但适用法律允许；或 (ii) 根据软件附带或链接到的 GNU 宽通用公共许可证授权对任何库的更改进行调试需要时。
 
@@ -128,7 +128,7 @@ _______________________________________
     （有时称为“多路复用”或“组合连接”）的硬件或软件不会减少所需的任何类型的许可数量。
 
 
-8. 强制激活。 激活过程将软件的使用与特定设备相关联。 激活过程中，软件将向 Microsoft 发送与软件和设备相关的信息。 发送的信息包括软件的版本、语言和产品密钥，设备的 Internet 协议地址以及设备硬件配置衍生的信息。 有关详细信息，请访问 [microsoft.com/piracy/activation.mspx.[(http://microsoft.com/piracy/activation.mspx)]。使用软件即表示您同意传输这些信息。 激活之前，您有权使用在安装过程中安装的软件版本。 除非激活软件，否则在安装过程中指定的时间之后使用软件的权限会受到限制。 本规定旨在防止未经许可使用该软件。 如果不激活软件，在该时间之后您将无法继续使用软件。 如果设备连接到 Internet，软件可能会自动连接到 Microsoft 进行激活。 您还可以通过 Internet 或电话手动激活软件。 通过这种方式激活可能需要支付 Internet 和电话服务费。 对计算机组件或软件进行某些更改时可能要求您重新激活软件。 激活软件之前系统会不断提醒您进行激活。
+8. 强制激活。 激活过程将软件的使用与特定设备相关联。 激活过程中，软件将向 Microsoft 发送与软件和设备相关的信息。 发送的信息包括软件的版本、语言和产品密钥，设备的 Internet 协议地址以及设备硬件配置衍生的信息。 有关详细信息，请访问 [microsoft.com/piracy/activation.mspx.[(http://microsoft.com/piracy/activation.mspx)]。使用软件即表示同意传输这些信息。 激活之前，您有权使用在安装过程中安装的软件版本。 除非激活软件，否则在安装过程中指定的时间之后使用软件的权限会受到限制。 本规定旨在防止未经许可使用该软件。 如果不激活软件，在该时间之后您将无法继续使用软件。 如果设备连接到 Internet，软件可能会自动连接到 Microsoft 进行激活。 您还可以通过 Internet 或电话手动激活软件。 通过这种方式激活可能需要支付 Internet 和电话服务费。 对计算机组件或软件进行某些更改时可能要求您重新激活软件。 激活软件之前系统会不断提醒您进行激活。
 
 9. 验证。
 
@@ -170,7 +170,7 @@ _______________________________________
 
     a. 使用和分发权限。 下面列出的代码和文本文件是“可分发代码”。 
 
-    - REDIST.TXT 文件。 您可以复制和分发软件的 redist.txt 文件中和 [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409) 上的 REDIST 列表中列出的对象代码形式的代码。
+    - REDIST.TXT 文件。 可以复制和分发软件的 redist.txt 文件中和 [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409) 上的 REDIST 列表中列出的对象代码形式的代码。
 
     - 代码示例、模板和样式。 您可以复制、修改和分发标记为“示例”、“模板”、“简单样式”和“草图样式”的源代码和对象代码形式的代码。
 
@@ -192,7 +192,7 @@ _______________________________________
 
     a. 服务器软件。 必须获得 Microsoft 的事先书面批准才能将对服务器软件或其附带的其他软件进行基准测试的结果透露给第三方。 本规定不适用于 .NET Framework（见下文）。
 
-    b. Microsoft .NET 基准测试。 软件包含一个或多个 .NET Framework 组件（“.NET 组件”）。 您可以对这些组件进行内部基准测试。 在符合 [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406) 中规定条件的情况下，可以披露对这些组件进行的任何基准测试的结果。 即使您与 Microsoft 签有任何其他协议，但是如果您披露了此类基准测试的结果，并且您的产品与 .NET 组件存在竞争关系，只要符合 [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406) 中规定的相同条件，Microsoft 有权披露对您的产品进行基准测试的结果。
+    b. Microsoft .NET 基准测试。 软件包含一个或多个 .NET Framework 组件（“.NET 组件”）。 您可以对这些组件进行内部基准测试。 在符合 [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406) 中规定条件的情况下，可以披露对这些组件进行的任何基准测试的结果。 即使与 Microsoft 签有任何其他协议，但是试如果披露了此类基准测的结果，并且产品与 .NET 组件存在竞争关系，只要符合 [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406) 中规定的相同条件，Microsoft 有权披露对产品进行基准测试的结果。
 
 14. **许可范围。** 该软件只授予使用许可，而非出售。 本协议只授予您使用该软件的某些权利。 Microsoft 保留所有其他权利。 除非适用的法律赋予您此项限制之外的权利，否则您只能在本协议明示允许的范围内使用该软件。 为此，您必须遵守该软件中的任何技术限制，这些限制只允许您以特定的方式使用该软件。 有关详细信息，请访问 [www.microsoft.com/licensing/userights](https://www.microsoft.com/licensing/userights)。 您不得 
     - 在未经 Microsoft 事先书面批准的情况下，向任何第三方披露软件的任何基准测试结果。Microsoft .NET Framework 除外（见 13b 条）；
@@ -287,7 +287,7 @@ Visual Studio 2015 产品：
 Windows Server 2012 R2 
 1. **基于 INTERNET 的服务。** Microsoft 向基于 Internet 的服务提供此软件。 此应用程序可以随时更改或取消服务。 
 
-    a. **同意基于 Internet 的服务。** 下面以及 Windows Server 隐私重要事项中介绍的软件功能可通过 Internet 连接到 Microsoft 或服务提供商的计算机系统。 在某些情况下，你不会在连接时另外收到通知。 您可以关闭或不使用这些功能。 有关这些功能的详细信息，请访问 [go.microsoft.com/fwlink/?linkid=280262](http://go.microsoft.com/fwlink/?linkid=280262)。 **使用这些功能即表示你同意传输此类信息。** Microsoft 不会使用此信息来识别你的身份或与你联系。 
+    a. 同意使用基于 Internet 的服务。 下面以及 Windows Server 隐私重要事项中介绍的软件功能可通过 Internet 连接到 Microsoft 或服务提供商的计算机系统。 在某些情况下，你不会在连接时另外收到通知。 您可以关闭或不使用这些功能。 有关这些功能的详细信息，请访问 [go.microsoft.com/fwlink/?linkid=280262](http://go.microsoft.com/fwlink/?linkid=280262)。 **使用这些功能即表示你同意传输此类信息。** Microsoft 不会使用此信息来识别你的身份或与你联系。 
 
     计算机信息。 以下功能使用 Internet 协议，其会向相应的系统发送计算机信息，例如您的 Internet 协议地址、操作系统类型、浏览器和您所使用的软件的名称和版本，以及运行该软件的设备的语言代码等。 Microsoft 使用此信息来向你提供基于 Internet 的服务。
 
@@ -314,7 +314,7 @@ Windows Server 2012 R2
     - Windows Server 2012 Active Directory Rights Management Services。 软件中的此功能可以让您创建未经您的允许无法打印、复制或发送给他人的内容。 有关详细信息，请访问 [www.microsoft.com/rms](https://www.microsoft.com/rms)。 你可以选择不使用此功能。
     - 加速器。 当您单击或将鼠标移动到加速器上时，系统可以将当前网页的标题、完整 web 地址或 URL，标准计算机信息以及您选择的任何内容发送给服务提供商。 如果您使用的是 Microsoft 提供的加速器，则所发送的信息将受 Microsoft 联机隐私声明（可在 [go.microsoft.com/fwlink/?linkid=31493](http://go.microsoft.com/fwlink/?linkid=31493) 上查看）的约束。 如果您使用的是第三方提供的加速器，则所发送信息的使用将受第三方隐私政策的约束。
 
-    b. **信息的使用。** Microsoft 可能会使用计算机信息、加速器信息和恶意软件报告来改进我们的软件和服务。 我们还可能与他人共享这些信息，例如硬件和软件供应商。 他们可能会使用这些信息来改进其产品与 Microsoft 软件的运行方式。
+    b. 信息的使用。 Microsoft 可能会使用计算机信息、加速器信息和恶意软件报告来改进我们的软件和服务。 我们还可能与他人共享这些信息，例如硬件和软件供应商。 他们可能会使用这些信息来改进其产品与 Microsoft 软件的运行方式。
 
     c. **不恰当使用基于 Internet 的服务。** 您不得以任何可能损害这些服务或妨碍他人使用这些服务的方式使用这些服务。 您不得利用这些服务尝试以任何手段擅自使用任何服务、数据、帐户或网络。
 

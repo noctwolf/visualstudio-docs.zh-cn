@@ -1,24 +1,22 @@
 ---
-title: "创建 Visual Studio 的多项目模板 | Microsoft Docs"
-ms.custom: 
+title: 创建 Visual Studio 的多项目模板 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
 - multi-project templates
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86952d3b742abf3b73b22e17d695717ca8dac9bd
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: b3902dd2b6f4dfac72d61d2c4d81937dcbbfdd07
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：创建多项目模板
 
@@ -36,9 +34,9 @@ ms.lasthandoff: 01/05/2018
 
 - 整个多项目模板的根 .vstemplate 文件。 此根 .vstemplate 文件包含“新建项目”对话框中显示的元数据，并指定查找此模板中项目的 .vstemplate 文件的位置。 此文件必须位于 .zip 文件的根目录中。
 
-- 两个或多个文件夹，其中包含完整的项目模板所需的文件。 这包括项目的所有代码文件，以及项目的 .vstemplate 文件。
+- 两个或多个文件夹，其中包含完整的项目模板所需的文件。 文件夹包含项目的所有代码文件，以及项目的 .vstemplate 文件。
 
-例如，具有两个项目的多项目模板 .zip 文件具有以下文件和目录：
+例如，具有两个项目的多项目模板 .zip 文件包含以下文件和目录：
 
 - MultiProjectTemplate.vstemplate
 - \Project1\Project1.vstemplate
@@ -93,7 +91,7 @@ ms.lasthandoff: 01/05/2018
 
 1. 为模板创建一个目录，并为每个项目提供一个子目录。
 
-1. 将每个项目的 .zip 文件的内容提取到刚创建的相应子目录中。
+1. 将每个项目的 .zip 文件的内容提取到创建的相应子目录中。
 
 1. 在基目录中，创建扩展名为“.vstemplate”的 XML 文件。 此文件包含多项目模板的元数据。 有关文件结构，请参阅以下示例。 确保为每个项目的 .vstemplate 文件指定相对路径。
 

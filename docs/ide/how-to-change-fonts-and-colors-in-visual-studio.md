@@ -1,28 +1,23 @@
 ---
-title: 如何：在 Visual Studio 中更改字体和颜色 | Microsoft Docs
-ms.custom: ''
+title: 如何：在 Visual Studio 中更改字体和颜色
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
-caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b5d03f67edc604a7c2dd7e4cd32620a52812e09
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 047ec49b48d955591d89cd9c392d72381c57b84e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>如何：在 Visual Studio 中更改字体和颜色
 
@@ -33,9 +28,9 @@ ms.lasthandoff: 03/15/2018
 
 ## <a name="change-the-color-theme-of-the-ide"></a>更改 IDE 的颜色主题
 
-1. 在菜单栏上，依次选择“工具” 、“选项” 。
+1. 在菜单栏上，依次选择“工具” > “选项”。
 
-1. 在选项列表中，选择“环境”、“常规”。
+1. 在选项列表中，选择“环境” > “常规”。
 
 1. 在“颜色主题”列表中，选择默认的“蓝色”主题，或选择“深色”或“浅色”。
 
@@ -47,7 +42,7 @@ ms.lasthandoff: 03/15/2018
 
 ## <a name="use-windows-high-contrast-colors"></a>使用 Windows 高对比度颜色
 
-选择左 Alt + 左 Shift + PrtScn 键。
+选择左 Alt+左 Shift+PrtScn 键。
 
 > [!WARNING]
 > 此选项为当前计算机上的所有应用程序和 UI 设置了高对比度。
@@ -58,14 +53,14 @@ ms.lasthandoff: 03/15/2018
 
 ### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>更改 IDE 中所有文本的字体和大小
 
-1. 在菜单栏上，依次选择“工具” 、“选项” 。
+1. 在菜单栏上，依次选择“工具” > “选项”。
 
-1. 在选项列表中，选择“环境”、“字体和颜色”。
+1. 在选项列表中，选择“环境” > “字体和颜色”。
 
 1. 在“显示以下对象的设置”列表中，选择“环境字体”。
 
     > [!TIP]
-    > 如果仅更改工具窗口的字体，则在“显示以下对象的设置”列表中，选择“[所有文本工具窗口]”。
+    > 如果仅更改工具窗口的字体，则在“显示以下对象的设置”列表中，选择“所有文本工具窗口”。
 
 1. 在“字体”列表中，选择字体。
 
@@ -73,5 +68,5 @@ ms.lasthandoff: 03/15/2018
 
 ## <a name="see-also"></a>请参阅
 
-[Visual Studio 的辅助功能](../ide/reference/accessibility-features-of-visual-studio.md)
-[如何：更改编辑器中的字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Visual Studio 的辅助功能](../ide/reference/accessibility-features-of-visual-studio.md)
+- [如何：更改编辑器中的字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

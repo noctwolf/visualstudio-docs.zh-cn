@@ -1,23 +1,21 @@
 ---
-title: "在 Visual Studio 中自定义项目模板和项模板 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中自定义项目模板和项模板 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
 - Visual Studio templates, customizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cd0a1f9fd9bf9885fa52e86ea443eaa3164d321e
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 04ab5e9648f95946208b71e3b3739630f594cb0b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-project-and-item-templates"></a>自定义项目和项模板
 
@@ -37,10 +35,10 @@ ms.lasthandoff: 01/05/2018
 
    有关详细信息，请参阅[如何：使用向导来处理项目模板（扩展性）](../extensibility/how-to-use-wizards-with-project-templates.md)。
 
-## <a name="related-sections"></a>相关章节
+### <a name="see-also"></a>请参阅
 
 [创建项目和项模板](../ide/creating-project-and-item-templates.md)  
-[如何：模板故障排除](../ide/how-to-troubleshoot-templates.md)  
+[如何：对模板进行故障排除](../ide/how-to-troubleshoot-templates.md)  
 [如何：创建项目模板](../ide/how-to-create-project-templates.md)  
 [如何：创建项模板](../ide/how-to-create-item-templates.md)  
 [如何：创建初学者工具包](../ide/how-to-create-starter-kits.md)  

@@ -1,13 +1,8 @@
 ---
-title: 管理项目中的引用 | Microsoft Docs
-ms.custom: ''
-ms.date: 10/26/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+title: 管理项目中的引用
+ms.date: 04/11/2018
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
 - cs.ProjectPropertiesReferencePaths
@@ -24,24 +19,24 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: ef62d3ab0436ff8b20766f2ffe88506d73c8f03b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="managing-references-in-a-project"></a>管理项目中的引用
+# <a name="manage-references-in-a-project"></a>管理项目中的引用
 
 在对外部组件或连接的服务编写代码之前，你的项目必须首先包含对它的引用。 引用实质上是项目文件中包含 Visual Studio 定位组件或服务所需信息的条目。
 
-若要添加引用，请右键单击“解决方案资源管理器”中的“引用”节点，然后选择 **“添加引用”**。 有关详细信息，请参阅[如何：使用引用管理器添加或删除引用](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。
+若要添加引用，请右键单击“解决方案资源管理器”中的“引用”或“依赖项”节点，然后选择“添加引用”。 还可以右键单击项目节点，然后选择“添加” > “引用”。 有关更多信息，请参阅[如何：添加或删除引用](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。
 
-![在 Visual C++ 中添加引用](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
+![在 Visual C&#43;&#43; 中添加引用](../ide/media/vs2015_cpp_add_reference.png)
 
-可对以下类型的组件和服务设置引用：
+可对以下类型的组件和服务添加引用：
 
 - .NET framework 类库或程序集
 
@@ -81,11 +76,11 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以�
 
 1. 重启 Visual Studio 并打开你的应用。
 
-1. 右键单击项目中导致错误的“引用”节点，然后选择“添加引用”。
+1. 右键单击项目中导致错误的“引用”或“依赖项”节点，然后选择“添加引用”。
 
 1. 依次单击“Windows”选项卡、“扩展”子选项卡，然后取消勾选旧扩展 SDK 的复选框，并勾选新扩展 SDK 的复选框。 单击 **“确定”**。
 
-## <a name="adding-a-reference-at-design-time"></a>在设计时添加引用
+## <a name="add-a-reference-at-design-time"></a>在设计时添加引用
 
 对项目中的程序集进行引用时，Visual Studio 在以下位置搜索程序集：
 
@@ -94,7 +89,9 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以�
 - 同一解决方案中的其他项目目录。 （可以在 **“项目”** 选项卡上找到这些程序集。）
 
 > [!NOTE]
-> 所有项目都包含对 mscorlib 的隐式引用。 Visual Basic 项目包含对 `Microsoft.VisualBasic`的隐式引用。 所有项目都包含对 `System.Core` 的隐式引用，即使从引用列表中移除了 `System.Core` 也是如此。
+> - 所有项目都包含对 mscorlib 的隐式引用。
+> - 所有项目都包含对 `System.Core` 的隐式引用，即使从引用列表中移除了 `System.Core` 也是如此。
+> - Visual Basic 项目包含对 `Microsoft.VisualBasic`的隐式引用。
 
 ## <a name="references-to-shared-components-at-run-time"></a>在运行时对共享组件的引用
 
@@ -104,9 +101,9 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以�
 
 默认情况下，如果程序集或组件位于全局程序集缓存中或者是框架组件，则 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 属性设置为 **False** 。 否则，值设置为 **True**。 项目到项目的引用始终设置为 **True**。
 
-## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>引用面向不同版本的 .NET Framework 的项目或程序集
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>引用面向不同版本的 .NET Framework 的项目或程序集
 
-您可以创建一些应用程序，这些应用程序引用的项目或程序集面向 .NET Framework 的不同版本。 例如，可以创建一个面向 [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] 的应用程序，该配置文件引用面向 [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)] 的程序集。 如果创建的项目面向 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的早期版本，则无法在该项目中设置对面向更新版本的项目或程序集的引用。
+您可以创建一些应用程序，这些应用程序引用的项目或程序集面向 .NET Framework 的不同版本。 例如，可以创建一个面向 .NET Framework 4.6 的应用程序，该应用程序引用面向 .NET Framework 4.5 的程序集。 如果创建的项目面向早期版本的 .NET Framework，则无法在该项目中设置面向更新版本的项目或程序集的引用。
 
 有关详细信息，请参阅[多定向概述](../ide/visual-studio-multi-targeting-overview.md)。
 
@@ -125,5 +122,5 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以�
 
 ## <a name="see-also"></a>请参阅
 
-[无效引用疑难解答](../ide/troubleshooting-broken-references.md)
-[如何：使用引用管理器添加或删除引用](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+- [有关无效引用的疑难解答](../ide/troubleshooting-broken-references.md)
+- [如何：添加或删除引用](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

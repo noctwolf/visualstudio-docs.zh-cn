@@ -1,15 +1,9 @@
 ---
-title: 快速入门 - 克隆 Python 代码存储库 | Microsoft Docs
+title: 快速入门 - 克隆 Python 代码存储库
 description: 在此快速入门教程中，将使用 Visual Studio 团队资源管理器进行 Python koans 存储库克隆，从而在 Visual Studio 中创建 Python 项目。
-ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9acad900f31d3579156cd266ebc10c244a1de39c
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: d66c3b5b62edc6963d92e27bcf6a94889741b27f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入门：在 Visual Studio 中克隆 Python 代码存储库
 
@@ -31,7 +25,7 @@ ms.lasthandoff: 03/30/2018
 
 2. 启动 Visual Studio。
 
-3. 选择“视图”>“团队资源管理器...”，打开“团队资源管理器”窗口，可在该窗口中连接到 GitHub 或 Visual Studio Team Services，或者克隆存储库。 （如果下方未显示“连接”页，请选择顶部工具栏的“插入”图标，跳转到该页面。）
+3. 选择“视图”>“团队资源管理器”，打开“团队资源管理器”窗口，可在该窗口中连接到 GitHub 或 Visual Studio Team Services，或者克隆存储库。 （如果下方未显示“连接”页，请选择顶部工具栏的“插入”图标，跳转到该页面。）
 
     ![显示 Visual Studio Team Services、GitHub 并克隆存储库的“团队资源管理器”窗口](media/team-explorer.png)
 
@@ -42,7 +36,7 @@ ms.lasthandoff: 03/30/2018
 
 5. 克隆完成后，“本地 Git 存储库”列表中会显示存储库名称。 双击该名称导航到“团队资源管理器”中的存储库仪表板。
 
-6. 在“解决方案”下方，选择“新建...”。
+6. 在“解决方案”下方，选择“新建”。
 
     ![“团队资源管理器”窗口，从克隆创建新项目](media/team-explorer-new-project.png)
 
@@ -52,7 +46,7 @@ ms.lasthandoff: 03/30/2018
 
 9. 在解决方案资源管理器中，展开 `python3` 节点，右键单击 `contemplate_koans.py`，然后选择“设置为启动文件”。 此步骤指示 Visual Studio 在运行项目时应使用哪个文件。
 
-10. 从菜单中依次选择“项目”和“Koans 属性...”，再选择“常规”选项卡并将“工作目录”设置为“python3”。 必须执行此步骤，因为 Visual Studio 将工作目录默认设置为项目根，而不是启动文件（`python3\contemplate_koans.py`，还可在项目属性中看到此文件）的位置。 程序代码会在工作文件夹中查找文件 `koans.txt`，因此不更改此值会导致运行时错误。
+10. 从菜单中依次选择“项目”>“Koans 属性”，再选择“常规”选项卡并将“工作目录”设置为“python3”。 必须执行此步骤，因为 Visual Studio 将工作目录默认设置为项目根，而不是启动文件（`python3\contemplate_koans.py`，还可在项目属性中看到此文件）的位置。 程序代码会在工作文件夹中查找文件 `koans.txt`，因此不更改此值会导致运行时错误。
 
     ![设置 Python 项目的工作目录](media/projects-set-working-directory.png)
 

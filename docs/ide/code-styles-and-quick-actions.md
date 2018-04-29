@@ -1,24 +1,22 @@
 ---
-title: "Visual Studio 代码样式首选项 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 代码样式首选项 | Microsoft Docs
+ms.custom: ''
 ms.date: 03/10/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
-ms.workload: multiple
-ms.openlocfilehash: 741df95afdd7c7e8b6f0ba2de75c1465cd35cc97
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 4898a2e4a55f5c11179ae5a00e46c87a44519a7b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-style-preferences"></a>代码样式首选项
 
@@ -30,7 +28,7 @@ ms.lasthandoff: 01/13/2018
 
 也可以通过 [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) 文件管理 .NET 的代码样式设置。 在这种情况下，EditorConfig 文件中的设置优先于“选项”对话框所选选项。 可使用 EditorConfig 文件为整个存储库或项目强制执行和配置代码样式。
 
-## <a name="see-also"></a>请参阅
+### <a name="see-also"></a>请参阅
 
 [快速操作](../ide/quick-actions.md)  
 [EditorConfig 的 .NET 编码约定设置](../ide/editorconfig-code-style-settings-reference.md)

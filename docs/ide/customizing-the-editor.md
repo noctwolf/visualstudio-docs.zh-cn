@@ -1,27 +1,24 @@
 ---
-title: "自定义 Visual Studio 编辑器 | Microsoft Docs"
-ms.custom: 
+title: 自定义 Visual Studio 编辑器 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editor, customizing
 - Code Editor, customizing
 - Text Editor, customizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 513780cde8a8a9c0db86b3720382b58a55f385af
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 1c31a9584fc2964704908b6da09b053046739b7e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-the-editor"></a>自定义编辑器
 
@@ -29,7 +26,7 @@ ms.lasthandoff: 01/23/2018
 
 有关文本编辑器选项的详细信息，请参阅[“选项”对话框 ->“文本编辑器”](../ide/reference/text-editor-options-dialog-box.md)。
 
-## <a name="see-also"></a>请参阅
+### <a name="see-also"></a>请参阅
 
 [快速入门：个性化设置 Visual Studio IDE 和编辑器](../ide/quickstart-personalize-the-ide.md)  
 [编写代码](../ide/writing-code-in-the-code-and-text-editor.md)  

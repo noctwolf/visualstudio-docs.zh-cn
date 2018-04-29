@@ -1,12 +1,9 @@
 ---
-title: "在文件中查找 | Microsoft Docs"
-ms.custom: 
+title: 在文件中查找 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
@@ -21,13 +18,14 @@ helpviewer_keywords:
 - Find in Files tab, Find and Replace window
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e87022cb3159e48a92e35ee07987bef6ce68f9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e7e181883fff125349949f081826157f2a3aa36f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-in-files"></a>在文件中查找
 
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="to-display-find-in-files"></a>显示“在文件中查找”
 
-1. 在菜单栏中，依次选择“编辑”和“查找和替换”。
+1. 在菜单栏中，依次选择“编辑” > “查找和替换”。
 
 1. 选择“在文件中查找”。
 
@@ -71,16 +69,20 @@ ms.lasthandoff: 12/22/2017
 
 可以展开或折叠“查找选项”部分。 可以选择或清除以下选项：
 
-区分大小写  
+**区分大小写**  
+
 如果选择此选项，“查找结果”搜索将区分大小写
 
-全字匹配  
+**全字匹配**  
+
 如果选择此选项，“查找结果”窗口将仅返回全字匹配项。
 
-使用正则表达式  
+**使用正则表达式**  
+
 如果选中此复选框，则可以使用特殊表示法在“查找内容”或“替换为”文本框中定义要匹配的文本模式。 有关这些表示法的列表，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
 
-查找以下文件类型  
+**查找以下文件类型**  
+
 此列表指示要在“查找范围”目录中搜索的文件类型。 如果此字段为空白，则将搜索“查找范围”目录中的所有文件。
 
 选择列表中的任意项以输入预配置的搜索字符串，该字符串将查找那些特定类型的文件。
@@ -89,16 +91,20 @@ ms.lasthandoff: 12/22/2017
 
 可以展开或折叠“结果选项”部分。 可以选择或清除以下选项：
 
-“查找结果 1”窗口  
+**“查找结果 1”窗口**  
+
 如果选择此选项，当前的搜索结果将替换“查找结果 1”窗口中的内容。 此窗口将自动打开以显示搜索结果。 若要手动打开此窗口，请从“视图”菜单中选择“其他窗口”，然后选择“查找结果 1”。
 
-“查找结果 2”窗口  
+**“查找结果 2”窗口**
+
 如果选择此选项，当前的搜索结果将替换“查找结果 2”窗口中的内容。 此窗口将自动打开以显示搜索结果。 若要手动打开此窗口，请从“视图”菜单中选择“其他窗口”，然后选择“查找结果 2”。
 
-只显示文件名  
+**只显示文件名**
+
 显示包含搜索匹配项的文件列表，而不显示搜索匹配项本身。
 
-附加结果  
+**附加结果**
+
 从搜索的结果追加到以前的搜素结果。
 
 ## <a name="see-also"></a>请参阅

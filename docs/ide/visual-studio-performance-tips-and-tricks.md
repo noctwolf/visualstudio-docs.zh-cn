@@ -1,33 +1,26 @@
 ---
-title: "Visual Studio 性能提示和技巧 | Microsoft Docs"
+title: Visual Studio 性能提示和技巧 | Microsoft Docs
 ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- debugger
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9182abea676958891afb789217a056f16ff1c11e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
 Visual Studio 性能建议适用于内存不足的情况，这种情况极少出现。 出现这种情况时，可优化某些未使用的 Visual Studio 功能。 以下提示不作为一般性建议。
 
 > [!NOTE]
-> 如果因为内存问题而在使用产品时遇到困难，请通过反馈工具告知我们。
+> 如果因为内存问题而在使用产品时遇到困难，请通过[反馈工具](../ide/how-to-report-a-problem-with-visual-studio-2017.md)告知我们。
 
 ## <a name="optimize-your-environment"></a>优化环境
 
@@ -86,7 +79,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
 ### <a name="managed-language-services-roslyn"></a>托管的语言服务 (Roslyn)
 
-有关 .NET 编辑器平台（“Roslyn”）行性能注意事项的详细信息，请参阅[针对大型解决方案的性能注意事项] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)。
+有关 .NET Compiler Platform（“Roslyn”）性能注意事项的详细信息，请参阅 [Performance considerations for large solutions](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)（大型解决方案的性能注意事项）。
 
 - **禁用完整解决方案分析**
 
@@ -108,7 +101,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
     扩展是添加到 Visual Studio 的附加软件组件，用于提供新功能或扩展现有功能。 扩展通常可能导致内存资源问题。 如果遇到内存资源问题，请尝试一次禁用一个扩展，并查看这将如何影响方案或工作流。
 
-    要禁用扩展，请转到“工具”|“扩展和更新”，然后禁用特定扩展。
+    要禁用扩展，请转到“工具” > “扩展和更新”，然后禁用特定扩展。
 
 - **禁用 XAML 设计器**
 
@@ -128,8 +121,9 @@ CLR 使用垃圾回收内存管理系统。 在此系统中，内存有时会被
 
 如果强制垃圾回收确实可让方案正常工作，请通过 Visual Studio 反馈工具提交报告，因为这一行为可能是一个 Bug。
 
-有关 CLR 垃圾回收器的详细描述，请参阅 [Fundamental of Garbage Collection](/dotnet/standard/garbage-collection/fundamentals)（垃圾回收的基本原理）。
+有关 CLR 垃圾回收器的详细描述，请参阅[垃圾回收的基本原理](/dotnet/standard/garbage-collection/fundamentals)。
 
 ## <a name="see-also"></a>请参阅
 
-[Visual Studio IDE](../ide/visual-studio-ide.md)
+- [优化 Visual Studio 性能](../ide/optimize-visual-studio-performance.md)
+- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)（Visual Studio 博客 - 使用 Visual Studio 2017 版本 15.6 更快地加载解决方案）

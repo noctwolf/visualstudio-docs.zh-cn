@@ -1,8 +1,8 @@
 ---
-title: "在 Visual Studio 中使用 tasks.vs.json 和 launch.vs.json 自定义生成和调试任务 | Microsoft Docs"
+title: 在 Visual Studio 中使用 tasks.vs.json 和 launch.vs.json 自定义生成和调试任务 | Microsoft Docs
 ms.date: 02/21/2018
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
 - makefiles [Visual Studio]
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d40bd35d893afeb8e76e18d46185b3d63add1c5
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: bc193c8c54c09a7d2950cd80994d62512d9232d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>自定义“打开文件夹”开发的生成和调试任务
 
@@ -38,7 +38,7 @@ Visual Studio 清楚如何运行多种语言和代码库，但它并不清楚如
 这些 .json 文件位于代码库根文件夹中一个名为 .vs 的隐藏文件夹中。 当你在“解决方案资源管理器”中的文件或文件夹上选择“配置任务”或“调试和启动设置”时，Visual Studio 会根据需要创建 tasks.vs.json 和 launch.vs.json 文件。 这些 json 文件通常处于隐藏状态，因为一般情况下用户不希望在源控件中打开这些文件。 但是如果要在源控件中打开这些文件，请将其拖入代码库的根目录，将在此处显示这些文件。
 
 > [!TIP]
-> 若要在 Visual Studio 中查看隐藏文件夹，请在解决方案资源管理器工具栏上选择“显示所有文件”按钮。
+> 若要在 Visual Studio 中查看隐藏文件夹，请在“解决方案资源管理器”工具栏上选择“显示所有文件”按钮。
 
 ## <a name="define-tasks-with-tasksvsjson"></a>使用 tasks.vs.json 定义任务
 
@@ -117,7 +117,7 @@ bin:
 }
 ```
 
-在 tasks.vs.json 中定义生成任务后，将其他上下文菜单项添加到“解决方案资源管理器”的相应文件中。 对于此示例，将添加“生成”、“重新生成”和“清除”选项至任何生成文件文件的上下文菜单中。
+在 tasks.vs.json 中定义生成任务后，将其他上下文菜单项添加到“解决方案资源管理器”的相应文件中。 此示例中会将“生成”、“重新生成”和“清除”选项添加至任何生成文件文件的上下文菜单中。
 
 ![带“生成”、“重新生成”和“清除”命令的生成文件上下文菜单](media/customize-build-rebuild-clean.png)
 
@@ -205,9 +205,9 @@ bin:
 |-|-|
 |`"*"`| 任务适用于工作区中的所有文件和文件夹|
 |`"*/"`| 任务适用于工作区中的所有文件夹|
-|`"*.js"`| 任务适用于工作区中带 extension .js 的所有文件|
-|`"/*.js"`| 任务适用于工作区根目录中带 extension .js 的所有文件|
-|`"src/*/"`| 任务适用于“src”文件夹的所有子文件夹|
+|`"*.js"`| 任务适用于工作区中带 .js 扩展名的所有文件|
+|`"/*.js"`| 任务适用于工作区根目录中带 .js 扩展名的所有文件|
+|`"src/*/"`| 任务适用于 src 文件夹的所有子文件夹|
 |`"makefile"`| 任务适用于工作区中的所有生成文件文件|
 |`"/makefile"`| 任务仅适用于工作区根目录中的生成文件|
 
@@ -216,12 +216,12 @@ bin:
 |||
 |-|-|
 |`${env.<VARIABLE>}`| 指定为开发人员命令提示符设置的任何环境变量（例如，${env.PATH}、${env.COMSPEC} 等）。 有关详细信息，请参阅 [Visual Studio 开发人员命令提示符](/dotnet/framework/tools/developer-command-prompt-for-vs)。|
-|`${workspaceRoot}`| 工作区文件夹的完整路径（例如，“C:\sources\hello”）|
-|`${file}`| 为再次运行该任务而选择的文件或文件夹的完整路径（例如，“C:\sources\hello\src\hello.js”）|
-|`${relativeFile}`| 文件或文件夹的相对路径（例如，“src\hello.js”）|
-|`${fileBasename}`| 没有路径或扩展名的文件的名称（例如，“hello”）|
-|`${fileDirname}`| 文件的完整路径，不包括文件名（例如，“C:\sources\hello\src”）|
-|`${fileExtname}`| 所选文件的扩展名（例如，“.js”）|
+|`${workspaceRoot}`| 工作区文件夹的完整路径（例如，C:\sources\hello）|
+|`${file}`| 为再次运行该任务而选择的文件或文件夹的完整路径（例如，C:\sources\hello\src\hello.js）|
+|`${relativeFile}`| 文件或文件夹的相对路径（例如，src\hello.js）|
+|`${fileBasename}`| 没有路径或扩展名的文件的名称（例如，hello）|
+|`${fileDirname}`| 文件的完整路径，不包括文件名（例如，C:\sources\hello\src）|
+|`${fileExtname}`| 所选文件的扩展名（例如，.js）|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>使用 launch.vs.json 配置调试
 

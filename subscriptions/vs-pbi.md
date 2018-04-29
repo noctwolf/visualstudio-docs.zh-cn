@@ -1,54 +1,27 @@
 ---
-title: "Visual Studio 订阅中的 Power BI Pro 权益 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Power BI Pro subscription included with selected Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: d7470903db579dff7a4bc0fd17a26e6b5494d675
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio 订阅中的 Power BI Pro 权益 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: 了解有关所选 Visual Studio 订阅中随附的 Power BI Pro 订阅。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 4f50af635744e9633e09765dd2c1b08876e0b598
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Power BI Pro
 
-## <a name="overview"></a>概述
 将数据转换为丰富的视觉对象，便于你进行收集和组织。 
-
-## <a name="eligibility"></a>资格
-| 订阅级别/计划                                                  | 好处               | 是否续订？                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | Included              |  是                                                               |
-| Visual Studio Enterprise 年度                                               | Included              |  是                                                               |
-| Visual Studio Enterprise 月度                                              | 不可用         |                                                                    |
-| Visual Studio Professional Standard                                           | 不可用         |                                                                    |
-| Visual Studio Professional 年度                                             | 不可用         |                                                                    | 
-| Visual Studio Professional 月度                                            | 不可用         |                                                                    |
-| Visual Studio Test Pro                                                        | 不可用         |                                                                    |
-| MSDN 平台                                                                | Included              |  是                                                               |
-| Visual Studio Dev Essentials                                                  | 不可用         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Included              |  是                                                               |
-| Visual Studio Enterprise - FTE                                                | 不可用         |                                                                    |
-| Visual Studio Enterprise - Microsoft 合作伙伴网络                          | 不可用         |                                                                    |
-| Visual Studio Professional - Microsoft 合作伙伴网络                        | 不可用         |                                                                    |
-| Visual Studio Enterprise – Imagine（标准）                                 | 不可用         |                                                                    |
-| Visual Studio Enterprise – Imagine（高级）                                  | 不可用         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Included              |  是                                                               |
-| Microsoft 认证培训师 - 软件和服务                             | Included              |  是                                                               |
-| Microsoft 认证培训师 - 软件和服务开发人员                   | Included              |  是                                                               |
-
-<sup>1</sup>  包括限制转售 (NFR)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)  
-
-无法确定正在使用哪些订阅？  请连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看分配给你电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
 
 ## <a name="activation-steps"></a>激活步骤
 若要使用 Power BI Pro，需要设置一个帐户或使用现有帐户登录。 
-1.  请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1.  登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2.  在“权益”页的“工具”部分找到“Power BI Pro”磁贴。 单击权益磁贴底部的“获取代码”链接。   你将收到一条通知消息，指示已成功检索到代码。  单击“激活”。 
 
@@ -82,9 +55,10 @@ ms.lasthandoff: 01/29/2018
     ![Power BI Pro 权益：联系人信息](_img\vs-pbi\vs-pbi-contact-cropped.png)
 
 
-8.  下一页确认 Power BI Pro 开发人员版 (MSDN) 订阅的价格为 $0.00。  单击“下一步”。
+8.  下一页确认 Power BI Pro 开发人员版 (MSDN) 订阅的价格为 $0.00。  单击 **“下一步”**。
 
-9.   最后，我们将收集一些付款信息。  别担心 – 不会收取任何费用。  注意，价格仍为 $0.00。  可选择信用卡、银行帐户或发票作为付款方式。  如果选择“发票”，可能需要提供为何选择这种付款方式的一些反馈。  请提供首选付款方式所需的信息，然后单击“下订单”。   
+9.  最后，我们将收集一些付款信息。  别担心 – 不会收取任何费用。  注意，价格仍为 $0.00。  可选择信用卡、银行帐户或发票作为付款方式。  如果选择“发票”，可能需要提供为何选择这种付款方式的一些反馈。  请提供首选付款方式所需的信息，然后单击“下订单”。  
+
     ![Power BI Pro 权益：联系人信息](_img\vs-pbi\vs-pbi-payment-blurred-cropped.png)
 
 10. 下一页确认你已准备好开始使用 Power BI Pro。  该页面将提供登录页的链接。  建议记录下登录页的链接和用户 ID。  （系统还会根据设置帐户时提供的地址向你发送一封欢迎电子邮件。）你还可以看到一个自动的 Office 365 助手窗口，如果存在任何问题，都可使用该窗口。  单击“立即开始”继续。
@@ -94,8 +68,20 @@ ms.lasthandoff: 01/29/2018
 
 11. 现在，你已设置好 Power BI Pro 帐户，随即将看到 Office 365 管理中心，在这里可以管理用户和域、安装 Office 软件并了解有关 Office 365 的信息。  就这么简单！  一切都已就绪。 
 
-## <a name="faq"></a>FAQ
-*单击此处了解更新*
+## <a name="eligibility"></a>资格
+| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 可用       |  是|
+| Visual Studio Professional（标准、年度云、月度云） | VL、Azure、零售                                       | 不可用                                                            |NA         |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                                            |NA         |
+| MSDN 平台（标准）                                          | VL、零售                                              | 可用       |  是|
+| Visual Studio Dev Essentials | NA  | 不可用 |NA|
+| Visual Studio Enterprise（月度云） | Azure                                       | 不可用                                  |NA|
+
+<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)。不包括：Microsoft 合作伙伴网络 (MPN)、FTE、Imagine。
+
+
+无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
 
 ## <a name="support-resources"></a>支持资源
 -  需要有关 Power BI Pro 的帮助？  

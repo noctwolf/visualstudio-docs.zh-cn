@@ -1,12 +1,9 @@
 ---
-title: "在 Visual Studio 中查看类型定义 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中查看类型定义 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code editor, view definition
 - go to definition
@@ -15,18 +12,18 @@ helpviewer_keywords:
 - member definition [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 61428294fc9c4afa32a50b4776f03ce1e98b83b9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-type-and-member-definitions"></a>查看类型和成员定义
 
-开发人员经常需要查看他们在代码中所使用的类型或类成员的源代码定义。 在 Visual Studio 中，“转到定义”和“查看定义”功能有助于轻松查看类型或成员的定义。 如果源代码不可用，则改为显示元数据。
+开发人员经常需要查看他们在代码中所使用的类型或类成员的源代码定义。 在 Visual Studio 中，“转到定义”和“速览定义”功能有助于轻松查看类型或成员的定义。 如果源代码不可用，则改为显示元数据。
 
 ## <a name="go-to-definition"></a>转到定义
 
@@ -34,17 +31,17 @@ ms.lasthandoff: 03/08/2018
 
 ### <a name="ctrl-click-go-to-definition"></a>Ctrl + 单击转到定义
 
-在 Visual Studio 2017 的 15.4 版本中，鼠标用户可以用更简单的方式快速访问转到定义。 按 Ctrl 并将鼠标悬停在类型或成员上，符号变为可单击。 要快速导航到某个符号的定义，按 Ctrl 键然后单击该符号。 就这么简单！
+在 Visual Studio 2017 版本 15.4 中，鼠标用户可以用更简单的方式快速访问“转到定义”。 按 Ctrl 并将鼠标悬停在类型或成员上，符号变为可单击。 要快速导航到某个符号的定义，按 Ctrl 键然后单击该符号。 就这么简单！
 
 ![鼠标单击转到定义动画](../ide/media/click_gotodef.gif)
 
-前往“工具”->“选项”->“文本编辑器”->“常规”，然后从“使用修改键”下拉框中选择“Alt”或“Ctrl+Alt”，可以更改鼠标单击转到定义的修改键 。 取消选中“启用鼠标单击以执行转到定义”复选框还可以禁用鼠标单击转到定义。
+前往“工具” > “选项” > “文本编辑器” > “常规”，然后从“使用修改键”下拉框中选择“Alt”或“Ctrl+Alt”，可以更改鼠标单击“转到定义”的修改键。 取消选中“启用鼠标单击以执行转到定义”复选框还可以禁用鼠标单击转到定义。
 
 ![启用鼠标单击转到定义](../ide/media/editor_options_mouse_click_gotodef.png)
 
 ## <a name="peek-definition"></a>查看定义
 
-“速览定义”功能有助于预览类型的定义，无需离开编辑器中的当前位置。 如果使用键盘，请将文本游标放置在类型或成员名称内的某个地方，然后按 Alt + F12。 如果使用鼠标，可以在上下文菜单中选择“预览定义”。 在 Visual Studio 2017 的 15.4 版本及更高版本中，使用鼠标快速查看定义可以采用新的方式。 首先，依次转到“工具”->“选项”->“文本编辑器”->“常规”。 选择“在速览视图中打开定义”选项然后单击“确定”关闭“选项”对话框。
+“速览定义”功能有助于预览类型的定义，无需离开编辑器中的当前位置。 如果使用键盘，请将文本游标放置在类型或成员名称内的某个地方，然后按 Alt + F12。 如果使用鼠标，可以在上下文菜单中选择“预览定义”。 在 Visual Studio 2017 的 15.4 版本及更高版本中，使用鼠标快速查看定义可以采用新的方式。 首先，转到“工具” > “选项” > “文本编辑器” > “常规”。 选择“在速览视图中打开定义”选项然后单击“确定”关闭“选项”对话框。
 
 ![设置鼠标单击速览定义选项](../ide/media/editor_options_peek_view.png)
 
@@ -54,7 +51,7 @@ ms.lasthandoff: 03/08/2018
 
 如果在弹出式窗口中查看另一个定义，则将启动痕迹路径，即使用弹出式窗口上方显示的圆形菜单和箭头进行导航。
 
-有关详细信息，请参阅[如何：使用查看定义 (Alt+F12) 查看和编辑代码](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
+有关详细信息，请参阅[如何：使用速览定义 (Alt+F12) 查看和编辑代码](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
 
 ## <a name="view-metadata-as-source-code-c"></a>查看作为源代码的元数据 (C#)
 
@@ -62,7 +59,7 @@ ms.lasthandoff: 03/08/2018
 
 对源代码不可用的项运行“转到定义” 或“查看定义”命令时，“代码编辑器”中将显示一个选项卡式文档，该文档包含该项的元数据（以源代码形式显示）的视图。 该文档的选项卡上将显示类型的名称，并且后跟“[from metadata]” 。
 
-例如，如果对 <xref:System.Console> 运行“转到定义”命令，则 <xref:System.Console> 的元数据将在“代码编辑器”中显示为 C# 源代码。 该代码与其声明类似，但现在会显示一个实现。
+例如，如果对 <xref:System.Console> 运行“转到定义”命令，则 <xref:System.Console> 的元数据将在“代码编辑器”中显示为 C# 源代码。 该代码与其声明类似，但不会显示一个实现。
 
 ![作为源代码的元数据](../ide/media/metadatasource.png "MetadataSource")
 
@@ -81,4 +78,5 @@ ms.lasthandoff: 03/08/2018
 ## <a name="see-also"></a>请参阅
 
 [导航代码](../ide/navigating-code.md)
-[如何：使用“查看定义”查看和编辑代码 (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+
+[如何：使用“速览定义”查看和编辑代码 (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

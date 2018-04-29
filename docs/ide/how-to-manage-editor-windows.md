@@ -1,28 +1,26 @@
 ---
-title: "如何：管理编辑器窗口 | Microsoft Docs"
-ms.custom: 
+title: 如何：管理编辑器窗口 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
 - windows, managing editor windows
 - editors, windows management
 - Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 877f1e556498a31ec7ddfac12b1907d159c713cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bd9d2d458c671fc590326989026aa776795243a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-manage-editor-windows"></a>如何：管理编辑器窗口
 可以一次处理多个位置的代码。 通过拆分编辑器窗口，或打开编辑器窗口的多个实例执行此操作。  
@@ -30,7 +28,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  并非所有编辑器窗口都支持多个实例。  
   
-## <a name="splitting-an-editor-window"></a>拆分编辑器窗口  
+## <a name="split-an-editor-window"></a>拆分编辑器窗口  
  编辑器窗口的实例可拆分为两个单独的视图，以便编辑。  
   
 #### <a name="to-split-a-pane"></a>拆分窗格  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
 -   在“窗口”菜单中，选择“移除拆分”。  
   
-## <a name="creating-new-windows"></a>创建新窗口  
+## <a name="create-new-windows"></a>新建窗口  
  也可以创建编辑器窗口的多个实例。 通过此功能，可在一个编辑器的多个实例中打开长文档，以便在单独的全尺寸编辑器窗口同时查看和编辑不同部分。  
   
 #### <a name="to-create-a-new-window"></a>创建新窗口  

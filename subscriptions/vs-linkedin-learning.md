@@ -1,57 +1,30 @@
 ---
-title: "Visual Studio 订阅中的 LinkedIn 学习权益 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the LinkedIn Learning benefit included as part of a LinkedIn Premium subscription included in selected Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8ef318cb7cdefefc079b230f0e44fdeb5f0c2d8f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio 订阅中的 LinkedIn 学习权益 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: 了解有关所选 Visual Studio 订阅中包含的作为 LinkedIn Premium 订阅一部分的 LinkedIn Learning 权益。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 71b6fca12acf1ee1ebd552622a41412f1d1ba269
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 LinkedIn 学习权益
+# <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 LinkedIn Learning 权益
 
-## <a name="overview"></a>概述
 解放 LinkedIn 的强大功能，从而可以访问促进职业发展所需的人员、见解和技能。  从行业专家处了解最受欢迎的业务、技术和创造性技能。
 
 所选的 Visual Studio 订阅包括 LinkedIn Premium 订阅，后者包括 LinkedIn 学习。  Premium 订阅的期限取决于你所拥有的 Visual Studio 订阅类型。
 需要拥有 LinkedIn 帐户，才能利用 LinkedIn 学习权益。  如果还没有帐户，则必须在激活 Premium 订阅之前创建一个。  
 
-## <a name="eligibility"></a>资格
-| 订阅级别/计划                                                  | 好处               | 是否续订？                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | 6 个月              |  否                                                                |
-| Visual Studio Enterprise 年度                                               | 6 个月              |  否                                                                |
-| Visual Studio Enterprise 月度                                              | 不可用         |                                                                    |
-| Visual Studio Professional Standard                                           | 3 个月              |  否                                                                |
-| Visual Studio Professional 年度                                             | 3 个月              |  否                                                                | 
-| Visual Studio Professional 月度                                            | 不可用         |                                                                    |
-| Visual Studio Test Pro                                                        | 3 个月              |  否                                                                |
-| MSDN 平台                                                                | 3 个月              |  否                                                                |
-| Visual Studio Dev Essentials                                                  | 3 个月              |  否                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | 6 个月              |  否                                                                |
-| Visual Studio Enterprise - FTE                                                | 不可用         |                                                                    |
-| Visual Studio Enterprise - Microsoft 合作伙伴网络                          | 不可用         |                                                                    |
-| Visual Studio Professional - Microsoft 合作伙伴网络                        | 不可用         |                                                                    |
-| Visual Studio Enterprise – Imagine（标准）                                 | 不可用         |                                                                    |
-| Visual Studio Enterprise – Imagine（高级）                                  | 不可用         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | 不可用         |                                                                    |
-| Microsoft 认证培训师 - 软件和服务                             | 不可用         |                                                                    |
-| Microsoft 认证培训师 - 软件和服务开发人员                   | 不可用         |                                                                    |
-
-<sup>1</sup>  包括限制转售 (NFR)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)  
-
-无法确定正在使用哪些订阅？  请连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看分配给你电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
-
 ## <a name="activation-steps"></a>激活步骤
 激活 LinkedIn Premium 订阅和 LinkedIn 学习权益：
-1. 请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在教育类别中找到 LinkedIn 学习磁贴，然后单击“获取代码”链接。
 
@@ -117,8 +90,25 @@ ms.lasthandoff: 01/29/2018
 
     ![LinkedIn 学习：学习主页](_img\vs-linkedin\vs-linkedin-learning-home.png)
 
-## <a name="faq"></a>FAQ
-*单击此处了解更新*
+## <a name="eligibility"></a>资格
+| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 6 个月       |  不是。  仅对新订阅者可用          |
+| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 3 个月                                                            |不是。  仅对新订阅者可用         |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 3 个月                                             |  不是。  仅对新订阅者可用         |
+| MSDN 平台（标准）                                          | VL、零售                                              | 3 个月                                              | 不是。  仅对新订阅者可用         |
+| Visual Studio Dev Essentials | NA  | 3 个月 |不是。  仅对新订阅者可用 |
+| Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
+
+<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)。不包括：Microsoft 合作伙伴网络（MPN）、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务。
+
+
+
+无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
+
+## <a name="frequently-asked-questions"></a>常见问题
+### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>问：如果续订我的订阅，LinkedIn Learning 权益也会续订吗？
+答：不，LinkedIn Learning 优惠仅对新订阅者可用。 
 
 ## <a name="support-resources"></a>支持资源
 -  需要与 LinkedIn 学习有关的帮助？  请参阅下列资源：

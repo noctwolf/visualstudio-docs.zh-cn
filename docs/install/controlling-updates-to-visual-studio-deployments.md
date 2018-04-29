@@ -1,43 +1,41 @@
 ---
-title: 控制对 Visual Studio 部署的更新 | Microsoft Docs
-description: '{{PLACEHOLDER}}'
+title: 控制 Visual Studio 部署的更新
+description: 了解从网络安装时，如何更改 Visual Studio 查找更新的位置。
 ms.date: 08/14/2017
-ms.reviewer: tims
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53e2058d78e0dbbe6c74e65267e777d42d85adb7
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 225d65c33ac3616bdc207cfd71afa0441d58c80c
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制对基于网络的 Visual Studio 部署的更新
 
 企业管理员通常会创建布局，并将其托管在网络文件共享上，以供部署给最终用户。
 
 ## <a name="controlling-where-visual-studio-looks-for-updates"></a>控制 Visual Studio 在何处查找更新
+
 默认情况下，即使安装从网络共享进行部署，Visual Studio 也仍会继续联机查找更新。 用户可以安装可用的更新。 无法在脱机布局中找到的更新内容都将从 Web 下载。
 
 要直接控制 Visual Studio 查找更新的位置，可对其查找的位置进行修改。 还可对控制用户更新到的版本。 为此，请执行以下步骤：
 
  1. 创建脱机布局：
-    ```
+    ```cmd
     vs_enterprise.exe --layout C:\vs2017offline --lang en-US
     ```
  2. 将脱机布局复制到托管文件共享上：
-    ```
+    ```cmd
     xcopy /e C:\vs2017offline \\server\share\VS2017
     ```
  3. 修改布局中的 response.json 文件，将 `channelUri` 值更改为指向管理员控制的 channelManifest.json 的副本。
@@ -56,7 +54,7 @@ ms.lasthandoff: 04/03/2018
 如果确定用户应更新到更高版本的 Visual Studio，企业管理员可以[更新布局位置](update-a-network-installation-of-visual-studio.md)，以纳入更新后的文件，如下所示。
 
  1. 使用类似于以下的命令：
-    ```
+    ```cmd
     vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
     ```
  2. 确保在更新后的布局中 response.json 文件仍包含自定义设置，特别是 channelUri 修改，如下所示：
@@ -68,6 +66,7 @@ ms.lasthandoff: 04/03/2018
  安装 Visual Studio 的新用户将直接通过此布局自动安装更新后的 Visual Studio 版本。
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>在 Visual Studio IDE 中控制通知
+
 如上所述，Visual Studio 检查其安装位置（例如，网络共享或 Internet），以确定是否有任何更新。 若有更新，Visual Studio 会在窗口右上角显示通知标志来通知用户。
 
  ![更新的通知标志](media/notification-flag.png)
@@ -79,21 +78,25 @@ ms.lasthandoff: 04/03/2018
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
+
 （请确保替换目录，以匹配要编辑的已安装实例。）
 
 > [!TIP]
 > 使用 [vswhere.exe](tools-for-managing-visual-studio-instances.md#detecting-existing-visual-studio-instances) 可以在客户端工作站上查找 Visual Studio 的特定实例。
 
 ## <a name="get-support"></a>获取支持
+
 有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
 
 下面是另外几个支持选项：
+
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
-* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
+* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题并找到答案。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。 （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
+
 * [安装 Visual Studio](install-visual-studio.md)
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

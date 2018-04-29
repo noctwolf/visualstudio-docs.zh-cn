@@ -1,28 +1,26 @@
 ---
-title: "如何：保存和打开带有编码的文件 | Microsoft Docs"
-ms.custom: 
+title: 如何：保存和打开带有编码的文件 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Unicode, bi-directional language support
 - files, encoding
 - bi-directional language support, encoded files
 - file encoding, bi-directional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
-caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 25ec36e6b124f47c4bb13be8f7affd9b7ee54553
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 117f82cca454a4d82e6789c17486e808912387be
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>如何：保存和打开带有编码的文件
 可以使用特定字符编码保存文件，以支持双向语言。 还可以在打开文件时指定编码，以便 Visual Studio 正确显示文件。  
@@ -62,4 +60,4 @@ ms.lasthandoff: 12/22/2017
 ## <a name="see-also"></a>请参阅
 [编码和换行符](encodings-and-line-breaks.md)  
 [编码和 Windows 窗体全球化](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
-[对应用程序进行全球化和本地化](../ide/globalizing-and-localizing-applications.md)
+[全球化和本地化应用程序](../ide/globalizing-and-localizing-applications.md)

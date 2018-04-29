@@ -1,12 +1,9 @@
 ---
-title: "在 Visual Studio 中创建解决方案和项目 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中创建解决方案和项目 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-solutions-and-projects"></a>创建解决方案和项目
 
@@ -32,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 ![解决方案/项目层次结构](./media/vside-proj-soln.png)
 
-可在名为“解决方案资源管理器”的工具窗口中查看解决方案和项目。 以下屏幕截图显示解决方案资源管理器中的一个示例解决方案 (BikeSharing.Xamarin-UWP)，该解决方案 包含两个项目：BikeSharing.Clients.Core 和 BikeSharing.Clients.Windows。 每个项目均包含多个文件、文件夹和引用。 粗体形式的项目名称是*启动项目*；即，运行应用时启动的项目。 可以指定将哪个项目作为启动项目。
+可在名为“解决方案资源管理器”的工具窗口中查看解决方案和项目。 以下屏幕截图显示“解决方案资源管理器”中的一个示例解决方案 (BikeSharing.Xamarin-UWP)，该解决方案 包含两个项目：BikeSharing.Clients.Core 和 BikeSharing.Clients.Windows。 每个项目均包含多个文件、文件夹和引用。 粗体形式的项目名称是*启动项目*；即，运行应用时启动的项目。 可以指定将哪个项目作为启动项目。
 
 ![包含项目的解决方案资源管理器](./media/vside-solution-explorer-projects.png)
 
@@ -68,7 +65,7 @@ ms.lasthandoff: 03/08/2018
 
 1. 选择“确定”按钮，创建解决方案和项目。
 
-1. 如果要向解决方案添加附加项目，请在解决方案资源管理器中选择解决方案节点，然后在菜单栏上选择“项目” > “添加新项”。
+1. 如果要向解决方案添加附加项目，请在“解决方案资源管理器”中选择解决方案节点，然后在菜单栏上选择“项目” > “添加新项”。
 
 ## <a name="create-a-project-from-existing-code-files"></a>从现有代码文件创建项目
 

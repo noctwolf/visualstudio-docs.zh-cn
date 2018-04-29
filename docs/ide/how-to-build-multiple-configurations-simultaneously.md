@@ -1,23 +1,21 @@
 ---
-title: "如何：同时生成多个配置 | Microsoft Docs"
-ms.custom: 
+title: 如何：同时生成多个配置 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: ba830937-3317-4674-8cc2-c0cd565603c5
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 86c0a9fbbfe7e4b0b38b0286cf10f06dd7eec89c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 552ca372b567ee568ac7f70a520e6e11a104afec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>如何：同时生成多个配置
 使用“批生成”对话框，可以同时使用大多数类型的项目的多个甚至所有生成配置来生成这些项目。 但是，不能同时在多个生成配置中生成以下类型的项目：  
@@ -30,12 +28,12 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>在多个生成配置中生成项目  
   
-1.  在菜单栏上，依次选择“生成”、“批生成”。  
+1.  在菜单栏上，依次选择“生成” > “批生成”。  
   
 2.  在“生成”列中，选择要在其中生成项目的配置的复选框。  
   
     > [!TIP]
-    >  若要编辑或创建解决方案的生成配置，请在菜单栏上选择“生成”、“配置管理器”，以打开“配置管理器”对话框。 在对解决方案的生成配置进行编辑后，请选择“批生成”对话框中的“重新生成”按钮，以更新解决方案中项目的所有生成配置。  
+    >  若要编辑或创建解决方案的生成配置，请在菜单栏上选择“生成” > “Configuration Manager”，以打开“Configuration Manager”对话框。 在对解决方案的生成配置进行编辑后，请选择“批生成”对话框中的“重新生成”按钮，以更新解决方案中项目的所有生成配置。  
   
 3.  选择“生成”或“重新生成”按钮以使用指定配置生成项目。  
   

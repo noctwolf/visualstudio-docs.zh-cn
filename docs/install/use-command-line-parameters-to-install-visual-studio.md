@@ -1,12 +1,10 @@
 ---
-title: 使用命令行参数安装 Visual Studio | Microsoft Docs
+title: 使用命令行参数安装 Visual Studio
+description: 了解如何使用命令行参数来控制或自定义 Visual Studio 安装。
 ms.custom: ''
 ms.date: 01/17/2018
-ms.reviewer: tims
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -18,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令行参数安装 Visual Studio 2017
+
 通过命令提示符安装 Visual Studio 2017 时，可以使用各种命令行参数来控制或自定义安装。 通过命令行，可以执行下列操作：
 
 - 启动预先选定了特定选项的安装。
@@ -37,7 +36,8 @@ ms.lasthandoff: 04/03/2018
 * [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
 * [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
 
-## <a name="list-of-command-line-parameters"></a>命令行参数列表  
+## <a name="list-of-command-line-parameters"></a>命令行参数列表
+
  Visual Studio 命令行参数不区分大小写。
 
 > 语法：`vs_enterprise.exe [command] <options>...`
@@ -103,9 +103,11 @@ ms.lasthandoff: 04/03/2018
 | `--noWeb` | **15.3 中新增的可选选项**：安装程序现在从 Internet 下载要安装的所有内容。  离线布局中必须有要安装的所有内容。  如果布局中缺少内容，安装将失败。  有关详细信息，请参阅[从网络安装点进行部署](create-a-network-installation-of-visual-studio.md)。 |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>工作负荷 ID 和组件 ID 列表
+
 有关按 Visual Studio 产品排序的工作负载和组件 ID 的列表，请参阅 [Visual Studio 2017 工作负载和组件 ID](workload-and-component-ids.md) 页面。
 
 ## <a name="list-of-language-locales"></a>语言区域设置列表
+
 | **语言-区域设置** | **语言** |
 | ----------------------- | --------------- |
 | cs-CZ | 捷克语 |
@@ -124,6 +126,7 @@ ms.lasthandoff: 04/03/2018
 | zh-TW | 中文 - 繁体 |
 
 ## <a name="error-codes"></a>错误代码
+
 `%ERRORLEVEL%` 环境变量设为下列值之一，具体视操作结果而定：
 
 | **值** | **结果** |
@@ -138,16 +141,18 @@ ms.lasthandoff: 04/03/2018
 每个操作都会在指明安装进度的 `%TEMP%` 目录中生成多个日志文件。 按日期对文件夹进行排序，再查找以“`dd_bootstrapper`”、“`dd_client`”和“`dd_setup`”开头的文件，分别查找安装引导程序、安装程序应用和安装程序引擎。
 
 ## <a name="get-support"></a>获取支持
+
 有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
 
 下面是另外几个支持选项：
+
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
-* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
+* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题并找到答案。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。 （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
 
- * [Visual Studio 2017 安装的命令行参数示例](command-line-parameter-examples.md)
- * [创建 Visual Studio 2017 的脱机安装](create-an-offline-installation-of-visual-studio.md)
- * [通过响应文件自动执行 Visual Studio 安装](automated-installation-with-response-file.md)
+* [Visual Studio 2017 安装的命令行参数示例](command-line-parameter-examples.md)
+* [创建 Visual Studio 2017 的脱机安装](create-an-offline-installation-of-visual-studio.md)
+* [通过响应文件自动执行 Visual Studio 安装](automated-installation-with-response-file.md)

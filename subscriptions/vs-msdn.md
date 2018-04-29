@@ -1,52 +1,27 @@
 ---
-title: "Visual Studio 订阅中的 MSDN 杂志权益 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/13/2018
-Ms.topic: Get-Started-Article
-Description: Sign up to receive the MSDN Magazine subscription included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: a54f23a6f9264a626660ee23eac7dc95c94acf9e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio 订阅中的 MSDN 杂志权益 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/13/2018
+ms.topic: Get-Started-Article
+description: 注册后，可以接收包含在 Visual Studio 订阅中的 MSDN 杂志订阅。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 590cd180c8bdf5e2fcef4d16c84350bdc1d00273
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 MSDN 杂志权益
 
-## <a name="overview"></a>概述 
 提供全面的 Microsoft 技术，可获取实际问题的实用解决方案。  根据订阅的不同，可以获得印刷版杂志或提前使用数字版本。  
 
-## <a name="eligibility"></a>资格
-| 订阅级别/计划                                                  | 好处               | 是否续订？                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | 印刷版       |  否                                                                  |
-| Visual Studio Enterprise 年度                                               | 印刷版       |  否                                                                  |
-| Visual Studio Enterprise 月度                                              | 不可用         |                                                                    |
-| Visual Studio Professional Standard                                           | 印刷版       |  否                                                                  |
-| Visual Studio Professional 年度                                             | 印刷版       |  否                                                                  | 
-| Visual Studio Professional 月度                                            | 不可用         |                                                                    |
-| Visual Studio Test Pro                                                        | 印刷版       |  否                                                                  |
-| MSDN 平台                                                                | 印刷版       |  否                                                                  |
-| Visual Studio Dev Essentials                                                  | 数字版       |  是                                                               |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | 印刷版       |  否                                                                  |
-| Visual Studio Enterprise - FTE                                                | 印刷版       |  否                                                                  |
-| Visual Studio Enterprise - Microsoft 合作伙伴网络                          | 印刷版       |  否                                                                  |
-| Visual Studio Professional - Microsoft 合作伙伴网络                        | 数字版       |  是                                                               |
-| Visual Studio Enterprise – Imagine（标准）                                 | 不可用         |                                                                    |
-| Visual Studio Enterprise – Imagine（高级）                                  | 印刷版       |  否                                                                  |
-| Visual Studio Enterprise – BizSpark                                           | 不可用         |                                                                    |
-| Microsoft 认证培训师 - 软件和服务                             | 数字版       |  是                                                               |
-| Microsoft 认证培训师 - 软件和服务开发人员                   | 不可用         |                                                                    |
-
-<sup>1</sup>  包括限制转售 (NFR)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)  
-
-无法确定正在使用哪些订阅？  请连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看分配给你电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
 
 ## <a name="activation-steps"></a>激活步骤
+激活权益的步骤取决于选择的版本。  
 
 ### <a name="digital-edition"></a>数字版
 数字版可用于 Visual Studio Dev Essentials 成员。  
@@ -71,8 +46,24 @@ ms.lasthandoff: 01/29/2018
 
 5.  就这么简单。  根据所选的杂志版本，你将开始接收印刷版杂志或附有最新在线版本链接的电子邮件。  请尽情体验吧！
 
-## <a name="faq"></a>FAQ
-*单击此处了解更新*
+## <a name="eligibility"></a>资格
+| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> |印刷版       |  不是。  仅对新订阅者可用          |
+| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 印刷版                                                            |不是。  仅对新订阅者可用         |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 印刷版                                             |  不是。  仅对新订阅者可用         |
+| MSDN 平台（标准）                                          | VL、零售                                              | 印刷版                                              | 不是。  仅对新订阅者可用         |
+|Visual Studio Enterprise、Visual Studio Professional（月度云）   | Azure |不可用      |  NA         |
+|Visual Studio Dev Essentials| NA |数字版       |  是|
+
+<sup>1</sup> 印刷版：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、Microsoft 合作伙伴网络 (Enterprise)、Imagine (Premium)。  
+
+数字版：MCT 软件和服务、Microsoft 重要合作伙伴 (Professional)、区域总监 (RD)。
+
+不包括：Imagine (Standard)、BizSpark、MCT 软件和服务开发人员
+
+
+无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
 
 ## <a name="support-resources"></a>支持资源
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://www.visualstudio.com/subscriptions/support/)联系。

@@ -1,27 +1,21 @@
 ---
-title: 使用 Azure 远程调试 Python | Microsoft Docs
+title: 使用 Azure 远程调试 Python
 description: 如何将 Azure 应用服务配置为使用 Visual Studio 远程调试 Python 应用程序。
-ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d74e4425bfcaefbd1bb13e368ee719acaa3bae80
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 5fc6004c17614620f4ba75fb13258a685536c28b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>在 Azure 上远程调试 Python 代码
 

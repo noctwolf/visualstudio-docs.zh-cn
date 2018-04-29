@@ -1,19 +1,19 @@
 ---
 title: 适用于 CSP 的 Visual Studio 云订阅购买
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Information for Cloud Solution Providers on how to buy and manage Visual Studio cloud subscriptions for your customers.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: e6bbaa7e84da44b53bc7cea0d0b0746e4680caf2
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: 有关云解决方案提供商如何为客户购买和管理 Visual Studio 云订阅的信息。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>为客户购买和管理 Visual Studio 云订阅
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 03/22/2018
 我们为每月（为给定客户）购买的每种 Visual Studio 订阅的第 6 个单位提供 5% 的折扣。 因此，每个订阅会显示两行选项。 一行显示“最小值”为 0，应该将其理解为第 1 至 5 个单位的基准价格。 另一行显示“最小值”为 5，这是适用于第 6 个及以上单位的 5% 折扣价格。
 
 
-## <a name="faq"></a>FAQ
+## <a name="frequently-asked-questions"></a>常见问题
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>问：月度云订阅是如何收费的？
 答：在第一次购买时，我们会根据当月的剩余天数按比例收费。 例如，如果在 4 月 15 日购买了 10 个 Visual Studio Professional 月度云订阅，则只收取 5 个单位的费用，因为 30 天月份还剩 15 天（或者说 50%），我们会按照 50% 的比例收费。 在 5 月的第一天以及此后的每个月，对全部 10 个单位收费，直到取消。
 

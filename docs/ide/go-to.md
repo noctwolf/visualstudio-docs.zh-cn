@@ -1,12 +1,9 @@
 ---
-title: "使用“转到”命令查找代码 | Microsoft Docs"
-ms.custom: 
+title: 使用“转到”命令查找代码
 ms.date: 09/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
 helpviewer_keywords:
 - code editor, go to
@@ -15,74 +12,77 @@ helpviewer_keywords:
 - go to
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9309a143760aab5b59355b4cea6cd214aaa49812
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 679e3768aa3a03efd7369e3ada9a8e87132d12bd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="find-code-using-go-to-commands"></a>使用“转到”命令查找代码  
-Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快速找到指定项。 可以从简单统一的页面中转到特定的行、类型、符号、文件和成员。 此功能存在于 Visual Studio 2017 及更高版本。  
+# <a name="find-code-using-go-to-commands"></a>使用“转到”命令查找代码
 
-### <a name="how-to-use-it"></a>使用方法  
+Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快速找到指定项。 可以从简单统一的页面中转到特定的行、类型、符号、文件和成员。 此功能存在于 Visual Studio 2017 及更高版本。
 
-输入        | 函数 
+## <a name="how-to-use-it"></a>使用方法
+
+输入        | 函数
 ------------ | ---
-**键盘** | 按 Ctrl + t 或 Ctrl + ,     
-**鼠标**    | 依次选择“编辑”、“转到”、“转到全部”  
+**键盘** | 按 Ctrl + T 或 Ctrl + ,
+**鼠标**    | 选择“编辑” > “转到” > “转到全部”
 
-默认情况下，代码编辑器的右上方会显示一个小窗口。  
+默认情况下，代码编辑器的右上方会显示一个小窗口。
 
 ![转到全部](media/gotoall.png)
 
-在文本框中键入内容时，文本框下的下拉列表中会显示结果。 若要转到某个元素，请在列表中选择它。    
+在文本框中键入内容时，文本框下的下拉列表中会显示结果。 若要转到某个元素，请在列表中选择它。
 
-![“导航到”窗口](../ide/media/vside_navigatetowindow.png "“导航到”窗口")  
+![“导航到”窗口](../ide/media/vside_navigatetowindow.png "“导航到”窗口")
 
-还可以输入一个问号 (?) 来获取更多帮助。  
+还可以输入一个问号 (?) 来获取更多帮助。
 
   ![转到全部帮助](media/gotoall_help.png)
 
-### <a name="filtered-searches"></a>经过筛选的搜索  
-默认会在所有解决方案项中搜索指定项。 不过，可以在搜索词前面加上特定字符，将代码搜索范围缩小至具体元素类型。 还可以选择“转到”对话框工具栏上的按钮，快速更改搜索筛选器。 更改类型筛选器的按钮位于左侧，而更改搜索范围的按钮则位于右侧。  
+## <a name="filtered-searches"></a>经过筛选的搜索
+默认会在所有解决方案项中搜索指定项。 不过，可以在搜索词前面加上特定字符，将代码搜索范围缩小至具体元素类型。 还可以选择“转到”对话框工具栏上的按钮，快速更改搜索筛选器。 更改类型筛选器的按钮位于左侧，而更改搜索范围的按钮则位于右侧。
 
 ![转到成员](../ide/media/vside_navigation_toolbar.png)
 
-#### <a name="filter-to-a-specific-type-of-code-element"></a>筛选到特定类型的码位元素  
-要缩小对特定类型的码位元素的搜索范围，可以在搜索框中指定一个前缀，也可以从以下五个筛选器图标中选择一个：  
+### <a name="filter-to-a-specific-type-of-code-element"></a>筛选到特定类型的码位元素
+要缩小对特定类型的码位元素的搜索范围，可以在搜索框中指定一个前缀，也可以从以下五个筛选器图标中选择一个：
 
 前缀 | 图标 | 快捷键 | 描述
 :----: | ---- | -------- | ---
-\#      | ![符号图标](media/gotoall_symbolicon.png) | Ctrl+1、Ctrl+S | 转到指定符号
-f      | ![文件图标](media/gotoall_fileicon.png)     | Ctrl+1、Ctrl+F | 转到指定文件
-m      | ![成员图标](media/gotoall_membericon.png) | Ctrl+1、Ctrl+M | 转到指定成员
-t      | ![类型图标](media/gotoall_typeicon.png)     | Ctrl+1、Ctrl+T | 转到指定类型
-:      | ![行图标](media/gotoall_lineicon.png)     | Ctrl+G         | 转到指定行号
+\#      | ![符号图标](media/gotoall_symbolicon.png) | **Ctrl+1、Ctrl+S** | 转到指定符号
+f      | ![文件图标](media/gotoall_fileicon.png)     | **Ctrl+1、Ctrl+F** | 转到指定文件
+m      | ![成员图标](media/gotoall_membericon.png) | **Ctrl+1、Ctrl+M** | 转到指定成员
+t      | ![类型图标](media/gotoall_typeicon.png)     | **Ctrl+1、Ctrl+T** | 转到指定类型
+:      | ![行图标](media/gotoall_lineicon.png)     | **Ctrl+G**         | 转到指定行号
 
-#### <a name="filter-to-a-specific-location"></a>筛选到特定位置    
-要将搜索范围缩小到特定位置，请从这两个文档图标中选择一个：  
+### <a name="filter-to-a-specific-location"></a>筛选到特定位置
+要将搜索范围缩小到特定位置，请从这两个文档图标中选择一个：
 
 图标 | 描述
 ---- | ---
 ![当前文档](media/gotoall_currentdocument.png) | 仅搜索当前文档
-![外部文档](media/gotoall_external.png) | 除了项目/解决方案中的文档外还搜索外部文档  
+![外部文档](media/gotoall_external.png) | 除了项目/解决方案中的文档外还搜索外部文档
 
-### <a name="camel-casing"></a>驼峰式大小写  
-如果在代码中使用[驼峰式大小写](https://en.wikipedia.org/wiki/Camel_case)，可以仅输入码位元素名称的大写字母，以更快地查找码位元素。 例如，如果代码中有 `CredentialViewModel` 类型，可以选择“类型筛选器”("t")，然后在“转到”对话框中仅输入名称的大写字母 (`CVM`) 来缩小搜索范围。 如果代码名称很长，此功能就非常有用。  
+## <a name="camel-casing"></a>驼峰式大小写
+如果在代码中使用[驼峰式大小写](https://en.wikipedia.org/wiki/Camel_case)，可以仅输入码位元素名称的大写字母，以更快地查找码位元素。 例如，如果代码中有 `CredentialViewModel` 类型，可以选择“类型”筛选器 (t)，然后在“转到”对话框中仅输入名称的大写字母 (`CVM`) 来缩小搜索范围。 如果代码名称很长，此功能就非常有用。
 
 ![转到窗口 - 使用大写字母进行搜索](../ide/media/vside_capitalsearch.png)
 
-### <a name="settings"></a>设置  
-选择齿轮图标 ![齿轮图标](media/gotoall_gear.png) 允许更改此功能的作用方式：  
+## <a name="settings"></a>设置
+选择齿轮图标 ![齿轮图标](media/gotoall_gear.png) 允许更改此功能的作用方式：
 
 设置 | 描述
 ------- | ---
 使用预览选项卡 | 在 IDE 的预览选项卡中立即显示所选的项
 显示详细信息    | 在窗口的文档注释中显示项目、文件、行和摘要信息
-使窗口居中   | 将此窗口移动到代码编辑器的正上方而不是右上方   
+使窗口居中   | 将此窗口移动到代码编辑器的正上方而不是右上方
 
-## <a name="see-also"></a>请参阅  
-[导航代码](../ide/navigating-code.md)  
-[转到定义和速览定义](../ide/go-to-and-peek-definition.md)  
+## <a name="see-also"></a>请参阅
+
+- [导航代码](../ide/navigating-code.md)
+- [转到定义和速览定义](../ide/go-to-and-peek-definition.md)

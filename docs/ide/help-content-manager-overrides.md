@@ -1,23 +1,21 @@
 ---
-title: "Help Content Manager 重写 | Microsoft Docs"
-ms.custom: 
+title: Help Content Manager 重写 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/01/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 35bc6ae23fdbc89f6bdeaa57bd37d5d961d87286
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7a943724d10241b5f0d7abb236964be51c38b79c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 重写
 可以更改 Visual Studio IDE 中的 Help Viewer 和帮助相关功能的默认行为。 可通过创建 [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) 文件来设置各种注册表项值，从而指定某些选项。 其他选项则直接在注册表中设置。
@@ -28,16 +26,16 @@ ms.lasthandoff: 12/22/2017
 
 2. 添加下表所述的任一或所有注册表项值，每个值占一行，例如 `“UseOnlineHelp”=dword:00000001`。
 
-3. 将文件复制到 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<版本\>\Common7\IDE\CommonExtensions。
+3. 将文件复制到 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition\>\Common7\IDE\CommonExtensions。
 
-4. 在开发人员命令提示中运行 `devenv /updateconfiguration`。
+4. 在开发人员命令提示符中运行 `devenv /updateconfiguration`。
 
 ### <a name="registry-key-values"></a>注册表项值
 |注册表项值|类型|数据|描述|  
 |------------------|----|----|-----------|  
-|NewContentAndUpdateService|string|\<服务终结点的 http URL\>|定义唯一的服务终结点|
+|NewContentAndUpdateService|字符串|\<服务终结点的 http URL\>|定义唯一的服务终结点|
 |UseOnlineHelp|dword|`0` 指定本地帮助，`1` 指定联机帮助|定义联机或脱机帮助（默认）|
-|OnlineBaseUrl|string|\<服务终结点的 http URL\>|定义唯一的 F1 终结点|
+|OnlineBaseUrl|字符串|\<服务终结点的 http URL\>|定义唯一的 F1 终结点|
 |OnlineHelpPreferenceDisabled|dword|`0` 启用或 `1` 禁用联机帮助首选项|禁用联机帮助首选项|
 |DisableManageContent|dword|`0` 启用或 `1` 禁用 Help Viewer 中的“管理内容”选项卡|禁用“管理内容”选项卡|
 |DisableFirstRunHelpSelection|dword|`0` 启用或 `1` 禁用在 Visual Studio 首次启动时配置的帮助功能|禁用首次启动 Visual Studio 时的内容安装|
@@ -62,7 +60,7 @@ ms.lasthandoff: 12/22/2017
 |指向网络共享上的本地内容存储区|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|“*ContentStoreNetworkShare*”|
   
 ## <a name="see-also"></a>请参阅
-[帮助查看器管理员指南](../ide/help-viewer-administrator-guide.md)  
+[Help Viewer 管理员指南](../ide/help-viewer-administrator-guide.md)  
 [Help Content Manager 的命令行参数](../ide/command-line-arguments-for-the-help-content-manager.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
 [通过使用 .pkgdef 文件修改独立 shell](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

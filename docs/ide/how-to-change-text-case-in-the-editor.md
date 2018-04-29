@@ -1,32 +1,30 @@
 ---
-title: "在 Visual Studio 编辑器中转换文本大小写 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 编辑器中转换文本大小写 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editors, text case
 - text, case
 ms.assetid: b04d1327-a45e-4c12-a0d0-67672b3fa855
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 556ab33582f7c7051eefbd0eed6c72c2c9b3de18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: abf75a29192c3c10dc754213779bb13b6aebac4e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>如何：在编辑器中更改文本大小写
 可使用菜单命令或键盘快捷方式将所选文本全部转换为大写或小写。  
   
 > [!NOTE]
-> 显示的对话框和菜单命令可能与本文中的描述不同，具体取决于现用的设置或版本。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具”，“导入和导出设置”，然后选择“重置所有设置”。
+> 显示的对话框和菜单命令可能与本文中的描述不同，具体取决于现用的设置或版本。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具” > “导入和导出设置”，再选择“重置所有设置”。
   
 ## <a name="to-switch-text-to-upper-case"></a>将文本切换为大写  
   

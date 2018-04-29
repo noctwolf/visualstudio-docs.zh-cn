@@ -1,23 +1,21 @@
 ---
-title: "如何：通过自定义滚动条来跟踪代码 | Microsoft Docs"
-ms.custom: 
+title: 如何：通过自定义滚动条来跟踪代码 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f56e834e6c2b80706e4ed1d1a91583e1015791b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1ff36af9a034f3a369369a0916f468826c053d05
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>How to: Track Your Code by Customizing the Scrollbar
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>如何：通过自定义滚动条来跟踪代码
 
 使用长码文件时，可能很难记住所有内容。 可自定义代码窗口的滚动条，以便获得代码中所发生情况的鸟瞰图。
 

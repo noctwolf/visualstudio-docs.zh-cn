@@ -1,22 +1,19 @@
 ---
-title: "对 Visual Studio 项目模板和项模板加载进行故障排除 | Microsoft Docs"
-ms.custom: 
+title: 对 Visual Studio 项目模板和项模板加载进行故障排除 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d9242d053044fa66e6eb3d506382cf7cfb5d0295
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.openlocfilehash: f7e952f8eb445787a2a574ae3431ba6ad8728248
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>如何：对模板进行故障排除
 
@@ -36,14 +33,14 @@ ms.lasthandoff: 01/13/2018
 
 1. 选择模板的 .vstemplate 文件，然后选择“打开”。
 
-1. 验证 .vstemplate 文件的 XML 是否遵循模板架构。 有关 .vstemplate 架构的详细信息，请参阅[模板架构引用](../extensibility/visual-studio-template-schema-reference.md)。
+1. 验证 .vstemplate 文件的 XML 是否遵循模板架构。 有关 .vstemplate 架构的详细信息，请参阅[模板架构参考](../extensibility/visual-studio-template-schema-reference.md)。
 
     > [!NOTE]
     > 要在创作 .vstemplate 文件时获得 IntelliSense 支持，请将 `xmlns` 特性添加到 `VSTemplate` 元素，并为其赋值 http://schemas.microsoft.com/developer/vstemplate/2005。
 
 1. 保存并关闭 .vstemplate 文件。
 
-1. 选择模板中包含的文件，右键单击，然后选择“发送至” > “压缩的文件夹（zip 格式）”。 所选的文件被压缩到一个 .zip 文件中。
+1. 选择模板中包含的文件，右键单击，然后选择“发送至” > “压缩的文件夹（zip 格式）”。 所选的文件将压缩到一个 .zip 文件中。
 
 1. 将新的 .zip 文件与旧的 .zip 文件放在同一目录中。
 

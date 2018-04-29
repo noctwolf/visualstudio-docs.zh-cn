@@ -1,111 +1,109 @@
 ---
-title: "如何：分发代码片段 | Microsoft Docs"
-ms.custom: 
+title: 如何：分发代码片段
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 39f6006ec6dfe754efc58f2ccdc7b09d803de6b3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e867bafff9c41aff525557484189693950b7b468
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-distribute-code-snippets"></a>如何：分发代码段
-你可以只向朋友提供代码片段，然后让他们使用代码片段管理器在自己的计算机上安装代码片段。 但是，如果你有若干代码片段要分发或者希望进行范围更广泛的分发，则可以将代码片段文件包含到 Visual Studio 扩展中，用户可以安装该扩展。  
+# <a name="how-to-distribute-code-snippets"></a>如何：分发代码片段
 
-要创建 Visual Studio 扩展，你必须安装 Visual Studio SDK。 可在 [Visual Studio 下载](https://www.visualstudio.com/downloads/)页面查找与你的 Visual Studio 安装匹配的 VSSDK 版本。  
+可以向朋友提供代码片段，然后让他们使用代码片段管理器在自己的计算机上安装代码片段。 但是，如果你有若干代码片段要分发或者希望进行范围更广泛的分发，则可以将代码片段文件包含到 Visual Studio 扩展中，用户可以安装该扩展。
 
-## <a name="setting-up-the-extension"></a>设置扩展  
-在此过程中，将使用在[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)中创建的相同 Hello World 代码片段。 我们将提供 .snippet 文本，因此无需返回该演练并获取相关代码片段。  
+要创建 Visual Studio 扩展，你必须安装 Visual Studio SDK。 可在 [Visual Studio 下载](https://www.visualstudio.com/downloads/)页面查找与 Visual Studio 安装匹配的 VSSDK 版本。
 
-1.  创建名为 **TestSnippet** 的新 VSIX 项目。 （“文件”->“新建”->“项目”->“Visual C#”（或“Visual Basic”）->“扩展性”。）  
+## <a name="set-up-the-extension"></a>设置扩展
 
-2.  在 **TestSnippet** 项目中，添加一个新的 XML 文件，并将其命名为 **VBCodeSnippet.snippet**。 将内容替换为以下内容：  
+在此过程中，将使用在[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)中创建的相同 Hello World 代码片段。 我们将提供 .snippet 文本，因此无需返回该演练并获取相关代码片段。
 
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <CodeSnippets  
-        xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
-      <CodeSnippet Format="1.0.0">  
-        <Header>  
-          <Title>Hello World VB</Title>  
-          <Shortcut>HelloWorld</Shortcut>  
-          <Description>Inserts code</Description>  
-          <Author>MSIT</Author>  
-          <SnippetTypes>  
-            <SnippetType>Expansion</SnippetType>  
-            <SnippetType>SurroundsWith</SnippetType>  
-          </SnippetTypes>  
-        </Header>  
-        <Snippet>  
-          <Code Language="VB">  
-            <![CDATA[Console.WriteLine("Hello, World!")]]>  
-          </Code>  
-        </Snippet>  
-      </CodeSnippet>  
-    </CodeSnippets>  
-    ```  
+1.  创建名为 **TestSnippet** 的新 VSIX 项目。 （“文件” > “新建” > “项目” > “Visual C#”（或“Visual Basic”） > “扩展性”。）
 
-#### <a name="setting-up-the-directory-structure"></a>设置目录结构  
+2.  在 **TestSnippet** 项目中，添加一个新的 XML 文件，并将其命名为 *VBCodeSnippet.snippet*。 将内容替换为以下内容：
 
-1.  在解决方案资源管理器中，选择项目节点，并添加一个文件夹，该文件夹的名称为你想要代码片段在代码片段管理器中显示的名称。 在本例中，应为 **HelloWorldVB**。  
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <CodeSnippets
+        xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+      <CodeSnippet Format="1.0.0">
+        <Header>
+          <Title>Hello World VB</Title>
+          <Shortcut>HelloWorld</Shortcut>
+          <Description>Inserts code</Description>
+          <Author>MSIT</Author>
+          <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+            <SnippetType>SurroundsWith</SnippetType>
+          </SnippetTypes>
+        </Header>
+        <Snippet>
+          <Code Language="VB">
+            <![CDATA[Console.WriteLine("Hello, World!")]]>
+          </Code>
+        </Snippet>
+      </CodeSnippet>
+    </CodeSnippets>
+    ```
 
-2.  将 .snippet 文件移动到 **HelloWorldVB** 文件夹。  
+### <a name="set-up-the-directory-structure"></a>设置目录结构
 
-3.  在“解决方案资源管理器”中选择 .snippet 文件，确保“属性”窗口中的“生成操作”设置为“内容”，“复制到输出目录”设置为“始终复制”，“包含在 VSIX 中”设置为“true”。  
+1.  在解决方案资源管理器中，选择项目节点，并添加一个文件夹，该文件夹的名称为想要代码片段在代码片段管理器中显示的名称。 在本例中，名称应为 HelloWorldVB。
 
-#### <a name="adding-the-pkgdef-file"></a>添加 .pkgdef 文件  
+2.  将 .snippet 文件移动到 HelloWorldVB 文件夹。
 
-1.  将文本文件添加到 **HelloWorldVB** 文件夹，并将其命名为 **HelloWorldVB.pkgdef**。 此文件用于向注册表添加某些项。 在本例中，它将一个新项添加到  
+3.  在“解决方案资源管理器”中选择 .snippet 文件，确保“属性”窗口中的“生成操作”设置为“内容”，“复制到输出目录”设置为“始终复制”，“包含在 VSIX 中”设置为“true”。
 
-     **HKCU\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic**。  
+### <a name="add-the-pkgdef-file"></a>添加 .pkgdef 文件
 
-2.  向文件中添加以下行。  
+1.  将文本文件添加到 *HelloWorldVB* 文件夹，并将其命名为 *HelloWorldVB.pkgdef*。 此文件用于向注册表添加某些项。 在本例中，它将一个新项添加到：
 
-    ```  
-    // Visual Basic   
-    [$RootKey$\Languages\CodeExpansions\Basic\Paths]   
-    "HelloWorldVB"="$PackageFolder$"  
-    ```  
+     `HKCU\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic`
 
-    通过检查此项，你可以看到如何指定不同的语言。  
+2.  向文件中添加以下行。
 
-3.  在“解决方案资源管理器”中选择 .pkgdef 文件，确保“属性”窗口中的“生成操作”设置为“内容”，“复制到输出目录”设置为“始终复制”，“包含在 VSIX 中”设置为“true”。  
+    ```
+    // Visual Basic
+    [$RootKey$\Languages\CodeExpansions\Basic\Paths]
+    "HelloWorldVB"="$PackageFolder$"
+    ```
 
-4.  将.pkgdef 文件添加为 VSIX 清单中的资产。 在 source.extension.vsixmanifest 文件中，转到“资产”选项卡，然后单击“新建”。  
+    通过检查此项，你可以看到如何指定不同的语言。
 
-5.  在“添加新资产”对话框中，将“类型”设置为“Microsoft.VisualStudio.VsPackage”，将“源”设置为“文件系统上的文件”，将“路径”设置为“HelloWorldVB.pkgdef”（它应显示在下拉列表中）。  
+3.  在“解决方案资源管理器”中选择 .pkgdef 文件，确保“属性”窗口中的“生成操作”设置为“内容”，“复制到输出目录”设置为“始终复制”，“包含在 VSIX 中”设置为“true”。
 
-### <a name="testing-the-snippet"></a>测试代码片段  
+4.  将.pkgdef 文件添加为 VSIX 清单中的资产。 在 source.extension.vsixmanifest 文件中，转到“资产”选项卡，然后单击“新建”。
 
-1.  现在，可以确保代码片段在 Visual Studio 的实验实例中的工作。 实验实例是 Visual Studio 的第二份副本，它独立于用于编写代码的副本。 它可让在扩展上工作，而不会影响你的开发环境。  
+5.  在“添加新资产”对话框中，将“类型”设置为“Microsoft.VisualStudio.VsPackage”，将“源”设置为“文件系统上的文件”，将“路径”设置为“HelloWorldVB.pkgdef”（它应显示在下拉列表中）。
 
-2.  生成项目并启动调试。 将显示 Visual Studio 的第二个实例。  
+### <a name="test-the-snippet"></a>测试代码片段
 
-3.  在实验实例中，请转到“工具/代码片段管理器”，并将“语言”设置为“Basic”。 将看到 HelloWorldVB 显示为一个文件夹，并且应能够展开文件夹以查看 HelloWorldVB 代码片段。  
+1.  现在，可以确保代码片段在 Visual Studio 的实验实例中的工作。 实验实例是 Visual Studio 的第二份副本，它独立于用于编写代码的副本。 它可让在扩展上工作，而不会影响你的开发环境。
 
-4.  测试代码片段。 在实验实例中，打开 Visual Basic 项目，并打开一个代码文件。 将光标置于代码中的某处，右键单击，然后在上下文菜单中选择“插入片段”。  
+2.  生成项目并启动调试。 将显示 Visual Studio 的第二个实例。
 
-5.  将看到 HelloWorldVB 显示为一个文件夹。 双击该选项。 将会看到一个弹出窗口“<插入片段: HelloWorldVB >”，该窗口中包含下拉列表“HelloWorldVB”。 单击 HelloWorldVB 下拉列表。 将看到添加到文件的以下行：  
+3.  在实验实例中，请转到“工具”>“代码片段管理器”，并将“语言”设置为“Basic”。 将看到 HelloWorldVB 显示为一个文件夹，并且应能够展开该文件夹以查看 HelloWorldVB 代码片段。
 
-    ```vb  
-    Console.WriteLine("Hello, World!")  
-    ```  
+4.  测试代码片段。 在实验实例中，打开 Visual Basic 项目，并打开一个代码文件。 将光标置于代码中的某处，右键单击，然后在上下文菜单中选择“插入片段”。
 
-## <a name="see-also"></a>请参阅  
-[代码片段](../ide/code-snippets.md)
+5.  将看到 HelloWorldVB 显示为一个文件夹。 双击该选项。 将会看到一个弹出窗口“<插入片段: HelloWorldVB >”，该窗口中包含下拉列表“HelloWorldVB”。 单击 HelloWorldVB 下拉列表。 将看到添加到文件的以下行：
+
+    ```vb
+    Console.WriteLine("Hello, World!")
+    ```
+
+## <a name="see-also"></a>请参阅
+
+- [代码片段](../ide/code-snippets.md)

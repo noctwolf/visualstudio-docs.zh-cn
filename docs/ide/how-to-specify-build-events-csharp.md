@@ -1,12 +1,10 @@
 ---
-title: "如何：指定生成事件 (C#) | Microsoft Docs"
-ms.custom: 
+title: 如何：指定生成事件 (C#) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -14,21 +12,21 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 1fcba0ef7abec3c8f5d71d34b8ff4e19e047d50b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7cf26e6f8565f08b7e272ec663e0db91ae3d545c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定生成事件 (C#)
 使用生成事件，可以指定生成开始之前或生成完成之后运行的命令。 只有当生成成功到达生成过程中的这些时间点时，才执行生成事件。  
   
- 项目生成时，预先生成事件将添加到名为 PreBuildEvent.bat 的文件，而后期生成事件将添加到名为 PostBuildEvent.bat 的文件。 若要确保错误检查，请向生成步骤中添加自己的错误检查命令。  
+ 项目生成时，预先生成事件将添加到名为 PreBuildEvent.bat 的文件，而生成后事件将添加到名为 PostBuildEvent.bat 的文件。 若要确保错误检查，请向生成步骤中添加自己的错误检查命令。  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -45,24 +43,25 @@ ms.lasthandoff: 12/22/2017
 4.  在“预先生成事件命令行”框中指定生成事件的语法。  
   
     > [!NOTE]
-    >  如果项目是最新的且没有触发任何生成，则不会运行预生成事件。  
+    > 如果项目是最新的且没有触发任何生成，则不会运行预生成事件。  
   
 5.  在“后期生成事件命令行”框中指定生成事件的语法。  
   
     > [!NOTE]
-    >  在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
+    > 在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
   
 6.  在“运行后期生成事件”框中，指定运行后期生成事件的条件。  
   
     > [!NOTE]
-    >  若要添加长语法，或从[预先生成事件/后期生成事件命令行对话框](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)中选择任何生成宏，请单击省略号按钮 (…) 以显示编辑框。  
+    > 若要添加长语法，或从[预先生成事件/生成后事件命令行对话框](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)中选择任何生成宏，请单击省略号按钮 (…) 以显示编辑框。  
   
      生成事件语法可以包含命令提示符处或 .bat 文件中有效的任何命令。 批处理文件名的前面应带有 `call`，以确保执行后面的所有命令。  
   
-     注意：如果预先生成事件或后期生成事件不能成功完成，可以通过使事件操作退出来终止生成，并显示指示操作成功的代码零 (0) 以外的其他代码。  
+    > [!NOTE]
+    > 如果预生成事件或生成后事件未成功完成，可通过使用除零 (0) 之外的代码退出事件操作来终止生成，这表示操作成功。  
   
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>示例：如何使用后期生成事件更改清单信息  
- 下面的过程说明如何使用从后期生成事件（项目目录中的 .exe.manifest 文件）中调用的 .exe 命令设置应用程序清单中的操作系统最低版本。 最低的操作系统版本是由四个部分组成的数字组合，例如 4.10.0.0。 为此，该命令将更改清单的 `<dependentOS>` 部分：  
+## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>示例：如何使用生成后事件更改清单信息  
+ 下面的过程说明如何使用从生成后事件（项目目录中的 .exe.manifest 文件）中调用的 .exe 命令设置应用程序清单中的操作系统最低版本。 最低的操作系统版本是由四个部分组成的数字组合，例如 4.10.0.0。 为此，该命令将更改清单的 `<dependentOS>` 部分：  
   
 ```  
 <dependentOS>  
@@ -140,7 +139,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  生成项目。 在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
-6.  将 .exe 文件复制到目录，例如 `C:\TEMP\ChangeOSVersionVB.exe`。  
+6.  将 .exe 文件复制到类似于 C:\TEMP\ChangeOSVersionVB.exe 的目录。  
   
  然后，在后期生成事件中调用此命令以修改应用程序清单。  
   
@@ -152,11 +151,11 @@ ms.lasthandoff: 12/22/2017
   
 3.  在“解决方案资源管理器”中选择一个项目，然后在“项目”菜单上单击“属性”。  
   
-4.  在项目设计器中，转到“发布”页，并将“发布位置”设置为 `C:\TEMP\`。  
+4.  在项目设计器中，转到“发布”页，并将“发布位置”设置为 C:\TEMP。  
   
 5.  单击“立即发布”以发布项目。  
   
-     将生成清单文件，并将其置于 `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest` 中。 若要查看该清单，请右键单击该文件，单击“打开方式”，选择“从列表中选择程序”，然后单击“记事本”。  
+     随即生成清单文件并将其放入 C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest。 若要查看该清单，请右键单击该文件，单击“打开方式”，选择“从列表中选择程序”，然后单击“记事本”。  
   
      在文件中搜索 `<osVersionInfo>` 元素。 例如，版本可能为：  
   
@@ -164,7 +163,7 @@ ms.lasthandoff: 12/22/2017
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  在项目设计器中，单击“生成事件”选项卡，然后单击“编辑后期生成”按钮。  
+6.  在项目设计器中，单击“生成事件”选项卡，然后单击“编辑生成后事件”按钮。  
   
 7.  在“后期生成事件命令行”框中，键入以下命令：  
   

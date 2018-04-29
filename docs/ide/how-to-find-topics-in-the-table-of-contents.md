@@ -1,13 +1,10 @@
 ---
-title: "使用 Visual Studio Help Viewer 目录 | Microsoft Docs"
-ms.custom: 
+title: 使用 Visual Studio Help Viewer 目录 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - hv_contents
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb49d915871bd9ac955ed61cdc7850bf35d6f41
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: db53125c30a2136500b6c99818b7143511bd2788
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>如何：在目录中查找主题
 在“目录”选项卡中，可以使用目录 (TOC) 查找信息。 目录是可展开的列表，其中包含已安装丛书中的所有主题。 有关如何浏览 TOC 的辅助功能信息，请参阅[快捷键 (Help Viewer)](../ide/shortcut-keys-help-viewer.md)。  
@@ -53,7 +49,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  查看主题。  
   
-2.  单击工具栏上的“在目录中显示主题”按钮，或按 **Ctrl+S**。  
+2.  单击工具栏上的“在目录中显示主题”按钮，或按 Ctrl+S。  
   
      “目录”选项卡将打开并显示 TOC 中的主题位置。  
   

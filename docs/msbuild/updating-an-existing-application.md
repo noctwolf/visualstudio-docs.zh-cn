@@ -1,0 +1,80 @@
+# <a name="updating-an-existing-application-for-msbuild-15"></a>更新 MSBuild 15 的现有应用程序
+
+在 15.0 之前的 MSBuild 版本中，是从全局程序集缓存 (GAC) 加载 MSBuild ，并在注册表中安装 MSBuild 扩展的。 这样确保了所有应用程序使用相同版本的 MSBuild 和访问相同的工具集，但阻止了 Visual Studio 不同版本的并行安装。
+
+为支持更快、更小的并行安装，Visual Studio 2017 不再将 MSBuild 放置在 GAC 中或修改注册表。 遗憾的是，这意味着希望使用 MSBuild API 评估或生成项目的应用程序不能隐式依赖于 Visual Studio 安装。
+
+## <a name="using-msbuild-from-visual-studio"></a>从 Visual Studio 使用 MSBuild
+
+为确保以编程方式从应用程序生成的项目与 Visual Studio 或 MSBuild.exe 中生成的项目相匹配，请从 Visual Studio 加载 MSBuild 程序集，并使用 Visual Studio 中提供的 SDK。 Microsoft.Build.Locator NuGet 包简化了这一过程。
+
+## <a name="using-microsoftbuildlocator"></a>使用 Microsoft.Build.Locator
+
+如果将 `Microsoft.Build.Locator.dll` 与应用程序一起重新分发，则无需分发其他 MSBuild 程序集。
+
+若要更新项目以使用 MSBuild 15 和定位符 API，需要对项目进行一些更改，如下所述。 若要查看更新项目所需更改的示例，请参阅[在 MSBuildLocator 存储库中对示例项目进行的提交](https://github.com/Microsoft/MSBuildLocator/commits/example-updating-to-msbuild-15)。
+
+### <a name="change-msbuild-references"></a>更改 MSBuild 引用
+
+为确保从中心位置加载 MSBuild，请勿将其程序集与应用程序一起分发。
+
+更改项目以避免从中心位置加载 MSBuild 的机制取决于引用 MSBuild 的方式。
+
+#### <a name="using-nuget-packages-preferred"></a>使用 NuGet 包（首选）
+
+这些说明假定用户使用 [`PackageReference`-样式 NuGet 引用](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files)。
+
+将项目文件更改为从 NuGet 包中引用 MSBuild 程序集。 指定 `ExcludeAssets=runtime` 以告知 NuGet 仅在生成期间需要程序集，不应将其复制到输出目录。
+
+MSBuild 包的主要版本和次要版本须低于或等于希望支持的 Visual Studio 的最低版本。 如果希望支持 Visual Studio 2017 的任意版本，请引用 `15.1.548` 版本的包。
+
+例如，可以使用此 XML：
+
+```xml
+<ItemGroup>
+  <PackageReference Include="Microsoft.Build" Version="15.1.548" ExcludeAssets="runtime" />
+  <PackageReference Include="Microsoft.Build.Utilities" Version="15.1.548" ExcludeAssets="runtime" />
+</ItemGroup>
+```
+
+#### <a name="using-extension-assemblies"></a>使用扩展程序集
+
+如果不能使用 NuGet 包，则可以引用随 Visual Studio 一起分发的 MSBuild 程序集。 如果直接引用 MSBuild，请通过将 `Copy Local` 设置为 `False` 确保不要将其复制到输出目录。 在项目文件中，它将如下所示：
+
+```xml
+    <Reference Include="Microsoft.Build, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+```
+
+#### <a name="binding-redirects"></a>绑定重定向
+
+引用 Microsoft.Build.Locator 包会自动让应用程序使用 MSBuild 所有版本的程序集所需的绑定重定向到 `15.1.0.0` 版本。
+
+### <a name="ensure-output-clean"></a>确保清洁的输出
+
+生成项目并检查输出目录，确保它不包含任何 `Microsoft.Build.*.dll` 程序集（除 `Microsoft.Build.Locator.dll` 以外，它在下一步中添加）。
+
+### <a name="add-package-reference"></a>添加包引用
+
+向 [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/) 添加 NuGet 包引用。
+
+```xml
+    <PackageReference Include="Microsoft.Build.Locator">
+      <Version>1.0.7-preview-ge60d679b53</Version>
+    </PackageReference>
+```
+
+### <a name="register-instance-before-calling-msbuild"></a>在调用 MSBuild 之前注册实例
+
+在调用任何使用 MSBuild 的方法之前，添加对 Locator API 的调用。
+
+若要执行此操作，最简单的方法是在应用程序启动代码中
+
+```c#
+MSBuildLocator.RegisterDefaults();
+```
+
+添加对以上内容的调用。
+
+如果希望更精细地控制 MSBuild 的加载，可以选择将 `MSBuildLocator.QueryVisualStudioInstances()` 的结果手动传递给 `MSBuildLocator.RegisterInstance()`，但通常不需要这样做。

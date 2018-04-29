@@ -1,26 +1,20 @@
 ---
-title: Python 的 Django Web 项目模板 | Microsoft Docs
+title: 适用于 Python 的 Django Web 项目模板
 description: 使用 Django 框架以 Python 编写的 Web 应用程序的 Visual Studio 模板概述。
-ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 941ec5191e440be95d66da983508de36cef6d4fd
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 5c5b64e6f14ef8a6d8015f27252374e54a6dd764
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="django-web-project-template"></a>Django Web 项目模板
 

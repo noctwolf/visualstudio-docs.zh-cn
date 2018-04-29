@@ -1,22 +1,19 @@
 ---
-title: "修改 Blend 中对象的样式 | Microsoft Docs"
-ms.custom: 
+title: 修改 Blend 中对象的样式
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3073255564f81273fb6c6001538abf98d78766f7
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: 4ae494a82e92086cfa0e8e2a69b7f7eee022807a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>修改 Blend 中对象的样式
 
@@ -27,8 +24,6 @@ ms.lasthandoff: 01/25/2018
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>画笔：修改对象的外观
 
 如果要更改对象外观，请向它应用画笔。
-
-观看短片：![播放按钮](../designers/media/bldadminconsoleinitialconfigicon.PNG) [画笔编辑器](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor)。
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>在对象上绘制重复图像或图案
 
@@ -47,8 +42,6 @@ ms.lasthandoff: 01/25/2018
 通过控件（如按钮）创建视觉画笔。 下图显示视觉画笔和平铺的视觉画笔。
 
 ![视觉画笔](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![平铺视觉画笔](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
-
-观看短片：![播放按钮](../designers/media/bldadminconsoleinitialconfigicon.PNG) [平铺画笔](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes)。
 
 ## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>样式和模板：跨控件创建一致的外观
 
@@ -82,7 +75,7 @@ ms.lasthandoff: 01/25/2018
 
 > [!NOTE]
 > 不能为控件的每种类型都创建样式或模板。 如果控件不支持它们，则痕迹导航按钮不会出现在美工板上方。
-> 若要返回主文档的编辑范围，请单击“返回范围”![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png)。
+> 若要返回主文档编辑范围，请单击“返回范围”![返回到图标范围](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png)。
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>将样式或模板应用于控件
 
@@ -92,7 +85,7 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>还原控件的默认样式或模板
 
-选择控件，在[属性面板](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel)中，找到“样式”或“模板”属性。 选择“高级选项” ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png)，然后在快捷菜单上单击“重置”。
+选择控件，在[属性面板](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel)中，找到“样式”或“模板”属性。 选择“高级选项”，然后在快捷菜单上单击“重置”。
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>可视状态：基于其状态更改控件的外观
 
@@ -102,14 +95,12 @@ ms.lasthandoff: 01/25/2018
 
 观看短片：![播放按钮](../designers/media/bldadminconsoleinitialconfigicon.PNG) [管理 WPF 控件的状态](https://www.youtube.com/watch?v=m0PlkF5i6uw)。
 
-##  <a name="Resources"></a>资源：创建颜色、样式和模板，并在以后重复使用它们
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>资源：创建颜色、样式和模板，并在以后重复使用它们
 
 可以将项目中的几乎所有对象转换为资源。 资源只是可以在应用程序中的不同位置重复使用的对象。 例如，可以一次性创建一种颜色，使它成为资源，然后在多个对象上使用该颜色。 若要更改所有这些对象的颜色，只需更改该颜色资源。
 
 ![将颜色转换为资源按钮](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![“创建颜色资源”对话框](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-观看短片：![播放按钮](../designers/media/bldadminconsoleinitialconfigicon.PNG) [资源概述](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources)。
-
 ## <a name="see-also"></a>请参阅
 
-[使用 Blend for Visual Studio 创建 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+- [使用 Blend for Visual Studio 创建 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

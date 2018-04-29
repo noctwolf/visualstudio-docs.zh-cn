@@ -1,23 +1,20 @@
 ---
-title: "疑难解答和已知问题 (Visual Studio Tools for Unity) | Microsoft Docs"
-ms.custom: 
-ms.date: 10/25/2017
-ms.reviewer: 
-ms.suite: 
+title: 疑难解答和已知问题 (Visual Studio Tools for Unity) | Microsoft Docs
+ms.custom: ''
+ms.date: 04/10/2018
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
 author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 95d1724561886e1bcfa9a870bdf3bdadb787f9e8
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: cb1da2ec2c41fcbec78864868d116bcd1684a5b2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑难解答和已知问题 (Visual Studio Tools for Unity)
 本部分将介绍 Visual Studio Tools for Unity 常见问题的解决方案、已知问题的说明并了解如何通过报告错误来帮助改进 Visual Studio Tools for Unity。
@@ -40,8 +37,11 @@ ms.lasthandoff: 03/02/2018
  devenv /setup
 ```
 
-### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>VS2015 和 IntelliSense 或代码着色出现问题。
+### <a name="issues-with-visual-studio-2015-and-intellisense-or-code-coloration"></a>Visual Studio 2015 和 IntelliSense 或代码着色出现问题。
 应尝试将 Visual Studio 2015 升级到更新 3。
+
+### <a name="shader-files-without-code-coloration-when-using-visual-studio-2017"></a>使用 Visual Studio 2017 时没有代码着色的着色器文件
+请确保“使用 C++ 的桌面开发”安装在 Visual Studio 2017 的实例中。 用于代码着色的 C/C++ 分析程序与该工作负载捆绑在一起。
 
 ### <a name="visual-studio-hangs"></a>Visual Studio 挂起
 Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等几个 Unity 插件使用本机线程。 插件在最后将本机线程附加到运行时，阻止了对操作系统的调用，这时就会出现问题。 这意味着 Unity 不能对调试程序（或域重载）和挂起中断该线程。
@@ -51,6 +51,23 @@ Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等
 ### <a name="incompatible-project-in-visual-studio"></a>Visual Studio 中的不兼容项目
 首先，检查是否已将 Visual Studio 设置为 Unity 中的外部脚本编辑器（编辑/首选项/外部工具）。 然后检查 Unity 是否已安装 Visual Studio 插件（“帮助/关于”必须在底部显示一条类似于“已启用 Microsoft Visual Studio Tools for Unity”的消息）。 然后检查 Visual Studio 中是否已正确安装该扩展（“帮助/关于”）。
 
+### <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>其他重载，或 Visual Studio丢失所有打开的窗口
+请勿直接从资产处理器或任何其他工具接触项目文件。 如果确实需要对项目文件进行操作，我们为此公开了 API。 请检查[程序集引用问题部分](#Assembly-reference-issues)。
+
+如果遇到其他重载或 Visual Studio 在重载时丢失所有打开的窗口，请确保安装有合适的 .NET 目标包。 请查看以下部分，了解有关框架的详细信息。
+
+###  <a name="the-debugger-does-not-break-on-exceptions"></a>调试程序不会异常中断
+使用旧版 Unity 运行时（.NET 3.5 等效版本）情况下，未处理异常时（在 try/catch 块外部），调试程序将始终中断。 如果已处理了异常，则调试程序将使用异常设置窗口来确定是否需要中断。
+
+借助新的运行时（.NET 4.6 等效版本），Unity 引入了一种管理用户异常的新方法，因此即使所有异常都在 try/catch 块外部，也会将这些异常视为“用户已处理”。 这就是希望调试程序中断时，需要在“异常设置”窗口显式检查它们的原因。
+
+在 “异常设置”窗口（“调试”>“窗口”>“异常设置”）中，展开某个类别异常的节点（例如，表示 .NET 异常的公共语言运行时异常），并选中想要在该类别中捕获的特定异常的复选框（例如，System.NullReferenceException）。 还可以选择整个类别的异常。
+
+### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>在 Windows 上，Visual Studio 会要求下载 Unity 目标框架
+Visual Studio Tools for Unity 要求安装 .NET framework 3.5（默认情况下在 Windows 8 或 10 上未安装）。 若要解决此问题，请按照说明下载并安装 .NET framework 3.5。
+
+使用新的 Unity 运行时还需要 .NET 目标包版本 4.6 和 4.7.1。 可以使用 VS2017 安装程序快速安装它们（修改 VS2017 安装、单个组件、.NET 类别，并选择所有 4.x 目标包）。
+
 ### <a name="assembly-reference-issues"></a>程序集引用问题
 如果项目中存在复杂引用，或者如果希望能更好地控制此生成步骤，可以使用我们的 [API](../cross-platform/customize-project-files-created-by-vstu.md) 来操作生成的项目或解决方案内容。 也可以在 Unity 项目中使用[响应文件](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)，我们将对它们进行处理。
 
@@ -58,7 +75,7 @@ Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等
 如果 Visual Studio 无法找到特定断点的源位置，系统会在断点附近显示一条警告消息。 检查当前的 Unity 场景中是否已正确加载/使用你正在使用的行为。
 
 ### <a name="breakpoints-not-hit"></a>未命中断点
- 检查当前的 Unity 场景中是否已正确加载/使用你正在使用的行为。 退出 Visual Studio 和 Unity，然后删除生成的所有文件（*.csproj、*.sln）和整个库文件夹。
+检查当前的 Unity 场景中是否已正确加载/使用你正在使用的行为。 退出 Visual Studio 和 Unity，然后删除生成的所有文件（*.csproj、*.sln）和整个库文件夹。
 
 ### <a name="unable-to-attach"></a>无法附加
 -   尝试暂时禁用防病毒软件，或同时为 VS 和 Unity 创建排除规则。
@@ -69,22 +86,9 @@ Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等
 ### <a name="unable-to-debug-android-players"></a>无法调试 Android 播放器
 我们使用多播进行播放器检测（这是 Unity 使用的默认机制），但之后我们会使用常规 TCP 连接来附加调试器。 检测阶段是 Android 设备的主要问题。
 
-USB 用于调试时速度非常快，但与 Unity 播放器发现机制不兼容。
-Wifi 更通用，但与 USB 比起来非常慢，因为存在延迟。 我们已经了解，某些路由器或设备缺少正确多播支持（众所周知，Nexus 系列就存在这个问题）。
+Wifi 是通用的，但与 USB 比起来非常慢，因为存在延迟。 我们已经了解，某些路由器或设备缺少正确多播支持（众所周知，Nexus 系列就存在这个问题）。
 
-可以尝试使用 USB 执行以下操作，在连接的设备上查看打开的端口（让播放机正常运行，以便查看调试端口，始终采用 56xxx 格式）：
-
-```shell
-adb shell netstat
-```
-
-将端口转接到本地 PC：
-
-```shell
-adb forward tcp:56xxx tcp:56xxx
-```
-
-然后使用转接端口 127.0.0.1:56xxx 连接 VSTU。
+USB 调试速度非常快，Visual Studio Tools for Unity 现可检测 USB 设备，并与 adb 服务器对话，使其正确转接接口以进行调试。
 
 ### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>从 UnityVS 迁移到 Visual Studio Tools for Unity
  如果从 UnityVS 迁移到 Visual Studio Tools for Unity，将需要为你的 Unity 项目生成新的 Visual Studio 解决方案。
@@ -96,9 +100,6 @@ adb forward tcp:56xxx tcp:56xxx
 2.  将 Visual Studio Tools for Unity 包导入 Unity 项目中。 有关如何导入 VSTU 包的信息，请参阅 [入门](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) 页面上的“配置 Visual Studio Tools for Unity”。
 
 3.  生成新的解决方案和项目文件。 如果想要立即生成它们，则在 Unity 编辑器中的主菜单上，选择“Visual Studio Tools” 、“生成项目文件” 。 或者如果愿意，可以跳过此步骤；当选择“Visual Studio Tools” 、“在 Visual Studio 中打开” 时，Visual Studio Tools for Unity 会自动生成新的文件。
-
-### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>在 Windows 上，Visual Studio 会要求下载 Unity 目标框架
- Visual Studio Tools for Unity 要求安装 .net framework 3.5（默认情况下 Windows 8 或 10 上未安装）。 若要解决此问题，请按照说明下载并安装 .net framework 3.5。
 
 ## <a name="known-issues"></a>已知问题
  在 Visual Studio Tools for Unity 中存在一些已知问题，是由调试器与 Unity 的旧版本的 C# 编译器的交互方式导致的。 我们正设法帮助解决这些问题，但在此期间，你可能会遇到以下问题：

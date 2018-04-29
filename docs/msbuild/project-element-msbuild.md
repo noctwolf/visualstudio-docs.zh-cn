@@ -1,12 +1,9 @@
 ---
-title: "Project 元素 (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: Project 元素 (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Project
 dev_langs:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - <Project> element [MSBuild]
 - Project element [MSBuild]
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf347f135368b2452170e7ebfa9c987ed19adf77
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 44f63cf4517320b9acea0d289723a511dfeb9570
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="project-element-msbuild"></a>Project 元素 (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。  
@@ -66,7 +62,7 @@ ms.lasthandoff: 02/09/2018
 |`Sdk`|可选特性。 <br /><br /> 用于创建添加到 .proj 文件的隐式 Import 语句的 SDK 名称和可选版本。 如果不指定任何版本，则 MSBuild 将尝试解析默认版本。  例如，`<Project Sdk="Microsoft.NET.Sdk" />` 或 `<Project Sdk="My.Custom.Sdk/1.0.0" />`。|  
 |`ToolsVersion`|可选特性。<br /><br /> 用于确定 $(MSBuildBinPath) 和 $(MSBuildToolsPath) 的值的工具集 MSBuild 的版本。|  
 |`TreatAsLocalProperty`|可选特性。<br /><br /> 不会被视为全局的属性名称。 此属性可防止特定命令行属性替代项目或目标文件和所有后续导入中设置的属性值。 使用分号 (;) 分隔多个属性。<br /><br /> 通常，全局属性会替代项目或文件中设置的属性值。 如果该属性在 `TreatAsLocalProperty` 值中列出，那么全局属性值不会替代在该文件或任何后续导入中设置的属性值。 有关详细信息，请参阅[如何：使用不同选项生成相同的源文件](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。 **注意：**可使用 **/property**（或 **/p**）开关在命令提示符处设置全局属性。 还可使用 MSBuild 任务的 `Properties` 属性为多项目生成中的子项目设置或修改全局属性。 有关详细信息，请参阅 [MSBuild 任务](../msbuild/msbuild-task.md)。|  
-|`Xmlns`|可选特性。<br /><br /> 如果指定，则 `xmlns` 属性必须具有“http://schemas.microsoft.com/developer/msbuild/2003”的值。|  
+|`Xmlns`|可选特性。<br /><br /> 指定后，`xmlns` 属性必须具有“http://schemas.microsoft.com/developer/msbuild/2003”值。|  
 
 ### <a name="child-elements"></a>子元素  
 

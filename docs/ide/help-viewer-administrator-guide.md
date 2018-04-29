@@ -1,23 +1,21 @@
 ---
-title: "Help Viewer 管理员指南 | Microsoft Docs"
-ms.custom: 
+title: Help Viewer 管理员指南 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/01/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5f509b0ace14c4e0becd714e25ee9ec26770c6e9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dfd290d4395daa6576f4e86d55cdf358a0cf3b5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 管理员指南
 通过帮助查看器可以在具有或不具有 Internet 访问的情况下为网络环境管理本地帮助安装。 本地帮助内容按每台计算机进行配置。 默认情况下，用户必须具有管理员权限才能更新其本地帮助安装。  
@@ -50,8 +48,9 @@ ms.lasthandoff: 12/22/2017
 -   客户端计算机必须可以访问 Internet。  
   
 -   用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。  
-  
- 注意：  
+
+
+注意：  
   
 -   帮助的默认源仍处于联机状态。
   
@@ -64,7 +63,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  键入下列命令：  
   
-     C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us  
+     `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`  
   
 3.  按 **Enter**。  
   
@@ -78,7 +77,7 @@ ms.lasthandoff: 12/22/2017
 -   用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。  
   
     > [!TIP]
-    >  如果用户没有管理员权限，则建议在帮助查看器中禁用“管理内容”选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
+    >  如果用户没有管理员权限，则建议在 Help Viewer 中禁用“管理内容”选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
   
 注意：
   
@@ -108,8 +107,9 @@ ms.lasthandoff: 12/22/2017
 2.  在“推荐的文档”或“可用的文档”下，导航到要下载的文档集，然后选择“添加”。  
   
 3.  选择“更新”。  
-  
- 接下来，需要对内容进行打包，以便它可以部署到客户端计算机。  
+
+
+接下来，需要对内容进行打包，以便它可以部署到客户端计算机。  
   
 #### <a name="to-package-the-content"></a>对内容进行打包  
   
@@ -121,7 +121,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  键入下列命令：  
   
-     Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*文件夹名*>\ /y /e /k /o  
+     `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o ` 
   
      例如：`Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`  
   

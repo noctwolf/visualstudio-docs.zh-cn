@@ -1,16 +1,9 @@
 ---
-title: 使用 C++ 和 Python | Microsoft Docs
-description: 在 Visual Studio 中编写适用于 Python 的 C++ 扩展或模块的过程和步骤
-ms.custom: ''
+title: 使用 C++ 和 Python
+description: 使用 Visual Studio 创建适用于 Python 的 C++ 扩展的演练，包括混合模式调试的演练。
 ms.date: 04/03/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-- C++
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -18,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f81a9f14d64e014fd2b40b0628d7d71884810a3
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 2be78ab073d688e8882dcfdedceef6a6fc73bde3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 

@@ -1,31 +1,29 @@
 ---
-title: "如何：将项目配置为面向多个平台 | Microsoft Docs"
-ms.custom: 
+title: 如何：将项目配置为面向多个平台 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7686e792d804af85bb8f9588f3ae78fd6b6ec3e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9f56928210eb251ea54205c435c721b62503857f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：将项目配置为面向多个平台
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供了一种能够同时面向多个不同的 CPU 体系结构或平台的解决方案。 可通过“配置管理器”对话框访问设置这些功能的属性。  
   
-## <a name="targeting-a-platform"></a>面向平台  
+## <a name="target-a-platform"></a>面向平台  
  可通过“配置管理器”对话框创建和设置解决方案级别和项目级别的配置和平台。 每个解决方案级别的配置和目标的组合都具有唯一的一组与之相关的属性，通过这些属性可以轻松地在面向 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] 平台的发布配置、面向 x86 平台的发布配置以及面向 x86 平台的调试配置等之间进行切换。  
   
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>将配置设置为面向不同平台  
@@ -34,8 +32,8 @@ ms.lasthandoff: 12/22/2017
   
 2.  在“活动解决方案平台”框中，选择希望解决方案面向的平台，或者选择“\<新建>”创建一个新的平台。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 会编译应用程序，以面向在“配置管理器”对话框中被设置为活动平台的平台。  
   
-## <a name="removing-a-platform"></a>删除平台  
- 如果发现不再需要某个平台，可以使用“配置管理器”对话框将其删除。 此操作会删除你为配置和目标的这个组合所配置的所有解决方案和项目设置。  
+## <a name="remove-a-platform"></a>删除平台  
+ 如果发现不再需要某个平台，可以使用“Configuration Manager”对话框将其删除。 此操作会删除你为配置和目标的这个组合所配置的所有解决方案和项目设置。  
   
 #### <a name="to-remove-a-platform"></a>删除平台  
   
@@ -45,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  单击想要删除的平台，然后单击“删除”。  
   
-## <a name="targeting-multiple-platforms-with-one-solution"></a>通过一个解决方案面向多个平台  
+## <a name="target-multiple-platforms-with-one-solution"></a>通过一个解决方案面向多个平台  
  由于可以基于配置和平台设置的组合更改设置，因此可以设置一个面向多个平台的解决方案。  
   
 #### <a name="to-target-multiple-platforms"></a>面向多个平台  

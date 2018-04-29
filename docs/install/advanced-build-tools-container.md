@@ -1,12 +1,10 @@
 ---
-title: 容器的高级示例 | Microsoft Docs
+title: 容器的高级示例
+description: ''
 ms.custom: ''
-ms.date: 10/18/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.date: 04/18/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
@@ -14,54 +12,77 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 469b8933d5bd7f60a611161e5a871e8cfa4536f7
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: c941928495dc39dc6b6ecbe9600f39dad969fec2
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="advanced-example-for-containers"></a>容器的高级示例
 
-[将生成工具安装到容器](build-tools-container.md)中的示例 Dockerfile 始终使用最新的 microsoft/windowsservercore 映像和最新的 Visual Studio 15 生成工具 2017 安装程序。 如果将此映像发布到 [Docker 注册表](https://azure.microsoft.com/services/container-registry)以供他人进行拉取，则此映像可能适用于许多方案。 但是在实际中，更常见的是明确使用的基础映像、下载的二进制文件和安装的工具版本。
+[将生成工具安装到容器](build-tools-container.md)中的示例 Dockerfile 始终使用基于最新 microsoft/windowsservercore 映像的 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 映像和最新的 Visual Studio 生成工具 2017 安装程序。 如果将此映像发布到 [Docker 注册表](https://azure.microsoft.com/services/container-registry)以供他人进行拉取，则此映像可能适用于许多方案。 但在实际中，更常见的是明确使用的基础映像、下载的二进制文件和安装的工具版本。
 
-下面的示例 Dockerfile 使用 microsoft/windowsservercore 映像的特定版本标记。 对基础映像使用特定标记十分普遍，这样可轻松记住生成或重新生成映像始终具有相同基础。
+下面的示例 Dockerfile 使用 microsoft/dotnet-framework 映像的特定版本标记。 对基础映像使用特定标记十分普遍，这样可轻松记住生成或重新生成映像始终具有相同基础。
 
 > [!NOTE]
-> 无法将 Visual Studio 到 microsoft/windowsservercore:10.0.14393.1593 中，后者具有与在容器中启动安装程序有关的已知问题。 有关详细信息，请参阅[已知问题](build-tools-container-issues.md)。
+> 无法将 Visual Studio 安装到 microsoft/windowsservercore:10.0.14393.1593 或任何基于它的映像中，后者具有与在容器中启动安装程序有关的已知问题。 有关详细信息，请参阅[已知问题](build-tools-container-issues.md)。
 
-该示例还使用生成工具 2017 引导程序，它安装与引导程序同时生成的特定版本。 产品仍无法通过发布通道进行更新，但这对于通常会重新生成的容器不是可行方案。 如果要获取特定通道的 URL，可以从 https://aka.ms/vs/15/release/channel 下载该通道，打开 JSON 文件，然后检查引导程序 URL。 有关详细信息，请参阅[创建 Visual Studio 的网络安装](create-a-network-installation-of-visual-studio.md)。
+以下示例将下载生成工具 2017 的最新版本。 若要使用可稍后安装到容器中的旧版生成工具，则必须先[创建](create-an-offline-installation-of-visual-studio.md)和[维护](update-a-network-installation-of-visual-studio.md)布局。
+
+## <a name="install-script"></a>安装脚本
+
+若要在发生安装错误时收集日志，请在工作目录中使用以下内容创建名为“Install.cmd”的批处理脚本：
+
+```shell
+@if not defined _echo echo off
+setlocal enabledelayedexpansion
+
+call %*
+if "%ERRORLEVEL%"=="3010" (
+    exit /b 0
+) else (
+    if not "%ERRORLEVEL%"=="0" (
+        set ERR=%ERRORLEVEL%
+        call C:\TEMP\collect.exe -zip:C:\vslogs.zip
+
+        exit /b !ERR!
+    )
+)
+```
+
+## <a name="dockerfile"></a>Dockerfile
+
+在工作目录中，使用以下内容创建“Dockerfile”：
 
 ```dockerfile
+# escape=`
+
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:d841bd78721c74f9b88e2700f5f3c2d66b54cb855b8acb4ab2c627a76a46301d
-FROM microsoft/windowsservercore:10.0.14393.1770
+# You could also use the immutable tag @sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b
+ARG FROM_IMAGE=microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+FROM ${FROM_IMAGE}
 
-# Use PowerShell commands to download, validate hashes, etc.
-SHELL ["powershell.exe", "-ExecutionPolicy", "Bypass", "-Command", "$ErrorActionPreference='Stop'; $ProgressPreference='SilentlyContinue'; $VerbosePreference = 'Continue';"]
+# Copy our Install script.
+COPY Install.cmd C:\TEMP\
 
-# Download Build Tools 15.4.27004.2005 and other useful tools.
-ENV VS_BUILDTOOLS_URI=https://aka.ms/vs/15/release/6e8971476/vs_buildtools.exe \
-    VS_BUILDTOOLS_SHA256=D482171C7F2872B6B9D29B116257C6102DBE6ABA481FAE4983659E7BF67C0F88 \
-    NUGET_URI=https://dist.nuget.org/win-x86-commandline/v4.1.0/nuget.exe \
-    NUGET_SHA256=4C1DE9B026E0C4AB087302FF75240885742C0FAA62BD2554F913BBE1F6CB63A0
+# Download collect.exe in case of an install failure.
+ADD https://aka.ms/vscollect.exe C:\TEMP\collect.exe
 
-# Download tools to C:\Bin and install Build Tools excluding workloads and components with known issues.
-RUN New-Item -Path C:\Bin, C:\TEMP -Type Directory | Out-Null; \
-    [System.Environment]::SetEnvironmentVariable('PATH', "\"${env:PATH};C:\Bin\"", 'Machine'); \
-    function Fetch ([string] $Uri, [string] $Path, [string] $Hash) { \
-      Invoke-RestMethod -Uri $Uri -OutFile $Path; \
-      if ($Hash -and ((Get-FileHash -Path $Path -Algorithm SHA256).Hash -ne $Hash)) { \
-        throw "\"Download hash for '$Path' incorrect\""; \
-      } \
-    }; \
-    Fetch -Uri $env:NUGET_URI -Path C:\Bin\nuget.exe -Hash $env:NUGET_SHA256; \
-    Fetch -Uri $env:VS_BUILDTOOLS_URI -Path C:\TEMP\vs_buildtools.exe -Hash $env:VS_BUILDTOOLS_SHA256; \
-    Fetch -Uri 'https://aka.ms/vscollect.exe' -Path C:\TEMP\collect.exe; \
-    $p = Start-Process -Wait -PassThru -FilePath C:\TEMP\vs_buildtools.exe -ArgumentList '--quiet --wait --norestart --nocache --installPath C:\BuildTools --all --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 --remove Microsoft.VisualStudio.Component.Windows81SDK'; \
-    if (($ret = $p.ExitCode) -and ($ret -ne 3010)) { C:\TEMP\collect.exe; throw ('Install failed with exit code 0x{0:x}' -f $ret) }
+# Use the latest release channel. For more control, specify the location of an internal layout.
+ARG CHANNEL_URL=https://aka.ms/vs/15/release/channel
+ADD ${CHANNEL_URL} C:\TEMP\VisualStudio.chman
 
-# Restore default shell for Windows containers.
-SHELL ["cmd.exe", "/s", "/c"]
+# Download and install Build Tools excluding workloads and components with known issues.
+ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
+RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+    --installPath C:\BuildTools `
+    --channelUri C:\TEMP\VisualStudio.chman `
+    --installChannelUri C:\TEMP\VisualStudio.chman `
+    --all `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+    --remove Microsoft.VisualStudio.Component.Windows81SDK
 
 # Start developer command prompt with any other commands specified.
 ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
@@ -70,36 +91,44 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
 
-此示例下载特定工具并验证哈希代码是否匹配。 它还下载最新 Visual Studio 和 .NET 日志收集实用工具，以便如果确实发生安装失败，则可以将日志复制到主机以分析失败。
+运行以下命令以在当前工作目录中生成映像：
 
 ```shell
-> docker build -t buildtools:15.4.27004.2005 -t buildtools:latest -m 2GB .
-Sending build context to Docker daemon
-...
-Step 4/7 : RUN New-Item -Path C:\Bin, C:\TEMP -Type Directory | Out-Null; ...
- ---> Running in 4b62b4ce3a3c
-Install failed with exit code 0x643
-At line:1 char:1
-+ throw ('Install failed with exit code 0x{0:x}' -f 1603)
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OperationStopped: (Install failed with exit code 0x643:String) [], RuntimeException
-    + FullyQualifiedErrorId : Install failed with exit code 0x643
-
-> docker cp 4b62b4ce3a3c:C:\Users\ContainerAdministrator\AppData\Local\TEMP\vslogs.zip "%TEMP%\vslogs.zip"
+docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
 ```
 
-最后一行完成执行之后，在计算机上打开“%TEMP%\vslogs.zip”，或在[开发者社区](https://developercommunity.visualstudio.com)。
+使用 `--build-arg` 命令行开关选择性地传递某个或同时传递 `FROM_IMAGE` 或 `CHANNEL_URL` 参数，以指定不同的基础映像或内部布局的位置来保持固定的映像。
+
+## <a name="diagnosing-install-failures"></a>诊断安装失败
+
+此示例下载特定工具并验证哈希代码是否匹配。 它还下载最新 Visual Studio 和 .NET 日志收集实用工具，以便在安装失败时，可以将日志复制到主机以分析失败。
+
+```shell
+> docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
+Sending build context to Docker daemon
+...
+Step 8/10 : RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache ...
+ ---> Running in 4b62b4ce3a3c
+The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' returned a non-zero code: 1603
+
+> docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
+```
+
+最后一行完成执行之后，在计算机上打开“%TEMP%\vslogs.zip”，或在[开发者社区](https://developercommunity.visualstudio.com)网站上提交问题。
 
 ## <a name="get-support"></a>获取支持
+
 有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
 
 下面是另外几个支持选项：
+
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
-* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。  （此选项需要 [GitHub](https://github.com/) 帐户。）
+* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题并找到答案。
+* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。 （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅
+
 * [将生成工具安装到容器](build-tools-container.md)
 * [容器的已知问题](build-tools-container-issues.md)
 * [Visual Studio 生成工具 2017 工作负载和组件 ID](workload-component-id-vs-build-tools.md)

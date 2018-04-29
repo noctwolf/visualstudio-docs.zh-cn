@@ -1,25 +1,22 @@
 ---
-title: "在 Visual Studio 中以 .NET Framework 版本为目标 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中以 .NET Framework 版本为目标 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - .NET Framework version [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03d8b734833fad5a47f0d5517b21a7851d9258a6
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: c00c36bd9273423b4625ea67aa9875f9c49446c2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>如何：面向 .NET Framework 的某个版本
 
@@ -32,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 在创建项目时，可用的 .NET Framework 版本取决于安装的版本，以及“新项目”对话框中所选的模板。
 
-1. 在菜单栏上，依次选择“文件” > “新建” > “项目...”。
+1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
 1. 在已安装模板的列表中，选择要创建的项目类型，然后输入一个项目名称。
 
@@ -74,6 +71,6 @@ ms.lasthandoff: 03/08/2018
 
 [Visual Studio 多目标概述](../ide/visual-studio-multi-targeting-overview.md)  
 [.NET Framework 目标错误疑难解答](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)  
-[“项目设计器”->“应用程序”页 (C#)](../ide/reference/application-page-project-designer-csharp.md)  
-[“项目设计器”->“应用程序”页 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
+[项目设计器的应用程序页 (C#)](../ide/reference/application-page-project-designer-csharp.md)  
+[项目设计器的应用程序页 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
 [如何：修改目标框架和平台工具集 (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

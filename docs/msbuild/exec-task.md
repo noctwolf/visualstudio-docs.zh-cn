@@ -2,11 +2,8 @@
 title: Exec 任务 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, Exec task
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
-caps.latest.revision: 20
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec3a4f2507baa3a1ee5f2543722d5c13503af2b0
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: ecb590c4562c79853c86ee65e9c5d4e3c059d5da
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="exec-task"></a>Exec 任务
 通过使用指定的参数来运行指定程序或命令。  
@@ -53,7 +49,7 @@ ms.lasthandoff: 04/10/2018
 |`WorkingDirectory`|可选 `String` 参数。<br /><br /> 指定要在其中运行命令的目录。|  
   
 ## <a name="remarks"></a>备注  
- 在要执行的作业的特定 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务不可用时，此任务会非常有用。 但是，与更具体化的任务不同，`Exec` 任务无法从工具或其运行的命令中收集输出。  
+ 在要执行的作业的特定 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务不可用时，此任务会非常有用。 但是，与更加具体的任务不同，`Exec` 任务不能根据运行的工具或命令的结果执行其他处理或条件操作。
   
  `Exec` 任务调用 cmd.exe 而不是直接调用进程。  
   
@@ -76,6 +72,6 @@ ms.lasthandoff: 04/10/2018
 </Project>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

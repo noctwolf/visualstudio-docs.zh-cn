@@ -1,24 +1,22 @@
 ---
-title: "EditorConfig 文件的 .NET 命名约定 | Microsoft Docs"
-ms.custom: 
+title: EditorConfig 文件的 .NET 命名约定 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 14b284c797add9545efdd291b06ce62b0b75cf03
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 适用的 .NET 命名约定
 
@@ -171,7 +169,7 @@ dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-以下屏幕快照显示此命名约定在“编辑器”中的效果。 有两个公共变量的名称没有首字母大写。 一个是 `const`，另一个是 `readonly`。 因为命名规则仅应用于 readonly 符号，所以仅 `readonly` 变量显示命名规则建议。
+以下屏幕截图显示此命名约定在编辑器中的效果。 有两个公共变量的名称没有首字母大写。 一个是 `const`，另一个是 `readonly`。 因为命名规则仅应用于 `readonly` 符号，所以仅 `readonly` 变量显示命名规则建议。
 
 ![命名规则建议](media/editorconfig-naming-rule-suggestion.png)
 

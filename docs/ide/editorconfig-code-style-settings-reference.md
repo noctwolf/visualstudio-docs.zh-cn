@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中 EditorConfig 的 .NET 编码约定设置 | Microsoft Docs
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e69d7e291d1b13a5205aa4798c78c6a4e337db50
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: b313271e29bba660af1aa48654bfdfefb81e39f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 编码约定设置
 
@@ -113,7 +113,7 @@ none 或 silent | 如违反此规则，不会向用户显示任何内容。 但�
 
 本节中的样式规则均适用于 C# 和 Visual Basic。 若要查看以首选编程语言编写的代码示例，请在浏览器窗口右上角的下拉“语言”菜单中选择它。
 
-#### <a name="this_and_me">“This.”和“Me.”限定符</a>
+#### <a name="this_and_me"></a>“This.” 和“Me.” 限定符
 
 此样式规则（规则 ID IDE0003 和 IDE0009）可应用于字段、属性、方法或事件。 值为“true”表示代码符号以 `this.` (C#) 或 `Me.` (Visual Basic) 开头为首选项。 值为“false”表示码位元素不以 `this.` 或 `Me.` 开头为首选项。
 
@@ -229,7 +229,7 @@ dotnet_style_qualification_for_method = false:suggestion
 dotnet_style_qualification_for_event = false:suggestion
 ```
 
-#### <a name="language_keywords">语言关键字，而非类型引用的框架类型名称</a>
+#### <a name="language_keywords"></a>语言关键字，而非类型引用的框架类型名称
 
 此样式规则可应用到本地变量、方法参数和类成员，也可作为针对类型成员访问表达式的单独规则。 值为“true”代表对于类型（其中具有用于表示该类型的关键字），语言关键字（例如 `int` 或 `Integer`）为首选项，而非类型名称（例如 `Int32`）。 值为“false”代表类型名称为首选项，而非语言关键字。
 
@@ -295,7 +295,7 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 dotnet_style_predefined_type_for_member_access = true:suggestion
 ```
 
-#### <a name="normalize_modifiers">修饰符首选项</a>
+#### <a name="normalize_modifiers"></a>修饰符首选项
 
 本部分中的样式规则与修饰符首选项相关，包括要求使用可访问性修饰符和指定所需的修饰符排序顺序。
 
@@ -379,7 +379,7 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
-#### <a name="expression_level">表达式级首选项</a>
+#### <a name="expression_level"></a>表达式级首选项
 
 本节中的样式规则与表达式级别首选项有关，包括对象初始值设定项、集合初始值设定项、显式或推断元组名称和推断匿名类型的使用。
 
@@ -517,7 +517,7 @@ dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
-#### <a name="null_checking">Null 检查首选项</a>
+#### <a name="null_checking"></a>Null 检查首选项
 
 本节中的样式规则与 Null 检查首选项有关。
 
@@ -591,7 +591,7 @@ dotnet_style_null_propagation = true:suggestion
 
 本节中的样式规则仅适用于 C#。
 
-#### <a name="var">隐式和显式类型</a>
+#### <a name="var"></a>隐式和显式类型
 
 本节中的样式规则（规则 ID 为 IDE0007 和 IDE0008）与变量声明中的 [var](/dotnet/csharp/language-reference/keywords/var) 关键字和显式类型的使用有关。 此规则可单独应用于内置类型（前提是该类型为明显）和其他情况。
 
@@ -648,7 +648,7 @@ var f = this.Init();
 bool f = this.Init();
 ```
 
-示例 .editorconfig 文件：
+.editorconfig 文件示例：
 
 ```EditorConfig
 # CSharp code style settings:
@@ -658,7 +658,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
 ```
 
-#### <a name="expression_bodied_members">Expression-Bodied 成员</a>
+#### <a name="expression_bodied_members"></a>Expression-bodied 成员
 
 本节中的样式规则与在逻辑由单个表达式组成的情况下，[expression-bodied 成员](/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members)的使用有关。 此规则可应用于方法、构造函数、运算符、属性、索引器和访问器。
 
@@ -795,7 +795,7 @@ public int Age { get => _age; set => _age = value; }
 public int Age { get { return _age; } set { _age = value; } }
 ```
 
-示例 .editorconfig 文件：
+.editorconfig 文件示例：
 
 ```EditorConfig
 # CSharp code style settings:
@@ -808,7 +808,7 @@ csharp_style_expression_bodied_indexers = true:suggestion
 csharp_style_expression_bodied_accessors = true:suggestion
 ```
 
-#### <a name="pattern_matching">模式匹配</a>
+#### <a name="pattern_matching"></a>模式匹配
 
 本节中的样式规则与 C# 中[模式匹配](/dotnet/csharp/pattern-matching)的使用有关。
 
@@ -850,7 +850,7 @@ var s = o as string;
 if (s != null) {...}
 ```
 
-示例 .editorconfig 文件：
+.editorconfig 文件示例：
 
 ```EditorConfig
 # CSharp code style settings:
@@ -859,7 +859,7 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
-#### <a name="inlined_variable_declarations">内联变量声明</a>
+#### <a name="inlined_variable_declarations"></a>内联变量声明
 
 此样式规则与 `out` 变量是否声明为内联有关。 从 C# 7 开始，可以[在方法调用的实际参数列表中声明 out 变量](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument)，而不是在单独的变量声明中。
 
@@ -885,7 +885,7 @@ int i;
 if (int.TryParse(value, out i) {...}
 ```
 
-示例 .editorconfig 文件：
+.editorconfig 文件示例：
 
 ```EditorConfig
 # CSharp code style settings:
@@ -893,7 +893,7 @@ if (int.TryParse(value, out i) {...}
 csharp_style_inlined_variable_declaration = true:suggestion
 ```
 
-#### <a name="expression_level_csharp">表达式级首选项</a>
+#### <a name="expression_level_csharp"></a>表达式级首选项
 
 本部分的样式规则与表达式级首选项相关，包括使用[默认表达式](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)、析构变量和本地函数（优先于匿名函数）。
 
@@ -967,7 +967,7 @@ fibonacci = (int n) =>
 };
 ```
 
-示例 .editorconfig 文件：
+.editorconfig 文件示例：
 
 ```EditorConfig
 # CSharp code style settings:
@@ -977,7 +977,7 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
-#### <a name="null_checking_csharp">“NULL”检查首选项</a>
+#### <a name="null_checking_csharp"></a>“NULL”检查首选项
 
 这些样式规则与 `null` 检查的相关语法有关，包括 `throw` 表达式或 `throw` 语句的使用，以及调用 [lambda 表达式](/dotnet/csharp/lambda-expressions)时是否执行 NULL 检查或使用条件合并运算符 (`?.`)。
 
@@ -1019,7 +1019,7 @@ func?.Invoke(args);
 if (func != null) { func(args); }
 ```
 
-示例 .editorconfig 文件：
+.editorconfig 文件示例：
 
 ```EditorConfig
 # CSharp code style settings:
@@ -1028,7 +1028,7 @@ csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = false:suggestion
 ```
 
-#### <a name="code_block">代码块首选项</a>
+#### <a name="code_block"></a>代码块首选项
 
 此样式规则与是否使用大括号 `{ }` 将代码块括起来有关。
 
@@ -1053,7 +1053,7 @@ if (test) { this.Display(); }
 if (test) this.Display();
 ```
 
-示例 .editorconfig 文件：
+.editorconfig 文件示例：
 
 ```EditorConfig
 # CSharp code style settings:
@@ -1072,10 +1072,10 @@ csharp_prefer_braces = true:none
 下面的列表显示 Visual Studio 中可用的格式设置约定规则：
 
 - .NET 格式设置
-    - [组织 Using](#usings)
+    - [组织 using](#usings)
         - dotnet_sort_system_directives_first
 - C# 格式设置
-    - [新建行选项](#newline)
+    - [换行符选项](#newline)
         - csharp_new_line_before_open_brace
         - csharp_new_line_before_else
         - csharp_new_line_before_catch
@@ -1101,7 +1101,7 @@ csharp_prefer_braces = true:none
 
 本节中的格式设置规则均适用于 C# 和 Visual Basic。
 
-#### <a name="usings">组织 using</a>
+#### <a name="usings"></a>组织 using
 
 此格式设置规则与相对于其他 using 指令的 System.* using 指令的位置有关。
 
@@ -1130,7 +1130,7 @@ using Octokit;
 using System.Threading.Tasks;
 ```
 
-示例 .editorconfig 文件：
+.editorconfig 文件示例：
 
 ```EditorConfig
 # .NET formatting settings:
@@ -1142,7 +1142,7 @@ dotnet_sort_system_directives_first = true
 
 本节中的格式设置规则仅适用于 C# 代码。
 
-#### <a name="newline">新建行选项</a>
+#### <a name="newline"></a>换行符选项
 
 这些格式设置规则与是否使用新行设置代码的格式有关。
 
@@ -1327,7 +1327,7 @@ var q = from a in e from b in e
         select a * b;
 ```
 
-示例 .editorconfig 文件：
+.editorconfig 文件示例：
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1341,7 +1341,7 @@ csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
 ```
 
-#### <a name="indent">缩进选项</a>
+#### <a name="indent"></a>缩进选项
 
 这些格式设置规则与是否使用缩进设置代码的格式有关。
 
@@ -1476,7 +1476,7 @@ class C
 }
 ```
 
-示例 .editorconfig 文件：
+.editorconfig 文件示例：
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1486,7 +1486,7 @@ csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
 ```
 
-#### <a name="spacing">间距选项</a>
+#### <a name="spacing"></a>间距选项
 
 这些格式设置规则与是否使用空格字符设置代码的格式有关。
 
@@ -1585,7 +1585,7 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
-示例 .editorconfig 文件：
+.editorconfig 文件示例：
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1597,7 +1597,7 @@ csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
 ```
 
-#### <a name="wrapping">换行选项</a>
+#### <a name="wrapping"></a>换行选项
 
 这些格式设置规则与语句和代码块中单一行以及单独的行的使用有关。
 
@@ -1642,7 +1642,7 @@ public int MyProperty
 }
 ```
 
-示例 .editorconfig 文件：
+.editorconfig 文件示例：
 
 ```EditorConfig
 # CSharp formatting settings:

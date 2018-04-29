@@ -1,52 +1,43 @@
 ---
-title: "LINQ to XML 动态属性 | Microsoft Docs"
-ms.custom: 
+title: LINQ to XML 动态属性
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0455f47c-4a68-4f2e-a3f8-dd1d85b99012
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bf92d22b3c27d23fa90b6d9be13cf4fa6604384a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eab219b0babbb423c10a08f1f9c4888ad70aff12
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>LINQ to XML 动态属性
-本节提供有关 LINQ to XML 中动态属性的参考信息。 具体地说，这些属性由 <xref:System.Xml.Linq.XAttribute> 命名空间中的 <xref:System.Xml.Linq.XElement> 和 <xref:System.Xml.Linq> 类公开。  
-  
- 如 [使用 LINQ to XML 进行 WPF 数据绑定概述](../designers/wpf-data-binding-with-linq-to-xml-overview.md) 主题中所述，每个动态属性都等效于同一类中的标准公共属性或方法。 多数情况下应使用这些标准成员；动态属性是专门为 LINQ to XML 数据绑定方案提供的。 有关这些类的标准成员的更多信息，请参见 <xref:System.Xml.Linq.XAttribute> 和 <xref:System.Xml.Linq.XElement> 参考主题。  
-  
- 就其解析值而论，本节中的动态属性可分为两类：  
-  
--   解析为单个值的简单动态属性，如 `Value` 和 <xref:System.Xml.Linq.XAttribute> 类中的 <xref:System.Xml.Linq.XElement> 属性。  
-  
--   解析为索引器类型的索引值，如 [Elements](../designers/elements-xelement-dynamic-property.md) 和 <xref:System.Xml.Linq.XElement> 的 [Descendants](../designers/descendants-xelement-dynamic-property.md) 属性。 对于要解析为所需值或集合的索引器类型，必须为其传递展开名称参数。  
-  
- 返回 <xref:System.Collections.Generic.IEnumerable%601> 类型索引值的所有动态属性都使用延迟执行。 有关延迟执行的详细信息，请参阅 [LINQ 查询简介 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)。  
-  
-## <a name="in-this-section"></a>本节内容  
-  
-|主题|描述|  
-|-----------|-----------------|  
-|[XAttribute 类动态属性](../designers/xattribute-class-dynamic-properties.md)|提供有关由 <xref:System.Xml.Linq.XAttribute> 类公开的动态属性的详细信息。|  
-|[XElement 类动态属性](../designers/xelement-class-dynamic-properties.md)|提供有关由 <xref:System.Xml.Linq.XElement> 类公开的动态属性的详细信息。|  
-  
-## <a name="reference"></a>参考  
- <xref:System.Xml.Linq>  
-  
- <xref:System.Xml.Linq.XElement?displayProperty=fullName>  
-  
- <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>  
-  
-## <a name="see-also"></a>请参阅  
- [使用 LINQ to XML 进行 WPF 数据绑定](../designers/wpf-data-binding-with-linq-to-xml.md)   
- [使用 LINQ to XML 进行 WPF 数据绑定概述](../designers/wpf-data-binding-with-linq-to-xml-overview.md)   
- [LINQ 查询简介 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
+
+本节提供有关 LINQ to XML 中动态属性的参考信息。 具体地说，这些属性由 <xref:System.Xml.Linq.XAttribute> 命名空间中的 <xref:System.Xml.Linq.XElement> 和 <xref:System.Xml.Linq> 类公开。
+
+如 [使用 LINQ to XML 进行 WPF 数据绑定概述](../designers/wpf-data-binding-with-linq-to-xml-overview.md) 主题中所述，每个动态属性都等效于同一类中的标准公共属性或方法。 多数情况下应使用这些标准成员；动态属性是专门为 LINQ to XML 数据绑定方案提供的。 有关这些类的标准成员的更多信息，请参见 <xref:System.Xml.Linq.XAttribute> 和 <xref:System.Xml.Linq.XElement> 参考主题。
+
+就其解析值而论，本节中的动态属性可分为两类：
+
+- 解析为单个值的简单动态属性，如 `Value` 和 <xref:System.Xml.Linq.XAttribute> 类中的 <xref:System.Xml.Linq.XElement> 属性。
+
+- 解析为索引器类型的索引值，如 [Elements](../designers/elements-xelement-dynamic-property.md) 和 <xref:System.Xml.Linq.XElement> 的 [Descendants](../designers/descendants-xelement-dynamic-property.md) 属性。 对于要解析为所需值或集合的索引器类型，必须为其传递展开名称参数。
+
+返回 <xref:System.Collections.Generic.IEnumerable%601> 类型索引值的所有动态属性都使用延迟执行。 有关延迟执行的详细信息，请参阅 [LINQ 查询简介 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)。
+
+## <a name="reference"></a>参考
+
+- <xref:System.Xml.Linq>
+- <xref:System.Xml.Linq.XElement?displayProperty=fullName>
+- <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>
+
+## <a name="see-also"></a>请参阅
+
+- [使用 LINQ to XML 进行 WPF 数据绑定](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
+- [使用 LINQ to XML 进行 WPF 数据绑定概述](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
+- [LINQ 查询简介 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)

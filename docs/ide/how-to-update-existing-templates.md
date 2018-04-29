@@ -1,12 +1,10 @@
 ---
-title: "在 Visual Studio 中更新现有项目和项模板 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中更新现有项目和项模板 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
 - Visual Studio templates, updating
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9401f8a9a07f7098575ff267825982a03024e968
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 9465c098144f14db496bc1dbc382d6a30c8882cb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新现有模板
 
-创建模板并将文件压缩为一个 .zip 文件后，你可能想要修改该模板。 可以通过以下两种方式完成此操作，即手动更改模板中的文件，或者从基于该模板的项目中导出新模板。
+创建模板并将文件压缩为一个 .zip 文件后，可能想要修改该模板。 可以通过以下两种方式完成此操作，即手动更改模板中的文件，或者从基于该模板的项目中导出新模板。
 
 ## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>使用“导出模板向导”更新现有项目模板
 
@@ -45,7 +43,7 @@ Visual Studio 提供了“导出模板向导”，该向导可用于更新现有
 
 1. 删除旧的模板 .zip 文件。
 
-## <a name="manually-updating-an-existing-template"></a>手动更新现有模板
+## <a name="manually-update-an-existing-template"></a>手动更新现有模板
 
 可通过修改压缩的 .zip 文件中的文件来更新现有模板，而无需使用“导出模板向导”。
 
@@ -63,7 +61,7 @@ Visual Studio 提供了“导出模板向导”，该向导可用于更新现有
 
 1. 选择模板中的文件，然后通过右键单击或从上下文菜单中选择“发送至” > “压缩的文件夹（zip 格式）”。
 
-    所选的文件被压缩到一个 .zip 文件中。
+    所选的文件将压缩到一个 .zip 文件中。
 
 1. 将新 .zip 文件放在旧 .zip 文件的同一目录中。
 

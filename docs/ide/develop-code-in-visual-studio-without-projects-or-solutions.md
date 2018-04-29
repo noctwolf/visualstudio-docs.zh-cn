@@ -1,30 +1,28 @@
 ---
-title: "在 Visual Studio 中开发代码而无需创建项目或解决方案 | Microsoft Docs"
+title: 在 Visual Studio 中开发代码而无需创建项目或解决方案 | Microsoft Docs
 ms.date: 02/21/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c50a07992a1856ad0d5f45c0200e0b8a232cb7
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: 082e64d80080eec48c311254461b85812a969841
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中开发代码而无需创建项目或解决方案
 
 在 Visual Studio 2017 中，你可以在 Visual Studio 中打开几乎任何类型的基于目录的项目的代码，而无需创建解决方案或者项目文件。 这意味着，例如，可以在 GitHub 上克隆一个存储库，然后在 Visual Studio 中直接打开并开始开发，而无需创建解决方案或项目。 如果需要，可以指定自定义生成任务并通过简单的 JSON 文件启动参数。
 
-在 Visual Studio 中打开代码文件之后，解决方案浏览器会显示文件夹中的所有文件。 可以单击任何文件开始编辑。 在后台，Visual Studio 开始对文件编制索引，以启用 IntelliSense、导航和重构功能。 在编辑、创建、移动或删除文件时，Visual Studio 会自动跟踪更改，并不断更新其 IntelliSense 索引。 代码带有语法着色，许多情况下还含有基本的 IntelliSense 语句完成。
+在 Visual Studio 中打开代码文件之后，“解决方案资源管理器”会显示文件夹中的所有文件。 可以单击任何文件开始编辑。 在后台，Visual Studio 开始对文件编制索引，以启用 IntelliSense、导航和重构功能。 在编辑、创建、移动或删除文件时，Visual Studio 会自动跟踪更改，并不断更新其 IntelliSense 索引。 代码带有语法着色，许多情况下还含有基本的 IntelliSense 语句完成。
 
 ## <a name="open-any-code"></a>打开任何代码
 
@@ -46,7 +44,7 @@ ms.lasthandoff: 02/23/2018
 
    ![GitHub 克隆按钮](./media/VSIDE_Code_Clone.png)
 
-1. 在 Visual Studio 中，选择“团队资源管理器”选项卡，打开团队资源管理器。 如果未看到选项卡，则从“视图” > “团队资源管理器”中将其打开。
+1. 在 Visual Studio 中，选择“团队资源管理器”选项卡，打开“团队资源管理器”。 如果未看到选项卡，则从“视图” > “团队资源管理器”中将其打开。
 
 1. 在团队资源管理器的“本地 Git 存储库”部分中，选择“克隆”命令，然后将 GitHub 页的 URL 粘贴到文本框。
 
@@ -58,7 +56,7 @@ ms.lasthandoff: 02/23/2018
 
    ![已克隆的存储库](./media/VSIDE_Code_Clone3.png)
 
-1. 选择“显示文件夹视图”命令，查看解决方案资源管理器中的文件
+1. 选择“显示文件夹视图”命令，查看“解决方案资源管理器”中的文件。
 
    ![显示文件夹视图](./media/VSIDE_Code_Clone3_show.png)
 

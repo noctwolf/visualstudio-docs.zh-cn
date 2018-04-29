@@ -1,22 +1,23 @@
 ---
-title: Visual Studio 中的 C++ 入门 | Microsoft Docs
+title: Visual Studio 中的 C++ 入门
+description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 65cbfd23c1467988f720822cd68361f5acca23b9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 入门
 
@@ -52,7 +53,7 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
 1. 选择“确定”按钮，创建应用项目和解决方案。
 
-   随后将创建 HelloApp 项目和解决方案及 Windows 控制台应用的基本文件，并自动将其加载到“解决方案资源管理器”中。 HelloApp.cpp 文件在代码编辑器中打开。 “解决方案资源管理器”中会显示这些项：
+   随后将创建 HelloApp 项目和解决方案及 Windows 控制台应用的基本文件，并自动将其加载到“解决方案资源管理器”中。 代码编辑器中会打开 HelloApp.cpp 文件。 “解决方案资源管理器”中会显示这些项：
 
    ![“解决方案资源管理器”中的解决方案文件](../ide/media/get-started-cpp-solution-explorer.png "“解决方案资源管理器”中的解决方案文件")
 
@@ -85,7 +86,7 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
    using namespace std;
    ```
 
-   你可能注意到了，输入代码时出现了一个框。 此框包含针对所输入字符的自完成建议。 此框是 C++ IntelliSense 的一部分，它提供了编码提示，包括类或接口的成员和参数信息。 你还可以使用代码段，它们是预定义的代码块。 有关详细信息，请参阅 [Using IntelliSense](../ide/using-intellisense.md) 和 [Code Snippets](../ide/code-snippets.md)。
+   你可能注意到了，输入代码时出现了一个框。 此框包含针对所输入字符的自完成建议。 此框是 C++ IntelliSense 的一部分，它提供了编码提示，包括类或接口的成员和参数信息。 你还可以使用代码段，它们是预定义的代码块。 有关详细信息，请参阅[使用 IntelliSense](../ide/using-intellisense.md) 和[代码片段](../ide/code-snippets.md)。
 
    ![编辑器中已修复的代码](../ide/media/get-started-cpp-cout-fix.png "编辑器中已修复的代码")
 
@@ -105,11 +106,11 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
 ### <a name="to-debug-the-app"></a>若要调试应用程序
 
-1. 若要启用调试器，请选择菜单栏上的“调试”>“开始调试”。
+若要启用调试器，请选择菜单栏上的“调试”>“开始调试”。
 
-   ![“调试”菜单上的“开始调试”命令](../ide/media/get-started-cpp-start-debugging-menu.png "“调试”菜单上的“开始调试”命令")
+![“调试”菜单上的“开始调试”命令](../ide/media/get-started-cpp-start-debugging-menu.png "“调试”菜单上的“开始调试”命令")
 
-   调试器启动并运行代码。 在调试器停止运行时，控制台窗口（类似命令提示符的单独窗口）将显示几秒钟，但是将很快关闭。 若要查看文本，你需要设置一个断点以停止程序执行。
+调试器启动并运行代码。 在调试器停止运行时，控制台窗口（类似命令提示符的单独窗口）将显示几秒钟，但是将很快关闭。 若要查看文本，你需要设置一个断点以停止程序执行。
 
 ### <a name="to-add-a-breakpoint"></a>要添加一个断点
 
@@ -149,12 +150,12 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
 此生成完成后，应用创建完成，可在任何命令提示符窗口中复制和运行该应用。 这个应用的作用可能不大，但这是一个好的开始。
 
-祝贺你完成此快速入门！ 如要了解更多示例，请参阅 [Visual Studio Samples](../ide/visual-studio-samples.md)。
+祝贺你完成此快速入门！ 如要了解更多示例，请参阅 [Visual Studio 示例](../ide/visual-studio-samples.md)。
 
 ## <a name="see-also"></a>请参阅
 
-[使用 Visual Studio IDE 进行 C++ 桌面开发](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[演练：使用 C# 或 Visual Basic 创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Productivity Tips for Visual Studio](../ide/productivity-tips-for-visual-studio.md)（Visual Studio 的工作效率提示）  
-[Visual Studio 示例](../ide/visual-studio-samples.md)  
-[Visual Studio 开发入门](../ide/get-started-developing-with-visual-studio.md)
+- [使用 Visual Studio IDE 进行 C++ 桌面开发](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
+- [演练：使用 C# 或 Visual Basic 创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [提高 Visual Studio 使用效率的提示](../ide/productivity-tips-for-visual-studio.md)
+- [Visual Studio 示例](../ide/visual-studio-samples.md)
+- [Visual Studio 开发入门](../ide/get-started-developing-with-visual-studio.md)

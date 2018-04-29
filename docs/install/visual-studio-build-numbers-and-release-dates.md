@@ -1,23 +1,22 @@
 ---
-title: Visual Studio 2017 生成号和发布日期 | Microsoft Docs
+title: Visual Studio 2017 生成号和发布日期
 description: Visual Studio 2017 已发布版本和生成号列表，按日期排序。
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 04/04/2018
+ms.date: 04/18/2018
 ms.topic: reference
 helpviewer_keywords: ''
-ms.technology:
-- vs-acquisition
-ms.service: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f941891c858d36d4cbe1de706d100c0b27d9c85
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: f24a293e3efe40f2003bf0ba993f7896d2d93c52
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 生成号和发布日期
 
@@ -25,6 +24,10 @@ ms.lasthandoff: 04/06/2018
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.7.0 预览版 4.0 | 预览 | 2018 年 4 月 18 日 | 15.7.27617.1 |
+| 15.6.6 | 发布 | 2018 年 4 月 10 日 | 15.6.27428.2037 |
+| 15.0.12 | 发布 | 2018 年 4 月 10 日 | 15.0.26228.30 |
+| 15.7.0 预览版 3.0 | 预览 | 2018 年 4 月 9 日 | 15.7.27604.0 |
 | 15.6.5 | 发布 | 2018 年 4 月 4 日 | 15.6.27428.2027 |
 | 15.6.4 | 发布 | 2018 年 3 月 22 日 | 15.6.27428.2015 |
 | 15.7.0 预览版 2.0 | 预览 | 2018 年 3 月 21 日 | 15.7.27520.0 |
@@ -124,7 +127,7 @@ ms.lasthandoff: 04/06/2018
 
 * 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
 * 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
-* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题，并在其中提问和找到答案。
+* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题并找到答案。
 * 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。 （此选项需要 [GitHub](https://github.com/) 帐户。）
 
 ## <a name="see-also"></a>请参阅

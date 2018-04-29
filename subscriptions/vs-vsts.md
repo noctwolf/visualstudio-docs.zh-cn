@@ -1,19 +1,19 @@
 ---
 title: Visual Studio 订阅者的 VSTS 权益 | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7fbfdd5a23196afeeb24b2ce380fce44d457fb99
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: 了解 Visual Studio 订阅者如何使用 Visual Studio Team Services (VSTS)。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Visual Studio 订阅者的 Visual Studio Team Services (VSTS) 权益
 
@@ -26,12 +26,14 @@ ms.lasthandoff: 03/22/2018
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准、年度云、月度云）   | VL、Azure、Retail、MPN、BizSpark、NFR<sup>1</sup>、FTE  | 基本功能、测试管理器、包管理、自承载 CI/CD       |  是          |
-| Visual Studio Professional（标准、年度云、月度云） | VL、Azure、零售                                       | Basic                                                            |  是          |
+| Visual Studio Enterprise（标准、年度云、月度云）   | VL、Azure、零售、所选 NFR<sup>1</sup>、FTE  | 基本功能、测试管理器、包管理、自承载 CI/CD       |  是          |
+| Visual Studio Professional（标准、年度云、月度云） | VL、Azure、零售、                                        | Basic                                                            |  是          |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 基本功能、测试管理器                                              |  是          |
 | MSDN 平台（标准）                                          | VL、零售                                              | 基本功能、测试管理器                                              |  是          |
 
-<sup>1</sup>  *包括：限制转售 (NFR)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)*
+<sup>1</sup> 包括：限制转售 (NFR)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (Enterprise)、BizSpark、MCT 软件和服务开发人员。不包括：MCT 软件和服务、Imagine。
+
+
 
 了解有关 VSTS 功能的详细信息：
 - [基本](https://www.visualstudio.com/team-services/compare-features/)

@@ -1,25 +1,21 @@
 ---
-title: "Visual Studio 中的调试入门 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的调试入门 | Microsoft Docs
+ms.custom: ''
 ms.date: 12/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 085ea00f95124eb6ae2ed7ccc96eed692be0d649
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Visual Studio 中的调试入门
 Visual Studio 提供一组强大的集成项目生成和调试工具。 本主题将介绍如何开始使用一组最基本的调试 UI 功能。  
@@ -49,7 +45,7 @@ Visual Studio 提供一组强大的集成项目生成和调试工具。 本主�
 
  ![Visual Studio 输出和错误列表](../ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
 
- 单击“错误列表”窗口中的错误行，并跳转至发生错误的行。 （或单击右上方的“快速启动”栏，在其中键入行号，然后按 Enter，以打开行号。 这是转至“选项”窗口条目最快的方法，你可以在这里打开行号。 了解如何使用“快速启动”栏，可以省去多次单击 UI！）  
+ 单击“错误列表”窗口中的错误行，并跳转至发生错误的行。 （或单击右上方的“快速启动”栏，在其中键入行号，然后按 Enter，打开行号。 这是转至“选项”窗口条目最快的方法，你可以在这里打开行号。 了解如何使用“快速启动”栏，可以省去多次单击 UI！）  
 
  ![具有行号的 Visual Studio 编辑器](../ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
 
@@ -74,7 +70,7 @@ Visual Studio 提供一组强大的集成项目生成和调试工具。 本主�
 
  你也可以单击“错误列表”的“代码”列中的超链接错误代码值。 这将启动该错误代码的 Bing 搜索。  
 
-### <a name="use-light-bulbs-to-fix-or-refactor-code"></a>使用“灯泡”修复或重构代码  
+### <a name="use-light-bulbs-to-fix-or-refactor-code"></a>使用灯泡修复或重构代码  
  灯泡是 Visual Studio 的新增功能，使用此功能可重构代码内联。 灯泡是快速、高效修复常见问题的简单方法。 若要使用灯泡，请右键单击某个警告波形曲线（或在将鼠标悬停在波形曲线上时按 Ctrl+. ），然后选择“快速操作”。  
 
  ![Visual Studio 灯泡快速选项](../ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
@@ -83,11 +79,11 @@ Visual Studio 提供一组强大的集成项目生成和调试工具。 本主�
 
  ![Visual Studio 灯泡预览](../ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
 
- 只要代码分析器确定有机会修复、重构或改进你的代码，就能使用灯泡。 单击任意代码行，右键单击以打开上下文菜单，然后选择“快速操作”（或者如果注重效率，请再次按 Ctrl+.）。 如果有可用的区域重构或改进选项，将显示这些选项；否则，IDE 的左下角面板将显示消息 `No quick options available here`。  
+ 只要代码分析器确定有机会修复、重构或改进代码，就能使用灯泡。 单击任意代码行，右键单击以打开上下文菜单，然后选择“快速操作”（或者如果注重效率，请再次按 Ctrl+.）。 如果有可用的区域重构或改进选项，将显示这些选项；否则，IDE 的左下角面板将显示消息 `No quick options available here`。  
 
  ![Visual Studio 灯泡“无选项”文本](../ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
 
- 根据经验，可以快速使用箭头键和 Ctrl+. 检查“快速选项”重构机会并清理你的代码！  
+ 根据经验，可以快速使用箭头键和 Ctrl+. 检查快速选项重构机会并清理代码！  
 
  有关灯泡的详细信息，请阅读[使用灯泡执行快速操作](../ide/perform-quick-actions-with-light-bulbs.md)。  
 
@@ -139,7 +135,7 @@ Visual Studio 提供一组强大的集成项目生成和调试工具。 本主�
 
  请阅读[使用 IntelliTest 为代码生成单元测试](../test/generate-unit-tests-for-your-code-with-intellitest.md)获取入门指南。  
 
- 若要了解有关 Visual Studio 中的单元测试以及它们如何帮助你创建更高质量代码的详细信息，请阅读[单元测试的基础知识](../test/unit-test-basics.md)。  
+ 若要了解有关 Visual Studio 中的单元测试以及它们如何帮助创建更高质量代码的详细信息，请阅读[单元测试的基础知识](../test/unit-test-basics.md)。  
 
 ### <a name="perform-static-code-analysis"></a>执行静态代码分析  
  “静态代码分析”是“自动检查我的代码是否存在可能导致运行时错误或代码管理问题的常见问题”的流行说法。 养成在清除了阻止生成的明显错误后运行该分析的习惯，然后花一些时间解决其可能产生的警告。 你将为自己省去一些将来的麻烦，并了解几种代码样式技术。  

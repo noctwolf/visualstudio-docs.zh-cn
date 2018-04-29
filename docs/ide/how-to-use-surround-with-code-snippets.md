@@ -1,25 +1,22 @@
 ---
-title: "如何使用外侧代码片段 | Microsoft Docs"
-ms.custom: 
+title: 如何使用外侧代码片段 | Microsoft Docs
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 685f227205deb306d7d18dcea2e620e2366ad73f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e2c5211291fbfe3bb7c8ab3fe1eaa371a2dd8e2c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>如何使用外侧代码片段
 
@@ -61,5 +58,5 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>请参阅
 
-[C# 代码片段](../ide/visual-csharp-code-snippets.md)  
-[代码片段选择器](../ide/reference/code-snippet-picker.md)
+- [C# 代码片段](../ide/visual-csharp-code-snippets.md)
+- [代码片段选择器](../ide/reference/code-snippet-picker.md)

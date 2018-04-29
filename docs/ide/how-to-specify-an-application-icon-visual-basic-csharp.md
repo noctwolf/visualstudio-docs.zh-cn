@@ -1,27 +1,23 @@
 ---
-title: "如何：指定应用程序图标（Visual Basic、C#）| Microsoft Docs"
-ms.custom: 
+title: 如何：指定应用程序图标（Visual Basic、C#）
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
 - application icons [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3309b02a50f3f14d166044c2d1cea35bdab3922f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 8da1de87031db962ede178a742325d9206e808c3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>如何：指定应用程序图标（Visual Basic、C#）
 
@@ -42,9 +38,9 @@ ms.lasthandoff: 01/29/2018
 
 1. (Visual Basic)&mdash;在“图标”列表中，选择一个图标 (.ico) 文件。
 
-    C#&mdash;在“图标”列表附近，选择“浏览...>”**\<**按钮，然后浏览到所需图标文件的位置。
+    C#&mdash;在“图标”列表附近，选择“浏览...>”**\<** 按钮，然后浏览到所需图标文件的位置。
 
 ## <a name="see-also"></a>请参阅
 
-[“项目设计器”->“应用程序”页 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
-[“项目设计器”->“应用程序”页 (C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [项目设计器的应用程序页 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+- [项目设计器的应用程序页 (C#)](../ide/reference/application-page-project-designer-csharp.md)

@@ -1,13 +1,10 @@
 ---
-title: "如何：指定生成事件 (Visual Basic) | Microsoft Docs"
-ms.custom: 
+title: 如何：指定生成事件 (Visual Basic) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe2ab7f174f71933d474aa4737dc713c6540492
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 976db0262666da2ba0c275d9dae9530faf3f5c38
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定生成事件 (Visual Basic)
 Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译过程的一部分的其他操作。 预生成事件发生于编译之前；生成后事件发生于编译之后。  
@@ -119,11 +115,11 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
     End Sub  
     ```  
   
-     此命令采用两个参数。 第一个参数是应用程序清单的路径（即生成进程在其中创建清单的文件夹，通常为 Projectname.publish）。 第二个参数是新的操作系统版本。  
+     此命令采用两个参数。 第一个参数是应用程序清单的路径（即生成进程在其中创建清单的文件夹，通常为 <Projectname>.publish）。 第二个参数是新的操作系统版本。  
   
 5.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
-6.  将 .exe 文件复制到目录，例如 `C:\TEMP\ChangeOSVersionVB.exe`。  
+6.  将 .exe 文件复制到类似于 C:\TEMP\ChangeOSVersionVB.exe 的目录。  
   
  接下来，在生成后事件中调用此命令以更改应用程序清单。  
   
@@ -132,14 +128,13 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
 1.  为要发布的项目创建 Windows 应用程序。 在“文件”菜单上，单击“新建”，然后单击“项目”。  
   
 2.  在“新建项目”对话框的“Visual Basic”节点中，依次选择“Windows 经典桌面”、“Windows 窗体应用”模板。 将项目命名为 `VBWinApp`。  
-  
 3.  在“解决方案资源管理器”中选择一个项目，然后在“项目”菜单上单击“属性”。  
   
-4.  在项目设计器中，转到“发布”页面，并将“发布位置”设置为 `C:\TEMP\`。  
+4.  在项目设计器中，转到“发布”页面，并将“发布位置”设置为 C:\TEMP。  
   
 5.  单击“立即发布”以发布项目。  
   
-     将生成清单文件，并将其置于 `C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest` 中。 若要查看清单，请右键单击该文件，然后依次单击“打开方式”、“从列表中选择程序”、“记事本”。  
+     随即生成清单文件并将其放入 C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest。 若要查看清单，请右键单击该文件，然后依次单击“打开方式”、“从列表中选择程序”、“记事本”。  
   
      在文件中搜索 `<osVersionInfo>` 元素。 例如，版本可能为：  
   
@@ -155,7 +150,7 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
   
      生成项目时，此命令会将应用程序清单中的最低操作系统版本更改为 5.1.2600.0。  
   
-     `$(TargetPath)` 宏表示正在创建的可执行文件的完整路径。 因此，$(TargetPath). 清单将指定在 bin 目录中创建的应用程序清单。 发布操作会将此清单复制到之前设置的发布位置。  
+     `$(TargetPath)` 宏表示正在创建的可执行文件的完整路径。 因此，$(TargetPath).manifest 将指定在 bin 目录中创建的应用程序清单。 发布操作会将此清单复制到之前设置的发布位置。  
   
 8.  再次发布该项目。 转到“发布”页面，然后单击“立即发布”。  
   
@@ -169,7 +164,7 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
   
 ## <a name="see-also"></a>请参阅
 
-[“项目设计器”->“编译”页 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
+[“编译”页, 项目设计器 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
 [“项目设计器”->“发布”页](../ide/reference/publish-page-project-designer.md)   
 [预生成事件/生成后事件命令行对话框](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
 [如何：指定生成事件 (C#)](../ide/how-to-specify-build-events-csharp.md)

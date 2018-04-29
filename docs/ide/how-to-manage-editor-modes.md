@@ -1,12 +1,10 @@
 ---
-title: "Visual Studio 全屏和虚拟空间模式 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 全屏和虚拟空间模式 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
 - views, virtual space
@@ -24,24 +22,24 @@ helpviewer_keywords:
 - views, changing mode
 - views, outlining
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 70daed24f72e6bf9efc0c81fc309c4b893285c39
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e95940eaad599d149e504db9c1d48c5c011409e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-manage-editor-modes"></a>如何：管理编辑器模式
 可在各种显示模式下显示 Visual Studio 代码编辑器。  
   
 > [!NOTE]
-> 显示的对话框和菜单命令可能与本文中的描述不同，具体取决于现用的设置或版本。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具”，“导入和导出设置”，然后选择“重置所有设置”。
+> 显示的对话框和菜单命令可能与本文中的描述不同，具体取决于现用的设置或版本。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具” > “导入和导出设置”，再选择“重置所有设置”。
   
-## <a name="enabling-full-screen-mode"></a>启用全屏模式  
+## <a name="enable-full-screen-mode"></a>启用全屏模式  
 启用“全屏”模式后，可选择隐藏所有工具窗口并仅查看文档窗口。  
   
 #### <a name="to-enable-full-screen-mode"></a>启用全屏模式  
@@ -52,14 +50,14 @@ ms.lasthandoff: 12/22/2017
   
 -   在“命令”窗口中发出命令 `View.Fullscreen`。  
   
-## <a name="enabling-virtual-space-mode"></a>启用虚空格模式  
+## <a name="enable-virtual-space-mode"></a>启用虚空格模式  
 在“虚空格”模式下，将在每个代码行末尾插入空格。 选择此选项可将注释放置在代码旁的一致位置。  
   
 #### <a name="to-enable-virtual-space-mode"></a>启用虚空格模式  
   
 1.  从“工具”菜单中选择“选项”。
 
-2.  展开“文本编辑器”文件夹，选择“所有语言”，全局设置此选项，或选择特定语言的文件夹。 例如，若要仅在 Visual Basic 中启用行号，则在“文本编辑器”节点中选择“Basic”。
+2.  展开“文本编辑器”文件夹，选择“所有语言”，全局设置此选项，或选择特定语言的文件夹。 例如，若要仅在 Visual Basic 中启用行号，则选择“Basic” > “文本编辑器”节点。
   
 3.  选择“常规”选项，然后在“设置”下选择“启用虚空格”。  
   

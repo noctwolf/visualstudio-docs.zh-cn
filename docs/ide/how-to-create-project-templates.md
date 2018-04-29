@@ -1,24 +1,21 @@
 ---
-title: "创建 Visual Studio 的项目模板 | Microsoft Docs"
-ms.custom: 
+title: 创建 Visual Studio 的项目模板 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ExportTemplateWizard
 helpviewer_keywords:
 - project templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0da7a7979b4fed6f58cdda6f1eafa55517e4df9b
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: a18b756b38a810915ea49e9f3208e9349afda7ef
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-project-templates"></a>如何：创建项目模板
 
@@ -48,7 +45,7 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="other-ways-to-create-project-templates"></a>创建项目模板的其他方法
 
-可通过将构成项目的文件收集到一个文件夹中来手动创建项目模板，然后使用适当的元数据创建 .vstemplate XML 文件。 有关详细信息，请参阅[如何：手动创建 Web 模板](../ide/how-to-manually-create-web-templates.md)。
+可通过将构成项目的文件收集到一个文件夹中来手动创建项目模板，然后使用相应的元数据创建 .vstemplate XML 文件。 有关详细信息，请参阅[如何：手动创建 Web 模板](../ide/how-to-manually-create-web-templates.md)。
 
 如果已安装 Visual Studio SDK，可以使用“VSIX 项目”模板将完成的模板包装到 VSIX 文件中，供部署使用。 有关详细信息，请参阅 [VSIX 项目模板入门](../extensibility/getting-started-with-the-vsix-project-template.md)。
 

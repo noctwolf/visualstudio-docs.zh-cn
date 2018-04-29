@@ -1,12 +1,9 @@
 ---
-title: "在 Visual Studio 中组织模板 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中组织模板 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
@@ -15,12 +12,12 @@ helpviewer_keywords:
 - templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c58bda5570be9cdb7fba7a8f90a282df7b7167a2
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.openlocfilehash: 68ba015c1a1eb125f02e65c8a19c6f516e48f72a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：查找和组织项目和项模板
 
@@ -40,7 +37,7 @@ ms.lasthandoff: 01/13/2018
 
 例如，以下目录包含用于 C# 的用户项目模板：
 
-   C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\
+- C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#
 
 > [!TIP]
 > 可在“工具” > “选项” > “项目和解决方案” > “位置”中为用户模板设置位置。
@@ -49,17 +46,17 @@ ms.lasthandoff: 01/13/2018
 
 默认情况下，随 Visual Studio 一起安装的模板位于：
 
-- \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*Programming Language*\\*Locale ID*
+- \\<VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\\<Programming Language\>\\<Locale ID>
 
-- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*Programming Language*\\*Locale ID*
+- \\<VisualStudioInstallationDirectory\>\Common7\IDE\ProjectTemplates\\<Programming Language\>\\<Locale ID>
 
-例如，以下目录包含以英语表示的 Visual Basic 项模板 (LCID 1033)：
+例如，以下目录包含以英语 (LCID 1033) 表示的 Visual Basic 项模板：
 
-   C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
+- C:\\<VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\VisualBasic\1033
 
 ## <a name="organize-templates"></a>组织模板
 
-“新建项目”和“添加新项”对话框中的类别反映存在于已安装模板位置和用户模板位置的目录结构。 通过向用户模板目录添加新文件夹，可将用户模板组织到其各自的类别中。 “新建项目”和“添加新项”对话框将反映出对用户模板类别所做的任何更改。
+“新建项目”和“添加新项”对话框中的类别反映存在于已安装模板位置和用户模板位置的目录结构。 通过向用户模板目录添加新文件夹，可将用户模板组织到其各自的类别中。 “新建项目”和“添加新项”对话框将显示对用户模板类别所做的任何更改。
 
 > [!NOTE]
 > 不能在编程语言级别创建新类别。 只能在每种语言中创建新类别。
@@ -68,7 +65,7 @@ ms.lasthandoff: 01/13/2018
 
 1. 在用户项目模板目录中的编程语言文件夹中创建一个文件夹。 例如，要为 C# 项目模板创建“HelloWorld”类别，请创建以下目录：
 
-    \%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates\Visual C#\HelloWorld\
+    - \%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates\Visual C#\HelloWorld
 
 1. 将此类别的所有模板放入新文件夹。
 
@@ -80,7 +77,7 @@ ms.lasthandoff: 01/13/2018
 
 1. 在用户项模板目录中的编程语言文件夹中创建一个文件夹。 例如，要为 C# 项模板创建“HelloWorld”类别，请创建以下目录：
 
-    \%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates\Visual C#\HelloWorld\
+    - \%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates\Visual C#\HelloWorld
 
 1. 将此类别的所有模板放入新文件夹。
 
@@ -90,7 +87,7 @@ ms.lasthandoff: 01/13/2018
 
 ### <a name="display-templates-in-parent-categories"></a>在父类别中显示模板
 
-可以通过使用 .vstemplate 文件中的 `NumberOfParentCategoriesToRollUp` 元素允许子类别中的模板显示在其父类别中。 对于项目模板和项模板，操作步骤相同。
+可通过 .vstemplate 文件中的 `NumberOfParentCategoriesToRollUp` 元素让子类别中的模板显示在其父类别中。 对于项目模板和项模板，操作步骤相同。
 
 #### <a name="to-display-templates-in-parent-categories"></a>在父类别中显示模板
 
@@ -116,11 +113,11 @@ ms.lasthandoff: 01/13/2018
 
 1. 选择模板中的文件，右键单击所选文件，然后选择“发送至” > “压缩的文件夹（zip 格式）”。
 
-   这些文件被压缩到一个 .zip 文件中。
+   这些文件会压缩到一个 .zip 文件中。
 
 1. 删除解压缩的模板文件和旧的 .zip 模板文件。
 
-1. 将新的 .zip 文件放入曾容纳已删除 .zip 文件的目录。
+1. 将新的 .zip 文件放入曾包含已删除 .zip 文件的目录。
 
 ## <a name="see-also"></a>请参阅
 

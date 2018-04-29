@@ -1,13 +1,10 @@
 ---
-title: "查找和使用 Visual Studio 扩展 | Microsoft Docs"
-ms.custom: 
+title: 查找和使用 Visual Studio 扩展 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/07/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
 helpviewer_keywords:
@@ -15,23 +12,22 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3057ae7cf987c19e87329894249031b3af29806
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 682c5d889fa39b5e808e68da6d57bf54504db8b2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>查找和使用 Visual Studio 扩展
 
 Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了新的或者改进后的 Visual Studio 功能。 你可以在此处找到有关 Visual Studio 扩展的详细信息： [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
-你可以使用 **“扩展和更新”** 对话框安装来自网站或其他位置的 Visual Studio 扩展及示例，然后启用、禁用、更新或卸载这些扩展和示例。 （“工具”/“扩展和更新”，或在“快速启动”  窗口中输入 **扩展** ）。 该对话框还显示用于已安装的示例和扩展的更新。 还可以从网站下载扩展，或从其他开发人员处获取它们。
+你可以使用 **“扩展和更新”** 对话框安装来自网站或其他位置的 Visual Studio 扩展及示例，然后启用、禁用、更新或卸载这些扩展和示例。 （“工具”>“扩展和更新”，或在“快速启动”窗口中键入“扩展”）。 该对话框还显示用于已安装的示例和扩展的更新。 还可以从网站下载扩展，或从其他开发人员处获取它们。
 
 > [!NOTE]
 > 从 Visual Studio 2015 开始，Visual Studio Marketplace 上托管的扩展将自动更新。 可以通过 **“扩展和更新”** 对话框更改此设置。  请参阅下面的 **“自动扩展更新”** 部分了解详细信息。
@@ -50,11 +46,11 @@ Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了
 
 ## <a name="per-user-and-administrative-extensions"></a>每用户扩展和管理扩展
 
-大多数扩展都是每用户扩展，安装在 **%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio version\>\Extensions\\** 文件夹中。 有几个扩展是管理扩展，安装在 **\<Visual Studio 安装文件夹>\Common7\IDE\Extensions\\** 文件夹中。
+大多数扩展都是每用户扩展，安装在 *%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio version\>\Extensions\\* 文件夹中。 有几个扩展是管理扩展，安装在 *\<Visual Studio 安装文件夹>\Common7\IDE\Extensions\\* 文件夹中。
 
-若要针对可能包含错误或恶意代码的扩展保护你的系统，可以限制每用户扩展，以便只在使用正常用户权限运行 Visual Studio 时加载。 这意味着在使用管理用户权限运行 Visual Studio 时禁用每用户扩展。 若要执行此操作，请转到“扩展和更新”  选项页（“工具”/“选项”、“环境” 、“扩展和更新” ，或仅仅在“快速启动”  窗口中输入 **扩展** ）。 清除 **“以管理员身份运行时加载每用户扩展”** 复选框，然后重新启动 Visual Studio。
+若要针对可能包含错误或恶意代码的扩展保护你的系统，可以限制每用户扩展，以便只在使用正常用户权限运行 Visual Studio 时加载。 这意味着在使用管理用户权限运行 Visual Studio 时禁用每用户扩展。 若要执行此操作，请转到“扩展和更新”选项页（“工具”>“选项” > “环境” > “扩展和更新”，或仅在“快速启动”窗口中键入“扩展”）。 清除 **“以管理员身份运行时加载每用户扩展”** 复选框，然后重新启动 Visual Studio。
 
-## <a name="automatic-extension-updates"></a>“自动扩展更新”
+## <a name="automatic-extension-updates"></a>自动扩展更新
 
 Visual Studio Marketplace 有可用的新版本时，每用户扩展将自动更新。  已检测到新版扩展并在后台进行安装，下次重启 Visual Studio 时将运行该新版扩展。
 
@@ -67,7 +63,7 @@ Visual Studio Marketplace 有可用的新版本时，每用户扩展将自动更
 - 若要为特定扩展禁用自动更新，请取消选中“扩展和更新”对话框右侧的扩展细节窗格中的“自动更新此扩展”选项。
 
 > [!NOTE]
-> 从 Visual Studio 2015 Update 2 开始，可以指定（在“工具”/“选项”/“环境”/“扩展和更新”中）是否需要为每用户扩展、所有用户扩展或两者（默认设置）进行自动更新。
+> 从 Visual Studio 2015 Update 2 开始，可以指定（在“工具”>“选项”>“环境”>“扩展和更新”中）是否需要为每用户扩展、所有用户扩展或两者（默认设置）进行自动更新。
 
 ## <a name="extension-crashunresponsiveness-notifications"></a>扩展崩溃/无响应通知
 
@@ -114,11 +110,11 @@ Visual Studio Marketplace 有可用的新版本时，每用户扩展将自动更
 
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>不使用“扩展和更新”对话框进行安装
 
-可在 Visual Studio Marketplace 以外的位置获取已打包在 .vsix 文件中的扩展。 “扩展和更新”  对话框无法检测到这些文件，但你可以通过双击该文件，或者选择文件并按下 ENTER 键来安装 .vsix 文件。 此后，只需按照说明操作。 当扩展安装完成后，可以使用 **“扩展和更新”** 对话框启用、禁用或卸载此扩展。
+可在 Visual Studio Marketplace 以外的位置获取已打包在 .vsix 文件中的扩展。 “扩展和更新”对话框无法检测到这些文件，但可通过双击该文件，或者选择文件并按下 Enter 键来安装 .vsix 文件。 此后，只需按照说明操作。 当扩展安装完成后，可以使用 **“扩展和更新”** 对话框启用、禁用或卸载此扩展。
 
 ## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>“扩展和更新”对话框不支持的扩展类型
 
 Visual Studio 会继续在无需修改的情况下，支持由 Microsoft 安装程序 (MSI) 安装、而不是通过 **“扩展和更新”** 对话框安装的扩展。
 
 > [!TIP]
-> 如果基于 MSI 的扩展包含 extension.vsixmanifest 文件，则扩展会出现在 **“扩展和更新”** 对话框中。
+> 如果基于 MSI 的扩展包含 extension.vsixmanifest 文件，则扩展会出现在“扩展和更新”对话框中。

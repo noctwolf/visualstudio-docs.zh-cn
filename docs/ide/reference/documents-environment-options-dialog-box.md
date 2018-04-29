@@ -1,12 +1,10 @@
 ---
-title: "“选项”对话框 ->“环境”->“文档”| Microsoft Docs"
-ms.custom: 
+title: “选项”对话框 ->“环境”->“文档”| Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Environment.Documents
 - VS.ToolsOptionsPages.Environment.Documents
@@ -32,16 +30,16 @@ helpviewer_keywords:
 - warnings, files changed
 - Solution Explorer, displaying files in
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0c89e8b018fa0979fe4c73f5cd9e0db95efd88d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 49ac0d5aa5d621e7f6b833827057aeebba9a5181
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="documents-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“文档”
 使用“选项”对话框的此页，可以控制文档在集成开发环境 (IDE) 中的显示，并管理对文档和文件的外部更改。 通过在“工具”菜单上单击“选项”，然后在“环境”节点中选择“文档”，即可访问此对话框。 如果“文档”未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  
@@ -78,7 +76,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  选择此选项可对没有包括在活动 Web 应用程序中的 Web 文档启用“文件”菜单上的“在浏览器中查看”命令。  
   
- **\<** *n*  **> 保存在杂项文件项目中的项**  
+ \< n > 保存在杂项文件项目中的项  
  指定要保留在“解决方案资源管理器”的“杂项文件”文件夹中的文件数。 即使编辑器中不再打开这些文件，它们也将被列出。 可以指定从 0 到 256 之间的任意整数。 默认数为 0。  
   
  例如，如果将此选项设为 5，而且已打开了 10 个杂项文件，则在关闭全部 10 个文件后，前 5 个文件仍将显示在“杂项文件”文件夹中。  

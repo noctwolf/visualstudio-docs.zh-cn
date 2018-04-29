@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中对测试控制器和测试代理进行故障排除 | Microsoft Docs
 ms.date: 10/20/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 37ff6e82c61e55dc162287ce944008cc09e37204
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>负载测试中测试控制器和测试代理的故障排除策略
 
@@ -82,7 +82,7 @@ ms.lasthandoff: 03/19/2018
 ## <a name="binding-a-test-controller-to-a-network-adapter"></a>将测试控制器绑定到网络适配器
  尝试设置测试代理时，可能会收到以下错误：
 
- 错误 8110.无法连接到指定的控制器计算机或访问控制器对象。
+ **错误 8110。无法连接到指定的控制器计算机或访问控制器对象。**
 
  在包含多个网络适配器的计算机上安装测试控制器可引起此错误。
 

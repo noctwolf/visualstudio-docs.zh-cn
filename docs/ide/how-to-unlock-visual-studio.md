@@ -1,12 +1,9 @@
 ---
-title: 如何解锁 Visual Studio | Microsoft Docs
+title: 如何：解锁 Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 07/20/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -14,13 +11,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e08831347c09d80427d1fba38c926f7d1b227f4
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 8136d74f461d781fb395b534184b8d5b211421f7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-unlock-visual-studio"></a>如何解锁 Visual Studio
+# <a name="how-to-unlock-visual-studio"></a>如何：解锁 Visual Studio
 
 可以免费使用 Visual Studio 长达 30 天。 登录到 IDE 将试用期延长至 90 天。 若要继续使用 Visual Studio，请解锁 IDE，任选一种方法：
 
@@ -32,7 +29,7 @@ ms.lasthandoff: 04/05/2018
 
 使用 MSDN 或者与 Microsoft 帐户、工作或学校帐户相关联的 Visual Studio Team Service 订阅解锁 Visual Studio：
 
-1. 单击 IDE 右上角的“登录”按钮（或转到“文件”>“帐户设置”，打开“帐户设置”对话框，然后单击"登录"按钮）。
+1. 单击 IDE 右上角的“登录”按钮（或转到“文件” > “帐户设置”，打开“帐户设置”对话框，然后单击"登录"按钮）。
 
 1. 对 Microsoft 帐户、工作或学校帐户输入凭据。 Visual Studio 将查找 Visual Studio 订阅或与帐户相关联的 Visual Studio Team Services 订阅。
 
@@ -41,7 +38,7 @@ ms.lasthandoff: 04/05/2018
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>使用产品密钥解锁 Visual Studio
 
-1. 选择“文件”>“帐户设置”，打开“帐户设置”对话框并单击“使用产品密钥获得许可”链接。
+1. 选择“文件” > “帐户设置”，打开“帐户设置”对话框并单击“使用产品密钥获得许可”链接。
 
 在提供的空白处输入产品密钥。
 
@@ -70,7 +67,7 @@ ms.lasthandoff: 04/05/2018
 
 ### <a name="update-expired-licenses"></a>更新已过期的许可证
 
- 订阅完全过期后，将不再具有 Visual Studio 的访问权限，必须续订订阅或添加另一个具有订阅的帐户。 若要查看有关正在使用的许可证的详细信息，请转到“文件”>“帐户设置”，然后在该对话框的右侧查看许可证信息。 如果用户拥有另一个与不同的帐户关联的订阅，请通过选择“添加帐户...”链接，将该帐户添加到对话框左侧的“所有帐户”列表中。
+ 订阅完全过期后，将不再具有 Visual Studio 的访问权限，必须续订订阅或添加另一个具有订阅的帐户。 若要查看有关正在使用的许可证的详细信息，请转到“文件” > “帐户设置”，然后在该对话框的右侧查看许可证信息。 如果用户拥有另一个与不同的帐户关联的订阅，请通过选择“添加帐户”链接，将该帐户添加到对话框左侧的“所有帐户”列表中。
 
 ## <a name="see-also"></a>请参阅
 

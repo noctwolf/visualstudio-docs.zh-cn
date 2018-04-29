@@ -1,51 +1,24 @@
 ---
-title: "Parasoft Virtualize/SOAtest Professional 桌面权益 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to activate the Parasoft Virtualize/SOA Test Professional subscription included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4468cc99db6437606570d70cdb7ece31a53ca3a3
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Parasoft Virtualize/SOAtest Professional 桌面权益 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: 了解如何激活 Visual Studio 订阅中包含的 Parasoft Virtualize/SOA Test Professional 订阅。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 75ce02de0f7d534154ac075462484b2fc40f9328
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Parasoft Virtualize/SOAtest Professional 桌面
 
-## <a name="overview"></a>概述
-
 更早和更频繁地执行测试。  模拟和测试不可用的以及不断演变的应用程序和系统的行为。  权益包含六个月的免费订阅。  六个月的订阅结束之后，有资格获得年度订阅价格 25％ 的折扣。  
 
-## <a name="eligibility"></a>资格
-
-| 订阅级别/计划                                 | 好处                     | 是否续订？                                                   |
-|--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | 6 个月                    |   是                                                        |
-| Visual Studio Enterprise 年度                              | 6 个月                    |   是                                                        |
-| Visual Studio Enterprise 月度                             | 不可用               |                                                              |
-| Visual Studio Professional Standard                          | 不可用               |                                                              |
-| Visual Studio Professional 年度                            | 不可用               |                                                              | 
-| Visual Studio Professional 月度                           | 不可用               |                                                              |
-| Visual Studio Test Pro                                       | 不可用               |                                                              |
-| MSDN 平台                                               | 不可用               |                                                              |
-| Visual Studio Dev Essentials                                 | 不可用               |                                                              |
-| Visual Studio Enterprise - NFR*                              | 不可用               |                                                              |
-| Visual Studio Enterprise - FTE                               | 不可用               |                                                              |
-| Visual Studio Enterprise - Microsoft 合作伙伴网络         | 6 个月                    |   是                                                        |
-| Visual Studio Professional - Microsoft 合作伙伴网络       | 不可用               |                                                              |
-| Visual Studio Enterprise – Imagine（标准）                | 不可用               |                                                              |
-| Visual Studio Enterprise – Imagine（高级）                 | 不可用               |                                                              |
-| Visual Studio Enterprise – BizSpark                          | 不可用               |                                                              |
-| Visual Studio Enterprise – MCT 软件和服务           | 不可用               |                                                              |
-| Visual Studio Enterprise – MCT 软件和服务开发人员 | 不可用               |                                                              |
-*包括限制转售 (NFR)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)  
-
-无法确定正在使用哪些订阅？  请连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看分配给你电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
 
 ## <a name="activation-steps"></a>激活步骤
 
@@ -74,7 +47,7 @@ ms.lasthandoff: 01/29/2018
 
 8.  选择所需语言，然后单击“确定”。
 
-9.  Parasoft SOAtest 和 Virtualize 安装向导随即启动。  单击“下一步”。
+9.  Parasoft SOAtest 和 Virtualize 安装向导随即启动。  单击 **“下一步”**。
 
     ![Parasoft 权益：安装开始](_img\vs-parasoft\vs-parasoft-start-install.png)
 
@@ -98,9 +71,20 @@ ms.lasthandoff: 01/29/2018
 
 17. 安装完成后，请单击“完成”。 现在就可以使用 Parasoft Virtualize/SOAtest Professional 桌面权益了！
 
-## <a name="faq"></a>FAQ
-*单击此处了解更新*
- 
+## <a name="eligibility"></a>资格
+| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 6 个月       |  是       |
+| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 不可用                                                           |NA         |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                                           |NA         |
+| MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                                           |NA         |
+| Visual Studio Dev Essentials | NA  | 不可用|NA |
+| Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
+
+<sup>1</sup> 包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务。
+
+
+
 ## <a name="support-resources"></a>支持资源
 -  需要 Parasoft 产品帮助？  请参阅下列资源：
     - 技术支持：https://www.parasoft.com/support/ 

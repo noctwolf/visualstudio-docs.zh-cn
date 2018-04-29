@@ -1,12 +1,9 @@
 ---
-title: "用于项目和文件的 Visual Studio 模板| Microsoft Docs"
-ms.custom: 
+title: 用于项目和文件的 Visual Studio 模板| Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - templates [Visual Studio], project
 - templates [Visual Studio], item
@@ -14,12 +11,12 @@ helpviewer_keywords:
 - project templates [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3959b01fdfc0ff77bdd5a3ffa0c96366b9da87d7
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 900b750df391029a1bed15b2da003f94c085148a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-and-item-templates"></a>项目和项模板
 
@@ -29,17 +26,17 @@ ms.lasthandoff: 01/05/2018
 
 一系列预定义的项目和项模板会随 Visual Studio 一并安装。 例如，“新建项目”对话框中显示的 Visual Basic 和 C#“Windows 窗体应用”和“类库”模板是项目模板。 项模板显示在“添加新项”对话框中，并包含代码文件、XML 文件、HTML 页和样式表等项。
 
-这些模板为用户提供一个开始创建项目或扩展现有项目的起点。 项目模板提供特定项目类型所需的文件，包括标准程序集引用，并设置默认项目属性和编译器选项。 项模板的复杂程度不一，从具有某个文件扩展名的单个空文件到包含具有存根代码的源代码文件、设计器信息文件和嵌入资源等的多文件项。
+这些模板为用户提供一个开始创建项目或扩展现有项目的起点。 项目模板提供特定项目类型所需的文件，包括标准程序集引用，并设置默认项目属性和编译器选项。 项模板的复杂程度不一，从具有某个文件扩展名的单个空文件到多个具有存根代码的源代码文件、设计器信息文件和嵌入资源等。
 
-除了“新建项目”和“添加新项”对话框中的已安装模板，还可以创作自己的模板或下载并使用社区创建的模板。 有关详细信息，请参阅[如何：创建项目模板](../ide/how-to-create-project-templates.md)和[如何：创建项模板](../ide/how-to-create-item-templates.md)。
+可以使用“新建项目”和“添加新项”对话框中的已安装模板，创作自己的模板或下载并使用社区创建的模板。 有关详细信息，请参阅[如何：创建项目模板](../ide/how-to-create-project-templates.md)和[如何：创建项模板](../ide/how-to-create-item-templates.md)。
 
 ## <a name="contents-of-a-template"></a>模板的内容
 
 所有项目模板和项模板（无论是与 Visual Studio 一起安装的还是由你创建的）均通过使用相同的原则工作并具有类似的内容。 所有模板均包含以下项：
 
-- 使用模板时要创建的文件。 包括源代码文件、嵌入资源、项目文件等。
+- 使用模板时要创建的文件。 这些文件包括源代码文件、嵌入资源、项目文件等。
 
-- 一个 vstemplate 文件。 该文件包含元数据，元数据提供在“新建项目”和“添加新项”对话框中显示模板以及从模板创建项目或项时所需的信息。 有关 .vstemplate 文件的详细信息，请参阅[模板参数](../ide/template-parameters.md)。
+- 一个 .vstemplate 文件包含需要在“新建项目”和“添加新项”对话框中显示模板以及从模板创建项目或项的元数据。 有关 .vstemplate 文件的详细信息，请参阅[模板参数](../ide/template-parameters.md)。
 
 当这些文件压缩成 .zip 文件并放在正确的文件夹时，Visual Studio 将自动在以下位置显示这些文件：
 

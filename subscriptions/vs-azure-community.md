@@ -1,26 +1,23 @@
 ---
-title: "Visual Studio 订阅中的 Azure 社区权益 | Microsoft 文档"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/8/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Azure Community benefit included in selected Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: fb8c318d665c5c8b25a245ff304c5b2b9341a1ef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio 订阅中的 Azure 社区权益 | Microsoft 文档
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/08/2018
+ms.topic: Get-Started-Article
+description: 了解有关所选 Visual Studio 订阅中包含的 Azure 社区权益。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 76384697d6bc0b56f8d7a1664b0c9fa72812f280
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-community"></a>Azure 社区  
 
-## <a name="overview"></a>概述 
-在选定的支持论坛中通过 Azure 社区直接从 Azure 团队获得帮助。
-
-Azure 社区权益提供访问专注于 Azure 相关主题的一系列论坛的权限。  
+在选定的支持论坛中通过 Azure 社区直接从 Azure 团队获得帮助。  Azure 社区权益提供访问专注于 Azure 相关主题的一系列论坛的权限。  
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -32,35 +29,11 @@ Azure 社区权益提供访问专注于 Azure 相关主题的一系列论坛的�
 | [Azure 管理门户](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure 备份](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Azure 虚拟机](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-### <a name="eligibility"></a>资格
-| 订阅级别/计划                                 | 好处               | 是否续订？                                                         |
-|--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | Included              | 是                                                                |
-| Visual Studio Enterprise 年度                              | Included              | 是                                                                |
-| Visual Studio Enterprise 月度                             | 不可用         |                                                                    |
-| Visual Studio Professional Standard                          | Included              | 是                                                                |
-| Visual Studio Professional 年度                            | Included              | 是                                                                |
-| Visual Studio Professional 月度                           | 不可用         |                                                                    |
-| Visual Studio Test Pro                                       | Included              | 是                                                                |
-| MSDN 平台                                               | Included              | 是                                                                |
-| Visual Studio Dev Essentials                                 | Included              | 是                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                | 不可用         |                                                                    |
-| Visual Studio Enterprise - FTE                               | 不可用         |                                                                    |
-| Visual Studio Enterprise - MPN                               | 不可用         |                                                                    |
-| Visual Studio Professional - MPN                             | 不可用         |                                                                    |
-| Visual Studio Enterprise - MVP/RD                            | 不可用         |                                                                    |
-| Visual Studio Enterprise – Imagine（标准）                | 不可用         |                                                                    |
-| Visual Studio Enterprise – Imagine（高级）                 | 不可用         |                                                                    |
-| Visual Studio Enterprise – BizSpark                          | 不可用         |                                                                    |
-| Visual Studio Enterprise – MCT 软件和服务           | 不可用         |                                                                    |
-| Visual Studio Enterprise – MCT 软件和服务开发人员 | 不可用         |                                                                    |
-<sup>1</sup>  包括限制转售 (NFR)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)  
 
-无法确定正在使用哪些订阅？  请连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看分配给你电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
 
 ## <a name="activation-steps"></a>激活步骤
 Azure 社区入门很简单。  
-1. 请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在支持部分中，找到“Azure 社区”磁贴，然后单击“获取帮助”链接。 
 
@@ -74,8 +47,21 @@ Azure 社区入门很简单。
 
    ![Azure 社区示例](_img/vs-azure-community/vs-azure-community-example.png)
 
-## <a name="faq"></a>FAQ
-*单击此处了解更新*
+## <a name="eligibility"></a>资格
+Azure 社区权益的可用性取决于订阅级别，如下所示：
+
+| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售   | 一年      |  是          |
+| Visual Studio Professional（标准、年度云）  | VL、Azure、零售                                      | 一年                                                           |  是          |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 一年                                             |  是          |
+| MSDN 平台（标准）                                          | VL、零售                                              |一年                                              |  是          |
+| Visual Studio Enterprise（月度云）、Visual Studio Professional（月度云）、NFR<sup>1</sup>                                          | 全部                                              |不可用                                              |  否          |
+| Visual Studio Dev Essentials                                        | 不可用                                              |不可用                                              |  否          |
+|
+<sup>1</sup> 包括：限制转售 (NFR)、Microsoft FTE、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、Microsoft 认证培训师 (MCT)
+
+无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
 
 ## <a name="support-resources"></a>支持资源
 -  对于其他 Azure 社区资源，请访问 Azure 社区[支持页](https://azure.microsoft.com/support/forums/)。

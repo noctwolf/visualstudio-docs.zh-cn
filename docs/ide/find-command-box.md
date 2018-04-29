@@ -1,26 +1,23 @@
 ---
-title: "“查找/命令”框 | Microsoft Docs"
-ms.custom: 
+title: “查找/命令”框 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
 - Find/Command box
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede1e6cd1340ea204199df66108c49db310949f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 215ab2501f3221a9235c75d5a9b28f631692b1de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="findcommand-box"></a>“查找/命令”框
 
@@ -34,17 +31,17 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="searching-for-text"></a>搜索文本
 
-默认情况下，如果在“查找/命令”框中指定了文本，然后选择了 Enter 键，Visual Studio 会使用“在文件中查找”对话框中指定的选项搜索当前文档或工具窗口。 有关详细信息，请参阅 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)。
+默认情况下，如果在“查找/命令”框中指定了文本，然后选择了 Enter 键，Visual Studio 会使用“在文件中查找”对话框中指定的选项搜索当前文档或工具窗口。 有关详细信息，请参阅[查找和替换文本](../ide/finding-and-replacing-text.md)。
 
 ## <a name="entering-commands"></a>输入命令
 
-要使用“查找/命令”框发布单个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 命令或别名，而不是搜索文本，请在该命令前面加一个大于 (>) 符号。 例如:
+若要使用“查找/命令”框发布单个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 命令或别名，而不是搜索文本，请在该命令前面加一个大于 (>) 符号。 例如:
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
 ```
 
-此外，也可以使用命令窗口输入和执行单个或多个命令。 某些命令或别名可以自行输入并执行，其他则要求在他们的语法中具有参数。 有关一系列带参数的命令的信息，请参阅 [Visual Studio 命令](../ide/reference/visual-studio-commands.md)。
+或者，还可以使用“命令”窗口输入和执行单个或多个命令。 某些命令或别名可以自行输入并执行，其他则要求在他们的语法中具有参数。 有关一系列带参数的命令的信息，请参阅 [Visual Studio 命令](../ide/reference/visual-studio-commands.md)。
 
 ## <a name="escape-characters"></a>转义字符
 
