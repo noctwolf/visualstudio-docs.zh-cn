@@ -295,6 +295,7 @@
 #### [无法附加到进程](unable-to-attach-to-the-process.md)
 #### [“编辑并继续”错误消息对话框](edit-and-continue-error-message-dialog-box.md)
 #### [错误：评估函数“function”超时，需要以不安全的方式中止](error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way.md)
+#### [错误：评估函数“function”时，目标进程退出并生成代码“code”](error-evaluating-the-function-process-exited.md)
 #### [错误：无法连接到远程计算机上的 SQL Server](error-unable-to-connect-to-sql-server-on-remote-machine.md)
 #### [错误：无法访问 SQL Server 调试界面](error-unable-to-access-the-sql-server-debugging-interface.md)
 #### [错误：SQL 找不到 SSDEBUGPS](error-sql-can-t-find-ssdebugps.md)

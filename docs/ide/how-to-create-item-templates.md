@@ -1,26 +1,23 @@
 ---
-title: "创建 Visual Studio 的项模板 | Microsoft Docs"
-ms.custom: 
+title: 创建 Visual Studio 的项模板 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8fd5d7fba092df5accfaad9d26cfc05f196981ba
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+manager: douge
+ms.openlocfilehash: c5c29dde308c4e3720195924bd40db4e880e4b2e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-item-templates"></a>如何：创建项模板
 
-本主题介绍如何使用“导出模板向导”创建项模板。 如果模板将由多个文件组成，请参阅[如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)。
+本文介绍如何使用“导出模板向导”创建项模板。 如果模板将由多个文件组成，请参阅[如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)。
 
 ## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>将用户项模板添加到“添加新项”对话框中
 
@@ -40,19 +37,19 @@ ms.lasthandoff: 01/12/2018
 
 1. 在“选择模板选项”页上，输入模板的名称和可选说明、图标和预览图像，然后选择“完成”。
 
-    模板文件被添加到 .zip 文件中，并复制到在向导中所指定的目录。 默认位置是 %USERPROFILE%\Documents\Visual Studio \<version\>\My Exported Templates。
+    将模板文件添加到 .zip 文件中，并复制到在向导中指定的目录。 默认位置是 %USERPROFILE%\Documents\Visual Studio \<version\>\My Exported Templates。
 
-1. 如果未在“导出模板向导”中选择“自动将模板导入到 Visual Studio”选项，请查找导出的模板并将其复制到用户项模板目录中。 默认位置是 %USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ItemTemplates。
+1. 如果未在“导出模板向导”中选择“自动将模板导入 Visual Studio”选项，则找到已导出的模板。 然后，将其复制到用户项模板目录中。 默认位置是 %USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ItemTemplates。
 
 1. 关闭 Visual Studio，然后重新打开它。
 
-1. 创建一个新项目，或打开现有项目，然后选择“项目” > “添加新项...”或按 Ctrl + Shift + A
+1. 创建一个新项目，或打开现有项目，然后选择“项目” > “添加新项”或按 Ctrl+Shift+A。
 
    项模板显示在“添加新项”对话框中。 如果在“导出模板向导”中添加了说明，则说明会显示在对话框的右侧。
 
 ## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>启用在通用 Windows 应用项目中使用的项模板
 
-向导会执行创建基本模板时的大部分工作，但在许多情况下，需要在导出模板后手动修改 .vstemplate 文件。 例如，如果希望该项显示在通用 Windows 应用项目的“添加新项”对话框中，则需执行一些其他步骤。
+向导会完成创建基本模板时的大部分工作，但在许多情况下，需要在导出模板后手动修改 .vstemplate 文件。 例如，如果希望该项显示在通用 Windows 应用项目的“添加新项”对话框中，则需执行一些其他步骤。
 
 1. 按照上节中的步骤导出项模板。
 
@@ -76,9 +73,9 @@ ms.lasthandoff: 01/12/2018
 
 可指定应仅对某些项目子类型（如 Windows、Office、数据库或 Web）显示模板。
 
-1. 在项模板的 .vstemplate 文件中找到 ProjectType 元素。
+1. 在项模板的 .vstemplate 文件中找到 `ProjectType` 元素。
 
-1. 在 ProjectType 元素之后添加一个 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 元素。
+1. 在 `ProjectType` 元素之后添加一个 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 元素。
 
 1. 将该元素的文本值设置为下列值之一：
 
@@ -107,7 +104,7 @@ ms.lasthandoff: 01/12/2018
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>在不使用“导出模板向导”的情况下手动创建项模板
+## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>在不使用“导出模板”向导的情况下手动创建项模板
 
 某些情况下，可能希望从头开始手动创建项模板。
 
@@ -123,7 +120,7 @@ ms.lasthandoff: 01/12/2018
 
 1. 保存 .vstemplate 文件并将其关闭。
 
-1. 在 Windows 资源管理器中，选择要包括到模板中的文件，右键单击所选内容，然后选择“发送至” > “压缩的文件夹（zip 格式）”。 所选的文件被压缩到一个 .zip 文件中。
+1. 在**个Windows资源管理器**中，选择要包含在模板中的文件。 右键单击所选文件，然后选择“发送至” > “压缩的文件夹（zip 格式）”。 所选的文件将压缩到一个 .zip 文件中。
 
 1. 复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2017 中，默认目录是 %USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates。 有关详细信息，请参阅[如何：查找和组织项目和项模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 

@@ -1,9 +1,9 @@
 ---
-title: Dotfuscator 社区版 (CE) | Microsoft Docs
-ms.date: 2017-10-10
+title: Dotfuscator 社区版 (CE)
+ms.date: 10/10/2017
 ms.devlang: dotnet
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保护, 社区版, 混淆, .NET, 免费, Visual Studio 2017
 helpviewer_keywords:
@@ -16,12 +16,13 @@ helpviewer_keywords:
 description: 了解如何使用 Visual Studio 2017 中的免费 Dotfuscator 社区版保护 .NET 应用程序。
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e8e7fb56580e3b0b5a9db8e46d9b98b7c157f9f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22243a8d837e584df64c9fabc28405951f481b26
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator 社区版 (CE)
 
@@ -35,7 +36,7 @@ Dotfuscator 无需进行其他编程，甚至无需访问源代码，即可处�
 
 **保护知识产权** (IP) 非常重要。
 应用程序代码所包含的设计和实现详细信息可被视为 IP。
-但是，在 .NET Framework 上构建的应用程序[包含重要的元数据和高级中间代码][assemblies]，只需使用众多免费自动化工具的其中一款即可进行反向工程，非常容易。
+但是，在 .NET Framework 上构建的应用程序[包含重要的元数据和高级中间代码][assemblies]，只需使用众多免费自动化工具的其中一款即可轻松进行反向工程。
 用户可以通过中断和阻止实施反向工程，防止未经授权的 IP 泄漏，并说明该代码包含了商业机密。
 Dotfuscator 可以对 .NET 程序集[进行模糊处理][obfuscation]，以阻止实施反向工程，并保持原有的应用程序行为。
 
@@ -53,7 +54,7 @@ Microsoft Visual Studio 2017 副本包含了 PreEmptive Protection - Dotfuscator
 Dotfuscator CE 为开发人员、架构师和测试人员提供了一系列的[软件保护和强化][software-protection]服务。
 Dotfuscator CE 中包含的 [.NET 模糊处理][obfuscation]和其他[应用程序保护][app-protection]功能的示例有：
 
-* *[重命名][renaming]*标识符，增加对已编译程序集实施反向工程的难度。
+* *[重命名][renaming]* 标识符，增加对已编译程序集实施反向工程的难度。
 * *[防篡改][tamper]*，检测篡改应用程序的执行、发送事件警报并终止被篡改会话。
 * *[防调试][debug]*，检测调试器与正在运行的应用程序的附加情况、传输事件警报并终止调试会话。
 * *[应用程序到期行为][shelflife]*，对“生命周期终结”日期进行编码、在到期日期后执行应用程序时传输警报，以及终止到期应用程序会话。
@@ -70,8 +71,8 @@ Dotfuscator CE 提供现成的基础保护。
 
 若要开始在 Visual Studio 中使用 Dotfuscator CE，请在“快速启动” (Ctrl+Q) 搜索栏中键入 `dotfuscator`。
 
-* 如果已经安装 Dotfuscator CE，此操作将调出“菜单”选项以启动 Dotfuscator CE 用户界面。 有关详细信息，请参阅[完整 Dotfuscator CE 用户指南的入门页][get-started]。
-* 如果尚未安装 Dotfuscator CE，此操作将调出相关的安装选项。 有关详细信息，请参阅[安装页][install]。
+* 如果已经安装 Dotfuscator CE，“快速启动”栏将调出“菜单”选项以启动 Dotfuscator CE 用户界面。 有关详细信息，请参阅[完整 Dotfuscator CE 用户指南的入门页][get-started]。
+* 如果尚未安装 Dotfuscator CE，“快速启动”栏将调出相关的安装选项。 有关详细信息，请参阅[安装页][install]。
 
 还可以从 [preemptive.com 上的 Dotfuscator 下载页][download]中删获取**最新版本**的 Dotfuscator CE。
 
@@ -79,33 +80,33 @@ Dotfuscator CE 提供现成的基础保护。
 
 此页面及其子页面简要概述了 Dotfuscator CE 的功能和[此工具的安装说明][install]。
 
-请参阅 [preemptive.com 上的完整 Dotfuscator CE 用户指南][full]了解[如何开始使用 Dotfuscator CE 用户界面][get-started]等详细的使用说明。
+参阅 [preemptive.com 上的完整 Dotfuscator CE 用户指南][full]了解[如何开始使用 Dotfuscator CE 用户界面][get-started]等详细的使用说明。
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-[assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
-[software-protection]: https://www.preemptive.com/software-protection
-[obfuscation]: https://www.preemptive.com/obfuscation
-[app-protection]: https://www.preemptive.com/application-protection
-[sdl-protection]: https://www.preemptive.com/solutions/SDL-App-Protection
-[net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
-[download]: https://www.preemptive.com/products/dotfuscator/downloads
+- [assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
+- [software-protection]: https://www.preemptive.com/software-protection
+- [obfuscation]: https://www.preemptive.com/obfuscation
+- [app-protection]: https://www.preemptive.com/application-protection
+- [sdl-protection]: https://www.preemptive.com/solutions/SDL-App-Protection
+- [net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
+- [download]: https://www.preemptive.com/products/dotfuscator/downloads
 
-[install]: install.md
-[capabilities]: capabilities.md
-[upgrades]: upgrades.md
+- [install]: install.md
+- [capabilities]: capabilities.md
+- [upgrades]: upgrades.md
 
-[get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
+- [get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
-[renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
+- [renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-[checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
-[tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
-[debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
-[shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
+- [checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
+- [tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
+- [debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
+- [shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
 
-[exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
+- [exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
+- [sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
+- [features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
-[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
+- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
