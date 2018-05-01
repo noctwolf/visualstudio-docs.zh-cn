@@ -20,12 +20,12 @@ ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
-Visual Studio Tools for AI 是用于生成、测试和部署深入学习/AI 解决方案的扩展。 它与 Azure 机器学习无缝集成以实现强大的试验功能，包括但不限于提交数据准备以及以透明方式将训练作业建模为不同的计算目标。 此外，它提供对自定义指标和运行历史记录跟踪的支持，从而可实现数据科学的可再现性和审核。 通过企业就绪协作，可以安全地与他人一起处理项目。
+Visual Studio Tools for AI 是用于生成、测试和部署深度学习/AI 解决方案的扩展。 它与 Azure 机器学习无缝集成以实现强大的试验功能，包括但不限于提交数据准备以及以透明方式将训练作业建模为不同的计算目标。 此外，它提供对自定义指标和运行历史记录跟踪的支持，从而可实现数据科学的可再现性和审核。 通过企业就绪协作，可以安全地与他人一起处理项目。
 
 立即开始使用 [Microsoft 认知工具包 (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit)、[Google TensorFlow](https://www.tensorflow.org) 或其他深入学习框架进行深入学习。
 
-## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>开发、调试和部署深入学习模型和 AI 解决方案
-立即使用 Visual Studio 的高效功能加快 AI 创新。 使用内置代码编辑器功能，如语法突出显示、IntelliSense 和文本自动格式设置。 可以通过对本地变量和模型使用单步调试，在本地环境中以交互方式测试深入学习应用程序。
+## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>开发、调试和部署深度学习模型和 AI 解决方案
+立即使用 Visual Studio 的高效功能加快 AI 创新。 使用内置代码编辑器功能，如语法突出显示、IntelliSense 和文本自动格式设置。 可以通过对本地变量和模型使用单步调试，在本地环境中以交互方式测试深度学习应用程序。
 
 ![深入学习 ide](media\about\ide.png)
 
