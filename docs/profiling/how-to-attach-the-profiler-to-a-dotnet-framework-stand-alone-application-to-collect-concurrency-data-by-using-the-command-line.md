@@ -1,37 +1,20 @@
 ---
-title: "如何：将探查器附加到 .NET Framework 独立应用程序，以便使用命令行收集并发数据 | Microsoft Docs"
-ms.custom: 
+title: 如何：将探查器附加到 .NET Framework 独立应用程序，以便使用命令行收集并发数据 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: fdd41576-797e-4312-8520-fee7bb767e4a
-caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e868a344d9b5c068f845b2005a85aaca2607140c
-ms.lasthandoff: 02/22/2017
-
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 710c0a8bbfacc0e1edca3a1852cd8b51218a5ce3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：将探查器附加到 .NET Framework 独立应用程序，以便使用命令行收集并发数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到正在运行的 .NET Framework 独立（客户端）应用程序，并收集进程和线程并发数据。  
@@ -80,7 +63,7 @@ ms.lasthandoff: 02/22/2017
   
 -   以下 VSPerfCmd.exe 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|说明|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
@@ -95,7 +78,7 @@ ms.lasthandoff: 02/22/2017
   
     -   键入 **VSPerfCmd /detach**  
   
-         - 或 -  
+         或  
   
     -   关闭目标应用程序。  
   
