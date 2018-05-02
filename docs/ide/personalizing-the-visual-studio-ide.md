@@ -1,20 +1,19 @@
 ---
-title: 自定义 Visual Studio IDE | Microsoft Docs
-ms.custom: ''
+title: 自定义 Visual Studio IDE
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cecb3d9d1c221fc35f9a0c16ff7d5f685a85978e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>个性化设置 Visual Studio IDE
 
@@ -24,7 +23,7 @@ ms.lasthandoff: 04/16/2018
 
 许多个性化设置选项会通过“[环境选项](../ide/reference/environment-options-dialog-box.md)”对话框公开。 可通过两种方法来访问此对话框：
 
-- 在菜单栏上，依次选择“工具”、“选项”，如果尚未展开，则请展开“环境”节点。
+- 在菜单栏上，依次选择“工具” > “选项”，如果尚未展开，则请展开“环境”节点。
 
 - 在“快速启动”框中键入 `environment`，然后从结果列表中选择“环境”-->“常规”。
 
@@ -41,7 +40,7 @@ ms.lasthandoff: 04/16/2018
 
 可以在“词首字母大写”（如“File”）和“全部大写”（如“FILE”）之间更改主菜单大小写。 在“快速启动”框中键入 `environment`，选择“环境”-->“常规”，然后更改“将词首字母大写样式应用到菜单栏”选项。
 
-### <a name="customzing-menus-and-toolbars"></a>自定义菜单和工具栏
+### <a name="customze-menus-and-toolbars"></a>自定义菜单和工具栏
 
 若要添加或删除菜单项或工具栏项，请参阅[如何：自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
 
@@ -55,9 +54,9 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="external-tools"></a>外部工具
 
-可以自定义“工具”菜单以启动外部工具。有关详细信息，请参阅[管理外部工具](../ide/managing-external-tools.md)。
+可以自定义“工具”菜单以启动外部工具。 有关详细信息，请参阅[管理外部工具](../ide/managing-external-tools.md)。
 
 ## <a name="see-also"></a>请参阅
 
-[Visual Studio IDE 概述](../ide/visual-studio-ide.md)  
-[快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)
+- [Visual Studio IDE 概述](../ide/visual-studio-ide.md)
+- [快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)

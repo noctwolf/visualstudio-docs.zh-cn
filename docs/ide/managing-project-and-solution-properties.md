@@ -1,7 +1,7 @@
 ---
-title: 管理项目和解决方案属性 | Microsoft Docs
-ms.custom: ''
+title: 管理项目和解决方案属性
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a68cc558a52f7c8d66f76600cd68309ad67769c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b4b39c4d1e515530f50d086cb107d4ec0d297d48
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-project-and-solution-properties"></a>管理项目和解决方案属性
+# <a name="manage-project-and-solution-properties"></a>管理项目和解决方案属性
 
-项目具有一些控制编译、调试、测试和部署的很多方面的属性。 有些属性在所有项目类型中是通用的，而有些则只用于特定语言或平台。 右键单击解决方案资源管理器中的项目节点并选择“属性”，或者在菜单栏上的“快速启动”搜索框中键入“属性”，即可访问项目属性。
+项目具有一些控制编译、调试、测试和部署的很多方面的属性。 有些属性在所有项目类型中是通用的，而有些则只用于特定语言或平台。 右键单击“解决方案资源管理器”中的项目节点并选择“属性”，或者在菜单栏上的“快速启动”搜索框中键入“属性”，即可访问项目属性。
 
 ![项目上下文菜单](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")
 
@@ -54,4 +54,4 @@ C++ 和 JavaScript 项目对于管理项目属性有不同的用户界面。 此
 
 ## <a name="see-also"></a>请参阅
 
-[Visual Studio 中的解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
+- [Visual Studio 中的解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
