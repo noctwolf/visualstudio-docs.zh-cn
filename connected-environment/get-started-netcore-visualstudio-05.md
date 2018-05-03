@@ -1,18 +1,19 @@
 ---
 title: 使用 Visual Studio 在云中创建 .NET Core 开发环境（使用 Kubernetes 管理其中的容器）- 第 5 步 - 调用另一个容器 | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: 使用 Azure 上的容器和微服务快速开发 Kubernetes
 keywords: Docker, Kubernetes, Azure, AKS, Azure 容器服务, 容器
-manager: ghogen
-ms.openlocfilehash: 8b0a0c78496b8f57764383d737e2a1cebb2dd6b9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: ab3934e6f7f013dd21309dc8c98461983bdfe30a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core-and-visual-studio"></a>开始使用 .NET Core 和 Visual Studio 通连环境
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 03/19/2018
 1. 在单独的 Visual Studio 窗口中打开项目 `mywebapi`。
 1. 如之前为 `webfrontend` 执行的操作一样，从“启动设置”下拉列表中选择“适用于 AKS 的通连环境”。 这次无需创建新的开发环境，而是选择已创建的同一环境。 与之前一样，保留空间默认值 `mainline`，然后单击“确定”。 在输出窗口中，你可能会注意到 Visual Studio 开始在开发环境中“预热”这项新服务，以便在开始调试时加快速度，
 1. 按 F5，然后等待服务生成和部署。 当 Visual Studio 状态栏变为橙色时，表示已准备就绪
-1. 记下显示在“输出”窗口中“适用于 AKS 的通连环境”窗格的终结点 URL，其形式类似于 http://localhost:\<portnumber\>。 看起来容器是在本地运行，但实际上它是在 Azure 的开发环境中运行。
+1. 记下显示在“输出”窗口中“适用于 AKS 的通连环境”窗格的终结点 URL，其格式如下：http://localhost:\<portnumber\>。 看起来容器是在本地运行，但实际上它是在 Azure 的开发环境中运行。
 1. 当 `mywebapi` 准备就绪后，打开浏览器转到本地主机地址，并将 `/api/values` 追加到 URL 以调用 `ValuesController` 的默认 GET API。 
 1. 如果已成功执行所有步骤，应能看到 `mywebapi` 服务的回应，如下所示。
 

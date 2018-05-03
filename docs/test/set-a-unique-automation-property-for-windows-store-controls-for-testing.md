@@ -1,6 +1,7 @@
 ---
-title: 在 Visual Studio 中为 UWP 控件设置唯一的自动化属性以进行测试 | Microsoft Docs
+title: 在 Visual Studio 中为 UWP 控件设置唯一的自动化属性以进行测试
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: a27b3472080f1b22f0b07b01e92d6a0e5326396e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce916f181a6694eabc91cdb7c6a7dec9a8f5e5ac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>为 UWP 控件设置唯一的自动化属性以进行测试
 
@@ -75,7 +76,8 @@ ms.lasthandoff: 04/16/2018
  **Blend for Visual Studio：**在 Blend for Visual Studio 中采用以下任意一种方法来分配唯一自动化属性。
 
 > [!NOTE]
->  只能对使用 XAML 静态创建的控件使用此类方法。
+> 只能对使用 XAML 静态创建的控件使用此类方法。
+
 
  **为现有控件指定唯一名称的具体步骤**
 

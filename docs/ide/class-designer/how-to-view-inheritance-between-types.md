@@ -1,9 +1,8 @@
 ---
-title: 如何：查看类型之间的继承（类设计器）| Microsoft Docs
-ms.custom: ''
+title: 如何：查看类型之间的继承（类设计器）
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.AssociationTypeNotFoundError
@@ -17,35 +16,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 729affb724b109b767053b41e1c5e95da616f614
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8f44279baea33333c21bfadfd9fec21a2045aea
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>如何：查看类型之间的继承（类设计器）
-如果基类型和派生类型之间存在继承关系，则可在类设计器中的类关系图上查看这种关系。 若要创建两个类型之间的继承关系（如果不存在该关系），请参阅[如何：创建类型之间的继承](how-to-create-inheritance-between-types.md)。  
-  
-### <a name="to-find-the-base-type"></a>查找基类型  
-  
-1.  在类关系图中，单击要查看基类或基接口的类型。  
-  
-2.  在“类图”菜单中，选择“显示基类”或“显示基接口”。  
-  
-     类型的基类或基接口在关系图中显示为选中状态。 原来隐藏的所有继承连线现在都会出现在两个形状之间。  
-  
-还可以右键单击想要显示其基类型的类型，然后选择“显示基类”或“显示基接口”。  
-  
-### <a name="to-find-the-derived-types"></a>查找派生类型  
-  
-1.  在类关系图中，单击要查看派生类或派生接口的类型。  
-  
-2.  在“类图”菜单中，选择“显示派生类”或“显示派生接口”。  
-  
-     该类型的派生类或派生接口即会出现在关系图中。 原来隐藏的所有继承连线现在都会出现在形状之间。  
-  
-还可以右键单击想要显示其派生类型的类型，然后选择“显示派生类”或“显示派生接口”。  
-  
+
+如果基类型和派生类型之间存在继承关系，则可在类设计器中的类图上查看这种关系。 若要创建两个类型之间的继承关系（如果不存在该关系），请参阅[如何：创建类型之间的继承](how-to-create-inheritance-between-types.md)。
+
+## <a name="to-find-the-base-type"></a>查找基类型
+
+1.  在类关系图中，单击要查看基类或基接口的类型。
+
+2.  在“类图”菜单中，选择“显示基类”或“显示基接口”。
+
+     类型的基类或基接口在关系图中显示为选中状态。 原来隐藏的所有继承连线现在都会出现在两个形状之间。
+
+还可以右键单击想要显示其基类型的类型，然后选择“显示基类”或“显示基接口”。
+
+## <a name="to-find-the-derived-types"></a>查找派生类型
+
+1.  在类关系图中，单击要查看派生类或派生接口的类型。
+
+2.  在“类图”菜单中，选择“显示派生类”或“显示派生接口”。
+
+     该类型的派生类或派生接口即会出现在关系图中。 原来隐藏的所有继承连线现在都会出现在形状之间。
+
+还可以右键单击想要显示其派生类型的类型，然后选择“显示派生类”或“显示派生接口”。
+
 ## <a name="see-also"></a>请参阅
-[如何：创建类型之间的关联](how-to-create-associations-between-types.md)   
-[查看类型和关系](viewing-types-and-relationships.md)
+
+- [如何：创建类型之间的关联](how-to-create-associations-between-types.md)
+- [查看类型和关系](viewing-types-and-relationships.md)

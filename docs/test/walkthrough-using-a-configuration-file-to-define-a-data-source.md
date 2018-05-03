@@ -1,6 +1,7 @@
 ---
-title: 演练：在 Visual Studio 中使用配置文件定义数据源 | Microsoft Docs
+title: 演练：在 Visual Studio 中使用配置文件定义数据源
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 569aa39e9c5c749ac4497e4e6e08a9d5b34c657f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fee742129d852ff3793b2a7dd367fc157367750
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>演练：使用配置文件定义数据源
 
@@ -71,7 +72,8 @@ ms.lasthandoff: 04/16/2018
 ```
 
 > [!NOTE]
->  程序集名称必须与你正在使用的 Microsoft Visual Studio .NET Framework 版本相匹配。 如果你正在使用 Visual Studio .NET Framework 3.5，请将版本设置为 9.0.0.0。 如果你正在使用的 Visual Studio .NET Framework 2.0，请将版本设置为 8.0.0.0。
+> 程序集名称必须与你正在使用的 Microsoft Visual Studio .NET Framework 版本相匹配。 如果你正在使用 Visual Studio .NET Framework 3.5，请将版本设置为 9.0.0.0。 如果你正在使用的 Visual Studio .NET Framework 2.0，请将版本设置为 8.0.0.0。
+
 
 ## <a name="define-connection-strings"></a>定义连接字符串
  连接字符串定义了用于访问数据源的提供程序特定信息。 配置文件中定义的连接字符串提供了跨应用程序可重用的数据提供程序信息。 在本节中，你将创建两个由自定义配置节中定义的数据源使用的连接字符串。

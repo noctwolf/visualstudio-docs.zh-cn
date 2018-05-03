@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中为 Web 性能测试编码自定义验证规则 | Microsoft Docs
+title: 在 Visual Studio 中为 Web 性能测试编码自定义验证规则
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,13 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0c2e3eb6d9b0411a078c5d7531105230dfc82457
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>为 Web 性能测试编码自定义验证规则
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
 下面的代码演示如何实现自定义验证规则。 此验证规则模仿预定义的“所需的标记”验证规则的行为。 可基于该示例创建你自己的自定义验证规则。
 
 > [!WARNING]
->  自定验证程序的代码中的公共属性不可具有 null 值。
+> 自定验证程序的代码中的公共属性不可具有 null 值。
 
 ```csharp
 using System;

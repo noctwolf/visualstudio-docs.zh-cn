@@ -1,19 +1,19 @@
 ---
-title: 在 Visual Studio 中插入 XML 文档注释 | Microsoft Docs
-ms.custom: ''
+title: 在 Visual Studio 中插入 XML 文档注释
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0fae2411a77f405404e34c7a2357554c1e5398ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3c38e46a5c73d1f8018f56f76b971939ba8c316
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>如何项文档生成项插入 XML 注释
 
@@ -49,9 +49,9 @@ Visual Studio 可自动生成标准的 XML 文档注释结构，进而帮助记�
 
 ## <a name="see-also"></a>请参阅
 
-[XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)  
-[使用 XML 注释来记录代码（C# 指南）](/dotnet/csharp/codedoc)  
-[如何创建 XML 文档 (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)  
-[C++ 注释](/cpp/cpp/comments-cpp)  
-[XML 文档 (C++)](/cpp/ide/xml-documentation-visual-cpp)  
-[代码生成](../code-generation-in-visual-studio.md)
+- [XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+- [使用 XML 注释来记录代码（C# 指南）](/dotnet/csharp/codedoc)
+- [如何创建 XML 文档 (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [C++ 注释](/cpp/cpp/comments-cpp)
+- [XML 文档 (C++)](/cpp/ide/xml-documentation-visual-cpp)
+- [代码生成](../code-generation-in-visual-studio.md)

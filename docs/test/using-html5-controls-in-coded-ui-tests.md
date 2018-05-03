@@ -1,6 +1,7 @@
 ---
-title: 在 Visual Studio 中编码的 UI 测试中使用 HTML5 控件 | Microsoft Docs
+title: 在 Visual Studio 中编码的 UI 测试中使用 HTML5 控件
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b440ce0a9f9cf935020ca7ddf0cf392a0d47ad54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 918a2087635b88e018234f4c5dddff5e1f5f45d5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在编码的 UI 测试中使用 HTML5 控件
 
@@ -23,10 +24,12 @@ ms.lasthandoff: 04/16/2018
 -   Visual Studio Enterprise
 
 > [!WARNING]
->  在 Internet Explorer 10 之前的版本中，可以在比 Internet Explorer 进程更高的特权级别中运行编码的 UI 测试。 当在 Internet Explorer 10 中运行编码的 UI 测试时，编码的 UI 测试和 Internet Explorer 进程必须处于相同的特权级别。 这是因为 Internet Explorer 10 提供了更安全的 AppContainer 功能。
+> 在 Internet Explorer 10 之前的版本中，可以在比 Internet Explorer 进程更高的特权级别中运行编码的 UI 测试。 当在 Internet Explorer 10 中运行编码的 UI 测试时，编码的 UI 测试和 Internet Explorer 进程必须处于相同的特权级别。 这是因为 Internet Explorer 10 提供了更安全的 AppContainer 功能。
+
 
 > [!WARNING]
->  如果你在 Internet Explorer 10 中创建编码的 UI 测试，则使用 Internet Explorer 9 或 Internet Explorer 8 可能无法运行它。 这是因为 Internet Explorer 10 包含 HTML5 控件（如音频、视频、进度条和滑块）。 Internet Explorer 9 或 Internet Explorer 8 无法识别这些 HTML5 控件。 同样，使用 Internet Explorer 9 的编码的 UI 测试可能包含 Internet Explorer 8 无法识别的某些 HTML5 控件。
+> 如果你在 Internet Explorer 10 中创建编码的 UI 测试，则使用 Internet Explorer 9 或 Internet Explorer 8 可能无法运行它。 这是因为 Internet Explorer 10 包含 HTML5 控件（如音频、视频、进度条和滑块）。 Internet Explorer 9 或 Internet Explorer 8 无法识别这些 HTML5 控件。 同样，使用 Internet Explorer 9 的编码的 UI 测试可能包含 Internet Explorer 8 无法识别的某些 HTML5 控件。
+
 
 ## <a name="supported-html5-controls"></a>支持的 HTML5 控件
  编码的 UI 测试包括对以下 HTML5 控件的录制、播放和验证支持：
@@ -80,7 +83,8 @@ string Volume
  **筛选器属性：**`HtmlAudio` 的筛选器属性为 `Src`、`Class`、`ControlDefinition` 和 `TagInstance`。
 
 > [!NOTE]
->  定位和暂停的时间可以很长。 在播放期间，编码的 UI 测试将一直等到 `(TimeSpan)` 中指定的时间再暂停音频。 如果由于某种特殊情况，过了指定的时间才命中暂停命令，将引发异常。
+> 定位和暂停的时间可以很长。 在播放期间，编码的 UI 测试将一直等到 `(TimeSpan)` 中指定的时间再暂停音频。 如果由于某种特殊情况，过了指定的时间才命中暂停命令，将引发异常。
+
 
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a>视频控件
  **视频控件：**正确录制和播放 HTML5 视频控件上的操作。
@@ -110,7 +114,8 @@ string VideoWidth
  **筛选器属性：**`HtmlVideo` 的筛选器属性为 `Src`、`Poster`、`Class`、`ControlDefinition` 和 `TagInstance`。
 
 > [!NOTE]
->  如果使用 -30s 或 +30s 标签对视频后退或快进，将聚合标签以定位到相应的时间。
+> 如果使用 -30s 或 +30s 标签对视频后退或快进，将聚合标签以定位到相应的时间。
+
 
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a>滑块
  **滑块控件：**正确录制和播放 HTML5 滑块控件上的操作。

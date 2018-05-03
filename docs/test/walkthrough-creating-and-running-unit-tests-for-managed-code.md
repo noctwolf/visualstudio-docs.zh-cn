@@ -1,6 +1,7 @@
 ---
-title: 演练：在 Visual Studio 中创建并运行托管代码的单元测试 | Microsoft Docs
+title: 演练：在 Visual Studio 中创建并运行托管代码的单元测试
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +15,11 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: a34fded72a0d04f3920e0d7a76f9550993b520e7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b60317f46fc8676d51618e5c79545e752008072
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -45,10 +46,12 @@ ms.lasthandoff: 04/16/2018
  [使用单元测试以改进代码](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)
 
 > [!NOTE]
->  此演练使用用于托管代码的 Microsoft 单元测试框架。 测试资源管理器还可以在具有测试资源管理器适配器的第三方单元测试框架中运行测试。 有关详细信息，请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)
+> 此演练使用用于托管代码的 Microsoft 单元测试框架。 测试资源管理器还可以在具有测试资源管理器适配器的第三方单元测试框架中运行测试。 有关详细信息，请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)
+
 
 > [!NOTE]
->  有关如何从命令行运行测试的信息，请参阅[演练：使用命令行测试实用工具](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)。
+> 有关如何从命令行运行测试的信息，请参阅[演练：使用命令行测试实用工具](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)。
+
 
 ## <a name="prerequisites"></a>系统必备
 

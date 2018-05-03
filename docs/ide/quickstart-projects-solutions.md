@@ -1,7 +1,7 @@
 ---
-title: Visual Studio 中项目和解决方案简介 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 中项目和解决方案简介
 ms.date: 12/11/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606b08608eea275a25a1a097ed75b7554a99f6a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>快速入门：项目和解决方案
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 04/16/2018
 
    打开 Visual Studio，此时“起始页”可能占据了窗口的大部分空间。
 
-1. 在菜单栏上，依次选择“文件” > “新建” > “项目...”。
+1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
    **“新建项目”** 对话框随即打开。
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 
 现在我们将第一个项目添加到解决方案。 先从空项目开始，将所需项添加到项目中。
 
-1. 在“解决方案资源管理器”中的“解决方案‘QuickSolution’”的右键菜单或上下文菜单中，依次选择“添加” > “新建项目...”。
+1. 在“解决方案资源管理器”中的“解决方案‘QuickSolution’”的右键菜单或上下文菜单中，依次选择“添加” > “新建项目”。
 
    此时会打开 **“添加新项目”** 对话框。
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/16/2018
 
 有了空项目&mdash;我们来添加代码文件。
 
-1. 在“解决方案资源管理器”中的“QuickDate”的右键菜单或上下文菜单中，依次选择“添加” > “新建项...”。
+1. 在“解决方案资源管理器”中的“QuickDate”的右键菜单或上下文菜单中，依次选择“添加” > “新建项”。
 
    此时将打开“添加新项”对话框。
 
@@ -110,7 +110,7 @@ ms.lasthandoff: 04/16/2018
 
 我们来向解决方案添加单元测试项目。 这次我们从项目模板开始，所以不需要向项目添加额外的代码文件。
 
-1. 在“解决方案资源管理器”中的“解决方案‘QuickSolution’”的右键菜单或上下文菜单中，依次选择“添加” > “新建项目...”。
+1. 在“解决方案资源管理器”中的“解决方案‘QuickSolution’”的右键菜单或上下文菜单中，依次选择“添加” > “新建项目”。
 
    此时会打开 **“添加新项目”** 对话框。
 
@@ -124,7 +124,7 @@ ms.lasthandoff: 04/16/2018
 
 我们将使用新的单元测试项目测试“QuickDate”项目中的方法，因此需要添加对该项目的引用。 创建引用会在两个项目间创建生成依赖关系，这意味着生成解决方案时，会先生成“QuickDate”，再生成“QuickTest”。
 
-1. 选择“QuickTest”项目中的“引用”节点，然后在右键菜单或上下文菜单中选择“添加引用...”。
+1. 选择“QuickTest”项目中的“引用”节点，然后在右键菜单或上下文菜单中选择“添加引用”。
 
    ![“添加引用”菜单](media/quickstart-projects-add-reference.png)
 

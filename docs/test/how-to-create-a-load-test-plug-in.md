@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中创建负载测试插件 | Microsoft Docs
+title: 在 Visual Studio 中创建负载测试插件
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,13 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6e585fe66bde573f8bb133b0c8cda0900b0d6d16
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 482336bca7c177b3c4fdcb0f16faf7ea96d6c34b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>如何：创建负载测试插件
 
@@ -102,7 +103,8 @@ ms.lasthandoff: 04/16/2018
 下面的代码演示在 LoadTestFinished 事件发生后运行自定义代码的负载测试插件。 如果此代码在远程计算机上的某个测试代理上运行，并且该测试代理没有 localhost SMTP 服务，则负载测试将保持“正在进行”状态，因为将打开一个消息框。
 
 > [!NOTE]
->  下面的代码要求你添加对 System.Windows.Forms 的引用。
+> 下面的代码要求你添加对 System.Windows.Forms 的引用。
+
 
 ```csharp
 using System;

@@ -1,9 +1,8 @@
 ---
-title: 如何：实现接口（类设计器）|Microsoft Docs
-ms.custom: ''
+title: 如何：实现接口（类设计器）
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
@@ -14,43 +13,45 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c80ce802cd08a36ed299c0b24e7df729d6cce2d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5ccfde67a46ac1ae1b74a031a9ec030942d12b3d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>如何：实现接口（类设计器）
-在类设计器中，可以在类图上将接口连接至为接口方法提供代码的类，以此来实现接口。 类设计器可生成接口实现，并将接口与类之间的关系显示为继承关系。 可以通过在接口与类之间绘制继承连线或从类视图拖动接口来实现接口。  
-  
+
+在类设计器中，可以在类图上将接口连接至为接口方法提供代码的类，以此来实现接口。 类设计器可生成接口实现，并将接口与类之间的关系显示为继承关系。 可以通过在接口与类之间绘制继承连线或从类视图拖动接口来实现接口。
+
 > [!TIP]
->  创建接口的方法与创建其他类型的方法相同。 如果接口存在但未显示在类图上，则首先要显示接口。 有关详细信息，请参阅[如何：使用类设计器创建类型](how-to-create-types.md)和[如何：查看现有类型](how-to-view-existing-types.md)。  
-  
-### <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>通过绘制继承连线实现接口  
-  
-1.  在类图上，显示接口和将实现该接口的类。  
-  
-2.  从类和接口绘制一条继承连线。  
-  
-     将有一个棒糖形附加在类上，还有一个带接口名称的标签，用以标识继承关系。 Visual Studio 为所有接口成员生成存根。  
-  
- 有关详细信息，请参阅[如何：创建类型之间的继承](how-to-create-inheritance-between-types.md)。  
-  
-### <a name="to-implement-an-interface-from-the-class-view-window"></a>从“类视图”窗口实现接口  
-  
-1.  在类图上，显示要实现接口的类。  
-  
-2.  打开类视图，并查找该接口。  
-  
+> 创建接口的方法与创建其他类型的方法相同。 如果接口存在但未显示在类图上，则首先要显示接口。 有关详细信息，请参阅[如何：使用类设计器创建类型](how-to-create-types.md)和[如何：查看现有类型](how-to-view-existing-types.md)。
+
+## <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>通过绘制继承连线实现接口
+
+1.  在类图上，显示接口和将实现该接口的类。
+
+2.  从类和接口绘制一条继承连线。
+
+     将有一个棒糖形附加在类上，还有一个带接口名称的标签，用以标识继承关系。 Visual Studio 为所有接口成员生成存根。
+
+ 有关详细信息，请参阅[如何：创建类型之间的继承](how-to-create-inheritance-between-types.md)。
+
+## <a name="to-implement-an-interface-from-the-class-view-window"></a>从“类视图”窗口实现接口
+
+1.  在类图上，显示要实现接口的类。
+
+2.  打开类视图，并查找该接口。
+
     > [!TIP]
-    > 如果类视图尚未打开，则从“视图”菜单打开类视图。
-  
-3.  在关系图上将接口节点拖到类形状。  
-  
-     将有一个棒糖形附加在类上，还有一个带接口名称的标签，用以标识继承关系。 Visual Studio 为所有接口成员生成存根；至此就实现了接口。  
-  
+    > 如果类视图尚未打开，则从“视图”菜单或按 Ctrl+Shift+C 打开类视图。
+
+3.  在关系图上将接口节点拖到类形状。
+
+     将有一个棒糖形附加在类上，还有一个带接口名称的标签，用以标识继承关系。 Visual Studio 为所有接口成员生成存根；至此就实现了接口。
+
 ## <a name="see-also"></a>请参阅
-[如何：使用类设计器创建类型](how-to-create-types.md)   
-[如何：查看现有类型](how-to-view-existing-types.md)   
-[如何：创建类型之间的继承](how-to-create-inheritance-between-types.md)   
-[重构类和类型](refactoring-classes-and-types.md)
+
+- [如何：使用类设计器创建类型](how-to-create-types.md)
+- [如何：查看现有类型](how-to-view-existing-types.md)
+- [如何：创建类型之间的继承](how-to-create-inheritance-between-types.md)
+- [重构类和类型](refactoring-classes-and-types.md)

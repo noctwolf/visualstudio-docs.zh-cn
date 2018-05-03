@@ -1,9 +1,9 @@
 ---
-title: 登录 Visual Studio | Microsoft Docs
+title: 登录 Visual Studio
 ms.custom: ''
 ms.date: 11/16/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33d59be1be9049d8abdaf4f43dac221569cb7b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sign-in-to-visual-studio"></a>登录 Visual Studio
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 04/16/2018
 
 首次启动 Visual Studio 时，系统将要求你登录并提供一些基本注册信息。 应选择最符合需求的 Microsoft 帐户或工作（学校）帐户。 如果你没有此类帐户，可以免费创建一个 Microsoft 帐户。 请参阅 [如何注册 Microsoft 帐户？](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
-然后，选择要在 Visual Studio 中使用的 UI 设置和颜色主题。 Visual Studio 会记住这些设置并将其同步到登录到的所有 Visual Studio 环境。 有关已同步的设置列表，请参阅[已同步的设置](../ide/synchronized-settings-in-visual-studio.md)。 以后可以打开 Visual Studio 中的“工具”、“选项”菜单来更改设置。
+然后，选择要在 Visual Studio 中使用的 UI 设置和颜色主题。 Visual Studio 会记住这些设置并将其同步到登录到的所有 Visual Studio 环境。 有关已同步的设置列表，请参阅[已同步的设置](../ide/synchronized-settings-in-visual-studio.md)。 以后可以打开 Visual Studio 中的“工具” > “选项”菜单来更改设置。
 
 提供设置后，Visual Studio 将启动，然后你就会进行登录并准备好开始操作。 若要验证你是否已登录，请在 Visual Studio 环境的右上角查找名称。
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="to-change-your-profile-information"></a>更改你的配置文件信息
 
-1. 转到“文件”>“帐户设置”，然后选择“管理 Visual Studio 配置文件”链接。
+1. 转到“文件” > “帐户设置”，然后选择“管理 Visual Studio 配置文件”链接。
 
 1. 在浏览器窗口，选择“编辑配置文件”并更改所需的设置。
 
@@ -65,5 +65,5 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>请参阅
 
-[如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)  
-[Visual Studio IDE 概述](../ide/visual-studio-ide.md)
+* [如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Visual Studio IDE 概述](../ide/visual-studio-ide.md)

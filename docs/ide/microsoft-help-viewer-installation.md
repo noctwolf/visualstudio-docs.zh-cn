@@ -1,7 +1,7 @@
 ---
-title: 安装 Visual Studio 脱机帮助 | Microsoft Docs
-ms.custom: ''
+title: 安装 Visual Studio 脱机帮助
 ms.date: 11/01/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b44a96bd0386fdcec7740b8cafdcd9f328b64892
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6eedfe24b1f7ff7243cb9856bd1ae1942b1dbc53
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安装
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 04/16/2018
 
 Help Viewer 是 Visual Studio 的可选安装组件。 要通过 Visual Studio 安装程序安装该组件，请执行以下步骤：
 
-1. 从开始菜单打开“Visual Studio 安装程序”；如果 Visual Studio 处于打开状态，也可以通过选择“工具”，然后选择“获取工具和功能...”来打开 Visual Studio 安装程序。
+1. 从“开始”菜单打开“Visual Studio 安装程序”；如果 Visual Studio 处于打开状态，也可以通过选择“工具” > “获取工具和功能”来打开 Visual Studio 安装程序。
 
 1. 选择“单个组件”选项卡，然后选择“代码工具”部分下的“帮助查看器”。
 
@@ -38,7 +38,7 @@ Help Viewer 是 Visual Studio 的可选安装组件。 要通过 Visual Studio �
 
    ![“快速启动”框](media/help_viewer_quick_launch.png)
 
-1. 选择名为“Help Viewer (单个组件)”的安装结果。
+1. 选择名为“Help Viewer (单个组件)”的结果。
 
 1. 在打开的对话框中，选择“安装”按钮。
 
@@ -50,5 +50,5 @@ Help Viewer 是 Visual Studio 的可选安装组件。 要通过 Visual Studio �
 
 ## <a name="see-also"></a>请参阅
 
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
-[SQL Server 的帮助查看器和脱机内容](/sql/sql-server/sql-server-help-installation)
+- [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+- [SQL Server 的帮助查看器和脱机内容](/sql/sql-server/sql-server-help-installation)

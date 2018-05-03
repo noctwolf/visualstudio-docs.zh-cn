@@ -1,10 +1,9 @@
 ---
-title: “添加新项”命令 | Microsoft Docs
-ms.custom: ''
+title: “添加新项”命令
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - project.addnewitem
 helpviewer_keywords:
@@ -16,57 +15,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0a989ae54dbeaa7fd63348de64d412be25fd3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb238559cd59c03f134e781bc4beaf7ba7cb7893
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-new-item-command"></a>“添加新项”命令
-将新的解决方案项，如.htm、.css、.txt 或框架集添加到当前解决方案中并打开它。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-File.AddNewItem [filename] [/t:templatename] [/e:editorname]  
-```  
-  
-## <a name="arguments"></a>自变量  
- `filename`  
- 可选。 要添加到解决方案的项的路径和文件名。  
-  
-## <a name="switches"></a>开关  
- /t: `templatename`  
- 可选。 指定要创建的文件类型。 如果未给定模板名称，则默认创建一个文本文件。  
-  
- /t:`templatename` 参数语法反映在“添加新解决方案项”对话框中找到的信息。 必须输入完整类别，后跟文件类型，类别名称与文件类型用反斜杠 (`\`) 隔开，并将整个字符串括在引号内。  
-  
- 例如，若要创建新的文本文件，对于 /t:`templatename` 参数，应输入以下内容。  
-  
-```  
-/t:"General\Style Sheet"  
-```  
-  
- /e: `editorname`  
- 可选。 将在其中打开文件的编辑器的名称。 如果指定该参数，但未提供编辑器名称，则会出现“打开方式”对话框。  
-  
- /e:`editorname` 参数语法使用“打开方式”对话框中显示的编辑器名称，并用引号括起来。  
-  
- 例如，若要在源代码编辑器中打开样式表，对于 /e:`editorname` 参数，应输入以下内容。  
-  
-```  
-/e:"Source Code (text) Editor"  
-```  
-  
-## <a name="example"></a>示例  
- 此示例向当前解决方案添加新的解决方案项 MyHTMLpg。  
-  
-```  
->File.AddNewItem MyHTMLpg /t:"General\HTML Page"  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
- [“命令”窗口](../../ide/reference/command-window.md)   
- [“查找/命令”框](../../ide/find-command-box.md)   
- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+将新的解决方案项，如.htm、.css、.txt 或框架集添加到当前解决方案中并打开它。
+
+## <a name="syntax"></a>语法
+
+```
+File.AddNewItem [filename] [/t:templatename] [/e:editorname]
+```
+
+## <a name="arguments"></a>自变量
+ `filename`（可选）。 要添加到解决方案的项的路径和文件名。
+
+## <a name="switches"></a>开关
+ /t: `templatename`（可选）。 指定要创建的文件类型。 如果未给定模板名称，则默认创建一个文本文件。
+
+ /t:`templatename` 参数语法反映在“添加新解决方案项”对话框中找到的信息。 必须输入完整类别，后跟文件类型，类别名称与文件类型用反斜杠 (`\`) 隔开，并将整个字符串括在引号内。
+
+ 例如，若要创建新的文本文件，对于 /t:`templatename` 参数，应输入以下内容。
+
+```
+/t:"General\Style Sheet"
+```
+
+ /e: `editorname`（可选）。 将在其中打开文件的编辑器的名称。 如果指定该参数，但未提供编辑器名称，则会出现“打开方式”对话框。
+
+ /e:`editorname` 参数语法使用“打开方式”对话框中显示的编辑器名称，并用引号括起来。
+
+ 例如，若要在源代码编辑器中打开样式表，对于 /e:`editorname` 参数，应输入以下内容。
+
+```
+/e:"Source Code (text) Editor"
+```
+
+## <a name="example"></a>示例
+ 此示例向当前解决方案添加新的解决方案项 MyHTMLpg。
+
+```
+>File.AddNewItem MyHTMLpg /t:"General\HTML Page"
+```
+
+## <a name="see-also"></a>请参阅
+
+- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
+- [“命令”窗口](../../ide/reference/command-window.md)
+- [“查找/命令”框](../../ide/find-command-box.md)
+- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)

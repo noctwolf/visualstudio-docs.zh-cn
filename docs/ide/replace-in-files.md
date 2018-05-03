@@ -1,7 +1,7 @@
 ---
-title: Visual Studio 在文件中查找并替换 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 在文件中查找并替换
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8b3dbf5582d7f19af6ee8506caacff4a14f9b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="replace-in-files"></a>在文件中替换
 
 借助“在文件中替换”功能，可以在一组指定文件的代码中搜索某个字符串或表达式，并更改一部分或全部的匹配项。 找到的匹配项与所执行的操作在“结果选项”中选择的“查找结果”窗口中列出。
 
 > [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具”，“导入和导出设置”，然后选择“重置所有设置”。
+> 显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具” > “导入和导出设置”，再选择“重置所有设置”。
 
 可以使用以下任一方法在“查找和替换”窗口中显示“在文件中替换”。
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 04/16/2018
 
    — 或 —
 
-如果已经打开“查找和替换”窗口，则在工具栏上选择“在文件中替换”。
+  如果已经打开“查找和替换”窗口，则在工具栏上选择“在文件中替换”。
 
 ## <a name="find-what"></a>查找内容
 
@@ -63,34 +63,40 @@ ms.lasthandoff: 04/16/2018
 
 可以展开或折叠“查找选项”部分。 可以选择或清除以下选项：
 
-区分大小写  
+**区分大小写**
+
 选中时，“查找结果”窗口将仅显示内容和大小写均匹配的“查找内容”字符串实例。 例如，选中“区分大小写”后搜索“MyObject”会返回“MyObject”，而不会返回“myobject”或“MYOBJECT”。
 
-全字匹配  
+**全字匹配**
+
 选中时，“查找结果”窗口将仅显示全字匹配的“查找内容”字符串实例。 例如，搜索“MyObject”会返回“MyObject”，而不会返回“CMyObject”或“MyObjectC”。
 
-使用正则表达式  
+**使用正则表达式**
+
 选中此复选框后，可以使用特殊表示法在“查找内容”或“替换为”文本框中定义文本模式。 有关这些表示法的列表，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
 
-查找以下文件类型  
-此列表指示要在“查找范围”目录中搜索的文件类型。 如果此字段留空，则将搜索“查找范围”目录中的所有文件。
+**查找以下文件类型**
 
-选择列表中的任意项以输入预配置的搜索字符串，该字符串将查找那些特定类型的文件。
+此列表指示要在“查找范围”目录中搜索的文件类型。 如果此字段留空，则将搜索“查找范围”目录中的所有文件。 选择列表中的任意项以输入预配置的搜索字符串，该字符串将查找那些特定类型的文件。
 
 ## <a name="result-options"></a>结果选项
 
 可以展开或折叠“结果选项”部分。 可以选择或清除以下选项：
 
-查找结果 1 窗口  
+**查找结果 1** 窗口
+
 如果选择此选项，当前的搜索结果将替换“查找结果 1”窗口中的内容。 此窗口将自动打开以显示搜索结果。 若要手动打开此窗口，请从“视图”菜单中选择“其他窗口”，然后选择“查找结果 1”。
 
-查找结果 2 窗口  
+**查找结果 2** 窗口
+
 如果选择此选项，当前的搜索结果将替换“查找结果 2”窗口中的内容。 此窗口将自动打开以显示搜索结果。 若要手动打开此窗口，请从“视图”菜单中选择“其他窗口”，然后选择“查找结果 2”。
 
-只显示文件名  
+**只显示文件名**
+
 如果选中此复选框，则“查找结果”窗口将列出所有包含搜索字符串的文件的完整名称和路径。 但是，结果不包含显示字符串的代码行。 此复选框仅可用于“在文件中查找”。
 
-“全部替换”后，保持已修改的文件处于打开状态  
+**“全部替换”后，保持已修改的文件处于打开状态**
+
 如果选中此选项，进行过替换的文件会保持打开状态，便于撤消或保存所做的更改。 内存约束会限制替换操作之后保持打开状态的文件数。
 
 > [!CAUTION]
@@ -98,6 +104,6 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>请参阅
 
-[查找和替换文本](../ide/finding-and-replacing-text.md)  
-[在文件中查找](../ide/find-in-files.md)  
-[Visual Studio 命令](../ide/reference/visual-studio-commands.md)
+- [查找和替换文本](../ide/finding-and-replacing-text.md)
+- [在文件中查找](../ide/find-in-files.md)
+- [Visual Studio 命令](../ide/reference/visual-studio-commands.md)

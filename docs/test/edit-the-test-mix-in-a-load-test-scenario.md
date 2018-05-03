@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中负载测试方案的测试组合 | Microsoft Docs
+title: Visual Studio 中负载测试方案的测试组合
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c7f0cb4c25c99c7ab68400d63e1ec52253a5f61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>编辑测试组合以指定在负载测试方案中包括的 Web 性能、单元和编码的 UI 测试
 
@@ -77,12 +78,14 @@ ms.lasthandoff: 04/16/2018
  “分布”按钮用于在所有项中平均分配百分比。 例如，如果有三个项，则选择“分布”会将百分比值设置为 34、33 和 33。
 
 > [!WARNING]
->  “分布”按钮会重写任意锁定的项。
+> “分布”按钮会重写任意锁定的项。
+
 
  还可以不使用滑块而直接在“%”列中键入百分比值。 如果直接输入百分比值，则其他项将不会自动调整。
 
 > [!NOTE]
->  当总数达不到 100% 或者在“%”列中输入的百分比值为小数时，滑块处于禁用状态。
+> 当总数达不到 100% 或者在“%”列中输入的百分比值为小数时，滑块处于禁用状态。
+
 
  手动输入百分比值时，应该确保所有项的总和为 100%。 保存组合时，如果总和不是 100%，则系统会提示您或者接受现有的百分比值，或者返回并调整它们。 如果选择接受现有百分比，则会按比例分配这些百分比以达到 100%。  例如，如果有两个项，并且手动将它们设置为 80% 和 40%，则第一个项将设置为 66.67%（80 除以 120），第二个项将设置为 33.33%（40 除以 120）。
 

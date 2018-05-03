@@ -1,8 +1,9 @@
 ---
-title: 浏览边界 | Microsoft IntelliTest 开发人员测试工具 | Microsoft Docs
+title: 浏览边界 | Microsoft IntelliTest 开发人员测试工具
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f152f128fed04abee44ca8c57c89b9f1c2f12ae6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7952ccfb8a2574bca5f297da5e675f76e8725f83
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="exploration-bounds"></a>浏览边界
 
@@ -57,7 +58,7 @@ IntelliTest 浏览程序的执行路径越深，IntelliTest 从程序的控制�
 <a name="maxconstraintsolvermemory"></a>
 ## <a name="maxconstraintsolvermemory"></a>MaxConstraintSolverMemory
 
-[约束求解器](input-generation.md#constraint-solver)必须计算将导致使用一个新的其他执行路径的输入的大小 (MB)。 这是 PexSettingsAttributeBase 及其派生类型的一个选项。
+[约束求解器](input-generation.md#constraint-solver)必须计算将导致使用一个新的其他执行路径的输入的大小 (MB)。 这是 PexSettingsAttributeBase* 及其派生类型的一个选项。
 
 IntelliTest 浏览程序的执行路径越深，IntelliTest 从程序的控制流和数据流生成的约束系统就会变得越复杂。 根据计算机的可用内存，可通过设置此值，让 IntelliTest 处理更复杂的约束系统。
 
@@ -121,13 +122,12 @@ void ParameterizedTest(int n)
 
 浏览测试期间 IntelliTest 将尝试运行的最大次数。
 
-此浏览边界背后的动机是包含循环或递归的任何代码可能具有无限数目的执行路径，因此需要在[输入生成](input-generation.md)期间限制 IntelliTest。 
+此浏览边界背后的动机是包含循环或递归的任何代码可能具有无限数目的执行路径，因此需要在[输入生成](input-generation.md)期间限制 IntelliTest。
 
-MaxRuns 和 MaxRunsWithUniquePaths 这两个设置的关系如下所示： 
+MaxRuns 和 MaxRunsWithUniquePaths 这两个设置的关系如下所示：
 
 * IntelliTest 将使用不同的测试输入调用参数化测试方法最多 MaxRuns 次。
-* 如果执行代码是确定的，IntelliTest 每次将使用不同的执行路径。 
-  但在某些情况下，执行代码可能会使用不同的输入沿用之前使用过的执行路径。 
+* 如果执行代码是确定的，IntelliTest 每次将使用不同的执行路径。 但在某些情况下，执行代码可能会使用不同的输入沿用之前使用过的执行路径。
 * IntelliTest 计算找到的唯一执行路径数；此数目受 MaxRunsWithUniquePaths 选项限制。
 
 <a name="maxrunswithoutnewtests"></a>
@@ -135,7 +135,7 @@ MaxRuns 和 MaxRunsWithUniquePaths 这两个设置的关系如下所示：
 
 在不发出新测试的情况下连续运行的最大数目。
 
-虽然 IntelliTest 通常可在短时间内找到许多有趣的测试输入，但一段时间后，它将找不到其他新的测试输入，并且不再发出单元测试。 此配置选项对在不发出新测试的情况下 IntelliTest 可能执行的连续尝试次数进行了限制。 达到限制即停止浏览。 
+虽然 IntelliTest 通常可在短时间内找到许多有趣的测试输入，但一段时间后，它将找不到其他新的测试输入，并且不再发出单元测试。 此配置选项对在不发出新测试的情况下 IntelliTest 可能执行的连续尝试次数进行了限制。 达到限制即停止浏览。
 
 <a name="maxrunswithuniquepaths"></a>
 ## <a name="maxrunswithuniquepaths"></a>MaxRunsWithUniquePaths
@@ -147,8 +147,7 @@ MaxRuns 和 MaxRunsWithUniquePaths 这两个设置的关系如下所示：
 MaxRuns 和 MaxRunsWithUniquePaths 这两个设置的关系如下所示： 
 
 * IntelliTest 将使用不同的测试输入调用参数化测试方法最多 MaxRuns 次。
-* 如果执行代码是确定的，IntelliTest 每次将使用不同的执行路径。 
-  但在某些情况下，执行代码可能会使用不同的输入沿用之前使用过的执行路径。 
+* 如果执行代码是确定的，IntelliTest 每次将使用不同的执行路径。 但在某些情况下，执行代码可能会使用不同的输入沿用之前使用过的执行路径。 
 * IntelliTest 计算找到的唯一执行路径数；此数目受 MaxRunsWithUniquePaths 选项限制。
 
 <a name="maxexceptions"></a>
@@ -156,16 +155,14 @@ MaxRuns 和 MaxRunsWithUniquePaths 这两个设置的关系如下所示：
 
 停止浏览前可能遇到的最大异常数。
 
-此浏览边界背后的动机是停止浏览包含多个 bug 的代码。
-如果 IntelliTest 在代码中找到太多错误，则停止浏览。
+此浏览边界背后的动机是停止浏览包含多个 bug 的代码。 如果 IntelliTest 在代码中找到太多错误，则停止浏览。
 
 <a name="testexcludepathboundsexceeded"></a>
 ## <a name="testexcludepathboundsexceeded"></a>TestExcludePathBoundsExceeded
 
 将忽略超过配置的路径边界 [MaxCalls](#maxcalls)、[MaxBranches](#maxbranches)、[MaxStack](#maxstack) 和 [MaxConditions](#maxconditions) 的执行路径。
 
-此浏览边界背后的动机是处理（大多数情况下）非终止测试。 IntelliTest 达到浏览边界（如[MaxCalls](#maxcalls)、[MaxBranches](#maxbranches)、[MaxStack](#maxstack) 或 [MaxConditions](#maxconditions)）时，它会假定测试不是非终止进程，且之后不会导致堆栈溢出。
-这种测试用例可能会给其他测试框架带来问题，但此特性会提供一种方法来阻止 IntelliTest 为可能的非终止进程发出测试用例或发出导致堆栈溢出的测试用例。
+此浏览边界背后的动机是处理（大多数情况下）非终止测试。 IntelliTest 达到浏览边界（如[MaxCalls](#maxcalls)、[MaxBranches](#maxbranches)、[MaxStack](#maxstack) 或 [MaxConditions](#maxconditions)）时，它会假定测试不是非终止进程，且之后不会导致堆栈溢出。 这种测试用例可能会给其他测试框架带来问题，但此特性会提供一种方法来阻止 IntelliTest 为可能的非终止进程发出测试用例或发出导致堆栈溢出的测试用例。
 
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
@@ -184,7 +181,7 @@ MaxRuns 和 MaxRunsWithUniquePaths 这两个设置的关系如下所示：
 
 TestEmissionBranchHits 设置确定 IntelliTest 是否应考虑完全涵盖某个分支，是测试涵盖一次，即 (**TestEmissionBranchHits = 1**)，还是两次，即 (**TestEmissionBranchHits = 2**)，依次类推。
 
-TestEmissionBranchHits = 1 将产生非常小的测试套件，套件将涵盖 IntelliTest 可访问的所有分支。 具体而言，此测试套件还将涵盖它访问的所有基本块和语句。 
+TestEmissionBranchHits = 1 将产生非常小的测试套件，套件将涵盖 IntelliTest 可访问的所有分支。 具体而言，此测试套件还将涵盖它访问的所有基本块和语句。
 
 此选项的默认值是 TestEmissionBranchHits = 2，这将生成更具表达意义的测试套件，也更适合检测将来的回归错误。
 

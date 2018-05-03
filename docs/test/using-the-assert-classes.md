@@ -1,8 +1,9 @@
 ---
-title: 在 Visual Studio 中使用 Assert 类进行单元测试 | Microsoft Docs
+title: 在 Visual Studio 中使用 Assert 类进行单元测试
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Assert classes
 - Assert statements
@@ -13,17 +14,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ff40f25e9beffa848185fe2c1f95df96928543d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d56477822fa2d965902d9442d47e2c3ab24d656
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-the-assert-classes"></a>使用 Assert 类
 
 使用 UnitTestingFramework 命名空间的 Assert 类来验证特定功能。 单元测试方法会执行开发代码中的方法代码，但只有包含 Assert 语句时，它才会报告代码行为的正确性。
 
 ## <a name="kinds-of-asserts"></a>Assert 的类型
+
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 命名空间提供多种类型的 Assert 类：
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
@@ -47,7 +49,7 @@ ms.lasthandoff: 04/16/2018
  测试生成无结论的结果时，将引发 AssertInconclusiveException。 通常，将 Assert.Inconclusive 语句添加到仍在进行的测试中以指示它尚未准备好运行。
 
 > [!NOTE]
->  替代策略将使用 Ignore 属性标记尚未准备好运行的测试。 但是，这样做的弊端是你无法轻松地对尚待执行的测试的数量生成报表。
+> 替代策略使用 Ignore 属性标记尚未准备好运行的测试。 但是，这样做的弊端是你无法轻松地对尚待执行的测试的数量生成报表。
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
 

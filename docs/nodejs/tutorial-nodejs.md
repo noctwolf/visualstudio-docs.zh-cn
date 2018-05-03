@@ -1,6 +1,6 @@
 ---
-title: 创建 Node.js 和 Express 应用 - Visual Studio | Microsoft Docs
-description: 本教程会在 Visual Studio 中创建 Node.js 和 Express 应用
+title: 创建 Node.js 和 Express 应用
+description: 在本教程中，使用 Visual Studio 的 Node.js 工具创建应用
 ms.custom: ''
 ms.date: 03/13/2018
 ms.technology: vs-nodejs
@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 47bf06fabba9197029831382b6ad6e9068e7829c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 259524aa8f4bb20097f5f5504c890ee7f4cc3b78
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 Express 应用
 本教程介绍如果使用 Node.js 和 Express 进行 Visual Studio 开发，教程会创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。

@@ -1,7 +1,7 @@
 ---
-title: Visual Studio 的高效工作提示 | Microsoft Docs
-ms.custom: ''
+title: 提高 Visual Studio 使用效率的提示
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b79f7d36358a875b45b7a705674060b05969cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 34206b9c41802063cb1d29fd3bc5f8984a5581ca
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>提高 Visual Studio 使用效率的提示
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 04/16/2018
 
 若要详细了解常见键盘快捷键，请参阅[键盘提示](../ide/tips-and-tricks-for-visual-studio.md)。 或者，有关键盘快捷键的完整列表，请参阅[标识并自定义键盘快捷键](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)和[默认键盘快捷键](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
-## <a name="writing-code"></a>编写代码
+## <a name="write-code"></a>编写代码
 
 使用以下功能快速编写代码。
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
 
 - **使用示例应用程序**。 可通过从 [Microsoft Developer Network](https://code.msdn.microsoft.com/) 下载并安装示例应用程序来加速应用程序的开发。 还可以通过下载并探索相关领域的示例包学习特定的技术或编程概念。
 
-## <a name="navigating-within-your-code"></a>在代码中导航
+## <a name="navigate-within-your-code"></a>在代码中导航
 
  你可以使用各种技术更快地查找并移动到代码中的特定位置。
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
 
 - **浏览代码的整体结构**。 在“解决方案资源管理器”中，可以搜索并浏览项目中的类及其类型和成员。 还可以搜索符号，查看方法的调用层次结构，查找符号引用，以及执行其他任务。 如果在“解决方案资源管理器”中选择一个代码元素，则在“预览”选项卡中打开关联的文件，并且游标移至文件中的该元素。 有关详细信息，请参阅[查看代码的结构](../ide/viewing-the-structure-of-code.md)。
 
-## <a name="finding-items-faster"></a>更快速查找项
+## <a name="find-items-faster"></a>更快速查找项
 
 你可以在 IDE 中搜索命令、文件和选项，还可以筛选工具窗口的内容以仅显示当前任务的相关信息。
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 04/16/2018
 
     “快速启动”显示“新项目”对话框、“添加新项”对话框、“选项”对话框中的“项目和解决方案”页的链接以及其他内容。 快速启动结果还可包括项目文件和工具窗口。
 
-## <a name="debugging-code"></a>调试代码
+## <a name="debug-code"></a>调试代码
 
 调试会消耗大量的时间，但以下提示将有助于加快这个过程。
 
@@ -97,7 +97,7 @@ ms.lasthandoff: 04/16/2018
 
      有关其他命令的详细信息，请参阅 [Visual Studio 命令别名](../ide/reference/visual-studio-command-aliases.md)。
 
-## <a name="accessing-visual-studio-tools"></a>访问 Visual Studio Tools
+## <a name="access-visual-studio-tools"></a>访问 Visual Studio 工具
 
 如果将开发人员命令提示符或其他 Visual Studio 工具固定到“开始”菜单或任务栏，可以快速访问这些对象。
 
@@ -105,7 +105,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 右键单击或打开“开发人员命令提示符”的关联菜单，再选择“固定到‘开始’菜单”或“固定到任务栏”。
 
-## <a name="managing-files-toolbars-and-windows"></a>管理文件、工具栏和窗口
+## <a name="manage-files-toolbars-and-windows"></a>管理文件、工具栏和窗口
 
 当你开发应用程序时，在任何时候都可以处理多个代码文件并且在多个工具窗口之间切换。 可以利用以下提示保持条理性。
 

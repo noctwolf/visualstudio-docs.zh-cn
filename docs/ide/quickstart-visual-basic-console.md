@@ -1,9 +1,10 @@
 ---
-title: 快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用 | Microsoft Docs
+title: 快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用
+description: 了解如何在 Visual Studio 中使用 Visual Basic 逐步创建简单的控制台应用。
 ms.custom: ''
 ms.date: 12/10/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -13,23 +14,25 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e7b9f03a5ef0a37594dad015084648eaa2bade
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44c996e0e896a125a0d0ab9342e63b81ad2b9b24
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用
+
 在这个 5-10 分钟的 Visual Studio 集成开发环境 (IDE) 简介中，你将了解如何创建在控制台上运行的简单 Visual Basic 应用程序。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
 
 ## <a name="create-a-project"></a>创建项目
+
 首先，先创建一个 Visual Basic 应用程序项目。 项目类型随附了所需的全部模板文件，无需添加任何内容！
 
 1. 打开 Visual Studio 2017。
 
-2. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。
+2. 在顶部菜单栏，依次选择“文件” > “新建” > “项目”。
 
 3. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 随后将项目命名为 HelloWorld。
 
@@ -44,6 +47,7 @@ ms.lasthandoff: 04/16/2018
      ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负载](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ## <a name="create-the-application"></a>创建应用程序
+
 选择 Visual Basic 项目模板并为项目命名后，Visual Studio 会创建一个简单的“Hello World”应用程序。 它通过调用 <xref:System.Console.WriteLine%2A> 方法在控制台窗口中 显示文本字符串“Hello World!”。
 
 ![查看模板中的默认 Hello World 代码](../ide/media/vb-console-helloworld-template.png)
@@ -55,6 +59,7 @@ ms.lasthandoff: 04/16/2018
 进行此操作时，控制台窗口短暂出现后就会关闭。 这是因为 `Main` 方法在执行其单个语句后就会终止，应用程序因而结束。
 
 ### <a name="add-some-code"></a>添加一些代码
+
 先添加一些代码来暂停应用程序，然后请求用户输入。
 
 1. 在 <xref:System.Console.WriteLine%2A> 方法调用后面紧接着添加以下代码：
@@ -70,6 +75,7 @@ ms.lasthandoff: 04/16/2018
    这会将程序编译成一种中间语言 (IL)，然后由实时 (JIT) 编译器转换成二进制代码。
 
 ## <a name="run-the-application"></a>运行此应用程序
+
 1. 单击工具栏上的“HelloWorld”按钮。
 
    ![单击“Hello World”按钮，从工具栏运行程序](../ide/media/vb-console-hello-world-button.png)
@@ -79,6 +85,7 @@ ms.lasthandoff: 04/16/2018
    ![显示 Hello World 和 Press any key to continue 的控制台窗口](../ide/media/vb-console-hello-world-press-any-key.png)
 
 ## <a name="next-steps"></a>后续步骤
+
 祝贺你完成此快速入门！ 希望你已对 Visual Basic 和 Visual Studio IDE 有了一定了解。 若要更加深入地了解，请继续学习下面的教程。
 
 > [!div class="nextstepaction"]

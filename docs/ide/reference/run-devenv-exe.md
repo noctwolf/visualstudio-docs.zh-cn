@@ -1,10 +1,9 @@
 ---
-title: /Run (devenv.exe) | Microsoft Docs
-ms.custom: ''
+title: -Run (devenv.exe)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /run Devenv
 - run Devenv switch
@@ -18,45 +17,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2290215caa401c5cc4a639874b0b2bd7012b2cd5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b784b794945363afb2ea8955b5ad1bde96c36528
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
-编译并运行指定的项目或解决方案。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-devenv {/run|/r} {SolutionName|ProjectName}  
-```  
-  
-## <a name="arguments"></a>自变量  
- `SolutionName`  
- 必须的。 解决方案文件的完整路径和名称。  
-  
- `ProjectName`  
- 必须的。 项目文件的完整路径和名称。  
-  
-## <a name="remarks"></a>备注  
- 根据为活动解决方案配置指定的设置编译并运行指定项目或解决方案。 此开关启动集成开发环境 (IDE) ，并在项目或解决方案已完成运行后让该环境保持活动状态。  
-  
--   用双引号将含有空格的字符串引起来。  
-  
--   “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示摘要信息（包括错误）。  
-  
-## <a name="example"></a>示例  
- 该示例使用活动部署配置运行解决方案 `MySolution`。  
-  
-```  
-devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)   
- [/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)   
- [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
- [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+编译并运行指定的项目或解决方案。
+
+## <a name="syntax"></a>语法
+
+```
+devenv {/run|/r} {SolutionName|ProjectName}
+```
+
+## <a name="arguments"></a>自变量
+ `SolutionName`
+
+ 必须的。 解决方案文件的完整路径和名称。
+
+ `ProjectName`
+
+ 必须的。 项目文件的完整路径和名称。
+
+## <a name="remarks"></a>备注
+ 根据为活动解决方案配置指定的设置编译并运行指定项目或解决方案。 此开关启动集成开发环境 (IDE) ，并在项目或解决方案已完成运行后让该环境保持活动状态。
+
+-   用双引号将含有空格的字符串引起来。
+
+-   “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示摘要信息（包括错误）。
+
+## <a name="example"></a>示例
+ 该示例使用活动部署配置运行解决方案 `MySolution`。
+
+```
+devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
+```
+
+## <a name="see-also"></a>请参阅
+
+- [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)
+- [/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)
+- [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

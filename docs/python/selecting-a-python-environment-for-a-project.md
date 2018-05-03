@@ -1,6 +1,6 @@
 ---
-title: 为项目选择环境
-description: 在 Visual Studio 解决方案资源管理器中，可以分配一个特定的 Python 解释器（环境）以始终用于任何给定项目，忽略默认环境。 还可以创建和管理虚拟环境。
+title: 选择项目的 Python 解释器和环境
+description: 如何分配 Visual Studio 项目要使用的 Python 环境，以及关于创建虚拟环境的说明。
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>选择在项目中使用的 Python 解释器和环境
+# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>如何分配用于项目的 Python 环境
 
 Python 项目中的所有代码均在特定环境的上下文中运行。 Visual Studio 还将该环境用于调试、导入和成员完成情况、语法检查以及任何需要环境的其他任务。
 
