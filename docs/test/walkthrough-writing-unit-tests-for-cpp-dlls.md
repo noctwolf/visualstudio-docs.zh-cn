@@ -1,6 +1,7 @@
 ---
-title: 如何：编写 C/C++ DLL 单元测试 | Microsoft Docs
+title: 如何：编写 C/C++ DLL 单元测试
 ms.date: 11/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e4ff7d931b614d6d3c243539efc42bf051878fb0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：编写 C/C++ DLL 单元测试
 
@@ -293,7 +294,8 @@ ms.lasthandoff: 04/16/2018
      ![所有测试均通过](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
 
 > [!TIP]
->  如果各个测试没有依赖项会阻止其以任意顺序运行，请使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切换按钮来启用执行并行测试。 这可以显著降低运行所有测试所需的时间。
+> 如果各个测试没有依赖项会阻止其以任意顺序运行，请使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切换按钮来启用执行并行测试。 这可以显著降低运行所有测试所需的时间。
+
 
 ##  <a name="refactor"></a> 在不更改测试的情况下重构代码
 

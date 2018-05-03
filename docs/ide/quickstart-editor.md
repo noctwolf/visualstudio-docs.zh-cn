@@ -1,7 +1,7 @@
 ---
-title: Visual Studio 中的编辑功能简介 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 中的编辑功能简介
 ms.date: 11/30/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
@@ -11,11 +11,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f627d7157972e277589d2edf07309190c6430d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44eb805a50e7518aa346b35a8aaba5202244ec76
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-use-the-code-editor"></a>快速入门：使用代码编辑器
 
@@ -29,13 +29,13 @@ ms.lasthandoff: 04/16/2018
 
 先创建一个新文件并向其添加一些代码。 请注意，我们不需要创建项目来使用编辑器提供的便利。
 
-1. 打开 Visual Studio，在菜单栏上的“文件”菜单中，选择“新建” > “文件...”。
+1. 打开 Visual Studio，在菜单栏上的“文件”菜单中，选择“新建” > “文件”。
 
 1. 在“新建文件”对话框的“常规”类别中，选择“Visual C# 类”，然后选择“打开”。
 
    编辑器中将打开主干为 C# 类的新文件。
 
-## <a name="using-code-snippets"></a>使用代码片段
+## <a name="use-code-snippets"></a>使用代码片段
 
 Visual Studio 提供了实用的代码片段，可快速方便地生成常用代码块。 [代码片段](../ide/code-snippets.md)可用于不同编程语言，包括 C#、Visual Basic 和 C++。 我们将 C# `void Main` 代码片段添加到文件。
 
@@ -49,13 +49,13 @@ Visual Studio 提供了实用的代码片段，可快速方便地生成常用代
 
    你会看到 `static void Main()` 方法签名被添加到文件。 `Main()` 方法是 C# 应用程序的入口点。
 
-对于不同语言，可用代码片段不同。 依次选择“编辑”、“IntelliSense”、“插入代码片段...”，然后选择语言的文件夹，即可查看编程语言的可用代码片段。 对于 C#，该列表如下所示：
+对于不同语言，可用代码片段不同。 依次选择“编辑” > “IntelliSense” > “插入代码片段”，然后选择语言的文件夹，即可查看编程语言的可用代码片段。 对于 C#，该列表如下所示：
 
 ![C# 代码片段列表](media/quickstart-code-snippet-list.png)
 
 该列表包含用于创建类、构造函数、`Console.WriteLine()`、`for` 循环、`if` 和 `switch` 语句等的代码片段。
 
-## <a name="commenting-out-code"></a>为代码添加注释
+## <a name="comment-out-code"></a>为代码添加注释
 
 工具栏提供了许多按钮，可提高编码效率。 例如，你可切换到 IntelliSense 完成模式、增加或减少缩进、设置书签或为代码添加注释。 本节将介绍如何为不想编译的代码添加注释。
 
@@ -91,7 +91,7 @@ Visual Studio 提供了实用的代码片段，可快速方便地生成常用代
 
    C# 注释字符 `//` 添加到了每个所选行的开始处，从而为代码添加注释。
 
-## <a name="collapsing-code-blocks"></a>折叠代码块
+## <a name="collapse-code-blocks"></a>折叠代码块
 
 我们不想看到生成的 `Class1` 的空构造函数，所以为了让代码更整洁，我们将其折叠。 在构造函数第一行的边距中选择内部带有减号的小灰色框。 如果你使用的是键盘，也可将光标置于构造函数代码中的任意位置，然后按 Ctrl+M，Ctrl+M。
 
@@ -99,7 +99,7 @@ Visual Studio 提供了实用的代码片段，可快速方便地生成常用代
 
 代码块折叠到第一行，后跟省略号 (`...`)。 若要再次展开代码块，请单击现在带有加号的相同灰色框，或者再次按 Ctrl+M，Ctrl+M。 此功能被称为[大纲显示](../ide/outlining.md)，在折叠长方法或整个类时特别有用。
 
-## <a name="viewing-symbol-definitions"></a>查看符号定义
+## <a name="view-symbol-definitions"></a>查看符号定义
 
 通过 Visual Studio 编辑器可轻松查看类型、方法等的定义。一种方法是导航到包含定义的文件，例如通过选择“转到定义”，转到引用符号的任何位置。 使用“[速览定义](../ide/go-to-and-peek-definition.md#peek-definition)”速度更快，不会干扰你处理文件。 我们来快速查看一下 `string` 的定义。
 
@@ -111,7 +111,7 @@ Visual Studio 提供了实用的代码片段，可快速方便地生成常用代
 
 1. 选择弹出窗口右上方的“x”小框，关闭“速览定义”窗口。
 
-## <a name="using-intellisense-to-complete-words"></a>使用 IntelliSense 完成单词
+## <a name="use-intellisense-to-complete-words"></a>使用 IntelliSense 完成单词
 
 编写代码时，[IntelliSense](../ide/using-intellisense.md) 是非常宝贵的资源。 它可显示某个类型的可用成员信息，或某个方法不同重载的参数详情。 还可用于完成单词，从而在输入大量字符后消除字符带来的歧义。 我们来添加一行代码，将有序字符串打印到控制台窗口。
 
@@ -136,11 +136,11 @@ Visual Studio 提供了实用的代码片段，可快速方便地生成常用代
    }
    ```
 
-## <a name="refactoring-a-name"></a>重构名称
+## <a name="refactor-a-name"></a>重构名称
 
 没有谁能一次就得到正确的代码，代码中可能要更改的一项内容是变量或方法的名称。 我们来试试 Visual Studio 的[重构](../ide/refactoring-in-visual-studio.md)功能，将 `_words` 变量重命名为 `words`。
 
-1. 将光标置于 `words` 变量的定义上，然后从右键菜单或上下文菜单选择“重命名...”，或按 Ctrl+R，Ctrl+R。
+1. 将光标置于 `words` 变量的定义上，然后从右键菜单或上下文菜单中选择“重命名”，或按 Ctrl+R，Ctrl+R。
 
    此时编辑器右上角会弹出一个“重命名”对话框。
 

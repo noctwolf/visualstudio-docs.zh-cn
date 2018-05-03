@@ -1,6 +1,7 @@
 ---
-title: Visual Studio 中泛型方法的单元测试 | Microsoft Docs
+title: Visual Studio 中泛型方法的单元测试
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e953af66f3b03d3d2e370513f3ed7462fc1484ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4d752b66c65f10d46d57b69acc532d07ea8e2da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的单元测试
 
@@ -115,7 +116,8 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
->  每次运行 SizeOfLinkedListTest 测试时，都将调用两次其 TestHelper 方法。 断言语句的计算结果必须每次都为 true，测试才能通过。 如果测试失败，也许分不清是指定了 `<int>` 的调用还是指定了 `<char>` 的调用导致了失败。 要找出答案，可以检查调用堆栈，或在测试方法中设置断点并在运行测试时进行调试。 有关详细信息，请参阅[如何：在 ASP.NET 解决方案中运行测试时进行调试](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。
+> 每次运行 SizeOfLinkedListTest 测试时，都将调用两次其 TestHelper 方法。 断言语句的计算结果必须每次都为 true，测试才能通过。 如果测试失败，也许分不清是指定了 `<int>` 的调用还是指定了 `<char>` 的调用导致了失败。 要找出答案，可以检查调用堆栈，或在测试方法中设置断点并在运行测试时进行调试。 有关详细信息，请参阅[如何：在 ASP.NET 解决方案中运行测试时进行调试](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。
+
 
 ###  <a name="TypeConstraintNotSatisfied"></a>示例 2：使用类型约束
  此示例演示使用未得到满足的类型约束的泛型方法的单元测试。 第一节显示待测试代码项目中的代码。 突出显示了类型约束。

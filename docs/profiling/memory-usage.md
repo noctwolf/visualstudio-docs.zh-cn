@@ -1,19 +1,20 @@
 ---
-title: 分析 Visual Studio 中的内存使用率 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 衡量应用中的内存使用情况
+description: 在使用集成了调试器的诊断工具进行调试时，查找内存泄漏和低效内存。
+ms.custom: mvc
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de4cf17e02391db4430bcd41fb8cfa2ea09b98f7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7f12caeb35e2c5c100069c3a5df066775beb5af3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Visual Studio 中的配置文件内存使用
 使用集成了调试器的内存使用情况诊断工具在进行调试时查找内存泄漏和低效内存。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照，帮助理解对象类型的内存使用率影响。 可以收集 .NET、本机或混合模式（.NET 和本机）应用的快照。  

@@ -1,9 +1,9 @@
 ---
-title: 选择工具箱项，WPF 组件 | Microsoft Docs
-ms.custom: ''
+title: 选择工具箱项，WPF 组件
 ms.date: 06/21/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.chooseitems.wpfcomponents
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 955d0ab74d59606e63a4772aee5de96c920544ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d05e69acb414c08e752593fbfdb08246c3d14a2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>“选择工具箱项”->“WPF 组件”
 
@@ -36,16 +36,20 @@ ms.lasthandoff: 04/16/2018
 
 “WPF 组件”选项卡上的列包含下列信息：
 
-name  
+**名称**
+
 列出计算机注册表中条目的 WPF 控件的名称。
 
-命名空间  
+**命名空间**
+
 显示定义组件结构的 [.NET Framework 类 API](/dotnet/api/?view=netframework-4.7) 命名空间的层次结构。 对此列排序可列出计算机上安装的每个 .NET Framework 命名空间中的可用组件。
 
-程序集名称  
+**程序集名称**
+
 显示包含每个组件的命名空间的 .NET Framework 程序集的名称。 对此列排序可列出计算机上安装的每个 .NET Framework 程序集中包含的命名空间。
 
-目录  
+**目录**
+
 显示 .NET Framework 程序集的位置。 所有程序集的默认位置是全局程序集缓存。 有关全局程序集缓存的详细信息，请参阅[使用程序集和全局程序集缓存](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac)。
 
 ## <a name="uielement-list"></a>UIElement 列表
@@ -54,15 +58,15 @@ name
 
 基于文本框中提供的字符串筛选 WPF 控件列表。 将显示四列中的所有匹配项。
 
-### <a name="clear"></a>清除
+**清除**
 
 清除筛选字符串。
 
-### <a name="browse"></a>浏览
+**浏览**
 
 开启“打开”对话框，这可导航到包含 WPF 控件的程序集。 将其用于加载不在全局程序集缓存中的程序集。
 
-### <a name="language"></a>语言
+**语言**
 
 显示包含所选 WPF 控件的程序集的本地化语言。
 
@@ -80,5 +84,5 @@ name
 
 ## <a name="see-also"></a>请参阅
 
-[工具箱](../../ide/reference/toolbox.md)  
-[WPF 入门](../../designers/getting-started-with-wpf.md)
+- [工具箱](../../ide/reference/toolbox.md)
+- [WPF 入门](../../designers/getting-started-with-wpf.md)

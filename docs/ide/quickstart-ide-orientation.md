@@ -1,20 +1,19 @@
 ---
-title: Visual Studio IDE 教程 | Microsoft 文档
-ms.custom: ''
+title: Visual Studio IDE 教程
 ms.date: 11/15/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9dfa3ba8f4e87b842d2ba8677f76aabd4931d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fd72de016e9f44987fae43e7b49820e21af0a288
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入门：初步了解 Visual Studio IDE
 
@@ -24,7 +23,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="start-page"></a>起始页
 
-启动 Visual Studio 之后你最先看到的很可能就是起始页。 起始页设计成一个“中心”，帮助你更快地找到所需的命令和项目文件。 “最新动态”部分显示你最近处理的项目和文件夹。 在“新建项目”下，可以单击链接转到“新建项目”对话框中，或在“打开”下，可以打开现有项目或代码文件夹。 右侧是最新的开发人员新闻源。
+启动 Visual Studio 之后你最先看到的很可能就是起始页。 起始页设计成一个“中心”，可帮助你更快地找到所需的命令和项目文件。 “最新动态”部分显示你最近处理的项目和文件夹。 在“新建项目”下，可以单击链接转到“新建项目”对话框中，或在“打开”下，可以打开现有项目或代码文件夹。 右侧是最新的开发人员新闻源。
 
 ![VS 起始页](media/quickstart-IDE-start-page.png)
 
@@ -38,21 +37,21 @@ ms.lasthandoff: 04/16/2018
 
 1. 在“新建项目”对话框中，接受默认的项目名称并选择“确定”。
 
-   创建项目，并在“编辑器”窗口中打开名为 Program.cs 或 Program.vb 的文件。 编辑器既能显示文件的内容，又是在 Visual Studio 中完成大部分编码工作的地方。
+   创建项目，并在“编辑器”窗口中打开名为 Program.cs 或 Program.vb 的文件。 编辑器可显示文件的内容，是你在 Visual Studio 中完成大部分编码工作的地方。
 
 ## <a name="solution-explorer"></a>“解决方案资源管理器”
 
-解决方案资源管理器可以显示项目、解决方案或代码文件夹中的文件和文件夹层次结构的图形表示。 你可以浏览层次结构，并在解决方案资源管理器中导航到文件。
+“解决方案资源管理器”可以显示项目、解决方案或代码文件夹中的文件和文件夹层次结构的图形表示。 你可以浏览层次结构，并导航到“解决方案资源管理器”中的某个文件。
 
 ![“解决方案资源管理器”](media/quickstart-IDE-solution-explorer.png)
 
 ## <a name="menus"></a>菜单
 
-IDE 顶部的菜单栏将命令分组成不同的类别。 例如，“项目”菜单包含与你正在处理的项目相关的命令。 在“工具”菜单上，可以通过选择“选项”自定义 IDE，或通过选择“获取工具和功能...”将功能添加到安装程序中。
+IDE 顶部的菜单栏将命令分组成不同的类别。 例如，“项目”菜单包含与你正在处理的项目相关的命令。 在“工具”菜单上，可通过选择“选项”自定义 IDE，或选择“获取工具和功能”向安装程序添加功能。
 
 ![菜单栏](media/quickstart-IDE-menu-bar.png)
 
-可以通过依次选择“视图”菜单和“错误列表”打开“错误列表”窗口。
+可通过依次选择“视图”菜单和“错误列表”打开“错误列表”窗口。
 
 ## <a name="error-list"></a>错误列表
 
@@ -62,7 +61,7 @@ IDE 顶部的菜单栏将命令分组成不同的类别。 例如，“项目”
 
 ## <a name="output-window"></a>“输出”窗口
 
-“输出”窗口为你显示版本生成和源代码控制的输出消息。
+“输出”窗口为你显示版本生成和源代码管理的输出消息。
 
 让我们构建该项目来查看一些输出记录。 从 **“生成”** 菜单中选择 **“生成解决方案”**。 “输出”窗口自动获得焦点并显示成功生成的消息。
 
@@ -82,11 +81,11 @@ IDE 顶部的菜单栏将命令分组成不同的类别。 例如，“项目”
 
 1. 现在，通过右键单击“解决方案资源管理器”中的“ConsoleApp1”项目，然后从上下文菜单中选择“重新生成”，我们可以重新生成项目。
 
-   这次“输出”窗口显示了生成过程中更详细的记录，包括在哪里复制哪些文件。
+   这次“输出”窗口显示了生成过程中更详细的日志记录，包括在哪里复制哪些文件。
 
 ## <a name="send-feedback-menu"></a>“发送反馈”菜单
 
-如果你在使用 Visual Studio 时遇到任何问题，或者你有关于如何改进产品的建议，请使用 IDE 顶部的“快速启动”框旁边的“发送反馈”菜单。
+如果你在使用 Visual Studio 时遇到任何问题，或者你有关于如何改进产品的建议，请使用 IDE 顶部“快速启动”框旁边的“发送反馈”菜单。
 
 ![“发送反馈”菜单](media/quickstart-IDE-send-feedback.png)
 
@@ -94,7 +93,7 @@ IDE 顶部的菜单栏将命令分组成不同的类别。 例如，“项目”
 
 我们只介绍了 Visual Studio IDE 的一些功能以便熟悉用户界面。 若要进一步了解，请继续：
 
-- 浏览 VS 文档的“常规用户界面元素”部分，该部分对[错误列表](../ide/reference/error-list-window.md)、[输出](../ide/reference/output-window.md)、[属性](../ide/reference/properties-window.md)等窗口，以及[选项](../ide/reference/options-dialog-box-visual-studio.md)对话框进行了深入介绍
+- 浏览 VS 文档的“常规用户界面元素”部分，该部分对[错误列表](../ide/reference/error-list-window.md)、[输出](../ide/reference/output-window.md)、[属性](../ide/reference/properties-window.md)等窗口，以及[选项对话框](../ide/reference/options-dialog-box-visual-studio.md)进行了深入介绍
 
 - 在 [Visual Studio IDE 概述](../ide/visual-studio-ide.md)中深入了解 IDE，甚至可初步了解代码调试
 

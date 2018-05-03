@@ -1,8 +1,9 @@
 ---
-title: 静态帮助程序类 | Microsoft IntelliTest 开发人员测试工具 | Microsoft Docs
+title: 静态帮助程序类 | Microsoft IntelliTest 开发人员测试工具
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd414382889e02f209e9cd64155f9e9baad75534
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="static-helper-classes"></a>静态帮助程序类
 
@@ -32,8 +33,7 @@ IntelliTest 提供了一套静态帮助程序类，可供创作[参数化单元�
 <a name="pexassume"></a>
 ## <a name="pexassume"></a>PexAssume
 
-表示假设的静态类，例如[参数化单元测试](test-generation.md#parameterized-unit-testing)中的[前置条件](test-generation.md#precondition)。
-此类的方法可用于筛除不需要的测试输入。
+表示假设的静态类，例如[参数化单元测试](test-generation.md#parameterized-unit-testing)中的[前置条件](test-generation.md#precondition)。 此类的方法可用于筛除不需要的测试输入。
 
 如果假设的条件不适用于某些测试输入，则会引发 PexAssumeFailedException。 这将导致在无提示的情况下忽略该测试。
 

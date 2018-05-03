@@ -1,6 +1,6 @@
 ---
-title: 创建 Node.js 和 React 应用 - Visual Studio | Microsoft Docs
-description: 本教程会在 Visual Studio 中创建 Node.js 和 React 应用
+title: 创建 Node.js 和 React 应用
+description: 在本教程中，使用 Visual Studio 的 Node.js 工具创建应用
 ms.custom: mvc
 ms.date: 02/19/2018
 ms.technology: vs-nodejs
@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 21debd24f69b79cb2dbbf9e9ceea928ac9dd851e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf9e3d470c18651d769b94805ea4a17bbf531884
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 通过 Visual Studio 可以轻松创建 Node.js 项目并利用 IntelliSense 和其他支持 Node.js 的内置功能。 此 Visual Studio 教程将从 Visual Studio 模板创建 Node.js Web 应用程序项目。 然后，使用 React 创建一个简单的应用程序。

@@ -1,6 +1,7 @@
 ---
-title: 在 Visual Studio 中使用 Microsoft Fakes 隔离受测代码 | Microsoft Docs
+title: 在 Visual Studio 中使用 Microsoft Fakes 隔离受测代码
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -11,11 +12,11 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: ed5e8844234f6dfde52408ecd4c814b725816eb7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af87fe6c71ceee98c54e2bd1dd6bae24bc58df97
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 
@@ -32,6 +33,10 @@ Fakes 有两种风格：
 **要求**
 
 -   Visual Studio Enterprise
+-   .NET Framework 项目
+
+> [!NOTE]
+> 不支持 .NET Standard 项目。
 
 ## <a name="choosing-between-stub-and-shim-types"></a>在存根和填充类型之间进行选择
 通常，你将 Visual Studio 项目视为一个组件，这是因为你同时开发和更新这些类。 对于该项目对你的解决方案中的其他项目所作的调用或对该项目引用的其他程序集所作的调用，应考虑使用存根和填充码。

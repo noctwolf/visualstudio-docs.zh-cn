@@ -2,6 +2,7 @@
 title: 快速入门：在 Visual Studio 中使用 XAML 和 C# 创建第一个通用 Windows 平台应用程序 | Microsoft Docs
 ms.custom: ''
 ms.date: 04/04/2018
+ms.prod: visual-studio-dev15
 ms.technology:
 - vs-acquisition
 ms.topic: quickstart
@@ -13,11 +14,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>快速入门：在 Visual Studio 中使用 XAML 和 C&#35 创建第一个通用 Windows 平台应用程序
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 打开 Visual Studio 2017。
 
-2. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。
+2. 在顶部菜单栏，依次选择“文件” > “新建” > “项目”。
 
 3. 在“新建项目”对话框的左侧窗格中，展开“Visual C#”，然后选择“Windows 通用”。 在中间窗格中，选择“空白应用(通用 Windows)”。 随后将项目命名为 HelloWorld，并选择“确定”。
 
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/16/2018
 
    ![将按钮内容的值更改为 Hello World](../ide/media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. 请注意 XAML 设计器中的按钮也随之更改。
+2. 请注意 XAML 设计器中的按钮也会随之更改。
 
    ![设计画布上的按钮更改为 Hello World](../ide/media/uwp-button-text-change-in-design-canvas.png)
 
@@ -96,7 +97,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 双击设计画布上的按钮控件。
 
-2.  在 MainPage.xaml.cs（代码隐藏页）中编辑事件处理程序代码。
+2. 在 MainPage.xaml.cs（代码隐藏页）中编辑事件处理程序代码。
 
  现在，有趣的事情发生了。 默认事件处理程序如下所示：
 
@@ -121,7 +122,7 @@ ms.lasthandoff: 04/16/2018
 
 #### <a name="what-did-we-just-do"></a>我们刚才做了什么？
 
-代码使用某些 Windows API 创建语音合成对象，然后向此对象通过一些文本用于朗读。 （有关使用语音合成的详细信息，请参阅 <xref:System.Speech.Synthesis>。）
+代码使用某些 Windows API 创建语音合成对象，然后向此对象通过一些文本用于朗读。 （有关使用 `SpeechSynthesis` 的详细信息，请参阅 <xref:System.Speech.Synthesis>。）
 
 ## <a name="run-the-application"></a>运行此应用程序
 

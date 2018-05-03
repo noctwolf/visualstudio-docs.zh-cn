@@ -1,5 +1,5 @@
 ---
-title: 用于 Visual Studio 中负载测试的负载模式 | Microsoft Docs
+title: 用于 Visual Studio 中负载测试的负载模式
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a6d9054bb12290d29247c09263a3854f2ea0dad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>编辑负载模式以便为虚拟用户活动建模
 
@@ -43,7 +44,8 @@ ms.lasthandoff: 04/16/2018
  例如，“初始用户计数”为 1、“最大用户计数”为 100、“单步持续时间（秒）”为 10 且“单步用户计数”为 1 的分级负载将创建一个从 1 个用户开始的用户负载模式，该模式每隔 10 秒增加 1 个用户，直到达到 100 个用户为止。
 
 > [!NOTE]
->  如果总的测试持续时间比逐步增加到最大用户负载所需的时间短，则经过测试持续时间后，测试将停止，并且不会达到“最大用户计数”目标。
+> 如果总的测试持续时间比逐步增加到最大用户负载所需的时间短，则经过测试持续时间后，测试将停止，并且不会达到“最大用户计数”目标。
+
 
  可以使用单步目标来增加负载，直到服务器性能严重降低为止。 随着负载的增加，服务器最终将耗尽所有资源。 分级负载是确定发生上述情况时的用户数的好方法。 使用分级负载时，还必须密切监视代理资源，以确保代理能够生成所需的负载。
 
@@ -117,12 +119,14 @@ ms.lasthandoff: 04/16/2018
  在用“新建负载测试向导”创建负载测试之后，可以使用“负载测试编辑器”将与方案关联的负载模式属性更改为满足自己的测试目标的级别。
 
 > [!NOTE]
->  有关负载测试方案属性及其说明的完整列表，请参阅[负载测试方案属性](../test/load-test-scenario-properties.md)。
+> 有关负载测试方案属性及其说明的完整列表，请参阅[负载测试方案属性](../test/load-test-scenario-properties.md)。
+
 
  负载模式指定在负载测试期间活动的虚拟用户的数目以及添加新用户的速率。 可以从三种可用模式中进行选择：分级模式、常数模式和基于目标的模式。 有关详细信息，请参阅[在负载测试方案中使用负载模式指定虚拟用户数](../test/edit-load-patterns-to-model-virtual-user-activities.md)。
 
 > [!NOTE]
->  也可以使用负载测试插件通过编程方式更改负载属性。 有关详细信息，请参阅[如何：创建负载测试插件](../test/how-to-create-a-load-test-plug-in.md)。
+> 也可以使用负载测试插件通过编程方式更改负载属性。 有关详细信息，请参阅[如何：创建负载测试插件](../test/how-to-create-a-load-test-plug-in.md)。
+
 
 ### <a name="to-change-the-load-pattern"></a>更改负载模式
 

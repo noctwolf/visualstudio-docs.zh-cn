@@ -1,5 +1,5 @@
 ---
-title: 为 Visual Studio 中的负载测试选择运行设置 | Microsoft Docs
+title: 为 Visual Studio 中的负载测试选择运行设置
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dc521cf8e0218fabd691493fdb65fb46471e05bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8566964ab8dd3fbfa1fca15ce8362218c99c27e6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：为负载测试选择活动运行设置
 
@@ -43,7 +44,8 @@ ms.lasthandoff: 04/16/2018
      选定的运行设置将变为活动状态，并一直保持活动状态，直到您选择了其他要处于活动状态的运行设置。
 
 > [!NOTE]
->  可以通过设置名为 `Test.UseRunSetting=<run setting name>` 的环境变量来重写活动的运行设置。 此方法在从命令行或批处理文件运行负载测试时非常有用。 您无需打开负载测试便可以选择不同的运行设置。
+> 可以通过设置名为 `Test.UseRunSetting=<run setting name>` 的环境变量来重写活动的运行设置。 此方法在从命令行或批处理文件运行负载测试时非常有用。 您无需打开负载测试便可以选择不同的运行设置。
+
 
 ## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>从命令行指定要使用的运行设置
  通过从命令行设置环境变量，可以重写负载测试中的默认运行设置：

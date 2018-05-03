@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中保存测试失败的负载测试日志 | Microsoft Docs
+title: 在 Visual Studio 中保存测试失败的负载测试日志
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,19 +9,21 @@ ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 17b8792a98473658ae6ac47cd418028ce2cfcf6f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e184fbab591698404bde4593f4ad7b61fa1815ae
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>如何：指定是否使用负载测试编辑器将测试失败保存到测试日志中
 
 在用“新建负载测试向导”创建负载测试之后，可以使用“负载测试编辑器”更改负载测试属性，以满足测试需求和目标。 请参阅[演练：创建和运行负载测试](../test/walkthrough-create-and-run-a-load-test.md)。 通过更改“测试未通过时保存日志”属性，可以指定当负载测试中测试未通过时是否希望保存测试日志。
 
 > [!NOTE]
->  有关运行设置属性及其说明的完整列表，请参见[负载测试运行设置属性](../test/load-test-run-settings-properties.md)。
+> 有关运行设置属性及其说明的完整列表，请参见[负载测试运行设置属性](../test/load-test-run-settings-properties.md)。
+
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>指定当某个方案中测试未通过时是否保存测试日志
 

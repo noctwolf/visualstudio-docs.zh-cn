@@ -1,9 +1,8 @@
 ---
-title: 查看类型和关系（类设计器）| Microsoft Docs
-ms.custom: ''
+title: 查看类型和关系（类设计器）
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
@@ -18,13 +17,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd28f26fe9b5a91e2b7c2a7fc95c30151f9de0c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca553f4d7b0cf2704950967e5666981ee84eda67
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="viewing-types-and-relationships-class-designer"></a>查看类型和关系（类设计器）
+# <a name="view-types-and-relationships-class-designer"></a>查看类型和关系（类设计器）
 
 类设计器使用类图显示类型详细信息，例如，它们的构成成员和共享的关系。 这些实体的可视化实际上是代码中的动态视图。 这意味着可以在设计器上编辑类型，然后查看反射在实体源代码中的编辑内容。 同样，类图将与对代码中的实体所做的更改保持同步。
 
@@ -33,7 +32,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>请参阅
 
-[设计类和类型](designing-classes-and-types.md)  
-[重构类和类型](refactoring-classes-and-types.md)  
-[如何：自定义类图](how-to-customize-class-diagrams.md)  
-[使用类图](working-with-class-diagrams.md)
+- [设计和查看类与类型](designing-and-viewing-classes-and-types.md)
+- [重构类和类型](refactoring-classes-and-types.md)
+- [如何：自定义类图](how-to-customize-class-diagrams.md)
+- [使用类图](working-with-class-diagrams.md)

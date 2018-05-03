@@ -1,10 +1,9 @@
 ---
-title: “别名”命令 | Microsoft Docs
-ms.custom: ''
+title: “别名”命令
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - tools.alias
 helpviewer_keywords:
@@ -19,66 +18,64 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02378b6e980dc4590bdc8901f67ca160bbffe157
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e72c848ff9a0234040e60391be8baa05e23791a5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="alias-command"></a>“别名”命令
-为完整命令、完整命令和参数或另一个别名创建新别名。  
-  
+为完整命令、完整命令和参数或另一个别名创建新别名。
+
 > [!TIP]
->  键入 `>alias` 但不带任何参数会显示别名及其定义的当前列表。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]  
-```  
-  
-## <a name="arguments"></a>自变量  
- `aliasname`  
- 可选。 新别名的名称。 如果不为 `aliasname` 提供任何值，则显示当前别名及其定义的列表。  
-  
- `aliasstring`  
- 可选。 完整命令名称、现有别名或想创建为别名的任何参数。 如果不为 `aliasstring` 提供任何值，则显示指定别名的名称和字符串。  
-  
-## <a name="switches"></a>开关  
- /delete 或 /del 或 /d  
- 可选。 删除指定别名，将其从自动补全中删除。  
-  
- /reset  
- 可选。 将预定义别名的列表重置为其原始设置。 即还原所有预定义别名，并删除所有用户定义的别名。  
-  
-## <a name="remarks"></a>备注  
- 别名表示命令，因此别名必须位于命令行的开头。  
-  
- 发出此命令时，应将开关紧跟在命令（而不是别名）之后，否则开关本身会被视为别名字符串。  
-  
- `/reset` 开关会在还原别名之前要求确认。 `/reset` 没有缩写形式。  
-  
-## <a name="examples"></a>示例  
- 此示例会为完整命令 Edit.MakeUpperCase 创建一个新别名 `upper`。  
-  
-```  
->Tools.Alias upper Edit.MakeUpperCase  
-```  
-  
- 此示例会删除别名 `upper`。  
-  
-```  
->Tools.alias /delete upper  
-```  
-  
- 此示例会显示所有当前别名和定义的列表。  
-  
-```  
->Tools.Alias  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
- [“命令”窗口](../../ide/reference/command-window.md)   
- [“查找/命令”框](../../ide/find-command-box.md)   
- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+> 键入 `>alias` 但不带任何参数会显示别名及其定义的当前列表。
+
+
+## <a name="syntax"></a>语法
+
+```
+Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
+```
+
+## <a name="arguments"></a>自变量
+ `aliasname`（可选）。 新别名的名称。 如果不为 `aliasname` 提供任何值，则显示当前别名及其定义的列表。
+
+ `aliasstring`（可选）。 完整命令名称、现有别名或想创建为别名的任何参数。 如果不为 `aliasstring` 提供任何值，则显示指定别名的名称和字符串。
+
+## <a name="switches"></a>开关
+ /delete 或 /del 或 /d（可选）。 删除指定别名，将其从自动补全中删除。
+
+ /reset（可选）。 将预定义别名的列表重置为其原始设置。 即还原所有预定义别名，并删除所有用户定义的别名。
+
+## <a name="remarks"></a>备注
+ 别名表示命令，因此别名必须位于命令行的开头。
+
+ 发出此命令时，应将开关紧跟在命令（而不是别名）之后，否则开关本身会被视为别名字符串。
+
+ `/reset` 开关会在还原别名之前要求确认。 `/reset` 没有缩写形式。
+
+## <a name="examples"></a>示例
+ 此示例会为完整命令 Edit.MakeUpperCase 创建一个新别名 `upper`。
+
+```
+>Tools.Alias upper Edit.MakeUpperCase
+```
+
+ 此示例会删除别名 `upper`。
+
+```
+>Tools.alias /delete upper
+```
+
+ 此示例会显示所有当前别名和定义的列表。
+
+```
+>Tools.Alias
+```
+
+## <a name="see-also"></a>请参阅
+
+- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
+- [“命令”窗口](../../ide/reference/command-window.md)
+- [“查找/命令”框](../../ide/find-command-box.md)
+- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)

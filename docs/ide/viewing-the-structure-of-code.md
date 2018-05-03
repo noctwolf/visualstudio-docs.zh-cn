@@ -1,9 +1,8 @@
 ---
-title: 在 Visual Studio 中查看代码结构 | Microsoft Docs
-ms.custom: ''
+title: 在 Visual Studio 中查看代码结构
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
@@ -28,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c924b56a1f33c0e1cbfef567442dd521db79e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44e0d6527227dfb638452337d1978bcbede29ef4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="view-the-structure-of-code"></a>查看代码结构
 
@@ -221,4 +220,4 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>请参阅
 
-[“类视图”和“对象浏览器”图标](../ide/class-view-and-object-browser-icons.md)
+- [“类视图”和“对象浏览器”图标](../ide/class-view-and-object-browser-icons.md)

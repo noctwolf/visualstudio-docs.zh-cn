@@ -1,7 +1,9 @@
 ---
-title: 使用 Visual Studio 通过 C# 创建 ASP.NET Core web 应用 | Microsoft Docs
-ms.custom: ''
+title: 在 Visual Studio 中使用 C# 创建 ASP.NET Core web 应用
+description: 了解如何在 Visual Studio 中使用 C# 逐步创建 ASP.NET Core Web 应用。
+ms.custom: mvc
 ms.date: 10/10/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
 author: TerryGLee
@@ -12,11 +14,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0f1a1397de407a4497961920762b0084069b3764
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
@@ -30,7 +32,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 打开 Visual Studio 2017。
 
-1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。
+1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目”。
 
 1. 在“新建项目”对话框的左窗格中，展开“Visual C#”，然后选择“.NET Core”。 在中间窗格中，选择“ASP.NET Core Web 应用程序”，然后选择“确定”。
 
@@ -40,7 +42,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 在“新建 ASP.NET Core Web 应用程序”对话框中，从顶部下拉菜单选择“ASP.NET Core 2.0”。 （如果没有在列表中看到“ASP.NET Core 2.0”，请通过“下载”链接进行安装，该链接显示在对话框顶部附近的黄色栏中。）选择 **“确定”**。
 
-   ![新建 ASP.NET Core Web 应用程序对话框](../ide/media/quickstart-aspnet-core20.png)
+   ![“新建 ASP.NET Core Web 应用程序”对话框](../ide/media/quickstart-aspnet-core20.png)
 
 ## <a name="explore-the-ide"></a>探索 IDE
 

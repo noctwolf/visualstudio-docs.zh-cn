@@ -1,20 +1,19 @@
 ---
-title: 在 Visual Studio 中设置颜色主题和字体 | Microsoft 文档
-ms.custom: ''
+title: 在 Visual Studio 中设置颜色主题和字体
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7024213ca383ee5934df1d413501065b383f7981
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 56d40211b7d69d46bfbb24f6c1e0de8855809cda
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入门：个性化设置 Visual Studio IDE 和编辑器
 
@@ -41,7 +40,7 @@ Visual Studio 2017 的默认颜色主题命名为“蓝色”。 让我们将其
 
 现在我们将为编辑器自定义一些文本颜色。 首先，让我们打开 XML 文件来查看默认颜色。
 
-1. 在菜单栏上，选择“文件” > “新建” > “文件...”。
+1. 在菜单栏上，选择“文件” > “新建” > “文件”。
 
 1. 在“新建文件”对话框的“常规”类别中，选择“XML 文件”，然后选择“打开”。
 
@@ -73,7 +72,7 @@ Visual Studio 2017 的默认颜色主题命名为“蓝色”。 让我们将其
    </Catalog>
    ```
 
-   请注意，行号是翠蓝色，xml 属性是浅蓝色。 我们将更改这些项的文本颜色。
+   请注意，行号是翠蓝色，XML 属性是浅蓝色。 我们将更改这些项的文本颜色。
 
    ![XML 文件字体颜色](media/quickstart-personalize-xml-file.png)
 

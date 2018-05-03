@@ -1,6 +1,7 @@
 ---
-title: 分析 CPU 使用率数据（托管代码）| Microsoft Docs
-ms.custom: ''
+title: 分析 CPU 使用情况数据（托管代码）
+description: 使用 CPU 使用情况诊断工具衡量 C++ 和 Visual Basic 中的应用性能
+ms.custom: mvc
 ms.date: 12/05/2017
 ms.technology: vs-ide-debug
 ms.topic: quickstart
@@ -12,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cac26376df6a5e7dc26b55e07fbebe240b1511de
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8381aacf45763a0d2436126957c8443085a563dc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="analyze-cpu-usage-data-in-visual-studio-managed-code"></a>在 Visual Studio 中分析 CPU 使用率数据（托管代码）
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>快速入门：在 Visual Studio 中分析 CPU 使用情况数据（托管代码）
 
 Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的性能问题。 本主题提供了一种快速了解部分基本功能的方法。 此处，我们将了解用来确定由于 CPU 使用率高而导致性能瓶颈的工具。 Visual Studio 中的 .NET 开发（包括 ASP.NET、和本机 /C++ 开发）支持此诊断工具。
 
