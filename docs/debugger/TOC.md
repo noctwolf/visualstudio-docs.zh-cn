@@ -9,6 +9,7 @@
 ## [了解如何使用 Visual Studio 进行调试](getting-started-with-the-debugger.md)
 ## [在调试器中运行 Python 代码...](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [调试实时 Azure 应用](debug-live-azure-applications.md)
+## [调试托管和本机代码](how-to-debug-managed-and-native-code.md)
 ## [使用 IntelliTrace 后退查看快照](how-to-use-intellitrace-step-back.md)
 # 操作指南
 ## [使用调试器浏览代码](navigating-through-code-with-the-debugger.md)

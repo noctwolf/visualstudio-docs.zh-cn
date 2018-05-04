@@ -1,9 +1,9 @@
 ---
-title: Visual Studio 中的 C# 和 ASP.NET Core 入门 | Microsoft Docs
+title: Visual Studio 中的 C# 和 ASP.NET Core 入门
 ms.custom: ''
 ms.date: 12/11/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,13 +14,13 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b3760c922e540837d0e9452efc8d44762eeeb3af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a896047ad8141bc7edf797066df9d309bf7eb72c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Visual Studio 中的 C# 和 ASP.NET 入门
+# <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Visual Studio 中的 C# 和 ASP.NET 入门
 本教程介绍在 Visual Studio 中借助 ASP.NET Core 进行 C# 开发，将创建一个 C# ASP.NET Core Web 应用，向其添加代码，浏览 IDE 的某些功能并运行应用。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
@@ -42,7 +42,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 
 1. 打开 Visual Studio 2017。
 
-2. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。
+2. 在顶部菜单栏，依次选择“文件” > “新建” > “项目”。
 
 3. 在“新建项目”对话框左侧的窗格中，展开“Visual C#”和“Web”，然后选择“.NET Core”。 在中间窗格中，选择“ASP.NET Core Web 应用程序”，将该文件命名为 MyCoreApp，然后选择“确定”。   
 
@@ -61,7 +61,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
    ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](../ide/media/asp-dot-net-web-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>方式 2：使用“工具”菜单栏
-1. 取消“新建项目”对话框，然后在顶部菜单栏中选择“工具” > “获取工具和功能...”。
+1. 取消“新建项目”对话框，再依次选择顶部菜单栏中的“工具” > “获取工具和功能”。
 
 2. Visual Studio 安装程序启动。 选择“ASP.NET 和 Web 开发”工作负载，然后选择“修改”。   
 
@@ -94,7 +94,7 @@ MVC 模式有助于创建比传统单片应用更易于测试和更新的应用�
 
   ![Visual Studio 代码窗口中的 HomeController.cs](../ide/media/csharp-aspnet-home-controller-code.png)
 
-4. 项目还有一个“视图”文件夹，其中包含映射到每个控制器的其他文件夹（以及一个“共享”视图的文件夹）。 例如，/Home/About 路径的视图 CSHTML 文件（HTML 的扩展）将位于 **Views/Home/About.cshtml**。 打开该文件。
+4. 项目还有一个“视图”文件夹，其中包含映射到每个控制器的其他文件夹（以及一个“共享”视图的文件夹）。 例如，/Home/About 路径的视图 CSHTML 文件（HTML 的扩展）将位于 *Views/Home/About.cshtml*。 打开该文件。
 
   ![Visual Studio 解决方案资源管理器中的 About.cshtml 文件](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
@@ -103,7 +103,7 @@ MVC 模式有助于创建比传统单片应用更易于测试和更新的应用�
   ![Visual Studio 代码窗口中的 About.cshtml](../ide/media/csharp-aspnet-about-cshtml-code.png)
 
  >[!NOTE]
- > 若要了解详细信息，请参阅[使用 Razor 语法的 C# 和 ASP.NET 入门](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c)页。
+ > 若要了解详细信息，请参阅[通过 Razor 语法开始使用 C# 和 ASP.NET](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c) 页。
 
 6. 解决方案还包含 wwwroot文件夹，它是网站的根。 部署站点时，可以直接将静态站点内容（如 CSS、映像和 JavaScript 库）置于所需路径。
 
@@ -126,7 +126,7 @@ MVC 模式有助于创建比传统单片应用更易于测试和更新的应用�
 
  ![在应用的浏览器窗口中选择“关于”](../ide/media/csharp-aspnet-browser-page.png)
 
- 此外，浏览器中的“关于”页面会呈现 HomeController.cs 文件中设置的文本。
+ 此外，浏览器中的“关于”页呈现 HomeController.cs 文件中设置的文本。
 
    ![查看“关于”页面上的文本](../ide/media/csharp-aspnet-browser-page-about.png)
 
@@ -140,7 +140,7 @@ MVC 模式有助于创建比传统单片应用更易于测试和更新的应用�
 
  ![在 About.cshtml 中 About 方法的第一行设置一个断点。  ](../ide/media/csharp-aspnet-home-controller-code-set-breakpoint.png)
 
-1. 返回浏览器并刷新“关于”页面。 这会触发 Visual Studio 中的断点。
+1. 返回到浏览器，并刷新“关于”页。 这会触发 Visual Studio 中的断点。
 
 1. 在 Visual Studio 中，将鼠标悬停在 ViewData成员上以查看其数据。
 
