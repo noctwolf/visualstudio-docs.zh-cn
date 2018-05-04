@@ -1,9 +1,9 @@
 ---
-title: Visual Studio 项目和项模板参数 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 项目和项模板参数
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -12,15 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c49514aeb164040ea374371cae6a61d1f7eb8948
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="template-parameters"></a>模板参数
 
-在对模板进行实例化时，您可以通过在模板中使用参数来替换模板的关键部分的值，如类名和命名空间。 用户在“新建项目”或“添加新项”对话框中选择“确定”或“添加”时，后台运行的模板向导会替换这些参数。
+实例化模板时，可替换模板中的值。 若要设置此功能，请使用模板参数。 模板参数可用于替换值，例如模板中的类名和命名空间。 当用户添加新项或项目时，后台运行的模板向导会替换这些参数。
 
 ## <a name="declaring-and-enabling-template-parameters"></a>声明和启用模板参数
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="to-enable-parameter-substitution-in-templates"></a>在模板中启用参数替换
 
-1. 在模板的 .vstemplate 文件中，定位到与要为其启用参数替换的项对应的 `ProjectItem` 元素。
+1. 在模板的 .vstemplate 文件中，找到与要为之启用参数替换的项对应的 `ProjectItem` 元素。
 
 1. 将 `ReplaceParameters` 元素的 `ProjectItem` 属性设置为 `true`。
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 |SpecificSolutionName|解决方案的名称。 在选中“创建解决方案目录”时，`SpecificSolutionName` 具有解决方案名称。 在未选中“创建解决方案目录”时，`SpecificSolutionName` 为空。|
 |userdomain|当前的用户域。|
 |username|当前的用户名称。|
-|webnamespace|当前网站的名称。 此参数在 Web 窗体模板中用于保证类名是唯一的。 如果网站在 Web 服务器的根目录下，则此模板参数会解析为 Web 服务器的根目录。|
+|webnamespace|当前网站的名称。 此参数在 Web 窗体模板中用于保证类名是唯一的。 如果网站在 Web 服务器的根目录下，此模板参数解析为 Web 服务器的根目录。|
 |年|以 YYYY 格式表示的当前年份。|
 
 > [!NOTE]
@@ -73,7 +73,7 @@ ms.lasthandoff: 04/16/2018
 
 除了在参数替换过程中使用的默认保留的模板参数之外，还可以指定自己的模板参数和值。 有关详细信息，请参阅 [CustomParameters 元素（Visual Studio 模板）](../extensibility/customparameters-element-visual-studio-templates.md)。
 
-## <a name="example-using-the-project-name-for-a-file-name"></a>示例：使用项目名称作为文件名
+## <a name="example-use-the-project-name-for-a-file-name"></a>示例：对文件名使用项目名称
 
 可以使用属性 `TargetFileName` 中的参数为项目项指定变量文件名。
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 04/16/2018
 </TemplateContent>
 ```
 
-## <a name="example-using-the-safe-project-name-for-the-namespace-name"></a>示例：使用安全的项目名称作为命名空间名称
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>示例：对命名空间名称使用安全项目名称
 
 要将安全的项目名称用于 C# 类文件中的命名空间，请使用以下语法：
 
@@ -105,7 +105,7 @@ namespace $safeprojectname$
 }
 ```
 
-引用文件时，请在项目模板的 .vstemplate 文件中包括以下 `ReplaceParameters="true"` 属性：
+引用文件时，在项目模板的 .vstemplate 文件中添加 `ReplaceParameters="true"` 属性：
 
 ```xml
 <TemplateContent>
@@ -118,5 +118,5 @@ namespace $safeprojectname$
 
 ## <a name="see-also"></a>请参阅
 
-[自定义模板](../ide/customizing-project-and-item-templates.md)  
-[如何：创建项目模板](../ide/how-to-create-project-templates.md)
+- [自定义模板](../ide/customizing-project-and-item-templates.md)
+- [如何：创建项目模板](../ide/how-to-create-project-templates.md)

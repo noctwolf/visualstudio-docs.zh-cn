@@ -1,9 +1,8 @@
 ---
-title: 管理应用程序资源 (.NET) | Microsoft Docs
-ms.custom: ''
+title: 管理应用程序资源 (.NET)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -20,25 +19,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5515796d34b12e95fe6c9a545e7a81e98a8f6a9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50825ea0d610625c69955deea1599206053fb889
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="managing-application-resources-net"></a>管理应用程序资源 (.NET)
+# <a name="manage-application-resources-net"></a>管理应用程序资源 (.NET)
 
 资源文件是应用程序使用的不可编译的文件，例如图标文件或音频文件。 由于这些文件不是编译过程的一部分，因此你可以更改它们而无需重新编译二进制文件。 如果打算本地化你的应用程序，则应为本地化应用程序时需要进行更改的所有字符串和其他资源使用资源文件。
 
-有关 .NET 桌面应用中的资源的详细信息，请参阅 [Resources in Desktop Apps](/dotnet/framework/resources/index)。
+有关 .NET 桌面应用中的资源的详细信息，请参阅 [桌面应用中的资源](/dotnet/framework/resources/index)。
 
-## <a name="working-with-resources"></a>使用资源
+## <a name="work-with-resources"></a>使用资源
 
 在托管代码项目中，打开项目属性窗口。 可通过以下任一方法来打开属性窗口：
 
 - 右键单击“解决方案资源管理器”中的项目节点，并选择“属性”
 - 在“快速启动”窗口中键入“项目属性”
-- 在“解决方案资源管理器”窗口中，选择 Alt+Enter
+- 在“解决方案资源管理器”窗口中，同时按 Alt+Enter
 
 选择“资源”  选项卡。如果你的项目尚未包含 .resx 文件，你可以添加一个，添加和删除不同类型的资源，并修改现有资源。
 
@@ -51,4 +50,4 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>请参阅
 
-[桌面应用中的资源 (.NET Framework)](/dotnet/framework/resources/index)
+- [桌面应用中的资源 (.NET Framework)](/dotnet/framework/resources/index)

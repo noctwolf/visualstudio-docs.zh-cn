@@ -1,6 +1,7 @@
 ---
-title: 快速操作 | Microsoft Docs
+title: 快速操作
 ms.date: 03/28/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -11,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 941980eff8fc2474df9555b326278abdb9b26dac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="quick-actions"></a>快速操作
 
@@ -23,10 +24,10 @@ ms.lasthandoff: 04/16/2018
 
 可使用“快速操作”功能：
 
-- 使用代码修补程序处理[代码分析器](../code-quality/roslyn-analyzers-overview.md)规则冲突的问题
-- [取消显示](../code-quality/use-roslyn-analyzers.md)代码分析器规则冲突
-- 应用重构（例如[内联临时变量](../ide/reference/inline-temporary-variable.md)）
-- 生成代码（例如[引入局部变量](../ide/reference/introduce-local-variable.md)）
+- 通过代码修复[代码分析器](../code-quality/roslyn-analyzers-overview.md)规则冲突
+- [阻止](../code-quality/use-roslyn-analyzers.md)代码分析器规则冲突
+- 应用重构（例如，[内联临时变量](../ide/reference/inline-temporary-variable.md)）
+- 生成代码（例如，[引入局部变量](../ide/reference/introduce-local-variable.md)）
 
 可使用灯泡图标![小灯泡图标](media/vs2015_lightbulbsmall.png)或按“Ctrl”+**应用快速操作。** 当光标位于可操作的代码行上时， 如果有红色波形曲线，则将看到灯泡，Visual Studio 针对如何解决此问题有一条建议。 例如，如果你遇到红色波形曲线指示的错误，则在可对该错误进行修复时，会显示灯泡。
 
