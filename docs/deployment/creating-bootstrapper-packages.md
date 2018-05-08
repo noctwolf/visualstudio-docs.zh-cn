@@ -1,7 +1,7 @@
 ---
-title: 创建引导程序包 |Microsoft 文档
+title: 创建引导程序包
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 05/02/2018
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
@@ -22,81 +22,64 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 794d569504e46627c9387046b381fdb843a7818e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 29faeafb56c5c077602a3dbcba5ecbb6bb2ab118
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="creating-bootstrapper-packages"></a>创建引导程序包
-安装程序是可配置为检测并安装可再发行组件（如 Windows Installer (.msi) 文件和可执行程序）的一般安装程序。 安装程序也称为“引导程序”。 它通过一组 XML 清单进行编程，这些清单指定用于管理组件安装的元数据。  
+# <a name="create-bootstrapper-packages"></a>创建引导程序包
+安装程序是可配置为检测并安装可再发行组件（如 Windows Installer (.msi) 文件和可执行程序）的一般安装程序。 安装程序也称为“引导程序”。 它通过一组 XML 清单进行编程，这些清单指定用于管理组件安装的元数据。  每个可再发行组件或系统必备组件，是一个引导程序包。 一个引导程序包是一组目录和文件，其中包含用于说明系统必备组件的安装方式的清单文件。 
   
- 引导程序首先检测是否已安装所有系统必备组件。 如果未安装系统必备组件，引导程序将首先显示相关许可协议。 接着，在最终用户接受许可协议后，将开始安装相应的系统必备组件。 否则，如果检测到所有的系统必备组件，引导程序将直接启动应用程序的安装程序。  
+引导程序首先检测是否已安装所有系统必备组件。 如果未安装系统必备组件，引导程序将首先显示相关许可协议。 接着，在最终用户接受许可协议后，将开始安装相应的系统必备组件。 否则，如果检测到所有的系统必备组件，引导程序将直接启动应用程序的安装程序。  
   
-## <a name="creating-custom-packages"></a>创建自定义程序包  
- 可以使用 Visual Studio 中的 XML 编辑器来生成清单。 有关详细信息，请参阅 [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) 和 [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md)。 若要查看创建引导程序包的示例，请参阅 [演练：创建自定义引导程序以显示隐私提示](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)。  
+## <a name="create-custom-bootstrapper-packages"></a>创建自定义引导程序包  
+可以通过使用 Visual Studio 中的 XML 编辑器来生成引导程序清单。 若要查看创建引导程序包的示例，请参阅[演练： 创建自定义引导程序隐私提示](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)。  
   
- 若要创建引导程序包，必须向引导程序清单生成器提供 EXE 或 MSI 文件形式的可再发行组件。 然后，引导程序清单生成器将会创建以下文件：  
+若要创建引导程序包，你必须创建产品清单和，每个本地化的组件，以及一个包清单的版本。
   
--   产品清单 product.xml，包含程序包的所有非特定语言的元数据。 它包含可再发行组件的所有本地化版本通用的元数据。  
+* 产品清单*product.xml*，包含程序包的任何非特定于语言的元数据。 它包含可再发行组件的所有本地化版本通用的元数据。  若要创建此文件，请参阅[如何： 创建产品清单](../deployment/how-to-create-a-product-manifest.md)。
   
--   程序包清单 package.xml，包含特定语言的元数据；它通常包含本地化的错误消息。 必须至少为组件的每个本地化版本提供一个程序包清单。  
+* 包清单*package.xml*，包含特定于语言的元数据; 它通常包含本地化的错误消息。 必须至少为组件的每个本地化版本提供一个程序包清单。 若要创建此文件，请参阅[如何： 创建程序包清单](../deployment/how-to-create-a-package-manifest.md)。
   
- 在创建这两个文件之后，请将产品清单文件放置在一个依据自定义引导程序命名的文件夹中。 程序包清单文件将放置到一个依据区域设置命名的文件夹中。 例如，如果程序包清单文件针对的是英语版的再发行程序，请将该文件放置在一个名为 en 的文件夹中。 对于每个区域设置（如 ja 代表日语，de 代表德语）重复此过程。 最终的自定义引导程序包的文件夹结构将如下所示。  
+在创建这两个文件之后，请将产品清单文件放置在一个依据自定义引导程序命名的文件夹中。 程序包清单文件将放置到一个依据区域设置命名的文件夹中。 例如，如果程序包清单文件针对的是英语版的再发行程序，请将该文件放置在一个名为 en 的文件夹中。 对于每个区域设置（如 ja 代表日语，de 代表德语）重复此过程。 最终的自定义引导程序包的文件夹结构将如下所示。  
+
+    ```
+    CustomBootstrapperPackage
+      product.xml
+      CustomBootstrapper.msi
+      de
+        eula.rtf
+        package.xml
+      en
+        eula.rtf
+        package.xml
+      ja
+        eula.rtf
+        package.xml
+    ```
   
- `CustomBootstrapperPackage`  
+接下来，将可再发行文件复制到引导程序文件夹位置。 有关详细信息，请参阅 [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md)。
+ 
+    *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+    
+或  
+    
+    *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
   
- `product.xml`  
+也可以根据以下注册表项中的 **“Path”** 值确定引导程序文件夹位置：  
   
- `CustomBootstrapper.msi`  
+    *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
   
- `de`  
+在 64 位系统上使用以下注册表项：  
   
- `eula.rtf`  
+    *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
   
- `package.xml`  
+每个可再发行组件均位于程序包目录下它们自己的子文件夹中。 产品清单和可再发行文件必须可将放入此子文件夹。 必须根据区域性名称命名的子文件夹中放置组件和包清单的本地化的版本。  
   
- `en`  
+这些文件复制到引导程序文件夹中之后，相应的引导程序包自动出现在 Visual Studio**先决条件**对话框。 如果你的自定义引导程序包未显示，关闭并重新打开**先决条件**对话框。 有关详细信息，请参阅 [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)。  
   
- `eula.rtf`  
-  
- `package.xml`  
-  
- `ja`  
-  
- `eula.rtf`  
-  
- `package.xml`  
-  
- 最后，将可再发行的文件复制到引导程序文件夹位置。 有关详细信息，请参阅 [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md)。  
-  
-```  
-\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
-```  
-  
- 或  
-  
-```  
-\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
-```  
-  
- 也可以根据以下注册表项中的 **“Path”** 值确定引导程序文件夹位置：  
-  
-```  
-HKLM\Software\Microsoft\GenericBootstrapper\11.0  
-```  
-  
- 在 64 位系统上，请使用以下注册表项：  
-  
-```  
-HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0  
-```  
-  
- 每个可再发行组件均位于程序包目录下它们自己的子文件夹中。 产品清单和可再发行文件将放置到此子文件夹中。 组件的本地化版本以及程序包清单将放置到根据区域性名称命名的子文件夹中。  
-  
- 在将这些文件复制到引导程序文件夹中之后，相应的引导程序包将自动出现在 Visual Studio 的“系统必备”对话框中。 如果你的自定义引导程序包未显示，请关闭并重新打开“系统必备”对话框。 有关详细信息，请参阅 [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)。  
-  
- 下表显示由引导程序自动填充的属性。  
+下表显示由引导程序自动填充的属性。  
   
 |属性|描述|  
 |--------------|-----------------|  
@@ -109,11 +92,11 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 |InstallMode|安装模式指示需要安装组件的位置。 包括以下值：<br /><br /> 从供应商的网站安装-HomeSite-先决条件。<br />从你选择的位置安装-SpecificSite-先决条件。<br />从与应用程序相同的位置安装-SameSite-先决条件。|  
   
 ## <a name="separating-redistributables-from-application-installations"></a>使可再发行文件与应用程序安装分离  
- 你可以阻止在安装项目中部署可再发行文件。 为此，请在 .NET Framework 目录的 RedistList 文件夹中创建一个可再发行文件列表：  
+你可以阻止在安装项目中部署可再发行文件。 为此，请在 .NET Framework 目录的 RedistList 文件夹中创建一个可再发行文件列表：  
   
- `%ProgramFiles%\Microsoft.NET\RedistList`  
+`%ProgramFiles%\Microsoft.NET\RedistList`  
   
- 可再发行文件列表是一个 XML 文件，你应采用下面的格式命名该文件： *公司名称*.*组件名称*.RedistList.xml。 举例来说，如果组件名为 Datawidgets 且由 Acme 开发，则使用 Acme.DataWidgets.RedistList.xml。 可再发行文件列表的内容的示例可能像下面这样：  
+可再发行文件列表是一个 XML 文件，你应采用下面的格式命名该文件： *公司名称*.*组件名称*.RedistList.xml。 因此，例如，如果组件名为 Datawidgets 且由 acme 开发，使用*Acme.DataWidgets.RedistList.xml*。 可再发行文件列表的内容的示例可能像下面这样：  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  

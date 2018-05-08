@@ -1,5 +1,5 @@
 ---
-title: 演练： 创建自定义的引导程序，以显示隐私提示 |Microsoft 文档
+title: 演练： 创建自定义引导程序隐私提示 |Microsoft 文档
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -21,13 +21,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>演练：创建自定义引导程序以显示隐私提示
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>演练： 创建自定义引导程序隐私提示
 你可以配置自动更新时使用较新的文件版本和程序集版本的程序集可用的 ClickOnce 应用程序。 若要确保你的客户同意此行为，可以向其显示隐私提示。 然后，他们可以选择是否用于授予对应用程序的自动更新权限。 如果应用程序不允许自动更新，它不安装。  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/19/2018
   
 -   Visual Studio 2010。  
   
-## <a name="creating-an-update-consent-dialog-box"></a>创建一个更新同意对话框  
+## <a name="create-an-update-consent-dialog-box"></a>创建一个更新同意对话框  
  若要显示隐私提示，请创建的应用程序询问读取器同意应用程序的自动更新。  
   
 #### <a name="to-create-a-consent-dialog-box"></a>若要创建一个同意对话框  
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/19/2018
   
 26. 上**生成**菜单上，单击**生成解决方案**。  
   
-## <a name="creating-the-custom-bootstrapper-package"></a>创建自定义引导程序包  
+## <a name="create-the-custom-bootstrapper-package"></a>创建自定义引导程序包  
  若要向最终用户显示隐私提示，可以创建更新同意对话框应用程序自定义引导程序包，并将其作为必备组件包含在所有 ClickOnce 应用程序。  
   
  此过程演示如何创建自定义引导程序包通过创建以下文档：  
@@ -228,7 +228,7 @@ ms.lasthandoff: 04/19/2018
   
 6.  如有必要，请为每个区域设置的软件许可条款创建新的 package.xml 清单文件和新 eula.rtf 文档。 例如，如果你创建 fr 和 de 区域设置的子目录，则创建单独的 package.xml 清单文件和软件许可条款，并将它们保存到 fr 和 de 子目录。  
   
-## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>将更新同意应用程序设置作为必备组件  
+## <a name="set-the-update-consent-application-as-a-prerequisite"></a>将更新同意应用程序设置作为必备组件  
  在 Visual Studio 中，你可以设置更新同意应用程序作为必备组件。  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>更新同意应用程序设置作为必备组件  
@@ -246,7 +246,7 @@ ms.lasthandoff: 04/19/2018
   
 5.  单击 **“确定”**。  
   
-## <a name="creating-and-testing-the-setup-program"></a>创建和测试安装程序  
+## <a name="create-and-test-the-setup-program"></a>创建和测试安装程序  
  作为必备组件设置更新同意应用程序后，可以为你的应用程序中生成的安装程序和引导程序。  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>若要创建和测试安装程序通过不单击我同意  
