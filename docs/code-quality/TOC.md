@@ -34,7 +34,7 @@
 #### [指定注释何时在哪里适用](specifying-when-and-where-an-annotation-applies.md)
 #### [内部函数](intrinsic-functions.md)
 #### [最佳做法和示例 (SAL)](best-practices-and-examples-sal.md)
-### [使用 __analysis_assume 指定其他代码信息](how-to-specify-additional-code-information-by-using-analysis-assume.md)
+### [使用 _Analysis_assume 指定其他代码信息](how-to-specify-additional-code-information-by-using-analysis-assume.md)
 ## [规则集](using-rule-sets-to-group-code-analysis-rules.md)
 ### [托管代码规则集](how-to-configure-code-analysis-for-a-managed-code-project.md)
 #### [为 ASP.NET Web 应用配置代码分析](how-to-configure-code-analysis-for-an-aspnet-web-application.md)

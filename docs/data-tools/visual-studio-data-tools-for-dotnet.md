@@ -11,21 +11,23 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: d2db4210085e3dc16d9c4b9e00653312ae0d5a82
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b7fc572541e0c2f0f5aa04c6e676d1e2913ff9f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>适用于.NET 的 visual Studio data tools
 
-Visual Studio 和.NET Framework 一起提供大量的 API 和工具用于连接到数据库、 在内存中，数据建模和用户界面中显示数据的支持。 提供数据访问功能的.NET Framework 类称为[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET 中，Visual Studio 中的数据以及最初设计主要是为了支持关系数据库和 XML。 如今，许多 NoSQL 数据库供应商或第三方提供 ADO.NET 提供程序。
+Visual Studio 和.NET Framework 一起提供大量的 API 和工具用于连接到数据库、 在内存中，数据建模和用户界面中显示数据的支持。 提供数据访问功能的.NET Framework 类称为[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET 中，以及 Visual Studio 中的数据旨在主要是为了支持关系数据库和 XML。 如今，许多 NoSQL 数据库供应商或第三方提供 ADO.NET 提供程序。
 
 [.NET 核心](/dotnet/core/)支持 ADO.NET 中，数据集和相关的类型除外。 如果你要以.NET 核心为目标，并且需要对象关系映射 (ORM) 层，使用[实体框架核心](/ef/core/)。
 
 下图显示的基本体系结构的简化的视图：
 
 ![ADO.NET 体系结构](../data-tools/media/raddata-ado-net-architecture-diagram.png)
+
+## <a name="typical-workflow"></a>典型工作流
 
 这是典型的工作流：
 
@@ -43,4 +45,4 @@ Visual Studio 和.NET Framework 一起提供大量的 API 和工具用于连接�
 
 ## <a name="see-also"></a>请参阅
 
-- [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)
+- [访问 Visual Studio 中的数据](../data-tools/accessing-data-in-visual-studio.md)

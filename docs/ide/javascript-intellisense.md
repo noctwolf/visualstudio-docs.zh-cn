@@ -26,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeabb8953d76b38dfa612e701eaeeb872cb64c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16e0efd8393d6324321a505247a3dad171a81a57
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -52,6 +52,7 @@ TypeScript 使用多个源来构建此信息：
 - [基于 TypeScript 声明文件的 IntelliSense](#TsDeclFiles)
 - [自动获取类型定义](#Auto)
 
+<a name="TypeInference"></a>
 ### <a name="intellisense-based-on-type-inference"></a>基于类型推理的 IntelliSense
 
 在 JavaScript 中，通常没有可用的显式类型信息。 好在一般情况下可根据周围的代码上下文，轻松推导出类型。
@@ -88,6 +89,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
+<a name="JsDoc"></a>
 ### <a name="intellisense-based-on-jsdoc"></a>基于 JSDoc 的 IntelliSense
 
 在类型推理不提供所需类型信息（或支持文档）的情况下，可通过 JSDoc 注释显式提供类型信息。  例如，若要为部分声明的对象提供特定类型，可使用 `@type` 标记，如下所示：
@@ -114,14 +116,16 @@ function Foo(param1) {
 
 请参阅 [JavaScript 中的 JSDoc 支持](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript)了解当前支持的 JsDoc 注释。
 
+<a name="TsDeclFiles"></a>
 ### <a name="intellisense-based-on-typescript-declaration-files"></a>基于 TypeScript 声明文件的 IntelliSense
 
 由于 JavaScript 和 TypeScript 现基于同一语言服务，因此它们能够以更丰富的方式进行交互。 例如，可以为在 .d.ts 文件（详细信息）中声明的值提供 JavaScript IntelliSense（请参阅 [TypeScript 文档](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)），而且在 TypeScript 中声明的类型（如接口和类）可用作 JsDoc 注释中的类型。
 
 下面是一个简单的示例，其中演示 TypeScript 定义文件通过接口向同一项目的 JavaScript 文件提供此类类型信息（使用 `JsDoc` 标记）。
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
+<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
 
+<a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>自动获取类型定义
 
 在 TypeScript 世界中，最常用的 JavaScript 库的 API 由 .d.ts 文件描述，此类定义最常见的存储库位于 [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)。

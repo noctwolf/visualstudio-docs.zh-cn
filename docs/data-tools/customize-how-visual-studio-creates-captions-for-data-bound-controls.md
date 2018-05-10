@@ -15,13 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f6c2dffe793928532d36b539ba73914ecf0c24dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自定义 Visual Studio 如何创建数据绑定控件的标题
+
 当拖动项时从[数据源窗口](add-new-data-sources.md)拖到设计器，特别注意派上用场： 标题标签中的列名称重新格式化为一个更具可读性的字符串，当两个或更多的单词发现连接在一起。 你可以自定义创建的方式在其中这些标签，通过设置**SmartCaptionExpression**， **SmartCaptionReplacement**，和**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 设计器**注册表项。
 
 > [!NOTE]
@@ -48,15 +49,15 @@ ms.lasthandoff: 04/26/2018
 > [!CAUTION]
 > 你应执行任何操作在注册表编辑器时请格外小心。 编辑它之前备份注册表。 如果没有正确使用注册表编辑器，你可能会导致严重的问题，可能需要重新安装操作系统。 Microsoft 不保证可以解决通过注册表编辑器使用不当导致的问题。 使用注册表编辑器的风险由您自己承担。
 >
->  以下知识库文章包含有关备份、 编辑和还原注册表的说明：[的 Microsoft Windows 注册表说明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-我们; 256986)
+> 以下知识库文章包含有关备份、 编辑和还原注册表的说明：[的 Microsoft Windows 注册表说明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-我们; 256986)
 
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>若要修改的数据源窗口的智能标题行为
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>修改智能的隐藏字幕行为的数据源窗口
 
 1.  通过单击打开命令窗口**启动**然后**运行**。
 
 2.  类型`regedit`中**运行**对话框中，单击**确定**。
 
-3.  展开**HKEY_CURRENT_USER**，**软件*， **Microsoft**， **VisualStudio**节点。
+3.  展开**HKEY_CURRENT_USER**，**软件**， **Microsoft**， **VisualStudio**节点。
 
 7.  右键单击**15.0**节点，然后创建一个新**密钥**名为`Data Designers`。
 
@@ -80,7 +81,7 @@ ms.lasthandoff: 04/26/2018
 
     下一次拖动项时从**数据源**窗口中，创建标题标签使用提供的新注册表值。
 
-### <a name="to-turn-off-the-smart-captioning-feature"></a>若要关闭智能的隐藏字幕功能
+## <a name="turn-off-the-smart-captioning-feature"></a>关闭智能的隐藏字幕功能
 
 1.  通过单击打开命令窗口**启动**然后**运行**。
 

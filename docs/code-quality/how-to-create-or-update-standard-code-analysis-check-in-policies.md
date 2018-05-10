@@ -1,5 +1,5 @@
 ---
-title: 如何：创建或更新标准代码分析签入策略
+title: 创建或更新标准代码分析签入策略
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 96fa2dd75c590e0841d7479e4e071154add04857
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：创建或更新标准代码分析签入策略
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/27/2018
 
 指定用于托管代码签入策略后，团队成员可以同步其设置为对团队项目的策略设置的代码项目的代码分析。
 
-### <a name="to-open-the-check-in-policy-editor"></a>若要打开签入策略编辑器
+## <a name="to-open-the-check-in-policy-editor"></a>若要打开签入策略编辑器
 
 1. 在团队资源管理器，右键单击该团队项目名称，指向**团队项目设置**，然后单击**源代码管理**。
 
@@ -46,28 +46,28 @@ ms.lasthandoff: 04/27/2018
 
     - 双击现有**代码分析**中项**策略类型**列表更改的策略。
 
-### <a name="to-set-policy-options"></a>若要设置策略选项
+## <a name="to-set-policy-options"></a>若要设置策略选项
 
 选中或清除以下选项：
 
-    |选项|描述|
-    |------------|-----------------|
-    |**执行签入以只包含属于当前解决方案的文件。**|只能对解决方案和项目配置文件中指定的文件，可以运行代码分析。 此策略可确保所有代码都是解决方案的一部分进行都分析。|
-    |**强制实施 C/c + + 代码分析 （/分析）**|需要所有 C 或 c + + 项目用都生成 /analyze 编译器选项，它们可以签入前运行代码分析。|
-    |**为托管代码强制实施代码分析**|需要所有的托管的项目运行代码分析和生成，然后才能签入。|
+|选项|描述|
+|------------|-----------------|
+|**执行签入以只包含属于当前解决方案的文件。**|只能对解决方案和项目配置文件中指定的文件，可以运行代码分析。 此策略可确保所有代码都是解决方案的一部分进行都分析。|
+|**强制实施 C/c + + 代码分析 （/分析）**|需要所有 C 或 c + + 项目用都生成 /analyze 编译器选项，它们可以签入前运行代码分析。|
+|**为托管代码强制实施代码分析**|需要所有的托管的项目运行代码分析和生成，然后才能签入。|
 
-### <a name="to-specify-a-managed-rule-set"></a>若要指定托管的规则设置
+## <a name="to-specify-a-managed-rule-set"></a>若要指定托管的规则设置
 
-- 从**运行此规则集**列表中，使用以下方法之一：
+从**运行此规则集**列表中，使用以下方法之一：
 
-    - 选择 Microsoft 标准规则集。
+- 选择 Microsoft 标准规则集。
 
-    - 若要选择自定义规则集，请单击**\<选择规则集从源代码管理...>**，然后键入源代码管理浏览器中的规则集的版本控制路径。 版本控制路径的语法是：
+- 选择自定义规则集通过单击**\<选择规则集从源代码管理...>**。 然后，键入源代码管理浏览器中的规则集的版本控制路径。 版本控制路径的语法是：
 
-    - **$/** `TeamProjectName` **/** `VersionControlPath`
+   **$/** `TeamProjectName` **/** `VersionControlPath`
 
-    - 有关如何创建和实现自定义签入策略规则的详细信息，请参阅[适用于托管代码实施自定义签入策略](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)。
+有关如何创建和实现自定义签入策略规则的详细信息，请参阅[适用于托管代码实施自定义签入策略](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)。
 
 ## <a name="see-also"></a>请参阅
 
-[创建和使用代码分析签入策略](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [创建和使用代码分析签入策略](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9670d5789e57c4a3c156cca0608840762d094b9f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 48b9bc6f2797a6cf6c87da4e4bc2e2d83f84622a
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="project-properties-reference"></a>项目属性引用
 详细了解如何配置和自定义项目属性。
@@ -31,11 +31,9 @@ ms.lasthandoff: 04/26/2018
 |[“项目设计器”->“生成事件”页 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)|使用此窗格指定生成配置说明。|
 |[“项目设计器”->“生成”页 (C#)](../../ide/reference/build-page-project-designer-csharp.md)|使用此窗格指定 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目的生成配置属性。|
 |[“项目设计器”->“编译”页 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)|使用此窗格指定 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 项目的编译属性。|
-|||
 |[“项目设计器”->“调试”页](../../ide/reference/debug-page-project-designer.md)|使用此页指定项目的调试属性。|
 |[“项目设计器”->“代码分析”](../../ide/reference/code-analysis-project-designer.md)|使用此页配置代码分析工具。|
 |[“项目设计器”->“发布”页](../../ide/reference/publish-page-project-designer.md)|使用此页配置 [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 的属性。|
-|||
 |[项目设计器 ->“引用”页 (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md)|使用此页管理项目所使用的引用。|
 |[“项目设计器”->“安全”页](../../ide/reference/security-page-project-designer.md)|使用此页配置使用 [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 部署部署的应用程序的代码访问安全性设置。|
 |[“项目设计器”->“签名”页](../../ide/reference/signing-page-project-designer.md)|使用此页对应用程序和部署清单及程序集进行签名。|

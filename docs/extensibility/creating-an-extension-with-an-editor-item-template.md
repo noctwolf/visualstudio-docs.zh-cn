@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fd58c1ada38f8d79402bb08564bf91de23fb086
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>使用编辑器项模板创建扩展
 你可以使用 Visual Studio SDK，以创建基本的编辑器扩展添加到编辑器中的分类器、 修饰和边距中包含的项模板。 编辑器项模板是适用于 Visual C# 或 Visual Basic VSIX 项目。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
     -   EditorClassifier1.cs 包含`EditorClassifier1`类。  
   
-    -   EditorClassifier1ClassificationDefinition.cs 包含`OEditorClassifier1ClassificationDefinition`类。  
+    -   EditorClassifier1ClassificationDefinition.cs 包含`EditorClassifier1ClassificationDefinition`类。  
   
     -   EditorClassifier1Format.cs 包含`EditorClassifier1Format`类。  
   
@@ -57,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
     -   TextAdornment1.cs 包含`TextAdornment1`类。  
   
-    -   extAdornment1TextViewCreationListener.cs 包含`TextAdornment1TextViewCreationListener`类。  
+    -   TextAdornment1TextViewCreationListener.cs 包含`TextAdornment1TextViewCreationListener`类。  
   
 4.  生成项目并启动调试。 实验实例中出现。 如果你打开一个文本文件，在文本中的所有 a 字符所述针对蓝色背景的红色。  
   
@@ -88,7 +88,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**新项目**对话框框中，展开**Visual C#** 或**Visual Basic** ，然后单击**扩展性**。 在**模板**窗格中，选择**VSIX 项目**。 在“名称”框中键入 `MarginExtension`。 单击 **“确定”**。  
   
-2.  在**解决方案资源管理器**，右键单击项目节点并选择**添加 / 新项**。 转到 Visual C#**扩展性**节点，然后选择**编辑器视区修饰**。 保留默认文件名称 (EditorMargin1.cs/vb)。  
+2.  在**解决方案资源管理器**，右键单击项目节点并选择**添加 / 新项**。 转到 Visual C#**扩展性**节点，然后选择**编辑器边距**。 保留默认文件名称 (EditorMargin1.cs/vb)。  
   
 3.  有两个代码文件，如下所示：  
   
@@ -98,5 +98,5 @@ ms.lasthandoff: 04/16/2018
   
 4.  生成此项目并启动调试。 实验实例中出现。 如果你打开一个文本文件，水平滚动条下面是否显示绿色边距有单词"Hello EditorMargin1"。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

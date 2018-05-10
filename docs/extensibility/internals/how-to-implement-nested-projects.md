@@ -14,21 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90434fd8deae2f5f71c150759fc836b9ed43077
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dffef39d735b95cff01ead7087aa8b6286e39004
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-implement-nested-projects"></a>如何： 实现嵌套的项目
+
 当你创建嵌套的项目类型，存在几个附加步骤必须实现。 父项目采用上某些相同解决方案具有为其嵌套 （子） 项目的职责。 父项目是类似于解决方案的项目的容器。 具体而言，有几个解决方案和通过要生成嵌套的项目的层次结构的父项目必须引发的事件。 创建嵌套的项目的以下过程介绍了这些事件。
 
-### <a name="to-create-nested-projects"></a>若要创建嵌套的项目
+## <a name="create-nested-projects"></a>创建嵌套的项目
 
 1.  集成的开发环境 (IDE) 通过调用加载父项目的项目文件和启动信息<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>接口。 创建父项目并将其添加到解决方案。
 
     > [!NOTE]
-    >  此时，它是太早，父项目以创建嵌套的项目，因为必须创建父项目，然后才能创建子项目的过程中。 此序列中，父项目可以将设置应用到子项目，如果需要子项目可以获取从父项目的信息。 此序列是如果它是在客户端需要如源代码管理 (SCC) 和解决方案资源管理器。
+    > 此时，它是太早，父项目以创建嵌套的项目，因为必须创建父项目，然后才能创建子项目的过程中。 此序列中，父项目可以将设置应用到子项目，如果需要子项目可以获取从父项目的信息。 此序列是如果它是在客户端需要如源代码管理 (SCC) 和解决方案资源管理器。
 
      父项目必须等待<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A>之前项目，它可以创建其嵌套的 （子） 由 IDE 调用方法。
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/16/2018
      如果已存在，父项目通过调用创建每个嵌套的项目的 GUID `CoCreateGuid`。
 
     > [!NOTE]
-    >  `CoCreateGuid` 是要创建 GUID 时调用的 COM API。 有关详细信息，请参阅`CoCreateGuid`和 MSDN 库中的 Guid。
+    > `CoCreateGuid` 是要创建 GUID 时调用的 COM API。 有关详细信息，请参阅`CoCreateGuid`和 MSDN 库中的 Guid。
 
      父项目存储在其项目文件中要检索下次在 IDE 中打开此 GUID。 请参阅有关的调用与相关的详细信息的步骤 4`AddVirtualProjectEX`检索`guidProjectID`子项目。
 
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
      由于父和子项目以编程方式进行实例化，你可以在此时设置嵌套的项目的属性。
 
     > [!NOTE]
-    >  不仅执行您收到的上下文信息从嵌套的项目中，但您也可以要求父项目是否为该项的任何上下文通过检查<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 以这种方式，可以向单个嵌套项目中添加额外的动态帮助特性和特定的菜单选项。
+    > 不仅执行您收到的上下文信息从嵌套的项目中，但您也可以要求父项目是否为该项的任何上下文通过检查<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 以这种方式，可以向单个嵌套项目中添加额外的动态帮助特性和特定的菜单选项。
 
 10. 层次结构生成以通过调用在解决方案资源管理器中显示<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>方法。
 
@@ -78,17 +79,14 @@ ms.lasthandoff: 04/16/2018
 
      当已关闭嵌套的项目，因为用户关闭解决方案或特定于项目本身，另一种方法上`IVsParentProject`， <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>，调用。 父项目包装调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A>方法替换<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A>方法来通知解决方案事件侦听器嵌套的项目，正在关闭。
 
- 以下主题处理多个实现嵌套的项目时需要考虑其他概念：
+以下主题处理多个实现嵌套的项目时需要考虑其他概念：
 
- [卸载和重新加载嵌套项目的注意事项](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [卸载和重新加载嵌套项目的注意事项](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [嵌套项目的向导支持](../../extensibility/internals/wizard-support-for-nested-projects.md)
+- [实现嵌套项目的命令处理](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
+- [筛选嵌套项目的 AddItem 对话框](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
- [嵌套项目的向导支持](../../extensibility/internals/wizard-support-for-nested-projects.md)
-
- [实现嵌套项目的命令处理](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
-
- [筛选嵌套项目的 AddItem 对话框](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
-
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [将项添加到“添加新项”对话框](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)

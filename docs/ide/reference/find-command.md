@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31810189ec7127548f68a3732afc701e8a7bac08
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb84e7305797522c7e34e387357eedfdcd61e88f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="find-command"></a>“查找”命令
 要搜索文件，请使用“查找和替换”窗口的“在文件中查找”选项卡上的可用选项子集。
 
 ## <a name="syntax"></a>语法
 
-```
+```cmd
 Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 [/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]
 ```
@@ -62,7 +62,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ## <a name="example"></a>示例
  此示例在当前选中代码部分搜索“somestring”，需要区分大小写。
 
-```
+```cmd
 >Edit.Find somestring /sel /case
 ```
 

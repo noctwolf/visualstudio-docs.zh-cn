@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3d0a9f8f730808cd8179599669342b530f921a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8f8a310832f0691b4bc4056baddeb1fbbad78f8
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>演练： 使用快捷键编辑器扩展名
 您可以在你的编辑器扩展响应快捷键。 下面的演练演示如何将视图修饰添加到文本视图中，通过使用快捷方式的键。 本演练基于视区修饰编辑器模板，并且它使你使用添加修饰 + 字符。  
@@ -46,8 +46,21 @@ ms.lasthandoff: 04/16/2018
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
 ```  
+
+在 KeyBindingTestTextViewCreationListener.cs 类文件中，更改的名称从 AdornmentLayer **KeyBindingTest**到**PurpleCornerBox**:
   
-## <a name="defining-the-command-filter"></a>定义命令筛选器  
+    ```csharp  
+    [Export(typeof(AdornmentLayerDefinition))]  
+    [Name("PurpleCornerBox")]  
+    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
+    public AdornmentLayerDefinition editorAdornmentLayer;  
+    ```  
+
+## <a name="handling-typechar-command"></a>处理 TYPECHAR 命令
+在 Visual Studio 2017 版本 15.6 以处理命令的编辑器扩展中的唯一方法实现之前<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>基于命令筛选器。 Visual Studio 2017 15.6 版引入了基于编辑器命令处理程序的现代简化的方法。 接下来的两部分演示如何处理采用同时旧和现代方法的命令。
+
+## <a name="defining-the-command-filter-prior-to-visual-studio-2017-version-156"></a>定义命令筛选器 （之前 Visual Studio 2017 版本 15.6)
+
  命令筛选器是实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>，可通过实例化修饰处理该命令。  
   
 1.  添加一个类文件并将其命名`KeyBindingCommandFilter`。  
@@ -90,7 +103,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 6.  实现`QueryStatus()`方法，如下所示。  
   
-    ```vb  
+    ```csharp  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
     {  
         return m_nextTarget.QueryStatus(ref pguidCmdGroup, cCmds, prgCmds, pCmdText);  
@@ -121,7 +134,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-## <a name="adding-the-command-filter"></a>添加命令筛选器  
+## <a name="adding-the-command-filter-prior-to-visual-studio-2017-version-156"></a>添加 （之前 Visual Studio 2017 版本 15.6) 命令筛选器
  修饰提供程序必须将命令筛选器添加到文本视图。 在此示例中，提供程序实现<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>来侦听文本视图创建事件。 此修饰提供程序还将导出修饰层，它定义的修饰的 Z 顺序。  
   
 1.  在 KeyBindingTestTextViewCreationListener 文件中，添加以下 using 语句：  
@@ -139,16 +152,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  在修饰层定义中，更改的名称从 AdornmentLayer **KeyBindingTest**到**PurpleCornerBox**。  
-  
-    ```csharp  
-    [Export(typeof(AdornmentLayerDefinition))]  
-    [Name("PurpleCornerBox")]  
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
-    public AdornmentLayerDefinition editorAdornmentLayer;  
-    ```  
-  
-3.  若要获取文本视图适配器，必须导入<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>。  
+2.  若要获取文本视图适配器，必须导入<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>。  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -156,7 +160,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  更改<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法，以便它将添加`KeyBindingCommandFilter`。  
+3.  更改<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法，以便它将添加`KeyBindingCommandFilter`。  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -165,7 +169,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  `AddCommandFilter`处理程序获取文本视图适配器，并添加命令筛选器。  
+4.  `AddCommandFilter`处理程序获取文本视图适配器，并添加命令筛选器。  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -188,11 +192,90 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
         }  
     }  
     ```  
+
+## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>实现 （从 Visual Studio 2017 15.6 版开始） 是命令处理程序
+
+首先，更新项目的 Nuget 引用以引用最新的编辑器 API:
+
+1. 右键单击项目并选择**管理 Nuget 包**。
+
+2. 在**Nuget 包管理器**，选择**更新**选项卡上，选择**选择所有包**复选框，然后选择**更新**。
+
+该命令处理程序的实现<xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>，可通过实例化修饰处理该命令。  
   
+1.  添加一个类文件并将其命名`KeyBindingCommandHandler`。  
+  
+2.  添加下面的 using 语句。  
+  
+    ```csharp  
+    using Microsoft.VisualStudio.Commanding;
+    using Microsoft.VisualStudio.Text.Editor;
+    using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
+    using Microsoft.VisualStudio.Utilities;
+    using System.ComponentModel.Composition;   
+    ```  
+  
+3.  名为 KeyBindingCommandHandler 的类应从继承`ICommandHandler<TypeCharCommandArgs>`，并将其作为导出<xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+  
+    ```csharp  
+    [Export(typeof(ICommandHandler))]
+    [ContentType("text")]
+    [Name("KeyBindingTest")]
+    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
+    ```  
+  
+4.  添加的命令处理程序的显示名称：  
+  
+    ```csharp  
+    public string DisplayName => "KeyBindingTest";
+    ```  
+    
+5.  实现`GetCommandState()`方法，如下所示。 因为此命令处理程序处理核心编辑器 TYPECHAR 命令，它可以将委托启用到核心编辑器命令。
+  
+    ```csharp  
+    public CommandState GetCommandState(TypeCharCommandArgs args)
+    {
+        return CommandState.Unspecified;
+    } 
+    ```  
+  
+6.  实现`ExecuteCommand()`方法，以便它将一个紫色框添加到视图如果 + 类型字符。 
+  
+    ```csharp  
+    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
+    {
+        if (args.TypedChar == '+')
+        {
+            bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
+                "KeyBindingTextAdorned", out bool adorned) && adorned;
+            if (!alreadyAdorned)
+            {
+                new PurpleCornerBox((IWpfTextView)args.TextView);
+                args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
+            }
+        }
+
+        return false;
+    }
+    ```  
+ 7. 将修饰层定义从 KeyBindingTestTextViewCreationListener.cs 文件复制到 KeyBindingCommandHandler.cs，然后删除 KeyBindingTestTextViewCreationListener.cs 文件：
+ 
+    ```csharp  
+    /// <summary>
+    /// Defines the adornment layer for the adornment. This layer is ordered
+    /// after the selection layer in the Z-order.
+    /// </summary>
+    [Export(typeof(AdornmentLayerDefinition))]
+    [Name("PurpleCornerBox")]
+    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
+    private AdornmentLayerDefinition editorAdornmentLayer;    
+    ```  
+
 ## <a name="making-the-adornment-appear-on-every-line"></a>进行修饰出现在每个行中  
- 原始修饰出现在每个字符 'a' 在文本文件中。 现在，我们已更改用于修饰添加到 + 字符的响应中的代码，它将修饰添加仅在行上，+ 类型化。 我们可以更改修饰代码，以便修饰一次将出现在每个 a。  
+
+原始修饰出现在每个字符 'a' 在文本文件中。 现在，我们已更改用于修饰添加到 + 字符的响应中的代码，它将修饰添加仅在行上，+ 类型化。 我们可以更改修饰代码，以便修饰一次将出现在每个 a。  
   
- 在 KeyBindingTest.cs 文件中，更改要循环访问修饰 a 字符的视图中的所有行的 CreateVisuals() 方法。  
+在 KeyBindingTest.cs 文件中，更改要循环访问修饰 a 字符的视图中的所有行的 CreateVisuals() 方法。  
   
 ```csharp  
 private void CreateVisuals(ITextViewLine line)  

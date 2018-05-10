@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69e57e348692d57baabb0d4f13290913d45f814c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a519de555f35df4fac91a9960993a0f163c4de5a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="new-file-command"></a>“新建文件”命令
 创建新文件并将其打开。 该文件显示在“杂项文件”文件夹下。
 
 ## <a name="syntax"></a>语法
 
-```
+```cmd
 File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```
 
@@ -44,7 +44,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 
  例如，要创建新的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 文本文件，对于 /t:`templatename` 参数，应输入以下内容。
 
-```
+```cmd
 /t:"Visual C++\C++ File (.cpp)"
 ```
 
@@ -58,14 +58,14 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 
  例如，若要在源代码编辑器中打开文件，对于 /e:`editorname` 参数，应输入以下内容。
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>示例
  此示例创建了新网页“test1.htm”，并在源代码编辑器中将其打开。
 
-```
+```cmd
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 

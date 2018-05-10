@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17618aa39a5487ed90fc39f414b0f08233f48b2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”
 使用此对话框，可以定义与记录、性能和支持文件类型相关的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 生成和项目设置。
@@ -71,10 +71,10 @@ ms.lasthandoff: 04/26/2018
 ## <a name="extensions-to-hide"></a>要隐藏的扩展名
   指定在“显示所有文件”启用时，不会在“解决方案资源管理器”中显示的文件的文件扩展名。
 
- ## <a name="build-customization-search-path"></a>生成自定义搜索路径
+## <a name="build-customization-search-path"></a>生成自定义搜索路径
   指定包含 .rules 文件的目录列表，这些文件有助于定义项目的生成规则。
 
-# <a name="solution-explorer-mode"></a>解决方案资源管理器模式
+## <a name="solution-explorer-mode"></a>解决方案资源管理器模式
  **仅显示项目中的文件**
 
   将“解决方案资源管理器”配置为仅显示项目中的文件。
