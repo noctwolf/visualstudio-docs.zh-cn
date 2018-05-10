@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb3dfce4f4e1596e21853c1ef645bd4ef107186e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0850fed22caf4b34fcb74aa11eb63f9338b0d5e5
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="work-with-visual-c-code-class-designer"></a>使用 Visual C++ 代码（类设计器）
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 04/26/2018
 
 -   类型位于由 #import 指令引用的库中。 可行的解决方法是：手动将生成的代码（.tlh 文件）添加到头文件的 #include 指令中。
 
--   确保类设计器支持你输入的类型。 请参阅 [C++ 代码元素的限制](#limitations)。
+-   确保类设计器支持你输入的类型。 请参阅 [C++ 代码元素的限制](#limitations-for-c-code-elements)。
 
 最有可能看到的有关类型解析问题的错误是：无法在类图“\<element>”中找到一个或多个形状的代码。 此错误消息不一定表示你的代码错误。 它仅指示选件类设计器无法显示你的代码。 你可以尝试以下方法：
 

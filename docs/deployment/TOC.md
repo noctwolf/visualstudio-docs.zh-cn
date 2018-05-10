@@ -101,7 +101,7 @@
 ### [如何：创建产品清单](how-to-create-a-product-manifest.md)
 ### [如何：创建程序包清单](how-to-create-a-package-manifest.md)
 ### [如何：创建本地化的引导程序包](how-to-create-a-localized-bootstrapper-package.md)
-### [演练：创建自定义引导程序以显示隐私提示](walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)
+### [演练：创建带有隐私提示的自定义引导程序](walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)
 ### [产品和包架构引用](product-and-package-schema-reference.md)
 #### [<Product> 元素（引导程序）](product-element-bootstrapper.md)
 #### [<Package> 元素（引导程序）](package-element-bootstrapper.md)

@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49854e401bdefa4da776f888fff8cff6fdb0d136
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6956ebbd1220be17037b3c9a3d7bd3174872134d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 和扩展 SDK 添加引用
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/26/2018
 |该机制与应用清单集成。|Y|SDK 必须传递特定于 [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] 的概念，以便包装和 F5 可以与 [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] 提供的 SDK 一起正常工作。|Y|NuGet 内容是项目的一部分。 无需特殊的 F5 考虑。|
 |该机制部署非引用文件（例如，将部署要在其上运行 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用测试的测试框架）。|Y|如果将这些文件放入 \redist 文件夹中，它们将自动部署。|Y||
 |该机制会在 Visual Studio IDE 中自动添加平台 SDK。|Y|如果将 [!INCLUDE[win8](../debugger/includes/win8_md.md)] SDK 或 Windows Phone SDK 放入具有特定布局的特定位置，SDK 会自动与所有 Visual Studio 功能集成。|N||
-|该机制支持干净的开发者计算机。 （即，无需安装，只需来自源代码管理的简单检索即可工作。）|N|由于引用 SDK，因此必须单独签入解决方案和 SDK。 可从两个非注册表默认位置（MSBuild 从该位置循环访问 SDK）签入 SDK（有关详细信息，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)）。 作为替代方法，如果自定义位置包含 SDK，可以在项目文件中指定以下代码：<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> 然后将 SDK 签入该位置。|Y|可以签出解决方案，Visual Studio 会立即识别并作用于文件。|
+|该机制支持干净的开发者计算机。 （即，无需安装，只需来自源代码管理的简单检索即可工作。）|N|由于引用 SDK，因此必须单独签入解决方案和 SDK。 可从两个非注册表默认位置（MSBuild 从该位置循环访问 SDK）签入 SDK（有关详细信息，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)）。 作为替代方法，如果自定义位置包含 SDK，可以在项目文件中指定以下代码：<br /><br />`<PropertyGroup>`<br />&nbsp;&nbsp;`<SDKReferenceDirectoryRoot>`<br />&nbsp;&nbsp;`C:\MySDKs`<br />&nbsp;&nbsp;`</SDKReferenceDirectoryRoot>`<br />`</PropertyGroup>`<br /><br /> 然后将 SDK 签入该位置。|Y|可以签出解决方案，Visual Studio 会立即识别并作用于文件。|
 |可以加入大型现有包作者社区。|不可用|社区是新增功能。|Y||
 |可以加入大型现有包使用者社区。|不可用|社区是新增功能。|Y||
 |可以加入合作伙伴生态系统（自定义库和存储库等）。|不可用|可用的存储库包括 Visual Studio Marketplace、Microsoft 下载中心和 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]。|Y||

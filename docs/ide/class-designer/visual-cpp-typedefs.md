@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0c854fabdc18337b806cd64733de1d0c88758c5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ce99a4e4c4899502bf1f63edf2dbc1ad0c93cd0
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>类设计器中的 Visual C++ typedef
 
@@ -49,7 +49,7 @@ typedef class coord
 };
 ```
 
-若要详细了解如何使用 `typedef` 类型，请参阅 [Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs)。
+若要详细了解如何使用 `typedef` 类型，请参阅 [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)。
 
 C++ typedef 形状具有 typedef 中所指定类型的形状。 例如，如果源声明 `typedef class`，则形状具有圆角和标签 **Class**。 对于 `typedef struct`，形状具有方角和标签 **Struct**。
 
@@ -199,6 +199,8 @@ typedef
 
 -> MyIntVect
 
-## <a name="see-also"></a>请参阅
+### <a name="see-also"></a>请参阅
 
-- [使用 Visual C++ 代码](working-with-visual-cpp-code.md)
+- [使用 Visual C++ 代码](working-with-visual-cpp-code.md)  
+- [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
+

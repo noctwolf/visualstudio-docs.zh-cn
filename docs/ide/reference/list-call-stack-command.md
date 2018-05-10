@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5fb8bd8b0f0f550e6fa1253f778895af0472be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e04bb46d167478b85f4b6f8b4d6df903bd46e8b7
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="list-call-stack-command"></a>“列出调用堆栈”命令
 显示当前调用堆栈。
 
 ## <a name="syntax"></a>语法
 
-```
+```cmd
 Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 [/ShowNames:yes|no] [/ShowValues:yes|no] [/ShowModule:yes|no]
 [/ShowLineOffset:yes|no] [/ShowByteOffset:yes|no]
@@ -87,7 +87,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ## <a name="remarks"></a>备注
  对参数或开关所做的更改将应用于对此命令的将来的调用。 如果发出 Debug.ListCallStackby 本身，则显示整个调用堆栈。 如果指定一个索引，例如，
 
-```
+```cmd
 Debug.ListCallStack 2
 ```
 
@@ -95,7 +95,7 @@ Debug.ListCallStack 2
 
  还可使用此命令的预定义别名 (kb) 编写此命令。 例如，可以输入
 
-```
+```cmd
 kb 2
 ```
 
@@ -103,7 +103,7 @@ kb 2
 
 ## <a name="example"></a>示例
 
-```
+```cmd
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 

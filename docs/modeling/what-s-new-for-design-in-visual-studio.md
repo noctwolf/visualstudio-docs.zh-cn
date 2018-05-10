@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2e36bbd95146f8a8b1095fefaa7882ff5f88d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c25d89ae3ab3d25e415b4407a46fc903b1c05266
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio 中用于设计的新增功能
 
@@ -64,18 +64,13 @@ ms.lasthandoff: 04/26/2018
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-<a name="VersionSupport"></a>
-## <a name="version-support-for-architecture-and-modeling-tools"></a>对体系结构和建模工具的版本支持
+## <a name="a-nameversionsupport-version-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />对体系结构和建模工具版本支持
 
-Visual Studio 有多个版本。 并非所有版本支持体系结构和建模工具。 下表显示每个工具的可用性。
+Visual Studio 2015 是有多个版本。 不是所有这些体系结构和建模工具提供支持。 下表显示每个工具的可用性。
 
 |**功能**|**Enterprise**|**Professional**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**代码图**|是|请参阅注释 (1)|-|-|
-|**依赖项关系图**|是|请参阅注释 (2)|请参阅注释 (2)|-|
+|**代码图**|是|仅支持读取代码图，筛选代码映射时，添加新的泛型节点以及从所选内容创建新的定向关系图。|-|-|
+|**依赖项关系图**|是|仅支持读取依赖项关系图。|仅支持读取依赖项关系图。|-|
 |**定向关系图**（DGML 关系图）|是|是|是|-|
 |**代码克隆**|是|-|-|-|
-
-注释 (1)：仅支持读取代码图、筛选代码图、添加新的泛型节点以及从所选内容创建新的定向关系图。
-
-注释 (2): 仅支持读取依赖项关系图。

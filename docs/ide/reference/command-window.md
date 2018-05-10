@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d989e3fea2d973999fba12aefd42f629bc6b3991
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-window"></a>“命令”窗口
 “命令”窗口用于直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中执行命令或别名。 可以执行菜单命令和不在任何菜单上出现的命令。 若要显示“命令”窗口，请在“视图”菜单中选择“其他窗口”，然后选择“命令窗口”。
@@ -30,13 +30,13 @@ ms.lasthandoff: 04/26/2018
 ## <a name="displaying-the-values-of-variables"></a>显示变量的值
  若要检查变量 `varA` 的值，请使用 [Print 命令](../../ide/reference/print-command.md)：
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  问号 (?) 是 `Debug.Print` 的别名，所以此命令也可写为：
 
-```
+```cmd
 >? varA
 ```
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="parameters-switches-and-values"></a>参数、开关和值
  某些 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令具有必选和可选的参数、开关和值。 处理此类命令时，会应用某些规则。 下面是一个用来阐明术语的复杂命令示例。
 
-```
+```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
@@ -102,7 +102,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="escape-characters"></a>转义字符
  命令行中的插入符号 (^) 字符表示紧随其后的字符将按字面意思而不是作为控制字符进行解释。 这可以用于嵌入参数或开关值中的直引号 (")、空格、前导斜杠，插入符号或其他任何字符，开关名称除外。 例如，应用于对象的
 
-```
+```cmd
 >Edit.Find ^^t /regex
 ```
 

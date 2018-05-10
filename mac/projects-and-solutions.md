@@ -1,15 +1,14 @@
 ---
-title: Visual Studio for Mac 中的项目和解决方案
+title: 项目和解决方案
 description: 本文档概述了 Visual Studio for Mac 中的项目和解决方案。
 author: asb3993
-ms.author: amburns
-ms.date: 04/14/2017
+ms.author: amburns05/06/201804/14/2017
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: a2936427ffa1f6c225d8a84754084287e2ab72c2
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 4a9ad4794b75590287df63ba11ba64316531db27
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="projects-and-solutions"></a>项目和解决方案
 
@@ -22,7 +21,3 @@ Visual Studio for Mac 提供 Solution Pad，用于显示整个打开解决方案
 ## <a name="project-and-solution-options"></a>“项目和解决方案”选项
 
 通过双击项目/解决方案名称或右键单击并浏览到“选项”可以同时管理项目和解决方案的属性。 有关这些选项的详细信息，请参阅[管理解决方案和项目属性](~/managing-solutions-and-project-properties.md)一文。
-
-
-
-

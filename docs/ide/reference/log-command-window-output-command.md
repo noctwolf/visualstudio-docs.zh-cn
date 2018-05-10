@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16eb42011a15539193e9d69724d299c73e5cecc4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2de9b21f55765706a56110aee84959b2003e994e
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="log-command-window-output-command"></a>“日志命令窗口输出”命令
 将“命令”窗口的所有输入和输出复制到文件中。
 
 ## <a name="syntax"></a>语法
 
-```
+```cmd
 Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
@@ -58,19 +58,19 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="examples"></a>示例
  此示例创建新的日志文件 cmdlog 并启动命令日志。
 
-```
+```cmd
 >Tools.LogCommandWindowOutput cmdlog
 ```
 
  此示例停止日志记录命令。
 
-```
+```cmd
 >Tools.LogCommandWindowOutput /off
 ```
 
  此示例继续在以前使用的日志文件中记录命令。
 
-```
+```cmd
 >Tools.LogCommandWindowOutput /on
 ```
 

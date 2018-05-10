@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cf241ec0a9ff849b52761a241e84a15d287bb88
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2ef4f0c5c6bd5be2820e1f666529fc43fac59763
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="print-command"></a>Print 命令
 计算表达式或显示指定文本。
 
 ## <a name="syntax"></a>语法
 
-```
+```cmd
 Debug.Print text
 ```
 
@@ -39,13 +39,13 @@ Debug.Print text
 ## <a name="remarks"></a>备注
  可使用问号 (?) 作为此命令的别名。 例如，命令
 
-```
+```cmd
 >Debug.Print expA
 ```
 
  也可写作
 
-```
+```cmd
 >? expA
 ```
 
@@ -53,7 +53,7 @@ Debug.Print text
 
 ## <a name="example"></a>示例
 
-```
+```cmd
 >Debug.Print varA
 ```
 

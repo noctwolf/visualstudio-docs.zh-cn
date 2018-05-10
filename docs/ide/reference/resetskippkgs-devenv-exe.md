@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6199bf96bc631cf1018b2cb72a4d3c3cf7c703cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bbf7a601213c3c02cc35f2d9453eee6b1d39c43e
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="resetskippkgs-devenvexe"></a>/ResetSkipPkgs (devenv.exe)
 清除由希望避免 VSPackages 加载问题的用户添加到 VSPackages 的跳过加载选项，然后启动 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
 
 ## <a name="syntax"></a>语法
 
-```
+```cmd
 Devenv /ResetSkipPkgs
 ```
 
@@ -35,7 +35,7 @@ Devenv /ResetSkipPkgs
 ## <a name="example"></a>示例
  以下示例清除了所有 SkipLoading 标记。
 
-```
+```cmd
 Devenv.exe /ResetSkipPkgs
 ```
 

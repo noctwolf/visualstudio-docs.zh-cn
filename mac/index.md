@@ -1,15 +1,15 @@
 ---
 title: Visual Studio for Mac 介绍
-description: ''
+description: 本文介绍 Visual Studio for Mac 的功能
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 4b4b8e9cb55e3a4cf2d81e7cf7234ea47ad06f0e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 918c0532140369bfc6790be2306830b5f160ebdf
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Visual Studio for Mac 介绍
 
@@ -72,7 +72,7 @@ Visual Studio 有其自己的集成 Android SDK 管理器。
 
 对于 Android 应用程序，Visual Studio for Mac 包含其自己的设计器，该设计器适用于 Android `.axml` 文件来直观地构造用户界面。 Visual Studio for Mac 将在其 Android 设计器中打开这些文件，如下图中所示：
 
-![](media/intro-image31.png)
+![Android UI 设计器](media/intro-image31.png)
 
 有关 Android 设计器的详细信息，请参阅[设计器概述](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview)文档。
 
@@ -80,7 +80,7 @@ Visual Studio 有其自己的集成 Android SDK 管理器。
 
 IOS 设计器与 Visual Studio for Mac 完全集成，可进行 .xib 的可视编辑，并使 Storyboard 文件创建 iOS、tvOS 和 WatchOS UI 并转换。 使用直观方法处理事件时，可使用工具箱和 Design Surface 之间的拖放功能生成整个用户界面。 iOS 设计器还支持具有额外的设计时呈现优势的[自定义控件](https://developer.xamarin.com/guides/ios/user_interface/designer/ios_designable_controls_overview/)。
 
-![](media/intro-image30.png)
+![iOS Storyboard 设计器](media/intro-image30.png)
 
 有关使用 iOS 设计器的详细信息，请参阅[设计器](https://developer.xamarin.com/guides/ios/user_interface/designer)文档。
 
@@ -109,7 +109,7 @@ Xamarin Profiler 有三个可用于分析的仪表。 [Xamarin Profiler 简介](
 
 Xamarin Inspector 向用户提供交互式 C# 控制台以及工具。 检查实时应用程序时，它可用作调试或诊断辅助、教学工具、文档工具或实验工具。
 
-![](media/intro-inspector.png)
+![Xamarin Inspector](media/intro-inspector.png)
 
 它包括一个独立应用程序，可提供面向各种编程平台（Android、iOS、Mac 和 Windows）以及集成到 IDE 的调试工作流的丰富 C# 控制台。
 

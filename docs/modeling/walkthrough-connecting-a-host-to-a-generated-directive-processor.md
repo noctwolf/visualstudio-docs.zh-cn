@@ -12,21 +12,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 994a1b0677930128d36c4a3218f0231879b7a43e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 4b7df8a53cafda94922cc7b296f0ff52868335f5
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>演练：将主机连接至生成的指令处理器
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>演练： 连接到生成的指令处理器的主机
+
 你可以编写您自己处理文本模板的主机。 在演示了基本的自定义主机[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 你可以扩展此主机不能添加功能，如生成多个输出文件。
 
- 在本演练中，你将展开自定义宿主，以使它支持调用指令处理器的文本模板。 当你定义的域特定语言时，它会生成*指令处理器*域模型。 指令处理器，使用户更轻松地编写访问的模型，从而减少编写程序集并导入的模板中的指令的需要的模板。
+在本演练中，你将展开自定义宿主，以使它支持调用指令处理器的文本模板。 当你定义的域特定语言时，它会生成*指令处理器*域模型。 指令处理器，使用户更轻松地编写访问的模型，从而减少编写程序集并导入的模板中的指令的需要的模板。
 
-> [!WARNING]
->  本演练基于[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次执行该演练。
+> [!NOTE]
+> 本演练基于[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次执行该演练。
 
- 本演练包含以下任务：
+本演练包含以下任务：
 
 -   使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]生成基于域模型的指令处理器。
 
@@ -35,7 +39,8 @@ ms.lasthandoff: 04/26/2018
 -   测试自定义主机与生成的指令处理器。
 
 ## <a name="prerequisites"></a>系统必备
- 若要定义 DSL，必须安装以下组件：
+
+若要定义 DSL，必须安装以下组件：
 
 |||
 |-|-|
@@ -45,12 +50,11 @@ ms.lasthandoff: 04/26/2018
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
- 此外，你必须在中创建自定义文本模板转换[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
+此外，你必须在中创建自定义文本模板转换[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
 
-## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用域特定语言工具生成指令处理器
- 在本演练中，你将使用域特定语言设计器向导来创建域特定语言解决方案 DSLMinimalTest。
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用的域特定语言工具来生成指令处理器
 
-#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>使用域特定语言工具来生成基于域模型的指令处理器
+在本演练中，你将使用域特定语言设计器向导来创建域特定语言解决方案 DSLMinimalTest。
 
 1.  创建域特定语言解决方案具有以下特征：
 
@@ -62,12 +66,12 @@ ms.lasthandoff: 04/26/2018
 
     -   公司名称： Fabrikam
 
-     有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+   有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 2.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。
 
     > [!IMPORTANT]
-    >  此步骤生成指令处理器，并为其在注册表中添加键。
+    > 此步骤生成指令处理器，并为其在注册表中添加键。
 
 3.  在“调试”菜单上，单击“启动调试”。
 
@@ -81,10 +85,9 @@ ms.lasthandoff: 04/26/2018
 
 6.  保存的解决方案，然后关闭域特定语言设计器。
 
-## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>连接到的指令处理器了自定义文本模板宿主
- 生成指令处理器后，连接指令处理器和你在中创建自定义文本模板宿主[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
+## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>连接到的指令处理器了自定义文本模板宿主
 
-#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>若要连接到生成的指令处理器了自定义文本模板宿主
+生成指令处理器后，连接指令处理器和你在中创建自定义文本模板宿主[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
 
 1.  打开 CustomHost 解决方案。
 
@@ -119,7 +122,7 @@ ms.lasthandoff: 04/26/2018
 5.  定位属性的代码`StandardAssemblyReferences`，并将其替换为以下代码：
 
     > [!NOTE]
-    >  在此步骤中，你将添加对所需的生成你的主机将支持的指令处理器的程序集的引用。
+    > 在此步骤中，你将添加对所需的生成你的主机将支持的指令处理器的程序集的引用。
 
     ```csharp
     //the host can provide standard assembly references
@@ -155,7 +158,7 @@ ms.lasthandoff: 04/26/2018
 6.  定位该函数的代码`ResolveDirectiveProcessor`，并将其替换为以下代码：
 
     > [!IMPORTANT]
-    >  此代码包含硬编码引用生成的指令处理器你想要连接的名称。 你可以轻松地进行这更多常规，在这种情况下它会查找所有指令处理器的注册表中列并尝试找到匹配项。 在这种情况下，主机会使用任何生成的指令处理器。
+    > 此代码包含硬编码引用生成的指令处理器你想要连接的名称。 你可以轻松地进行这更多常规，在这种情况下它会查找所有指令处理器的注册表中列并尝试找到匹配项。 在这种情况下，主机会使用任何生成的指令处理器。
 
     ```csharp
     //the engine calls this method based on the directives the user has
@@ -230,17 +233,18 @@ ms.lasthandoff: 04/26/2018
 
 8.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。
 
-## <a name="testing-the-custom-host-with-the-directive-processor"></a>测试指令处理器的自定义主机
- 若要测试自定义文本模板宿主，首先必须编写一个调用生成的指令处理器的文本模板。 然后运行自定义宿主，将文本模板的名称传递给它并验证已正确处理指令。
+## <a name="test-the-custom-host-with-the-directive-processor"></a>测试自定义主机与指令处理器
 
-#### <a name="to-create-a-text-template-to-test-the-custom-host"></a>创建文本模板测试自定义主机
+若要测试自定义文本模板宿主，首先必须编写一个调用生成的指令处理器的文本模板。 然后运行自定义宿主，将文本模板的名称传递给它并验证已正确处理指令。
+
+### <a name="create-a-text-template-to-test-the-custom-host"></a>创建文本模板测试自定义宿主
 
 1.  创建一个文本文件，并将其命名`TestTemplateWithDP.tt`。 可以使用任何文本编辑器，如记事本，以创建文件。
 
 2.  向文本文件中添加以下内容：
 
     > [!NOTE]
-    >  文本模板的编程语言不必与自定义主机名称相匹配。
+    > 文本模板的编程语言不必与自定义主机名称相匹配。
 
     ```csharp
     Text Template Host Test
@@ -313,7 +317,7 @@ ms.lasthandoff: 04/26/2018
 
 4.  保存并关闭文件。
 
-#### <a name="to-test-the-custom-host"></a>测试自定义主机
+### <a name="test-the-custom-host"></a>测试自定义宿主
 
 1.  打开一个命令提示符窗口。
 
@@ -324,7 +328,7 @@ ms.lasthandoff: 04/26/2018
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    >  而不键入地址，你可以浏览到文件 CustomHost.exe 中**Windows 资源管理器**，，然后将文件拖入命令提示符窗口。
+    > 而不键入地址，你可以浏览到文件 CustomHost.exe 中**Windows 资源管理器**，，然后将文件拖入命令提示符窗口。
 
 3.  键入一个空格。
 
@@ -335,7 +339,7 @@ ms.lasthandoff: 04/26/2018
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    >  而不键入地址，你可以浏览到文件 TestTemplateWithDP.txt 中**Windows 资源管理器**，，然后将文件拖入命令提示符窗口。
+    > 而不键入地址，你可以浏览到文件 TestTemplateWithDP.txt 中**Windows 资源管理器**，，然后将文件拖入命令提示符窗口。
 
      自定义主机应用程序运行，并启动文本模板转换过程。
 
