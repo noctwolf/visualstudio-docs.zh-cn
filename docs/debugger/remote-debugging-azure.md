@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: fc8e657f6fb67884bd12de3f8e65c78077fa9b2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 在 Azure 中的 IIS 上的远程调试 ASP.NET 核心
 
@@ -83,18 +83,19 @@ ms.lasthandoff: 04/18/2018
 
 你可以创建一个 Azure VM 的 Windows 服务器，然后安装和配置 IIS 和其他所需的软件组件。 这比将部署到 Azure App Service 的更多时间，并要求你按照本教程中的剩余步骤。
 
-首先，按照中所述的所有步骤[安装和运行的 IIS](/azure/virtual-machines/virtual-machines-windows-hero-role)。
+首先，按照中所述的所有步骤[安装和运行的 IIS](/azure/virtual-machines/windows/quick-create-portal)。
 
 网络安全组中打开端口 80 时，还为远程调试器打开端口 4022。 这样一来，无需以后将其打开。
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>更新 Windows Server 上的浏览器安全设置
 
-具体取决于浏览器安全设置，则可能会节省你时候将以下受信任的站点添加到你的浏览器，以便你可以轻松地下载本教程中所述的软件。 可能需要这些站点的访问：
+具体取决于浏览器安全设置，则可能会节省你时候将以下受信任的站点添加到你的浏览器，以便你可以更快地下载本教程中所述的软件。 可能需要这些站点的访问：
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- iis.net
 
 如果你使用的 Internet Explorer，则可以通过转到添加受信任的站点**Internet 选项 > 安全 > 受信任的站点 > 站点**。 这些步骤是不同的其他浏览器。 （如果需要从 my.visualstudio.com 下载较旧版本的远程调试器，某些其他受信任的站点所需登录。）
 

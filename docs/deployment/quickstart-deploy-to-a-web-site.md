@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 176bb028d176ce789977149f9e0380bf1ca284fc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>将 web 应用或.NET Core 应用发布到网站使用 Visual Studio 发布工具
 
@@ -24,13 +24,19 @@ ms.lasthandoff: 04/19/2018
 
 这些步骤适用于 ASP.NET、 ASP.NET Core、.NET 核心和 Visual Studio 中的 Python 应用。 For Node.js，支持步骤，但用户界面，则不同。
 
+## <a name="prerequisites"></a>系统必备
+
+* 你必须安装的 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**开发工作负荷。 对于.NET Core 应用，你还需要 **.NET 核心**工作负荷。
+
+    如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
+
 ## <a name="create-a-new-project"></a>创建新项目 
 
 1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
 1. 下**Visual C#** 或**Visual Basic**，选择**Web**，然后在中间窗格中选择**ASP.NET Web 应用程序 (.NET Framework)** 或 (仅限 C#) **ASP.NET 核心 Web 应用程序**，然后单击**确定**。
 
-1. 选择**MVC**，请确保**无身份验证**已选择，然后单击**确定**。
+1. 选择**MVC** (或选择**Web 应用程序 （模型-视图-控制器）**为.NET Core)，请确保**无身份验证**已选择，然后单击**确定**.
 
 1. 键入的名称，例如**MyWebApp**单击**确定**。
 
@@ -44,7 +50,9 @@ ms.lasthandoff: 04/19/2018
 
     ![选择发布](../deployment/media/quickstart-publish-aspnet.png "选择发布")
 
-1. 在**发布**窗格中，选择**IIS，FTP，等**。
+1. 如果你之前配置任何发布的配置文件，**发布**窗格中显示。 单击**创建新的配置文件**。
+
+1. 在**选取发布目标**对话框框中，选择**IIS，FTP，等**。
 
     ![选择 IIS、 FTP 等](../deployment/media/quickstart-publish-iis-ftp.png "选择 IIS、 FTP，等等。")
 
@@ -56,7 +64,7 @@ ms.lasthandoff: 04/19/2018
 
 1. 在**发布方法**字段中，选择一种方法，例如**Web 部署**或**FTP**。
 
-    接下来，你看到的设置对应于您发布方法。
+    接下来，你看到的设置对应于您发布方法。 Web 部署简化了 Web 应用程序和网站部署到 IIS 服务器，并且必须为应用程序服务器上安装。 使用[Web 平台安装程序](https://www.microsoft.com/web/downloads/platform.aspx)来进行安装。
 
 1. 配置发布方法所需的设置，然后单击**验证连接**。
 
@@ -74,4 +82,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="next-steps"></a>后续步骤
 
-- [将 ASP.NET 部署到 IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+在本快速入门教程，你学习了如何使用 Visual Studio 创建的发布配置文件。 你还可以配置发布配置文件通过导入发布设置。
+
+> [!div class="nextstepaction"]
+> [导入发布设置和将部署到 IIS](tutorial-import-publish-settings-iis.md)
