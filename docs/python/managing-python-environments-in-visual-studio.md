@@ -1,6 +1,6 @@
 ---
-title: 如何管理 Python 环境和解释器
-description: 如何在 Visual Studio 中使用 Python 环境窗口来管理全局和虚拟环境、设置自定义环境、安装 Python 解释器、安装包、设置搜索路径和管理 Visual Studio 项目环境。
+title: 管理 Python 环境和解释器
+description: 使用 Python 环境窗口来管理全局、虚拟和 Conda 环境、安装 Python 解释器和包以及将环境分配给 Visual Studio 项目。
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 422503cf1e9332ce2b42674f7a6293e844401772
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f3a3fa14a2772171b2968514867d35ea4ad126f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-environments-in-visual-studio"></a>在 Visual Studio 中管理 Python 环境
+# <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
 Python 环境是在其中运行 Python 代码的上下文，它包括全局、虚拟和 Conda 环境。 环境由解释器、库（通常是 Python 标准库）以及一组已安装的包组成。 这些组成部分共同确定哪些语言结构和语法有效、哪些操作系统功能可访问以及哪些包可使用。
 

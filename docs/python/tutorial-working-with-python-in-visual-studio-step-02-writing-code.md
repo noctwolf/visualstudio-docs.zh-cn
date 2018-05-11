@@ -1,6 +1,6 @@
 ---
-title: 使用 Python - 第 2 步：编写和运行代码
-description: 在 Visual Studio 中使用 Python 的核心教程的第 2 步，介绍了如何编辑和运行简单的 Hello World 程序，接着还提供了更有意思的代码，以展示 Visual Studio 的编辑和 IntelliSense 功能。
+title: 使用 Python 教程 - 第 2 步：编写和运行代码
+description: 在 Visual Studio 中使用 Python 功能的核心教程的第 2 步，包括编辑代码和运行项目。
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 607903093735c1ab49886afcf292121e0b7bafb8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>步骤 2：编写和运行代码
 
@@ -85,7 +85,7 @@ ms.lasthandoff: 04/19/2018
 
 1. 使用 Ctrl+F5 或“调试”>“开始执行(不调试)”再次运行程序。 完成后，关闭输出窗口。
 
-## <a name="next-steps"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 > [!div class="nextstepaction"]
 > [使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)

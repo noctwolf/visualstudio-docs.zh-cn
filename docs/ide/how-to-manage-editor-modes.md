@@ -1,9 +1,8 @@
 ---
-title: Visual Studio 全屏和虚拟空间模式 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 全屏和虚拟空间模式
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -27,44 +26,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e95940eaad599d149e504db9c1d48c5c011409e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94bc99bf70340ef76639d0ae0f05e1f7737173a2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manage-editor-modes"></a>如何：管理编辑器模式
-可在各种显示模式下显示 Visual Studio 代码编辑器。  
-  
+
+可在各种显示模式下显示 Visual Studio 代码编辑器。
+
 > [!NOTE]
 > 显示的对话框和菜单命令可能与本文中的描述不同，具体取决于现用的设置或版本。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具” > “导入和导出设置”，再选择“重置所有设置”。
-  
-## <a name="enable-full-screen-mode"></a>启用全屏模式  
-启用“全屏”模式后，可选择隐藏所有工具窗口并仅查看文档窗口。  
-  
-#### <a name="to-enable-full-screen-mode"></a>启用全屏模式  
-  
--   按 **Alt**+**Shift**+**Enter** 可进入或退出“全屏”模式。  
-  
-     --或者--  
-  
--   在“命令”窗口中发出命令 `View.Fullscreen`。  
-  
-## <a name="enable-virtual-space-mode"></a>启用虚空格模式  
-在“虚空格”模式下，将在每个代码行末尾插入空格。 选择此选项可将注释放置在代码旁的一致位置。  
-  
-#### <a name="to-enable-virtual-space-mode"></a>启用虚空格模式  
-  
+
+## <a name="enable-full-screen-mode"></a>启用全屏模式
+
+启用“全屏”模式后，可选择隐藏所有工具窗口并仅查看文档窗口。
+
+-   按 **Alt**+**Shift**+**Enter** 可进入或退出“全屏”模式。
+
+     --或者--
+
+-   在“命令”窗口中发出命令 `View.Fullscreen`。
+
+## <a name="enable-virtual-space-mode"></a>启用虚空格模式
+
+在“虚空格”模式下，将在每个代码行末尾插入空格。 选择此选项可将注释放置在代码旁的一致位置。
+
 1.  从“工具”菜单中选择“选项”。
 
 2.  展开“文本编辑器”文件夹，选择“所有语言”，全局设置此选项，或选择特定语言的文件夹。 例如，若要仅在 Visual Basic 中启用行号，则选择“Basic” > “文本编辑器”节点。
-  
-3.  选择“常规”选项，然后在“设置”下选择“启用虚空格”。  
-  
+
+3.  选择“常规”选项，然后在“设置”下选择“启用虚空格”。
+
     > [!NOTE]
-    >  “虚空格”在“列选择”模式下启用。 如果未启用“虚空格”模式，插入点将从一行的末尾直接移动到下一行的第一个字符。  
-  
+    > “虚空格”在“列选择”模式下启用。 如果未启用“虚空格”模式，插入点将从一行的末尾直接移动到下一行的第一个字符。
+
 ## <a name="see-also"></a>请参阅
-[自定义编辑器](../ide/customizing-the-editor.md)   
-[在 Visual Studio 中自定义窗口布局](../ide/customizing-window-layouts-in-visual-studio.md)   
-[“选项”对话框 ->“环境”->“字体和颜色”](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+
+- [自定义编辑器](../ide/customizing-the-editor.md)
+- [在 Visual Studio 中自定义窗口布局](../ide/customizing-window-layouts-in-visual-studio.md)
+- [“选项”对话框 ->“环境”->“字体和颜色”](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

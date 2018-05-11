@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9669596eb49330235eca2c35dffe0f2cb1afb9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c1879b67558cb57fba7bc462e4c7df03fb5efc8
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="troubleshoot-broken-references"></a>有关无效引用的疑难解答
 
@@ -42,9 +42,9 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="reference-path-is-incorrect"></a>引用路径不正确
 
-如果在不同计算机上共享项目，当组件位于每台计算机上的不同目录中时可能找不到某些引用。 引用存储时采用组件文件的名称（例如，MyComponent）。 向项目添加引用时，组件文件的文件夹位置（例如 C:\MyComponents\\）追加到 **ReferencePath** 项目属性。
+如果在不同计算机上共享项目，当组件位于每台计算机上的不同目录中时可能找不到某些引用。 引用存储时采用组件文件的名称（例如，MyComponent）。 向项目添加引用时，组件文件的文件夹位置（例如 C:\MyComponents）追加到 ReferencePath 项目属性。
 
-打开项目时，它会尝试通过查找引用路径上的目录找到这些引用的组件文件。 如果在组件存储于其他目录（例如 D:\MyComponents\\）的计算机上打开项目，则无法找到该引用，并且任务列表中会出现错误。
+打开项目时，它会尝试通过查找引用路径上的目录找到这些引用的组件文件。 如果在组件存储于其他目录（例如 D:\MyComponents）的计算机上打开项目，则无法找到该引用，并且任务列表中会出现错误。
 
 若要解决此问题，可以删除损坏的引用，然后使用“添加引用”对话框替换引用。 另一种解决方案是使用项目的属性页中的“引用路径”项，并修改列表中的文件夹，以指向正确位置。 为每台计算机上的每位用户保留“引用路径”属性。 因此，修改引用路径不会影响项目中的其他用户。
 

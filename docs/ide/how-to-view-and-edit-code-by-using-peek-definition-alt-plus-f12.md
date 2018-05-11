@@ -1,7 +1,7 @@
 ---
-title: 使用 Visual Studio 中的查看定义 | Microsoft Docs
-ms.custom: ''
+title: 在 Visual Studio 中使用“查看定义”
 ms.date: 01/10/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用“查看定义”查看和编辑代码 (Alt+F12)
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 04/19/2018
 
 1. 单击“确定”关闭“选项”对话框 。
 
-   ![设置鼠标单击速览定义选项](../ide/media/editor_options_peek_view.png)  
+   ![设置鼠标单击速览定义选项](../ide/media/editor_options_peek_view.png)
 
 ### <a name="keyboard-shortcuts-for-peek-definition"></a>“查看定义”的键盘快捷键
 
@@ -85,6 +85,6 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>请参阅
 
-[导航代码](../ide/navigating-code.md)  
-[转到定义和速览定义](../ide/go-to-and-peek-definition.md)  
-[工作效率提示](../ide/productivity-tips-for-visual-studio.md)
+- [导航代码](../ide/navigating-code.md)
+- [转到定义和速览定义](../ide/go-to-and-peek-definition.md)
+- [工作效率提示](../ide/productivity-tips-for-visual-studio.md)

@@ -1,6 +1,6 @@
 ---
-title: 使用 Python - 第 3 步：交互式 REPL 窗口
-description: 在 Visual Studio 中使用 Python 的核心教程的第 3 步，介绍了 Python 交互 REPL 窗口。
+title: 使用 Python 教程 - 第 3 步：交互式 REPL 窗口
+description: 在 Visual Studio 中使用 Python 功能的核心教程的第 3 步，介绍了 Python 交互式 REPL 窗口。
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0a0cbe766f1b31166185275989bfa0678ed50690
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>步骤 3：使用 REPL 交互窗口
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 04/19/2018
 
 1. 刚刚已经了解如何使用交互窗口的快速 REPL 环境处理一小段代码的细节问题，然后将该代码轻松添加到项目的源文件。 如果现在使用 Ctrl+F5（或“调试”>“开始执行(不调试)”）再次运行代码，则会看到想要的准确结果。
 
-## <a name="next-steps"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 > [!div class="nextstepaction"]
 > [在调试器中运行代码](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

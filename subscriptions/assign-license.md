@@ -9,11 +9,11 @@ description: 了解管理员如何将许可证分配给订阅者
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4cce35d361e3a1f8af2c2268e2ef6cbd061710ea
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 订阅管理员门户中分配许可证
 
@@ -30,10 +30,10 @@ ms.lasthandoff: 04/16/2018
 
 3.  在表单域中输入新订阅者的信息。 如果组织使用 Azure Active Directory，则此字段可充当搜索功能，查找当前目录中的用户，以便从搜索结果中选择正确的用户。 选择用户后，系统会自动填充该用户的名称、登录电子邮件和通知电子邮件，如下所示。 
 
-    如果组织用于接收和用于登录的电子邮件不同，可选择在此处输入用于接收的电子邮件。 选择指示“使用不同于登录电子邮件的电子邮件进行通信？”的超链接。 
+    如果贵组织不使用 Azure Active Directory (Azure AD)，而是使用与登录电子邮件不同的电子邮件地址来接收电子邮件，则可以在此处输入该电子邮件地址。 选择标记为“添加其他电子邮件地址来接收通信”的超链接。 
 
     **下载的访问权限：**  
-    如果希望此订阅者在登录 [Visual Studio 订阅门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)时可以访问软件下载，请务必选中“下载”框。 如果选择取消选中此框，用户会无法访问软件下载，但仍可使用订阅中包含的所有其他权益。 
+    如果希望此订阅者在登录 [Visual Studio 订阅门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)时可以访问软件下载，请务必将下载切换保持启用状态。 如果选择禁用下载，用户将无法访问软件下载，但仍可访问订阅中包含的所有其他权益。 
     
     为此订阅者选择选项后，单击“添加”。
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
     ![订阅者已添加](_img\assign-license-add\add-subscriber-complete.png)
 
 ## <a name="bulk-assignments"></a>批量分配
-1.  要一次添加多个订阅者，请导航到“订阅者”选项卡。在顶部功能区，单击“批量添加”。 
+1.  若要一次添加多个订阅者，请导航到“管理订阅者”选项卡。在顶部功能区，单击“批量添加”。 
 
     ![批量添加](_img\assign-license-add\bulk-assign-add.png)
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 
     ![上传多个订阅者](_img\assign-license-add\bulk-assign-upload.png)
 
-3.  在 Excel 电子表格的字段中，填写想要为其分配订阅的个人的信息。 引用是可选字段。 如果模板任何部分的填写内容出错，系统会显示描述该问题的错误消息。 完成后将该文件保存在硬盘驱动器上。
+3.  在 Excel 电子表格的字段中，填写想要为其分配订阅的个人的信息。 引用是可选字段。 如果模板任何部分的填写内容出错，系统会显示描述该问题的错误消息。 完成后在本地保存文件。
 为顺利地完成上传，请查看以下最佳做法：
     - 确保所有表单域均不含逗号。
     - 删除用户名等表单域前后的空格。

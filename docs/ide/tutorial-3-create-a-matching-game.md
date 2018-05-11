@@ -11,16 +11,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd560c6a3675617741f35f40d1fe23a70b482349
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f1517f66882ab793efad194c7cf0a76076c4993
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教程 3：创建匹配游戏
 在本教程中，将生成一个匹配游戏，在该游戏中，玩家必须匹配隐藏的图标对。 您将学习如何：  
 
--   在 `List` 对象中存储对象，例如图标。  
+-   在 <xref:System.Collections.Generic.List%601> 对象中存储对象，例如图标。  
 
 -   使用 `foreach` 循环（Visual C# 中）或 `For Each` 循环（Visual Basic 中）循环访问列表中的各项。  
 
@@ -35,21 +35,23 @@ ms.lasthandoff: 04/26/2018
  ![在本教程中创建的游戏](../ide/media/express_finishedgame.png "Express_FinishedGame")  
 在本教程中创建的游戏  
 
- 若要下载示例的完整版本，请参阅 [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)（完整匹配游戏教程示例）。  
+## <a name="tutorial-links"></a>教程链接
+
+ 若要下载示例的完整版本，请参阅[完整匹配游戏教程示例](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)。  
 
 > [!NOTE]
 >  在本教程中，同时涉及 Visual C# 和 Visual Basic，因此请关注特定于您使用的编程语言的信息。  
 
- 如果你遇到困难或在编程方面有疑问，请尝试在一个 MSDN 论坛上发布你的问题。 请参阅 [Visual Basic 论坛](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral)和 [Visual C# 论坛](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)。 另外，那里有很好的免费视频学习资源供你使用。 若要了解有关 Visual Basic 编程的详细信息，请参阅 [Visual Basic Fundamentals: Development for Absolute Beginners](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)（Visual Basic 基础知识：零基础开发）。 若要了解有关 Visual C# 编程的详细信息，请参阅 [C# Fundamentals: Development for Absolute Beginners](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)（C# 基础知识：零基础开发）。  
+ 如果你遇到困难或在编程方面有疑问，请尝试在一个 MSDN 论坛上发布你的问题。 请参阅 [Visual Basic 论坛](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral)和 [Visual C# 论坛](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)。 另外，那里有很好的免费视频学习资源供你使用。 若要了解有关 Visual Basic 编程的详细信息，请参阅 [Visual Basic 基础知识：零基础开发](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)。 若要了解有关 Visual C# 编程的详细信息，请参阅 [C# 基础知识：零基础开发](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)。  
 
 ## <a name="related-topics"></a>相关主题  
 
 |标题|描述|  
 |-----------|-----------------|  
 |[步骤 1：创建项目并向窗体添加表](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|首先创建项目并添加 `TableLayoutPanel` 控件，以保持控件正确对齐。|  
-|[步骤 2：添加随机对象和图标列表](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|添加 `Random` 对象和 `List` 对象，以创建图标列表。|  
+|[步骤 2：添加 random 对象和图标列表](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|添加 `Random` 对象和 `List` 对象，以创建图标列表。|  
 |[步骤 3：向每个标签分配一个随机图标](../ide/step-3-assign-a-random-icon-to-each-label.md)|将图标随机分配给 `Label` 控件，使每个游戏均不同。|  
-|[步骤 4：向每个标签添加一个 Click 事件处理程序](../ide/step-4-add-a-click-event-handler-to-each-label.md)|添加一个 Click 事件处理程序，该处理程序更改被单击的标签的颜色。|  
+|[步骤 4：向每个标签添加一个 click 事件处理程序](../ide/step-4-add-a-click-event-handler-to-each-label.md)|添加一个 `Click` 事件处理程序，该处理程序更改被单击的标签的颜色。|  
 |[步骤 5：添加标签引用](../ide/step-5-add-label-references.md)|添加引用变量以跟踪哪些标签被单击。|  
 |[步骤 6：添加计时器](../ide/step-6-add-a-timer.md)|向窗体中添加计时器，以记录游戏中逝去的时间。|  
 |[步骤 7：保持对可见](../ide/step-7-keep-pairs-visible.md)|保持图标对可见（如果选择了匹配的对）。|  

@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d642f580413020d62471b8b5f3ea030da4e39a12
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 91c8c931d71855913cdfaca4243711c917e3c8b4
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>在 Visual Studio 中同步你的设置
 
@@ -28,17 +28,17 @@ ms.lasthandoff: 04/26/2018
 
 - 开发设置（必须在首次运行 Visual Studio 时选择一组设置，但是可以随时更改选择。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。）
 
-- “工具”|“选项”页中的以下选项：
+- “工具” > “选项”页中的以下选项：
 
-    - “主题”和菜单栏大小写设置（位于“环境”、“常规”选项页上）
+    - “主题”和菜单栏大小写设置（位于“环境” > “常规”选项页上）
 
-    - “环境”、“字体和颜色”选项页上的所有设置
+    - “环境” > “字体和颜色”选项页上的所有设置
 
-    - 所有键盘快捷方式（位于“环境”、“键盘”选项页上）
+    - 所有键盘快捷方式（位于“环境” > “键盘”选项页上）
 
-    - “环境、选项卡和窗口”选项页上的所有设置
+    - “环境” > “选项卡和窗口”选项页上的所有设置
 
-    - “环境”、“启动”选项页上的所有设置
+    - “环境” > “启动”选项页上的所有设置
 
     - “文本编辑器”选项页上的所有设置
 
@@ -46,11 +46,11 @@ ms.lasthandoff: 04/26/2018
 
 - 用户定义的命令别名。 有关如何定义命令别名的详细信息，请参阅 [Visual Studio 命令别名](../ide/reference/visual-studio-command-aliases.md)。
 
-- “窗口”|“管理窗口布局”页中用户定义的窗口布局
+- “窗口” > “管理窗口布局”页中用户定义的窗口布局
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>关闭特定计算机上的同步设置
 
-默认情况下启用 Visual Studio 的同步设置。 可以通过转到“工具”|“选项”|“环境”|“帐户”页并取消选中复选框，来关闭计算机上的同步设置。  例如，如果决定不同步计算机 A 上的 Visual Studio 设置，那么计算机 A 上的任何设置更改将不会出现在计算机 B 或计算机 C 上。计算机 B 和 C 将继续彼此同步，但不与计算机 A 同步。
+默认情况下启用 Visual Studio 的同步设置。 可以通过转到“工具” > “选项” > “环境” > “帐户”页并取消选中复选框，来关闭计算机上的同步设置。  例如，如果决定不同步计算机 A 上的 Visual Studio 设置，那么计算机 A 上的任何设置更改将不会出现在计算机 B 或计算机 C 上。计算机 B 和 C 将继续彼此同步，但不与计算机 A 同步。
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>在 Visual Studio 系列产品和版本之间同步设置
 
@@ -58,14 +58,15 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="side-by-side-synchronized-settings"></a>并排同步设置
 
-在 Visual Studio 15.3 及更高版本中，已停止在 Visual Studio 2017 的不同并排安装之间共享某些设置（如工具窗口布局），方法是将 `%userprofile%\Documents\Visual Studio 2017\Settings` 中的 `CurrentSettings.vssettings` 文件位置更改为类似于 `%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings` 的特定于安装的文件夹。
+在 Visual Studio 15.3 和更高版本中，已停止在 Visual Studio 2017 的不同并行安装之间共享某些设置（如工具窗口布局），方法是将“%userprofile%\Documents\Visual Studio 2017\Settings”中的“CurrentSettings.vssettings”文件位置更改为类似于“%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings”的特定于安装的文件夹。
 
-注意：要使用新的特定于安装的设置，必须先完成全新安装。 将现有 Visual Studio 2017 安装升级到最新更新时，其会使用现有共享位置。 如果现在已拥有 Visual Studio 2017 的并行安装，并决定升级且希望使用特定于安装的新设置文件位置，请参阅以下步骤：
+> [!NOTE]
+> 要使用新的特定于安装的设置，必须先完成全新安装。 将现有 Visual Studio 2017 安装升级到最新更新时，其会使用现有共享位置。 如果现在已拥有 Visual Studio 2017 的并行安装，并决定升级且希望使用特定于安装的新设置文件位置，请参阅以下步骤：
 
-1. 升级之后，使用“导入\导出”设置向导将所有现有设置导出到 `%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx` 文件夹之外的某个位置。
+1. 升级之后，使用“导入\导出”设置向导将所有现有设置导出到“%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx”文件夹之外的某个位置。
 2. 打开已安装的升级后 Visual Studio 的 VS 2017 开发者命令提示符，并通过它运行 `devenv /resetuserdata`。
 3. 启动 Visual Studio，并从导出的设置文件中导入保存的设置。
 
 ## <a name="see-also"></a>请参阅
 
-- [个性化设置 IDE](../ide/personalizing-the-visual-studio-ide.md)
+[个性化 IDE](../ide/personalizing-the-visual-studio-ide.md)

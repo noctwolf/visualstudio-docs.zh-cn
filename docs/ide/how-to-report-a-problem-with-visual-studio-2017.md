@@ -1,20 +1,22 @@
 ---
-title: 如何报告 Visual Studio 2017 的问题 | Microsoft Docs
+title: 如何报告 Visual Studio 2017 的问题
+description: 了解如何向 Microsoft 报告 Visual Studio 2017 的问题，以便进行诊断并修复它。
 ms.custom: ''
 ms.date: 03/11/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: eacb6ba97f79f2c66444bc79b11c51ef01a50672
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何报告 Visual Studio 2017 的问题
 
@@ -28,7 +30,7 @@ ms.lasthandoff: 04/19/2018
 2. 如果未登录，选择“登录”；它位于工具右侧，如下面的屏幕截图中所示。
 3. 按照屏幕上的说明登录。
 
- ![登录以报告问题](../ide/media/sign-in-new-ux.png "登录以报告问题")  
+ ![登录以报告问题](../ide/media/sign-in-new-ux.png "登录以报告问题")
 
 ## 搜索类似的问题并为其投票 <a name="search_and_vote"></a>
 

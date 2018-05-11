@@ -1,6 +1,6 @@
 ---
-title: 使用 Python - 第 1 步：创建项目
-description: 在 Visual Studio 中使用 Python 的核心教程的第 1 步，不仅概述了整个教程和系统必备，并逐步介绍了新建 Python 项目的整个过程。
+title: 使用 Python 教程 - 第 1 步：创建项目
+description: 在 Visual Studio 中使用 Python 功能的核心教程概述和第 1 步，包括系统必备组件和创建新的 Python 项目。
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5857f06deea3bc4e7c8af481330e6c66162e2f2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>在 Visual Studio 中使用 Python
 
@@ -31,9 +31,7 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
 - [步骤 5：安装程序包和管理 Python 环境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [步骤 6：使用 Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-## <a name="prerequisites"></a>系统必备
-
-- 安装有 Python 工作负载的 Visual Studio 2017。 请参阅[步骤 0](tutorial-working-with-python-in-visual-studio-step-00-installation.md) 获取相关说明。
+[!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
 ## <a name="step-1-create-a-new-python-project"></a>步骤 1：创建新的 Python 项目
 
@@ -69,7 +67,7 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
 
     右键单击解决方案资源管理器中的任意节点或项均可访问适用命令菜单。 例如，“重命名”命令可用于更改任何节点或项（包括项目和解决方案）的名称。
 
-## <a name="next-steps"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 > [!div class="nextstepaction"]
 > [编写和运行代码](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)

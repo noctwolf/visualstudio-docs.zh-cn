@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4e8d28bb96fa17a82d758f5708fd592128296e7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e28d306ede93cc4552e085e07e5ac5e977158386
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>发布到 Azure 应用服务
 
@@ -78,7 +78,7 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 
 1. 在 Visual Studio 的“解决方案资源管理器”中，右键单击项目，选择*“添加”>“新项...”。在随即出现的对话框中，选择“Azure web.config (Fast CGI)”模板并选择“确定”。 这会在项目根目录中创建 `web.config` 文件。
 
-1. 修改 `web.config` 中的 `PythonHandler` 条目，使路径与服务器上安装的 Python 相匹配。 例如，对于 Python 3.6.1 x64，该条目应如下所示：
+1. 修改 `web.config` 中的 `PythonHandler` 条目，以便该路径与服务器上的 Python 安装相匹配（有关确切的详细信息，请参阅 [IIS 配置参考](https://www.iis.net/configreference) (iis.net)）。 例如，对于 Python 3.6.1 x64，该条目应如下所示：
 
     ```xml
     <system.webServer>
@@ -106,7 +106,7 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**：对于 Django 应用，需要对 `web.config` 进行两项更改。 首先，将 `WSGI_HANDLER` 值更改为 `django.core.wsgi.get_wsgi_application()`（该对象位于 `wsgi.py` 文件中）：
+    - Django：对于 Django 项目，需要对 `web.config` 进行两项更改。 首先，将 `WSGI_HANDLER` 值更改为 `django.core.wsgi.get_wsgi_application()`（该对象位于 `wsgi.py` 文件中）：
 
         ```xml
         <!-- Django apps only -->
@@ -119,7 +119,7 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **仅限 Django 应用**：在与项目名称匹配的文件夹中，打开 `settings.py`，按下面所示将站点 URL 域添加到 `ALLOWED_HOSTS`，当然，要将“vspython-test-02.azurewebsites.net”替换为自己的 URL：
+1. 仅限 Django 应用：在 Django 项目的 `settings.py` 文件中，如下面所示将网站 URL 域添加到 `ALLOWED_HOSTS`，当然，要将“vspython-test-02.azurewebsites.net”替换为自己的 URL：
 
     ```python
     # Change the URL to your specific site
@@ -128,9 +128,13 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 
     未能将 URL 添加到该阵列会导致出现错误“DisallowedHost at / Invalid HTTP_HOST 标头:‘\<站点 URL\>’。 可能需要将‘\<站点 URL\>’添加到 ALLOWED_HOSTS。”
 
+    请注意，当数组为空时，Django 会自动允许“localhost”，但添加生产 URL 会删除这些功能。 因此，可能需要保留单独的 `settings.py` 开发和生产副本，或者使用环境变量来控制运行时值。
+
 1. 在“解决方案资源管理器”中，展开与项目同名的文件夹，右键单击 `static` 文件夹，选择“添加”>“新项...”，选择“Azure 静态文件 web.config”模板，然后选择“确定”。 此操作会在 `static` 文件夹中创建另一个 `web.config`，以禁止 Python 处理该文件夹。 此配置将静态文件请求发送到默认 Web 服务器，而不是使用 Python 应用程序。
 
 1. 保存项目，然后在 Visual Studio 的“解决方案资源管理器”中，右键单击项目并选择“发布”。
+
+    ![在项目的上下文菜单上发布命令](media/template-web-publish-command.png)
 
 1. 在随即出现的“发布”选项卡中，选择发布目标：
 
@@ -166,8 +170,8 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 
     e. 安装新程序包后，尝试重新启动 App Service。 更改 `web.config` 时不必重新启动，因为一旦 `web.config` 更改，App Service 就会自动重新启动。
 
-    > [!Tip] 
-    > 如果对应用的 `requirements.txt` 文件进行任何更改，请确保再次使用 Kudu 控制台安装该文件现在列出的所有程序包。 
+    > [!Tip]
+    > 如果对应用的 `requirements.txt` 文件进行任何更改，请确保再次使用 Kudu 控制台安装该文件现在列出的所有程序包。
 
 1. 完全配置服务器环境后，刷新浏览器中的页面，应该会显示 Web 应用。
 
@@ -175,7 +179,7 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>发布到 App Service - Visual Studio 2015
 
-> [!Note] 
+> [!Note]
 > 在 [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)（Visual Studio Python 教程：生成网站，youtube.com，3 分 10 秒）上可找到此过程的简短视频。
 
 1. 在“解决方案资源管理器”中，右键单击项目，选择“发布”。
@@ -195,7 +199,7 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 
 1. 根据需要选择“下一步 >”，查看其他设置。 如果计划[在 Azure 上远程调试 Python 代码](debugging-remote-python-code-on-azure.md)，必须将“配置”设置为“调试”
 
-1. 选择“发布”。 应用程序部署到 Azure 后，会在该站点上打开默认浏览器。 
+1. 选择“发布”。 应用程序部署到 Azure 后，会在该站点上打开默认浏览器。
 
 在此过程中，Visual Studio 还执行以下步骤：
 

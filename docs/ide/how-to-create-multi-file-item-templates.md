@@ -1,9 +1,8 @@
 ---
-title: 创建 Visual Studio 的多文件项模板 | Microsoft Docs
-ms.custom: ''
+title: 创建 Visual Studio 的多文件项模板
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
@@ -12,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc494f7fa3134984ccb2330e835332fb3e711c19
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ba36e666daf7940971dff587aa483d62f97b6a9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：创建多文件项模板
 
@@ -96,7 +95,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>请参阅
 
-[创建项目和项模板](../ide/creating-project-and-item-templates.md)  
-[如何：创建项模板](../ide/how-to-create-item-templates.md)  
-[模板参数](../ide/template-parameters.md)  
-[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)
+- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+- [如何：创建项模板](../ide/how-to-create-item-templates.md)
+- [模板参数](../ide/template-parameters.md)
+- [如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)
