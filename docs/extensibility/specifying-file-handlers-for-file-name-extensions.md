@@ -49,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.extension|产品名称。 extension.versionMajor.versionMinor|  
   
- 你可以注册不同应用程序能够通过将已进行版本管理 Progid 作为值添加到 hkey_classes_root。 打开特定的文件扩展名\\*\<扩展 >*\OpenWithProgids 密钥。 此注册表项包含与文件扩展名关联的备用 Progid 的列表。 与列出的 Progid 关联的应用程序出现在 **打开 * * * 产品名称*子菜单。 如果同一应用程序中同时指定`OpenWithList`和`OpenWithProgids`密钥，操作系统将合并重复项。  
+ 你可以注册不同应用程序能够通过将已进行版本管理 Progid 作为值添加到 hkey_classes_root。 打开特定的文件扩展名\\*\<扩展 >* \OpenWithProgids 密钥。 此注册表项包含与文件扩展名关联的备用 Progid 的列表。 与列出的 Progid 关联的应用程序出现在 **打开 * * * 产品名称*子菜单。 如果同一应用程序中同时指定`OpenWithList`和`OpenWithProgids`密钥，操作系统将合并重复项。  
   
 > [!NOTE]
 >  `OpenWithProgids` Windows XP 中仅支持密钥。 因为其他操作系统忽略此密钥，请不要使用它作为唯一的注册文件处理程序。 使用此密钥来提供更好的用户体验在 Windows XP。  

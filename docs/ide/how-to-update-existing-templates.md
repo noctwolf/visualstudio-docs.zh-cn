@@ -1,9 +1,8 @@
 ---
-title: 在 Visual Studio 中更新现有项目和项模板 | Microsoft Docs
-ms.custom: ''
+title: 在 Visual Studio 中更新现有项目和项模板
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
@@ -13,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9465c098144f14db496bc1dbc382d6a30c8882cb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5cf764f76d72b17128c46f2b7ec16ffcf4153cf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新现有模板
 
@@ -69,8 +68,8 @@ Visual Studio 提供了“导出模板向导”，该向导可用于更新现有
 
 ## <a name="see-also"></a>请参阅
 
-[自定义模板](../ide/customizing-project-and-item-templates.md)  
-[创建项目和项模板](../ide/creating-project-and-item-templates.md)  
-[Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)  
-[模板参数](../ide/template-parameters.md)  
-[如何：创建初学者工具包](../ide/how-to-create-starter-kits.md)
+- [自定义模板](../ide/customizing-project-and-item-templates.md)
+- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+- [模板参数](../ide/template-parameters.md)
+- [如何：创建初学者工具包](../ide/how-to-create-starter-kits.md)

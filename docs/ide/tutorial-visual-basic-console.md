@@ -13,15 +13,15 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-visual-basic-in-visual-studio"></a>Visual Studio 中的 Visual Basic 入门
+# <a name="get-started-with-visual-basic-in-visual-studio"></a>Visual Studio 中的 Visual Basic 入门
 
-在本 Visual Basic (VB) 教程中，将使用 Visual Studio 创建和运行几个不同的控制台应用，并在执行这些操作时研究 Visual Studio [集成开发环境 (IDE)](visual-studio-ide.md) 的某些功能。
+在本 Visual Basic (VB) 教程中，将使用 Visual Studio 创建和运行几个不同的控制台应用，并在执行这些操作时研究 [Visual Studio 集成开发环境 (IDE)](visual-studio-ide.md) 的某些功能。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
 
@@ -55,7 +55,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 
 1. 打开 Visual Studio 2017。
 
-2. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。
+2. 在顶部菜单栏，依次选择“文件” > “新建” > “项目”。
 
 3. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 随后将文件命名为 HelloWorld。  
 
@@ -74,8 +74,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
    ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>方式 2：使用“工具”菜单栏
-
-1. 取消“新建项目”对话框，然后在顶部菜单栏中选择“工具” > “获取工具和功能...”。
+1. 取消“新建项目”对话框，再依次选择顶部菜单栏中的“工具” > “获取工具和功能”。
 
 2. Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”。   
 
@@ -107,8 +106,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 5. 按任意键关闭控制台窗口。
 
 ## <a name="create-a-calculate-this-application"></a>创建“Calculate This”应用程序
-
-1. 打开 Visual Studio 2017，然后在顶部菜单栏中，选择“文件” > “新建” > “项目...”。
+1. 打开 Visual Studio 2017，然后在顶部菜单栏中，选择“文件” > “新建” > “项目”。
 
 2. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 然后将文件命名为 CalculateThis。  
 

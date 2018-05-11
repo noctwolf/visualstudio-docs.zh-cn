@@ -1,6 +1,6 @@
 ---
-title: 使用 Python - 第 4 步：调试
-description: 在 Visual Studio 中使用 Python 的核心教程的第 4 步，介绍了如何在调试器中运行 Python 代码。
+title: 使用 Python 教程 - 第 4 步：调试
+description: 在 Visual Studio 中使用 Python 功能的核心教程的第 4 步，介绍了如何在调试器中运行 Python 代码。
 ms.date: 03/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c3241adb4afdc18a8ca9a6d4c75f0ee8c80be7b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>步骤 4：在调试器中运行代码
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 04/19/2018
 > [!Tip]
 > 在某些情况下，比如无法启动 Python 解释器自身，输出窗口可能短暂出现后就自动关闭，使用户没有机会查看任何错误消息。 如果出现这种情况，请在解决方案资源管理器中右键单击项目，选择“属性”，选择“调试”选项卡，然后将 `-i` 添加到“解释器参数”字段。 此参数会使解释器在程序完成后进入交互模式，从而使窗口保持打开状态，直到按 Ctrl+Z、Enter 退出为止。
 
-## <a name="next-steps"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 > [!div class="nextstepaction"]
 > [在 Python 环境中安装程序包](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)

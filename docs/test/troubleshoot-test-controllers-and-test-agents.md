@@ -1,7 +1,7 @@
 ---
-title: 在 Visual Studio 中对测试控制器和测试代理进行故障排除 | Microsoft Docs
+title: 在 Visual Studio 中对测试控制器和测试代理进行故障排除
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -11,12 +11,13 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>负载测试中测试控制器和测试代理的故障排除策略
 
@@ -27,7 +28,8 @@ ms.lasthandoff: 04/16/2018
  运行负载测试时，如果尝试连接到测试代理计算机并收集性能计数器，则可能会收到错误。 远程注册表服务是负责为远程计算机提供性能计数器数据的服务。 远程注册表服务在某些操作系统上不会自动启动。 若要解决此问题，请手动启动远程注册表服务。
 
 > [!NOTE]
->  可以在“控制面板”访问远程注册表服务。 选择“管理工具”，然后选择“服务”。
+> 可以在“控制面板”访问远程注册表服务。 选择“管理工具”，然后选择“服务”。
+
 
  导致此问题的另一个原因是没有足够的读取性能计数器权限。 对于本地测试运行，运行测试的用户的帐户必须是 Power Users 组（或更高）或 Performance Monitor Users 组的成员。 对于远程测试运行，配置控制器运行时所用的帐户必须是 Power Users 组（或更高）或 Performance Monitor Users 组的成员。
 
@@ -87,7 +89,8 @@ ms.lasthandoff: 04/16/2018
  在包含多个网络适配器的计算机上安装测试控制器可引起此错误。
 
 > [!NOTE]
->  成功安装测试代理还是可能的，并且在尝试运行测试之前不会出现此问题。
+> 成功安装测试代理还是可能的，并且在尝试运行测试之前不会出现此问题。
+
 
  若要修复此错误，必须将测试控制器绑定到其中一个网络适配器。 必须对测试控制器设置 `BindTo` 属性，然后将测试代理改为通过 IP 地址（而不是通过名称）来引用该测试控制器。 下面的过程中提供了步骤。
 

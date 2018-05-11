@@ -9,26 +9,24 @@ description: 了解管理员如何编辑订阅分配。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9ea5f6bc562ce520be08728facfb6099df95ca4c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>编辑 Visual Studio 订阅分配
 
-作为订阅管理员，你可以更改分配给组织内个人的订阅。  本文讨论可以进行更改的类型并提供必要的步骤。 
+作为订阅管理员，可以更改分配给组织内个人的订阅。  本文讨论可以进行更改的类型并提供必要的步骤。 
 
 ## <a name="making-changes-to-subscriber-information"></a>对订阅者的信息进行更改
 可以编辑订阅者的信息来更正错误或更新信息。 
-> [!NOTE]
-> 编辑订阅者的电子邮件地址将导致任何现有权益被重置。
 
 若要对订阅者进行编辑，请在鼠标悬停在订阅者的电子邮件地址旁时，选择出现的省略号 (…)。 此时将显示下拉列表。  选择“编辑”，以修改订阅者的详细信息。 也可双击网格中订阅者的行来打开编辑窗口。
 
    ![选择要对其进行编辑的订阅者](_img\edit-license\select-subscriber.png)
 
-可以更新订阅者的名字、姓氏、国籍、语言和下载。 编辑订阅者的信息，然后单击“保存”。
+可以更新订阅者的名字、姓氏、国家、语言和下载。 编辑订阅者的信息，然后单击“保存”。
 
    ![编辑订阅者详细信息](_img\edit-license\edit-subscriber.png)
 

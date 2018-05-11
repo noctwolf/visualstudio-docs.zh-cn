@@ -1,9 +1,8 @@
 ---
-title: Help Content Manager 重写 | Microsoft Docs
-ms.custom: ''
+title: Help Content Manager 重写
 ms.date: 11/01/2017
-ms.technology:
-- vs-help-viewer
+ms.prod: visual-studio-dev15
+ms.technology: vs-help-viewer
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
@@ -11,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a943724d10241b5f0d7abb236964be51c38b79c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0610178a6249d262169abbe32f3f6a93cdd0e935
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 重写
+
 可以更改 Visual Studio IDE 中的 Help Viewer 和帮助相关功能的默认行为。 可通过创建 [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) 文件来设置各种注册表项值，从而指定某些选项。 其他选项则直接在注册表中设置。
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>如何使用 .pkgdef 文件控制 Help Viewer 行为
@@ -31,8 +31,9 @@ ms.lasthandoff: 04/16/2018
 4. 在开发人员命令提示符中运行 `devenv /updateconfiguration`。
 
 ### <a name="registry-key-values"></a>注册表项值
-|注册表项值|类型|数据|描述|  
-|------------------|----|----|-----------|  
+
+|注册表项值|类型|数据|描述|
+|------------------|----|----|-----------|
 |NewContentAndUpdateService|字符串|\<服务终结点的 http URL\>|定义唯一的服务终结点|
 |UseOnlineHelp|dword|`0` 指定本地帮助，`1` 指定联机帮助|定义联机或脱机帮助（默认）|
 |OnlineBaseUrl|字符串|\<服务终结点的 http URL\>|定义唯一的 F1 终结点|
@@ -41,6 +42,7 @@ ms.lasthandoff: 04/16/2018
 |DisableFirstRunHelpSelection|dword|`0` 启用或 `1` 禁用在 Visual Studio 首次启动时配置的帮助功能|禁用首次启动 Visual Studio 时的内容安装|
 
 ### <a name="example-pkgdef-file-contents"></a>示例 .pkgdef 文件内容
+
 ```
 [$RootKey$\Help]
 “NewContentAndUpdateService”=”https://some.service.endpoint”
@@ -51,16 +53,18 @@ ms.lasthandoff: 04/16/2018
 “DisableFirstRunHelpSelection”=dword:00000001
 ```
 
-## <a name="using-registry-editor-to-change-help-viewer-behavior"></a>使用注册表编辑器更改 Help Viewer 行为
-可通过在注册表编辑器中设置注册表项值，控制以下两种行为。  
-  
-|任务|注册表项|“值”|数据|  
+## <a name="use-registry-editor-to-change-help-viewer-behavior"></a>使用注册表编辑器更改帮助查看器的行为
+
+可通过在注册表编辑器中设置注册表项值，控制以下两种行为。
+
+|任务|注册表项|“值”|数据|
 |----------|-----|------|----|
 |替代 BITS 作业优先级|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node（64 位计算机上）\Microsoft\Help\v2.3|BITSPriority|**foreground**、**high**、**normal** 或 **low**|
 |指向网络共享上的本地内容存储区|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|“*ContentStoreNetworkShare*”|
-  
+
 ## <a name="see-also"></a>请参阅
-[Help Viewer 管理员指南](../ide/help-viewer-administrator-guide.md)  
-[Help Content Manager 的命令行参数](../ide/command-line-arguments-for-the-help-content-manager.md)  
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
-[通过使用 .pkgdef 文件修改独立 shell](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+
+- [Help Viewer 管理员指南](../ide/help-viewer-administrator-guide.md)
+- [Help Content Manager 的命令行参数](../ide/command-line-arguments-for-the-help-content-manager.md)
+- [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+- [通过使用 .pkgdef 文件修改独立 shell](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

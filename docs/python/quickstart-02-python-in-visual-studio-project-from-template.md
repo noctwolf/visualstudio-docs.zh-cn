@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39e4b718ab7563e086f6ca2e85c31bd53b3c371c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e352f8a0fffb3972f326edc767b799295b2c802e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入门：从 Visual Studio 中的模板创建 Python 项目
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/19/2018
 
 **答**：在安装了 Python 工作负载的情况下，Visual Studio 提供多种项目模板，其中包括用于 [Flask、Bottle 和 Django Web 框架](../python/python-web-application-project-templates.md)、Azure 云服务以及不同机器学习方案的模板，甚至还有一个模板用于根据带 Python 应用的现有文件夹结构创建项目。 要访问模板，可选择“Python”语言节点及其子节点，再依次单击“文件”、“新建”和“项目...”。
 
-Visual Studio 还提供各种文件或项模板，用于快速创建 Python 类、Python 包、Python 单元测试、web.config 文件等内容。 如果打开了 Python 项目，可依次单击“项目”和“添加新项...”菜单命令来访问项模板。
+Visual Studio 还提供各种文件或项模板，用于快速创建 Python 类、Python 包、Python 单元测试、`web.config` 文件等内容。 如果打开了 Python 项目，可依次单击“项目”和“添加新项”菜单命令来访问项模板。 请参阅[项模板](python-item-templates.md)引用。
 
 开始项目或创建文件时，使用模板可节省大量时间，这还是一个了解不同应用类型和代码结构的好方法。 最好先花几分钟基于不同模板创建项目和项，熟悉模板的功能。
 

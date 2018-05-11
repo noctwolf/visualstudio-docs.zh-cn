@@ -11,15 +11,15 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5fc6004c17614620f4ba75fb13258a685536c28b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 11a624ec6582e5e07e51de6d4ab29b84dc53d4a1
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>在 Azure 上远程调试 Python 代码
 
-[Visual Studio 中的 Python 支持](installing-python-support-in-visual-studio.md)包括远程调试在 Azure 应用服务上运行的 Python 代码的功能。 与简单的远程调试不同，此方案中的目标计算机不能直接通过 TCP 访问，因此 Visual Studio 提供一个通过 HTTP 公开调试器协议的代理。 使用 Web 模板创建的项目在生成的 `web.debug.config` 文件中自动配置此代理。 如 [发布到 Azure 应用服务](python-web-application-project-templates.md#publishing-to-azure-app-service)中所述发布项目的调试配置时，同时启用了远程调试。
+[Visual Studio 中的 Python 支持](installing-python-support-in-visual-studio.md)包括远程调试在 Azure 应用服务上运行的 Python 代码的功能。 与简单的远程调试不同，此方案中的目标计算机不能直接通过 TCP 访问，因此 Visual Studio 提供一个通过 HTTP 公开调试器协议的代理。 使用 Web 模板创建的项目在生成的 `web.debug.config` 文件中自动配置此代理。 如“[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md”中所述发布项目的调试配置时，同时启用了远程调试。
 
 由于 Azure 远程调试使用 Web 套接字，因此必须通过 [Azure 门户](https://portal.azure.com)为应用服务启用套接字，方法是转到“设置”>“应用程序设置”并将“常规设置”>“Web 套接字”切换为“打开”，然后选择“保存”应用更改。 （请注意，“调试”设置不适用于调试 Python。）
 

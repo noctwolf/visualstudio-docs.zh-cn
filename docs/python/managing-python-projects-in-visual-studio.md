@@ -1,6 +1,6 @@
 ---
 title: 管理 Python 应用程序项目
-description: 介绍了 Visual Studio 中项目的用途，并展示了如何创建和管理 Python 代码项目，并概述了可用于 Python 的不同项目模板。
+description: Visual Studio 中项目的用途、如何创建和管理 Python 代码项目以及可用于 Python 的不同项目模板。
 ms.date: 03/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7dcefe4a9d303c6d52fa88f478dc59c9c2cafe3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="python-projects"></a>Python 项目
+# <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 项目
 
 通常仅使用文件夹和文件定义 Python 应用程序，但如果程序变大，并且可能会涉及自动生成文件、适用于 Web 应用程序的 JavaScript 等，这种结构就会变得复杂。 Visual Studio 项目帮助管理复杂性问题。 此项目（`.pyproj` 文件）标识与你的项目关联的所有源和内容文件、包含每个文件的生成信息、维护与源代码管理系统集成的信息，并且帮助将应用程序整理为逻辑组件。
 
@@ -41,9 +41,9 @@ Visual Studio 提供多种 Python 项目模板用于快速设置多个应用程�
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>添加文件、分配启动文件和设置环境
 
-开发应用程序时，通常需要将不同类型的新文件添加到项目。 通过以下两种方式可以添加此类文件：右键单击项目并选择“添加”>“现有项...”，然后浏览到要添加的文件；或选择“添加”>“新建项...”，随后将打开包含各种项模板的对话框。 模板包括空的 python 文件、python 类、单元测试以及与 Web 应用程序相关的各种文件。 可以使用测试项目研究这些选项以了解所用 Visual Studio 版本中可用的选项。
+开发应用程序时，通常需要将不同类型的新文件添加到项目。 通过以下两种方式可以添加此类文件：右键单击项目并选择“添加” > “现有项”，然后浏览到要添加的文件；或选择“添加” > “新建项”，随后将打开包含各种项模板的对话框。 如[项模板](python-item-templates.md)引用所述，选项包括空的 python 文件、python 类、单元测试以及与 Web 应用程序相关的各种文件。 可以使用测试项目研究这些选项以了解所用 Visual Studio 版本中可用的选项。
 
-每个 Python 项目有一个分配的启动文件，解决方案资源管理器中以粗体显示该文件。 开始调试（F5 或“调试”>“开始调试”）时，或在交互窗口中运行项目（Shift+Alt+F5 或“调试”>“在 Python 交互中执行项目”）时，启动文件便是要运行的文件。 若要更改，请右键单击新文件，然后选择“设为启动文件”。
+每个 Python 项目有一个分配的启动文件，解决方案资源管理器中以粗体显示该文件。 开始调试（F5 或“调试” > “开始调试”）时，或在交互窗口中运行项目（Shift+Alt+F5 或“调试” > “在 Python 交互中执行项目”）时，启动文件便是要运行的文件。 若要更改，请右键单击新文件，然后选择“设为启动文件”。
 
 > [!Tip]
 > 如果从项目中删除选定的启动文件且不选定新文件，则当你尝试运行该项目时，Visual Studio 将不知道要启动哪个 Python 文件。 在这种情况下，Visual Studio 2017 版本 15.6 和更高版本将显示错误，早期版本将打开一个运行 Python 解释器的输出窗口，或者显示输出窗口后几乎立即消失。 如果遇到以上任一行为，请检查你是否拥有分配的启动文件。
@@ -58,7 +58,7 @@ Visual Studio 提供多种 Python 项目模板用于快速设置多个应用程�
 
 ## <a name="project-templates"></a>项目模板
 
-Visual Studio 提供多种方法用于从零开始，或根据现有代码设置 Python 项目。 若要使用模板，请选择“文件”>“新建”>“项目...”菜单命令，或右键单击解决方案资源管理器中的解决方案，选择“添加”>“新建项目...”，这两种方法都会打开下方的“新建项目”对话框。 若要查看特定于 Python 的模板，请搜索“Python”或选择“已安装”>“Python”节点：
+Visual Studio 提供多种方法用于从零开始，或根据现有代码设置 Python 项目。 若要使用模板，请选择“文件” > “新建” > “项目”菜单命令，或右键单击解决方案资源管理器中的解决方案，选择“添加” > “新建项目”，这两种方法都会打开下方的“新建项目”对话框。 若要查看特定于 Python 的模板，请搜索“Python”或选择“已安装” > “Python”节点：
 
 ![Python 的新建项目对话框模板](media/projects-new-project-dialog.png)
 
@@ -69,7 +69,7 @@ Visual Studio 提供多种方法用于从零开始，或根据现有代码设置
 | [根据现有 Python 代码](#creating-a-project-from-existing-files) | 从文件夹结构中的现有 Python 代码创建 Visual Studio 项目。  |
 | Python 应用程序 | 新 Python 应用程序的基本项目结构具有一个空的源文件。 默认情况下，项目在默认全局环境的控制台解释器中运行，通过[分配其他环境](selecting-a-python-environment-for-a-project.md)可以更改环境。 |
 | [Azure 云服务](python-azure-cloud-service-project-template.md) | 使用 Python 编写的 Azure 云服务项目。 |
-| [Web 项目](python-web-application-project-templates.md) | 基于各种框架（包括 Bottle、Django、Flask、和 Flask/Jade）的 Web 服务器项目。 |
+| [Web 项目](python-web-application-project-templates.md) | 基于各种框架（包括 Bottle、Django 和 Flask）的 Web 应用项目。 |
 | IronPython 应用程序 | 与 Python 应用程序模板类似，但使用 IronPython 时，默认启用 .NET 互操作并通过 .NET 语言进行混合模式调试。 |
 | IronPython WPF 应用程序 | 将 IronPython 和 Windows Presentation Foundation XAML 文件配合使用以获得应用程序的用户界面的项目结构。 Visual Studio 提供 XAML UI 设计器，在 Python 中可以编写代码隐藏，以及运行应用程序时不显示控制台。 |
 | IronPython Silverlight 网页 | 在使用 Silverlight 的浏览器中运行的 IronPython 项目。 应用程序的 Python 代码作为脚本包含在网页中。 样本脚本标记会拉取一些 JavaScript 代码，这些代码会初始化在 Silverlight 中运行的 IronPython，Python 代码以此可与 DOM 交互。 |
@@ -80,7 +80,7 @@ Visual Studio 提供多种方法用于从零开始，或根据现有代码设置
 > [!Note]
 > 由于 Python 是解释型语言，因此 Visual Studio 中的 Python 项目不会生成类似其他编译型语言项目（例如 C#）的独立可执行文件。 有关详细信息，请参阅[问题和解答](overview-of-python-tools-for-visual-studio.md#questions-and-answers)。
 
-<a name="create-project-from-existing-files"</a>
+<a name="create-project-from-existing-files"></a>
 
 ### <a name="creating-a-project-from-existing-files"></a>根据现有文件创建项目
 
