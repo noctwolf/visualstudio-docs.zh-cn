@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cd6808ac38a67146e53438e5b8f6dc0e07fd0bc5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>创建供其他人部署的 ClickOnce 应用程序
 并非所有开发人员正在使用 ClickOnce 部署都计划部署应用程序本身。 许多它们只需将其应用程序打包使用 ClickOnce，然后将文件提交给客户，例如大型公司。 客户成为一个负责承载其网络上的应用程序。 本主题讨论一些.NET Framework 3.5 版之前的版本中的这种部署中固有的问题。 然后，它将介绍通过使用.NET Framework 3.5 中的新的"使用信任的清单"功能提供一个新的解决方案。 最后，则可以确定创建仍使用较旧版本.NET Framework 的客户的 ClickOnce 部署的建议策略。  
@@ -57,7 +57,7 @@ ms.lasthandoff: 04/19/2018
   
  对于部署清单中使用自签名的证书具有多项优点。 通过消除客户获取或创建自己的验证码证书，需`<useManifestForTrust>`简化了对于客户，同时允许开发人员来维护自己的品牌标识应用程序的部署。 结果是一套更安全且具有唯一的应用程序标识的已签名的部署。 这将消除可能来自同一应用程序部署到多个客户的潜在冲突。  
   
- 有关如何创建使用 ClickOnce 部署的分步信息`<useManifestForTrust>`启用，请参阅[演练： 手动部署 ClickOnce 应用程序，不会不需要重新签名并且该保留的品牌信息](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ 有关如何创建使用 ClickOnce 部署的分步信息`<useManifestForTrust>`启用，请参阅[演练： 手动部署 ClickOnce 应用程序，不会不需要重新签名并且该保留的品牌信息](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>如何应用程序清单信任在运行时的工作原理  
  若要获取更好地理解使用信任的应用程序清单的工作原理在运行时，请考虑下面的示例。 由 Microsoft 创建面向.NET Framework 3.5 ClickOnce 应用程序。 应用程序清单使用`<useManifestForTrust>`元素和由 Microsoft 签名。 Adventure Works 使用自签名的证书进行签名的部署清单。 Adventure 的 Works 客户端配置为信任经过 Microsoft 签名的任何应用程序。  
@@ -99,6 +99,6 @@ ms.lasthandoff: 04/19/2018
  此方法的缺点是，它需要客户若要安装.NET Framework SDK 工具中，并在开发人员或系统管理员是水平地使用它们。 有些客户可能要求解决方案需要很少或没有技术其一部分工作。  
   
 ## <a name="see-also"></a>请参阅  
- [为测试部署 ClickOnce 应用程序服务器和生产服务器无需重新签名](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
+ [为测试部署 ClickOnce 应用程序服务器和生产服务器无需重新签名](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)   
  [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [演练：手动部署不需要重新签名并且保留署名信息的 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+ [演练：手动部署不需要重新签名并且保留署名信息的 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

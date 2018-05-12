@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fcc9f6ec4143a757139a9e013f1a1f4dbe666e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>发布到 Azure App Service 应用程序导入 Visual Studio 中发布设置
 
 你可以使用**发布**工具导入发布设置，然后部署你的应用程序。 在本文中，我们将使用发布设置对 Azure App Service，但你可以使用类似的步骤来导入发布设置从[IIS](../deployment/tutorial-import-publish-settings-iis.md)。 在某些情况下，使用的发布设置配置文件可以是比手动配置部署到 Visual Studio 的每个安装的服务的速度更快。
 
-这些步骤适用于 Visual Studio 中的 ASP.NET、 ASP.NET Core 和.NET Core 应用。 步骤与 Visual Studio 2017 版本 15.6 相对应。
+这些步骤适用于 Visual Studio 中的 ASP.NET、 ASP.NET Core 和.NET Core 应用。 你还可以导入的发布设置[Python](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)应用。 步骤与 Visual Studio 2017 版本 15.6 相对应。
 
 在本教程中，你将：
 
@@ -30,10 +30,10 @@ ms.lasthandoff: 05/10/2018
 > * 将发布设置文件导入 Visual Studio
 > * 将应用部署到 Azure App Service
 
-发布设置文件 (*.publishsettings) 不同于发布配置文件 (*.pubxml) 在 Visual Studio 中创建。 发布设置文件创建的 Azure App Service，然后可以导入 Visual Studio。
+发布设置文件 (*\*.publishsettings*) 不同于发布配置文件 (*\*.pubxml*) 在 Visual Studio 中创建。 发布设置文件创建的 Azure App Service，然后可以导入 Visual Studio。
 
 > [!NOTE]
-> 如果你只需复制 Visual Studio 发布配置文件 (\*.pubxml 文件) 从 Visual Studio 的到另一个安装，您可以找到的发布配置文件，  *\<profilename\>.pubxml*，在 *\\< projectname\>\Properties\PublishProfiles*用于托管的项目类型的文件夹。 对于网站，查看 *\App_Data*文件夹。 发布配置文件是 MSBuild XML 文件。
+> 如果你只需复制 Visual Studio 发布配置文件 (*\*.pubxml*文件) 从 Visual Studio 的到另一个安装，您可以找到的发布配置文件，  *\<profilename\>.pubxml*中 *\\< projectname\>\Properties\PublishProfiles*用于托管的项目类型的文件夹。 对于网站，查看 *\App_Data*文件夹。 发布配置文件是 MSBuild XML 文件。
 
 ## <a name="prerequisites"></a>系统必备
 

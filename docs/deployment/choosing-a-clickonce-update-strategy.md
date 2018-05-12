@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0013b9f7ae004b709a1651af0e32e36dd45f909c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 08025ed5d5e3806e04501c46a96e1df5f85b31fb
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>选择 ClickOnce 更新策略
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以提供应用程序自动更新。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序会定期读取其部署清单文件，以查看是否有可用的应用程序更新。 如果有，则会下载并运行应用程序的新版本。 为提高效率，仅下载那些已更改的文件。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/19/2018
 >  应用程序更新需要网络连接。 如果不存在网络连接，则应用程序会在不检查更新的情况下运行，而无论选择的是何种更新策略。  
   
 > [!NOTE]
->  在 .NET Framework 2.0 和 .NET Framework 3.0 中，任何时候应用程序检查更新（无论在启动应用程序之前、之后，还是使用 <xref:System.Deployment.Application> API 时），都必须在部署清单中设置 `deploymentProvider`。 `deploymentProvider`元素对应到 Visual Studio 中**更新位置**字段上**更新**对话框**发布**选项卡。在 .NET Framework 3.5 中，此规则为宽松规则。 有关详细信息，请参阅[部署 ClickOnce 应用程序对于测试和生产服务器，而无需 Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)。  
+>  在 .NET Framework 2.0 和 .NET Framework 3.0 中，任何时候应用程序检查更新（无论在启动应用程序之前、之后，还是使用 <xref:System.Deployment.Application> API 时），都必须在部署清单中设置 `deploymentProvider`。 `deploymentProvider`元素对应到 Visual Studio 中**更新位置**字段上**更新**对话框**发布**选项卡。在 .NET Framework 3.5 中，此规则为宽松规则。 有关详细信息，请参阅[部署 ClickOnce 应用程序对于测试和生产服务器，而无需 Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。  
   
 ## <a name="checking-for-updates-after-application-startup"></a>在应用程序启动后检查是否有更新  
  通过使用此策略，应用程序会在运行期间尝试在后台查找并读取部署清单文件。 如果有某个更新可用，则当用户下一次运行应用程序时，会提示用户下载并安装该更新。  

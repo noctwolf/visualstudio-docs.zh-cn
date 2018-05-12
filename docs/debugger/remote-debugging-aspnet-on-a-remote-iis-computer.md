@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b0fa3f01d90e2a27a234cceba7b3821e7c46c9f6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 952b4e4cdff2f5620870cad5903d6e20f61a862e
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 远程 IIS 计算机上的远程调试 ASP.NET 核心
 若要调试的 ASP.NET 应用程序部署到 IIS，安装和在计算机上运行远程工具其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
@@ -71,11 +71,17 @@ ms.lasthandoff: 05/10/2018
 
 3. 重新启动系统 (或执行**net 停止已 /y**跟**net 启动 w3svc**从命令提示符以拾取到系统路径的更改)。
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>（可选）安装 Web 部署 3.6 用于承载 Windows Server 上的服务器
+
+在某些情况下，它可以是速度更快导入发布设置 Visual Studio 中而不是手动配置部署选项。 如果想要导入发布设置而不是在 Visual Studio 中配置的发布配置文件，请参阅[导入发布设置和将部署到 IIS](../deployment/tutorial-import-publish-settings-iis.md)。 否则为在本主题中保留的并且继续阅读。 如果完成导入文章发布设置和应用程序成功部署，然后返回到本主题和上启动部分中[下载远程工具](#BKMK_msvsmon)。
+
 ## <a name="BKMK_install_webdeploy"></a> （可选）安装 Web 部署 Windows Server 上的 3.6
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ## <a name="BKMK_deploy_asp_net"></a> 在 Windows Server 计算机上配置 ASP.NET 网站
+
+如果要导入发布设置，则可以跳过此部分。
 
 1. 打开 Windows 资源管理器并创建一个新的文件夹， **C:\Publish**，稍后将部署 ASP.NET 项目。
 

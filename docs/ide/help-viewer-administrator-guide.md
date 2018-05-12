@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19fde51de5e63a0cde9adebd28ad29fc295c6e9e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bccbd4f1365ea42b3e0331283a5659502038e133
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 管理员指南
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/26/2018
 
 可使用 Help Content Mananger (HlpCtntMgr.exe) 从 Internet 将本地帮助内容部署到客户端计算机。 请使用以下语法：
 
-```
+```cmd
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
 
@@ -137,7 +137,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  创建用于包含帮助内容的部署脚本的 .bat 文件。 由于客户端可能对在推送过程中删除的任何文件具有读取锁定，所以应在推送更新之前关闭客户端。 例如:
 
-    ```
+    ```cmd
     REM - copy pre-ripped content to ProgramData
     Xcopy %~dp0HelpLibrary2 %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2\ /y /e /k /o
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
