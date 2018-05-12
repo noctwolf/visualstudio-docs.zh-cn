@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db8ca68453cff105f2bbefcd384b8afa9efea9d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>发布到 IIS 应用程序导入 Visual Studio 中发布设置
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/10/2018
 > * 将发布设置文件导入 Visual Studio
 > * 将应用程序部署到 IIS
 
-发布设置文件 (\*.publishsettings) 不同于发布配置文件 (\*.pubxml) 在 Visual Studio 中创建。 发布设置文件创建由 IIS 或 Azure App Service 和可手动创建它，然后可以导入 Visual Studio。
+发布设置文件 (*\*.publishsettings*) 不同于发布配置文件 (*\*.pubxml*) 在 Visual Studio 中创建。 发布设置文件创建由 IIS 或 Azure App Service 和可手动创建它，然后可以导入 Visual Studio。
 
 > [!NOTE]
 > 如果你只需复制 Visual Studio 发布配置文件 (\*.pubxml 文件) 从 Visual Studio 的到另一个安装，您可以找到的发布配置文件，  *\<profilename\>.pubxml*，在 *\\< projectname\>\Properties\PublishProfiles*用于托管的项目类型的文件夹。 对于网站，查看 *\App_Data*文件夹。 发布配置文件是 MSBuild XML 文件。
@@ -44,7 +44,7 @@ ms.lasthandoff: 05/10/2018
 
     在 Visual Studio 2017 基于这篇文章中的步骤
 
-* 若要从 IIS 生成的发布设置文件，你必须使用正确配置的 IIS 8.0 Web 服务器角色和任一 ASP.NET 4.5 中运行 Windows Server 2012 的另一台计算机或 ASP.NET 核心安装。 有关 ASP.NET 核心，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 为 ASP.NET 4.5，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
+* 若要从 IIS 生成的发布设置文件，你必须正确配置的 IIS 8.0 Web 服务器角色与运行 Windows Server 2012 的计算机和安装 ASP.NET 4.5 或 ASP.NET Core。 有关 ASP.NET 核心，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 为 ASP.NET 4.5，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>在 Visual Studio 中创建新的 ASP.NET 项目
 
