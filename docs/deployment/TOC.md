@@ -14,6 +14,8 @@
 ### [从命令行生成 ClickOnce 应用程序](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
 ### [将 ASP.NET Core 应用发布到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [导入发布设置并部署到 Azure](tutorial-import-publish-settings-azure.md)
+### [导入发布设置并部署到 IIS](tutorial-import-publish-settings-iis.md)
 ### [使用 Git 将 ASP.NET Core 持续部署到 Azure](/aspnet/core/publishing/azure-continuous-deployment)
 ### [将 ASP.NET 部署到 IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
 ## Native

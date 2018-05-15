@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 44d2e6c20173c075f1a3e5aac4881f12f5b46e1f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -46,7 +46,7 @@ Visual Studio 的“Python 环境”窗口（下方为其扩展后的加宽视�
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>多种多样的编辑、IntelliSense 和代码理解
 
-Visual Studio 具备出色的 Python 编辑器，包括语法着色、跨代码和库的自动补全、代码格式设置、签名帮助、重构、类型提示和 linting（linting 如下所示）。 Visual Studio 还提供一些独一无二的功能，如类视图、转到定义、查找所有引用和代码片段。 与[交互窗口](#interactive-window)直接集成有助于快速开发已保存在文件中的 Python 代码。
+Visual Studio 具备出色的 Python 编辑器，包括语法着色、跨代码和库的自动补全、代码格式设置、签名帮助、重构、linting（如下所示）和类型提示。 Visual Studio 还提供一些独一无二的功能，如类视图、转到定义、查找所有引用和代码片段。 与[交互窗口](#interactive-window)直接集成有助于快速开发已保存在文件中的 Python 代码。
 
 ![Visual Studio 中 Python 代码的代码补全](media/code-editing-completions-simple.png)
 

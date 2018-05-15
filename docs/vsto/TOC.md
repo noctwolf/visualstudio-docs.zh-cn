@@ -381,7 +381,7 @@
 ##### [此计算机上未安装 Microsoft Office](microsoft-office-is-not-installed-on-this-computer.md)
 ##### [用于创建此项目的工作簿包含设计器无法加载的 ActiveX 控件](the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load.md)
 ##### [.ofs 文件中的一个或多个属性对于选定的消息类无效](one-or-more-properties-in-the-dot-ofs-file-are-not-valid-for-the-message-class-selected.md)
-##### [必须显式启用对 Microsoft Office Visual Basic for Applications 项目系统的访问，然后才能创建或打开 Visual Studio Tools for the Microsoft Office System 项目](you-must-explicitly-enable-access-to-the-microsoft-office-visual-basic-for-applications-project-system-before-you-can-create-or-open-a-----for-the-microsoft-office-system-project.md)
+##### [启用对 VBA 的访问权限，创建或打开 Microsoft Office 系统项目的 Visual Studio Tools](enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-office-system-project.md)
 ### [托管参考（Visual Studio 中的 Office 开发）](managed-reference-office-development-in-visual-studio.md)
 ### [非托管 API 参考（Visual Studio 中的 Office 开发）](unmanaged-api-reference-office-development-in-visual-studio.md)
 #### [EnsureVSTOComponent 函数](ensurevstocomponent-function.md)

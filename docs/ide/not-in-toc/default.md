@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3856987971f74c8caa7210fa2284812f802c2b9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: adf65277f4ec7566464f737bf8b4ab5913043bcc
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # F1 帮助
 
@@ -37,4 +37,4 @@ ms.lasthandoff: 04/26/2018
 
 ## 帮助我们改进 F1 功能
 
-请针对你按 F1 时要查找的内容，向我们提供反馈，进而帮助我们改善 F1 帮助体验。 例如，你的光标置于哪个符号或窗口上？ 请使用下面的“提供文档反馈”按钮。 谢谢！
+请帮助我们改进 F1 帮助体验。 通过单击下方的“提供产品反馈”按钮，记录产品帮助问题。 按 F1 时，请包括寻求帮助的相关内容，如光标所在的符号或窗口。 谢谢！

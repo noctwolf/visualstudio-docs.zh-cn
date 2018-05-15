@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97e0b1e58a1a3a490d97d49410f04b4b08eb844b
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>教程步骤 6：使用投票 Django Web 项目模板
 
@@ -361,7 +361,7 @@ admin.site.register(Poll, PollAdmin)
 ## <a name="next-steps"></a>后续步骤
 
 > [!Note]
-> 如果已在本教程的整个课程中将 Visual Studio 解决方案提交到源代码管理，那么现在是执行另一个提交的好时机。 解决方案应匹配 GitHub 上的教程源代码：[Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)。
+> 如果已在本教程的整个课程中将 Visual Studio 解决方案提交到源代码管理，那么现在是执行另一个提交的好时机。 解决方案应匹配 GitHub 上的教程源代码：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)。
 
 现在，你已了解 Visual Studio 中“空白 Django Web 项目”、“Django Web 项目”和“投票 Django Web 项目”模板的全部内容。 你已了解包括使用视图和模板在内的所有 Django 基础知识，并了解了有关路由、身份验证和使用数据库模型的相关内容。 现在应能够使用任何所需的视图和模型来创建你自己的 Web 应用。
 
