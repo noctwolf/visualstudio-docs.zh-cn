@@ -1,6 +1,6 @@
 ---
-title: 使用 Python - 准备步骤：安装
-description: 在 Visual Studio 中使用 Python 的核心教程的第 0 步（系统必备），介绍了如何在 Visual Studio 中安装 Python 支持。
+title: 使用 Python 教程 - 第 0 步：安装
+description: 在 Visual Studio 中使用 Python 的核心教程的第 0 步（安装前提条件）。
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d80e95a1418cbd23cbe284671be0a8c44ab4fff2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bc3f85e776fa7ec45bd157a9cffe99f6ac0b1aac
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安装 Python 支持
 
@@ -38,14 +38,14 @@ ms.lasthandoff: 04/19/2018
 
     ![通过交互窗口测试 Python](media/installation-interactive-test.png)
 
-## <a name="next-steps"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 > [!div class="nextstepaction"]
 > [步骤 1：创建 Python 项目](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>请参阅
 
-- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)。
+- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 - [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)。
 - [安装位置](installing-python-support-in-visual-studio.md#install-locations)。
 

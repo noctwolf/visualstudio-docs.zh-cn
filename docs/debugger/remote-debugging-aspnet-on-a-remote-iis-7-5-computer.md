@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ff8408ecdf8036a6ec00bdbc3ec93f4b41a2a7fa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fec5b041a6fb0f16c35d0f9f16a8171c5e95224b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 若要调试的 ASP.NET 应用程序部署到 IIS，安装和在计算机上运行远程工具其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
@@ -51,6 +51,7 @@ ms.lasthandoff: 04/18/2018
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- iis.net
 
 如果你使用的 Internet Explorer，则可以通过转到添加受信任的站点**Internet 选项 > 安全 > 受信任的站点 > 站点**。 这些步骤是不同的其他浏览器。 （如果需要从 my.visualstudio.com 下载较旧版本的远程调试器，某些其他受信任的站点所需登录。）
 
@@ -59,6 +60,8 @@ ms.lasthandoff: 04/18/2018
 ## <a name="BKMK_deploy_asp_net"></a> 在 Windows Server 上安装 ASP.NET 4.5
 
 如果你想要在 IIS 上安装 ASP.NET 的更多详细的信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
+
+1. 在左窗格中的服务器管理器中，选择**IIS**。 右键单击服务器并选择**Internet Information Services (IIS) Manager**。
 
 1. 使用 Web 平台安装程序 (WebPI) 安装 ASP.NET 4.5 (从 Windows Server 2012 R2 中的服务器节点中，选择**获取新的 Web 平台组件**然后搜索 ASP.NET)
 
@@ -71,15 +74,21 @@ ms.lasthandoff: 04/18/2018
 
 2. 重新启动系统 (或执行**net 停止已 /y**跟**net 启动 w3svc**从命令提示符以拾取到系统路径的更改)。
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>（可选）安装 Web 部署 3.6 用于承载 Windows Server 上的服务器
+
+在某些情况下，它可以是速度更快导入发布设置 Visual Studio 中而不是手动配置部署选项。 如果想要导入发布设置而不是在 Visual Studio 中配置的发布配置文件，请参阅[导入发布设置和将部署到 IIS](../deployment/tutorial-import-publish-settings-iis.md)。 否则为在本主题中保留的并且继续阅读。 如果完成导入文章发布设置和应用程序成功部署，然后返回到本主题和上启动部分中[下载远程工具](#BKMK_msvsmon)。
+
 ## <a name="BKMK_install_webdeploy"></a> （可选）安装 Web 部署 Windows Server 上的 3.6
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ## <a name="BKMK_deploy_asp_net"></a> 在 Windows Server 计算机上配置 ASP.NET 网站
 
+如果要导入发布设置，则可以跳过此部分。
+
 1. 打开 Windows 资源管理器并创建一个新的文件夹， **C:\Publish**，稍后将部署 ASP.NET 项目。
 
-2. 打开**Internet Information Services (IIS) 管理器**。 (在服务器管理器的左窗格中，选择**IIS**。 右键单击服务器并选择**Internet Information Services (IIS) Manager**。)
+2. 如果尚未打开，请将它打开**Internet Information Services (IIS) Manager**。 (在服务器管理器的左窗格中，选择**IIS**。 右键单击服务器并选择**Internet Information Services (IIS) Manager**。)
 
 3. 下**连接**在左窗格中，转到**站点**。
 

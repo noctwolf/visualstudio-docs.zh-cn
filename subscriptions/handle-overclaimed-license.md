@@ -9,18 +9,18 @@ description: 了解管理员如何解决透支的订阅
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 80420dd72416d5de1a96734ae532cfbad93f68d9
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9f80c335cbbdc56f4d26a73a9565ecb2a102aa6c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="handling-over-claimed-subscriptions"></a>处理“透支的”订阅
 
 有时，添加订阅者后，订单发生变化，这可能会导致已分配的订阅数量超过公司拥有的许可证数量。 出现这种情况时，“订阅者”选项卡会显示警报并提供详细信息。 
 
 > [!NOTE] 
-> 开放式许可证计划不允许出现透支的情况。
+> 开放式许可证计划不允许出现透支的情况。  另外，其他程序可能会在门户中以不同方式显示此信息。 
 
  ![透支订阅通知](_img\over-claimed\over-claimed-alert.png)
 

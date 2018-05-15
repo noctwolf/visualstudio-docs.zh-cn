@@ -5,8 +5,6 @@ ms.date: 01/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
-dev_langs:
-- R
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
@@ -14,15 +12,15 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d8b88e327af895d39335695b16b44bf17efdb18b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e5494283fdf759ddc664207d62d40f7f83993632
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Visual Studio 中的 linting R 代码
 
-语法检查是代码分析过程，旨在发现潜在错误、格式设置问题和其他代码干扰（如假性空白）。 Linting 还可帮助支持特定代码约定（例如如何命名标识符），这在团队和其他协作环境中非常有用。
+Linting 分析代码，旨在发现潜在错误、格式设置问题和其他代码干扰（如假性空白）。 Linting 还支持某些编码约定，例如标识符的命名方式。 此类约定在团队和其他合作情况下很有帮助。
 
 针对 Visual Studio 的 R 工具 (RTVS) 内置适用于 R 的语法检查，可通过本文介绍的各个选项控制检查行为。 可在“工具”>“选项”>“文本编辑器”>”R”>”Lint”中找到这些选项。
 
@@ -32,7 +30,7 @@ ms.lasthandoff: 04/19/2018
 
 ![用于 R 代码的 linting 的示例](media/linting-01.png)
 
-通常根据项目或文件的需求，更改语法检查选项。 例如，在线课程中的示例代码可能将 `=`（而不是 `<-`）与 Pascal 命名法标识符结合使用。 此类代码会频繁显示语法检查警告，因为默认语法检查选项设为标志 Pascal 命名法标识符。 处理此类代码时，只需禁用默认语法检查选项即可，而不用更正每个实例。
+通常根据项目或文件的需求，更改语法检查选项。 例如，在线课程中的示例代码可能将 `=`（而不是 `<-`）与 Pascal 命名法标识符结合使用。 此类代码会频繁显示语法检查警告，因为默认语法检查选项设为标志 Pascal 命名法标识符。 处理此类代码时，可以禁用默认语法检查选项，而不用更正每个实例。
 
 ## <a name="assignment-group"></a>赋值组
 

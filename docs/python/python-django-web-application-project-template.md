@@ -1,24 +1,25 @@
 ---
 title: 适用于 Python 的 Django Web 项目模板
 description: 使用 Django 框架以 Python 编写的 Web 应用程序的 Visual Studio 模板概述。
-ms.date: 07/13/2017
+ms.date: 04/17/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
+author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c5b64e6f14ef8a6d8015f27252374e54a6dd764
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 077619b7d47441bb4a02dbe87e7cf714b634beff
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="django-web-project-template"></a>Django Web 项目模板
 
-[Django](https://www.djangoproject.com/) 是高级 Python 框架，用于快速、安全及可扩展的 Web 开发。 借助 Visual Studio 中的 Python 支持，可以使用项目模板来设置 Django Web 应用程序的结构。 若要在 Visual Studio 中使用模板，请选择“文件”>“新建”>“项目”，搜索“Django”，然后选择“Django Web 项目”模板。 生成的项目包含 Boilerplate 代码，以及默认的 SQLite 数据库。 “空白 Django Web 项目”模板类似，但不包括数据库。
+[Django](https://www.djangoproject.com/) 是高级 Python 框架，用于快速、安全及可扩展的 Web 开发。 借助 Visual Studio 中的 Python 支持，可以使用多个项目模板来设置基于 Django 的 Web 应用程序的结构。 若要在 Visual Studio 中使用模板，请选择“文件” > “新建” > “项目”，搜索“Django”，然后从“空白 Django Web 项目”、“Django Web 项目”和“投票 Django Web 项目”模板中进行选择。 有关所有模板的演练，请参阅 [Django 学习教程](learn-django-in-visual-studio-step-01-project-and-solution.md)。
 
 Visual Studio 为 Django 项目提供完整的 IntelliSense：
 
@@ -54,10 +55,14 @@ Django 管理控制台可通过“项目”菜单上的各种命令或在解决�
 
     ![控制台](media/template-django-console-sync-db.png)
 
-- **收集静态文件**：执行 `manage.py collectstatic --noinput` 以将所有静态文件复制到由 `settings.py` 中的 `STATIC_ROOT` 指定的路径中。 请注意，当[发布到 Microsoft Azure](python-web-application-project-templates.md#publishing-to-azure-app-service) 时，将自动收集静态文件，作为发布操作的一部分。
+- **收集静态文件**：执行 `manage.py collectstatic --noinput` 以将所有静态文件复制到由 `settings.py` 中的 `STATIC_ROOT` 指定的路径中。 当[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md) 时，将自动收集静态文件，作为发布操作的一部分。
 
     ![控制台](media/template-django-console-collect-static.png)
 
 - **验证**：执行 `manage.py validate`，它将报告由 `settings.py` 中 `INSTALLED_APPS` 指定的已安装模型中的任何验证错误：
 
     ![控制台](media/template-django-console-validate.png)
+
+## <a name="see-also"></a>请参阅
+
+- [Django 学习教程](learn-django-in-visual-studio-step-01-project-and-solution.md)

@@ -1,6 +1,6 @@
 ---
-title: 使用 Python - 第 5 步：安装包
-description: 在 Visual Studio 中使用 Python 的核心教程的第 5 步，展示了用于在 Python 环境中管理包的 Visual Studio 功能。
+title: 使用 Python 教程 - 第 5 步：安装包
+description: 在 Visual Studio 中使用 Python 功能的核心教程的第 5 步，展示了用于在 Python 环境中管理包的 Visual Studio 功能。
 ms.date: 03/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 73de2a4c58a24a603f1d5d54138d5762e3ae9971
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>步骤 5：在 Python 环境中安装程序包
 
@@ -43,7 +43,7 @@ Python 开发者社区制作了数千个有用的程序包，用户可以将它�
 
   ![在环境中完成 matplotlib 的安装](media/environments-add-matplotlib2.png)
 
-  环境下方的小进度条指示 Visual Studio 正在为新安装的程序包生成 IntelliSense 数据库。 “IntelliSense”选项卡也显示了更多详细信息。 请注意，完成该数据库之前，编辑器中的自动完成和语法检查等 IntelliSense 功能针对该程序包处于非活动状态。
+  环境下方可能出现一个小进度栏，指示 Visual Studio 正在为新安装的程序包生成 IntelliSense 数据库。 “IntelliSense”选项卡也显示了更多详细信息。 请注意，完成该数据库之前，编辑器中的自动完成和语法检查等 IntelliSense 功能针对该程序包处于非活动状态。
 
   请注意，Visual Studio 2017 版本 15.6 及更高版本采用不同且更快的方法来使用 IntelliSense，并在“IntelliSense”选项卡上显示一条大意如此的消息。
 
@@ -66,7 +66,7 @@ Python 开发者社区制作了数千个有用的程序包，用户可以将它�
 
   ![matplotlib 示例的输出](media/environments-add-matplotlib3.png)
 
-## <a name="next-steps"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 > [!div class="nextstepaction"]
 > [使用 Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)

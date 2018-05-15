@@ -5,18 +5,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 04/18/2018
+ms.date: 05/07/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: f24a293e3efe40f2003bf0ba993f7896d2d93c52
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 2bf24a2274fbf16827ce8e3102bee022c9f33eba
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 生成号和发布日期
 
@@ -24,6 +24,12 @@ ms.lasthandoff: 04/20/2018
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.8.0 预览版 1.0 | 预览 | 2018 年 5 月 7 日 | 15.8.27705.0 |
+| 15.7.0 | 发布 | 2018 年 5 月 7 日 | 15.7.27703.1 |
+| 15.7.0 预览版 6.0 | 预览 | 2018 年 5 月 3 日 | 15.7.27701.1 |
+| 15.7.0 预览版 5.0 | 预览 | 2018 年 4 月 26 日 | 15.7.27625.0 |
+| 15.6.7 | 发布 | 2018 年 4 月 26 日 | 15.6.27428.2043 |
+| 15.0.13 | 发布 | 2018 年 4 月 26 日 | 15.0.26228.31 |
 | 15.7.0 预览版 4.0 | 预览 | 2018 年 4 月 18 日 | 15.7.27617.1 |
 | 15.6.6 | 发布 | 2018 年 4 月 10 日 | 15.6.27428.2037 |
 | 15.0.12 | 发布 | 2018 年 4 月 10 日 | 15.0.26228.30 |

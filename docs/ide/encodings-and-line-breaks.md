@@ -1,9 +1,8 @@
 ---
-title: Visual Studio 编码和换行符 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 编码和换行符
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.Encoding
@@ -20,37 +19,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15bc6faab8fab1eb943bc087c8730f800c11febd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6c32fc1a7fbd82d1ac9604396dc2ea118efbad2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="encodings-and-line-breaks"></a>编码和换行符
-在 Visual Studio 中，以下字符将解释为换行符：  
-  
--   CR LF：回车符 + 换行符，Unicode 字符 000D + 000A  
-  
--   LF：换行符，Unicode 字符 000A  
-  
--   NEL：下一行，Unicode 字符 0085  
-  
--   LS：行分隔符，Unicode 字符 2028  
-  
--   PS：段落分隔符，Unicode 字符 2029  
-  
-从其他应用程序复制的文本将保留原始编码和换行符。 例如，当从记事本复制文本并将其粘贴到 Visual Studio 中的文本文件时，此文本的设置仍与在记事本中的设置相同。  
-  
+
+在 Visual Studio 中，以下字符将解释为换行符：
+
+-   CR LF：回车符 + 换行符，Unicode 字符 000D + 000A
+
+-   LF：换行符，Unicode 字符 000A
+
+-   NEL：下一行，Unicode 字符 0085
+
+-   LS：行分隔符，Unicode 字符 2028
+
+-   PS：段落分隔符，Unicode 字符 2029
+
+从其他应用程序复制的文本将保留原始编码和换行符。 例如，当从记事本复制文本并将其粘贴到 Visual Studio 中的文本文件时，此文本的设置仍与在记事本中的设置相同。
+
 当打开包含不同换行符的文件时，可能会看到一个对话框，询问是否应规范化不一致的换行符以及要选择哪一种换行类型。
+
+## <a name="advanced-save-options"></a>高级保存选项
 
 可以使用“文件” > “高级保存选项”对话框来确定所需的换行符类型。 还可使用相同的设置更改文件的编码。
 
 ![“高级保存选项”对话框](media/line_endings.png)
-  
-> [!NOTE]
->  如果在“文件”菜单上看不到“高级保存选项”，则可以添加它。 选择“工具”、“自定义...”，然后选择“命令”选项卡。在“菜单栏”下拉列表中，选择“文件”，然后选择“添加命令...”按钮。 在“添加命令”对话框中的“类别”，选择“文件”，然后在“命令”列表中，选择“高级保存选项...”。选择“确定”，然后选择“下移”按钮以将命令移动到菜单中的任何位置。 选择“关闭”以关闭“自定义”对话框。 有关详细信息，请参阅[自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu)。
->
->或者，可以通过选择“文件” > “将 \<文件\> 另存为...”，来访问“高级保存选项”对话框。在“将文件另存为”对话框中，选择“保存”按钮旁的下拉三角形，然后选择“保存时使用编码”。
 
-### <a name="see-also"></a>请参阅
-[在编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)
+> [!NOTE]
+> 如果在“文件”菜单上看不到“高级保存选项”，则可以添加它。 选择“工具”、“自定义...”，然后选择“命令”选项卡。在“菜单栏”下拉列表中，选择“文件”，然后选择“添加命令...”按钮。 在“添加命令”对话框中的“类别”，选择“文件”，然后在“命令”列表中，选择“高级保存选项...”。选择“确定”，然后选择“下移”按钮以将命令移动到菜单中的任何位置。 选择“关闭”以关闭“自定义”对话框。 有关详细信息，请参阅[自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu)。
+>
+> 或者，可以通过选择“文件” > “将 \<文件\> 另存为...”，来访问“高级保存选项”对话框。在“将文件另存为”对话框中，选择“保存”按钮旁的下拉三角形，然后选择“保存时使用编码”。
+
+## <a name="see-also"></a>请参阅
+
+- [在编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)

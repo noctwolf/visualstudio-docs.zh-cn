@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b26b70b4887b792bd7a0a16bc3291d4e8fae369
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教程 1：创建图片查看器
 在本教程中，您将生成一个从文件加载图片并将其显示在窗口中的程序。 您将学习如何拖动控件（如窗体上的按钮和图片框）、设置控件属性，以及如何使用容器来平滑地调整窗体的大小。 您还将开始编写代码。 您将学习如何：  
@@ -39,9 +39,11 @@ ms.lasthandoff: 04/26/2018
  ![在本教程中创建的图片](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 你在本教程中创建的图片  
 
- 若要下载完整的示例版本，请参阅 [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)（图片查看器教程的完整示例）。  
+## <a name="tutorial-links"></a>教程链接
 
- ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请参阅[如何在 Visual Basic 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205207) 或[如何在 C# 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205198)。  
+ 若要下载完整的示例版本，请参阅[图片查看器教程的完整示例](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)。  
+
+ ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请参阅[如何在 Visual Basic 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205207)或[如何在 C# 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205198)。  
 
 > [!NOTE]
 >  这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。 本教程中同时涉及 Visual C# 和 Visual Basic，因此请关注特定于您所用编程语言的信息。  
@@ -60,7 +62,7 @@ ms.lasthandoff: 04/26/2018
 |[步骤 4：使用 TableLayoutPanel 控件设置窗体布局](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|向窗体添加一个 `TableLayoutPanel` 控件。|  
 |[步骤 5：向窗体添加控件](../ide/step-5-add-controls-to-your-form.md)|向窗体添加控件，如 `PictureBox` 控件和 `CheckBox` 控件。 向窗体中添加按钮。|  
 |[步骤 6：命名按钮控件](../ide/step-6-name-your-button-controls.md)|将按钮重命名为更有意义的名称。|  
-|[步骤 7：向窗体添加对话框组件](../ide/step-7-add-dialog-components-to-your-form.md)|向窗体添加“OpenFileDialog”组件和“ColorDialog”组件。|  
+|[步骤 7：向窗体添加对话框组件](../ide/step-7-add-dialog-components-to-your-form.md)|向窗体添加 `OpenFileDialog` 组件和 `ColorDialog` 组件。|  
 |[步骤 8：为“显示图片”按钮事件处理程序编写代码](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|使用 IntelliSense 工具编写代码。|  
 |[步骤 9：评审代码、为代码添加注释和测试代码](../ide/step-9-review-comment-and-test-your-code.md)|评审并测试代码。 根据需要添加注释。|  
 |[步骤 10：编写其他按钮和复选框的代码](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|使用 IntelliSense 编写代码以使其他按钮和复选框工作。|  

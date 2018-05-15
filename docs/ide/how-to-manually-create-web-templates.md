@@ -1,9 +1,8 @@
 ---
-title: 创建 Visual Studio 的 Web 模板 | Microsoft Docs
-ms.custom: ''
+title: 创建 Visual Studio Web 模板
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
@@ -13,28 +12,28 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0f7dcc6f14bc631d4d5880d0d7f1ee123bde0306
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aeaeea5ee4d1d8e65cdc13ca11192a70e0459be1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手动创建 Web 模板
 
 创建 Web 模板与创建其他种类的模板不同。 由于 Web 项目模板出现在“添加新网站”对话框中，并且 Web 项目项由编程语言分类，vstemplate 文件必须将模板指定为 Web 模板，并识别该编程语言。
 
 > [!NOTE]
-> Web 模板必须包含一个空的 .webproj 文件，并且必须在 `Project` 元素的 `File` 属性的 .vstemplate 文件中引用它。 尽管 Web 项目不需要 proj 项目文件，但有必要创建此存根文件以便 Web 模板正确运行。
+> Web 模板必须包含一个空的 .webproj 文件，并且必须在 `Project` 元素的 `File` 属性的 vstemplate 文件中引用它。 尽管 Web 项目不需要 proj 项目文件，但有必要创建此存根文件以便 Web 模板正确运行。
 
-### <a name="to-manually-create-a-web-template"></a>手动创建 Web 模板
+## <a name="to-manually-create-a-web-template"></a>手动创建 Web 模板
 
 1. 创建 Web 项目。
 
 1. 修改或删除项目中的文件，或将新文件添加到项目。
 
-1. 创建 XML 文件，并用 .vstemplate 文件扩展名将其保存在与项目相同的目录中。 不要将其添加到 Visual Studio 的项目中。
+1. 创建 XML 文件，并用 vstemplate 文件扩展名将其保存在与项目相同的目录中。 不要将其添加到 Visual Studio 的项目中。
 
-1. 编辑 .vstemplate XML 文件以提供项目模板元数据。 有关详细信息，请参阅[以下示例](#example)。
+1. 编辑 vstemplate XML 文件以提供项目模板元数据。 有关详细信息，请参阅[以下示例](#example)。
 
 1. 查找 vstemplate 文件中的 `ProjectType` 元素，将文本值设置为 `Web`。
 
@@ -54,13 +53,13 @@ ms.lasthandoff: 04/19/2018
     </TemplateData>
     ```
 
-1. 选择模板中的文件（包括 .vstemplate 文件），右键单击所选文件，然后选择“发送至” > “压缩的文件夹（zip 格式）”。 这些文件会压缩到一个 .zip 文件中。
+1. 选择模板中的文件（包括 vstemplate 文件），右键单击所选文件，然后选择“发送至” > “压缩的文件夹”。 这些文件会压缩到一个 .zip 文件中。
 
 1. 将该 .zip 模板文件放入 Visual Studio 项目模板目录。 默认情况下，此目录为 %USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates。
 
 ## <a name="example"></a>示例
 
-以下示例显示 Web 项目模板的基本 .vstemplate 文件：
+以下示例显示 Web 项目模板的基本 vstemplate 文件：
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Project"
@@ -85,5 +84,5 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>请参阅
 
-[创建项目和项模板](../ide/creating-project-and-item-templates.md)  
-[Visual Studio 模板架构引用（扩展性）](../extensibility/visual-studio-template-schema-reference.md)
+- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+- [Visual Studio 模板架构引用（扩展性）](../extensibility/visual-studio-template-schema-reference.md)

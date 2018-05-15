@@ -1,7 +1,7 @@
 ---
 title: Python 的 Web 应用程序模板
 description: 使用 Python 编写的 Web 应用程序的 Visual Studio 模板的概述（使用 Bottle、Flask 和 Django 框架），包括调试配置和发布到 Azure 应用服务。
-ms.date: 07/13/2017
+ms.date: 04/17/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,37 +11,77 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0abb3752972e90347de2f296c11c86d8335fbb9a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d76bc7868c78b1def09376cb2382aa39cff1cda
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
-Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过项目模板和可配置为处理不同框架的调试启动程序开发 Web 项目。 也可以使用其他框架（如 Pyramid）的通用“Web 项目”模板。
+Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过项目模板和可配置为处理不同框架的调试启动程序开发 Web 项目。 这些模板包括 `requirements.txt` 文件来声明必需的依赖项。 基于其中一个模板创建项目时，Visual Studio 会提示你安装这些包（请参阅本文后面的[安装项目要求](#installing-project-requirements)）。
 
-Visual Studio 不包括框架本身。 必须通过右键单击项目并选择“Python”>“安装/升级框架...”来单独安装框架。
+也可以使用其他框架（如 Pyramid）的通用“Web 项目”模板。 在这种情况下，不会随模板一起安装框架。 而是将必要的包安装到你用于项目的环境中（请参阅[管理 Python 环境](managing-python-environments-in-visual-studio.md)）。
 
-运行时，从模板创建的项目（通过“文件”>“新建”>“项目...”访问）在随机选择的本地端口中启动 Web 服务器、调试时打开默认浏览器，并允许直接发布到 Microsoft Azure。
+## <a name="using-a-project-template"></a>使用项目模板
 
-![新建 Web 项目模板](media/template-web-new-project.png)
+使用“文件” > “新建” > 项目”从模板中创建项目。 要查看 Web 项目的模板，请选择对话框左侧的“Python” > “Web”。 然后选择你所选的模板，提供项目和解决方案名称，设置解决方案目录和 Git 存储库选项，然后选择“确定”。
 
-每个 Bottle、Flask 和 Django 模板包括一个入门网站，其中包含一些页面和静态文件。 此代码足以本地运行和调试服务器（此情况下某些设置需从环境中获得），且足以部署到 Microsoft Azure（此情况下需要提供 [WSGI 应用](http://www.python.org/dev/peps/pep-3333/)对象）。
+![Web 应用的“新建项目”对话框](media/projects-new-project-dialog-web.png)
+
+前面提到的通用“Web 项目”模板只提供了一个空的 Visual Studio 项目，只有一个 Python 项目，没有代码，也没有任何假设。 有关“Azure 云服务”模板的详细信息，请参阅 [Python 的 Azure 云服务项目](python-azure-cloud-service-project-template.md).python-azure-cloud-service-project-template.md
+
+所有其他模板都基于 Bottle、Flask 或 Django Web 框架，可以分为如以下各节所述的三个通用组。 由其中任一模板创建的应用中的代码都足以在本地运行和调试应用。 每个模板还提供必要的 [WSGI 应用对象](http://www.python.org/dev/peps/pep-3333/) (python.org) 以便[部署到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)
+
+### <a name="blank-group"></a>空白组
+
+所有“空白(框架) Web 项目”模板都会创建一个项目，其中包含极少的样本代码以及 `requirements.txt` 文件中声明的必要依赖项。
+
+| 模板 | 描述 |
+| --- | --- |
+| 空白 Bottle Web 项目 | 在 `app.py` 中生成最小的应用，其中包括 `/` 的主页和 `/hello/<name>` 页，它使用非常短的内嵌页模板回显 `<name>`。 |
+| 空白 Django Web 项目 | 使用核心 Django 网站结构生成 Django 项目，但没有 Django 应用。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django - 第 1 步](learn-django-in-visual-studio-step-01-project-and-solution.md)。 |
+| 空白 Flask Web 项目 | 生成包含 `/` 的单个“Hello World!”页的最小应用。 此应用类似于按[快速入门：使用 Visual Studio 创建第一个 Python Web 应用](../ide/quickstart-python.md?context=visualstudio/python/default)中的详细步骤操作的结果。
+
+### <a name="web-group"></a>Web 组
+
+所有“(框架) Web 项目”模板都会创建一个具有相同设计的初学者 Web 应用，而与所选的框架无关。 该应用包含“主页”、“关于”和“联系人”页面，以及使用 Bootstrap 的导航栏和响应式设计。 每个应用都被适当地配置为服务器静态文件（CSS、JavaScript 和字体），并使用适合框架的页面模板机制。
+
+| 模板 | 描述 |
+| --- | --- |
+| Bottle Web 项目 | 生成一个应用，其静态文件包含在 `static` 文件夹中，并通过 `app.py` 中的代码进行处理。 单个页面的路由包含在 `routes.py` 中，`views` 文件夹包含页面模板。|
+| Django Web 项目 | 生成一个 Django 项目和一个 Django 应用，其中包含三个页面、身份验证支持和一个 SQLite 数据库（但没有数据模型）。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django - 第 4 步](learn-django-in-visual-studio-step-04-full-django-project-template.md)。 |
+| Flask Web 项目 | 生成一个应用，其静态文件包含在 `static` 文件夹中。 `views.py` 中的代码处理路由，页面模板使用 `templates` 文件夹中包含的 Jinja 引擎。 `runserver.py` 文件提供启动代码。 |
+| Flask/Jade Web 项目 | 生成与使用“Flask Web 项目”模板生成的相同的应用，但使用 Jade 模板引擎。 |
+
+### <a name="polls-group"></a>投票组
+
+“投票(框架) Web 项目”模板创建一个初学者 Web 应用，用户可以通过该应用对不同的投票问题进行投票。 每个应用都基于“Web”项目模板的结构生成，从而使用数据库来管理投票和用户响应。 这些应用包含适当的数据模型以及用来从 `samples.json` 文件加载投票的特殊应用页（“/seed”）。
+
+| 模板 | 描述 |
+| --- | --- |
+| 投票 Bottle Web 项目 | 生成可以针对使用 `REPOSITORY_NAME` 环境变量配置的内存中数据库、MongoDB 或 Azure 表存储运行的应用。 数据模型和数据存储代码包含在 `models` 文件夹中，`settings.py` 文件包含用于确定使用哪个数据存储的代码。 |
+| 投票 Django Web 项目 | 生成一个 Django 项目和一个 Django 应用，其中包含三个页面和一个 SQLite 数据库。 加入对 Django 管理界面的自定义设置，以允许经过身份验证的管理员创建和管理投票。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django - 第 6 步](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)。 |
+| 投票 Flask Web 项目 | 生成可以针对使用 `REPOSITORY_NAME` 环境变量配置的内存中数据库、MongoDB 或 Azure 表存储运行的应用。 数据模型和数据存储代码包含在 `models` 文件夹中，`settings.py` 文件包含用于确定使用哪个数据存储的代码。 该应用对页面模板使用 Jinja 引擎。 |
+| 投票 Flask/Jade Web 项目 | 生成与使用“投票 Flask Web 项目”模板生成的相同的应用，但使用 Jade 模板引擎。 |
+
+## <a name="installing-project-requirements"></a>安装项目要求
 
 从特定于框架的模板创建项目时，会出现一个对话框，有助于使用 pip 安装所需的包。 我们还建议对 Web 项目使用[虚拟环境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)，以便发布网站时包含正确的依赖关项：
 
 ![为项目模板安装所需包的对话框](media/template-web-requirements-txt-wizard.png)
 
+如果使用的是源代码管理，通常会忽略虚拟环境文件夹，因为该环境只能使用 `requirements.txt` 重新创建。 排除文件夹的最佳方法是先在上面的提示中选择“我将自行安装”，然后在创建虚拟环境之前禁用自动提交。 有关详细信息，请参阅 [Django 学习教程 - 第 1-2 步和第 1-3 步](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
+
 部署到 Microsoft Azure App Service 时，选择一个 Python 版本作为[站点扩展](https://aka.ms/PythonOnAppService)并手动安装包。 此外，因为 Azure 应用服务从 Visual Studio 部署时**不会**自动安装 `requirements.txt` 中的包，请遵照 [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService) 上的配置详细信息操作。
 
-Microsoft Azure 云服务支持 `requirements.txt` 文件。 详见 [Azure 云服务项目](python-azure-cloud-service-project-template.md)。
+Microsoft Azure 云服务支持 `requirements.txt` 文件。 有关详细信息，请参阅 [Azure 云服务项目](python-azure-cloud-service-project-template.md)。
 
 ## <a name="debugging"></a>调试
 
-启动 Web 项目进行调试时，Visual Studio 在本地启动 Web 服务器，并打开默认浏览器浏览至该地址和端口。 若要指定其他选项，请右键单击项目，选择“属性”和“Web 启动器”选项卡：
+启动 Web 项目进行调试时，Visual Studio 会在随机端口上启动一个本地 Web 服务器，并打开默认浏览器浏览至该地址和端口。 若要指定其他选项，请右键单击项目，选择“属性”和“Web 启动器”选项卡：
 
-  ![常规 Web 模板的 Web 启动器属性](media/template-web-launcher-properties.png)
+![常规 Web 模板的 Web 启动器属性](media/template-web-launcher-properties.png)
 
 在“调试”组中：
 
@@ -87,84 +127,23 @@ Pyramid 应用当前最好使用 `pcreate` 命令行工具进行创建。 创建
   - 参数：`Production.ini`
 
 - **调试服务器命令**组：
-    - 命令：`..\env\scripts\pserve-script.py`（脚本）
-    - 参数：`Development.ini`
+  - 命令：`..\env\scripts\pserve-script.py`（脚本）
+  - 参数：`Development.ini`
 
 > [!Tip]
-> 你可能需要配置项目的“工作目录”属性，因为 Pyramid 应用通常比源树顶层要深一个目录层次。
+> 你可能需要配置项目的“工作目录”属性，因为 Pyramid 应用通常是项目根目录下的一个文件夹。
 
 ### <a name="other-configurations"></a>其他配置
 
 如果有针对另一个要共享的框架的设置，或者要为另一个框架请求设置，则[在 GitHub 上提出问题](https://github.com/Microsoft/PTVS/issues)。
 
-## <a name="publishing-to-azure-app-service"></a>发布到 Azure 应用服务
+## <a name="convert-a-project-to-azure-cloud-service"></a>将项目转换为 Azure 云服务
 
-可使用两种主要方式发布到 Azure 应用服务。 首先，如 [Azure 文档](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/)中所述，源控件中的部署可采用与用于其他语言的相同方式进行使用。 若要直接从 Visual Studio 发布，请右键单击项目并选择“发布”：
-
-![在项目的上下文菜单上发布命令](media/template-web-publish-command.png)
-
-选择命令后，向导将引导你完成创建网站或导入发布设置、预览修改的文件以及发布到远程服务器。
-
-在应用服务上创建站点时，需要安装 Python 以及站点依赖的任何包。 可以首先发布站点，但它在配置 Python 前不会运行。
-
-若要在应用程序服务上安装 Python，我们建议使用[站点扩展](http://www.siteextensions.net/packages?q=Tags%3A%22python%22) (siteextensions.net)。 这些扩展是 Python [正式发行版](https://www.python.org)的副本，针对 Azure App Service 进行了优化和重新打包。
-
-可以通过 [Azure 门户](https://portal.azure.com/)部署站点扩展。 选择应用服务的“开发工具”>“扩展”边栏选项卡，选择“添加”，然后滚动列表，查找 Python 项：
-
-![在 Azure 门户上添加站点扩展](media/template-web-site-extensions.png)
-
-如果使用 JSON 部署模板，可以将站点扩展指定为站点的资源：
-
-```json
-{
-    "resources": [
-    {
-        "apiVersion": "2015-08-01",
-        "name": "[parameters('siteName')]",
-        "type": "Microsoft.Web/sites",
-        ...
-    },
-    "resources": [
-    {
-        "apiVersion": "2015-08-01",
-        "name": "python352x64",
-        "type": "siteextensions",
-        "properties": { },
-        "dependsOn": [
-            "[resourceId('Microsoft.Web/sites', parameters('siteName'))]"
-        ]
-    },
-    ...
-}
-```
-
-最后，可以通过[开发控制台](https://github.com/projectkudu/kudu/wiki/Kudu-console)登录并从该处安装站点扩展。
-
-目前，推荐在安装站点扩展并直接执行 pip 之后，使用开发控制台来安装包。 务必使用 Python 的完整路径，否则可能会执行错误的路径，且通常无需使用虚拟环境。 例如:
-
-```command
-c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
-
-c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
-```
-
-部署到 Azure App Service 时，站点会在 Microsoft IIS 之后运行。 若要使站点与 IIS 配合使用，至少需要添加一个 `web.config` 文件。 为某些常见部署目标提供有模板，通过右键单击该项目并选择“添加”>“新项...”提供（请参见以下对话框），并且可以轻松修改这些配置以作他用。 请参阅 [IIS 配置引用](https://www.iis.net/configreference)，了解可用配置设置的相关信息。
-
-![Azure 项模板](media/template-web-azure-items.png)
-
-可用的项包括：
-
-- Azure web.config (FastCGI)：应用提供 [WSGI](https://wsgi.readthedocs.io/en/latest/) 对象以处理传入连接时添加 `web.config` 文件。
-- Azure web.config (HttpPlatformHandler)：应用侦听传入连接的套接字时添加 `web.config` 文件。
-- Azure 静态文件 web.config：当你具有上述任一 `web.config` 文件时，将该文件添加到子目录中，使文件不被应用处理。
-- Azure 远程调试 web.config：添加通过 Websocket 进行远程调试所必需的文件。
-- Web 角色支持文件：包含云服务 Web 角色的默认部署脚本。
-- 辅助角色支持文件：包含云服务辅助角色的默认部署和启动脚本。
-
-如果将调试 `web.config` 模板添加到项目和计划以使用 Python 远程调试，需要在“调试”配置中发布站点。 此设置独立于当前的活动解决方案配置，且始终默认为“发布”。 若要更改，请打开“设置”选项卡，使用发布向导中的“配置”组合框（请参阅 [Azure 文档](https://azure.microsoft.com/develop/python/)，了解创建和部署到 Azure Web 应用的详细信息）：
-
-![更改发布配置](media/template-web-publish-config.png)
-
-“转换为 Microsoft Azure 云服务项目”命令（见下图）会将云服务项目添加到解决方案。 此项目包括要使用的虚拟机和服务的部署设置和配置。 使用云项目上的“发布”命令部署到云服务；Python 项目上的“发布”命令仍会部署到网站。 请参阅 [Azure 云服务项目](python-azure-cloud-service-project-template.md)了解详细信息。
+“转换为 Microsoft Azure 云服务项目”命令（见下图）会将云服务项目添加到解决方案。 此项目包括要使用的虚拟机和服务的部署设置和配置。 使用云项目上的“发布”命令部署到云服务；Python 项目上的“发布”命令仍会部署到网站。 有关详细信息，请参阅 [Azure 云服务项目](python-azure-cloud-service-project-template.md)。
 
 ![“转换为 Microsoft Azure 云服务项目”命令](media/template-web-convert-menu.png)
+
+## <a name="see-also"></a>请参阅
+
+- [Python 项模板引用](python-item-templates.md)
+- [发布到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

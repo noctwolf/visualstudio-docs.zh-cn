@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa70cac665c5673416b62aed6aa6ae0a9ebd805
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 81eafb383be9f687bdc16bd8241e396849b8894a
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="talk-to-us"></a>与我们交流
 我们很希望了解你为改进我们的产品和文档所提出的建议。 我们无法总是一一答复，但我们保证你的反馈会传达给相应的负责人或团队。  
@@ -53,4 +53,4 @@ Microsoft 支持服务取决于当时的价格、条款和条件。 价格、条
 请使用我们位于页面底部的“此页面是否有所帮助?”反馈按钮。 所有我们的文档页面上都有这个按钮。 或者，你可以通过 [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) 使用同样位于页面底部的“登录以提供文档反馈”按钮将反馈添加到任何 Visual Studio 页面。
 
 ## <a name="see-also"></a>请参阅
- [如何报告 Visual Studio 的问题](how-to-report-a-problem-with-visual-studio-2017.md)
+[如何报告 Visual Studio 的问题](how-to-report-a-problem-with-visual-studio-2017.md)

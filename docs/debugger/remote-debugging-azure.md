@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: fc8e657f6fb67884bd12de3f8e65c78077fa9b2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c95a91ecd057bfec7af5e9b932d4326cdcab9270
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 在 Azure 中的 IIS 上的远程调试 ASP.NET 核心
 
@@ -83,18 +83,19 @@ ms.lasthandoff: 04/18/2018
 
 你可以创建一个 Azure VM 的 Windows 服务器，然后安装和配置 IIS 和其他所需的软件组件。 这比将部署到 Azure App Service 的更多时间，并要求你按照本教程中的剩余步骤。
 
-首先，按照中所述的所有步骤[安装和运行的 IIS](/azure/virtual-machines/virtual-machines-windows-hero-role)。
+首先，按照中所述的所有步骤[安装和运行的 IIS](/azure/virtual-machines/windows/quick-create-portal)。
 
 网络安全组中打开端口 80 时，还为远程调试器打开端口 4022。 这样一来，无需以后将其打开。
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>更新 Windows Server 上的浏览器安全设置
 
-具体取决于浏览器安全设置，则可能会节省你时候将以下受信任的站点添加到你的浏览器，以便你可以轻松地下载本教程中所述的软件。 可能需要这些站点的访问：
+具体取决于浏览器安全设置，则可能会节省你时候将以下受信任的站点添加到你的浏览器，以便你可以更快地下载本教程中所述的软件。 可能需要这些站点的访问：
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- iis.net
 
 如果你使用的 Internet Explorer，则可以通过转到添加受信任的站点**Internet 选项 > 安全 > 受信任的站点 > 站点**。 这些步骤是不同的其他浏览器。 （如果需要从 my.visualstudio.com 下载较旧版本的远程调试器，某些其他受信任的站点所需登录。）
 
@@ -109,11 +110,17 @@ ms.lasthandoff: 04/18/2018
 
 3. 重新启动系统 (或执行**net 停止已 /y**跟**net 启动 w3svc**从命令提示符以拾取到系统路径的更改)。
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>（可选）安装 Web 部署 3.6 用于承载 Windows Server 上的服务器
+
+在某些情况下，它可以是速度更快导入发布设置 Visual Studio 中而不是手动配置部署选项。 如果想要导入发布设置而不是在 Visual Studio 中配置的发布配置文件，请参阅[导入发布设置和将部署到 IIS](../deployment/tutorial-import-publish-settings-iis.md)。 否则为在本主题中保留的并且继续阅读。 如果完成导入文章发布设置和应用程序成功部署，然后返回到本主题和上启动部分中[下载远程工具](#BKMK_msvsmon)。
+
 ### <a name="BKMK_install_webdeploy"></a> （可选）安装 Web 部署 Windows Server 上的 3.6
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ### <a name="BKMK_deploy_asp_net"></a> 在 Windows Server 计算机上配置 ASP.NET 网站
+
+如果要导入发布设置，则可以跳过此部分。
 
 1. 打开“Internet 信息服务(IIS)管理器”  并转到“站点” 。
 

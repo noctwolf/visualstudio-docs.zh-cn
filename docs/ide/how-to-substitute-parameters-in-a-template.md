@@ -1,9 +1,8 @@
 ---
-title: 将名称参数添加到 Visual Studio 中的项目和项模板 | Microsoft Docs
-ms.custom: ''
+title: 将名称参数添加到 Visual Studio 中的项目和项模板
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
@@ -12,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0439ffd8e7994995dd3eaafed8e0b0fb2a57d282
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 26802b7b5293fd43eb1546290560c5300c360003
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>如何：替换模板中的参数
 
@@ -34,7 +33,7 @@ ms.lasthandoff: 04/19/2018
     namespace $safeprojectname$
     ```
 
-1. 在模板的 .vstemplate 文件中，找到包括此文件的 `ProjectItem` 元素。
+1. 在模板的 vstemplate  文件中，找到包括此文件的 `ProjectItem` 元素。
 
 1. 将 `ProjectItem` 元素的 `ReplaceParameters` 属性设置为 `true`：
 
@@ -44,7 +43,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>请参阅
 
-[创建项目和项模板](../ide/creating-project-and-item-templates.md)  
-[模板参数](../ide/template-parameters.md)  
-[Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)  
-[ProjectItem 元素（Visual Studio 项模板）](../extensibility/projectitem-element-visual-studio-item-templates.md)
+- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+- [模板参数](../ide/template-parameters.md)
+- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+- [ProjectItem 元素（Visual Studio 项模板）](../extensibility/projectitem-element-visual-studio-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: R 入门
+title: R 教程入门
 description: 在 Visual Studio 中使用 R 的演练，其中包括项目创建、交互式窗口、代码编辑和调试。
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
@@ -10,13 +10,13 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: c4ec2ce9a399c363427ef80087c1db1e8ef68d2c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af2074770a97dbef1f9c8598ec8b6560bdd7f344
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="getting-started-with-r-tools-for-visual-studio"></a>针对 Visual Studio 的 R 工具入门
+# <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio 中的 R 工具入门
 
 安装了针对 Visual Studio 的 R 工具 (RTVS)（请参阅[安装](installing-r-tools-for-visual-studio.md)）后，很快就能亲身感受这些工具提供的体验。 
 

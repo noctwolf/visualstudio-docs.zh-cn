@@ -57,7 +57,7 @@ ms.lasthandoff: 04/16/2018
 
      此时将出现 “新建项目” 对话框。
 
-3. 在**新项目**对话框中下, **Visual C#**或**Visual Basic**，展开**Office/SharePoint**，然后选择**SharePoint 解决方案**类别。
+3. 在**新项目**对话框中下, **Visual C#** 或**Visual Basic**，展开**Office/SharePoint**，然后选择**SharePoint 解决方案**类别。
 
 4. 在模板列表中，选择**SharePoint 2013 的可视 Web 部件**模板，然后选择**确定**按钮。
 

@@ -1,6 +1,6 @@
 ---
 title: 安装 Python 支持
-description: 详细介绍了如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安装针对 Visual Studio 的 Python 工具 (PTVS)，包括选项和安装位置。
+description: 如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安装针对 Visual Studio 的 Python 工具 (PTVS)，包括选项和安装位置。
 ms.date: 02/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a998a2a62915d1ce998e30202f4b4fd0838975a3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6f4af615091751f1076a5fe8659a8749fc41ca37
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="installing-python-support-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中安装 Python 支持
+# <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安装 Python 支持
 
 若要安装针对 Visual Studio 的 Python 支持（亦称为“针对 Visual Studio 的 Python 工具 (PTVS)”），请按照 Visual Studio 版本对应部分中的说明操作：
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 04/19/2018
 
     ![Visual Studio 2015 安装程序中的 PTVS 选项](media/installation-vs2015.png)
 
-1. Visual Studio 安装程序完成后，[安装所选的 Python 解释器](installing-python-interpreters.md)。 如果你已安装解释器且 Visual Studio 不会自动检测它，请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)。
+1. Visual Studio 安装程序完成后，[安装所选的 Python 解释器](installing-python-interpreters.md)。 如果你已安装解释器且 Visual Studio 不会自动检测它，请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 及更早版本
 
@@ -105,7 +105,7 @@ ms.lasthandoff: 04/19/2018
     - Visual Studio 2012：[Visual Studio 2012 PTVS 2.1](https://pytools.codeplex.com/downloads/get/920478)
     - Visual Studio 2010：[Visual Studio 2010 PTVS 2.1](https://pytools.codeplex.com/downloads/get/920479)
 
-1. [安装所选的 Python 解释器](installing-python-interpreters.md)。 如果你已安装解释器且 Visual Studio 不会自动检测它，请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)。
+1. [安装所选的 Python 解释器](installing-python-interpreters.md)。 如果你已安装解释器且 Visual Studio 不会自动检测它，请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
 ## <a name="install-locations"></a>安装位置
 

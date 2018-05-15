@@ -1,5 +1,5 @@
 ---
-title: 在 Azure 应用服务上安装 Python 解释器和库
+title: 在 Azure App Service 上配置 Python
 description: 如何在 Azure 应用服务上安装 Python 解释器和库，并配置 Web 应用程序，以正确引用该解释器。
 ms.date: 09/13/2017
 ms.prod: visual-studio-dev15
@@ -12,13 +12,13 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cd3be2ee5d62c687fab1c822e3469d9523624047
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a71ea2210bfc6c56a235f194354c3279c8e7370
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="managing-python-on-azure-app-service"></a>在 Azure App Service 上管理 Python
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>如何在 Azure App Service 上设置 Python 环境
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) 是适用于 Web 应用的平台即服务产品/服务，这些应用包括通过浏览器访问的站点、用户自己的客户端使用的 REST API 或事件触发的处理过程。 应用服务完全支持使用 Python 实现应用。
 
@@ -46,7 +46,7 @@ Azure App Service 上的可自定义 Python 支持作为一组应用服务站点
 
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>通过 Azure 资源管理器选择 Python 版本
 
-如果要使用 Azure 资源管理器模板部署应用服务，请将站点扩展添加为资源。 此扩展显示为一个嵌套资源，其类型为 `siteextensions`，名称来源于 [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22)。
+如果要使用 Azure 资源管理器模板部署应用服务，请将站点扩展添加为资源。 具体而言，此扩展显示为一个嵌套资源（`resources` 下的 `resources` 对象），其类型为 `siteextensions`，名称来源于 [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22)。
 
 例如，添加对 `python361x64` (Python 3.6.1 x64) 的引用后，模板外观可能如下所示（省略了某些属性）：
 
