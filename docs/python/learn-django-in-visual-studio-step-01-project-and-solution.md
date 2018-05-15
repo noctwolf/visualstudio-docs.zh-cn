@@ -1,7 +1,7 @@
 ---
 title: 教程 - 了解 Visual Studio 中的 Django，步骤 1
 description: Visual Studio 项目上下文中 Django 基础知识的演练，演示 Visual Studio 如何为 Django 开发提供支持。
-ms.date: 04/25/2018
+ms.date: 05/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97f801d111f7fcb2aaeb207c3f3fcf1784a04f30
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>教程步骤 1：在 Visual Studio 中开始使用 Django Web 框架
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 04/27/2018
 
 ## <a name="prerequisites"></a>系统必备
 
-- 安装有 Python 工作负载的 Visual Studio 2017。 有关说明，请参阅[安装针对 Visual Studio 的 Python 支持](installing-python-support-in-visual-studio.md)。
+- Visual Studio 2017 应具备以下选项：
+  - “Python 开发”工作负载（安装程序中的“工作负载”选项卡）。 有关说明，请参阅[安装针对 Visual Studio 的 Python 支持](installing-python-support-in-visual-studio.md)。
+  - “代码工具”下“单个组件”选项卡上的“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”。
 
 Django 项目模板也包含在针对 Visual Studio 的 Python 工具的所有早期版本中，尽管细节可能不同于本教程中讨论的内容（特别是不同于早期版本的 Django框架）。
 
@@ -89,7 +91,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
     ![显示面向源代码管理的可用 Git 存储库选项的“团队资源管理器”窗口](media/django/step01-team-explorer.png)
 
-    可以为自己的项目选择任何所需的服务。 本教程演示了如何使用 GitHub，其中本教程已完成的示例代码保存在 [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django) 存储库中。
+    可以为自己的项目选择任何所需的服务。 本教程演示了如何使用 GitHub，其中本教程已完成的示例代码保存在 [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django) 存储库中。
 
 1. 选择任一“发布”控件时，“团队资源管理器”都将提示你输入详细信息。 例如，在发布本教程的示例时，必须首先创建存储库本身，在这种情况下，“推送到远程存储库”选项将与存储库的 URL 结合使用。
 
@@ -206,4 +208,4 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 - Django 项目代码：[编写你的第一个 Django 应用，第 1 部分](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - 管理实用工具：[django-admin 和 manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
-- GitHub 上的教程源代码：[Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- GitHub 上的教程源代码：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
