@@ -5,16 +5,16 @@ ms.date: 03/23/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: dantogno
-ms.author: v-davian
+author: TerryGLee
+ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4d7f965cd2a0cd34ea3cb889f25809d32bee2270
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 Visual Studio Tools for Unity 更改日志。
@@ -84,7 +84,7 @@ Visual Studio Tools for Unity 更改日志。
 -   **集成：**
 
     -   仅对外部更改重载项目（含有限制）。
- 
+
 ## <a name="3601"></a>3.6.0.1
  发布时间 2018-01-24
 
@@ -93,9 +93,9 @@ Visual Studio Tools for Unity 更改日志。
 -   **集成：**
 
     -   固定自动 pdb 到 mdb 调试符号转换。
-    
+
     -   修复了在尝试更改数组大小时对 EditorPrefs.GetBool 的间接调用影响检查器的问题。
- 
+
 ## <a name="3600"></a>3.6.0.0
  发布时间 2018-01-10
 
@@ -112,7 +112,7 @@ Visual Studio Tools for Unity 更改日志。
 -   **调试器：**
 
     -   添加了对含有新 Unity 运行时的 DebuggerHidden/DebuggerStepThrough 属性的支持。
-    
+
 -   **向导：**
 
     -   引入向导的“最新”版本。
@@ -126,7 +126,7 @@ Visual Studio Tools for Unity 更改日志。
 -   **调试器：**
 
     -   修复了处理突发事件的争用问题。
-    
+
 -   **向导：**
 
     -   在插入方法前刷新 roslyn 上下文。

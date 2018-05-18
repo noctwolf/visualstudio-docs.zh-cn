@@ -1,16 +1,15 @@
 ---
 title: 连接的服务
 description: 在 Visual Studio for Mac 中将 Azure 数据存储、身份验证和推送通知添加到移动应用
-ms.prod: xamarin
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: asb3993
 ms.author: amburns
 ms.date: 04/04/2018
-ms.openlocfilehash: 3e179f333cbc71f39f24795f6720e94b298441c4
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d907684982f29947243b3b33aec1e18dbf95a101
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="connected-services-walkthrough"></a>“连接的服务”演练
 

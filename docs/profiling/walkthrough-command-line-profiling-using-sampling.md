@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941597abd21d62501546860cf9cc8adc8fc6de2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>演练：使用采样进行命令行分析
 
@@ -54,13 +54,13 @@ ms.lasthandoff: 04/19/2018
 
 4. 键入以下命令设置相应的环境变量：
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleon
     ```
 
 5. 通过运行 VSPerfCmd.exe 开始进行分析，此工具是控制探查器的命令行工具。 以下命令在采样模式下启动应用程序和探查器：
 
-    ```
+    ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
@@ -76,13 +76,13 @@ ms.lasthandoff: 04/19/2018
 
 9. 关闭探查器。 键入以下命令：
 
-    ```
+    ```cmd
     VSPerfCmd /shutdown
     ```
 
 10. 使用以下命令重置环境变量：
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleoff
     ```
 
@@ -94,7 +94,7 @@ ms.lasthandoff: 04/19/2018
 
     - 通过使用命令行工具 VSPerfReport.exe 生成逗号分隔值 (.csv) 文件。 若要生成在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE 外部使用的报表，请使用以下命令：
 
-        ```
+        ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 

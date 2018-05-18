@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e0d6527227dfb638452337d1978bcbede29ef4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-the-structure-of-code"></a>查看代码结构
 
@@ -193,8 +193,8 @@ ms.lasthandoff: 04/26/2018
 
 |||
 |-|-|
-|快速操作和重构...||
-|重命名...||
+|**快速操作和重构**||
+|**重命名**||
 |生成包含文件的关系图||
 |查看定义||
 |**转到定义**|查找定义（或分部类的多个定义）并将它们显示在“查找结果”窗口中。|

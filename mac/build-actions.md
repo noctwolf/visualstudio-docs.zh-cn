@@ -1,20 +1,21 @@
 ---
 title: 生成操作
+description: 本文介绍可用于 C# 项目的各种生成操作
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 3e876bbc20f2f2e86ba7ec4806f67f4a2573a089
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 889414d391a4a894879399317d782df58a8bacb3
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="build-actions"></a>生成操作
 
 Visual Studio for Mac 中的所有文件都有一个生成操作，用于控制生成过程中对文件执行的操作。 可通过右键单击任意文件并浏览到“生成操作”对其进行设置，如下所示：
 
-![](media/projects-and-solutions-image1.png)
+![从解决方案资源管理器选择编译生成操作](media/projects-and-solutions-image1.png)
 
 C# 项目的一些常见生成操作为：
 

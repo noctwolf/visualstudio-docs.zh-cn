@@ -2,7 +2,7 @@
 title: 安装 Visual Studio 2017 | Microsoft Docs
 description: 了解如何逐步安装 Visual Studio。
 ms.custom: ''
-ms.date: 12/04/2017
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39496b09c72c6c5eb72fb1c5bedb59285d01347
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 27bcbb12ac8111ad76b5b71c486081d9e075365e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="install-visual-studio-2017"></a>安装 Visual Studio 2017
 
@@ -119,7 +119,15 @@ ms.lasthandoff: 04/20/2018
 
 更改默认语言的另一种方法是从命令行运行安装程序。 例如，可以通过运行以下命令来强制安装程序用英语运行：`vs_installer.exe --locale en-US`。 安装程序下一次运行时会记住此设置。 安装程序支持以下语言标记：zh-cn、zh-tw、cs-cz、en-us、es-es、fr-fr、de-de、it-it、ja-jp、ko-kr、pl-pl、pt-br、ru-ru 和 tr-tr。
 
-## <a name="step-7---start-developing"></a>第 7 步 - 开始开发
+## <a name="step-7---change-the-installation-location-optional"></a>第 7 步 - 更改安装位置（可选）
+
+**15.7 的新增功能**：现在可减少系统驱动器上 Visual Studio 的安装量。 可以选择将下载缓存、共享组件、SDK 和工具移动到不同驱动器，并将 Visual Studio 安装在其运行速度最快的驱动器上。
+
+  ![Visual Studio 2017 - 更改安装位置](media/installation-options-by-location.png "更改安装位置")
+
+有关详细信息，请参阅[更改 Visual Studio 中的安装位置](change-installation-locations.md)页。
+
+## <a name="step-8---start-developing"></a>第 8 步 - 开始开发
 
 1. Visual Studio 安装完成后，单击“启动”按钮，[开始使用 Visual Studio 进行开发](../ide/get-started-developing-with-visual-studio.md)。
 

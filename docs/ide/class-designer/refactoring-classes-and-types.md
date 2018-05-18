@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01a27861287bcc5fe419a9be1784177742cda815
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3104266e92bc05f82a4d97fb62fc20bc9e79c0eb
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>重构类和类型（类设计器）
 
@@ -40,8 +40,9 @@ ms.lasthandoff: 04/26/2018
 |----------|------------------------|
 |**重构类：** 可以通过重构操作将类拆分为分部类或实现抽象基类。|-   [如何：将类拆分为分部类](how-to-split-a-class-into-partial-classes.md)|
 |**使用接口：** 在类设计器中，可以在类图上实现接口，方法是将它连接到为接口方法提供代码的类。|-   [如何：实现接口](how-to-implement-an-interface.md)|
-|**重构类型、类型成员和参数：** 通过使用类设计器，可以重命名类型、重写类型成员，或将它们从一种类型移动到另一种类型。 此外还可创建可以为 null 的类型。|-   [重命名类型和类型成员](refactoring-classes-and-types.md#RenamingTypesAndMembers)<br />-   [将类型成员从一个类型移到另一个类型](refactoring-classes-and-types.md#MovingTypeMembers)<br />-   [如何：创建可以为 Null 的类型](how-to-create-a-nullable-type.md)|
+|**重构类型、类型成员和参数：** 通过使用类设计器，可以重命名类型、重写类型成员，或将它们从一种类型移动到另一种类型。 此外还可创建可以为 null 的类型。|-   [重命名类型和类型成员](refactoring-classes-and-types.md#rename)<br />-   [将类型成员从一个类型移到另一个类型](refactoring-classes-and-types.md#move)<br />-   [如何：创建可以为 Null 的类型](how-to-create-a-nullable-type.md)|
 
+<a name="rename"></a>
 ### <a name="rename-types-and-type-members"></a>重命名类型和类型成员
 
 在类设计器中，你可以在类图上或在属性窗口中重命名类型或类型成员。 在类详细信息窗口中，你可以更改成员名称但不能更改类型名称。 类型或类型成员的重命名将传播到所有的窗口和旧名称出现的代码位置。
@@ -77,6 +78,7 @@ ms.lasthandoff: 04/26/2018
 
      新名称将传播到所有的窗口和当前项目中旧名称出现的代码位置。
 
+<a name="move"></a>
 ### <a name="move-type-members-from-one-type-to-another"></a>将类型成员从一个类型移到另一个类型
 
 使用“类设计器” 可以将类型成员从一个类型移到另一个类型，前提是两个类型均在当前类图中可见。

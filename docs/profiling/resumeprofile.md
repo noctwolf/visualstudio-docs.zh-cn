@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1db214a40411b8c03e46463fda9ed8b235ab03
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1572f1473e2da8f84887b6571755dc259e19762b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` 方法递减指定分析级别的挂起/继续计数器的值。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(  
                        PROFILE_CONTROL_LEVEL Level,   
                        unsigned int dwId);  
@@ -73,7 +73,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 ## <a name="example"></a>示例  
  下面的示例演示 ResumeProfile 函数。 该示例假定已对由 [PROFILE_CURRENTID](../profiling/profile-currentid.md) 标识的同一线程或进程调用了 SuspendProfile 方法。  
   
-```  
+```cpp  
 void ExerciseResumeProfile()  
 {  
     // The initial value of the Suspend/Resume counter is 0.   

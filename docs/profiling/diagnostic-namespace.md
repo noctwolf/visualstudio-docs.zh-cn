@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29164c08b03bd23980aad381a1a832b2857309a6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3c3e6909bcb7299f4fd6d725334c26d2b59e0edb
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="diagnostic-namespace"></a>diagnostic 命名空间
 `diagnostics` 命名空间提供用于发出并行可视化工具标记的功能。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp  
 namespace diagnostic;  
 ```  
   
@@ -45,7 +45,7 @@ namespace diagnostic;
 |[marker_importance 枚举](../profiling/marker-importance-enumeration.md)|表示并发可视化工具标记的重要性级别。|  
   
 ## <a name="requirements"></a>惠?  
- **标头：**cvmarkersobj.h  
+ **标头：** cvmarkersobj.h  
   
  **命名空间：** 并发  
   

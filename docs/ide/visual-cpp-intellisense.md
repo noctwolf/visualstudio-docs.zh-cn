@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd4284e242f91525e14630375d5ea624968f60c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
-用于 C++ 的 IntelliSense 可用于独立文件及作为 C++ 项目一部分的文件。 在跨平台项目中，一些 IntelliSense 功能可用于共享代码项目中的 .cpp 和 .c 文件，甚至当你处于 Android 或 iOS 上下文中也可以。
+用于 C++ 的 IntelliSense 可用于独立文件及作为 C++ 项目一部分的文件。 在跨平台项目中，一些 IntelliSense 功能可用于共享代码项目中的 .cpp 和 .c 文件，甚至在处于 Android 或 iOS 上下文中也可以。
 
 ## <a name="intellisense-features-in-c"></a>C++ 中的 IntelliSense 功能
 
@@ -73,23 +73,23 @@ IntelliSense 是使编码更方便的一组功能的名称。 由于不同的人
 
 注意下列事项：
 
-- 第 8 行的 #else 分支呈灰色，以指示非活动状态的区域，因为 __ANDROID\_\_ 是针对 Android 项目定义的。
+- 第 8 行的 `#else` 分支呈灰色，指示非活动状态的区域，因为 `__ANDROID__` 是针对 Android 项目定义的。
 
-- 第 11 行的问候语变量通过标识符 HELLO 进行初始化，该标识符具有紫色波形曲线。 这是因为当前处于非活动状态的 iOS 项目中没有定义任何标识符 HELLO。 第 11 行在 Android 项目中将进行编译，但在 iOS 项目中则不会进行编译。 这是共享代码，所以你应该做出一些更改，即使该代码是在当前处于活动状态的配置中进行编译也是如此。
+- 第 11 行的问候语变量通过标识符 `HELLO` 进行初始化，该标识符具有紫色波形曲线。 这是因为当前处于非活动状态的 iOS 项目中没有定义任何标识符 `HELLO`。 第 11 行在 Android 项目中将进行编译，但在 iOS 项目中则不会进行编译。 这是共享代码，所以你应该做出一些更改，即使该代码是在当前处于活动状态的配置中进行编译也是如此。
 
-- 第 12 行的标识符 BYE 上具有红色波形曲线；当前选定的活动项目中未定义此标识符。
+- 第 12 行的标识符 `BYE` 上具有红色波形曲线；当前选定的活动项目中未定义此标识符。
 
-现在，将活动项目更改为 iOS.StaticLibrary，并注意波形曲线如何变化。
+现在，将活动项目更改为 iOS.StaticLibrary，并注意波形曲线的变化。
 
 ![选择 iOS 作为活动项目。](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
 
 注意下列事项：
 
-- 第 6 行的 #ifdef 分支呈灰色，以指示非活动的区域，因为 __ANDROID\_\_ 不是针对 iOS 项目定义的。
+- 第 6 行的 `#ifdef` 分支呈灰色，指示非活动状态的区域，因为 `__ANDROID__` 是不是针对 iOS 项目定义的。
 
-- 第 11 行的问候语变量通过标识符 HELLO 进行初始化，该标识符现在具有红色波形曲线。 这是因为当前活动的 iOS 项目中没有定义任何标识符 HELLO。
+- 第 11 行的问候语变量通过标识符 `HELLO` 进行初始化，该标识符现在具有红色波形曲线。 这是因为当前处于活动状态的 iOS 项目中没有定义任何标识符 `HELLO`。
 
-- 第 12 行的标识符 BYE 上具有紫色波形曲线；当前处于非活动状态的 Android.NativeActivity 项目中未定义此标识符。
+- 第 12 行的标识符 `BYE` 上具有紫色波形曲线；当前处于非活动状态的 Android.NativeActivity 项目中未定义此标识符。
 
 ### <a name="intellisense-for-stand-alone-files"></a>用于独立文件的 IntelliSense
 
@@ -97,7 +97,7 @@ IntelliSense 是使编码更方便的一组功能的名称。 由于不同的人
 
 ![Visual C++ 单个文件 intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 
-默认情况下，单个文件 IntelliSense 仅使用标准包含目录来查找头文件。 若要添加其他目录，请打开解决方案节点上的快捷菜单，然后将你的目录添加到“调试源代码”列表中，如下图所示：
+默认情况下，单个文件 IntelliSense 仅使用标准包含目录来查找头文件。 若要添加其他目录，请打开“解决方案”节点上的快捷菜单，然后将目录添加到“调试源代码”列表中，如下图所示：
 
 ![将路径添加到标头文件。](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
 

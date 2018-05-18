@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96835e0f884494f4a6b94aa1a311b40e8a9d8ad9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 08b12e09348a28276d0c5d2f375b26e75c1ac3c5
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 
@@ -33,10 +33,10 @@ ms.lasthandoff: 04/26/2018
 |----------|----------|--------------------------|
 |安装|安装 Visual Studio。|[安装 Visual Studio](../install/install-visual-studio.md)|
 ||安装、更新或移除本地 Help 内容。|[安装和管理本地内容](../ide/install-and-manage-local-content.md)|
-|应用程序类型|部署 SharePoint 的解决方案。|[开发 SharePoint 解决方案的需求](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|
+|应用程序类型|部署 SharePoint 的解决方案。|[开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|  
 ||获取 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]的开发人员许可证。|[获取开发人员许可证](http://go.microsoft.com/fwlink/?LinkID=241313)|
 |工具箱|将经典 COM 控件添加到“工具箱”。|[工具箱](../ide/reference/toolbox.md)|
-|外接程序|安装和使用通过使用 IDE 中的经典 COM 编写的加载项。|[创建外接程序和向导](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
+|外接程序|安装和使用通过使用 IDE 中的经典 COM 编写的加载项。|[创建加载项和向导](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
 |生成|使用注册组件的后期生成事件。|[了解自定义生成步骤和生成事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||在生成 C++ 项目时包括一个注册步骤。|[了解自定义生成步骤和生成事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 |调试|调试使用提升的权限运行的应用程序。|[调试器设置和准备](../debugger/debugger-settings-and-preparation.md)|
@@ -46,12 +46,13 @@ ms.lasthandoff: 04/26/2018
 ||配置远程调试的防火墙。|[远程调试](../debugger/remote-debugging.md)|
 |性能工具|分析应用程序。|[性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)|
 |部署|在本地计算机上将 Web 应用程序部署到 Internet Information Services (IIS)。|[使用 Visual Studio 或 Visual Web Developer 将 ASP.NET Web 应用程序部署到承载提供程序：作为测试环境部署到 IIS](http://go.microsoft.com/fwlink/?LinkId=266478)|
+>>>>>>> 346075117af3d2bd1fddd9c3aca24516a39fa6a3
 
-## <a name="running-visual-studio-as-an-administrator"></a>以管理员身份运行 Visual Studio
+## <a name="run-visual-studio-as-an-administrator"></a>以管理员身份运行 Visual Studio
 
 每次启动 IDE 时，可利用管理权限启动 Visual Studio，或可以修改应用程序快捷方式以便始终利用管理权限运行。 有关详细信息，请参阅 Windows 帮助。
 
-### <a name="to-run-visual-studio-with-administrative-permissions"></a>使用管理权限运行 Visual Studio
+### <a name="run-visual-studio-with-administrative-permissions"></a>使用管理权限运行 Visual Studio
 
 这些说明适用于Windows 10。 它们与其他版本的 Windows 类似。
 

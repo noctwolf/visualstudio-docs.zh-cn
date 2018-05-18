@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2017 中的新增功能
 ms.custom: ''
-ms.date: 12/04/2017
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a523933dbc18d6fdc107415c6f7faefa9fc5135
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ae8a0424f822b4b84aed01badc5bc625aacdde8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
-#### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>[版本 15.6](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) 的更新内容
+#### <a name="updated-for-the-157-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>[版本 15.7](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) 的更新内容
 想从 Visual Studio 早期版本升级？ Visual Studio 2017 提供以下优势：为任何开发、应用和平台提供无与伦比的效率。 使用 Visual Studio 2017 开发适用于 Android、iOS、Windows、Linux、Web 和云的应用。 快速编码、轻松调试和诊断、时常测试，并且可以放心地进行发布。 还可通过构建自己的扩展，以便扩展和自定义 Visual Studio。 此版本发布之后，可使用版本控制、更具敏捷性且可高效协作！
 
 以下是我们自上一版本 Visual Studio 2015 以来所做更改的高级扼要重述：
@@ -55,7 +55,11 @@ ms.lasthandoff: 04/26/2018
 
  ![Visual Studio 2017 安装对话框](../install/media/install-visual-studio-enterprise.png "Visual Studio 2017 安装屏幕")
 
-想要选择自己的组件而不是使用工作负载？ 请从安装程序选择“单个组件”选项卡。 想要在不更改 Windows 语言选项的情况下立即安装语言包？ 选择安装程序的“语言包”选项卡。  
+并且还可以选择微调安装：
+
+* 想要选择自己的组件而不是使用工作负载？ 请从安装程序选择“单个组件”选项卡。
+* 想要在不更改 Windows 语言选项的情况下立即安装语言包？ 选择安装程序的“语言包”选项卡。
+* **15.7 中的新增功能**：想要更改 Visual Studio 的安装位置？ 选择安装程序的“安装选项”选项卡。
 
 若要更深入地了解新的安装体验，包括指导你进行演练的分步说明，请参阅[安装 Visual Studio](../install/install-visual-studio.md) 页。
 
@@ -74,14 +78,14 @@ ms.lasthandoff: 04/26/2018
 新的 Visual Studio 性能中心可以帮助你优化 IDE 启动速度。 性能中心列出了所有可能减缓 IDE 启动速度的扩展和工具窗口。 可用它来确定扩展何时启动，或工具窗口是否在启动时打开，从而提高启动性能。
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>按需加载扩展速度更快
-Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根据需要加载扩展，而不是在 IDE 启动时加载。 想了解哪些扩展会影响启动、解决方案加载和键入性能？ 可以在“帮助”->“管理 Visual Studio 性能”中查看此信息。
+Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根据需要加载扩展，而不是在 IDE 启动时加载。 想了解哪些扩展会影响启动、解决方案加载和键入性能？ 可以在“帮助” > “管理 Visual Studio 性能”中查看此信息。
 
   ![Visual Studio 2017 中的选项对话框](../ide/media/vs2017ide-manage-vs-perf.png "Visual Studio 帮助对话框 - 性能管理")
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>利用漫游扩展管理器管理扩展
 现在登录 Visual Studio 时，能更轻松地通过你最喜爱的扩展设置每个开发环境。 通过在云中创建同步列表，新漫游扩展管理器会跟踪所有你喜欢的扩展。  
 
-若要查看 Visual Studio 中的扩展列表，请单击“工具”>“扩展”>“更新”，再单击“漫游扩展管理器”。
+若要查看 Visual Studio 中的扩展列表，请单击“工具” > “扩展和更新”，再单击“漫游扩展管理器”。
 
 ![Visual Studio 2017 - 扩展和更新对话框](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017-“工具”>“扩展和更新”对话框")
 
@@ -106,7 +110,7 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 有关详细信息，请参阅 [Live Unit Testing 简介](../test/live-unit-testing-intro.md)。 有关 Visual Studio Enterprise 2017 各个版本的新增功能列表，请参阅 [ Live Unit Testing 中的新增功能](../test/live-unit-testing-whats-new.md)。
 
-#### <a name="setting-up-a-cicd-pipeline"></a>设置 CI/CD 管道
+#### <a name="set-up-a-cicd-pipeline"></a>设置 CI/CD 管道
 #### <a name="automated-testing"></a>自动测试
 自动测试是任何 DevOps 管道的重要组成部分。 用户可以在更短的周期内，持续且可靠地测试并发布解决方案。 CI/CD（持续集成和持续交付）流有助于改善进程效率。
 
@@ -137,15 +141,15 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 #### <a name="experience-improved-navigation-controls"></a>体验改进的导航控件
 我们改善了导航体验，可让你更自信地从 A 导航到 B，同时减少此过程中的干扰。
 
-* **15.4 中的新增功能**：**转到定义（Ctrl+单击或 F12）**&ndash; 鼠标用户按 **Ctrl**，然后单击成员，可以更轻松地导航到成员定义。 通过按 **Ctrl** 并将鼠标悬停在代码符号上方，可在符号下方加下划线并将其转换为链接。 有关详细信息，请参阅[转到定义和查看定义](../ide/go-to-and-peek-definition.md)。  
+* **15.4 中的新增功能**：转到定义（Ctrl+单击或 F12）&ndash; 鼠标用户按 Ctrl，然后单击成员，可以更轻松地导航到成员定义。 通过按 **Ctrl** 并将鼠标悬停在代码符号上方，可在符号下方加下划线并将其转换为链接。 有关详细信息，请参阅[转到定义和查看定义](../ide/go-to-and-peek-definition.md)。  
 
-* **转到实现 (Ctrl+F12)** &ndash; 从任何基类型或基成员转到各种实现。
+* **转到实现** (Ctrl+F12) &ndash; 从任何基类型或基成员转到各种实现。
 
-* **转到全部（Ctrl+T 或 Ctrl+,）**&ndash; 直接导航到任何文件/类型/成员/符号声明。 可以筛选结果列表，也可以使用查询语法（例如使用“f searchTerm”导航到文件，使用“t searchTerm”导航到类型等）。
+* **转到全部**（Ctrl+T 或 Ctrl+,）&ndash; 直接导航到任何文件/类型/成员/符号声明。 可以筛选结果列表，也可以使用查询语法（例如使用“f searchTerm”导航到文件，使用“t searchTerm”导航到类型等）。
 
  ![改进后的“转到全部”](../ide/media/vs2017ide-navigation-go-to.png "改进后的“转到全部”功能的示例")
 
-* **查找所有引用 (Shift+F12)** &ndash; 通过语法着色，可以按项目、定义和路径的组合对“查找所有引用”的结果进行分组。 还可以“锁定”结果，这样既可以继续查找其他引用，又不会丢失原始结果。
+* **查找所有引用** (Shift+F12) &ndash; 通过语法着色，可以按项目、定义和路径的组合对“查找所有引用”的结果进行分组。 还可以“锁定”结果，这样既可以继续查找其他引用，又不会丢失原始结果。
 
  ![新的“查找所有引用”工具](../ide/media/vs2017ide-find-all-references.png "新的“查找所有引用”工具的示例")
 
@@ -178,7 +182,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 #### <a name="snapshots-and-intellitrace-step-back"></a>快照和 IntelliTrace 后退：
 **15.5 中的新增功能**：IntelliTrace 后退会在每个断点处及发生调试器步骤事件时自动拍摄应用程序的快照。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
 
-可以通过使用调试工具栏中的“后退”和前进”按钮浏览和查看快照。 这些按钮用于浏览“诊断工具”窗口中“事件”选项卡上显示的事件。 后退或前进到某个事件会自动激活所选事件的历史调试。
+可以通过使用“调试”工具栏中的“后退”和前进”按钮浏览和查看快照。 这些按钮用于浏览“诊断工具”窗口中“事件”选项卡上显示的事件。 后退或前进到某个事件会自动激活所选事件的历史调试。
 
 ![Visual Studio 中新的“异常帮助程序”对话框](../debugger/media/intellitrace-step-back-icons-description.png  "“后退”和“前进”按钮")
 
@@ -238,7 +242,7 @@ Visual Studio 2017 版本 15.5 提供对 Windows 10 Fall Creators Update SDK (10
 ![适用于 Xamarin 的权利编辑器](../ide/media/xamarin-entitlements-editor.png "适用于 Xamarin 的权利编辑器")
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
-**15.4 中的新增功能**：通过 Xamarin Live，开发人员可直接在 iOS 和 Android 设备上持续部署、测试和调试应用。 下载 Xamarin Live Player &mdash;可在 App Store 或 Google Play 中获取&mdash;后，可将设备与 Visual Studio 配对，彻底改变生成移动应用的方式。 此功能现已包含在 Visual Studio 中，转到“工具”>“选项”>“Xamarin”>“其他”>“启用 Xamarin Live Player”即可启用此功能。
+**15.4 中的新增功能**：通过 Xamarin Live，开发人员可直接在 iOS 和 Android 设备上持续部署、测试和调试应用。 下载 Xamarin Live Player &mdash;可在 App Store 或 Google Play 中获取&mdash;后，可将设备与 Visual Studio 配对，彻底改变生成移动应用的方式。 此功能现已包含在 Visual Studio 中，转到“工具” > “选项” > “Xamarin” > “其他” > “启用 Xamarin Live Player”即可启用此功能。
 
 ![Xamarin Live Player 对、部署和实时编辑模式的动画](../ide/media/xamarinliveplayer.gif)
 
@@ -288,7 +292,7 @@ Visual Studio 2017 所有版本随附：
 有关详细信息，请参阅 [Visual Studio Tools for AI](../ai/about-ai-tools.md) 页。
 
 
-## <a name="talk-to-us"></a>与我们交流  
+## <a name="contact-us"></a>联系我们  
  为什么将反馈发送至 Visual Studio 团队？ 因为我们严肃对待客户反馈。 这会给予我们巨大的行事动力。  
 
 如果有关于如何改进 Visual Studio 的建议，或想报告问题，请参阅[与我们交流](../ide/talk-to-us.md)页。  

@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e44ed988c15a77511d880f1877c1038579a360b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目标概述
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/26/2018
 
 - 在“工具箱”中筛选自定义控件，以删除在目标版本中不可用的控件，并在多个控件可用时仅显示最新版本。
 
-- 对 IntelliSense 进行筛选，以忽略在目标版本中不可用的语言功能。
+- 对 IntelliSense 进行筛选，忽略在目标版本中不可用的语言功能。
 
 - 筛选“属性”窗口中的属性，以忽略在目标版本中不可用的属性。
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > 框架目标不保证应用程序可正常运行。 必须对应用程序进行测试，以确保其能够针对目标版本运行。 无法面向版本早于 .NET Framework 2.0 的 Framework。
 
-## <a name="selecting-a-target-framework-version"></a>选择目标框架版本
+## <a name="select-a-target-framework-version"></a>选择目标框架版本
 
 创建项目时，请在“新建项目”对话框中选择目标 .NET Framework 版本。 可用框架的列表包含适用于所选模板类型的已安装框架版本。 对于不需要使用 .NET Framework 的模板类型（例如，.NET Core 模板），“框架”下拉列表将隐藏。
 
@@ -69,7 +69,7 @@ ms.lasthandoff: 04/26/2018
 
 对于现有项目，可在项目属性对话框中更改目标 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
-## <a name="resolving-system-and-user-assembly-references"></a>解析系统和用户程序集引用
+## <a name="resolve-system-and-user-assembly-references"></a>解析系统和用户程序集引用
 
 若要以 .NET Framework 版本为目标，必须先安装相应的程序集引用。 可以在 [.NET 下载](https://www.microsoft.com/net/download/windows)页下载针对不同版本 .NET Framework 的开发人员包。
 
@@ -77,9 +77,9 @@ ms.lasthandoff: 04/26/2018
 
 有关程序集引用的详细信息，请参阅[在设计时解析程序集](../msbuild/resolving-assemblies-at-design-time.md)。
 
-## <a name="enabling-linq"></a>启用 LINQ
+## <a name="enable-linq"></a>启用 LINQ
 
-当面向 .NET Framework 3.5 或更高版本时，会自动添加对 System.Core 的引用和 System.Linq 的项目级导入（仅 Visual Basic 中）。 若要使用 LINQ 功能，还必须打开 Option Infer（仅 Visual Basic 中）。 如果将目标更改为早期的 .NET Framework 版本，将自动删除相关引用和导入。 有关详细信息，请参阅[使用 LINQ](/dotnet/csharp/tutorials/working-with-linq)。
+当面向 .NET Framework 3.5 或更高版本时，会自动添加对 System.Core 的引用和 <xref:System.Linq> 的项目级导入（仅 Visual Basic 中）。 若要使用 LINQ 功能，还必须打开 `Option Infer`（仅 Visual Basic 中）。 如果将目标更改为早期的 .NET Framework 版本，将自动删除相关引用和导入。 有关详细信息，请参阅[使用 LINQ](/dotnet/csharp/tutorials/working-with-linq)。
 
 ## <a name="see-also"></a>请参阅
 

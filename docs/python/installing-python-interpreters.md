@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed5ac9e470b55281d1273bfe665be0813b37bf55
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="installing-python-interpreters"></a>安装 Python 解释器
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 04/19/2018
 
 Visual Studio（所有版本）通过检查注册表（下面的 [PEP 514 - Windows 注册表中的 Python 注册](https://www.python.org/dev/peps/pep-0514/)）自动检测各个已安装的 Python 解释器及其环境。
 
-如果 Visual Studio 并未检测到安装的环境，请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)。
+如果 Visual Studio 并未检测到安装的环境，请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
 Visual Studio 在 [Python 环境窗口](managing-python-environments-in-visual-studio.md)中显示所有已知环境，并自动检测现有解释器的更新。
 
@@ -45,7 +45,7 @@ Visual Studio 在 [Python 环境窗口](managing-python-environments-in-visual-s
 
 如果将现有解释器移到使用文件系统的新位置，则 Visual Studio 不会自动检测更改。
 
-- 如果最初通过“Python 环境”窗口指定解释器的位置，则使用该窗口中的“配置”选项卡来编辑其环境，以确定新位置。 请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)。
+- 如果最初通过“Python 环境”窗口指定解释器的位置，则使用该窗口中的“配置”选项卡来编辑其环境，以确定新位置。 请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
 - 如果使用安装程序安装解释器，则使用以下步骤在新位置重新安装解释器：
 

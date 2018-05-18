@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccafe38714df4d3851e0f81de0f2b03e9d72db52
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2eaa236a5cc4a11832cee3b4dfc43aa4ef0cb97c
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="walkthrough-build-an-application"></a>演练：生成应用程序
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="install-the-sample-application"></a>安装示例应用程序
 
-下载 [Introduction to Building WPF Applications](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419)（生成 WPF 应用程序简介）示例。 选择 C# 或 Visual Basic。 下载 .zip 文件后，将它解压缩并使用 Visual Studio 打开 ExpenseItIntro.sln 文件。
+下载 [Introduction to building WPF applications](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419)（生成 WPF 应用程序简介）示例。 选择 C# 或 Visual Basic。 下载 .zip 文件后，将它解压缩并使用 Visual Studio 打开 ExpenseItIntro.sln 文件。
 
 ## <a name="create-a-custom-build-configuration"></a>创建自定义生成配置
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 
 可以使用“配置管理器”对话框更改或创建配置和平台设置。 在此过程中将创建用于测试的生成配置。
 
-### <a name="to-create-a-build-configuration"></a>创建生成配置
+### <a name="create-a-build-configuration"></a>创建生成配置
 
 1. 打开“配置管理器”对话框。
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/26/2018
 
 接下来将生成具有自定义生成配置的解决方案。
 
-### <a name="to-build-the-solution"></a>生成解决方案
+### <a name="build-the-solution"></a>生成解决方案
 
 -   在菜单栏上，依次选择“生成” > “生成解决方案”。
 
@@ -89,11 +89,11 @@ ms.lasthandoff: 04/26/2018
 
 可在生成期间暂时隐藏某些警告消息，而不是使其扰乱生成输出。
 
-### <a name="to-hide-a-specific-c-warning"></a>隐藏特定的 C# 警告
+### <a name="hide-a-specific-c-warning"></a>隐藏特定的 C# 警告
 
 1. 在“解决方案资源管理器”中，选择顶级项目节点。
 
-1. 在菜单栏上，依次选择 **“查看”**、 **“属性页”**。
+1. 在菜单栏上，依次选择“查看” > “属性页”。
 
      将打开“项目设计器”。
 
@@ -109,11 +109,11 @@ ms.lasthandoff: 04/26/2018
 
      ![“Visual C# 生成警告”->“输出”窗口](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
 
-### <a name="to-suppress-all-visual-basic-build-warnings"></a>禁止显示所有 Visual Basic 生成警告
+### <a name="suppress-all-visual-basic-build-warnings"></a>禁止显示所有 Visual Basic 生成警告
 
 1. 在“解决方案资源管理器”中，选择顶级项目节点。
 
-1. 在菜单栏上，依次选择 **“查看”**、 **“属性页”**。
+1. 在菜单栏上，依次选择“查看” > “属性页”。
 
      将打开“项目设计器”。
 
@@ -131,15 +131,15 @@ ms.lasthandoff: 04/26/2018
 
  有关详细信息，请参阅[如何：禁止显示编译器警告](../ide/how-to-suppress-compiler-warnings.md)。
 
-## <a name="display-additional-build-details-in-the-output-window"></a>在输出窗口中显示其他生成详细信息
+## <a name="display-additional-build-details-in-the-output-window"></a>在“输出”窗口中显示其他生成详细信息
 
-你可以更改“输出”窗口中显示的关于生成过程的信息量。 生成详细程度通常设置为“最小”，这意味着，“输出”窗口仅显示生成过程的摘要以及任何高优先级的警告或错误。 使用[“选项”对话框->“项目和解决方案”->“生成和运行”](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)，可显示生成的详细信息。
+你可以更改“输出”窗口中显示的关于生成过程的信息量。 生成详细程度通常设置为“最小”，这意味着，“输出”窗口仅显示生成过程的摘要以及任何高优先级的警告或错误。 使用[“选项”对话框->“项目和解决方案”->“生成和运行”](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)，可显示有关生成的详细信息。
 
 > [!IMPORTANT]
 > 如果显示详细信息，生成将花费更长时间才能完成。
 
 
-### <a name="to-change-the-amount-of-information-in-the-output-window"></a>更改“输出”窗口中的信息量
+### <a name="change-the-amount-of-information-in-the-output-window"></a>更改“输出”窗口中的信息量
 
 1. 打开“选项”对话框。
 
@@ -149,7 +149,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在“MSBuild 项目生成输出详细信息”列表中，选择“常规”，然后选择“确定”按钮。
 
-1. 在菜单栏上，依次选择“生成”、“清理解决方案”。
+1. 在菜单栏上，依次选择“生成” > “清理解决方案”。
 
 1. 生成解决方案，然后查看“输出”窗口中的信息。
 
@@ -160,7 +160,7 @@ ms.lasthandoff: 04/26/2018
      在 Visual Basic 生成中，[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 不包括要排除的特定警告，因此不会出现任何警告。
 
     > [!TIP]
-    > 通过选择 Ctrl + F 键，显示“查找”窗口，可以搜索“输出”窗口的内容。
+    > 如果通过选择 Ctrl+F 键，显示“查找”对话框，则可以搜索“输出”窗口的内容。
 
 有关详细信息，请参阅[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
@@ -170,7 +170,7 @@ ms.lasthandoff: 04/26/2018
 
 有关详细信息，请参阅[如何：更改生成输出目录](../ide/how-to-change-the-build-output-directory.md)和[在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)。
 
-### <a name="to-specify-a-release-build-for-visual-basic"></a>指定 Visual Studio 的版本生成
+### <a name="specify-a-release-build-for-visual-basic"></a>指定 Visual Studio 的版本生成
 
 1. 打开“项目设计器”。
 
@@ -184,7 +184,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在“生成输出路径”框中，指定网络路径。
 
-     例如，可以指定 \\\myserver\builds。
+     例如，你可以指定 `\\myserver\builds`。
 
     > [!IMPORTANT]
     > 可能会出现一个消息框，警告指定的网络共享位置可能不受信任。 如果信任指定的位置，请在消息框中选择“确定”按钮。
@@ -193,7 +193,7 @@ ms.lasthandoff: 04/26/2018
 
      ![“生成”菜单上的“生成解决方案”命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-### <a name="to-specify-a-release-build-for-c"></a>指定 C# 的版本生成 #
+### <a name="specify-a-release-build-for-c"></a>指定 C# 的版本生成 #
 
 1. 打开“项目设计器”。
 
@@ -207,7 +207,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在“输出路径”框中，指定网络路径。
 
-     例如，可以指定 \\\myserver\builds。
+     例如，可指定 `\\myserver\builds`。
 
     > [!IMPORTANT]
     > 可能会出现一个消息框，警告指定的网络共享位置可能不受信任。 如果信任指定的位置，请在消息框中选择“确定”按钮。
@@ -218,7 +218,7 @@ ms.lasthandoff: 04/26/2018
 
      ![“生成”菜单上的“生成解决方案”命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-   可执行文件已复制到指定的网络路径。 其路径为 \\\myserver\builds\\*FileName*.exe。
+   可执行文件已复制到指定的网络路径。 其路径将为 `\\myserver\builds\\FileName.exe`。
 
 祝贺：你已成功完成此演练。
 

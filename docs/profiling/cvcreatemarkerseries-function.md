@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d6148adfdca2b432eae15157a13e10051ca710
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3aa1acd52eeffe454dda3f081c97865290245644
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries 函数
 为给定提供程序创建标记系列。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```C  
 _Check_return_ HRESULT CvCreateMarkerSeriesW(  
     _In_ PCV_PROVIDER  pProvider,  
     _In_ LPCWSTR pSeriesName,  
@@ -53,11 +53,11 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
  成功创建标记系列时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。  
   
 ## <a name="requirements"></a>惠?  
- **标头：**cvmarkers.h  
+ **标头：** cvmarkers.h  
   
- **Unicode：**CvCreateMarkerSeriesW  
+ **Unicode：** CvCreateMarkerSeriesW  
   
- **ANSI：**CvCreateMarkerSeriesA  
+ **ANSI：** CvCreateMarkerSeriesA  
   
 ## <a name="see-also"></a>请参阅  
  [C++ 库参考](../profiling/cpp-library-reference.md)

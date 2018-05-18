@@ -3,14 +3,14 @@ title: 更新 Visual Studio for Mac
 description: 更新 Visual Studio for Mac 和访问预览版指南。
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: eeda1afa2e9cd311c09660f2af5190b224b9c341
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7f93a76f3b054755a385696a6cfc8649a608a58b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="updating-visual-studio-for-mac"></a>更新 Visual Studio for Mac
 
@@ -19,8 +19,7 @@ Visual Studio for Mac 定期发布 IDE 和受支持框架的更新。 这些更�
 Visual Studio for Mac 提供三种获取最新版本的通道：
 
 * **稳定版** - 提供经过全面测试的更新。 建议使用此通道获取最佳开发体验。
-* **Beta** - 让你能够提前获取要在稳定通道中发布的候选更新。
-* **Alpha** - 让你能够提前获取添加新功能的更新，但这些更新可能不够可靠，不适合日常使用。
+* **Beta** / **Alpha** - 让你能够提前获取要在稳定通道中发布的候选更新。 这些版本在日常使用中可能不可靠。
 
 ## <a name="checking-for-updates"></a>检查更新
 

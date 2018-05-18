@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b97eb0c6ed496da29acb65ddc07b9f25f58b7d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 897ce97da798509253bf3f7d93a79735cc354965
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 
@@ -79,7 +79,7 @@ ms.lasthandoff: 04/26/2018
     > [!WARNING]
     > 将录制在桌面上执行的所有操作。 如果你正在执行可能会导致敏感数据被包括在录制中的操作，则暂停录制。
 
-     **若要删除错误录制的操作**，请选择“编辑操作”。
+     若要删除错误录制的操作，请选择“编辑步骤”。
 
      **若要生成将复制你的操作的代码**，请选择“生成代码”图标并且键入编码的 UI 测试方法的名称和描述。
 
@@ -273,9 +273,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 在创建编码的 UI 测试之后，你可以通过使用 Visual Studio 中的以下任何工具对其进行编辑：
 
-- **编码的 UI 测试生成器：**使用编码的 UI 测试生成器来将其他控件和验证添加到你的测试。 请参阅本主题中的[添加控件并验证它们的属性](#VerifyingCodeUsingCUITGenerateAssertions)部分。
+- **编码的 UI 测试生成器：** 使用编码的 UI 测试生成器来将其他控件和验证添加到你的测试。 请参阅本主题中的[添加控件并验证它们的属性](#VerifyingCodeUsingCUITGenerateAssertions)部分。
 
-- **编码的 UI 测试编辑器：**通过编码的 UI 测试编辑器，可轻松修改编码的 UI 测试。 使用编码的 UI 测试编辑器，可以查找、查看和编辑测试方法。 也可以在 UI 控件映射中编辑 UI 操作及其关联的控件。 有关详细信息，请参阅[使用编码的 UI 测试编辑器编辑编码的 UI 测试](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
+- **编码的 UI 测试编辑器：** 通过编码的 UI 测试编辑器，可轻松修改编码的 UI 测试。 使用编码的 UI 测试编辑器，可以查找、查看和编辑测试方法。 也可以在 UI 控件映射中编辑 UI 操作及其关联的控件。 有关详细信息，请参阅[使用编码的 UI 测试编辑器编辑编码的 UI 测试](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
 
 - **代码编辑器：**
 
@@ -429,7 +429,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ## <a name="whats-next"></a>后续步骤
 
-**运行编码的 UI 测试的其他选项：**你可以直接从 Visual Studio 运行编码的 UI 测试，如本主题前面所述。 此外，可以在 Microsoft 测试管理器或 Team Foundation Build 中运行自动 UI 测试。 与其他自动测试不同，当编码的 UI 测试为自动时，在运行时它们必须与桌面进行交互。
+**运行编码的 UI 测试的其他选项：** 你可以直接从 Visual Studio 运行编码的 UI 测试，如本主题前面所述。 此外，可以在 Microsoft 测试管理器或 Team Foundation Build 中运行自动 UI 测试。 与其他自动测试不同，当编码的 UI 测试为自动时，在运行时它们必须与桌面进行交互。
 
 - [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)
 
@@ -437,7 +437,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [如何：设置测试代理以运行与桌面交互的测试](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
-**添加对自定义控件的支持：**编码的 UI 测试框架并非支持每个可能的 UI，可能不支持你要测试的 UI。 例如，不能立即创建 Microsoft Excel UI 的编码的 UI 测试。 然而，可以创建编码的 UI 测试框架的扩展来支持自定义控件。
+**添加对自定义控件的支持：** 编码的 UI 测试框架并非支持每个可能的 UI，可能不支持你要测试的 UI。 例如，不能立即创建 Microsoft Excel UI 的编码的 UI 测试。 然而，可以创建编码的 UI 测试框架的扩展来支持自定义控件。
 
 - [启用控件的编码的 UI 测试](../test/enable-coded-ui-testing-of-your-controls.md)
 
