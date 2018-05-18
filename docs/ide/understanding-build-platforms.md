@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3bc8bb2eddf756b238b88e79050552caef945d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-build-platforms"></a>了解生成平台
 
@@ -30,9 +30,9 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="in-this-section"></a>本节内容
 
- [如何：配置项目以面向平台](../ide/how-to-configure-projects-to-target-platforms.md)说明如何配置项目以面向特定的平台。
+ [如何：配置项目以面向平台](../ide/how-to-configure-projects-to-target-platforms.md) 说明如何配置项目以面向特定的平台。
 
- [如何：将项目配置为面向多个平台](../ide/how-to-configure-projects-to-target-multiple-platforms.md)说明如何配置项目以面向多个平台。
+ [如何：将项目配置为面向多个平台](../ide/how-to-configure-projects-to-target-multiple-platforms.md) 说明如何配置项目以面向多个平台。
 
 ## <a name="see-also"></a>请参阅
 

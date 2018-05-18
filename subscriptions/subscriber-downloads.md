@@ -9,11 +9,11 @@ description: 了解如何查找和下载 Visual Studio 订阅中包含的 Micros
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 28239e7588e99573d709db08255c38142c907098
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用订阅者下载
 订阅者权益包含可以下载各种各样的软件。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 04/06/2018
 
 订阅者无法使用某些特定产品的几条原因：
 
-- **你的订阅级别或计划中不包括该产品。** [了解更多](https://www.visualstudio.com/vs/pricing/)关于你的订阅可获得的软件和权益，或[下载](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx_)按订阅级别可获得的产品的完整列表。 某些程序（例如 [Microsoft 合作伙伴网络](https://partner.microsoft.com/)）在其权益中包含了 Visual Studio 订阅。  这种订阅并不包含购买的 Visual Studio 订阅中包含的全部产品。 此类计划的订阅者可将关于产品下载可用性的问题直接反映给此类计划的支持团队。
+- **你的订阅级别或计划中不包括该产品。** [了解更多](https://www.visualstudio.com/vs/pricing/)关于你的订阅可获得的软件和权益，或[下载](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx)按订阅级别可获得的产品的完整列表。 某些程序（例如 [Microsoft 合作伙伴网络](https://partner.microsoft.com/)）在其权益中包含了 Visual Studio 订阅。  这种订阅并不包含购买的 Visual Studio 订阅中包含的全部产品。 此类计划的订阅者可将关于产品下载可用性的问题直接反映给此类计划的支持团队。
 - **订阅中不包括该产品。** 由于特殊许可条款、技术限制或开发人员关联性的原因，某些 Microsoft 产品没有包含在订阅中。 如果想建议在订阅中增加某项产品，请发送电子邮件至 Visual Studio [客户服务](https://www.visualstudio.com/subscriptions/support/)中心。
 - **产品公开提供。** 某些工具、SDK、DDK 和服务包可从 [Microsoft 下载中心](https://www.microsoft.com/download)公开获取。 某些这样的产品没有向“下载”中发布。
 - **产品尚未发布。**  下载中有许多预发布版本（beta 版本）和候选发布。 但是，并非所有 beta 版本均包括在内；例如，一些 beta 版本需要特殊的注册或资格。 要了解开放技术测试程序的详细信息，请访问 [Microsoft Connect](http://connect.microsoft.com/)。

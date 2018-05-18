@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d96d547c3558c9c1e5ce4d11904a0c8cce048e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-code-snippets"></a>C# 代码片段
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 04/26/2018
 
  可以在光标位置插入代码片段，或者在当前所选代码旁插入外侧代码片段。 可通过以下方式调用代码片段插入器：单击“IntelliSense”菜单上的“插入代码段”或“外侧代码”，按 Ctrl+K、X，或者按 Ctrl+K、S。
 
- 代码片段插入器显示所有可用代码片段的代码片段名称。 代码片段插入器还包括输入对话框，可在其中键入代码片段名称或部分代码片段。 代码片段插入器突出显示与代码片段名称最接近的匹配。 可随时按按 Tab 关闭代码片段插入器，并插入当前选定的代码片段。 按 Esc 或在代码编辑器中单击鼠标可关闭代码片段插入器，而不插入代码片段。
+ 代码片段插入器显示所有可用代码片段的代码片段名称。 代码片段插入器还包括输入对话框，可在其中键入代码片段名称或部分代码片段。 代码片段插入器突出显示与代码片段名称最接近的匹配。 可随时按按 Tab 关闭代码片段插入器，并插入当前选定的代码片段。 按 Esc 或在代码编辑器中单击鼠标会关闭代码片段插入器，而不插入代码片段。
 
 ## <a name="default-code-snippets"></a>默认代码片段
 

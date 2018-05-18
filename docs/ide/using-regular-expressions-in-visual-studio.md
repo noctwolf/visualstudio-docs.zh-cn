@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dae1c3d62fce5ba8b3991e41bade1d612b74647
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16a5647461c37502f2d7a91cfb71c8f96164f2b1
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
+# <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 
 Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-types/regular-expressions)来查找和替代文本。
 
@@ -32,7 +32,7 @@ Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-type
 
 要使用带编号的捕获组，请在正则表达式模式中用圆括号将该组括起来。 使用 `$number`（其中 `number` 是从 1 开始的整数）来指定替换模式中的特定编号组。 例如，已分组的正则表达式 `(\d)([a-z])` 定义了两个组：第一个组包含一个十进制数字，第二个组包含一个 a 到 z 之间的字符。 该表达式在以下字符串中查找四个匹配项：1a 2b 3c 4d。 替换字符串 `z$1` 仅引用第一个组，并将该字符串转换为 z1 z2 z3 z4。
 
-要了解可在替换模式中使用的正则表达式，请参阅[正则表达式中的替换 (.NET Guide)](/dotnet/standard/base-types/substitutions-in-regular-expressions)。
+要了解可在替换模式中使用的正则表达式，请参阅[正则表达式中的替代（.NET 指南）](/dotnet/standard/base-types/substitutions-in-regular-expressions)。
 
 ## <a name="regular-expression-examples"></a>正则表达式示例
 

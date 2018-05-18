@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35c99b9e75be50d00e560e9c8899420685f7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>从命令行添加层交互数据
 
@@ -54,20 +54,20 @@ ms.lasthandoff: 04/19/2018
 
 2. 初始化 .NET 分析和 TIP 环境变量。 键入以下命令：
 
-    ```
+    ```cmd
     vsperfclrenv /traceon
     vsperfclrenv /interactionon
     ```
 
 3. 启动探查器。 键入以下命令：
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp 
     ```
 
 4. 使用 VSPerfCmd 启动应用程序。 键入以下命令：
 
-    ```
+    ```cmd
     vsperfcmd /launch:DesktopApp.exe
     ```
 
@@ -75,7 +75,7 @@ ms.lasthandoff: 04/19/2018
 
 6. 清除 TIP 环境变量。 键入以下命令：
 
-    ```
+    ```cmd
     vsperfclrenv /off
     ```
 
@@ -97,13 +97,13 @@ ms.lasthandoff: 04/19/2018
 
 3. 初始化 .NET 分析环境变量。 键入以下命令：
 
-    ```
+    ```cmd
     vsperfclrenv /globaltraceon
     ```
 
 4. 初始化 TIP 环境变量。 键入以下命令
 
-    ```
+    ```cmd
     vsperfclrenv /globalinteractionon
     ```
 
@@ -113,7 +113,7 @@ ms.lasthandoff: 04/19/2018
 
 7. 启动探查器。 键入以下命令：
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -121,7 +121,7 @@ ms.lasthandoff: 04/19/2018
 
 9. 将探查器附加到该服务。 键入以下命令：
 
-    ```
+    ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -133,7 +133,7 @@ ms.lasthandoff: 04/19/2018
 
 12. 清除 .NET 和 TIP 分析环境变量。 键入以下命令：
 
-    ```
+    ```cmd
     vsperfclrenv /globaloff
     ```
 
@@ -151,7 +151,7 @@ ms.lasthandoff: 04/19/2018
 
 若要将层交互添加到使用 VSPerfASPNETCmd 收集的分析数据，请将 **/TIP** 选项添加到命令行。 例如，使用下面的命令行，通过检测方法收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序的层交互数据：
 
-```
+```cmd
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 

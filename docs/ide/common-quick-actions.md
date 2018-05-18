@@ -12,15 +12,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b638d7c2faf792da208cb1dbea153f24db25066
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70de979f1af431b85bc9fb2f07feec93486624ee
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="common-quick-actions"></a>常见快速操作
 
-此主题的各个部分列出了同时适用于 C# 和 Visual Basic 代码的一些常见快速操作。 这些操作为 Visual Studio 内置[分析程序规则](../code-quality/roslyn-analyzers-overview.md)的代码修补程序。
+此主题的各个部分列出了同时适用于 C# 和 Visual Basic 代码的一些常见“快速操作”。 这些操作是适用于编译器诊断或 Visual Studio 中的内置 [.NET Compiler Platform 分析器](../code-quality/roslyn-analyzers-overview.md)的代码修复。
 
 ## <a name="actions-that-fix-errors"></a>修复错误的操作
 

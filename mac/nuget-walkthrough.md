@@ -1,15 +1,15 @@
 ---
-title: 演练 - 在项目中包括 NuGet 包
+title: 在项目中包括 NuGet 包
 description: 本文档介绍如何在 Xamarin 项目中包括 NuGet 包。 文档将介绍如何查找和下载包，同时介绍 IDE 集成功能。
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 05762df8b06a69647c6c7a628db54ac499248374
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f251080351f1e448d250798c4f9a758114a6e5ab
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>在项目中包括 NuGet 包
 
@@ -26,8 +26,6 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 首先，创建一个名为 `HelloNuget` 的项目，如下所示。 虽然本示例演示的是 iOS 单一视图应用程序模板，但也可以使用任何支持的项目类型：
 
 ![新建 iOS 项目](media/nuget-walkthrough-NewProject.png)
-
-<a name="Adding_a_Package" class="injected"></a>
 
 ## <a name="adding-a-package"></a>添加包
 
@@ -50,9 +48,9 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 
 包下载完毕后会添加到项目中。 解决方案会发生以下更改：
 
-*   “引用”节点包含属于 NuGet 包的所有程序集列表。
-*   “包”节点显示每个已下载的 NuGet 包。 可以更新该列表中的包，或从列表中删除包。
-*   “packages.config”文件将添加到此项目。 IDE 使用此 XML 文件跟踪该项目中引用的包版本。 不应手动编辑此文件，而是应将其保存在版本控制中。 请注意，可以使用 project.json 文件，而不是 packages.config 文件。 project.json 文件是通过 NuGet 3 引入的新的包文件格式，支持可传递还原。 有关 project.json 的详细信息，请参阅 [NuGet 文档](http://docs.microsoft.com/NuGet/Schema/Project-Json)。 需要手动添加 project.json 文件，关闭项目并重新打开后才能在 Visual Studio for Mac 中使用 project.json 文件。
+* “引用”节点包含属于 NuGet 包的所有程序集列表。
+* “包”节点显示每个已下载的 NuGet 包。 可以更新该列表中的包，或从列表中删除包。
+* “packages.config”文件将添加到此项目。 IDE 使用此 XML 文件跟踪该项目中引用的包版本。 不应手动编辑此文件，而是应将其保存在版本控制中。 请注意，可以使用 project.json 文件，而不是 packages.config 文件。 project.json 文件是通过 NuGet 3 引入的新的包文件格式，支持可传递还原。 有关 project.json 的详细信息，请参阅 [NuGet 文档](http://docs.microsoft.com/NuGet/Schema/Project-Json)。 需要手动添加 project.json 文件，关闭项目并重新打开后才能在 Visual Studio for Mac 中使用 project.json 文件。
 
 ## <a name="using-nuget-packages"></a>使用 NuGet 包
 
@@ -60,8 +58,9 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 
 请确保将任何所需的 `using` 指令添加到文件顶部：
 
-
-    using Newtownsoft.json;
+```csharp
+using Newtownsoft.json;
+```
 
 大多数 NuGet 提供其他信息，如“自述文件”或连接到 NuGet 源的“项目”页链接。 通常可以在“添加包”页面的包简介中找到连接到该内容的链接：
 

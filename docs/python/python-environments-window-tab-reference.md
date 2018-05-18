@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7017ba7e91acc36b72c229cdf77ee7b604f6a920
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 96c177b48e594c7cec9f5dd026782f0d9541eb2b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>“Python 环境”窗口选项卡引用
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/19/2018
 
 | 命令 | 描述 |
 | --- | --- |
-| 使此环境成为新项目的默认环境 | 设置活动环境，这可能会导致 Visual Studio 在加载 IntelliSense 数据库时短时间无响应。 含有多个包的环境可能无响应的时间更长。 |
+| 使此环境成为新项目的默认环境 | 设置活动环境，这可能会导致 Visual Studio（2017 版本 15.5 及更高版本）在加载 IntelliSense 数据库时短时间无响应。 含有多个包的环境可能无响应的时间更长。 |
 | 访问分发服务器的网站 | 打开浏览器，访问 Python 分发所提供的 URL。 例如，对于 Python 3.x，会转到 python.org。 |
 | 打开交互窗口 | 在 Visual Studio 中为此环境打开[交互 (REPL) 窗口](python-interactive-repl-in-visual-studio.md)，应用任何[启动脚本（见下文）](#startup-scripts)。 |
 | 浏览交互式脚本 | 请参阅[启动脚本](#startup-scripts)。 |
@@ -75,7 +75,7 @@ ms.lasthandoff: 04/19/2018
 
 在先前版本中还标记为“pip”。
 
-管理环境中安装的包，还允许搜索并安装新包（包括任何依赖项）。
+使用 pip 管理环境中安装的包，还允许搜索并安装新包（包括任何依赖项）。 Visual Studio 2017 15.7 版及更高版本中包含一个“包(Conda)”选项，该选项改为使用 conda 包管理器。 （如果未看到该选项，请设置选项“工具” > “选项” > “Python” > “实验性” > “可用时使用 conda 包管理器[而不是 pip]”，并重启 Visual Studio。）
 
 将显示已安装的程序包，并带有更新（向上箭头）和卸载（圈圈中的 X）程序包的控件：
 
@@ -105,7 +105,8 @@ ms.lasthandoff: 04/19/2018
 
 ![Python 环境 IntelliSense 选项卡](media/environments-intellisense-tab.png)
 
-在 Visual Studio 2017 版本 15.5 和更早版本中，IntelliSense 完成依赖于为该库编译的数据库。 安装库后，将在后台生成数据库，但可能需要一些时间，并且可能在开始编写代码时此过程还未完成。 Visual Studio 2017 版本 15.6 和更高版本使用更快的方法提供不依赖于数据库的完成，除非专门选择启用它。
+- 在 Visual Studio 2017 版本 15.5 和更早版本中，IntelliSense 完成依赖于为该库编译的数据库。 安装库后，将在后台生成数据库，但可能需要一些时间，并且可能在开始编写代码时此过程还未完成。
+- Visual Studio 2017 15.6 版和更高版本默认使用更快的方法提供不依赖于数据库的完成。 因此，选项卡标记为“IntelliSense [数据库已禁用]”。 可通过清除选项“工具” > “选项” > “Python” > “实验性” > “针对环境使用新样式 IntelliSense”启用该数据库。
 
 Visual Studio 检测到新环境（或添加一个）时，它会通过分析库源文件，自动开始编译数据库 。 此过程可能会花一分钟到一小时不等或者更多时间，具体取决于安装的组件。 （例如，Anaconda 随附了许多库，需要花费一些时间来编译该数据库。）完成后，会获得 IntelliSense 的详细信息，并且在安装更多库之前，无需再次刷新数据库（使用“刷新 DB”按钮）。
 

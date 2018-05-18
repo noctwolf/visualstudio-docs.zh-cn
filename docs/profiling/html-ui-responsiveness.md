@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7dd31d94552895d42c803df81e1e66cd9a3947f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析中通用 Windows 应用中的 HTML UI 响应能力
 本主题介绍如何使用 UI 响应能力探查器（一种可用于 Windows 通用应用的性能工具）隔离应用中的性能问题。  
@@ -57,7 +57,7 @@ ms.lasthandoff: 04/19/2018
   
          当你无权访问源代码时，可以使用此选项分析在计算机上安装的应用程序的性能。 如果要分析你自己的应用程序开发之外的任何应用程序的性能，也可使用此选项。  
   
-3.  从 **“可用工具”**中，选择 **“HTML UI 响应能力”**，然后选择 **“启动”**。  
+3.  从 **“可用工具”** 中，选择 **“HTML UI 响应能力”**，然后选择 **“启动”**。  
   
 4.  启动 UI 响应能力探查器时，可能会显示一个用户帐户控制窗口，要求您提供运行 Visual Studio ETW Collector.exe 的权限。 选择 **“是”**。  
   
@@ -100,7 +100,7 @@ ms.lasthandoff: 04/19/2018
   
     -   使用 [查看诊断会话时间线](#Ruler) 查看 [标记要分析的代码](#ProfileMark)、应用生命周期事件和这些事件的关联时间线以及其他图中数据的时间线。  
   
-    -   使用 [CPU utilization graph](#CPUutilization) 查看关于特定时间段内 CPU 活动及其处理的工作类型的一般信息。 CPU 活动过多的时间段更有可能导致响应能力问题和丢弃的帧。  
+    -   使用 [CPU utilization graph](#CPUUtilization) 查看关于特定时间段内 CPU 活动及其处理的工作类型的一般信息。 CPU 活动过多的时间段更有可能导致响应能力问题和丢弃的帧。  
   
     -   如果你正在开发游戏或富媒体应用，请使用 [查看可视吞吐量 (FPS)](#VisualThroughput) 确定帧速率下降的时间段。  
   
@@ -187,7 +187,7 @@ if (performance.mark && performance.measure) {
 -   导航事件，在导航到其他页面时发生。 此事件的工具提示显示目标页面 URL。  
   
 ###  <a name="CPUUtilization"></a> 查看 CPU 使用率  
- 通过“CPU 使用率”图可确定 CPU 活动过多的时间段。 该图提供一段时间内应用程序的 CPU 平均消耗量信息。 信息使用了彩色编码来表示以下具体类别： **“加载”**、 **“脚本”**、垃圾回收（**“GC”**）、 **“样式”**、 **“呈现”**和 **“图像解码”**。 有关这些类别的详细信息，请参阅本主题后面部分的 [Profiler event reference](#ProfilerEvents) 。  
+ 通过“CPU 使用率”图可确定 CPU 活动过多的时间段。 该图提供一段时间内应用程序的 CPU 平均消耗量信息。 信息使用了彩色编码来表示以下具体类别： **“加载”**、 **“脚本”**、垃圾回收（**“GC”**）、 **“样式”**、 **“呈现”** 和 **“图像解码”**。 有关这些类别的详细信息，请参阅本主题后面部分的 [Profiler event reference](#ProfilerEvents) 。  
   
  “CPU 使用率”图显示在所有应用程序线程上花费的时间，它将一个或多个 CPU 的 CPU 使用率值合并为一个百分比值。 当多个 CPU 正在使用时，CPU 使用率值可能超过 100%。  
   

@@ -11,11 +11,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eca50a938312f6c463ff661c83fd90c9218b5ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb091701384d36ca5aa8154701d94cda5fb34a5b
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 代码片段
 
@@ -23,7 +23,7 @@ ms.lasthandoff: 04/26/2018
 
 你可以在代码的特定位置添加代码片段（插入）或在所选的代码外侧使用代码片段。
 
-## <a name="inserting-a-code-snippet"></a>插入代码片段
+## <a name="insert-a-code-snippet"></a>插入代码片段
 
 若要插入代码片段，请打开一个 C++ 代码文件（.cpp 或 .h），单击文件内的某个位置，然后执行以下操作之一：
 
@@ -41,9 +41,9 @@ ms.lasthandoff: 04/26/2018
 #endif // 0
 ```
 
-然后，你可以使用正确的条件替换 0。
+然后，可以使用正确的条件替换 0。
 
-## <a name="using-a-code-snippet-to-surround-selected-code"></a>使用代码片段来包围所选代码
+## <a name="use-a-code-snippet-to-surround-selected-code"></a>使用代码片段来包围所选代码
 
 若要使用代码片段来包围所选代码，请选择一行（或多行），然后执行下列操作之一：
 
@@ -71,7 +71,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="class-vs-classi"></a>class 与 classi 代码片段比较
 
-**class** 代码片段具有名为 MyClass 的类的定义，以及相应的默认构造函数和析构函数，其中，构造函数和析构函数的定义位于该类的外部：
+class 代码片段具有名为 `MyClass` 的类的定义，以及相应的默认构造函数和析构函数，其中，构造函数和析构函数的定义位于该类的外部：
 
 ```cpp
 class MyClass
@@ -93,7 +93,7 @@ MyClass::~MyClass()
 }
 ```
 
-classi 代码代码段也提供名为 MyClass 的类的定义，但默认构造函数和析构函数在类定义的内部进行定义：
+classi 代码片段也提供名为 `MyClass` 的类的定义，但默认构造函数和析构函数在类定义的内部进行定义：
 
 ```cpp
 class MyClass
@@ -153,7 +153,7 @@ class SomeClass {
 };
 ```
 
-如果插入析构函数代码片段，则将为 SomeClass 提供析构函数：
+如果插入析构函数代码片段，则将为 `SomeClass` 提供析构函数：
 
 ```cpp
 class SomeClass {

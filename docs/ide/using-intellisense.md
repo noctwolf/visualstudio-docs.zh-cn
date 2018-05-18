@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48aa6cea8deec13bdf5dd43f83528daf5492e3d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0afa66a9085c16700306330acdbfba3b9667fc03
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-intellisense-in-visual-studio"></a>使用 Visual Studio IntelliSense
 
@@ -39,23 +39,23 @@ IntelliSense 的许多方面只支持特定语言。 有关不同语言的 Intel
 
 ![Visual Studio 成员列表](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
 
-可以通过按 Ctrl + J、选择“编辑” > “IntelliSense” > “列出成员”或选择编辑器工具栏上的“列出成员”按钮，手动调用“列出成员”功能。 如果在空行上或可识别范围之外调用该功能，列表中会显示全局命名空间中的符号。
+可以通过按 Ctrl+J、选择“编辑” > “IntelliSense” > “列出成员”或选择编辑器工具栏上的“列出成员”按钮，手动调用“列出成员”功能。 如果在空行上或可识别范围之外调用该功能，列表中会显示全局命名空间中的符号。
 
 要默认关闭“列出成员”（以便仅在明确调用后显示），请转到“工具” > “选项” > “所有语言”，然后取消选择“自动列出成员”。 如果只希望针对特定语言关闭“列出成员”，请转到该语言的“常规”设置。
 
-你也可以更改为建议模式。在该模式下，只会将你键入的文本插入到代码中。 例如，如果输入不在此列表中的标识符，然后按 Tab，则在完成模式下，该输入会取代类型化标识符。 要在完成模式与建议模式间切换，请按 Ctrl + Alt + 空格键或选择“编辑” > “IntelliSense” > “切换完成模式”。
+你也可以更改为建议模式。在该模式下，只会将你键入的文本插入到代码中。 例如，如果输入不在此列表中的标识符，然后按 Tab，则在完成模式下，该输入会取代类型化标识符。 要在完成模式与建议模式间切换，请按 Ctrl+Alt+空格键或选择“编辑” > “IntelliSense” > “切换完成模式”。
 
 ## <a name="parameter-info"></a>参数信息
 
 “参数信息”提供方法、特性泛型类型参数（在 C# 中）或模板（在 C++ 中）中所需的参数数目、参数名称和参数类型的相关信息。
 
-以粗体显示的参数指示键入函数时所需的下一参数。 对于重载函数，可以使用向上和向下键查看函数重载的替代参数信息。
+以粗体显示的参数指示键入函数时所需的下一参数。 对于重载函数，可以使用“向上键”和“向下键”查看函数重载的替代参数信息。
 
 ![参数信息](../ide/media/vs2015_param_info.png "VS2015_param_Info")
 
 当用 XML 文档注释批注函数和参数时，相关注释也将显示为“参数信息”。 有关详细信息，请参阅[提供 XML 代码注释](../ide/supplying-xml-code-comments.md)。
 
-可以通过选择“编辑” > “IntelliSense” > “参数信息”、按 Ctrl + Shift + 空格键或选择编辑器工具栏上的“参数信息”，手动调用“参数信息”。
+可以通过选择“编辑” > “IntelliSense” > “参数信息”、按 Ctrl+Shift+空格键或选择编辑器工具栏上的“参数信息”，手动调用“参数信息”。
 
 ## <a name="quick-info"></a>快速信息
 
@@ -67,7 +67,7 @@ IntelliSense 的许多方面只支持特定语言。 有关不同语言的 Intel
 
 ![C&#35; 代码文件中的参数信息](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
 
-可通过选择“编辑” > “IntelliSense” > “参数信息”、按 Ctrl + I 或选择编辑器工具栏上的“快速信息”，手动调用“快速信息”。
+可通过选择“编辑” > “IntelliSense” > “参数信息”、按 Ctrl+I 或选择编辑器工具栏上的“快速信息”，手动调用“快速信息”。
 
 对于重载函数，Intellisense 可能不会显示重载的所有形式的信息。
 
@@ -81,7 +81,7 @@ IntelliSense 的许多方面只支持特定语言。 有关不同语言的 Intel
 
 IntelliSense 选项默认为启用状态。 要关闭它们，可选择“工具” > “选项” > “文本编辑器”并取消选择“参数信息”。如果不需要“列出成员”功能，可以取消选择“自动列出成员”。
 
-## <a name="troubleshooting-intellisense"></a>IntelliSense 疑难解答
+## <a name="troubleshoot-intellisense"></a>IntelliSense 故障排除
 
 在某些情况下，IntelliSense 选项可能不会像预期那样工作。
 
@@ -103,4 +103,4 @@ MessageBox( hWnd, "String literal|")
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)
 - [JavaScript IntelliSense](../ide/javascript-intellisense.md)
 - [编写和重构代码 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
-- [提供 XML 代码评论](../ide/supplying-xml-code-comments.md)
+- [提供 XML 代码注释](../ide/supplying-xml-code-comments.md)

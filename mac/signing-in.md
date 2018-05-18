@@ -1,15 +1,15 @@
 ---
 title: 登录 Visual Studio for Mac
-description: ''
+description: 如何登录 Visual Studio for Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 52727912877ddfa4a71ced858461083d924503b1
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 60af04ec6a26e5f60ba2b1d95cf8e9e17e868e8a
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>登录 Visual Studio for Mac
 
@@ -25,17 +25,17 @@ ms.lasthandoff: 04/20/2018
 
 1. 单击欢迎页上的“登录”链接，然后在显示的“帐户”对话框中按“登录”按钮：
 
-    ![](media/signing-in-image12.png)
+    ![Visual Studio for Mac 中的“帐户”对话框](media/signing-in-image12.png)
 
 2. 输入 Microsoft 凭据：
 
-    ![](media/signing-in-image13.png)
+    ![“Microsoft 凭据”对话框](media/signing-in-image13.png)
 
     不能使用 Xamarin 凭据登录 Visual Studio for Mac。
 
 3.  成功登录后，可看到许可证类型。 在此对话框中，可添加要使用的其他 Microsoft 帐户：
 
-    ![](media/signing-in-image14.png)
+    ![登录成功](media/signing-in-image14.png)
 
 ## <a name="adding-multiple-user-accounts"></a>添加多个用户帐户
 

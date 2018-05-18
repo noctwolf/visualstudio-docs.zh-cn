@@ -1,6 +1,7 @@
 ---
-title: Visual Studio 性能提示和技巧 | Microsoft Docs
+title: Visual Studio 性能提示和技巧
 ms.date: 08/31/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9182abea676958891afb789217a056f16ff1c11e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -28,7 +29,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
     如果将系统从 Windows 32 位版本升级到 64 位版本，那么 Visual Studio 的可用虚拟内存量会从 2 GB 扩展到 4 GB。 这样，即使 Visual Studio 是 32 位进程，也可以处理更大的工作负荷。
 
-    有关详细信息，请参阅[内存限制](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits)和 [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)（在 64 位 Windows 上使用 /LARGEADDRESSAWARE）。
+    有关详细信息，请参阅[内存限制](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits)和[在 64 位 Windows 上使用 /LARGEADDRESSAWARE](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)。
 
 ## <a name="configure-solution-and-projects"></a>配置解决方案和项目
 
@@ -36,7 +37,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
 - **卸载项目**
 
-    可通过使用右键单击上下文菜单，从解决方案资源管理器中卸载很少使用的各个项目。
+    可通过使用右键单击上下文菜单，从“解决方案资源管理器”中卸载很少使用的各个项目。
 
 - **重构解决方案**
 
@@ -50,23 +51,23 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
     最简单的优化是启用“仅我的代码” 功能，启用此功能后只会加载你项目的符号。 启用此功能后，调试托管的应用程序 (.NET) 时可节省大量内存。 对于某些项目类型，此选项默认为启用状态。
 
-    要启用“仅我的代码”，请选择“工具”>“选项”>“调试”>“常规”，然后选择“启用仅我的代码”。
+    要启用“仅我的代码”，请选择“工具” > “选项” > “调试” > “常规”，然后选择“启用仅我的代码”。
 
 - **指定要加载的符号**
 
     对于本机调试，加载符号文件 (.pdb) 会占用很多内存资源。 可通过配置调试程序符号设置来节省内存。 通常情况下，将解决方案配置为仅加载你项目中的模块。
 
-    要指定符号加载，请选择“工具”>“选项”>“调试”>“符号”。
+    要指定符号加载，请选择“工具” > “选项” > “调试” > “符号”。
 
-    将选项设置为“仅指定模块”，而不是“所有模块”，然后指定要加载的负载。 调试时，还可以在“模块”窗口中右键单击特定模块，将其显示包含在系统加载中。 （要在调试时打开窗口，请选择“调试”>“窗口”>“模块”。）
+    将选项设置为“仅指定模块”，而不是“所有模块”，然后指定要加载的负载。 调试时，还可以在“模块”窗口中右键单击特定模块，将其显示包含在系统加载中。 （要在调试时打开窗口，请选择“调试” > “窗口” > “模块”。）
 
-    有关详细信息，请参阅 [Understanding symbol files](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)（了解符号文件）。
+    有关详细信息，请参阅[了解符号文件](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)。
 
 - **禁用诊断工具**
 
     建议在使用 CPU 分析后将其禁用。 此功能可能会占用大量资源。 CPU 分析处于启用状态后，后续调试会话中会一直保持启用状态，因此可在其完成时将其显示关闭。 如果不需要提供的功能，可以通过在调试时禁用诊断工具节省一些资源。
 
-    要禁用“诊断工具”，请启动一个调试会话，并选择“工具”>“选项”>“启用诊断工具”，然后取消选择该选项。
+    要禁用“诊断工具”，请启动一个调试会话，选择“工具” > “选项” > “启用诊断工具”，并取消选择该选项。
 
     有关详细信息，请参阅[分析工具](../profiling/profiling-tools.md)。
 
@@ -85,13 +86,13 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
     Visual Studio 对整个解决方案执行分析，以在调用生成前提供关于错误的丰富体验。 此功能可用于尽快速识别错误。 但是，对于超大型解决方案，这一功能可能会占用大量内存资源。 如果遇到内存不足或类似问题，可以禁用此体验并释放这些资源。 默认情况下，Visual Basic 启用此选项，而 C# 禁用此选项。
 
-    要禁用“完整解决方案分析”，请选择“工具”>“选项”>“文本编辑器”>“<Visual Basic 或 C#>”。 然后选择“高级”，并取消选择“启用完整解决方案分析”。
+    要禁用“完整解决方案分析”，请选择“工具” > “选项” > “文本编辑器” > “<Visual Basic 或 C#>”。 然后选择“高级”，并取消选择“启用完整解决方案分析”。
 
 - **禁用 CodeLens**
 
     Visual Studio 对显示的每个方法执行“查找所有引用”任务。 CodeLens 提供内联显示引用数目等功能。 工作在单独的进程（例如，ServiceHub.RoslynCodeAnalysisService32）中执行。 在超大型解决方案或资源受限的系统中，此功能对性能有显著影响，即使它的运行优先级较低。 如果在这过程中（例如，当在 4 GB 计算机上加载大型解决方案时）遇到高 CPU 或内存问题，可以尝试禁用此功能以释放资源。
 
-    要禁用 CodeLens，请选择“工具”>“选项”>“文本编辑器”>“所有语言”>“CodeLens”，然后取消选择该功能。
+    要禁用 CodeLens，请选择“工具” > “选项” > “文本编辑器” > “所有语言” > “CodeLens”，然后取消选择该功能。
 
     此功能在 Visual Studio Professional 和 Visual Studio Enterprise 中可用。
 
@@ -105,9 +106,9 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
 - **禁用 XAML 设计器**
 
-    默认情况下，XAML 设计器处于启用状态，但是只会在打开 .XAML 文件时占用资源。 如果使用 XAML 文件，但不希望使用设计器功能，请禁用此功能以释放内存。
+    默认情况下，XAML 设计器处于启用状态，但是只会在打开 .xaml 文件时占用资源。 如果使用 XAML 文件，但不希望使用设计器功能，请禁用此功能以释放内存。
 
-    要禁用 XAML 设计器，请转到“工具”>“选项”>“XAML 设计器”>“启用 XAML 设计器”，然后取消选择该选项。
+    要禁用 XAML 设计器，请转到“工具” > “选项” > “XAML 设计器” > “启用 XAML 设计器”，然后取消选择该选项。
 
 - **删除工作负载**
 
@@ -115,7 +116,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
 ## <a name="force-a-garbage-collection"></a>强制垃圾回收
 
-CLR 使用垃圾回收内存管理系统。 在此系统中，内存有时会被不再需要的对象占用。 这一状态是临时的，垃圾回收器会基于其性能和资源使用情况试探法释放此内存。 可通过在 Visual Studio 中使用热键强制 CLR 回收任何未使用的内存。 如果有大量垃圾等待回收并已强制垃圾回收，可在任务管理器中看到 devenv.exe 进程的内存使用率降低。 很少需要使用此方法。 但是，在完成一个资源占用较高的操作（如完整生成、调试会话或解决方案打开事件）后，此方法有助于确定进程实际在使用的内存量。 由于 Visual Studio 属于混合型（托管和本机），因此本机分配器和垃圾回收器有时可能会竞争有限的内存资源。 在内存使用率较高的情况下，这可能有助于强制垃圾回收器运行。
+CLR 使用垃圾回收内存管理系统。 在此系统中，内存有时会被不再需要的对象占用。 这一状态是临时的，垃圾回收器会基于其性能和资源使用情况试探法释放此内存。 可通过在 Visual Studio 中使用热键强制 CLR 回收任何未使用的内存。 如果有大量垃圾等待回收并已强制垃圾回收，可在“任务管理器”中看到 devenv.exe 进程的内存使用率降低。 很少需要使用此方法。 但是，在完成一个资源占用较高的操作（如完整生成、调试会话或解决方案打开事件）后，此方法有助于确定进程实际在使用的内存量。 由于 Visual Studio 属于混合型（托管和本机），因此本机分配器和垃圾回收器有时可能会竞争有限的内存资源。 在内存使用率较高的情况下，这可能有助于强制垃圾回收器运行。
 
 要强制垃圾回收，请使用热键：Ctrl+Alt+Shift+F12、Ctrl+Alt+Shift+F12（按两次）。
 

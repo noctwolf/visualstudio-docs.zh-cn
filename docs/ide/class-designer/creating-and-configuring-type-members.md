@@ -31,11 +31,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d62cc3aff0eb714f142502d30712c8cc289087cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce62e2d2723c38d933c9efc4c8d910ac418dcb4f
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>创建和配置类型成员（类设计器）
 可以将以下成员添加到类图上的类型中并在“类详细信息”窗口中配置这些成员：
@@ -57,8 +57,8 @@ ms.lasthandoff: 04/26/2018
 
 |任务|支持内容|
 |----------|------------------------|
-|**开始：**创建并配置类型成员之前，必须打开“类详细信息”窗口。|-   [打开“类详细信息”窗口](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [“类详细信息”用法说明](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [显示只读信息](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**创建和修改类型成员：**可以使用“类详细信息”窗口创建新成员、修改成员并向方法中添加参数。|-   [创建成员](creating-and-configuring-type-members.md#CreateMembers)<br />-   [修改类型成员](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [向方法中添加参数](creating-and-configuring-type-members.md#AddMethodParams)|
+|**开始：** 创建并配置类型成员之前，必须打开“类详细信息”窗口。|-   [打开“类详细信息”窗口](creating-and-configuring-type-members.md#open-the-class-details-window)<br />-   [“类详细信息”用法说明](creating-and-configuring-type-members.md#class-details-usage-notes)<br />-   [显示只读信息](creating-and-configuring-type-members.md#display-of-read-only-information)<br />-   [类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**创建和修改类型成员：** 可以使用“类详细信息”窗口创建新成员、修改成员并向方法中添加参数。|-   [创建成员](creating-and-configuring-type-members.md#create-members)<br />-   [修改类型成员](creating-and-configuring-type-members.md#modify-type-members)<br />-   [向方法中添加参数](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>打开“类详细信息”窗口
 默认情况下，打开一个新的类图时，会自动显示“类详细信息”窗口（请参阅[如何：向项目添加类图](how-to-add-class-diagrams-to-projects.md)）。 你也可以通过以下方式显示打开“类详细信息”窗口。
@@ -157,7 +157,7 @@ ms.lasthandoff: 04/26/2018
 
 -   **\<添加成员>**
 
-     “类详细信息”窗口中最后一行的“名称”单元格中包含文本“\<添加成员>”。 如果单击此单元格，则可创建新成员。 有关详细信息，请参阅[创建成员](creating-and-configuring-type-members.md#CreateMembers)。
+     “类详细信息”窗口中最后一行的“名称”单元格中包含文本“\<添加成员>”。 如果单击此单元格，则可创建新成员。 有关详细信息，请参阅[创建成员](creating-and-configuring-type-members.md#create-members)。
 
 -   “属性”窗口中的成员属性
 
@@ -207,14 +207,14 @@ ms.lasthandoff: 04/26/2018
 
 -   **\<添加参数>**
 
-     成员的最后一个参数行的“名称”单元格中包含文本“<add parameter>”。 单击此单元格可创建新的参数。 有关详细信息，请参阅[向方法中添加参数](creating-and-configuring-type-members.md#HowToAddParameterToMethod)。
+     成员的最后一个参数行的“名称”单元格中包含文本“<add parameter>”。 单击此单元格可创建新的参数。 有关详细信息，请参阅[向方法中添加参数](creating-and-configuring-type-members.md#add-parameters-to-methods)。
 
 **“属性”窗口中的参数属性**
 
 “属性”窗口中显示的参数属性与“类详细信息”窗口中显示的相同：“名称”、“类型”、“修饰符”、“摘要”以及“可选的默认值”属性。 在一个位置更改某个属性将使该属性的值在全局范围内得到更新，包括这个属性值在其他位置的显示。
 
 > [!NOTE]
-> 若要向委托中添加参数，请参阅[创建成员](creating-and-configuring-type-members.md#CreateMembers)。
+> 若要向委托中添加参数，请参阅[创建成员](creating-and-configuring-type-members.md#create-members)。
 
 
 > [!NOTE]

@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 353a5100337d295f7265fb376e363e2520e6c9e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -44,7 +44,7 @@ C# 中的完成列表也足够智能，可筛选出不相关的标记，并可�
 
 ## <a name="language-keywords-in-completion-lists"></a>完成列表中的语言关键字
 
-在 C# 中，完成列表还包括语言关键字。 若要了解 C# 语言关键字，请参阅 [C# 关键字](/dotnet/csharp/language-reference/keywords/index)。
+在 C# 中，完成列表还包括语言关键字。 若要详细了解 C# 语言关键字，请参阅 [C# 关键字](/dotnet/csharp/language-reference/keywords/index)。
 
 ## <a name="extension-methods-in-completion-lists"></a>完成列表中的扩展方法
 
@@ -53,7 +53,7 @@ C# 中的完成列表也足够智能，可筛选出不相关的标记，并可�
 > [!NOTE]
 > 完成列表不显示 <xref:System.String> 对象的所有扩展方法。
 
-扩展方法使用不同于实例方法的图标。 若要了解列表图标的列表，请参阅[类视图和对象浏览器图标](../ide/class-view-and-object-browser-icons.md)。 当具有相同名称的实例方法和扩展方法都处于作用域时，完成列表将显示扩展方法图标。
+扩展方法使用不同于实例方法的图标。 有关列表图标的列表，请参阅[类视图和对象浏览器图标](../ide/class-view-and-object-browser-icons.md)。 当具有相同名称的实例方法和扩展方法都处于作用域时，完成列表将显示扩展方法图标。
 
 ## <a name="filtered-completion-lists"></a>经过筛选的完成列表
 
@@ -67,11 +67,11 @@ IntelliSense 使用筛选器从完成列表中删除不必要的成员。 C# 对
 
 - 对象初始值设定项：完成列表中将仅列出可进行初始化的成员。
 
-- **新关键字**：键入 `new` 并按空格键后，将显示完成列表。 基于代码的上下文将在列表中自动选择项。 例如，自动为声明和方法中的 return 语句在完成列表中选择项。
+- **关键字**：键入 `new` 并按空格键后，将显示完成列表。 基于代码的上下文将在列表中自动选择项。 例如，自动为声明和方法中的 return 语句在完成列表中选择项。
 
-- **enum 关键字**：当在枚举赋值的等号后按空格键时，将出现完成列表。 基于代码的上下文将在列表中自动选择项。 例如，键入关键字 return 之后以及进行声明时，将在完成列表中自动选择项。
+- **enum 关键字**：在枚举赋值的等号后按空格键，将显示完成列表。 基于代码的上下文将在列表中自动选择项。 例如，键入关键字 return 之后以及进行声明时，将在完成列表中自动选择项。
 
-- as 和 is 运算符：键入 `as` 或 `is` 关键字后按空格键，将自动显示经过筛选的完成列表。
+- **as 和 is 运算符**：键入 `as` 或 `is` 关键字后按空格键，将自动显示经过筛选的完成列表。
 
 - 事件：当键入关键字 `event` 时，完成列表仅包含委托类型。
 
@@ -83,7 +83,7 @@ IntelliSense 会记住最近在自动完成对象名称的[列表成员](../ide/
 
 ## <a name="override"></a>override
 
-键入 [override](/dotnet/csharp/language-reference/keywords/override)，然后按空格键后，IntelliSense 将在弹出的列表框中显示可以重写的全部有效基类成员。 在 `override` 之后键入方法的返回类型将提示 IntelliSense 仅显示返回相同类型的方法。 如果 IntelliSense 找不到任何匹配项，它将显示全部基类成员。
+键入 [override](/dotnet/csharp/language-reference/keywords/override) 并按空格键后，IntelliSense 将在弹出的列表框中显示可以替代的全部有效基类成员。 在 `override` 之后键入方法的返回类型将提示 IntelliSense 仅显示返回相同类型的方法。 如果 IntelliSense 找不到任何匹配项，它将显示全部基类成员。
 
 ## <a name="automatic-code-generation"></a>自动代码生成
 
@@ -103,13 +103,13 @@ IntelliSense 会记住最近在自动完成对象名称的[列表成员](../ide/
 
 ### <a name="implement-interface"></a>实现接口
 
-IntelliSense 提供了一个选项，可帮助你在使用代码编辑器时实现[接口](/dotnet/csharp/language-reference/keywords/interface)。 通常情况下，若要正确实现接口，必须为类中接口的每个成员创建一个方法声明。 通过使用 IntelliSense，在类声明中键入接口名称后，将显示“快速操作”灯泡。 该灯泡提供通过使用显式或隐式命名自动实现接口的选项。 在显式命名下，方法声明具有接口名称；在隐式命名下，方法声明不表示其所属的接口。 只有通过接口实例（而不是类实例）才能访问显式命名的接口方法。 有关详细信息，请参阅[显式接口实现](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。
+IntelliSense 提供了一个选项，有助于在使用代码编辑器时实现[接口](/dotnet/csharp/language-reference/keywords/interface)。 通常情况下，若要正确实现接口，必须为类中接口的每个成员创建一个方法声明。 通过使用 IntelliSense，在类声明中键入接口名称后，将显示“快速操作”灯泡。 该灯泡提供通过使用显式或隐式命名自动实现接口的选项。 在显式命名下，方法声明具有接口名称；在隐式命名下，方法声明不表示其所属的接口。 只有通过接口实例（而不是类实例）才能访问显式命名的接口方法。 有关详细信息，请参阅[显式接口实现](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。
 
 实现接口将生成满足接口所需的最小数量的方法存根。 如果基类实现部分接口，则不会重新生成这些存根。
 
 ### <a name="implement-abstract-base-class"></a>实现抽象基类
 
-IntelliSense 提供了一个选项，可帮助你在使用代码编辑器时自动实现抽象基类的成员。 通常情况下，实现抽象基类的成员需要在你的派生类中为抽象基类的每个方法创建新的方法定义。 使用 IntelliSense，在类声明中键入抽象基类的名称后，将显示“快速操作”灯泡。 该灯泡将提供自动实现基类方法的选项。
+IntelliSense 提供了一个选项，有助于在使用代码编辑器时自动实现抽象基类的成员。 通常情况下，实现抽象基类的成员需要在你的派生类中为抽象基类的每个方法创建新的方法定义。 使用 IntelliSense，在类声明中键入抽象基类的名称后，将显示“快速操作”灯泡。 该灯泡将提供自动实现基类方法的选项。
 
 通过“实现抽象基类”功能生成的方法存根将由文件 MethodStub.snippet 中定义的代码片段进行建模。 代码片段是可修改的。 有关详细信息，请参阅[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)。
 
@@ -121,7 +121,7 @@ IntelliSense 提供了一个选项，可帮助你在使用代码编辑器时自�
 
 - 单击未定义的标识符。 标识符下将出现一个“快速操作”灯泡。 单击灯泡。
 
-- 单击未定义的标识符，然后按 Ctrl + . （Ctrl + 句点）。
+- 单击未定义的标识符，然后按 Ctrl+. （Ctrl + 句点）。
 
 - 右键单击未定义的标识符，然后单击“快速操作和重构”。
 
@@ -135,13 +135,13 @@ IntelliSense 提供了一个选项，可帮助你在使用代码编辑器时自�
 
 - **生成类**
 
-- 生成新类型...（对于类、结构、接口或枚举）
+- **生成新类型**（对于类、结构、接口或枚举）
 
 ## <a name="generate-event-handlers"></a>生成事件处理程序
 
-在代码编辑器中，IntelliSense 可帮助你将方法（事件处理程序）挂钩到事件字段。
+在代码编辑器中，IntelliSense 有助于将方法（事件处理程序）挂钩到事件字段。
 
-在 .cs 文件中的一个事件字段后键入 `+=` 运算符时，IntelliSense 提示你按 Tab 键这一选项。 这会插入委托的新实例，该委托指向处理事件的方法。
+在 .cs 文件中的一个事件字段后键入 `+=` 运算符时，IntelliSense 提示你按 Tab 这一选项。 这会插入委托的新实例，该委托指向处理事件的方法。
 
 ![按钮自动挂钩](../ide/media/vxautohookup.gif "vxAutoHookUp")
 
@@ -155,7 +155,7 @@ IntelliSense 提供了一个选项，可帮助你在使用代码编辑器时自�
 如果按 Tab 键，IntelliSense 将引出具有正确签名的方法并将光标放在事件处理程序的正文中。
 
 > [!NOTE]
-> 使用“视图”菜单上的“向后导航”命令 (Ctrl + -) 可返回到事件挂钩语句。
+> 使用“视图”菜单上的“向后导航”命令 (Ctrl+-) 可返回到事件挂钩语句。
 
 ## <a name="see-also"></a>请参阅
 

@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ae3c401a08df3eefa6f2ebe247aa7404f6b4ed2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d0f9ef3577f1285f428415de6b5b452d2a4cd7b6
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="crosssession"></a>CrossSession
 VSPerfCmd.exe“CrossSession”选项使探查器可以从任何控制台会话收集数据。 “CrossSession”选项必须与“Start”选项一起使用。  
@@ -23,7 +23,7 @@ VSPerfCmd.exe“CrossSession”选项使探查器可以从任何控制台会话�
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Method /CrossSession [Options]  
 ```  
   
@@ -45,7 +45,7 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ## <a name="example"></a>示例  
  在此示例中，“CrossSession”选项用于附加到在另一个控制台会话中启动的应用程序。  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /CrossSession  
 VSPerfCmd.exe /Attach:12345 /CS  
 ```  

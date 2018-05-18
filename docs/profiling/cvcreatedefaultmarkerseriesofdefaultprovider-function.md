@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 418acf8e296446785fb0cda5d0a97f52754050e2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6198cfc874eb8a547b77bfabe8b3fb3473fa92ef
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>CvCreateDefaultMarkerSeriesOfDefaultProvider 函数
 创建默认提供程序的默认标记系列。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```C  
 HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(  
    _Out_ PCV_PROVIDER* ppProvider,  
    _Out_ PCV_MARKERSERIES* ppMarkerSeries  
@@ -43,7 +43,7 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
  成功创建提供程序和标记系列时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。  
   
 ## <a name="requirements"></a>惠?  
- **标头：**cvmarkers.h  
+ **标头：** cvmarkers.h  
   
 ## <a name="see-also"></a>请参阅  
  [C++ 库参考](../profiling/cpp-library-reference.md)

@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: 9d19edb4801ee8af6a18f3e458cd06d0499e0273
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: c26cb512f0beb0dcfd47801d7a619ec78eb3cd32
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="version-control"></a>版本控制
 
@@ -23,7 +23,7 @@ Subversion 是一个集中式版本控制系统，这表示，有一个服务器
 
 Git 是分布式版本控制系统，使团队可以同时在同一文档上工作。 使用 Git，可能有一个单一服务器包含所有文件，但从此中央源中签出存储库时，整个存储库都会被克隆到本地计算机。
 
-# <a name="basic-concepts"></a>基本概念 
+## <a name="basic-concepts"></a>基本概念 
 
 Visual Studio for Mac 支持 Git 和 Subversion 这两种版本控制系统。 以下文章介绍了如何通过 Visual Studio for Mac 设置 Git 和 Subversion 存储库，以及简单的功能（如评审、提交和推送更改）。
 

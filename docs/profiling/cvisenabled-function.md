@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff675a7940f5fda61fcf1836a4023ffb8f586b3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 47129a84b38a4182514bf91be3c55704cf506410
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 函数
 确定是否有任何会话启用了指定的 ETW 提供程序。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```C  
 HRESULT CvIsEnabled(  
    _In_ PCV_PROVIDER pProvider  
 );  
@@ -52,7 +52,7 @@ HRESULT CvIsEnabledEx(
  如果提供程序当前已启用，则返回 S_OK。 如果提供程序当前已禁用，则返回 S_FALSE。 出现任何错误时返回错误代码。 使用 FAILED 宏检查错误条件，然后检查 S_OK/S_FALSE。  
   
 ## <a name="requirements"></a>惠?  
- **标头：**cvmarkers.h  
+ **标头：** cvmarkers.h  
   
 ## <a name="see-also"></a>请参阅  
  [C++ 库参考](../profiling/cpp-library-reference.md)

@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a0fb071186d816e852c695ffe1cceed29d23ff8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4a82663fe397488ee78a82d4fab5d38bfec4ae37
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-the-task-list"></a>使用任务列表
+# <a name="use-the-task-list"></a>使用任务列表
 
 使用“任务列表”  跟踪使用 `TODO` 和 `HACK`或自定义令牌等令牌的代码注释，还能管理直接导向代码中的预定义位置的快捷方式。 单击列表中的项以转到其在源代码中的位置。
 
@@ -30,23 +30,23 @@ ms.lasthandoff: 04/26/2018
 
 当“任务列表”  打开后，它将显示在应用程序窗口的底部。
 
-### <a name="to-open-the-task-list"></a>打开“任务列表”
+### <a name="open-the-task-list"></a>打开“任务列表”
 
 - 在“视图”菜单中，选择“任务列表”（键盘：Ctrl+\\、T）。
 
     ![“任务列表”窗口](../ide/media/vs2015_task_list.png "vs2015_task_list")
 
-### <a name="to-change-the-sort-order-of-the-list"></a>更改列表的排序顺序
+### <a name="change-the-sort-order-of-the-list"></a>更改列表的排序顺序
 
 - 单击任意列的标头。 若要进一步优化搜索结果，请按住 Shift 键单击另一个列标头。
 
-     另一种方法是，在快捷菜单上选择 **“排序方式”**，然后选择一个标头。 若要进一步优化搜索结果，请按住 Shift 键选择另一个标头。
+     另一种方法是，在快捷菜单上选择 **“排序方式”**，然后选择一个标头。 若要进一步优化搜索结果，请按住 Shift 并选择另一个标头。
 
-### <a name="to-show-or-hide-columns"></a>显示或隐藏列
+### <a name="show-or-hide-columns"></a>显示或隐藏列
 
 - 在快捷菜单上选择 **“显示列”**。 选择你要显示或隐藏的列。
 
-### <a name="to-change-the-order-of-the-columns"></a>更改列的顺序
+### <a name="change-the-order-of-the-columns"></a>更改列的顺序
 
 - 将任意列标头拖动到所需的位置。
 
@@ -74,11 +74,11 @@ ms.lasthandoff: 04/26/2018
 
 ###  <a name="customTokens"></a> 自定义令牌
 
-默认情况下，Visual Studio 包含以下令牌：HACK、TODO、UNDONE、NOTE。 它们不区分大小写。
+默认情况下，Visual Studio 包含以下令牌：`HACK`、`TODO`、`UNDONE`、`NOTE`。 它们不区分大小写。
 
 你也可以创建自己的自定义令牌。
 
-#### <a name="to-create-a-custom-token"></a>创建自定义令牌
+#### <a name="create-a-custom-token"></a>创建自定义令牌
 
 1. 在 **“工具”** 菜单上，选择 **“选项”**。
 
@@ -96,7 +96,7 @@ ms.lasthandoff: 04/26/2018
 
 默认情况下，C++ TODO 注释显示在“任务列表”  窗口中。 你可以更改这一行为。
 
-#### <a name="to-turn-off-c-todo-comments"></a>关闭 C++ TODO 注释
+#### <a name="turn-off-c-todo-comments"></a>关闭 C++ TODO 注释
 
 在“工具”菜单上，依次选择“选项” > “文本编辑器” > “C/C++” > “视图” > “枚举注释任务”，并将值设置为 false。
 
@@ -106,9 +106,9 @@ ms.lasthandoff: 04/26/2018
 
 ![Visual Studio 任务列表快捷方式图标](../ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")
 
-### <a name="to-create-a-shortcut"></a>创建快捷方式
+### <a name="create-a-shortcut"></a>创建快捷方式
 
-若要创建快捷方式，请将指针插入到代码中你想要放置快捷方式的位置。 选择“编辑” > “书签” > “添加任务列表快捷方式”或按 Ctrl + K，Ctrl + H。
+若要创建快捷方式，请将指针插入到代码中你想要放置快捷方式的位置。 选择“编辑” > “书签” > “添加任务列表快捷方式”或按 Ctrl+K，Ctrl+H。
 
 若要在代码中浏览快捷方式，在列表中选择一个快捷方式，然后从快捷菜单中选择“下一任务”  或“上一任务”  。
 

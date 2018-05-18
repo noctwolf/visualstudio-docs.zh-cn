@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9b1e33d845dd07306d9a6b59bfb57fd9cc2acc3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 22107cb7ecaf7c5f232b4377fc681a11720d1068
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series 构造函数
 初始化 `marker_series` 类的新实例。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp  
 marker_series();  
 marker_series(  
    _In_ LPCTSTR _SeriesName  
@@ -47,9 +47,9 @@ marker_series(
  系列提供程序的 GUID。  
   
 ## <a name="requirements"></a>惠?  
- **标头：**cvmarkersobj.h  
+ **标头：** cvmarkersobj.h  
   
- **命名空间：**Concurrency::diagnostic  
+ **命名空间：** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>请参阅  
  [marker_series 类](../profiling/marker-series-class.md)
