@@ -1,5 +1,5 @@
 ---
-title: 演练： 更改文档格式使用复选框控件 |Microsoft 文档
+title: 演练： 更改文档格式设置使用复选框控件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecbb0036fc74cf5d0d27ea61283ec5b733dca1a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 459253c6a84add4fcca68565d5bf082dc0931f22
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>演练：使用 CheckBox 控件更改文档格式设置
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>演练： 更改文档格式设置使用复选框控件
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用 Windows 窗体控件来更改格式设置的文本。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -47,21 +47,21 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。  
   
-## <a name="creating-the-project"></a>创建项目  
+## <a name="create-the-project"></a>创建项目  
  第一步是创建 Word 文档项目。  
   
-#### <a name="to-create-a-new-project"></a>创建新项目  
+### <a name="create-a-new-project"></a>创建新项目  
   
 1.  使用名称创建的 Word 文档项目**我的 Word 格式**。 在向导中，选择**创建新文档**。  
   
-     有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 将在设计器中打开新的 Word 文档和添加**我的 Word 格式**项目合并为**解决方案资源管理器**。  
   
-## <a name="adding-text-and-controls-to-the-word-document"></a>将文本和控件添加到 Word 文档  
+## <a name="add-text-and-controls-to-the-word-document"></a>向 Word 文档添加文本和控件  
  对于本演练中，添加三个复选框和中的某些文本<xref:Microsoft.Office.Tools.Word.Bookmark>控件添加到 Word 文档。 复选框将向用户显示选项，用于设置文本格式。  
   
-#### <a name="to-add-three-check-boxes"></a>若要添加三个复选框  
+### <a name="add-three-check-boxes"></a>添加三个复选框  
   
 1.  验证该文档已在 Visual Studio 设计器中打开。  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 04/16/2018
     |**名称**|**applyUnderlineFont**|  
     |**文本**|**下划线**|  
   
-#### <a name="to-add-text-and-a-bookmark-control"></a>若要添加文本和书签控件  
+### <a name="add-text-and-a-bookmark-control"></a>添加文本和书签控件  
   
 1.  将插入点下面的复选框控件移动，并键入以下文本：  
   
@@ -106,14 +106,14 @@ ms.lasthandoff: 04/16/2018
   
      A<xref:Microsoft.Office.Tools.Word.Bookmark>控件名为**Bookmark1**添加到文档中选定的文本。  
   
-4.  在**属性**窗口中，更改的值**（名称）**属性**fontText。**  
+4.  在**属性**窗口中，更改的值 **（名称）** 属性**fontText。**  
   
  接下来，编写代码以设置文本格式时选中或清除复选框。  
   
-## <a name="formatting-the-text-when-a-check-box-is-checked-or-cleared"></a>选中或清除格式文本复选框时是  
+## <a name="format-the-text-when-a-check-box-is-checked-or-cleared"></a>设置文本格式时选中或清除复选框  
  当用户选择的格式设置选项，则更改文档中文本的格式。  
   
-#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>若要更改格式设置复选框时被选择  
+### <a name="change-formatting-when-a-check-box-is-selected"></a>更改格式设置时选中复选框  
   
 1.  右键单击`ThisDocument`中**解决方案资源管理器**，然后单击**查看代码**快捷菜单上。  
   
@@ -140,12 +140,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
-## <a name="testing-the-application"></a>测试应用程序  
+## <a name="test-the-application"></a>测试应用程序  
  你现在可以测试你的文档，以验证在选择或清除复选框文本的格式设置正确。  
   
-#### <a name="to-test-your-document"></a>测试文档  
+### <a name="test-your-document"></a>测试文档  
   
-1.  按 F5 运行项目。  
+1.  按**F5**运行项目。  
   
 2.  选中或清除复选框。  
   
@@ -154,16 +154,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>后续步骤  
  本演练演示了使用复选框以及以编程方式更改文本在 Word 文档格式设置的基础知识。 以下是接下来可能要执行的一些任务：  
   
--   使用按钮填充文本框。 有关详细信息，请参阅[演练： 在文档使用按钮的文本框中显示的文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。  
+-   使用按钮填充文本框。 有关详细信息，请参阅[演练： 使用按钮在文档的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。  
   
--   使用单选按钮以选择图表样式。 有关详细信息，请参阅[演练： 更新文档使用单选按钮中的图表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
+-   使用单选按钮以选择图表样式。 有关详细信息，请参阅[演练： 更新使用单选按钮的文档中的图表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
   
--  
-  
+
 ## <a name="see-also"></a>请参阅  
  [使用 Word 的演练](../vsto/walkthroughs-using-word.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
- [Office 文档上的 Windows 窗体控件限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Office 文档上的 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

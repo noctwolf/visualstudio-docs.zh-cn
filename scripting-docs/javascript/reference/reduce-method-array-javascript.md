@@ -1,12 +1,13 @@
 ---
-title: "reduce 方法 (Array) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: reduce 方法 (Array) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - arrays [JavaScript], reduce method
 - reduce method [JavaScript]
 ms.assetid: 48d069e0-e083-494f-86d5-d459d2377dc5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76279f66f8e3180fdebd73b83eb31c7368cefc75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d99f92d90885f26b19392b476ee64ae17bd40aed
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="reduce-method-array-javascript"></a>reduce 方法 (Array) (JavaScript)
 为数组中的所有元素调用指定的回调函数。 回调函数的返回值是累积的结果，并且作为对回调函数的下一个调用中的自变量提供。  
@@ -41,8 +42,8 @@ array1.reduce(callbackfn[, initialValue])
   
 |参数|定义|  
 |---------------|----------------|  
-|`array1`|必需。 一个数组对象。|  
-|`callbackfn`|必需。 接受最多四个自变量的函数。 对于数组中的每个元素，`reduce` 方法都会调用 `callbackfn` 函数一次。|  
+|`array1`|必须的。 一个数组对象。|  
+|`callbackfn`|必须的。 接受最多四个自变量的函数。 对于数组中的每个元素，`reduce` 方法都会调用 `callbackfn` 函数一次。|  
 |`initialValue`|可选。 如果`initialValue`指定，它用于作为初始值开始累积。 首次调用`callbackfn`函数提供此值作为参数而不是数组值。|  
   
 ## <a name="return-value"></a>返回值  
@@ -58,7 +59,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="remarks"></a>备注  
  如果`initialValue`提供，`reduce`方法调用`callbackfn`函数的每个元素数组，采用升序索引顺序中出现一次。 如果`initialValue`未提供，`reduce`方法调用`callbackfn`函数对每个元素，从第二个元素开始。  
   
- 回调函数的返回值用作`previousValue`上对回调函数的下一个调用的自变量。 对回调函数的最后一个调用的返回值是返回值的`reduce`方法。  
+ 回调函数的返回值用作`accumulator`上对回调函数的下一个调用的自变量。 对回调函数的最后一个调用的返回值是返回值的`reduce`方法。  
   
  将不会为数组中缺少的元素调用回调函数。  
   
@@ -68,15 +69,15 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="callback-function-syntax"></a>回调函数语法  
  回调函数的语法如下所示：  
   
- `function callbackfn(previousValue, currentValue, currentIndex, array1)`  
+ `function callbackfn(accumulator, currentValue, currentIndex, array1)`  
   
  可以使用最多四个参数来声明回调函数。  
   
  下表列出了回调函数参数。  
   
-|回调参数|定义|  
+|回调自变量|定义|  
 |-----------------------|----------------|  
-|`previousValue`|来自调用的回调函数的值。 如果`initialValue`提供给`reduce`方法，`previousValue`是`initialValue`在首次调用该函数。|  
+|`accumulator`|来自调用的回调函数的值。 如果`initialValue`提供给`reduce`方法，`accumulator`是`initialValue`在首次调用该函数。|  
 |`currentValue`|当前数组元素的值。|  
 |`currentIndex`|当前数组元素的数字索引。|  
 |`array1`|包含该元素的数组对象。|  
@@ -86,13 +87,13 @@ array1.reduce(callbackfn[, initialValue])
   
  如果`initialValue`为减少方法提供：  
   
--   `previousValue` 参数为 `initialValue`。  
+-   `accumulator` 参数为 `initialValue`。  
   
 -   `currentValue`参数是数组中出现的第一个元素的值。  
   
  如果`initialValue`未提供：  
   
--   `previousValue`参数是数组中出现的第一个元素的值。  
+-   `accumulator`参数是数组中出现的第一个元素的值。  
   
 -   `currentValue`参数是数组中出现的第二个元素的值。  
   
@@ -103,18 +104,18 @@ array1.reduce(callbackfn[, initialValue])
   
 |`reduce` 方法启动后的条件|元素是否传递给回调函数？|  
 |------------------------------------------------|------------------------------------------|  
-|在数组的原始长度之外添加元素。|不可以。|  
+|在数组的原始长度之外添加元素。|不是。|  
 |添加元素以填充数组中缺少的元素。|是，如果该索引尚未传递给回调函数。|  
 |元素已更改。|是，如果该元素尚未传递给回调函数。|  
 |从数组中删除元素。|否，除非该元素已传递给回调函数。|  
   
 ## <a name="example"></a>示例  
- 下面的示例将数组值串联成一个字符串，分隔各个值与"::"。 因为没有初始值提供给`reduce`方法，对回调函数的第一个调用具有"abc"作为`previousValue`自变量和"def"作为`currentValue`自变量。  
+ 下面的示例将数组值串联成一个字符串，分隔各个值与"::"。 因为没有初始值提供给`reduce`方法，对回调函数的第一个调用具有"abc"作为`accumulator`自变量和"def"作为`currentValue`自变量。  
   
 ```JavaScript  
 // Define the callback function.  
-function appendCurrent (previousValue, currentValue) {  
-    return previousValue + "::" + currentValue;  
+function appendCurrent (accumulator, currentValue) {  
+    return accumulator + "::" + currentValue;  
     }  
   
 // Create an array.  
@@ -136,8 +137,8 @@ document.write(result);
   
 ```JavaScript  
 // Define the callback function.  
-function addRounded (previousValue, currentValue) {  
-    return previousValue + Math.round(currentValue);  
+function addRounded (accumulator, currentValue) {  
+    return accumulator + Math.round(currentValue);  
     }  
   
 // Create an array.  
@@ -154,10 +155,10 @@ document.write (result);
  下面的示例将值添加数组中。 `currentIndex`和`array1`回调函数中使用参数。  
   
 ```JavaScript  
-function addDigitValue(previousValue, currentDigit, currentIndex, array) {  
+function addDigitValue(accumulator, currentDigit, currentIndex, array) {  
     var exponent = (array.length - 1) - currentIndex;  
     var digitValue = currentDigit * Math.pow(10, exponent);  
-    return previousValue + digitValue;  
+    return accumulator + digitValue;  
     }  
   
 var digits = [4, 1, 2, 5];  
@@ -173,17 +174,17 @@ document.write (result);
  下面的示例获取包含介于 1 和 10 另一个数组中的这些值的数组。 提供给的初始值`reduce`方法为空数组。  
   
 ```JavaScript  
-function Process(previousArray, currentValue) {  
+function Process(accumulatedArray, currentValue) {  
     // If currentValue is between 1 and 10,   
     // append currentValue to the array.  
     var nextArray;  
     if (currentValue >= 1 && currentValue <= 10)  
-        nextArray = previousArray.concat(currentValue);  
+        nextArray = accumulatedArray.concat(currentValue);  
     else  
-        nextArray = previousArray;  
+        nextArray = accumulatedArray;  
   
     // If this is not the last call by the reduce method,  
-    // the returned array is previousArray on the next call.  
+    // the returned array is accumulatedArray on the next call.  
     // If this is the last call by the reduce method, the  
     // returned array is the return value of the reduce method.  
     return nextArray;  
@@ -205,5 +206,5 @@ document.write("result array=" + resultArray);
 ## <a name="requirements"></a>要求  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [reduceRight 方法 (Array)](../../javascript/reference/reduceright-method-array-javascript.md)

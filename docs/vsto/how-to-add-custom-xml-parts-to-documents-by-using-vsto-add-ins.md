@@ -1,5 +1,5 @@
 ---
-title: 如何： 使用 VSTO 外接程序将自定义 XML 部件添加到文档 |Microsoft 文档
+title: 如何： 使用 VSTO 外接程序将自定义 XML 部件添加到文档
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d06918a9b1d2bf1bec3f39d3e58352665d07e5c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d652f0890b32197bb13a3f73221f9ee2a92bcfc8
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>如何：使用 VSTO 外接程序将自定义 XML 部件添加到文档
+# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>如何： 使用 VSTO 外接程序将自定义 XML 部件添加到文档
   通过在 VSTO 外接程序中创建自定义 XML 部件，可以将 XML 数据存储在以下类型的文档中：  
   
 -   Microsoft Office Excel 工作簿。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Office PowerPoint 演示文稿。  
   
- 有关详细信息，请参阅 [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md)。  
+ 有关详细信息，请参阅[自定义 XML 部件概述](../vsto/custom-xml-parts-overview.md)。  
   
  **适用于：** 本主题中的信息适用于 Excel、PowerPoint 和 Word 的应用程序级项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
@@ -84,7 +84,7 @@ ms.lasthandoff: 04/16/2018
  为简单起见，此示例使用在方法中定义为局部变量的 XML 字符串。 通常，应从外部源（如文件或数据库）获取 XML。  
   
 ## <a name="see-also"></a>请参阅  
- [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md)   
- [如何：将自定义 XML 部件添加到文档级自定义项](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+ [自定义 XML 部件概述](../vsto/custom-xml-parts-overview.md)   
+ [如何： 将自定义 XML 部件添加到文档级自定义项](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
   

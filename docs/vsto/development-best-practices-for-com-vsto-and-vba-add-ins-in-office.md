@@ -1,5 +1,5 @@
 ---
-title: 用于 COM、 VSTO 和 VBA 办公室中的外接程序的开发最佳做法 |Microsoft 文档
+title: 开发适用于 Office 中的 COM、 VSTO 和 VBA 外接程序的最佳做法
 ms.custom: ''
 ms.date: 07/25/2017
 ms.technology:
@@ -14,13 +14,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 020faeb330348049dcf12431fadfa6ab099d1584
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>开发适用于 Office 中的 COM、 VSTO 和 VBA 外接程序的最佳做法
+# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>开发适用于 Office 中的 COM、 VSTO 和 VBA 外接程序的最佳做法
   如果你正在开发 COM，for Office 的 VSTO 或 VBA 外接程序将按照本文中所述的开发最佳做法。   这将有助于确保：
 
 -  你的外接程序跨不同版本和部署的 Office 的兼容性。

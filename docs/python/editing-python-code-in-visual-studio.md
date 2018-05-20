@@ -1,7 +1,7 @@
 ---
 title: 编辑 Python 代码
 description: 在 Visual Studio 中编辑 Python 提供 IntelliSense、代码片段和导航功能，以及格式设置、linting 和重构。
-ms.date: 03/05/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 173dc59190eb89517a4fb38f68299ae2e37064dd
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: cd2de34baf390371c51c5d67ad4f060d2e5b06a6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="editing-python-code"></a>编辑 Python 代码
 

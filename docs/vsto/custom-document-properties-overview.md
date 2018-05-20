@@ -1,5 +1,5 @@
 ---
-title: 自定义文档属性概述 |Microsoft 文档
+title: 自定义文档属性概述
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5ca93d7a761ca8757f0e43ab88cb6586c203160
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b85dfe077f73a26eadf173197de2ca514ff44679
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="custom-document-properties-overview"></a>Custom Document Properties Overview
+# <a name="custom-document-properties-overview"></a>自定义文档属性概述
 
-当生成文档级项目时，Visual Studio 会将两个自定义属性添加到项目中的文档： \_AssemblyLocation 和\_程序集名称。 当用户打开的文档时，Microsoft Office 应用程序将检查这些自定义文档属性。 如果它们存在文档中，应用程序加载[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，以启动自定义项。 有关详细信息，请参阅[体系结构的 Office 解决方案中 Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)。
+当生成文档级项目时，Visual Studio 会将两个自定义属性添加到项目中的文档： \_AssemblyLocation 和\_程序集名称。 当用户打开的文档时，Microsoft Office 应用程序将检查这些自定义文档属性。 如果它们存在文档中，应用程序加载[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，以启动自定义项。 有关详细信息，请参阅[Visual Studio 中的体系结构的 Office 解决方案](../vsto/architecture-of-office-solutions-in-visual-studio.md)。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="assemblylocation"></a>\_程序集位置
 
-此属性包含的自定义项中提供有关部署清单的详细信息的字符串。 有关清单的详细信息，请参阅[应用程序和部署清单在 Office 解决方案中](../vsto/application-and-deployment-manifests-in-office-solutions.md)。
+此属性包含的自定义项中提供有关部署清单的详细信息的字符串。 有关清单的详细信息，请参阅[在 Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)。
 
  The_AssemblyLocation 属性值可以具有不同的格式，具体取决于解决方案的部署方式：
 
@@ -54,8 +54,8 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>请参阅
 
-[Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-[的文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)
-[在 Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md) 
-[如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-[如何： 创建和修改自定义文档属性](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)
+- [在 Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [如何： 创建和修改自定义文档属性](../vsto/how-to-create-and-modify-custom-document-properties.md)

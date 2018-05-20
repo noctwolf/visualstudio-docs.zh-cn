@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的 Office 解决方案的体系结构 |Microsoft 文档
+title: Visual Studio 中的 Office 解决方案的体系结构
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,13 +17,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3796ba362102f1628e218a730d10fc600c744262
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: b77990219d6b31d86a919ca1a33ab415a6a9ed86
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio 中 Office 解决方案的体系结构
+# <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio 中的 Office 解决方案的体系结构
   本部分中的主题提供有关使用 Visual Studio 中的 Office 开发人员工具创建的解决方案的工作原理的信息。  
   
 > [!NOTE]  
@@ -36,10 +36,10 @@ ms.lasthandoff: 04/28/2018
  [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)  
  描述 VSTO 外接程序的组件以及应用程序加载这些组件的方式。  
   
- [Visual Studio Tools for Office 运行时概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
+ [Visual Studio Tools for Office Runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
  介绍用于 Office 解决方案的运行时的不同版本。  
   
- [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)  
+ [VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)  
  描述最终用户计算机上发现和加载 VSTO 外接程序所需的注册表项。  
   
  [自定义文档属性概述](../vsto/custom-document-properties-overview.md)  
@@ -49,7 +49,7 @@ ms.lasthandoff: 04/28/2018
  [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  介绍将 Microsoft Office 用作开发商业解决方案的平台。  
   
- [入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [要开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  提供一些链接，这些链接指向有关配置开发计算机以创建 Office 解决方案、如何开始创建 Office 解决方案以及自 Visual Studio 中的 Office 开发人员工具的早期版本以来的更改内容的信息。  
   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)  

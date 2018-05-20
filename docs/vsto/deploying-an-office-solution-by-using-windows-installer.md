@@ -1,5 +1,5 @@
 ---
-title: 使用 Windows Installer 部署 Office 解决方案 |Microsoft 文档
+title: 使用 Windows Installer 部署 Office 解决方案
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c51b101b890a2aaf2ea63edfd1f55d05abe18e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f9936111360d6734e1280e84f34416efbedb05c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="deploying-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 解决方案
+# <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 解决方案
 了解如何使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]为你的 Office 解决方案创建 Windows Installer。  
   
 通过使用 Visual Studio 创建 Windows Installer，你可以部署 Office 解决方案，该方案需要最终用户计算机上的管理员访问权限。 例如，只需使用此种文件安装一次解决方案，就可让计算机上的所有用户进行使用。 你也可以使用 ClickOnce 来部署 Office 解决方案，但必须针对计算机上的每个用户分别安装一次该解决方案。  
@@ -57,9 +57,9 @@ ms.lasthandoff: 04/16/2018
   
 - [Build the setup project](#Build)  
   
-有关如何使用 ClickOnce 部署 Office 解决方案的详细信息，请参阅[部署 Office 解决方案使用 clickonce](../vsto/deploying-an-office-solution-by-using-clickonce.md)。  
+有关如何使用 ClickOnce 部署 Office 解决方案的详细信息，请参阅[使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。  
   
-有关如何使用 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]创建 Windows Installer 文件的信息，请参阅 [使用 Windows Installer 部署 Visual Studio 2010 Tools for Office 解决方案](http://go.microsoft.com/fwlink/?LinkId=201807)。  
+有关如何创建 Windows Installer 文件的使用信息[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]，请参阅[部署 Visual Studio 2010 Tools for Office 解决方案使用 Windows Installer](http://go.microsoft.com/fwlink/?LinkId=201807)。  
   
   
 ## <a name="Download"></a>下载示例  
@@ -76,27 +76,27 @@ ms.lasthandoff: 04/16/2018
 要让解决方案在用户计算机上运行，你必须以如下方式之一授予信任，或者用户必须在安装解决方案时响应信任提示。  
   
   
-- 使用能识别已知的受信任发布者的证书为清单签名。 有关更多信息，请参见[通过对应用程序和部署清单进行签名向解决方案授予信任](../vsto/granting-trust-to-office-solutions.md#Signing)。  
+- 使用能识别已知的受信任发布者的证书为清单签名。 有关详细信息，请参阅[信任该解决方案通过对应用程序和部署清单进行签名](../vsto/granting-trust-to-office-solutions.md#Signing)。  
   
 - 将解决方案安装到用户的计算机上的 Program Files 目录中。  
   
 > [!NOTE]  
-> 对于文档级自定义项，还必须信任文档的位置。 有关更多信息，请参见 [Granting Trust to Documents](../vsto/granting-trust-to-documents.md)。  
+> 对于文档级自定义项，还必须信任文档的位置。 有关详细信息，请参阅[向文档授予信任](../vsto/granting-trust-to-documents.md)。  
   
   
 ## <a name="Obtain"></a>获取 InstallShield Limited Edition  
 可以使用 InstallShield limited Edition (ISLE)（安装 Visual Studio 后可免费使用）来创建 Windows Installer 文件。 ISLE 替代了 Visual Studio 早期版本中为安装和部署提供的项目模板功能。  
   
   
-#### <a name="to-get-installshield-limited-edition"></a>获取 InstallShield Limited Edition  
+### <a name="to-get-installshield-limited-edition"></a>获取 InstallShield Limited Edition  
   
-1. 在菜单栏上，依次选择 **“文件”**、 **“新建”**、 **“项目”**。  
+1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。  
   
    **“新建项目”** 对话框随即打开。  
   
 2. 在模板窗格中，展开 **“其他项目类”**，然后选择 **“安装和部署”** 模板。  
   
-3. 在 **“安装和部署”**的属性列表中，选择 **“启用 InstallShield Limited Edition”**，然后选择 **“确定”** 按钮。  
+3. 在 **“安装和部署”** 的属性列表中，选择 **“启用 InstallShield Limited Edition”**，然后选择 **“确定”** 按钮。  
   
    此时将显示有关如何获取 InstallShield limited Edition 的信息页面。  
   
@@ -109,35 +109,34 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="Create"></a>创建安装项目  
   
-####   
 1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中，打开要部署的 Office 项目。  
   
    与本主题相关的 VSTO 外接程序示例包含一个名为 **ExcelAddIn**的项目。 文档级自定义项示例包含一个名为 **ExcelWorkbook**的项目。 本主题将通过使用这两个名称之一来引用解决方案中的 Office 项目。  
   
-2. 在菜单栏上，依次选择 **“文件”**、 **“添加”**、 **“新建项目”**。  
+2. 在菜单栏上，选择**文件** > **添加** > **新项目**。  
   
    此时会打开 **“添加新项目”** 对话框。  
   
 3. 在模板窗格中，展开 **“其他项目类”**，然后选择 **“安装和部署”** 模板。  
   
-4. 在 **“安装和部署”**的属性列表中，选择 **“InstallShield Limited Edition 项目”**，为项目命名，然后选择 **“确定”** 按钮。  
+4. 在 **“安装和部署”** 的属性列表中，选择 **“InstallShield Limited Edition 项目”**，为项目命名，然后选择 **“确定”** 按钮。  
   
    你刚才创建的 InstallShield 安装项目即显示在解决方案中。  
   
-   此主题中的示例包含一个名为 **“OfficeAddInSetup”**的安装项目。 本主题将通过相同的名称来引用解决方案中的安装项目。  
+   此主题中的示例包含一个名为 **“OfficeAddInSetup”** 的安装项目。 本主题将通过相同的名称来引用解决方案中的安装项目。  
   
   
 ## <a name="Add"></a>添加项目输出  
 配置 **“OfficeAddInSetup”** 项目以包括 Office 项目的输出。 对于 VSTO 外接程序项目，项目输出中只有解决方案程序集。 对于文档级自定义项目，项目输出不仅包括解决方案程序集，还包括文档本身。  
   
   
-#### <a name="to-add-the-project-output"></a>添加项目输出  
+### <a name="to-add-the-project-output"></a>添加项目输出  
   
-1. 在 **“解决方案资源管理器”**中，展开 **“OfficeAddInSetup”** 项目节点，然后选择 **“项目助手”** 文件，如下图所示。  
+1. 在 **“解决方案资源管理器”** 中，展开 **“OfficeAddInSetup”** 项目节点，然后选择 **“项目助手”** 文件，如下图所示。  
   
    ![项目在解决方案资源管理器助手文件](../vsto/media/installshield-projectassistant.png "项目在解决方案资源管理器助手文件")  
   
-2. 在菜单栏上，依次选择 **“查看”**、 **“打开”**。  
+2. 在菜单栏上，选择**视图** > **打开**。  
   
 3. 在 **“项目助手”** 页下方，选择 **“应用程序文件”** 按钮，如下图所示。  
   
@@ -150,7 +149,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="AddD"></a>添加部署和应用程序清单  
   
-####   
+###  
 1. 在 **“应用程序文件”** 页上，选择 **“添加文件”** 按钮。  
   
 2. 在 **“打开”** 对话框中，浏览到 **ExcelAddIn** 项目的输出目录。  
@@ -173,14 +172,13 @@ ms.lasthandoff: 04/16/2018
 - Microsoft Visual Studio 2010 Tools for Office Runtime。  
   
   
-### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>添加 .NET Framework 4 或 .NET Framework 4.5 作为系统必备  
+### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>添加.NET Framework 4 或.NET Framework 4.5 作为系统必备组件  
   
-#####   
-1. 在 **“解决方案资源管理器”**中，展开 **“OfficeAddInSetup”** 项目节点，展开 **“指定应用程序数据”** 节点，然后选择 **“可再发行文件”** ，如下图所示。  
+1. 在 **“解决方案资源管理器”** 中，展开 **“OfficeAddInSetup”** 项目节点，展开 **“指定应用程序数据”** 节点，然后选择 **“可再发行文件”** ，如下图所示。  
   
    ![在解决方案资源管理器的可再发行文件文件](../vsto/media/installshield-redistributablesfile.png "在解决方案资源管理器的可再发行文件")  
   
-2. 在菜单栏上，依次选择 **“查看”**、 **“打开”**。  
+2. 在菜单栏上，选择**视图** > **打开**。  
   
    此时会打开 **“可再发行文件”** 页。  
   
@@ -192,10 +190,10 @@ ms.lasthandoff: 04/16/2018
   
   
 ### <a name="AddToolsForOffice"></a>添加 Visual Studio 2010 Tools for Office Runtime  
-**“可再发行文件”** 页包含一个名为 **“Microsoft VSTO 2010 Runtime”**的项，但是它引用的是运行时的较旧版本。 因此，可以手动创建引用最新版本的配置文件。 然后必须将此文件放入 **“可再发行文件”** 页上显示的所有其他项的配置文件所在的目录。  
+**“可再发行文件”** 页包含一个名为 **“Microsoft VSTO 2010 Runtime”** 的项，但是它引用的是运行时的较旧版本。 因此，可以手动创建引用最新版本的配置文件。 然后必须将此文件放入 **“可再发行文件”** 页上显示的所有其他项的配置文件所在的目录。  
   
   
-##### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>添加 Visual Studio 2010 Tools for Office Runtime 作为系统必备  
+#### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>若要添加作为必备组件的 Visual Studio 2010 Tools for Office runtime  
   
 1. 打开记事本，然后将以下 XML 复制粘贴到文本文件中。  
   
@@ -232,7 +230,7 @@ ms.lasthandoff: 04/16/2018
    </properties>  
    ```  
   
-5. 在“记事本”的菜单栏上，依次选择 **“文件”**、 **“保存”**。  
+5. 在菜单栏上在记事本中，选择**文件** > **保存**。  
   
 6. 在 **“另存为”** 对话框中，浏览到 **“桌面”** 文件夹。  
   
@@ -245,11 +243,11 @@ ms.lasthandoff: 04/16/2018
   
 9. 关闭记事本。  
   
-10. 从 **“桌面”** 文件夹中，将 Visual Studio 2010 Tools for Office Runtime.prq 文件复制到以下某个计算机目录中。  
+10. 从你**桌面**文件夹中，复制*Visual Studio 2010 Tools for Office Runtime.prq*到以下目录之一在你的计算机上的文件。  
   
-   对于 32 位操作系统： %ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\  
+   对于 32 位操作系统： *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\\*  
   
-   对于 64 位操作系统: %programfiles (x86) %\2013LE\SetupPrerequisites\  
+   对于 64 位操作系统： *%programfiles (x86) %\2013LE\SetupPrerequisites\\*  
   
 11. 在 InstallShield 项目的 **“可再发行组件”** 页上，选择 **“刷新”** 按钮刷新可再发行组件列表，如下图所示。  
   
@@ -264,10 +262,9 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="Location"></a>指定在用户计算机上安装解决方案的位置  
   
-####   
-1. 在 **“解决方案资源管理器”**中，依次展开 **“OfficeAddInSetup”** 节点和 **“组织安装”** 节点，然后选择 **“常规信息”** 文件。  
+1. 在 **“解决方案资源管理器”** 中，依次展开 **“OfficeAddInSetup”** 节点和 **“组织安装”** 节点，然后选择 **“常规信息”** 文件。  
   
-2. 在菜单栏上，依次选择 **“查看”**、 **“打开”**。  
+2. 在菜单栏上，选择**视图** > **打开**。  
   
 3. 在属性列表中，选择 **“INSTALLDIR”** 属性旁的 **“浏览”** 按钮。  
   
@@ -288,11 +285,11 @@ ms.lasthandoff: 04/16/2018
 > 本部分仅适用于你正在部署 VSTO 外接程序中的情况。 如果你正在部署的文档级自定义项，则可以立即转到[配置文档级自定义](#ConfigureDocument)部分。  
   
   
-#### <a name="to-specify-whether-you-want-to-support-per-user-or-per-computer-installations"></a>指定支持基于用户的安装还是支持基于计算机的安装  
+### <a name="to-specify-whether-you-want-to-support-per-user-or-per-computer-installations"></a>指定支持基于用户的安装还是支持基于计算机的安装  
   
-1. 在 **“解决方案资源管理器”**中，依次展开 **“OfficeAddInSetup”** 项目节点和 **“组织安装”** 节点，然后选择 **“常规信息”** 文件。  
+1. 在 **“解决方案资源管理器”** 中，依次展开 **“OfficeAddInSetup”** 项目节点和 **“组织安装”** 节点，然后选择 **“常规信息”** 文件。  
   
-2. 在菜单栏上，依次选择 **“查看”**、 **“打开”**。  
+2. 在菜单栏上，选择**视图** > **打开**。  
   
    此时会显示该安装项目的属性。  
   
@@ -300,14 +297,14 @@ ms.lasthandoff: 04/16/2018
   
    若要安装 VSTO 外接程序为当前用户，选择**ALLUSERS =""（每个用户安装）**。 若要为计算机的所有用户安装 VSTO 外接程序，请选择 **ALLUSERS=1**（基于计算机安装）。  
   
-   在下一步的过程中，将创建注册表项来支持 Office 应用程序能够发现和加载 VSTO 外接程序。 请参阅 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)。  
+   在下一步的过程中，将创建注册表项来支持 Office 应用程序能够发现和加载 VSTO 外接程序。 请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。  
   
   
-#### <a name="to-create-registry-keys"></a>创建注册表项  
+### <a name="to-create-registry-keys"></a>创建注册表项  
   
-1. 在 **“解决方案资源管理器”**中，选择 **“项目助手”** 节点。  
+1. 在 **“解决方案资源管理器”** 中，选择 **“项目助手”** 节点。  
   
-   在菜单栏上，依次选择 **“查看”**、 **“打开”**。  
+   在菜单栏上，选择**视图** > **打开**。  
   
 2. 在 **“项目助手”** 页下方，选择 **“应用程序注册表”** 按钮，如下图所示。  
   
@@ -315,7 +312,7 @@ ms.lasthandoff: 04/16/2018
   
    此时将显示 **“应用程序注册表项”** 页。  
   
-3. 在 **“是否希望配置应用程序将安装的注册表数据？”**下，选择 **“是”** 选项按钮。  
+3. 在 **“是否希望配置应用程序将安装的注册表数据？”** 下，选择 **“是”** 选项按钮。  
   
 4. 在**目标计算机的注册表视图**列表中，添加的密钥层次结构可支持你要创建的安装程序类型。  
   
@@ -385,7 +382,7 @@ ms.lasthandoff: 04/16/2018
   
 13. 在“值数据”  文本框中，输入 **3**，然后选择“确定”  按钮。  
   
-   应用程序启动时，值 3 会加载该 VSTO 外接程序。 有关 LoadBehavior 值的详细信息，请参阅 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)。  
+   应用程序启动时，值 3 会加载该 VSTO 外接程序。 有关 LoadBehavior 值的详细信息，请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。  
   
 14. 打开 **“Manifest”** 值的快捷菜单，然后选择 **“修改”**。  
   
@@ -396,7 +393,7 @@ ms.lasthandoff: 04/16/2018
    Visual Studio 2010 Tools for Office Runtime 会使用此路径查找部署清单。 此路径的 **[INSTALLDIR]** 部分是映射到 InstallShield 安装项目“常规信息”  属性页中的 **INSTALLDIR** 属性的宏。 此属性指定 VSTO 外接程序在目标计算机上的安装位置。 **|vstolocal** 后缀可确保从安装文件夹，而非 ClickOnce 缓存加载你的解决方案。  
   
 > [!IMPORTANT]  
-> 如果在 Outlook 的 VSTO 外接程序中创建自定义窗体区域，你必须创建更多注册表项以在 Outlook 中注册该窗体区域。 有关详细信息，请参阅 [Registry Entries for Outlook Form Regions](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries)。  
+> 如果在 Outlook 的 VSTO 外接程序中创建自定义窗体区域，你必须创建更多注册表项以在 Outlook 中注册该窗体区域。 有关详细信息，请参阅[注册表项，outlook 窗体区域](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries)。  
   
   
 ## <a name="ConfigureDocument"></a>Configure a document-level customization  
@@ -406,20 +403,19 @@ ms.lasthandoff: 04/16/2018
   
 若要修改自定义属性，你可以创建一个程序，用于从文档中移除文档级自定义项，修改相应属性，然后重新将自定义项附加到文档中。 然后，你可以创建运行该程序的自定义操作，并将该操作添加到你的安装项目中。  
   
+### <a name="to-create-a-program-that-modifies-document-properties"></a>创建修改文档属性的程序  
   
-#### <a name="to-create-a-program-that-modifies-document-properties"></a>创建修改文档属性的程序  
-  
-1. 在菜单栏上，依次选择 **“文件”**、 **“添加”**、 **“新建项目”**。  
+1. 在菜单栏上，选择**文件** > **添加** > **新项目**。  
   
    此时，将显示 **“添加新项目”** 对话框。  
   
 2. 在模板窗格中，从你要使用的语言节点下选择 **“Windows”** 文件夹。  
   
-3. 在面向 **“Windows”**的项目类型列表中，选择 **“控制台应用程序”** 模板。  
+3. 在面向 **“Windows”** 的项目类型列表中，选择 **“控制台应用程序”** 模板。  
   
 4. 将项目命名为 **SetExcelDocumentProperties**，并选择“确定”  按钮。  
   
-5. 在 **“解决方案资源管理器”**中，选择 **“显示所有文件”** 按钮，打开 **“SetExcelDocumentProperties”** 项目节点的快捷菜单，然后选择 **“添加引用”**。  
+5. 在 **“解决方案资源管理器”** 中，选择 **“显示所有文件”** 按钮，打开 **“SetExcelDocumentProperties”** 项目节点的快捷菜单，然后选择 **“添加引用”**。  
   
 6. 在 **“引用管理器”** 对话框中，选择 **“扩展”** 选项卡，选中以下程序集旁的复选框，然后选择 **“确定”** 按钮。  
   
@@ -428,9 +424,9 @@ ms.lasthandoff: 04/16/2018
   
    - Microsoft.VisualStudio.Tools.Applications.ServerDocument  
   
-7. 在 **“解决方案资源管理器”**中，选择 **“Program.cs”** 文件（针对 C# 应用程序）或 **“Module1.vb”** 文件（针对 Visual Basic 应用程序）。  
+7. 在 **“解决方案资源管理器”** 中，选择 **“Program.cs”** 文件（针对 C# 应用程序）或 **“Module1.vb”** 文件（针对 Visual Basic 应用程序）。  
   
-8. 在菜单栏上，依次选择 **“查看”**、 **“打开”**。  
+8. 在菜单栏上，选择**视图** > **打开**。  
   
 9. 将此文件的全部内容替换为以下代码。  
   
@@ -440,13 +436,13 @@ ms.lasthandoff: 04/16/2018
 10. 编译该项目。  
   
   
-#### <a name="to-add-a-custom-action-that-runs-your-program"></a>添加运行程序的自定义操作  
+### <a name="to-add-a-custom-action-that-runs-your-program"></a>添加运行程序的自定义操作  
   
-1. 在 **“解决方案资源管理器”**中，展开 **“OfficeAddInSetup”** 项目节点，然后选择 **“项目助手”** 文件，如下图所示。  
+1. 在 **“解决方案资源管理器”** 中，展开 **“OfficeAddInSetup”** 项目节点，然后选择 **“项目助手”** 文件，如下图所示。  
   
    ![项目在解决方案资源管理器助手文件](../vsto/media/installshield-projectassistant.png "项目在解决方案资源管理器助手文件")  
   
-2. 在菜单栏上，依次选择 **“查看”**、 **“打开”**。  
+2. 在菜单栏上，选择**视图** > **打开**。  
   
 3. 在 **“项目助手”** 页下方，选择 **“应用程序文件”** 按钮，如下图所示。  
   
@@ -458,16 +454,16 @@ ms.lasthandoff: 04/16/2018
   
 5. 在 **“SetExcelDocumentProperties”** 节点下，选择 **“主输出”** 复选框，再选择 **“确定”** 按钮。  
   
-6. 在 **“解决方案资源管理器”**中，于 **“OfficeAddInSetup”** 节点下，展开 **“定义安装要求和操作”** 节点，然后选择 **“自定义操作”** 文件夹。  
+6. 在 **“解决方案资源管理器”** 中，于 **“OfficeAddInSetup”** 节点下，展开 **“定义安装要求和操作”** 节点，然后选择 **“自定义操作”** 文件夹。  
   
-7. 在菜单栏上，依次选择 **“查看”**、 **“打开”**。  
+7. 在菜单栏上，选择**视图** > **打开**。  
   
    屏幕旁边的窗格中会显示一个事件列表。  
   
    > [!NOTE]  
    >    此列表中只有少数事件可用于 InstallShield Limited Edition。 在此过程中，你将运行程序，通过使用**之后安装程序完成成功对话框**事件。  
   
-8. 在事件列表中的 **“安装过程中的自定义操作”**下，打开 **“‘安装程序成功完成之后’对话框”** 事件的快捷菜单，然后选择 **“新建 EXE”**。  
+8. 在事件列表中的 **“安装过程中的自定义操作”** 下，打开 **“‘安装程序成功完成之后’对话框”** 事件的快捷菜单，然后选择 **“新建 EXE”**。  
   
    名为 **“NewCustomAction1”** 的自定义操作显示在 **“‘安装程序成功完成之后’对话框”** 事件下。 自定义操作的属性集会出现在事件旁边的窗格中。  
   
@@ -480,7 +476,7 @@ ms.lasthandoff: 04/16/2018
   
 11. 在 **“浏览目标文件”** 对话框中，浏览到 **“SetExcelDocumentProperties.Primary.output”** 文件，然后选择 **“打开”** 按钮。  
   
-   此文件的位置取决于为安装项目的 **“INSTALLDIR”** 属性指定的文件夹。 例如，如果你为名为 **“[PersonalFolder]DemoWorkbookApp”**的文件夹设置该属性，则可以通过浏览到 **“[ProgramFilesFolder]\DemoWorkbookApp”** 找到 **“SetExcelDocumentProperties.Primary.output”**文件。  
+   此文件的位置取决于为安装项目的 **“INSTALLDIR”** 属性指定的文件夹。 例如，如果你为名为 **“[PersonalFolder]DemoWorkbookApp”** 的文件夹设置该属性，则可以通过浏览到 **“[ProgramFilesFolder]\DemoWorkbookApp”** 找到 **“SetExcelDocumentProperties.Primary.output”** 文件。  
   
    在下一步的几个步骤中，你将获得文档的解决方案 ID，然后将该 ID 作为参数传递到控制台应用程序。 你还需要传递文档、 部署清单和文档集的位置。  
   
@@ -488,31 +484,30 @@ ms.lasthandoff: 04/16/2018
   
    此时会打开包含解决方案的文件夹。  
   
-13. 在记事本中打开解决方案的项目文件。 对于 Visual Basic 项目，该文件的名称为 ExcelWorkbook.vbproj。 对于 C# 项目，该文件的名称为 ExcelWorkbook.csproj。  
+13. 在记事本中打开解决方案的项目文件。 对于 Visual Basic 项目中，文件的名称是*ExcelWorkbook.vbproj*。 对于 C# 项目，该文件的名称是*ExcelWorkbook.csproj*。  
   
 14. 在项目文件中，搜索**&lt;解决方案 Id&gt;** 元素，将其值复制到剪贴板，，然后关闭记事本。  
   
    可以将该值作为参数传递到控制台应用程序。  
   
-15. 在 **“NewCustomAction1”**的属性页中，将 **“命令行”** 属性设置为以下文本行。  
+15. 在 **“NewCustomAction1”** 的属性页中，将 **“命令行”** 属性设置为以下文本行。  
   
   
-   ```  
+   ```cmd
    /assemblyLocation="[INSTALLDIR]ExcelWorkbook.dll" /deploymentManifestLocation="[INSTALLDIR]ExcelWorkbook.vsto" /documentLocation="[INSTALLDIR]ExcelWorkbook.xlsx" /solutionID="Your Solution ID"  
    ```  
   
 16. 将 **Your Solution ID** 替换为复制到剪贴板中的解决方案 ID。  
   
    > [!IMPORTANT]  
-   >    测试安装程序，以验证此自定义操作运行的控制台应用程序可以访问 [INSTALLDIR] 目录中的文档。 用户的计算机上的某些目录可能需要管理访问权限 （例如，Program Files 目录）。 如果你正在将解决方案部署到需要管理访问权限的目录，则应打开**属性**对话框中的 setup.exe 文件中，选择**兼容性**选项卡上，然后选择**以管理员身份运行此程序**分发安装程序之前的复选框。 如果你不希望用户具有管理权限运行安装程序，设置 [INSTALLDIR] 属性为用户可能有权访问的目录，如**文档**目录。 有关详细信息，请参阅[指定想要在用户的计算机上安装解决方案](#Location)本主题的部分。  
+   >    测试安装程序，以验证此自定义操作运行的控制台应用程序可以访问 [INSTALLDIR] 目录中的文档。 用户的计算机上的某些目录可能需要管理访问权限 （例如，Program Files 目录）。 如果你正在将解决方案部署到需要管理访问权限的目录，则应打开**属性**对话框*setup.exe*文件中，选择**兼容性**选项卡上，然后选择**以管理员身份运行此程序**分发安装程序之前的复选框。 如果你不希望用户具有管理权限运行安装程序，设置 [INSTALLDIR] 属性为用户可能有权访问的目录，如**文档**目录。 有关详细信息，请参阅[指定想要在用户的计算机上安装解决方案](#Location)本主题的部分。  
   
   
 ## <a name="Build"></a>Build the setup project  
   
-####   
-1. 在 **“解决方案资源管理器”**中，展开 **“准备发布”** 节点，然后选择 **“发布”** 文件。  
+1. 在 **“解决方案资源管理器”** 中，展开 **“准备发布”** 节点，然后选择 **“发布”** 文件。  
   
-2. 在菜单栏上，依次选择 **“查看”**、 **“打开”**。  
+2. 在菜单栏上，选择**视图** > **打开**。  
   
    此时会在侧边窗格中打开 **“生成”** 资源管理器，便于你选择要创建的发布类型。  
   
@@ -522,23 +517,23 @@ ms.lasthandoff: 04/16/2018
   
 5. 在 **“Setup.exe”** 属性页中，从 **“InstallShield 系统必备组件位置”** 列表中，选择 **“从 Web 下载”**。  
   
-6. 在菜单栏上，依次选择 **“生成”**、 **“配置管理器”**。  
+6. 在菜单栏上，依次选择“生成” > “Configuration Manager”。  
   
 7. 在 **“活动解决方案配置”** 列表中，选择 **“SingleImage”**。  
   
 8. 在 **“项目上下文”** 表中，从 **“OfficeAddInSetup”** 项目的 **“配置”** 列中选择 **“SingleImage”**，然后选择 **“关闭”** 按钮。  
   
-9. 在菜单栏上，依次选择 **“生成”**、 **“生成 OfficeAddInSetup”**。  
+9. 在菜单栏上，选择**生成** > **生成 officeaddinsetup**。  
   
-   在生成完成后，你可以找到的 setup.exe 文件**officeaddinsetup**项目上的以下位置： *OfficeAddInSetupProjectRoot * * * \OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
+   在生成完成后，你可以找到*setup.exe*文件**officeaddinsetup**项目上的以下位置： *OfficeAddInSetupProjectRoot * * * \OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
 ## <a name="see-also"></a>请参阅  
-[用于部署的 Office 解决方案必备组件](http://msdn.microsoft.com/en-us/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
+[用于部署的 office 解决方案必备组件](http://msdn.microsoft.com/en-us/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)  
-[Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)  
+[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)  
 [自定义文档属性概述](../vsto/custom-document-properties-overview.md)  
 [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)  
-[Granting Trust to Documents](../vsto/granting-trust-to-documents.md)  
-[使用 Windows Installer 部署 Visual Studio 2010 Tools for Office 解决方案](http://go.microsoft.com/fwlink/?LinkId=201807)  
+[向文档授予信任](../vsto/granting-trust-to-documents.md)  
+[部署 Visual Studio 2010 Tools for Office 解决方案使用 Windows 安装程序](http://go.microsoft.com/fwlink/?LinkId=201807)  
   

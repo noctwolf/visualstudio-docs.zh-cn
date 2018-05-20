@@ -1,5 +1,5 @@
 ---
-title: 通过使用 ClickOnce 部署 Office 解决方案 |Microsoft 文档
+title: 使用 ClickOnce 部署 Office 解决方案
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29c0e6691f31c6092b9d2222064c59d7fb8839db
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="deploying-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 解决方案
-  如果使用 ClickOnce，则部署 Office 解决方案的步骤更少。 如果发布更新，解决方案将自动检测并安装更新。 不过，ClickOnce 需要你分别为计算机的每个用户安装解决方案。 因此，如果有多个用户将在同一计算机上运行你的解决方案，应考虑使用 Windows Installer (.msi)。  
+# <a name="deploy-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 解决方案
+  如果使用 ClickOnce，则部署 Office 解决方案的步骤更少。 如果发布更新，解决方案将自动检测并安装更新。 不过，ClickOnce 需要你分别为计算机的每个用户安装解决方案。 因此，应考虑使用 Windows Installer (*.msi*) 如果多个用户将在同一台计算机上运行你的解决方案。  
   
 ## <a name="in-this-topic"></a>在本主题中  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [解决方案回滚到早期版本](#Roll)  
   
- 有关如何通过创建 Windows Installer 文件部署 Office 解决方案的详细信息，请参阅[部署 Office 解决方案使用 Windows installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
+ 有关如何通过创建 Windows Installer 文件部署 Office 解决方案的详细信息，请参阅[使用 Windows Installer 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
   
 ##  <a name="Publish"></a> 发布解决方案  
  你可以通过使用发布你的解决方案**发布向导**或**项目设计器**。 在此过程中，你将使用**项目设计器**因为它提供了一组完整的发布选项。 请参阅[发布向导&#40;Visual Studio 中的 Office 开发&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md)。  
@@ -60,7 +60,7 @@ ms.lasthandoff: 04/16/2018
   
      ![项目设计器的发布选项卡](../vsto/media/vsto-publishtab.png "项目设计器的发布选项卡")  
   
-4.  在**发布文件夹位置 （ftp 服务器或者文件路径）**框中，输入想在其中的文件夹的路径**项目设计器**从中复制解决方案文件。  
+4.  在**发布文件夹位置 （ftp 服务器或者文件路径）** 框中，输入想在其中的文件夹的路径**项目设计器**从中复制解决方案文件。  
   
      可以输入以下任一类型的路径。  
   
@@ -131,12 +131,12 @@ ms.lasthandoff: 04/16/2018
      ![发布文件夹结构](../vsto/media/publishfolderstructure.png "发布文件夹结构")  
   
     > [!NOTE]  
-    >  ClickOnce 将.deploy 扩展名附加到程序集，这样，受保护的安装的 Internet 信息服务 (IIS) 不会由于不安全的扩展而阻止文件。 在用户安装解决方案后，ClickOnce 将移除 .deploy 扩展名。  
+    >  ClickOnce 将追加 *.deploy*对程序集的扩展，以便保护的安装 Internet 信息服务 (IIS) 不会由于不安全的扩展而阻止文件。 在用户安装解决方案后，ClickOnce 将移除 *.deploy*扩展。  
   
 14. 将解决方案文件复制到你先前在此过程中指定的安装位置。  
   
 ##  <a name="Trust"></a> 决定你想要向解决方案授予信任  
- 要让解决方案在用户计算机上运行，你必须授予信任，或用户必须在安装解决方案时响应信任提示。 要向解决方案授予信任，请使用能识别已知受信任发布者的证书为清单签名。 请参阅[向解决方案授予信任的签名的应用程序和部署清单](../vsto/granting-trust-to-office-solutions.md#Signing)。  
+ 要让解决方案在用户计算机上运行，你必须授予信任，或用户必须在安装解决方案时响应信任提示。 要向解决方案授予信任，请使用能识别已知受信任发布者的证书为清单签名。 请参阅[信任该解决方案通过对应用程序和部署清单进行签名](../vsto/granting-trust-to-office-solutions.md#Signing)。  
   
  如果要部署的文档级自定义项，并且你想要将放置文件夹的用户的计算机上的文档或使文档在 SharePoint 站点上可用，请确保 Office 信任文档的位置。 请参阅[向文档授予信任](../vsto/granting-trust-to-documents.md)。  
   
@@ -148,16 +148,16 @@ ms.lasthandoff: 04/16/2018
   
  作为最佳做法，用户应打开其计算机上的文档副本，这样，多个用户不会同时尝试打开同一文档。 要实施此做法，可以将安装程序配置为将文档复制到用户计算机。 请参阅[将解决方案文档置于最终用户的计算机上 （仅文档级自定义）](#Put)。  
   
-### <a name="installing-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>通过从 IIS 网站打开部署清单来安装解决方案  
- 用户可以通过从 Web 打开部署清单来安装 Office 解决方案。 但是，受保护的 Internet Information Services (IIS) 安装将阻止具有 .vsto 扩展名的文件。 要使用 IIS 来部署 Office 解决方案，必须在 IIS 中定义 MIME 类型。  
+### <a name="install-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>通过从 IIS 网站打开部署清单来安装解决方案  
+ 用户可以通过从 Web 打开部署清单来安装 Office 解决方案。 但是，受保护的安装的 Internet 信息服务 (IIS) 将阻止这些文件具有 *.vsto*扩展。 要使用 IIS 来部署 Office 解决方案，必须在 IIS 中定义 MIME 类型。  
   
 ##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>向 IIS 6.0 添加 .vsto MIME 类型  
   
-1.  在服务器上运行 IIS 6.0，选择**启动**，**所有程序**，**管理工具**， **Internet Information Services (IIS) Manager**.  
+1.  在服务器上运行 IIS 6.0，选择**启动** > **所有程序** > **管理工具** >   **Internet Information Services (IIS) 管理器**。 
   
 2.  选择计算机名称，**网站**文件夹或要配置的网站。  
   
-3.  在菜单栏上，选择**操作**，**属性**。  
+3.  在菜单栏上，选择**操作** > **属性**。  
   
 4.  上**HTTP 标头**选项卡上，选择**MIME 类型**按钮。  
   
@@ -166,28 +166,28 @@ ms.lasthandoff: 04/16/2018
 6.  在**MIME 类型**窗口中，输入 **.vsto**作为扩展名，并输入**应用程序/x 的 ms vsto**作为 MIME 类型，，然后应用新设置。  
   
     > [!NOTE]  
-    >  为使更改生效，必须重新启动万维网发布服务或者等待工作进程回收。 随后，必须刷新浏览器的磁盘缓存，并尝试再次打开 .vsto 文件。  
+    >  为使更改生效，必须重新启动万维网发布服务或者等待工作进程回收。 必须刷新浏览器的磁盘缓存，然后尝试打开 *.vsto*再次文件。  
   
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>向 IIS 7.0 添加 .vsto MIME 类型  
   
-1.  在服务器上运行 IIS 7.0，选择**启动**，**所有程序**，**附件**。  
+1.  在服务器上运行 IIS 7.0，选择**启动** > **所有程序** > **附件**。  
   
 2.  打开的快捷菜单**命令提示符**，然后选择**以管理员身份运行。**  
   
 3.  在**打开**框中，输入下面的路径，然后选择**确定**按钮。  
   
-    ```  
+    ```cmd
     %windir%\system32\inetsrv   
     ```  
   
 4.  输入以下命令，然后应用新设置。  
   
-    ```  
+    ```cmd
     set config /section:staticContent /+[fileExtension='.vsto',mimeType='application/x-ms-vsto']  
     ```  
   
     > [!NOTE]  
-    >  为使更改生效，必须重新启动万维网发布服务或者等待工作进程回收。 随后，必须刷新浏览器的磁盘缓存，并尝试再次打开 .vsto 文件。  
+    >  为使更改生效，必须重新启动万维网发布服务或者等待工作进程回收。 必须刷新浏览器的磁盘缓存，然后尝试打开 *.vsto*再次文件。  
   
 ##  <a name="Put"></a> 将解决方案文档置于最终用户的计算机上 （仅文档级自定义）  
  通过创建后期部署操作，你可以为其复制到最终用户的计算机上你解决方案的文档。 这样一来，用户不需要手动将文档复制从安装位置到其计算机后用户安装解决方案。 你将需要创建定义后期部署操作的类、 生成和发布解决方案，修改应用程序清单和应用程序和部署清单进行重新签名。  
@@ -196,7 +196,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>创建定义后期部署操作的类  
   
-1.  在菜单栏上，依次选择 **“文件”**、 **“添加”**、 **“新建项目”**。  
+1.  在菜单栏上，选择**文件** > **添加** > **新项目**。  
   
 2.  在**添加新项目**对话框中，在**已安装的模板**窗格中，选择**Windows**文件夹。  
   
@@ -206,9 +206,9 @@ ms.lasthandoff: 04/16/2018
   
 5.  在**解决方案资源管理器**，选择**FileCopyPDA**项目。  
   
-6.  在菜单栏上，依次选择“项目”、“添加引用”。  
+6.  在菜单栏上，选择**项目** > **添加引用**。  
   
-7.  上 **.NET**选项卡上，添加对 Microsoft.VisualStudio.Tools.Applications.Runtime 和 microsoft.visualstudio.tools.applications.serverdocument 的引用。  
+7.  上 **.NET**选项卡上，将引用添加到`Microsoft.VisualStudio.Tools.Applications.Runtime`和`Microsoft.VisualStudio.Tools.Applications.ServerDocument`。  
   
 8.  将类重命名为 `FileCopyPDA`，然后使用代码替换文件内容。 这段代码执行下列任务：  
   
@@ -233,13 +233,13 @@ ms.lasthandoff: 04/16/2018
   
 5.  在**解决方案资源管理器**，选择**ExcelWorkbook**项目。  
   
-6.  在菜单栏上依次选择**项目**，**新文件夹**。  
+6.  在菜单栏上依次选择**项目** > **新文件夹**。  
   
-7.  Enter**数据**，然后选择 Enter 键。  
+7.  Enter**数据**，然后选择**Enter**密钥。  
   
 8.  在**解决方案资源管理器**，选择**数据**文件夹。  
   
-9. 在菜单栏上，选择**项目**，**添加现有项**。  
+9. 在菜单栏上，选择**项目** > **添加现有项**。  
   
 10. 在**添加现有项**对话框中，浏览到输出目录**ExcelWorkbook**项目，选择**ExcelWorkbook.xlsx**文件，然后依次**添加**按钮。  
   
@@ -263,7 +263,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  在 `</vstav3:update>` 元素之后添加以下代码。 类特性`<vstav3:entryPoint>`元素，使用以下语法： *NamespaceName.ClassName*。 在以下示例中，命名空间和类名称相同，因此生成的入口点名称为 `FileCopyPDA.FileCopyPDA`。  
   
-    ```  
+    ```xml
     <vstav3:postActions>  
       <vstav3:postAction>  
         <vstav3:entryPoint  
@@ -288,7 +288,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  通过运行以下命令对修改的应用程序清单进行签名：  
   
-    ```  
+    ```cmd
     mage -sign ExcelWorkbook.dll.manifest -certfile ExcelWorkbook_TemporaryKey.pfx  
     ```  
   
@@ -296,7 +296,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  将更改为**c:\publish**文件夹，然后更新并登录部署清单通过运行以下命令：  
   
-    ```  
+    ```cmd
     mage -update ExcelWorkbook.vsto -appmanifest "Application Files\Ex  
     celWorkbookMostRecentVersionNumber>\ExcelWorkbook.dll.manifest" -certfile "Application Files\ExcelWorkbookMostRecentVersionNumber>\ExcelWorkbook_TemporaryKey.pfx"  
     ```  
@@ -306,7 +306,7 @@ ms.lasthandoff: 04/16/2018
   
      将出现“ExcelWorkbook.vsto 已成功签名”消息。  
   
-5.  将 ExcelWorkbook.vsto 文件复制到**c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_目录。  
+5.  复制*ExcelWorkbook.vsto*文件为**c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_目录。  
   
 ##  <a name="SharePoint"></a> 将解决方案文档置于运行 SharePoint （仅文档级自定义） 的服务器  
  可以使用 SharePoint 将文档级自定义项发布到最终用户。 当用户转到 SharePoint 站点并打开文档时，运行时会将解决方案从共享网络文件夹自动安装到用户的本地计算机。 将解决方案安装到本地后，即使将文档复制到其他位置（例如桌面），自定义项仍可正常工作。  
@@ -331,7 +331,7 @@ ms.lasthandoff: 04/16/2018
   
         4.  在**路径**框中，输入包含上载文档的 SharePoint 文档库的 URL (例如， *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*)。  
   
-             请勿添加默认网页，例如 default.aspx 或 AllItems.aspx 的名称。  
+             请勿添加默认网页，名称如*default.aspx*或*AllItems.aspx*。  
   
         5.  选择**此位置的子文件夹也均受信任**复选框，然后依次**确定**按钮。  
   
@@ -340,13 +340,13 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="Custom"></a> 创建自定义安装程序  
  为 Office 解决方案，而不是使用发布解决方案时，为你创建的安装程序，可以创建自定义安装程序。 例如，可以使用登录脚本来启动安装，或者使用批处理文件来安装解决方案，而无需用户交互。 如果最终用户计算机上已安装了系统必备组件，则这些方案都能顺利实现。  
   
- 在自定义安装过程中，调用适用于 Office 解决方案的安装程序工具 (VSTOInstaller.exe)，此工具在默认情况下安装在以下位置：  
+ 作为自定义安装过程的一部分，调用适用于 Office 解决方案的安装程序工具 (*VSTOInstaller.exe*)，默认情况下安装在以下位置：  
   
- %commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe  
+ *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*  
   
- 如果工具不在此位置，可以使用 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath 或 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath 注册表项来查找此工具的路径。  
+ 如果该工具不在此位置，则可以使用**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath**或**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO 运行时 Setup\v4\InstallerPath**注册表项来查找此工具的路径。  
   
- 可以将以下参数与 VSTOinstaller.exe 一起使用。  
+ 你可以使用以下参数与*VSTOinstaller.exe*。  
   
 |参数|定义|  
 |---------------|----------------|  
@@ -355,12 +355,12 @@ ms.lasthandoff: 04/16/2018
 |/Silent 或 /S|在不提示用户输入或不显示任何消息的情况下进行安装或卸载。 如果需要信任提示，自定义项未安装或更新。|  
 |/Help 或 /?|显示帮助信息。|  
   
- 在运行 VSTOinstaller.exe 时，可能会显示以下错误代码。  
+ 当你运行*VSTOinstaller.exe*，可能会显示以下错误代码。  
   
 |错误代码|定义|  
 |----------------|----------------|  
 |0|已成功安装或卸载解决方案，或者显示 VSTOInstaller 帮助。|  
-|-100|一个或多个命令行选项无效或多次设置。 有关详细信息，输入"vstoinstaller /？" 或参阅[为 ClickOnce Office 解决方案创建自定义安装程序](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)。|  
+|-100|一个或多个命令行选项无效或多次设置。 有关详细信息，输入"vstoinstaller /？" 或参阅[创建的自定义安装程序的 ClickOnce Office 解决方案](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)。|  
 |-101|一个或多个命令行选项无效。 有关详细信息，请输入“vstoinstaller /?”。|  
 |-200|部署清单 URI 无效。 有关详细信息，请输入“vstoinstaller /?”。|  
 |-201|由于部署清单无效，无法安装解决方案。 请参阅[部署 Office 解决方案的清单](../vsto/deployment-manifests-for-office-solutions.md)。|  
@@ -398,7 +398,7 @@ ms.lasthandoff: 04/16/2018
   
      以下示例演示如何将安装路径更改为 Fabrikam 网站上的位置，你也可以使用你需要的路径替换此 URL：  
   
-    ```  
+    ```cmd  
     setup.exe /url="http://www.fabrikam.com/newlocation"  
     ```  
   
@@ -441,7 +441,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  打开解决方案的安装位置。  
   
-2.  在顶级发布文件夹中，删除相应的部署清单（.vsto 文件）。  
+2.  在顶级发布文件夹，删除部署清单 ( *.vsto*文件)。  
   
 3.  找到要回滚到的版本的子文件夹。  
   
@@ -456,14 +456,14 @@ ms.lasthandoff: 04/16/2018
      用户下次打开应用程序或自定义文档时，系统将检测到此部署清单更改。 此 Office 解决方案的早期版本会从 ClickOnce 缓存运行。  
   
 > [!NOTE]  
->  仅为解决方案的一个早期版本保存本地数据。 如果回滚两个版本，不保留本地数据。 有关本地数据的详细信息，请参阅[访问本地数据和 ClickOnce 应用程序中的远程数据](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)。  
+>  仅为解决方案的一个早期版本保存本地数据。 如果回滚两个版本，不保留本地数据。 有关本地数据的详细信息，请参阅[访问 ClickOnce 应用程序中的本地和远程数据](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [发布 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
  [如何： 安装 ClickOnce Office 解决方案](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)   
  [如何： 使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)   
- [创建的自定义安装程序的 ClickOnce Office 解决方案](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [创建的自定义安装程序的 ClickOnce office 解决方案](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
   
   

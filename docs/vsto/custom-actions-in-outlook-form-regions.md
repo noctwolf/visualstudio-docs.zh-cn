@@ -1,5 +1,5 @@
 ---
-title: 在 Outlook 中的自定义操作窗体区域 |Microsoft 文档
+title: Outlook 窗体区域中的自定义操作
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e81528aa5008b7d6f78f560d0bc0139a1e0799a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec4c6a0ce361102ab216bc0c9f460a0bdd7a4a0d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 窗体区域中的自定义操作
   操作显示使用户能够对 Microsoft Office Outlook 项做出响应的按钮。 例如，若要响应一封邮件，用户单击**答复**，**全部答复**，或**转发**操作按钮。 每个这些操作创建一个新的邮件项，并使用原始项中的信息填充的项的字段。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="adding-custom-actions-to-a-form-region"></a>向窗体区域添加自定义操作  
+## <a name="add-custom-actions-to-a-form-region"></a>将自定义操作添加到窗体区域  
  若要将自定义操作添加到窗体区域，使用**自定义操作**对话框。 你可以打开**自定义操作**中的对话框**解决方案资源管理器**通过展开**清单**节点，选择**CustomActions**属性，，然后单击省略号按钮 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器椭圆"))。  
   
  你可以使用**自定义操作**对话框可以指定*目标窗体*。 目标窗体是用户执行自定义操作时出现的表单。  
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/16/2018
 |**TargetForm**|指定目标窗体的 message 类名。 例如，键入**IPM。任务**若要打开的任务窗体。|  
 |**标题**|指定自定义操作按钮的标签。|  
   
-## <a name="customizing-a-custom-action-at-run-time"></a>自定义在运行时的自定义操作  
+## <a name="customize-a-custom-action-at-runtime"></a>自定义在运行时的自定义操作  
  你还可以将行为添加到使用代码的自定义操作。 例如，你可以添加代码，它接受电子邮件收件人的名称，并将这些名称添加为与会者中新的约会项。 若要执行此操作，处理[CustomAction](http://msdn.microsoft.com/library/office/ff862186.aspx)事件[MailItem 对象](http://msdn.microsoft.com/library/office/ff861332.aspx)。  
   
 ## <a name="see-also"></a>请参阅  

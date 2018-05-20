@@ -1,5 +1,5 @@
 ---
-title: 如何： 面向 Office 应用程序通过主互操作程序集 |Microsoft 文档
+title: 如何： 通过主互操作程序集的目标 Office 应用程序
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bfe02a06403621c2429dd8be965b3ab1b5c41b2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32ff157e3986836ac13472c4a9ed8a7b01f06e04
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>How to: Target Office Applications Through Primary Interop Assemblies
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>如何： 通过主互操作程序集的目标 Office 应用程序
   在创建新的 Office 项目时，Visual Studio 会自动添加对生成该项目所需的 Microsoft Office 主互操作程序集 (PIA) 的引用。 在以下方案中，必须添加对其他 PIA 的引用：  
   
 -   想要在项目中使用其他 Microsoft Office 应用程序的功能。 例如，你可能想要在 Microsoft Office Word 的项目中使用 Microsoft Office Excel 中的功能。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-### <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>添加对主互操作程序集的引用  
+## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>添加对主互操作程序集的引用  
   
 1.  打开 Office 项目并选择中的项目名称**解决方案资源管理器**。  
   
@@ -44,10 +44,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  上**Framework**选项卡上，选择在所需的 PIA**组件名称**列表。 有关可用的 Microsoft Office 主互操作程序集的详细信息，请参阅[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。  
   
-     如果项目面向[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本，**嵌入互操作类型**程序集引用的属性设置为**True**默认情况下。 通过使用此设置，你的解决方案在最终用户计算上不需要 PIA。 有关详细信息，请参阅 [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)。  
+     如果项目面向[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本，**嵌入互操作类型**程序集引用的属性设置为**True**默认情况下。 通过使用此设置，你的解决方案在最终用户计算上不需要 PIA。 有关详细信息，请参阅[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)。  
   
     > [!NOTE]  
-    >  在 Office 项目中，始终通过将添加对 Office Pia 的引用**.NET**选项卡**添加引用**对话框而不是**COM**选项卡。有关详细信息，请参阅 [Office Primary Interop Assemblies](../vsto/office-primary-interop-assemblies.md)。  
+    >  在 Office 项目中，始终通过将添加对 Office Pia 的引用 **.NET**选项卡**添加引用**对话框而不是**COM**选项卡。有关详细信息，请参阅[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。  
   
 4.  单击 **“确定”**。  
   
@@ -57,6 +57,6 @@ ms.lasthandoff: 04/16/2018
  [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
- [如何：安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+ [如何： 安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)  
   
   
