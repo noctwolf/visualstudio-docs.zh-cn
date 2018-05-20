@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 786926ff7608a487ea9fcd732e1457bb382a4bab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34a1ea090e85168b5fd0bf2e55c22d0a38ff331f
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="accessibility-in-office-projects"></a>Office 项目中的辅助功能
   Microsoft Visual Studio 和 Microsoft Office 包括许多辅助功能，使您能够生成符合标准的可访问性要求的自定义解决方案。 Microsoft 将发布在 Web 上找到的可访问性的准则。 有关详细信息，请参阅[辅助功能网站](http://go.microsoft.com/fwlink/?LinkID=37113)。  
@@ -33,13 +33,13 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="accessibility-at-design-time"></a>在设计时的可访问性  
 
-### <a name="using-shortcut-keys-in-document-level-projects"></a>在文档级项目中使用键盘快捷方式  
- 在 Visual Studio 中打开 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿时，一次只有一个应用程序接收的快捷键命令。 默认情况下，Visual Studio 接收所有快捷键命令，但可以 Word 或 Excel 文档通过选择具有焦点时接收它们**动态键盘方案**上**键盘设置**页**选项**对话框。 有关详细信息，请参阅[Microsoft Office Word 键盘，Microsoft Office 键盘设置选项对话框](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)和[Microsoft Office Excel 键盘，Microsoft Office 键盘设置选项对话框](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md).  
+### <a name="use-shortcut-keys-in-document-level-projects"></a>在文档级项目中使用键盘快捷方式  
+ 在 Visual Studio 中打开 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿时，一次只有一个应用程序接收的快捷键命令。 默认情况下，Visual Studio 接收所有快捷键命令，但可以 Word 或 Excel 文档通过选择具有焦点时接收它们**动态键盘方案**上**键盘设置**页**选项**对话框。 有关详细信息，请参阅[Microsoft Office Word 键盘、 Microsoft Office 键盘设置选项对话框](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)和[Microsoft Office Excel 键盘、 Microsoft Office 键盘设置选项对话框](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md).  
 
-### <a name="displaying-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>有关文档级项目中的功能区中显示键盘快捷方式  
- 在 Visual Studio 中打开 Word 文档或 Excel 工作簿时，不能按 Alt 键可查看的选项卡和功能区上的控件的键盘快捷方式。 若要在设计器中打开的文档或工作簿时，请查看键盘快捷方式，请执行以下步骤。  
+### <a name="display-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>有关文档级项目中的功能区中显示键盘快捷方式  
+ 在 Visual Studio 中打开 Word 文档或 Excel 工作簿时，不能按**Alt**键可查看的选项卡和功能区上的控件的键盘快捷方式。 若要在设计器中打开的文档或工作簿时，请查看键盘快捷方式，请执行以下步骤。  
 
-##### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>若要在设计器中查看功能区选项卡和控件的键盘快捷方式  
+#### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>若要在设计器中查看功能区选项卡和控件的键盘快捷方式  
 
 1.  在 Visual Studio 中，在**工具**菜单上，单击**选项**。  
 
@@ -55,14 +55,14 @@ ms.lasthandoff: 04/26/2018
 
 6.  打开你的项目的文档或工作簿设计器。  
 
-7.  按 F6 以在功能区中显示的快捷键。  
+7.  按**F6**以显示功能区的键盘快捷方式。  
 
-## <a name="accessibility-at-run-time"></a>在运行时的可访问性  
+## <a name="accessibility-at-runtime"></a>在运行时的可访问性  
 
-### <a name="windows-forms-controls-on-office-documents"></a>Windows 窗体 Office 文档上的控件  
+### <a name="windows-forms-controls-on-office-documents"></a>Office 文档上的 Windows 窗体控件  
  Windows 窗体控件公开可访问性属性，以提供有关控件的辅助功能，如屏幕读取器的信息。 文档级自定义项中的 Office 文档上控件时，可以充分利用这些辅助功能属性。 有关详细信息，请参阅[提供 Windows 窗体上控件的辅助功能信息](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)。  
 
- 但是，有一些可访问性限制在当 Excel 工作簿或 Word 文档承载 Windows 窗体控件的运行时：  
+ 但是，也会出现在 Excel 工作簿或 Word 文档上承载 Windows 窗体控件的一些在运行时的可访问性限制：  
 
 -   不能到另一个控件从选项卡。  
 

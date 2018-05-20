@@ -1,5 +1,5 @@
 ---
-title: 合作开发 Office 解决方案 |Microsoft 文档
+title: 合作开发 Office 解决方案
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10415a6983c158ae1c117a5b3f9a8b2e1c546a0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9bf85dd1ba39df35e337f1b6b80099e3d5bcd774
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="collaborative-development-of-office-solutions"></a>合作开发 Office 解决方案
   多个开发人员可以处理 Office 项目中与它们在其他 Visual Studio 项目协作的方式相同。 即使在不同位置中安装 Office，visual Studio 正确定位每台计算机上的 Microsoft Office 安装。 但是，有需要注意的一些重要注意事项。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/16/2018
  如果项目驻留在网络共享，而不是在源代码管理中，必须执行一些额外的步骤启用合作的开发人员打开解决方案，然后测试程序集。  
   
 ## <a name="source-control-requires-checking-out-all-files"></a>源代码管理需要签出的所有文件  
- 如果你的项目使用源代码管理，你应查看下中的代码文件的文件的所有**解决方案资源管理器**（如对 ThisDocument、 ThisWorkbook 或 ThisAddIn 代码文件） 每次更改代码文件中，即使默认情况下隐藏的文件。 如果检查出仅顶级代码文件时，所做的更改可能会丢失。  
+ 如果你的项目使用源代码管理，你应查看下中的代码文件的文件的所有**解决方案资源管理器**(如*ThisDocument*， *ThisWorkbook*，或*ThisAddIn*代码文件) 每次更改代码文件，即使默认情况下隐藏的文件。 如果检查出仅顶级代码文件时，所做的更改可能会丢失。  
   
  进行更改后，检查的所有文件备份中。 有关项目中的隐藏的代码文件的详细信息，请参阅[Visual Studio 环境中的 Office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)。  
   

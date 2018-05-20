@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 16c7405cfe889808f27dbb274f7f685e949889dd
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="creating-sharepoint-features"></a>创建 SharePoint 功能
   SharePoint 功能可用于更易于部署的相关的 SharePoint 项目项进行分组。 你可以创建功能、 设置作用域，并通过使用 SharePoint 功能设计器将其他功能标记为依赖关系。 设计器还会生成一个清单，这是一个 XML 文件，描述每个功能。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 |属性|描述|  
 |--------------|-----------------|  
-|标题|可选。 该功能的默认标题设置为*解决方案名称 * * FeatureName*。|  
+|标题|可选。 该功能的默认标题设置为*SolutionName* *FeatureName*。|  
 |描述|可选。 SharePoint 功能的说明。|  
 |范围|必须的。 如果通过创建一项功能**解决方案资源管理器**，作用域默认设置为 Web。<br /><br /> -场： 激活的整个服务器场的功能。<br /><br /> 站点： 激活网站集中的所有 web 站点的功能。<br /><br /> -Web： 激活特定网站的功能。<br /><br /> -Web 应用程序： 激活某项功能的 web 应用中的所有 web 站点。|  
 |解决方案中的项|可以添加到该功能的所有 SharePoint 项。|  

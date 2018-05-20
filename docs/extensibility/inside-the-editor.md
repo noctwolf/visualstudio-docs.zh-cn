@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ace9e405b52873d08c578c2af8e7005249e7d58c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="inside-the-editor"></a>在编辑器内
 编辑器由组成大量的其他子系统，旨在使编辑器文本模型单独从文本视图和用户界面。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
  文本模型子系统是免费的用户界面 (UI) 概念。 例如，不负责文本格式设置或文本布局，并且它有可能与文本相关联的 visual 修饰不知道。  
   
- Microsoft.VisualStudio.Text.Data.dll 和 Microsoft.VisualStudio.CoreUtilitiy.dll，仅取决于.NET Framework 基类库和 Managed Extensibility Framework (MEF) 中包含的文本模型子系统的公共类型。  
+ Microsoft.VisualStudio.Text.Data.dll 和 Microsoft.VisualStudio.CoreUtility.dll，仅取决于.NET Framework 基类库和 Managed Extensibility Framework (MEF) 中包含的文本模型子系统的公共类型。  
   
 ### <a name="text-view-subsystem"></a>文本视图子系统  
  文本视图子系统负责格式设置和显示文本。 此子系统中的类型分为两个图层，具体取决于是否类型依赖 Windows Presentation Foundation (WPF)。 最重要的类型为<xref:Microsoft.VisualStudio.Text.Editor.ITextView>和<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>，该控制要显示的文本行组和还脱字号、 所选内容，并且用于通过使用 WPF UI 元素装饰文本的功能。 此子系统还提供了将文本环绕边距显示区域。 这些边距可以进行扩展，并且可以包含不同类型的内容和视觉效果。 边距的示例包括行号显示和滚动条。  
@@ -287,6 +287,6 @@ P: ABCDEvwxyz
   
  语句结束提供的方法名称、 XML 元素和其他编码或标记元素的潜在完整内容的弹出列表。 一般情况下，用户手势调用完成会话。 会话显示的潜在完成列表和用户可以选择一个或关闭该列表。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>负责创建和触发<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>计算<xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet>会话完成项。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)   
  [编辑器导入](../extensibility/editor-imports.md)

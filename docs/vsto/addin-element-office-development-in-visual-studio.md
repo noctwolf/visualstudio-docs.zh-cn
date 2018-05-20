@@ -1,5 +1,5 @@
 ---
-title: '&lt;外接程序&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档'
+title: '&lt;外接程序&gt;元素 （Visual Studio 中的 Office 开发）'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01e7ee9e7329f46c0a728d48c16fc11eaebea5a8
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 1d2ab0264452630892d492946462fbf9ad1639d0
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;外接程序&gt;元素 （Visual Studio 中的 Office 开发）
-  `addin` 命名空间的 `vstav3` 元素包含特定于使用 Visual Studio 开发的 Microsoft Office VSTO 外接程序和文档级自定义项的信息。  
+  **外接程序**元素`vstav3`命名空间包含特定于 Microsoft Office VSTO 外接程序和文档级自定义使用 Visual Studio 开发的信息。  
 
 ## <a name="syntax"></a>语法  
 
-```  
+```xml
 <addIn>  
   <entryPointsCollection>  
     <entryPoints>  
@@ -51,32 +51,32 @@ ms.lasthandoff: 04/27/2018
 ```  
 
 ## <a name="elements-and-attributes"></a>元素和属性  
- `addin` 命名空间的 `vstav3` 元素包含有关 Office 解决方案和 Microsoft Office 应用程序的信息。 此元素必须在以下命名空间中： `vstav3=urn:schemas-microsoft-com:vsta.v3`。 子元素也必须在此命名空间中。  
+ **外接程序**元素`vstav3`命名空间包含有关 Office 解决方案和 Microsoft Office 应用程序的信息。 此元素必须在以下命名空间中： `vstav3=urn:schemas-microsoft-com:vsta.v3`。 子元素也必须在此命名空间中。  
 
  `addin` 元素没有属性。  
 
  `addin` 元素具有以下子元素。  
 
 ### <a name="entrypoints"></a>entryPoints  
- 必须的。 `entryPoints`元素中进行了描述[&#60;入口点&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。  
+ 必须的。 **入口点**元素中进行了描述[&#60;入口点&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。  
 
 ### <a name="update"></a>更新  
- 必须的。 `update`元素中进行了描述[&#60;更新&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/update-element-office-development-in-visual-studio.md)。  
+ 必须的。 **更新**元素中进行了描述[&#60;更新&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/update-element-office-development-in-visual-studio.md)。  
 
 ### <a name="postactions"></a>postActions  
- 可选。 `postActions`元素中进行了描述[ &#60;postActions&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)。  
+ 可选。 **PostActions**元素中进行了描述[ &#60;postActions&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)。  
 
 ### <a name="application"></a>应用程序  
- 必须的。 `application`元素中进行了描述[&#60;应用程序&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/application-element-office-development-in-visual-studio.md)。  
+ 必须的。 **应用程序**元素中进行了描述[&#60;应用程序&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/application-element-office-development-in-visual-studio.md)。  
 
 ## <a name="document-level-customization-example"></a>文档级自定义项示例  
 
 ### <a name="description"></a>描述  
- 下面的代码示例演示使用 `addin` 部署的文档级 Office 解决方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例摘自 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大的示例。  
+ 下面的代码示例阐释了**外接程序**使用部署的文档级 Office 解决方案中的元素[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]。 此代码示例摘自[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
 
 ### <a name="code"></a>代码  
 
-```  
+```xml
 <vstav3:addIn   
   xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">  
   <vstav3:entryPointsCollection>  
@@ -136,11 +136,11 @@ ms.lasthandoff: 04/27/2018
 ## <a name="vsto-add-in-example"></a>VSTO 外接程序示例  
 
 ### <a name="description"></a>描述  
- 下面的代码示例演示使用 `addin` 部署的应用程序级 Office 解决方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例摘自 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大的示例。  
+ 下面的代码示例阐释了**外接程序**使用部署的应用程序级 Office 解决方案中的元素[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]。 此代码示例摘自[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
 
 ### <a name="code"></a>代码  
 
-```  
+```xml
 <vstav3:addIn   
   xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">  
   <vstav3:entryPointsCollection>  
@@ -192,6 +192,6 @@ ms.lasthandoff: 04/27/2018
 ```  
 
 ## <a name="see-also"></a>请参阅  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
- [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)   
+ [部署 Office 解决方案的清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  

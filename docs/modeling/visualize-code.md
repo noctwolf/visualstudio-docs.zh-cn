@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 027a73343683b7953e70b597a8f9a222b56eb01f
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 5db66307ef9c0099e152e46c0aac761519881cd3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="visualize-code"></a>可视化代码
 
@@ -37,22 +37,14 @@ ms.lasthandoff: 05/07/2018
 
 |||
 |-|-|
-|**了解代码和它的关系：**<br /><br /> 特定代码段之间的代码图关系<br /><br /> 请参阅整个解决方案中的代码关系概述。<br /><br /> **注意**：在此版本的 Visual Studio 中，术语 *代码图* 用于替换 *依赖项关系图*。|- [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)<br />- [使用代码图调试你的应用程序](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [使用代码图分析器查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**了解代码和它的关系：**<br /><br /> 特定代码段之间的代码图关系<br /><br /> 请参阅整个解决方案中的代码关系概述。|- [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)<br />- [使用代码图调试你的应用程序](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [使用代码图分析器查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**了解类结构：**<br /><br /> 通过从代码创建类关系图，在项目中查看类的结构。|[如何：向项目中添加类图（类设计器）](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
 |**描述高级系统设计和验证代码对此设计：**<br /><br /> 创建依赖项关系图来描述高级系统设计和其预期的依赖项。 对此设计进行代码验证，以确保代码中的依赖项与设计保持一致。|- [在代码中创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)<br />- [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)<br />- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|
-
-## <a name="external-resources"></a>外部资源
-
-|**类别**|**Links**|
-|------------------|---------------|
-|**论坛**|- [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 可视化和建模 SDK （DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**博客**|[Visual Studio ALM + Team Foundation Server 博客](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技术文章和日志**|[MSDN 体系结构论坛](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>请参阅
 
 - [方案：使用可视化和建模更改设计](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
-- [体系结构分析和建模](../modeling/analyze-and-model-your-architecture.md)
+- [分析和建模体系结构](../modeling/analyze-and-model-your-architecture.md)
 - [应用体系结构建模](../modeling/model-your-app-s-architecture.md)
 - [在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)
 

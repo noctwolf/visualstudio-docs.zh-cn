@@ -1,5 +1,5 @@
 ---
-title: '&lt;f i e d&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档'
+title: '&lt;f i e d&gt;元素 （Visual Studio 中的 Office 开发）'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d74dac27e4d4a5735dc73ebb069d985d17022d4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d4eaf874a259251c35a6b01c08f544993092ff4d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;f i e d&gt;元素 （Visual Studio 中的 Office 开发）
   `customHostSpecified`元素指示此解决方案不是独立的应用程序。 Office 解决方案包含承载于 Microsoft Office 应用程序内的组件。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml
 <customHostSpecified />  
 ```  
   
@@ -40,17 +40,17 @@ ms.lasthandoff: 04/16/2018
  此元素具有任何属性，也没有子元素。  
   
 ## <a name="example"></a>示例  
- 下面的代码示例阐释了`customHostSpecified`Office 解决方案的应用程序清单中的元素。 此代码示例摘自 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大的示例。  
+ 下面的代码示例阐释了`customHostSpecified`Office 解决方案的应用程序清单中的元素。 此代码示例摘自[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
   
-```  
+```xml
 <entryPoint>  
     <co.v1:customHostSpecified />  
 </entryPoint>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
- [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
+## <a name="see-also"></a>请参阅  
+ [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)   
+ [部署 Office 解决方案的清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  
   
   

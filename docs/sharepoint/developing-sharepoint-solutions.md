@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>开发 SharePoint 解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中可提供多种 SharePoint 项目类型模板，用于创建 SharePoint 站点和站点元素。 有关可用的项目类型的列表，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是对 SharePoint 项目元素和属性的说明。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
  当将某个功能添加到 SharePoint 项目时，此功能会作为节点显示在“解决方案资源管理器”  中，默认名称为 Feature*x*.feature，其中的 *x* 是唯一的编号。 将某个功能部署到 SharePoint Server 后，SharePoint 管理员可以将其激活，使其可用于 SharePoint 站点用户。  
   
 #### <a name="package-node"></a>包节点  
- “包”  节点只包含一个作为 SharePoint 项目分发机制的文件。 此文件，名为*解决方案 * * 包*，是。基于 CAB 的使用。WSP 扩展。 解决方案包是一种可部署的且可重用的文件，其中包含一组可应用于 SharePoint 站点的并且可以单独启用或禁用的功能、站点定义和程序集。 **包**节点也始终包含名为 Package.wspdef 的文件[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]包定义文件。 一旦将包部署到运行 SharePoint 的服务器，SharePoint 管理员就可以对其进行安装并激活其功能。  
+ “包”  节点只包含一个作为 SharePoint 项目分发机制的文件。 此文件，名为*解决方案包*，是。基于 CAB 的使用。WSP 扩展。 解决方案包是一种可部署的且可重用的文件，其中包含一组可应用于 SharePoint 站点的并且可以单独启用或禁用的功能、站点定义和程序集。 **包**节点也始终包含名为 Package.wspdef 的文件[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]包定义文件。 一旦将包部署到运行 SharePoint 的服务器，SharePoint 管理员就可以对其进行安装并激活其功能。  
   
  你可以查看或更改包的内容在包设计器，通过双击包节点或通过打开其快捷菜单，然后选择**打开**。 有关详细信息，请参阅[创建 SharePoint 解决方案包](../sharepoint/creating-sharepoint-solution-packages.md)。  
   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 使用主机控件中的数据更新数据源 |Microsoft 文档
+title: 如何： 使用主机控件中的数据更新数据源
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,31 +18,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6113979ee4a9081c089610dce4edfcd1f75347ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5603b1661a1b329692508eb43a629919f2f5d14e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何：使用宿主控件中的数据更新数据源
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何： 使用主机控件中的数据更新数据源
   可以将宿主控件绑定到数据源，然后使用在此控件中对数据所做的更改来更新该数据源。 此过程包括以下两个主要步骤：  
   
 1.  使用控件中的已修改数据更新内存中数据源。 通常情况下，内存中数据源是一个 <xref:System.Data.DataSet>、 <xref:System.Data.DataTable>或某个其他数据对象。  
   
 2.  使用内存中数据源中的已更改数据更新数据库。 此步骤仅适用于数据源连接到后端数据库（例如 SQL Server 或 Microsoft Office Access 数据库）的情况。  
   
- 有关主机控件和数据绑定的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)和[数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  
+ 有关主机控件和数据绑定的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)和[将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
-## <a name="updating-the-in-memory-data-source"></a>更新内存中数据源  
+## <a name="update-the-in-memory-data-source"></a>更新内存中数据源  
  默认情况下，支持简单数据绑定的宿主控件（例如 Word 文档中的内容控件或 Excel 工作表中的命名范围控件）不将数据更改保存到内存中数据源。 也就是说，如果最终用户更改宿主控件中的某个值后离开此控件，则该控件中的这个新值并不会自动保存到数据源中。  
   
- 若要将数据保存到数据源，可以编写更新数据源的代码以响应运行时的某个特定事件，或者可以将控件配置为当控件中的值更改时自动更新数据源。  
+ 将数据保存到数据源，你可以编写更新在运行时，某个特定事件的响应中的数据源的代码，也可以配置要在控件中的值更改时自动更新数据源的控件。  
   
  无需将 <xref:Microsoft.Office.Tools.Excel.ListObject> 更改保存到内存中数据源。 如果将 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件绑定到数据，则 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件会自动将更改保存到内存中数据源，而无需借助其他代码。  
   
-#### <a name="to-update-the-in-memory-data-source-at-run-time"></a>在运行时更新内存中数据源  
+### <a name="to-update-the-in-memory-data-source-at-runtime"></a>若要更新在运行时内存中数据源  
   
 -   调用将控件绑定到数据源的 <xref:System.Windows.Forms.Binding.WriteValue%2A> 对象的 <xref:System.Windows.Forms.Binding> 方法。  
   
@@ -51,10 +51,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreDataExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreDataExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#1)]  
   
-### <a name="automatically-updating-the-in-memory-data-source"></a>自动更新内存中数据源  
+### <a name="automatically-update-the-in-memory-data-source"></a>自动更新内存中数据源  
  你可也可以配置控件，使其自动更新内存中数据源。 在文档级项目中，可以通过使用代码或设计器来实现。 而在 VSTO 外接程序项目中，则必须使用代码来实现。  
   
-##### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>通过使用代码将控件设置为自动更新内存中数据源  
+#### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>通过使用代码将控件设置为自动更新内存中数据源  
   
 1.  使用的 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 模式<xref:System.Windows.Forms.Binding>将控件绑定到数据源的对象。 有两个选项可用于更新数据源：  
   
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  
   
-##### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>通过使用设计器将控件设置为自动更新内存中数据源  
+#### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>通过使用设计器将控件设置为自动更新内存中数据源  
   
 1.  在 Visual Studio 的设计器中，打开 Word 文档或 Excel 工作簿。  
   
@@ -78,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  在“属性”  窗口中，展开“(DataBindings)”  属性。  
   
-4.  旁边**（高级）**属性，单击省略号按钮 (![VisualStudioEllipsesButton 屏幕快照](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 屏幕快照"))。  
+4.  旁边 **（高级）** 属性，单击省略号按钮 (![VisualStudioEllipsesButton 屏幕快照](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 屏幕快照"))。  
   
 5.  在“格式设置和高级绑定”  对话框中，单击“数据源更新模式”  下拉列表并选择以下值之一：  
   
@@ -91,14 +91,14 @@ ms.lasthandoff: 04/16/2018
   
 6.  关闭“格式设置和高级绑定”  对话框。  
   
-## <a name="updating-the-database"></a>更新数据库  
+## <a name="update-the-database"></a>更新数据库  
  如果内存中数据源与某个数据库关联，则必须使用对该数据源所做的更改来更新此数据库。 有关更新数据库的详细信息，请参阅[将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)和[使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)。  
   
-#### <a name="to-update-the-database"></a>更新数据库  
+### <a name="to-update-the-database"></a>更新数据库  
   
 1.  调用控件的 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 的 <xref:System.Windows.Forms.BindingSource> 方法。  
   
-     在设计时将数据绑定控件添加到文档或工作簿时，会自动生成 <xref:System.Windows.Forms.BindingSource> 。 <xref:System.Windows.Forms.BindingSource> 将该控件连接到项目中的类型化数据集。 有关详细信息，请参阅 [BindingSource Component Overview](/dotnet/framework/winforms/controls/bindingsource-component-overview)。  
+     在设计时将数据绑定控件添加到文档或工作簿时，会自动生成 <xref:System.Windows.Forms.BindingSource> 。 <xref:System.Windows.Forms.BindingSource> 将该控件连接到项目中的类型化数据集。 有关详细信息，请参阅[BindingSource 组件概述](/dotnet/framework/winforms/controls/bindingsource-component-overview)。  
   
      下面的代码示例假定你的项目包含一个名为 <xref:System.Windows.Forms.BindingSource> 的 `customersBindingSource`。  
   
@@ -107,7 +107,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  调用`Update`的项目中生成的 TableAdapter 方法。  
   
-     当在设计时向文档或工作簿添加数据绑定控件时，将自动生成的 TableAdapter。 TableAdapter 可连接到数据库中你的项目的类型化数据集。 有关详细信息，请参阅 [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。  
+     当在设计时向文档或工作簿添加数据绑定控件时，将自动生成的 TableAdapter。 TableAdapter 可连接到数据库中你的项目的类型化数据集。 有关详细信息，请参阅[TableAdapter 概述](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。  
   
      下面的代码示例假定你具有与 Customers 表的连接在 Northwind 数据库中，并且你的项目包含名为 TableAdapter`customersTableAdapter`和一个名为的类型化数据集`northwindDataSet`。  
   
@@ -122,6 +122,6 @@ ms.lasthandoff: 04/16/2018
  [如何： 用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [如何： 用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)   
  [如何： 用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [如何：用服务中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)  
+ [如何： 用服务中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
   
