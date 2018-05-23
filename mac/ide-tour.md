@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: ffe295d6744af1ff6d91172b99575cf5eba97246
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 024e58c1c217652c489ad9fe9e568cd21f687ae8
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac 教程
 
@@ -52,7 +52,7 @@ Solution Pad 在解决方案中组织项目：
 
 在此位置，源代码、资源、用户界面和依赖关系的文件被组织到特定于平台的项目中。
 
-有关在 Visual Studio for Mac 中使用项目和解决方案的详细信息，请参阅[项目和解决方案](~/projects-and-solutions.md)一文。
+有关在 Visual Studio for Mac 中使用项目和解决方案的详细信息，请参阅[项目和解决方案](projects-and-solutions.md)一文。
 
 ## <a name="assembly-references"></a>程序集引用
  
@@ -64,7 +64,7 @@ Solution Pad 在解决方案中组织项目：
  
 ![“编辑引用”对话框](media/ide-tour-image20.png)
 
-有关在 Visual Studio for Mac 中使用引用的详细信息，请参阅[管理项目中的引用](~/managing-references-in-a-project.md)一文。
+有关在 Visual Studio for Mac 中使用引用的详细信息，请参阅[管理项目中的引用](managing-references-in-a-project.md)一文。
 
 ## <a name="dependencies--packages"></a>依赖关系/包
 
@@ -76,19 +76,19 @@ NuGet 是 .NET 开发最常用的程序包管理器。 通过 Visual Studio 的 
 
 ![添加 NuGet 包](media/ide-tour-image21.png)
 
-可在[在项目中包括 NuGet 包](~/nuget-walkthrough.md)一文中找到在应用程序中使用 NuGet 包的相关信息。
+可在[在项目中包括 NuGet 包](nuget-walkthrough.md)一文中找到在应用程序中使用 NuGet 包的相关信息。
 
 ## <a name="refactoring"></a>重构
 
-Visual Studio for Mac 提供用于重构代码的两种有用途径：上下文操作和源分析。 可在[重构](~/refactoring.md)一文中阅读更多相关信息。
+Visual Studio for Mac 提供用于重构代码的两种有用途径：上下文操作和源分析。 可在[重构](refactoring.md)一文中阅读更多相关信息。
 
 ## <a name="debugging"></a>调试
 
-Visual Studio for Mac 具有本机调试器，支持 Xamarin.iOS、Xamarin.Mac 和 Xamarin.Android 应用程序的调试。 Visual Studio for Mac 使用 Mono 软调试器，该调试器在 Mono 运行时中实施，以便 IDE 跨所有平台调试托管代码。 有关调试的其他信息，请访问[调试](~/debugging.md)一文。
+Visual Studio for Mac 具有本机调试器，支持 Xamarin.iOS、Xamarin.Mac 和 Xamarin.Android 应用程序的调试。 Visual Studio for Mac 使用 Mono 软调试器，该调试器在 Mono 运行时中实施，以便 IDE 跨所有平台调试托管代码。 有关调试的其他信息，请访问[调试](debugging.md)一文。
 
 调试器包含丰富的可视化工具，可用于字符串、颜色、URL、大小、坐标和贝塞尔曲线等特殊类型。
 
-有关调试器的数据可视化效果的详细信息，请访问[数据可视化效果](~/data-visualizations.md)一文。
+有关调试器的数据可视化效果的详细信息，请访问[数据可视化效果](data-visualizations.md)一文。
 
 ## <a name="version-control"></a>版本控制
 
@@ -100,4 +100,4 @@ Visual Studio for Mac 与 Git 和 Subversion 源控件系统集成。 源控件�
 
 ![Solution Pad 中的未提交文件](media/ide-tour-image23.png)
 
-有关在 Visual Studio 中使用版本控制的详细信息，请参阅[版本控制](~/version-control.md)一文。
+有关在 Visual Studio 中使用版本控制的详细信息，请参阅[版本控制](version-control.md)一文。

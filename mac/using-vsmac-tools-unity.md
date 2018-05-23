@@ -5,11 +5,11 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 4044169508b177ff5524ee024479244595661eab
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ab605b3a8505ac189bc0f628b717c6863f9fd902
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
@@ -17,7 +17,7 @@ ms.lasthandoff: 05/08/2018
 
 ## <a name="opening-unity-scripts-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中打开 Unity 脚本
 
-将 Visual Studio for Mac [设置为 Unity 的外部脚本编辑器](/visualstudio/mac/setup-vsmac-tools-unity#configure-unity-for-use-with-visual-studio-for-mac)后，在 Unity 编辑器中打开任何脚本都会自动启动或切换到 Visual Studio for Mac，并打开选择的脚本。
+将 Visual Studio for Mac [设置为 Unity 的外部脚本编辑器](setup-vsmac-tools-unity.md#configure-unity-for-use-with-visual-studio-for-mac)后，在 Unity 编辑器中打开任何脚本都会自动启动或切换到 Visual Studio for Mac，并打开选择的脚本。
 
 或者，可以通过从 Unity 的“资产”菜单中选择“打开 C# 项目”打开 Visual Studio for Mac，而无需在源编辑器中打开任何脚本。
 

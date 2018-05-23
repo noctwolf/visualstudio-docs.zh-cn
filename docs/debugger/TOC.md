@@ -81,7 +81,6 @@
 ##### [如何：在混合模式下调试](how-to-debug-in-mixed-mode.md)
 #### [调试准备：控制台项目](debugging-preparation-console-projects.md)
 #### [如何：调试不属于 Visual Studio 解决方案的可执行文件](how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)
-#### [如何：调试 Code Center Premium 源代码](how-to-debug-with-code-center-premium-source.md)
 #### [调试和托管进程](debugging-and-the-hosting-process.md)
 #### [如何：指定用于调试的 .NET Framework 版本](how-to-specify-a-dotnet-framework-version-for-debugging.md)
 ### [创建数据的自定义视图](viewing-data-in-the-debugger.md)

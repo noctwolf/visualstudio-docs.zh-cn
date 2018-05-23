@@ -4,11 +4,11 @@ hide_bc: true
 title: Visual Studio 文档| Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来开发适用于你的平台和设备的应用程序、服务和工具。
 ms.topic: hub-page
-ms.openlocfilehash: 3e97752779c09c89107e784a0001737a8f5d77e2
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 6e7ff54f516f8b6ab500f6605d6418d6674a48dd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/22/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -854,7 +854,7 @@ ms.lasthandoff: 05/17/2018
                 <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Stack Overflow </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833104">问题报告</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=874480">问题报告</a>
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?linkid=833105">用户心声</a>
