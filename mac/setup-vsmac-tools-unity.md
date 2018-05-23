@@ -5,11 +5,11 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 4ad938530131a725e353a38cd481c871cb53bc9b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: f9a6da6c30132d6303705019919dfcad9f8cd484
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="setup-visual-studio-for-mac-tools-for-unity"></a>设置 Visual Studio for Mac Tools for Unity
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 05/08/2018
 
 * 前往 [visualstudio.com](https://www.visualstudio.com/) 下载 Visual Studio for Mac。
 * Visual Studio for Mac Tools for Unity 将在安装过程中自动安装。
-* 请按照[安装指南](/visualstudio/mac/installation)中的步骤获取其他安装帮助。
+* 请按照[安装指南](installation.md)中的步骤获取其他安装帮助。
 
 ## <a name="confirm-that-the-visual-studio-for-mac-tools-for-unity-extension-is-enabled"></a>确认启用 Visual Studio for Mac Tools for Unity 扩展
 

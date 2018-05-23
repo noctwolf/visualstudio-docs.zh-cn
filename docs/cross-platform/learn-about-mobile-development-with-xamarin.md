@@ -11,11 +11,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: abeac53d6907603d6158c483095152d0f4ab2c5e
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 921faa49690b641fda0e864d27705040a1b97f1e
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解关于使用 Xamarin 进行移动开发的信息
 
@@ -101,7 +101,7 @@ Xamarin.Forms 提供了一组通用 API，借助它可以在一个 .NET Standard
   
 ### <a name="microsofts-android-emulator"></a>Microsoft 的 Android 模拟器 
 
-建议使用随 Visual Studio 一起安装的 Microsoft 的[适用于 Android 的 Visual Studio 模拟器](~/cross-platform/visual-studio-emulator-for-android.md)。  [Visual Studio Android 模拟器](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) 视频（第 9 频道，5 分 55 秒）提供了相关概述与演示。  
+建议使用随 Visual Studio 一起安装的 Microsoft 的[适用于 Android 的 Visual Studio 模拟器](visual-studio-emulator-for-android.md)。  [Visual Studio Android 模拟器](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) 视频（第 9 频道，5 分 55 秒）提供了相关概述与演示。  
   
 ### <a name="apples-ios-simulator"></a>Apple 的 iOS 模拟器
 

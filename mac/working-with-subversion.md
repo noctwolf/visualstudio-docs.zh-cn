@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 1c03c4fac50c34cb96583a1fc8c16a403b7bbe1b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 9514db72dd72e616f45670ffdf8c0b468bfb81cc
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="working-with-subversion"></a>使用 Subversion
 
@@ -29,7 +29,7 @@ Subversion 使用复制-修改-合并模型，支持多位用户同时使用同�
 
 在开始使用远程 Subversion 存储库前，先签出该存储库，在本地计算机上创建该目录的一个工作副本。
 
-要了解如何使用 Visual Studio for Mac 中的“签出”功能，请按照[设置 Subversion 存储库](~/set-up-subversion-repository.md)部分中的步骤进行操作。
+要了解如何使用 Visual Studio for Mac 中的“签出”功能，请按照[设置 Subversion 存储库](set-up-subversion-repository.md)部分中的步骤进行操作。
 
 ## <a name="update-solution"></a>更新解决方案
 
