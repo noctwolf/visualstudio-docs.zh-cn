@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1aa969b3c40f4b653b45bbb0da0e5ad3d56bb5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bdb4f28fc367b309a015a3faa8f749e2512db879
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>如何：在成员表示法与关联表示法之间转换（类设计器）
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>如何：在类设计器中在成员表示法与关联表示法之间转换
 
 在“类设计器”中，可以更改类图表示两种类型（从成员表示法到关联表示法）之间的关联关系的方式，反之亦然。 通常，显示为关联行的成员可提供类型关联方式的有用可视化。
 
@@ -41,9 +41,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="to-change-association-notation-to-member-notation"></a>将关联表示法更改为成员表示法
 
--   在类图中，右键单击关联行，然后根据情况选择“显示为属性”或“显示为字段”。
-
-     关联行将消失，并且属性将显示在类图上类型形状内的相应隔离舱中。
+在类图中，右键单击关联行，然后根据情况选择“显示为属性”或“显示为字段”。 关联行将消失，并且属性将显示在类图上类型形状内的相应隔离舱中。
 
 ## <a name="see-also"></a>请参阅
 

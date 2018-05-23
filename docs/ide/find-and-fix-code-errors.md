@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa3d2412bfeabcaa3a66be7470367fcaaf0bfbc
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="make-code-work-in-visual-studio"></a>确保代码在 Visual Studio 中正常运行
 
@@ -91,17 +91,15 @@ Visual Studio 2017 包括一系列内置的 [.NET Compiler Platform 分析器](.
 
 ## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>使用灯泡修复或重构代码
 
-[灯泡](../ide/quick-actions.md)是 Visual Studio 的相关新增功能，使用此功能可重构代码内联。 灯泡是 C#、C++ 和 Visual Basic 代码中快速、有效修复常见问题的简单方法。 若要使用灯泡，请右键单击某个警告波浪线并选择“快速操作”，或按 Ctrl+.。 当光标置于彩色波浪线所在行时。 将看到可应用于代码行的可能修复或重构方法列表。
+通过[快速操作](../ide/quick-actions.md)（可从灯泡或螺丝刀图标访问），可重构代码内联。 灯泡是 C#、C++ 和 Visual Basic 代码中快速、有效修复常见问题的简单方法。 若要访问它们，请右键单击某个警告波浪线并选择“快速操作和重构”。 或者，在光标位于彩色波浪线所在行时，按 Ctrl+. 或在边距中选择灯泡或螺丝刀图标。 将看到可应用于代码行的可能修复或重构方法列表。
 
 ![Visual Studio 灯泡预览](../ide/media/quick-actions-options.png)
 
-只要代码分析器确定有机会修复、重构或改进代码，就能使用灯泡。 单击任意代码行，右键单击以打开上下文菜单，然后选择“快速操作”（或者如果注重效率，请再次按 Ctrl+.）。 如果重构或改进选项可用，则会显示。 否则，IDE 的左下角会显示消息“此处无可用的快速选项”。
+只要代码分析器确定有机会修复、重构或改进代码，就能使用“快速操作”。 单击任意代码行，右键单击以打开上下文菜单，然后选择“快速操作和重构”。 如果重构或改进选项可用，则会显示。 否则，IDE 的左下角会显示消息“此处无可用的快速操作”。
 
-![Visual Studio 灯泡“无选项”文本](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
+![“无可用的快速操作”文本](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-根据经验，可以快速使用箭头键和 Ctrl+. 检查快速选项重构机会并清理代码！
-
-有关灯泡的详细信息，请阅读[快速操作](../ide/quick-actions.md)。
+根据经验，可以快速使用箭头键和 Ctrl+. 检查是否有简单的重构机会并清理代码！
 
 ## <a name="debug-your-running-code"></a>调试运行代码
 

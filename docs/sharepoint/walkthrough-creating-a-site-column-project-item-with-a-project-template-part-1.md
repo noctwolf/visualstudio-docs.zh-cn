@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f494ef7160d38365643f72cfd1dabfa6cb66d4c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>演练：使用项目模板创建网站栏项目项（第 1 部分）
   SharePoint 项目是一个或多个 SharePoint 项目项的容器。 可以通过创建你自己的 SharePoint 项目项类型，然后将其关联的项目模板来扩展 Visual Studio 中的 SharePoint 项目系统。 在此演练中，将为创建网站栏，定义项目项类型，然后你将在其中创建可用来创建一个包含网站栏项目项的新项目的项目模板。  
@@ -72,9 +72,9 @@ ms.lasthandoff: 04/16/2018
   
 2.  在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
   
-3.  在顶部**新项目**对话框框中，请确保**.NET Framework 4.5**选择在列表中的.NET framework 的版本。  
+3.  在顶部**新项目**对话框框中，请确保 **.NET Framework 4.5**选择在列表中的.NET framework 的版本。  
   
-4.  展开**Visual Basic**或**Visual C#**节点，然后选择**扩展性**节点。  
+4.  展开**Visual Basic**或**Visual C#** 节点，然后选择**扩展性**节点。  
   
     > [!NOTE]  
     >  **扩展性**节点是安装 Visual Studio SDK 时才可用。 有关详细信息，请参阅本主题前面的先决条件部分。  
@@ -89,9 +89,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**解决方案资源管理器**，打开解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。  
   
-2.  在顶部**新项目**对话框框中，请确保**.NET Framework 4.5**选择在列表中的.NET framework 的版本。  
+2.  在顶部**新项目**对话框框中，请确保 **.NET Framework 4.5**选择在列表中的.NET framework 的版本。  
   
-3.  展开**Visual C#**或**Visual Basic**节点，然后选择**扩展性**节点。  
+3.  展开**Visual C#** 或**Visual Basic**节点，然后选择**扩展性**节点。  
   
 4.  在项目模板列表中，选择**C# 项目模板**或**Visual Basic 项目模板**模板。  
   
@@ -119,9 +119,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**解决方案资源管理器**，打开解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。  
   
-2.  在顶部**新项目**对话框框中，请确保**.NET Framework 4.5**选择在列表中的.NET framework 的版本。  
+2.  在顶部**新项目**对话框框中，请确保 **.NET Framework 4.5**选择在列表中的.NET framework 的版本。  
   
-3.  展开**Visual C#**或**Visual Basic**节点，选择**Windows**节点，然后选择**类库**模板。  
+3.  展开**Visual C#** 或**Visual Basic**节点，选择**Windows**节点，然后选择**类库**模板。  
   
 4.  在**名称**框中，输入**ProjectItemTypeDefinition** ，然后选择**确定**按钮。  
   
@@ -203,13 +203,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  在项目文件中，找到以下`VSTemplate`元素。  
   
-    ```  
+    ```xml  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
     ```  
   
 4.  用下列 XML 替换此元素。  
   
-    ```  
+    ```xml  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -260,7 +260,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在 SiteColumnProjectTemplate 项目中，用下列 XML 替换 Elements.xml 文件的内容。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <Field ID="{$guid5$}"   
@@ -280,7 +280,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在 SiteColumnProjectTemplate 项目中，用下列 XML 替换 SharePointProjectItem.spdata 文件的内容。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <ProjectItem Type="Contoso.SiteColumn" DefaultFile="Elements.xml"   
                  xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
@@ -304,7 +304,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在 SiteColumnProjectTemplate 项目中，用下列 XML 替换 Feature1.feature 文件的内容。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="$guid4$" featureId="$guid4$"   
              imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="Site Column Feature1" version=""  
@@ -330,7 +330,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在 SiteColumnProjectTemplate 项目中，用下列 XML 替换 Package.package 文件的内容。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0"   
              Id="$guid3$" solutionId="$guid3$" resetWebServer="false" name="$safeprojectname$"   
@@ -357,7 +357,7 @@ ms.lasthandoff: 04/16/2018
   
     -   如果你要创建 Visual C# 项目模板，使用下面的 XML。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
       <TemplateData>  
@@ -393,7 +393,7 @@ ms.lasthandoff: 04/16/2018
   
     -   如果你要创建 Visual Basic 项目模板，使用下面的 XML。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
       <TemplateData>  
@@ -445,7 +445,7 @@ ms.lasthandoff: 04/16/2018
   
     -   如果你要创建 Visual C# 项目模板，使用下面的 XML。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <PropertyGroup>  
@@ -525,7 +525,7 @@ ms.lasthandoff: 04/16/2018
   
     1.  如果你要创建 Visual Basic 项目模板，使用下面的 XML。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <PropertyGroup>  
@@ -694,7 +694,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在实验实例中的 Visual Studio 中，在菜单栏上，选择**文件**，**新建**，**项目**。  
   
-2.  展开**Visual C#**或**Visual Basic**节点 （具体取决于你的项目模板支持的语言），展开**SharePoint**节点，然后选择**2010年**节点。  
+2.  展开**Visual C#** 或**Visual Basic**节点 （具体取决于你的项目模板支持的语言），展开**SharePoint**节点，然后选择**2010年**节点。  
   
 3.  在项目模板列表中，选择**网站栏**模板。  
   

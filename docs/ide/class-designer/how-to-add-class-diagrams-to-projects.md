@@ -1,6 +1,6 @@
 ---
 title: 如何：向项目中添加类图（类设计器）
-ms.date: 11/04/2016
+ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,41 +13,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 962df3467b8ff37a15c181a764e646ae3fb1e980
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 94e13d4c1dbda200c2e2660e4b3b44e62ed99496
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>如何：向项目添加类图（类设计器）
+# <a name="how-to-add-class-diagrams-to-projects"></a>如何：向项目添加类图
 
 若要设计、编辑及重构类和其他类型，请将类图添加到 C#、Visual Basic 或 C++ 项目中。 若要直观显示项目中代码的不同部分，请将多个类图添加到该项目中。
 
 你不可以从在多个应用间共享代码的项目创建类图。 要创建 UML 类图，请参阅[创建 UML 建模项目和关系图](../../modeling/create-uml-modeling-projects-and-diagrams.md)。
 
-## <a name="to-add-a-blank-class-diagram-to-a-project"></a>向项目中添加空白类图
+## <a name="install-the-class-designer-component"></a>安装类设计器组件
 
-1.  在解决方案资源管理器中，右击项目名称。 然后选择“添加新项”或“添加” > “新建项”。
+如果运行 Visual Studio 2017 且尚未安装“类设计器”组件，请按照以下步骤进行安装。
 
-2.  从模板列表中选择“类图”。 对于 Visual C++ 项目，请查看“模板”下方，然后查看“实用工具”下方以查找该模板。
+1. 从 Windows 开始菜单中，或通过从 Visual Studio 中的菜单栏中选择“工具” > “获取工具和功能”，打开“Visual Studio 安装程序”。
 
-     类图随即在类设计器中打开，并在解决方案资源管理器的项目层次结构中以一个带 .cd 扩展名的文件出现。 使用“类设计器”工具箱将形状和线条拖动到类图中。
+   “Visual Studio 安装程序”随即打开。
 
-3.  要添加多个类图，请重复上述步骤。
+1. 选择“单个组件”选项卡，然后向下滚动到“代码工具”类别。
 
-## <a name="to-add-a-class-diagram-based-on-existing-types"></a>基于现有类型添加类图
+1. 选择“类设计器”，然后选择“修改”。
 
-- 在解决方案资源管理器中，打开类文件上下文菜单，然后选择“查看类图”。
+   ![Visual Studio 安装程序中的类设计器组件](media/class-designer-component.png)
 
-     或
+   “类设计器”组件开始安装。
 
-     在“类视图”中，打开命名空间或类型上下文菜单，然后选择“查看类图”。
+## <a name="add-a-blank-class-diagram-to-a-project"></a>向项目中添加空白类图
+
+1. 在“解决方案资源管理器”中，右键单击项目节点，并选择“添加” > “新项”。 或按 Ctrl+Shift+A。
+
+   “添加新项”对话框随即打开。
+
+2. 展开“常用项” > “常规”，然后从模板列表中选择“类图”。 对于 Visual C++ 项目，查看“实用工具”类别并查找“类图”模板。
+
+   > [!NOTE]
+   > 如果未看到“类图”模板，[按步骤](#install-the-class-designer-component)安装适用于 Visual Studio 的“类设计器”组件。
+
+   类图随即在类设计器中打开，并在“解决方案资源管理器”中以一个带 .cd 扩展名的文件出现。 可以将形状和线条从“工具箱”拖动至关系图。
+
+要添加多个类图，请重复上述步骤。
+
+## <a name="add-a-class-diagram-based-on-existing-types"></a>基于现有类型添加类图
+
+在“解决方案资源管理器”中，打开类文件上下文菜单，然后选择“查看类图”。
+
+或
+
+在“类视图”中，打开命名空间或类型上下文菜单，然后选择“查看类图”。
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>在类图中显示完整项目的内容
 
-- 在“解决方案资源管理器”或“类视图”中，右键单击该项目并选择“视图”，然后选择“查看类图”。
+在“解决方案资源管理器”或“类视图”中，右键单击该项目并选择“视图”，然后选择“查看类图”。
 
-     即会创建一个自动填充的类图。
+即会创建一个自动填充的类图。
 
 ## <a name="see-also"></a>请参阅
 

@@ -17,13 +17,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472eef35c781c027c39b99326e097db7ca249c29
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24dc8b21fbdacb5da2795b215cd8503b08cf3449
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>如何：直观显示集合关联（类设计器）
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>如何：在类设计器中可视化集合关联
 
 属于其他类型的集合的属性和字段可在类图上作为集合关联显示。 普通关联可将字段或属性显示为行，此行将拥有的类链接到字段的类型，与此不同，集合关联作为行显示，此行将拥有的类链接到已收集的类型。
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  在类中，右键单击该字段或属性，然后选择“显示为集合关联”。
 
-     此属性或字段将显示为链接到已收集类型的关联行。
+此属性或字段将显示为链接到已收集类型的关联行。
 
 ## <a name="see-also"></a>请参阅
 

@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc5180d770575ae92c65b4124d928da5a518799
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>如何：查看现有类型（类设计器）
+# <a name="how-to-view-existing-types-in-class-designer"></a>如何：在类设计器中查看现有类型
 
 若要查看现有类型及其成员，请将其形状添加到类图。
 
@@ -36,13 +36,13 @@ ms.lasthandoff: 04/26/2018
 
 2.  从解决方案资源管理器的项目中，将源代码文件拖动到类图中。
 
-    > [!WARNING]
+    > [!NOTE]
     > 如果你的解决方案有共享跨多个应用的代码的项目，则可以仅从以下源将文件或代码拖动到类图：
     >
-    > -   包含图的应用项目
-    > -   应用项目导入的共享项目
-    > -   引用的项目
-    > -   程序集
+    > - 包含图的应用项目
+    > - 应用项目导入的共享项目
+    > - 引用的项目
+    > - 程序集
 
     表示在源代码文件中定义的类型的形状即会显示在关系图上你将源代码文件拖动到的位置。
 
@@ -60,9 +60,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>若要在类图中显示项目的内容
 
-- 在“解决方案资源管理器”或“类视图”中，右键单击该项目并选择“视图”，然后选择“查看类图”。
-
-     即会创建一个自动填充的类图。
+在“解决方案资源管理器”或“类视图”中，右键单击该项目并选择“视图”，然后选择“查看类图”。 即会创建一个自动填充的类图。
 
 ## <a name="see-also"></a>请参阅
 

@@ -1,5 +1,5 @@
 ---
-title: GetAutoInsertExtensions 方法 |Microsoft 文档
+title: GetAutoInsertExtensions 方法
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67f6bfcb0ee38acf9abb604f28fa95eeaa605fde
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8573576b40afabb5ec568a0c471e7b1d79560ba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions 方法
   获取有关要自动插入在调试过程中的 Office 应用程序的信息。  
@@ -26,13 +26,13 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax"></a>语法  
   
-```  
+```c  
 HRESULT GetAutoInsertExtensions(  
     [out, retval] SAFEARRAY(BSTR)* psaExtensionNames  
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+### <a name="parameters"></a>参数  
   
 |参数|描述|  
 |---------------|-----------------|  
@@ -42,6 +42,6 @@ HRESULT GetAutoInsertExtensions(
  HRESULT 值，指示方法是否已成功完成。  
   
 ## <a name="remarks"></a>备注  
- Office 要插入每个应用作为 Office 应用程序扩展名称，它们对应于下 HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer 值返回。 主机必须查找注册表中的这些值，然后自动插入扩展。  
+ 作为 Office 应用程序扩展名称，它对应于下一个值返回办公室要插入的每个应用**HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**。 主机必须查找注册表中的这些值，然后自动插入扩展。  
   
   

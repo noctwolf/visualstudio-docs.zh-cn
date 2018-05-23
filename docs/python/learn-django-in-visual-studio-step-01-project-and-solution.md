@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>教程步骤 1：在 Visual Studio 中开始使用 Django Web 框架
 
@@ -62,7 +62,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
     - 解决方案：使此控件保留默认设置“创建新的解决方案”选项。
     - 解决方案名称：设置为“LearningDjango”，适用于本教程中作为多个项目的容器的解决方案。
     - 为解决方案创建目录：保留设置（默认设置）。
-    - 创建新的 Git 存储库：选择此选项（默认情况下会清除该选项），以便在 Visual Studio 创建解决方案时创建本地 Git 存储库。
+    - 创建新的 Git 存储库：选择此选项（默认情况下会清除该选项），以便在 Visual Studio 创建解决方案时创建本地 Git 存储库。 如果未看到此选项，请运行 Visual Studio 2017 安装程序并在“代码工具”下的“单个组件”选项卡上添加适用于 Windows 的 Git 和适用于 Visual Studio 的 GitHub 扩展。
 
 1. 稍后 Visual Studio 会显示一个对话框，提示“此项目需要外部包。”（如下所示）。 随即会显示此对话框，因为模板包括引用最新 Django 1.x 包的 `requirements.txt` 文件。 （选择“显示所需包”查看确切的依赖项。）
 

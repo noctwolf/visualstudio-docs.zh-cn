@@ -1,5 +1,5 @@
 ---
-title: 快速操作
+title: 快速操作、灯泡和螺丝刀
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quick-actions"></a>快速操作
 
@@ -29,21 +29,27 @@ ms.lasthandoff: 04/28/2018
 - 应用重构（例如，[内联临时变量](../ide/reference/inline-temporary-variable.md)）
 - 生成代码（例如，[引入局部变量](../ide/reference/introduce-local-variable.md)）
 
-可使用灯泡图标![小灯泡图标](media/vs2015_lightbulbsmall.png)或按“Ctrl”+**应用快速操作。** 当光标位于可操作的代码行上时， 如果有红色波形曲线，则将看到灯泡，Visual Studio 针对如何解决此问题有一条建议。 例如，如果你遇到红色波形曲线指示的错误，则在可对该错误进行修复时，会显示灯泡。
+可使用灯泡![灯泡图标](media/light-bulb-icon.png)或螺丝刀![螺丝刀图标](media/screwdriver-icon.png)图标，或按“Ctrl”应用快速操作。+ 当光标位于可操作的代码行上时， 如果出现指示错误的红色波形曲线，且 Visual Studio 有针对该错误的可用修复方法，会显示一个错误灯泡![错误灯泡图标](media/error-light-bulb-icon.png)。
 
 第三方可针对任何语言提供自定义诊断和建议，例如随附 SDK 提供，同时根据这些规则，Visual Studio 电灯泡可能亮起。
 
-## <a name="to-see-a-light-bulb"></a>查看电灯泡
+## <a name="icons"></a>图标
 
-1. 在很多情况下，当光标指针悬停在错误点上方时自然显示电灯泡，或者当你在将插入点移动到存在错误的行中时，编辑器左边距处自然显示电灯泡。 看到红色波形曲线时，可悬停在其上方，以显示电灯泡。 使用鼠标或键盘转到问题发生的行时，也会显示电灯泡。
+当存在可用的快速操作时，会出现一个图标，指示可用的修复方法或重构的类型。 螺丝刀![螺丝刀图标](media/screwdriver-icon.png)图标仅指示存在可用于更改代码的操作，但不一定要使用它们。 黄色灯泡![灯泡图标](media/light-bulb-icon.png)图标指示存在应执行的、用于改进代码的可用操作。 错误灯泡![错误灯泡图标](media/error-light-bulb-icon.png)图标指示存在可用于修复代码中的错误的操作。
 
-1. 按“Ctrl”+**。** 可调用电灯泡并直接转到潜在修复列表。
+## <a name="to-see-a-light-bulb-or-screwdriver"></a>查看灯泡或螺丝刀
+
+- 如果有可用的修复方法，将鼠标悬停在存在错误的位置时，会同时显示灯泡。
 
    ![带鼠标悬停的灯泡](../ide/media/vs2015_lightbulb_hover.png)
 
+- 将脱字号移动到可使用快速操作的代码行时，编辑器左边距中会显示灯泡和螺丝刀。
+
+- 按“Ctrl”+**。** 可在行的任意位置查看可用快速操作和重构的列表。
+
 ## <a name="to-see-potential-fixes"></a>查看潜在修复
 
-单击向下箭头或“显示潜在修复”链接，以显示电灯泡可执行的快速操作列表。
+选择灯泡旁边的下箭头或“显示潜在修复”链接，以显示可用快速操作的列表。
 
 ![灯泡已展开](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

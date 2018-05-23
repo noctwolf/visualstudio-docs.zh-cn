@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d59c158bf8f532fa73a4eb2c22309218f80718e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c7c41f7c5a9fb9540661440a19462ee12b1aadd9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>如何：使用类设计器创建类型
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  添加一个或多个自定义特性，一行一个。 请不要将它们放在括号内。
 
-     完毕后，自定义特性随即应用于类型。
+   自定义属性随即应用于类型。
 
 ##  <a name="CustAttributeMember"></a>将自定义特性应用于类型成员
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  添加一个或多个自定义特性，一行一个。 请不要将它们放在括号内。
 
-     完毕后，自定义特性随即应用于类型。
+   自定义属性随即应用于类型。
 
 ## <a name="see-also"></a>请参阅
 

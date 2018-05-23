@@ -1,5 +1,5 @@
 ---
-title: 对 Office 项目中对象的全局访问 |Microsoft 文档
+title: 对 Office 项目中对象的全局访问
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -33,11 +33,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fda3dee12cdea7442d0f92a2ba794551d76b14cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d81d94c07345fa54c5758919b2a0c6dfde166503
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>对 Office 项目中对象的全局访问
   创建 Office 项目时，Visual Studio 将在项目中自动生成一个名为 `Globals` 的类。 可以使用 `Globals` 类在运行时从项目中的任何代码访问多个不同的项目项。  
@@ -53,9 +53,9 @@ ms.lasthandoff: 04/16/2018
   
 -   VSTO 外接程序项目中的 `ThisAddIn` 类。 可以通过使用 `Globals.ThisAddIn` 属性访问此对象。  
   
--   项目中通过使用功能区设计器自定义的所有功能区。 可以通过使用 `Globals.Ribbons` 属性访问功能区。 有关详细信息，请参阅 [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)。  
+-   项目中通过使用功能区设计器自定义的所有功能区。 可以通过使用 `Globals.Ribbons` 属性访问功能区。 有关详细信息，请参阅[访问在运行时的功能区](../vsto/accessing-the-ribbon-at-run-time.md)。  
   
--   Outlook VSTO 外接程序项目中的所有 Outlook 窗体区域。 可以通过使用 `Globals.FormRegions` 属性访问这些窗体区域。 有关更多信息，请参见 [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md)。  
+-   Outlook VSTO 外接程序项目中的所有 Outlook 窗体区域。 可以通过使用 `Globals.FormRegions` 属性访问这些窗体区域。 有关详细信息，请参阅[访问窗体区域在运行时](../vsto/accessing-a-form-region-at-run-time.md)。  
   
 -   一个工厂对象，该对象使你可在运行时在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的项目中创建功能区控件和主机项。 可以通过使用 `Globals.Factory` 属性访问此对象。 此对象是实现以下接口之一的类的实例：  
   
@@ -72,19 +72,19 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
-## <a name="initializing-the-globals-class"></a>初始化全局类  
+## <a name="initialize-the-globals-class"></a>初始化全局类  
  在完全初始化文档或 VSTO 外接程序之前，尝试使用 `Globals` 类的代码可能引发运行时异常。 例如，声明一个类级变量时使用 `Globals` 可能会失败，因为在对声明的对象进行实例化之前，可能不会使用对所有主机项的引用将 `Globals` 类初始化。  
   
 > [!NOTE]  
 >  永远不会在设计时初始化 `Globals` 类，控件实例由设计器创建。 这意味着，如果从一个用户控件类的内部创建使用 `Globals` 类的属性的用户控件，则在尝试使用返回的对象之前，必须确定该属性是否返回 **null** 。  
   
 ## <a name="see-also"></a>请参阅  
- [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
- [在运行时访问窗体区域](../vsto/accessing-a-form-region-at-run-time.md)   
- [宿主项和宿主控件概述](../vsto/host-items-and-host-controls-overview.md)   
+ [访问在运行时的功能区](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [访问窗体区域在运行时](../vsto/accessing-a-form-region-at-run-time.md)   
+ [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
  [文档主机项](../vsto/document-host-item.md)   
  [工作簿主机项](../vsto/workbook-host-item.md)   
  [工作表主机项](../vsto/worksheet-host-item.md)   
- [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
+ [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)  
   
   

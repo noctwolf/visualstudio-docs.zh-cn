@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d6d01b9f9ed0db8588124b71c982b2d37aa86ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e5c68db8d1c9809e487fc8f64159d8b385a96a2
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：为特定列表实例创建事件接收器
   对列表定义的任何实例中发生的事件的响应列表实例事件接收器。 虽然事件接收器模板不会启用的特定列表实例的目标，你可以修改事件接收器划归到以响应特定列表实例中的事件的列表定义。  
@@ -42,12 +42,12 @@ ms.lasthandoff: 04/16/2018
   
 5.  在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，创建一个事件接收器项目。  
   
-6.  在**你想进行何种类型的事件接收器？**列表中，选择**列表项事件**。  
+6.  在**你想进行何种类型的事件接收器？** 列表中，选择**列表项事件**。  
   
     > [!NOTE]  
     >  你还可以选择任何其他类型的作用域以列表定义等的事件接收器**列出的电子邮件事件**或**列表工作流事件**。  
   
-7.  在**哪个项应为事件源？**列表中，选择**公告**。  
+7.  在**哪个项应为事件源？** 列表中，选择**公告**。  
   
 8.  在**处理以下事件**列表中，选择**某一项添加**复选框，然后依次**完成**按钮。  
   
@@ -55,13 +55,13 @@ ms.lasthandoff: 04/16/2018
   
      事件接收器当前使用以下行来引用公告列表定义：  
   
-    ```  
+    ```xml  
     <Receivers ListTemplateId="104">  
     ```  
   
      将此行更改为以下文本：  
   
-    ```  
+    ```xml  
     <Receivers ListUrl="Lists/TestAnnouncements">  
     ```  
   

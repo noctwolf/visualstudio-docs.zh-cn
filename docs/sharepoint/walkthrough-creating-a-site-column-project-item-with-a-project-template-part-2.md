@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0027b49cd371aaec00d2bcfb609a694f14dc4869
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>演练：使用项目模板创建网站栏项目项（第 2 部分）
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项目模板后，你可能还想要模板提供的向导。 该向导可用于从用户收集信息，在他们使用你的模板来创建一个包含项目项的新项目。 你收集的信息可以用于初始化项目项。  
@@ -83,9 +83,9 @@ ms.lasthandoff: 04/16/2018
   
 2.  在**解决方案资源管理器**，打开快捷菜单**SiteColumnProjectItem**解决方案节点，选择**添加**，然后选择**新项目**.  
   
-3.  在顶部**添加新项目**对话框框中，请确保**.NET Framework 4.5**选择在列表中的.NET framework 的版本。  
+3.  在顶部**添加新项目**对话框框中，请确保 **.NET Framework 4.5**选择在列表中的.NET framework 的版本。  
   
-4.  展开**Visual C#**节点或**Visual Basic**节点，然后选择**Windows**节点。  
+4.  展开**Visual C#** 节点或**Visual Basic**节点，然后选择**Windows**节点。  
   
 5.  在项目模板列表中，选择**WPF 用户控件库**，命名该项目**ProjectTemplateWizard**，然后选择**确定**按钮。  
   
@@ -97,9 +97,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**解决方案资源管理器**，打开 SiteColumnProjectItem 解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。  
   
-2.  在顶部**添加新项目**对话框框中，选择**.NET Framework 3.5**在列表中的.NET framework 的版本。  
+2.  在顶部**添加新项目**对话框框中，选择 **.NET Framework 3.5**在列表中的.NET framework 的版本。  
   
-3.  展开**Visual C#**节点或**Visual Basic**节点，然后选择**Windows**节点。  
+3.  展开**Visual C#** 节点或**Visual Basic**节点，然后选择**Windows**节点。  
   
 4.  选择**类库**项目模板，将项目**SharePointCommands**，然后选择**确定**按钮。  
   
@@ -122,9 +122,9 @@ ms.lasthandoff: 04/16/2018
   
 4.  打开的快捷菜单**ProjectTemplateWizard**项目，选择**添加**，然后选择**新项**。  
   
-5.  选择**Window (WPF)**项，该项**WizardWindow**，然后选择**添加**按钮。  
+5.  选择**Window (WPF)** 项，该项**WizardWindow**，然后选择**添加**按钮。  
   
-6.  添加两个**用户控件 (WPF)**项目到项目中，并将它们命名**页 1**和**Page2**。  
+6.  添加两个**用户控件 (WPF)** 项目到项目中，并将它们命名**页 1**和**Page2**。  
   
 7.  将四个代码文件添加到项目中，并为他们提供以下名称：  
   
@@ -239,7 +239,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  如果你要开发 Visual Basic 项目，删除`ProjectTemplateWizard`命名空间从`WizardWindow`中的类名称`x:Class`属性`Window`元素。 此元素是在第一行中的 XAML。 完成后，第一行应类似下面的示例。  
   
-    ```  
+    ```xml  
     <Window x:Class="WizardWindow"  
     ```  
   
@@ -260,7 +260,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  如果你正在开发的 Visual Basic 项目，删除`ProjectTemplateWizard`命名空间从`Page1`中的类名称`x:Class`属性`UserControl`元素。 这是在第一行中的 XAML。 完成后，第一行应类似以下。  
   
-    ```  
+    ```xml  
     <UserControl x:Class="Page1"  
     ```  
   
@@ -281,7 +281,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  如果你正在开发的 Visual Basic 项目，删除`ProjectTemplateWizard`命名空间从`Page2`中的类名称`x:Class`属性`UserControl`元素。 这是在第一行中的 XAML。 完成后，第一行应类似以下。  
   
-    ```  
+    ```xml  
     <UserControl x:Class="Page2"  
     ```  
   
@@ -332,7 +332,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  下**SiteColumnProjectTemplate**节点，打开 SiteColumnProjectTemplate.vstemplate 文件，然后从其删除下面的元素。  
   
-    ```  
+    ```xml  
     <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>  
     ```  
   
@@ -340,16 +340,16 @@ ms.lasthandoff: 04/16/2018
   
 5.  下**SiteColumnProjectTemplate**节点，打开 ProjectTemplate.csproj 或 ProjectTemplate.vbproj 文件，，然后删除以下`PropertyGroup`从它的元素。  
   
-    ```  
+    ```xml  
     <PropertyGroup>  
       <SignAssembly>true</SignAssembly>  
       <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>  
     </PropertyGroup>  
-    ```  
+    ``` 
   
 6.  删除以下`None`元素。  
   
-    ```  
+    ```xml  
     <None Include="key.snk" />  
     ```  
   
@@ -384,7 +384,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  运行以下命令，替换*PathToWizardAssembly*替换为你的开发计算机上的 ProjectTemplateWizard 项目的生成 ProjectTemplateWizard.dll 程序集的完整路径：  
   
-    ```  
+    ```cmd  
     sn.exe -T PathToWizardAssembly  
     ```  
   
@@ -398,7 +398,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  该文件的末尾添加以下`WizardExtension`之间的元素`</TemplateContent>`和`</VSTemplate>`标记。 替换*你的令牌*值`PublicKeyToken`具有你在前面的过程中获得的公钥令牌属性。  
   
-    ```  
+    ```xml  
     <WizardExtension>  
       <Assembly>ProjectTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=your token</Assembly>  
       <FullClassName>ProjectTemplateWizard.SiteColumnProjectWizard</FullClassName>  
@@ -418,7 +418,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在 SiteColumnProjectTemplate 项目中，用下列 XML 替换 Elements.xml 文件的内容。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <Field ID="{$guid5$}"   
@@ -486,7 +486,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在实验实例中的 Visual Studio 中，在菜单栏上，选择**文件**，**新建**，**项目**。  
   
-2.  展开**Visual C#**节点或**Visual Basic**节点 （具体取决于你的项目模板支持的语言），展开**SharePoint**节点，然后选择**2010年**节点。  
+2.  展开**Visual C#** 节点或**Visual Basic**节点 （具体取决于你的项目模板支持的语言），展开**SharePoint**节点，然后选择**2010年**节点。  
   
 3.  在项目模板列表中，选择**网站栏**，命名该项目**SiteColumnWizardTest**，然后选择**确定**按钮。  
   

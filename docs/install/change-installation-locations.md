@@ -13,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0460e61fea7e617e497a46c55f8af811ba2e24fe
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: eef4f8b66da517e471a25bb36e777f6cc343b0a3
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>更改 Visual Studio 2017 中的安装位置
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/07/2018
   > [!IMPORTANT]
   > 如果暂停安装并在稍后继续安装，Visual Studio 会从中断处继续安装。 换言之，安装进度适用于余下需要下载和安装的内容，并且不会从以前的计数开始。
 
-2. 在“Visual Studio”部分中，接受默认值。 这将安装核心产品，并包含特定于此 Visual Studio 版本的文件。
+2. 在“Visual Studio IDE”部分中，接受默认值。 这将安装核心产品，并包含特定于此 Visual Studio 版本的文件。
 
  > [!IMPORTANT]
  > 如果系统驱动器是固态硬盘 (SSD)，这就是我们建议用户接受系统驱动器上默认位置的原因：使用 Visual Studio 进行开发时，会从大量文件中读取数据或将数据写入到其中，这会增加磁盘 I/O 活动。  最好选择最快的驱动器来处理负载。
@@ -46,7 +46,7 @@ ms.lasthandoff: 05/07/2018
  > [!IMPORTANT]
  > 该位置在首次安装时进行设置，并且之后无法从安装程序 UI 中更改。 相反，必须[使用命令行参数](use-command-line-parameters-to-install-visual-studio.md)移动下载缓存
 
-4. 在“共享组件、SDK 和工具”部分，指定要在其中存储由 Visual Studio 并行安装共享的文件的驱动器。 使 Visual Studio 安装程序更改其安装位置的 SDK 和工具也存储在该目录中。
+4. 在“共享组件、工具和 SDK”部分，指定要在其中存储由 Visual Studio 并行安装共享的文件的驱动器。 使 Visual Studio 安装程序更改其安装位置的 SDK 和工具也存储在该目录中。
 
  > [!NOTE]
  > 有些工具和 SDK 在其可以安装的位置具有不同的规则。 即使选择另一个位置，这些工具和 SDK 仍将安装在系统驱动器上。

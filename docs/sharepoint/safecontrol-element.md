@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14e5d2cfd526d228d84ac6ff084e3873224c08c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e8cf6d3d168e3d12d74a9773ccfb3312a29046f7
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="safecontrol-element"></a>SafeControl 元素
   表示一个 ASPX 控件或指定为安全的任何用户访问 SharePoint 站点上的任意 ASPX 页上的 Web 部件。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <SafeControl Assembly = "Name of assembly that contains the safe control"  
     IsSafe = "true/false"  
     IsSafeAgainstScript = "true/false"  
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 |特性|描述|  
 |---------------|-----------------|  
-|**Assembly**|可选**xs: string**属性。<br /><br /> 定义的 ASPX 控件或 Web 部件的程序集的名称。 默认情况下，此属性使用**$SharePoint.Project.AssemblyFullName$**为程序集名称的可替换参数。 有关详细信息，请参阅[可替换参数](../sharepoint/replaceable-parameters.md)。|  
+|**Assembly**|可选**xs: string**属性。<br /><br /> 定义的 ASPX 控件或 Web 部件的程序集的名称。 默认情况下，此属性使用 **$SharePoint.Project.AssemblyFullName$** 为程序集名称的可替换参数。 有关详细信息，请参阅[可替换参数](../sharepoint/replaceable-parameters.md)。|  
 |**IsSafe**|可选**xs: boolean**属性。<br /><br /> 指定是否允许不受信任的用户访问安全的 ASPX 控件或 Web 部件。|  
 |**IsSafeAgainstScript**|可选**xs: boolean**属性。<br /><br /> 指定不受信任的用户是否可以查看或编辑的 ASPX 控件或 Web 部件的属性。|  
 |**名称**|可选**xs: string**属性。<br /><br /> 此集合中的安全控件项的名称。|  
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/16/2018
 |**验证文件**|ProjectItemModelSchema.xsd|  
 |**可以为空**|否|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [在项目项中提供打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   

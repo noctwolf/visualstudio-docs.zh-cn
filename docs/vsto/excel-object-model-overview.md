@@ -1,5 +1,5 @@
 ---
-title: Excel 对象模型概述 |Microsoft 文档
+title: Excel 对象模型概述
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="excel-object-model-overview"></a>Excel Object Model Overview
+# <a name="excel-object-model-overview"></a>Excel 对象模型概述
   若要开发使用 Microsoft Office Excel 的解决方案，可与由 Excel 对象模型提供的对象进行交互。 本主题介绍最重要的对象：  
   
 -   <xref:Microsoft.Office.Interop.Excel.Application>  
@@ -43,14 +43,14 @@ ms.lasthandoff: 04/16/2018
   
  对象模型紧跟用户界面。 <xref:Microsoft.Office.Interop.Excel.Application> 对象表示整个应用程序，并且每个 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象都包含 `Worksheet` 对象的集合。 在这里，表示单元格的主要抽象是 <xref:Microsoft.Office.Interop.Excel.Range> 对象，它使你能够使用单独的单元格或单元格组。  
   
- 除了 Excel 对象模型，Visual Studio 中的 Office 项目还提供*主机项*和*宿主控件*可扩展 Excel 对象模型中的一些对象。 主机项和主机控件的行为类似于它们扩展的 Excel 对象，但它们还具有其他功能（如数据绑定功能）和其他事件。 有关详细信息，请参阅[使用扩展对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)和[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
+ 除了 Excel 对象模型，Visual Studio 中的 Office 项目还提供*主机项*和*宿主控件*可扩展 Excel 对象模型中的一些对象。 主机项和主机控件的行为类似于它们扩展的 Excel 对象，但它们还具有其他功能（如数据绑定功能）和其他事件。 有关详细信息，请参阅[通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)和[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
   
  本主题概要介绍 Excel 对象模型。 有关可从中了解关于整个 Excel 对象模型的详细的资源，请参阅[使用 Excel 对象模型文档](#ExcelOMDocumentation)。  
   
- ![视频链接](../vsto/media/playvideo.gif "视频链接")相关的视频演示，请参阅[如何执行 i： 使用事件处理程序 Excel 2007 外接程序中？](http://go.microsoft.com/fwlink/?LinkID=130291)，和[如何执行 i： 使用形状创建气泡图在 Excel 中？](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![视频链接](../vsto/media/playvideo.gif "视频链接")相关的视频演示，请参阅[How do i： 使用 Excel 2007 外接程序中的事件处理程序？](http://go.microsoft.com/fwlink/?LinkID=130291)，和[How do i： 使用形状创建气泡图在 Excel 中？](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
-## <a name="accessing-objects-in-an-excel-project"></a>访问 Excel 项目中的对象  
- 为 Excel 创建新的 VSTO 外接程序项目时，Visual Studio 将自动创建 ThisAddIn.vb 或 ThisAddIn.cs 代码文件。 可以通过使用 `Me.Application` 或 `this.Application` 访问应用程序对象。  
+## <a name="access-objects-in-an-excel-project"></a>Excel 项目中访问对象  
+ 当为 Excel 创建新的 VSTO 外接程序项目时，Visual Studio 将自动创建*ThisAddIn.vb*或*ThisAddIn.cs*代码文件。 可以通过使用 `Me.Application` 或 `this.Application` 访问应用程序对象。  
   
  为 Excel 创建新的文档级项目时，可选择创建新的 Excel 工作簿或 Excel 模板项目。 Visual Studio 在新的 Excel 项目中为工作簿和模板项目自动创建以下代码文件。  
   
@@ -87,14 +87,14 @@ ms.lasthandoff: 04/16/2018
 ### <a name="workbook-object"></a>工作簿对象  
  <xref:Microsoft.Office.Interop.Excel.Workbook> 对象表示 Excel 应用程序中的单个工作簿。  
   
- Visual Studio 中的 Office 开发工具通过提供 <xref:Microsoft.Office.Tools.Excel.Workbook> 类型来扩展 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象。 此类型使你可以访问 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象的所有功能。 有关详细信息，请参阅 [Workbook Host Item](../vsto/workbook-host-item.md)。  
+ Visual Studio 中的 Office 开发工具通过提供 <xref:Microsoft.Office.Tools.Excel.Workbook> 类型来扩展 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象。 此类型使你可以访问 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象的所有功能。 有关详细信息，请参阅[工作簿主机项](../vsto/workbook-host-item.md)。  
   
-### <a name="worksheet-object"></a>工作表对象  
+### <a name="worksheet-object"></a>Worksheet 对象  
  <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象是 <xref:Microsoft.Office.Interop.Excel.Worksheets> 集合的成员。 <xref:Microsoft.Office.Interop.Excel.Worksheet> 的许多属性、方法和事件与由 <xref:Microsoft.Office.Interop.Excel.Application> 或 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象提供的成员相同或类似。  
   
  Excel 提供一个 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合作为 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象的属性。 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合的每个成员都是 <xref:Microsoft.Office.Interop.Excel.Worksheet> 或 <xref:Microsoft.Office.Interop.Excel.Chart> 对象。  
   
- Visual Studio 中的 Office 开发工具通过提供 <xref:Microsoft.Office.Tools.Excel.Worksheet> 类型来扩展 <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象。 此类型使你可以访问 <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象的所有功能以及承载托管控件和处理新事件等新功能。 有关详细信息，请参阅 [Worksheet Host Item](../vsto/worksheet-host-item.md)。  
+ Visual Studio 中的 Office 开发工具通过提供 <xref:Microsoft.Office.Tools.Excel.Worksheet> 类型来扩展 <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象。 此类型使你可以访问 <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象的所有功能以及承载托管控件和处理新事件等新功能。 有关详细信息，请参阅[工作表主机项](../vsto/worksheet-host-item.md)。  
   
 ### <a name="range-object"></a>Range 对象  
  <xref:Microsoft.Office.Interop.Excel.Range> 对象是你将在 Excel 应用程序中使用最多的对象。 在可以操作 Excel 内的任何区域之前，必须将其表达为 <xref:Microsoft.Office.Interop.Excel.Range> 对象，并使用该范围的方法和属性。 一个 <xref:Microsoft.Office.Interop.Excel.Range> 对象，表示一个单元格、行、列、包含一个或多个单元格块的单元格选定区域（选定区域可能是连续的，也可能不是连续的）或甚至多个工作表上的一组单元格）。  

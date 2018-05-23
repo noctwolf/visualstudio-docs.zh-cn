@@ -7,11 +7,11 @@ ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: a077aae7104d1e8b96fdebffd70355a05daa19f4
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: df5ce60e9d7a05d8cc7c9ebbe173dd30a0a0edf4
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/14/2018
 ---
 # Visual Studio IntelliCode 常见问题解答
 
@@ -40,6 +40,13 @@ Visual Studio IntelliCode 是通过人工智能 (AI) 提供新的工作效率增
 
 借助 IntelliCode，完成列表可建议供开发人员使用的最可能正确的 API，而不是呈现简单的按字母顺序排列的成员列表。 它使用开发人员当前的代码上下文以及基于 GitHub 上 2000 个高质量开放源代码的模式（每个具有超过 100 个星标），提供此动态列表。 结果形成一种预测最可能、最相关的 API 调用的模型。
 
+## 问：IntelliCode 完成建议有多大用处？
+
+我们在 Microsoft 内部使用 IntelliCode 的建议已有一段时间，我们相信这些建议很有用。 但从根本上讲，这取决于这些建议在你编码时有多大用处。 我们希望你能够尝试使用 Visual Studio [ IntelliCode 扩展](https://go.microsoft.com/fwlink/?linkid=872707)。 请告知我们它如何对你有用，并向我们发送你的反馈。 我们还将根据你所采取的建议来训练我们的模型，并随着模型的改进更新扩展。
+
+> [!NOTE]
+> 不会收集任何用户定义的代码。 请参阅关于[隐私](#privacy)的问题。
+
 ## 问： IntelliCode 的未来是什么样的？
 
 我们正在探索各种方法，使用 AI 和其他先进技术提高开发人员工作效率。 在 Build 2018 中，我们展示了一些我们认为 AI 可辅助开发人员的方案的早期观点，以及更多内容！ 我们希望试用我们所展示功能的开发人员提供反馈，请通过 [https://aka.ms/intellicode](https://aka.ms/intellicode) 注册，了解新闻和更新。
@@ -52,11 +59,19 @@ Visual Studio IntelliCode 是通过人工智能 (AI) 提供新的工作效率增
 
 IntelliCode 的 AI 辅助 IntelliSense 当前处于第一个试验预览版。 我们将继续更新试验扩展，并将在未来增加更多功能。 我们目前没有最终发布的计划，但是希望开发人员提供反馈，以便我们提供最佳体验。 请注册，通过 [https://aka.ms/intellicode](https://aka.ms/intellicode) 获取新闻和更新。
 
-## 问： 仅 Visual Studio 提供这种体验吗？
+## 问： 这种体验仅在 Visual Studio 中提供且仅对 C# 适用吗？
 
 C# 代码库上 Visual Studio 2017 中的 Build 2018 展示了这种体验。 但是，我们希望未来将 IntelliCode 扩展到 Visual Studio 系列中的更多语言和工具。
 
-## 问：隐私方面呢？ 是否会将我的代码发送到云？ 哪些客户数据将发送到 Microsoft？
+## 问： 需要哪个版本的 Visual Studio 来运行此扩展？
+
+Visual Studio 2017 版本 15.7 预览版 5 及更高版本（所有 SKU）支持 Visual Studio IntelliCode 扩展。 如果没有安装要求的最低版本，会显示“此扩展不能安装在任何当前安装的产品上”， 扩展安装将中止。
+
+## 问： 此体验仅提供英文版吗？
+
+IntelliCode 目前是一个预览扩展，我们迫切希望了解这些功能对广大客户有多大用处。 当我们取消 IntelliCode 预览时，肯定会根据反馈考虑首先支持哪个区域或语言，以及如何将其打包。 
+
+## <a name="privacy"/>问：隐私方面呢？ 是否会将我的代码发送到云？ 哪些客户数据将发送到 Microsoft？
 
 开发人员今天受邀体验了 Visual Studio IntelliCode（作为试验预览版扩展）。 此扩展的目的是使开发人员测试 IntelliCode 的功能并向产品团队提供反馈。
 

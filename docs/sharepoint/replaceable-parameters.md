@@ -20,17 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 696388ca89102d588bd1a291b6f5689dc08e26a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86d6b08d209703f73901d7a839c731e1a9a63fdd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="replaceable-parameters"></a>可替换参数
   可替换参数，或*令牌*，可以在项目文件内使用，为其实际值在设计时未知的 SharePoint 解决方案项提供值。 它们在功能上类似于标准 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 模板标记。 有关详细信息，请参阅[模板参数](/visualstudio/ide/template-parameters)。  
   
 ## <a name="token-format"></a>令牌格式  
- 令牌开头并以美元符号 （$） 字符。 使用任何令牌替换为实际值中，在部署时为 SharePoint 解决方案包 (.wsp) 文件打包项目。 例如，令牌**$SharePoint.Package.Name$**可能解析为字符串"测试 SharePoint 包"。  
+ 令牌开头并以美元符号 （$） 字符。 有关部署、 使用任何令牌到 SharePoint 解决方案包 （.wsp 文件） 在打包项目时使用实际值替换。 例如，令牌 **$SharePoint.Package.Name$** 可能解析为字符串"测试 SharePoint 包"。  
   
 ## <a name="token-rules"></a>令牌的规则  
  以下规则适用于令牌：  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
  未提供警告或错误情况下，不符合这些规则的令牌将被忽略。  
   
- 清单转换，从而允许编辑的用户可以使用令牌清单模板之后立即执行替换的字符串值的标记。  
+ 清单转换之后立即执行替换的字符串值的标记。 此替换允许用户编辑与令牌的清单模板。  
   
 ### <a name="token-name-resolution"></a>标记名称解析  
  在大多数情况下，标记会解析为无论其中包含特定值。 但是，如果该令牌与包或功能，令牌的值取决于包含它。 例如，如果功能是中打包，则令牌`$SharePoint.Package.Name$`解析为"包 A"的值 如果同一功能位于包 B 中，然后`$SharePoint.Package.Name$`解析为"包 b"。  
@@ -88,14 +88,14 @@ ms.lasthandoff: 04/16/2018
   
  这些扩展定义的`<TokenReplacementFileExtensions>`Microsoft.VisualStudio.SharePoint.targets 文件中的元素位于...\\< 程序文件\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools 文件夹。  
   
- 但是，可以将其他文件扩展名添加到列表。 若要执行此操作，将添加`<TokenReplacementFileExtensions>`到 SharePoint 项目文件中的任意 PropertyGroup 之前定义的元素\<导入 > 的在 SharePoint 目标文件。  
+ 但是，可以将其他文件扩展名添加到列表。 添加`<TokenReplacementFileExtensions>`到 SharePoint 项目文件中的任意 PropertyGroup 之前定义的元素\<导入 > 的在 SharePoint 目标文件。  
   
 > [!NOTE]  
 >  编译项目后，将发生标记替换，因为你不应添加为编译的文件类型，如.cs、.vb 或.resx 的文件扩展名。 仅在不编译的文件中替换标记。  
   
- 例如，若要将文件名称扩展".myextension"和".yourextension"添加到的标记替换文件扩展名的列表中，要到.csproj 文件添加以下：  
+ 例如，若要将文件名称扩展".myextension"和".yourextension"添加到的标记替换文件扩展名的列表中，要添加到以下`.csproj`文件：  
   
-```  
+```xml  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <PropertyGroup>  
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -108,7 +108,7 @@ ms.lasthandoff: 04/16/2018
 </PropertyGroup>  
 ```  
   
- 或者，你可以直接向.targets 文件添加扩展。 但是，这样做会更改在本地系统上，而不仅仅是打包的所有 SharePoint 项目扩展列表自己。 在系统上的唯一开发人员或如果您的大多数项目需要的话，这可能很方便。 但是，由于它是特定于系统的此方法不是非常易于移植，并且因此，建议你添加的任何扩展到项目文件相反。  
+ 你可以直接向.targets 文件添加扩展。 但是，这样做会更改在本地系统上，而不仅仅是打包的所有 SharePoint 项目扩展列表自己。 在系统上的唯一开发人员或如果您的大多数项目需要的话，这可能很方便。 但是，由于它是特定于系统的此方法不是非常易于移植，并且因此，建议你添加的任何扩展到项目文件相反。  
   
 ## <a name="see-also"></a>请参阅  
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  

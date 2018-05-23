@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: e999c9c68a534611aa1db6e571594d11fc20201e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 16f14d1acb31612d2997937b9aa34f918b6376d6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="customizing-the-build-system"></a>自定义生成系统
 
@@ -28,17 +28,17 @@ MSBuild 使用 XML 文件作为项目文件，该文件定义项目（如图像�
 
 可通过右键单击项目名称并选择“在查找器中展现”定位 MSBuild 文件。 查找器窗口将显示和项目有关的所有文件和文件夹，包括 `.csproj` 文件，如下图所示：
 
-![](media/customizing-build-system-image1.png)
+![查找器中的 csproj 位置](media/customizing-build-system-image1.png)
 
 通过右键单击项目名称并浏览到“工具”>“编辑文件”，在 Visual Studio for Mac 中新建的选项卡中显示 `.csproj`：
 
-![](media/customizing-build-system-image2.png)
+![在源代码编辑器中打开 csproj](media/customizing-build-system-image2.png)
 
 ### <a name="composition-of-the-msbuild-file"></a>MSBuild 文件的构成
 
 所有 MSBuild 文件都包含必需的根元素 `Project`，如下所示：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 </Project>
@@ -46,7 +46,7 @@ MSBuild 使用 XML 文件作为项目文件，该文件定义项目（如图像�
 
 通常情况下，项目还将导入一个 `.targets` 文件。 该文件包含众多描述如何处理和生成各种文件的规则。 此导入常常出现在 `proj` 文件底部附近，在 C# 项目则如下所示：
 
-```
+```xml
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 ```
 
@@ -64,7 +64,7 @@ MSBuild 有两种基础数据类型：“项”和“属性”，下列部分将
 
 例如，简单的控制台应用程序的 PropertyGroup 可能如以下 XML 所示：
 
-```
+```xml
 <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -86,7 +86,7 @@ MSBuild 有两种基础数据类型：“项”和“属性”，下列部分将
 
 例如，以下代码片段创建 iOS 启动屏幕。 启动屏幕具有生成类型 `BundleResource`，将 spec 作为映像的路径：
 
-```
+```xml
  <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="Resources\Default%402x.png" />
@@ -96,7 +96,7 @@ MSBuild 有两种基础数据类型：“项”和“属性”，下列部分将
     <BundleResource Include="Resources\Default-Landscape%402x.png" />
   </ItemGroup>
  ```
- 
+
  可在使用 `@()` 语法的表达式中引用项集。 例如，`@(BundleResource)` 将被评估为 BundleResource 项集，即所有 BundleResource 项。 如果没有此类型的项，则其将为空，且不会有任何错误。
 
 ## <a name="resources-for-learning-msbuild"></a>MSBuild 的介绍性资源
@@ -105,5 +105,3 @@ MSBuild 有两种基础数据类型：“项”和“属性”，下列部分将
 
 * [MSDN - 概述](https://msdn.microsoft.com/library/dd393574.aspx)
 * [MSDN - 概念](https://msdn.microsoft.com/library/dd637714.aspx)
-
-

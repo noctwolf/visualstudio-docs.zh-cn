@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a872745208b1f97065cc073920273dd90f4fa60
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 523140a4ffdc8e1eae07e3ae7dcffee5709067a2
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="pf"></a>PF
 VSPerfCmd.exe **PF** 选项将采样的分析事件设置为页面错误，还可以选择将采样间隔内的页面错误数从默认值 10 改为其他值。  
   
 > [!NOTE]
->  PF 不能用于 64 位系统。  
+>  **PF** 不能用于 64 位系统。  
   
- **注意：**64 位计算机上不支持 PF。只能在包含 **Launch** 或 **Attach** 选项的命令行中使用 **PF**。  
+只能在包含 **Launch** 或 **Attach** 选项的命令行中使用 **PF**。  
   
  默认情况下，采样事件设置为非暂停处理器时钟周期，采样间隔设置为 10,000,000。 使用 **Timer**、**PF**、**Sys** 和 **Counter** 选项可以设置采样事件和采样间隔。 **GC** 选项在每次发生分配和垃圾回收事件时收集 .NET 内存数据。 在命令行中只能指定这些选项中的一个。  
   
@@ -30,7 +30,7 @@ VSPerfCmd.exe **PF** 选项将采样的分析事件设置为页面错误，还�
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cmd  
 VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]  
 ```  
   
@@ -65,7 +65,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="example"></a>示例  
  本示例演示如何将分析样本事件设置为页面错误，以及如何将采样间隔设置为 20 个页面错误。  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /PF:20  
 ```  

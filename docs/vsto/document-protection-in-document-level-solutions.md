@@ -1,5 +1,5 @@
 ---
-title: 文档在文档级解决方案中的保护 |Microsoft 文档
+title: 在文档级解决方案中的文档保护
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 546a74179b8bdf52541d771809426b5e4aec3e45
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22c8f135770fbd427d361b9c9b113da3b20e609a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="document-protection-in-document-level-solutions"></a>文档级解决方案中的文档保护
+# <a name="document-protection-in-document-level-solutions"></a>在文档级解决方案中的文档保护
   你可以使用 Microsoft Office Word 和 Microsoft Office Excel 文档级项目中的保护的功能。 这些功能可以阻止未经授权的用户对受保护的文档部分进行更改。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -42,11 +42,11 @@ ms.lasthandoff: 04/16/2018
   
  但是，如果你创建使用启用了保护的现有 Word 文档的项目，在设计器中打开时保护此文档。 不能编辑受保护的文档，部分，但你仍然可以编写代码在代码编辑器中自动执行文档。 在 Visual Studio 中打开文档时启用保护，也不能生成项目。  
   
- 在文档处于设计器中打开，以便你可以编辑该文档并生成项目时，你可以关闭保护。 在进行调试; 时，无法将关闭设计器中的副本的保护在调试期间打开的文档是从一个打开设计器 （输出副本存储在的 \bin\debug 目录，对于 C# 和 Visual Basic 中的 \bin 目录中） 中的单独副本。  
+ 在文档处于设计器中打开，以便你可以编辑该文档并生成项目时，你可以关闭保护。 在进行调试; 时，无法将关闭设计器中的副本的保护在调试期间打开的文档是从一个设计器中打开的单独副本 (输出副本存储在*\bin* Visual Basic 中，目录和*\bin\debug*目录 C#)。  
   
  你可以启用通过关闭 Visual Studio 中的项目，打开位于项目目录中，文档的副本并开启保护在设计器中打开的文档的副本保护。  
   
-## <a name="enforcing-word-document-protection-on-build"></a>强制在生成的 Word 文档保护  
+## <a name="enforce-word-document-protection-on-build"></a>强制在生成的 Word 文档保护  
  Visual Studio 启动强制保护的 Word 文档和模板在生成过程中，以便进行调试打开文档时启用保护。 已使用空密码保护文档。  
   
  保护启用在生成期间因此，如果文档中存在代码<xref:Microsoft.Office.Tools.Word.Document.Startup>可能会导致异常或更改应用程序的行为的事件，此代码可以正确调试。 如果文档打开之后启用保护，则无法调试或测试初始化代码。  

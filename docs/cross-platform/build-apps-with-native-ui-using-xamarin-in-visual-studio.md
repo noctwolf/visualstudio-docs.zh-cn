@@ -10,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a8602915827c442fa2fc4cbddf4db2a25ef21749
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d813226dfa79a65da85a2b17e54306d12a4ed09
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用
 
@@ -95,7 +95,7 @@ Visual Studio 没有解决方案模板用于创建共享 .NET Standard 库的本
   
     -   单击“安装” 。  
   
-7.  重复步骤 7 找到“Microsoft.CSharp”包并将其安装在 .NET Standard 项目中。 在 .NET Standard 库中使用 C# `dynamic` 数据类型时，需要此库。
+7.  重复步骤 6 找到“Microsoft.CSharp”包并将其安装在 .NET Standard 项目中。 在 .NET Standard 库中使用 C# `dynamic` 数据类型时，需要此库。
   
 8.  生成解决方案并验证没有生成错误。  
   

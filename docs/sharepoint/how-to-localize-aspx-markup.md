@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9dd127fea21a53b9a29082f536ac8c0404299c63
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b43a8833ea84c4f6d191200bcf3af80815deb03a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-localize-aspx-markup"></a>如何：本地化 ASPX 标记
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (.aspx) 页通常使用硬编码的字符串值。 若要本地化这些字符串，将其替换引用本地化的资源的表达式。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
   
     1.  若要添加全局资源文件，在**解决方案资源管理器**，打开 SharePoint 项目项的快捷菜单，然后选择**添加**，**新项**。 在 SharePoint **2010年**节点，选择**全局资源文件**模板。  
   
-    2.  若要添加资源文件，在**解决方案资源管理器**，打开 SharePoint 项目项的快捷菜单，然后选择**添加**，**新项**。 下**Visual Basic**或**Visual C#**节点，选择**资源文件**模板。  
+    2.  若要添加资源文件，在**解决方案资源管理器**，打开 SharePoint 项目项的快捷菜单，然后选择**添加**，**新项**。 下**Visual Basic**或**Visual C#** 节点，选择**资源文件**模板。  
   
     > [!NOTE]  
     >  请确保将资源文件添加到 SharePoint 项目项以启用部署类型属性。 稍后在此过程需要使用此属性。 如果你的解决方案不具有 SharePoint 项目项，你可以添加空 SharePoint 项目和删除其默认 Elements.xml 文件。  
@@ -52,13 +52,13 @@ ms.lasthandoff: 04/16/2018
   
 6.  在[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]ASPX 页或控件的标记将硬编码字符串替换为使用以下格式的值：  
   
-    ```  
+    ```aspx-csharp  
     <%$Resources:Resource File Name, String ID%>  
     ```  
   
      例如，若要本地化的应用程序页上的标签控件的文本，请更改：  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
     <asp:Label ID="lbl" runat="server" Text="Label text"></asp:Label>  
     </asp:Content>  
@@ -66,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
      更改为  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
     <asp:Label ID="lbl" runat="server" Text="<%$Resources:MyAppResources,String1%>"></asp:Label>  
     </asp:Content>  
@@ -78,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
      应用程序中出现的本地化的字符串。 若要显示本地化的资源，SharePoint 服务器必须具有匹配资源文件的区域性的语言包安装。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)   
  [如何： 本地化功能](../sharepoint/how-to-localize-a-feature.md)   
  [如何： 将一个资源文件](../sharepoint/how-to-add-a-resource-file.md)   

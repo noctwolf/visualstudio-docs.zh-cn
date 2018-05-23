@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 07c9347bbfb42e3c2e20a1b4ecf6d852c567edbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b559239b537be4a57ff0815f67d8c50acb8b1ed
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-localize-code"></a>如何：本地化代码
   未本地化的代码使用硬编码的字符串值。 若要本地化代码字符串，将它们替换为对调用<xref:System.Web.HttpContext.GetGlobalResourceObject%2A>，这是一引用的本地化的资源的方法。  
@@ -62,7 +62,7 @@ ms.lasthandoff: 04/16/2018
   
 11. 在你的代码中找到用户可见的所有硬编码的字符串，如 UI 文本、错误和消息文本。 使用以下语法将这些字符串替换为对 <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> 方法的调用：  
   
-    ```  
+    ```csharp  
     HttpContext.GetGlobalResourceObject("Resource File Name", "String ID")  
     ```  
   

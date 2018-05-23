@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令行参数安装 Visual Studio 2017
 
@@ -84,8 +84,8 @@ ms.lasthandoff: 05/07/2018
 | `--includeRecommended` | **可选**：包含所有已安装工作负载的推荐组件，但不包含可选组件。 可使用 `--allWorkloads` 或 `--add` 指定工作负载。 |
 | `--includeOptional` | **可选**：添加布局中包含的任何工作负载的推荐*和*可选组件。 可使用 `--add` 指定工作负载。  |
 | `--keepLayoutVersion` | **15.3 中新增的可选选项**：无需更新布局版本，即可将更改应用到布局中。 |
-| `--verify` | **15.3 中新增的可选选项**：验证布局内容。  将列出所有损坏或缺失的文件。 |
-| `--fix` | **15.3 中新增的可选选项**：验证布局内容。  如果发现任何文件损坏或缺失，将重新进行下载。  必须连接 Internet，才能修复布局。 |
+| `--verify` | **15.3 中新增的可选选项**：验证布局内容。 将列出所有损坏或缺失的文件。 |
+| `--fix` | **15.3 中新增的可选选项**：验证布局内容。  如果发现任何文件损坏或缺失，将重新进行下载。 必须连接 Internet，才能修复布局。 |
 | `--clean <one or more paths to catalogs>` | **15.3 中新增的可选选项**：从已更新到新版本的布局中删除旧版组件。 |
 
 | **高级安装选项** | **说明** |
@@ -103,7 +103,7 @@ ms.lasthandoff: 05/07/2018
 | `--noWeb` | **15.3 中新增的可选选项**：安装程序现在从 Internet 下载要安装的所有内容。  离线布局中必须有要安装的所有内容。  如果布局中缺少内容，安装将失败。  有关详细信息，请参阅[从网络安装点进行部署](create-a-network-installation-of-visual-studio.md)。 |
 | `--path <name>=<path>` | **15.7 版中新增的可选选项**：用于指定安装的自定义安装路径。 支持的路径名称有 shared、cache 和 install。 |
 | `--path cache=<path>` | **15.7 版中新增的可选选项**：使用指定的位置下载安装文件。 只可以在首次安装 Visual Studio 时设置此位置。 示例：`--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **15.7 版中新增的可选选项**：包含用于并行 Visual Studio 安装的共享文件。 某些工具和 SDK 会安装到此驱动器上的某个位置，而其他一些工具可能会替代此设置并安装到另一个驱动器。 示例：`--path shared="C:\VS\shared"` |
+| `--path shared=<path>` | **15.7 版中新增的可选选项**：包含用于并行 Visual Studio 安装的共享文件。 某些工具和 SDK 会安装到此驱动器上的某个位置，而其他一些工具可能会替代此设置并安装到另一个驱动器。 示例：`--path shared="C:\VS\shared"` <br><br>重要说明：只能在首次安装 Visual Studio 时对此设置一次。 |
 | `--path install=<path>` | **15.7 版中新增的可选选项**：等效于 `–-installPath`。 具体而言，`--installPath "C:\VS"` 与 `--path install="C:\VS"` 等效。 一次只能使用其中一个。 |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>工作负荷 ID 和组件 ID 列表
@@ -114,20 +114,20 @@ ms.lasthandoff: 05/07/2018
 
 | **语言-区域设置** | **语言** |
 | ----------------------- | --------------- |
-| cs-CZ | 捷克语 |
-| de-DE | 德语 |
-| en-US | 英语 |
-| es-ES | 西班牙语 |
-| fr-FR | 法语 |
-| it-IT | 意大利语 |
-| ja-JP | 日语 |
-| ko-KR | 朝鲜语 |
-| pl-PL | 波兰语 |
-| pt-BR | 葡萄牙语 - 巴西 |
-| ru-RU | 俄语 |
-| tr-TR | 土耳其语 |
-| zh-CN | 中文 - 简体 |
-| zh-TW | 中文 - 繁体 |
+| Cs-cz | 捷克语 |
+| De-de | 德语 |
+| En-us | 英语 |
+| Es-es | 西班牙语 |
+| Fr-fr | 法语 |
+| It-it | 意大利语 |
+| Ja-jp | 日语 |
+| Ko-kr | 朝鲜语 |
+| Pl-pl | 波兰语 |
+| Pt-br | 葡萄牙语 - 巴西 |
+| Ru-ru | 俄语 |
+| Tr-tr | 土耳其语 |
+| Zh-cn | 中文 - 简体 |
+| Zh-tw | 中文 - 繁体 |
 
 ## <a name="error-codes"></a>错误代码
 

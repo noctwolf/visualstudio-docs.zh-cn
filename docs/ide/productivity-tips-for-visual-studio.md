@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34206b9c41802063cb1d29fd3bc5f8984a5581ca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>提高 Visual Studio 使用效率的提示
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 
      若要插入代码片段，请在菜单栏上依次选择“编辑” > “IntelliSense” > “插入代码片段”或“包围方式”，也可以打开文件中的快捷菜单，并依次选择“代码片段” > “插入代码片段”或“包围方式”。 有关详细信息，请参阅[代码片段](../ide/code-snippets.md)。
 
-- **修复内联代码错误**。 通过快速操作，只凭单个操作便可轻松重构、生成或修改代码。 若要应用这些操作，可以使用灯泡图标 ![小灯泡图标](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall")，也可以按 Alt+Enter 或 Ctrl+. 前提是光标位于相应的代码行上。 有关详细信息，请参阅[快速操作](quick-actions.md)。
+- **修复内联代码错误**。 通过快速操作，只凭单个操作便可轻松重构、生成或修改代码。 可使用螺丝刀![螺丝刀图标](media/screwdriver-icon.png)或灯泡![灯泡图标](media/light-bulb-icon.png)图标，或按“Alt”+“Enter”或“Ctrl”应用这些操作。+ 前提是光标位于相应的代码行上。 有关详细信息，请参阅[快速操作](quick-actions.md)。
 
 - **显示并编辑代码元素的定义**。 你可以快速显示和编辑定义代码元素（如成员、变量或局部变量）的模块。
 
