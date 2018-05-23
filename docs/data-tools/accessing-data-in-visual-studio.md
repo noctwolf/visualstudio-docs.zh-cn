@@ -1,5 +1,5 @@
 ---
-title: 访问 Visual Studio 中的数据
+title: 数据访问和工具
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,19 +16,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b43463dc35fa3f9703162817f6a8d63f44a87b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fbfd4227a2a4acfd8e21703cc29ff13ec36bd986
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="accessing-data-in-visual-studio"></a>访问 Visual Studio 中的数据
+# <a name="access-data-in-visual-studio"></a>访问 Visual Studio 中的数据
 
 在 Visual Studio 中，你可以创建连接到几乎任何数据库产品或服务，采用何种格式，任何位置中的数据的应用程序 — 在本地计算机上，在本地网络，或在公共、 私有、 或混合云。
 
 对于 JavaScript、 Python、 PHP、 Ruby 或 c + + 中的应用程序，你连接到数据就像任何其他，通过获取库并编写代码。 对于.NET 应用程序，Visual Studio 提供可用于浏览数据源，创建对象模型存储和操作数据在内存中，并将数据绑定到用户界面的工具。 Microsoft Azure 提供适用于连接到 Azure 存储的.NET、 Java、 Node.js、 PHP、 Python、 Ruby，和移动应用和 Visual Studio 中的工具 Sdk。
 
-以下列表显示从 Visual Studio 只是几个可以使用许多数据库和存储系统。 [Microsoft Azure](https://azure.microsoft.com/)产品是数据服务，包括所有设置和管理基础数据存储区。  [Azure Tools for Visual Studio](https://www.visualstudio.com/features/azure-tools-vs.aspx)是使您能够直接从 Visual Studio 的 Azure 数据存储区的可选组件。 可以在本地计算机上，在本地网络上，或在 Microsoft Azure 的虚拟机上托管的其他 SQL 和 NoSQL 数据库产品此处列出的大多数。 在此方案中，你负责管理数据库本身。
+以下列表显示从 Visual Studio 只是几个可以使用许多数据库和存储系统。 [Microsoft Azure](https://azure.microsoft.com/)产品是数据服务，包括所有设置和管理基础数据存储区。 **Azure 开发**中的工作负荷[Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)使您能够直接从 Visual Studio 的 Azure 数据存储区。
+
+![Azure 开发工作负荷](media/azure-development-workload.png)
+
+可以在本地计算机上，在本地网络上，或在 Microsoft Azure 的虚拟机上托管的其他 SQL 和 NoSQL 数据库产品此处列出的大多数。 如果你承载 Microsoft Azure 虚拟机中的数据库，你负责管理数据库本身。
 
 **Microsoft Azure**
 
@@ -68,7 +72,7 @@ ms.lasthandoff: 04/26/2018
 
 所有.NET 数据访问，包括在.NET 核心中都基于 ADO.NET 中，为访问任何类型的数据源、 关系和非关系定义一个接口的一组类。 Visual Studio 具有几个工具和设计器，可使用 ADO.NET 来帮助你连接到数据库，操作数据，并向用户显示数据。 此部分中的文档介绍如何使用这些工具。 你可以直接对 ADO.NET 命令对象进行编程。 有关直接调用 ADO.NET Api 的详细信息，请参阅[ADO.NET](/dotnet/framework/data/adonet/index)。
 
-专门与 ASP.NET 相关的数据访问文档，请参阅[使用数据](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 站点上。 有关使用使用 ASP.NET MVC 的 Entity Framework 的教程，请参阅[Getting Started with Entity Framework 6 Code First 使用 MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
+与 ASP.NET 相关的数据访问文档，请参阅[使用数据](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 站点上。 有关使用使用 ASP.NET MVC 的 Entity Framework 的教程，请参阅[Getting Started with Entity Framework 6 Code First 使用 MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
 在 C# 或 Visual Basic 中的通用 Windows 平台 (UWP) 应用程序可以使用 Microsoft Azure SDK for.NET 来访问 Azure 存储空间和其他 Azure 服务。 Windows.Web.HttpClient 类，可与任何 RESTful 服务的通信。 有关详细信息，请参阅[如何连接到 HTTP 服务器是使用 Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)。
 

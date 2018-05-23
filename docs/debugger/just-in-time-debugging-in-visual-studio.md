@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c506e12fc8e6637e2b53852587e6a37c57cbf5ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b97e2d6b9ca269a86c3b66ffbcc4bb441051f29
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>如何： 响应中实时调试器
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 04/18/2018
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>如果你想要修复或调试错误 （Visual Studio 用户）
 
-- 你必须具有[安装 Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48146)若要查看有关错误的详细的信息，并尝试对其进行调试。 有关详细信息，请参阅[使用实时调试器调试](../debugger/debug-using-the-just-in-time-debugger.md)。 如果无法解决该错误并修复应用程序，联系应用程序的所有者以解决该错误。
+- 你必须具有[安装 Visual Studio](http://www.visualstudio.com)若要查看有关错误的详细的信息，并尝试对其进行调试。 有关详细信息，请参阅[使用实时调试器调试](../debugger/debug-using-the-just-in-time-debugger.md)。 如果无法解决该错误并修复应用程序，联系应用程序的所有者以解决该错误。
 
 #### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>如果你想要防止出现实时调试器对话框
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 04/18/2018
 
 2. （ASP.NET 和 IIS）如果您要承载在 IIS 中的 ASP.NET Web 应用，禁用服务器端调试。
 
-    在 IIS 管理器中，右键单击服务器节点并选择**切换到功能视图**。 在 ASP.NET 部分中，选择**.NET 编译**并确保你选择**False**为 （步骤会有所不同，在较旧版本的 IIS） 的调试行为。
+    在 IIS 管理器中，右键单击服务器节点并选择**切换到功能视图**。 在 ASP.NET 部分中，选择 **.NET 编译**并确保你选择**False**为 （步骤会有所不同，在较旧版本的 IIS） 的调试行为。
   
 ## <a name="see-also"></a>请参阅    
  [调试器基础知识](../debugger/debugger-basics.md)   
