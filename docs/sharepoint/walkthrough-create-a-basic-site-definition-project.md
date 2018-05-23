@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d54b3ea7c32230a683359ee466b03e8954fec2ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77c8d2151380c48b80b53ec3f0ef671daa92dbaa
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>演练：创建基本网站定义项目
   本演练演示了如何创建基本网站定义包含与上它的某些控件的可视 Web 部件。 为清楚起见，你创建的可视 Web 部件有仅几个控件。 但是，你可以创建包括更多的功能的更复杂的 SharePoint 网站定义。  
@@ -55,7 +55,7 @@ ms.lasthandoff: 04/16/2018
   
      此时将出现 “新建项目” 对话框。  
   
-2.  展开**Visual C#**节点或**Visual Basic**节点，展开**SharePoint**节点，然后选择**2010年**节点。  
+2.  展开**Visual C#** 节点或**Visual Basic**节点，展开**SharePoint**节点，然后选择**2010年**节点。  
   
 3.  在**模板**列表中，选择**SharePoint 2010 项目**模板。  
   
@@ -65,7 +65,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  上**指定用于调试的站点和安全性级别**页上，输入想要调试站点定义的 SharePoint 站点的 URL 或使用默认位置 (http://*系统名称*/)。  
   
-6.  在**此 SharePoint 解决方案的信任级别是什么？**部分中，选择**部署为场解决方案**选项按钮。  
+6.  在**此 SharePoint 解决方案的信任级别是什么？** 部分中，选择**部署为场解决方案**选项按钮。  
   
      站点定义的所有项目必须都部署为场解决方案。 有关沙盒解决方案与场解决方案的详细信息，请参阅[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。  
   
@@ -75,7 +75,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  在**解决方案资源管理器**，选择项目节点，然后，在菜单栏上，选择**项目**，**添加新项**。  
   
-9. 下**Visual C#**或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**节点。  
+9. 下**Visual C#** 或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**节点。  
   
 10. 在**模板**窗格中，选择**站点定义**模板，保留**名称**作为**SiteDefinition1**，然后选择**添加**按钮。  
   
@@ -90,7 +90,7 @@ ms.lasthandoff: 04/16/2018
   
      “添加新项”对话框随即出现。  
   
-3.  展开**Visual C#**节点或**Visual Basic**节点，展开**SharePoint**节点，然后选择**2010年**节点。  
+3.  展开**Visual C#** 节点或**Visual Basic**节点，展开**SharePoint**节点，然后选择**2010年**节点。  
   
 4.  在模板列表中，选择**可视 Web 部件**模板，保留默认值将 VisualWebPart1，，然后选择**添加**按钮。  
   
@@ -98,7 +98,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  VisualWebPart1.ascx 底部添加以下标记将三个控件添加到窗体： 一个文本框、 按钮和标签：  
   
-    ```  
+    ```aspx-csharp  
     <table>  
       <tr>  
         <td>  
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  打开 default.aspx 页上，，然后添加以下行下的`WebPartPages`标记：  
   
-    ```  
+    ```aspx-csharp  
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>  
     ```  
   
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  后`</asp:Content>`元素，替换整个`ContentPlaceHolderId="PlaceHolderMain"`部分和其内容替换为以下代码：  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">  
         <MyWebPartControls:VisualWebPart1 runat="server" />      
     </asp:Content>  

@@ -1,5 +1,5 @@
 ---
-title: 指导原则，用于创建 Outlook 窗体区域 |Microsoft 文档
+title: Outlook 窗体区域创建准则
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dae7f03c49223c9919dc67b1c6a13768c597698d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d00c0aac83714e3a0906c38d13a705158cdfea9c
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="guidelines-for-creating-outlook-form-regions"></a>Outlook 窗体区域创建准则
   以下信息可以帮助优化窗体区域和避免潜在问题。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [禁用窗体区域继承](#DisablingInheritance)。  
   
--   [了解类型和 Message 类名称](#ClassNames)。  
+-   [了解类型和消息的类名](#ClassNames)。  
   
 -   [为阅读窗格设计相邻窗体区域](#ReadingPane)。  
   

@@ -11,15 +11,18 @@ ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0aa5b844b3743ab80c11971caa26340effe671
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: da7a14d781f4af79d6d1d68141c3d5de1c08d304
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>如何：将类拆分为分部类（类设计器）
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>如何：在类设计器中将类拆分为分部类
 
 可以使用 `partial` 关键字（Visual Basic 中的 `Partial`）来划分类声明或多个声明中的结构。 可以使用任意数量的部分声明。
 
@@ -36,30 +39,11 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > Visual Basic 使用分部类定义将 Visual Studio 生成的代码与用户编写的代码分开。 代码被分成单独的源文件。 例如，“Windows 窗体设计器”定义了控件的分部类，如 `Form`。 不应修改这些控件中生成的代码。
 
-
 有关 Visual Basic 中分部类型的详细信息，请参阅[分部](/dotnet/visual-basic/language-reference/modifiers/partial)。
 
-## <a name="visual-basic-example"></a>Visual Basic 示例
+## <a name="example"></a>示例
 
-若要拆分 Visual Basic 中的类定义，请使用 `Partial` 关键字，如以下示例所示。
-
-```vb
-' First part of class definition.
-Partial Public Class Employee
-    Public Sub CalculateWorkHours()
-    End Sub
-End Class
-
-' Second part of class definition.
-Partial Public Class Employee
-    Public Sub CalculateTaxes()
-    End Sub
-End Class
-```
-
-## <a name="c-example"></a>C# 示例
-
-若要拆分 C# 中的类定义，请使用 `partial` 关键字，如以下示例所示。
+若要拆分类定义，请使用 `partial` 关键字（Visual Basic 中的 `Partial`），如以下示例所示：
 
 ```csharp
 // First part of class definition.
@@ -79,9 +63,23 @@ public partial class Employee
 }
 ```
 
+```vb
+' First part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateWorkHours()
+    End Sub
+End Class
+
+' Second part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateTaxes()
+    End Sub
+End Class
+```
+
 ## <a name="see-also"></a>请参阅
 
 - [分部类和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
-- [分部（类型）](/dotnet/csharp/language-reference/keywords/partial-type)
+- [分部（类型）（C# 参考）](/dotnet/csharp/language-reference/keywords/partial-type)
 - [分部（方法）（C# 参考）](/dotnet/csharp/language-reference/keywords/partial-method)
-- [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)
+- [分部 (Visual Basic)](/dotnet/visual-basic/language-reference/modifiers/partial)

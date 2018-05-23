@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 688c4d8d9193ec33f0dcb63923673826a453c9be
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>演练：扩展服务器资源管理器以显示 Web 部件
   在 Visual Studio 中，你可以使用**SharePoint 连接**节点**服务器资源管理器**若要查看在 SharePoint 站点上的组件。 但是，**服务器资源管理器**中默认情况下未显示某些组件。 在本演练中，你将扩展**服务器资源管理器**，以便它在显示 Web 部件库每连接 SharePoint 站点。  
@@ -107,13 +107,11 @@ ms.lasthandoff: 04/16/2018
   
 3.  在对话框中的顶部，选择 **.NET Framework 3.5**在列表中的.NET framework 的版本。  
   
-4.  
-  
-5.  在项目模板列表中，选择**类库**，命名该项目**WebPartCommands**，然后选择**确定**按钮。  
+4.  在项目模板列表中，选择**类库**，命名该项目**WebPartCommands**，然后选择**确定**按钮。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**WebPartCommands**到解决方案的项目并打开默认 Class1 代码文件。  
   
-6.  从项目中删除 Class1 代码文件。  
+5.  从项目中删除 Class1 代码文件。  
   
 ## <a name="configuring-the-projects"></a>配置项目  
  在编写代码以创建扩展之前，你必须添加代码文件和程序集引用和配置项目设置。  
@@ -373,7 +371,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  关闭 Visual Studio （实验实例和 WebPartNode 解决方案处于打开状态的 Visual Studio 的实例） 的两个实例。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [演练： 调入 SharePoint 客户端对象模型在服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [图标的图像编辑器](/cpp/windows/image-editor-for-icons)   

@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41493e44ee0a82a09cf000eb056f686ff7b4d1bb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e371e15e3d366c9c73783d345b1c27340519f521
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="featureproperty-element"></a>FeatureProperty 元素
   表示将其部署到 SharePoint 时所随附一项功能的自定义属性。 将功能部署后，你可以在代码中访问属性。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <FeatureProperty Key = "Key of the property value"  
     Value = "Property value" />  
 ```  
@@ -62,7 +62,7 @@ ms.lasthandoff: 04/16/2018
 |**验证文件**|ProjectItemModelSchema.xsd|  
 |**可以为空**|否|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [在项目项中提供打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   

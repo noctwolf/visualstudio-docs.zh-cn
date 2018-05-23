@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7ed6b037d04e867b2d94a28fef5ecb6760e39dc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>在 Visual Studio 中部署 SharePoint 工具扩展
   若要部署 SharePoint 工具扩展，创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含扩展程序集，以及你想要随此扩展分发的任何其他文件的扩展 (VSIX) 包。 VSIX 包是一个压缩的文件，遵循开放式打包约定 (OPC) 标准。 VSIX 包具有.vsix 扩展名。  
@@ -133,13 +133,13 @@ ms.lasthandoff: 04/16/2018
   
 8.  找到以下`VSTemplate`项目文件中的元素。  
   
-    ```  
+    ```xml  
     <VSTemplate Include="YourTemplateName.vstemplate">  
     ```  
   
 9. 用下列 XML 替换此元素。  
   
-    ```  
+    ```xml  
     <VSTemplate Include="YourTemplateName.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -239,7 +239,7 @@ ms.lasthandoff: 04/16/2018
 ### <a name="example"></a>示例  
  下面的示例演示 SharePoint 工具扩展 extension.vsixmanifest 文件的内容。 扩展是在名为 Contoso.ProjectExtension.dll 程序集中实现的。 扩展包括 SharePoint 命令程序集 Contoso.ExtensionCommands.dll 和项模板名为的文件夹下名为**ItemTemplates** VSIX 包中。 此示例假定这两个程序集位于 VSIX 包中的 extension.vsixmanifest 文件所在的文件夹。  
   
-```  
+```xml 
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">  
   <Metadata>  
     <Identity Id="CustomActionProjectItem.Microsoft.b99efe4d-cef3-4afd-b9af-034ca0c52743" Version="1.0" Language="en-US" Publisher="Microsoft" />  

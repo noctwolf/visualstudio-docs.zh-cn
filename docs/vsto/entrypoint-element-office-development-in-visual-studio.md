@@ -1,5 +1,5 @@
 ---
-title: '&lt;入口点&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档'
+title: '&lt;入口点&gt;元素 （Visual Studio 中的 Office 开发）'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f4bd7a9a119a5e604461f44bb166f19e063ab4af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6eb617b44eb5360ea8c313431c7d8609505efa16
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;入口点&gt;元素 （Visual Studio 中的 Office 开发）
   `entryPoint` 命名空间中的每个 `vstav3` 元素都标识应在安装此 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 应用程序时运行的自定义程序集。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <entryPoint class>  
     <assemblyIdentity />  
 </entryPoint>  
@@ -55,11 +55,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="document-level-customization-example"></a>文档级自定义项示例  
   
 ### <a name="description"></a>描述  
- 下面的代码示例演示文档级 Office 解决方案的应用程序清单中的 `entryPoint` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例摘自 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大的示例。  
+ 下面的代码示例演示文档级 Office 解决方案的应用程序清单中的 `entryPoint` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例摘自[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>代码  
   
-```  
+```xml  
 <vstav3:entryPoint   
   class="ContosoExcelWorkbook.ThisWorkbook">  
   <assemblyIdentity   
@@ -97,11 +97,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="vsto-add-in-example"></a>VSTO 外接程序示例  
   
 ### <a name="description"></a>描述  
- 下面的代码示例演示应用程序级 Office 解决方案的应用程序清单中的 `entryPoint` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例摘自 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大的示例。  
+ 下面的代码示例演示应用程序级 Office 解决方案的应用程序清单中的 `entryPoint` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例摘自[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>代码  
   
-```  
+```xml
 <vstav3:entryPoint   
   class="ContosoOutlookAddIn.ThisAddIn">  
   <assemblyIdentity   
@@ -113,8 +113,8 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
- [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)   
+ [部署 Office 解决方案的清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  
   
   

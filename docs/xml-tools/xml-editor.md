@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba02c3ff7d87daeda71c872e67df25ad345c6989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac3c30f0db4c2aa1dc606348604efce3bb3ddac
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="xml-editor"></a>XML 编辑器
 
@@ -53,11 +53,8 @@ XML 编辑器基于 Visual Studio 文本编辑器中，并包含对 XML 语言�
 
 [XSLT 层次结构工具](../xml-tools/walkthrough-using-xslt-hierarchy.md)，可在包含的样式表和/或内置模板规则中添加断点。
 
-## <a name="related-sections"></a>相关章节
-
-- [在编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)提供有关文本编辑器的信息。
-- [XML 标准参考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供有关 XML 技术，包括 XML、 文档类型定义 (DTD)、 XML 架构定义语言 (XSD) 和 XSLT 的信息。
-
 ## <a name="see-also"></a>请参阅
 
+- [代码编辑器的功能](../ide/writing-code-in-the-code-and-text-editor.md)提供有关文本编辑器的信息。
+- [XML 标准参考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供有关 XML 技术，包括 XML、 文档类型定义 (DTD)、 XML 架构定义语言 (XSD) 和 XSLT 的信息。
 - [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

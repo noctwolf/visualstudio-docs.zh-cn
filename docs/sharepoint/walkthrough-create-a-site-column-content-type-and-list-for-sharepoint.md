@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dfcf3166e3fe4aa5ce17f51d696187cc060639b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>演练：创建 SharePoint 的网站栏、内容类型和列表
   以下过程演示如何创建自定义 SharePoint 网站栏 — 或*字段*-以及所使用的站点列的内容类型。 它还演示如何创建使用新的内容类型的列表。  
@@ -61,7 +61,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  上[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**文件**菜单上，选择**新建**，**项目**。  
   
-2.  在**新项目**对话框中下, **Visual C#**或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**。  
+2.  在**新项目**对话框中下, **Visual C#** 或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**。  
   
 3.  在**模板**窗格中，选择**SharePoint 2010 项目**，更改到项目的名称**Clinic**，然后选择**确定**按钮。  
   
@@ -69,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  上**指定用于调试的站点和安全性级别**页上，输入你想要添加的新的自定义字段项的本地 SharePoint 站点的 URL 或使用默认位置 (`http://<`*系统名称*`>/)`.  
   
-5.  在**此 SharePoint 解决方案的信任级别是什么？**部分中，使用默认值**部署为沙盒解决方案**。  
+5.  在**此 SharePoint 解决方案的信任级别是什么？** 部分中，使用默认值**部署为沙盒解决方案**。  
   
      有关沙盒的详细信息和场解决方案，请参阅[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。  
   
@@ -83,7 +83,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  在网站栏的 Elements.xml 文件中，保留**类型**将设置为**文本**，并更改**组**将设置为**Clinic 网站栏**。 完成后，网站栏的 Elements.xml 文件应类似下面的示例。  
   
-    ```  
+    ```xml  
     <Field  
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"  
          Name="Clinic - Patient Name"  
@@ -105,7 +105,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在菜单栏上，选择**项目**，**添加新项**。  
   
-3.  下**Visual C#**或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**节点。  
+3.  下**Visual C#** 或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**节点。  
   
 4.  在**模板**窗格中，选择**内容类型**模板，名称更改为**患者信息**，然后选择**添加**按钮。  
   
@@ -139,7 +139,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在菜单栏上，选择**项目**，**添加新项**。  
   
-3.  下**Visual C#**或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**节点。  
+3.  下**Visual C#** 或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**节点。  
   
 4.  在**模板**窗格中，选择**列表**模板，名称更改为**患者**，然后选择**添加**按钮。  
   

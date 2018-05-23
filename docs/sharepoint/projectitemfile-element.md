@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc9aa921c83bfe26c424e73fd53ad577e1aa527e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67d1ed00ef4781e0419d1fceda5f95a8c0c710fb
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 元素
   表示 SharePoint 文件，如功能元素文件中，要包括在项目项部署到 SharePoint 时。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <ProjectItemFile Source = "Name of the file"  
     Target = "Deployment path of the file"  
     Type = "Type of deployment for the file" />  

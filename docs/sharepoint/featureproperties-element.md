@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 991d2c57da8a1fc45fba266cdafe38000cd3d594
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30f466b1dd849f7c0288de38ead481dfa19995af
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="featureproperties-element"></a>FeatureProperties 元素
-  表示部署到 SharePoint 时所包含的一项功能的属性值的集合。 将功能部署后，你可以在代码中访问属性值。  
+  部署到 SharePoint 时所包含的一项功能的属性值的集合。 将功能部署后，你可以在代码中访问属性值。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <FeatureProperties>  
   <FeatureProperty.../>  
 </FeatureProperties>  
@@ -48,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
 |元素|描述|  
 |-------------|-----------------|  
-|[项目项](../sharepoint/projectitem-element.md)|表示一个 SharePoint 项目项。 这是.spdata 文件的所需的根元素。|  
+|[项目项](../sharepoint/projectitem-element.md)|表示一个 SharePoint 项目项。 此元素所需的根元素的`.spdata`文件。|  
   
 ## <a name="remarks"></a>备注  
  功能属性有关的详细信息，请参阅[提供打包和部署信息在项目项中](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。  

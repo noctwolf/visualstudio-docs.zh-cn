@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c991d3fece3e5997e8d470d168af9eba47c8663
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05ee17519019713b5e1bb89472dc06d5bc20ead1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 元素
-  表示键/值格式中的 SharePoint 项目项与相关联的自定义数据项。 键和值必须为字符串。  
+  自定义数据项中键/值格式的 SharePoint 项目项与该键关联。 键和值必须为字符串。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <ExtensionDataItem Key = "Key of the data item"  
     Value = "Value of the data item" />  
 ```  
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/16/2018
   
 |特性|描述|  
 |---------------|-----------------|  
-|**Key**|所需**xs: string**属性。<br /><br /> 用于存储和检索数据的项键。|  
+|**Key**|所需**xs： 字符串**属性。<br /><br /> 用于存储和检索数据的项键。|  
 |**值**|所需**xs: string**属性。<br /><br /> 数据项目的值。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/16/2018
 |[ExtensionData](../sharepoint/extensiondata-element.md)|表示自定义数据与 SharePoint 项目项关联的项的集合。|  
   
 ## <a name="remarks"></a>备注  
- 当你使用将关联自定义数据与 SharePoint 项目项<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>属性<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>对象时，Visual Studio 将数据保存到新**ExtensionDataItem**项目项的.spdata 文件中的元素。 有关详细信息，请参阅[扩展 SharePoint 项目系统中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
+ 关联时自定义数据与 SharePoint 项目项使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>属性<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>对象时，Visual Studio 将数据保存到新**ExtensionDataItem**中的元素`.spdata`文件项目项。 有关详细信息，请参阅[扩展 SharePoint 项目系统中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
   
 ## <a name="element-information"></a>元素信息  
   

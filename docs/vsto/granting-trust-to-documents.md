@@ -1,5 +1,5 @@
 ---
-title: 向文档授予信任 |Microsoft 文档
+title: 向文档授予信任
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8556f77b74ee1dab6a257f5ed3634da4bf798cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f95887d5d540fd1acd95b8af1275c4b4054c8764
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="granting-trust-to-documents"></a>Granting Trust to Documents
+# <a name="grant-trust-to-documents"></a>向文档授予信任
   文档级项目与应用程序级项目具有相同的安全要求：使用证书对清单进行签名，或单击信任提示。 此外，文档或工作簿必须位于指定为受信任位置的目录中。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -39,15 +39,15 @@ ms.lasthandoff: 04/16/2018
   
 -   将本地文件夹视为较安全并且隐式受信任。 必须将远程位置（例如，文件共享）指定为受信任的位置。  
   
--   当将某个目录添加到受信任的位置时，此操作将不仅向 Office 解决方案，还向 VBA 和 ActiveX 代码授予完全信任。 出于此原因，不应将根目录和“我的文档”文件夹指定为受信任。  
+-   当将某个目录添加到受信任的位置时，此操作将不仅向 Office 解决方案，还向 VBA 和 ActiveX 代码授予完全信任。 出于此原因，根目录和*我的文档*文件夹不应被指定为受信任。  
   
--   尽管通过使用受信任的位置使文档本身受到信任，但仍需要其他权限来信任该自定义项。 可以通过使用证书对清单进行签名、单击信任提示，或将 Office 解决方案安装到“Program Files”目录的方式向自定义项授予完全信任。  
+-   尽管通过使用受信任的位置使文档本身受到信任，但仍需要其他权限来信任该自定义项。 你可以通过使用使用证书对清单进行签名、 单击信任提示，或安装的 Office 解决方案授予对自定义项的完全信任*Program Files*目录。  
   
--   可以在与程序集相同或不同的目录中存储文档级解决方案的文档或工作薄。 例如，文档可以位于 SharePoint 服务器，而程序集可以位于网络文件共享中。 有关详细信息，请参阅[如何： 将文档级 Office 解决方案发布到 SharePoint 服务器通过使用 ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)。  
+-   可以在与程序集相同或不同的目录中存储文档级解决方案的文档或工作薄。 例如，文档可以位于 SharePoint 服务器，而程序集可以位于网络文件共享中。 有关详细信息，请参阅[如何： 使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)。  
   
 ## <a name="see-also"></a>请参阅  
  [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)   
  [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)   
- [确保 Office 解决方案的安全](../vsto/securing-office-solutions.md)  
+ [保护 Office 解决方案](../vsto/securing-office-solutions.md)  
   
   

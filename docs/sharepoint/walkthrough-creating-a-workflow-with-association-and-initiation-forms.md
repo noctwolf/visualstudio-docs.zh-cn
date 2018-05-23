@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 92aefd2292976bd9dcb50603e93b460cdf2bf991
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c232d541e985944fe64d9eb40da7e344b32c0cc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>演练：创建带有关联窗体和启动窗体的工作流
   本演练演示如何创建包含关联和启动窗体使用的基本顺序工作流。 这些是启用参数时首次将其关联的 SharePoint 管理员 （关联形式），并由用户 （启动窗体） 启动工作流时要添加到工作流的 ASPX 窗体。  
@@ -72,7 +72,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在菜单栏上，选择**文件**，**新建**，**项目**以显示**新项目**对话框。  
   
-2.  展开**SharePoint**下**Visual C#**或**Visual Basic**，然后选择**2010年**节点。  
+2.  展开**SharePoint**下**Visual C#** 或**Visual Basic**，然后选择**2010年**节点。  
   
 3.  在**模板**窗格中，选择**SharePoint 2010 项目**项目模板。  
   
@@ -84,19 +84,19 @@ ms.lasthandoff: 04/16/2018
   
      此步骤还将解决方案的信任级别设置为场解决方案，这是工作流项目的唯一可用的选项。  
   
-6.  在 **“解决方案资源管理器”**中，选择项目节点。  
+6.  在 **“解决方案资源管理器”** 中，选择项目节点。  
   
 7.  在菜单栏上，选择**项目**，**添加新项**。  
   
-8.  下**Visual C#**或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**节点。  
+8.  下**Visual C#** 或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**节点。  
   
-9. 在**模板**窗格中，选择**顺序工作流 （仅场解决方案）**模板，然后选择**添加**按钮。  
+9. 在**模板**窗格中，选择**顺序工作流 （仅场解决方案）** 模板，然后选择**添加**按钮。  
   
      **SharePoint 自定义向导**显示。  
   
 10. 在**指定用于调试的工作流名称**页上，接受默认名称 (**ExpenseReport-Workflow1**)。 保留默认工作流模板类型值 (**列表工作流)**。 选择“下一步”按钮。  
   
-11. 在**想让 Visual Studio 以自动将工作流关联的调试会话中？**页上，清除自动将你的工作流模板相关联如果签入的框。  
+11. 在**想让 Visual Studio 以自动将工作流关联的调试会话中？** 页上，清除自动将你的工作流模板相关联如果签入的框。  
   
      此步骤能让您手动将带有共享文档列表更高版本上，其中显示了工作关联窗体的工作流相关联。  
   
@@ -111,7 +111,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在菜单栏上，选择**项目**，**添加新项**以显示**添加新项**对话框。  
   
-3.  在对话框框中的树视图中，展开**Visual C#**或**Visual Basic** （具体取决于你项目的语言），展开**SharePoint**节点，然后选择**2010年**节点。  
+3.  在对话框框中的树视图中，展开**Visual C#** 或**Visual Basic** （具体取决于你项目的语言），展开**SharePoint**节点，然后选择**2010年**节点。  
   
 4.  在模板列表中，选择**工作流关联窗体**模板。  
   
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  此内容的元素中的第一行，后面直接添加以下代码以创建标签和提示输入的费用审批限额的文本框中 (*AutoApproveLimit*):  
   
-    ```  
+    ```aspx-csharp  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
   
     <asp:TextBox ID="AutoApproveLimit" runat="server" />  
@@ -172,7 +172,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在菜单栏上，选择**项目**，**添加新项**显示**添加新项**对话框。  
   
-3.  在对话框框中的树视图中，展开**Visual C#**或**Visual Basic** （具体取决于你项目的语言），展开**SharePoint**节点，然后选择**2010年**节点。  
+3.  在对话框框中的树视图中，展开**Visual C#** 或**Visual Basic** （具体取决于你项目的语言），展开**SharePoint**节点，然后选择**2010年**节点。  
   
 4.  在模板列表中，选择**工作流启动窗体**模板。  
   
@@ -189,7 +189,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  紧接在此内容的元素中第一行后面添加以下代码以创建标签和显示的费用审批限额的文本框中 (*AutoApproveLimit*)，输入在关联窗体中和另一个标签和文本框中输入费用总额提示 (*ExpenseTotal*):  
   
-    ```  
+    ```aspx-csharp  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
   
     <asp:TextBox ID="AutoApproveLimit" ReadOnly="true" runat="server" />  

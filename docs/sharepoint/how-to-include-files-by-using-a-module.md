@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6af9ef6114a3ac187c50d17f16c39c89b08370dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: daea134298e84e7ddddf419da2124924fe9ef121
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>如何：使用模块包括文件
   *模块*(无法将其与混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]模块) 是用于使您能够将如 ASPX 主控页文件、 文本文件或映像部署到 SharePoint 的容器。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  对于你想要在文档库中显示任何文件，追加`Type="GhostableInLibrary"`属性设为 Elements.xml 中其条目。 例如，应用于对象的  
   
-    ```  
+    ```xml  
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />  
     ```  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
      文件将复制到 SharePoint 中的指定位置。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
   

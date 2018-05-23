@@ -4,11 +4,11 @@ hide_bc: true
 title: Visual Studio 文档| Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来开发适用于你的平台和设备的应用程序、服务和工具。
 ms.topic: hub-page
-ms.openlocfilehash: 4dcf3ff02db54d1a0d6b2e45d3418caf1d908783
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e97752779c09c89107e784a0001737a8f5d77e2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -537,7 +537,7 @@ ms.lasthandoff: 04/16/2018
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Node.js</h3>
-                                                    <p>使用 Node.js（事件驱动的异步 JavaScript 运行时）生成可扩展的网络应用程序。</p>
+                                                    <p>使用 Node.js（一个由异步事件驱动的 JavaScript 运行时）生成可缩放的网络应用程序。</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -9,11 +9,11 @@ description: 了解如何激活 Visual Studio 订阅中包含的技术支持权�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ef77e784ccaad30413ad81716b55df8e2de45fea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c04132540477bcd94880cdb55b71493cbb1a347
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活 Visual Studio 订阅中的技术支持权益
 
@@ -75,6 +75,20 @@ ms.lasthandoff: 04/16/2018
 3.  在“支持”下单击“链接支持合约”
 4.  输入在上面 #1 中提供的“访问 ID”和“合同 ID”。
 完成这些步骤后，便能够选择与 Visual Studio 订阅权益关联的支持计划。  （计划名称可能包含“MSDN”。）
+
+## <a name="eligibility"></a>资格
+| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 4 个事件       |  是|
+| Visual Studio Professional（标准、年度云） | VL、Azure、零售、所选 NFR<sup>2</sup>                                        | 2 个事件                                                          |是         |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 2 个事件                                             |  是         |
+| MSDN 平台（标准）                                          | VL、零售                                              | 2 个事件                                               | 是         |
+| Visual Studio Dev Essentials | NA  | 不可用 |NA|
+| Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
+
+<sup>1</sup> *包括：Imagine 高级版。* 不包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine 标准、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务。
+
+<sup>2</sup> 包括：Imagine 标准版。
 
  
 

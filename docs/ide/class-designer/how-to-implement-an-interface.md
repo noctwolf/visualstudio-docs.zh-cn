@@ -13,13 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ccfde67a46ac1ae1b74a031a9ec030942d12b3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8905fe471d022ff7772ded2e5e3e571b1b74968
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-implement-an-interface-class-designer"></a>如何：实现接口（类设计器）
+# <a name="how-to-implement-an-interface-in-class-designer"></a>如何：在类设计器中实现接口
 
 在类设计器中，可以在类图上将接口连接至为接口方法提供代码的类，以此来实现接口。 类设计器可生成接口实现，并将接口与类之间的关系显示为继承关系。 可以通过在接口与类之间绘制继承连线或从类视图拖动接口来实现接口。
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/26/2018
 
      将有一个棒糖形附加在类上，还有一个带接口名称的标签，用以标识继承关系。 Visual Studio 为所有接口成员生成存根。
 
- 有关详细信息，请参阅[如何：创建类型之间的继承](how-to-create-inheritance-between-types.md)。
+有关详细信息，请参阅[如何：创建类型之间的继承](how-to-create-inheritance-between-types.md)。
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>从“类视图”窗口实现接口
 

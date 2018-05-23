@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 629b63b8645f1b5ebd84d25a04a4cec4e8bca6a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 392724510e3145450cbea8ee70d23037ded073a1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>如何：使用 MSBuild 任务创建 SharePoint 解决方案包
   你可以生成、 清除和验证 SharePoint 包 (.wsp) 的开发计算机上使用命令行的 MSBuild 任务。 你还可以使用这些命令通过在生成计算机上使用 Team Foundation Server 自动化生成过程。  
@@ -36,13 +36,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  输入以下命令以创建项目的包。 替换*ProjectFileName*与项目的名称。  
   
-    ```  
+    ```cmd  
     msbuild /t:Package ProjectFileName  
     ```  
   
      例如，你可以运行以下命令以打包一个名为 ListDefinition1 的 SharePoint 项目之一。  
   
-    ```  
+    ```cmd  
     msbuild /t:Package ListDefinition1.vbproj  
     msbuild /t:Package ListDefinition1.csproj  
     ```  
@@ -57,13 +57,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  输入以下命令来清理项目的包。 替换*ProjectFileName*与项目的名称。  
   
-    ```  
+    ```cmd  
     msbuild /t:CleanPackage ProjectFileName  
     ```  
   
      例如，你可以运行以下命令以清除一个名为 ListDefinition1 的 SharePoint 项目之一。  
   
-    ```  
+    ```cmd  
     msbuild /t:CleanPackage ListDefinition1.vbproj  
     msbuild /t:CleanPackage ListDefinition1.csproj  
     ```  
@@ -78,13 +78,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  输入以下命令以验证该项目的包。 替换*ProjectFileName*与项目的名称。  
   
-    ```  
+    ```cmd  
     msbuild /t:ValidatePackage ProjectFileName  
     ```  
   
      例如，你可以运行以下命令以验证一个名为 ListDefinition1 的 SharePoint 项目之一。  
   
-    ```  
+    ```cmd  
     msbuild /t:ValidatePackage ListDefinition1.vbproj  
     msbuild /t:ValidatePackage ListDefinition1.csproj  
     ```  
@@ -99,13 +99,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  输入以下命令以设置包项目的属性。 替换*PropertyName*与你想要设置的属性。  
   
-    ```  
+    ```cmd  
     msbuild /property:PropertyName=Value  
     ```  
   
      例如，你可以运行以下命令以设置警告等级。  
   
-    ```  
+    ```cmd  
     msbuild /property:WarningLevel = 2  
     ```  
   

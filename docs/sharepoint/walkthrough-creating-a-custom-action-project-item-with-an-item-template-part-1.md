@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e690d18bae72b59234f2f90cbcf903b9941df7d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6b1d81f200fde885a25aa367e700e61399af5bab
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>演练： 使用项模板创建的自定义操作项目项，第 1 部分
   可以通过创建自己的项目项类型来扩展 Visual Studio 中的 SharePoint 项目系统。 在本演练中，你将创建可以添加到 SharePoint 项目，以便在 SharePoint 站点上创建自定义操作项目项。 此自定义操作将添加到菜单项**站点操作**菜单中的 SharePoint 站点。  
@@ -201,7 +201,7 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  以下 XML 是 Visual C# 项模板。 如果要创建 Visual Basic 项目模板，替换的值`ProjectType`具有元素`VisualBasic`。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
       <TemplateData>  
@@ -230,7 +230,7 @@ ms.lasthandoff: 04/16/2018
   
 7.  将下面的 XML 添加到 CustomAction.spdata 文件中，然后保存并关闭文件。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <ProjectItem Type="Contoso.CustomAction" DefaultFile="Elements.xml"   
      xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
@@ -250,7 +250,7 @@ ms.lasthandoff: 04/16/2018
   
 11. Elements.xml 文件的内容将替换为以下 XML，然后保存并关闭文件。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <Elements Id="$guid8$" xmlns="http://schemas.microsoft.com/sharepoint/">  
       <CustomAction Id="Replace this with a GUID or some other unique string"  
@@ -274,13 +274,13 @@ ms.lasthandoff: 04/16/2018
   
 15. 找到以下`VSTemplate`项目文件中的元素。  
   
-    ```  
+    ```xml  
     <VSTemplate Include="ItemTemplate.vstemplate">  
     ```  
   
 16. 将此替换`VSTemplate`元素与以下 XML，然后保存和关闭文件。  
   
-    ```  
+    ```xml  
     <VSTemplate Include="ItemTemplate.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -400,25 +400,25 @@ ms.lasthandoff: 04/16/2018
   
     -   在`CustomAction`元素，设置`Id`属性为 GUID 或其他唯一的字符串，如以下示例所示：  
   
-        ```  
+        ```xml  
         Id="cd85f6a7-af2e-44ab-885a-0c795b52121a"  
         ```  
   
     -   在`CustomAction`元素，设置`Title`属性，如以下示例所示：  
   
-        ```  
+        ```xml  
         Title="SharePoint Developer Center"  
         ```  
   
     -   在`CustomAction`元素，设置`Description`属性，如以下示例所示：  
   
-        ```  
+        ```xml  
         Description="Opens the SharePoint Developer Center Web site."  
         ```  
   
     -   在`UrlAction`元素，设置`Url`属性，如以下示例所示：  
   
-        ```  
+        ```xml  
         Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
         ```  
   
@@ -451,7 +451,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>后续步骤  
  完成本演练后，你可以将向导添加到项模板。 当用户将自定义操作项目项添加到 SharePoint 项目中时，向导可收集有关的操作 （如其位置和要选择操作时，导航到的 URL） 信息并将此信息添加到新的项目项中的 Elements.xml 文件。 有关详细信息，请参阅[演练： 使用项模板，第 2 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [演练： 使用项模板创建的自定义操作项目项，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
  [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   

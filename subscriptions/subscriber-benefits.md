@@ -9,11 +9,11 @@ description: 了解 Visual Studio 订阅中包含的权益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio 订阅中包含的权益
 
@@ -40,5 +40,8 @@ Visual Studio 订阅提供最全面的资源集合，便于你在首选平台和
 - 在优先支持论坛获得社区成员的帮助。  如果社区成员无法回答你的问题，Microsoft 专家将会提供解答。 
 - 想询问有关 Azure 的问题？  请查看 Azure 社区和 Azure 顾问聊天服务。  
 
-有关在订阅中所包含权益的详细信息，请查看 Visual Studio 定价页。  有关具体权益的信息，包括哪些订阅拥有这些权益，可参阅下方的“使用订阅者权益”主题。 
+> [!NOTE] 
+> 你的订阅可能还附带软件下载权限。  有关下载的详细信息，包括订阅包含哪些下载，请访问 [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)。
+
+有关在订阅中所包含权益的详细信息，请查看 [Visual Studio 定价页](https://www.visualstudio.com/vs/pricing/)。  有关具体权益的信息，包括哪些订阅拥有这些权益，可参阅下方的“使用订阅者权益”主题。 
 

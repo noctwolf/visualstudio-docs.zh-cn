@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b579a0221fcba04e2ca0915957f2bdbf60b91d84
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a03e9790b8131636874384657a316f4792abaa56
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="extensiondata-element"></a>ExtensionData 元素
   表示自定义数据与 SharePoint 项目项关联的项的集合。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <ExtensionData>  
   <ExtensionDataItem.../>  
 </ExtensionData>  
@@ -48,10 +48,10 @@ ms.lasthandoff: 04/16/2018
   
 |元素|描述|  
 |-------------|-----------------|  
-|[项目项](../sharepoint/projectitem-element.md)|表示一个 SharePoint 项目项。 这是.spdata 文件的所需的根元素。|  
+|[项目项](../sharepoint/projectitem-element.md)|表示一个 SharePoint 项目项。 此元素所需的根元素的`.spdata`文件。|  
   
 ## <a name="remarks"></a>备注  
- 当你使用将关联自定义数据与 SharePoint 项目项<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>属性<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>对象时，Visual Studio 将保存到数据**ExtensionData**项目项的.spdata 文件中的元素。 有关详细信息，请参阅[扩展 SharePoint 项目系统中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
+ 当你使用将关联自定义数据与 SharePoint 项目项<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>属性<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>对象时，Visual Studio 将保存到数据**ExtensionData**中的元素`.spdata`项目文件项。 有关详细信息，请参阅[扩展 SharePoint 项目系统中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
   
 ## <a name="element-information"></a>元素信息  
   

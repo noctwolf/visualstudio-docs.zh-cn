@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f89a15b0ec734e29e27fe652ee7e71b791db50
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e8151020294f4fd5574a1de886509c5b11f0a326
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-create-inheritance-between-types-class-designer"></a>如何：创建类型之间的继承（类设计器）
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>如何：在类设计器中创建类型之间的继承
 
 若要使用类设计器在类图上的两种类型之间创建继承关系，请将基类型与其派生的类型相连接。 你可以有存在于两个类之间、类和接口之间，或者是两个接口之间的继承关系。
 

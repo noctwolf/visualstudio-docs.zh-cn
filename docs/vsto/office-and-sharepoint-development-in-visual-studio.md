@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 03863489f17672e1d72074633d353b041e022b78
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 Office 和 SharePoint 开发
   可以通过创建用户从 [Office 应用商店](https://store.office.com/) 或组织目录中下载的轻量级应用程序或外接程序来扩展 Microsoft Office 和 SharePoint，或者通过创建用户在计算机上安装的基于 .NET Framework 的解决方案来扩展。  
@@ -50,11 +50,7 @@ ms.lasthandoff: 04/16/2018
   
  ![适用于 Office 和 SharePoint 概念模型的应用](../vsto/media/officeandsharepointapps2015.png "适用于 Office 和 SharePoint 概念模型的应用")  
   
- **了解更多信息**  
-  
-|到|查看|  
-|--------|---------|  
-|了解有关 Napa Office 365 开发工具的详细信息。|[Napa Office 365 开发工具](https://msdn.microsoft.com/library/dn974046.aspx)|  
+
   
 ### <a name="build-an-office-add-in"></a>生成 Office 外接程序  
  若要扩展 Office 的功能，可生成 Office 外接程序。 它基本上是一个托管在 Office 应用程序，例如 Excel、 Word、 Outlook 和 PowerPoint 的网页。 你的应用程序可以将功能添加到文档、工作表、电子邮件、约会、演示文稿和项目中。  
@@ -71,7 +67,6 @@ ms.lasthandoff: 04/16/2018
 |--------|---------|  
 |了解有关 Office 外接程序的详细信息，然后生成一个外接程序。|[Office 外接程序](http://msdn.microsoft.com/office/dn448457)|  
 |比较你可用于扩展 Office 的不同方式，然后决定应该使用应用还是 Office 外接程序。|[Office 外接程序、VSTO 和 VBA 的路线图](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|了解有关 Napa Office 365 开发工具的详细信息。|[Napa Office 365 开发工具](https://msdn.microsoft.com/library/dn974046.aspx)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>生成 SharePoint 外接程序  
  若要为你的用户扩展 SharePoint，可生成 SharePoint 外接程序。 它基本上是一个可满足用户或业务的小且易于使用的独立应用程序。  
@@ -88,8 +83,7 @@ ms.lasthandoff: 04/16/2018
 |--------|---------|  
 |了解有关 SharePoint 外接程序的详细信息，然后生成一个外接程序。|[SharePoint 外接程序](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |比较 SharePoint 外接程序和传统的 SharePoint 解决方案。|[SharePoint 外接程序与 SharePoint 解决方案相比较](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|选择是生成 SharePoint 外接程序还是 SharePoint 解决方案。|[在 SharePoint 外接程序和 SharePoint 解决方案之间做出选择](https://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|了解有关 Napa Office 365 开发工具的详细信息。|[Napa Office 365 开发工具](https://msdn.microsoft.com/library/dn974046.aspx)|  
+|选择是生成 SharePoint 外接程序还是 SharePoint 解决方案。|[在 SharePoint 外接程序和 SharePoint 解决方案之间做出选择](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
 ##  <a name="Add-ins"></a> 创建一个 VSTO 外接程序  
  创建 VSTO 外接程序以面向 Office 2007 或 Office 2010，或者扩展 Office 2013 和 Office 2016，实现，可以使用 Office 外接程序。VSTO 外接程序只能在桌面上运行。 用户必须安装 VSTO 外接程序，因此它们通常就更加困难进行部署并提供支持。  但是，VSTO 外接程序可以与 Office 更紧密地集成。 例如，可以向 Office 功能区添加选项卡和控件并执行高级自动化任务，例如合并文档或修改图表。 你可以借助 .NET Framework 并使用 C# 和 Visual Basic 与 Office 对象进行交互。  

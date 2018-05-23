@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd97ae6cd610931f4b55deafb878f6c6067b6ef
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8408eb638d8a8961e144c2e09da896817ae9bea2
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-print-class-diagrams-class-designer"></a>如何：打印类图（类设计器）
+# <a name="how-to-print-class-diagrams"></a>如何：打印类图
 
 可以使用 Visual Studio 的打印功能打印类图。
 
 ## <a name="to-print-a-class-diagram"></a>打印类图
 
-1.  显示类图。 （如有必要，请选中“类图”选项卡以显示类图。）
+1.  打开类图。
 
 2.  单击“文件”菜单上的“打印”。
 
-     随即将打印整个类图。 可能需要调整“页面设置”对话框中的设置，以便按适当大小进行打印。
+随即将打印整个类图。 可能需要调整“页面设置”对话框中的设置，以便按适当大小进行打印。
 
 ## <a name="see-also"></a>请参阅
 
