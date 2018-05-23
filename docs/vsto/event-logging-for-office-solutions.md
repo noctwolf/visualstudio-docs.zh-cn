@@ -1,5 +1,5 @@
 ---
-title: Office 解决方案的事件日志 |Microsoft 文档
+title: Office 解决方案的事件日志
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,21 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b1319e906060a1fe4d94fbd2e6bb0a3f9d53eb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef1db4f88e13575f77a88d0e2ceee7ef0621b202
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 解决方案的事件日志
   你可以使用 Windows 事件查看器来查看当你安装或卸载 Office 解决方案时，由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 捕捉到的异常消息。 你可使用事件记录器中的这些消息来解决安装和部署问题。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="reading-the-event-log"></a>读取事件日志  
+## <a name="read-the-event-log"></a>读取的事件日志  
  打开“事件查看器”  和筛选器以筛选出你想要查看的事件。  
   
-#### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>读取 Windows Server 2003 和 Windows XP 中的事件日志  
+### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>读取 Windows Server 2003 和 Windows XP 中的事件日志  
   
 1.  在“控制面板”中，打开“管理工具” 。  
   
@@ -81,10 +81,10 @@ ms.lasthandoff: 04/16/2018
 ### <a name="localization"></a>本地化  
  异常消息的语言由 Visual Studio Tools for Office 运行时语言确定。 例如，如果最终用户的计算机已安装了日语语言包，则以日语将异常消息写入事件日志。  
   
-## <a name="disabling-the-event-logger"></a>禁用事件记录器  
+## <a name="disable-the-event-logger"></a>禁用事件记录器  
  默认情况下，安装或卸载 Office 解决方案时事件记录器处于禁用状态。 你可以通过将 VSTO_EVENTLOGDISABLED 环境变量设置为“1”（一）来禁用事件记录器。  
   
-#### <a name="to-disable-the-event-log"></a>禁用事件日志  
+### <a name="to-disable-the-event-log"></a>禁用事件日志  
   
 1.  在“控制面板”中，打开“系统” 。  
   

@@ -1,6 +1,6 @@
 ---
-title: 启用访问向 VBA 要创建或打开 Visual Studio Tools for Microsoft Office System 项目
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office System project
+title: 启用访问向 VBA 要创建或打开 Visual Studio Tools for Microsoft Office system 项目
+decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05c7296412ffd3f87433f4790617f4b27ca75ae3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f17c4e1481e7f33034e16d1e60a285b25c6f8230
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>启用访问向 VBA 要创建或打开 Visual Studio Tools for Microsoft Office System 项目
+# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>启用访问向 VBA 要创建或打开 Visual Studio Tools for Microsoft Office system 项目
 
-你可以创建或打开 Visual Studio Tools for Microsoft Office System 项目之前，必须显式启用对 Visual Basic for Applications (VBA) 在 Microsoft Office 中的项目系统的访问。
+你可以创建或打开 Visual Studio Tools for Microsoft Office system 项目之前，必须显式启用对 Visual Basic for Applications (VBA) 在 Microsoft Office 中的项目系统的访问。
 
  Microsoft Office 开发项目需要访问对 Visual Basic for Applications (VBA) Microsoft Office Word 和 Microsoft Office Excel 中的项目系统，即使项目来为应用程序不使用 Visual Basic。 Visual Basic 和 C# 项目中控件的设计时支持均需依赖 Visual Basic for Applications 项目系统。
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 05/10/2018
 
  如果看到 VBA 或 COM 错误，则可以修复 Office 的安装。
 
-## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>启用或禁用对 Visual Basic 项目的访问
+## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>若要启用或禁用对 Visual Basic 项目的访问
 
 1. 单击 **“文件”** 选项卡。
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 05/10/2018
 
 6. 单击 **“确定”**。
 
-### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>若要启用或禁用对 Visual Basic 项目中使用 2007 Microsoft Office 系统的访问权限
+### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>若要启用或禁用对 Visual Basic 项目中使用 2007 Microsoft Office 系统的访问
 
 1. 上**工具**菜单在 Word 或 Excel 中，依次指向**宏**，然后单击**安全**。
 
@@ -127,4 +127,4 @@ ms.lasthandoff: 05/10/2018
 
 ## <a name="see-also"></a>请参阅
 
- [确保 Office 解决方案的安全](../vsto/securing-office-solutions.md)
+ [保护 Office 解决方案](../vsto/securing-office-solutions.md)

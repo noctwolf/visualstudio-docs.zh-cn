@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9052136a58b0c6cd3246b7c7b61c89bf637a8cf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>演练：为 SharePoint 项目创建自定义部署步骤
   在部署 SharePoint 项目时，Visual Studio 以特定顺序执行一系列部署步骤。 Visual Studio 提供了许多内置部署步骤，但你也可以创建你自己。  
@@ -73,12 +73,12 @@ ms.lasthandoff: 04/16/2018
   
 2.  在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
   
-3.  在**新项目**对话框框中，展开**Visual C#**或**Visual Basic**节点，然后选择**扩展性**节点。  
+3.  在**新项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**扩展性**节点。  
   
     > [!NOTE]  
     >  **扩展性**节点是安装 Visual Studio SDK 时才可用。 有关详细信息，请参阅本主题前面的先决条件部分。  
   
-4.  在对话框中的顶部，选择**.NET Framework 4.5**在列表中的.NET framework 的版本。  
+4.  在对话框中的顶部，选择 **.NET Framework 4.5**在列表中的.NET framework 的版本。  
   
 5.  选择**VSIX 项目**模板，将项目**UpgradeDeploymentStep**，然后选择**确定**按钮。  
   
@@ -88,9 +88,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**解决方案资源管理器**，打开 UpgradeDeploymentStep 解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。  
   
-2.  在**新项目**对话框框中，展开**Visual C#**或**Visual Basic**节点，然后选择**Windows**节点。  
+2.  在**新项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**Windows**节点。  
   
-3.  在对话框中的顶部，选择**.NET Framework 4.5**在列表中的.NET framework 的版本。  
+3.  在对话框中的顶部，选择 **.NET Framework 4.5**在列表中的.NET framework 的版本。  
   
 4.  选择**类库**项目模板，将项目**DeploymentStepExtension**，然后选择**确定**按钮。  
   
@@ -102,9 +102,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**解决方案资源管理器**，打开 UpgradeDeploymentStep 解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。  
   
-2.  在**新项目**对话框框中，展开**Visual C#**或**Visual Basic**，然后选择**Windows**节点。  
+2.  在**新项目**对话框框中，展开**Visual C#** 或**Visual Basic**，然后选择**Windows**节点。  
   
-3.  在对话框中的顶部，选择**.NET Framework 3.5**在列表中的.NET framework 的版本。  
+3.  在对话框中的顶部，选择 **.NET Framework 3.5**在列表中的.NET framework 的版本。  
   
 4.  选择**类库**项目模板，将项目**SharePointCommands**，然后选择**确定**按钮。  
   
@@ -161,9 +161,7 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-create-the-deployment-configuration"></a>若要创建的部署配置  
   
-1.  
-  
-2.  在**DeploymentStepExtension**项目中，打开 DeploymentConfigurationExtension 代码文件中，，然后将以下代码粘贴到其中。  
+1.  在**DeploymentStepExtension**项目中，打开 DeploymentConfigurationExtension 代码文件中，，然后将以下代码粘贴到其中。  
   
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]  
@@ -253,9 +251,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在实验实例中的 Visual Studio 中，在菜单栏上，选择**文件**，**新建**，**项目**。  
   
-2.  在**新项目**对话框框中，展开**Visual C#**节点或**Visual Basic**节点，展开**SharePoint**节点，然后选择**2010年**节点。  
+2.  在**新项目**对话框框中，展开**Visual C#** 节点或**Visual Basic**节点，展开**SharePoint**节点，然后选择**2010年**节点。  
   
-3.  在对话框中的顶部，请确保**.NET Framework 3.5**出现在列表的.NET Framework 的版本。  
+3.  在对话框中的顶部，请确保 **.NET Framework 3.5**出现在列表的.NET Framework 的版本。  
   
      为项目[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]需要此版本的.NET Framework。  
   
@@ -282,11 +280,11 @@ ms.lasthandoff: 04/16/2018
   
 11. 上**选择列表设置**页上，验证以下设置，，然后选择**完成**按钮：  
   
-    1.  **员工列表**出现在**你想要列表的显示名称？**框。  
+    1.  **员工列表**出现在**你想要列表的显示名称？** 框。  
   
-    2.  **创建基于自定义的列表：**选择选项按钮。  
+    2.  **创建基于自定义的列表：** 选择选项按钮。  
   
-    3.  **默认值 （空）**中选择**创建基于自定义的列表：**列表。  
+    3.  **默认值 （空）** 中选择**创建基于自定义的列表：** 列表。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建员工列表项的标题列与单个空实例并打开列表设计器。  
   
@@ -306,7 +304,7 @@ ms.lasthandoff: 04/16/2018
   
 15. 在 Elements.xml 文件中，用下列 XML 替换默认的此文件中的 XML。 此 XML 更改到列表的名称**员工**并添加了命名荣的员工的信息。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <ListInstance Title="Employees"  
@@ -357,7 +355,7 @@ ms.lasthandoff: 04/16/2018
   
      完成后，该文件应包含以下 XML。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <ListInstance Title="Employees"  
@@ -432,7 +430,7 @@ ms.lasthandoff: 04/16/2018
   
      属性编辑器/Designer 随即打开。  
   
-4.  上**视图**选项卡上，选择**电子邮件**列，然后选择**<**键能够移从该列**所选列**列表到**可用列**列表。  
+4.  上**视图**选项卡上，选择**电子邮件**列，然后选择**<** 键能够移从该列**所选列**列表到**可用列**列表。  
   
      此操作将删除这些字段的默认视图从**员工**SharePoint 站点上的列表。  
   
