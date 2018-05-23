@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>检查自动中的变量和 Visual Studio 中的局部变量窗口
 **自动**窗口 (调试时， **CTRL + ALT + V、 A**，或**调试 > Windows > 自动**) 和**局部变量**（时调试窗口**CTRL + ALT + V、 L**，或**调试 > Windows > 局部变量**) 是非常有用，当你想要在调试时，请参阅变量值。 “局部变量”  窗口显示在本地范围内定义的变量，它们通常为当前正在执行的函数或方法。 **“自动”** 窗口显示在当前行（调试器停止的位置）周围使用的变量。 在此窗口中显示哪些变量的完全是不同的语言。 请参阅下面的 [What variables appear in the Autos Window?](#bkmk_whatvariables) 下方。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/18/2018
 若需了解基本调试的详细信息，请参阅 [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md)。  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>查看“自动”和“局部变量”窗口中的对象  
-数组和对象在“自动”和“局部变量”窗口中显示为树控件。 单击变量名称左侧的箭头以展开显示字段和属性的视图。 以下是 [“局部变量”](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) 窗口中的 **FileStream** 对象的示例：  
+数组和对象在“自动”和“局部变量”窗口中显示为树控件。 单击变量名称左侧的箭头以展开显示字段和属性的视图。 下面是一个示例的[FileStream](/dotnet/api/system.io.filestream)对象在**局部变量**窗口：  
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   

@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0bc8d7f2f6fb1515b8946d0fad9338733c5138
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b811f194e0496030e1f46d1448736fb21f9579b3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>选择 ClickOnce 部署策略
 有三种不同的策略用于部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序；所选择的策略主要取决于要部署的应用程序的类型。 下面介绍了这三种部署策略：  
@@ -46,15 +46,6 @@ ms.lasthandoff: 04/19/2018
   
  这是默认部署策略。  
   
-## <a name="install-from-a-cd"></a>从 CD 安装  
- 在使用此策略时，应用程序会部署到可移动媒体（如 CD-ROM 或 DVD）。 上个选项，当用户选择安装应用程序，它在安装并启动，并且项被添加到与**启动**菜单和**添加或删除程序**中**控件面板**。  
-  
- 此策略最适合将应用程序部署到不具有持久网络连接或只具有低带宽连接的用户。 因为应用程序是从可移动媒体安装的，所以安装不需要任何网络连接；但是，应用程序更新仍需要网络连接。  
-  
- 若要启用在此部署策略[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，单击**从 CD-ROM 或 DVD-ROM**上**安装方式**发布向导的页。  
-  
- 若要手动启用此部署策略，请更改**deploymentProvider**部署清单中的标记。 (在 Visual Studio 中，此属性公开为**安装 URL**上**发布**项目设计器的页面。 在 Mage.exe 中它是**启动位置**。)  
-  
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>从 Web 或网络共享启动应用程序  
  此策略与第一种策略相似，只是应用程序在此策略中的行为类似于 Web 应用程序。 当用户在网页上单击链接（或在文件共享上双击图标）时，应用程序被启动。 当用户关闭应用程序时，已不再可用其本地计算机; 上执行任何操作添加到**启动**菜单或**添加或删除程序**中**控制面板**。  
   
@@ -66,6 +57,15 @@ ms.lasthandoff: 04/19/2018
  若要启用在此部署策略[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，单击**不安装应用程序**上**安装从 Web 或运行**发布向导的页。  
   
  若要手动启用此部署策略，请更改**安装**部署清单中的标记。 (其值可以是**true**或**false**。 在 Mage.exe 中，请使用**仅限联机状态**选项**应用程序类型**列表。)  
+
+## <a name="install-from-a-cd"></a>从 CD 安装  
+ 在使用此策略时，应用程序会部署到可移动媒体（如 CD-ROM 或 DVD）。 上个选项，当用户选择安装应用程序，它在安装并启动，并且项被添加到与**启动**菜单和**添加或删除程序**中**控件面板**。  
+  
+ 此策略最适合将应用程序部署到不具有持久网络连接或只具有低带宽连接的用户。 因为应用程序是从可移动媒体安装的，所以安装不需要任何网络连接；但是，应用程序更新仍需要网络连接。  
+  
+ 若要启用在此部署策略[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，单击**从 CD-ROM 或 DVD-ROM**上**安装方式**发布向导的页。  
+  
+ 若要手动启用此部署策略，请更改**deploymentProvider**部署清单中的标记。 (在 Visual Studio 中，此属性公开为**安装 URL**上**发布**项目设计器的页面。 在 Mage.exe 中它是**启动位置**。)  
   
 ## <a name="web-browser-support"></a>Web 浏览器支持  
  可以使用任何浏览器安装面向 .NET Framework 3.5 的应用程序。  
