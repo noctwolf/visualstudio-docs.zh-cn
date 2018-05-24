@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 86e176ba2b6b4da026e5ecfc341ac535d9a32f84
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>演练：使用项模板创建自定义操作项目项（第 2 部分）
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项模板关联后，你可能还想要模板提供的向导。 可以使用向导收集从用户的信息，当用户使用你的模板添加到项目的项目项的新实例。 你收集的信息可以用于初始化项目项。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/22/2018
 -   调试和测试该向导。  
   
 > [!NOTE]  
->  你可以下载包含已完成的项目、 代码和从以下位置在本演练中的其他文件的示例：[有关 SharePoint 工具扩展演练项目文件](http://go.microsoft.com/fwlink/?LinkId=191369)。  
+>  你可以下载中的示例[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，演示如何创建自定义活动的工作流。  
   
 ## <a name="prerequisites"></a>系统必备  
  若要执行本演练，你必须首先创建 CustomActionProjectItem 解决方案通过完成[演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。  

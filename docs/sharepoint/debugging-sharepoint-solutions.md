@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>调试 SharePoint 解决方案
   您可以通过使用调试 SharePoint 解决方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 当开始调试，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将项目文件部署到 SharePoint 服务器，然后打开在浏览器中的 SharePoint 网站的实例。 以下各节说明如何调试 SharePoint 应用程序[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -128,11 +128,11 @@ ms.lasthandoff: 04/16/2018
  调试工作流项目时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将 （具体取决于其类型） 的工作流模板添加到库或列表。 手动或通过添加或更新项，你可以随后启动工作流模板。 然后，可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试工作流。  
   
 > [!NOTE]  
->  如果添加对其他程序集的引用，请确保这些程序集安装在全局程序集缓存 ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否则，该工作流解决方案将会失败。 有关如何安装程序集的信息，请参阅[手动对文档或项中启动工作流](http://go.microsoft.com/fwlink/?LinkID=79938)。  
+>  如果添加对其他程序集的引用，请确保这些程序集安装在全局程序集缓存 ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否则，该工作流解决方案将会失败。 有关如何安装程序集的信息，请参阅[手动对文档或项中启动工作流](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。  
   
  但是，在部署过程不会启动工作流。 从 SharePoint 网站，必须启动工作流。 通过使用的客户端应用程序，例如 Microsoft Office Word 2010，或通过使用单独的服务器端代码，你还可以启动工作流。 使用中指定的方法之一**SharePoint 自定义向导**。  
   
- 例如，如果你指定在工作流可以手动启动，请直接从库或列表中的项中启动工作流。 有关如何手动启动工作流的详细信息，请参阅[手动对文档项启动工作流](http://go.microsoft.com/fwlink/?LinkID=79938)。  
+ 例如，如果你指定在工作流可以手动启动，请直接从库或列表中的项中启动工作流。 有关如何手动启动工作流的详细信息，请参阅[手动对文档项启动工作流](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。  
   
 ##  <a name="FeatureEvents"></a> 调试功能事件接收器  
  默认情况下，当你运行[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 应用程序，它的功能自动激活为你在 SharePoint 服务器上。 但是，这会导致问题在调试功能事件接收器，因为当通过激活功能[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，它在不同于调试器进程中运行。 这意味着某些调试功能，如断点，将无法在正常工作。  

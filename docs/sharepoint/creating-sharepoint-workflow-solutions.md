@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08daee9f9b8a7bdfbe71b4787eaaaeb3baa178d9
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>创建 SharePoint 工作流解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供工具以帮助您创建自定义管理生命周期的文档和 SharePoint 网站中的列表项的工作流。 提供的项包括设计器、一组活动控件以及必需的程序集引用。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此外包括**SharePoint 自定义向导**来帮助创建和配置工作流。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="workflows-in-sharepoint"></a>在 SharePoint 中的工作流  
  当你将工作流添加到 SharePoint 库或列表时，则强制执行业务流程中的库或列表的所有项上。 工作流描述了系统或用户必须在每个项，如发送要进行编辑，然后查看的项执行的操作。 这些操作，称为*活动*，是工作流的构建基块。  
   
- 你可以创建 SharePoint 工作流中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]并将其部署到 SharePoint 网站。 工作流部署到 SharePoint 后，你将其与关联的库或列表。 它可以然后自动启动，手动，由进程或用户。 有关工作流操作的详细信息，请参阅[使用工作流管理过程](http://go.microsoft.com/fwlink/?LinkId=79757)。  
+ 你可以创建 SharePoint 工作流中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]并将其部署到 SharePoint 网站。 工作流部署到 SharePoint 后，你将其与关联的库或列表。 它可以然后自动启动，手动，由进程或用户。 有关工作流操作的详细信息，请参阅[开发 SharePoint 工作流使用 Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio)。  
   
 ## <a name="creating-custom-sharepoint-workflows"></a>创建自定义 SharePoint 工作流  
  两个 SharePoint 工作流项目可供你在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]:**顺序工作流**和**状态机工作流**。  

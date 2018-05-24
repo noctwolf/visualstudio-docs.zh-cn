@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba8f84db31cbe41e8bd3f62a7806de0a6d2ea58e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12de0ea2e9638c7ab523bbda0e623c84d0182aad
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>SharePoint 解决方案疑难解答
   使用调试 SharePoint 解决方案时，可能发生以下问题或警报[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 有关详细信息，请参阅[调试 SharePoint 2007 工作流解决方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -135,7 +135,7 @@ ms.lasthandoff: 04/16/2018
   
 -   安装 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]。  
   
--   确保你到 SharePoint 网站上具有管理员访问权限。 有关详细信息，请参阅[!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)]联机文章[授予访问权限的门户网站](http://go.microsoft.com/fwlink/?LinkId=98310)。  
+-   确保你到 SharePoint 网站上具有管理员访问权限。 有关详细信息，请参阅[!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)]联机文章[分配或 SharePoint Server 中删除的服务应用程序管理员](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications)。  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>站点删除 Web 事件未发生在事件接收器项目  
  当你创建一个事件接收器项目并且你选择某些 Web 事件，如"正在删除站点"时，永远不会发生该事件。  
@@ -238,7 +238,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  上**应用程序池**页上，选择 SharePoint 应用程序池 (通常为"SharePoint-80")，然后在**操作**窗格中，选择**高级设置**链接。  
   
-4.  若要增加 IIS 超时前的等待时间，更改的值**Ping 最大响应时间 （秒）**为大于 90 秒的值。  
+4.  若要增加 IIS 超时前的等待时间，更改的值**Ping 最大响应时间 （秒）** 为大于 90 秒的值。  
   
 5.  若要禁用 IIS 执行 ping 操作，设置**启用 Ping**到**False**。  
   

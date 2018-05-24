@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0027b49cd371aaec00d2bcfb609a694f14dc4869
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 0aa938d41540229d6cd91598968f104b3fa3a7be
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>演练：使用项目模板创建网站栏项目项（第 2 部分）
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项目模板后，你可能还想要模板提供的向导。 该向导可用于从用户收集信息，在他们使用你的模板来创建一个包含项目项的新项目。 你收集的信息可以用于初始化项目项。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/22/2018
 -   调试和测试该向导。  
   
 > [!NOTE]  
->  你可以下载包含已完成的项目、 代码和从以下位置在本演练中的其他文件的示例： [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369)。  
+> 示例工作流的一系列，请参阅[SharePoint 工作流示例](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)。  
   
 ## <a name="prerequisites"></a>系统必备  
  若要执行本演练，你必须首先创建 SiteColumnProjectItem 解决方案通过完成[演练： 使用项目模板，第 1 部分中创建网站栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。  
