@@ -10,11 +10,11 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d571252c34a286e26fbf97537c5fe4a527743d72
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9e34fd9c343261626e8296488acf55214cf539ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
@@ -32,12 +32,12 @@ R 是用于统计计算和图形的高度可扩展语言和环境。 它是使�
 
 然后，单击下面的链接，详细了解与 R 相关的功能，以及 Visual Studio 本身的常规功能。
 
-| 功能 | 说明 | Visual Studio 常规文档 | 
+| 功能 | 说明 | Visual Studio 常规文档 |
 | --- | --- | --- |
 | [Visual Studio 项目系统](r-projects-in-visual-studio.md) | 利用方便使用的结构整理和管理相关文件，并利用实用项目模板，如 R 代码、R 文档、R Markdown、SQL 查询和存储过程。 此外，还可以使用[包管理器](r-package-manager-in-visual-studio.md)和 [SQL Server 集成](integrating-sql-server-with-r.md)。  | [Visual Studio 中的解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md) |
 | [工作区](r-workspaces-in-visual-studio.md) | RTVS 可以绑定到本地和远程工作区，以便使用较小的数据集在本地开发 R 代码，然后在基于云且功能更强大的计算机上使用较大的数据集运行此代码。 | n/a |
 | [R 工具选项](options-for-r-tools-in-visual-studio.md) | 控制 RTVS 的各个方面。 | [“选项”对话框](../ide/reference/options-dialog-box-visual-studio.md) |
-| [丰富编辑、IntelliSense 和代码片段](editing-r-code-in-visual-studio.md) | 包括语法着色、跨所有代码和库的 [IntelliSense](r-intellisense.md)、代码格式设置、签名帮助、转到定义、查找所有引用和[代码片段](code-snippets-for-r.md)等。 | [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [丰富编辑、IntelliSense 和代码片段](editing-r-code-in-visual-studio.md) | 包括语法着色、跨所有代码和库的 [IntelliSense](r-intellisense.md)、代码格式设置、签名帮助、转到定义、查找所有引用和[代码片段](code-snippets-for-r.md)等。 | [代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [R Markdown](rmarkdown-with-r-in-visual-studio.md) | R Markdown 文档有助于共享数据结果，其中 Markdown 代码块包含集成的 R 代码。 | n/a |
 | [交互窗口](interactive-repl-for-r-in-visual-studio.md) | 提供 R 的完整 REPL 体验，以便可以在交互窗口内轻松运行源文件中的代码。 | n/a |
 | [可视化数据](visualizing-data-with-r-in-visual-studio.md) | 绘图是 R 体验不可或缺的一部分，RTVS 支持使用多个独立绘图窗口（每个窗口均有各自的历史记录）和跨窗口移动绘图功能。 可以将绘图保存为位图和 PDF 文件，也可以将绘图以位图或元文件的形式复制到剪贴板中。  | n/a |
