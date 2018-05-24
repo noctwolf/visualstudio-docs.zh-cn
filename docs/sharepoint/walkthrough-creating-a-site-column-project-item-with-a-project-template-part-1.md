@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f494ef7160d38365643f72cfd1dabfa6cb66d4c3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 04889d508903a80717f7055599a8b63b354e32ce
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>演练：使用项目模板创建网站栏项目项（第 1 部分）
   SharePoint 项目是一个或多个 SharePoint 项目项的容器。 可以通过创建你自己的 SharePoint 项目项类型，然后将其关联的项目模板来扩展 Visual Studio 中的 SharePoint 项目系统。 在此演练中，将为创建网站栏，定义项目项类型，然后你将在其中创建可用来创建一个包含网站栏项目项的新项目的项目模板。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/22/2018
  这是一个独立的演练。 完成本演练后，你可以通过将向导添加到项目模板来增强项目项。 有关详细信息，请参阅[演练： 使用项目模板，第 2 部分中创建网站栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
 > [!NOTE]  
->  你可以下载包含已完成的项目、 代码和从以下位置在本演练中的其他文件的示例： [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369)。  
+> 示例工作流的一系列，请参阅[SharePoint 工作流示例](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)。  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练的开发计算机上：  
