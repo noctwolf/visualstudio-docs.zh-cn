@@ -66,4 +66,5 @@
 # [辅助功能](accessibility.md)
 
 # [疑难解答](troubleshooting.md)
+## [Visual Studio 客户体验改善计划](visual-studio-experience-improvement-program.md)
 ## [报告问题](report-a-problem.md)
