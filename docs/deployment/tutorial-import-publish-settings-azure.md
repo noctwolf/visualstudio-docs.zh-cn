@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2cf6c17f3017bb1021423b19b32b36749fe0744d
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>发布到 Azure App Service 应用程序导入 Visual Studio 中发布设置
 
@@ -33,11 +33,11 @@ ms.lasthandoff: 05/11/2018
 发布设置文件 (*\*.publishsettings*) 不同于发布配置文件 (*\*.pubxml*) 在 Visual Studio 中创建。 发布设置文件创建的 Azure App Service，然后可以导入 Visual Studio。
 
 > [!NOTE]
-> 如果你只需复制 Visual Studio 发布配置文件 (*\*.pubxml*文件) 从 Visual Studio 的到另一个安装，您可以找到的发布配置文件，  *\<profilename\>.pubxml*中 *\\< projectname\>\Properties\PublishProfiles*用于托管的项目类型的文件夹。 对于网站，查看 *\App_Data*文件夹。 发布配置文件是 MSBuild XML 文件。
+> 如果你只需复制 Visual Studio 发布配置文件 (*\*.pubxml*文件) 从 Visual Studio 的到另一个安装，您可以找到的发布配置文件，  *\<profilename\>.pubxml*中 *\\< projectname\>\Properties\PublishProfiles*用于托管的项目类型的文件夹。 对于网站，查看*\App_Data*文件夹。 发布配置文件是 MSBuild XML 文件。
 
 ## <a name="prerequisites"></a>系统必备
 
-* 你必须安装 Visual Studio 和**ASP.NET**和 **.NET Framework**开发工作负荷。 对于.NET Core 应用，你还需要 **.NET 核心**工作负荷。
+* 你必须安装的 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**开发工作负荷。 对于.NET Core 应用，你还需要 **.NET 核心**工作负荷。
 
     如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
 
@@ -92,21 +92,7 @@ ms.lasthandoff: 05/11/2018
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>导入 Visual Studio 中的发布设置和部署
 
-1. 在计算机上必须在 Visual Studio 中打开 ASP.NET 项目，右键单击解决方案资源管理器中的项目并选择**发布**。
-
-1. 如果你之前配置任何发布的配置文件，**发布**窗格中显示。 单击**创建新的配置文件**。
-
-1. 在**选取发布目标**对话框中，单击**导入配置文件**。
-
-    ![选择发布](../deployment/media/tutorial-publish-tool-import-profile.png)
-
-1. 导航到你在上一节中创建的发布设置文件的位置。
-
-1. 在**导入发布设置文件**对话框中，选择你在上一节中创建的配置文件，然后单击**打开**。
-
-1. 选择一个两个导入配置文件，然后单击**发布**。
-
-    Visual Studio 开始部署过程中，并且输出窗口会显示进度和结果。
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>后续步骤
 

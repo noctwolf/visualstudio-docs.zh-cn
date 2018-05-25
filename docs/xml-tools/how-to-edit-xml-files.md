@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e35baa6d6d7c5cba696ab7b5e0bb57dd722b5d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3754bcf87d77a3a67801ef7f9df8e07dc687b052
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-edit-xml-files"></a>如何：编辑 XML 文件
+# <a name="how-to-edit-xml-files"></a>如何： 编辑 XML 文件
 
-“XML 编辑器”是 XML 文件的新编辑器。 该编辑器可以用于独立的 XML 文件，也可以用于与 Visual Studio 项目关联的文件。 XML 编辑器与以下文件扩展名关联：.config、.dtd、.xml、.xsd、.xdr、.xsl、.xslt 和 .vssettings。 “XML 编辑器”还与任何其他没有注册特定编辑器并且包含 XML 或 DTD 内容的文件类型关联。
+“XML 编辑器”是 XML 文件的新编辑器。 该编辑器可以用于独立的 XML 文件，也可以用于与 Visual Studio 项目关联的文件。 XML 编辑器是与以下文件扩展名关联： *.config*， *.dtd*， *.xml*， *.xsd*， *.xdr*， *.xsl*， *.xslt*，和 *.vssettings*。 “XML 编辑器”还与任何其他没有注册特定编辑器并且包含 XML 或 DTD 内容的文件类型关联。
 
 > [!NOTE]
 > XHTML 文档由“HTML 编辑器”处理。
@@ -70,5 +70,5 @@ ms.lasthandoff: 04/26/2018
 ## <a name="see-also"></a>请参阅
 
 - [XML 编辑器](../xml-tools/xml-editor.md)
-- [“属性”窗口 -> XML 文档属性](../xml-tools/xml-document-properties-properties-window.md)
-- [如何：从 XML 文档创建 XML 架构](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [XML 文档属性，属性窗口](../xml-tools/xml-document-properties-properties-window.md)
+- [如何： 从 XML 文档创建 XML 架构](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

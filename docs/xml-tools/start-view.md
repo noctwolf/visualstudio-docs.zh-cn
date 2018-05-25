@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1638e888f1185df63b1c536a0c63b374587d7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="start-view"></a>起始视图
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="watermark"></a>水印
 
-水印窗格包含指向所有 XSD 设计器视图、XML 编辑器和 XML 架构资源管理器的链接的列表。 如果架构集有错误，则列表的末尾会显示以下文本：“请使用‘错误列表’查看和修复架构集中的错误”[Use the Error List to view and fix the errors in the set]。
+水印窗格包含指向所有 XSD 设计器视图，XML 编辑器的链接的列表和**XML 架构资源管理器**。 如果架构集有错误，则列表的末尾会显示以下文本：“请使用‘错误列表’查看和修复架构集中的错误”[Use the Error List to view and fix the errors in the set]。
 
 ## <a name="schema-set-details"></a>架构集详细信息
 
@@ -42,9 +42,9 @@ ms.lasthandoff: 04/26/2018
 
 |选项|描述|
 |------------|-----------------|
-|**显示起始视图**|切换到起始视图。 此视图可以通过使用键盘快捷方式访问： **CTRL + 1**。|
-|**显示内容模型视图**|切换到内容模型视图。 此视图可以通过使用键盘快捷方式访问： **CTRL + 2**。|
-|**显示关系图视图**|切换到图形视图。 此视图可以通过使用键盘快捷方式访问： **CTRL + 3**。|
+|**显示起始视图**|切换到起始视图。 此视图可以通过使用键盘快捷方式访问： **Ctrl**+**1**。|
+|**显示内容模型视图**|切换到内容模型视图。 此视图可以通过使用键盘快捷方式访问： **Ctrl**+**2**。|
+|**显示关系图视图**|切换到图形视图。 此视图可以通过使用键盘快捷方式访问： **Ctrl**+**3**。|
 
 ## <a name="see-also"></a>请参阅
 

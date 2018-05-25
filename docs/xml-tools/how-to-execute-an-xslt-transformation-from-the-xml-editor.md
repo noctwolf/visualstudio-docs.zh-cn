@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74432b7807f901253646f28a3e1bf4664f673326
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 892f82d64bb022c20c786a996bf9f89cf557b4c2
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>如何：在 XML 编辑器中执行 XSLT 转换
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>如何： 从 XML 编辑器中执行 XSLT 转换
 
 通过“XML 编辑器”可以将 XSLT 样式表与 XML 文档关联，执行转换，以及查看输出。 由 XSLT 转换生成的输出显示在新的文档窗口中。
 
-**输出**属性指定输出文件名。 如果**输出**属性为空白，则在临时目录中生成一个文件名。 文件扩展名基于样式表中的 `xsl:output` 元素，可以是 .xml、.txt 或 .htm。
+**输出**属性指定输出文件名。 如果**输出**属性为空白，则在临时目录中生成一个文件名。 文件扩展名基于`xsl:output`元素以您的方式工作表，可以是。*xml*，。*txt*或。*htm*。
 
-如果**输出**属性指定的文件名为.htm 或.html 扩展，XSLT 输出预览使用[!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)]Internet 资源管理器。 所有其他文件扩展名将使用 [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio 选择的默认编辑器打开。 例如，如果文件扩展名为 .xml，Visual Studio 将使用“XML 编辑器”。
+如果**输出**属性指定与中的文件名。*htm*或。*html*扩展，XSLT 输出将预览使用[!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)]Internet 资源管理器。 所有其他文件扩展名将使用 [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio 选择的默认编辑器打开。 例如，如果文件扩展名。*xml*，Visual Studio 将使用 XML 编辑器。
 
 ## <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>从 XML 文档执行 XSLT 转换
 

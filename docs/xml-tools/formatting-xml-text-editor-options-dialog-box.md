@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1046655812bf88f51af7590fd1b39ccea11f8eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="formatting-xml-text-editor-options-dialog-box"></a>格式化，XML，文本编辑器，“选项”对话框
+# <a name="formatting-xml-text-editor-options-dialog-box"></a>格式设置，XML，文本编辑器，选项对话框
 
 使用此对话框可以指定“XML 编辑器”的格式化设置。 你可以访问**选项**对话框**工具**菜单。
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/26/2018
 </item>
 ```
 
-## <a name="auto-reformat"></a>自动重新格式化
+## <a name="auto-reformat"></a>自动重新设置格式
  **在从剪贴板粘贴时**
 
  重新格式化从剪贴板粘贴的 XML 文本。
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/26/2018
 
  在完成结束标记时重新格式化元素。
 
-## <a name="mixed-content"></a>混合内容
+## <a name="mixed-content"></a>混合的内容
  **默认情况下保留混合的内容**
 
  确定编辑器是否重新格式化混合内容。 默认情况下，编辑器尝试重新格式化混合内容，除非在 `xml:space="preserve"` 范围内找到该内容。
@@ -67,5 +67,5 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>请参阅
 
-- [“属性”窗口 -> XML 文档属性](../xml-tools/xml-document-properties-properties-window.md)
-- [“XML 编辑器”的组件](../xml-tools/xml-editor-components.md)
+- [XML 文档属性，属性窗口](../xml-tools/xml-document-properties-properties-window.md)
+- [XML 编辑器组件](../xml-tools/xml-editor-components.md)

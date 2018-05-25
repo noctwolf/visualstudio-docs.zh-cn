@@ -28,11 +28,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c74fe2b6f145dd88acbc3bc11d66201acbffd5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4dff9c5f8602f1e11ef020400a11d7d165b23b04
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="custom-task-panes"></a>自定义任务窗格
   任务窗格是一种用户界面面板，通常停靠在 Microsoft Office 应用程序中窗口的一侧。 自定义任务窗格为你提供了一钟方法，使你可以创建自己的任务窗格并为用户提供熟悉的界面来访问你的解决方案的功能。 例如，界面中可以包含运行代码以修改文档或显示来自数据源的数据的控件。  
@@ -85,7 +85,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="access-the-application-from-the-task-pane"></a>从任务窗格中访问应用程序  
  如果想要通过用户控件实现应用程序的自动化，则可以通过在代码中使用 `Globals.ThisAddIn.Application` 来直接访问对象模型。 静态 `Globals` 类提供对 `ThisAddIn` 对象的访问权限。 此对象的 `Application` 字段是进入应用程序对象模型的入口点。  
   
- 有关详细信息`Application`字段`ThisAddIn`对象，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。有关演示如何实现从自定义任务窗格应用程序自动化的演练，请参阅[演练： 实现应用程序从自定义任务窗格自动化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。 有关详细信息`Globals`类，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
+ 有关详细信息`Application`字段`ThisAddIn`对象，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。有关演示如何实现从自定义任务窗格应用程序自动化的演练，请参阅[演练： 从自定义任务窗格应用程序自动](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。 有关详细信息`Globals`类，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>管理任务窗格的用户界面  
  创建任务窗格之后，可以使用 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象的属性和事件来控制任务窗格的用户界面，并在用户更改任务窗格时进行响应。  
@@ -142,16 +142,11 @@ ms.lasthandoff: 05/17/2018
  ![视频链接](../vsto/media/playvideo.gif "视频链接")相关的视频演示，请参阅[如何在 Word VSTO 外接程序中的实现管理任务窗格？](http://go.microsoft.com/fwlink/?LinkId=136781)。  
   
 ##  <a name="Outlook"></a> Outlook  
- 为 Outlook 创建自定义任务窗格时，自定义任务窗格与特定资源管理器或检查器窗口关联。 资源管理器是用于显示文件夹内容的窗口，检查器是用于显示诸如电子邮件或任务等项的窗口。  
+ 为 Outlook 创建自定义任务窗格时，自定义任务窗格与特定资源管理器或检查器窗口关联。 资源管理器是用于显示文件夹的内容的窗口和检查器是用于显示诸如电子邮件或任务等项的窗口。  
   
  如果希望为多个资源管理器或检查器窗口显示自定义任务窗格，则需要在资源管理器或检查器窗口打开时创建自定义任务窗格的新实例。 为此，请处理在创建资源管理器或检查器窗口时引发的事件，然后在事件处理程序中创建任务窗格。 还可以处理资源管理器和检查器事件以隐藏或显示任务窗格，具体情况视哪个窗口处于可见状态而定。  
   
  若要将任务窗格与特定的资源管理器或检查器相关联，请使用<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>方法来创建任务窗格，并将传递<xref:Microsoft.Office.Interop.Outlook.Explorer>或<xref:Microsoft.Office.Interop.Outlook.Inspector>对象传递给*窗口*参数。 有关创建自定义任务窗格的详细信息，请参阅[自定义任务窗格概述](../vsto/custom-task-panes.md)。  
-  
- 有关演示如何创建每个打开的电子邮件的任务窗格的演练，请参阅[演练： 在 Outlook 中显示的电子邮件消息的自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
-  
-### <a name="outlook-events"></a>Outlook 事件  
- 若要监视资源管理器窗口的状态，你可以处理以下与资源管理器相关的事件：  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   

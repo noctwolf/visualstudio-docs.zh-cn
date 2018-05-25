@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c6980eda6e0f710821cf24cbf3ace01ffa98b54
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f33fc5b48b9fd6b1cc08570e62e73f05fd19e70
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>如何：从 XML 文档创建 XML 架构
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>如何： 从 XML 文档创建 XML 架构
 
 使用“XML 编辑器”可以从 XML 文档创建 XML 架构定义语言 (XSD) 架构。 XML 实例文档通过以下方式确定如何生成架构：
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 
 有关架构推断引擎的详细信息，请参阅[推断 XML 架构](/dotnet/standard/data/xml/inferring-an-xml-schema)。
 
-## <a name="to-create-an-xml-schema"></a>创建 XML 架构
+## <a name="to-create-an-xml-schema"></a>若要创建 XML 架构
 
 1.  将 XML 实例文档加载到“XML 编辑器”中。
 

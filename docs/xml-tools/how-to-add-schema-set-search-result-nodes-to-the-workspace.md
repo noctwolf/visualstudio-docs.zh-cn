@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9b260c6b0e63801134c3f15eabab5b13e2926e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6629aef7549a78f7cfdb73bb6d7ee0be3ac7412
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>如何：将架构集搜索结果节点添加到工作区
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>如何： 向工作区中添加架构集搜索结果节点
 
-本主题介绍如何将 XML 架构资源管理器中作为关键字搜索结果突出显示的节点添加到工作区中。
+本主题说明如何添加在中突出显示的节点**XML 架构资源管理器**作为关键字搜索工作区中的结果。
 
 > [!NOTE]
 > 只能将全局节点可以添加到[工作区](../xml-tools/xml-schema-designer-workspace.md)。
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/26/2018
 
      ![XML 架构资源管理器关键字搜索](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     搜索结果将突出显示在 XML 架构资源管理器中，并用垂直滚动条上的刻度标记。
+     搜索结果将以突出显示**XML 架构资源管理器**和由垂直滚动条上的刻度标记。
 
 3.  向工作区添加搜索结果，通过单击**将突出显示的节点添加到工作区**摘要结果窗格上的按钮。
 

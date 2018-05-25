@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 010cdbbb23b1e376ec12e7a6a6a903664a069d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 487cb4fe5ea15c2186f9284c557a1e9377ac801f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>如何：从 XML 架构资源管理器向工作区添加节点
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>如何： 从 XML 架构资源管理器将节点添加到工作区
 
-本主题说明如何将节点添加到[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)从 XML 架构资源管理器。 这可以通过将节点从 XML 架构资源管理器拖放到 XSD 设计器视图，或使用 XML 架构资源管理器的上下文菜单来实现。 还可以添加由于 XML 架构资源管理器执行的搜索而突出显示的节点。 有关详细信息，请参阅[如何： 添加架构设置搜索结果节点到工作区](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)。
+本主题说明如何将节点添加到[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)从**XML 架构资源管理器**。 这可以通过拖放的节点来实现**XML 架构资源管理器**放到 XSD 设计器视图，或通过使用**XML 架构资源管理器的**上下文菜单。 你还可以添加作为执行的搜索结果突出显示的节点**XML 架构资源管理器**。 有关详细信息，请参阅[如何： 向工作区中添加架构集搜索结果节点](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)。
 
 > [!NOTE]
 > 只能将全局节点可以添加到[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)。
 
-## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>通过 XML 资源管理器上下文菜单添加节点
+## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>若要添加节点通过 XML 资源管理器上下文菜单
 
 1.  按照中的步骤[如何： 创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
 
@@ -33,11 +33,11 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>将节点拖放到视图
 
-1.  在图形视图中右击 `PurchaseOrderType` 节点。 选择**在 XML 架构资源管理器中显示**。
+1.  右键单击`PurchaseOrderType`关系图视图中的节点。 选择**在 XML 架构资源管理器中显示**。
 
-     该节点在 XML 架构资源管理器中突出显示。
+     节点中会突出显示**XML 架构资源管理器**。
 
-2.  右键单击`PurchaseOrderType`节点在 XML 架构资源管理器，选择**显示所有引用**。
+2.  右键单击`PurchaseOrderType`中的节点**XML 架构资源管理器**和选择**显示所有引用**。
 
      `purchaseOrder` 节点将突出显示。
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/26/2018
 
      ![XML 架构资源管理器关键字搜索](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     搜索结果将突出显示在 XML 架构资源管理器中，并用垂直滚动条上的刻度标记。
+     搜索结果将以突出显示**XML 架构资源管理器**和由垂直滚动条上的刻度标记。
 
 2.  向工作区添加搜索结果，通过单击**将突出显示的节点添加到工作区**摘要结果窗格上的按钮。
 

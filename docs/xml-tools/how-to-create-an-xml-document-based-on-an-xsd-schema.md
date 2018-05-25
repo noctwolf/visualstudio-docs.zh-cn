@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ec095bd3228eb2291f77bf9fadceb0b74d8a37
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何：基于 XSD 架构创建 XML 文档
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何： 创建基于 XSD 架构的 XML 文档
 
 **生成示例 XML**功能将生成基于 XML 架构 (XSD) 文件的示例 XML 文件。
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  在[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)，右键单击`PurchaseOrder`全局元素。 选择**生成示例 XML**。
 
-     在您选择此选项后，将生成使用以下示例 XML 内容的 PurchaseOrder.xml 文件并在“XML 编辑器”中打开该文件：
+     当你选择此选项，PurchaseOrder。*xml*将生成包含以下示例 XML 内容的文件，然后将其在 XML 编辑器中打开：
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

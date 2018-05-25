@@ -21,11 +21,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3dd4bd7c2b473b4bb48481fee6a991dde748eb26
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7b7461ba184850ba53099327fdad44e3103dcd87
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>扩展 Word 文档和 Excel VSTO 外接程序在运行时中的工作簿
   你可以通过下列方式使用 VSTO 外接程序来自定义 Word 文档和 Excel 工作簿：  
@@ -36,9 +36,9 @@ ms.lasthandoff: 05/22/2018
   
 -   访问由 Word 和 Excel 公开的用于特定文档、工作簿和工作表的应用程序级事件。  
   
- 若要使用此功能，请在扩展文档或工作簿的运行时生成一个对象。  
+ 若要使用此功能，你可以生成扩展文档或工作簿的运行时处的对象。  
   
- **适用于：** 本主题中的信息适用于以下应用程序的 VSTO 外接程序项目：Excel 和 Word。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **适用于：** 这篇文章中的信息适用于以下应用程序 VSTO 外接程序项目： Excel 和 Word。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>在 VSTO 外接程序中生成扩展的对象  
  *扩展对象* 是由 Visual Studio Tools for Office Runtime 提供的类型的实例，该运行时可将功能添加到存在于 Word 或 Excel 对象模型中的本机对象（称为 *本机 Office 对象*）。 若要生成 Word 或 Excel 对象的扩展对象，请使用 `GetVstoObject` 方法。 首次调用`GetVstoObject`方法为指定的 Word 或 Excel 对象，它将返回一个扩展指定的对象的新对象。 每次调用方法并指定相同 Word 或 Excel 对象时，它将返回相同的扩展对象。  
@@ -76,7 +76,7 @@ ms.lasthandoff: 05/22/2018
      [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]  
   
 ### <a name="generate-listobject-host-controls"></a>生成 ListObject 主机控件  
- 当使用 `GetVstoObject` 方法扩展 <xref:Microsoft.Office.Interop.Excel.ListObject> 时，该方法将返回一个 <xref:Microsoft.Office.Tools.Excel.ListObject>。 <xref:Microsoft.Office.Tools.Excel.ListObject> 具有原始 <xref:Microsoft.Office.Interop.Excel.ListObject>的所有功能，但它也有附加功能，例如可以通过使用 Windows 窗体数据绑定模型绑定到数据。 有关详细信息，请参阅[ListObject 控件](../vsto/listobject-control.md)。  
+ 当使用 `GetVstoObject` 方法扩展 <xref:Microsoft.Office.Interop.Excel.ListObject> 时，该方法将返回一个 <xref:Microsoft.Office.Tools.Excel.ListObject>。 <xref:Microsoft.Office.Tools.Excel.ListObject>具有的所有原始功能<xref:Microsoft.Office.Interop.Excel.ListObject>。 它也有附加功能，并可以通过使用 Windows 窗体数据绑定模型绑定到数据。 有关详细信息，请参阅[ListObject 控件](../vsto/listobject-control.md)。  
   
 #### <a name="to-generate-a-host-control-for-a-listobject"></a>若要为 ListObject 生成主机控件  
   
@@ -86,9 +86,9 @@ ms.lasthandoff: 05/22/2018
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]  
   
 ###  <a name="AddControls"></a> 将托管的控件添加到文档和工作表  
- 在生成 <xref:Microsoft.Office.Tools.Word.Document> 或 <xref:Microsoft.Office.Tools.Excel.Worksheet>后，你可以将控件添加到这些扩展对象表示的文档或工作表。 若要执行此操作，使用的控件属性<xref:Microsoft.Office.Tools.Word.Document>或<xref:Microsoft.Office.Tools.Excel.Worksheet>。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 在生成 <xref:Microsoft.Office.Tools.Word.Document> 或 <xref:Microsoft.Office.Tools.Excel.Worksheet>后，你可以将控件添加到这些扩展对象表示的文档或工作表。 若要添加控件，请使用`Controls`属性<xref:Microsoft.Office.Tools.Word.Document>或<xref:Microsoft.Office.Tools.Excel.Worksheet>。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
- 可以添加 Windows 窗体控件或 *主机控件*。 主机控件是由包装 Word 或 Excel 主互操作程序集中一个相应控件的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 所提供的控件。 主机控件可公开基础本机 Office 对象的所有行为，但它还可引发事件并能通过使用 Windows 窗体数据绑定模型绑定到数据。 有关详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
+ 可以添加 Windows 窗体控件或 *主机控件*。 主机控件是由包装 Word 或 Excel 主互操作程序集中一个相应控件的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 所提供的控件。 主机控件可公开的所有基础本机 Office 对象的行为。 它还可引发事件并可以通过使用 Windows 窗体数据绑定模型绑定到数据。 有关详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
   
 > [!NOTE]  
 >  不能通过使用 VSTO 外接程序将 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控件添加到工作表，或是将 <xref:Microsoft.Office.Tools.Word.XMLNode> 或 <xref:Microsoft.Office.Tools.Word.XMLNodes> 控件添加到文档。 不能以编程方式添加这些主机控件。 有关详细信息，请参阅[主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
@@ -102,25 +102,25 @@ ms.lasthandoff: 05/22/2018
  当在 VSTO 外接程序中仅使用本机 Office 对象时，必须处理这些应用程序级的事件，然后编写附加代码以确定引发该事件的文档是否为你已自定义的文档。 主机项可提供这些文档级事件，因此，更易于处理特定文档的事件。 你可以生成一个主机项，然后处理该主机项的事件。  
   
 ### <a name="example-that-uses-native-word-objects"></a>使用本机 Word 对象的示例  
- 以下代码示例演示了如何处理 Word 文档的应用程序级事件。 `CreateDocument` 方法可创建一个新文档，然后定义一个 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件处理程序，以防止保存此文档。 由于这是一个为 <xref:Microsoft.Office.Interop.Word.Application> 对象引发的应用程序级事件，因此，事件处理程序必须将 `Doc` 参数与 `document1` 对象进行比较，以确定 `document1` 是否表示保存的文档。  
+ 以下代码示例演示了如何处理 Word 文档的应用程序级事件。 `CreateDocument` 方法可创建一个新文档，然后定义一个 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件处理程序，以防止保存此文档。 事件是一个应用程序级事件，则会针对引发<xref:Microsoft.Office.Interop.Word.Application>对象，并且事件处理程序必须进行比较`Doc`参数`document1`对象确定如果`document1`表示保存的文档。  
   
- [!code-vb[Trin_WordAddInDynamicControls#12](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#12)]
+ [!code-vb[Trin_WordAddInDynamicControls #12](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#12)]
  [!code-csharp[Trin_WordAddInDynamicControls#12](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#12)]  
   
 ### <a name="examples-that-use-a-host-item"></a>使用主机项的示例  
- 以下代码示例通过处理 <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> 主机项的 <xref:Microsoft.Office.Tools.Word.Document> 事件简化了此过程。 这些示例中的 `CreateDocument2` 方法生成了扩展 <xref:Microsoft.Office.Tools.Word.Document> 对象的 `document2` ，然后定义了一个 <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> 事件处理程序，防止保存该文档。 由于此事件处理程序仅在 `document2` 保存后才会被调用，因此该事件处理程序可以取消保存操作而无需执行任何额外操作来验证保存了哪个文档。  
+ 以下代码示例通过处理 <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> 主机项的 <xref:Microsoft.Office.Tools.Word.Document> 事件简化了此过程。 `CreateDocument2`这些示例中的方法将生成<xref:Microsoft.Office.Tools.Word.Document>扩展`document2`对象，然后定义<xref:Microsoft.Office.Tools.Word.Document.BeforeSave>防止文档保存的事件处理程序。 事件处理程序调用时，才`document2`会保存，并且可以取消保存操作而无需执行任何额外操作来验证保存了哪个文档。  
   
  以下代码示例演示了此任务。  
   
- [!code-vb[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
+ [!code-vb[Trin_WordAddInDynamicControls #13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]  
   
 ##  <a name="HasVstoObject"></a> 确定是否已扩展了 Office 对象  
- 若要确定是否为特定的本机 Office 对象生成了扩展对象，请使用 `HasVstoObject` 方法。 如果已生成了扩展对象，则此方法将返回 **true** ，否则将返回 **false**。  
+ 若要确定是否为特定的本机 Office 对象生成了扩展对象，请使用 `HasVstoObject` 方法。 此方法返回**true**如果已生成了扩展的对象。  
   
  使用 `Globals.Factory.HasVstoMethod` 方法。 在希望为扩展对象测试的本机 Word 或 Excel 对象中传递，如 <xref:Microsoft.Office.Interop.Word.Document> 或 <xref:Microsoft.Office.Interop.Excel.Worksheet>。  
   
- 当希望仅在指定 Office 对象包括扩展对象的情况下运行代码时，可以使用 `HasVstoObject` 方法。 例如，如果你有一个可处理 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的 Word VSTO 外接程序用来在文档保存前从其中删除托管代码，则可以使用 `HasVstoObject` 方法来确定该文档是否已被扩展。 如果尚未扩展该文档，则它不能包含托管控件，因此，事件处理程序可以不用清理文档上的控件就直接返回。  
+ 当希望仅在指定 Office 对象包括扩展对象的情况下运行代码时，可以使用 `HasVstoObject` 方法。 例如，如果你有 Word VSTO 外接程序中处理<xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>事件要从文档中删除托管的控件，则在保存前，请使用`HasVstoObject`方法来确定该文档是否已扩展。 如果尚未扩展该文档，它不能有托管控件和事件处理程序可以不用清理文档上的控件返回。  
   
 ## <a name="see-also"></a>请参阅  
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   

@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 5f731e5d40205776682e706aa4e32d988a76f0f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b3cfe8d0af7bebac5bce48e82b4237de071a41d8
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入门： 使用 Visual Studio 调试器调试 ASP.NET
 
@@ -41,7 +41,7 @@ Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试
 
 1. 在解决方案资源管理器，打开 About.cshtml.cs （在下 Pages/About.cshtml) 并将下面的代码
 
-    ```c#
+    ```csharp
     public void OnGet()
     {
         Message = "Your application description page.";
@@ -50,7 +50,7 @@ Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试
 
     替换为此代码：
 
-    ```c#
+    ```csharp
     public void OnGet()
     {
         LinkedList<int> result = doWork();
