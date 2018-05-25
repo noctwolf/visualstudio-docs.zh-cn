@@ -23,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b153f5e411cabc8975ad1a2dca1ed212372b63ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d49d2b2b4f69cb20a87c50a0a7e0dc9791eb42ec
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“常规”
 **工具 > 选项 > 调试 > 常规**页，可以设置以下选项：  
@@ -94,11 +94,11 @@ ms.lasthandoff: 04/18/2018
 - **允许源服务器中的部分信任程序集 （仅限托管）**  
     如果启用源服务器支持，此设置会重写不为部分信任的程序集检索源的默认行为。  
 
-- **启用源链接支持**  
+**启用源链接支持**  
     指示 Visual Studio 调试器，以下载包含源链接信息的.pdb 文件的源文件。 有关源链接的详细信息，请参阅[源链接规范](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md)。
 
     > [!IMPORTANT]
-    >  由于源链接将下载文件，使用 http 或 https，请确保你信任的.pdb 文件。  
+    >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
 **为突出显示整个行断点和当前语句 （c + +）**  
 调试器突出显示断点或当前语句时，会突出显示整个行。  
@@ -115,7 +115,7 @@ ms.lasthandoff: 04/18/2018
 **取消 JIT 优化在模块加载 （仅限托管）**  
 如果附加调试器，则在加载模块并编译 JIT 后，禁用托管代码的 JIT 优化。 禁用优化可能更易于调试某些问题，尽管这会降低性能。 如果正在使用“仅我的代码”，则禁用 JIT 优化会导致非用户代码显示为用户代码（“我的代码”）。 有关详细信息，请参阅[JIT 优化和调试](../debugger/jit-optimization-and-debugging.md)。
 
-**启用 JavaScript 调试 asp.net （Chrome 和 IE）**启用 ASP.NET 应用程序脚本调试器。 在 Chrome 中的第一次使用，你可能需要登录到第一次使用，以启用你已安装的 Chrome 扩展上的浏览器。 禁用此选项以恢复到旧行为。    
+**启用 JavaScript 调试 asp.net （Chrome 和 IE）** 启用 ASP.NET 应用程序脚本调试器。 在 Chrome 中的第一次使用，你可能需要登录到第一次使用，以启用你已安装的 Chrome 扩展上的浏览器。 禁用此选项以恢复到旧行为。    
 
 **加载 dll 导出**  
 加载 DLL 导出表。 处理 Windows 消息、Windows 过程 (WindowProc)、COM 对象、封送或不具有其符号的任何 DLL 时，DLL 导出表中的符号信息将很有用。 读取 DLL 导出信息会占用一些系统开销。 因此，默认情况下此功能被禁用。  

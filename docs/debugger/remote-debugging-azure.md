@@ -1,7 +1,7 @@
 ---
 title: 远程调试在 IIS 和 Azure 上的 ASP.NET Core |Microsoft 文档
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: c95a91ecd057bfec7af5e9b932d4326cdcab9270
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 202e9ce6e0a53c6967ebe1bacaa6553a1241298e
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 在 Azure 中的 IIS 上的远程调试 ASP.NET 核心
 
@@ -67,13 +67,17 @@ ms.lasthandoff: 05/11/2018
 
 1. 在 Visual Studio 中，右键单击项目节点并选择**发布**。
 
-2. 选择**Microsoft Azure App Service**从**发布**对话框中，选择**新建**，并按照提示来发布。
+    如果你之前配置任何发布的配置文件，**发布**窗格中显示。 单击**新的配置文件**。
+
+1. 选择**Azure App Service**从**发布**对话框中，选择**新建**，并按照提示来发布。
 
     有关详细说明，请参阅[ASP.NET 核心 web 应用部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 
-3. 打开**服务器资源管理器**(**视图** > **服务器资源管理器**)，在 App Service 实例上右键单击，然后选择**附加调试器**.
+    ![发布到 Azure 应用服务](../debugger/media/remotedbg_azure_app_service_profile.png)
 
-4. 在运行的 ASP.NET 应用程序，单击链接到**有关**页。
+1. 打开**服务器资源管理器**(**视图** > **服务器资源管理器**)，在 App Service 实例上右键单击，然后选择**附加调试器**.
+
+1. 在运行的 ASP.NET 应用程序，单击链接到**有关**页。
 
     应在 Visual Studio 中命中断点。
 
@@ -87,19 +91,24 @@ ms.lasthandoff: 05/11/2018
 
 网络安全组中打开端口 80 时，还为远程调试器打开端口 4022。 这样一来，无需以后将其打开。
 
+### <a name="app-already-running-in-iis-on-the-azure-vm"></a>已在 IIS 中运行 Azure 虚拟机上的应用程序？
+
+本文包括基本的 Windows server 上的 IIS 配置设置和部署 Visual Studio 中的应用的步骤。 这些步骤是包含在内，以确保服务器具有所需的组件安装，应用程序可以运行正确，并执行远程调试做好了准备。
+
+* 如果在 IIS 中运行你的应用程序，并且你只是想要下载远程调试器并启动调试，请转到[下载并在 Windows Server 上安装远程工具](#BKMK_msvsmon)。
+
+* 如果需要帮助，确保你的应用程序设置已完成，部署，并正确运行在 IIS 中，以便你能够调试，请按照本主题中的所有步骤。
+
 ### <a name="update-browser-security-settings-on-windows-server"></a>更新 Windows Server 上的浏览器安全设置
 
-具体取决于浏览器安全设置，则可能会节省你时候将以下受信任的站点添加到你的浏览器，以便你可以更快地下载本教程中所述的软件。 可能需要这些站点的访问：
+如果在 Internet 资源管理器 （默认情况下已启用） 启用了增强的安全配置，你可能需要将某些域添加为受信任的站点，以使您能够下载某些 web 服务器组件。 通过转到添加受信任的站点**Internet 选项 > 安全 > 受信任的站点 > 站点**。 添加以下域。
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- visualstudio.com
 - iis.net
 
-如果你使用的 Internet Explorer，则可以通过转到添加受信任的站点**Internet 选项 > 安全 > 受信任的站点 > 站点**。 这些步骤是不同的其他浏览器。 （如果需要从 my.visualstudio.com 下载较旧版本的远程调试器，某些其他受信任的站点所需登录。）
-
-当你下载的软件时，可能会收到请求授予加载各种 web 站点脚本和资源的权限。 在大多数情况下，这些其他资源不需要安装软件。
+当你下载的软件时，可能会收到请求授予加载各种 web 站点脚本和资源的权限。 其中的某些资源不是必需的但若要简化此过程中，单击**添加**出现提示时。
 
 ### <a name="install-aspnet-core-on-windows-server"></a>在 Windows Server 上安装 ASP.NET 核心
 
@@ -110,13 +119,45 @@ ms.lasthandoff: 05/11/2018
 
 3. 重新启动系统 (或执行**net 停止已 /y**跟**net 启动 w3svc**从命令提示符以拾取到系统路径的更改)。
 
-## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>（可选）安装 Web 部署 3.6 用于承载 Windows Server 上的服务器
+## <a name="choose-a-deployment-option"></a>选择部署选项
 
-在某些情况下，它可以是速度更快导入发布设置 Visual Studio 中而不是手动配置部署选项。 如果想要导入发布设置而不是在 Visual Studio 中配置的发布配置文件，请参阅[导入发布设置和将部署到 IIS](../deployment/tutorial-import-publish-settings-iis.md)。 否则为在本主题中保留的并且继续阅读。 如果完成导入文章发布设置和应用程序成功部署，然后返回到本主题和上启动部分中[下载远程工具](#BKMK_msvsmon)。
+如果你需要帮助将应用部署到 IIS，请考虑下列选项：
 
-### <a name="BKMK_install_webdeploy"></a> （可选）安装 Web 部署 Windows Server 上的 3.6
+* 通过在 IIS 中创建发布设置文件和导入 Visual Studio 中的设置部署。 在某些情况下，这是一种将应用部署的快速方法。 当你创建的发布设置文件时，权限会自动设置在 IIS 中。
 
-[!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
+* 部署，发布到本地文件夹，然后将输出的首选方法复制到在 IIS 上的已准备好应用程序文件夹。
+
+## <a name="optional-deploy-using-a-publish-settings-file"></a>（可选）使用发布设置文件进行部署
+
+你可以使用此选项创建发布设置文件并将其导入 Visual Studio。
+
+> [!NOTE]
+> 此部署方法使用 Web 部署。 如果你想要 Web 部署手动配置 Visual Studio 中而不是导入的设置，你可以为托管服务器中安装 Web 部署而不是 Web 部署 3.6 3.6。 但是，如果手动配置 Web 部署，你将需要确保，在服务器上的应用程序文件夹配置正确的值和权限 (请参阅[配置 ASP.NET 网站](#BKMK_deploy_asp_net))。
+
+### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>安装和配置 Web 部署以便承载 Windows Server 上的服务器
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
+
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>在 Windows Server 上的 IIS 中创建的发布设置文件
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
+
+### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>导入 Visual Studio 中的发布设置和部署
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+
+应用程序已成功部署后，它应自动启动。 如果从 Visual Studio 不启动应用程序，请在 IIS 中启动应用程序。 对于 ASP.NET 核心，你需要确保应用程序池字段**DefaultAppPool**设置为**无托管代码**。
+
+1. 在**设置**对话框中，通过单击调试启用**下一步**，选择**调试**配置，然后选择**删除位置的其他文件目标**下**文件发布**选项。
+
+    > [!NOTE]
+    > 如果你选择发布配置，则禁用调试中*web.config*文件在发布时。
+
+1. 单击**保存**，然后重新发布应用程序。
+
+## <a name="optional-deploy-by-publishing-to-a-local-folder"></a>（可选）部署发布到本地文件夹
+
+此选项可用于部署你的应用程序，如果你想要将应用程序复制到 IIS 使用 Powershell，RoboCopy，或者你想要手动复制这些文件。
 
 ### <a name="BKMK_deploy_asp_net"></a> 在 Windows Server 计算机上配置 ASP.NET 网站
 
@@ -132,40 +173,6 @@ ms.lasthandoff: 05/11/2018
 
     如果你看不到具有权限的这些用户之一，请完成步骤将 IUSR 添加为具有读取和执行权限的用户。
 
-### <a name="bkmk_webdeploy"></a> （可选）发布和使用 Web 部署从 Visual Studio 部署应用
-
-如果你安装 Web 部署使用 Web 平台安装程序，你可以部署该应用程序直接从 Visual Studio。
-
-1. 使用提升的权限启动 Visual Studio 并重新打开项目。
-
-    这可能需要使用 Web Deploy 部署应用。
-
-2. 在“解决方案资源管理器” 中，右键单击项目节点并选择“发布” 。
-
-3. 有关**选择发布目标**，选择**Microsoft Azure 虚拟机**单击**发布**。
-
-    ![RemoteDBG_Publish_IISl](../debugger/media/remotedbg_azure_vm_profile.png "RemoteDBG_Publish_IIS")
-
-4. 在对话框中，选择前面创建的 Azure VM。
-
-4. 输入你的 Azure VM 和 IIS 设置的更正配置参数。
-
-    ![RemoteDBG_Publish_WebDeployl](../debugger/media/remotedbg_iis_webdeploy_config.png "RemoteDBG_Publish_WebDeploy")
-
-    如果主机名不能解决当你尝试验证下一步中的步骤**服务器**文本框中，请尝试 IP 地址。 请确保使用在端口 80**服务器**文本框中，并确保端口 80 是在防火墙中打开。
-
-6. 单击**下一步**，选择**调试**配置，然后选择**删除目标位置的其他文件**下**文件发布**选项。
-
-5. 单击**Prev**，然后选择**验证**。 如果连接安装验证，你可以尝试发布。
-
-6. 单击**发布**发布该应用程序。
-
-    输出选项卡将显示是否发布已成功，以及你的浏览器将打开应用程序。
-
-    如果你收到一提的是 Web 部署错误，重新检查 Web 部署安装步骤，请确保[正确的端口已打开](#bkmk_openports)在服务器上。
-
-    如果应用程序已成功部署，但不能正常运行，重新检查 IIS 和 Visual Studio 项目，将使用相同版本的 ASP.NET。 如果，它不是问题，可能有您的 IIS 配置或你的 Web 站点配置的问题。 在 Windows Server 中，打开从 IIS 的网站的更具体的错误消息，然后重新检查之前的步骤。
-
 ### <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>（可选）发布和部署应用程序发布到本地文件夹从 Visual Studio
 
 如果你不使用 Web 部署，必须发布，并使用文件系统或其他工具部署应用。 你可以首先创建包使用文件系统中，然后手动部署包或使用 PowerShell、 RoboCopy 或 XCopy 等其他工具。 在此部分中，我们假定你正在手动复制包，如果你不使用 Web 部署。
@@ -173,6 +180,10 @@ ms.lasthandoff: 05/11/2018
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
 ### <a name="BKMK_msvsmon"></a> 下载并在 Windows Server 上安装远程工具
+
+在本教程中，我们将使用 Visual Studio 2017。
+
+如果你遇到问题，使用远程调试器下载打开页，请参阅[取消阻止文件下载](../debugger/remote-debugging.md#unblock_msvsmon)寻求帮助。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
@@ -200,8 +211,10 @@ ms.lasthandoff: 05/11/2018
     如果你想要使用**查找**按钮，你可能需要为[打开 UDP 端口 3702](#bkmk_openports)服务器上。
 
 5. 勾选“显示所有用户的进程”  。
-6. 键入要快速查找的进程名称的首字母**dotnet.exe** （适用于 ASP.NET Core)。
-    >注意： 对于 ASP.NET Core 应用程序，以前的进程名称是 dnx.exe。
+
+6. 键入要快速查找的进程名称的首字母*dotnet.exe* （适用于 ASP.NET Core)。
+   
+   对于 ASP.NET Core 应用程序，以前的进程名称是*dnx.exe*。
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
 

@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c2b87f9d1b850ce93851d78a8b43420ae473c41
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82d05e481d313a7ba9010fe253756d3f21c345e2
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="xml-editor-intellisense-features"></a>XML 编辑器的 IntelliSense 功能
+# <a name="xml-editor-intellisense-features"></a>XML 编辑器 IntelliSense 功能
 
-XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中提供的其他语言编辑器相提并论。 本节介绍如何使用 XML 架构定义语言 (XSD) 和 XSLT 文档中的 IntelliSense。
+“XML 编辑器”提供了完整的智能感知功能，可与 Visual Studio 中提供的其他语言编辑器相比。 本节介绍如何使用 XML 架构定义语言 (XSD) 和 XSLT 文档中的 IntelliSense。
 
 ## <a name="intellisense-in-an-xsd-document"></a>XSD 文档中的 IntelliSense
  架构与文档关联之后，你获得预期元素下拉列表的随时键入`"<"`或单击**显示对象成员列表**XML 编辑器工具栏上的按钮。 有关如何将架构与 XML 文档相关联的信息，请参阅[XML 文档验证](../xml-tools/xml-document-validation.md)。
@@ -73,14 +73,14 @@ XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中�
 
 -   结束 DTD 声明：`>`
 
-如果从智能感知列表中选择了命名空间限定的元素或特性，并且该元素或特性的命名空间尚不在相应范围内，“XML 编辑器”还可以插入命名空间声明。
+XML 编辑器还能够插入命名空间声明，如果你选择命名空间限定的元素或作用域中尚不存在从智能感知列表和该元素或属性的命名空间的属性。
 
 例如，如果从智能感知列表中选择了 `e:Book` 元素，该元素的前缀绑定到的 `http://books` 命名空间尚未在文档中声明，“XML 编辑器”将为您插入所需的命名空间声明。 以下是生成的 XML 文本：
 
 `<e:Book xmlns:e="http://books"`
 
-## <a name="brace-matching"></a>括号匹配
- “XML 编辑器”提供括号突出显示功能，针对您刚封闭的元素提供即时反馈。 您也可以使用快捷键 (CTRL+]) 从一个括号跳转到匹配的括号。
+## <a name="brace-matching"></a>大括号匹配
+ “XML 编辑器”提供括号突出显示功能，针对您刚封闭的元素提供即时反馈。 你还可以使用键盘快捷方式 (**Ctrl**+**]**) 从一个大括号跳转到匹配的大括号。
 
  “XML 编辑器”对下列项执行此操作：
 
@@ -98,8 +98,8 @@ XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中�
 
 -   特性的左引号和右引号。
 
-## <a name="modifying-the-intellisense-options"></a>修改智能感知选项
- 默认情况下启用智能感知和自动完成功能。 但是，可以通过修改“工具-选项”设置来更改此选项。
+## <a name="modify-the-intellisense-options"></a>修改 IntelliSense 选项
+ 默认情况下启用智能感知和自动完成功能。 但是，你可以更改通过修改你**工具** > **选项**设置。
 
  **自动插入**部分**杂项**页控制以下行为：
 
@@ -109,7 +109,7 @@ XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中�
 |属性引号|在输入新特性名时插入特性值引号。|
 |其他标记|完成注释、CDATA、DOCTYPE、处理指令和其他标记声明。|
 
-#### <a name="to-change-the-auto-completion-behavior"></a>更改自动完成行为
+### <a name="to-change-the-auto-completion-behavior"></a>更改自动完成行为
 
 1.  从“工具”菜单中选择“选项”。
 

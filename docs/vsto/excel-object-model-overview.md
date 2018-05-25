@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f7f15cc3ce8396e4cd10a49a1427f1ba1be76b50
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="excel-object-model-overview"></a>Excel 对象模型概述
   若要开发使用 Microsoft Office Excel 的解决方案，可与由 Excel 对象模型提供的对象进行交互。 本主题介绍最重要的对象：  
@@ -107,7 +107,7 @@ ms.lasthandoff: 05/22/2018
 ### <a name="primary-interop-assembly-reference"></a>主互操作程序集引用  
  Excel PIA 参考文档介绍 Excel 的主互操作程序集中的类型。 从以下位置提供了此文档： [Excel 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189585)。  
   
- 有关设计的 Excel PIA，例如 PIA 中定义如何实现 PIA 中的事件，类和接口之间的差别的详细信息请参阅[的类和接口概述 Office 主互操作程序集中](http://go.microsoft.com/fwlink/?LinkId=189592).  
+ 有关设计的 Excel PIA，例如 PIA 中定义如何实现 PIA 中的事件，类和接口之间的差别的详细信息请参阅[概述类和 Office 主互操作程序集中接口](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
 ### <a name="vba-object-model-reference"></a>VBA 对象模型引用  
  VBA 对象模型引用在 Excel 对象模型被公开到 Visual Basic for Applications (VBA) 代码时记录该对象模型。 有关详细信息，请参阅[Excel 2010 对象模型引用](http://go.microsoft.com/fwlink/?LinkId=199768)。  

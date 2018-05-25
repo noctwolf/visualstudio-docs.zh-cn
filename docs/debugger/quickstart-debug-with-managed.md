@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e895fe9844740fbb3fdd670ff53dfe0b72dbdfb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4dc9c9acfed229e4215c32e2e924ba1601ce88b6
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>快速入门： 使用托管代码中使用 Visual Studio 调试器进行调试
 
@@ -37,7 +37,7 @@ Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试
 
 4. 在 Program.cs 或 Module1.vb，将下面的代码
 
-    ```c#
+    ```csharp
     class Program
     {
         static void Main(string[] args)
@@ -55,7 +55,7 @@ Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试
 
     替换为此代码：
 
-    ```c#
+    ```csharp
     class Program
     {
         private static void doWork()

@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 298cb342b83dd512f591e03a6922a099c127cb3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db635a9bc18a00bcb723a7bf8b66a557434e3e9a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>如何： 创建和编辑 XSD 架构文件
 
@@ -22,11 +22,11 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="to-create-a-new-xml-schema-file"></a>创建新的 XML 架构文件
 
-1. 在 Visual Studio 中，打开**文件**菜单，然后选择**新建** > **文件**。 或者，使用键盘快捷方式 Ctrl+N。
+1. 在 Visual Studio 中，打开**文件**菜单，然后选择**新建** > **文件**。 或者，使用**Ctrl**+**N**键盘快捷方式。
 
 2. 在**新文件**对话框中，选择**XML 架构**，然后选择**打开**。
 
-   将创建新文件。 将在 Visual Studio 中显示起始视图和空的 XML 架构资源管理器窗口。
+   将创建新文件。 起始视图和一个空**XML 架构资源管理器**窗口显示在 Visual Studio。
 
 ## <a name="to-edit-a-file"></a>编辑文件
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/26/2018
 
 2. 复制 XML 架构示例代码从[采购订单架构](../xml-tools/sample-xsd-file-simple-schema.md)并将其以替换默认情况下，已将它们添加到新 XSD 文件的代码粘贴。
 
-   此时，会使用新的架构集对 XML 架构资源管理器进行更新。
+   **XML 架构资源管理器**使用新的架构集中更新。
 
 ## <a name="see-also"></a>请参阅
 

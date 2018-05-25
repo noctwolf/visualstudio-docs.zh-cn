@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b820820a42814eb7169287408200bedd73435ff7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-create-xml-snippets"></a>如何：创建 XML 代码段
+# <a name="how-to-create-xml-snippets"></a>如何： 创建 XML 代码段
 
 “XML 编辑器”可以用于新建 XML 代码段。 编辑器包括名为“Snippet”的 XML 代码段，是用于新建 XML 代码段的代码段样本。
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  在编辑器窗格中右键单击并选择**插入代码段**。
 
-4.  选择**段**从此列表并按 enter 键。
+4.  选择**段**从列表和按**Enter**。
 
 5.  对新的代码段进行所需的更改。
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
 7.  输入新的代码段名称并选择**代码段文件**从**另存为类型**下拉窗口。
 
-8.  使用**将保存在**下拉列表将文件位置更改为 My Documents\Visual Studio 2005 \code Snippets\XML\My XML Snippets 文件夹，然后按**保存**。
+8.  使用**将保存在**下拉列表更改到的文件位置*My Documents\Visual Studio 2005\Code \code Snippets\XML\My XML Snippets*文件夹，然后按**保存**。
 
 ## <a name="snippet-description"></a>代码段说明
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/26/2018
 
  `Expansion`类型确定在调用时是否显示代码段**插入代码段**命令。 `SurroundsWith`类型确定在调用时是否显示代码段**环绕**命令。
 
-### <a name="code-element"></a>Code 元素
+### <a name="code-element"></a>代码元素
 
  `Code` 元素定义要在调用代码段时插入的 XML 文本。
 
@@ -83,7 +83,7 @@ ms.lasthandoff: 04/26/2018
 
 -   $selected$ 是预定义变量。 该变量表示在调用代码段之前在“XML 编辑器”中选择的文本。 设置此变量可以确定所选文本在包围它的代码段中出现的位置。
 
--   $end$ 是预定义变量。 用户按 ENTER 键完成代码段字段的编辑后，此变量将确定移动插入符号 (^) 的目标位置。
+-   $end$ 是预定义变量。 当用户按**Enter**若要完成代码段字段的编辑，此变量确定移动插入符号 (^) 位置。
 
  上面的 `Code` 元素插入以下 XML 文本：
 
@@ -119,6 +119,6 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>请参阅
 
-- [XML 代码片断](../xml-tools/xml-snippets.md)
-- [如何：使用 XML 代码片段](../xml-tools/how-to-use-xml-snippets.md)
-- [如何：从 XML 架构生成 XML 代码片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [XML 代码段](../xml-tools/xml-snippets.md)
+- [如何： 使用 XML 代码段](../xml-tools/how-to-use-xml-snippets.md)
+- [如何： 从 XML 架构生成 XML 代码段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

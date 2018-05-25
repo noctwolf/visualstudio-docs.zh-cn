@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c787431cbdf9f6a9bcb70a87b99b0a566fd0e5ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 317588e4d6c81a13a18c036a040508a1adebafcb
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="xml-schema-designer-workspace"></a>XML 架构设计器工作区
 
@@ -22,19 +22,19 @@ XML 架构设计器（XSD 设计器）是一个图形工具，可帮助您浏览
 
 若要开始浏览您感兴趣的节点，必须将它们添加到工作区中。 工作区在所有视图之间共享。
 
-## <a name="adding-nodes-to-the-workspace"></a>将节点添加到工作区中
+## <a name="add-nodes-to-the-workspace"></a>将节点添加到工作区
 
 可通过以下方法将节点添加到工作区中：
 
 -   中的"架构集详细信息"部分[起始视图](../xml-tools/start-view.md)，单击**添加**全局节点类型旁边的链接。
 
--   将全局节点、文件节点和命名空间节点从 XML 架构资源管理器拖放到三种视图中的任意一种视图中。 有关详细信息，请参阅"拖动和删除节点"一节中的[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)。
+-   全局节点、 文件节点和从命名空间节点拖放**XML 架构资源管理器**拖放到任意三个视图。 有关详细信息，请参阅"拖动和删除节点"一节中的[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)。
 
--   使用 XML 架构资源管理器中的上下文菜单。 有关详细信息，请参阅[上下文菜单](../xml-tools/context-menus-xml-schema-explorer.md)。
+-   使用中的上下文菜单**XML 架构资源管理器**。 有关详细信息，请参阅[上下文菜单](../xml-tools/context-menus-xml-schema-explorer.md)。
 
 -   在 XSD 资源管理器中执行搜索并单击**将突出显示的节点添加到工作区**摘要结果窗格上的按钮。 有关详细信息，请参阅[搜索架构集](../xml-tools/searching-the-schema-set.md)。
 
-## <a name="view-switching"></a>视图切换
+## <a name="switch-views"></a>切换视图
 
 若要切换视图，请使用下列工具之一：
 
@@ -44,4 +44,4 @@ XML 架构设计器（XSD 设计器）是一个图形工具，可帮助您浏览
 
 -   起始视图页上的水印、空内容模型视图上的水印或图形视图上的水印。
 
--   热键：Ctrl+1（起始视图）、Ctrl+2（图形视图）、Ctrl+3（内容模型视图）。
+-   热键： **Ctrl**+**1**起始视图中，为**Ctrl**+**2**对于关系图视图中，和**Ctrl**+**3**内容模型视图。

@@ -1,5 +1,5 @@
 ---
-title: 如何： 将操作窗格添加到 Word 文档或 Excel 工作簿 |Microsoft 文档
+title: 如何： 将操作窗格添加到 Word 文档或 Excel 工作簿
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aeb6fa198f7e7c82e96a97382befc41a2f016d53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebf4896411a46b2c75edd8216bd61623bc9b728f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>如何：向 Word 文档或 Excel 工作簿添加操作窗格
   若要将操作窗格添加到 Microsoft Office Word 文档或 Microsoft Excel 工作簿，首先创建 Windows 窗体用户控件。 然后，用户将控件添加到<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>属性`ThisDocument.ActionsPane`字段 (Word) 或`ThisWorkbook.ActionsPane`你的项目中的字段 (Excel)。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  还可以添加**用户控件**到你的项目的项。 通过生成的类**操作窗格控件**和**用户控件**项在功能上等效。  
   
-4.  从**Windows 窗体**选项卡**工具箱中，**拖动**按钮**拖到控件的控件。  
+4.  从**Windows 窗体**选项卡**工具箱中，** 拖动**按钮**拖到控件的控件。  
   
     > [!NOTE]  
     >  如果控件不可见设计器中，双击**HelloControl**中**解决方案资源管理器**。  
@@ -62,10 +62,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]  
   
-## <a name="adding-the-user-control-to-the-actions-pane"></a>将用户控件添加到操作窗格  
+## <a name="add-the-user-control-to-the-actions-pane"></a>将用户控件添加到操作窗格  
  若要显示操作窗格中，用户将控件添加到<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>属性`ThisDocument.ActionsPane`字段 (Word) 或`ThisWorkbook.ActionsPane`字段 (Excel)。  
   
-#### <a name="to-add-the-user-control-to-the-actions-pane"></a>将用户控件添加到操作窗格  
+### <a name="to-add-the-user-control-to-the-actions-pane"></a>将用户控件添加到操作窗格  
   
 1.  以下代码添加到`ThisDocument`或`ThisWorkbook`作为类级别声明的类 （不添加此代码的方法）。  
   
@@ -81,6 +81,6 @@ ms.lasthandoff: 04/16/2018
  [操作窗格概述](../vsto/actions-pane-overview.md)   
  [演练： 将文本插入到操作窗格中的文档](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [如何： 管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [演练：将文本从操作窗格插入到文档](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [演练： 将文本插入到操作窗格中的文档](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: aeb74bac5196450ec98426727a1456a009adb5c1
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 548b86406ba36a6f46a2dfb3d4d894b5621c298c
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>教程： 调试 Visual Studio 中的托管和本机代码
 
@@ -116,7 +116,7 @@ Visual Studio 允许你启用多个调试器类型在调试时，这称为混合
 
 1. 在*Program.cs*，将默认代码替换为以下代码：
 
-    ```c#
+    ```csharp
     using System;
     using System.Runtime.InteropServices;
     
@@ -183,7 +183,7 @@ Visual Studio 允许你启用多个调试器类型在调试时，这称为混合
 
 1. 在 C# 项目中，打开*Program.cs*和以下代码行中设置断点，通过单击左边距中：
 
-    ```c#
+    ```csharp
     int result = Multiply(7, 7);
     ```
 

@@ -1,23 +1,18 @@
 ---
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.openlocfilehash: 27cff46f5a68ef28f247aa159a2b8be5db56b0fe
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+title: 使用 Web 部署的部署
+description: 部署应用程序使用 Visual Studio 中的 Web 部署
+services: ''
+author: mikejo5000
+ms.service: ''
+ms.topic: include
+ms.date: 05/23/2018
+ms.author: mikejo
+ms.custom: include file
+ms.openlocfilehash: 8c843ffa6abcb7517ebfe7cdfb0e742a5f244e07
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/24/2018
 ---
 如果你安装 Web 部署使用 Web 平台安装程序，你可以部署该应用程序直接从 Visual Studio。
 
@@ -25,26 +20,28 @@ ms.lasthandoff: 10/27/2017
 
     部署使用 Web 部署对应用程序需要管理员权限。
 
-2. 在“解决方案资源管理器” 中，右键单击项目节点并选择“发布” 。
+1. 在“解决方案资源管理器” 中，右键单击项目节点并选择“发布” 。
 
-3. 有关**选择发布目标**，选择**IIS，FTP，等**单击**发布**。
+    如果你之前配置任何发布的配置文件，**发布**窗格中显示。 单击**新的配置文件**。
+
+1. 有关**选择发布目标**，选择**IIS，FTP，等**单击**发布**。
 
     ![RemoteDBG_Publish_IISl](../media/remotedbg_iis_profile.png "RemoteDBG_Publish_IIS")
 
-4. IIS 设置中输入更正配置参数。
+1. IIS 设置中输入更正配置参数。
 
     ![RemoteDBG_Publish_WebDeployl](../media/remotedbg_iis_webdeploy_config.png "RemoteDBG_Publish_WebDeploy")
 
     如果主机名不能解决当你尝试验证下一步中的步骤**服务器**文本框中，请尝试 IP 地址。 包括`http://`作为前缀的**服务器**字段。  请确保使用在端口 80**服务器**文本框中，并确保端口 80 是在防火墙中打开。
 
-6. 单击**下一步**，选择**调试**配置，然后选择**删除目标位置的其他文件**下**文件发布**选项。
+1. 单击**下一步**，选择**调试**配置，然后选择**删除目标位置的其他文件**下**文件发布**选项。
 
     > [!NOTE]
     > 如果你选择发布配置，则禁用调试在 web.config 文件中，在发布时。
 
-5. 单击**Prev**，然后选择**验证**。 如果连接安装验证，你可以尝试发布。
+1. 单击**Prev**，然后选择**验证**。 如果连接安装验证，你可以尝试发布。
 
-6. 单击**发布**发布该应用程序。
+1. 单击**发布**发布该应用程序。
 
     输出选项卡将显示是否发布已成功，以及你的浏览器然后打开应用程序。
 

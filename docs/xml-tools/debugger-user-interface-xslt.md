@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b2767a952c566359b1c61bbdc83060bf905e99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f3d9dafc2911e05fd76aadd5b08ad2327969839
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="debugger-user-interface-xslt"></a>调试程序用户界面 (XSLT)
+# <a name="debugger-user-interface-xslt"></a>调试器用户界面 (XSLT)
 
 本主题介绍调试程序的窗口和对话框。 只讨论具有 XSLT 特定的调试行为的用户界面部分。
 
 有关详细信息，请参阅[调试用户界面参考](../debugger/debugging-user-interface-reference.md)。
 
-## <a name="locals-window"></a>“局部变量”窗口
+## <a name="locals-window"></a>局部变量窗口
  “局部变量”窗口显示在样式表中定义的任何变量的有关信息。 “局部变量”窗口包含三列信息：
 
  **名称**
@@ -45,25 +45,25 @@ ms.lasthandoff: 04/26/2018
 |`position()`|上下文节点相对于上下文大小的位置（或索引号）。|
 |`self::node()`|上下文节点的值。|
 
-## <a name="output-window"></a>输出窗口
+## <a name="output-window"></a>“输出”窗口
  “输出”窗口显示在调试期间出现的任何错误消息或发生的任何安全异常。
 
  XSLT 调试程序使用单独的窗口来显示调试程序输出。 这是用于显示输出的相同窗口**Show XSL Output**命令。
 
 ## <a name="task-list"></a>任务列表
- “任务列表”列出样式表中的所有编译错误。 双击错误可以将光标置于包含错误的行。
+ **任务列表**列出样式表中的所有编译错误。 双击错误可以将光标置于包含错误的行。
 
- “任务列表”包括 XSLT 文件的脚本块中出现的任何错误。
+ **任务列表**包括 XSLT 文件中的脚本块中出现的任何错误。
 
 > [!NOTE]
-> XSLT 调试程序没有任何警告，所以，“任务列表”中从不会出现警告。
+> XSLT 调试程序没有任何警告，所以它们从未出现在**任务列表**。
 
 ## <a name="breakpoints-window"></a>“断点”窗口
  “断点”窗口显示当前项目中设置的所有断点。 如果在该窗口位于视图中时添加断点，该窗口将自动更新，以显示新的断点。
 
  “断点”窗口的操作方式应与其他 Visual Studio 调试程序相同。
 
-## <a name="command-windowimmediate-window"></a>“命令”窗口/“即时”窗口
+## <a name="command-windowimmediate-window"></a>命令窗口 / 即时窗口
  在此版本的 XSLT 调试程序中未实现。
 
 ## <a name="watch-window"></a>监视窗口
@@ -72,9 +72,9 @@ ms.lasthandoff: 04/26/2018
  “监视”窗口中显示的变量针对当前上下文（调用堆栈上最顶部的项）。 如果更改上下文，“监视”窗口将更新，显示为该上下文设置的变量。
 
 ## <a name="call-stack-window"></a>“调用堆栈”窗口
- “调用堆栈”窗口用于查看有关调用堆栈的函数的名称、参数类型和参数值。 仅当正在调试的程序处于中断状态时，才显示调用堆栈信息。
+ **调用堆栈**窗口用于查看调用堆栈、 参数类型和参数值的函数的名称。 仅当正在调试的程序处于中断状态时，才显示调用堆栈信息。
 
- 调用堆栈表示 XSLT 执行所经过的各种上下文。 例如，如果存在一个从模板“a”到模板“b”的调用，模板“a”和模板“b”将出现在“调用堆栈”窗口中，当前上下文处于列表的最顶部。 用户可以查看当前正在执行的查询。
+ 调用堆栈表示 XSLT 执行所经过的各种上下文。 例如，如果没有调用从模板"a"到模板"b"、 模板"a"和模板"b"出现在**调用堆栈**与当前上下文处于列表的最顶端窗口。 用户可以查看当前正在执行的查询。
 
  如果模板在 XSLT 文件中没有名称，将使用 XSLT 处理器生成的名称。
 
@@ -102,4 +102,4 @@ ms.lasthandoff: 04/26/2018
 
 - [调试 XSLT](../xml-tools/debugging-xslt.md)
 - [调试器基础知识](../debugger/debugger-basics.md)
-- [检查自动中的变量和 Visual Studio 中的局部变量窗口](../debugger/autos-and-locals-windows.md)
+- [检查在 Visual Studio 中的自动和局部变量窗口中的变量](../debugger/autos-and-locals-windows.md)
