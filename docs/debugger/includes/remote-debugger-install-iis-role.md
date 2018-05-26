@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: dbc9d727dc412e3d354d806a45c352eef810cd99
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 62bdcd8109263cc86e13484d146e46f8e95c7198
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 05/24/2018
 ---
 这些步骤演示了基本配置的 IIS。 有关详细信息或要安装到 Windows 桌面计算机，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)或[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
@@ -25,6 +25,6 @@ ms.lasthandoff: 01/05/2018
 
 ![在选择服务器角色步骤中选择了“Web 服务器 IIS”角色。](../media/remotedbg-server-roles-ws2012.png)
 
-在“角色服务”步骤中，选择所需 IIS 角色服务，或接受提供的默认角色服务。
+在“角色服务”步骤中，选择所需 IIS 角色服务，或接受提供的默认角色服务。 如果你计划部署使用 Web 部署，请确保**IIS 管理脚本和工具**选择。
 
 继续完成安装的 web 服务器角色和服务的确认步骤。 安装 Web 服务器 (IIS) 角色后无需重启服务器/IIS。
