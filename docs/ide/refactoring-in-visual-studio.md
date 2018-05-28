@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf66eb2bc780d0e67bc51658eda062f620980c47
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 75945e1a3e66951021866370d043a645c8918541
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="refactor-code"></a>重构代码
 
@@ -29,5 +29,5 @@ ms.lasthandoff: 04/26/2018
 
 - [快速操作](../ide/quick-actions.md)
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
-- [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)
+- [代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [预览更改](../ide/preview-changes.md)

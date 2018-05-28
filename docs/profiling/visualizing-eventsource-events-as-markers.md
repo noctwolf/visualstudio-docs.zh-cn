@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb8959aa18741c61e4a6719641645eb9be9ea70
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="visualizing-eventsource-events-as-markers"></a>将 EventSource 事件作为标记可视化
+# <a name="visualize-eventsource-events-as-markers"></a>将 EventSource 事件作为标记可视化
 并发可视化工具可以将 EventSource 事件显示为标记，并且可以控制标记的显示方式。 若要查看 EventSource 标记，请使用[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框注册 ETW 提供程序 GUID。 并发可视化工具具有将 EventSource 事件表示为[标志标记](../profiling/flag-markers.md)、[范围标记](../profiling/span-markers.md)和[消息标记](../profiling/message-markers.md)的默认约定。 可以通过向事件添加自定义字段自定义 EventSource 事件的显示方式。 有关标记的详细信息，请参阅[并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)。 有关 EventSource 事件的详细信息，请参阅 <xref:System.Diagnostics.Tracing>。  
   
 ## <a name="default-visualization-of-eventsource-events"></a>EventSource 事件的默认可视化效果  
@@ -52,7 +52,7 @@ ms.lasthandoff: 04/19/2018
 ### <a name="text"></a>Text  
  如果为事件定义了 printf 类型的格式化文本消息，它将显示为标记的说明。 否则，说明则是该事件的名称和每个负载字段的值。  
   
-## <a name="customizing-visualization-of-eventsource-events"></a>EventSource 事件的自定义可视化效果  
+## <a name="customize-visualization-of-eventsource-events"></a>EventSource 事件的自定义可视化效果  
  如以下各节中所述，可以通过向事件添加合适的字段来自定义 EventSource 事件的显示方式。  
   
 ### <a name="marker-type"></a>标记类型  

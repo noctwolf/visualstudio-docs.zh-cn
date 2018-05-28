@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a091ce71312778353a7f09869d6de45bc394c665
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8b9b85d5bf1bab61fbc59c0f90411c3e70545745
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="profiler-sampling-method-data-views"></a>探查器采样方法数据视图
 本节包含有关使用采样方法生成的探查器数据文件的视图和报告的参考信息。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/19/2018
  [“摘要”视图](../profiling/summary-view-sampling-data.md)  
  列出收集样本时执行频率最高的函数，以及执行单个工作最多的函数。  
   
- [“调用关系树”视图](../profiling/call-tree-view-sampling-data.md)  
+ [“调用树”视图](../profiling/call-tree-view-sampling-data.md)  
  显示层次结构树中各个函数的执行路径。  
   
  [“模块”视图](../profiling/modules-view-sampling-data.md)  

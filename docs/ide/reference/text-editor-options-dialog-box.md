@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22fc0004d076a36675ff6e9f8a9405d9062446d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d746426a5db9a3b71ba3fd3703887f9e4c894ef9
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="text-editor-options-dialog-box"></a>文本编辑器的“选项”对话框
 
@@ -32,4 +32,4 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="see-also"></a>请参阅
 
-[编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)描述了多种代码编辑器使用方式。
+[代码编辑器功能](../../ide/writing-code-in-the-code-and-text-editor.md)描述了使用代码编辑器的多种方式。

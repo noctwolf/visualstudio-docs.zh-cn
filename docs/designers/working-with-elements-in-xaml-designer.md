@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3a3b45d8714c72e588f64cd5c1830cc97b9f136e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 可以使用 XAML 代码或 XAML 设计器向你的应用程序添加控件、布局和形状等元素。 本主题介绍如何在 Visual Studio 或 Blend for Visual Studio 中使用 XAML 设计器中的元素。
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
         -   “置于底层”：将元素一直移到顺序的底层。
 
-     更改属性窗口中“布局”部分的“ZIndex”属性。 对于重叠元素，“ZIndex”属性优先于文档大纲窗口中显示的元素的顺序。 当元素重叠时，“ZIndex”值较小的元素将显示在前面。
+     更改属性窗口中“布局”部分的“ZIndex”属性。 对于重叠元素，“ZIndex”属性优先于文档大纲窗口中显示的元素的顺序。 当元素重叠时，“ZIndex”值较大的元素将显示在前面。
 
 ## <a name="changing-the-alignment-of-an-element"></a>更改元素的对齐方式
  可以通过使用菜单命令或通过将元素拖到对齐线，对齐美工板中的元素。
@@ -74,7 +74,7 @@ ms.lasthandoff: 04/26/2018
 
      当边缘对齐时，将显示“对齐边界”以指示对齐方式。 对齐边界是红色的虚线。 仅当启用了“对齐线对齐”  时，才会显示对齐边界。 有关显示对齐边界的美工板图示，请参阅[使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
 
-## <a name="changing-the-an-elements-margins"></a>更改元素的边距
+## <a name="changing-an-elements-margins"></a>更改元素的边距
  XAML 设计器中的边距决定了美工板上元素周围的空白空间量。 例如，边距指定了元素外边缘与包含该元素的 `Grid` 面板的边界之间的空间量。 边距还指定包含于 `StackPanel` 中的元素之间的空间量。
 
 #### <a name="to-change-an-elements-margins-in-the-properties-window"></a>在“属性”窗口中更改元素边距的步骤

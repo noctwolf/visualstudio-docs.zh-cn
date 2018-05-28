@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 259524aa8f4bb20097f5f5504c890ee7f4cc3b78
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 Express 应用
 本教程介绍如果使用 Node.js 和 Express 进行 Visual Studio 开发，教程会创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="prerequisites"></a>系统必备
 
-* 须安装 Visual Studio 且具有 Node.js 开发工作负载。
+* 须安装 Visual Studio 2017 且具有 Node.js 开发工作负载。
 
     如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
 
@@ -95,6 +95,8 @@ ms.lasthandoff: 04/26/2018
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
+    之前的代码添加标记以动态生成带有标题和欢迎消息的 HTML 页面。 该页面还包含代码，用于显示每当按一个按钮时就会更改的图像。
+
 1. 在“路由”文件夹中，打开 index.js。
 
 1. 在 `router.get` 的调用前添加以下代码：
@@ -110,6 +112,8 @@ ms.lasthandoff: 04/26/2018
     }
     ````
 
+    此代码创建一个数据对象，我们将其传递给动态生成的 HTML 页面。
+
 1. 使用以下代码替换 `router.get` 函数调用：
 
     ```js
@@ -117,14 +121,16 @@ ms.lasthandoff: 04/26/2018
         res.render('index', { title: 'Express', "data" });
     });
     ```
+    
+    之前的代码使用 Express 路由器对象设置当前页并呈现该页，将标题和数据对象传递给页面。
 
-    包含 `res.render` 的代码行中存在错误。 在应用可以运行前需要修复此错误。 下一节将修复此错误。
+    为了演示 Visual Studio 的几个功能，我们在包含 `res.render` 的代码行中包含一个错误。 在应用可以运行前需要修复此错误。 下一节将修复此错误。
 
 ## <a name="use-intellisense"></a>使用 IntelliSense
 
 1. 在 index.js 中，转到包含 `res.render` 的代码行。
 
-1. 在 `data` 字符串后键入 `: get`，IntelliSense 将显示 `getData` 函数。 选择 `getData`。
+1. 将光标置于 `data` 字符串后，键入 `: get`，IntelliSense 将显示 `getData` 函数。 选择 `getData`。
 
     ![使用 IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 

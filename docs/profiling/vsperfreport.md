@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a26af4557d7422126aea805404674bf12630ca
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport 命令行工具可用于创建报表，这些报表使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具分析数据文件。 默认的报表格式为 .csv 文件。  
@@ -45,7 +45,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="symbol-files"></a>符号文件  
  为了显示函数名称和行号等符号信息，VSPerfReport 要求访问被分析组件的符号 (.PDB) 文件以及 Windows 符号文件。 有关详细信息，请参阅[如何：从命令行指定符号文件位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)。  
   
-## <a name="general-report-options"></a>常规报表选项  
+## <a name="general-report-options"></a>常规报告选项  
  下表说明了常规报表格式设置选项和用于选择要报告的数据的选项。  
   
 |选项|描述|  
@@ -79,7 +79,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**Thread:**[*threadid*]|仅显示来自指定线程的数据。|  
 |**Thread:**[*threadid,processid*]|仅显示与指定进程相关联的指定线程的数据。|  
   
-## <a name="difference-report-options"></a>差异报表选项  
+## <a name="difference-report-options"></a>差异报告选项  
  下表说明用于比较报表文件的选项。  
   
 |选项|描述|  

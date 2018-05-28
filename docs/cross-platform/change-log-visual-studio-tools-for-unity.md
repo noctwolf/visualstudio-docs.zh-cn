@@ -1,7 +1,7 @@
 ---
 title: 更改日志（Visual Studio Tools for Unity、Windows）| Microsoft Docs
 ms.custom: ''
-ms.date: 03/23/2018
+ms.date: 05/07/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,14 +10,52 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 80fdd724d9d5bca57e0d8dab44ac4a0bef7238f2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="3701"></a>3.7.0.1
+ 发布时间 2018-05-07
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **安装程序：**
+
+    -   使用实验性生成时修复了依赖项问题。
+
+## <a name="3700"></a>3.7.0.0
+ 发布时间 2018-05-07
+
+### <a name="new-features"></a>新增功能
+
+-   **调试：**
+
+    -   增加了对安排的调试的支持（使用相同的 Visual Studio 会话调试多个播放器/编辑器）。
+    
+    -   增加了对 Android USB 播放器调试的支持。
+    
+    -   增加了对 UWP/IL2CPP 播放器调试的支持。
+
+-   **评估版：**
+
+    -   增加了对十六进制说明符的支持。
+    
+    -   改进了监视窗口评估体验。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成：**
+
+    -   修复了异常设置的使用情况。
+
+-   **项目生成：**
+
+    -   从生成中排除包管理器编译单位。
 
 ## <a name="3605"></a>3.6.0.5
  发布时间 2018-03-13
@@ -26,7 +64,7 @@ Visual Studio Tools for Unity 更改日志。
 
 -   **项目生成：**
 
-    -   添加了对 Unity 2018.1 中新项目生成器的支持
+    -   添加了对 Unity 2018.1 中新项目生成器的支持。
 
 ### <a name="bug-fixes"></a>Bug 修复
 

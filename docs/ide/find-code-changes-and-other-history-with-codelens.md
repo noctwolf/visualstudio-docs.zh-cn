@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21724619a0dd3b89582c716a5df0fdff6041b682
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: d81438ef284464fb23ebc5a41c19e59d20739cf4
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 
@@ -209,7 +209,7 @@ ms.lasthandoff: 05/03/2018
 
      ![CodeLens - 在代码编辑器中选择测试状态](../ide/media/codelens-choose-test-indicator.png)
 
-3. 如果看到警告图标， ![警告图标](../ide/media/codelenstestwarningicon.png)测试尚未运行，请运行它们。
+3. 如果看到警告图标 ![警告图标](../ide/media/codelenstestwarningicon.png)测试尚未运行，请运行它们。
 
      ![CodeLens - 查看尚未运行的单元测试](../ide/media/codelens-tests-not-yet-run.png)
 
@@ -324,4 +324,4 @@ CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所�
 
 ## <a name="see-also"></a>请参阅
 
-- [在编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)
+- [代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)

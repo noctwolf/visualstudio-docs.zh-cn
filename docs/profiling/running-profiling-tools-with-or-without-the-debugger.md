@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="running-profiling-tools-with-or-without-the-debugger"></a>运行带或不带调试器的分析工具
+# <a name="run-profiling-tools-with-or-without-the-debugger"></a>运行带/不带调试器的分析工具
 Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU 使用率”和“内存使用率”）可在使用/不使用调试器的情况下运行。 不带调试器的性能工具用于在发布配置上运行，而集成了调试器的工具用于在调试配置上运行。  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>应在带还是不带调试器的情况下运行该工具？  
@@ -39,9 +39,9 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 在调试期间收集分析数据  
  下面这一节对本地调试进行介绍。 后续章节介绍关于在设备上进行调试和远程调试的信息。  
   
-1.  打开想要调试的项目，然后单击“调试”/“启动调试”  （或工具栏上的“启动”  或按 **F5**）。  
+1.  打开想要调试的项目，然后单击“调试” > “启动调试”（或按工具栏上的“启动”或按 F5）。  
   
-2.  将自动显示 **“诊断工具”** 窗口，除非你已将其关闭。 若要再次显示该窗口，请依次单击“调试”、“Windows”、“显示诊断工具”。  
+2.  将自动显示 **“诊断工具”** 窗口，除非你已将其关闭。 若要再次显示该窗口，请依次单击“调试” > “Windows” > “显示诊断工具”。  
   
 3.  运行要为其收集数据的方案。  
   
@@ -51,7 +51,7 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
   
      ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  可以使用工具栏上的“选择工具”设置选择是否查看“内存使用率”和/或“CPU 使用率”。 如果运行的是 Visual Studio Enterprise，则可以在“工具”/“选项”/“IntelliTrace”中启用或禁用 IntelliTrace。  
+4.  可以使用工具栏上的“选择工具”设置选择是否查看“内存使用率”和/或“CPU 使用率”。 如果运行的是 Visual Studio Enterprise，则可以在“工具” > “选项” > “IntelliTrace”中启用或禁用 IntelliTrace。  
   
 5.  当停止调试时，诊断会话结束。  
   
@@ -72,7 +72,7 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
   
 1.  在 Visual Studio 中打开项目。  
   
-2.  在“调试”菜单上，选择“性能探查器...”（快捷键：Alt + F2）。  
+2.  在“调试”菜单上，选择“性能探查器”（快捷键：Alt+F2）。  
   
 3.  在诊断启动页上，选择要在会话中运行的一个或多个工具。 将仅显示适用于项目类型、操作系统和编程语言的工具。 选择诊断工具时，将禁用对不能在同一诊断会话中运行的工具的选择。 对于 C# UWP 应用，选项设置如下：  
   
@@ -106,7 +106,7 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
 |![第 5 步](../profiling/media/procguid_6.png "ProcGuid_6")|当你的数据包含来自多个工具的信息时，则将在选项卡下收集工具的详细信息。|  
 |![第 6 步](../profiling/media/procguid_6a.png "ProcGuid_6a")|一个工具可具有一个或多个详细信息视图。 视图将按时间线的选定区域进行筛选。|  
   
-## <a name="setting-the-analysis-target-to-another-device"></a>将分析目标设置为其他设备  
+## <a name="set-the-analysis-target-to-another-device"></a>将分析目标设置为其他设备  
  除了从 Visual Studio 项目启动应用以外，还可以在备用目标上运行诊断会话。 例如，你可能需要诊断有关从 Windows 应用商店安装的应用的版本的性能问题。  
   
  ![选择诊断工具分析目标](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  

@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1982f0f5f1739d514dcedd32291bd765a5680b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 VSPerfCmd.exe 工具用于启动和停止性能数据收集。 它使用以下语法：  
@@ -54,7 +54,7 @@ VSPerfCmd [/U] [/options]
 |[ThreadOn 和 ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|暂停对指定线程的分析。 仅在使用检测方法进行分析时使用“ThreadOff”。|  
 |[Mark](../profiling/mark.md) : MarkNum[,MarkText]****|使用可选文本将一个标记插入到分析数据文件中。|  
   
-## <a name="sampling-method-options"></a>采样方法选项  
+## <a name="sample-method-options"></a>示例方法选项  
  只有在使用采样分析方法时才能使用以下选项。  
   
 |选项|描述|  
@@ -66,7 +66,7 @@ VSPerfCmd [/U] [/options]
 |[Detach](../profiling/detach.md)[:PID[,PID]]|停止分析指定进程。 进程可由进程 ID 或进程名称标识。 如果未指定进程，将停止所有进程分析。|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|收集 .NET 内存分配数据和对象生存期数据。 仅与 VSPerfCmdLaunch 选项一起使用。|  
   
-### <a name="sampling-interval-options"></a>采样间隔选项  
+### <a name="sample-interval-options"></a>示例间隔选项  
  以下选项指定采样间隔的类型和持续时间。 默认值为 Timer。 还可以使用 Counter 选项将 CPU 计数器指定为间隔。 这些选项只能通过 Launch 或分析会话的第一个 Attach指定。  
   
 |选项|描述|  

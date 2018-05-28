@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859a3687e2dde0d5bedb9f4084bb83b844ca28e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c4b915f632179ff118247e8c046ce980a824ea2
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>自定义“打开文件夹”开发的生成和调试任务
 
@@ -315,4 +315,4 @@ Visual Studio 从名为 settings.json 的文件中读取限制设置，前提是
 - [C++ 的打开文件夹项目](/cpp/ide/non-msbuild-projects)
 - [C++ 中的 CMake 项目](/cpp/ide/cmake-tools-for-visual-cpp)
 - [NMAKE 参考](/cpp/build/nmake-reference)
-- [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)
+- [代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)

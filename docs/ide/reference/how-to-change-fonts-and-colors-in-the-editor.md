@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 201dd1a6562f7f5ed38d6a3cd8c462056b82475a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：更改编辑器中的字体和颜色
 在“代码编辑器”中，可以更改默认字体、调整字体大小以及更改不同文本“显示项”的前景色和背景色。 更改字体设置时，请牢记以下信息：
@@ -56,5 +56,5 @@ ms.lasthandoff: 04/26/2018
 
 - [自定义编辑器](../../ide/customizing-the-editor.md)
 - [“选项”对话框 ->“文本编辑器”](../../ide/reference/text-editor-options-dialog-box.md)
-- [编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [代码编辑器功能](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [如何：更改字体和颜色](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

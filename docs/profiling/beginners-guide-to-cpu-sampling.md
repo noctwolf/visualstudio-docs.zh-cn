@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee85f9946e16b0ecaafa196e1b197304ccde3bd9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 采样初学者指南
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程显示如何使用**采样**数据。
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/19/2018
  如果**采样**未提供所需数据，其他分析工具收集方法可提供可能有帮助的不同种类的信息。 有关这些其他方法的详细信息，请参阅[如何：选择收集方法](../profiling/how-to-choose-collection-methods.md)。  
   
 > [!TIP]
->  如果分析调用 Windows 函数的代码，应确保具有最新的 .pdb 文件。 如果没有这些文件，报告视图将列出含义隐晦、难以理解的 Windows 函数名称。 若要深入了解如何确保具有所需文件，请参阅[如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)。  
+>  如果分析调用 Windows 函数的代码，应确保具有最新的 .pdb 文件。 如果没有这些文件，报告视图将列出含义隐晦、难以理解的 Windows 函数名称。 有关如何确保具有所需文件的详细信息，请参阅[如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)。  
   
 ##  <a name="Step1"></a>创建并运行性能会话  
  若要获取需要分析的数据，必须先创建性能会话，然后运行会话。 可通过**性能向导**实现这两项操作。  
@@ -121,11 +121,11 @@ ms.lasthandoff: 04/19/2018
   
 4.  重新运行会话后，另一个数据文件便添加到“性能资源管理器”中会话的“报告”文件夹。 选择原始的和新的分析数据，右键单击所选内容，然后单击“比较性能报告”。  
   
-     此时将打开新的报告窗口，并显示比较结果。 若要深入了解如何使用比较视图，请参阅[如何：比较性能数据文件](../profiling/how-to-compare-performance-data-files.md)。
+     此时将打开新的报告窗口，并显示比较结果。 有关如何使用比较视图的详细信息，请参阅[如何：比较性能数据文件](../profiling/how-to-compare-performance-data-files.md)。
   
 ## <a name="see-also"></a>请参阅  
  [性能资源管理器](../profiling/performance-explorer.md)   
  [入门](../profiling/getting-started-with-performance-tools.md)   
  [概述](../profiling/overviews-performance-tools.md)  
  [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能简介](../profiling/profiling-feature-tour.md)
+ [分析功能导览](../profiling/profiling-feature-tour.md)

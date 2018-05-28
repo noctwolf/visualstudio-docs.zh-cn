@@ -9,11 +9,11 @@ description: 了解有关所选 Visual Studio 订阅中随附的 DataCamp 培训
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 552e82651937be61e333f9fc07e9e47b9723b360
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 DataCamp 培训权益
 
@@ -34,7 +34,7 @@ DataCamp 权益的持续时间取决于你的 Visual Studio 订阅。
     ![DataCamp 创建新帐户](_img\vs-datacamp\vs-datacamp-create-account.png)
 
     > [!NOTE]
-    > 开始创建帐户时，可能会收到以下错误消息：“糟糕！  促销代码无效或已过期。”  发生这种情况是因为促销代码创建后会在几分钟后过期。  如果收到此消息，只需返回到[“权益”](https://my.visualstudio.com/benefits)页，然后单击“DataCamp 权益”磁贴上的**“激活”**链接。  
+    > 开始创建帐户时，可能会收到以下错误消息：“糟糕！  促销代码无效或已过期。”  发生这种情况是因为促销代码创建后会在几分钟后过期。  如果收到此消息，只需返回到[“权益”](https://my.visualstudio.com/benefits)页，然后单击“DataCamp 权益”磁贴上的 **“激活”** 链接。  
 
 4. 创建了帐户之后，你便可以选择学习路径。  选项包括：
     - 学习适用于数据科学的 R
@@ -83,6 +83,7 @@ DataCamp 权益的持续时间取决于你的 Visual Studio 订阅。
 ## <a name="support-resources"></a>支持资源
 -  需要有关使用 DataCamp 的帮助？  请参阅下列资源：
     - [DataCamp 社区](https://www.datacamp.com/community/tutorials)，提供论坛和教程。
-    - [常见问题解答](https://datacamp.groovehq.com/help_center)。  在“常见问题解答”页上，你还有机会提交电子邮件支持请求。
+    - [DataCamp 帮助中心](https://support.datacamp.com/hc)，可在其中搜索支持主题并查看请求用户的问题。  
+    - [提交支持请求](https://support.datacamp.com/hc/requests/new)
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://www.visualstudio.com/subscriptions/support/)联系。
 -  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://www.visualstudio.com/support/)。 

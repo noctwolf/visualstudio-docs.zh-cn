@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4050694685302eb527b33d8810bc7f92974bc305
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>教程步骤 2：使用视图和页面模板创建 Django 应用
 
@@ -206,7 +206,7 @@ Django 页面模板是一个 HTML 块，它可以包含称为“变量”的任�
         )
     ```
 
-    如你所见，`render` 的第一个参数 是后跟应用的 `templates` 文件夹中模板文件相对路径的请求对象。 在适当情况下，将支持为视图命名的模板文件。 `render` 的第三个参数则是模板引用的变量字典。 可以在字典中包含对象，在这种情况下，模板中的变量可以引用 `{{ object.property }}`。
+    如你所见，`render` 的第一个参数 是后跟应用的 `templates` 文件夹中模板文件相对路径的请求对象。 在适当情况下，将为视图支持的模板文件命名。 `render` 的第三个参数则是模板引用的变量字典。 可以在字典中包含对象，在这种情况下，模板中的变量可以引用 `{{ object.property }}`。
 
 1. 运行项目并观察输出。 应该会看到类似于步骤 2-2 中看到的消息，表明模板可正常使用。
 

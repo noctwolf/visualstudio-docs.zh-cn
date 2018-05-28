@@ -3,66 +3,88 @@ title: Visual Studio 订阅中的 Xamarin University 权益 | Microsoft 文档
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 05/16/2018
 ms.topic: Get-Started-Article
 description: 了解有关所选 Visual Studio 订阅中随附的 Xamarin University 培训订阅。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 742c7a45136fe364310623c80167e0205e416a1e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7447b5b15315573c28bce8a3366bd7f7564ebcbd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Xamarin University 培训权益
 
-以 C# 生成本机 iOS 和 Android 应用，附带录制课程和来宾讲座。  
--  针对 Visual Studio Dev Essentials 展开的 Xamarin University 移动培训提供了 12 门课程和 3 个来宾讲座的访问权限。 
--  面向 Visual Studio Professional 和 Visual Studio Enterprise 订阅的 Xamarin University 移动培训，包括 Visual Studio Dev Essentials 提供的相同课程和讲座，另外附加 18 门课程和 6 个讲座。
+通过移动开发专家的高级培训，使用 C# 生成本机 iOS 和 Android 应用。 
+
+Visual Studio Enterprise 订阅者可获得六个月无限制访问完整 Xamarin University 目录的权限。  Visual Studio Professional 订阅者可以获得三个月的访问权限。  
+
+Visual Studio Dev Essentials 成员有资格创建一个免费帐户，其中包括访问选定的免费课程、来宾讲座、两个现场授课课程、极速简短讲座录像等。  
+
 
 ## <a name="activation-steps"></a>激活步骤
 1.  登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。 
-2.  在“专业开发”部分中找到“Xamarin University 培训”磁贴，然后单击“权益”磁贴左下角的“获取代码”链接。   你将收到一条通知消息，指示已成功检索到优惠券代码。  单击“激活”，然后继续。
+2.  在“专业开发”部分中找到“Xamarin University 培训”磁贴，然后单击“权益”磁贴左下角的“激活”链接。    
 
-    ![Xamarin University 培训权益磁贴](_img\vs-xamarin\vs-xamarin-tile.png)
+    <img alt="Xamarin University Training Benefit Tile" src="_img/vs-xamarin/vs-xamarin-tile.png" style="border: 1px solid #CCCCCC" />
+ 
+3.  你将被重定向到一个名为“面向 Microsoft Visual Studio 的 Xamarin University 移动培训”的 Xamarin University 网页。  单击“立即激活我的订阅”。 
 
-3.  在注册页上填写联系人信息，单击复选框，接受使用条款和隐私声明，然后单击“激活权益”。 
+    <img alt="Activate My Subscription Now" src="_img/vs-xamarin/vs-xamarin-activate.png" style="border: 1px solid #CCCCCC" />
 
-    ![Xamarin University 培训权益注册](_img\vs-xamarin\vs-xamarin-registration-resized.png)
-4.  就这么简单！  现在，你已激活 Xamarin University 培训权益，请重定向到 Microsoft Visual Studio 页的 Xamarin University 移动培训，然后即可准备开始学习。  
+    > [!NOTE]
+    > 根据屏幕分辨率和缩放级别，可能需要向下滚动才能看到“立即激活我的订阅”按钮。
+    
+    > [!NOTE]
+    > 如果收到错误，指出必须以收到权益的人的身份登录，请按照下列步骤操作：
+    > 1. 关闭 Xamarin University 的浏览器窗口。
+    > 2. 在 my.visualstudio.com 门户中，单击“注销”。
+    > 3. 关闭所有浏览器窗口。 
+    > 4. 打开新的浏览器并连接到 [https://my.visualstudio.com](https://my.visualstudio.com)。
+    > 5. 再次激活 Xamarin University 培训权益。 
 
-    ![Xamarin University 培训权益主页](_img\vs-xamarin\vs-xamarin-home-resized.png)
+4.  将会看到一个登录页，显示一个通知，Xamarin 最近已开始使用 Microsoft 身份验证。  单击“与 Microsoft 联系”。 
+
+    <img alt="Connect with Microsoft" src="_img/vs-xamarin/vs-xamarin-connect.png" style="border: 1px solid #CCCCCC" />
+
+5. 接下来，系统要求你允许 Xamarin University 让你登录，并允许其访问你的电子邮件地址和基本个人资料。  单击“是”以继续。 如果愿意，可以稍后更改应用程序权限。
+
+    <img alt="Approve access" src="_img/vs-xamarin/vs-xamarin-access.png" style="border: 1px solid #CCCCCC" />
+
+    > [!NOTE]
+    > 由于登录需要使用 Xamarin University 权益，因此单击“否”将返回到上一页，你将无法继续进行培训。 
+
+
+6. 你会看到有关新帐户的欢迎信息。  单击“开始学习”。
+
+    <img alt="Welcome message" src="_img/vs-xamarin/vs-xamarin-confirm.png" style="border: 1px solid #CCCCCC" />
+
+7. 就这么简单！  你将看到 Xamarin University 门户，然后就可以开始学习了。  
+
+     <img alt="Xamarin University portal" src="_img/vs-xamarin/vs-xamarin-portal.png" style="border: 1px solid #CCCCCC" />
 
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 30 门课程、9 个讲座       |  是 |
-| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 30 门课程、9 个讲座       |  是 |
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 6 个月       |  是 |
+| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 3 个月       |  是 |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                             |  NA        |
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                             |  NA        |
-| Visual Studio Dev Essentials | NA  | 12 门课程、3 个讲座                                             |  是        |
+| Visual Studio Dev Essentials | NA  | 免费计划                                             |  是        |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络（MPN）、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)。 不包括：MCT 软件和服务。
+<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)。Microsoft 合作伙伴网络（MPN）、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)。 不包括：MCT 软件和服务。
 
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
 
-
 ## <a name="frequently-asked-questions"></a>常见问题
-### <a name="q--what-topics-are-covered-in-the-classes-and-lectures"></a>问：课程和讲座中介绍了哪些主题？
-答：可在以下网站找到课程和讲座的完整列表：https://www.xamarin.com/university/mobile-training 
-
-### <a name="q-im-already-a-xamarin-university-subscriber-does-this-affect-my-xamarin-university-mobile-training-benefit"></a>问：我已经是 Xamarin University 订阅者。 这是否会影响我的 Xamarin University 移动培训权益？
-答：不会，现有 Xamarin University 订阅者可以通过登录 university.xamarin.com，具有对其 Xamarin University 年度订阅的完全访问权限，包括实时课程、资料和来宾讲座。  
-课程作为 Visual Studio Dev Essentials 计划和 Visual Studio 订阅中的一项权益，与 Xamarin University 订阅相分离，可从 Visual Studio Dev Essentials 或 Visual Studio 门户对其进行访问，而非 university.xamarin.com。虽然 Visual Studio Dev Essentials 计划中包含的 Xamarin University 移动培训课程录像和 Visual Studio 订阅包含在你的年度 Xamarin University 订阅中，但只要计划成员身份或 Visual Studio 订阅有效，它们就会保持可用。 你将继续从 Visual Studio Dev Essentials 或 Visual Studio 门户访问，与你的 Xamarin University 订阅状态无关。
-
-### <a name="q--can-i-become-a-certified-xamarin-developer-with-the-xamarin-university-included-in-visual-studio-dev-essentials-what-about-through-visual-studio-subscriptions"></a>问：是否可以通过 Visual Studio Dev Essentials 中包含的 Xamarin University 成为认证的 Xamarin 开发人员？ 能否通过 Visual Studio 订阅？
-答：不可以，Visual Studio Dev Essentials 和 Visual Studio/MSDN 订阅中随附 Xamarin University 的课程和资料不适用于认证。 仅在完整的 Xamarin University 订阅中包含获得 Xamarin 认证所需的资料、课程和录像。
-
+### <a name="q--what-happens-when-my-free-subscription-expires"></a>问：我的免费订阅到期后会怎样？
+答：Xamarin University 帐户和进度将保持不变，但你的订阅将转换为免费帐户，该帐户对我们材料具有有限的访问权限。 如果想继续保留订阅的所有权益，可以[购买月度订阅](https://aka.ms/buy-xamarin-university)。
 
 ## <a name="support-resources"></a>支持资源
--  需要 Xamarin 帮助？  访问 [https://www.xamarin.com/support](https://www.xamarin.com/support) 可以找到各种支持资源。
+-  需要 Xamarin University 帮助？  访问 [https://university.xamarin.com/support](https://university.xamarin.com/support) 可以找到各种支持资源。
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://www.visualstudio.com/subscriptions/support/)联系。
 -  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://www.visualstudio.com/support/)。 

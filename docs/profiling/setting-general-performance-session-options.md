@@ -11,13 +11,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61d4506f4b9ee68e7920fa4bbb4c463d00cceb73
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5268e6821714dc6850541c319dba450bcc04490b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="setting-general-performance-session-options"></a>设置性能会话的常规选项
+# <a name="set-general-performance-session-options"></a>设置常规的性能会话选项
 
 可以在性能会话的属性对话框的“常规”页上设置 Visual Studio 分析工具性能会话的收集方法和分析数据命名约定。 若要从“性能资源管理器”中打开此对话框，请右键单击性能会话，然后单击“属性”。
 
@@ -35,13 +35,14 @@ ms.lasthandoff: 04/19/2018
 
 |||
 |-|-|
-|**收集 .NET 对象分配信息**。 默认情况下，数据包括所分配对象的数量和大小。 选中或清除此复选框可启用或禁用 .NET 内存数据收集。<br /><br /> **还收集 .NET 对象的生存期信息**。 选中此复选框可包括有关用于回收内存对象的各代垃圾回收的数据。|- [收集 .NET 内存分配数据和生存期数据](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
+|**收集 .NET 对象分配信息**。 默认情况下，数据包括所分配对象的数量和大小。 选中或清除此复选框可启用或禁用 .NET 内存数据收集。 |- [收集 .NET 内存分配数据和生存期数据](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
+|**还收集 .NET 对象的生存期信息**。 选中此复选框可包括有关用于回收内存对象的各代垃圾回收的数据。|- [收集 .NET 内存分配数据和生存期数据](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  |
 
  开始分析应用程序时，将会显示分析会话页，您可以在其中暂停、继续和停止分析。
 
  ![分析会话页](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
-## <a name="setting-profiling-data-file-options"></a>设置分析数据文件选项
+## <a name="set-profiling-data-file-options"></a>设置分析数据文件选项
 
 |||
 |-|-|

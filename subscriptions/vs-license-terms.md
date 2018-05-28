@@ -9,11 +9,11 @@ description: Visual Studio 订阅许可条款。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6bb1e074b395d37547f33cd523f973fe9e79dba
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 适用于以下 VISUAL STUDIO 订阅的 MICROSOFT 软件许可条款：
 
@@ -22,7 +22,7 @@ VISUAL STUDIO ENTERPRISE、VISUAL STUDIO PROFESSIONAL、VISUAL STUDIO TEST PROFE
 _________________________________________________
 这些许可条款是微软公司（或您所在地的 Microsoft 关联公司）与您之间达成的协议。 请阅读条款内容。 本条款适用于上述软件。 本条款也适用于 Microsoft 为软件提供的任何服务和更新，但附有任何其他条款的服务和更新除外。
 
-使用软件即表示您接受本条款**。如果您不接受这些条款，请不要使用该软件。您可以将其退还给零售商并获得退款** 如果您无法通过这种方式获得退款，请与您所在国家/地区的 Microsoft 或 Microsoft 关联公司联系，了解 Microsoft 退款政策的相关信息。 请访问 [www.microsoft.com/worldwide](https://www.microsoft.com/worldwide)。 在美国和加拿大的用户请致电 (800) MICROSOFT 或访问 [www.microsoft.com/info/nareturns.htm](https://www.microsoft.com/info/nareturns.htm)。
+使用软件即表示您接受本条款 **。如果您不接受这些条款，请不要使用该软件。您可以将其退还给零售商并获得退款** 如果您无法通过这种方式获得退款，请与您所在国家/地区的 Microsoft 或 Microsoft 关联公司联系，了解 Microsoft 退款政策的相关信息。 请访问 [www.microsoft.com/worldwide](https://www.microsoft.com/worldwide)。 在美国和加拿大的用户请致电 (800) MICROSOFT 或访问 [www.microsoft.com/info/nareturns.htm](https://www.microsoft.com/info/nareturns.htm)。
 
 如下所述，在激活、验证和使用基于 INTERNET 的服务期间，使用某些功能也表示您同意传输某些标准计算机信息。 
 _______________________________________
@@ -128,7 +128,7 @@ _______________________________________
     （有时称为“多路复用”或“组合连接”）的硬件或软件不会减少所需的任何类型的许可数量。
 
 
-8. 强制激活。 激活过程将软件的使用与特定设备相关联。 激活过程中，软件将向 Microsoft 发送与软件和设备相关的信息。 发送的信息包括软件的版本、语言和产品密钥，设备的 Internet 协议地址以及设备硬件配置衍生的信息。 有关详细信息，请访问 [microsoft.com/piracy/activation.mspx.[(http://microsoft.com/piracy/activation.mspx)]。使用软件即表示同意传输这些信息。 激活之前，您有权使用在安装过程中安装的软件版本。 除非激活软件，否则在安装过程中指定的时间之后使用软件的权限会受到限制。 本规定旨在防止未经许可使用该软件。 如果不激活软件，在该时间之后您将无法继续使用软件。 如果设备连接到 Internet，软件可能会自动连接到 Microsoft 进行激活。 您还可以通过 Internet 或电话手动激活软件。 通过这种方式激活可能需要支付 Internet 和电话服务费。 对计算机组件或软件进行某些更改时可能要求您重新激活软件。 激活软件之前系统会不断提醒您进行激活。
+8. 强制激活。 激活过程将软件的使用与特定设备相关联。 激活过程中，软件向 Microsoft 发送与软件和设备相关的信息。 发送的信息包括软件的版本、语言和产品密钥，设备的 Internet 协议地址以及设备硬件配置衍生的信息。 有关详细信息，请参阅 [Microsoft 产品激活](https://www.microsoft.com/en-us/piracy/mpa.aspx)。 使用软件即表示您同意传输此类信息。 激活之前，您有权使用在安装过程中安装的软件版本。 除非激活软件，否则在安装过程中指定的时间之后使用软件的权限会受到限制。 本规定旨在防止未经许可使用该软件。 如果不激活软件，在该时间之后您将无法继续使用软件。 如果设备连接到 Internet，软件可能会自动连接到 Microsoft 进行激活。 您还可以通过 Internet 或电话手动激活软件。 通过这种方式激活可能需要支付 Internet 和电话服务费。 对计算机组件或软件进行某些更改时可能要求您重新激活软件。 激活软件之前系统会不断提醒您进行激活。
 
 9. 验证。
 

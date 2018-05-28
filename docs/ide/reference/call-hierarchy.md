@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio 中查看调用层次结构
-ms.date: 01/10/2018
+title: 查找对方法的调用
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,33 +13,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f5cfc65f23924f9ee1e9203e115feae13f454b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52fdaf277d8c20801c5d48d90de472d24ab88bda
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="view-call-hierarchy"></a>查看调用层次结构
 
-通过查看代码的调用层次结构，可以从选定方法、属性或构造函数间导航所有调用方和被调用方。 这有助于更好地理解代码的流动方式，以及评估代码更改的效果。 可以检查多个级别的代码，以查看方法调用的复杂链条以及代码的其他入口点。 这使你能够找到所有可能的执行路径。
+通过查看代码的调用层次结构，可以在选定方法、属性或构造函数间导航所有调用方和被调用方（有时）。 这有助于更好地理解代码的流动方式，以及评估代码更改的效果。 可以检查多个级别的代码，以查看方法调用的复杂链条以及代码的其他入口点。 这使你能够找到所有可能的执行路径。
 
 在 Visual Studio 中，可以在设计时查看调用层次结构。 这意味着，你无须设置断点并启动调试器以查看运行时调用堆栈。
 
 ## <a name="use-the-call-hierarchy-window"></a>使用“调用层次结构”窗口
 
-若要显示“调用层次结构”窗口，请右键单击某个方法、属性或构造函数调用的名称，然后单击“查看调用层次结构”。
+若要显示“调用层次结构”窗口，请在代码编辑器中右键单击某个方法、属性或构造函数调用的名称，然后选择“查看调用层次结构”。
 
-成员名称会显示在“调用层次结构”窗口的树状视图窗格中。 如果展开成员节点，则会显示“调用方”成员名称和“被调用方”成员名称子节点。 下图显示了“调用层次结构”窗口中的这些节点。
+成员名称会显示在“调用层次结构”窗口的树状视图窗格中。 如果展开成员节点，则会显示“调用方”成员名称，对于 C++，则会显示“被调用方”成员名称子节点。
 
-![打开一个节点的调用层次结构](../../ide/reference/media/onenode.png "OneNode")
+对于 C++ 代码，可以看到某个成员的调用方和被调用方：
+
+![Visual Studio 中 C++ 代码的调用层次结构](media/call-hierarchy-cpp.png)
+
+对于 C# 和 Visual Basic 代码，可以查看某个成员的调用方，但不能查看其被调用方：
+
+![Visual Studio 中 C# 代码的调用层次结构](media/call-hierarchy-csharp.png)
 
 - 如果展开“调用方”节点，则显示调用选定成员的所有成员。
 
-- 如果展开“被调用方”节点，则显示选定成员调用的所有成员。
+- 对于 C++，如果展开“被调用方”节点，则显示选定成员调用的所有成员。
 
-随后可将其中每个子节点成员展开成“调用方”和“被调用方”节点。 这样就可以在调用方的堆栈中导航，如下图所示。
+然后，可以展开每个调用成员来查看其“调用方”，对于 C++，则可以查看“被调用方”节点。 这样就可以在调用方的堆栈中导航，如下图所示：
 
-![打开多个节点的调用层次结构](../../ide/media/multiplenodes.png "MultipleNodes")
+![调用层次结构窗口具有多个展开级别](media/call-hierarchy-csharp-expanded.png)
 
 对于定义为虚拟或抽象成员的成员，会显示一个“重写方法名”节点。 针对接口成员，显示的是“实现方法名”节点。 这些可展开的节点与“调用方”和“被调用方”节点显示在同一级。
 
@@ -54,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > 调用层次结构功能不会查找方法组引用，这些引用包含将方法添加为事件处理程序或将方法分配给委托的位置。 若要查找对方法的所有引用，可以使用“查找所有引用”命令。
 
-### <a name="shortcut-menu-items"></a>快捷菜单项
+## <a name="shortcut-menu-items"></a>快捷菜单项
 
 下表描述了在树状视图窗格中右键单击某个节点时，可以使用的多个快捷菜单选项。
 

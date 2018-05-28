@@ -19,25 +19,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c32fc1a7fbd82d1ac9604396dc2ea118efbad2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="encodings-and-line-breaks"></a>编码和换行符
+# <a name="encodings-and-line-endings"></a>编码和行尾
 
 在 Visual Studio 中，以下字符将解释为换行符：
 
--   CR LF：回车符 + 换行符，Unicode 字符 000D + 000A
+- CR LF：回车符 + 换行符，Unicode 字符 000D + 000A
 
--   LF：换行符，Unicode 字符 000A
+- LF：换行符，Unicode 字符 000A
 
--   NEL：下一行，Unicode 字符 0085
+- NEL：下一行，Unicode 字符 0085
 
--   LS：行分隔符，Unicode 字符 2028
+- LS：行分隔符，Unicode 字符 2028
 
--   PS：段落分隔符，Unicode 字符 2029
+- PS：段落分隔符，Unicode 字符 2029
 
 从其他应用程序复制的文本将保留原始编码和换行符。 例如，当从记事本复制文本并将其粘贴到 Visual Studio 中的文本文件时，此文本的设置仍与在记事本中的设置相同。
 
@@ -56,4 +56,4 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>请参阅
 
-- [在编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)
+- [代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)

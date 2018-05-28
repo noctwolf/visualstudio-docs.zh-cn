@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95e09639e9236b64f9c18c9bd90e6850ee13d86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 486ca90ac2a8a4b3b289b0896e2cd81239502558
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 元素 (MSBuild)
 将 [Task](../msbuild/task-element-msbuild.md) 元素中引用的任务映射到包含该任务实现的程序集。  
@@ -68,10 +68,10 @@ ms.lasthandoff: 04/19/2018
 |[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。|  
 
 ## <a name="remarks"></a>备注  
- 如果 `UsingTask` 元素在项目文件中显式显示或通过导入的项目文件显示，则可以在该元素的任意位置引用环境变量、命令行属性和项目级属性。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  
+ `UsingTask` 元素（该元素直接进入或通过导入项目文件而包括在项目文件中）可以引用环境变量、命令行属性、项目级属性及项目级项。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  
 
 > [!NOTE]
->  如果 `UsingTask` 元素来自使用 MSBuild 引擎进行全局注册的某个 .tasks 文件，则项目级属性没有意义。 项目级属性对于 MSBuild 而言不是全局性的。  
+>  如果 `UsingTask` 元素来自使用 MSBuild 引擎进行全局注册的某个 .tasks 文件，则项目级属性和项没有意义。 项目级值对于 MSBuild 而言不是全局性的。  
 
  在 MSBuild 4.0 中，可以从 .overridetask 文件加载使用任务。  
 

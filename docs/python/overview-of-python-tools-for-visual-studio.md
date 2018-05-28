@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e86f8f856963a979b8e64ba0e613cdb73685a9a0
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -57,7 +57,7 @@ Visual Studio 具备出色的 Python 编辑器，包括语法着色、跨代码�
 - 文档：[代码格式设置](formatting-python-code.md)
 - 文档：[重构](refactoring-python-code.md)
 - 文档：[Linting](linting-python-code.md)
-- 常规 Visual Studio 功能文档：[在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)
+- 常规 Visual Studio 功能文档：[代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>交互窗口
 

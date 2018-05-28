@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9be304398fcefaf6a38ca7e1d557f2c9146b4872
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 9350d96911e818402f7e32ebcd83fe832f31f9d9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>收集 ASP.NET Web 应用的统计信息
 
@@ -29,15 +29,15 @@ ms.lasthandoff: 05/11/2018
 > [!NOTE]
 >  尽管使用 **VSPerfCmd** 工具可完全访问分析工具功能，包括暂停和继续分析，以及从处理器和 Windows 性能计数器收集其他数据，但在不需要此功能时应使用 **VSPerfASPNETCmd** 命令行工具。 使用独立探查器分析 ASP.NET 网站时，**VSPerfASPNETCmd** 命令行工具是首选工具。 与 [VSPerfCmd](../profiling/vsperfcmd.md) 命令行工具相比，无需设置任何环境变量，也不需要重启计算机。 有关详细信息，请参阅[使用 VSPerfASPNETCmd 进行快速网站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。  
   
-## <a name="common-tasks"></a>常规任务  
+## <a name="common-tasks"></a>常见任务  
   
 |任务|相关内容|  
 |----------|---------------------|  
-|**将探查器附加到 ASP.NET 应用程序**|-   [如何：将探查器附加到 ASP.NET Web 应用程序中以收集应用程序统计信息](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**将探查器附加到 ASP.NET 应用程序**|-   [如何：将探查器附加到 ASP.NET Web 应用程序以收集应用程序统计信息](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>相关任务  
   
-### <a name="profiling-aspnet-web-applications"></a>分析 ASP.NET Web 应用程序  
+### <a name="profile-aspnet-web-applications"></a>分析 ASP.NET Web 应用程序  
   
 |任务|相关内容|  
 |----------|---------------------|  
@@ -45,12 +45,12 @@ ms.lasthandoff: 05/11/2018
 |**分析内存分配和垃圾回收**|-   [收集内存数据](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
 |**分析资源争用和线程活动**|-   [收集并发数据](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
   
-### <a name="sampling-method"></a>采样方法  
+### <a name="sample-method"></a>采样方法  
   
 |任务|相关内容|  
 |----------|---------------------|  
-|**分析独立（客户端）应用程序**|-   [使用采样法收集应用程序统计信息](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|-   **分析服务**|-   [使用采样法收集应用程序统计信息](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
+|**分析独立（客户端）应用程序**|-   [使用采样收集应用程序统计信息](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
+|-   **分析服务**|-   [使用采样收集应用程序统计信息](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
   
-### <a name="analyzing-sampling-data-views-and-reports"></a>分析采样数据视图和报告  
+### <a name="analyze-sampling-data-views-and-reports"></a>分析采样数据视图和报告  
  [采样方法数据视图](../profiling/profiler-sampling-method-data-views.md)

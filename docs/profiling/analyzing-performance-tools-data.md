@@ -18,22 +18,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9ddcc2a374661525744e064929ca20daa83c97
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 36b5f5000ab18360d5146603862381e056b37284
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="analyzing-performance-tools-data"></a>分析性能工具数据
+# <a name="analyze-performance-tools-data"></a>分析性能工具数据
 通过 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的性能报告可查看并分析应用程序性能问题。 本部分概述了可用于检查性能数据的性能报告和视图。  
   
-## <a name="common-tasks"></a>常规任务  
+## <a name="common-tasks"></a>常见任务  
   
 |任务|相关内容|  
 |----------|---------------------|  
-|**使用性能规则快速确定问题：**分析工具性能规则可确定常见问题，帮助轻松导航到包含该问题的源代码。 详细的帮助主题通常可提供解决方案建议。|-   [使用性能规则对数据进行分析](../profiling/using-performance-rules-to-analyze-data.md)|  
-|**了解报告视图详细信息：**分析工具报告视图为分析运行的进程、线程、模块和函数提供聚合的性能数据。 出现的数据取决于收集数据所用的分析方法。|-   [性能报告视图](../profiling/performance-report-views.md)|  
-|**配置、排序和筛选报告视图：**可指定要在报表中显示的数据列并对其排序，对报表行进行排序，并筛选数据，使其仅包含指定的时间段。|-   [自定义性能工具报告视图](../profiling/customizing-performance-tools-report-views.md)|  
+|**使用性能规则快速确定问题：** 分析工具性能规则可确定常见问题，帮助轻松导航到包含该问题的源代码。 详细的帮助主题通常可提供解决方案建议。|-   [使用性能规则对数据进行分析](../profiling/using-performance-rules-to-analyze-data.md)|  
+|**了解报告视图详细信息：** 分析工具报告视图为分析运行的进程、线程、模块和函数提供聚合的性能数据。 出现的数据取决于收集数据所用的分析方法。|-   [性能报告视图](../profiling/performance-report-views.md)|  
+|**配置、排序和筛选报告视图：** 可指定要在报表中显示的数据列并对其排序，对报表行进行排序，并筛选数据，使其仅包含指定的时间段。|-   [自定义性能工具报告视图](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>相关章节  
  [比较性能数据文件](../profiling/comparing-performance-data-files.md)  
@@ -43,4 +43,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="see-also"></a>请参阅  
  [性能资源管理器](../profiling/performance-explorer.md)  
  [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能简介](../profiling/profiling-feature-tour.md)
+ [分析功能导览](../profiling/profiling-feature-tour.md)
