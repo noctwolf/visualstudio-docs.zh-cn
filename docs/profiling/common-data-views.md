@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32039843f3aef60f6e7087b0d26f8b5e1efd1df8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 21ccf237bec0b3ab7bf3ad96f6f4d24df240db0e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="common-data-views"></a>公共数据视图
 本部分包含有关所有分析方法公用的探查器数据文件的视图和报告的有关参考信息。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/19/2018
  [“调用方/被调用方”视图](../profiling/caller-callee-view.md)  
  介绍“调用关系树”视图和报表。 数据列取决于分析方法。  
   
- [“调用关系树”视图](../profiling/call-tree-view.md)  
+ [“调用树”视图](../profiling/call-tree-view.md)  
  介绍“调用关系树”视图和报表。 数据列取决于分析方法。  
   
  [“模块”视图](../profiling/modules-view.md)  

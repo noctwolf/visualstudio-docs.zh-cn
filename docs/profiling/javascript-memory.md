@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e82ceb7879fcfca709ff6e94de81ae76ef908e07
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9c4ef7fa41cd9d4cdd0bfeda7d7745ad16d47536
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>分析 UWP 应用中的 JavaScript 内存使用情况
 JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内存使用情况，在使用 JavaScript 为 Windows 构建的 UWP 应用中查找内存泄漏。 受支持的应用包括通用 Windows 应用的应用。
@@ -50,7 +50,7 @@ JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内
   
 2.  如果是通过 Visual Studio 运行应用，请在“标准”工具栏上的“开始调试”列表中，选择项目的调试目标，即“本地计算机”或“设备”。  
   
-3.  在菜单栏上，选择“调试”、“性能探查器...”。  
+3.  在菜单栏上，选择“调试” > “性能探查器”。  
   
      默认情况下，将分析当前启动项目。 如果要更改分析目标，请选择 **“更改目标”**。  
   
@@ -68,7 +68,7 @@ JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内
   
          当你无权访问源代码时，请使用此选项分析计算机上安装的应用程序的内存使用量。 如果要分析你自己的应用程序开发之外的任何应用程序的内存使用量，此选项也很有用。  
   
-4.  从 **“可用工具”**中，选中 **“JavaScript 内存”** 复选框，然后选择 **“启动”**。  
+4.  从 **“可用工具”** 中，选中 **“JavaScript 内存”** 复选框，然后选择 **“启动”**。  
   
 5.  启动内存分析器时，可能会显示一个“用户帐户控制”窗口，要求你提供运行 Visual Studio ETW Collector.exe 的权限。 选择 **“是”**。  
   
@@ -113,7 +113,7 @@ JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内
   
 5.  切换到 Visual Studio（按 Alt+Tab）。  
   
-6.  通过选择 **“拍摄堆快照”**拍摄基线堆快照。  
+6.  通过选择 **“拍摄堆快照”** 拍摄基线堆快照。  
   
      下图演示了一个基线堆快照示例：  
   
@@ -301,7 +301,7 @@ JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内
  若要显示这些对象，请在窗格右上角的设置列表 ![内存分析器中的“设置”下拉列表](../profiling/media/js_mem_settings.png "JS_Mem_Settings") 中选择“显示内置对象”。  
   
 ##  <a name="Save"></a> 保存诊断会话文件  
- 诊断快照摘要与其关联的详细信息视图一起保存为 .diagsession 文件。 **“解决方案资源管理器”** 在诊断会话文件夹中显示前几个诊断会话。 在 **“解决方案资源管理器”**中，可以打开前几个会话或者删除或重命名文件。  
+ 诊断快照摘要与其关联的详细信息视图一起保存为 .diagsession 文件。 **“解决方案资源管理器”** 在诊断会话文件夹中显示前几个诊断会话。 在 **“解决方案资源管理器”** 中，可以打开前几个会话或者删除或重命名文件。  
   
 ##  <a name="JSConsoleCommands"></a> Associate source code with memory usage data  
  为帮助隔离具有内存问题的代码部分，请使用下列方法：  

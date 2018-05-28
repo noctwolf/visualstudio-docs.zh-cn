@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a41e41b4448bcec34a24464f4f62e85d0765436d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP 应用中的网络使用情况
 Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http API](/uwp/api/windows.web.http) 执行的网络操作的数据。 分析数据可以帮助你解决问题（如访问和身份验证问题、不正确的缓存用法和不良的显示和下载性能）。  
@@ -24,12 +24,12 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
 > [!NOTE]
 >  有关该网络工具的更完整说明，请参阅 [Visual Studio 的网络工具简介](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx)。  
   
-## <a name="collecting-network-tool-data"></a>收集网络工具数据  
+## <a name="collect-network-tool-data"></a>收集网络工具数据  
  你应在 Visual Studio 计算机上打开的 Visual Studio 项目中运行“网络”工具。  
   
 1.  在 Visual Studio 中打开项目。  
   
-2.  在菜单上，单击“调试/性能探查器...”。选择“网络”，然后选择“启动”。  
+2.  在菜单上，单击“调试/性能探查器”。 选择“网络”，然后选择“启动”。  
   
 3.  网络工具开始收集应用的 HTTP 流量。  
   
@@ -37,11 +37,11 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
   
 4.  选择“停止”关闭应用。  
   
- “报表”窗口应类似于以下形式：  
+ “报告”窗口应类似于以下形式：  
   
  ![“网络”窗口](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
-## <a name="analyzing-data"></a>分析数据  
+## <a name="analyze-data"></a>分析数据  
  通过选择摘要视图上显示的任何网络操作，可在运行应用的同时（甚至在已关闭应用后）分析捕获的 HTTP 流量。  
   
  “网络”摘要视图显示了应用运行过程中每个网络操作的数据。 选择一个列标题以对列表进行排序，或选择要在“内容类型”筛选器视图中显示的内容类型。  
@@ -63,7 +63,7 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
  “网络摘要”栏显示了在任何给定点显示的网络操作数目、已传输的数据量、下载这些数据所用的时间和可见的错误（带有 4xx 或 5xx 响应的请求）数目。  
   
 ### <a name="analysis-tips"></a>分析提示  
- 此工具突出显示运行网络相关分析时可能有用的某些区域：  
+ 在运行网络相关分析时，此工具突出显示某些可能有用的区域：  
   
 1.  完全来自缓存的请求在“已接收”列中显示为“(来自缓存)”。 这有助于你确定你是否在有效地使用缓存来节省用户的带宽，或是否在错误地缓存响应并为应用程序最终用户提供过时的数据。  
   
@@ -76,4 +76,4 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
  [Visual Studio 博客：Visual Studio 网络检查器简介](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [第 9 频道视频：VS 诊断工具 – 新的网络探查器](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能简介](../profiling/profiling-feature-tour.md)
+ [分析功能导览](../profiling/profiling-feature-tour.md)

@@ -9,11 +9,11 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 227b12f2da07d3d610f3d043348dc59680fc17ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 
@@ -74,7 +74,7 @@ Visual Studio 包含这些 C++ 测试框架，无需进行额外下载：
 
 ![添加 include 指令](media/cpp-write-test-methods.png "C++ 测试为头文件添加 include")
 
-TEST_CLASS 和 TEST_METHOD 属于 [Microsoft 本机测试 框架]((microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 “测试资源管理器”以类似方式发现其他受支持框架中的测试方法。
+TEST_CLASS 和 TEST_METHOD 是 [Microsoft 本机策略框架](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)的一部分。 “测试资源管理器”以类似方式发现其他受支持框架中的测试方法。
 
 TEST_METHOD 返回 void。 若要生成测试结果，请使用 `Assert` 类中的静态方法针对预期结果测试实际结果。 在以下示例中，假设 `MyClass` 具有一个采用 `std::string` 的构造函数。 我们可以测试该构造函数是否按预期方式初始化类：
 

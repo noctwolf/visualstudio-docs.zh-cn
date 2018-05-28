@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf8e9176c389aecf2844f3e4bcaeea9bcaa5803
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3b42cce6c9134a668d5096150d986e950ed8a8e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="call-tree-view---instrumentation-data"></a>“调用关系树”视图 - 检测数据
+# <a name="call-tree-view---instrumentation-data"></a>“调用树”视图 - 检测数据
 “调用树”视图中的函数值表示调用树中父函数所调用的函数实例的时间。 通过将函数实例值与分析运行期间所有函数的总已用非独占时间进行对比来得出百分比值。  
   
 ## <a name="general"></a>常规  
@@ -85,6 +85,6 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
- [“调用关系树”视图](../profiling/call-tree-view-sampling-data.md)   
- [“调用关系树”视图 - 检测](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [“调用关系树”视图 - 采样](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+ [“调用树”视图](../profiling/call-tree-view-sampling-data.md)   
+ [“调用树”视图 - 检测](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [“调用树”视图 - 采样](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

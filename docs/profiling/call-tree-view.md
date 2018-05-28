@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f098b18100bd54e8078ea0c855a1b3e51926b93
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f8973f1536ded24d2fd327aa3eac1ceee795cb54
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="call-tree-view"></a>“调用关系树”视图
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都列出它调用的所有函数以及有关这些函数调用的性能数据。  
@@ -41,13 +41,13 @@ ms.lasthandoff: 04/19/2018
   
  有关“调用树”视图中的列定义的详细信息，请参阅以下内容：  
   
- [“调用关系树”视图](../profiling/call-tree-view-sampling-data.md)  
+ [“调用树”视图](../profiling/call-tree-view-sampling-data.md)  
   
- [“调用关系树”视图](../profiling/call-tree-view-instrumentation-data.md)  
+ [“调用树”视图](../profiling/call-tree-view-instrumentation-data.md)  
   
- [“调用关系树”视图 - 采样](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
+ [“调用树”视图 - 采样](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
   
- [“调用关系树”视图](../profiling/call-tree-view-contention-data.md)  
+ [“调用树”视图](../profiling/call-tree-view-contention-data.md)  
   
 ## <a name="see-also"></a>请参阅  
  [性能报告视图](../profiling/performance-report-views.md)   

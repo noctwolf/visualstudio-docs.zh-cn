@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a78921ff3415203a26da570a1966e41538ac5535
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在负载测试方案中配置测试迭代
 
@@ -46,24 +46,24 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>指定最大测试迭代数
 
-1.  打开一个负载测试。
+1. 打开一个负载测试。
 
-2.  此时将显示负载测试编辑器。 其中显示负载测试树。
+2. 此时将显示负载测试编辑器。 其中显示负载测试树。
 
-3.  在负载测试树的“方案”文件夹中，选择要为其指定最大测试迭代数的方案节点。
+3. 在负载测试树的“方案”文件夹中，选择要为其指定最大测试迭代数的方案节点。
 
-4.  在“视图”菜单上选择“属性窗口”。
+4. 在“视图”菜单上选择“属性窗口”。
 
      该方案的类别和属性将显示在“属性”窗口中。
 
-5.  在“最大测试迭代数”属性文本框中，键入指示在运行负载测试时该方案要运行的最大测试次数。
+5. 在“最大测试迭代数”属性文本框中，键入指示在运行负载测试时该方案要运行的最大测试次数。
 
     > [!NOTE]
     > “最大测试迭代数”属性的值为 0 则指定没有最大迭代次数。
 
-6.  更改完此属性后，请选择“文件”菜单上的“保存”。 然后，可以使用新的“最大测试迭代数”值运行负载测试。
+6. 更改完此属性后，请选择“文件”菜单上的“保存”。 然后，可以使用新的“最大测试迭代数”值运行负载测试。
 
-## <a name="specifying-think-times-between-test-iterations-for-a-scenario"></a>为方案指定测试迭代之间的思考时间
+## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>为方案指定测试迭代之间的思考时间
 
 “测试迭代之间的思考时间”属性是在负载测试编辑器中编辑负载测试方案属性时使用“属性”窗口设置的。
 
@@ -72,21 +72,21 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > 有关负载测试方案属性及其说明的完整列表，请参阅[负载测试方案属性](../test/load-test-scenario-properties.md)。
 
-### <a name="to-specify-the-think-times-between-test-iterations"></a>指定测试迭代之间的思考时间
+### <a name="to-specify-the-think-time-between-test-iterations"></a>指定测试迭代之间的思考时间
 
-1.  打开一个负载测试。
+1. 打开一个负载测试。
 
      “负载测试编辑器”随即显示。 其中显示负载测试树。
 
-2.  在负载测试树的“方案”文件夹中，选择要为其指定所用代理的方案节点。
+2. 在负载测试树的“方案”文件夹中，选择要为其指定思考时间的方案节点。
 
-3.  在“视图”菜单上选择“属性窗口”。
+3. 在“视图”菜单上选择“属性窗口”。
 
      该方案的类别和属性将显示在“属性”窗口中。
 
-4.  在“测试迭代之间的思考时间”属性的值中输入一个数字，该数字表示开始下一个测试迭代之前需要等待的秒数。
+4. 在“测试迭代之间的思考时间”属性的值中输入一个数字，该数字表示开始下一个测试迭代之前需要等待的秒数。
 
-5.  更改完此属性后，请选择“文件”菜单上的“保存”。 然后，可以使用新的“测试迭代之间的思考时间”值运行负载测试。
+5. 更改完此属性后，请选择“文件”菜单上的“保存”。 然后，可以使用新的“测试迭代之间的思考时间”值运行负载测试。
 
 ## <a name="see-also"></a>请参阅
 

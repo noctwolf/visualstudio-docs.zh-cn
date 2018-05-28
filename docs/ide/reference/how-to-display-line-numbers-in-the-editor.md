@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acd70d593888f1b6945ac6b4f80b0e85de9a2f57
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 78a9cd01fc4f8ceff4b679ef81e2ce25d38624a3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>如何：显示编辑器中的行数
 可以在代码中显示或隐藏行号。
@@ -47,4 +47,4 @@ ms.lasthandoff: 04/26/2018
 
 - [自定义编辑器](../../ide/customizing-the-editor.md)
 - [“选项”对话框 ->“文本编辑器”](../../ide/reference/text-editor-options-dialog-box.md)
-- [编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [代码编辑器功能](../../ide/writing-code-in-the-code-and-text-editor.md)

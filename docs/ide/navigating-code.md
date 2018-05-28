@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78c983943f7cf99bf9dbe7ee60df06b033404719
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9293565b4a238b1486f491c5a343d83364fba088
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="navigate-code"></a>导航代码
 
@@ -149,5 +149,5 @@ Visual Studio 提供了许多用于在编辑器中导航代码的方法。 本�
 
 ## <a name="see-also"></a>请参阅
 
-- [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)
+- [代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [查看调用层次结构](../ide/reference/call-hierarchy.md)

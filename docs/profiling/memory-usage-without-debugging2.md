@@ -14,13 +14,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b51d2be6e2ec45b55b04c906a9db71843c98f427
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>分析不使用 Visual Studio 调试器情况下的内存使用率
+# <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>分析不使用 Visual Studio 调试器情况下的内存使用情况
 可以在不调试的情况下使用**内存使用率**执行以下操作  
   
 -   监视在制订方案时 Visual Studio 中应用的内存使用情况。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/19/2018
   
 1.  在 Visual Studio 中打开 C# 通用 Windows 项目。  
   
-2.  在菜单栏上，选择“调试/性能探查器...”。  
+2.  在菜单栏上，选择“调试” > “性能探查器”。  
   
 3.  选择“内存使用率”，然后选择页面底部的“启动”按钮。  
   
@@ -200,8 +200,8 @@ ms.lasthandoff: 04/19/2018
 |“非独占大小(字节)”|主要快照中对象的大小，其中包括对象中包含的对象的大小。|  
   
 ## <a name="see-also"></a>请参阅  
- [“JavaScript 内存”](../profiling/javascript-memory.md)  
+ [JavaScript 内存](../profiling/javascript-memory.md)  
  [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能简介](../profiling/profiling-feature-tour.md)  
+ [分析功能导览](../profiling/profiling-feature-tour.md)  
  [使用 C++、C# 和 Visual Basic 的 UWP 应用的性能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)（在 Visual Studio 中使用新的内存使用情况工具诊断内存问题）

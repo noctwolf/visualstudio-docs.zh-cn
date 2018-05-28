@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-using-profiler-apis"></a>演练：使用探查器 API
 本演练使用 C# 应用程序演示如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具 API。 用户将使用探查器 API 限制在检测分析期间收集的数据量。  
@@ -51,7 +51,7 @@ DataCollection.CurrentId);
   
  即使不使用 API 调用，也可以在命令行关闭数据收集。 以下步骤假定命令行生成环境配置为开发工具，并运行分析工具。 这包括 VSInstr 和 VSPerfCmd 所需的设置。 请参阅命令行分析工具。  
   
-## <a name="limiting-data-collection-using-profiler-apis"></a>使用探查器 API 限制数据收集  
+## <a name="limit-data-collection-using-profiler-apis"></a>使用探查器 API 限制数据收集  
   
 #### <a name="to-create-the-code-to-profile"></a>创建要分析的代码  
   

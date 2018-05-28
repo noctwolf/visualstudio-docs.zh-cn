@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a43c4c89153a53c31906b59ca948e1c195422f6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de9c9c790be2624c8faa3fad706929baadeddc01
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>如何：在编辑器中更改文本大小写
 
@@ -45,4 +45,4 @@ ms.lasthandoff: 04/26/2018
 
 - [自定义编辑器](../ide/customizing-the-editor.md)
 - [文本编辑器的“选项”对话框](../ide/reference/text-editor-options-dialog-box.md)
-- [编写代码](../ide/writing-code-in-the-code-and-text-editor.md)
+- [代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)

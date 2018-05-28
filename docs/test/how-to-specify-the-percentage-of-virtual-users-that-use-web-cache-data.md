@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66b6ccc1d62cdbf163a67d5c76d310f896766819
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1bf1c0ce47e96438df768776244cc26bc9ea8929
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>如何：指定使用 Web 缓存数据的虚拟用户的百分比
 
@@ -29,21 +29,21 @@ ms.lasthandoff: 04/26/2018
 
 如果对具有大量可能拥有本地缓存的图像和其他可缓存内容的返回用户的网站进行负载测试，那么将“新用户的百分比”属性设置为 100% 所生成的下载请求数将大于实际应用中所生成的请求数。 在此情况下，应当估计第一次访问网站的用户的访问百分比，然后据此设置“新用户的百分比”属性。
 
-## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>指定要用于方案的代理
+## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>指定某一方案新用户的百分比
 
-1.  打开一个负载测试。
+1. 打开一个负载测试。
 
      “负载测试编辑器”随即显示。 其中显示负载测试树。
 
-2.  在负载测试树的“方案”文件夹中，选择要为其指定所用代理的方案节点。
+2. 在负载测试树的“方案”文件夹中，选择要为其更改新用户百分比值的方案节点。
 
-3.  在“视图”菜单上选择“属性窗口”。
+3. 在“视图”菜单上选择“属性窗口”。
 
      该方案的类别和属性将显示在“属性”窗口中。
 
-4.  通过输入新用户的百分比的数值，设置“新用户的百分比”属性的值。
+4. 通过输入新用户的百分比的数值，设置“新用户的百分比”属性的值。
 
-5.  完成更改属性后，请选择“文件”菜单上的“保存”。 然后，可使用新的“新用户的百分比”值运行负载测试。
+5. 更改完此属性后，请选择“文件”菜单上的“保存”。 然后，可使用新的“新用户的百分比”值运行负载测试。
 
 ## <a name="see-also"></a>请参阅
 

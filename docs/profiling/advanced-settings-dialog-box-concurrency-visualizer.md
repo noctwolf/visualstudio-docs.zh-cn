@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cde5d1ddd5dabfd42a6a7d31284736e24fa302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>“高级设置”对话框（并发可视化工具）
 通过使用并发可视化工具中的“高级设置”对话框，可以控制如何收集跟踪。  对话框中有符号、仅我的代码、缓冲、筛选、CLR 事件、标记、提供程序和文件的选项卡。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 04/19/2018
   
  可以使用重要性级别列表筛选出重要性或 ETW 级别小于指定值的事件。  
   
-### <a name="configuring-an-existing-provider"></a>配置现有的提供程序  
+### <a name="configure-an-existing-provider"></a>配置现有的提供程序  
  若要编辑与现有提供程序相关联的设置，请在列表中将其选中，然后选择“编辑提供程序”按钮。  可以更改名称、GUID 和筛选设置。  
   
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>从并发可视化工具报告中筛选出标记数据  

@@ -9,13 +9,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f29251a7b8f5e38e5b74a6aabd17ae0ccfec7651
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 20c483b40cf1cc45b730ea67bf01ea452c42af1e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="analyze-memory-usage"></a>分析内存使用量
+# <a name="analyze-memory-usage"></a>分析内存使用情况
 使用集成了调试器的内存使用率诊断工具，查找内存泄漏和低效内存使用的情况。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照  。 可以收集 .NET、本机或混合模式（.NET 和本机）应用的快照。  
   
 -   你可以分析单个快照以了解有关内存使用的对象类型的相对影响，并在你的应用中查找低效使用内存的代码。  
@@ -36,4 +36,4 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>请参阅
  [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能简介](../profiling/profiling-feature-tour.md)
+ [分析功能导览](../profiling/profiling-feature-tour.md)

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中配置负载测试的方案启动延迟
+title: 配置负载测试的方案启动延迟
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 519efd059cbac4aca3ea281fe6c4ad042ee1ddea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>配置负载测试的方案启动延迟
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 04/26/2018
 
      “负载测试编辑器”随即显示。 其中显示负载测试树。
 
-2. 在负载测试树的“方案”文件夹中，选择要为其指定所用代理的方案节点。
+2. 在负载测试树的“方案”文件夹中，选择要为其更改启动行为的方案节点。
 
 3. 在“视图”菜单上选择“属性窗口”。
 

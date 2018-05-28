@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606af4d08ffaec87c46c394f55ffe4e37b2a940d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 631b9fc17345d5d0c00d36e42a9d3b1db633c114
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”
 设置与项目和解决方案相关的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 行为。 要访问这些选项，请选择“工具 > 选项”，展开“项目和解决方案”，然后单击“常规”。
@@ -70,6 +70,12 @@ ms.lasthandoff: 04/26/2018
 **将文件移动到新位置之前显示提示**
 
 选定后，在通过解决方案资源管理器中的操作更改文件的位置之前，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 会显示确认消息框。
+
+**重新打开有关解决方案加载的文档（Visual Studio 2017 版本 15.8 预览版 2 及更高版本）**
+ 
+在解决方案加载期间，自动重新打开上一个会话中打开的文档。 选中后，此解决方案上次关闭时打开的文档将在解决方案加载时自动打开。
+
+重新打开某些类型的文件或设计器会延迟解决方案加载。 如果不想还原解决方案的上一个上下文，请取消选中此选项以提高解决方案加载性能。
 
 ## <a name="locations-tab-options"></a>位置选项卡选项
 

@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3e7a300570cb16757c70b42db932d8af061be1a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f071a99c7a5c854fdada3aef2a379056fa17b339
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>如何：在编辑器中将 URL 显示为链接
 可选择让代码编辑器将代码中的统一资源定位器 (URL) 视为活动链接。 使用此功能时，URL 将具有以下特征：
@@ -53,4 +53,4 @@ ms.lasthandoff: 04/26/2018
 
 - [自定义编辑器](../../ide/customizing-the-editor.md)
 - [“选项”对话框 ->“文本编辑器”](../../ide/reference/text-editor-options-dialog-box.md)
-- [编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [代码编辑器功能](../../ide/writing-code-in-the-code-and-text-editor.md)

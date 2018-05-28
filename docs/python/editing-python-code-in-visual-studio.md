@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd2de34baf390371c51c5d67ad4f060d2e5b06a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="editing-python-code"></a>编辑 Python 代码
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/10/2018
 |---|---|
 | ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关编辑 Python 代码的演示，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567)（2 分 30 秒）。|
 
-有关在 Visual Studio 中编辑代码的常规文档，请参阅[在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)。 另请参阅 [Visual Studio 中的大纲显示](../ide/outlining.md)，方便你将重点放在代码的特定部分。
+有关在 Visual Studio 中编辑代码的常规文档，请参阅[代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)。 另请参阅 [Visual Studio 中的大纲显示](../ide/outlining.md)，方便你将重点放在代码的特定部分。
 
 你也可以使用 Visual Studio 对象浏览器（“视图”>“其他窗口”>“对象浏览器”或 Ctrl+W、J）检查每个模块中定义的 Python 类及这些类中定义的函数。
 

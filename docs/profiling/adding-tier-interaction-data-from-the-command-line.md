@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="adding-tier-interaction-data-from-the-command-line"></a>从命令行添加层交互数据
+# <a name="add-tier-interaction-data-from-the-command-line"></a>从命令行添加层交互数据
 
 层交互分析提供有关多层应用程序函数中同步 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 调用执行时间的附加信息，这些应用程序可与一个或多个数据库进行通信。
 
@@ -38,17 +38,17 @@ ms.lasthandoff: 05/14/2018
 
 只能在 Visual Studio Enterprise 中查看层交互数据。 基于文件的层交互报表通过 [VSPerfReport](../profiling/vsperfreport.md) 将不可用。
 
-## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>通过 VSPerfCmd 添加层交互数据
+## <a name="add-tier-interaction-data-with-vsperfcmd"></a>通过 VSPerfCmd 添加层交互数据
 
 通过 VSPerfASPNETCmd 命令行工具可访问分析工具中可用的完整功能。 若要将层交互添加到使用 VSPerfCmd 收集的分析数据，必须使用 **VSPerfCLREnv** 实用工具设置并删除启用层交互数据的环境变量。 指定的选项和收集数据所需的过程取决于要分析的应用程序类型。
 
-## <a name="profiling-stand-alone-applications"></a>分析独立应用程序
+## <a name="profile-stand-alone-applications"></a>分析独立应用程序
 
 若要将层交互数据添加到并非由另一进程运行的应用程序（例如 Windows 桌面应用程序，其对 SQLServer 数据库进行同步 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 调用），请使用 **VSPerfClrEnv /InteractionOn** 选项设置环境变量，并使用 **VSPerfClrEnv /InteractionOff** 选项将其删除。
 
 在下面的示例中，使用检测方法分析 Windows 桌面应用程序，并收集层交互数据。
 
-### <a name="profiling-a-windows-desktop-application-example"></a>分析 Windows 桌面应用程序示例
+### <a name="profile-a-windows-desktop-application-example"></a>分析 Windows 桌面应用程序示例
 
 1. 使用管理员特权打开命令提示符窗口。 单击“开始”，指向“所有程序”，再指向“附件”。 右键单击“命令提示符”，然后单击“以管理员身份运行”。
 
@@ -81,7 +81,7 @@ ms.lasthandoff: 05/14/2018
 
 有关详细信息，请参阅[分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)。
 
-## <a name="profiling-services"></a>分析服务
+## <a name="profile-services"></a>分析服务
 
 若要分析包括 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序在内的服务，请使用 **VSPerfClrEnv /GlobalInteractionOn** 选项设置环境变量，并使用 **VSPerfClrEnv /GlobalInteractionOff** 选项将其删除。
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 05/14/2018
 
 在下面的示例中，使用检测方法分析 Windows 服务，并收集层交互数据。
 
-### <a name="profiling-a-windows-service-example"></a>分析 Windows 服务示例
+### <a name="profile-a-windows-service-example"></a>分析 Windows 服务示例
 
 1. 必要时请安装该服务。
 
@@ -101,7 +101,7 @@ ms.lasthandoff: 05/14/2018
     vsperfclrenv /globaltraceon
     ```
 
-4. 初始化 TIP 环境变量。 键入以下命令
+4. 初始化 TIP 环境变量。 键入以下命令：
 
     ```cmd
     vsperfclrenv /globalinteractionon
@@ -145,7 +145,7 @@ ms.lasthandoff: 05/14/2018
 
 [分析服务](../profiling/command-line-profiling-of-services.md)
 
-## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>通过 VSPerfASPNETCmd 添加层交互数据
+## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>通过 VSPerfASPNETCmd 添加层交互数据
 
 通过 VSPerfASPNETCmd 命令行工具可轻松分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序。 与 **VSPerfCmd** 命令行工具相比，它减少了选项、不必设置任何环境变量且无需重启计算机。 通过 VSPerfASPNETCmd 的这些功能可轻松收集层交互数据。
 

@@ -9,17 +9,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 038922f5d9acd67b33c3e5a3a4d54d8be94e80c3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 562f1cf090ffe169ead30b3bd7c4bdce515d3b22
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="collecting-additional-performance-data"></a>收集其他性能数据
+# <a name="collect-additional-performance-data"></a>收集其他性能数据
 
 除使用分析方法收集的数据外，Visual Studio 分析工具还使你能够记录和查看其他数据。
 
-## <a name="common-tasks"></a>常规任务
+## <a name="common-tasks"></a>常见任务
 
 |任务|相关的内容|
 |----------|---------------------|

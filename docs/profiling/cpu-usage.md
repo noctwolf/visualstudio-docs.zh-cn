@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 267d0a55ae648c68ed4228b3ad4a206bad1f5148
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 70ecd6517878800a6ad43221556c367137a64a71
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="analyze-cpu-usage"></a>分析 CPU 的使用量
+# <a name="analyze-cpu-usage"></a>分析 CPU 使用情况
 如需调查应用中的性能问题，最好从了解其使用 CPU 的方式开始。 **CPU 使用率** 工具可显示 CPU 耗用时间执行 Visual C++、Visual C#/Visual Basic 和 JavaScript 代码的位置。 从 Visual Studio 2015 Update 1 开始，不离开调试器即可查看每个函数的 CPU 使用率细目。 可以在调试时打开和关闭 CPU 分析，并在停止执行时（例如在断点处）查看结果。  
   
 有多个选项可用于运行和管理诊断会话。 例如，你可以在本地或远程计算机上或在模拟器或仿真程序中运行“CPU 使用率”  工具。 可以分析在 Visual Studio（附加在运行的应用上）中打开的项目的性能，或启动从 Microsoft 官方商城安装的应用。 有关详细信息，请参阅[使用或不使用调试器运行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
@@ -40,7 +40,7 @@ ms.lasthandoff: 04/19/2018
   
     -   对于 Windows Phone 应用，直接从“设备”  收集数据这种方式提供的数据最准确。  
   
-2.  在“调试”  菜单上，选择“性能探查器...” 。  
+2.  在“调试”菜单上，选择“性能探查器”。  
   
 3.  选择“CPU 使用率”  ，然后选择“启动” 。  
   
@@ -56,7 +56,7 @@ ms.lasthandoff: 04/19/2018
   
  ![CpuUsage 报告](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
-## <a name="analyze-the-cpu-usage-report"></a>分析 CPU 使用量报告  
+## <a name="analyze-the-cpu-usage-report"></a>分析 CPU 使用情况报告  
   
 ###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用率调用关系树  
  若要开始了解调用关系树的信息，重新选择 `GetMaxNumberButton_Click` 段，查看调用关系树的详细信息。  
@@ -96,7 +96,7 @@ ms.lasthandoff: 04/19/2018
 |**自 CPU(毫秒)**|所选时间范围内函数调用以及该函数调用函数所耗用的毫秒数。|  
 |**模块**|包含函数的模块的名称或包含 [外部代码] 节点中的函数的模块数。|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用率调用关系树中的异步函数  
+###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用情况调用树中的异步函数  
  当编译器遇到异步方法时，它会创建一个隐藏的类来控制方法的执行。 从概念上讲，此类是状态机，其中列出了编译器生成的函数（以异步方式调用原始方法的操作），以及正确执行它们所需的回调、计划程序和迭代器。 当由父方法调用原始方法时，运行时将从父方法的执行上下文中删除该原始方法，并且在控制应用执行的系统上下文和框架代码中运行隐藏类的方法。 异步方法通常（但不总是）在一个或多个不同线程上执行。 此代码将显示在 CPU 使用率调用关系树中，作为树的顶层节点正下方的 **[外部代码]** 节点的子级。  
   
  若要在我们的示例中查看该示例，请在时间线中重新选择 `GetMaxNumberAsyncButton_Click` 段。  
