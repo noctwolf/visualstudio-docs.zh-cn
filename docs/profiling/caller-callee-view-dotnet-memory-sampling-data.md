@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5a80233a6c1aaed56770e0ec2bb6733a800ce06
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d74e6c90f1caf66cbba299ea210d6f4af6637f4e
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336095"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>“调用方/被调用方”视图 - .NET 内存采样数据
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的 .NET 内存分析数据。 “调用方/被调用方”视图包含三个网格。  
