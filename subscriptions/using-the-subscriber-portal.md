@@ -9,17 +9,18 @@ description: 了解 Visual Studio 订阅门户为你提供的所有权益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cb6e33e442a5b4d63f4c1950df382da9a439643f
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 1fc8c77e71f32e2bb559426b3447d0bbc293e785
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335926"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>使用订阅者门户 - my.<span></span>visualstudio<span></span>.com
 
 Visual Studio 订阅门户 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 为一体化资源，可利用通过 Visual Studio 订阅提供的所有权益。 
 
-需要通过与订阅相关联的身份进行登录才能使用该门户。  这可能是你的 Microsoft 帐户 (MSA) 或组织（如工作单位或学校）提供给你的电子邮件地址。  了解[登录](/visualstudio/subscriptions/signing-in)。
+需要通过与订阅相关联的身份进行登录才能使用该门户。  这可能是你的 Microsoft 帐户 (MSA) 或组织（如工作单位或学校）提供给你的电子邮件地址。  了解[登录](signing-in.md)。
 
 门户分为六页。  每一页均提供了对订阅中包含的不同产品或服务的访问权限。  这六页分别为权益、下载、产品密钥、订阅、支持和 Marketplace。  
 
