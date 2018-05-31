@@ -1,0 +1,815 @@
+- name: 分析文档
+  href: index.md
+- name: 概述
+  href: profiling-overview.md
+- name: 快速入门
+  items:
+    - name: 初探分析
+      href: profiling-feature-tour.md
+    - name: 分析 CPU 使用情况（托管）
+      href: quickstart-cpu-usage-managed.md
+    - name: 分析 CPU 使用情况（本机）
+      href: quickstart-cpu-usage-native.md
+    - name: 分析 CPU 使用情况 (ASP.NET)
+      href: quickstart-cpu-usage-aspnet.md
+- name: 教程
+  items:
+    - name: 在 Visual Studio 中分析应用程序性能
+      href: beginners-guide-to-performance-profiling.md
+    - name: 在 Visual Studio 中分析内存使用情况
+      href: memory-usage.md
+- name: 概念
+  items:
+    - name: 运行带/不带调试器的分析工具
+      href: running-profiling-tools-with-or-without-the-debugger.md
+- name: 操作指南
+  items:
+    - name: 分析 CPU 使用情况
+      href: cpu-usage.md
+      items:
+        - name: 分析通用 Windows 应用 (UWP) 中的 CPU 使用情况
+          href: analyze-cpu-usage-in-a-windows-universal-app.md
+    - name: 分析内存使用情况
+      href: analyze-memory-usage.md
+      items:
+        - name: 自定义本机 ETW 堆事件
+          href: custom-native-etw-heap-events.md
+        - name: 不使用调试器情况下的内存使用情况
+          href: memory-usage-without-debugging2.md
+    - name: 分析 GPU 使用情况
+      href: gpu-usage.md
+    - name: 分析资源消耗情况
+      href: application-timeline.md
+    - name: 使用 PerfTip
+      href: perftips.md
+    - name: 分析 JavaScript 内存
+      href: javascript-memory.md
+      items:
+        - name: 演练：查找内存泄漏 (JavaScript)
+          href: walkthrough-find-a-memory-leak-javascript.md
+    - name: 分析网络使用情况
+      href: network-usage.md
+    - name: 分析 HTML UI 响应
+      href: html-ui-responsiveness.md
+      items:
+        - name: 演练：改进 UI 响应能力 (HTML)
+          href: walkthrough-improving-ui-responsiveness-html.md
+    - name: 使用性能资源管理器
+      href: performance-explorer.md
+      items:
+        - name: Windows 8 和 Windows Server 2012 应用程序上的性能工具
+          href: performance-tools-on-windows-8-and-windows-server-2012-applications.md
+        - name: 概述（性能工具）
+          href: overviews-performance-tools.md
+          items:
+            - name: 性能会话概述
+              href: performance-session-overview.md
+            - name: 了解性能收集方法
+              href: understanding-performance-collection-methods.md
+            - name: 了解采样数据值
+              href: understanding-sampling-data-values.md
+            - name: 了解检测数据值
+              href: understanding-instrumentation-data-values.md
+            - name: 了解内存分配和对象生存期数据值
+              href: understanding-memory-allocation-and-object-lifetime-data-values.md
+            - name: 了解资源争用数据值
+              href: understanding-resource-contention-data-values.md
+            - name: CPU 和 Windows 计数器
+              href: cpu-and-windows-counters.md
+            - name: “性能资源管理器”窗口
+              href: performance-explorer-window.md
+            - name: 性能会话属性
+              href: performance-session-properties.md
+            - name: 分析和 Windows Vista 安全性
+              href: profiling-and-windows-vista-security.md
+        - name: 性能工具入门
+          href: getting-started-with-performance-tools.md
+          items:
+            - name: CPU 采样初学者指南
+              href: beginners-guide-to-cpu-sampling.md
+            - name: 收集网站性能数据
+              href: how-to-collect-performance-data-for-a-web-site.md
+            - name: 手动创建性能会话
+              href: how-to-manually-create-performance-sessions.md
+        - name: 配置性能会话
+          href: configuring-performance-sessions.md
+          items:
+            - name: 引用 Windows 符号信息
+              href: how-to-reference-windows-symbol-information.md
+            - name: 选择收集方法
+              href: how-to-choose-collection-methods.md
+            - name: 通过采样收集性能统计信息
+              href: collecting-performance-statistics-by-using-sampling.md
+              items:
+                - name: 选择采样事件
+                  href: how-to-choose-sampling-events.md
+                - name: 收集行级采样数据
+                  href: how-to-collect-line-level-sampling-data.md
+            - name: 收集 .NET 内存分配和生存期数据
+              href: collecting-dotnet-memory-allocation-and-lifetime-data.md
+            - name: 通过检测收集详细计时数据
+              href: collecting-detailed-timing-data-by-using-instrumentation.md
+              items:
+                - name: 收集 CPU 计数器数据
+                  href: how-to-collect-cpu-counter-data.md
+                - name: 重定位检测后的二进制文件
+                  href: how-to-relocate-instrumented-binaries.md
+                - name: 指定检测前和检测后命令
+                  href: how-to-specify-pre-and-post-instrument-commands.md
+                - name: 指定其他检测选项
+                  href: how-to-specify-additional-instrumentation-options.md
+            - name: 分析网页中的 JavaScript 代码
+              href: how-to-profile-javascript-code-in-web-pages.md
+            - name: 收集线程和进程并发数据
+              href: collecting-thread-and-process-concurrency-data.md
+            - name: 收集层交互数据
+              href: collecting-tier-interaction-data.md
+            - name: 收集其他性能数据
+              href: collecting-additional-performance-data.md
+              items:
+                - name: 收集 Windows 计数器数据
+                  href: how-to-collect-windows-counter-data.md
+                - name: 收集 Windows 事件跟踪 (ETW) 数据
+                  href: how-to-collect-event-tracing-for-windows-etw-data.md
+            - name: 序列化符号信息
+              href: how-to-serialize-symbol-information.md
+            - name: 设置常规的性能会话选项
+              href: setting-general-performance-session-options.md
+            - name: 设置当前会话
+              href: how-to-set-the-current-session.md
+            - name: 设置权限
+              href: how-to-set-permissions.md
+            - name: 指定要启动的二进制文件
+              href: how-to-specify-the-binary-to-start.md
+            - name: 设置性能数据文件名选项
+              href: how-to-set-performance-data-file-name-options.md
+            - name: 指定 .NET Framework 运行时
+              href: how-to-specify-the-dotnet-framework-runtime.md
+        - name: 控制数据收集
+          href: controlling-data-collection.md
+          items:
+            - name: 启动和结束性能数据收集
+              href: how-to-start-and-end-performance-data-collection.md
+            - name: 在正在运行的进程中附加和拆离性能工具
+              href: how-to-attach-and-detach-performance-tools-to-running-processes.md
+            - name: 暂停和恢复性能数据收集
+              href: how-to-pause-and-resume-performance-data-collection.md
+            - name: 将检测限定为特定 DLL
+              href: how-to-limit-instrumentation-to-specific-dlls.md
+            - name: 将检测限定为特定函数
+              href: how-to-limit-instrumentation-to-specific-functions.md
+            - name: 在检测中排除或包括短函数
+              href: how-to-exclude-or-include-short-functions-from-instrumentation.md
+        - name: 分析性能工具数据
+          href: analyzing-performance-tools-data.md
+          items:
+            - name: 使用性能规则来分析数据
+              href: using-performance-rules-to-analyze-data.md
+              items:
+                - name: 查看性能警告
+                  href: how-to-view-performance-warnings.md
+                - name: 配置性能规则
+                  href: how-to-configure-performance-rules.md
+                - name: 性能规则参考
+                  href: performance-rules-reference.md
+                  items:
+                    - name: 按 ID 排序的性能规则
+                      href: performance-rules-by-id.md
+                    - name: .NET Framework 使用情况性能规则
+                      href: dotnet-framework-usage-performance-rules.md
+                      items:
+                        - name: DA0001：使用 StringBuilder 进行串联
+                          href: da0001-use-stringbuilder-for-concatenations.md
+                        - name: DA0005：频繁进行 GC2 收集
+                          href: da0005-frequent-gc2-collections.md
+                        - name: DA0006：重写值类型的 Equals()
+                          href: da0006-override-equals-parens-for-value-types.md
+                        - name: DA0007：避免使用控制流异常
+                          href: da0007-avoid-using-exceptions-for-control-flow.md
+                        - name: DA0010：高开销 GetHashCode
+                          href: da0010-expensive-gethashcode.md
+                        - name: DA0011：高开销的 CompareTo
+                          href: da0011-expensive-compareto.md
+                        - name: DA0012：大量反射
+                          href: da0012-significant-amount-of-reflection.md
+                        - name: DA0013：String.Split 或 String.Substring 的使用率高
+                          href: da0013-high-usage-of-string-split-or-string-substring.md
+                        - name: DA0018：运行的 32 位应用程序达到了进程托管内存的限制
+                          href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
+                        - name: 'DA0021: 第 1 代垃圾回收的速率很高'
+                          href: da0021-high-rate-of-gen-1-garbage-collections.md
+                        - name: 'DA0022: 第 2 代垃圾回收的速率很高'
+                          href: da0022-high-rate-of-gen-2-garbage-collections.md
+                        - name: DA0023：垃圾回收占用的 CPU 时间很多
+                          href: da0023-high-gc-cpu-time.md
+                        - name: DA0024：垃圾回收占用的 CPU 时间过多
+                          href: da0024-excessive-gc-cpu-time.md
+                        - name: DA0038：锁争用率很高
+                          href: da0038-high-rate-of-lock-contentions.md
+                        - name: DA0039：锁争用率非常高
+                          href: da0039-very-high-rate-of-lock-contentions.md
+                    - name: 内存和分页性能规则
+                      href: memory-and-paging-performance-rules.md
+                      items:
+                        - name: DA0014：以分页方式将活动内存移到磁盘的发生率极高
+                          href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
+                        - name: DA0017：以分页方式将活动内存移到磁盘的发生率高
+                          href: da0017-high-rates-of-paging-active-memory-to-disk.md
+                    - name: 分析工具使用规则
+                      href: profiling-tools-usage-rules.md
+                      items:
+                        - name: DA0002：缺少 VSPerfCorProf.dll
+                          href: da0002-vsperfcorprof-dll-is-missing.md
+                        - name: DA0003：大量内核样本
+                          href: da0003-many-kernel-samples.md
+                        - name: DA0004：处理器使用率很高
+                          href: da0004-high-processor-usage.md
+                        - name: DA0008：收集的样本过少
+                          href: da0008-few-samples-collected.md
+                        - name: DA0026：处理过程的内核 CPU 时间过长
+                          href: da0026-excessive-kernel-cpu-time-processing.md
+                        - name: DA0029：不支持的 CLR 版本
+                          href: da0029-unsupported-clr-version.md
+                        - name: DA0030：收集数据库项目的层交互测量值
+                          href: da0030-gather-tier-interaction-measurements-for-database-projects.md
+                    - name: 资源监控性能规则
+                      href: resource-monitoring-performance-rules.md
+                      items:
+                        - name: DA0501：所分析的进程的平均 CPU 使用率
+                          href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
+                        - name: DA0502：所分析的进程的 CPU 最大消耗量
+                          href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
+                        - name: DA0503：所分析的进程的平均工作集(以字节为单位)
+                          href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
+                        - name: DA0504：所分析的进程的最大工作集(以字节为单位)
+                          href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
+                        - name: DA0505：为所分析进程分配的平均专用字节数
+                          href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
+                        - name: DA0506：为所分析的进程分配的最大专用字节数
+                          href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
+            - name: 性能报告视图
+              href: performance-report-views.md
+              items:
+                - name: 性能报告概述
+                  href: performance-report-overview.md
+                - name: 公共数据视图
+                  href: common-data-views.md
+                  items:
+                    - name: “进程”视图
+                      href: process-view.md
+                    - name: “标记”视图
+                      href: marks-view.md
+                    - name: “摘要”视图
+                      href: summary-view.md
+                    - name: “调用关系树”视图
+                      href: call-tree-view.md
+                    - name: “调用方-被调用方”视图
+                      href: caller-callee-view.md
+                    - name: “模块”视图
+                      href: modules-view.md
+                    - name: “函数”视图
+                      href: functions-view.md
+                    - name: “行”视图
+                      href: lines-view.md
+                    - name: “指令指针”(IP) 视图
+                      href: instruction-pointers-ips-view.md
+                    - name: 函数详细信息视图
+                      href: function-details-view.md
+                    - name: Windows 事件跟踪 (ETW) 报告
+                      href: event-tracing-for-windows-etw-report.md
+                - name: 探查器采样方法数据视图
+                  href: profiler-sampling-method-data-views.md
+                  items:
+                    - name: “摘要”视图 - 采样数据
+                      href: summary-view-sampling-data.md
+                    - name: “调用关系树”视图 - 采样数据
+                      href: call-tree-view-sampling-data.md
+                    - name: “模块”视图 - 采样数据
+                      href: modules-view-sampling-data.md
+                    - name: “调用方 - 被调用方”视图 - 采样数据
+                      href: caller-callee-view-sampling-data.md
+                    - name: “函数”视图 - 采样数据
+                      href: functions-view-sampling-data.md
+                    - name: “行”视图 - 采样数据
+                      href: lines-view-sampling-data.md
+                    - name: “指令指针”(IP) 视图 - 采样数据
+                      href: instruction-pointers-ips-view-sampling-data.md
+                - name: 检测方法数据视图
+                  href: instrumentation-method-data-views.md
+                  items:
+                    - name: “摘要”视图 - 检测数据
+                      href: summary-view-instrumentation-data.md
+                    - name: “调用关系树”视图 - 检测数据
+                      href: call-tree-view-instrumentation-data.md
+                    - name: “模块”视图 - 检测数据
+                      href: modules-view-instrumentation-data.md
+                    - name: “调用方-被调用方”视图 - 检测数据
+                      href: caller-callee-view-instrumentation-data.md
+                    - name: “函数”视图 - 检测数据
+                      href: functions-view-instrumentation-data.md
+                - name: .NET 内存数据视图
+                  href: dotnet-memory-data-views.md
+                  items:
+                    - name: “摘要”视图 - .NET 内存数据
+                      href: summary-view-dotnet-memory-data.md
+                    - name: .NET 内存分配视图
+                      href: dotnet-memory-allocations-view.md
+                    - name: “对象生存期”视图
+                      href: object-lifetime-view.md
+                    - name: “调用树”视图 - .NET 内存采样数据
+                      href: call-tree-view-dotnet-memory-sampling-data.md
+                    - name: “模块”视图 - .NET 内存采样数据
+                      href: modules-view-dotnet-memory-sampling-data.md
+                    - name: “调用方-被调用方”视图 - .NET 内存采样数据
+                      href: caller-callee-view-dotnet-memory-sampling-data.md
+                    - name: “函数”视图 - .NET 内存采样数据
+                      href: functions-view-dotnet-memory-sampling-data.md
+                    - name: “行”视图 - .NET 内存采样数据
+                      href: lines-view-dotnet-memory-sampling-data.md
+                    - name: “指令指针”(IP) 视图：.NET 内存采样数据
+                      href: instruction-pointers-ips-view-dotnet-memory-sampling-data.md
+                    - name: “调用树”视图 - .NET 内存检测数据
+                      href: call-tree-view-dotnet-memory-instrumentation-data.md
+                    - name: “模块”视图 - .NET 内存检测数据
+                      href: modules-view-dotnet-memory-instrumentation-data.md
+                    - name: “调用方-被调用方”视图 - .NET 内存检测数据
+                      href: caller-callee-view-net-memory-instrumentation-data.md
+                    - name: “函数”视图 - .NET 内存检测数据
+                      href: functions-view-dotnet-memory-instrumentation-data.md
+                - name: 资源争用数据视图
+                  href: resource-contention-data-views.md
+                  items:
+                    - name: “摘要”视图 - 资源争用视图
+                      href: summary-view-resource-contention-view.md
+                    - name: “调用树”视图 - 争用数据
+                      href: call-tree-view-contention-data.md
+                    - name: “模块”视图：争用数据
+                      href: modules-view-contention-data.md
+                    - name: “调用方 - 被调用方”视图 - 争用数据
+                      href: caller-callee-view-contention-data.md
+                    - name: “函数”视图 - 争用数据
+                      href: functions-view-contention-data.md
+                    - name: “资源详细信息”视图 - 争用数据
+                      href: resource-details-view-contention-data.md
+                    - name: “线程详细信息”视图 - 争用数据
+                      href: thread-details-view-contention-data.md
+                    - name: “资源争用”视图 - 争用数据
+                      href: resource-contentions-view-contention-data.md
+                    - name: “进程”视图 - 争用数据
+                      href: process-view-contention-data.md
+                    - name: “行”视图 — 争用数据
+                      href: lines-view-contention-data.md
+                    - name: “指令指针”(IP) 视图 — 争用数据
+                      href: instruction-pointers-ips-view-contention-data.md
+                - name: 层交互视图
+                  href: tier-interaction-views.md
+                  items:
+                    - name: “层交互”视图
+                      href: tier-interactions-view.md
+            - name: 自定义性能工具报告视图
+              href: customizing-performance-tools-report-views.md
+              items:
+                - name: 自定义报告视图列
+                  href: how-to-customize-report-view-columns.md
+                - name: 筛选报告视图
+                  href: filtering-report-views.md
+                - name: 从摘要时间线中筛选报告视图
+                  href: how-to-filter-report-views-from-the-summary-timeline.md
+                - name: 性能报告视图筛选器
+                  href: performance-report-view-filter.md
+                - name: 在报告视图中配置降噪
+                  href: how-to-configure-noise-reduction-in-report-views.md
+                - name: 筛选分析工具报告视图以显示“仅我的代码”
+                  href: how-to-filter-profiling-tools-report-views-to-display-just-my-code.md
+        - name: 比较性能数据文件
+          href: comparing-performance-data-files.md
+          items:
+            - name: 比较性能数据文件
+              href: how-to-compare-performance-data-files.md
+        - name: 使用性能数据文件保存符号信息
+          href: saving-symbol-information-with-performance-data-files.md
+        - name: 保存和导出性能工具数据
+          href: saving-and-exporting-performance-tools-data.md
+        - name: 通过命令行使用分析工具
+          href: using-the-profiling-tools-from-the-command-line.md
+          items:
+            - name: 从命令行指定符号文件位置
+              href: how-to-specify-symbol-file-locations-from-the-command-line.md
+            - name: 指定分析工具命令行工具的路径
+              href: specifying-the-path-to-profiling-tools-command-line-tools.md
+            - name: 使用分析方法通过命令行收集性能数据
+              href: using-profiling-methods-to-collect-performance-data-from-the-command-line.md
+            - name: 从命令行添加层交互数据
+              href: adding-tier-interaction-data-from-the-command-line.md
+            - name: 从命令行分析独立应用程序
+              href: command-line-profiling-of-stand-alone-applications.md
+              items:
+                - name: 使用探查器命令行收集独立应用程序的应用程序统计信息
+                  href: collecting-application-statistics-for-stand-alone-applications.md
+                  items:
+                    - name: 使用探查器启动独立应用程序，并通过命令行收集应用程序统计信息
+                      href: how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md
+                    - name: 将探查器附加到 .NET Framework 独立应用程序，并使用命令行收集应用程序统计信息
+                      href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md
+                    - name: 将探查器附加到本机独立应用程序，并使用命令行收集应用程序统计信息
+                      href: how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md
+                - name: 使用探查器命令行收集独立应用程序的详细计时数据
+                  href: collecting-detailed-timing-data-for-a-stand-alone-application.md
+                  items:
+                    - name: 使用探查器命令行检测独立 .NET Framework 组件，并收集计时数据
+                      href: how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md
+                    - name: 使用探查器命令行检测本机独立组件，并收集计时数据
+                      href: how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md
+                - name: 使用探查器命令行收集独立应用程序的并发数据
+                  href: collecting-concurrency-data-for-stand-alone-applications.md
+                  items:
+                    - name: 使用探查器启动独立 .NET Framework 应用程序，并通过命令行收集并发数据
+                      href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md
+                    - name: 使用探查器启动独立本机应用程序，并通过命令行收集并发数据
+                      href: how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md
+                    - name: 将探查器附加到 .NET Framework 独立应用程序，以使用命令行收集并发数据
+                      href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md
+                    - name: 将探查器附加到本机独立应用程序，并使用命令行收集并发数据
+                      href: how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md
+                - name: 使用探查器命令行收集独立应用程序的 .NET Framework 内存数据
+                  href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
+                  items:
+                    - name: 使用探查器启动独立 .NET Framework 应用程序，以使用命令行收集内存数据
+                      href: how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md
+                    - name: 将探查器附加到 .NET Framework 独立应用程序，以使用命令行收集内存数据
+                      href: how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md
+                    - name: 使用探查器命令行检测独立 .NET Framework 组件，并收集内存数据
+                      href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
+                - name: 演练：使用采样进行命令行分析
+                  href: walkthrough-command-line-profiling-using-sampling.md
+            - name: 通过命令行分析 ASP.NET Web 应用程序
+              href: command-line-profiling-of-aspnet-web-applications.md
+              items:
+                - name: 使用 VSPerfASPNETCmd 进行快速网站分析
+                  href: rapid-web-site-profiling-with-vsperfaspnetcmd.md
+                - name: 使用探查器采样方法通过命令行收集 ASP.NET Web 应用程序的应用程序统计信息
+                  href: collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md
+                  items:
+                    - name: 将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集应用程序统计信息
+                      href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
+                - name: 使用探查器检测方法通过命令行收集 ASP.NET Web 应用程序的详细计时数据
+                  href: collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md
+                  items:
+                    - name: 使用探查器命令行检测静态编译的 ASP.NET Web 应用程序，并收集详细计时数据
+                      href: how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md
+                    - name: 使用探查器命令行检测动态编译的 ASP.NET Web 应用程序，并收集详细计时数据
+                      href: how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md
+                - name: 使用探查器命令行收集 ASP.NET Web 应用程序的并发数据
+                  href: collecting-concurrency-data-for-an-aspnet-web-application.md
+                  items:
+                    - name: 将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集并发数据
+                      href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md
+                - name: 使用探查器命令行收集 ASP.NET Web 应用程序的内存数据
+                  href: collecting-memory-data-from-an-aspnet-web-application.md
+                  items:
+                    - name: 将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集内存数据
+                      href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md
+                    - name: 使用探查器命令行检测静态编译的 ASP.NET Web 应用程序，并收集内存数据
+                      href: how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md
+                    - name: 使用探查器命令行检测动态编译的 ASP.NET Web 应用程序，并收集内存数据
+                      href: how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md
+                - name: 将 Web.Config 文件修改为检测和分析动态编译的 ASP.NET Web 应用程序
+                  href: how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md
+            - name: 通过命令行分析服务
+              href: command-line-profiling-of-services.md
+              items:
+                - name: 使用探查器采样方法收集服务的应用程序统计信息
+                  href: collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md
+                  items:
+                    - name: 将探查器附加到 .NET 服务，以使用命令行收集应用程序统计信息
+                      href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
+                    - name: 将探查器附加到本机服务，以使用命令行收集应用程序统计信息
+                      href: how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md
+                - name: 使用检测方法通过探查器命令行收集服务的详细计时数据
+                  href: collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md
+                  items:
+                    - name: 使用探查器命令行检测 .NET 服务，并收集详细计时数据
+                      href: how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
+                    - name: 使用探查器命令行检测本机服务，并收集详细计时数据
+                      href: how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
+                - name: 使用探查器命令行收集服务的并发数据
+                  href: collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md
+                  items:
+                    - name: 将探查器附加到 .NET 服务，以使用命令行收集并发数据
+                      href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md
+                    - name: 将探查器附加到本机服务，以使用命令行收集并发数据
+                      href: how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md
+                - name: 使用探查器命令行收集 .NET Framework 服务的内存数据
+                  href: collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md
+                  items:
+                    - name: 将探查器附加到 .NET 服务，以使用命令行收集内存数据
+                      href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md
+                    - name: 使用探查器命令行检测 .NET Framework 服务，并收集内存数据
+                      href: how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md
+            - name: 通过命令行创建探查器报告
+              href: creating-profiler-reports-from-the-command-line.md
+              items:
+                - name: 通过命令行创建基本分析报告
+                  href: creating-basic-profiling-reports-from-the-command-line.md
+                - name: 从命令行筛选报告
+                  href: how-to-filter-reports-from-the-command-line.md
+                - name: 通过命令提示符创建探查器比较报告
+                  href: how-to-create-a-profiler-comparison-report-from-a-command-prompt.md
+                - name: 创建分析工具调用跟踪报告
+                  href: how-to-create-a-profiling-tools-call-trace-report.md
+                - name: 通过命令行创建可移植的分析数据文件
+                  href: creating-portable-profiling-data-files-from-the-command-line.md
+                - name: 创建分析工具 ETW 报告
+                  href: how-to-create-a-profiling-tools-etw-report.md
+            - name: 安装独立探查器
+              href: how-to-install-the-stand-alone-profiler.md
+            - name: 命令行分析工具参考
+              href: command-line-profiling-tools-reference.md
+              items:
+                - name: VSInstr
+                  href: vsinstr.md
+                - name: VSInstr 警告
+                  href: vsinstr-warnings.md
+                - name: VSPerf
+                  href: vsperf.md
+                - name: VSPerfCmd
+                  href: vsperfcmd.md
+                  items:
+                    - name: Start
+                      href: start.md
+                    - name: CrossSession
+                      href: crosssession.md
+                    - name: 输出
+                      href: output.md
+                    - name: WinCounter
+                      href: wincounter.md
+                    - name: 计数器
+                      href: counter.md
+                    - name: WaitStart
+                      href: waitstart.md
+                    - name: AutoMark
+                      href: automark.md
+                    - name: User (VSPerfCmd)
+                      href: user-vsperfcmd.md
+                    - name: QueryCounters
+                      href: querycounters.md
+                    - name: Events (VSPerfCmd)
+                      href: events-vsperfcmd.md
+                    - name: 关闭
+                      href: shutdown.md
+                    - name: GlobalOn 和 GlobalOff
+                      href: globalon-and-globaloff.md
+                    - name: ProcessOn 和 ProcessOff
+                      href: processon-and-processoff.md
+                    - name: ThreadOn 和 ThreadOff
+                      href: threadon-and-threadoff.md
+                    - name: GC (VSPerfCmd)
+                      href: gc-vsperfcmd.md
+                    - name: 启动
+                      href: launch.md
+                    - name: Attach
+                      href: attach.md
+                    - name: Args
+                      href: args.md
+                    - name: 标记
+                      href: mark.md
+                    - name: Detach
+                      href: detach.md
+                    - name: PF
+                      href: pf.md
+                    - name: Sys (VSPerfCmd)
+                      href: sys-vsperfcmd.md
+                    - name: 计时器
+                      href: timer.md
+                    - name: LineOff
+                      href: lineoff.md
+                    - name: 控制台
+                      href: console.md
+                    - name: 状态
+                      href: status.md
+                    - name: TargetCLR
+                      href: targetclr.md
+                - name: VSPerfMon
+                  href: vsperfmon.md
+                - name: VSPerfReport
+                  href: vsperfreport.md
+                - name: VSPerfCLREnv
+                  href: vsperfclrenv.md
+                - name: VSPerfASPNetCmd
+                  href: vsperfaspnetcmd.md
+        - name: 针对 HPC（高性能计算）群集进行分析
+          href: profiling-on-hpc-high-performance-computing-clusters.md
+        - name: 分析工具 API
+          href: profiling-tools-apis.md
+          items:
+            - name: Visual Studio 探查器 API 参考（本机）
+              href: visual-studio-profiler-api-reference-native.md
+              items:
+                - name: CommentMarkAtProfile
+                  href: commentmarkatprofile.md
+                - name: CommentMarkProfile
+                  href: commentmarkprofile.md
+                - name: MarkProfile
+                  href: markprofile.md
+                - name: NameProfile
+                  href: nameprofile.md
+                - name: ResumeProfile
+                  href: resumeprofile.md
+                - name: StartProfile
+                  href: startprofile.md
+                - name: StopProfile
+                  href: stopprofile.md
+                - name: SuspendProfile
+                  href: suspendprofile.md
+                - name: PROFILE_CURRENTID
+                  href: profile-currentid.md
+            - name: 演练：使用探查器 API
+              href: walkthrough-using-profiler-apis.md
+        - name: 分析 ASP.NET 负载测试
+          href: profiling-aspnet-load-tests.md
+        - name: 性能工具问题疑难解答
+          href: troubleshooting-performance-tools-issues.md
+    - name: 并发可视化工具
+      href: concurrency-visualizer.md
+      items:
+        - name: 性能不佳的多线程应用程序的常见模式
+          href: common-patterns-for-poorly-behaved-multithreaded-applications.md
+        - name: 使用率导航器
+          href: utilization-navigator.md
+        - name: 使用率视图
+          href: utilization-view.md
+          items:
+            - name: CPU 使用率图
+              href: cpu-utilization-graph.md
+            - name: CPU 平均利用率
+              href: average-cpu-utilization.md
+            - name: “缩放”控件（使用率视图）
+              href: zoom-control-utilization-view.md
+            - name: GPU 活动关系图
+              href: gpu-activity-graph.md
+            - name: GPU 活动(分页)
+              href: gpu-activity-paging.md
+            - name: GPU 活动(此进程)
+              href: gpu-activity-this-process.md
+            - name: GPU 活动(其他进程)
+              href: gpu-activity-other-processes.md
+        - name: 线程视图（并行性能）
+          href: threads-view-parallel-performance.md
+          items:
+            - name: 阻塞时间配置文件报表
+              href: blocking-time-profile-report.md
+            - name: 通道（线程视图）
+              href: channels-threads-view.md
+            - name: 复制选择
+              href: copy-selection.md
+            - name: 当前选项卡
+              href: current-tab.md
+            - name: 磁盘操作报告（线程视图）
+              href: disk-operations-report-threads-view.md
+            - name: 空时间线分段
+              href: empty-timeline-segment.md
+            - name: 执行分析报告
+              href: execution-profile-report.md
+            - name: 执行时间（线程视图）
+              href: execution-time-threads-view.md
+            - name: “导出”按钮（并发可视化工具）
+              href: export-button-concurrency-visualizer.md
+            - name: I/O 时间（“线程”视图）
+              href: i-o-time-threads-view.md
+            - name: 仅我的代码（线程视图）
+              href: just-my-code-threads-view.md
+            - name: 管理通道
+              href: manage-channels.md
+            - name: 标记报告
+              href: markers-report.md
+            - name: 打开/关闭度量模式
+              href: measure-mode-on-off.md
+            - name: 内存管理时间
+              href: memory-management-time.md
+            - name: 出现多个类别
+              href: multiple-categories-are-present.md
+            - name: 不显示磁盘活动（线程视图）
+              href: no-disk-activity-to-show-threads-view.md
+            - name: 不显示线程活动（线程视图）
+              href: no-thread-activity-to-show-threads-view.md
+            - name: 降噪百分比
+              href: noise-reduction-percentage.md
+            - name: “每线程摘要”报告
+              href: per-thread-summary-report.md
+            - name: 抢占时间
+              href: preemption-time.md
+            - name: 基于可见时间范围的报表
+              href: report-based-on-visible-time-range.md
+            - name: 睡眠时间
+              href: sleep-time.md
+            - name: 同步时间
+              href: synchronization-time.md
+            - name: 线程就绪连接器
+              href: thread-ready-connector.md
+            - name: 时间线插入符号
+              href: timeline-caret.md
+            - name: UI 处理时间
+              href: ui-processing-time.md
+            - name: 取消阻塞堆栈
+              href: unblocking-stack.md
+            - name: 可见时间线分析
+              href: visible-timeline-profile.md
+            - name: 缩放控件（线程视图）
+              href: zoom-control-threads-view.md
+        - name: 内核视图
+          href: cores-view.md
+          items:
+            - name: 内核视图图例
+              href: cores-view-legend.md
+            - name: 内核视图的逻辑内核数
+              href: cores-view-logical-cores.md
+            - name: 内核视图时间线
+              href: cores-view-timeline.md
+            - name: 内核视图缩放工具
+              href: cores-view-zoom-tool.md
+        - name: “高级设置”对话框（并发可视化工具）
+          href: advanced-settings-dialog-box-concurrency-visualizer.md
+        - name: 并发可视化工具标记
+          href: concurrency-visualizer-markers.md
+          items:
+            - name: 标志标记
+              href: flag-markers.md
+            - name: 消息标记
+              href: message-markers.md
+            - name: 范围标记
+              href: span-markers.md
+            - name: 将 EventSource 事件作为标记可视化
+              href: visualizing-eventsource-events-as-markers.md
+        - name: 并发可视化工具 SDK
+          href: concurrency-visualizer-sdk.md
+          items:
+            - name: 使用并发可视化工具标记 SDK
+              href: how-to-use-the-concurrency-visualizer-markers-sdk.md
+            - name: C++ 库参考
+              href: cpp-library-reference.md
+              items:
+                - name: Concurrency 命名空间（并发可视化工具）
+                  href: concurrency-namespace-concurrency-visualizer.md
+                  items:
+                    - name: Diagnostic 命名空间
+                      href: diagnostic-namespace.md
+                      items:
+                        - name: span 类
+                          href: span-class.md
+                          items:
+                            - name: 'span::~span 析构函数'
+                              href: span-tilde-span-destructor.md
+                            - name: 'span::span 构造函数'
+                              href: span-span-constructor.md
+                        - name: marker_series 类
+                          href: marker-series-class.md
+                          items:
+                            - name: 'marker_series::~marker_series 析构函数'
+                              href: marker-series-tilde-marker-series-destructor.md
+                            - name: 'marker_series::is_enabled 方法'
+                              href: marker-series-is-enabled-method.md
+                            - name: 'marker_series::marker_series 构造函数'
+                              href: marker-series-marker-series-constructor.md
+                            - name: 'marker_series::write_alert 方法'
+                              href: marker-series-write-alert-method.md
+                            - name: 'marker_series::write_flag 方法'
+                              href: marker-series-write-flag-method.md
+                            - name: 'marker_series::write_message 方法'
+                              href: marker-series-write-message-method.md
+                        - name: marker_importance 枚举
+                          href: marker-importance-enumeration.md
+            - name: C 库参考
+              href: c-library-reference.md
+              items:
+                - name: CvCreateDefaultMarkerSeriesOfDefaultProvider 函数
+                  href: cvcreatedefaultmarkerseriesofdefaultprovider-function.md
+                - name: CvCreateMarkerSeries 函数
+                  href: cvcreatemarkerseries-function.md
+                - name: CvCreateMarkerSeriesWithCodePageA 函数
+                  href: cvcreatemarkerserieswithcodepagea-function.md
+                - name: CvEnterSpan 函数
+                  href: cventerspan-function.md
+                - name: CvInitProvider 函数
+                  href: cvinitprovider-function.md
+                - name: CvIsEnabled 函数
+                  href: cvisenabled-function.md
+                - name: CvLeaveSpan 函数
+                  href: cvleavespan-function.md
+                - name: CvReleaseMarkerSeries 函数
+                  href: cvreleasemarkerseries-function.md
+                - name: CvReleaseProvider 函数
+                  href: cvreleaseprovider-function.md
+                - name: CvWriteAlert 函数
+                  href: cvwritealert-function.md
+                - name: CvWriteFlag 函数
+                  href: cvwriteflag-function.md
+                - name: CvWriteMessage 函数
+                  href: cvwritemessage-function.md
+        - name: 并发可视化工具命令行实用工具 (CVCollectionCmd)
+          href: concurrency-visualizer-command-line-utility-cvcollectioncmd.md
+    - name: 分析应用商店应用中的能量使用
+      href: analyze-energy-use-in-store-apps.md
+- name: 资源
+  items:
+    - name: 分析工具中的新增功能
+      href: what-s-new-in-profiling-tools.md

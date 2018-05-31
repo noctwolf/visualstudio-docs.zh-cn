@@ -12,21 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c50e27ef43acc62c1dcf13403ce510064c986541
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c3c7c70057380289272e86cf7187680746dafdd2
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336040"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>“调用树”视图 - .NET 内存采样数据
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都会列出它调用的所有函数以及有关这些函数调用的 .NET 内存分配数据。  
   
  “调用关系树”视图中的值对应于调用树中父函数所调用的函数实例。 通过将函数实例值与分析运行中的分配总数或大小进行对比计算出百分比值。  
   
-## <a name="highlighting-the-execution-hot-path"></a>突出显示执行热路径  
+## <a name="highlight-the-execution-hot-path"></a>突出显示执行热路径  
  “调用树”视图可以展开并突出显示创建最大或最多内存对象的进程或函数的执行路径。 若要显示最活跃的路径，请右键单击该进程或函数，然后单击“展开热路径”。  
   
-## <a name="setting-the-call-tree-root-node"></a>设置调用树根节点  
+## <a name="set-the-call-tree-root-node"></a>设置调用树根节点  
  分析运行中的每个进程均显示为根节点。 若要将“调用树”视图的开始节点设置为其他节点，请右键单击要设置为开始节点的节点，然后选择“设置根”。  
   
  设置根节点后，将从视图中排除所选节点的子树之外的所有其他条目。 可将根节点重置为刚才查看的节点，在“调用树”视图窗口中右键单击并选择“重置根”。  
@@ -52,6 +53,6 @@ ms.lasthandoff: 04/19/2018
 |**独占字节数百分比**|分析运行期间分配的属于此函数的独占分配的所有内存字节数的百分比。|  
   
 ## <a name="see-also"></a>请参阅  
- [“调用关系树”视图 - 检测](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [“调用关系树”视图](../profiling/call-tree-view-sampling-data.md)   
- [“调用关系树”视图](../profiling/call-tree-view-instrumentation-data.md)
+ [“调用树”视图 - 检测](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [“调用树”视图](../profiling/call-tree-view-sampling-data.md)   
+ [“调用树”视图](../profiling/call-tree-view-instrumentation-data.md)
