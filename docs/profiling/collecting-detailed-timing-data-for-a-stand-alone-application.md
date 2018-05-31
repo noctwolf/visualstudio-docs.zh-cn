@@ -13,41 +13,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf99a6e701e775653cf1524e0e7850761909621
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 7203a337e69fd83ad97ee50c383f784ec0087d31
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335809"
 ---
-# <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用探查器命令行收集独立应用程序的详细计时数据
+# <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用探查器命令行收集独立应用程序的详细计时数据
 本部分介绍从命令行使用检测方法收集客户端（独立）组件的详细性能数据的步骤和选项。  
   
-## <a name="common-tasks"></a>常规任务  
+## <a name="common-tasks"></a>常见任务  
   
 |任务|相关的内容|  
 |----------|---------------------|  
 |**使用检测分析 .NET Framework 应用程序**|-   [如何：检测 .NET 组件并收集详细计时数据](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**使用检测分析 C/C++ 应用程序**|-   [如何：检测本机组件和收集详细计时数据](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**使用检测分析 C/C++ 应用程序**|-   [如何：检测本机组件并收集详细计时数据](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
 |**添加层交互数据**|-   [收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-## <a name="related-tasks"></a>相关任务  
+## <a name="related-tasks"></a>相关任务
   
-### <a name="profiling-stand-alone-applications"></a>分析独立应用程序  
+### <a name="profile-stand-alone-applications"></a>分析独立应用程序  
   
 |任务|相关内容|  
 |----------|---------------------|  
-|**使用采样分析应用程序**|-   [使用采样法收集应用程序统计信息](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
+|**使用采样分析应用程序**|-   [使用采样收集应用程序统计信息](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
 |**分析 .NET 内存分配和垃圾回收**|-   [收集 .NET Framework 内存数据](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
 |**分析资源争用和线程活动**|-   [收集并发数据](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
   
-### <a name="profiling-by-using-the-instrumentation-method"></a>使用检测方法进行分析  
+### <a name="profile-by-using-the-instrumentation-method"></a>使用检测方法进行分析  
   
 |任务|相关内容|  
 |----------|---------------------|  
 |**分析 ASP.NET 应用程序**|-   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
 |**分析服务**|-   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
   
-### <a name="analyzing-instrumentation-data-views-and-reports"></a>分析检测数据视图和报告  
+### <a name="analyze-instrumentation-data-views-and-reports"></a>分析检测数据视图和报告  
  [检测方法数据视图](../profiling/instrumentation-method-data-views.md)  
   
 ## <a name="reference"></a>参考  
