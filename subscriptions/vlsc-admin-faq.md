@@ -9,11 +9,12 @@ description: 批量许可服务中心管理迁移常见问题解答
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 014564880dcc7587a1f94e3815d6f36edb36cee3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e4dda4264ae48903e98166346f9e2569ab1e4da0
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336121"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio 订阅管理迁移
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/06/2018
 我们会在迁移组织的前一周向主要/通知联系人发送一封电子邮件，邀请他们完成加入过程。 我们也会向订阅管理者发送一封电子邮件，让他们了解我们已联系主要/通知联系人，并详细介绍了帮助确保顺利加入的方法。 了解如何[找到组织的主要/通知联系人](#How-do-I-find-out-who-my-Primary-or-Notices-Contact-is?)。 
 
 ### <a name="is-onboarding-different-from-migration"></a>加入与迁移不同吗？
-是的。  此过程包括以下两个阶段。 迁移前迁移（或加入）组织可确保管理员的工作不会受到干扰。 组织的信息迁移后，你就能在新门户中管理 Visual Studio 订阅。 如果主要/通知联系人未在迁移之前加入，则在你完成加入过程之前，订阅管理员将被阻止且无法管理订阅。 
+可以。  此过程包括以下两个阶段。 迁移前迁移（或加入）组织可确保管理员的工作不会受到干扰。 组织的信息迁移后，你就能在新门户中管理 Visual Studio 订阅。 如果主要/通知联系人未在迁移之前加入，则在你完成加入过程之前，订阅管理员将被阻止且无法管理订阅。 
 
 ### <a name="what-is-the-onboarding-process"></a>什么是加入过程？
 主要/通知联系人将收到一封邀请其完成加入过程的电子邮件。 有关该过程的说明，请参阅下文。 
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/06/2018
 
     输入 PCN 后，他们将转到可以添加超级管理员和管理员（以前称为“订阅管理员”）的页面。 在理想情况下，此操作应在组织的迁移日期之前完成，以便订阅管理中断。 
 
-3.  **访问新的订阅管理门户：**组织迁移后，将向超级管理员和管理员发送电子邮件，邀请他们访问新的门户并开始管理订阅。 
+3.  **访问新的订阅管理门户：** 组织迁移后，将向超级管理员和管理员发送电子邮件，邀请他们访问新的门户并开始管理订阅。 
 
 > [!NOTE] 
 > 如果主要联系人或通知联系人收到多封电子邮件，这意味着他们具有多个 PCN。 他们需要使用每封电子邮件中引用的 PCN 的唯一链接完成该过程。 
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/06/2018
 登录到 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 并按以下路径导航：“订阅” > “Visual Studio 订阅”。 PCN 位于“协议/公共客户编号结果”之下。 请参阅这篇[帮助文章](/find-pcn/)，了解查找 PCN 的相关分步指导。 
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>如何找出主要联系人或通知联系人是谁？
-登录到 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 并按以下路径导航：“许可证”>“关系汇总”，然后选择“许可 ID”>“联系人”。 请参阅这篇[帮助文章](/find-primary-contact/)，了解查找主要联系人或通知联系人的相关分步指导。 
+登录到 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 并按以下路径导航：“许可证”>“关系汇总”，然后选择“许可 ID”>“联系人”。 请参阅这篇[帮助文章](find-primary-contact.md)，了解查找主要联系人或通知联系人的相关分步指导。 
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>如果我的主要联系人或通知联系人已离职、不再就职于这家公司或无法完成加入，该怎么办？
 你需要[联系支持人员](https://www.visualstudio.com/subscriptions/support/#talktous)并提供在 VLSC 中用于管理订阅的电子邮件。 验证后，支持人员将帮助你执行加入过程。 
@@ -106,8 +107,8 @@ ms.lasthandoff: 04/06/2018
 
 - Visual Studio 订阅和管理[支持](https://www.visualstudio.com/subscriptions/support/) 
 
-- [如何查找 PCN](/find-pcn/)
+- [如何查找 PCN](find-pcn.md)
 
-- [如何查找主要联系人或通知联系人](/find-primary-contact/) 
+- [如何查找主要联系人或通知联系人](find-primary-contact.md) 
 
 - 加入组织和管理管理员的相关[视频](https://www.youtube.com/watch?v=ZmnywYGSFMg&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=1&t=0s) 

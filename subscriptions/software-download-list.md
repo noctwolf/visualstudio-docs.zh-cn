@@ -9,11 +9,12 @@ description: 查找 Visual Studio 订阅随附的软件下载列表。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c59565e903947df54ec0ae593421ee0cc447e8c5
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 7958ccedb28a14763264cd590e83d5e8e7fbbcdf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335835"
 ---
 # <a name="how-do-i-know-what-software-is-available-for-download"></a>我如何知道哪些软件可供下载？
 
@@ -21,7 +22,7 @@ ms.lasthandoff: 04/06/2018
 
 如果已具有 Visual Studio 订阅： 
 1. 转到 [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
-2. 登录到你的订阅。  （获取帮助[登录](/visualstudio/subscriptions/signing-in)。）
+2. 登录到你的订阅。  （获取帮助[登录](signing-in.md)。）
 3. 登录成功后，你将能够搜索所需的下载内容。  此外，你还可以看到一个热门下载列表，可以通过数个标准中的任何一个进行排序。 
 
 要快速查找产品，请使用页面顶部的“搜索”功能或单击左侧的其他产品类型。

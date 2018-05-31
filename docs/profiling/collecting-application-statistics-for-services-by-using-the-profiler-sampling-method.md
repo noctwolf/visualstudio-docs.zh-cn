@@ -10,19 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a66a9209f306c8a7c6872c886c96a09f4323ccc
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: bb6e5fe61e6210826ce0b37ae2650da8d6af86c9
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335601"
 ---
-# <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>使用探查器采样方法收集服务的应用程序统计信息
+# <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>使用探查器采样方法收集服务的应用程序统计信息
 本部分介绍从命令行使用采样方法收集 Windows 服务的性能统计信息的步骤和选项。  
   
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
-## <a name="common-tasks"></a>常规任务  
+## <a name="common-tasks"></a>常见任务  
   
 |任务|相关内容|  
 |----------|---------------------|  
@@ -32,7 +33,7 @@ ms.lasthandoff: 05/11/2018
   
 ## <a name="related-tasks"></a>相关任务  
   
-### <a name="profiling-windows-services"></a>分析 Windows 服务  
+### <a name="profile-windows-services"></a>分析 Windows 服务  
   
 |任务|相关内容|  
 |----------|---------------------|  
@@ -40,12 +41,15 @@ ms.lasthandoff: 05/11/2018
 |**分析 .NET 内存分配和垃圾回收**|-   [收集 .NET 内存数据](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
 |**分析资源争用和线程活动**|-   [收集并发数据](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
-### <a name="profiling-by-using-the-sampling-method"></a>使用采样方法进行分析  
+
+### <a name="profile-by-using-the-sampling-method"></a>使用采样方法进行分析  
   
 |任务|相关内容|  
 |----------|---------------------|  
-|**分析独立（客户端）应用程序**|-   [使用采样法收集应用程序统计信息](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|**分析 ASP.NET Web 应用程序**|-   [使用采样法收集应用程序统计信息](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|  
+|**分析独立（客户端）应用程序**|-   [使用采样收集应用程序统计信息](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
+|**分析 ASP.NET Web 应用程序**|-   [使用采样收集应用程序统计信息](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|  
   
-### <a name="analyzing-sampling-data-views-and-reports"></a>分析采样数据视图和报告  
+### <a name="analyze-sampling-data-views-and-reports"></a>分析采样数据视图和报告  
  [采样方法数据视图](../profiling/profiler-sampling-method-data-views.md)
+
+  
