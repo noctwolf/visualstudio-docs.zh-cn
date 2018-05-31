@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d194ddfb83570b4e2a5461dc70a0368215aaca5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 5cece8a5b97f3a9c78bdda8c5e841661d2b4d58d
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335575"
 ---
-# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行同时启用独立的 .NET Framework 应用程序和探查器，以收集并发数据
+# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用探查器启动独立 .NET Framework 应用程序，并通过命令行收集并发数据
 本主题介绍了如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动 .NET Framework 独立（客户端）应用程序，并收集进程和线程并发数据  
   
 > [!NOTE]
@@ -24,7 +25,7 @@ ms.lasthandoff: 05/11/2018
   
  将探查器附加到应用程序时，可以暂停和恢复数据收集。 若要结束分析会话，探查器不得再附加于应用程序，并且必须显示关闭探查器。  
   
-## <a name="starting-the-application-with-the-profiler"></a>用探查器启动应用程序  
+## <a name="start-the-application-with-the-profiler"></a>用探查器启动应用程序  
  若要使用探查器启动 .NET Framework 目标应用程序，请使用 VSPerfClrEnv.exe 设置 .NET Framework 分析变量。 然后，使用 VSPerfCmd /start和 /launch 选项，以初始化探查器并启动应用程序。 可以在单个命令行中指定 **/start** 和 **/launch** 及其各自的选项。 还可以向命令行添加 /globaloff 选项，以在目标应用程序启动时暂停数据收集。 然后，对单独命令行使用 /globalon，以开始收集数据。  
   
 #### <a name="to-start-an-application-with-the-profiler"></a>用探查器启动应用程序  
@@ -67,7 +68,7 @@ ms.lasthandoff: 05/11/2018
     |[/console](../profiling/console.md)|在另一个窗口中启动目标命令行应用程序。|  
     |[/targetclr](../profiling/targetclr.md) **:** `Version`|指定应用程序中加载公共语言运行时 (CLR) 的多个版本时要分析的运行时的版本。|  
   
-## <a name="controlling-data-collection"></a>控制数据收集  
+## <a name="control-data-collection"></a>控制数据收集  
  目标应用程序运行时，可以通过使用 VSPerfCmd.exe 选项开始和停止向文件的数据写入，从而控制数据收集。 通过控制数据收集，使你能够针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
   
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
@@ -80,7 +81,7 @@ ms.lasthandoff: 05/11/2018
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** 将启动由进程 ID (`PID`) 或进程名称 (ProcName) 指定的进程的数据收集。 **/detach** 将停止指定进程或所有进程（未指定任何特定进程时）的数据收集。|  
   
-## <a name="ending-the-profiling-session"></a>结束分析会话  
+## <a name="end-the-profiling-session"></a>结束分析会话  
  若要结束分析会话，探查器不得再收集数据。 可以通过关闭所分析的应用程序或调用 **VSPerfCmd /detach** 选项来停止收集并发数据。 然后，可以调用 **VSPerfCmd /shutdown** 选项关闭探查器和分析数据文件。 **VSPerfClrEnv /off** 命令会清除分析环境变量。  
   
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  

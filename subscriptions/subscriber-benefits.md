@@ -9,11 +9,12 @@ description: 了解 Visual Studio 订阅中包含的权益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335588"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio 订阅中包含的权益
 
@@ -22,7 +23,7 @@ Visual Studio 订阅提供最全面的资源集合，便于你在首选平台和
 权益分为以下三类：
 
 ## <a name="tools"></a>工具
-工具类别提供了一组种类丰富的权益，包括 [Visual Studio IDE](/vs-ide-benefit/)、[Visual Studio Team Services](/vs-vsts/) 和 [Azure](/vs-azure/)等核心权益。  根据订阅级别，你还会看到 Windows 和 Office 365 开发人员帐户、Visual Studio App Center，以及 WhiteSource Bolt 和 ModernRequirements 等合作伙伴提供的权益。
+工具类别提供了一组种类丰富的权益，包括 [Visual Studio IDE](vs-ide-benefit.md)、[Visual Studio Team Services](vs-vsts.md) 和 [Azure](vs-azure.md)等核心权益。  根据订阅级别，你还会看到 Windows 和 Office 365 开发人员帐户、Visual Studio App Center，以及 WhiteSource Bolt 和 ModernRequirements 等合作伙伴提供的权益。
 
 ## <a name="professional-development"></a>专业开发
 为帮助你持续增强技能并关注最新技术，我们提供了一些来自业界领导者的最佳在线培训。 例如，可用的优质内容包括：

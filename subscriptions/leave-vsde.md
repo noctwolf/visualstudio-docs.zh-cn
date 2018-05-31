@@ -9,18 +9,19 @@ description: 了解如何退出 Visual Studio Dev Essentials 计划
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4a24547d29513d0e06531041b51d0dea897acace
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 383216b898e9eef62fbe825454cda4ed6c11ea2c
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335861"
 ---
 # <a name="how-do-i-leave-the-visual-studio-dev-essentials-program"></a>如何退出 Visual Studio Dev Essentials 计划？ 
 
 如果你想退出 Visual Studio Dev Essentials 计划，请执行以下步骤：
 
 1. 转到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
-2. 登录到你的订阅。  （获取帮助[登录](/visualstudio/subscriptions/signing-in)。）
+2. 登录到你的订阅。  （获取帮助[登录](signing-in.md)。）
 3. 一旦成功登录，将显示当前订阅列表。
 4. 在与 Visual Studio Dev Essentials 关联的行中，单击最右侧“链接”列中的“离开计划”。
 5. 将显示一个弹出窗口。 选择“确认”。 
