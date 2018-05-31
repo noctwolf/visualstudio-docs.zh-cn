@@ -1,27 +1,29 @@
 ---
-title: "forEach 方法 (Map) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: forEach 方法 (Map) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9cdf0adc-77c7-4407-8ba7-ada0fb09e507
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d0ffa12b9a1995df14f4868872238cdc45b674a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 549d7d625fb4dfe88b2db69e6aa0ff66c7e90f66
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335796"
 ---
 # <a name="foreach-method-map-javascript"></a>forEach 方法 (Map) (JavaScript)
 地图中每个元素执行指定的操作。  
@@ -34,10 +36,10 @@ mapObj.forEach(callbackfn[, thisArg])
   
 #### <a name="parameters"></a>参数  
  `mapObj`  
- 必需。 一个 `Map` 对象。  
+ 必须的。 一个 `Map` 对象。  
   
  `callbackfn`  
- 必需。 该函数的`forEach`映射中每个元素调用一次。 `callbackfn`接受最多三个自变量。 `forEach`调用`callbackfn`函数映射中每个元素的一次。  
+ 必须的。 该函数的`forEach`映射中每个元素调用一次。 `callbackfn` 接受最多三个自变量。 `forEach` 调用`callbackfn`函数映射中每个元素的一次。  
   
  `thisArg`  
  可选。 一个对象，`this`关键字可引用在`callbackfn`函数。 如果省略 `thisArg`，则 `undefined` 将用作 `this` 值。  
@@ -52,7 +54,7 @@ mapObj.forEach(callbackfn[, thisArg])
   
  下表中所示，可以通过使用最多三个参数，声明回调函数。  
   
-|回调参数|定义|  
+|回调自变量|定义|  
 |-----------------------|----------------|  
 |`value`|在映射中包含的值。|  
 |`key`|在映射中包含的密钥。|  
@@ -68,8 +70,8 @@ m.set(2, "red");
 m.set("colors", 2);  
 m.set({x:1}, 3);  
   
-m.forEach(function (item, key, mapObj) {  
-    document.write(item.toString() + "<br />");  
+m.forEach(function (value, key, mapObj) {  
+    document.write(value.toString() + "<br />");  
 });  
   
 document.write("<br />");  

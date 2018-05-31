@@ -9,11 +9,12 @@ description: 了解订阅管理员可以访问管理员门户的方式并管理�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 mearchscope: VS Subscription
-ms.openlocfilehash: 33ed7f26e146efffb66b7fabde65dc45276d085d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e403e1d8282b3f0a18058105bca0150938a956cf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335887"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>访问门户和管理管理员 - 针对通过批量许可 (VL) 获取的订阅
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/06/2018
 
      a. 在电子邮件中，向“主要联系人”和“通知联系人”提供了唯一的链接及其公共客户编号 (PCN) 的最后三位数字。  （如果主要联系人或通知联系人收到多封电子邮件，这意味着他们具有多个 PCN。 他们需要使用每封电子邮件中引用的 PCN 的唯一链接完成该过程。）
 
-     b. 若要获得完整的 PCN，主要联系人需要登录到 VLSC。 [有关查找 PCN 的说明](/find-pcn/) 
+     b. 若要获得完整的 PCN，主要联系人需要登录到 VLSC。 [有关查找 PCN 的说明](find-pcn.md) 
 
      c. 获得 PCN 后，他们需要选择自己的唯一链接，该链接将提示他们登录。 他们可以使用工作或学校帐户（如果组织在 AAD 中）或 Microsoft 帐户 (MSA)（如果组织不在 AAD 中）。 
 
@@ -46,6 +47,6 @@ ms.lasthandoff: 04/06/2018
 
 3.  访问新的订阅管理门户。 组织迁移后，将向新添加的超级管理员和管理员发送电子邮件，邀请他们访问新的门户并开始管理订阅。  
 
-如果需要添加到新的 Visual Studio 订阅管理门户中，并且不确定谁是主要联系人或通知联系人，那么可以在登录 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 后查找这些信息。 查看[查找你的主要联系人](/find-primary-contact/)主题，了解在 VLSC 中查找主要/通知联系人的步骤。
+如果需要添加到新的 Visual Studio 订阅管理门户中，并且不确定谁是主要联系人或通知联系人，那么可以在登录 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 后查找这些信息。 查看[查找你的主要联系人](find-primary-contact.md)主题，了解在 VLSC 中查找主要/通知联系人的步骤。
 
 如果你已设置为管理员，则可以直接转到 Visual Studio 订阅管理门户：[https://manage.visualstudio.com](https://manage.visualstudio.com)。 

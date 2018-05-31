@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0efe4fe685a0a75438cb68590722ea6748a15f23
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 187f6c7cdbbcb99d5c1ac336e922c4a2fedbb44d
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336053"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
 Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备上的 UWP 应用的功率和能耗情况，这些低功率平板设备在所有时间或部分时间内靠自有电池运行。 在电池供电的设备上，如果应用程序使用过多的能量，可能导致客户非常不满，最终客户甚至可能将其卸载。 能量利用的优化可使更多的客户选择并使用你的应用程序。  
@@ -61,7 +62,7 @@ Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备
 >  -   Windows.Foundation.Diagnostics LoggingChannel 实现 [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) 接口（在 C# 和 VB 中表现为 [System.IDisposable](/dotnet/api/system.idisposable)）。若要避免操作系统资源泄露，请在完成日志记录通道时调用 [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel)（在 C# 和 VB 中为 [Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel)）。  
 > -   每个打开的日志记录通道都必须有唯一的名称。 尝试创建与未释放的通道同名的新日志记录通道会导致出现异常。  
   
- 有关示例，请参阅 Windows SDK 示例 [LoggingSession 示例](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) 。  
+ 有关示例，请参阅 Windows SDK 示例 [LoggingSession 示例](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)。  
   
  **向 JavaScript 代码添加标记**  
   
@@ -154,4 +155,4 @@ if (performance && performance.mark) {
 
 ## <a name="see-also"></a>请参阅
  [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能简介](../profiling/profiling-feature-tour.md)
+ [分析功能导览](../profiling/profiling-feature-tour.md)
