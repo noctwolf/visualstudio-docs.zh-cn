@@ -1,5 +1,5 @@
 ---
-title: Office 解决方案的特定安全注意事项 |Microsoft 文档
+title: Office 解决方案的特定安全注意事项
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,18 +21,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f799a0ef393def5c77249f51a26278bd419ac523
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7da9446a4a5e4538164b09d1f11733f7bde3de24
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693352"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office 解决方案的特定安全注意事项
   Microsoft .NET Framework 和 Microsoft Office 提供的安全功能有助于保护你的 Office 解决方案免受可能的安全威胁。 本主题将介绍其中一些威胁并提供有助于免受这些威胁的建议。 还包括有关 Microsoft Office 安全设置如何影响 Office 解决方案的信息。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="trusted-code-is-repurposed-in-a-new-malicious-document"></a>在新的恶意文档中重新使用了受信任的代码  
+## <a name="trusted-code-is-repurposed-in-a-new-malicious-document"></a>新的恶意文档中重新使用受信任的代码  
  攻击者可以获取旨在用于特定用途的受信任的代码，例如，下载雇佣申请中的个人信息，并在另一个文档（例如工作表）中重用它。 该代码不知道原始文档未在运行，且可能会带来其他威胁，如透露个人信息或由其他用户打开时用提升的特权执行代码。 或者，攻击者可轻易修改工作表中的数据，使得该数据在发送到受害者计算机时出现异常行为。 通过更改链接到代码的工作表的值、公式或演示文稿特征，恶意用户可能通过发送已修改的文件攻击另一个用户。 通过修改工作表中的值，用户也可能访问他们不应该看到的信息。  
   
  由于程序集定位和文档定位必须有足够的证据才能执行，所以这种攻击不容易装入。 例如，电子邮件附件中的文档或不受信任的 Intranet 服务器上的文档没有足够的权限，从而无法运行。  
@@ -56,21 +57,21 @@ ms.lasthandoff: 04/16/2018
   
 -   如果 Outlook 未与 Exchange 一起使用，则管理员可以启用或禁用计算机上所有 VSTO 外接程序的对象模型防护。  
   
--   如果 Outlook 与 Exchange 一起使用，则管理员可以启用或禁用计算机上所有 VSTO 外接程序的对象模型防护，或指定特定 VSTO 外接程序可以在不遇到对象模型防护的情况下运行。 管理员还可以修改对象模型特定区域的对象模型防护的行为。 例如，管理员可以自动允许 VSTO 外接程序以编程方式发送电子邮件，即使启用了对象模型防护也是如此。  
+-   如果 Outlook 与 Exchange 一起使用，则管理员可以启用或禁用计算机上所有 VSTO 外接程序的对象模型防护，或指定特定 VSTO 外接程序可以在不遇到对象模型防护的情况下运行。 管理员还可以修改对象模型特定区域的对象模型防护的行为。 例如，管理员可以自动允许 VSTO 外接程序以编程方式，发送电子邮件，即使启用了对象模型防护。  
   
- 从 Outlook 2007 中开始，更改了对象模型防护的行为以改善开发人员和用户体验，同时还有助于保障 Outlook 安全。 有关详细信息，请参阅 [Outlook 2007 中的代码安全性变化](http://go.microsoft.com/fwlink/?LinkId=73429)。  
+ 从 Outlook 2007 中开始，更改了对象模型防护的行为以改善开发人员和用户体验，同时还有助于保障 Outlook 安全。 有关详细信息，请参阅[代码 Outlook 2007 中的安全更改](http://go.microsoft.com/fwlink/?LinkId=73429)。  
   
-### <a name="minimizing-object-model-guard-warnings"></a>最小化对象模型防护警告  
- 若要帮助在你使用受限的属性和方法时避免出现安全警告，请确保 VSTO 外接程序从项目中 `Application` 类的 `ThisAddIn` 字段获取 Outlook 对象。 有关此字段的详细信息，请参阅 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
+### <a name="minimize-object-model-guard-warnings"></a>最小化对象模型防护警告  
+ 若要帮助在你使用受限的属性和方法时避免出现安全警告，请确保 VSTO 外接程序从项目中 `Application` 类的 `ThisAddIn` 字段获取 Outlook 对象。 有关此字段的详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
- 对象模型防护仅可信任从此对象获取的 Outlook 对象。 与此相反，从新的 Microsoft.Office.Interop.Outlook.Application 对象获取的对象不受信任，和受限的属性和方法将引发安全警告，如果启用了对象模型防护。  
+ 对象模型防护仅可信任从此对象获取的 Outlook 对象。 与此相反，从新获取的对象`Microsoft.Office.Interop.Outlook.Application`对象不受信任，和受限的属性和方法将引发安全警告，如果启用了对象模型防护。  
   
- 如果启用了对象模型防护，下面的代码示例将显示一条安全警告。 Microsoft.Office.Interop.Outlook.MailItem 类 To 属性受对象模型防护。 Microsoft.Office.Interop.Outlook.MailItem 对象不受信任的因为代码从使用创建 Microsoft.Office.Interop.Outlook.Application**新**运算符，而不是从获取它`Application`字段。  
+ 如果启用了对象模型防护，下面的代码示例将显示一条安全警告。 `To`属性`Microsoft.Office.Interop.Outlook.MailItem`类受对象模型防护。 `Microsoft.Office.Interop.Outlook.MailItem`对象不受信任的因为代码从`Microsoft.Office.Interop.Outlook.Application`，它创建使用**新**运算符，而不是获取从`Application`字段。  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
  [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]  
   
- 下面的代码示例演示如何使用受对象模型防护信任 Microsoft.Office.Interop.Outlook.MailItem 对象属性的受限。 该代码使用受信任`Application`要获取 Microsoft.Office.Interop.Outlook.MailItem 字段。  
+ 下面的代码示例演示如何使用属性的受限`Microsoft.Office.Interop.Outlook.MailItem`受对象模型防护信任的对象。 该代码使用受信任`Application`要获取字段`Microsoft.Office.Interop.Outlook.MailItem`。  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]  
@@ -78,17 +79,17 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  如果 Outlook 与 Exchange 一起使用，则从 `ThisAddIn.Application` 获取所有 Outlook 对象不能保证 VSTO 外接程序能够访问整个 Outlook 对象模型。 例如，如果 Exchange 管理员将 Outlook 自动设置为拒绝所有尝试访问地址信息使用 Outlook 对象模型，则 Outlook 将不允许前面的代码示例，若要访问收件人属性中，即使该代码示例使用受信任`ThisAddIn.Application`字段。  
   
-### <a name="specifying-which-add-ins-to-trust-when-using-exchange"></a>指定使用 Exchange 时要信任的外接程序  
+### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>指定的外接程序信任使用 Exchange 时  
  当 Outlook 与 Exchange 一起使用时，管理员可以指定某些 VSTO 外接程序可以在不遇到对象模型防护的情况下运行。 不能单独信任使用 Visual Studio 中的 Office 解决方案创建的 Outlook VSTO 外接程序；只能将它们作为一个组来信任。  
   
- Outlook 信任基于 VSTO 外接程序入口点 DLL 的哈希代码的 VSTO 外接程序。 面向 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的所有 Outlook VSTO 外接程序使用同一个入口点 DLL (VSTOLoader.dll)。 这意味着，如果管理员信任任何面向 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的 VSTO 外接程序在不遇到对象模型防护的情况下运行，则面向 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的所有其他 VSTO 外接程序也均受信任。 有关信任特定 VSTO 外接程序在不遇到对象模型防护的情况下运行的详细信息，请参阅 [指定 Outlook 用于管理病毒防护功能的方法](http://go.microsoft.com/fwlink/?LinkId=128773)。  
+ Outlook 信任基于 VSTO 外接程序入口点 DLL 的哈希代码的 VSTO 外接程序。 所有 Outlook VSTO 外接面向[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]使用同一个入口点 DLL (*VSTOLoader.dll*)。 这意味着，如果管理员信任任何面向 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的 VSTO 外接程序在不遇到对象模型防护的情况下运行，则面向 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的所有其他 VSTO 外接程序也均受信任。 有关信任特定 VSTO 外接程序在不遇到对象模型防护的情况下运行的详细信息，请参阅 [指定 Outlook 用于管理病毒防护功能的方法](http://go.microsoft.com/fwlink/?LinkId=128773)。  
   
-## <a name="permission-changes-do-not-take-effect-immediately"></a>权限更改不会立即生效  
+## <a name="permission-changes-do-not-take-effect-immediately"></a>权限更改不会生效立即  
  如果管理员调整文档或程序集的权限，则用户必须退出并重启所有 Office 应用程序，才会实行这些更改。  
   
  托管 Microsoft Office 应用程序的其他应用程序也可以阻止实行新权限。 当安全策略发生更改时，用户应当退出使用 Office 的所有（托管的或独立的）应用程序。  
   
-## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Microsoft Office System 中的“信任中心”设置不影响外接程序或文档级自定义项  
+## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Microsoft Office system 中的信任中心设置不影响外接程序或文档级自定义项  
  通过设置“信任中心” 中的选项，用户可以阻止 VSTO 外接程序加载。 但是，使用 Visual Studio 中的 Office 解决方案创建的 VSTO 外接程序和文档级自定义项不受这些信任设置的影响。  
   
  如果用户通过使用“信任中心” 阻止 VSTO 外接程序加载，则将不会加载以下几种类型的 VSTO 外接程序：  
@@ -118,6 +119,6 @@ ms.lasthandoff: 04/16/2018
 6.  在细节窗格中，选择“要求应用程序外接程序由受信任的发布者签名”  或“禁用所有应用程序外接程序” 。  
   
 ## <a name="see-also"></a>请参阅  
- [确保 Office 解决方案的安全](../vsto/securing-office-solutions.md)  
+ [保护 Office 解决方案](../vsto/securing-office-solutions.md)  
   
   

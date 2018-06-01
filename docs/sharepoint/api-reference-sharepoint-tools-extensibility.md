@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0aca731f3f57b7c7024135a3d06d7b17481ba924
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1367a8850110fc720a9adfdd733a7c8cdf0aeb14
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692065"
 ---
-# <a name="api-reference-sharepoint-tools-extensibility"></a>API 参考（SharePoint 工具扩展）
+# <a name="api-reference-sharepoint-tools-extensibility"></a>API 参考 （SharePoint 工具扩展）
   本部分包含用于扩展 Visual Studio 中的 SharePoint 工具的 API 参考文档。  
   
-## <a name="in-this-section"></a>本节内容  
+## <a name="in-this-section"></a>本节内容
  <xref:Microsoft.VisualStudio.SharePoint>  
  包含用于扩展 SharePoint 项目系统类型。 例如，你可以扩展内置 SharePoint 项目和项目项，也可以创建自己的项目项。  
   
@@ -58,12 +59,11 @@ ms.lasthandoff: 04/16/2018
  <xref:Microsoft.VisualStudio.SharePoint.Validation>  
  包含用于为 SharePoint 项目自定义功能和包验证行为的类型。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [引用&#40;SharePoint 工具扩展&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [概述的编程模型的 SharePoint 工具扩展](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)  
-  
   

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c36b1e079027bd0513a7396e703db610dd737639
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14abf52e65a796325d4af8bd95f5434c105c3fa3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693794"
 ---
 # <a name="walkthrough-xslt-profiler"></a>演练：XSLT 探查器
 
@@ -88,7 +89,7 @@ XSLT 探查器可创建详细的 XSLT 性能报告，有助于度量、评估和
 
 5.  您也可以通过单击列名对数据进行排序。
 
-### <a name="select-calltree-view"></a>选择“调用关系树”视图
+### <a name="select-call-tree-view"></a>选择调用树视图
 
 1.  选择**调用树视图**中**当前视图**下拉列表。 此视图为程序执行的关系树视图。
 
@@ -110,4 +111,4 @@ XSLT 探查器可创建详细的 XSLT 性能报告，有助于度量、评估和
 
 ## <a name="see-also"></a>请参阅
 
-- [演练：使用 XSLT 层次结构](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [演练： 使用 XSLT 层次结构](../xml-tools/walkthrough-using-xslt-hierarchy.md)

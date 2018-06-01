@@ -20,20 +20,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94f93d58933ad0aba6cde985dc260fe3341aa5d2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691958"
 ---
-# <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>为 SharePoint 项目项创建项模板和项目模板
+# <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>创建项模板和 SharePoint 项目项的项目模板
   当定义自定义的 SharePoint 项目项类型时，你可以将其与关联的项模板或项目模板，以便其他开发人员可以使用 Visual Studio 中的项目项。 你还可以创建模板向导。  
   
  例如，Visual Studio 不包括项目模板或项模板以供将字段添加到 SharePoint 站点。 你可以定义 SharePoint 项目项类型表示的字段，然后构造其他开发人员可用于将字段项添加到 SharePoint 项目项模板。 或者，您可以构建项目模板，以便开发人员可以创建新的 SharePoint 项目包含字段项。 在这两种情况下，你还可以提供一个向导，开发人员使用你的模板时，将出现。 此向导可以从开发人员配置项目的新项收集信息。  
   
  项模板和项目模板是包含 Visual Studio 用来创建的项目项或项目的文件的.zip 文件。 有关项模板和项目模板的基础知识的详细信息，请参阅[创建项目和项模板](/visualstudio/ide/creating-project-and-item-templates)。  
   
-##  <a name="creatingitemtemplates"></a> 创建项模板  
+## <a name="create-item-templates"></a>创建项模板
  在创建 SharePoint 项目项的项模板时，有一些始终是必需的文件和可选可能使用的某些类型的项目项的文件。 有关演示如何定义 SharePoint 项目项类型并为它创建项模板的演练，请参阅[演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。  
   
  下表列出了所需的文件，以创建 SharePoint 项目项的项模板。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
 |.aspx|ASP.NET 页文件。 此文件包含定义的应用程序页的 XML 标记。|  
 |.cs 或.vb 文件|这些代码文件定义的行为的示例自定义的链接，这些 SharePoint 项具有一个可以从 Visual C# 或 Visual Basic 代码，如应用程序页、 Web 部件和工作流访问的编程模型。|  
   
-## <a name="creating-project-templates"></a>创建项目模板  
+## <a name="create-project-templates"></a>创建项目模板
  在创建 SharePoint 项目模板时，有一些文件始终是可能由某些类型的项目的必需和可选文件。 通常情况下，SharePoint 项目包含至少一个 SharePoint 项目项。 但是，这不是必需的。 例如，你可以定义旨在仅可用于部署 SharePoint 解决方案创建其他项目中的 SharePoint 项目模板。  
   
  有关演示如何定义 SharePoint 项目项类型并为它创建的项目模板的演练，请参阅[演练： 使用项目模板，第 1 部分中创建网站栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。  
@@ -77,12 +78,12 @@ ms.lasthandoff: 04/16/2018
 |*featureName*.feature|此文件定义 SharePoint 功能的用于分组以进行部署的多个项目项。 当功能设计器用于在你的项目中自定义功能时，Visual Studio 将此文件中存储有关功能的数据。 如果你想要将项目项分组为不同的功能，则可以包含多个.feature 文件。<br /><br /> 时创建自定义的 SharePoint 项目模板时，我们建议你将仅最小必需的内容包括在每个.feature 文件，并通过使用中的 Api，你将配置功能<xref:Microsoft.VisualStudio.SharePoint.Features>与关联的扩展中的命名空间项目模板。 如果这样做，你的项目模板保护以防止将来的更改对.feature 文件的结构。 有关演示如何创建具有所需的最小值的.feature 文件内容的示例，请参阅[演练： 使用项目模板，第 1 部分中创建网站栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。<br /><br /> 如果你想要直接修改.feature 文件，你可以通过在 %Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd 使用架构来验证内容。|  
 |*featureName*。模板.xml|此文件的功能清单文件 (Feature.xml) 中提供的基础，对于每个项目中生成的功能。 如果你想要指定不应更改你的项目类型的用户的某些行为，可以添加到此文件的内容。 有关详细信息，请参阅[构建基块： 功能](http://go.microsoft.com/fwlink/?LinkId=169183)和[Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795)文件。<br /><br /> Visual Studio 生成项目从解决方案包时，将每个对的内容合并*featureName*.feature 文件和*featureName*。转换为特征的模板.xml 文件清单文件。 有关生成解决方案包的详细信息，请参阅[如何： 创建 SharePoint 解决方案包 (wsp)](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)。|  
   
-## <a name="creating-wizards-for-item-templates-and-project-templates"></a>为项模板和项目模板创建向导  
+## <a name="create-wizards-for-item-templates-and-project-templates"></a>创建项模板和项目模板中的向导
  在定义 SharePoint 项目项类型并将其与项目或项模板相关联后，你还可以创建向导。 向导将显示当开发人员使用项模板将 SharePoint 项目项添加到项目中，或当开发人员使用项目模板创建一个包含 SharePoint 项目项的新项目。 可以使用该向导，以从开发人员收集信息并初始化新的 SharePoint 项目项。  
   
  有关演示如何创建项模板和项目模板中的向导的演练，请参阅[演练： 使用项模板，第 2 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)和[演练： 创建站点栏项目项的项目模板，第 2 部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [演练： 使用项模板创建的自定义操作项目项，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [演练： 使用项模板创建的自定义操作项目项，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
@@ -90,4 +91,4 @@ ms.lasthandoff: 04/16/2018
  [演练： 使用项目模板，第 2 部分中创建网站栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
  [创建项目和项模板](/visualstudio/ide/creating-project-and-item-templates)  
   
-  
+ 

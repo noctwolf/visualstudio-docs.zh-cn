@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f92b96f09353bf8e432d6a3931a534064ad7c446
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 07ddb1dd64e5d972c23a032cb1eb752515d92ab6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693846"
 ---
 # <a name="xml-snippets"></a>XML 代码片断
 
 XML 编辑器提供了一个实用工具，调用*XML 代码段*，这样，你更快地生成 XML 文件。 XML 代码段可以通过插入文件反复使用。 您还可以根据 XML 架构定义语言 (XSD) 架构生成 XML 数据。
 
-## <a name="reusable-xml-snippets"></a>可反复使用的 XML 代码段
+## <a name="reusable-xml-snippets"></a>可重用的 XML 代码段
 
 “XML 编辑器”包括许多代码段，用于执行一些常见的任务。 这样，您更容易创建 XML 文件。 例如，如果编写 XML 架构，使用“复杂类型序列元素”和“简单类型元素”代码段将以下 XML 文本插入文件。 然后，根据您的需要更改 `name` 值。
 
@@ -42,10 +43,10 @@ XML 编辑器提供了一个实用工具，调用*XML 代码段*，这样，你�
 
  有关详细信息，请参阅[如何： 使用 XML 代码段](../xml-tools/how-to-use-xml-snippets.md)。
 
-## <a name="schema-generated-xml-snippets"></a>从架构生成的 XML 代码段
+## <a name="schema-generated-xml-snippets"></a>架构生成 XML 代码段
  “XML 编辑器”还可以从 XML 架构生成 XML 代码段。 通过此功能可以使用从该元素的架构信息生成的 XML 元素来填充元素。
 
- 有关详细信息，请参阅[如何： 生成 XML 代码段从 XML 架构](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)。
+ 有关详细信息，请参阅[如何： 从 XML 架构生成 XML 代码段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)。
 
 ## <a name="create-new-xml-snippets"></a>新建 XML 代码段
  除了默认情况下随 [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio 提供的代码段之外，您还可以创建并使用自己的 XML 代码段。

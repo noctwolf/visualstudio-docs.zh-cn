@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693716"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 数据
 
@@ -35,7 +36,7 @@ XML 编辑器用于编辑 XML 文档。 它提供完整的 XML 1.0 语法检查�
 
 - 支持编辑 XSLT 样式表，包括 IntelliSense 支持。
 
-- XML 架构资源管理器。
+- **XML 架构资源管理器**。
 
 ## <a name="xml-schema-designer"></a>XML 架构设计器
 
@@ -53,7 +54,7 @@ Visual Studio 支持调试 XSLT 样式表。 使用调试程序，可以在 XSLT
 
 [创建和配置 Visual Studio 中的数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)介绍用于创建数据集的设计时工具。
 
-[托管代码中的 XML Web Services](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)讨论如何创建和部署 XML Web 服务以及如何访问 XML Web 服务。
+[在托管代码中的 XML Web services](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)讨论如何创建和部署 XML Web 服务以及如何访问 XML Web 服务。
 
 ## <a name="see-also"></a>请参阅
 

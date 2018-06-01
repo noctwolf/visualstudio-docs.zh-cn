@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ff0cb46a36bea633e3d871f9dc476887ae9aa6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 784d8f6499c1fb87b082122c08c5ea23834a45b5
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693807"
 ---
 # <a name="xslt-profiler"></a>XSLT 探查器
 
@@ -29,4 +30,4 @@ XSLT 探查器是 Visual Studio 的一部分，可以从**XML**菜单。
 
 ## <a name="see-also"></a>请参阅
 
-- [演练：XSLT 探查器](../xml-tools/walkthrough-xslt-profiler.md)
+- [演练： XSLT 探查器](../xml-tools/walkthrough-xslt-profiler.md)

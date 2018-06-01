@@ -1,5 +1,5 @@
 ---
-title: 安全部署 |Microsoft 文档
+title: 安全部署
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1efc8087476cbe879a647288c35a7e7f329100a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47cecda571a6826c2d7e845945c05d0264971134
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693326"
 ---
 # <a name="secure-deployment"></a>安全部署
   时创建 Office 解决方案时，将自动更新你的开发计算机以允许你运行的项目中的代码。 但是，在部署你的解决方案时，你必须提供通过签名解决方案使用证书，或使用基于信任决定的证据[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示密钥。 有关详细信息，请参阅[向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)。  
@@ -31,12 +32,12 @@ ms.lasthandoff: 04/16/2018
   
  对于文档级自定义项，如果将文档部署到网络位置，你还必须添加该文档的位置到的信任中心中的 Office 应用程序的受信任位置的列表。 有关如何设置最终用户计算机文档权限的详细信息，请参阅[向文档授予信任](../vsto/granting-trust-to-documents.md)。  
   
-## <a name="preventing-office-solutions-from-running-code"></a>阻止 Office 解决方案运行代码  
+## <a name="prevent-office-solutions-from-running-code"></a>阻止 Office 解决方案运行代码  
  管理员可以使用注册表以防止所有 Office 解决方案的计算机上运行。 具有托管代码扩展的 Office 解决方案打开时，Visual Studio Tools for Office 运行时检查的条目是否同名`Disabled`存在在计算机上的以下注册表项之一：  
   
--   `HKEY_CURRENT_USER\Software\Microsoft\VSTO`  
+-   **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
   
--   `HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO`  
+-   **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**  
   
  若要阻止 Office 解决方案运行代码，请创建`Disabled`下一个或两个这些注册表项的项并指定一种的以下数据类型和值`Disabled`:  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>请参阅  
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
- [准备计算机以运行或承载 Office 解决方案](http://msdn.microsoft.com/en-us/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
- [确保 Office 解决方案的安全](../vsto/securing-office-solutions.md)  
+ [准备要运行或承载 Office 解决方案的计算机](http://msdn.microsoft.com/en-us/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
+ [保护 Office 解决方案](../vsto/securing-office-solutions.md)  
   
   

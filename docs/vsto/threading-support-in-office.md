@@ -1,5 +1,5 @@
 ---
-title: Office 中的线程支持 |Microsoft 文档
+title: Office 中的线程支持
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 473287ed42fb2e4978a0f92717a01fdf31e28ad4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 966f012b2ff4860205186410951b759c2e214668
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693079"
 ---
 # <a name="threading-support-in-office"></a>Office 中的线程支持
-  本主题提供有关如何线程处理在 Microsoft Office 对象模型中支持的信息。 Office 对象模型不是线程安全的但可以使用的 Office 解决方案中的多个线程。 Office 应用程序是组件对象模型 (COM) 服务器。 COM 允许客户端在任意线程上调用 COM 服务器。 对于不是线程安全的 COM 服务器，COM 提供了一种机制来序列化并发调用，以便在服务器上执行任何时候只有一个逻辑线程。 此机制称为单线程单元 (STA) 模型。 调用序列化，因为调用方可能会被阻塞的时间段时服务器太忙或正在处理其他后台线程上的调用。  
+  本文提供了有关如何线程处理在 Microsoft Office 对象模型中支持的信息。 Office 对象模型不是线程安全的但可以使用的 Office 解决方案中的多个线程。 Office 应用程序是组件对象模型 (COM) 服务器。 COM 允许客户端在任意线程上调用 COM 服务器。 对于不是线程安全的 COM 服务器，COM 提供了一种机制来序列化并发调用，以便在服务器上执行任何时候只有一个逻辑线程。 此机制称为单线程单元 (STA) 模型。 调用序列化，因为调用方可能会被阻塞的时间段时服务器太忙或正在处理其他后台线程上的调用。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -62,13 +63,13 @@ ms.lasthandoff: 04/16/2018
   
  但是，对于通过使用 Visual Studio 中的 Office 开发工具创建解决方案，COM 互操作将转换到的所有被拒绝的调用<xref:System.Runtime.InteropServices.COMException>（"消息筛选器指示应用程序正在忙于"）。 每当进行调用的对象模型在后台线程，你必须在要准备好处理此异常。 通常，这涉及一定的时间重试，然后显示一个对话框。 但是，你还可以创建 STA 在后台线程，然后注册该线程来处理这种情况下一个消息筛选器。  
   
-## <a name="starting-the-thread-correctly"></a>正确启动线程  
+## <a name="start-the-thread-correctly"></a>正常启动线程  
  当你创建新的 STA 线程时，设置为 STA 单元状态，启动线程之前。 下面的代码示例演示如何执行此操作。  
   
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]  
   
- 有关详细信息，请参阅[托管线程处理的最佳做法](/dotnet/standard/threading/managed-threading-best-practices)。  
+ 有关详细信息，请参阅[托管线程处理最佳做法](/dotnet/standard/threading/managed-threading-best-practices)。  
   
 ## <a name="modeless-forms"></a>无模式的窗体  
  无模式的窗体允许某种类型的与应用程序的交互，而该窗体显示。 在用户交互处理该窗体，并与无需关闭应用程序交互的窗体。 Office 对象模型支持托管的无模式窗体;但是，它们不应在后台线程上。  

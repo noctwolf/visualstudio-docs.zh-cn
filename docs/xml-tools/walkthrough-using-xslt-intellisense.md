@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3240868ce8f749bf97a12054aac4760018c71d6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86a71a70296a3b4e49f2cf7c596a7f71063c8297
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693518"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>演练：使用 XSLT IntelliSense
 
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/26/2018
     </xsl:stylesheet>
     ```
 
-2.  在 `<xsl:template name="msg23" match="msg23">` 之后插入光标并按 Enter。 然后开始键入以下 `xsl:call-template` 元素：
+2.  之后插入光标`<xsl:template name="msg23" match="msg23">`按**Enter**。 然后开始键入以下 `xsl:call-template` 元素：
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/26/2018
 
      在键入元素时，模板名称列表出现在 `name=""` 元素的 `xsl:call-template` 特性中。
 
-3.  在 `<xsl:call-template name="localized-message">` 之后插入光标并按 Enter。 然后开始键入以下 `xsl:with-param` 元素：
+3.  之后插入光标`<xsl:call-template name="localized-message">`按**Enter**。 然后开始键入以下 `xsl:with-param` 元素：
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -112,7 +113,7 @@ ms.lasthandoff: 04/26/2018
     </xsl:stylesheet>
     ```
 
-2.  在 `<xsl:apply-templates select="phone" />` 之后插入光标并按 Enter。 然后开始键入以下 `xsl: apply-templates` 元素：
+2.  之后插入光标`<xsl:apply-templates select="phone" />`按**Enter**。 然后开始键入以下 `xsl: apply-templates` 元素：
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -153,7 +154,7 @@ ms.lasthandoff: 04/26/2018
     </xsl:stylesheet>
     ```
 
-2.  在 `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` 之后插入光标并按 Enter。 然后开始键入以下 `xsl:namespace-alias` 元素：
+2.  之后插入光标`<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">`按**Enter**。 然后开始键入以下 `xsl:namespace-alias` 元素：
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
@@ -163,4 +164,4 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>请参阅
 
-- [XML 编辑器的 IntelliSense 功能](../xml-tools/xml-editor-intellisense-features.md)
+- [XML 编辑器 IntelliSense 功能](../xml-tools/xml-editor-intellisense-features.md)

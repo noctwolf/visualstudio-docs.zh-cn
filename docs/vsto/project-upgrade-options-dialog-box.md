@@ -1,5 +1,5 @@
 ---
-title: 项目升级，选项对话框 |Microsoft 文档
+title: 项目升级，选项对话框
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,23 +19,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f675ac5bab07c487217d2fdebcedd9fffd3d334c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e279e6db1acf4cb277c8734fa24f965a8236e7ec
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692754"
 ---
-# <a name="project-upgrade-options-dialog-box"></a>“选项”对话框 ->“项目升级”
+# <a name="project-upgrade-options-dialog-box"></a>项目升级，选项对话框
   使用“项目升级”  页可指定 Visual Studio 是否将自动更改 VSTO 外接程序项目以面向开发计算机上安装的 Office 版本。  
   
  若要访问此页面，请在“工具”  菜单上，单击“选项” 。 展开“Office 工具”  文件夹，然后单击“项目升级” 。  
   
 ## <a name="uielement-list"></a>UIElement 列表  
  **始终升级到已安装的 Office 版本**  
- 对于 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ，此选项处于禁用状态，因为 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 中的 Office 项目仅针对 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 或 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 应用程序。 有关详细信息，请参阅 [Upgrading and Migrating Office Solutions](../vsto/upgrading-and-migrating-office-solutions.md)。  
+ 对于 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ，此选项处于禁用状态，因为 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 中的 Office 项目仅针对 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 或 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 应用程序。 有关详细信息，请参阅[升级和迁移 Office 解决方案](../vsto/upgrading-and-migrating-office-solutions.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [Upgrading and Migrating Office Solutions](../vsto/upgrading-and-migrating-office-solutions.md)   
+ [升级和迁移 Office 解决方案](../vsto/upgrading-and-migrating-office-solutions.md)   
  [如何： 升级 Office 解决方案](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)  
   
   

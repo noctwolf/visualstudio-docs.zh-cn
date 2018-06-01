@@ -1,5 +1,5 @@
 ---
-title: Office UI 自定义项 |Microsoft 文档
+title: Office UI 自定义项
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a35ca6a868aa1fff2a4bd4bfbd3ec466d5a2107
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0152fea139d6351c947412260247c47f79bb6b66
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692455"
 ---
-# <a name="office-ui-customization"></a>Office UI 自定义
+# <a name="office-ui-customization"></a>Office UI 自定义项
   可以使用 Visual Studio 中的 Office 开发人员工具自定义 Microsoft Office 应用程序的用户界面 (UI)。 本主题介绍自定义的 UI 功能，分为以下几个部分：  
   
 -   [UI 功能的比较](#Comparison)  
@@ -76,26 +77,26 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="Backstage"></a> Backstage 视图  
  在 Office 应用程序，单击**文件**选项卡可打开 Backstage 视图。 Backstage 视图提供的用户界面可将文件级别任务和操作组合到一起，从而代替可通过 2007 Microsoft Office system 中 Microsoft Office 按钮使用的类似功能。 Backstage 视图可通过使用 XML 完全扩展。  
   
- Visual Studio 不提供用于自定义 Backstage 视图的设计器或 API。 但是，如果你添加**功能区 (XML)**项你可以向 Office 项目中，添加到功能区 XML 文件，以自定义 Backstage 视图的 XML。 有关详细信息**功能区 (XML)**项目，请参阅[功能区 XML](../vsto/ribbon-xml.md)。  
+ Visual Studio 不提供用于自定义 Backstage 视图的设计器或 API。 但是，如果你添加**功能区 (XML)** 项你可以向 Office 项目中，添加到功能区 XML 文件，以自定义 Backstage 视图的 XML。 有关详细信息**功能区 (XML)** 项目，请参阅[功能区 XML](../vsto/ribbon-xml.md)。  
   
- 有关自定义 Backstage 视图的详细信息，请参阅[开发人员在 Office 2010 Backstage 视图简介](http://go.microsoft.com/fwlink/?LinkId=182189)和[自定义开发人员在 Office 2010 Backstage 视图](http://go.microsoft.com/fwlink/?LinkId=182188)。  
+ 有关自定义 Backstage 视图的详细信息，请参阅[开发人员的 Office 2010 Backstage 视图简介](http://go.microsoft.com/fwlink/?LinkId=182189)和[自定义开发人员的 Office 2010 Backstage 视图](http://go.microsoft.com/fwlink/?LinkId=182188)。  
   
 ##  <a name="FormRegion"></a> Outlook 窗体区域  
  使用窗体区域可向标准 Microsoft Office Outlook 窗体添加自定义功能。 你可以使用额外字段或控件创建可扩展任何现有窗体的窗体区域。 如果使用 Visual Studio 中的 Office 开发工具创建新窗体区域，则在窗体区域上仅可使用 Windows 窗体控件。 如果导入在 Outlook 中设计的窗体区域，则仅可使用本机 Outlook 控件。  
   
  你可以创建占用 Outlook UI 不同区域的窗体区域。 例如，窗体第一页的底部显示相邻窗体区域，每个相邻窗体区域都可折叠。 还可以添加作为完整窗体页显示的单独窗体区域，并且该区域可以显示在任何现有标准窗体或自定义窗体上。  
   
- 有关更多信息，请参见 [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md)。  
+ 有关详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。  
   
 ##  <a name="Controls"></a> 在文档上的控件  
  可以向 Word 文档和 Excel 工作表添加各种控件。 例如，你可能希望向文档添加日期选取器控件，以便用户可以标准格式输入日期，或者在工作表上设置一个按钮，用于将数据发送到数据库。  
   
- 开发 Excel 或 Word 文档级项目时，可以在设计时使用 Visual Studio 设计器向项目中的文档或工作簿添加控件，或在运行时以编程方式添加控件。 开发 Excel 或 Word VSTO 外接程序项目时，可以在运行时以编程方式向任何打开的文档或工作簿添加控件。  
+ 当你开发 Excel 或 Word 文档级项目时，你可以使用 Visual Studio 设计器将控件添加到文档或工作簿项目中在设计时，或你可以在运行时以编程方式添加控件。 当你开发 Excel 或 Word VSTO 外接程序项目时，你可以以编程方式向任何打开的文档或在运行时的工作簿添加控件。  
   
- 有关详细信息，请参阅 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md) 和 [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
+ 有关详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)和[Windows 窗体上的控件 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
   
 ##  <a name="Shortcut"></a> 快捷菜单  
- 在文档或应用程序窗口中右键单击时，将出现一个快捷菜单。 可以设置在发生某事件后显示快捷菜单，例如，当用户右键单击文档、工作簿或主机控件时。 可以向快捷菜单添加大量不同的菜单命令或控件。 使用 XML 创建快捷菜单。 如果你添加**功能区 (XML)**项你可以向 Office 项目中，添加到要创建快捷菜单的功能区 XML 文件的 XML。 有关使用 XML 创建快捷菜单的详细信息，请参阅[如何： 向快捷菜单添加命令](../vsto/how-to-add-commands-to-shortcut-menus.md)。  
+ 在文档或应用程序窗口中右键单击时，将出现一个快捷菜单。 可以设置在发生某事件后显示快捷菜单，例如，当用户右键单击文档、工作簿或主机控件时。 可以向快捷菜单添加大量不同的菜单命令或控件。 使用 XML 创建快捷菜单。 如果你添加**功能区 (XML)** 项你可以向 Office 项目中，添加到要创建快捷菜单的功能区 XML 文件的 XML。 有关使用 XML 创建快捷菜单的详细信息，请参阅[如何： 向快捷菜单添加命令](../vsto/how-to-add-commands-to-shortcut-menus.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [功能区概述](../vsto/ribbon-overview.md)   
@@ -106,6 +107,6 @@ ms.lasthandoff: 04/16/2018
  [在 Office 解决方案中使用 WPF 控件](../vsto/using-wpf-controls-in-office-solutions.md)   
  [如何： 在功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
  [如何： 显示外接程序用户界面错误](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [演练：使用 Windows 窗体收集数据](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
+ [演练： 收集数据使用 Windows 窗体](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
   
   

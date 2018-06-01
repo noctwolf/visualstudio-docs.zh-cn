@@ -15,20 +15,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6cf039f3d5330b2f4869ae323ac358a1220c2fbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d91b7d3927b9723c943676cf3ce15c4bc808b906
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692114"
 ---
-# <a name="converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>在 SharePoint 项目系统类型和其他 Visual Studio 项目类型之间进行转换
+# <a name="converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint 项目系统类型和其他 Visual Studio 项目类型之间进行转换
   在某些情况下您可能会在 SharePoint 项目系统中有一个对象，并且你想要使用的 Visual Studio 自动化对象模型或集成对象模型中相应对象的功能，反之亦然。 在这些情况下，你可以使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A>SharePoint 项目服务将对象转换为不同的对象模型的方法。  
   
  例如，你可能必须<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>对象，但你想要使用仅有的方法<xref:EnvDTE.Project>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>对象。 在这种情况下，你可以使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A>方法将转换<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>到<xref:EnvDTE.Project>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>。  
   
  有关 Visual Studio 自动化对象模型和 Visual Studio 集成对象模型的详细信息，请参阅[的编程模型的 SharePoint 工具扩展的概述](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)。  
   
-## <a name="types-of-conversions"></a>类型的转换  
+## <a name="types-of-conversions"></a>类型的转换
  下表列出了此方法可以 SharePoint 项目系统和其他 Visual Studio 对象模型之间进行转换的类型。  
   
 |SharePoint 项目系统类型|自动化和集成对象模型中的相应类型|  
@@ -48,9 +49,8 @@ ms.lasthandoff: 04/16/2018
   
 -   注册的代码`projectService_ProjectAdded`方法以处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded>事件<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>对象。 有关示例，请参阅[如何： 创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)   
  [如何： 检索 SharePoint 项目服务](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
  [SharePoint 工具扩展的编程模型概述](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
-  
   
