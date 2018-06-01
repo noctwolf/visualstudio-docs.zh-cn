@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4610a2574fbd822e4468436655668cff3892270
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693560"
 ---
-# <a name="xml-document-properties-properties-window"></a>XML 文档属性，“属性”窗口
+# <a name="xml-document-properties-properties-window"></a>XML 文档属性，属性窗口
 
 **属性**窗口提供有关处于活动状态在 XML 编辑器中的文档的基本信息。 可用的属性取决于当前的活动 XML 文档的类型。
 
@@ -54,4 +55,4 @@ ms.lasthandoff: 04/26/2018
 ## <a name="see-also"></a>请参阅
 
 - [XML 编辑器](../xml-tools/xml-editor.md)
-- [“XML 编辑器”的组件](../xml-tools/xml-editor-components.md)
+- [XML 编辑器组件](../xml-tools/xml-editor-components.md)

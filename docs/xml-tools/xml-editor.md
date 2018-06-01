@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac3c30f0db4c2aa1dc606348604efce3bb3ddac
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e2111286afde9e60391f1a7410fec2778b3ed673
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693781"
 ---
 # <a name="xml-editor"></a>XML 编辑器
 
@@ -39,7 +40,7 @@ XML 编辑器基于 Visual Studio 文本编辑器中，并包含对 XML 语言�
 
 - 与集成[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)。 这提供 XML 架构的分层视图。
 
-.Xml、.xsd、.xsl 和.config 等常见的文件扩展名调用 XML 编辑器。如果文件似乎包含 XML，未知的文件扩展名也会调用“XML 编辑器”。 你也可以打开任何文件使用 XML 编辑器通过**打开**选项，并从列表中选择 XML 编辑器。
+如的已知的文件扩展名调用 XML 编辑器 *.xml*， *.xsd*， *.xsl*，和 *.config*。如果文件似乎包含 XML，未知的文件扩展名也会调用“XML 编辑器”。 你也可以打开任何文件使用 XML 编辑器通过**打开**选项，并从列表中选择 XML 编辑器。
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 

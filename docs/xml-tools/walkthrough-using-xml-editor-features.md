@@ -10,20 +10,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6884f5b97d52e8d0671f1ccb73a1dabd739afee1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: afda2968ece2a18b7abdc2c4c35e4353206cbe42
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693820"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>演练：使用 XML 编辑器功能
+# <a name="walkthrough-use-xml-editor-features"></a>演练： 使用 XML 编辑器功能
 
 此演练中的步骤说明如何新建 XML 文档。 该演练还使用“XML 编辑器”的一些功能，这些功能使其非常适合 XML 编写。
 
 > [!NOTE]
-> 在开始该演练之前，将 hireDate.xsd 文件（本主题的下文介绍）保存到本地计算机上。
+> 在开始本演练之前, 保存*hireDate.xsd*文件 （本主题中的下面包含） 到本地计算机。
 
-## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>新建 XML 文件并将其与 XML 架构关联
+## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>若要创建新的 XML 文件并将其与 XML 架构关联
 
 1.  上**文件**菜单上，指向**新建**，然后单击**文件**。
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
      **打开 XSD 架构**对话框随即显示。
 
-5.  选择 hireDate.xsd 文件，然后单击**打开**。
+5.  选择*hireDate.xsd*文件并单击**打开**。
 
 6.  单击 **“确定”**。
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 
     -   **员工**添加根元素。
 
-2.  选择 **< ！-** 添加注释节点，然后按 enter 键。
+2.  选择 **< ！-** 添加注释节点和按**Enter**。
 
      编辑器将插入注释结束标记，并将光标置于开始注释标记和结束注释标记之间。
 
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  键入 `>` 以结束该标记。
 
-6.  编辑器将添加结束标记。 添加的结束标记使用波浪形下划线指示验证错误。 工具提示将显示消息：元素“employee”的内容不完整。 应包含“ID”。
+6.  编辑器将添加结束标记。 添加的结束标记使用波浪形下划线指示验证错误。 **工具提示**显示消息：**元素 employee 的内容不完整。预期 'ID'**。
 
 7.  类型`<`和选择**ID**从成员列表。 然后键入 `>`。
 
@@ -79,17 +80,17 @@ ms.lasthandoff: 04/26/2018
 
 8.  类型**abc**。
 
-     **Abc**文本具有波浪形下划线。 工具提示将显示消息：根据数据类型，“ID”元素的值无效。
+     **Abc**文本具有波浪形下划线。 **工具提示**显示消息： **'ID' 元素具有无效的值根据其数据类型**。
 
 9. 右键单击 ID 元素并选择**转到定义**。
 
-     编辑器将在新的文档窗口中打开 hireDate.xsd 文件，并将光标置于 ID 架构元素定义上。
+     编辑器打开*hireDate.xsd*在新的文档窗口中的文件并将光标置于 ID 架构元素定义。
 
 10. 返回到 XML 文件中，并替换**abc**带有文本**123**。
 
-     波浪形下划线和工具提示在 ID 元素值下清除。 现在，employee 结束标记的工具提示显示消息：元素“employee”的内容不完整。 应包含“hire-date”。
+     波浪形下划线和**工具提示**ID 元素值下清除。 **工具提示**员工 end 标记现在会显示消息：**元素 employee 的内容不完整。预期雇用日期**。
 
-11. 将光标置于 ID 结束标记后面，键入 `<`，再从成员列表中选择 hire-date，然后键入 `>`。
+11. 将光标置于 ID 结束标记后面，键入在`<`，选择**雇佣日期**从成员列表中，然后键入`>`。
 
      编辑器将添加 XML 元素 `<hire-date></hire-date>` 并将光标置于 hire-date 开始标记的后面。
 
@@ -105,7 +106,7 @@ ms.lasthandoff: 04/26/2018
 
 1.  从**文件**菜单上，选择**另存为**。
 
-     **文件另存为**对话框随即显示。 默认的文件名为“XMLFile1”。
+     **文件另存为**对话框随即显示。 默认的文件名是*XMLFile1*。
 
 2.  输入的文件名和位置来创建 XML 文档，然后单击**保存**。
 

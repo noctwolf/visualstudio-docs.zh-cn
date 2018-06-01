@@ -23,11 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08daee9f9b8a7bdfbe71b4787eaaaeb3baa178d9
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: bc78726146b67a39f8e8988dda6c7d2baf5c49b3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691919"
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>创建 SharePoint 工作流解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供工具以帮助您创建自定义管理生命周期的文档和 SharePoint 网站中的列表项的工作流。 提供的项包括设计器、一组活动控件以及必需的程序集引用。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此外包括**SharePoint 自定义向导**来帮助创建和配置工作流。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/23/2018
   
  你可以创建 SharePoint 工作流中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]并将其部署到 SharePoint 网站。 工作流部署到 SharePoint 后，你将其与关联的库或列表。 它可以然后自动启动，手动，由进程或用户。 有关工作流操作的详细信息，请参阅[开发 SharePoint 工作流使用 Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio)。  
   
-## <a name="creating-custom-sharepoint-workflows"></a>创建自定义 SharePoint 工作流  
+## <a name="create-custom-sharepoint-workflows"></a>创建自定义 SharePoint 工作流
  两个 SharePoint 工作流项目可供你在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]:**顺序工作流**和**状态机工作流**。  
   
  A*顺序工作流*表示一系列步骤。 执行这些步骤依次直到完成的最后一个活动。 顺序工作流始终是严格按顺序执行的。 因为它们可以接收外部事件，并且包含并行逻辑流，确切的执行顺序可能会有所不同。 下图显示的顺序工作流的示例。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 05/23/2018
   
  有关工作流类型的详细信息，请参阅[工作流类型](http://go.microsoft.com/fwlink/?LinkId=178995)。  
   
-### <a name="using-the-wizard"></a>使用向导  
+### <a name="using-the-wizard"></a>使用向导
  当创建中的 SharePoint 工作流项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，首先指定在其设置**SharePoint 自定义向导**。 向导将使用这些设置中创建一个项目**解决方案资源管理器**。 此项目包含一个代码文件，用于部署工作流的多个文件，并创建自定义的 SharePoint 工作流所需的程序集引用。  
   
  创建工作流后，你可以修改其属性在属性窗口中。 尽管可以直接在属性窗口中更改大多数工作流属性，但一些要求你单击省略号按钮 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器椭圆")) 到更改它们的值。 此按钮将重新启动**SharePoint 自定义向导**。 将值更改时，请选择该属性后**完成**按钮来完成。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 05/23/2018
 > [!NOTE]  
 >  **工作流类型**属性是只读的并且不能更改。 如果你想要更改工作流类型，则必须创建另一个工作流。  
   
-## <a name="designing-a-sharepoint-workflow"></a>设计 SharePoint 工作流  
+## <a name="design-a-sharepoint-workflow"></a>设计 SharePoint 工作流
  在业务流程中定义的所有步骤后，使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]工作流设计器设计 SharePoint 工作流。 若要打开设计器，请双击 Workflow1.cs 或 Workflow1.vb 中的**解决方案资源管理器**，或为这些文件的打开的快捷菜单，然后选择**打开**。  
   
 ### <a name="activities"></a>活动  
@@ -88,20 +89,20 @@ ms.lasthandoff: 05/23/2018
   
  并非所有核心工作流活动都支持 SharePoint。 有关详细信息，请参阅[工作流活动的 Windows SharePoint Services 概述](http://go.microsoft.com/fwlink/?LinkID=156094)。  
   
-#### <a name="sharepoint-workflow-activities"></a>SharePoint 工作流活动  
+#### <a name="sharepoint-workflow-activities"></a>SharePoint 工作流活动
  **SharePoint 工作流**选项卡包含在中使用的特殊的活动[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]。 这些活动可简化，简化的文档生命周期工作流开发。 有关中列出的活动详细信息**SharePoint 工作流**选项卡上，请参阅[工作流活动的 Windows SharePoint Services 概述](http://go.microsoft.com/fwlink/?LinkID=156094)。  
   
-#### <a name="windows-workflow-activities"></a>Windows 工作流活动  
+#### <a name="windows-workflow-activities"></a>Windows 工作流活动
  **Windows 工作流**选项卡包含由提供的活动[!INCLUDE[TLA#tla_workflow](../sharepoint/includes/tlasharptla-workflow-md.md)]。 这些活动可用于创建 Windows 工作流应用程序的任何类型的工作流计划。  
   
  有关中列出的活动详细信息**Windows 工作流**选项卡上，请参阅[Windows Workflow Foundation 活动](http://go.microsoft.com/fwlink/?LinkID=156096)。 有关 Windows Workflow Foundation 的详细信息，请参阅[Windows Workflow Foundation 概述](http://go.microsoft.com/fwlink/?LinkID=128632)。  
   
-### <a name="working-with-activities-in-the-designer"></a>处理活动设计器中  
+### <a name="work-with-activities-in-the-designer"></a>使用设计器中的活动
  你的工作流计划可以包含 Windows 工作流活动和 SharePoint 工作流活动的组合。  
   
  设计器显示可视提示来帮助您定位和正确配置活动。 当您将活动拖动或复制到工作流时间表上时，设计器会显示绿色加号 (+) 图标，为您指示该活动在工作流中的有效位置。 也不能将活动放置在其中但却不是有效的位置。 例如，您不能在侦听活动分支中放置发送活动的第一个活动。 有关详细信息，请参阅[SharePoint Designer 开发人员中心](http://go.microsoft.com/fwlink/?LinkId=178476)。  
   
-## <a name="collecting-information-during-the-workflow"></a>工作流过程中收集的信息  
+## <a name="collect-information-during-the-workflow"></a>工作流过程中收集的信息
  你可能想要从用户收集信息在预定义的工作流中的时间。 可以通过使用窗体或项目属性来收集信息。  
   
 ### <a name="forms"></a>表单  
@@ -119,21 +120,21 @@ ms.lasthandoff: 05/23/2018
   
  其中，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包括关联和启动窗体的项模板。 一个示例*关联窗体*可安装工作流的管理员正在输入与工作流，如支出限制费用工作流相关的参数。 一个示例*启动窗体*是指供费用工作流金额输入工作流的用户。 有关这些类型的窗体的详细信息，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。  
   
-### <a name="item-properties"></a>项目属性  
+### <a name="item-properties"></a>项目属性
  此外可以通过使用 SharePoint 库或列表中的项的属性，从用户中收集信息。 名为的 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 类的实例的主代码文件 （Workflow1.cs 或 Workflow1.vb） 声明`workflowProperties`。 使用`workflowProperties`对象来访问的库或在代码中的列表的属性。 有关示例，请参阅[演练： 创建和调试 SharePoint 工作流解决方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)。  
   
-## <a name="debugging-a-sharepoint-workflow-template"></a>调试 SharePoint 工作流模板  
+## <a name="debug-a-sharepoint-workflow-template"></a>调试 SharePoint 工作流模板
  你可以调试 SharePoint 工作流项目相同如调试其他[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]基于 Web 的项目。 当你启动[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用你在中指定的设置**SharePoint 自定义向导**以打开相应的 SharePoint 网站，并自动将工作流模板相关联与相应的库或列表。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此外会将附加[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]到调试器[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]名为 w3wp.exe 进程。  
   
  若要测试工作流，必须手动启动它。 详细信息，请参阅"调试工作流"一节中[调试 SharePoint 解决方案](../sharepoint/debugging-sharepoint-solutions.md)。 有关详细信息[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 应用程序调试，请参阅[调试 Web 应用程序和脚本](/visualstudio/debugger/debugging-web-applications-and-script)。  
   
-## <a name="deploying-a-sharepoint-workflow-template"></a>部署 SharePoint 工作流模板  
+## <a name="deploy-a-sharepoint-workflow-template"></a>部署 SharePoint 工作流模板
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 就像其他部署 SharePoint 工作流项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。 有关详细信息，请参阅[打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。  
   
-## <a name="importing-globally-reusable-workflows"></a>导入全局可重用工作流  
+## <a name="import-globally-reusable-workflows"></a>导入全局可重用工作流
  除了创建特定于站点的可重用工作流，SharePoint 设计器使您能够创建*全局可重用工作流*，这是工作流，可由任何 SharePoint 站点使用。 中的导入可重用工作流项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]当前不导入全局可重用工作流。 但是，你可以使用 SharePoint Designer 将全局可重用工作流转换为可重用工作流，或导入作为未转换的声明性工作流的工作流。 有关详细信息，请参阅[从现有的 SharePoint 网站导入项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)。  
   
-## <a name="related-topics"></a>相关主题  
+## <a name="related-topics"></a>相关主题
   
 |标题|描述|  
 |-----------|-----------------|  
@@ -143,9 +144,9 @@ ms.lasthandoff: 05/23/2018
 |[演练：创建自定义站点工作流活动](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|演示如何执行两项关键任务： 创建站点级别的工作流，并创建自定义工作流活动。|  
 |[演练：将 SharePoint Designer 可重用工作流导入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|演示如何导入可重用声明性工作流在 SharePoint Designer 2010 到[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)  
   
-  
+ 

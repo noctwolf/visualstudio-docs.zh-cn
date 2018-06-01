@@ -16,26 +16,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16c7405cfe889808f27dbb274f7f685e949889dd
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d119e84bba07c68e8d0466902d52d4ed9d151123
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692010"
 ---
 # <a name="creating-sharepoint-features"></a>创建 SharePoint 功能
   SharePoint 功能可用于更易于部署的相关的 SharePoint 项目项进行分组。 你可以创建功能、 设置作用域，并通过使用 SharePoint 功能设计器将其他功能标记为依赖关系。 设计器还会生成一个清单，这是一个 XML 文件，描述每个功能。  
   
-## <a name="adding-features-to-the-sharepoint-solution"></a>将功能添加到 SharePoint 解决方案  
+## <a name="add-features-to-the-sharepoint-solution"></a>将功能添加到 SharePoint 解决方案
  通过使用解决方案资源管理器或打包资源管理器，可以向 SharePoint 解决方案中添加一项功能。 你可以使用以下方法之一添加一项功能。  
   
 -   在**解决方案资源管理器**，打开快捷菜单**功能**，然后选择**添加功能**。  
   
 -   在**打包资源管理器**，打开该包的快捷菜单，然后选择**添加功能**。  
   
-## <a name="using-the-feature-designer"></a>使用功能设计器  
+## <a name="using-the-feature-designer"></a>使用功能设计器
  SharePoint 解决方案可以包含一个或多个 SharePoint 功能，在解决方案资源管理器中的功能节点下分组。 每个功能都有自己**功能设计器**可用于自定义功能属性。 有关详细信息，请参阅[如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。 若要从另一个区分功能，可以配置的功能属性，如标题、 说明、 版本和作用域。  
   
-### <a name="feature-designer-options"></a>功能设计器选项  
+### <a name="feature-designer-options"></a>功能设计器选项
  创建一项功能后，你可以使用功能设计器自定义它。  
   
  下表介绍功能设计器中显示的功能属性。  
@@ -48,13 +49,13 @@ ms.lasthandoff: 05/17/2018
 |解决方案中的项|可以添加到该功能的所有 SharePoint 项。|  
 |功能中的项|已添加到功能 SharePoint 项目项。|  
   
-## <a name="adding-and-removing-sharepoint-project-items"></a>添加和移除 SharePoint 项目项  
+## <a name="add-and-remove-sharepoint-project-items"></a>添加和移除 SharePoint 项目项
  你可以选择你想要添加到部署的 SharePoint 功能的 SharePoint 项目项。 使用**功能设计器**添加和移除项功能，以及查看功能清单。 有关详细信息，请参阅[如何： 添加和移除项 SharePoint 功能](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)。  
   
-## <a name="adding-feature-dependencies"></a>添加功能依赖关系  
+## <a name="add-feature-dependencies"></a>添加功能依赖关系
  你可以配置的功能清单，以便 SharePoint 服务器激活某些功能之前激活你的功能。 例如，如果你的 SharePoint 功能依赖于用于功能或数据的其他功能，SharePoint 服务器可以首先尝试激活任何取决于你的功能的功能。 有关详细信息，请参阅[如何： 添加和移除功能依赖关系](../sharepoint/how-to-add-and-remove-feature-dependencies.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [如何： 添加和移除项 SharePoint 功能](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
  [如何：添加和删除功能依赖项](../sharepoint/how-to-add-and-remove-feature-dependencies.md)  

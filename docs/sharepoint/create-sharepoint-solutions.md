@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 807fa532961edb4f2723858a47dcf1fe87134338
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691599"
 ---
 # <a name="create-sharepoint-solutions"></a>创建 SharePoint 解决方案
   你可以将在 Visual Studio 中创建 SharePoint 应用程序作为在 SharePoint 设计器中创建它们的替代方法。 Visual Studio 可通过提供诸如高级调试工具、IntelliSense、语句完成和项目模板等功能加快对 SharePoint 的开发。 Visual Studio 还会利用基于 .NET Framework 的高级工具和语言。 你可以通过使用 Visual Basic 或 Visual C# 来开发 SharePoint 项目，也可以通过使用 JavaScript 来开发 SharePoint 应用程序。  
@@ -45,4 +46,4 @@ ms.lasthandoff: 04/16/2018
 |![MSDN 开发人员中心](../sharepoint/media/vs-icon-msdndevcenter.gif "MSDN 开发人员中心")|**MSDN 开发人员中心**<br /><br /> -   [Visual Studio 开发中心](http://msdn.microsoft.com/vstudio/default.aspx)<br />-   [SharePoint 开发人员中心](http://msdn.microsoft.com/sharepoint/default.aspx)<br />-   [SharePoint Server 开发人员中心](http://msdn.microsoft.com/office/aa905503.aspx)<br />-   [SharePoint Designer 开发人员中心](http://msdn.microsoft.com/office/bb421303.aspx)<br />-   [ASP.NET 开发人员中心](http://msdn.microsoft.com/aa336522.aspx)|  
 |![提供反馈](../sharepoint/media/vs-icon-feedback.gif "提供反馈")|**提供反馈**<br /><br /> 提供有关 Visual Studio 的反馈：<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> 提供有关 Visual Studio 文档的反馈：<br /><br /> -   **轻量级视图。** 如果位于任意主题的顶部，可以选择“评估该主题”  链接来跳转到该主题的底部，在这里你可以指定“是”  或“否”  来对  “你是否认为本主题有用?”作出响应然后，你可以选择一个或多个复选框（选择“否” 后出现的），在文本框中或两者中提供详细信息。 完成后，选择“提交”  按钮。<br />-   **无脚本视图。** 在该主题顶部，选择“反馈”  link to provide feedback in the MSDN, TechNet and Expression Library  forum.<br />-   **经典视图。** 在该主题顶部，选择“反馈”  图标，以向文档团队提供关于该主题的反馈。|  
   
-  
+ 

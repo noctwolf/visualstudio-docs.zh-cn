@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 106f6a828035393273d7157c4b3e5bd898322e46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691365"
 ---
 # <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>将自定义数据与 SharePoint 工具扩展相关联
   可以将自定义数据添加到 SharePoint 工具扩展中的某些对象。 如果你想要从你的扩展中的其他代码访问更高版本的扩展的一部分中具有的数据，这非常有用。 而不是实现自定义方式存储和访问数据，可以将你的扩展中的数据关联的对象，然后以后从同一对象检索数据。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
  在扩展的 SharePoint 项目系统中，你还可以保存仍然存在，则扩展将卸载后的字符串数据。 有关详细信息，请参阅[扩展 SharePoint 项目系统中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
   
-## <a name="objects-that-can-contain-custom-data"></a>可以包含自定义数据对象  
+## <a name="objects-that-can-contain-custom-data"></a>可以包含自定义数据对象
  你可以将自定义数据添加到实现 SharePoint 工具对象模型中的任何对象<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>接口。 此接口定义属性只有一个<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>，它是自定义数据对象的集合。 以下类型实现<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:  
   
 -   <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>  
   
-## <a name="adding-and-retrieving-custom-data"></a>添加和检索自定义数据  
+## <a name="add-and-retrieve-custom-data"></a>添加和检索自定义数据
  若要将自定义数据添加到在 SharePoint 工具扩展中的对象，获取<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>你想要向其中添加数据，然后使用该对象的属性<xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A>方法将数据添加到对象。  
   
  若要从 SharePoint 工具扩展中的对象中检索自定义数据，请获取<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>属性对象并将其中一个的以下方法：  
@@ -81,10 +82,10 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [SharePoint 工具扩展的编程概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
  [演练： 使用项模板创建的自定义操作项目项，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [演练： 扩展服务器资源管理器以显示 Web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [如何： 向 SharePoint 项目中添加属性](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [如何： 将属性添加到自定义 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md   
-  
+ 

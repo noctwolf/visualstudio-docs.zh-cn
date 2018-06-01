@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4354e58e8de2d877e726b4615bac3832bfc37d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693664"
 ---
-# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、筛选和分组（XML 架构资源管理器）
+# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、 筛选和分组 （XML 架构资源管理器）
 
-本主题介绍了可通过选项**排序、 筛选和分组选项**XML 架构资源管理器工具栏上的菜单。
+本主题介绍了可通过选项**排序、 筛选和分组选项**上的菜单**XML 架构资源管理器**工具栏。
 
 ## <a name="filter-options"></a>筛选器选项
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="sorting-options"></a>排序选项
 
- 下列排序选项可用。 默认值是**按类型排序**。 “排序方式”选项不适用于文件和命名空间。
+ 下列排序选项可用。 默认值是**按类型排序**。 **排序依据**选项不适用于文件和命名空间。
 
 -   **按类型排序**。
 
