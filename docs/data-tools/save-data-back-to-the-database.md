@@ -22,11 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee004af6cb130167789cac022ae1c04beef8dbe6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691129"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 数据集是内存中副本的数据。 如果修改此数据，最好将这些更改保存回数据库。 执行了此三种方式之一的操作：
@@ -221,7 +222,7 @@ ms.lasthandoff: 04/26/2018
 
  为了举例说明了如何进行更新，假设你的应用程序使用包含单个数据表的数据集。 应用程序从数据库中获取两个行。 在检索之后，内存中数据的表类似如下所示：
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Unchanged)    c400         Nancy Buchanan    Pending
@@ -229,7 +230,7 @@ ms.lasthandoff: 04/26/2018
 
  你的应用程序林丹的状态更改为"首选"。 由于此更改的值<xref:System.Data.DataRow.RowState%2A>该行的属性更改从<xref:System.Data.DataRowState.Unchanged>到<xref:System.Data.DataRowState.Modified>。 值<xref:System.Data.DataRow.RowState%2A>第一行的属性将保持<xref:System.Data.DataRowState.Unchanged>。 数据表现在如下所示：
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Modified)     c400         Nancy Buchanan    Preferred

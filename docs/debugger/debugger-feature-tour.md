@@ -1,6 +1,6 @@
 ---
-title: 先来看一下调试器
-description: 要快速查看 Visual Studio 调试器的不同功能。
+title: 初探调试器
+description: 快速了解 Visual Studio 调试器的不同功能。
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,15 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691087"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>先来看一下 Visual Studio 调试器
 
-本主题介绍 Visual Studio 调试器的功能。 如果你想要遵循通过在 Visual Studio 中打开你自己的应用，你可以这样做，或者你可以遵循示例应用程序使用[初学者指南](../debugger/getting-started-with-the-debugger.md)。
+本主题介绍了 Visual Studio 调试器的功能。 如果你想要遵循通过在 Visual Studio 中打开你自己的应用，你可以这样做，或者你可以遵循示例应用程序使用[初学者指南](../debugger/getting-started-with-the-debugger.md)。
 
 此处描述的功能都适用于 C#、 c + +、 Visual Basic、 JavaScript 和其他语言支持的 Visual Studio （除指明外）。
 
@@ -76,7 +77,7 @@ F10 使调试器，而无需单步执行函数或应用程序代码 （仍执行
 
 ![运行到单击](../debugger/media/dbg-tour-run-to-click-2.png "到单击运行")
 
->  [!NOTE] 
+> [!NOTE]
 > **运行到单击**是中新增功能 （运行执行到此处） 按钮[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
 
 单击**运行到单击**（运行执行到此处） 按钮。 调试器将进入第的代码行您单击的位置。
@@ -104,7 +105,6 @@ F10 使调试器，而无需单步执行函数或应用程序代码 （仍执行
 按 F5，直到到达的代码行到选择的其中**运行到光标处**。
 
 当你编辑代码，并想要快速设置临时断点，然后启动调试器时，此命令非常有用。
-
 
 > [!NOTE]
 > 你可以使用**运行到光标处**中**调用堆栈**窗口进行调试时。
@@ -179,7 +179,7 @@ F10 使调试器，而无需单步执行函数或应用程序代码 （仍执行
 ## <a name="examine-an-exception"></a>检查异常
 
 当你的应用程序引发了异常时，则调试器将会引发异常的代码的行。
-     
+
 ![异常帮助器](../debugger/media/dbg-tour-exception-helper.png "异常帮助器")
 
 在此示例中，**异常帮助器**演示`System.Argument`异常和错误消息，指出该路径不是合法的窗体。 因此，我们知道该错误出现在方法或函数的自变量。
@@ -188,7 +188,7 @@ F10 使调试器，而无需单步执行函数或应用程序代码 （仍执行
 
 异常帮助程序是一项强大功能，可帮助你调试错误。 你可以执行诸如查看错误详细信息，并从异常帮助器添加监视。 或者，如果需要你可以更改引发特定异常的条件。
 
->  [!NOTE] 
+>  [!NOTE]
 > 异常帮助器替换异常助手中[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
 
 展开**异常设置**节点以查看更多选项如何处理这种异常类型，但你无需更改为本教程的任何内容 ！
@@ -209,7 +209,7 @@ F10 使调试器，而无需单步执行函数或应用程序代码 （仍执行
 
 可以通过使用调试工具栏中的“后退”和前进”按钮浏览和查看快照。 这些按钮用于浏览“诊断工具”窗口中“事件”选项卡上显示的事件。
 
-![单步执行向后和向前按钮](../debugger/media/intellitrace-step-back-icons-description.png  "步骤向后和向前按钮")  
+![单步执行向后和向前按钮](../debugger/media/intellitrace-step-back-icons-description.png  "步骤向后和向前按钮")
 
 有关详细信息，请参阅[使用 IntelliTrace 后退查看快照](../debugger/how-to-use-intellitrace-step-back.md)页。
 

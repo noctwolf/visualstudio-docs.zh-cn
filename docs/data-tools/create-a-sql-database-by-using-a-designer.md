@@ -14,11 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c0cefc826c26e1f981866a3ceb16fc16d2d522b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690921"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>创建数据库并在 Visual Studio 中添加表
 可以使用 Visual Studio 创建和更新 SQL Server Express LocalDB 中的本地数据库文件。 你还可以通过执行 TRANSACT-SQL 语句中的创建数据库**SQL Server 对象资源管理器**Visual Studio 中的工具窗口。 在本主题中，我们将创建的.mdf 文件，并使用表设计器中添加表和键。
@@ -88,7 +89,7 @@ ms.lasthandoff: 04/26/2018
 
 6.  通过更新脚本窗格的第一行来命名 Customers 表，与以下示例相匹配：
 
-    ```
+    ```sql
     CREATE TABLE [dbo].[Customers]
     ```
 
