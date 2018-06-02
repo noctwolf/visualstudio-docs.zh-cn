@@ -33,11 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2eb30d50be7348802518b7cc1b945aa88a26bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ae43c5cab67d79450cea1dc024da98fe25c5375
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690661"
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>如何： 设置调试和发布 Visual Studio 中的配置
 Visual Studio 项目具有针对你的程序的单独发布和调试配置。 顾名思义，生成调试版本的目的是用于调试，而生成发布版本的目的是用于最终发布分发。  
@@ -60,7 +61,7 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
   
      Express 版中不提供此工具栏。 你可以使用**生成解决方案 F6**和**启动调试 F5**菜单项来选择配置。
 
-## <a name="BKMK_symbols_release"></a>生成符号 (.pbd) 文件生成
+## <a name="BKMK_symbols_release"></a>生成生成符号 (.pdb) 的文件
 
 对于大多数项目类型，.pdb 文件默认情况下，这两个调试生成和发布版本，但默认设置会有所不同，具体取决于你的特定项目类型和版本的 Visual Studio。 你可以配置是否编译器将生成.pdb 文件和哪种类型的调试信息包括。
 

@@ -17,11 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bd0aa9ae269da4cfd4ae5ab3dfb45e96052d75fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 917bf166057ef304f3d045898838b7074d76c467
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690713"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 在本演练中，你将创建一个包含数据绑定控件的 WPF 应用程序。 这些控件将绑定到在数据集中封装的产品记录。 你还将添加用于浏览产品和保存对产品记录所做的更改的按钮。
@@ -116,7 +117,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  在**输入 SQL 语句**页上，添加以下 WHERE 子句之后`SELECT`在文本框中的语句。
 
-    ```
+    ```sql
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
