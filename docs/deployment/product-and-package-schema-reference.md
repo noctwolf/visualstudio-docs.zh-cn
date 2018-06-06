@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: dc613a95f6c0051690e9371cd3c5c8e401df6b86
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815569"
 ---
 # <a name="product-and-package-schema-reference"></a>产品和包架构引用
 A*产品文件*是描述所有所需的外部依赖关系的 XML 清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 外部依赖关系的示例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft 数据访问组件 (MDAC)。 包文件类似于产品文件，但用于安装依赖于区域性的组件的依赖项，如本地化的程序集、 许可协议和文档。  
@@ -56,7 +57,7 @@ A*产品文件*是描述所有所需的外部依赖关系的 XML 清单[!INCLUDE
 ## <a name="example"></a>示例  
  下面的代码示例演示用于安装的完整的产品文件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  

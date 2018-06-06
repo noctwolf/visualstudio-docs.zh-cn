@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b265806a15d5a2b3f08862432c7c8e2a94d119c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0111226fdd3de300265f69930b7e9e56f90876c8
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816011"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：发布启用了视觉样式的 WPF 应用程序
 视觉样式启用公共控件，若要更改根据用户所选择的主题的外观。 默认情况下，视觉样式不会启用 Windows Presentation Foundation (WPF) 应用程序，因此你必须手动启用它们。 但是，启用一个 WPF 应用程序的可视样式，然后发布该解决方案将导致错误。 本主题介绍如何解决此错误以及发布启用了视觉样式的 WPF 应用程序的过程。 关于视觉样式的详细信息，请参阅[视觉样式概览](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)。 有关错误消息的详细信息，请参阅[疑难解答 ClickOnce 部署中的特定错误](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/19/2018
   
      默认情况下，不启用视觉样式。  
   
-    ```  
+    ```xml  
     <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
     ```  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/19/2018
   
      此 XML 描述包含支持视觉样式的控件的程序集。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
     ```  
   
@@ -111,12 +112,12 @@ ms.lasthandoff: 04/19/2018
 2.  在命令提示符下，将更改为包含已发布的应用程序文件的最新版本的目录的路径。 下面的示例演示此步骤。  
   
     ```  
-    cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
     ```  
   
 3.  在命令提示符下运行以下命令以将清单文件嵌入到应用程序的可执行文件。  
   
-    ```  
+    ```
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
