@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f730824c217e9909196b5889e2c032c66bb0001
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 835226dc867f290c3cd3f553895687abdb895207
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477101"
 ---
 # <a name="utilization-view"></a>使用率视图
 使用率视图显示有关当前进程所使用的 CPU、GPU 和其他系统资源的信息（选择“分析” > “并发可视化工具”来启动并发可视化工具）。 它显示随着时间的推移，在系统上运行的分析的进程、空闲进程、系统进程和其他进程的平均核心使用率。 它不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。 通过将分析时间分成较短的时间段生成此视图。 对于每个时间段，此图绘制出该间隔期间内在逻辑核心上执行的进程线程的平均数量。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 05/22/2018
   
  如果是通过 C++ AMP 或 DirectX 使用 GPU，则可能会对识别使用中的 GPU 引擎数或 GPU 在其中意外处于空闲状态的区域感兴趣。  
   
-## <a name="zooming"></a>缩放  
+## <a name="zoom"></a>缩放  
  若要在 CPU 使用率关系图或 GPU 活动关系图上放大，请选择某个节，或使用关系图顶部的缩放滑块工具。 当切换到其他视图时，缩放设置仍然存在。 若要再次缩小，请使用缩放滑块工具。 还可以使用 Ctrl+滚动条进行缩放。  
   
 ## <a name="see-also"></a>请参阅  

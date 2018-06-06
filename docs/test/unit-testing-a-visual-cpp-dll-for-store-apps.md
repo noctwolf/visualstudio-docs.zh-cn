@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751866"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>如何测试 Visual C++ DLL
 
@@ -31,11 +32,11 @@ ms.lasthandoff: 04/26/2018
 
 3.  将项目命名为 `RooterLibTests`；指定位置；将解决方案命名为 `RooterLib`；确保选中了“创建解决方案的目录”。
 
-     ![指定解决方案和项目名称和位置](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![指定解决方案和项目名称以及位置](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
 4.  在新项目中，打开 **unittest1.cpp**。
 
-     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
      请注意：
 
@@ -64,13 +65,13 @@ ms.lasthandoff: 04/26/2018
 
      将生成并运行测试项目。 随即显示“测试资源管理器”窗口，并且测试列出在“通过的测试”下。 窗口底部的“摘要”窗格将提供有关所选测试的其他详细信息。
 
-     ![测试资源管理器](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
+     ![测试资源管理器](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> 向解决方案添加 DLL 项目
 
 1.  在解决方案资源管理器中，选择解决方案名称。 从快捷菜单中选择“添加”，然后选择“添加新项目”。
 
-     ![创建 RooterLib 项目](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")
+     ![创建 RooterLib 项目](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  在“添加新项目”对话框中，选择“DLL (UWP 应用)”。
 
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/26/2018
 
     1.  在解决方案资源管理器中，选择“RooterLib”项目，然后从快捷菜单选择“属性”。
 
-         ![添加预处理器符号定义](../test/media/ute_cpp_windows_addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
+         ![添加预处理器符号定义](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
     2.  在 RooterLib 属性页对话框中，依次展开“配置属性”、“C++”，然后选择“预处理器”。
 
@@ -175,7 +176,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  在“测试资源管理器”中，选择 **“全部运行”**。
 
-     ![已通过基本测试](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+     ![已通过基本测试](../test/media/ute_cpp_testexplorer_basictest.png)
 
  你已设置测试和代码项目，并已验证可运行测试（运行测试项目中的函数）。 现在可以开始编写实际测试和代码。
 
@@ -206,7 +207,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  测试将不会通过。
 
-     ![RangeTest 未通过](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest 未通过](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > 验证每个测试是否在编写之后立即失败。 这有助于避免编写从不失败的测试这一易犯错误。
@@ -278,7 +279,7 @@ ms.lasthandoff: 04/26/2018
 
      测试将不会通过。 在测试资源管理器中选择测试名称。 失败的断言会突出显示。 失败消息会显示在测试资源管理器的详细信息窗格中。
 
-     ![NegativeRangeTests 失败](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests 未通过](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 3.  若要查看未通过测试的原因，请单步调试函数：
 
@@ -308,7 +309,7 @@ ms.lasthandoff: 04/26/2018
 
  现在所有测试均通过。
 
- ![所有测试均通过](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+ ![所有测试通过](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> 在不更改测试的情况下重构代码
 

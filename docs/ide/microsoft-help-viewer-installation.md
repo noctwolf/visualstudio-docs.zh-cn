@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eedfe24b1f7ff7243cb9856bd1ae1942b1dbc53
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e902df40e27fb5bf27ca29d9335634844024f3fb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747477"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安装
 
@@ -46,7 +47,7 @@ Help Viewer 是 Visual Studio 的可选安装组件。 要通过 Visual Studio �
 
 |         |         |
 |---------|---------|
-|  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |  [观看视频](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171)，了解如何使用 Visual Studio 安装程序安装 Microsoft Help Viewer。 |
+|  ![视频的摄像机图标](../install/media/video-icon.png)  |  [观看视频](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171)，了解如何使用 Visual Studio 安装程序安装 Microsoft Help Viewer。 |
 
 ## <a name="see-also"></a>请参阅
 

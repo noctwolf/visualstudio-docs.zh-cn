@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c64f271f041c28dc621ed85a8cd9d79c36caa3dd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746710"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用“查看定义”查看和编辑代码 (Alt+F12)
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 
      本插图显示了名为 `Print()` 的方法的“查看定义”窗口：
 
-     ![“查看”窗口](../ide/media/peekwindow.png "PeekWindow")
+     ![“查看”窗口](../ide/media/peekwindow.png)
 
      定义窗口显示在原始文件的 `printer.Print("Hello World!")` 行的下方。 该窗口不会隐藏原始文件中的任何代码。 跟在 `printer.Print("Hello World!")` 后的行显示在定义窗口下。
 
@@ -43,19 +44,19 @@ ms.lasthandoff: 04/26/2018
 
 如果“查看定义”窗口已打开，则可以对该窗口中的代码再次调用“查看定义”。 此时将打开另一个定义窗口。 一组痕迹点将显示在定义窗口选项卡旁边，可用于在定义窗口之间导航。 每个点上的工具提示显示该点表示的定义文件的文件名和路径。
 
-   ![“查看”窗口中的“查看”窗口](../ide/media/peekwithinpeek.png "PeekWithinPeek")
+   ![“查看”窗口中的“查看”窗口](../ide/media/peekwithinpeek.png)
 
 ### <a name="peek-definition-with-multiple-results"></a>具有多个结果的“查看定义”
 
 如果对具有多个定义的代码（例如，分部类）使用“查看定义”，则代码定义视图的右侧将显示结果列表。 你可选择列表中的任意结果来显示其定义。
 
-   ![多个结果的查看窗口](../ide/media/peekmultiple.png "PeekMultiple")
+   ![来自多个结果的“查看”窗口](../ide/media/peekmultiple.png)
 
 ### <a name="edit-inside-the-peek-definition-window"></a>在“查看定义”窗口中编辑
 
 开始在“速览定义”窗口中编辑时，所修改的文件将在代码编辑器中作为单独的选项卡自动打开，并显示已完成的更改。 可在“查看定义”窗口中继续更改、撤消更改和保存更改，该选项卡将继续显示这些更改。 即使关闭“速览定义”窗口时没有保存更改，也可以在“速览定义”窗口中上次离开的位置继续在选项卡中更改、撤消更改和保存更多更改。
 
-   ![在查看窗口内编辑](../ide/media/peekedit.png "PeekEdit")
+   ![在“查看”窗口中编辑](../ide/media/peekedit.png)
 
 ### <a name="to-change-options-for-peek-definition"></a>更改速览定义的选项
 

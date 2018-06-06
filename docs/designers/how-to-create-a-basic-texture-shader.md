@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7bd7368dbdd5d66f1921d555fbbf731cebd664
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c73ba8007bf107f9dae5cc1422fb582aa5415916
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747048"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>如何：创建基本纹理着色器
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > 在此插图中，飞机用作预览形状，并且已指定一个纹理以更好地演示着色器的效果。
 
-![着色器图及其效果预览](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")
+![着色器图及其效果预览](../designers/media/digit-texture-effect.png)
 
 某些形状可能会增强某些着色器的预览效果。 若要深入了解如何在着色器设计器中预览着色器，请参阅[着色器设计器](../designers/shader-designer.md)
 

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ced3059b516c7285d525666a69d2c63a654a83a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a9ac84cce32c6de0310257cb62c29f93726ecb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748031"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>演练：创建真实的三维台球
 
@@ -56,11 +57,11 @@ ms.lasthandoff: 04/26/2018
 
      纹理应如下所示：
 
-     ![台球纹理](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png "gfx_shader_demo_billiard_art_ball_texture")
+     ![台球的纹理](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png)
 
 4.  或者，可能会希望减少此纹理的存储要求。 可根据纹理高度减小其宽度来实现此操作。 这会压缩宽度上的纹理，但是由于纹理映射到球体的方式，当呈现台球时，会展开纹理。 重新设置大小后，纹理应如下所示：
 
-     ![压缩为正方形的台球纹理](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png "gfx_shader_demo_billiard_art_ball_texture_square")
+     ![压缩为正方形的台球纹理](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png)
 
  现可创建一个将该纹理应用于模型的着色器。
 
@@ -70,11 +71,11 @@ ms.lasthandoff: 04/26/2018
 
      默认情况下，着色器图如下所示：
 
-     ![默认着色器图](../designers/media/gfx_shader_demo_billiard_step_0.png "gfx_shader_demo_billiard_step_0")
+     ![默认着色器关系图](../designers/media/gfx_shader_demo_billiard_step_0.png)
 
 2.  修改默认着色器，将纹理样本的值应用于当前像素。 着色器图应如下所示：
 
-     ![将纹理应用于物体的着色器图](../designers/media/gfx_shader_demo_billiard_step_1.png "gfx_shader_demo_billiard_step_1")
+     ![将纹理应用于对象的着色器关系图](../designers/media/gfx_shader_demo_billiard_step_1.png)
 
 3.  通过配置纹理属性，应用在上一个过程中创建的纹理。 将“纹理样本”节点的“纹理”属性的值设置为“纹理 1”，然后使用同一属性窗口中的“纹理 1”属性组的“文件名”属性指定纹理文件。
 
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/26/2018
 
  台球现应如下所示：
 
- ![带纹理的台球的特写](../designers/media/gfx_shader_demo_.png "gfx_shader_demo_")
+ ![带纹理的台球的特写](../designers/media/gfx_shader_demo_.png)
 
 ## <a name="create-depth-with-the-lambert-lighting-model"></a>使用朗伯照明模型创建深度
 
@@ -96,7 +97,7 @@ ms.lasthandoff: 04/26/2018
 
 -   修改着色器，根据朗伯照明值调整纹理样本值。 着色器图应如下所示：
 
-     ![添加了朗伯照明的着色器图](../designers/media/gfx_shader_demo_billiard_step_2.png "gfx_shader_demo_billiard_step_2")
+     ![添加了 Lambert 照明的着色器关系图](../designers/media/gfx_shader_demo_billiard_step_2.png)
 
 -   或者也可通过配置着色器图的 MaterialDiffuse 属性来调整照明的呈现方式。 若要访问着色器图的属性，请选择设计表面的空白区域，然后在“属性”窗口中找到要访问的属性。
 
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/26/2018
 
  使用朗伯照明后，台球应如下所示：
 
- ![带纹理且被照亮的台球的特写](../designers/media/gfx_shader_demo_billiard_ball_2.png "gfx_shader_demo_billiard_ball_2")
+ ![带纹理的照亮的台球的特写](../designers/media/gfx_shader_demo_billiard_ball_2.png)
 
 ## <a name="enhance-the-basic-appearance-with-specular-highlights"></a>使用反射高光增强基本外观
 
@@ -118,7 +119,7 @@ ms.lasthandoff: 04/26/2018
 
 1.  使用添加混合修改着色器以包含反射部分。 着色器图应如下所示：
 
-     ![添加了反射照明的着色器图](../designers/media/gfx_shader_demo_billiard_step_3.png "gfx_shader_demo_billiard_step_3")
+     ![添加了反射照明的着色器关系图](../designers/media/gfx_shader_demo_billiard_step_3.png)
 
 2.  或者也可配置着色器图的反射属性（“MaterialSpecular”和“MaterialSpecularPower”），调整反射高光的呈现方式。 若要访问着色器图的属性，请选择设计表面的空白区域，然后在“属性”窗口中找到要访问的属性。
 
@@ -126,7 +127,7 @@ ms.lasthandoff: 04/26/2018
 
  应用反射照明后，台球应如下所示：
 
- ![添加了反射的台球的特写](../designers/media/gfx_shader_demo_billiard_ball_3.png "gfx_shader_demo_billiard_ball_3")
+ ![添加了反射的台球的特写](../designers/media/gfx_shader_demo_billiard_ball_3.png)
 
 ## <a name="create-a-sense-of-space-by-reflecting-the-environment"></a>通过反射环境创造空间感
 
@@ -150,13 +151,13 @@ ms.lasthandoff: 04/26/2018
 
 4.  创建第二个纹理，大小与第一个纹理相同。 此纹理在立方体贴图的四面重复使用，对应台球桌的表面和侧面以及台球桌周围的区域。 务必在此纹理中使用与底部纹理相同的颜色绘制台球桌表面。 纹理应如下所示：
 
-     ![立方体贴图侧面的纹理](../designers/media/gfx_shader_demo_billiard_art_env_texture_side.png "gfx_shader_demo_billiard_art_env_texture_side")
+     ![立方体贴图的边的纹理](../designers/media/gfx_shader_demo_billiard_art_env_texture_side.png)
 
      请记住，反射贴图即使不如照片般逼真也能奏效；例如，本文中用于创建图像的立方体贴图只包含四个球带而非六个。
 
 5.  创建第三个纹理，大小与其他两个纹理相同。 此纹理将位于立方体贴图的顶部，对应台球桌上方的天花板。 为使这部分反射更为有趣，可绘制一个顶灯，加强在上一个过程中添加到着色器的反射高光。 纹理应如下所示：
 
-     ![立方体贴图顶部的纹理](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png "gfx_shader_demo_billiard_art_env_texture_top2")
+     ![立方体贴图的顶部的纹理](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png)
 
  现已为立方体贴图各个面创建了单独的纹理，可使用工具将其组合到可存储在单个 .dds 纹理中的立方体贴图中。 可使用任意程序创建立方体贴图，只要该程序能将立方体贴图另存为 .dds 纹理格式即可。 本演练演示如何使用 2010 年 6 月的 DirectX SDK 中的 DirectX 纹理工具创建纹理。
 
@@ -180,7 +181,7 @@ ms.lasthandoff: 04/26/2018
 
  可将立方体贴图设想为具有如下布局：
 
- ![环境立方体贴图的布局](../designers/media/gfx_shader_demo_billiard_art_env_texture_top.png "gfx_shader_demo_billiard_art_env_texture_top")
+ ![环境立方体贴图的布局](../designers/media/gfx_shader_demo_billiard_art_env_texture_top.png)
 
  顶部的图像是正 Y(+Y) 立方体面；中间，从左到右分别是是 -X、+Z、+X 和 -Z 立方体面；底部是 -Y 立方体面。
 
@@ -190,13 +191,13 @@ ms.lasthandoff: 04/26/2018
 
 1.  使用添加混合修改着色器以包含环境映射部分。 着色器图应如下所示：
 
-     ![两种反射着色器节点的特写](../designers/media/gfx_shader_demo_billiard_step_4b.png "gfx_shader_demo_billiard_step_4b")
+     ![两种反射着色器节点的特写](../designers/media/gfx_shader_demo_billiard_step_4b.png)
 
      请注意，可使用“乘加”节点来简化着色器图。
 
      以下是实现环境映射的着色器节点的更详细的视图：
 
-     ![添加了环境映射的着色器图](../designers/media/gfx_shader_demo_billiard_step_4a.png "gfx_shader_demo_billiard_step_4a")
+     ![添加了环境映射的着色器关系图](../designers/media/gfx_shader_demo_billiard_step_4a.png)
 
 2.  通过配置立方体贴图的纹理属性，应用在上一个过程中创建的纹理。 将“立方体贴图样本”节点的“纹理”属性的值设置为“纹理 2”，然后使用“纹理 2”属性组的“文件名”属性指定纹理文件。
 
@@ -204,7 +205,7 @@ ms.lasthandoff: 04/26/2018
 
  应用环境映射后，台球应如下所示：
 
- ![环境映射的台球的特写](../designers/media/gfx_shader_demo_billiard_ball_4.png "gfx_shader_demo_billiard_ball_4")
+ ![环境映射的台球的特写](../designers/media/gfx_shader_demo_billiard_ball_4.png)
 
  在此最终图像中，请注意为创建逼真台球组合所添加效果的方式。 形状、纹理和照明构造三维物体的基本外观，反射高光和反射使得台球更加有趣，使其与环境融为一体。
 

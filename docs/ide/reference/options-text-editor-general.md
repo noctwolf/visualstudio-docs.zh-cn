@@ -49,11 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a2abbfe1e410763822c44367a183d1d9ab8ab6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747810"
 ---
 # <a name="options-text-editor-general"></a>选项，文本编辑器，常规
 
@@ -88,7 +89,7 @@ ms.lasthandoff: 04/26/2018
 
 |打开选定内容的边距|关闭选定内容的边距|
 |-------------------------|--------------------------|
-|![HTMLpageSelectionMarginOn 屏幕截图](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff 屏幕截图](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|
+|![HTMLpageSelectionMarginOn 屏幕快照](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff 屏幕快照](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>指示器边距
 

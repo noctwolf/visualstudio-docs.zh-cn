@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0e1c990a0014051c6732eb187150bd0c1d89afc8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f7da7f881cf70ebfdafb3dbaaf2821471327fa81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751229"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>如何：使用虚拟用户活动图分析虚拟用户在负载测试期间的操作
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 
      **详细信息图例面板**
 
-     ![详细信息图例面板](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+     ![详细信息图例面板](../test/media/ltest_detailslegend.png)
 
 2.  选中或清除与负载测试关联的错误、日志、测试、搜索和 aspx 页面对应的复选框。
 
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/26/2018
 
      **筛选结果面板**
 
-     ![筛选结果面板](../test/media/ltest_filterresults.png "LTest_FilterResults")
+     ![筛选结果面板](../test/media/ltest_filterresults.png)
 
 3.  在“筛选结果”中，选中或清除与以下筛选选项对应的复选框：
 

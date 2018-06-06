@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe72522d235579147b645c27cf4f560827f555d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745758"
 ---
 # <a name="view-type-and-member-definitions"></a>查看类型和成员定义
 
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/26/2018
 
 例如，如果对 <xref:System.Console> 运行“转到定义”命令，则 <xref:System.Console> 的元数据将在“代码编辑器”中显示为 C# 源代码。 该代码与其声明类似，但不会显示一个实现。
 
-![作为源代码的元数据](../ide/media/metadatasource.png "MetadataSource")
+![作为源代码的元数据](../ide/media/metadatasource.png)
 
 > [!NOTE]
 > 尝试对标记为内部的类型或成员运行“转到定义”或“查看定义”命令时，Visual Studio 不会将其元数据显示为源代码，无论引用程序集是否友好均是如此。

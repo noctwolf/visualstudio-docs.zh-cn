@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 760d79677ea43602f000748d1eb0d65203c2c787
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750904"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用负载测试分析器分析负载测试中的阈值规则冲突 
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 |列|描述|默认情况下可见|
 |------------|-----------------|------------------------|
 |时间|负载测试过程中发生冲突的时间。|是|
-|计算机|发生冲突的测试计算机的名称。 **注意：**在远程测试机组上运行负载测试时，这一项很重要。|是|
+|计算机|发生冲突的测试计算机的名称。 **注意：** 在远程测试机组上运行负载测试时，这一项很重要。|是|
 |类别|发生冲突的性能计数器的类别。|是|
 |计数器|发生冲突的性能计数器的名称。|是|
 |实例|发生冲突的性能计数器实例。|是|
@@ -53,15 +54,15 @@ ms.lasthandoff: 04/26/2018
 
  该图标可以为如下所述的几种图标之一：
 
- ![没有阈值冲突](../test/media/icon_ltest_1.gif "Icon_LTest_1")没有阈值冲突。
+ ![没有阈值冲突](../test/media/icon_ltest_1.gif) 无示阈值冲突。
 
- ![在上一个间隔内发生严重阈值冲突](../test/media/icon_ltest_2.gif "Icon_LTest_2")在上一个间隔内发生严重阈值冲突。
+ ![上次间隔中出现严重阈值冲突](../test/media/icon_ltest_2.gif) 在上一个间隔内发生严重阈值冲突。
 
- ![在前面的某个间隔内发生严重阈值冲突](../test/media/icon_ltest_3.gif "Icon_LTest_3")在前面的某个间隔内严重阈值冲突。
+ ![前一间隔中出现严重阈值冲突](../test/media/icon_ltest_3.gif) 在前面的某个间隔内发生严重阈值冲突。
 
- ![在上一个间隔内发生警告阈值冲突](../test/media/icon_ltest_4.gif "Icon_LTest_4")在上一个间隔内发生警告阈值冲突。
+ ![上次间隔中出现警告阈值冲突](../test/media/icon_ltest_4.gif) 在上一个间隔内发生警告阈值冲突。
 
- ![在前面的某个间隔内发生警告阈值冲突](../test/media/icon_ltest_5.gif "Icon_LTest_5")在前面的某个间隔内发生警告阈值冲突。
+ ![前一间隔中出现警告阈值冲突](../test/media/icon_ltest_5.gif) 在前面的某个间隔内发生警告阈值冲突。
 
  也可以在关系图上显示阈值冲突。 阈值图标显示在关系图上发生阈值冲突的数据点旁边。
 

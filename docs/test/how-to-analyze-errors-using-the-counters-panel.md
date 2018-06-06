@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e37b39d504059491318913f6eb1345d73ef3074b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc7beb1100b5e1bfe3fd554da53520ffc9888e64
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751879"
 ---
 # <a name="how-to-analyze-errors-using-the-counters-panel"></a>如何：使用计数器面板分析错误
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 04/26/2018
 
  计数器面板中的“错误”节点包含负载测试期间检测到的所有错误。 错误节点包含特定于不同类型错误的若干个子类别错误节点。 例如，“异常”和“HTTP 错误”。
 
- ![计数器面板的错误节点](../test/media/ltest_errornode.png "LTest_ErrorNode")
+ ![计数器面板的错误节点](../test/media/ltest_errornode.png)
 
 ## <a name="to-analyze-errors-in-the-counters-panel"></a>在计数器面板中分析错误
 

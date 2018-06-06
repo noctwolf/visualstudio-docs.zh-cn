@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 110aa964c6163f508ba9cd5f26409d0a9912a17e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3293b526b3380d3052123d45f3fb7f6599f7b5f7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751970"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>如何：在负载测试结果中的关系图上添加和删除计数器
 
 可以使用计数器面板向关系图添加性能计数器。
 
- ![已向关系图中添加计数器](../test/media/ltest_selectcounter.png "LTest_SelectCounter")
+ ![已向关系图中添加计数器](../test/media/ltest_selectcounter.png)
 
  **性能计数器采样间隔注意事项**
 

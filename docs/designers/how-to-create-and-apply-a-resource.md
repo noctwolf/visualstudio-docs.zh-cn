@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a162c66f4a014d50da7ad7bd3cd5da9edd6e43
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a1b76c5790c255a3c1ca2ed0fe38bc0d13a8d02
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746642"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何创建和应用资源
 XAML 设计器中元素的样式和模板存储在称作资源的可重用实体中。 样式可设置元素属性并重用这些设置以便多个元素实现一致的外观。 [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) 定义控件的外观，并且可作为资源应用。 有关详细信息，请参阅[快速入门：设置控件的样式](http://go.microsoft.com/fwlink/?LinkID=248239)和[快速入门：控件模板](http://go.microsoft.com/fwlink/?LinkID=247982)。
@@ -32,7 +33,7 @@ XAML 设计器中元素的样式和模板存储在称作资源的可重用实体
 
      将出现用于创建资源的相应对话框。 当从画笔创建资源时，就会出现此对话框：
 
-     ![“创建资源”对话框](../designers/media/xaml_create_resource.png "xaml_create_resource")
+     ![“创建资源”对话框](../designers/media/xaml_create_resource.png)
 
 3.  在“名称(关键字)”框中，输入关键字名称。 这是当希望其他元素可以引用该资源时，可以使用的名称。
 

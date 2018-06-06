@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750930"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>编辑测试组合以指定在负载测试方案中包括的 Web 性能、单元和编码的 UI 测试
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 
 可使用负载测试编辑器将更多 Web 性能测试和单元测试添加到方案的测试组合。
 
-![向现有负载测试中添加测试](../test/media/ltest_addingtests.png "LTest_AddingTests")
+![向现有负载测试中添加测试](../test/media/ltest_addingtests.png)
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>向现有方案添加更多测试
 
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/26/2018
 5.  （可选）调整混合控件以指定测试分布。 有关详细信息，请参阅[关于混合控件](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。
 
 ##  <a name="EditingTestMixRemoveTest"></a>从方案中删除测试
- ![从现有负载测试中删除测试](../test/media/ltest_removetest.png "LTest_RemoveTest")
+ ![从现有负载测试中移除测试](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>从方案中移除测试
 

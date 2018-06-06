@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0c2ce02ddef992bc9b9bde56be699a097594ffae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750722"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用编码的 UI 测试日志分析编码的 UI 测试
 
@@ -72,17 +73,17 @@ ms.lasthandoff: 04/26/2018
 
 4.  在“测试资源管理器”结果中选择“输出”链接。
 
-     ![测试资源管理器中的输出链接](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")
+     ![测试资源管理器中的输出链接](../test/media/cuit_htmlactionlog1.png)
 
      随即显示测试的输出，其中包括指向操作日志的链接。
 
-     ![编码的 UI 测试的结果和输出链接](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")
+     ![编码的 UI 测试中的结果和输出链接](../test/media/cuit_htmlactionlog2.png)
 
 5.  选择 UITestActionLog.html 链接。
 
      该日志显示在你的 Web 浏览器中。
 
-     ![编码的 UI 测试日志文件](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")
+     ![编码的 UI 测试日志文件](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>请参阅
 

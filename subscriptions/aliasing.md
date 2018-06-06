@@ -9,21 +9,22 @@ description: 如果别名或友好名称已被使用，登录可能会失败
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477647"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用别名登录 Visual Studio 订阅可能会失败
 
-根据用于登录的帐户类型，登录 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 时，可用订阅可能无法正确显示。一个潜在的原因是使用了“别名”或“友好名称”来代替订阅所分配到的登录标识。 这就是所谓的“别名”。 
+根据用于登录的帐户类型，登录 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 时，可用订阅可能无法正确显示。 一个潜在的原因是使用了“别名”或“友好名称”来代替订阅所分配到的登录标识。 这就是所谓的“别名”。 
 
 ## <a name="what-is-aliasing"></a>别名是什么？
 
 “别名”一词是指具有不同身份的用户登录 Windows（或 Active Directory）并访问电子邮件。
 
-当公司为其目录登录（例如 JohnD@contoso.com）提供 Microsoft Online Service 时，可能会遇到别名，但用户使用别名或友好名称（例如 John.Doe@contoso.com）访问其电子邮件帐户。对于通过批量许可服务中心 (VLSC) 管理其订阅的许多客户来说，由于提供的电子邮件地址 (John.Doe@contoso.com) 与通过“工作或学校帐户”选项成功进行身份认证所需的目录地址 (JohnD@contoso.com) 不匹配，这种做法可能会导致登录失败。
+当公司为其目录登录（例如 JohnD@contoso.com）提供 Microsoft Online Service 时，可能会遇到别名，但用户使用别名或友好名称（例如 John.Doe@contoso.com）访问其电子邮件帐户。  对于通过批量许可服务中心 (VLSC) 管理其订阅的许多客户来说，由于提供的电子邮件地址 (John.Doe@contoso.com) 与通过“工作或学校帐户”选项成功进行身份认证所需的目录地址 (JohnD@contoso.com) 不匹配，这种做法可能会导致登录失败。
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>作为管理员，有哪些选项可供我选择？
 
@@ -48,25 +49,26 @@ ms.lasthandoff: 04/06/2018
 1. 访问[批量许可服务中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 并登录。
 2. 从 VLSC 管理页中，单击“订阅”，然后单击“Visual Studio 订阅”。
 
-    ![“订阅”菜单](_img//vlsc/vlsc-subscriptions.png)
+    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
 3. 单击与 Visual Studio 订阅相关联的“协议编号”。
 
-    ![选择协议：](_img/vlsc/vlsc-agreement.png)
+    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
 
 4. 单击“分配订阅”。
 
-    ![分配订阅](_img/vlsc/vlsc-assign.png)
+    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
+
 
 5. 选择所需的订阅级别。
 
-    ![订阅级别](_img/vlsc/vlsc-subscription-level.png)
-    
+    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
+
 6. 验证你是否有可用于分配的订阅，然后单击“下一步”。
 7.  在“电子邮件地址”字段中，输入订阅者详细信息和目录地址，然后单击“下一步”。
 
-    ![电子邮件地址](_img/vlsc/vlsc-email-address.png)
-    
+    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
+        
 8. 验证订阅者信息，然后单击“完成”。
 
 9. 通知订阅者，订阅已通过使用下面的[模板](#notifying-your-subscribers-with-directory-addresses)进行预配。

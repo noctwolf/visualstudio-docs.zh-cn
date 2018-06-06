@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fea27cdfbcc843b30fbb4500dd9528df5b65c3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fef6883056affd6ee47da86d8f2860c8c9ca047
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548253"
 ---
-# <a name="collecting-performance-statistics-by-using-sampling"></a>使用采样收集性能统计信息
+# <a name="collect-performance-statistics-by-using-sampling"></a>通过采样收集性能统计信息
 
 默认情况下，Visual Studio 分析工具采样法收集每 10,000,000 个处理器周期（近似为 1 GHz 计算机上的每百分之一秒）的分析信息。 采样方法可用于查找处理器利用率问题，也是启动最多性能调查时建议采用的方法。
 

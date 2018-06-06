@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e7e939a5acaf89b3013cb5465b8fac6c272dd5d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1169d4e482f097ca923cc017964724e5886658d1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751561"
 ---
 # <a name="troubleshoot-code-coverage"></a>代码覆盖率疑难解答
 
@@ -23,7 +24,7 @@ Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集
 
 如果选择了“测试”菜单上“分析代码覆盖率”命令，并且生成和测试成功运行，则应该在“代码覆盖率”窗口中看到结果的列表。 你可能必须展开项目以查看详细信息。
 
-![着色的代码覆盖率结果](../test/media/codecoverage1.png "CodeCoverage1")
+![着色的代码覆盖率结果](../test/media/codecoverage1.png)
 
 有关详细信息，请参阅[使用代码覆盖率确定正在测试的代码数量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
 

@@ -9,11 +9,12 @@ description: 了解有关所选 Visual Studio 中包含的 Opsgility 培训权�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6cd992eb5eb7dcafbf99eb99207a8f823a97a54
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477613"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Opsgility 权益
 
@@ -52,8 +53,6 @@ ms.lasthandoff: 04/16/2018
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
 
 ## <a name="support-resources"></a>支持资源
--  需要 Opsgility 帮助？  请参阅下列资源：
-    - [常见问题解答](https://www.opsgility.com/Home/FAQ)
-    - 通过[联系我们](https://www.opsgility.com/SupportTicket)页面可提交支持票证。 
+-  需要 Opsgility 帮助？  通过[联系我们](https://www.opsgility.com/SupportTicket)页面可提交支持票证。 
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://www.visualstudio.com/subscriptions/support/)联系。
 -  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://www.visualstudio.com/support/)。 

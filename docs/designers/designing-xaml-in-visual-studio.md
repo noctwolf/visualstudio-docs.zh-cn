@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c4ebc75ccd436b36e6f96bdc94372ee37b048989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6eb91664c78f3c11039f519a306e55a76f9c8e5a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745719"
 ---
 # <a name="design-xaml-in-visual-studio"></a>在 Visual Studio 中设计 XAML
 
@@ -37,7 +38,7 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
 - **一致的用户界面：** 可以在熟悉的 Visual Studio 用户界面环境中设计应用程序，这会使 IDE 之间的切换成为更加愉快且高效的体验。 Blend for Visual Studio 使用 Visual Studio 深色主题，该主题可提高你的内容与用户界面之间的对比度，从而帮助你专注于正在设计的内容。 请参阅[使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
 
-     ![Blend for Visual Studio IDE](../designers/media/blendide.png "BlendIDE")
+     ![Blend for Visual Studio IDE](../designers/media/blendide.png)
 
 - **XAML IntelliSense：** 两个 IDE 都支持期望从 IntelliSense 获得的所有常见功能，包括语句完成、对常见编辑器操作（如对代码进行注释和格式设置）的支持以及针对资源、绑定和代码进行的导航。
 
@@ -45,7 +46,7 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
 - **文件重载体验：** 可以在 Blend for Visual Studio 或 Visual Studio 中编辑 XAML 文件，并且在它们之间切换时自动重载编辑后的文件。 若要最大程度减少工作流中断，现在可以在文件重载对话框中设置文件重载首选项。
 
-     ![文件重载体验](../designers/media/blendfilereload.png "BlendFileReload")
+     ![文件重新加载体验](../designers/media/blendfilereload.png)
 
 - **同步的布局和设置：** 通过自定义布局可以保存并应用工具窗口布局自定义项。 使用相同 Microsoft 帐户登录时，Visual Studio 会在计算机之间为 Visual Studio 和 Blend for Visual Studio 同步这些自定义项和首选项。 请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 

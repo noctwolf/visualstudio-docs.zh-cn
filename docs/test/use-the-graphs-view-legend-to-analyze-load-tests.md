@@ -11,23 +11,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 55d38dcb87081ea7fc0b16d7d500d13e72f77269
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 065e50b123ccf4ac96ba6bec89db74bb51990f58
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751396"
 ---
 # <a name="using-the-graphs-view-legend-to-analyze-load-tests"></a>使用关系图视图图例分析负载测试
 
 负载测试分析器的关系图视图包含一个图例面板，用于显示与当前选择的关系图关联的每个性能计数器的信息。
 
-![关系图视图图例](../test/media/load_viewlegend.png "Load_ViewLegend")
+![图形视图图例](../test/media/load_viewlegend.png)
 
 图例中包含以下信息：
 
--   **在关系图上显示：**使用这些复选框，可指定是否在关系图上绘制特定计数器（如“User load”或“Errors/Sec”）的线条。 如果要在关系图上绘制线条，则选中一个复选框。 清除复选框可从关系图中移除绘图线条。 在移除绘制线条时，计数器的统计信息会继续显示在图例中。
+-   **在关系图上显示：** 使用这些复选框，可指定是否在关系图上绘制特定计数器（如“User load”或“Errors/Sec”）的线条。 如果要在关系图上绘制线条，则选中一个复选框。 清除复选框可从关系图中移除绘图线条。 在移除绘制线条时，计数器的统计信息会继续显示在图例中。
 
--   **范围：**此列显示性能计数器的 y 轴范围。 默认情况下，此值会随着样本数据范围的更改而自动调整。 自动调整的范围始终为大于最大值的下一个 10 的幂；这包括 10 的负数幂。 关系图可以包含各种计数器，其中每个计数器都有不同的范围。 因此，y 轴不会用任何特定范围进行标记，而是用 0-100 之间的值进行标记，这些值表示每个计数器的总体范围百分比。 例如，对于范围为 1000 的计数器，y 轴上的数据点 60 将对应于该计数器的值 600。
+-   **范围：** 此列显示性能计数器的 y 轴范围。 默认情况下，此值会随着样本数据范围的更改而自动调整。 自动调整的范围始终为大于最大值的下一个 10 的幂；这包括 10 的负数幂。 关系图可以包含各种计数器，其中每个计数器都有不同的范围。 因此，y 轴不会用任何特定范围进行标记，而是用 0-100 之间的值进行标记，这些值表示每个计数器的总体范围百分比。 例如，对于范围为 1000 的计数器，y 轴上的数据点 60 将对应于该计数器的值 600。
 
     > [!NOTE]
     > 可以通过将范围锁定为特定值来关闭自动范围值调整。 当范围锁定后，超过该范围的任何值都会在关系图顶部显示为指定的最大值。 使用“绘图选项”对话框可将范围锁定为特定值。 有关详细信息，请参阅[如何：为绘图计数器指定绘图选项](../test/how-to-specify-plot-options-for-graphing-counters.md)。

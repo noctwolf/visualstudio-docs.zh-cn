@@ -1,6 +1,7 @@
 ---
 title: 如何：创建灰度纹理着色器
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6ce144513a9c1ade7a3405827531a4c8f86c251
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ef614cbfd611eb9994f378e655d50a8656aa0441
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746320"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>如何：创建灰度纹理着色器
 
@@ -43,7 +45,7 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 > 在此插图中，飞机用作预览形状，并且已指定一个纹理以更好地演示着色器的效果。
 
-![着色器图及其效果预览](../designers/media/digit-grayscale-effect.png "Digit-Grayscale-Effect")
+![着色器图及其效果预览](../designers/media/digit-grayscale-effect.png)
 
 某些形状可能会增强某些着色器的预览效果。 有关在着色器设计器中预览着色器的详细信息，请参阅[着色器设计器](../designers/shader-designer.md)
 

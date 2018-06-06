@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bb6e746c0ace5892dae7db014125c7e6dba92f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746775"
 ---
 # <a name="shader-designer"></a>着色器设计器
 
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/26/2018
 
 以下是“着色器设计器模式”工具栏：
 
-![着色器设计器模式工具栏。](../designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")
+![着色器设计器模式工具栏。](../designers/media/digit-dsd-modal-toolbar.png)
 
 下表介绍了“着色器设计器模式”工具栏上的项，按其从左至右的显示顺序列出：
 

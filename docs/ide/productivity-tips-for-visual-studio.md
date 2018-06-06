@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2aaa32de4742d5c3897ec2290e77223b0d6cdd56
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752658"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>提高 Visual Studio 使用效率的提示
 
@@ -69,7 +70,7 @@ ms.lasthandoff: 05/11/2018
 
 - **查找对话框、菜单命令和选项**。 在[“快速启动”](../ide/reference/quick-launch-environment-options-dialog-box.md)框中，输入要查找的项的关键字或短语。 例如，如果输入 `new project`，则会出现以下选项：
 
-    ![“新建项目”的快速启动结果](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    ![“新建项目”的快速启动结果](../ide/media/productivity_quicklaunch.png)
 
     “快速启动”显示“新项目”对话框、“添加新项”对话框、“选项”对话框中的“项目和解决方案”页的链接以及其他内容。 快速启动结果还可包括项目文件和工具窗口。
 
@@ -79,7 +80,7 @@ ms.lasthandoff: 05/11/2018
 
 - **在不同的浏览器中测试相同的页、应用程序或站点**。 在调试代码时，可在安装的 Web 浏览器（包括 [Page Inspector (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209)）之间轻松进行切换，而无需打开“浏览方式”对话框。 可使用“调试目标”列表（位于“标准”工具栏中的“启动调试”按钮旁）来快速验证在调试或查看页面时使用的浏览器。
 
-    ![选择 Web 浏览器调试选项](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![选择 Web 浏览器调试选项](../ide/media/webbrowserdropdowntoolbar.png)
 
 - **设置临时断点**。 你可以在当前代码行中创建一个临时断点，同时启动调试器。 点击该行代码时，调试器进入中断模式。 有关详细信息，请参阅[使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)。
 

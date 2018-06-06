@@ -1,6 +1,7 @@
 ---
 title: 在 XAML 设计器中绑定数据
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -13,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a94f3c4637ab76b8b0d00d1899de5c475dc8e7e4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745706"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>演练：在 XAML 设计器中绑定数据
 
@@ -81,7 +83,7 @@ ms.lasthandoff: 04/19/2018
 
      下图显示了“ShoppingCart”处于选中状态的“选择对象”对话框。
 
-     ![“选择对象”对话框](../designers/media/blendselectobject.PNG "BlendSelectObject")
+     ![“选择对象”对话框](../designers/media/blendselectobject.png)
 
 1. 在“工具箱”中，选择一个 `TextBlock` 控件将其添加到窗体。
 
@@ -91,7 +93,7 @@ ms.lasthandoff: 04/19/2018
 
      下图显示选定“ItemCount”属性的“创建数据绑定”对话框。
 
-     ![“创建数据绑定”对话框](../designers/media/xaml_create_data_binding.png "xaml_create_data_binding")
+     ![“创建数据绑定”对话框](../designers/media/xaml_create_data_binding.png)
 
 1. 按 F5  运行应用。
 

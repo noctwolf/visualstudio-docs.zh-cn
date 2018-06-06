@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751600"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在负载测试方案中配置测试迭代
 
@@ -42,7 +43,7 @@ ms.lasthandoff: 05/22/2018
 
  “最大测试迭代数”属性在多种情况下都很有用。 有些负载测试人员更愿意执行基于迭代的测试，而另一些负载测试人员更愿意执行基于持续时间的测试。
 
- ![指定方案中的测试迭代数](../test/media/loadtest_prop.png "LoadTest_Prop")
+ ![指定方案中的测试迭代数](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>指定最大测试迭代数
 
