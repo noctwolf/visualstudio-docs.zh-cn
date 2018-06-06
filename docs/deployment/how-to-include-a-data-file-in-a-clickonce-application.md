@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8240e4bb8ba540fcdd4453e39d9fa6b00b31bef2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815540"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>How to: Include a Data File in a ClickOnce Application
 每个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]你安装的应用程序分配应用程序可以在其中管理其自己的数据的目标计算机的本地磁盘上的数据目录。 数据文件可以包含任何类型的文件： 文本文件、 XML 文件或甚至 Microsoft Access 数据库 (.mdb) 文件。 下面的过程演示如何将添加到任何类型的数据文件你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/19/2018
   
 2.  到列表的数据文件中更新你的应用程序清单。  
   
-     **mage-u v1.0.0.0\Application.manifest-FromDirectory 版本 1.0.0.0**  
+     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
      执行此任务将重新创建你的应用程序清单中的文件列表，并还会自动生成的哈希签名。  
   
@@ -53,13 +54,11 @@ ms.lasthandoff: 04/19/2018
   
      因为应用程序清单其哈希已更改，必须重新登录你的部署清单。  
   
-     **mage-s 应用程序清单-cf cert_file-pwd 密码**  
+     `mage -s app manifest -cf cert_file -pwd password`
   
-     **mage-u 部署清单 appm 应用程序清单**  
+     `mage -u deployment manifest -appm app manifest`
   
-     **mage-s 部署清单-cf certfile-pwd 密码**  
-  
-2.  
+     `mage -s deployment manifest -cf certfile -pwd password`
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>若要通过使用 MageUI.exe 包含的数据文件  
   

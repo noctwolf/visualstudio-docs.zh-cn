@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 740d72f0ec339ded8ec8b721bbc2b94d706f8da7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ab25276596358f7c0a8c1f90bd38e89686e3196c
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815868"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 组件
 旧的 COM 组件部署传统上已被一个困难的任务。 组件需要进行全局注册，并因此可能导致重叠的应用程序之间的意外副作用。 这种情况下通常不是.NET Framework 应用程序中的问题因为完全独立于应用程序或组件的并行兼容。 Visual Studio 允许你将部署在 Windows XP 或更高版本的操作系统上隔离的 COM 组件。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/19/2018
   
 4.  在 Class1.vb，为生成的代码之后添加以下代码`New`方法：  
   
-    ```  
+    ```vb  
     Public Sub SayHello()  
        MsgBox "Message from the VB6Hello COM component"  
     End Sub  
@@ -102,7 +103,7 @@ ms.lasthandoff: 04/19/2018
   
 8.  双击按钮以添加处理程序代码，并在代码文件中，添加代码，因此处理程序如下所示：  
   
-    ```  
+    ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
         Dim VbObj As New VB6Hello.Class1  
         VbObj.SayHello()  

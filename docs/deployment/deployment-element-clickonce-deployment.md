@@ -23,18 +23,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f26bd8fe2b67a6078a78c9a263d57e98fc180e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e2e078da7f746460ea17d1a5ac2d83e5ac46dc62
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815527"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;部署&gt;元素 （ClickOnce 部署）
 标识用于部署更新并向系统公开的特性。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
   
       <deployment   
    install  
@@ -111,7 +112,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="examples"></a>示例  
  下面的代码示例阐释了`deployment`中的元素[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署清单。 该示例使用`deploymentProvider`元素以指示首选的更新位置。  
   
-```  
+```xml  
 <deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">  
     <subscription>  
       <update>  

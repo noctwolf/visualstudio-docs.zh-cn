@@ -21,13 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816037"
 ---
-# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>演练： 创建自定义引导程序隐私提示
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>演练：创建带有隐私提示的自定义引导程序
 你可以配置自动更新时使用较新的文件版本和程序集版本的程序集可用的 ClickOnce 应用程序。 若要确保你的客户同意此行为，可以向其显示隐私提示。 然后，他们可以选择是否用于授予对应用程序的自动更新权限。 如果应用程序不允许自动更新，它不安装。  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -68,13 +69,13 @@ ms.lasthandoff: 05/04/2018
   
 12. 在**属性**窗口中，更改**文本**下的属性**布局**到**继续**。  
   
-13. 在**属性**窗口中，更改**（名称）**下的属性**设计**到**ProceedButton**。  
+13. 在**属性**窗口中，更改 **（名称）** 下的属性**设计**到**ProceedButton**。  
   
 14. 在**工具箱**，拖动**按钮**到窗体右下方的控件。  
   
 15. 在**属性**窗口中，更改**文本**下的属性**布局**到**取消**。  
   
-16. 在**属性**窗口中，更改**（名称）**下的属性**设计**到**CancelButton**。  
+16. 在**属性**窗口中，更改 **（名称）** 下的属性**设计**到**CancelButton**。  
   
 17. 在设计器中，双击**我同意**复选框以生成的 CheckedChanged 事件处理程序。  
   
@@ -165,7 +166,7 @@ ms.lasthandoff: 05/04/2018
   
 2.  在 product.xml 文件中，添加以下 XML 代码。 请确保你不会覆盖现有的 XML 代码。  
   
-    ```  
+    ```xml  
     <Product  
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       ProductCode="Microsoft.Sample.EULA">  
@@ -197,7 +198,7 @@ ms.lasthandoff: 05/04/2018
   
 2.  在 package.xml 文件中，添加下面的 XML 代码，以定义区域设置并包括软件许可条款。 请确保你不会覆盖现有的 XML 代码。  
   
-    ```  
+    ```xml  
     <Package   
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       Name="DisplayName"  
