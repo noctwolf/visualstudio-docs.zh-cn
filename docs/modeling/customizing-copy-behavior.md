@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d9b900e47febb9e75b825fdb662c942fce7188b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6a12bdbb45c5cdfdf0abb8fb738ae87bf67c45c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748369"
 ---
 # <a name="customizing-copy-behavior"></a>自定义复制行为
 在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可视化和建模 SDK 创建的域特定语言 (DSL) 中，你可以更改当用户复制并粘贴元素时所发生的情况。
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 
  此规则将按递归方式应用到复制的元素和链接。
 
- ![复制和粘贴元素](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+ ![复制和粘贴的元素](../modeling/media/dslcopypastedefault.png)
 
  复制的元素和链接将进行序列化并存储在位于剪贴板上的 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP)。
 
@@ -217,7 +218,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ##  <a name="customizeLinks"></a> 自定义链接复制行为
  当用户复制元素时，标准行为是还会复制所有嵌入元素。 可以修改标准复制行为。 在 DSL 定义中，选择关系的和属性窗口集中一方上的角色**传播复制**值。
 
- ![传播域角色的副本属性](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![传播域角色的 Copy 属性](../modeling/media/dslpropagatescopy.png)
 
  有三个值：
 
@@ -227,7 +228,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
 -   将复制传播到链接和相反的角色扮演者 - 复制的组包括位于链接另一端上的元素的副本。
 
- ![使用 propagatecopytolinkonly 进行复制的效果](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+ ![使用 PropagateCopyToLinkOnly 进行复制的效果](../modeling/media/dslpropagatecopy.png)
 
  所进行的更改将同时影响元素和复制的图像。
 
@@ -237,9 +238,9 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 > [!TIP]
 >  有关自定义模型，使用程序代码的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
- ![复制操作的序列图](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![复制操作的序列图](../modeling/media/dslcopyseqdiagram.png)
 
- ![粘贴操作的序列图](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![粘贴操作的序列图](../modeling/media/dslpasteseqdiagram.png)
 
 #### <a name="to-define-your-own-elementoperations"></a>定义自己的 ElementOperations
 

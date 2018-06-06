@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6629aef7549a78f7cfdb73bb6d7ee0be3ac7412
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 04e74057bd059c82010678b7de571ff180e7fbfe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751905"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>如何： 向工作区中添加架构集搜索结果节点
 
@@ -32,12 +33,12 @@ ms.lasthandoff: 05/25/2018
 
 2.  中的搜索文本框中键入"purchaseOrder" [XML 资源管理器](../xml-tools/xml-schema-explorer.md)工具栏，然后单击搜索按钮。
 
-     ![XML 架构资源管理器关键字搜索](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+     ![XML 架构资源管理器关键字搜索](../xml-tools/media/schemaexplorersearch.gif)
 
      搜索结果将以突出显示**XML 架构资源管理器**和由垂直滚动条上的刻度标记。
 
 3.  向工作区添加搜索结果，通过单击**将突出显示的节点添加到工作区**摘要结果窗格上的按钮。
 
-     ![XML 架构资源管理器搜索结果](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+     ![XML 架构资源管理器搜索结果](../xml-tools/media/schemaexplorersearchresult.gif)
 
      `purchaseOrder`节点和`PurchaseOrderType`节点显示彼此相邻的设计图面上[图形视图](../xml-tools/graph-view.md)。 因为这两个节点相关（`purchaseOrder` 元素属于 `PurchaseOrderType` 类型），因此会在这两个节点之间绘制一个箭头。

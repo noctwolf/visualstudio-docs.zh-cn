@@ -21,15 +21,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5631699f324451034d0d5c66161c004c793add37
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8d19dc2cb621cc99b94524806d63eebba137668a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691412"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765851"
 ---
-# <a name="browsing-sharepoint-connections-that-use-server-explorer"></a>使用服务器资源管理器浏览 SharePoint 连接
-  你现在可以浏览本地 SharePoint 连接中的**服务器资源管理器**。 通过使用这种方法，您可以在系统上浏览 SharePoint 网站的组件。 SharePoint 网站组件，例如列表定义和内容类型，显示的名为一个节点**SharePoint 连接**的树视图中**服务器资源管理器**。 若要显示**服务器资源管理器**，在菜单栏上，选择**视图**，**服务器资源管理器**。 除了显示 SharePoint 网站组件以外，通过使用快捷菜单命令，你还可以移除项、查看它们的属性或刷新树视图。  
+# <a name="browse-sharepoint-connections-by-using-server-explorer"></a>通过使用服务器资源管理器浏览 SharePoint 连接
+  你现在可以浏览本地 SharePoint 连接中的**服务器资源管理器**。 通过使用这种方法，您可以在系统上浏览 SharePoint 网站的组件。 SharePoint 网站组件，例如列表定义和内容类型，显示的名为一个节点**SharePoint 连接**的树视图中**服务器资源管理器**。 若要显示**服务器资源管理器**，在菜单栏上，选择**视图** > **服务器资源管理器**。 除了显示 SharePoint 网站组件以外，通过使用快捷菜单命令，你还可以移除项、查看它们的属性或刷新树视图。  
   
 > [!IMPORTANT]  
 >  若要浏览 SharePoint 网站，您必须是 SharePoint 网站集的管理员，并且必须以本地计算机管理员身份运行 Visual Studio。 否则，站点会显示在**服务器资源管理器**，但不能展开其节点。 若要验证是否是站点集的管理员，打开站点，在 web 浏览器中，打开**站点操作**菜单上，选择**站点权限**，然后在**权限： 团队站点**页上，选择**网站集管理员**命令**管理**组功能区上。 如果您是站点集管理员，你的名称将显示在文本框中。 如果**网站集管理员**命令未显示在功能区上的管理组不是找不到站点的管理员，你必须从站点管理员处获取适当的权限。  

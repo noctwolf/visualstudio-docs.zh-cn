@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c6fc0b1169ff906d7cda36eeeb5a74410cf46a9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c80d6f3e76d20e4b5a15af162ea4581b03999e61
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691491"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765185"
 ---
-# <a name="creating-a-business-data-connectivity-model"></a>创建业务数据连接模型
+# <a name="create-a-business-data-connectivity-model"></a>创建业务数据连接模型
   你可以创建业务数据连接 (BDC) 模型，或通过使用 Visual Studio 中自定义现有 BDC 模型。 每个 SharePoint 项目可以包含仅有一个模型。 有关详细信息，请参阅[将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。  
   
 ## <a name="create-a-new-model"></a>创建新的模型

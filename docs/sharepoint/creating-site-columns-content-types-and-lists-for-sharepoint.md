@@ -21,20 +21,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c1869f11d4202237d628ff3f15f73906822ec47
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e2108ce50cca32be707931f5bcf11d4501e8d3d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692517"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764915"
 ---
-# <a name="creating-site-columns-content-types-and-lists-for-sharepoint"></a>为 SharePoint 创建网站栏、 内容类型和列表
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>为 SharePoint 创建网站栏、 内容类型和列表
   Visual Studio 为许多不同基本 SharePoint 项，包括提供项目项模板*列出*和*内容类型*，这两种可结合网站栏 (或*字段*)。 用于内容类型和列表的新设计器可更简单地创建这些项。  
   
 ## <a name="site-columns"></a>网站栏
  网站栏是您可以向 SharePoint 项目添加的一种最基本元素。 网站栏表示数据的类型，例如联系人列表中某一联系人的电话号码、注释或者所在城市的名称。  
   
- 新网站栏项目项模板使创建网站栏比使用 Visual Studio 的早期版本更容易。 创建新网站栏之后，您可以修改网站栏的 Elements.xml 文件中的 XML 以包含您想要的信息，例如显示名称、数据类型和您希望网站栏显示在 SharePoint 中的组。 有关站点列的详细信息，请参阅[简介列](http://go.microsoft.com/fwlink/?LinkId=224996)。  
+ 新网站栏项目项模板使创建网站栏比使用 Visual Studio 的早期版本更容易。 创建新的网站栏之后, 您可以修改网站栏中的 XML *Elements.xml*文件以包含所需信息，例如其显示名称、 其数据类型和你希望网站栏中显示的组SharePoint。 有关站点列的详细信息，请参阅[简介列](http://go.microsoft.com/fwlink/?LinkId=224996)。  
   
 ## <a name="content-types-and-lists"></a>内容类型和列表
  内容类型和列表是 SharePoint 中常用的元素。  

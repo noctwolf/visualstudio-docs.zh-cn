@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765370"
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>向 Azure App Service 中使用 Visual Studio 发布 ASP.NET 或 ASP.NET Core 应用
 
@@ -26,9 +27,9 @@ ms.lasthandoff: 05/10/2018
 
 ## <a name="prerequisites"></a>系统必备
 
-* 你必须安装的 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**开发工作负荷。 对于.NET Core 应用，你还需要 **.NET 核心**工作负荷。
+* 你必须安装的 Visual Studio 2017 和**ASP.NET 和 web 开发**工作负荷和。**NET 桌面开发**工作负荷。 对于.NET Core 应用，你需要。**NET 核心**工作负荷。
 
-    如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
+    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
 ## <a name="create-a-new-project"></a>创建新项目 
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 05/10/2018
 
 1. 下**Visual C#** 或**Visual Basic**，选择**Web**，然后在中间窗格中选择**ASP.NET Web 应用程序 (.NET Framework)** 或 (仅限 C#) **ASP.NET 核心 Web 应用程序**，然后单击**确定**。
 
-1. 选择**MVC** (或选择**Web 应用程序 （模型-视图-控制器）**为.NET Core)，请确保**无身份验证**已选择，然后单击**确定**.
+1. 选择**MVC** (或选择**Web 应用程序 （模型-视图-控制器）** 为.NET Core)，请确保**无身份验证**已选择，然后单击**确定**.
 
 1. 键入的名称，例如**MyWebApp**单击**确定**。
 
@@ -70,7 +71,7 @@ ms.lasthandoff: 05/10/2018
 
     在此对话框中，你可以选择使用的订阅，选择或创建 Azure 资源组，等等。
 
-1. 单击“创建” 。
+1. 单击 **“创建”**。
 
     Visual Studio 将应用部署到你的 Azure 应用程序服务，并在浏览器中加载 web 应用程序。
 

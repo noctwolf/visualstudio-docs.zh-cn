@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db1d993d745ea4dd1861dd086cea73cb16a08c81
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5a6f1aca4b0a97211cfcc1d5559868c95b856e5c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691207"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746173"
 ---
 # <a name="pass-data-between-forms"></a>在窗体间传递数据
 本演练提供了有关将数据从一个窗体传递到另一个窗体的分步说明。 使用客户和订单表，从 Northwind，一种形式允许用户选择一个客户，并第二种形式显示所选的客户的订单。 本演练演示如何从第一个窗体接收数据的第二个窗体上创建的方法。
@@ -71,7 +71,7 @@ ms.locfileid: "34691207"
 
 1. 在 Visual Studio 中，在**文件**菜单上，选择**新建**，**项目...**.
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 经典桌面**。
+2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
 
 3. 在中间窗格中，选择**Windows 窗体应用程序**项目类型。
 

@@ -21,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8bc73918a2af82acab1fd465f5f80755cc594ba9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691974"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765000"
 ---
-# <a name="creating-application-pages-for-sharepoint"></a>为 SharePoint 创建应用程序页
+# <a name="create-application-pages-for-sharepoint"></a>为 SharePoint 创建应用程序页
   *应用程序页*是一个 ASP.NET Web 页，可用于 SharePoint 的网站。 应用程序页是 ASP.NET 页的专用的类型。 应用程序页和一个标准的 ASP.NET 页的主要区别是应用程序页包含与 SharePoint 母版页合并的内容。 母版页使应用程序页可以为站点上的其他页面共享相同的外观和行为。  
   
  Visual Studio，可通过使用设计器来设计应用程序页。 设计器显示在母版页中定义的每个内容占位符内容区域。 你可以通过将控件拖到这些内容区域来设计应用程序页。  
@@ -55,7 +55,7 @@ ms.locfileid: "34691974"
   
 |文件|描述|  
 |----------|-----------------|  
-|ASP.NET 页文件 (.aspx)|包含定义页的 XML 标记。|  
+|ASP.NET 页文件 (*.aspx*)|包含定义页的 XML 标记。|  
 |应用程序页代码文件|包含应用程序页背后的代码。 添加代码来处理对此文件的事件。|  
 |应用程序页设计器代码文件|包含设计器所生成的代码。 不要直接编辑此文件。|  
   

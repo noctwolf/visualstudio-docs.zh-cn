@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb13e88e07741327088e8d138dfcf8b92a9075a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746554"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>演练： 代码的分析托管的代码缺陷
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在“文件”菜单上，选择“新建” > “项目...”。
 
-1. 在**新项目**对话框框中，展开**已安装** > **Visual C#**，然后选择**Windows 经典桌面**。
+1. 在**新项目**对话框框中，展开**已安装** > **Visual C#**，然后选择**Windows 桌面**。
 
 1. 选择**类库 (.NET Framework)** 模板。
 

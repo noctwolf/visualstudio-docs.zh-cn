@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41d36dc5c7f4f2d904a69d9053ed0f669b1a86c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1a64da6c7289aa8af67436ca38404ef3d050b5ab
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768100"
 ---
-# <a name="how-to-add-items-to-a-sharepoint-project"></a>如何：向 SharePoint 项目中添加项
+# <a name="how-to-add-items-to-a-sharepoint-project"></a>如何： 向 SharePoint 项目添加项
   SharePoint 解决方案包含一个或多个项目，其中每个包含多个 SharePoint 项目项。 打开或创建 SharePoint 解决方案后，你可以将新的或现有项添加到这些项目。 例如，新工作流项目附带了名为 default.aspx 中，默认窗体，但你可以将替换为新的或不同的窗体，该窗体或添加另一个 ASPX 窗体。  
   
 ### <a name="to-add-a-new-project-item-to-a-sharepoint-solution"></a>若要将新的报表项添加到 SharePoint 解决方案  
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在**解决方案资源管理器**，选择项目的节点。  
   
-3.  在菜单栏上，选择**项目**，**添加新项**以显示**添加新项**对话框。  
+3.  在菜单栏上，选择**项目** > **添加新项**以显示**添加新项**对话框。  
   
 4.  在**已安装的模板**列表中，展开**SharePoint**节点，然后选择**2010年**节点。  
   
@@ -46,12 +47,11 @@ ms.lasthandoff: 04/16/2018
   
 2.  在**解决方案资源管理器**，选择项目的节点。  
   
-3.  在菜单栏上，选择**项目**，**添加现有项**以显示**添加现有项**对话框。  
+3.  在菜单栏上，选择**项目** > **添加现有项**以显示**添加现有项**对话框。  
   
 4.  浏览到包含你想要添加，选择它，，然后选择的项的文件夹**添加**按钮。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
-  
   

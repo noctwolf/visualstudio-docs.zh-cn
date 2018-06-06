@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4cfbe0a7ae0a27e41053457774217f049d5caf3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0532025fdb090c3811f09cb823745bd50e8d91c5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34694041"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765523"
 ---
-# <a name="creating-pages-for-sharepoint"></a>为 SharePoint 创建页
+# <a name="create-pages-for-sharepoint"></a>为 SharePoint 创建页
   你可以创建应用程序页、 网站页、 母版页和页面布局为 SharePoint 站点。  
   
  可以通过使用 Visual Studio 中的模板来创建应用程序页。 通过使用 SharePoint Designer 中创建网站页、 母版页和页面布局。 然后，你可以将这些页面导入 Visual Studio 的 SharePoint 项目中使用它们。  
@@ -67,7 +67,7 @@ ms.locfileid: "34694041"
   
 |标题|描述|  
 |-----------|-----------------|  
-|[为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)|描述如何添加应用程序页： 与 SharePoint 母版页合并的.aspx 内容。|  
+|[为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)|描述如何添加应用程序页： *.aspx*与 SharePoint 母版页合并的内容。|  
 |[如何：创建应用程序页](../sharepoint/how-to-create-an-application-page.md)|演示如何创建在 SharePoint 站点运行的 ASP.NET 页。|  
 |[演练：创建 SharePoint 应用程序页](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|演示如何设计和调试 SharePoint 站点的 ASP.NET 网页。|  
   

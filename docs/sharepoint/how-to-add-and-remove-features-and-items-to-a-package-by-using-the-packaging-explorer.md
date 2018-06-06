@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dafa11c17968eb5468ecd4eff462ff9474ce5131
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8c838880dd7d7e7adfe080541f1419bd4651ff3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767437"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何：使用打包资源管理器在包中添加和移除功能和项
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何： 添加和移除功能和包项使用打包资源管理器
   若要配置包以部署 SharePoint 项和功能，可以使用打包资源管理器。 .Wsp 文件中，你可以调整的 SharePoint 项目项和功能。  
   
  或者，你可以使用打包设计器查看和重新排序的功能，若要更改激活顺序。 有关详细信息，请参阅[如何： 添加和删除通过使用包设计器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
@@ -35,14 +36,14 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-open-the-packaging-explorer"></a>若要打开打包资源管理器  
   
-1.  在菜单栏上，选择**视图**，**其他窗口**，**打包资源管理器**。  
+1.  在菜单栏上，选择**视图** > **其他窗口** > **打包资源管理器**。  
   
      **打包资源管理器**出现在**工具箱**。  
   
 ## <a name="adding-a-feature-to-a-package"></a>将功能添加到包  
  通过使用打包资源管理器，可以向包添加新的和现有功能。  
   
-#### <a name="to-add-a-sharepoint-feature"></a>若要添加 SharePoint 功能  
+#### <a name="to-add-a-sharepoint-feature"></a>若要添加 SharePoint 功能
   
 1.  打开**打包资源管理器**，打开该项目的快捷菜单，然后选择**添加功能**。  
   
@@ -60,13 +61,12 @@ ms.lasthandoff: 04/16/2018
 ## <a name="validating-a-feature-or-package"></a>验证功能或包  
  可以通过验证文件来识别中的 SharePoint 功能和包的潜在问题。 警告和错误将显示在输出窗口和错误列表窗口中。  
   
-#### <a name="to-validate-a-sharepoint-feature-or-package"></a>若要验证的 SharePoint 功能或包  
+#### <a name="to-validate-a-sharepoint-feature-or-package"></a>若要验证的 SharePoint 功能或包
   
 1.  打开**打包资源管理器**。  
   
 2.  功能或包，打开快捷菜单，然后选择**验证**。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
   

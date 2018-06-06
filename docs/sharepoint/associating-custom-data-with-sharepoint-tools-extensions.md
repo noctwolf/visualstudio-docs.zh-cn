@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 051285d1a2b3fc1c32a813fbfd8aa778befa0545
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691365"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764870"
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>将自定义数据与 SharePoint 工具扩展相关联
+# <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>将自定义数据与 SharePoint 工具扩展相关联
   可以将自定义数据添加到 SharePoint 工具扩展中的某些对象。 如果你想要从你的扩展中的其他代码访问更高版本的扩展的一部分中具有的数据，这非常有用。 而不是实现自定义方式存储和访问数据，可以将你的扩展中的数据关联的对象，然后以后从同一对象检索数据。  
   
  当你想要保留与 Visual Studio 中特定项相关的数据时，将自定义数据添加到对象还有有用。 只需后在 Visual Studio 中，因此你的扩展可能可以使用多个不同项时，才加载 SharePoint 工具扩展 (如项目，项目项，或**服务器资源管理器**节点) 在任何时间。 如果你有只与特定项相关的自定义数据，你可以将数据添加到表示该项的对象。  
@@ -87,5 +87,6 @@ ms.locfileid: "34691365"
  [演练： 使用项模板创建的自定义操作项目项，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [演练： 扩展服务器资源管理器以显示 Web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [如何： 向 SharePoint 项目中添加属性](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [如何： 将属性添加到自定义 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md   
+ [如何：将属性添加到自定义 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+   
  

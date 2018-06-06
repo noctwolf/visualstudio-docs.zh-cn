@@ -9,11 +9,12 @@ dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 607b4f2d96e809f9c8b5aedf8362c5d5f54e097d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8b031fc1251ad06fdba154c086696337e552445
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747399"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + 核心准则检查器
 C + + 核心准则所移动的一组准则、 规则和有关在 c + + 专家和设计器创建的 c + + 中对编码的最佳做法。 Visual Studio 当前支持 c + + 的这些规则作为其代码分析工具的一部分的子集。 核心原则检查器在 Visual Studio 2017，默认情况下已安装并且位于[可用作 Visual Studio 2015 的 NuGet 包](#vs2015_corecheck)。
@@ -24,11 +25,11 @@ C + + 核心准则所移动的一组准则、 规则和有关在 c + + 专家和
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>启用代码分析中的 c + + 核心检查准则
  可以通过选择你的项目启用代码分析**生成时启用代码分析**中的复选框**代码分析**部分**属性页**对话框你的项目。
 
- ![代码分析常规设置的属性页](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+ ![代码分析常规设置的属性页](../code-quality/media/cppcorecheck_codeanalysis_general.png)
 
  C + + 核心检查规则是运行时启用代码分析的默认规则集的扩展。 由于 c + + 核心检查规则是在开发下，某些规则是很好地建立，并且某些可能不是可供所有代码上使用，但仍可能提供有用的信息。 规则分为两个组： 发布的和试验性。 你可以选择是在你的项目的属性中运行的发布或实验性的规则。
 
- ![代码分析扩展设置的属性页](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+ ![代码分析扩展设置的属性页](../code-quality/media/cppcorecheck_codeanalysis_extensions.png)
 
  若要启用或禁用的 c + + 核心检查规则集，请打开**属性页**对话框为你的项目。 下**配置属性**，展开**代码分析**，**扩展**。 在下拉列表中控制旁边**检查 （发布） 启用 c + + 核心**或**检查 （实验） 启用 c + + 核心**，选择**是**或**否**。 选择**确定**或**应用**以保存所做的更改。
 
@@ -101,7 +102,7 @@ C + + 核心原则有可帮助你编写更好、 更安全的代码。 但是，
   - **共享指针规则**作为的一部分[资源管理](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource)准则强制，我们添加特定于如何共享指针的几个规则都传递给函数或在本地使用。
   - **样式规则**一个简单但很重要检查，bans 使用[goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto)。 这是提高编码样式和使用的表达式和 c + + 中的语句的第一步。
 
-  **Visual Studio 2017 版本 15.6**:
+  **Visual Studio 2017 15.6 版**：
   - **算术规则**规则，以检测算术[溢出](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow)，[有符号的无符号操作](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned)和[位操作](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative)。
 
 
@@ -241,7 +242,7 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 
 2.  在**NuGet 包管理器**窗口中，搜索 Microsoft.CppCoreCheck。
 
-     ![Nuget 包管理器窗口显示 CppCoreCheck 包](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+     ![Nuget 包管理器窗口显示 CppCoreCheck 包](../code-quality/media/cppcorecheck_nuget_window.png)
 
 3.  选择 Microsoft.CppCoreCheck 包，然后选择**安装**按钮以将规则添加到你的项目。
 

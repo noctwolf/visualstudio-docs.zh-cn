@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c110344499281243628d633d005506af5cd801d0
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 1133d6a67442bde5a9f949553efcffd07e2d3ffe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751736"
 ---
 # <a name="search-the-schema-set"></a>搜索架构集
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 05/24/2018
 
  通过输入中的子字符串执行关键字搜索**搜索架构集**文本框**XML 架构资源管理器**工具栏。
 
- ![XML 架构资源管理器关键字搜索](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![XML 架构资源管理器关键字搜索](../xml-tools/media/schemaexplorersearch.gif)
 
  **XML 架构资源管理器**搜索架构集的以下属性：
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/24/2018
 
  你可以向工作区添加搜索结果，通过单击**将突出显示的节点添加到工作区**摘要结果窗格上的按钮。
 
- ![XML 架构资源管理器搜索结果](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+ ![XML 架构资源管理器搜索结果](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>清除搜索结果
 

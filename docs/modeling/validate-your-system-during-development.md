@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9965f5bbe747bfdeed876e90888c7b18d71a8097
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 807cdbac4284d7725de2e155ecd5a9a89344a774
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749936"
 ---
 # <a name="validate-your-system-during-development"></a>在开发过程中验证系统
 Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构保持一致。
@@ -34,7 +35,7 @@ Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构
 
 |**类别**|**链接**|
 |------------------|---------------|
-|**视频**|![视频链接](../data-tools/media/playvideo.gif "PlayVideo") [第 9 频道： Doug 七： 代码了解和使用 Visual Studio 2010 的系统设计](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif "PlayVideo") [第 9 频道： 构建应用程序使用依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 如何实现系列： 如何使用依赖项关系图验证代码](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**视频**|![视频链接](../data-tools/media/playvideo.gif)[第 9 频道： Doug 七： 代码了解和使用 Visual Studio 2010 的系统设计](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif)[第 9 频道： 构建应用程序使用依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif) [MSDN 如何实现系列： 如何使用依赖项关系图验证代码](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**论坛**|-   [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 可视化和建模 SDK（DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**博客**|-   [Visual Studio ALM + Team Foundation Server 博客](http://go.microsoft.com/fwlink/?LinkID=201340)|
 |**技术文章和日志**|[MSDN 体系结构中心](http://go.microsoft.com/fwlink/?LinkId=201343)|

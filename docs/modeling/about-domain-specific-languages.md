@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d56b90e9a3badfe2c49b10793a25fc552bbdd774
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0743fa0dd1f8b876c4396d4e52d9c8636c504d67
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749140"
 ---
 # <a name="about-domain-specific-languages"></a>关于域特定语言
 
@@ -39,7 +40,7 @@ DSL 的用户创建*模型。* 模型是*实例*的 DSL。 例如，这些主题
 
 下图显示在图表 DSL 小模型：
 
-![都铎王朝家谱模型](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")
+![都铎王朝家谱模型](../modeling/media/tudor_familytreemodel.png)
 
 ## <a name="what-you-can-do-with-dsls"></a>你可以使用 Dsl 做什么
 

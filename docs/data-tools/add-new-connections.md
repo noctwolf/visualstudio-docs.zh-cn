@@ -9,11 +9,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5ea053e6b3f448311118b733c30b9ade5160288d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747087"
 ---
 # <a name="add-new-connections"></a>添加新连接
 
@@ -35,23 +36,23 @@ ms.lasthandoff: 04/26/2018
 
 若要创建与数据库的连接，请单击**添加连接**图标**服务器资源管理器**，或右键单击**服务器资源管理器**上**数据连接**节点，然后选择**添加连接**。 从这里，你可以还连接到另一台服务器、 SharePoint 服务或一项 Azure 服务上的数据库。
 
-![服务器资源管理器的新连接图标](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata 服务器资源管理器中新的连接图标")
+![服务器资源管理器的新连接图标](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
 这将显示**添加连接**对话框。 在这里，我们输入 SQL Server LocalDB 实例的名称。
 
-![添加新连接](../data-tools/media/raddata-add-new-connection-dialog.png "raddata 添加新连接对话框")
+![添加新连接](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>更改提供程序
 
 如果数据源不是你所希望的内容，请单击**更改**按钮以选择新的数据源和/或新的 ADO.NET 数据提供程序。 新的提供程序可能会要求你输入凭据，具体取决于你配置的方式。
 
-![更改 AD0.NET 数据提供程序](../data-tools/media/raddata-change-ad0.net-data-provider.png "raddata 更改 AD0.NET 数据提供程序")
+![更改 AD0.NET 数据提供程序](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
 ## <a name="test-the-connection"></a>测试连接
 
 在选择数据源之后，单击**测试连接**。 如果未成功，你将需要进行故障排除基于供应商的文档。
 
-![测试连接](../data-tools/media/raddata-test-connection.png "raddata 测试连接")
+![测试连接](../data-tools/media/raddata-test-connection.png)
 
 如果测试成功，你就可以创建*数据源*，这是真正含义的 Visual Studio 术语*数据模型*基于基础数据库或服务。
 

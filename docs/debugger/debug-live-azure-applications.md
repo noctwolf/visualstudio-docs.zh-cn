@@ -14,24 +14,18 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 415e2ee4da01affd2d34b2bbb1aafb5de697767e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766319"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>调试使用快照调试器的实时 ASP.NET Azure 应用程序
 
 你感兴趣的代码在执行时，快照调试器将会在生产应用的快照。 要指示调试程序拍摄快照，可在代码中设置 snappoints 和 logpoints。 使用调试程序，可精确查看出错的内容，而不影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
 
 Snappoints 以及 logpoints 都类似于断点，但与断点，不同 snappoints 不终止应用程序命中条件。 通常情况下，捕获在 snappoint 快照采用 10 20 毫秒。 
-
-快照集合适用于在 Azure App Service 中运行的以下 Web 应用：
-
-- 在 .NET Framework 4.6.1 或更高版本上运行的 ASP.NET 应用程序。
-- 在 Windows 中的 .Net Core 2.0 或更高版本上运行的 ASP.NET Core 应用程序。
-
-此外，快照调试器仅可用于 Visual Studio 2017 Enterprise 15.5 或更高版本和基本或更高版本的 App Service 计划。 
 
 在本教程中，你将：
 
@@ -40,16 +34,27 @@ Snappoints 以及 logpoints 都类似于断点，但与断点，不同 snappoint
 > * 设置 snappoint 和查看快照
 > * 设置 logpoint
 
-## <a name="start-the-snapshot-debugger"></a>启动快照调试器
+## <a name="prerequisites"></a>系统必备
 
-1. 安装[Visual Studio 2017 Enterprise 版本 15.5](https://www.visualstudio.com/downloads/)或更高版本。 如果你正在从以前的 Visual Studio 2017 安装更新，运行 Visual Studio 安装程序，并检查 ASP.NET 和 web 开发工作负荷中的快照调试器组件。
+* 快照调试器功能仅适用于 Visual Studio 2017 Enterprise 15.5 或使用更高版本**ASP.NET 和 web 开发工作负荷**。 有关 ASP.NET 核心，你还需要。**NET 核心开发**安装的工作负荷。
 
-2. 打开你想要进行快照调试的项目。 
+    如果它尚未安装，请安装[Visual Studio 2017 Enterprise 版本 15.5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)或更高版本。 如果你正在从以前的 Visual Studio 2017 安装更新，运行 Visual Studio 安装程序和签入的快照调试器组件**ASP.NET 和 web 开发工作负荷**。
+
+* 基本或更高版本的 Azure App Service 计划。
+
+* 快照集合适用于在 Azure App Service 中运行的以下 Web 应用：
+
+    * 在 .NET Framework 4.6.1 或更高版本上运行的 ASP.NET 应用程序。
+    * 在 Windows 中的 .Net Core 2.0 或更高版本上运行的 ASP.NET Core 应用程序。
+
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>打开你的项目并启动快照调试器
+
+1. 打开你想要进行快照调试的项目。 
 
     > [!IMPORTANT] 
     > 到快照调试，需要打开**相同版本的源代码**，它发布到你的 Azure 应用程序服务。 
 
-3. 在云资源管理器 (**视图 > 云资源管理器**)，右键单击你的项目部署到 Azure App Service，然后选择**附加快照调试器**。
+1. 在云资源管理器 (**视图 > 云资源管理器**)，右键单击你的项目部署到 Azure App Service，然后选择**附加快照调试器**。
 
    ![启动快照调试器](../debugger/media/snapshot-launch.png)
 

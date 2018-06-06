@@ -11,13 +11,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e98be1dd16705be00f388419013686f861f3753
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 18f4153db019dd6ded97337d4599f02a6b02ef49
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748929"
 ---
-# <a name="navigate-and-update-a-model-in-program-code"></a>导航和更新程序代码中的模型
+# <a name="navigate-and-update-a-model-in-program-code"></a>在程序代码中导航和更新模型
 
 你可以编写代码以创建和删除模型元素、 设置其属性，并创建和删除元素之间的链接。 必须在事务中进行所有更改。 如果元素在关系图上查看，关系图将""自动更正事务的末尾。
 
@@ -55,11 +56,11 @@ ms.lasthandoff: 04/26/2018
 ##  <a name="example"></a> DSL 定义示例
  这是本主题中的示例 DslDefinition.dsl 的主要部分：
 
- ![DSL 定义关系图&#45;王朝家谱模型](../modeling/media/familyt_person.png "FamilyT_Person")
+ ![DSL 定义关系图&#45;王朝家谱模型](../modeling/media/familyt_person.png)
 
  此模型是此 DSL 的实例：
 
- ![都铎王朝家谱模型](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")
+ ![都铎王朝家谱模型](../modeling/media/tudor_familytreemodel.png)
 
 ### <a name="references-and-namespaces"></a>引用和命名空间
  若要运行本主题中的代码，您应引用：
@@ -350,7 +351,7 @@ using (Transaction t = targetDiagram.Store.
  DSL，在域模型元素，它表示如人员或歌曲的概念，是独立于形状元素，它表示关系图上看到的内容。 域模型元素存储的重要属性和关系的概念。 形状元素存储大小、 位置和颜色的关系图的对象的视图和其组成部分的布局。
 
 ### <a name="presentation-elements"></a>表示元素
- ![基本形状和元素类型的类图](../modeling/media/dslshapesandelements.png "DSLshapesAndElements")
+ ![基本形状和元素类型的类图](../modeling/media/dslshapesandelements.png)
 
  在你的 DSL 定义，你指定每个元素创建从以下标准类之一派生的类。
 
@@ -509,7 +510,7 @@ partial class MyDiagram
  形状、 连接器和关系图是子类型的<xref:Microsoft.VisualStudio.Modeling.ModelElement>和实时存储区中。 仅在事务内，因此必须对它们进行更改。 有关详细信息，请参阅[如何： 使用事务来更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
 ##  <a name="docdata"></a> 文档视图和文档数据
- ![标准关系图类型的类图](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")
+ ![标准关系图类型的类图](../modeling/media/dsldiagramsanddocs.png)
 
 ## <a name="store-partitions"></a>存储分区
  加载模型后，在同一时间加载随附的关系图。 通常情况下，该模型加载到 Store.DefaultPartition，和关系图内容都加载到另一个分区。 通常情况下，每个分区的内容的加载，并保存到单独的文件中。

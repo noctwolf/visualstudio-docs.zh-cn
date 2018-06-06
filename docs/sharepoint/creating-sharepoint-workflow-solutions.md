@@ -23,14 +23,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc78726146b67a39f8e8988dda6c7d2baf5c49b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0c496c6d460b11efc4ccb6e1d8e7b5489efacd93
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691919"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766436"
 ---
-# <a name="creating-sharepoint-workflow-solutions"></a>创建 SharePoint 工作流解决方案
+# <a name="create-sharepoint-workflow-solutions"></a>创建 SharePoint 工作流解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供工具以帮助您创建自定义管理生命周期的文档和 SharePoint 网站中的列表项的工作流。 提供的项包括设计器、一组活动控件以及必需的程序集引用。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此外包括**SharePoint 自定义向导**来帮助创建和配置工作流。  
   
  有关用于创建 SharePoint 项目中的必备组件列表[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，请参阅[有关开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。 有关 SharePoint 的详细信息，请参阅[Microsoft SharePoint 产品和技术](http://go.microsoft.com/fwlink/?LinkId=178470)。  
@@ -53,7 +53,7 @@ ms.locfileid: "34691919"
   
  有关工作流类型的详细信息，请参阅[工作流类型](http://go.microsoft.com/fwlink/?LinkId=178995)。  
   
-### <a name="using-the-wizard"></a>使用向导
+### <a name="use-the-wizard"></a>使用向导
  当创建中的 SharePoint 工作流项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，首先指定在其设置**SharePoint 自定义向导**。 向导将使用这些设置中创建一个项目**解决方案资源管理器**。 此项目包含一个代码文件，用于部署工作流的多个文件，并创建自定义的 SharePoint 工作流所需的程序集引用。  
   
  创建工作流后，你可以修改其属性在属性窗口中。 尽管可以直接在属性窗口中更改大多数工作流属性，但一些要求你单击省略号按钮 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器椭圆")) 到更改它们的值。 此按钮将重新启动**SharePoint 自定义向导**。 将值更改时，请选择该属性后**完成**按钮来完成。  
@@ -124,7 +124,7 @@ ms.locfileid: "34691919"
  此外可以通过使用 SharePoint 库或列表中的项的属性，从用户中收集信息。 名为的 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 类的实例的主代码文件 （Workflow1.cs 或 Workflow1.vb） 声明`workflowProperties`。 使用`workflowProperties`对象来访问的库或在代码中的列表的属性。 有关示例，请参阅[演练： 创建和调试 SharePoint 工作流解决方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)。  
   
 ## <a name="debug-a-sharepoint-workflow-template"></a>调试 SharePoint 工作流模板
- 你可以调试 SharePoint 工作流项目相同如调试其他[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]基于 Web 的项目。 当你启动[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用你在中指定的设置**SharePoint 自定义向导**以打开相应的 SharePoint 网站，并自动将工作流模板相关联与相应的库或列表。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此外会将附加[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]到调试器[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]名为 w3wp.exe 进程。  
+ 你可以调试 SharePoint 工作流项目相同如调试其他[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]基于 Web 的项目。 当你启动[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用你在中指定的设置**SharePoint 自定义向导**以打开相应的 SharePoint 网站，并自动将工作流模板相关联与相应的库或列表。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此外会将附加[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]到调试器[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]名为进程*w3wp.exe*。  
   
  若要测试工作流，必须手动启动它。 详细信息，请参阅"调试工作流"一节中[调试 SharePoint 解决方案](../sharepoint/debugging-sharepoint-solutions.md)。 有关详细信息[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 应用程序调试，请参阅[调试 Web 应用程序和脚本](/visualstudio/debugger/debugging-web-applications-and-script)。  
   
@@ -140,7 +140,7 @@ ms.locfileid: "34691919"
 |-----------|-----------------|  
 |[演练：创建和调试 SharePoint 工作流解决方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|将引导你逐步完成创建和调试一个简单[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]工作流。|  
 |[演练：创建带有关联窗体和启动窗体的工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|指导你逐步创建功能更全面的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]的关联和启动窗体的工作流完成。|  
-|[演练：将应用程序页添加到工作流](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|基于主题[演练： 创建带有关联和启动窗体的工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)通过添加报告数据输入到工作流的其他.aspx 应用程序页。|  
+|[演练：将应用程序页添加到工作流](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|基于主题[演练： 创建带有关联和启动窗体的工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)通过添加其他 *.aspx*报告数据输入到工作流的应用程序页。|  
 |[演练：创建自定义站点工作流活动](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|演示如何执行两项关键任务： 创建站点级别的工作流，并创建自定义工作流活动。|  
 |[演练：将 SharePoint Designer 可重用工作流导入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|演示如何导入可重用声明性工作流在 SharePoint Designer 2010 到[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。|  
   

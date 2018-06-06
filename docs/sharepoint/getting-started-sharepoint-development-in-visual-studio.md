@@ -17,27 +17,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48d18ef87bdda3abb147310bd49738a10d31040f
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d0f4f12eee56d1d4962e5c340037094d5192c718
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766794"
 ---
-# <a name="getting-started-sharepoint-development-in-visual-studio"></a>入门（Visual Studio 中的 SharePoint 开发）
+# <a name="get-started-sharepoint-development-in-visual-studio"></a>获取已启动 （中的 SharePoint 开发 Visual Studio）
   此部分帮助你开始使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 来开发利用 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]的 SharePoint 解决方案。  
   
  有关 SharePoint 2013 和 SharePoint 外接程序的信息，请参阅 [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) 和 [构建 SharePoint 外接程序](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx)。  
   
  SharePoint 提供基于 Web 的协作平台。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供了很多用于创建 SharePoint 网站和内容的项目模板，包括列表定义、工作流、业务数据连接模型和网站定义。 此外，可以在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中创建 SharePoint 项目和工具的扩展。  
   
-## <a name="in-this-section"></a>本节内容  
+## <a name="in-this-section"></a>本节内容
   
 |主题|描述|  
 |-----------|-----------------|  
 |[开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|列出了针对 SharePoint 进行开发的软件要求。|  
 |[SharePoint 错误的其他信息](../sharepoint/additional-information-for-sharepoint-errors.md)|介绍在 SharePoint 开发和故障排除期间可在哪里找到帮助。|  
   
-## <a name="related-sections"></a>相关章节  
+## <a name="related-sections"></a>相关章节
   
 |主题|描述|  
 |-----------|-----------------|  
@@ -53,7 +54,7 @@ ms.lasthandoff: 05/22/2018
 |[打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|介绍如何打包和部署 SharePoint 解决方案。|  
 |[在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|介绍如何扩展 SharePoint 工具以创建所需的功能。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

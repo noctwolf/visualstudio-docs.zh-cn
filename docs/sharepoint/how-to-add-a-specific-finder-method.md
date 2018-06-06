@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d00159a8c944944348e4eec5fb98aaa4d6e9bae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 451784c052ee656686bf40315b809dcce58c6aaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767645"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>如何：添加特定的 Finder 方法
+# <a name="how-to-add-a-specific-finder-method"></a>如何： 添加特定的 Finder 方法
   你可以通过创建返回单个实体实例*特定的 Finder*方法。 业务数据连接 (BDC) 服务执行特定的 Finder 方法，当用户在业务数据 web 部件或外部列表中选择实体。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
-### <a name="to-create-a-specific-finder-method"></a>若要创建特定的 Finder 方法  
+### <a name="to-create-a-specific-finder-method"></a>若要创建特定的 Finder 方法
   
-1.  在 BDC 设计器中，选择实体。  
+1.  上**BDC 设计器**，选择实体。  
   
-     有关如何将实体添加到 BDC 设计器在 Visual Studio 中的信息，请参阅[如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
+     有关如何将实体添加到信息**BDC 设计器**在 Visual Studio 中，请参阅[如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
-2.  在菜单栏上，选择**视图**，**其他窗口**， **BDC 方法详细信息**。  
+2.  在菜单栏上，选择**视图** > **其他窗口**， **BDC 方法详细信息**。  
   
      **BDC 方法详细信息**窗口随即打开。 有关该窗口的详细信息，请参阅[BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)。  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
  [如何： 添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
@@ -98,5 +99,4 @@ ms.lasthandoff: 04/16/2018
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
  [如何： 向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [如何：定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  
-  
   

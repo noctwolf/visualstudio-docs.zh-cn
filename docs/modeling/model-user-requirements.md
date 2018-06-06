@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89b5a5130264dc46e953ee87f048a768d756ce9c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f79e80b5b4e4e14772548ad92e8886150749b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749052"
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/26/2018
 
  许多业务规则受概念类间关系的约束。 你可以编写这些*静态 * * 业务规则*作为概念类图上的相关类与关联的注释。 例如：
 
- ![附加到 Order 类的注释中的规则。] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")
+ ![附加到 Order 类的注释中的规则。](../modeling/media/uml_reqmcd2.png)
 
  *动态业务规则* 对允许的事件序列进行约束。 例如，使用序列或活动图来显示用户必须在登录后才能在你的系统上执行其他操作。
 

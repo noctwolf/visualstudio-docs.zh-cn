@@ -12,11 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 202e9ce6e0a53c6967ebe1bacaa6553a1241298e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: a4e03f9a369959a5736d7030a1dac885771d7984
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746762"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 在 Azure 中的 IIS 上的远程调试 ASP.NET 核心
 
@@ -196,7 +197,7 @@ ms.lasthandoff: 05/24/2018
 
 ### <a name="BKMK_attach"></a> 从 Visual Studio 计算机附加到 ASP.NET 应用程序
 
-1. 在 Visual Studio 计算机上打开**MyASPApp**解决方案。
+1. 在 Visual Studio 计算机上，打开你正在调试的解决方案 (**MyASPApp**如果按照这篇文章中的步骤)。
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]

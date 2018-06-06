@@ -21,11 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87639a4ebb123415014994dcc1bfa7af1d7fb301
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a3f3dd16bef85ebe8b90dd5f456f4e386113a8b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745693"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>通过使用 Tableadapter 填充数据集
 TableAdapter 组件填充具有基于一个或多个查询或你指定的存储的过程的数据库中的数据的数据集。 Tableadapter 还可以执行添加、 更新和删除要保留对数据集所做的更改的数据库上。 你可以发出到任何特定的表不相关的全局命令。
@@ -49,7 +50,7 @@ TableAdapter 组件填充具有基于一个或多个查询或你指定的存储�
 ## <a name="tableadapter-overview"></a>TableAdapter 概述
  Tableadapter 是连接到数据库、 运行的查询或存储的过程，并使用返回的数据填充其 DataTable 的设计器生成组件。 Tableadapter 还从回数据库应用程序发送更新的数据。 你可以运行，只要它们返回到 TableAdapter 与之关联的表的架构数据符合 TableAdapter 上所需的所有查询。 下图显示 Tableadapter 如何与数据库和内存中的其他对象进行交互：
 
- ![在客户端应用程序中的数据流](../data-tools/media/clientdatadiagram.gif "ClientDataDiagram")
+ ![客户端应用程序中的数据流](../data-tools/media/clientdatadiagram.gif)
 
  虽然 Tableadapter 的设计也考虑了**数据集设计器**，不会作为嵌套类的生成的 TableAdapter 类<xref:System.Data.DataSet>。 它们位于单独的命名空间中特定于每个数据集。 例如，如果你有一个名为`NorthwindDataSet`，与关联的 Tableadapter<xref:System.Data.DataTable>中`NorthwindDataSet`都会出现在`NorthwindDataSetTableAdapters`命名空间。 若要以编程方式访问特定的 TableAdapter，您必须声明 TableAdapter 的新实例。 例如：
 
@@ -63,7 +64,7 @@ TableAdapter 组件填充具有基于一个或多个查询或你指定的存储�
  TableAdapter 的更新功能均依赖于 TableAdapter 向导中的主查询中提供了多少信息。 例如，配置为提取来自多个表 （联接） 的值、 标量值、 视图或聚合函数的结果的 Tableadapter 由不初始创建能够将更新发送回基础数据库中。 但是，你可以配置的 INSERT、 UPDATE 和 DELETE 命令中手动**属性**窗口。
 
 ## <a name="tableadapter-queries"></a>TableAdapter 查询
- ![使用多个查询的 TableAdapter](../data-tools/media/tableadapter.gif "TableAdapter")
+ ![带有多个查询的 TableAdapter](../data-tools/media/tableadapter.gif)
 
  Tableadapter 可以包含多个查询以填充其关联的数据的表。 你可以定义任意多个查询的 TableAdapter 根据你的应用程序的需要，只要每个查询会返回与它关联的数据的表相同的架构一致的数据。 此功能使 TableAdapter 加载基于不同条件的不同结果。
 

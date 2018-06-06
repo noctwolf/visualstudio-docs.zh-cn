@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61fdb4b652b7fe74f3baf80c6e9d6332914a9a1e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77fe0d04b49cf12401c38b4a8842a14d6f84ccd2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750254"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>域特定语言入门
 本主题介绍中定义和使用的建模 SDK for Visual Studio 创建域特定语言 (DSL) 的基本概念。
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 
  当您设计 DSL 时，可以将其作为 Visual Studio 集成扩展 (VSIX) 包的一部分进行分发。 用户要使用 Visual Studio 中 DSL:
 
- ![家谱关系图、 工具箱和资源管理器](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![家谱关系图、工具箱和资源管理器](../modeling/media/familyt_instance.png)
 
  表示法是仅的 DSL 的一部分。 表示法，以及你的 VSIX 包包括多种工具，用户可以应用来编辑和从其模型生成材料。
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  单击**域特定语言设计器**。
 
-     ![创建 DSL 对话框](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![“创建 DSL”对话框](../modeling/media/create_dsldialog.png)
 
 4.  在**名称**框中，键入**FamilyTree**。 单击 **“确定”**。
 
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/26/2018
 
  用户界面现在类似于下图。
 
- ![dsl 设计器](../modeling/media/dsl_designer.png "dsl_designer")
+ ![dsl 设计器](../modeling/media/dsl_designer.png)
 
  此解决方案将定义域特定语言。 有关详细信息，请参阅[的域特定语言工具用户界面概述](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。
 
@@ -136,7 +137,7 @@ ms.lasthandoff: 04/26/2018
 
  实验性 Visual Studio 将类似于下面的示例：
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>模型的内容
  文件的 DSL 实例的内容称为*模型*。 该模型包含*模型 * * 元素*和*链接*元素之间。 DSL 定义指定哪些类型的模型元素和链接可以在模型中存在。 例如，在最小语言模板创建的 DSL，没有一种类型的模型元素和一种类型的链接。
@@ -196,7 +197,7 @@ ms.lasthandoff: 04/26/2018
 
 1.  在 DslDefinition 图中，重命名**ExampleModel**到**FamilyTreeModel**， **ExampleElement**到**人员**， **目标**到**父级**，和**源**到**子级**。 你可以单击每个标签以更改它。
 
-     ![DSL 定义关系图&#45;王朝家谱模型](../modeling/media/familyt_person.png "FamilyT_Person")
+     ![DSL 定义关系图&#45;王朝家谱模型](../modeling/media/familyt_person.png)
 
 2.  重命名的元素和连接器工具。
 
@@ -255,7 +256,7 @@ ms.lasthandoff: 04/26/2018
 
     4.  选择每个新的修饰器，并在属性窗口中，设置**位置**字段。 这将确定将在形状中显示域属性值。 例如，设置**InnerBottomLeft**和**InnerBottomRight**。
 
-         ![隔离舱形状定义](../modeling/media/familyt_compartment.png "FamilyT_Compartment")
+         ![隔离舱形状定义](../modeling/media/familyt_compartment.png)
 
 3.  映射到属性修饰器。
 
@@ -271,7 +272,7 @@ ms.lasthandoff: 04/26/2018
 
 6.  在.tt 文件中，你可以添加获取每个人员的属性的代码。
 
- ![家谱关系图、 工具箱和资源管理器](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![家谱关系图、工具箱和资源管理器](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>定义新类
  可以向模型添加域类和关系。 例如，你可以创建一个新类来表示城镇和新的关系来表示一个人居住在镇。
@@ -297,7 +298,7 @@ ms.lasthandoff: 04/26/2018
 
     1.  单击**引用关系**工具，单击人员，然后单击镇。
 
-         ![DSL 定义片段： 家谱根目录](../modeling/media/familyt_root.png "FamilyT_Root")
+         ![DSL 定义片段：家谱根目录](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  引用关系表示从模型树的一部分的交叉引用，到另一个。
@@ -322,7 +323,7 @@ ms.lasthandoff: 04/26/2018
 
     2.  使用**关系图元素映射**工具以将新的连接器链接到用户和镇之间的关系。
 
-         ![添加了形状映射的家谱定义](../modeling/media/familyt_shapemap.png "FamilyT_ShapeMap")
+         ![添加了形状映射的家谱定义](../modeling/media/familyt_shapemap.png)
 
 6.  创建用于发起新建镇元素工具。
 

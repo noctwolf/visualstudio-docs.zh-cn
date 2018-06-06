@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 408c74dbbf23abee5d548484014e0f2ddc66963e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 394b21d396bf92b794060ff27ed940e25a77aa26
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748483"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、类和关系
 域特定语言 (DSL) 定义由其 DSL 定义文件，以及你可以编写任何自定义程序代码中。 此文件从生成的 DSL 解决方案中的程序代码的大多数。
@@ -25,13 +26,13 @@ ms.lasthandoff: 04/26/2018
 ## <a name="the-dsl-definition"></a>DSL 定义
  当你打开`Dsl\DslDefinition.dsl`、 你[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]窗口类似于下图。
 
- ![dsl 设计器](../modeling/media/dsl_designer.png "dsl_designer")
+ ![dsl 设计器](../modeling/media/dsl_designer.png)
 
  DSL 定义中最重要的信息显示在 DSL 定义关系图。 其他信息，也是 DslDefinition.dsl 的一部分，如所示 DSL 资源管理器，它通常显示在关系图的一端。 您可以使用的最常见的任务的图示和使用更多高级自定义项的 DSL 资源管理器。
 
  DSL 定义关系图显示定义模型元素以及定义链接模型元素之间的关系的域类。 它还显示形状和用于向用户显示的模型元素的连接器。
 
- ![具有泳道的 dsl 设计器](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![具有泳道的 dsl 设计器](../modeling/media/dsl_desinger.png)
 
  DSL 定义，在图上或在 DSL 资源管理器中选择一项与其有关的信息将显示在属性窗口中。 可能在 DSL 详细信息窗口中显示的其他信息。
 
@@ -45,13 +46,13 @@ ms.lasthandoff: 04/26/2018
 
  此图显示已创建的用户的音乐库 DSL 的模型。 音乐集由包含歌曲列表的框表示。 专业人员圆角框中，由表示和连接到它们提供到唱片集。
 
- ![生成的 DSL 实例模型](../modeling/media/music_instance.png "Music_Instance")
+ ![生成的 DSL 实例模型](../modeling/media/music_instance.png)
 
  DSL 定义用于分隔两个方面。 使用形状类和连接器类可定义模型关系图上的模型元素的外观。 使用域类和域关系定义在模型中携带的信息。
 
  下图显示的音乐库 DSL 定义中的域类和关系。
 
- ![嵌入和引用关系](../modeling/media/music_classes.png "Music_Classes")
+ ![嵌入关系和引用关系](../modeling/media/music_classes.png)
 
  图中显示的四个域类： 音乐、 唱片集、 艺术家和歌曲。 域类定义域属性，如名称、 标题和等等。 在实例模型中，关系图上显示的其中一些属性的值。
 
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/26/2018
 ### <a name="the-explorer-displays-the-embedding-tree"></a>浏览器可显示嵌入树
  DSL 定义还会创建资源管理器，它旁边其模型关系图的用户查看。
 
- ![生成资源管理器的 DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![生成的 DSL 资源管理器](../modeling/media/music_explorer.png)
 
  资源管理器在模型中，甚至那些不已为其定义的所有形状显示的所有元素。 它显示元素和嵌入的关系，但不是能引用关系。
 
@@ -122,7 +123,7 @@ ms.lasthandoff: 04/26/2018
 
  在下面的图中，行之间**发布服务器**域类和**PublisherCatalog**域之间的关系是源角色。 域关系之间的行和**唱片集**域类是目标角色。
 
- ![角色和属性。] (../modeling/media/propertycode.png "PropertyCode")
+ ![角色和属性。](../modeling/media/propertycode.png)
 
  编写遍历模型的程序代码，具有关系相关联的名称时尤其重要。 例如，生成的 DSL 解决方案时，生成的类发布者将具有一个属性是集合的唱片集的目录。 唱片集的类具有一个属性是类发布服务器具有单个实例的发布服务器。
 

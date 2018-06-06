@@ -1,5 +1,5 @@
 ---
-title: 使用 TableAdapter DBDirect 方法保存数据
+title: 用 TableAdapter DBDirect 方法保存数据
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51f855cca05d2f9f7e6a86524da6bcf866eb0856
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68842160d3ad7bf7e96d22f58607866c34f9ceb5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747542"
 ---
-# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法保存数据
+# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>用 TableAdapter DBDirect 方法保存数据
 本演练提供有关使用 TableAdapter 的 DBDirect 方法直接对数据库运行 SQL 语句的详细的说明。 TableAdapter 的 DBDirect 方法提供良好的控制数据库更新级别。 可用于运行特定的 SQL 语句和存储的过程的调用单个`Insert`， `Update`，和`Delete`方法根据需要由你的应用程序 (而不是重载`Update`执行更新的方法INSERT 和 DELETE 语句，所有在一次调用中的)。
 
  在本演练中，你将学会如何执行以下任务：
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在 Visual Studio 中，在**文件**菜单上，选择**新建**，**项目...**.
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 经典桌面**。
+2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
 
 3. 在中间窗格中，选择**Windows 窗体应用程序**项目类型。
 
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/26/2018
 
     -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-         -或-
+         或
 
     -   选择**新连接**以启动**添加/修改连接**对话框。
 
@@ -115,7 +116,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  设置以下**名称**和**文本**每个按钮上的属性。
 
-    |名称|Text|
+    |name|Text|
     |----------|----------|
     |`InsertButton`|插入|
     |`UpdateButton`|**更新**|

@@ -13,11 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7d86dd961a5192d63cee9501eb16aaf51b3fd629
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4563756e42b5c0bdc1a56e938ca6326e04b104
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748654"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自定义元素创建和移动
 你可以允许将拖动到另一个字符串，从工具箱中，也可在粘贴或移动操作中的元素。 你可以移动的元素链接到目标元素中，使用你指定的关系。
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/26/2018
 
  EMD 的责任是确定如何对象或组的对象应被合并到模型中的特定位置。 具体而言，它决定应实例化哪些关系，以将合并的组链接到模型。 你还可以自定义设置属性，以及创建其他对象。
 
- ![DSL&#45;EMD&#95;合并](../modeling/media/dsl-emd_merge.png "DSL EMD_Merge")元素合并命令的角色
+ ![DSL&#45;EMD&#95;合并](../modeling/media/dsl-emd_merge.png)元素合并命令的角色
 
  定义嵌入关系时，将自动生成 EMD。 当用户将新的子实例添加到父，此默认设置 EMD 创建关系的实例。 你可以通过添加自定义代码，例如修改这些默认 EMDs。
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="defining-an-element-merge-directive"></a>定义元素合并指令
  可以将元素合并指令添加到域类、 域关系、 形状、 连接器和关系图。 你可以添加或接收的域类下 DSL 资源管理器中找到它们。 接收类是元素的已在模型中，和上要合并的新的或复制的元素的域。
 
- ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")
+ ![DSL&#45;EMD&#95;详细信息](../modeling/media/dsl-emd_details.png)
 
  **索引类**是可合并到接收的类的成员的元素的域。 索引类的子类的实例将还合并通过此 EMD，除非你设置**适用于子类**为 False。
 

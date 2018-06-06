@@ -11,11 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf6c17f3017bb1021423b19b32b36749fe0744d
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 88dc37e555f6ceb30584d4a1c17b96506219631a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766735"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>发布到 Azure App Service 应用程序导入 Visual Studio 中发布设置
 
@@ -37,9 +38,9 @@ ms.lasthandoff: 05/24/2018
 
 ## <a name="prerequisites"></a>系统必备
 
-* 你必须安装的 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**开发工作负荷。 对于.NET Core 应用，你还需要 **.NET 核心**工作负荷。
+* 你必须安装的 Visual Studio 2017 和**ASP.NET**和。**NET Framework**开发工作负荷。 对于.NET Core 应用，你还需要。**NET 核心**工作负荷。
 
-    如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
+    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
 * 创建 Azure 应用程序服务。 有关详细说明，请参阅[ASP.NET 核心 web 应用部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 
 
@@ -92,11 +93,11 @@ ms.lasthandoff: 05/24/2018
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>导入 Visual Studio 中的发布设置和部署
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+[!INCLUDE [import publish settings](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>后续步骤
 
-在本教程中中,，你将创建发布设置文件、 导入 Visual Studio 中，并部署到 Azure App Service 的 ASP.NET 应用程序。
+在本教程中中,，你将创建发布设置文件、 导入 Visual Studio 中，并部署到 Azure App Service 的 ASP.NET 应用程序。 你可能想要在 Visual Studio 中的发布选项的概述。
 
 > [!div class="nextstepaction"]
 > [初探部署](../deployment/deploying-applications-services-and-components.md)

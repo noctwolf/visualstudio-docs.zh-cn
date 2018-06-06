@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751697"
 ---
 # <a name="graph-view"></a>图形视图
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 05/24/2018
 
  下图显示的是图形视图，其设计图面上有六个全局节点。
 
- ![XML 架构设计器关系图视图](../xml-tools/media/xsddesigner_graphview.gif "XSDDesigner_GraphView")
+ ![XML 架构设计器关系图视图](../xml-tools/media/xsddesigner_graphview.gif)
 
 ## <a name="design-surface"></a>设计图面
 
@@ -34,7 +35,7 @@ ms.lasthandoff: 05/24/2018
 
  如果设计图面为空，XML 编辑器**XML 架构资源管理器**，并且显示水印。 *水印*是指向所有 XSD 设计器视图的链接列表。
 
- ![XSD 设计器;图形视图](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
+ ![XSD 设计器；关系图视图](../xml-tools/media/xsdgraphviewwatermark.gif)
 
  如果架构集有错误，则列表的末尾会显示以下文本：“请使用‘错误列表’查看和修复架构集中的错误”[Use the Error List to view and fix the errors in the set]。
 
@@ -98,7 +99,7 @@ ms.lasthandoff: 05/24/2018
 
  当图形视图处于活动状态时，会启用以下 XSD 工具栏按钮。
 
- ![XML 架构设计器工具栏](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
+ ![XML 架构设计器工具栏](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |选项|描述|
 |------------|-----------------|

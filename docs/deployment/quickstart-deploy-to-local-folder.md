@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a68e7d039fe0b60faf42ea319bb3a3bd4f888d3b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 016538bded47a5186294c161cc7f310b26818d15
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764214"
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>将 web 应用或.NET Core 应用部署到使用 Visual Studio 发布工具的本地文件夹
 
@@ -26,9 +27,9 @@ ms.lasthandoff: 05/22/2018
 
 ## <a name="prerequisites"></a>系统必备
 
-* 你必须安装的 Visual Studio 2017 和 **.NET Framework**和 **.NET 核心**安装的开发工作负荷。
+* 你必须安装的 Visual Studio 2017 和。**NET 桌面开发**工作负荷与。**NET 核心**工作负荷。
 
-    如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
+    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
 ## <a name="create-a-new-project"></a>创建新项目 
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 05/22/2018
 
     Visual Studio 随即创建项目。
 
-## <a name="deploy-to-a-local-folder"></a>将部署到本地文件夹
+## <a name="deploy-to-a-local-folder"></a>部署到本地文件夹
 
 1. 在解决方案资源管理器中，右键单击项目，选择“发布”。
 

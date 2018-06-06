@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d0b60bb4e7048e2dc49774ec69d3eea4fc0ce6c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c4e985231f8e74095add3e8a3a3e412814bed0d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745797"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/26/2018
 
  **Navigation 窗体**
 
- ![导航对话框](../data-tools/media/simpleappnav.png "SimpleAppNav")
+ ![“导航”对话框](../data-tools/media/simpleappnav.png)
 
 |Navigation 窗体的控件|属性|
 |--------------------------------------|----------------|
@@ -93,7 +94,7 @@ ms.lasthandoff: 04/26/2018
 
  **NewCustomer 窗体**
 
- ![添加新客户和订单](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")
+ ![添加新客户或提交订单](../data-tools/media/simpleappnewcust.png)
 
 |NewCustomer 窗体的控件|属性|
 |---------------------------------------|----------------|
@@ -108,7 +109,7 @@ ms.lasthandoff: 04/26/2018
 
  **FillOrCancel 窗体**
 
- ![填充或取消订单](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")
+ ![填充或取消订单](../data-tools/media/simpleappcancelfill.png)
 
 |FillOrCancel 窗体的控件|属性|
 |----------------------------------------|----------------|
@@ -130,7 +131,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  在**名称**列中，输入`connString`。
 
-3.  在**类型**列表中，选择**（连接字符串）**。
+3.  在**类型**列表中，选择 **（连接字符串）**。
 
 4.  在**作用域**列表中，选择**应用程序**。
 

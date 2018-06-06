@@ -1,5 +1,5 @@
 ---
-title: 创建 Windows 窗体来搜索数据
+title: 创建用于搜索数据的 Windows 窗体
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +16,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e04b0e4ef2f77381e305b992c5457bc46dc8261
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d4fe1106556e94155a0d01d3d7c9983d5ed122ad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746723"
 ---
-# <a name="create-a-windows-form-to-search-data"></a>创建 Windows 窗体来搜索数据
+# <a name="create-a-windows-form-to-search-data"></a>创建用于搜索数据的 Windows 窗体
 一个常见的应用程序方案是显示窗体上选择的数据。 例如，你可能希望显示特定客户的订单或特定订单的详细信息。 在本方案中，用户向窗体输入信息，然后以用户的输入作为参数执行查询，即基于参数化查询来选择数据。 查询只返回符合用户输入的条件的数据。 本演练显示了如何创建返回特定城市中客户的查询，并修改用户界面，以便用户可以输入城市名称并按按钮以执行该查询。
 
  通过让数据库执行其最擅长的工作（即快速筛选记录），使用参数化查询有助于使你的应用程序更有效。 与此相反，如果你请求整个数据库表在网络上传输它，然后使用应用程序逻辑来查找所需的记录，你的应用程序将变慢且效率低下。
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在 Visual Studio 中，在**文件**菜单上，选择**新建**，**项目...**.
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 经典桌面**。
+2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
 
 3. 在中间窗格中，选择**Windows 窗体应用程序**项目类型。
 
