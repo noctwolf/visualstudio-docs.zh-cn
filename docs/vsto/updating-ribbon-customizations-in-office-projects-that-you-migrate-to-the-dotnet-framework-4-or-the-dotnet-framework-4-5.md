@@ -1,5 +1,5 @@
 ---
-title: 更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义项 |Microsoft 文档
+title: 更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,29 +15,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 98c5dee34fd40506289cf4a9f31488c3acc710ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8da42ad20a42e24ee826a559c6d1d38efb172100
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767632"
 ---
-# <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到 .NET Framework 4 或 .NET Framework 4.5 的 Office 项目中的功能区自定义项
-  如果你的项目包含通过使用创建的功能区自定义项**功能区 （可视化设计器）**项目项，则必须对你的项目代码进行以下更改，如果目标框架更改为[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本。  
+# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义
+  如果你的项目包含通过使用创建的功能区自定义项**功能区 （可视化设计器）** 项目项，则必须对你的项目代码进行以下更改，如果目标框架更改为[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本。  
   
 -   修改生成的功能区代码。  
   
 -   修改在运行时实例化功能区控件、处理功能区事件或以编程方式设置功能区组件位置的任何代码。  
   
-## <a name="updating-the-generated-ribbon-code"></a>更新生成的功能区代码  
+## <a name="update-the-generated-ribbon-code"></a>更新生成的功能区代码  
  如果已将项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须通过执行以下步骤更改功能区项的生成代码。 你需要更新的代码文件取决于编程语言和你创建项目的方式：  
   
 -   在 Visual Basic 项目中，或在 Visual C# 项目中任何一种创建[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]或[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]在功能区代码隐藏文件中执行的所有步骤 (*YourRibbonItem*。Designer.cs 或*YourRibbonItem*。Designer.vb)。 若要查看 Visual Basic 项目中的代码隐藏文件，请单击**显示所有文件**按钮**解决方案资源管理器**。  
   
 -   在 Visual C# 项目，你在 Visual Studio 2008 中创建随后升级到[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，执行功能区代码文件中的前两个步骤 (*YourRibbonItem*.cs 或*YourRibbonItem*.vb)，和在功能区代码隐藏文件中执行剩余步骤。  
   
-#### <a name="to-change-the-generated-ribbon-code"></a>若要更改生成的功能区代码  
+### <a name="to-change-the-generated-ribbon-code"></a>若要更改生成的功能区代码  
   
-1.  修改 Ribbon 类的声明，使它派生自<xref:Microsoft.Office.Tools.Ribbon.RibbonBase>而不是 Microsoft.Office.Tools.Ribbon.OfficeRibbon。  
+1.  修改 Ribbon 类的声明，使它可以从 <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> 而不是从 `Microsoft.Office.Tools.Ribbon.OfficeRibbon` 派生。  
   
 2.  修改 Ribbon 类的构造函数，如下所示。 如果你已向构造函数添加了自己的所有代码，则不要更改你的代码。 在 Visual Basic 项目中，仅修改无参数构造函数。 忽略另一个构造函数。  
   
@@ -105,13 +106,13 @@ ms.lasthandoff: 04/16/2018
   
      例如，假设文件包含以下代码行，该代码行可处理面向 .NET Framework 3.5 的项目中的 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> 事件。  
   
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
+    <CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
      在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，必须改用以下代码。  
   
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
+    <CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
      功能区委托的完整列表，请参阅[处理功能区事件](#ribbonevents)。  
   
-5.  在 Visual Basic 项目中，找到文件末尾的 `ThisRibbonCollection` 类。 修改此类的声明，以便它不再从 Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection 继承。  
+5.  在 Visual Basic 项目中，找到文件末尾的 `ThisRibbonCollection` 类。 修改此类的声明，以便它不再继承自 `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`。  
   
 ##  <a name="ribboncontrols"></a> 实例化功能区控件  
  必须修改可动态实例化功能区控件的任何代码。 在面向.NET Framework 3.5 的项目中，功能区控件是你可以直接在某些方案中进行实例化的类。 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，这些控件是你无法直接实例化的接口。 你必须通过使用由 <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> 对象提供的方法创建控件。  
@@ -120,7 +121,7 @@ ms.lasthandoff: 04/16/2018
   
 -   通过使用功能区类的工厂属性。 可从 Ribbon 类中的代码使用此方法。  
   
--   通过使用 Globals.Factory.GetRibbonFactory 方法。 可从 Ribbon 类外的代码使用此方法。 有关全局类的详细信息，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
+-   通过使用 `Globals.Factory.GetRibbonFactory` 方法。 可从 Ribbon 类外的代码使用此方法。 有关全局类的详细信息，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
   
  下面的代码示例演示了如何在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中的 Ribbon 类中创建 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton>。  
   
@@ -159,16 +160,16 @@ ms.lasthandoff: 04/16/2018
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
   
-## <a name="setting-the-position-of-a-ribbon-component-programmatically"></a>以编程方式设置功能区组件的位置  
- 必须修改可设置功能区组、选项卡或控件位置的任何代码。 在项目中面向.NET Framework 3.5，你可以使用 Microsoft.Office.Tools.Ribbon.RibbonPosition 静态类的 AfterOfficeId 和 BeforeOfficeId 方法分配的组、 选项卡上或控件的位置属性。 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，你必须通过使用由 <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> 对象提供的 <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A> 属性来访问这些方法。  
+## <a name="set-the-position-of-a-ribbon-component-programmatically"></a>以编程方式设置功能区组件位置的  
+ 必须修改可设置功能区组、选项卡或控件位置的任何代码。 在面向.NET Framework 3.5 的项目中，你可以使用静态 `Microsoft.Office.Tools.Ribbon.RibbonPosition` 类的 `AfterOfficeId` 和 `BeforeOfficeId` 方法来分配组、选项卡或控件的 `Position` 属性。 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，你必须通过使用由 <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> 对象提供的 <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A> 属性来访问这些方法。  
   
  可通过两种方法来访问 <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> 对象：  
   
--   通过使用功能区类的工厂属性。 可从 Ribbon 类中的代码使用此方法。  
+-   通过使用 Ribbon 类的 `Factory` 属性。 可从 Ribbon 类中的代码使用此方法。  
   
--   通过使用 Globals.Factory.GetRibbonFactory 方法。 可从 Ribbon 类外的代码使用此方法。 有关全局类的详细信息，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
+-   通过使用 `Globals.Factory.GetRibbonFactory` 方法。 可从 Ribbon 类外的代码使用此方法。 有关全局类的详细信息，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
   
- 下面的代码示例演示如何在项目中的功能区类设置选项卡的位置属性面向.NET Framework 3.5。  
+ 下面的代码示例演示了面向 .NET Framework 3.5 的项目中 Ribbon 类的选项卡的 `Position` 属性。  
   
 ```vb  
 Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")  
@@ -189,7 +190,7 @@ this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [将 Office 解决方案迁移到 .NET Framework 4 或更高版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [迁移 Office 解决方案迁移到.NET Framework 4 或更高版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [功能区设计器](../vsto/ribbon-designer.md)  
   
   

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751840"
 ---
 # <a name="start-view"></a>起始视图
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 05/24/2018
 
 起始视图包含两个主要部分，*水印*和**架构集详细信息**窗格。 起始视图还包括在所有 XSD 设计器视图中都可用的工具栏。
 
-![XML 架构设计器起始视图](../xml-tools/media/xsddesigner_startview.gif "XSDDesigner_StartView")
+![XML 架构设计器起始视图](../xml-tools/media/xsddesigner_startview.gif)
 
 ## <a name="watermark"></a>水印
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 05/24/2018
 
 您可以在起始视图间进行导航[内容模型视图](../xml-tools/content-model-view.md)和[图形视图](../xml-tools/graph-view.md)从 XML 架构设计器工具栏。
 
-![XML 架构设计器工具栏](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+![XML 架构设计器工具栏](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 当起始视图处于活动状态时，会在 XSD 设计器工具栏中启用以下按钮：
 

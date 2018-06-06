@@ -1,5 +1,5 @@
 ---
-title: 创建和配置 Tableadapter
+title: 创建和配置 TableAdapter
 ms.date: 09/01/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +16,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c59128fe0ed0c1053c044431bbde68fb5906de31
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76c00f33bfcf277dcad9fdda32661b29e08bbfc3
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748952"
 ---
-# <a name="create-and-configure-tableadapters"></a>创建和配置 Tableadapter
+# <a name="create-and-configure-tableadapters"></a>创建和配置 TableAdapter
 Tableadapter 提供你的应用程序和数据库之间的通信。 它们连接到数据库、 运行的查询或存储的过程，并返回新的数据的表或填充现有<xref:System.Data.DataTable>与返回的数据。 Tableadapter 还可以从回数据库应用程序发送更新的数据。
 
 当你执行以下操作之一时，会为您创建 Tableadapter:
@@ -40,7 +41,7 @@ Tableadapter 的简介，请参阅[填充数据集使用 Tableadapter](../data-t
 ## <a name="use-the-tableadapter-configuration-wizard"></a>使用 TableAdapter 配置向导
 运行**TableAdapter 配置向导**若要创建或编辑 Tableadapter 及其关联的 Datatable。 你可以通过右键单击该中配置现有 TableAdapter**数据集设计器**。
 
-![raddata 表适配器配置向导](../data-tools/media/raddata-table-adapter-configuration-wizard.png "raddata 表适配器配置向导")
+![raddata 表适配器配置向导](../data-tools/media/raddata-table-adapter-configuration-wizard.png)
 
 如果从工具箱中将新的 TableAdapter 时**数据集设计器**是否处于专注，向导将启动并提示你指定的数据源 TableAdapter 应连接到。 在下一页上，向导会要求它应使用哪种类型的命令与 SQL 语句或存储的过程中的数据库进行通信。 （你看不到此如果你要配置已与数据源关联的 TableAdapter。）
 
@@ -63,7 +64,7 @@ Tableadapter 的简介，请参阅[填充数据集使用 Tableadapter](../data-t
 ## <a name="configure-a-tableadapters-fill-method"></a>配置 TableAdapter 的填充方法
 有时你可能想要更改 TableAdapter 的表的架构。 若要执行此操作，可修改 TableAdapter 的主`Fill`方法。 Tableadapter 创建是主要`Fill`定义关联的数据的表的架构的方法。 主`Fill`方法基于的查询或在最初配置 TableAdapter 时输入的存储的过程。 它是在数据集设计器中的数据表的第一个 （顶端） 方法。
 
-![使用多个查询的 TableAdapter](../data-tools/media/tableadapter.gif "TableAdapter")
+![带有多个查询的 TableAdapter](../data-tools/media/tableadapter.gif)
 
 向 TableAdapter 做的任何更改的主`Fill`方法将反映在关联的数据的表的架构。 例如，从当中，该查询中删除列`Fill`方法还从关联的数据表中删除列。 此外，从 main 删除列`Fill`方法删除列从任何其他查询该 TableAdapter。
 

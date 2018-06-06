@@ -1,5 +1,5 @@
 ---
-title: 演练： 将控件添加到工作表中在运行时在 VSTO 外接程序项目 |Microsoft 文档
+title: 演练： 在运行时在 VSTO 外接程序项目时向工作表添加控件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,16 +18,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47c647e2b3af6941f7b4a4d6f28eccfac2b31e2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6f972f2daa734bbabcea39ada9270acb7644db6
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767330"
 ---
-# <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>演练：在运行时在 VSTO 外接程序项目中向工作表中添加控件
+# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>演练： 在运行时在 VSTO 外接程序项目时向工作表添加控件
   可通过使用 Excel VSTO 外接程序向任何打开的工作表添加控件。 本演练演示如何利用功能区使用户能够向工作表添加 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.ListObject>。 有关信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
- **适用于：**本主题中的信息适用于 Excel VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **适用于：** 本主题中的信息适用于 Excel VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
  本演练阐释了以下任务：  
   
@@ -46,16 +47,16 @@ ms.lasthandoff: 04/16/2018
   
 -   Excel  
   
-## <a name="creating-a-new-excel-vsto-add-in-project"></a>新建 Excel VSTO 外接程序项目  
+## <a name="create-a-new-excel-vsto-add-in-project"></a>创建一个新的 Excel VSTO 外接程序项目  
  首先创建 Excel VSTO 外接程序项目。  
   
-#### <a name="to-create-a-new-excel-vsto-add-in-project"></a>若要新建 Excel VSTO 外接程序项目  
+### <a name="to-create-a-new-excel-vsto-add-in-project"></a>若要新建 Excel VSTO 外接程序项目  
   
 1.  在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，使用名称创建一个 Excel VSTO 外接程序项目**ExcelDynamicControls**。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  添加对的引用**Microsoft.Office.Tools.Excel.v4.0.Utilities.dll**程序集。 在本演练稍后内容中，需要此引用以编程方式将 Windows 窗体控件添加到工作表。  
   
-## <a name="providing-a-ui-to-add-controls-to-a-worksheet"></a>提供用于将控件添加到工作表的 UI  
+## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>提供用于向工作表添加控件的 UI  
  添加自定义选项卡到 Excel 功能区。 用户可以选中选项卡上的复选框，以向工作表添加控件。  
   
 #### <a name="to-provide-a-ui-to-add-controls-to-a-worksheet"></a>若要提供用于将控件添加到工作表的 UI  
@@ -72,29 +73,29 @@ ms.lasthandoff: 04/16/2018
   
 5.  在 **“属性”** 窗口中，更改下列属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**名称**|**Button**|  
     |**标签**|**Button**|  
   
 6.  将第二个复选框添加到 **group1**，然后更改下列属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**名称**|**NamedRange**|  
     |**标签**|**NamedRange**|  
   
 7.  添加到一个第三个复选框**group1**，然后将更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**名称**|**ListObject**|  
     |**标签**|**ListObject**|  
   
-## <a name="adding-controls-to-the-worksheet"></a>向工作表添加控件  
+## <a name="add-controls-to-the-worksheet"></a>向工作表添加控件  
  托管的控件只能添加到主机项，充当容器。 因为 VSTO 外接程序项目使用任何打开的工作簿，所以 VSTO 外接程序会将工作表转换为主机项，或获取现有的主机项，然后才添加控件。 将代码添加到每个控件的单击事件处理程序中以生成基于打开的工作表的 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主机项。 然后，在工作表当前所选内容中添加 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.ListObject>。  
   
-#### <a name="to-add-controls-to-a-worksheet"></a>若要向工作表添加控件  
+### <a name="to-add-controls-to-a-worksheet"></a>若要向工作表添加控件  
   
 1.  在功能区设计器中，双击**按钮**。  
   
@@ -107,7 +108,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]  
   
-3.  在**解决方案资源管理器**，选择 Ribbon1.cs 或 Ribbon1.vb。  
+3.  在**解决方案资源管理器**，选择*Ribbon1.cs*或*Ribbon1.vb*。  
   
 4.  上**视图**菜单上，单击**设计器**。  
   
@@ -134,16 +135,16 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#1)]
      [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]  
   
-## <a name="removing-controls-from-the-worksheet"></a>从工作表中移除控件  
- 保存并关闭工作表时，不会保留控件。 保存工作表之前应以编程方式移除所有生成的 Windows 窗体控件，否则再次打开工作薄时，将仅出现控件的边框。 将代码添加到用于从生成的主机项的控件集合中移除 Windows 窗体控件的 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件中。 有关更多信息，请参见 [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
+## <a name="remove-controls-from-the-worksheet"></a>从工作表中删除控件  
+ 保存并关闭工作表时，不会保留控件。 保存工作表之前应以编程方式移除所有生成的 Windows 窗体控件，否则再次打开工作薄时，将仅出现控件的边框。 将代码添加到用于从生成的主机项的控件集合中移除 Windows 窗体控件的 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件中。 有关详细信息，请参阅[保留在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
   
-#### <a name="to-remove-controls-from-the-worksheet"></a>若要从工作表中移除控件  
+### <a name="to-remove-controls-from-the-worksheet"></a>若要从工作表中移除控件  
   
-1.  在**解决方案资源管理器**，选择 ThisAddIn.cs 或 ThisAddIn.vb。  
+1.  在**解决方案资源管理器**，选择*ThisAddIn.cs*或*ThisAddIn.vb*。  
   
 2.  上**视图**菜单上，单击**代码**。  
   
-3.  将下面的方法添加到 ThisAddIn 类中。 此代码会获取工作簿中的第一个工作表，然后使用 `HasVstoObject` 方法检查该工作表是否含有生成的工作表项目。 如果生成的工作表对象中含有控件，则该代码会获取工作表项目并循环访问控件集合，从而移除控件。  
+3.  将以下方法添加到 `ThisAddIn` 类。 此代码会获取工作簿中的第一个工作表，然后使用 `HasVstoObject` 方法检查该工作表是否含有生成的工作表项目。 如果生成的工作表对象中含有控件，则该代码会获取工作表项目并循环访问控件集合，从而移除控件。  
   
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]  
@@ -152,12 +153,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]  
   
-## <a name="testing-the-solution"></a>测试解决方案  
- 从功能区的自定义选项卡中选择要添加的控件，将其添加到工作表中。 保存该工作表时，这些控件也随之移除。  
+## <a name="test-the-solution"></a>测试解决方案  
+ 将控件添加到工作表中，通过从功能区上的自定义选项卡中选择。 保存该工作表时，这些控件也随之移除。  
   
-#### <a name="to-test-the-solution"></a>若要测试解决方案。  
+### <a name="to-test-the-solution"></a>若要测试解决方案。  
   
-1.  按 F5 运行项目。  
+1.  按**F5**运行项目。  
   
 2.  在 Sheet1 中选择任意单元格。  
   

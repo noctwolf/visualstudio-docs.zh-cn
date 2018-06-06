@@ -15,11 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 357101a9430eb8d22aeab39179a0a4f70f0dc1bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f39ddf910f120c30cf8ef55e77d4fe09f645e148
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748522"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自定义工具和工具箱
 你必须为你想要使用户添加到其模型的元素定义工具箱项。 有两种类型的工具：元素工具和连接工具。 在生成的设计器中，用户可以选择元素工具以将形状拖动到关系图中，也可以选择连接工具以在形状之间绘制链接。 通常，元素工具允许用户向其模型添加域类的实例，而连接工具允许他们添加域关系的实例。
@@ -83,9 +84,9 @@ Editor
 
      如果你想要定义新图标，在解决方案资源管理器中创建一个位图文件**Dsl\Resources**文件夹。 该文件应具有以下属性值：**生成操作** = **内容**;**复制到输出目录** = **不复制**。
 
-4.  **为一种元素工具：**设置**类**的工具来引用映射到一种形状的具体域类的属性。
+4.  **为一种元素工具：** 设置**类**的工具来引用映射到一种形状的具体域类的属性。
 
-     **连接器工具：**设置**连接生成器**到某一项在下拉列表中提供的工具的属性。 在将连接符映射到域关系后自动创建连接生成器。 如果最近创建过连接符，则通常选择关联的连接生成器。
+     **连接器工具：** 设置**连接生成器**到某一项在下拉列表中提供的工具的属性。 在将连接符映射到域关系后自动创建连接生成器。 如果最近创建过连接符，则通常选择关联的连接生成器。
 
 5.  若要测试 DSL，请按 F5 或 CTRL+F5，并在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例中，打开示例模型文件。 新工具应显示在工具箱上。 将它拖动到关系图上以验证它是否将创建新元素。
 
@@ -199,17 +200,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **来自到 OutPort 嵌套组件的连接**
 
- ![连接生成器](../modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")
+ ![连接生成器](../modeling/media/connectionbuilder_3.png)
 
  因此，你可能想要指定可从嵌套组件传送到 OutPort 的连接。 若要指定这样的连接，你可以设置**使用自定义接受**上**InPort**作为源角色类型和**OutPort**与中的目标角色类型**DSL 详细信息**窗口下图中所示：
 
  **链接连接 DSL 资源管理器中的指令**
 
- ![连接生成器图像](../modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")
+ ![连接生成器图像](../modeling/media/connectionbuilder_4a.png)
 
  **链接连接 DSL 详细信息窗口中的指令**
 
- ![](../modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")
+ ![](../modeling/media/connectionbuilder_4b.png)
 
  然后，必须在 ConnectionBuilder 类中提供方法：
 

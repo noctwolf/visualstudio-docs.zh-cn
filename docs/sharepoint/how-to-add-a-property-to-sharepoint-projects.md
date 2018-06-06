@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe3b94d7f2072565b2adc2ab7c3c9825ca21ad57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44e82b15ff2d4bdfaac5e8e9eca672ecdc1780a9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767616"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何：向 SharePoint 项目中添加属性
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何： 向 SharePoint 项目中添加属性
   项目扩展可用于将属性添加到任何 SharePoint 项目。 属性将显示在**属性**窗口中选定项目**解决方案资源管理器**。  
   
  以下步骤假定你已创建了一个项目扩展。 有关详细信息，请参阅[如何： 创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 3.  事件处理程序中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，将你的属性类的一个实例添加<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A>事件自变量参数的集合。  
   
 ## <a name="example"></a>示例  
- 下面的代码示例演示如何将两个属性添加到 SharePoint 项目。 一个属性仍然存在自身的数据项目用户选项文件 (。 csproj.user 文件或。 vbproj.user 文件)。 其他属性保持其数据的项目文件 （.csproj 文件或.vbproj 文件） 中。  
+ 下面的代码示例演示如何将两个属性添加到 SharePoint 项目。 一个属性仍然存在自身的数据项目用户选项文件 ( *。 csproj.user*文件或 *。 vbproj.user*文件)。 其他属性保持其数据的项目文件中 (*.csproj*文件或 *.vbproj*文件)。  
   
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]  
@@ -69,20 +70,20 @@ ms.lasthandoff: 04/16/2018
 ## <a name="compiling-the-code"></a>编译代码  
  此示例需要引用以下程序集：  
   
--   Microsoft.VisualStudio.SharePoint  
-  
--   Microsoft.VisualStudio.Shell  
-  
--   Microsoft.VisualStudio.Shell.Interop  
-  
--   Microsoft.VisualStudio.Shell.Interop.8.0  
-  
+-   Microsoft.VisualStudio.SharePoint
+-    
+-   Microsoft.VisualStudio.Shell
+-     
+-   Microsoft.VisualStudio.Shell.Interop
+-     
+-   Microsoft.VisualStudio.Shell.Interop.8.0
+-     
 -   System.ComponentModel.Composition  
   
 ## <a name="deploying-the-extension"></a>部署扩展  
  若要部署的扩展，创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包的程序集和你想要随此扩展分发的任何其他文件。 有关详细信息，请参阅[部署 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [扩展 SharePoint 项目](../sharepoint/extending-sharepoint-projects.md)   
  [如何： 创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [如何： 将快捷菜单项添加到 SharePoint 项目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   

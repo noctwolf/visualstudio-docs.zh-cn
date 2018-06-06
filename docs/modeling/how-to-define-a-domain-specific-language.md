@@ -18,11 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4aea2750e3900beb0aaa62156c215376ff16d1ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f870bce3abea444d6a04c0076d7110345c55ea7c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750423"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
 若要定义的域特定语言 (DSL)，请从模板创建一个 Visual Studio 解决方案。 解决方案的重要组成部分是 DSL 定义关系图，它存储在 DslDefinition.dsl 中。 DSL 定义将定义 DSL 的类和形状。 在进行修改并将所做修改添加到这些元素后，可以添加程序代码以更详细地自定义 DSL。
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/26/2018
 
 1.  创建与解决方案**域特定语言**模板，可以下找到**其他项目类型/扩展性**中**新项目**对话框。
 
-     ![创建 DSL 对话框](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![“创建 DSL”对话框](../modeling/media/create_dsldialog.png)
 
      当你单击**确定**、**域特定语言向导**将打开并显示模板 DSL 解决方案的列表。
 
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/26/2018
 
  用户界面现在类似于下图。
 
- ![dsl 设计器](../modeling/media/dsl_designer.png "dsl_designer")
+ ![dsl 设计器](../modeling/media/dsl_designer.png)
 
  此解决方案将定义域特定语言。 有关详细信息，请参阅[的域特定语言工具用户界面概述](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。
 
@@ -99,7 +100,7 @@ ms.lasthandoff: 04/26/2018
 
  如果运行的解决方案具有从创建**最小语言**模板，你实验性 Visual Studio 将类似于下面的示例：
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
  试验这些工具。 创建元素并连接它们。
 
@@ -139,11 +140,11 @@ ms.lasthandoff: 04/26/2018
 
  下图显示了用作本主题中的示例的 DSL 的类和关系部分。
 
- ![嵌入和引用关系](../modeling/media/music_classes.png "Music_Classes")
+ ![嵌入关系和引用关系](../modeling/media/music_classes.png)
 
  下图是此 DSL 的示例模型：
 
- ![生成的 DSL 实例模型](../modeling/media/music_instance.png "Music_Instance")
+ ![生成的 DSL 实例模型](../modeling/media/music_instance.png)
 
 > [!NOTE]
 >  “模型”是指用户创建的 DSL 的实例，并且通常显示为关系图。 本主题讨论了 DSL 定义关系图和在使用 DSL 时显示的模型关系图。
@@ -235,7 +236,7 @@ ms.lasthandoff: 04/26/2018
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>定义显示为关系图上的形状的元素的类
 
-1.  **定义和中所述测试的域类**[定义域类](#classes) **。** 
+1.  **定义和中所述测试的域类**[定义域类](#classes) **。**
 
     -   该类的父级应为根类。 即根类和新域类之间应存在嵌入关系。
 
@@ -285,7 +286,7 @@ ms.lasthandoff: 04/26/2018
 
     4.  确保复选标记出现在每个修饰器名称旁边。
 
-     ![形状映射和 DSL 详细信息窗口](../modeling/media/dsldetailswindow.png "DslDetailsWindow")
+     ![形状映射和 DSL 详细信息窗口](../modeling/media/dsldetailswindow.png)
 
 7.  **请创建的域类的元素的工具箱项。**
 
@@ -331,7 +332,7 @@ ms.lasthandoff: 04/26/2018
 
  例如，如果音乐 Album 和 Artist 在关系图上显示为形状，则可以定义名为 ArtistsAppearedOnAlbums 的关系，该关系可将 Artist 链接到所参与的 Album。 请参阅图中的示例。
 
- ![生成的 DSL 实例模型](../modeling/media/music_instance.png "Music_Instance")
+ ![生成的 DSL 实例模型](../modeling/media/music_instance.png)
 
  引用关系还可以链接相同类型的元素。 例如，在表示家族树的 DSL 中，父级及其子级之间的关系是从 Person 到 Person 的关系。
 
@@ -348,7 +349,7 @@ ms.lasthandoff: 04/26/2018
 
  **设置的关系，允许复制属性**如果同一个类的多个链接的模型元素相同的对之间只能存在。 例如，可以允许 Teacher 向相同的 Student 教授多个 Subject。
 
- ![形状图，连接器](../modeling/media/music_connector.png "Music_Connector")
+ ![连接线的形状映射](../modeling/media/music_connector.png)
 
  有关详细信息，请参阅[属性的域关系](../modeling/properties-of-domain-relationships.md)和[域角色的属性](../modeling/properties-of-domain-roles.md)。
 
@@ -411,11 +412,11 @@ ms.lasthandoff: 04/26/2018
 ##  <a name="compartments"></a> 定义包含列表的形状： 隔离舱形状
  隔离舱形状包含一个或多个项列表。 例如，在“音乐库”DSL 中，可以使用隔离舱形状来表示音乐 Album。 在每个 Album 中，存在一个 Song 列表。
 
- ![隔离舱形状](../modeling/media/compartmentshape.png "CompartmentShape")
+ ![隔离舱形状](../modeling/media/compartmentshape.png)
 
  采用在 DSL 定义中实现此效果的最简单方法，为容器定义一个域类，并为每个列表定义一个域类。 将容器类映射到隔离舱形状。
 
- ![形状地图](../modeling/media/music_mapcomp.png "Music_MapComp")
+ ![形状映射](../modeling/media/music_mapcomp.png)
 
  有关详细信息，请参阅[属性的隔离舱形状](../modeling/properties-of-compartment-shapes.md)。
 
@@ -505,7 +506,7 @@ ms.lasthandoff: 04/26/2018
 
 7.  打开语言资源管理器。 验证是否可以看到内部具有列表项节点的容器节点。
 
- ![生成资源管理器的 DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![生成的 DSL 资源管理器](../modeling/media/music_explorer.png)
 
  在首次测试隔离舱形状后，你可能想要调整它的某些属性并添加一些更高级的功能。 有关详细信息，请参阅[自定义和扩展的域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 

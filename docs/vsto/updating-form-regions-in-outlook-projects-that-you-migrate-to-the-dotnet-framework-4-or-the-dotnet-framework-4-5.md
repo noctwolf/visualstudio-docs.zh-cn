@@ -1,5 +1,5 @@
 ---
-title: 更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Outlook 项目中的窗体区域 |Microsoft 文档
+title: 更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Outlook 项目中的窗体区域
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,23 +15,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5195e9a268a38212f12d554eb5a86f4e923af421
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97778716ad5be8e110c022048a3d04f4c980f839
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767970"
 ---
-# <a name="updating-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到 .NET Framework 4 或 .NET Framework 4.5 的 Outlook 项目中的窗体区域
+# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Outlook 项目中的窗体区域
   如果具有窗体区域的 Outlook VSTO 外接程序项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须对生成的窗体区域代码和在运行时实例化某些窗体区域类的任何代码进行更改。  
   
-## <a name="updating-the-generated-form-region-code"></a>更新生成的窗体区域代码  
- 如果该项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须更改生成的窗体区域代码。 对在 Visual Studio 中设计的窗体区域和从 Outlook 导入的窗体区域所做的更改是不同的。 有关这些类型的窗体区域之间的差异的详细信息，请参阅 [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md)。  
+## <a name="update-the-generated-form-region-code"></a>更新生成的窗体区域代码  
+ 如果该项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须更改生成的窗体区域代码。 对在 Visual Studio 中设计的窗体区域和从 Outlook 导入的窗体区域所做的更改是不同的。 有关这些类型的窗体区域之间的差异的详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。  
   
-#### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>若要更新在 Visual Studio 中设计的窗体区域的生成代码  
+### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>若要更新在 Visual Studio 中设计的窗体区域的生成代码  
   
-1.  在代码编辑器中打开窗体区域代码隐藏文件。 此文件命名为 *YourFormRegion*.Designer.cs 或 *YourFormRegion*.Designer.vb。 若要在 Visual Basic 项目中查看此文件，可单击 **“解决方案资源管理器”** 中的 **“显示全部文件”**按钮。  
+1.  在代码编辑器中打开窗体区域代码隐藏文件。 此文件命名为 *YourFormRegion*.Designer.cs 或 *YourFormRegion*.Designer.vb。 若要在 Visual Basic 项目中查看此文件，可单击 **“解决方案资源管理器”** 中的 **“显示全部文件”** 按钮。  
   
-2.  修改窗体区域类的声明，使它派生自<xref:Microsoft.Office.Tools.Outlook.FormRegionBase>而不是 Microsoft.Office.Tools.Outlook.FormRegionControl。  
+2.  修改窗体区域类的声明，以便它从 <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> 而不是从 `Microsoft.Office.Tools.Outlook.FormRegionControl` 派生。  
   
 3.  修改窗体区域类的构造函数，如下面的代码示例中所示。  
   
@@ -115,9 +116,9 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>若要更新从 Outlook 导入的窗体区域的生成代码  
   
-1.  在代码编辑器中打开窗体区域代码隐藏文件。 此文件命名为 *YourFormRegion*.Designer.cs 或 *YourFormRegion*.Designer.vb。 若要在 Visual Basic 项目中查看此文件，可单击 **“解决方案资源管理器”** 中的 **“显示全部文件”**按钮。  
+1.  在代码编辑器中打开窗体区域代码隐藏文件。 此文件命名为 *YourFormRegion*.Designer.cs 或 *YourFormRegion*.Designer.vb。 若要在 Visual Basic 项目中查看此文件，可单击 **“解决方案资源管理器”** 中的 **“显示全部文件”** 按钮。  
   
-2.  修改窗体区域类的声明，使它派生自<xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase>而不是 Microsoft.Office.Tools.Outlook.ImportedFormRegion。  
+2.  修改窗体区域类的声明，以便它从 <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> 而不是从 `Microsoft.Office.Tools.Outlook.ImportedFormRegion` 派生。  
   
 3.  修改窗体区域类的构造函数，如下面的代码示例中所示。  
   
@@ -157,7 +158,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  对于初始化窗体区域类中控件的 `InitializeControls` 方法中的每一行代码，如下所示修改代码。  
   
-     下面的代码示例演示如何初始化面向 .NET Framework 3.5 的项目中的控件。 在此代码中，GetFormRegionControl 方法有一个类型参数，指定返回的控件类型。  
+     下面的代码示例演示如何初始化面向 .NET Framework 3.5 的项目中的控件。 在此代码中，`GetFormRegionControl` 方法具有指定返回的控件类型的类型参数。  
   
     ```vb  
     Me.olkTextBox1 = Me.GetFormRegionControl(Of Microsoft.Office.Interop.Outlook.OlkTextBox)("OlkTextBox1")  
@@ -167,7 +168,7 @@ ms.lasthandoff: 04/16/2018
     this.olkTextBox1 = this.GetFormRegionControl<Microsoft.Office.Interop.Outlook.OlkTextBox>("OlkTextBox1");  
     ```  
   
-     下面的代码示例演示如何初始化面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的项目中的控件。 在此代码中， <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase.GetFormRegionControl%2A> 方法不具有类型参数。 必须将返回值强制转换为正在初始化的控件的类型。  
+     下面的代码示例演示如何初始化面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 的项目中的控件。 在此代码中， <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase.GetFormRegionControl%2A> 方法不具有类型参数。 必须将返回值强制转换为正在初始化的控件的类型。  
   
     ```vb  
     Me.olkTextBox1 = CType(GetFormRegionControl("OlkTextBox1"), Microsoft.Office.Interop.Outlook.OlkTextBox)  
@@ -185,10 +186,10 @@ ms.lasthandoff: 04/16/2018
   
 8.  在 *YourNewFormRegion*`Factory` 和 `WindowFormRegionCollection` 类中，搜索对 *YourNewFormRegion* 类的所有引用并将每个引用更改为对 *YourOriginalFormRegion* 类的引用。 例如，如果正在更新的窗体区域名为 `SalesDataFormRegion` 且在步骤 5 中创建的新窗体区域名为 `FormRegion1`，则将 `FormRegion1` 的所有引用更改为 `SalesDataFormRegion`。  
   
-## <a name="instantiating-form-region-classes"></a>实例化窗体区域类  
- 必须修改动态实例化某些窗体区域类的任何代码。 在面向.NET Framework 3.5 的项目，你可以直接实例化窗体区域类，如 Microsoft.Office.Tools.Outlook.FormRegionManifest。 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，这些类是你无法直接实例化的接口。  
+## <a name="instantiate-form-region-classes"></a>实例化窗体区域类  
+ 必须修改动态实例化某些窗体区域类的任何代码。 在面向 .NET Framework 3.5 的项目中，你可以直接实例化窗体区域类（比如 `Microsoft.Office.Tools.Outlook.FormRegionManifest`）。 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，这些类是你无法直接实例化的接口。  
   
- 如果你的项目的目标框架更改为[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本，你必须实例化这些接口使用 Globals.Factory 属性提供的方法。 有关 Globals.Factory 属性的详细信息，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
+ 如果项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须使用 `Globals.Factory` 属性提供的方法实例化这些接口。 有关详细信息`Globals.Factory`属性，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
   
  下表列出了要用于实例化面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中的类型的窗体区域类型和方法。  
   
@@ -199,6 +200,6 @@ ms.lasthandoff: 04/16/2018
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|  
   
 ## <a name="see-also"></a>请参阅  
- [将 Office 解决方案迁移到 .NET Framework 4 或更高版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [迁移 Office 解决方案迁移到.NET Framework 4 或更高版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)  
   

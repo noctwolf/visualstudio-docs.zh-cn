@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 356f15d3d7f332f87b445c66c89f79d099031a1b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dad2ffbc162b53d4141826b6015829482f3bc2df
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746749"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练： 自定义插入、 更新和删除的实体类的行为
 
@@ -74,7 +75,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在 Visual Studio 中，在**文件**菜单上，选择**新建**，**项目...**.
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 经典桌面**。
+2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
 
 3. 在中间窗格中，选择**Windows 窗体应用程序**项目类型。
 
@@ -215,10 +216,10 @@ ms.lasthandoff: 04/26/2018
 
      检查的列表**方法自变量**和**类属性**，并注意有两个**方法自变量**和两个**类属性**对于表中的某些列。 这样可以更加轻松地跟踪更改和创建检查并发冲突的语句。
 
-13. 映射**Original_CustomerID**方法自变量**CustomerID （原始）**类属性。
+13. 映射**Original_CustomerID**方法自变量**CustomerID （原始）** 类属性。
 
     > [!NOTE]
-    >  默认情况下，当名称匹配时，方法自变量会映射到类属性。 如果属性名称发生更改并且在表与实体类之间不再匹配，则在 O/R 设计器无法确定正确的映射时，您可能必须选择等效的类属性进行映射。 此外，如果方法自变量没有用于进行映射到的有效类属性，则可以设置**类属性**值赋给**（无）**。
+    >  默认情况下，当名称匹配时，方法自变量会映射到类属性。 如果属性名称发生更改并且在表与实体类之间不再匹配，则在 O/R 设计器无法确定正确的映射时，您可能必须选择等效的类属性进行映射。 此外，如果方法自变量没有用于进行映射到的有效类属性，则可以设置**类属性**值赋给 **（无）**。
 
 14. 单击**应用**以保存所选择的类和行为配置。
 
@@ -228,7 +229,7 @@ ms.lasthandoff: 04/26/2018
 
 17. 选择**DeleteCustomers**中的方法**自定义**列表。
 
-18. 映射**Original_CustomerID**方法自变量**CustomerID （原始）**类属性。
+18. 映射**Original_CustomerID**方法自变量**CustomerID （原始）** 类属性。
 
 19. 单击 **“确定”**。
 

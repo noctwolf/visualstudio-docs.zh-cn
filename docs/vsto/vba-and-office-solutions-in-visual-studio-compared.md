@@ -1,5 +1,5 @@
 ---
-title: VBA 和比较的 Visual Studio 中的 Office 解决方案 |Microsoft 文档
+title: 比较的 Visual Studio 中的 VBA 和 Office 解决方案
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5a92727f08729fc7f8a871d0528c9e652d92f8a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81e55c2861da33d656ad9a5584e6ff5916afb232
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768048"
 ---
-# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>比较 VBA 解决方案和 Visual Studio 中的 Office 解决方案
+# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>比较的 Visual Studio 中的 VBA 和 Office 解决方案
   Microsoft Visual Basic for Applications (VBA) 使用与 Office 应用程序紧密集成的非托管代码。 你可以通过使用 Visual Studio 创建 Microsoft Office 项目以便充分利用 .NET Framework 和 Visual Studio 设计工具。  
   
  可以通过使用 Visual Studio 创建的 Office 解决方案的类型的信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -44,16 +45,16 @@ ms.lasthandoff: 04/16/2018
   
 -   宏录制。  
   
-## <a name="combining-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>结合 VBA 解决方案和使用 Visual Studio 创建的 Office 解决方案  
- 可以从使用 Visual Studio 创建的 Office 解决方案中调用 VBA 代码，也可以从 VBA 调用使用 Visual Studio 创建的 Office 解决方案中的代码。 特定方法根据 Office 解决方案是 VSTO 外接程序还是文档级自定义项而有所不同。 有关详细信息，请参阅 [从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) 和 [结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)。  
+## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>结合 VBA 解决方案和通过使用 Visual Studio 创建 Office 解决方案  
+ 可以从使用 Visual Studio 创建的 Office 解决方案中调用 VBA 代码，也可以从 VBA 调用使用 Visual Studio 创建的 Office 解决方案中的代码。 特定方法根据 Office 解决方案是 VSTO 外接程序还是文档级自定义项而有所不同。 有关详细信息，请参阅[从其他 Office 解决方案调用 VSTO 外接程序的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)和[结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
+ [从其他 Office 解决方案调用 VSTO 外接程序的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)   
  [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)   
  [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)   
- [入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [要开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
   
   

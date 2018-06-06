@@ -28,14 +28,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a9cb18d1b9de7f4f67f8c3d153a9dfa4598612d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691527"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765721"
 ---
-# <a name="creating-web-parts-for-sharepoint"></a>为 SharePoint 创建 web 部件
+# <a name="create-web-parts-for-sharepoint"></a>为 SharePoint 创建 web 部件
   通过使用 web 部件，可以使用浏览器来修改内容、 外观和行为的 SharePoint 站点的页。 Web 部件是在 web 部件页内运行的服务器端控件： 它们是在 SharePoint 站点显示的页的构建基块。 请参阅[构建基块： Web 部件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
   
  你可以创建和使用模板从 Visual Studio 中调试 SharePoint 站点上的 web 部件。  
@@ -50,7 +50,7 @@ ms.locfileid: "34691527"
   
 |文件|描述|  
 |----------|-----------------|  
-|Elements.xml|包含你的项目中的功能定义文件用于部署 web 部件的信息。|  
+|*Elements.xml*|包含你的项目中的功能定义文件用于部署 web 部件的信息。|  
 |.webpart 文件|提供 SharePoint 需要在 web 部件库中显示 web 部件的信息。|  
 |代码文件|包含用于将控件添加到 web 部件以及生成 web 部件中的自定义内容的方法。|  
   
@@ -65,14 +65,14 @@ ms.locfileid: "34691527"
 |控件名称|描述|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|将插入一个 ASP 菜单。 有关详细信息，请参阅[菜单控件概述](http://go.microsoft.com/fwlink/?LinkId=235316)。|  
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|将插入**链接**元素插入的.aspx 页，并将应用所定义的一个或多个外部样式表**CssRegistration**。|  
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|将 DateTime 控件插入到的.aspx 页。|  
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|安全验证插入的.aspx 页|  
+|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|将插入**链接**元素插入 *.aspx*页上，并将应用所定义的一个或多个外部样式表**CssRegistration**。|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|插入到 DateTime 控件 *.aspx*页。|  
+|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|将插入到安全验证 *.aspx*页|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|返回指定列表中的一个属性。|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|返回当前网站的全局属性。|  
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|将插入 rss 源到.aspx 页的链接。|  
+|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|插入链接，指向 RSS 源到 *.aspx*页。|  
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|提供用于注册资源，如脚本，在页面上，以便他们可以请求呈现页时属性和方法。|  
-|[主题](http://go.microsoft.com/fwlink/?LinkId=235314)|将主题应用于的.aspx 页。|  
+|[主题](http://go.microsoft.com/fwlink/?LinkId=235314)|应用主题应用于 *.aspx*页。|  
   
 ## <a name="debug-a-web-part"></a>调试 web 部件
  你可以调试一个包含 web 部件，正如你将调试其他 Visual Studio 项目的 SharePoint 项目。 当你启动 Visual Studio 调试器时，Visual Studio 将打开 SharePoint 站点。  

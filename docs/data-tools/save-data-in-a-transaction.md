@@ -1,5 +1,5 @@
 ---
-title: 演练： 将数据保存在事务中
+title: 演练：在事务中保存数据
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec2ff00c4d355b2683c888fcdb6a333bf15e1b99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1f035fc56cd673f12ba694d6a94ec57aea1d93b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745524"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>演练： 将数据保存在事务中
+# <a name="walkthrough-save-data-in-a-transaction"></a>演练：在事务中保存数据
 本演练演示如何使用在事务中保存数据<xref:System.Transactions>命名空间。 在本演练将创建一个 Windows 窗体应用程序。 将使用数据源配置向导在 Northwind 示例数据库中创建两个表的数据集。 你将添加数据控件绑定到 Windows 窗体，并将修改 BindingNavigator 的保存按钮以更新在 TransactionScope 内的数据库的代码。
 
 ## <a name="prerequisites"></a>系统必备
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在 Visual Studio 中，在**文件**菜单上，选择**新建**，**项目...**.
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 经典桌面**。
+2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
 
 3. 在中间窗格中，选择**Windows 窗体应用程序**项目类型。
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 
     -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-         -或-
+         或
 
     -   选择**新连接**以启动**添加/修改连接**对话框框中，并创建到 Northwind 数据库的连接。
 

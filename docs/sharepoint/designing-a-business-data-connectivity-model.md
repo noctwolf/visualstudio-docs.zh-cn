@@ -18,21 +18,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6f34a754562674aacf989c294ff2662ca4f8f28f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d0971dc9d445c7a492d934c0c2bdc9b47de92028
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766059"
 ---
-# <a name="designing-a-business-data-connectivity-model"></a>设计业务数据连接模型
+# <a name="design-a-business-data-connectivity-model"></a>设计业务数据连接模型
   你可以通过将实体和方法添加到模型文件开发业务数据连接 (BDC) 服务的型号。 实体描述数据字段的集合。 例如，实体可以表示数据库中的表。 方法执行如添加、 删除或更新由实体表示的数据的任务。 有关详细信息，请参阅[将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。  
   
-## <a name="adding-entities"></a>添加实体  
+## <a name="add-entities"></a>添加实体
  你可以将实体添加通过拖动或复制**实体**从 Visual Studio**工具箱**拖动到 BDC 设计器。 有关详细信息，请参阅[如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
  在类中定义的实体的字段。 例如，可以添加一个名为字段`Address`到`Customer`类。 你可以向项目添加新类，或使用现有类使用对象关系设计器 （O/R 设计器） 等其他工具创建的。 实体的名称和类表示实体的名称不必匹配。 当您的模型中定义的方法使此类相关的实体。  
   
-## <a name="adding-methods"></a>添加方法  
+## <a name="add-methods"></a>添加方法
  当用户查看、 添加、 更新或删除列表或基于你的模型的 Web 部件中的信息时，BDC 服务会在模型中调用方法。 必须将方法添加到每个用户可以执行的任务的模型。 通过选择任何中的五个基本的方法类型来创建方法**BDC 方法详细信息**窗口。 下表介绍 BDC 模型的五个基本方法。  
   
 |方法|描述|  
@@ -43,24 +44,24 @@ ms.lasthandoff: 04/16/2018
 |更新者|修改列表中的数据。 当用户更新列表中的信息时调用。 有关详细信息，请参阅[如何： 添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)。|  
 |删除者|删除数据。 当用户从列表中删除项时调用。 有关详细信息，请参阅[如何： 添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)。|  
   
-## <a name="defining-method-parameters"></a>定义方法参数  
+## <a name="define-method-parameters"></a>定义方法参数
  在你创建一个方法，Visual Studio 将添加适合的方法类型的输入和输出参数。 这些参数是只是占位符。 在大多数情况下，你必须修改的参数，以便它们在传递或返回正确的数据类型。 例如，默认情况下，Finder 方法返回一个字符串。 在大多数情况下，你想要修改的 Finder 方法的返回参数，从而使其返回实体的集合。 可以通过修改参数的类型描述符来实现此目的。 类型描述符是描述参数的数据类型的属性集合。 有关详细信息，请参阅[如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
  Visual Studio，可将复制模型中的参数之间的类型描述符。 例如，可以定义名为的类型描述符`CustomerTD`的返回参数`GetCustomer`方法。 你可以复制`CustomerTD`类型描述符中的**BDC 资源管理器**，然后将粘贴到的输入参数的类型描述符`CreateCustomer`方法。 这样会妨碍你无需多次定义相同的类型描述符。  
   
-##  <a name="MethodInstances"></a> 方法实例  
+## <a name="method-instances"></a>方法实例
  在你创建一个方法，Visual Studio 将添加默认方法实例。 方法实例是一种方法，以及参数的默认值对的引用。 一种方法可以有多个方法实例。 每个实例是一组默认值和方法签名的组合。 有关详细信息，请参阅[如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
  运行项目时，方法实例将显示在 SharePoint 列表上方的下拉列表中。 用户可以选择方法实例来查看数据。  
   
  若要将默认值添加到方法实例，必须直接修改模型的 XML。 有关详细信息，请参阅[DefaultValue](http://go.microsoft.com/fwlink/?LinkID=169279)。  
   
-## <a name="adding-filter-descriptors"></a>添加筛选器描述符  
+## <a name="add-filter-descriptors"></a>添加筛选器描述符
  模型的使用者可能想要检索的实体与某个条件匹配的实例。 若要启用此功能，可以向方法添加的筛选器描述符。 筛选器描述符使模型使用者要作为筛选依据执行之前，将值传递给方法的方法的结果集。 有关详细信息，请参阅[如何： 添加到限制实例来自外部系统的操作筛选器参数](http://go.microsoft.com/fwlink/?LinkID=169267)。  
   
  SharePoint 提供了一些功能，使用户能够提供筛选器值。 例如，业务数据 Web 部件提供筛选器文本框。 用户可通过在该文本框中输入值来限制列表中的数据。 有关如何将筛选器描述符添加到方法的详细信息，请参阅[如何： 向 Finder 方法中添加筛选器描述符](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)。  
   
-### <a name="filter-descriptor-properties"></a>筛选器描述符属性  
+### <a name="filter-descriptor-properties"></a>筛选器描述符属性
  必须设置的值**关联的类型描述符**，**名称**，和**类型**的筛选器描述符的属性。 所有其他属性是可选的。  
   
  **关联的类型描述符**属性与输入参数相关的筛选器描述符。 当用户提供筛选器值时，BDC 服务会将该值传入方法使用输入的参数中。  
@@ -69,24 +70,24 @@ ms.lasthandoff: 04/16/2018
   
  有关筛选器描述符的属性的详细信息，请参阅[FilterDescriptor](http://go.microsoft.com/fwlink/?LinkID=169280)。  
   
-### <a name="providing-default-values"></a>提供默认值  
+### <a name="provide-default-values"></a>提供默认值
  在某些情况下，用户可能会提供筛选器值。 通过将默认值添加到方法的实例，或者你的方法的代码中设置默认值，你可以提供默认值。 有关如何将默认值添加到方法实例的详细信息，请参阅[实例，但](http://go.microsoft.com/fwlink/?LinkID=169282)。 有关如何在你的方法的代码中设置输入参数的默认值的示例，请参阅[如何： 向 Finder 方法中添加筛选器描述符](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)。  
   
-## <a name="validating-the-model"></a>验证模型  
+## <a name="validate-the-model"></a>验证模型
  你可以在开发过程中验证你的模型。 Visual Studio 将标识可能会阻止您的模型按预期方式运行的问题。 这些问题显示在 Visual Studio**错误列表**。  
   
- 你可以通过打开 BDC 设计器的快捷菜单，然后选择验证模型**验证**。 如果模型包含任何错误，它们将出现在**错误列表**。 你可以通过双击列表中的错误，快速将光标移至包含错误的代码。 或者，您可以反复选择 F8 或 Shift+F8 在列表的错误中前进或后退。  
+ 你可以通过打开 BDC 设计器的快捷菜单，然后选择验证模型**验证**。 如果模型包含任何错误，它们将出现在**错误列表**。 你可以通过双击列表中的错误，快速将光标移至包含错误的代码。 作为替代方法，你可以选择**F8**或**Shift**+**F8**密钥，以便单步前进或后退列表中的错误。  
   
  以某种方式违反了该模型的规则时，可以发生验证错误。 例如，如果**IsCollection**的类型描述符的属性设置为**true**，但没有子类型描述符存在，则将出现验证错误。 你可能必须了解在 Visual Studio 中显示某些错误 BDC 模型的规则引用**错误列表**。 BDC 模型的规则的详细信息，请参阅[BDCMetadata 架构](http://go.microsoft.com/fwlink/?LinkID=169275)。  
   
-## <a name="debugging-the-solution-that-contains-the-model"></a>调试包含模型的解决方案  
+## <a name="debug-the-solution-that-contains-the-model"></a>调试包含模型的解决方案
  你可以调试代码，如将调试 Visual Studio 中的任何代码。 若要调试你的代码，在代码中的任何位置设置断点，然后启动调试器。 Visual Studio 将打开 SharePoint 站点。 在 SharePoint 中，创建列表或使用您的业务数据的 Web 部件。 然后，可以逐句通过代码。 有关调试 SharePoint 项目的详细信息，请参阅[疑难解答 SharePoint 解决方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。  
   
  你还可以调试你添加到项目的自定义程序集中的代码。 但是，若要调试自定义程序集中的代码，必须将程序集添加到解决方案包。 有关详细信息，请参阅[如何： 添加和移除附加程序集](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。  
   
  有关将自定义程序集添加到你的项目的详细信息，请参阅[如何： 在 BDC 功能中包含自定义程序集](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)。  
   
-### <a name="configuring-bdc-security"></a>配置 BDC 安全性  
+### <a name="configure-bdc-security"></a>配置 BDC 安全性
  你可能必须修改你在 SharePoint 中的安全设置，你可以调试你的解决方案之前。 若要修改这些设置，请在 SharePoint 2010 管理中心网站打开业务数据连接服务应用程序。 在**设置元数据存储区权限**对话框中，添加你的用户帐户，然后选择以下任一选项：  
   
 |任务|选项|  
@@ -102,18 +103,18 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  使用这些设置来调试你的本地 SharePoint 服务器上的解决方案。 有关如何在生产 SharePoint 服务器上配置 BDC 相关的任何安全设置的详细信息，请参阅[业务数据连接服务安全概述](http://go.microsoft.com/fwlink/?LinkID=178886)。  
   
-### <a name="retracting-models-that-become-corrupt"></a>收回损坏的模型  
+### <a name="retract-models-that-become-corrupt"></a>收回损坏的模型
  当您第一次启动调试器时，Visual Studio 会将整个模型部署到 SharePoint。 对于每个随后的时间，Visual Studio 与你的部署之间进行任何更改更新 SharePoint 中的模型。  
   
  可能的情况下你想要完全收回从 SharePoint 模型的 Visual Studio。 例如，模型可能会损坏。  若要重新部署到 SharePoint 模型，将设置**增量更新**属性的模型**False**，然后启动调试器。 **增量更新**属性将显示在**属性**窗口时选择表示的模型中的节点**BDC 资源管理器**。 默认情况下，模型的名称是**BdcModel1**。  
   
-### <a name="changing-identifier-names-of-entities-in-the-model"></a>更改模型中的实体的标识符的名称  
+### <a name="change-identifier-names-of-entities-in-the-model"></a>更改模型中的实体的标识符的名称
  如果在部署模型后，你更改的标识符名称，你可能会收到部署错误。 无法设置来解决此错误**增量更新**属性的模型**False**。 你必须手动，收回模型，然后重新部署解决方案。 有关详细信息，请参阅[疑难解答 SharePoint 解决方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。 你可以通过设置避免此错误**增量更新**属性**False**在最初部署模型之前。  
   
-## <a name="locating-documentation-for-bdc-model-elements"></a>查找 BDC 模型元素的文档  
+## <a name="locate-documentation-for-bdc-model-elements"></a>找到 BDC 模型元素的文档
  Visual Studio 将 XML 元素添加到每个实体的模型方法或你创建其他项。 元素属性显示为中的属性**属性**窗口。 有关元素和 Visual Studio 将生成设计时模型的属性的信息，请参阅[BDCMetadata 架构](http://go.microsoft.com/fwlink/?LinkID=169275)。  
   
-## <a name="related-topics"></a>相关主题  
+## <a name="related-topics"></a>相关主题
   
 |标题|描述|  
 |-----------|-----------------|  
@@ -132,5 +133,4 @@ ms.lasthandoff: 04/16/2018
 |[如何： 创建实体之间的关联](../sharepoint/how-to-create-an-association-between-entities.md)|演示如何定义模型中的实体之间的关系。|  
 |[演练：使用业务数据在 SharePoint 中创建外部列表](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|提供演示如何创建和测试显示 SharePoint 外部列表中的联系人的模型的分步说明。|  
 |[将业务数据集成到 SharePoint 中](../sharepoint/integrating-business-data-into-sharepoint.md)|提供创建和设计 BDC 服务模型的概述。|  
-  
   

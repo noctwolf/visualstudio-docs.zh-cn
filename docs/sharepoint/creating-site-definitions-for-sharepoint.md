@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06a5aa5d7f97f56bfbb21941ab996628b689c86a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1fae92a9ca958f3d6702ec0f2d1678b33d471bab
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691799"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765487"
 ---
-# <a name="creating-site-definitions-for-sharepoint"></a>创建 SharePoint 网站定义
+# <a name="create-site-definitions-for-sharepoint"></a>创建 SharePoint 网站定义
   中的 SharePoint 网站定义项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]允许你创建*站点定义*，它用作新的 SharePoint 站点的基础。 这些定义不仅确定的外观和行为的 SharePoint 站点，但还自己的默认内容和功能。 在定义中，您可以放入预配置的列表、 内容类型、 事件接收器、 图像和其他项。 例如 SharePoint 包含某些网站定义（如 BLOG）。 在创建了基于博客站点定义的网站时，网站包含列表、 Web 部件和博客网站所需的其他项。  
   
  有关站点定义的详细信息，请参阅[站点模板和定义](http://go.microsoft.com/fwlink/?LinkId=179134)。  
@@ -41,11 +41,11 @@ ms.locfileid: "34691799"
   
 |文件名|描述|  
 |---------------|-----------------|  
-|default.aspx|新的 SharePoint 站点默认 ASPX 主页。|  
-|Onet.xml|指定新的站点的配置、 站点定义模板，默认行为的组件。 这些设置可以包括属性的内容类型启用，则默认列表视图中，文档模板文件，例如和 Web 部件包括与该站点。 默认情况下，`Modules`部分列出了要添加到 SharePoint 站点，如何配置这些设置的文件。|  
-|webtemp_*SiteDefinitionName*.xml|指定出现在站点定义配置**模板选择**部分**新建 SharePoint 网站**页。|  
+|*default.aspx*|新的 SharePoint 站点默认 ASPX 主页。|  
+|*Onet.xml*|指定新的站点的配置、 站点定义模板，默认行为的组件。 这些设置可以包括属性的内容类型启用，则默认列表视图中，文档模板文件，例如和 Web 部件包括与该站点。 默认情况下，`Modules`部分列出了要添加到 SharePoint 站点，如何配置这些设置的文件。|  
+|*webtemp_ {SiteDefinitionName}.xml*|指定出现在站点定义配置**模板选择**部分**新建 SharePoint 网站**页。|  
   
- 默认情况下，所有站点定义都存储在*驱动器：* \program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates 文件夹。 每个站点定义都包含其自己的子文件夹。  
+ 默认情况下，所有站点定义都存储在 *{驱动器:} \program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates*文件夹。 每个站点定义都包含其自己的子文件夹。  
   
 ## <a name="related-topics"></a>相关主题
   
@@ -53,7 +53,7 @@ ms.locfileid: "34691799"
 |-----------|-----------------|  
 |[演练：创建基本站点定义项目](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|将引导你逐步完成基本网站定义项目中创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。|  
 |[如何： 创建自定义站点定义和配置](http://go.microsoft.com/fwlink/?LinkId=183309)|描述如何在 SharePoint 中创建自定义站点定义，通过复制现有的站点定义，然后对副本进行修改。|  
-|[WebTemp.xml](http://go.microsoft.com/fwlink/?LinkId=183310)|描述指定的站点定义中提供的原始文件**模板选择**部分**新建 SharePoint 网站**页。|  
+|[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|描述指定的站点定义中提供的原始文件**模板选择**部分**新建 SharePoint 网站**页。|  
 |[本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)|描述如何准备的共用的 SharePoint 解决方案。|  
 |[为 SharePoint 创建 Web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)|描述如何创建用户可以修改 SharePoint 页的部件。|  
 |[为 Web 部件或应用程序页创建可重用控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|描述如何创建在应用程序页和 Web 部件中运行的可重用控件。|  

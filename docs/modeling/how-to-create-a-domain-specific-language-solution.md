@@ -15,11 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c4851577a62db08e2c759f7140895e15b230ec60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49d33858970eebd9231eac35d4e4e58999771ae1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748893"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：创建域特定语言解决方案
 通过一个专用创建域特定语言 (DSL)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案。
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/26/2018
         > [!NOTE]
         >  最好你键入的名称应是一个有效的 Visual C# 标识符，因为它可能用于生成代码。
 
-     ![创建 DSL 对话框](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![“创建 DSL”对话框](../modeling/media/create_dsldialog.png)
 
 2.  选择 DSL 模板。
 

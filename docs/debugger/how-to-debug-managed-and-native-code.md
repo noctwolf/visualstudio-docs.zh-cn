@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 548b86406ba36a6f46a2dfb3d4d894b5621c298c
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: d8987d24a6302c9d9ffd7ffdb127e52c57e22ff9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764548"
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>教程： 调试 Visual Studio 中的托管和本机代码
 
@@ -39,7 +40,7 @@ Visual Studio 允许你启用多个调试器类型在调试时，这称为混合
 
 * 你必须安装 Visual Studio 和**使用 c + + 桌面开发**工作负荷。
 
-    如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
+    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
     如果需要安装工作负载，但已有 Visual Studio，则单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“Node.js 开发”工作负载，然后选择“修改”。
 
@@ -73,7 +74,7 @@ Visual Studio 允许你启用多个调试器类型在调试时，这称为混合
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
     #define MIXED_MODE_MULTIPLY_HPP
-    
+
     extern "C"
     {
         __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
@@ -106,7 +107,7 @@ Visual Studio 允许你启用多个调试器类型在调试时，这称为混合
 
 1. 选择为你的应用程序代码的模板。
 
-    对于.NET Framework，在**新项目**对话框框中，选择**Visual C#**， **Windows 经典桌面**从已安装的模板部分中，然后在中间窗格中选择**控制台应用程序 (.NET Framework)**。
+    对于.NET Framework，在**新项目**对话框框中，选择**Visual C#**， **Windows 桌面**从已安装的模板部分中，然后在中间窗格中选择**控制台应用程序 (.NET Framework)**。
 
     有关.NET 核心中**新项目**对话框框中，选择**Visual C#**， **.NET 核心**从已安装的模板部分中，然后在中间窗格中选择**控制台应用程序 （.NET 核心）**。
 
@@ -119,7 +120,7 @@ Visual Studio 允许你启用多个调试器类型在调试时，这称为混合
     ```csharp
     using System;
     using System.Runtime.InteropServices;
-    
+
     namespace Mixed_Mode_Calling_App
     {
         public class Program
@@ -133,7 +134,7 @@ Visual Studio 允许你启用多个调试器类型在调试时，这称为混合
             "mixed_mode_multiply", CallingConvention = CallingConvention.StdCall)]
             public static extern int Multiply(int x, int y);
             public static void Main(string[] args)
-            { 
+            {
                 int result = Multiply(7, 7);
                 Console.WriteLine("The answer is {0}", result);
                 Console.ReadKey();
@@ -165,9 +166,9 @@ Visual Studio 允许你启用多个调试器类型在调试时，这称为混合
     ```
     "nativeDebugging": true
     ```
-    
+
     因此，例如，你的文件可能如下所示：
-    
+
     ```
     {
       "profiles": {

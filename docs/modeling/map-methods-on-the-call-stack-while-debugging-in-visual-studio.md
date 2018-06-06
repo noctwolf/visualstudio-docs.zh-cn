@@ -30,16 +30,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83ee400201ff76745612e7fe7ce36020ba5234a8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 111a1180f694b57a4e5ae013a41128a4a7e9e9f5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748681"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中调试时映射调用堆栈上的方法
 创建一个代码图以进行调试时直观地跟踪调用堆栈。 你可以在图中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
 
- ![使用的调用堆栈代码图上调试](../debugger/media/debuggermap_overview.png "DebuggerMap_Overview")
+ ![使用代码图上的调用堆栈调试](../debugger/media/debuggermap_overview.png)
 
  你将需要：
 
@@ -71,60 +72,60 @@ ms.lasthandoff: 04/26/2018
 
 2.  你的应用进入中断模式或你单步执行函数后，请选择**代码图**。 (键盘： **Ctrl** + **Shift** + **`**)
 
-     ![选择代码图以开始映射调用堆栈](../debugger/media/debuggermap_choosecodemap.png "DebuggerMap_ChooseCodeMap")
+     ![选择代码图以开始映射调用堆栈](../debugger/media/debuggermap_choosecodemap.png)
 
      当前的调用堆栈在新代码图上显示为橙色：
 
-     ![请参阅在代码图上的调用堆栈](../debugger/media/debuggermap_seeundocallstack.png "DebuggerMap_SeeUndoCallStack")
+     ![查看代码图上的调用堆栈](../debugger/media/debuggermap_seeundocallstack.png)
 
      在你继续调试时，该代码图将自动更新。 请参阅[使用下一个调用堆栈更新图](#UpdateMap)。
 
 ##  <a name="MakeNotes"></a> 对代码进行标注
  添加注释以跟踪代码中发生了什么情况。 若要在注释中添加新行，请按**Shift + Return**。
 
- ![向代码图上调用堆栈添加注释](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
+ ![向代码图上的调用堆栈添加注释](../debugger/media/debuggermap_addcomment.png)
 
 ##  <a name="UpdateMap"></a> 使用下一个调用堆栈更新图
  运行你的应用到下一个断点或单步执行某一函数。 此图将添加新的调用堆栈。
 
- ![使用下一个调用堆栈更新代码图](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
+ ![使用下一个调用堆栈更新代码图](../debugger/media/debuggermap_addclearcallstack.png)
 
 ##  <a name="AddRelatedCode"></a> 向地图添加相关的代码
  现在你已生成一个图的新增功能下一步？ 如果你正在使用 C# 或 Visual Basic，添加项，例如字段、 属性和其他方法，来跟踪代码中发生了什么情况。
 
  双击某个方法以查看其代码定义，或者使用该方法的快捷菜单。 (键盘： 选择在图上按方法**F12**)
 
- ![转到代码图上某方法的代码定义](../debugger/media/debuggermap_gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
+ ![转到代码图上某方法的代码定义](../debugger/media/debuggermap_gotocodedefinition.png)
 
  添加要在图上跟踪的项。
 
- ![显示调用堆栈代码图上某方法中的字段](../debugger/media/debuggermap_showfields.png "DebuggerMap_ShowFields")
+ ![显示调用堆栈代码图上某方法中的字段](../debugger/media/debuggermap_showfields.png)
 
 > [!NOTE]
 >  默认情况下，向图添加项还会添加父组节点（如类、命名空间和程序集）。 尽管这很有用，你可以仅仅保留图通过关闭此功能使用**包括父级**按钮在图工具栏上，或按**CTRL**添加项时。
 
- ![与调用堆栈代码图上某方法相关的字段](../debugger/media/debuggermap_showedfields.png "DebuggerMap_ShowedFields")
+ ![调用堆栈代码图上与某方法相关的字段](../debugger/media/debuggermap_showedfields.png)
 
  在这里，你可以轻松查看哪些方法使用了相同的字段。 最近添加的项显示为绿色。
 
  继续生成图以查看更多代码。
 
- ![查看使用字段的方法： 调用堆栈代码图](../debugger/media/debuggermap_findallreferences.png "DebuggerMap_FindAllReferences")
+ ![查看使用字段的方法：调用堆栈代码图](../debugger/media/debuggermap_findallreferences.png)
 
- ![在调用堆栈代码图使用字段的方法](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")
+ ![调用堆栈代码图上使用某字段的方法](../debugger/media/debuggermap_foundallreferences.png)
 
 ##  <a name="FindBugs"></a> 使用图发现 bug
  通过代码可视化，可帮助你更快发现 Bug。 例如，假设你正在调查的绘图程序中的 bug。 当你绘制一条线并尝试撤消该操作时，直到你绘制另一条线后才会发生变化。
 
  因此，可在 `clear`、`undo` 和 `Repaint` 方法中设置断点，启动调试，然后生成如下所示的图：
 
- ![向代码图添加另一个调用堆栈](../debugger/media/debuggermap_addpaintobjectcallstack.png "DebuggerMap_AddPaintObjectCallStack")
+ ![向代码图添加另一个调用堆栈](../debugger/media/debuggermap_addpaintobjectcallstack.png)
 
  你注意到图中所有用户笔势均调用 `Repaint`，但 `undo` 除外。 这可能解释`undo`不立即发挥作用。
 
  在修复此 Bug 并继续运行程序后，图中增加了从 `undo` 到 `Repaint` 的新调用：
 
- ![代码图上添加新方法调用堆栈](../debugger/media/debuggermap_addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
+ ![向代码图上的调用堆栈添加新方法调用](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
 ##  <a name="QA"></a> 问题解答
 
@@ -132,11 +133,11 @@ ms.lasthandoff: 04/26/2018
 
      默认情况下，只有你自己的代码会显示在图中。 若要查看外部代码，它在中启用**调用堆栈**窗口：
 
-     ![使用调用堆栈窗口显示外部代码](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
+     ![使用“调用堆栈”窗口显示外部代码](../debugger/media/debuggermap_callstackmenu.png)
 
      关闭或**启用 ' 仅我的代码**在 Visual Studio 调试选项：
 
-     ![使用选项对话框显示外部代码](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
+     ![使用“选项”对话框显示外部代码](../debugger/media/debuggermap_debugoptions.png)
 
 -   **更改图是否会影响代码？**
 
@@ -160,11 +161,11 @@ ms.lasthandoff: 04/26/2018
 
      你可以导出映射，将其发送给他人（如果你有 Microsoft Outlook）或保存到你的解决方案中，以便你将其签入 Team Foundation 版本控制。
 
-     ![与他人共享调用堆栈代码图](../debugger/media/debuggermap_sharewithothers.png "DebuggerMap_ShareWithOthers")
+     ![与他人共享调用堆栈代码图](../debugger/media/debuggermap_sharewithothers.png)
 
 -   **如何停止自动添加新的调用堆栈中的映射？**
 
-     选择![按钮&#45;显示调用自动堆栈代码图上](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon")图工具栏上。 若要手动添加到映射的当前调用堆栈，请按**Ctrl** + **Shift** + **`**。
+     选择![按钮&#45;显示调用自动堆栈代码图上](../debugger/media/debuggermap_automaticupdateicon.gif)图工具栏上。 若要手动添加到映射的当前调用堆栈，请按**Ctrl** + **Shift** + **`**。
 
      图中将继续进行调试时突出显示现有调用堆栈代码图上。
 
@@ -172,7 +173,7 @@ ms.lasthandoff: 04/26/2018
 
      若要获取有关某个项的详细信息，请将鼠标指针移到它，然后查看该项的工具提示。 你还可以查看在**图例**要了解每个图标的含义。
 
-     ![调用堆栈代码图上的各图标代表什么？] (../debugger/media/debuggermap_showlegend.png "DebuggerMap_ShowLegend")
+     ![调用堆栈代码图上各图标的含义](../debugger/media/debuggermap_showlegend.png)
 
  请参阅：
 

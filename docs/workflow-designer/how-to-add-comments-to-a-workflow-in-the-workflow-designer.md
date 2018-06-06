@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ba21ba5b2ce6126d29d34f5df662e9e332359ed3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d740614ed94d0fd91ba9f3e73a083791b9112919
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752022"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中给工作流添加备注
 
@@ -52,11 +53,11 @@ ms.lasthandoff: 04/26/2018
 
    批注是活动的设计器中显示。 在下面的屏幕快照中，活动设计器中显示批注“工作流中的开始活动”。
 
-   ![活动设计器中显示的批注](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+   ![活动设计器中显示的注释](../workflow-designer/media/annotationindesigner.png)
 
 1. 若要显示的活动设计器外部批注，请将鼠标悬停在活动的设计器中的批注区域，然后单击**取消固定**图标
 
-   ![活动的注释外显示批注](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+   ![活动设计器外显示的注释](../workflow-designer/media/annotationoutsidedesigner.png)
 
 ## <a name="showing-or-hiding-all-annotations"></a>显示或隐藏所有批注
 

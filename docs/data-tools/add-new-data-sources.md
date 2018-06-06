@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1c7df62a0801534f8a23f7b5cde984c75742406a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d88ba8b5648135d361a145dbc98a82dee6836e50
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745589"
 ---
 # <a name="add-new-data-sources"></a>添加新数据源
 在 Visual Studio 中的.NET data tools 的上下文中术语*数据源*指连接到数据存储和公开到.NET 应用程序的数据的.NET 对象。 Visual Studio 设计器可以使用数据源生成将数据绑定到窗体中，当拖放中的数据库对象的样板文件代码的输出**数据源**窗口。 此类数据源可以是：
@@ -39,11 +40,11 @@ ms.lasthandoff: 04/26/2018
 
  创建和编辑数据源使用**数据源配置向导**在 Windows 窗体或 Windows Presentation Foundation 应用程序。 用于实体框架，首先创建实体类，，，然后启动向导，通过选择**项目** > **添加新数据源**（本文后面的更多详细信息中所述）。
 
- ![数据源配置向导](../data-tools/media/data-source-configuration-wizard.png "数据源配置向导")
+ ![数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)
 
  创建数据源后，它将出现在**数据源**工具窗口 (Shift + Alt + D 或**视图** > **其他窗口** >  **数据源**)。 你可以将数据源从**数据源**窗口拖到窗体设计图面或控件。 这将导致样板文件代码以生成 — 显示起源于用户的数据存储区的数据的代码。 下图显示具有已放到 Windows 窗体的数据集。 如果你在应用程序上选择 F5，基础数据库中的数据将出现在窗体的控件。
 
- ![数据源拖动操作](../data-tools/media/raddata-data-source-drag-operation.png "raddata 数据源拖动操作")
+ ![数据源拖动操作](../data-tools/media/raddata-data-source-drag-operation.png)
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>数据库或数据库文件的数据源
 
@@ -53,15 +54,15 @@ ms.lasthandoff: 04/26/2018
 ### <a name="entity-classes"></a>实体类
  若要创建的实体框架模型作为数据源，第一次运行**实体数据模型向导**创建实体类 (**项目** > **添加新项** >  **ADO.NET 实体数据模型**)。
 
- ![新的实体框架模型项目项](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata 新实体框架模型项目项")
+ ![新的实体框架模型项目项](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
  选择你想要生成模型所依据的方法。
 
- ![实体数据模型向导](../data-tools/media/raddata-entity-data-model-wizard.png "raddata 实体数据模型向导")
+ ![实体数据模型向导](../data-tools/media/raddata-entity-data-model-wizard.png)
 
  添加模型作为数据源。 生成的类显示在**数据源配置向导**时选择**对象**类别。
 
- ![与实体类的数据源配置向导](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata 与实体类的数据源配置向导")
+ ![与实体类的数据源配置向导](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>服务的数据源
  若要从服务中创建数据源，运行**数据源配置向导**选择**服务**数据源类型。 这是实际上只是快捷方式**添加服务引用**对话框中，你还可以通过右键单击项目中的访问**解决方案资源管理器**并选择**添加服务引用**.

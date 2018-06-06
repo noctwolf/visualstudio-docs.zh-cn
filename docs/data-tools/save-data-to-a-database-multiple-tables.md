@@ -1,5 +1,5 @@
 ---
-title: 将数据保存到数据库 （多个表）
+title: 将数据保存到数据库（多个表）
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5be0cccd71a356a78a04c3d15cdb2f080e30c9e4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b087c9f92576edbd3f13ec89ff8716feb95be3e1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752354"
 ---
-# <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库 （多个表）
+# <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库（多个表）
 应用程序开发中最常用方案之一是在 Windows 应用程序窗体上显示数据、编辑数据并将更新后的数据发回数据库。 本演练创建可显示两个相关表的数据的窗体，并显示如何编辑记录和将更改保存回数据库。 此示例使用源自 Northwind 示例数据库的 `Customers` 和 `Orders` 表。
 
  通过调用 TableAdapter 的 `Update` 方法，可以将应用程序中的数据保存回数据库。 将表从**数据源**自动添加到窗体，将保存数据所需的代码的窗口。添加到窗体的任何其他表都要求手动添加此代码。 本演练显示了如何添加从多个表保存更新的代码。
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在 Visual Studio 中，在**文件**菜单上，选择**新建**，**项目...**.
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 经典桌面**。
+2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
 
 3. 在中间窗格中，选择**Windows 窗体应用程序**项目类型。
 
@@ -93,7 +94,7 @@ ms.lasthandoff: 04/26/2018
 
     -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-         -或-
+         或
 
     -   选择**新连接**以打开**添加/修改连接**对话框。
 

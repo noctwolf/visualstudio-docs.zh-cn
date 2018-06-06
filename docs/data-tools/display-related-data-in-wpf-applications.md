@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57a617524f4f9bc03818d30ec434b2d4604b0f3e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746541"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>WPF 应用程序中显示相关的数据
 在某些应用程序，你可能想要使用来自多个表或相关的父-子关系中的实体的数据。 例如，你可能想要显示的网格的显示从客户`Customers`表。 当用户选择特定客户时，另一个网格将显示该客户的相关订单`Orders`表。
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/26/2018
 
      下图演示了相关**订单**表**客户**中的数据集表**数据源**窗口。
 
-     ![显示关系数据源窗口](../data-tools/media/datasources2.gif "DataSources2")
+     ![显示关系的数据源窗口](../data-tools/media/datasources2.gif)
 
 ## <a name="see-also"></a>请参阅
 

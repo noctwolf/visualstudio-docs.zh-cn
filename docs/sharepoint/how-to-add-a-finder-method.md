@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1660d440b72c48787af2cf2c653a420982c8799
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7773c2c81527e065652486eb851f3c27828bf76d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767121"
 ---
-# <a name="how-to-add-a-finder-method"></a>如何：添加 Finder 方法
-  若要启用业务数据连接服务，以显示 web 部件或列表中的实体的列表，你必须创建*Finder*方法。 Finder 方法是返回的实体实例的集合的特殊方法。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
+# <a name="how-to-add-a-finder-method"></a>如何： 添加 Finder 方法
+  若要启用业务数据连接 (BDC) 服务，以显示 web 部件或列表中的实体的列表，你必须创建*Finder*方法。 Finder 方法是返回的实体实例的集合的特殊方法。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-a-finder-method"></a>若要创建 Finder 方法  
   
-1.  在 BDC 设计器中，选择实体。  
+1.  上**BDC 设计器**，选择实体。  
   
      有关详细信息，请参阅[如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
-2.  在菜单栏上，选择**视图**，**其他窗口**， **BDC 方法详细信息**。  
+2.  在菜单栏上，选择**视图** > **其他窗口** > **BDC 方法详细信息**。  
   
      **BDC 方法详细信息**窗口随即打开。 有关详细信息**BDC 方法详细信息**窗口中，请参阅[BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)。  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   

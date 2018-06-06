@@ -23,11 +23,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 442d6cd60597219c25b41f26ad8c2dc2151248ee
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747464"
 ---
 # <a name="hierarchical-update"></a>分层更新
 *分层更新*指的维护引用完整性规则时保存更新后的数据 （具有两个或多个相关表的数据集） 回数据库的过程。 *引用完整性*指由控制插入、 更新和删除相关的记录的行为在数据库中的约束的一致性规则。 例如，它是强制执行之前允许该客户的订单来创建客户记录的创建的引用完整性。  有关数据集中的关系的详细信息，请参阅[数据集中的关系](../data-tools/relationships-in-datasets.md)
@@ -39,12 +40,12 @@ ms.lasthandoff: 04/26/2018
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>启用数据集中的分层更新
  默认情况下，所有新的数据集添加列表或项目中创建的情况下启用分层更新。 通过设置打开或关闭分层更新**分层更新**到的数据集的类型化数据集属性**True**或**False**:
 
- ![分层更新设置](../data-tools/media/hierarchical-update-setting.png "分层更新设置")
+ ![分层更新设置](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>创建表之间的新关系
  若要创建两个表之间的新关系，在数据集设计器中，选择每个表的标题栏，然后右键单击并选择**添加关系**。
 
- ![分层更新添加关系菜单](../data-tools/media/hierarchical-update-add-relation-menu.png "分层更新添加关系菜单")
+ ![分层更新添加关系菜单](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
 ## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>了解 foreign key 约束，级联更新和删除
  务必了解如何 foreign key 约束，以及生成的数据集代码创建的级联在数据库中的行为。

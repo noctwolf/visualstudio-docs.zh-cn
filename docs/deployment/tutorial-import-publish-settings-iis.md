@@ -11,11 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907fecd348dba46f6d3375d2d994b04ec1cf1eb5
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 02e6ae6e06daf43a6aec08097df2b37a21d2aaa3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766666"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>发布到 IIS 应用程序导入 Visual Studio 中发布设置
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 05/24/2018
 
 * 你必须安装的 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**开发工作负荷。 对于.NET Core 应用，你还需要 **.NET 核心**工作负荷。
 
-    如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
+    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
 * 若要从 IIS 生成的发布设置文件，你必须运行 Windows Server 2012 或 Windows Server 2016 的计算机，并且你必须正确配置的 IIS Web 服务器角色。 此外必须安装 ASP.NET 4.5 或 ASP.NET Core。 有关 ASP.NET 核心，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 为 ASP.NET 4.5，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
@@ -66,17 +67,17 @@ ms.lasthandoff: 05/24/2018
 
 ## <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>在 Windows Server 上的 IIS 中创建的发布设置文件
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
+[!INCLUDE [create-publish-settings-iis](../deployment/includes/create-publish-settings-iis.md)]
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>导入 Visual Studio 中的发布设置和部署
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+[!INCLUDE [import-publish-settings](../deployment/includes/import-publish-settings-vs.md)]
 
 应用程序已成功部署后，它应自动启动。 如果未启动从 Visual Studio，请在 IIS 中启动应用程序。 对于 ASP.NET 核心，你需要确保应用程序池字段**DefaultAppPool**设置为**无托管代码**。
 
 ## <a name="next-steps"></a>后续步骤
 
-在本教程中，创建发布设置文件、 导入 Visual Studio 和 ASP.NET 应用程序部署到 IIS。
+在本教程中，创建发布设置文件、 导入 Visual Studio 和 ASP.NET 应用程序部署到 IIS。 你可能想要在 Visual Studio 中其他发布选项的概述。
 
 > [!div class="nextstepaction"]
 > [初探部署](../deployment/deploying-applications-services-and-components.md)

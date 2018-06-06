@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8b2fc6b7a729be412b48c331eb5029df617d35c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c9fd9337682abbcd7325a849b95846be3af118d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747175"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>演练： 在 Windows 窗体中创建一个简单的 WCF 服务
 本演练演示如何创建一个简单[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]服务并进行测试，然后从 Windows 窗体应用程序访问它。
@@ -37,12 +38,12 @@ ms.lasthandoff: 04/26/2018
 
 2.  在**新项目**对话框框中，展开**Visual Basic**或**Visual C#** 节点，然后单击**WCF**后, 跟**WCF服务库**。 单击**确定**以打开该项目。
 
-     ![WCF 服务库项目](../data-tools/media/wcf1.PNG "wcf1")
+     ![“WCF 服务库”项目](../data-tools/media/wcf1.png)
 
     > [!NOTE]
     >  这将创建可以测试和访问的工作服务。 以下两个步骤演示您可以如何修改使用不同数据类型的默认方法。 在实际应用中，您还会向服务中添加您自己的函数。
 
-3.  ![IService1 文件](../data-tools/media/wcf2.png "wcf2")
+3.  ![IService1 文件](../data-tools/media/wcf2.png)
 
      在**解决方案资源管理器**、 双击 IService1.vb 或 IService1.cs 并找到以下行：
 
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/26/2018
 
      在上面的代码中，请注意`<OperationContract()>`或`[OperationContract]`属性。 这些属性是由服务公开的任何方法所必需的。
 
-4.  ![Service1 文件](../data-tools/media/wcf3.png "wcf3")
+4.  ![Service1 文件](../data-tools/media/wcf3.png)
 
      在**解决方案资源管理器**、 双击 Service1.vb 或 Service1.cs 并找到以下行：
 
@@ -76,15 +77,15 @@ ms.lasthandoff: 04/26/2018
 
 2.  在**WCF 测试客户端**窗体中，双击**getdata （)** 方法下的**IService1**。 **GetData**将显示选项卡。
 
-     ![GetData&#40; &#41;方法](../data-tools/media/wcf4.png "wcf4")
+     ![GetData&#40; &#41;方法](../data-tools/media/wcf4.png)
 
 3.  在**请求**框中，选择**值**字段，并键入`Hello`。
 
-     ![值字段](../data-tools/media/wcf5.png "wcf5")
+     ![“值”字段](../data-tools/media/wcf5.png)
 
 4.  单击**Invoke**按钮。 如果**安全警告**显示对话框中，单击**确定**。 结果将显示在**响应**框。
 
-     ![在响应中的结果](../data-tools/media/wcf6.png "wcf6")
+     ![“响应”框中的结果](../data-tools/media/wcf6.png)
 
 5.  上**文件**菜单上，单击**退出**关闭测试窗体。
 
@@ -96,13 +97,13 @@ ms.lasthandoff: 04/26/2018
 
 2.  在**新项目**对话框框中，展开**Visual Basic**或**Visual C#** 节点，然后选择**Windows**，然后选择**Windows 窗体应用程序**。 单击**确定**以打开该项目。
 
-     ![Windows 窗体应用程序项目](../data-tools/media/wcf7.png "wcf7")
+     ![Windows 窗体应用程序项目](../data-tools/media/wcf7.png)
 
 3.  右键单击**WindowsApplication1**单击**添加服务引用**。 **添加服务引用**对话框将出现。
 
 4.  在**添加服务引用**对话框中，单击**发现**。
 
-     ![添加服务引用对话框中](../data-tools/media/wcf8.png "wcf8")
+     ![“添加服务引用”对话框](../data-tools/media/wcf8.png)
 
      **Service1**将显示在**服务**窗格。
 
@@ -114,7 +115,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  从**工具箱**，拖动`TextBox`控件，`Label`控件，和一个`Button`拖到窗体控件。
 
-     ![将控件添加到窗体](../data-tools/media/wcf9.png "wcf9")
+     ![将控件添加到窗体](../data-tools/media/wcf9.png)
 
 3.  双击 `Button` 并将下面的代码添加到 `Click` 事件处理程序：
 
@@ -125,7 +126,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  按**F5**以运行该项目。 输入一些文本，然后单击按钮。 该标签将显示“输入：”和您输入的文本。
 
-     ![窗体显示结果](../data-tools/media/wcf10.png "wcf10")
+     ![显示结果的表单](../data-tools/media/wcf10.png)
 
 ## <a name="see-also"></a>请参阅
 

@@ -18,32 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 622ac8b6fd9f003c8bfccbd953f4b5f51cd00332
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766280"
 ---
-# <a name="developing-sharepoint-solutions"></a>开发 SharePoint 解决方案
+# <a name="develop-sharepoint-solutions"></a>开发 SharePoint 解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中可提供多种 SharePoint 项目类型模板，用于创建 SharePoint 站点和站点元素。 有关可用的项目类型的列表，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是对 SharePoint 项目元素和属性的说明。  
   
  有关 SharePoint 2013 和 SharePoint 外接程序的信息，请参阅 [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) 和 [构建 SharePoint 外接程序](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx)。  
   
-## <a name="elements-of-a-sharepoint-project"></a>SharePoint 项目元素  
+## <a name="elements-of-a-sharepoint-project"></a>SharePoint 项目元素
  SharePoint 项目中的节点被称为 *SharePoint 项*。 SharePoint 项也可能包含一个或多个子文件，称为*SharePoint 项文件*，如[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]配置文件和.aspx 窗体等等。  
   
  可以使用“空项目”  模板创建空 SharePoint 项目，然后手动添加项目项，而不是使用已填充项目项文件的项目模板创建项目。 SharePoint 项目还可以根据需要包含一个或多个功能文件（用于在 SharePoint 中的激活）和一个向其中分发项目的包文件。  
   
-### <a name="special-nodes"></a>特殊节点  
+### <a name="special-nodes"></a>特殊节点
  每个 SharePoint 项目都包含两个无法从项目中重命名、删除、剪切、复制，或拖放的节点。 这些节点如下所示：  
   
--   功能  
-  
+-   功能    
 -   package  
   
  即使没有定义项目的功能或包，这两个节点始终都显示在所有 SharePoint 项目中。  
   
-#### <a name="features-node"></a>功能节点  
+#### <a name="features-node"></a>功能节点
  “功能”  节点包含一个或多个 SharePoint 项目功能。 功能是 SharePoint 扩展的容器。 将功能部署到 SharePoint 服务器后，它可以包括在站点定义中或由 SharePoint 站点上的 SharePoint 管理员来单独激活。 有关详细信息，请参阅 [使用功能](http://go.microsoft.com/fwlink/?LinkID=147704)。  
   
  当将某个项（如，内容类型或列表实例）添加到 SharePoint 项目时，那么该项会添加到“功能”  节点的一个功能中。 项的范围决定了将其添加到新功能还是现有功能。 如果新项与现有功能具有相同的范围，那么将此项添加到该功能中。 否则，将该项添加到新功能中。  
@@ -52,17 +52,17 @@ ms.lasthandoff: 05/17/2018
   
  当将某个功能添加到 SharePoint 项目时，此功能会作为节点显示在“解决方案资源管理器”  中，默认名称为 Feature*x*.feature，其中的 *x* 是唯一的编号。 将某个功能部署到 SharePoint Server 后，SharePoint 管理员可以将其激活，使其可用于 SharePoint 站点用户。  
   
-#### <a name="package-node"></a>包节点  
+#### <a name="package-node"></a>包节点
  “包”  节点只包含一个作为 SharePoint 项目分发机制的文件。 此文件，名为*解决方案包*，是。基于 CAB 的使用。WSP 扩展。 解决方案包是一种可部署的且可重用的文件，其中包含一组可应用于 SharePoint 站点的并且可以单独启用或禁用的功能、站点定义和程序集。 **包**节点也始终包含名为 Package.wspdef 的文件[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]包定义文件。 一旦将包部署到运行 SharePoint 的服务器，SharePoint 管理员就可以对其进行安装并激活其功能。  
   
  你可以查看或更改包的内容在包设计器，通过双击包节点或通过打开其快捷菜单，然后选择**打开**。 有关详细信息，请参阅[创建 SharePoint 解决方案包](../sharepoint/creating-sharepoint-solution-packages.md)。  
   
-## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint 项目和项目项属性  
+## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint 项目和项目项属性
  与其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 项目一样，SharePoint 项目在“属性”窗口和“属性”页中显示属性。 显示的属性取决于所选择的节点。  
   
  当在“解决方案资源管理器” 中选择 SharePoint 项目、项目项或项目项文件节点时，将在“属性”窗口或“属性”页显示以下属性：  
   
-### <a name="project-properties"></a>项目属性  
+### <a name="project-properties"></a>项目属性
   
 |属性名|描述|  
 |-------------------|-----------------|  
@@ -82,7 +82,7 @@ ms.lasthandoff: 05/17/2018
   
  当选择 SharePoint 项文件（如工作流或功能节点中的一项功能）时，“属性”窗口将显示以下属性：  
   
-### <a name="project-item-properties"></a>项目项属性  
+### <a name="project-item-properties"></a>项目项属性
   
 |属性名|描述|  
 |-------------------|-----------------|  
@@ -93,7 +93,7 @@ ms.lasthandoff: 05/17/2018
 |项目输出引用|指定项目项运行所需的程序集等依赖项。 有关详细信息，请参阅[提供打包和部署信息在项目项中](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
 |安全控件项|指定可以让不受信任的用户安全编辑的控件。 有关详细信息，请参阅[提供打包和部署信息在项目项中](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
   
-### <a name="project-item-file-properties"></a>项目项文件属性  
+### <a name="project-item-file-properties"></a>项目项文件属性
   
 |属性名|描述|  
 |-------------------|-----------------|  
@@ -104,11 +104,11 @@ ms.lasthandoff: 05/17/2018
 |部署位置|该文件在 SharePoint 服务器中的完全限定路径。 此路径由部署根和部署路径的子属性组成。|  
 |部署路径|在 SharePoint Server 文件，如 Workflow1 文件的相对路径\\。 通过串联 *Deployment Path* 值与 *Deployment Root* 值的末端，创建文件的完全限定路径。<br /><br /> 选择的值*RootFile*为*部署类型*属性更改*部署根*属性为 {SharePointRoot}\\，这会导致在完全限定路径的 {SharePointRoot} \Workflow1\\。 有关详细信息，请参阅[打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。|  
 |Deployment Root|字符串。 将文件部署到 SharePoint Server 中的根文件夹。 例如，{SharePointRoot} \Template\Features\\{FeatureName}\\。<br /><br /> *Deployment Type* 设置决定 *Deployment Root* 属性的值。|  
-|RootFile|文件的部署类型，可决定 *Deployment Root* 值。 可以是以下值之一：<br /><br /> NoDeployment:\<没有值 ><br /><br /> ElementManifest: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> ElementFile: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> TemplateFile: {SharePointRoot} \Template\\<br /><br /> RootFile: {SharePointRoot}\\<br /><br /> GlobalResource: {SharePointRoot} \Resources\\<br /><br /> ClassResource: {ClassResourcePath}\\<br /><br /> 有关详细信息，请参阅<xref:Microsoft.VisualStudio.SharePoint.DeploymentType>。|  
+|RootFile|文件的部署类型，可决定 *Deployment Root* 值。 可以是以下值之一：<br /><br /> NoDeployment: *\<没有值 >*<br /><br /> ElementManifest: *{SharePointRoot} \Template\Features\\{FeatureName}*\\<br /><br /> ElementFile: *{SharePointRoot} \Template\Features\\{FeatureName}\\*<br /><br /> TemplateFile: *{SharePointRoot} \Template\\*<br /><br /> RootFile: *{SharePointRoot}\\*<br /><br /> GlobalResource: *{SharePointRoot} \Resources\\*<br /><br /> ClassResource: *{ClassResourcePath}\\*<br /><br /> 有关详细信息，请参阅<xref:Microsoft.VisualStudio.SharePoint.DeploymentType>。|  
 |文件名|项文件的文件或文件夹名称|  
 |完整路径|项的文件的位置。 （只读。）|  
   
-## <a name="related-topics"></a>相关主题  
+## <a name="related-topics"></a>相关主题
   
 |标题|描述|  
 |-----------|-----------------|  
@@ -131,7 +131,7 @@ ms.lasthandoff: 05/17/2018
 |[SharePoint 解决方案的安全性](../sharepoint/security-for-sharepoint-solutions.md)|描述有关在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中开发 SharePoint 解决方案的安全注意事项。|  
 |[URL 选取器对话框&#40;Visual Studio 中的 SharePoint 开发&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|描述将路径引用添加到项目中或在本地 SharePoint 服务器上所使用的对话框。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [入门&#40;Visual Studio 中的 SharePoint 开发&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cadfffb2dbf977e23a0edb082065125aea4f5940
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddfdc09f27d5c94445064c064772e812779dcf08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767772"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>如何：添加和移除附加程序集
+# <a name="how-to-add-and-remove-additional-assemblies"></a>如何： 添加和移除附加程序集
   如果 SharePoint 包依赖于其他程序集的功能或数据，你可以将程序集添加到你的解决方案包 (.wsp)。 这样一来，SharePoint 服务器将确保自定义程序集随包一起安装。  
   
  你还可以添加和更改的安全控件和类使用的程序集相关联的资源文件。  
@@ -112,9 +113,8 @@ ms.lasthandoff: 04/16/2018
   
 3.  选择删除键。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [创建 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)   
  [如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [如何：在 SharePoint 功能中添加和删除项](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
   

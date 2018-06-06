@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35733a737f10fccab7d9fd6cab350478182b2259
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 329214cded185a15fa1ef21b162955957523f5fc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746996"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>演练：创建 N 层数据应用程序
 *N 层*数据应用程序是应用程序访问数据且分为多个逻辑层，或*层*。 通过将应用程序组件分离到相对独立的层中，可以提高应用程序的可维护性和可伸缩性。 该结构之所以具有这种优点，是因为它有利于采用可应用于单个层而无需重新设计整个解决方案的新技术。 N 层体系结构包括一个表示层、一个中间层和一个数据层。 中间层通常包括数据访问层、业务逻辑层和共享组件（例如身份验证和验证）。 数据层则包括关系数据库。 N 层应用程序通常将敏感信息存储在中间层的数据访问层中，目的是将它们与访问表示层的最终用户隔离。 有关详细信息，请参阅[N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/26/2018
 
 -   编写代码以填充数据表。
 
-![视频链接](../data-tools/media/playvideo.gif "PlayVideo")本主题的视频版本，请参阅[视频帮助： 创建 N 层数据应用程序](http://go.microsoft.com/fwlink/?LinkId=115188)。
+![视频链接](../data-tools/media/playvideo.gif)本主题的视频版本，请参阅[视频帮助： 创建 N 层数据应用程序](http://go.microsoft.com/fwlink/?LinkId=115188)。
 
 ## <a name="prerequisites"></a>系统必备
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在 Visual Studio 中，在**文件**菜单上，选择**新建**，**项目...**.
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 经典桌面**。
+2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
 
 3. 在中间窗格中，选择**类库**项目类型。
 
@@ -121,7 +122,7 @@ ms.lasthandoff: 04/26/2018
 
      如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-     -或-
+     或
 
      选择**新连接**以打开**添加连接**对话框。
 
@@ -289,7 +290,7 @@ ms.lasthandoff: 04/26/2018
 
 1.  右键单击解决方案资源管理器中的解决方案，然后选择**添加**，**新项目...**.
 
-2.  在**新项目**对话框中，在左侧的窗格中，选择**Windows 经典桌面**。 在中间窗格中，选择**Windows 窗体应用程序**。
+2.  在**新项目**对话框中，在左侧的窗格中，选择**Windows 桌面**。 在中间窗格中，选择**Windows 窗体应用程序**。
 
 3.  将项目**PresentationTier**单击**确定**。
 

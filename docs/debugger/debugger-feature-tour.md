@@ -17,7 +17,7 @@ ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34691087"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>先来看一下 Visual Studio 调试器

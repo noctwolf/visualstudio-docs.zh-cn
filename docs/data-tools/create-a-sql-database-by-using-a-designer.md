@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 53f34fbed4a2067836c5f2c7a8d4bf8aa6c09d29
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34690921"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747035"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>创建数据库并在 Visual Studio 中添加表
 可以使用 Visual Studio 创建和更新 SQL Server Express LocalDB 中的本地数据库文件。 你还可以通过执行 TRANSACT-SQL 语句中的创建数据库**SQL Server 对象资源管理器**Visual Studio 中的工具窗口。 在本主题中，我们将创建的.mdf 文件，并使用表设计器中添加表和键。
@@ -36,7 +36,7 @@ ms.locfileid: "34690921"
 
 3.  在项模板列表中，向下滚动并选择**基于服务的数据库**。
 
-     ![项目模板对话框](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
+     ![“项模板”对话框](../data-tools/media/raddata-vsitemtemplates.png)
 
 4.  将数据库命名**SampleDatabase**，然后选择**添加**按钮。
 
@@ -95,7 +95,7 @@ ms.locfileid: "34690921"
 
     将显示如下所示的内容：
 
-    ![表设计器](../data-tools/media/raddata-table-designer.png "raddata 表设计器")
+    ![表设计器](../data-tools/media/raddata-table-designer.png)
 
 7.  在左上角的**表设计器**，选择**更新**按钮。
 
@@ -130,7 +130,7 @@ ms.locfileid: "34690921"
 ### <a name="to-create-a-foreign-key"></a>创建外键
 1.  在网格右侧的上下文窗格中，打开快捷菜单**外键**，然后选择**添加新外键**，如下图所示。
 
-     ![表设计器中添加外键](../data-tools/media/foreignkey.png "ForeignKey")
+     ![在表设计器中添加外键](../data-tools/media/foreignkey.png)
 
 2.  在文本框中显示，替换**ToTable**与`Customers`。
 

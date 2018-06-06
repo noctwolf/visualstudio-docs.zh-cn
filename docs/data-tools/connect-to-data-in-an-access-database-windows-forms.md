@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746811"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>连接到 Access 数据库 （Windows 窗体） 中的数据
 可以通过使用 Visual Studio 连接到 Access 数据库 （.mdf 文件或.accdb 文件）。 在定义此连接后，数据将显示在**数据源**窗口。 可从该位置将表或视图拖动到窗体上。
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  上**视图**菜单上，选择**其他窗口** > **数据源**。
 
-     ![查看其他 Windows 数据源](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![查看其他 Windows 数据源](../data-tools/media/viewdatasources.png)
 
 3.  在 **“数据源”** 窗口中，单击 **“添加新数据源”**。
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 
 9. 返回**添加连接**对话框中，选择**Microsoft Office 12.0 Access 数据库引擎 OLE DB 提供程序**从**OLE DB 访问接口**下拉列表。
 
-     ![OLE DB 提供程序 Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![OLE DB 提供程序 Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
 
      > [!NOTE]
      >  如果看不到**Microsoft Office 12.0 Access 数据库引擎 OLE DB 提供程序**OLE DB 提供程序下拉列表中，你可能需要安装[2007 Office System 驱动程序： 数据连接组件](https://www.microsoft.com/download/confirmation.aspx?id=23734)。
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  上**视图**菜单上，选择**其他窗口** > **数据源**。
 
-     ![查看其他 Windows 数据源](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![查看其他 Windows 数据源](../data-tools/media/viewdatasources.png)
 
 3.  在 **“数据源”** 窗口中，单击 **“添加新数据源”**。
 
@@ -103,7 +104,7 @@ ms.lasthandoff: 04/26/2018
 
 8.  在**数据库文件名**，指定的路径和你想要连接到，然后选择的.mdb 文件的名称**确定**。
 
-     ![添加连接访问数据库文件](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")
+     ![添加连接访问数据库文件](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. 选择**下一步**上**选择你的数据连接**页。
 

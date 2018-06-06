@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a398450fdf2be1dd3280c96c3b55529e14af51d4
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 110cad9883cbb129368dac4d481443a9f5d9813c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34693937"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751584"
 ---
 # <a name="xml-schema-explorer"></a>XML 架构资源管理器
 
@@ -60,7 +60,7 @@ ms.locfileid: "34693937"
 
 下面是树结构的示例：
 
-![XML 架构资源管理器](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")
+![XML 架构资源管理器](../xml-tools/media/xmlschemaexplorer.gif)
 
 ## <a name="selection-and-activation"></a>选择和激活
  若要突出显示并选择节点，请在架构资源管理器中单击一次。

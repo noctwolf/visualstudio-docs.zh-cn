@@ -13,16 +13,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b3dec7405e6d9964a1e622d5d872ad31efcd541d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ab473e4835e4ba6467a9af83e69bfabc43e8236
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748720"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>域特定语言工具用户界面的概述
 首次打开中的域特定语言工具 （DSL 工具） 解决方案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，用户界面将类似于下图。
 
- ![dsl 设计器](../modeling/media/dsl_designer.png "dsl_designer")
+ ![dsl 设计器](../modeling/media/dsl_designer.png)
 
  下表介绍了如何使用 UI 的部分。
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="the-domain-model-diagram"></a>域模型图
  域模型图分为两个部分。 关系图的一侧显示模型中的元素和关系。 在另一侧显示模型的方式显示，并包含用于显示元素和属性的模型关系图的形状。 下图显示关系图的元素。
 
- ![具有泳道的 dsl 设计器](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![具有泳道的 dsl 设计器](../modeling/media/dsl_desinger.png)
 
  下表介绍了某些域模型关系图的元素。
 

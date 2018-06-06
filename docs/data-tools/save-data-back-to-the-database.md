@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6ecbf8e67b2c8db1b33fa1c5228d9d94f98e48c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691129"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748054"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 数据集是内存中副本的数据。 如果修改此数据，最好将这些更改保存回数据库。 执行了此三种方式之一的操作：
@@ -60,7 +60,7 @@ ms.locfileid: "34691129"
 
  如果执行操作将更改发送回数据库，则需要第二个步骤。 如果你未使用数据绑定控件，然后你必须手动调用 Update 方法的同一个 TableAdapter （或数据适配器），用于填充数据集。 但是，若要将数据从一个数据源移到另一个，或更新多个数据源，还可以使用不同的适配器，例如。 如果你不使用数据绑定，并将保存为相关表的更改，你必须手动实例化自动生成 TableAdapterManager 类的变量，然后调用其 UdpateAll 方法。
 
- ![Visual Basic 数据集更新](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")两阶段更新过程和 DataRowVersion 在成功的更新中的角色
+ ![Visual Basic 数据集更新](../data-tools/media/vbdatasetupdates.gif)两阶段更新过程和 DataRowVersion 在成功的更新中的角色
 
  数据集包含的表，其中包含行的集合的集合。 如果你想要以后更新基础数据源，你必须添加或删除行时的 DataTable.DataRowCollection 属性上使用方法。 这些方法执行更新数据源具有需要更改跟踪。 如果你调用 RemoveAt 集合行属性，请删除不会将传送回数据库。
 

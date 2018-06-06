@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c46e84caba16abbe9ba9d166076d1ee48d34fd94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5424fc8e3bdf80f5a6f19086f4e73360af95dad7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748405"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>使用存储查看器进行调试
 使用存储查看器中，你可以检查的状态*存储*由[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]。 存储查看器显示所有在特定的存储区，以及元素的属性和元素之间的链接中的域模型元素。
@@ -44,7 +45,7 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ### <a name="using-store-viewer"></a>使用应用商店查看器
  当存储查看器打开时，无模式 Windows 窗体将显示一个窗口，如下图所示。
 
- ![](../modeling/media/storeviewer2.png "storeviewer2")存储查看器
+ ![](../modeling/media/storeviewer2.png) 应用商店查看器
 
  应用商店查看器有三个窗格： 右上窗格中，左窗格中，右下方窗格。 左窗格中是树视图中的类型`DomainDataDirectory`存储区的成员。 如果你扩展分区节点并单击一个元素，在右上窗格中会显示元素的属性。 如果该元素已链接到其他元素，右下方窗格中出现的其他元素。 如果双击右下方窗格中的某个元素时，在左窗格中会突出显示元素。
 

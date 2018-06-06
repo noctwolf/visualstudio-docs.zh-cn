@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4100066d6c6b86bf319cad3bc123098835807acb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747386"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>将控件绑定到 Visual Studio 中的数据
 通过将数据绑定到控件，可以向应用程序的用户显示数据。 你可以通过将某些项从创建这些数据绑定控件**数据源**窗口拖到设计图面或在 Visual Studio 中的图面上的控件。
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/26/2018
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
 |数据集|是|是|否|
 |实体数据模型|是<sup>1</sup>|是|是|
-|LINQ to SQL 类|不<sup>2</sup>|不<sup>2</sup>|不<sup>2</sup>|
+|LINQ to SQL 类|否<sup>2</sup>|否<sup>2</sup>|否<sup>2</sup>|
 |服务 (包括[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，WCF 服务和 web 服务)|是|是|是|
 |对象|是|是|是|
 |SharePoint|是|是|是|
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="data-sources-window"></a>“数据源”窗口
  数据源形式提供给你的项目中的项**数据源**窗口。 此窗口可见时，或者从访问**视图**菜单上，在窗体设计图面是你的项目中的活动窗口时。 可以将项拖动来创建控件绑定到基础数据，此窗口中，并还可以通过右键单击配置数据源。
 
- ![数据源窗口](../data-tools/media/raddata-data-sources-window.png "raddata 数据源窗口")
+ ![“数据源”窗口](../data-tools/media/raddata-data-sources-window.png)
 
  将出现在每种数据类型**数据源**窗口中，创建一个默认控件是当将项拖动到设计器。 中的项拖之前**数据源**窗口中，你可以更改将创建的控件。 有关详细信息，请参阅[设置从数据源窗口拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 

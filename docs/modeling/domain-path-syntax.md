@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: de364760b5d7446b050cd8931ea2e95867b88e81
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749539"
 ---
 # <a name="domain-path-syntax"></a>域路径语法
 DSL 定义使用类似 XPath 的语法在模型中查找特定元素。
@@ -26,7 +27,7 @@ DSL 定义使用类似 XPath 的语法在模型中查找特定元素。
 
  *RelationshipName.PropertyName/!Role*
 
- ![CommentReferencesSubjects 引用关系](../modeling/media/dsl_reference.png "dsl_reference")
+ ![CommentReferencesSubjects 引用关系](../modeling/media/dsl_reference.png)
 
  该语法将遍历模型树。 例如，域关系**CommentReferencesSubjects**在上图中具有**主题**角色。 路径段 **/ ！Subjectt**指定路径完成元素通过访问**主题**角色。
 

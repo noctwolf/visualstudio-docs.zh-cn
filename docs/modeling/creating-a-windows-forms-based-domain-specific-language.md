@@ -9,16 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ce2fa2f067b72d051aa21eba0db2b8f0eda8b43f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4cfe9549880646fe9ba0a487045b005366c075
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749471"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的域特定语言
 可以使用 Windows 窗体以显示域特定语言 (DSL) 模型，而不是使用 DSL 图的状态。 本主题将指导你将 Windows 窗体绑定到 DSL、 使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK。
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL Wpf 2") DSL 实例，显示 Windows 窗体 UI 和模型资源管理器。
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) DSL 实例，显示 Windows 窗体 UI 和模型资源管理器。
 
 ## <a name="creating-a-windows-forms-dsl"></a>创建 Windows 窗体 DSL
  **最小 WinForm 设计器**DSL 模板将创建最小 DSL，你可以对其进行修改以满足您自己的要求。
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="updating-the-dsl-definition"></a>更新 DSL 定义
  本演练中使用 DSL 定义以下。
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 #### <a name="to-update-the-dsl-definition"></a>若要更新 DSL 定义
 
@@ -127,7 +128,7 @@ ms.lasthandoff: 04/26/2018
 
      属性和关系的模型类出现在数据源窗口。
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
 #### <a name="to-connect-your-model-to-a-form"></a>若要向窗体连接您的模型
 
@@ -172,7 +173,7 @@ ms.lasthandoff: 04/26/2018
 
 -   它可确保，当用户选择行，则属性窗口将显示相应的模型元素，而不是数据网格行的属性。
 
- ![DslWpf4](../modeling/media/dslwpf4.png "DslWpf4")架构的数据源和视图之间的链接。
+ ![DslWpf4](../modeling/media/dslwpf4.png)架构的数据源和视图之间的链接。
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>若要完成到 DSL 绑定
 
@@ -236,7 +237,7 @@ ms.lasthandoff: 04/26/2018
 
 1.  在 FarmControl.cs 设计视图中，选择简单字段，如名称、 大小或 IsOrganic。
 
-2.  在属性窗口中，展开**DataBindings**并打开**（高级）**。
+2.  在属性窗口中，展开**DataBindings**并打开 **（高级）**。
 
      在**格式设置和高级绑定**对话框下**数据源更新模式**，选择**OnPropertyChanged**。
 
@@ -301,7 +302,7 @@ ms.lasthandoff: 04/26/2018
 
      你应能够编辑数据网格视图中的元素的名称。 此外可以在从此处删除它。
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>有关用于添加一个元素的代码
  为新的元素按钮，下面的备用代码是稍微简单一些。

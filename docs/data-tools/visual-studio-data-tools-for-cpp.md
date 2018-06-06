@@ -12,11 +12,12 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: fa732c8b2fbf55b1cb2c8b80a06cf1ab18d6b50c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2e74fca7109a19c789215424526eef6190b568c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752393"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>适用于 c + + 的 visual Studio data tools
 
@@ -34,11 +35,11 @@ ms.lasthandoff: 04/26/2018
 
 3.  使用 SQL Server Management Studio 将解压缩的 Northwind.mdf 文件附加到 localDB。 SQL Server Management Studio 启动时，连接到 (localdb) \MSSQLLocalDB。
 
-     ![使用 SSMS 连接对话框](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS 连接对话框")
+     ![使用 SSMS 连接对话框](../data-tools/media/raddata-ssms-connect-dialog.png)
 
      右键单击左窗格中中的 localdb 节点，然后选择**附加**。
 
-     ![SSMS 附加数据库](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS 附加数据库")
+     ![SSMS 附加数据库](../data-tools/media/raddata-ssms-attach-database.png)
 
 4.  下载 ODBC Windows SDK 示例中，并将其解压缩到新位置。 此示例演示用于连接到数据库和问题查询和命令的基本 ODBC 命令。 你可以了解有关这些函数中[Microsoft 开放式数据库连接 (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc)。 当你首次加载的解决方案 （它是在 c + + 文件夹） 时，将提供 Visual Studio 升级到当前版本的 Visual Studio 的解决方案。 单击 **“是”**。
 
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/26/2018
 
 8.  按 F5 生成并运行该应用程序。 你应看到一个对话框会提示你输入的数据库的驱动程序中。 输入`(localdb)\MSSQLLocalDB`，并检查**使用信任连接**。 Press **OK**. 你应看到消息，指示成功的连接的控制台。 你应看到命令提示符下可以在其中键入 SQL 语句中。 下面的屏幕显示的示例查询和结果：
 
-     ![ODBC 示例查询输出](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC 示例查询输出")
+     ![ODBC 示例查询输出](../data-tools/media/raddata-odbc-sample-query-output.png)
 
 ## <a name="see-also"></a>请参阅
 

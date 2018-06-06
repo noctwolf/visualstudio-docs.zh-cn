@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 185876ec788bc3fcba917df77a7044a395bc8375
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 307759881c6795d33dfb5a1c1425402aece05efb
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766609"
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：向 Finder 方法中添加筛选器描述符
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何： 向 Finder 方法中添加筛选器描述符
   筛选器描述符启用模型的使用者执行之前，将值传递给方法。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
  一个常见方案是在 SharePoint 中的用户想要检索的外部内容类型与某个条件匹配的实例。 可以通过将筛选器描述符添加到 Finder 方法支持此方案。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在**方法详细信息**窗口中，选择参数的类型描述符。  
   
-3.  在菜单栏上，选择**视图**，**属性窗口**。  
+3.  在菜单栏上，选择**视图** > **属性窗口**。  
   
 4.  在**属性**窗口中，设置**类型名称**适合于筛选器的数据类型的属性。  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
   
      下方会显示一个新的筛选器描述符**筛选器描述符**节点。  
   
-7.  在菜单栏上，选择**视图**，**属性窗口**。  
+7.  在菜单栏上，选择**视图** > **属性窗口**。  
   
 8.  在**属性**窗口中，选择**类型**属性。  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅
  [如何： 添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
  [如何： 添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
  [如何： 向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   

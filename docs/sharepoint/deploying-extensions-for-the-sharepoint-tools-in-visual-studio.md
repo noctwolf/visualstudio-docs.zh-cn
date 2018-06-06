@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7ed6b037d04e867b2d94a28fef5ecb6760e39dc
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dba88bde834ddf8e5eba938325b21434560827a1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767255"
 ---
-# <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>在 Visual Studio 中部署 SharePoint 工具扩展
-  若要部署 SharePoint 工具扩展，创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含扩展程序集，以及你想要随此扩展分发的任何其他文件的扩展 (VSIX) 包。 VSIX 包是一个压缩的文件，遵循开放式打包约定 (OPC) 标准。 VSIX 包具有.vsix 扩展名。  
+# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署 Visual Studio 中的 SharePoint 工具扩展
+  若要部署 SharePoint 工具扩展，创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含扩展程序集，以及你想要随此扩展分发的任何其他文件的扩展 (VSIX) 包。 VSIX 包是一个压缩的文件，遵循开放式打包约定 (OPC) 标准。 VSIX 包具有 *.vsix*扩展。  
   
  创建 VSIX 包后，其他用户可以运行要安装扩展的.vsix 文件。 当用户安装你的扩展时，所有文件将安装到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions 文件夹。 若要将扩展部署，你可以上载到 VSIX 包[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)网站，也可以将包分发给您的客户以某种其他方式，如宿主的网络共享或某些其他网站上的包。  
   
@@ -30,7 +31,7 @@ ms.lasthandoff: 05/22/2018
   
  你可以通过创建 VSIX 包**VSIX 项目**模板 Visual Studio 中，或者您可以手动创建 VSIX 包。  
   
-## <a name="using-vsix-projects-to-create-vsix-packages"></a>使用 VSIX 项目创建 VSIX 包  
+## <a name="use-vsix-projects-to-create-vsix-packages"></a>使用 VSIX 项目来创建 VSIX 包
  你可以使用**VSIX 项目**提供 Visual Studio SDK 创建 VSIX 包，为 SharePoint 工具扩展的模板。 使用 VSIX 项目基础上手动创建 VSIX 包提供了以下几个好处：  
   
 -   生成项目时，visual Studio 自动生成 VSIX 包。 为你完成任务，例如向包添加部署文件和创建包的 [Content_Types].xml 文件。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/22/2018
   
  有关使用 VSIX 项目的详细信息，请参阅[VSIX 项目模板](/visualstudio/extensibility/vsix-project-template)。  
   
-### <a name="organizing-your-projects"></a>组织你的项目  
+### <a name="organize-your-projects"></a>组织你的项目
  默认情况下，VSIX 项目仅生成 VSIX 包，而非程序集。 因此，你通常也不实现 SharePoint 工具扩展的 VSIX 项目中。 你通常使用至少两个项目：  
   
 -   一个 VSIX 项目。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/22/2018
   
  如果你在同一 Visual Studio 解决方案中包含的所有项目，你可以修改在 VSIX 项目以包括类库项目的生成输出 source.extension.vsixmanifest 文件。  
   
-### <a name="editing-the-vsix-manifest"></a>编辑 VSIX 清单  
+### <a name="edit-the-vsix-manifest"></a>编辑 VSIX 清单
  你必须编辑 source.extension.vsixmanifest 文件中在 VSIX 项目，若要包括你想要包含在你扩展中的所有项的项。 当从其快捷菜单中打开 source.extension.vsixmanifest 文件中时，该文件将显示用于编辑 XML 文件中提供的用户界面的设计器中。 有关详细信息，请参阅[VSIX 清单设计器](/visualstudio/extensibility/vsix-manifest-designer)。  
   
  必须将条目添加到 source.extension.vsixmanifest 文件中对以下各项：  
@@ -167,7 +168,7 @@ ms.lasthandoff: 05/22/2018
   
      *YourTemplateName*.zip  
   
-     例如，如果你有一个名为 ContosoCustomAction.zip 支持英语 （美国） 区域设置的项模板，则完整的路径可能 ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip。  
+     例如，如果你有一个名为 ContosoCustomAction.zip 支持英语 （美国） 区域设置的项模板，完整路径可能是*ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*。  
   
 3.  在**解决方案资源管理器**，选择的模板文件 (*YourTemplateName*.zip)。  
   
@@ -185,7 +186,7 @@ ms.lasthandoff: 05/22/2018
   
 8.  在**源**列表中，选择**在文件系统上的文件**。  
   
-9. 在**路径**字段中，输入程序集的完整路径 (例如， **ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip**，或使用**浏览**按钮来定位并选择该程序集，，然后选择**确定**按钮。  
+9. 在**路径**字段中，输入程序集的完整路径 (例如， *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*，或使用**浏览**按钮来定位并选择该程序集，，然后选择**确定**按钮。  
   
 ##### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>若要包括项目模板或项模板的向导  
   
@@ -207,7 +208,7 @@ ms.lasthandoff: 05/22/2018
   
 5.  选择“确定”  按钮。  
   
-### <a name="related-walkthroughs"></a>相关的演练  
+### <a name="related-walkthroughs"></a>相关的演练
  下表列出的演练，演示如何使用 VSIX 项目来部署不同类型的 SharePoint 工具扩展。  
   
 |扩展类型|相关的演练|  
@@ -217,7 +218,7 @@ ms.lasthandoff: 05/22/2018
 |一个扩展，包括 Visual Studio 模板|[演练：使用项模板创建自定义操作项目项（第 1 部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [演练：使用项目模板创建站点栏项目项（第 1 部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|  
 |包括模板向导扩展|[演练：使用项模板创建自定义操作项目项（第 2 部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [演练：使用项目模板创建站点栏项目项（第 2 部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|  
   
-## <a name="creating-vsix-packages-manually"></a>手动创建 VSIX 包  
+## <a name="create-vsix-packages-manually"></a>手动创建 VSIX 包
  如果你想要手动创建你的 SharePoint 工具扩展的 VSIX 包，请执行以下步骤：  
   
 1.  在新的文件夹中创建 extension.vsixmanifest 文件和 [Content_Types].xml 文件。 有关详细信息，请参阅[剖析 VSIX 包](/visualstudio/extensibility/anatomy-of-a-vsix-package)。  
@@ -260,10 +261,9 @@ ms.lasthandoff: 05/22/2018
   
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [在 Visual Studio 中调试 SharePoint 工具扩展](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  
   

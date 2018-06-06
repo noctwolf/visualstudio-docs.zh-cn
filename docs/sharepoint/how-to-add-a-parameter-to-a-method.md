@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e005152aa7a5b7c1905e768da878e72051bbdb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9268fd0deb463a29c8e6d19e98ad63c86b965292
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767083"
 ---
-# <a name="how-to-add-a-parameter-to-a-method"></a>如何：向方法添加参数
+# <a name="how-to-add-a-parameter-to-a-method"></a>如何： 向方法添加参数
   若要将信息传递到方法或从方法返回信息，请使用参数。 所有方法必须都具有至少一个参数。 有关如何设计用于支持你想要创建的方法的类型的参数的详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
- 当向方法添加参数时，Visual Studio 将添加`<Parameter>`到你的项目中的模型文件的 XML 元素。 有关属性的详细信息`<Parameter>`元素，请参阅[参数](http://go.microsoft.com/fwlink/?LinkId=169284)。  
+ 当向方法添加参数时，Visual Studio 会将参数元素添加到你的项目中的模型文件的 XML。 一个参数元素的属性的详细信息，请参阅[参数](http://go.microsoft.com/fwlink/?LinkId=169284)。  
   
 ### <a name="to-add-a-parameter-to-a-method"></a>向方法添加参数  
   
 1.  将方法添加到实体。  
   
-2.  在菜单栏上，选择**视图**，**其他窗口**， **BDC 方法详细信息**。  
+2.  在菜单栏上，选择**视图** > **其他窗口** > **BDC 方法详细信息**。  
   
      **BDC 方法详细信息**窗口随即打开。 有关详细信息，请参阅[BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)。  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
      一个新的参数将显示下**参数**节点。  
   
-5.  在菜单栏上，选择**视图**，**属性窗口**。  
+5.  在菜单栏上，选择**视图** > **属性窗口**。  
   
 6.  在**属性**窗口中，设置**名称**为有意义的任何名称的属性。 例如，如果该方法将返回客户，你可能会将该方法**GetCustomers**。  
   
@@ -57,11 +58,10 @@ ms.lasthandoff: 04/16/2018
   
 8.  修改参数的类型描述符。 有关详细信息，请参阅[如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
  [如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [如何： 定义方法实例](../sharepoint/how-to-define-a-method-instance.md)   
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
   

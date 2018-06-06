@@ -1,5 +1,5 @@
 ---
-title: 了解共同编写和外接程序 |Microsoft 文档
+title: 了解共同编写和外接程序
 ms.custom: ''
 ms.date: 07/20/2017
 ms.technology:
@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 911db43b820a05928f97e727568582f939560e9d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea525a97b38a043137b372f7c224f15c39478a97
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768165"
 ---
-# <a name="understanding-coauthoring-and-add-ins"></a>了解共同编写和外接程序
+# <a name="understand-coauthoring-and-add-ins"></a>了解共同编写和外接程序
 
 共同编写是与其他用户同时允许你编辑托管在云中 （即，OneDrive，OneDrive for Business 或 SharePoint Online） 的工作簿的 Excel for Windows 桌面的功能。 添加此功能后，你可能需要进行调整到你的 Excel 解决方案以确保其正常运行顺利即使用户共同编写。 请参阅[有关在 Excel 中共同编写](https://msdn.microsoft.com/vba/excel-vba/articles/about-coauthoring-in-excel)。
 

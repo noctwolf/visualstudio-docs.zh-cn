@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 59f273c511a24b1139b03421c2ca59871350aec3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 43e75e69899f74fb67980172c546cdc99d41d173
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747139"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 *N 层*数据应用程序是数据应用程序分离到多个*层*。 N 层应用程序也称为"分布式应用程序"和"多层应用程序"，它们将处理分为分布式客户端和服务器之间的相互独立的层。 当开发数据访问应用程序时，你应具有组成应用程序各层之间形成清晰的隔离。
@@ -58,7 +59,7 @@ Visual Studio 包含几个功能，可帮助开发人员创建 n 层应用程序
 
 下图显示功能和技术在 Visual Studio 中可用并其中它们可能适合于 n 层应用程序的中间层。
 
-![中间层组件](../data-tools/media/ntiermid.png "NtierMid")中间层
+![中间层组件](../data-tools/media/ntiermid.png)中间层
 
 中间层通常可以通过使用数据连接连接到数据层。 此数据连接通常存储在数据访问组件中。
 
@@ -67,7 +68,7 @@ Visual Studio 包含几个功能，可帮助开发人员创建 n 层应用程序
 
 下图显示功能和技术在 Visual Studio 中可用并其中它们可能适合于 n 层应用程序的数据层。
 
-![数据层组件](../data-tools/media/ntierdatatier.png "ntierdatatier")数据层
+![数据层组件](../data-tools/media/ntierdatatier.png)数据层
 
 数据层不能直接从表示层中的客户端访问。 相反，在中间层的数据访问组件用于演示文稿和数据层之间的通信。
 

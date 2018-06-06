@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecc7bba2cd33f0c7f4d78ef8607d078eb7f752a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 85b37d275f2e8c63afff6f301c21794ba2742eaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767944"
 ---
-# <a name="how-to-add-a-custom-property"></a>如何：添加自定义属性
+# <a name="how-to-add-a-custom-property"></a>如何： 添加自定义属性
   你可以将自定义属性添加到模型中使用**属性编辑器**。 你可以访问这些属性来检索连接字符串等信息和其他数据在运行时的代码中。  
   
 ### <a name="to-add-a-custom-property"></a>若要添加自定义属性  
   
 1.  在**BDC 资源管理器**，选择表示你想要应用自定义属性的模型元素的节点。  
   
-2.  在菜单栏上，选择**视图**，**属性窗口**。  
+2.  在菜单栏上，选择**视图** > **属性窗口**。  
   
 3.  在**属性**窗口中，选择**自定义属性**属性，然后选择省略号按钮 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP。NET 移动设计器椭圆"))。  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  有关**值**字段的自定义属性，指定一个值，然后选择**确定**按钮。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 355fe0485327c5c92441cd54d42253d022c7bb6e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 0d7f04c482149cbc063a3788dd6be44c643bae6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751788"
 ---
 # <a name="content-model-view"></a>内容模型视图
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 05/24/2018
 
  在下图中，**工作区**面板包含六个架构节点。 `purchaseOrder`中选择节点**工作区**面板，并显示在设计图面。
 
- ![XML 架构设计器的内容模型视图](../xml-tools/media/xsddesigner_contentmodelview.gif "XSDDesigner_ContentModelView")
+ ![XML 架构设计器内容模型视图](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>工作区面板
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 05/24/2018
 
  当内容模型视图处于活动状态时，会启用以下 XSD 设计器工具栏按钮。
 
- ![XML 架构设计器工具栏](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")
+ ![XML 架构设计器工具栏](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |选项|描述|
 |------------|-----------------|

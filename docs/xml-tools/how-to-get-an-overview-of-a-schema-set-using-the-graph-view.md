@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be2666316bdc4d64d4f3dd4ec52c5104a1af5cc
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05f690d76d61ffd52abbc7b73cf162d7f6609708
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751892"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>如何： 获取架构集使用图形视图的概述
 
@@ -34,7 +35,7 @@ ms.lasthandoff: 05/25/2018
 
 6.  选择**架构集**中的节点**XML 架构资源管理器**并拖动该节点在图形视图的设计图面。 您应当会看到所有全局节点，以及连接有关系节点的箭头。
 
-     ![图形视图](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
+     ![图形视图](../xml-tools/media/relationshipingraphview.gif)
 
 7.  单击设计图面上的任何节点并查看痕迹栏，以了解所选节点在架构集中的位置。
 

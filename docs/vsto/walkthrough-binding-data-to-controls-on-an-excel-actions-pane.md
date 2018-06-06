@@ -1,5 +1,5 @@
 ---
-title: 演练： 将数据绑定到 Excel 操作窗格上的控件 |Microsoft 文档
+title: 演练： 将数据绑定到 Excel 操作窗格上的控件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87d960c01d8ac28b2a148e2f48ee51a877d97c20
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d450a9c52ae8558167bf4cb581ce2e36f44f4e9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767905"
 ---
-# <a name="walkthrough-binding-data-to-controls-on-an-excel-actions-pane"></a>演练：将数据绑定到 Excel 操作窗格上的控件
+# <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>演练： 将数据绑定到 Excel 操作窗格上的控件
   本演练演示对 Microsoft Office Excel 中的操作窗格上的控件的数据绑定。 控件演示 SQL Server 数据库中表之间的主/从关系。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -55,20 +56,20 @@ ms.lasthandoff: 04/16/2018
   
 -   读取和写入到 SQL Server 数据库的权限。  
   
-## <a name="creating-the-project"></a>创建项目  
+## <a name="create-the-project"></a>创建项目  
  第一步是创建一个 Excel 工作簿项目。  
   
-#### <a name="to-create-a-new-project"></a>创建新项目  
+### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  使用名称创建的 Excel 工作簿项目**我 Excel 操作窗格**。 在向导中，选择**创建新文档**。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用名称创建的 Excel 工作簿项目**我 Excel 操作窗格**。 在向导中，选择**创建新文档**。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 将在设计器中打开新的 Excel 工作簿并将添加**我 Excel 操作窗格**项目合并为**解决方案资源管理器**。  
   
-## <a name="adding-a-new-data-source-to-the-project"></a>向项目添加新的数据源  
+## <a name="add-a-new-data-source-to-the-project"></a>向项目添加新的数据源  
   
-#### <a name="to-add-a-new-data-source-to-the-project"></a>若要向项目添加新的数据源  
+### <a name="to-add-a-new-data-source-to-the-project"></a>若要向项目添加新的数据源  
   
-1.  如果 **“数据源”** 窗口不可见，则在菜单栏上，通过选择 **“查看”**， **“其他窗口”**、 **“数据源”**显示它。  
+1.  如果**数据源**窗口不可见，显示它，在菜单栏中，选择**视图** > **其他窗口** >  **数据源**。  
   
 2.  选择 **“添加新数据源”** 以启动 **“数据源配置向导”**。  
   
@@ -90,10 +91,10 @@ ms.lasthandoff: 04/16/2018
   
  该向导将添加**供应商**表和**产品**表**数据源**窗口。 它还将类型化数据集添加到项目中的可见**解决方案资源管理器**。  
   
-## <a name="adding-controls-to-the-worksheet"></a>向工作表添加控件  
+## <a name="add-controls-to-the-worksheet"></a>向工作表添加控件  
  接下来，添加<xref:Microsoft.Office.Tools.Excel.NamedRange>控件和<xref:Microsoft.Office.Tools.Excel.ListObject>控件添加到第一个工作表。  
   
-#### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>若要添加 NamedRange 控件和 ListObject 控件  
+### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>若要添加 NamedRange 控件和 ListObject 控件  
   
 1.  验证**我 Excel 操作 Pane.xlsx**工作簿是在 Visual Studio 设计器中，打开与`Sheet1`显示。  
   
@@ -113,10 +114,10 @@ ms.lasthandoff: 04/16/2018
   
 7.  仅适用于 C#，选择**suppliersBindingSource**上的组件栏和更改**修饰符**属性**内部**中**属性**窗口。  
   
-## <a name="adding-controls-to-the-actions-pane"></a>将控件添加到操作窗格  
- 接下来，你需要一个包含一个组合框的操作窗格控件。  
+## <a name="add-controls-to-the-actions-pane"></a>将控件添加到操作窗格  
+ 接下来，你需要具有组合框操作窗格控件。  
   
-#### <a name="to-add-an-actions-pane-control"></a>若要添加操作窗格控件  
+### <a name="to-add-an-actions-pane-control"></a>若要添加操作窗格控件  
   
 1.  选择**我 Excel 操作窗格**项目中**解决方案资源管理器**。  
   
@@ -124,7 +125,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  在**添加新项**对话框中，选择**操作窗格控件**，将其命名为**ActionsControl**，然后单击**添加**。  
   
-#### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>将数据绑定 Windows 窗体控件添加到操作窗格控件  
+### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>将数据绑定 Windows 窗体控件添加到操作窗格控件  
   
 1.  从**公共控件**选项卡**工具箱**，拖动<xref:System.Windows.Forms.ComboBox>到操作窗格控件的控件。  
   
@@ -132,10 +133,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  调整用户控件以适合组合框的大小。  
   
-## <a name="binding-the-control-on-the-actions-pane-to-data"></a>操作窗格上的控件绑定到数据  
- 在本部分中，您将设置的数据源的<xref:System.Windows.Forms.ComboBox>到同一数据源作为<xref:Microsoft.Office.Tools.Excel.NamedRange>工作表上的控件。  
+## <a name="bind-the-control-on-the-actions-pane-to-data"></a>将操作窗格上的控件绑定到数据  
+ 在本部分中，你将设置的数据源的<xref:System.Windows.Forms.ComboBox>到同一数据源作为<xref:Microsoft.Office.Tools.Excel.NamedRange>工作表上的控件。  
   
-#### <a name="to-set-data-binding-properties-of-the-control"></a>若要设置控件的数据绑定属性  
+### <a name="to-set-data-binding-properties-of-the-control"></a>若要设置控件的数据绑定属性  
   
 1.  右键单击操作窗格控件，并依次**查看代码**。  
   
@@ -148,12 +149,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]  
   
-## <a name="showing-the-actions-pane"></a>显示操作窗格  
+## <a name="show-the-actions-pane"></a>显示操作窗格  
  操作窗格不可见，直到你在运行时添加控件。  
   
 #### <a name="to-show-the-actions-pane"></a>若要显示操作窗格  
   
-1.  在**解决方案资源管理器**，右键单击 ThisWorkbook.vb 或 ThisWorkbook.cs，，然后单击**查看代码**。  
+1.  在**解决方案资源管理器**，右键单击*ThisWorkbook.vb*或*ThisWorkbook.cs*，然后单击**查看代码**。  
   
 2.  创建用户控件中的新实例`ThisWorkbook`类。  
   
@@ -165,12 +166,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]  
   
-## <a name="testing-the-application"></a>测试应用程序  
+## <a name="test-the-application"></a>测试应用程序  
  现在，你可以测试您的文档以验证操作窗格打开时打开该文档，并且控件具有主/从关系。  
   
-#### <a name="to-test-your-document"></a>测试文档  
+### <a name="to-test-your-document"></a>测试文档  
   
-1.  按 F5 运行项目。  
+1.  按**F5**运行项目。  
   
 2.  确认操作窗格可见。  
   
@@ -183,7 +184,7 @@ ms.lasthandoff: 04/16/2018
   
 -   数据绑定到 Word 中的控件。 有关详细信息，请参阅[演练： 将数据绑定到 Word 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
   
--   部署项目。 有关详细信息，请参阅[部署 Office 解决方案使用 clickonce](../vsto/deploying-an-office-solution-by-using-clickonce.md)。  
+-   部署项目。 有关详细信息，请参阅[使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [操作窗格概述](../vsto/actions-pane-overview.md)   

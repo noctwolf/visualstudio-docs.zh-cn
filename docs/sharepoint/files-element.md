@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee8794ad3b381f58721da72b4ec3950f001a0888
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 330c408aa0e283eb282b93f77726ccc5d9547795
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691890"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766901"
 ---
 # <a name="files-element"></a>Files 元素
   指定要部署使用 SharePoint 项目项，如功能元素文件和依赖的非 SharePoint 项目的输出的文件。  
@@ -37,26 +37,26 @@ ms.locfileid: "34691890"
 ## <a name="type"></a>类型  
  **FileCollectionType**  
   
-## <a name="attributes-and-elements"></a>特性和元素  
+## <a name="attributes-and-elements"></a>特性和元素
  下列各节描述了特性、子元素和父元素。  
   
 ### <a name="attributes"></a>特性  
  无。  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子元素
   
 |元素|描述|  
 |-------------|-----------------|  
 |[ProjectItemFile](../sharepoint/projectitemfile-element.md)|可选**ProjectItemFileType**元素。<br /><br /> 表示 SharePoint 文件，如功能元素文件中，要包括在项目项部署到 SharePoint 时。|  
 |[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|可选**ProjectOutputFileType**元素。<br /><br /> 表示要部署到 SharePoint 项目项包含项目的输出。|  
   
-### <a name="parent-elements"></a>父元素  
+### <a name="parent-elements"></a>父元素
   
 |元素|描述|  
 |-------------|-----------------|  
 |[项目项](../sharepoint/projectitem-element.md)|表示一个 SharePoint 项目项。 此元素所需的根元素的`.spdata`文件。|  
   
-## <a name="element-information"></a>元素信息  
+## <a name="element-information"></a>元素信息
   
 |||  
 |-|-|  
@@ -65,7 +65,7 @@ ms.locfileid: "34691890"
 |**验证文件**|ProjectItemModelSchema.xsd|  
 |**可以为空**|否|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   
