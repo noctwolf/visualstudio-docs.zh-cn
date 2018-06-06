@@ -1,6 +1,7 @@
 ---
-title: 在 Visual Studio 中开发代码而无需创建项目或解决方案 | Microsoft Docs
+title: 在 Visual Studio 中开发代码而无需创建项目或解决方案
 ms.date: 02/21/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 082e64d80080eec48c311254461b85812a969841
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746022"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中开发代码而无需创建项目或解决方案
 
@@ -64,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 
 |         |         |
 |---------|---------|
-|  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")|    [观看视频](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171)，了解如何从 Visual Studio 中的 GitHub 存储库克隆并打开代码。 |
+|  ![视频的摄像机图标](../install/media/video-icon.png)|    [观看视频](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171)，了解如何从 Visual Studio 中的 GitHub 存储库克隆并打开代码。 |
 
 ## <a name="run-and-debug-your-code"></a>运行和调试代码
 

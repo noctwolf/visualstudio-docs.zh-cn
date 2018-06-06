@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6245647ca0af639bdd960e43f2c1adeed3982562
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750820"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>将数据源添加到 Web 性能测试
 
@@ -143,11 +144,11 @@ ms.lasthandoff: 04/26/2018
 
 1. 创建一个文件夹来组织项目数据库项目并添加一个项。
 
-     ![将新项目添加到“数据”文件夹](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![向数据文件夹添加新项](../test/media/web_test_databinding_foldernewitem.png)
 
 2. 创建文本文件。
 
-     ![将新文本文件命名为 ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png "Web_Test_DataBinding_FolderNewItemTextFile")
+     ![命名新文本文件为 ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png)
 
 3. 编辑文本文件并添加：
 
@@ -159,7 +160,7 @@ ms.lasthandoff: 04/26/2018
 
 4. 使用[绑定 SQL 数据](#AddingDataBindingWebTest_BindSQLData)中的步骤，但选择 CSV 文件作为数据源。
 
-     ![输入名称并选择 CSV 文件](../test/media/web_test_databinding_adddatasourcedialog.png "Web_Test_DataBinding_AddDataSourceDialog")
+     ![输入名称，并选择 CSV 文件](../test/media/web_test_databinding_adddatasourcedialog.png)
 
 ### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>问：如果我的现有 CSV 文件不包含列标头，该怎么办？
 
@@ -167,7 +168,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 添加名为 schema.ini 的新文本文件。
 
-     ![添加 schema.ini 文件](../test/media/web_test_databinding_schemafile.png "Web_Test_DataBinding_SchemaFile")
+     ![添加 schema.ini 文件](../test/media/web_test_databinding_schemafile.png)
 
 2. 编辑该 schema.ini 文件，添加描述数据结构的信息。 例如，描述 CSV 文件的架构文件可能如下所示：
 
@@ -178,39 +179,39 @@ ms.lasthandoff: 04/26/2018
 
 3. 将数据源添加到测试。
 
-     ![将数据源添加到 Web 性能测试](../test/media/web_test_databinding_sql_adddatasource.png "Web_Test_DataBinding_SQL_AddDataSource")
+     ![向 Web 性能测试添加数据源](../test/media/web_test_databinding_sql_adddatasource.png)
 
 4. 如果您正在使用 schema.ini 文件，请选择数据库（不是 CSV 文件）作为数据源，并为其命名。
 
-     ![添加数据库数据源](../test/media/web_test_databinding_adddatasourcecolortext.png "Web_Test_DataBinding_AddDataSourceColorText")
+     ![添加数据库数据源](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
 5. 创建新连接。
 
-     ![选择新连接](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png "Web_Test_DataBinding_SQL_AddDataSourceDialogConnectionNew")
+     ![选择新连接](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
 6. 选择 OLE DB 的 .NET Framework 数据提供程序。
 
-     ![选择 .NET 框架 OLE DB 数据提供程序](../test/media/web_test_databinding_adddatasourcecolortext2.png "Web_Test_DataBinding_AddDataSourceColorText2")
+     ![选择 .NET Framework OLE DB 数据提供程序](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
 7. 选择“高级”。
 
-     ![选择“高级”](../test/media/web_test_databinding_advanced.png "Web_Test_DataBinding_Advanced")
+     ![选择“高级”](../test/media/web_test_databinding_advanced.png)
 
 8. 对于 Provider 属性，请选择 Microsoft.Jet.OLEDB.4.0，并将扩展属性设置为 Text;HDR=NO。
 
-     ![应用高级属性](../test/media/web_test_databinding_advancedproperties.png "Web_Test_DataBinding_AdvancedProperties")
+     ![应用高级属性](../test/media/web_test_databinding_advancedproperties.png)
 
 9. 键入包含架构文件的文件夹的名称并测试你的连接。
 
-     ![输入指向数据文件夹的路径](../test/media/web_test_databinding_adddatasourcecolortext5.png "Web_Test_DataBinding_AddDataSourceColorText5")
+     ![输入指向数据文件夹的路径](../test/media/web_test_databinding_adddatasourcecolortext5.png)
 
 10. 选择要使用的 CSV 文件。
 
-     ![选择文本文件](../test/media/web_test_databinding_adddatasourcecolortext6.png "Web_Test_DataBinding_AddDataSourceColorText6")
+     ![选择文本文件](../test/media/web_test_databinding_adddatasourcecolortext6.png)
 
      完成后，CSV 文件会以表格形式显示。
 
-     ![添加到测试的数据源](../test/media/web_test_databinding_adddatasourcecolortext7.png "Web_Test_DataBinding_AddDataSourceColorText7")
+     ![添加到测试的数据源](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>问：如何将 XML 文件用作数据源？
 
@@ -218,11 +219,11 @@ ms.lasthandoff: 04/26/2018
 
 1. 创建一个文件夹来组织项目数据库项目并添加一个项。
 
-     ![将新项目添加到“数据”文件夹](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![向数据文件夹添加新项](../test/media/web_test_databinding_foldernewitem.png)
 
 2. 创建 XML 文件。
 
-     ![添加 ColorData.xml 文件](../test/media/web_test_databinding_additemxmlfile.png "Web_Test_DataBinding_AddItemXMLFile")
+     ![添加 ColorData.xml 文件](../test/media/web_test_databinding_additemxmlfile.png)
 
 3. 编辑 XML 文件并添加您的数据：
 
@@ -242,7 +243,7 @@ ms.lasthandoff: 04/26/2018
 
 4. 使用[绑定 SQL 数据](#AddingDataBindingWebTest_BindSQLData)中的步骤，但选择 XML 文件作为数据源。
 
-     ![输入名称，并选择 XML 文件](../test/media/web_test_databinding_adddatasourcedialogxml.png "Web_Test_DataBinding_AddDataSourceDialogXML")
+     ![输入名称，并选择 XML 文件](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
 ### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>问：我是否能将数据绑定添加到使用 SOAP 的 Web 服务请求？
 
@@ -250,7 +251,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 选择请求树中的 Web 服务请求，并在“属性”窗口中，选择 String Body 属性中的省略号 (…)。
 
-     ![编辑 Web 服务字符串正文](../test/media/web_test_databinding_webservicerequest.png "Web_Test_DataBinding_WebServiceRequest")
+     ![编辑 Web 服务字符串主体](../test/media/web_test_databinding_webservicerequest.png)
 
 2. 使用下面的语法，将 SOAP 正文中的值替换为数据绑定值：
 

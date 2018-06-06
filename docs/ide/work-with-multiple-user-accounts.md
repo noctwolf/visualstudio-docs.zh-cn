@@ -9,11 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87e725cb311a6ca07325be0b118687641ed4ecdc
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: edbe53458eafa833287cf48fec4870987a8ba81b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749166"
 ---
 # <a name="work-with-multiple-user-accounts"></a>使用多个用户帐户
 
@@ -27,17 +28,17 @@ ms.lasthandoff: 05/03/2018
 
 - 使用 Microsoft 帐户或组织帐户登录到 Visual Studio。 窗口上方会显示你的用户名，类似于：
 
-     ![当前登录的用户](../ide/media/vs2015_username.png "VS2015_UserName")
+     ![当前登录的用户](../ide/media/vs2015_username.png)
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>在服务器资源管理器中访问你的 Azure 帐户
 
 按 Ctrl+Alt+S，打开“服务器资源管理器”。 选择 Azure 图标，当图标展开时，将显示与用于登录 Visual Studio 的 ID 相关联的 Azure 帐户中的可用资源。 看起来应该如下所示（唯一不同的是，你看到的是自己的资源）。
 
-![显示已展开的 Azure Tools 节点的服务器资源管理器](../ide/media/vs2015_serverexplorer.png "VS2015_ServerExplorer")
+![显示已展开的 Azure Tools 节点的服务器资源管理器](../ide/media/vs2015_serverexplorer.png)
 
 在任何特定设备上首次使用 Visual Studio 时，对话框都将只显示在你登录 IDE 所用的 ID 下注册的订阅。 通过右键单击 Azure 节点、选择“管理和筛选订阅”并从帐户选取器控件添加帐户，可以直接从“服务器资源管理器”访问任何其他帐户的资源。 如果需要，可以通过单击向下箭头，从帐户列表中选择另一个帐户。 选择帐户之后，可以选择想要帐户下的哪些订阅在“服务器资源管理器”中显示。
 
-![“管理 Azure 订阅”对话框](../ide/media/vs2015_manage_subs.png "vs2015_manage_subs")
+![“管理 Azure 订阅”对话框](../ide/media/vs2015_manage_subs.png)
 
 下次打开“服务器资源管理器”时，将显示所选订阅的资源。
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 05/03/2018
 
 Azure AD 支持 ASP.NET MVC web 应用程序中的最终用户单一登录或 Web API 服务中的 AD 身份验证。 域身份验证不同于单个用户帐户身份验证；有权访问 Active Directory 域的用户可以使用其现有的 Azure AD 帐户连接到你的 web 应用程序。 Office 365 应用还可以使用域身份验证。 为此，请创建一个 Web 应用程序（“文件” > “新建项目” > “C#” > ->“云” > ->“ASP.NET Web 应用程序”）。 在“新的 ASP.NET 项目”对话框中，选择“更改身份验证”。 身份验证向导随即显示，你能够选择要在你的应用程序中使用的身份验证类型。
 
-![适用于 ASP.NET 的“更改身份验证”对话框](../ide/media/vs2015_change_authentication.png "VS2015_change_authentication")
+![适用于 ASP.NET 的更改身份验证对话框](../ide/media/vs2015_change_authentication.png)
 
 有关 ASP.NET 中不同种类的身份验证的详细信息，请参阅[在 Visual Studio 2013 中创建 ASP.NET Web 项目](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth)（有关身份验证的信息仍适用于当前版本的 Visual Studio）。
 
@@ -66,11 +67,11 @@ Azure AD 支持 ASP.NET MVC web 应用程序中的最终用户单一登录或 We
 
 在 Visual Studio 上方单击用户名旁的向下箭头。 然后选择“帐户设置”菜单项。 出现 **“帐户管理器”** 对话框并显示你登录所用的帐户。 选择对话框下方的“添加帐户”链接，以添加新的 Microsoft 帐户或新的工作或学校帐户。
 
-![Visual Studio 帐户选取器](../ide/media/vs2015_acct_picker.png "VS2015_acct_picker")
+![Visual Studio 帐户选取器](../ide/media/vs2015_acct_picker.png)
 
 按照提示输入新的帐户凭据。 下图显示用户添加其 Contoso.com 工作帐户后的“帐户管理器”。
 
-![帐户管理器](../ide/media/vs2015_accountmanager.gif "VS2015_AccountManager")
+![“帐户管理器”](../ide/media/vs2015_accountmanager.gif)
 
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>重新访问“添加连接的服务”向导和服务器资源管理器
 

@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8d25e93c0c5fefeae2d7891d458373d81d5ff370
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750878"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>如何：使用 Microsoft Word 手动创建负载测试性能报告
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  （可选）对要复制到 Microsoft Word 文档中的特定关系图进行放大，如下图所示。 有关详细信息，请参阅[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
-     ![关系图视图缩放控件](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl")
+     ![图形视图缩放控件](../test/media/ltest_zoomcontrol.png)
 
 3.  在要复制到 Microsoft Word 文档中的关系图上，右键单击并选择“复制”。
 

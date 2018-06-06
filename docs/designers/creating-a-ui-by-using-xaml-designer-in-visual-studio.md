@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 514bbd4b4b65a2f32b42a1f260368f219972e22c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 707fdd9c1ea0712d743bb62276599783507f0739
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745745"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中，使用 XAML 设计器创建 UI
 Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于 XAML 的 Windows 和 Web 应用。 可以通过拖动“工具箱”  中的控件，并在“属性”  窗口设置属性，为应用程序创建用户界面。 还可以直接在 XAML 视图中编辑 XAML。
@@ -34,7 +35,7 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 
  在“设计”视图，包括 *“美工板”* 的窗口是活动窗口，并且可以将其用作主要工作台面。 可通过添加或绘制元素，然后对其进行修改，在应用程序中用于直观地设计页面。 有关更多信息，请参见 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)。 此图显示了“设计”视图中的美工板。
 
- ![XAML 设计器的设计视图](../designers/media/xaml_editor_design_view.png "xaml_editor_design_view")
+ ![XAML 设计器的设计视图](../designers/media/xaml_editor_design_view.png)
 
  这些功能在美工板中可用：
 
@@ -48,7 +49,7 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 
  **重设句柄大小** 重设句柄大小显示在所选控件上，通过它可调整控件的大小。 当调整控件大小时，通常会出现宽度和高度值，帮助设置控件的大小。 有关在“设计”视图中操纵控件的详细信息，请参见 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)。
 
- **边距** 边距表示控件边缘与其容器边缘之间的固定空间量。 可使用“属性”窗口中**“布局”** 下的 [Margin](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 属性来设置控件的边距。
+ **边距** 边距表示控件边缘与其容器边缘之间的固定空间量。 可使用“属性”窗口中 **“布局”** 下的 [Margin](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 属性来设置控件的边距。
 
  **边距装饰器** 可使用边距装饰器更改元素相对于其布局容器的边距。 打开边距装饰器，未设置边距时，边距装饰器将显示断开的锁链。 未设置边距时，元素将在运行时调整布局容器的大小时保留在原处。 边距装饰器关闭时，边距装饰器将显示完好的锁链，且在运行时调整布局容器的大小时，元素将随边距一起移动（边距保持固定）。
 
@@ -56,7 +57,7 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 
  在“设计”视图中，其他美工板命令在屏幕的左下角区域可用，如下所示：
 
- ![设计视图命令](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")
+ ![设计视图命令](../designers/media/xaml_editor_design_controls.png)
 
  此工具栏上的这些命令可用：
 
@@ -70,7 +71,7 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 
  在 XAML 视图中，包含 XAML 编辑器窗口是活动窗口，且 XAML 编辑器是主要创作工具。 可扩展应用程序标记语言 (XAML) 提供基于 XML 的声明性词汇，用于指定应用程序的用户界面。 XAML 视图包括 IntelliSense、自动格式设置、语法突出显示和标记导航。 此图显示了 XAML 视图：
 
- ![XAML 视图](../designers/media/xaml_editor.png "xaml_editor")
+ ![XAML 视图](../designers/media/xaml_editor.png)
 
  **拆分视图栏** 当 XAML 编辑器在下方窗口时，拆分视图栏将显示在 XAML 视图顶部。 拆分视图栏可控制“设计”视图和 XAML 视图的相对大小。 也可交换视图的位置（使用“交换窗格”  按钮），指定视图是水平排列或是垂直排列以及折叠任一视图。
 
@@ -79,7 +80,7 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 ## <a name="device-window"></a>设备窗口
  通过 XAML 设计器中的“设备”窗口，可在设计时为项目模拟各种视图、显示屏和显示选项。 在 XAML 设计器中工作时，“设备”窗口在“设计”  菜单中可用。 如下所示：
 
- ![“设备”窗口](../designers/media/xaml_editor_device_panel.png "xaml_editor_device_panel")
+ ![设备窗口](../designers/media/xaml_editor_device_panel.png)
 
  以下是“设备”窗口中可用的选项：
 
@@ -114,7 +115,7 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 
  若要查看“文档大纲”窗口，请依次在菜单栏上选择“查看” 、“其他窗口” 、“文档大纲” 。
 
- ![“文档大纲”窗口](../designers/media/xaml_editor_doc_outline.png "xaml_editor_doc_outline")
+ ![“文档大纲”窗口](../designers/media/xaml_editor_doc_outline.png)
 
  以下是“文档大纲”窗口中可用的选项：
 
@@ -129,7 +130,7 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 ## <a name="properties-window"></a>“属性”窗口
  通过“属性”窗口可以设置控件的属性值。 如下所示：
 
- ![属性窗口](../designers/media/xaml_editor_prop_window.png "xaml_editor_prop_window")
+ ![“属性”窗口](../designers/media/xaml_editor_prop_window.png)
 
  “属性”窗口顶部有多种选项。 可以通过使用“名称”  框，更改当前所选元素的名称。 在左上角，有一个表示当前所选元素的图标。 若要按类别或按字母顺序排列属性，请单击“类别” 、“名称” 或“排列方式”  列表中的“源”  。 若要查看控件的事件列表，请单击“事件”  按钮，该按钮显示为一个闪电形符号。 若要搜索属性，请开始在“搜索属性”  框中键入属性的名称。 “属性”窗口将显示与键入搜索的内容相匹配的属性。 某些属性允许通过选择向下箭头按钮设置高级属性。 有关使用属性和处理事件的详细信息，请参见 [快速入门：添加控件和处理事件](http://go.microsoft.com/fwlink/?LinkID=247983)
 

@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c47ca792c25efe6ef77f3ee3a9baad61e801624
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752691"
 ---
 # <a name="toolbox-html-tab"></a>“工具箱”->“HTML”选项卡
 
@@ -33,13 +34,13 @@ ms.lasthandoff: 04/26/2018
 
 **指针**
 
-![ASP.NET 移动设计器 HTML 页指针](../../ide/reference/media/vxpointer.gif "vxPointer")
+![ASP.NET 移动设计器 HTML 页指针](../../ide/reference/media/vxpointer.gif)
 
 打开任一工具箱选项卡时，此工具默认处于选中状态。 无法删除此工具。 使用指针可将对象拖动到“设计”视图图面上、调整其大小，并在页面或窗体中对其重新定位。 有关详细信息，请参阅[工具箱](../../ide/reference/toolbox.md)。
 
 **Input (Button)**
 
-![HTML 网页按钮](../../ide/reference/media/vxbutton.gif "vxButton")
+![HTML 网页按钮](../../ide/reference/media/vxbutton.gif)
 
 插入 `type="button"` 的一个 `input` 元素。 若要更改显示的文本，请编辑 `name` 属性。 默认情况下，对于第一个按钮，插入 `id="Button1"`，对于第二个按钮，插入 `id="Button2"`，以此类推。
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/26/2018
 
 **Input (Reset)**
 
-![HTMLpageResetButton 屏幕截图](../../ide/reference/media/vxreset.gif "vxReset")
+![HTMLpageResetButton 屏幕快照](../../ide/reference/media/vxreset.gif)
 
 插入 `type="reset"` 的一个 `input` 元素。 若要更改显示的文本，请编辑 `name` 属性。 默认情况下，对于第一个重置按钮，插入 `id="Reset1"`，对于第二个重置按钮，插入 `id="Reset2"`，以此类推。
 
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/26/2018
 
 **Input (Submit)**
 
-![HTMLpageToolbarSubmitButton 屏幕截图](../../ide/reference/media/vxsubmit.gif "vxSubmit")
+![HTMLpageToolbarSubmitButton 屏幕快照](../../ide/reference/media/vxsubmit.gif)
 
 插入 `type="submit"` 的一个 `input` 元素。 若要更改显示的文本，请编辑 `name` 属性。 默认情况下，对于第一个提交按钮，插入 `id="Submit1"`，对于第二个提交按钮，插入 `id="Submit2"`，以此类推。
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 
 **Input (Text)**
 
-![HTMLpageToolbarTextField 屏幕截图](../../ide/reference/media/vxtextfield.gif "vxTextfield")
+![HTMLpageToolbarTextField 屏幕快照](../../ide/reference/media/vxtextfield.gif)
 
 在文档中插入 `type="text"` 的一个 `input` 元素。 若要更改显示的默认文本，请编辑 `value` 特性。 默认情况下，对于第一个文本字段，插入 `id="Text1"`，对于第二个文本字段，插入 `id="Text2"`，以此类推。
 
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/26/2018
 
 **Input (File)**
 
-![HTML 页文件字段](../../ide/reference/media/vxfilefield.gif "vxFilefield")
+![HTML 页文件字段](../../ide/reference/media/vxfilefield.gif)
 
 在文档中插入 `type="file"` 的一个 `input` 元素。 默认情况下，对于第一个文件字段，插入 `id="File1"`，对于第二个文件字段，插入 `id="File2"`，以此类推。
 
@@ -105,7 +106,7 @@ ms.lasthandoff: 04/26/2018
 
 **Input (Password)**
 
-![Visual Studio 密码字段](../../ide/reference/media/vxpassword.gif "vxPassword")
+![Visual Studio 密码字段](../../ide/reference/media/vxpassword.gif)
 
 插入 `type="password"` 的一个 `input` 元素。 默认情况下，对于第一个密码字段，插入 `id="Password1"`，对于第二个密码字段，插入 `id="Password2"`，以此类推。
 
@@ -120,7 +121,7 @@ ms.lasthandoff: 04/26/2018
 
 **Input (Check box)**
 
-![HTML 网页工具箱复选框选项](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
+![HTML 网页工具箱复选框选项](../../ide/reference/media/vxcheckbox.gif)
 
 插入 `type="checkbox"` 的一个 `input` 元素。 若要更改显示的文本，请编辑 `name` 属性。 默认情况下，对于第一个复选框，插入 `id="Checkbox1"`，对于第二个复选框，插入 `id="Checkbox2"`，以此类推。
 
@@ -132,7 +133,7 @@ ms.lasthandoff: 04/26/2018
 
 **Input (Radio)**
 
-![VisualStudioHTMLpageRadioButton 屏幕截图](../../ide/reference/media/vxradio.gif "vxRadio")
+![VisualStudioHTMLpageRadioButton 屏幕快照](../../ide/reference/media/vxradio.gif)
 
 插入 `type="radio"` 的一个 `input` 元素。 若要更改显示的文本，请编辑 `name` 属性。 默认情况下，对于第一个单选按钮，插入 `id="Radio1"`，对于第二个单选按钮，插入 `id="Radio2"`，以此类推。
 
@@ -144,7 +145,7 @@ ms.lasthandoff: 04/26/2018
 
 **Input (Hidden)**
 
-![HTML 页隐藏项](../../ide/reference/media/vxhidden.gif "vxhidden")
+![HTML 页隐藏项](../../ide/reference/media/vxhidden.gif)
 
 插入 `type="hidden"` 的一个 `input` 元素。 默认情况下，对于第一个隐藏字段，插入 `id="Hidden1"`，对于第二个隐藏字段，插入 `id="Hidden2"`，以此类推。
 
@@ -156,7 +157,7 @@ ms.lasthandoff: 04/26/2018
 
 **Textarea**
 
-![HTML 页工具栏文本区域](../../ide/reference/media/vxtextarea.gif "vxTextarea")
+![HTML 页工具栏文本区域](../../ide/reference/media/vxtextarea.gif)
 
 插入一个 `textarea` 元素。 可以调整文本区域的大小，或使用其滚动条查看延伸到显示区域外的文本。 若要更改显示的默认文本，请编辑 `value` 特性。 默认情况下，对于第一个文本区域，插入 `id="textarea1"`，对于第二个文本区域，插入 `id=" textarea 2"`，以此类推。
 
@@ -171,7 +172,7 @@ ms.lasthandoff: 04/26/2018
 
 **Table**
 
-![HTMLpageToolbarTable 屏幕截图](../../ide/reference/media/vxtable.gif "vxTable")
+![HTMLpageToolbarTable 屏幕快照](../../ide/reference/media/vxtable.gif)
 
 插入一个 `table` 元素。
 
@@ -183,7 +184,7 @@ ms.lasthandoff: 04/26/2018
 
 **Image**
 
-![HTML 页图像项](../../ide/reference/media/vximage.gif "vxImage")
+![HTML 页图像项](../../ide/reference/media/vximage.gif)
 
 插入一个 `img` 元素。 编辑此元素可指定其 `src` 和 `alt` 文本。
 
@@ -195,7 +196,7 @@ ms.lasthandoff: 04/26/2018
 
 **选择**
 
-![HTML 页工具箱下拉列表](../../ide/reference/media/vxdropdown.gif "vxDropdown")
+![HTML 页工具箱下拉列表](../../ide/reference/media/vxdropdown.gif)
 
 插入一个下拉 `select` 元素（不含 `size` 特性）。 默认情况下，对于第一个列表框，插入 `id="select1"`，对于第二个列表框，插入 `id="select2"`，以此类推。
 
@@ -209,7 +210,7 @@ ms.lasthandoff: 04/26/2018
 
 **Horizontal Rule**
 
-![HTML 页水平标尺项](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")
+![HTML 页水平标尺项](../../ide/reference/media/vxhorizontal.gif)
 
 插入一个 `hr` 元素。 若要增大线条的粗细，请编辑 `size` 特性。
 
@@ -221,7 +222,7 @@ ms.lasthandoff: 04/26/2018
 
 **Div**
 
-![HTML 页标签](../../ide/reference/media/vxlabel.gif "vxLabel")
+![HTML 页标签](../../ide/reference/media/vxlabel.gif)
 
 插入一个 `div` 元素，该元素包括一个 `ms_positioning="FlowLayout"` 特性。 除宽度和高度之外，该项与“流布局面板”相同。 若要设置 `div` 元素中所含文本的格式，请在开始标记中添加 `class="stylename"` 特性。
 

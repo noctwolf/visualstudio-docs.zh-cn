@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6c47739b2f6de55ea51a2a00ffc90aec696e8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747224"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>在 Visual Studio 中识别并自定义键盘快捷方式
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/26/2018
 
 2. 展开“环境”，然后选择“键盘”。
 
-   ![在“选项”对话框中显示键盘快捷方式](../ide/media/optionskeyboard.png "OptionsKeyboard")
+   ![在“选项”对话框中显示键盘快捷键](../ide/media/optionskeyboard.png)
 
 3. 在“显示命令包含”框中输入命令的完整或部分名称，不含空格。
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/26/2018
 
 5. 如果该命令有键盘快捷方式，则显示在“选定命令的快捷方式”列表中。
 
-   ![查看指定命令的快捷方式](../ide/media/viewshortcut.png "ViewShortcut")
+   ![查看指定命令的快捷方式](../ide/media/viewshortcut.png)
 
 ## <a name="customize-a-keyboard-shortcut"></a>自定义键盘快捷方式
 
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/26/2018
 
      如果快捷方式已分配给另一个命令，则显示在“快捷方式的当前使用对象”框中。 在这种情况下，先按 Backspace 删除该快捷方式，然后再尝试另一个。
 
-    ![为命令指定不同的快捷方式](../ide/media/reassignshortcut.png "ReassignShortcut")
+    ![为命令指定不同的快捷方式](../ide/media/reassignshortcut.png)
 
 7. 选择“分配”按钮。
 
@@ -107,7 +108,7 @@ ms.lasthandoff: 04/26/2018
 
 4. 选中“键盘”复选框，然后选择“下一步”按钮。
 
-    ![仅导出自定义的键盘快捷方式](../ide/media/exportshortcuts.png "ExportShortcuts")
+    ![仅导出自定义的键盘快捷键](../ide/media/exportshortcuts.png)
 
 5. 在“要如何命名你的设置文件?”和“在此目录中存储我的设置文件”框中，保留默认值或指定其他值，然后选择“完成”按钮。
 
@@ -129,7 +130,7 @@ ms.lasthandoff: 04/26/2018
 
 7. 选中“键盘”复选框，然后选择“完成”按钮。
 
-    ![仅导入自定义的键盘快捷方式](../ide/media/importshortcuts.png "ImportShortcuts")
+    ![仅导入自定义的键盘快捷键](../ide/media/importshortcuts.png)
 
 ## <a name="see-also"></a>请参阅
 

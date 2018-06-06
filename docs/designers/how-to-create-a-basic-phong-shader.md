@@ -1,6 +1,7 @@
 ---
 title: 如何：创建基本 Phong 着色器
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f81d6e34a6fe0932a8bccae2202c1640b8befb76
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9208879400846d7acfa2cb89d1c30efaa65631a0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746580"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>如何：创建基本 Phong 着色器
 
@@ -44,7 +46,7 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 > 为了更好地演示该图中着色器的效果，使用着色器的 **MaterialDiffuse** 参数指定了橙色，并使用  **MaterialSpecular** 和 **MaterialSpecularPower**  参数指定了金属外观。 有关材质参数的信息，请参阅[着色器设计器](../designers/shader-designer.md)中的“预览着色器”部分。
 
- ![着色器图及其效果预览](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")
+ ![着色器图及其效果预览](../designers/media/digit-lighting-graph.png)
 
  某些形状可能会增强某些着色器的预览效果。 若要深入了解如何在着色器设计器中预览着色器，请参阅[着色器设计器](../designers/shader-designer.md)中的“预览着色器”部分
 
@@ -55,7 +57,7 @@ ms.lasthandoff: 04/19/2018
 >
 > **MaterialSpecularPower** 属性确定高光的强度。 高反射强度模拟更暗淡、更局部化的高光效果。 较低的反射强度模拟大幅度的强烈高光，其可能会过度饱和并遮掩整个表面的颜色。
 
- ![应用于模型的冯氏照明](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")
+ ![应用于模型的 Phong 照明](../designers/media/digit-lighting-model.png)
 
  有关如何向三维模型应用着色器的详细信息，请参阅[如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 

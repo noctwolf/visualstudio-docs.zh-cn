@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 827b76f3b4b40f59fe22b3c5424c6d8c13087809
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 44994b7b643d63f548092aba9a878b939f3968af
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750989"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用测试设置在测试期间包括屏幕和语音录制
 
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/26/2018
 
      “配置诊断数据适配器 - 屏幕和语音录制器”对话框随即出现。
 
-     ![视频配置](../test/media/testsettingvideoconfiggdr.png "TestSettingVideoConfigGDR")
+     ![视频配置](../test/media/testsettingvideoconfiggdr.png)
 
 4.  （可选）选择“启用语音录制”来捕获您录制的音频内容。
 

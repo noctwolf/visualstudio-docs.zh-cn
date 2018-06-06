@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b82a35ed56c0930b8d9c0ff8ec7bfcbd008a7648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751528"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>如何：使用 Microsoft Excel 创建负载测试性能报告
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
  下图是显示事务（更新购物车）速度的下降和（% 处理器）计数器的退化之间的相关性的报告示例。 这指向应用程序代码而不是数据库或网络中的潜在问题，并且适于使用 ASP.NET 探查器进行诊断。
 
- ![应用程序代码中的潜在问题](../test/media/lt_excel.png "LT_Excel")
+ ![应用程序代码中的潜在问题](../test/media/lt_excel.png)
 
  生成 Excel 报告的方法有两种：一种是在负载测试分析器中使用工具栏中的“创建 Excel 报告”按钮，另一种是在 Excel 中使用 Office 功能区的“负载测试”选项卡中的“负载测试报告”选项。
 

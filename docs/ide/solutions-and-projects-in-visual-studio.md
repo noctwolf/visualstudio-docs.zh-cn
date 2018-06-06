@@ -26,11 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc94838423cea7eeab8cef6357267609394352b
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747621"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目
 
@@ -64,7 +65,7 @@ ms.lasthandoff: 05/04/2018
 
 创建新项目之后，可使用“解决方案资源管理器”查看和管理项目和解决方案及其关联项。 下图显示具有一个包含两个项目的 C# 解决方案的解决方案资源管理器。
 
-![解决方案资源管理器](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")
+![“解决方案资源管理器”](../ide/media/vs2015_solution_explorer.png)
 
 ## <a name="see-also"></a>请参阅
 

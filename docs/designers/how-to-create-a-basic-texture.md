@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d58cbb439eb370af16ee68ca03a4d1db467861f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745625"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：创建基本纹理
 本文档说明如何使用图像编辑器创建基本纹理。
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 
  以下步骤显示如何创建表示“靶心”目标的纹理。完成后，该纹理应如下图所示。 为了更好地演示纹理中的透明度，已将图像编辑器配置为使用绿色的方格棋盘图案来显示它。
 
- ![显示为绿色的透明“靶心”目标](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")
+ ![显示为绿色的透明“靶心”目标](../designers/media/digit-bullseye-texture-in-editor.png)
 
  开始前，请确保显示“属性”窗口”。 在工作时，可以使用“属性”窗口设置图像的大小、更改工具属性以及指定颜色。
 
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/26/2018
 
  “靶心”目标纹理是完整的。 下面是最终图像（以透明度显示）。
 
- ![完整的“靶心”目标纹理](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")
+ ![完整的“靶心”目标纹理](../designers/media/gfx_image_demo_bullseye.png)
 
  作为下一步，可以为此纹理生成 MIP 级别。 有关信息，请参阅[如何：创建和修改 MIP 级别](../designers/how-to-create-and-modify-mip-levels.md)。
 

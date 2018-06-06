@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91013c0f9a6f213b70710d29d9102efc04db2821
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548630"
 ---
-# <a name="collecting-net-memory-allocation-and-lifetime-data"></a>收集 .NET 内存分配数据和生存期数据
+# <a name="collect-net-memory-allocation-and-lifetime-data"></a>收集 .NET 内存分配和生存期数据
 
 Visual Studio 分析工具支持收集 .NET 内存分配和对象生存期数据，此数据有助于检测应用程序中与内存相关的性能问题。
 
@@ -60,7 +61,7 @@ Visual Studio 分析工具支持收集 .NET 内存分配和对象生存期数据
 
 |任务|相关内容|
 |----------|---------------------|
-|在“常规”页上，为生成的分析数据 (.vsp) 文件指定命名详细信息。|- [收集 .NET 内存分配数据和生存期数据](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [如何：设置性能数据文件名选项](../profiling/how-to-set-performance-data-file-name-options.md)|
+|在“常规”页上，为生成的分析数据 (.vsp) 文件指定命名详细信息。|- [收集 .NET 内存分配和生存期数据](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [如何：设置性能数据文件名选项](../profiling/how-to-set-performance-data-file-name-options.md)|
 |在“启动”页上，如果代码解决方案中具有多个 .exe 项目，则选择要启动的应用程序。|- [收集层交互数据](../profiling/collecting-tier-interaction-data.md)|
 |在“层交互”  页上，将 ADO.NET 调用数据添加到分析运行中。|- [收集层交互数据](../profiling/collecting-tier-interaction-data.md)|
 |在“Windows 事件”页上，指定一个或多个与采样数据一同收集的“Windows 事件跟踪 (ETW)”事件。|- [如何：收集 Windows 事件跟踪 (ETW) 数据](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
@@ -74,7 +75,7 @@ Visual Studio 分析工具支持收集 .NET 内存分配和对象生存期数据
 |任务|相关内容|
 |----------|---------------------|
 |在“二进制文件”  页上，为检测的模块副本指定位置。 默认情况下，原始二进制文件会被移动到备份文件夹中。|- [如何：重新指定检测后的二进制文件的位置](../profiling/how-to-relocate-instrumented-binaries.md)|
-|在“检测”  页上，从分析中排除小函数以减少分析开销，在 ASP.NET Web 页中分析 JavaScript 代码，并指定要在检测过程之前和之后在命令提示符处运行的命令。|- [如何：在检测中排除或包括短函数](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [如何：分析网页中的 JavaScript 代码](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [如何：指定检测前和检测后命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
+|在“检测”  页上，从分析中排除小函数以减少分析开销，在 ASP.NET Web 页中分析 JavaScript 代码，并指定要在检测过程之前和之后在命令提示符处运行的命令。|- [如何：在检测中排除或添加短函数](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [如何：分析网页中的 JavaScript 代码](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [如何：指定检测前和检测后命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
 |在“CPU 计数器”  页上，指定要添加到分析数据的一个或多个处理器性能计数器。|- [如何：收集 CPU 计数器数据](../profiling/how-to-collect-cpu-counter-data.md)|
 |在“高级”页上，指定所需的任何其他 VSInstr 选项，例如用于包含或排除特定函数的选项。 有关 VSInstr 选项的详细信息，请参阅 [VSInstr](../profiling/vsinstr.md)|- [如何：指定其他检测选项](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [如何：将检测限定为特定函数](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 

@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7094aba90a8844480536e6f44951fb7dc15ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745732"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>如何：通过自定义滚动条来跟踪代码
 
@@ -33,11 +34,11 @@ ms.lasthandoff: 05/22/2018
 
     下面是搜索字符串后滚动条的外观。 注意将显示字符串的所有实例。
 
-    ![搜索字符串后的滚动条](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+    ![搜索字符串后的滚动条。](../ide/media/enhancedscrollbarsearch.png)
 
     下面是替换字符串的所有实例后滚动条的外观。 将立即看到操作导致了一些问题。
 
-    ![替换字符串并发生错误后的滚动条](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+    ![替换字符串并发生错误后的滚动条](../ide/media/enhancedscrollbarreplace.png)
 
 ## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>设置滚动条的显示模式
 
@@ -47,11 +48,11 @@ ms.lasthandoff: 05/22/2018
 
     下面是启用映射模式且宽度设置为“中等”时搜索示例的外观：
 
-    ![映射模式中的滚动条](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+    ![映射模式中的滚动条](../ide/media/enhancedscrollbar.png)
 
 2. 映射模式下，若要在滚动条上上下移动游标时启用代码预览，选择“显示预览工具提示”选项。 下面是它的外观：
 
-    ![包含工具提示的滚动条](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
+    ![显示工具提示的滚动条](../ide/media/enhancedscrollbarsearchtooltip.png)
 
     如果要保留映射模式滚动行为和预览工具提示，但不想看到源代码概述，可将“源概述”设置为“关闭”。
 

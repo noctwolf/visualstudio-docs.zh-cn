@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d0eef8a9563fdb6d74737f90cf184186142a672
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 36599475e743259d8cf09d24172a633b54b09693
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752302"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>如何：面向 .NET Framework 的某个版本
 
@@ -49,11 +50,11 @@ ms.lasthandoff: 04/26/2018
 
 1. 在“解决方案资源管理器”中，打开要更改的项目的快捷菜单，然后选择“属性”。
 
-    ![Visual Studio 解决方案资源管理器属性](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")
+    ![Visual Studio 解决方案资源管理器属性](../ide/media/vs_slnexplorer_properties.png)
 
 1. 在“属性”窗口的左列中，选择“应用程序”选项卡。
 
-    ![Visual Studio 应用属性应用程序选项卡](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
+    ![Visual Studio 应用程序属性的“应用程序”选项卡](../ide/media/vs_slnexplorer_properties_applicationtab.png)
 
     > [!NOTE]
     > 创建 UWP 应用后，无法更改 Windows 或 .NET Framework 目标版本。

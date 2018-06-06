@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22897b072d7051eef5c08d27fc3235050474da60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27a1cdd3390d6f068947bfcb0daef76eb93fd026
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751983"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>如何：使用负载测试编辑器管理计数器集
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/26/2018
 
 管理计数器集包括选择要从中收集性能数据的计算机集，指定从各个计算机收集数据的计数器集。 在“负载测试编辑器”中管理计数器。
 
-![管理计数器集](../test/media/loadtestmanagecountersets.png "LoadTestManageCounterSets")
+![管理计数器集](../test/media/loadtestmanagecountersets.png)
 
 ## <a name="to-manage-counter-sets"></a>管理计数器集
 

@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 13f06279857897ba1562c157a7ffa1c76dd3c6c8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 020bdb53a62d49eeaf3431c7cca45198c9a2266d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751775"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>使用模拟器分离 Sharepoint 2010 应用程序的单元测试
 Microsoft.SharePoint.Emulators 包提供了一组帮助你对 Microsoft SharePoint 2010 应用程序创建独立单元测试的库。 仿真器使用 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) 隔离框架中的[垫片](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)来创建轻型内存中对象，以模仿 SharePoint API 的最常见对象和方法。 当未仿真 SharePoint 方法，或者当你想要更改仿真程序的默认行为时，可以通过创建 Fakes 填充码来提供所需的结果。
@@ -33,7 +34,7 @@ Microsoft.SharePoint.Emulators 包提供了一组帮助你对 Microsoft SharePoi
 ##  <a name="BKMK_The_AppointmentsWebPart_example"></a>AppointmentsWebPart 示例
  AppointmentsWebPart 允许你查看和管理 SharePoint 约会列表。
 
- ![预约 Web 部件](../test/media/ut_emulators_appointmentswebpart.png "UT_EMULATORS_AppointmentsWebPart")
+ ![约会 Web 部件](../test/media/ut_emulators_appointmentswebpart.png)
 
  我们将在此示例中测试 Web 部件的两种方法：
 
@@ -118,7 +119,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
 3.  在“联机”分类中搜索“`Microsoft.SharePoint.Emulators`”，然后选择“安装”。
 
- ![Sharepoint 仿真器 NuGet 包](../test/media/ut_emulators_nuget.png "UT_EMULATORS_Nuget")
+ ![Sharepoint 仿真器 NuGet 包](../test/media/ut_emulators_nuget.png)
 
 ###  <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a>运行启用了仿真的测试方法
  安装包会向项目添加对所需库的引用。 为便于在现有测试类中使用仿真程序，请添加命名空间 `Microsoft.SharePoint.Emulators` 和 `Microsoft.QualityTools.Testing.Emulators`。
@@ -155,7 +156,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
  执行测试方法时，仿真程序运行时将调用 Microsoft Fakes 以将代码动态注入 SharePoint 方法，从而将对这些方法的调用转移到 Microsoft.SharePoint.Fakes.dll 中声明的委托。 Microsoft.SharePoint.Emulators.dll 实现仿真方法的委托，以非常接近地模拟实际的 SharePoint 行为。 当测试方法或待测试的组件调用 SharePoint 方法时，导致的行为将是仿真。
 
- ![仿真器执行流](../test/media/ut_emulators_flowchart.png "UT_EMULATORS_FlowChart")
+ ![仿真器执行流](../test/media/ut_emulators_flowchart.png)
 
 ##  <a name="BKMK_Creating_dual_use_classes_and_methods"></a>创建两用类和方法
  若要创建可同时用于针对实际 SharePoint API 的整体测试以及使用仿真程序的独立单元测试的方法，请使用重载构造函数 `SharePointEmulationScope(EmulationMode)` 包装你的测试方法代码。 `EmulationMode` 枚举的两个值指定作用域是否使用仿真程序 (`EmulationMode.Enabled`) 或作用域是否使用 SharePoint API (`EmulationMode.Passthrough`)。
@@ -266,11 +267,11 @@ namspace MySPAppTests
 
 1.  如果希望填充非仿真 SharePoint 类，请编辑 Microsoft.SharePoint.fakes 文件并将该类添加到已填充类的列表。 请参阅 [Microsoft Fakes 中的代码生成、编译和命名约定](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)的[配置存根和垫片的代码生成](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs)部分。
 
-     ![解决方案资源管理器中的 Fakes 文件夹](../test/media/ut_emulators_fakesfilefolder.png "UT_EMULATORS_FakesFileFolder")
+     ![解决方案资源管理器中的 Fakes 文件夹](../test/media/ut_emulators_fakesfilefolder.png)
 
 2.  安装 Microsoft SharePoint 仿真程序包后，如果你已编辑 Microsoft.SharePoint.Fakes 文件，请重新生成测试项目至少一次。 生成项目会在磁盘上的项目根文件夹下创建并填充 **FakesAssembly** 文件夹。
 
-     ![FakesAssembly 文件夹](../test/media/ut_emulators_fakesassemblyfolder.png "UT_EMULATORS_FakesAssemblyFolder")
+     ![FakesAssembly 文件夹](../test/media/ut_emulators_fakesassemblyfolder.png)
 
 3.  添加对 **FakesAssembly** 文件夹中 **Microsoft.SharePoint.14.0.0.0.Fakes.dll** 程序集的引用。
 

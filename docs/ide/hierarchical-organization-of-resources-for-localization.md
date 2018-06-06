@@ -20,11 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a5b9e7367aba2fa987fb68ad99dad20f7cd0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c46fbfe13e7e4c795703a53debedca20ae39c145
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752315"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>用于本地化的资源的分层组织
 
@@ -42,11 +43,11 @@ ms.lasthandoff: 04/26/2018
 
  存储资源的最佳方式是尽可能将资源一般化。 也就是说，尽可能将本地化的字符串、图像等存储在非特定区域性的资源文件中，而不是特定区域性的资源文件中。 例如，如果你具有比利时法语 ("fr-BE") 区域性的资源以及紧邻英语回退资源且位于其上方的资源，那么如果某人使用一个系统上的应用程序且该系统配置为加拿大法语区域性，则可能会发生问题。 该系统查找“fr-CA”的附属程序集，但找不到它，因而加载包含英语回退资源的主程序集，而不是加载法语资源。 下图显示了存在这种问题的情况。
 
- ![仅特定资源](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")
+ ![仅特定资源](../ide/media/vbspecificresourcesonly.gif)
 
  如果遵循上述建议的做法，即将尽可能多的资源放置在“fr”区域性的非特定区域性资源文件中，则加拿大法语用户不会看到为“fr-BE”区域性所标记的资源，而是会看到法语字符串。 下面的情况显示了这一建议使用的方案。
 
- ![NeutralSpecificResources 图](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
+ ![NeutralSpecificResources 图](../ide/media/vbneutralspecificresources.gif)
 
 ## <a name="see-also"></a>请参阅
 

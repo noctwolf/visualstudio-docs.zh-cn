@@ -22,18 +22,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb2106c89b9bbef2babbe7e4d203c32a1d96d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f0241f1e918b4c0022106059b0466a15559f2e84
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747728"
 ---
 # <a name="miscellaneous-files"></a>杂项文件
 你可能需要使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 编辑器独立于项目或解决方案来处理文件。 打开某个解决方案后，可以打开和修改文件，而不必将其添加到解决方案或项目中。 要独立于容器来处理的文件称为杂项文件。 杂项文件位于解决方案和项目的外部，不包括在生成中，而且无法包括在受源代码管理的解决方案中。
 
  由于各种原因，独立于容器打开文件很有用。 用户可能有一个需要在开发基于项目的解决方案时查看的文件，但它对于解决方案的开发并非必不可少。 常见示例包括开发备注或说明、数据库架构和代码剪辑。 此外，可能还需要创建独立文件。
 
- ![解决方案项目](../../ide/reference/media/projects_solutions_misc.gif "Projects_Solutions_Misc")
+ ![解决方案项目](../../ide/reference/media/projects_solutions_misc.gif)
 
  如果启用了相应的文件夹选项，则解决方案资源管理器可为这类文件显示一个“杂项文件”文件夹。 可从[“选项”对话框 ->“环境”->“文档”对话框](../../ide/reference/documents-environment-options-dialog-box.md)中设置这些选项。 关闭某个杂项文件后，该文件与任何特定解决方案或项目都不再关联，除非也启用了使之关联的选项。
 

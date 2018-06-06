@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 483a591e190efa557ffff42c958c18171269e7ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751801"
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>如何：使用负载测试分析器中的计数器面板分析阈值冲突
 
@@ -22,21 +23,21 @@ ms.lasthandoff: 04/26/2018
 
  阈值冲突与特定性能计数器关联，并指示性能计数器已超过或低于设置的阈值。 计数器面板中的图标表示阈值冲突。
 
- ![计数器面板的计算机节点](../test/media/ltest_compnode.png "LTest_CompNode")
+ ![计数器面板的计算机节点](../test/media/ltest_compnode.png)
 
  阈值冲突的图标会从失败的计数器所在的树节点传播到根。 该图标提醒用户注意由于树未展开而可能在树中不可见的计数器上发生的冲突。 可以在上图的计数器面板的“计算机”节点中看到图标示例。
 
  该图标可以为如下所述的几种图标之一：
 
- ![没有阈值冲突](../test/media/icon_ltest_1.gif "Icon_LTest_1")没有阈值冲突。
+ ![没有阈值冲突](../test/media/icon_ltest_1.gif) 无示阈值冲突。
 
- ![在上一个间隔内发生严重阈值冲突](../test/media/icon_ltest_2.gif "Icon_LTest_2")在上一个间隔内发生严重阈值冲突。
+ ![上次间隔中出现严重阈值冲突](../test/media/icon_ltest_2.gif) 在上一个间隔内发生严重阈值冲突。
 
- ![在前面的某个间隔内发生严重阈值冲突](../test/media/icon_ltest_3.gif "Icon_LTest_3")在前面的某个间隔内严重阈值冲突。
+ ![前一间隔中出现严重阈值冲突](../test/media/icon_ltest_3.gif) 在前面的某个间隔内发生严重阈值冲突。
 
- ![在上一个间隔内发生警告阈值冲突](../test/media/icon_ltest_4.gif "Icon_LTest_4")在上一个间隔内发生警告阈值冲突。
+ ![上次间隔中出现警告阈值冲突](../test/media/icon_ltest_4.gif) 在上一个间隔内发生警告阈值冲突。
 
- ![在前面的某个间隔内发生警告阈值冲突](../test/media/icon_ltest_5.gif "Icon_LTest_5")在前面的某个间隔内发生警告阈值冲突。
+ ![前一间隔中出现警告阈值冲突](../test/media/icon_ltest_5.gif) 在前面的某个间隔内发生警告阈值冲突。
 
 ## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>分析计数器面板中的阈值冲突
 
