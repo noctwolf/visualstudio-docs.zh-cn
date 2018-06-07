@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03fff714a8940a4722cb9def8077ce49f366a565
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e7bc06e106a6b42f2225668edb928e6fef7e349b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572236"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的应用程序部署概述
 本主题概述了如何通过使用受信任的应用程序部署技术部署具有提升权限的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/19/2018
  受信任的应用程序部署特定于 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]且只能与 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序一起使用。  
   
 ### <a name="sign-the-deployment"></a>对部署进行签名  
- 获取证书后，必须用它对部署进行签名。 如果正在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 发布者向导部署应用程序，此向导将在你自身尚未指定证书时自动为你生成一个测试证书。 但是，还可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目设计器窗口提供由 CA 提供的证书。  另请参阅 [如何： 发布 ClickOnce 应用程序使用发布向导] (http://msdn.microsoft.com/library/31kztyey\(v = vs.110\)。  
+ 获取证书后，必须用它对部署进行签名。 如果正在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 发布者向导部署应用程序，此向导将在你自身尚未指定证书时自动为你生成一个测试证书。 但是，还可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目设计器窗口提供由 CA 提供的证书。  另请参阅[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
 > [!CAUTION]
 >  我们不建议使用测试证书来部署应用程序。  

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbf876e9a08876eecee977268837993d0e9370c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52c5f0ddbb421f63f9e1483d7a247a54ecbfe2eb
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573344"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML 文本与 XML 架构资源管理器的集成
 
@@ -22,14 +23,14 @@ Visual Basic 支持 XML 文本，这意味着，你可以将 XML 片段合并直
 
 ## <a name="how-to"></a>如何
 
-如果 Visual Basic 项目中的 XSD 文件包括一个 XML 文本，则可以在 XML 架构资源管理器中查看 XML 架构集。 若要查看与 XML 文本关联的架构集，在 XML 文本或导入的 XML 命名空间中的 XML 节点上右键单击并选择**在架构资源管理器中显示**。
+如果你的 Visual Basic 项目中的 XSD 文件包括 XML 文本，则可以查看在中设置的 XML 架构**XML 架构资源管理器**。 若要查看与 XML 文本关联的架构集，在 XML 文本或导入的 XML 命名空间中的 XML 节点上右键单击并选择**在架构资源管理器中显示**。
 
 ![Visual Basic XML 文本；XML 架构资源管理器](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer1.gif)
 
-此操作将并行打开 XML 架构资源管理器和 Visual Basic 文件。
+这将打开**XML 架构资源管理器**并排显示与你的 Visual Basic 文件。
 
 ![Visual Basic XML 文本；XML 架构资源管理器](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif)
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：将 XML 架构设计器用于 XML 文本](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)
+- [如何： 使用 XML 文本的 XML 架构设计器](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

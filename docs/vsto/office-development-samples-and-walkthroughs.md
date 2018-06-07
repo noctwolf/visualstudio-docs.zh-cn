@@ -23,11 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f70b2f786453bf194a6287d7254363d45c41c49b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dae0594107d4ffbfa09d33a3e5bff20f65ea48ba
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572681"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 开发示例和演练
   本部分包含示例应用程序、 示例代码和说明语法、 结构和技术用于生成 Microsoft Office 解决方案的分步演练。  
@@ -45,8 +46,8 @@ ms.lasthandoff: 04/16/2018
 |-----------|-----------------|  
 |[Office 开发示例](../vsto/office-development-samples.md)|提供指向示例应用程序演示如何使用 Visual Studio 中的 Office 和 SharePoint 开发。|  
 |[使用 Word 的演练](../vsto/walkthroughs-using-word.md)|列出分步指南提供在 Visual Studio 中的 Office 开发工具的简介，并帮助你了解如何将 Word 集成到 Office 业务应用程序。|  
-|[使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)|列出分步指南提供在 Visual Studio 中的 Office 开发工具的简介，并帮助你了解如何将 Excel 集成到 Office 业务应用程序。|  
-|[Office 解决方案中的数据演练](../vsto/data-in-office-solutions-walkthroughs.md)|列出分步指南演示如何使用你的解决方案中的数据。|  
+|[Excel 用法演练](../vsto/walkthroughs-using-excel.md)|列出分步指南提供在 Visual Studio 中的 Office 开发工具的简介，并帮助你了解如何将 Excel 集成到 Office 业务应用程序。|  
+|[Office 解决方案演练中的数据](../vsto/data-in-office-solutions-walkthroughs.md)|列出分步指南演示如何使用你的解决方案中的数据。|  
 |[Office UI 自定义演练](../vsto/office-ui-customization-walkthroughs.md)|列出分步指南演示如何自定义 Microsoft Office 应用程序的用户界面 (UI)。|  
 |[安全和部署演练](../vsto/security-and-deployment-walkthroughs.md)|列出分步指南演示如何设置安全策略以允许你的解决方案，若要运行，以及如何部署你的解决方案。|  
   
@@ -54,9 +55,9 @@ ms.lasthandoff: 04/16/2018
   
 |主题|描述|  
 |-----------|-----------------|  
-|[入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|提供有关安装程序、 项目模板、 Office 主互操作程序集，和中的 Office 开发的新增信息的链接。|  
-|[Visual Studio 中 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)|从开发人员和最终用户的角度介绍如何将托管的代码 Office 解决方案的工作，并包括有关如何将托管代码适用于 Office 文档和应用程序的信息。|  
-|[Office 编程中的常规任务](../vsto/common-tasks-in-office-programming.md)|列出有关与 Visual Studio 中的 Office 开发的编程的常见问题并提供指向可帮助解决常见问题的主题。|  
+|[要开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|提供有关安装程序、 项目模板、 Office 主互操作程序集，和中的 Office 开发的新增信息的链接。|  
+|[Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)|从开发人员和最终用户的角度介绍如何将托管的代码 Office 解决方案的工作，并包括有关如何将托管代码适用于 Office 文档和应用程序的信息。|  
+|[Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)|列出有关与 Visual Studio 中的 Office 开发的编程的常见问题并提供指向可帮助解决常见问题的主题。|  
 |[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)|提供指向有关如何创建 Microsoft Office 解决方案以及你的解决方案中的程序集的角色的信息。|  
 |[操作窗格概述](../vsto/actions-pane-overview.md)|提供名为操作窗格中的文档级任务窗格的概述。|  
   

@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fadffd33582e97c3c0ad714f535afa0da52e1693
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571412"
 ---
 # <a name="office-development-samples"></a>Office 开发示例
   Visual Studio 包含示例应用程序，这些应用程序演示如何使用 Microsoft Office 开发人员工具来创建 Office 解决方案。 这些示例中的代码阐释了用于生成 Office 解决方案的语法、结构和技术。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/16/2018
 |VBA 和 VSTO 互操作性示例|演示如何从工作簿的 Visual Basic for Applications (VBA) 代码调用 Excel 文档级自定义项中的方法。<br /><br /> 只能联机访问本示例。|  
   
 ## <a name="see-also"></a>请参阅  
- [MSDN 开发人员示例： 通过代码示例学习](http://go.microsoft.com/fwlink/?LinkID=248199)   
- [Office 编程中的常规任务](../vsto/common-tasks-in-office-programming.md)  
+ [MSDN 开发人员示例： 了解整个代码示例](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)  
   
   

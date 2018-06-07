@@ -1,5 +1,5 @@
 ---
-title: Office 解决方案中的后期绑定 |Microsoft 文档
+title: 在 Office 解决方案中的后期绑定
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e205874e1c5c4e5de639e28768d6369b43c1e1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5616ce958747f90c8015df858f657299ba52852b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572545"
 ---
-# <a name="late-binding-in-office-solutions"></a>Office 解决方案中的后期绑定
+# <a name="late-binding-in-office-solutions"></a>在 Office 解决方案中的后期绑定
   Office 应用程序的对象模型中的某些类型提供可通过后期绑定功能的功能。 例如，一些方法和属性可以返回不同类型的具体取决于 Office 应用程序，上下文对象，并且某些类型可以公开不同的方法或在不同上下文中的属性。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
  Visual Basic 项目的位置**Option Strict**是关闭和 Visual C# 项目面向[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]可以直接处理采用这些后期绑定功能的类型。  
   
-## <a name="implicit-and-explicit-casting-of-object-return-values"></a>对象的返回值的隐式和显式强制转换  
+## <a name="implicit-and-explicit-casting-of-object-return-values"></a>隐式和显式强制转换对象的返回值  
  许多方法和属性在 Microsoft Office 主互操作程序集 (Pia) 返回<xref:System.Object>值，因为它们可以返回多个不同类型的对象。 例如，<xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A>属性返回<xref:System.Object>因为其返回值可以是<xref:Microsoft.Office.Interop.Excel.Worksheet>或<xref:Microsoft.Office.Interop.Excel.Chart>对象，具体取决于活动的工作表是什么。  
   
  当方法或属性返回<xref:System.Object>，你必须显式 （在 Visual Basic 中) 将对象转换为 Visual Basic 项目中的正确类型其中**Option Strict**上。 不需要显式强制转换<xref:System.Object>Visual Basic 项目中返回值其中**Option Strict**处于关闭状态。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
  [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]  
   
-## <a name="accessing-members-that-are-available-only-through-late-binding"></a>仅可通过提供后期绑定的成员访问  
+## <a name="access-members-that-are-available-only-through-late-binding"></a>仅可通过提供后期绑定访问成员  
  某些属性和 Office Pia 中的方法是仅可通过提供后期绑定。 在 Visual Basic 中项目的位置**Option Strict**是关闭或 Visual C# 项目中面向[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]，你可以使用这些语言中的后期绑定功能访问后期绑定成员。 在 Visual Basic 中项目的位置**Option Strict**处于打开状态，你必须使用反射来访问这些成员。  
   
 ### <a name="examples"></a>示例  

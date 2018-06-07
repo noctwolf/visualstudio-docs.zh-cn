@@ -1,5 +1,5 @@
 ---
-title: 托管引用 （在 Visual Studio 中的 Office 开发） |Microsoft 文档
+title: 托管的参考 （Visual Studio 中的 Office 开发）
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b0b6d7b6fdbb55030088f33fc235429d0b6142e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3c991b6507ded441dd37ec92cb5efd0e2167285
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572187"
 ---
-# <a name="managed-reference-office-development-in-visual-studio"></a>托管参考（Visual Studio 中的 Office 开发）
+# <a name="managed-reference-office-development-in-visual-studio"></a>托管的参考 （Visual Studio 中的 Office 开发）
   本部分包含在针对 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的 Office 项目中使用的命名空间和类型的 API 参考文档。 有关命名空间和在面向.NET Framework 3.5 的 Office 项目中使用的类型的 API 参考文档，请参阅 Visual Studio 文档中的以下参考部分： [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658)。  
   
 > [!NOTE]  
@@ -63,8 +64,8 @@ ms.lasthandoff: 04/16/2018
  包含用于生成 Office 项目的 MSBuild 任务类。  
   
 ## <a name="see-also"></a>请参阅  
- [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [入门&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Visual Studio tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
+ [要开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)  
   

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6b2143c7a2fd39cd7a8d2df797f68a706a2ec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b4758fbebea12b014f92bed59e851210509cdbb9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573123"
 ---
 # <a name="how-to-use-xml-snippets"></a>如何： 使用 XML 代码段
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/26/2018
 
 3. 选择一个代码段使用鼠标从列表或通过键入名称的段，并按**选项卡**或**Enter**。
 
-### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>通过“智能感知完成单词”列表插入代码段
+### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>插入代码段通过智能感知完成单词列表
 
 1. 将光标置于要插入 XML 代码段的位置。
 
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > **侧**命令也是可通过键盘快捷方式 (**Ctrl**+**K**，然后**Ctrl** +**S**)。
 
-### <a name="to-use-surround-with-from-the-context-menu"></a>在上下文菜单中使用“环绕”命令
+### <a name="to-use-surround-with-from-the-context-menu"></a>若要从上下文菜单中使用外侧代码
 
 1. 在“XML 编辑器”中选择要环绕的文本。
 
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/26/2018
 
 3. 选择一个代码段使用鼠标，从列表或通过键入名称的段，并按**选项卡**或**Enter**。
 
-### <a name="to-use-surround-with-from-the-intellisense-menu"></a>若要使用环绕从 IntelliSense 菜单
+### <a name="to-use-surround-with-from-the-intellisense-menu"></a>若要从 IntelliSense 菜单使用外侧代码
 
 1. 在“XML 编辑器”中选择要环绕的文本。
 
@@ -99,7 +100,7 @@ ms.lasthandoff: 04/26/2018
 
 3. 选择一个代码段使用鼠标，从列表或通过键入名称的段，并按**选项卡**或**Enter**。
 
-## <a name="using-xml-snippets"></a>使用 XML 代码段
+## <a name="use-xml-snippets"></a>使用 XML 代码段
 
 选择了 XML 代码段后，代码段的文本将自动插入光标位置。 代码段中的任何可编辑字段都将突出显示，并自动选中第一个可编辑字段。 当前选中的字段将框选。
 
@@ -109,10 +110,10 @@ ms.lasthandoff: 04/26/2018
 
 按**Enter**或**Esc**取消字段编辑并使编辑器返回正常。
 
-可以通过修改中的代码片段字段设置更改为可编辑的代码段字段的默认颜色**字体和颜色**窗格**选项**对话框。 有关详细信息，请参阅[如何： 更改字体和颜色在编辑器中的](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+可以通过修改更改可编辑的代码段字段的默认颜色**代码片段字段**中设置**字体和颜色**窗格**选项**对话框。 有关详细信息，请参阅[如何： 更改字体和颜色在编辑器中的](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ## <a name="see-also"></a>请参阅
 
-- [XML 代码片断](../xml-tools/xml-snippets.md)
-- [如何：从 XML 架构生成 XML 代码片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-- [如何：创建 XML 代码片段](../xml-tools/how-to-create-xml-snippets.md)
+- [XML 代码段](../xml-tools/xml-snippets.md)
+- [如何： 从 XML 架构生成 XML 代码段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [如何： 创建 XML 代码段](../xml-tools/how-to-create-xml-snippets.md)
