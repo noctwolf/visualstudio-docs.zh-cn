@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a41f0843b33e1f73d9a2449fe954d8673350fc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573240"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 特性
 [DebuggerDisplayAttribute 类](/dotnet/api/system.diagnostics.debuggerdisplayattribute)控制对象、 属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。  
@@ -87,6 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
+"，nq"后缀指示表达式计算器才能显示的最终值时删除引号 (nq = 无加引号)。 
   
 ## <a name="example"></a>示例  
  下面的代码示例演示如何使用 `DebuggerDisplay`以及 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在调试器变量窗口（如 **“监视”** 窗口）中查看时，它生成类似以下内容的扩展：  
@@ -94,7 +96,7 @@ public sealed class MyClass
 |**名称**|**“值”**|**Type**|  
 |--------------|---------------|--------------|  
 |键|"three"|object {string}|  
-|值|3|object {int}|  
+|“值”|3|object {int}|  
   
 ```csharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  

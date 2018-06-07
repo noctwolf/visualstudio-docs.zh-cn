@@ -22,11 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 234f89f2d0a28c0836ee06df4c49c3ab60f102ce
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d3cc80a6ca29583fdc445b507aeb8f87267459d8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572720"
 ---
 # <a name="create-bootstrapper-packages"></a>创建引导程序包
 安装程序是可配置为检测并安装可再发行组件（如 Windows Installer (.msi) 文件和可执行程序）的一般安装程序。 安装程序也称为“引导程序”。 它通过一组 XML 清单进行编程，这些清单指定用于管理组件安装的元数据。  每个可再发行组件或先决条件中，出现在**先决条件**ClickOnce 的对话框中是一个引导程序包。 一个引导程序包是一组目录和文件，其中包含用于说明系统必备组件的安装方式的清单文件。 
@@ -77,7 +78,7 @@ ms.lasthandoff: 05/10/2018
   
 每个可再发行组件均位于程序包目录下它们自己的子文件夹中。 产品清单和可再发行文件必须可将放入此子文件夹。 必须根据区域性名称命名的子文件夹中放置组件和包清单的本地化的版本。  
   
-这些文件复制到引导程序文件夹中之后，相应的引导程序包自动出现在 Visual Studio**先决条件**对话框。 如果你的自定义引导程序包未显示，关闭并重新打开**先决条件**对话框。 有关详细信息，请参阅 [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)。  
+这些文件复制到引导程序文件夹中之后，相应的引导程序包自动出现在 Visual Studio**先决条件**对话框。 如果你的自定义引导程序包未显示，关闭并重新打开**先决条件**对话框。 有关详细信息，请参阅 [“系统必备”对话框](../ide/reference/prerequisites-dialog-box.md)。  
   
 下表显示由引导程序自动填充的属性。  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 05/10/2018
 |ApplicationName|应用程序的名称。|  
 |ProcessorArchitecture|可执行文件的目标平台的处理器和每字位数。 包括以下值：<br /><br /> -Intel<br />-IA64<br />AMD64|  
 |[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95、Windows 98 或 Windows ME 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).xaspx)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
+|[自](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
 |[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|安装期间运行的 Windows Installer 程序集 (msi.dll) 的版本。|  
 |[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|如果用户具有管理员特权，则设置此属性。 值为 true 或 false。|  
 |InstallMode|安装模式指示需要安装组件的位置。 包括以下值：<br /><br /> 从供应商的网站安装-HomeSite-先决条件。<br />从你选择的位置安装-SpecificSite-先决条件。<br />从与应用程序相同的位置安装-SameSite-先决条件。|  

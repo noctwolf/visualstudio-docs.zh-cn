@@ -24,13 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c7bd0f38d413fbd3d809773a124699e0e883287d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572161"
 ---
-# <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 Office 和 SharePoint 开发
+# <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 office 和 SharePoint 开发
   可以通过创建用户从 [Office 应用商店](https://store.office.com/) 或组织目录中下载的轻量级应用程序或外接程序来扩展 Microsoft Office 和 SharePoint，或者通过创建用户在计算机上安装的基于 .NET Framework 的解决方案来扩展。  
   
  本主题内容：  
@@ -49,8 +50,6 @@ ms.lasthandoff: 05/22/2018
  与 VSTO 外接程序和解决方案相比，这些外接程序的需求量很小，几乎可以使用任何 Web 编程技术（例如 HTML5、JavaScript、CSS3 和 XML）生成。  若要开始，请使用 Visual Studio 中的 Office 开发人员工具，或使用代码名为“Napa Office 365 开发工具”的基于 Web 的轻量级工具，通过这些工具，可以创建项目、编写代码并在浏览器中运行外接程序。  
   
  ![适用于 Office 和 SharePoint 概念模型的应用](../vsto/media/officeandsharepointapps2015.png "适用于 Office 和 SharePoint 概念模型的应用")  
-  
-
   
 ### <a name="build-an-office-add-in"></a>生成 Office 外接程序  
  若要扩展 Office 的功能，可生成 Office 外接程序。 它基本上是一个托管在 Office 应用程序，例如 Excel、 Word、 Outlook 和 PowerPoint 的网页。 你的应用程序可以将功能添加到文档、工作表、电子邮件、约会、演示文稿和项目中。  
@@ -83,7 +82,7 @@ ms.lasthandoff: 05/22/2018
 |--------|---------|  
 |了解有关 SharePoint 外接程序的详细信息，然后生成一个外接程序。|[SharePoint 外接程序](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |比较 SharePoint 外接程序和传统的 SharePoint 解决方案。|[SharePoint 外接程序与 SharePoint 解决方案相比较](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|选择是生成 SharePoint 外接程序还是 SharePoint 解决方案。|[在 SharePoint 外接程序和 SharePoint 解决方案之间做出选择](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|选择是生成 SharePoint 外接程序还是 SharePoint 解决方案。|[SharePoint 外接程序和 SharePoint 解决方案之间作出决定](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
 ##  <a name="Add-ins"></a> 创建一个 VSTO 外接程序  
  创建 VSTO 外接程序以面向 Office 2007 或 Office 2010，或者扩展 Office 2013 和 Office 2016，实现，可以使用 Office 外接程序。VSTO 外接程序只能在桌面上运行。 用户必须安装 VSTO 外接程序，因此它们通常就更加困难进行部署并提供支持。  但是，VSTO 外接程序可以与 Office 更紧密地集成。 例如，可以向 Office 功能区添加选项卡和控件并执行高级自动化任务，例如合并文档或修改图表。 你可以借助 .NET Framework 并使用 C# 和 Visual Basic 与 Office 对象进行交互。  

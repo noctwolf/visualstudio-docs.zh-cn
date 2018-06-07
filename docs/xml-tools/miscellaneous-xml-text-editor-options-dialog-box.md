@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dfc0a4e3841f30c2be81b60b2e86d9fd29bb801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571765"
 ---
-# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>杂项，XML，文本编辑器，“选项”对话框
+# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>杂项，XML，文本编辑器，选项对话框
 
 使用此对话框可以更改“XML 编辑器”的自动完成和架构设置。 你可以访问**选项**对话框**工具**菜单。
 
@@ -70,5 +71,5 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>请参阅
 
-- [“属性”窗口 -> XML 文档属性](../xml-tools/xml-document-properties-properties-window.md)
-- [“XML 编辑器”的组件](../xml-tools/xml-editor-components.md)
+- [XML 文档属性，属性窗口](../xml-tools/xml-document-properties-properties-window.md)
+- [XML 编辑器组件](../xml-tools/xml-editor-components.md)

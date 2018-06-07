@@ -20,29 +20,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5273baec024da8eb339e8f3d12541fc6e98e97c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ea0b0f59731f711dc32258aea31358626825f5d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573084"
 ---
 # <a name="namedrange-control"></a>NamedRange 控件
-  <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件是一个具有唯一名称的范围，可用于公开事件且可以绑定到数据。 有关详细信息，请参阅 [Excel Object Model Overview](../vsto/excel-object-model-overview.md)。  
+  <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件是一个具有唯一名称的范围，可用于公开事件且可以绑定到数据。 有关详细信息，请参阅[Excel 对象模型概述](../vsto/excel-object-model-overview.md)。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="creating-the-control"></a>创建控件  
+## <a name="create-the-control"></a>创建控件  
  在文档级项目中，你可以在设计时或在运行时将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到 Microsoft Office Excel 工作表中。  
   
- 在 VSTO 外接程序中，你可以在运行时将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到工作表中。 有关详细信息，请参阅 [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。  
+ 在 VSTO 外接程序中，你可以在运行时将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到工作表中。 有关详细信息，请参阅[如何： 添加 NamedRange 控件添加到工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。  
   
 > [!NOTE]  
->  默认情况下，工作表关闭时，动态创建的命名范围不作为宿主控件保留在工作表中。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+>  默认情况下，工作表关闭时，动态创建的命名范围不作为宿主控件保留在工作表中。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
  <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件可以仅包含特定的工作表上的范围。 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件不能具有适用于所有表的相对名称并且它们不能包含跨越工作簿中的两个或多个工作表的范围（3-D 范围）。  
   
-## <a name="binding-data-to-the-control"></a>将数据绑定到控件  
- 命名的区域似乎很适合复杂的数据绑定，因为它可以有多个单元格；但是，范围仅仅是单元格的集合，无法轻易地从数据集映射到特定列。 因此， <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件仅支持简单数据绑定。 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件可用于复杂数据绑定。 有关更多信息，请参见 [ListObject Control](../vsto/listobject-control.md)。  
+## <a name="bind-data-to-the-control"></a>将数据绑定到控件  
+ 命名的区域似乎很适合复杂的数据绑定，因为它可以有多个单元格；但是，范围仅仅是单元格的集合，无法轻易地从数据集映射到特定列。 因此， <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件仅支持简单数据绑定。 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件可用于复杂数据绑定。 有关详细信息，请参阅[ListObject 控件](../vsto/listobject-control.md)。  
   
  可以使用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 属性将 <xref:System.Windows.Forms.Control.DataBindings%2A> 控件绑定到数据源。 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件的默认数据绑定属性是 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>。  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="formatting"></a>格式化  
  可应用于 <xref:Microsoft.Office.Interop.Excel.Range> 的格式设置也可应用于 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件。 这包括边框、字体、数字格式和样式。  
   
-## <a name="renaming-the-control"></a>重命名控件  
+## <a name="rename-the-control"></a>重命名控件  
  当你将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件从“工具箱” 添加到工作表时，Visual Studio 会自动生成该控件的名称。 你可以在“属性”  窗口中更改名称。  
   
 ## <a name="events"></a>事件  
@@ -74,10 +75,10 @@ ms.lasthandoff: 04/16/2018
 -   <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>  
   
 ## <a name="see-also"></a>请参阅  
- [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)   
+ [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [在运行时扩展 Word 文档和 Excel 工作簿在 VSTO 外接程序](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [扩展 Word 文档和 Excel VSTO 外接程序在运行时中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [如何： 向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
