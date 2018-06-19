@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633697"
 ---
 # <a name="unterminated-comment"></a>未终止的注释
 开始一个多行注释块，但未正确终止它。 多行注释开头"/ *"组合，并以反序结束"\*/"组合。 下面是一个示例：  

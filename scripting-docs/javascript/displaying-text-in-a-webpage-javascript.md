@@ -1,12 +1,13 @@
 ---
-title: "在网页中显示文本 (JavaScript)) | Microsoft Docs"
-ms.custom: 
+title: 在网页中显示文本 (JavaScript)) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - JavaScript, write
 - JavaScript, writing text
 ms.assetid: 3c2455e7-2402-45f2-9545-77a2b2490527
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569257"
 ---
 # <a name="displaying-text-in-a-webpage-javascript"></a>在网页中显示文本 (JavaScript)
 可通过多种方式在网页中显示文本。 每种方式都有优点和缺点，并且支持特定的用途。  

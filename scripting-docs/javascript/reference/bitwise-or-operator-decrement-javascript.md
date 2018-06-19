@@ -1,13 +1,13 @@
 ---
-title: "按位 OR 运算符 (|)(JavaScript) |Microsoft 文档"
-ms.custom: 
+title: 按位 OR 运算符 (|)(JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '|'
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - OR operator
 - '| operator'
 ms.assetid: ffc8f758-3151-478e-bafb-fc78f1c469a0
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633747"
 ---
 # <a name="bitwise-or-operator--javascript"></a>按位或运算符 (|) (JavaScript)
 对两个表达式执行按位“或”。  
@@ -51,7 +52,7 @@ result = expression1 | expression2
  任何表达式。  
   
 ## <a name="remarks"></a>备注  
- **&#124;**运算符查看两个表达式的值的二进制表示形式，并执行按位或运算。 此操作的结果的行为，如下所示：  
+ **&#124;** 运算符查看两个表达式的值的二进制表示形式，并执行按位或运算。 此操作的结果的行为，如下所示：  
   
 ```JavaScript  
 0101   (expression1)  

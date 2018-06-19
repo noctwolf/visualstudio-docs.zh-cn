@@ -1,13 +1,13 @@
 ---
-title: "无法分配到 &#39; 这 &#39; |Microsoft 文档"
-ms.custom: 
+title: 无法分配到 &#39; 这 &#39; |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5000
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633157"
 ---
 # <a name="cannot-assign-to-39this39"></a>无法分配到 &#39; 这 &#39;
 你试图将值赋给**这**。 **这**是[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]引用以下任一项的关键字：  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/27/2017
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   请不要尝试将分配给**这**。 若要访问的属性或方法实例化对象，使用点运算符 (例如，circle**。**半径）。  
+-   请不要尝试将分配给**这**。 若要访问的属性或方法实例化对象，使用点运算符 (例如，circle **。** 半径）。  
   
     > [!NOTE]
     >  不能将命名的用户创建的变量**这**; 它是[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]保留字。  

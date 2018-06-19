@@ -1,19 +1,20 @@
 ---
-title: "setUint32 方法 (DataView) |Microsoft 文档"
-ms.custom: 
+title: setUint32 方法 (DataView) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: ab2894fe-4cdc-40c8-9503-951e42ca61e7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639437"
 ---
 # <a name="setuint32-method-dataview"></a>setUint32 方法 (DataView)
 从开始处的视图，请指定的字节偏移量的位置中设置的 Uint32 值。 没有任何对齐约束;多字节值可能会设置任何偏移量的位置。  

@@ -1,13 +1,13 @@
 ---
-title: "toLocaleUpperCase 方法 (String) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: toLocaleUpperCase 方法 (String) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - toLocaleUpperCase
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - toLocaleUpperCase method
 ms.assetid: e927adb6-475e-44b2-91f7-cedda10a39b0
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640427"
 ---
 # <a name="tolocaleuppercase-method-string-javascript"></a>toLocaleUpperCase 方法 (String) (JavaScript)
 返回一个字符串，其中所有字母字符都被转换为大写形式，并考虑主机环境的当前区域设置。  

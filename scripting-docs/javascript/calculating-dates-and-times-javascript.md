@@ -1,12 +1,13 @@
 ---
-title: "计算日期和时间 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 计算日期和时间 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -18,7 +19,7 @@ helpviewer_keywords:
 - date comparison [JavaScript]
 - date and time calculations [JavaScript]
 ms.assetid: ea976f78-d934-479b-9056-880390d8bddd
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569497"
 ---
 # <a name="calculating-dates-and-times-javascript"></a>计算日期和时间 (JavaScript)
 可使用 [Date 对象](../javascript/reference/date-object-javascript.md)执行常见的日历和时钟任务，如比较日期和计算运行时间。  

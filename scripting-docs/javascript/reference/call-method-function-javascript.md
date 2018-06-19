@@ -1,13 +1,13 @@
 ---
-title: "调用方法 (Function) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: 调用方法 (Function) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - call
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - call method
 ms.assetid: fa356dec-48e6-4f75-8bf3-c1814a76818f
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634107"
 ---
 # <a name="call-method-function-javascript"></a>call 方法 (Function) (JavaScript)
 调用的对象，并替换当前对象的另一个对象的方法。  

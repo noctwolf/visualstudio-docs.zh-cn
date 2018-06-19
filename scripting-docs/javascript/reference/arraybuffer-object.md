@@ -1,19 +1,20 @@
 ---
-title: "ArrayBuffer 对象 |Microsoft 文档"
-ms.custom: 
+title: ArrayBuffer 对象 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9fda1261-f450-493b-b3db-ecfa9ca93cd7
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634317"
 ---
 # <a name="arraybuffer-object"></a>ArrayBuffer 对象
 表示二进制数据的原始缓冲区，可用于存储不同类型化数组的数据。 `ArrayBuffers`无法读取或写入到直接，但可传递给类型化数组或[DataView 对象](../../javascript/reference/dataview-object.md)来解释原始缓冲区，根据需要。  

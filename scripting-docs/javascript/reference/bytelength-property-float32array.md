@@ -1,19 +1,20 @@
 ---
-title: "byteLength 属性 (Float32Array) |Microsoft 文档"
-ms.custom: 
+title: byteLength 属性 (Float32Array) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: ea55beb2-e79f-4706-bcc9-6fdbf89e0fe9
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633557"
 ---
 # <a name="bytelength-property-float32array"></a>byteLength 属性 (Float32Array)
 只读。 此数组距离其 ArrayBuffer 开始处的长度（以字节为单位），在构造时已固定。  

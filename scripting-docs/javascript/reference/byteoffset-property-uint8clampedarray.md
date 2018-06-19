@@ -1,19 +1,20 @@
 ---
-title: "byteOffset 属性 (Uint8ClampedArray) |Microsoft 文档"
-ms.custom: 
+title: byteOffset 属性 (Uint8ClampedArray) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: bfc22cf4-00e3-4e2c-8419-032b179aa8da
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633687"
 ---
 # <a name="byteoffset-property-uint8clampedarray"></a>byteOffset 属性 (Uint8ClampedArray)
 只读。 此数组开始处的偏移量其[ArrayBuffer](../../javascript/reference/arraybuffer-object.md)，以字节为单位，如在构造时已固定。  

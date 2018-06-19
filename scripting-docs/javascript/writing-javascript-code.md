@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571497"
 ---
 # <a name="writing-javascript-code"></a>编写 JavaScript 代码
 同许多其他编程语言一样，[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 按语句、由相关语句集构成的块和注释进行组织。 在一条语句内，可以使用变量、字符串、数字和表达式。  

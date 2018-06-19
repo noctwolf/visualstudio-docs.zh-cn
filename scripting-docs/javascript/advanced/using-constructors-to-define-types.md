@@ -1,12 +1,13 @@
 ---
-title: "使用构造函数定义类型 | Microsoft Docs"
-ms.custom: 
+title: 使用构造函数定义类型 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -19,7 +20,7 @@ helpviewer_keywords:
 - objects, creating [JavaScript]
 - constructors, creating
 ms.assetid: e869702e-4caf-4513-8dd5-fe690535f8aa
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569177"
 ---
 # <a name="using-constructors-to-define-types"></a>使用构造函数定义类型
 构造函数是一个实例化特定类型的 [Object](../../javascript/objects-and-arrays-javascript.md) 的函数。 使用 new 关键字调用构造函数。 以下是包含内置 JavaScript 对象和自定义对象的构造函数的几个示例。  

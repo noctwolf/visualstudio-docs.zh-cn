@@ -1,12 +1,13 @@
 ---
-title: "变量范围 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 变量范围 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - variable scope [JavaScript]
 - variables, scope [JavaScript]
 ms.assetid: a811a9a6-856f-46e9-8be3-f2d22a0c245f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569317"
 ---
 # <a name="variable-scope-javascript"></a>变量作用域 (JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 有两个范围：全局和局部。 在函数定义之外声明的变量是全局变量，它的值可在整个程序中访问和修改。 在函数定义内声明的变量是局部变量。 每当执行函数时，都会创建和销毁该变量，且无法通过函数之外的任何代码访问该变量。 JavaScript 不支持块范围（其中通过一组大括号 `{. . .}` 定义新范围），但块范围变量的特殊情况除外。  

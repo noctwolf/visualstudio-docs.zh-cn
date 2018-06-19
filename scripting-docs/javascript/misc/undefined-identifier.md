@@ -1,13 +1,13 @@
 ---
-title: "未定义的标识符 |Microsoft 文档"
-ms.custom: 
+title: 未定义的标识符 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5009
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633577"
 ---
 # <a name="undefined-identifier"></a>未定义标识符
 你尝试使用标识符的[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]编译器无法识别。 每当你使用，将返回未定义的值：  

@@ -1,19 +1,20 @@
 ---
-title: "findIndex 方法 (Array) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: findIndex 方法 (Array) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 3a200cf0-db67-4c7b-89f8-5e9f5dc1a926
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636577"
 ---
 # <a name="findindex-method-array-javascript"></a>findIndex 方法（数组）(JavaScript)
 返回满足回调函数中指定的测试条件的第一个数组元素的索引值。  

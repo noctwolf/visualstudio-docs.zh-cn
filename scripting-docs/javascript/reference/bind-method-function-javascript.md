@@ -1,12 +1,13 @@
 ---
-title: "bind 方法 (Function) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: bind 方法 (Function) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -18,7 +19,7 @@ helpviewer_keywords:
 - bind method [JavaScript]
 - this keyword [JavaScript], bind method
 ms.assetid: 28946f47-b758-48cf-b508-610a0f2f6e19
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634307"
 ---
 # <a name="bind-method-function-javascript"></a>bind 方法 (Function) (JavaScript)
 对于给定函数，创建具有与原始函数相同的主体的绑定函数。 在绑定函数中，`this` 对象将解析为传入的对象。 绑定函数具有指定的初始参数。  

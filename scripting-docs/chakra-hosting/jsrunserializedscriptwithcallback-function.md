@@ -1,13 +1,13 @@
 ---
-title: "JsRunSerializedScriptWithCallback 函数 | Microsoft Docs"
-ms.custom: 
+title: JsRunSerializedScriptWithCallback 函数 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0608d778-f65b-4dc5-a745-364aac57ef59
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568857"
 ---
 # <a name="jsrunserializedscriptwithcallback-function"></a>JsRunSerializedScriptWithCallback 函数
 运行序列化脚本。     仅在需要时才提供延迟加载脚本源代码的功能。  

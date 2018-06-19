@@ -1,12 +1,13 @@
 ---
-title: "HTML 标记方法 (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: HTML 标记方法 (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -27,7 +28,7 @@ helpviewer_keywords:
 - sub method [JavaScript]
 - big method [JavaScript]
 ms.assetid: 50376223-be95-4aa4-9147-9e738a5d3cfa
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -36,6 +37,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638647"
 ---
 # <a name="html-tag-methods-javascript"></a>HTML 标记方法 (JavaScript)
 你可以使用 HTML 标记方法将放置在文本周围的 HTML 元素`String`对象。  

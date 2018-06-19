@@ -1,19 +1,20 @@
 ---
-title: "类型化数组 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 类型化数组 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: fa82c562-0ebf-4559-aecc-166e59f7fb64
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569357"
 ---
 # <a name="typed-arrays-javascript"></a>类型化数组 (JavaScript)
 可以使用类型化数组来处理来自网络协议、二进制文件格式和原始图形缓冲区等源的二进制数据。 类型化数组还可用于管理具有已知字节布局的内存中二进制数据。  
