@@ -1,16 +1,16 @@
 ---
-title: "IDebugStackFrame 接口 |Microsoft 文档"
-ms.custom: 
+title: IDebugStackFrame 接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugStackFrame interface
 ms.assetid: e95c1b4f-17c1-490c-a56b-c25fa45d4822
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727527"
 ---
 # <a name="idebugstackframe-interface"></a>IDebugStackFrame 接口
 表示线程堆栈上的逻辑的堆栈帧。 调用`IDebugStackFrame::QueryInterface`方法来获取`IDebugExpressionContext`接口，允许评估和监视窗口的表达式。  

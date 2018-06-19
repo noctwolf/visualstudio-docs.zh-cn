@@ -1,11 +1,11 @@
 ---
-title: "IDebugAsyncOperation::GetResult |Microsoft 文档"
-ms.custom: 
+title: IDebugAsyncOperation::GetResult |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugAsyncOperation.GetResult
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugAsyncOperation::GetResult
 ms.assetid: 56d43365-6b12-4213-a97c-953c40d7b7f6
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726157"
 ---
 # <a name="idebugasyncoperationgetresult"></a>IDebugAsyncOperation::GetResult
 提供的返回值和从同步调试操作返回的对象参数。  

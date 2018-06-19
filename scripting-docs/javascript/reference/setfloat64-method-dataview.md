@@ -1,19 +1,20 @@
 ---
-title: "setFloat64 方法 (DataView) |Microsoft 文档"
-ms.custom: 
+title: setFloat64 方法 (DataView) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 63d2c631-876f-4d4b-b3b6-62b0aaffe6c5
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639957"
 ---
 # <a name="setfloat64-method-dataview"></a>setFloat64 方法 (DataView)
 从开始处的视图，请指定的字节偏移量的位置中设置 Float64 值。 没有任何对齐约束;多字节值可能会设置任何偏移量的位置。  

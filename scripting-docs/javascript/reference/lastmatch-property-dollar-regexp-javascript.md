@@ -1,13 +1,13 @@
 ---
-title: "lastMatch 属性 ($&amp;) (RegExp) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: lastMatch 属性 ($&amp;) (RegExp) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - $&
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - lastMatch property ($%)
 - lastMatch property ($&)
 ms.assetid: d223836d-5235-48a5-a926-d20764ad3f14
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637837"
 ---
 # <a name="lastmatch-property-amp-regexp-javascript"></a>lastMatch 属性 ($&amp;) (RegExp) (JavaScript)
 来自任何正则表达式搜索中返回的最后一个匹配的字符。 只读。  

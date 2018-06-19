@@ -1,13 +1,13 @@
 ---
-title: "JSON 对象 (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: JSON 对象 (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - JSON
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - JSON object
 ms.assetid: 0279a0e0-70bf-451a-a78e-0da4e2fdeb9a
-caps.latest.revision: 
+caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638047"
 ---
 # <a name="json-object-javascript"></a>JSON 对象 (JavaScript)
 一个内部对象，提供用于在 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 值和 JavaScript 对象表示法 (JSON) 格式之间来回转换的函数。 `JSON.stringify` 函数可将 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 值序列化为 JSON 文本。 `JSON.parse` 函数可反序列化 JSON 文本以生成 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 值。  

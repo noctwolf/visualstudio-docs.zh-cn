@@ -1,11 +1,11 @@
 ---
-title: "IEnumDebugExpressionContexts::Skip |Microsoft 文档"
-ms.custom: 
+title: IEnumDebugExpressionContexts::Skip |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IEnumDebugExpressionContexts.Skip
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IEnumDebugExpressionContexts::Skip
 ms.assetid: 3498cbb5-8581-4dcd-b016-e86b049c7831
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727957"
 ---
 # <a name="ienumdebugexpressioncontextsskip"></a>IEnumDebugExpressionContexts::Skip
 跳过指定的数目的段中枚举序列。  

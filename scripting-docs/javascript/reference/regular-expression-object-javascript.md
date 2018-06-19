@@ -1,13 +1,13 @@
 ---
-title: "正则表达式对象 (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: 正则表达式对象 (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - RegularExpression_JavaScript
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - regular expressions, RegExp object
 - RegExp object, overview
 ms.assetid: 346aa83e-a045-47ea-acae-b42c7b121534
-caps.latest.revision: 
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642037"
 ---
 # <a name="regular-expression-object-javascript"></a>正则表达式对象 (JavaScript)
 一个对象，该对象包含正则表达式模式以及标识如何应用该模式的标志。  

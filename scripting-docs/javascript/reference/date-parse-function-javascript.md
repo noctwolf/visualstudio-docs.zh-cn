@@ -1,13 +1,13 @@
 ---
-title: "Date.parse 函数 (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: Date.parse 函数 (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - parse
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - parse function [JavaScript]
 - Date.parse function [JavaScript]
 ms.assetid: ed737e50-6398-4462-8779-2af3c03f8325
-caps.latest.revision: 
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636137"
 ---
 # <a name="dateparse-function-javascript"></a>Date.parse 函数 (JavaScript)
 分析包含日期的字符串并返回该日期和 1970 年 1 月 1 日午夜之间的毫秒数。  

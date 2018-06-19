@@ -1,15 +1,16 @@
 ---
-title: "异步 Windows 运行时方法中的特殊错误属性 | Microsoft Docs"
-ms.custom: 
+title: 异步 Windows 运行时方法中的特殊错误属性 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45155584-06d8-4e7f-93a6-8564a93f643d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -18,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571407"
 ---
 # <a name="special-error-properties-from-asynchronous-windows-runtime-methods"></a>异步 Windows 运行时方法中的特殊错误属性
 可能难以在 JavaScript 中调试异步 Windows 运行时方法，因为可能会在调用堆栈的深层位置引发错误。 JavaScript `Error` 对象具有特定的额外属性，此类属性仅在应用以调试模式运行时，从异步 Windows 运行时方法引发错误时出现。  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065152"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用订阅者下载
 订阅者权益包含可以下载各种各样的软件。  

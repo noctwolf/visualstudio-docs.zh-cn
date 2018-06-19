@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954207"
 ---
 # <a name="properties-of-decorators"></a>修饰器的属性
 修饰符是图标、 文本或可以显示在形状或关系图上的连接器的展开/折叠 v 形。 下表显示三种类型的修饰的属性。 某些属性会显示仅在形状修饰符或仅连接器修饰符。

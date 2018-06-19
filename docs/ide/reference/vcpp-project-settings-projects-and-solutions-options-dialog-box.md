@@ -25,6 +25,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33103432"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”
 使用此对话框，可以定义与记录、性能和支持文件类型相关的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 生成和项目设置。

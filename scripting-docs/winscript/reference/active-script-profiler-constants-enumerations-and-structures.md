@@ -1,14 +1,14 @@
 ---
-title: "活动脚本探查器常量、 枚举和结构 |Microsoft 文档"
-ms.custom: 
+title: 活动脚本探查器常量、 枚举和结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 6e079d84-9dde-46fc-8a6a-18e902f60ecc
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642047"
 ---
 # <a name="active-script-profiler-constants-enumerations-and-structures"></a>活动脚本探查器常量、枚举和结构
 活动脚本探查器接口使用以下枚举。  

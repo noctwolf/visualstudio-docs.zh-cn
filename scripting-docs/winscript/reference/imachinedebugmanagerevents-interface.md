@@ -1,16 +1,16 @@
 ---
-title: "IMachineDebugManagerEvents 接口 |Microsoft 文档"
-ms.custom: 
+title: IMachineDebugManagerEvents 接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IMachineDebugManagerEvents interface
 ms.assetid: 468de2f4-49e0-4f6f-ba0c-0f5f6832c092
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727627"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>IMachineDebugManagerEvents 接口
 用信号通知运行中的更改由机调试管理器维护的应用程序列表。 此接口可以由调试器 IDE，用于显示应用程序的动态列表。  

@@ -1,13 +1,13 @@
 ---
-title: "splice 方法 (Array) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: splice 方法 (Array) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - splice
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - splice method
 ms.assetid: 85fdfb13-e3d9-4c89-b524-3ccee7001c93
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639557"
 ---
 # <a name="splice-method-array-javascript"></a>splice 方法 (Array) (JavaScript)
 从一个数组中移除元素，如有必要，在所移除元素的位置上插入新元素，并返回所移除的元素。  

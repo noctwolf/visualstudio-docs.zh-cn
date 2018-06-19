@@ -1,14 +1,14 @@
 ---
-title: "JavaScript 运行时 Typedef、常量和枚举 | Microsoft Docs"
-ms.custom: 
+title: JavaScript 运行时 Typedef、常量和枚举 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 1aa107ed-e144-4947-b5bb-90284a537174
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569037"
 ---
 # <a name="javascript-runtime-typedefs-constants-and-enumerations"></a>JavaScript 运行时 Typedef、常量和枚举
 为运行在 Windows 上的桌面和服务器端应用程序添加脚本能力的 JavaScript 运行时 (JsRT) typedef、常量和枚举支持。  

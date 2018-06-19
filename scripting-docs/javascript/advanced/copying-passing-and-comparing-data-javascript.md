@@ -1,12 +1,13 @@
 ---
-title: "复制、传递和比较数据 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 复制、传递和比较数据 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -23,7 +24,7 @@ helpviewer_keywords:
 - ByVal argument
 - string comparison, testing data
 ms.assetid: fbccd877-7249-45d4-bd9f-6bcd8ba94a6b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -32,6 +33,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569327"
 ---
 # <a name="copying-passing-and-comparing-data-javascript"></a>复制、传递和比较数据 (JavaScript)
 在 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 中，数据的处理方式取决于其数据类型。  

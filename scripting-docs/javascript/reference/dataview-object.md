@@ -1,19 +1,20 @@
 ---
-title: "DataView 对象 |Microsoft 文档"
-ms.custom: 
+title: DataView 对象 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 250ec067-7505-4ee0-82ab-bfd3c2820afa
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637267"
 ---
 # <a name="dataview-object"></a>DataView 对象
 DataView 对象可用于读取和写入 ArrayBuffer 中的任何位置的不同类型的二进制数据。  

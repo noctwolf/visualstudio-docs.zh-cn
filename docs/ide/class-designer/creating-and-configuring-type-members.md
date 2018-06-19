@@ -36,6 +36,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957692"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在类设计器中创建和配置类型成员
 

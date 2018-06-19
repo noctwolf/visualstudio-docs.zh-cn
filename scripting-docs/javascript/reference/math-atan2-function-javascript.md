@@ -1,13 +1,13 @@
 ---
-title: "Math.atan2 函数 (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: Math.atan2 函数 (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - atan2
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - atan2 method
 - Math object
 ms.assetid: ccf811c2-82bb-485e-bdc9-3e8840f00dc8
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638497"
 ---
 # <a name="mathatan2-function-javascript"></a>Math.atan2 函数 (JavaScript)
 从 X 轴的角度 （以弧度为单位） 返回到点 (*y*，*x*)。  
@@ -47,7 +48,7 @@ Math.atan2(y, x)
  必需。 一个数值表达式，表示笛卡尔坐标的 y 坐标。  
   
 ## <a name="remarks"></a>备注  
- 返回值是之间*-pi*和*pi*。 它表示所提供的角度 (*y*，*x*) 点，以弧度为单位。  
+ 返回值是之间 *-pi*和*pi*。 它表示所提供的角度 (*y*，*x*) 点，以弧度为单位。  
   
  **适用于**: [Math 对象](../../javascript/reference/math-object-javascript.md)  
   

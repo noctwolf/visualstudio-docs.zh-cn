@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33703816"
 ---
 # <a name="open-file-command"></a>“打开文件”命令
 打开现有文件，并允许指定编辑器。

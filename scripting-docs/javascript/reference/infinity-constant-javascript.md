@@ -1,13 +1,13 @@
 ---
-title: "Infinity 常量 (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: Infinity 常量 (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Infinity
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - Infinity property
 ms.assetid: 5598224b-e03c-4553-985e-9cc6c21223b4
-caps.latest.revision: 
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637557"
 ---
 # <a name="infinity-constant-javascript"></a>Infinity 常量 (JavaScript)
 一个数字，将大于最大浮点数。 返回的初始值为`Number.POSITIVE_INFINITY`。 负无穷大 (-无穷大) 小于最小的浮点数。  

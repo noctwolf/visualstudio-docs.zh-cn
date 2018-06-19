@@ -1,14 +1,14 @@
 ---
-title: "活动脚本常量、 枚举和错误代码 |Microsoft 文档"
-ms.custom: 
+title: 活动脚本常量、 枚举和错误代码 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: aab24471-5817-45c0-be07-ffe4648923ed
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641567"
 ---
 # <a name="active-script-constants-enumerations-and-error-codes"></a>活动脚本常量、枚举和错误代码
 本部分介绍的枚举和使用在 Windows 脚本引擎中的错误代码。  

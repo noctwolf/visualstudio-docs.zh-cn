@@ -1,19 +1,20 @@
 ---
-title: "forEach 方法 (Set) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: forEach 方法 (Set) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 813bff6e-6098-4260-ab6e-b0d2da6be94d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636757"
 ---
 # <a name="foreach-method-set-javascript"></a>forEach 方法 (Set) (JavaScript)
 一组中每个元素执行指定的操作。  

@@ -1,13 +1,13 @@
 ---
-title: "按位 OR 赋值运算符 (| =) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: 按位 OR 赋值运算符 (| =) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '|='
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - bitwise operators, OR operator
 - OR operator
 ms.assetid: 9b424ff6-4442-4621-b3b6-83e7fd1e5cd5
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633887"
 ---
 # <a name="bitwise-or-assignment-operator--javascript"></a>按位或赋值运算符 (|=) (JavaScript)
 对变量值和表达式值执行按位“或”，并将结果赋给该变量。  
@@ -55,7 +56,7 @@ result |= expression
 result = result | expression  
 ```  
   
- **&#124; =**运算符考察的二进制表示形式的值*结果*和*表达式*，并执行按位 OR 运算。 此操作的结果类似于：  
+ **&#124; =** 运算符考察的二进制表示形式的值*结果*和*表达式*，并执行按位 OR 运算。 此操作的结果类似于：  
   
 ```JavaScript  
 0101    (result)  

@@ -1,13 +1,13 @@
 ---
-title: "Array 或 arguments 对象预期 |Microsoft 文档"
-ms.custom: 
+title: Array 或 arguments 对象预期 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5028
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632737"
 ---
 # <a name="array-or-arguments-object-expected"></a>缺少 Array 或 arguments 对象
 你没有作为参数提供一个数组。 此错误适用于**Function.prototype.apply**仅限方法。 如果指定，此函数的第二个参数必须处于`Array`对象或**参数**对象。  

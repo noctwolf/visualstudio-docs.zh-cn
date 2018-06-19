@@ -1,19 +1,20 @@
 ---
-title: "setUint8 方法 (DataView) |Microsoft 文档"
-ms.custom: 
+title: setUint8 方法 (DataView) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: b294262b-3f4b-4183-a292-5a6982cbdd27
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639497"
 ---
 # <a name="setuint8-method-dataview"></a>setUint8 方法 (DataView)
 将指定的字节偏移量从视图的开始处 Uint8 值存储。  

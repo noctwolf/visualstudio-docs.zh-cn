@@ -1,13 +1,13 @@
 ---
-title: "compile 方法 （正则表达式） (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: compile 方法 （正则表达式） (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - compile
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - Compile method
 - compiling source code, regular expressions
 ms.assetid: dc28cae3-478d-49b5-b5ea-203e5edfe195
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634247"
 ---
 # <a name="compile-method-regular-expression-javascript"></a>compile 方法（正则表达式）(JavaScript)
 将编译为内部格式的执行速度更快的正则表达式。  

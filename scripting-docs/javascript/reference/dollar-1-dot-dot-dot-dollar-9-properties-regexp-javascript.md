@@ -1,13 +1,13 @@
 ---
-title: "$1...$9 属性 (RegExp) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: $1...$9 属性 (RegExp) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - $1...$9
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - $1...$9 properties
 ms.assetid: 8bd84851-f62f-4eb1-a93d-b67135ea091a
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636637"
 ---
 # <a name="19-properties-regexp-javascript"></a>$1...$9 属性 (RegExp) (JavaScript)
 返回最近所存储的九个模式匹配过程中找到的部分。 只读。  
@@ -46,7 +47,7 @@ RegExp.$n
  任何从 1 到 9 的整数。  
   
 ## <a name="remarks"></a>备注  
- 值**$1...$9**只要成功用圆括号括起来匹配，就会修改属性。 可能在正则表达式模式中，指定任意数量的用圆括号括起来子字符串，但可以存储仅的九个的最新。  
+ 值 **$1...$9**只要成功用圆括号括起来匹配，就会修改属性。 可能在正则表达式模式中，指定任意数量的用圆括号括起来子字符串，但可以存储仅的九个的最新。  
   
 ## <a name="example"></a>示例  
  下面的示例执行正则表达式搜索。 它显示匹配项，并从全局 submatches`RegExp`对象。 子匹配项是成功用圆括号括起来的匹配项中包含`$1...$9`属性。 此示例还显示匹配项，并从返回的数组 submatches`exec`方法。  

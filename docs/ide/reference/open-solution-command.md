@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704195"
 ---
 # <a name="open-solution-command"></a>“打开解决方案”命令
 打开一个现有解决方案，关闭其他所有打开的解决方案。
