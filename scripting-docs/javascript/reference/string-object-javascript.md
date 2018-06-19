@@ -1,13 +1,13 @@
 ---
-title: "字符串对象 (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: 字符串对象 (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - String_JavaScript
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - String object
 - String object, overview
 ms.assetid: 8063ecd5-5778-4e87-b985-b21420171914
-caps.latest.revision: 
+caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642187"
 ---
 # <a name="string-object-javascript"></a>String 对象 (JavaScript)
 允许操作和格式化文本字符串以及确定和定位字符串中的子字符串。  

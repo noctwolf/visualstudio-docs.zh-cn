@@ -1,16 +1,16 @@
 ---
-title: "Windows 脚本接口参考 |Microsoft 文档"
-ms.custom: 
+title: Windows 脚本接口参考 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Windows Script interfaces
 ms.assetid: e87b6b8b-e1ec-4280-a1b8-a8ef2f26cf36
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733957"
 ---
 # <a name="windows-script-interfaces-reference"></a>Windows 脚本接口参考
 以下各节涵盖 Windows 脚本接口。  

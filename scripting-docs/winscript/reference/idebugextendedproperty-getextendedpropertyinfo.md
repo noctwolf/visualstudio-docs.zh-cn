@@ -1,11 +1,11 @@
 ---
-title: "IDebugExtendedProperty::GetExtendedPropertyInfo |Microsoft 文档"
-ms.custom: 
+title: IDebugExtendedProperty::GetExtendedPropertyInfo |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugExtendedProperty.GetExtendedPropertyInfo
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugExtendedProperty::GetExtendedPropertyInfo
 ms.assetid: 56edf538-5082-4653-82b6-e6640d6f61ba
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727077"
 ---
 # <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
 提取扩展属性，这是比更简单的详细信息的扩展的信息`IDebugProperty`。  

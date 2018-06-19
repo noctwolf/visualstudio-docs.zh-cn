@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471016"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>转储文件摘要扩展性 API
 在本部分中使用扩展性 Api，你可以扩展。Exe 项目系统和**转储摘要**页面以适用于您自己的自定义调试引擎。  

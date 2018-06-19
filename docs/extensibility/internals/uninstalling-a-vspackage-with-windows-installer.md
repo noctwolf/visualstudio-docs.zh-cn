@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141091"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>卸载使用 Windows Installer VSPackage
 Windows Installer 大多数情况下，可以只需通过卸载你的 VSPackage"撤消"它未安装你的 VSPackage。 自定义操作中所述[命令，必须为运行后安装](../../extensibility/internals/commands-that-must-be-run-after-installation.md)必须也卸载后运行。 由于指向 devenv.exe 的调用发生在安装和卸载的情况下了 InstallFinalize 标准操作之前，所以 CustomAction 和 InstallExecuteSequence 表条目将用作这两种情况。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134729"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>测试区域 1： 从源代码管理添加到 / 打开
 此源代码管理插件测试区域介绍将放置在源代码管理下的项目或解决方案，并检索它们从源代码管理。  

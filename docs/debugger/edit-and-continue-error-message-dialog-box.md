@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471832"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>“编辑并继续”错误消息对话框
 当在支持编辑并继续的语言中进行调试时，会出现此对话框但**编辑并继续**不可用于所做的代码更改的类型。 此框中的错误消息提供了更加详细的说明。 此对话框出现的可能原因包括：  

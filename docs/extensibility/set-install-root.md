@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136767"
 ---
 # <a name="installing-outside-the-extensions-folder"></a>安装扩展文件夹之外
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
  </ProjectReference>
 ```
 
->**注意：**如果你愿意，你可以直接编辑.csproj 文件。
+>**注意：** 如果你愿意，你可以直接编辑.csproj 文件。
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>如何设置子路径下 InstallRoot
 

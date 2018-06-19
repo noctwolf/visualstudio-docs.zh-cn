@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471803"
 ---
 # <a name="udt"></a>UDT
 每个类、 结构和联合由`SymTagUDT`符号。 每个成员、 函数、 数据或嵌套的类型和每个基类，显示为用户定义的类型 (UDT) 的类子级。  

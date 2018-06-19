@@ -1,11 +1,11 @@
 ---
-title: "IDispError::GetHelpInfo |Microsoft 文档"
-ms.custom: 
+title: IDispError::GetHelpInfo |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDispError.GetHelpInfo
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDispError::GetHelpInfo
 ms.assetid: a146df13-eda4-4e56-8bf0-cf9886a2150f
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728007"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 返回的帮助文件的路径和解释该错误，如有可能的主题的上下文 ID。  

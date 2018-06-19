@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135943"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>在旧语言服务中的语法着色
 语法着色是使不同的一种编程语言中的源文件中不同颜色和样式显示元素的功能。 若要支持此功能，则需要提供分析器或可以识别的词法元素或文件中的标记类型的扫描程序。 许多语言区分关键字、 分隔符 （如括号或大括号），以及注释通过不同的方式对它们进行着色。  

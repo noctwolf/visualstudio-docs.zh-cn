@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136453"
 ---
 # <a name="restrictions-on-string-lengths"></a>字符串长度限制
 源控件插件 API 限制在各种函数中使用的字符串的长度。  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645867"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 如果 Windows 脚本引擎允许过程添加到脚本中的源代码文本，它实现`IActiveScriptParseProcedure32`接口。 对于解释型脚本语言具有任何独立的创作环境，如 VBScript，此字段提供另外一种机制 (而不`IActiveScriptParse32`或`IPersist`*) 以将脚本过程添加到命名空间。  

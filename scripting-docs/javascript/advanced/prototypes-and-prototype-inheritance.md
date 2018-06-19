@@ -23,9 +23,10 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 200ca757e72b2eec8f09fd48a841cc8eb816c85d
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "29899940"
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>原型和原型继承
 在 JavaScript 中，`prototype` 是函数的一个属性，同时也是由构造函数创建的对象的一个属性。 函数的原型为对象。 它主要在函数用作构造函数时使用。  

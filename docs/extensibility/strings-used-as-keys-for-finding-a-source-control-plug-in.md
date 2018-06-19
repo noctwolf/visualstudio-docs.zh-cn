@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137669"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>使用作为用于查找源代码管理插件的键的字符串
 以下字符串是用于访问注册表来查找有关源代码管理信息插件的项。  

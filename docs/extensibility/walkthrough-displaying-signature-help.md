@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148621"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>演练： 显示签名帮助
 签名帮助 (也称为*参数信息*) 用户键入的参数列表的起始字符 （通常是一个左括号） 时，将显示工具提示中的方法的签名。 参数和参数分隔符 （通常为逗号） 已类型化，工具提示会更新以显示下一个参数以粗体显示。 你可以定义签名帮助语言服务上下文中或可以定义你自己的文件名称扩展和内容类型，并显示只是该类型的签名帮助或可以为现有的内容类型 （例如，"文本"） 显示签名帮助。 本演练演示如何显示为"text"的内容类型的签名帮助。  

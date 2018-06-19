@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139164"
 ---
 # <a name="keybinding-element"></a>键绑定元素
 键绑定元素指定的命令的键盘快捷方式。  

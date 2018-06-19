@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139661"
 ---
 # <a name="how-to-managing-multiple-threads-in-managed-code"></a>如何： 管理多个线程在托管代码
 如果你有一个托管的 VSPackage 扩展调用异步方法或已在 Visual Studio UI 线程外的线程执行的操作，则应遵循下面给出的准则。 你可以让 UI 线程设置为保持响应状态，因为它不需要等待上另一个线程完成的工作。 你会使代码更高效，因为你不具有额外的线程占用堆栈空间，并且可以更加可靠且更易于调试，因为你避免死锁和挂起使。  

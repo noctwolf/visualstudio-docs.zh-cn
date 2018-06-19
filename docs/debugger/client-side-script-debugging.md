@@ -23,12 +23,13 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464805"
 ---
 # <a name="client-side-script-debugging"></a>客户端脚本调试
 Visual Studio 调试器提供了一个全面的调试环境，以便查找和更正 ASP.NET 页上客户端脚本中的错误。  
   
 ## <a name="opening-script-documents"></a>打开脚本文档  
-你可以看到列表中的服务器端和客户端脚本文档**解决方案资源管理器**查看。 可以从 **“解决方案资源管理器”**中打开任何脚本文档。 有关详细信息，请参阅 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。  
+你可以看到列表中的服务器端和客户端脚本文档**解决方案资源管理器**查看。 可以从 **“解决方案资源管理器”** 中打开任何脚本文档。 有关详细信息，请参阅 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。  
   
 ## <a name="breakpoint-mapping"></a>断点映射  
  在 Visual Studio 中，不能直接调试服务器端代码，但可以在服务器端文件中设置断点。 Visual Studio 会自动将断点映射到客户端文件中的对应位置，并在客户端代码中创建映射的断点。  

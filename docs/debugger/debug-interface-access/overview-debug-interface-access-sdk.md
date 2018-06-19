@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471435"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>概述（调试接口访问 SDK）
 DIA SDK 用于访问 Microsoft 调试信息。 DIA SDK 提供对基于 COM 的无需重写代码，当 Microsoft 发生更改时的调试信息的格式的 API 集。 DIA SDK 还可以从选定的一组以前版本的调试信息，位于由生成的.pdb 和.dbg 文件读取[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]5.0 及更高版本。  

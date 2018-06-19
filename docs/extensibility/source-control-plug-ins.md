@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140211"
 ---
 # <a name="source-control-plug-ins"></a>源控件插件
 源控件插件 SDK 引用部分包含完整接口规范，支持使用源代码管理系统以与集成[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它指定的语法和语义到接口与源代码管理插件必须实现的各种函数和数据类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。  

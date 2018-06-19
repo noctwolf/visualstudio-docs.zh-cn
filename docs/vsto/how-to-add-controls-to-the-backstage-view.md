@@ -28,6 +28,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34549072"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何： 将控件添加到 Backstage 视图
   你可以使用功能区设计器将控件添加到当单击打开菜单**文件**选项卡。当你运行该应用程序，你将添加到的控件**文件**选项卡会显示一个名为组**外接程序**。  

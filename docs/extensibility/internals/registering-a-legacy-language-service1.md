@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135699"
 ---
 # <a name="registering-a-legacy-language-service"></a>注册旧语言服务
 在托管的包框架 (MPF) 中，语言服务提供由 VSPackage (请参阅[Vspackage](../../extensibility/internals/vspackages.md)) 并注册的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过添加注册表项和条目。 在安装过程中部分和部分运行时，会在完成此注册过程。  

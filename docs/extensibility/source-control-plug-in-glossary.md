@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139021"
 ---
 # <a name="source-control-plug-in-glossary"></a>源控件插件术语表
 以下有用的术语和定义适用于源控件插件 SDK 文档。  

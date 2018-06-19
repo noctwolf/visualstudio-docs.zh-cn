@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138722"
 ---
 # <a name="vstextview-object"></a>VSTextView 对象
 文本视图是一个窗口，允许用户查看和编辑文本缓冲区的 Unicode 文本。 从根本上来说，该视图是大多数用户所称为的编辑器。 由于各种文本层 （自动换行、 大纲显示文本等） 的情况下，该视图从缓冲区分开的视图不保证可精确地表示的缓冲区中的文本。 有关文本视图的详细信息，请参阅[使用旧版 API 访问文本视图](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  

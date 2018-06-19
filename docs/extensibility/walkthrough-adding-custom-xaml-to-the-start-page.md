@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140054"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>演练： 将自定义 XAML 添加到开始页
 本演练演示如何创建自定义 Visual Studio 起始页，其中包含 Web 浏览器。  

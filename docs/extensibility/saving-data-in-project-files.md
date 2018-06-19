@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140172"
 ---
 # <a name="saving-data-in-project-files"></a>在项目文件中保存数据
 项目子类型可以保存和检索项目文件中的特定子类型的数据。 托管包框架 (MPF) 提供了两个接口来完成此任务：  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141114"
 ---
 # <a name="web-projects"></a>Web 项目
 Web 项目系统是创建 Web 项目的项目系统。 反过来，web 项目创建 Web 应用程序。 您可以编写使用传统的编程语言，如 Web 页面[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，若要将收集和处理来自用户的信息，将其存储在数据库中，依次类推。 使用关联的代码的网页称为智能网页。  

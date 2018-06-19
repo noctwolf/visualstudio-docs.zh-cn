@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140129"
 ---
 # <a name="managing-vspackages"></a>管理 Vspackage
 在大多数情况下，你不必担心如何管理 Vspackage，因为项目和项模板注册，并自动加载包。 但是，在某些情况下，你可能需要管理包以了解更多。  

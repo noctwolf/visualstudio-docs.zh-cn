@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135969"
 ---
 # <a name="exposing-types-to-visual-designers"></a>公开到可视化设计器的类型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须有权类和类型定义在设计时为了显示可视化设计器中。 类将从一组预定义的包含完整的依赖项集的当前项目 （引用加上其依赖项） 的程序集加载。 此外可能有必要对可视化设计器的访问权限类和在自定义工具生成的文件中定义的类型。  

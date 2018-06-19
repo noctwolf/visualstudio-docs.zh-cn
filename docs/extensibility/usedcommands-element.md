@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137656"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 元素
 UsedCommands 元素分组 UsedCommand 元素和其他 UsedCommands 分组。  

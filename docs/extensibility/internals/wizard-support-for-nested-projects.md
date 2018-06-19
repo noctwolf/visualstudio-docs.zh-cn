@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137490"
 ---
 # <a name="wizard-support-for-nested-projects"></a>嵌套的项目的向导支持
 IDE 运行嵌套项目的父项目可以实现的两个向导：**新项目**向导和**添加项**向导。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141715"
 ---
 # <a name="supporting-multiple-document-views"></a>支持多个文档视图
 你可以通过为你的编辑器创建单独的文档数据和文档视图对象提供文档的多个的视图。 某些情况下，在此将为有用的附加文档视图是：  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108331"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>创建基本项目系统中，第 1 部分
 在 Visual Studio 中，项目是开发人员使用可组织源代码文件和其他资产的容器。 项目显示为子级中的解决方案的**解决方案资源管理器**。 项目可以组织、 生成、 调试和部署源代码和创建对 Web 服务、 数据库和其他资源的引用。  

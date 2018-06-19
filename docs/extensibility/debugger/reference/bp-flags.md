@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109946"
 ---
 # <a name="bpflags"></a>BP_FLAGS
 提供可用于设置断点时指定的附加信息的可选标志。  

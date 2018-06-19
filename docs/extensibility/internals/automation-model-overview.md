@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134742"
 ---
 # <a name="automation-model-overview"></a>自动化模型概述
 自动化模型包含一组可以对其编写的 Visual Studio 外接程序或扩展的对象。 外接程序是应用程序可以操作在 Visual Studio 环境并自动执行常见任务。 Visual Studio 扩展可以创建自定义 Visual Studio 组件，或将添加到标准组件 （如文本编辑器） 的功能。  

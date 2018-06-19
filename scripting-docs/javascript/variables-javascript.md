@@ -26,6 +26,7 @@ ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/03/2018
+ms.locfileid: "30307264"
 ---
 # <a name="variables-javascript"></a>变量 (JavaScript)
 在 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 中，变量包含一个值，如“hello”或 5。 使用变量时，会引用其所代表的数据，例如 `NumberOfDaysLeft = EndDate - TodaysDate`。  

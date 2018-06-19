@@ -25,6 +25,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704481"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 指定一个文件，用于在运行、生成、重新生成或部署解决方案时存储和显示错误。

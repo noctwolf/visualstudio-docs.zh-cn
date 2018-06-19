@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135910"
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK 适用于调试的帮助程序
 这些函数和声明是有关在 c + + 中实现的调试引擎，表达式计算器和符号提供程序的全局帮助器函数。  
@@ -178,7 +179,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|设置为非零值，指示数据中的更改上的断点的设置的支持。|  
 |metricDisassembly|设置为非零值，以指示生产的反汇编列表的支持。|  
 |metricDumpWriting|设置为非零值，指示转储编写 （转储的内存写入输出设备） 的支持。|  
-|metricENC|设置为非零值，以指示支持编辑并继续。 **注意：**自定义调试引擎决不能设置此或应始终将它设置为 0。|  
+|metricENC|设置为非零值，以指示支持编辑并继续。 **注意：** 自定义调试引擎决不能设置此或应始终将它设置为 0。|  
 |metricExceptions|设置为非零值，指示的异常的支持。|  
 |metricFunctionBP|设置为非零值，指示命名断点 （中断调用函数名时的断点） 的支持。|  
 |metricHitCountBP|设置为非零值，指示的设置的"命中点"断点 （仅在达到一定次数后触发的断点） 的支持。|  
@@ -193,7 +194,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|将此设置为非零值，表明程序提供程序应始终将加载本地。|  
 |metricEngineCanWatchProcess|将其设置为非零值，指示的调试引擎将监视的进程事件而不是程序提供程序。|  
 |metricRemoteDebugging|将其设置为非零值，指示用于远程调试的支持。|  
-|metricEncUseNativeBuilder|此设置为非零值以指示编辑并继续管理器应使用的调试引擎 encbuild.dll 生成适用于编辑并继续。 **注意：**自定义调试引擎决不能设置此或应始终将它设置为 0。|  
+|metricEncUseNativeBuilder|此设置为非零值以指示编辑并继续管理器应使用的调试引擎 encbuild.dll 生成适用于编辑并继续。 **注意：** 自定义调试引擎决不能设置此或应始终将它设置为 0。|  
 |metricLoadUnderWOW64|将此设置为非零值，指示应在 WOW 下调试对象进程中加载的调试引擎，就时调试 64 位进程;否则，将在 Visual Studio 进程 （这在 WOW64 下运行） 中加载的调试引擎。|  
 |metricLoadProgramProviderUnderWOW64|将此设置为非零值，指示该程序提供程序时，应在调试对象进程中加载调试在 WOW; 下的 64 位进程否则，它将在 Visual Studio 进程中加载。|  
 |metricStopOnExceptionCrossingManagedBoundary|将其设置为非零值，指示该过程应停止跨托管/非托管代码边界引发的未经处理的异常。|  
@@ -265,7 +266,7 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[注册表项]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
 |*[版本根]*|Visual Studio 的版本 (例如， `7.0`， `7.1`，或`8.0`)。 但是，此根也可以修改使用 **/rootsuffix**切换到**devenv.exe**。 VSIP，对于此修饰符通常是**Exp**，因此版本根是，例如，8.0Exp。|  
-|*[指标根]*|这可以是`AD7Metrics`或`AD7Metrics(Debug)`，取决于是否使用 dbgmetric.lib 的调试版本。 **注意：**是否使用 dbgmetric.lib 时，此命名约定应遵守如果必须调试和发布之间的差异必须反映在注册表中的版本。|  
+|*[指标根]*|这可以是`AD7Metrics`或`AD7Metrics(Debug)`，取决于是否使用 dbgmetric.lib 的调试版本。 **注意：** 是否使用 dbgmetric.lib 时，此命名约定应遵守如果必须调试和发布之间的差异必须反映在注册表中的版本。|  
 |*[指标类型]*|要写入的度量值的类型： `Engine`， `ExpressionEvaluator`， `SymbolProvider`，等等。这些都被定义为如下所示为 dbgmetric.h `metricTypeXXXX`，其中`XXXX`是特定类型名称。|  
 |*[指标]*|要为其赋值才能设置该度量值的项的名称。 实际的组织的度量值取决于度量值的类型。|  
 |*[度量值]*|分配给该度量值的值。 值应具有 （字符串、 数字，而等） 的类型取决于该度量值。|  

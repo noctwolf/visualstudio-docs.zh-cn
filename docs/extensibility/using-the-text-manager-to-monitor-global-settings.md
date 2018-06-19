@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141667"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>使用文本管理器来监视全局设置
 如果实现核心编辑器，你必须监视对全局设置，进行更改，因为这些更改可能影响你的编辑器实例。 你可以通过侦听由文本管理器引发的事件跟踪所做的更改。 例如，在核心编辑器中，例如其文档数据对象，指定的外观或行为的一个组件的全局首选项时的文本管理器将存储此信息，并将其传递给受影响的所有客户端。  

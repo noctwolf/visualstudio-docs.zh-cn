@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139284"
 ---
 # <a name="using-the-settings-store"></a>使用设置存储
 有两种类型的设置存储：  
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  在实验实例中，在**工具**菜单上，单击**调用 SettingsStoreCommand**。  
   
-     你应该会看到消息框，显示**Microsoft Windows Phone 开发人员工具：**跟**True**或**False**。  
+     你应该会看到消息框，显示**Microsoft Windows Phone 开发人员工具：** 跟**True**或**False**。  
   
  Visual Studio 将在系统注册表中设置存储。  
   

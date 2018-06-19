@@ -1,16 +1,16 @@
 ---
-title: "ISimpleConnectionPoint 接口 |Microsoft 文档"
-ms.custom: 
+title: ISimpleConnectionPoint 接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - ISimpleConnectionPoint interface
 ms.assetid: f632a82f-942d-4291-963e-e9fa2b162493
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733907"
 ---
 # <a name="isimpleconnectionpoint-interface"></a>ISimpleConnectionPoint 接口
 用于描述和枚举的特定连接点上激发的事件提供一种简单方法。 此接口还可以轻松挂钩`IDispatch`这些事件的对象。 此接口是实现通过过程调试管理器 (PDM)，且由脚本引擎使用。  
