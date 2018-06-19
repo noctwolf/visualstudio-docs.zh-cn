@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476375"
 ---
 # <a name="graphics-state"></a>图形状态
 Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件（如绘图调用）时为活动状态的图形状态。  

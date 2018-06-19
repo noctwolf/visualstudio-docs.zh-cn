@@ -10,6 +10,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33876925"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>生成和清理项目和解决方案
 

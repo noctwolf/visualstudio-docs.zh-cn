@@ -25,6 +25,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454340"
 ---
 # <a name="how-to-attach-to-script"></a>如何：附加到脚本
 本主题介绍如何手动将 Visual Studio 调试器附加到脚本文件进行调试。  

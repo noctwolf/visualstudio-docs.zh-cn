@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478221"
 ---
 # <a name="debug-multiple-processes"></a>调试多个进程
 下面介绍了如何启动调试进程、 在进程之间切换、 中断和继续执行、 逐步执行源、 停止调试，并终止或与进程分离。  

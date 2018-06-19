@@ -25,6 +25,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477686"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。

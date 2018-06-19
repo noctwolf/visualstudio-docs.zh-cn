@@ -1,13 +1,13 @@
 ---
-title: "setUTCMonth 方法 (Date) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: setUTCMonth 方法 (Date) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - setUTCMonth
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - Month method
 - UTC dates, setting
 ms.assetid: cdac5f64-c4fd-44cc-ba3a-9a8dd3dd3fad
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640947"
 ---
 # <a name="setutcmonth-method-date-javascript"></a>setUTCMonth 方法 (Date) (JavaScript)
 设置中的月份值`Date`对象使用协调世界时 (UTC)。  
@@ -54,7 +55,7 @@ dateObj.setUTCMonth(numMonth[, dateVal])
 ## <a name="remarks"></a>备注  
  若要设置使用本地时间的月份值，使用`setMonth`方法。  
   
- 如果值`numMonth`大于 11 （年 1 月是月份 0），或为负数，所存储的年份适当地是递增或递减。 例如，如果存储的日期是"1996 年 1 月 5 日 00:00:00.00"和**setUTCMonth(14)**是调用，日期更改为"1997 年 3 月 5 日 00:00:00.00。"  
+ 如果值`numMonth`大于 11 （年 1 月是月份 0），或为负数，所存储的年份适当地是递增或递减。 例如，如果存储的日期是"1996 年 1 月 5 日 00:00:00.00"和**setUTCMonth(14)** 是调用，日期更改为"1997 年 3 月 5 日 00:00:00.00。"  
   
  **SetUTCFullYear**方法可以用于设置年、 月和每月天数。  
   

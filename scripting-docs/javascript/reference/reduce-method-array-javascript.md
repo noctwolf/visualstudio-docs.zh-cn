@@ -27,6 +27,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264771"
 ---
 # <a name="reduce-method-array-javascript"></a>reduce 方法 (Array) (JavaScript)
 为数组中的所有元素调用指定的回调函数。 回调函数的返回值是累积的结果，并且作为对回调函数的下一个调用中的自变量提供。  

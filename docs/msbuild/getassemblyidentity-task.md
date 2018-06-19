@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568820"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity 任务
 从指定的文件检索程序集标识并输出标识信息。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482121"
 ---
 # <a name="more-debugging-features"></a>更多调试功能
 本节包含可用于 Visual Studio 调试器的其他功能。  

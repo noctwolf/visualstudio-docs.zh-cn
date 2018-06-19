@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474841"
 ---
 # <a name="processes-view"></a>进程视图
 进程视图显示你的系统上的所有活动进程树。 显示进程 ID 和模块名称。 如果你想要检查特定的系统进程，它通常对应于执行程序，请使用进程视图。 进程标识由模块名称，或者其指定为"系统 processes"。  

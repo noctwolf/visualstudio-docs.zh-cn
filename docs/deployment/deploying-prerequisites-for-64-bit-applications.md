@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565999"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>部署 64 位应用程序的必备组件
 ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台是**x86**对于 32 位平台， **x64**机支持 AMD64 和 EM64T 指令集和**Itanium**在 64 位 Itanium 处理器。  

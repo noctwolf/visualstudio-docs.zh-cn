@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475530"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中查看反汇编代码
 仅当启用了地址级调试后提供了此功能**选项**对话框中，**调试**节点。 但对于脚本或 SQL 调试是不可用的。  

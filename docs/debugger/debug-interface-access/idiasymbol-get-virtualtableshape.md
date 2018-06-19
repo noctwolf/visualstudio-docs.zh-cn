@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481926"
 ---
 # <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 检索虚拟表的用户定义的类型的类型的符号接口。  

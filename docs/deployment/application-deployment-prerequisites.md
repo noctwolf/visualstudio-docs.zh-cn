@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565687"
 ---
 # <a name="application-deployment-prerequisites"></a>应用程序部署必备
 为确保应用程序成功安装和运行，必须先确保应用程序依赖的所有组件都已安装在目标计算机上。 例如，用 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)][!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 创建的大多数应用程序都会依赖 ；在安装应用程序前，目标计算机上必须存在正确版本的公共语言运行时。  

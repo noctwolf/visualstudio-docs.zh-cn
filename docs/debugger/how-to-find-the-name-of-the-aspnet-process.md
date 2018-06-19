@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473814"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>如何：查找 ASP.NET 进程的名称
 若要附加到正在运行的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序，您必须知道 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 进程的名称：  

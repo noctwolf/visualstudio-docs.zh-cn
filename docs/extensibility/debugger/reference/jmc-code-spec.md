@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31124448"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
 此结构用于设置模块的 JustMyCode 信息。  

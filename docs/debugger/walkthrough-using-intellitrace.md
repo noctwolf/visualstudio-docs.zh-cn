@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477714"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>在 Visual Studio 中使用 IntelliTrace 查看事件
 你可以使用 IntelliTrace 来收集关于特定事件或事件类别的信息，或收集关于除了事件外的单个函数调用的信息。 下列过程演示如何执行此操作。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/18/2018
   
 2.  执行在断点处停止。 如果看不到**诊断工具**窗口中，单击**调试 > Windows > IntelliTrace 事件**。  
   
-     在 **“诊断工具”** 窗口中，找到 **“事件”** 选项卡（应该看到 **“事件”**、 **“内存使用”**和 **“CPU ”**三个选项卡）。 **“事件”** 选项卡显示按时间排序的事件列表，以调试器中断执行之前的最后一个事件结尾。 你应会看到一个名为 **“访问 WordSearchInputs.txt”**的事件。  
+     在 **“诊断工具”** 窗口中，找到 **“事件”** 选项卡（应该看到 **“事件”**、 **“内存使用”** 和 **“CPU ”** 三个选项卡）。 **“事件”** 选项卡显示按时间排序的事件列表，以调试器中断执行之前的最后一个事件结尾。 你应会看到一个名为 **“访问 WordSearchInputs.txt”** 的事件。  
   
      以下屏幕截图取自 Visual Studio 2015 Update 1。  
   

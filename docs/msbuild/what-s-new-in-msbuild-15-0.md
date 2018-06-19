@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569298"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 中的新增功能
 MSBuild 现已推出，属于 [.NET Core SDK](https://www.microsoft.com/net/download/core)，且可在 Windows、macOS 和 Linux 上生成 .NET Core 项目。  

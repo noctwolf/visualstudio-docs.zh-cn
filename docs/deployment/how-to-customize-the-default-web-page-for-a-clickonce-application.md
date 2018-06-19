@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557666"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>如何：自定义 ClickOnce 应用程序的默认网页
 在发布 ClickOnce 应用程序到 Web，网页上自动生成并随应用程序一起发布。 默认页包含的应用程序和链接，以安装应用程序、 安装系统必备组件，或访问 MSDN 上的帮助的名称。  

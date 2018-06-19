@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574930"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>如何：显示用逗号分隔的项列表
 在 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 中处理项列表时，有时以易于阅读的方式显示这些项列表的内容会很有帮助。 或者，你执行的任务可能会用到以特殊的分隔符字符串分隔的项列表。 在这两种情况中，可以为项列表指定分隔符字符串。  

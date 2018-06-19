@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477006"
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>查看注册的值和使用 Visual Studio 调试器中的注册窗口
 寄存器窗口是中启用了地址级调试的情况下，才可用**选项**对话框中，**调试**节点，**常规**类别。  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454632"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>检查自动中的变量和 Visual Studio 中的局部变量窗口
 **自动**窗口 (调试时， **CTRL + ALT + V、 A**，或**调试 > Windows > 自动**) 和**局部变量**（时调试窗口**CTRL + ALT + V、 L**，或**调试 > Windows > 局部变量**) 是非常有用，当你想要在调试时，请参阅变量值。 “局部变量”  窗口显示在本地范围内定义的变量，它们通常为当前正在执行的函数或方法。 **“自动”** 窗口显示在当前行（调试器停止的位置）周围使用的变量。 在此窗口中显示哪些变量的完全是不同的语言。 请参阅下面的 [What variables appear in the Autos Window?](#bkmk_whatvariables) 下方。  

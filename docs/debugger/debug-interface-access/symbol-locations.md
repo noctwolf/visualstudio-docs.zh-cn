@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480262"
 ---
 # <a name="symbol-locations"></a>符号位置
 大多数的符号拥有图像文件中定义的位置。 符号的位置指定的值[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)枚举。 符号可能支持其他属性，具体取决于其位置。  

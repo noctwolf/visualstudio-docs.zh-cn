@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562749"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 应用程序中访问本地数据和远程数据
 大多数应用程序使用或生成数据。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 为你提供多种选项用于在本地及远程读取和写入数据。  

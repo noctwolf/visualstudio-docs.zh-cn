@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561436"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在联机 ClickOnce 应用程序中检索查询字符串信息
 *查询字符串* 是 URL 的一部分，它以问号 (?) 开头，并且以 *名称=值*的形式包含任意信息。 假设你有一个在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 上承载的名为 `WindowsApp1` 的 `servername`应用程序，并且要在该应用程序启动时传入变量 `username` 的值。 你的 URL 可能类似于下面这样：  

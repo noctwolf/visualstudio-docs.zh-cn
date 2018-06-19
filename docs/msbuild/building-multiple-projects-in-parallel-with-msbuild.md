@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572236"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>用 MSBuild 并行生成多个项目
 通过 MSBuild，可通过并行运行多个项目来更快地生成它们。 若要并行运行生成，请在一台多核或多处理器计算机上采用以下设置：  

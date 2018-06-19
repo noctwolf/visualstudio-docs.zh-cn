@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575652"
 ---
 # <a name="csc-task"></a>Csc 任务
 包装 CSC.exe，生成可执行 (.exe) 文件、动态链接库（.dll文件）或者代码模块（.netmodule文件）。 有关 CSC.exe 的详细信息，请参阅 [C# 编译器选项](/dotnet/csharp/language-reference/compiler-options/index)。  

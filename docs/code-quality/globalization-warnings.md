@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919153"
 ---
 # <a name="globalization-warnings"></a>全球化警告
 全球化警告支持世界通用库和应用程序。

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561345"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何：指定部署更新的其他位置
 你可以安装你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序最初从 CD 或文件共享，但应用程序必须检查在 Web 上找到的定期更新。 可以在你的部署清单中指定更新的备用位置，以便你的应用程序在其初始安装后可从 Web 自行更新。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121370"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 此接口表示的端口上运行的进程。 如果端口为本地端口，则`IDebugProcess2`通常表示本地计算机上的物理进程。  

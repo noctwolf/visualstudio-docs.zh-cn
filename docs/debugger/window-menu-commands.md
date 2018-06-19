@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481952"
 ---
 # <a name="window-menu-commands"></a>“窗口”菜单命令
 **窗口**菜单提供用于管理 Spy + + windows 的命令。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472657"
 ---
 # <a name="debugging-applications"></a>调试应用程序
 以下各节介绍了对不同类型的应用程序进行调试的信息。 应用程序类型和语言不同，需要的设置和技术也会不同，并且需要调试的问题也不同。  

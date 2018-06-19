@@ -10,6 +10,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34453891"
 ---
 # <a name="projects-and-solutions"></a>项目和解决方案
 

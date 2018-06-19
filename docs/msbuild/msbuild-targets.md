@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570590"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目标
 目标以特定的顺序将任务组合到一起，并允许生成过程分解为较小的单位。 例如，一个目标可能会删除输出目录中的所有文件以准备进行生成，而另一个目标可能会编译项目的输入并将它们置于该空目录中。 有关任务的详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  

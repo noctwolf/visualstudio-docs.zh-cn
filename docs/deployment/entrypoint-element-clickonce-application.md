@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565245"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;入口点&gt;元素 （ClickOnce 应用程序）
 标识应为程序集时执行此[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]客户端计算机上运行应用程序。  

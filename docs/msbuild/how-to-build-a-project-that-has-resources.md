@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569497"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>如何：生成具有资源的项目
 如果你正在构建一个项目的本地化版本，则所有用户界面元素必须都分入不同语言的资源文件。 如果该项目仅使用字符串，则资源文件使用文本文件。 或者，你可以将 .resx 文件用作资源文件。  

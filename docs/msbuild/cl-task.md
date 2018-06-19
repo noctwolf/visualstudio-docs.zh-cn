@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578050"
 ---
 # <a name="cl-task"></a>CL 任务
 包装 Visual C++ 编译器工具 cl.exe。 编译器生成可执行 (.exe) 文件、动态链接库 (.dll) 文件或者代码模块 (.netmodule) 文件。 有关详细信息，请参阅[编译器选项](/cpp/build/reference/compiler-options)。  

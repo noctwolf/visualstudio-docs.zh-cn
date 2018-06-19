@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263924"
 ---
 # <a name="common-data-views"></a>公共数据视图
 本部分包含有关所有分析方法公用的探查器数据文件的视图和报告的有关参考信息。  

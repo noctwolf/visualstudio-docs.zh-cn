@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120630"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 此接口是由发送的调试引擎 (DE) 到会话调试管理器 (SDM) 后单步执行外或过程执行函数。  

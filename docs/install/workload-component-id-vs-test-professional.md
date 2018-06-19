@@ -22,6 +22,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33864211"
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 组件目录
 
@@ -40,9 +41,9 @@ ms.lasthandoff: 05/07/2018
 
 ## <a name="test-professional"></a>Test Professional
 
-**ID：**Microsoft.VisualStudio.Workload.TestProfessional
+**ID：** Microsoft.VisualStudio.Workload.TestProfessional
 
-**说明：**Test Professional 面向技术全面的测试人员提供集成的测试工具，这可帮助他们促进整个测试生存期的测试需求。
+**说明：** Test Professional 面向技术全面的测试人员提供集成的测试工具，这可帮助他们促进整个测试生存期的测试需求。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 

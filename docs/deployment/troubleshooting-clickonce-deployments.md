@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561852"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>ClickOnce 部署疑难解答
 本主题将帮助您诊断并解决与最常见的问题[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。  

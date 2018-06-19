@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480448"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何： 启用和禁用编辑并继续 （C#、 VB、 c + +）
 你可以禁用或启用在编辑并继续**选项**在设计时的对话框。 无法在调试过程中更改此设置。  

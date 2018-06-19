@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474601"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>“线程属性”对话框 ->“常规”选项卡
 使用此对话框中，若要了解有关特定线程的详细信息。 若要显示此对话框中，将焦点移至[线程视图](../debugger/threads-view.md)窗口中或打开[消息视图](../debugger/messages-view.md)展开一条消息。 在树中，选择任何线程节点，然后选择**属性**从**视图**菜单。  

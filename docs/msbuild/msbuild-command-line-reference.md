@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576009"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令行参考
 使用 MSBuild.exe 生成项目或解决方案文件时，可以包含几个开关来指定过程的各个方面。  

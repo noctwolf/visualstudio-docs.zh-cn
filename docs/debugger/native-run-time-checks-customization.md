@@ -29,9 +29,10 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480897"
 ---
 # <a name="native-run-time-checks-customization"></a>本机运行时检查自定义
-使用编译**/RTC** （运行时检查） 或使用`runtime_checks`杂注，C 运行库提供了本机运行时检查。 某些情况下，可能需要自定义运行时检查：  
+使用编译 **/RTC** （运行时检查） 或使用`runtime_checks`杂注，C 运行库提供了本机运行时检查。 某些情况下，可能需要自定义运行时检查：  
   
 -   将运行时检查信息传送到默认以外的文件或目标。  
   

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578304"
 ---
 # <a name="function-details-view"></a>函数详细信息视图
 “函数详细信息视图”窗口显示以下信息：  

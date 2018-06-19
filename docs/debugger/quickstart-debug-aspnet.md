@@ -18,6 +18,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477465"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入门： 使用 Visual Studio 调试器调试 ASP.NET
 

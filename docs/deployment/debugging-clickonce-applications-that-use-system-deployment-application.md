@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561657"
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>调试使用 System.Deployment.Application 的 ClickOnce 应用程序
 在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可让你配置如何更新应用程序。 但是，如果你需要使用和自定义高级[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署功能，你将需要访问由提供的部署对象模型<xref:System.Deployment.Application>。 你可以使用<xref:System.Deployment.Application>Api，可用于高级任务，如：  

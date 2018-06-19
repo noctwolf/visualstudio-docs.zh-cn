@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570075"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 元素 (MSBuild)
 指定当且仅当所有 `When` 元素的条件的计算结果为 `false` 时才执行的代码块。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476626"
 ---
 # <a name="window-search-dialog-box"></a>“窗口搜索”对话框
 使用此对话框来查找和选择特定窗口中的节点[Windows 视图](../debugger/windows-view.md)。 若要显示此对话框中，将焦点移到 Windows 视图窗口中。 然后选择**查找窗口**从**搜索**菜单。  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558004"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的发布页
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序中，生成默认网页 (publish.htm) 并将其随应用程序一起发布。 此页包含的应用程序、 将其安装应用程序和/或任何必备项的链接和帮助主题描述的链接名称[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 **发布页**为你的项目的属性，可指定 Web 页的名称你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/19/2018
   
 5.  在**发布选项**对话框框中，请确保**发布后打开部署网页**选中复选框 （默认情况下应选中）。  
   
-6.  在**部署网页：**框中，为你的 Web 页面上，输入名称，然后单击**确定**。  
+6.  在**部署网页：** 框中，为你的 Web 页面上，输入名称，然后单击**确定**。  
   
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>若要阻止发布页启动每次您发布  
   

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563370"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署示例和演练
 本部分包含示例应用程序、 示例代码和说明语法、 结构和技术用于部署 Windows 窗体、 WPF 和控制台应用程序的分步演练。  

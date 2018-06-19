@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578271"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目标 Framework 和目标平台
 可以生成要在目标框架（.NET Framework 的一个特定版本）和目标平台（一种特定的软件体系结构）上运行的项目。  例如，可将一个应用程序的目标设定为在与 802x86 处理器系列 (“x86”) 兼容的 32 位平台上的 .NET Framework 2.0 上运行。 目标框架与目标平台的组合称为“目标上下文”。  

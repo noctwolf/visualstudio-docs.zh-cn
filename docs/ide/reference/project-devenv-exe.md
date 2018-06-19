@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704072"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 标识在指定解决方案配置中要生成、清理、重新生成或部署的单个项目。

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31119157"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 此接口允许调试管理器 (SDM) 通知它是附加到或与进程分离的进程，会话。  
