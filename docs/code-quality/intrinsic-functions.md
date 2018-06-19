@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920943"
 ---
 # <a name="intrinsic-functions"></a>内部函数
 在 SAL 表达式可以是 C/c + + 表达式，前提是它是不具有副作用的表达式-例如，+ +，--，和所有在此上下文中具有副作用的函数调用。  但是，SAL 提供一些类似函数的对象和可以在 SAL 表达式中使用某些保留的符号。 这些被称为*内部函数*。

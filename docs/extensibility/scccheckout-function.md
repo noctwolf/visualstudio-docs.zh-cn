@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137744"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函数
 给定的完全限定的文件名的列表，此函数将它们签出到本地驱动器。 注释适用于被签出的所有文件。该注释参数可以是`null`字符串。  

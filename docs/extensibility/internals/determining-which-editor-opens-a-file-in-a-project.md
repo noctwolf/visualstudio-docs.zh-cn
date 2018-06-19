@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130004"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>确定编辑器打开一个项目中的文件
 当用户打开的项目中的某个文件时，环境都要通过轮询处理过程，最终打开适当的编辑器或设计器中的为该文件。 由环境使用的初始过程是相同的标准和自定义编辑器。 该环境使用不同的条件时轮询的编辑器，用于打开文件并与环境，VSPackage 必须协调在此过程。  

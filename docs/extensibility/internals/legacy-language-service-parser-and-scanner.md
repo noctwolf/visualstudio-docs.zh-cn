@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134573"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>旧语言服务分析器和扫描程序
 分析器是语言服务的核心。 托管包框架 (MPF) 语言类需要的语言分析程序，可以选择要显示的代码的相关信息。 分析器将文本分隔为词法令牌，然后确定这些令牌的类型和功能。  

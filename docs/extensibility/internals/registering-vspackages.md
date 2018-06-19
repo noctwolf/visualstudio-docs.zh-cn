@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128840"
 ---
 # <a name="registering-vspackages"></a>注册 Vspackage
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 依赖于.pkgdef 文件来介绍并找到 VSPackage。 一个.pkgdef 文件包含否则将添加到系统注册表中的所有注册信息。 通过将特性添加到源代码，然后运行注册托管的 Vspackage [CreatePkgDef 实用工具](../../extensibility/internals/createpkgdef-utility.md)上生成的程序集生成.pkgdef 文件。  

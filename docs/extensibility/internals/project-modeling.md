@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130571"
 ---
 # <a name="project-modeling"></a>项目建模
 你的项目实现标准项目对象提供自动化的下一步：<xref:EnvDTE.Projects>和`ProjectItems`集合;`Project`和<xref:EnvDTE.ProjectItem>对象; 和剩余的对象唯一的实现。 Dteinternal.h 文件中定义这些标准的对象。 BscPrj 示例中提供了标准的对象的实现。 可以为模型中使用这些类创建您自己独立并排显示的标准项目对象与其他项目类型的项目对象。  

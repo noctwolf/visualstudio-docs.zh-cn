@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920357"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123：重写的链接请求应与基相同
 |||

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129940"
 ---
 # <a name="feedback-to-the-user"></a>向用户的反馈
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)，有关可用的功能取决于用户的当前所选内容和全局选择上下文的视觉反馈。 下表列出不同的选择上下文中提供的功能。  

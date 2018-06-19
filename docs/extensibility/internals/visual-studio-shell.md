@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144351"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]外壳是中的集成主代理[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 Shell 提供必要的功能，以允许 Vspackage 共享公共服务。 因为的体系结构目标[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是在 Vspackage，vest 主功能命令行程序是一个框架，以提供基本功能，并且支持 Vspackage 其组件之间的跨通信。  

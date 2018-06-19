@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129597"
 ---
 # <a name="services-provided-source-control-vspackage"></a>提供的服务 (源控件 VSPackage)
 服务是通过其在 Vspackage 和 Visual Studio 集成的开发环境 (IDE) 和其安装的 Vspackage 之间共享功能的主要机制。 有关服务和它们的重要性在 Visual Studio IDE 中详细说明，请参阅[使用和提供服务](../../extensibility/using-and-providing-services.md)。  

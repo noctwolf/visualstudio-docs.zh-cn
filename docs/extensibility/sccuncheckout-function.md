@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137335"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 函数
 此函数撤消一个以前的签出操作，从而将所选的文件或文件的内容还原到之前签出的状态。 签出以来对文件所做的所有更改都都将丢失。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130652"
 ---
 # <a name="supporting-source-control"></a>支持的源控件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持文件签出、 签入和其他项目或编辑器的源代码管理操作。 作为源控件的客户端，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]旨在与源代码管理包，如交互[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，后者提供存档、 版本控制和一组动态定义的文件的控件功能。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130565"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>到源代码管理存储区的本地项目文件夹的可选比较
 在源中控制本地项目文件夹和源控件之间的比较通过使用函数来实现的插件 API 1.2 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)和[SccDirDiff](../../extensibility/sccdirdiff-function.md)。  

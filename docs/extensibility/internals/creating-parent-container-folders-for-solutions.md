@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132556"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>为解决方案创建父容器文件夹
 在源控件插件 API 版本 1.2，用户可以指定单个根源控件目标的解决方案中的所有 Web 项目。 此单个根称为超级统一根 (SUR)。  

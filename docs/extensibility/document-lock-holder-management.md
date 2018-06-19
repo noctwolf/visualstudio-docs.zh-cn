@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130539"
 ---
 # <a name="document-lock-holder-management"></a>文档锁定持有者管理
 正在运行的文档表 (RDT) 维护打开的文档和它们具有任何编辑锁的计数。 以编程方式编辑在后台，而用户看到在文档窗口中的打开文档时，可以放 RDT 中的文档的编辑锁。 修改通过图形用户界面的多个文件的设计器经常使用此功能。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
  请注意，是否你需要在非编辑器文档上放置编辑锁定，则必须实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>接口。  
   
- 很多时候一个 UI 设计器，以编程方式修改代码文件将对多个文件中做出更改。 在这种情况下<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A>方法可处理的一个或多个文档的方式保存**你想要将更改保存到以下各项？**对话框。  
+ 很多时候一个 UI 设计器，以编程方式修改代码文件将对多个文件中做出更改。 在这种情况下<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A>方法可处理的一个或多个文档的方式保存**你想要将更改保存到以下各项？** 对话框。  
   
 ## <a name="see-also"></a>另请参阅  
  [正在运行的文档表](../extensibility/internals/running-document-table.md)   

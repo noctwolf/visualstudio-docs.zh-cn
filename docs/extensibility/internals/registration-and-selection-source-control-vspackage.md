@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133032"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>注册和选择 (源控件 VSPackage)
 必须注册 VSPackage 来公开到源代码管理[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 如果注册多个源控件 VSPackage 时，用户可以选择哪些 VSPackage 加载在适当的时间。 请参阅[Vspackage](../../extensibility/internals/vspackages.md)有关 Vspackage 以及如何对它们进行注册的更多详细信息。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136414"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>什么&#39;源中的新增功能的 s 控制插件的 API 版本 1.2
 本部分重点介绍在源控件插件 API 版本 1.2 的高级的源代码控件功能。 下面列出了版本 1.2 中的新功能：  

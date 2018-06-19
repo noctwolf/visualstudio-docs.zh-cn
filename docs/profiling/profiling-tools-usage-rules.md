@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31582080"
 ---
 # <a name="profiling-tools-usage-rules"></a>分析工具使用规则
 分析工具使用类别中的性能规则提供有关最有效地使用探查器收集数据的指南。  

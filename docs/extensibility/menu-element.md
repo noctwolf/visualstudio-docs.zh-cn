@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143447"
 ---
 # <a name="menu-element"></a>Menu 元素
 定义一个菜单项。 下面列出了六种菜单： 上下文、 菜单、 MenuController、 MenuControllerLatched、 工具栏上，和 ToolWindowToolbar。  

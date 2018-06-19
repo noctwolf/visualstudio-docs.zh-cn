@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134431"
 ---
 # <a name="delayed-document-loading"></a>延迟文档加载
 当用户重新打开 Visual Studio 解决方案时，不会立即加载大部分关联的文档。 文档窗口框架将创建处于挂起的初始化状态，并占位符文档 （称为存根 （stub） 帧） 被放在正在运行文档表 (RDT)。  
@@ -64,4 +65,4 @@ ms.lasthandoff: 04/16/2018
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>测试扩展，以查看它们是否强制初始化  
  没有可见的提示，以指示是否已初始化文档，因此它可能很难了解你的扩展强制初始化。 你可以设置轻松验证注册表项，因为它会导致未完全初始化则文字每个文档的标题`[Stub]`标题中。  
   
- 在**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**，将其设置**StubTabTitleFormatString**到**{0} [存根]**。
+ 在**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**，将其设置**StubTabTitleFormatString**到 **{0} [存根]**。

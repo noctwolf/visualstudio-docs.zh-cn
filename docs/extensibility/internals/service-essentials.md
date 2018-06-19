@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132650"
 ---
 # <a name="service-essentials"></a>服务 Essentials
 服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供一组特定的接口，另一个 VSPackage 来使用。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 本身就是向其他 Vspackage 提供服务的 Vspackage 集合的形式。  

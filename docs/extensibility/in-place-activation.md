@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131628"
 ---
 # <a name="in-place-activation"></a>就地激活
 如果你的编辑器视图托管了 ActiveX 或其他活动控件，则必须使用就地激活模型将编辑器视图实现为 ActiveX 控件或活动文档数据对象。  

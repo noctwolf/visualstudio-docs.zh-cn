@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129201"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多个项目连接设置的应用程序
 源代码管理插件生成使用源控件的插件 API 1.2 中，可以使用批处理操作来执行相同的源代码管理操作跨多个项目或多个连接上下文。 批处理可以用于消除冗余，每个项目中的用户体验的对话框。  

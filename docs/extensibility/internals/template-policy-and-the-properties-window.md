@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130037"
 ---
 # <a name="template-policy-and-the-properties-window"></a>模板策略和属性窗口
 当项目包含在企业级模板项目中时，则该企业级模板项目可强制实施策略。 模板策略将成为一个约束的系统，可用来设置属性的默认值、 隐藏属性，添加属性，依次类推。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31914349"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130：安全关键常量应是透明的
 |||

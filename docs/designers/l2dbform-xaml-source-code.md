@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924322"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 源代码
 
@@ -70,7 +71,7 @@ ItemTemplate ="{StaticResource BookTemplate}"
 </ListBox.ItemsSource>
 ```
 
-在第三个 UI 区域 **“Edit Selected Book”（编辑所选书籍）**中，首先将父 <xref:System.Windows.FrameworkElement.DataContext%2A> 的 <xref:System.Windows.Controls.StackPanel> 绑定到 **“Book List”（书籍列表）** UI 区域中的当前所选项（第 82 行）：
+在第三个 UI 区域 **“Edit Selected Book”（编辑所选书籍）** 中，首先将父 <xref:System.Windows.FrameworkElement.DataContext%2A> 的 <xref:System.Windows.Controls.StackPanel> 绑定到 **“Book List”（书籍列表）** UI 区域中的当前所选项（第 82 行）：
 
 ```
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"

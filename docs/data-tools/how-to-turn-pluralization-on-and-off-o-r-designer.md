@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921678"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>如何： 将复数形式打开和关闭 （O/R 设计器）
 默认情况下，当你将具有名称结尾 s 或从导致浏览器中的数据库对象拖动**服务器资源管理器**/**数据库资源管理器**到[LINQ to SQL 工具在 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)，生成的实体类的名称从采用复数形式更改为单数。 这样可以更准确地表示实例化的实体类映射到单个数据记录的事实。 例如，将 Customers 表添加到 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]将声称名为 Customer 的实体类，因为该类将仅为一个客户保存数据。

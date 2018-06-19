@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954347"
 ---
 # <a name="debugging-a-t4-text-template"></a>调试 T4 文本模板
 你可以在文本模板中设置断点。 要调试的设计时文本模板，将文本模板文件，保存，然后选择**调试 T4 模板**解决方案资源管理器中的文件的快捷菜单上。 若要调试的运行时文本模板，只需调试它属于该应用程序。

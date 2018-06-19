@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134108"
 ---
 # <a name="making-commands-available"></a>使命令可
 当多个 Vspackage 添加到 Visual Studio 时，用户界面 (UI) 可能会变得 overcrowded 使用命令。 你可以编程包以减少此问题，如下所示：

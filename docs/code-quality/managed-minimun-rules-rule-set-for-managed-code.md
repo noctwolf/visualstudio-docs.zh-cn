@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919047"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>托管最少量规则的规则集托管代码
 托管最少量规则侧重于在代码中，包括潜在的安全漏洞、 应用程序崩溃和其他重要的逻辑和设计错误的最关键问题。 应包括在任何自定义规则集中设置为你的项目创建此规则。

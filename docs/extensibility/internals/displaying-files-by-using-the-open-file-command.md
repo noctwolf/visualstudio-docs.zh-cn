@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130888"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>通过使用打开文件命令显示文件
 以下步骤描述了 IDE 如何处理**打开的文件**命令，可在找到**文件**菜单中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步骤还介绍项目应如何响应来自此命令的调用。  

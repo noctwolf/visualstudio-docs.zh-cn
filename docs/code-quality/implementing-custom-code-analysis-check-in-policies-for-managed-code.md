@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923545"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>对托管代码中实现自定义代码分析签入策略
 
@@ -111,7 +112,7 @@ ms.lasthandoff: 04/26/2018
 
 4. 如有必要，单击中的相应选项**配置**和**平台**列出。
 
-5. 若要使用指定的配置生成的代码项目时每次运行代码分析，选择**启用生成代码分析 （定义 CODE_ANALYSIS 常量）**复选框。
+5. 若要使用指定的配置生成的代码项目时每次运行代码分析，选择**启用生成代码分析 （定义 CODE_ANALYSIS 常量）** 复选框。
 
 6. 若要忽略从其他公司的组件中的代码，请选择**禁止显示生成代码产生的结果**复选框。
 

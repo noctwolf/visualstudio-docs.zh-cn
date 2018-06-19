@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704676"
 ---
 # <a name="log-command-window-output-command"></a>“日志命令窗口输出”命令
 将“命令”窗口的所有输入和输出复制到文件中。

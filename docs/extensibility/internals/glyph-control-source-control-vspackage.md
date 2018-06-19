@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130711"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>标志符号控件 (源控件 VSPackage)
 可用于源代码管理 Vspackage 深度集成的一部分是能够显示其自己的标志符号，以指示在源代码管理下的项的状态。  

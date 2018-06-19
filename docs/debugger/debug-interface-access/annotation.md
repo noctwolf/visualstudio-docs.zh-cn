@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31456948"
 ---
 # <a name="annotation"></a>批注
 可以使用批注位置程序代码`SymTagAnnotation`符号。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130875"
 ---
 # <a name="project-priority"></a>项目优先级
 项目项通常是解决方案中只有一个项目的成员。 因此，IDE 可以轻松地确定哪些项目用于打开该项目。 但是，如果项是多个项目的成员，IDE 将使用优先级方案来确定打开项的最佳项目。  

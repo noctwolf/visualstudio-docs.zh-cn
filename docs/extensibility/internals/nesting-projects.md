@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131155"
 ---
 # <a name="nesting-projects"></a>嵌套项目
 企业应用程序开发人员使用 VS 包可以方便地进行分组相似类型的项目中合并在一起[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*项目嵌套*。 例如，企业级模板项目到类别中使用嵌套的项目与组项目。 商业外观项目、 Web UI 项目，依次类推组合在一起一个类别中。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139151"
 ---
 # <a name="updating-the-user-interface"></a>更新用户接口
 实现命令后，你可以添加代码以与新的命令的状态更新的用户界面。  

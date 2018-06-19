@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922862"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>属性\<属性名称 > 不能被删除
 

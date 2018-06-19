@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950054"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>通过使用自定义主机的过程文本模板
 

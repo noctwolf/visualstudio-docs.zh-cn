@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130487"
 ---
 # <a name="extending-the-status-bar"></a>扩展状态栏
 可用于 Visual Studio 状态栏在 IDE 底部显示的信息。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128853"
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>筛选嵌套项目 AddItem 对话框
 当显示**AddItem**嵌套的项目，父项目的对话框中可以控制哪些项将显示在对话框中。  

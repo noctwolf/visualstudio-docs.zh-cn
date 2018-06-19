@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130941"
 ---
 # <a name="resources-in-vspackages"></a>在 Vspackage 中的资源
 你可以在本机附属 UI Dll 托管的附属 Dll 或托管的 VSPackage 本身中嵌入的本地化的资源。  

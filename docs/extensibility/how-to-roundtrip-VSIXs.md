@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133092"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>如何： 使扩展与 Visual Studio 2017 和 Visual Studio 2015 兼容
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/16/2018
 
 如果你只想要生成在 Visual Studio 2017 年，但希望输出 VSIX 若要运行 Visual Studio 2015 和 Visual Studio 2017 年 1，则引用[扩展迁移文档](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
 
->**注意：**由于在 Visual Studio 版本之间的更改，在一个版本中工作的事件将不适用另一个。 确保在这两个版本中，提供了你尝试访问的功能，或者该扩展将具有意外的结果。
+>**注意：** 由于在 Visual Studio 版本之间的更改，在一个版本中工作的事件将不适用另一个。 确保在这两个版本中，提供了你尝试访问的功能，或者该扩展将具有意外的结果。
 
 下面是将完成保存/还原 VSIX 本文档中的步骤概述：
 
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
     * 右键单击解决方案并选择**管理解决方案的 NuGet 包...**
     * Visual Studio 自动为你创建 packages.config 文件
 
->**注意：**如果你的项目包含 EnvDTE 包，它们可能需要通过右键单击要添加**引用**选择**添加引用**并添加了相应的引用。  使用 NuGet 包可能在尝试生成项目时创建错误。
+>**注意：** 如果你的项目包含 EnvDTE 包，它们可能需要通过右键单击要添加**引用**选择**添加引用**并添加了相应的引用。  使用 NuGet 包可能在尝试生成项目时创建错误。
 
 ## <a name="adding-appropriate-build-tools"></a>添加相应的生成工具
 
@@ -112,7 +113,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 保存并关闭文件。
 
->**注意：**如果你选择实现此目的在 Visual Studio 2017 的 VSIX 设计，你将需要手动编辑必备组件的版本，以确保它是与所有版本的 Visual Studio 2017 兼容。  这是因为设计器将插入的最低版本为当前版本的 Visual Studio (例如，15.0.26208.0)。  但是，由于其他用户可能具有较早版本，你将希望手动编辑此到 15.0。
+>**注意：** 如果你选择实现此目的在 Visual Studio 2017 的 VSIX 设计，你将需要手动编辑必备组件的版本，以确保它是与所有版本的 Visual Studio 2017 兼容。  这是因为设计器将插入的最低版本为当前版本的 Visual Studio (例如，15.0.26208.0)。  但是，由于其他用户可能具有较早版本，你将希望手动编辑此到 15.0。
 
 此时，你的清单文件应如下所示：
 
@@ -138,7 +139,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 添加以下标记`<VsixType>v3</VsixType>`到属性组。
 
->**注意：**建议地将其添加下面`<OutputType></OutputType>`标记。
+>**注意：** 建议地将其添加下面`<OutputType></OutputType>`标记。
 
 ### <a name="3-add-the-debugging-properties"></a>3.添加的调试属性
 
@@ -210,4 +211,4 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 ![查找 VSIX](media/finding-a-VSIX-example.png)
 
->**注意：**如果你的项目挂起消息"打开文件"强制关闭 Visual Studio 中，导航到你的项目目录、 显示隐藏的文件夹，并删除.vs 文件夹。
+>**注意：** 如果你的项目挂起消息"打开文件"强制关闭 Visual Studio 中，导航到你的项目目录、 显示隐藏的文件夹，并删除.vs 文件夹。

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133240"
 ---
 # <a name="test-area-2-get-from-source-control"></a>测试区域 2： 获取从源代码管理
 此测试区域介绍用于从通过 Get 命令的版本存储区中检索项的测试用例。 可以应用于这些测试用例，这两个本地以及 Web 项目。  

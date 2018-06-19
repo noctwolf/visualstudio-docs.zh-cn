@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138351"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML 架构条件属性
 条件属性可以应用于所有列表和项。 逻辑运算符和符号扩展表达式计算结果为 true 或 false。 如果为 true，生成的输出中包含的关联的列表或项。  

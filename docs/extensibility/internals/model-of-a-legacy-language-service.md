@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131566"
 ---
 # <a name="model-of-a-legacy-language-service"></a>旧语言服务模型
 语言服务定义的元素和特定语言的功能，用于提供对该语言的特定信息的编辑器。 例如，编辑器需要知道的元素和语言关键字，才能支持语法突出显示。  

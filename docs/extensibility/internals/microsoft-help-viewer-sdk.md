@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135402"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 帮助查看器 SDK
 本文包含以下任务，以便 Visual Studio 帮助查看器集成商：  
@@ -814,7 +815,7 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
   
 10. 启动 Contoso 应用程序 （从 Contoso 应用程序根目录开始）。 在 ISO 外壳中，选择**帮助**菜单项，并更改**设置帮助首选项**到**使用本地帮助**。  
   
-11. 在外壳中，选择**帮助**菜单项，然后**视图帮助**。 应启动本地帮助查看器。 选择“管理内容”选项卡。下**安装源**，选择**磁盘**选项按钮。 选择**...**按钮，然后浏览到包含 （复制到上述步骤中的本地文件夹） 的 Contoso 内容的本地文件夹。 选择 HelpContentSetup.msha。 Contoso 都现在应显示为中的书选择簿中。 选择**添加**，然后选择**更新**按钮 （底部右下角）。  
+11. 在外壳中，选择**帮助**菜单项，然后**视图帮助**。 应启动本地帮助查看器。 选择“管理内容”选项卡。下**安装源**，选择**磁盘**选项按钮。 选择 **...** 按钮，然后浏览到包含 （复制到上述步骤中的本地文件夹） 的 Contoso 内容的本地文件夹。 选择 HelpContentSetup.msha。 Contoso 都现在应显示为中的书选择簿中。 选择**添加**，然后选择**更新**按钮 （底部右下角）。  
   
 12. Contoso IDE 中，选择 F1 键来测试 F1 功能。  
   

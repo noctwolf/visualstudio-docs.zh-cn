@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130698"
 ---
 # <a name="properties-window-buttons"></a>属性窗口按钮
 根据开发语言和产品类型，某些按钮的工具栏上的默认情况下显示**属性**窗口。 在所有情况下，**按分类顺序**， **Alphabetized**，**属性**，和**属性页**按钮显示。 在 Visual C# 和 Visual Basic 中，**事件**按钮还会显示。 在某些 Visual c + + 项目中， **VC + + 消息**和**VC 替代**按钮显示。 对于其他项目类型，可能显示其他按钮。 有关详细信息中的按钮有关**属性**窗口中，请参阅[属性窗口](../../ide/reference/properties-window.md)。  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924964"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>在 Windows 窗体应用程序中的筛选器和排序数据
 通过设置筛选数据<xref:System.Windows.Forms.BindingSource.Filter%2A>属性设置为一个字符串表达式，返回的所需的记录。

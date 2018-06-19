@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132742"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>设计器的初始化和元数据配置
 与设计器或设计器组件关联的元数据和筛选器属性的操作提供用于应用程序定义将哪些工具由特定的设计器，用于处理不同的机制<xref:System.Type>对象 （如数据结构类或图形实体），设计器不可用时，以及如何配置 Visual Studio IDE 以支持设计器 (该实例**工具箱**类别或选项卡上的可用)。  

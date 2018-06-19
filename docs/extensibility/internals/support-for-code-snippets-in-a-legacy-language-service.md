@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135672"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>对旧语言服务中的代码段的支持
 代码片段是代码的一种插入到的源文件。 本身的代码片段是一组字段的基于 XML 的模板。 代码段插入，并且可以具有不同的值，具体取决于在插入代码段的上下文之后，将突出显示这些字段。 立即插入代码段后，该语言服务即可格式化代码段。  

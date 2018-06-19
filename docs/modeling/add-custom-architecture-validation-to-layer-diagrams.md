@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952539"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>向依赖项关系图添加自定义体系结构验证
 在 Visual Studio 中，用户可以验证在对照层模型项目中的源代码，以便它们可以验证源代码符合依赖关系图上的依赖关系。 有标准的验证算法，但你可以定义自己的验证扩展。

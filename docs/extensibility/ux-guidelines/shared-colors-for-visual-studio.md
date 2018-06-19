@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148267"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual studio 共享的颜色
 当您设计使用公共 Visual Studio shell 元素的 UI，或你想要界面元素与类似功能一致时，使用包定义文件中现有标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。  

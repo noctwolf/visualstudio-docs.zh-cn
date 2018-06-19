@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130737"
 ---
 # <a name="legacy-language-service-features"></a>旧语言服务功能
 以下主题列出了一些你可以提供的旧语言服务功能。  

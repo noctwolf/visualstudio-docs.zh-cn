@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131563"
 ---
 # <a name="providing-automation-for-vspackages"></a>提供 Vspackage 的自动化
 有两种主要方法，提供你的 Vspackage 的自动化： 通过实现特定于 VSPackage 的对象和通过实现标准的自动化对象。 通常情况下，这些一起用于扩展自动化模型的环境。  

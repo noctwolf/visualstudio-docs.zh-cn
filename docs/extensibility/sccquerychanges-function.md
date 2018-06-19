@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139817"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函数
 此函数枚举给定的文件，对于通过回调函数的每个文件提供名称更改的信息的列表。  

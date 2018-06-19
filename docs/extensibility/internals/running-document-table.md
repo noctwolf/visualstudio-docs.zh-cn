@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134087"
 ---
 # <a name="running-document-table"></a>正在运行的文档表
 IDE 维护称为正在运行的文档表 (RDT) 的内部结构中的所有当前打开的文档的列表。 此列表包括所有打开的文档在内存中，而不考虑是否当前正在编辑这些文档。 文档是保持不变，包括在项目或主项目文件 （例如，.vcxproj 文件） 的文件的任何项。  

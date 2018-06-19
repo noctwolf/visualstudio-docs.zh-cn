@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133533"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何： 安装了源代码管理插件
 创建源代码管理插件包括三个步骤：  
@@ -102,7 +103,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]
 >  IDE 不会从相对路径 (例如，.\NewProvider.DLL) 加载 Dll。 必须指定 DLL 的完整路径 (例如，c:\Providers\NewProvider.DLL)。 这可在 IDE 的安全增强通过阻止未经授权或模拟插件 Dll 的加载。  
   
- 若要在第二种方法中查找该 DLL，IDE 将查找所有条目的 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders 子项下*。* 每个条目都具有一个名称和值。 IDE 为用户显示这些名称的列表*。* 当用户选择一个名称时，IDE 将查找指向一个子项的所选名称的值。 IDE 将查找名 SccServerPath 为在该子项中 HKEY_LOCAL_MACHINE 下的条目。 该条目的值将 IDE 指向正确的 DLL。  
+ 若要在第二种方法中查找该 DLL，IDE 将查找所有条目的 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders 子项下 *。* 每个条目都具有一个名称和值。 IDE 为用户显示这些名称的列表 *。* 当用户选择一个名称时，IDE 将查找指向一个子项的所选名称的值。 IDE 将查找名 SccServerPath 为在该子项中 HKEY_LOCAL_MACHINE 下的条目。 该条目的值将 IDE 指向正确的 DLL。  
   
  源代码管理插件需要支持查找 DLL 的这两种方式，并因此，设置 ProviderRegKey，覆盖任何以前的设置。 更重要的是，它必须添加本身到 InstalledSccProviders 列表以便用户可以选择的源代码管理插件，以使用。  
   

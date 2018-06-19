@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131863"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>如何： 生成的安装程序的注册表信息
 RegPkg.exe 实用程序可用来为托管的 VSPackage 生成注册清单。 清单可以合并到 Windows Installer 安装程序包中。 RegPkg 还可以生成一个文件，可包含在基于安装程序源文件[Windows Installer XML 工具集](http://go.microsoft.com/fwlink/?LinkId=62238)。  

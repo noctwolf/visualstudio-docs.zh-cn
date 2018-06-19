@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129113"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>截获旧语言服务命令
 与[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，你可以将否则处理文本视图语言服务截距命令。 这可用于文本视图不管理的特定于语言的行为。 可以通过将一个或多个命令筛选器添加到文本视图中，从你的语言服务截获这些命令。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132422"
 ---
 # <a name="project-property-user-interface"></a>项目属性用户界面
 项目子类型可以在项目中使用的项**属性页**对话框中提供基本的项目中，隐藏或记只读控件和整个页面，因为提供，或将项目子类型特定页添加到**属性页**对话框。

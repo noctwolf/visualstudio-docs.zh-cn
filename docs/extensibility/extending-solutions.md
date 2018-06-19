@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134271"
 ---
 # <a name="extending-solutions"></a>扩展解决方案
 解决方案是协同工作以创建应用程序的一个或多个项目中的分组。  

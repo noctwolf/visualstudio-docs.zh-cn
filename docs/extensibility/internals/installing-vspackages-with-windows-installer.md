@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130996"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>使用 Windows Installer 安装 Vspackage
 将集成到你的 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]需要多个只需将文件复制到用户的计算机。 你的 VSPackage 的安装程序必须安装 VSPackage 和其依赖的文件，并注册并将它们到集成[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 你的 VSPackage 可以利用集成功能，例如在上显示一个图标[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]初始屏幕和有关对话框。  

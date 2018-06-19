@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134960"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>测试区域 3： 签出/撤消签出
 此源代码管理插件测试区域涉及通过版本存储中的编辑和恢复项目**签出**和**撤消签出**命令。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130307"
 ---
 # <a name="source-control-runtime-details"></a>源控制运行时详细信息
 当用户在项目源代码管理，或通过自动化控制器，如向导中添加文件时，项目将添加到源代码管理。 项目未指定为自身很受源代码管理;它支持源代码管理，但必须手动添加到它。  

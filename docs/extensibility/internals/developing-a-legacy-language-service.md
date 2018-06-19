@@ -24,6 +24,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129841"
 ---
 # <a name="developing-a-legacy-language-service"></a>开发旧语言服务
 此部分链接到主题可帮助您创建旧语言服务。  

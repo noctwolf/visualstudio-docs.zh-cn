@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136063"
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>如何： 承载在其他编辑器中的编辑器
 Visual Studio 中可以托管在另一个编辑器，通过指定承载的窗口作为父窗口。 为此，请将参数设置<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2>和<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2>子窗口帧上。  

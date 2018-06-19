@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129371"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>在旧语言服务中的大纲显示和隐藏文本
 以大纲方式显示使可以折叠到单个行的文本行的序列。 例如，在 c + + 中的所有方法可以都折叠导航到单个行中，显示仅方法签名。 隐藏的文本是可以显示或隐藏的文本行的序列。  

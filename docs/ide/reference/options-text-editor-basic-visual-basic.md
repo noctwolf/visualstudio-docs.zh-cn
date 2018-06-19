@@ -24,13 +24,14 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945852"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>选项，文本编辑器，基本 (Visual Basic)
 在“选项”（“工具”菜单）对话框的“文本编辑器”文件夹下的“Basic”文件夹中，“VB 专用”属性页包含以下属性：
 
  **自动插入最终构造**键入一个过程声明的第一行（如 `Sub Main—`）并按 Enter 时，文本编辑器会添加一个匹配的 `End Sub` 行。 同样，如果添加一个 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 循环，文本编辑器会添加一个匹配的 `Next` 语句。 选定此选项后，代码编辑器会自动添加最终构造。
 
- **整齐排列代码（重新设置格式）**文本编辑器会适当地重新设置代码格式。 选定此选项后，代码编辑器会：
+ **整齐排列代码（重新设置格式）** 文本编辑器会适当地重新设置代码格式。 选定此选项后，代码编辑器会：
 
 -   将代码与正确的制表符位置对齐
 

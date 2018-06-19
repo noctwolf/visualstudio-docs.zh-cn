@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138572"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函数
 此函数显示 （或 （可选） 只需检查） 控制系统的源中 （在本地磁盘） 上的当前文件和其最近的签入版本之间的差异。  

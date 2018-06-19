@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148374"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>演练： 使用编辑器扩展名 Shell 命令
 从 VSPackage，你可以将功能，如菜单命令添加到编辑器。 本演练演示如何将修饰添加到在编辑器中的文本视图中，通过调用菜单命令。  

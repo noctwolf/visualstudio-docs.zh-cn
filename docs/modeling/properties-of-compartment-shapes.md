@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952163"
 ---
 # <a name="properties-of-compartment-shapes"></a>分段形状的属性
 隔离舱形状是一种可用于在域特定语言中显示的域类的形状。 你可以展开和折叠隔离舱。

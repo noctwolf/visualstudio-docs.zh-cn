@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133093"
 ---
 # <a name="project-model-core-components"></a>项目模型核心组件
 下表来扩大项目模型。 这些表格显示接口和在该模型的接口和特定对象与关联的服务中标识的服务的简要的说明。 此外，表详细介绍在项目创建和维护，具体取决于你的特定项目类型的要求中是可选的其他接口。  

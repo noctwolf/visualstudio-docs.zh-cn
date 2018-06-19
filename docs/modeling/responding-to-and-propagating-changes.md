@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954000"
 ---
 # <a name="responding-to-and-propagating-changes"></a>响应并传播更改
 元素是创建、 删除或更新时，你可以编写传播的更改的其他部分的模型，或对外部资源，如文件、 数据库或其他组件的代码。

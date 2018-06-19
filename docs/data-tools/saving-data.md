@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923424"
 ---
 # <a name="saving-data"></a>保存数据
 保存数据是保留的过程更改回原始数据存储通常如 SQL Server 关系数据库的应用程序的数据模型中的数据。

@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921706"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>使用 SAL 批注以减少 C/C++ 代码缺陷
 SAL 是 Microsoft 源代码注释语言。 通过使用源代码注释，你可以明确意向你的代码后面。 这些批注还启用自动化的静态分析工具来使用少得多的误报和漏报更准确地说，分析你的代码。

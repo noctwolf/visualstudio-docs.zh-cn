@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132922"
 ---
 # <a name="options-and-options-pages"></a>选项和选项页
 单击**选项**上**工具**打开菜单**选项**对话框。 在此对话框中的选项统称为选项页。 在导航窗格中的树控件包含选项类别，每个类别包含选项页。 当选择页时，其选项出现在右窗格中。 这些页面允许您更改确定 VSPackage 的状态选项的值。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129253"
 ---
 # <a name="how-to-open-standard-editors"></a>如何： 打开标准编辑器
 标准编辑器打开时，你将让 IDE 确定指定的文件类型，而不是指定的文件的项目特定编辑器的标准编辑器。  
