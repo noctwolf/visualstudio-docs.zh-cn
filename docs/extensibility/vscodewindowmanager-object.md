@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137597"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager 对象
 语言服务实现代码窗口管理器，并负责管理修饰 （例如，下拉栏）。 有关详细信息，请参阅[自定义代码窗口中，使用旧 API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)。  

@@ -34,6 +34,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478117"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>在 c + + 在 Visual Studio 调试器中的格式说明符
 你可以使用格式说明符更改在“监视”  窗口中显示值所用的格式。  

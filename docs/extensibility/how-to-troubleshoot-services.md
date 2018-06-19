@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128670"
 ---
 # <a name="how-to-troubleshoot-services"></a>如何： 解决服务问题
 有几个常见的问题，当你尝试将获得的服务时可能发生：  

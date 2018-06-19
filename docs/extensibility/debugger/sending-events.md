@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125747"
 ---
 # <a name="sending-events"></a>发送事件
 调试器的调试引擎 (DE) 之间的通信的机制是一个基于 DCOM 的事件模型。 事件会发送作为 COM 对象，每个事件具有参数，指定下列各项：  

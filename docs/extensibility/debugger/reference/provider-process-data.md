@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126670"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 此结构可提供有关在计算机上运行的进程的信息。  

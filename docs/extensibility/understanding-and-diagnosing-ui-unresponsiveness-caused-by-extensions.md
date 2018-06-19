@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137471"
 ---
 # <a name="understanding-and-diagnosing-ui-unresponsiveness-caused-by-extensions"></a>了解和诊断引起的扩展 UI 停止响应
 

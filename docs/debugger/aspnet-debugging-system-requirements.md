@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466365"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 调试：系统要求
 本主题描述了 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 调试方案的软件和安全性要求：  
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/18/2018
 ## <a name="security-requirements"></a>安全性要求  
  对于远程调试，本地和远程计算机必须位于域设置或工作组设置上。  
   
- 若要调试[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]（由应用程序池托管） 的工作进程，您必须有权调试该进程。 默认情况下，[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]之前 IIS 6.0 的应用程序以运行**ASPNET**用户。 在 IIS 6.0 和 IIS 7.0、**网络服务**帐户是默认设置。 如果辅助进程作为 **“ASPNET”**或 **“NETWORK SERVICE”**运行，则您必须具有管理员特权才能对它进行调试。
+ 若要调试[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]（由应用程序池托管） 的工作进程，您必须有权调试该进程。 默认情况下，[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]之前 IIS 6.0 的应用程序以运行**ASPNET**用户。 在 IIS 6.0 和 IIS 7.0、**网络服务**帐户是默认设置。 如果辅助进程作为 **“ASPNET”** 或 **“NETWORK SERVICE”** 运行，则您必须具有管理员特权才能对它进行调试。
 
  > [!IMPORTANT]
  > 从 Windows Server 2008 R2 开始，我们建议使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)作为每个应用程序池的标识。

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267771"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>合作开发 Office 解决方案
   多个开发人员可以处理 Office 项目中与它们在其他 Visual Studio 项目协作的方式相同。 即使在不同位置中安装 Office，visual Studio 正确定位每台计算机上的 Microsoft Office 安装。 但是，有需要注意的一些重要注意事项。  

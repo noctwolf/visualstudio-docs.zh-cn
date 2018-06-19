@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479833"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>演练：用 C# 编写可视化工具 #
 本演练演示如何使用 C# 编写简单的可视化工具。 将在本演练中创建的可视化工具显示使用的 Windows 窗体消息框字符串内容。 此简单字符串可视化工具不是本身而言，尤其有用，但它演示创建其他数据类型的更多有用可视化工具时必须遵循的基本步骤。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/18/2018
   
 1.  上**文件**菜单上，选择**新建 > 项目**。  
   
-2.  在**新项目**对话框中，在**Visual C#**，选择**.NET 标准**。  
+2.  在**新项目**对话框中，在**Visual C#**，选择 **.NET 标准**。  
   
 3.  在中间窗格中，选择**类库**。  
   
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/18/2018
   
 3.  在**解决方案资源管理器**，右键单击**引用**选择**添加引用**快捷菜单上。  
   
-4.  在**添加引用**对话框中，在**.NET**选项卡上，选择 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
+4.  在**添加引用**对话框中，在 **.NET**选项卡上，选择 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
   
 5.  单击 **“确定”**。  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 04/18/2018
   
 1.  在**解决方案资源管理器**，右键单击**引用**选择**添加引用**快捷菜单上。  
   
-2.  在**添加引用**对话框中，在**.NET**选项卡上，选择 System.Windows.Forms.DLL。  
+2.  在**添加引用**对话框中，在 **.NET**选项卡上，选择 System.Windows.Forms.DLL。  
   
 3.  单击 **“确定”**。  
   
@@ -232,7 +233,7 @@ ms.lasthandoff: 04/18/2018
   
 1.  上**文件**菜单上，选择**新建 > 项目**。  
   
-2.  在**新项目**对话框中，在**Visual C#**，选择**.NET 标准**。  
+2.  在**新项目**对话框中，在**Visual C#**，选择 **.NET 标准**。  
   
 3.  在中间窗格中，选择**类库**。   
   

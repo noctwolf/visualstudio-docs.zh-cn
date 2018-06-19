@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479814"
 ---
 # <a name="debugging-wpf"></a>调试 WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 提供了附加功能，可用于更轻松地调试 WPF 应用程序。  

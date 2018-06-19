@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263449"
 ---
 # <a name="data-in-office-solutions"></a>Office 解决方案中的数据
   多种 Office 解决方案使用户能够检索或修改数据。 当通过使用 Visual Studio 创建 Office 解决方案时，可通过多种不同方法使用数据。  

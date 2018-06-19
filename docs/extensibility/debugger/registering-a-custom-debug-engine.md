@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126283"
 ---
 # <a name="registering-a-custom-debug-engine"></a>注册自定义调试引擎
 调试引擎必须将自身注册为以下 COM 约定的类工厂以及通过 Visual Studio 注册表子项注册 Visual Studio。  

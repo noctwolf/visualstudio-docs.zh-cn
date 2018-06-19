@@ -29,14 +29,15 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476905"
 ---
 # <a name="macros-for-reporting"></a>用于报告的宏
-你可以使用**_RPTn**，和**_RPTFn** CRTDBG 中定义的宏。H、 要替换的使用`printf`语句进行调试。 在你的发布中自动消失这些宏生成时**_DEBUG**未定义的因此没有无需将它们括在**#ifdef**s。  
+你可以使用 **_RPTn**，和 **_RPTFn** CRTDBG 中定义的宏。H、 要替换的使用`printf`语句进行调试。 在你的发布中自动消失这些宏生成时 **_DEBUG**未定义的因此没有无需将它们括在 **#ifdef**s。  
   
 |宏|描述|  
 |-----------|-----------------|  
-|**_RPT0**， **_RPT1**， **_RPT2**， **_RPT3**， **_RPT4**|向四个自变量输出一个消息字符串和零。 对于从 _RPT1 到**_RPT4**，消息字符串作为自变量的 printf 样式格式化字符串。|  
-|**_RPTF0**， **_RPTF1**， **，_RPTF2**， **_RPTF4**|与相同**_RPTn**，但这些宏还输出宏所在的位置的文件名和行号。|  
+|**_RPT0**， **_RPT1**， **_RPT2**， **_RPT3**， **_RPT4**|向四个自变量输出一个消息字符串和零。 对于从 _RPT1 到 **_RPT4**，消息字符串作为自变量的 printf 样式格式化字符串。|  
+|**_RPTF0**， **_RPTF1**， **，_RPTF2**， **_RPTF4**|与相同 **_RPTn**，但这些宏还输出宏所在的位置的文件名和行号。|  
   
  请看下面的示例：  
   

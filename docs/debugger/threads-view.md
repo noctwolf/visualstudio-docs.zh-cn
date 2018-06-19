@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476892"
 ---
 # <a name="threads-view"></a>线程视图
 线程视图是与你的系统上的 windows 相关联的所有线程的平面列表。 显示的线程 ID 和每个线程的模块名称。 流程不包括在内，但你可以轻松地找到拥有选定的线程的进程。  

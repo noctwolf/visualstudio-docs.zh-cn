@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479027"
 ---
 # <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
 检索的位置槽编号。 何时使用[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)是`LocIsSlot`。  

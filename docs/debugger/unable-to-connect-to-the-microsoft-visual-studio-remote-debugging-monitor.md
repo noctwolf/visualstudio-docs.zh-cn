@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478234"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因为远程调试监视器未正确设置远程计算机上或远程计算机是由于网络问题或存在防火墙而无法访问，则可能出现此消息。
@@ -139,7 +140,7 @@ Visual Studio 无法连接到远程调试器。 出现此消息可能的原因�
     > [!NOTE]
     > 如果你远程服务器上运行远程调试器，右键单击远程调试器应用，然后选择**以管理员身份运行**（或者，你可以运行远程调试器作为服务）。 如果你不远程服务器上运行它，只是它正常启动。
   
--   你可以使用从命令行启动远程调试器**/ 允许\<用户名 >**参数： `msvsmon /allow <username@computer>`。 
+-   你可以使用从命令行启动远程调试器 **/ 允许\<用户名 >** 参数： `msvsmon /allow <username@computer>`。 
   
 -   或者，你可以允许任何用户进行远程调试。 在远程调试器窗口中，转到**工具 > 选项**对话框。 选中“无身份验证”   后，可选中 “允许任何用户进行调试”。 但是，你应该尝试此选项，仅当其他选项失败，或如果您在专用网络上。
 

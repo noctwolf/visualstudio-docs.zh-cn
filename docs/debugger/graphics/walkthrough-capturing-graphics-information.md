@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476343"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>演练：捕获图形信息
 本演练演示了如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断从 Direct3D 应用手动捕获图形信息。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/18/2018
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>不加载项目或解决方案而启用图形信息捕获  
   
-1.  在菜单栏上，依次选择 **“文件”**、 **“打开”**和 **“项目/解决方案”**。 此时将出现“打开项目”  对话框。  
+1.  在菜单栏上，依次选择 **“文件”**、 **“打开”** 和 **“项目/解决方案”**。 此时将出现“打开项目”  对话框。  
   
 2.  不为应用指定项目或解决方案文件，而是为其指定你希望从中捕获图形信息的可执行文件，然后选择“打开” 。  
   

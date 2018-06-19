@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136321"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>准备 Windows Installer 部署扩展
 Windows Installer 包 (MSI) 不能用于部署 VSIX 包。 但是，你可以提取 MSI 部署 VSIX 包的内容。 本文档说明如何准备其默认输出是包含在安装项目的 VSIX 包的项目。  

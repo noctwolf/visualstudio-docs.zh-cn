@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126222"
 ---
 # <a name="session-debug-manager"></a>会话调试管理器
 会话调试管理器 (SDM) 管理任意数量的调试引擎 (DE) 调试任意数量的任意数量的计算机上的多个进程中的程序。 除了多路复用器调试引擎外，SDM 到 IDE 提供调试会话的统一的视图。  

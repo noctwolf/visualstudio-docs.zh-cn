@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477074"
 ---
 # <a name="messages-view"></a>消息视图
 每个窗口具有关联的消息流。 消息视图窗口显示此消息流。 显示的窗口句柄、 消息代码和消息。 你可以创建线程或进程以及消息视图。 这允许你查看发送到所有 windows 拥有的特定进程或线程，很适合用于捕获窗口初始化消息的消息。  

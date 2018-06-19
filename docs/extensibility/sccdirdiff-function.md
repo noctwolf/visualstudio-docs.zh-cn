@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138017"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函数
 此函数显示在客户端磁盘上的当前本地目录和在源代码管理下的相应项目之间的差异。  
