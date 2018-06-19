@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31117847"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 此接口可让调试程序和在端口上运行的进程管理器 (SDM) 控制会话。  

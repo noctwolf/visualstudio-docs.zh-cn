@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120554"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 此注册的接口允许会话调试管理器 (SDM) 以获取有关已"发布"通过的程序的信息[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)接口。  

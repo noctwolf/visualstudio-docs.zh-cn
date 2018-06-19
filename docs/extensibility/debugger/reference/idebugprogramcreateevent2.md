@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31118198"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
 当程序附加到，此接口是由的调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。  

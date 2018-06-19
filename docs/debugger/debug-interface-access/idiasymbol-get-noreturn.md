@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466226"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
 检索用于指定函数是否已标记为永远不会返回具有的标志[noreturn](/cpp/cpp/noreturn)属性。  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448423"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>开始编程 Excel 文档级自定义项
   如果你刚开始使用 Visual Studio 创建 Microsoft Office Excel 文档级自定义项，下面是你需要知道。  

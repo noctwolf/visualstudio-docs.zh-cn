@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573754"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>特定于 Visual C++ 的 MSBuild 任务
 任务提供在生成过程中运行的代码。 安装 Visual C++ 后，除了随 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 安装的任务外，以下任务也可用。 有关详细信息，请参阅 [MSBuild (Visual C++) 概述](/cpp/build/msbuild-visual-cpp-overview)。  

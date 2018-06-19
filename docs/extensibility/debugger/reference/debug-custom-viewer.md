@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109985"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
 一个结构，它标识一个自定义查看器，或键入可视化工具。  

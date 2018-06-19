@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575931"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 Visual Studio 承载有 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用以加载和生成托管项目。 由于 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 负责处理项目，因此，可以在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中成功使用几乎任何 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]格式的项目（即使项目是用另一种工具编写的，而且这些项目有自定义的生成过程）。  
@@ -88,7 +89,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]内生成时，属性 `$(BuildingInsideVisualStudio)` 将设置为 `true`。 这可以用在项目或 .targets 文件中，使生成行为有所不同。  
   
 ## <a name="displaying-properties-and-items"></a>显示属性和项  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可识别某些属性名称和值。 例如，项目中下面的属性将导致 **“Windows 应用程序”** 出现在 **“项目设计器”** 内的 **“应用程序类型”**框中。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可识别某些属性名称和值。 例如，项目中下面的属性将导致 **“Windows 应用程序”** 出现在 **“项目设计器”** 内的 **“应用程序类型”** 框中。  
   
 ```xml  
 <OutputType>WinExe</OutputType>  
@@ -130,7 +131,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>在 Visual Studio 中卸载和编辑项目文件  
   
-1.  在 **“解决方案资源管理器”**中，打开项目的快捷菜单，然后选择 **“卸载项目”**。  
+1.  在 **“解决方案资源管理器”** 中，打开项目的快捷菜单，然后选择 **“卸载项目”**。  
   
      该项目即被标记为 **“(不可用)”**。  
   
@@ -140,7 +141,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 3.  编辑、保存，然后关闭项目文件。  
   
-4.  在 **“解决方案资源管理器”**中，打开不可用项目的快捷菜单，然后选择 **“重新加载项目”**。  
+4.  在 **“解决方案资源管理器”** 中，打开不可用项目的快捷菜单，然后选择 **“重新加载项目”**。  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense 和验证  
  使用 XML 编辑器编辑项目文件时，IntelliSense 和验证由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 架构文件驱动。 这些安装在架构缓存中，安装目录为 *\<Visual Studio 安装目录>* \Xml\Schemas\1033\MSBuild。  

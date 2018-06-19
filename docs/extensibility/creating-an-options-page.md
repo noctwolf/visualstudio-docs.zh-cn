@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108136"
 ---
 # <a name="creating-an-options-page"></a>创建选项页
 本演练创建一个简单工具/选项页面属性网格用于检查和设置属性。  

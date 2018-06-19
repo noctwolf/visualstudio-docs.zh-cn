@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568635"
 ---
 # <a name="creating-forwarding-loggers"></a>创建转发记录器
 在多处理器系统上生成项目时，转发记录器允许选择要监视的事件，提高了日志记录效率。 启用转发记录器后，可防止不必要的事件影响中心记录器、降低生成速度以及造成日志混乱。  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141410"
 ---
 # <a name="keybindings-element"></a>键绑定元素
 键绑定元素进行分组键绑定元素和其他键绑定分组。  

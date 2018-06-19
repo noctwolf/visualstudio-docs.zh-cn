@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567975"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 元素 (MSBuild)
 包含用户定义的项元数据键，其中包含项元数据值。 一个项可能具有任意数量的元数据键值对。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572971"
 ---
 # <a name="incremental-builds"></a>增量生成
 增量生成是经过优化的生成。优化后，如果目标具有的输出文件相对于其相应的输入文件保持为最新，则系统不会执行该目标。 目标元素可同时具有 `Inputs` 属性（指示目标要预期为输入的项）和 `Outputs` 属性（指示目标要生成为输出的项）。 MSBuild 尝试在这些属性的值之间找到一对一映射。 如果存在一对一映射，MSBuild 比较每个输入项的时间戳和其对应的输出项的时间戳。 不具有一对一映射的输出文件则与所有输入文件进行对比。 如果某项的输出文件的时间戳与该项的一个或多个输入文件相同，或与之相比较新，则将该项视为最新。  

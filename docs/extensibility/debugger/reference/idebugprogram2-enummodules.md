@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114715"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 检索此程序已加载，并且正在执行的模块的列表。  

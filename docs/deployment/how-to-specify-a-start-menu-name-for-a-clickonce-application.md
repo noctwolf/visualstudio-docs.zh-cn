@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558862"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的“开始”菜单名称
 当[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]用于联机和脱机安装应用程序，条目添加到**启动**菜单和**添加或删除程序**列表。 默认情况下，显示名称是应用程序的程序集的名称相同，但你可以通过设置更改的显示名称**产品名称**中**发布选项**对话框。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116420"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
 扩展字段的可用于支持托管的代码的泛型的类型。  

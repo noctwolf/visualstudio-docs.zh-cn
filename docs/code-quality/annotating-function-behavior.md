@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31899350"
 ---
 # <a name="annotating-function-behavior"></a>对函数行为进行批注
 除了批注[函数参数和返回值](../code-quality/annotating-function-parameters-and-return-values.md)，还可以批注整个函数的属性。

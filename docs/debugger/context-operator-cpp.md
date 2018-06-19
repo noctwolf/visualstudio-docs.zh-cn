@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466040"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>上下文运算符在 Visual Studio 调试器 （c + +）
 可使用 C++ 中的上下文运算符来限定断点位置、变量名称或表达式。 上下文运算符可用于指定来自外部范围的但被本地名称隐藏的名称。  

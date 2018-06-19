@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109625"
 ---
 # <a name="button-element"></a>Button 元素
 定义用户可以与交互元素。 按钮可以是不同类型的： 按钮、 MenuButton 和 SplitDropDown。  

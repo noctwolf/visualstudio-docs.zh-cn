@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574518"
 ---
 # <a name="vcmessage-task"></a>VCMessage 任务
 记录生成期间的警告消息和错误消息。  

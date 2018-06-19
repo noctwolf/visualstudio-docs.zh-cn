@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565713"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>如何：为 ClickOnce 部署错误设置一个自定义日志文件位置
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 维护激活的所有部署的日志文件。 这些日志记录的安装和初始化相关的任何错误[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。 默认情况下，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]会创建每个部署激活的一个日志文件。 它在 Internet 临时文件文件夹中存储这些日志文件。 向用户显示部署的日志文件，当出现激活失败，并且用户单击**详细信息**生成的错误对话框中。  

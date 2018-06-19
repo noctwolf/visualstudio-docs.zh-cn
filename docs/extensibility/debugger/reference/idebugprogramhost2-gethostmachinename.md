@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114341"
 ---
 # <a name="idebugprogramhost2gethostmachinename"></a>IDebugProgramHost2::GetHostMachineName
 获取承载此程序的进程运行的计算机的名称。  

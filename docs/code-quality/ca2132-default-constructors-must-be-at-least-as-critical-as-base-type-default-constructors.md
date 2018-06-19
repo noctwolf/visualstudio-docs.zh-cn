@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915975"
 ---
 # <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132：默认构造函数必须至少与基类型默认构造函数具有同样的关键性
 |||

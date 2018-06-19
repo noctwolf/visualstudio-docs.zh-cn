@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138754"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 元素（Visual Studio 项目模板）
 指定是否**位置**文本框中**新项目**启用、 禁用，或隐藏项目模板的对话框。  

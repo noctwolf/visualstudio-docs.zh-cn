@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569350"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly 任务
 读取指定程序集中的元数据，并将所需项添加到注册表中，从而使 COM 客户端可以透明方式创建 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 类。 此任务的行为与 [Regasm.exe（程序集注册工具）](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)的行为类似，但不完全相同。  

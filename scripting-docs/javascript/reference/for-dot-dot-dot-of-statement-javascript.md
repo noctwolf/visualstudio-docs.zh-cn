@@ -23,6 +23,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454591"
 ---
 # <a name="forof-statement-javascript"></a>for...of 语句 (JavaScript)
 对从可迭代对象中获取的迭代器的每个值执行一个或多个语句。  

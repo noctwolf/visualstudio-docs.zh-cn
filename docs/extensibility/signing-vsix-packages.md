@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142287"
 ---
 # <a name="signing-vsix-packages"></a>签名 VSIX 包
 扩展程序集不需要他们可以运行在 Visual Studio 中，但它是作为最佳做法，这样做之前进行签名。  

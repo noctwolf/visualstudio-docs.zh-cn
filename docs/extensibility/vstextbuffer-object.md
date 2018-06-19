@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141029"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 对象
 文本缓冲区对象表示的 Unicode 文本，通常与文件相关的流。 A<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象可使用上下文之外的核心编辑器中，如向导。  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548162"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>准则创建 Outlook 窗体区域
   以下信息可以帮助优化窗体区域和避免潜在问题。  

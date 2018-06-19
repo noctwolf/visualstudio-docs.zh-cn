@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464672"
 ---
 # <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
 检索类方法的对象指针的类型。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114412"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 表示单个调试引擎 (DE)，用于控制所调试的一个或多个模块。  

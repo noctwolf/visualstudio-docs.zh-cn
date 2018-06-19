@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900510"
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025：用形参数组替换重复的实参
 |||

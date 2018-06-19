@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138231"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 函数
 此函数启动源代码管理操作批处理的序列。 [SccEndBatch](../extensibility/sccendbatch-function.md)将调用以结束批处理。 这些批不能嵌套。  

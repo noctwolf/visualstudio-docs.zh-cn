@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120710"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 此方法获取用于编译调试地址处的代码的语言。  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562463"
 ---
 # <a name="securing-clickonce-applications"></a>保护 ClickOnce 应用程序
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序受 .NET Framework 中代码访问安全性约束的限制，以帮助限制代码访问受保护的资源和操作的权限。 因此，了解代码访问安全性的含义以相应地编写 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序是十分重要的。 您的应用程序可以使用完全信任或使用部分区域（如 Internet 区域和 Intranet 区域）来限制访问权限。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/19/2018
  有关代码访问安全性和 ClickOnce 的更多信息，请参见 [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md)。  
   
 ## <a name="code-signing-certificates"></a>代码签名证书  
- 若要使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署发布应用程序，可以用公钥/私钥对为应用程序的应用程序和部署清单签名。 **“项目设计器”** 的 **“签名”**页上提供了用于为清单签名的工具。 有关更多信息，请参见 [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md)。 或者可以使用发布向导在发布过程中以密钥文件对清单签名。  
+ 若要使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署发布应用程序，可以用公钥/私钥对为应用程序的应用程序和部署清单签名。 **“项目设计器”** 的 **“签名”** 页上提供了用于为清单签名的工具。 有关更多信息，请参见 [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md)。 或者可以使用发布向导在发布过程中以密钥文件对清单签名。  
   
  为清单签名之后，安装期间，权限对话框将向用户显示基于 Authenticode 签名的发行者信息，以向用户表明该应用程序来自受信任的来源。  
   

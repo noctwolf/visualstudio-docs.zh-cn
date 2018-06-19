@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107759"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 此接口表示一个自定义属性，并且它可以提供名称、 父级和类类型的属性。  

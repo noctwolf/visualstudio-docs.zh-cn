@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107876"
 ---
 # <a name="adding-a-tool-window"></a>添加工具窗口
 在本演练中，你将了解如何创建工具窗口，并将其集成到 Visual Studio 中，通过以下方式：  

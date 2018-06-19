@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110860"
 ---
 # <a name="idebugfirewallconfigurationcallback2"></a>IDebugFirewallConfigurationCallback2
 启用调试引擎，使用 DCOM 询问[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI，以确保该防火墙将阻止远程调试。  

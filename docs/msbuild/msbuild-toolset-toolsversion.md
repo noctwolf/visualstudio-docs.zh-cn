@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578882"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 工具集 (ToolsVersion)
 MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通常，MSBuild 工具集包括 microsoft.common.tasks 文件、microsoft.common.targets 文件以及编译器（如 csc.exe 和 vbc.exe）。 大多数工具集可用于将应用程序编译为多个版本的 .NET Framework 以及多个系统平台。 但 MSBuild 2.0 工具集仅可用于面向 .NET Framework 2.0。  
