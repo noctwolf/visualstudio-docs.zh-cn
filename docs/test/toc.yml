@@ -353,16 +353,14 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: 为结果查看器创建加载项
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: 使用 UI 自动化来测试代码
+- name: UI 测试自动化
   href: use-ui-automation-to-test-your-code.md
   items:
-    - name: 演练：创建、编辑和维护编码的 UI 测试
+    - name: 演练 创建、编辑和维护编码的 UI 测试
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
-    - name: 使用编码的 UI 测试来测试 Windows UWP 应用
-      href: test-windows-store-8-1-apps-with-coded-ui-tests.md
-    - name: 使用编码的 UI 测试来测试 Windows UWP 和 Phone 8.1 应用
-      href: test-windows-phone-8-1-apps-with-coded-ui-tests.md
-    - name: 为 UWP 控件设置唯一的自动化属性以进行测试
+    - name: 使用编码的 UI 测试来测试 UWP 应用
+      href: test-uwp-app-with-coded-ui-test.md
+    - name: 为 UWP 控件设置唯一的自动化属性
       href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: 在编码 UI 测试中使用 HTML5 控件
       href: using-html5-controls-in-coded-ui-tests.md
@@ -370,7 +368,7 @@
       href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
     - name: 创建数据驱动的编码 UI 测试
       href: creating-a-data-driven-coded-ui-test.md
-    - name: 播放期间让编码 UI 测试等待特定事件
+    - name: 播放期间等待特定事件
       href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
     - name: 对编码的 UI 测试使用不同的 Web 浏览器
       href: using-different-web-browsers-with-coded-ui-tests.md
@@ -386,28 +384,10 @@
       href: testing-a-large-application-with-multiple-ui-maps.md
     - name: 启用控件的编码的 UI 测试
       href: enable-coded-ui-testing-of-your-controls.md
-    - name: 支持编码的 UI 测试和操作录制的配置和平台
+    - name: 支持的配置和平台
       href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
-    - name: 扩展编码的 UI 测试和操作录制以支持 Microsoft Excel
+    - name: 扩展编码的 UI 测试框架
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
-      items:
-        - name: 用于编码的 UI 测试的示例 Excel 外接程序
-          href: sample-excel-add-in-for-coded-ui-testing.md
-        - name: 示例 Excel Communicator 接口
-          href: sample-excel-communicator-interface.md
-        - name: 适用于 Excel 的示例编码的 UI 测试扩展
-          href: sample-coded-ui-test-extension-for-excel.md
-          items:
-            - name: 示例 Excel 扩展：ExtensionPackage 类
-              href: sample-excel-extension-extensionpackage-class.md
-            - name: 示例 Excel 扩展：TechnologyManager 类
-              href: sample-excel-extension-technologymanager-class.md
-            - name: 示例 Excel 扩展：PropertyProvider 类
-              href: sample-excel-extension-propertyprovider-class.md
-            - name: 示例 Excel 扩展：Element 类
-              href: sample-excel-extension-element-classes.md
-            - name: 示例 Excel 扩展：ActionFilter 类
-              href: sample-excel-extension-actionfilter-class.md
 - name: 测试实验室管理
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:
