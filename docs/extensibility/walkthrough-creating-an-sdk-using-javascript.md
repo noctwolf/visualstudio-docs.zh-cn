@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144211"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>演练： 创建使用 JavaScript SDK
 本演练介绍如何使用 JavaScript 创建一个简单的数学 SDK 作为 Visual Studio 扩展 (VSIX)。  本演练分为三个部分：  
@@ -313,7 +314,7 @@ ms.lasthandoff: 04/16/2018
   
 11. 选择 F5 键以生成并运行应用程序。  
   
-12. 在应用 UI 中，输入任何两个数字，选择某一操作，，然后选择**=**按钮。 将显示正确的结果。  
+12. 在应用 UI 中，输入任何两个数字，选择某一操作，，然后选择**=** 按钮。 将显示正确的结果。  
   
 ## <a name="see-also"></a>另请参阅  
  [获取软件开发工具包](../extensibility/creating-a-software-development-kit.md)

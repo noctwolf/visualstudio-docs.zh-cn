@@ -12,17 +12,18 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 2acaa7a8012d8ef411eed065d8b4e134b4e52c1e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031808"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python 的 Azure 云服务项目
 
 Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
 
-[云服务](https://docs.microsoft.com/en-us/azure/cloud-services/)中包含数量不限的辅助角色和 Web 角色，其中每个角色执行在概念上独立的任务，但可根据缩放需求在虚拟机中单独复制。 Web 角色为前端 Web 应用程序提供托管。 在使用 Python 的情况下，任何支持 WSGI 的 Web 框架都可用于编写这样的应用程序 - 如同受 [Web 项目模板](python-web-application-project-templates.md)支持一样。 辅助角色用于不直接与用户交互的长时间运行的进程。 它们通常使用同 [`pip install azure`](http://pypi.org/project/azure) 一起安装的“azure”包中的包。
+[云服务](https://docs.microsoft.com/azure/cloud-services/)中包含数量不限的辅助角色和 Web 角色，其中每个角色执行在概念上独立的任务，但可根据缩放需求在虚拟机中单独复制。 Web 角色为前端 Web 应用程序提供托管。 在使用 Python 的情况下，任何支持 WSGI 的 Web 框架都可用于编写这样的应用程序 - 如同受 [Web 项目模板](python-web-application-project-templates.md)支持一样。 辅助角色用于不直接与用户交互的长时间运行的进程。 它们通常使用同 [`pip install azure`](http://pypi.org/project/azure) 一起安装的“azure”包中的包。
 
 本文详细介绍 Visual Studio 2017 中的项目模板和其他支持（早期版本相似，但有一些差异）。 有关通过 Python 使用 Azure 的详细信息，请访问 [Azure Python 开发人员中心](https://docs.microsoft.com/en-us/python/azure/?view=azure-python)。
 

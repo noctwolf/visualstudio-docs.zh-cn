@@ -1,13 +1,13 @@
 ---
-title: "setUTCMinutes 方法 (Date) (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: setUTCMinutes 方法 (Date) (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - setUTCMinutes
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - UTC times, setting
 - setUTCMinutes method
 ms.assetid: 2415e788-6d28-46dd-a103-0931a1fd1446
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640877"
 ---
 # <a name="setutcminutes-method-date-javascript"></a>setUTCMinutes 方法 (Date) (JavaScript)
 设置中的分钟值`Date`对象使用协调世界时 (UTC)。  
@@ -59,7 +60,7 @@ dateObj.setUTCMinutes(numMinutes[, numSeconds[, numMilli]])
   
  若要修改使用本地时间的分钟值，使用`setMinutes`方法。  
   
- 如果自变量的值大于其范围，或为负数，则会相应地修改其他存储的值。 例如，如果存储的日期是"1996 年 1 月 5 日 00:00:00.00"和**setUTCMinutes(70)**是调用，日期更改为"1996 年 1 月 5 日 01:10:00.00。"  
+ 如果自变量的值大于其范围，或为负数，则会相应地修改其他存储的值。 例如，如果存储的日期是"1996 年 1 月 5 日 00:00:00.00"和**setUTCMinutes(70)** 是调用，日期更改为"1996 年 1 月 5 日 01:10:00.00。"  
   
  **SetUTCHours**方法可以用于设置小时、 分钟、 秒和毫秒。  
   

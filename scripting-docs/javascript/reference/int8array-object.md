@@ -1,19 +1,20 @@
 ---
-title: "Int8Array 对象 |Microsoft 文档"
-ms.custom: 
+title: Int8Array 对象 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 0e3bdbc5-8d85-4c0d-b399-693b01674803
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637787"
 ---
 # <a name="int8array-object"></a>Int8Array 对象
 8 位整数值的类型化数组。 内容将初始化为 0。 如果无法分配请求数目的字节，则将引发异常。  

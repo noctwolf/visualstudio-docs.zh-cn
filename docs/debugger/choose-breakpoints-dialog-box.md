@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458240"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>“选择断点”对话框
 **选择断点**对话框随即打开，当你尝试从二义性输入中设置断点时**新断点**对话框。 二义性输入的一个常见示例是重载的函数名称。  

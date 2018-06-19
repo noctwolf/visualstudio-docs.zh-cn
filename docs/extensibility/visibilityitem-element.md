@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143460"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 元素
 `VisibilityItem`元素确定的静态可见性命令和工具栏。 每个条目标识命令或菜单上，以及关联的命令 UI 上下文。 Visual Studio 检测命令、 菜单和工具栏和可见性，而无需加载定义它们的 Vspackage。 IDE 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法来确定命令 UI 上下文是否处于活动状态。  

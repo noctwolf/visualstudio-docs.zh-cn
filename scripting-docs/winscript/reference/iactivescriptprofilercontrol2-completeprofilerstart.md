@@ -1,16 +1,16 @@
 ---
-title: "IActiveScriptProfilerControl2::CompleteProfilerStart |Microsoft 文档"
-ms.custom: 
+title: IActiveScriptProfilerControl2::CompleteProfilerStart |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptProfilerControl2::CompleteProfilerStart
 ms.assetid: e14d94a2-39d3-40a1-84d9-6300fbe2b339
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724497"
 ---
 # <a name="iactivescriptprofilercontrol2completeprofilerstart"></a>IActiveScriptProfilerControl2::CompleteProfilerStart
 通知探查器已启动所有适用的脚本引擎上进行分析。 通过使用此方法，你可以获取完整的调用堆栈，如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]开始分析时处于运行状态。  

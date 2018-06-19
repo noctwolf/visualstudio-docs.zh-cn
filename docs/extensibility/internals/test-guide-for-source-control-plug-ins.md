@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145953"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>为源控件插件测试指南
 本部分提供用于测试你的源代码管理插件与指南[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 提供的最常见的测试区域，以及一些可能会出现问题的更复杂区域的广泛概述。 本概述不是测试用例的穷举列表。  

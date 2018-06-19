@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145966"
 ---
 # <a name="workspaces"></a>工作区
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 
 工作区具有<xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager>服务，其中包括对工作区的简单但功能强大的控制。 有关设置的基本概述，请参阅[自定义生成和调试任务](../ide/customize-build-and-debug-tasks-in-visual-studio.md)。
 
-对于大多数设置`SettingsType`类型_.json_文件，如_VSWorkspaceSettings.json_和_tasks.vs.json_。
+对于大多数设置`SettingsType`类型 _.json_文件，如_VSWorkspaceSettings.json_和_tasks.vs.json_。
 
 工作区设置的能力中心围绕"作用域"是只需在工作区中的路径。 当使用者调用<xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A>，包括请求的路径和类型的设置的所有作用域进行聚合。 范围聚合优先级是，如下所示：
 
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 1. 所有进一步父目录，直到并包括工作区根。
 1. "全局设置"，它是用户目录中。
 
-结果是的一个实例<xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings>。 此对象保存为特定类型的设置，作为设置键名存储可以查询`string`。 <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A>方法和<xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions>扩展方法需要调用方知道所请求的设置值的类型。 因为大多数设置文件将保留为_.json_文件，都将使用多调用`string`， `bool`， `int`，以及这些类型的数组。 也支持对象类型。 在这些情况下，你可以使用`IWorkspaceSettings`本身作为类型参数。 例如：
+结果是的一个实例<xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings>。 此对象保存为特定类型的设置，作为设置键名存储可以查询`string`。 <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A>方法和<xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions>扩展方法需要调用方知道所请求的设置值的类型。 因为大多数设置文件将保留为 _.json_文件，都将使用多调用`string`， `bool`， `int`，以及这些类型的数组。 也支持对象类型。 在这些情况下，你可以使用`IWorkspaceSettings`本身作为类型参数。 例如：
 
 ```json
 {
@@ -178,7 +179,7 @@ UI 上下文可用来自动加载你的包。 该值为 `4646B819-1AE0-4E79-97F4
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>SourceExplorerPackage 包未正确加载
 
-工作区扩展性很大程度 MEF 基于，并且组合错误将导致承载打开的文件夹，无法加载的包。 例如，如果扩展将导出的类型`ExportFileContextProviderAttribute`，但该类型仅实现`IWorkspaceProviderFactory<IFileContextActionProvider>`，尝试在 Visual Studio 中打开文件夹时，将会出错。 错误详细信息可在_%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_。 解决任何错误的类型由你的扩展实现。
+工作区扩展性很大程度 MEF 基于，并且组合错误将导致承载打开的文件夹，无法加载的包。 例如，如果扩展将导出的类型`ExportFileContextProviderAttribute`，但该类型仅实现`IWorkspaceProviderFactory<IFileContextActionProvider>`，尝试在 Visual Studio 中打开文件夹时，将会出错。 错误详细信息可在 _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_。 解决任何错误的类型由你的扩展实现。
 
 ## <a name="next-steps"></a>后续步骤
 

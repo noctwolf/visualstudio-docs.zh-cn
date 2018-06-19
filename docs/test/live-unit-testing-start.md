@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31978913"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio 中的 Live Unit Testing 入门
 

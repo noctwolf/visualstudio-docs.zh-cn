@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976470"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>“选择条件”对话框（旧版）
 

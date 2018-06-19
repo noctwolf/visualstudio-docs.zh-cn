@@ -1,19 +1,20 @@
 ---
-title: "集合 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 集合 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 23c26185-6a7b-4b69-9d22-63e1841b4905
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/12/2018
+ms.locfileid: "27783047"
 ---
 # <a name="collections-javascript"></a>集合 (JavaScript)
 可以使用集合对象 [Map](../../javascript/reference/map-object-javascript.md)、[Set](../../javascript/reference/set-object-javascript.md) 和 [WeakMap](../../javascript/reference/weakmap-object-javascript.md) 存储值和对象。 通过这些对象，可以使用键或值而非索引来轻松添加和检索成员。 若要使用索引访问集合的成员，请使用 `Array` 对象。 有关详细信息，请参阅[使用数组](../../javascript/advanced/using-arrays-javascript.md)。  

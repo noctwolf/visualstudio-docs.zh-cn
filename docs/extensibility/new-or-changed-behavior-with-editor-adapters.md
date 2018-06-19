@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148657"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>使用编辑器适配器的新的或更改行为
 如果你要更新已针对早期版本的 Visual Studio 核心编辑器中，编写代码，并且你计划使用的编辑器适配器 （或填充码），而不是使用新的 API，你应注意以下编辑器适配器的行为差异与以前的核心编辑器。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31972087"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>如何：将负载测试结果导入储存库中
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032065"
 ---
 # <a name="adding-search-to-a-tool-window"></a>添加到工具窗口搜索
 当创建或更新你的扩展中的工具窗口时，可以在 Visual Studio 中添加其他位置出现的相同的搜索功能。 此功能包括以下功能：  

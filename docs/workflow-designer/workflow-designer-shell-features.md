@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31973703"
 ---
 # <a name="workflow-designer-shell-features"></a>工作流设计器 Shell 功能
 
@@ -34,7 +35,7 @@ Windows 工作流设计器由三个主要的 UI 区域组成： 设计器图面�
 ## <a name="copying-or-saving-workflows-as-images"></a>将工作流复制或另存为图像
  可以用位图格式复制工作流，或者用位图或向量格式保存工作流。 复制或保存图像提供了一种将当前痕迹根处的整个活动的视图（包括该根的所有子级和这些子级的所有已展开子级）导出到其他程序的方法。
 
- 要复制为图像，请右键单击任意位置在设计器，选择**复制为图像**。 要将另存为图像，请右键单击任意位置在设计器，选择**另存为图像**。 可以采用 JPG、PNG、GIF 或 XPS 格式保存工作流。 在选择格式**另存为**对话框中在**另存为类型：**下拉列表框中，在窗口的底部。
+ 要复制为图像，请右键单击任意位置在设计器，选择**复制为图像**。 要将另存为图像，请右键单击任意位置在设计器，选择**另存为图像**。 可以采用 JPG、PNG、GIF 或 XPS 格式保存工作流。 在选择格式**另存为**对话框中在**另存为类型：** 下拉列表框中，在窗口的底部。
 
 ## <a name="fonts-and-colors"></a>字体和颜色
 

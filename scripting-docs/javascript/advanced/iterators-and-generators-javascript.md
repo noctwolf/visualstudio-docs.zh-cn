@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977265"
 ---
 # <a name="iterators-and-generators-javascript"></a>迭代器和生成器 (JavaScript)
 迭代器是一个对象，用于将容器对象作为列表遍历。 在 JavaScript 中，迭代器对象不是一个独立的内置对象，而是一个实现 `next` 方法以访问容器对象中的下一项的对象。  

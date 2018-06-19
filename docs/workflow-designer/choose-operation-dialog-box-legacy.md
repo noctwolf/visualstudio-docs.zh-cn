@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975577"
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>“选择操作”对话框（旧版）
 
@@ -29,11 +30,11 @@ ms.lasthandoff: 04/26/2018
 |UI 元素|描述|
 |----------------|-----------------|
 |**添加协定**|为您创建一个新协定。 您可以在此协定上定义新操作。 （仅与 <xref:System.Workflow.Activities.ReceiveActivity> 一起使用。）|
-|**添加操作**|在中创建的新协定添加新操作**选择操作**对话框。 **注意：**只能向通过创建的协定添加新操作**选择操作**对话框。 <br /><br /> （仅与 <xref:System.Workflow.Activities.ReceiveActivity> 一起使用。）|
+|**添加操作**|在中创建的新协定添加新操作**选择操作**对话框。 **注意：** 只能向通过创建的协定添加新操作**选择操作**对话框。 <br /><br /> （仅与 <xref:System.Workflow.Activities.ReceiveActivity> 一起使用。）|
 |**导入...**|导入以前定义的协定，并允许您从该协定中选择一种操作。|
 |**操作名称**|当前选定操作的名称。 此文本框是可用于编辑仅当你创建了操作通过**选择操作**对话框。|
-|**参数**|此选项卡包含当前选定操作的参数定义。 **注意：**可以更改参数定义，仅当你创建了操作通过**选择操作**对话框。|
-|**属性**|此选项卡包含在客户端和服务之间所发送消息的 <xref:System.Net.Security.ProtectionLevel> 设置。 **注意：**仅当你创建了操作通过启用此选项卡**选择操作**对话框。|
+|**参数**|此选项卡包含当前选定操作的参数定义。 **注意：** 可以更改参数定义，仅当你创建了操作通过**选择操作**对话框。|
+|**属性**|此选项卡包含在客户端和服务之间所发送消息的 <xref:System.Net.Security.ProtectionLevel> 设置。 **注意：** 仅当你创建了操作通过启用此选项卡**选择操作**对话框。|
 |**权限**|此选项卡包含允许调用此操作的用户的 <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> 和 <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A> 属性。 例如，如果仅允许从管理员组的用户通过调用此操作，然后你将编写"管理员"**角色**文本框。<br /><br /> 为通过创建这两个操作启用此选项卡**ChooseOperation**对话框，并通过导入的操作**导入**按钮。|
 
 > [!NOTE]

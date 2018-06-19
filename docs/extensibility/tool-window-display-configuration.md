@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143688"
 ---
 # <a name="tool-window-display-configuration"></a>工具窗口显示配置
 可选值以指定 VSPackage 时注册工具窗口、 的默认位置、 大小、 停靠样式和可见性的其他信息。 工具窗口注册的详细信息，请参阅[注册表中的工具窗口](../extensibility/tool-windows-in-the-registry.md)  

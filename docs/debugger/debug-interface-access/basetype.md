@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457860"
 ---
 # <a name="basetype"></a>BaseType
 通过基类型进行标识`SymTagBaseType`符号。  

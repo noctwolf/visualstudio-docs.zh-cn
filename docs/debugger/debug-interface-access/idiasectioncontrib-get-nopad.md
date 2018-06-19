@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461010"
 ---
 # <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
 检索一个标志，指示是否部分应不填充到下一步的内存边界。  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472719"
 ---
 # <a name="how-to-specify-debugger-settings"></a>如何：指定调试器设置
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可为调试器行为指定各种设置，包括如何显示变量，是否显示某些警告，如何设置断点以及中断如何影响正在运行的程序。 指定中的调试器设置**选项**对话框。  

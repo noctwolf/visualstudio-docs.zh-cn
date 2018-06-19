@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142771"
 ---
 # <a name="symbols-element"></a>符号元素
 定义 Guid 和其他 VSCT 元素使用的 Id。 对于非托管代码，此信息通常来自由指定的标头文件[Extern 元素](../extensibility/extern-element.md)。 托管代码使用的符号元素定义此信息的子元素。  

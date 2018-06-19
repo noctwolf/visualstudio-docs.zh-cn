@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457896"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>入门（调试接口访问 SDK）
 调试接口访问 (DIA) SDK 向你提供指导文档和示例，说明了如何使用 DIA API。 使用的接口和方法在 DIA SDK 开发自定义应用程序打开的.pdb 和.dbg 文件并搜索其内容实现符号、 值、 属性、 地址和其他调试信息。 此 SDK 还提供了与在 c + + 应用程序中找到的符号关联的属性引用表。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458448"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>自定义（调试接口访问 SDK）
 某些编译器引入不识别的任何标准的词法符号类型的符号。 由标识这些符号`SymTagCustom`标记。  

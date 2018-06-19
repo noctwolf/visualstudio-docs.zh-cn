@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457441"
 ---
 # <a name="debug-interface-access-sdk"></a>调试接口访问 SDK
 Microsoft 调试接口访问软件开发工具包 (DIA SDK) 提供访问存储在由 Microsoft 后置编译器工具生成的程序数据库 (.pdb) 文件中的调试信息。 后置编译器工具生成的.pdb 文件的格式进行常量的修订版本，因为公开格式是不切实际的。 使用 DIA API 时，你可以开发的应用程序用于搜索和浏览存储在.pdb 文件的调试信息。 此类应用程序无法，例如，报告堆栈跟踪信息和分析性能数据。  

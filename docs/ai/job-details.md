@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29709821"
 ---
 # <a name="view-recent-job-performance-and-details"></a>查看最近的作业性能和详细信息
 提交作业后，可以查看作业列表，以查看作业状态和持续时间等。

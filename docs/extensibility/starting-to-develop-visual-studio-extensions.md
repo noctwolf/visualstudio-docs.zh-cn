@@ -19,9 +19,10 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144458"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>开始开发 Visual Studio 扩展
-如果您从未编写过 Visual Studio 扩展之前，可能会出现一些问题。 我们已列出了一些最常见的。 如果看不到你正在寻找的信息，请使用反馈按钮 (**是很有帮助的此页面？**在屏幕底部) 以询问有关所需。  
+如果您从未编写过 Visual Studio 扩展之前，可能会出现一些问题。 我们已列出了一些最常见的。 如果看不到你正在寻找的信息，请使用反馈按钮 (**是很有帮助的此页面？** 在屏幕底部) 以询问有关所需。  
   
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>需要哪些软件开发 Visual Studio 扩展？  
  你需要安装 Visual Studio 除了 Visual Studio SDK，以便开发 Visual Studio 扩展。 你可以作为正则安装的一部分安装 Visual Studio SDK 或更高版本上安装。 有关安装 Visual Studio SDK 的详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  

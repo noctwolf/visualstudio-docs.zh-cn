@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031977"
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>步骤 4：在调试器中运行代码
 

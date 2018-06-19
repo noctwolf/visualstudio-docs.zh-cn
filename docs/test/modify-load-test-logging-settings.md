@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31968189"
 ---
 # <a name="modify-load-test-logging-settings"></a>修改负载测试记录设置
 
@@ -24,9 +25,9 @@ ms.lasthandoff: 04/26/2018
 
 |任务|关联主题|
 |----------|-----------------------|
-|**指定负载测试运行期间保存日志的频率：**可以指定在负载测试运行时希望保存测试日志的频率。|-   [如何：指定保存测试日志的频率](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
-|**在负载测试未通过时保存日志：**可以指定是否每当负载测试未通过就保存测试日志。|-   [如何：指定是否将测试失败保存到测试日志中](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**为日志文件设置最大文件大小：**可以编辑与测试控制器服务关联的 XML 配置文件，以指定要用于日志文件的最大文件大小。|[如何：为日志文件指定最大大小](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**指定负载测试运行期间保存日志的频率：** 可以指定在负载测试运行时希望保存测试日志的频率。|-   [如何：指定保存测试日志的频率](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**在负载测试未通过时保存日志：** 可以指定是否每当负载测试未通过就保存测试日志。|-   [如何：指定是否将测试失败保存到测试日志中](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**为日志文件设置最大文件大小：** 可以编辑与测试控制器服务关联的 XML 配置文件，以指定要用于日志文件的最大文件大小。|[如何：为日志文件指定最大大小](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
 
 ## <a name="related-tasks"></a>相关任务
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148501"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>图像和图标 for Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> 在 Visual Studio 中的映像使用  
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/16/2018
   
 -   **图标**。 出现在命令、 层次结构、 模板和等等的小图像。 在 Visual Studio 中使用默认图标大小为 16 x 16 PNG。 图标自动生成的映像服务生成的 HDPI 支持的 XAML 格式。  
   
-     **注意：**时映像将用菜单系统中，你不应创建的每个命令的图标。 请查阅[菜单和命令 for Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)以查看你的命令是否应获取一个图标。  
+     **注意：** 时映像将用菜单系统中，你不应创建的每个命令的图标。 请查阅[菜单和命令 for Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)以查看你的命令是否应获取一个图标。  
   
 -   **缩略图。** 对话框中，如新项目对话框的预览区域中使用的映像。  
   
@@ -40,11 +41,11 @@ ms.lasthandoff: 04/16/2018
 ### <a name="overview"></a>概述  
  Visual Studio 使用现代样式图标，有干净的 geometry 和 50/50 余额为正/负 （亮/暗），并且使用直接且易理解的形式。 重要图标设计点以清楚起见，简化和上下文为中心。  
   
--   **清楚起见：**专注于核心比喻其含义和个性自我提供一个图标。  
+-   **清楚起见：** 专注于核心比喻其含义和个性自我提供一个图标。  
   
--   **简化：**减少到其核心含义的图标-可以主题通过只是必需的元素和未修饰。  
+-   **简化：** 减少到其核心含义的图标-可以主题通过只是必需的元素和未修饰。  
   
--   **上下文：**概念在开发期间，这至关重要，确定哪些元素构成的图标的核心比喻时考虑的一个图标的角色的所有方面。  
+-   **上下文：** 概念在开发期间，这至关重要，确定哪些元素构成的图标的核心比喻时考虑的一个图标的角色的所有方面。  
   
  带有图标，有大量的设计点，以避免：  
   

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979381"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>演练：使用文本模板生成代码
 代码生成允许生成强类型化的程序代码，但可在源模型更改时轻松对其进行更改。 与之相比，另一种编写可接受配置文件的完全泛型程序的替代技术更灵活，但生成的代码既不易读取和更改，也没有这么好的性能。 本演练将演示这一优势。

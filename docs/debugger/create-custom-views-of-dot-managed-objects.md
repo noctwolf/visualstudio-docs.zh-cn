@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457675"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>创建托管对象的自定义视图
 可以在调试器变量窗口中自定义 Visual Studio 显示数据类型的方式。  

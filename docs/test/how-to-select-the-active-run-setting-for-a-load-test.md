@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967604"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：为负载测试选择活动运行设置
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31969422"
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>如何：向工具箱添加活动（旧版）
 

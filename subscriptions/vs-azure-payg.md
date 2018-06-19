@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31195317"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>设置 Azure 开发/测试即用即付订阅
 与团队在云中协作。  创建多个开发和测试即用即付订阅，这样可与其他订阅者进行协作，并将团队与环境隔离。  可享受针对开发/测试的专享优惠小时费率，还可获得 Azure 上订阅软件的云使用权限。

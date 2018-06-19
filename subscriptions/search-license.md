@@ -14,6 +14,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031177"
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>搜索和筛选 Visual Studio 订阅中的订阅者
 通过 Visual Studio 订阅管理门户，可以基于各种条件查找订阅者的特定子集。 可以按名称、电子邮件地址、订阅级别以及其他各种信息对订阅者列表进行筛选。 

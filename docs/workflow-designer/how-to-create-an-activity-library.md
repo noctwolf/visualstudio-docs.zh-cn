@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974039"
 ---
 # <a name="how-to-create-an-activity-library"></a>如何：创建活动库
 自定义活动用于在工作流中对特定业务流程进行建模。 提供了 Visual Studio 2010 中的活动库模板，用于使你能够创建此类自定义活动，以可视方式使用 Windows 工作流设计器。

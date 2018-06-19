@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473633"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>如何：展开和折叠 Spy++ 树
 你可以展开和折叠的 Windows、 进程和线程视图，使用两种方法： 通过单击图标在窗口中或通过使用**树**菜单。 + 和-与它们在 Visual c + + 项目窗口中，执行操作在树中的图标。  

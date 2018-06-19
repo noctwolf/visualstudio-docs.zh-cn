@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144273"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK 可帮助你扩展 Visual Studio 功能，或将新的功能集成到 Visual Studio。 你可以分发给其他用户，以及 Visual Studio Marketplace 你扩展。 以下是一些扩展 Visual Studio 的方式：  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031522"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>如何： 使用 _Analysis_assume 指定其他代码信息
 C/c + + 代码，它们将帮助分析过程并降低警告，你可以提供对代码分析工具提示。 若要提供的其他信息，请使用以下函数：

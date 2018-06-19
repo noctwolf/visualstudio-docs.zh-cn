@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147589"
 ---
 # <a name="managing-universal-windows-projects"></a>管理通用 Windows 项目
 通用 Windows 应用是面向 Windows 8.1 和 Windows Phone 8.1，从而允许开发人员使用这两个平台上的代码和其他资产的应用。 共享的代码和资源是保存在共享项目中，而特定于平台的代码和资源保留在单独的项目，一个用于 Windows，另一个用于 Windows Phone。 有关通用 Windows 应用程序的详细信息，请参阅[通用 Windows 应用](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx)。 管理项目的 visual Studio 扩展应注意通用 Windows 应用项目具有不同于单平台的应用程序的结构。 本演练演示如何导航共享的项目和管理共享的项目。  

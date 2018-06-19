@@ -19,6 +19,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32064036"
 ---
 # <a name="troubleshoot-snippets"></a>代码片段疑难解答
 

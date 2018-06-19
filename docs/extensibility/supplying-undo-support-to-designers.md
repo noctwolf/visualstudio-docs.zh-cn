@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144877"
 ---
 # <a name="supplying-undo-support-to-designers"></a>提供撤消支持添加到设计器
 设计器中的，如编辑器，通常需要支持撤消操作，因此，修改代码元素时，用户可以反向他们最近的更改。  

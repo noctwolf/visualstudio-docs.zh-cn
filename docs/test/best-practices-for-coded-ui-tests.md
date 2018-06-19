@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967023"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>编码的 UI 测试的最佳做法
 

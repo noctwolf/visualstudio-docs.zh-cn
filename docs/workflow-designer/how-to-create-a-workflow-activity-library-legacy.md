@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31973162"
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>如何：创建工作流活动库（旧版）
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461855"
 ---
 # <a name="funcdebugend"></a>FuncDebugEnd
 如果某函数有一个定义的点处的调试结束，由具有的符号标识起始点的调试`SymTagFuncDebugEnd`标记。  

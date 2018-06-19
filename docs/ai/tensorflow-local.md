@@ -1,7 +1,7 @@
 ---
-title: "在本地训练 tensorflow 模型"
-description: "在 AI Tools for Visual Studio 中以本地方式运行 tensorflow 模型"
-keywords: "ai, visual studio, tensorflow, 本地"
+title: 在本地训练 tensorflow 模型
+description: 在 AI Tools for Visual Studio 中以本地方式运行 tensorflow 模型
+keywords: ai, visual studio, tensorflow, 本地
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29708928"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本地训练 TensorFlow 模型
 

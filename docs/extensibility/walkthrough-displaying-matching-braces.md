@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143314"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>演练： 显示匹配的大括号
 你可以实现的基于语言的功能，如按定义你想要匹配，大的括号，然后将文本标记标记添加到匹配的大括号，当脱字号上一个大括号匹配的大括号。 你可以定义一种语言的上下文中的大括号或可以定义你自己的文件名称扩展和内容类型，并将标记应用到只是该类型，或您可以将标记应用到现有的内容类型 （例如"text")。 下面的演练演示如何应用标记为"text"内容类型匹配的大括号。  

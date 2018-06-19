@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472876"
 ---
 # <a name="debugging-options-dialog-box"></a>“选项”对话框 ->“调试”
 **调试**文件夹，请在**选项**对话框中，在**工具**菜单上，提供以下页，使您能够指定调试器工具选项。  

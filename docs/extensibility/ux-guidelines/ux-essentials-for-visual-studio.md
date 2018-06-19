@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146827"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 的 UX Essentials
 ## <a name="best-practices"></a>最佳实践  
@@ -155,7 +156,7 @@ ms.lasthandoff: 04/16/2018
   
  ![忽略颜色服务，并使用"了解详细信息"的超链接是 Visual Studio 反模式。] (../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />忽略颜色服务，并使用"了解详细信息"的超链接是 Visual Studio 反模式。  
   
- **更好的解决方案：**会带来问题，用户将询问通过单击的链接。  
+ **更好的解决方案：** 会带来问题，用户将询问通过单击的链接。  
   
 -   Windows Azure 服务是如何工作的？  
   

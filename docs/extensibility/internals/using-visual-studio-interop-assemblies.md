@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146814"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>使用 Visual Studio 互操作程序集
 Visual Studio 互操作程序集允许访问提供 Visual Studio 扩展性的 COM 接口的托管应用程序。 有一些直 COM 接口和其互操作的版本之间的差异。 例如，Hresult 通常表示为一个整数值和需要为例外，相同的方式处理和 (尤其是 out 参数） 的参数的处理方式不同。  

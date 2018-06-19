@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965156"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>使用域特定语言资源管理器
 **DSL 资源管理器**在树视图中显示的信息的几种类型。 有关大部分 DSL 资源管理器中的项的详细信息，请参阅[如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)。

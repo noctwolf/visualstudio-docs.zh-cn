@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148593"
 ---
 # <a name="language-service-and-editor-extension-points"></a>语言服务和编辑器扩展点
 该编辑器还提供可扩展作为 Managed Extensibility Framework (MEF) 组件部分，包括大多数语言服务功能的扩展点。 主要扩展点类别如下：  

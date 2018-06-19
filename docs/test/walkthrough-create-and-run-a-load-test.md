@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977380"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>演练：创建并运行包含单元测试的负载测试
 

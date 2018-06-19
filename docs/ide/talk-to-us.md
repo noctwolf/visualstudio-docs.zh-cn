@@ -19,6 +19,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32064069"
 ---
 # <a name="talk-to-us"></a>与我们交流
 我们很希望了解你为改进我们的产品和文档所提出的建议。 我们无法总是一一答复，但我们保证你的反馈会传达给相应的负责人或团队。  

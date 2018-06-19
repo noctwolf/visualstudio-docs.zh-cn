@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974840"
 ---
 # <a name="using-the-legacy-activity-designer"></a>使用旧版活动设计器
 
@@ -35,11 +36,11 @@ ms.lasthandoff: 04/26/2018
 
 1.  上**项目**菜单上，单击**添加活动**。
 
-2.  选择**活动**或**Activity （具有单独的代码）**模板。
+2.  选择**活动**或**Activity （具有单独的代码）** 模板。
 
     1.  使用**活动**模板来创建一个活动的活动定义和用户代码在同一个代码文件。
 
-    2.  使用**Activity （具有单独的代码）**模板来创建表示为工作流标记和用户代码在单独的代码文件中定义的活动的活动。
+    2.  使用**Activity （具有单独的代码）** 模板来创建表示为工作流标记和用户代码在单独的代码文件中定义的活动的活动。
 
 3.  键入活动名称或保留默认名称，然后单击**添加**。
 

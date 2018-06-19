@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954483"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中生成构造函数
 

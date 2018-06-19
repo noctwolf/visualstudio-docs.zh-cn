@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146191"
 ---
 # <a name="troubleshooting-vspackages"></a>故障排除的 Vspackage
 以下是常见的问题，你可能必须与你的 VSPackage 并解决问题的提示。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
     1.  在注册表的包部分中找到的 VSPackage 的 CLSID:  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<版本 >*\Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \Packages  
   
     2.  验证给定 SatelliteDll 子项的路径正确。  
   
@@ -121,7 +122,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  对于非托管代码，查找在 VSPackage 的 CLSID [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID 注册表节点：  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<版本 >*\CLSID  
+     HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \CLSID  
   
  请确保该 InprocServer32 项具有的 VSPackage dll 的正确路径。  
   

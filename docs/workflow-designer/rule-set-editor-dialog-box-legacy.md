@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977334"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>“规则集编辑器”对话框（旧版）
 
@@ -80,7 +81,7 @@ ms.lasthandoff: 04/26/2018
  有关条件的详细信息，请参阅[在工作流中使用条件](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77)。
 
 ### <a name="halt-and-update-functions"></a>Halt 和 Update 函数
- **Then 操作：**和**Else 操作：**表达式支持**暂停**和**更新**函数。 若要使用**暂停**函数中，键入**暂停**到**然后操作：**或**Else 操作：**文本框。 **暂停**操作会导致规则集执行立即停止，并且控制权返回给调用代码。 你使用**更新**与正向链接的函数。
+ **Then 操作：** 和**Else 操作：** 表达式支持**暂停**和**更新**函数。 若要使用**暂停**函数中，键入**暂停**到**然后操作：** 或**Else 操作：** 文本框。 **暂停**操作会导致规则集执行立即停止，并且控制权返回给调用代码。 你使用**更新**与正向链接的函数。
 
  **更新**语句可以表示在编辑器中两种形式之一; 这两种形式显示在下面的示例：
 

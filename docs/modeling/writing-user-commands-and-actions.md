@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965172"
 ---
 # <a name="writing-user-commands-and-actions"></a>编写用户命令和操作
 通过将命令添加到关系图，以及通过响应笔势（例如拖放、单击和双击事件），可自定义域特定语言。

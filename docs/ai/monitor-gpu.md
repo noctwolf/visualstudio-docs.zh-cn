@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29709097"
 ---
 # <a name="monitoring-gpu-utilization"></a>监视 GPU 使用率
 监视远程 Linux 计算机的 GPU 使用率：

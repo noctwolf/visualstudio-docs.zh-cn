@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458422"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 调试方法
 如果调试使用 C 运行库的程序，这些调试方法可能会有用。  

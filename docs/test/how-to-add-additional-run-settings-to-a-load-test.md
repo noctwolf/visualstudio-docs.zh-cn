@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965352"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>如何：向负载测试中添加额外的运行设置
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145004"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>什么&#39;源中的新增功能的 s 控制插件的 API 版本 1.3
 源控件插件 API 1.3 版引入了以下新功能，可提供更高级的控制。  

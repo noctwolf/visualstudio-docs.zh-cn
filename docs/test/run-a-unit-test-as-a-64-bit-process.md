@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31966621"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>将单元测试作为 64 位进程运行
 

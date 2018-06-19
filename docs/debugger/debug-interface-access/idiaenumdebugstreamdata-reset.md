@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457733"
 ---
 # <a name="idiaenumdebugstreamdatareset"></a>IDiaEnumDebugStreamData::Reset
 重置到枚举的序列的开头。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147123"
 ---
 # <a name="web-site-support-templates"></a>网站支持模板
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 网站项目和项模板提供了无需从头开始创建新网站项目和项来加快开发过程的可重用和可自定义网站项目和项存根。 有关详细信息[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]模板，请参阅[创建项目和项模板](../../ide/creating-project-and-item-templates.md)。

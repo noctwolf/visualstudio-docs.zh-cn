@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148127"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字体和 Visual Studio 的格式设置
 ##  <a name="BKMK_TheEnvironmentFont"></a> 环境字体
@@ -106,7 +107,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
  **显示为：** 34 pt Segoe UI Light  
  **用于：** （罕见） 唯一品牌 UI 中，如在启动页
 
- **过程代码：**其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签：  
+ **过程代码：** 其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签：  
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -115,7 +116,7 @@ label.SetResourceReference(Label.StyleProperty,
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
 ```
   
- **XAML:**设置的 TextBlock 或标签的样式，如所示。  
+ **XAML:** 设置的 TextBlock 或标签的样式，如所示。  
   
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
@@ -124,9 +125,9 @@ label.SetResourceReference(Label.StyleProperty,
   
 #### <a name="310-environment-font--light"></a>310%环境字体 + Light  
  **显示为：** 28 pt Segoe UI Light   
- **用于：**大型签名对话框标题，主报表中标题  
+ **用于：** 大型签名对话框标题，主报表中标题  
   
- **过程代码：**其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签：  
+ **过程代码：** 其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签：  
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -135,7 +136,7 @@ label.SetResourceReference(Label.StyleProperty,
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
 ```
   
- **XAML:**设置的 TextBlock 或标签的样式，如所示。  
+ **XAML:** 设置的 TextBlock 或标签的样式，如所示。  
   
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
@@ -144,9 +145,9 @@ label.SetResourceReference(Label.StyleProperty,
   
 #### <a name="200-environment-font--semilight"></a>200%环境字体 + Semilight  
  **显示为：** 18 pt Segoe UI Semilight    
- **用于：**副标题、 小型和中型对话框中的标题  
+ **用于：** 副标题、 小型和中型对话框中的标题  
   
- **过程代码：**其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签： 
+ **过程代码：** 其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签： 
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -155,7 +156,7 @@ label.SetResourceReference(Label.StyleProperty,
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
 ```
   
- **XAML:**设置的 TextBlock 或标签的样式，如所示：  
+ **XAML:** 设置的 TextBlock 或标签的样式，如所示：  
   
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
@@ -166,7 +167,7 @@ label.SetResourceReference(Label.StyleProperty,
  **显示为：** 14 pt Segoe UI    
  **用于：** UI 或报表，很好地在文档中的部分标题  
   
- **过程代码：**其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签：  
+ **过程代码：** 其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签：  
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -175,7 +176,7 @@ label.SetResourceReference(Label.StyleProperty,
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
 ```
   
- **XAML:**设置的 TextBlock 或标签的样式，如所示：  
+ **XAML:** 设置的 TextBlock 或标签的样式，如所示：  
   
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
@@ -184,9 +185,9 @@ label.SetResourceReference(Label.StyleProperty,
   
 #### <a name="133-environment-font"></a>133%环境字体  
  **显示为：** 12 pt Segoe UI    
- **用于：**签名对话框和文档中的较小副标题很好地 UI  
+ **用于：** 签名对话框和文档中的较小副标题很好地 UI  
   
- **过程代码：**其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签：  
+ **过程代码：** 其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签：  
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -195,7 +196,7 @@ label.SetResourceReference(Label.StyleProperty,
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
 ```
   
- **XAML:**设置的 TextBlock 或标签的样式，如所示：  
+ **XAML:** 设置的 TextBlock 或标签的样式，如所示：  
   
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
@@ -204,9 +205,9 @@ label.SetResourceReference(Label.StyleProperty,
   
 #### <a name="122-environment-font"></a>122%环境字体  
  **显示为：** 11 pt Segoe UI    
- **用于：**部分签名对话框中的标题、 排名靠前的节点在树视图中，垂直选项卡导航  
+ **用于：** 部分签名对话框中的标题、 排名靠前的节点在树视图中，垂直选项卡导航  
   
- **过程代码：**其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签：  
+ **过程代码：** 其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签：  
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -215,7 +216,7 @@ label.SetResourceReference(Label.StyleProperty,
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
 ```
   
- **XAML:**设置的 TextBlock 或标签的样式，如所示：  
+ **XAML:** 设置的 TextBlock 或标签的样式，如所示：  
   
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
@@ -223,10 +224,10 @@ label.SetResourceReference(Label.StyleProperty,
 ```
   
 #### <a name="environment-font--bold"></a>环境字体 + 粗体  
- **显示为：**粗体 9 pt Segoe UI    
- **用于：**标签和小标题中签名对话框、 报表和文档井中 UI  
+ **显示为：** 粗体 9 pt Segoe UI    
+ **用于：** 标签和小标题中签名对话框、 报表和文档井中 UI  
   
- **过程代码：**其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签：  
+ **过程代码：** 其中`textBlock`是以前定义的 TextBlock 和`label`是以前定义的标签：  
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -235,7 +236,7 @@ label.SetResourceReference(Label.StyleProperty,
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
 ```
   
- **XAML:**设置的 TextBlock 或标签的样式，如所示：  
+ **XAML:** 设置的 TextBlock 或标签的样式，如所示：  
   
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
@@ -411,7 +412,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**用法：**少见。 唯一经过品牌打造的 UI 仅。<br /><br /> **执行操作：**<br /><br /> -使用句子大小写<br />-始终使用轻型<br /><br /> **不要：**<br /><br /> 使用 ui 以外签名如起始页的 UI<br />-粗体、 斜体或加粗斜体<br />-用于正文文本<br />-使用工具窗口中|**显示为：** 34 pt Segoe UI Light<br /><br /> **Visual 示例：**<br /><br /> *当前未使用。可能在启动页中使用。*|  
+|**用法：** 少见。 唯一经过品牌打造的 UI 仅。<br /><br /> **执行操作：**<br /><br /> -使用句子大小写<br />-始终使用轻型<br /><br /> **不要：**<br /><br /> 使用 ui 以外签名如起始页的 UI<br />-粗体、 斜体或加粗斜体<br />-用于正文文本<br />-使用工具窗口中|**显示为：** 34 pt Segoe UI Light<br /><br /> **Visual 示例：**<br /><br /> *当前未使用。可能在启动页中使用。*|  
   
 #### <a name="310-environment-font--light"></a>310%环境字体 + Light  
   
@@ -429,31 +430,31 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**用法：**<br /><br /> 在文档中的节标题很好地 UI<br />-报表<br /><br /> **执行：**使用句子大小写<br /><br /> **不要：**<br /><br /> -粗体、 斜体或加粗斜体<br />-用于正文文本<br />-使用标准 Visual Studio 控件中<br />-使用工具窗口中|**显示为：** 14 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![155%环境字体标题的示例](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
+|**用法：**<br /><br /> 在文档中的节标题很好地 UI<br />-报表<br /><br /> **执行：** 使用句子大小写<br /><br /> **不要：**<br /><br /> -粗体、 斜体或加粗斜体<br />-用于正文文本<br />-使用标准 Visual Studio 控件中<br />-使用工具窗口中|**显示为：** 14 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![155%环境字体标题的示例](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
   
 #### <a name="133-environment-font"></a>133%环境字体  
   
 |||  
 |-|-|  
-|**用法：**<br /><br /> 的签名对话框中较小副标题<br />的在文档中较小副标题很好地 UI<br /><br /> **执行：**使用句子大小写<br /><br /> **不要：**<br /><br /> -粗体、 斜体或加粗斜体<br />-用于正文文本<br />-使用标准 Visual Studio 控件中<br />-使用工具窗口中|**显示为：** 12 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![133%环境字体标题的示例](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
+|**用法：**<br /><br /> 的签名对话框中较小副标题<br />的在文档中较小副标题很好地 UI<br /><br /> **执行：** 使用句子大小写<br /><br /> **不要：**<br /><br /> -粗体、 斜体或加粗斜体<br />-用于正文文本<br />-使用标准 Visual Studio 控件中<br />-使用工具窗口中|**显示为：** 12 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![133%环境字体标题的示例](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
   
 #### <a name="122-environment-font"></a>122%环境字体  
   
 |||  
 |-|-|  
-|**用法：**<br /><br /> 签名对话框中的节标题<br />的在树视图中顶级节点<br />-垂直制表符导航<br /><br /> **执行：**使用句子大小写<br /><br /> **不要：**<br /><br /> -粗体、 斜体或加粗斜体<br />-用于正文文本<br />-使用标准 Visual Studio 控件中<br />-使用工具窗口中|**显示为：** 11 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![122%环境字体标题的示例](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
+|**用法：**<br /><br /> 签名对话框中的节标题<br />的在树视图中顶级节点<br />-垂直制表符导航<br /><br /> **执行：** 使用句子大小写<br /><br /> **不要：**<br /><br /> -粗体、 斜体或加粗斜体<br />-用于正文文本<br />-使用标准 Visual Studio 控件中<br />-使用工具窗口中|**显示为：** 11 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![122%环境字体标题的示例](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
   
 #### <a name="environment-font--bold"></a>环境字体 + 粗体  
   
 |||  
 |-|-|  
-|**用法：**<br /><br /> -标签和小标题签名对话框中<br />-标签和小标题在报表中<br />-标签和文档中的副标题 UI<br /><br /> **执行操作：**<br /><br /> -使用句子大小写<br />-使用加粗的权重<br /><br /> **不要：**<br /><br /> -斜体或加粗斜体<br />-用于正文文本<br />-使用标准 Visual Studio 控件中<br />-使用工具窗口中|**显示为：**粗体 9 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![环境字体的示例&#43;粗体标题](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202 f_EFB")|  
+|**用法：**<br /><br /> -标签和小标题签名对话框中<br />-标签和小标题在报表中<br />-标签和文档中的副标题 UI<br /><br /> **执行操作：**<br /><br /> -使用句子大小写<br />-使用加粗的权重<br /><br /> **不要：**<br /><br /> -斜体或加粗斜体<br />-用于正文文本<br />-使用标准 Visual Studio 控件中<br />-使用工具窗口中|**显示为：** 粗体 9 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![环境字体的示例&#43;粗体标题](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202 f_EFB")|  
   
 #### <a name="environment-font"></a>环境字体  
   
 |||  
 |-|-|  
-|**用法：**所有其他文本<br /><br /> **执行：**使用句子大小写<br /><br /> **不：**斜体或加粗倾斜|**显示为：** 9 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![环境字体的示例](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
+|**用法：** 所有其他文本<br /><br /> **执行：** 使用句子大小写<br /><br /> **不：** 斜体或加粗倾斜|**显示为：** 9 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![环境字体的示例](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
   
 ### <a name="padding-and-spacing"></a>边距和间距  
  标题需要为他们提供适当的重点周围的空间。 此空间各不相同，具体取决于点大小和哪些其他内容即将标题，如水平的规则或环境字体中的文本行。  

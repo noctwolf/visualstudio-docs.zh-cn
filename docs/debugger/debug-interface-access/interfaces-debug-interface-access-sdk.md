@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474737"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>接口（调试接口访问 SDK）
 在中表的内容和 Vtable 顺序中的接口页上，每个接口下按字母顺序列出了方法。  

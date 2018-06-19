@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463902"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 检索一个标志，用于指定函数是否包含的一种用法[longjmp](/cpp/c-runtime-library/reference/longjmp)命令 (使用成对[setjmp](/cpp/c-runtime-library/reference/setjmp)命令时，这些对象会形成异常处理的 C 样式方法)。  

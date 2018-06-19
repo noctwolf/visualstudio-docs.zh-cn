@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975841"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>播放期间让编码的 UI 测试等待特定事件
 

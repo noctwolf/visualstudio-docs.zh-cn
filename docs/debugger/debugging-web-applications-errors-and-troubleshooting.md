@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471513"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>调试 Web 应用程序：错误和疑难解答
 当尝试调试 Web 应用程序时，可能遇到下列错误。  

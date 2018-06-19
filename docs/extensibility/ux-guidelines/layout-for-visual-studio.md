@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31149011"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio 的布局
 Visual Studio 对话框的大部分[实用工具对话框布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，这是 unthemed 对话框该按照标准[Windows 桌面对话框布局原则](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)。 Visual Studio 移动，以便刷新其 UI，一部分变得较为突出对话框必须建立它们为产品定义体验的新设计。 这些[主题对话框布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有主题的外观。  

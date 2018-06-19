@@ -17,6 +17,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425707"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>演练：创建多计算机生成环境
 

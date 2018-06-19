@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144890"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>演练： 将内容类型链接到文件扩展名
 你可以定义您自己的内容类型，并将文件扩展名为链接到它，通过使用编辑器 Managed Extensibility Framework (MEF) 扩展。 在某些情况下，文件扩展名已定义由语言服务;不过，将它用于 MEF 你仍必须将其链接到的内容类型。  

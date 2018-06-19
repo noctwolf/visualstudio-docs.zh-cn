@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31966362"
 ---
 # <a name="reporting-load-tests-results-for-test-comparisons-or-trend-analysis"></a>报告负载测试结果以比较测试或进行趋势分析
 
@@ -38,8 +39,8 @@ ms.lasthandoff: 04/26/2018
 
 |任务|关联主题|
 |-----------|-----------------------|
-|**创建性能和压力报告：**可使用 Microsoft Excel 创建有关负载测试和 Web 性能测试的报告。|- [如何：使用 Microsoft Excel 创建负载测试性能报告](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**使用 Microsoft Word 手动创建性能和压力报告：**可以通过将摘要、表和关系图数据复制并粘贴到 Microsoft Word 文档中，手动创建有关负载测试和 Web 性能测试的报告。|- [如何：使用 Microsoft Word 手动创建负载测试性能报告](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**创建性能和压力报告：** 可使用 Microsoft Excel 创建有关负载测试和 Web 性能测试的报告。|- [如何：使用 Microsoft Excel 创建负载测试性能报告](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**使用 Microsoft Word 手动创建性能和压力报告：** 可以通过将摘要、表和关系图数据复制并粘贴到 Microsoft Word 文档中，手动创建有关负载测试和 Web 性能测试的报告。|- [如何：使用 Microsoft Word 手动创建负载测试性能报告](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
 ## <a name="see-also"></a>请参阅
 

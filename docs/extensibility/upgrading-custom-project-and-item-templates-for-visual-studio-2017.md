@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143473"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>升级自定义项目和项模板的 Visual Studio 2017
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="template-scanning"></a>扫描的模板
 
-在以前版本的 Visual Studio 中， **devenv /setup**或**devenv /installvstemplates**扫描本地磁盘上，以查找项目和项模板。 从 Visual Studio 2017 年 1 开始，扫描仅对于用户级位置的执行。 默认用户级位置是**%USERPROFILE%\Documents\\< Visual Studio 版本\>\Templates\\**。 此位置用于模板生成的**项目** > **导出模板...**命令时，如果**自动将模板导入 Visual Studio**在向导中选择选项。
+在以前版本的 Visual Studio 中， **devenv /setup**或**devenv /installvstemplates**扫描本地磁盘上，以查找项目和项模板。 从 Visual Studio 2017 年 1 开始，扫描仅对于用户级位置的执行。 默认用户级位置是 **%USERPROFILE%\Documents\\< Visual Studio 版本\>\Templates\\**。 此位置用于模板生成的**项目** > **导出模板...** 命令时，如果**自动将模板导入 Visual Studio**在向导中选择选项。
 
 对于其他 （非用户） 位置中，你必须包括指定的位置和模板的其他特征的 manifest(.vstman) 文件。 .Vstman 文件生成以及用于模板的.vstemplate 文件中。 如果你安装你使用.vsix 的扩展，可以通过重新编译 Visual Studio 自 2017 年中的扩展来实现此目的。 但如果使用一个.msi 时，你需要手动进行更改。 你需要如何手动进行这些更改的列表，请参阅**升级为与安装的扩展。MSI**本主题中更高版本。  
   
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/16/2018
 
 1.  在 Visual Studio 2017 中打开解决方案。 你将需要升级的代码。 单击 **“确定”**。  
   
-2.  在升级完成后，你可能需要更改安装目标版本。 在 VSIX 项目中，打开 source.extension.vsixmanifest 文件并选择**安装目标**选项卡。如果**版本范围**字段是**[14.0]**，单击**编辑**和将其更改为包含 Visual Studio 2017。 例如，你可以将其设置为**[14.0,15.0]**安装扩展到 Visual Studio 2015 或 Visual Studio 2017，或**[15.0]**以将其安装到只是 Visual Studio 自 2017 年 1。  
+2.  在升级完成后，你可能需要更改安装目标版本。 在 VSIX 项目中，打开 source.extension.vsixmanifest 文件并选择**安装目标**选项卡。如果**版本范围**字段是 **[14.0]**，单击**编辑**和将其更改为包含 Visual Studio 2017。 例如，你可以将其设置为 **[14.0,15.0]** 安装扩展到 Visual Studio 2015 或 Visual Studio 2017，或 **[15.0]** 以将其安装到只是 Visual Studio 自 2017 年 1。  
   
 3.  重新编译代码。  
   
@@ -120,7 +121,7 @@ ms.lasthandoff: 04/16/2018
   
 ```  
   
- 提供的信息[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)元素保持不变。  **\<VSTemplateContainer >**元素指向关联的模板的.vstemplate 文件。  
+ 提供的信息[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)元素保持不变。  **\<VSTemplateContainer >** 元素指向关联的模板的.vstemplate 文件。  
   
  下面是由 Visual Studio 2015 创建的默认项.vstemplate 文件：  
   
@@ -173,7 +174,7 @@ ms.lasthandoff: 04/16/2018
   
 ```  
   
- 提供的信息 **\<TemplateData >**元素保持不变。  **\<VSTemplateContainer >**元素指向关联的模板的.vstemplate 文件  
+ 提供的信息 **\<TemplateData >** 元素保持不变。  **\<VSTemplateContainer >** 元素指向关联的模板的.vstemplate 文件  
   
  有关.vstman 文件的不同元素的详细信息，请参阅[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。  
   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148732"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的颜色值参考
 本主题是用于创建新的颜色标记的引用。 当创建新的用户界面时，你可以使用从现有的 UI 中的相似颜色以选择为每个主要的主题颜色和高对比度主题该元素的系统颜色名称。 

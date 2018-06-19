@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472197"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>“调试错误和警告”对话框
 以下是在调试应用程序时可能遇到的错误和警告对话框。  
