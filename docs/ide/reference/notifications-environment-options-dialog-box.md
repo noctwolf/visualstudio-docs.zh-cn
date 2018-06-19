@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945124"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“通知”
 此选项用于停止忽略你以前选择通过通知对话框忽略的任何通知。 有关详细信息，请参阅[通知](../../ide/visual-studio-notifications.md)。

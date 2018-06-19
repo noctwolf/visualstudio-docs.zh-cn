@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101285"
 ---
 # <a name="adding-and-removing-property-pages"></a>添加和删除属性页
 项目设计器提供集中管理项目属性、 设置和中的资源[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它显示为中的单个窗口[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 和包含大量的访问通过在左侧选项卡右侧的窗格。 项目设计器中 （通常称为属性页） 的窗格因项目类型和语言而异。 项目设计器可通过访问**属性**命令**项目**菜单。  

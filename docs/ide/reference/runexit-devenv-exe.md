@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944435"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 编译和运行指定的项目或解决方案，然后关闭集成开发环境 (IDE)。

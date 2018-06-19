@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927264"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>“混合最少量规则”规则集
 Microsoft 混合最少量规则专注于你支持公共语言运行时，包括潜在安全漏洞和应用程序崩溃的 c + + 项目中的最关键问题。 应包括在任何自定义规则集中设置为 c + + 项目支持公共语言运行时创建此规则。

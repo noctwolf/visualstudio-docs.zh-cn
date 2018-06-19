@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099631"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 指定多少 （例如正在运行的线程，堆栈帧和当前的指令地址） 的程序的状态进行转储。  

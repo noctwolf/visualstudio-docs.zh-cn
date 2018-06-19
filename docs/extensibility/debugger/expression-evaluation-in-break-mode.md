@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100281"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>在中断模式下的表达式计算
 下面描述了当调试器处于中断模式，并且必须执行表达式计算时出现的过程。  

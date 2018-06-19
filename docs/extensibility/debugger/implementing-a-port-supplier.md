@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098987"
 ---
 # <a name="implementing-a-port-supplier"></a>实现端口供应商
 端口供应商提供对会话调试管理器 (SDM) 请求的端口。 端口供应商需要调试到非 DCOM 机时或当新设备需要支持时实现。 例如，若要提供了与移动电话的调试，则可能会实现提供端口连接到移动电话 （可能通过 IR 或单元格连接） 和枚举的进程和手机上运行的程序的端口供应商提供。  

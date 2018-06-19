@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947516"
 ---
 # <a name="security-of-text-templates"></a>文本模板的安全性
 文本模板具有以下安全问题：

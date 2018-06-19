@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949519"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>域特定语言工具的概述
 域特定语言工具 （DSL 工具），它承载在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，但仍使设计的域特定语言，然后生成用户必须具有创建基于语言的模型的所有内容。

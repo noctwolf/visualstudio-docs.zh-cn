@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102676"
 ---
 # <a name="debugger-concepts"></a>调试器概念
 若要在 Visual Studio 调试包上生成，你需要熟悉在设计包中使用的体系结构概念。  

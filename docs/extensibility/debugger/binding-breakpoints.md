@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104146"
 ---
 # <a name="binding-breakpoints"></a>绑定断点
 如果用户设置断点，可能通过按 F9，IDE 依照请求，将提示调试会话才能创建断点。  

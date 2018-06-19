@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946476"
 ---
 # <a name="export-diagrams-as-images"></a>将关系图导出为图像
 在 Visual Studio 中，你可以保存建模图在只读格式中的，以便您可以与利益干系人、 用户或不使用相同版本的 Visual Studio 项目团队成员共享它们。

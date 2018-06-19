@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098090"
 ---
 # <a name="process-debug-manager"></a>进程调试管理器
 过程调试管理器 (PDM) 是一个组件的 Visual Studio 的管理程序和进程，使其可用于会话调试管理器和调试引擎。  

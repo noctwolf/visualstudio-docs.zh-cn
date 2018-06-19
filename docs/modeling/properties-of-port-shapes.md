@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951240"
 ---
 # <a name="properties-of-port-shapes"></a>端口形状的属性
 可以使用端口形状来表示生成的设计器中的域类。

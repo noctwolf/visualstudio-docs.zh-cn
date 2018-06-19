@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100934"
 ---
 # <a name="combo-element"></a>组合元素
 定义在组合框中显示的命令。 有四种类型的组合框，如下所示： 下拉组合、 DynamicCombo、 IndexCombo 和 MRUCombo。  

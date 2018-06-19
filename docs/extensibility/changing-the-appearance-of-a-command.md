@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099078"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>更改外观的命令
 通过更改命令的外观，你可以对你的用户提供反馈。 例如，您可能希望命令不可用时查找不同。 你可以使命令可用或不可用，隐藏或显示它们，或选中或取消它们选中的菜单上。  

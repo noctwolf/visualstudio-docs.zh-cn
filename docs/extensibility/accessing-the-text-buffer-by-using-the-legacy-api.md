@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099468"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>通过使用旧版 API 访问文本缓冲区
 文本负责管理文本流和文件持久性。 尽管缓冲区可以读取或写入其他格式，使用 Unicode 执行所有普通通信使用的缓冲区。 在旧的 Api 中，文本缓冲区可以使用一维或二维的坐标系统以标识缓冲区中的字符位置。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099797"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters 元素（Visual Studio 模板）
 组的自定义参数的向导进行参数替换时要传递给模板向导。  

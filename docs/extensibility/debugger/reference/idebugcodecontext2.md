@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103872"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 此接口表示代码指令的起始位置。 为大多数运行时体系结构现在，代码上下文被想象的为程序的执行流中的地址。  

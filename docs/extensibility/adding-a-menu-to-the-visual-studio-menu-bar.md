@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103079"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>将菜单添加到 Visual Studio 菜单栏
 本演练演示如何向 Visual Studio 集成的开发环境 (IDE) 的菜单栏添加菜单。 IDE 菜单栏包含菜单类别如**文件**，**编辑**，**视图**，**窗口**，和**帮助**.  

@@ -1,9 +1,8 @@
 ---
-title: 查找和使用 Visual Studio 扩展 | Microsoft Docs
-ms.custom: ''
+title: 查找和使用 Visual Studio 扩展
 ms.date: 06/07/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
@@ -17,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 682c5d889fa39b5e808e68da6d57bf54504db8b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a5b562aa6fe4a64f92d66ad0a6fff0395e5314a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950275"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>查找和使用 Visual Studio 扩展
 
@@ -38,7 +38,7 @@ Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>安装或卸载 Visual Studio 扩展
 
-在 **“扩展和更新”**中，找到要安装的扩展。 （如果知道扩展的名称或部分名称，则可以在“搜索”窗口中进行搜索。）单击“下载”。  将按计划安装扩展。 等所有 Visual Studio 实例都关闭后便会安装扩展。
+在 **“扩展和更新”** 中，找到要安装的扩展。 （如果知道扩展的名称或部分名称，则可以在“搜索”窗口中进行搜索。）单击“下载”。  将按计划安装扩展。 等所有 Visual Studio 实例都关闭后便会安装扩展。
 
 如果尝试安装具有依赖项的扩展，安装程序将验证它们是否已安装。 如果未安装，则 **“扩展和更新”** 对话框将列出安装该扩展之前必须先安装的依赖项。
 

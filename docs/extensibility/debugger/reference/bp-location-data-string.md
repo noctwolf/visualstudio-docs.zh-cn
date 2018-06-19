@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100582"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 用于设置数据断点基于用户可以输入从集成的开发环境 (IDE) 的字符串。  

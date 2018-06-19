@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104210"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 此结构描述本地变量、 参数或其他字段。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101373"
 ---
 # <a name="creating-a-custom-debug-engine"></a>创建自定义调试引擎
 调试引擎 (DE) 是允许对特定运行时体系结构进行调试的组件。 通常是每个运行时环境的只有一个 DE 实现。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106976"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何： 调试自定义调试引擎
 项目类型中启动的调试引擎 (DE)<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 这意味着 DE 启动的实例的控制之下[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]控制项目类型。 但是，该实例[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]无法调试 DE。 下面是可用于调试自定义 DE 的步骤。  

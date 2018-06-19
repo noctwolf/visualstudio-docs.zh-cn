@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102787"
 ---
 # <a name="evaluating-expressions"></a>计算表达式
 表达式是从字符串向下传递，从自动、 监视、 快速监视，或即时窗口中创建的。 计算表达式，则它会生成一个可打印字符串，包含的名称和类型的变量或自变量和其值。 此字符串显示在相应的 IDE 窗口中。  

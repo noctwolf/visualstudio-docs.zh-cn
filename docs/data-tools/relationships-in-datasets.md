@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927199"
 ---
 # <a name="create-relationships-between-datasets"></a>创建数据集之间的关系
 包含相关的数据的数据集表，表使用<xref:System.Data.DataRelation>对象来表示表之间的父/子关系，并从另一个返回相关的记录。 通过使用添加到数据集的相关的表**数据源配置向导**，或**数据集设计器**、 创建和配置<xref:System.Data.DataRelation>为你的对象。
@@ -59,7 +60,7 @@ A<xref:System.Data.DataRelation>对象还用于创建和实施以下约束：
 |外键约束规则|操作|
 |----------------------------------|------------|
 |<xref:System.Data.Rule.Cascade>|中子表中的相关记录还进行对父记录所做的更改 （update 或 delete）。|
-|<xref:System.Data.Rule.SetNull>|子记录不会删除，但这些子记录中的外键设置为<xref:System.DBNull>。 使用此设置时，子记录可以保留为"孤立项"-这就是，它们具有的父记录没有关系。 **注意：**使用此规则可能导致子表中的无效数据。|
+|<xref:System.Data.Rule.SetNull>|子记录不会删除，但这些子记录中的外键设置为<xref:System.DBNull>。 使用此设置时，子记录可以保留为"孤立项"-这就是，它们具有的父记录没有关系。 **注意：** 使用此规则可能导致子表中的无效数据。|
 |<xref:System.Data.Rule.SetDefault>|中的相关的子记录的外键设置为其默认值 (由列的建立<xref:System.Data.DataColumn.DefaultValue%2A>属性)。|
 |<xref:System.Data.Rule.None>|对相关的子记录不进行任何更改。 使用此设置时，子记录可以包含对无效的父记录的引用。|
 

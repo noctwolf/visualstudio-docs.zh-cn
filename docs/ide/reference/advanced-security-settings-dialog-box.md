@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943031"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>“高级安全设置”对话框
 可通过此对话框指定在区域中进行调试涉及的安全设置。

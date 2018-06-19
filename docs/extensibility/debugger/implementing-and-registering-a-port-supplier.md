@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103170"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>实现和注册端口供应商
 端口供应商提供的角色是跟踪并提供反过来管理进程的端口。 在需要创建某个端口时，端口供应商是实例化可以共同创建使用端口供应商的 GUID （端口供应商选定的用户或指定的项目系统端口供应商，将使用会话调试管理器 [SDM]）。 然后将调用 SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)以查看是否可以添加任何端口。 如果可以添加一个端口，通过调用请求一个新的端口[添加](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)并将其传递[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)描述该端口。 `AddPort` 将返回一个新的端口，由表示[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口。  

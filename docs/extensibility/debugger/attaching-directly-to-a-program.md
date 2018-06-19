@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100372"
 ---
 # <a name="attaching-directly-to-a-program"></a>附加到的程序直接
 用户想要调试程序已在通常运行的过程中按照以下步骤：  

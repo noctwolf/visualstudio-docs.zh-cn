@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097817"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 元素（Visual Studio 模板）
 只有新项目将生成尽可能创建并将其添加到解决方案。 不生成整个解决方案。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102195"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>创建和管理有模式对话框
 在创建模式对话框在 Visual Studio 时，你必须确保当显示对话框中，禁用对话框中的父窗口，然后对话框关闭后重新启用父窗口。 如果不这样做，可能会收到错误:"Microsoft Visual Studio 无法关闭，因为一个模式对话框处于活动状态。 关闭 active 对话框中，然后重试。"  

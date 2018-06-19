@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101256"
 ---
 # <a name="notifying-the-port"></a>通知端口
 启动程序之后, 该端口必须要得到通知，，如下所示：  

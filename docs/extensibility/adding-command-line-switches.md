@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098413"
 ---
 # <a name="adding-command-line-switches"></a>添加命令行开关
 你可以添加时执行 devenv.exe 应用于你的 VSPackage 的命令行开关。 使用<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>声明对开关以及其属性名称。 在此示例中，添加名为的 VSPackage 的一个子类 MySwitch 交换机**AddCommandSwitchPackage**不带任何参数且自动加载 VSPackage。  

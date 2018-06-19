@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098204"
 ---
 # <a name="entering-break-mode"></a>进入中断模式
 以下描述当在单步执行、 运行到的源代码中，有光标的行或运行到断点后遇到断点时出现的过程。  

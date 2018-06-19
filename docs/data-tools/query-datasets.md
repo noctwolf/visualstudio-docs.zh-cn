@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926690"
 ---
 # <a name="query-datasets"></a>查询数据集
 若要搜索的特定记录集中的数据，对 DataTable 使用 FindBy 方法，编写你自己 foreach 语句循环访问表的行集合，或使用[LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。

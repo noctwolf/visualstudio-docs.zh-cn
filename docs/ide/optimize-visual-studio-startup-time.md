@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948439"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>优化 Visual Studio 启动时间
 
@@ -62,7 +63,7 @@ Visual Studio 可快速高效地启动。 但是，某些 Visual Studio 扩展�
 
     - “启动时不显示窗口”：打开 Visual Studio 时，指定的工具窗口将始终关闭，即使它在上一个会话中保留打开状态。 需要时可以从相应的菜单中打开工具窗口。
 
-    - **启动时自动隐藏窗口：**如果工具窗口在上一个会话中保留打开状态，则此选项将在启动时折叠工具窗口组，以避免初始化工具窗口。 如果经常使用工具窗口，那么这是一个不错的选择。 因为工具窗口仍然可用，但不会再对 Visual Studio 启动时间产生负面影响。
+    - **启动时自动隐藏窗口：** 如果工具窗口在上一个会话中保留打开状态，则此选项将在启动时折叠工具窗口组，以避免初始化工具窗口。 如果经常使用工具窗口，那么这是一个不错的选择。 因为工具窗口仍然可用，但不会再对 Visual Studio 启动时间产生负面影响。
 
     ![管理 Visual Studio 性能 - 工具窗口视图](../ide/media/vside_perfdialog_toolwindows.png)
 

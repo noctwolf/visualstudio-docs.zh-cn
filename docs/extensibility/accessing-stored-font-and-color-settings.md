@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105784"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>访问存储的字体和颜色设置
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 将存储修改后的设置字体和颜色在注册表中。 你可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口来访问这些设置。

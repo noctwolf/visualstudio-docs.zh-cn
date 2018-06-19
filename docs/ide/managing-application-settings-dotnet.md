@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951016"
 ---
 # <a name="manage-application-settings-net"></a>管理应用程序设置 (.NET)
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="create-application-settings-at-design-time"></a>在设计时创建应用程序设置
 
-在设计时，可用两种方法来创建应用程序设置：通过使用 **“项目设计器”** 的 **“设置”**页，或通过使用窗体或控件的 **“属性”** 窗口，都可以让你将设置直接绑定到属性。
+在设计时，可用两种方法来创建应用程序设置：通过使用 **“项目设计器”** 的 **“设置”** 页，或通过使用窗体或控件的 **“属性”** 窗口，都可以让你将设置直接绑定到属性。
 
 当你创建应用程序范围的设置（例如，数据库连接字符串或对服务器资源的引用）时，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将它与 `<applicationSettings>` 标记一起保存在 app.config 文件中。 （连接字符串保存在 `<connectionStrings>` 标记下。）
 

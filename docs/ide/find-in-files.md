@@ -1,7 +1,7 @@
 ---
-title: 在文件中查找 | Microsoft Docs
-ms.custom: ''
+title: 在文件中查找
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -21,11 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7e181883fff125349949f081826157f2a3aa36f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1470868e207687a7b35f46724b80b0da0a0e71c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946554"
 ---
 # <a name="find-in-files"></a>在文件中查找
 
@@ -69,19 +70,19 @@ ms.lasthandoff: 04/16/2018
 
 可以展开或折叠“查找选项”部分。 可以选择或清除以下选项：
 
-**区分大小写**  
+**区分大小写**
 
 如果选择此选项，“查找结果”搜索将区分大小写
 
-**全字匹配**  
+**全字匹配**
 
 如果选择此选项，“查找结果”窗口将仅返回全字匹配项。
 
-**使用正则表达式**  
+**使用正则表达式**
 
 如果选中此复选框，则可以使用特殊表示法在“查找内容”或“替换为”文本框中定义要匹配的文本模式。 有关这些表示法的列表，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
 
-**查找以下文件类型**  
+**查找以下文件类型**
 
 此列表指示要在“查找范围”目录中搜索的文件类型。 如果此字段为空白，则将搜索“查找范围”目录中的所有文件。
 
@@ -91,7 +92,7 @@ ms.lasthandoff: 04/16/2018
 
 可以展开或折叠“结果选项”部分。 可以选择或清除以下选项：
 
-**“查找结果 1”窗口**  
+**“查找结果 1”窗口**
 
 如果选择此选项，当前的搜索结果将替换“查找结果 1”窗口中的内容。 此窗口将自动打开以显示搜索结果。 若要手动打开此窗口，请从“视图”菜单中选择“其他窗口”，然后选择“查找结果 1”。
 
@@ -109,6 +110,6 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>请参阅
 
-[查找和替换文本](../ide/finding-and-replacing-text.md)  
-[在文件中替换](../ide/replace-in-files.md)  
-[Visual Studio 命令](../ide/reference/visual-studio-commands.md)
+- [查找和替换文本](../ide/finding-and-replacing-text.md)
+- [在文件中替换](../ide/replace-in-files.md)
+- [Visual Studio 命令](../ide/reference/visual-studio-commands.md)

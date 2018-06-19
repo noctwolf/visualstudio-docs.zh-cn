@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31897901"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052：应密封静态容器类型
 |||

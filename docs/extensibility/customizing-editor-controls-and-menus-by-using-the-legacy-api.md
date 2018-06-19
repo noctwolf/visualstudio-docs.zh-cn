@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102377"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>使用旧版 API 自定义编辑器控件和菜单
 上下文菜单和在编辑器中的控件，可以控制语言服务或文本视图。 本部分中的页详细介绍如何使用这些功能。  

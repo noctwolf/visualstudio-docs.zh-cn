@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946359"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 体系结构工具指南
 此体系结构工具指南是有关使用 Visual Studio 2010 中的建模工具的实践性指南的可下载程序包。 它显示如何以集成方式，使用所有建模工具的高级视图，并讨论了使用这些工具的最常见方案。

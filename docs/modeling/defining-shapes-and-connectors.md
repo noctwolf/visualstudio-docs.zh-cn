@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949418"
 ---
 # <a name="defining-shapes-and-connectors"></a>定义形状和连接线
 在域特定语言 (DSL) 中，有多种基本类型的形状，可用于在关系图上显示信息。

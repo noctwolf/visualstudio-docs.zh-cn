@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100564"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter 元素（Visual Studio 模板）
 包含自定义参数名称和从模板创建项目或项时要使用的值。  

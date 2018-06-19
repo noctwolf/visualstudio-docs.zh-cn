@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102923"
 ---
 # <a name="debug-engine"></a>调试引擎
 调试引擎 (DE) 适用于提供调试服务，例如执行控件、 断点及表达式评估的解释程序或操作系统。 DE 负责监视正在调试的程序的状态。 不要使用实现此目的，DE 任何方法将中支持的运行时，可供它，无论是由运行时提供的 CPU 中或从 Api。  

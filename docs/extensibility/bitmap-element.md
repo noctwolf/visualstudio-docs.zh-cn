@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098103"
 ---
 # <a name="bitmap-element"></a>位图元素
 定义位图。 从资源或从文件加载位图。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
 |guid|必须的。 GUID/ID 命令标识符的 GUID。<br /><br /> 位图的 guid 属性不与任何 VSPackage 或其他命令组相关联。  它应是唯一的位图定义，并且不能用于任何其他用途。|  
 |ResID|ID 的 GUID/ID 命令标识符。 ResID 或 href 属性是必需的。<br /><br /> 该 resID 属性为整数资源 ID，它确定是要在合并的命令表期间加载的位图条。  加载命令表后，将从相同模块的资源加载指定的资源 ID 的位图。|  
 |usedList|所需 resID 属性是否存在。 位图栏中选择可用的映像。|  
-|href|位图的路径。 ResID 或 href 属性是必需的。<br /><br /> Include 路径中搜索所指示的图像文件，生成的二进制文件中嵌入的。  命令表合并时，请在图像复制和任何其他资源查找或负载是必需的。  如果 usedList 属性不存在，条带中的所有映像都将用。 **注意：**可能中包括.bmp、.png 和.gif 的几种格式之一提供映像。  早期版本的编译器不支持 alpha 信息部分透明度的 32 位位图图像。 这些版本的解决方法是使用.png 格式。|  
+|href|位图的路径。 ResID 或 href 属性是必需的。<br /><br /> Include 路径中搜索所指示的图像文件，生成的二进制文件中嵌入的。  命令表合并时，请在图像复制和任何其他资源查找或负载是必需的。  如果 usedList 属性不存在，条带中的所有映像都将用。 **注意：** 可能中包括.bmp、.png 和.gif 的几种格式之一提供映像。  早期版本的编译器不支持 alpha 信息部分透明度的 32 位位图图像。 这些版本的解决方法是使用.png 格式。|  
 |条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  

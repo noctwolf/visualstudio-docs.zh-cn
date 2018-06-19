@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102988"
 ---
 # <a name="getting-a-port"></a>获取端口
 端口表示与在其运行进程的计算机的连接。 该计算机可以是本地计算机或远程计算机 (这无法可能运行非基于 Windows 的操作系统，请参阅[端口](../../extensibility/debugger/ports.md)有关详细信息)。  

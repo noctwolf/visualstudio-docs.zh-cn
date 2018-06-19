@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101656"
 ---
 # <a name="control-events"></a>控件事件
 你必须将事件发送程序的受控执行过程。 所有事件都将发送使用[IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md)接口，并具有需要实现的属性[IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md)方法。  

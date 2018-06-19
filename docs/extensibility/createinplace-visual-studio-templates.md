@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099208"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace（Visual Studio 模板）
 指定是否创建项目和在指定的位置中，执行参数替换或执行参数替换在临时位置，然后将项目保存到指定的位置。  

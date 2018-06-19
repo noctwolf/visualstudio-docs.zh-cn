@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926545"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>托管代码的“扩展的更正规则”规则集
 Microsoft 扩展的更正规则规则集，从而最大化代码分析来报告逻辑和 framework 用法错误。 侧重于特定的方案，如 COM 互操作性和移动应用程序。 你应考虑包含此规则集如果其中一种情形适用于你的项目，或在你的项目中查找其他问题。

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099371"
 ---
 # <a name="launch-based-attachment"></a>启动基于附件
 自动启动基于附件添加到某个程序。 当托管该程序的进程由 SDM 启动时，启动基于附件遵循类似于手动附件方法的路径。 有关信息，请参阅[附加到程序](../../extensibility/debugger/attaching-to-the-program.md)。  

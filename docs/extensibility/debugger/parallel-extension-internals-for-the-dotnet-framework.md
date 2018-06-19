@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100606"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>.NET framework 的并行扩展内部机制
 本部分介绍了内部类型、 方法和字段的类，用于帮助你实现一个自定义的.NET framework 的并行扩展的调试器。  

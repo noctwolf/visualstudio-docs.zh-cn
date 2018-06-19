@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104701"
 ---
 # <a name="attaching-after-a-launch"></a>在启动后附加
 已启动程序后，调试会话已准备好的调试引擎 (DE) 附加到所述的程序。  

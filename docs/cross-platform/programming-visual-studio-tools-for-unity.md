@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31060110"
 ---
 # <a name="programming-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 编程
 本部分将介绍使用 Visual Studio Tools for Unity API 的示例。

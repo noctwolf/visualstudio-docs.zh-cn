@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31063247"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 在本节中，你将了解免费的 Visual Studio 扩展 Visual Studio Tools for Unity，它让 Visual Studio 成为使用 Unity 生成游戏的强大工具。

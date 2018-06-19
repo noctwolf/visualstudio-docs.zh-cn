@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953490"
 ---
 # <a name="develop-tests-from-a-model"></a>基于模型开发测试
 可以使用要求模型和体系结构模型来帮助组织系统及其组件的测试。 这种做法有助于确保你测试了对于用户和其他利益干系人而言非常重要的要求，并可帮助你在要求发生变化时快速更新测试。 如果你使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，还可以维护模型和测试之间的链接。
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/26/2018
  若要查看支持这些功能的 Visual Studio 的版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="system-and-subsystem-testing"></a>系统和子系统测试
- *系统测试，*也称为*验收测试*，测试是否都满足用户需求的方式。 这种测试关注系统的外部可见行为，而不是内部设计。
+ *系统测试，* 也称为*验收测试*，测试是否都满足用户需求的方式。 这种测试关注系统的外部可见行为，而不是内部设计。
 
  在扩展或重新设计系统时，系统测试非常有价值。 它们将帮助你避免在更改代码时引入 bug。
 
