@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121568"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 此接口表示一个堆栈帧属性、 程序文档属性或某些其他属性。 属性通常是表达式计算的结果。  

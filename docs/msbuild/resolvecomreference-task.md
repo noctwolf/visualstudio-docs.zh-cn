@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578167"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 任务
 获取一个或多个类型库名称或 .tlb 文件的列表，将这些类型库解析为磁盘上的位置。  

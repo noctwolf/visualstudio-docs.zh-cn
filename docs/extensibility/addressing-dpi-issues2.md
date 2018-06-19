@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108438"
 ---
 # <a name="addressing-dpi-issues"></a>寻址 DPI 问题
 越来越多的设备将随"高分辨率"屏幕。 这些屏幕通常具有超过 200 个每英寸像素数 (ppi)。 使用这些计算机上的应用程序将需要要向上扩展以满足的需求查看设备的正常查看距离处的内容的内容。 从 2014 年开始高密度显示的主要目标是移动计算设备 （平板电脑、 壳式便携式计算机和手机）。  

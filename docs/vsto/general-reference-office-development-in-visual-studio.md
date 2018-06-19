@@ -20,6 +20,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548419"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>常规参考 （Visual Studio 中的 Office 开发）
   本部分包含有关 Visual Studio 中的 Microsoft Office 项目的技术详细信息。  

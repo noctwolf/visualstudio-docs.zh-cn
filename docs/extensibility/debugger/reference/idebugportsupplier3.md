@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116992"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 此接口允许调用方能够确定是否端口供应商可以保留 （通过其写入到磁盘） 的调试器的调用之间的端口，，然后获取这些保留的端口的列表。  

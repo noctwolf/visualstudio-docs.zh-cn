@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107863"
 ---
 # <a name="attaching-to-the-program"></a>附加到程序
 你向适当的端口注册您的程序后，你必须将调试器附加到你想要调试的程序。  

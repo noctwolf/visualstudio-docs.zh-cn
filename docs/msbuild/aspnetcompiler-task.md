@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567942"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 任务
 `AspNetCompiler` 任务包装 aspnet_compiler.exe，后者是用于预编译 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序的实用工具。  

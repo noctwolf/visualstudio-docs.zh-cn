@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917089"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Help Viewer 的辅助功能
 Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 本主题包含有关功能、产品和服务的信息，有助于让用户可以使用 Microsoft Help Viewer 的丰富功能。

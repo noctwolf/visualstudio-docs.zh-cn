@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109137"
 ---
 # <a name="hitting-a-breakpoint"></a>命中断点
 下面介绍的调试引擎 (DE) 在运行或单步执行时命中断点时的过程：  

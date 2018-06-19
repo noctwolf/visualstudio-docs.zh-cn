@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109683"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>由 IDE 实现的回调函数
 若要与集成为尽可能并提供一种统一的最终用户体验，无缝集成的开发环境 (IDE) 的源代码管理插件可以使用由 IDE 实现的回调函数。 该插件可调用这些函数在适当的时间，在源代码管理操作将信息传递到 IDE;IDE 然后可以显示此信息作为其本机用户界面中的嵌入元素。 用户在这种情况下，如果该插件，则采用其自己的 UI 比具有更少碎片的体验。  

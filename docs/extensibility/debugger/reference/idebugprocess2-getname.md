@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31118474"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 获取标题、 友好名称或该进程的文件名称。  

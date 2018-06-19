@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113089"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 此接口表示调试引擎 (DE)。 它用于从创建到设置和清除异常的断点管理调试会话的各个方面。  

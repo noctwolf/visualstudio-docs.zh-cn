@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112830"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 使[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI，以显示内的文本**传输信息**部分**附加到进程**对话框。  

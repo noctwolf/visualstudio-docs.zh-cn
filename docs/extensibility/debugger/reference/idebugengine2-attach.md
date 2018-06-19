@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107915"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 将调试引擎 (DE) 附加到的程序或程序。 由会话调试管理器 (SDM) DE 进程到 SDM 时调用。  
