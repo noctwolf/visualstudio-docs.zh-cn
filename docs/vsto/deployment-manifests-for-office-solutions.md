@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263485"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>部署 Office 解决方案的清单
   部署清单是 XML 文件，用于描述 Office 解决方案的部署设置，并标识当前的应用程序版本。  

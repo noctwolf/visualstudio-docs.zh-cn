@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128554"
 ---
 # <a name="hierarchies-and-selection"></a>层次结构和所选内容
 当你自定义[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，应了解如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]处理层次结构，如项目和如何，它使用所选内容上下文来确定向用户显示的内容。 本部分讨论的概念[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]层次结构和所选内容。  

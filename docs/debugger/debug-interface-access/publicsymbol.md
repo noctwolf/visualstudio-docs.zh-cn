@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478914"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 当创建.exe 文件时，提供每个公共符号 （在最小值、 每个全局函数和数据符号）`SymTagPublicSymbol`标记。  

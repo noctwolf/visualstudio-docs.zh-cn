@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480711"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 项目的属性页设置
 你可以更改网站调试配置中的属性设置**属性页**对话框中中, 所述[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示在何处可以找到中与调试器相关的设置**属性页**对话框。  

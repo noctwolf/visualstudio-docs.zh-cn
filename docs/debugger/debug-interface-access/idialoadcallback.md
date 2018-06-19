@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466148"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 从 DIA 符号查找过程，从而使一个用户界面来报告的位置尝试进度接收回调。  

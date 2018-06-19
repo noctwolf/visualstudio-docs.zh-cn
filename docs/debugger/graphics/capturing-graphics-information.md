@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478088"
 ---
 # <a name="capturing-graphics-information"></a>捕获图形信息
 从 Direct3D 应用捕获图形信息，以便使用 Visual Studio 图形分析器来诊断呈现问题和性能问题。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/18/2018
   
      ![使用 GPU 使用情况工具捕获帧。](media/pix_gpu_usage_tool_capture_frame.png)  
   
-     如果你已准备好检查帧已捕获、 启动**Visual Studio 图形分析器**按照**帧...**高于图像缩略图，或通过双击该缩略图的链接。  
+     如果你已准备好检查帧已捕获、 启动**Visual Studio 图形分析器**按照**帧...** 高于图像缩略图，或通过双击该缩略图的链接。  
   
  可以捕获仅整帧，因此当你启动捕获时，它实际上记录下一个帧的图形信息。 记录将在显示你从中启动捕获的帧后立即开始，在显示捕获的帧后结束。 应用程序在图形诊断下运行时，可以捕获你所需的多个帧。 如果未捕获任何帧，将丢弃图形日志。  
   

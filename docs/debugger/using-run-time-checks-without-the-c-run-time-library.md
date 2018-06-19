@@ -30,9 +30,10 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481754"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>使用无 C 运行库的运行时检查
-如果链接程序而不 C 运行时库，使用**/NODEFAULTLIB**，并想要使用运行时检查，则必须链接 runtmchk.lib。  
+如果链接程序而不 C 运行时库，使用 **/NODEFAULTLIB**，并想要使用运行时检查，则必须链接 runtmchk.lib。  
   
  `_RTC_Initialize` 为运行时检查初始化程序。 如果未链接 C 运行库，必须在调用 `_RTC_Initialize` 之前检查是否用运行时错误检查编译了程序：  
   

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567962"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 参考
 Windows Presentation Foundation (WPF) 将 Microsoft 生成引擎 (MSBuild) 扩展为带有其他生成支持，此部分将介绍这一点。  

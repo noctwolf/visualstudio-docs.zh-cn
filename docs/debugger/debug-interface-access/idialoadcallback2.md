@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466778"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 从 DIA 符号查找过程的功能，允许要找到进程上施加限制接收回调。  

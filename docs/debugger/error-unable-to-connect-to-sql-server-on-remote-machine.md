@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482147"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>错误：无法连接到远程计算机上的 SQL Server
 无法连接到远程计算机上 SQL Server*名称*。 访问被拒绝。 请验证远程计算机上是否安装了远程调试器。 如果远程计算机不在域内，或者以本地帐户的身份运行 Visual Studio，那么远程计算机必须拥有与本地帐户的用户名和密码相同的帐户。  

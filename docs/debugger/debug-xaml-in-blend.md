@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477448"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中调试 XAML
 你可以使用 [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] 中的工具在应用中调试 XAML。 生成项目时，任何错误都显示在**结果**面板。 双击一个错误可找到与该错误相关的标记。 如果你需要更多的工作空间，可以隐藏**结果**通过按 F12 的面板。  

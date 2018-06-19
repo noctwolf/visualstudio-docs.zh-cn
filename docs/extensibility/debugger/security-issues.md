@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126892"
 ---
 # <a name="security-issues"></a>安全性问题
 若要调试使用 Visual Studio 的程序，所需的唯一权限是相同的开发人员需要运行程序。 这包括大多数情况下 （涉及其他服务，如 Internet 信息服务中，某些情况下可能需要更高级别的权限） 的远程调试。  

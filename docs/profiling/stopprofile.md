@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264190"
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` 函数将指定分析级别的计数器设置为 0（关闭）。  

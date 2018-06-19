@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567894"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 停止所有跟踪，并释放跟踪会话使用的任何内存。  

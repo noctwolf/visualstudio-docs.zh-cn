@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476076"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>“进程属性”对话框 ->“空间”选项卡
 使用**空间**选项卡以检查进程的地址空间。 若要显示[过程属性对话框中](../debugger/process-properties-dialog-box.md)，焦点移到[进程视图](../debugger/processes-view.md)窗口。 在树中，选择任何进程节点，然后选择**属性**从**视图**菜单。  

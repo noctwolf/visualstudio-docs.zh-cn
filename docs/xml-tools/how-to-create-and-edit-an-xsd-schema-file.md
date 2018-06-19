@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477452"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>如何： 创建和编辑 XSD 架构文件
 

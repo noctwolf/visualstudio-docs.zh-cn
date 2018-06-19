@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479606"
 ---
 # <a name="diagnose-problems-after-deployment"></a>诊断部署后出现的问题
 要在使用 IntelliTrace 部署后诊断 ASP.NET Web 应用中的问题，请加入发行版本信息，以便 Visual Studio 自动查找调试 IntelliTrace 日志所需的正确源文件及符号文件。  
@@ -395,9 +396,9 @@ ms.lasthandoff: 04/18/2018
      ![从源代码管理打开&#45;迁移](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
 ####  <a name="WhatWorkspace"></a> 问： 什么是工作区？  
- **答：**你[工作区存储源的副本](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)以便你可以单独开发和测试它之前检查在你的工作。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。  
+ **答：** 你[工作区存储源的副本](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)以便你可以单独开发和测试它之前检查在你的工作。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。  
 
 ####  <a name="UntrustedSymbols"></a> 问： 为什么收到有关不受信任的符号的消息？  
  ![使用不受信任的符号路径进行调试？] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
- **答：**时，此消息会出现在生成清单文件中的符号路径 (\<*ProjectName*>。BuildInfo.config) 不包括在受信任的符号路径列表。 你可将路径添加到调试器选项中的符号路径列表。
+ **答：** 时，此消息会出现在生成清单文件中的符号路径 (\<*ProjectName*>。BuildInfo.config) 不包括在受信任的符号路径列表。 你可将路径添加到调试器选项中的符号路径列表。

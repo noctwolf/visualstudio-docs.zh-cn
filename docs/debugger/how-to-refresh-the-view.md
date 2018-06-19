@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480080"
 ---
 # <a name="how-to-refresh-the-view"></a>如何：刷新视图
 Spy + + 采用的系统表中的"快照"，并刷新基于此信息的视图。 很重要，定期刷新你的系统视图。 如果你有 Spy + + 视图打开且尚未刷新视图，你将不看到这些进程、 线程和后续创建的 windows。 此外，你可能会看到不再存在的项。 **刷新**命令是适用于除消息视图外的所有视图。  

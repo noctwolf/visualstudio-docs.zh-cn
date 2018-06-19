@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570159"
 ---
 # <a name="copy-task"></a>Copy 任务
 将文件复制到文件系统的一个新位置。  
@@ -41,9 +42,9 @@ ms.lasthandoff: 04/19/2018
 |`DestinationFiles`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要对其复制源文件的文件的列表。 此列表应与 `SourceFiles` 参数中指定的列表具有一对一的映射关系。 也就是说，`SourceFiles` 中指定的第一个文件将复制到 `DestinationFiles` 中指定的第一个位置，依次类推。|  
 |`DestinationFolder`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定要将文件复制到其中的目录。 这必须是目录，而不能是文件。 如果该目录不存在，将自动创建它。|  
 |`OverwriteReadOnlyFiles`|可选 `Boolean` 参数。<br /><br /> 覆盖文件，即使它们标记为只读文件|  
-|`Retries`|可选 `Int32` 参数。<br /><br /> 指定之前的所有尝试都失败后，尝试复制的次数。 默认为零。<br /><br /> **注意：**重试的使用可以屏蔽生成过程中的同步问题。|  
+|`Retries`|可选 `Int32` 参数。<br /><br /> 指定之前的所有尝试都失败后，尝试复制的次数。 默认为零。<br /><br /> **注意：** 重试的使用可以屏蔽生成过程中的同步问题。|  
 |`RetryDelayMilliseconds`|可选 `Int32` 参数。<br /><br /> 指定任何必需的重试之间的延迟。 默认值为传递给 CopyTask 构造函数的 RetryDelayMillisecondsDefault 参数。|  
-|`SkipUnchangedFiles`|可选 `Boolean` 参数。<br /><br /> 如果为`true` ，则跳过复制在源和目标之间保持不变的文件。 如果文件的大小和上次修改时间相同，则 `Copy` 任务认为文件保持不变。 **注意：**如果此参数设置为 `true`，则不应对包含目标使用依赖关系分析，因为如果源文件的上次修改时间比目标文件的上次修改时间更新，则只运行该任务。|  
+|`SkipUnchangedFiles`|可选 `Boolean` 参数。<br /><br /> 如果为`true` ，则跳过复制在源和目标之间保持不变的文件。 如果文件的大小和上次修改时间相同，则 `Copy` 任务认为文件保持不变。 **注意：** 如果此参数设置为 `true`，则不应对包含目标使用依赖关系分析，因为如果源文件的上次修改时间比目标文件的上次修改时间更新，则只运行该任务。|  
 |`SourceFiles`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要复制的文件。|  
 |`UseHardlinksIfPossible`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则创建已复制文件的硬链接，而不是复制该文件。|  
   

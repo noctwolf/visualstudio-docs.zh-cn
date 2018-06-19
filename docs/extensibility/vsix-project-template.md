@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142388"
 ---
 # <a name="vsix-project-template"></a>VSIX 项目模板
 你可以使用 VSIX 项目模板将一个或多个 Visual Studio 扩展包装在一个 VSIX 项目中，然后将包发布上[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/16/2018
 >  若要使用 VSIX 项目，必须安装 Visual Studio SDK。 有关 Visual Studio SDK 的详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>在哪里可以找到 VSIX 项目模板  
- VSIX 项目模板将在**新项目**对话框。 展开**Visual Basic**节点或**Visual C#**节点，然后选择**扩展性**。  
+ VSIX 项目模板将在**新项目**对话框。 展开**Visual Basic**节点或**Visual C#** 节点，然后选择**扩展性**。  
   
 > [!TIP]
 >  请确保该.NET Framework 4.5 或更高版本在顶部的下拉列表中指定**新项目**对话框。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476853"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>“消息选项”对话框 ->“窗口”选项卡
 使用**Windows**选项卡以设置消息中列出的范围[消息视图](../debugger/messages-view.md)。 若要显示[消息选项对话框](../debugger/message-options-dialog-box.md)，选择**日志消息**从**Spy**菜单。  

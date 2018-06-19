@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568918"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath 任务
 此任务接受文件列表，并添加 `<TargetPath>` 属性（如果尚未指定）。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476600"
 ---
 # <a name="spy-help"></a>Spy++ 帮助
 Spy + + 实用程序的文档包含两个常规主题上使用 Spy + + 和 Spy + + 视图上的组。 这些后跟 Spy + + 引用，即在每个可用的菜单命令和对话框中提供更多详细信息。  

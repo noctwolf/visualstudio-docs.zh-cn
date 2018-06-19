@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114776"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 获取以前使用以创建该端口 （如果可用） 的端口的说明。  

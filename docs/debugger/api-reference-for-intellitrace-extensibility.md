@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457457"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 扩展性的 API 参考
 可参考本节中的信息，使用 IntelliTrace 扩展性 API 以在应用程序中读取并解码 .itrace 文件。  

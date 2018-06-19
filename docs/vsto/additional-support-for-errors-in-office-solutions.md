@@ -64,6 +64,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267827"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>在 Office 解决方案中的错误的附加支持
   可以使用以下资源来帮助你查找你会遇到的 Visual Studio 中创建 Office 解决方案的问题的答案。  

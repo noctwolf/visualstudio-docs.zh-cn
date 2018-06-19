@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128715"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>在旧语言服务中的注释代码
 编程语言通常提供一种添加批注或注释代码的方法。 注释是文本来提供有关代码的其他信息，但在编译或解释期间将忽略某一部分。  

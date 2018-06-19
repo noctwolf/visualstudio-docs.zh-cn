@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267970"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 元素
 CommandPlacement 元素启用按钮、 组和菜单要包括在多个组或菜单。 通过使用 CommandPlacement 元素，无需完全重新定义这些项，才能修改用户界面的外观。  

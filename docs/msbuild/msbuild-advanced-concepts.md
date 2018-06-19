@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578817"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 高级概念
 本部分中的文档介绍如何使用高级技术来改善使用 MSBuild 运行的版本。  

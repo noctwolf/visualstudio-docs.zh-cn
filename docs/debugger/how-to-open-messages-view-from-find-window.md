@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473840"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>如何：从查找窗口打开消息视图
 你可能会发现可以方便地使用**查找窗口**对话框中选择了目标窗口中，，然后打开该窗口的消息视图。  

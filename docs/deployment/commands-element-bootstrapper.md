@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566194"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;命令&gt;元素 （引导程序）
 `Commands`元素实现下的元素所描述的测试`InstallChecks`元素，并声明哪些软件包[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]引导程序应安装如果测试失败。  

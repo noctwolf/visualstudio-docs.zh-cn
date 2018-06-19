@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477100"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器的断点疑难解答
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/18/2018
 
 转到**模块**窗口 (**调试** > **Windows** > **模块**) 并检查是否为你的模块加载。  
 * 如果加载你的模块，请检查**符号状态**列以查看是否已加载符号。 
-  * 如果未加载符号，请检查符号状态来诊断问题。 从上下文菜单中的模块上**模块**窗口中，单击**符号加载信息...**若要查看调试器查找尝试并加载符号的位置。 有关加载符号的详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
+  * 如果未加载符号，请检查符号状态来诊断问题。 从上下文菜单中的模块上**模块**窗口中，单击**符号加载信息...** 若要查看调试器查找尝试并加载符号的位置。 有关加载符号的详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   * 如果已加载符号，这意味着 PDB 不包含有关你的源文件的信息。 以下是几个可能的原因： 
     * 如果最近已添加你的源文件，请确认正在加载的模块的最新版本。  
     * 可以创建使用去除的 Pdb **/PDBSTRIPPED**链接器选项。 已去除的 Pdb 不包含源文件信息。 确认你正在使用完整 PDB 和不去除的 PDB。  

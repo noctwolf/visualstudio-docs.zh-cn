@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571190"
 ---
 # <a name="xsd-task"></a>XSD 任务
 包装从源生成架构或类文件的 XML 架构定义工具 (Xsd.exe)。  

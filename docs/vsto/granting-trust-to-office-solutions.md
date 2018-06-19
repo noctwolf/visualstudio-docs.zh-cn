@@ -23,6 +23,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447240"
 ---
 # <a name="grant-trust-to-office-solutions"></a>向 Office 解决方案授予信任
   为 Office 解决方案意味着修改每台目标计算机的安全策略以信任解决方案程序集、 应用程序清单、 部署清单和文档授予信任。 由您或最终用户，可以向 Office 解决方案授予信任。  

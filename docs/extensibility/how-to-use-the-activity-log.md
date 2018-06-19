@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127092"
 ---
 # <a name="how-to-use-the-activity-log"></a>如何： 使用活动日志
 Vspackage 可以将消息写入活动日志。 此功能非常适合在零售环境中进行调试 Vspackage。  

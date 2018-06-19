@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262364"
 ---
 # <a name="call-tree-view---sampling-data"></a>“调用树”视图 - 采样数据
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。  
