@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134755"
 ---
 # <a name="managing-configuration-options"></a>管理配置选项
 在创建新的项目类型时，你必须管理项目和解决方案配置设置以确定你的项目将生成方式，打包、 已部署的、 和运行。 以下主题讨论项目和解决方案配置。  

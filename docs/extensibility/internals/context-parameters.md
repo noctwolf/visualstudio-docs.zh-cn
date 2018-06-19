@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132099"
 ---
 # <a name="context-parameters"></a>上下文参数
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)，你可以添加到向导**新项目**，**添加新项**，或**添加子项目**对话框。 添加的向导位于**文件**菜单或通过右键单击中的项目**解决方案资源管理器**。 IDE 将上下文参数传递给该向导的实现。 当 IDE 调用向导时，上下文参数定义项目的状态。  

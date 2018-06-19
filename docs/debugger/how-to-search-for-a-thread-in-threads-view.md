@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479801"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>如何：在线程视图中搜索线程
 可以通过将其线程 ID 或模块字符串用作搜索条件来搜索特定线程在线程视图中。 你还可以指定搜索的初始方向。 在对话框中的字段将显示所选线程的属性的线程树中。  

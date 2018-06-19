@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704754"
 ---
 # <a name="command-window"></a>“命令”窗口
 “命令”窗口用于直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中执行命令或别名。 可以执行菜单命令和不在任何菜单上出现的命令。 若要显示“命令”窗口，请在“视图”菜单中选择“其他窗口”，然后选择“命令窗口”。

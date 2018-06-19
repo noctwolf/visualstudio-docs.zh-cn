@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134615"
 ---
 # <a name="legacy-language-service-interfaces"></a>旧语言服务接口
 对于任何特定的编程语言，会有语言服务的一个实例一次。 但是，单一语言服务可以提供多个编辑器。  

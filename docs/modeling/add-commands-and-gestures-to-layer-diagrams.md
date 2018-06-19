@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952137"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>向依赖项关系图添加命令和笔势
 你可以定义上下文菜单命令和笔势处理程序在 Visual Studio 中的依赖项关系图上。 可以将这些扩展打包到 Visual Studio 集成扩展 (VSIX) 中，以便将其分发给其他 Visual Studio 用户。

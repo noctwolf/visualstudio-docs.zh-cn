@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132190"
 ---
 # <a name="project-configuration-for-output"></a>输出的项目配置
 每个配置可支持一组生成输出项，如可执行文件或资源文件的生成进程。 这些输出项专用于用户，并可以放在链接的输出，如可执行文件 （.exe、.dll 或.lib） 和源文件 （.idl，.h 文件） 的相关的类型的组中。  

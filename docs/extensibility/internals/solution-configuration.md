@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132716"
 ---
 # <a name="solution-configuration"></a>解决方案配置
 解决方案配置存储解决方案级别的属性。 它们指示的行为**启动**(f5) 和**生成**命令。 默认情况下，这些命令将生成并启动调试配置。 解决方案配置的上下文中执行这两个命令。 这意味着用户可以启动和生成通过设置配置任何活动解决方案中期望 F5。 环境旨在针对解决方案而不是项目到构建和运行时进行优化。  

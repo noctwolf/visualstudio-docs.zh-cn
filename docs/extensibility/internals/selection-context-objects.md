@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131255"
 ---
 # <a name="selection-context-objects"></a>选择上下文对象
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 使用全局选择上下文对象来确定在 IDE 中应显示的内容。 在 IDE 中的每个窗口可以推送到全局选择上下文自己选择上下文对象。 该窗口拥有焦点时，IDE 窗口中的值更新全局选择上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。  

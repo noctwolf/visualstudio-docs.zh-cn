@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477597"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>如何：标记线程和取消标记线程
 你可以标记一个线程你想要通过将其标记为图标中为提供特别注意**线程**，**并行堆栈**（线程视图），**并行监视**，和**GPU 线程**windows。 此图标有助于您和其他人将标记的线程与其他线程区别开来。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475789"
 ---
 # <a name="using-spy"></a>使用 Spy++
 Spy + + （spyxx 执行操作。EXE) 是基于 Win32 的实用程序，使您的系统的进程、 线程、 窗口和窗口消息的图形视图。 Spy + + 帮助的此部分包括以下的帮助主题：  

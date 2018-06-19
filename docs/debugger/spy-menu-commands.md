@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473970"
 ---
 # <a name="spy-menu-commands"></a>“监视”菜单命令
 **Spy**菜单提供用于处理 Spy + + 窗口和视图的命令。  

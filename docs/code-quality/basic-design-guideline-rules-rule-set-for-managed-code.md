@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31902267"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>托管代码的“基本设计准则规则”规则集
 你可以使用 Microsoft 基本设计准则规则规则集重点放在使你的代码更易于了解和使用。 应包括设置，如果你的项目包括库代码，或者如果你想要强制执行最佳实践的代码易于维护的此规则。

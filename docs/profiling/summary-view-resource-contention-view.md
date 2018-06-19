@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31581170"
 ---
 # <a name="summary-view---resource-contention-view"></a>“摘要”视图 - 资源争用视图
 “摘要”视图显示有关应用程序中线程或进程在其中挂起、同时等待访问资源的事件的信息。  

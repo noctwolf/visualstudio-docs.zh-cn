@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577504"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>使用多个处理器生成项目
 MSBuild 可以利用具有多个处理器或多核处理器的系统。 为每个可用处理器创建单独的生成进程。 例如，如果系统具有四个处理器，则创建四个生成进程。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以同时处理这些生成，从而缩短总体生产时间。 但是，并行生成会在生成方式上引入了一些更改。 本主题将讨论这些更改。  

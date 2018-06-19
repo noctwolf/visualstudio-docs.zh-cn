@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137506"
 ---
 # <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>管理撤消和重做通过旧版 API
 编辑器必须支持使用户可以反向他们最近的更改，当它们修改代码时的撤消操作。 在实现的大多数编辑器[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可以撤消支持自动提供的集成的开发环境 (IDE)。  

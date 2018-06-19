@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562177"
 ---
 # <a name="localizing-clickonce-applications"></a>本地化 ClickOnce 应用程序
 本地化是使你的应用程序适用于特定区域性的过程。 此过程涉及使用正确的日期和货币格式、调整窗体上控件的大小以及根据需要从右到左镜像处理控件，从而将用户界面 (UI) 文本转换为特定于区域的语言。  

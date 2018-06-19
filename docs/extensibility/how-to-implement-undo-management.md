@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130751"
 ---
 # <a name="how-to-implement-undo-management"></a>如何： 实现撤消管理
 用于撤消管理的主要接口为<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>，由环境实现。 若要支持撤消管理，请实现单独撤消单元 (即， <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>，其中可以包含多个单独的步骤。  

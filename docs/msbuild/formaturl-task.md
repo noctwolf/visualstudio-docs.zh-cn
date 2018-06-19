@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576334"
 ---
 # <a name="formaturl-task"></a>FormatUrl 任务
 将 URL 转换为正确的 URL 格式。  

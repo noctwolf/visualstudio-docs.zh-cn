@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131322"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>在旧语言服务中的语句结束
 语句结束是依据语言服务可帮助用户完成语言关键字或它们已启动在核心编辑器中键入的元素的过程。 本主题讨论语句完成的工作原理以及如何在你的语言服务中实现它。  

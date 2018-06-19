@@ -40,6 +40,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448709"
 ---
 # <a name="events-in-office-projects"></a>Office 项目中的事件
   每个 Office 项目模板都会自动生成若干事件处理程序。 文档级自定义项的事件处理程序与 VSTO 外接程序的事件处理程序略有不同。  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471627"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>错误：无法访问 SQL Server 调试界面
 当在未启用 SQL 调试的计算机上尝试 SQL 调试时，此消息会出现。  

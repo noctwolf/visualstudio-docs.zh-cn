@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482004"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>演练：因顶点着色而缺少对象
 本演练演示了如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具调查因顶点着色器阶段出现的错误而缺少的对象。  

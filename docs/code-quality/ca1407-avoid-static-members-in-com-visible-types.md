@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31901586"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407：避免在 COM 可见类型中使用静态成员
 |||

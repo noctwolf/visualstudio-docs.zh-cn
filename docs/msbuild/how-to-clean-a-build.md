@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578215"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清理生成
 清理生成时，将删除所有中间文件和输出文件，仅保留项目和组件文件。 然后，可以根据项目和组件文件生成中间文件和输出文件的新实例。 随 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供的常规任务库中包括一个 [Exec](../msbuild/exec-task.md) 任务，可以使用该任务运行系统命令。 有关任务库的详细信息，请参阅[任务参考](../msbuild/msbuild-task-reference.md)。  

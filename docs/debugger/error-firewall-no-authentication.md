@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481455"
 ---
 # <a name="error-firewall-no-authentication"></a>错误：防火墙无身份验证
 远程计算机上的 Internet 连接防火墙未设置为允许远程调试。 为了使用 `No Authentication` 进行远程调试，必须将 msvsmon.exe 添加到例外列表。 可能还需要打开某些 IPSEC 端口。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468943"
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
 此函数将检索一个标志，指示该函数是否已标记为内联 (使用之一[inline、 __inline、 \__forceinline](/cpp/cpp/inline-functions-cpp)属性)。  

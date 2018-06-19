@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138260"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函数
 此函数将调用源代码管理管理工具。  
@@ -66,7 +67,7 @@ SCCRTN SccRunScc(
   
  使用计数和当前所选文件的文件名的数组调用此函数。 如果管理工具支持它，可以使用的文件列表预先选择管理界面中; 中的文件否则，可以忽略列表。  
   
- 当用户选择通常调用此函数**启动\<源代码管理服务器 >**从**文件** -> **源代码管理**菜单。 这**启动**菜单选项可始终处于禁用状态或甚至隐藏通过设置注册表项。 请参阅[如何： 安装源代码管理插件](../extensibility/internals/how-to-install-a-source-control-plug-in.md)有关详细信息。 仅当调用此函数[SccInitialize](../extensibility/sccinitialize-function.md)返回`SCC_CAP_RUNSCC`功能位 (请参阅[功能标志](../extensibility/capability-flags.md)有关此选项及其他功能位的详细信息)。  
+ 当用户选择通常调用此函数**启动\<源代码管理服务器 >** 从**文件** -> **源代码管理**菜单。 这**启动**菜单选项可始终处于禁用状态或甚至隐藏通过设置注册表项。 请参阅[如何： 安装源代码管理插件](../extensibility/internals/how-to-install-a-source-control-plug-in.md)有关详细信息。 仅当调用此函数[SccInitialize](../extensibility/sccinitialize-function.md)返回`SCC_CAP_RUNSCC`功能位 (请参阅[功能标志](../extensibility/capability-flags.md)有关此选项及其他功能位的详细信息)。  
   
 ## <a name="see-also"></a>另请参阅  
  [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   

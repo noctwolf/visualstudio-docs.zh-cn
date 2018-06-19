@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464818"
 ---
 # <a name="idiasymbolgethfadouble"></a>IDiaSymbol::get_hfaDouble
 检索指定的用户定义的类型 (UDT) 是否包含同类浮点聚合 (HFA) 数据的双精度类型的标志。  

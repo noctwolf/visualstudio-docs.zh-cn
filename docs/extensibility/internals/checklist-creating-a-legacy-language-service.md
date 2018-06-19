@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133204"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>清单： 创建旧语言服务
 以下清单汇总了你必须接受以创建语言服务有关的基本步骤[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]核心编辑器。 若要将集成到你语言服务[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，必须创建调试表达式计算器。 有关详细信息，请参阅[编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)中[Visual Studio 调试器扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)。  

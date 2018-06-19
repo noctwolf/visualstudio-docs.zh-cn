@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476762"
 ---
 # <a name="debug-at-design-time-in-visual-studio"></a>在 Visual Studio 中的设计时调试
 
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/18/2018
 
 1. 打开*temp.xaml*，这会将加载设计器 (*UwpSurface.exe*在 UWP 应用中，或*XDesProc.exe*) 以便你可以将附加到它在后来的步骤。 
 
-1. 打开 Visual Studio 的新实例。 在新的实例中，打开**附加到进程**对话框 (**调试** > **附加到进程**)，请设置**将附加到**字段到正确的代码类型，如**托管代码 (CoreCLR)**或基于你的.NET 版本的正确的代码类型。 从列表中选择正确的设计器进程，然后选择**附加**。
+1. 打开 Visual Studio 的新实例。 在新的实例中，打开**附加到进程**对话框 (**调试** > **附加到进程**)，请设置**将附加到**字段到正确的代码类型，如**托管代码 (CoreCLR)** 或基于你的.NET 版本的正确的代码类型。 从列表中选择正确的设计器进程，然后选择**附加**。
 
     适用于 UWP 面向的项目生成 16299 或更高版本，设计器的进程是*UwpSurface.exe*。 对于 WPF 或 UWP 的版本低于 16299，设计器的进程是*XDesProc.exe*。
 

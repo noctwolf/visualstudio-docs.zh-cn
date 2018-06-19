@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476668"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>如何：指定用于调试的 .NET Framework 版本
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 调试器支持调试 Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的早期版本和当前版本。 如果从 Visual Studio 中启动应用程序，调试器始终可以标识的正确版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]正在调试的应用程序。 如果已在运行应用程序并使用**将附加到**，调试器可能始终无法识别的较旧版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 如果发生这种情况，您将收到一条错误消息，指出：  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475098"
 ---
 # <a name="spy-views"></a>Spy++ 视图
 Spy + + 的 windows、 消息、 进程和线程可用的树视图显示您的计算机上。  

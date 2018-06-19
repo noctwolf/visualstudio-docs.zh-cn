@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131958"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>旧语言服务中的括号匹配
 大括号匹配可帮助开发人员跟踪发生在一起，例如圆括号和大括号所需要的语言元素。 当开发人员进入右大括号时，突出显示左大括号。  

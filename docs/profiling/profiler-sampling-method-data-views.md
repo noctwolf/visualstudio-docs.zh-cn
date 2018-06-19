@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265039"
 ---
 # <a name="profiler-sampling-method-data-views"></a>探查器采样方法数据视图
 本节包含有关使用采样方法生成的探查器数据文件的视图和报告的参考信息。  

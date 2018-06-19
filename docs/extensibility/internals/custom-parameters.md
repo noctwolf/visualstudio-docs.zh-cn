@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134325"
 ---
 # <a name="custom-parameters"></a>自定义参数
 启动向导后，自定义参数控制的操作的向导。 相关的.vsz 文件提供了通过集成的开发环境 (IDE) 打包和启动向导时作为数组的字符串传递到向导的用户定义参数的数组。 然后，该向导分析字符串的数组，并使用的信息来控制的实际操作的向导。 这种方式，具体取决于.vsz 文件的内容的功能可以自定义向导。  

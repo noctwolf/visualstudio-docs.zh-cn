@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128906"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>开始使用源控件插件
 若要创建源代码管理插件，必须创建一个 DLL，它实现在源控件插件 API 中，定义的函数，然后注册与 DLL[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以使其在源代码版本控制中可供使用。  

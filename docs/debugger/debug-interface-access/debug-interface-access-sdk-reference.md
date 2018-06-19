@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468694"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>调试接口访问 SDK 参考
 对所有的接口并支持枚举和结构 DIA SDK 中的完整引用。  

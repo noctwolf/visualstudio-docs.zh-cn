@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563669"
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：创建程序包清单
 若要部署你的应用程序的先决条件，你可以使用引导程序包。 引导程序包包含一个单个产品清单文件，但是包清单的每个区域设置。 产品清单都应共享的功能分布在不同的本地化版本。  

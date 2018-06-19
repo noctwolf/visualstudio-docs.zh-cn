@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573560"
 ---
 # <a name="item-metadata-in-task-batching"></a>任务批处理中的项元数据
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够基于项元数据将项列表划分为不同类别或批，并对每个批一次运行一个任务。 要准确了解哪个批中正在传递什么项可能比较困难。 本主题介绍了以下涉及批处理的常见方案。  

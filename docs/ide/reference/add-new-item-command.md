@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705042"
 ---
 # <a name="add-new-item-command"></a>“添加新项”命令
 将新的解决方案项，如.htm、.css、.txt 或框架集添加到当前解决方案中并打开它。

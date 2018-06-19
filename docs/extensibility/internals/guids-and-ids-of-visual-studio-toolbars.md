@@ -24,6 +24,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133975"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Guid 和 Id 的 Visual Studio 工具栏
 本主题枚举包含在 Visual Studio 集成的开发环境 (IDE) 中，工具栏的 GUID 和 ID 值，并它们所包含的组。 在 Visual Studio SDK 的一部分安装的.vsct 文件中定义这些值。 有关详细信息，请参阅[IDE-Defined 命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  

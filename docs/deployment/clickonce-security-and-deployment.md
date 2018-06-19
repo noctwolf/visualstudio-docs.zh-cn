@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562827"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全和部署
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行最少的用户交互。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 用于发布和更新如果您已开发您的项目与 Visual Basic 和 Visual C# 使用 ClickOnce 技术部署的应用程序提供完全支持。 有关部署 Visual c + + 应用程序的信息，请参阅[Visual c + + 应用程序的 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。  

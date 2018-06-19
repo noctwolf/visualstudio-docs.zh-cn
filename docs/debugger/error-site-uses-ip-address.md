@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470899"
 ---
 # <a name="error-site-uses-ip-address"></a>错误：站点使用 IP 地址
 调试器尝试自动附加到正在使用 IP 地址的 Web 应用程序时，会发生该错误。 发生这种情况是如果你更改**网站标识**到**使用特定 IP 地址**在 IIS 中。  

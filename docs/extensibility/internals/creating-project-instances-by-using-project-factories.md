@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131737"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>使用项目工厂创建项目实例
 中的项目类型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*项目工厂*创建的项目对象实例。 项目工厂是类似于 cocreatable COM 对象的标准类工厂。 但是，项目对象不是 cocreatable： 仅可以通过使用项目工厂创建它们。  

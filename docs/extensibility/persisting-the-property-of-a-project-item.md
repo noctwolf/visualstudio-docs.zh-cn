@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138049"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>保留的项目项的属性
 你可能想要保留添加到项目项，如源文件的作者的属性。 可以通过将属性存储在项目文件来执行此操作。

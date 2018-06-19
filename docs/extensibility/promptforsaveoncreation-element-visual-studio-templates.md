@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137542"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 元素（Visual Studio 模板）
 指定是否提示用户输入保存位置通过项目**新项目**对话框中创建项目时。 如果此元素设置为`true`，然后会提示用户输入保存位置; 如果`false`，然后将不再提示他们。 （即，创建一个临时项目。）  

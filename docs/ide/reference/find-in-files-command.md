@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705016"
 ---
 # <a name="find-in-files-command"></a>“在文件中查找”命令
 若要搜索文件，请使用“查找和替换”窗口的“在文件中查找”选项卡上的可用选项子集。

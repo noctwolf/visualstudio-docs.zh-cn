@@ -10,6 +10,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33870641"
 ---
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Visual Studio for Mac 相较于 Xamarin Studio 的优势 
  

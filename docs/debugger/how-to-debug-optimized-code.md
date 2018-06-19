@@ -28,15 +28,16 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478075"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：调试优化的代码
 > [!NOTE]
 >  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
 > [!NOTE]
->  [/Zo （增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging)编译器选项 （在 Visual Studio Update 3 中引入） 将生成为优化代码更丰富的调试信息 (未使用生成的项目**/Od**编译器选项。 请参阅[/O 选项 （优化代码）](/cpp/build/reference/o-options-optimize-code))。 这包括对调试本地变量和内联函数的改进的支持。  
+>  [/Zo （增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging)编译器选项 （在 Visual Studio Update 3 中引入） 将生成为优化代码更丰富的调试信息 (未使用生成的项目 **/Od**编译器选项。 请参阅[/O 选项 （优化代码）](/cpp/build/reference/o-options-optimize-code))。 这包括对调试本地变量和内联函数的改进的支持。  
 >   
->  [编辑并继续](../debugger/edit-and-continue-visual-csharp.md)时禁用**/Zo**使用 ocompiler 选项。  
+>  [编辑并继续](../debugger/edit-and-continue-visual-csharp.md)时禁用 **/Zo**使用 ocompiler 选项。  
   
  当编译器优化代码时，它将重新定位并重组指令， 这会得到更高效的编译的代码。 由于这种调整，调试器并不总能确定与一组指令对应的源代码。  
   
@@ -66,9 +67,9 @@ ms.lasthandoff: 04/18/2018
   
 4.  在**属性页**对话框框中，请确保`Debug`中选择**配置**下拉列表。  
   
-5.  在左侧的文件夹视图中，选择**C/c + +**文件夹。  
+5.  在左侧的文件夹视图中，选择**C/c + +** 文件夹。  
   
-6.  下**c + +**文件夹，选择`Optimization`。  
+6.  下**c + +** 文件夹，选择`Optimization`。  
   
 7.  在右边的属性列表中找到“`Optimization`”。 它旁边的设置可能显示`Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`。 选择其他选项之一 (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`，或`Custom`)。  
   

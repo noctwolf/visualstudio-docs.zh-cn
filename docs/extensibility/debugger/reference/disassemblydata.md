@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "31619697"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 描述一个反汇编指令集成的开发环境 (IDE) 以显示。  

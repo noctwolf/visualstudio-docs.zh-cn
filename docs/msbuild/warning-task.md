@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568431"
 ---
 # <a name="warning-task"></a>Warning 任务
 基于评估的条件语句，在生成期间记录警告。  

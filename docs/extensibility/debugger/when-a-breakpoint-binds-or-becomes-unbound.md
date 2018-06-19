@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134403"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>当断点绑定，或将成为绑定
 当无法将断点绑定到进行调用时[IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)方法时，绑定时间和创建的断点的时间不同。  

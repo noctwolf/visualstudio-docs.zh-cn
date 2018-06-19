@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138101"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>注册为文件扩展名的谓词
 与应用程序的文件扩展名关联通常具有首选的操作，当用户双击文件时发生。 这首选的操作链接到的谓词，例如打开，对应于操作。  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133781"
 ---
 # <a name="image-library-viewer"></a>图像库查看器
 Visual Studio 图像库查看器工具可以加载和搜索图像的清单，这样就允许用户与 Visual Studio 将相同的方式对其进行处理。 用户可以更改背景、 大小、 DPI、 高对比度和其他设置。 该工具还显示每个图像清单加载信息，并显示图像清单中的每个图像的源信息。 此工具可用于：  

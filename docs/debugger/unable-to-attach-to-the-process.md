@@ -21,13 +21,14 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476710"
 ---
 # <a name="unable-to-attach-to-the-process"></a>无法附加到进程
 无法附加到进程。 在连接到此计算机期间服务器上的调试器组件接收了被拒绝的访问。  
   
  导致此错误的常见方案有两个：  
   
- **方案 1:**计算机 A 运行 Windows XP。 计算机 B 正在运行 Windows Server 2003。 计算机 B 上的注册表包含以下 DWORD 值：  
+ **方案 1:** 计算机 A 运行 Windows XP。 计算机 B 正在运行 Windows Server 2003。 计算机 B 上的注册表包含以下 DWORD 值：  
   
  `HKLM\Software\Microsoft\MachineDebugManager\AllowLaunchAsOtherUser=1`  
   
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/18/2018
   
  是两台计算机上的管理员，2，用户登录到计算机 a。在这里，他或她尝试附加到在机 B.上会话 1 中运行的应用程序  
   
- **方案 2:**一个用户登录到两个计算机 A 和 B，位于同一工作组中，两台计算机上使用相同的密码。 调试器正在计算机 A 上运行并且尝试附加到在计算机 b。 计算机 A 上运行的托管应用程序有**网络访问： 本地帐户的共享和安全模型**设置为**来宾**。  
+ **方案 2:** 一个用户登录到两个计算机 A 和 B，位于同一工作组中，两台计算机上使用相同的密码。 调试器正在计算机 A 上运行并且尝试附加到在计算机 b。 计算机 A 上运行的托管应用程序有**网络访问： 本地帐户的共享和安全模型**设置为**来宾**。  
   
 ### <a name="to-solve-scenario-1"></a>解决方案 1  
   

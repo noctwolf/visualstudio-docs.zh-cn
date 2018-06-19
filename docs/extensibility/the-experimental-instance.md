@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138920"
 ---
 # <a name="the-experimental-instance"></a>实验实例
 为了防止未经测试的应用程序可能会更改它从 Visual Studio 开发环境，VSSDK 提供可用于试验的实验空间。 像往常一样，使用 Visual Studio 开发新应用程序，但你通过使用此实验实例运行它们。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/16/2018
   
  如果你想要启动特定的解决方案之外的 Visual Studio 实验实例，请在命令窗口运行以下命令：  
   
- "*\<Visual studio 安装路径 >*\Common7\IDE\devenv.exe"RootSuffix Exp  
+ "*\<Visual studio 安装路径 >* \Common7\IDE\devenv.exe"RootSuffix Exp  
   
 > [!NOTE]
 >  实验实例写入到下面的注册表`<version number>Exp`和`<version number>Exp_Config`节点。 例如 Visual Studio 2015 实验性注册表区域是  

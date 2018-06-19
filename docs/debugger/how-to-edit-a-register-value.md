@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474998"
 ---
 # <a name="how-to-edit-a-register-value"></a>如何：编辑寄存器值
 寄存器窗口是中启用了地址级调试的情况下，才可用**选项**对话框中，**调试**节点。  

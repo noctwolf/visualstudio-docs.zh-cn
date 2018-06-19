@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133257"
 ---
 # <a name="property-pages"></a>属性页
 用户可以查看和更改项目依赖于配置和-独立属性使用属性页。 A**属性页**在中启用按钮**属性**窗口或对象，它提供所选对象的属性页面视图的解决方案资源管理器工具栏上。 属性页由环境，可用于解决方案和项目。 它们，但是，也可以是可进行的项目项使用的配置相关的属性。 在项目中的文件需要不同的编译器生成正确的交换机设置时，可能会使用此功能。  

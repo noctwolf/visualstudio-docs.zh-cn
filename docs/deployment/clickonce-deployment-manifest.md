@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560318"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署清单
 部署清单是一个 XML 文件，用于描述 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，包括要部署的当前 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序版本的标识。  

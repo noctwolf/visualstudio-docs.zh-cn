@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578713"
 ---
 # <a name="assignculture-task"></a>AssignCulture 任务
 此任务接受文件名中可能包含有效 .NET 区域性标识符字符串的项的列表，并且生成包含相应的区域性标识符且名为 `Culture` 的元数据的项。 例如，文件名 Form1.fr-fr.resx 具有嵌入的区域性标识符“fr-fr”，因此该任务会生成具有相同文件名的项，其中元数据 `Culture` 为 `fr-fr`。 该任务还会生成文件名中删除了区域性的文件名列表。  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927541"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 Microsoft 源代码注释语言 (SAL) 提供一组你可以使用来描述函数如何使用其参数、 有关，它使的假设和它使它完成时的保证的批注。 标头文件中定义批注`<sal.h>`。 C + + 的 visual Studio 代码分析使用 SAL 批注来修改其分析的函数。 适用于 Windows 驱动程序开发 SAL 2.0 的详细信息，请参阅[SAL 2.0 批注的 Windows 驱动程序](http://go.microsoft.com/fwlink/?LinkId=250979)。
@@ -40,7 +41,7 @@ void * memcpy(
  知道此函数的？ 当实现或调用一个函数时，某些属性必须得到维护，以确保程序正确性。 只需通过查看如示例中的声明时，你不知道这些凭据。 如果没有 SAL 批注，您将必须依赖于文档或代码注释。 下面是有关的 MSDN 文档`memcpy`显示：
 
 > "副本计算 src 到目标的字节的数。 如果源和目标重叠，memcpy 的行为不确定。 Memmove 用于处理重叠区域。
-> **安全说明：**大小等于或大于源缓冲区请确保目标缓冲区是否相同。 有关详细信息，请参阅避免缓冲区溢出。"
+> **安全说明：** 大小等于或大于源缓冲区请确保目标缓冲区是否相同。 有关详细信息，请参阅避免缓冲区溢出。"
 
  该文档包含几个建议，你的代码必须维护某些属性，以确保程序正确性的位的信息：
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478998"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 独立收集器
 **IntelliTrace 独立收集器** 可让你收集生产服务器或其他环境中应用的 IntelliTrace 诊断数据，而无需在目标计算机上安装 Visual Studio 或更改目标系统环境。 IntelliTrace 独立收集器可用于 Web、SharePoint、WPF 和 Windows 窗体应用中。 数据收集完毕后，只需删除收集器以进行卸载。  
@@ -224,8 +225,8 @@ ms.lasthandoff: 04/18/2018
     |||  
     |-|-|  
     |*应用程序池*|应用程序运行的应用程序池名|  
-    |*收集计划路径*|收集计划路径，配置收集器设置的 .xml 文件。<br /><br /> 你可指定收集器附带的一个计划。 以下计划适合 Web 应用和 SharePoint 应用程序：<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     仅收集 IntelliTrace 事件和 SharePoint 事件，包括异常、数据库调用及 Web 服务器请求。<br />-   collection_plan.ASP.NET.trace.xml<br />     收集 collection_plan.ASP.NET.default.xml 中的函数调用及所有数据。 该计划非常适合进行详细分析，但其可能导致你的应用速度比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 为避免应用速度变慢，自定义这些计划或创建自己的计划。 为安全起见，将所有自定义计划放在收集器文件所在的同一安全位置。 请参阅 [创建并自定义 IntelliTrace 收集计划](http://go.microsoft.com/fwlink/?LinkId=227871) 和 [如何在应用速度不减的前提下获取最多的数据？](#Minimizing) **注意：**默认情况下，.iTrace 文件的最大大小为 100 MB。 当.iTrace 文件达到此限制时，收集器会删除文件的最早的条目，以便为较新的项让出空间。 若要更改此上限，编辑收集计划的`MaximumLogFileSize`属性。 <br /><br /> *从何处可找到这些收集计划的本地版本？*<br /><br /> 可在收集器子文件夹中找到本地计划。|  
-    |*跟踪文件目录的完整路径*|跟踪 .iTrace 文件目录的完整路径。 **安全说明：**提供完整路径，而不是相对路径。|  
+    |*收集计划路径*|收集计划路径，配置收集器设置的 .xml 文件。<br /><br /> 你可指定收集器附带的一个计划。 以下计划适合 Web 应用和 SharePoint 应用程序：<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     仅收集 IntelliTrace 事件和 SharePoint 事件，包括异常、数据库调用及 Web 服务器请求。<br />-   collection_plan.ASP.NET.trace.xml<br />     收集 collection_plan.ASP.NET.default.xml 中的函数调用及所有数据。 该计划非常适合进行详细分析，但其可能导致你的应用速度比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 为避免应用速度变慢，自定义这些计划或创建自己的计划。 为安全起见，将所有自定义计划放在收集器文件所在的同一安全位置。 请参阅 [创建并自定义 IntelliTrace 收集计划](http://go.microsoft.com/fwlink/?LinkId=227871) 和 [如何在应用速度不减的前提下获取最多的数据？](#Minimizing) **注意：** 默认情况下，.iTrace 文件的最大大小为 100 MB。 当.iTrace 文件达到此限制时，收集器会删除文件的最早的条目，以便为较新的项让出空间。 若要更改此上限，编辑收集计划的`MaximumLogFileSize`属性。 <br /><br /> *从何处可找到这些收集计划的本地版本？*<br /><br /> 可在收集器子文件夹中找到本地计划。|  
+    |*跟踪文件目录的完整路径*|跟踪 .iTrace 文件目录的完整路径。 **安全说明：** 提供完整路径，而不是相对路径。|  
   
      收集器连接到应用程序池并开始收集数据。  
   
@@ -263,8 +264,8 @@ ms.lasthandoff: 04/18/2018
     |||  
     |-|-|  
     |*IntelliTrace 收集器可执行文件完整路径*|收集器可执行文件的完整路径，IntelliTraceSC.exe|  
-    |*收集计划路径*|收集计划路径，配置收集器设置的 .xml 文件。<br /><br /> 你可指定收集器附带的一个计划。 以下计划适合托管应用：<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     仅收集 IntelliTrace 事件，包括异常、数据库调用及 Web 服务器请求。<br />-   collection_plan.ASP.NET.trace.xml<br />     收集 collection_plan.ASP.NET.default.xml 中的函数调用及所有数据。 该计划非常适合进行详细分析，但其可能导致你的应用速度比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 为避免应用速度变慢，自定义这些计划或创建自己的计划。 为安全起见，将所有自定义计划放在收集器文件所在的同一安全位置。 请参阅 [创建并自定义 IntelliTrace 收集计划](http://go.microsoft.com/fwlink/?LinkId=227871) 和 [如何在应用速度不减的前提下获取最多的数据？](#Minimizing) **注意：**默认情况下，.iTrace 文件的最大大小为 100 MB。 当.iTrace 文件达到此限制时，收集器会删除文件的最早的条目，以便为较新的项让出空间。 若要更改此上限，编辑收集计划的`MaximumLogFileSize`属性。 <br /><br /> *从何处可找到这些收集计划的本地版本？*<br /><br /> 可在收集器子文件夹中找到本地计划。|  
-    |*.iTrace文件目录及文件名完整路径*|.iTrace 文件目录及包含 **.itrace** 扩展名的 .iTrace 文件名的完整路径。 **安全说明：**提供完整路径，而不是相对路径。|  
+    |*收集计划路径*|收集计划路径，配置收集器设置的 .xml 文件。<br /><br /> 你可指定收集器附带的一个计划。 以下计划适合托管应用：<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     仅收集 IntelliTrace 事件，包括异常、数据库调用及 Web 服务器请求。<br />-   collection_plan.ASP.NET.trace.xml<br />     收集 collection_plan.ASP.NET.default.xml 中的函数调用及所有数据。 该计划非常适合进行详细分析，但其可能导致你的应用速度比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 为避免应用速度变慢，自定义这些计划或创建自己的计划。 为安全起见，将所有自定义计划放在收集器文件所在的同一安全位置。 请参阅 [创建并自定义 IntelliTrace 收集计划](http://go.microsoft.com/fwlink/?LinkId=227871) 和 [如何在应用速度不减的前提下获取最多的数据？](#Minimizing) **注意：** 默认情况下，.iTrace 文件的最大大小为 100 MB。 当.iTrace 文件达到此限制时，收集器会删除文件的最早的条目，以便为较新的项让出空间。 若要更改此上限，编辑收集计划的`MaximumLogFileSize`属性。 <br /><br /> *从何处可找到这些收集计划的本地版本？*<br /><br /> 可在收集器子文件夹中找到本地计划。|  
+    |*.iTrace文件目录及文件名完整路径*|.iTrace 文件目录及包含 **.itrace** 扩展名的 .iTrace 文件名的完整路径。 **安全说明：** 提供完整路径，而不是相对路径。|  
     |*应用可执行文件及文件名路径*|托管应用的路径及文件名|  
   
 2.  通过退出应用来停止数据收集。  

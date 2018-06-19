@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132569"
 ---
 # <a name="extending-the-editor-and-language-services"></a>扩展编辑器和语言服务
 你可以将语言服务功能 （例如 IntelliSense) 添加到您自己的编辑器，并扩展 Visual Studio 代码编辑器中的大多数功能。  你可以扩展的完整列表，请参阅[语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)。  

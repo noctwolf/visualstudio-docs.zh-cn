@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138283"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>打开动态工具窗口
 从菜单中或等效的键盘快捷方式上的命令通常打开工具窗口。 有时，但是，你可能需要打开每当特定的 UI 上下文适用，并且 UI 上下文不再适用时，将关闭的工具窗口。 工具窗口的这些类型称为*动态*或*自动可见*。  

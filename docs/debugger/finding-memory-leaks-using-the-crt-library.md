@@ -36,6 +36,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477857"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 库查找内存泄漏
 内存泄漏，即未能正确释放以前分配的内存，是 C/C++ 应用程序中最难以捉摸也最难以检测到的 Bug 之一。 最初少量内存泄漏可能不引人注目，但随着时间的推移，内存泄漏越来越多，就会出现一些征兆，包括性能下降，在应用程序内存不足时发生崩溃。 更严重的是，占用了所有可用内存的泄漏应用程序可能会导致其他应用程序崩溃，从而无法确定问题出在哪个应用程序。 即使看似无害的内存泄漏也可能说明存在其他问题应当纠正。  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139755"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>在 VSIX v3 Ngen 支持
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
 </ProjectReference>
  ```
 
- >**注意：**如果你愿意，你可以直接编辑.csproj 文件。
+ >**注意：** 如果你愿意，你可以直接编辑.csproj 文件。
 
 ## <a name="extra-information"></a>额外的信息
 

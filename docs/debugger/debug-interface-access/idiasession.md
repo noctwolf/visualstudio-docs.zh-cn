@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468328"
 ---
 # <a name="idiasession"></a>IDiaSession
 为调试符号提供查询上下文。  
@@ -35,7 +36,7 @@ IDiaSession : IUnknown
 |方法|描述|  
 |------------|-----------------|  
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|检索对应于此符号存储区中的符号的可执行文件的负载地址。 这是相同的值传递到`put_loadAddress`方法。|  
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|在此符号存储区中将对应的可执行文件的负载地址设置为符号。 **注意：**很重要时，可以调用此方法`IDiaSession`对象，并开始使用该对象之前。|  
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|在此符号存储区中将对应的可执行文件的负载地址设置为符号。 **注意：** 很重要时，可以调用此方法`IDiaSession`对象，并开始使用该对象之前。|  
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|检索到全局作用域的引用。|  
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|检索包含在符号存储区中的所有表的枚举数。|  
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|检索所有命名符号静态位置的枚举数。|  
