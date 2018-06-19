@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921781"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>如何：扩展 O/R 设计器生成的代码
 在更改设计器图面上的实体类和其他对象时，将重新生成由 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]生成的代码。 当设计器重新生成代码时，您添加到生成的代码中的任何代码一般都会被重新声称的代码覆盖。 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]提供了一种生成分部类文件的功能，您可以将代码添加到分部类文件中而不会被覆盖。 将您自己的代码添加到 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]生成的代码中的一个示例是在 LINQ to SQL（实体）类中添加数据验证。 有关信息，请参阅[如何： 向实体类添加验证](../data-tools/how-to-add-validation-to-entity-classes.md)。

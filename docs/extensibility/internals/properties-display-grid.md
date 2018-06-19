@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134059"
 ---
 # <a name="properties-display-grid"></a>显示属性网格
 **属性**窗口显示在网格中的字段。 左侧的列包含的属性名称;右侧列包含的属性值。  

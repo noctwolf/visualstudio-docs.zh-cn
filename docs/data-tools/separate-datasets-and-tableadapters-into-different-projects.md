@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921440"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>单独的数据集和 tableadapter 分离到不同的项目
 类型化数据集已得到增强，以便[Tableadapter](create-and-configure-tableadapters.md)和数据集类可以生成到单独的项目。 这使你可以快速分离各应用程序层及生成 n 层数据应用程序。

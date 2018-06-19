@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132243"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>用于管理部署的项目配置
 部署是以物理方式将从生成过程的输出项移动到预期位置用于调试和安装的行为。 例如，Web 应用程序可能会在本地计算机上生成并将其放在服务器上。  

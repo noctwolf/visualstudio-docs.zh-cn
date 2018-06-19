@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130240"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何： 支持旧语言服务中的大纲显示
 以大纲方式显示用于展开或折叠的文本的不同区域。 方式大纲显示使用不同的语言可以以不同方式定义。 有关详细信息，请参阅[大纲显示](../../ide/outlining.md)。  

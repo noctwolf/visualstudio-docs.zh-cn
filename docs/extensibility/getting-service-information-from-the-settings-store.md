@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127498"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>从设置存储中获取服务信息
 若要查找所有可用服务，或者想要确定是否安装了特定服务，你可以使用设置存储。 你必须知道服务类的类型。  
@@ -82,4 +83,4 @@ ms.lasthandoff: 04/16/2018
   
 3.  在实验实例中，在**工具**菜单上，单击**调用 FindServicesCommand**。  
   
-     你应看到与文本消息**帮助服务可用：**跟**True**或**False**。 若要验证此设置，可以使用注册表编辑器，如前面的步骤中所示。
+     你应看到与文本消息**帮助服务可用：** 跟**True**或**False**。 若要验证此设置，可以使用注册表编辑器，如前面的步骤中所示。

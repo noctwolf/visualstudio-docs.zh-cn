@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920623"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226：运算符应有对称重载
 |||

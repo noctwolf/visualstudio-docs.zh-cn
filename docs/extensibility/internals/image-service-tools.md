@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128749"
 ---
 # <a name="image-service-tools"></a>映像服务工具
 VS SDK 包含多种工具，帮助扩展生成器使用 Visual Studio 映像服务。  

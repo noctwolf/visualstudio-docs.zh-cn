@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921018"
 ---
 # <a name="code-analysis-application-errors"></a>代码分析应用程序错误
 本节是由托管的代码分析工具生成的错误消息的引用。 若要获取特定的错误消息的帮助，请键入错误号**查找**框中的索引。

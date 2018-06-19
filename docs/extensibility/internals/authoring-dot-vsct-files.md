@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134768"
 ---
 # <a name="authoring-vsct-files"></a>创作。Vsct 文件
 本文档演示如何创作要将菜单项、 工具栏和其他用户界面 (UI) 元素添加到 Visual Studio 集成的开发环境 (IDE) 的.vsct 文件。 UI 元素添加到不具备.vsct 文件 Visual Studio 包 (VSPackage) 时，请使用以下步骤。  

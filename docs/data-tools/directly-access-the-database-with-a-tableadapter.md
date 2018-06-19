@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921057"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>直接访问使用 TableAdapter 数据库
 除了`InsertCommand`， `UpdateCommand`，和`DeleteCommand`，Tableadapter 创建的可以直接对数据库运行的方法。 这些方法 (`TableAdapter.Insert`， `TableAdapter.Update`，和`TableAdapter.Delete`) 可以调用以进行操作直接在数据库中的数据。

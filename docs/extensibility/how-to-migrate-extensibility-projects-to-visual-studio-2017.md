@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133522"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何： 将扩展性项目迁移到 Visual Studio 2017
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>更新 Microsoft.VSSDK.BuildTools NuGet 包
 
->**注意：**如果你的解决方案不引用 Microsoft.VSSDK.BuildTools NuGet 包，则可以跳过此步骤。
+>**注意：** 如果你的解决方案不引用 Microsoft.VSSDK.BuildTools NuGet 包，则可以跳过此步骤。
 
 若要生成你的扩展中新的 VSIX v3 （版本 3） 格式，你的解决方案将需要使用新的 VSSDK 生成工具生成。 此功能将安装与 Visual Studio 2017 年，但你的 VSIX v2 扩展可能保持通过 NuGet 较旧版本的引用。 如果是这样，你将需要手动安装你的解决方案的 Microsoft.VSSDK.BuildTools NuGet 包的更新。
 
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/16/2018
 
 若要确保用户的安装的 Visual Studio 具有运行扩展所需的所有程序集，指定扩展清单文件中的所有系统必备组件或包。 当用户尝试安装该扩展时，VSIXInstaller 将检查是否安装了所有系统必备组件。 如果丢失了一些，则将提示用户以扩展安装过程的一部分安装缺少的组件。
 
->**注意：**在最低限度上，所有扩展应都指定 Visual Studio 核心编辑器组件作为系统必备组件。
+>**注意：** 在最低限度上，所有扩展应都指定 Visual Studio 核心编辑器组件作为系统必备组件。
 
 * 编辑扩展清单文件 （通常称为 source.extension.vsixmanifest）。
 * 确保`InstallationTarget`包括 15.0。
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/16/2018
 
 而不是直接编辑的清单 XML，可以使用新**先决条件**将为你更新清单设计器选择必备组件和 XML 的选项卡。
 
->**注意：**清单设计器将只允许你选择当前的 Visual Studio 实例安装的组件 （不工作负荷或包）。 如果你需要添加对工作负荷、 包或当前未安装的组件的先决条件，请直接编辑 XML 清单。
+>**注意：** 清单设计器将只允许你选择当前的 Visual Studio 实例安装的组件 （不工作负荷或包）。 如果你需要添加对工作负荷、 包或当前未安装的组件的先决条件，请直接编辑 XML 清单。
 
 * 打开 source.extension.vsixmanifest [设计] 文件。
 * 选择**先决条件**选项卡并按**新建**按钮。
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="update-debug-settings-for-project"></a>更新项目的调试的设置
 
-如果你想要调试你的 Visual Studio 的实验实例中的扩展，请确保项目设置**调试** > **启动操作**具有**启动外部程序：**值设置为你的 Visual Studio 2017 安装的 devenv.exe 文件。
+如果你想要调试你的 Visual Studio 的实验实例中的扩展，请确保项目设置**调试** > **启动操作**具有**启动外部程序：** 值设置为你的 Visual Studio 2017 安装的 devenv.exe 文件。
 
 它可能如下所示：
 
@@ -114,7 +115,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 ![启动外部程序](media/start-external-program.png)
 
->**注意：**调试启动操作通常存储在。 csproj.user 文件。 此文件通常包含在.gitignore 文件，并因此，通常不会保存与其他项目文件时提交到源代码管理。 在这种情况下，仅当你具有请求你的解决方案从源代码管理全新很可能此项目将具有为启动操作设置任何值。 使用 Visual Studio 2017 创建的新 VSIX 项目将具有。 csproj.user 文件以指向当前的 Visual Studio 安装目录的默认设置创建。 但是如果你要迁移的 VSIX v2 扩展，则很可能的。 csproj.user 文件将包含以前的 Visual Studio 版本的安装目录的引用。 值设置**调试** > **启动操作**将允许正确的 Visual Studio 实验实例，以在你尝试调试你的扩展时启动。
+>**注意：** 调试启动操作通常存储在。 csproj.user 文件。 此文件通常包含在.gitignore 文件，并因此，通常不会保存与其他项目文件时提交到源代码管理。 在这种情况下，仅当你具有请求你的解决方案从源代码管理全新很可能此项目将具有为启动操作设置任何值。 使用 Visual Studio 2017 创建的新 VSIX 项目将具有。 csproj.user 文件以指向当前的 Visual Studio 安装目录的默认设置创建。 但是如果你要迁移的 VSIX v2 扩展，则很可能的。 csproj.user 文件将包含以前的 Visual Studio 版本的安装目录的引用。 值设置**调试** > **启动操作**将允许正确的 Visual Studio 实验实例，以在你尝试调试你的扩展时启动。
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>检查扩展生成正确 （作为 VSIX v3)
 
@@ -131,7 +132,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 VSIX 成功安装在计算机并且所有所需的系统必备组件安装的测试。
 
->**注意：**然后再安装任何扩展，请关闭 Visual Studio 的所有实例。
+>**注意：** 然后再安装任何扩展，请关闭 Visual Studio 的所有实例。
 
 尝试安装该扩展：
 
@@ -152,7 +153,7 @@ VSIX 成功安装在计算机并且所有所需的系统必备组件安装的测
 
 等待进程后，才可关闭，或手动结束任务。 你可以发现进程，按列出的名称，或使用括号中列出的 PID。
 
->**注意：**这些进程将不会自动关闭时 Visual Studio 的实例正在运行。 请确保已关闭上机-包括来自其他用户的 Visual Studio 的所有实例，然后继续重试。
+>**注意：** 这些进程将不会自动关闭时 Visual Studio 的实例正在运行。 请确保已关闭上机-包括来自其他用户的 Visual Studio 的所有实例，然后继续重试。
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>时缺少所需的先决条件检查
 

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920439"
 ---
 # <a name="portability-warnings"></a>可移植性警告
 可移植性警告支持跨不同操作系统的可移植性。

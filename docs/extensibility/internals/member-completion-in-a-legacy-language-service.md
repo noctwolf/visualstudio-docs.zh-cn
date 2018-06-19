@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134027"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>在旧语言服务的成员自动补全
 IntelliSense 成员完成为工具提示显示特定的作用域，如类、 结构、 枚举或命名空间的可能成员的列表。 例如，在 C# 中，如果用户键入"this"跟一个句点的类或结构在当前范围内的所有成员的列表显示，用户可以从中选择的列表中。  

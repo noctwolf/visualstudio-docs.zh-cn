@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943730"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>使用 Help Viewer 索引查找主题
 

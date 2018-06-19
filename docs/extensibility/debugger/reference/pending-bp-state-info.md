@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135736"
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 包含有关已准备好将绑定到的代码位置的断点的状态信息。  

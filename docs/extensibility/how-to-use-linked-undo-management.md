@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127632"
 ---
 # <a name="how-to-use-linked-undo-management"></a>如何： 使用链接的撤消管理
 链接的撤消后，用户可以同时撤消中多个文件相同的编辑。 例如，跨多个程序文件，如标头文件和 Visual c + + 文件，同时进行文本更改为链接的撤消事务。 链接的撤消功能内置于环境的撤消管理器中，实现和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager>可以处理此功能。 链接的撤消由实现可以将链接在一起，以被视为单个撤消单元的单独撤消堆栈父撤消单元。 使用链接的撤消过程将在下一节中详细介绍。  

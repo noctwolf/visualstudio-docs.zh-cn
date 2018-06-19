@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131119"
 ---
 # <a name="project-persistence"></a>项目持久性
 持久性是你的项目的关键设计注意事项。 大多数项目使用代表文件; 的项目项[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]还支持其数据是不基于文件的项目。 必须保留这两个拥有的项目和项目文件的文件。 IDE 指示要保存自身或项目项的项目。  

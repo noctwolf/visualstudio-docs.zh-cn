@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137877"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 元素（Visual Studio 模板）
 将项目模板的分类，以使其显示在指定的组下**新项目**或**添加新项**对话框。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="remarks"></a>备注  
  `ProjectType` 是 `TemplateData` 的必需子元素。  
   
- 值`ProjectType`元素指定在其中提供了该模板**新项目**或**添加新项**对话框。 例如，具有的模板`ProjectType`值`CSharp`下显示**Visual C#**中的节点**新项目**对话框。  
+ 值`ProjectType`元素指定在其中提供了该模板**新项目**或**添加新项**对话框。 例如，具有的模板`ProjectType`值`CSharp`下显示**Visual C#** 中的节点**新项目**对话框。  
   
  可以通过使用指定的模板子类型[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)元素。  
   

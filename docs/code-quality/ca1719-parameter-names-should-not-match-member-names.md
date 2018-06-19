@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915331"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719：参数名不应与成员名冲突
 |||

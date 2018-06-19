@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128160"
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>通过使用互操作程序集确定命令状态
 VSPackage 必须跟踪的它可以处理的命令的状态。 在你的 VSPackage 内处理的命令将成为启用或禁用时，无法确定环境。 它负责你的 VSPackage 以通知有关命令状态的环境，例如，常规的状态的命令如**剪切**，**复制**，和**粘贴**。  

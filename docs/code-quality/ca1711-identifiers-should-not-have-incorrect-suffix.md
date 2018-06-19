@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916932"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711：标识符应采用正确的后缀
 |||

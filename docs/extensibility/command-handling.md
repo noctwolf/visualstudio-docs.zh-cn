@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099953"
 ---
 # <a name="command-handling"></a>命令处理
 你的编辑器可以定义新的命令。 在菜单中，在工具栏上，或在上下文菜单中，通常会显示命令。  

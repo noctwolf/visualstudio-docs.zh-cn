@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917907"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121：静态构造函数应为私有
 |||

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922983"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio 中的实体框架工具
 实体框架是一种对象关系映射技术，使.NET 开发人员能够通过使用特定于域的对象处理关系数据。 它不要求提供开发人员通常需要编写的大部分数据访问代码。 实体框架成为建模为新的.NET 应用程序的技术建议的对象关系映射 (ORM)。

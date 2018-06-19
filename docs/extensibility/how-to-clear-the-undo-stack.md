@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126498"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>如何： 清除撤消堆栈
 下面的以下过程说明如何清除撤消堆栈。  

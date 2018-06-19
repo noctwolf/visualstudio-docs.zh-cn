@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128099"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>用于扩展调试器路线图
 本文档提供指南和参考信息，用于扩展[!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)]调试器与[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  

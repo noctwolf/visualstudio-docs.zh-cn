@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919672"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/C++ 代码分析警告
 本部分列出了除引发的 C/c + + 代码分析警告[c + + 核心准则检查器](code-analysis-for-cpp-corecheck.md)。 有关代码分析的信息，请参阅[/analyze （代码分析）](/cpp/build/reference/analyze-code-analysis)和[快速入门： C/c + + 代码分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)。

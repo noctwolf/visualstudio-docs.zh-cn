@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129545"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何： 关闭源控件插件的兼容性警告
 用户可能会看到几个兼容性警告时如何使用源代码管理中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 显示警告取决于的源代码管理插件的功能，可以禁用详细信息。  

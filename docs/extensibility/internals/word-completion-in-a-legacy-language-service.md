@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141508"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>在旧语言服务中的单词完成
 单词完成填写上部分键入的单词的缺少字符。 如果只有一个可能的完成，完成字符输入时完成单词。 如果部分单词与匹配多个可能性，显示可能的完成列表。 完成字符可以是任何不用于标识符的字符。  

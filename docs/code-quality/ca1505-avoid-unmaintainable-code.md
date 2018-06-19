@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31914401"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505：避免编写无法维护的代码
 |||

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129035"
 ---
 # <a name="how-to-open-project-specific-editors"></a>如何： 打开项目特定编辑器
 如果正在打开的项目项文件本质上绑定到该项目的特定编辑器中，项目必须使用特定于项目的编辑器打开文件。 该文件不能被委派到 IDE 的机制，用于选择一个编辑器。 例如，而不是使用标准的位图编辑器，你可以使用此特定项目的编辑器选项以指定一种特定的位图编辑器，识别只出现在你的项目文件中的信息。  

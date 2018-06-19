@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920672"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：设置 C/C++ 项目的代码分析属性
 你可以配置使用哪些规则的代码分析工具来分析你的项目的每个配置中的代码。 此外，你可以指示代码分析，以禁止显示警告的代码与已生成并由第三方工具添加到你的项目。
