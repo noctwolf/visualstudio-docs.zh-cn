@@ -12,12 +12,12 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: 428139af8680bc60f4456367d1a17d4c97874efc
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: c06d612adc6f765b655f9fbe850b73ef5f7f8617
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29795347"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279902"
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio 中的版本控制
 
@@ -28,7 +28,7 @@ Git 是现今最常用的版本控制系统，并迅速成为版本控制标准�
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://www.visualstudio.com/learn-git/">
+        <a href="https://docs.microsoft.com/azure/devops/git/what-is-git">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -145,11 +145,8 @@ Team Foundation 版本控制 (TFVC) 是一个集中式版本控制系统。 通�
 </ul>
 
 
-## <a name="resources"></a>资源 
+## <a name="resources"></a>资源
 
-- [《Pro Git》书籍](https://git-scm.com/book/en/v2)  
-- [计划迁移到 Git](https://www.visualstudio.com/learn/centralized-to-git/)  
-- [从 TFVC 迁移到 Git](https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/)  
-
- 
-
+- [《Pro Git》书籍](https://git-scm.com/book/en/v2)
+- [计划迁移到 Git](https://docs.microsoft.com/azure/devops/git/centralized-to-git)
+- [从 TFVC 迁移到 Git](https://docs.microsoft.com/azure/devops/git/migrate-from-tfvc-to-git)
