@@ -10,12 +10,12 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29795313"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327185"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 订阅
 Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设备（包括 Windows、iOS、Android 和 Linux）上创建、部署及管理功能强大的应用程序。  订阅的权益包括可以获得开发和测试所需的开发人员工具、云服务和软件、培训及支持。
@@ -149,7 +149,6 @@ Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li>Team Foundation Server 和 TFS CAL</li>
                         </ul>                        
                     </div>
@@ -166,8 +165,8 @@ Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设
                         <p>通过 Visual Studio 订阅，可以获取月度 Azure 抵用额度和免费访问 Azure 服务的权限、开发和测试费用折扣，以及专门为订户提供的图片库和预配置虚拟机的访问权限。 具体取决于你的订阅，云服务可能包括：</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Office 365 开发人员订阅</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Windows 开发人员帐户</a></li>
                             <li>PowerBI Pro</li>
