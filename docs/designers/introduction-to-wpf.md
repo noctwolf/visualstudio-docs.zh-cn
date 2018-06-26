@@ -13,11 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c4bf6ba014d594dd6f5b26420ffa6ee7e61a79a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747276"
 ---
 # <a name="introduction-to-wpf"></a>WPF 介绍
 
@@ -67,7 +68,7 @@ XAML 是一种基于 XML 的标记语言，用于以声明形式实现应用程�
 
  下图显示上一个示例中的 XAML 定义的用户界面 (UI)。
 
- ![包含按钮的窗口](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")
+ ![包含按钮的窗口](../designers/media/wpfintrofigure10.png)
 
  由于 XAML 是基于 XML 的，因此使用它编写的 UI 汇集在嵌套元素的层次结构中，称为 [元素树](/dotnet/framework/wpf/advanced/trees-in-wpf)。 元素树提供了一种直观的逻辑方式来创建和管理 UI。
 
@@ -300,7 +301,7 @@ WPF 提供的二维形状包含基本形状的标准集。 但是，你可能需
 
 <xref:System.Windows.Media.Geometry> 对象可用于剪辑、命中测试以及呈现二维图形数据。
 
-![Path 的各种用法](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")
+![Path 的各种用法](../designers/media/wpfintrofigure5.png)
 
 有关详细信息，请参阅 [Geometry 概述](/dotnet/framework/wpf/graphics-multimedia/geometry-overview)。
 
@@ -308,7 +309,7 @@ WPF 提供的二维形状包含基本形状的标准集。 但是，你可能需
 
 WPF 二维功能的子集包括视觉效果，如渐变、位图、绘图、用视频绘画、旋转、缩放和倾斜。 这些效果都可以使用画笔实现；下图演示了一些示例。
 
-![不同画笔的图示](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")
+![不同画笔的图示](../designers/media/wpfintrofigure6.png)
 
 有关详细信息，请参阅 [WPF 画笔概述](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview)。
 
@@ -316,7 +317,7 @@ WPF 二维功能的子集包括视觉效果，如渐变、位图、绘图、用�
 
 WPF 还包括三维呈现功能，这些功能与二维图形集成，以创建更精彩、更有趣的用户界面。 例如，下图显示呈现在三维形状上的二维图像。
 
-![Visual3D 示例屏幕快照](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")
+![Visual3D 示例屏幕快照](../designers/media/wpfintrofigure13.png)
 
 有关详细信息，请参阅[三维图形概述](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview)。
 
@@ -324,7 +325,7 @@ WPF 还包括三维呈现功能，这些功能与二维图形集成，以创建�
 
 WPF 动画支持可以使控件变大、抖动、旋转和淡出，以形成有趣的页面过渡等。 你可以对大多数 WPF 类，甚至自定义类进行动画处理。 下图显示了运行中的一个简单动画。
 
-![具有动画多维数据集的图像](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")
+![具有动画效果的立方体图](../designers/media/wpfintrofigure7.png)
 
 有关详细信息，请参阅 [动画概述](/dotnet/framework/wpf/graphics-multimedia/animation-overview)。
 
@@ -336,7 +337,7 @@ WPF 动画支持可以使控件变大、抖动、旋转和淡出，以形成有�
 
 图像对大多数应用程序很常见，WPF 提供多种方式来使用它们。 下图显示一个用户界面，该用户界面中的列表框中包含缩略图图像。 选中一个缩略图后，将显示该图像的原尺寸。
 
-![缩略图图像和完整尺寸图像](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")
+![缩略图图像和完整尺寸图像](../designers/media/wpfintrofigure8.png)
 
 有关详细信息，请参阅 [图像概述](/dotnet/framework/wpf/graphics-multimedia/imaging-overview)。
 
@@ -348,7 +349,7 @@ WPF 动画支持可以使控件变大、抖动、旋转和淡出，以形成有�
 
 下图中的窗口显示了运行中的 <xref:System.Windows.Controls.MediaElement> 控件。
 
-![具有音频和视频的 MediaElement 控件](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")
+![具有音频和视频的 MediaElement 控件](../designers/media/wpfintrofigure1.png)
 
 有关详细信息，请参阅[图形和多媒体](/dotnet/framework/wpf/graphics-multimedia)。
 
@@ -397,7 +398,7 @@ WPF 动画支持可以使控件变大、抖动、旋转和淡出，以形成有�
 
 下图显示结果。
 
-![包含文本的 TextBox 控件](../designers/media/wpfintrofigure21.png "WPFIntroFigure21")
+![包含文本的 TextBox 控件](../designers/media/wpfintrofigure21.png)
 
 但是，其他控件可以包含不同内容类型的多个项； <xref:System.Windows.Controls.Button>的内容（由 <xref:System.Windows.Controls.ContentControl.Content%2A> 属性指定）可以包含各种项（包括布局控件、文本、图像和形状）。 下面的示例演示了 <xref:System.Windows.Controls.Button> ，其内容包括 <xref:System.Windows.Controls.DockPanel>、 <xref:System.Windows.Controls.Label>、 <xref:System.Windows.Controls.Border>和 <xref:System.Windows.Controls.MediaElement>。
 
@@ -423,7 +424,7 @@ WPF 动画支持可以使控件变大、抖动、旋转和淡出，以形成有�
 
 下图显示此按钮的内容。
 
-![包含多种类型的内容的按钮](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")
+![包含多种类型的内容的按钮](../designers/media/wpfintrofigure22.png)
 
 有关各种控件支持的内容类型的详细信息，请参阅 [WPF 内容模型](/dotnet/framework/wpf/controls/wpf-content-model)。
 
@@ -452,7 +453,7 @@ WPF 控件的默认用户界面通常是从其他控件和形状构造的。 例
 
 使用控件模板可以指定控件的外观，而使用数据模板则可以指定控件内容的外观。 数据模板经常用于改进绑定数据的显示方式。 下图显示 <xref:System.Windows.Controls.ListBox> 的默认外观，它绑定到 `Task` 对象的集合，其中每个任务都具有名称、描述和优先级。
 
-![具有默认外观的列表框](../designers/media/wpfintrofigure18.png "WPFIntroFigure18")
+![具有默认外观的列表框](../designers/media/wpfintrofigure18.png)
 
 默认外观是你对 <xref:System.Windows.Controls.ListBox>的期望。 但是，每个任务的默认外观仅包含任务名称。 若要显示任务名称、描述和优先级，必须使用 <xref:System.Windows.Controls.ListBox> 更改 <xref:System.Windows.DataTemplate>控件绑定列表项的默认外观。 下面的 XAML 定义了此类 <xref:System.Windows.DataTemplate>，它通过使用 <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> 特性应用于每个任务。
 
@@ -649,7 +650,7 @@ WPF 控件的默认用户界面通常是从其他控件和形状构造的。 例
 
  下图显示了 `NumericUpDown` 中托管的 <xref:System.Windows.Window>控件。
 
- ![自定义用户控件](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")
+ ![自定义 UserControl](../designers/media/wpfintrofigure3.png)
 
 有关自定义控件的详细信息，请参阅 [控件创作概述](/dotnet/framework/wpf/controls/control-authoring-overview)。
 

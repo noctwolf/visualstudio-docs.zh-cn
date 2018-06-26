@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32782b5c2d303e54901462de589d076990f579d2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572340"
 ---
-# <a name="troubleshooting-performance-tools-issues"></a>性能工具问题疑难解答
+# <a name="troubleshoot-performance-tools-issues"></a>性能工具问题疑难解答
 使用分析工具时，可能会遇到以下问题之一：  
   
 -   [分析工具未收集任何数据](#NoDataCollected)  
   
 -   [性能视图和报告显示函数名的编号](#NoSymbols)  
   
-##  <a name="NoDataCollected"></a> 分析工具未收集任何数据  
+## <a name="no-data-is-collected-by-the-profiling-tools"></a>分析工具未收集任何数据  
  分析应用程序之后，未创建分析数据 (.vsp) 文件，你在“输出”窗口或命令窗口中收到以下警告：  
   
  PRF0025: 未收集到任何数据。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
   
      若要在这种情况下收集分析数据，请将探查器附加到子进程而不是使用探查器启动应用程序。 有关详细信息，请参阅[如何：在正在运行的进程中附加和分离性能工具](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)和[附加 (VSPerfCmd)](../profiling/attach.md)  
   
-##  <a name="NoSymbols"></a> 性能视图和报告显示函数名的编号  
+## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>性能视图和报告显示函数名的编号  
  分析应用程序之后，在报告和视图中看到编号而不是函数名。  
   
  导致此问题的原因是分析工具分析引擎无法找到 .pdb 文件，这些文件包含将源代码信息（如函数名和行号）映射到已编译的文件的符号信息。 默认情况下，编译器会在生成应用程序文件时创建 .pdb 文件。 对 .pdb 文件的本地目录的引用存储在编译的应用程序中。 分析引擎会在引用的目录中查找 .pdb 文件的，然后在当前包含应用程序文件的文件中查找。 如果未找到 .pdb 文件，则分析引擎使用函数偏移量而不是函数名。  

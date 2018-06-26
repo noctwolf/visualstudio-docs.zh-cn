@@ -1,24 +1,25 @@
 ---
-title: "Windows 脚本引擎 | Microsoft Docs"
-ms.custom: 
+title: Windows 脚本引擎 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows script engines
 ms.assetid: e576853d-7252-4eb9-81eb-9d5bb7626ab4
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2191b8e76e2b96d05633156d09a08b5416faae90
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 16e699ee789ae10883152b5d8aa7d8ffee0ddffd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572616"
 ---
 # <a name="windows-script-engines"></a>Windows 脚本引擎
 若要实现 Microsoft Windows 脚本引擎，则要创建支持下列接口的 OLE COM 对象。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/27/2017
 |-|-|  
 |状态|描述|  
 |未初始化|尚未使用 IPersist* 接口初始化或加载脚本，或者脚本尚未设置 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 接口。 通常在这种状态下脚本引擎不可用，直至加载脚本。|  
-|已初始化|已使用 `IPersist*` 接口初始化脚本，并且已设置 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 接口，但是脚本未连接到主机对象和接收器事件。 请注意，此状态仅表示已完成 `IPersist*::Load`、`IPersist*::InitNew`、或 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) 方法，且已调用 [IActiveScript::SetScriptSite](../winscript/reference/iactivescript-setscriptsite.md) 方法。 在此模式下引擎无法运行代码。 引擎通过 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) 方法将主机向其传递的代码排入队列，并在转换到启动状态后执行此代码。<br /><br /> 由于语言在语义方面的差异较大，因此无需脚本引擎支持此状态转换。 但是支持 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) 方法的引擎必须支持此状态转换。 主机必须为此转换做准备并采取适当的操作：释放当前脚本引擎、新建脚本引擎并调用 `IPersist*::Load`、`IPersist*::InitNew` 或 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md)（可能还调用 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)）。 应将使用此转换视为对上述步骤的优化。 请注意，脚本引擎已获取的关于已命名项目的名称及描述已命名项目的类型信息的所有信息仍然有效。<br /><br /> 由于语言差异较大，因此难以定义此转换的准确语义。 脚本引擎至少需与所有事件断开连接，并释放通过调用 [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md) 方法获取的所有 SCRIPTINFO_IUNKNOWN 指针。 重新运行脚本后，引擎必须重新获取这些指针。 此外，脚本引擎应将脚本重置回适用于当前语言的初始状态。 例如，VBScript 将通过调用已设置 SCRIPTTEXT_ISPERSISTENT 标记的 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) 重置所有变量并保留动态添加的所有代码。 其他语言可能需要保留当前值（例如 Lisp，因为没有单独的代码/数据）或重置为已知状态（其中包括带有已静态初始化的变量的语言）。<br /><br /> 请注意，转换到启动状态的语义应与调用 IPersist*::Save 以保存脚本引擎并调用 IPersist\*::Load 以加载新的脚本引擎的语义相同（即语义应将脚本引擎保持在同一种状态）；这些操作的语义应与 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) 的语义相同。 尚不支持 IActiveScript::Clone 或 `IPersist*` 的脚本引擎应仔细考虑转换到启动状态的行为方式，以便在将来添加 IActiveScript::Clone 或 `IPersist*` 支持后，此转换不会违反上述条件。<br /><br /> 转换到启动状态期间，脚本中执行相应的析构函数等后，脚本引擎将断开与事件接收器的连接。 若要避免执行这些析构函数，主机可以先将脚本转为断开连接状态，然后再转为启动状态。<br /><br /> 可使用 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) 取消正在运行的脚本线程，而无需等待当前事件等完成运行。|  
+|已初始化|已使用 `IPersist*` 接口初始化脚本，并且已设置 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 接口，但是脚本未连接到主机对象和接收器事件。 请注意，此状态仅表示已完成 `IPersist*::Load`、`IPersist*::InitNew`、或 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) 方法，且已调用 [IActiveScript::SetScriptSite](../winscript/reference/iactivescript-setscriptsite.md) 方法。 在此模式下引擎无法运行代码。 引擎通过 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) 方法将主机向其传递的代码排入队列，并在转换到启动状态后执行此代码。<br /><br /> 由于语言在语义方面的差异较大，因此无需脚本引擎支持此状态转换。 但是支持 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) 方法的引擎必须支持此状态转换。 主机必须为此转换做准备并采取适当的操作：释放当前脚本引擎、新建脚本引擎并调用 `IPersist*::Load`、`IPersist*::InitNew` 或 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md)（可能还调用 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)）。 应将使用此转换视为对上述步骤的优化。 请注意，脚本引擎已获取的关于已命名项目的名称及描述已命名项目的类型信息的所有信息仍然有效。<br /><br /> 由于语言差异较大，因此难以定义此转换的准确语义。 脚本引擎至少需与所有事件断开连接，并释放通过调用 [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md) 方法获取的所有 SCRIPTINFO_IUNKNOWN 指针。 重新运行脚本后，引擎必须重新获取这些指针。 此外，脚本引擎应将脚本重置回适用于当前语言的初始状态。 例如，VBScript 将通过调用已设置 SCRIPTTEXT_ISPERSISTENT 标记的 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) 重置所有变量并保留动态添加的所有代码。 其他语言可能需要保留当前值（例如 Lisp，因为没有单独的代码/数据）或重置为已知状态（其中包括带有已静态初始化的变量的语言）。<br /><br /> 请注意，转换到启动状态的语义应与调用 `IPersist*::Save` 以保存脚本引擎并调用 `IPersist*::Load` 以加载新的脚本引擎的语义相同（即语义应将脚本引擎保持在同一种状态）；这些操作的语义应与 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) 的语义相同。 尚不支持 `IActiveScript::Clone` 或 `IPersist*` 的脚本引擎应仔细考虑转换到启动状态的行为方式，以便在将来添加 `IActiveScript::Clone` 或 `IPersist*` 支持后，此转换不会违反上述条件。<br /><br /> 转换到启动状态期间，脚本中执行相应的析构函数等后，脚本引擎将断开与事件接收器的连接。 若要避免执行这些析构函数，主机可以先将脚本转为断开连接状态，然后再转为启动状态。<br /><br /> 可使用 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) 取消正在运行的脚本线程，而无需等待当前事件等完成运行。|  
 |已启动|从初始化状态转换到启动状态后，引擎会执行在初始化状态下排入队列的所有代码。 在启动状态下，引擎可以执行代码，但是引擎未连接到通过 [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) 方法添加的任何事件。 引擎可以通过调用从 [IActiveScript::GetScriptDispatch](../winscript/reference/iactivescript-getscriptdispatch.md) 方法获得的 IDispatch 接口或通过调用 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) 来执行代码。 进一步的后台初始化（渐进式加载）可能仍在继续进行，因此调用已设置 SCRIPTSTATE_CONNECTED 标记的 [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) 方法可能会导致脚本受阻，直至初始化完成。|  
 |已连接|脚本已加载，并已连接到主机对象的接收器事件。 如果这是从初始化状态进行的转换，则在进入连接状态并连接到事件之前，脚本引擎应先执行必要的操作，来通过启动状态进行转换。|  
 |已断开连接|脚本已加载，并且处于运行时状态，但暂时将其与主机对象的接收器事件断开连接。 可以通过逻辑方式（忽略收到的事件）或物理方式（在相应的连接点上调用 IConnectionPoint::Unadvise）来执行此操作。 如果这是从初始化状态进行的转换，则在进入断开连接状态前，脚本引擎应执行必要的操作，来通过启动状态进行转换。 正在运行的事件接收器将在状态更改前完成操作（使用 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) 取消正在运行的脚本线程）。 此状态与初始化状态的区别在于转换到此状态后，脚本不会重置，脚本的运行时状态不会重置，并且不会执行脚本初始化过程。|  
@@ -76,5 +77,5 @@ ms.lasthandoff: 10/27/2017
   
  不会从简单的线程状态控制方法（例如 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) 方法）或从 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) 方法的上下文调用脚本站点。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows 脚本接口](../winscript/windows-script-interfaces.md)

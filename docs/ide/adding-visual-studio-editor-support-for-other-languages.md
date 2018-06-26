@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f3178738b707069fdf885c9821b7b7f1e17b246c
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 3e139fe1858772ed0505f774ce4c36e00bc059e0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746121"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>为其他语言添加 Visual Studio 编辑器支持
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 05/11/2018
 
 Visual Studio 编辑器中的功能（如语法着色、语句完成和“定位到”等）可帮助你更轻松地读取、创建和编辑代码。 以下屏幕截图举例说明在 Visual Studio 中编辑 Perl 脚本。 语法自动着色。 例如，代码中的注解用绿色标记，代码、路径、语句分别用黑色、红色和蓝色标记。 Visual Studio 编辑器对支持的任何语言自动着色。 此外，当开始输入已知语言关键字或对象时，语句完成会显示可能的语句和对象列表。 语句完成有助于更快速、更轻松地创建代码。
 
-![Perl 脚本中的语法着色](../ide/media/vside_perledit.png "VSIDE_PerlEdit")
+![Perl 脚本中的语法着色](../ide/media/vside_perledit.png)
 
 对于以下使用 [TextMate 语法](https://manual.macromates.com/en/language_grammars)的语言，Visual Studio 当前提供语法着色和基本语句完成支持。 如果你最喜爱的语言不在表中，别担心，可以添加它。
 

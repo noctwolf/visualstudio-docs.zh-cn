@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 6fabaa7b1df2522abd9e76a8e4772a2f8111cfe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748080"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
@@ -35,29 +36,29 @@ IntelliSense 是使编码更方便的一组功能的名称。 由于不同的人
 
 有关图标及其含义的列表，请参阅[类视图和对象浏览器图标](../ide/class-view-and-object-browser-icons.md)。
 
-![“Visual C++ 完成单词”窗口](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
+![Visual C++ 完成单词窗口](../ide/media/vs2015_cpp_complete_word.png)
 
 首次调用成员列表时，它只显示当前上下文可访问的成员。 如果在此操作后按 Ctrl+J，它将显示所有成员，而不考虑可访问性。 如果第三次调用它，则显示更宽的程序元素列表。 可在“选项”对话框中的“文本编辑器” > “C/C++” > “常规” > “自动列出成员”下关闭“成员列表”。
 
-![Visual C++ 成员列表](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
+![Visual C++ 成员列表](../ide/media/vs2015_cpp_list_members.png)
 
 ### <a name="parameter-help"></a>参数帮助
 
 当你在类模板变量声明上键入函数调用的左大括号或尖括号时，该编辑器将显示具有函数或构造函数的每个重载的参数类型的小窗口。 基于光标所在的位置的“current”参数以粗体显示。 可在“选项”对话框中的“文本编辑器” > “C/C++” > “常规” > “参数信息”下关闭“参数信息”。
 
-![Visual C++ 参数帮助](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
+![Visual C++ 参数帮助](../ide/media/vs_2015_cpp_param_help.png)
 
 ### <a name="quick-info"></a>快速信息
 
 将鼠标光标悬停在变量上时，将在内联出现一个小窗口，显示类型信息和在其中定义该类型的标头。 将鼠标悬停在函数调用上，以查看该函数的签名。 可在“选项”对话框中的“文本编辑器” > “C/C++” > “高级” > “自动快速信息”下关闭“快速信息”。
 
-![Visual C++ 快速信息](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
+![Visual C++ QuickInfo](../ide/media/vs2015_cpp_quickinfo.png)
 
 ### <a name="error-squiggles"></a>错误波形曲线
 
 程序元素（变量、关键字、大括号、类型名称等）下的波形曲线提醒你注意代码中的错误或潜在错误。 当你编写前向声明时，会出现绿色波形曲线，提醒你仍然需要编写实现。 当未处于活动状态的代码中出现错误（例如，当你在 Windows 上下文中工作，但输入将在 Android 上下文中成为错误的内容时）时，紫色波形曲线将出现在共享项目中。 红色波形曲线指示处于活动状态的代码中存在需要处理的编译器错误或警告。
 
-![Visual C++ 错误波形曲线](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
+![Visual C++ 错误波形曲线](../ide/media/vs2015_cpp_error_quiggles.png)
 
 ### <a name="code-colorization-and-fonts"></a>代码着色和字体
 
@@ -69,7 +70,7 @@ IntelliSense 是使编码更方便的一组功能的名称。 由于不同的人
 
 以下是配置为针对 Android 和 iOS 进行构建的 OpenGLES 应用程序。 图中显示的是正在编辑的共享代码。 在第一张图中，Android 是活动项目：
 
-![Android 项目是活动项目。](../ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")
+![Android 项目是活动项目。](../ide/media/intellisensecppcrossplatform.png)
 
 注意下列事项：
 
@@ -81,7 +82,7 @@ IntelliSense 是使编码更方便的一组功能的名称。 由于不同的人
 
 现在，将活动项目更改为 iOS.StaticLibrary，并注意波形曲线的变化。
 
-![选择 iOS 作为活动项目。](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
+![iOS 被选作活动项目。](../ide/media/intellisensecppcrossplatform2.png)
 
 注意下列事项：
 
@@ -95,11 +96,11 @@ IntelliSense 是使编码更方便的一组功能的名称。 由于不同的人
 
 当你在任何项目外部打开单个文件时，你仍然会得到 IntelliSense。 可在“选项”对话框中的“文本编辑器” > “C/C++” > “高级”下，启用或禁用特定 IntelliSense 功能。 若要为不属于项目的单个文件配置 IntelliSense，请参见“IntelliSense 和浏览非项目文件”部分。
 
-![Visual C++ 单个文件 intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
+![Visual C++ 单个文件 Intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
 默认情况下，单个文件 IntelliSense 仅使用标准包含目录来查找头文件。 若要添加其他目录，请打开“解决方案”节点上的快捷菜单，然后将目录添加到“调试源代码”列表中，如下图所示：
 
-![将路径添加到标头文件。](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
+![添加指向头文件的路径。](../ide/media/intellisensedebugyourcode.jpg)
 
 ## <a name="see-also"></a>请参阅
 

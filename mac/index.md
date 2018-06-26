@@ -5,15 +5,16 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 54f178a35d95819b13b1d477c3415fd02b8298f5
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34693687"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Visual Studio for Mac 介绍
 
-Visual Studio for Mac 是一个新式且复杂的 IDE，其中包含多种用于创建移动、桌面和 Web 应用程序的功能。 它支持以下开发：
+Visual Studio for Mac 是一个新式且复杂的 IDE，其中包含多种用于创建移动、桌面和 Web 应用程序的功能。 它支持以下类型的开发：
 
 * .NET 移动应用：Android、iOS、tvOS、watchOS
 * Mac 桌面应用
@@ -21,7 +22,7 @@ Visual Studio for Mac 是一个新式且复杂的 IDE，其中包含多种用于
 * ASP.NET Core Web 应用程序
 * 跨平台 Unity 游戏
 
-它包括丰富的编辑器、调试、与 iOS、Mac 和 Android 的本机平台集成和集成源控件等功能。
+它包括丰富的编辑器、调试、与 iOS/Mac/Android 的本机平台集成和集成源控件等功能。
 
 本文调查了 Visual Studio for Mac 的各个部分，并简要介绍了使其成为一款用于创建跨平台应用程序的强大工具的部分功能。
 
@@ -43,7 +44,7 @@ F# 是强类型函数编程语言，设计为专门用于在 .NET 上运行。 V
 
 ## <a name="platform-support"></a>平台支持
 
-## <a name="net-core"></a>.NET 核心
+## <a name="net-core"></a>.NET Core
 
 [.NET Core](https://www.microsoft.com/net/core#macos) 平台可以创建在 Windows、Linux 和 Mac 上运行的应用程序。 Visual Studio for Mac 支持加载、创建、运行和调试 .NET Core 项目。
 

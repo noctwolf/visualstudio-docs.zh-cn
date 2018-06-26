@@ -9,21 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b39c4d1e515530f50d086cb107d4ec0d297d48
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746307"
 ---
 # <a name="manage-project-and-solution-properties"></a>管理项目和解决方案属性
 
 项目具有一些控制编译、调试、测试和部署的很多方面的属性。 有些属性在所有项目类型中是通用的，而有些则只用于特定语言或平台。 右键单击“解决方案资源管理器”中的项目节点并选择“属性”，或者在菜单栏上的“快速启动”搜索框中键入“属性”，即可访问项目属性。
 
-![项目上下文菜单](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")
+![项目上下文菜单](../ide/media/vs2015_proj_prop_menu.gif)
 
 在项目树本身，.NET 项目也可能具有一个属性节点。
 
-![解决方案资源管理器树中的属性节点](../ide/media/vs2015_props_se.png "VS2015_Props_SE")
+![解决方案资源管理器树中的属性节点](../ide/media/vs2015_props_se.png)
 
 ## <a name="project-properties"></a>项目属性
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/26/2018
 
 在 C#、Visual Basic 和 F# 项目中，属性在“项目设计器”中公开。 下图显示了 C# 中的 WPF 项目的生成属性页：
 
-![Visual Studio 项目设计器](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")
+![Visual Studio 项目设计器](../ide/media/vs2015_proppage_build.png)
 
 有关“项目设计器”中每个属性页的信息，请参阅[项目属性引用](../ide/reference/project-properties-reference.md)。
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 
 C++ 和 JavaScript 项目对于管理项目属性有不同的用户界面。 此图显示了 C++ 项目属性页（JavaScript 页面与此类似）：
 
-![Visual C++ 项目属性](../ide/media/vs2015_projprops_cpp.png "VS2015_ProjProps_cpp")
+![Visual C++ 项目属性](../ide/media/vs2015_projprops_cpp.png)
 
 有关 C++ 项目属性的信息，请参阅[使用项目属性 (C++)](/cpp/ide/working-with-project-properties)。 有关 JavaScript 属性的详细信息，请参阅[属性页，JavaScript](../ide/reference/property-pages-javascript.md)。
 

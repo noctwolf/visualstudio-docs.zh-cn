@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e964ec877b791fc3058068e2f89706cc5826e0f
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 9b9b740689175f91f4bc69396121da0bed336532
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335965"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548705"
 ---
-# <a name="caller--callee-view---sampling-data"></a>“调用方/被调用方”视图 - 采样数据
+# <a name="callercallee-view---sampling-data"></a>“调用方/被调用方”视图 - 采样数据
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的分析信息。 “调用方/被调用方”视图包含三个网格。  
   
  **当前函数**在中间网格中显示，其显示所选函数的分析信息。 这些值包括对函数的所有采样调用。  

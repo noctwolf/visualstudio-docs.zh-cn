@@ -12,11 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745990"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何报告 Visual Studio 2017 的问题
 
@@ -30,14 +31,14 @@ ms.lasthandoff: 04/26/2018
 2. 如果未登录，选择“登录”；它位于工具右侧，如下面的屏幕截图中所示。
 3. 按照屏幕上的说明登录。
 
- ![登录以报告问题](../ide/media/sign-in-new-ux.png "登录以报告问题")
+ ![登录以报告问题](../ide/media/sign-in-new-ux.png)
 
 ## 搜索类似的问题并为其投票 <a name="search_and_vote"></a>
 
 1. 搜索问题，看其他人是否也报告了此问题。
 2. 如果有人已报告此问题，请为其“投票”以便让我们知道。
 
-  ![搜索类似问题并对其投票](../ide/media/search-and-vote.png "搜索类似问题并对其投票")
+  ![搜索类似的问题并为其投票](../ide/media/search-and-vote.png)
 
 ## 报告新问题 <a name="report_new_problem"></a>
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 2. 为此问题创建一个描述性标题，帮助我们将其发送到正确的 Visual Studio 团队。
 3. 向我们提供任何其他详细信息，如有可能，请同时提供再现该问题的步骤。
 
-  ![报告新问题](../ide/media/report-new-problem.png "报告新问题")
+  ![报告新问题](../ide/media/report-new-problem.png)
 
 ## 提供屏幕快照和附件（可选） <a name="provide_screenshots"></a>
 
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/26/2018
 1. 选择“记录”选项卡。
 2. 选择“开始记录”。 授予运行该工具的权限。
 
-  ![选择“开始记录”以提供跟踪和堆转储文件](../ide/media/record-dialog-box.png "提供跟踪和堆转储文件")
+  ![选择“开始记录”以提供跟踪和堆转储文件 ](../ide/media/record-dialog-box.png)
 
 3. 显示**步骤记录器**工具后，执行重现问题的步骤。
 4. 完成后，选择“停止记录”按钮。

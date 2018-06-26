@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: af86168314f8bbe2e3f125e469022b32c9656515
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3ca8187518379452b8227fffd0db5f8ef16c6793
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766560"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 .NET 服务以收集应用程序统计信息
-本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加 .NET Framework 服务，以及如何使用采样方法收集性能统计信息。  
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：将探查器附加到 .NET 服务，以使用命令行收集应用程序统计信息
+本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 .NET Framework 服务，以及如何使用采样方法收集性能统计信息。  
   
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/19/2018
   
  若要结束分析会话，必须将探查器与服务拆离，并且必须显式关闭探查器。 在大多数情况下，建议在会话结束时清除分析环境变量。  
   
-## <a name="attaching-the-profiler"></a>附加探查器  
+## <a name="attach-the-profiler"></a>附加探查器  
   
 #### <a name="to-attach-the-profiler-to-a-net-framework-service"></a>将探查器附加到 .NET Framework 服务  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/19/2018
   
     -   **targetclr:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 可选。  
   
-## <a name="controlling-data-collection"></a>控制数据收集  
+## <a name="control-data-collection"></a>控制数据收集  
  服务运行时，可使用 VSPerfCmd.exe 选项开始或停止将数据写入到探查器数据文件。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
   
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
@@ -103,8 +104,8 @@ ms.lasthandoff: 04/19/2018
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
     |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** 将启动由进程 ID 或进程名称指定的进程的数据收集。 **/detach** 将停止指定进程或所有进程（未指定任何特定进程时）的数据收集。|  
   
-## <a name="ending-the-profiling-session"></a>结束分析会话  
- 若要结束分析会话，必须将探查器与所有被分析进程拆离，并且必须显式关闭探查器。 可通过关闭应用程序或调用 VSPerfCmd /detach 选项从使用采样方法分析的应用程序拆离探查器。 然后，调用 **VSPerfCmd /shutdown** 选项关闭探查器和分析数据文件。  
+## <a name="end-the-profiling-session"></a>结束分析会话  
+ 若要结束分析会话，必须将探查器与所有被分析进程分离，并且必须显式关闭探查器。 可通过关闭应用程序或调用 VSPerfCmd /detach 选项从使用采样方法分析的应用程序拆离探查器。 然后，调用 **VSPerfCmd /shutdown** 选项关闭探查器和分析数据文件。  
   
  **VSPerfClrEnv /globaloff** 命令可清除分析环境变量，但在重新启动计算机前不会重置系统配置。  
   

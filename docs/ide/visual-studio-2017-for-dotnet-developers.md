@@ -12,11 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd517cd859f47f9b4cb41884bd116005aa31fa29
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748746"
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>面向 .NET 开发人员的 Visual Studio 2017 工作效率指南
 
@@ -88,7 +89,7 @@ Visual Studio 2017 包含大量重构、代码生成操作和代码修补程序�
   - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
-![Visual Studio 中的重构](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
+![在 Visual Studio 中重构](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>我需要“查找使用情况”、“转到实现”、“导航到反编译程序集”
 Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 详细了解[代码导航功能](../ide/navigating-code.md)
@@ -119,7 +120,7 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 - [后退](../debugger/how-to-use-intellitrace-step-back.md)让你可以返回到上一个断点或步骤，并查看当时应用程序的状态。
 - [快照调试](/azure/application-insights/app-insights-snapshot-debugger)让你可以在引发异常时调查实时 Web 应用的状态（必须是在 Azure 上）。
 
-![VS2017 中新的异常帮助程序](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
+![VS2017 中的新异常帮助程序](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>我想要在项目中使用版本控制。
 可以使用 git 或 TFVC 在 Visual Studio 中存储和更新代码。
