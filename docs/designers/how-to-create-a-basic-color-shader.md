@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c70f1ba622e8fb24c2ece0f52c9c653051d588
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fba456d6a06281e0472e907b27bcd76b57b17e93
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747113"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>如何：创建基本颜色着色器
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > 在图中，指定橙色以更好地展示着色器的效果。
 
-![着色器关系图及其在三维模型上的结果](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")
+![三维模型上的着色器图及其结果](../designers/media/digit-flat-color-effect.png)
 
 某些形状可能会增强某些着色器的预览效果。 若要深入了解如何在着色器设计器中预览着色器，请参阅[着色器设计器](../designers/shader-designer.md)。
 

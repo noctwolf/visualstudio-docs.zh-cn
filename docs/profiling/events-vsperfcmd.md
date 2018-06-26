@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 352feacc59a129d24575408776e9ec075b1294ac
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: cb99ec5bab1098f3551548698919cb1f2fc8f8b1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764327"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 VSPerfCmd.exe“Events”选项控制 Windows 事件跟踪 (ETW) 日志记录。 会将 ETW 数据保存到独立于探查器数据文件的 .etl 文件中。 可以使用 [VSPerfReport](../profiling/vsperfreport.md) /summary:etw 命令在报告中查看这些数据。  

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a6d699845d8cce3eb1a410720d4e5fbbfd69d0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 92f053cbf6f85edbe79f0b108093410502f39a9f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764509"
 ---
 # <a name="execution-profile-report"></a>执行分析报告
 执行分析报告是传统的采样分析。 线程在逻辑内核上运行期间内，将大约每毫秒进行一次采样，并且并发可视化工具可通过调用累积的堆栈集构建典型的调用关系树。 此表中的数据可能受到当前时间范围、隐藏线程和可能应用的筛选器的影响：  

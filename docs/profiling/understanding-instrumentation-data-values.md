@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec882cc5797eb99370beac5e28b87ca0b981cf2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477543"
 ---
-# <a name="understanding-instrumentation-data-values"></a>了解检测数据值
+# <a name="understand-instrumentation-data-values"></a>了解检测数据值
 
 Visual Studio 的检测分析方法会记录所分析应用程序中函数调用、行和指令的详细计时信息
 

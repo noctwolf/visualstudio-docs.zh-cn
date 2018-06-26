@@ -1,5 +1,5 @@
 ---
-title: 安装问题疑难解答
+title: Visual Studio 2017 安装问题疑难解答
 description: 有时也会遇到问题。 如果 Visual Studio 安装或升级失败，可在此页寻求帮助。
 ms.date: 11/21/2017
 ms.technology: vs-acquisition
@@ -14,11 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0009aa15919cf04c3ff8e56edf4f10adcb7e0ea
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766033"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 安装和升级问题疑难解答
 
@@ -112,4 +113,5 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [用于检测和管理 Visual Studio 实例的工具](tools-for-managing-visual-studio-instances.md)
+* [在防火墙或代理服务器后安装 Visual Studio](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [删除 Visual Studio 2017](remove-visual-studio.md)

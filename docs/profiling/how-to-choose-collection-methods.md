@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e801404fbf3356b597471d7c3dda23264eb0c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765383"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：选择收集方法
 
@@ -80,7 +81,7 @@ Visual Studio 分析工具支持三种收集性能数据的方法：采样、检
 
 6. （可选）单击“同时收集 .NET 对象的生存期信息”收集有关对象内存回收在其中的垃圾回收生成的数据。
 
-     有关收集 .NET 内存数据时其他可用选项的信息，请参阅[收集 .NET 内存分配数据和生存期数据](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)。
+     有关收集 .NET 内存数据时的其他可用选项的信息，请参阅[收集 .NET 内存分配和生存期数据](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)。
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>使用性能会话属性选择并发数据收集
 

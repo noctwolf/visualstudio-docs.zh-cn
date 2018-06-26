@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dc5a4c5774a4290d8811026d4c522e4d9e972e4e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572148"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>演练：使用采样进行命令行分析
 

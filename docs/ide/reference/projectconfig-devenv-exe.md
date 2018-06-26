@@ -1,5 +1,5 @@
 ---
-title: -ProjectConfig (devenv.exe)
+title: DevEnv ProjectConfig 开关
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -22,67 +22,50 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fda8ce7103f069dc9cbc22f7c922e6f358fe72b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 44f5d4479658b450074ba35f2759a273bb584e0a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764649"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
-指定生成、清理、重新生成或部署在 `/project` 参数中命名的项目时要应用的项目生成配置。
+
+指定生成、清理、重新生成或部署 /project 参数中命名的项目时要应用的项目生成配置。
 
 ## <a name="syntax"></a>语法
 
-```
+```cmd
 devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
 ```
 
 ## <a name="arguments"></a>自变量
- /build
 
- 生成 `/project` `ProjName` 指定的项目。
-
- /clean
-
- 清理在生成过程中创建的所有中间文件和输出目录。
-
- /rebuild
-
- 清理，然后生成 `/project` `ProjName` 指定的项目。
-
- /deploy
-
- 指定生成或重新生成后部署该项目。
-
- `SolnConfigName`
-
- 必须的。 将应用于 `SolutionName` 中命名的解决方案的解决方案配置的名称。
-
- `SolutionName`
-
- 必须的。 解决方案文件的完整路径和名称。
-
- /project `ProjName`
-
- 可选。 解决方案中项目文件的路径和名称。 可以输入从 `SolutionName` 文件夹到项目文件的相对路径、项目的显示名称或项目文件的完整路径和名称。
-
- /projectconfig `ProjConfigName`
-
- 可选。 要应用于已命名的 `/project` 的项目生成配置的名称。
+|||
+|-|-|
+|/build|生成 /project 参数所指定的项目。|
+|/clean|清理在生成过程中创建的所有中间文件和输出目录。|
+|/rebuild|清理然后生成 /project 参数所指定的项目。|
+|/deploy|指定生成或重新生成后部署该项目。|
+|*SolnConfigName*|必须的。 将应用于 SolutionName 中命名的解决方案的解决方案配置的名称。 如果有多个可用的解决方案平台，还必须指定平台，例如“调试 \|Win32”。|
+|*SolutionName*|必须的。 解决方案文件的完整路径和名称。|
+|/project ProjName|可选。 解决方案中项目文件的路径和名称。 可以输入从 SolutionName 文件夹到项目文件的相对路径、项目的显示名称或项目文件的完整路径和名称。|
+|/projectconfig ProjConfigName|可选。 要应用于 /project 参数所指定项目的项目生成配置的名称。 如果有多个可用的解决方案平台，还必须指定平台，例如“调试 \|Win32”。|
 
 ## <a name="remarks"></a>备注
 
--   必须作为 `devenv /build`、/`clean`、`/rebuild` 或 `/deploy` 命令的一部分与 `/project` 开关一起使用。
+/projectconfig 开关必须和 /project 开关一起用作 /build、/clean、/rebuild 或 /deploy 命令的一部分。
 
--   用双引号将含有空格的字符串引起来。
+用双引号将含有空格的字符串引起来。
 
--   “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示生成的摘要信息（包括错误）。
+“命令”窗口或使用 /out 开关指定的任何日志文件中都可显示生成的摘要信息（包括错误）。
 
 ## <a name="example"></a>示例
- 本示例使用 `MySolution` 的 `Debug` 解决方案配置中的 `Debug` 项目生成配置来生成 `CSharpConsoleApp` 项目。
 
-```
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+以下命令生成项目“CSharpConsoleApp”，在“MySolution”的“调试”解决方案配置中采用“调试”项目生成配置：
+
+```cmd
+devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>请参阅

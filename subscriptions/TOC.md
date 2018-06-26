@@ -1,4 +1,5 @@
 # [Visual Studio 订阅](index.md)
+## [新增功能](whats-new-in-subscriptions.md)
 ## 订阅者体验
 ### [使用订阅者门户](using-the-subscriber-portal.md)
 #### [激活零售订阅](activate-store-subscriptions.md)

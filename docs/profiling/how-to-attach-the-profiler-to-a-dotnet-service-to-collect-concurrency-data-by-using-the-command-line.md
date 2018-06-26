@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0b958cdd3e293bf74be078430ec4a6ed62c0eb39
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3d3f7a4aa6cf5117887c4f22e46646bc604b5737
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765640"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 .NET 服务，以收集并发数据
-本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服务和使用采样方法收集进程和线程并发数据。  
+本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服务并使用采样方法收集进程和线程并发数据。  
   
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/19/2018
   
  若要收集并发数据，请将探查器附加到服务进程。 将探查器附加到服务时，可以暂停和恢复数据收集。 若要结束分析会话，探查器不得再附加于服务，且须显示关闭探查器。 在大多数情况下，建议在会话结束时清除分析环境变量。  
   
-## <a name="attaching-the-profiler"></a>附加探查器  
+## <a name="attach-the-profiler"></a>附加探查器  
   
 #### <a name="to-attach-the-profiler-to-a-net-framework-service"></a>将探查器附加到 .NET Framework 服务  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 04/19/2018
   
     -   **targetclr:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 可选。  
   
-## <a name="controlling-data-collection"></a>控制数据收集  
+## <a name="control-data-collection"></a>控制数据收集  
  服务运行时，使用通过使用 VSPerfCmd.exe 选项开始和停止向文件的数据写入，从而控制数据收集。 通过控制数据收集，使你能够针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
   
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/19/2018
   
 -   还可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 选项将分析标记插入数据文件。 **/mark**命令可添加标识符、时间戳和（可选）用户定义的文本字符串。 标记可用于筛选探查器报告和数据视图中的数据。 以下 VSPerfCmd 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-## <a name="ending-the-profiling-session"></a>结束分析会话  
+## <a name="end-the-profiling-session"></a>结束分析会话  
  若要结束分析会话，探查器不得再收集数据。 可通过停止服务或调用 **VSPerfCmd /detach** 选项从使用并发方法分析的应用程序停止数据收集。 然后，可以调用 **VSPerfCmd /shutdown** 选项关闭探查器和分析数据文件。 **VSPerfClrEnv /globaloff** 命令可清除分析环境变量，但在重新启动计算机前不会重置系统配置。  
   
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  

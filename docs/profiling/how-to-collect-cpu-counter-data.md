@@ -14,15 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994a50e66164dcd7a2a3768c8284825019e281e1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765094"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 计数器数据
 
-CPU 事件计数器用于收集特定于硬件的性能数据。 本主题演示如何在使用检测分析方法时收集事件计数器数据。
+CPU 事件计数器用于收集特定于硬件的性能数据。 本文演示如何在使用检测分析方法时收集事件计数器数据。
 
 将发生两种类型的 CPU 计数器事件：
 

@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d45d2da94535f4f017fab838a661a3c3e4bc438d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477348"
 ---
 # <a name="thread-details-view---contention-data"></a>“线程详细信息”视图 - 争用数据
 “线程详细信息”视图显示在分析运行的所选线程中，针对资源的争用所导致的阻塞事件的时间线关系图。 如果由于另一个线程已锁定对资源的访问，因此线程被迫挂起执行，则会发生阻塞事件。  
   
  此视图将线程的执行时间线表示为水平条，而将阻塞事件表示为线程水平时间线上的垂直条。 如有必要，可以放大时间线的每个部分以查看单个事件。 若要查看导致事件的函数的执行路径，请单击事件条。 函数会出现在“调用堆栈”窗口中。 当函数的源代码可用时，可以单击该函数名，以便在 Visual Studio IDE 中编辑源文件。  
   
-## <a name="navigating-the-timeline"></a>导航时间线  
+## <a name="navigate-the-timeline"></a>导航时间线  
   
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>放大时间线片段  
   

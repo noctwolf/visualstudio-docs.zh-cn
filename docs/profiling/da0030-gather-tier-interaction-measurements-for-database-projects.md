@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dca42fb108c2465db2b882957ea2bbcb25cd5ef8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7d53bd0975edfcaf02b0383834eb53db7716c982
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766189"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：收集数据库项目的层交互测量值
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：收集数据库项目的层交互度量值
 |||  
 |-|-|  
 |规则 ID|DA0030|  
@@ -35,9 +36,9 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>规则说明  
  每当位于 System.Data 命名空间（包括 <xref:System.Data.Linq><xref:System.Data.Linq>）中的函数中出现重大活动时，都将触发此规则。  
   
- 多层应用程序将分层的服务用于其演示文稿和数据层。 通常，数据层是运行数据库管理系统（如 Microsoft Sql Server）的单独进程。 数据层甚至可能通过应用程序其余部分在单独的计算机上运行。 采样分析很少涉及在进程外运行或远程运行的函数和服务。  
+ 多层应用程序将分层的服务用于其演示文稿和数据层。 通常，数据层是运行数据库管理系统（如 Microsoft SQL Server）的单独进程。 数据层甚至可能通过应用程序其余部分在单独的计算机上运行。 采样分析很少涉及在进程外运行或远程运行的函数和服务。  
   
- 分析工具可收集多层应用程序的计时信，这些应用程序通过对 ADO.NET 服务的异步调用与 Microsoft Sql Server 数据层交互。 必须显式启用层交互分析。 它不是默认打开的。  
+ 分析工具可收集多层应用程序的计时信，这些应用程序通过对 ADO.NET 服务的异步调用与 Microsoft SQL Server 数据层交互。 必须显式启用层交互分析。 它不是默认打开的。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  此规则仅供参考，可能不需要采取纠正措施。  

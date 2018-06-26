@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d12279badb0d6898dca3dc06d23eb67a054cc1eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751996"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>如何：选择负载测试结果储存库
 
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  从“负载测试”工具栏中，选择“管理测试控制器”。 此时将显示“管理测试控制器”对话框。 如果要远程使用代理，则必须选择一个控制器。
 
-     ![负载测试结果存储区的连接属性](../test/media/loadtestconnectionproperties.png "LoadTestConnectionProperties")负载测试结果存储区的连接属性
+     ![负载测试结果存储区的连接属性](../test/media/loadtestconnectionproperties.png)负载测试结果存储区的连接属性
 
 3.  在“负载测试测结果存储区”中单击 (…)，以显示“连接属性”对话框。
 

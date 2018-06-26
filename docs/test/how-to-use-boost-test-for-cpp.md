@@ -9,17 +9,18 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deb52bd6b905e8e1cd73b75abd6304698858a20b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751619"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用适用于 C++ 的 Boost.Test
 
 在 **Visual Studio 2017 版本 15.5** 和更高版本中，Boost.Test 测试适配器作为“使用 C++ 的桌面开发”工作负荷的组件集成到 Visual Studio IDE 中。
 
-![Boost.Test 的测试适配器](media/cpp-boost-component.png " Boost.Test 组件的测试适配器")
+![Boost.Test 测试适配器](media/cpp-boost-component.png)
 
 如果没有安装“使用 C++ 的桌面开发”工作负载，则打开“Visual Studio 安装程序”并选择“修改”。 选择“使用 C++ 的桌面开发”工作负载，然后选择“修改”按钮。
 
@@ -43,7 +44,7 @@ Boost.Test 需要[Boost](http://www.boost.org/)！ 如果未安装 Boost，则�
 
 1. 要创建用于测试的 .cpp 文件，右键单击“解决方案资源管理器”中的项目节点，然后选择“添加新项”。
 
-   ![Boost.Test 项模板](media/boost_test_item_template.png "Boost.Test 项模板")
+   ![Boost.Test 项模板](media/boost_test_item_template.png)
 
 1. 新文件包含示例测试方法。 构建项目以启用“测试资源管理器”来发现方法。
 
@@ -87,7 +88,7 @@ Boost.Test 需要[Boost](http://www.boost.org/)！ 如果未安装 Boost，则�
 
 1. 在测试 .cpp 文件中，添加任何所需的 `#include` 指令以使程序的类型和函数对测试代码可见。 通常，程序在文件夹层次结构中的上一层。 如果键入 `#include "../"`，则会出现一个 IntelliSense 窗口，使你可以选择头文件的完整路径。
 
-   ![添加 #include 指令](media/cpp-gtest-includes.png "将 include 指令添加到测试 .cpp 文件")
+   ![添加 #include 指令](media/cpp-gtest-includes.png)
 
    可以将独立库用于：
 

@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: e45eb3e1ac874343de5a3076a62b89e541f20d75
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4146c147f65b3e92dbecd2ee92d083e49252000a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766293"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 ASP.NET Web 应用程序以收集内存数据
-本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序，以及如何收集有关 .NET Framework 内存分配数量和大小的数据。 也可以收集有关 .NET Framework 内存对象生存期的数据。  
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集内存数据
+本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序，以及如何收集有关 .NET Framework 内存分配数量和大小的数据。 也可以收集有关 .NET Framework 内存对象生存期的数据。  
   
 > [!NOTE]
 >  分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/19/2018
   
  若要结束分析会话，探查器不得再附加于应用程序，并且必须显示关闭探查器。 在大多数情况下，建议在会话结束时清除分析环境变量。  
   
-## <a name="attaching-the-profiler"></a>附加探查器  
+## <a name="attach-the-profiler"></a>附加探查器  
   
 #### <a name="to-attach-the-profiler-to-an-aspnet-web-application"></a>将探查器附加到 ASP.NET Web 应用程序  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/19/2018
   
     -   /targetclr：`Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。  
   
-## <a name="controlling-data-collection"></a>控制数据收集  
+## <a name="control-data-collection"></a>控制数据收集  
  在应用程序运行时，可以使用 VSPerfCmd.exe 选项开始和停止向探查器数据文件写入数据，从而控制数据收集。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
   
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
@@ -98,7 +99,7 @@ ms.lasthandoff: 04/19/2018
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由 `PID` 指定的进程的数据收集。|  
     |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;:`ProcName`}]|/attach 将启动由进程 ID 或进程名称指定的进程的数据收集。 **/detach** 将停止指定进程或所有进程（未指定任何特定进程时）的数据收集。|  
   
-## <a name="ending-the-profiling-session"></a>结束分析会话  
+## <a name="end-the-profiling-session"></a>结束分析会话  
  若要结束分析会话，必须从 Web 应用程序分离探查器。 可通过重启 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程或调用 VSPerfCmd /detach 选项，停止从使用采样方法分析的应用程序收集数据。 然后，可以调用 VSPerfCmd [/shutdown](../profiling/shutdown.md) 选项，关闭探查器和分析数据文件。 **VSPerfClrEnv /globaloff** 命令可清除分析环境变量，但在重新启动计算机前不会重置系统配置。  
   
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  
