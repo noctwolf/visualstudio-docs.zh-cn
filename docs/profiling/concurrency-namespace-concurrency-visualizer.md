@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 362c8e87c104dbed859421e21b43d309a6eab8b4
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: aec7bc6373644b81dd45eeeadefa33ab3af88396
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548133"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency 命名空间（并发可视化工具）
 `Concurrency` 命名空间提供可让你访问 C++ 的并发运行和并发编程框架的类和函数。 有关详细信息，请参阅[并发运行时](/cpp/parallel/concrt/concurrency-runtime)。  
@@ -37,7 +38,7 @@ namespace Concurrency;
 |----------|-----------------|  
 |[diagnostic 命名空间](../profiling/diagnostic-namespace.md)|`diagnostics` 命名空间提供用于发出并行可视化工具标记的功能。|  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  **标头：** cvmarkersobj.h  
   
 ## <a name="see-also"></a>请参阅  

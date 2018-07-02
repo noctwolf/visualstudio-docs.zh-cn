@@ -826,3 +826,5 @@
   items:
     - name: Visual Studio 中调试器的新增功能
       href: what-s-new-for-the-debugger-in-visual-studio.md
+    - name: 零基础调试
+      href: debugging-absolute-beginners.md

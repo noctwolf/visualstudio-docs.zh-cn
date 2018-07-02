@@ -9,17 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 835d8fbefa778147f2397eefad055cb96fb82c90
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751645"
 ---
-# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>演练：创建、编辑和维护编码的 UI 测试
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>演练：创建、编辑和维护编码的 UI 测试
 
-在本演练中，你将创建一个简单的 Windows Presentation Foundation (WPF) 应用程序来演示如何创建、编辑和维护编码的 UI 测试。 本演练为更正由各种计时问题和控件重构中断的测试提供了解决方案。
+在本演练中，你将了解如何创建、编辑和维护编码的 UI 测试来测试 Windows Presentation Framework (WPF) 应用。 本演练提供数个解决方案，用于更正由于各种计时问题和控件重构而中断的测试。
 
-## <a name="create-a-simple-wpf-application"></a>创建一个简单的 WPF 应用程序
+## <a name="create-a-wpf-app"></a>创建 WPF 应用
 
 1.  在“文件”菜单上，指向“新建”，然后选择“项目”。
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/26/2018
 
 12. 选择 Checkbox 控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 checkBox1，然后清除“IsEnabled”属性。
 
-     ![简单 WPF 应用程序](../test/media/codedui_wpfapp.png "CodedUI_WPFApp")
+     ![简单 WPF 应用程序](../test/media/codedui_wpfapp.png)
 
 13. 双击按钮控件，以添加单击事件处理程序。
 
@@ -96,7 +97,7 @@ ms.lasthandoff: 04/26/2018
 
 16. 保存该文件。
 
-### <a name="verify-the-wpf-application-runs-correctly"></a>验证 WPF 应用程序是否正常运行
+### <a name="run-the-wpf-app"></a>运行 WPF 应用
 
 1.  在“调试”菜单上，选择“启动调试”或按 F5。
 
@@ -108,81 +109,86 @@ ms.lasthandoff: 04/26/2018
 
 4.  关闭 SimpleWPFApp。
 
-### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>为 SimpleWPFApp 创建和运行编码的 UI 测试
+## <a name="create-a-shortcut-to-the-wpf-app"></a>创建 WPF 应用的快捷方式
 
-1.  查找你之前创建的 SimpleWPFApp 应用程序。 默认情况下，该应用程序将位于 C:\Users\\<username\>\Documents\Visual Studio \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
+1.  查找你之前创建的 SimpleWPFApp 应用程序。
 
 2.  创建 SimpleWPFApp 应用程序的桌面快捷方式。 右键单击 SimpleWPFApp.exe 并选择“复制”。 在桌面上右键单击，然后选择“粘贴快捷方式”。
 
     > [!TIP]
     > 使用应用程序的快捷方式可以快速启动应用程序，因此便于为应用程序添加或修改编码的 UI 测试。
 
-3.  在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新建项目”。
+## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>为 SimpleWPFApp 创建编码的 UI 测试
+
+1. 在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新项目”。
 
      此时，将显示 **“添加新项目”** 对话框。
 
-4.  在“已安装”窗格中，展开 **Visual C#**，然后选择“测试”。
+1. 在“已安装”窗格中，展开 **Visual C#**，然后选择“测试”。
 
-5.  在中间窗格中，选择“编码的 UI 测试项目”模板。
+1. 在中间窗格中，选择“编码的 UI 测试项目”模板。
 
-6.  选择 **“确定”**。
+   > [!NOTE]
+   > 如未看到“编码的 UI 测试项目”模板，则需要安装[编码的 UI 测试组件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
 
-     在解决方案资源管理器中，将名为 **CodedUITestProject1** 的新编码的 UI 测试项目添加到你的解决方案中。
+1. 选择 **“确定”**。
+
+     即可将名为 CodedUITestProject1 的新编码的 UI 测试项目添加到你的解决方案中。
 
      此时将显示“为编码的 UI 测试生成代码”对话框。
 
-7.  选择“录制操作、编辑 UI 映射或添加断言”选项，然后选择“确定”。
+1. 选择“录制操作、编辑 UI 映射或添加断言”选项，然后选择“确定”。
 
-     将显示“UIMap - 编码的 UI 测试生成器”，且 Visual Studio 窗口将最小化。
+     随即显示“UIMap - 编码的 UI 测试生成器”对话框，且 Visual Studio 窗口将最小化。
 
      有关对话框中的选项的详细信息，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)。
 
-8.  在“UIMap - 编码的 UI 测试生成器”中选择“开始记录”。
+1. 在“UIMap - 编码的 UI 测试生成器”对话框中选择“开始录制”。
 
-     ![开始记录](../test/media/cuit_builder_record.png "CUIT_Builder_Record")
+     ![开始录制](../test/media/cuit_builder_record.png)
 
      如果需要，你可以暂停记录（例如，如果你必须处理传入的邮件）。
 
-     ![暂停记录](../test/media/cuit_.png "CUIT_")
+     ![暂停录制](../test/media/cuit_.png)
 
     > [!WARNING]
     > 将录制在桌面上执行的所有操作。 如果你正在执行可能会导致敏感数据被包括在录制中的操作，则暂停录制。
 
-9. 使用桌面快捷方式启动 SimpleWPFApp。
+1. 使用桌面快捷方式启动 SimpleWPFApp。
 
      像以前一样，注意该复选框控件此时处于禁用状态。
 
-10. 在 SimpleWPFApp 上选择“启动”。
+1. 在 SimpleWPFApp 上选择“启动”。
 
      几秒后，进度栏应 100% 完成。
 
-11. 选中现在处于启用状态的复选框控件。
+1. 选中现在处于启用状态的复选框控件。
 
-12. 关闭 SimpleWPFApp 应用程序。
+1. 关闭 SimpleWPFApp 应用程序。
 
-13. 在“UIMap - 编码的 UI 测试生成器”中，选择“生成代码”。
+1. 在“UIMap - 编码的 UI 测试生成器”对话框中，选择“生成代码”。
 
-14. 在“方法名称”中键入 **SimpleAppTest**，然后选择“添加并生成”。 几秒后，编码的 UI 测试将出现，并且会添加到“解决方案”中。
+1. 在“方法名称”中键入 SimpleAppTest，然后选择“添加并生成”。 几秒后，编码的 UI 测试将出现，并且会添加到解决方案中。
 
-15. 关闭“UIMap - 编码的 UI 测试生成器”。
+1. 关闭“UIMap - 编码的 UI 测试生成器”。
 
-     CodedUITest1.cs 文件将出现在代码编辑器中。
+     此时，CodedUITest1.cs 文件会出现在代码编辑器中。
 
-16. 保存你的项目。
+1. 保存你的项目。
 
-### <a name="run-the-coded-ui-test"></a>运行编码的 UI 测试
+### <a name="run-the-test"></a>运行测试
 
-1.  从“测试”菜单中，选择“窗口”，然后选择“测试资源管理器”。
+1. 从“测试”菜单中，选择“窗口”，然后选择“测试资源管理器”。
 
-2.  从 **“生成”** 菜单中选择 **“生成解决方案”**。
+2. 从 **“生成”** 菜单中选择 **“生成解决方案”**。
 
-3.  在 CodedUITest1.cs 文件中，找到 **CodedUITestMethod** 方法、右键单击并选择“运行测试”，或从“测试资源管理器”中运行该测试。
+3. 在 CodedUITest1.cs 文件中，找到 CodedUITestMethod 方法，右键单击并选择“运行测试”，或从“测试资源管理器”中运行该测试。
 
-     当编码的 UI 测试运行时，SimpleWPFApp 将可见。 它会执行你在前面的过程中执行的步骤。 但是，当测试尝试选中复选框控件对应的复选框时，“测试结果”窗口将显示测试未通过。 原因是测试尝试选中该复选框，但不知道复选框控件此时处于禁用状态，直至进度栏 100% 完成为止。 通过可用于编码的 UI 测试的各种 `UITestControl.WaitForControlXXX()` 方法可以更正此问题和类似问题。 下面的过程将演示如何使用 `WaitForControlEnabled()` 方法更正导致此测试未通过的问题。 有关详细信息，请参阅[播放期间让编码的 UI 测试等待特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。
+   当编码的 UI 测试运行时，SimpleWPFApp 将可见。 它会执行你在前面的过程中执行的步骤。 但是，当测试尝试选中复选框控件对应的复选框时，“测试结果”窗口会显示测试未通过。 原因是测试尝试选中该复选框，但不知道复选框控件此时处于禁用状态，直至进度栏 100% 完成为止。 通过可用于编码的 UI 测试的各种 `UITestControl.WaitForControlXXX()` 方法可以更正此问题和类似问题。 下面的过程将演示如何使用 `WaitForControlEnabled()` 方法更正导致此测试未通过的问题。 有关详细信息，请参阅[播放期间让编码的 UI 测试等待特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。
 
-### <a name="edit-and-rerun-the-coded-ui-test"></a>编辑并重新运行编码的 UI 测试
+## <a name="edit-and-rerun-the-coded-ui-test"></a>编辑并重新运行编码的 UI 测试
 
-1.  在“测试资源管理器”窗口中，选择未通过的测试，然后在 **StackTrace** 部分中，选择指向 **UIMap.SimpleAppTest()** 的第一个链接。
+1.  在“测试资源管理器”窗口中，选择未通过的测试，然后在 StackTrace 部分中，选择指向 UIMap.SimpleAppTest() 的第一个链接。
 
 2.  将打开 UIMap.Designer.cs 文件，并在代码中突出显示错误点：
 
@@ -194,23 +200,23 @@ ms.lasthandoff: 04/26/2018
 3.  若要更正此问题，可以使用 `WaitForControlEnabled()` 方法使编码的 UI 测试等待 CheckBox 控件被启用，然后再继续此行。
 
     > [!WARNING]
-    > 请不要修改 UIMap.Designer.cs 文件。 每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都会覆盖在 UIMapDesigner.cs 文件中进行的所有代码更改。 如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。 UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。
+    > 请不要修改 UIMap.Designer.cs 文件。 每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都会覆盖所有代码更改。 如果必须修改录制的方法，请将其复制到 UIMap.cs 文件并对其重命名。 UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 CodedUITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。
 
-4.  在解决方案资源管理器中，找到编码的 UI 测试项目中的 **UIMap.uitest**。
+4.  在解决方案资源管理器中，找到编码的 UI 测试项目中的 UIMap.uitest。
 
-5.  打开 **UIMap.uitest** 的快捷菜单并选择“打开”。
+5.  打开 *UIMap.uitest* 的快捷菜单并选择“打开”。
 
      编码的 UI 测试编辑器中将显示编码的 UI 测试。 此时你可以查看并编辑编码的 UI 测试。
 
-6.  在“UI 操作”窗格中，选择要移动到 UIMap.cs 或 UIMap.vb 文件的测试方法 (SimpleAppTest)，以便使用在重新编译测试代码时不会重写的自定义代码功能。
+6.  在“UI 操作”窗格中，选择要移动到 UIMap.cs 或 UIMap.vb 文件的测试方法 (SimpleAppTest)。 通过将该方法移动到不同的文件中，可以添加自定义代码，重新编译测试代码时，不会覆盖这些自定义代码。
 
 7.  选择“编码的 UI 测试编辑器”工具栏上的“移动代码”按钮。
 
-8.  将显示一个 Microsoft Visual Studio 对话框。 该对话框将警告你，该方法将从 UIMap.uitest 文件移动到 UIMap.cs 文件，并且你将不能再使用编码的 UI 测试编辑器来编辑该方法。 选择 **“是”**。
+8.  将显示一个 Microsoft Visual Studio 对话框。 该对话框将警告你，该方法将从 UIMap.uitest 文件移动到 UIMap.cs 文件，无法再使用编码的 UI 测试编辑器来编辑该方法。 选择 **“是”**。
 
-     将从 UIMap.uitest 文件中移除该测试方法，并且“UI 操作”窗格中将不再显示该测试方法。 若要编辑移动的测试文件，请从解决方案资源管理器中打开 UIMap.cs 文件。
+     将从 UIMap.uitest 文件中移除该测试方法，并且“UI 操作”窗格中不再显示该测试方法。 若要编辑移动的测试文件，请从解决方案资源管理器中打开 UIMap.cs 文件。
 
-9. 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 工具栏上，选择“保存”。
+9. 在 Visual Studio 工具栏上，选择“保存”。
 
      对测试方法的更新保存在 UIMap.Designer 文件中。
 
@@ -234,7 +240,7 @@ ms.lasthandoff: 04/26/2018
     uICheckBoxCheckBox.Checked = this.SimpleAppTestParams.UICheckBoxCheckBoxChecked;
     ```
 
-13. 在 CodedUITest1.cs 文件中，查找 **CodedUITestMethod** 方法并注释掉或重命名对原始 SimpleAppTest() 方法的引用，然后将其替换为新的 ModifiedSimpleAppTest()：
+13. 在 CodedUITest1.cs 文件中，查找 CodedUITestMethod 方法，注释掉或重命名对原始 SimpleAppTest() 方法的引用，然后将其替换为新的 ModifiedSimpleAppTest()：
 
     ```csharp
     [TestMethod]
@@ -253,21 +259,21 @@ ms.lasthandoff: 04/26/2018
 
 16. 此时，编码的 UI 测试已成功完成测试中的所有步骤，“测试资源管理器”窗口中将显示“已通过”。
 
-### <a name="refactor-a-control-in-the-simplewpfapp"></a>在 SimpleWPFApp 中重构控件
+## <a name="refactor-a-control-in-simplewpfapp"></a>在 SimpleWPFApp 中重构控件
 
 1.  在 MainWindow.xaml 文件中，在设计器中选择按钮控件。
 
-2.  在“属性”窗口的顶部，将“名称”属性值从 button1 更改为 buttonA。
+2.  在属性窗口的顶部，将“名称”属性值从 button1 更改为 buttonA。
 
 3.  在 **“生成”** 菜单上，选择 **“生成解决方案”**。
 
-4.  在测试资源管理器中，运行 **CodedUITestMethod1**。
+4.  在“测试资源管理器”中，运行“CodedUITestMethod1”。
 
      由于编码的 UI 测试找不到最初在 UIMap 映射为 button1 的按钮控件，因此测试未通过。 重构会以此方式对编码的 UI 测试产生影响。
 
-5.  在“测试资源管理器”窗口的 **StackTrace** 部分中，选择 **UIMpa.ModifiedSimpleAppTest()** 旁边的第一个链接。
+5.  在“测试资源管理器”的 StackTrace 部分中，选择 UIMpa.ModifiedSimpleAppTest() 旁边的第一个链接。
 
-     将打开 UIMap.cs 文件。 代码中将突出显示错误点：
+     此时，将打开 UIMap.cs 文件。 代码中将突出显示错误点：
 
     ```csharp
     // Click 'Start' button
@@ -278,17 +284,17 @@ ms.lasthandoff: 04/26/2018
 
      若要更正此问题，可使用编码的 UI 测试生成器向 UIMap 中添加重构的控件。 可以更新测试的代码以使用该代码，如下一过程所示。
 
-### <a name="map-refactored-control-and-edit-and-rerun-the-coded-ui-test"></a>映射重构的控件并编辑和重新运行编码的 UI 测试
+## <a name="map-refactored-control-rerun-the-test"></a>在图中显示重构的控件并重新运行测试
 
-1.  在 CodedUITest1.cs 文件的 **CodedUITestMethod1()** 方法中，右键单击并选择“为编码的 UI 测试生成代码”，然后选择“使用编码的 UI 测试生成器”。
+1.  在 CodedUITest1.cs 文件的 CodedUITestMethod1() 方法中，右键单击并选择“为编码的 UI 测试生成代码”，然后选择“使用编码的 UI 测试生成器”。
 
-     将出现“UIMap - 编码的 UI 测试生成器”。
+     此时，将出现“UIMap - 编码的 UI 测试生成器”。
 
 2.  使用你之前创建的桌面快捷方式，运行你在之前创建的 SimpleWPFApp 应用程序。
 
-3.  在“UIMap - 编码的 UI 测试生成器”中，将十字线工具拖到 SimpleWPFApp 中的“启动”按钮。
+3.  在“UIMap - 编码的 UI 测试生成器”对话框中，将十字线工具拖到 SimpleWPFApp 中的“启动”按钮。
 
-     “Start”按钮包围在蓝色框中，编码的 UI 测试生成器需要几秒钟来为选定控件处理数据并显示控件属性。 请注意，**AutomationUId** 命名为 **buttonA**。
+     “启动”按钮包含在蓝色框内。 编码的 UI 测试生成器需要几秒钟来为选定控件处理数据和显示控件属性。 请注意，AutomationUId 的值为 buttonA。
 
 4.  在控件的属性中，选择左上角的箭头以展开 UI 控件图。 请注意，已选择 **UIStartButton1**。
 
@@ -296,17 +302,15 @@ ms.lasthandoff: 04/26/2018
 
      窗口底部的状态通过显示“所选控件已添加到 UI 控件图中”来验证操作。
 
-6.  在“UIMap - 编码的 UI 测试生成器”中，选择“生成代码”。
+6.  在“UIMap - 编码的 UI 测试生成器”对话框中，选择“生成代码”。
 
-     将显示“编码的 UI 测试生成器 –-生成代码”，其中包含一个注释，指示不需要任何新方法，并且只为 UI 控件图的更改生成代码。
+     此时，将显示“编码的 UI 测试生成器 - 生成代码”对话框，其中包含一个注释，指示不需要任何新方法，只为 UI 控件图的更改生成代码。
 
 7.  选择“生成”。
 
-8.  关闭 SimpleWPFApp.exe。
+8.  关闭 SimpleWPFApp。
 
 9. 关闭“UIMap - 编码的 UI 测试生成器”。
-
-     “UIMap - 编码的 UI 测试生成器”需要几秒钟来处理 UI 控件图更改。
 
 10. 在解决方案资源管理器中，打开 UIMap.Designer.cs 文件。
 
@@ -332,7 +336,7 @@ ms.lasthandoff: 04/26/2018
 
      现在，你可以修改编码的 UI 测试，以使用新映射的控件。 如前一过程所述，如果要在编码的 UI 测试中重写任何方法或属性，则必须在 UIMap.cs 文件中执行此操作。
 
-12. 在 UIMap.cs 文件中，添加一个构造函数，并指定 `SearchProperties` 属性的 `UIStartButton` 属性，以使用值为 `AutomationID` 的 `"buttonA":` 属性
+12. 在 UIMap.cs 文件中，添加一个构造函数，并指定 `UIStartButton` 属性的 `SearchProperties` 属性，以使用值为 `"buttonA":` 的 `AutomationID` 属性
 
     ```csharp
     public UIMap()
@@ -345,19 +349,17 @@ ms.lasthandoff: 04/26/2018
 
 14. 在“测试资源管理器”中，运行“CodedUITestMethod1”。
 
-     此时，编码的 UI 测试已成功完成测试中的所有步骤。  在“测试结果”窗口中，你会看到状态“已通过”。
+     此时，编码的 UI 测试已成功完成测试中的所有步骤。 在“测试结果”窗口中，你会看到状态“已通过”。
 
-## <a name="external-resources"></a>外部资源
+## <a name="videos"></a>视频
 
-### <a name="videos"></a>视频
+![视频链接](../data-tools/media/playvideo.gif)[编码的 UI 测试入门](http://go.microsoft.com/fwlink/?LinkID=230573)
 
-视频链接![](../data-tools/media/playvideo.gif "播放视频")[编码的 UI 测试入门](http://go.microsoft.com/fwlink/?LinkID=230573)
+![视频链接](../data-tools/media/playvideo.gif)[编码的 UI 测试的维护和调试](http://go.microsoft.com/fwlink/?LinkID=230574)
 
-视频链接![](../data-tools/media/playvideo.gif "播放视频")[编码的 UI 测试的维护和调试](http://go.microsoft.com/fwlink/?LinkID=230574)
+![视频链接](../data-tools/media/playvideo.gif)[手写编码的 UI 测试](http://go.microsoft.com/fwlink/?LinkID=230575)
 
-视频链接![](../data-tools/media/playvideo.gif "播放视频")[手工编码编码的 UI 测试](http://go.microsoft.com/fwlink/?LinkID=230575)
-
-### <a name="faq"></a>FAQ
+## <a name="faq"></a>FAQ
 
 [编码的 UI 测试常见问题](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
 

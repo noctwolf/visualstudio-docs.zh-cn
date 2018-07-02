@@ -9,11 +9,12 @@ description: 了解管理员如何将许可证分配给订阅者
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4cce35d361e3a1f8af2c2268e2ef6cbd061710ea
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 4325921bbaa75e0fb8a8a16947c45901b6f01649
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477374"
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 订阅管理员门户中分配许可证
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/27/2018
 
 2.  要分配给单个 Visual Studio 订阅者，请在表的顶部单击“添加”。
 
-    ![添加订阅者](_img\assign-license-add\assign-license-add.png)
+    <img alt="Add subscriber" src="_img\assign-license-add\assign-license-add.png" style="border: 1px solid #CCCCCC" />
 
 3.  在表单域中输入新订阅者的信息。 如果组织使用 Azure Active Directory，则此字段可充当搜索功能，查找当前目录中的用户，以便从搜索结果中选择正确的用户。 选择用户后，系统会自动填充该用户的名称、登录电子邮件和通知电子邮件，如下所示。 
 
@@ -37,36 +38,36 @@ ms.lasthandoff: 04/27/2018
     
     为此订阅者选择选项后，单击“添加”。
 
-    ![输入订阅者信息](_img\assign-license-add\add-subscriber-1.png)
-    ![Enter subscriber information](_img\assign-license-add\add-subscriber-2.png)
+    <img alt="Enter subscriber information" src="_img\assign-license-add\add-subscriber-1.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Enter subscriber information" src="_img\assign-license-add\add-subscriber-2.png" style="border: 1px solid #CCCCCC" />
 
 4.  添加订阅者后，系统会向新订阅者自动发送一封分配电子邮件，为其提供进一步说明。 通过选中订阅者和单击顶部菜单中的“重新发送”按钮，可以随时再次发送分配电子邮件。
 
-    ![订阅者已添加](_img\assign-license-add\add-subscriber-complete.png)
+    <img alt="Subscriber added" src="_img\assign-license-add\add-subscriber-complete.png" style="border: 1px solid #CCCCCC" />
 
 ## <a name="bulk-assignments"></a>批量分配
 1.  若要一次添加多个订阅者，请导航到“管理订阅者”选项卡。在顶部功能区，单击“批量添加”。 
 
-    ![批量添加](_img\assign-license-add\bulk-assign-add.png)
+    <img alt="Bulk add" src="_img\assign-license-add\bulk-assign-add.png" style="border: 1px solid #CCCCCC" />
 
 2. 批量分配会使用 Microsoft Excel 模板上传订阅者。 在“上传多个订阅者”对话框中，单击“下载”下载模板。 请务必下载本模板的最新版本。 如果使用旧版本，批量上传可能会失败。
 
-    ![上传多个订阅者](_img\assign-license-add\bulk-assign-upload.png)
+    <img alt="Upload multiple subscribers" src="_img\assign-license-add\bulk-assign-upload.png" style="border: 1px solid #CCCCCC" />
 
 3.  在 Excel 电子表格的字段中，填写想要为其分配订阅的个人的信息。 引用是可选字段。 如果模板任何部分的填写内容出错，系统会显示描述该问题的错误消息。 完成后在本地保存文件。
 为顺利地完成上传，请查看以下最佳做法：
     - 确保所有表单域均不含逗号。
     - 删除用户名等表单域前后的空格。
-    - 确保用户名在名字和姓氏两部分之间不含额外空格（例如，“Maggie May”不能输成“Maggie  May”，因为系统不会删减额外空格）![批量添加模板](_img\assign-license-add\bulk-template.png)
+    - 确保用户名在名字和姓氏两部分之间不含额外空格（例如，“Maggie May”不能输成“Maggie  May”，因为系统不会删减额外空格）。
+    <img alt="Bulk add template" src="_img\assign-license-add\bulk-template.png" style="border: 1px solid #CCCCCC" />
 
 4.  返回 Visual Studio 订阅管理门户，在“上传多个订阅者”对话框中，单击“浏览”。 导航到之前保存的 Excel 文件，然后单击“确定”。 屏幕上随即显示上传进度。 
 
-    ![批量添加上传](_img\assign-license-add\bulk-assign-upload-2.png)
+    <img alt="Bulk add upload" src="_img\assign-license-add\bulk-assign-upload-2.png" style="border: 1px solid #CCCCCC" />
 
 如果模板中存在错误，则无法上传。系统会显示该错误，你可以更正模板，然后再次尝试批量上传。
-
-   ![上传失败](_img\assign-license-add\bulk-assign-upload-fail.png)
+    <img alt="Upload fail" src="_img\assign-license-add\bulk-assign-upload-fail.png" style="border: 1px solid #CCCCCC" />
 
 上传成功后，系统会显示订阅者列表和一条确认消息。
 
-   ![上传完成](_img\assign-license-add\bulk-assign-upload-complete.png)
+   <img alt="Upload complete" src="_img\assign-license-add\bulk-assign-upload-complete.png" style="border: 1px solid #CCCCCC" />

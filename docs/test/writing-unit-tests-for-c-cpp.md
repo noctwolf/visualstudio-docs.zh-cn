@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752074"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 
@@ -51,19 +52,19 @@ Visual Studio 包含这些 C++ 测试框架，无需进行额外下载：
 
 在与要测试的代码处于相同解决方案中的一个或多个测试项目中定义和运行测试。 若要向现有解决方案添加新测试项目，请右键单击“解决方案资源管理器”中的“解决方案”节点，然后选择“添加”|“新建项目”。 然后在左窗格中选择“Visual C++ 测试”，并在中心窗格中选择一种项目类型。 下图显示在安装了“使用 C++ 的桌面开发”工作负荷时可用的测试项目：
 
-![C+ + 测试项目](media/cpp-new-test-project.png "C++ 新测试项目模板")
+![C++ 测试项目](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>创建对解决方案中的其他项目的引用
 
 若要使测试代码可以访问要测试的项目中的函数，请在测试项目中添加对该项目的引用。 右键单击“解决方案资源管理器”中的测试项目节点，并选择“添加”|“引用”。 随后在对话框中选择要测试的项目。
 
-![添加引用](media/cpp-add-ref-test-project.png "C++ 测试添加对要测试的项目的引用")
+![添加引用](media/cpp-add-ref-test-project.png)
 
 ### <a name="add-include-directives-for-header-files"></a>为头文件添加 #include 指令
 
 接下来，在单元测试 .cpp 文件中，为声明要测试的类型和函数的任何头文件添加 `#include` 指令。 输入 `#include "`，随后 IntelliSense 会激活以帮助进行选择。 对任何其他头文件重复此操作。
 
-![添加 include 指令](media/cpp-add-includes-test-project.png "C++ 测试为头文件添加 include")
+![添加 include 指令](media/cpp-add-includes-test-project.png)
 
 ### <a name="write-test-methods"></a>编写测试方法
 
@@ -72,7 +73,7 @@ Visual Studio 包含这些 C++ 测试框架，无需进行额外下载：
 
 测试项目中的 .cpp 文件有一个为你定义的存根类和方法，用作有关如何编写测试代码的示例。 请注意，签名使用 TEST_CLASS 和 TEST_METHOD 宏，它们使方法可在测试资源管理器窗口中被发现。
 
-![添加 include 指令](media/cpp-write-test-methods.png "C++ 测试为头文件添加 include")
+![添加 include 指令](media/cpp-write-test-methods.png)
 
 TEST_CLASS 和 TEST_METHOD 是 [Microsoft 本机策略框架](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)的一部分。 “测试资源管理器”以类似方式发现其他受支持框架中的测试方法。
 
@@ -94,7 +95,7 @@ TEST_METHOD 返回 void。 若要生成测试结果，请使用 `Assert` 类中�
 
 1. 在“测试”菜单中，依次选择“窗口” > “测试资源管理器”。 下图显示其测试尚未运行的测试项目。
 
-   ![运行测试之前的测试资源管理器](media/cpp-test-explorer.png "C++ 测试资源管理器")
+   ![运行测试之前的测试资源管理器](media/cpp-test-explorer.png)
 
    > [!NOTE]
    > CTest 与“测试资源管理器”的集成尚不可用。 从 CMake 主菜单运行 CTest 测试。
@@ -103,7 +104,7 @@ TEST_METHOD 返回 void。 若要生成测试结果，请使用 `Assert` 类中�
 
 1. 在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。 运行所有测试之后，窗口会显示哪些测试通过和哪些测试失败：
 
-![运行测试之后的测试资源管理器](media/cpp-test-explorer-passed.png "运行测试之后的 C++ 测试资源管理器")
+![运行测试之后的测试资源管理器](media/cpp-test-explorer-passed.png)
 
 对于失败的测试，该消息会提供有助于诊断原因的详细信息。 可以在失败的测试上右键单击并选择“调试选定的测试”以单步执行发生失败的函数。
 

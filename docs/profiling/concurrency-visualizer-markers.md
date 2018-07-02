@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e713292421613e835697037d5298a4a2c854f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692296"
 ---
 # <a name="concurrency-visualizer-markers"></a>并发可视化工具标记
 在并发可视化工具中，标记是代表应用事件的图标。  通常，应用生成这些事件是为了指定应用程序中的阶段或匹配项。  事件可以由应用或应用所使用的库和运行时生成。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
  每个生成标记的线程都有单独的时间线通道。  负责生成标记事件的线程的 ID 显示在标记通道的说明旁。  标记通道左侧显示的 ID 与当前进程中其他线程的 ID 匹配。  
   
 ## <a name="marker-importance"></a>标记重要性  
- 标记可以有四种重要性级别：低，常规，高和重要。  您可以根据重要性级别筛选标记源。  例如，如果只想查看重要性为常规或重要的特定源中的标记，则可以在[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框中配置筛选器。标记的重要性显示在其工具提示和[标记报表](../profiling/markers-report.md)中。  
+ 标记可以有四种重要性级别：低，常规，高和重要。  您可以根据重要性级别筛选标记源。  例如，如果只想查看重要性级别为“常规”或“重要”的特定源的标记，则可以在“[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)”对话框中配置筛选器。 标记重要性显示在其工具提示和[标记报告](../profiling/markers-report.md)中。  
   
 ## <a name="marker-category"></a>标记类别  
  标记类别表示来自同一来源的一组标记事件。  并发可视化工具使用颜色来区分不同的标志和跨度类别。 您可以配置并发可视化工具，使之用类别来筛选来自特定事件提供程序的事件标记。  使用[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框以配置筛选器。  

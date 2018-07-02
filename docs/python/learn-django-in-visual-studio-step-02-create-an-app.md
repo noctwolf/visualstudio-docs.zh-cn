@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750501"
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>教程步骤 2：使用视图和页面模板创建 Django 应用
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 05/23/2018
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>步骤 2-1：创建具有默认结构的应用
 
-Django 应用是一个单独的 Python 包，其中包含一组用于特定用途的相关文件。 一个 Django 项目可以包含任意数量的应用，这反映了一个事实：Web 主机可用于满足单个域名中任意数量的单独入口点。 例如，像 contoso.com 这样的域的 Django 项目可能包含一个面向 www.contoso.com 的应用、一个面向 support.contoso.com 的应用以及一个面向 docs.contoso.com 的应用。在这种情况下，Django 项目处理网站级 URL 路由和设置（在其 `urls.py` 和 `settings.py` 文件中），同时每个应用在其内部路由、视图、模型、静态文件和管理界面中都有其自己的不同样式和行为。
+Django 应用是一个单独的 Python 包，其中包含一组用于特定用途的相关文件。 一个 Django 项目可以包含任意数量的应用，这反映了一个事实：Web 主机可用于满足单个域名中任意数量的单独入口点。 例如，像 contoso.com 这样的域的 Django 项目可能包含一个面向 www.contoso.com 的应用、一个面向 support.contoso.com 的应用以及一个面向 docs.contoso.com 的应用。 在这种情况下，Django 项目处理网站级 URL 路由和设置（在其 `urls.py` 和 `settings.py` 文件中），同时每个应用在其内部路由、视图、模型、静态文件和管理界面中都有其自己的不同样式和行为。
 
 Django 应用通常以一组标准文件开始。 Visual Studio 提供项模板来初始化 Django 项目中的 Django 应用，并提供起到相同作用的集成菜单命令：
 
@@ -210,9 +211,7 @@ Django 页面模板是一个 HTML 块，它可以包含称为“变量”的任�
 
 1. 运行项目并观察输出。 应该会看到类似于步骤 2-2 中看到的消息，表明模板可正常使用。
 
-    但是，请注意，在 `content` 属性中使用的 HTML 只呈现为纯文本，因为 `render` 函数会自动转义该 HTML。 尽管可以避开转义，但最好在一开始就避免使用内联 HTML。 格式和样式最好保留在页面模板中，而不是代码中，这样一来，视需要创建其他变量就变得非常简单。
-
-    例如，更改 `templates/index.html` 以匹配下列标记，将添加一个页标题并在页面模板中保留所有格式：
+    但是，请注意，在 `content` 属性中使用的 HTML 只呈现为纯文本，因为 `render` 函数会自动转义该 HTML。 自动转义防止意外漏洞注入攻击：开发人员通常从一页收集输入并通过模板占位符将其用作另一页的值。 转义还充当提醒：最好将 HTML 放置在页面模板中以及代码外。 还好，在需要时创建其他变量比较简单。 例如，更改 `templates/index.html` 以匹配下列标记，将添加一个页标题并在页面模板中保留所有格式：
 
     ```html
     <html>

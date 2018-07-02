@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e3b082c57e48d7c70fdda22c68c1a9d8980f71
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 78b7fbb6480f0793b1641159cd3f06c471907603
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750098"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函数
 初始化标记提供程序。 必须在任何其他并发可视化工具 SDK 函数之前调用。  
@@ -42,7 +43,7 @@ HRESULT CvInitProvider(
 ## <a name="return-value"></a>返回值  
  成功初始化提供程序时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  **标头：** cvmarkers.h  
   
 ## <a name="see-also"></a>请参阅  

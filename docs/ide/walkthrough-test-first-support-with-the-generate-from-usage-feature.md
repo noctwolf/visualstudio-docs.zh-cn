@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748187"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>演练：带有“使用时生成”功能的测试优先开发
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 05/22/2018
 
 3.  在中间窗格中，选择“单元测试项目”并接受 `UnitTestProject1` 的默认名称。 下图显示了出现在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]中的对话框。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，对话框看起来与此类似。
 
-     ![“新建测试项目”对话框](../ide/media/newproject_test.png "NewProject_Test")
+     ![“新建测试项目”对话框](../ide/media/newproject_test.png)
 
 4.  选择“确定”，关闭“新建项目”对话框。
 
@@ -66,9 +67,9 @@ ms.lasthandoff: 05/22/2018
 
 3.  找到 `TestMethod1()` 方法并将其重命名为 `DefaultAutomobileIsInitializedCorrectly()`。 在此方法中，创建名为 `Automobile` 的类的新实例，如以下屏幕截图所示。 将出现一条波浪形下划线，指示编译时错误，且[快速操作](../ide/quick-actions.md)灯泡会出现在左边距（仅 C#）中，或直接出现在波浪线下（如果将鼠标悬停在波浪线上）。
 
-     ![Visual Basic 中的快速操作](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")
+     ![Visual Basic 中的快速操作](../ide/media/genclass_underlinevb.png)
 
-     ![C&#35; 中的快速操作](../ide/media/genclass_underline.png "GenClass_Underline")
+     ![C&#35; 中的快速操作](../ide/media/genclass_underline.png)
 
 4.  选择或单击“快速操作”灯泡。 将会看到一条错误消息，表明未定义类型 `Automobile`。 也会显示一些解决方案。
 
@@ -76,7 +77,7 @@ ms.lasthandoff: 05/22/2018
 
 6. 在“项目”列表中，单击“GFUDemo\_VB”或“GFUDemo_CS”，指示 Visual Studio 将文件添加到类库项目而不是测试项目。 如果尚未选中，则选择“创建新文件”并将其命名为 Automobile.cs 或 Automobile.vb。
 
-     ![“生成新类型”对话框](../ide/media/genotherdialog.png "GenOtherDialog")
+     ![“生成新类型”对话框](../ide/media/genotherdialog.png)
 
 6.  单击“确定”  以关闭对话框并创建新文件。
 
@@ -133,7 +134,7 @@ ms.lasthandoff: 05/22/2018
 
      下图显示了“测试结果”  窗口。
 
-     ![失败的测试结果](../ide/media/testsfailed.png "TestsFailed")
+     ![失败的测试结果](../ide/media/testsfailed.png)
 
 2.  在“测试结果”窗口中，双击每个测试结果行以转到每个测试的位置。
 
@@ -155,7 +156,7 @@ ms.lasthandoff: 05/22/2018
 
      这次测试通过了。 下图显示了“测试结果”  窗口。
 
-     ![通过的测试结果](../ide/media/testspassed.png "TestsPassed")
+     ![通过的测试结果](../ide/media/testspassed.png)
 
 ## <a name="see-also"></a>请参阅
 

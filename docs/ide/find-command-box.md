@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c93c2d77f62fe22c682240b879b85af8040974
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5e11d83ea0c87bae058f5421c424922fa389a9c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752406"
 ---
 # <a name="findcommand-box"></a>“查找/命令”框
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 
 “查找/命令”框保留最后输入的 20 个项，并将它们显示在下拉列表中。 选择箭头键可以浏览该列表。
 
-![Find&#47;Command Box](../ide/media/findcommandbox.png "FindCommandBox")
+![“查找&#47;命令”框](../ide/media/findcommandbox.png)
 
 ## <a name="searching-for-text"></a>搜索文本
 

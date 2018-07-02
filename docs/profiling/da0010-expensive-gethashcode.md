@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: add91942b6a97bf9da496d1664b2a799a9c50d1c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a670eb3145f3fd2ab9478dc68e0490cdeda8ac56
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749955"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010：高开销 GetHashCode
 |||  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
  对该类型的 GetHashCode 方法的调用在分析数据中占很大比例或此方法分配内存。  
   
 ## <a name="rule-description"></a>规则说明  
- 哈希是一项用于快速定位大型集合中的某个特定项的技术。 因为哈希表可能非常大，而且必须支持极高的访问速率，所以哈希表应非常有效。 此要求的含义是 .NET Framework 中的 GetHashCode 方法不应分配内存。 分配内存会增加垃圾回收器上的负载，并向潜在延迟公开该方法（如果因分配请求而必须运行垃圾回收）。  
+ 哈希是一项用于快速定位大型集合中的某个特定项的技术。 因为哈希表很大，且必须支持极高的访问速率，所以哈希表应该很有效。 此要求的含义是 .NET Framework 中的 GetHashCode 方法不应分配内存。 分配内存会增加垃圾回收器上的负载，并向潜在延迟公开该方法（如果因分配请求而需要运行垃圾回收）。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  降低方法的复杂性。

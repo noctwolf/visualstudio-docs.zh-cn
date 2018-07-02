@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1509c4fda8759e3ad8dece654921fc56b8b9c2e7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 26b5296dcbd2630d70bae91c539df36a30e97722
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750137"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023：垃圾回收占用的 CPU 时间很多
 |||  
@@ -47,4 +48,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="how-to-investigate-a-warning"></a>如何调查警告  
  双击“错误列表”窗口中的消息，导航到分析数据的[标记视图](../profiling/marks-view.md)。 查找 **.NET CLR Memory\\% Time in GC** 列。 确定程序执行中是否存在托管内存垃圾回收的开销高于其他阶段的某个阶段。 将 %Time in GC 的值与**第 0 代回收 #****第 1 代回收 #**、 **第 2 代回收 #** 值中报告的垃圾回收速率进行比较。  
   
- %Time in GC 值尝试报告应用程序执行垃圾回收处理所用的时间总量（与处理总量成正比）。 请注意，有时 % Time in GC 值可能报告非常高的值，但这不是由垃圾回收过多引起的。 有关计算 % Time in GC 值的方法的详细信息，请参阅 MSDN 上 Maoni 博客的 [Difference Between Perf Data Reported by Different Tools – 4](http://go.microsoft.com/fwlink/?LinkId=177863)（不同工具所报告的性能数据间的差异 - 4）。 如果垃圾回收期间发生页面故障或计算机上其他操作的优先级高于此应用程序，则 %Time in GC 计数器将反映这些额外的延迟。
+ %Time in GC 值尝试报告应用程序执行垃圾回收处理所用的时间总量（与处理总量成正比）。 请注意，有时 % Time in GC 值可能报告很高的值，但这不是由垃圾回收过多引起的。 有关计算 % Time in GC 值的方法的详细信息，请参阅 MSDN 上 Maoni 博客的 [Difference Between Perf Data Reported by Different Tools – 4](http://go.microsoft.com/fwlink/?LinkId=177863)（不同工具所报告的性能数据间的差异 - 4）。 如果垃圾回收期间发生页面故障或计算机上其他操作的优先级高于此应用程序，则 %Time in GC 计数器将反映这些额外的延迟。

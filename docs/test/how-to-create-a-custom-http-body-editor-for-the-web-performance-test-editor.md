@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d43bd048b19f0a9b8516769440fafb5a5013b867
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750690"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：为 Web 性能测试编辑器创建自定义 HTTP 正文编辑器
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  从“工具箱”的“公共控件”类别下，将 <xref:System.Windows.Forms.RichTextBox> 拖动到 UserControl1 的曲面上。
 
-6.  选择 <xref:System.Windows.Forms.RichTextBox> 控件右上角的操作标记字形（![智能标记字形](../test/media/vs_winformsmttagglyph.gif " VS_WinFormSmtTagGlyph")），然后选择“在父容器中停靠”。
+6.  选择 <xref:System.Windows.Forms.RichTextBox> 控件右上角的操作标记标志符号（![智能标记字形](../test/media/vs_winformsmttagglyph.gif)），然后选择“在父容器中停靠”。
 
 7.  在解决方案资源管理器中，右键单击 Windows 窗体库项目，然后选择“属性”。
 

@@ -1,6 +1,6 @@
 ---
-title: Visual Studio IntelliSense
-ms.date: 11/04/2016
+title: 参数信息、成员列表和快速信息
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -17,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afa66a9085c16700306330acdbfba3b9667fc03
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748470"
 ---
-# <a name="using-intellisense-in-visual-studio"></a>使用 Visual Studio IntelliSense
+# <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 IntelliSense
 
-IntelliSense 是许多功能的总称：列出成员、参数信息、快速信息和完成单词。 使用这些功能，可以详细了解使用的代码、跟踪键入的参数，还可以通过轻敲几个按键来添加属性和方法调用。
+IntelliSense 是一种代码补全辅助工具，它包含许多功能：成员列表、参数信息、快速信息和完成单词。 使用这些功能，可以详细了解使用的代码、跟踪键入的参数，还可通过轻敲几个按键来添加属性和方法调用。
 
 IntelliSense 的许多方面只支持特定语言。 有关不同语言的 IntelliSense 的详细信息，请参阅[另请参阅](#see-also)部分中列出的主题。
 
@@ -37,7 +38,7 @@ IntelliSense 的许多方面只支持特定语言。 有关不同语言的 Intel
 
 在成员列表中，左边的图标表示成员类型，如命名空间、类、函数或变量。 有关图标的列表，请参阅[类视图和对象浏览器图标](../ide/class-view-and-object-browser-icons.md)。 该列表可能会很长，你可以按 Page Up 和 Page Down 上下移动列表内容。
 
-![Visual Studio 成员列表](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
+![Visual Studio 成员列表](../ide/media/vs2015_intellisense.png)
 
 可以通过按 Ctrl+J、选择“编辑” > “IntelliSense” > “列出成员”或选择编辑器工具栏上的“列出成员”按钮，手动调用“列出成员”功能。 如果在空行上或可识别范围之外调用该功能，列表中会显示全局命名空间中的符号。
 
@@ -51,7 +52,7 @@ IntelliSense 的许多方面只支持特定语言。 有关不同语言的 Intel
 
 以粗体显示的参数指示键入函数时所需的下一参数。 对于重载函数，可以使用“向上键”和“向下键”查看函数重载的替代参数信息。
 
-![参数信息](../ide/media/vs2015_param_info.png "VS2015_param_Info")
+![参数信息](../ide/media/vs2015_param_info.png)
 
 当用 XML 文档注释批注函数和参数时，相关注释也将显示为“参数信息”。 有关详细信息，请参阅[提供 XML 代码注释](../ide/supplying-xml-code-comments.md)。
 
@@ -61,11 +62,11 @@ IntelliSense 的许多方面只支持特定语言。 有关不同语言的 Intel
 
 “快速信息”可显示代码中任意标识符的完整声明。
 
-![Visual Studio 快速信息](../ide/media/vs2015_quick_info.png "VS2015_Quick_info")
+![Visual Studio 快速信息](../ide/media/vs2015_quick_info.png)
 
 从“列出成员”框选择成员时也会显示“快速信息”。
 
-![C&#35; 代码文件中的参数信息](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
+![C&#35; 代码文件中的参数信息](../ide/media/vs2015_paraminfo.png)
 
 可通过选择“编辑” > “IntelliSense” > “参数信息”、按 Ctrl+I 或选择编辑器工具栏上的“快速信息”，手动调用“快速信息”。
 

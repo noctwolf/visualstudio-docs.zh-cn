@@ -12,11 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d08abca1d20641a8e12261577ec1fdcf8179e080
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749455"
 ---
 # <a name="custom-native-etw-heap-events"></a>自定义本机 ETW 堆事件
 
@@ -136,7 +137,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>跟踪内存使用量
+## <a name="track-memory-usage"></a>跟踪内存使用情况
 随着这些调用就位，现可使用 Visual Studio 中的标准**内存使用量**工具跟踪自定义堆使用情况。  有关如何使用此工具的详细信息，请参阅[内存使用量](../profiling/memory-usage.md)文档。 确保已通过快照启用堆分析，否则你的自定义堆使用情况将不会显示。 
 
 ![启用堆分析](media/heap-enable-heap.png)
@@ -145,7 +146,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 ![堆选择](media/heap-example-custom-heap.png)
 
-通过使用上面的代码示例，当 `MemoryPool` 创建 `VSHeapTracker::CHeapTracker` 对象，并且我们自己的 `allocate` 方法在调用 `AllocateEvent` 方法时，你可以查看该自定义分配的结果，结果显示 3 个实例，合计 24 个字节，均为类型 `Foo`。
+通过上面的代码示例，当 `MemoryPool` 创建 `VSHeapTracker::CHeapTracker` 对象，并且我们自己的 `allocate` 方法在调用 `AllocateEvent` 方法时，你可以查看该自定义分配的结果，结果显示三个实例，合计 24 个字节，均为类型 `Foo`。
 
 默认的 NT 堆看起来与前面的相同，同时添加了 `CHeapTracker` 对象。
 
@@ -154,7 +155,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 如[内存使用量](../profiling/memory-usage.md)文档中所述，与标准的 Windows 堆一样，你还可使用此工具比较快照，并查找自定义堆中的泄漏和损坏。
 
 > [!TIP]
-> Visual Studio 在**性能分析**工具集中还包含**内存使用量**工具，可在“调试”>“性能探查器”菜单选项或通过 **Alt+F2** 键盘组合启用该工具。  此功能不包含堆跟踪，并且不会按如下所述显示你的自定义堆。  只有“诊断工具”窗口包含此功能，可以使用启用“调试”>“Windows”>“显示诊断工具”菜单或 **Ctrl+Alt+F2** 键盘组合来启用此窗口。
+> Visual Studio 在性能分析工具集中还包含内存使用情况工具，可在“调试”>“性能探查器”菜单选项或通过 Alt+F2 组合键启用该工具。  此功能不包含堆跟踪，并且不会按如下所述显示你的自定义堆。  只有“诊断工具”窗口包含此功能，可通过选择“调试”>“Windows”>“显示诊断工具”菜单或 Ctrl+Alt+F2 组合键来启用此窗口。
 
 ## <a name="see-also"></a>请参阅
 [分析工具](../profiling/profiling-tools.md)  

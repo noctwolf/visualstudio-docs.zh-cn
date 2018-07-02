@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f2c371f50accf52c3c2702c3f09770f0bbe9b49
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6d673877ecabcbd68759c7f1e7fa821335f8eb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746203"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定生成事件 (Visual Basic)
 
@@ -128,7 +129,7 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
 
 1.  为要发布的项目创建 Windows 应用程序。 在“文件”菜单上，单击“新建”，然后单击“项目”。
 
-2.  在“新建项目”对话框的“Visual Basic”节点中，依次选择“Windows 经典桌面”、“Windows 窗体应用”模板。 将项目命名为 `VBWinApp`。
+2.  在“新建项目”对话框的“Visual Basic”节点中，依次选择“Windows 桌面”、“Windows 窗体应用”模板。 将项目命名为 `VBWinApp`。
 3.  在“解决方案资源管理器”中选择一个项目，然后在“项目”菜单上单击“属性”。
 
 4.  在项目设计器中，转到“发布”页面，并将“发布位置”设置为 C:\TEMP。

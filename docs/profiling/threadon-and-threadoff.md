@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a55bcfd09a99d9808bc378e680c33594007661e1
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f9ef0bfc6c2030fc12d5743e91cb7b660cbe241f
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34476672"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 和 ThreadOff
 VSPerfCmd.exe **ThreadOff** 和 **ThreadOn** 子命令只能在使用检测方法的命令行分析会话中使用。 **ThreadOff** 和 **ThreadOn** 可暂停和继续指定线程的分析。 **ThreadOff** 停止线程分析，而 **ThreadOn** 启动线程分析。  
@@ -29,7 +30,7 @@ VSPerfCmd.exe **ThreadOff** 和 **ThreadOn** 子命令只能在使用检测方�
   
 -   **ThreadOn** 将线程启动/停止计数立即设置为 1，从而继续分析。  
   
- 有关更多信息，请参阅[分析工具 API](../profiling/profiling-tools-apis.md)。  
+ 有关详细信息，请参阅[分析工具 API](../profiling/profiling-tools-apis.md)。  
   
 ## <a name="syntax"></a>语法  
   

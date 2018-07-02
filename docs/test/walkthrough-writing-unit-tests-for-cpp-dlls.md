@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751827"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：编写 C/C++ DLL 单元测试
 
@@ -45,11 +46,11 @@ ms.lasthandoff: 04/26/2018
 
      在本演练中，该测试项目的名称为 `NativeRooterTest`。
 
-     ![创建 C++ 单元测试项目](../test/media/utecpp01.png "UteCpp01")
+     ![创建 C++ 单元测试项目](../test/media/utecpp01.png)
 
 2.  在新项目中，检查 **unittest1.cpp**
 
-     ![具有 TEST&#95;CLASS 和 TEST&#95;METHOD 的测试项目](../test/media/utecpp2.png "UteCpp2")
+     ![具有 TEST_CLASS 和 TEST_METHOD 的测试项目](../test/media/utecpp2.png)
 
      请注意：
 
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/26/2018
 
          测试显示在“通过的测试” 下方。
 
-         ![具有 1 个已通过测试的单元测试资源管理器](../test/media/utecpp04.png "UteCpp04")
+         ![具有 1 个已通过测试的单元测试资源管理器](../test/media/utecpp04.png)
 
 ##  <a name="create_dll_project"></a>创建 DLL 项目
 
@@ -90,17 +91,17 @@ ms.lasthandoff: 04/26/2018
 
      在本演练中，该项目的名称为 `RootFinder`。
 
-     ![创建 C++ Win32 项目](../test/media/utecpp05.png "UteCpp05")
+     ![创建 C++ Win32 项目](../test/media/utecpp05.png)
 
 2.  在 Win32 应用程序向导中，选择“DLL”  和“导出符号”  。
 
      “导出符号”  选项生成可用来声明导出方法的便利宏。
 
-     ![为 DLL 设置的 C++ 项目向导和导出符号](../test/media/utecpp06.png "UteCpp06")
+     ![为 DLL 设置的 C++ 项目向导和导出符号](../test/media/utecpp06.png)
 
 3.  在主体 .h 文件中声明导出函数：
 
-     ![使用 API 宏新建 DLL 代码项目和 .h 文件](../test/media/utecpp07.png "UteCpp07")
+     ![使用 API 宏新建 DLL 代码项目和 .h 文件](../test/media/utecpp07.png)
 
      声明符 `__declspec(dllexport)` 会导致类的公共和受保护成员在 DLL 外可见。 有关详细信息，请参阅 [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes)。
 
@@ -120,13 +121,13 @@ ms.lasthandoff: 04/26/2018
 
     1.  打开一个测试项目的属性，选择“通用属性” 、“框架和引用” 。
 
-         ![C++ 项目属性 | 框架和引用](../test/media/utecpp08.png "UteCpp08")
+         ![C++ 项目属性 | 框架和引用](../test/media/utecpp08.png)
 
     2.  选择“添加新引用” 。
 
          在“添加引用”  对话框中，选择 DLL 项目并选择“添加” 。
 
-         ![C++ 项目属性 | 添加新引用](../test/media/utecpp09.png "UteCpp09")
+         ![C++ 项目属性 | 添加新引用](../test/media/utecpp09.png)
 
 2.  在主体单元测试 .cpp 文件中，将 DLL 代码的 .h 文件包括在内：
 
@@ -160,7 +161,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  在“测试资源管理器”中，选择 **“全部运行”**。
 
-     ![单元测试资源管理器 &#45; 已通过基本测试](../test/media/utecpp10.png "UteCpp10")
+     ![单元测试资源管理器 - 已通过基本测试](../test/media/utecpp10.png)
 
  你已设置测试和代码项目，并已验证可运行测试（运行测试项目中的函数）。 现在可以开始编写实际测试和代码。
 
@@ -189,7 +190,7 @@ ms.lasthandoff: 04/26/2018
 
      新未通过测试。
 
-     ![RangeTest 未通过](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest 未通过](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > 验证每个测试是否在编写之后立即失败。 这有助于避免编写从不失败的测试这一易犯错误。
@@ -217,7 +218,7 @@ ms.lasthandoff: 04/26/2018
 
      两个测试均通过。
 
-     ![单元测试资源管理器 &#45; 已通过范围测试](../test/media/utecpp12.png "UteCpp12")
+     ![单元测试资源管理器 - 已通过范围测试](../test/media/utecpp12.png)
 
     > [!TIP]
     > 通过一次添加一个测试来开发代码。 确保每次迭代后所有的测试都会通过。
@@ -263,7 +264,7 @@ ms.lasthandoff: 04/26/2018
 
      失败的断言会突出显示。 失败消息会显示在测试资源管理器的详细信息窗格中。
 
-     ![NegativeRangeTests 失败](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests 未通过](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 4.  若要查看未通过测试的原因，请单步调试函数：
 
@@ -291,10 +292,10 @@ ms.lasthandoff: 04/26/2018
 
 6.  现在所有测试均通过。
 
-     ![所有测试均通过](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+     ![所有测试通过](../test/media/ute_ult_alltestspass.png)
 
 > [!TIP]
-> 如果各个测试没有依赖项会阻止其以任意顺序运行，请使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切换按钮来启用执行并行测试。 这可以显著降低运行所有测试所需的时间。
+> 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE_parallelicon - 小](../test/media/ute_parallelicon-small.png)切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
 
 ##  <a name="refactor"></a> 在不更改测试的情况下重构代码

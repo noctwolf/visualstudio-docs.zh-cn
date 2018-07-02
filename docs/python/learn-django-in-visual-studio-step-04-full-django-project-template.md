@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750358"
 ---
 # <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>教程步骤 4：使用完整的 Django Web 项目模板
 
 上一步：[为静态文件提供服务、添加页面和使用模板继承](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
 
-通过在 Visual Studio 中的“空白 Django 应用项目”模板上生成应用，你已经了解了 Django 的基础知识，现在可以轻松地了解“Django Web 项目”模板生成的更完整的应用。
+通过在 Visual Studio 中的“空白 Django Web 项目”模板上生成应用，你已经了解了 Django 的基础知识，现在可以轻松地了解“Django Web 项目”模板生成的更完整的应用。
 
 在此步骤中，将执行以下操作：
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 05/04/2018
 
 1. 因为模板再次包含 `requirements.txt` 文件，Visual Studio 会询问在何处安装这些依赖项。 选择“安装到虚拟环境”选项，然后在“添加虚拟环境”对话框中，选择“创建”以接受默认设置。
 
-1. 在 Python 完成设置虚拟环境后，按照 `readme.html` 中显示的说明创建 Django 超级用户（即管理员）。 只需右键单击 Visual Studio 项目并选择“Python” > “Django 创建超级用户”命令，然后按照提示进行操作。 请务必记录你的用户名和密码，因为在执行应用的身份验证功能时会用到。
+1. 在 Visual Studio 完成设置虚拟环境后，按照 `readme.html` 中显示的说明创建 Django 超级用户（即管理员）。 只需右键单击 Visual Studio 项目并选择“Python” > “Django 创建超级用户”命令，然后按照提示进行操作。 请务必记录你的用户名和密码，因为在执行应用的身份验证功能时会用到。
 
 1. 若要将“DjangoWeb”项目设置为 Visual Studio 解决方案的默认值，可以在“解决方案资源管理器”中右键单击该项目，然后选择“设为启动项目”。 启动项目（以粗体显示）会在启动调试器时运行。
 

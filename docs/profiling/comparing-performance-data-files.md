@@ -13,22 +13,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56982cdef9c27beb4e5aeb82fa9d9741e87fbd7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 20324a3026f5c32fcc1525f1c5afcd20b1b62332
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690726"
 ---
-# <a name="comparing-performance-data-files"></a>比较性能数据文件
-凭借分析工具数据文件比较功能，可以选择两个报表文件（.VSP 或 .VSP）文件，然后生成显示从一个分析会话到另一个分析会话出现的差异、性能回归和改进。  
+# <a name="compare-performance-data-files"></a>比较性能数据文件
+凭借分析工具数据文件比较功能，可以选择两个报表文件（.vsp 或 .vsp 文件）并生成报告，显示从一个分析会话到另一个分析会话出现的差异、性能回归和改进。  
   
- 来自 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具中的数据文件比较报告将一个分析数据文件中的分析结果与另一个数据文件中的基线分析的结果进行比较。 必须已使用同一分析方法生成了这两个数据文件。 将所分析的比较的报告另存为 .vsps 文件。  
+ 来自 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具中的数据文件比较报告将一个分析数据文件中的分析结果与另一个数据文件中的基线分析的结果进行比较。 必须已使用同一分析方法生成了这两个数据文件。 将分析的比较报告另存为 .vsps 文件。  
   
  比较报告视图呈现已更改数据的表视图。 该表呈现增量，或基线中的更改。 增量是通过确定旧值、基线值和新分析中的结果值之间的差异来计算的。  
   
  探查器数据的比较可基于代码中的函数、应用程序中的模块、行、指令指针 (IP) 和类型。  
   
- 可用于比较的分析数据包括列中显示的信息。 有关这些列名称的定义，请参阅[性能报告视图](../profiling/performance-report-views.md)。  
+ 可用于比较的分析数据包括列中显示的信息。 有关这些列名的定义，请参阅[性能报告视图](../profiling/performance-report-views.md)。  
   
  可设置阈值以降噪并筛选出未按指定量更改的行的比较表视图中的任何数据。  
   

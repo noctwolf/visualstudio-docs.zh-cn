@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8d697ee37cb8412e4fa0a51096858d9fa4b17877
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690788"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>“高级设置”对话框（并发可视化工具）
 通过使用并发可视化工具中的“高级设置”对话框，可以控制如何收集跟踪。  对话框中有符号、仅我的代码、缓冲、筛选、CLR 事件、标记、提供程序和文件的选项卡。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="markers"></a>标记  
  在“标记”选项卡上，可以配置在并发可视化工具中显示为“标记”的 ETW 提供程序组。  还可以根据重要性级别和 ETW 类别来筛选“标记”集合。  如果使用[并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md) 并使用自己的标记提供程序，则可以在此处注册，以便其显示在“线程”视图中。  
   
-### <a name="adding-a-new-provider"></a>添加新提供程序  
+### <a name="add-a-new-provider"></a>添加新提供程序  
  如果代码使用[并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md) 或生成符合 <xref:System.Diagnostics.Tracing.EventSource> 约定的 ETW 事件，则可以通过在此对话框中注册这些事件，在并发可视化工具中查看它们。  
   
  在“名称”字段中，输入一个名称，用以描述由提供程序生成的事件。  在“GUID”字段中，输入与此提供程序关联的 GUID。 （GUID 与每个 ETW 提供程序相关联。）  
@@ -74,15 +75,15 @@ ms.lasthandoff: 05/17/2018
 ## <a name="files"></a>文件  
  在“文件”选项卡上，可以指定每次收集跟踪时用来存储跟踪文件的目录。  并发可视化工具会为每个所收集的跟踪生成四个文件：  
   
--   内核模式事件跟踪日志 (ETL) 文件 (*.kernel.etl)  
+-   内核模式事件跟踪日志 (ETL) 文件 (.kernel.etl*)  
   
--   用户模式事件跟踪日志文件 (*.user.etl)  
+-   用户模式事件跟踪日志文件 (.user.etl*)  
   
--   并发可视化工具数据文件 (*.CVData)  
+-   并发可视化工具数据文件 (.CVData*)  
   
--   并发可视化工具跟踪文件 (*.CVTrace)  
+-   并发可视化工具跟踪文件 (.CVTrace*)  
   
- 两个 ETL 文件用于存储原始跟踪数据，而两个并发可视化工具文件用于存储处理后的数据。  处理跟踪后，通常不使用原始 ETL 文件。  选择“在分析后删除事件跟踪日志 (ETL) 文件”复选框后，将减少磁盘上存储的跟踪数据量。  
+ 两个 ETL 文件用于存储原始跟踪数据，而两个并发可视化工具文件用于存储处理后的数据。  处理跟踪后，通常不使用原始 ETL 文件。  选择“在分析后删除事件跟踪日志(ETL)文件”复选框后，将减少磁盘上存储的跟踪数据量。  
   
 ## <a name="see-also"></a>请参阅  
  [仅我的代码](../profiling/just-my-code-threads-view.md)   
