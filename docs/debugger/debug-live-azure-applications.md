@@ -36,7 +36,7 @@ Snappoints 以及 logpoints 都类似于断点，但与断点，不同 snappoint
 
 ## <a name="prerequisites"></a>系统必备
 
-* 快照调试器功能仅适用于 Visual Studio 2017 Enterprise 15.5 或使用更高版本**ASP.NET 和 web 开发工作负荷**。 有关 ASP.NET Core，你还需要。*.NET Core 开发**安装的工作负荷。
+* 快照调试器功能仅适用于 Visual Studio 2017 Enterprise 15.5 或使用更高版本**ASP.NET 和 web 开发工作负荷**。 有关 ASP.NET Core，你还需要。**.NET Core 开发**安装的工作负荷。
 
     如果它尚未安装，请安装[Visual Studio 2017 Enterprise 版本 15.5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)或更高版本。 如果你正在从以前的 Visual Studio 2017 安装更新，运行 Visual Studio 安装程序和签入的快照调试器组件**ASP.NET 和 web 开发工作负荷**。
 
