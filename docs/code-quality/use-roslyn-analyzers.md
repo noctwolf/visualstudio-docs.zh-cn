@@ -82,7 +82,7 @@ A[规则集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 
 ### <a name="to-set-rule-severity-from-solution-explorer"></a>若要从解决方案资源管理器中设置规则严重性
 
-1. 在**解决方案资源管理器**，展开**引用** > **分析器**(**依赖关系** >  **分析器**有关.NET 核心项目)。
+1. 在**解决方案资源管理器**，展开**引用** > **分析器**(**依赖关系** >  **分析器**有关.NET Core 项目)。
 
 1. 展开包含你想要设置的严重性的规则的程序集。
 
@@ -127,7 +127,7 @@ A[规则集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
    在**预览更改**对话框中，选择**应用**。
 
 > [!NOTE]
-> 在.NET 核心项目中，如果添加对具有 NuGet 分析器的项目的引用这些分析器将自动添加到依赖项目太。 若要禁用此行为，例如如果依赖项目为单元测试项目中，将标记为私有中的 NuGet 包 *.csproj*或 *.vbproj*引用项目文件：
+> 在.NET Core 项目中，如果添加对具有 NuGet 分析器的项目的引用这些分析器将自动添加到依赖项目太。 若要禁用此行为，例如如果依赖项目为单元测试项目中，将标记为私有中的 NuGet 包 *.csproj*或 *.vbproj*引用项目文件：
 >
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />

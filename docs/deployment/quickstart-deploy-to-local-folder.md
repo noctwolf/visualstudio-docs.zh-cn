@@ -23,11 +23,11 @@ ms.locfileid: "34764214"
 
 你可以使用**发布**工具以将你的应用程序发布到本地文件夹。 
 
-这些步骤适用于 ASP.NET、 ASP.NET Core、.NET 核心和 Visual Studio 中的 Python 应用。 For Node.js，支持步骤，但用户界面，则不同。
+这些步骤适用于 ASP.NET、 ASP.NET Core、.NET Core 和 Visual Studio 中的 Python 应用。 For Node.js，支持步骤，但用户界面，则不同。
 
 ## <a name="prerequisites"></a>系统必备
 
-* 你必须安装的 Visual Studio 2017 和。**NET 桌面开发**工作负荷与。**NET 核心**工作负荷。
+* 你必须安装的 Visual Studio 2017 和。**NET 桌面开发**工作负荷与。*.NET Core**工作负荷。
 
     如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
@@ -35,7 +35,7 @@ ms.locfileid: "34764214"
 
 1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
-1. 下**Visual C#** 或**Visual Basic**，选择 **.NET 核心**，然后在中间窗格中选择**控制台应用程序 (.NET Core)**。
+1. 下**Visual C#** 或**Visual Basic**，选择 **.NET Core**，然后在中间窗格中选择**控制台应用程序 (.NET Core)**。
 
 1. 键入的名称，例如**MyLocalApp**单击**确定**。
 
