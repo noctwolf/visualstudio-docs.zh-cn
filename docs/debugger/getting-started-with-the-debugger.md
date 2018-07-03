@@ -43,11 +43,11 @@ ms.locfileid: "34766254"
 
 ## <a name="prerequisites"></a>系统必备
 
-* 你必须安装的 Visual Studio 2017 和。**NET 桌面开发**工作负荷。
+* 你必须安装的 Visual Studio 2017 和。**.NET 桌面开发**工作负荷。
 
     如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
-    如果你需要安装工作负荷，但已有 Visual Studio 中，单击**打开 Visual Studio 安装程序**中的左窗格中的链接，**新项目**对话框 (选择**文件**  > **新** > **项目**)。 Visual Studio 安装程序启动。 选择。**NET 桌面开发**工作负荷，然后选择**修改**。
+    如果你需要安装工作负荷，但已有 Visual Studio 中，单击**打开 Visual Studio 安装程序**中的左窗格中的链接，**新项目**对话框 (选择**文件**  > **新** > **项目**)。 Visual Studio 安装程序启动。 选择。**.NET 桌面开发**工作负荷，然后选择**修改**。
 
 ## <a name="start-the-debugger"></a>启动调试器 ！
 

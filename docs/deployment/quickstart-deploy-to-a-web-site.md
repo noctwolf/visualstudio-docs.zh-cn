@@ -27,7 +27,7 @@ ms.locfileid: "34766547"
 
 ## <a name="prerequisites"></a>系统必备
 
-* 你必须安装的 Visual Studio 2017 和**ASP.NET 和 web 开发**工作负荷和。**NET 桌面开发**工作负荷。 对于.NET Core 应用，你需要。**.NET Core**工作负荷。
+* 你必须安装的 Visual Studio 2017 和**ASP.NET 和 web 开发**工作负荷和。**.NET 桌面开发**工作负荷。 对于.NET Core 应用，你需要。**.NET Core**工作负荷。
 
     如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
