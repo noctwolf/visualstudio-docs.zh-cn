@@ -18,7 +18,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/04/2018
 ms.locfileid: "34746925"
 ---
-# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 远程 IIS 计算机上的远程调试 ASP.NET 核心
+# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 远程 IIS 计算机上的远程调试 ASP.NET Core
 若要调试的 ASP.NET 应用程序部署到 IIS，安装和在计算机上运行远程工具其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
 
 ![远程调试器组件](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
@@ -43,11 +43,11 @@ ms.locfileid: "34746925"
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 计算机上创建 ASP.NET Core 应用程序 
 
-1. 创建新的 ASP.NET Core 应用程序。 (**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET 核心 Web 应用程序**)。
+1. 创建新的 ASP.NET Core 应用程序。 (**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET Core Web 应用程序**)。
 
     在**ASP.NET Core**模板部分中，选择**Web 应用程序**。
 
-2. 请确保**ASP.NET 核心 2.0**选中，则，**启用 Docker 支持**是**不**选且**身份验证**设置为**无身份验证**。
+2. 请确保**ASP.NET Core 2.0**选中，则，**启用 Docker 支持**是**不**选且**身份验证**设置为**无身份验证**。
 
 3. 将项目**MyASPApp**单击**确定**创建新的解决方案。
 
@@ -68,12 +68,12 @@ ms.locfileid: "34746925"
 
 当你下载的软件时，可能会收到请求授予加载各种 web 站点脚本和资源的权限。 其中的某些资源不是必需的但若要简化此过程中，单击**添加**出现提示时。
 
-## <a name="install-aspnet-core-on-windows-server"></a>在 Windows Server 上安装 ASP.NET 核心
+## <a name="install-aspnet-core-on-windows-server"></a>在 Windows Server 上安装 ASP.NET Core
 
-1. 安装[.NET 核心 Windows 服务器承载](https://aka.ms/dotnetcore-2-windowshosting)主机系统上的软件包。 .NET Core 运行时，.NET 核心库和 ASP.NET 核心模块安装捆绑。 有关更多深入说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
+1. 安装[.NET Core Windows 服务器承载](https://aka.ms/dotnetcore-2-windowshosting)主机系统上的软件包。 .NET Core 运行时，.NET Core 库和 ASP.NET Core 模块安装捆绑。 有关更多深入说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
     > [!NOTE]
-    > 如果系统没有连接到 Internet，获取并安装 *[Microsoft Visual c + + 2015年可再发行组件](https://www.microsoft.com/download/details.aspx?id=53840)* 之前安装.NET 核心 Windows 服务器承载捆绑。
+    > 如果系统没有连接到 Internet，获取并安装 *[Microsoft Visual c + + 2015年可再发行组件](https://www.microsoft.com/download/details.aspx?id=53840)* 之前安装.NET Core Windows 服务器承载捆绑。
 
 3. 重新启动系统 (或执行**net 停止已 /y**跟**net 启动 w3svc**从命令提示符以拾取到系统路径的更改)。
 
@@ -104,7 +104,7 @@ ms.locfileid: "34746925"
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-应用程序已成功部署后，它应自动启动。 如果从 Visual Studio 不启动应用程序，请在 IIS 中启动应用程序。 对于 ASP.NET 核心，你需要确保应用程序池字段**DefaultAppPool**设置为**无托管代码**。
+应用程序已成功部署后，它应自动启动。 如果从 Visual Studio 不启动应用程序，请在 IIS 中启动应用程序。 对于 ASP.NET Core，你需要确保应用程序池字段**DefaultAppPool**设置为**无托管代码**。
 
 1. 在**设置**对话框中，通过单击调试启用**下一步**，选择**调试**配置，然后选择**删除位置的其他文件目标**下**文件发布**选项。
 

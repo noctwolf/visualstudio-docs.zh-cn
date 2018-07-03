@@ -27,7 +27,7 @@ ms.locfileid: "34765370"
 
 ## <a name="prerequisites"></a>系统必备
 
-* 你必须安装的 Visual Studio 2017 和**ASP.NET 和 web 开发**工作负荷和。**NET 桌面开发**工作负荷。 对于.NET Core 应用，你需要。**NET 核心**工作负荷。
+* 你必须安装的 Visual Studio 2017 和**ASP.NET 和 web 开发**工作负荷和。**.NET 桌面开发**工作负荷。 对于.NET Core 应用，你需要。**.NET Core**工作负荷。
 
     如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
@@ -35,7 +35,7 @@ ms.locfileid: "34765370"
 
 1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
-1. 下**Visual C#** 或**Visual Basic**，选择**Web**，然后在中间窗格中选择**ASP.NET Web 应用程序 (.NET Framework)** 或 (仅限 C#) **ASP.NET 核心 Web 应用程序**，然后单击**确定**。
+1. 下**Visual C#** 或**Visual Basic**，选择**Web**，然后在中间窗格中选择**ASP.NET Web 应用程序 (.NET Framework)** 或 (仅限 C#) **ASP.NET Core Web 应用程序**，然后单击**确定**。
 
 1. 选择**MVC** (或选择**Web 应用程序 （模型-视图-控制器）** 为.NET Core)，请确保**无身份验证**已选择，然后单击**确定**.
 
