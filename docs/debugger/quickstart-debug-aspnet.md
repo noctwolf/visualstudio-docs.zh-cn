@@ -28,13 +28,13 @@ Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试
 
 1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
-1. 下**Visual C#**，选择**Web**，，然后在中间窗格中选择**ASP.NET 核心 Web 应用程序**。
+1. 下**Visual C#**，选择**Web**，，然后在中间窗格中选择**ASP.NET Core Web 应用程序**。
 
 1. 键入的名称，例如**MyDbgApp**单击**确定**。
 
 1. 在显示的对话框中，选择**Web 应用程序**在中间窗格中，然后单击**确定**。
 
-     如果看不到**Web 应用程序**项目模板中，单击**打开 Visual Studio 安装程序**中的左窗格中的链接，**新项目**对话框。 Visual Studio 安装程序启动。 选择**ASP.NET**和 **.NET 核心**工作负荷，然后选择**修改**。
+     如果看不到**Web 应用程序**项目模板中，单击**打开 Visual Studio 安装程序**中的左窗格中的链接，**新项目**对话框。 Visual Studio 安装程序启动。 选择**ASP.NET**和 **.NET Core**工作负荷，然后选择**修改**。
 
     ![选择一个 Web 应用程序](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
 

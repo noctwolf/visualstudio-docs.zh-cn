@@ -28,7 +28,7 @@ ms.locfileid: "31473814"
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>如何：查找 ASP.NET 进程的名称
 若要附加到正在运行的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序，您必须知道 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 进程的名称：  
 
--   如果你在 IIS 或 IISExpress 上运行 ASP.NET 核心，进程名称是 dotnet.exe。
+-   如果你在 IIS 或 IISExpress 上运行 ASP.NET Core，进程名称是 dotnet.exe。
 
 -   如果你运行 ASP.NET IIS 6.0 上更高版本，则名称为 w3wp.exe。  
   

@@ -22,7 +22,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: db20b62c5ef409f523253c5ba19e2c68213743be
 ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/24/2018
 ms.locfileid: "34477686"
@@ -164,5 +164,5 @@ ms.locfileid: "34477686"
  [调试器功能简介](../debugger/debugger-feature-tour.md)   
  [配置 Windows 防火墙以允许远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)   
- [远程调试远程 IIS 计算机上的 ASP.NET 核心](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
+ [远程调试远程 IIS 计算机上的 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)

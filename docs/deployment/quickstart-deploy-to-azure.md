@@ -14,7 +14,7 @@ ms.workload:
 - azure
 ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
 ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/05/2018
 ms.locfileid: "34765370"
@@ -35,7 +35,7 @@ ms.locfileid: "34765370"
 
 1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
-1. 下**Visual C#** 或**Visual Basic**，选择**Web**，然后在中间窗格中选择**ASP.NET Web 应用程序 (.NET Framework)** 或 (仅限 C#) **ASP.NET 核心 Web 应用程序**，然后单击**确定**。
+1. 下**Visual C#** 或**Visual Basic**，选择**Web**，然后在中间窗格中选择**ASP.NET Web 应用程序 (.NET Framework)** 或 (仅限 C#) **ASP.NET Core Web 应用程序**，然后单击**确定**。
 
 1. 选择**MVC** (或选择**Web 应用程序 （模型-视图-控制器）** 为.NET Core)，请确保**无身份验证**已选择，然后单击**确定**.
 

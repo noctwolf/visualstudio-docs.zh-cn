@@ -308,7 +308,7 @@ Visual Studio 2017 所有版本随附：
 
 .NET Core 是 .NET 标准的常规用途、模块化、跨平台和开放源代码实现，且包含许多与 .NET Framework 相同的 API。
 
-.NET Core 平台由一些组件构成，其中包括托管的编译器、运行时、基类库和大量应用程序模型，如 ASP.NET 核心。 .NET Core 支持三种主要的操作系统 (OS)：Windows、 Linux 和 macOS。 可以在设备、云和嵌入式/IoT 方案中使用 .NET Core。
+.NET Core 平台由一些组件构成，其中包括托管的编译器、运行时、基类库和大量应用程序模型，如 ASP.NET Core。 .NET Core 支持三种主要的操作系统 (OS)：Windows、 Linux 和 macOS。 可以在设备、云和嵌入式/IoT 方案中使用 .NET Core。
 
 当前，它还包括 Docker 支持。
 

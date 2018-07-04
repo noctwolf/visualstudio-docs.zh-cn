@@ -55,7 +55,7 @@ ms.locfileid: "31478943"
 |||
 |-|-|
 |**支持**|的使用.NET Framework 2.0 或更高版本 Visual Basic 和 Visual C# 应用程序。<br/>你可以调试大多数应用程序，包括 ASP.NET、Microsoft Azure、Windows 窗体、WCF、WPF、Windows 工作流、SharePoint 2010、SharePoint 2013 和 64 位应用。<br/>若要调试 SharePoint 应用程序使用 IntelliTrace，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要调试 intellitrace 的 Microsoft Azure 应用程序，请参阅[调试使用 IntelliTrace 和 Visual Studio 发布云服务](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。|
-|**有限的支持**|.NET 核心和 ASP.NET Core 应用某些仅事件 （MVC 控制器、 ADO.NET 和 HTTPClicent 事件） 中支持本地调试。 .NET 核心或 ASP.NET Core 应用不支持独立收集器。<br />的实验证明 F # 应用程序<br />-UWP 应用仅支持事件|
+|**有限的支持**|.NET Core和 ASP.NET Core 应用某些仅事件 （MVC 控制器、 ADO.NET 和 HTTPClicent 事件） 中支持本地调试。 .NET Core或 ASP.NET Core 应用不支持独立收集器。<br />的实验证明 F # 应用程序<br />-UWP 应用仅支持事件|
 |**不支持**|C + +、 其他语言和脚本<br />-Windows 服务、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]应用|
 
 > [!NOTE]

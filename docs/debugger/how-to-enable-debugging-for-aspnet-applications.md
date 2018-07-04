@@ -21,7 +21,7 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 3418e1d2e05d687f8cb73a7857178ae1060d56f8
 ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
 ms.locfileid: "31479385"
@@ -135,7 +135,7 @@ IIS express，你不需要配置 web 服务器 （跳过此部分）。 IIS Expr
 
 1. 请确保正确安装 IIS。 有关详细信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
-    * 请确保在服务器上安装正确版本的 ASP.NET。 使用 Web 平台安装程序 (WebPI) 安装 ASP.NET 4.5 (从 Windows Server 2012 R2 中的服务器节点中，选择**获取新的 Web 平台组件**然后搜索 ASP.NET)。 若要安装 ASP.NET 核心，请参阅[发布到 IIS](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration)。
+    * 请确保在服务器上安装正确版本的 ASP.NET。 使用 Web 平台安装程序 (WebPI) 安装 ASP.NET 4.5 (从 Windows Server 2012 R2 中的服务器节点中，选择**获取新的 Web 平台组件**然后搜索 ASP.NET)。 若要安装 ASP.NET Core，请参阅[发布到 IIS](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration)。
 
     > [!NOTE]
     > 如果你使用的 Windows Server 2008 R2，安装 ASP.NET 4 而不使用此命令：

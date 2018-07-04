@@ -16,7 +16,7 @@ ms.workload:
 - azure
 ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
 ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/05/2018
 ms.locfileid: "34766319"
@@ -36,7 +36,7 @@ Snappoints 以及 logpoints 都类似于断点，但与断点，不同 snappoint
 
 ## <a name="prerequisites"></a>系统必备
 
-* 快照调试器功能仅适用于 Visual Studio 2017 Enterprise 15.5 或使用更高版本**ASP.NET 和 web 开发工作负荷**。 有关 ASP.NET 核心，你还需要。**NET 核心开发**安装的工作负荷。
+* 快照调试器功能仅适用于 Visual Studio 2017 Enterprise 15.5 或使用更高版本**ASP.NET 和 web 开发工作负荷**。 有关 ASP.NET Core，你还需要。**NET 核心开发**安装的工作负荷。
 
     如果它尚未安装，请安装[Visual Studio 2017 Enterprise 版本 15.5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)或更高版本。 如果你正在从以前的 Visual Studio 2017 安装更新，运行 Visual Studio 安装程序和签入的快照调试器组件**ASP.NET 和 web 开发工作负荷**。
 
@@ -140,7 +140,7 @@ Snappoints 以及 logpoints 都类似于断点，但与断点，不同 snappoint
 
     ![Logpoint diagsession 窗口中的数据](../debugger/media/snapshot-logpoint-output.png)
 
-    如果你选择**将发送到应用程序日志**、 logpoint 命中时，任何位置，你可以看到消息从显示的消息`System.Diagnostics.Trace`(或`ILogger`.NET 核心中)，如[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
+    如果你选择**将发送到应用程序日志**、 logpoint 命中时，任何位置，你可以看到消息从显示的消息`System.Diagnostics.Trace`(或`ILogger`.NET Core中)，如[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
 
 ## <a name="next-steps"></a>后续步骤
 

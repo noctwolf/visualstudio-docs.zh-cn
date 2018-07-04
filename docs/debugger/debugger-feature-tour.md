@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/04/2018
 ms.locfileid: "34691087"
@@ -199,7 +199,7 @@ F10 使调试器，而无需单步执行函数或应用程序代码 （仍执行
 
 ![启动快照调试器](../debugger/media/snapshot-launch.png "启动快照调试器")
 
-快照集合是可用于在 Azure App Service 中运行的 ASP.NET 应用程序。 必须在.NET Framework 4.6.1 上运行 ASP.NET 应用程序或更高版本，并且必须在.NET 核心 2.0 或更高版本在 Windows 上运行 ASP.NET Core 应用程序。
+快照集合是可用于在 Azure App Service 中运行的 ASP.NET 应用程序。 必须在.NET Framework 4.6.1 上运行 ASP.NET 应用程序或更高版本，并且必须在.NET Core 2.0 或更高版本在 Windows 上运行 ASP.NET Core 应用程序。
 
 有关详细信息，请参阅[调试实时 ASP.NET 应用程序使用快照调试器](../debugger/debug-live-azure-applications.md)。
 

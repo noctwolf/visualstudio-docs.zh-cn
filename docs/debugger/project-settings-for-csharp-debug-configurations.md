@@ -56,7 +56,7 @@ ms.locfileid: "31478322"
 |**输出路径：**|通常设置为 bin\Debug 以用于调试。|
 
 > [!NOTE]
-> 有关详细信息中找到的调试选项**高级**按钮，请参阅[高级生成设置对话框 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。 符号 (.pdb) 文件的可移植格式是为.NET 核心的最新的跨平台格式。 
+> 有关详细信息中找到的调试选项**高级**按钮，请参阅[高级生成设置对话框 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。 符号 (.pdb) 文件的可移植格式是为.NET Core的最新的跨平台格式。 
   
 ## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)

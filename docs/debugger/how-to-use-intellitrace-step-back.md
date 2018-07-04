@@ -22,7 +22,7 @@ ms.locfileid: "33881219"
 
 IntelliTrace 步骤后会自动编制的应用程序的每个断点和调试器快照步骤事件。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
 
-IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本，版本中开始提供，要求 Windows 10 周年 Update 或更高版本。 调试 ASP.NET、 WinForms、 WPF、 托管的控制台应用程序和托管的类库当前支持的功能。 从 Visual Studio 2017 Enterprise 版本 15.7 preview 1 开始，该功能还支持为 ASP.NET Core 和.NET 核心。 当前不支持调试 UWP 应用程序。
+IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本，版本中开始提供，要求 Windows 10 周年 Update 或更高版本。 调试 ASP.NET、 WinForms、 WPF、 托管的控制台应用程序和托管的类库当前支持的功能。 从 Visual Studio 2017 Enterprise 版本 15.7 preview 1 开始，该功能还支持为 ASP.NET Core 和.NET Core。 当前不支持调试 UWP 应用程序。
 
 在本教程中，你将：
 

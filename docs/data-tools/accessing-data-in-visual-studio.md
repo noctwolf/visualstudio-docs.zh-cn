@@ -18,9 +18,10 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: fbfd4227a2a4acfd8e21703cc29ff13ec36bd986
 ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454526"
 ---
 # <a name="access-data-in-visual-studio"></a>访问 Visual Studio 中的数据
 
@@ -70,7 +71,7 @@ ms.lasthandoff: 05/23/2018
 
 ## <a name="net-languages"></a>.NET 语言
 
-所有.NET 数据访问，包括在.NET 核心中都基于 ADO.NET 中，为访问任何类型的数据源、 关系和非关系定义一个接口的一组类。 Visual Studio 具有几个工具和设计器，可使用 ADO.NET 来帮助你连接到数据库，操作数据，并向用户显示数据。 此部分中的文档介绍如何使用这些工具。 你可以直接对 ADO.NET 命令对象进行编程。 有关直接调用 ADO.NET Api 的详细信息，请参阅[ADO.NET](/dotnet/framework/data/adonet/index)。
+所有.NET 数据访问，包括在.NET Core中都基于 ADO.NET 中，为访问任何类型的数据源、 关系和非关系定义一个接口的一组类。 Visual Studio 具有几个工具和设计器，可使用 ADO.NET 来帮助你连接到数据库，操作数据，并向用户显示数据。 此部分中的文档介绍如何使用这些工具。 你可以直接对 ADO.NET 命令对象进行编程。 有关直接调用 ADO.NET Api 的详细信息，请参阅[ADO.NET](/dotnet/framework/data/adonet/index)。
 
 与 ASP.NET 相关的数据访问文档，请参阅[使用数据](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 站点上。 有关使用使用 ASP.NET MVC 的 Entity Framework 的教程，请参阅[Getting Started with Entity Framework 6 Code First 使用 MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 

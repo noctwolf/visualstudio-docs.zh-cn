@@ -13,7 +13,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 02e6ae6e06daf43a6aec08097df2b37a21d2aaa3
 ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/05/2018
 ms.locfileid: "34766666"
@@ -39,17 +39,17 @@ ms.locfileid: "34766666"
 
 ## <a name="prerequisites"></a>系统必备
 
-* 你必须安装的 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**开发工作负荷。 对于.NET Core 应用，你还需要 **.NET 核心**工作负荷。
+* 你必须安装的 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**开发工作负荷。 对于.NET Core 应用，你还需要 **.NET Core**工作负荷。
 
     如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
-* 若要从 IIS 生成的发布设置文件，你必须运行 Windows Server 2012 或 Windows Server 2016 的计算机，并且你必须正确配置的 IIS Web 服务器角色。 此外必须安装 ASP.NET 4.5 或 ASP.NET Core。 有关 ASP.NET 核心，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 为 ASP.NET 4.5，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
+* 若要从 IIS 生成的发布设置文件，你必须运行 Windows Server 2012 或 Windows Server 2016 的计算机，并且你必须正确配置的 IIS Web 服务器角色。 此外必须安装 ASP.NET 4.5 或 ASP.NET Core。 有关 ASP.NET Core，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 为 ASP.NET 4.5，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>在 Visual Studio 中创建新的 ASP.NET 项目
 
 1. 在计算机上运行 Visual Studio，选择**文件 > 新建项目**。
 
-1. 下**Visual C#** 或**Visual Basic**，选择**Web**，然后在中间窗格中选择**ASP.NET Web 应用程序 (.NET Framework)** 或 (仅限 C#) **ASP.NET 核心 Web 应用程序**，然后单击**确定**。
+1. 下**Visual C#** 或**Visual Basic**，选择**Web**，然后在中间窗格中选择**ASP.NET Web 应用程序 (.NET Framework)** 或 (仅限 C#) **ASP.NET Core Web 应用程序**，然后单击**确定**。
 
     如果看不到指定的项目模板，请单击**打开 Visual Studio 安装程序**中的左窗格中的链接，**新项目**对话框。 Visual Studio 安装程序启动。 请参阅这篇文章，以标识所需的 Visual Studio 工作负荷，必须安装中的先决条件。
 
@@ -73,7 +73,7 @@ ms.locfileid: "34766666"
 
 [!INCLUDE [import-publish-settings](../deployment/includes/import-publish-settings-vs.md)]
 
-应用程序已成功部署后，它应自动启动。 如果未启动从 Visual Studio，请在 IIS 中启动应用程序。 对于 ASP.NET 核心，你需要确保应用程序池字段**DefaultAppPool**设置为**无托管代码**。
+应用程序已成功部署后，它应自动启动。 如果未启动从 Visual Studio，请在 IIS 中启动应用程序。 对于 ASP.NET Core，你需要确保应用程序池字段**DefaultAppPool**设置为**无托管代码**。
 
 ## <a name="next-steps"></a>后续步骤
 

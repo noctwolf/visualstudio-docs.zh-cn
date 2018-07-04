@@ -13,7 +13,7 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 2b7fc572541e0c2f0f5aa04c6e676d1e2913ff9f
 ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
 ms.locfileid: "33864715"
@@ -22,7 +22,7 @@ ms.locfileid: "33864715"
 
 Visual Studio 和.NET Framework 一起提供大量的 API 和工具用于连接到数据库、 在内存中，数据建模和用户界面中显示数据的支持。 提供数据访问功能的.NET Framework 类称为[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET 中，以及 Visual Studio 中的数据旨在主要是为了支持关系数据库和 XML。 如今，许多 NoSQL 数据库供应商或第三方提供 ADO.NET 提供程序。
 
-[.NET 核心](/dotnet/core/)支持 ADO.NET 中，数据集和相关的类型除外。 如果你要以.NET 核心为目标，并且需要对象关系映射 (ORM) 层，使用[实体框架核心](/ef/core/)。
+[.NET Core](/dotnet/core/)支持 ADO.NET 中，数据集和相关的类型除外。 如果你要以.NET Core为目标，并且需要对象关系映射 (ORM) 层，使用[实体框架核心](/ef/core/)。
 
 下图显示的基本体系结构的简化的视图：
 

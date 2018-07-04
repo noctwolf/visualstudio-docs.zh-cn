@@ -29,7 +29,7 @@ ms.locfileid: "33870641"
 
 仅 Visual Studio for Mac 支持在 Mac 上编写 C# 7 代码。
 
-## <a name="net-core"></a>.NET 核心
+## <a name="net-core"></a>.NET Core
 
 [.NET Core](https://www.microsoft.com/net/core#macos) 平台可以创建在 Windows、Linux 和 Mac 上运行的应用程序。 Visual Studio for Mac 支持加载、创建、运行和调试 .NET Core 项目。
 

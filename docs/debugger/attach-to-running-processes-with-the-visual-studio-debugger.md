@@ -31,7 +31,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: aecf458254d45b3c52c9f3971a72cb24ad13ef43
 ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/23/2018
 ms.locfileid: "34454552"
@@ -141,7 +141,7 @@ ms.locfileid: "34454552"
 |调试本地计算机上的托管或本机应用|使用附加到进程或[标准调试](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|若要快速访问对话框中，使用**CTRL + ALT + P**然后键入进程名称的第一个字母。|
 |在开始不带调试器的应用后调试本地计算机上的 ASP.NET 应用程序|使用附加到进程|iiexpress.exe|这可能是很有帮助，使应用程序加载速度更快，如 （例如） 分析时。 |
 |远程调试 ASP.NET 4 或 4.5 的 IIS 服务器上|使用远程工具和附加到进程|w3wp.exe|请参阅[远程 IIS 计算机上的远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|IIS 服务器上的远程调试 ASP.NET 核心|使用远程工具和附加到进程|dotnet.exe|有关应用程序部署，请参阅[发布到 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 有关调试，请参阅[远程 IIS 计算机上的远程调试 ASP.NET 核心](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
+|IIS 服务器上的远程调试 ASP.NET Core|使用远程工具和附加到进程|dotnet.exe|有关应用程序部署，请参阅[发布到 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 有关调试，请参阅[远程 IIS 计算机上的远程调试 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |调试服务器进程上的其他支持的应用类型|使用远程工具 （如果 server 是远程服务器） 并附加到进程|iexplore.exe 或其他进程|如有必要，使用任务管理器帮助标识该进程。 请参阅[远程调试](../debugger/remote-debugging.md)和本主题中后面的部分|
 |远程调试 Windows 桌面应用程序|远程工具和 F5|不可用| 请参阅[远程调试](../debugger/remote-debugging.md)|
 |远程调试通用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试安装的应用包|不可用|请参阅[调试安装的应用程序包](debug-installed-app-package.md)而不是使用**附加到进程**|
