@@ -140,7 +140,7 @@ Snappoints 以及 logpoints 都类似于断点，但与断点，不同 snappoint
 
     ![Logpoint diagsession 窗口中的数据](../debugger/media/snapshot-logpoint-output.png)
 
-    如果你选择**将发送到应用程序日志**、 logpoint 命中时，任何位置，你可以看到消息从显示的消息`System.Diagnostics.Trace`(或`ILogger`.NET Core中)，如[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
+    如果你选择**将发送到应用程序日志**、 logpoint 命中时，任何位置，你可以看到消息从显示的消息`System.Diagnostics.Trace`(或`ILogger`.NET Core 中)，如[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
 
 ## <a name="next-steps"></a>后续步骤
 

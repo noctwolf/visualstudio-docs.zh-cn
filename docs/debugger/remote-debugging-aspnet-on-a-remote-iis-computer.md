@@ -70,7 +70,7 @@ ms.locfileid: "34746925"
 
 ## <a name="install-aspnet-core-on-windows-server"></a>在 Windows Server 上安装 ASP.NET Core
 
-1. 安装[.NET Core Windows 服务器承载](https://aka.ms/dotnetcore-2-windowshosting)主机系统上的软件包。 .NET Core 运行时，.NET Core库和 ASP.NET Core模块安装捆绑。 有关更多深入说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
+1. 安装[.NET Core Windows 服务器承载](https://aka.ms/dotnetcore-2-windowshosting)主机系统上的软件包。 .NET Core 运行时，.NET Core 库和 ASP.NET Core 模块安装捆绑。 有关更多深入说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
     > [!NOTE]
     > 如果系统没有连接到 Internet，获取并安装 *[Microsoft Visual c + + 2015年可再发行组件](https://www.microsoft.com/download/details.aspx?id=53840)* 之前安装.NET Core Windows 服务器承载捆绑。

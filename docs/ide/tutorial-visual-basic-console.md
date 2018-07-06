@@ -42,7 +42,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 
 控制台应用获取输入，在命令行窗口（也称为 控制台）中显示输出。
 
-### <a name="what-is-net-core"></a>.NET Core是什么？
+### <a name="what-is-net-core"></a>.NET Core 是什么？
 
 .NET Core 是 .NET Framework 的进一步演化。 .NET Framework 允许跨编程语言共享代码，而 .NET Core 增加了跨平台共享代码的功能。 此外，它还为开放源。 （.NET Framework 和 .NET Core 都包含预生成功能的库以及公共语言运行时 (CLR)，公共语言运行时充当用于运行代码的虚拟机。）
 

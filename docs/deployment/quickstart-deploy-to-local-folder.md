@@ -23,7 +23,7 @@ ms.locfileid: "34764214"
 
 你可以使用**发布**工具以将你的应用程序发布到本地文件夹。 
 
-这些步骤适用于 ASP.NET、 ASP.NET Core、.NET Core和 Visual Studio 中的 Python 应用。 For Node.js，支持步骤，但用户界面，则不同。
+这些步骤适用于 ASP.NET、 ASP.NET Core、.NET Core 和 Visual Studio 中的 Python 应用。 For Node.js，支持步骤，但用户界面，则不同。
 
 ## <a name="prerequisites"></a>系统必备
 

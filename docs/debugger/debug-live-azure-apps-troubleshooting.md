@@ -66,7 +66,7 @@ ms.locfileid: "31480093"
 ## <a name="known-issues"></a>已知问题
 
 - 当前不支持针对相同的应用程序服务的多个 Visual Studio 客户端调试的快照。
-- ASP.NET Core项目不完全支持 Roslyn IL 优化。 对于某些 ASP.NET Core 项目，你可能无法看到某些变量或条件语句中使用某些变量。 
+- ASP.NET Core 项目不完全支持 Roslyn IL 优化。 对于某些 ASP.NET Core 项目，你可能无法看到某些变量或条件语句中使用某些变量。 
 - 特殊变量，如 *$FUNCTION*或 *$CALLER*，无法计算条件语句或 logpoints 对于 ASP.NET Core 项目中。
 - 快照调试不能在应用程序服务具有[本地缓存](/azure/app-service/app-service-local-cache)开启。
 - 当前不支持调试 API 应用程序的快照。

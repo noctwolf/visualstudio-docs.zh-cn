@@ -1,6 +1,6 @@
 ---
 title: 教程： 调试托管和本机代码 |Microsoft 文档
-description: 了解如何调试.NET Core或.NET Framework 应用程序中的本机 DLL
+description: 了解如何调试.NET Core 或.NET Framework 应用程序中的本机 DLL
 ms.custom: ''
 ms.date: 04/27/2018
 ms.technology: vs-ide-debug
@@ -31,7 +31,7 @@ Visual Studio 允许你启用多个调试器类型在调试时，这称为混合
 
 > [!div class="checklist"]
 > * 创建简单的本机 DLL
-> * 创建用于调用 DLL 的简单.NET Core或.NET Framework 的应用
+> * 创建用于调用 DLL 的简单.NET Core 或.NET Framework 的应用
 > * 启动调试器
 > * 在命中断点的托管应用
 > * 单步执行本机代码
@@ -87,7 +87,7 @@ Visual Studio 允许你启用多个调试器类型在调试时，这称为混合
 1. 从调试工具栏中，选择**调试**配置和**任意 CPU**作为平台，或者，对于.NET Core，选择**x64**作为平台。
 
     > [!NOTE]
-    > 在.NET Core 上选择**x64**作为平台。 因此，这是必需的.NET Core始终运行在 64 位模式下。
+    > 在.NET Core 上选择**x64**作为平台。 因此，这是必需的.NET Core 始终运行在 64 位模式下。
 
 1. 在解决方案资源管理器，右键单击项目节点 (**混合模式调试**)，然后选择**属性**。
 
@@ -109,7 +109,7 @@ Visual Studio 允许你启用多个调试器类型在调试时，这称为混合
 
     对于.NET Framework，在**新项目**对话框框中，选择**Visual C#**， **Windows 桌面**从已安装的模板部分中，然后在中间窗格中选择**控制台应用程序 (.NET Framework)**。
 
-    有关.NET Core中**新项目**对话框框中，选择**Visual C#**， **.NET Core**从已安装的模板部分中，然后在中间窗格中选择**控制台应用程序 （.NET Core）**。
+    有关.NET Core 中**新项目**对话框框中，选择**Visual C#**， **.NET Core**从已安装的模板部分中，然后在中间窗格中选择**控制台应用程序 （.NET Core）**。
 
 1. 在**名称**字段中，键入**Mixed_Mode_Calling_App**单击**确定**。
 
@@ -153,7 +153,7 @@ Visual Studio 允许你启用多个调试器类型在调试时，这称为混合
 
 ## <a name="configure-mixed-mode-debugging-net-core"></a>配置混合的模式调试 （.NET Core）
 
-在大多数版本的 Visual Studio 2017，必须启用混合的模式调试中.NET Core应用程序使用的本机代码*launchSettings.json*文件而不是**属性**页。 若要跟踪此功能的用户界面更新，请参阅此[GitHub 问题](https://github.com/dotnet/project-system/issues/1125)。
+在大多数版本的 Visual Studio 2017，必须启用混合的模式调试中.NET Core 应用程序使用的本机代码*launchSettings.json*文件而不是**属性**页。 若要跟踪此功能的用户界面更新，请参阅此[GitHub 问题](https://github.com/dotnet/project-system/issues/1125)。
 
 1. 打开*launchSettings.json*文件中*属性*文件夹。 默认情况下，你可以在此位置中找到该文件。
 

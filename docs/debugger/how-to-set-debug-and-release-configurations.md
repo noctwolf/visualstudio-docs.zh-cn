@@ -84,7 +84,7 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
 
 3. 选择**完整**，**可移植**，或**pdb_only**中**调试信息**列表框 (**生成调试信息**在 Visual Basic 中)。
 
-    可移植的格式是为.NET Core的最新的跨平台格式。 有关选项的详细信息，请参阅[高级生成设置对话框 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。
+    可移植的格式是为.NET Core 的最新的跨平台格式。 有关选项的详细信息，请参阅[高级生成设置对话框 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。
 
     ![在 C# 中生成的生成 Pdb](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
