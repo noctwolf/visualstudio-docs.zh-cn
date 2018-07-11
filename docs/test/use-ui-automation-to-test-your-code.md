@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ad00d05bf6eba2a3853c0af79bf9decaaba236f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4b9e63b930122d36903187128d4bebeb1ff96143
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751723"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35668214"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 
@@ -35,7 +35,7 @@ ms.locfileid: "34751723"
 
 创建编码的 UI 测试很容易。 当编码的 UI 测试生成器在后台运行时，只需手动执行该测试。 你还可以指定在特定字段中应显示哪些值。 编码的 UI 测试生成器录制操作并从中生成代码。 在创建测试后，你可以在专用编辑器中对其进行编辑，该编辑器使你能够修改操作的序列。
 
-或者，如果你具有在 Microsoft 测试管理器中录制的测试用例，你可以从中生成代码。 有关详细信息，请参阅[录制和播放手动测试](/vsts/manual-test/getting-started/record-play-back-manual-tests)。
+或者，如果你具有在 Microsoft 测试管理器中录制的测试用例，你可以从中生成代码。 有关详细信息，请参阅[录制和播放手动测试](/vsts/test/mtm/record-play-back-manual-tests)。
 
 专用的编码的 UI 测试生成器和编辑器可轻松创建和编辑编码的 UI 测试，即使你的主要技能都集中于测试而不是编码。 但如果你是一位开发人员，想要以更先进的方式扩展测试，则结构化代码，以便于更简单地复制和改写。 例如，你可以录制在网站购物的测试，然后编辑生成的代码以添加购买许多商品的循环。
 
@@ -105,7 +105,7 @@ ms.locfileid: "34751723"
     > [!TIP]
     > 在录制操作和验证值之间交替。 在每个操作或验证序列的结尾生成代码。 如果你愿意，可以随后插入新的操作和验证。
 
-     有关详细信息，请参阅[验证控件的属性](#VerifyingCodeUsingCUITGenerateAssertions)。
+     有关详细信息，请参阅[验证控件的属性](#validate-the-properties-of-ui-controls)。
 
 5. 查看生成的测试代码。
 
@@ -140,7 +140,7 @@ ms.locfileid: "34751723"
 
 8. 运行测试。
 
-   使用测试资源管理器，或打开测试方法中的快捷菜单，然后选择“运行测试”。 有关如何运行测试的详细信息，请参见本主题结尾处[后续步骤](#VerifyCodeUsingCUITWhatsNext)部分中的[用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)和“运行编码的 UI 测试的其他选项”。
+   使用测试资源管理器，或打开测试方法中的快捷菜单，然后选择“运行测试”。 有关如何运行测试的详细信息，请参见本主题结尾处[后续步骤](#what's-next?)部分中的[用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)和“运行编码的 UI 测试的其他选项”。
 
 本主题中的剩余部分提供了有关此过程中步骤的更多详细信息。
 
@@ -284,13 +284,13 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 在创建编码的 UI 测试之后，你可以通过使用 Visual Studio 中的以下任何工具对其进行编辑：
 
-- 使用编码的 UI 测试生成器来将其他控件和验证添加到你的测试。 请参阅本主题中的[添加控件并验证它们的属性](#VerifyingCodeUsingCUITGenerateAssertions)部分。
+- 使用编码的 UI 测试生成器来将其他控件和验证添加到你的测试。 请参阅本主题中的[添加控件并验证它们的属性](#validate-the-properties-of-ui-controls)部分。
 
 - 通过编码的 UI 测试编辑器，可轻松修改编码的 UI 测试。 使用编码的 UI 测试编辑器，可查找、查看和编辑测试方法。 也可以在 UI 控件映射中编辑 UI 操作及其关联的控件。 有关详细信息，请参阅[使用编码的 UI 测试编辑器编辑编码的 UI 测试](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
 
 - **代码编辑器：**
 
-    - 按照本主题中的[编码 UI 控件操作和属性](#VerifyingCodeCUITActionsandProperties)部分的描述，为测试中的控件手动添加代码。
+    - 按照本主题中的[编码 UI 控件操作和属性](#coded-ui-control-actions-and-properties)部分的描述，为测试中的控件手动添加代码。
 
     - 在创建编码的 UI 测试以后，你可以将其修改为数据驱动。 有关详细信息，请参阅[创建数据驱动的编码的 UI 测试](../test/creating-a-data-driven-coded-ui-test.md)。
 
@@ -454,7 +454,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [扩展编码的 UI 测试和操作录制](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-编码的 UI 测试通常用于自动化手动测试。 有关手动测试的详细信息，请参阅[使用 Microsoft 测试管理器运行手动测试](/vsts/manual-test/mtm/run-manual-tests-with-microsoft-test-manager)。 有关自动测试的详细信息，请参阅 [Visual Studio 中的测试工具](../test/improve-code-quality.md)。
+编码的 UI 测试通常用于自动化手动测试。 有关手动测试的详细信息，请参阅[使用 Microsoft 测试管理器运行手动测试](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager)。 有关自动测试的详细信息，请参阅 [Visual Studio 中的测试工具](../test/improve-code-quality.md)。
 
 ## <a name="see-also"></a>请参阅
 

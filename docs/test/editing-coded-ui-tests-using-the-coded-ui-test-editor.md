@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 88c42b710b08ca7dae8d779da3d6e093179ddca6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 852742c3cea6e2a730fd546fecf17c6b5feb0fac
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692364"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35668391"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用编码的 UI 测试编辑器编辑编码的 UI 测试
 
@@ -92,9 +92,9 @@ ms.locfileid: "34692364"
 
 - 可以使用编码的 UI 测试编辑器工具栏中的“查找”按钮打开 Visual Studio 中的“查找和替换”工具。 然后可以使用“查找”控件查找编码的 UI 测试编辑器中的 UI 操作。 例如，可以尝试查找“单击‘登录’按钮”。 这在大型测试中十分有用。 不能使用编码的 UI 测试编辑器中“查找和替换”工具中的替换功能。 有关详细信息，请参阅 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)中的“查找控件”。
 
-- 有时，可能很难直观显示控件在受测应用程序 UI 中的位置。 编码的 UI 测试编辑器的功能之一是，你可以选择 UI 控件图中列出的控件和查看其在受测应用程序中的位置。 有关详细信息，请参阅本文后面的[在受测应用中查找 UI 控件](#CodedUITestEditor_LocateUIControl)。
+- 有时，可能很难直观显示控件在受测应用程序 UI 中的位置。 编码的 UI 测试编辑器的功能之一是，你可以选择 UI 控件图中列出的控件和查看其在受测应用程序中的位置。 有关详细信息，请参阅本文后面的[在受测应用中查找 UI 控件](#locate-a-ui-control-in-the-application-under-test)。
 
-- 可能有必要展开包含你要编辑的控件的容器控件。 有关详细信息，请参阅本文后面的[查找控件及其后代](#CodedUITestEditor_LocateDecendants)。
+- 可能有必要展开包含你要编辑的控件的容器控件。 有关详细信息，请参阅本文后面的[查找控件及其后代](#locate-a-control-and-its-descendants)。
 
 ## <a name="delete-unwanted-ui-actions"></a>删除不需要的 UI 操作
 
