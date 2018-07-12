@@ -37,29 +37,29 @@ Visual Studio for C# 默认包含以下代码片段。
 |#if|创建 [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) 指令和 [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif) 指令。|任何位置。|
 |#region|创建 [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) 指令和 [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion) 指令。|任何位置。|
 |~|创建包含类的[终结期](/dotnet/csharp/programming-guide/classes-and-structs/destructors)（析构函数）。|在类中。|
-|属性|为派生自 <xref:System.Attribute> 的类创建声明。|在命名空间（包括全局命名空间）、类或结构中。|
+|attribute|为派生自 <xref:System.Attribute> 的类创建声明。|在命名空间（包括全局命名空间）、类或结构中。|
 |checked|创建 [checked](/dotnet/csharp/language-reference/keywords/checked) 块。|在方法、索引器、属性访问器或事件访问器内。|
-|类|创建类声明。|在命名空间（包括全局命名空间）、类或结构中。|
+|class|创建类声明。|在命名空间（包括全局命名空间）、类或结构中。|
 |ctor|创建包含类的构造函数。|在类中。|
 |cw|创建对 <xref:System.Console.WriteLine%2A> 的调用。|在方法、索引器、属性访问器或事件访问器内。|
 |do|创建 [do](/dotnet/csharp/language-reference/keywords/do) `while` 循环。|在方法、索引器、属性访问器或事件访问器内。|
 |else|创建 [else](/dotnet/csharp/language-reference/keywords/if-else) 块。|在方法、索引器、属性访问器或事件访问器内。|
 |enum|创建[枚举](/dotnet/csharp/language-reference/keywords/enum)声明。|在命名空间（包括全局命名空间）、类或结构中。|
 |equals|创建一个方法声明，该声明对 <xref:System.Object> 类中定义的 <xref:System.Object.Equals%2A> 方法进行重写。|在类或结构中。|
-|异常|为某个从异常（默认情况下为 <xref:System.Exception>）派生的类创建声明。|在命名空间（包括全局命名空间）、类或结构中。|
+|equals|为某个从异常（默认情况下为 <xref:System.Exception>）派生的类创建声明。|在命名空间（包括全局命名空间）、类或结构中。|
 |for|创建 [for](/dotnet/csharp/language-reference/keywords/for) 循环。|在方法、索引器、属性访问器或事件访问器内。|
 |foreach|创建 [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) 循环。|在方法、索引器、属性访问器或事件访问器内。|
 |forr|创建 [for](/dotnet/csharp/language-reference/keywords/for) 循环，每次迭代后会减少循环变量。|在方法、索引器、属性访问器或事件访问器内。|
 |if|创建 [if](/dotnet/csharp/language-reference/keywords/if-else) 块。|在方法、索引器、属性访问器或事件访问器内。|
-|Indexer — 索引器|创建索引器声明。|在类或结构中。|
-|接口|创建[接口](/dotnet/csharp/language-reference/keywords/interface)声明。|在命名空间（包括全局命名空间）、类或结构中。|
-|调用|创建安全调用事件的块。|在方法、索引器、属性访问器或事件访问器内。|
+|indexer|创建索引器声明。|在类或结构中。|
+|interface|创建[接口](/dotnet/csharp/language-reference/keywords/interface)声明。|在命名空间（包括全局命名空间）、类或结构中。|
+|invoke|创建安全调用事件的块。|在方法、索引器、属性访问器或事件访问器内。|
 |iterator|创建迭代器。|在类或结构中。|
 |iterindex|使用嵌套类创建“已命名”迭代器和索引器对。|在类或结构中。|
-|锁定|创建 [lock](/dotnet/csharp/language-reference/keywords/lock-statement) 块。|在方法、索引器、属性访问器或事件访问器内。|
+|lock|创建 [lock](/dotnet/csharp/language-reference/keywords/lock-statement) 块。|在方法、索引器、属性访问器或事件访问器内。|
 |mbox|创建对 <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> 的调用。 可能还需要添加对 System.Windows.Forms.dll 的引用。|在方法、索引器、属性访问器或事件访问器内。|
 |namespace|创建[命名空间](/dotnet/csharp/language-reference/keywords/namespace)声明。|在命名空间（包括全局命名空间）中。|
-|属性|创建[自动实现的属性](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)声明。|在类或结构中。|
+|prop|创建[自动实现的属性](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)声明。|在类或结构中。|
 |propfull|创建具有 `get` 和 `set` 访问器的属性声明。|在类或结构中。|
 |propg|创建具有专用 `set` 访问器的只读[自动实现的属性](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)。|在类或结构中。|
 |sim|创建 [static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/int) Main 方法声明。|在类或结构中。|
