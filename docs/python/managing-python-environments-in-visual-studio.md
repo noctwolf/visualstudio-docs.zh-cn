@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 环境和解释器
 description: 使用 Python 环境窗口来管理全局、虚拟和 Conda 环境、安装 Python 解释器和包以及将环境分配给 Visual Studio 项目。
-ms.date: 05/22/2018
+ms.date: 06/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8c500b5f10f424cf60d92fd75a77e0ccb55866e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477569"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37342739"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
@@ -87,7 +87,7 @@ Visual Studio 了解的环境显示在“Python 环境”窗口中。 若要打�
 
 ![“Python 环境”窗口](media/environments-default-view.png)
 
-如果在列表中看不到预期的环境，请参阅[手动标识现有环境](#manually-identify-an-existing-environment)。
+Visual Studio 遵循 [PEP 514](https://www.python.org/dev/peps/pep-0514/)，使用注册表识别已安装的环境。 如果在列表中看不到预期的环境，请参阅[手动标识现有环境](#manually-identify-an-existing-environment)。
 
 选择列表中的环境会在“概述”选项卡上显示该环境的各种属性和命令。例如，可在上图中看到解释器的位置是 `C:\Python36-32`。 使用环境列表下方的下拉列表可切换到不同的选项卡，例如“包”和“IntelliSense”。 [“Python 环境”窗口选项卡引用](python-environments-window-tab-reference.md)中介绍了这些选项卡。
 
@@ -118,7 +118,27 @@ Visual Studio 了解的环境显示在“Python 环境”窗口中。 若要打�
 >
 > 但是，如果你使用文件系统手动移动解释器及其环境，则 Visual Studio 不会知道新位置。 有关更多信息，请参阅[移动解释器](installing-python-interpreters.md#moving-an-interpreter)。
 
-<a name="manually-identifying-an-existing-environment></a>
+## <a name="fix-invalid-environments"></a>修复无效环境
+
+如果 Visual Studio 找到环境的注册表项，但解释器的路径无效，则“Python 环境”窗口将显示名称并标注有删除线：
+
+![“Python 环境”窗口显示无效环境](media/environments-invalid-entry.png)
+
+若要更正希望保留的环境，首先请尝试使用其安装程序的“修复”进程。 例如，标准 Python 3.x 的安装程序包含该选项。
+
+若要更正没有修复选项的环境，或删除无效环境，请使用以下步骤直接修改注册表。 更改注册表后，Visual Studio 会自动更新“Python 环境”窗口。
+
+1. 运行 `regedit.exe`。
+1. 对于 32 位解释器，请导航到 `HKEY_LOCAL_MACHINE\SOFTWARE\Python`；对于 64 位解释器，请导航到`HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python`。 对于 IronPython，则请查找 `IronPython`。
+1. 展开与分发匹配的节点，例如 CPython 为 `PythonCore`，或 Anaconda 为 `ContinuumAnalytics`。 对于 IronPython，请展开版本号节点。
+1. 检查 `InstallPath` 节点下的值：
+
+    ![典型 CPython 安装的注册表项](media/environments-registry-entries.png)
+
+    - 如果计算机上仍存在该环境，请将 `ExecutablePath` 的值更改为正确位置。 同时根据需要更正 `(Default)` 和 `WindowedExecutablePath` 值。
+    - 如果计算机上不再存在该环境，并且想将其从“Python 环境”窗口中删除，请删除 `InstallPath` 的父节点，例如上图中的 `3.6`。
+
+<a name="manually-identifying-an-existing-environment"></a>
 
 ## <a name="manually-identify-an-existing-environment"></a>手动标识现有环境
 

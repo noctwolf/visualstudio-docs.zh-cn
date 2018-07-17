@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d81438ef284464fb23ebc5a41c19e59d20739cf4
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "36235218"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 
@@ -83,7 +84,7 @@ ms.lasthandoff: 05/22/2018
 
 ![CodeLens：获取 TFVC 中代码的更改历史记录](../ide/media/codelens-code-changes.png)
 
-默认时间段为最近 12 个月。 如果代码存储在 Team Foundation Server 中，可以通过运行具有 [CodeIndex 命令](/vsts/tfs-server/command-line/tfsconfig-cmd)和 [/indexHistoryPeriod](../ide/codeindex-command.md) 标志的 **TFSConfig 命令**对时间段进行更改。
+默认时间段为最近 12 个月。 如果代码存储在 Team Foundation Server 中，可以通过运行具有 [CodeIndex 命令](/tfs/server/ref/command-line/tfsconfig-cmd)和 [/indexHistoryPeriod](../ide/codeindex-command.md) 标志的 **TFSConfig 命令**对时间段进行更改。
 
 若要查看所有更改（包括一年前的更改）的详细历史记录，选择“显示所有文件更改”：
 
@@ -205,23 +206,25 @@ ms.lasthandoff: 05/22/2018
 
 1. 转到具有关联的[单元测试代码](../test/unit-test-your-code.md)的应用程序代码。
 
-2. 按 Alt+3，查看代码的测试。
+2. 如果还没有，请生成应用程序以加载 CodeLens 测试指示器。 确保已打开[各生成程序集的发现](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on)。
+
+3. 按 Alt+3，查看代码的测试。
 
      ![CodeLens - 在代码编辑器中选择测试状态](../ide/media/codelens-choose-test-indicator.png)
 
-3. 如果看到警告图标 ![警告图标](../ide/media/codelenstestwarningicon.png)测试尚未运行，请运行它们。
+4. 如果看到警告图标 ![警告图标](../ide/media/codelenstestwarningicon.png)测试尚未运行，请运行它们。
 
      ![CodeLens - 查看尚未运行的单元测试](../ide/media/codelens-tests-not-yet-run.png)
 
-4. 若要查看某个测试的定义，请双击 CodeLens 指示器窗口中的测试项，从而在编辑器中打开代码文件。
+5. 若要查看某个测试的定义，请双击 CodeLens 指示器窗口中的测试项，从而在编辑器中打开代码文件。
 
      ![CodeLens - 转到单元测试定义](../ide/media/codelens-unit-test-definition.png)
 
-5. 若要查看测试的结果，选择测试状态指示器（![测试失败图标](../ide/media/codelenstestfailedicon.png)或![测试通过图标](../ide/media/codelenstestpassedicon.png)）或按 Alt+1.
+6. 若要查看测试的结果，选择测试状态指示器（![测试失败图标](../ide/media/codelenstestfailedicon.png)或![测试通过图标](../ide/media/codelenstestpassedicon.png)）或按 Alt+1.
 
      ![CodeLens - 查看单元测试结果](../ide/media/codelens-unit-test-result.png)
 
-6. 若要查看更改过此测试的人数、更改者或对此测试所做的更改数，[查找代码的历史记录](#find-code-history)和关联的项。
+7. 若要查看更改过此测试的人数、更改者或对此测试所做的更改数，[查找代码的历史记录](#find-code-history)和关联的项。
 
 ## <a name="keyboard-shortcuts"></a>键盘快捷键
 
@@ -252,7 +255,7 @@ ms.lasthandoff: 05/22/2018
 
 - 确保 CodeLens 开启。 转到“工具” > “选项” > “文本编辑器” > “所有语言” > “CodeLens”。
 
-- 如果代码存储在 TFS 中，请确保使用 [CodeIndex 命令](../ide/codeindex-command.md) 和 [TFS Config 命令](/vsts/tfs-server/command-line/tfsconfig-cmd)打开代码索引。
+- 如果代码存储在 TFS 中，请确保使用 [CodeIndex 命令](../ide/codeindex-command.md) 和 [TFS Config 命令](/tfs/server/ref/command-line/tfsconfig-cmd)打开代码索引。
 
 - 仅当工作项已链接到代码并且你有权打开链接的工作项时，才显示与 TFS 相关的指示器。 确认具有[团队成员权限](/vsts/work/scale/multiple-teams)。
 
@@ -320,7 +323,11 @@ CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所�
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>问：是否可以管理 CodeLens 如何处理代码以显示历史记录和链接的项？
 
-**答：** 可以。 如果代码位于 TFS 中，结合使用 [CodeIndex 命令](../ide/codeindex-command.md)和 [TFS Config 命令](/vsts/tfs-server/command-line/tfsconfig-cmd)。
+**答：** 可以。 如果代码位于 TFS 中，结合使用 [CodeIndex 命令](../ide/codeindex-command.md)和 [TFS Config 命令](/tfs/server/ref/command-line/tfsconfig-cmd)。
+
+### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>问：首次打开解决方案时，文件中不再显示 CodeLens 测试指示器。 如何加载它们？
+
+**答：** 重新生成项目，获取要加载到文件中的 CodeLens 测试指示器。 确保已打开[各生成程序集的发现](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on)。 为了提高性能，Visual Studio 在加载代码文件时不再提取测试指示器的源信息。 测试指示器在生成后或在导航到测试时（通过在“测试资源管理器”中双击该测试）加载。
 
 ## <a name="see-also"></a>请参阅
 

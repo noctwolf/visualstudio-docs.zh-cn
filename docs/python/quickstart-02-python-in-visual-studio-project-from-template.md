@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dca1e37a0cde89a2a531d3fceea4337bb9e348dd
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 046aeb3d43066dbe0bd28ef76036478efdbda49f
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957332"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37057019"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入门：从 Visual Studio 中的模板创建 Python 项目
 
@@ -37,11 +37,31 @@ ms.locfileid: "33957332"
     > [!Tip]
     > 开始一个项目时，强烈建议立即创建虚拟环境，因为大多数 Visual Studio 模板均有此项提示。 在你添加和删除库时，虚拟环境随之保证项目的确切需求。 然后，可轻松生成 `requirements.txt` 文件。在其他开发计算机上重新安装这些依赖项时使用此文件（因为此时使用源代码管理功能集），将项目部署到生产服务器时也使用此文件。 有关虚拟环境及其优势的详细信息，请参阅[使用虚拟环境](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments)和[使用 requirements.txt 管理所需的包](../python/managing-required-packages-with-requirements-txt.md)。
 
-1. Visual Studio 创建该环境后，在解决方案资源管理器中查看是否已具备 `app.py` 和 `requirements.txt`。 打开 `app.py`，可看到模板提供了类似[快速入门 - 使用 Flask 创建 Web 应用](../ide/quickstart-python.md)中的代码，还增添了两个部分。
+1. Visual Studio 创建该环境后，在解决方案资源管理器中查看是否已具备 `app.py` 和 `requirements.txt`。 打开 `app.py`，可看到模板提供了类似[快速入门 - 使用 Flask 创建 Web 应用](../ide/quickstart-python.md)中的代码，还增添了几个部分。 下面显示的所有代码均由模板创建，因此无需自行将任何代码粘贴到 `app.py` 中。
 
-    第一个部分是行 `wsgi_app = app.wsgi_app`，可在将应用部署到 Web 主机时使用它。
+    代码开始部分为以下必要导入：
 
-    第二个部分是启动代码，它可用于通过环境变量设置主机和端口，而不是硬编码它们。 此类代码可让你轻松控制开发和生产计算机上的配置，而无需更改代码：
+    ```python
+    from flask import Flask
+    app = Flask(__name__)
+    ```
+
+    接下来是以下行，它在将应用部署到 Web 主机时非常有用：
+
+    ```python
+    wsgi_app = app.wsgi_app
+    ```
+
+    然后是路由修饰器，修饰定义视图的简单函数：
+
+    ```python
+    @app.route('/')
+    def hello():
+        """Renders a sample page."""
+        return "Hello World!"
+    ```
+
+    最后，以下启动代码允许通过环境变量设置主机和端口，而不是硬编码它们。 此类代码可让你轻松控制开发和生产计算机上的配置，而无需更改代码：
 
     ```python
     if __name__ == '__main__':
@@ -56,7 +76,8 @@ ms.locfileid: "33957332"
 
 1. 依次选择“调试”和“开始执行(不调试)”，以运行应用并打开指向`localhost:5555` 的浏览器。
 
-**问：Visual Studio 还提供哪些 Python 模板？**
+
+  **问：Visual Studio 还提供哪些 Python 模板？**
 
 **答**：在安装了 Python 工作负载的情况下，Visual Studio 提供多种项目模板，其中包括用于 [Flask、Bottle 和 Django Web 框架](../python/python-web-application-project-templates.md)、Azure 云服务以及不同机器学习方案的模板，甚至还有一个模板用于根据带 Python 应用的现有文件夹结构创建项目。 要访问模板，可选择“Python”语言节点及其子节点，再依次单击“文件”、“新建”和“项目...”。
 
