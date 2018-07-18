@@ -1,5 +1,5 @@
 ---
-title: 工作流设计器的 StateMachine 活动设计器
+title: 工作流设计器-StateMachine 活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6a9860d4c6025e6d77a869573b133c6a034aff96
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c7afb2131ae6e05c8232eb8dc735e5131698a69
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974918"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758227"
 ---
 # <a name="statemachine-activity-designer"></a>StateMachine 活动设计器
 
@@ -26,7 +26,7 @@ ms.locfileid: "31974918"
 
 ## <a name="using-the-statemachine-activity-designer"></a>使用 StateMachine 活动设计器
 
-若要添加<xref:System.Activities.Statements.StateMachine>活动，请将**StateMachine**活动设计器从**状态机**部分**工具箱**并将其放到 Windows 工作流设计器图面。 若要将子状态添加到此<xref:System.Activities.Statements.StateMachine>活动，请将<xref:System.Activities.Statements.State>或<xref:System.Activities.Core.Presentation.FinalState>从**工具箱**拖放到**StateMachine**。
+若要添加<xref:System.Activities.Statements.StateMachine>活动，请将**StateMachine**活动设计器从**状态机**一部分**工具箱**拖放到工作流设计器图面。 若要将子状态添加到此<xref:System.Activities.Statements.StateMachine>活动，请将<xref:System.Activities.Statements.State>或<xref:System.Activities.Core.Presentation.FinalState>从**工具箱**并将其拖到放置**StateMachine**。
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>工作流设计器中的 StateMachine 活动属性
 

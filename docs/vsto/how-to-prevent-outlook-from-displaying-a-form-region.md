@@ -1,5 +1,5 @@
 ---
-title: 如何： 防止 Outlook 显示窗体区域 |Microsoft 文档
+title: 如何： 防止 Outlook 显示窗体区域
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,26 +16,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5fffde6cd92d490df2a5567763da77e723ed4f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 87a03e62c77730c7be2c9487c5e344d668ea62cc
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254783"
 ---
-# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>如何：防止 Outlook 显示窗体区域
-  可能有不希望 Microsoft Office Outlook 显示特定项的窗体区域的情况。 例如，如果联系人项目不包含业务地址，你可以阻止在出现的地图中显示的业务位置的窗体区域。  
+# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>如何： 防止 Outlook 显示窗体区域
+  可能有不希望 Microsoft Office Outlook 显示特定项的窗体区域的情况。 例如，如果联系人项目不包含业务地址，可以防止使其不显示地图中显示的业务位置的窗体区域。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-### <a name="to-prevent-outlook-from-displaying-a-form-region"></a>若要禁止 Outlook 显示窗体区域  
+## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>若要防止 Outlook 显示窗体区域  
   
 1.  打开你想要修改的窗体区域代码文件。  
   
 2.  展开**窗体区域工厂**代码区域。  
   
-3.  将代码添加到`FormRegionInitializing`设置的事件处理程序<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>属性<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>类到**true**。  
+3.  将代码添加到`FormRegionInitializing`事件处理程序设置<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>的属性<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>类来**true**。  
   
- 在此示例中，如果联系人项目不包含地址、<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>属性设置为**true**，和窗体区域不会出现。  
+ 在此示例中，如果联系人项目不包含地址<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>属性设置为**true**，窗体区域没有显示。  
   
 ## <a name="example"></a>示例  
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
@@ -46,6 +47,6 @@ ms.lasthandoff: 04/16/2018
  [演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [如何： 向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [演练：导入在 Outlook 中设计的窗体区域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
+ [演练： 导入在 Outlook 中设计的窗体区域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
   
   

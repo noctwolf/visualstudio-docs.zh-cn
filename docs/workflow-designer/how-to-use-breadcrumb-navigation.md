@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92f3e35d4182297601741bd603aa3c5a17e54d67
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975061"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757614"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>如何：使用痕迹导航
 
-有三个方面，若要更改的 Windows 工作流设计器中显示的活动集：
+有三种主要方式，若要更改的工作流设计器中显示的活动集：
 
 1.  双击以钻入子活动。
 
@@ -29,7 +29,7 @@ ms.locfileid: "31975061"
 
 ## <a name="using-breadcrumb-navigation"></a>使用痕迹导航
 
-1.  双击活动的工作流设计器的根活动改为单击的活动。 此时单击的活动将在根处完全展开，其祖先将显示在痕迹栏中。 这有时称为钻入或钻出某个活动。
+1.  双击工作流设计器的根活动改为单击的活动的活动。 此时单击的活动将在根处完全展开，其祖先将显示在痕迹栏中。 这有时称为钻入或钻出某个活动。
 
 2.  若要导航到当前根活动的一个祖先，请单击痕迹栏中的相应活动。
 
@@ -44,12 +44,12 @@ ms.locfileid: "31975061"
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>展开或折叠所有活动
 
-1.  使用**全部展开**和**全部折叠**要展开或折叠当前痕迹根下的所有活动的用户界面中的按钮。 请注意，全部展开和全部折叠是全局状态。 这意味着更改根活动使用痕迹导航，全部展开或全部折叠状态时保持直到您单击**还原**。
+1.  使用**全部展开**并**折叠所有**要展开或折叠所有当前痕迹根下的活动的用户界面中的按钮。 请注意，全部展开和全部折叠是全局状态。 这意味着使用痕迹导航栏中，展开所有该根活动进行更改或全部折叠状态时仍然存在，您必须单击**还原**。
 
-2.  应用全部展开或全部折叠状态后，你可以单击**还原**似乎回到之前应用于每个活动的状态在查看的按钮。
-
-    > [!WARNING]
-    > 如果某个活动，如<xref:System.Activities.Statements.Flowchart>，无法就地展开外，相关联的功能**全部展开**和**全部折叠**上禁用按钮**流程图**设计器。 有关详细信息**流程图**设计器，请参见[流程图](../workflow-designer/flowchart-activity-designer.md)主题。
+2.  已应用全部展开或折叠所有状态后，可以单击**还原**按钮，它可返回到查看以前应用于每个活动的状态。
 
     > [!WARNING]
-    > 全部展开还有特殊效果**交换机**和**TryCatch**活动设计器。 当你单击**全部展开**，显示所有 switch 事例和所有 try/catch/finally 块。 单击**还原**或**全部折叠**这些设计器会返回为其默认状态，从中你可以单击单个事例/块来查看其内容。
+    > 如果某个活动，如<xref:System.Activities.Statements.Flowchart>，已选择加入共就地展开，相关联的功能**全部展开**并**全部折叠**上禁用按钮**流程图**设计器。 有关详细信息**流程图**设计器，请参见[流程图](../workflow-designer/flowchart-activity-designer.md)主题。
+
+    > [!WARNING]
+    > 全部展开中也有特殊效果**交换机**并**TryCatch**活动设计器。 当您单击**全部展开**，显示所有 switch 事例和所有 try/catch/finally 块。 单击**还原**或**全部折叠**返回这些设计器为其默认状态，你可以单击单个事例/块来查看其内容。

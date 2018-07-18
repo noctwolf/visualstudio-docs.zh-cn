@@ -1,5 +1,5 @@
 ---
-title: 如何： 用数据填充 ListObject 控件 |Microsoft 文档
+title: 如何： 使用数据填充 ListObject 控件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,18 +20,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 433928cd817e3ef796d9f6e2f4b4aab27cda2346
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9e255d4099a90173b9dbc7ff6fd7b2225d0622d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255699"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>如何：用数据填充 ListObject 控件
+# <a name="how-to-fill-listobject-controls-with-data"></a>如何： 使用数据填充 ListObject 控件
   可以使用数据绑定快速地将数据添加到文档中。 将数据绑定到列表对象后，可以断开列表对象的连接，以便它能显示数据且不再与数据源绑定。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![视频链接](../vsto/media/playvideo.gif "视频链接")相关的视频演示，请参阅[如何： 创建列表在连接到 SharePoint 列表的 Excel 中？](http://go.microsoft.com/fwlink/?LinkID=130263)。  
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现： 创建 Excel 连接到 SharePoint 列表中的列表？](http://go.microsoft.com/fwlink/?LinkID=130263)。  
   
 ### <a name="to-bind-data-to-a-listobject-control"></a>将数据绑定到 ListObject 控件  
   
@@ -57,18 +58,18 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#23)]
      [!code-vb[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#23)]  
   
-## <a name="compiling-the-code"></a>编译代码  
+## <a name="compile-the-code"></a>编译代码  
  此代码示例假定在此代码出现的工作表中有一个名为 <xref:Microsoft.Office.Tools.Excel.ListObject> 的现有 `list1` 。  
   
 ## <a name="see-also"></a>请参阅  
- [在运行时扩展 Word 文档和 Excel 工作簿在 VSTO 外接程序](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [扩展 Word 文档和 Excel 工作簿在 VSTO 外接在运行时](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [如何： 将 ListObject 列映射到数据](../vsto/how-to-map-listobject-columns-to-data.md)   
- [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)   
+ [如何： 对数据的映射 ListObject 列](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject 控件](../vsto/listobject-control.md)   
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [如何： 用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [如何：用服务中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)  
+ [如何： 用服务中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
   

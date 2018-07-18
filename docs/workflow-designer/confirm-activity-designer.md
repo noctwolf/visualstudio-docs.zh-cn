@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21a4c1b31769387470d58f27a060d4e3ec7ae70c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68259200bbd89f851e75a5ca097b248153a2399e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972054"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757531"
 ---
 # <a name="confirm-activity-designer"></a>Confirm 活动设计器
 
-**确认**活动设计器用于创建和配置<xref:System.Activities.Statements.Confirm>活动。
+**Confirm**活动设计器用于创建和配置<xref:System.Activities.Statements.Confirm>活动。
 
 ## <a name="the-confirm-activity"></a>Confirm 活动
  <xref:System.Activities.Statements.Confirm> 活动为 <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> 中包含的活动显式调用 <xref:System.Activities.Statements.CompensableActivity>。 如果 <xref:System.Activities.Statements.Confirm> 活动未在 <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A> 的 <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>、<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> 或 <xref:System.Activities.Statements.CompensableActivity> 中使用，则必须指定 <xref:System.Activities.Statements.Confirm.Target%2A> 属性。
@@ -29,12 +29,12 @@ ms.locfileid: "31972054"
  由 <xref:System.Activities.Statements.CompensationToken> 指定的 <xref:System.Activities.Statements.Compensate.Target%2A> 提供了在 <xref:System.Activities.Statements.CompensableActivity> 的 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 成功完成之后显式确认或补偿 <xref:System.Activities.Statements.CompensableActivity> 的方法。
 
 ### <a name="using-the-confirm-activity-designer"></a>使用 Confirm 活动设计器
- **确认**在找不到活动设计器**事务**类别**工具箱**，通过单击访问的哪一**工具箱**工作流设计器左侧的选项卡 (或者，选择**工具栏**从**视图**菜单或 CTRL + ALT + X。)
+ **确认**活动设计器可在**事务**类别**工具箱**，这通过单击来访问**工具箱**左侧和右侧的工作流设计器上的选项卡。 或者，选择**工具箱**从**视图**菜单中或按**Ctrl**+**Alt** + **X**。
 
- **确认**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，只要通常放置活动的如内<xref:System.Activities.Statements.Sequence>。 这将创建具有 Confirm 的默认 <xref:System.Activities.Statements.Confirm> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>值可以是编辑中的标头**确认**活动设计器中或在**DisplayName**属性网格的框。
+ **确认**活动设计器可以从拖动**工具箱**只要通常放置活动的例如内放置到工作流设计器图面和<xref:System.Activities.Statements.Sequence>。 这将创建具有 Confirm 的默认 <xref:System.Activities.Statements.Confirm> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以是值的标头中编辑**确认**活动设计器中或在**DisplayName**属性网格的框。
 
 ### <a name="the-confirm-properties"></a>Confirm 属性
- 下表列出 <xref:System.Activities.Statements.Confirm> 属性并说明如何在设计器中使用它们。 <xref:System.Activities.Activity.DisplayName%2A>属性可以在属性网格中或在工作流设计器图面上编辑但<xref:System.Activities.Statements.Confirm.Target%2A>属性必须在属性网格中编辑。
+ 下表列出 <xref:System.Activities.Statements.Confirm> 属性并说明如何在设计器中使用它们。 <xref:System.Activities.Activity.DisplayName%2A>属性可以在属性网格中或在工作流设计器图面上进行编辑，但<xref:System.Activities.Statements.Confirm.Target%2A>属性必须在属性网格中编辑。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|

@@ -12,22 +12,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e72c5b5e43ca037a6d65e3e4980fdb0f89f000f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 58aea13f99f225c01806186903b62a58362715b3
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972037"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755702"
 ---
 # <a name="sequence-activity-designer"></a>Sequence 活动设计器
 
 <xref:System.Activities.Statements.Sequence> 活动包含子活动的已排序集合，将按该排序执行这些子活动。
 
-按顺序执行一组活动的另一个方法是使用 <xref:System.Activities.Statements.Flowchart> 活动。 请考虑使用[流程图](../workflow-designer/flowchart-activity-designer.md)当具有简单分支或循环你想要 diagrammatically 模型的程序流。
+按顺序执行一组活动的另一个方法是使用 <xref:System.Activities.Statements.Flowchart> 活动。 请考虑使用[流程图](../workflow-designer/flowchart-activity-designer.md)当具有简单的分支或循环程序流并且你想要建模。
 
 ## <a name="using-the-sequence-activity-designer"></a>使用 Sequence 活动设计器
 
-若要添加<xref:System.Activities.Statements.Sequence>活动，请将**序列**活动设计器从**工具箱**并将其放到 Windows 工作流设计器图面。 若要将子活动添加到此<xref:System.Activities.Statements.Sequence>活动，将一些其他活动从**工具箱**并将其放在带提示文本框中的三角形上"此处放置活动"。
+若要添加<xref:System.Activities.Statements.Sequence>活动，请将**序列**活动设计器从**工具箱**拖放到工作流设计器图面。 若要将子活动添加到此<xref:System.Activities.Statements.Sequence>活动，将从一些其他活动拖放**工具箱**并将其放在带提示文本框中的三角形上"此处放置活动"。
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>工作流设计器中的 Sequence 活动属性
 

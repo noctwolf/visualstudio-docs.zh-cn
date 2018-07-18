@@ -6,23 +6,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Workflow Designer [WFD], activity designer
-- Visual Studio 2010 Workflow Designer [WFD], activity designer
+- Visual Studio Workflow Designer [WFD], activity designer
 ms.assetid: 3c2725c3-091b-49ab-81e7-d4c7028d47a2
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfab116d7c4d3882b4b35322a24af90f3842211
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4d85e915099c9d94123f7e97b0d19bf235c0efae
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971527"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758036"
 ---
 # <a name="using-the-activity-designers"></a>使用活动设计器
 
-Windows 工作流设计器包含大量的系统提供构造活动和工作流时可以使用的活动。 本节介绍系统提供的可用活动及其设计器的类别。 有关每个类别内各活动及其相应设计器的主题将介绍这些活动的用途并提供使用指南。
+工作流设计器包括大量的系统提供构造活动和工作流时可以使用的活动。 本节介绍系统提供的可用活动及其设计器的类别。 有关每个类别内各活动及其相应设计器的主题将介绍这些活动的用途并提供使用指南。
 
 ## <a name="reference"></a>参考
 

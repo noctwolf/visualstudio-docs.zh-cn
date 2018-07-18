@@ -1,5 +1,5 @@
 ---
-title: 有关开发 Office 解决方案的其他资源 |Microsoft 文档
+title: 开发 Office 解决方案的其他资源
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b34f32110af7d9c7e5aad079990b1c82c13d6370
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: ae89d13a5fe61d6d7a47cb037104c50f4c696298
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845335"
 ---
-# <a name="additional-resources-for-developing-office-solutions"></a>其他 Office 解决方案开发资源
+# <a name="additional-resources-to-develop-office-solutions"></a>开发 Office 解决方案的其他资源
   Visual Studio 中的 Microsoft Office 开发人员工具仅代表用于扩展 Office 应用程序的许多方法中的一种。 Office 应用程序还具有一些内置功能，如 Open XML 格式，这是 Visual Studio 中的 Office 开发人员工具所不提供的或本文档中未介绍的功能。  
 
  如果你想详细了解 Visual Studio 中的 Microsoft Office 和 Office 开发人员工具所提供的可能性，这些资源将帮助你入门。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/27/2018
  [Office 业务应用程序开发人员门户](http://go.microsoft.com/fwlink/?LinkId=99125)  
  用于访问 Office 业务应用程序 (OBA) 相关信息的中心门户。 OBA 将业务线 (LOB) 系统与通过 Microsoft Office 应用程序使用该系统的人相连接，由此你便可以一种创新的方式通过结合你的资源来扩大现有的 IT 投资。  
 
- [通过 Visual Studio 博客进行 Office 开发](http://go.microsoft.com/fwlink/?LinkId=149748)  
+ [使用 Visual Studio 博客进行 office 开发](http://go.microsoft.com/fwlink/?LinkId=149748)  
  由创建 Visual Studio 的 Office 开发人员工具的 Microsoft 团队所维护的博客。  
 
 ## <a name="see-also"></a>请参阅  

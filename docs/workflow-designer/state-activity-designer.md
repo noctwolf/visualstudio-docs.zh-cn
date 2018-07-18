@@ -1,5 +1,5 @@
 ---
-title: 工作流设计器的 State 活动设计器
+title: 工作流设计器-State 活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 41abc73cce121ae4ebc247e20c0fcd2c60b8ec56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9d4c919347b42229bd0c73164281f3cbf2254a66
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975854"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757697"
 ---
 # <a name="state-activity-designer"></a>状态活动设计器
 
@@ -25,7 +25,7 @@ ms.locfileid: "31975854"
 
 ## <a name="using-the-state-activity-designer"></a>使用 State 活动设计器
 
-若要添加<xref:System.Activities.Statements.State>到工作流中，将**状态**活动设计器从**状态机**部分**工具箱**拖放到<xref:System.Activities.Statements.StateMachine>Windows 工作流设计器图面上的活动。 <xref:System.Activities.Statements.State> 活动可以放置到 <xref:System.Activities.Statements.StateMachine>，以后可添加转换；或在删除 <xref:System.Activities.Statements.State> 活动时可创建转换。 若要添加<xref:System.Activities.Statements.State>活动和创建转换在一个步骤中，拖动**状态**活动从**状态机**部分**工具箱**和将鼠标悬停在另一个工作流设计器中的状态。 在另一个 <xref:System.Activities.Statements.State> 上拖动 <xref:System.Activities.Statements.State> 时，在另一个 <xref:System.Activities.Statements.State> 周围将出现四个三角形。 如果将 <xref:System.Activities.Statements.State> 放置到其中一个三角形，则将其添加到状态机，而且创建从源 <xref:System.Activities.Statements.State> 到放置目标 <xref:System.Activities.Statements.State> 的转换。 有关详细信息，请参阅[转换](../workflow-designer/transition-activity-designer.md)。
+若要添加<xref:System.Activities.Statements.State>到工作流，拖动**状态**活动设计器从**状态机**部分**工具箱**拖放到<xref:System.Activities.Statements.StateMachine>工作流设计器图面上的活动。 <xref:System.Activities.Statements.State> 活动可以放置到 <xref:System.Activities.Statements.StateMachine>，以后可添加转换；或在删除 <xref:System.Activities.Statements.State> 活动时可创建转换。 若要添加<xref:System.Activities.Statements.State>活动并在一个步骤中，将创建转换**状态**活动从**状态机**一部分**工具箱**和悬停在另一个工作流设计器中的状态。 在另一个 <xref:System.Activities.Statements.State> 上拖动 <xref:System.Activities.Statements.State> 时，在另一个 <xref:System.Activities.Statements.State> 周围将出现四个三角形。 如果将 <xref:System.Activities.Statements.State> 放置到其中一个三角形，则将其添加到状态机，而且创建从源 <xref:System.Activities.Statements.State> 到放置目标 <xref:System.Activities.Statements.State> 的转换。 有关详细信息，请参阅[过渡](../workflow-designer/transition-activity-designer.md)。
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>工作流设计器中的 State 活动属性
 
@@ -34,8 +34,8 @@ ms.locfileid: "31975854"
 |属性名|必需|用法|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Statements.State.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.State> 活动设计器在标头中的友好名称。 默认值是**状态**。 可以在属性网格或直接在活动设计器的标头中编辑该值。 <xref:System.Activities.Statements.State.DisplayName%2A> 用于痕迹导航，后者显示在工作流设计器顶部。<br /><br /> 虽然 <xref:System.Activities.Statements.State.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
-|<xref:System.Activities.Statements.State.Entry%2A>|False|指定在转换到此状态时发生的操作。 当<xref:System.Activities.Statements.State>活动将展开，可以通过将活动从设置此值**工具箱**拖放到**条目**部分的状态。|
-|<xref:System.Activities.Statements.State.Exit%2A>|False|指定在从此状态转换时发生的操作。 当<xref:System.Activities.Statements.State>活动将展开，可以通过将活动从设置此值**工具箱**拖放到**退出**部分的状态。|
+|<xref:System.Activities.Statements.State.Entry%2A>|False|指定在转换到此状态时发生的操作。 时<xref:System.Activities.Statements.State>活动已展开，此值可以设置通过拖动将活动从**工具箱**并将其放置到**条目**状态的部分。|
+|<xref:System.Activities.Statements.State.Exit%2A>|False|指定在从此状态转换时发生的操作。 当<xref:System.Activities.Statements.State>活动已展开，可以通过拖动某个活动中的设置此值**工具箱**并将其放置到**退出**状态的部分。|
 |<xref:System.Activities.Statements.State.Transitions%2A>|False|列出源自 <xref:System.Activities.Statements.State> 的可能转换。 列表中的每个项有一个指向关联的 <xref:System.Activities.Statements.Transition> 和目标 <xref:System.Activities.Statements.State> 的链接。 单击此链接会将设计器切换到 <xref:System.Activities.Statements.Transition> 或 <xref:System.Activities.Statements.State> 的扩展视图。|
 
 ## <a name="see-also"></a>请参阅

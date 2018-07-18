@@ -10,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 23c09af12bc978f9b0303dc44dc4b7db6576fc8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3597a915e5b0ff946539a025a724778d7f6563a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972358"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755493"
 ---
 # <a name="state-machine-activity-designers"></a>状态机活动设计器
 
-Windows 工作流设计器包含大量您构造时可以使用你的工作流的活动设计器。 本节包含系统提供的、用于创建和管理状态机工作流的活动设计器。 以下主题介绍这些设计器以及如何使用它们。
+工作流设计器包含大量的构造工作流时可以使用活动设计器。 本节包含系统提供的、用于创建和管理状态机工作流的活动设计器。 以下主题介绍这些设计器以及如何使用它们。
 
 ## <a name="reference"></a>参考
  <xref:System.Activities.Statements.StateMachine>

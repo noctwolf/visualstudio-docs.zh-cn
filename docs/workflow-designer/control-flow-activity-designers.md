@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea0806b1abc4febbdcf89c59025452c5879addb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e525d2529ce47059025e76dbefaeec1eb15ef81
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967395"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758389"
 ---
 # <a name="control-flow-activity-designers"></a>控制流活动设计器
 
-Windows 工作流设计器包含大量的系统提供的活动，你可以构造时使用你的工作流。 本节包含系统提供的活动中用于控制工作流中的流的活动。 以下主题介绍这些活动以及如何使用它们。
+工作流设计器包括大量的系统提供构造工作流时可以使用的活动。 本节包含系统提供的活动中用于控制工作流中的流的活动。 以下主题介绍这些活动以及如何使用它们。
 
 ## <a name="reference"></a>参考
 

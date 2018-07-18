@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 033eeff34c095b4598a02a386794379d06086450
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 08c8aadb3c452a59f1b44cd030331164384d23bb
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978130"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758332"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision 活动设计器
 
@@ -28,16 +28,18 @@ ms.locfileid: "31978130"
 当流可以分支到两条路径时可使用 <xref:System.Activities.Statements.FlowDecision>。 一个 <xref:System.Activities.Statements.FlowDecision> 节点具有一个 <xref:System.Activities.Statements.FlowDecision.Condition%2A>，并且两个可能结果中的每一个都有一个关联的 <xref:System.Activities.Statements.FlowNode>，这两个可能的结果为：<xref:System.Activities.Statements.FlowDecision.True%2A> 和 <xref:System.Activities.Statements.FlowDecision.False%2A>。 将对 <xref:System.Activities.Statements.FlowDecision.Condition%2A> 进行计算，此计算值决定要在 <xref:System.Activities.Statements.FlowNode> 中处理的下一个 <xref:System.Activities.Statements.Flowchart>。
 
 ### <a name="using-the-flowdecision-designer"></a>使用 FlowDecision 设计器
- **Flowdecision**在找不到设计器**流程图**类别**工具箱**，通过单击访问的哪一**工具箱**在工作流设计器上的选项卡 (或者，选择**工具栏**从**视图**菜单上或 CTRL + ALT + X。)
 
- **Flowdecision**设计器可以拖动从**工具箱**和放置到工作流设计器图面中**流程图**活动设计器。 这将创建<xref:System.Activities.Statements.FlowDecision>标记为**决策**内<xref:System.Activities.Statements.Flowchart>活动。 鼠标悬停在设计器和**True**和**False**正方形处理框的两个分支显示。
+**FlowDecision**设计器可在**流程图**类别**工具箱**，这通过单击来访问**工具箱**工作流设计器的选项卡。 或者，选择**工具箱**从**视图**菜单中或按**Ctrl**+**Alt** + **X**。
 
- 拖动之后**flowdecision**设计器和其他设计器拖到**流程图**，节点可链接在一起以指定执行顺序。 若要创建的源节点之间的链接 (包括**True**和**False**的分支**flowdecision**) 和目标节点，鼠标悬停在设计器的源节点和它的每一侧显示正方形处理框。 单击这些正方形处理框之一并按下鼠标按钮将其拖到当鼠标悬停在目标节点上时该节点周围以类似方式显示的处理框之一。 松开鼠标按钮，此时将在这两个节点之间创建一个链接，表示为从源设计器指向目标设计器的箭头。
+**FlowDecision**设计器可以从拖动**工具箱**和放置到工作流设计器图面中**流程图**活动设计器。 这将创建<xref:System.Activities.Statements.FlowDecision>标记为**决策**内<xref:System.Activities.Statements.Flowchart>活动。 鼠标悬停在设计器和 **，则返回 True**并**False**显示正方形处理框的两个分支。
 
- 状态的表达式<xref:System.Activities.Statements.FlowDecision.Condition%2A>可以键入中**条件**框**属性**通过单击的窗口的提示文本显示"输入 VB 表达式"。
+之后**FlowDecision**设计器和其他设计器拖到**流程图**，节点可以链接在一起以指定执行顺序。 若要创建的源节点之间的链接 (包括 **，则返回 True**并**False**的分支**FlowDecision**) 和一个目标节点，鼠标悬停在设计器的源节点它的每一侧显示正方形处理框。 单击这些正方形处理框之一并按下鼠标按钮将其拖到当鼠标悬停在目标节点上时该节点周围以类似方式显示的处理框之一。 松开鼠标按钮，此时将在这两个节点之间创建一个链接，表示为从源设计器指向目标设计器的箭头。
+
+表达式，指出<xref:System.Activities.Statements.FlowDecision.Condition%2A>可以在类型化**条件**的框**属性**窗口可通过单击提示文本显示"输入 VB 表达式"。
 
 ### <a name="the-flowdecision-properties"></a>FlowDecision 属性
- 下表列出 <xref:System.Activities.Statements.FlowDecision> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中或设计器图面上进行编辑。
+
+下表列出 <xref:System.Activities.Statements.FlowDecision> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中或设计器图面上进行编辑。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|
